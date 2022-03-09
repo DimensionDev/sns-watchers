@@ -2289,7 +2289,7 @@
         p = function (e) {
           var t = e.author,
             n = e.color,
-            r = void 0 === n ? 'normal' : n,
+            r = void 0 === n ? 'text' : n,
             i = e.size,
             o = void 0 === i ? 'subtext2' : i,
             s = e.style,
@@ -5117,7 +5117,7 @@
                     if (n)
                       return y.a.createElement(
                         b.b,
-                        { align: 'center', color: this._getTextColor() },
+                        { align: 'center' },
                         y.a.createElement(t, { style: j.headlineIcon }),
                       )
                   }
@@ -5129,12 +5129,7 @@
                   var e = this.props,
                     t = e.headline,
                     n = e.text
-                  if (t)
-                    return y.a.createElement(
-                      b.b,
-                      { color: this._getTextColor(), style: n && j.headlineMarginBottom, weight: 'bold' },
-                      t,
-                    )
+                  if (t) return y.a.createElement(b.b, { style: n && j.headlineMarginBottom, weight: 'bold' }, t)
                 },
               },
               {
@@ -5147,7 +5142,7 @@
                   return y.a.createElement(
                     y.a.Fragment,
                     null,
-                    y.a.createElement(b.b, { color: this._getTextColor(), nativeID: t, size: 'subtext1', style: r }, n),
+                    y.a.createElement(b.b, { nativeID: t, size: 'subtext1', style: r }, n),
                     this._renderActionLabel(),
                   )
                 },
@@ -5161,7 +5156,6 @@
                   if (t)
                     return y.a.createElement(b.b, {
                       children: t.label,
-                      color: this._getTextColor(),
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
@@ -5185,12 +5179,6 @@
                     : 'success' === e
                     ? 'success'
                     : void 0
-                },
-              },
-              {
-                key: '_getTextColor',
-                value: function () {
-                  return 'normal'
                 },
               },
               {
@@ -11261,96 +11249,6 @@
         })
       t.default = E
     },
-    AEJ6: function (e, t, n) {
-      'use strict'
-      var r = n('ddV6'),
-        a = n.n(r),
-        i = n('ERkP'),
-        o = n.n(i),
-        s = n('3XMw'),
-        l = n.n(s),
-        c = n('MWbm'),
-        u = n('/yvb'),
-        d = n('sgih'),
-        p = n('xKuM'),
-        h = n('rHpw'),
-        m = n('95Se'),
-        f = n('hOZg'),
-        v = l.a.b08821f3,
-        y = l.a.ia5e7487,
-        b = o.a.createElement(m.a, null),
-        g = o.a.createElement(f.a, null),
-        _ = h.a.create(function (e) {
-          return {
-            sheet: { borderRadius: e.borderRadii.xLarge, maxHeight: '100vh' },
-            buttonContainer: { flexDirection: 'row-reverse' },
-            secondaryButton: { marginRight: e.spaces.space8 },
-            content: { flex: 1, overflowY: 'auto' },
-          }
-        })
-      t.a = function (e) {
-        var t = e.children,
-          n = e.onBackClick,
-          r = e.onClose,
-          i = e.primaryButtonConfig,
-          s = e.secondaryButtonConfig,
-          l = e.style,
-          h = e.title,
-          m = o.a.useState(!1),
-          f = a()(m, 2),
-          w = f[0],
-          C = f[1],
-          E = function () {
-            C(function (e) {
-              return !e
-            })
-          },
-          T = o.a.createElement(u.a, { accessibilityLabel: v, icon: b, onPress: n, pullLeft: !0, type: 'primaryText' }),
-          k = o.a.createElement(u.a, { accessibilityLabel: y, icon: g, onPress: r, pullLeft: !0, type: 'primaryText' }),
-          I = i
-            ? o.a.createElement(
-                u.a,
-                {
-                  accessibilityLabel: i.label,
-                  disabled: w || i.forceDisabled,
-                  onClick: function () {
-                    E(), null == i || i.onClick(E)
-                  },
-                  size: 'small',
-                  type: 'primaryFilled',
-                },
-                i.label,
-              )
-            : null,
-          S = s
-            ? o.a.createElement(
-                u.a,
-                {
-                  accessibilityLabel: s.label,
-                  onClick: s.onClick,
-                  size: 'small',
-                  style: _.secondaryButton,
-                  type: 'primaryOutlined',
-                },
-                s.label,
-              )
-            : null,
-          x = o.a.createElement(c.a, { style: _.buttonContainer }, I, S)
-        return o.a.createElement(
-          d.a,
-          {
-            enableMaskForDismiss: !0,
-            onMaskClick: r,
-            style: [_.sheet, l],
-            type: 'full',
-            withKeyboardNavigation: !0,
-            withMask: !0,
-          },
-          o.a.createElement(p.a, { leftControl: n ? T : k, rightControl: x, title: h }),
-          o.a.createElement(c.a, { style: _.content }, t),
-        )
-      }
-    },
     AOWc: function (e, t, n) {
       'use strict'
       n('ho0z'), n('849X'), n('TJCb')
@@ -11867,7 +11765,7 @@
               flexDirection: 'row',
               flexGrow: 1,
             },
-            headerTextAndThumbnailContainer: { flexDirection: 'row', width: '80%' },
+            headerTextAndThumbnailContainer: { flexDirection: 'row', width: '100%' },
             callToActionContainer: {
               paddingVertical: e.spaces.space12,
               paddingHorizontal: e.spaces.space12,
@@ -11877,7 +11775,12 @@
               flexGrow: 1,
             },
             icon: { color: e.colors.text, paddingLeft: e.spaces.space12, flexShrink: 0 },
-            birdwatchIcon: { marginRight: e.spacesPx.space4, padding: e.spacesPx.space2, color: e.colors.primary },
+            birdwatchIcon: {
+              marginRight: e.spacesPx.space4,
+              padding: e.spacesPx.space2,
+              color: e.colors.primary,
+              flexShrink: 0,
+            },
             thumbnail: { color: e.colors.whiteOnColor },
             subtitle: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12 },
           }
@@ -12328,7 +12231,7 @@
             k.a,
             { style: [ht.root, r] },
             C.a.createElement(lt.a, { style: [ht.icon, a ? ht.withGray700 : null] }),
-            C.a.createElement(x.b, { color: a ? 'gray700' : 'normal', nativeID: t, size: 'subtext2' }, dt(n)),
+            C.a.createElement(x.b, { color: a ? 'gray700' : 'text', nativeID: t, size: 'subtext2' }, dt(n)),
           )
         },
         ht = L.a.create(function (e) {
@@ -14144,7 +14047,7 @@
                                     contextType: c,
                                     iconSize: 'xLarge',
                                     iconStyle: Cn.iconStyle,
-                                    textColor: 'normal',
+                                    textColor: 'text',
                                     textSize: 'headline1',
                                     text: o.text,
                                     topicData: void 0,
@@ -18220,7 +18123,7 @@
           }
         },
         twitterList: function (e, t) {
-          return { color: 'normal', link: f(p.List, t.id), ref: t, text: e, type: p.List, weight: 'bold' }
+          return { color: 'text', link: f(p.List, t.id), ref: t, text: e, type: p.List, weight: 'bold' }
         },
         url: function (e, t) {
           return { color: 'link', link: f(p.Url, t.url), ref: t, text: e, type: p.Url }
@@ -20505,7 +20408,7 @@
                     a = e.onPress
                   return v.a.createElement(
                     y.b,
-                    { color: r ? 'white' : 'normal', hoverLabel: this._getHoverLabel(), link: n, onClick: a },
+                    { color: r ? 'white' : 'text', hoverLabel: this._getHoverLabel(), link: n, onClick: a },
                     v.a.createElement(C.Provider, { value: { onMedia: r } }, t),
                   )
                 },
@@ -20542,7 +20445,7 @@
             var a = e.onMedia
             return t
               ? v.a.createElement(b.a, { children: n, count: r, weight: i })
-              : v.a.createElement(y.b, { children: n, color: a ? 'white' : 'normal', weight: i })
+              : v.a.createElement(y.b, { children: n, color: a ? 'white' : 'text', weight: i })
           })
         })
       var T = g.a.create(function (e) {
@@ -21495,7 +21398,7 @@
           f = e.perspective,
           w = e.renderTimestamp,
           C = e.textColor,
-          E = void 0 === C ? 'normal' : C,
+          E = void 0 === C ? 'text' : C,
           T = e.titleWeight,
           k = void 0 === T ? 'bold' : T,
           I = e.withParticipantsCount,
@@ -22906,6 +22809,90 @@
             )
           }
         }
+    },
+    Uchl: function (e, t, n) {
+      'use strict'
+      var r = n('ddV6'),
+        a = n.n(r),
+        i = n('ERkP'),
+        o = n.n(i),
+        s = n('MWbm'),
+        l = n('5Vk4'),
+        c = n('/yvb'),
+        u = n('sgih'),
+        d = n('xKuM'),
+        p = n('rHpw').a.create(function (e) {
+          return {
+            sheet: { maxHeight: '100vh' },
+            appBar: { borderRadius: e.borderRadii.xLarge, overflow: 'hidden' },
+            buttonContainer: { flexDirection: 'row-reverse' },
+            secondaryButton: { marginRight: e.spaces.space8 },
+            content: { flex: 1, overflowY: 'auto' },
+          }
+        })
+      t.a = function (e) {
+        var t = e.children,
+          n = e.onBackClick,
+          r = e.onClose,
+          i = e.primaryButtonConfig,
+          h = e.secondaryButtonConfig,
+          m = e.style,
+          f = e.title,
+          v = o.a.useState(!1),
+          y = a()(v, 2),
+          b = y[0],
+          g = y[1],
+          _ = function () {
+            g(function (e) {
+              return !e
+            })
+          },
+          w = o.a.createElement(l.a, { backButtonType: n ? 'back' : 'close', onClick: n || r }),
+          C = i
+            ? o.a.createElement(
+                c.a,
+                {
+                  accessibilityLabel: i.label,
+                  disabled: b || i.forceDisabled,
+                  onClick: function () {
+                    _(), null == i || i.onClick(_)
+                  },
+                  size: 'small',
+                  type: 'primaryFilled',
+                },
+                i.label,
+              )
+            : null,
+          E = h
+            ? o.a.createElement(
+                c.a,
+                {
+                  accessibilityLabel: h.label,
+                  onClick: function () {
+                    null == h || h.onClick()
+                  },
+                  size: 'small',
+                  style: p.secondaryButton,
+                  type: 'primaryOutlined',
+                },
+                h.label,
+              )
+            : null,
+          T = o.a.createElement(s.a, { style: p.buttonContainer }, C, E)
+        return o.a.createElement(
+          u.a,
+          {
+            enableMaskForDismiss: !0,
+            onMaskClick: r,
+            style: [p.sheet, m],
+            type: 'full',
+            withKeyboardNavigation: !0,
+            withMask: !0,
+          },
+          o.a.createElement(d.a, { leftControl: w, rightControl: T, style: p.appBar, title: f }),
+          o.a.createElement(s.a, { style: p.content }, t),
+        )
+      }
     },
     Ujvi: function (e, t, n) {
       'use strict'
@@ -30067,7 +30054,7 @@
                         count: t,
                         standalone: !0,
                         style: _.userDecoration,
-                        textColor: 'normal',
+                        textColor: 'text',
                         truncatedCountFormatter: function () {
                           return ''
                         },
@@ -31812,7 +31799,7 @@
         }),
         Ie = n('aklp'),
         Se = n('Rp9C'),
-        xe = n('AEJ6'),
+        xe = n('Uchl'),
         Oe = n('tn7R'),
         Re = A.a.ed7ecc52,
         Le = A.a.ae29404c,
@@ -32355,7 +32342,7 @@
                       { style: gt.metadataContainer },
                       v.a.createElement(
                         ie.b,
-                        { color: a ? 'normal' : 'gray700', size: 'title4', style: gt.title, weight: 'heavy' },
+                        { color: a ? 'text' : 'gray700', size: 'title4', style: gt.title, weight: 'heavy' },
                         a || s,
                       ),
                       n
@@ -32374,7 +32361,7 @@
                           )
                         : null,
                     ),
-                    v.a.createElement(ie.b, { color: t ? 'normal' : 'gray700' }, t || o),
+                    v.a.createElement(ie.b, { color: t ? 'text' : 'gray700' }, t || o),
                     i
                       ? v.a.createElement(ut, {
                           momentId: r,
@@ -36418,7 +36405,7 @@
             return { guestSegment: R.j, isLoggedIn: R.m }
           })
           .propsFromActions(function () {
-            return { updateSettings: he.N }
+            return { updateSettings: he.M }
           }),
         fe = n('RxYA'),
         ve = n('zCf4'),
@@ -44973,7 +44960,7 @@
                     onEntityClick: l,
                     renderFragment: {
                       user: function (e, t) {
-                        return v.a.createElement(x, a()({}, e, { color: 'normal', entityId: t.id }))
+                        return v.a.createElement(x, a()({}, e, { entityId: t.id }))
                       },
                       url: function (e, t) {
                         return v.a.createElement(I.a.TextFragment, a()({}, e, { link: Object(y.b)(t) }))
@@ -48353,7 +48340,7 @@
             return {
               canShowReactionsEducation: be,
               composerData: _e,
-              dataSaverMode: pe.k,
+              dataSaverMode: pe.j,
               isArticleDomainMatched: ke,
               isCommunityMember: Ee,
               likeTransitionAnimation: Se,
@@ -48365,7 +48352,7 @@
               wasArticleVisited: Te,
               bookmarkFolderName: Ie,
               daysSinceDownvoteEducation: ge,
-              replyVotingSurveyClicked: pe.y,
+              replyVotingSurveyClicked: pe.x,
             }
           })
           .adjustStateProps(function (e, t) {
@@ -48426,7 +48413,7 @@
               updateCounts: ve.a.updateCounts,
               resetDraft: Z.f,
               setArticlesVisited: he.e,
-              setReplyVotingSurveyClicked: pe.K,
+              setReplyVotingSurveyClicked: pe.J,
               setTweetMisinfoActionTaken: me.b,
               updateLiveCounts: fe.b,
             }

@@ -3650,7 +3650,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7d6e5d5', 'Contributors'),
           a('cd76a281', 'No members have been added yet'),
           a('h502484e', 'Pending invite'),
-          a('afdb9aa1', 'Resend invite'),
           a('c0aa3e32', 'Cancel invite'),
           a('f68f079c', 'Change role'),
           a('b2794e9d', 'Remove from group'),
@@ -4740,7 +4739,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fea74b66', function (e) {
             return '@' + e.screenName + '’s Moments'
           }),
-          a('e14206c3', 'You haven’t created any Moments')
+          a('e14206c3', 'You haven’t created any Moments'),
+          a('d1e5e327', 'When you do, it’ll show up here.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4757,10 +4757,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d1e5e327', 'When you do, it’ll show up here.'),
-          a('ee75768c', function (e) {
-            return '@' + e.screenName + ' hasn’t created any Moments'
-          }),
+        a('ee75768c', function (e) {
+          return '@' + e.screenName + ' hasn’t created any Moments'
+        }),
           a('f5978663', 'When they do, they’ll show up here.'),
           a('a357d876', 'This account’s Moments are unavailable.'),
           a('i7e9ecf2', 'Pending changes'),
@@ -4924,22 +4923,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cf39fca2', 'Hear what people are talking about.'),
           a('j86184fd', 'Join the conversation.'),
           a('d9e109ae', 'Join Twitter today.'),
-          a('f86f23b5', 'Sign in to Twitter'),
           a('eba1b197', 'Happening now'),
           a('fa811c30', 'Already have an account?'),
-          a('b0dbe914', 'Use phone, email or username'),
           a('e5b0e543', 'Sign in'),
           a('h0ff39da', 'Twitter. It’s what’s happening'),
           a(
             'j3f49ff6',
             'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
           ),
-          a('ie4dd8d6', 'Sign up'),
-          a('fb9dd9b0', 'Sign in'),
           a('g0ff1ca8', 'Join the conversation on Twitter'),
           a('g3aa4a89', 'Log in to see what’s happening'),
           a('jae84f3a', 'Currently Trending in your location'),
+          a('b0dbe914', 'Use phone, email or username'),
           a('ae03a21c', 'See what’s happening'),
+          a('ie4dd8d6', 'Sign up'),
+          a('fb9dd9b0', 'Sign in'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c1da34c2', function (e) {
             return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
@@ -5090,6 +5088,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b71059c3', function (e) {
             return e.percentage + ' from non followers'
           }),
+          a('de4def4d', '% from all promotions to date'),
           a('ib1f8491', function (e) {
             return e.likeCount + ' like' + n(e.likeCount, '', 's')
           }),
@@ -6025,13 +6024,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('fe0c6436', function (e) {
             return 'Only @' + e.screenName + '’s Twitter Circle can see this Tweet'
+          }),
+          a('h7a1a9de', function (e) {
+            return (
+              'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
+            )
           })
-        a('h7a1a9de', function (e) {
-          return (
-            'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
-          )
-        }),
-          a('d7e50a66', 'Learn more'),
+        a('d7e50a66', 'Learn more'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),

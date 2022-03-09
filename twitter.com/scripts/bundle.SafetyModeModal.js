@@ -130,7 +130,7 @@
                 r.a.createElement(
                   S.a,
                   { style: w.safetyModeToggleContainer },
-                  r.a.createElement(g.b, { color: 'normal' }, y),
+                  r.a.createElement(g.b, null, y),
                   a
                     ? r.a.createElement(m.a, { onValueChange: b, value: a })
                     : r.a.createElement(
@@ -457,7 +457,7 @@
                                     g.a.createElement(
                                       q.b,
                                       {
-                                        color: 'normal',
+                                        color: 'text',
                                         link: '/settings/safety_mode/about',
                                         onPress: o,
                                         size: 'subtext1',

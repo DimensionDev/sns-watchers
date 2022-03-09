@@ -8,8 +8,8 @@
         i = n.n(c),
         a = n('ezF+'),
         r = n('ERkP'),
-        o = n.n(r),
-        s = n('VPAj'),
+        s = n.n(r),
+        o = n('VPAj'),
         b = (n('hBvt'), n('fs1G')),
         l = n('t62R'),
         u = n('csss'),
@@ -19,26 +19,26 @@
             c = void 0 === n ? b.a : n,
             i = t.subtext,
             a = t.text,
-            r = o.a.createElement(l.b, { color: e ? 'primary' : 'normal' }, a)
-          return o.a.createElement(u.a, { description: i, label: r, link: e, onPress: c })
+            r = s.a.createElement(l.b, { color: e ? 'primary' : 'text' }, a)
+          return s.a.createElement(u.a, { description: i, label: r, link: e, onPress: c })
         },
         k = n('caTy'),
         d = n('zh9S'),
-        f = a.g({
+        x = a.g({
           component: p,
-          bindActions: Object(s.a)({ scribe: d.c }),
+          bindActions: Object(o.a)({ scribe: d.c }),
           createProps: function (t) {
             var e = t.actions.scribe,
               n = t.entry,
               c = t.scribeData,
               a = t.scribeNamespace,
               r = n.content,
-              o = r.subtext,
-              s = r.text,
+              s = r.subtext,
+              o = r.text,
               b = r.url
             return {
-              subtext: o,
-              text: s,
+              subtext: s,
+              text: o,
               link: b && Object(k.b)(b),
               onClick: function () {
                 e(i()(i()({}, a), {}, { action: 'click_label' }), c)
@@ -46,7 +46,7 @@
             }
           },
         })
-      e.default = f
+      e.default = x
     },
   },
 ])

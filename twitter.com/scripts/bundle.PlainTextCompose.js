@@ -1,46 +1,46 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [81],
   {
-    '/Rsk': function (e, t, n) {
+    '/Rsk': function (e, t, a) {
       'use strict'
-      n.d(t, 'f', function () {
+      a.d(t, 'f', function () {
         return v
       }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return y
         }),
-        n.d(t, 'h', function () {
+        a.d(t, 'h', function () {
           return b
         }),
-        n.d(t, 'g', function () {
+        a.d(t, 'g', function () {
           return _
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return C
         }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return w
         }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return x
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return E
         }),
-        n.d(t, 'i', function () {
+        a.d(t, 'i', function () {
           return I
         })
-      var a = n('KEM+'),
-        i = n.n(a),
-        r = n('yiKp'),
-        o = n.n(r),
-        s = (n('yH/f'), n('KqXw'), n('LJOr'), n('7x/C'), n('JtPf'), n('oEOe')),
-        l = n('kGix'),
-        c = (n('hBpG'), n('M6MT')),
-        d = n('Ssj5'),
-        u = n('qlwE'),
-        m = n('a/ea'),
-        p = n('474o'),
+      var n = a('KEM+'),
+        i = a.n(n),
+        r = a('yiKp'),
+        o = a.n(r),
+        s = (a('yH/f'), a('KqXw'), a('LJOr'), a('7x/C'), a('JtPf'), a('oEOe')),
+        l = a('kGix'),
+        c = (a('hBpG'), a('M6MT')),
+        d = a('Ssj5'),
+        u = a('qlwE'),
+        m = a('a/ea'),
+        p = a('474o'),
         h = 'placePicker',
         f = Object.freeze({
           REQUEST: 'rweb/placePicker/SEARCH_REQUEST',
@@ -81,9 +81,9 @@
           )
         },
         T = function (e, t) {
-          return function (n, a, i) {
+          return function (a, n, i) {
             var r = i.api
-            return Object(s.b)(n, { request: r.Places.search, params: e })({
+            return Object(s.b)(a, { request: r.Places.search, params: e })({
               actionTypes: f,
               context: 'SEARCH_PLACES_ACTION',
               meta: { resultSet: t },
@@ -91,9 +91,9 @@
           }
         },
         w = function (e) {
-          return function (t, n, a) {
-            a.api
-            var i = Object(m.d)(n())
+          return function (t, a, n) {
+            n.api
+            var i = Object(m.d)(a())
             return t(
               T(
                 {
@@ -109,11 +109,11 @@
           }
         },
         x = function () {
-          return function (e, t, n) {
-            n.api
-            var a = y(t()),
+          return function (e, t, a) {
+            a.api
+            var n = y(t()),
               i = v(t())
-            if (a === l.a.LOADING || i) return Promise.resolve()
+            if (n === l.a.LOADING || i) return Promise.resolve()
             var r = Object(m.d)(t())
             return r
               ? e(
@@ -132,9 +132,9 @@
           }
         },
         E = function () {
-          return function (e, t, n) {
-            n.api
-            return Object(u.m)(t()) && Object(m.c)(t()) === c.b.granted
+          return function (e, t, a) {
+            a.api
+            return Object(u.l)(t()) && Object(m.c)(t()) === c.b.granted
               ? e(Object(m.b)())
                   .then(function () {
                     return e(x())
@@ -155,11 +155,11 @@
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case f.REQUEST:
-              var n = t.meta.resultSet
-              return o()(o()({}, e), {}, i()({}, n, { fetchStatus: l.a.LOADING }))
-            case f.FAILURE:
               var a = t.meta.resultSet
-              return o()(o()({}, e), {}, i()({}, a, { fetchStatus: l.a.FAILED }))
+              return o()(o()({}, e), {}, i()({}, a, { fetchStatus: l.a.LOADING }))
+            case f.FAILURE:
+              var n = t.meta.resultSet
+              return o()(o()({}, e), {}, i()({}, n, { fetchStatus: l.a.FAILED }))
             case f.SUCCESS:
               var r = t.meta.resultSet,
                 s = t.payload
@@ -173,48 +173,48 @@
         }),
       )
     },
-    '0uGn': function (e, t, n) {
+    '0uGn': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return Te
       })
-      var a = n('yiKp'),
-        i = n.n(a),
-        r = n('RhWx'),
-        o = n.n(r),
-        s = n('VrFO'),
-        l = n.n(s),
-        c = n('Y9Ll'),
-        d = n.n(c),
-        u = n('1Pcy'),
-        m = n.n(u),
-        p = n('5Yy7'),
-        h = n.n(p),
-        f = n('2VqO'),
-        g = n.n(f),
-        v = n('KEM+'),
-        y = n.n(v),
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('RhWx'),
+        o = a.n(r),
+        s = a('VrFO'),
+        l = a.n(s),
+        c = a('Y9Ll'),
+        d = a.n(c),
+        u = a('1Pcy'),
+        m = a.n(u),
+        p = a('5Yy7'),
+        h = a.n(p),
+        f = a('2VqO'),
+        g = a.n(f),
+        v = a('KEM+'),
+        y = a.n(v),
         b =
-          (n('hBpG'),
-          n('7x/C'),
-          n('vrRf'),
-          n('jwue'),
-          n('+oxZ'),
-          n('2G9S'),
-          n('z84I'),
-          n('JtPf'),
-          n('lTEL'),
-          n('87if'),
-          n('kYxP'),
-          n('LqLs'),
-          n('m9LP'),
-          n('ERkP')),
-        _ = n.n(b),
-        C = (n('TJCb'), n('DZ+c'), n('xZGM')),
-        T = n('GTeL'),
-        w = n('3XMw'),
-        x = n.n(w),
-        E = n('rHpw'),
+          (a('hBpG'),
+          a('7x/C'),
+          a('vrRf'),
+          a('jwue'),
+          a('+oxZ'),
+          a('2G9S'),
+          a('z84I'),
+          a('JtPf'),
+          a('lTEL'),
+          a('87if'),
+          a('kYxP'),
+          a('LqLs'),
+          a('m9LP'),
+          a('ERkP')),
+        _ = a.n(b),
+        C = (a('TJCb'), a('DZ+c'), a('xZGM')),
+        T = a('GTeL'),
+        w = a('3XMw'),
+        x = a.n(w),
+        E = a('rHpw'),
         S = E.a.create(function (e) {
           return {
             formTextInput: {
@@ -233,19 +233,19 @@
         I = 'altTextInput',
         R = 'endEditingButton',
         A = 'altTextEducationSheetPrimaryAction',
-        M = n('MWbm'),
-        k = n('t62R'),
-        D = n('p+r5'),
-        P = x.a.feabf2a0,
+        M = a('MWbm'),
+        k = a('t62R'),
+        P = a('p+r5'),
+        D = x.a.feabf2a0,
         O = x.a.e36287c6,
         L = x.a.cf565d08,
         F = (function (e) {
-          h()(n, e)
-          var t = g()(n)
-          function n() {
+          h()(a, e)
+          var t = g()(a)
+          function a() {
             var e
-            l()(this, n)
-            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
+            l()(this, a)
+            for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               y()(m()(e), '_renderInputHelperText', function () {
@@ -253,25 +253,25 @@
                 return t ? _.a.createElement(k.b, { color: 'link', onPress: t, withInteractiveStyling: !0 }, L) : null
               }),
               y()(m()(e), '_handleChange', function (t) {
-                var n = e.props,
-                  a = n.currentMediaId,
-                  i = n.mediaItem,
-                  r = n.onChange,
+                var a = e.props,
+                  n = a.currentMediaId,
+                  i = a.mediaItem,
+                  r = a.onChange,
                   o = t.target.value
-                i ? r(o, i.id.toString()) : a && r(o, a)
+                i ? r(o, i.id.toString()) : n && r(o, n)
               }),
               e
             )
           }
           return (
-            d()(n, [
+            d()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.autofocus,
-                    n = e.maxLength,
-                    a = e.mediaItem,
+                    a = e.maxLength,
+                    n = e.mediaItem,
                     i = e.orientedImage,
                     r = e.value
                   return _.a.createElement(
@@ -280,13 +280,13 @@
                     _.a.createElement(
                       M.a,
                       { style: S.attachmentContainer },
-                      _.a.createElement(T.a, { mediaItem: a, orientedImage: i }),
-                      _.a.createElement(D.a, {
-                        accessibilityLabel: P,
+                      _.a.createElement(T.a, { mediaItem: n, orientedImage: i }),
+                      _.a.createElement(P.a, {
+                        accessibilityLabel: D,
                         autoFocus: t,
                         helperText: this._renderInputHelperText(),
                         label: O,
-                        maxLength: n,
+                        maxLength: a,
                         maxNumberOfLines: 6,
                         multiline: !0,
                         name: 'altTextInput',
@@ -301,10 +301,10 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(_.a.Component),
-        N = n('rxPX'),
+        N = a('rxPX'),
         B = function (e, t) {
           return Object(C.A)(e, C.a)
         },
@@ -316,18 +316,18 @@
             return { addFlag: C.w }
           })
           .withAnalytics(),
-        j = n('feu+'),
+        j = a('feu+'),
         z = x.a.ffe9ec3a,
         H = x.a.j063b261,
         U = x.a.e57144f0,
         W = x.a.f9f9210c,
         G = (function (e) {
-          h()(n, e)
-          var t = g()(n)
-          function n() {
+          h()(a, e)
+          var t = g()(a)
+          function a() {
             var e
-            l()(this, n)
-            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
+            l()(this, a)
+            for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               y()(m()(e), 'state', { showAltTextEducationSheet: !1 }),
@@ -350,16 +350,16 @@
             )
           }
           return (
-            d()(n, [
+            d()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props,
                     t = e.addFlag,
-                    n = e.analytics
+                    a = e.analytics
                   e.showEducationOnMount &&
                     (this.setState({ showAltTextEducationSheet: !0 }),
-                    n.scribe({ component: 'education', action: 'open' }),
+                    a.scribe({ component: 'education', action: 'open' }),
                     t(C.a))
                 },
               },
@@ -368,8 +368,8 @@
                 value: function () {
                   var e = this.props,
                     t = e.mediaItem,
-                    n = e.onAltTextChange,
-                    a = e.orientedImage,
+                    a = e.onAltTextChange,
+                    n = e.orientedImage,
                     i = e.value,
                     r = this.state.showAltTextEducationSheet,
                     o = t && t.id.toString()
@@ -393,51 +393,51 @@
                       currentMediaId: o,
                       maxLength: 1e3,
                       mediaItem: t,
-                      onChange: n,
+                      onChange: a,
                       onShowEducation: this._handleOpenEducationPrompt,
-                      orientedImage: a,
+                      orientedImage: n,
                       value: i,
                     }),
                   )
                 },
               },
             ]),
-            n
+            a
           )
         })(_.a.Component),
         q = E.a.create(function (e) {
           return { root: { flexGrow: 1 } }
         }),
         K = V(G),
-        Q = n('jHSc'),
-        X = n('EeFI'),
-        Y = n('7JQg'),
-        Z = n('9Q4p'),
-        J = n('PrL8'),
-        $ = n('k/OQ'),
-        ee = n('/yvb'),
-        te = n('oQhu'),
-        ne = n('ddV6'),
-        ae = n.n(ne),
+        Q = a('jHSc'),
+        X = a('EeFI'),
+        Y = a('7JQg'),
+        Z = a('9Q4p'),
+        J = a('PrL8'),
+        $ = a('k/OQ'),
+        ee = a('/yvb'),
+        te = a('oQhu'),
+        ae = a('ddV6'),
+        ne = a.n(ae),
         ie = function (e) {
           var t = new Map()
           return (
             e.forEach(function (e) {
-              var n = ae()(e, 2),
-                a = n[0],
-                i = n[1]
-              t.set(a, i)
+              var a = ne()(e, 2),
+                n = a[0],
+                i = a[1]
+              t.set(n, i)
             }),
             t
           )
         },
-        re = n('mN6z'),
-        oe = n('95Se'),
-        se = n('7Mjr'),
-        le = n('Mbn/'),
-        ce = n('zIWA'),
-        de = n('1auM'),
-        ue = n('eYns'),
+        re = a('mN6z'),
+        oe = a('95Se'),
+        se = a('7Mjr'),
+        le = a('Mbn/'),
+        ce = a('zIWA'),
+        de = a('1auM'),
+        ue = a('eYns'),
         me = { section: 'alt_text' },
         pe = { section: 'crop' },
         he = { section: 'sensitive_media' },
@@ -450,32 +450,32 @@
         Ce = x.a.dd4a83a5,
         Te = { crop: 'crop', altText: 'alt_text', sensitiveMedia: 'sensitive_media' },
         we = (function (e) {
-          h()(n, e)
-          var t = g()(n)
-          function n(e) {
-            var a
-            l()(this, n),
-              (a = t.call(this, e)),
-              y()(m()(a), '_cropper', _.a.createRef()),
+          h()(a, e)
+          var t = g()(a)
+          function a(e) {
+            var n
+            l()(this, a),
+              (n = t.call(this, e)),
+              y()(m()(n), '_cropper', _.a.createRef()),
               y()(
-                m()(a),
+                m()(n),
                 '_getMemoizedTabMetadata',
                 Object(te.a)(function (e, t) {
                   return t && e === Te.sensitiveMedia
-                    ? { namespace: he, title: Ce, renderer: a._renderSensitiveMediaTab }
+                    ? { namespace: he, title: Ce, renderer: n._renderSensitiveMediaTab }
                     : e === Te.altText
-                    ? { namespace: me, title: _e, renderer: a._renderAltTextTab }
-                    : { namespace: pe, title: be, renderer: a._renderCropTab }
+                    ? { namespace: me, title: _e, renderer: n._renderAltTextTab }
+                    : { namespace: pe, title: be, renderer: n._renderCropTab }
                 }),
               ),
-              y()(m()(a), '_renderTabContent', function (e) {
+              y()(m()(n), '_renderTabContent', function (e) {
                 var t,
-                  n = a.props,
-                  i = n.location,
-                  r = n.sensitiveMediaTabEnabled,
-                  o = a._getMemoizedTabMetadata(e, r),
+                  a = n.props,
+                  i = a.location,
+                  r = a.sensitiveMediaTabEnabled,
+                  o = n._getMemoizedTabMetadata(e, r),
                   s = !(null !== (t = i.state) && void 0 !== t && t.hideTabs),
-                  l = s ? a._getTabLinks(e) : [],
+                  l = s ? n._getTabLinks(e) : [],
                   c = o.renderer()
                 return s && l.length > 1
                   ? _.a.createElement(
@@ -486,76 +486,76 @@
                     )
                   : c
               }),
-              y()(m()(a), '_renderAltTextTab', function () {
-                var e = a.props.history,
-                  t = a.state,
-                  n = t.currentMediaId,
+              y()(m()(n), '_renderAltTextTab', function () {
+                var e = n.props.history,
+                  t = n.state,
+                  a = t.currentMediaId,
                   i = t.mediaMetadata,
                   r = t.orientedImage,
-                  o = a._getCurrentMediaItem(),
-                  s = i[n] && i[n].altText
+                  o = n._getCurrentMediaItem(),
+                  s = i[a] && i[a].altText
                 return _.a.createElement(K, {
                   history: e,
-                  key: n,
+                  key: a,
                   mediaItem: o,
-                  onAltTextChange: a._handleAltTextChange,
-                  orientedImage: r.get(n),
+                  onAltTextChange: n._handleAltTextChange,
+                  orientedImage: r.get(a),
                   value: s,
                 })
               }),
-              y()(m()(a), '_renderCropTab', function () {
-                var e = a.state,
+              y()(m()(n), '_renderCropTab', function () {
+                var e = n.state,
                   t = e.cropData,
-                  n = e.currentMediaId,
-                  i = a._getCurrentMediaItem()
+                  a = e.currentMediaId,
+                  i = n._getCurrentMediaItem()
                 return _.a.createElement(X.a, {
-                  defaultCropData: t.get(n),
-                  key: n,
+                  defaultCropData: t.get(a),
+                  key: a,
                   media: i,
-                  ref: a._cropper,
+                  ref: n._cropper,
                   withAspectRatioOptions: !0,
                 })
               }),
-              y()(m()(a), '_renderSensitiveMediaTab', function () {
-                var e = a.state,
+              y()(m()(n), '_renderSensitiveMediaTab', function () {
+                var e = n.state,
                   t = e.currentMediaId,
-                  n = e.mediaMetadata,
+                  a = e.mediaMetadata,
                   i = e.orientedImage,
-                  r = a._getCurrentMediaItem(),
-                  o = n[t] && n[t].sensitiveMediaWarning
+                  r = n._getCurrentMediaItem(),
+                  o = a[t] && a[t].sensitiveMediaWarning
                 return _.a.createElement(Z.a, {
                   currentWarnings: o,
                   key: t,
                   mediaItem: r,
-                  onWarningChange: a._handleSensitiveWarningChange,
+                  onWarningChange: n._handleSensitiveWarningChange,
                   orientedImage: i.get(t),
                 })
               }),
-              y()(m()(a), '_renderAppBarRightControl', function () {
-                var e = a.state.isProcessing,
-                  t = a._getNextMediaIndex(1),
-                  n = a._getNextMediaIndex(-1)
+              y()(m()(n), '_renderAppBarRightControl', function () {
+                var e = n.state.isProcessing,
+                  t = n._getNextMediaIndex(1),
+                  a = n._getNextMediaIndex(-1)
                 return _.a.createElement(
                   M.a,
                   { style: J.a.rightControl },
-                  a._hasMediaAtIndex(n) || a._hasMediaAtIndex(t)
+                  n._hasMediaAtIndex(a) || n._hasMediaAtIndex(t)
                     ? _.a.createElement(
                         M.a,
                         { style: [J.a.rightControl, J.a.leftRightButtons] },
                         _.a.createElement(ee.a, {
                           accessibilityLabel: ye,
-                          disabled: !a._hasMediaAtIndex(n),
+                          disabled: !n._hasMediaAtIndex(a),
                           icon: _.a.createElement(oe.a, null),
-                          onPress: a._handleClickToMediaAtIndex(n),
+                          onPress: n._handleClickToMediaAtIndex(a),
                           size: 'small',
                           style: J.a.prevButton,
                           type: 'primaryOutlined',
                         }),
                         _.a.createElement(ee.a, {
                           accessibilityLabel: ve,
-                          disabled: !a._hasMediaAtIndex(t),
+                          disabled: !n._hasMediaAtIndex(t),
                           icon: _.a.createElement(se.a, null),
-                          onPress: a._handleClickToMediaAtIndex(t),
+                          onPress: n._handleClickToMediaAtIndex(t),
                           size: 'small',
                           type: 'primaryOutlined',
                         }),
@@ -565,7 +565,7 @@
                     ee.a,
                     {
                       disabled: e,
-                      onPress: a._handleEndEditingClick,
+                      onPress: n._handleEndEditingClick,
                       size: 'small',
                       style: J.a.saveButton,
                       testID: R,
@@ -575,73 +575,73 @@
                   ),
                 )
               }),
-              y()(m()(a), '_handleCancelEditingClick', function (e) {
-                a._scribeWithNamespace({ action: 'cancel' }), e()
+              y()(m()(n), '_handleCancelEditingClick', function (e) {
+                n._scribeWithNamespace({ action: 'cancel' }), e()
               }),
-              y()(m()(a), '_handleClickTab', function (e) {
-                var t = a.props.analytics
-                a._handleSaveCropData(),
-                  a._scribeWithNamespace({ element: e, action: 'click' }),
+              y()(m()(n), '_handleClickTab', function (e) {
+                var t = n.props.analytics
+                n._handleSaveCropData(),
+                  n._scribeWithNamespace({ element: e, action: 'click' }),
                   t.scribePageImpression()
               }),
-              y()(m()(a), '_getCurrentMediaItem', function () {
-                var e = a.props.media,
-                  t = a.state.currentMediaId
+              y()(m()(n), '_getCurrentMediaItem', function () {
+                var e = n.props.media,
+                  t = n.state.currentMediaId
                 return e.find(function (e) {
                   return e.id === t
                 })
               }),
-              y()(m()(a), '_getNextMediaIndex', function (e) {
-                var t = a.props.media,
-                  n = a._getCurrentMediaItem()
-                return t.indexOf(n) + e
+              y()(m()(n), '_getNextMediaIndex', function (e) {
+                var t = n.props.media,
+                  a = n._getCurrentMediaItem()
+                return t.indexOf(a) + e
               }),
-              y()(m()(a), '_hasMediaAtIndex', function (e) {
-                var t = a.props.media
+              y()(m()(n), '_hasMediaAtIndex', function (e) {
+                var t = n.props.media
                 return e >= 0 && e < t.length
               }),
-              y()(m()(a), '_handleClickToMediaAtIndex', function (e) {
+              y()(m()(n), '_handleClickToMediaAtIndex', function (e) {
                 return function () {
-                  var t = a.props.media
-                  if (a._hasMediaAtIndex(e)) {
-                    a._handleSaveCropData()
-                    var n = t[e].id
-                    a.setState({ currentMediaId: n })
+                  var t = n.props.media
+                  if (n._hasMediaAtIndex(e)) {
+                    n._handleSaveCropData()
+                    var a = t[e].id
+                    n.setState({ currentMediaId: a })
                   }
                 }
               }),
-              y()(m()(a), '_saveMediaMetadata', function () {
-                var e = a.props,
+              y()(m()(n), '_saveMediaMetadata', function () {
+                var e = n.props,
                   t = e.media,
-                  n = e.setMediaMetadata,
-                  i = a.state.mediaMetadata
+                  a = e.setMediaMetadata,
+                  i = n.state.mediaMetadata
                 t.forEach(function (e) {
-                  n(e.id, i[e.id])
+                  a(e.id, i[e.id])
                 })
               }),
-              y()(m()(a), '_handleEndEditingClick', function () {
-                var e = a.props.history,
-                  t = a._cropper && a._cropper.current,
-                  n = a.state.cropData
-                if (t || n.size) {
-                  var i = a.props,
+              y()(m()(n), '_handleEndEditingClick', function () {
+                var e = n.props.history,
+                  t = n._cropper && n._cropper.current,
+                  a = n.state.cropData
+                if (t || a.size) {
+                  var i = n.props,
                     r = i.media,
                     s = i.processMedia,
                     l = i.updateMediaUpload,
-                    c = a.state.currentMediaId
-                  a.setState({ isProcessing: !0 })
-                  var d = t ? ie([].concat(o()(n), [[c, t.getCropData()]])) : n,
+                    c = n.state.currentMediaId
+                  n.setState({ isProcessing: !0 })
+                  var d = t ? ie([].concat(o()(a), [[c, t.getCropData()]])) : a,
                     u = r.map(function (e) {
                       return d.get(e.id) ? (l({ id: e.id, cropData: d.get(e.id) }), s(e.id)) : Promise.resolve()
                     })
                   Promise.all(u).then(function () {
-                    a._scribeWithNamespace({ action: 'done' })
+                    n._scribeWithNamespace({ action: 'done' })
                   })
                 }
-                a._saveMediaMetadata(), e.goBack()
+                n._saveMediaMetadata(), e.goBack()
               }),
-              y()(m()(a), '_handleAltTextChange', function (e) {
-                a.setState(function (t) {
+              y()(m()(n), '_handleAltTextChange', function (e) {
+                n.setState(function (t) {
                   return {
                     mediaMetadata: i()(
                       i()({}, t.mediaMetadata),
@@ -651,73 +651,73 @@
                   }
                 })
               }),
-              y()(m()(a), '_handleSensitiveWarningChange', function (e, t) {
-                a.setState(function (n) {
-                  var a =
-                    (n.mediaMetadata[n.currentMediaId] && n.mediaMetadata[n.currentMediaId].sensitiveMediaWarning) ||
+              y()(m()(n), '_handleSensitiveWarningChange', function (e, t) {
+                n.setState(function (a) {
+                  var n =
+                    (a.mediaMetadata[a.currentMediaId] && a.mediaMetadata[a.currentMediaId].sensitiveMediaWarning) ||
                     new Set()
                   return (
-                    t ? a.add(e) : a.delete(e),
+                    t ? n.add(e) : n.delete(e),
                     {
                       mediaMetadata: i()(
-                        i()({}, n.mediaMetadata),
+                        i()({}, a.mediaMetadata),
                         {},
                         y()(
                           {},
-                          n.currentMediaId,
-                          i()(i()({}, n.mediaMetadata[n.currentMediaId]), {}, { sensitiveMediaWarning: a }),
+                          a.currentMediaId,
+                          i()(i()({}, a.mediaMetadata[a.currentMediaId]), {}, { sensitiveMediaWarning: n }),
                         ),
                       ),
                     }
                   )
                 })
               }),
-              y()(m()(a), '_handleSaveCropData', function () {
-                var e = a._cropper && a._cropper.current
+              y()(m()(n), '_handleSaveCropData', function () {
+                var e = n._cropper && n._cropper.current
                 if (e) {
-                  var t = a.state.currentMediaId,
-                    n = e.getCropData(),
-                    i = a._getCurrentMediaItem()
+                  var t = n.state.currentMediaId,
+                    a = e.getCropData(),
+                    i = n._getCurrentMediaItem()
                   if (
                     i &&
-                    !Object(re.a)(n, a.state.cropData.get(t)) &&
-                    (a.setState(function (e) {
+                    !Object(re.a)(a, n.state.cropData.get(t)) &&
+                    (n.setState(function (e) {
                       return { orientedImage: ie([].concat(o()(e.orientedImage), [[t, null]])) }
                     }),
                     i.originalMediaFile && i.originalMediaFile instanceof de.a)
                   ) {
                     var r = i.cropData
-                    Object(ue.b)(i.originalMediaFile, { cropData: n || r })
+                    Object(ue.b)(i.originalMediaFile, { cropData: a || r })
                       .then(function (e) {
                         return new de.a(e).withDimensionsAndOrientation().then(function (e) {
-                          a.setState(function (a) {
+                          n.setState(function (n) {
                             return {
-                              orientedImage: ie([].concat(o()(a.orientedImage), [[t, e]])),
-                              cropData: ie([].concat(o()(a.cropData), [[t, n]])),
+                              orientedImage: ie([].concat(o()(n.orientedImage), [[t, e]])),
+                              cropData: ie([].concat(o()(n.cropData), [[t, a]])),
                             }
                           })
                         })
                       })
                       .catch(function () {
-                        a.setState(function (e) {
+                        n.setState(function (e) {
                           return { orientedImage: ie([].concat(o()(e.orientedImage), [[t, void 0]])) }
                         })
                       })
                   }
-                  a.setState(function (e) {
-                    return { cropData: ie([].concat(o()(e.cropData), [[t, n]])) }
+                  n.setState(function (e) {
+                    return { cropData: ie([].concat(o()(e.cropData), [[t, a]])) }
                   })
                 }
               }),
-              y()(m()(a), '_scribeWithNamespace', function (e) {
-                var t = a.props,
-                  n = t.analytics,
+              y()(m()(n), '_scribeWithNamespace', function (e) {
+                var t = n.props,
+                  a = t.analytics,
                   r = t.sensitiveMediaTabEnabled,
-                  o = a._getCurrentTab(),
-                  s = a._getMemoizedTabMetadata(o, r)
-                n.scribe(i()(i()({}, s.namespace), e))
+                  o = n._getCurrentTab(),
+                  s = n._getMemoizedTabMetadata(o, r)
+                a.scribe(i()(i()({}, s.namespace), e))
               }),
-              y()(m()(a), '_getMediaMetadata', function (e) {
+              y()(m()(n), '_getMediaMetadata', function (e) {
                 var t = {}
                 return (
                   e.forEach(function (e) {
@@ -728,28 +728,28 @@
               })
             var r = e.initialMediaId,
               s = e.media,
-              c = a._getMediaMetadata(s)
+              c = n._getMediaMetadata(s)
             return (
-              (a.state = {
+              (n.state = {
                 cropData: new Map(),
                 isProcessing: !1,
                 mediaMetadata: c,
                 currentMediaId: r || -1,
                 orientedImage: new Map(),
               }),
-              a
+              n
             )
           }
           return (
-            d()(n, [
+            d()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.history,
-                    n = e.sensitiveMediaTabEnabled,
-                    a = this._getCurrentTab(),
-                    i = this._getMemoizedTabMetadata(a, n)
+                    a = e.sensitiveMediaTabEnabled,
+                    n = this._getCurrentTab(),
+                    i = this._getMemoizedTabMetadata(n, a)
                   return _.a.createElement(
                     Y.c,
                     { namespace: i.namespace },
@@ -764,7 +764,7 @@
                         rightControl: this._renderAppBarRightControl(),
                         title: i.title,
                       },
-                      this._renderTabContent(a),
+                      this._renderTabContent(n),
                     ),
                   )
                 },
@@ -774,21 +774,21 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    n = t.location,
-                    a = t.sensitiveMediaTabEnabled,
-                    i = null === (e = n.state) || void 0 === e ? void 0 : e.tab
-                  return a && i === Te.sensitiveMedia ? Te.sensitiveMedia : i === Te.altText ? Te.altText : Te.crop
+                    a = t.location,
+                    n = t.sensitiveMediaTabEnabled,
+                    i = null === (e = a.state) || void 0 === e ? void 0 : e.tab
+                  return n && i === Te.sensitiveMedia ? Te.sensitiveMedia : i === Te.altText ? Te.altText : Te.crop
                 },
               },
               {
                 key: '_getTabLinks',
                 value: function (e) {
                   var t,
-                    n = this,
-                    a = this.props,
-                    r = a.analytics,
-                    o = a.location,
-                    s = a.sensitiveMediaTabEnabled,
+                    a = this,
+                    n = this.props,
+                    r = n.analytics,
+                    o = n.location,
+                    s = n.sensitiveMediaTabEnabled,
                     l = this._getCurrentMediaItem(),
                     c = []
                   return (
@@ -817,7 +817,7 @@
                         return e === Te.altText
                       },
                       onClick: function () {
-                        return n._handleClickTab('alt_text_button')
+                        return a._handleClickTab('alt_text_button')
                       },
                     }),
                     s &&
@@ -830,7 +830,7 @@
                           return e === Te.sensitiveMedia
                         },
                         onClick: function () {
-                          return n._handleClickTab('sensitive_media_tab')
+                          return a._handleClickTab('sensitive_media_tab')
                         },
                       }),
                     c
@@ -838,82 +838,82 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(_.a.Component)
       t.b = we
     },
-    '45mF': function (e, t, n) {
+    '45mF': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return c
       })
-      n('2G9S')
-      var a = n('1YZw'),
-        i = n('pXBW'),
-        r = n('3XMw'),
-        o = n.n(r),
-        s = n('SrIh'),
+      a('2G9S')
+      var n = a('1YZw'),
+        i = a('pXBW'),
+        r = a('3XMw'),
+        o = a.n(r),
+        s = a('SrIh'),
         l = o.a.a5d4fda0,
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
           return {
-            customErrorHandler: function (n) {
-              var r = n.context
+            customErrorHandler: function (a) {
+              var r = a.context
               return (
-                !n instanceof i.a && (n.message = 'Strato error occurred in '.concat(r.id, ': ').concat(r.action)),
-                Object(s.a)(n, { extra: { context: r, isStrato: !0 } }),
-                t ? Object(a.b)({ text: e }) : []
+                !a instanceof i.a && (a.message = 'Strato error occurred in '.concat(r.id, ': ').concat(r.action)),
+                Object(s.a)(a, { extra: { context: r, isStrato: !0 } }),
+                t ? Object(n.b)({ text: e }) : []
               )
             },
           }
         }
     },
-    '474o': function (e, t, n) {
+    '474o': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return i
         }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return r
         })
-      n('yH/f')
-      var a = Object.freeze({ profile_location: 'profile_location', tweet_compose_location: 'tweet_compose_location' }),
+      a('yH/f')
+      var n = Object.freeze({ profile_location: 'profile_location', tweet_compose_location: 'tweet_compose_location' }),
         i = Object.freeze({ foursquare: 'foursquare', yelp: 'yelp' }),
         r = Object.freeze({ initial: 'initial', lastSearch: 'lastSearch' })
     },
-    '6XNv': function (e, t, n) {
+    '6XNv': function (e, t, a) {
       'use strict'
-      var a = n('RhWx'),
-        i = n.n(a),
-        r = n('VrFO'),
-        o = n.n(r),
-        s = n('Y9Ll'),
-        l = n.n(s),
-        c = n('1Pcy'),
-        d = n.n(c),
-        u = n('5Yy7'),
-        m = n.n(u),
-        p = n('2VqO'),
-        h = n.n(p),
-        f = n('KEM+'),
-        g = n.n(f),
-        v = n('yiKp'),
-        y = n.n(v),
-        b = (n('lTEL'), n('7x/C'), n('LqLs'), n('87if'), n('kYxP'), n('7xRU'), n('z84I'), n('2G9S'), n('ERkP')),
-        _ = n.n(b),
-        C = n('t62R'),
-        T = n('piX5'),
-        w = n('4r2z'),
-        x = n('FG+G'),
-        E = n('rHpw'),
-        S = n('k/Ka'),
-        I = n('shC7'),
-        R = n('MWbm'),
+      var n = a('RhWx'),
+        i = a.n(n),
+        r = a('VrFO'),
+        o = a.n(r),
+        s = a('Y9Ll'),
+        l = a.n(s),
+        c = a('1Pcy'),
+        d = a.n(c),
+        u = a('5Yy7'),
+        m = a.n(u),
+        p = a('2VqO'),
+        h = a.n(p),
+        f = a('KEM+'),
+        g = a.n(f),
+        v = a('yiKp'),
+        y = a.n(v),
+        b = (a('lTEL'), a('7x/C'), a('LqLs'), a('87if'), a('kYxP'), a('7xRU'), a('z84I'), a('2G9S'), a('ERkP')),
+        _ = a.n(b),
+        C = a('t62R'),
+        T = a('piX5'),
+        w = a('4r2z'),
+        x = a('FG+G'),
+        E = a('rHpw'),
+        S = a('k/Ka'),
+        I = a('shC7'),
+        R = a('MWbm'),
         A = _.a.forwardRef(function (e, t) {
           return Object(S.a)('select', y()(y()({}, e), {}, { ref: t }))
         }),
@@ -921,43 +921,43 @@
           return Object(S.a)('option', e)
         },
         k = 1,
-        D = (function (e) {
-          m()(n, e)
-          var t = h()(n)
-          function n(e) {
-            var a
+        P = (function (e) {
+          m()(a, e)
+          var t = h()(a)
+          function a(e) {
+            var n
             return (
-              o()(this, n),
-              (a = t.call(this, e)),
-              g()(d()(a), '_selectRef', _.a.createRef()),
-              g()(d()(a), 'state', { isFocused: !1 }),
-              g()(d()(a), '_handleChange', function (e) {
-                var t = a.props,
-                  n = t.onChange,
+              o()(this, a),
+              (n = t.call(this, e)),
+              g()(d()(n), '_selectRef', _.a.createRef()),
+              g()(d()(n), 'state', { isFocused: !1 }),
+              g()(d()(n), '_handleChange', function (e) {
+                var t = n.props,
+                  a = t.onChange,
                   i = t.withEmptyOption,
                   r = e.target,
                   o = r.selectedIndex,
                   s = r.value
-                n && n(s, o - (i ? 1 : 0))
+                a && a(s, o - (i ? 1 : 0))
               }),
-              g()(d()(a), '_handleBlur', function (e) {
-                var t = a.props.onBlur
-                a.setState({ isFocused: !1 }), t && t()
+              g()(d()(n), '_handleBlur', function (e) {
+                var t = n.props.onBlur
+                n.setState({ isFocused: !1 }), t && t()
               }),
-              g()(d()(a), '_handleFocus', function (e) {
-                var t = a.props.onFocus
-                a.setState({ isFocused: !0 }), t && t()
+              g()(d()(n), '_handleFocus', function (e) {
+                var t = n.props.onFocus
+                n.setState({ isFocused: !0 }), t && t()
               }),
-              (a._id = 'SELECTOR_'.concat(k)),
-              (a._errorID = ''.concat(a._id, '_ERROR')),
-              (a._helperID = ''.concat(a._id, '_HELP')),
-              (a._labelID = ''.concat(a._id, '_LABEL')),
+              (n._id = 'SELECTOR_'.concat(k)),
+              (n._errorID = ''.concat(n._id, '_ERROR')),
+              (n._helperID = ''.concat(n._id, '_HELP')),
+              (n._labelID = ''.concat(n._id, '_LABEL')),
               (k += 1),
-              a
+              n
             )
           }
           return (
-            l()(n, [
+            l()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -969,8 +969,8 @@
                 value: function () {
                   var e = this.props,
                     t = e.accessibilityDescribedBy,
-                    n = e.disabled,
-                    a = e.errorText,
+                    a = e.disabled,
+                    n = e.errorText,
                     r = e.hasError,
                     o = e.helperText,
                     s = e.options,
@@ -986,9 +986,9 @@
                         : I.a.getConstants().isRTL || w.a.isLocaleRTL(p)
                         ? E.a.theme.fontFamilies.rtl
                         : E.a.theme.fontFamilies.normal,
-                    f = void 0 === r ? !!a : r,
+                    f = void 0 === r ? !!n : r,
                     g = new Set()
-                  a && g.add(this._errorID), t && g.add(t), o && g.add(this._helperID)
+                  n && g.add(this._errorID), t && g.add(t), o && g.add(this._helperID)
                   var v = g.size ? i()(g).join(' ') : void 0
                   return _.a.createElement(
                     _.a.Fragment,
@@ -998,8 +998,8 @@
                       {
                         style: [
                           T.a.border,
-                          P.container,
-                          n && T.a.disabled,
+                          D.container,
+                          a && T.a.disabled,
                           m && T.a.focusedBorderValid,
                           f && T.a.invalidBorderColor,
                           m && f && T.a.focusedBorderInvalid,
@@ -1013,34 +1013,34 @@
                           accessibilityDescribedBy: v,
                           accessibilityInvalid: f,
                           accessibilityLabelledBy: this._labelID,
-                          disabled: n,
+                          disabled: a,
                           nativeID: this._id,
                           onBlur: this._handleBlur,
                           onChange: this._handleChange,
                           onFocus: this._handleFocus,
                           ref: this._selectRef,
-                          style: [P.select, { fontFamily: h }, n && T.a.disabled],
+                          style: [D.select, { fontFamily: h }, a && T.a.disabled],
                           testID: c || '',
                           value: d,
                         },
-                        u ? _.a.createElement(M, { disabled: !0, style: P.option, value: '' }) : null,
+                        u ? _.a.createElement(M, { disabled: !0, style: D.option, value: '' }) : null,
                         s.map(function (e) {
                           var t = e.disabled,
-                            n = e.label,
-                            a = e.value
+                            a = e.label,
+                            n = e.value
                           return _.a.createElement(
                             M,
-                            { disabled: t, key: ''.concat(n, '-').concat(a), style: P.option, value: a },
-                            n,
+                            { disabled: t, key: ''.concat(a, '-').concat(n), style: D.option, value: n },
+                            a,
                           )
                         }),
                       ),
                       _.a.createElement(x.a, {
-                        style: [P.dropdownCaret, m && T.a.validColor, (r || a) && T.a.invalidColor],
+                        style: [D.dropdownCaret, m && T.a.validColor, (r || n) && T.a.invalidColor],
                       }),
                     ),
                     o ? this._renderHelperText() : null,
-                    f && a ? this._renderErrorText() : null,
+                    f && n ? this._renderErrorText() : null,
                   )
                 },
               },
@@ -1049,18 +1049,18 @@
                 value: function () {
                   var e = this.props,
                     t = e.errorText,
-                    n = e.hasError,
-                    a = e.label,
+                    a = e.hasError,
+                    n = e.label,
                     i = this.state.isFocused
                   return _.a.createElement(
                     C.b,
                     {
                       accessibilityRole: 'label',
-                      color: n || t ? 'red500' : i ? 'primary' : 'gray700',
+                      color: a || t ? 'red500' : i ? 'primary' : 'gray700',
                       nativeID: this._labelID,
-                      style: P.label,
+                      style: D.label,
                     },
-                    a,
+                    n,
                   )
                 },
               },
@@ -1072,7 +1072,7 @@
                     { accessibilityLiveRegion: 'polite' },
                     _.a.createElement(
                       C.b,
-                      { color: 'gray700', nativeID: this._helperID, style: P.helperText },
+                      { color: 'gray700', nativeID: this._helperID, style: D.helperText },
                       this.props.helperText,
                     ),
                   )
@@ -1086,18 +1086,18 @@
                     { accessibilityLiveRegion: 'polite' },
                     _.a.createElement(
                       C.b,
-                      { color: 'red500', nativeID: this._errorID, style: P.helperText },
+                      { color: 'red500', nativeID: this._errorID, style: D.helperText },
                       this.props.errorText,
                     ),
                   )
                 },
               },
             ]),
-            n
+            a
           )
         })(_.a.PureComponent)
-      g()(D, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (D.propTypes = {})
-      var P = E.a.create(function (e) {
+      g()(P, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (P.propTypes = {})
+      var D = E.a.create(function (e) {
         return {
           container: { backgroundColor: e.colors.cellBackground },
           dropdownCaret: {
@@ -1142,16 +1142,16 @@
           },
         }
       })
-      t.a = D
+      t.a = P
     },
-    '8A5z': function (e, t, n) {
+    '8A5z': function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        i = n.n(a),
-        r = n('ERkP'),
-        o = n.n(r),
-        s = n('Lsrn'),
-        l = n('k/Ka'),
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        s = a('Lsrn'),
+        l = a('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(l.a)(
@@ -1179,23 +1179,23 @@
         }
       ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
-    '9Q4p': function (e, t, n) {
+    '9Q4p': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return b
       })
-      n('z84I')
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('GTeL'),
-        o = n('3XMw'),
-        s = n.n(o),
-        l = n('MWbm'),
-        c = n('PbQQ'),
-        d = n('6vad'),
-        u = n('e0ey'),
-        m = n('rHpw'),
-        p = n('ZkMC'),
+      a('z84I')
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('GTeL'),
+        o = a('3XMw'),
+        s = a.n(o),
+        l = a('MWbm'),
+        c = a('PbQQ'),
+        d = a('6vad'),
+        u = a('e0ey'),
+        m = a('rHpw'),
+        p = a('ZkMC'),
         h = s.a.j9cf595f,
         f = s.a.d69a782e,
         g = s.a.faf745f9,
@@ -1203,8 +1203,8 @@
         y = s.a.h2437f25
       function b(e) {
         var t = e.currentWarnings,
-          n = e.mediaItem,
-          a = e.onWarningChange,
+          a = e.mediaItem,
+          n = e.onWarningChange,
           o = e.orientedImage,
           s = [
             { label: g, value: 'adult_content' },
@@ -1212,7 +1212,7 @@
             { label: y, value: 'other' },
           ],
           m = c.b.useOpaqueIdentifier(),
-          b = i.a.createElement(r.a, { mediaItem: n, orientedImage: o })
+          b = i.a.createElement(r.a, { mediaItem: a, orientedImage: o })
         return i.a.createElement(
           l.a,
           { style: _.root },
@@ -1231,9 +1231,9 @@
               l.a,
               { accessibilityLabelledBy: m, accessibilityRole: 'group' },
               s.map(function (e) {
-                var n = e.label,
+                var a = e.label,
                   r = e.value
-                return i.a.createElement(u.a, { checked: t && t.has(r), key: r, label: n, name: r, onChange: a })
+                return i.a.createElement(u.a, { checked: t && t.has(r), key: r, label: a, name: r, onChange: n })
               }),
             ),
           ),
@@ -1246,14 +1246,14 @@
         }
       })
     },
-    Drq4: function (e, t, n) {
+    Drq4: function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        i = n.n(a),
-        r = n('ERkP'),
-        o = n.n(r),
-        s = n('Lsrn'),
-        l = n('k/Ka'),
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        s = a('Lsrn'),
+        l = a('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(l.a)(
@@ -1282,17 +1282,17 @@
         }
       ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
-    GTeL: function (e, t, n) {
+    GTeL: function (e, t, a) {
       'use strict'
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('3XMw'),
-        o = n.n(r),
-        s = n('pKoL'),
-        l = n('Qwev'),
-        c = n('rHpw'),
-        d = n('U+bB'),
-        u = n('MWbm'),
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('3XMw'),
+        o = a.n(r),
+        s = a('pKoL'),
+        l = a('Qwev'),
+        c = a('rHpw'),
+        d = a('U+bB'),
+        u = a('MWbm'),
         m = o.a.gff1f69e
       var p = c.a.create(function (e) {
         return {
@@ -1312,43 +1312,43 @@
       })
       t.a = function (e) {
         var t = e.mediaItem,
-          n = e.orientedImage
+          a = e.orientedImage
         return i.a.createElement(
           u.a,
           { style: p.mediaPreviewWrapper },
-          void 0 === n && t
+          void 0 === a && t
             ? i.a.createElement(s.a, {
                 imageResizeMode: 'contain',
                 mediaItem: t,
                 style: p.mediaContainer,
                 withCloseButton: !1,
               })
-            : n
-            ? i.a.createElement(d.a, { resizeMode: 'contain', source: n.url, style: p.image })
+            : a
+            ? i.a.createElement(d.a, { resizeMode: 'contain', source: a.url, style: p.image })
             : i.a.createElement(l.a, { accessibilityLabel: m, style: p.activityIndicator }),
         )
       }
     },
-    M6MT: function (e, t, n) {
+    M6MT: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
-        return a
+      a.d(t, 'b', function () {
+        return n
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return i
         })
-      n('yH/f')
-      var a = Object.freeze({ granted: 'granted', denied: 'denied', prompt: 'prompt' }),
+      a('yH/f')
+      var n = Object.freeze({ granted: 'granted', denied: 'denied', prompt: 'prompt' }),
         i = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 })
     },
-    'Mbn/': function (e, t, n) {
+    'Mbn/': function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        i = n.n(a),
-        r = n('ERkP'),
-        o = n.n(r),
-        s = n('Lsrn'),
-        l = n('k/Ka'),
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        s = a('Lsrn'),
+        l = a('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(l.a)(
@@ -1376,9 +1376,9 @@
         }
       ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
-    PrL8: function (e, t, n) {
+    PrL8: function (e, t, a) {
       'use strict'
-      var a = n('rHpw').a.create(function (e) {
+      var n = a('rHpw').a.create(function (e) {
         return {
           root: { flexGrow: 1, flexShrink: 1, paddingBottom: e.spaces.space12 },
           rightControl: { display: 'flex', flexDirection: 'row' },
@@ -1389,25 +1389,25 @@
           videoTrimmerWrapper: { flexGrow: 1, flexShrink: 1, marginBottom: e.spaces.space20 },
         }
       })
-      t.a = a
+      t.a = n
     },
-    WOwf: function (e, t, n) {
+    WOwf: function (e, t, a) {
       'use strict'
-      function a(e, t) {
+      function n(e, t) {
         return Math.min(1, 1 - e / t)
       }
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       })
     },
-    Zg3A: function (e, t, n) {
+    Zg3A: function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        i = n.n(a),
-        r = n('ERkP'),
-        o = n.n(r),
-        s = n('Lsrn'),
-        l = n('k/Ka'),
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        s = a('Lsrn'),
+        l = a('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(l.a)(
@@ -1432,29 +1432,29 @@
         }
       ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
-    'a/ea': function (e, t, n) {
+    'a/ea': function (e, t, a) {
       'use strict'
-      n.d(t, 'c', function () {
+      a.d(t, 'c', function () {
         return u
       }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return m
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return h
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return g
         }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return v
         })
-      var a = n('KEM+'),
-        i = n.n(a),
-        r = n('yiKp'),
-        o = n.n(r),
-        s = (n('yH/f'), n('7x/C'), n('JtPf'), n('M6MT')),
-        l = n('Ssj5'),
+      var n = a('KEM+'),
+        i = a.n(n),
+        r = a('yiKp'),
+        o = a.n(r),
+        s = (a('yH/f'), a('7x/C'), a('JtPf'), a('M6MT')),
+        l = a('Ssj5'),
         c = 'geoLocation',
         d = Object.freeze({ permissionStatus: void 0, position: void 0 })
       var u = function (e) {
@@ -1487,7 +1487,7 @@
         y = function () {
           return new Promise(function (e, t) {
             return navigator.geolocation.getCurrentPosition(function (t) {
-              var n = {
+              var a = {
                 timestamp: t.timestamp,
                 coords: {
                   latitude: t.coords.latitude,
@@ -1499,7 +1499,7 @@
                   speed: t.coords.speed,
                 },
               }
-              return e(n)
+              return e(a)
             }, t)
           })
         }
@@ -1518,118 +1518,118 @@
         }),
       )
     },
-    c0ZR: function (e, t, n) {
+    c0ZR: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       })
-      n('7x/C'), n('JtPf'), n('849X'), n('TJCb')
-      var a = function (e) {
-        return new Promise(function (t, n) {
-          var a = new window.XMLHttpRequest()
-          ;(a.responseType = 'blob'),
-            (a.onreadystatechange = function () {
-              a.readyState === window.XMLHttpRequest.DONE &&
-                (200 === a.status ? t(a.response) : n(new Error('Unexpected status code')))
+      a('7x/C'), a('JtPf'), a('849X'), a('TJCb')
+      var n = function (e) {
+        return new Promise(function (t, a) {
+          var n = new window.XMLHttpRequest()
+          ;(n.responseType = 'blob'),
+            (n.onreadystatechange = function () {
+              n.readyState === window.XMLHttpRequest.DONE &&
+                (200 === n.status ? t(n.response) : a(new Error('Unexpected status code')))
             }),
-            (a.onerror = function (e) {
-              return n(e)
+            (n.onerror = function (e) {
+              return a(e)
             }),
-            (a.ontimeout = function (e) {
-              return n(e)
+            (n.ontimeout = function (e) {
+              return a(e)
             }),
-            a.open('GET', e, !0),
-            a.send()
+            n.open('GET', e, !0),
+            n.send()
         })
       }
     },
-    h5NW: function (e, t, n) {
+    h5NW: function (e, t, a) {
       'use strict'
-      var a = n('97Jx'),
-        i = n.n(a),
-        r = n('RhWx'),
-        o = n.n(r),
-        s = n('yiKp'),
-        l = n.n(s),
-        c = n('VrFO'),
-        d = n.n(c),
-        u = n('Y9Ll'),
-        m = n.n(u),
-        p = n('1Pcy'),
-        h = n.n(p),
-        f = n('5Yy7'),
-        g = n.n(f),
-        v = n('2VqO'),
-        y = n.n(v),
-        b = n('KEM+'),
-        _ = n.n(b),
+      var n = a('97Jx'),
+        i = a.n(n),
+        r = a('RhWx'),
+        o = a.n(r),
+        s = a('yiKp'),
+        l = a.n(s),
+        c = a('VrFO'),
+        d = a.n(c),
+        u = a('Y9Ll'),
+        m = a.n(u),
+        p = a('1Pcy'),
+        h = a.n(p),
+        f = a('5Yy7'),
+        g = a.n(f),
+        v = a('2VqO'),
+        y = a.n(v),
+        b = a('KEM+'),
+        _ = a.n(b),
         C =
-          (n('2G9S'),
-          n('yH/f'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('5BYb'),
-          n('KqXw'),
-          n('3uku'),
-          n('7xRU'),
-          n('JtPf'),
-          n('jQ3i'),
-          n('x4t0'),
-          n('lTEL'),
-          n('87if'),
-          n('kYxP'),
-          n('z84I'),
-          n('hBvt'),
-          n('MvUL'),
-          n('ulNE'),
-          n('urw/'),
-          n('LW0h'),
-          n('hCOa'),
-          n('DfhM'),
-          n('vrRf'),
-          n('uFXj'),
-          n('ERkP')),
-        T = n.n(C),
-        w = n('ye3X'),
-        x = n('pXBW'),
-        E = n('6/RC'),
-        S = (n('KOtZ'), n('ho0z'), n('hBpG'), n('wpu3')),
-        I = n('v6aA'),
-        R = n('+Kfv'),
-        A = n('eSoz'),
-        M = n('rxPX'),
+          (a('2G9S'),
+          a('yH/f'),
+          a('jwue'),
+          a('7x/C'),
+          a('+oxZ'),
+          a('5BYb'),
+          a('KqXw'),
+          a('3uku'),
+          a('7xRU'),
+          a('JtPf'),
+          a('jQ3i'),
+          a('x4t0'),
+          a('lTEL'),
+          a('87if'),
+          a('kYxP'),
+          a('z84I'),
+          a('hBvt'),
+          a('MvUL'),
+          a('ulNE'),
+          a('urw/'),
+          a('LW0h'),
+          a('hCOa'),
+          a('DfhM'),
+          a('vrRf'),
+          a('uFXj'),
+          a('ERkP')),
+        T = a.n(C),
+        w = a('dDSG'),
+        x = a('pXBW'),
+        E = a('6/RC'),
+        S = (a('KOtZ'), a('ho0z'), a('hBpG'), a('wpu3')),
+        I = a('v6aA'),
+        R = a('+Kfv'),
+        A = a('eSoz'),
+        M = a('rxPX'),
         k = function (e, t) {
-          var n = t.communityId
-          return n ? A.c.select(e, n) : void 0
+          var a = t.communityId
+          return a ? A.c.select(e, a) : void 0
         },
-        D = Object(M.a)().propsFromState(function () {
+        P = Object(M.a)().propsFromState(function () {
           return { community: k }
         }),
-        P = n('MtXG'),
-        O = n('t62R'),
-        L = n('CKsB'),
-        F = n('rHpw'),
-        N = n('3XMw'),
-        B = n.n(N),
+        D = a('MtXG'),
+        O = a('t62R'),
+        L = a('CKsB'),
+        F = a('rHpw'),
+        N = a('3XMw'),
+        B = a.n(N),
         V = B.a.d58baa7e,
-        j = D(
+        j = P(
           T.a.memo(function (e) {
             var t = e.clickHandler,
-              n = e.community,
-              a = e.communityId,
+              a = e.community,
+              n = e.communityId,
               i = e.selectedCommunityId
-            if (!n) return null
+            if (!a) return null
             var r,
-              o = n.member_count
+              o = a.member_count
             return T.a.createElement(L.a, {
               actionSubText:
                 ((r = V(o)),
                 T.a.createElement(
-                  P.a.Group,
+                  D.a.Group,
                   null,
                   T.a.createElement(
-                    P.a,
+                    D.a,
                     null,
                     T.a.createElement(
                       O.b,
@@ -1637,19 +1637,19 @@
                       T.a.createElement(
                         B.a.I18NFormatMessage,
                         { $i18n: 'b38e130b' },
-                        T.a.createElement(P.a.Value, null, B.a.ibd0106d({ formattedCount: r })),
-                        T.a.createElement(P.a.Label, null, B.a.cface2d0({ count: o })),
+                        T.a.createElement(D.a.Value, null, B.a.ibd0106d({ formattedCount: r })),
+                        T.a.createElement(D.a.Label, null, B.a.cface2d0({ count: o })),
                       ),
                     ),
                   ),
                 )),
-              actionText: n.name,
-              isSelected: i === a,
-              key: a,
-              media: n.media,
+              actionText: a.name,
+              isSelected: i === n,
+              key: n,
+              media: a.media,
               onClick: t({
                 _type: 'community_members',
-                communityIdValue: a,
+                communityIdValue: n,
                 conversationControlsValue: 'community_members',
               }),
               selectable: !0,
@@ -1660,22 +1660,22 @@
         z = F.a.create(function (e) {
           return { menuItem: { alignItems: 'center' } }
         }),
-        H = n('0zXz'),
-        U = n('FS1z'),
-        W = n('MWbm'),
-        G = n('yw4N'),
-        q = n('/yvb'),
-        K = n('+Eiw'),
-        Q = n('Zg3A'),
-        X = n('EyD/'),
+        H = a('0zXz'),
+        U = a('FS1z'),
+        W = a('MWbm'),
+        G = a('yw4N'),
+        q = a('/yvb'),
+        K = a('+Eiw'),
+        Q = a('Zg3A'),
+        X = a('EyD/'),
         Y = B.a.e815fc33,
         Z = B.a.c63602d3,
         J = B.a.baffe39a,
         $ = B.a.aa4209e8,
         ee = B.a.d0748dae,
         te = B.a.abd845fd,
-        ne = { viewType: 'everyone' },
-        ae = { viewType: 'community' },
+        ae = { viewType: 'everyone' },
+        ne = { viewType: 'community' },
         ie = B.a.d58baa7e,
         re = F.a.create(function (e) {
           return {
@@ -1696,8 +1696,8 @@
         }),
         oe = function (e) {
           var t,
-            n,
             a,
+            n,
             i,
             r,
             o = e.audienceControlsValue,
@@ -1715,9 +1715,9 @@
             y = h.featureSwitches.isTrue('trusted_friends_tweet_creation_enabled'),
             b = null === (t = e.trustedFriendsList) || void 0 === t ? void 0 : t.rest_id,
             _ =
-              null !== (n = null === (a = e.trustedFriendsList) || void 0 === a ? void 0 : a.member_count) &&
-              void 0 !== n
-                ? n
+              null !== (a = null === (n = e.trustedFriendsList) || void 0 === n ? void 0 : n.member_count) &&
+              void 0 !== a
+                ? a
                 : 0,
             C = T.a.useCallback(
               function (e) {
@@ -1745,7 +1745,7 @@
                 T.a.createElement(O.b, { size: 'headline1', style: re.title, weight: 'bold' }, Y),
                 T.a.createElement(
                   R.a,
-                  { behavioralEventContext: ne },
+                  { behavioralEventContext: ae },
                   T.a.createElement(L.a, {
                     Icon: Q.a,
                     actionText: J,
@@ -1779,10 +1779,10 @@
                         ((i = _),
                         (r = ie(i)),
                         T.a.createElement(
-                          P.a.Group,
+                          D.a.Group,
                           null,
                           T.a.createElement(
-                            P.a,
+                            D.a,
                             null,
                             T.a.createElement(
                               O.b,
@@ -1790,8 +1790,8 @@
                               T.a.createElement(
                                 B.a.I18NFormatMessage,
                                 { $i18n: 'g8ffaf17' },
-                                T.a.createElement(P.a.Value, null, B.a.a5f7b70f({ formattedCount: r })),
-                                T.a.createElement(P.a.Label, null, B.a.a7daec1e({ count: i })),
+                                T.a.createElement(D.a.Value, null, B.a.a5f7b70f({ formattedCount: r })),
+                                T.a.createElement(D.a.Label, null, B.a.a7daec1e({ count: i })),
                               ),
                             ),
                             T.a.createElement(q.a, { onPress: w, size: 'xSmall', type: 'primaryText' }, te),
@@ -1817,7 +1817,7 @@
                     null,
                     T.a.createElement(
                       R.a,
-                      { behavioralEventContext: ae },
+                      { behavioralEventContext: ne },
                       T.a.createElement(O.b, { style: re.title, weight: 'bold' }, Z),
                       T.a.createElement(U.a, {
                         module: p,
@@ -1839,8 +1839,8 @@
             ),
           )
         },
-        se = n('xVN5'),
-        le = n('wAC9'),
+        se = a('xVN5'),
+        le = a('wAC9'),
         ce = function (e) {
           return Object(le.a)({
             contextSuffix: 'COMMUNITIES_MEMBERSHIPS_SLICE',
@@ -1853,14 +1853,14 @@
             sliceKey: 'communitiesMembershipsSlice-'.concat(e),
           })
         },
-        de = n('hqKg'),
-        ue = n('li/m'),
-        me = n('RqPI'),
-        pe = n('xZGM'),
-        he = n('0KEI'),
-        fe = n('oEOe'),
-        ge = n('kGix'),
-        ve = n('Ssj5'),
+        de = a('hqKg'),
+        ue = a('li/m'),
+        me = a('RqPI'),
+        pe = a('xZGM'),
+        he = a('0KEI'),
+        fe = a('oEOe'),
+        ge = a('kGix'),
+        ve = a('Ssj5'),
         ye = 'trustedFriends',
         be = Object.freeze({
           REQUEST: 'rweb/trustedFriendsLists/FETCH_TRUSTED_FRIENDS_LISTS_REQUEST',
@@ -1876,9 +1876,9 @@
           return e.trustedFriends.lists
         },
         Te = function () {
-          return function (e, t, n) {
-            var a = n.api
-            return fe.b(e, { request: a.TrustedFriends.createTrustedFriendsList })({
+          return function (e, t, a) {
+            var n = a.api
+            return fe.b(e, { request: n.TrustedFriends.createTrustedFriendsList })({
               actionTypes: _e,
               context: 'CREATE_TRUSTED_FRIENDS_LIST',
             })
@@ -1886,12 +1886,12 @@
         },
         we = function () {
           return function (e, t) {
-            var n = t(),
-              a = Ce(n)
-            ;(a.length ? a[0] : void 0) ||
-              e(function (e, t, n) {
-                var a = n.api
-                return fe.b(e, { request: a.TrustedFriends.fetchAuthenticatedUserTFLists })({
+            var a = t(),
+              n = Ce(a)
+            ;(n.length ? n[0] : void 0) ||
+              e(function (e, t, a) {
+                var n = a.api
+                return fe.b(e, { request: n.TrustedFriends.fetchAuthenticatedUserTFLists })({
                   actionTypes: be,
                   context: 'FETCH_TRUSTED_FRIENDS_LISTS',
                 })
@@ -1937,8 +1937,8 @@
         }),
       )
       var Ee = function (e, t) {
-          var n = t.audienceControlsValue.communityIdValue || void 0
-          return n ? A.c.select(e, n) : void 0
+          var a = t.audienceControlsValue.communityIdValue || void 0
+          return a ? A.c.select(e, a) : void 0
         },
         Se = function (e, t) {
           return Object(pe.A)(e, pe.f)
@@ -1972,35 +1972,35 @@
               fetchOrCreateTrustedFriendsList: we,
             }
           }),
-        Ae = n('FG+G'),
-        Me = n('Sp5X'),
-        ke = n('X00g'),
-        De = n('efqG'),
-        Pe = B.a.baffe39a,
+        Ae = a('FG+G'),
+        Me = a('Sp5X'),
+        ke = a('X00g'),
+        Pe = a('efqG'),
+        De = B.a.baffe39a,
         Oe = B.a.e815fc33,
         Le = B.a.aa4209e8,
         Fe = B.a.d0748dae,
         Ne = { viewType: 'communities_controls' },
         Be = T.a.createElement(Ae.a, null),
         Ve = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n(e, a) {
+          g()(a, e)
+          var t = y()(a)
+          function a(e, n) {
             var i
             return (
-              d()(this, n),
-              (i = t.call(this, e, a)),
+              d()(this, a),
+              (i = t.call(this, e, n)),
               _()(h()(i), '_renderContent', function (e) {
                 var t = i.props,
-                  n = t.audienceControlsValue,
-                  a = t.hasMemberships,
+                  a = t.audienceControlsValue,
+                  n = t.hasMemberships,
                   r = t.isC9sParticipationEnabled,
                   o = t.isSuperFollowsCreator,
                   s = t.sliceModule
                 return T.a.createElement(oe, {
-                  audienceControlsValue: n,
+                  audienceControlsValue: a,
                   dismiss: e,
-                  hasMemberships: a,
+                  hasMemberships: n,
                   history: Me.a,
                   isC9sParticipationEnabled: r,
                   isSuperFollowsCreator: o,
@@ -2030,7 +2030,7 @@
             )
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2044,19 +2044,19 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    n = t.audienceControlsValue,
-                    a = t.educationalVisibilityFlag,
+                    a = t.audienceControlsValue,
+                    n = t.educationalVisibilityFlag,
                     r = t.hasMemberships,
                     o = t.isSuperFollowsCreator,
                     s = t.selectedCommunity,
                     l = this.state.popoverIsOpen,
                     c = this.context.featureSwitches.isTrue('c9s_ui_colors_enabled_rweb'),
                     d = this.context.featureSwitches.isTrue('trusted_friends_tweet_creation_enabled'),
-                    u = n.communityIdValue || !1,
-                    m = n.exclusivityControlValue || !1,
-                    p = n.trustedFriendsValue || !1,
-                    h = a && !s,
-                    f = Pe
+                    u = a.communityIdValue || !1,
+                    m = a.exclusivityControlValue || !1,
+                    p = a.trustedFriendsValue || !1,
+                    h = n && !s,
+                    f = De
                   if ((u && null != s && s.name ? (f = s.name) : m ? (f = Le) : p && (f = Fe), m))
                     e = { color: 'plum500', borderColor: 'plum500', backgroundColor: 'transparent' }
                   else if (u && null != s && s.theme && c) {
@@ -2071,7 +2071,7 @@
                           W.a,
                           { style: je.container },
                           T.a.createElement(
-                            De.a,
+                            Pe.a,
                             {
                               onDismiss: this._handleDismiss,
                               onOpen: this._handleOpen,
@@ -2100,7 +2100,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
       _()(Ve, 'contextType', I.a)
@@ -2113,12 +2113,12 @@
           }
         }),
         ze = Re(Ve),
-        He = n('ddV6'),
-        Ue = n.n(He),
-        We = n('PKbs'),
+        He = a('ddV6'),
+        Ue = a.n(He),
+        We = a('PKbs'),
         Ge = function (e, t) {
-          var n = t.selectedCommunityId
-          return n ? A.c.select(e, n) : void 0
+          var a = t.selectedCommunityId
+          return a ? A.c.select(e, a) : void 0
         },
         qe = Object(M.a)()
           .propsFromState(function () {
@@ -2130,8 +2130,8 @@
               fetchCommunityIfNeeded: A.c.fetchOneIfNeeded,
             }
           }),
-        Ke = n('YeIG'),
-        Qe = n('21zW'),
+        Ke = a('YeIG'),
+        Qe = a('21zW'),
         Xe = B.a.gfca5254,
         Ye = B.a.f510c8b2,
         Ze = T.a.createElement(O.b, { weight: 'bold' }, Ye),
@@ -2151,15 +2151,15 @@
         }),
         $e = qe(function (e) {
           var t = e.community,
-            n = e.createLocalApiErrorHandler,
-            a = e.fetchCommunityIfNeeded,
+            a = e.createLocalApiErrorHandler,
+            n = e.fetchCommunityIfNeeded,
             r = e.selectedCommunityId,
             o = e.showMiddot
           T.a.useEffect(
             function () {
-              r && Object(Ke.a)(t) && a(r).catch(n())
+              r && Object(Ke.a)(t) && n(r).catch(a())
             },
-            [t, r, n, a],
+            [t, r, a, n],
           )
           var s = T.a.useState(!1),
             l = Ue()(s, 2),
@@ -2169,15 +2169,15 @@
             m = T.a.useCallback(
               function (e) {
                 if (null != t && t.rules) {
-                  var n = t.rules,
-                    a = t.theme
+                  var a = t.rules,
+                    n = t.theme
                   return T.a.createElement(We.b, {
                     badgeStyle: Je.badgeStyle,
                     headerContainerStyle: Je.rulesHeader,
                     heading: Ze,
                     ruleContainerStyle: Je.ruleContainerStyle,
-                    rules: n,
-                    theme: a,
+                    rules: a,
+                    theme: n,
                   })
                 }
                 return null
@@ -2195,7 +2195,7 @@
               { style: Je.container },
               o ? T.a.createElement(Qe.a, null) : null,
               T.a.createElement(
-                De.a,
+                Pe.a,
                 {
                   onDismiss: function () {
                     return d(!1)
@@ -2224,27 +2224,27 @@
           }
           return null
         }),
-        et = n('ii+P'),
-        tt = n('4zmP'),
-        nt = B.a.g46f363d,
-        at = { viewType: 'rule_education' },
+        et = a('ii+P'),
+        tt = a('4zmP'),
+        at = B.a.g46f363d,
+        nt = { viewType: 'rule_education' },
         it = function () {
           var e = Object(et.a)(pe.g),
             t = Ue()(e, 2),
-            n = t[0],
-            a = t[1]
+            a = t[0],
+            n = t[1]
           return (
             T.a.useEffect(
               function () {
-                return a
+                return n
               },
-              [a],
+              [n],
             ),
-            n
+            a
               ? T.a.createElement(
                   W.a,
                   { style: rt.container },
-                  T.a.createElement(tt.a, { behavioralEventContext: at, onClose: a, text: nt, withCloseButton: !0 }),
+                  T.a.createElement(tt.a, { behavioralEventContext: nt, onClose: n, text: at, withCloseButton: !0 }),
                 )
               : null
           )
@@ -2253,10 +2253,10 @@
           return { container: { marginBottom: e.spaces.space8 } }
         }),
         ot = T.a.memo(it),
-        st = n('H7Rt'),
-        lt = n('m3Bd'),
-        ct = n.n(lt),
-        dt = n('yZqq'),
+        st = a('H7Rt'),
+        lt = a('m3Bd'),
+        ct = a.n(lt),
+        dt = a('yZqq'),
         ut = function (e, t) {
           return Object(pe.A)(e, pe.q)
         },
@@ -2278,8 +2278,8 @@
         }),
         gt = mt(function (e) {
           var t = e.addEducationFlag,
-            n = e.buttonRef,
-            a = e.shouldShowEducation,
+            a = e.buttonRef,
+            n = e.shouldShowEducation,
             i = T.a.useContext(I.a).featureSwitches,
             r = T.a.useState(),
             o = Ue()(r, 2),
@@ -2294,16 +2294,16 @@
             }, []),
             T.a.useEffect(
               function () {
-                if (n) {
-                  var e = n.getBoundingClientRect(),
+                if (a) {
+                  var e = a.getBoundingClientRect(),
                     t = e.left,
-                    a = e.width
-                  l(t + a / 2)
+                    n = e.width
+                  l(t + n / 2)
                 }
               },
-              [n],
+              [a],
             ),
-            !0 === i.getValueWithoutScribeImpression('conversation_controls_persistence_enabled') && a
+            !0 === i.getValueWithoutScribeImpression('conversation_controls_persistence_enabled') && n
               ? T.a.createElement(
                   W.a,
                   { style: ft.container },
@@ -2318,12 +2318,12 @@
               : null
           )
         }),
-        vt = n('FGLp'),
-        yt = n('Irs7'),
-        bt = n('DlMI'),
-        _t = n('gBde'),
-        Ct = n('gUPl'),
-        Tt = n('cOhU'),
+        vt = a('FGLp'),
+        yt = a('Irs7'),
+        bt = a('DlMI'),
+        _t = a('gBde'),
+        Ct = a('gUPl'),
+        Tt = a('cOhU'),
         wt = ['analytics'],
         xt = T.a.createElement(bt.a, null),
         Et = T.a.createElement(_t.a, null),
@@ -2343,8 +2343,8 @@
           (Object.freeze(['community', 'by_invitation']),
           Object(yt.a)(function (e) {
             var t = e.analytics,
-              n = ct()(e, wt),
-              a = e.disabled,
+              a = ct()(e, wt),
+              n = e.disabled,
               i = e.value,
               r = Mt[i],
               o = r.icon,
@@ -2369,35 +2369,35 @@
               d ? T.a.createElement(gt, { buttonRef: m.current }) : null,
               T.a.createElement(
                 W.a,
-                { style: Dt.controlsContainer },
+                { style: Pt.controlsContainer },
                 T.a.createElement(
                   dt.a,
-                  n,
+                  a,
                   T.a.createElement(
                     q.a,
-                    { disabled: a, icon: o, onPress: p, ref: m, size: 'xSmall', style: Dt.button, type: 'brandText' },
+                    { disabled: n, icon: o, onPress: p, ref: m, size: 'xSmall', style: Pt.button, type: 'brandText' },
                     s,
                   ),
                 ),
               ),
             )
           })),
-        Dt = F.a.create(function (e) {
+        Pt = F.a.create(function (e) {
           return {
             button: { paddingHorizontal: e.spacesPx.space8 + e.spacesPx.space2 },
             controlsContainer: { display: 'inline-flex', flexDirection: 'row', paddingBottom: e.spaces.space12 },
           }
         }),
-        Pt = n('krmn'),
-        Ot = n('cIoY'),
-        Lt = n('w3n3'),
-        Ft = n('MLl7'),
-        Nt = n('1auM'),
-        Bt = n('07FG'),
-        Vt = n('Q8CU'),
-        jt = n('QbaN'),
-        zt = n('VPdC'),
-        Ht = n('WPfJ'),
+        Dt = a('krmn'),
+        Ot = a('cIoY'),
+        Lt = a('w3n3'),
+        Ft = a('MLl7'),
+        Nt = a('1auM'),
+        Bt = a('07FG'),
+        Vt = a('Q8CU'),
+        jt = a('QbaN'),
+        zt = a('VPdC'),
+        Ht = a('WPfJ'),
         Ut = F.a.create(function (e) {
           return {
             root: { paddingHorizontal: e.componentDimensions.gutterHorizontal },
@@ -2517,10 +2517,10 @@
         Wt = B.a.bdbcdd93,
         Gt = function (e) {
           var t = e.media,
-            n = e.mediaAttachDisabled,
-            a = e.onFilesAdded,
+            a = e.mediaAttachDisabled,
+            n = e.onFilesAdded,
             i = e.setActiveParentKey,
-            r = n || t.length >= 4,
+            r = a || t.length >= 4,
             o = t.length < 3
           return T.a.createElement(zt.a, {
             acceptGifs: 0 === t.length,
@@ -2528,22 +2528,22 @@
             accessibilityLabel: t.length > 0 ? Wt : void 0,
             disabled: r,
             multiple: o,
-            onChange: a,
+            onChange: n,
             onPress: i,
             style: [Ut.toolBarButton, Ut.firstToolBarButton],
             type: 'brandText',
           })
         },
-        qt = n('oQhu'),
-        Kt = n('p+r5'),
-        Qt = n('GWvE'),
+        qt = a('oQhu'),
+        Kt = a('p+r5'),
+        Qt = a('GWvE'),
         Xt = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n() {
+          g()(a, e)
+          var t = y()(a)
+          function a() {
             var e
-            d()(this, n)
-            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
+            d()(this, a)
+            for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               _()(h()(e), '_setInputRef', function (t) {
@@ -2553,14 +2553,14 @@
             )
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.autoFocus,
-                    n = e.defaultValue,
-                    a = e.editable,
+                    a = e.defaultValue,
+                    n = e.editable,
                     i = e.label,
                     r = e.name,
                     o = e.onBlur,
@@ -2572,8 +2572,8 @@
                       autoCapitalize: 'none',
                       autoCorrect: !1,
                       autoFocus: t,
-                      defaultValue: n,
-                      editable: a,
+                      defaultValue: a,
+                      editable: n,
                       label: i,
                       maxLength: 25,
                       name: r,
@@ -2603,7 +2603,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
       _()(Xt, 'defaultProps', { autoFocus: !1, editable: !0, optional: !1 })
@@ -2623,23 +2623,23 @@
           }
         }),
         Zt = Xt,
-        Jt = (n('Blm6'), n('TJCb'), n('DZ+c'), n('mtvn')),
-        $t = n('6XNv'),
-        en = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n() {
-            return d()(this, n), t.apply(this, arguments)
+        Jt = (a('Blm6'), a('TJCb'), a('DZ+c'), a('mtvn')),
+        $t = a('6XNv'),
+        ea = (function (e) {
+          g()(a, e)
+          var t = y()(a)
+          function a() {
+            return d()(this, a), t.apply(this, arguments)
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.editable,
-                    n = e.label,
-                    a = e.last,
+                    a = e.label,
+                    n = e.last,
                     i = e.max,
                     r = e.min,
                     o = e.onChange,
@@ -2651,70 +2651,70 @@
                     })
                   return T.a.createElement($t.a, {
                     disabled: l,
-                    label: n,
+                    label: a,
                     onChange: o,
                     options: d,
-                    style: [tn.selector, !a && tn.rightMargin],
+                    style: [ta.selector, !n && ta.rightMargin],
                     testID: s,
                     value: c,
                   })
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.PureComponent)
-      _()(en, 'defaultProps', { last: !1 })
-      var tn = F.a.create(function (e) {
+      _()(ea, 'defaultProps', { last: !1 })
+      var ta = F.a.create(function (e) {
           return { rightMargin: { marginRight: e.spaces.space20 }, selector: { flexGrow: 1 } }
         }),
-        nn = en,
-        an = 'addPollChoice',
-        rn = 'selectPollDays',
-        on = 'selectPollHours',
-        sn = 'selectPollMinutes',
-        ln = 'removePollButton',
-        cn = B.a.caf8edc4,
-        dn = B.a.g93586be,
-        un = B.a.d073b644,
-        mn = B.a.a2f0728e,
-        pn = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n(e, a) {
+        aa = ea,
+        na = 'addPollChoice',
+        ia = 'selectPollDays',
+        ra = 'selectPollHours',
+        oa = 'selectPollMinutes',
+        sa = 'removePollButton',
+        la = B.a.caf8edc4,
+        ca = B.a.g93586be,
+        da = B.a.d073b644,
+        ua = B.a.a2f0728e,
+        ma = (function (e) {
+          g()(a, e)
+          var t = y()(a)
+          function a(e, n) {
             var i
             return (
-              d()(this, n),
-              (i = t.call(this, e, a)),
+              d()(this, a),
+              (i = t.call(this, e, n)),
               _()(h()(i), '_handleDaysChange', function (e) {
                 var t = i.props.onChange,
-                  n = parseInt(e, 10)
+                  a = parseInt(e, 10)
                 i.setState(function (e) {
-                  var a = e.duration,
-                    i = a.hours,
-                    r = a.minutes,
-                    o = 0 === n && 0 === i && 0 === r ? 1 : 7 === n ? 0 : i,
-                    s = { days: n, hours: o, minutes: 7 === n ? 0 : 0 === n && 0 === o && r < 5 ? 5 : r }
+                  var n = e.duration,
+                    i = n.hours,
+                    r = n.minutes,
+                    o = 0 === a && 0 === i && 0 === r ? 1 : 7 === a ? 0 : i,
+                    s = { days: a, hours: o, minutes: 7 === a ? 0 : 0 === a && 0 === o && r < 5 ? 5 : r }
                   return t && t(s), { duration: s }
                 })
               }),
               _()(h()(i), '_handleHoursChange', function (e) {
                 var t = i.props.onChange,
-                  n = parseInt(e, 10)
+                  a = parseInt(e, 10)
                 i.setState(function (e) {
-                  var a = e.duration,
-                    i = a.days,
-                    r = a.minutes,
-                    o = { days: i, hours: n, minutes: 0 === i && 0 === n && r < 5 ? 5 : r }
+                  var n = e.duration,
+                    i = n.days,
+                    r = n.minutes,
+                    o = { days: i, hours: a, minutes: 0 === i && 0 === a && r < 5 ? 5 : r }
                   return t && t(o), { duration: o }
                 })
               }),
               _()(h()(i), '_handleMinutesChange', function (e) {
                 var t = i.props.onChange,
-                  n = parseInt(e, 10)
+                  a = parseInt(e, 10)
                 i.setState(function (e) {
-                  var a = e.duration,
-                    i = { days: a.days, hours: a.hours, minutes: n }
+                  var n = e.duration,
+                    i = { days: n.days, hours: n.hours, minutes: a }
                   return t && t(i), { duration: i }
                 })
               }),
@@ -2723,17 +2723,17 @@
             )
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.isActive,
-                    n = e.style
+                    a = e.style
                   return T.a.createElement(
                     W.a,
-                    { style: n },
-                    T.a.createElement(O.b, { color: 'normal', style: hn.durationLabel }, t ? cn : ''),
+                    { style: a },
+                    T.a.createElement(O.b, { style: pa.durationLabel }, t ? la : ''),
                     this._renderPicker(),
                   )
                 },
@@ -2743,40 +2743,40 @@
                 value: function () {
                   var e = this.props,
                     t = e.editable,
-                    n = e.isActive,
-                    a = this.state.duration,
-                    i = a.days,
-                    r = a.hours,
-                    o = a.minutes
+                    a = e.isActive,
+                    n = this.state.duration,
+                    i = n.days,
+                    r = n.hours,
+                    o = n.minutes
                   return T.a.createElement(
                     W.a,
-                    { style: hn.durationControls },
-                    T.a.createElement(nn, {
-                      editable: t && n,
-                      label: dn,
+                    { style: pa.durationControls },
+                    T.a.createElement(aa, {
+                      editable: t && a,
+                      label: ca,
                       max: 7,
                       min: 0,
                       onChange: this._handleDaysChange,
-                      testID: rn,
+                      testID: ia,
                       value: i,
                     }),
-                    T.a.createElement(nn, {
-                      editable: t && n,
-                      label: un,
+                    T.a.createElement(aa, {
+                      editable: t && a,
+                      label: da,
                       max: 7 === i ? 0 : 23,
                       min: 0,
                       onChange: this._handleHoursChange,
-                      testID: on,
+                      testID: ra,
                       value: r,
                     }),
-                    T.a.createElement(nn, {
-                      editable: t && n,
-                      label: mn,
+                    T.a.createElement(aa, {
+                      editable: t && a,
+                      label: ua,
                       last: !0,
                       max: 7 === i ? 0 : 59,
                       min: 0 === i && 0 === r ? 5 : 0,
                       onChange: this._handleMinutesChange,
-                      testID: sn,
+                      testID: oa,
                       value: o,
                     }),
                   )
@@ -2789,33 +2789,33 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
-      _()(pn, 'defaultProps', { editable: !0, initialDuration: { days: 1, hours: 0, minutes: 0 } })
-      var hn = F.a.create(function (e) {
+      _()(ma, 'defaultProps', { editable: !0, initialDuration: { days: 1, hours: 0, minutes: 0 } })
+      var pa = F.a.create(function (e) {
           return {
             durationControls: { flexDirection: 'row', justifyContent: 'space-between' },
             durationLabel: { marginBottom: e.spaces.space4 },
           }
         }),
-        fn = pn,
-        gn = n('iY63'),
-        vn = n('jtO7'),
-        yn = B.a.g589c2e1,
-        bn = B.a.a1e6c3a1,
-        _n = B.a.a739e006,
-        Cn = B.a.d89a5b92,
-        Tn = B.a.c2a8118d,
-        wn = B.a.a8ede1de,
-        xn = B.a.af40a8ef,
-        En = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n(e, a) {
+        ha = ma,
+        fa = a('iY63'),
+        ga = a('jtO7'),
+        va = B.a.g589c2e1,
+        ya = B.a.a1e6c3a1,
+        ba = B.a.a739e006,
+        _a = B.a.d89a5b92,
+        Ca = B.a.c2a8118d,
+        Ta = B.a.a8ede1de,
+        wa = B.a.af40a8ef,
+        xa = (function (e) {
+          g()(a, e)
+          var t = y()(a)
+          function a(e, n) {
             var i
-            d()(this, n),
-              (i = t.call(this, e, a)),
+            d()(this, a),
+              (i = t.call(this, e, n)),
               _()(h()(i), '_setChoice1Ref', function (e) {
                 i._choice1 = e
               }),
@@ -2834,14 +2834,14 @@
               _()(h()(i), '_handleValidation', function () {
                 var e = i.props,
                   t = e.onChange,
-                  n = e.onInvalid,
-                  a = e.onValid,
+                  a = e.onInvalid,
+                  n = e.onValid,
                   r = i.choices,
                   o = h()(i),
                   s = [o._choice1, o._choice2, o._choice3, o._choice4].filter(Boolean).every(function (e) {
                     return e.isValid
                   })
-                r && r.length >= 2 && s ? a() : n(), t && t({ choices: r, duration: i.duration })
+                r && r.length >= 2 && s ? n() : a(), t && t({ choices: r, duration: i.duration })
               }),
               _()(h()(i), '_handleAdd', function () {
                 i.props.analytics.scribe({ element: 'add_poll_option', action: 'click' }),
@@ -2864,55 +2864,55 @@
             return (i.state = { autoFocus: o, choiceCount: l }), i
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: '_renderChoices',
                 value: function () {
                   var e = this.props,
                     t = e.editable,
-                    n = e.initialChoices,
-                    a = void 0 === n ? [] : n,
+                    a = e.initialChoices,
+                    n = void 0 === a ? [] : a,
                     i = e.isActive,
                     r = this.state,
                     o = r.autoFocus,
                     s = r.choiceCount,
                     l = T.a.createElement(
                       W.a,
-                      { style: Sn.rightColumn },
+                      { style: Ea.rightColumn },
                       s < 4
                         ? T.a.createElement(q.a, {
-                            accessibilityLabel: wn,
+                            accessibilityLabel: Ta,
                             disabled: !(t && i),
-                            hoverLabel: { label: xn },
-                            icon: T.a.createElement(gn.a, null),
+                            hoverLabel: { label: wa },
+                            icon: T.a.createElement(fa.a, null),
                             onPress: this._handleAdd,
                             size: 'medium',
-                            style: Sn.addButton,
-                            testID: an,
+                            style: Ea.addButton,
+                            testID: na,
                             type: 'brandText',
                           })
                         : null,
                     )
                   return T.a.createElement(
                     W.a,
-                    { style: Sn.choicesAndAddButton },
+                    { style: Ea.choicesAndAddButton },
                     T.a.createElement(
                       W.a,
-                      { style: Sn.choices },
+                      { style: Ea.choices },
                       T.a.createElement(Zt, {
                         autoFocus: o,
-                        defaultValue: a[0],
+                        defaultValue: n[0],
                         editable: t && i,
-                        label: yn,
+                        label: va,
                         name: 'Choice1',
                         onBlur: this._handleBlur,
                         onChange: this._handleValidation,
                         ref: this._setChoice1Ref,
                       }),
                       T.a.createElement(Zt, {
-                        defaultValue: a[1],
+                        defaultValue: n[1],
                         editable: t && i,
-                        label: bn,
+                        label: ya,
                         name: 'Choice2',
                         onBlur: this._handleBlur,
                         onChange: this._handleValidation,
@@ -2921,9 +2921,9 @@
                       s >= 3
                         ? T.a.createElement(Zt, {
                             autoFocus: o,
-                            defaultValue: a[2],
+                            defaultValue: n[2],
                             editable: t && i,
-                            label: _n,
+                            label: ba,
                             name: 'Choice3',
                             onBlur: this._handleBlur,
                             onChange: this._handleValidation,
@@ -2934,9 +2934,9 @@
                       4 === s
                         ? T.a.createElement(Zt, {
                             autoFocus: o,
-                            defaultValue: a[3],
+                            defaultValue: n[3],
                             editable: t && i,
-                            label: Cn,
+                            label: _a,
                             name: 'Choice4',
                             onBlur: this._handleBlur,
                             onChange: this._handleValidation,
@@ -2954,25 +2954,25 @@
                 value: function () {
                   var e = this.props,
                     t = e.editable,
-                    n = e.initialDuration,
-                    a = e.isActive,
+                    a = e.initialDuration,
+                    n = e.isActive,
                     i = e.onRemove
                   return T.a.createElement(
                     W.a,
-                    { style: Sn.root },
+                    { style: Ea.root },
                     this._renderChoices(),
-                    T.a.createElement(fn, {
+                    T.a.createElement(ha, {
                       editable: t,
-                      initialDuration: n,
-                      isActive: a,
+                      initialDuration: a,
+                      isActive: n,
                       onChange: this._handleDurationChange,
                       ref: this._setDurationPickerRef,
-                      style: Sn.durationPicker,
+                      style: Ea.durationPicker,
                     }),
                     T.a.createElement(
                       W.a,
-                      { style: Sn.removePollButton },
-                      T.a.createElement(vn.a, { color: 'red500', label: Tn, onPress: i, testID: ln }),
+                      { style: Ea.removePollButton },
+                      T.a.createElement(ga.a, { color: 'red500', label: Ca, onPress: i, testID: sa }),
                     ),
                   )
                 },
@@ -2982,9 +2982,9 @@
                 get: function () {
                   var e = this._choice1,
                     t = this._choice2,
-                    n = this._choice3,
-                    a = this._choice4
-                  return [e && e.value, t && t.value, n && n.value, a && a.value].filter(Boolean)
+                    a = this._choice3,
+                    n = this._choice4
+                  return [e && e.value, t && t.value, a && a.value, n && n.value].filter(Boolean)
                 },
               },
               {
@@ -2994,10 +2994,10 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component),
-        Sn = F.a.create(function (e) {
+        Ea = F.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.transparent,
@@ -3026,13 +3026,13 @@
             },
           }
         }),
-        In = Object(yt.a)(En),
-        Rn = n('+d3d'),
-        An = ['onChange'],
-        Mn = function (e) {
+        Sa = Object(yt.a)(xa),
+        Ia = a('+d3d'),
+        Ra = ['onChange'],
+        Aa = function (e) {
           var t = e.composerIndex,
-            n = e.editable,
-            a = e.initialChoices,
+            a = e.editable,
+            n = e.initialChoices,
             r = e.initialDuration,
             o = e.isActive,
             s = e.isPollValid,
@@ -3058,14 +3058,14 @@
               [c, s, l, t],
             ),
             u = d.onChange,
-            m = ct()(d, An),
+            m = ct()(d, Ra),
             p = T.a.useMemo(
               function () {
-                return Object(Rn.a)(
+                return Object(Ia.a)(
                   function (e) {
                     var t = e.choices,
-                      n = e.duration
-                    u({ choices: t, duration: n })
+                      a = e.duration
+                    u({ choices: t, duration: a })
                   },
                   200,
                   { leading: !0, trailing: !0 },
@@ -3080,82 +3080,82 @@
               [p],
             )
           return T.a.createElement(
-            In,
-            i()({ editable: n, initialChoices: a, initialDuration: r, isActive: o, onBlur: h, onChange: p }, m),
+            Sa,
+            i()({ editable: a, initialChoices: n, initialDuration: r, isActive: o, onBlur: h, onChange: p }, m),
           )
         },
-        kn = F.a.create(function (e) {
+        Ma = F.a.create(function (e) {
           return { container: { marginBottom: e.spaces.space4 }, link: { color: 'black' } }
         }),
-        Dn = B.a.i859676b,
-        Pn = T.a.createElement(
+        ka = B.a.i859676b,
+        Pa = T.a.createElement(
           B.a.I18NFormatMessage,
           { $i18n: 'a02c8d74' },
           T.a.createElement(
             O.b,
-            { link: '/settings/audience_and_tagging', style: kn.link, withInteractiveStyling: !0, withUnderline: !0 },
+            { link: '/settings/audience_and_tagging', style: Ma.link, withInteractiveStyling: !0, withUnderline: !0 },
             B.a.c9a48d3f,
           ),
         )
-      function On() {
-        return T.a.createElement(W.a, { style: kn.container }, T.a.createElement(tt.a, { headline: Dn, text: Pn }))
+      function Da() {
+        return T.a.createElement(W.a, { style: Ma.container }, T.a.createElement(tt.a, { headline: ka, text: Pa }))
       }
-      var Ln = n('b5s6'),
-        Fn = n('rcen'),
-        Nn = n('zmS9'),
-        Bn = 'addButton',
-        Vn = 'addSubtitlesLabel',
-        jn = 'altTextLabel',
-        zn = 'tagPeopleLabel',
-        Hn = 'attachments',
-        Un = 'createPollButton',
-        Wn = 'geoButton',
-        Gn = 'gifSearchButton',
-        qn = 'scheduleOption',
-        Kn = 'taggedUsersLabel',
-        Qn = 'tweetTextarea_',
-        Xn = 'toolBar',
-        Yn = 'scheduledTweetIndicator',
-        Zn = n('xM7j'),
-        Jn = n('6OUF'),
-        $n = n('tZIO'),
-        ea = n('5mJL'),
-        ta = n('DNho'),
-        na = n('jhWN'),
-        aa = n('rFBM'),
-        ia = n('zfvc'),
-        ra = n('Ujvi'),
-        oa = n('yTN1'),
-        sa = n('gpVt'),
-        la = n('hOZg'),
-        ca = n('ll3R'),
-        da = n('J0mu'),
-        ua = n('EfHu'),
-        ma = n('KrGU'),
-        pa = n('boUI'),
-        ha = n('6ZHn'),
-        fa = n('/WPq'),
-        ga = n('wpLu'),
-        va = n('pHub'),
-        ya = n('8A5z'),
-        ba = n('pKoL'),
-        _a = n('ZvMt'),
-        Ca = n('9Xij'),
-        Ta = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n() {
-            return d()(this, n), t.apply(this, arguments)
+      var Oa = a('b5s6'),
+        La = a('rcen'),
+        Fa = a('zmS9'),
+        Na = 'addButton',
+        Ba = 'addSubtitlesLabel',
+        Va = 'altTextLabel',
+        ja = 'tagPeopleLabel',
+        za = 'attachments',
+        Ha = 'createPollButton',
+        Ua = 'geoButton',
+        Wa = 'gifSearchButton',
+        Ga = 'scheduleOption',
+        qa = 'taggedUsersLabel',
+        Ka = 'tweetTextarea_',
+        Qa = 'toolBar',
+        Xa = 'scheduledTweetIndicator',
+        Ya = a('xM7j'),
+        Za = a('6OUF'),
+        Ja = a('tZIO'),
+        $a = a('5mJL'),
+        en = a('DNho'),
+        tn = a('jhWN'),
+        an = a('rFBM'),
+        nn = a('zfvc'),
+        rn = a('Ujvi'),
+        on = a('yTN1'),
+        sn = a('gpVt'),
+        ln = a('hOZg'),
+        cn = a('ll3R'),
+        dn = a('J0mu'),
+        un = a('EfHu'),
+        mn = a('KrGU'),
+        pn = a('boUI'),
+        hn = a('6ZHn'),
+        fn = a('/WPq'),
+        gn = a('wpLu'),
+        vn = a('pHub'),
+        yn = a('8A5z'),
+        bn = a('pKoL'),
+        _n = a('ZvMt'),
+        Cn = a('9Xij'),
+        Tn = (function (e) {
+          g()(a, e)
+          var t = y()(a)
+          function a() {
+            return d()(this, a), t.apply(this, arguments)
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.media,
-                    n = e.style
-                  return T.a.createElement(W.a, { style: n }, this._renderImageGroup(t.length))
+                    a = e.style
+                  return T.a.createElement(W.a, { style: a }, this._renderImageGroup(t.length))
                 },
               },
               {
@@ -3180,24 +3180,24 @@
                 value: function () {
                   var e = this.props.media,
                     t = e && !!e[0].mediaFile,
-                    n = (e && !t && e[0].externalMediaDetails) || {},
-                    a = n.height,
-                    i = n.width,
+                    a = (e && !t && e[0].externalMediaDetails) || {},
+                    n = a.height,
+                    i = a.width,
                     r = F.a.theme.aspectRatios.landscape
                   if (t) {
                     var o,
                       s,
                       l = F.a.theme.aspectRatios.minTimelineImage,
                       c = F.a.theme.aspectRatios.maxTimelineImage
-                    r = _a.a.getImageAspectRatio(l, c, {
+                    r = _n.a.getImageAspectRatio(l, c, {
                       width: null === (o = e[0].mediaFile) || void 0 === o ? void 0 : o.width,
                       height: null === (s = e[0].mediaFile) || void 0 === s ? void 0 : s.height,
                     })
                   }
                   return T.a.createElement(
-                    Ca.a,
-                    { ratio: t ? r : i / a },
-                    T.a.createElement(W.a, { style: wa.mediaPreviewWrapper }, this._renderMediaAtIndex(0)),
+                    Cn.a,
+                    { ratio: t ? r : i / n },
+                    T.a.createElement(W.a, { style: wn.mediaPreviewWrapper }, this._renderMediaAtIndex(0)),
                   )
                 },
               },
@@ -3205,12 +3205,12 @@
                 key: '_renderGroupOf2',
                 value: function () {
                   return T.a.createElement(
-                    Ca.a,
+                    Cn.a,
                     { ratio: F.a.theme.aspectRatios.landscape },
                     T.a.createElement(
                       W.a,
-                      { style: wa.mediaPreviewWrapper },
-                      this._renderMediaAtIndex(0, wa.gutterRight),
+                      { style: wn.mediaPreviewWrapper },
+                      this._renderMediaAtIndex(0, wn.gutterRight),
                       this._renderMediaAtIndex(1),
                     ),
                   )
@@ -3220,12 +3220,12 @@
                 key: '_renderGroupOf3',
                 value: function () {
                   return T.a.createElement(
-                    Ca.a,
+                    Cn.a,
                     { ratio: F.a.theme.aspectRatios.landscape },
                     T.a.createElement(
                       W.a,
-                      { style: wa.mediaPreviewWrapper },
-                      this._renderMediaAtIndex(0, wa.gutterRight),
+                      { style: wn.mediaPreviewWrapper },
+                      this._renderMediaAtIndex(0, wn.gutterRight),
                       this._renderColumnWithIndices([1, 2]),
                     ),
                   )
@@ -3235,12 +3235,12 @@
                 key: '_renderGroupOf4',
                 value: function () {
                   return T.a.createElement(
-                    Ca.a,
+                    Cn.a,
                     { ratio: F.a.theme.aspectRatios.landscape },
                     T.a.createElement(
                       W.a,
-                      { style: wa.mediaPreviewWrapper },
-                      this._renderColumnWithIndices([0, 2], wa.gutterRight),
+                      { style: wn.mediaPreviewWrapper },
+                      this._renderColumnWithIndices([0, 2], wn.gutterRight),
                       this._renderColumnWithIndices([1, 3]),
                     ),
                   )
@@ -3251,8 +3251,8 @@
                 value: function (e, t) {
                   return T.a.createElement(
                     W.a,
-                    { style: [wa.column, t] },
-                    this._renderMediaAtIndex(e[0], wa.gutterBottom),
+                    { style: [wn.column, t] },
+                    this._renderMediaAtIndex(e[0], wn.gutterBottom),
                     this._renderMediaAtIndex(e[1]),
                   )
                 },
@@ -3260,8 +3260,8 @@
               {
                 key: '_renderMediaAtIndex',
                 value: function (e, t) {
-                  var n,
-                    a,
+                  var a,
+                    n,
                     i,
                     r,
                     o = this.props,
@@ -3274,8 +3274,8 @@
                     p = o.onRemoveMedia,
                     h = o.onSetMediaPreviewRef,
                     f = c[e],
-                    g = null === (n = f.mediaMetadata) || void 0 === n ? void 0 : n.altText,
-                    v = null === (a = f.mediaMetadata) || void 0 === a ? void 0 : a.defaultAltText,
+                    g = null === (a = f.mediaMetadata) || void 0 === a ? void 0 : a.altText,
+                    v = null === (n = f.mediaMetadata) || void 0 === n ? void 0 : n.defaultAltText,
                     y = !(
                       null === (i = f.mediaMetadata) ||
                       void 0 === i ||
@@ -3285,7 +3285,7 @@
                     ),
                     b = u && s && l,
                     _ = b && y && !!m
-                  return T.a.createElement(ba.a, {
+                  return T.a.createElement(bn.a, {
                     accessibilityLabel: g || v,
                     accessibilityRole: 'group',
                     enableGif: l,
@@ -3296,7 +3296,7 @@
                     onEditSensitiveWarning: m && _ ? m(f.id) : void 0,
                     onRemove: p(f.id),
                     ref: h,
-                    style: [wa.mediaContainer, t],
+                    style: [wn.mediaContainer, t],
                     withAltTextLabel: !!g,
                     withCloseButton: s && l,
                     withEditButton: b,
@@ -3305,11 +3305,11 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
-      _()(Ta, 'contextType', I.a)
-      var wa = F.a.create(function (e) {
+      _()(Tn, 'contextType', I.a)
+      var wn = F.a.create(function (e) {
           return {
             column: { flexDirection: 'column', flexGrow: 1, flexBasis: 0 },
             gutterRight: { marginRight: e.spaces.space12 },
@@ -3326,50 +3326,50 @@
             mediaPreviewWrapper: { flexDirection: 'row', height: '100%' },
           }
         }),
-        xa = n('S1qy'),
-        Ea = n.n(xa),
-        Sa = n('cjAp'),
-        Ia = n.n(Sa),
-        Ra = B.a.f0afcc0e,
-        Aa = B.a.ha5e2e79,
-        Ma = B.a.a3de3b68,
-        ka = B.a.cc2b28fc,
-        Da = B.a.g45af04e,
-        Pa = B.a.j1d5791c,
-        Oa = B.a.ee9c4013,
-        La = B.a.af40a8ef,
-        Fa = B.a.e68b09b4,
-        Na = B.a.ec10ee02,
-        Ba = B.a.h735a98d,
-        Va = B.a.c4ccfbe2,
-        ja = B.a.j499fbcb,
-        za = B.a.b7d8e3f0,
-        Ha = B.a.d1175c78,
-        Ua = B.a.bf4e9d79,
-        Wa = B.a.e0342f98,
-        Ga = B.a.e349147b,
-        qa = B.a.e3a24e4b,
-        Ka = B.a.fbd24526,
-        Qa = B.a.de4669e2,
-        Xa = B.a.d2c7a41c,
-        Ya = B.a.f7364fa1,
-        Za = ['ja', 'zh-cn', 'zh-tw', 'ko'],
-        Ja = B.a.ia24dc8c,
-        $a = T.a.createElement(la.a, null),
-        ei = T.a.createElement(gn.a, null),
-        ti = T.a.createElement(ca.a, null),
-        ni = T.a.createElement(da.a, null),
-        ai = { viewType: 'schedule_tweet' },
+        xn = a('S1qy'),
+        En = a.n(xn),
+        Sn = a('cjAp'),
+        In = a.n(Sn),
+        Rn = B.a.f0afcc0e,
+        An = B.a.ha5e2e79,
+        Mn = B.a.a3de3b68,
+        kn = B.a.cc2b28fc,
+        Pn = B.a.g45af04e,
+        Dn = B.a.j1d5791c,
+        On = B.a.ee9c4013,
+        Ln = B.a.af40a8ef,
+        Fn = B.a.e68b09b4,
+        Nn = B.a.ec10ee02,
+        Bn = B.a.h735a98d,
+        Vn = B.a.c4ccfbe2,
+        jn = B.a.j499fbcb,
+        zn = B.a.b7d8e3f0,
+        Hn = B.a.d1175c78,
+        Un = B.a.bf4e9d79,
+        Wn = B.a.e0342f98,
+        Gn = B.a.e349147b,
+        qn = B.a.e3a24e4b,
+        Kn = B.a.fbd24526,
+        Qn = B.a.de4669e2,
+        Xn = B.a.d2c7a41c,
+        Yn = B.a.f7364fa1,
+        Zn = ['ja', 'zh-cn', 'zh-tw', 'ko'],
+        Jn = B.a.ia24dc8c,
+        $n = T.a.createElement(ln.a, null),
+        ei = T.a.createElement(fa.a, null),
+        ti = T.a.createElement(cn.a, null),
+        ai = T.a.createElement(dn.a, null),
+        ni = { viewType: 'schedule_tweet' },
         ii = { viewType: 'add_poll' },
         ri = { viewType: 'add_composer' },
         oi = { viewType: 'tag_location' },
         si = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n(e, a) {
+          g()(a, e)
+          var t = y()(a)
+          function a(e, n) {
             var r
-            d()(this, n),
-              (r = t.call(this, e, a)),
+            d()(this, a),
+              (r = t.call(this, e, n)),
               _()(h()(r), '_handleConversationControlsValueChange', function (e) {
                 r._handleAudienceControlsValueChange({ _type: 'conversation_controls', conversationControlsValue: e })
               }),
@@ -3384,12 +3384,12 @@
                 }),
               ),
               _()(h()(r), '_shouldRenderControls', function (e, t) {
-                var n = r.state.isFocused,
-                  a = r.props,
-                  i = a.audienceControlsValue,
-                  o = a.isActive,
-                  s = a.isInline,
-                  l = a.isReply
+                var a = r.state.isFocused,
+                  n = r.props,
+                  i = n.audienceControlsValue,
+                  o = n.isActive,
+                  s = n.isInline,
+                  l = n.isReply
                 return (
                   !(
                     'conversation' !== t ||
@@ -3398,20 +3398,20 @@
                       i.conversationControlsValue !== st.a.trusted_friends_tweet) ||
                     !l
                   ) ||
-                  (o && !l && (!s || n || e))
+                  (o && !l && (!s || a || e))
                 )
               }),
               _()(h()(r), '_renderConversationControls', function (e) {
                 var t = r.state.isFocused,
-                  n = r.props,
-                  a = n.audienceControlsValue,
-                  i = n.isInline
+                  a = r.props,
+                  n = a.audienceControlsValue,
+                  i = a.isInline
                 if (
-                  (n.isReply || (!t && i) || r._triggerConversationControlsImpression(),
+                  (a.isReply || (!t && i) || r._triggerConversationControlsImpression(),
                   !r._conversationControlsCreationEnabled)
                 )
                   return null
-                var o = a.conversationControlsValue,
+                var o = n.conversationControlsValue,
                   s = r._shouldRenderControls(e, 'conversation'),
                   l =
                     o === st.a.community_members ||
@@ -3429,7 +3429,7 @@
                   T.a.createElement(
                     q.a,
                     {
-                      icon: T.a.createElement(ua.a, null),
+                      icon: T.a.createElement(un.a, null),
                       onPress: r._handleGeoButtonClick,
                       size: 'xSmall',
                       style: Ut.taggedLocationButton,
@@ -3442,19 +3442,19 @@
               _()(h()(r), '_renderMainContent', function () {
                 var e = r.props,
                   t = e.additionalToolbarContent,
-                  n = e.data,
-                  a = e.index,
+                  a = e.data,
+                  n = e.index,
                   i = e.isExpanded,
                   o = e.isInline,
                   s = e.isInlineReply,
                   l = e.onTypeaheadStateChange,
                   c = e.richTextInputContext,
-                  d = n.cardUrl,
-                  u = n.media,
-                  m = n.pollActive,
-                  p = n.quotedStatus,
-                  h = n.text,
-                  f = Object(sa.b)(h) || (d && !Object(Bt.a)(d) && [d]),
+                  d = a.cardUrl,
+                  u = a.media,
+                  m = a.pollActive,
+                  p = a.quotedStatus,
+                  h = a.text,
+                  f = Object(sn.b)(h) || (d && !Object(Bt.a)(d) && [d]),
                   g = !!u.length || m || !!p,
                   v = r.props.typeaheadWrapper,
                   y = !r._isEmpty()
@@ -3477,7 +3477,7 @@
                       r._renderFieldTextInput,
                     ),
                     f && !g
-                      ? T.a.createElement(sa.a, { index: a, isCardPreviewTombstoned: Object(Bt.a)(d), urls: f })
+                      ? T.a.createElement(sn.a, { index: n, isCardPreviewTombstoned: Object(Bt.a)(d), urls: f })
                       : null,
                   ),
                   i ? null : t,
@@ -3485,8 +3485,8 @@
               }),
               _()(h()(r), '_renderFieldTextInput', function (e) {
                 var t = r.props,
-                  n = t.autoFocus,
-                  a = t.data,
+                  a = t.autoFocus,
+                  n = t.data,
                   o = t.editable,
                   s = t.index,
                   l = t.isActive,
@@ -3499,7 +3499,7 @@
                   f = t.positionCursorAtBeginning,
                   g = t.richTextInputContext,
                   v = r.state.isFocused,
-                  y = a.text,
+                  y = n.text,
                   b = 0 === s && m,
                   _ = !!g,
                   C = g || {},
@@ -3519,12 +3519,12 @@
                       }
                     : { onChange: r._getHandlePlainTextChange(e) }
                 return T.a.createElement(
-                  Jn.a,
+                  Za.a,
                   i()(
                     {
                       appTextSize: 'headline1',
-                      ariaLabel: Ma,
-                      autoFocus: n || (l && !d),
+                      ariaLabel: Mn,
+                      autoFocus: a || (l && !d),
                       closeButton:
                         l && (r._deleteNonemptyTweetstormComposerEnabled || r._isEmpty()) && !b
                           ? r._renderCloseButton()
@@ -3543,7 +3543,7 @@
                       positionCursorAtEnd: !f,
                       ref: r._setTextInputRef,
                       styleType: 'selection',
-                      testID: ''.concat(Qn).concat(s),
+                      testID: ''.concat(Ka).concat(s),
                       useCacheForDOMMeasurements: v,
                       value: y,
                     },
@@ -3572,20 +3572,20 @@
               _()(h()(r), '_renderCommunityTweetFromProtectedUserCallout', function () {
                 var e = r.props,
                   t = e.index,
-                  n = e.isCommunityTweetFromProtectedUser
-                return 0 === t && n ? T.a.createElement(On, null) : null
+                  a = e.isCommunityTweetFromProtectedUser
+                return 0 === t && a ? T.a.createElement(Da, null) : null
               }),
               _()(h()(r), '_renderAudienceControls', function (e) {
                 var t = r.props,
-                  n = t.audienceControlsValue,
-                  a = t.index,
+                  a = t.audienceControlsValue,
+                  n = t.index,
                   i = t.isSuperFollowsCreator,
                   o = r.context.featureSwitches.isTrue('c9s_participation_enabled'),
                   s = r.context.featureSwitches.isTrue('super_follow_exclusive_tweet_creation_api_enabled'),
                   l = r.context.featureSwitches.isTrue('trusted_friends_tweet_creation_enabled')
-                return r._shouldRenderControls(e, 'audience') && 0 === a && (o || s || l)
+                return r._shouldRenderControls(e, 'audience') && 0 === n && (o || s || l)
                   ? T.a.createElement(ze, {
-                      audienceControlsValue: n,
+                      audienceControlsValue: a,
                       isC9sParticipationEnabled: o,
                       isSuperFollowsCreator: i && s,
                       onAudienceControlsValueChange: r._handleAudienceControlsValueChange,
@@ -3604,32 +3604,32 @@
               _()(h()(r), '_calcNumberOfLines', function () {
                 var e = r.props,
                   t = e.data,
-                  n = e.isActive,
-                  a = e.isInline,
+                  a = e.isActive,
+                  n = e.isInline,
                   i = !!e.richTextInputContext,
                   o = t.media,
                   s = t.pollActive,
                   l = t.quotedStatus,
                   c = !!o.length || !!s || !!l
-                return (i && (a || c)) || !n ? 1 : 4
+                return (i && (n || c)) || !a ? 1 : 4
               }),
               _()(h()(r), '_renderScheduledTweetLegend', function () {
                 var e = r.props.scheduledFor
-                return T.a.createElement(Nn.a, {
+                return T.a.createElement(Fa.a, {
                   onPress: r._handlePressScheduledTweetLegend,
                   scheduledFor: e,
-                  testID: Yn,
+                  testID: Xa,
                 })
               }),
               _()(h()(r), '_handlePressScheduledTweetLegend', function () {
                 var e = r.props,
                   t = e.analytics,
-                  n = e.history,
-                  a = e.setActiveParentKey
-                n.push('/compose/tweet/schedule'), t.scribe({ element: 'tweet_legend', action: 'click' }), a()
+                  a = e.history,
+                  n = e.setActiveParentKey
+                a.push('/compose/tweet/schedule'), t.scribe({ element: 'tweet_legend', action: 'click' }), n()
               }),
               _()(h()(r), '_renderEmojiPicker', function () {
-                return T.a.createElement(Pt.a, {
+                return T.a.createElement(Dt.a, {
                   onEmojiSelect: r._handleInsertEmoji,
                   size: 'medium',
                   style: r._getEmojiPickerButtonStyles(),
@@ -3646,45 +3646,45 @@
               _()(h()(r), '_isSchedulingDisabled', function () {
                 var e = r.props,
                   t = e.audienceControlsValue,
-                  n = e.data,
-                  a = n.media,
-                  i = n.mediaTags,
-                  o = n.pollActive,
-                  s = n.quotedStatus,
-                  l = n.text,
+                  a = e.data,
+                  n = a.media,
+                  i = a.mediaTags,
+                  o = a.pollActive,
+                  s = a.quotedStatus,
+                  l = a.text,
                   c = e.index,
                   d = e.isLast,
                   u = 0 === c && d,
                   m = t.conversationControlsValue !== st.a.all
-                return Boolean(o || !u || (s && '' === l && !a.length) || m || i.length > 0)
+                return Boolean(o || !u || (s && '' === l && !n.length) || m || i.length > 0)
               }),
               _()(h()(r), '_renderSchedulingButton', function () {
                 return T.a.createElement(q.a, {
-                  accessibilityLabel: Aa,
-                  behavioralEventContext: ai,
+                  accessibilityLabel: An,
+                  behavioralEventContext: ni,
                   disabled: r._isSchedulingDisabled(),
-                  hoverLabel: { label: Ba },
-                  icon: ni,
+                  hoverLabel: { label: Bn },
+                  icon: ai,
                   onClick: r._handleClickScheduler,
                   size: 'medium',
                   style: Ut.toolBarButton,
-                  testID: qn,
+                  testID: Ga,
                   type: 'brandText',
                 })
               }),
               _()(h()(r), '_handleClickScheduler', function () {
                 var e = r.props,
                   t = e.analytics,
-                  n = e.history,
-                  a = e.setActiveParentKey
-                n.push('/compose/tweet/schedule'), t.scribe({ element: 'schedule_tweet', action: 'click' }), a()
+                  a = e.history,
+                  n = e.setActiveParentKey
+                a.push('/compose/tweet/schedule'), t.scribe({ element: 'schedule_tweet', action: 'click' }), n()
               }),
               _()(h()(r), '_renderCloseButton', function () {
                 var e = r.props.onRemoveComposer
                 return T.a.createElement(q.a, {
-                  accessibilityLabel: Oa,
-                  hoverLabel: { label: Fa },
-                  icon: $a,
+                  accessibilityLabel: On,
+                  hoverLabel: { label: Fn },
+                  icon: $n,
                   onPress: e,
                   size: 'xSmall',
                   type: 'brandText',
@@ -3693,8 +3693,8 @@
               _()(h()(r), '_renderTweetAttachment', function () {
                 var e = r.props,
                   t = e.data,
-                  n = e.editable,
-                  a = e.index,
+                  a = e.editable,
+                  n = e.index,
                   i = e.isActive,
                   o = e.updateSingleComposer,
                   s = t.media,
@@ -3706,10 +3706,10 @@
                 var m = r.hasAttachedVideo && (r._videoTrimmerEnabled ? 'trimmer' : 'subtitles')
                 return T.a.createElement(
                   W.a,
-                  { onClick: r._handleFocus, style: [Ut.attachmentContainer, Ut.tweetAttachmentArea], testID: Hn },
+                  { onClick: r._handleFocus, style: [Ut.attachmentContainer, Ut.tweetAttachmentArea], testID: za },
                   s.length > 0
-                    ? T.a.createElement(Ta, {
-                        editable: n,
+                    ? T.a.createElement(Tn, {
+                        editable: a,
                         isActive: i,
                         media: s,
                         onClickMedia: r.hasAttachedImage ? r._handleClickMediaDetail('crop') : void 0,
@@ -3729,9 +3729,9 @@
                     : null,
                   i ? r._renderMediaActions() : null,
                   l
-                    ? T.a.createElement(Mn, {
-                        composerIndex: a,
-                        editable: n,
+                    ? T.a.createElement(Aa, {
+                        composerIndex: n,
+                        editable: a,
                         initialChoices: c,
                         initialDuration: d,
                         isActive: i,
@@ -3744,18 +3744,18 @@
               }),
               _()(h()(r), '_renderQuoteTweet', function (e) {
                 var t = r.props.data.media,
-                  n = e.tombstoneInfo
-                return n && n.richText
+                  a = e.tombstoneInfo
+                return a && a.richText
                   ? T.a.createElement(
-                      Zn.a,
+                      Ya.a,
                       null,
-                      T.a.createElement(Fn.a, {
-                        entities: n.richText.entities,
-                        rtl: n.richText.rtl,
-                        text: n.richText.text,
+                      T.a.createElement(La.a, {
+                        entities: a.richText.entities,
+                        rtl: a.richText.rtl,
+                        text: a.richText.text,
                       }),
                     )
-                  : T.a.createElement(Ln.a, {
+                  : T.a.createElement(Oa.a, {
                       isCondensed: t.length > 0,
                       style: Ut.quoteTweet,
                       tweetId: e.id_str,
@@ -3765,8 +3765,8 @@
               }),
               _()(h()(r), '_renderToolbar', function (e) {
                 var t = r.props,
-                  n = t.additionalToolbarContent,
-                  a = t.data.media,
+                  a = t.additionalToolbarContent,
+                  n = t.data.media,
                   i = t.hidePoll,
                   o = t.hideScheduling,
                   s = t.isInlineReply,
@@ -3781,12 +3781,12 @@
                   g = e && (!l || c || f)
                 return T.a.createElement(
                   W.a,
-                  { style: Ut.toolBar, testID: Xn },
+                  { style: Ut.toolBar, testID: Qa },
                   T.a.createElement(
                     W.a,
                     { style: Ut.toolBarIconsContainer },
                     T.a.createElement(Gt, {
-                      media: a,
+                      media: n,
                       mediaAttachDisabled: r.mediaAttachDisabled,
                       onFilesAdded: r._handleFilesAdded,
                       setActiveParentKey: u,
@@ -3808,17 +3808,17 @@
                         T.a.createElement(W.a, { style: Ut.separator }),
                         r._renderAddComposerButton(),
                       ),
-                    n,
+                    a,
                   ),
                 )
               }),
               _()(h()(r), '_addOverflowStyle', function (e) {
                 var t = r.props.richTextInputContext
                 if (t) {
-                  var n = e.getCurrentContent().getPlainText(),
-                    a = n.length,
-                    i = r._getParsedTweet(n).validRangeEnd,
-                    o = i + 1 < a
+                  var a = e.getCurrentContent().getPlainText(),
+                    n = a.length,
+                    i = r._getParsedTweet(a).validRangeEnd,
+                    o = i + 1 < n
                   if (r.state.hasOverflowStyle || o) {
                     var s = o ? i + 1 : -1
                     return {
@@ -3831,24 +3831,24 @@
               }),
               _()(h()(r), '_handleRichTextChange', function (e) {
                 var t = r.props.richTextInputContext,
-                  n = e.getCurrentContent().getPlainText()
+                  a = e.getCurrentContent().getPlainText()
                 if (t) {
-                  var a = t.convertEmojiToEntities(e)
-                  r.setState(r._addOverflowStyle(a))
+                  var n = t.convertEmojiToEntities(e)
+                  r.setState(r._addOverflowStyle(n))
                 }
-                r._handleTextValueChange(n)
+                r._handleTextValueChange(a)
               }),
               _()(h()(r), '_handlePlainTextChange', function (e) {
-                var t = $n.a.replaceCarriageReturns(e.target.value)
+                var t = Ja.a.replaceCarriageReturns(e.target.value)
                 r._handleTextValueChange(t)
               }),
               _()(h()(r), '_handleTextValueChange', function (e) {
                 var t = r.props,
-                  n = t.data,
-                  a = n.key,
-                  i = n.text,
+                  a = t.data,
+                  n = a.key,
+                  i = a.text,
                   o = t.onTextChange
-                i !== e && o(e, a)
+                i !== e && o(e, n)
               }),
               _()(h()(r), '_handleClickAltTextShortcut', function () {
                 r.props.analytics.scribe({ element: 'alt_text_button', action: 'click' })
@@ -3859,10 +3859,10 @@
               _()(h()(r), '_handleClickMediaDetail', function (e) {
                 return function (t) {
                   return function () {
-                    var n = r.props,
-                      a = n.analytics,
-                      i = n.history
-                    a.scribe({ element: 'media_detail_button', action: 'click' }),
+                    var a = r.props,
+                      n = a.analytics,
+                      i = a.history
+                    n.scribe({ element: 'media_detail_button', action: 'click' }),
                       (r.hasAttachedImage || r.hasAttachedVideo) &&
                         i.push('/compose/tweet/media', { mediaId: t, tab: e })
                   }
@@ -3870,10 +3870,10 @@
               }),
               _()(h()(r), '_handleFilesAdded', function (e) {
                 var t = r.props,
-                  n = t.addToast,
-                  a = t.data.pollActive,
+                  a = t.addToast,
+                  n = t.data.pollActive,
                   i = t.onFilesAdded
-                a ? n({ text: ka }) : i(e)
+                n ? a({ text: kn }) : i(e)
               }),
               _()(h()(r), '_handleMediaRemoveFactory', function (e) {
                 return function () {
@@ -3882,10 +3882,10 @@
               }),
               _()(h()(r), '_handleInsertEmoji', function (e) {
                 var t = r.state.editorState,
-                  n = r.props.richTextInputContext
-                if (n && t) {
-                  var a = n.insertTextAtCursor(t, e.text)
-                  r._handleRichTextChange(a)
+                  a = r.props.richTextInputContext
+                if (a && t) {
+                  var n = a.insertTextAtCursor(t, e.text)
+                  r._handleRichTextChange(n)
                 }
               }),
               _()(h()(r), '_validateMedia', function (e) {
@@ -3895,16 +3895,16 @@
               _()(h()(r), '_handlePollAdd', function () {
                 var e = r.props,
                   t = e.analytics,
-                  n = e.index,
-                  a = e.updateSingleComposer
-                t.scribe({ element: 'add_poll', action: 'click' }), a({ pollActive: !0 }, n)
+                  a = e.index,
+                  n = e.updateSingleComposer
+                t.scribe({ element: 'add_poll', action: 'click' }), n({ pollActive: !0 }, a)
               }),
               _()(h()(r), '_handleGeoButtonClick', function () {
                 var e = r.props,
                   t = e.analytics,
-                  n = e.history,
-                  a = e.setActiveParentKey
-                n.push('/compose/tweet/place_picker'), t.scribe({ element: 'tag_location', action: 'click' }), a()
+                  a = e.history,
+                  n = e.setActiveParentKey
+                a.push('/compose/tweet/place_picker'), t.scribe({ element: 'tag_location', action: 'click' }), n()
               }),
               _()(h()(r), '_handleWrapperClick', function (e) {
                 ;(e.target instanceof Element && e.target.closest('[role="button"],a,input,textarea,select')) ||
@@ -3913,53 +3913,53 @@
               _()(h()(r), '_handleFocus', function () {
                 var e = r.props,
                   t = e.index,
-                  n = e.isActive,
-                  a = e.onFocus
+                  a = e.isActive,
+                  n = e.onFocus
                 ;(0, e.setActiveParentKey)(),
-                  n ||
+                  a ||
                     (window.requestAnimationFrame(function () {
                       r._mediaPreviewRef && r._mediaPreviewRef.playVideo()
                     }),
-                    a(t))
+                    n(t))
               }),
               _()(h()(r), '_handleEditorFocus', function () {
                 return r.setState({ isFocused: !0 })
               }),
               _()(h()(r), '_formatCountdownNumber', function (e) {
-                return Ja(Math.ceil(e / r._userLanguageWeight))
+                return Jn(Math.ceil(e / r._userLanguageWeight))
               }),
               _()(h()(r), '_getPlaceHolderText', function () {
                 var e = r.props,
                   t = e.data,
-                  n = t.pollActive,
-                  a = t.quotedStatus,
+                  a = t.pollActive,
+                  n = t.quotedStatus,
                   i = e.index,
                   o = e.isReply,
                   s = e.isSelfThreadReply
-                return a
-                  ? Qa
-                  : n
-                  ? Ya
+                return n
+                  ? Qn
+                  : a
+                  ? Yn
                   : r.isReplyOrReplyThread && 0 === i
-                  ? Xa
+                  ? Xn
                   : o && !s && i > 0
-                  ? Ka
+                  ? Kn
                   : s || i > 0
-                  ? qa
-                  : Ga
+                  ? qn
+                  : Gn
               }),
               _()(h()(r), '_getNumberOfAltTextEntries', function () {
                 return r.props.data.media.reduce(function (e, t) {
-                  var n
-                  return null !== (n = t.mediaMetadata) && void 0 !== n && n.altText ? e + 1 : e
+                  var a
+                  return null !== (a = t.mediaMetadata) && void 0 !== a && a.altText ? e + 1 : e
                 }, 0)
               }),
               _()(
                 h()(r),
                 '_getParsedTweet',
                 Object(qt.a)(function (e) {
-                  var t = Ia.a[r.props.twitterTextConfigurationVersion]
-                  return Ea()(e, t)
+                  var t = In.a[r.props.twitterTextConfigurationVersion]
+                  return En()(e, t)
                 }),
               ),
               _()(h()(r), '_isEmpty', function () {
@@ -3973,11 +3973,11 @@
               _()(h()(r), '_autotagLocationIfNeeded', function () {
                 var e = r.props,
                   t = e.data.taggedLocation,
-                  n = e.fetchAutotaggedLocationIfNeeded,
-                  a = e.index,
+                  a = e.fetchAutotaggedLocationIfNeeded,
+                  n = e.index,
                   i = e.updateSingleComposer
-                n().then(function (e) {
-                  void 0 === t && i({ taggedLocation: null != e ? e : null }, a)
+                a().then(function (e) {
+                  void 0 === t && i({ taggedLocation: null != e ? e : null }, n)
                 })
               }),
               _()(h()(r), '_handleSetMediaPreviewRef', function (e) {
@@ -3999,14 +3999,14 @@
               (r._deleteNonemptyTweetstormComposerEnabled = r.context.featureSwitches.isTrue(
                 'responsive_web_delete_nonempty_tweetstorm_composer_enabled',
               )),
-              (r._userLanguageWeight = l && Za.indexOf(l) > -1 ? 2 : 1),
+              (r._userLanguageWeight = l && Zn.indexOf(l) > -1 ? 2 : 1),
               r._autotagLocationIfNeeded(),
               (r.state = { editorState: c ? c(o) : null, hasOverflowStyle: !1, isFocused: !1 }),
               r
             )
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
@@ -4031,8 +4031,8 @@
                 value: function () {
                   var e = this,
                     t = this.props,
-                    n = t.data.taggedLocation,
-                    a = t.isActive,
+                    a = t.data.taggedLocation,
+                    n = t.isActive,
                     i = t.isExpanded,
                     r = t.isInline,
                     o = t.isLast,
@@ -4047,19 +4047,19 @@
                     {
                       onClick: this._handleWrapperClick,
                       onFocus: this._handleFocus,
-                      style: [Ut.root, !a && Ut.blurStyle],
+                      style: [Ut.root, !n && Ut.blurStyle],
                     },
                     this._renderCommunityTweetFromProtectedUserCallout(),
                     T.a.createElement(
-                      ea.a,
+                      $a.a,
                       {
                         avatarCell: T.a.createElement(
                           T.a.Fragment,
                           null,
                           c
-                            ? T.a.createElement(ta.a.Consumer, null, function (e) {
+                            ? T.a.createElement(en.a.Consumer, null, function (e) {
                                 var t = e.avatarSize
-                                return T.a.createElement(na.a, {
+                                return T.a.createElement(tn.a, {
                                   accessibilityLabel: s ? s.name : void 0,
                                   screenName: s ? s.screen_name : void 0,
                                   size: t,
@@ -4083,7 +4083,7 @@
                         W.a,
                         { onFocus: this._handleEditorFocus, style: Ut.inputArea },
                         T.a.createElement(
-                          aa.a,
+                          an.a,
                           {
                             allowDragDrop: !this.mediaAttachDisabled,
                             onDragEnter: this._handleFocus,
@@ -4102,12 +4102,12 @@
                       this._renderCommunitiesRulesEducation(),
                       T.a.createElement(
                         W.a,
-                        { style: [(u || n) && Ut.controlsContainer, m ? Ut.mobileControlsLayout : Ut.controlsLayout] },
+                        { style: [(u || a) && Ut.controlsContainer, m ? Ut.mobileControlsLayout : Ut.controlsLayout] },
                         this._renderConversationControls(d),
                         this._renderCommunitiesRules(m),
-                        n ? this._renderTaggedLocation(n) : null,
+                        a ? this._renderTaggedLocation(a) : null,
                       ),
-                      T.a.createElement(ia.b, { show: a && i }, this._renderToolbar(d)),
+                      T.a.createElement(nn.b, { show: n && i }, this._renderToolbar(d)),
                     ),
                   )
                 },
@@ -4117,18 +4117,18 @@
                 value: function () {
                   var e = this.props,
                     t = e.data,
-                    n = t.media,
-                    a = t.pollActive,
+                    a = t.media,
+                    n = t.pollActive,
                     i = e.history,
                     r = e.loggedInUser,
                     o = e.setActiveParentKey,
-                    s = a || n.length || !r
+                    s = n || a.length || !r
                   return T.a.createElement(Lt.a, {
                     enabled: !s,
                     gifSearchKeySource: Ft.a.Composition,
                     history: i,
                     onPress: o,
-                    testID: Gn,
+                    testID: Wa,
                   })
                 },
               },
@@ -4137,22 +4137,22 @@
                 value: function () {
                   var e = this.props,
                     t = e.data,
-                    n = t.media,
-                    a = t.pollActive,
+                    a = t.media,
+                    n = t.pollActive,
                     i = t.quotedStatus,
                     r = e.loggedInUser,
                     o = this._isScheduled(),
-                    s = !(!(a || n.length || i || o) && r)
+                    s = !(!(n || a.length || i || o) && r)
                   return T.a.createElement(q.a, {
-                    accessibilityLabel: Ra,
+                    accessibilityLabel: Rn,
                     behavioralEventContext: ii,
                     disabled: s,
-                    hoverLabel: { label: Na },
+                    hoverLabel: { label: Nn },
                     icon: ti,
                     onPress: this._handlePollAdd,
                     size: 'medium',
                     style: Ut.toolBarButton,
-                    testID: Un,
+                    testID: Ha,
                     type: 'brandText',
                   })
                 },
@@ -4162,20 +4162,20 @@
                 value: function () {
                   var e = this.props,
                     t = e.data.taggedLocation,
-                    n = e.geoEnabled,
-                    a = e.loggedInUser,
-                    i = !(n && a),
-                    r = t ? T.a.createElement(ua.a, null) : T.a.createElement(ma.a, null)
+                    a = e.geoEnabled,
+                    n = e.loggedInUser,
+                    i = !(a && n),
+                    r = t ? T.a.createElement(un.a, null) : T.a.createElement(mn.a, null)
                   return T.a.createElement(q.a, {
-                    accessibilityLabel: Va,
+                    accessibilityLabel: Vn,
                     behavioralEventContext: oi,
                     disabled: i,
-                    hoverLabel: { label: Va },
+                    hoverLabel: { label: Vn },
                     icon: r,
                     onPress: this._handleGeoButtonClick,
                     size: 'medium',
                     style: Ut.toolBarButton,
-                    testID: Wn,
+                    testID: Ua,
                     type: 'brandText',
                   })
                 },
@@ -4185,10 +4185,10 @@
                 value: function () {
                   var e = this.props.data,
                     t = e.gifMetadata,
-                    n = e.media,
-                    a = 0 !== e.mediaTags.length,
+                    a = e.media,
+                    n = 0 !== e.mediaTags.length,
                     i =
-                      n.some(function (e) {
+                      a.some(function (e) {
                         return e.mediaFile && e.mediaFile.isGif
                       }) || this.hasExternalMedia
                   if (!(this.hasAttachedImage || this.hasAttachedVideo || t || i)) return null
@@ -4208,20 +4208,20 @@
                       : T.a.createElement(
                           O.b,
                           {
-                            accessibilityLabel: Ha,
+                            accessibilityLabel: Hn,
                             color: 'gray700',
                             link: '/compose/tweet/tags',
                             style: [Ut.addImageTextContainer, Ut.addImageTextPadding],
                           },
-                          a ? this._renderTaggedUsers() : this._renderTagPeopleLabel(),
+                          n ? this._renderTaggedUsers() : this._renderTagPeopleLabel(),
                         ),
                     this.hasAttachedImage || i
                       ? T.a.createElement(
                           O.b,
                           {
-                            accessibilityLabel: ja({ numberOfImages: n.length }),
+                            accessibilityLabel: jn({ numberOfImages: a.length }),
                             color: 'gray700',
-                            link: { pathname: '/compose/tweet/media', state: { mediaId: n[0].id, tab: 'alt_text' } },
+                            link: { pathname: '/compose/tweet/media', state: { mediaId: a[0].id, tab: 'alt_text' } },
                             onPress: this._handleClickAltTextShortcut,
                             style: Ut.addImageTextContainer,
                           },
@@ -4237,9 +4237,9 @@
                 value: function () {
                   return T.a.createElement(
                     O.b,
-                    { color: 'gray700', size: 'subtext2', testID: zn },
-                    T.a.createElement(pa.a, { style: Ut.addImageActionIcon }),
-                    Ha,
+                    { color: 'gray700', size: 'subtext2', testID: ja },
+                    T.a.createElement(pn.a, { style: Ut.addImageActionIcon }),
+                    Hn,
                   )
                 },
               },
@@ -4248,8 +4248,8 @@
                 value: function () {
                   var e = this.props,
                     t = e.data.mediaTags,
-                    n = e.loggedInUser,
-                    a = t.map(function (e) {
+                    a = e.loggedInUser,
+                    n = t.map(function (e) {
                       return {
                         name: e.data.name,
                         screen_name: e.data.screen_name,
@@ -4259,9 +4259,9 @@
                     })
                   return T.a.createElement(
                     O.b,
-                    { color: 'gray700', size: 'subtext2', testID: Kn },
-                    T.a.createElement(ha.a, { style: Ut.addImageActionIcon }),
-                    T.a.createElement(ra.a, { loggedInUserId: null == n ? void 0 : n.id_str, users: a }),
+                    { color: 'gray700', size: 'subtext2', testID: qa },
+                    T.a.createElement(hn.a, { style: Ut.addImageActionIcon }),
+                    T.a.createElement(rn.a, { loggedInUserId: null == a ? void 0 : a.id_str, users: n }),
                   )
                 },
               },
@@ -4274,21 +4274,21 @@
                     ? e.length > 1
                       ? T.a.createElement(
                           O.b,
-                          { color: 'gray700', size: 'subtext2', testID: jn },
-                          T.a.createElement(ga.a, { style: Ut.addImageActionIcon }),
-                          za({ numberOfAltTextEntries: this._getNumberOfAltTextEntries() }),
+                          { color: 'gray700', size: 'subtext2', testID: Va },
+                          T.a.createElement(gn.a, { style: Ut.addImageActionIcon }),
+                          zn({ numberOfAltTextEntries: this._getNumberOfAltTextEntries() }),
                         )
                       : T.a.createElement(
                           O.b,
-                          { color: 'gray700', numberOfLines: 1, size: 'subtext2', testID: jn },
-                          T.a.createElement(ga.a, { style: Ut.addImageActionIcon }),
+                          { color: 'gray700', numberOfLines: 1, size: 'subtext2', testID: Va },
+                          T.a.createElement(gn.a, { style: Ut.addImageActionIcon }),
                           null == t ? void 0 : t.altText,
                         )
                     : T.a.createElement(
                         O.b,
-                        { color: 'gray700', size: 'subtext2', testID: jn },
-                        T.a.createElement(fa.a, { style: Ut.addImageActionIcon }),
-                        ja({ numberOfImages: e.length }),
+                        { color: 'gray700', size: 'subtext2', testID: Va },
+                        T.a.createElement(fn.a, { style: Ut.addImageActionIcon }),
+                        jn({ numberOfImages: e.length }),
                       )
                 },
               },
@@ -4296,7 +4296,7 @@
                 key: '_renderSubtitlesLabel',
                 value: function () {
                   var e = this.props.data.media,
-                    t = this.attachedSubtitles ? va.a : ya.a
+                    t = this.attachedSubtitles ? vn.a : yn.a
                   return T.a.createElement(
                     O.b,
                     {
@@ -4306,13 +4306,13 @@
                       onPress: this._handleClickSubtitlesShortcut,
                       size: 'subtext2',
                       style: Ut.addImageTextContainer,
-                      testID: Vn,
+                      testID: Ba,
                     },
                     T.a.createElement(t, {
-                      accessibilityLabel: this.attachedSubtitles ? Wa : void 0,
+                      accessibilityLabel: this.attachedSubtitles ? Wn : void 0,
                       style: Ut.addImageActionIcon,
                     }),
-                    this.attachedSubtitles ? this.attachedSubtitles.displayName : Ua,
+                    this.attachedSubtitles ? this.attachedSubtitles.displayName : Un,
                   )
                 },
               },
@@ -4321,13 +4321,13 @@
                 value: function () {
                   var e = this.props,
                     t = e.data.text,
-                    n = e.twitterTextConfigurationVersion,
-                    a = Ia.a[n],
+                    a = e.twitterTextConfigurationVersion,
+                    n = In.a[a],
                     i = this._getParsedTweet(t).weightedLength
-                  return T.a.createElement(oa.a, {
+                  return T.a.createElement(on.a, {
                     count: i,
                     formatNumber: this._formatCountdownNumber,
-                    maxCount: a.maxWeightedTweetLength,
+                    maxCount: n.maxWeightedTweetLength,
                     warningCount: 260,
                   })
                 },
@@ -4337,23 +4337,23 @@
                 value: function () {
                   var e = this.props,
                     t = e.addComposerLink,
-                    n = e.disableAddTweet,
-                    a = e.isCommunityTweetFromProtectedUser,
+                    a = e.disableAddTweet,
+                    n = e.isCommunityTweetFromProtectedUser,
                     i = e.loggedInUser,
                     r = e.onAddComposer,
                     o = this._isEmpty(),
                     s = this._isScheduled(),
-                    l = n || o || s || !i || a
+                    l = a || o || s || !i || n
                   return T.a.createElement(q.a, {
-                    accessibilityLabel: this.isReplyOrReplyThread ? Pa : Da,
+                    accessibilityLabel: this.isReplyOrReplyThread ? Dn : Pn,
                     behavioralEventContext: ri,
                     disabled: l,
-                    hoverLabel: { label: La },
+                    hoverLabel: { label: Ln },
                     icon: ei,
                     link: l ? void 0 : t,
                     onPress: r,
                     size: 'xSmall',
-                    testID: Bn,
+                    testID: Na,
                     type: 'brandOutlined',
                   })
                 },
@@ -4363,18 +4363,18 @@
                 get: function () {
                   var e = this.props,
                     t = e.data,
-                    n = t.media,
-                    a = t.pollActive,
+                    a = t.media,
+                    n = t.pollActive,
                     i = e.loggedInUser,
-                    r = n.length,
-                    o = n.some(function (e) {
+                    r = a.length,
+                    o = a.some(function (e) {
                       var t
                       return null === (t = e.mediaFile) || void 0 === t ? void 0 : t.isGif
                     }),
-                    s = n.some(function (e) {
+                    s = a.some(function (e) {
                       return e.mediaFile && !(e.mediaFile instanceof Nt.a) && e.mediaFile.isVideo
                     })
-                  return 4 === r || o || s || a || this.hasExternalMedia || !i
+                  return 4 === r || o || s || n || this.hasExternalMedia || !i
                 },
               },
               {
@@ -4408,10 +4408,10 @@
                   var e,
                     t = this.props.data.media
                   if (this.hasAttachedVideo) {
-                    var n = t.find(function (e) {
+                    var a = t.find(function (e) {
                       return e.mediaFile && !(e.mediaFile instanceof Nt.a) && e.mediaFile.isVideo
                     })
-                    return null == n || null === (e = n.mediaMetadata) || void 0 === e ? void 0 : e.subtitles
+                    return null == a || null === (e = a.mediaMetadata) || void 0 === e ? void 0 : e.subtitles
                   }
                 },
               },
@@ -4434,10 +4434,10 @@
                 get: function () {
                   var e = this.props.audienceControlsValue,
                     t = this.context.featureSwitches.isTrue('c9s_enabled'),
-                    n = e.communityIdValue || void 0,
-                    a = t && n,
+                    a = e.communityIdValue || void 0,
+                    n = t && a,
                     i = this._shouldRenderControls(!1, 'conversation')
-                  return Boolean(i && a)
+                  return Boolean(i && n)
                 },
               },
               {
@@ -4445,12 +4445,12 @@
                 get: function () {
                   var e = this.props,
                     t = e.isReply,
-                    n = e.isSelfThreadReply
-                  return t && !n
+                    a = e.isSelfThreadReply
+                  return t && !a
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
       _()(si, 'contextType', I.a),
@@ -4461,14 +4461,14 @@
         ui = function (e) {
           return '@'.concat(e)
         },
-        mi = n('SrIh'),
+        mi = a('SrIh'),
         pi = function (e) {
           return (null == e ? void 0 : e.screen_name) || ''
         },
         hi = function (e) {
           var t = e.communityName,
-            n = e.excludedRecipients,
-            a = e.inReplyToStatus,
+            a = e.excludedRecipients,
+            n = e.inReplyToStatus,
             i = e.loggedInUserId,
             r = {
               replyToOne: function (e) {
@@ -4481,60 +4481,60 @@
               },
               replyToTwo: function (e) {
                 var t = e.userOneName,
-                  n = e.userTwoName
+                  a = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'bfd9c99a' },
-                  T.a.cloneElement(di, null, B.a.f2e4dd37({ replyUserName: ui(t), otherUserName: ui(n) })),
+                  T.a.cloneElement(di, null, B.a.f2e4dd37({ replyUserName: ui(t), otherUserName: ui(a) })),
                 )
               },
               replyToThree: function (e) {
                 var t = e.userOneName,
-                  n = e.userThreeName,
-                  a = e.userTwoName
+                  a = e.userThreeName,
+                  n = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'g7a1000e' },
                   T.a.cloneElement(
                     di,
                     null,
-                    B.a.eccfddc3({ userOneName: ui(t), userTwoName: ui(a), userThreeName: ui(n) }),
+                    B.a.eccfddc3({ userOneName: ui(t), userTwoName: ui(n), userThreeName: ui(a) }),
                   ),
                 )
               },
               replyToMany: function (e) {
                 var t = e.othersCount,
-                  n = e.userOneName,
-                  a = e.userTwoName
+                  a = e.userOneName,
+                  n = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'i558c201' },
-                  T.a.cloneElement(di, null, B.a.h758cd22({ userOneName: ui(n), userTwoName: ui(a), othersCount: t })),
+                  T.a.cloneElement(di, null, B.a.h758cd22({ userOneName: ui(a), userTwoName: ui(n), othersCount: t })),
                 )
               },
               communityReplyToOne: function (e) {
                 var t = e.communityName,
-                  n = e.userName
+                  a = e.userName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'j935bcde', communityName: t },
-                  T.a.cloneElement(di, null, B.a.e9f8a0eb({ userName: ui(n) })),
+                  T.a.cloneElement(di, null, B.a.e9f8a0eb({ userName: ui(a) })),
                 )
               },
               communityReplyToTwo: function (e) {
                 var t = e.communityName,
-                  n = e.userOneName,
-                  a = e.userTwoName
+                  a = e.userOneName,
+                  n = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'i7bd9c8e', communityName: t },
-                  T.a.cloneElement(di, null, B.a.df7e9fbc({ replyUserName: ui(n), otherUserName: ui(a) })),
+                  T.a.cloneElement(di, null, B.a.df7e9fbc({ replyUserName: ui(a), otherUserName: ui(n) })),
                 )
               },
               communityReplyToThree: function (e) {
                 var t = e.communityName,
-                  n = e.userOneName,
-                  a = e.userThreeName,
+                  a = e.userOneName,
+                  n = e.userThreeName,
                   i = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
@@ -4542,19 +4542,19 @@
                   T.a.cloneElement(
                     di,
                     null,
-                    B.a.b45fa505({ userOneName: ui(n), userTwoName: ui(i), userThreeName: ui(a) }),
+                    B.a.b45fa505({ userOneName: ui(a), userTwoName: ui(i), userThreeName: ui(n) }),
                   ),
                 )
               },
               communityReplyToMany: function (e) {
                 var t = e.communityName,
-                  n = e.othersCount,
-                  a = e.userOneName,
+                  a = e.othersCount,
+                  n = e.userOneName,
                   i = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'jfc8e4b4', communityName: t },
-                  T.a.cloneElement(di, null, B.a.a4383815({ userOneName: ui(a), userTwoName: ui(i), othersCount: n })),
+                  T.a.cloneElement(di, null, B.a.a4383815({ userOneName: ui(n), userTwoName: ui(i), othersCount: a })),
                 )
               },
               exclusiveReplyToOne: function (e) {
@@ -4568,46 +4568,46 @@
               },
               exclusiveReplyToTwo: function (e) {
                 var t = e.userOneName,
-                  n = e.userTwoName
+                  a = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'cf1b3321' },
-                  T.a.cloneElement(di, null, B.a.g7d5e985({ replyUserName: ui(t), otherUserName: ui(n) })),
+                  T.a.cloneElement(di, null, B.a.g7d5e985({ replyUserName: ui(t), otherUserName: ui(a) })),
                   T.a.cloneElement(ci, null, B.a.af82725c),
                 )
               },
               exclusiveReplyToThree: function (e) {
                 var t = e.userOneName,
-                  n = e.userThreeName,
-                  a = e.userTwoName
+                  a = e.userThreeName,
+                  n = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'c83d647e' },
                   T.a.cloneElement(
                     di,
                     null,
-                    B.a.fe5a61e9({ userOneName: ui(t), userTwoName: ui(a), userThreeName: ui(n) }),
+                    B.a.fe5a61e9({ userOneName: ui(t), userTwoName: ui(n), userThreeName: ui(a) }),
                   ),
                   T.a.cloneElement(ci, null, B.a.f7126257),
                 )
               },
               exclusiveReplyToMany: function (e) {
                 var t = e.othersCount,
-                  n = e.userOneName,
-                  a = e.userTwoName
+                  a = e.userOneName,
+                  n = e.userTwoName
                 return T.a.createElement(
                   B.a.I18NFormatMessage,
                   { $i18n: 'fec57cab' },
-                  T.a.cloneElement(di, null, B.a.bc9dd514({ userOneName: ui(n), userTwoName: ui(a), othersCount: t })),
+                  T.a.cloneElement(di, null, B.a.bc9dd514({ userOneName: ui(a), userTwoName: ui(n), othersCount: t })),
                   T.a.cloneElement(ci, null, B.a.de5071ba),
                 )
               },
             },
-            o = S.a({ inReplyToStatus: a, loggedInUserId: i }).filter(function (e) {
+            o = S.a({ inReplyToStatus: n, loggedInUserId: i }).filter(function (e) {
               var t = e.id_str
-              return n.indexOf(t) < 0
+              return a.indexOf(t) < 0
             }),
-            s = a.retweeted_status || a,
+            s = n.retweeted_status || n,
             l = s.exclusivity_info,
             c = s.user,
             d = o.filter(function (e) {
@@ -4652,9 +4652,9 @@
           }
         },
         fi = T.a.memo(hi),
-        gi = n('fs1G'),
-        vi = n('BLtI'),
-        yi = n('kY28')
+        gi = a('fs1G'),
+        vi = a('BLtI'),
+        yi = a('kY28')
       function bi(e) {
         null == e || e.preventDefault()
       }
@@ -4681,8 +4681,8 @@
         }),
         Ci = function (e) {
           var t = e.communityName,
-            n = e.excludedRecipients,
-            a = e.inReplyToStatus,
+            a = e.excludedRecipients,
+            n = e.inReplyToStatus,
             i = e.loggedInUserId,
             r = e.onPress,
             o = e.shouldDisplayRepliesText,
@@ -4702,7 +4702,7 @@
                   onMediaClick: bi,
                   onReplyContextClick: bi,
                   replyContext: yi.a.ReplyContextTypes.None,
-                  tweet: a,
+                  tweet: n,
                   withAvatarLink: !1,
                   withCardLinks: !0,
                   withInlineMedia: !1,
@@ -4716,7 +4716,7 @@
               W.a,
               { style: _i.replyUsersContainer },
               T.a.createElement(
-                ea.a,
+                $a.a,
                 {
                   avatarCell: l ? T.a.createElement(W.a, { style: _i.conversationLine }) : null,
                   avatarCellStyle: _i.conversationLineContainer,
@@ -4729,8 +4729,8 @@
                       { accessibilityRole: 'button', color: 'gray700', onPress: r, style: l && _i.repliesMessage },
                       T.a.createElement(fi, {
                         communityName: t,
-                        excludedRecipients: n,
-                        inReplyToStatus: a,
+                        excludedRecipients: a,
+                        inReplyToStatus: n,
                         loggedInUserId: i,
                       }),
                     )
@@ -4739,58 +4739,59 @@
             ),
           )
         },
-        Ti = n('Tb0w'),
-        wi = n('1YZw'),
-        xi = n('pidX'),
-        Ei = n('5oBF'),
-        Si = n('JYYi'),
-        Ii = n('/Rsk'),
-        Ri = n('qlwE'),
-        Ai = n('XOJV'),
-        Mi = n('G6rE'),
-        ki = n('AspN'),
-        Di = n('oEGd'),
-        Pi = n('P1r1'),
-        Oi = ['mediaIds'],
-        Li = function (e) {
+        Ti = a('Tb0w'),
+        wi = a('1YZw'),
+        xi = a('pidX'),
+        Ei = a('5oBF'),
+        Si = a('JYYi'),
+        Ii = a('/Rsk'),
+        Ri = a('qlwE'),
+        Ai = a('XOJV'),
+        Mi = a('G6rE'),
+        ki = a('AspN'),
+        Pi = a('oEGd'),
+        Di = a('2iUg'),
+        Oi = a('P1r1'),
+        Li = ['mediaIds'],
+        Fi = function (e) {
           return e.parentTweetId || (e.isInline ? Si.a.homeTimeline : Si.a.modal)
         },
-        Fi = function (e, t) {
-          var n = Li(t)
-          return se.k(e, n)
-        },
         Ni = function (e, t) {
-          var n = Li(t)
-          return se.l(e, n)
+          var a = Fi(t)
+          return se.k(e, a)
         },
         Bi = function (e, t) {
-          var n = Li(t)
-          return se.j(e, n)
+          var a = Fi(t)
+          return se.l(e, a)
         },
         Vi = function (e, t) {
-          var n = Ki(e, t),
-            a = Bi(e, t).communityIdValue || void 0,
-            i = (null == n ? void 0 : n.community_id_str) || a,
+          var a = Fi(t)
+          return se.j(e, a)
+        },
+        ji = function (e, t) {
+          var a = Qi(e, t),
+            n = Vi(e, t).communityIdValue || void 0,
+            i = (null == a ? void 0 : a.community_id_str) || n,
             r = i ? A.c.select(e, i) : void 0
           return r ? r.name : void 0
         },
-        ji = function (e, t) {
-          var n = Li(t)
-          return se.m(e, n)
-        },
         zi = function (e, t) {
-          var n = Li(t)
-          return se.i(e, n)
+          var a = Fi(t)
+          return se.m(e, a)
         },
-        Hi = function (e) {
-          return function (t, n) {
-            var a = (function (e, t) {
+        Hi = function (e, t) {
+          var a = Fi(t)
+          return se.i(e, a)
+        },
+        Ui = function (e) {
+          return function (t, a) {
+            var n = (function (e, t) {
               return t.location.state
-            })(0, n)
-            return a ? e(a) : void 0
+            })(0, a)
+            return n ? e(n) : void 0
           }
         },
-        Ui = Object(de.createSelector)(
+        Wi = Object(de.createSelector)(
           function (e, t) {
             return t.activeUser
           },
@@ -4799,91 +4800,91 @@
             return e || t
           },
         ),
-        Wi = function (e, t) {
-          return t.parentTweetId || Gi(e, t) || qi(e, t)
-        },
         Gi = function (e, t) {
-          var n = t.location.query
-          return n && 'string' == typeof n.in_reply_to ? n.in_reply_to : void 0
+          return t.parentTweetId || qi(e, t) || Ki(e, t)
         },
-        qi = Hi(function (e) {
+        qi = function (e, t) {
+          var a = t.location.query
+          return a && 'string' == typeof a.in_reply_to ? a.in_reply_to : void 0
+        },
+        Ki = Ui(function (e) {
           return e.inReplyToStatusId
         }),
-        Ki = function (e, t) {
-          var n = Wi(e, t)
-          return n ? Ai.a.selectHydrated(e, n) : void 0
-        },
         Qi = function (e, t) {
+          var a = Gi(e, t)
+          return a ? Ai.a.selectHydrated(e, a) : void 0
+        },
+        Xi = function (e, t) {
           return t.location.pathname.indexOf('/intent/') > -1
         },
-        Xi = Hi(function (e) {
+        Yi = Ui(function (e) {
           return e.hasArticleNudge
         }),
-        Yi = Hi(function (e) {
+        Zi = Ui(function (e) {
           return e.convoCardData
         }),
-        Zi = Hi(function (e) {
+        Ji = Ui(function (e) {
           return e.externalMedia
         }),
-        Ji = Hi(function (e) {
+        $i = Ui(function (e) {
           return e.externalMediaFiles
         }),
-        $i = Hi(function (e) {
+        er = Ui(function (e) {
           return e.previewTweetId
         }),
-        er = Hi(function (e) {
+        tr = Ui(function (e) {
           return e.defaultText
         }),
-        tr = function (e, t) {
-          var n = er(e, t),
-            a = Object(xi.a)(t.location)
-          return (Qi(0, t) ||
+        ar = function (e, t) {
+          var a = tr(e, t),
+            n = Object(xi.a)(t.location)
+          return (Xi(0, t) ||
             (function (e, t) {
               return t.location.pathname.indexOf('/compose/tweet') > -1
             })(0, t)) &&
-            a
-            ? a
-            : n
+            n
+            ? n
+            : a
         },
-        nr = Hi(function (e) {
+        nr = Ui(function (e) {
           return e.quotedStatusId
         }),
-        ar = Hi(function (e) {
+        ir = Ui(function (e) {
           return e.quotedStatus
         }),
-        ir = function (e, t) {
+        rr = function (e, t) {
           return (
             (function (e, t) {
-              return t.quotedStatus ? t.quotedStatus : ar(e, t)
+              return t.quotedStatus ? t.quotedStatus : ir(e, t)
             })(e, t) ||
             (function (e, t) {
-              var n = nr(e, t)
-              return n ? Ai.a.selectHydratedMemoized(e, n) : void 0
+              var a = nr(e, t)
+              return a ? Ai.a.selectHydratedMemoized(e, a) : void 0
             })(e, t)
           )
         },
-        rr = Hi(function (e) {
+        or = Ui(function (e) {
           return e.isSelfThreadReply
         }),
-        or = Hi(function (e) {
+        sr = Ui(function (e) {
           return e.positionCursorAtBeginning
         }),
-        sr = Hi(function (e) {
+        lr = Ui(function (e) {
           return e.promotedContent
         }),
-        lr = function () {
-          return Object(de.createSelector)(Fi, tr, ir, ki.j, function (e, t, n, a) {
+        cr = function () {
+          return Object(de.createSelector)(Ni, ar, rr, ki.j, function (e, t, a, n) {
             return e.map(function (e, i) {
               return l()(
-                l()({}, ((r = e).mediaIds, ct()(r, Oi))),
+                l()({}, ((r = e).mediaIds, ct()(r, Li))),
                 {},
                 {
-                  media: a.filter(function (t) {
+                  media: n.filter(function (t) {
                     return e.mediaIds.some(function (e) {
                       return e === t.id
                     })
                   }),
-                  quotedStatus: 0 === i ? n : void 0,
+                  quotedStatus: 0 === i ? a : void 0,
                   text: 0 === i && t ? t : e.text,
                 },
               )
@@ -4891,12 +4892,13 @@
             })
           })
         },
-        cr = {
+        dr = {
           addComposer: se.a,
           addToast: wi.b,
           createLocalApiErrorHandler: Object(he.createLocalApiErrorHandlerWithContextFactory)('SCREEN_COMPOSE_V2'),
           checkTweetForNudge: se.b,
           deletePreviewTweet: Ei.c,
+          fetchAltTextPromptPreferenceIfNeeded: Di.a,
           fetchAutotaggedLocationIfNeeded: Ii.a,
           fetchTweetIfNeeded: Ai.a.fetchOneIfNeeded,
           removeComposer: se.e,
@@ -4916,55 +4918,55 @@
           setActiveParentKey: se.r,
           copyDataFromInlineComposerToModalComposer: se.c,
         },
-        dr = Object(Di.e)(function () {
+        ur = Object(Pi.e)(function () {
           return Object(de.createStructuredSelector)({
-            activeComposerIndex: zi,
-            activeUser: Ui,
-            altTextNudgeType: Pi.h,
-            audienceControlsValue: Bi,
-            composerData: lr(),
-            dataSaverMode: Pi.k,
-            excludedRecipients: Ni,
-            externalMedia: Zi,
-            externalMediaFiles: Ji,
-            geoEnabled: Pi.p,
-            hasArticleNudge: Xi,
-            inReplyToStatus: Ki,
-            inReplyToStatusId: Wi,
-            isIntentRoute: Qi,
-            isSelfThreadReply: rr,
-            isSending: ji,
+            activeComposerIndex: Hi,
+            activeUser: Wi,
+            altTextNudgeType: Di.b,
+            audienceControlsValue: Vi,
+            composerData: cr(),
+            dataSaverMode: Oi.j,
+            excludedRecipients: Bi,
+            externalMedia: Ji,
+            externalMediaFiles: $i,
+            geoEnabled: Oi.o,
+            hasArticleNudge: Yi,
+            inReplyToStatus: Qi,
+            inReplyToStatusId: Gi,
+            isIntentRoute: Xi,
+            isSelfThreadReply: or,
+            isSending: zi,
             isSuperFollowsCreator: me.l,
-            positionCursorAtBeginning: or,
+            positionCursorAtBeginning: sr,
             loggedInUser: Mi.e.selectLoggedInUser,
-            prepopulatedText: tr,
-            previewTweetId: $i,
-            promotedContent: sr,
+            prepopulatedText: ar,
+            previewTweetId: er,
+            promotedContent: lr,
             scheduledFor: se.n,
-            selectedCommunityName: Vi,
+            selectedCommunityName: ji,
             sendingProgress: se.o,
-            convoCardData: Yi,
-            undoTweetSettings: Ri.q,
+            convoCardData: Zi,
+            undoTweetSettings: Ri.p,
             userLanguage: me.o,
             quotedStatusId: nr,
           })
-        }, cr),
-        ur = n('45mF'),
-        mr = n('c0ZR'),
-        pr = n('W5XZ'),
-        hr = n('Drq4'),
-        fr = n('0uGn'),
-        gr = n('I8M8'),
-        vr = n('7myi'),
-        yr = n('7nmT'),
-        br = n.n(yr),
-        _r = n('vbWy'),
-        Cr = n('Rp9C'),
-        Tr = n('Q5Mu'),
-        wr = n('N5qz'),
-        xr = 'tweetButton',
-        Er = 'tweetButtonInline',
-        Sr = Object(M.a)()
+        }, dr),
+        mr = a('45mF'),
+        pr = a('c0ZR'),
+        hr = a('W5XZ'),
+        fr = a('Drq4'),
+        gr = a('0uGn'),
+        vr = a('I8M8'),
+        yr = a('7myi'),
+        br = a('7nmT'),
+        _r = a.n(br),
+        Cr = a('vbWy'),
+        Tr = a('Rp9C'),
+        wr = a('Q5Mu'),
+        xr = a('N5qz'),
+        Er = 'tweetButton',
+        Sr = 'tweetButtonInline',
+        Ir = Object(M.a)()
           .propsFromState(function () {
             return { loggedInUser: Mi.e.selectLoggedInUser }
           })
@@ -4977,11 +4979,11 @@
             }
           })
           .withAnalytics(),
-        Ir = n('cHvH'),
-        Rr = n('sgih'),
-        Ar = n('xKuM'),
-        Mr = n('5Vk4'),
-        kr = F.a.create(function (e) {
+        Rr = a('cHvH'),
+        Ar = a('sgih'),
+        Mr = a('xKuM'),
+        kr = a('5Vk4'),
+        Pr = F.a.create(function (e) {
           return {
             mainCard: {
               marginHorizontal: 'auto',
@@ -4996,41 +4998,41 @@
         }),
         Dr = function (e) {
           var t = e.actionButtonType,
-            n = e.children,
-            a = e.onActionButtonClick,
+            a = e.children,
+            n = e.onActionButtonClick,
             i = e.onMaskClick,
             r = e.sheetType,
             o = e.showActionButton
-          return T.a.createElement(Ir.a, null, function (e) {
+          return T.a.createElement(Rr.a, null, function (e) {
             var s = e.windowWidth > F.a.theme.breakpoints.small
             return T.a.createElement(
-              Rr.a,
-              { onMaskClick: i, style: kr.sheetStyle, type: r, withMask: !0 },
+              Ar.a,
+              { onMaskClick: i, style: Pr.sheetStyle, type: r, withMask: !0 },
               o &&
-                T.a.createElement(Ar.a, {
-                  leftControl: T.a.createElement(Mr.a, { backButtonType: t, onClick: a }),
+                T.a.createElement(Mr.a, {
+                  leftControl: T.a.createElement(kr.a, { backButtonType: t, onClick: n }),
                   position: 'absolute',
                 }),
-              T.a.createElement(W.a, { style: [kr.mainCard, s ? kr.largeScreenCard : kr.smallScreenCard] }, n),
+              T.a.createElement(W.a, { style: [Pr.mainCard, s ? Pr.largeScreenCard : Pr.smallScreenCard] }, a),
             )
           })
         },
-        Pr = B.a.cb7c0987,
-        Or = B.a.de3bcf27,
-        Lr = B.a.e710ce75,
-        Fr = B.a.h11e5910,
-        Nr = B.a.b7ec04f3,
-        Br = B.a.i62a03aa,
-        Vr = F.a.create(function (e) {
+        Or = B.a.cb7c0987,
+        Lr = B.a.de3bcf27,
+        Fr = B.a.e710ce75,
+        Nr = B.a.h11e5910,
+        Br = B.a.b7ec04f3,
+        Vr = B.a.i62a03aa,
+        jr = F.a.create(function (e) {
           return {
             itemPadding: { marginVertical: e.spaces.space8 },
             buttonContainer: { paddingHorizontal: e.spaces.space20, width: '100%' },
           }
         }),
-        jr = function (e) {
+        zr = function (e) {
           var t = e.onBack,
-            n = e.onNo,
-            a = e.onYes
+            a = e.onNo,
+            n = e.onYes
           return T.a.createElement(
             Dr,
             {
@@ -5040,27 +5042,27 @@
               sheetType: 'full',
               showActionButton: !0,
             },
-            T.a.createElement(O.b, { size: 'title4', style: Vr.itemPadding, weight: 'heavy' }, Pr),
-            T.a.createElement(O.b, { color: 'gray700', style: Vr.itemPadding }, Or),
-            T.a.createElement(O.b, { color: 'gray700', style: Vr.itemPadding }, Lr),
+            T.a.createElement(O.b, { size: 'title4', style: jr.itemPadding, weight: 'heavy' }, Or),
+            T.a.createElement(O.b, { color: 'gray700', style: jr.itemPadding }, Lr),
+            T.a.createElement(O.b, { color: 'gray700', style: jr.itemPadding }, Fr),
             T.a.createElement(
               W.a,
-              { style: Vr.buttonContainer },
-              T.a.createElement(O.b, { size: 'title4', style: Vr.itemPadding, weight: 'heavy' }, Fr),
-              T.a.createElement(q.a, { onPress: a, style: Vr.itemPadding, type: 'brandOutlined' }, Nr),
-              T.a.createElement(q.a, { onPress: n, style: Vr.itemPadding, type: 'brandOutlined' }, Br),
+              { style: jr.buttonContainer },
+              T.a.createElement(O.b, { size: 'title4', style: jr.itemPadding, weight: 'heavy' }, Nr),
+              T.a.createElement(q.a, { onPress: n, style: jr.itemPadding, type: 'brandOutlined' }, Br),
+              T.a.createElement(q.a, { onPress: a, style: jr.itemPadding, type: 'brandOutlined' }, Vr),
             ),
           )
         },
-        zr = n('cm6r'),
-        Hr = F.a.create(function (e) {
+        Hr = a('cm6r'),
+        Ur = F.a.create(function (e) {
           return { button: { width: e.spaces.space72, height: e.spaces.space72, marginBottom: e.spaces.space12 } }
         }),
-        Ur = function (e) {
+        Wr = function (e) {
           var t = e.icon,
-            n = e.label,
-            a = e.onPress
-          return T.a.createElement(zr.a, { interactiveStyles: null, onPress: a }, function (e) {
+            a = e.label,
+            n = e.onPress
+          return T.a.createElement(Hr.a, { interactiveStyles: null, onPress: n }, function (e) {
             return T.a.createElement(
               T.a.Fragment,
               null,
@@ -5068,33 +5070,33 @@
                 icon: t,
                 interactivityState: e,
                 size: 'xLarge',
-                style: Hr.button,
+                style: Ur.button,
                 type: 'primaryOutlined',
               }),
-              T.a.createElement(O.b, { color: 'gray700' }, n),
+              T.a.createElement(O.b, { color: 'gray700' }, a),
             )
           })
         },
-        Wr = n('sjK1'),
-        Gr = n('FDY4'),
-        qr = n('tevE'),
-        Kr = n('jV+4'),
-        Qr = n('UgB4'),
-        Xr = n('TW8A'),
-        Yr = n('hiGS'),
-        Zr = n('WtWS'),
-        Jr = n('Lsrn'),
-        $r = n('k/Ka'),
-        eo = function () {
+        Gr = a('sjK1'),
+        qr = a('FDY4'),
+        Kr = a('tevE'),
+        Qr = a('jV+4'),
+        Xr = a('UgB4'),
+        Yr = a('TW8A'),
+        Zr = a('hiGS'),
+        Jr = a('WtWS'),
+        $r = a('Lsrn'),
+        eo = a('k/Ka'),
+        to = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object($r.a)(
+          return Object(eo.a)(
             'svg',
             l()(
               l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [Jr.a.root, e.style],
+                style: [$r.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -5107,8 +5109,8 @@
             ),
           )
         }
-      eo.metadata = { width: 24, height: 24 }
-      var to = eo,
+      to.metadata = { width: 24, height: 24 }
+      var ao = to,
         no = [
           { headlineText: B.a.f3a7a80c, subTextLine1: B.a.ge52d1de, subTextLine2: null },
           { headlineText: B.a.j311bf49, subTextLine1: B.a.ae42ebff, subTextLine2: B.a.aa350ab1 },
@@ -5116,12 +5118,12 @@
           { headlineText: B.a.d02a94fa, subTextLine1: B.a.dddd0995, subTextLine2: null },
           { headlineText: B.a.i018b746, subTextLine1: B.a.b8d85df9, subTextLine2: B.a.d5ca11f0 },
         ],
-        ao = B.a.h11e5910,
-        io = B.a.abd845fd,
-        ro = B.a.bea869b3,
-        oo = B.a.d96cf7cd,
-        so = B.a.d3145da8,
-        lo = F.a.create(function (e) {
+        io = B.a.h11e5910,
+        ro = B.a.abd845fd,
+        oo = B.a.bea869b3,
+        so = B.a.d96cf7cd,
+        lo = B.a.d3145da8,
+        co = F.a.create(function (e) {
           return {
             itemPadding: { marginVertical: e.spaces.space8 },
             buttonContainer: { paddingHorizontal: e.spaces.space20, width: '100%' },
@@ -5159,10 +5161,10 @@
             textStyle: { flex: '8 1 0%' },
           }
         }),
-        co = function (e) {
+        uo = function (e) {
           var t = e.hasSentFeedback,
-            n = e.media,
-            a = e.onDeleteTweet,
+            a = e.media,
+            n = e.onDeleteTweet,
             i = e.onDismiss,
             r = e.onEditTweet,
             o = e.onSendTweet,
@@ -5173,7 +5175,7 @@
             u = e.userScreenName,
             m = T.a.useContext(I.a).featureSwitches.getNumberValue('responsive_web_reply_nudge_copy_version'),
             p = no[(m = m >= 0 && m <= 4 ? m : 0)]
-          return T.a.createElement(Ir.a, null, function (e) {
+          return T.a.createElement(Rr.a, null, function (e) {
             var m,
               h,
               f,
@@ -5187,29 +5189,29 @@
                 sheetType: 'full',
                 showActionButton: g > F.a.theme.breakpoints.medium,
               },
-              T.a.createElement(to, { style: [lo.profanityIcon, lo.itemPadding] }),
-              T.a.createElement(qr.a, { size: 'title4', style: lo.itemPadding, weight: 'heavy' }, p.headlineText),
-              T.a.createElement(O.b, { color: 'gray700', style: lo.itemPadding }, p.subTextLine1),
-              T.a.createElement(O.b, { color: 'gray700', style: lo.itemPadding }, p.subTextLine2),
+              T.a.createElement(ao, { style: [co.profanityIcon, co.itemPadding] }),
+              T.a.createElement(Kr.a, { size: 'title4', style: co.itemPadding, weight: 'heavy' }, p.headlineText),
+              T.a.createElement(O.b, { color: 'gray700', style: co.itemPadding }, p.subTextLine1),
+              T.a.createElement(O.b, { color: 'gray700', style: co.itemPadding }, p.subTextLine2),
               T.a.createElement(
                 W.a,
-                { style: [lo.tweetContainer, lo.itemPadding] },
+                { style: [co.tweetContainer, co.itemPadding] },
                 T.a.createElement(
                   W.a,
-                  { style: lo.tweetContent },
-                  T.a.createElement(Kr.a, { name: c, profileImageUrl: d, screenName: u, style: lo.userName }),
+                  { style: co.tweetContent },
+                  T.a.createElement(Qr.a, { name: c, profileImageUrl: d, screenName: u, style: co.userName }),
                   T.a.createElement(
                     W.a,
-                    { style: lo.tweetBody },
+                    { style: co.tweetBody },
                     (function () {
-                      if (0 === n.length) return null
-                      var e = n.map(function (e) {
+                      if (0 === a.length) return null
+                      var e = a.map(function (e) {
                         var t,
-                          n,
                           a,
+                          n,
                           i = ''
                         if (e.externalMediaDetails) i = e.externalMediaDetails.stillMediaUrl
-                        else if (e.mediaFile instanceof Wr.c) i = e.mediaFile.thumbnail
+                        else if (e.mediaFile instanceof Gr.c) i = e.mediaFile.thumbnail
                         else if (null !== (t = e.mediaFile) && void 0 !== t && t.url) {
                           var r
                           i = null === (r = e.mediaFile) || void 0 === r ? void 0 : r.url
@@ -5217,16 +5219,16 @@
                         return {
                           accessibilityLabel: '',
                           url: i,
-                          width: (null === (n = e.mediaFile) || void 0 === n ? void 0 : n.width) || 100,
-                          height: (null === (a = e.mediaFile) || void 0 === a ? void 0 : a.height) || 100,
+                          width: (null === (a = e.mediaFile) || void 0 === a ? void 0 : a.width) || 100,
+                          height: (null === (n = e.mediaFile) || void 0 === n ? void 0 : n.height) || 100,
                           expandedUrl: '',
                           shouldShowAltLabel: !1,
                         }
                       })
                       return T.a.createElement(
                         W.a,
-                        { style: lo.photos },
-                        T.a.createElement(Gr.a, {
+                        { style: co.photos },
+                        T.a.createElement(qr.a, {
                           containerAspectRatio: 1,
                           images: e,
                           previewMode: !1,
@@ -5237,43 +5239,43 @@
                         }),
                       )
                     })(),
-                    T.a.createElement(O.b, { style: lo.textStyle }, l),
+                    T.a.createElement(O.b, { style: co.textStyle }, l),
                   ),
                 ),
               ),
               t
                 ? T.a.createElement(
                     W.a,
-                    { style: lo.thanksContainer },
-                    T.a.createElement(Zr.a, { style: lo.thanksCheckMark }),
-                    T.a.createElement(O.b, { align: 'center', style: lo.itemPadding }, so),
+                    { style: co.thanksContainer },
+                    T.a.createElement(Jr.a, { style: co.thanksCheckMark }),
+                    T.a.createElement(O.b, { align: 'center', style: co.itemPadding }, lo),
                   )
-                : T.a.createElement(O.b, { align: 'center', onPress: s, style: lo.itemPadding, withUnderline: !0 }, ao),
+                : T.a.createElement(O.b, { align: 'center', onPress: s, style: co.itemPadding, withUnderline: !0 }, io),
               g > F.a.theme.breakpoints.small
                 ? T.a.createElement(
                     W.a,
-                    { style: lo.buttonContainer },
-                    T.a.createElement(q.a, { onPress: r, style: lo.itemPadding, type: 'brandFilled' }, io),
-                    T.a.createElement(q.a, { onPress: o, style: lo.itemPadding, type: 'brandOutlined' }, ro),
-                    T.a.createElement(q.a, { onPress: a, style: lo.itemPadding, type: 'destructiveText' }, oo),
+                    { style: co.buttonContainer },
+                    T.a.createElement(q.a, { onPress: r, style: co.itemPadding, type: 'brandFilled' }, ro),
+                    T.a.createElement(q.a, { onPress: o, style: co.itemPadding, type: 'brandOutlined' }, oo),
+                    T.a.createElement(q.a, { onPress: n, style: co.itemPadding, type: 'destructiveText' }, so),
                   )
-                : ((m = T.a.createElement(Qr.a, { style: { color: F.a.theme.colors.text } })),
-                  (h = T.a.createElement(Xr.a, { style: { color: F.a.theme.colors.primary } })),
-                  (f = T.a.createElement(Yr.a, { style: { color: F.a.theme.colors.red500 } })),
+                : ((m = T.a.createElement(Xr.a, { style: { color: F.a.theme.colors.text } })),
+                  (h = T.a.createElement(Yr.a, { style: { color: F.a.theme.colors.primary } })),
+                  (f = T.a.createElement(Zr.a, { style: { color: F.a.theme.colors.red500 } })),
                   T.a.createElement(
                     W.a,
-                    { style: lo.mobileButtonContainer },
-                    T.a.createElement(Ur, { icon: m, label: ro, onPress: o }),
-                    T.a.createElement(Ur, { icon: h, label: io, onPress: r }),
-                    T.a.createElement(Ur, { icon: f, label: oo, onPress: a }),
+                    { style: co.mobileButtonContainer },
+                    T.a.createElement(Wr, { icon: m, label: oo, onPress: o }),
+                    T.a.createElement(Wr, { icon: h, label: ro, onPress: r }),
+                    T.a.createElement(Wr, { icon: f, label: so, onPress: n }),
                   )),
             )
           })
         },
-        uo = Sr(function (e) {
+        mo = Ir(function (e) {
           var t = e.analytics,
-            n = e.media,
-            a = e.nudgeId,
+            a = e.media,
+            n = e.nudgeId,
             i = e.onDeleteTweet,
             r = e.onDismiss,
             o = e.onEditTweet,
@@ -5291,14 +5293,14 @@
             y = v[0],
             b = v[1],
             _ = function (e) {
-              var n = e.action,
+              var a = e.action,
                 i = e.element,
                 r = e.page,
-                o = [{ nudge_id: a }]
-              t.scribe({ action: n, data: { items: o }, element: i, page: r, section: 'dialog' })
+                o = [{ nudge_id: n }]
+              t.scribe({ action: a, data: { items: o }, element: i, page: r, section: 'dialog' })
             }
           return h
-            ? T.a.createElement(jr, {
+            ? T.a.createElement(zr, {
                 onBack: function () {
                   _({ action: 'back', element: 'action', page: 'nudge_more_info' }), f(!1)
                 },
@@ -5309,9 +5311,9 @@
                   _({ action: 'got_it_wrong_yes', element: 'action', page: 'nudge_more_info' }), b(!0), f(!1)
                 },
               })
-            : T.a.createElement(co, {
+            : T.a.createElement(uo, {
                 hasSentFeedback: y,
-                media: n,
+                media: a,
                 onDeleteTweet: function () {
                   _({ action: 'cancel', element: 'action', page: 'nudge' }), i()
                 },
@@ -5335,72 +5337,72 @@
                 userScreenName: u,
               })
         }),
-        mo = n('aITJ'),
-        po = n('eb3s'),
-        ho = n('JYMr'),
-        fo = n('sCk0'),
-        go = n('3A2y'),
-        vo = n('zrOZ'),
-        yo = n('s1N3'),
-        bo = n('4FGy'),
-        _o = n('mN6z'),
-        Co = n('eyty'),
-        To = n('rziq'),
-        wo = n('lsKC'),
-        xo = n('jTgF'),
-        Eo = B.a.d28215f0,
-        So = B.a.ec909a54,
-        Io = B.a.jd53409d,
-        Ro = {
+        po = a('aITJ'),
+        ho = a('eb3s'),
+        fo = a('JYMr'),
+        go = a('sCk0'),
+        vo = a('3A2y'),
+        yo = a('zrOZ'),
+        bo = a('s1N3'),
+        _o = a('4FGy'),
+        Co = a('mN6z'),
+        To = a('eyty'),
+        wo = a('rziq'),
+        xo = a('lsKC'),
+        Eo = a('jTgF'),
+        So = B.a.d28215f0,
+        Io = B.a.ec909a54,
+        Ro = B.a.jd53409d,
+        Ao = {
           singular: B.a.edae65de,
           plural: B.a.a859846a,
           oneOfMultiple: B.a.e90118f5,
           someOfMultiple: B.a.c211dcb1,
         },
-        Ao = { singular: B.a.d7c26bfb, plural: B.a.a75e3ccc },
-        Mo = B.a.dcb7e3a0,
-        ko = function (e) {
+        Mo = { singular: B.a.d7c26bfb, plural: B.a.a75e3ccc },
+        ko = B.a.dcb7e3a0,
+        Po = function (e) {
           var t,
-            n,
-            a = e.numberOfDescriptionsMissing,
-            i = a === e.numberOfImages
+            a,
+            n = e.numberOfDescriptionsMissing,
+            i = n === e.numberOfImages
           return (
-            1 === a
-              ? ((n = Ao.singular), (t = i ? Ro.singular : Ro.oneOfMultiple))
-              : ((n = Ao.plural), (t = i ? Ro.plural : Ro.someOfMultiple)),
-            ''.concat(t, ' ').concat(n, ' ').concat(Mo)
+            1 === n
+              ? ((a = Mo.singular), (t = i ? Ao.singular : Ao.oneOfMultiple))
+              : ((a = Mo.plural), (t = i ? Ao.plural : Ao.someOfMultiple)),
+            ''.concat(t, ' ').concat(a, ' ').concat(ko)
           )
         },
         Do = B.a.c1bf53b0,
-        Po = B.a.bb8170da,
-        Oo = B.a.dad5a4b8,
-        Lo = B.a.e65aed64,
-        Fo = B.a.bc2ceaf2,
-        No = B.a.d8222374,
-        Bo = B.a.j890123a,
-        Vo = B.a.bb01231c,
-        jo = B.a.d4ab68e2,
-        zo = B.a.d8af8a4c,
-        Ho = B.a.d09d4c05,
-        Uo = B.a.i2209530,
-        Wo = B.a.bf9b89e4,
-        Go = B.a.f277e949,
-        qo = B.a.b551cd22,
-        Ko = B.a.f026a7fa,
-        Qo = B.a.a5d4fda0,
-        Xo = B.a.ib067d6a,
-        Yo = E.canUseDOM && document.documentElement && 'scrollBehavior' in document.documentElement.style,
-        Zo = { element: 'alt_text_prompt' },
-        Jo = { component: 'article_nudge' },
-        $o = { viewType: 'send_tweet' },
-        es = Object.freeze({ Original: 'original', Reply: 'reply', Quote: 'quote', Thread: 'thread' }),
-        ts = (function (e) {
-          g()(n, e)
-          var t = y()(n)
-          function n(e, a) {
+        Oo = B.a.bb8170da,
+        Lo = B.a.dad5a4b8,
+        Fo = B.a.e65aed64,
+        No = B.a.bc2ceaf2,
+        Bo = B.a.d8222374,
+        Vo = B.a.j890123a,
+        jo = B.a.bb01231c,
+        zo = B.a.d4ab68e2,
+        Ho = B.a.d8af8a4c,
+        Uo = B.a.d09d4c05,
+        Wo = B.a.i2209530,
+        Go = B.a.bf9b89e4,
+        qo = B.a.f277e949,
+        Ko = B.a.b551cd22,
+        Qo = B.a.f026a7fa,
+        Xo = B.a.a5d4fda0,
+        Yo = B.a.ib067d6a,
+        Zo = E.canUseDOM && document.documentElement && 'scrollBehavior' in document.documentElement.style,
+        Jo = { element: 'alt_text_prompt' },
+        $o = { component: 'article_nudge' },
+        es = { viewType: 'send_tweet' },
+        ts = Object.freeze({ Original: 'original', Reply: 'reply', Quote: 'quote', Thread: 'thread' }),
+        as = (function (e) {
+          g()(a, e)
+          var t = y()(a)
+          function a(e, n) {
             var i, r, s
-            d()(this, n),
-              (s = t.call(this, e, a)),
+            d()(this, a),
+              (s = t.call(this, e, n)),
               _()(h()(s), '_getParentKey', function () {
                 var e = s.props,
                   t = e.isInline
@@ -5420,9 +5422,9 @@
               _()(h()(s), '_syncTexts', function () {
                 var e = s.props.composerData,
                   t = s.state.textMap
-                e.forEach(function (e, n) {
-                  var a = t[e.key]
-                  'string' == typeof a && a !== e.text && s._updateSingleComposer({ text: a }, n)
+                e.forEach(function (e, a) {
+                  var n = t[e.key]
+                  'string' == typeof n && n !== e.text && s._updateSingleComposer({ text: n }, a)
                 })
               }),
               _()(h()(s), '_hasGif', function (e) {
@@ -5452,24 +5454,24 @@
               _()(h()(s), '_handleDeletePreviewTweet', function () {
                 var e = s.props,
                   t = e.deletePreviewTweet,
-                  n = e.previewTweetId
-                n && t(n)
+                  a = e.previewTweetId
+                a && t(a)
               }),
               _()(h()(s), '_handleAnimateComplete', function () {
                 var e = s.props,
                   t = e.activeComposerIndex,
-                  n = e.onHandleAppBarHeight,
-                  a = br.a.findDOMNode(s._composerRefs[t])
-                if (a instanceof window.Element) {
-                  var i = a.getBoundingClientRect(),
+                  a = e.onHandleAppBarHeight,
+                  n = _r.a.findDOMNode(s._composerRefs[t])
+                if (n instanceof window.Element) {
+                  var i = n.getBoundingClientRect(),
                     r = i.bottom,
                     o = i.top,
                     l = Math.max(o, window.scrollY)
                   if (l < window.pageYOffset || r > window.innerHeight) {
-                    var c = n ? l - n() - 14 : l - 14,
+                    var c = a ? l - a() - 14 : l - 14,
                       d = Math.max(c, 0)
                     window.requestAnimationFrame(function () {
-                      Yo ? window.scrollTo({ top: d, left: 0, behavior: 'smooth' }) : window.scrollTo(0, d)
+                      Zo ? window.scrollTo({ top: d, left: 0, behavior: 'smooth' }) : window.scrollTo(0, d)
                     })
                   }
                 }
@@ -5477,17 +5479,17 @@
               _()(h()(s), '_handleFetchTweetIfNeeded', function () {
                 var e = s.props,
                   t = e.createLocalApiErrorHandler,
-                  n = e.fetchTweetIfNeeded,
-                  a = e.inReplyToStatus,
+                  a = e.fetchTweetIfNeeded,
+                  n = e.inReplyToStatus,
                   i = e.inReplyToStatusId,
                   r = e.quotedStatus,
                   o = e.quotedStatusId
-                !a && i && n(i).catch(t(pr.a)), !r && o && n(o).catch(t(pr.a))
+                !n && i && a(i).catch(t(hr.a)), !r && o && a(o).catch(t(hr.a))
               }),
               _()(h()(s), '_blockHistory', function (e, t) {
-                var n = s.props,
-                  a = n.audienceControlsValue,
-                  i = n.isInline,
+                var a = s.props,
+                  n = a.audienceControlsValue,
+                  i = a.isInline,
                   r = !i && /unsent/.test(e.pathname),
                   o = !i && !/\/compose\/tweet\/?$/.test(e.pathname)
                 return s.shouldShowDiscardConfirmation && 'POP' === t && o
@@ -5498,7 +5500,7 @@
                     : (s._resetDraft(), !0)
                   : s.shouldShowBackgroundSendConfirmation && 'POP' === t && o
                   ? (s._cancelAllMediaUploads(), !1)
-                  : !('POP' === t && o && s._areComposersEmptyOrUnchanged && !Object(Vt.a)(a)) || (s._resetDraft(), !0)
+                  : !('POP' === t && o && s._areComposersEmptyOrUnchanged && !Object(Vt.a)(n)) || (s._resetDraft(), !0)
               }),
               _()(h()(s), '_getKeyCommandHandlers', function () {
                 return s.state.typeaheadActive ? s._keyCommandHandlersForActiveTypeahead : s._keyCommandHandlers
@@ -5509,7 +5511,7 @@
                   s._areComposersValid())
                 )
                   return s.shouldShowAltTextPrompt
-                    ? (s.setState({ showAltTextPrompt: !0 }), void s._scribe(l()(l()({}, Zo), {}, { action: 'show' })))
+                    ? (s.setState({ showAltTextPrompt: !0 }), void s._scribe(l()(l()({}, Jo), {}, { action: 'show' })))
                     : s._handleTweetOrRetweet()
               }),
               _()(h()(s), '_handleTweetOrRetweet', function () {
@@ -5518,17 +5520,17 @@
               _()(h()(s), '_renderReplyContext', function () {
                 var e = s.props,
                   t = e.activeUser,
-                  n = e.excludedRecipients,
-                  a = e.inReplyToStatus,
+                  a = e.excludedRecipients,
+                  n = e.inReplyToStatus,
                   i = e.isInline,
                   r = e.isSelfThreadReply,
                   o = e.selectedCommunityName
-                if (a && s._shouldBeExpanded())
+                if (n && s._shouldBeExpanded())
                   return T.a.createElement(Ci, {
                     communityName: o,
-                    excludedRecipients: n,
-                    inReplyToStatus: a,
-                    key: n.join(),
+                    excludedRecipients: a,
+                    inReplyToStatus: n,
+                    key: a.join(),
                     loggedInUserId: t ? t.id_str : void 0,
                     onPress: s._handleViewRecipients,
                     shouldDisplayRepliesText: !r,
@@ -5538,24 +5540,24 @@
               _()(h()(s), '_renderAltTextPrompt', function () {
                 var e = s._getAltTextMetadata(),
                   t = e.numberOfDescriptionsMissing,
-                  n = e.numberOfImages
-                return T.a.createElement(po.a, {
-                  Icon: hr.a,
-                  cancelButtonLabel: Po,
+                  a = e.numberOfImages
+                return T.a.createElement(ho.a, {
+                  Icon: fr.a,
+                  cancelButtonLabel: Oo,
                   confirmButtonLabel: Do({ numOfDescriptions: t }),
-                  headline: Io,
+                  headline: Ro,
                   onCancel: s._handleIgnoreAltTextPrompt,
                   onConfirm: s._handleAcceptAltTextPrompt,
                   onMaskClick: s._handleCancelAltTextPrompt,
-                  text: ko({ numberOfDescriptionsMissing: t, numberOfImages: n }),
+                  text: Po({ numberOfDescriptionsMissing: t, numberOfImages: a }),
                 })
               }),
               _()(h()(s), '_renderToxicReplyNudge', function () {
                 var e = s._getSingleComposerDataWithLatestText(s.props.composerData[0]),
                   t = e.text,
-                  n = e.media
-                return T.a.createElement(uo, {
-                  media: n,
+                  a = e.media
+                return T.a.createElement(mo, {
+                  media: a,
                   nudgeId: s.state.nudgeId,
                   onDeleteTweet: s._handleReplyNudgeDeleteTweet,
                   onDismiss: s._handleReplyNudgeDismiss,
@@ -5567,16 +5569,16 @@
               _()(h()(s), '_handleAddComposer', function () {
                 var e = s.props,
                   t = e.addComposer,
-                  n = e.copyDataFromInlineComposerToModalComposer,
-                  a = e.isInline,
+                  a = e.copyDataFromInlineComposerToModalComposer,
+                  n = e.isInline,
                   i = e.parentTweetId
-                s.isInlineReply ? n(i) : a && n(Si.a.homeTimeline), t()
+                s.isInlineReply ? a(i) : n && a(Si.a.homeTimeline), t()
               }),
               _()(
                 h()(s),
                 '_makeAddComposerLink',
-                Object(qt.a)(function (e, t, n) {
-                  return Object(wo.c)({ isInline: e, isSelfThreadReply: t, parentTweetId: n })
+                Object(qt.a)(function (e, t, a) {
+                  return Object(xo.c)({ isInline: e, isSelfThreadReply: t, parentTweetId: a })
                 }),
               ),
               _()(h()(s), '_handleReplyNudgeDeleteTweet', function () {
@@ -5600,37 +5602,37 @@
                   e ? Object(jt.h)(e) && s._handleScheduleTweet() : s._checkToxicReplyAndSendTweet()
               }),
               _()(h()(s), '_handleTweetError', function (e, t) {
-                return function (n) {
-                  var a = s.props,
-                    i = a.analytics,
-                    r = a.createLocalApiErrorHandler
-                  if (Object(xo.d)(n) && n.code === gr.b.CANCELED) return i.scribeAction(e), Promise.resolve()
-                  var o = Object(xo.b)(n)
+                return function (a) {
+                  var n = s.props,
+                    i = n.analytics,
+                    r = n.createLocalApiErrorHandler
+                  if (Object(Eo.d)(a) && a.code === vr.b.CANCELED) return i.scribeAction(e), Promise.resolve()
+                  var o = Object(Eo.b)(a)
                   if (o) return s.setState({ errorMessage: o }), Promise.resolve()
-                  var c = t || Object(ur.a)(void 0, !1)
-                  r(l()({}, c))(n)
-                  var d = n instanceof x.a && (null == t ? void 0 : t[n.errors[0].code])
-                  s.setState({ errorMessage: { text: d ? d.toast.text : Qo } })
+                  var c = t || Object(mr.a)(void 0, !1)
+                  r(l()({}, c))(a)
+                  var d = a instanceof x.a && (null == t ? void 0 : t[a.errors[0].code])
+                  s.setState({ errorMessage: { text: d ? d.toast.text : Xo } })
                 }
               }),
               _()(h()(s), '_handleScheduleTweet', function () {
                 var e = s.props,
                   t = e.addToast,
-                  n = e.composerData,
-                  a = e.excludedRecipients,
+                  a = e.composerData,
+                  n = e.excludedRecipients,
                   i = e.inReplyToStatus,
                   r = e.schedule,
-                  o = s._getSingleComposerDataWithLatestText(n[0])
-                r({ excludedRecipients: a, inReplyToStatus: i, scheduleData: o })
+                  o = s._getSingleComposerDataWithLatestText(a[0])
+                r({ excludedRecipients: n, inReplyToStatus: i, scheduleData: o })
                   .then(function (e) {
                     s.setState({ tweetsSentOrScheduled: !0 })
-                    var a = Object(jt.c)(o.scheduledFor)
-                    if (a) {
-                      var i = Object(jt.b)(a),
-                        r = Object(jt.i)(a),
-                        c = qo({ scheduleDate: i, scheduleTime: r })
-                      t({ text: c, action: { label: Go, link: '/compose/tweet/unsent/scheduled' } }),
-                        s._scribeTweetSent(n[0], l()(l()({}, e), {}, { id_str: e.scheduled_id_str }), {
+                    var n = Object(jt.c)(o.scheduledFor)
+                    if (n) {
+                      var i = Object(jt.b)(n),
+                        r = Object(jt.i)(n),
+                        c = Ko({ scheduleDate: i, scheduleTime: r })
+                      t({ text: c, action: { label: qo, link: '/compose/tweet/unsent/scheduled' } }),
+                        s._scribeTweetSent(a[0], l()(l()({}, e), {}, { id_str: e.scheduled_id_str }), {
                           isScheduled: !0,
                         })
                     }
@@ -5641,49 +5643,49 @@
               _()(h()(s), '_handleDraftTweet', function () {
                 var e = s.props,
                   t = e.addToast,
-                  n = e.composerData
+                  a = e.composerData
                 ;(0, e.draftTweet)({
                   excludedRecipients: e.excludedRecipients,
                   inReplyToStatus: e.inReplyToStatus,
-                  draftData: s._getSingleComposerDataWithLatestText(n[0]),
+                  draftData: s._getSingleComposerDataWithLatestText(a[0]),
                 })
                   .then(function (e) {
                     s.setState({ showDiscardTweetConfirmation: !1 }),
-                      t({ text: Wo, action: { label: Go, link: '/compose/tweet/unsent/drafts' } }),
-                      s._scribeTweetSent(n[0], l()(l()({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
+                      t({ text: Go, action: { label: qo, link: '/compose/tweet/unsent/drafts' } }),
+                      s._scribeTweetSent(a[0], l()(l()({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
                       s._updateConvoCardState(),
                       s._close()
                   })
-                  .catch(s._handleTweetError('draft_tweet_cancel', Tr.a))
+                  .catch(s._handleTweetError('draft_tweet_cancel', wr.a))
               }),
               _()(h()(s), '_checkToxicReply', function () {
                 var e = s.props,
                   t = e.checkTweetForNudge,
-                  n = e.composerData,
-                  a = e.inReplyToStatus,
+                  a = e.composerData,
+                  n = e.inReplyToStatus,
                   i = e.inReplyToStatusId,
                   r = e.parentTweetId,
                   o = t(
-                    s._getSingleComposerDataWithLatestText(n[0]).text,
+                    s._getSingleComposerDataWithLatestText(a[0]).text,
                     r || i,
-                    null == a ? void 0 : a.conversation_id_str,
+                    null == n ? void 0 : n.conversation_id_str,
                   ).then(function (e) {
-                    var t, n, a, i, r, o, l
+                    var t, a, n, i, r, o, l
                     if (
                       !s.context.featureSwitches
                         .getArrayValue('responsive_web_reply_nudge_supported_languages')
                         .includes(
-                          null === (t = e.create_nudge) || void 0 === t || null === (n = t.nudge) || void 0 === n
+                          null === (t = e.create_nudge) || void 0 === t || null === (a = t.nudge) || void 0 === a
                             ? void 0
-                            : n.proposed_tweet_language,
+                            : a.proposed_tweet_language,
                         )
                     )
                       return !1
                     var c =
                         null == e ||
-                        null === (a = e.create_nudge) ||
-                        void 0 === a ||
-                        null === (i = a.nudge) ||
+                        null === (n = e.create_nudge) ||
+                        void 0 === n ||
+                        null === (i = n.nudge) ||
                         void 0 === i ||
                         null === (r = i.nudge_type) ||
                         void 0 === r
@@ -5717,15 +5719,15 @@
               _()(h()(s), '_checkToxicReplyAndSendTweet', function () {
                 var e = s.props,
                   t = e.composerData,
-                  n = e.isSelfThreadReply,
-                  a = s.state.nudgeId
+                  a = e.isSelfThreadReply,
+                  n = s.state.nudgeId
                 if (
                   !(
                     !s._getSingleComposerDataWithLatestText(t[0]).scheduledFor &&
                     s.isReply &&
-                    !n &&
+                    !a &&
                     s.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled') &&
-                    !a
+                    !n
                   )
                 )
                   return s._handleSendTweet()
@@ -5737,8 +5739,8 @@
               _()(h()(s), '_handleSendTweet', function () {
                 var e = s.props,
                   t = e.activeUser,
-                  n = e.addToast,
-                  a = e.analytics,
+                  a = e.addToast,
+                  n = e.analytics,
                   i = e.audienceControlsValue,
                   r = e.composeSemanticCoreId,
                   o = e.excludedRecipients,
@@ -5763,24 +5765,24 @@
                 if (x) {
                   var E = Object(jt.b)(x),
                     I = Object(jt.i)(x),
-                    R = qo({ scheduleDate: E, scheduleTime: I })
-                  return n({ text: R, action: { label: Go, link: '' } }), void s._close()
+                    R = Ko({ scheduleDate: E, scheduleTime: I })
+                  return a({ text: R, action: { label: qo, link: '' } }), void s._close()
                 }
                 if (
-                  (o.length > 0 && a.scribe({ element: 'mentions', action: 'edited' }),
+                  (o.length > 0 && n.scribe({ element: 'mentions', action: 'edited' }),
                   s._conversationControlsCreationEnabled)
                 )
-                  if ('community' === v) a.scribe({ action: 'send_community_tweet' })
+                  if ('community' === v) n.scribe({ action: 'send_community_tweet' })
                   else if ('by_invitation' === v) {
                     var A = s._getSingleComposerDataWithLatestText(w[0]).text,
                       M = Object(S.d)(A)
-                    a.scribe({
+                    n.scribe({
                       action: M ? 'send_mentioned_tweet_with_mentions' : 'send_mentioned_tweet_without_mentions',
                     })
-                  } else 'followers' === v && a.scribe({ action: 'send_my_followers_tweet' })
+                  } else 'followers' === v && n.scribe({ action: 'send_my_followers_tweet' })
                 var k = (null == u ? void 0 : u.community_id_str) || i.communityIdValue || void 0,
-                  D = k ? '8.31.'.concat(k) : '',
-                  P = r ? (k ? [r, D].join(',') : r) : D
+                  P = k ? '8.31.'.concat(k) : '',
+                  D = r ? (k ? [r, P].join(',') : r) : P
                 g({
                   sendData: w,
                   communityIdValue: k,
@@ -5790,7 +5792,7 @@
                   inReplyToStatus: u,
                   isSelfThreadReply: m,
                   promotedContent: h,
-                  composeSemanticCoreId: P,
+                  composeSemanticCoreId: D,
                   isPreview: T,
                   trustedFriendsValue: C,
                   tweetType: s.tweetType,
@@ -5801,27 +5803,27 @@
                         return s._scribeTweetSent(w[t], e, { hasArticleNudge: c })
                       }),
                       e.length > 1 && s._scribeThreadSent(w, e, 'thread_send_success')
-                    var a = e.length > 1 ? Lo : Oo
+                    var n = e.length > 1 ? Fo : Lo
                     if (k && f) {
                       var i = f,
                         r = e.length
-                      a = So({ numOfTweets: r, communityName: i })
+                      n = Io({ numOfTweets: r, communityName: i })
                     }
                     var o = T && s.isReply,
-                      l = { label: Go, link: void 0, onAction: void 0 }
+                      l = { label: qo, link: void 0, onAction: void 0 }
                     if (o || !T) {
                       var u = o ? e[0].in_reply_to_status_id_str : e[0].id_str
                       l.link = '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '')
-                    } else l.onAction = Object(wo.a)(d, p)
-                    n({ text: T ? Fo : a, action: l }),
+                    } else l.onAction = Object(xo.a)(d, p)
+                    a({ text: T ? No : n, action: l }),
                       s.isInlineReply && s.setState({ focused: !1 }),
                       s._updateConvoCardState(),
                       s._close()
                   })
                   .catch(function (e) {
                     var t,
-                      n = e.sentTweets,
-                      i = void 0 === n ? [] : n,
+                      a = e.sentTweets,
+                      i = void 0 === a ? [] : a,
                       r = Array.isArray(e.errors) && (null === (t = e.errors[0]) || void 0 === t ? void 0 : t.code),
                       o = null == e ? void 0 : e.url,
                       u = null == e ? void 0 : e.status,
@@ -5833,14 +5835,14 @@
                         },
                         { hasArticleNudge: c },
                       ),
-                      (Object(xo.d)(e) && e.code === gr.b.CANCELED) ||
-                        a.scribe({ action: 'send_tweet_failure', data: m }),
+                      (Object(Eo.d)(e) && e.code === vr.b.CANCELED) ||
+                        n.scribe({ action: 'send_tweet_failure', data: m }),
                       w.length > 1 && s._scribeThreadSent(w, i, 'thread_send_failure'),
                       i.length &&
                         d.replace({
                           pathname: p.pathname,
                           state: l()(
-                            l()({}, Object(go.a)(p.state || {}, 'quotedStatus')),
+                            l()({}, Object(vo.a)(p.state || {}, 'quotedStatus')),
                             {},
                             { inReplyToStatusId: i[i.length - 1].id_str, isSelfThreadReply: !0 },
                           ),
@@ -5848,36 +5850,36 @@
                       e)
                     )
                   })
-                  .catch(s._handleTweetError('send_tweet_cancel', Tr.a))
+                  .catch(s._handleTweetError('send_tweet_cancel', wr.a))
               }),
               _()(h()(s), '_setActiveParentKey', function () {
                 ;(0, s.props.setActiveParentKey)(s._getParentKey())
               }),
               _()(h()(s), '_scribeTweetSent', function (e, t) {
-                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                  a = n.hasArticleNudge,
-                  i = void 0 !== a && a,
-                  r = n.isDraftTweet,
+                var a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                  n = a.hasArticleNudge,
+                  i = void 0 !== n && n,
+                  r = a.isDraftTweet,
                   o = void 0 !== r && r,
-                  c = n.isScheduled,
+                  c = a.isScheduled,
                   d = void 0 !== c && c,
                   u = s.state.nudgeId,
                   m = e.scheduledTweetId ? 'schedule_edit_' : 'schedule_',
                   p = e.draftTweetId ? 'draft_edit_' : 'draft_',
                   h = o ? p : d ? m : 'send_',
-                  f = { items: [Cr.a.getTweetItem(t)] },
+                  f = { items: [Tr.a.getTweetItem(t)] },
                   g = e.pollActive && e.pollValid,
                   v = e.media.some(function (e) {
                     var t
                     return !(null === (t = e.mediaMetadata) || void 0 === t || !t.altText)
                   }),
                   y = e.mediaTags.length,
-                  b = Object(vo.a)(
+                  b = Object(yo.a)(
                     e.media
                       .map(function (e) {
                         var t,
-                          n = null === (t = e.mediaMetadata) || void 0 === t ? void 0 : t.sensitiveMediaWarning
-                        return n ? Array.from(n) : void 0
+                          a = null === (t = e.mediaMetadata) || void 0 === t ? void 0 : t.sensitiveMediaWarning
+                        return a ? Array.from(a) : void 0
                       })
                       .filter(Boolean)
                       .flat(),
@@ -5888,7 +5890,7 @@
                   o || !e.draftTweetId || e.scheduledTweetId || s._scribe({ action: ''.concat(h, 'draft_tweet') }, f),
                   s.isQuoteTweet &&
                     (s._scribe({ action: 'retweet_with_comment' }, f),
-                    i && s._scribe(l()(l()({}, Jo), {}, { element: 'result', action: 'retweet_with_comment' }), f)),
+                    i && s._scribe(l()(l()({}, $o), {}, { element: 'result', action: 'retweet_with_comment' }), f)),
                   s.isReply && s._scribe({ component: _, action: ''.concat(h, 'reply') }, f),
                   g && s._scribe({ action: ''.concat(h, 'poll_tweet') }, f),
                   s._hasPhoto(e) &&
@@ -5916,7 +5918,7 @@
                   u || o || !s.isReply || d || s._scribe(l()(l()({}, T), {}, { action: 'sent_no_nudge' })),
                   e.gifMetadata)
                 ) {
-                  var w = t.id_str && Cr.a.getGifSearchItemForTweet(t.id_str, e.gifMetadata)
+                  var w = t.id_str && Tr.a.getGifSearchItemForTweet(t.id_str, e.gifMetadata)
                   s._scribe({ element: 'remote', action: ''.concat(h, 'gif_tweet') }, { items: w ? [w] : [] })
                   var x = e.media.some(function (e) {
                     var t
@@ -5930,28 +5932,28 @@
                     y && s._scribe({ action: ''.concat(h, 'gif_tweet_with_tags') }, f)
                 } else s._hasGif(e) && (s._scribe({ element: 'local', action: ''.concat(h, 'gif_tweet') }, f), v && s._scribe({ element: 'local', action: ''.concat(h, 'gif_tweet_with_alt_text') }, f))
               }),
-              _()(h()(s), '_scribeThreadSent', function (e, t, n) {
-                var a = s.props.inReplyToStatus,
-                  i = { items: [Cr.a.getSendThreadItem(e, t.length, !!a)] }
-                s._scribe({ action: n }, i)
+              _()(h()(s), '_scribeThreadSent', function (e, t, a) {
+                var n = s.props.inReplyToStatus,
+                  i = { items: [Tr.a.getSendThreadItem(e, t.length, !!n)] }
+                s._scribe({ action: a }, i)
               }),
               _()(h()(s), '_scribeRetweet', function (e) {
                 var t = s.props.hasArticleNudge,
-                  n = { items: [Cr.a.getTweetItem(e)] }
-                s._scribe({ action: 'retweet' }, n),
-                  t && s._scribe(l()(l()({}, Jo), {}, { element: 'result', action: 'retweet' }), n)
+                  a = { items: [Tr.a.getTweetItem(e)] }
+                s._scribe({ action: 'retweet' }, a),
+                  t && s._scribe(l()(l()({}, $o), {}, { element: 'result', action: 'retweet' }), a)
               }),
               _()(h()(s), '_handleRetweet', function () {
                 var e = s.props,
                   t = e.composerData,
-                  n = e.createLocalApiErrorHandler,
-                  a = e.retweet,
+                  a = e.createLocalApiErrorHandler,
+                  n = e.retweet,
                   i = t[0].quotedStatus
                 i &&
                   (s._scribeRetweet(i),
-                  a(i.id_str, {}).then(function (e) {
+                  n(i.id_str, {}).then(function (e) {
                     s.setState({ tweetsSentOrScheduled: !0 }), s._close()
-                  }, n(_r.a)))
+                  }, a(Cr.a)))
               }),
               _()(h()(s), 'handleDismissComposer', function () {
                 s.shouldShowDiscardConfirmation
@@ -5970,12 +5972,12 @@
               _()(h()(s), '_handleConfirmDiscardTweet', function () {
                 var e = s.props,
                   t = e.analytics,
-                  n = e.hasArticleNudge,
-                  a = s._canSaveDraft ? 'draft' : 'send'
+                  a = e.hasArticleNudge,
+                  n = s._canSaveDraft ? 'draft' : 'send'
                 s.setState({ showDiscardTweetConfirmation: !1 }),
                   s._close(),
-                  t.scribeAction(''.concat(a, '_tweet_discard')),
-                  n && s._scribe(l()(l()({}, Jo), {}, { element: 'result', action: 'cancel' })),
+                  t.scribeAction(''.concat(n, '_tweet_discard')),
+                  a && s._scribe(l()(l()({}, $o), {}, { element: 'result', action: 'cancel' })),
                   s.state.nudgeId &&
                     s._scribe(
                       { page: 'nudge', section: 'dialog', element: 'result', action: 'cancel' },
@@ -5992,16 +5994,16 @@
                 var e = s.props.history,
                   t = s._getAltTextMetadata().noDescriptionImageIDs
                 t[0] &&
-                  (s._scribe(l()(l()({}, Zo), {}, { action: 'accepted' })),
-                  e.push('/compose/tweet/media', { mediaId: t[0], tab: fr.a.altText, hideTabs: !0, showAllMedia: !0 }))
+                  (s._scribe(l()(l()({}, Jo), {}, { action: 'accepted' })),
+                  e.push('/compose/tweet/media', { mediaId: t[0], tab: gr.a.altText, hideTabs: !0, showAllMedia: !0 }))
               }),
               _()(h()(s), '_handleIgnoreAltTextPrompt', function () {
-                s._scribe(l()(l()({}, Zo), {}, { action: 'declined' })),
+                s._scribe(l()(l()({}, Jo), {}, { action: 'declined' })),
                   s.setState({ showAltTextPrompt: !1 }),
                   s._handleTweetOrRetweet()
               }),
               _()(h()(s), '_handleCancelAltTextPrompt', function () {
-                s._scribe(l()(l()({}, Zo), {}, { action: 'cancel' })),
+                s._scribe(l()(l()({}, Jo), {}, { action: 'cancel' })),
                   s.setState({ showAltTextPrompt: !1 }, function () {
                     s._restoreFocusToActiveComposer()
                   })
@@ -6013,14 +6015,14 @@
               _()(h()(s), '_close', function () {
                 var e = s.props,
                   t = e.history,
-                  n = e.isSending,
-                  a = e.onCloseComposer
-                n || s._resetDraft(),
+                  a = e.isSending,
+                  n = e.onCloseComposer
+                a || s._resetDraft(),
                   s.state.navigatingToOutbox
                     ? s._canSaveDraft
                       ? t.push('/compose/tweet/unsent/drafts')
                       : t.push('/compose/tweet/unsent/scheduled')
-                    : a && a()
+                    : n && n()
               }),
               _()(h()(s), '_handleComposerFocus', function (e) {
                 s._composerRefs[e]
@@ -6040,39 +6042,39 @@
               _()(h()(s), '_handleRemoveComposer', function () {
                 var e = s.props,
                   t = e.activeComposerIndex,
-                  n = e.composerData,
-                  a = e.history,
+                  a = e.composerData,
+                  n = e.history,
                   i = e.location,
                   r = e.removeComposer
                 0 === t &&
-                  n[0].quotedStatus &&
-                  a.replace({ pathname: i.pathname, state: Object(go.a)(i.state || {}, 'quotedStatus') }),
+                  a[0].quotedStatus &&
+                  n.replace({ pathname: i.pathname, state: Object(vo.a)(i.state || {}, 'quotedStatus') }),
                   r(),
                   setTimeout(s._restoreFocusToActiveComposer)
               }),
               _()(h()(s), '_handleViewRecipients', function () {
                 var e = s.props,
                   t = e.excludedRecipients,
-                  n = e.history,
-                  a = e.inReplyToStatus
+                  a = e.history,
+                  n = e.inReplyToStatus
                 s._setActiveParentKey(),
-                  n.push({
+                  a.push({
                     pathname: '/compose/tweet/recipients',
-                    state: { excludedRecipients: t, inReplyToStatus: a },
+                    state: { excludedRecipients: t, inReplyToStatus: n },
                   })
               }),
               _()(h()(s), '_handleTextChange', function (e, t) {
-                var n = s.state.textMap,
-                  a = s.props,
-                  i = a.activeComposerIndex,
-                  r = a.isInline,
-                  o = a.setValidity
+                var a = s.state.textMap,
+                  n = s.props,
+                  i = n.activeComposerIndex,
+                  r = n.isInline,
+                  o = n.setValidity
                 if (
-                  (s.setState({ textMap: l()(l()({}, n), {}, _()({}, t, e)) }, function () {
+                  (s.setState({ textMap: l()(l()({}, a), {}, _()({}, t, e)) }, function () {
                     o && o(s._areComposersValid())
                   }),
                   s.setState({ errorMessage: void 0 }),
-                  mo.b.isIOS())
+                  po.b.isIOS())
                 ) {
                   var c = r ? 0 : i
                   s._updateSingleComposer({ text: e }, c)
@@ -6083,11 +6085,11 @@
                 '_handleTextOnBlur',
                 Object(qt.a)(function (e, t) {
                   return function () {
-                    var n = s.state,
-                      a = n.textMap,
-                      i = n.tweetsSentOrScheduled,
+                    var a = s.state,
+                      n = a.textMap,
+                      i = a.tweetsSentOrScheduled,
                       r = s.props.composerData,
-                      o = a[e],
+                      o = n[e],
                       l = r.some(function (t) {
                         return t.key === e
                       })
@@ -6097,8 +6099,8 @@
               ),
               _()(h()(s), '_updateAudienceControlsValue', function (e) {
                 var t = s.props,
-                  n = t.composerData,
-                  a = t.updateAudienceControlsValue,
+                  a = t.composerData,
+                  n = t.updateAudienceControlsValue,
                   i = s.state.errorMessage
                 switch (e._type) {
                   case 'conversation_controls':
@@ -6106,40 +6108,40 @@
                     break
                   case 'community_members':
                     if (!s._isCommunitiesEnabled) return
-                    n[0].pollActive &&
-                      (s._updateSingleComposer({ pollActive: !1 }, 0), s.setState({ errorMessage: { text: Eo } })),
-                      (null == i ? void 0 : i.text) === Eo && s.setState({ errorMessage: void 0 })
+                    a[0].pollActive &&
+                      (s._updateSingleComposer({ pollActive: !1 }, 0), s.setState({ errorMessage: { text: So } })),
+                      (null == i ? void 0 : i.text) === So && s.setState({ errorMessage: void 0 })
                 }
-                a(e, s._getParentKey())
+                n(e, s._getParentKey())
               }),
               _()(h()(s), '_renderProgressBar', function () {
                 var e = s.props,
                   t = e.isSending,
-                  n = e.sendingProgress
-                return T.a.createElement(ho.a, { progress: t ? Math.max(n, 0.02) : 0, style: ns.progressBar })
+                  a = e.sendingProgress
+                return T.a.createElement(fo.a, { progress: t ? Math.max(a, 0.02) : 0, style: ns.progressBar })
               }),
               _()(h()(s), '_updateConvoCardState', function () {
                 var e = s.props,
                   t = e.convoCardData,
-                  n = e.updateConvoCardState
+                  a = e.updateConvoCardState
                 if (t) {
-                  var a = t.cardId,
+                  var n = t.cardId,
                     i = t.nextState
-                  i && a && n(a, { cardState: i })
+                  i && n && a(n, { cardState: i })
                 }
               }),
               _()(h()(s), '_attachExternalMedia', function (e) {
                 return function (t) {
                   return Promise.all(
                     t.map(function (e) {
-                      return Object(mr.a)(e)
+                      return Object(pr.a)(e)
                     }),
                   ).then(s._handleAddMediaFiles(e))
                 }
               }),
               _()(h()(s), '_handleAddMediaFiles', function (e) {
                 return function (t) {
-                  var a,
+                  var n,
                     i,
                     r = s.props,
                     o = r.addMedia,
@@ -6151,21 +6153,21 @@
                     p = r.removeMediaUpload,
                     f = c[e],
                     g = f.pollActive,
-                    v = Object(Co.e)(
-                      null === (a = h()(s)) || void 0 === a || null === (i = a.context) || void 0 === i
+                    v = Object(To.e)(
+                      null === (n = h()(s)) || void 0 === n || null === (i = n.context) || void 0 === i
                         ? void 0
                         : i.userClaims,
                     )
                   g ||
-                    o(t, { location: Co.d.Tweet, canUploadLongVideo: v }).then(function (t) {
-                      var a = t.map(function (e) {
+                    o(t, { location: To.d.Tweet, canUploadLongVideo: v }).then(function (t) {
+                      var n = t.map(function (e) {
                         return e.id
                       })
-                      if (n._validateMedia(f, t)) {
+                      if (a._validateMedia(f, t)) {
                         var i = f.media.map(function (e) {
                           return e.id
                         })
-                        s._updateSingleComposer({ mediaIds: Object(yo.a)(i.concat(a)) }, e),
+                        s._updateSingleComposer({ mediaIds: Object(bo.a)(i.concat(n)) }, e),
                           m(t, { onFailure: s._handleMediaRemoveFactory(e) }).then(function (e) {
                             d ||
                               u(
@@ -6174,7 +6176,7 @@
                                 }),
                               )
                           })
-                      } else l({ text: Xo }), p(a)
+                      } else l({ text: Yo }), p(n)
                     })
                 }
               }),
@@ -6184,16 +6186,16 @@
                 }
               }),
               _()(h()(s), '_handleMediaRemove', function (e, t) {
-                var n = s.props,
-                  a = n.composerData,
-                  i = n.removeMediaUpload,
-                  r = a[e],
+                var a = s.props,
+                  n = a.composerData,
+                  i = a.removeMediaUpload,
+                  r = n[e],
                   o = r.media,
                   l = r.mediaTags,
                   c = (function (e) {
-                    for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), a = 1; a < t; a++)
-                      n[a - 1] = arguments[a]
-                    return Object(bo.a)(e, n)
+                    for (var t = arguments.length, a = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++)
+                      a[n - 1] = arguments[n]
+                    return Object(_o.a)(e, a)
                   })(
                     o.map(function (e) {
                       return e.id
@@ -6213,21 +6215,21 @@
               _()(h()(s), '_shouldBeExpanded', function () {
                 var e = s.props,
                   t = e.composerData,
-                  n = e.parentTweetId
+                  a = e.parentTweetId
                 if (s.state.focused) return !0
-                var a = !Object(Vt.c)(s._getSingleComposerDataWithLatestText(t[0]))
-                return !n || a
+                var n = !Object(Vt.c)(s._getSingleComposerDataWithLatestText(t[0]))
+                return !a || n
               }),
               _()(h()(s), '_areComposersValid', function () {
                 var e = s.props,
                   t = e.audienceControlsValue._type,
-                  n = e.composerData,
-                  a = n[0].quotedStatus,
-                  i = null == a ? void 0 : a.community_id_str,
+                  a = e.composerData,
+                  n = a[0].quotedStatus,
+                  i = null == n ? void 0 : n.community_id_str,
                   r = 'community_members' === t
                 return (
                   (s.isRetweet && !i && !r) ||
-                  n.every(function (e) {
+                  a.every(function (e) {
                     return Object(Vt.e)(s._getSingleComposerDataWithLatestText(e))
                   })
                 )
@@ -6235,9 +6237,9 @@
               _()(h()(s), '_areComposersEmptyOrUnchanged', function () {
                 var e = s.props,
                   t = e.composerData,
-                  n = e.prepopulatedText
+                  a = e.prepopulatedText
                 return t.every(function (e) {
-                  return Object(Vt.d)(s._getSingleComposerDataWithLatestText(e), n)
+                  return Object(Vt.d)(s._getSingleComposerDataWithLatestText(e), a)
                 })
               }),
               _()(h()(s), '_getAltTextMetadata', function () {
@@ -6245,12 +6247,12 @@
                   t = { numberOfDescriptionsMissing: 0, numberOfImages: 0, noDescriptionImageIDs: [] }
                 return (
                   e.forEach(function (e) {
-                    var n,
-                      a = (e.media || []).filter(function (e) {
+                    var a,
+                      n = (e.media || []).filter(function (e) {
                         var t = e.mediaFile
                         return (null == t ? void 0 : t.isImage) || (null == t ? void 0 : t.isGif)
                       }),
-                      i = a
+                      i = n
                         .filter(function (e) {
                           var t = e.mediaMetadata
                           return !(null != t && t.altText)
@@ -6258,7 +6260,7 @@
                         .map(function (e) {
                           return e.id
                         })
-                    ;(t.numberOfImages += a.length), (n = t.noDescriptionImageIDs).push.apply(n, o()(i))
+                    ;(t.numberOfImages += n.length), (a = t.noDescriptionImageIDs).push.apply(a, o()(i))
                   }),
                   (t.numberOfDescriptionsMissing = t.noDescriptionImageIDs.length),
                   t
@@ -6286,10 +6288,10 @@
                 s.context.featureSwitches.getValueWithoutScribeImpression(
                   'conversation_controls_limited_replies_creation_enabled',
                 )),
-              (s._throttledSyncTexts = Object(Rn.a)(s._syncTexts, 1e3, { leading: !0, trailing: !1 })),
+              (s._throttledSyncTexts = Object(Ia.a)(s._syncTexts, 1e3, { leading: !0, trailing: !1 })),
               (s._keyCommandHandlers =
-                ((r = {}), _()(r, To.b, s.handleTweetOrRetweet), _()(r, To.a, s.handleDismissComposer), r)),
-              (s._keyCommandHandlersForActiveTypeahead = _()({}, To.b, s.handleTweetOrRetweet)),
+                ((r = {}), _()(r, wo.b, s.handleTweetOrRetweet), _()(r, wo.a, s.handleDismissComposer), r)),
+              (s._keyCommandHandlersForActiveTypeahead = _()({}, wo.b, s.handleTweetOrRetweet)),
               (s._isAltTextNudgeEnabled =
                 !0 ===
                 s.context.featureSwitches.getValueWithoutScribeImpression('responsive_web_alt_text_nudges_enabled')),
@@ -6298,7 +6300,7 @@
             )
           }
           return (
-            m()(n, [
+            m()(a, [
               {
                 key: 'UNSAFE_componentWillMount',
                 value: function () {
@@ -6311,63 +6313,65 @@
                 value: function () {
                   var e = this.props,
                     t = e.convoCardData,
-                    n = e.externalMedia,
-                    a = e.externalMediaFiles,
-                    i = e.history,
-                    r = e.isInline,
-                    o = e.isIntentRoute,
-                    s = e.location,
-                    c = e.prepopulatedText,
-                    d = e.setValidity
+                    a = e.externalMedia,
+                    n = e.externalMediaFiles,
+                    i = e.fetchAltTextPromptPreferenceIfNeeded,
+                    r = e.history,
+                    o = e.isInline,
+                    s = e.isIntentRoute,
+                    c = e.location,
+                    d = e.prepopulatedText,
+                    u = e.setValidity
                   if (
                     ((this._unblockHistory = this.props.history.block(this._blockHistory)),
-                    n.length > 0 && this._attachExternalMedia(0)(n),
-                    a.length > 0 && this._handleAddMediaFiles(0)(a),
+                    a.length > 0 && this._attachExternalMedia(0)(a),
+                    n.length > 0 && this._handleAddMediaFiles(0)(n),
                     this._handleFetchTweetIfNeeded(),
                     this._handleDeletePreviewTweet(),
-                    c || (t && t.cardUrl))
+                    i(),
+                    d || (t && t.cardUrl))
                   ) {
-                    var u = l()({}, null)
-                    c && (u.text = c), t && t.cardUrl && (u.cardUrl = t.cardUrl), this._updateSingleComposer(u)
+                    var m = l()({}, null)
+                    d && (m.text = d), t && t.cardUrl && (m.cardUrl = t.cardUrl), this._updateSingleComposer(m)
                   }
-                  ;(c || (t && t.cardUrl) || n.length > 0 || a.length > 0) &&
-                    !o &&
-                    i.replace({
-                      query: Object(xi.b)(s.query),
+                  ;(d || (t && t.cardUrl) || a.length > 0 || n.length > 0) &&
+                    !s &&
+                    r.replace({
+                      query: Object(xi.b)(c.query),
                       search: '',
-                      pathname: s.pathname,
-                      state: Object(go.a)(Object(xi.b)(s.state || {}), [
+                      pathname: c.pathname,
+                      state: Object(vo.a)(Object(xi.b)(c.state || {}), [
                         'defaultText',
                         'externalMedia',
                         'externalMediaFiles',
                       ]),
                     }),
-                    d && d(this._areComposersValid()),
-                    r || this._setActiveParentKey(),
+                    u && u(this._areComposersValid()),
+                    o || this._setActiveParentKey(),
                     this.isInlineReply && this._root && (this._height = this._root.getBoundingClientRect().height)
                 },
               },
               {
                 key: 'componentDidUpdate',
                 value: function (e, t) {
-                  var n = this.props,
-                    a = n.addToast,
-                    i = n.composerData,
-                    r = n.copyDataFromInlineComposerToModalComposer,
-                    o = n.externalMedia,
-                    s = n.externalMediaFiles,
-                    l = n.onRef,
-                    c = n.parentTweetId,
-                    d = n.replyPressToggle,
-                    u = n.setValidity
-                  n.windowWidth !== e.windowWidth && this._throttledSyncTexts(),
+                  var a = this.props,
+                    n = a.addToast,
+                    i = a.composerData,
+                    r = a.copyDataFromInlineComposerToModalComposer,
+                    o = a.externalMedia,
+                    s = a.externalMediaFiles,
+                    l = a.onRef,
+                    c = a.parentTweetId,
+                    d = a.replyPressToggle,
+                    u = a.setValidity
+                  a.windowWidth !== e.windowWidth && this._throttledSyncTexts(),
                     e.onRef && e.onRef !== l && e.onRef(void 0),
                     l && l !== e.onRef && l(this),
-                    i.length >= 25 && e.composerData.length < 25 && a({ text: Ko }),
+                    i.length >= 25 && e.composerData.length < 25 && n({ text: Qo }),
                     o.length > 0 && o !== e.externalMedia
                       ? this._attachExternalMedia(0)(o)
                       : s.length > 0 && s !== e.externalMediaFiles && this._handleAddMediaFiles(0)(s),
-                    u && !Object(_o.a)(i, e.composerData) && u && u(this._areComposersValid()),
+                    u && !Object(Co.a)(i, e.composerData) && u && u(this._areComposersValid()),
                     d !== e.replyPressToggle && r(c)
                 },
               },
@@ -6383,47 +6387,47 @@
                 value: function () {
                   var e,
                     t,
-                    n = this,
-                    a = this.props,
-                    r = a.activeUser,
-                    o = a.addToast,
-                    s = a.audienceControlsValue,
-                    l = a.composeHeader,
-                    c = a.composerData,
-                    d = a.customizePropsForSingleComposerItem,
-                    u = a.geoEnabled,
-                    m = a.history,
-                    p = a.inReplyToStatus,
-                    h = a.isInline,
-                    f = a.isModal,
-                    g = a.isSelfThreadReply,
-                    v = a.isSending,
-                    y = a.isSuperFollowsCreator,
-                    b = a.parentTweetId,
-                    _ = a.positionCursorAtBeginning,
-                    C = a.richTextInputContext,
-                    w = a.scheduledFor,
-                    x = a.typeaheadWrapper,
-                    E = a.userLanguage,
-                    S = a.windowWidth,
+                    a = this,
+                    n = this.props,
+                    r = n.activeUser,
+                    o = n.addToast,
+                    s = n.audienceControlsValue,
+                    l = n.composeHeader,
+                    c = n.composerData,
+                    d = n.customizePropsForSingleComposerItem,
+                    u = n.geoEnabled,
+                    m = n.history,
+                    p = n.inReplyToStatus,
+                    h = n.isInline,
+                    f = n.isModal,
+                    g = n.isSelfThreadReply,
+                    v = n.isSending,
+                    y = n.isSuperFollowsCreator,
+                    b = n.parentTweetId,
+                    _ = n.positionCursorAtBeginning,
+                    C = n.richTextInputContext,
+                    w = n.scheduledFor,
+                    x = n.typeaheadWrapper,
+                    E = n.userLanguage,
+                    S = n.windowWidth,
                     I = this.state,
                     R = I.errorMessage,
                     A = I.focused,
                     M = I.shouldDisableButton,
                     k = I.showAltTextPrompt,
-                    D = I.showDiscardTweetConfirmation,
-                    P = I.showToxicReplyNudge,
+                    P = I.showDiscardTweetConfirmation,
+                    D = I.showToxicReplyNudge,
                     O = I.typeaheadActive,
                     L = !f && O,
                     F = h ? 0 : this.props.activeComposerIndex,
                     N = L || h ? [c[F]] : c,
                     B = this._areComposersValid(),
                     V = this.hasNonCompliantQuote && this.isRetweet,
-                    j = h ? W.a : fo.a,
+                    j = h ? W.a : go.a,
                     z = h ? {} : { onAnimateComplete: f ? void 0 : this._handleAnimateComplete },
                     H = M || !B || V || this.isCommunityTweetFromProtectedUser,
-                    U = (h && wr.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet,
-                    G = (h && wr.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet || this.isExclusiveTweet
+                    U = (h && xr.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet,
+                    G = (h && xr.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet || this.isExclusiveTweet
                   return T.a.createElement(
                     W.a,
                     { ref: this._setRootRef, style: !b && ns.root },
@@ -6458,7 +6462,7 @@
                         j,
                         z,
                         N.map(function (e, t) {
-                          var a = Object(jt.h)(e.scheduledFor),
+                          var n = Object(jt.h)(e.scheduledFor),
                             l = c.indexOf(e),
                             I = d(e, t, N),
                             R =
@@ -6466,25 +6470,25 @@
                                 ? T.a.createElement(
                                     q.a,
                                     {
-                                      behavioralEventContext: $o,
+                                      behavioralEventContext: es,
                                       disabled: H,
-                                      onPress: n.handleTweetOrRetweet,
+                                      onPress: a.handleTweetOrRetweet,
                                       size: 'medium',
                                       style: ns.inlineSendButton,
-                                      testID: f ? xr : Er,
+                                      testID: f ? Er : Sr,
                                       type: 'brandFilled',
                                     },
-                                    Object(wo.b)({
+                                    Object(xo.b)({
                                       inReplyToStatus: !!p,
                                       isSelfThreadReply: !!g,
-                                      isQuoteTweet: !!n.isQuoteTweet,
-                                      isRetweet: !!n.isRetweet,
-                                      isScheduled: !!a,
-                                      isThread: n.isThread,
+                                      isQuoteTweet: !!a.isQuoteTweet,
+                                      isRetweet: !!a.isRetweet,
+                                      isScheduled: !!n,
+                                      isThread: a.isThread,
                                     }),
                                   )
                                 : null,
-                            M = n._getSingleComposerDataWithLatestText(e)
+                            M = a._getSingleComposerDataWithLatestText(e)
                           return T.a.createElement(
                             W.a,
                             { key: e.key },
@@ -6492,49 +6496,49 @@
                               li,
                               i()(
                                 {
-                                  addComposerLink: n._makeAddComposerLink(h, g, b),
+                                  addComposerLink: a._makeAddComposerLink(h, g, b),
                                   addToast: o,
                                   additionalToolbarContent: R,
                                   audienceControlsValue: s,
-                                  autoFocus: n.isInlineReply && A,
+                                  autoFocus: a.isInlineReply && A,
                                   data: M,
                                   disableAddTweet: c.length >= 25,
                                   editable: !v && !!r,
-                                  fetchAutotaggedLocationIfNeeded: n._fetchAutotaggedLocationIfNeeded,
+                                  fetchAutotaggedLocationIfNeeded: a._fetchAutotaggedLocationIfNeeded,
                                   geoEnabled: u,
                                   hidePoll: U,
                                   hideScheduling: G,
                                   history: m,
                                   index: l,
                                   isActive: l === F && !v,
-                                  isCommunityTweetFromProtectedUser: n.isCommunityTweetFromProtectedUser,
-                                  isExpanded: 0 !== t || n._shouldBeExpanded(),
+                                  isCommunityTweetFromProtectedUser: a.isCommunityTweetFromProtectedUser,
+                                  isExpanded: 0 !== t || a._shouldBeExpanded(),
                                   isInline: h,
-                                  isInlineReply: n.isInlineReply,
+                                  isInlineReply: a.isInlineReply,
                                   isLast: h || l === c.length - 1,
-                                  isReply: !!p || n.isInlineReply,
+                                  isReply: !!p || a.isInlineReply,
                                   isSelfThreadReply: !!g,
                                   isSuperFollowsCreator: y,
-                                  keyCommandHandlers: n._getKeyCommandHandlers(),
+                                  keyCommandHandlers: a._getKeyCommandHandlers(),
                                   loggedInUser: r,
-                                  onAddComposer: n._handleAddComposer,
-                                  onFilesAdded: n._handleAddMediaFiles(l),
-                                  onFocus: n._handleComposerFocus,
-                                  onRemoveComposer: n._handleRemoveComposer,
-                                  onRemoveMedia: n._handleMediaRemove,
-                                  onTextChange: n._handleTextChange,
-                                  onTextInputBlur: n._handleTextOnBlur(M.key, t),
-                                  onTypeaheadStateChange: n._handleTypeaheadStateChange,
+                                  onAddComposer: a._handleAddComposer,
+                                  onFilesAdded: a._handleAddMediaFiles(l),
+                                  onFocus: a._handleComposerFocus,
+                                  onRemoveComposer: a._handleRemoveComposer,
+                                  onRemoveMedia: a._handleMediaRemove,
+                                  onTextChange: a._handleTextChange,
+                                  onTextInputBlur: a._handleTextOnBlur(M.key, t),
+                                  onTypeaheadStateChange: a._handleTypeaheadStateChange,
                                   positionCursorAtBeginning: !!_,
-                                  ref: n._setComposerRef(l),
+                                  ref: a._setComposerRef(l),
                                   richTextInputContext: C,
                                   scheduledFor: w,
-                                  setActiveParentKey: n._setActiveParentKey,
+                                  setActiveParentKey: a._setActiveParentKey,
                                   twitterTextConfigurationVersion: 'version3',
                                   typeaheadActive: O,
                                   typeaheadWrapper: x,
-                                  updateAudienceControlsValue: n._updateAudienceControlsValue,
-                                  updateSingleComposer: n._updateSingleComposer,
+                                  updateAudienceControlsValue: a._updateAudienceControlsValue,
+                                  updateSingleComposer: a._updateSingleComposer,
                                   userLanguage: E,
                                   windowWidth: S,
                                 },
@@ -6544,28 +6548,28 @@
                           )
                         }),
                       ),
-                      D
+                      P
                         ? this._canSaveDraft
-                          ? T.a.createElement(po.a, {
-                              cancelButtonLabel: jo,
-                              confirmButtonLabel: Uo,
-                              headline: zo,
+                          ? T.a.createElement(ho.a, {
+                              cancelButtonLabel: zo,
+                              confirmButtonLabel: Wo,
+                              headline: Ho,
                               onCancel: this._handleConfirmDiscardTweet,
                               onConfirm: this._handleDraftTweet,
                               onMaskClick: this._handleCancelDiscardTweet,
-                              text: Ho,
+                              text: Uo,
                             })
-                          : T.a.createElement(po.a, {
-                              confirmButtonLabel: jo,
+                          : T.a.createElement(ho.a, {
+                              confirmButtonLabel: zo,
                               confirmButtonType: 'destructiveFilled',
-                              headline: this.isThread ? Bo : No,
+                              headline: this.isThread ? Vo : Bo,
                               onCancel: this._handleCancelDiscardTweet,
                               onConfirm: this._handleConfirmDiscardTweet,
-                              text: Vo,
+                              text: jo,
                             })
                         : null,
                       k ? this._renderAltTextPrompt() : null,
-                      P ? this._renderToxicReplyNudge() : null,
+                      D ? this._renderToxicReplyNudge() : null,
                       T.a.createElement(W.a, { style: v && ns.mask }),
                     ),
                   )
@@ -6594,8 +6598,8 @@
                 get: function () {
                   var e = this.props.composerData,
                     t = 0 === e[0].media.length,
-                    n = this._getSingleComposerDataWithLatestText(e[0]).text
-                  return !this.isThread && e[0].quotedStatus && '' === n && t
+                    a = this._getSingleComposerDataWithLatestText(e[0]).text
+                  return !this.isThread && e[0].quotedStatus && '' === a && t
                 },
               },
               {
@@ -6623,11 +6627,11 @@
                 get: function () {
                   var e = this.props,
                     t = e.composerData,
-                    n = e.isSending,
-                    a = t[0].scheduledTweetId,
+                    a = e.isSending,
+                    n = t[0].scheduledTweetId,
                     i = this.state.showDiscardTweetConfirmation,
                     r = this._areComposersEmptyOrUnchanged()
-                  return !(n || r || i || a)
+                  return !(a || r || i || n)
                 },
               },
               {
@@ -6635,13 +6639,13 @@
                 get: function () {
                   var e = this.props,
                     t = e.composerData,
-                    n = e.isSending,
-                    a = t.some(function (e) {
+                    a = e.isSending,
+                    n = t.some(function (e) {
                       return e.media.some(function (e) {
                         return e.uploading
                       })
                     })
-                  return n && a
+                  return a && n
                 },
               },
               {
@@ -6660,14 +6664,14 @@
                 get: function () {
                   var e = this.props,
                     t = e.composerData,
-                    n = e.isInline
+                    a = e.isInline
                   return !(
                     this.isCommunityTweet ||
                     this.isExclusiveTweet ||
                     this.isThread ||
                     t[0].pollActive ||
                     0 !== t[0].mediaTags.length ||
-                    n
+                    a
                   )
                 },
               },
@@ -6676,8 +6680,8 @@
                 get: function () {
                   var e = this.props,
                     t = e.audienceControlsValue,
-                    n = e.inReplyToStatus
-                  return !!((null != n && n.community_id_str) || 'community_members' === t._type)
+                    a = e.inReplyToStatus
+                  return !!((null != a && a.community_id_str) || 'community_members' === t._type)
                 },
               },
               {
@@ -6714,12 +6718,12 @@
                 key: 'tweetType',
                 get: function () {
                   return this.isQuoteTweet
-                    ? es.Quote
+                    ? ts.Quote
                     : this.isThread
-                    ? es.Thread
+                    ? ts.Thread
                     : this.isReply
-                    ? es.Reply
-                    : es.Original
+                    ? ts.Reply
+                    : ts.Original
                 },
               },
               {
@@ -6727,8 +6731,8 @@
                 get: function () {
                   var e,
                     t,
-                    n,
                     a,
+                    n,
                     i,
                     r,
                     o = this.props.undoTweetSettings,
@@ -6742,12 +6746,12 @@
                         : t.isTrueAndEnabled('subscriptions_feature_1003'),
                     l =
                       null == this ||
-                      null === (n = this.context) ||
-                      void 0 === n ||
-                      null === (a = n.featureSwitches) ||
-                      void 0 === a
+                      null === (a = this.context) ||
+                      void 0 === a ||
+                      null === (n = a.featureSwitches) ||
+                      void 0 === n
                         ? void 0
-                        : a.isTrue('subscriptions_undo_quote_tweets_enabled'),
+                        : n.isTrue('subscriptions_undo_quote_tweets_enabled'),
                     c =
                       null == this ||
                       null === (i = this.context) ||
@@ -6767,11 +6771,11 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(T.a.Component)
-      _()(ts, 'defaultProps', {
-        customizePropsForSingleComposerItem: function (e, t, n) {
+      _()(as, 'defaultProps', {
+        customizePropsForSingleComposerItem: function (e, t, a) {
           return {}
         },
         externalMedia: [],
@@ -6781,12 +6785,12 @@
         positionCursorAtBeginning: !1,
         prepopulatedText: '',
         setValidity: function () {},
-        typeaheadWrapper: vr.a,
+        typeaheadWrapper: yr.a,
       }),
-        _()(ts, 'contextType', I.a),
-        _()(ts, '_validateMedia', function (e, t) {
-          var n = e.media
-          return Object(S.c)(n.concat(t))
+        _()(as, 'contextType', I.a),
+        _()(as, '_validateMedia', function (e, t) {
+          var a = e.media
+          return Object(S.c)(a.concat(t))
         })
       var ns = F.a.create(function (e) {
         return {
@@ -6808,17 +6812,17 @@
           hidden: { position: 'absolute', visibility: 'hidden', width: '100%' },
         }
       })
-      t.a = Object(yt.a)(dr(ts))
+      t.a = Object(yt.a)(ur(as))
     },
-    'ii+P': function (e, t, n) {
+    'ii+P': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return o
       })
-      n('FtFR')
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('wtru')
+      a('FtFR')
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('wtru')
       function o(e) {
         var t = Object(r.b)()
         return [
@@ -6832,20 +6836,20 @@
         ]
       }
     },
-    lsKC: function (e, t, n) {
+    lsKC: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return c
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return d
         }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return u
         })
-      n('jQ3i'), n('x4t0')
-      var a = n('3XMw'),
-        i = n.n(a),
+      a('jQ3i'), a('x4t0')
+      var n = a('3XMw'),
+        i = a.n(n),
         r = i.a.g34f2c63,
         o = i.a.f70a36d0,
         s = i.a.d17df547,
@@ -6856,51 +6860,51 @@
         },
         d = function (e, t) {
           return function () {
-            var n,
-              a,
+            var a,
+              n,
               i =
-                (null === (n = t.state) || void 0 === n || null === (a = n.previousPath) || void 0 === a
+                (null === (a = t.state) || void 0 === a || null === (n = a.previousPath) || void 0 === n
                   ? void 0
-                  : a.includes('/home')) && '/compose/tweet' === t.pathname
+                  : n.includes('/home')) && '/compose/tweet' === t.pathname
             t.pathname.includes('/home') || i ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
           }
         },
         u = function (e) {
           var t = e.isInline,
-            n = e.isSelfThreadReply,
-            a = e.parentTweetId
-          return t ? { pathname: '/compose/tweet', state: { inReplyToStatusId: a, isSelfThreadReply: n } } : void 0
+            a = e.isSelfThreadReply,
+            n = e.parentTweetId
+          return t ? { pathname: '/compose/tweet', state: { inReplyToStatusId: n, isSelfThreadReply: a } } : void 0
         }
     },
-    pidX: function (e, t, n) {
+    pidX: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return d
       })
-      var a = n('ddV6'),
-        i = n.n(a),
+      var n = a('ddV6'),
+        i = a.n(n),
         r =
-          (n('z84I'),
-          n('TJCb'),
-          n('7x/C'),
-          n('DZ+c'),
-          n('7xRU'),
-          n('KqXw'),
-          n('Ysgh'),
-          n('LW0h'),
-          n('2G9S'),
-          n('3XMw')),
-        o = n.n(r),
-        s = n('3A2y'),
+          (a('z84I'),
+          a('TJCb'),
+          a('7x/C'),
+          a('DZ+c'),
+          a('7xRU'),
+          a('KqXw'),
+          a('Ysgh'),
+          a('LW0h'),
+          a('2G9S'),
+          a('3XMw')),
+        o = a.n(r),
+        s = a('3A2y'),
         l = o.a.b2e94283,
         c = ['title', 'screen_name', 'text', 'url', 'hashtags', 'via']
       t.a = function (e) {
         var t = e.state || {},
-          n = e.query || {},
-          a = c.map(function (e) {
-            return t[e] || n[e]
+          a = e.query || {},
+          n = c.map(function (e) {
+            return t[e] || a[e]
           }),
-          r = i()(a, 6),
+          r = i()(n, 6),
           o = r[0],
           s = r[1],
           d = r[2],
@@ -6930,45 +6934,45 @@
         return Object(s.a)(e, c)
       }
     },
-    rziq: function (e, t, n) {
+    rziq: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
-        return a
+      a.d(t, 'b', function () {
+        return n
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return i
         })
-      var a = 'send-tweet',
+      var n = 'send-tweet',
         i = 'dismiss-composer'
     },
-    sCk0: function (e, t, n) {
+    sCk0: function (e, t, a) {
       'use strict'
-      var a = n('VrFO'),
-        i = n.n(a),
-        r = n('Y9Ll'),
-        o = n.n(r),
-        s = n('1Pcy'),
-        l = n.n(s),
-        c = n('5Yy7'),
-        d = n.n(c),
-        u = n('2VqO'),
-        m = n.n(u),
-        p = n('KEM+'),
-        h = n.n(p),
-        f = (n('2G9S'), n('z84I'), n('7x/C'), n('JtPf'), n('DfhM'), n('ERkP')),
-        g = n.n(f),
-        v = n('zfvc'),
-        y = n('RhWx'),
-        b = n.n(y),
-        _ = (n('yH/f'), n('M+/F'), n('zrc3')),
+      var n = a('VrFO'),
+        i = a.n(n),
+        r = a('Y9Ll'),
+        o = a.n(r),
+        s = a('1Pcy'),
+        l = a.n(s),
+        c = a('5Yy7'),
+        d = a.n(c),
+        u = a('2VqO'),
+        m = a.n(u),
+        p = a('KEM+'),
+        h = a.n(p),
+        f = (a('2G9S'), a('z84I'), a('7x/C'), a('JtPf'), a('DfhM'), a('ERkP')),
+        g = a.n(f),
+        v = a('zfvc'),
+        y = a('RhWx'),
+        b = a.n(y),
+        _ = (a('yH/f'), a('M+/F'), a('zrc3')),
         C = Object.freeze({ in: 'in', out: 'out', static: 'static' }),
         T = (function (e) {
-          d()(n, e)
-          var t = m()(n)
-          function n() {
+          d()(a, e)
+          var t = m()(a)
+          function a() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
+            i()(this, a)
+            for (var n = arguments.length, r = new Array(n), o = 0; o < n; o++) r[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(r))),
               h()(l()(e), 'state', {
@@ -6979,13 +6983,13 @@
               }),
               h()(l()(e), '_handleEachAnimateComplete', function () {
                 var t = e.state.isAnimating,
-                  n = e.props,
-                  a = n.children,
-                  i = n.onAnimateComplete
+                  a = e.props,
+                  n = a.children,
+                  i = a.onAnimateComplete
                 t &&
                   (i && i(),
                   e.setState({
-                    renderChildren: g.a.Children.toArray(a).map(function (e) {
+                    renderChildren: g.a.Children.toArray(n).map(function (e) {
                       return { status: C.static, child: e }
                     }),
                     isAnimating: !1,
@@ -6996,24 +7000,24 @@
           }
           return (
             o()(
-              n,
+              a,
               [
                 {
                   key: 'render',
                   value: function () {
                     var e = this
                     return this.state.renderChildren.map(function (t) {
-                      var n = t.child,
-                        a = t.status
+                      var a = t.child,
+                        n = t.status
                       return g.a.createElement(
                         v.a,
                         {
-                          animateMount: a !== C.static,
-                          key: n.key,
+                          animateMount: n !== C.static,
+                          key: a.key,
                           onAnimateComplete: e._handleEachAnimateComplete,
-                          show: a !== C.out,
+                          show: n !== C.out,
                         },
-                        n,
+                        a,
                       )
                     })
                   },
@@ -7023,27 +7027,27 @@
                 {
                   key: 'getDerivedStateFromProps',
                   value: function (e, t) {
-                    var n = (function (e, t) {
+                    var a = (function (e, t) {
                       for (
-                        var n = 0,
-                          a = 0,
+                        var a = 0,
+                          n = 0,
                           i = [],
                           r = function () {
-                            if (n >= t.length)
+                            if (a >= t.length)
                               return (
                                 i.push.apply(
                                   i,
                                   b()(
-                                    e.slice(a).map(function (e) {
+                                    e.slice(n).map(function (e) {
                                       return { child: e, status: C.out }
                                     }),
                                   ),
                                 ),
                                 'break'
                               )
-                            var r = t[n],
-                              o = e[a]
-                            if (r.key === o.key) i.push({ child: r, status: C.static }), (n += 1)
+                            var r = t[a],
+                              o = e[n]
+                            if (r.key === o.key) i.push({ child: r, status: C.static }), (a += 1)
                             else {
                               var s = Object(_.a)(t, function (e) {
                                 return e.key === o.key
@@ -7052,25 +7056,25 @@
                                 ? (i.push.apply(
                                     i,
                                     b()(
-                                      t.slice(n, s).map(function (e) {
+                                      t.slice(a, s).map(function (e) {
                                         return { child: e, status: C.in }
                                       }),
                                     ).concat([{ child: t[s], status: C.static }]),
                                   ),
-                                  (n = s + 1))
+                                  (a = s + 1))
                                 : i.push({ child: o, status: C.out })
                             }
-                            a += 1
+                            n += 1
                           };
-                        a < e.length && 'break' !== r();
+                        n < e.length && 'break' !== r();
 
                       );
                       return (
-                        n < t.length &&
+                        a < t.length &&
                           i.push.apply(
                             i,
                             b()(
-                              t.slice(n).map(function (e) {
+                              t.slice(a).map(function (e) {
                                 return { child: e, status: C.in }
                               }),
                             ),
@@ -7084,8 +7088,8 @@
                       g.a.Children.toArray(e.children),
                     )
                     return {
-                      renderChildren: n,
-                      isAnimating: !n.every(function (e) {
+                      renderChildren: a,
+                      isAnimating: !a.every(function (e) {
                         return e.status === C.static
                       }),
                     }
@@ -7093,52 +7097,52 @@
                 },
               ],
             ),
-            n
+            a
           )
         })(g.a.Component)
       t.a = T
     },
-    ulNE: function (e, t, n) {
+    ulNE: function (e, t, a) {
       'use strict'
-      var a = n('ax0f'),
-        i = n('42ly'),
-        r = n('N9G2'),
-        o = n('BIH/'),
-        s = n('lhaq'),
-        l = n('aoZ+')
-      a(
+      var n = a('ax0f'),
+        i = a('42ly'),
+        r = a('N9G2'),
+        o = a('BIH/'),
+        s = a('lhaq'),
+        l = a('aoZ+')
+      n(
         { target: 'Array', proto: !0 },
         {
           flat: function () {
             var e = arguments.length ? arguments[0] : void 0,
               t = r(this),
-              n = o(t),
-              a = l(t, 0)
-            return (a.length = i(a, t, t, n, 0, void 0 === e ? 1 : s(e))), a
+              a = o(t),
+              n = l(t, 0)
+            return (n.length = i(n, t, t, a, 0, void 0 === e ? 1 : s(e))), n
           },
         },
       )
     },
-    'urw/': function (e, t, n) {
-      n('7St7')('flat')
+    'urw/': function (e, t, a) {
+      a('7St7')('flat')
     },
-    x8Sc: function (e, t, n) {
+    x8Sc: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'InlineComposeContainer', function () {
+      a.r(t),
+        a.d(t, 'InlineComposeContainer', function () {
           return d
         })
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('h5NW'),
-        o = n('MWbm'),
-        s = n('7N4s'),
-        l = n('cHvH'),
-        c = n('rHpw'),
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('h5NW'),
+        o = a('MWbm'),
+        s = a('7N4s'),
+        l = a('cHvH'),
+        c = a('rHpw'),
         d = function (e) {
           var t = e.history,
-            n = e.location,
-            a = e.parentTweetId,
+            a = e.location,
+            n = e.parentTweetId,
             c = e.replyPressToggle,
             d = e.richTextInputContext,
             m = e.typeaheadWrapper,
@@ -7152,8 +7156,8 @@
                 history: t,
                 isInline: !0,
                 isModal: p,
-                location: n,
-                parentTweetId: a,
+                location: a,
+                parentTweetId: n,
                 replyPressToggle: c,
                 richTextInputContext: d,
                 typeaheadWrapper: m,
@@ -7167,17 +7171,17 @@
         })
       t.default = d
     },
-    yTN1: function (e, t, n) {
+    yTN1: function (e, t, a) {
       'use strict'
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('WOwf'),
-        o = n('3XMw'),
-        s = n.n(o),
-        l = n('k6Ei'),
-        c = n('rHpw'),
-        d = n('+/1j'),
-        u = n('MWbm'),
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('WOwf'),
+        o = a('3XMw'),
+        s = a.n(o),
+        l = a('k6Ei'),
+        c = a('rHpw'),
+        d = a('+/1j'),
+        u = a('MWbm'),
         m = s.a.c2fc878c,
         p = s.a.db11b27f,
         h = function (e) {
@@ -7197,12 +7201,12 @@
         })
       t.a = function (e) {
         var t = e.count,
-          n = e.maxCount,
-          a = e.formatNumber,
-          o = void 0 === a ? h : a,
+          a = e.maxCount,
+          n = e.formatNumber,
+          o = void 0 === n ? h : n,
           s = e.warningCount,
-          g = n - t,
-          v = g >= 0 ? p({ count: o(g) }) : m({ count: o(t - n) }),
+          g = a - t,
+          v = g >= 0 ? p({ count: o(g) }) : m({ count: o(t - a) }),
           y =
             t >= s
               ? i.a.createElement(
@@ -7211,8 +7215,8 @@
                   v,
                 )
               : null,
-          b = Object(r.a)(g, n),
-          _ = t >= n ? 'red500' : t >= s ? 'yellow500' : 'primary',
+          b = Object(r.a)(g, a),
+          _ = t >= a ? 'red500' : t >= s ? 'yellow500' : 'primary',
           C = i.a.createElement(l.a, {
             color: _,
             progress: b,
@@ -7229,29 +7233,29 @@
         )
       }
     },
-    yZqq: function (e, t, n) {
+    yZqq: function (e, t, a) {
       'use strict'
-      var a = n('97Jx'),
-        i = n.n(a),
-        r = n('m3Bd'),
-        o = n.n(r),
-        s = n('ddV6'),
-        l = n.n(s),
-        c = n('ERkP'),
-        d = n.n(c),
-        u = (n('5BYb'), n('7x/C'), n('uFXj'), n('H7Rt')),
-        m = n('3XMw'),
-        p = n.n(m),
-        h = n('MWbm'),
-        f = n('t62R'),
-        g = n('CKsB'),
-        v = n('/yvb'),
-        y = n('rHpw'),
-        b = n('Zg3A'),
-        _ = n('yiKp'),
-        C = n.n(_),
-        T = n('Lsrn'),
-        w = n('k/Ka'),
+      var n = a('97Jx'),
+        i = a.n(n),
+        r = a('m3Bd'),
+        o = a.n(r),
+        s = a('ddV6'),
+        l = a.n(s),
+        c = a('ERkP'),
+        d = a.n(c),
+        u = (a('5BYb'), a('7x/C'), a('uFXj'), a('H7Rt')),
+        m = a('3XMw'),
+        p = a.n(m),
+        h = a('MWbm'),
+        f = a('t62R'),
+        g = a('CKsB'),
+        v = a('/yvb'),
+        y = a('rHpw'),
+        b = a('Zg3A'),
+        _ = a('yiKp'),
+        C = a.n(_),
+        T = a('Lsrn'),
+        w = a('k/Ka'),
         x = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(w.a)(
@@ -7279,14 +7283,14 @@
         }
       x.metadata = { width: 24, height: 24 }
       var E = x,
-        S = n('boUI'),
-        I = n('EweD'),
+        S = a('boUI'),
+        I = a('EweD'),
         R = p.a.g6185a9e,
         A = p.a.g2d04222,
         M = p.a.baffe39a,
         k = p.a.af293dc2,
-        D = p.a.h1053f7e,
-        P = p.a.bf994ab2,
+        P = p.a.h1053f7e,
+        D = p.a.bf994ab2,
         O = p.a.cf7f7e39,
         L = p.a.cfd2f35d,
         F = y.a.create(function (e) {
@@ -7312,8 +7316,8 @@
         }),
         N = function (e) {
           var t,
-            n,
-            a = e.dismiss,
+            a,
+            n = e.dismiss,
             i = e.isModal,
             r = e.midConversationTweet,
             o = e.value,
@@ -7329,15 +7333,15 @@
                 null != r &&
                 null !== (t = r.entities) &&
                 void 0 !== t &&
-                null !== (n = t.user_mentions) &&
-                void 0 !== n &&
-                n.some(function (e) {
+                null !== (a = t.user_mentions) &&
+                void 0 !== a &&
+                a.some(function (e) {
                   return e.id_str !== r.user.id_str
                 })
               ),
-            m = D
+            m = P
           return (
-            c ? (m = P) : l && (m = O),
+            c ? (m = D) : l && (m = O),
             d.a.createElement(
               h.a,
               {
@@ -7391,7 +7395,7 @@
                       v.a,
                       {
                         key: 'button_cancel',
-                        onPress: a,
+                        onPress: n,
                         size: 'large',
                         style: F.cancelButton,
                         type: 'primaryOutlined',
@@ -7403,13 +7407,13 @@
             )
           )
         },
-        B = n('OiMc'),
-        V = n('efqG'),
+        B = a('OiMc'),
+        V = a('efqG'),
         j = ['children', 'controlled']
       t.a = function (e) {
         var t = e.children,
-          n = e.controlled,
-          a = void 0 !== n && n,
+          a = e.controlled,
+          n = void 0 !== a && a,
           r = e.disabled,
           s = d.a.useState(!1),
           c = l()(s, 2),
@@ -7421,17 +7425,17 @@
           h = d.a.useCallback(function () {
             return m(!1)
           }, []),
-          f = a ? (u ? B.a.VISIBILITY_BEHAVIOR.forceVisible : B.a.VISIBILITY_BEHAVIOR.forceHidden) : void 0,
+          f = n ? (u ? B.a.VISIBILITY_BEHAVIOR.forceVisible : B.a.VISIBILITY_BEHAVIOR.forceHidden) : void 0,
           g = 'function' == typeof t ? t({ openPopover: p, closePopover: h }) : t
         return d.a.createElement(
           V.a,
           {
             disabled: r,
             onDismiss: h,
-            renderContent: function (t, n) {
+            renderContent: function (t, a) {
               e.children, e.controlled
-              var a = o()(e, j)
-              return d.a.createElement(N, i()({}, a, { dismiss: t, isModal: 'sheet' === n }))
+              var n = o()(e, j)
+              return d.a.createElement(N, i()({}, n, { dismiss: t, isModal: 'sheet' === a }))
             },
             visibilityBehavior: f,
           },
@@ -7439,39 +7443,31 @@
         )
       }
     },
-    ye3X: function (e, t, n) {
+    zmS9: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
-      })
-      n('yH/f')
-      var a = Object.freeze({ inline: 'inline', prompt: 'prompt', require: 'require' })
-    },
-    zmS9: function (e, t, n) {
-      'use strict'
-      var a = n('ERkP'),
-        i = n.n(a),
-        r = n('3XMw'),
-        o = n.n(r),
-        s = n('J0mu'),
-        l = n('t62R'),
-        c = n('rHpw'),
-        d = n('QbaN'),
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('3XMw'),
+        o = a.n(r),
+        s = a('J0mu'),
+        l = a('t62R'),
+        c = a('rHpw'),
+        d = a('QbaN'),
         u = o.a.bfb895b1,
         m = c.a.create(function (e) {
           return { icon: { fontSize: e.fontSizes.body, paddingRight: e.spaces.space12, textAlignVertical: 'middle' } }
         })
       t.a = function (e) {
         var t = e.onPress,
-          n = e.scheduledFor,
-          a = e.testID,
-          r = Object(d.c)(n),
-          o = !!r && Object(d.h)(n) && !Object(d.g)(r) && !Object(d.f)(r),
+          a = e.scheduledFor,
+          n = e.testID,
+          r = Object(d.c)(a),
+          o = !!r && Object(d.h)(a) && !Object(d.g)(r) && !Object(d.f)(r),
           c = Boolean(t)
         return r && o
           ? i.a.createElement(
               l.b,
-              { color: 'gray700', onPress: t, size: 'subtext2', testID: a, withInteractiveStyling: c },
+              { color: 'gray700', onPress: t, size: 'subtext2', testID: n, withInteractiveStyling: c },
               i.a.createElement(s.a, { style: m.icon }),
               u({ date: Object(d.b)(r), time: Object(d.i)(r) }),
             )

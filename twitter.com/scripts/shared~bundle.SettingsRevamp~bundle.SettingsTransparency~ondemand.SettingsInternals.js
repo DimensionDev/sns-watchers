@@ -192,7 +192,7 @@
         w = n('0KEI'),
         x = Object(v.a)()
           .propsFromState(function () {
-            return { fetchStatus: b.o, loggedInUser: f.e.selectLoggedInUser }
+            return { fetchStatus: b.n, loggedInUser: f.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {

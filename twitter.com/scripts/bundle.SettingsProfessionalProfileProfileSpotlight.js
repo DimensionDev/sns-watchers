@@ -19,7 +19,7 @@
                 alias: 'user',
                 args: (t = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'userId' },
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                 ]),
                 concreteType: 'UserResults',
                 kind: 'LinkedField',

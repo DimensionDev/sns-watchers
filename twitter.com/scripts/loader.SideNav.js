@@ -294,7 +294,7 @@
           return m.a.createElement(
             H.a.I18NFormatMessage,
             { $i18n: 'i9bec47a' },
-            m.a.createElement(x.a, { color: 'normal', screenName: e }),
+            m.a.createElement(x.a, { screenName: e }),
           )
         },
         R = (function (e) {

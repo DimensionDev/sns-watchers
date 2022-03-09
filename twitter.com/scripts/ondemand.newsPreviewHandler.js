@@ -25,7 +25,7 @@
         m = function (e) {
           var t = e.author,
             n = e.color,
-            r = void 0 === n ? 'normal' : n,
+            r = void 0 === n ? 'text' : n,
             i = e.size,
             o = void 0 === i ? 'subtext2' : i,
             c = e.style,
@@ -306,7 +306,7 @@
           component: e,
           bindActions: Object(o.a)({ scribe: l.c }),
           selectData: function () {
-            return { dataSaverMode: s.k }
+            return { dataSaverMode: s.j }
           },
           createProps: function (e) {
             var n = e.actions.scribe,

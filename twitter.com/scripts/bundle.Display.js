@@ -50,10 +50,10 @@
         v = a('rxPX'),
         k = Object(v.a)()
           .propsFromState(function () {
-            return { language: w.o, scale: g.z }
+            return { language: w.o, scale: g.y }
           })
           .propsFromActions(function () {
-            return { updateSettings: g.N }
+            return { updateSettings: g.M }
           })
           .withAnalytics(),
         C = a('3XMw'),
@@ -64,23 +64,23 @@
         F = a('rHpw'),
         R = a('t62R'),
         P = a('9RkS'),
-        L = x.f.ThemeScaleNames,
-        M = Object.keys(L),
-        T = M.length - 1,
+        M = x.f.ThemeScaleNames,
+        L = Object.keys(M),
+        T = L.length - 1,
         I = _.a.d8680056,
-        N = _.a.eed02405,
-        O = _.a.j59f0b93,
+        O = _.a.eed02405,
+        N = _.a.j59f0b93,
         A = _.a.b81aaad8,
         B = _.a.c704488f,
         H =
           ((n = {}),
-          y()(n, L.xSmall, I),
-          y()(n, L.small, N),
-          y()(n, L.normal, O),
-          y()(n, L.large, A),
-          y()(n, L.xLarge, B),
+          y()(n, M.xSmall, I),
+          y()(n, M.small, O),
+          y()(n, M.normal, N),
+          y()(n, M.large, A),
+          y()(n, M.xLarge, B),
           n),
-        z = [I, N, O, A, B],
+        z = [I, O, N, A, B],
         j = _.a.e46dffa0,
         W = (function (e) {
           d()(a, e)
@@ -95,10 +95,10 @@
                 var a = e.props,
                   n = a.analytics,
                   r = a.updateSettings,
-                  o = M[t]
+                  o = L[t]
                 n.scribe({ component: 'text_size_picker', element: 'scale', action: o }),
                   r({ scale: o }),
-                  F.a.setScale(L[o])
+                  F.a.setScale(M[o])
               }),
               e
             )
@@ -125,7 +125,7 @@
                           max: T,
                           min: 0,
                           onChange: e._handleSliderChanged,
-                          value: M.indexOf(F.a.theme.scale),
+                          value: L.indexOf(F.a.theme.scale),
                           withMarkers: !0,
                         }),
                       ),
@@ -180,12 +180,12 @@
         F = a('/yvb'),
         R = a('7N4s'),
         P = a('rHpw'),
-        L = w.a.b5b0afa4,
-        M = w.a.b772cd65,
+        M = w.a.b5b0afa4,
+        L = w.a.b772cd65,
         T = w.a.a5ce82a4,
         I = w.a.babfa32c,
-        N = w.a.a2a2f98d,
-        O = w.a.b4a361cf,
+        O = w.a.a2a2f98d,
+        N = w.a.b4a361cf,
         A = w.a.ce494bb3,
         B = w.a.c783d45e,
         H = w.a.h306a357,
@@ -205,7 +205,7 @@
                       b.a.createElement(
                         x.b,
                         { align: 'center', size: 'title4', weight: 'heavy' },
-                        o._isWelcomeFlow ? I : L,
+                        o._isWelcomeFlow ? I : M,
                       ),
                     )
                   : e
@@ -226,14 +226,14 @@
                     t = this.props.history
                   return b.a.createElement(
                     f.b,
-                    { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? I : L },
+                    { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? I : M },
                     b.a.createElement(
                       E.a,
                       { style: j.root },
                       b.a.createElement(
                         x.b,
                         { align: 'center', color: 'gray700', style: [j.description, !e && j.descriptionMarginTop] },
-                        this._isWelcomeFlow ? O : T,
+                        this._isWelcomeFlow ? N : T,
                       ),
                       b.a.createElement(
                         E.a,
@@ -256,7 +256,7 @@
                         b.a.createElement(
                           F.a,
                           { onPress: this._handleBackClick, type: 'brandFilled' },
-                          this._isWelcomeFlow ? N : M,
+                          this._isWelcomeFlow ? O : L,
                         ),
                       ),
                     ),
@@ -311,7 +311,7 @@
         k = a('rxPX'),
         C = Object(k.a)()
           .propsFromActions(function () {
-            return { updateSettings: v.N }
+            return { updateSettings: v.M }
           })
           .withAnalytics(),
         _ = a('3XMw'),
@@ -321,12 +321,12 @@
         F = a('rHpw'),
         R = a('cHvH'),
         P = a('fBvp'),
-        L = x.f.ThemePaletteNames,
-        M = E.a.ce8a8115,
+        M = x.f.ThemePaletteNames,
+        L = E.a.ce8a8115,
         T = [
-          { label: E.a.j59f0b93, accessibilityLabel: E.a.d3d48f39, backgroundName: L.light },
-          { label: E.a.i76f67ed, backgroundName: L.dark },
-          { label: E.a.c8f85960, backgroundName: L.darker },
+          { label: E.a.j59f0b93, accessibilityLabel: E.a.d3d48f39, backgroundName: M.light },
+          { label: E.a.i76f67ed, backgroundName: M.dark },
+          { label: E.a.c8f85960, backgroundName: M.darker },
         ],
         I = (function (e) {
           u()(a, e)
@@ -342,7 +342,7 @@
                   n = a.analytics,
                   r = a.updateSettings
                 n.scribe({ component: 'background_picker', element: 'option', action: t })
-                var o = L[t]
+                var o = M[t]
                 F.a.setPalette(o), r({ themeBackground: o }), y.c(t, e.context.featureSwitches)
               }),
               e
@@ -358,7 +358,7 @@
                     var a = t.windowWidth
                     return f.a.createElement(S.a, { themeItem: 'background' }, function (t) {
                       return f.a.createElement(P.a, {
-                        accessibilityLabel: M,
+                        accessibilityLabel: L,
                         autoFocus: t,
                         layout: g.a.shouldRenderAsModal(a) ? 'row' : 'column',
                         onChange: e._handleBackgroundChange,
@@ -374,8 +374,8 @@
           )
         })(f.a.Component)
       m()(I, 'contextType', w.a)
-      var N = C(I)
-      t.a = N
+      var O = C(I)
+      t.a = O
     },
     KNZn: function (e, t, a) {
       'use strict'
@@ -408,7 +408,7 @@
         F = a('MWbm'),
         R = 'Twitter',
         P = _.a.ea1c87a5({ mention: R }),
-        L = {
+        M = {
           text: P,
           created_at: new Date(Date.now() - 6e5).toString(),
           id: 20,
@@ -434,7 +434,7 @@
             verified: !0,
           },
         },
-        M = (function (e) {
+        L = (function (e) {
           p()(a, e)
           var t = m()(a)
           function a(e) {
@@ -447,7 +447,7 @@
             var o = n.props,
               c = o.language,
               l = o.tweet
-            return (n._tweet = r()(r()(r()({}, L), l), {}, { lang: c || 'en' })), n
+            return (n._tweet = r()(r()(r()({}, M), l), {}, { lang: c || 'en' })), n
           }
           return (
             l()(a, [
@@ -479,7 +479,7 @@
             a
           )
         })(g.a.Component)
-      b()(M, 'defaultProps', { tweet: L, withTweetBorder: !1 })
+      b()(L, 'defaultProps', { tweet: M, withTweetBorder: !1 })
       var T = S.a.create(function (e) {
           return {
             tweetBorder: {
@@ -491,7 +491,7 @@
             },
           }
         }),
-        I = k(M)
+        I = k(L)
       t.a = I
     },
     fBvp: function (e, t, a) {
@@ -705,8 +705,8 @@
             ),
           }
         }),
-        L = R,
-        M = 1,
+        M = R,
+        L = 1,
         T = (function (e) {
           u()(a, e)
           var t = p()(a)
@@ -720,8 +720,8 @@
                   ;(0, e.props.onChange)(t)
                 }
               }),
-              (e._backgroundPickerName = 'background_picker_'.concat(M)),
-              (M += 1),
+              (e._backgroundPickerName = 'background_picker_'.concat(L)),
+              (L += 1),
               e
             )
           }
@@ -741,7 +741,7 @@
                     S.a,
                     { accessibilityLabel: a, accessibilityRole: 'radiogroup', style: 'row' === r ? I.row : I.column },
                     o.map(function (t) {
-                      return b.a.createElement(L, {
+                      return b.a.createElement(M, {
                         accessibilityLabel: t.accessibilityLabel,
                         autoFocus: n && t.backgroundName === i,
                         backgroundName: t.backgroundName,
@@ -951,7 +951,7 @@
         }),
         R = x,
         P = 1,
-        L = (function (e) {
+        M = (function (e) {
           l()(a, e)
           var t = u()(a)
           function a() {
@@ -972,7 +972,7 @@
                     i = t.options,
                     c = t.value,
                     l = 'two-rows' === r,
-                    s = [M.root, l && M.flexWrap],
+                    s = [L.root, l && L.flexWrap],
                     u = l ? { width: ''.concat((2 / i.length) * 100, '%') } : void 0
                   return m.a.createElement(
                     _.a,
@@ -998,11 +998,11 @@
             a
           )
         })(m.a.Component)
-      p()(L, 'defaultProps', { layout: 'one-row' })
-      var M = k.a.create(function (e) {
+      p()(M, 'defaultProps', { layout: 'one-row' })
+      var L = k.a.create(function (e) {
         return { root: { flexDirection: 'row', justifyContent: 'space-around' }, flexWrap: { flexWrap: 'wrap' } }
       })
-      t.a = L
+      t.a = M
     },
     vSJw: function (e, t, a) {
       'use strict'
@@ -1025,7 +1025,7 @@
         w = a('rxPX'),
         v = Object(w.a)()
           .propsFromActions(function () {
-            return { updateSettings: g.N }
+            return { updateSettings: g.M }
           })
           .withAnalytics(),
         k = a('3XMw'),
@@ -1037,7 +1037,7 @@
         F = a('uI9t'),
         R = E.f.ThemePrimaryColorNames,
         P = C.a.aefc5b20,
-        L = [
+        M = [
           { accessibilityLabel: C.a.a52d0fdd, colorName: R.blue500 },
           { accessibilityLabel: C.a.d818cdd5, colorName: R.yellow500 },
           { accessibilityLabel: C.a.fee1cd64, colorName: R.magenta500 },
@@ -1045,7 +1045,7 @@
           { accessibilityLabel: C.a.g697ec02, colorName: R.orange500 },
           { accessibilityLabel: C.a.a7c22049, colorName: R.green500 },
         ],
-        M = v(
+        L = v(
           (function (e) {
             u()(a, e)
             var t = p()(a)
@@ -1080,7 +1080,7 @@
                           autoFocus: t,
                           layout: f.a.shouldRenderAsModal(a) ? 'one-row' : 'two-rows',
                           onChange: e._handleColorChange,
-                          options: L,
+                          options: M,
                           value: S.a.theme.primaryColorName,
                         })
                       })
@@ -1092,7 +1092,7 @@
             )
           })(b.a.Component),
         )
-      t.a = M
+      t.a = L
     },
   },
 ])

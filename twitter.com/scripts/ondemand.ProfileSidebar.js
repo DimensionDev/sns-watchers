@@ -45,7 +45,7 @@
             return L(Object(_.d)(e), t).selectEntries(e)
           },
           x.a.createHydratedSelector,
-          S.l,
+          S.k,
           function (e, t, n) {
             return Object(O.a)(e, function (e) {
               var r,

@@ -28,8 +28,8 @@
         x = a('CDB5'),
         I = a('Qyxo'),
         O = a('hqKg'),
-        N = a('AspN'),
-        P = a('oEGd'),
+        P = a('AspN'),
+        N = a('oEGd'),
         M = Object(O.createSelector)(
           function (e, t) {
             var a = t.module,
@@ -68,19 +68,19 @@
             }
           },
         ),
-        G = Object(P.d)(M, function (e) {
+        G = Object(N.d)(M, function (e) {
           var t,
             a = e.history,
             r = e.module
           return {
-            addExternalMediaUpload: N.a,
+            addExternalMediaUpload: P.a,
             addMediaToDM:
               ((t = a.location.state),
               function (e, a) {
                 var r = t && t.dmConversationId
                 return Object(x.a)(r, e, a)
               }),
-            setMediaMetadata: N.n,
+            setMediaMetadata: P.n,
             fetchInitialIfNeeded: r.fetchInitialIfNeeded,
             fetchNextIfNeeded: r.fetchNextIfNeeded,
             scribeAction: w.c,
@@ -92,8 +92,8 @@
         F = a('U+bB'),
         R = a('XOY5'),
         q = a('cm6r'),
-        T = a('rHpw'),
-        j = (function (e) {
+        j = a('rHpw'),
+        T = (function (e) {
           s()(a, e)
           var t = d()(a)
           function a() {
@@ -134,14 +134,14 @@
           )
         })(v.a.Component),
         K = function (e, t, a) {
-          return T.a.create(function (r) {
+          return j.a.create(function (r) {
             return { background: { backgroundColor: e, height: t, width: a } }
           })
         },
-        L = T.a.create(function (e) {
+        L = j.a.create(function (e) {
           return { imageContainer: { marginHorizontal: '1px', overflow: 'hidden', flexShrink: 1 } }
         }),
-        D = j,
+        D = T,
         B = a('MLl7'),
         V = a('3XMw'),
         U = a.n(V),
@@ -370,7 +370,7 @@
           )
         })(v.a.Component)
       g()(le, 'defaultProps', { fromSearch: !1 })
-      var se = T.a.create(function (e) {
+      var se = j.a.create(function (e) {
         return {
           emptyItem: {
             display: 'inline-block',
@@ -456,16 +456,16 @@
             )
           return n.a.createElement(
             _.a,
-            { onPress: l, style: [N.category, o && N.leftMargin] },
-            n.a.createElement(C.a, { source: u, style: [N.categoryImage, { backgroundColor: Object(p.a)(i) }] }),
+            { onPress: l, style: [P.category, o && P.leftMargin] },
+            n.a.createElement(C.a, { source: u, style: [P.categoryImage, { backgroundColor: Object(p.a)(i) }] }),
             n.a.createElement(
               x.a,
-              { style: N.categoryNameContainer },
+              { style: P.categoryNameContainer },
               n.a.createElement(E.b, { color: 'white', size: 'headline1', weight: 'bold' }, c),
             ),
           )
         }),
-        N = w.a.create(function (e) {
+        P = w.a.create(function (e) {
           return {
             row: { flexDirection: 'row', marginTop: e.spaces.space4 },
             firstRow: { marginTop: 0 },
@@ -481,7 +481,7 @@
             },
           }
         }),
-        P = g(function (e) {
+        N = g(function (e) {
           var t,
             a = e.analytics,
             r = e.categories,
@@ -518,7 +518,7 @@
                         i = a[1]
                       return n.a.createElement(
                         x.a,
-                        { style: [N.row, 0 === t && N.firstRow] },
+                        { style: [P.row, 0 === t && P.firstRow] },
                         n.a.createElement(O, {
                           category: r,
                           gifSearchKey: c,
@@ -563,9 +563,9 @@
         F = a('1Pcy'),
         R = a.n(F),
         q = a('5Yy7'),
-        T = a.n(q),
-        j = a('2VqO'),
-        K = a.n(j),
+        j = a.n(q),
+        T = a('2VqO'),
+        K = a.n(T),
         L = a('KEM+'),
         D = a.n(L),
         B = a('hiCj'),
@@ -575,7 +575,7 @@
         Y = a('MLl7'),
         Q = b.a.ab468378,
         W = (function (e) {
-          T()(a, e)
+          j()(a, e)
           var t = K()(a)
           function a() {
             var e
@@ -650,7 +650,7 @@
               searchBox: i,
               shouldAutoPlayGif: o,
             })
-          : n.a.createElement(P, { gifSearchKey: t, history: a, location: r, searchBox: i })
+          : n.a.createElement(N, { gifSearchKey: t, history: a, location: r, searchBox: i })
       }
     },
     hiCj: function (e, t, a) {
@@ -676,7 +676,7 @@
           createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
             'FOUND_MEDIA_AUTOPLAY_TOGGLE',
           ),
-          updateSettings: p.N,
+          updateSettings: p.M,
         },
         _ = Object(S.f)(function () {
           return {}
@@ -687,8 +687,8 @@
         x = a('MWbm'),
         I = a('t62R'),
         O = a('CK8+'),
-        N = a('rHpw'),
-        P = w.a.j7fc4f9b,
+        P = a('rHpw'),
+        N = w.a.j7fc4f9b,
         M = (function (e) {
           s()(a, e)
           var t = d()(a)
@@ -721,9 +721,9 @@
                     ? m.a.createElement(
                         x.a,
                         { style: G.root },
-                        m.a.createElement(I.b, { color: 'gray700' }, P),
+                        m.a.createElement(I.b, { color: 'gray700' }, N),
                         m.a.createElement(O.a, {
-                          accessibilityLabel: P,
+                          accessibilityLabel: N,
                           onValueChange: this._handleSwitchChanged,
                           value: a,
                         }),
@@ -735,7 +735,7 @@
             a
           )
         })(m.a.Component),
-        G = N.a.create(function (e) {
+        G = P.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between', margin: e.spaces.space12 } }
         })
       t.a = _(M)
@@ -779,7 +779,7 @@
         b = a('zHh/'),
         _ = a('oEGd'),
         E = a('P1r1'),
-        w = Object(v.createSelector)(E.g, E.k, S.d, function (e, t, a) {
+        w = Object(v.createSelector)(E.g, E.j, S.d, function (e, t, a) {
           return {
             isDataSaverEnabled: t,
             shouldAutoPlayGif: (e.shouldAutoPlayGif || Object(b.a)(a)) && !p.a.reducedMotionEnabled,
@@ -789,8 +789,8 @@
         x = a('Y6L+'),
         I = a('3XMw'),
         O = a.n(I),
-        N = a('VwDm'),
-        P = a('MLl7'),
+        P = a('VwDm'),
+        N = a('MLl7'),
         M = a('/de5'),
         G = a('5FtR'),
         k = a('wytG'),
@@ -798,8 +798,8 @@
         F = a('XOY5'),
         R = a('MWbm'),
         q = a('6OUF'),
-        T = a('/yvb'),
-        j = a('rHpw'),
+        j = a('/yvb'),
+        T = a('rHpw'),
         K = a('oQhu'),
         L = a('VY6S'),
         D = a('zCf4'),
@@ -917,7 +917,7 @@
                   var e = this.props.location.state || {},
                     t = e.gifSearchKey,
                     a = e.gifSearchKeySource
-                  return t || (a && Object(P.b)(a) && a)
+                  return t || (a && Object(N.b)(a) && a)
                 },
               },
               {
@@ -938,7 +938,7 @@
                     R.a,
                     { style: W.searchContainer },
                     m.a.createElement(q.a, {
-                      Icon: N.a,
+                      Icon: P.a,
                       autoFocus: !0,
                       defaultValue: t,
                       key: t,
@@ -954,7 +954,7 @@
                     this._shouldRenderResultsOnChange
                       ? null
                       : m.a.createElement(
-                          T.a,
+                          j.a,
                           {
                             disabled: e,
                             onPress: this._handleSubmit,
@@ -971,7 +971,7 @@
             a
           )
         })(m.a.Component),
-        W = j.a.create(function (e) {
+        W = T.a.create(function (e) {
           return {
             searchContainer: { alignItems: 'center', flex: 1, flexDirection: 'row', marginVertical: e.spaces.space8 },
             searchInput: { height: '100%' },

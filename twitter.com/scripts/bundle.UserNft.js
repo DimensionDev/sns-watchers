@@ -153,7 +153,7 @@
             l,
             i,
             o = e.color,
-            s = void 0 === o ? 'normal' : o,
+            s = void 0 === o ? 'text' : o,
             c = e.isCondensed,
             u = e.openseaNftMetadataData,
             d = T()(R, u)
@@ -219,8 +219,8 @@
           }
         }),
         M = n('iyiT'),
-        P = n('Wc+h')
-      function x(e) {
+        x = n('Wc+h')
+      function P(e) {
         var a = e.text
         return r.a.createElement(F.b, { size: 'headline2', style: O.heading, weight: 'bold' }, a)
       }
@@ -279,7 +279,7 @@
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: G }),
+                r.a.createElement(P, { text: G }),
                 r.a.createElement(
                   U,
                   null,
@@ -290,7 +290,7 @@
                     r.a.createElement(
                       F.b,
                       {
-                        color: 'normal',
+                        color: 'text',
                         link: 'https://etherscan.io/address/'.concat(l.address),
                         onPress: function () {
                           a.scribe({ component: 'detail', element: 'etherscan_link', action: 'click' })
@@ -298,7 +298,7 @@
                         weight: 'medium',
                       },
                       A(l.address),
-                      r.a.createElement(P.a, null),
+                      r.a.createElement(x.a, null),
                     ),
                   ),
                   r.a.createElement(
@@ -375,7 +375,7 @@
           return r.a.createElement(
             N.a,
             null,
-            r.a.createElement(x, { text: ye }),
+            r.a.createElement(P, { text: ye }),
             r.a.createElement(D, { openseaNftMetadataData: i }),
             g ? r.a.createElement(F.b, { getTextOverflow: u, numberOfLines: p ? void 0 : 4 }, g) : null,
             g && c && !p
@@ -407,12 +407,12 @@
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: _e }),
+                r.a.createElement(P, { text: _e }),
                 l
                   ? r.a.createElement(
                       F.b,
                       {
-                        color: 'normal',
+                        color: 'text',
                         link: s,
                         onPress: function () {
                           a.scribe({ component: 'detail', element: 'opensea_profile_link', action: 'click' })
@@ -420,7 +420,7 @@
                         weight: 'bold',
                       },
                       A(l),
-                      s ? r.a.createElement(P.a, null) : null,
+                      s ? r.a.createElement(x.a, null) : null,
                     )
                   : null,
                 o && i
@@ -444,7 +444,7 @@
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: Fe }),
+                r.a.createElement(P, { text: Fe }),
                 r.a.createElement(
                   F.b,
                   { getTextOverflow: o, numberOfLines: u ? void 0 : 4 },
@@ -489,11 +489,12 @@
           return r.a.createElement(
             N.a,
             null,
-            r.a.createElement(x, { text: Se }),
+            r.a.createElement(P, { text: Se }),
             r.a.createElement(F.b, { getTextOverflow: i, numberOfLines: c ? void 0 : 4 }, Ke),
             r.a.createElement(
               F.b,
               {
+                color: 'text',
                 link: 'https://help.twitter.com/en/using-twitter/twitter-blue-labs#nft',
                 style: De.helpLink,
                 weight: 'bold',
@@ -514,7 +515,6 @@
                 F.b,
                 {
                   align: 'center',
-                  color: 'normal',
                   link: f,
                   onPress: function () {
                     a.scribe({ component: 'detail', element: 'opensea_asset_link', action: 'click' })
@@ -522,7 +522,7 @@
                   weight: 'bold',
                 },
                 Te,
-                r.a.createElement(P.a, null),
+                r.a.createElement(x.a, null),
               ),
             ),
           )
@@ -541,8 +541,8 @@
         }),
         Le = n('v6aA'),
         Me = n('cFuS'),
-        Pe = n('88ay'),
-        xe = n('IMA+'),
+        xe = n('88ay'),
+        Pe = n('IMA+'),
         Oe = void 0 !== se ? se : (se = n('M2DF')),
         Ae = h.a.c6000492,
         Be = function (e) {
@@ -551,13 +551,13 @@
             t = null == a ? void 0 : a.profile_image_url_https,
             l = a.name,
             i = a.screen_name,
-            o = a && n ? Object(Pe.e)({ loggedInUserId: n, userId: null == a ? void 0 : a.id_str }) : null
+            o = a && n ? Object(xe.e)({ loggedInUserId: n, userId: null == a ? void 0 : a.id_str }) : null
           return t && l && i
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: Ae }),
-                r.a.createElement(xe.a, {
+                r.a.createElement(P, { text: Ae }),
+                r.a.createElement(Pe.a, {
                   avatarUri: t,
                   decoration: o,
                   displayMode: 'UserDetailed',
@@ -632,7 +632,7 @@
           return r.a.createElement(
             N.a,
             null,
-            r.a.createElement(x, { text: Ge }),
+            r.a.createElement(P, { text: Ge }),
             r.a.createElement(
               U,
               null,
@@ -762,9 +762,9 @@
             I = w[0],
             R = w[1],
             L = r.a.useState(!0),
-            P = y()(L, 2),
-            x = P[0],
-            O = P[1],
+            x = y()(L, 2),
+            P = x[0],
+            O = x[1],
             A = Object(ea.h)(),
             U = A.handleMediaDetailZoomed,
             Q = A.handleMediaItemTapped,
@@ -833,16 +833,16 @@
               return r.a.createElement(c.a, { to: '/'.concat(C) })
             },
             ae = function () {
-              O(!x)
+              O(!P)
             },
             ne = function (e) {
               return e
                 ? null
                 : r.a.createElement($e.a, {
-                    accessibilityLabel: x ? ra : la,
+                    accessibilityLabel: P ? ra : la,
                     dominantColor: X.rgb,
-                    hoverLabel: { label: x ? ia : oa },
-                    icon: x ? r.a.createElement(aa.a, null) : r.a.createElement(na.a, null),
+                    hoverLabel: { label: P ? ia : oa },
+                    icon: P ? r.a.createElement(aa.a, null) : r.a.createElement(na.a, null),
                     onClick: ae,
                     type: 'onMediaDominantColorFilled',
                   })
@@ -901,7 +901,7 @@
                   N.a,
                   { style: ca.container },
                   r.a.createElement(N.a, { style: ca.media }, te()),
-                  x ? r.a.createElement(Ze, { user: z }) : null,
+                  P ? r.a.createElement(Ze, { user: z }) : null,
                 )
               : r.a.createElement(
                   N.a,
@@ -978,7 +978,7 @@
               {
                 alias: 'user',
                 args: (l = [
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',
@@ -1529,8 +1529,8 @@
         D = n('vMjK'),
         L = n('MWbm'),
         M = n('IG7M'),
-        P = n('rHpw'),
-        x = function (e) {
+        x = n('rHpw'),
+        P = function (e) {
           var a = e.children,
             n = e.promotedContent,
             t = e.user
@@ -1546,7 +1546,7 @@
             }),
           )
         },
-        O = P.a.create(function (e) {
+        O = x.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
         A = n('uIZp'),
@@ -1646,7 +1646,7 @@
             : null
         },
         ne = function (e) {
-          return E.a.createElement(x, { promotedContent: e.promotedContent, user: e.user }, ae(e))
+          return E.a.createElement(P, { promotedContent: e.promotedContent, user: e.user }, ae(e))
         },
         te = function (e) {
           return E.a.createElement(M.a, {
@@ -1925,7 +1925,7 @@
           )
         })(E.a.Component)
       v()(le, 'contextType', H.a), v()(le, 'defaultProps', $.defaultProps)
-      var re = P.a.create(function (e) {
+      var re = x.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(W.a)(Object(G.a)(I($)))
@@ -2603,7 +2603,7 @@
         M = function (e) {
           return (0, e.render)({ fetchStatus: F.a.LOADING, data: null, error: null, retry: C.a })
         },
-        P = (function (e) {
+        x = (function (e) {
           m()(n, e)
           var a = f()(n)
           function n() {
@@ -2642,7 +2642,7 @@
             n
           )
         })(v.a.Component),
-        x = function (e) {
+        P = function (e) {
           var a = e.query,
             n = e.queryRef,
             t = e.render,
@@ -2681,12 +2681,12 @@
                       v.a.Suspense,
                       { fallback: v.a.createElement(M, { render: i }) },
                       v.a.createElement(
-                        P,
+                        x,
                         { errorHandler: m(a.errorConfig.options || {}), key: u.fetchKey, retry: g },
                         function (a, n) {
                           return a
                             ? i({ fetchStatus: F.a.FAILED, error: a, data: null, retry: n })
-                            : v.a.createElement(x, { query: e, queryRef: u, render: i })
+                            : v.a.createElement(P, { query: e, queryRef: u, render: i })
                         },
                       ),
                     )

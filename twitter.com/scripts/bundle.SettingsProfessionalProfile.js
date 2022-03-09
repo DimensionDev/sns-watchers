@@ -368,7 +368,7 @@
               s.a.createElement(
                 y.a,
                 { style: ye.categoryDisplaySwitchContainer },
-                s.a.createElement(I.b, { color: 'normal' }, ie),
+                s.a.createElement(I.b, null, ie),
                 s.a.createElement(U.a, { onValueChange: X, value: Q }),
               ),
               s.a.createElement(
@@ -480,7 +480,7 @@
                 alias: null,
                 args: (t = [
                   { kind: 'Variable', name: 'display_category', variableName: 'displayCategory' },
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'UserProfessionalCategoriesDisplayUpdateResponse',
@@ -711,7 +711,7 @@
                 alias: 'user',
                 args: (s = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'rest_id' },
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                 ]),
                 concreteType: 'UserResults',
                 kind: 'LinkedField',
@@ -898,7 +898,7 @@
               {
                 alias: null,
                 args: (s = [
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'SwitchToNonProfessionalResponse',
@@ -1149,7 +1149,7 @@
                 alias: null,
                 args: (t = [
                   { kind: 'Variable', name: 'professional_type', variableName: 'professionalType' },
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'UserProfessionalTypeUpdateResponse',

@@ -1719,7 +1719,7 @@
               flexDirection: 'row',
               flexGrow: 1,
             },
-            headerTextAndThumbnailContainer: { flexDirection: 'row', width: '80%' },
+            headerTextAndThumbnailContainer: { flexDirection: 'row', width: '100%' },
             callToActionContainer: {
               paddingVertical: e.spaces.space12,
               paddingHorizontal: e.spaces.space12,
@@ -1729,7 +1729,12 @@
               flexGrow: 1,
             },
             icon: { color: e.colors.text, paddingLeft: e.spaces.space12, flexShrink: 0 },
-            birdwatchIcon: { marginRight: e.spacesPx.space4, padding: e.spacesPx.space2, color: e.colors.primary },
+            birdwatchIcon: {
+              marginRight: e.spacesPx.space4,
+              padding: e.spacesPx.space2,
+              color: e.colors.primary,
+              flexShrink: 0,
+            },
             thumbnail: { color: e.colors.whiteOnColor },
             subtitle: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12 },
           }
@@ -2180,7 +2185,7 @@
             E.a,
             { style: [mt.root, i] },
             C.a.createElement(ct.a, { style: [mt.icon, a ? mt.withGray700 : null] }),
-            C.a.createElement(x.b, { color: a ? 'gray700' : 'normal', nativeID: t, size: 'subtext2' }, dt(n)),
+            C.a.createElement(x.b, { color: a ? 'gray700' : 'text', nativeID: t, size: 'subtext2' }, dt(n)),
           )
         },
         mt = P.a.create(function (e) {
@@ -3996,7 +4001,7 @@
                                     contextType: l,
                                     iconSize: 'xLarge',
                                     iconStyle: Cn.iconStyle,
-                                    textColor: 'normal',
+                                    textColor: 'text',
                                     textSize: 'headline1',
                                     text: r.text,
                                     topicData: void 0,
@@ -12481,7 +12486,7 @@
             return {
               canShowReactionsEducation: be,
               composerData: we,
-              dataSaverMode: pe.k,
+              dataSaverMode: pe.j,
               isArticleDomainMatched: Ee,
               isCommunityMember: ke,
               likeTransitionAnimation: Ie,
@@ -12493,7 +12498,7 @@
               wasArticleVisited: Te,
               bookmarkFolderName: Se,
               daysSinceDownvoteEducation: ge,
-              replyVotingSurveyClicked: pe.y,
+              replyVotingSurveyClicked: pe.x,
             }
           })
           .adjustStateProps(function (e, t) {
@@ -12554,7 +12559,7 @@
               updateCounts: ve.a.updateCounts,
               resetDraft: Z.f,
               setArticlesVisited: me.e,
-              setReplyVotingSurveyClicked: pe.K,
+              setReplyVotingSurveyClicked: pe.J,
               setTweetMisinfoActionTaken: he.b,
               updateLiveCounts: fe.b,
             }

@@ -23,7 +23,7 @@
         v = n('0KEI'),
         C = Object(g.a)()
           .propsFromState(function () {
-            return { fetchStatus: y.o, loggedInUser: b.e.selectLoggedInUser }
+            return { fetchStatus: y.n, loggedInUser: b.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {

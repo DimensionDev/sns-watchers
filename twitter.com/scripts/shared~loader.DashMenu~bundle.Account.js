@@ -374,7 +374,7 @@
             return {
               createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)('DASH_MENU_CONTAINER'),
               fetchPendingFollowersIfNeeded: k.d,
-              updateDataSaverMode: g.L,
+              updateDataSaverMode: g.K,
             }
           })
           .withAnalytics(),
@@ -407,7 +407,7 @@
                 T.a,
                 { style: L.a.item },
                 n ? f.a.createElement(n, { style: a ? [L.a.icon, { color: a }] : L.a.icon }) : null,
-                f.a.createElement(B.b, { color: 'normal', numberOfLines: 1, style: L.a.itemLabel }, i),
+                f.a.createElement(B.b, { numberOfLines: 1, style: L.a.itemLabel }, i),
                 t
                   ? f.a.createElement(
                       T.a,

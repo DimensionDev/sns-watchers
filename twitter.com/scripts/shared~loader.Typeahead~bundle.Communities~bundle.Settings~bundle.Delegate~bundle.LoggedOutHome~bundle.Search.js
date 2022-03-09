@@ -248,7 +248,7 @@
           h = e.perspective,
           w = e.renderTimestamp,
           x = e.textColor,
-          I = void 0 === x ? 'normal' : x,
+          I = void 0 === x ? 'text' : x,
           E = e.titleWeight,
           C = void 0 === E ? 'bold' : E,
           k = e.withParticipantsCount,
@@ -1213,7 +1213,7 @@
                         count: t,
                         standalone: !0,
                         style: _.userDecoration,
-                        textColor: 'normal',
+                        textColor: 'text',
                         truncatedCountFormatter: function () {
                           return ''
                         },

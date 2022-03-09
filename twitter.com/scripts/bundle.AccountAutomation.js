@@ -108,7 +108,7 @@
         _ = n('0KEI'),
         y = Object(C.a)()
           .propsFromState(function () {
-            return { fetchStatus: g.o, loggedInUser: E.e.selectLoggedInUser }
+            return { fetchStatus: g.n, loggedInUser: E.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {

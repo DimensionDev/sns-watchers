@@ -150,7 +150,7 @@
               socialContext: C,
               contextTweetId: T,
               rootTweet: u.a.createHydratedTweetSelector(x),
-              showTweetMediaDetailDrawer: w.B,
+              showTweetMediaDetailDrawer: w.A,
             }
           })
           .propsFromActions(function () {
@@ -160,7 +160,7 @@
               ),
               fetchTweetIfNeeded: u.a.fetchOneIfNeeded,
               googleAnalyticsPageView: d.a,
-              updateSettings: w.N,
+              updateSettings: w.M,
             }
           })
           .withAnalytics({ page: 'tweet', section: 'media' }),
@@ -175,11 +175,11 @@
         j = n('2VqO'),
         D = n.n(j),
         H = n('KEM+'),
-        N = n.n(H),
-        R = (n('uFXj'), n('ymux')),
+        R = n.n(H),
+        N = (n('uFXj'), n('ymux')),
         W = n('rkhm'),
-        B = n('iyiT'),
-        F = n('oQhu'),
+        F = n('iyiT'),
+        B = n('oQhu'),
         K = n('AUxQ'),
         z = n('rHpw'),
         V = n('yw4N'),
@@ -193,18 +193,18 @@
             for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              N()(
+              R()(
                 O()(e),
                 '_getApiErrorHandlerMap',
-                Object(F.a)(function (e) {
+                Object(B.a)(function (e) {
                   return Object(W.a)(e)
                 }),
               ),
-              N()(
+              R()(
                 O()(e),
                 '_getModule',
-                Object(F.a)(function (e, t) {
-                  return Object(R.a)({ focalTweetId: e, featureSwitches: t })
+                Object(B.a)(function (e, t) {
+                  return Object(N.a)({ focalTweetId: e, featureSwitches: t })
                 }),
               ),
               e
@@ -249,13 +249,13 @@
             n
           )
         })(l.a.Component)
-      N()(q, 'contextType', X.a)
+      R()(q, 'contextType', X.a)
       var U = z.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
               overflow: 'auto',
-              width: B.a,
+              width: F.a,
               borderLeftWidth: e.borderWidths.small,
               borderColor: e.colors.borderColor,
               borderStyle: 'solid',
@@ -295,7 +295,7 @@
         xe = G.a.f1d9930c,
         Ie = G.a.a0e81a2e,
         Me = function (e) {
-          return e - B.a < B.b
+          return e - F.a < F.b
         },
         Se = function (e) {
           var t = l.a.useContext(de.b).isModal,
@@ -366,11 +366,11 @@
                 t = j()
               return t && t[e]
             },
-            N = function (e) {
+            R = function (e) {
               var t = P()
               return t ? r()(r()({}, T.state), {}, { mediaItems: r()(r()({}, t), {}, { index: e }) }) : T.state
             },
-            R = function (e) {
+            N = function (e) {
               return e && Me(e) ? u : S
             },
             W = l.a.useCallback(
@@ -388,7 +388,7 @@
               },
               [E, C, M, _],
             ),
-            B = l.a.useCallback(
+            F = l.a.useCallback(
               function () {
                 if (_) {
                   var e = oe.a.getTweetItem(_)
@@ -397,7 +397,7 @@
               },
               [m, g, _],
             ),
-            F = function () {
+            B = function () {
               E.goBackThroughModals()
             },
             K = l.a.useCallback(
@@ -425,7 +425,7 @@
                   data: { event_value: e + 1 },
                 })
                 var a = n && n[e]
-                E.replace({ state: N(e), pathname: a && a.expanded_url })
+                E.replace({ state: R(e), pathname: a && a.expanded_url })
               }
             },
             X = function (e) {
@@ -443,7 +443,7 @@
             q = function (e) {
               var n = H(),
                 a = Object(he.b)(n),
-                r = e && R(e)
+                r = e && N(e)
               return t
                 ? l.a.createElement(me.a, {
                     accessibilityLabel: r ? Te : Ee,
@@ -474,7 +474,7 @@
                 dominantColor: r,
                 mediaIndex: e,
                 mediaItems: t,
-                onDismiss: F,
+                onDismiss: B,
                 onMediaDetailZoomed: a,
                 onMediaItemChanged: V,
                 onTap: o,
@@ -512,7 +512,7 @@
                     : void 0,
                   hideButtons: c,
                   mediaItem: t,
-                  onCloseButtonPress: F,
+                  onCloseButtonPress: B,
                   overlayFooter: a,
                   topRightButton: q(e),
                 },
@@ -532,9 +532,9 @@
               function () {
                 var e
                 ;(null === (e = $.current) || void 0 === e ? void 0 : e.id_str) !== (null == _ ? void 0 : _.id_str) &&
-                  (B(), ($.current = _))
+                  (F(), ($.current = _))
               },
-              [B, _],
+              [F, _],
             ),
             l.a.useEffect(
               function () {
@@ -552,7 +552,7 @@
                       le.a,
                       { style: ke.container },
                       l.a.createElement(le.a, { style: ke.neighbor }, Y(t)),
-                      R(t)
+                      N(t)
                         ? l.a.createElement(Z, {
                             contextTweetId: w,
                             location: T,

@@ -907,7 +907,7 @@
                     ? g.a.createElement(
                         N.a,
                         { style: [F.a.infoItem, F.a.bottomBorder], testID: T },
-                        g.a.createElement(M.b, { color: 'normal', weight: 'bold' }, W),
+                        g.a.createElement(M.b, { weight: 'bold' }, W),
                         g.a.createElement(
                           M.b,
                           { color: 'gray700', style: F.a.helpText },
@@ -920,7 +920,7 @@
                     ? g.a.createElement(
                         N.a,
                         { style: [F.a.infoItem, F.a.bottomBorder], testID: L },
-                        g.a.createElement(M.b, { color: 'normal', weight: 'bold' }, $),
+                        g.a.createElement(M.b, { weight: 'bold' }, $),
                         g.a.createElement(
                           M.b,
                           { color: 'gray700', style: F.a.helpText },
@@ -932,7 +932,7 @@
                   g.a.createElement(
                     N.a,
                     { style: F.a.infoItem, testID: R },
-                    g.a.createElement(M.b, { color: 'normal', weight: 'bold' }, re),
+                    g.a.createElement(M.b, { weight: 'bold' }, re),
                     e._fsSettingsRevamp
                       ? g.a.createElement(
                           M.b,
@@ -967,7 +967,7 @@
                         return g.a.createElement(
                           N.a,
                           { key: "device-'".concat(n), style: [F.a.infoItem, r && !a && F.a.bottomBorder] },
-                          g.a.createElement(M.b, { color: 'normal' }, t.name),
+                          g.a.createElement(M.b, null, t.name),
                           g.a.createElement(
                             M.b,
                             { color: 'gray700', style: F.a.helpText },
@@ -1181,7 +1181,7 @@
                     ? g.a.createElement(
                         F.a,
                         { style: [x.a.infoItem, x.a.bottomBorder] },
-                        g.a.createElement(O.b, { color: 'normal' }, K),
+                        g.a.createElement(O.b, null, K),
                         g.a.createElement(O.b, { color: 'gray700', style: x.a.helpText }, Y(new Date(i.created_at))),
                         s.creation_ip && s.country
                           ? g.a.createElement(
@@ -1215,7 +1215,7 @@
                     ? g.a.createElement(
                         F.a,
                         { style: [x.a.infoItem, x.a.bottomBorder] },
-                        g.a.createElement(O.b, { color: 'normal' }, Q),
+                        g.a.createElement(O.b, null, Q),
                         n ? g.a.createElement(O.b, { color: 'gray700', size: 'subtext2' }, u) : null,
                         g.a.createElement(
                           O.b,
@@ -2255,7 +2255,7 @@
                       return g.a.createElement(
                         w.a,
                         { key: "hist-'".concat(t), style: [A.a.infoItem, A.a.bottomBorder] },
-                        g.a.createElement(D.b, { color: 'normal' }, e.app_name),
+                        g.a.createElement(D.b, null, e.app_name),
                         g.a.createElement(D.b, { color: 'gray700', style: A.a.helpText }, L(new Date(e.time))),
                         g.a.createElement(
                           D.b,

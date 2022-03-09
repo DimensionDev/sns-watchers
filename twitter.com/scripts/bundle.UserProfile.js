@@ -199,7 +199,7 @@
               {
                 alias: null,
                 args: (r = [
-                  { kind: 'Literal', name: 's', value: 49 },
+                  { kind: 'Literal', name: 's', value: 50 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screen_name' },
                 ]),
                 concreteType: 'UserResults',
@@ -819,7 +819,7 @@
         },
         _ = Object(g.g)([g.a]),
         y = Object(s.createSelector)(
-          o.l,
+          o.k,
           function (e, t) {
             return _(e, h(0, t))
           },
@@ -2497,7 +2497,7 @@
         },
         nn = Object(V.a)()
           .propsFromState(function () {
-            return { shouldShowEducation: an }
+            return { shouldShowEducation: an, isLoggedIn: f.m }
           })
           .propsFromActions(function () {
             return {
@@ -2596,30 +2596,31 @@
         vn = nn(function (e) {
           var t = e.addEducationFlag,
             a = e.analytics,
-            n = e.onEducationSheetDismiss,
-            r = e.shouldShowEducation,
-            l = i.a.useContext(z.a).featureSwitches,
-            o = r && !0 === l.getValueWithoutScribeImpression('responsive_web_nft_avatar'),
-            s =
-              (o && l.getStringValue('responsive_web_nft_avatar_help_link')) ||
+            n = e.isLoggedIn,
+            r = e.onEducationSheetDismiss,
+            l = e.shouldShowEducation,
+            o = i.a.useContext(z.a).featureSwitches,
+            s = l && n && !0 === o.getValueWithoutScribeImpression('responsive_web_nft_avatar'),
+            c =
+              (s && o.getStringValue('responsive_web_nft_avatar_help_link')) ||
               'https://help.twitter.com/managing-your-account/nfts-on-twitter',
-            c = function () {
-              n(), t()
+            u = function () {
+              r(), t()
             }
           i.a.useEffect(
             function () {
-              return o && a.scribe({ action: 'impression' }), c
+              return s && a.scribe({ action: 'impression' }), u
             },
-            [o],
+            [s],
           )
-          var u = i.a.createElement(
+          var d = i.a.createElement(
             X.a.I18NFormatMessage,
             { $i18n: 'fa13e739' },
             i.a.createElement(
               We.b,
               {
                 color: 'primary',
-                link: s,
+                link: c,
                 onPress: function () {
                   a.scribe({ element: 'learn_more', action: 'click' })
                 },
@@ -2628,7 +2629,7 @@
               X.a.d8af538e,
             ),
           )
-          return o
+          return s
             ? i.a.createElement(on.a, {
                 accessibilityRole: 'dialog',
                 actionLabel: fn,
@@ -2644,30 +2645,22 @@
                 headline: pn,
                 isFullHeightOnMobile: !0,
                 onAction: function () {
-                  a.scribe({ element: 'ok_button', action: 'click' }), c()
+                  a.scribe({ element: 'ok_button', action: 'click' }), u()
                 },
-                onClose: c,
+                onClose: u,
                 subtext: i.a.createElement(
                   ce.a,
                   null,
                   i.a.createElement(
                     ce.a,
                     null,
-                    i.a.createElement(
-                      We.b,
-                      { color: 'normal', size: 'headline2', style: yn.heading, weight: 'bold' },
-                      gn,
-                    ),
-                    i.a.createElement(We.b, null, u),
+                    i.a.createElement(We.b, { size: 'headline2', style: yn.heading, weight: 'bold' }, gn),
+                    i.a.createElement(We.b, null, d),
                   ),
                   i.a.createElement(
                     ce.a,
                     null,
-                    i.a.createElement(
-                      We.b,
-                      { color: 'normal', size: 'headline2', style: yn.heading, weight: 'bold' },
-                      hn,
-                    ),
+                    i.a.createElement(We.b, { size: 'headline2', style: yn.heading, weight: 'bold' }, hn),
                     i.a.createElement(
                       ce.a,
                       { style: yn.iconContainer },
@@ -2688,7 +2681,7 @@
                         ln.a,
                         { style: yn.label },
                         i.a.createElement(dn, { style: yn.labelIcon }),
-                        i.a.createElement(We.b, { color: 'normal', weight: 'bold' }, mn),
+                        i.a.createElement(We.b, { weight: 'bold' }, mn),
                       ),
                     ),
                   ),

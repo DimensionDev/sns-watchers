@@ -178,7 +178,7 @@
                       v.a.createElement(
                         b.b,
                         {
-                          color: l ? 'whiteOnColor' : 'normal',
+                          color: l ? 'whiteOnColor' : 'text',
                           numberOfLines: 1,
                           selectable: !1,
                           style: L.text,

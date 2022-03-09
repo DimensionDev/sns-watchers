@@ -57,7 +57,7 @@
         l = n('5oBF'),
         d = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: l.e, undoTweetSettings: u.q }
+            return { previewTweet: l.e, undoTweetSettings: u.p }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -125,9 +125,9 @@
             D = R[0],
             j = R[1],
             k = o.a.useState(1e3 * parseInt(p, 10)),
-            q = i()(k, 1)[0],
-            F = o.a.useState(parseInt(d, 10) - q),
-            L = (function (e, t) {
+            F = i()(k, 1)[0],
+            L = o.a.useState(parseInt(d, 10) - F),
+            P = (function (e, t) {
               var n = o.a.useState(0),
                 a = i()(n, 2),
                 r = a[0],
@@ -150,8 +150,8 @@
                 ),
                 r
               )
-            })(q, i()(F, 1)[0])
-          if (L >= 1) return null
+            })(F, i()(L, 1)[0])
+          if (P >= 1) return null
           return 'number' != typeof d
             ? null
             : o.a.createElement(
@@ -177,7 +177,7 @@
                   o.a.createElement(
                     w.a,
                     { style: I.timerWrapper },
-                    o.a.createElement(y.a, { accessibilityLabel: h, count: L, maxCount: 1 }),
+                    o.a.createElement(y.a, { accessibilityLabel: h, count: P, maxCount: 1 }),
                   ),
                   !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, S),
                 ),

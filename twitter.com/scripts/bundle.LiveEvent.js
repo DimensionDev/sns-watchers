@@ -111,7 +111,7 @@
         m = function (e) {
           var t = e.author,
             n = e.color,
-            a = void 0 === n ? 'normal' : n,
+            a = void 0 === n ? 'text' : n,
             i = e.size,
             o = void 0 === i ? 'subtext2' : i,
             l = e.style,

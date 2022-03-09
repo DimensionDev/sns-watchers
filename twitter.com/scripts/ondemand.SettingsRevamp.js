@@ -136,8 +136,8 @@
           ),
         )
       }
-      var N = E(j)
-      t.default = N
+      var D = E(j)
+      t.default = D
     },
     '21nk': function (e, t, a) {
       'use strict'
@@ -590,7 +590,7 @@
         v = a('0KEI'),
         S = Object(y.a)()
           .propsFromState(function () {
-            return { fetchStatus: E.o, loggedInUser: g.e.selectLoggedInUser }
+            return { fetchStatus: E.n, loggedInUser: g.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
@@ -901,10 +901,10 @@
         m = a('rxPX'),
         p = Object(m.a)()
           .propsFromState(function () {
-            return { undoTweetSettings: d.q, userClaimsFetchStatus: u.c }
+            return { undoTweetSettings: d.p, userClaimsFetchStatus: u.c }
           })
           .propsFromActions(function () {
-            return { updateSettings: f.N }
+            return { updateSettings: f.M }
           })
           .withAnalytics({ page: 'settings', section: 'undo_tweet' }),
         b = a('5oBF'),
@@ -943,13 +943,13 @@
           E = m.location,
           F = m.match,
           H = l.a.useContext(s.a),
-          N = H.featureSwitches,
-          D = H.userClaims,
+          D = H.featureSwitches,
+          N = H.userClaims,
           z = (c || b.a).toString(),
           B = Object(_.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
-          K = D.isTrueAndEnabled('subscriptions_feature_1003'),
-          Q = N.isTrue('subscriptions_undo_quote_tweets_enabled'),
-          W = N.isTrue('subscriptions_undo_thread_tweets_enabled'),
+          K = N.isTrueAndEnabled('subscriptions_feature_1003'),
+          Q = D.isTrue('subscriptions_undo_quote_tweets_enabled'),
+          W = D.isTrue('subscriptions_undo_thread_tweets_enabled'),
           X = g.a.i3b7a017,
           V = [5, 10, 20, 30, 60].map(function (e) {
             return { label: X(e), value: e.toString() }
@@ -1208,8 +1208,8 @@
       x.metadata = { width: 24, height: 24 }
       var H = x,
         j = a('aPcQ'),
-        N = a('KrGU'),
-        D = a('OySi'),
+        D = a('KrGU'),
+        N = a('OySi'),
         z = s.a.cad53943,
         B = s.a.df5fa1d0,
         K = s.a.a244ed50,
@@ -1288,7 +1288,7 @@
                     { label: re, description: ce, link: '/settings/contacts', Icon: P },
                   ].filter(Boolean)
                 })({ includeSafetyMode: s, includeSpacesSection: v }).map(function (e) {
-                  return i.a.createElement(D.b, r()({}, e, { key: e.label }))
+                  return i.a.createElement(N.b, r()({}, e, { key: e.label }))
                 }),
                 i.a.createElement(E.a, null),
                 i.a.createElement(h.b, { text: ie }),
@@ -1300,14 +1300,14 @@
                   n ? { label: se, description: ue, link: '/settings/cookie_preferences', Icon: U } : void 0,
                   { label: de, description: fe, link: '/settings/off_twitter_activity', Icon: H },
                   { label: me, description: pe, link: '/settings/data_sharing_with_business_partners', Icon: j.a },
-                  { label: be, description: he, link: '/settings/location_information', Icon: N.a },
+                  { label: be, description: he, link: '/settings/location_information', Icon: D.a },
                 ].filter(Boolean)).map(function (e) {
-                  return i.a.createElement(D.b, r()({}, e, { key: e.label }))
+                  return i.a.createElement(N.b, r()({}, e, { key: e.label }))
                 }),
                 i.a.createElement(E.a, null),
                 i.a.createElement(h.b, { text: Ee }),
                 _e.map(function (e) {
-                  return i.a.createElement(D.a, r()({}, e, { key: e.label }))
+                  return i.a.createElement(N.a, r()({}, e, { key: e.label }))
                 }),
               ),
             ),
@@ -1637,10 +1637,10 @@
         s = a('rxPX'),
         u = Object(s.a)()
           .propsFromState(function () {
-            return { sharingAudiospacesListeningDataWithFollowersEnabled: l.A }
+            return { sharingAudiospacesListeningDataWithFollowersEnabled: l.z }
           })
           .propsFromActions(function () {
-            return { updateSharingAudiospacesListeningDataWithFollowersSetting: l.O }
+            return { updateSharingAudiospacesListeningDataWithFollowersSetting: l.N }
           })
           .withAnalytics({ page: 'settings' }),
         d = a('3XMw'),
@@ -1875,7 +1875,7 @@
                         titleIconCellSize: T,
                       }),
                     ),
-                    N =
+                    D =
                       P || (A && L)
                         ? null
                         : y.a.createElement(_.a.Configure, {
@@ -1894,7 +1894,7 @@
                             withSearchBox: R,
                             withTweetButton: I,
                           })
-                  return y.a.createElement(y.a.Fragment, null, N, j)
+                  return y.a.createElement(y.a.Fragment, null, D, j)
                 },
               },
             ]),
@@ -2055,7 +2055,7 @@
                 r.a.createElement(
                   p.a,
                   { style: R.safetyModeToggleContainer },
-                  r.a.createElement(h.b, { color: 'normal' }, y),
+                  r.a.createElement(h.b, null, y),
                   a
                     ? r.a.createElement(E.a, { onValueChange: g, value: a })
                     : r.a.createElement(
@@ -2151,7 +2151,7 @@
                 'AUDIENCE_AND_TAGGING_SCREEN',
               ),
               patchUser: f.e.patchUser,
-              updateSettings: u.N,
+              updateSettings: u.M,
             }
           }),
         h = a('3XMw'),
@@ -2453,7 +2453,7 @@
           },
         })
       }
-      function N(e) {
+      function D(e) {
         var t = e.addToast,
           a = e.analytics,
           n = e.block,
@@ -2506,7 +2506,7 @@
                 i.a.createElement(v.a, null),
                 i.a.createElement(j, e),
                 i.a.createElement(H, e),
-                i.a.createElement(N, e),
+                i.a.createElement(D, e),
               )
         )
       })
@@ -2727,7 +2727,7 @@
             return { nsfwUserEnabled: t.nsfw_user, nsfwAdminEnabled: t.nsfw_admin }
           })
           .propsFromActions(function () {
-            return { updateSettings: s.N }
+            return { updateSettings: s.M }
           }),
         f = a('3XMw'),
         m = a.n(f),
@@ -2882,7 +2882,7 @@
         f = a('0KEI'),
         m = Object(d.a)()
           .propsFromState(function () {
-            return { nsfwMediaFilter: u.r, settings: u.g }
+            return { nsfwMediaFilter: u.q, settings: u.g }
           })
           .adjustStateProps(function (e) {
             var t = e.nsfwMediaFilter,
@@ -2896,8 +2896,8 @@
           })
           .propsFromActions(function () {
             return {
-              updateSettings: u.N,
-              updateDmNsfwMediaFilter: u.M,
+              updateSettings: u.M,
+              updateDmNsfwMediaFilter: u.L,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'DIRECT_MESSAGES_SCREEN',
               ),
@@ -3270,8 +3270,8 @@
         x = A.a.jc02ae67,
         H = A.a.e5e8a899,
         j = A.a.ge06310e,
-        N = A.a.dd1b86f9,
-        D = A.a.ee4b16f8,
+        D = A.a.dd1b86f9,
+        N = A.a.ee4b16f8,
         z = 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
         B = { page: 'settings', section: 'connected_apps' },
         K = (function (e) {
@@ -3303,11 +3303,11 @@
                       h.a.createElement(F.b, { link: z }, A.a.b63b0b1c),
                     ),
                   }),
-                  t.length ? null : h.a.createElement(L.a, { header: j, message: D }),
+                  t.length ? null : h.a.createElement(L.a, { header: j, message: N }),
                   t.map(function (e, t) {
                     var a = '/settings/applications/'.concat(e.app_id)
                     return h.a.createElement(R.a, {
-                      description: e.organization ? N({ name: e.organization }) : null,
+                      description: e.organization ? D({ name: e.organization }) : null,
                       key: e.app_id,
                       label: e.name,
                       link: a,
@@ -3588,21 +3588,21 @@
         x = a('0yYu'),
         H = a('t62R'),
         j = a('3XMw'),
-        N = a.n(j),
-        D = N.a.dd823129,
-        z = N.a.c2cb5560,
-        B = N.a.bca43fd0,
-        K = N.a.bef6fc56,
-        Q = N.a.bbe9579b,
-        W = N.a.b850cbd0,
-        X = N.a.ae1bbb26,
-        V = N.a.i859a9d3,
-        G = N.a.e5e8a899,
-        q = N.a.cf3e3164,
-        Y = N.a.f810f279,
-        J = N.a.a19f4b20,
-        Z = N.a.e25e40f0,
-        $ = N.a.d1baa458,
+        D = a.n(j),
+        N = D.a.dd823129,
+        z = D.a.c2cb5560,
+        B = D.a.bca43fd0,
+        K = D.a.bef6fc56,
+        Q = D.a.bbe9579b,
+        W = D.a.b850cbd0,
+        X = D.a.ae1bbb26,
+        V = D.a.i859a9d3,
+        G = D.a.e5e8a899,
+        q = D.a.cf3e3164,
+        Y = D.a.f810f279,
+        J = D.a.a19f4b20,
+        Z = D.a.e25e40f0,
+        $ = D.a.d1baa458,
         ee = { page: 'settings', section: 'sessions' },
         te = (function (e) {
           f()(a, e)
@@ -3662,7 +3662,7 @@
                       null,
                       g.a.createElement(
                         P.a,
-                        { location: n, title: D },
+                        { location: n, title: N },
                         g.a.createElement(T.a, {
                           accessibilityLabel: G,
                           fetchStatus: a,
@@ -3703,7 +3703,7 @@
                           I.a,
                           null,
                           g.a.createElement(
-                            N.a.I18NFormatMessage,
+                            D.a.I18NFormatMessage,
                             { $i18n: 'i34eeb36', infoText: a > 1 ? J({ num: a - 1 }) : Z },
                             g.a.createElement(
                               H.b,
@@ -3711,7 +3711,7 @@
                                 link: 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
                                 withInteractiveStyling: !1,
                               },
-                              N.a.j3223a5b({ learnMoreLabel: V }),
+                              D.a.j3223a5b({ learnMoreLabel: V }),
                             ),
                           ),
                         ),
@@ -4004,8 +4004,8 @@
         x = a('OySi'),
         H = m.a.ed21f885,
         j = m.a.je84decd,
-        N = m.a.de43eaf2,
-        D = m.a.i65802df,
+        D = m.a.de43eaf2,
+        N = m.a.i65802df,
         z = m.a.a21b8ad2,
         B = m.a.hd885aef,
         K = m.a.je4ccd3a,
@@ -4045,7 +4045,7 @@
           I = k.isTrueAndEnabled('subscriptions_feature_1006'),
           oe = m.isTrue('subscriptions_management_enabled'),
           se = [
-            { label: N, description: J, link: '/settings/undo_tweet', Icon: T.a, shouldRender: F },
+            { label: D, description: J, link: '/settings/undo_tweet', Icon: T.a, shouldRender: F },
             { label: Q, description: W, link: '/settings/t1_labs', Icon: P, shouldRender: L },
             { label: X, description: V, link: '/i/articles', Icon: A.a, shouldRender: R },
           ],
@@ -4090,7 +4090,7 @@
                       r.a.createElement(
                         r.a.Fragment,
                         null,
-                        r.a.createElement(v.b, { testID: E, text: D }),
+                        r.a.createElement(v.b, { testID: E, text: N }),
                         r.a.createElement(x.a, {
                           description: Z,
                           label: z,
@@ -4169,7 +4169,7 @@
           })
           .propsFromActions(function () {
             return {
-              updateSettings: s.N,
+              updateSettings: s.M,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'CONTENT_YOU_SEE_SCREEN',
               ),

@@ -283,7 +283,6 @@
                 x.b,
                 {
                   align: le ? 'center' : 'left',
-                  color: 'normal',
                   size: 'title4',
                   style: t ? ce.titleMobile : ce.titleDesktop,
                   weight: 'bold',

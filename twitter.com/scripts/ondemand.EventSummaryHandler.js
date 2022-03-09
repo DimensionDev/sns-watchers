@@ -77,13 +77,13 @@
         b = (n('2G9S'), n('ERkP')),
         y = n.n(b),
         E = n('nT9l'),
-        S = n('3XMw'),
-        x = n.n(S),
+        x = n('3XMw'),
+        S = n.n(x),
         w = 'image',
         k = n('TIdA'),
         T = n('a6qo'),
         I = ['accessibilityLabel', 'hideAcceptOverlay', 'shouldShowAltLabel'],
-        P = x.a.f93bb3ee,
+        P = S.a.f93bb3ee,
         M = (function (e) {
           v()(n, e)
           var t = h()(n)
@@ -195,22 +195,22 @@
         b = n('Zejx'),
         y = n('G6rE'),
         E = n('rxPX'),
-        S = n('0KEI'),
-        x = function (e, t) {
+        x = n('0KEI'),
+        S = function (e, t) {
           return t.entry.content
         },
         w = function (e, t) {
-          var n = x(0, t),
+          var n = S(0, t),
             r = n.socialContext && n.socialContext.topicContext && n.socialContext.topicContext.topicId
           return r ? b.a.select(e, r) : void 0
         },
         k = function (e, t) {
-          var n = x(0, t).publisherId
+          var n = S(0, t).publisherId
           return n ? y.e.select(e, n) : void 0
         },
         T = Object(E.a)()
           .propsFromState(function () {
-            return { eventSummary: x, publisher: k, topic: w }
+            return { eventSummary: S, publisher: k, topic: w }
           })
           .adjustStateProps(function (e) {
             var t = e.eventSummary,
@@ -248,7 +248,7 @@
           .propsFromActions(function () {
             return {
               logTrend: g.c,
-              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)('URT_EVENT_SUMMARY'),
+              createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('URT_EVENT_SUMMARY'),
             }
           })
           .withAnalytics(),
@@ -268,7 +268,7 @@
         },
         L = Object(E.a)()
           .propsFromState(function () {
-            return { dataSaverMode: M.k, eventSummary: _, hasProminentSocialContext: F, topic: O }
+            return { dataSaverMode: M.j, eventSummary: _, hasProminentSocialContext: F, topic: O }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -320,7 +320,7 @@
             i = e.promotedTrendDescription,
             c = e.publisher,
             l = e.publisherTitleColor,
-            s = void 0 === l ? 'normal' : l,
+            s = void 0 === l ? 'text' : l,
             u = e.richContext,
             d = e.scoreEvent,
             p = e.shouldTruncateTitle,
@@ -332,8 +332,8 @@
             b = e.title,
             y = e.titleFontSize,
             E = void 0 === y ? 'body' : y,
-            S = e.titleWeight,
-            x = void 0 === S ? 'bold' : S,
+            x = e.titleWeight,
+            S = void 0 === x ? 'bold' : x,
             w = b.replace('#', '').charAt(0).match(q) ? 'rtl' : 'ltr',
             k = r ? void 0 : Q.title
           return m.a.createElement(
@@ -350,7 +350,7 @@
                 ),
             m.a.createElement(
               z.b,
-              { color: s, dir: w, numberOfLines: p ? 3 : void 0, size: E, style: k, weight: x, withHashflags: !0 },
+              { color: s, dir: w, numberOfLines: p ? 3 : void 0, size: E, style: k, weight: S, withHashflags: !0 },
               b,
             ),
             m.a.createElement(V.a, { groupedTrends: n, linkColor: a, textColor: g }),
@@ -466,11 +466,11 @@
             b = e.supportingText,
             y = e.timeString,
             E = e.title,
-            S = e.topic
+            x = e.topic
           m.a.useEffect(function () {
             d && d()
           }, [])
-          var x = m.a.useCallback(
+          var S = m.a.useCallback(
               function () {
                 u(),
                   f &&
@@ -497,12 +497,12 @@
           return m.a.createElement(ie.a.Consumer, null, function (e) {
             return m.a.createElement(
               ce.a,
-              { link: e.withAnchorless(s), onClick: x, style: ve.rootLink, withDarkerInteractiveBackground: l },
+              { link: e.withAnchorless(s), onClick: S, style: ve.rootLink, withDarkerInteractiveBackground: l },
               o && C
                 ? m.a.createElement(
                     le.a,
                     { rightControl: w, style: ve.socialContextRow },
-                    m.a.createElement(pe, { socialContext: C, topic: S }),
+                    m.a.createElement(pe, { socialContext: C, topic: x }),
                   )
                 : null,
               m.a.createElement(
@@ -618,12 +618,12 @@
                 : a.tweetId
           return o ? Ce.a.select(e, o) : void 0
         },
-        Se = function (e, t) {
+        xe = function (e, t) {
           var n,
             r = null === (n = t.entry.content.promotedMetadata) || void 0 === n ? void 0 : n.advertiserId
           return r ? y.e.select(e, r) : void 0
         },
-        xe = function (e) {
+        Se = function (e) {
           var t = e.eventSummary,
             n = e.tweet
           if (n) {
@@ -641,7 +641,7 @@
         },
         we = Object(E.a)()
           .propsFromState(function () {
-            return { advertiser: Se, eventSummary: be, moment: ye, tweet: Ee }
+            return { advertiser: xe, eventSummary: be, moment: ye, tweet: Ee }
           })
           .adjustStateProps(function (e) {
             var t = e.advertiser,
@@ -650,7 +650,7 @@
               a = e.tweet,
               o = n.promotedMetadata
             return {
-              coverMediaFromTweet: xe({ tweet: a, eventSummary: n }),
+              coverMediaFromTweet: Se({ tweet: a, eventSummary: n }),
               manualCrops: Object(he.f)(r),
               promotedContent: o
                 ? {
@@ -956,7 +956,7 @@
           return y
         }),
         n.d(t, 'b', function () {
-          return S
+          return x
         }),
         n.d(t, 'a', function () {
           return w
@@ -1028,7 +1028,7 @@
           }
         },
         E = 'rweb/recentSearches/CLEAR_ALL',
-        S = function () {
+        x = function () {
           return function (e, t, n) {
             n.userPersistence
             e({ type: E })
@@ -1036,11 +1036,11 @@
             return Object(l.m)(t()) ? e(d(r.recentSearches)) : Promise.resolve()
           }
         },
-        x = 'rweb/recentSearches/ADD_QUERY',
+        S = 'rweb/recentSearches/ADD_QUERY',
         w = function (e) {
           return function (t, n, r) {
             r.userPersistence
-            t({ payload: e, type: x })
+            t({ payload: e, type: S })
             var a = n().recentSearches
             return Object(l.m)(n()) ? t(d(a.recentSearches)) : Promise.resolve()
           }
@@ -1071,7 +1071,7 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case x:
+            case S:
               var n = t.payload,
                 r = n ? m(n, e.recentSearches) : []
               return r.length > 49 && r.splice(49, 1), n && r.unshift(n), i()(i()({}, e), {}, { recentSearches: r })

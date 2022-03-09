@@ -2095,14 +2095,14 @@
         de = n('P1r1'),
         pe = Object(H.a)()
           .propsFromState(function () {
-            return { dtabBarInfo: de.n }
+            return { dtabBarInfo: de.m }
           })
           .adjustStateProps(function (e) {
             var t = e.dtabBarInfo
             return { dtabAll: t && t.dtabAll, dtabRweb: t && t.dtabRweb, hide: t && t.hide, ttsToken: t && t.ttsToken }
           })
           .propsFromActions(function () {
-            return { setDtabBarInfo: de.I }
+            return { setDtabBarInfo: de.H }
           }),
         fe = n('8jkQ'),
         he = n('/yvb'),
@@ -2247,7 +2247,7 @@
         Ce = n('M6MT'),
         Oe = n('a/ea'),
         Ie = function (e) {
-          return Object(de.p)(e.getState())
+          return Object(de.o)(e.getState())
             ? (function (e) {
                 var t, n, r
                 return null !== (t = navigator) && void 0 !== t && t.permissions

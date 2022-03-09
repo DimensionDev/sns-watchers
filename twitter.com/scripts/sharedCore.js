@@ -4659,7 +4659,7 @@
                     if (n)
                       return v.a.createElement(
                         y.b,
-                        { align: 'center', color: this._getTextColor() },
+                        { align: 'center' },
                         v.a.createElement(t, { style: j.headlineIcon }),
                       )
                   }
@@ -4671,12 +4671,7 @@
                   var e = this.props,
                     t = e.headline,
                     n = e.text
-                  if (t)
-                    return v.a.createElement(
-                      y.b,
-                      { color: this._getTextColor(), style: n && j.headlineMarginBottom, weight: 'bold' },
-                      t,
-                    )
+                  if (t) return v.a.createElement(y.b, { style: n && j.headlineMarginBottom, weight: 'bold' }, t)
                 },
               },
               {
@@ -4689,7 +4684,7 @@
                   return v.a.createElement(
                     v.a.Fragment,
                     null,
-                    v.a.createElement(y.b, { color: this._getTextColor(), nativeID: t, size: 'subtext1', style: r }, n),
+                    v.a.createElement(y.b, { nativeID: t, size: 'subtext1', style: r }, n),
                     this._renderActionLabel(),
                   )
                 },
@@ -4703,7 +4698,6 @@
                   if (t)
                     return v.a.createElement(y.b, {
                       children: t.label,
-                      color: this._getTextColor(),
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
@@ -4727,12 +4721,6 @@
                     : 'success' === e
                     ? 'success'
                     : void 0
-                },
-              },
-              {
-                key: '_getTextColor',
-                value: function () {
-                  return 'normal'
                 },
               },
               {
@@ -13759,7 +13747,7 @@
           }
         },
         twitterList: function (e, t) {
-          return { color: 'normal', link: m(f.List, t.id), ref: t, text: e, type: f.List, weight: 'bold' }
+          return { color: 'text', link: m(f.List, t.id), ref: t, text: e, type: f.List, weight: 'bold' }
         },
         url: function (e, t) {
           return { color: 'link', link: m(f.Url, t.url), ref: t, text: e, type: f.Url }
@@ -16307,7 +16295,7 @@
                     o = e.onPress
                   return g.a.createElement(
                     v.b,
-                    { color: r ? 'white' : 'normal', hoverLabel: this._getHoverLabel(), link: n, onClick: o },
+                    { color: r ? 'white' : 'text', hoverLabel: this._getHoverLabel(), link: n, onClick: o },
                     g.a.createElement(w.Provider, { value: { onMedia: r } }, t),
                   )
                 },
@@ -16344,7 +16332,7 @@
             var o = e.onMedia
             return t
               ? g.a.createElement(y.a, { children: n, count: r, weight: i })
-              : g.a.createElement(v.b, { children: n, color: o ? 'white' : 'normal', weight: i })
+              : g.a.createElement(v.b, { children: n, color: o ? 'white' : 'text', weight: i })
           })
         })
       var C = b.a.create(function (e) {
@@ -26497,7 +26485,7 @@
                   { style: E.heading },
                   o.a.createElement(
                     y.b,
-                    { color: u ? 'normal' : 'gray700', numberOfLines: 1, weight: 'bold' },
+                    { color: u ? 'text' : 'gray700', numberOfLines: 1, weight: 'bold' },
                     s || 'Untitled',
                   ),
                   o.a.createElement(b.a, { timestamp: Number(null == a ? void 0 : a.updatedAtMs) }),
@@ -29202,7 +29190,7 @@
             return { guestSegment: R.j, isLoggedIn: R.m }
           })
           .propsFromActions(function () {
-            return { updateSettings: pe.N }
+            return { updateSettings: pe.M }
           }),
         me = n('RxYA'),
         ge = n('zCf4'),
@@ -32946,7 +32934,7 @@
               paddingVertical: e.spaces.space8,
             },
             text: { width: '100%' },
-            icon: { color: e.colors.normal, flexShrink: 0, marginLeft: e.spaces.space4 },
+            icon: { color: e.colors.text, flexShrink: 0, marginLeft: e.spaces.space4 },
           }
         })
       t.a = function (e) {
@@ -32954,18 +32942,14 @@
           n = e.onClick,
           r = e.text,
           a = d(),
-          p = s.a.generate({ backgroundColor: 'transparent', color: l.a.theme.colors.normal })
+          p = s.a.generate({ backgroundColor: 'transparent', color: l.a.theme.colors.text })
         return o.a.createElement(
           u.a,
           { style: f.root },
           o.a.createElement(
             c.a,
             { interactiveStyles: p, link: t, onPress: n, style: [f.border, f.content] },
-            o.a.createElement(
-              i.b,
-              { color: 'normal', numberOfLines: 1, selectable: !1, style: f.text, weight: 'medium' },
-              r,
-            ),
+            o.a.createElement(i.b, { numberOfLines: 1, selectable: !1, style: f.text, weight: 'medium' }, r),
             a,
           ),
         )
@@ -34607,7 +34591,7 @@
                     onEntityClick: c,
                     renderFragment: {
                       user: function (e, t) {
-                        return g.a.createElement(I, o()({}, e, { color: 'normal', entityId: t.id }))
+                        return g.a.createElement(I, o()({}, e, { entityId: t.id }))
                       },
                       url: function (e, t) {
                         return g.a.createElement(T.a.TextFragment, o()({}, e, { link: Object(v.b)(t) }))

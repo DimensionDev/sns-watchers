@@ -1212,7 +1212,7 @@
             N,
             R = o.a.createElement(
               h.b,
-              { color: 'normal', link: 'https://twitter.github.io/birdwatch/aliases/', withUnderline: !0 },
+              { color: 'text', link: 'https://twitter.github.io/birdwatch/aliases/', withUnderline: !0 },
               B,
             ),
             F = o.a.createElement(A.a, { style: G.values }, o.a.createElement(g.a, X)),
@@ -4808,7 +4808,7 @@
             helpfulContainer: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
             helpfulOptions: { flexDirection: 'row' },
             helpfulQuestionMobile: { paddingBottom: e.spaces.space8 },
-            icon: { color: e.colors.normal, paddingRight: e.spaces.space12 },
+            icon: { color: e.colors.text, paddingRight: e.spaces.space12 },
             iconDataPrivacy: {
               color: e.colors.primary,
               height: e.spaces.space20,
@@ -5158,13 +5158,13 @@
                         y.a.createElement(
                           B.a,
                           { style: [Et.noteDetailsSection, Et.noteDetailsSectionBorder] },
-                          y.a.createElement(N.b, { color: 'normal', style: Et.noteDetailsText, weight: 'bold' }, bt),
+                          y.a.createElement(N.b, { style: Et.noteDetailsText, weight: 'bold' }, bt),
                           y.a.createElement(N.b, { style: Et.noteDetailsContentText }, r),
                         ),
                         y.a.createElement(
                           B.a,
                           { style: [Et.noteDetailsSection, Et.noteDetailsSectionBorder] },
-                          y.a.createElement(N.b, { color: 'normal', style: Et.noteDetailsText, weight: 'bold' }, mt),
+                          y.a.createElement(N.b, { style: Et.noteDetailsText, weight: 'bold' }, mt),
                           y.a.createElement(
                             N.b,
                             { style: Et.noteDetailsContentText },
@@ -5187,7 +5187,7 @@
                         y.a.createElement(
                           B.a,
                           { style: [Et.noteDetailsSection, Et.noteDetailsSectionLast] },
-                          y.a.createElement(N.b, { color: 'normal', style: Et.noteDetailsText, weight: 'bold' }, ft),
+                          y.a.createElement(N.b, { style: Et.noteDetailsText, weight: 'bold' }, ft),
                           l
                             ? y.a.createElement(
                                 N.b,

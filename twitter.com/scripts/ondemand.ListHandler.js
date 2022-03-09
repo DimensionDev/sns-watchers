@@ -62,7 +62,7 @@
         },
         f = Object(u.a)()
           .propsFromState(function () {
-            return { list: p, listId: m, dataSaverMode: d.k, media: b }
+            return { list: p, listId: m, dataSaverMode: d.j, media: b }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
@@ -80,14 +80,14 @@
           .withAnalytics(),
         v = a('3XMw'),
         g = a.n(v),
-        k = a('a5gf'),
-        P = a('2My+'),
+        P = a('a5gf'),
+        k = a('2My+'),
         y = a('MWbm'),
         h = a('htQn'),
         w = a('t62R'),
         I = a('rHpw'),
-        M = g.a.j681933d,
-        S = function (e) {
+        j = g.a.j681933d,
+        M = function (e) {
           var t = e.analytics,
             a = e.dataSaverMode,
             n = e.isPrivate,
@@ -102,22 +102,22 @@
               [t],
             )
           return o.a.createElement(
-            P.a,
+            k.a,
             { basePath: l, listId: i },
             o.a.createElement(
               h.a,
-              { link: l, onPress: d, style: j.root },
+              { link: l, onPress: d, style: S.root },
               o.a.createElement(c.a, { cropCandidates: r.crop, dataSaverMode: a, icon: 'lists', image: r.image }),
               o.a.createElement(
                 y.a,
-                { style: j.name },
+                { style: S.name },
                 o.a.createElement(w.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, s ? s.trim() : null),
-                n ? o.a.createElement(k.a, { accessibilityLabel: M, style: j.iconLock }) : null,
+                n ? o.a.createElement(P.a, { accessibilityLabel: j, style: S.iconLock }) : null,
               ),
             ),
           )
         },
-        j = I.a.create(function (e) {
+        S = I.a.create(function (e) {
           return {
             root: { alignItems: 'center', backgroundColor: e.colors.cellBackground, padding: e.spaces.space12 },
             name: {
@@ -130,7 +130,7 @@
             iconLock: { color: e.colors.text, marginHorizontal: e.spaces.space4 },
           }
         }),
-        E = f(o.a.memo(S)),
+        E = f(o.a.memo(M)),
         C = a('Rp9C'),
         x = n
           .b({

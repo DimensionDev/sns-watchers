@@ -25,7 +25,7 @@
         m = function (e) {
           var a = e.author,
             t = e.color,
-            r = void 0 === t ? 'normal' : t,
+            r = void 0 === t ? 'text' : t,
             o = e.size,
             c = void 0 === o ? 'subtext2' : o,
             i = e.style,

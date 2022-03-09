@@ -67,7 +67,7 @@
               n ? r.a.createElement(c.a, { style: p.icon }) : null,
               r.a.createElement(
                 o.b,
-                { color: n ? 'whiteOnColor' : 'normal', numberOfLines: 2, style: p.text, weight: 'bold' },
+                { color: n ? 'whiteOnColor' : 'text', numberOfLines: 2, style: p.text, weight: 'bold' },
                 m,
               ),
             ),

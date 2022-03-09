@@ -810,12 +810,7 @@
                   return a.a.createElement(
                     E.a,
                     { onMaskClick: o, style: T.container, type: 'center', withMask: !0 },
-                    r &&
-                      a.a.createElement(
-                        x.b,
-                        { align: 'center', color: 'normal', style: T.headerText, weight: 'bold' },
-                        r,
-                      ),
+                    r && a.a.createElement(x.b, { align: 'center', style: T.headerText, weight: 'bold' }, r),
                     n && a.a.createElement(x.b, { align: 'center', color: 'gray700', style: T.labelText }, n),
                     c,
                     a.a.createElement(I.a, { onPress: o, size: 'xLarge', style: T.cancelButton, type: 'brandText' }, t),
@@ -937,7 +932,7 @@
                       x.b,
                       { weight: 'bold', withInteractiveStyling: !0 },
                       a.a.createElement(j.a, { source: { uri: t }, style: K.image }),
-                      a.a.createElement(x.b, { color: 'normal' }, e.toUpperCase()),
+                      a.a.createElement(x.b, null, e.toUpperCase()),
                     ),
                   )
                 },

@@ -1637,7 +1637,7 @@
                       y.a.createElement(
                         v.b,
                         {
-                          color: l ? 'whiteOnColor' : 'normal',
+                          color: l ? 'whiteOnColor' : 'text',
                           numberOfLines: 1,
                           selectable: !1,
                           style: T.text,

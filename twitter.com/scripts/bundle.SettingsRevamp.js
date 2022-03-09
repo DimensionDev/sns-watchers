@@ -233,7 +233,7 @@
           g.a.createElement(
             I.b,
             {
-              color: 'normal',
+              color: 'text',
               link: 'https://help.twitter.com/rules-and-policies/twitter-automation',
               weight: 'bold',
               withUnderline: !0,
@@ -330,7 +330,7 @@
                     { $i18n: 'ed8f77d3' },
                     g.a.createElement(
                       I.b,
-                      { color: 'normal', link: M, onClick: e.props.onFaqClick, weight: 'bold', withUnderline: !0 },
+                      { color: 'text', link: M, onClick: e.props.onFaqClick, weight: 'bold', withUnderline: !0 },
                       F.a.e9965c13,
                     ),
                   )
@@ -409,7 +409,7 @@
           return Object(ce.d)(Z.selectFetchDataStatus(e), Z.selectPreferencesFetchStatus(e), n)
         },
         ie = function (e) {
-          var t = Object(ee.j)(e)
+          var t = Object(ee.i)(e)
           return t && Object(re.b)(e, t)
         },
         le = Object(v.a)()
@@ -587,7 +587,7 @@
                     ? g.a.createElement(
                         C.a,
                         { style: [be.infoItem, be.bottomBorder], testID: 'account-creation' },
-                        g.a.createElement(I.b, { color: 'normal' }, we),
+                        g.a.createElement(I.b, null, we),
                         g.a.createElement(I.b, { color: 'gray700', style: be.helpText }, ye(new Date(l.created_at))),
                         u.creation_ip && u.country
                           ? g.a.createElement(
@@ -609,7 +609,7 @@
                     ? g.a.createElement(
                         C.a,
                         { style: [be.infoItem, be.bottomBorder], testID: 'birthday' },
-                        g.a.createElement(I.b, { color: 'normal' }, Pe),
+                        g.a.createElement(I.b, null, Pe),
                         a ? g.a.createElement(I.b, { color: 'gray700', size: 'subtext2' }, b) : null,
                         g.a.createElement(I.b, { color: 'gray700', style: be.helpText }, Me),
                       )
@@ -1226,7 +1226,7 @@
             o.a.createElement(
               y.a,
               { style: E.description },
-              o.a.createElement(v.b, { color: 'normal' }, k),
+              o.a.createElement(v.b, null, k),
               o.a.createElement(
                 v.b,
                 { color: 'gray700', style: [E.errorText, E.helpText] },
