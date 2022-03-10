@@ -108,35 +108,35 @@
           o),
         V = r('FIs5'),
         H = r('MDbM'),
-        N = r('eXtP'),
-        X = r('3XMw'),
-        G = r.n(X),
-        J = r('fs1G'),
-        Y = r('zb92'),
-        q = r('RuTB'),
-        U = Object(Y.a)({
+        X = r('eXtP'),
+        G = r('3XMw'),
+        J = r.n(G),
+        Y = r('fs1G'),
+        q = r('zb92'),
+        U = r('RuTB'),
+        W = Object(q.a)({
           loader: function () {
             return Promise.all([r.e(0), r.e(201)]).then(r.bind(null, 'DO1+'))
           },
           renderPlaceholder: function (e, t) {
-            return d.a.createElement(q.a, { hasError: e, onRetry: t })
+            return d.a.createElement(U.a, { hasError: e, onRetry: t })
           },
         }),
-        W = r('BKvV'),
+        N = r('BKvV'),
         Z = r('b1wW'),
         _ = r('Fz18'),
         Q = r('JfS+'),
-        $ = Object(Y.a)({
+        $ = Object(q.a)({
           loader: function () {
             return Promise.all([r.e(0), r.e(201)]).then(r.bind(null, '0xZH'))
           },
           renderPlaceholder: function (e, t) {
-            return d.a.createElement(q.a, { hasError: e, onRetry: t })
+            return d.a.createElement(U.a, { hasError: e, onRetry: t })
           },
         }),
         ee = r('v6aA'),
-        te = J.a,
-        re = G.a.afb4c24a,
+        te = Y.a,
+        re = J.a.afb4c24a,
         ae = (function (e) {
           h()(r, e)
           var t = v()(r)
@@ -158,32 +158,30 @@
                     s = e.numRowsFromMetadata,
                     l = e.renderEmptyState,
                     u = e.richScribeAction,
-                    m = e.scribeNamespace,
-                    p = e.scrollerDisplayType
+                    m = e.scrollerDisplayType
                   return d.a.createElement(
-                    W.b.Provider,
-                    { value: c()({ numRowsFromMetadata: s, scrollerDisplayType: p }, this.context) },
-                    d.a.createElement(N.a, { dismissedEntries: a, entries: n, entryConfiguration: B }, function (e, a) {
+                    N.b.Provider,
+                    { value: c()({ numRowsFromMetadata: s, scrollerDisplayType: m }, this.context) },
+                    d.a.createElement(X.a, { dismissedEntries: a, entries: n, entryConfiguration: B }, function (e, a) {
                       return d.a.createElement(
                         _.a,
                         { identifier: i },
                         d.a.createElement(Q.a, {
                           applyReactionInstructions: t,
                           canRefresh: r,
-                          clearActiveCover: J.a,
+                          clearActiveCover: Y.a,
                           entries: a,
                           handlerRegistry: e,
                           initialFetchStatus: H.a.LOADED,
                           module: o,
-                          onAtTop: J.a,
-                          onRef: J.a,
+                          onAtTop: Y.a,
+                          onRef: Y.a,
                           processCallback: te,
                           refreshControl: null,
-                          removeAlert: J.a,
+                          removeAlert: Y.a,
                           renderEmptyState: l,
                           richScribeAction: u,
-                          scribeNamespace: m,
-                          scroller: p === Z.a.PagedCarousel ? U : $,
+                          scroller: m === Z.a.PagedCarousel ? W : $,
                           timelineId: i,
                           title: 'Carousel',
                           withKeyboardShortcuts: !1,
@@ -242,12 +240,11 @@
               s = c.content.items,
               l = c.entryId,
               d = c.itemMetadata.moduleMetadata,
-              u = e.scribeNamespace,
-              m = e.actions,
-              p = m.applyReactionInstructions,
-              b = m.richScribeAction
+              u = e.actions,
+              m = u.applyReactionInstructions,
+              p = u.richScribeAction
             return {
-              applyReactionInstructions: p,
+              applyReactionInstructions: m,
               canRefresh: i,
               dismissedEntries: o,
               items: s || [],
@@ -259,8 +256,7 @@
                     ? void 0
                     : r.numRows
                   : void 0,
-              richScribeAction: b,
-              scribeNamespace: u,
+              richScribeAction: p,
               scrollerDisplayType: t,
             }
           },
@@ -273,7 +269,7 @@
             t(c()(c()({}, a), {}, { action: 'impression' }), o)
           },
           isFocusable: Object(se.a)(!0),
-          getBehavioralEventContextOverride: J.a,
+          getBehavioralEventContextOverride: Y.a,
         })
       }
     },

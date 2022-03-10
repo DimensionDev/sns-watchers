@@ -5,7 +5,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'TimelineRenderer', function () {
-          return Ae
+          return xe
         })
       var r = n('yiKp'),
         i = n.n(r),
@@ -51,11 +51,11 @@
         S = n('caTy'),
         R = n('rcen'),
         O = n('TnY3'),
-        A = n('TIdA'),
-        x = n('A91F'),
-        N = n('feu+'),
-        M = n('tI3i'),
-        D = n.n(M),
+        x = n('TIdA'),
+        A = n('A91F'),
+        M = n('feu+'),
+        N = n('tI3i'),
+        D = n.n(N),
         P = C.canUseDOM ? window.location.href : '',
         F = (function () {
           function e() {
@@ -132,9 +132,9 @@
                           return g.a.createElement(
                             H.a,
                             { style: n },
-                            g.a.createElement(A.a, {
+                            g.a.createElement(x.a, {
                               accessibilityLabel: '',
-                              aspectMode: x.a.exact(e.width / e.height),
+                              aspectMode: A.a.exact(e.width / e.height),
                               image: e,
                             }),
                           )
@@ -226,7 +226,7 @@
                       v = this._getGraphicProps(i, a),
                       m = v.graphic,
                       f = v.graphicDisplayMode
-                    return g.a.createElement(N.a, {
+                    return g.a.createElement(M.a, {
                       actionLabel: o.text,
                       footer: h,
                       graphic: m,
@@ -241,7 +241,7 @@
                       withCloseButton: !!n,
                     })
                   }
-                  return g.a.createElement(N.a, {
+                  return g.a.createElement(M.a, {
                     actionLabel: o.text,
                     graphicDisplayMode: 'none',
                     headline: u,
@@ -264,68 +264,62 @@
         G = { component: 'cover', action: 'impression' },
         q = function (e) {
           var t,
-            n = e.activeCover,
-            r = e.clearActiveCover,
-            a = e.processCallback,
-            o = (function (e, t) {
-              var n = i()(i()({}, e), G)
-              return (
-                t &&
-                  (n = i()(
-                    i()({}, n),
-                    {},
-                    {
-                      component: t.component || n.component,
-                      element: t.element || n.element,
-                      action: t.action || n.action,
-                    },
-                  )),
-                n
-              )
-            })(e.scribeNamespace, n.clientEventInfo),
-            s = Object(z.b)(),
-            c = function () {
-              var e = n.cover.impressionCallbacks
+            n,
+            r,
+            a = e.activeCover,
+            o = e.clearActiveCover,
+            s = e.processCallback,
+            c =
+              ((t = a.clientEventInfo),
+              (n = i()({}, G)),
+              t &&
+                (t.component && (n = i()(i()({}, n), {}, { component: t.component })),
+                t.element && (n = i()(i()({}, n), {}, { element: t.element })),
+                t.action && (n = i()(i()({}, n), {}, { action: t.action }))),
+              n),
+            l = Object(z.b)(),
+            d = function () {
+              var e = a.cover.impressionCallbacks
               e &&
                 e.forEach(function (e) {
-                  return a(e)
+                  return s(e)
                 }),
-                s.scribe(i()({}, o))
+                l.scribe(i()({}, c))
             }
-          return 'full' === n.type
-            ? ((t = n.cover),
+          return 'full' === a.type
+            ? ((r = a.cover),
               g.a.createElement(K, {
-                details: t.details || void 0,
-                dismissInfo: t.dismissInfo,
-                displayType: t.displayType,
-                image: t.image,
-                imageDisplayType: t.imageDisplayType || void 0,
-                onClose: r,
-                onImpression: c,
-                primaryCta: t.primaryCoverCta,
-                primaryText: t.primaryText,
-                processCallback: a,
-                secondaryCta: t.secondaryCoverCta,
-                secondaryText: t.secondaryText,
+                details: r.details || void 0,
+                dismissInfo: r.dismissInfo,
+                displayType: r.displayType,
+                image: r.image,
+                imageDisplayType: r.imageDisplayType || void 0,
+                onClose: o,
+                onImpression: d,
+                primaryCta: r.primaryCoverCta,
+                primaryText: r.primaryText,
+                processCallback: s,
+                secondaryCta: r.secondaryCoverCta,
+                secondaryText: r.secondaryText,
                 type: 'full',
               }))
-            : 'half' === n.type
+            : 'half' === a.type
             ? (function (e) {
                 var t = 'CenterCover' === e.displayType ? 'full' : 'half'
                 return g.a.createElement(K, {
                   displayType: e.displayType,
                   image: e.coverImage ? e.coverImage.image : void 0,
                   imageDisplayType: e.coverImage ? e.coverImage.imageDisplayType : void 0,
-                  onClose: r,
-                  onImpression: c,
+                  onClose: o,
+                  onImpression: d,
                   primaryCta: e.primaryCoverCta,
                   primaryText: e.primaryText,
-                  processCallback: a,
+                  processCallback: s,
                   secondaryCta: e.secondaryCoverCta,
                   secondaryText: e.secondaryText,
                   type: t,
                 })
-              })(n.cover)
+              })(a.cover)
             : null
         },
         Y = n('MDbM'),
@@ -615,7 +609,7 @@
               return 100
           }
         },
-        Ae = (function (e) {
+        xe = (function (e) {
           p()(n, e)
           var t = v()(n)
           function n(e, r) {
@@ -719,11 +713,19 @@
                 '_handleAtTop',
                 a._proximityHandler(function () {
                   var e = a.props,
-                    t = e.onAtTop,
-                    n = e.removeAlert,
-                    r = e.richScribeAction,
-                    o = e.scribeNamespace
-                  n && n(), t && t(), r(i()(i()({}, o), {}, { component: 'stream', element: 'top', action: 'show' }))
+                    t = e.analytics,
+                    n = e.onAtTop,
+                    r = e.removeAlert,
+                    o = e.richScribeAction
+                  r && r(),
+                    n && n(),
+                    o(
+                      i()(
+                        i()({}, t.contextualScribeNamespace),
+                        {},
+                        { component: 'stream', element: 'top', action: 'show' },
+                      ),
+                    )
                 }),
               ),
               f()(
@@ -785,10 +787,13 @@
                 '_scheduleNewEntriesScribing',
                 ((s = function (e) {
                   var t = a.props,
-                    n = t.richScribeAction,
-                    r = t.scribeNamespace,
+                    n = t.analytics,
+                    r = t.richScribeAction,
                     o = a._buildStreamScribeData(e)
-                  o.length > 0 && n(i()(i()({}, r), {}, { component: 'stream', action: 'results' }), { items: o })
+                  o.length > 0 &&
+                    r(i()(i()({}, n.contextualScribeNamespace), {}, { component: 'stream', action: 'results' }), {
+                      items: o,
+                    })
                 }),
                 C.canUseDOM && window.requestIdleCallback
                   ? function (e) {
@@ -959,29 +964,24 @@
                     i = t.newTweetsPillLabel,
                     a = t.newTweetsPillMode,
                     o = t.removeAlert,
-                    s = t.scribeNamespace,
-                    c = t.timelineId,
-                    l = t.topUnseenCount
-                  return a
-                    ? a === _e.a.URT
-                      ? g.a.createElement(fe.a.Configure, {
-                          alert: n,
-                          applyNewTweetsBarInstructions: r,
-                          isAtNewest: null === (e = this._scroller) || void 0 === e ? void 0 : e.isAtNewest,
-                          label: i,
-                          removeAlert: o,
-                          scribeNamespace: s,
-                          timelineId: c,
-                        })
-                      : a === _e.a.CLIENT && l && l > 0
-                      ? g.a.createElement(fe.a.Configure, {
-                          applyNewTweetsBarInstructions: r,
-                          removeAlert: o,
-                          scribeNamespace: s,
-                          timelineId: c,
-                          unreadCount: l,
-                        })
-                      : void 0
+                    s = t.timelineId,
+                    c = t.topUnseenCount
+                  return a === _e.a.URT
+                    ? g.a.createElement(fe.a.Configure, {
+                        alert: n,
+                        applyNewTweetsBarInstructions: r,
+                        isAtNewest: null === (e = this._scroller) || void 0 === e ? void 0 : e.isAtNewest,
+                        label: i,
+                        removeAlert: o,
+                        timelineId: s,
+                      })
+                    : a === _e.a.CLIENT && c && c > 0
+                    ? g.a.createElement(fe.a.Configure, {
+                        applyNewTweetsBarInstructions: r,
+                        removeAlert: o,
+                        timelineId: s,
+                        unreadCount: c,
+                      })
                     : null
                 },
               },
@@ -992,15 +992,9 @@
                     t = e.activeCover,
                     n = e.clearActiveCover,
                     r = e.processCallback,
-                    i = e.scribeNamespace,
-                    a = t && t.cover
-                  return t && a
-                    ? g.a.createElement(q, {
-                        activeCover: t,
-                        clearActiveCover: n,
-                        processCallback: r,
-                        scribeNamespace: i,
-                      })
+                    i = t && t.cover
+                  return t && i
+                    ? g.a.createElement(q, { activeCover: t, clearActiveCover: n, processCallback: r })
                     : null
                 },
               },
@@ -1163,11 +1157,15 @@
                       a.length > 0)
                     ) {
                       var s = this.props,
-                        c = s.richScribeAction,
-                        l = s.scribeNamespace
-                      c(i()(i()({}, l), {}, { component: 'stream', element: 'linger', action: 'results' }), {
-                        items: a,
-                      })
+                        c = s.analytics
+                      ;(0, s.richScribeAction)(
+                        i()(
+                          i()({}, c.contextualScribeNamespace),
+                          {},
+                          { component: 'stream', element: 'linger', action: 'results' },
+                        ),
+                        { items: a },
+                      )
                     }
                     o.length > 0 && this._storeSeenIds(o)
                   }
@@ -1192,8 +1190,8 @@
             n
           )
         })(g.a.PureComponent)
-      f()(Ae, 'contextTypes', { viewport: we.object, featureSwitches: we.any }),
-        f()(Ae, 'defaultProps', {
+      f()(xe, 'contextTypes', { viewport: we.object, featureSwitches: we.any }),
+        f()(xe, 'defaultProps', {
           onBottomRetry: j.a,
           onNearBottom: j.a,
           onNearTop: j.a,
@@ -1207,7 +1205,7 @@
           showLoadingFooter: !0,
           withKeyboardShortcuts: !0,
         })
-      t.default = Ae
+      t.default = Object(z.a)(xe)
     },
     'ejT/': function (e, t, n) {
       'use strict'

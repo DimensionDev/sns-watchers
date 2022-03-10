@@ -7628,6 +7628,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_home_namespace_update_enabled: !0,
             responsive_web_home_pinned_timelines_latest_enabled: !0,
             responsive_web_home_pinned_timelines_lists_enabled: !0,
+            responsive_web_home_sticky_new_tweets_pill_delay_seconds: !0,
+            responsive_web_home_sticky_new_tweets_pill_duration_seconds: !0,
+            responsive_web_home_sticky_new_tweets_pill_enabled: !0,
             responsive_web_htl_empty_state_redesign_variant: !0,
             responsive_web_inline_login_box_enabled: !0,
             responsive_web_install_banner_show_immediate: !0,
@@ -28045,8 +28048,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               UI.a.set(TI.a),
               e.subscribe(function () {
                 Ch.a.set(Object(nf.j)(t))
-              }),
-              Object(Cm.b)()
+              })
           }),
           zI = function () {
             var e = document.documentElement,
@@ -29076,7 +29078,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                                 })),
                               (n[e] = t[e].a)
                           }),
-                            Object(Cm.d)(n)
+                            Object(Cm.c)(n)
                         })
                     })
                   }, 5e3),
@@ -36313,7 +36315,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var u = T.a
                       .tweetTextParts(c, r, i)
                       .map(function (e, t) {
-                        return _.a.createElement(S.c, { key: t, linkify: !0, part: e })
+                        return _.a.createElement(S.b, { key: t, linkify: !0, part: e })
                       })
                       .filter(Boolean)
                     return _.a.createElement(y.a, {
@@ -37412,6 +37414,9 @@ window.__SCRIPTS_LOADED__.i18n &&
         }),
           n.d(t, 'a', function () {
             return i
+          }),
+          n.d(t, 'c', function () {
+            return a
           })
         n('yH/f')
         var r = Object.freeze({
@@ -37419,7 +37424,10 @@ window.__SCRIPTS_LOADED__.i18n &&
             CONFIGURATION_REQUEST: 'rweb/homeTimeline/CONFIGURATION_REQUEST',
             SET_SETTING: 'rweb/homeTimeline/SET_SETTING',
           }),
-          i = Object.freeze({ HOME: 'home', HOME_LATEST: 'home_latest' })
+          i = Object.freeze({ HOME: 'home', HOME_LATEST: 'home_latest' }),
+          a = function (e) {
+            return e
+          }
       },
       Ebtj: function (e, t, n) {
         'use strict'
@@ -38813,17 +38821,14 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       FiRh: function (e, t, n) {
         'use strict'
-        n.d(t, 'b', function () {
+        n.d(t, 'd', function () {
           return K
         }),
-          n.d(t, 'e', function () {
-            return J
-          }),
-          n.d(t, 'd', function () {
-            return X
+          n.d(t, 'c', function () {
+            return V
           }),
           n.d(t, 'a', function () {
-            return Z
+            return q
           })
         var r = n('yiKp'),
           i = n.n(r),
@@ -38831,17 +38836,15 @@ window.__SCRIPTS_LOADED__.i18n &&
           o = n.n(a),
           s = n('ddV6'),
           c = n.n(s),
-          u = n('KEM+'),
-          l = n.n(u),
-          d =
-            (n('jwue'),
-            n('7x/C'),
-            n('+oxZ'),
-            n('KqXw'),
+          u =
+            (n('KqXw'),
             n('MvUL'),
             n('TJCb'),
+            n('7x/C'),
             n('DZ+c'),
             n('2G9S'),
+            n('jwue'),
+            n('+oxZ'),
             n('z84I'),
             n('WNMA'),
             n('3voH'),
@@ -38849,74 +38852,73 @@ window.__SCRIPTS_LOADED__.i18n &&
             n('vrRf'),
             n('7xRU'),
             n('SV7d')),
-          p = n('SEra'),
-          f = n('ERkP'),
-          m = n.n(f),
-          h = n('t62R'),
-          _ = n('6/RC'),
-          v = n('k/Ka'),
-          b = n('OIC0'),
-          g = n('EMYB'),
-          y = n('lHOd'),
-          E = (n('Ysgh'), n('shC7')),
-          w = n('I4+6'),
-          T = n('cm6r'),
-          S = n('rHpw'),
-          O = n('Lsrn'),
-          I = function () {
+          l = n('SEra'),
+          d = n('ERkP'),
+          p = n.n(d),
+          f = n('t62R'),
+          m = n('k/Ka'),
+          h = n('OIC0'),
+          _ = n('EMYB'),
+          v = n('lHOd'),
+          b = (n('Ysgh'), n('shC7')),
+          g = n('I4+6'),
+          y = n('cm6r'),
+          E = n('rHpw'),
+          w = n('Lsrn'),
+          T = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-            return Object(v.a)(
+            return Object(m.a)(
               'svg',
               i()(
                 i()({}, e),
                 {},
                 {
                   accessibilityHidden: void 0 === e.accessibilityLabel,
-                  style: [O.a.root, e.style, E.a.getConstants().isRTL && O.a.iconRTL],
+                  style: [w.a.root, e.style, b.a.getConstants().isRTL && w.a.iconRTL],
                   viewBox: '0 0 24 24',
                 },
               ),
-              m.a.createElement(
+              p.a.createElement(
                 'g',
                 null,
-                m.a.createElement('path', {
+                p.a.createElement('path', {
                   d: 'M8.914 12l6.793-6.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L8.914 12z',
                 }),
               ),
             )
           }
-        I.metadata = { width: 24, height: 24 }
-        var C = I,
-          k = n('iySH'),
-          A = function (e) {
+        T.metadata = { width: 24, height: 24 }
+        var S = T,
+          O = n('iySH'),
+          I = function (e) {
             var t = e.onClick,
               n = e.part,
               r = n.color,
               i = n.text,
               a = n.url,
               o =
-                S.a.theme.colors[''.concat(r.toLowerCase()).concat('200')] ||
-                S.a.theme.colors[''.concat('blue').concat('200')],
-              s = w.a.generate({ backgroundColor: o, color: S.a.theme.colors.text }),
-              c = E.a.getConstants().isRTL
-                ? m.a.createElement(C, { style: [R.chevronAlign, R.chevronAlignRTL] })
-                : m.a.createElement(k.a, { style: R.chevronAlign }),
+                E.a.theme.colors[''.concat(r.toLowerCase()).concat('200')] ||
+                E.a.theme.colors[''.concat('blue').concat('200')],
+              s = g.a.generate({ backgroundColor: o, color: E.a.theme.colors.text }),
+              c = b.a.getConstants().isRTL
+                ? p.a.createElement(S, { style: [C.chevronAlign, C.chevronAlignRTL] })
+                : p.a.createElement(O.a, { style: C.chevronAlign }),
               u = i.split(' '),
               l = u.pop()
-            return m.a.createElement(
-              T.a,
+            return p.a.createElement(
+              y.a,
               {
                 interactiveStyles: s,
                 link: { openInSameFrame: !1, pathname: a },
                 onClick: t,
-                style: [{ backgroundColor: o }, R.highlight],
+                style: [{ backgroundColor: o }, C.highlight],
               },
-              m.a.createElement(h.b, { style: R.spacer }, ' '),
-              u.length >= 1 && m.a.createElement(h.b, { dir: 'ltr' }, u.join(' ')),
-              m.a.createElement(h.b, { dir: 'ltr', style: R.noWrap }, l, c),
+              p.a.createElement(f.b, { style: C.spacer }, ' '),
+              u.length >= 1 && p.a.createElement(f.b, { dir: 'ltr' }, u.join(' ')),
+              p.a.createElement(f.b, { dir: 'ltr', style: C.noWrap }, l, c),
             )
           },
-          R = S.a.create(function (e) {
+          C = E.a.create(function (e) {
             return {
               spacer: { paddingLeft: 'calc('.concat(e.spaces.space12, ' / 2)') },
               highlight: {
@@ -38935,62 +38937,24 @@ window.__SCRIPTS_LOADED__.i18n &&
               chevronAlignRTL: { marginLeft: 'calc('.concat(e.spaces.space2, '/2)'), marginRight: e.spaces.space2 },
             }
           }),
-          x = n('4w6w'),
-          L = n('yDX5'),
-          P = n('oECP'),
-          D = n('mN6z'),
-          j = n('oQhu'),
-          M = /&amp;|&gt;|&lt;|&quot;|&#39;/g,
-          N = { '&amp;': '&', '&gt;': '>', '&lt;': '<', '&quot;': '"', '&#39;': "'" },
-          F = function (e) {
-            return Object(v.a)('span', e)
+          k = n('4w6w'),
+          A = n('yDX5'),
+          R = n('oECP'),
+          x = n('mN6z'),
+          L = n('oQhu'),
+          P = /&amp;|&gt;|&lt;|&quot;|&#39;/g,
+          D = { '&amp;': '&', '&gt;': '>', '&lt;': '<', '&quot;': '"', '&#39;': "'" },
+          j = function (e) {
+            return Object(m.a)('span', e)
           },
-          U = 'data-emoji-text',
-          B = '['.concat(U, ']'),
-          H = function (e) {
-            var t,
-              n = e.accessibilityLabel,
-              r = e.source,
-              i = e.style,
-              a = e.text,
-              o = e.title
-            return Object(v.a)(
-              'img',
-              ((t = { alt: n || '', draggable: !1 }),
-              l()(t, U, a),
-              l()(t, 'src', r),
-              l()(t, 'style', i),
-              l()(t, 'title', o),
-              t),
-            )
-          },
-          z = function (e) {
-            var t = window.getSelection()
-            if (0 !== t.rangeCount) {
-              for (var n, r = '', i = !1, a = 0; a < t.rangeCount; a++) {
-                var o = t.getRangeAt(a).cloneContents(),
-                  s = o.querySelectorAll(B)
-                s.length > 0 && (i = !0),
-                  s.forEach(function (e) {
-                    return (e.textContent = String(e.getAttribute(U)))
-                  }),
-                  (r += o.textContent)
-              }
-              if (i)
-                null === (n = e.clipboardData) || void 0 === n || n.setData('text/plain', r),
-                  e.preventDefault(),
-                  e.stopImmediatePropagation()
-            }
-          },
-          K = function () {
-            return (
-              _.canUseDOM && document.addEventListener('copy', z),
-              function () {
-                document.removeEventListener('copy', z)
-              }
-            )
+          M = function (e) {
+            var t = e.accessibilityLabel,
+              n = e.source,
+              r = e.style,
+              i = e.title
+            return Object(m.a)('img', { alt: t || '', draggable: !1, src: n, style: r, title: i })
           }
-        var V = function (e, t, n) {
+        var N = function (e, t, n) {
             var r = t.prefix,
               i = t.text,
               a = t.textDirection
@@ -38998,19 +38962,19 @@ window.__SCRIPTS_LOADED__.i18n &&
             var o = (function (e) {
                 return (
                   e &&
-                  e.replace(M, function (e) {
-                    return N[e]
+                  e.replace(P, function (e) {
+                    return D[e]
                   })
                 )
               })(i.substring(e.startIndex, e.endIndex)),
               s = 0 === n && r ? r : ''
-            return m.a.createElement(
-              h.b,
+            return p.a.createElement(
+              f.b,
               { dir: a, key: n.toString(), weight: e.bolded ? 'bold' : void 0, withoutTwemojiAndHashflags: !0 },
               ''.concat(s).concat(o),
             )
           },
-          q = function (e, t) {
+          F = function (e, t) {
             if (!e || 0 === e.length) return [{ startIndex: 0, endIndex: t.length, bolded: !1 }]
             var n = [],
               r = 0
@@ -39027,7 +38991,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           },
-          W = function (e, t) {
+          U = function (e, t) {
             e.displayUrl || (e.displayUrl = e.expandedUrl)
             var n = (function (e) {
               var t = e.displayUrl,
@@ -39048,143 +39012,143 @@ window.__SCRIPTS_LOADED__.i18n &&
                 displayUrlSansEllipses: a,
               }
             })(i()(i()({}, e), {}, { wasTransformed: t }))
-            return m.a.createElement(
-              m.a.Fragment,
+            return p.a.createElement(
+              p.a.Fragment,
               null,
               n.precedingDisplayUrl
                 ? null
-                : m.a.createElement(
-                    h.b,
-                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                : p.a.createElement(
+                    f.b,
+                    { accessibilityHidden: !0, style: J.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.protocol,
                   ),
               n.precedingEllipsis
-                ? m.a.createElement(
-                    h.b,
+                ? p.a.createElement(
+                    f.b,
                     { accessibilityHidden: !0, selectable: !1, withoutTwemojiAndHashflags: !0 },
                     '…',
                   )
                 : null,
               n.precedingDisplayUrl
-                ? m.a.createElement(
-                    h.b,
-                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                ? p.a.createElement(
+                    f.b,
+                    { accessibilityHidden: !0, style: J.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.precedingDisplayUrl,
                   )
                 : null,
               n.displayUrlSansEllipses,
               n.followingDisplayUrl
-                ? m.a.createElement(
-                    h.b,
-                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                ? p.a.createElement(
+                    f.b,
+                    { accessibilityHidden: !0, style: J.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.followingDisplayUrl,
                   )
                 : null,
               n.followingEllipsis
-                ? m.a.createElement(
-                    h.b,
+                ? p.a.createElement(
+                    f.b,
                     { accessibilityHidden: !0, selectable: !1, withoutTwemojiAndHashflags: !0 },
                     '…',
                   )
                 : null,
             )
           },
-          G = function (e) {
+          B = function (e) {
             var t = e.entity,
               n = e.isHashFlag,
               r = t.text ? t.text : '',
-              i = r ? Y[r] : void 0
+              i = r ? z[r] : void 0
             return t.url
-              ? m.a.createElement(H, {
-                  accessibilityLabel: i || r,
+              ? p.a.createElement(M, {
+                  accessibilityLabel: r,
                   draggable: !1,
                   resizeMode: 'stretch',
                   source: t.url,
-                  style: [re.twemoji, n && re.hashFlag],
+                  style: [J.twemoji, n && J.hashFlag],
                   text: r,
                   title: i,
                 })
-              : m.a.createElement('span', {
-                  'data-nonrendered-emoji': Object(x.toCodePoints)(r)
+              : p.a.createElement('span', {
+                  'data-nonrendered-emoji': Object(k.toCodePoints)(r)
                     .map(function (e) {
                       return 'U+'.concat(e)
                     })
                     .join('-'),
                 })
           },
-          Q = {},
-          Y = {},
-          J = function (e) {
-            Q = e
+          H = {},
+          z = {},
+          K = function (e) {
+            H = e
           },
-          X = function (e) {
-            Y = e
+          V = function (e) {
+            z = e
           },
-          Z = { linkColor: 'link', linkify: !1, underlineLinks: !1 },
-          $ = function (e, t) {
+          q = { linkColor: 'link', linkify: !1, underlineLinks: !1 },
+          W = function (e, t) {
             return (
-              (t.part.entityType !== b.a.HASHTAG || !t.part.text || !Q[t.part.text.toLowerCase()]) && Object(D.a)(e, t)
+              (t.part.entityType !== h.a.HASHTAG || !t.part.text || !H[t.part.text.toLowerCase()]) && Object(x.a)(e, t)
             )
           },
-          ee = Object(j.a)(function (e, t) {
+          G = Object(L.a)(function (e, t) {
             return { viewState: { type: 'tweetEntity', entityId: e }, viewType: t }
           }),
-          te = function (e, t, n) {
-            var r = ee(n, t)
-            return m.a.createElement(d.a, { behavioralEventContext: r }, e)
+          Q = function (e, t, n) {
+            var r = G(n, t)
+            return p.a.createElement(u.a, { behavioralEventContext: r }, e)
           },
-          ne = m.a.memo(function (e) {
+          Y = p.a.memo(function (e) {
             var t,
               n,
               r,
               a,
               o,
-              s = m.a.useContext(y.a),
+              s = p.a.useContext(v.a),
               c = {
-                linkColor: e.linkColor || Z.linkColor,
-                linkify: e.linkify || Z.linkify,
-                underlineLinks: e.underlineLinks || Z.underlineLinks,
+                linkColor: e.linkColor || q.linkColor,
+                linkify: e.linkify || q.linkify,
+                underlineLinks: e.underlineLinks || q.underlineLinks,
               },
               u = function (t) {
                 e.onClick && e.part.entityType && e.onClick(t, e.part.entityType)
               },
-              l = function (t) {
+              d = function (t) {
                 return function (n) {
                   e.onClick && e.part.entityType && e.onClick(n, e.part.entityType, t)
                 }
               }
             switch (e.part.entityType) {
-              case b.a.URL:
+              case h.a.URL:
                 return (function (e, t, n, r) {
-                  var a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : P.a,
+                  var a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : R.a,
                     o = e.linkColor,
                     s = e.linkify,
                     c = e.underlineLinks,
                     u = t.expandedUrl,
-                    l = t.textDirection,
-                    d = t.url
-                  return m.a.createElement(p.Consumer, null, function (e) {
-                    var p = e.isExternal(u, r) ? d : u,
-                      f = a(p),
+                    d = t.textDirection,
+                    m = t.url
+                  return p.a.createElement(l.Consumer, null, function (e) {
+                    var l = e.isExternal(u, r) ? m : u,
+                      h = a(l),
                       _ = i()(i()({}, t), {}, { expandedUrl: a(u) }),
-                      v = f !== p,
-                      b = m.a.createElement(
-                        h.b,
+                      v = h !== l,
+                      b = p.a.createElement(
+                        f.b,
                         {
                           color: s ? o : void 0,
-                          dir: l,
+                          dir: d,
                           hoverLabel: { label: _.expandedUrl },
-                          link: s ? f : void 0,
-                          onClick: s ? n({ originalUrl: p, embeddedUrl: f, expandedUrl: u }) : void 0,
-                          style: s && c ? re.underlinedLink : void 0,
+                          link: s ? h : void 0,
+                          onClick: s ? n({ originalUrl: l, embeddedUrl: h, expandedUrl: u }) : void 0,
+                          style: s && c ? J.underlinedLink : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
-                        W(_, v),
+                        U(_, v),
                       )
-                    return te(b, 'link', d)
+                    return Q(b, 'link', m)
                   })
-                })(c, e.part, l, s.hostname, e.transformUrl)
-              case b.a.MEDIA:
+                })(c, e.part, d, s.hostname, e.transformUrl)
+              case h.a.MEDIA:
                 return (function (e, t, n, r) {
                   var i = e.linkColor,
                     a = e.linkify,
@@ -39192,24 +39156,24 @@ window.__SCRIPTS_LOADED__.i18n &&
                     s = t.expandedUrl,
                     c = t.textDirection,
                     u = t.url
-                  return m.a.createElement(p.Consumer, null, function (e) {
+                  return p.a.createElement(l.Consumer, null, function (e) {
                     var l = e.isExternal(u, r) ? u : s
-                    return m.a.createElement(
-                      h.b,
+                    return p.a.createElement(
+                      f.b,
                       {
                         color: a ? i : void 0,
                         dir: c,
                         hoverLabel: { label: s },
                         link: a ? l : void 0,
                         onClick: a ? n : void 0,
-                        style: a && o ? re.underlinedLink : void 0,
+                        style: a && o ? J.underlinedLink : void 0,
                         withoutTwemojiAndHashflags: !0,
                       },
-                      W(t),
+                      U(t),
                     )
                   })
                 })(c, e.part, u, s.hostname)
-              case b.a.CASHTAG:
+              case h.a.CASHTAG:
                 return (function (e, t, n) {
                   var r = e.linkColor,
                     i = e.linkify,
@@ -39219,27 +39183,27 @@ window.__SCRIPTS_LOADED__.i18n &&
                     c = t.text,
                     u = t.textDirection,
                     l = t.url,
-                    d = q(o, c).map(function (e, t) {
+                    d = F(o, c).map(function (e, t) {
                       var o = 0 === t ? s : ''
-                      return m.a.createElement(
-                        h.b,
+                      return p.a.createElement(
+                        f.b,
                         {
                           color: i ? r : void 0,
                           dir: u,
                           key: t.toString(),
                           link: i ? l : void 0,
                           onClick: i ? n : void 0,
-                          style: i && a ? re.underlinedLink : void 0,
+                          style: i && a ? J.underlinedLink : void 0,
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
                         ''.concat(o).concat(c.substring(e.startIndex, e.endIndex)),
                       )
                     }),
-                    p = m.a.createElement(F, { style: re.entityWrapper }, d)
-                  return te(p, 'cashtag', c)
+                    m = p.a.createElement(j, { style: J.entityWrapper }, d)
+                  return Q(m, 'cashtag', c)
                 })(c, e.part, u)
-              case b.a.HASHTAG:
+              case h.a.HASHTAG:
                 return (function (e, t, n) {
                   var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
                     i = e.linkColor,
@@ -39250,22 +39214,22 @@ window.__SCRIPTS_LOADED__.i18n &&
                     u = t.text,
                     l = t.textDirection,
                     d = t.url,
-                    p = null,
-                    f = Object(g.b)(u, r)
-                  f[0] && (p = G({ entity: f[0], isHashFlag: !0 }))
-                  var _ = q(s, u),
-                    v = _.map(function (e, t) {
+                    m = null,
+                    h = Object(_.b)(u, r)
+                  h[0] && (m = B({ entity: h[0], isHashFlag: !0 }))
+                  var v = F(s, u),
+                    b = v.map(function (e, t) {
                       var r = 0 === t ? c : '',
-                        s = t === _.length - 1 ? p : void 0
-                      return m.a.createElement(
-                        h.b,
+                        s = t === v.length - 1 ? m : void 0
+                      return p.a.createElement(
+                        f.b,
                         {
                           color: a ? i : void 0,
                           dir: l,
                           key: t.toString(),
                           link: a ? d : void 0,
                           onClick: a ? n({ text: u }) : void 0,
-                          style: [a && o ? re.underlinedLink : void 0, s ? re.hashflagDisplay : void 0],
+                          style: [a && o ? J.underlinedLink : void 0, s ? J.hashflagDisplay : void 0],
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
@@ -39273,14 +39237,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                         s,
                       )
                     }),
-                    b = m.a.createElement(F, { style: re.entityWrapper }, v)
-                  return te(b, 'hashtag', u)
-                })(c, e.part, l, Q)
-              case b.a.INTERACTIVE_HIGHLIGHT:
+                    g = p.a.createElement(j, { style: J.entityWrapper }, b)
+                  return Q(g, 'hashtag', u)
+                })(c, e.part, d, H)
+              case h.a.INTERACTIVE_HIGHLIGHT:
                 return (function (e, t) {
-                  return m.a.createElement(A, { onClick: t({ id: e.id }), part: e })
-                })(e.part, l)
-              case b.a.MENTION:
+                  return p.a.createElement(I, { onClick: t({ id: e.id }), part: e })
+                })(e.part, d)
+              case h.a.MENTION:
                 return (function (e, t, n) {
                   var r = e.linkColor,
                     i = e.linkify,
@@ -39291,49 +39255,49 @@ window.__SCRIPTS_LOADED__.i18n &&
                     u = t.prefix,
                     l = t.text,
                     d = t.textDirection,
-                    p = t.url,
-                    f = q(s, l).map(function (e, t) {
+                    m = t.url,
+                    _ = F(s, l).map(function (e, t) {
                       var o = 0 === t ? u : ''
-                      return m.a.createElement(
-                        h.b,
+                      return p.a.createElement(
+                        f.b,
                         {
                           color: i ? r : void 0,
                           dir: d,
                           key: t.toString(),
-                          link: i ? p : void 0,
+                          link: i ? m : void 0,
                           onClick: i ? n({ text: l, id_str: c }) : void 0,
-                          style: i && a ? re.underlinedLink : void 0,
+                          style: i && a ? J.underlinedLink : void 0,
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
                         ''.concat(o).concat(l.substring(e.startIndex, e.endIndex)),
                       )
                     }),
-                    _ = m.a.createElement(F, { style: re.entityWrapper }, f),
-                    v = i && o === b.a.MENTION ? m.a.createElement(L.a, { screenName: l }, _) : _
-                  return te(v, 'user_mention', c)
-                })(c, e.part, l)
-              case b.a.EMOJI:
-                return (o = e.part), G({ entity: o })
-              case b.a.TEXT:
+                    v = p.a.createElement(j, { style: J.entityWrapper }, _),
+                    b = i && o === h.a.MENTION ? p.a.createElement(A.a, { screenName: l }, v) : v
+                  return Q(b, 'user_mention', c)
+                })(c, e.part, d)
+              case h.a.EMOJI:
+                return (o = e.part), B({ entity: o })
+              case h.a.TEXT:
                 return (
                   (t = e.part),
                   (n = t.highlights || []),
                   (r = t.text),
-                  (a = q(n, r)),
-                  m.a.createElement(
-                    m.a.Fragment,
+                  (a = F(n, r)),
+                  p.a.createElement(
+                    p.a.Fragment,
                     null,
                     a.map(function (e, n) {
-                      return V(e, t, n)
+                      return N(e, t, n)
                     }),
                   )
                 )
               default:
                 return null
             }
-          }, $),
-          re = S.a.create(function (e) {
+          }, W),
+          J = E.a.create(function (e) {
             return {
               twemoji: {
                 height: '1.2em',
@@ -39350,7 +39314,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               hashflagDisplay: { whiteSpace: 'nowrap' },
             }
           })
-        t.c = ne
+        t.b = Y
       },
       Fk5e: function (e, t, n) {
         'use strict'
@@ -45623,29 +45587,32 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'selectIsLoadingTop', function () {
             return u.p
           }),
-          n.d(t, 'selectUnreadCount', function () {
-            return u.s
-          }),
-          n.d(t, 'selectUntrustedCursor', function () {
-            return u.u
-          }),
-          n.d(t, 'selectUntrustedUnreadCount', function () {
-            return u.x
-          }),
-          n.d(t, 'selectUntrustedConversationCount', function () {
-            return u.t
-          }),
-          n.d(t, 'selectUntrustedLowQualityCursor', function () {
-            return u.w
-          }),
-          n.d(t, 'selectUntrustedLowQualityConversationCount', function () {
-            return u.v
-          }),
-          n.d(t, 'selectPinnedConversationIds', function () {
+          n.d(t, 'selectLastSeenEventIds', function () {
             return u.q
           }),
-          n.d(t, 'selectPoppedOutConversationId', function () {
+          n.d(t, 'selectUnreadCount', function () {
+            return u.t
+          }),
+          n.d(t, 'selectUntrustedCursor', function () {
+            return u.v
+          }),
+          n.d(t, 'selectUntrustedUnreadCount', function () {
+            return u.y
+          }),
+          n.d(t, 'selectUntrustedConversationCount', function () {
+            return u.u
+          }),
+          n.d(t, 'selectUntrustedLowQualityCursor', function () {
+            return u.x
+          }),
+          n.d(t, 'selectUntrustedLowQualityConversationCount', function () {
+            return u.w
+          }),
+          n.d(t, 'selectPinnedConversationIds', function () {
             return u.r
+          }),
+          n.d(t, 'selectPoppedOutConversationId', function () {
+            return u.s
           }),
           n.d(t, 'selectDrawerVisibility', function () {
             return u.m
@@ -45759,19 +45726,19 @@ window.__SCRIPTS_LOADED__.i18n &&
             return u.g
           }),
           n.d(t, 'updateLastSeenEventId', function () {
-            return u.z
-          }),
-          n.d(t, 'updateTrustedLastSeenEventId', function () {
             return u.A
           }),
-          n.d(t, 'updateUntrustedLastSeenEventId', function () {
+          n.d(t, 'updateTrustedLastSeenEventId', function () {
             return u.B
+          }),
+          n.d(t, 'updateUntrustedLastSeenEventId', function () {
+            return u.C
           }),
           n.d(t, 'popOutConversation', function () {
             return u.j
           }),
           n.d(t, 'setDrawerVisibility', function () {
-            return u.y
+            return u.z
           }),
           n.d(t, 'loadDrawerVisibilityFromPersistence', function () {
             return u.i
@@ -95367,7 +95334,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     : w.a.Children.map(n, function (e) {
                         return 'string' == typeof e
                           ? (r ? Object(j.c)(e) : Object(j.b)(e)).map(function (e, t) {
-                              return w.a.createElement(D.c, { key: t, part: e })
+                              return w.a.createElement(D.b, { key: t, part: e })
                             })
                           : e
                       })
@@ -98129,7 +98096,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           i = t.hashflags,
                           a = i !== e.hashflags,
                           o = n !== e.activeTeamId
-                        a && Object(he.e)(i), o && (r(), this._handleFetchTeamsFeatureSwitches())
+                        a && Object(he.d)(i), o && (r(), this._handleFetchTeamsFeatureSwitches())
                       },
                     },
                     {
@@ -98155,7 +98122,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                               ? this._fetchHashflagsAndRetryOnFailure().catch(Te)
                               : i().catch(Te),
                             this._hashflagTimer.start(),
-                            Object(he.e)(this.props.hashflags)),
+                            Object(he.d)(this.props.hashflags)),
                           this._userClaimsEnabled() &&
                             this.props.loggedInUserId &&
                             (this._fetchUserClaims(a), this._startClaimTimer(a))
@@ -102445,7 +102412,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'h', function () {
             return D
           }),
-          n.d(t, 'r', function () {
+          n.d(t, 'q', function () {
+            return N
+          }),
+          n.d(t, 's', function () {
             return F
           }),
           n.d(t, 'm', function () {
@@ -102454,10 +102424,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'l', function () {
             return B
           }),
-          n.d(t, 'u', function () {
+          n.d(t, 'v', function () {
             return H
           }),
-          n.d(t, 'w', function () {
+          n.d(t, 'x', function () {
             return z
           }),
           n.d(t, 'n', function () {
@@ -102472,19 +102442,19 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'k', function () {
             return Q
           }),
-          n.d(t, 'q', function () {
+          n.d(t, 'r', function () {
             return Y
           }),
-          n.d(t, 's', function () {
+          n.d(t, 't', function () {
             return J
           }),
-          n.d(t, 'x', function () {
+          n.d(t, 'y', function () {
             return X
           }),
-          n.d(t, 't', function () {
+          n.d(t, 'u', function () {
             return Z
           }),
-          n.d(t, 'v', function () {
+          n.d(t, 'w', function () {
             return $
           }),
           n.d(t, 'c', function () {
@@ -102505,19 +102475,19 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'a', function () {
             return ue
           }),
-          n.d(t, 'A', function () {
+          n.d(t, 'B', function () {
             return le
           }),
-          n.d(t, 'B', function () {
+          n.d(t, 'C', function () {
             return de
           }),
-          n.d(t, 'z', function () {
+          n.d(t, 'A', function () {
             return pe
           }),
           n.d(t, 'j', function () {
             return me
           }),
-          n.d(t, 'y', function () {
+          n.d(t, 'z', function () {
             return ve
           }),
           n.d(t, 'i', function () {

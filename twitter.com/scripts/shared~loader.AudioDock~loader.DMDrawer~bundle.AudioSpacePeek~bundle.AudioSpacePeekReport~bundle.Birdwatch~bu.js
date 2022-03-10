@@ -400,7 +400,7 @@
                           i = ''.concat(e.prefix).concat(e.text).trim()
                         return (!n && 0 !== t) || i
                           ? (n && (r = l()(l()({}, e), {}, { text: e.text.replace(/(\s+$)/g, '') })),
-                            b.a.createElement(M.c, {
+                            b.a.createElement(M.b, {
                               key: t,
                               linkColor: a,
                               linkify: s,
@@ -411,7 +411,7 @@
                             }))
                           : null
                       }
-                      return b.a.createElement(M.c, {
+                      return b.a.createElement(M.b, {
                         key: t,
                         linkColor: a,
                         linkify: s,

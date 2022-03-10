@@ -9137,6 +9137,32 @@
         return c.a.createElement(l.a, f)
       }
     },
+    '9TPy': function (e, t, n) {
+      'use strict'
+      n('2G9S')
+      var r = n('WpDa'),
+        o = n('ZNT5')
+      t.a = function (e) {
+        var t = e.listId,
+          n = e.useRanked,
+          i = void 0 !== n && n,
+          a = i ? 'ranked' : 'latest'
+        return Object(o.a)({
+          timelineId: 'listTweets-GraphQL-'.concat(t, '-').concat(a),
+          getEndpoint: function (e) {
+            return e.Lists.fetchTweetsGraphQL
+          },
+          getEndpointParams: function (e) {
+            var n = e.count,
+              r = e.cursor
+            return { listId: t, count: n, cursor: 'string' == typeof r ? r : void 0, useRanked: i }
+          },
+          formatResponse: r.a,
+          context: 'FETCH_LIST_TIMELINE_GRAPHQL',
+          perfKey: 'listTweetsGraphQL',
+        })
+      }
+    },
     '9XMQ': function (e, t, n) {
       'use strict'
       var r = n('1xkk'),
@@ -17847,44 +17873,35 @@
         o = n.n(r),
         i = n('ezF+'),
         a = n('vWJI'),
-        s = n('wrlS'),
-        c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
-        l = {
+        s = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
+        c = {
           loader: function () {
             return Promise.all([n.e(0), n.e(215)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
-          strategy: c.a.Critical,
+          strategy: s.a.Critical,
         },
-        u = {
+        l = {
           loader: function () {
             return Promise.all([n.e(0), n.e(215)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
-          strategy: c.a.Critical,
+          strategy: s.a.Critical,
         },
-        d = function (e) {
+        u = function (e) {
           return {
             loader: function () {
               return Promise.all([n.e(0), n.e(215)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
-            strategy: c.a.Critical,
+            strategy: s.a.Critical,
           }
-        },
-        f = s.c.isTrue('responsive_web_deamplification_transparent_cursors_enabled'),
-        p = !1,
-        h = function () {
-          p = !0
-        },
-        m = function () {
-          return p
         }
       t.a = function (e) {
         var t,
           r,
-          s = e.withRuxInjections
+          d = e.withRuxInjections
         return i.c({
           selectDisplayType: function (e) {
             return e.content.cursorType
@@ -17893,31 +17910,22 @@
             ((t = {}),
             o()(t, a.a.Top, i.a()),
             o()(t, a.a.Bottom, i.a()),
-            o()(t, a.a.Gap, l),
-            o()(t, a.a.ShowMore, u),
+            o()(t, a.a.Gap, c),
+            o()(t, a.a.ShowMore, l),
             o()(
               t,
               a.a.ShowMoreThreads,
-              ((r = { onLowQualityCursorShown: h, transparentCursorsEnabled: f, withRuxInjections: !!s }),
+              ((r = { withRuxInjections: !!d }),
               {
                 loader: function () {
                   return Promise.all([n.e(0), n.e(215)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
-                strategy: c.a.Critical,
+                strategy: s.a.Critical,
               }),
             ),
-            o()(
-              t,
-              a.a.ShowMoreThreadsPrompt,
-              d({
-                abusiveQualityCursorText: 'Show more replies',
-                getWasLowQualityCursorShown: m,
-                transparentCursorsEnabled: f,
-                withRuxInjections: !!s,
-              }),
-            ),
+            o()(t, a.a.ShowMoreThreadsPrompt, u({ withRuxInjections: !!d })),
             t),
         })
       }
@@ -29307,12 +29315,11 @@
               (o = t.call(this, e, r)),
               S()(v()(o), '_render', function () {
                 var e = o.props,
-                  t = e.analytics,
-                  n = (e.apiErrorHandlerMap, e.bottomFetchStatus),
-                  r = (e.createLocalApiErrorHandler, e.dismissedEntries),
-                  i = e.entries,
-                  a = e.entryConfiguration,
-                  s =
+                  t = (e.analytics, e.apiErrorHandlerMap, e.bottomFetchStatus),
+                  n = (e.createLocalApiErrorHandler, e.dismissedEntries),
+                  r = e.entries,
+                  i = e.entryConfiguration,
+                  a =
                     (e.fetchBottom,
                     e.fetchInitial,
                     e.fetchInitialOrTop,
@@ -29323,8 +29330,8 @@
                     e.olderAtTop,
                     e.onEntriesRendered,
                     e.pinnedEntry),
-                  c = e.preprocessEntryList,
-                  u =
+                  s = e.preprocessEntryList,
+                  c =
                     (e.processCallback,
                     e.renderUnavailable,
                     e.shouldFetchInitialOnBottomRetry,
@@ -29333,22 +29340,22 @@
                     e.unavailableReason,
                     e.updateInstreamVideoEntries,
                     e.withoutHeadroom),
-                  f = d()(e, Oe)
+                  u = d()(e, Oe)
                 return k.a.createElement(
                   se.a,
                   {
-                    dismissedEntries: r,
-                    entries: i,
-                    entryConfiguration: a,
-                    pinnedEntry: s || void 0,
-                    preprocessEntryList: c,
+                    dismissedEntries: n,
+                    entries: r,
+                    entryConfiguration: i,
+                    pinnedEntry: a || void 0,
+                    preprocessEntryList: s,
                   },
-                  function (e, r) {
+                  function (e, n) {
                     return k.a.createElement(
                       Ce.a,
-                      l()({}, f, {
-                        bottomFetchStatus: n || void 0,
-                        entries: r,
+                      l()({}, u, {
+                        bottomFetchStatus: t || void 0,
+                        entries: n,
                         handlerRegistry: e,
                         onAtBottom: o._handleAtBottom,
                         onAtTop: o._handleAtTop,
@@ -29359,8 +29366,7 @@
                         onRef: o._handleTimelineRendererRef,
                         onRefresh: o._handleRefresh,
                         processCallback: o._processCallback,
-                        scribeNamespace: t.contextualScribeNamespace,
-                        withoutHeadroom: u,
+                        withoutHeadroom: c,
                       }),
                     )
                   },
@@ -33370,7 +33376,7 @@
               i.b,
               { dir: 'auto', numberOfLines: r ? 2 : void 0, style: l, testID: u },
               v.map(function (e, t) {
-                return o.a.createElement(s.c, { key: 'user_'.concat(d, '_textpart_').concat(t), linkify: !0, part: e })
+                return o.a.createElement(s.b, { key: 'user_'.concat(d, '_textpart_').concat(t), linkify: !0, part: e })
               }),
             )
           : null
@@ -34591,7 +34597,7 @@
                     onEntityClick: c,
                     renderFragment: {
                       user: function (e, t) {
-                        return g.a.createElement(I, o()({}, e, { entityId: t.id }))
+                        return g.a.createElement(I, o()({}, e, { color: 'text', entityId: t.id }))
                       },
                       url: function (e, t) {
                         return g.a.createElement(T.a.TextFragment, o()({}, e, { link: Object(v.b)(t) }))

@@ -1,97 +1,45 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [215],
   {
-    '/Xez': function (e, n, t) {
+    '5bSN': function (e, t, n) {
       'use strict'
-      var a = t('VrFO'),
-        r = t.n(a),
-        o = t('Y9Ll'),
-        i = t.n(o),
-        c = t('5Yy7'),
-        s = t.n(c),
-        l = t('2VqO'),
-        d = t.n(l),
-        p = t('KEM+'),
-        u = t.n(p),
-        m = (t('hBvt'), t('ERkP')),
-        h = t.n(m),
-        v = t('EnM6'),
-        f = t('3XMw'),
-        y = t.n(f).a.ee8c6c61,
-        g = (function (e) {
-          s()(t, e)
-          var n = d()(t)
-          function t() {
-            return r()(this, t), n.apply(this, arguments)
-          }
-          return (
-            i()(t, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    n = e.children,
-                    t = e.conversationTreeMetadata,
-                    a = e.isLoading,
-                    r = e.link,
-                    o = e.onClick,
-                    i = t && t.ancestorConnector,
-                    c = t && t.indents
-                  return h.a.createElement(v.a, {
-                    indents: c,
-                    isLoading: a,
-                    label: n,
-                    link: r,
-                    onClick: o,
-                    withElbow: c ? 'side' === i : void 0,
-                  })
-                },
-              },
-            ]),
-            t
-          )
-        })(h.a.PureComponent)
-      u()(g, 'defaultProps', { children: y }), (n.a = g)
-    },
-    '5bSN': function (e, n, t) {
-      'use strict'
-      t.d(n, 'a', function () {
-        return v
+      n.d(t, 'a', function () {
+        return f
       })
-      t('hBvt')
-      var a = t('ERkP'),
-        r = t.n(a),
-        o = t('3XMw'),
-        i = t.n(o),
-        c = t('MWbm'),
-        s = t('htQn'),
-        l = t('Qwev'),
-        d = t('h0NW'),
-        p = t('t62R'),
-        u = t('rHpw'),
-        m = i.a.ee8c6c61,
-        h = i.a.i8005e73
-      function v(e) {
-        var n = e.children,
-          t = void 0 === n ? m : n,
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        o = n('3XMw'),
+        i = n.n(o),
+        c = n('MWbm'),
+        l = n('htQn'),
+        s = n('Qwev'),
+        u = n('h0NW'),
+        d = n('t62R'),
+        p = n('rHpw'),
+        h = i.a.ee8c6c61,
+        v = i.a.i8005e73
+      function f(e) {
+        var t = e.children,
+          n = void 0 === t ? h : t,
           a = e.isLoading,
           o = e.link,
           i = e.onClick,
-          u = e.isTransparentCursor
+          p = e.isTransparentCursor
         return r.a.createElement(
-          s.a,
-          { link: o, onClick: i, style: f.root },
+          l.a,
+          { link: o, onClick: i, style: m.root },
           r.a.createElement(
             c.a,
-            { style: f.inner },
+            { style: m.inner },
             a
-              ? r.a.createElement(l.a, { accessibilityLabel: h })
-              : u
+              ? r.a.createElement(s.a, { accessibilityLabel: v })
+              : p
               ? r.a.createElement(
                   r.a.Fragment,
                   null,
-                  r.a.createElement(d.a, {
-                    containerStyle: f.cursor,
+                  r.a.createElement(u.a, {
+                    containerStyle: m.cursor,
                     items: [
                       {
                         description: 'These may include replies that are potentially spammy, harmful, or offensive.',
@@ -99,13 +47,13 @@
                       },
                     ],
                   }),
-                  r.a.createElement(p.b, { children: 'View Replies', color: 'link', style: f.link }),
+                  r.a.createElement(d.b, { children: 'View Replies', color: 'link', style: m.link }),
                 )
-              : r.a.createElement(p.b, { align: 'center', children: t, color: 'link' }),
+              : r.a.createElement(d.b, { align: 'center', children: n, color: 'link' }),
           ),
         )
       }
-      var f = u.a.create(function (e) {
+      var m = p.a.create(function (e) {
         return {
           root: { justifyContent: 'center', minHeight: e.spaces.space48, width: '100%' },
           inner: { flexGrow: 1, flexShrink: 1, justifyContent: 'center' },
@@ -118,22 +66,22 @@
         }
       })
     },
-    EnM6: function (e, n, t) {
+    EnM6: function (e, t, n) {
       'use strict'
-      t('hBvt')
-      var a = t('ERkP'),
-        r = t.n(a),
-        o = t('3XMw'),
-        i = t.n(o),
-        c = t('MWbm'),
-        s = t('t62R'),
-        l = t('5mJL'),
-        d = t('PV92'),
-        p = t('htQn'),
-        u = t('rHpw'),
-        m = t('Qwev'),
-        h = i.a.i8005e73,
-        v = u.a.create(function (e) {
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        o = n('3XMw'),
+        i = n.n(o),
+        c = n('MWbm'),
+        l = n('t62R'),
+        s = n('5mJL'),
+        u = n('PV92'),
+        d = n('htQn'),
+        p = n('rHpw'),
+        h = n('Qwev'),
+        v = i.a.i8005e73,
+        f = p.a.create(function (e) {
           return {
             gap: { overflow: 'hidden' },
             treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
@@ -162,221 +110,260 @@
             loadingIndicator: { paddingVertical: e.spaces.space4 },
           }
         }),
-        f = r.a.createElement(m.a, { accessibilityLabel: h, style: v.loadingIndicator })
-      n.a = function (e) {
-        var n = e.indents,
-          t = e.isLoading,
+        m = r.a.createElement(h.a, { accessibilityLabel: v, style: f.loadingIndicator })
+      t.a = function (e) {
+        var t = e.indents,
+          n = e.isLoading,
           a = e.label,
           o = e.link,
           i = e.onClick,
-          u = e.withElbow,
-          m = r.a.createElement(s.b, { color: 'link', style: v.enlargeTouchTarget }, a),
-          h = r.a.createElement(
-            l.a,
+          p = e.withElbow,
+          h = r.a.createElement(l.b, { color: 'link', style: f.enlargeTouchTarget }, a),
+          v = r.a.createElement(
+            s.a,
             {
-              avatarCell: n
+              avatarCell: t
                 ? void 0
                 : r.a.createElement(
                     r.a.Fragment,
                     null,
-                    r.a.createElement(c.a, { style: v.dot }),
-                    r.a.createElement(c.a, { style: v.dot }),
-                    r.a.createElement(c.a, { style: v.dot }),
+                    r.a.createElement(c.a, { style: f.dot }),
+                    r.a.createElement(c.a, { style: f.dot }),
+                    r.a.createElement(c.a, { style: f.dot }),
                   ),
-              avatarCellStyle: v.dotGroup,
-              cellStyle: [v.content, n && v.treeContent],
+              avatarCellStyle: f.dotGroup,
+              cellStyle: [f.content, t && f.treeContent],
             },
-            t ? f : m,
+            n ? m : h,
           )
         return r.a.createElement(
           c.a,
-          { style: [v.gap, n && v.treeGap, n && 0 === n.length && v.treeGapTopLevel] },
-          n
-            ? r.a.createElement(d.a, {
-                indents: n,
+          { style: [f.gap, t && f.treeGap, t && 0 === t.length && f.treeGapTopLevel] },
+          t
+            ? r.a.createElement(u.a, {
+                indents: t,
                 paddingTop: 5,
                 smallFirstCell: !1,
-                style: v.connectors,
-                wideElbow: 1 === n.length,
-                withElbow: !!u,
+                style: f.connectors,
+                wideElbow: 1 === t.length,
+                withElbow: !!p,
               })
             : null,
           i || o
             ? r.a.createElement(
-                p.a,
+                d.a,
                 {
-                  link: t ? void 0 : o,
-                  onClick: t ? void 0 : i,
+                  link: n ? void 0 : o,
+                  onClick: n ? void 0 : i,
                   style: [
-                    v.hoverBox,
-                    n && 0 === n.length && v.hoverBoxTopLevel,
-                    n && n.length > 1 && v.hoverBoxIndented,
+                    f.hoverBox,
+                    t && 0 === t.length && f.hoverBoxTopLevel,
+                    t && t.length > 1 && f.hoverBoxIndented,
                   ],
-                  withInteractiveStyling: !t,
+                  withInteractiveStyling: !n,
                 },
-                h,
+                v,
               )
-            : h,
+            : v,
         )
       }
     },
-    VW3o: function (e, n, t) {
+    Xl5C: function (e, t, n) {
       'use strict'
-      var a = t('yiKp'),
-        r = t.n(a),
-        o = (t('LW0h'), t('7x/C'), t('ezF+')),
-        i = t('MDbM'),
-        c = t('caTy'),
-        s = t('zh9S'),
-        l = t('5bSN'),
-        d = t('VPAj'),
-        p = t('fs1G'),
-        u = { component: 'gap', action: 'impression' },
-        m = { action: 'get_middle' }
-      n.a = function (e) {
-        var n = e.component,
-          t = void 0 === n ? l.a : n,
-          a = e.impressionNamespace,
-          h = void 0 === a ? u : a,
-          v = e.clickNamespace,
-          f = void 0 === v ? m : v,
-          y = e.scribeData,
-          g = void 0 === y ? {} : y,
-          b = e.divider,
-          T = e.getChildren,
-          k = e.getActionText
-        return o.g({
-          divider: b || { top: !0, bottom: !0 },
-          component: t,
-          isFocusable: Object(d.a)(!0),
-          selectData: function (e) {
-            var n = e.entry,
-              t = e.module
-            return {
-              fetchStatus: function (e) {
-                return t.selectCursorFetchStatus(e, n)
-              },
-            }
+      n.r(t)
+      var a = n('nGQU'),
+        r = Object(a.a)({})
+      t.default = r
+    },
+    aqRH: function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a = n('nGQU')
+      t.default = function (e) {
+        var t = e.withRuxInjections
+        return Object(a.a)({
+          divider: function (e) {
+            return e.conversationTreeMetadata ? { top: !1, bottom: !1 } : { top: !0, bottom: !1 }
           },
-          bindActions: function (e) {
-            return { fetchCursor: e.module.fetchCursor, scribe: s.c }
-          },
-          createProps: function (e) {
-            var n = e.actions,
-              t = n.fetchCursor,
-              a = n.scribe,
-              o = e.data.fetchStatus,
-              s = e.entry,
-              l = e.scribeNamespace,
-              d = s.content.url && Object(c.b)(s.content.url)
-            return {
-              conversationTreeMetadata: s.conversationTreeMetadata,
-              isLoading: o === i.a.LOADING,
-              children: T ? T(s) : void 0,
-              actionText: k ? k(s) : void 0,
-              onClick: function () {
-                d
-                  ? a(r()(r()({}, l), f), g)
-                  : t(s).then(function () {
-                      return a(r()(r()({}, l), f), g)
-                    }, p.a)
-              },
-              link: d,
-            }
-          },
-          shouldDisplayBorder: function (e) {
-            var n = e.conversationTreeMetadata
-            return (
-              !n ||
-              (!1 === n.descendantConnector &&
-                0 ===
-                  n.indents.filter(function (e) {
-                    return 'line' === e.displayType
-                  }).length)
-            )
-          },
-          onImpression: function (e) {
-            var n = e.actions.scribe,
-              t = e.scribeNamespace
-            n(r()(r()({}, t), h), g)
-          },
+          withRuxInjections: t,
         })
       }
     },
-    Xl5C: function (e, n, t) {
+    ex5I: function (e, t, n) {
       'use strict'
-      t.r(n)
-      var a = t('VW3o'),
-        r = Object(a.a)({
-          getChildren: function (e) {
-            return e.content.displayTreatment && e.content.displayTreatment.actionText
-              ? e.content.displayTreatment.actionText
-              : void 0
-          },
-        })
-      n.default = r
+      n.r(t)
+      var a = n('nGQU'),
+        r = Object(a.a)({ divider: { top: !1, bottom: !1 } })
+      t.default = r
     },
-    aqRH: function (e, n, t) {
+    nGQU: function (e, t, n) {
       'use strict'
-      t.r(n)
-      var a = t('VW3o'),
-        r = t('VrFO'),
-        o = t.n(r),
-        i = t('Y9Ll'),
-        c = t.n(i),
-        s = t('5Yy7'),
-        l = t.n(s),
-        d = t('2VqO'),
-        p = t.n(d),
-        u = (t('hBvt'), t('ERkP')),
-        m = t.n(u),
-        h = t('5bSN'),
-        v = t('/Xez'),
-        f = (function (e) {
-          l()(t, e)
-          var n = p()(t)
-          function t() {
-            return o()(this, t), n.apply(this, arguments)
+      n('LW0h'), n('7x/C')
+      var a = n('ezF+'),
+        r = n('VPAj'),
+        o = n('97Jx'),
+        i = n.n(o),
+        c = n('yiKp'),
+        l = n.n(c),
+        s = n('KEM+'),
+        u = n.n(s),
+        d = n('ERkP'),
+        p = n.n(d),
+        h = n('v6aA'),
+        v = n('MDbM'),
+        f = n('rxPX'),
+        m = n('0KEI'),
+        g = function (e, t) {
+          return t.module.selectCursorFetchStatus(e, t.entry)
+        },
+        w = Object(f.a)()
+          .propsFromState(function () {
+            return { fetchStatus: g }
+          })
+          .adjustStateProps(function (e) {
+            return { isLoading: e.fetchStatus === v.a.LOADING }
+          })
+          .propsFromActions(function (e) {
+            return {
+              fetchCursor: e.module.fetchCursor,
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('URT_CURSOR'),
+            }
+          })
+          .withAnalytics(),
+        y = n('caTy'),
+        b = n('5bSN'),
+        k = n('VrFO'),
+        C = n.n(k),
+        E = n('Y9Ll'),
+        T = n.n(E),
+        L = n('5Yy7'),
+        x = n.n(L),
+        S = n('2VqO'),
+        M = n.n(S),
+        j = (n('hBvt'), n('EnM6')),
+        G = n('3XMw'),
+        I = n.n(G).a.ee8c6c61,
+        R = (function (e) {
+          x()(n, e)
+          var t = M()(n)
+          function n() {
+            return C()(this, n), t.apply(this, arguments)
           }
           return (
-            c()(t, [
+            T()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    n = e.children,
-                    t = e.conversationTreeMetadata,
+                    t = e.children,
+                    n = e.conversationTreeMetadata,
                     a = e.isLoading,
                     r = e.link,
-                    o = e.onClick
-                  return t
-                    ? m.a.createElement(v.a, this.props)
-                    : m.a.createElement(h.a, { children: n, isLoading: a, link: r, onClick: o })
+                    o = e.onClick,
+                    i = n && n.ancestorConnector,
+                    c = n && n.indents
+                  return p.a.createElement(j.a, {
+                    indents: c,
+                    isLoading: a,
+                    label: t,
+                    link: r,
+                    onClick: o,
+                    withElbow: c ? 'side' === i : void 0,
+                  })
                 },
               },
             ]),
-            t
+            n
           )
-        })(m.a.PureComponent),
-        y = (function (e) {
-          l()(t, e)
-          var n = p()(t)
-          function t() {
-            return o()(this, t), n.apply(this, arguments)
+        })(p.a.PureComponent)
+      u()(R, 'defaultProps', { children: I })
+      var P,
+        O = R,
+        B = (function (e) {
+          x()(n, e)
+          var t = M()(n)
+          function n() {
+            return C()(this, n), t.apply(this, arguments)
           }
           return (
-            c()(t, [
+            T()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    n = e.children,
-                    t = e.isLoading,
+                    t = e.children,
+                    n = e.conversationTreeMetadata,
+                    a = e.isLoading,
+                    r = e.link,
+                    o = e.onClick
+                  return n
+                    ? p.a.createElement(O, this.props)
+                    : p.a.createElement(b.a, { children: t, isLoading: a, link: r, onClick: o })
+                },
+              },
+            ]),
+            n
+          )
+        })(p.a.PureComponent),
+        H = n('1Pcy'),
+        Q = n.n(H),
+        _ =
+          (n('2G9S'),
+          (function (e) {
+            x()(n, e)
+            var t = M()(n)
+            function n() {
+              var e
+              C()(this, n)
+              for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
+              return (
+                (e = t.call.apply(t, [this].concat(r))),
+                u()(Q()(e), '_abusiveQualityCursorText', 'Show more replies'),
+                e
+              )
+            }
+            return (
+              T()(n, [
+                {
+                  key: 'render',
+                  value: function () {
+                    var e = this.props,
+                      t = e.children,
+                      n = e.isLoading,
+                      a = e.link,
+                      r = e.onClick
+                    return p.a.createElement(b.a, {
+                      children: t,
+                      isLoading: n,
+                      isTransparentCursor: t !== this._abusiveQualityCursorText,
+                      link: a,
+                      onClick: r,
+                    })
+                  },
+                },
+              ]),
+              n
+            )
+          })(p.a.PureComponent)),
+        F = (function (e) {
+          x()(n, e)
+          var t = M()(n)
+          function n() {
+            return C()(this, n), t.apply(this, arguments)
+          }
+          return (
+            T()(n, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.children,
+                    n = e.isLoading,
                     a = e.link,
                     r = e.onClick
-                  return m.a.createElement(h.a, {
-                    children: n,
-                    isLoading: t,
+                  return p.a.createElement(b.a, {
+                    children: t,
+                    isLoading: n,
                     isTransparentCursor: !0,
                     link: a,
                     onClick: r,
@@ -384,135 +371,122 @@
                 },
               },
             ]),
-            t
+            n
           )
-        })(m.a.PureComponent),
-        g = { component: 'cursor', action: 'impression' },
-        b = { component: 'cursor', action: 'click' },
-        T = { event_info: 'ShowMoreThreads' }
-      n.default = function (e) {
-        var n = e.onLowQualityCursorShown,
-          t = e.transparentCursorsEnabled,
-          r = e.withRuxInjections
-        return Object(a.a)({
-          component: t && !r ? y : f,
-          getChildren: function (e) {
-            return (
-              n(),
-              e.content.displayTreatment && e.content.displayTreatment.actionText
-                ? e.content.displayTreatment.actionText
-                : void 0
-            )
-          },
-          divider: function (e) {
-            return e.conversationTreeMetadata ? { top: !1, bottom: !1 } : { top: !0, bottom: !1 }
-          },
-          impressionNamespace: g,
-          clickNamespace: b,
-          scribeData: T,
-        })
+        })(p.a.PureComponent),
+        A = n('xM7j'),
+        W = n('vWJI'),
+        U = { component: 'cursor', action: 'click' },
+        V = { component: 'cursor', action: 'impression' },
+        z = { action: 'get_middle' },
+        D = { component: 'gap', action: 'impression' },
+        X =
+          ((P = {}),
+          u()(P, W.a.ShowMoreThreads, { event_info: 'ShowMoreThreads' }),
+          u()(P, W.a.ShowMoreThreadsPrompt, { event_info: 'ShowMoreThreadsPrompt' }),
+          P),
+        J = !1,
+        N = function (e) {
+          var t = p.a.useContext(h.a).featureSwitches,
+            n = e.analytics,
+            a = e.createLocalApiErrorHandler,
+            r = e.entry,
+            o = e.fetchCursor,
+            c = e.isLoading,
+            s = e.withRuxInjections,
+            u = r.content,
+            d = u.cursorType,
+            v = u.displayTreatment,
+            f = u.url,
+            m = f && Object(y.b)(f),
+            g = X[d],
+            w = t.isTrue('responsive_web_deamplification_transparent_cursors_enabled') && !s
+          p.a.useEffect(function () {
+            var e = d === W.a.Gap ? D : V
+            n.scribe(l()(l()({}, e), {}, { data: g })), d === W.a.ShowMoreThreads && (J = !0)
+          }, [])
+          var k = p.a.useCallback(
+              function (e) {
+                o(r).then(e).catch(a())
+              },
+              [a, r, o],
+            ),
+            C = p.a.useCallback(
+              function () {
+                var e = d === W.a.Gap ? z : U
+                n.scribe(l()(l()({}, e), {}, { data: g }))
+              },
+              [n, d, g],
+            ),
+            E = {
+              isLoading: c,
+              onClick: p.a.useCallback(
+                function () {
+                  m ? C() : k(C)
+                },
+                [m, k, C],
+              ),
+              link: m,
+            },
+            T = l()(l()({}, E), {}, { conversationTreeMetadata: r.conversationTreeMetadata }),
+            L = (null == v ? void 0 : v.actionText) || null
+          switch (d) {
+            case W.a.Gap:
+              return p.a.createElement(b.a, E, L)
+            case W.a.ShowMore:
+              return p.a.createElement(O, T, L)
+            case W.a.ShowMoreThreads:
+              var x = w ? F : B
+              return p.a.createElement(x, T, L)
+            case W.a.ShowMoreThreadsPrompt:
+              var S,
+                M = w ? _ : A.a,
+                j = (null == v ? void 0 : v.labelText) || null,
+                G = J && w ? 'Show more replies' : j
+              return p.a.createElement(
+                M,
+                i()({}, T, {
+                  actionText: null === (S = r.content.displayTreatment) || void 0 === S ? void 0 : S.actionText,
+                }),
+                G,
+              )
+            default:
+              return null
+          }
+        },
+        K = w(p.a.memo(N))
+      t.a = function (e) {
+        var t = e.divider,
+          n = e.withRuxInjections
+        return a
+          .b({
+            divider: t || { top: !0, bottom: !0 },
+            component: K,
+            isFocusable: Object(r.a)(!0),
+            shouldDisplayBorder: function (e) {
+              var t = e.conversationTreeMetadata
+              return (
+                !t ||
+                (!1 === t.descendantConnector &&
+                  0 ===
+                    t.indents.filter(function (e) {
+                      return 'line' === e.displayType
+                    }).length)
+              )
+            },
+          })
+          .getHandler(function () {
+            return { withRuxInjections: n }
+          })
       }
     },
-    ex5I: function (e, n, t) {
+    zXWy: function (e, t, n) {
       'use strict'
-      t.r(n)
-      var a = t('VW3o'),
-        r = t('/Xez'),
-        o = Object(a.a)({
-          component: r.a,
-          getChildren: function (e) {
-            return e.content.displayTreatment && e.content.displayTreatment.actionText
-              ? e.content.displayTreatment.actionText
-              : void 0
-          },
-          divider: { top: !1, bottom: !1 },
-          impressionNamespace: { component: 'cursor', action: 'impression' },
-          clickNamespace: { component: 'cursor', action: 'click' },
-        })
-      n.default = o
-    },
-    zXWy: function (e, n, t) {
-      'use strict'
-      t.r(n)
-      var a = t('VW3o'),
-        r = t('VrFO'),
-        o = t.n(r),
-        i = t('Y9Ll'),
-        c = t.n(i),
-        s = t('1Pcy'),
-        l = t.n(s),
-        d = t('5Yy7'),
-        p = t.n(d),
-        u = t('2VqO'),
-        m = t.n(u),
-        h = t('KEM+'),
-        v = t.n(h),
-        f = (t('2G9S'), t('hBvt'), t('ERkP')),
-        y = t.n(f),
-        g = t('5bSN'),
-        b = (function (e) {
-          p()(t, e)
-          var n = m()(t)
-          function t() {
-            var e
-            o()(this, t)
-            for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
-            return (
-              (e = n.call.apply(n, [this].concat(r))), v()(l()(e), '_abusiveQualityCursorText', 'Show more replies'), e
-            )
-          }
-          return (
-            c()(t, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    n = e.children,
-                    t = e.isLoading,
-                    a = e.link,
-                    r = e.onClick
-                  return y.a.createElement(g.a, {
-                    children: n,
-                    isLoading: t,
-                    isTransparentCursor: n !== this._abusiveQualityCursorText,
-                    link: a,
-                    onClick: r,
-                  })
-                },
-              },
-            ]),
-            t
-          )
-        })(y.a.PureComponent),
-        T = t('xM7j'),
-        k = { component: 'cursor', action: 'impression' },
-        C = { component: 'cursor', action: 'click' },
-        w = { event_info: 'ShowMoreThreadsPrompt' }
-      n.default = function (e) {
-        var n = e.abusiveQualityCursorText,
-          t = e.getWasLowQualityCursorShown,
-          r = e.transparentCursorsEnabled,
-          o = e.withRuxInjections
-        return Object(a.a)({
-          component: r && !o ? b : T.a,
-          getChildren: function (e) {
-            var a = t()
-            return e.content.displayTreatment && e.content.displayTreatment.labelText
-              ? a && r && !o
-                ? n
-                : e.content.displayTreatment.labelText
-              : void 0
-          },
-          getActionText: function (e) {
-            return e.content.displayTreatment && e.content.displayTreatment.actionText
-              ? e.content.displayTreatment.actionText
-              : void 0
-          },
-          divider: { top: !1, bottom: !1 },
-          impressionNamespace: k,
-          clickNamespace: C,
-          scribeData: w,
-        })
+      n.r(t)
+      var a = n('nGQU')
+      t.default = function (e) {
+        var t = e.withRuxInjections
+        return Object(a.a)({ divider: { top: !1, bottom: !1 }, withRuxInjections: t })
       }
     },
   },

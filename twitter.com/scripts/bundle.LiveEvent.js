@@ -1194,7 +1194,7 @@
                   d.b,
                   null,
                   c.map(function (e, t) {
-                    return i.a.createElement(v.c, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
+                    return i.a.createElement(v.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
                   }),
                 )
               : null,

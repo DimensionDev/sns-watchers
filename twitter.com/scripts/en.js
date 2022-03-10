@@ -2081,6 +2081,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
           ),
           a('j49e6aa2', 'Yes, I want to leave'),
+          a('dde5f322', function (e) {
+            return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
+          }),
           a('j8af8ea9', 'Membership type'),
           a('d5f01115', 'Purpose'),
           a('c3c04b70', 'Color theme'),
@@ -2284,9 +2287,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bf2923a5', 'Check your device’s settings.'),
           a('d963d1b6', 'No places were found'),
           a('a893d601', 'Ok'),
-          a('be6cc44d', 'Search locations'),
-          a('d8ef3232', 'Failed to fetch locations')
-        a('cce30dcc', 'Tag location'),
+          a('be6cc44d', 'Search locations')
+        a('d8ef3232', 'Failed to fetch locations'),
+          a('cce30dcc', 'Tag location'),
           a('b01ed2da', function (e) {
             return e.distance + ' mi'
           }),
@@ -3525,9 +3528,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b6fe9d79', 'Learn more'),
           a('e440acda', 'Off-Twitter activity'),
           a('f6325f47', 'Off-Twitter activity'),
-          a('j291883b', 'Personalization and data settings'),
-          a('id414293', 'Off-Twitter activity')
-        a('b352177d', 'Personalization and data settings'),
+          a('j291883b', 'Personalization and data settings')
+        a('id414293', 'Off-Twitter activity'),
+          a('b352177d', 'Personalization and data settings'),
           a('b056d9dc', 'This is your account’s primary language setting.'),
           a('h68bc23c', 'These additional languages are used to personalize your experience.'),
           a(
@@ -4275,6 +4278,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a9ee1ecc',
             'We’ve verified your Stripe account and you’re good to go. We’ll send you a notification as soon as Super Follows is enabled on your account.',
           ),
+          a(
+            'd0c4f937',
+            'We’ve confirmed your Stripe account. It can take 1–3 weeks for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
+          ),
           a('ja884230', 'Set up your payout details'),
           a('af1b808d', 'Add a verified Stripe account before getting started with Super Follows.'),
           a('fe339750', 'Create Stripe account'),
@@ -4375,6 +4382,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' device. You’ll need to manage or cancel your subscription from that platform.'
             )
           }),
+          a('a74e7c76', function (e) {
+            return e.count + ' unread request' + n(e.count, '', 's')
+          }),
           a('bef0039f', 'You don’t have any message requests'),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
           a('f5dc353c', 'Now filtering graphic media'),
@@ -4384,9 +4394,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('daeda053', 'Go to Settings'),
           a('e7172d70', 'Additional messages'),
-          a('a74e7c76', function (e) {
-            return e.count + ' unread request' + n(e.count, '', 's')
-          }),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
           a('a7013cb6', 'Send Tweet separately'),
@@ -4738,9 +4745,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ae7600c8', 'Moment is up to date'),
           a('fea74b66', function (e) {
             return '@' + e.screenName + '’s Moments'
-          }),
-          a('e14206c3', 'You haven’t created any Moments'),
-          a('d1e5e327', 'When you do, it’ll show up here.')
+          })
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4757,9 +4762,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ee75768c', function (e) {
-          return '@' + e.screenName + ' hasn’t created any Moments'
-        }),
+        a('e14206c3', 'You haven’t created any Moments'),
+          a('d1e5e327', 'When you do, it’ll show up here.'),
+          a('ee75768c', function (e) {
+            return '@' + e.screenName + ' hasn’t created any Moments'
+          }),
           a('f5978663', 'When they do, they’ll show up here.'),
           a('a357d876', 'This account’s Moments are unavailable.'),
           a('i7e9ecf2', 'Pending changes'),
@@ -5510,6 +5517,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
           ),
           a('caeab0f7', 'Start reading'),
+          a('c2059c9f', 'Directions'),
+          a('e2acb642', 'Contact'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
             'hf06085d',
@@ -6019,8 +6028,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'You can see this Tweet because you Super Follow @' + e.screenName
           }),
           a('b140e3b1', 'Some conversations can get heavy'),
-          a('icbb05dc', 'Don’t forget the human behind the screen.'),
-          a('g4d12383', 'Heads up'),
+          a('icbb05dc', 'Don’t forget the human behind the screen.')
+        a('g4d12383', 'Heads up'),
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('fe0c6436', function (e) {
             return 'Only @' + e.screenName + '’s Twitter Circle can see this Tweet'
@@ -6029,8 +6038,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return (
               'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
             )
-          })
-        a('d7e50a66', 'Learn more'),
+          }),
+          a('d7e50a66', 'Learn more'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
@@ -6341,8 +6350,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -8818,7 +8827,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }

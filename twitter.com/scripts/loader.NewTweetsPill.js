@@ -5,9 +5,9 @@
       'use strict'
       var n = i('yiKp'),
         a = i.n(n),
-        r = i('ERkP'),
-        o = i.n(r),
-        s = i('Lsrn'),
+        s = i('ERkP'),
+        o = i.n(s),
+        r = i('Lsrn'),
         l = i('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -18,7 +18,7 @@
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.a.root, e.style],
+                style: [r.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -46,38 +46,36 @@
       'use strict'
       i.r(t),
         i.d(t, 'NewTweetsPill', function () {
-          return K
+          return W
         })
-      var n = i('yiKp'),
+      var n = i('VrFO'),
         a = i.n(n),
-        r = i('VrFO'),
-        o = i.n(r),
         s = i('Y9Ll'),
-        l = i.n(s),
-        c = i('1Pcy'),
+        o = i.n(s),
+        r = i('1Pcy'),
+        l = i.n(r),
+        c = i('5Yy7'),
         u = i.n(c),
-        h = i('5Yy7'),
-        m = i.n(h),
-        p = i('2VqO'),
+        m = i('2VqO'),
+        h = i.n(m),
+        p = i('KEM+'),
         d = i.n(p),
-        w = i('KEM+'),
-        f = i.n(w),
-        y = (i('2G9S'), i('uFXj'), i('ERkP')),
-        _ = i.n(y),
-        v = (i('z84I'), i('lnti')),
-        b = i('hqKg'),
-        g = i('o52z'),
-        S = i('G6rE'),
-        D = i('rxPX'),
-        I = function (e, t) {
-          return (t.alert && t.alert.userIds) || Object(g.a)()
+        _ = (i('uFXj'), i('ERkP')),
+        w = i.n(_),
+        y = (i('z84I'), i('lnti')),
+        f = i('hqKg'),
+        v = i('o52z'),
+        b = i('G6rE'),
+        S = i('rxPX'),
+        g = function (e, t) {
+          return (t.alert && t.alert.userIds) || Object(v.a)()
         },
-        T = Object(D.a)()
+        T = Object(S.a)()
           .propsFromState(function () {
             return {
-              userImageUrls: Object(b.createSelector)(S.e.selectAll, I, function (e, t) {
+              userImageUrls: Object(f.createSelector)(b.e.selectAll, g, function (e, t) {
                 return t
-                  ? Object(v.a)(
+                  ? Object(y.a)(
                       t.map(function (t) {
                         var i = e[t]
                         return i ? i.profile_image_url_https : void 0
@@ -87,96 +85,127 @@
               }),
             }
           })
-          .withAnalytics(),
+          .withAnalytics({ component: 'new_tweet_prompt' }),
         k = i('3XMw'),
-        A = i.n(k),
-        L = i('WXWl'),
-        C = i('IbOt'),
+        D = i.n(k),
+        A = i('WXWl'),
+        I = i('IbOt'),
         O = i('fs1G'),
-        E = i('rcen'),
-        x = i('MWbm'),
-        M = i('I4+6'),
-        j = i('rHpw'),
-        P = i('cm6r'),
-        R = i('MAI/'),
-        V = i('t62R'),
-        z = A.a.gdb8bdcc,
-        U = A.a.ac0f6491,
-        W = { component: 'new_tweet_prompt' },
-        F = {},
-        H = {},
-        K = (function (e) {
-          m()(i, e)
-          var t = d()(i)
-          function i() {
-            var e
-            o()(this, i)
-            for (var n = arguments.length, a = new Array(n), r = 0; r < n; r++) a[r] = arguments[r]
+        x = i('rcen'),
+        L = i('MWbm'),
+        C = i('I4+6'),
+        E = i('rHpw'),
+        M = i('cm6r'),
+        j = i('MAI/'),
+        P = i('t62R'),
+        R = i('v6aA'),
+        V = D.a.gdb8bdcc,
+        z = D.a.ac0f6491,
+        N = {},
+        U = {},
+        W = (function (e) {
+          u()(i, e)
+          var t = h()(i)
+          function i(e, n) {
+            var s
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              f()(u()(e), 'state', { show: !1 }),
-              f()(u()(e), '_getLastShownTime', function () {
-                return H[e.props.timelineId]
+              a()(this, i),
+              (s = t.call(this, e, n)),
+              d()(l()(s), 'state', { show: !1 }),
+              d()(l()(s), '_getLastShownTime', function () {
+                return U[s.props.timelineId]
               }),
-              f()(u()(e), '_attemptShow', function () {
-                var t = e.props,
-                  i = t.alert,
-                  n = t.isAtNewest,
-                  a = t.removeAlert,
-                  r = t.timelineId,
-                  o = t.unreadCount
-                if ((e._timeoutID && (clearTimeout(e._timeoutID), (e._timeoutID = null)), e._mounted && (i || o > 0))) {
-                  var s = e._getDelayRemaining()
-                  if (s <= 0) {
-                    if (i && n()) return void a()
-                    e.setState({ show: !0 }), (F[r] = Date.now()), e._scribeAction('show')
-                  } else e._timeoutID = setTimeout(e._attemptShow, s)
+              d()(l()(s), '_hide', function () {
+                var e = s.props,
+                  t = e.alert,
+                  i = e.removeAlert,
+                  n = e.timelineId
+                s._mounted && (s._updateLastShownTime(n), s.setState({ show: !1 })),
+                  t &&
+                    setTimeout(function () {
+                      return i()
+                    }, 500)
+              }),
+              d()(l()(s), '_attemptShow', function () {
+                var e = s.props,
+                  t = e.alert,
+                  i = e.isAtNewest,
+                  n = e.removeAlert,
+                  a = e.timelineId,
+                  o = e.unreadCount
+                if (
+                  (s._attemptShowTimeout && (clearTimeout(s._attemptShowTimeout), (s._attemptShowTimeout = null)),
+                  s._mounted && (t || o > 0))
+                ) {
+                  var r = s._getDelayRemaining()
+                  if (r <= 0) {
+                    if (t && i()) return void n()
+                    s.setState({ show: !0 }),
+                      (N[a] = Date.now()),
+                      s._scribeAction('show'),
+                      s._isSticky &&
+                        s._stickyDurationSeconds > 0 &&
+                        (s._autoDismissTimeout = setTimeout(s._hide, 1e3 * s._stickyDurationSeconds))
+                  } else s._attemptShowTimeout = setTimeout(s._attemptShow, r)
                 }
               }),
-              f()(u()(e), '_handleScrollDown', function () {
-                var t = e.props,
-                  i = t.alert,
-                  n = t.remainVisibleInterval,
-                  a = t.timelineId,
-                  r = n
-                i && i.displayDurationMs && i.displayDurationMs > -1 && (r = i.displayDurationMs),
-                  e.state.show && Date.now() >= F[a] + r && (e._scribeAction('dismiss'), e._hide())
+              d()(l()(s), '_handleScrollDown', function () {
+                var e = s.props,
+                  t = e.alert,
+                  i = e.remainVisibleInterval,
+                  n = e.timelineId,
+                  a = i
+                t && t.displayDurationMs && t.displayDurationMs > -1 && (a = t.displayDurationMs),
+                  s.state.show && Date.now() >= N[n] + a && (s._scribeAction('dismiss'), s._hide())
               }),
-              f()(u()(e), '_handleClick', function () {
-                var t = e.props.applyNewTweetsBarInstructions
-                e._scribeAction('click'), window.scrollTo(0, 0), t && t(), e._hide()
+              d()(l()(s), '_handleClick', function () {
+                var e = s.props.applyNewTweetsBarInstructions
+                s._scribeAction('click'), window.scrollTo(0, 0), null == e || e(), s._hide()
               }),
-              e
+              (s._isSticky = s.context.featureSwitches.isTrue('responsive_web_home_sticky_new_tweets_pill_enabled')),
+              (s._stickyDurationSeconds = s.context.featureSwitches.getNumberValue(
+                'responsive_web_home_sticky_new_tweets_pill_duration_seconds',
+                -1,
+              )),
+              (s._delayOverrideSeconds = s.context.featureSwitches.getNumberValue(
+                'responsive_web_home_sticky_new_tweets_pill_delay_seconds',
+                1,
+              )),
+              s
             )
           }
           return (
-            l()(i, [
+            o()(i, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   ;(this._mounted = !0),
                     this._getLastShownTime() || this._updateLastShownTime(this.props.timelineId),
                     this._attemptShow(),
-                    (this._cancelMomentum = Object(C.a)({ onUp: O.a, onDown: this._handleScrollDown }))
+                    (this._cancelMomentum = Object(I.a)({
+                      onUp: O.a,
+                      onDown: this._isSticky ? O.a : this._handleScrollDown,
+                    }))
                 },
               },
               {
                 key: 'componentDidUpdate',
                 value: function (e, t) {
-                  var i = this.props,
-                    n = i.alert,
-                    a = i.timelineId,
-                    r = i.unreadCount,
-                    o = e.timelineId !== a,
-                    s = o && !this._getLastShownTime()
-                  o
-                    ? (s && this._updateLastShownTime(a),
+                  var i,
+                    n = this.props,
+                    a = n.alert,
+                    s = n.timelineId,
+                    o = n.unreadCount,
+                    r = e.timelineId !== s,
+                    l = r && !this._getLastShownTime()
+                  r
+                    ? (l && this._updateLastShownTime(s),
                       t.show && this._updateLastShownTime(e.timelineId),
-                      e.removeAlert && e.removeAlert(),
+                      null === (i = e.removeAlert) || void 0 === i || i.call(e),
                       this.setState({ show: !1 }),
                       this._attemptShow())
-                    : (((n && !t.show) || r > e.unreadCount) && this._attemptShow(),
-                      (!e.alert && 0 !== r) || n || this._hide())
+                    : (((a && !t.show) || o > e.unreadCount) && this._attemptShow(),
+                      (!e.alert && 0 !== o) || a || this._hide())
                 },
               },
               {
@@ -186,8 +215,9 @@
                     t = e.removeAlert,
                     i = e.timelineId
                   ;(this._mounted = !1),
-                    this._timeoutID && clearTimeout(this._timeoutID),
-                    this.state.show && (this._updateLastShownTime(i), t && t()),
+                    this._attemptShowTimeout && clearTimeout(this._attemptShowTimeout),
+                    this._autoDismissTimeout && clearTimeout(this._autoDismissTimeout),
+                    this.state.show && (this._updateLastShownTime(i), null == t || t()),
                     this._cancelMomentum()
                 },
               },
@@ -199,43 +229,43 @@
                     i = t.alert,
                     n = t.label,
                     a = t.userImageUrls,
-                    r = this.state.show
+                    s = this.state.show
                   e = i
-                    ? i.richText && _.a.createElement(E.a, { entities: i.richText.entities, text: i.richText.text })
+                    ? i.richText && w.a.createElement(x.a, { entities: i.richText.entities, text: i.richText.text })
                     : n
-                  var o = M.a.generate({
-                    backgroundColor: j.a.theme.colors.primary,
-                    color: j.a.theme.colors.whiteOnColor,
+                  var o = C.a.generate({
+                    backgroundColor: E.a.theme.colors.primary,
+                    color: E.a.theme.colors.whiteOnColor,
                   })
-                  return _.a.createElement(
-                    x.a,
+                  return w.a.createElement(
+                    L.a,
                     { accessibilityRole: 'status' },
-                    _.a.createElement(
-                      P.a,
+                    w.a.createElement(
+                      M.a,
                       {
-                        accessibilityHidden: !r,
-                        accessibilityLabel: U,
+                        accessibilityHidden: !s,
+                        accessibilityLabel: z,
                         accessibilityRole: 'button',
                         interactiveStyles: o,
                         onClick: this._handleClick,
-                        style: [N.pill, r && N.show],
+                        style: [F.pill, s && F.show],
                       },
-                      _.a.createElement(
-                        x.a,
-                        { style: N.innerPill },
-                        _.a.createElement(L.a, { style: N.icon }),
+                      w.a.createElement(
+                        L.a,
+                        { style: F.innerPill },
+                        w.a.createElement(A.a, { style: F.icon }),
                         a && a.length > 0
-                          ? _.a.createElement(
-                              x.a,
-                              { style: N.facepile },
-                              _.a.createElement(R.a, {
+                          ? w.a.createElement(
+                              L.a,
+                              { style: F.facepile },
+                              w.a.createElement(j.a, {
                                 borderColor: 'primary',
                                 userAvatarSize: 'large',
                                 userAvatarUrls: a,
                               }),
                             )
                           : null,
-                        _.a.createElement(V.b, { color: 'whiteOnColor', numberOfLines: 1, style: N.pillText }, e),
+                        w.a.createElement(P.b, { color: 'whiteOnColor', numberOfLines: 1, style: F.pillText }, e),
                       ),
                     ),
                   )
@@ -247,54 +277,40 @@
                   var e = this.props,
                     t = e.alert,
                     i = e.triggerDelay,
-                    n = (t && t.triggerDelayMs) || i
+                    n =
+                      this._isSticky && this._delayOverrideSeconds > 0
+                        ? 1e3 * this._delayOverrideSeconds
+                        : (t && t.triggerDelayMs) || i
                   return this._getLastShownTime() + n - Date.now()
                 },
               },
               {
                 key: '_updateLastShownTime',
                 value: function (e) {
-                  e && (H[e] = Date.now())
-                },
-              },
-              {
-                key: '_hide',
-                value: function () {
-                  var e = this.props,
-                    t = e.alert,
-                    i = e.removeAlert,
-                    n = e.timelineId
-                  this._mounted && (this._updateLastShownTime(n), this.setState({ show: !1 })),
-                    t &&
-                      setTimeout(function () {
-                        return i()
-                      }, 500)
+                  e && (U[e] = Date.now())
                 },
               },
               {
                 key: '_scribeAction',
                 value: function (e) {
-                  var t = this.props,
-                    i = t.analytics,
-                    n = t.scribeNamespace,
-                    r = a()(a()(a()({}, n), W), {}, { action: e })
-                  i.scribe(r)
+                  this.props.analytics.scribeAction(e)
                 },
               },
             ]),
             i
           )
-        })(_.a.PureComponent)
-      f()(K, 'defaultProps', {
-        isAtNewest: function () {
-          return !0
-        },
-        label: z,
-        remainVisibleInterval: 3e3,
-        triggerDelay: 24e4,
-        unreadCount: 0,
-      })
-      var N = j.a.create(function (e) {
+        })(w.a.PureComponent)
+      d()(W, 'contextType', R.a),
+        d()(W, 'defaultProps', {
+          isAtNewest: function () {
+            return !0
+          },
+          label: V,
+          remainVisibleInterval: 3e3,
+          triggerDelay: 24e4,
+          unreadCount: 0,
+        })
+      var F = E.a.create(function (e) {
           return {
             pill: {
               boxShadow: e.boxShadows.small,
@@ -324,8 +340,8 @@
             },
           }
         }),
-        X = T(K)
-      t.default = X
+        H = T(W)
+      t.default = H
     },
   },
 ])

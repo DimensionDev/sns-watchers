@@ -646,7 +646,7 @@
               j.b,
               null,
               c.map(function (e, t) {
-                return v.a.createElement(X.c, { key: ''.concat(e.text).concat(t), part: e })
+                return v.a.createElement(X.b, { key: ''.concat(e.text).concat(t), part: e })
               }),
             ),
             l = v.a.createElement(
