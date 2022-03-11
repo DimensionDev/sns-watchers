@@ -4112,9 +4112,12 @@
             f = e.match,
             h = f.params.communityId,
             E = t.isTrue('c9s_participation_enabled')
-          c.a.useEffect(function () {
-            h && !n && o !== b.a.LOADED && l(h).catch(a())
-          })
+          c.a.useEffect(
+            function () {
+              h && !n && o !== b.a.LOADED && l(h).catch(a())
+            },
+            [h, n, a, o, l],
+          )
           var C = c.a.useMemo(
             function () {
               return { selectedCommunityId: h || '', defaultText: '' }
@@ -4155,7 +4158,7 @@
               M = c.a.createElement(v.b, { history: y, location: g, match: f })
             return c.a.createElement(k.a, i()({}, x, { primaryContent: M }))
           }
-          return o === b.a.LOADED ? c.a.createElement(_.a, { to: '/' }) : null
+          return o === b.a.LOADED || o === b.a.FAILED ? c.a.createElement(_.a, { to: '/' }) : null
         },
         S = h(C),
         I =
@@ -10816,23 +10819,22 @@
           r = e.fetchStatus,
           l = s()(e, zt),
           i = l.match.params.communityId,
-          c = n(),
-          u = m.a.useCallback(
+          c = m.a.useCallback(
             function () {
-              i && a(i).catch(c)
+              i && a(i).catch(n())
             },
-            [i, c, a],
+            [i, n, a],
           )
         return (
           m.a.useEffect(
             function () {
-              return u()
+              return c()
             },
-            [u],
+            [c],
           ),
           m.a.createElement(_.a, {
             fetchStatus: r,
-            onRequestRetry: u,
+            onRequestRetry: c,
             render: function () {
               return t ? m.a.createElement(Wt, o()({}, l, { community: t })) : null
             },
@@ -10951,7 +10953,7 @@
         m = n('0KEI'),
         d = n('1Idg'),
         y = function (e, t) {
-          return Object(s.A)(e, s.h)
+          return Object(s.B)(e, s.h)
         },
         p = Object(u.a)()
           .propsFromState(function () {
@@ -10960,7 +10962,7 @@
           .propsFromActions(function () {
             return {
               addRuleInformEducationFlag: function () {
-                return Object(s.w)(s.h)
+                return Object(s.x)(s.h)
               },
               editRule: c.c.editRule,
               removeRule: c.c.removeRule,
@@ -11329,7 +11331,7 @@
         u = n('rxPX'),
         m = n('0KEI'),
         d = function (e, t) {
-          return Object(s.A)(e, s.h)
+          return Object(s.B)(e, s.h)
         },
         y = Object(u.a)()
           .propsFromState(function () {
@@ -11338,7 +11340,7 @@
           .propsFromActions(function () {
             return {
               addRuleInformEducationFlag: function () {
-                return Object(s.w)(s.h)
+                return Object(s.x)(s.h)
               },
               createRule: c.c.createRule,
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(

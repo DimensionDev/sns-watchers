@@ -1650,7 +1650,7 @@
                         { style: z.headerContainer },
                         C.a.createElement(
                           E.a,
-                          { style: z.headerTextAndThumbnailContainer },
+                          { style: [z.headerTextContainer, !t && z.headerTextAndThumbnailContainer] },
                           this._getBirdwatchIcon(a),
                           C.a.createElement(x.b, { size: 'subtext1', style: z.birdwatchLabel, weight: 'bold' }, r),
                         ),
@@ -1719,7 +1719,8 @@
               flexDirection: 'row',
               flexGrow: 1,
             },
-            headerTextAndThumbnailContainer: { flexDirection: 'row', width: '100%' },
+            headerTextContainer: { flexDirection: 'row', width: '100%' },
+            headerTextAndThumbnailContainer: { width: '80%' },
             callToActionContainer: {
               paddingVertical: e.spaces.space12,
               paddingHorizontal: e.spaces.space12,
@@ -12412,13 +12413,13 @@
         fe = n('TuTd'),
         ve = n('XOJV'),
         _e = function (e, t) {
-          return Object(ce.A)(e, ce.b)
+          return Object(ce.B)(e, ce.b)
         },
         be = function (e, t) {
-          return Object(ce.A)(e, ce.s)
+          return Object(ce.B)(e, ce.s)
         },
         ge = function (e, t) {
-          return Object(ce.y)(e, ce.l)
+          return Object(ce.z)(e, ce.l)
         },
         we = function (e) {
           return Z.k(e, '')
@@ -12538,7 +12539,7 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: ce.w,
+              addFlag: ce.x,
               addToast: $.b,
               createLocalApiErrorHandler: Object(de.createLocalApiErrorHandlerWithContextFactory)(
                 'TWEET_ACTIONS_BAR_CONTAINER',

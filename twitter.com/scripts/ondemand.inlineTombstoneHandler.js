@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [351],
+  [352],
   {
     'NO+D': function (e, t, n) {
       'use strict'
@@ -199,8 +199,8 @@
         N = n('G6rE'),
         R = n('xZGM'),
         L = n('jL08'),
-        H = n('rxPX'),
-        B = n('0KEI'),
+        B = n('rxPX'),
+        H = n('0KEI'),
         j = n('EGrD'),
         q = n('x5Pi'),
         K = n('P1r1'),
@@ -210,10 +210,10 @@
         W = function (e, t) {
           return t.tweetId
         },
-        G = function (e, t) {
+        z = function (e, t) {
           return t.contextTweetId
         },
-        z = function (e, t) {
+        G = function (e, t) {
           var n = t.promotedContent,
             o = t.tweetId
           if (n && n.advertiser) return N.e.select(e, n.advertiser.id_str)
@@ -244,18 +244,18 @@
           return 'PUSH' === t.history.action
         },
         $ = function (e, t) {
-          return Object(R.A)(e, R.k)
+          return Object(R.B)(e, R.k)
         },
         ee = function (e, t) {
-          return Object(R.y)(e, R.k)
+          return Object(R.z)(e, R.k)
         },
-        te = Object(H.a)()
+        te = Object(B.a)()
           .propsFromState(function () {
             return {
               adFreeArticleDomains: j.c,
               articleDomains: L.b,
               community: Z,
-              contextTweet: M.a.createHydratedTweetSelector(G),
+              contextTweet: M.a.createHydratedTweetSelector(z),
               daysSinceDownvoteEducation: ee,
               displaySensitiveMedia: K.k,
               explicitSocialContext: J,
@@ -263,7 +263,7 @@
               isNsfwUser: K.t,
               isPinned: V,
               loggedInUser: N.e.selectLoggedInUser,
-              promotedContentAdvertiser: z,
+              promotedContentAdvertiser: G,
               quoteTweetCommunity: Q,
               shouldShowDownvoteFullscreenEducation: $,
               topic: Y,
@@ -336,10 +336,10 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: R.w,
+              addFlag: R.x,
               addToast: T.b,
               block: N.e.block,
-              createLocalApiErrorHandler: Object(B.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(H.createLocalApiErrorHandlerWithContextFactory)(
                 'TWEET_DETAIL_CONTAINER',
               ),
               fetchAdFreeToken: j.a,
@@ -461,15 +461,15 @@
         Ne = n('TnY3'),
         Re = n('mqpi'),
         Le = n('v6aA'),
-        He = n('E0cF'),
-        Be = n('OIC0'),
+        Be = n('E0cF'),
+        He = n('OIC0'),
         je = n('+pKb'),
         qe = n('/Ikv'),
         Ke = n('7JQg'),
         Ve = n('cFuS'),
         We = n('24HD'),
-        Ge = n('fz3c'),
-        ze = n('4hQ9'),
+        ze = n('fz3c'),
+        Ge = n('4hQ9'),
         Je = n('oQhu'),
         Ye = n('mN6z'),
         Ze = n('ONCy'),
@@ -537,7 +537,7 @@
               var e = i.context.loggedInUserId,
                 t = i.props.tweet
               if (!t) return !1
-              var n = He.a.getOriginalTweet(t),
+              var n = Be.a.getOriginalTweet(t),
                 o = !!n.community_id_str,
                 r = n.user.id_str === e,
                 a = n.reply_count > 0
@@ -594,7 +594,7 @@
                 d = l.loggedInUserId
               if (
                 r &&
-                Object(ze.e)({
+                Object(Ge.e)({
                   displaySensitiveMedia: t,
                   featureSwitches: s,
                   isNsfwUser: n,
@@ -604,7 +604,7 @@
                   userLanguage: c,
                 })
               )
-                return Object(ze.d)(r, o)
+                return Object(Ge.d)(r, o)
             }),
             f()(h()(i), '_handleReplyPress', function () {
               i.setState({ replyPressToggle: !i.state.replyPressToggle })
@@ -767,7 +767,7 @@
                     : void 0
                 i._handleAsyncPromotedEvent(d, p)
               }
-              t === Be.a.URL && h && i._scribeAction({ action: je.b.CLICK_ID_EMBED }, void 0, h)
+              t === He.a.URL && h && i._scribeAction({ action: je.b.CLICK_ID_EMBED }, void 0, h)
               var _ = !1
               if (i._hasClaimsForAdFreeArticles && null != n && n.expandedUrl) {
                 var v = new URL(n.expandedUrl).hostname,
@@ -782,7 +782,7 @@
                   b = w[1]
                 f && (b(e), (_ = !0))
               }
-              if (t === Be.a.INTERACTIVE_HIGHLIGHT && void 0 !== (null == n ? void 0 : n.id))
+              if (t === He.a.INTERACTIVE_HIGHLIGHT && void 0 !== (null == n ? void 0 : n.id))
                 return i._scribeAction(
                   { element: 'interactive_text', action: u },
                   { interactive_text_details: { id: n.id } },
@@ -845,7 +845,7 @@
                 n = e.tweet,
                 o = e.updateHeadsUp
               if (!n) return null
-              var r = He.a.getOriginalTweet(n),
+              var r = Be.a.getOriginalTweet(n),
                 a = (null == r ? void 0 : r.reply_count) > 20
               if (!('Political' === (null == t ? void 0 : t.conversation_annotation_type) && a)) return null
               o(r.id_str)
@@ -949,7 +949,7 @@
                 if (!t) return null
                 var n = t.user.id_str === e,
                   o = Object(Qe.b)(t.withheld_scope),
-                  i = Object(Ge.h)(t) && !this.state.displayReported
+                  i = Object(ze.h)(t) && !this.state.displayReported
                 return k.a.createElement(
                   k.a.Fragment,
                   null,
@@ -1044,38 +1044,38 @@
                     withInlineMedia: M,
                     withSocialContext: N,
                   },
-                  H = this.state.enableKeyboardShortcuts
+                  B = this.state.enableKeyboardShortcuts
                 if (!x) return null
-                var B = Object(Ye.a)(this._cachedScribeNamespace, A)
+                var H = Object(Ye.a)(this._cachedScribeNamespace, A)
                     ? this._cachedScribeNamespace
                     : (this._cachedScribeNamespace = A),
                   j = x && x.card && !x.is_quote_status ? x.card.url : void 0,
-                  q = He.a.getOriginalTweet(x),
+                  q = Be.a.getOriginalTweet(x),
                   K = q.user.id_str === R,
                   V = !q.in_reply_to_status_id_str && K && !q.community_id_str,
                   W = this._renderConversationControlsTooltip(),
-                  G = !!q.in_reply_to_status_id_str,
-                  z = (null == q ? void 0 : q.reply_count) > 20,
+                  z = !!q.in_reply_to_status_id_str,
+                  G = (null == q ? void 0 : q.reply_count) > 20,
                   J =
                     'Political' === (null == c ? void 0 : c.conversation_annotation_type) &&
                     (null === (e = x.headsUp) || void 0 === e ? void 0 : e.showBanner) &&
-                    !G &&
-                    z,
+                    !z &&
+                    G,
                   Y =
                     this.context.featureSwitches.isTrue(
                       'responsive_web_deamplification_replies_dropdown_selector_enabled',
                     ) && x.reply_count > 0
                 return k.a.createElement(
                   Ke.c,
-                  { data: this._getScribeData(x.retweeted_status || x, w, I), namespace: B },
+                  { data: this._getScribeData(x.retweeted_status || x, w, I), namespace: H },
                   k.a.createElement(
                     ke.a,
-                    { enabled: !!H, handlers: this._getShortcutKeyHandlers() },
+                    { enabled: !!B, handlers: this._getShortcutKeyHandlers() },
                     this._renderLeftConversationBanner(),
                     k.a.createElement(
                       Oe.b,
                       i()({}, L, {
-                        enableKeyboardShortcuts: H,
+                        enableKeyboardShortcuts: B,
                         excludeCardUrl: j,
                         inlineCalloutInfo: this._getInlineCalloutInfo(),
                         isFocal: !0,
@@ -1110,7 +1110,7 @@
                           this._handleCaretClick,
                           m,
                           w,
-                          He.a.getOriginalTweet(x),
+                          Be.a.getOriginalTweet(x),
                           V,
                           W,
                           U,
@@ -1208,8 +1208,8 @@
               value: function () {
                 var e = this.props.tweet
                 if (e) {
-                  var t = He.a.getOriginalTweet(e),
-                    n = Object(Ge.c)(t.reportingVisibility)
+                  var t = Be.a.getOriginalTweet(e),
+                    n = Object(ze.c)(t.reportingVisibility)
                   return k.a.createElement(
                     Fe.a,
                     { actionText: Xe, lang: e.lang, onClick: this._handleShowReportedTweet },

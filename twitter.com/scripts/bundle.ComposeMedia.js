@@ -71,8 +71,8 @@
         I = 'altTextInput',
         x = 'endEditingButton',
         k = 'altTextEducationSheetPrimaryAction',
-        A = a('MWbm'),
-        R = a('t62R'),
+        R = a('MWbm'),
+        A = a('t62R'),
         P = a('p+r5'),
         D = C.a.feabf2a0,
         L = C.a.e36287c6,
@@ -88,7 +88,7 @@
               (e = t.call.apply(t, [this].concat(r))),
               b()(m()(e), '_renderInputHelperText', function () {
                 var t = e.props.onShowEducation
-                return t ? _.a.createElement(R.b, { color: 'link', onPress: t, withInteractiveStyling: !0 }, O) : null
+                return t ? _.a.createElement(A.b, { color: 'link', onPress: t, withInteractiveStyling: !0 }, O) : null
               }),
               b()(m()(e), '_handleChange', function (t) {
                 var a = e.props,
@@ -113,10 +113,10 @@
                     r = e.orientedImage,
                     i = e.value
                   return _.a.createElement(
-                    A.a,
+                    R.a,
                     { style: w.root },
                     _.a.createElement(
-                      A.a,
+                      R.a,
                       { style: w.attachmentContainer },
                       _.a.createElement(T.a, { mediaItem: n, orientedImage: r }),
                       _.a.createElement(P.a, {
@@ -144,17 +144,17 @@
         })(_.a.Component),
         U = a('rxPX'),
         W = function (e, t) {
-          return Object(M.A)(e, M.a)
+          return Object(M.B)(e, M.a)
         },
-        F = Object(U.a)()
+        B = Object(U.a)()
           .propsFromState(function () {
             return { showEducationOnMount: W }
           })
           .propsFromActions(function () {
-            return { addFlag: M.w }
+            return { addFlag: M.x }
           })
           .withAnalytics(),
-        B = a('feu+'),
+        F = a('feu+'),
         V = C.a.ffe9ec3a,
         z = C.a.j063b261,
         G = C.a.e57144f0,
@@ -212,10 +212,10 @@
                     i = this.state.showAltTextEducationSheet,
                     o = t && t.id.toString()
                   return _.a.createElement(
-                    A.a,
+                    R.a,
                     { style: N.root },
                     i
-                      ? _.a.createElement(B.a, {
+                      ? _.a.createElement(F.a, {
                           actionLabel: G,
                           headline: V,
                           onAction: this._handleEducationPromptPrimaryAction,
@@ -246,7 +246,7 @@
         N = S.a.create(function (e) {
           return { root: { flexGrow: 1 } }
         }),
-        q = F(H),
+        q = B(H),
         Q = a('jHSc'),
         X = a('EeFI'),
         J = a('7JQg'),
@@ -320,7 +320,7 @@
                       _.a.Fragment,
                       null,
                       _.a.createElement($.a, { accessibilityLabel: ve, links: c }),
-                      _.a.createElement(A.a, { style: Z.a.segmentedControlChildren }, l),
+                      _.a.createElement(R.a, { style: Z.a.segmentedControlChildren }, l),
                     )
                   : l
               }),
@@ -374,11 +374,11 @@
                   t = n._getNextMediaIndex(1),
                   a = n._getNextMediaIndex(-1)
                 return _.a.createElement(
-                  A.a,
+                  R.a,
                   { style: Z.a.rightControl },
                   n._hasMediaAtIndex(a) || n._hasMediaAtIndex(t)
                     ? _.a.createElement(
-                        A.a,
+                        R.a,
                         { style: [Z.a.rightControl, Z.a.leftRightButtons] },
                         _.a.createElement(ee.a, {
                           accessibilityLabel: be,
@@ -648,7 +648,7 @@
                       }),
                     l.push({
                       to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.altText }) }),
-                      label: _.a.createElement(R.b, { weight: 'bold' }, 'ALT'),
+                      label: _.a.createElement(A.b, { weight: 'bold' }, 'ALT'),
                       key: Te.altText,
                       accessibilityLabel: _e,
                       isActive: function () {
@@ -793,7 +793,7 @@
         return k
       }),
         a.d(t, 'l', function () {
-          return R
+          return A
         }),
         a.d(t, 'f', function () {
           return D
@@ -808,7 +808,7 @@
           return W
         }),
         a.d(t, 'i', function () {
-          return B
+          return F
         }),
         a.d(t, 'j', function () {
           return V
@@ -907,16 +907,16 @@
               w = void 0 === _ ? [] : _,
               I = s.requestId,
               k = void 0 === I ? M.a.v1() : I,
-              A = s.tweetAttachment,
-              R = s.quickReply,
+              R = s.tweetAttachment,
+              A = s.quickReply,
               P = c()(s, S)
             t(Z(u))
             var D = a(),
-              L = y || F(a(), u),
+              L = y || B(a(), u),
               j = p.k(D, L),
               U = o()(j, 1)[0] || {},
               W = U.mediaFile,
-              B = U.mediaMetadata,
+              F = U.mediaMetadata,
               V = w.length > 0 && w.join(','),
               z = {}
             W && W.isGif
@@ -932,7 +932,7 @@
                   var n = o()(a, 2),
                     s = o()(n[0], 1)[0],
                     c = n[1],
-                    g = (null == B ? void 0 : B.altText) || (null == B ? void 0 : B.defaultAltText),
+                    g = (null == F ? void 0 : F.altText) || (null == F ? void 0 : F.defaultAltText),
                     y = !!g
                   return (
                     s && (N || y)
@@ -940,7 +940,7 @@
                       : Promise.resolve()
                   ).then(
                     function () {
-                      var a = (A || {}).id_str,
+                      var a = (R || {}).id_str,
                         n = {}
                       if (s) {
                         var o = s.mediaFile,
@@ -954,7 +954,7 @@
                           : p.isGif
                           ? (n.animated_gif = m()(m()({}, g), {}, { media_url_https: c, type: 'animated_gif' }))
                           : p.isVideo && (n.video = m()(m()({}, g), {}, { media_url_https: p.url, type: 'video' }))
-                      } else A && (n.tweet = { status: a })
+                      } else R && (n.tweet = { status: a })
                       var y = (s || {}).uploadId,
                         _ = x({
                           attachment: n,
@@ -974,9 +974,9 @@
                           {},
                           { recipient_ids: V, request_id: k, tweet_id: a },
                         )
-                      R &&
-                        ((M['quick_reply_response[options][id]'] = R.id),
-                        (M['quick_reply_response[options][selected_id]'] = R.selected_id))
+                      A &&
+                        ((M['quick_reply_response[options][id]'] = A.id),
+                        (M['quick_reply_response[options][selected_id]'] = A.selected_id))
                       var S = Object(E.a)([
                         ee(u),
                         { type: f.c.REQUEST },
@@ -1035,11 +1035,11 @@
             )
           }
         },
-        A = function (e, t) {
+        R = function (e, t) {
           return e.dmComposer[t]
         },
-        R = function (e, t) {
-          var a = A(e, t)
+        A = function (e, t) {
+          var a = R(e, t)
           return a ? a.text : null
         },
         P = 'rweb/dmComposer/SAVE_TEXT',
@@ -1051,30 +1051,30 @@
           return { type: L, conversationId: e }
         },
         j = function (e, t) {
-          var a = A(e, t)
+          var a = R(e, t)
           return a ? a.cardUrl : null
         },
         U = 'rweb/dmComposer/SAVE_CARD_URL',
         W = function (e, t) {
           return { type: U, conversationId: e, cardUrl: t }
         },
-        F = function (e, t) {
-          var a = A(e, t)
+        B = function (e, t) {
+          var a = R(e, t)
           return a ? a.mediaId : null
         },
-        B = function (e, t) {
-          var a = p.k(e, F(e, t))
+        F = function (e, t) {
+          var a = p.k(e, B(e, t))
           return a.length > 0 ? a[0] : null
         },
         V = function (e, t) {
-          var a = A(e, t)
+          var a = R(e, t)
           return !!a && a.isUploading
         },
         z = function (e, t) {
-          return p.l(e, F(e, t))
+          return p.l(e, B(e, t))
         },
         G = function (e, t) {
-          var a = A(e, t)
+          var a = R(e, t)
           return a ? a.gifMetadata : null
         },
         K = 'rweb/dmComposer/ADD_MEDIA',
@@ -1451,7 +1451,7 @@
           n = ''.concat(t - 60 * a).padStart(2, '0')
         return ''.concat(a, ':').concat(n)
       }
-      var A = function (e, t) {
+      var R = function (e, t) {
           return e.map(function (e) {
             return (function (e, t) {
               if ('tenths' === t) {
@@ -1464,7 +1464,7 @@
             })(e, t)
           })
         },
-        R = function (e, t) {
+        A = function (e, t) {
           var a = (function (e, t) {
               var a,
                 n,
@@ -1494,7 +1494,7 @@
             r = a.numIntervals,
             i = a.numSubintervals,
             o = a.precision
-          return { intervalStrings: A(n, o), numSubintervals: i, numIntervals: r }
+          return { intervalStrings: R(n, o), numSubintervals: i, numIntervals: r }
         },
         P = a('3XMw'),
         D = a.n(P),
@@ -1524,7 +1524,7 @@
         W = function (e) {
           var t = e.duration,
             a = e.trimmerWidth,
-            n = R(t, a),
+            n = A(t, a),
             r = n.intervalStrings,
             i = n.numIntervals,
             o = n.numSubintervals,
@@ -1564,8 +1564,8 @@
             ),
           )
         },
-        F = a('Wms4'),
-        B = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
+        B = a('Wms4'),
+        F = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
         V = 'decrease',
         z = 'increase',
         G = 'left',
@@ -1617,14 +1617,14 @@
               f()(d()(e), '_handleOnKeyDown', function (t, a) {
                 var n = e.props.onKeyDown,
                   r = t.key,
-                  i = r === B.a.ArrowUp || r === B.a.ArrowRight,
-                  o = r === B.a.ArrowDown || r === B.a.ArrowLeft
+                  i = r === F.a.ArrowUp || r === F.a.ArrowRight,
+                  o = r === F.a.ArrowDown || r === F.a.ArrowLeft
                 ;(i || o) && (t.preventDefault(), n(i ? z : V, a))
               }),
               f()(d()(e), '_handleOnKeyUp', function (t) {
                 var a = e.props.onKeyUp,
                   n = t.key
-                ;[B.a.ArrowDown, B.a.ArrowLeft, B.a.ArrowRight, B.a.ArrowUp].includes(n) && a()
+                ;[F.a.ArrowDown, F.a.ArrowLeft, F.a.ArrowRight, F.a.ArrowUp].includes(n) && a()
               }),
               f()(d()(e), '_generateBorderStyles', function () {
                 var t = e.props.side,
@@ -1823,7 +1823,7 @@
                     ],
                   },
                   b.a.createElement(
-                    F.a,
+                    B.a,
                     { background: 'maskColor', style: [ie.label, !a && ie.visibilityHidden] },
                     $({ timestamp: e._generateTimestampLabelString() }),
                   ),
@@ -2247,8 +2247,8 @@
         I = a('/yvb'),
         x = a('rHpw'),
         k = a('7JQg'),
-        A = M.a.b772cd65,
-        R = M.a.c20dc653,
+        R = M.a.b772cd65,
+        A = M.a.c20dc653,
         P = M.a.d1175c78,
         D = M.a.ae0831ab
       function L(e) {
@@ -2287,7 +2287,7 @@
             return c.a.createElement(
               S.a,
               { style: O.rightColumn },
-              c.a.createElement(I.a, { disabled: a, onPress: k, size: 'small', type: 'primaryFilled' }, A),
+              c.a.createElement(I.a, { disabled: a, onPress: k, size: 'small', type: 'primaryFilled' }, R),
             )
           },
           x = function () {
@@ -2338,7 +2338,7 @@
                 ? c.a.createElement(
                     S.a,
                     { style: O.inlineCallout },
-                    c.a.createElement(w.a, { Icon: T.a, headline: R, type: 'warning' }),
+                    c.a.createElement(w.a, { Icon: T.a, headline: A, type: 'warning' }),
                   )
                 : null
             },
@@ -2462,19 +2462,19 @@
         I = a('7JQg'),
         x = a('9Q4p'),
         k = a('PrL8'),
-        A = a('sjK1'),
-        R = (a('2G9S'), a('RqPI')),
+        R = a('sjK1'),
+        A = (a('2G9S'), a('RqPI')),
         P = a('AspN'),
         D = a('rxPX'),
         L = a('0KEI'),
         O = a('FDFL'),
         j = function (e) {
-          var t = Object(R.o)(e)
+          var t = Object(A.o)(e)
           return t && Object(O.b)(e, t)
         },
         U = Object(D.a)()
           .propsFromState(function () {
-            return { language: R.o, languageName: j }
+            return { language: A.o, languageName: j }
           })
           .propsFromActions(function () {
             return {
@@ -2488,8 +2488,8 @@
           })
           .withAnalytics(),
         W = a('eyty'),
-        F = a('m3Bd'),
-        B = a.n(F),
+        B = a('m3Bd'),
+        F = a.n(B),
         V = (a('7xRU'), a('pHub')),
         z = a('62wY'),
         G = 'fileInput',
@@ -2503,7 +2503,7 @@
           var t = e.icon,
             a = e.style,
             n = e.withIcon,
-            i = B()(e, q),
+            i = F()(e, q),
             s = z.a.join(',')
           return o.a.createElement(
             K.a,
@@ -2662,7 +2662,7 @@
               T()(f()(n), '_renderTrimmerTab', function () {
                 var e = n._getCurrentMediaItem(),
                   t = n.state.trimData
-                if (null != e && e.mediaFile && e.mediaFile instanceof A.c) {
+                if (null != e && e.mediaFile && e.mediaFile instanceof R.c) {
                   var a = e.mediaFile,
                     r = {
                       duration: 1e3 * a.duration,
@@ -2785,7 +2785,7 @@
                 n._addTrimDataToState(), e.scribePageImpression()
               })
             var r = n._getCurrentMediaItem()
-            if (null != r && r.mediaFile && r.mediaFile instanceof A.c) {
+            if (null != r && r.mediaFile && r.mediaFile instanceof R.c) {
               var i = r.mediaFile,
                 s = r.mediaMetadata,
                 c = r.trimData,

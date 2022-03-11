@@ -2773,7 +2773,7 @@
         In = a('oQhu'),
         Tn = a('xZGM'),
         Ln = function (e, t) {
-          return Object(Tn.A)(e, Tn.v)
+          return Object(Tn.B)(e, Tn.w)
         },
         Pn = Object(V.a)()
           .propsFromState(function () {
@@ -2782,7 +2782,7 @@
           .propsFromActions(function () {
             return {
               addEducationFlag: function () {
-                return Object(Tn.w)(Tn.v)
+                return Object(Tn.x)(Tn.w)
               },
             }
           })

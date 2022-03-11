@@ -5342,7 +5342,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(0), n.e(226)]).then(n.bind(null, 'tFiq'))
+              return Promise.all([n.e(0), n.e(227)]).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

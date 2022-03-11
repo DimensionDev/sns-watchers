@@ -4680,13 +4680,13 @@
           .propsFromState(function () {
             return {
               shouldShowDataPrivacyPrompt: function (e, t) {
-                return Object(ye.A)(e, ye.c)
+                return Object(ye.B)(e, ye.c)
               },
             }
           })
           .propsFromActions(function () {
             return {
-              addFlag: ye.w,
+              addFlag: ye.x,
               addToast: we.b,
               createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
               createRating: T.c,
@@ -7611,7 +7611,7 @@
           a('kYxP'),
           {
             loader: function () {
-              return a.e(231).then(a.bind(null, 'SdtT'))
+              return a.e(232).then(a.bind(null, 'SdtT'))
             },
             loaderKey: 'pivotLabelLoader',
             strategy: a('XBtf').a.Critical,

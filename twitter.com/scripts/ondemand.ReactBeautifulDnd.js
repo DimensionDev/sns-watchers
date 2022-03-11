@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [233],
+  [234],
   {
     BU36: function (e, t, r) {
       'use strict'
@@ -222,12 +222,12 @@
             (r.componentDidMount = function () {
               this.unbind = N(window, [{ eventName: 'error', fn: this.onWindowError }])
             }),
-            (r.componentWillUnmount = function () {
-              this.unbind()
-            }),
             (r.componentDidCatch = function (e) {
               if (!(e instanceof P)) throw e
               this.setState({})
+            }),
+            (r.componentWillUnmount = function () {
+              this.unbind()
             }),
             (r.render = function () {
               return this.props.children(this.setCallbacks)
