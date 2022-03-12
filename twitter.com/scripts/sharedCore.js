@@ -88,7 +88,7 @@
         E = n('SrIh'),
         w = {
           loader: function () {
-            return n.e(244).then(n.bind(null, 'WunU'))
+            return n.e(243).then(n.bind(null, 'WunU'))
           },
           loaderKey: 'tombstonedEntryLoader',
           strategy: g.a.Critical,
@@ -4889,9 +4889,9 @@
       var r,
         o = n('KEM+'),
         i = n.n(o),
-        a = n('ezF+'),
-        s = n('yiKp'),
-        c = n.n(s),
+        a = n('yiKp'),
+        s = n.n(a),
+        c = n('ezF+'),
         l = n('8UdT'),
         u = function (e, t, n, r, o, i) {
           return {
@@ -4930,7 +4930,7 @@
               o = r.displayType,
               i = r.footer,
               a = r.header,
-              s = r.items,
+              c = r.items,
               p = t.entryId,
               h = t.itemMetadata,
               m = t.sortIndex,
@@ -4941,16 +4941,16 @@
               }
             return (
               a && g.push(f(p, a, t, m, v)),
-              1 === s.length && s[0].type === l.b.Message
-                ? g.push(c()(c()({}, s[0]), {}, { moduleBehavioralEventView: v }))
-                : g.push(u(p, h, s, m, v, e)),
+              1 === c.length && c[0].type === l.b.Message
+                ? g.push(s()(s()({}, c[0]), {}, { moduleBehavioralEventView: v }))
+                : g.push(u(p, h, c, m, v, e)),
               i && g.push(d(p, i, h, m, v)),
               g
             )
           }
         },
         h = function (e) {
-          return a.f({ splice: p(e), divider: { top: !0, bottom: !0 } })
+          return c.f({ splice: p(e), divider: { top: !0, bottom: !0 } })
         },
         m = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         g = function (e) {
@@ -4964,7 +4964,7 @@
           }
         },
         v = n('b1wW'),
-        y = a.c({
+        y = c.c({
           selectDisplayType: function (e) {
             return e.content.displayType
           },
@@ -4982,7 +4982,7 @@
           loaderKey: 'conversationGapLoader',
           strategy: m.a.Critical,
         },
-        _ = a.e(b),
+        _ = c.e(b),
         E = function (e) {
           return {
             loader: function () {
@@ -4995,16 +4995,16 @@
         },
         w = function (e) {
           var t = e.isInSidebar
-          return a.e(E({ isInSidebar: t }))
+          return c.e(E({ isInSidebar: t }))
         },
         S = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(226)]).then(n.bind(null, 'oiEo'))
+            return Promise.all([n.e(0), n.e(4), n.e(225)]).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: m.a.Critical,
         },
-        C = a.e(S),
+        C = c.e(S),
         k = {
           loader: function () {
             return n.e(217).then(n.bind(null, 'hKgB'))
@@ -5012,11 +5012,11 @@
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: m.a.Critical,
         },
-        T = a.e(k),
+        T = c.e(k),
         x = function (e) {
           return {
             loader: function () {
-              return n.e(242).then(n.bind(null, 'D9QQ'))
+              return n.e(241).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -5025,7 +5025,7 @@
         },
         I = function (e) {
           var t = e.isInSidebar
-          return a.e(x({ isInSidebar: t }))
+          return c.e(x({ isInSidebar: t }))
         },
         O = n('m3Bd'),
         R = n.n(O),
@@ -5202,7 +5202,7 @@
           }
         },
         W = ['socialContext'],
-        G = a.f({
+        G = c.f({
           splice: function (e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               n = e.content.items,
@@ -5263,12 +5263,12 @@
             n.toArray().forEach(function (n, o) {
               var i = n.conversationTreeMetadata,
                 a = n.entry,
-                s = 0 === o,
-                u = c()(c()({}, i), {}, { showSmallAvatars: !1 }),
+                c = 0 === o,
+                u = s()(s()({}, i), {}, { showSmallAvatars: !1 }),
                 d = { isStart: !1, isEnd: o === e.length - 1 },
                 f =
                   a.type === l.b.Tweet
-                    ? J({ isFirst: s, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
+                    ? J({ isFirst: c, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
                     : Q({ item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
               r.push(f)
             }),
@@ -5287,7 +5287,7 @@
             n = e.conversationTreeMetadata,
             r = e.item,
             o = e.sortIndex
-          return c()(c()({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: o })
+          return s()(s()({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: o })
         },
         J = function (e) {
           var t = e.conversationPosition,
@@ -5296,15 +5296,15 @@
             o = e.item,
             i = e.sortIndex,
             a = o.content,
-            s = a.socialContext,
+            c = a.socialContext,
             l = R()(a, W)
-          return c()(
-            c()({}, o),
+          return s()(
+            s()({}, o),
             {},
             {
               conversationPosition: t,
               conversationTreeMetadata: n,
-              content: c()(c()({}, l), s && r ? { socialContext: s } : null),
+              content: s()(s()({}, l), c && r ? { socialContext: c } : null),
               sortIndex: i,
             },
           )
@@ -5322,12 +5322,12 @@
         ee = G,
         te = {
           loader: function () {
-            return n.e(251).then(n.bind(null, 'VzRj'))
+            return n.e(250).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: m.a.Critical,
         },
-        ne = a.e(te),
+        ne = c.e(te),
         re =
           (n('M+/F'),
           function (e, t, n, r, o) {
@@ -5369,7 +5369,7 @@
         },
         ae = function (e) {
           var t = e.isWide
-          return a.f({
+          return c.f({
             splice: function (e) {
               var n,
                 r = e.content,
@@ -5409,13 +5409,13 @@
         },
         se = {
           loader: function () {
-            return n.e(252).then(n.bind(null, 'JKhl'))
+            return n.e(251).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: m.a.Critical,
         },
-        ce = a.e(se),
-        le = a.f({
+        ce = c.e(se),
+        le = c.f({
           splice: function (e) {
             var t,
               n = e.content,
@@ -5423,7 +5423,7 @@
               o = n.footer,
               i = n.header,
               a = n.items,
-              s = e.entryId,
+              c = e.entryId,
               l = e.itemMetadata,
               u = e.sortIndex,
               p = [],
@@ -5432,52 +5432,62 @@
                 entityToken: null === (t = l.clientEventInfo) || void 0 === t ? void 0 : t.entityToken,
               }
             return (
-              p.push(V(s, e.itemMetadata, u, h)),
-              i && p.push(f(s, i, e, u, h)),
+              p.push(V(c, e.itemMetadata, u, h)),
+              i && p.push(f(c, i, e, u, h)),
               p.push.apply(
                 p,
                 M()(
                   a.map(function (e) {
-                    return c()(c()({}, e), {}, { sortIndex: u, moduleBehavioralEventView: h })
+                    return s()(s()({}, e), {}, { sortIndex: u, moduleBehavioralEventView: h })
                   }),
                 ),
               ),
-              o && p.push(d(s, o, e.itemMetadata, u, h)),
+              o && p.push(d(c, o, e.itemMetadata, u, h)),
               p
             )
           },
           divider: { top: !0, bottom: !0 },
         }),
         ue = function (e) {
-          var t = e.isWide
-          return a.c({
-            selectDisplayType: function (e) {
-              return e.content.displayType
-            },
-            handlers: {
-              Carousel: h(v.a.Carousel),
-              GridCarousel: h(v.a.GridCarousel),
-              PagedCarousel: h(v.a.PagedCarousel),
-              Vertical: le,
-              VerticalConversation: ee,
-              VerticalGrid: ae({ isWide: t }),
-            },
+          var t = e.customHandlers,
+            n = e.customSelectDisplayType,
+            r = e.isWide
+          return c.c({
+            selectDisplayType:
+              n ||
+              function (e) {
+                return e.content.displayType
+              },
+            handlers: s()(
+              s()({}, t),
+              {},
+              {
+                Carousel: h(v.a.Carousel),
+                GridCarousel: h(v.a.GridCarousel),
+                PagedCarousel: h(v.a.PagedCarousel),
+                Vertical: le,
+                VerticalConversation: ee,
+                VerticalGrid: ae({ isWide: r }),
+              },
+            ),
           })
         }
       t.a = function () {
         var e,
           t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          n = t.isInSidebar,
-          r = void 0 !== n && n,
-          o = t.isWide,
-          a = void 0 !== o && o
+          n = t.customHandlers,
+          r = t.customSelectDisplayType,
+          o = t.isInSidebar,
+          a = void 0 !== o && o,
+          s = t.isWide,
+          c = void 0 !== s && s
         return (
           (e = {}),
-          i()(e, l.b.TimelineModule, ue({ isWide: a })),
+          i()(e, l.b.TimelineModule, ue({ customHandlers: n, customSelectDisplayType: r, isWide: c })),
           i()(e, l.a.ModuleImpressionPlaceholder, T),
           i()(e, l.a.ModuleHeader, C),
-          i()(e, l.a.ModuleFooter, w({ isInSidebar: r })),
-          i()(e, l.a.ModuleShowMore, I({ isInSidebar: r })),
+          i()(e, l.a.ModuleFooter, w({ isInSidebar: a })),
+          i()(e, l.a.ModuleShowMore, I({ isInSidebar: a })),
           i()(e, l.a.ConversationModuleGap, _),
           i()(e, l.a.ModuleCarouselTimeline, y),
           i()(e, l.a.ModuleVerticalGridList, ne),
@@ -5614,7 +5624,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(359)]).then(n.bind(null, 'YMZp'))
+              return Promise.all([n.e(0), n.e(4), n.e(358)]).then(n.bind(null, 'YMZp'))
             },
             loaderOptions: e,
             loaderKey: 'topicCellLoader',
@@ -5624,7 +5634,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(359)]).then(n.bind(null, 'zWr2'))
+              return Promise.all([n.e(0), n.e(4), n.e(358)]).then(n.bind(null, 'zWr2'))
             },
             loaderOptions: e,
             loaderKey: 'topicPillLoader',
@@ -9448,7 +9458,7 @@
       var r = n('XBtf'),
         o = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(246)]).then(n.bind(null, '8JvP'))
+            return Promise.all([n.e(0), n.e(245)]).then(n.bind(null, '8JvP'))
           },
           loaderKey: 'transparentLabelLoader',
           strategy: r.a.Critical,
@@ -11027,7 +11037,7 @@
       }
       var C = {
           load: function () {
-            return n.e(224).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(223).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         k = (function (e) {
@@ -15320,7 +15330,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(248)]).then(n.bind(null, 'lX7a'))
+              return Promise.all([n.e(0), n.e(247)]).then(n.bind(null, 'lX7a'))
             },
             loaderKey: 'defaultUserLoader',
             loaderOptions: e,
@@ -17849,7 +17859,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(225)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(4), n.e(224)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -18329,7 +18339,7 @@
         p = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         h = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(354)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
           strategy: p.a.Critical,
@@ -18344,14 +18354,14 @@
           })),
         y = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(356)]).then(n.bind(null, 'YIsX'))
+            return Promise.all([n.e(0), n.e(4), n.e(355)]).then(n.bind(null, 'YIsX'))
           },
           loaderKey: 'onboardingLikesStartPromptLoader',
           strategy: p.a.Critical,
         },
         b = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(356)]).then(n.bind(null, '3ukl'))
+            return Promise.all([n.e(0), n.e(4), n.e(355)]).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
           strategy: p.a.Critical,
@@ -18367,7 +18377,7 @@
         S = n('67iF'),
         C = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(245)]).then(n.bind(null, 'VSZh'))
+            return Promise.all([n.e(0), n.e(4), n.e(244)]).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
           strategy: p.a.Critical,
@@ -18381,7 +18391,7 @@
         L = n('Ka9G'),
         M = {
           loader: function () {
-            return n.e(250).then(n.bind(null, 'bXO0'))
+            return n.e(249).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
           strategy: p.a.Critical,
@@ -31171,7 +31181,7 @@
                       },
                       U = { maxRows: b || S, minRows: S, useCacheForDOMMeasurements: z },
                       V = [q.alignLeft],
-                      W = { enterKeyHint: A, type: N },
+                      W = { enterkeyhint: A, type: N },
                       G = [q.alignLeft],
                       Y = E ? U : W,
                       X = E ? V : G,
@@ -31590,7 +31600,7 @@
       var r = n('zb92'),
         o = Object(r.a)({
           loader: function () {
-            return n.e(233).then(n.bind(null, 'hIbf'))
+            return n.e(232).then(n.bind(null, 'hIbf'))
           },
         })
       t.a = o
@@ -34693,7 +34703,7 @@
         f = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(17), n.e(25), n.e(223)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(17), n.e(25), n.e(222)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -34702,7 +34712,7 @@
         },
         p = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(17), n.e(25), n.e(223)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(17), n.e(25), n.e(222)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: d.a.Critical,
@@ -35722,7 +35732,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(352)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(351)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -35731,14 +35741,14 @@
         },
         i = {
           loader: function () {
-            return n.e(362).then(n.bind(null, '1Tet'))
+            return n.e(361).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         a = {
           loader: function () {
-            return n.e(300).then(n.bind(null, '08qV'))
+            return n.e(299).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -38865,7 +38875,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'ReVx'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'ReVx'))
             },
             loaderOptions: e,
             loaderKey: 'defaultTweetLoader',
@@ -38875,7 +38885,7 @@
         i = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'KQRq'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'KQRq'))
             },
             loaderOptions: e,
             loaderKey: 'tweetDetailLoader',
@@ -38885,7 +38895,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'A6fF'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'A6fF'))
             },
             loaderOptions: e,
             loaderKey: 'draggableTweetLoader',
@@ -38895,7 +38905,7 @@
         s = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'i8De'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'i8De'))
             },
             loaderOptions: e,
             loaderKey: 'promotedTweetLoader',
@@ -38905,7 +38915,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'tvEI'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'tvEI'))
             },
             loaderOptions: e,
             loaderKey: 'quoteTweetLoader',
@@ -38915,7 +38925,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'Fcw+'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(360)]).then(n.bind(null, 'Fcw+'))
             },
             loaderOptions: e,
             loaderKey: 'selectableTweetLoader',
@@ -39782,7 +39792,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(4), n.e(360)]).then(n.bind(null, '0rTF'))
+              return Promise.all([n.e(4), n.e(359)]).then(n.bind(null, '0rTF'))
             },
             loaderKey: 'defaultTweetComposerLoader',
             strategy: n('XBtf').a.Critical,

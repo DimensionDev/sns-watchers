@@ -19992,12 +19992,12 @@
           .propsFromState(function () {
             return {
               shouldShowPrompt: function (e, t) {
-                return Object(E.B)(e, E.j)
+                return Object(E.A)(e, E.j)
               },
             }
           })
           .propsFromActions(function () {
-            return { addFlag: E.x }
+            return { addFlag: E.w }
           })
           .withAnalytics({ component: 'dm_education_flags_prompt' }),
         C = n('fs1G'),
@@ -20105,7 +20105,7 @@
             return Object(A.selectInboxTypeByConversation)(e, n)
           },
           function (e, t) {
-            return Object(E.B)(e, E.r)
+            return Object(E.A)(e, E.r)
           },
           q.y,
           q.o,
@@ -20122,7 +20122,7 @@
           },
         ),
         Q = {
-          addFlag: E.x,
+          addFlag: E.w,
           addRecentSearch: A.addRecentSearches,
           addToast: H.b,
           block: W.e.block,

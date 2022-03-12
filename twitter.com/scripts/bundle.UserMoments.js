@@ -161,7 +161,7 @@
         h = function (e) {
           return {
             loader: function () {
-              return Promise.all([r.e(0), r.e(228)]).then(r.bind(null, 'Pb8P'))
+              return Promise.all([r.e(0), r.e(227)]).then(r.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',

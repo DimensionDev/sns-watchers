@@ -10100,7 +10100,7 @@
         Re = (n('JtPf'), n('87if'), n('zb92')),
         xe = Object(Re.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(21), n.e(236)]).then(n.bind(null, 'Rk1B'))
+            return Promise.all([n.e(0), n.e(21), n.e(235)]).then(n.bind(null, 'Rk1B'))
           },
         }),
         Te = n('aWzz'),
@@ -11167,12 +11167,12 @@
           .propsFromState(function () {
             return {
               shouldShowPrompt: function (e, t) {
-                return Object(E.B)(e, E.j)
+                return Object(E.A)(e, E.j)
               },
             }
           })
           .propsFromActions(function () {
-            return { addFlag: E.x }
+            return { addFlag: E.w }
           })
           .withAnalytics({ component: 'dm_education_flags_prompt' }),
         I = n('fs1G'),
@@ -11280,7 +11280,7 @@
             return Object(F.selectInboxTypeByConversation)(e, n)
           },
           function (e, t) {
-            return Object(E.B)(e, E.r)
+            return Object(E.A)(e, E.r)
           },
           G.y,
           G.o,
@@ -11297,7 +11297,7 @@
           },
         ),
         Y = {
-          addFlag: E.x,
+          addFlag: E.w,
           addRecentSearch: F.addRecentSearches,
           addToast: V.b,
           block: z.e.block,

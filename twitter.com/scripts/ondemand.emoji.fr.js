@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [319],
+  [318],
   {
     MfDf: function (e, a, i) {
       'use strict'
@@ -97,7 +97,7 @@
         r('f1215031', 'Visage neutre'),
         r('j786bf87', 'figé,fige,visage,neutre'),
         r('e639b180', 'Visage avec bouche en diagonale'),
-        r('aa3afce3', 'déçu,deçu,bof,sceptique,pas sûr,pas sur,incertain'),
+        r('aa3afce3', 'déçu,deçu,bof,sceptique,pas sûr, pas sur,incertain'),
         r('cbbfe9d7', 'Visage inexpressif'),
         r('a043cc2f', 'sans expression,visage,inexpressif,inexpressif'),
         r('af66ea50', 'Visage blasé'),
@@ -118,7 +118,7 @@
         r('ef48661b', 'Visage avec yeux ouverts et main sur la bouche'),
         r(
           'a2ec38d7',
-          'stupéfaction,stupefaction,respect mêlé de crainte,respect mele de crainte,incrédulité,incredulite,gêne,gene,effrayé,effraye,surprise',
+          'stupéfaction,stupefaction,respect mêlé de crainte,respect mêle de crainte,incrédulité,incredulite,gêne,gene,effrayé,effraye,surprise',
         ),
         r('b424f7b6', 'Visage qui salue'),
         r('b3c54251', 'ok,salut,ensoleillé,ensoleille,troupes,oui'),
@@ -320,7 +320,7 @@
         r('f631ab6a', 'V de la victoire'),
         r('a3a1cf87', 'corps,main,v,victoire'),
         r('ieb62a29', 'Main avec index et pouce croisés'),
-        r('c50beb33', 'cher,coeur,cœur,amour,argent,claquer des doigts,claquement de doigts'),
+        r('c50beb33', 'cher,coeur,cœur,amour,argent,snap'),
         r('c8bd1585', 'Signe des cornes avec les mains'),
         r('ebf78b93', 'corps,doigt,main,cornes,rock-on'),
         r('a4d65da1', "Geste Je t'aime"),
@@ -722,7 +722,7 @@
         r('c9027869', 'Triton'),
         r('i9e7e525', 'fantastique,sirène,sirene,homme,masculin,hommes'),
         r('j698f70d', 'Troll'),
-        r('b74f2ed1', 'conte de fées,conte de fees,fantaisie,fantastique,monstre'),
+        r('b74f2ed1', 'conte de fées,conte de fees,fantaisie,fantastique,montre'),
         r('b481ef35', 'Femme vampire'),
         r('eb59c18c', 'fantaisie,mort-vivant,mort vivant,femme,feminin,féminin,femmes,morte vivante,morte-vivante'),
         r('e32ce22a', 'Vampire'),
@@ -2067,7 +2067,7 @@
         r('a5711e63', 'Navire'),
         r('d108a604', 'bateau,véhicule,vehicule'),
         r('e366e2dd', 'Bouée'),
-        r('c2a8e616', 'flotteur,gilet de sauvetage,bouée de sauvetage,bouee de sauvetage,sauvetage,sécurité,securite'),
+        r('c2a8e616', 'flotteur,gilet de sauvetage,bouée de sauvetage,bouee de sauvetage,sauvetage,sécurité,securité'),
         r('jb5e58fd', 'Ancre'),
         r('b496b511', 'ancre,bateau,outil'),
         r('a508294e', 'Pompe à essence'),
