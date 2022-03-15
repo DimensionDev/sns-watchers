@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [169],
+  [168],
   {
     '+Aie': function (e, t, n) {
       var r
@@ -1162,6 +1162,17 @@
                           })
                       })
                     : Promise.resolve()
+                },
+              },
+              {
+                key: 'createClip',
+                value: function (e) {
+                  var t = this
+                  return this.login().then(function () {
+                    return t.post('createClip', e).catch(function (e) {
+                      Object(k.a)('[ProxseeApi] failed to create clip', { extra: { err: e } })
+                    })
+                  })
                 },
               },
               {

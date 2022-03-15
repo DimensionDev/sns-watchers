@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [98],
+  [97],
   {
     '3JAx': function (e, t, a) {
       'use strict'
@@ -88,11 +88,11 @@
         j = a('t62R'),
         z = a('mw9i'),
         V = a('v6aA'),
-        K = T.a.h1f01a24,
-        X = T.a.c07b4316,
+        X = T.a.h1f01a24,
+        K = T.a.c07b4316,
         U = T.a.e97196fe,
-        q = T.a.e652513d,
-        W = T.a.gd1ce493,
+        W = T.a.e652513d,
+        q = T.a.gd1ce493,
         J = T.a.e9f1fbcb,
         $ = T.a.cf0daa24,
         Q = '/settings/your_twitter_data/twitter_interests',
@@ -111,9 +111,9 @@
                 if (!e._hasKnownInterests()) return null
                 var t = [
                   { to: Q, key: U, label: U },
-                  { to: Z, key: X, label: X },
+                  { to: Z, key: K, label: K },
                 ]
-                return b.a.createElement(Y.a, { accessibilityLabel: K, links: t })
+                return b.a.createElement(Y.a, { accessibilityLabel: X, links: t })
               }),
               g()(d()(e), '_render', function () {
                 return e.props.location.pathname !== Z && e._hasKnownInterests()
@@ -131,7 +131,7 @@
                 return b.a.createElement(
                   'div',
                   null,
-                  b.a.createElement(O.a, null, q),
+                  b.a.createElement(O.a, null, W),
                   c.map(function (t, a) {
                     return b.a.createElement(G.a, {
                       checked: !o.has(t.id),
@@ -162,7 +162,7 @@
                 return b.a.createElement(
                   'div',
                   null,
-                  b.a.createElement(O.a, null, W),
+                  b.a.createElement(O.a, null, q),
                   c.map(function (t, a) {
                     return b.a.createElement(G.a, {
                       checked: !o.has(t.id),
@@ -216,7 +216,7 @@
                       null,
                       b.a.createElement(
                         N.a,
-                        { location: a, secondaryBar: this._renderTabs(), title: K },
+                        { location: a, secondaryBar: this._renderTabs(), title: X },
                         b.a.createElement(
                           C.a,
                           null,
@@ -246,7 +246,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TransparencyDashboardLanguageScreen', function () {
-          return K
+          return X
         })
       var n = a('yiKp'),
         r = a.n(n),
@@ -319,7 +319,7 @@
         j = x.a.e9f1fbcb,
         z = x.a.cf0daa24,
         V = { page: 'settings', section: 'your_twitter_data', component: 'language' },
-        K = (function (e) {
+        X = (function (e) {
           f()(a, e)
           var t = p()(a)
           function a() {
@@ -435,7 +435,7 @@
             a
           )
         })(b.a.Component)
-      t.default = k(K)
+      t.default = k(X)
     },
     C40e: function (e, t, a) {
       'use strict'
@@ -751,11 +751,11 @@
         j = a.n(G),
         z = j.a.g1aced04,
         V = j.a.hc36dbba,
-        K = j.a.j4fa776e,
-        X = j.a.i7acdb35,
+        X = j.a.j4fa776e,
+        K = j.a.i7acdb35,
         U = j.a.c112dfc8,
-        q = j.a.jd8607b9,
-        W = j.a.ea4f6c9e,
+        W = j.a.jd8607b9,
+        q = j.a.ea4f6c9e,
         J = j.a.d750b93e,
         $ = j.a.a9783601,
         Q = j.a.j043aa31,
@@ -826,8 +826,8 @@
                         g.a.cloneElement(l.supportLink, null, j.a.d1597cc9),
                       ),
                     ),
-                  e._renderDeviceGroup(c, K, !!e._fsSettingsRevamp && 0 === o.length && 0 === i.length),
-                  e._renderDeviceGroup(o, X, !!e._fsSettingsRevamp && 0 === i.length),
+                  e._renderDeviceGroup(c, X, !!e._fsSettingsRevamp && 0 === o.length && 0 === i.length),
+                  e._renderDeviceGroup(o, K, !!e._fsSettingsRevamp && 0 === i.length),
                   e._renderDeviceGroup(i, U, e._fsSettingsRevamp),
                   e._fsSettingsRevamp && g.a.createElement(B.a, null),
                   e.isLoggedIn &&
@@ -907,7 +907,7 @@
                     ? g.a.createElement(
                         N.a,
                         { style: [F.a.infoItem, F.a.bottomBorder], testID: T },
-                        g.a.createElement(M.b, { weight: 'bold' }, W),
+                        g.a.createElement(M.b, { weight: 'bold' }, q),
                         g.a.createElement(
                           M.b,
                           { color: 'gray700', style: F.a.helpText },
@@ -971,7 +971,7 @@
                           g.a.createElement(
                             M.b,
                             { color: 'gray700', style: F.a.helpText },
-                            q,
+                            W,
                             ' ',
                             oe(new Date(t.created_at)),
                           ),
@@ -1104,11 +1104,11 @@
         j = B.a.d1f6d336,
         z = B.a.a3841918,
         V = B.a.f70cd5ed,
-        K = B.a.ib6f1694,
-        X = B.a.fa98627a,
+        X = B.a.ib6f1694,
+        K = B.a.fa98627a,
         U = B.a.a8d0108d,
-        q = B.a.ac77c66c,
-        W = B.a.h3290871,
+        W = B.a.ac77c66c,
+        q = B.a.h3290871,
         J = B.a.b7ec04f3,
         $ = B.a.i62a03aa,
         Q = B.a.c119dee8,
@@ -1181,7 +1181,7 @@
                     ? g.a.createElement(
                         F.a,
                         { style: [x.a.infoItem, x.a.bottomBorder] },
-                        g.a.createElement(O.b, null, K),
+                        g.a.createElement(O.b, null, X),
                         g.a.createElement(O.b, { color: 'gray700', style: x.a.helpText }, Y(new Date(i.created_at))),
                         s.creation_ip && s.country
                           ? g.a.createElement(
@@ -1193,14 +1193,14 @@
                       )
                     : null,
                   null != i && i.screen_name
-                    ? g.a.createElement(L.a, { label: X, link: '/'.concat(i.screen_name) })
+                    ? g.a.createElement(L.a, { label: K, link: '/'.concat(i.screen_name) })
                     : null,
                   i && l ? g.a.createElement(L.a, { description: l, label: V, link: '/settings/phone' }) : null,
                   i && r ? g.a.createElement(L.a, { description: r, label: z, link: '/settings/email' }) : null,
-                  i ? g.a.createElement(L.a, { label: q, link: '/settings/contacts_dashboard' }) : null,
+                  i ? g.a.createElement(L.a, { label: W, link: '/settings/contacts_dashboard' }) : null,
                   i
                     ? g.a.createElement(N.a, {
-                        label: W,
+                        label: q,
                         learnMoreLabel: re,
                         learnMoreLink: oe,
                         subtext: i.verified ? J : $,
@@ -1500,7 +1500,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'AdsScreen', function () {
-          return M
+          return L
         })
       var n = a('VrFO'),
         r = a.n(n),
@@ -1516,36 +1516,35 @@
         p = a.n(m),
         h = (a('2G9S'), a('ERkP')),
         g = a.n(h),
-        E = a('zh9S'),
-        b = a('NeAX'),
-        _ = a('hqKg'),
-        y = a('0KEI'),
-        v = a('oEGd'),
-        S = Object(_.createSelector)(b.selectFetchDataStatus, b.selectData, function (e, t) {
-          return { fetchDataStatus: e, personalizationData: t }
-        }),
-        I = {
-          createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
-            'SETTINGS_TRANSPARENCY_DASHBOARD_DATA_SCREEN',
-          ),
-          fetchData: b.fetchDataIfNeeded,
-          googleAnalyticsPageView: E.a,
-          scribePageImpression: E.d,
-        },
-        A = Object(v.f)(S, I),
-        w = a('3XMw'),
-        D = a.n(w),
-        k = a('csss'),
-        P = a('7FtF'),
-        C = a('v6aA'),
-        x = D.a.gbde3534,
-        F = D.a.a54826c5,
-        T = D.a.fdb55209,
-        L = D.a.e1c6b2d5,
-        R = D.a.ed19d10d,
-        O = D.a.f00d0d02,
-        N = { page: 'settings', section: 'your_twitter_data', component: 'ads_data' },
-        M = (function (e) {
+        E = a('NeAX'),
+        b = a('rxPX'),
+        _ = a('0KEI'),
+        y = Object(b.a)()
+          .propsFromState(function () {
+            return { fetchDataStatus: E.selectFetchDataStatus, personalizationData: E.selectData }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
+                'SETTINGS_TRANSPARENCY_DASHBOARD_DATA_SCREEN',
+              ),
+              fetchData: E.fetchDataIfNeeded,
+            }
+          })
+          .withAnalytics({ page: 'settings', section: 'your_twitter_data', component: 'ads_data' }),
+        v = a('3XMw'),
+        S = a.n(v),
+        I = a('yoO3'),
+        A = a('csss'),
+        w = a('7FtF'),
+        D = a('v6aA'),
+        k = S.a.gbde3534,
+        P = S.a.a54826c5,
+        C = S.a.fdb55209,
+        x = S.a.e1c6b2d5,
+        F = S.a.ed19d10d,
+        T = S.a.f00d0d02,
+        L = (function (e) {
           d()(a, e)
           var t = f()(a)
           function a() {
@@ -1561,23 +1560,27 @@
                   r = n.tailored_audience_summary ? n.tailored_audience_summary.num_advertisers : 0,
                   c = n.tailored_audience_summary ? n.tailored_audience_summary.num_audiences : 0
                 return g.a.createElement(
-                  P.a,
-                  { location: a, title: x },
-                  g.a.createElement(k.a, {
-                    description: n.tailored_audience_summary ? O({ count: n.num_twitter_interests }) : null,
-                    label: T,
-                    link: '/settings/your_twitter_data/twitter_interests',
-                  }),
-                  g.a.createElement(k.a, {
-                    description: n.tailored_audience_summary ? O({ count: n.num_partner_interests }) : null,
-                    label: F,
-                    link: '/settings/your_twitter_data/partner_interests',
-                  }),
-                  g.a.createElement(k.a, {
-                    description: n.tailored_audience_summary ? R({ audienceCount: c, advertiserCount: r }) : null,
-                    label: L,
-                    link: '/settings/your_twitter_data/audiences',
-                  }),
+                  I.a,
+                  null,
+                  g.a.createElement(
+                    w.a,
+                    { location: a, title: k },
+                    g.a.createElement(A.a, {
+                      description: n.tailored_audience_summary ? T({ count: n.num_twitter_interests }) : null,
+                      label: C,
+                      link: '/settings/your_twitter_data/twitter_interests',
+                    }),
+                    g.a.createElement(A.a, {
+                      description: n.tailored_audience_summary ? T({ count: n.num_partner_interests }) : null,
+                      label: P,
+                      link: '/settings/your_twitter_data/partner_interests',
+                    }),
+                    g.a.createElement(A.a, {
+                      description: n.tailored_audience_summary ? F({ audienceCount: c, advertiserCount: r }) : null,
+                      label: x,
+                      link: '/settings/your_twitter_data/audiences',
+                    }),
+                  ),
                 )
               }),
               p()(l()(e), '_handleFetchData', function () {
@@ -1595,20 +1598,12 @@
                   ;(this.isLoggedIn = !!this.context.loggedInUserId), this._handleFetchData()
                 },
               },
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  var e = this.props,
-                    t = e.googleAnalyticsPageView
-                  ;(0, e.scribePageImpression)(N), t(N)
-                },
-              },
             ]),
             a
           )
         })(g.a.Component)
-      p()(M, 'contextType', C.a)
-      t.default = A(M)
+      p()(L, 'contextType', D.a)
+      t.default = y(L)
     },
     eM8g: function (e, t, a) {
       'use strict'
@@ -1765,7 +1760,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TransparencyDashboardPartnerInterestsScreen', function () {
-          return K
+          return X
         })
       var n = a('yiKp'),
         r = a.n(n),
@@ -1828,7 +1823,7 @@
         j = B.a.cf0daa24,
         z = 'https://support.twitter.com/articles/20175258',
         V = { page: 'settings', section: 'your_twitter_data', component: 'partner_interests' },
-        K = (function (e) {
+        X = (function (e) {
           f()(a, e)
           var t = p()(a)
           function a() {
@@ -1946,7 +1941,7 @@
             a
           )
         })(b.a.Component)
-      t.default = k(K)
+      t.default = k(X)
     },
     'h/+I': function (e, t, a) {
       'use strict'
@@ -2020,11 +2015,11 @@
         j = a('v6aA'),
         z = a('3XMw'),
         V = a.n(z),
-        K = { headline: V.a.hf9c2caa, text: V.a.c29b7970, confirmButtonLabel: V.a.b9e1cf02 },
-        X = V.a.e1c6b2d5,
+        X = { headline: V.a.hf9c2caa, text: V.a.c29b7970, confirmButtonLabel: V.a.b9e1cf02 },
+        K = V.a.e1c6b2d5,
         U = V.a.da202f9a,
-        q = V.a.a8276fab,
-        W = V.a.g7912a84,
+        W = V.a.a8276fab,
+        q = V.a.g7912a84,
         J = V.a.fdfed926,
         $ = { page: 'settings', section: 'your_twitter_data', component: 'tailored_audiences' },
         Q = (function (e) {
@@ -2089,14 +2084,14 @@
                     { style: [M.a.infoItem, r && M.a.bottomBorder] },
                     b.a.createElement(H.b, { color: 'gray700' }, J),
                   ),
-                  r ? b.a.createElement(Y.a, { color: 'primary', label: q, onPress: c._handleRequestDataClick }) : null,
+                  r ? b.a.createElement(Y.a, { color: 'primary', label: W, onPress: c._handleRequestDataClick }) : null,
                   c.state.showEmailConfirmation &&
                     b.a.createElement(G.a, {
-                      confirmButtonLabel: K.confirmButtonLabel,
-                      headline: K.headline,
+                      confirmButtonLabel: X.confirmButtonLabel,
+                      headline: X.headline,
                       onCancel: c._handleCancelEmail,
                       onConfirm: c._handleConfirmEmail,
-                      text: K.text({ primaryEmail: n }),
+                      text: X.text({ primaryEmail: n }),
                     }),
                 )
               }),
@@ -2107,7 +2102,7 @@
                 e.primaryEmail
                   ? (c._scribeAction('email'),
                     a().then(function () {
-                      return t({ text: W })
+                      return t({ text: q })
                     }))
                   : (c._scribeAction('download'),
                     window.open('https://twitter.com/account/personalization/download_advertiser_list.pdf', '_blank'))
@@ -2147,7 +2142,7 @@
                       null,
                       b.a.createElement(
                         N.a,
-                        { location: a, title: this._fsSettingsRevamp ? U : X },
+                        { location: a, title: this._fsSettingsRevamp ? U : K },
                         b.a.createElement(
                           T.a,
                           null,
@@ -2413,14 +2408,14 @@
         j = P.a.a8d0108d,
         z = P.a.fbf0e61d,
         V = P.a.de32365f,
-        K = P.a.b6ab31bd,
-        X = P.a.b4568a3a,
+        X = P.a.b6ab31bd,
+        K = P.a.b4568a3a,
         U = P.a.c0be743d,
-        q = P.a.i2209530,
-        W = [
+        W = P.a.i2209530,
+        q = [
           { label: V, value: 'female' },
-          { label: K, value: 'male' },
-          { label: X, value: G },
+          { label: X, value: 'male' },
+          { label: K, value: G },
         ],
         J = P.a.b7cb74e0,
         $ = P.a.cdb0d3e6,
@@ -2512,7 +2507,7 @@
                     a = e.location,
                     n =
                       t === v.a.LOADED && this.isLoggedIn
-                        ? { onSubmit: this._handleSaveGender, submitDisabled: !this.isGenderValid, submitLabel: q }
+                        ? { onSubmit: this._handleSaveGender, submitDisabled: !this.isGenderValid, submitLabel: W }
                         : void 0
                   return b.a.createElement(
                     C.a,
@@ -2539,7 +2534,7 @@
                     b.a.createElement(N.a, {
                       name: 'gender',
                       onChange: this._handleItemChanged,
-                      options: W,
+                      options: q,
                       value: this.selectedGender,
                     }),
                     this.selectedGender === G

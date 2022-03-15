@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [116],
+  [115],
   {
     '+wNI': function (e, t, a) {
       'use strict'
@@ -2773,7 +2773,7 @@
         In = a('oQhu'),
         Tn = a('xZGM'),
         Ln = function (e, t) {
-          return Object(Tn.A)(e, Tn.v)
+          return Object(Tn.C)(e, Tn.x)
         },
         Pn = Object(V.a)()
           .propsFromState(function () {
@@ -2782,7 +2782,7 @@
           .propsFromActions(function () {
             return {
               addEducationFlag: function () {
-                return Object(Tn.w)(Tn.v)
+                return Object(Tn.y)(Tn.x)
               },
             }
           })
@@ -3152,16 +3152,16 @@
         Vr = X.a.d834ab9c,
         qr = { section: 'profile_interstitial' },
         Jr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(116)]).then(a.bind(null, '8KtR'))
+          return Promise.all([a.e(0), a.e(115)]).then(a.bind(null, '8KtR'))
         }),
         Gr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(116)]).then(a.bind(null, 'cFl3'))
+          return Promise.all([a.e(0), a.e(115)]).then(a.bind(null, 'cFl3'))
         }),
         $r = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(116)]).then(a.bind(null, 'ivpD'))
+          return Promise.all([a.e(0), a.e(115)]).then(a.bind(null, 'ivpD'))
         }),
         Qr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(116)]).then(a.bind(null, 'ylAD'))
+          return Promise.all([a.e(0), a.e(115)]).then(a.bind(null, 'ylAD'))
         }),
         Xr = 'about',
         Yr = 'likes',

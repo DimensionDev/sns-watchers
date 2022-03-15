@@ -87,8 +87,8 @@
         N = n('FIs5'),
         D = n('0yYu'),
         U = n('v6aA'),
-        H = n('PnFR'),
-        K = n('8UdT'),
+        K = n('PnFR'),
+        H = n('8UdT'),
         j = n('1Pcy'),
         V = n.n(j),
         B = (n('2G9S'), n('JtPf'), n('/yvb')),
@@ -282,7 +282,7 @@
           ((a = {}),
           h()(
             a,
-            K.b.User,
+            H.b.User,
             Object(de.a)({
               decoration: function (e) {
                 var t = e.userId
@@ -290,13 +290,13 @@
               },
             }),
           ),
-          h()(a, K.b.TimelineCursor, Object(H.a)({})),
+          h()(a, H.b.TimelineCursor, Object(K.a)({})),
           a),
         pe =
           ((r = {}),
           h()(
             r,
-            K.b.User,
+            H.b.User,
             Object(de.a)({
               decoration: function (e) {
                 var t = e.userId
@@ -304,7 +304,7 @@
               },
             }),
           ),
-          h()(r, K.b.TimelineCursor, Object(H.a)({})),
+          h()(r, H.b.TimelineCursor, Object(K.a)({})),
           r),
         he = oe.a.daef29b7,
         me = E.a.createElement(
@@ -482,8 +482,8 @@
         N = n('/Dbh'),
         D = x.a.ab1f7eef,
         U = x.a.d241169c,
-        H = x.a.d1091f50,
-        K = x.a.a9bc3043,
+        K = x.a.d1091f50,
+        H = x.a.a9bc3043,
         j = x.a.b8c03cfb,
         V = x.a.b731d32c,
         B = x.a.d555d7e0,
@@ -517,7 +517,7 @@
                     helperText: E.a.createElement(
                       F.b,
                       { link: 'https://twitter.com/account/access_password_reset' },
-                      H,
+                      K,
                     ),
                     invalid: !!a,
                     label: U,
@@ -530,7 +530,7 @@
                   E.a.createElement(I.a, {
                     errorText: i,
                     invalid: !!i,
-                    label: K,
+                    label: H,
                     name: 'new_password',
                     onChange: o._handleItemChanged,
                     type: 'password',
@@ -701,7 +701,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SettingsLocationScreen', function () {
-          return K
+          return H
         })
       var a = n('VrFO'),
         r = n.n(a),
@@ -754,8 +754,8 @@
         N = F.a.h83e5c06,
         D = F.a.f4d69920,
         U = F.a.d96cf7cd,
-        H = { page: 'settings', section: 'location' },
-        K = (function (e) {
+        K = { page: 'settings', section: 'location' },
+        H = (function (e) {
           u()(n, e)
           var t = f()(n)
           function n() {
@@ -788,7 +788,7 @@
                 value: function () {
                   var e = this.props,
                     t = e.googleAnalyticsPageView
-                  ;(0, e.scribePageImpression)(H), t(H)
+                  ;(0, e.scribePageImpression)(K), t(K)
                 },
               },
               {
@@ -841,7 +841,7 @@
             n
           )
         })(E.a.Component)
-      t.default = w(K)
+      t.default = w(H)
     },
     '3WEv': function (e, t, n) {
       'use strict'
@@ -900,8 +900,8 @@
         N = A.a.ed5ab169,
         D = A.a.d64e29c5,
         U = { headline: A.a.idfa01cb, text: A.a.d4cca0f7, confirmButtonLabel: A.a.ae1bbb26 },
-        H = A.a.e04ba39c,
-        K = A.a.bfbc051c,
+        K = A.a.e04ba39c,
+        H = A.a.bfbc051c,
         j = A.a.jaaa8984,
         V = A.a.h667fc02,
         B = A.a.ddcd3d26,
@@ -1000,7 +1000,7 @@
                 value: function (e) {
                   if (e.is_current_session) return E.a.createElement(R.b, null, N)
                   var t = new Date(Number(e.last_seen_time_ms))
-                  return E.a.createElement('time', { dateTime: t.toISOString() }, K(t))
+                  return E.a.createElement('time', { dateTime: t.toISOString() }, H(t))
                 },
               },
               {
@@ -1014,7 +1014,7 @@
                           F.a,
                           null,
                           E.a.createElement(M.a, null),
-                          E.a.createElement(x.b, { text: H }),
+                          E.a.createElement(x.b, { text: K }),
                           E.a.createElement(
                             F.a,
                             { style: [I.a.labelContainer, !(null != e && e.is_current_session) && I.a.bottomBorder] },
@@ -1213,8 +1213,8 @@
         N = n('6OUF'),
         D = n('0yYu'),
         U = n('3JAx'),
-        H = n('v6aA'),
-        K = n('hX3w'),
+        K = n('v6aA'),
+        H = n('hX3w'),
         j = (function (e) {
           f()(n, e)
           var t = h()(n)
@@ -1372,7 +1372,7 @@
               }),
               (o.state = { onlyDDGs: !1, search: '' }),
               0 === Object.keys(e.allSwitches).length && e.history.replace('/settings'),
-              (o.experimentOverrides = Object(K.a)(o.context.featureSwitches)),
+              (o.experimentOverrides = Object(H.a)(o.context.featureSwitches)),
               o
             )
           }
@@ -1397,7 +1397,7 @@
             n
           )
         })(g.a.Component)
-      E()(j, 'contextType', H.a)
+      E()(j, 'contextType', K.a)
       t.default = S(j)
     },
     '68+r': function (e, t, n) {
@@ -1439,10 +1439,10 @@
         y = n('rxPX'),
         S = n('0KEI'),
         v = function (e, t) {
-          return Object(b.A)(e, b.o)
+          return Object(b.C)(e, b.p)
         },
         w = function (e, t) {
-          return Object(b.A)(e, b.u)
+          return Object(b.C)(e, b.w)
         },
         C = Object(y.a)()
           .propsFromState(function () {
@@ -1455,7 +1455,7 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: b.w,
+              addFlag: b.y,
               addToast: g.b,
               createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)('MUTED_KEYWORDS'),
               deleteMutedKeyword: _.b,
@@ -1510,7 +1510,7 @@
               {
                 key: '_updateUnmuteConfirmationPersistence',
                 value: function () {
-                  ;(0, this.props.addFlag)(b.u)
+                  ;(0, this.props.addFlag)(b.w)
                 },
               },
               {
@@ -1546,15 +1546,15 @@
         })(E.a.Component)
       h()(D, 'defaultProps', { color: 'red500' })
       var U = n('yoO3'),
-        H = (n('hBvt'), n('iY63')),
-        K = L.a.af40a8ef,
+        K = (n('hBvt'), n('iY63')),
+        H = L.a.af40a8ef,
         j = function (e) {
           var t = e.accessibilityLabel,
             n = e.link
           return E.a.createElement(F.a, {
             accessibilityLabel: t,
-            hoverLabel: { label: K },
-            icon: E.a.createElement(H.a, null),
+            hoverLabel: { label: H },
+            icon: E.a.createElement(K.a, null),
             link: n,
             pullRight: !0,
             type: 'primaryText',
@@ -1751,7 +1751,7 @@
               {
                 key: '_updateMuteKeywordEducationCookie',
                 value: function () {
-                  ;(0, this.props.addFlag)(b.o)
+                  ;(0, this.props.addFlag)(b.p)
                 },
               },
             ]),
@@ -1892,8 +1892,8 @@
           },
         },
         U = Object(w.f)(N, D),
-        H = n('v//M'),
-        K = n('6ZHn'),
+        K = n('v//M'),
+        H = n('6ZHn'),
         j = n('TEoO'),
         V = n('yoO3'),
         B = n('PK8P'),
@@ -1963,7 +1963,7 @@
                 return g.a.createElement(
                   z.a,
                   { key: n, style: [[q.a.infoText, q.a.bottomBorder], fe.contactContainer] },
-                  g.a.createElement(Q.a, { Icon: K.a, color: 'neutral', style: fe.personIcon }),
+                  g.a.createElement(Q.a, { Icon: H.a, color: 'neutral', style: fe.personIcon }),
                   g.a.createElement(
                     z.a,
                     null,
@@ -1984,7 +1984,7 @@
                   ? g.a.createElement(
                       z.a,
                       { style: fe.loadingContainer },
-                      g.a.createElement(H.a, { fetchStatus: e, render: ee.a }),
+                      g.a.createElement(K.a, { fetchStatus: e, render: ee.a }),
                     )
                   : null
               }),
@@ -2243,8 +2243,8 @@
         N = A.a.dec3c9b8,
         D = A.a.d1091f50,
         U = A.a.i4efb2e3,
-        H = A.a.g9677c6d,
-        K = A.a.c8cb0b4c,
+        K = A.a.g9677c6d,
+        H = A.a.c8cb0b4c,
         j = A.a.fe36fe1f,
         V = (function (e) {
           u()(n, e)
@@ -2276,7 +2276,7 @@
                         ((t = {}),
                         h()(t, _.a.InvalidCurrentPassword, {
                           customAction: function () {
-                            return e.setState({ passwordError: K })
+                            return e.setState({ passwordError: H })
                           },
                         }),
                         h()(t, 'showToast', !0),
@@ -2335,7 +2335,7 @@
                       E.a.createElement(
                         M.a,
                         { onPress: this._handlePasswordSubmit, style: B.button, type: 'brandFilled' },
-                        H,
+                        K,
                       ),
                     ),
                   )
@@ -2794,13 +2794,13 @@
         N = n('8UdT'),
         D = n('88ay'),
         U = n('Ka9G'),
-        H = E()(
+        K = E()(
           E()({}, Object(x.a)({ tweetDismissable: !0 })),
           {},
           f()({}, N.b.User, Object(U.a)({ decoration: D.c })),
         ),
-        K = n('3XMw'),
-        j = n.n(K),
+        H = n('3XMw'),
+        j = n.n(H),
         V = n('tI3i'),
         B = n.n(V),
         G = n('yoO3'),
@@ -2841,7 +2841,7 @@
                         q.a,
                         { location: t, title: $ },
                         h.a.createElement(W.a, {
-                          entryConfiguration: H,
+                          entryConfiguration: K,
                           loadingAccessibilityLabel: Z,
                           module: n,
                           renderEmptyState: ee,
@@ -3317,8 +3317,8 @@
         N = n('jm1/'),
         D = n('FIs5'),
         U = n('t62R'),
-        H = n('csss'),
-        K = n('6vad'),
+        K = n('csss'),
+        H = n('6vad'),
         j = n('htQn'),
         V = n('3Ohe'),
         B = n('U+bB'),
@@ -3401,7 +3401,7 @@
                 return E.a.createElement(
                   O.a,
                   null,
-                  E.a.createElement(H.a, {
+                  E.a.createElement(K.a, {
                     description: n.organization,
                     label: n.name,
                     thumbnail: E.a.createElement(B.a, { accessibilityLabel: '', source: n.img_url, style: N.a.avatar }),
@@ -3415,7 +3415,7 @@
                     E.a.createElement(U.b, { color: 'gray700', size: 'subtext2' }, n.description),
                   ),
                   r,
-                  E.a.createElement(K.b, { text: Z }),
+                  E.a.createElement(H.b, { text: Z }),
                   t.map(function (t) {
                     return E.a.createElement(
                       O.a,
@@ -3713,8 +3713,8 @@
         N = n('yoO3'),
         D = n('7FtF'),
         U = n('XUJi'),
-        H = n('t62R'),
-        K = n('/yvb'),
+        K = n('t62R'),
+        H = n('/yvb'),
         j = n('FR63'),
         V = n('CaKu'),
         B = n('MWbm'),
@@ -3743,7 +3743,7 @@
                     B.a,
                     { style: U.a.centeredContainer },
                     E.a.createElement(
-                      H.b,
+                      K.b,
                       { align: 'center', size: 'title2', weight: 'bold' },
                       t ? Object(R.b)(t) : null,
                     ),
@@ -3753,7 +3753,7 @@
                         B.a,
                         { style: U.a.centeredContainer },
                         E.a.createElement(
-                          K.a,
+                          H.a,
                           { alignContent: 'center', onPress: e._handleCopy, type: 'brandFilled' },
                           Y,
                         ),
@@ -3763,7 +3763,7 @@
                     B.a,
                     { style: U.a.centeredContainer },
                     E.a.createElement(
-                      K.a,
+                      H.a,
                       { alignContent: 'center', onPress: e._handleGenerate, type: 'brandText' },
                       W,
                     ),
@@ -3804,8 +3804,8 @@
                     E.a.createElement(
                       D.a,
                       { location: n, title: G },
-                      E.a.createElement(j.a, null, E.a.createElement(H.b, { color: 'gray700' }, X)),
-                      E.a.createElement(j.a, null, E.a.createElement(H.b, { color: 'gray700' }, Q)),
+                      E.a.createElement(j.a, null, E.a.createElement(K.b, { color: 'gray700' }, X)),
+                      E.a.createElement(j.a, null, E.a.createElement(K.b, { color: 'gray700' }, Q)),
                       E.a.createElement(P.a, {
                         accessibilityLabel: z,
                         fetchStatus: t,
@@ -3879,8 +3879,8 @@
         N = n('24HD'),
         D = n('Bwid'),
         U = n('pu5c'),
-        H = P.a.cf67f6d5,
-        K = P.a.jcba15d2,
+        K = P.a.cf67f6d5,
+        H = P.a.jcba15d2,
         j = P.a.fcd4d489,
         V = P.a.i2b9632d,
         B = P.a.a9fd20be,
@@ -3903,7 +3903,7 @@
                   })
                 }),
                 _()(d()(e), '_removeAutoblockAction', function () {
-                  return { text: K, onClick: e._showRemoveAutoblockConfirmation, Icon: D.a }
+                  return { text: H, onClick: e._showRemoveAutoblockConfirmation, Icon: D.a }
                 }),
                 _()(d()(e), '_blockAction', function () {
                   var t
@@ -3960,8 +3960,8 @@
                       null,
                       b.a.createElement(
                         x.a,
-                        { accessibilityLabel: H, renderMenu: this._renderMenu, type: 'destructiveFilled' },
-                        H,
+                        { accessibilityLabel: K, renderMenu: this._renderMenu, type: 'destructiveFilled' },
+                        K,
                       ),
                       this.state.showBlockConfirmation ? this._renderBlockConfirmationSheet() : null,
                       this.state.showRemoveAutoblockConfirmation
@@ -4300,8 +4300,8 @@
         N = n('csss'),
         D = n('6vad'),
         U = L.a.bc7fd99f,
-        H = L.a.c5f4befa,
-        K = L.a.j018f2a1,
+        K = L.a.c5f4befa,
+        H = L.a.j018f2a1,
         j = L.a.e2f1665f,
         V = L.a.e5e88f4f,
         B = L.a.jaaa8984,
@@ -4451,7 +4451,7 @@
                   var e = this.props,
                     t = e.history,
                     n = e.location.pathname === re,
-                    a = this._usePlaceTrendSettings && n ? K : H
+                    a = this._usePlaceTrendSettings && n ? H : K
                   return E.a.createElement(
                     A.b,
                     { history: t, title: a },
@@ -4532,8 +4532,8 @@
         N = T.a.b033248c,
         D = T.a.a904e0ee,
         U = T.a.ebc41952,
-        H = T.a.f40a6338,
-        K = T.a.ac9314aa,
+        K = T.a.f40a6338,
+        H = T.a.ac9314aa,
         j = T.a.d86a220e,
         V = 'https://help.twitter.com/safety-and-security/email-and-phone-discoverability-settings',
         B = T.a.ac77c66c,
@@ -4586,7 +4586,7 @@
                         E.a.createElement(O.a, { description: D }),
                         E.a.createElement(F.a, {
                           checked: t,
-                          helpText: H,
+                          helpText: K,
                           label: U,
                           learnMoreLink: V,
                           name: 'discoverable_by_email',
@@ -4595,7 +4595,7 @@
                         E.a.createElement(F.a, {
                           checked: n,
                           helpText: j,
-                          label: K,
+                          label: H,
                           learnMoreLink: V,
                           name: 'discoverable_by_mobile_phone',
                           onChange: this._handleItemChanged,
@@ -4717,8 +4717,8 @@
         N = n('XUJi'),
         D = n('t62R'),
         U = n('/yvb'),
-        H = n('FR63'),
-        K = n('CaKu'),
+        K = n('FR63'),
+        H = n('CaKu'),
         j = n('MWbm'),
         V = n('3XMw'),
         B = n.n(V),
@@ -4753,7 +4753,7 @@
                     { style: N.a.centeredContainer },
                     E.a.createElement(D.b, { align: 'center', size: 'title2', weight: 'bold' }, t ? Q(t) : null),
                   ),
-                  K.a.isAvailable()
+                  H.a.isAvailable()
                     ? E.a.createElement(
                         j.a,
                         { style: N.a.centeredContainer },
@@ -4779,7 +4779,7 @@
                 var t = e.props,
                   n = t.addToast,
                   a = t.backupCode
-                a && (K.a.setString(a), n({ text: q }))
+                a && (H.a.setString(a), n({ text: q }))
               }),
               h()(s()(e), '_handleGenerate', function () {
                 var t = e.props,
@@ -4814,9 +4814,9 @@
                     E.a.createElement(
                       x.a,
                       { location: n, title: G },
-                      E.a.createElement(H.a, null, E.a.createElement(D.b, { color: 'gray700' }, X)),
+                      E.a.createElement(K.a, null, E.a.createElement(D.b, { color: 'gray700' }, X)),
                       E.a.createElement(
-                        H.a,
+                        K.a,
                         null,
                         E.a.createElement(
                           D.b,
@@ -4890,8 +4890,8 @@
         N = v.a.cb9bb63f,
         D = v.a.h1ef00db,
         U = v.a.e8f57e07,
-        H = v.a.e8f57e07,
-        K = v.a.hfc86556,
+        K = v.a.e8f57e07,
+        H = v.a.hfc86556,
         j = v.a.a5f32aa2,
         V = (function (e) {
           u()(n, e)
@@ -4954,13 +4954,13 @@
                         : null,
                       E.a.createElement(O.a, null),
                       E.a.createElement(k.b, { text: R }),
-                      E.a.createElement(L.a, { label: K, link: '/settings/mute' }),
+                      E.a.createElement(L.a, { label: H, link: '/settings/mute' }),
                       E.a.createElement(L.a, { label: j, link: '/settings/blocked/all' }),
                       E.a.createElement(O.a, null),
                       E.a.createElement(k.b, { text: U }),
                       E.a.createElement(L.a, {
                         description: this._renderPersonalizationDescription(),
-                        label: H,
+                        label: K,
                         link: '/settings/account/personalization',
                       }),
                     ),
@@ -5053,7 +5053,7 @@
           return U
         }),
         n.d(t, 'l', function () {
-          return H
+          return K
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -5219,7 +5219,7 @@
             })
           }
         },
-        H = function (e) {
+        K = function (e) {
           return function (t, n, a) {
             var r = a.api
             return c.b(t, { params: e, request: r.MuteKeywordSettings.updateMutedKeyword })({
@@ -5552,8 +5552,8 @@
           })
           .withAnalytics({ page: 'settings', section: 'advanced_filters' }),
         U = n('v//M'),
-        H = n('yoO3'),
-        K = n('7FtF'),
+        K = n('yoO3'),
+        H = n('7FtF'),
         j = n('iCwC'),
         V = n('MWbm'),
         B = n('6vad'),
@@ -5679,10 +5679,10 @@
                     t = e.fetchStatus,
                     n = e.location
                   return E.a.createElement(
-                    H.a,
+                    K.a,
                     null,
                     E.a.createElement(
-                      K.a,
+                      H.a,
                       { location: n, title: z },
                       E.a.createElement(U.a, {
                         fetchStatus: t,
@@ -5755,8 +5755,8 @@
         N = C.a.f8bd75d4,
         D = C.a.bcd81cab,
         U = C.a.hfc86556,
-        H = C.a.afdf29b8,
-        K = C.a.b293c4bd,
+        K = C.a.afdf29b8,
+        H = C.a.b293c4bd,
         j = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -5792,8 +5792,8 @@
                       E.a.createElement(L.b, { testID: k, text: R }),
                       E.a.createElement(O.a, {
                         checked: a,
-                        helpText: K,
-                        label: H,
+                        helpText: H,
+                        label: K,
                         learnMoreLink: 'https://support.twitter.com/articles/20169398',
                         name: 'universal_quality_filtering',
                         onChange: this._handleUqfChanged,
@@ -5888,8 +5888,8 @@
         N = n('88ay'),
         D = n('MWbm'),
         U = n('t62R'),
-        H = n('6vad'),
-        K = n('0yYu'),
+        K = n('6vad'),
+        H = n('0yYu'),
         j = n('3JAx'),
         V = n('jtO7'),
         B = n('v6aA'),
@@ -5988,9 +5988,9 @@
                           D.a,
                           null,
                           E.a.createElement(N.b, { key: a, userId: a, withLink: !1 }),
-                          E.a.createElement(H.b, { text: Z }),
+                          E.a.createElement(K.b, { text: Z }),
                           E.a.createElement(oe, { withBottomBorder: !1 }, Y),
-                          E.a.createElement(H.b, { text: $ }),
+                          E.a.createElement(K.b, { text: $ }),
                           c
                             ? E.a.createElement(oe, null, q)
                             : s
@@ -6000,7 +6000,7 @@
                             ? E.a.createElement(
                                 E.a.Fragment,
                                 null,
-                                E.a.createElement(K.a, null),
+                                E.a.createElement(H.a, null),
                                 E.a.createElement(j.a, {
                                   label: ee,
                                   name: 'reactivation',
@@ -6008,7 +6008,7 @@
                                   options: re,
                                   value: o,
                                 }),
-                                E.a.createElement(K.a, null),
+                                E.a.createElement(H.a, null),
                               )
                             : null,
                           E.a.createElement(
@@ -6053,7 +6053,7 @@
                               E.a.createElement(U.b, { link: '/settings/download_your_data' }, W.a.g392e08c),
                             ),
                           ),
-                          E.a.createElement(K.a, null),
+                          E.a.createElement(H.a, null),
                           E.a.createElement(V.a, {
                             color: 'red500',
                             disabled: l,
@@ -6142,8 +6142,8 @@
         N = n('csss'),
         D = n('0yYu'),
         U = O.a.i5f7b6b8,
-        H = O.a.cd32dbfd,
-        K = O.a.e7efe72a,
+        K = O.a.cd32dbfd,
+        H = O.a.e7efe72a,
         j = O.a.a3841918,
         V = O.a.f70cd5ed,
         B = O.a.dec3c9b8,
@@ -6208,7 +6208,7 @@
                       E.a.createElement(
                         R.a,
                         { testID: P },
-                        E.a.createElement(x.b, { text: K }),
+                        E.a.createElement(x.b, { text: H }),
                         E.a.createElement(N.a, { description: c, label: q, link: '/settings/screen_name' }),
                         E.a.createElement(N.a, { description: s, label: V, link: '/settings/phone' }),
                         E.a.createElement(N.a, { description: l, label: j, link: '/settings/email' }),
@@ -6224,7 +6224,7 @@
                             E.a.createElement(N.a, { label: $, link: '/settings/request_verification' }),
                           ),
                         E.a.createElement(D.a, null),
-                        E.a.createElement(x.b, { text: H }),
+                        E.a.createElement(x.b, { text: K }),
                         E.a.createElement(N.a, { description: a, label: W, link: '/settings/language' }),
                         E.a.createElement(N.a, { description: t, label: Y, link: '/settings/country' }),
                         E.a.createElement(N.a, { label: X, link: '/settings/your_twitter_data' }),
@@ -6427,7 +6427,7 @@
             iconCheckmark: { color: e.colors.primary },
           }
         }),
-        H = function (e) {
+        K = function (e) {
           var t = e.country,
             n = e.isSelected,
             a = e.name,
@@ -6439,7 +6439,7 @@
             n ? E.a.createElement(R.a, { style: U.iconCheckmark }) : null,
           )
         },
-        K = n('MWbm'),
+        H = n('MWbm'),
         j = n('v6aA'),
         V = n('oQhu'),
         B = n('VY6S'),
@@ -6484,10 +6484,10 @@
               h()(s()(o), '_renderWoeLocations', function () {
                 var e = '' === o.state.query ? o._getTopLevelWoeLocations() : o._getFilteredWoeLocations()
                 return E.a.createElement(
-                  K.a,
+                  H.a,
                   null,
                   E.a.createElement(
-                    K.a,
+                    H.a,
                     { style: X.searchBox },
                     E.a.createElement(G.a, {
                       Icon: k.a,
@@ -6500,7 +6500,7 @@
                     }),
                   ),
                   E.a.createElement(
-                    K.a,
+                    H.a,
                     null,
                     e.map(function (e) {
                       return o._renderWoeLocation(e)
@@ -6547,7 +6547,7 @@
               h()(s()(o), '_renderWoeLocation', function (e) {
                 var t = o.props.woeTrendsLocationSettings,
                   n = !!e.woeid && e.woeid === (t && t[0] && t[0].woeid)
-                return E.a.createElement(H, {
+                return E.a.createElement(K, {
                   country: I(e) ? void 0 : e.country,
                   isSelected: n,
                   key: e.woeid,
@@ -6563,7 +6563,7 @@
                     t.places.some(function (t) {
                       return t.place_id === e.place_id
                     })
-                return E.a.createElement(H, {
+                return E.a.createElement(K, {
                   country: void 0,
                   isSelected: n,
                   key: e.place_id,
@@ -7018,8 +7018,8 @@
         N = n('7FtF'),
         D = n('MWbm'),
         U = n('t62R'),
-        H = n('p+r5'),
-        K = n('0yYu'),
+        K = n('p+r5'),
+        H = n('0yYu'),
         j = n('6vad'),
         V = n('e0ey'),
         B = n('oFxb'),
@@ -7082,7 +7082,7 @@
                 return y.a.createElement(
                   D.a,
                   null,
-                  y.a.createElement(H.a, {
+                  y.a.createElement(K.a, {
                     defaultValue: t ? (null == n ? void 0 : n.keyword) : '',
                     editable: !t,
                     errorText: c,
@@ -7102,7 +7102,7 @@
                 return y.a.createElement(
                   D.a,
                   null,
-                  y.a.createElement(K.a, null),
+                  y.a.createElement(H.a, null),
                   y.a.createElement(j.b, { text: Q }),
                   y.a.createElement(V.a, {
                     checked: a.state.mute_home_timeline,
@@ -7118,7 +7118,7 @@
                     options: Z,
                     value: a.state.mute_notifications_option,
                   }),
-                  y.a.createElement(K.a, null),
+                  y.a.createElement(H.a, null),
                   y.a.createElement(j.b, { text: e ? a._renderEditTimeDurationLabel() : ee }),
                   y.a.createElement(G.a, {
                     name: 'time_duration',
@@ -7433,13 +7433,13 @@
         P = '/settings/blocked/imported',
         R = { page: 'settings', section: 'blocked_accounts' },
         M = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(27), n.e(238)]).then(n.bind(null, 'XFGu'))
+          return Promise.all([n.e(0), n.e(12), n.e(26), n.e(238)]).then(n.bind(null, 'XFGu'))
         }),
         x = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(27), n.e(238)]).then(n.bind(null, 'tJyY'))
+          return Promise.all([n.e(0), n.e(12), n.e(26), n.e(238)]).then(n.bind(null, 'tJyY'))
         }),
         N = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(27), n.e(238)]).then(n.bind(null, 'aaHS'))
+          return Promise.all([n.e(0), n.e(12), n.e(26), n.e(238)]).then(n.bind(null, 'aaHS'))
         }),
         D = (function (e) {
           u()(n, e)
@@ -7568,8 +7568,8 @@
         N = n('fs1G'),
         D = n('7JQg'),
         U = n('7FtF'),
-        H = n('iCwC'),
-        K = n('MWbm'),
+        K = n('iCwC'),
+        H = n('MWbm'),
         j = n('G8HL'),
         V = n('t62R'),
         B = n('e0ey'),
@@ -7621,14 +7621,14 @@
                   c = i.showDisableEUConfirmation,
                   s = i.showSwitchAllConfirmation
                 return g.a.createElement(
-                  K.a,
+                  H.a,
                   null,
                   g.a.createElement(
-                    K.a,
+                    H.a,
                     null,
                     g.a.createElement(
                       V.b,
-                      { color: 'gray700', size: 'subtext2', style: [H.a.infoText, H.a.bottomBorder] },
+                      { color: 'gray700', size: 'subtext2', style: [K.a.infoText, K.a.bottomBorder] },
                       o._isLoggedIn ? Q : J,
                     ),
                   ),
@@ -8025,24 +8025,24 @@
         N = n('0yYu'),
         D = n('t62R'),
         U = n('rHpw'),
-        H = n('3XMw'),
-        K = n.n(H),
+        K = n('3XMw'),
+        H = n.n(K),
         j = n('U+bB'),
         V = n('MWbm'),
-        B = K.a.i23e2807,
-        G = K.a.dd823129,
-        W = K.a.ae1bbb26,
-        Y = K.a.ae72d4c4,
-        q = K.a.i859a9d3,
-        z = K.a.e5e8a899,
-        X = K.a.hb12114e,
-        Q = K.a.f810f279,
-        J = K.a.ge06310e,
-        Z = K.a.dd1b86f9,
-        $ = K.a.ee4b16f8,
-        ee = K.a.gf673efb,
-        te = K.a.e25e40f0,
-        ne = K.a.d1baa458,
+        B = H.a.i23e2807,
+        G = H.a.dd823129,
+        W = H.a.ae1bbb26,
+        Y = H.a.ae72d4c4,
+        q = H.a.i859a9d3,
+        z = H.a.e5e8a899,
+        X = H.a.hb12114e,
+        Q = H.a.f810f279,
+        J = H.a.ge06310e,
+        Z = H.a.dd1b86f9,
+        $ = H.a.ee4b16f8,
+        ee = H.a.gf673efb,
+        te = H.a.e25e40f0,
+        ne = H.a.d1baa458,
         ae = (function (e) {
           f()(n, e)
           var t = h()(n)
@@ -8168,7 +8168,7 @@
                           F.a,
                           null,
                           g.a.createElement(
-                            K.a.I18NFormatMessage,
+                            H.a.I18NFormatMessage,
                             { $i18n: 'i34eeb36', infoText: n > 1 ? ee({ num: n - 1 }) : te },
                             g.a.createElement(
                               D.b,
@@ -8176,7 +8176,7 @@
                                 link: 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
                                 withInteractiveStyling: !1,
                               },
-                              K.a.j3223a5b({ learnMoreLabel: q }),
+                              H.a.j3223a5b({ learnMoreLabel: q }),
                             ),
                           ),
                         ),
@@ -8311,8 +8311,8 @@
         N = n.n(x),
         D = N.a.i2209530,
         U = N.a.ebeeac1a,
-        H = N.a.dc013356,
-        K = N.a.ea28c7ce,
+        K = N.a.dc013356,
+        H = N.a.ea28c7ce,
         j = N.a.f3f66251,
         V = N.a.i5107de3,
         B = N.a.d19fd429,
@@ -8344,7 +8344,7 @@
                     ? g.a.createElement(I.a, {
                         defaultValue: l,
                         editable: !1,
-                        label: H,
+                        label: K,
                         name: 'current_email',
                         type: 'email',
                       })
@@ -8422,7 +8422,7 @@
                       A.a,
                       null,
                       g.a.createElement(T.a, {
-                        accessibilityLabel: K,
+                        accessibilityLabel: H,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetchDevices,
                         render: this._render,
@@ -8664,8 +8664,8 @@
         N = n('0yYu'),
         D = n('6vad'),
         U = n('3JAx'),
-        H = n('e0ey'),
-        K = M.a.b40d0145,
+        K = n('e0ey'),
+        H = M.a.b40d0145,
         j = M.a.b68050dc,
         V = (function (e) {
           f()(n, e)
@@ -8742,9 +8742,9 @@
                                   )
                                 case 'tweet_control':
                                   var i = n[t.id] && 'on' === n[t.id]
-                                  return b.a.createElement(H.a, {
+                                  return b.a.createElement(K.a, {
                                     checked: i,
-                                    helpText: K,
+                                    helpText: H,
                                     key: t.id,
                                     label: t.name,
                                     learnMoreLabel: j,
@@ -8754,7 +8754,7 @@
                                   })
                                 case 'on_off':
                                   var c = n[t.id] && 'on' === n[t.id]
-                                  return b.a.createElement(H.a, {
+                                  return b.a.createElement(K.a, {
                                     checked: c,
                                     key: t.id,
                                     label: t.name,
@@ -8898,7 +8898,7 @@
                     r = e.pushStatus,
                     o =
                       !oe() && r.supported
-                        ? b.a.createElement(H.a, {
+                        ? b.a.createElement(K.a, {
                             checked: r.subscribed,
                             helpText: X + (n ? ' '.concat(Q) : ''),
                             key: 'switchAll',
@@ -8926,122 +8926,124 @@
       'use strict'
       n.r(t),
         n.d(t, 'disableLoginVerificationLabel', function () {
-          return K
+          return j
         }),
         n.d(t, 'disableLabel', function () {
-          return V
-        }),
-        n.d(t, 'oldDisableMethodLabel', function () {
           return B
         }),
+        n.d(t, 'oldDisableMethodLabel', function () {
+          return G
+        }),
         n.d(t, 'LoginVerificationScreen', function () {
-          return ke
+          return Oe
         })
       var a,
         r,
-        o = n('VrFO'),
-        i = n.n(o),
-        c = n('Y9Ll'),
-        s = n.n(c),
-        l = n('1Pcy'),
-        u = n.n(l),
-        d = n('5Yy7'),
-        f = n.n(d),
-        p = n('2VqO'),
-        h = n.n(p),
-        m = n('KEM+'),
-        E = n.n(m),
-        _ = (n('yH/f'), n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('z84I'), n('ERkP')),
-        g = n.n(_),
-        b = n('k49u'),
-        y = n('wvRX'),
-        S = n('rxPX'),
-        v = n('0KEI'),
-        w = Object(S.a)()
+        o,
+        i = n('VrFO'),
+        c = n.n(i),
+        s = n('Y9Ll'),
+        l = n.n(s),
+        u = n('1Pcy'),
+        d = n.n(u),
+        f = n('5Yy7'),
+        p = n.n(f),
+        h = n('2VqO'),
+        m = n.n(h),
+        E = n('KEM+'),
+        _ = n.n(E),
+        g = (n('yH/f'), n('0zG9'), n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('z84I'), n('ERkP')),
+        b = n.n(g),
+        y = n('k49u'),
+        S = n('wvRX'),
+        v = n('rxPX'),
+        w = n('0KEI'),
+        C = Object(v.a)()
           .propsFromState(function () {
-            return { fetchStatus: y.f, loginVerificationSettings: y.g }
+            return { fetchStatus: S.f, loginVerificationSettings: S.g }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_LOGIN_VERIFICATION_SCREEN',
               ),
-              deleteSecurityKey: y.a,
-              disableLoginVerification: y.b,
-              disableLoginVerificationMethod: y.c,
-              enrollIn2FA: y.d,
-              fetchLoginVerificationSettings: y.e,
+              deleteSecurityKey: S.a,
+              disableLoginVerification: S.b,
+              disableLoginVerificationMethod: S.c,
+              enrollIn2FA: S.d,
+              fetchLoginVerificationSettings: S.e,
             }
           })
           .withAnalytics({ page: 'settings', section: 'loginVerification' }),
-        C = n('v//M'),
-        T = n('3XMw'),
-        A = n.n(T),
-        k = n('N9bX'),
-        L = n('yoO3'),
-        O = n('7FtF'),
-        I = n('eb3s'),
-        F = n('6vad'),
-        P = n('e0ey'),
-        R = n('jtO7'),
-        M = n('csss'),
-        x = n('0yYu'),
-        N = n('v6aA'),
-        D = A.a.bc262c2d,
-        U = A.a.hc1a91da,
-        H = A.a.gee4dc74,
-        K = A.a.b39c7b14,
-        j = A.a.a923fce6,
-        V = A.a.ff781e0a,
-        B = A.a.c557ac30,
-        G = A.a.d1334649,
-        W = A.a.ee3a7bf9,
-        Y = A.a.aa9139cc,
-        q = A.a.i0d4f09e,
-        z = A.a.a219e217,
-        X = A.a.e0d79de8,
-        Q = A.a.ja6bbfa0,
-        J = A.a.dd703318,
-        Z = A.a.i859a9d3,
-        $ = A.a.c2570921,
-        ee = A.a.f3820211,
-        te = A.a.ab61b41a,
-        ne = A.a.h4787492,
-        ae = A.a.h6d0d89c,
-        re = A.a.f57be1cc,
-        oe = A.a.e2b81a1f,
-        ie = A.a.cd195528,
-        ce = A.a.b1686800,
-        se = A.a.a1860ee7,
-        le = A.a.j45a2856,
-        ue = A.a.d8612d9c,
-        de = A.a.e13d4467,
-        fe = A.a.j24c37b2,
-        pe = A.a.c1d96d6a,
-        he = A.a.gf91694d,
-        me = A.a.a219e217,
-        Ee = A.a.j265ddb6,
-        _e = A.a.a136ecac,
-        ge = A.a.fc2a5c92,
-        be = A.a.d7bfde1a,
-        ye = 'two_factor',
-        Se = 'Sms',
-        ve = 'Totp',
-        we = 'U2fSecurityKey',
-        Ce =
-          ((a = {}),
-          E()(a, ye, 'two_factor'),
-          E()(a, Se, 'two_factor_auth_sms'),
-          E()(a, ve, 'two_factor_auth_totp'),
-          E()(a, we, 'two_factor_auth_u2f_security_key'),
-          a),
+        T = n('v//M'),
+        A = n('3XMw'),
+        k = n.n(A),
+        L = n('N9bX'),
+        O = n('yoO3'),
+        I = n('7FtF'),
+        F = n('eb3s'),
+        P = n('6vad'),
+        R = n('e0ey'),
+        M = n('jtO7'),
+        x = n('csss'),
+        N = n('0yYu'),
+        D = n('v6aA'),
+        U = k.a.bc262c2d,
+        K = k.a.hc1a91da,
+        H = k.a.gee4dc74,
+        j = k.a.b39c7b14,
+        V = k.a.a923fce6,
+        B = k.a.ff781e0a,
+        G = k.a.c557ac30,
+        W = k.a.d1334649,
+        Y = k.a.ee3a7bf9,
+        q = k.a.aa9139cc,
+        z = k.a.i0d4f09e,
+        X = k.a.a219e217,
+        Q = k.a.e0d79de8,
+        J = k.a.ja6bbfa0,
+        Z = k.a.dd703318,
+        $ = k.a.i859a9d3,
+        ee = k.a.c2570921,
+        te = k.a.f3820211,
+        ne = k.a.ab61b41a,
+        ae = k.a.h4787492,
+        re = k.a.h6d0d89c,
+        oe = k.a.f57be1cc,
+        ie = k.a.e2b81a1f,
+        ce = k.a.cd195528,
+        se = k.a.b1686800,
+        le = k.a.a1860ee7,
+        ue = k.a.j45a2856,
+        de = k.a.d8612d9c,
+        fe = k.a.e13d4467,
+        pe = k.a.j24c37b2,
+        he = k.a.c1d96d6a,
+        me = k.a.gf91694d,
+        Ee = k.a.a219e217,
+        _e = k.a.j265ddb6,
+        ge = k.a.a136ecac,
+        be = k.a.fc2a5c92,
+        ye = k.a.d7bfde1a,
+        Se = 'two_factor',
+        ve = 'Sms',
+        we = 'Totp',
+        Ce = 'U2fSecurityKey',
         Te =
+          ((a = {}),
+          _()(a, Se, 'two_factor'),
+          _()(a, ve, 'two_factor_auth_sms'),
+          _()(a, we, 'two_factor_auth_totp'),
+          _()(a, Ce, 'two_factor_auth_u2f_security_key'),
+          a),
+        Ae =
           ((r = {}),
-          E()(r, Se, '/i/flow/two-factor-sms-enrollment'),
-          E()(r, ve, '/i/flow/two-factor-auth-app-enrollment'),
-          E()(r, we, '/i/flow/two-factor-security-key-enrollment'),
+          _()(r, ve, '/i/flow/two-factor-sms-enrollment'),
+          _()(r, we, '/i/flow/two-factor-auth-app-enrollment'),
+          _()(r, Ce, '/i/flow/two-factor-security-key-enrollment'),
           r),
-        Ae = Object.freeze({
+        ke = ((o = {}), _()(o, ve, 'sms'), _()(o, we, 'authenticationApp'), _()(o, Ce, 'securityKey'), o),
+        Le = Object.freeze({
           NONE: 'NONE',
           VERIFY_EMAIL: 'verify_email',
           METHOD: 'method',
@@ -9051,144 +9053,151 @@
           STANDALONE_SECURITY_KEY: 'standalone_security_key',
           SUSPENDED: 'suspended',
         }),
-        ke = (function (e) {
-          f()(n, e)
-          var t = h()(n)
+        Oe = (function (e) {
+          p()(n, e)
+          var t = m()(n)
           function n(e, a) {
             var r
             return (
-              i()(this, n),
+              c()(this, n),
               (r = t.call(this, e, a)),
-              E()(u()(r), '_initialPath', window.location.pathname),
-              E()(u()(r), '_previousPath', r._initialPath),
-              E()(u()(r), '_render', function () {
+              _()(d()(r), '_initialPath', window.location.pathname),
+              _()(d()(r), '_previousPath', r._initialPath),
+              _()(d()(r), '_render', function () {
                 var e = r.props.loginVerificationSettings.isOldPushUser
-                return g.a.createElement(
-                  g.a.Fragment,
+                return b.a.createElement(
+                  b.a.Fragment,
                   null,
                   e ? r._renderLegacyPush2FASettings() : r._render2FASettings(),
-                  r.state.confirmationType !== Ae.NONE ? r._renderConfirmationSheet() : null,
+                  r.state.confirmationType !== Le.NONE ? r._renderConfirmationSheet() : null,
                 )
               }),
-              E()(u()(r), '_renderConfirmationSheet', function () {
+              _()(d()(r), '_renderConfirmationSheet', function () {
                 switch (r.state.confirmationType) {
-                  case Ae.ROOT_SETTING:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: W,
-                      headline: V,
+                  case Le.ROOT_SETTING:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: Y,
+                      headline: B,
                       onCancel: r._handleCloseConfirmation,
                       onConfirm: r._handleConfirmDisableLoginVerification,
-                      text: j,
+                      text: V,
                     })
-                  case Ae.METHOD:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: W,
-                      headline: V,
+                  case Le.METHOD:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: Y,
+                      headline: B,
                       onCancel: r._handleCloseConfirmation,
                       onConfirm: r._handleConfirmDisableMethod,
-                      text: G,
+                      text: W,
                     })
-                  case Ae.VERIFY_EMAIL:
-                    return g.a.createElement(I.a, {
-                      cancelButtonLabel: Z,
+                  case Le.VERIFY_EMAIL:
+                    return b.a.createElement(F.a, {
+                      cancelButtonLabel: $,
                       cancelButtonLink: 'https://help.twitter.com/managing-your-account/cant-confirm-my-email-address',
-                      confirmButtonLabel: me,
-                      headline: Ee,
+                      confirmButtonLabel: Ee,
+                      headline: _e,
                       onCancel: r._handleCloseConfirmation,
                       onConfirm: r._handleCloseConfirmation,
-                      text: _e,
+                      text: ge,
                     })
-                  case Ae.ENABLE_LOGIN_VERIFICATION:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: fe,
-                      headline: ue,
+                  case Le.ENABLE_LOGIN_VERIFICATION:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: pe,
+                      headline: de,
                       onConfirm: r._handleCloseConfirmation,
-                      text: de,
+                      text: fe,
                       withCancelButton: !1,
                     })
-                  case Ae.MAX_SECURITY_KEY_LIMIT_REACHED:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: fe,
-                      headline: pe,
+                  case Le.MAX_SECURITY_KEY_LIMIT_REACHED:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: pe,
+                      headline: he,
                       onConfirm: r._handleCloseConfirmation,
-                      text: he,
+                      text: me,
                       withCancelButton: !1,
                     })
-                  case Ae.STANDALONE_SECURITY_KEY:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: z,
+                  case Le.STANDALONE_SECURITY_KEY:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: X,
                       onConfirm: r._handleCloseConfirmation,
-                      text: X,
+                      text: Q,
                       withCancelButton: !1,
                     })
-                  case Ae.SUSPENDED:
-                    return g.a.createElement(I.a, {
-                      confirmButtonLabel: fe,
-                      headline: ge,
+                  case Le.SUSPENDED:
+                    return b.a.createElement(F.a, {
+                      confirmButtonLabel: pe,
+                      headline: be,
                       learnMoreLink: 'https://help.twitter.com/managing-your-account/suspended-twitter-accounts',
-                      learnMoreText: Z,
+                      learnMoreText: $,
                       onConfirm: r._handleCloseConfirmation,
-                      text: be,
+                      text: ye,
                       withCancelButton: !1,
                     })
                   default:
                     return null
                 }
               }),
-              E()(u()(r), '_handleRetry', function () {
+              _()(d()(r), '_handleRetry', function () {
                 r.props.fetchLoginVerificationSettings()
               }),
-              E()(u()(r), '_handleTwoFactorEnrollmentChange', function (e, t) {
+              _()(d()(r), '_handleTwoFactorEnrollmentChange', function (e, t) {
                 if (t) {
                   var n = r.props,
                     a = n.createLocalApiErrorHandler
-                  ;(0, n.enrollIn2FA)({ flow: ye }).catch(a(r._enrollmentErrorHandlingMap))
+                  ;(0, n.enrollIn2FA)({ flow: Se }).catch(a(r._enrollmentErrorHandlingMap))
                 } else r._showDisableLoginVerificationConfirmation()
               }),
-              E()(u()(r), '_handleTwoFactorMethodsChange', function (e, t) {
+              _()(d()(r), '_handleTwoFactorMethodsChange', function (e, t) {
                 var n = r.props.createLocalApiErrorHandler
                 t
                   ? r._isOcf2faEnrollmentEnabled
-                    ? r.props.history.push({ pathname: Te[e] })
-                    : (0, r.props.enrollIn2FA)({ flow: Ce[e] }).catch(n(r._enrollmentErrorHandlingMap))
+                    ? r.props.history.push({ pathname: Ae[e] })
+                    : (0, r.props.enrollIn2FA)({ flow: Te[e] }).catch(n(r._enrollmentErrorHandlingMap))
+                  : r._isOcf2faUnenrollmentEnabled
+                  ? r.props.history.push({
+                      pathname: '/i/flow/two-factor-unenrollment',
+                      query: {
+                        input_flow_data: JSON.stringify({ requested_variant: JSON.stringify({ method: ke[e] }) }),
+                      },
+                    })
                   : r._showDisableMethodConfirmation(e)
               }),
-              E()(u()(r), '_handleAddSecurityKey', function () {
+              _()(d()(r), '_handleAddSecurityKey', function () {
                 var e = r.props.loginVerificationSettings.methods
-                e[we] && e[we].length >= k.a
-                  ? r.setState({ confirmationType: Ae.MAX_SECURITY_KEY_LIMIT_REACHED })
-                  : r._handleTwoFactorMethodsChange(we, !0)
+                e[Ce] && e[Ce].length >= L.a
+                  ? r.setState({ confirmationType: Le.MAX_SECURITY_KEY_LIMIT_REACHED })
+                  : r._handleTwoFactorMethodsChange(Ce, !0)
               }),
-              E()(u()(r), '_showDisableLoginVerificationConfirmation', function () {
-                r.setState({ confirmationType: Ae.ROOT_SETTING })
+              _()(d()(r), '_showDisableLoginVerificationConfirmation', function () {
+                r.setState({ confirmationType: Le.ROOT_SETTING })
               }),
-              E()(u()(r), '_handleConfirmDisableLoginVerification', function () {
+              _()(d()(r), '_handleConfirmDisableLoginVerification', function () {
                 var e = r.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.disableLoginVerification
                 r._handleCloseConfirmation(), n().catch(t())
               }),
-              E()(u()(r), '_showStandaloneSecurityKeyNotification', function () {
-                r.setState({ confirmationType: Ae.STANDALONE_SECURITY_KEY })
+              _()(d()(r), '_showStandaloneSecurityKeyNotification', function () {
+                r.setState({ confirmationType: Le.STANDALONE_SECURITY_KEY })
               }),
-              E()(u()(r), '_showDisableMethodConfirmation', function (e) {
-                ;(e !== Se && e !== ve && e !== we) || r.setState({ confirmationType: Ae.METHOD, method: e })
+              _()(d()(r), '_showDisableMethodConfirmation', function (e) {
+                ;(e !== ve && e !== we && e !== Ce) || r.setState({ confirmationType: Le.METHOD, method: e })
               }),
-              E()(u()(r), '_handleConfirmDisableMethod', function () {
+              _()(d()(r), '_handleConfirmDisableMethod', function () {
                 var e = r.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.deleteSecurityKey,
                   a = e.disableLoginVerificationMethod,
                   o = e.loginVerificationSettings.methods,
                   i = r.state.method
-                if ((r._handleCloseConfirmation(), i === we && Array.isArray(o[we]) && o[we].length))
+                if ((r._handleCloseConfirmation(), i === Ce && Array.isArray(o[Ce]) && o[Ce].length))
                   Promise.all(
-                    o[we].map(function (e) {
+                    o[Ce].map(function (e) {
                       return n({ securityKeyId: e.id })
                     }),
                   ).catch(t(r._disableMethodErrorHandlingMap))
                 else if (i) {
-                  var c = i !== we && !(Se in o && ve in o) && Array.isArray(o[we]) && 1 === o[we].length
+                  var c = i !== Ce && !(ve in o && we in o) && Array.isArray(o[Ce]) && 1 === o[Ce].length
                   a({ method: i })
                     .then(function () {
                       r._isStandaloneSecurityKeyEnabled && c && r._showStandaloneSecurityKeyNotification()
@@ -9196,28 +9205,28 @@
                     .catch(t(r._disableMethodErrorHandlingMap))
                 }
               }),
-              E()(u()(r), '_showVerifyEmailConfirmation', function () {
-                r.setState({ confirmationType: Ae.VERIFY_EMAIL })
+              _()(d()(r), '_showVerifyEmailConfirmation', function () {
+                r.setState({ confirmationType: Le.VERIFY_EMAIL })
               }),
-              E()(u()(r), '_showEnableLoginVerificationConfirmation', function () {
-                r.setState({ confirmationType: Ae.ENABLE_LOGIN_VERIFICATION })
+              _()(d()(r), '_showEnableLoginVerificationConfirmation', function () {
+                r.setState({ confirmationType: Le.ENABLE_LOGIN_VERIFICATION })
               }),
-              E()(u()(r), '_showSuspendedConfirmation', function () {
-                r.setState({ confirmationType: Ae.SUSPENDED })
+              _()(d()(r), '_showSuspendedConfirmation', function () {
+                r.setState({ confirmationType: Le.SUSPENDED })
               }),
-              E()(u()(r), '_handleCloseConfirmation', function () {
-                r.setState({ confirmationType: Ae.NONE, method: void 0 })
+              _()(d()(r), '_handleCloseConfirmation', function () {
+                r.setState({ confirmationType: Le.NONE, method: void 0 })
               }),
-              E()(u()(r), '_isChecked', function (e) {
+              _()(d()(r), '_isChecked', function (e) {
                 var t = r.props.loginVerificationSettings.methods[e]
                 return Array.isArray(t) ? t.length > 0 : !!t
               }),
-              E()(u()(r), '_createEnrollmentErrorHandlingMap', function () {
+              _()(d()(r), '_createEnrollmentErrorHandlingMap', function () {
                 var e,
                   t = r.props.history
                 return (
                   (e = {}),
-                  E()(e, b.a.AccessDeniedByBouncer, {
+                  _()(e, y.a.AccessDeniedByBouncer, {
                     customAction: function (e) {
                       var n = e.bounce_location
                       n &&
@@ -9227,17 +9236,17 @@
                         })
                     },
                   }),
-                  E()(e, b.a.CannotEnableLoginVerificationUnconfirmedEmail, {
+                  _()(e, y.a.CannotEnableLoginVerificationUnconfirmedEmail, {
                     customAction: function () {
                       r._showVerifyEmailConfirmation()
                     },
                   }),
-                  E()(e, b.a.CannotEnrollLoginVerificationNotYetEnabled, {
+                  _()(e, y.a.CannotEnrollLoginVerificationNotYetEnabled, {
                     customAction: function () {
                       r._showEnableLoginVerificationConfirmation()
                     },
                   }),
-                  E()(e, b.a.CurrentUserSuspended, {
+                  _()(e, y.a.CurrentUserSuspended, {
                     customAction: function () {
                       r._showSuspendedConfirmation()
                     },
@@ -9245,8 +9254,8 @@
                   e
                 )
               }),
-              (r.state = { confirmationType: Ae.NONE, method: void 0 }),
-              (r._disableMethodErrorHandlingMap = E()({}, b.a.IneligibleFor2faAfterModification, {
+              (r.state = { confirmationType: Le.NONE, method: void 0 }),
+              (r._disableMethodErrorHandlingMap = _()({}, y.a.IneligibleFor2faAfterModification, {
                 customAction: function () {
                   r._showDisableLoginVerificationConfirmation()
                 },
@@ -9256,11 +9265,12 @@
                 'account_2fa_standalone_security_key_enabled',
               )),
               (r._isOcf2faEnrollmentEnabled = r.context.featureSwitches.isTrue('ocf_2fa_enrollment_enabled')),
+              (r._isOcf2faUnenrollmentEnabled = r.context.featureSwitches.isTrue('ocf_2fa_unenrollment_enabled')),
               r
             )
           }
           return (
-            s()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -9284,14 +9294,14 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return g.a.createElement(
-                    L.a,
+                  return b.a.createElement(
+                    O.a,
                     null,
-                    g.a.createElement(
-                      O.a,
-                      { location: n, title: J },
-                      g.a.createElement(C.a, {
-                        accessibilityLabel: Q,
+                    b.a.createElement(
+                      I.a,
+                      { location: n, title: Z },
+                      b.a.createElement(T.a, {
+                        accessibilityLabel: J,
                         fetchStatus: t,
                         onRequestRetry: this._handleRetry,
                         render: this._render,
@@ -9304,32 +9314,32 @@
                 key: '_render2FASettings',
                 value: function () {
                   var e = this.props.loginVerificationSettings.twoFactorAuthEnabled
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return b.a.createElement(
+                    b.a.Fragment,
                     null,
-                    g.a.createElement(F.b, { text: J }),
-                    g.a.createElement(P.a, {
-                      checked: e && this._isChecked(Se),
-                      helpText: ee,
-                      label: $,
-                      name: Se,
-                      onChange: this._handleTwoFactorMethodsChange,
-                    }),
-                    g.a.createElement(P.a, {
+                    b.a.createElement(P.b, { text: Z }),
+                    b.a.createElement(R.a, {
                       checked: e && this._isChecked(ve),
-                      helpText: ne,
-                      label: te,
+                      helpText: te,
+                      label: ee,
                       name: ve,
                       onChange: this._handleTwoFactorMethodsChange,
                     }),
-                    g.a.createElement(P.a, {
+                    b.a.createElement(R.a, {
                       checked: e && this._isChecked(we),
-                      helpText: this.context.featureSwitches.isTrue('responsive_web_new_copy_security_key_2fa_enabled')
-                        ? oe
-                        : re,
-                      label: ae,
-                      learnMoreLink: 'https://help.twitter.com/managing-your-account/two-factor-authentication',
+                      helpText: ae,
+                      label: ne,
                       name: we,
+                      onChange: this._handleTwoFactorMethodsChange,
+                    }),
+                    b.a.createElement(R.a, {
+                      checked: e && this._isChecked(Ce),
+                      helpText: this.context.featureSwitches.isTrue('responsive_web_new_copy_security_key_2fa_enabled')
+                        ? ie
+                        : oe,
+                      label: re,
+                      learnMoreLink: 'https://help.twitter.com/managing-your-account/two-factor-authentication',
+                      name: Ce,
                       onChange: this._handleTwoFactorMethodsChange,
                     }),
                     e ? this._renderU2fSecurityKeyLinks() : null,
@@ -9341,25 +9351,25 @@
                 key: '_renderU2fSecurityKeyLinks',
                 value: function () {
                   var e
-                  return null !== (e = this.props.loginVerificationSettings.methods[we]) && void 0 !== e && e.length
+                  return null !== (e = this.props.loginVerificationSettings.methods[Ce]) && void 0 !== e && e.length
                     ? this._isOcf2faEnrollmentEnabled
-                      ? g.a.createElement(R.a, {
+                      ? b.a.createElement(M.a, {
                           align: 'left',
                           color: 'primary',
-                          label: ce,
+                          label: se,
                           link: { pathname: '/settings/account/login_verification/security_keys' },
                         })
-                      : g.a.createElement(
-                          g.a.Fragment,
+                      : b.a.createElement(
+                          b.a.Fragment,
                           null,
-                          g.a.createElement(M.a, {
-                            label: ce,
+                          b.a.createElement(x.a, {
+                            label: se,
                             link: { pathname: '/settings/account/login_verification/security_keys' },
                           }),
-                          g.a.createElement(R.a, {
+                          b.a.createElement(M.a, {
                             align: 'left',
                             color: 'primary',
-                            label: ie,
+                            label: ce,
                             onPress: this._handleAddSecurityKey,
                           }),
                         )
@@ -9370,13 +9380,13 @@
                 key: '_renderLegacyPush2FASettings',
                 value: function () {
                   var e = this.props.loginVerificationSettings.twoFactorAuthEnabled
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return b.a.createElement(
+                    b.a.Fragment,
                     null,
-                    g.a.createElement(P.a, {
+                    b.a.createElement(R.a, {
                       checked: e,
-                      helpText: q,
-                      label: Y,
+                      helpText: z,
+                      label: q,
                       name: 'legacy_push',
                       onChange: this._handleTwoFactorEnrollmentChange,
                     }),
@@ -9387,19 +9397,19 @@
               {
                 key: '_renderAdditionalMethods',
                 value: function () {
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return b.a.createElement(
+                    b.a.Fragment,
                     null,
-                    g.a.createElement(x.a, null),
-                    g.a.createElement(F.b, { text: D }),
-                    g.a.createElement(M.a, {
+                    b.a.createElement(N.a, null),
+                    b.a.createElement(P.b, { text: U }),
+                    b.a.createElement(x.a, {
                       description: H,
-                      label: U,
+                      label: K,
                       link: '/settings/account/login_verification/backup_code',
                     }),
-                    g.a.createElement(M.a, {
-                      description: le,
-                      label: se,
+                    b.a.createElement(x.a, {
+                      description: ue,
+                      label: le,
                       link: '/settings/account/login_verification/temporary_password',
                     }),
                   )
@@ -9408,9 +9418,9 @@
             ]),
             n
           )
-        })(g.a.Component)
-      E()(ke, 'contextType', N.a)
-      t.default = w(ke)
+        })(b.a.Component)
+      _()(Oe, 'contextType', D.a)
+      t.default = C(Oe)
     },
     oXNP: function (e, t, n) {
       'use strict'
@@ -9466,8 +9476,8 @@
         N = C.a.gf91694d,
         D = C.a.b1686800,
         U = C.a.f7954a0c,
-        H = C.a.h69986c1,
-        K = C.a.i5896ba2,
+        K = C.a.h69986c1,
+        H = C.a.i5896ba2,
         j = C.a.a8ef2b64,
         V = (function (e) {
           u()(n, e)
@@ -9487,7 +9497,7 @@
                   ? E.a.createElement(
                       k.a,
                       { location: t, title: D },
-                      E.a.createElement(L.a, { description: H }),
+                      E.a.createElement(L.a, { description: K }),
                       o._renderU2fSecurityKeys(),
                       o.state.showMaxKeyLimitConfirmation ? o._renderMaxKeyLimitConfirmation() : null,
                     )
@@ -9581,7 +9591,7 @@
                         E.a.createElement(P.a, {
                           align: 'left',
                           color: 'primary',
-                          label: K,
+                          label: H,
                           onPress: this._handleAddSecurityKey,
                         }),
                       )
@@ -9807,8 +9817,8 @@
           }
         }),
         U = A(N),
-        H = n('7FtF'),
-        K = C.a.je506a60,
+        K = n('7FtF'),
+        H = C.a.je506a60,
         j = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -9855,8 +9865,8 @@
                     T.a,
                     null,
                     E.a.createElement(
-                      H.a,
-                      { location: t, onSubmit: this._handleSubmit, submitDisabled: !r, title: K },
+                      K.a,
+                      { location: t, onSubmit: this._handleSubmit, submitDisabled: !r, title: H },
                       E.a.createElement(U, { onScreenNameChanged: this._handleScreenNameChange }),
                     ),
                   )
@@ -9872,7 +9882,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ManageSecurityKeyScreen', function () {
-          return K
+          return H
         })
       var a = n('VrFO'),
         r = n.n(a),
@@ -9921,8 +9931,8 @@
         N = w.a.b464b726,
         D = w.a.a4101e1b,
         U = w.a.a9f397f3,
-        H = w.a.a8ef2b64,
-        K = (function (e) {
+        K = w.a.a8ef2b64,
+        H = (function (e) {
           u()(n, e)
           var t = f()(n)
           function n() {
@@ -9952,7 +9962,7 @@
                         A.a,
                         null,
                         E.a.createElement(k.a, {
-                          defaultValue: o.name || '('.concat(H, ')'),
+                          defaultValue: o.name || '('.concat(K, ')'),
                           editable: !1,
                           label: P,
                           name: 'current_security_key',
@@ -10041,7 +10051,7 @@
             settingDescriptionCellContainer: { paddingLeft: e.spaces.space12 },
           }
         }),
-        V = y(K)
+        V = y(H)
       t.default = V
     },
     tJyY: function (e, t, n) {
@@ -10118,8 +10128,8 @@
         N = k.a.dc013356,
         D = k.a.ce37ea43,
         U = k.a.ibaf239e,
-        H = k.a.j2636557,
-        K = { headline: k.a.e49b16d3, text: k.a.i931719e, confirmButtonLabel: k.a.d96cf7cd },
+        K = k.a.j2636557,
+        H = { headline: k.a.e49b16d3, text: k.a.i931719e, confirmButtonLabel: k.a.d96cf7cd },
         j = k.a.j841d1f4,
         V = k.a.e49b16d3,
         B = k.a.f0977f51,
@@ -10242,13 +10252,13 @@
                         ? 'Totp' in t || (this._isStandaloneSecurityKeyEnabled && 'U2fSecurityKey' in t)
                           ? q
                           : Y
-                        : K
+                        : H
                   return E.a.createElement(_.a, {
                     confirmationSheetConfirmButtonLabel: n.confirmButtonLabel,
                     confirmationSheetConfirmButtonType: 'destructiveFilled',
                     confirmationSheetHeadline: n.headline,
                     confirmationSheetText: n.text,
-                    label: H,
+                    label: K,
                     onConfirmationSheetConfirm: this._handleRemove,
                     withBottomBorder: !1,
                   })
@@ -10356,7 +10366,7 @@
           var t = b.e.selectLoggedInUser(e)
           return !(!t || !t.verified)
         },
-        H = Object(y.a)()
+        K = Object(y.a)()
           .propsFromState(function () {
             return { fetchStatus: R, isVerified: U, emailSettings: M }
           })
@@ -10370,7 +10380,7 @@
             }
           })
           .withAnalytics({ page: 'settings', section: 'email_notifications' }),
-        K = n('45mF'),
+        H = n('45mF'),
         j =
           (n('yH/f'), Object.freeze({ Daily: 'Daily', Weekly: 'Weekly', Periodically: 'Periodically', None: 'None' })),
         V = n('v//M'),
@@ -10519,7 +10529,7 @@
               E()(u()(e), '_handleFetch', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler
-                ;(0, t.fetchEmailSettingsIfNeeded)().catch(n(r()(r()({}, Object(K.a)()), {}, { showToast: !0 })))
+                ;(0, t.fetchEmailSettingsIfNeeded)().catch(n(r()(r()({}, Object(H.a)()), {}, { showToast: !0 })))
               }),
               E()(u()(e), '_handleSelectSettingChanged', function (t) {
                 return function (n, a) {
@@ -10527,7 +10537,7 @@
                     i = o.createLocalApiErrorHandler,
                     c = o.updateEmailSettings,
                     s = {}
-                  ;(s[t] = Z(a)), c(s).catch(i(r()(r()({}, Object(K.a)()), {}, { showToast: !0 })))
+                  ;(s[t] = Z(a)), c(s).catch(i(r()(r()({}, Object(H.a)()), {}, { showToast: !0 })))
                 }
               }),
               E()(u()(e), '_handleBooleanSettingChanged', function (t) {
@@ -10536,7 +10546,7 @@
                     i = o.createLocalApiErrorHandler,
                     c = o.updateEmailSettings,
                     s = {}
-                  ;(s[t] = !!a), c(s).catch(i(r()(r()({}, Object(K.a)()), {}, { showToast: !0 })))
+                  ;(s[t] = !!a), c(s).catch(i(r()(r()({}, Object(H.a)()), {}, { showToast: !0 })))
                 }
               }),
               E()(u()(e), '_handlePerformanceDigestSettingChanged', function (t) {
@@ -10545,7 +10555,7 @@
                     i = o.createLocalApiErrorHandler,
                     c = o.updateEmailSettings,
                     s = {}
-                  ;(s[t] = a ? 'Weekly' : 'None'), c(s).catch(i(r()(r()({}, Object(K.a)()), {}, { showToast: !0 })))
+                  ;(s[t] = a ? 'Weekly' : 'None'), c(s).catch(i(r()(r()({}, Object(H.a)()), {}, { showToast: !0 })))
                 }
               }),
               e
@@ -10584,7 +10594,7 @@
             n
           )
         })(g.a.Component)
-      t.default = H(ie)
+      t.default = K(ie)
     },
     u3ZE: function (e, t, n) {
       'use strict'
@@ -10664,8 +10674,8 @@
         N = C.a.a2197725,
         D = C.a.dd703318,
         U = C.a.eb89b0ef,
-        H = C.a.ead60eb7,
-        K = C.a.gfaf9a4a,
+        K = C.a.ead60eb7,
+        H = C.a.gfaf9a4a,
         j = C.a.he30e464,
         V = C.a.i859a9d3,
         B = { page: 'settings', section: 'security' },
@@ -10718,11 +10728,11 @@
                           g.a.createElement(I.a, { description: N }),
                           this._renderTwoFactorAuthentication(),
                           g.a.createElement(F.a, null),
-                          g.a.createElement(P.b, { text: H }),
+                          g.a.createElement(P.b, { text: K }),
                           g.a.createElement(I.a, { description: j }),
                           g.a.createElement(R.a, {
                             checked: !!n,
-                            label: K,
+                            label: H,
                             learnMoreLink: 'https://help.twitter.com/safety-and-security/account-security-tips',
                             name: 'protect_password_reset',
                             onChange: this._handleProtectPasswordResetChanged,
@@ -11348,8 +11358,8 @@
           })
           .withAnalytics({ page: 'settings', section: 'search' }),
         U = n('45mF'),
-        H = n('v//M'),
-        K = n('jHSc'),
+        K = n('v//M'),
+        H = n('jHSc'),
         j = n('3XMw'),
         V = n.n(j),
         B = n('e0ey'),
@@ -11441,9 +11451,9 @@
                     t = e.fetchStatus,
                     n = e.history
                   return g.a.createElement(
-                    K.b,
+                    H.b,
                     { history: n, title: q },
-                    g.a.createElement(H.a, {
+                    g.a.createElement(K.a, {
                       fetchStatus: t,
                       onRequestRetry: this._handleFetchSettings,
                       render: this._render,

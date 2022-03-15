@@ -82,15 +82,15 @@
         y = i.n(b),
         g = (i('2G9S'), i('jQ3i'), i('x4t0'), i('ERkP')),
         w = i.n(g),
-        E = i('/yvb'),
-        P = i('k/Ka'),
+        P = i('/yvb'),
+        E = i('k/Ka'),
         _ = i('3XMw'),
         I = i.n(_),
         M = i('rHpw'),
         R = ['accept', 'disabled', 'multiple', 'onChange', 'testID'],
         C = I.a.i5450beb,
         O = I.a.f7432494,
-        k = (function (e) {
+        V = (function (e) {
           v()(i, e)
           var t = m()(i)
           function i() {
@@ -131,19 +131,19 @@
                     w.a.Fragment,
                     null,
                     w.a.createElement(
-                      E.a,
+                      P.a,
                       n()({ hoverLabel: t ? { label: s ? O : C } : void 0 }, o, {
                         disabled: i,
                         onPress: this._handlePress,
                       }),
                     ),
-                    Object(P.a)('input', {
+                    Object(E.a)('input', {
                       accept: t,
                       disabled: i,
                       multiple: a,
                       onChange: this._handleChange,
                       ref: this._handleFileInputButtonRef,
-                      style: V.input,
+                      style: k.input,
                       tabIndex: -1,
                       testID: r,
                       type: 'file',
@@ -155,45 +155,13 @@
             i
           )
         })(w.a.Component)
-      y()(k, 'defaultProps', { disabled: !1, multiple: !1 })
-      var V = M.a.create(function (e) {
+      y()(V, 'defaultProps', { disabled: !1, multiple: !1 })
+      var k = M.a.create(function (e) {
         return {
           input: { width: '0.1px', height: '0.1px', opacity: 0, overflow: 'hidden', position: 'absolute', zIndex: -1 },
         }
       })
-      t.a = k
-    },
-    GCOQ: function (e, t, i) {
-      'use strict'
-      var a = i('yiKp'),
-        n = i.n(a),
-        r = i('ERkP'),
-        l = i.n(r),
-        o = i('Lsrn'),
-        s = i('k/Ka'),
-        d = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            n()(
-              n()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            l.a.createElement(
-              'g',
-              null,
-              l.a.createElement('path', {
-                d: 'M19.875 2.75v18.5c0 .55-.45 1-1 1s-1-.45-1-1v-7.14c-1.86-.78-3.77-.21-5.79.38-1.39.41-2.81.82-4.26.82-1.1 0-2.2-.23-3.33-.89-.23-.14-.37-.38-.37-.65V4c0-.27.14-.52.38-.65.23-.13.52-.13.75 0 2.05 1.21 4.17.59 6.41-.07 2.02-.59 4.09-1.2 6.21-.54.01-.55.45-.99 1-.99s1 .45 1 1z',
-              }),
-            ),
-          )
-        }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      t.a = V
     },
     LCtV: function (e, t, i) {
       'use strict'
@@ -218,8 +186,8 @@
         y = i.n(b),
         g = i('mN6z'),
         w = i('Qwev'),
-        E = i('rHpw'),
-        P = i('1auM'),
+        P = i('rHpw'),
+        E = i('1auM'),
         _ = i('ude7'),
         I = i('U+bB'),
         M = i('MWbm'),
@@ -257,7 +225,7 @@
                     n = this.state.imagePreviewUrl
                   i ||
                     n ||
-                    (a instanceof P.a &&
+                    (a instanceof E.a &&
                       a.isGif &&
                       Object(_.a)(a).then(function (t) {
                         e.setState({ imagePreviewUrl: t })
@@ -282,14 +250,14 @@
                     l = (this.state || {}).imagePreviewUrl,
                     o = a.mediaFile && a.mediaFile.isGif && !i && !l,
                     s = a.needsProcessing || o,
-                    d = [V.root, k[t], s && V.loadingBorder],
+                    d = [k.root, V[t], s && k.loadingBorder],
                     c = this._getImageSrc()
                   return m.a.createElement(
                     M.a,
                     { onClick: n, style: d },
                     s || !c
-                      ? m.a.createElement(w.a, { accessibilityLabel: R, style: V.activityIndicator })
-                      : m.a.createElement(I.a, { resizeMode: r, source: c, style: V.image }),
+                      ? m.a.createElement(w.a, { accessibilityLabel: R, style: k.activityIndicator })
+                      : m.a.createElement(I.a, { resizeMode: r, source: c, style: k.image }),
                   )
                 },
               },
@@ -298,7 +266,7 @@
           )
         })(m.a.Component)
       v()(O, 'defaultProps', { borderRadius: C.NONE, enableGif: !0, resizeMode: 'cover' })
-      var k = E.a.create(function (e) {
+      var V = P.a.create(function (e) {
           var t
           return (
             (t = {}),
@@ -308,7 +276,7 @@
             t
           )
         }),
-        V = E.a.create(function (e) {
+        k = P.a.create(function (e) {
           return {
             root: {
               borderRadius: e.borderRadii.xLarge,
@@ -346,13 +314,13 @@
         y = i('9HgX'),
         g = i('3XMw'),
         w = i.n(g),
-        E = i('LCtV'),
-        P = i('eyty'),
+        P = i('LCtV'),
+        E = i('eyty'),
         _ = (i('lTEL'), i('7x/C'), i('JtPf'), i('87if'), i('kYxP'), i('zb92')),
         I = i('RuTB'),
         M = Object(_.a)({
           loader: function () {
-            return Promise.all([i.e(0), i.e(7), i.e(181)])
+            return Promise.all([i.e(0), i.e(7), i.e(180)])
               .then(i.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -365,10 +333,10 @@
         R = i('yiKp'),
         C = i.n(R),
         O = i('m3Bd'),
-        k = i.n(O),
-        V = (i('z84I'), i('k/Ka')),
-        G = i('eXeu'),
-        F = i('iOGT'),
+        V = i.n(O),
+        k = (i('z84I'), i('k/Ka')),
+        F = i('eXeu'),
+        G = i('iOGT'),
         L = ['children', 'dataSaverMode', 'getVideoRef', 'style', 'variants'],
         x = (function (e) {
           c()(i, e)
@@ -396,14 +364,14 @@
                     i = e.dataSaverMode,
                     a = (e.getVideoRef, e.style),
                     n = e.variants,
-                    r = k()(e, L),
-                    l = Object(F.b)(n, i ? F.a.MEDIUM : F.a.HIGH) || [],
-                    o = Object(G.f)(
+                    r = V()(e, L),
+                    l = Object(G.b)(n, i ? G.a.MEDIUM : G.a.HIGH) || [],
+                    o = Object(F.f)(
                       l.map(function (e) {
                         return { src: e.url, type: e.content_type }
                       }),
                     )
-                  return Object(V.a)(
+                  return Object(k.a)(
                     'video',
                     C()(
                       C()({}, r),
@@ -430,12 +398,12 @@
       var S = i('62wY'),
         j = i('sjK1'),
         B = i('v6aA'),
-        z = i('cHvH'),
-        D = i('mXq/'),
+        D = i('cHvH'),
+        z = i('mXq/'),
         N = i('/yvb'),
-        H = i('a6qo'),
-        T = i('rHpw'),
-        U = i('hOZg'),
+        T = i('a6qo'),
+        U = i('rHpw'),
+        H = i('hOZg'),
         W = i('GCOQ'),
         K = i('tuke'),
         Y = i('U+bB'),
@@ -531,9 +499,9 @@
                     p = i.withEditSensitiveWarningButton,
                     g = this.state.playGif,
                     w = l.externalMediaDetails && l.externalMediaDetails.mediaType === y.a,
-                    E = w || (r && l.mediaFile && l.mediaFile.isGif),
-                    P = !(null === (e = l.mediaFile) || void 0 === e || !e.isVideo)
-                  return m.a.createElement(z.a, null, function (e) {
+                    P = w || (r && l.mediaFile && l.mediaFile.isGif),
+                    E = !(null === (e = l.mediaFile) || void 0 === e || !e.isVideo)
+                  return m.a.createElement(D.a, null, function (e) {
                     var i = e.windowWidth,
                       r = void 0 !== v ? v : !b.a.isTwoColumnLayout(i)
                     return m.a.createElement(
@@ -548,24 +516,24 @@
                       t._renderPreview(),
                       w &&
                         !g &&
-                        m.a.createElement(D.a, { accessibilityLabel: Z, onPress: t._handleGifClick, size: 'small' }),
+                        m.a.createElement(z.a, { accessibilityLabel: Z, onPress: t._handleGifClick, size: 'small' }),
                       f
                         ? m.a.createElement(N.a, {
                             accessibilityLabel: $,
                             hoverLabel: { label: ee },
-                            icon: m.a.createElement(U.a, null),
+                            icon: m.a.createElement(H.a, null),
                             onPress: d,
                             size: 'small',
                             style: ae.close,
                             type: 'onMediaDominantColorFilled',
                           })
                         : null,
-                      E ? m.a.createElement(J.c, { type: J.a }) : null,
-                      u && !P ? m.a.createElement(H.a, { align: 'left', altLabel: a }) : null,
+                      P ? m.a.createElement(J.c, { type: J.a }) : null,
+                      u && !E ? m.a.createElement(T.a, { align: 'left', altLabel: a }) : null,
                       h
                         ? m.a.createElement(
                             A.a,
-                            { style: [ae.editMedia, P ? ae.editVideo : ae.editImage] },
+                            { style: [ae.editMedia, E ? ae.editVideo : ae.editImage] },
                             p
                               ? m.a.createElement(N.a, {
                                   accessibilityLabel: X,
@@ -605,7 +573,7 @@
                   }
                   return null !== (e = t.mediaFile) && void 0 !== e && e.isVideo
                     ? this._renderVideoPreview(t.mediaFile.type, t.mediaFile.url, t.id, t.mediaFile)
-                    : m.a.createElement(A.a, { style: T.a.absoluteFill }, this._renderImagePreview())
+                    : m.a.createElement(A.a, { style: U.a.absoluteFill }, this._renderImagePreview())
                 },
               },
               {
@@ -614,7 +582,7 @@
                   var i = { uri: this.state.playGif ? e : t }
                   return m.a.createElement(
                     A.a,
-                    { onClick: this._handleGifClick, style: T.a.absoluteFill },
+                    { onClick: this._handleGifClick, style: U.a.absoluteFill },
                     m.a.createElement(Y.a, { resizeMode: 'cover', source: i, style: ae.video }),
                   )
                 },
@@ -628,7 +596,7 @@
                     a = e.imageResizeMode,
                     n = e.mediaItem,
                     r = e.onClick
-                  return m.a.createElement(E.b, {
+                  return m.a.createElement(P.b, {
                     borderRadius: t,
                     enableGif: i,
                     mediaItem: n,
@@ -647,7 +615,7 @@
                   var r = this.props.mediaItem,
                     l = null === (n = r.mediaMetadata) || void 0 === n ? void 0 : n.subtitles
                   if (this._configurableVideoPlayerEnabled && a instanceof j.c) {
-                    var o = Object(P.h)(a.fileHandle) ? [{ src: t, type: e }] : [],
+                    var o = Object(E.h)(a.fileHandle) ? [{ src: t, type: e }] : [],
                       s = ''.concat(i)
                     return m.a.createElement(M, {
                       mediaFile: a,
@@ -658,7 +626,7 @@
                     })
                   }
                   var d,
-                    c = Object(P.h)(a.fileHandle) ? [{ content_type: e, url: t }] : [],
+                    c = Object(E.h)(a.fileHandle) ? [{ content_type: e, url: t }] : [],
                     u =
                       (null == l || null === (d = l.upload) || void 0 === d ? void 0 : d.mediaFile) instanceof S.b
                         ? l.upload.mediaFile.vtt
@@ -702,7 +670,7 @@
           withEditButton: !1,
           withEditSensitiveWarningButton: !1,
         })
-      var ae = T.a.create(function (e) {
+      var ae = U.a.create(function (e) {
         return {
           close: { position: 'absolute', left: e.spaces.space4, top: e.spaces.space4 },
           cursor: { cursor: 'pointer' },

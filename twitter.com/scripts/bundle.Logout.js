@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [68],
+  [67],
   {
     okjw: function (e, t, n) {
       'use strict'

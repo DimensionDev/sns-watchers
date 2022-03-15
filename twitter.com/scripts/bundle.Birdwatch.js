@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [41, 20, 177],
+  [40, 18, 176],
   {
     '/ZwF': function (e, t, a) {
       'use strict'
@@ -4680,13 +4680,13 @@
           .propsFromState(function () {
             return {
               shouldShowDataPrivacyPrompt: function (e, t) {
-                return Object(ye.A)(e, ye.c)
+                return Object(ye.C)(e, ye.c)
               },
             }
           })
           .propsFromActions(function () {
             return {
-              addFlag: ye.w,
+              addFlag: ye.y,
               addToast: we.b,
               createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
               createRating: T.c,

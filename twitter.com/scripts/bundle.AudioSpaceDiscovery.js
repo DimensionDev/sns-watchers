@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [37],
+  [36],
   {
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -213,6 +213,17 @@
                 },
               },
               {
+                key: 'createClip',
+                value: function (e) {
+                  var t = this
+                  return this.login().then(function () {
+                    return t.post('createClip', e).catch(function (e) {
+                      Object(E.a)('[ProxseeApi] failed to create clip', { extra: { err: e } })
+                    })
+                  })
+                },
+              },
+              {
                 key: '_reportSpace',
                 value: function (e) {
                   var t = this
@@ -228,9 +239,9 @@
           )
         })(),
         P = 'X-Idempotence',
-        T = 'X-Periscope-User-Agent',
-        A = 'X-Attempt',
-        x = ((b = {}), l()(b, T, 'Twitter/m5'), l()(b, A, 1), b)
+        A = 'X-Periscope-User-Agent',
+        T = 'X-Attempt',
+        x = ((b = {}), l()(b, A, 'Twitter/m5'), l()(b, T, 1), b)
       function I() {
         var e,
           t = Date.now()
@@ -363,8 +374,8 @@
           }),
         O = n('3XMw'),
         P = n.n(O),
-        T = n('OrGc'),
-        A = n('QK5w'),
+        A = n('OrGc'),
+        T = n('QK5w'),
         x = n('aITJ'),
         I = n('MWbm'),
         j = n('TnY3'),
@@ -413,15 +424,15 @@
                   },
                   s =
                     ((t = {}),
-                    v()(t, T.e.search, c()),
-                    v()(t, T.e.goToUser, c('@')),
-                    v()(t, T.e.openKeyboardShortcuts, function () {
+                    v()(t, A.e.search, c()),
+                    v()(t, A.e.goToUser, c('@')),
+                    v()(t, A.e.openKeyboardShortcuts, function () {
                       return i.push('/i/keyboard_shortcuts')
                     }),
-                    v()(t, T.e.goExplore, function () {
+                    v()(t, A.e.goExplore, function () {
                       return i.push('/explore')
                     }),
-                    v()(t, T.e.goSettings, function () {
+                    v()(t, A.e.goSettings, function () {
                       return i.push('/settings')
                     }),
                     t),
@@ -429,13 +440,13 @@
                     var t
                     return (
                       (t = {}),
-                      v()(t, T.e.goProfile, function () {
+                      v()(t, A.e.goProfile, function () {
                         return i.push('/'.concat(e))
                       }),
-                      v()(t, T.e.goLikes, function () {
+                      v()(t, A.e.goLikes, function () {
                         return i.push('/'.concat(e, '/likes'))
                       }),
-                      v()(t, T.e.goLists, function () {
+                      v()(t, A.e.goLists, function () {
                         return i.push('/'.concat(e, '/lists'))
                       }),
                       t
@@ -447,7 +458,7 @@
                       ? r()(
                           r()({}, u(o)),
                           {},
-                          v()({}, T.e.goTopArticles, function () {
+                          v()({}, A.e.goTopArticles, function () {
                             return i.push('/i/articles')
                           }),
                         )
@@ -458,31 +469,31 @@
                     r()(r()({}, s), p),
                     {},
                     ((n = {}),
-                    v()(n, T.e.goHome, function () {
+                    v()(n, A.e.goHome, function () {
                       return i.push('/home')
                     }),
-                    v()(n, T.e.goDisplay, function () {
+                    v()(n, A.e.goDisplay, function () {
                       return i.push('/i/display')
                     }),
-                    v()(n, T.e.goNotifications, function () {
+                    v()(n, A.e.goNotifications, function () {
                       return i.push('/notifications')
                     }),
-                    v()(n, T.e.goMentions, function () {
+                    v()(n, A.e.goMentions, function () {
                       return i.push('/notifications/mentions')
                     }),
-                    v()(n, T.e.goMessages, function () {
+                    v()(n, A.e.goMessages, function () {
                       return i.push('/messages')
                     }),
-                    v()(n, T.e.newMessage, function () {
+                    v()(n, A.e.newMessage, function () {
                       return i.push('/messages/compose')
                     }),
-                    v()(n, T.e.newTweet, function () {
+                    v()(n, A.e.newTweet, function () {
                       return i.push('/compose/tweet')
                     }),
-                    v()(n, T.e.goMomentMaker, function () {
+                    v()(n, A.e.goMomentMaker, function () {
                       return i.push('/i/moment_maker')
                     }),
-                    v()(n, T.e.goBookmarks, function () {
+                    v()(n, A.e.goBookmarks, function () {
                       return i.push('/i/bookmarks')
                     }),
                     n),
@@ -500,7 +511,7 @@
                   t.preventDefault(), t.stopPropagation()
                   var n = e._backspaceDown,
                     a = !!Object(R.a)(n) && Date.now() - n < 500,
-                    r = Object(A.a)({}, { location: e.props.location })
+                    r = Object(T.a)({}, { location: e.props.location })
                   a && r ? e.props.history.goBack() : window.close()
                 }
               }),
@@ -598,14 +609,14 @@
           i,
         )
       }
-      function T(e) {
+      function A(e) {
         var t = e.shouldFetch,
           n = e.spaceId
         return t
           ? r.a.createElement(d.a, { audioSpaceId: n })
           : r.a.createElement(S.a, { propsForV2: v.a, shouldUseV2: !0 })
       }
-      function A(e) {
+      function T(e) {
         var t = e.items,
           n = e.name,
           a = e.searchQuery,
@@ -631,7 +642,7 @@
                 },
                 t.map(function (e, t) {
                   var n = t - 3 < c
-                  return r.a.createElement(T, { key: e, shouldFetch: n, spaceId: e })
+                  return r.a.createElement(A, { key: e, shouldFetch: n, spaceId: e })
                 }),
               )
             : null,
@@ -656,7 +667,7 @@
               t.sections.map(function (e) {
                 var t = e.items,
                   a = e.name
-                return r.a.createElement(A, { items: t, key: ''.concat(n).concat(a), name: a, searchQuery: n })
+                return r.a.createElement(T, { items: t, key: ''.concat(n).concat(a), name: a, searchQuery: n })
               }),
             )
           : r.a.createElement(E.a, { header: O.emptyStateTitle({ searchQuery: n }), message: O.emptyStateBody })

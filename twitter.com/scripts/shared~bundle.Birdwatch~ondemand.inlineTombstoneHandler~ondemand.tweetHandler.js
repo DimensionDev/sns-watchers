@@ -7,7 +7,7 @@
       var i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(189)]).then(n.bind(null, 'MzK7'))
+            return Promise.all([n.e(0), n.e(188)]).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = o

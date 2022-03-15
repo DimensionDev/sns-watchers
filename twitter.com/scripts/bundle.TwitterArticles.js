@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [109],
+  [108],
   {
     '0ULw': function (e, t, n) {
       'use strict'
@@ -325,9 +325,9 @@
         M = n('MWbm'),
         F = n('htQn'),
         R = n('Znyr'),
-        z = n('kY28'),
-        P = n('rHpw'),
-        H = n('v6aA'),
+        P = n('kY28'),
+        H = n('rHpw'),
+        z = n('v6aA'),
         D = n('6Rrp'),
         V = n('0ULw'),
         j = n('pu5c'),
@@ -453,20 +453,20 @@
             n
           )
         })(w.a.PureComponent)
-      g()(U, 'contextType', H.a),
+      g()(U, 'contextType', z.a),
         g()(U, 'defaultProps', {
-          replyContext: z.a.ReplyContextTypes.Isolated,
+          replyContext: P.a.ReplyContextTypes.Isolated,
           withActions: !0,
           showDragCount: 0,
           isPartOfDraggedSelection: !1,
           isSelected: !1,
         })
-      var G = P.a.create(function (e) {
+      var G = H.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground, flexDirection: 'row' },
             tweet: { flex: 1 },
             disabledTweetMask: o()(
-              o()({}, P.a.absoluteFillObject),
+              o()({}, H.a.absoluteFillObject),
               {},
               { backgroundColor: e.colors.navigationBackground, opacity: '50%' },
             ),
@@ -743,15 +743,15 @@
                     M = 'secondaryRoot' === f,
                     F = 'primaryDetail' === f,
                     R = (F && w) || (O && g),
-                    z = O || (F && t),
-                    P = O ? b.c : F ? b.a : void 0,
-                    H = v.a.createElement(
+                    P = O || (F && t),
+                    H = O ? b.c : F ? b.a : void 0,
+                    z = v.a.createElement(
                       _.a,
                       { style: S.appBarContainer },
                       v.a.createElement(E.a, {
                         backLocation: o,
                         fixed: !1,
-                        hideBackButton: z,
+                        hideBackButton: P,
                         history: s,
                         leftControl: u,
                         middleControl: d,
@@ -760,7 +760,7 @@
                         secondaryBar: y,
                         subtitle: R ? T : void 0,
                         title: x,
-                        titleDomId: P,
+                        titleDomId: H,
                         titleIconCell: I,
                         titleIconCellSize: k,
                       }),
@@ -784,7 +784,7 @@
                             withSearchBox: A,
                             withTweetButton: B,
                           })
-                  return v.a.createElement(v.a.Fragment, null, D, H)
+                  return v.a.createElement(v.a.Fragment, null, D, z)
                 },
               },
             ]),
@@ -902,15 +902,15 @@
         M = n('Fcw+'),
         F = n('QIgh'),
         R = n('8UdT'),
-        z = n('VrCx'),
-        P = n('oQhu'),
-        H = n('fTQJ'),
+        P = n('VrCx'),
+        H = n('oQhu'),
+        z = n('fTQJ'),
         D = n('7fPw'),
         V = n('MWbm'),
         j = n('t62R'),
         W = n('/yvb'),
         K = n('rHpw'),
-        U = Object(P.a)(function (e) {
+        U = Object(H.a)(function (e) {
           return Object(D.a)(e)
         }),
         G = K.a.create(function (e) {
@@ -960,7 +960,7 @@
                       O()(
                         O()({}, F.b[R.b.Tweet]),
                         {},
-                        { handlers: A()({}, z.a.Tweet, Object(M.default)({ onClick: t, selectedTweetIds: n })) },
+                        { handlers: A()({}, P.a.Tweet, Object(M.default)({ onClick: t, selectedTweetIds: n })) },
                       ),
                     ),
                   )
@@ -973,7 +973,7 @@
             ? o.a.createElement(
                 o.a.Fragment,
                 null,
-                o.a.createElement(H.a, { entryConfiguration: d, module: p, title: 'Liked' }),
+                o.a.createElement(z.a, { entryConfiguration: d, module: p, title: 'Liked' }),
                 o.a.createElement(
                   V.a,
                   { style: G.bottomBar },
@@ -994,8 +994,8 @@
         }),
         X = n('tn7R'),
         J = n('Uchl'),
-        q = n('k/OQ'),
-        Y = Object.freeze({ MEDIA: 'Media', GIFS: 'Gifs', TWEETS: 'Tweets' }),
+        Y = n('k/OQ'),
+        q = Object.freeze({ MEDIA: 'Media', GIFS: 'Gifs', TWEETS: 'Tweets' }),
         Q = K.a.create(function (e) {
           return {
             sheet: { minHeight: '50vh', maxHeight: '80vh' },
@@ -1006,7 +1006,7 @@
           var t = e.onAddTweets,
             n = e.onClose,
             r = e.twitterArticleId,
-            i = o.a.useState(Y.MEDIA),
+            i = o.a.useState(q.MEDIA),
             l = a()(i, 2),
             c = l[0],
             s = l[1],
@@ -1015,7 +1015,7 @@
                 return c === e
               }
             },
-            d = Object(X.a)(Y).map(function (e) {
+            d = Object(X.a)(q).map(function (e) {
               return {
                 key: e,
                 label: e,
@@ -1037,10 +1037,10 @@
             o.a.createElement(
               V.a,
               { style: Q.container },
-              o.a.createElement(q.a, { links: d }),
+              o.a.createElement(Y.a, { links: d }),
               (function () {
                 switch (c) {
-                  case Y.TWEETS:
+                  case q.TWEETS:
                     return o.a.createElement(N, { onAddTweets: t })
                   default:
                     return null
@@ -1094,7 +1094,7 @@
             d = function (e) {
               if ('atomic' === e.getType()) return { component: k, editable: !1 }
             },
-            p = Object(P.a)(function (e) {
+            p = Object(H.a)(function (e) {
               return function (t) {
                 e(t), n(t)
               }
@@ -1396,7 +1396,7 @@
     UwBx: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return ne
+        return se
       })
       var r = n('RhWx'),
         a = n.n(r),
@@ -1406,29 +1406,32 @@
         c = n.n(l),
         s = n('97Jx'),
         u = n.n(s),
-        d = n('VrFO'),
+        d = n('ddV6'),
         p = n.n(d),
-        h = n('Y9Ll'),
+        h = n('VrFO'),
         f = n.n(h),
-        m = n('1Pcy'),
+        m = n('Y9Ll'),
         y = n.n(m),
-        b = n('5Yy7'),
+        b = n('1Pcy'),
         g = n.n(b),
-        v = n('2VqO'),
+        v = n('5Yy7'),
         w = n.n(v),
-        E = n('KEM+'),
+        E = n('2VqO'),
         C = n.n(E),
-        T = (n('2G9S'), n('z84I'), n('uFXj'), n('ERkP')),
+        T = n('KEM+'),
         x = n.n(T),
-        I = n('mjJ+'),
-        k = n('t62R'),
-        S = n('/yvb'),
-        _ = n('FG+G'),
-        L = n('IG7M'),
-        A = n('tn7R'),
-        B = n('rHpw'),
-        O = n('MWbm'),
-        M = B.a.create(function (e) {
+        I = (n('2G9S'), n('KOtZ'), n('7x/C'), n('z84I'), n('uFXj'), n('ERkP')),
+        k = n.n(I),
+        S = n('mjJ+'),
+        _ = n('t62R'),
+        L = n('/yvb'),
+        A = n('VUbk'),
+        B = n.n(A),
+        O = n('FG+G'),
+        M = n('IG7M'),
+        F = n('rHpw'),
+        R = n('MWbm'),
+        P = F.a.create(function (e) {
           return {
             separator: {
               borderRightWidth: e.borderWidths.small,
@@ -1437,81 +1440,55 @@
             },
           }
         }),
-        F = function (e) {
+        H = function (e) {
           var t = e.style
-          return x.a.createElement(O.a, { style: [M.separator, t] })
+          return k.a.createElement(R.a, { style: [P.separator, t] })
         },
-        R = n('Lsrn'),
-        z = n('k/Ka'),
-        P = function () {
+        z = n('Lsrn'),
+        D = n('k/Ka'),
+        V = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
+          return Object(D.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
+                style: [z.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            x.a.createElement(
+            k.a.createElement(
               'g',
               null,
-              x.a.createElement('path', {
+              k.a.createElement('path', {
                 d: 'M17.481 12.934a3.862 3.862 0 01.856 2.6 4.422 4.422 0 01-.585 2.251 4.078 4.078 0 01-1.8 1.61 6.811 6.811 0 01-3.016.6H5.75V4.009h6.85a5.871 5.871 0 014 1.17 3.8 3.8 0 011.309 2.971 3.554 3.554 0 01-.731 2.218 3.733 3.733 0 01-2.078 1.317 3.812 3.812 0 012.381 1.249zM9.018 6.439v4.233h2.836a2.79 2.79 0 001.981-.585 2 2 0 00.607-1.509 2.049 2.049 0 00-.618-1.542 2.765 2.765 0 00-1.97-.6zm5.166 10.468a2.238 2.238 0 00.664-1.666 2.1 2.1 0 00-.653-1.632 2.785 2.785 0 00-1.936-.6H9.018v4.551h3.128a2.8 2.8 0 002.038-.653z',
                 fillRule: 'evenodd',
               }),
             ),
           )
         }
-      P.metadata = { width: 24, height: 24 }
-      var H = P,
-        D = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
-            'svg',
-            o()(
-              o()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            x.a.createElement(
-              'g',
-              null,
-              x.a.createElement('path', {
-                d: 'M19 4H9a.75.75 0 000 1.5h4.075l-3.71 13H5A.75.75 0 005 20h10a.75.75 0 000-1.5h-4.075l3.71-13H19A.75.75 0 0019 4z',
-                fillRule: 'evenodd',
-              }),
-            ),
-          )
-        }
-      D.metadata = { width: 24, height: 24 }
-      var V = D,
-        j = n('CwxE'),
+      V.metadata = { width: 24, height: 24 }
+      var j = V,
         W = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
+          return Object(D.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
+                style: [z.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            x.a.createElement(
+            k.a.createElement(
               'g',
               null,
-              x.a.createElement('path', {
-                d: 'M17.91 14.554a5.5 5.5 0 01.13 1.224c0 2.959-2.165 4.8-5.65 4.8-3.594 0-5.934-1.8-6.42-4.955a.75.75 0 111.482-.228c.5 3.205 3.306 3.683 4.938 3.683 1.55 0 4.15-.429 4.15-3.3a4 4 0 00-.092-.89.75.75 0 111.462-.334zM21 11h-8.173c-.236-.04-.474-.079-.716-.114-2.965-.447-4.121-1.375-4.121-3.315 0-1.9 1.462-3 4.01-3 2.353 0 3.755.988 4.17 2.937a.93.93 0 00.2.467.751.751 0 001.189-.911c.061.093.083.161.075.132C17.072 4.54 15.07 3.075 12 3.075c-4.063 0-5.51 2.322-5.51 4.5A4.047 4.047 0 008.046 11H3a.75.75 0 000 1.5h9.715a.758.758 0 00.106.009c.017 0 .033-.008.05-.009H21a.75.75 0 000-1.5z',
+              k.a.createElement('path', {
+                d: 'M19 4H9a.75.75 0 000 1.5h4.075l-3.71 13H5A.75.75 0 005 20h10a.75.75 0 000-1.5h-4.075l3.71-13H19A.75.75 0 0019 4z',
                 fillRule: 'evenodd',
               }),
             ),
@@ -1519,88 +1496,131 @@
         }
       W.metadata = { width: 24, height: 24 }
       var K = W,
-        U = function () {
+        U = n('CwxE'),
+        G = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
+          return Object(D.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
+                style: [z.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            x.a.createElement(
+            k.a.createElement(
               'g',
               null,
-              x.a.createElement('path', {
+              k.a.createElement('path', {
+                d: 'M17.91 14.554a5.5 5.5 0 01.13 1.224c0 2.959-2.165 4.8-5.65 4.8-3.594 0-5.934-1.8-6.42-4.955a.75.75 0 111.482-.228c.5 3.205 3.306 3.683 4.938 3.683 1.55 0 4.15-.429 4.15-3.3a4 4 0 00-.092-.89.75.75 0 111.462-.334zM21 11h-8.173c-.236-.04-.474-.079-.716-.114-2.965-.447-4.121-1.375-4.121-3.315 0-1.9 1.462-3 4.01-3 2.353 0 3.755.988 4.17 2.937a.93.93 0 00.2.467.751.751 0 001.189-.911c.061.093.083.161.075.132C17.072 4.54 15.07 3.075 12 3.075c-4.063 0-5.51 2.322-5.51 4.5A4.047 4.047 0 008.046 11H3a.75.75 0 000 1.5h9.715a.758.758 0 00.106.009c.017 0 .033-.008.05-.009H21a.75.75 0 000-1.5z',
+                fillRule: 'evenodd',
+              }),
+            ),
+          )
+        }
+      G.metadata = { width: 24, height: 24 }
+      var N = G,
+        X = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(D.a)(
+            'svg',
+            o()(
+              o()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [z.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            k.a.createElement(
+              'g',
+              null,
+              k.a.createElement('path', {
                 d: 'M21.75 16.75a.75.75 0 01-.75.75H9A.75.75 0 019 16h12a.75.75 0 01.75.75zM9 7.5h12A.75.75 0 0021 6H9a.75.75 0 000 1.5zM4.5 4.25A2.25 2.25 0 106.75 6.5 2.253 2.253 0 004.5 4.25zm0 10a2.25 2.25 0 102.25 2.25 2.253 2.253 0 00-2.25-2.25z',
                 fillRule: 'evenodd',
               }),
             ),
           )
         }
-      U.metadata = { width: 24, height: 24 }
-      var G = U,
-        N = function () {
+      X.metadata = { width: 24, height: 24 }
+      var J = X,
+        Y = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
+          return Object(D.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
+                style: [z.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            x.a.createElement(
+            k.a.createElement(
               'g',
               null,
-              x.a.createElement('path', {
+              k.a.createElement('path', {
                 d: 'M2.079 6.085a.75.75 0 01.336-1.006l2-1A.75.75 0 015.5 4.75v5a.75.75 0 01-1.5 0V5.964l-.915.457a.748.748 0 01-1.006-.336zM6 18.25H4.8l1.306-1.313a2.162 2.162 0 00-1.531-3.687 2.328 2.328 0 00-2.325 2.325v.368a.75.75 0 101.5 0v-.368a.826.826 0 01.825-.825.664.664 0 01.47.2.652.652 0 01.192.472.662.662 0 01-.192.462l-2.577 2.588A.75.75 0 003 19.75h3a.75.75 0 000-1.5zM21 16H9a.75.75 0 000 1.5h12a.75.75 0 000-1.5zm0-10H9a.75.75 0 000 1.5h12A.75.75 0 0021 6z',
                 fillRule: 'evenodd',
               }),
             ),
           )
         }
-      N.metadata = { width: 24, height: 24 }
-      var X = N,
-        J = B.a.create(function (e) {
+      Y.metadata = { width: 24, height: 24 }
+      var q = Y,
+        Q = F.a.create(function (e) {
           return { iconGray: { color: e.colors.gray700 } }
         }),
-        q = {
-          iconBold: x.a.createElement(H, { style: J.iconGray }),
-          iconItalic: x.a.createElement(V, { style: J.iconGray }),
-          iconCode: x.a.createElement(j.a, { style: J.iconGray }),
-          iconStrikethrough: x.a.createElement(K, { style: J.iconGray }),
-          iconBulletedList: x.a.createElement(G, { style: J.iconGray }),
-          iconNumberedList: x.a.createElement(X, { style: J.iconGray }),
+        Z = {
+          iconBold: k.a.createElement(j, { style: Q.iconGray }),
+          iconItalic: k.a.createElement(K, { style: Q.iconGray }),
+          iconCode: k.a.createElement(U.a, { style: Q.iconGray }),
+          iconStrikethrough: k.a.createElement(N, { style: Q.iconGray }),
+          iconBulletedList: k.a.createElement(J, { style: Q.iconGray }),
+          iconNumberedList: k.a.createElement(q, { style: Q.iconGray }),
         },
-        Y = { bold: 'BOLD', italic: 'ITALIC', code: 'CODE', strikethrough: 'STRIKETHROUGH' },
-        Q = { bulleted: 'unordered-list-item', numbered: 'ordered-list-item' },
-        Z = [
-          { label: 'Heading 1', size: 'headline1' },
-          { label: 'Heading 2', size: 'headline2' },
-          { label: 'Paragraph', size: 'body' },
+        $ = { bold: 'BOLD', italic: 'ITALIC', code: 'CODE', strikethrough: 'STRIKETHROUGH' },
+        ee = {
+          bulleted: 'unordered-list-item',
+          header1: 'header-one',
+          header2: 'header-two',
+          numbered: 'ordered-list-item',
+          paragraph: 'unstyled',
+        },
+        te = function (e, t) {
+          return function (n) {
+            return k.a.createElement(_.b, { size: e, weight: t }, n)
+          }
+        },
+        ne = [
+          { blockType: ee.header1, label: 'Heading 1', render: te('title1', 'heavy') },
+          { blockType: ee.header2, label: 'Heading 2', render: te('title3', 'heavy') },
+          { blockType: ee.paragraph, label: 'Paragraph', render: te('body') },
         ],
-        $ = n('zpdM'),
-        ee = n('6OUF'),
-        te = ['additionalToolbarButtonConfigs', 'inputStyle', 'richTextInputContext'],
-        ne = (function (e) {
-          g()(n, e)
-          var t = w()(n)
+        re = ne.reduce(function (e, t) {
+          var n = t.blockType
+          return o()(x()({}, n, { element: 'div', wrapper: t.render() }), e)
+        }, {}),
+        ae = n('zpdM'),
+        ie = n('6OUF'),
+        oe = n('sXY3'),
+        le = n('tn7R'),
+        ce = ['additionalToolbarButtonConfigs', 'inputStyle', 'richTextInputContext'],
+        se = (function (e) {
+          w()(n, e)
+          var t = C()(n)
           function n() {
             var e
-            p()(this, n)
+            f()(this, n)
             for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              C()(y()(e), 'state', { selectedTextSize: Z[2] }),
-              C()(y()(e), '_toggleTextStyle', function (t) {
+              x()(g()(e), 'state', { selectedTextSize: ne[2] }),
+              x()(g()(e), '_toggleTextStyle', function (t) {
                 var n = e.props,
                   r = n.onChange,
                   a = n.richTextInputContext.editorState
@@ -1610,27 +1630,35 @@
                   }
                 }
               }),
-              C()(y()(e), '_isEditorFocused', function () {
+              x()(g()(e), '_isEditorFocused', function () {
                 var t = e.props.richTextInputContext.editorState
                 return null == t ? void 0 : t.getSelection().getHasFocus()
               }),
-              C()(y()(e), '_handleTextSizeClick', function (t) {
+              x()(g()(e), '_handleTextSizeClick', function (t) {
                 return function () {
-                  e.setState({ selectedTextSize: t })
+                  e.setState({ selectedTextSize: t }), e._toggleTextStyle(ae.RichUtils.toggleBlockType)(t.blockType)()
                 }
               }),
-              C()(y()(e), '_renderToolbarButtonGroup', function (t, n) {
-                return x.a.createElement(
-                  O.a,
-                  { style: re.buttonGroup },
-                  n ? null : x.a.createElement(F, { style: re.itemMargin }),
+              x()(g()(e), '_mergeMap', function (e, t) {
+                return Object(oe.a)(t).reduce(function (e, t) {
+                  var n = p()(t, 2),
+                    r = n[0],
+                    a = n[1]
+                  return e.set(r, a)
+                }, e)
+              }),
+              x()(g()(e), '_renderToolbarButtonGroup', function (t, n) {
+                return k.a.createElement(
+                  R.a,
+                  { style: ue.buttonGroup },
+                  n ? null : k.a.createElement(H, { style: ue.itemMargin }),
                   t.map(function (t, r) {
-                    return x.a.createElement(
-                      S.a,
+                    return k.a.createElement(
+                      L.a,
                       u()(
                         {
                           preventFocusShift: e._isEditorFocused(),
-                          style: 0 === r && n ? null : re.itemMargin,
+                          style: 0 === r && n ? null : ue.itemMargin,
                           type: 'primaryText',
                         },
                         t,
@@ -1639,29 +1667,25 @@
                   }),
                 )
               }),
-              C()(y()(e), '_renderActionMenu', function (t) {
-                var n = Z.map(function (t) {
-                  return {
-                    disabled: e.state.selectedTextSize === t,
-                    text: x.a.createElement(k.b, { size: t.size }, t.label),
-                    onClick: e._handleTextSizeClick(t),
-                  }
+              x()(g()(e), '_renderActionMenu', function (t) {
+                var n = ne.map(function (t) {
+                  return { text: t.render(t.label), onClick: e._handleTextSizeClick(t) }
                 })
-                return x.a.createElement(I.a, {
+                return k.a.createElement(S.a, {
                   items: n,
                   onCloseRequested: t,
                   preventFocusShift: e._isEditorFocused(),
                   shouldCloseOnClick: !0,
                 })
               }),
-              C()(y()(e), '_setFieldTextInputRef', function (t) {
+              x()(g()(e), '_setFieldTextInputRef', function (t) {
                 e.fieldTextInput = t
               }),
               e
             )
           }
           return (
-            f()(n, [
+            y()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -1671,49 +1695,61 @@
                     r = n.additionalToolbarButtonConfigs,
                     i = n.inputStyle,
                     l = n.richTextInputContext,
-                    s = c()(n, te),
+                    s = c()(n, ce),
                     d = this.state.selectedTextSize,
                     p =
-                      ((e = this._toggleTextStyle($.RichUtils.toggleInlineStyle)),
+                      ((e = this._toggleTextStyle(ae.RichUtils.toggleInlineStyle)),
                       [
-                        { icon: q.iconBold, key: 'bold', onPress: e(Y.bold) },
-                        { icon: q.iconItalic, key: 'italic', onPress: e(Y.italic) },
-                        { icon: q.iconCode, key: 'code', onPress: e(Y.code) },
-                        { icon: q.iconStrikethrough, key: 'strikethrough', onPress: e(Y.strikethrough) },
+                        { icon: Z.iconBold, key: 'bold', onPress: e($.bold) },
+                        { icon: Z.iconItalic, key: 'italic', onPress: e($.italic) },
+                        { icon: Z.iconCode, key: 'code', onPress: e($.code) },
+                        { icon: Z.iconStrikethrough, key: 'strikethrough', onPress: e($.strikethrough) },
                       ]),
                     h =
-                      ((t = this._toggleTextStyle($.RichUtils.toggleBlockType)),
+                      ((t = this._toggleTextStyle(ae.RichUtils.toggleBlockType)),
                       [
-                        { icon: q.iconBulletedList, key: 'bulleted', onPress: t(Q.bulleted) },
-                        { icon: q.iconNumberedList, key: 'numbered', onPress: t(Q.numbered) },
+                        { icon: Z.iconBulletedList, key: 'bulleted', onPress: t(ee.bulleted) },
+                        { icon: Z.iconNumberedList, key: 'numbered', onPress: t(ee.numbered) },
                       ]),
-                    f = o()({ pastedStylesAllowlist: [].concat(a()(Object(A.a)(Y)), a()(Object(A.a)(Q))) }, l)
-                  return x.a.createElement(
-                    x.a.Fragment,
+                    f = this._mergeMap(this._mergeMap(B.a, re), l.blockRenderMap || {}),
+                    m = o()(
+                      o()({}, l),
+                      {},
+                      {
+                        blockRenderMap: f,
+                        pastedStylesAllowlist: [].concat(
+                          a()(Object(le.a)($)),
+                          a()(Object(le.a)(ee)),
+                          a()(l.pastedStylesAllowlist || []),
+                        ),
+                      },
+                    )
+                  return k.a.createElement(
+                    k.a.Fragment,
                     null,
-                    x.a.createElement(
-                      O.a,
-                      { style: re.toolbar },
+                    k.a.createElement(
+                      R.a,
+                      { style: ue.toolbar },
                       this._renderToolbarButtonGroup(p, !0),
-                      x.a.createElement(F, { style: re.itemMargin }),
-                      x.a.createElement(
-                        O.a,
-                        { style: re.textSizeSelection },
-                        x.a.createElement(k.b, { color: 'gray700', numberOfLines: 1 }, null == d ? void 0 : d.label),
-                        x.a.createElement(L.a, {
-                          Icon: _.a,
+                      k.a.createElement(H, { style: ue.itemMargin }),
+                      k.a.createElement(
+                        R.a,
+                        { style: ue.textSizeSelection },
+                        k.a.createElement(_.b, { color: 'gray700', numberOfLines: 1 }, null == d ? void 0 : d.label),
+                        k.a.createElement(M.a, {
+                          Icon: O.a,
                           iconSize: 'small',
                           preventFocusShift: this._isEditorFocused(),
                           renderActionMenu: this._renderActionMenu,
-                          style: re.itemMargin,
+                          style: ue.itemMargin,
                         }),
                       ),
                       this._renderToolbarButtonGroup(h),
                       r ? this._renderToolbarButtonGroup(r) : null,
                     ),
-                    x.a.createElement(
-                      ee.a,
-                      u()({ inputStyle: [re.input, i], ref: this._setFieldTextInputRef, richTextInputContext: f }, s),
+                    k.a.createElement(
+                      ie.a,
+                      u()({ inputStyle: [ue.input, i], ref: this._setFieldTextInputRef, richTextInputContext: m }, s),
                     ),
                   )
                 },
@@ -1735,9 +1771,9 @@
             ]),
             n
           )
-        })(x.a.Component)
-      C()(ne, 'defaultProps', { leftAligned: !0, multiline: !0, styleType: 'selection' })
-      var re = B.a.create(function (e) {
+        })(k.a.Component)
+      x()(se, 'defaultProps', { leftAligned: !0, multiline: !0, styleType: 'selection' })
+      var ue = F.a.create(function (e) {
         return {
           buttonGroup: { flexDirection: 'row' },
           input: { paddingHorizontal: 0, paddingBottom: 0 },
@@ -2076,9 +2112,9 @@
         M = n('n5fo'),
         F = n('5emT'),
         R = n('Oib4'),
-        z = n('WtWS'),
-        P = n('ioan'),
-        H = [
+        P = n('WtWS'),
+        H = n('ioan'),
+        z = [
           'Icon',
           'accessibilityLabel',
           'calculateLength',
@@ -2391,7 +2427,7 @@
                         e.onSubmitEditing,
                         e.showPasswordVisibilityIcon,
                         e.showValidationIcon),
-                      i = (e.style, e.type, e.validLength, o()(e, H))
+                      i = (e.style, e.type, e.validLength, o()(e, z))
                     return w.a.createElement(
                       O.a,
                       { style: U.container },
@@ -2400,7 +2436,7 @@
                         C.b,
                         { size: 'headline1', style: U.wrapper },
                         w.a.createElement(
-                          P.a,
+                          H.a,
                           a()({}, i, {
                             editable: n,
                             maxLength: this._getAdjustedMaxLength(),
@@ -2506,7 +2542,7 @@
                   value: function () {
                     return this._isFormInvalid()
                       ? w.a.createElement(R.a, { style: [G.validationIcon, x.a.invalidColor] })
-                      : w.a.createElement(z.a, { style: [G.validationIcon, x.a.validColor] })
+                      : w.a.createElement(P.a, { style: [G.validationIcon, x.a.validColor] })
                   },
                 },
                 {

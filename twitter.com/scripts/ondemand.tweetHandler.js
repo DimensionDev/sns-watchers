@@ -502,10 +502,10 @@
           return 'PUSH' === t.history.action
         },
         $ = function (e, t) {
-          return Object(j.A)(e, j.k)
+          return Object(j.C)(e, j.l)
         },
         ee = function (e, t) {
-          return Object(j.y)(e, j.k)
+          return Object(j.A)(e, j.l)
         },
         te = Object(L.a)()
           .propsFromState(function () {
@@ -594,7 +594,7 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: j.w,
+              addFlag: j.y,
               addToast: T.b,
               block: U.e.block,
               createLocalApiErrorHandler: Object(B.createLocalApiErrorHandlerWithContextFactory)(
@@ -617,7 +617,7 @@
         ne = (n('JtPf'), n('zb92')),
         oe = Object(ne.a)({
           loader: function () {
-            return n.e(208).then(n.bind(null, '5Yok'))
+            return n.e(207).then(n.bind(null, '5Yok'))
           },
         }),
         re = (n('uFXj'), n('IqLm')),
@@ -670,7 +670,7 @@
         _e = n('RuTB'),
         be = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(6), n.e(12), n.e(81)]).then(n.bind(null, 'x8Sc'))
+            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(8), n.e(80)]).then(n.bind(null, 'x8Sc'))
           },
           renderPlaceholder: function (e, t) {
             return g.a.createElement(_e.a, { hasError: e, onRetry: t })
@@ -678,7 +678,7 @@
         }),
         ye = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(87)]).then(n.bind(null, 'RrO2'))
+            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(86)]).then(n.bind(null, 'RrO2'))
           },
           renderPlaceholder: function (e, t) {
             return g.a.createElement(_e.a, { hasError: e, onRetry: t })
@@ -1196,7 +1196,7 @@
               key: 'componentWillUnmount',
               value: function () {
                 var e = this.props.addFlag
-                this._shouldShowDownvoteInlineEducation() && e(j.k, { updateTimestamp: !0 })
+                this._shouldShowDownvoteInlineEducation() && e(j.l, { updateTimestamp: !0 })
               },
             },
             {
@@ -1411,7 +1411,7 @@
                   n || this._shouldShowDownvoteFullscreenEducation()
                     ? g.a.createElement(oe, {
                         onDismiss: function () {
-                          n ? e.setState({ showDownvoteFullscreenFromInline: !1 }) : t(j.k)
+                          n ? e.setState({ showDownvoteFullscreenFromInline: !1 }) : t(j.l)
                         },
                       })
                     : null,
@@ -1421,7 +1421,7 @@
                           e.setState({ showDownvoteFullscreenFromInline: !0 })
                         },
                         onClose: function () {
-                          t(j.k, { updateTimestamp: !0 })
+                          t(j.l, { updateTimestamp: !0 })
                         },
                       })
                     : null,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36],
+  [35],
   {
     'Fg/a': function (e, t, n) {
       'use strict'
@@ -43,8 +43,8 @@
         T = n.n(w),
         A = n('rJoH'),
         _ = n('fzjU'),
-        j = n('Tg44')
-      function C(e) {
+        C = n('Tg44')
+      function j(e) {
         var t = e.space
         if (!t) return null
         var n = (function (e) {
@@ -60,11 +60,11 @@
                 u = (null == e ? void 0 : e.participants.total) || 0,
                 l = _.a.formatCountShort(u),
                 p = O.descriptionListening({ count: l })
-              if (e.state === j.a.SpaceState.Running)
+              if (e.state === C.a.SpaceState.Running)
                 (n = O.titleRunning({ spaceTitle: o })),
                   (i = O.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: s })),
                   (r = F.ttl.Frequent)
-              else if (e.state === j.a.SpaceState.NotStarted || e.state === j.a.SpaceState.PrePublished) {
+              else if (e.state === C.a.SpaceState.NotStarted || e.state === C.a.SpaceState.PrePublished) {
                 var h = O.scheduledSpaceGeneric
                 ;(n = O.titleScheduled({ date: h, spaceTitle: o })),
                   (i = O.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: s })),
@@ -120,8 +120,8 @@
             alt: O.twitterSpaces,
           },
         },
-        I = n('G8HL'),
-        x = (function (e) {
+        x = n('G8HL'),
+        I = (function (e) {
           l()(n, e)
           var t = h()(n)
           function n() {
@@ -153,7 +153,7 @@
                     v.a.Fragment,
                     null,
                     v.a.createElement(L, this.props),
-                    v.a.createElement(C, { space: this.state.space }),
+                    v.a.createElement(j, { space: this.state.space }),
                   )
                 },
               },
@@ -169,7 +169,7 @@
           e.children
         )
       }
-      var M = E(Object(I.a)(x))
+      var M = E(Object(x.a)(I))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -218,7 +218,7 @@
         T = (function () {
           function e() {
             var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I
+              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x
             r()(this, e),
               l()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
@@ -241,7 +241,7 @@
                 },
               })
             var i = n.httpConfig
-            ;(this.client = new k.a(s()(s()({}, x), i))), (this._authToken = void 0), (this._authPromise = null)
+            ;(this.client = new k.a(s()(s()({}, I), i))), (this._authToken = void 0), (this._authPromise = null)
           }
           return (
             c()(e, [
@@ -383,6 +383,17 @@
                 },
               },
               {
+                key: 'createClip',
+                value: function (e) {
+                  var t = this
+                  return this.login().then(function () {
+                    return t.post('createClip', e).catch(function (e) {
+                      Object(P.a)('[ProxseeApi] failed to create clip', { extra: { err: e } })
+                    })
+                  })
+                },
+              },
+              {
                 key: '_reportSpace',
                 value: function (e) {
                   var t = this
@@ -399,19 +410,19 @@
         })(),
         A = 'X-Idempotence',
         _ = 'X-Periscope-User-Agent',
-        j = 'X-Attempt',
-        C = ((y = {}), l()(y, _, 'Twitter/m5'), l()(y, j, 1), y)
+        C = 'X-Attempt',
+        j = ((y = {}), l()(y, _, 'Twitter/m5'), l()(y, C, 1), y)
       function O() {
         var e,
           t = Date.now()
         return (
           (w = t <= w ? w + 1 : t),
-          Object.assign({}, C, ((e = {}), l()(e, A, w), l()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, j, ((e = {}), l()(e, A, w), l()(e, 'content-type', 'application/json'), e))
         )
       }
       var F = 'm5-proxsee-login-a2011357b73e',
-        I = {},
-        x = {
+        x = {},
+        I = {
           host: 'https://proxsee.pscp.tv',
           errorFilter: function (e, t) {
             return t(e).then(function (t) {

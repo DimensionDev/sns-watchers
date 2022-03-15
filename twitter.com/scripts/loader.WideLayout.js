@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [192, 209],
+  [191, 208],
   {
     '0af8': function (e, t, n) {
       'use strict'
@@ -113,14 +113,14 @@
                     n = e.position,
                     i = e.stickyThreshold,
                     o = e.stickyTop,
-                    r = E[n],
+                    r = R[n],
                     a = window.devicePixelRatio || 1,
                     s = k({ cssPixels: i, dpr: a }),
                     c = k({ cssPixels: t, dpr: a }),
                     l = { top: o ? ''.concat(s, 'px') : null, bottom: o ? null : ''.concat(s, 'px') }
                   return v.a.createElement(
                     O.a,
-                    { ref: this._setContainerRef, style: [E.container, { minHeight: this.state.contentHeight }] },
+                    { ref: this._setContainerRef, style: [R.container, { minHeight: this.state.contentHeight }] },
                     v.a.createElement(O.a, { style: { marginTop: ''.concat(c, 'px') } }),
                     v.a.createElement(
                       O.a,
@@ -209,7 +209,7 @@
           )
         })(v.a.PureComponent)
       f()(x, 'contextType', _.a), f()(x, 'defaultProps', { distanceFromBottom: 10 })
-      var E = w.a.create(function (e) {
+      var R = w.a.create(function (e) {
         return {
           container: { height: '100%' },
           sticky: { position: 'sticky' },
@@ -246,8 +246,8 @@
         O = n('3XMw'),
         k = n.n(O),
         x = n('Rp9C'),
-        E = n('rHpw'),
-        R = n('MWbm'),
+        R = n('rHpw'),
+        E = n('MWbm'),
         I = n('lP98'),
         H = n('RqPI'),
         P = n('rxPX'),
@@ -298,7 +298,7 @@
             r = i.length > 3,
             a = '/i/connect_people?user_id='.concat(n)
           return _.a.createElement(
-            R.a,
+            E.a,
             { accessibilityLabel: B, accessibilityRole: 'complementary' },
             _.a.createElement(j.b, { text: o ? Y : B }),
             _.a.createElement(A.a, { displayMode: U.a.UserCompact, userIds: i.slice(0, 3), withItemBorder: !0 }),
@@ -367,7 +367,7 @@
                   return t === w.a.FAILED || this._hasEmptySuggestionList()
                     ? null
                     : _.a.createElement(
-                        R.a,
+                        E.a,
                         { style: [G.root, n] },
                         _.a.createElement(b.a, {
                           accessibilityLabel: V,
@@ -401,7 +401,7 @@
             n
           )
         })(_.a.PureComponent),
-        G = E.a.create(function (e) {
+        G = R.a.create(function (e) {
           return { root: { minHeight: '15rem' } }
         }),
         Z = F(J)
@@ -448,8 +448,8 @@
         O = n('jHwr'),
         k = n('VY6S'),
         x = n('w9LO'),
-        E = n('//dC'),
-        R = n('lHOd'),
+        R = n('//dC'),
+        E = n('lHOd'),
         I = n('Oe3h'),
         H = n('0FVZ'),
         P = n('7N4s'),
@@ -542,10 +542,10 @@
                     O = l - p >= t,
                     k = c - f >= e,
                     x = o.props.preferredVerticalOrientation,
-                    E = (function (e) {
+                    R = (function (e) {
                       return N.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
                     })(o.props.preferredHorizontalOrientation),
-                    R =
+                    E =
                       o.state.verticalOrientation ||
                       (function (e) {
                         var t = e.canOrientDown,
@@ -560,12 +560,12 @@
                           n = e.canOrientRight,
                           i = e.horizontalPreference
                         return !t || ('left' !== i && n) ? 'right' : 'left'
-                      })({ horizontalPreference: E, canOrientLeft: w, canOrientRight: O }),
+                      })({ horizontalPreference: R, canOrientLeft: w, canOrientRight: O }),
                     H = o.props.isFixed ? p : y,
                     P = o.props.isFixed ? f : g,
-                    L = 'up' === R ? P + h - e : P,
+                    L = 'up' === E ? P + h - e : P,
                     S = 'left' === I ? l - H - m - v : l - H - t - v
-                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: R, horizontalOrientation: I })
+                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: E, horizontalOrientation: I })
                 }
               }),
               (o.state = Object.freeze({})),
@@ -662,11 +662,11 @@
                     w.a.createElement(
                       H.a.Dropdown,
                       null,
-                      w.a.createElement(R.a.Consumer, null, function (e) {
+                      w.a.createElement(E.a.Consumer, null, function (e) {
                         return w.a.createElement(P.b.Consumer, null, function (t) {
                           var n = t.isModal
                           return w.a.createElement(
-                            E.a,
+                            R.a,
                             { history: e, isModal: n, onDismiss: s },
                             c ? y : w.a.createElement(x.a, { withKeyboardNavigation: l }, y),
                           )
@@ -708,7 +708,11 @@
     },
     uo3S: function (e, t, n) {
       'use strict'
-      n.r(t)
+      n.r(t),
+        n.d(t, 'InThisConversation', function () {
+          return w
+        })
+      n('M+/F')
       var i = n('ERkP'),
         o = n.n(i),
         r = n('RhWx'),
@@ -775,28 +779,23 @@
             )
           })
           .withAnalytics({ component: 'in_this_conversation' }),
-        f = (n('M+/F'), n('3XMw')),
+        f = n('3XMw'),
         m = n.n(f),
         v = n('6vad'),
         y = n('hqDb'),
         _ = n('MWbm'),
         g = m.a.j88f27d8,
-        w = function (e) {
-          var t = e.maxCount,
-            n = e.participantIds
+        w = o.a.memo(function (e) {
+          var t = e.participantIds
           return o.a.createElement(
             _.a,
             { accessibilityLabel: g, accessibilityRole: 'complementary' },
             o.a.createElement(v.b, { text: g }),
-            o.a.createElement(y.a, { userIds: n.slice(0, t), withFinalItemBorder: !1, withItemBorder: !0 }),
+            o.a.createElement(y.a, { userIds: t.slice(0, 3), withFinalItemBorder: !1, withItemBorder: !0 }),
           )
-        }
-      w.defaultProps = { maxCount: 3 }
-      var b = w,
-        O = p(function (e) {
-          return o.a.createElement(b, { participantIds: e.participantIds })
-        })
-      t.default = O
+        }),
+        b = p(w)
+      t.default = b
     },
   },
 ])

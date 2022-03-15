@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [173],
+  [172],
   {
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -20,8 +20,8 @@
         d = n.n(h),
         v = n('mAxt'),
         y = n.n(v),
-        m = (n('2G9S'), n('CEs6')),
-        g = (function (e) {
+        g = (n('2G9S'), n('CEs6')),
+        m = (function (e) {
           f()(n, e)
           var t = d()(n)
           function n(e, i, a) {
@@ -38,7 +38,7 @@
           }
           return o()(n)
         })(y()(Error))
-      l()(g, 'displayName', 'ProxseeApiError')
+      l()(m, 'displayName', 'ProxseeApiError')
       var b,
         k,
         P = n('epkG'),
@@ -111,7 +111,7 @@
                 key: 'dispatch',
                 value: function (e) {
                   return this.initialized()
-                    ? this.client.dispatch(e).then(m.a)
+                    ? this.client.dispatch(e).then(g.a)
                     : Promise.reject(new Error('[ProxseeApi] config not initialized'))
                 },
               },
@@ -120,7 +120,7 @@
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     i = n.params,
-                    r = Object.assign(I(), n.headers),
+                    r = Object.assign(x(), n.headers),
                     a = JSON.stringify(c()(c()({}, t), {}, { cookie: this._authToken })),
                     o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
                   return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: i, data: a })
@@ -159,7 +159,7 @@
               {
                 key: 'loginTwitterToken',
                 value: function (e) {
-                  var t = { jwt: e, vendor_id: x, create_user: !1, direct: !0 }
+                  var t = { jwt: e, vendor_id: I, create_user: !1, direct: !0 }
                   return this.post('loginTwitterToken', t)
                 },
               },
@@ -185,7 +185,7 @@
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
                     var i = n.params,
-                      r = Object.assign(I(), n.headers),
+                      r = Object.assign(x(), n.headers),
                       a = JSON.stringify({
                         access_token: e.access_token,
                         cursor: e.cursor,
@@ -213,6 +213,17 @@
                 },
               },
               {
+                key: 'createClip',
+                value: function (e) {
+                  var t = this
+                  return this.login().then(function () {
+                    return t.post('createClip', e).catch(function (e) {
+                      Object(_.a)('[ProxseeApi] failed to create clip', { extra: { err: e } })
+                    })
+                  })
+                },
+              },
+              {
                 key: '_reportSpace',
                 value: function (e) {
                   var t = this
@@ -231,7 +242,7 @@
         w = 'X-Periscope-User-Agent',
         E = 'X-Attempt',
         O = ((b = {}), l()(b, w, 'Twitter/m5'), l()(b, E, 1), b)
-      function I() {
+      function x() {
         var e,
           t = Date.now()
         return (
@@ -239,7 +250,7 @@
           Object.assign({}, O, ((e = {}), l()(e, C, A), l()(e, 'content-type', 'application/json'), e))
         )
       }
-      var x = 'm5-proxsee-login-a2011357b73e',
+      var I = 'm5-proxsee-login-a2011357b73e',
         j = {},
         H = {
           host: 'https://proxsee.pscp.tv',
@@ -250,8 +261,8 @@
                     (function (e, t) {
                       var n = e.uri,
                         i = t.status,
-                        r = Object(m.a)(t)
-                      return new g(n, i, r.msg)
+                        r = Object(g.a)(t)
+                      return new m(n, i, r.msg)
                     })(e, t),
                   )
                 : t
@@ -358,8 +369,8 @@
         d = n('gOg7')
       var v = n('epkG'),
         y = n('88qn'),
-        m = n('fs1G'),
-        g = n('mf9H'),
+        g = n('fs1G'),
+        m = n('mf9H'),
         b = n('lklz'),
         k = n('MWbm'),
         P = n('HT/6'),
@@ -403,7 +414,7 @@
           null === S || !w)
         )
           return null
-        var I = {
+        var x = {
           analytics: (function (e, t) {
             var n = e.analytics.contextualScribeNamespace,
               i = {
@@ -431,7 +442,7 @@
             var r = null == a || null === (i = a.video_info) || void 0 === i ? void 0 : i.duration_millis
             'number' == typeof r && 'number' == typeof v && t.scrubToFraction(v / r)
             var o = e.disablePlaybackCoordination
-                ? m.a
+                ? g.a
                 : function () {
                     return t.pause()
                   },
@@ -444,7 +455,7 @@
                 isLooping: !1,
                 playbackPriority: t,
               }
-              return g.b.register(n)
+              return m.b.register(n)
             })(o, c)
           },
           onStateUpdate: function (e, t) {
@@ -473,8 +484,8 @@
           twitterAuthedHttpClient: e.getTwitterAuthedHttpClient(),
         }
         if (n && u) {
-          var x = r()(
-            r()({}, I),
+          var I = r()(
+            r()({}, x),
             {},
             {
               configType: 'static',
@@ -484,11 +495,11 @@
               videoId: b.b.forAudioSpace(n, u, i),
             },
           )
-          return c.a.createElement(T, { key: n, playerConfig: x })
+          return c.a.createElement(T, { key: n, playerConfig: I })
         }
         if (a) {
           var j = r()(
-            r()({}, I),
+            r()({}, x),
             {},
             {
               configType: 'static',
@@ -508,7 +519,7 @@
       }
       function T(e) {
         var t = e.playerConfig
-        return c.a.createElement(k.a, { style: I.displayNone }, c.a.createElement(_.b, t))
+        return c.a.createElement(k.a, { style: x.displayNone }, c.a.createElement(_.b, t))
       }
       var C = A,
         w = f(A),
@@ -516,7 +527,7 @@
           return e && e.tracks[e.currentTrackId]
         },
         O = new v.a({}),
-        I = S.a.create(function (e) {
+        x = S.a.create(function (e) {
           return { displayNone: { display: 'none' } }
         })
     },

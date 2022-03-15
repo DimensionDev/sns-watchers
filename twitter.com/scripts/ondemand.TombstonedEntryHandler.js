@@ -20,7 +20,7 @@
         },
         u = Object(i.a)({
           loader: function () {
-            return t.e(178).then(t.bind(null, '6l+S'))
+            return t.e(177).then(t.bind(null, '6l+S'))
           },
           renderPlaceholder: function (e, n) {
             return a.a.createElement(d, { hasError: e, onRetry: n })
