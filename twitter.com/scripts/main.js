@@ -7617,7 +7617,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_cleanup_macaw_swift_indexed_db: !0,
             responsive_web_collection_ads_enabled: !0,
             responsive_web_communities_slices_enabled: !0,
-            responsive_web_communities_with_relay: !0,
             responsive_web_composer_configurable_video_player_enabled: !0,
             responsive_web_consumes_horizon_web_tweet_in_timelines: !0,
             responsive_web_continue_as_always_enabled: !0,
@@ -7692,6 +7691,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_logged_out_gating_13718_ddg: !0,
             responsive_web_logged_out_gating_aggressive_segments: !0,
             responsive_web_logged_out_gating_less_aggressive_segments: !0,
+            responsive_web_logged_out_gating_non_holdback_ddgs: !0,
             responsive_web_logged_out_gating_non_impressing_member_segments: !0,
             responsive_web_login_input_type_email_enabled: !0,
             responsive_web_login_signup_sheet_app_install_cta_enabled: !0,
@@ -7720,6 +7720,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_ntab_verified_mentions_vit_internal_dogfood: !0,
             responsive_web_oauth2_consent_flow_enabled: !0,
             responsive_web_ocf_reportflow_dms_enabled: !0,
+            responsive_web_ocf_reportflow_lists_enabled: !0,
             responsive_web_ocf_reportflow_profiles_enabled: !0,
             responsive_web_ocf_reportflow_testers: !0,
             responsive_web_ocf_reportflow_tweets_enabled: !0,
@@ -33443,7 +33444,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               var E = [],
                 w = s.getStringValue('responsive_web_logged_out_gating_13501_ddg'),
                 T = s.getStringValue('responsive_web_logged_out_gating_13622_ddg'),
-                S = s.getStringValue('responsive_web_logged_out_gating_13718_ddg')
+                S = s.getStringValue('responsive_web_logged_out_gating_non_holdback_ddgs')
               if ((w && E.push(w), T && E.push(T), S && E.push(S), a)) {
                 var O = a && a.rweb_use_app_prompt_10556
                 O && E.push('10556^'.concat(O.bucket, '^').concat(O.version))
@@ -73963,9 +73964,12 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       cHTv: function (e, t, n) {
         'use strict'
-        n.d(t, 'b', function () {
+        n.d(t, 'c', function () {
           return d
-        })
+        }),
+          n.d(t, 'b', function () {
+            return p
+          })
         var r = n('yiKp'),
           i = n.n(r),
           a = (n('z84I'), n('LW0h'), n('7x/C'), n('X00g')),
@@ -73974,8 +73978,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           c = n('NjAB'),
           u = n('yd8k'),
           l = n('6Tsf'),
-          d = { url: 'https://pbs.twimg.com/media/EXZ2rMvVAAAAfrN.png', width: 1125, height: 375 }
-        function p(e) {
+          d = { url: 'https://pbs.twimg.com/media/EXZ2rMvVAAAAfrN.png', width: 1125, height: 375 },
+          p = [{ x: 375, y: 0, h: 375, w: 375 }]
+        function f(e) {
           return !!(
             null != e &&
             e.original_img_url &&
@@ -73985,7 +73990,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             e.original_img_width
           )
         }
-        var f = function (e) {
+        var m = function (e) {
             var t,
               n = null == e || null === (t = e.custom_banner_media) || void 0 === t ? void 0 : t.media_info
             if (null != n && n.salient_rect) {
@@ -73995,7 +74000,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
             return []
           },
-          m = new c.c.Entity(
+          h = new c.c.Entity(
             'communities',
             {},
             {
@@ -74006,7 +74011,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   u = (function (e) {
                     var t,
                       n = null == e || null === (t = e.custom_banner_media) || void 0 === t ? void 0 : t.media_info
-                    if (n && p(n)) {
+                    if (n && f(n)) {
                       var r = n.color_info,
                         i = n.original_img_height
                       return {
@@ -74017,10 +74022,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                       }
                     }
                   })(c),
-                  m = (function (e) {
+                  p = (function (e) {
                     var t,
                       n = null == e || null === (t = e.default_banner_media) || void 0 === t ? void 0 : t.media_info
-                    if (n && p(n)) {
+                    if (n && f(n)) {
                       var r = n.original_img_height
                       return { url: n.original_img_url, height: r, width: n.original_img_width }
                     }
@@ -74028,9 +74033,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })(c),
                   h = Boolean(u)
                 return (
-                  (c.defaultMedia = { crop: [], image: m }),
+                  (c.defaultMedia = { crop: [], image: p }),
                   (c.hasCustomMedia = h),
-                  (c.media = { crop: f(c), image: h ? u : m }),
+                  (c.media = { crop: m(c), image: h ? u : p }),
                   (c.membersFacepileUrls = (function (e) {
                     return e.members_facepile_results.map(function (e) {
                       var t,
@@ -74058,7 +74063,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             },
           )
-        m.define({ admin: u.a, creator: u.a, invite_action_results: [l.a], members_facepile: [u.a] }), (t.a = m)
+        h.define({ admin: u.a, creator: u.a, invite_action_results: [l.a], members_facepile: [u.a] }), (t.a = h)
       },
       cHvH: function (e, t, n) {
         'use strict'
@@ -77144,23 +77149,20 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'g', function () {
             return A
           }),
-          n.d(t, 'i', function () {
+          n.d(t, 'h', function () {
             return R
           }),
-          n.d(t, 'h', function () {
+          n.d(t, 'd', function () {
             return x
           }),
-          n.d(t, 'd', function () {
+          n.d(t, 'a', function () {
             return L
           }),
-          n.d(t, 'a', function () {
+          n.d(t, 'e', function () {
             return P
           }),
-          n.d(t, 'e', function () {
-            return D
-          }),
           n.d(t, 'b', function () {
-            return j
+            return D
           })
         var r = n('RhWx'),
           i = n.n(r),
@@ -77228,7 +77230,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return function (t) {
               var n,
                 r = null == t || null === (n = t.entities) || void 0 === n ? void 0 : n.communities[e]
-              if (r) return [M.updateOne(e, r)]
+              if (r) return [j.updateOne(e, r)]
             }
           },
           C = {
@@ -77521,7 +77523,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           k = function (e) {
             var t = Object(g.c)(e),
-              n = M.selectMany(e, t)
+              n = j.selectMany(e, t)
             return n && n.length > 0
               ? n.filter(Boolean).reduce(function (e, t) {
                   return Object.assign(c()(c()({}, e), {}, o()({}, t.id_str, t)))
@@ -77530,17 +77532,13 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           A = function (e, t) {
             var n = null == t ? void 0 : t.community_id_str
-            return n ? M.select(e, n) : void 0
+            return n ? j.select(e, n) : void 0
           },
           R = function (e, t) {
             var n = A(e, t)
             return void 0 !== n && t.user.id_str === n.admin
           },
           x = function (e, t) {
-            var n = M.select(e, t)
-            return null == n ? void 0 : n.join_requests_result
-          },
-          L = function (e, t) {
             return function (n, r, i) {
               i.api
               var a = t.cropData,
@@ -77553,11 +77551,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                   var r = l()(t, 1)[0]
                   n([{ type: y.SUCCESS }, { type: E.REQUEST }])
                   var i = r.uploadId || ''
-                  return n(M.editBannerMedia(e, { mediaId: i })).then(
+                  return n(j.editBannerMedia(e, { mediaId: i })).then(
                     function (t) {
                       var r,
                         i = null == t || null === (r = t.entities) || void 0 === r ? void 0 : r.communities[e]
-                      i && n([{ type: E.SUCCESS }, M.updateOne(e, i)])
+                      i && n([{ type: E.SUCCESS }, j.updateOne(e, i)])
                     },
                     function (e) {
                       return n({ type: E.FAILURE }), Promise.reject(e)
@@ -77570,19 +77568,19 @@ window.__SCRIPTS_LOADED__.i18n &&
               )
             }
           },
-          P = function (e, t) {
+          L = function (e, t) {
             return function (n, r, i) {
               i.api
-              return n(M.updateOne(e, { localMediaId: t }))
+              return n(j.updateOne(e, { localMediaId: t }))
             }
           },
-          D = function (e) {
+          P = function (e) {
             return function (t, n, r) {
               r.api
-              return t(M.updateOne(e, { localMediaId: void 0 }))
+              return t(j.updateOne(e, { localMediaId: void 0 }))
             }
           },
-          j = function (e, t) {
+          D = function (e, t) {
             return function (n, r, i) {
               i.api
               var a = i.featureSwitches
@@ -77603,8 +77601,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             }
           },
-          M = c()(c()(c()(c()({}, T), S), C), {}, { customActionTypes: Object(b.d)(C) })
-        t.c = _.a.register(M)
+          j = c()(c()(c()(c()({}, T), S), C), {}, { customActionTypes: Object(b.d)(C) })
+        t.c = _.a.register(j)
       },
       eXeu: function (e, t, n) {
         'use strict'
@@ -79242,6 +79240,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               case c.DMConversation:
               case c.DMMessage:
                 return e.isTrue('responsive_web_ocf_reportflow_dms_enabled')
+              case c.List:
+                return e.isTrue('responsive_web_ocf_reportflow_lists_enabled')
               case c.Tweet:
                 return e.isTrue('responsive_web_ocf_reportflow_tweets_enabled')
               case c.User:
@@ -82909,7 +82909,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       ne = E.a.createElement(w.b, { size: d, style: U.userBadges }, E.a.createElement(A.a, G)),
                       re = E.a.createElement(R.a, { style: U.indicator, type: 'followsYou' }),
                       ie = E.a.createElement(O.a, { background: 'primary', style: U.indicator }, s),
-                      ae = E.a.createElement(T.a, i()({}, q, { interactiveStyles: null, style: U.root }), function (e) {
+                      ae = E.a.createElement(T.a, i()({}, q, { interactiveStyles: null }), function (e) {
                         var n = e.isFocused,
                           r = e.isHovered,
                           i = e.isPressed
@@ -82956,25 +82956,29 @@ window.__SCRIPTS_LOADED__.i18n &&
                       { behavioralEventContext: se },
                       E.a.createElement(
                         P.a,
-                        i()({}, K, { style: [U.root, X && U.unstacked, x] }),
-                        this._useUserHoverCardWrapper(ae),
-                        J
-                          ? E.a.createElement(
-                              P.a,
-                              { style: [U.screenNameContainer, X && U.screenNameContainerSpaced] },
-                              this._useUserHoverCardWrapper(oe),
-                              N && re,
-                              ee && ie,
-                              y
-                                ? E.a.createElement(
-                                    P.a,
-                                    { style: [U.screenNameSuffixContainer, C] },
-                                    E.a.createElement(I.a, { color: a }),
-                                    y,
-                                  )
-                                : null,
-                            )
-                          : null,
+                        { style: U.root },
+                        E.a.createElement(
+                          P.a,
+                          i()({}, K, { style: [U.root, X && U.unstacked, x] }),
+                          this._useUserHoverCardWrapper(ae),
+                          J
+                            ? E.a.createElement(
+                                P.a,
+                                { style: [U.screenNameContainer, X && U.screenNameContainerSpaced] },
+                                this._useUserHoverCardWrapper(oe),
+                                N && re,
+                                ee && ie,
+                                y
+                                  ? E.a.createElement(
+                                      P.a,
+                                      { style: [U.screenNameSuffixContainer, C] },
+                                      E.a.createElement(I.a, { color: a }),
+                                      y,
+                                    )
+                                  : null,
+                              )
+                            : null,
+                        ),
                       ),
                     )
                   },

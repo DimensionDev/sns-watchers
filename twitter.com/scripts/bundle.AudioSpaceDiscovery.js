@@ -696,7 +696,7 @@
         return { searchQuery: null == n ? void 0 : n.trim(), searchFilter: a }
       }
       var V = n('G1WX'),
-        B = l.a.e9f1fbcb,
+        B = l.a.fc96261f,
         z = { section: 'search_results' },
         F = function (e, t) {
           var n = [''.concat(e ? 'f='.concat(e) : ''), ''.concat(t ? 'q='.concat(t) : '')].filter(Boolean)

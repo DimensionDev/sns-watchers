@@ -290,7 +290,7 @@
           return Object(z.C)(e, z.d)
         },
         ee = function (e, t) {
-          return Object(V.i)(e, t.tweet)
+          return Object(V.h)(e, t.tweet)
         },
         te = function (e) {
           return function (t, n, o) {

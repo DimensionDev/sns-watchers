@@ -1474,6 +1474,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e15e5636', function (e) {
             return 'Last ' + n(e.count, 'hour', e.count + ' hours')
           }),
+          a('a0f01bca', 'Click to change time frame'),
           a('e7dcfb8f', 'more accounts'),
           a('g4782c0a', 'with Twitter Blue'),
           a('g7e3d2a4', 'Space Analytics'),
@@ -1573,7 +1574,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc5ab041', 'This space has ended'),
           a('eadd5677', 'It looks like this space has been closed.'),
           a('f5774e3a', 'Spaces Discovery'),
-          a('e9f1fbcb', 'Nothing to see here — yet'),
+          a('fc96261f', 'Search for the name of a Space or Host'),
           a('e67af8ef', function (e) {
             return 'Currently no Spaces matching "' + e.searchQuery + '"'
           }),
@@ -1841,6 +1842,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c1db7f3a', 'Unhelpful'),
           a('ff3e0be2', 'Join Birdwatch'),
+          a('e9f1fbcb', 'Nothing to see here — yet'),
           a('db08295d', 'Want to join?'),
           a(
             'f4d67927',
@@ -2102,7 +2104,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efc26607', function (e) {
             return e.memberCount + ' member' + n(e.memberCount, '', 's')
           }),
-          a('gfccba44', 'Member requests'),
           a('adfcc3cd', 'Add, delete, or edit rules'),
           a('d0330d9c', 'View rules'),
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
@@ -2115,6 +2116,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
           ),
           a('j49e6aa2', 'Yes, I want to leave'),
+          a('gfccba44', 'Member requests'),
           a('dde5f322', function (e) {
             return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
           }),
@@ -2294,10 +2296,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('edeff231', 'Date'),
           a('c2b358ce', 'AM/PM'),
           a('b43679d2', 'Hour'),
-          a('f1fce85d', 'Minute'),
-          a('fddf24b4', 'Time zone'),
-          a('a0368088', 'You can’t schedule a Tweet to send in the past.')
-        a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
+          a('f1fce85d', 'Minute')
+        a('fddf24b4', 'Time zone'),
+          a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
+          a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
           a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
           a('i26eed05', 'Your selected unsent Tweets were deleted.'),
           a('db99d355', 'Loading unsent Tweets'),
@@ -3530,12 +3532,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d750b93e', function (e) {
             return e.count + ' browser' + n(e.count, '', 's')
           }),
-          a('a9783601', 'Mobile Devices'),
-          a('j043aa31', function (e) {
-            return e.count + ' mobile device' + n(e.count, '', 's')
-          }),
-          a('f2aa6e95', 'This feature is off')
-        a('i4d7deee', 'Go to your personalization and data settings to turn it on'),
+          a('a9783601', 'Mobile Devices')
+        a('j043aa31', function (e) {
+          return e.count + ' mobile device' + n(e.count, '', 's')
+        }),
+          a('f2aa6e95', 'This feature is off'),
+          a('i4d7deee', 'Go to your personalization and data settings to turn it on'),
           a('ae415fd2', 'This setting is off.'),
           a('a90be7b3', 'Email addresses'),
           a(
@@ -4404,7 +4406,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
-          a('bef0039f', 'You don’t have any message requests'),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
           a('f5dc353c', 'Now filtering graphic media'),
           a(
@@ -4412,6 +4413,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
           ),
           a('daeda053', 'Go to Settings'),
+          a('bef0039f', 'You don’t have any message requests'),
           a('e7172d70', 'Additional messages'),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
@@ -4747,9 +4749,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j15abc53', 'Beginning'),
           a('c371fb99', 'End'),
           a('b5210d57', 'Enter Collection ID'),
-          a('a536fff6', 'Invalid Collection ID'),
-          a('c63d84a3', 'Search for Twitter account'),
-          a('b367953c', 'Tweets by')
+          a('a536fff6', 'Invalid Collection ID')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4766,7 +4766,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f12858d3', 'Liked by'),
+        a('c63d84a3', 'Search for Twitter account'),
+          a('b367953c', 'Tweets by'),
+          a('f12858d3', 'Liked by'),
           a('e2a098dc', 'Sort by'),
           a('d497b854', 'Retweets'),
           a('gb18f22f', 'Original'),
@@ -5742,6 +5744,31 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('da539d38', 'Search results'),
           a('d95eb227', 'Back'),
           a('af8fa2ad', 'Close'),
+          a('e0bdea76', function (e) {
+            return (
+              e.title +
+              '. A vertical ' +
+              e.chartType +
+              ' bar chart with data values spanning from ' +
+              e.minValue +
+              ' to ' +
+              e.maxValue
+            )
+          }),
+          a('f7b30767', 'stacked'),
+          a('hcd54327', 'grouped'),
+          a('dec1d7ef', function (e) {
+            return e.label + ', ' + e.group + ', ' + e.value
+          }),
+          a('f765bead', function (e) {
+            return 'unlabelled data, ' + e.group + ', ' + e.value
+          }),
+          a('idea1817', function (e) {
+            return e.label + ', ' + e.value
+          }),
+          a('fe94be6a', function (e) {
+            return 'unlabelled data, ' + e.value
+          }),
           a('a7cd5cf4', 'Video'),
           a('b6eb8f69', 'Broadcast'),
           a('dcc2b9b2', function (e) {
@@ -5998,8 +6025,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2969f1f', 'Exit full screen'),
           a('c1658fc6', 'The media could not be played.'),
           a('ce871584', 'This broadcast has ended.'),
-          a('c101eb95', 'This broadcast is not available.'),
-          a('gb24a513', 'This media has been disabled in response to a report by the copyright owner.'),
+          a('c101eb95', 'This broadcast is not available.')
+        a('gb24a513', 'This media has been disabled in response to a report by the copyright owner.'),
           a('hcaf3e62', function (e) {
             return 'This media has been disabled due to a copyright claim by ' + e.holder + '.'
           }),
@@ -6014,8 +6041,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c057680b', 'We cannot play the video in this browser. Please try a different web browser.'),
           a('i5dfae6e', 'This video is not available in your location.'),
           a('c2388276', 'This video has been deleted.'),
-          a('d2c9614f', 'Guest audio indicator')
-        a('f6dc9146', 'REPLAY'),
+          a('d2c9614f', 'Guest audio indicator'),
+          a('f6dc9146', 'REPLAY'),
           a('d30c74fd', 'Volume'),
           a('a681babd', function (e) {
             return 'Watch now at ' + e.trimmedHostname
@@ -8946,6 +8973,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
+          (l.a694716112 = h([
+            '',
+            ,
+            1,
+            0,
+            2,
+            ,
+            ,
+            ,
+            3,
+            ,
+            '',
+            '#,##0.###',
+            '-#,##0.###',
+            '-',
+            '',
+            b('round'),
+            '∞',
+            'NaN',
+            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+          ])),
           (l.b385502835 = h([
             '',
             ,
@@ -11272,6 +11320,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           )),
           a('d58baa7e', l.a527220190),
           a('ia24dc8c', l.b468386326),
+          a('iab73d4b', l.a694716112),
           a('i3b7a017', l.a2110709659),
           a('ie5d110e', l.a223746363),
           a('df5f11b3', l.b2116965749),

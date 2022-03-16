@@ -5,7 +5,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ArticleListScreen', function () {
-          return V
+          return X
         })
       n('KqXw'), n('WNMA'), n('lTEL'), n('7x/C'), n('kYxP'), n('MvUL'), n('2G9S')
       var a = n('ERkP'),
@@ -95,12 +95,13 @@
         q = function (e) {
           return 60 * e * 60 * 1e3
         },
-        K = i.a.createElement(
+        K = W.a.a0f01bca,
+        V = i.a.createElement(
           W.a.I18NFormatMessage,
           { $i18n: 'd9cb9d0b' },
           i.a.createElement(D.b, { color: 'link', link: '/i/connect_people' }, W.a.e7dcfb8f),
         ),
-        V = function (e) {
+        X = function (e) {
           var t = e.analytics,
             n = e.history,
             a = e.loadAdFreeArticleDomainsFromPersistence,
@@ -156,12 +157,13 @@
             ],
             g = i.a.createElement(M.a, {
               Icon: B.a,
+              label: K,
               renderActionMenu: function (e) {
                 return i.a.createElement(F.a, { items: E, onCloseRequested: e, shouldCloseOnClick: !0 })
               },
             }),
             T = function () {
-              return i.a.createElement(j.a, { header: U, message: K, style: X.emptyState })
+              return i.a.createElement(j.a, { header: U, message: V, style: G.emptyState })
             }
           return i.a.createElement(H.a, null, function (e) {
             var t = e.windowWidth,
@@ -191,7 +193,7 @@
             )
           })
         },
-        X = R.a.create(function (e) {
+        G = R.a.create(function (e) {
           return {
             emptyState: {
               height: 'calc(100vh - '.concat(e.componentDimensions.appBarHeight, ')'),
@@ -200,8 +202,8 @@
             },
           }
         }),
-        G = h(V)
-      t.default = G
+        J = h(X)
+      t.default = J
     },
     HQ0t: function (e, t, n) {
       'use strict'

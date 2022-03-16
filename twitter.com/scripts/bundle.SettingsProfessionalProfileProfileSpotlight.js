@@ -20,7 +20,7 @@
           return v
         }),
         n.d(l, 'ProfileSpotlightScreen', function () {
-          return w
+          return E
         })
       n('z84I')
       var a,
@@ -33,45 +33,39 @@
         d = n.n(u),
         c = n('Fr3L'),
         p = n('9YVX'),
-        m = n('zCf4'),
-        g = n('IAZG'),
+        g = n('zCf4'),
+        m = n('IAZG'),
         y = n('MWbm'),
-        b = n('t62R'),
-        f = n('CK8+'),
+        f = n('t62R'),
+        b = n('CK8+'),
         _ = n('rHpw'),
         k = (n('enFi'), d.a.d4b6a6ef),
         h = d.a.e2760643,
         v = void 0 !== a ? a : (a = n('bl4H')),
-        E = { context: 'PROFILE_SPOTLIGHT_SCREEN' },
-        w = function () {
+        F = { context: 'PROFILE_SPOTLIGHT_SCREEN' },
+        E = function () {
           var e,
             l,
             n,
             a,
             t,
-            u = Object(m.f)(),
+            u = Object(g.f)(),
             d = i.a.useContext(s.a).loggedInUserId || '',
-            _ = Object(g.a)(v, { userId: d }, { fetchPolicy: 'network-only' }),
-            w =
+            _ = Object(m.a)(v, { userId: d }, { fetchPolicy: 'network-only' }),
+            E =
               null == _ || null === (e = _.user) || void 0 === e || null === (l = e.result) || void 0 === l
                 ? void 0
                 : l.editable_profilemodules,
-            K = Object(r.a)(
-              (null == w || null === (n = w.modules_for_display) || void 0 === n
+            w = Object(r.a)(
+              (null == E || null === (n = E.modules_for_display) || void 0 === n
                 ? void 0
                 : n.map(function (e) {
                     return e.module_id
                   })) || [],
             ),
-            C = (null == w ? void 0 : w.v1) || []
-          if (
-            ((C = C.map(function (e) {
-              return { title: e.module_id, subtitle: e.module_id, module_data: { module_id: e.module_id } }
-            })),
-            !d)
-          )
-            return u.push('/login'), null
-          var L = function () {
+            C = null == E ? void 0 : E.configurable_modules_v1
+          if (!d) return u.push('/login'), null
+          var S = function () {
             u.goBack({ backLocation: '/settings/professional_profile' })
           }
           return (
@@ -81,50 +75,54 @@
               null !== (t = a.result) &&
               void 0 !== t &&
               t.editable_profilemodules) ||
-              L(),
+              S(),
             i.a.createElement(
               c.a,
-              { errorConfig: E },
+              { errorConfig: F },
               i.a.createElement(
                 o.b,
-                { accessibilityHidden: !1, backButtonType: 'back', history: u, onBackClick: L, title: k },
+                { accessibilityHidden: !1, backButtonType: 'back', history: u, onBackClick: S, title: k },
                 i.a.createElement(
                   y.a,
-                  { style: F.container },
-                  C.map(function (e) {
-                    return (function (e) {
-                      var l = e.module_data.module_id,
-                        n = e.title,
-                        a = e.subtitle,
-                        t = K.has(l)
-                      return i.a.createElement(
-                        y.a,
-                        { accessibilityRole: 'label', key: l, testID: p.a.spotlightRow },
-                        i.a.createElement(
-                          y.a,
-                          { style: F.spotlightContainer },
-                          i.a.createElement(b.b, { weight: 'bold' }, n),
-                          i.a.createElement(f.a, { onValueChange: function () {}, value: t }),
-                        ),
-                        i.a.createElement(
-                          y.a,
-                          { style: F.descriptionContainer },
-                          i.a.createElement(b.b, { color: 'gray700', size: 'subtext2' }, a),
-                        ),
-                      )
-                    })(e)
-                  }),
+                  { style: K.container },
+                  null == C
+                    ? void 0
+                    : C.map(function (e) {
+                        return (function (e) {
+                          if (e.module_data) {
+                            var l = e.module_data.module_id,
+                              n = e.title,
+                              a = e.subtitle,
+                              t = w.has(l)
+                            return i.a.createElement(
+                              y.a,
+                              { accessibilityRole: 'label', key: l, testID: p.a.spotlightRow },
+                              i.a.createElement(
+                                y.a,
+                                { style: K.spotlightContainer },
+                                i.a.createElement(f.b, { weight: 'bold' }, n),
+                                i.a.createElement(b.a, { onValueChange: function () {}, value: t }),
+                              ),
+                              i.a.createElement(
+                                y.a,
+                                { style: K.descriptionContainer },
+                                i.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, a),
+                              ),
+                            )
+                          }
+                        })(e)
+                      }),
                   i.a.createElement(
                     y.a,
-                    { style: F.spotlightContainer },
-                    i.a.createElement(b.b, { color: 'gray700', size: 'subtext1' }, h),
+                    { style: K.spotlightContainer },
+                    i.a.createElement(f.b, { color: 'gray700', size: 'subtext1' }, h),
                   ),
                 ),
               ),
             )
           )
         },
-        F = _.a.create(function (e) {
+        K = _.a.create(function (e) {
           return {
             container: { paddingBottom: e.spaces.space64 },
             descriptionContainer: {
@@ -142,7 +140,7 @@
             },
           }
         })
-      l.default = w
+      l.default = E
     },
     bl4H: function (e, l, n) {
       'use strict'
@@ -195,31 +193,36 @@
                                 kind: 'LinkedField',
                                 name: 'modules_for_display',
                                 plural: !0,
-                                selections: [
-                                  (i = {
-                                    alias: null,
-                                    args: null,
-                                    kind: 'ScalarField',
-                                    name: 'module_id',
-                                    storageKey: null,
-                                  }),
-                                ],
+                                selections: (i = [
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'module_id', storageKey: null },
+                                ]),
                                 storageKey: null,
                               },
                               {
                                 alias: null,
                                 args: null,
-                                concreteType: 'UserBusinessEditableModuleV1',
+                                concreteType: 'UserBusinessConfigurableModuleV1',
                                 kind: 'LinkedField',
-                                name: 'v1',
+                                name: 'configurable_modules_v1',
                                 plural: !0,
                                 selections: [
-                                  i,
                                   {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
-                                    name: 'enabled_for_display',
+                                    name: 'module_type',
+                                    storageKey: null,
+                                  },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'title', storageKey: null },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'subtitle', storageKey: null },
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'UserBusinessEditableModuleV1',
+                                    kind: 'LinkedField',
+                                    name: 'module_data',
+                                    plural: !1,
+                                    selections: i,
                                     storageKey: null,
                                   },
                                 ],
@@ -280,14 +283,14 @@
             ],
           },
           params: {
-            id: 'eRncr5p7CsqkqsqXG8Ty0Q',
+            id: '5SSCZ1XchOe_l_7Zj-uhzQ',
             metadata: {},
             name: 'ProfileSpotlights_EditableProfileModulesQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(s.hash = 'eb3db6d39d38f19b361f62485a5788d5'), (l.default = s)
+      ;(s.hash = '5d17cd78de512fddf3b0be7d311c2597'), (l.default = s)
     },
   },
 ])

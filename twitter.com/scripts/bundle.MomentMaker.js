@@ -17650,35 +17650,37 @@
         u = { viewType: 'menu_control' }
       t.a = function (e) {
         var t = e.activeColor,
-          n = e.Icon,
-          r = void 0 === n ? s.a : n,
-          i = e.iconSize,
-          o = void 0 === i ? 'normal' : i,
-          d = e.isDisabled,
-          p = e.onClick,
-          h = e.preventFocusShift,
-          m = e.renderActionMenu,
-          f = e.style,
-          v = e.testID,
-          y = e.withDarkBackground,
-          b = void 0 !== y && y
+          n = e.label,
+          r = void 0 === n ? c : n,
+          i = e.Icon,
+          o = void 0 === i ? s.a : i,
+          d = e.iconSize,
+          p = void 0 === d ? 'normal' : d,
+          h = e.isDisabled,
+          m = e.onClick,
+          f = e.preventFocusShift,
+          v = e.renderActionMenu,
+          y = e.style,
+          b = e.testID,
+          g = e.withDarkBackground,
+          _ = void 0 !== g && g
         return a.a.createElement(l.a, {
-          Icon: r,
-          accessibilityLabel: c,
-          activeColor: t || (b ? 'white' : void 0),
-          backgroundColor: b ? 'translucentBlack77' : 'transparent',
+          Icon: o,
+          accessibilityLabel: r,
+          activeColor: t || (_ ? 'white' : void 0),
+          backgroundColor: _ ? 'translucentBlack77' : 'transparent',
           behavioralEventContext: u,
-          color: b ? 'white' : 'gray700',
-          hoverLabel: { label: c },
-          iconSize: o,
-          isDisabled: d,
+          color: _ ? 'white' : 'gray700',
+          hoverLabel: { label: r },
+          iconSize: p,
+          isDisabled: h,
           onPress: function (e) {
-            e && e.preventDefault(), p && p(e)
+            e && e.preventDefault(), m && m(e)
           },
-          preventFocusShift: h,
-          renderMenu: m,
-          style: f,
-          testID: v,
+          preventFocusShift: f,
+          renderMenu: v,
+          style: y,
+          testID: b,
         })
       }
     },
@@ -30104,7 +30106,7 @@
           return {
             circle: { borderRadius: e.borderRadii.infinite, overflow: 'hidden' },
             container: { height: 'auto', width: '100%' },
-            itemAccessory: { top: -e.spacesPx.space24, right: -e.spacesPx.space24 },
+            itemAccessory: { top: -e.spacesPx.space24, right: -e.spacesPx.space16 },
             userDecoration: {
               fontSize: e.fontSizes.subtext3,
               position: 'absolute',

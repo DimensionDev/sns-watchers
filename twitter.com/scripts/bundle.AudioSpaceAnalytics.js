@@ -455,13 +455,13 @@
                     renderContent: function (t) {
                       return r.a.createElement(
                         c.a,
-                        { style: A.popover },
+                        { style: E.popover },
                         r.a.createElement(
                           c.a,
-                          { style: A.popoverTitle },
+                          { style: E.popoverTitle },
                           r.a.createElement(u.b, { size: 'title3', weight: 'heavy' }, e),
                         ),
-                        r.a.createElement(c.a, { style: A.popoverText }, n),
+                        r.a.createElement(c.a, { style: E.popoverText }, n),
                         r.a.createElement(l.a, { onPress: t, type: 'primaryOutlined' }, g),
                       )
                     },
@@ -470,7 +470,7 @@
                   r.a.createElement(_.a, {
                     accessibilityLabel: m,
                     accessibilityRole: 'tooltip',
-                    style: A.iconInformation,
+                    style: E.iconInformation,
                   }),
                 ),
               )
@@ -482,17 +482,17 @@
           return e
             ? r.a.createElement(
                 c.a,
-                { style: A.labelBar },
-                r.a.createElement(u.b, { color: 'gray700', size: 'subtext2', style: A.labelText, weight: 'medium' }, e),
+                { style: E.labelBar },
+                r.a.createElement(u.b, { color: 'gray700', size: 'subtext2', style: E.labelText, weight: 'medium' }, e),
                 r.a.createElement(N, { label: e, popover: n }),
               )
             : null
         },
-        E = function (t) {
-          var e = t.unit
-          return e ? r.a.createElement(u.b, { color: 'gray700', style: A.unitText, weight: 'medium' }, e) : null
-        },
         j = function (t) {
+          var e = t.unit
+          return e ? r.a.createElement(u.b, { color: 'gray700', style: E.unitText, weight: 'medium' }, e) : null
+        },
+        A = function (t) {
           var e,
             n,
             i = t.trendValue
@@ -512,8 +512,8 @@
               i < 0
                 ? r.a.createElement(
                     c.a,
-                    { accessibilityLabel: n, style: A.trendBar },
-                    r.a.createElement(h.a, { style: A.trendIconNeg }),
+                    { accessibilityLabel: n, style: E.trendBar },
+                    r.a.createElement(h.a, { style: E.trendIconNeg }),
                     r.a.createElement(
                       u.b,
                       { accessibilityHidden: !0, color: 'red500', size: 'body', weight: 'medium' },
@@ -523,8 +523,8 @@
                 : 0 === i
                 ? r.a.createElement(
                     c.a,
-                    { accessibilityLabel: n, style: A.trendBar },
-                    r.a.createElement(d.a, { style: A.trendIconZero }),
+                    { accessibilityLabel: n, style: E.trendBar },
+                    r.a.createElement(d.a, { style: E.trendIconZero }),
                     r.a.createElement(
                       u.b,
                       { accessibilityHidden: !0, color: 'gray700', size: 'body', weight: 'medium' },
@@ -533,8 +533,8 @@
                   )
                 : r.a.createElement(
                     c.a,
-                    { accessibilityLabel: n, style: A.trendBar },
-                    r.a.createElement(v.a, { style: A.trendIconPos }),
+                    { accessibilityLabel: n, style: E.trendBar },
+                    r.a.createElement(v.a, { style: E.trendIconPos }),
                     r.a.createElement(
                       u.b,
                       { accessibilityHidden: !0, color: 'green500', size: 'body', weight: 'medium' },
@@ -542,7 +542,7 @@
                     ),
                   ))
         },
-        A = s.a.create(function (t) {
+        E = s.a.create(function (t) {
           return {
             dataPoint: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start' },
             labelBar: { display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: t.spaces.space2 },
@@ -595,16 +595,16 @@
           _ = t.value
         return r.a.createElement(
           c.a,
-          { style: A.dataPoint },
+          { style: E.dataPoint },
           r.a.createElement(V, { label: i, popover: a }),
           r.a.createElement(
             c.a,
-            { style: A.valueBar },
+            { style: E.valueBar },
             e
               ? r.a.createElement(f.a, { count: n, size: o, weight: 'bold' }, _)
               : r.a.createElement(u.b, { size: o, weight: 'bold' }, _),
-            r.a.createElement(E, { unit: p }),
-            r.a.createElement(j, { trendValue: l }),
+            r.a.createElement(j, { unit: p }),
+            r.a.createElement(A, { trendValue: l }),
           ),
           s,
         )
@@ -1140,37 +1140,35 @@
       'use strict'
       n.r(e),
         n.d(e, 'AudioSpaceAnalytics', function () {
-          return D
+          return x
         })
       var i,
-        r = n('97Jx'),
+        r = n('ddV6'),
         a = n.n(r),
-        o = n('ddV6'),
+        o = (n('KqXw'), n('WNMA'), n('ERkP')),
         s = n.n(o),
-        c = (n('KqXw'), n('WNMA'), n('ERkP')),
-        u = n.n(c),
-        l = n('Pc/x'),
-        p = n('KEM+'),
-        f = n.n(p),
-        _ = (n('z84I'), n('TJCb'), n('7x/C'), n('DZ+c'), n('yH/f'), n('7lsG')),
-        h = n('Z5jE'),
-        d = n('3XMw'),
-        v = n.n(d),
-        m = n('dgjd'),
-        g = n('MWbm'),
-        y = n('8bFt'),
-        b = n('MH+I'),
-        O = n('rHpw')
-      var w = function (t, e, n) {
+        c = n('Pc/x'),
+        u = n('KEM+'),
+        l = n.n(u),
+        p = (n('z84I'), n('TJCb'), n('7x/C'), n('DZ+c'), n('yH/f'), n('7lsG')),
+        f = n('Z5jE'),
+        _ = n('3XMw'),
+        h = n.n(_),
+        d = n('dgjd'),
+        v = n('MWbm'),
+        m = n('8bFt'),
+        g = n('MH+I'),
+        y = n('rHpw')
+      var b = function (t, e, n) {
           var i,
-            r = A[t],
+            r = j[t],
             a = r.label,
             o = r.popover
-          return (i = t === E.Duration ? V(e) : N(t, e))
-            ? u.a.createElement(y.a, { key: t, label: a, popover: o, size: n, value: i })
+          return (i = t === N.Duration ? w(e) : O(t, e))
+            ? s.a.createElement(m.a, { key: t, label: a, popover: o, size: n, value: i })
             : null
         },
-        N = function (t, e) {
+        O = function (t, e) {
           var n,
             i,
             r,
@@ -1180,19 +1178,19 @@
             c = null == a ? void 0 : a.total_live_listeners,
             u = null == a ? void 0 : a.total_replay_watched
           switch (t) {
-            case E.Cohosts:
+            case N.Cohosts:
               r = null == a ? void 0 : a.cohosts.length
               break
-            case E.LiveListeners:
+            case N.LiveListeners:
               r = s ? c : void 0
               break
-            case E.RecordingReplays:
+            case N.RecordingReplays:
               r = s ? u : void 0
               break
-            case E.Speakers:
+            case N.Speakers:
               r = null == a || null === (n = a.participants) || void 0 === n ? void 0 : n.speakers.length
               break
-            case E.TunedIn:
+            case N.TunedIn:
               r = o.getTunedInCount()
               break
             default:
@@ -1200,15 +1198,15 @@
           }
           return (null === (i = r) || void 0 === i ? void 0 : i.toString()) || null
         },
-        V = function (t) {
+        w = function (t) {
           var e = t.space,
             n = null == e ? void 0 : e.ended_at,
             i = null == e ? void 0 : e.started_at
           if (!n || !i) return null
           var r = n - i
-          return u.a.createElement(b.a, { narrow: !0, timeMs: r })
+          return s.a.createElement(g.a, { narrow: !0, timeMs: r })
         },
-        E = Object.freeze({
+        N = Object.freeze({
           Cohosts: 'Cohosts',
           Duration: 'Duration',
           LiveListeners: 'LiveListeners',
@@ -1216,17 +1214,17 @@
           Speakers: 'Speakers',
           TunedIn: 'TunedIn',
         }),
-        j = [E.LiveListeners, E.RecordingReplays, E.Cohosts, E.Speakers, E.Duration],
-        A =
+        V = [N.LiveListeners, N.RecordingReplays, N.Cohosts, N.Speakers, N.Duration],
+        j =
           ((i = {}),
-          f()(i, E.Cohosts, { label: v.a.i2caef48 }),
-          f()(i, E.Duration, { label: v.a.d9d6e10e }),
-          f()(i, E.LiveListeners, { label: v.a.fcb205d9 }),
-          f()(i, E.RecordingReplays, { label: v.a.jb088200 }),
-          f()(i, E.Speakers, { label: v.a.j245c654 }),
-          f()(i, E.TunedIn, { label: v.a.if653289 }),
+          l()(i, N.Cohosts, { label: h.a.i2caef48 }),
+          l()(i, N.Duration, { label: h.a.d9d6e10e }),
+          l()(i, N.LiveListeners, { label: h.a.fcb205d9 }),
+          l()(i, N.RecordingReplays, { label: h.a.jb088200 }),
+          l()(i, N.Speakers, { label: h.a.j245c654 }),
+          l()(i, N.TunedIn, { label: h.a.if653289 }),
           i),
-        P = O.a.create(function (t) {
+        A = y.a.create(function (t) {
           return {
             cardContainer: { marginTop: t.spaces.space12 },
             container: { paddingHorizontal: t.spaces.space16 },
@@ -1234,63 +1232,62 @@
               display: 'grid',
               marginBottom: t.spaces.space40,
               gridTemplateColumns: '1fr',
-              gridGap: O.a.theme.spaces.space40,
-              marginTop: O.a.theme.spaces.space40,
-              marginHorizontal: O.a.theme.spaces.space32,
+              gridGap: y.a.theme.spaces.space40,
+              marginTop: y.a.theme.spaces.space40,
+              marginHorizontal: y.a.theme.spaces.space32,
             },
             minorDataPointsGrid: {
               display: 'grid',
               gridTemplateColumns: 'repeat(2, 1fr)',
-              gridGap: O.a.theme.spaces.space40,
+              gridGap: y.a.theme.spaces.space40,
             },
           }
         }),
-        S = function (t) {
-          var e = Object(h.a)(t.match),
-            n = Object(m.a)(e)
-          return u.a.createElement(
-            u.a.Fragment,
+        E = function (t) {
+          var e = Object(f.a)(t.match),
+            n = Object(d.a)(e)
+          return s.a.createElement(
+            s.a.Fragment,
             null,
-            u.a.createElement(
-              g.a,
-              { style: P.container },
-              u.a.createElement(
-                g.a,
-                { style: P.cardContainer },
-                u.a.createElement(_.a, { audioSpaceId: e, isInteractive: !1, withoutButton: !0 }),
+            s.a.createElement(
+              v.a,
+              { style: A.container },
+              s.a.createElement(
+                v.a,
+                { style: A.cardContainer },
+                s.a.createElement(p.a, { audioSpaceId: e, isInteractive: !1, withoutButton: !0 }),
               ),
             ),
-            u.a.createElement(
-              g.a,
-              { style: P.grid },
-              w(E.TunedIn, n, 'title1'),
-              u.a.createElement(
-                g.a,
-                { style: P.minorDataPointsGrid },
-                j.map(function (t) {
-                  return w(t, n, 'title3')
+            s.a.createElement(
+              v.a,
+              { style: A.grid },
+              b(N.TunedIn, n, 'title1'),
+              s.a.createElement(
+                v.a,
+                { style: A.minorDataPointsGrid },
+                V.map(function (t) {
+                  return b(t, n, 'title3')
                 }),
               ),
             ),
           )
         },
-        T = n('hOZg'),
-        I = n('aITJ'),
-        k = n('Tg44'),
-        C = n('q9Zt'),
-        x = n('/yvb'),
-        L = n('sgih'),
-        R = n('xKuM')
-      function D(t) {
-        var e = u.a.useState(void 0),
-          n = s()(e, 2),
+        P = n('aITJ'),
+        S = n('Tg44'),
+        T = n('q9Zt'),
+        I = n('5Vk4'),
+        k = n('sgih'),
+        C = n('xKuM')
+      function x(t) {
+        var e = s.a.useState(void 0),
+          n = a()(e, 2),
           i = n[0],
           r = n[1],
-          o = Object(h.a)(t.match),
-          c = Object(m.a)(o).utils,
-          p = c.state() === k.a.StateEnum.unavailable
-        u.a.useEffect(function () {
-          l.a.proxsee
+          o = Object(f.a)(t.match),
+          u = Object(d.a)(o).utils,
+          l = u.state() === S.a.StateEnum.unavailable
+        s.a.useEffect(function () {
+          c.a.proxsee
             .login()
             .then(function () {
               r(!0)
@@ -1299,52 +1296,40 @@
               r(!1)
             })
         }, [])
-        var f = function () {
+        var p = function () {
             return t.history.goBackThroughModals()
           },
-          _ = u.a.createElement(
-            x.a,
-            a()(
-              {
-                accessibilityLabel: '',
-                icon: u.a.createElement(T.a, { style: U.closeIcon }),
-                onPress: f,
-                pullLeft: !0,
-              },
-              F,
-            ),
-          )
-        return void 0 !== c.state() && void 0 !== i
-          ? u.a.createElement(
-              L.a,
+          _ = s.a.createElement(I.a, { backButtonType: 'close', onClick: p })
+        return void 0 !== u.state() && void 0 !== i
+          ? s.a.createElement(
+              k.a,
               {
                 accessibilityRole: 'menu',
                 allowBackNavigation: !0,
                 enableMaskForDismiss: !0,
-                onMaskClick: f,
+                onMaskClick: p,
                 type: 'full',
                 withKeyboardNavigation: !0,
                 withMask: !0,
               },
-              !I.b.isTwitterApp() &&
-                u.a.createElement(R.a, { leftControl: _, style: U.appBar, title: M.title, withGutter: !0 }),
+              !P.b.isTwitterApp() &&
+                s.a.createElement(C.a, { leftControl: _, style: R.appBar, title: L.title, withGutter: !0 }),
               !1 === i
-                ? u.a.createElement(C.a, { onRetry: null, title: M.wrongUser })
-                : p
-                ? u.a.createElement(C.a, { onRetry: null, title: M.genericError })
-                : u.a.createElement(S, t),
+                ? s.a.createElement(T.a, { onRetry: null, title: L.wrongUser })
+                : l
+                ? s.a.createElement(T.a, { onRetry: null, title: L.genericError })
+                : s.a.createElement(E, t),
             )
           : null
       }
-      var M = { title: v.a.g7e3d2a4, wrongUser: v.a.abebdfad, genericError: v.a.ef4602eb },
-        F = { borderColor: 'transparent', color: 'text', size: 'medium' },
-        U = O.a.create(function (t) {
+      var L = { title: h.a.g7e3d2a4, wrongUser: h.a.abebdfad, genericError: h.a.ef4602eb },
+        R = y.a.create(function (t) {
           return {
             appBar: { paddingVertical: t.spaces.space8 },
             closeIcon: { width: t.spaces.space20, height: t.spaces.space20 },
           }
         })
-      e.default = D
+      e.default = x
     },
     RjwM: function (t, e, n) {
       'use strict'
@@ -1716,7 +1701,7 @@
           var n = null != arguments[e] ? arguments[e] : {}
           e % 2
             ? N(Object(n), !0).forEach(function (e) {
-                E(t, e, n[e])
+                j(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
@@ -1726,7 +1711,7 @@
         }
         return t
       }
-      function E(t, e, n) {
+      function j(t, e, n) {
         return (
           e in t
             ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
@@ -1734,14 +1719,14 @@
           t
         )
       }
-      function j(t, e) {
-        return (j =
+      function A(t, e) {
+        return (A =
           Object.setPrototypeOf ||
           function (t, e) {
             return (t.__proto__ = e), t
           })(t, e)
       }
-      var A = (function (t) {
+      var E = (function (t) {
         var e, n
         function i(e, n) {
           var i
@@ -1754,7 +1739,7 @@
             i
           )
         }
-        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), j(e, n)
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), A(e, n)
         var r = i.prototype
         return (
           (r.__getValue = function () {
@@ -2003,7 +1988,7 @@
             (c._attachProps = function (t) {
               var e = this._propsAnimated
               t !== e &&
-                ((this._propsAnimated = new A(t, this._animatedPropsCallback)),
+                ((this._propsAnimated = new E(t, this._animatedPropsCallback)),
                 e && (e.__restoreDefaultValues(), e.__detach()))
             }),
             (c.render = function () {
@@ -2805,7 +2790,7 @@
             return (t.__proto__ = e), t
           })(t, e)
       }
-      var Et = (function (t) {
+      var jt = (function (t) {
         var e, n
         function i(e, n) {
           var i
@@ -2839,14 +2824,14 @@
           i
         )
       })(h.a)
-      function jt(t, e) {
-        return (jt =
+      function At(t, e) {
+        return (At =
           Object.setPrototypeOf ||
           function (t, e) {
             return (t.__proto__ = e), t
           })(t, e)
       }
-      var At = (function (t) {
+      var Et = (function (t) {
         var e, n
         function i(e, n) {
           var i
@@ -2856,7 +2841,7 @@
             i
           )
         }
-        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), jt(e, n)
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), At(e, n)
         var r = i.prototype
         return (
           (r.__makeNative = function () {
@@ -3201,13 +3186,13 @@
           return new mt(t, e)
         },
         subtract: function (t, e) {
-          return new At(t, e)
+          return new Et(t, e)
         },
         divide: function (t, e) {
           return new Ot(t, e)
         },
         multiply: function (t, e) {
-          return new Et(t, e)
+          return new jt(t, e)
         },
         modulo: function (t, e) {
           return new Nt(t, e)
@@ -3277,7 +3262,7 @@
           t && t instanceof f && t.__removeListener(e)
         },
         Event: f,
-        __PropsOnlyForTests: A,
+        __PropsOnlyForTests: E,
       }
       function Gt(t, e) {
         var n = Object.keys(t)
@@ -3385,7 +3370,7 @@
           forkEvent: Wt.forkEvent,
           unforkEvent: Wt.unforkEvent,
           Event: f,
-          __PropsOnlyForTests: A,
+          __PropsOnlyForTests: E,
         }
       function Qt(t, e) {
         var n = Object.keys(t)

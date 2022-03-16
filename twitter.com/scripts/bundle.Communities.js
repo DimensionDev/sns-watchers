@@ -15,13 +15,13 @@
           { args: null, kind: 'FragmentSpread', name: 'CommunityBannerImage_community' },
           { args: null, kind: 'FragmentSpread', name: 'CommunityDescriptionContainer_community' },
           { args: null, kind: 'FragmentSpread', name: 'CommunityDescriptionToggle_community' },
-          { args: null, kind: 'FragmentSpread', name: 'CommunityFacePile_community' },
+          { args: null, kind: 'FragmentSpread', name: 'CommunityDetailFacePile_community' },
           { args: null, kind: 'FragmentSpread', name: 'CommunityShareButton_community' },
           { args: null, kind: 'FragmentSpread', name: 'CommunityInviteButton_community' },
         ],
         type: 'Community',
         abstractKey: null,
-        hash: '5df6e53462b5169f1ce54924808d6373',
+        hash: 'fcba88c15f68bb3f4cd44f88c073bd2b',
       }
       t.default = a
     },
@@ -44,20 +44,41 @@
       }
       t.default = a
     },
+    '08/x': function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'CommunitiesSearchItem_item',
+        selections: [
+          { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null },
+          { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+          { alias: null, args: null, kind: 'ScalarField', name: 'member_count', storageKey: null },
+          { args: null, kind: 'FragmentSpread', name: 'CommunityFacePile_community' },
+          { args: null, kind: 'FragmentSpread', name: 'useCommunityBannerImageThumbnail_community' },
+        ],
+        type: 'Community',
+        abstractKey: null,
+        hash: '782e9c4c64c2c403f9d74b62979e20ff',
+      }
+      t.default = a
+    },
     '0ULw': function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -65,31 +86,31 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
               }),
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     '0weh': function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -97,25 +118,50 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M12 1.25C6.07 1.25 1.25 6.07 1.25 12S6.07 22.75 12 22.75 22.75 17.93 22.75 12 17.93 1.25 12 1.25zm0 20c-5.1 0-9.25-4.15-9.25-9.25S6.9 2.75 12 2.75 21.25 6.9 21.25 12 17.1 21.25 12 21.25z',
               }),
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M13.37 16.19c0 .76-.61 1.37-1.37 1.37s-1.38-.61-1.38-1.37.62-1.38 1.38-1.38 1.37.62 1.37 1.38zm.35-7.66l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z',
               }),
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
+    },
+    '1Xyu': function (e, t, n) {
+      'use strict'
+      n.d(t, 'b', function () {
+        return c
+      })
+      var a,
+        l = n('ERkP'),
+        i = n.n(l),
+        r = n('X00g'),
+        o = (n('enFi'), n('jAXQ')),
+        s = n.n(o),
+        c = function (e) {
+          var t = s()(void 0 !== a ? a : (a = n('DCZs')), e),
+            l = t.custom_theme,
+            o = t.default_theme,
+            c = null != l ? l : o
+          return i.a.useMemo(
+            function () {
+              return r.a.getCommunityTheme(c)
+            },
+            [c],
+          )
+        }
+      t.a = c
     },
     '1rMX': function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -161,13 +207,13 @@
           type: 'Community',
           abstractKey: null,
         }
-      ;(r.hash = '022bcdc6e350ca307350d7e3cb0d6ee6'), (t.default = r)
+      ;(l.hash = '022bcdc6e350ca307350d7e3cb0d6ee6'), (t.default = l)
     },
     '1tGk': function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -219,18 +265,18 @@
           type: 'Community',
           abstractKey: null,
         }
-      ;(r.hash = 'f262a0b856bd8c72e36d85f867484e9b'), (t.default = r)
+      ;(l.hash = 'f262a0b856bd8c72e36d85f867484e9b'), (t.default = l)
     },
     '21U8': function (e, t, n) {
       'use strict'
       var a = n('VrFO'),
-        r = n.n(a),
-        l = n('Y9Ll'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('Y9Ll'),
+        r = n.n(i),
         o = n('1Pcy'),
-        c = n.n(o),
-        s = n('5Yy7'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('5Yy7'),
+        u = n.n(c),
         m = n('2VqO'),
         d = n.n(m),
         y = n('KEM+'),
@@ -268,87 +314,87 @@
         w = n.n(I),
         T = n('m3Bd'),
         K = n.n(T),
-        M = n('CHgo'),
-        x = n('7ep7'),
-        R = ['children', 'onPanEnd', 'onPanMove', 'onPinchMove', 'onWheel'],
-        L = (function (e) {
+        L = n('CHgo'),
+        M = n('7ep7'),
+        x = ['children', 'onPanEnd', 'onPanMove', 'onPinchMove', 'onWheel'],
+        R = (function (e) {
           u()(n, e)
           var t = d()(n)
           function n(e) {
             var a
             return (
-              r()(this, n),
+              l()(this, n),
               (a = t.call(this, e)),
-              p()(c()(a), '_previousTouchDistance', 0),
-              p()(c()(a), '_previousPositionX', 0),
-              p()(c()(a), '_previousPositionY', 0),
-              p()(c()(a), '_centerPosition', { x: 0, y: 0 }),
-              p()(c()(a), '_panResponder', {}),
-              p()(c()(a), '_setRef', function (e) {
+              p()(s()(a), '_previousTouchDistance', 0),
+              p()(s()(a), '_previousPositionX', 0),
+              p()(s()(a), '_previousPositionY', 0),
+              p()(s()(a), '_centerPosition', { x: 0, y: 0 }),
+              p()(s()(a), '_panResponder', {}),
+              p()(s()(a), '_setRef', function (e) {
                 var t = a.props,
                   n = t.onPanEnd,
-                  r = t.onPanMove,
-                  l = t.onPinchMove,
-                  i = t.onWheel
+                  l = t.onPanMove,
+                  i = t.onPinchMove,
+                  r = t.onWheel
                 if (e) {
-                  ;(r || n || l) && (a._removeTouchMoveToScrollListener = Object(M.a)(e, a._preventDefaultEvent, !1)),
-                    i && (a._removeScrollToScaleListener = Object(M.b)(e, a._preventDefaultEvent, !1))
+                  ;(l || n || i) && (a._removeTouchMoveToScrollListener = Object(L.a)(e, a._preventDefaultEvent, !1)),
+                    r && (a._removeScrollToScaleListener = Object(L.b)(e, a._preventDefaultEvent, !1))
                   var o = e.getBoundingClientRect()
                   a._centerPosition = { x: o.width / 2 + o.left, y: o.height / 2 + o.top }
                 }
               }),
-              p()(c()(a), '_preventDefaultEvent', function (e) {
+              p()(s()(a), '_preventDefaultEvent', function (e) {
                 e.preventDefault()
               }),
-              p()(c()(a), '_handlePanResponderMove', function (e, t) {
+              p()(s()(a), '_handlePanResponderMove', function (e, t) {
                 var n,
-                  r,
-                  l = a.props,
-                  i = l.onPanMove,
-                  o = l.onPinchMove,
-                  c = e.nativeEvent.touches
+                  l,
+                  i = a.props,
+                  r = i.onPanMove,
+                  o = i.onPinchMove,
+                  s = e.nativeEvent.touches
                 if (2 === t.numberActiveTouches) {
                   if (o) {
-                    var s =
-                        ((n = c[0]),
-                        (r = c[1]),
-                        Math.sqrt(Math.pow(n.pageY - r.pageY, 2) + Math.pow(n.pageX - r.pageX, 2))),
+                    var c =
+                        ((n = s[0]),
+                        (l = s[1]),
+                        Math.sqrt(Math.pow(n.pageY - l.pageY, 2) + Math.pow(n.pageX - l.pageX, 2))),
                       u = (function (e, t) {
                         return {
                           pageX: Math.min(t.pageX, e.pageX) + Math.abs(t.pageX - e.pageX) / 2,
                           pageY: Math.min(t.pageY, e.pageY) + Math.abs(t.pageY - e.pageY) / 2,
                         }
-                      })(c[0], c[1]),
+                      })(s[0], s[1]),
                       m = u.pageX,
                       d = u.pageY,
                       y = a._previousPositionX ? m - a._previousPositionX : 0,
                       p = a._previousPositionY ? d - a._previousPositionY : 0,
-                      g = a._previousTouchDistance ? s - a._previousTouchDistance : 0
-                    ;(a._previousPositionX = m), (a._previousPositionY = d), (a._previousTouchDistance = s)
+                      g = a._previousTouchDistance ? c - a._previousTouchDistance : 0
+                    ;(a._previousPositionX = m), (a._previousPositionY = d), (a._previousTouchDistance = c)
                     var f = a._centerPosition
                     o(g, f.x - m, f.y - d, y, p)
                   }
-                } else i && i(t.dx, t.dy)
+                } else r && r(t.dx, t.dy)
                 document.addEventListener('selectstart', a._preventDefaultEvent, !1)
               }),
-              p()(c()(a), '_handlePanResponderEnd', function (e, t) {
+              p()(s()(a), '_handlePanResponderEnd', function (e, t) {
                 a.props.onPanEnd && a.props.onPanEnd(t.dx, t.dy),
                   a.props.onPinchMove && (a._previousTouchDistance = 0),
                   (a._previousPositionX = 0),
                   (a._previousPositionY = 0),
                   a._removeSelectStartListener()
               }),
-              p()(c()(a), '_handleWheel', function (e) {
+              p()(s()(a), '_handleWheel', function (e) {
                 var t = e.clientX,
                   n = e.clientY,
-                  r = e.deltaX,
-                  l = e.deltaY,
-                  i = a._centerPosition,
-                  o = i.x - t,
-                  c = i.y - n
-                a.props.onWheel && a.props.onWheel(r, l, o, c)
+                  l = e.deltaX,
+                  i = e.deltaY,
+                  r = a._centerPosition,
+                  o = r.x - t,
+                  s = r.y - n
+                a.props.onWheel && a.props.onWheel(l, i, o, s)
               }),
-              (a._panResponder = x.a.create({
+              (a._panResponder = M.a.create({
                 onStartShouldSetPanResponder: function () {
                   return !0
                 },
@@ -366,12 +412,12 @@
             )
           }
           return (
-            i()(n, [
+            r()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, K()(e, R))
+                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, K()(e, x))
                   return f.a.createElement(
                     E.a,
                     w()({}, t, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers),
@@ -496,8 +542,8 @@
           )
         }
       X.metadata = { width: 24, height: 24 }
-      var J = X,
-        Q = function () {
+      var Q = X,
+        J = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(H.a)(
             'svg',
@@ -522,8 +568,8 @@
             ),
           )
         }
-      Q.metadata = { width: 24, height: 24 }
-      var G = Q,
+      J.metadata = { width: 24, height: 24 }
+      var G = J,
         Y = v.a.d85bc1b8,
         Z = v.a.f596ace8,
         $ = v.a.df031fca,
@@ -531,53 +577,53 @@
         te = v.a.e547b368,
         ne = v.a.f7571204,
         ae = v.a.e6e16811,
-        re =
+        le =
           Math.log2 ||
           function (e) {
             return Math.log(e) * Math.LOG2E
           },
-        le = (function (e) {
+        ie = (function (e) {
           u()(n, e)
           var t = d()(n)
           function n(e) {
-            var a, l
+            var a, i
             return (
-              r()(this, n),
+              l()(this, n),
               (a = t.call(this, e)),
-              p()(c()(a), '_previousLeft', 0),
-              p()(c()(a), '_previousTop', 0),
-              p()(c()(a), '_panStyles', { top: 0, left: 0 }),
-              p()(c()(a), '_shouldShowZoomControl', function () {
+              p()(s()(a), '_previousLeft', 0),
+              p()(s()(a), '_previousTop', 0),
+              p()(s()(a), '_panStyles', { top: 0, left: 0 }),
+              p()(s()(a), '_shouldShowZoomControl', function () {
                 return (!j.b.isMobileOS() || !A.a.isTouchSupported()) && a.props.withZoomControl
               }),
-              p()(c()(a), '_renderControls', function () {
+              p()(s()(a), '_renderControls', function () {
                 var e = a.props,
                   t = e.image,
                   n = e.withAspectRatioOptions,
-                  r = a.state.aspectRatio,
-                  l = t.width / t.height,
-                  i = a._shouldShowZoomControl()
-                return n || i
+                  l = a.state.aspectRatio,
+                  i = t.width / t.height,
+                  r = a._shouldShowZoomControl()
+                return n || r
                   ? f.a.createElement(
                       E.a,
-                      { style: ie.controlsContainer },
+                      { style: re.controlsContainer },
                       n
                         ? f.a.createElement(
                             E.a,
-                            { style: ie.ratioContainer },
+                            { style: re.ratioContainer },
                             f.a.createElement(h.a, {
                               accessibilityLabel: Z,
                               borderColor: 'transparent',
-                              color: r === l ? 'primary' : 'gray700',
+                              color: l === i ? 'primary' : 'gray700',
                               hoverLabel: { label: te },
                               icon: f.a.createElement(U, null),
-                              onPress: a._setAspectRatio(l),
+                              onPress: a._setAspectRatio(i),
                               size: 'medium',
                             }),
                             f.a.createElement(h.a, {
                               accessibilityLabel: $,
                               borderColor: 'transparent',
-                              color: r === 16 / 9 ? 'primary' : 'gray700',
+                              color: l === 16 / 9 ? 'primary' : 'gray700',
                               hoverLabel: { label: ne },
                               icon: f.a.createElement(V, null),
                               onPress: a._setAspectRatio(16 / 9),
@@ -586,7 +632,7 @@
                             f.a.createElement(h.a, {
                               accessibilityLabel: ee,
                               borderColor: 'transparent',
-                              color: 1 === r ? 'primary' : 'gray700',
+                              color: 1 === l ? 'primary' : 'gray700',
                               hoverLabel: { label: ae },
                               icon: f.a.createElement(W, null),
                               onPress: a._setAspectRatio(1),
@@ -594,16 +640,16 @@
                             }),
                           )
                         : null,
-                      i
+                      r
                         ? f.a.createElement(
                             E.a,
-                            { style: ie.zoomContainer },
+                            { style: re.zoomContainer },
                             f.a.createElement(O.a, {
                               accessibilityLabel: Y,
                               max: a._maxScale,
-                              maxIcon: f.a.createElement(J, { style: ie.icon }),
+                              maxIcon: f.a.createElement(Q, { style: re.icon }),
                               min: 0,
-                              minIcon: f.a.createElement(G, { style: ie.icon }),
+                              minIcon: f.a.createElement(G, { style: re.icon }),
                               onChange: a._handleScaleChange,
                               step: 'any',
                               value: a.state.imageScale,
@@ -613,111 +659,111 @@
                     )
                   : null
               }),
-              p()(c()(a), '_setImageRef', function (e) {
+              p()(s()(a), '_setImageRef', function (e) {
                 a._imageRef = e
               }),
-              p()(c()(a), '_handleScaleChange', function (e) {
+              p()(s()(a), '_handleScaleChange', function (e) {
                 a.setState({ imageScale: e })
               }),
-              p()(c()(a), '_getImageDimensions', function () {
+              p()(s()(a), '_getImageDimensions', function () {
                 var e = a.state.imageScale,
                   t = a.props.image.width / a.props.image.height,
                   n = a._getMaskDimensions(),
-                  r = n.height,
-                  l = n.width,
-                  i = F.a.getCoverDimensions({ width: l, height: r }, t),
-                  o = i.height
-                return { width: i.width * Math.pow(2, e), height: o * Math.pow(2, e) }
+                  l = n.height,
+                  i = n.width,
+                  r = F.a.getCoverDimensions({ width: i, height: l }, t),
+                  o = r.height
+                return { width: r.width * Math.pow(2, e), height: o * Math.pow(2, e) }
               }),
-              p()(c()(a), '_getMaskDimensions', function () {
+              p()(s()(a), '_getMaskDimensions', function () {
                 var e = a.state,
                   t = e.aspectRatio,
                   n = e.containerHeight,
-                  r = e.containerWidth,
-                  l = F.a.getContainDimensions({ width: r - 50, height: n - 50 }, t),
-                  i = l.height
-                return { width: l.width, height: i }
+                  l = e.containerWidth,
+                  i = F.a.getContainDimensions({ width: l - 50, height: n - 50 }, t),
+                  r = i.height
+                return { width: i.width, height: r }
               }),
-              p()(c()(a), '_handleLayout', function (e) {
+              p()(s()(a), '_handleLayout', function (e) {
                 var t = e.nativeEvent.layout,
                   n = t.height,
-                  r = t.width
+                  l = t.width
                 a.state.containerHeight || a.state.containerWidth
-                  ? a.setState({ containerHeight: n, containerWidth: r })
-                  : (a.setState({ containerHeight: n, containerWidth: r }), a._setDefaultCropData())
+                  ? a.setState({ containerHeight: n, containerWidth: l })
+                  : (a.setState({ containerHeight: n, containerWidth: l }), a._setDefaultCropData())
               }),
-              p()(c()(a), '_setDefaultCropData', function () {
+              p()(s()(a), '_setDefaultCropData', function () {
                 var e = a.props,
                   t = e.defaultCropData,
                   n = e.image
                 if (t) {
-                  var r = a._getImageDimensions().width,
-                    l = a._getMaskDimensions().width,
-                    i = r / n.width,
-                    o = re(l / (t.width * i))
+                  var l = a._getImageDimensions().width,
+                    i = a._getMaskDimensions().width,
+                    r = l / n.width,
+                    o = le(i / (t.width * r))
                   a.setState({ imageScale: o })
-                  var c = a._getUnscaledCropData(),
-                    s = c.left,
-                    u = c.top
-                  ;(a._panStyles.top = u - t.top * i * Math.pow(2, o)),
+                  var s = a._getUnscaledCropData(),
+                    c = s.left,
+                    u = s.top
+                  ;(a._panStyles.top = u - t.top * r * Math.pow(2, o)),
                     (a._previousTop = a._panStyles.top),
-                    (a._panStyles.left = s - t.left * i * Math.pow(2, o)),
+                    (a._panStyles.left = c - t.left * r * Math.pow(2, o)),
                     (a._previousLeft = a._panStyles.left),
                     a._updateNativeStyles()
                 }
               }),
-              p()(c()(a), '_handleWheel', function (e, t, n, r) {
-                var l = (-1 * t) / 500
+              p()(s()(a), '_handleWheel', function (e, t, n, l) {
+                var i = (-1 * t) / 500
                 a.setState(function (e) {
                   var t = e.imageScale,
-                    i = Math.min(a._maxScale, Math.max(t + l, 0))
+                    r = Math.min(a._maxScale, Math.max(t + i, 0))
                   return (
-                    (a._panStyles.left += n * (i - t)),
-                    (a._panStyles.top += r * (i - t)),
+                    (a._panStyles.left += n * (r - t)),
+                    (a._panStyles.top += l * (r - t)),
                     (a._previousLeft = a._panStyles.left),
                     (a._previousTop = a._panStyles.top),
-                    { imageScale: i }
+                    { imageScale: r }
                   )
                 })
               }),
-              p()(c()(a), '_handlePanMove', function (e, t) {
+              p()(s()(a), '_handlePanMove', function (e, t) {
                 ;(a._panStyles.left = a._previousLeft + e),
                   (a._panStyles.top = a._previousTop + t),
                   a._updateNativeStyles(),
                   a._adjustToInBounds()
               }),
-              p()(c()(a), '_handlePanEnd', function (e, t) {
+              p()(s()(a), '_handlePanEnd', function (e, t) {
                 ;(a._previousLeft = a._panStyles.left), (a._previousTop = a._panStyles.top)
               }),
-              p()(c()(a), '_handlePinchMove', function (e, t, n, r, l) {
-                var i = e / 200
+              p()(s()(a), '_handlePinchMove', function (e, t, n, l, i) {
+                var r = e / 200
                 a.setState(function (e) {
                   var o = e.imageScale,
-                    c = Math.min(a._maxScale, Math.max(o + i, 0))
+                    s = Math.min(a._maxScale, Math.max(o + r, 0))
                   return (
-                    (a._panStyles.left += t * (c - o) + r),
-                    (a._panStyles.top += n * (c - o) + l),
+                    (a._panStyles.left += t * (s - o) + l),
+                    (a._panStyles.top += n * (s - o) + i),
                     (a._previousLeft = a._panStyles.left),
                     (a._previousTop = a._panStyles.top),
-                    { imageScale: c }
+                    { imageScale: s }
                   )
                 })
               }),
-              p()(c()(a), '_adjustToInBounds', function () {
+              p()(s()(a), '_adjustToInBounds', function () {
                 var e = a._getUnscaledCropData(),
                   t = a._getImageDimensions(),
                   n = e.left,
-                  r = e.top,
-                  l = e.left + e.width - t.width,
-                  i = e.top + e.height - t.height,
+                  l = e.top,
+                  i = e.left + e.width - t.width,
+                  r = e.top + e.height - t.height,
                   o = !1
                 n < 0 && ((o = !0), (a._panStyles.left += n), (a._previousLeft += n)),
-                  r < 0 && ((o = !0), (a._panStyles.top += r), (a._previousTop += r)),
-                  l > 0 && ((o = !0), (a._panStyles.left += l), (a._previousLeft += l)),
-                  i > 0 && ((o = !0), (a._panStyles.top += i), (a._previousTop += i)),
+                  l < 0 && ((o = !0), (a._panStyles.top += l), (a._previousTop += l)),
+                  i > 0 && ((o = !0), (a._panStyles.left += i), (a._previousLeft += i)),
+                  r > 0 && ((o = !0), (a._panStyles.top += r), (a._previousTop += r)),
                   o && a._updateNativeStyles()
               }),
-              p()(c()(a), '_updateNativeStyles', function () {
+              p()(s()(a), '_updateNativeStyles', function () {
                 var e = a._panStyles,
                   t = e.left,
                   n = e.top
@@ -726,18 +772,18 @@
                     style: { transform: [{ translate3d: ''.concat(t, 'px, ').concat(n, 'px, 0') }] },
                   })
               }),
-              p()(c()(a), '_getUnscaledCropData', function () {
+              p()(s()(a), '_getUnscaledCropData', function () {
                 var e = a._getImageDimensions(),
                   t = e.height,
                   n = e.width,
-                  r = a._getMaskDimensions(),
-                  l = r.height,
-                  i = r.width,
+                  l = a._getMaskDimensions(),
+                  i = l.height,
+                  r = l.width,
                   o = a._panStyles,
-                  c = o.left
-                return { top: (t - l) / 2 - o.top, left: (n - i) / 2 - c, width: i, height: l }
+                  s = o.left
+                return { top: (t - i) / 2 - o.top, left: (n - r) / 2 - s, width: r, height: i }
               }),
-              p()(c()(a), '_setAspectRatio', function (e) {
+              p()(s()(a), '_setAspectRatio', function (e) {
                 return function () {
                   a.setState({ aspectRatio: e })
                 }
@@ -748,12 +794,12 @@
                 containerHeight: 0,
                 containerWidth: 0,
               }),
-              (a._maxScale = ((l = e.image), Math.max(Math.min(re(l.width / 150), re(l.height / 150), 3), 0.5))),
+              (a._maxScale = ((i = e.image), Math.max(Math.min(le(i.width / 150), le(i.height / 150), 3), 0.5))),
               a
             )
           }
           return (
-            i()(n, [
+            r()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -761,25 +807,25 @@
                     t = e.circle,
                     n = e.image,
                     a = e.withZoomControl,
-                    r = this._getImageDimensions(),
-                    l = r.height,
-                    i = r.width,
+                    l = this._getImageDimensions(),
+                    i = l.height,
+                    r = l.width,
                     o = this._getMaskDimensions(),
-                    c = o.height,
-                    s = o.width,
+                    s = o.height,
+                    c = o.width,
                     u = this.state.containerWidth && this.state.containerHeight
                   return f.a.createElement(
                     E.a,
-                    { style: ie.container },
+                    { style: re.container },
                     f.a.createElement(
-                      L,
+                      R,
                       {
                         onLayout: this._handleLayout,
                         onPanEnd: this._handlePanEnd,
                         onPanMove: this._handlePanMove,
                         onPinchMove: a ? this._handlePinchMove : void 0,
                         onWheel: a ? this._handleWheel : void 0,
-                        style: ie.root,
+                        style: re.root,
                       },
                       u
                         ? f.a.createElement(
@@ -787,10 +833,10 @@
                             null,
                             f.a.createElement(_.a, {
                               ref: this._setImageRef,
-                              source: { uri: n.src, width: i, height: l },
-                              style: ie.image,
+                              source: { uri: n.src, width: r, height: i },
+                              style: re.image,
                             }),
-                            f.a.createElement(S, { circle: t, height: c, width: s }),
+                            f.a.createElement(S, { circle: t, height: s, width: c }),
                           )
                         : null,
                     ),
@@ -823,8 +869,8 @@
             n
           )
         })(f.a.Component)
-      p()(le, 'defaultProps', { circle: !1, withZoomControl: !0 })
-      var ie = k.a.create(function (e) {
+      p()(ie, 'defaultProps', { circle: !1, withZoomControl: !0 })
+      var re = k.a.create(function (e) {
         return {
           container: { flexGrow: 1, flexShrink: 1 },
           controlsContainer: {
@@ -864,34 +910,34 @@
           icon: { color: e.colors.gray700 },
         }
       })
-      t.a = le
+      t.a = ie
     },
     '21nk': function (e, t, n) {
       'use strict'
       var a = n('I9iR'),
-        r = n('3KVO'),
-        l = n('yLYC'),
-        i = n('Ud88'),
+        l = n('3KVO'),
+        i = n('yLYC'),
+        r = n('Ud88'),
         o = (n('/2Cm'), n('aQQo').useTrackLoadQueryInRender),
-        c = (n('ERkP').useDebugValue, n('K1lQ').__internal),
-        s = c.fetchQueryDeduped,
-        u = c.fetchQuery
+        s = (n('ERkP').useDebugValue, n('K1lQ').__internal),
+        c = s.fetchQueryDeduped,
+        u = s.fetchQuery
       e.exports = function (e, t, n) {
         o()
-        var c,
-          m = i(),
+        var s,
+          m = r(),
           d = t.fetchKey,
           y = t.fetchPolicy,
           p = t.source,
           g = t.variables,
           f = t.networkCacheConfig,
-          h = l(e, g, f)
+          h = i(e, g, f)
         if ('PreloadedQuery_DEPRECATED' === t.kind)
           h.request.node.params.name !== t.name && a(!1),
-            (c = {
+            (s = {
               componentDisplayName: 'usePreloadedQuery()',
               fetchKey: d,
-              fetchObservable: s(m, h.request.identifier, function () {
+              fetchObservable: c(m, h.request.identifier, function () {
                 return m === t.environment && null != p
                   ? m.executeWithSource({ operation: h, source: p })
                   : m.execute({ operation: h })
@@ -902,7 +948,7 @@
             })
         else {
           var b = u(m, h)
-          c = {
+          s = {
             componentDisplayName: 'usePreloadedQuery()',
             fetchObservable: null != p && m === t.environment ? p.ifEmpty(b) : (t.environment, b),
             fetchKey: d,
@@ -911,18 +957,18 @@
             renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
           }
         }
-        return r(c)
+        return l(s)
       }
     },
     '23An': function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = a.useEffect,
-        l = a.useRef
+        l = a.useEffect,
+        i = a.useRef
       e.exports = function () {
-        var e = l(!0)
+        var e = i(!0)
         return (
-          r(function () {
+          l(function () {
             return (
               (e.current = !0),
               function () {
@@ -938,7 +984,7 @@
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -960,19 +1006,19 @@
           type: 'Community',
           abstractKey: null,
         }
-      ;(r.hash = '8c8c438ea3efb83eebc0c6b3cd815b89'), (t.default = r)
+      ;(l.hash = '8c8c438ea3efb83eebc0c6b3cd815b89'), (t.default = l)
     },
     '3JAx': function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('fyvP'),
-        i = n('rHpw'),
+        l = n.n(a),
+        i = n('fyvP'),
+        r = n('rHpw'),
         o = n('MWbm')
       t.a = function (e) {
-        return r.a.createElement(o.a, { style: c.root }, r.a.createElement(l.a, e))
+        return l.a.createElement(o.a, { style: s.root }, l.a.createElement(i.a, e))
       }
-      var c = i.a.create(function (e) {
+      var s = r.a.create(function (e) {
         return {
           root: {
             backgroundColor: e.colors.cellBackground,
@@ -985,17 +1031,17 @@
     '5emT': function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -1003,34 +1049,34 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M14.548 11.634c-1.207 0-2.188-.98-2.188-2.188 0-.664.302-1.25.77-1.653-.363-.097-.736-.165-1.13-.165-2.416 0-4.375 1.96-4.375 4.376S9.585 16.38 12 16.38c2.418 0 4.377-1.96 4.377-4.376 0-.4-.07-.78-.17-1.146-.402.47-.992.776-1.66.776z',
               }),
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M12 19.79c-7.228 0-10.12-6.724-10.24-7.01-.254-.466-.254-1.105.035-1.642C1.88 10.923 4.772 4.2 12 4.2s10.12 6.723 10.24 7.01c.254.465.254 1.104-.035 1.64-.085.216-2.977 6.94-10.205 6.94zm0-14c-6.154 0-8.668 5.787-8.772 6.033-.068.135-.068.208-.033.273.137.316 2.65 6.104 8.805 6.104 6.18 0 8.747-5.973 8.772-6.033.07-.136.07-.21.034-.274-.138-.316-2.652-6.103-8.806-6.103z',
               }),
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     '7xtl': function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c = {
+        s = {
           fragment: {
             argumentDefinitions: [
               (a = { defaultValue: null, kind: 'LocalArgument', name: 'communityId' }),
-              (r = { defaultValue: null, kind: 'LocalArgument', name: 'role' }),
-              (l = { defaultValue: null, kind: 'LocalArgument', name: 'userId' }),
+              (l = { defaultValue: null, kind: 'LocalArgument', name: 'role' }),
+              (i = { defaultValue: null, kind: 'LocalArgument', name: 'userId' }),
             ],
             kind: 'Fragment',
             metadata: null,
@@ -1038,7 +1084,7 @@
             selections: [
               {
                 alias: null,
-                args: (i = [
+                args: (r = [
                   { kind: 'Variable', name: 'community_id', variableName: 'communityId' },
                   { kind: 'Variable', name: 'role', variableName: 'role' },
                   { kind: 'Literal', name: 's', value: 4 },
@@ -1059,13 +1105,13 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: [a, l, r],
+            argumentDefinitions: [a, i, l],
             kind: 'Operation',
             name: 'communityPeopleActionMenu_roleUpdate_Mutation',
             selections: [
               {
                 alias: null,
-                args: i,
+                args: r,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_role_put',
@@ -1083,7 +1129,7 @@
             text: null,
           },
         }
-      ;(c.hash = '611e4e6390b7bb405821b13d8b63cd5d'), (t.default = c)
+      ;(s.hash = '611e4e6390b7bb405821b13d8b63cd5d'), (t.default = s)
     },
     '8sFp': function (e, t, n) {
       'use strict'
@@ -1092,18 +1138,18 @@
           return d
         })
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('3XMw'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('3XMw'),
+        r = n.n(i),
         o = n('mw9i'),
-        c = n('FIs5'),
-        s = n('rHpw'),
-        u = i.a.c2117be6,
-        m = i.a.c2c4dad3
+        s = n('FIs5'),
+        c = n('rHpw'),
+        u = r.a.c2117be6,
+        m = r.a.c2c4dad3
       function d() {
-        return r.a.createElement(o.a, { style: y.root }, r.a.createElement(c.a, { header: u, message: m }))
+        return l.a.createElement(o.a, { style: y.root }, l.a.createElement(s.a, { header: u, message: m }))
       }
-      var y = s.a.create(function (e) {
+      var y = c.a.create(function (e) {
         return {
           root: { alignItems: 'center', justifyContent: 'center', flex: 1, backgroundColor: e.colors.cellBackground },
         }
@@ -1113,7 +1159,7 @@
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1218,66 +1264,66 @@
           type: 'CommunityJoinRequest',
           abstractKey: null,
         }
-      ;(r.hash = '7f75bd5ecaab944dfcc33f3a9fd04df5'), (t.default = r)
+      ;(l.hash = '7f75bd5ecaab944dfcc33f3a9fd04df5'), (t.default = l)
     },
     '9SqB': function (e, t, n) {
       'use strict'
       var a = n('IGGJ')(n('yiKp')),
-        r = n('ERkP'),
-        l = n('Ud88'),
-        i = n('K1lQ').commitMutation,
-        o = r.useState,
-        c = r.useEffect,
-        s = r.useRef,
-        u = r.useCallback,
+        l = n('ERkP'),
+        i = n('Ud88'),
+        r = n('K1lQ').commitMutation,
+        o = l.useState,
+        s = l.useEffect,
+        c = l.useRef,
+        u = l.useCallback,
         m = n('23An')
       e.exports = function (e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i,
-          n = l(),
-          r = m(),
-          d = s(n),
-          y = s(e),
-          p = s(new Set()),
+        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
+          n = i(),
+          l = m(),
+          d = c(n),
+          y = c(e),
+          p = c(new Set()),
           g = o(!1),
           f = g[0],
           h = g[1],
           b = u(
             function (t) {
-              d.current === n && y.current === e && (p.current.delete(t), r.current && h(p.current.size > 0))
+              d.current === n && y.current === e && (p.current.delete(t), l.current && h(p.current.size > 0))
             },
-            [n, r, e],
+            [n, l, e],
           )
-        c(
+        s(
           function () {
             ;(d.current === n && y.current === e) ||
-              ((p.current = new Set()), r.current && h(!1), (d.current = n), (y.current = e))
+              ((p.current = new Set()), l.current && h(!1), (d.current = n), (y.current = e))
           },
-          [n, r, e],
+          [n, l, e],
         )
         var v = u(
-          function (l) {
-            var i = t(
+          function (i) {
+            var r = t(
               n,
               (0, a.default)(
-                (0, a.default)({}, l),
+                (0, a.default)({}, i),
                 {},
                 {
                   mutation: e,
                   onCompleted: function (e, t) {
-                    b(i), l.onCompleted && l.onCompleted(e, t)
+                    b(r), i.onCompleted && i.onCompleted(e, t)
                   },
                   onError: function (e) {
-                    b(i), l.onError && l.onError(e)
+                    b(r), i.onError && i.onError(e)
                   },
                   onUnsubscribe: function () {
-                    b(i), l.onUnsubscribe && l.onUnsubscribe()
+                    b(r), i.onUnsubscribe && i.onUnsubscribe()
                   },
                 },
               ),
             )
-            return p.current.add(i), r.current && h(!0), i
+            return p.current.add(r), l.current && h(!0), r
           },
-          [b, t, n, r, e],
+          [b, t, n, l, e],
         )
         return [v, f]
       }
@@ -1288,24 +1334,24 @@
         return d
       })
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('eb3s'),
-        i = n('3XMw'),
-        o = n.n(i),
-        c = o.a.d45ae5e0,
-        s = o.a.c1631260,
+        l = n.n(a),
+        i = n('eb3s'),
+        r = n('3XMw'),
+        o = n.n(r),
+        s = o.a.d45ae5e0,
+        c = o.a.c1631260,
         u = o.a.d3190bdd,
         m = o.a.ifd6e91b,
         d = function (e) {
           var t = e.onCancel,
             n = e.onConfirm
-          return r.a.createElement(l.a, {
+          return l.a.createElement(i.a, {
             cancelButtonLabel: m,
             confirmButtonLabel: u,
-            headline: c,
+            headline: s,
             onCancel: t,
             onConfirm: n,
-            text: s,
+            text: c,
           })
         }
     },
@@ -1313,7 +1359,7 @@
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1339,18 +1385,18 @@
           type: 'Community',
           abstractKey: null,
         }
-      ;(r.hash = '1c2a2bab04f7a0662a8ed2956c2bfa8b'), (t.default = r)
+      ;(l.hash = '1c2a2bab04f7a0662a8ed2956c2bfa8b'), (t.default = l)
     },
     C2fM: function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m,
         d,
@@ -1366,7 +1412,7 @@
             selections: [
               {
                 alias: null,
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'community_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
@@ -1376,11 +1422,11 @@
                 name: 'community_join_request_deny',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                      (r = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                       (o = { alias: null, args: null, kind: 'ScalarField', name: 'responded_at', storageKey: null }),
                       { args: null, kind: 'FragmentSpread', name: 'cell_CommunityJoinRequest' },
                       { args: null, kind: 'FragmentSpread', name: 'actions_update_CommunityJoinRequest' },
@@ -1388,11 +1434,11 @@
                     type: 'CommunityJoinRequest',
                     abstractKey: null,
                   },
-                  (s = {
+                  (c = {
                     kind: 'InlineFragment',
                     selections: [
                       { alias: 'errorReason', args: null, kind: 'ScalarField', name: 'reason', storageKey: null },
-                      (c = { alias: null, args: null, kind: 'ScalarField', name: 'message', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: 'message', storageKey: null }),
                     ],
                     type: 'CommunityJoinRequestDenyError',
                     abstractKey: null,
@@ -1401,7 +1447,7 @@
                     kind: 'InlineFragment',
                     selections: [
                       { alias: 'unavailableReason', args: null, kind: 'ScalarField', name: 'reason', storageKey: null },
-                      c,
+                      s,
                     ],
                     type: 'CommunityJoinRequestDenyActionUnavailable',
                     abstractKey: null,
@@ -1421,17 +1467,17 @@
             selections: [
               {
                 alias: null,
-                args: r,
+                args: l,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'community_join_request_deny',
                 plural: !1,
                 selections: [
-                  l,
+                  i,
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      i,
+                      r,
                       o,
                       { alias: null, args: null, kind: 'ScalarField', name: 'created_at', storageKey: null },
                       { alias: null, args: null, kind: 'ScalarField', name: 'state', storageKey: null },
@@ -1459,7 +1505,7 @@
                                 name: 'result',
                                 plural: !1,
                                 selections: [
-                                  l,
+                                  i,
                                   {
                                     kind: 'InlineFragment',
                                     selections: [
@@ -1546,7 +1592,7 @@
                                         kind: 'LinkedHandle',
                                         name: 'legacy',
                                       },
-                                      i,
+                                      r,
                                     ],
                                     type: 'User',
                                     abstractKey: null,
@@ -1566,7 +1612,7 @@
                             plural: !1,
                             selections: [
                               m,
-                              i,
+                              r,
                               {
                                 alias: null,
                                 args: null,
@@ -1575,11 +1621,11 @@
                                 name: 'join_requests_result',
                                 plural: !1,
                                 selections: [
-                                  l,
+                                  i,
                                   {
                                     kind: 'InlineFragment',
                                     selections: [
-                                      i,
+                                      r,
                                       {
                                         alias: null,
                                         args: null,
@@ -1597,7 +1643,7 @@
                             ],
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -1616,7 +1662,7 @@
                             kind: 'LinkedField',
                             name: 'join_request_approve_action_result',
                             plural: !1,
-                            selections: (d = [l]),
+                            selections: (d = [i]),
                             storageKey: null,
                           },
                           {
@@ -1629,7 +1675,7 @@
                             selections: d,
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -1637,7 +1683,7 @@
                     type: 'CommunityJoinRequest',
                     abstractKey: null,
                   },
-                  s,
+                  c,
                   u,
                 ],
                 storageKey: null,
@@ -1679,13 +1725,13 @@
           return ae
         })
       var a = n('KEM+'),
-        r = n.n(a),
-        l = n('yiKp'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('yiKp'),
+        r = n.n(i),
         o = n('ddV6'),
-        c = n.n(o),
-        s = (n('KqXw'), n('WNMA'), n('LW0h'), n('7x/C'), n('z84I'), n('1Iuc'), n('ERkP')),
-        u = n.n(s),
+        s = n.n(o),
+        c = (n('KqXw'), n('WNMA'), n('LW0h'), n('7x/C'), n('z84I'), n('1Iuc'), n('ERkP')),
+        u = n.n(c),
         m = n('+Kfv'),
         d = n('eSoz'),
         y = n('rxPX'),
@@ -1733,16 +1779,16 @@
         w = v.a.bcd6bb0d,
         T = 'primaryFilled',
         K = { viewType: 'invite' }
-      var M = S(function (e) {
+      var L = S(function (e) {
           var t = e.communityId,
             n = e.createLocalApiErrorHandler,
             a = e.inviteActionResult,
-            r = e.inviteToCommunity,
-            l = e.onInvite,
-            i = e.onInviteActionResultChange,
+            l = e.inviteToCommunity,
+            i = e.onInvite,
+            r = e.onInviteActionResultChange,
             o = e.userId,
-            c = e.viewerInvited,
-            s = (function (e) {
+            s = e.viewerInvited,
+            c = (function (e) {
               if (!e || 'UserCommunityInviteAction' === e.__typename) return F
               switch (e.reason) {
                 case 'UserIsMember':
@@ -1764,36 +1810,36 @@
             })(a)
           u.a.useEffect(
             function () {
-              a && i(o, a)
+              a && r(o, a)
             },
-            [a, o, i],
+            [a, o, r],
           )
           var d = 'UserCommunityInviteAction' === (null == a ? void 0 : a.__typename)
-          return !d && !c
+          return !d && !s
             ? null
             : u.a.createElement(
                 _.a,
                 {
-                  accessibilityLabel: s,
+                  accessibilityLabel: c,
                   behavioralEventContext: K,
                   disabled: !d,
                   onPress: function () {
                     d &&
-                      r(t, o)
+                      l(t, o)
                         .then(function () {
-                          return l && l(o)
+                          return i && i(o)
                         })
                         .catch(n())
                   },
                   size: 'small',
                   type: m,
                 },
-                s,
+                c,
               )
         }),
-        x = n('5FtR'),
-        R = n('4e/K'),
-        L = n('MWbm'),
+        M = n('5FtR'),
+        x = n('4e/K'),
+        R = n('MWbm'),
         O = n('4zmP'),
         A = n('t62R'),
         j = n('FIs5'),
@@ -1808,8 +1854,8 @@
         q = v.a.a5cd93f9,
         W = v.a.ba5a88e3,
         X = v.a.i6568549,
-        J = v.a.b772cd65,
-        Q = v.a.b4f16d00,
+        Q = v.a.b772cd65,
+        J = v.a.b4f16d00,
         G = v.a.ja1387a7,
         Y = v.a.b92a21d8,
         Z = v.a.ae85768c,
@@ -1821,18 +1867,18 @@
         var t = e.community,
           n = e.createLocalApiErrorHandler,
           a = e.fetchCommunityIfNeeded,
-          l = (t || {}).invites_result,
+          i = (t || {}).invites_result,
           o = e.match.params.communityId || '',
-          s = u.a.useState(''),
-          d = c()(s, 2),
+          c = u.a.useState(''),
+          d = s()(c, 2),
           y = d[0],
           p = d[1],
           g = u.a.useState({}),
-          f = c()(g, 2),
+          f = s()(g, 2),
           b = f[0],
           v = f[1],
           k = u.a.useState({}),
-          E = c()(k, 2),
+          E = s()(k, 2),
           C = E[0],
           S = E[1]
         u.a.useEffect(
@@ -1847,16 +1893,16 @@
             function () {
               return y.length > 0 || !t
                 ? ee
-                : 'CommunityInvites' === l.__typename
-                ? l.users_to_invite_slice.items.map(D.g).filter(Boolean)
+                : 'CommunityInvites' === i.__typename
+                ? i.users_to_invite_slice.items.map(D.g).filter(Boolean)
                 : ee
             },
-            [t, l, y.length],
+            [t, i, y.length],
           ),
           T = u.a.useCallback(
             function (e, t) {
               v(function (n) {
-                return i()(i()({}, n), {}, r()({}, e, t))
+                return r()(r()({}, n), {}, l()({}, e, t))
               })
             },
             [v],
@@ -1864,14 +1910,14 @@
           K = u.a.useCallback(
             function (e) {
               S(function (t) {
-                return i()(i()({}, t), {}, r()({}, e, !0))
+                return r()(r()({}, t), {}, l()({}, e, !0))
               })
             },
             [S],
           ),
           P = o
-            ? u.a.createElement(x.a, { to: '/i/communities/'.concat(o, '/members') })
-            : u.a.createElement(x.a, { to: '/' }),
+            ? u.a.createElement(M.a, { to: '/i/communities/'.concat(o, '/members') })
+            : u.a.createElement(M.a, { to: '/' }),
           ae = u.a.createElement(
             _.a,
             {
@@ -1882,9 +1928,9 @@
               size: 'small',
               type: 'brandFilled',
             },
-            J,
+            Q,
           )
-        return 'CommunityInvitesUnavailable' === (null == l ? void 0 : l.__typename)
+        return 'CommunityInvitesUnavailable' === (null == i ? void 0 : i.__typename)
           ? P
           : u.a.createElement(
               m.a,
@@ -1892,16 +1938,16 @@
               u.a.createElement(
                 h.b,
                 { behavioralEventViewType: 'invite', history: e.history, rightControl: ae, subtitle: H, title: B },
-                ((F = (null == l ? void 0 : l.remaining_invite_count) || 0),
+                ((F = (null == i ? void 0 : i.remaining_invite_count) || 0),
                 (I = F > 999),
-                'CommunityInvites' === (null == l ? void 0 : l.__typename) &&
+                'CommunityInvites' === (null == i ? void 0 : i.__typename) &&
                   !I &&
                   u.a.createElement(
-                    L.a,
-                    { style: re.callout },
+                    R.a,
+                    { style: le.callout },
                     u.a.createElement(O.a, { text: X({ remaining_invite_count: F }) }),
                   )),
-                u.a.createElement(R.default, {
+                u.a.createElement(x.default, {
                   alwaysOpen: !0,
                   communityId: e.match.params.communityId || void 0,
                   filter: te,
@@ -1910,18 +1956,18 @@
                     if ('user' === e.type) {
                       var n = e.data,
                         a = n.id_str,
-                        r = n.screen_name,
-                        l = b[a]
-                      if ('UserCommunityInviteActionUnavailable' === (null == l ? void 0 : l.__typename))
-                        switch (l.reason) {
+                        l = n.screen_name,
+                        i = b[a]
+                      if ('UserCommunityInviteActionUnavailable' === (null == i ? void 0 : i.__typename))
+                        switch (i.reason) {
                           case 'UserIsInvited':
-                            return U({ screen_name: r })
+                            return U({ screen_name: l })
                           case 'UserIsMember':
-                            return z({ screen_name: r })
+                            return z({ screen_name: l })
                           case 'ViewerOutOfInvites':
                             return V
                           default:
-                            return null !== (t = l.message) && void 0 !== t ? t : q({ screen_name: r })
+                            return null !== (t = i.message) && void 0 !== t ? t : q({ screen_name: l })
                         }
                     }
                   },
@@ -1934,21 +1980,21 @@
                     return !0
                   },
                   injectedItems: w,
-                  inputStyle: re.textInput,
+                  inputStyle: le.textInput,
                   isModal: !0,
                   onQueryChange: function (e) {
                     p(e)
                   },
                   placeholder: N,
                   renderEmptyState: function () {
-                    return u.a.createElement(j.a, { header: Q, message: G })
+                    return u.a.createElement(j.a, { header: J, message: G })
                   },
                   renderHeader: function () {
                     return (
                       0 === y.length &&
                       u.a.createElement(
-                        L.a,
-                        { style: re.input },
+                        R.a,
+                        { style: le.input },
                         u.a.createElement(A.b, { size: 'headline2', weight: 'heavy' }, W),
                       )
                     )
@@ -1958,7 +2004,7 @@
                   },
                   renderUserDecoration: function (e) {
                     var t = e.userId
-                    return u.a.createElement(M, {
+                    return u.a.createElement(L, {
                       communityId: o,
                       onInvite: K,
                       onInviteActionResultChange: T,
@@ -1970,12 +2016,12 @@
                   shouldAutoFocus: !0,
                   shouldFocusOnClear: !0,
                   source: D.d.CommunityInvites,
-                  style: re.input,
+                  style: le.input,
                 }),
               ),
             )
       }
-      var re = P.a.create(function (e) {
+      var le = P.a.create(function (e) {
           return {
             callout: { marginHorizontal: e.spaces.space16, marginTop: e.spaces.space8, fontWeight: e.fontWeights.bold },
             input: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space8 },
@@ -1983,19 +2029,638 @@
             dropdownText: { marginHorizontal: e.spaces.space20, marginVertical: e.spaces.space40 },
           }
         }),
-        le = f(ae)
-      t.default = le
+        ie = f(ae)
+      t.default = ie
+    },
+    DVIF: function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a,
+        l,
+        i,
+        r,
+        o,
+        s,
+        c,
+        u,
+        m,
+        d,
+        y,
+        p,
+        g,
+        f,
+        h,
+        b,
+        v,
+        _,
+        k,
+        E,
+        C = {
+          fragment: {
+            argumentDefinitions: [
+              (a = { defaultValue: null, kind: 'LocalArgument', name: 'cursor' }),
+              (l = { defaultValue: null, kind: 'LocalArgument', name: 'query' }),
+            ],
+            kind: 'Fragment',
+            metadata: null,
+            name: 'CommunitiesSearchQuery',
+            selections: [
+              {
+                alias: 'communities_search_slice',
+                args: [
+                  (i = { kind: 'Literal', name: 'count', value: 10 }),
+                  (r = { kind: 'Variable', name: 'query', variableName: 'query' }),
+                  (o = { kind: 'Literal', name: 's', value: 4 }),
+                ],
+                concreteType: 'CommunitySearchSlice',
+                kind: 'LinkedField',
+                name: '__CommunitiesSearchQuery_communities_slice_slice',
+                plural: !1,
+                selections: [
+                  {
+                    alias: null,
+                    args: null,
+                    concreteType: 'Community',
+                    kind: 'LinkedField',
+                    name: 'items',
+                    plural: !0,
+                    selections: [
+                      { args: null, kind: 'FragmentSpread', name: 'CommunitiesSearchItem_item' },
+                      (s = {
+                        kind: 'ClientExtension',
+                        selections: [{ alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null }],
+                      }),
+                    ],
+                    storageKey: null,
+                  },
+                  (c = {
+                    alias: null,
+                    args: null,
+                    concreteType: 'SliceInfo',
+                    kind: 'LinkedField',
+                    name: 'slice_info',
+                    plural: !1,
+                    selections: [
+                      { alias: null, args: null, kind: 'ScalarField', name: 'next_cursor', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'previous_cursor', storageKey: null },
+                    ],
+                    storageKey: null,
+                  }),
+                ],
+                storageKey: null,
+              },
+            ],
+            type: 'Query',
+            abstractKey: null,
+          },
+          kind: 'Request',
+          operation: {
+            argumentDefinitions: [l, a],
+            kind: 'Operation',
+            name: 'CommunitiesSearchQuery',
+            selections: [
+              {
+                alias: null,
+                args: (u = [i, { kind: 'Variable', name: 'cursor', variableName: 'cursor' }, r, o]),
+                concreteType: 'CommunitySearchSlice',
+                kind: 'LinkedField',
+                name: 'communities_search_slice',
+                plural: !1,
+                selections: [
+                  {
+                    alias: null,
+                    args: null,
+                    concreteType: 'Community',
+                    kind: 'LinkedField',
+                    name: 'items',
+                    plural: !0,
+                    selections: [
+                      (m = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
+                      { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'member_count', storageKey: null },
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'UserResults',
+                        kind: 'LinkedField',
+                        name: 'members_facepile_results',
+                        plural: !0,
+                        selections: [
+                          {
+                            alias: null,
+                            args: null,
+                            concreteType: null,
+                            kind: 'LinkedField',
+                            name: 'result',
+                            plural: !1,
+                            selections: [
+                              (d = {
+                                alias: null,
+                                args: null,
+                                kind: 'ScalarField',
+                                name: '__typename',
+                                storageKey: null,
+                              }),
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'ApiUser',
+                                    kind: 'LinkedField',
+                                    name: 'legacy',
+                                    plural: !1,
+                                    selections: [
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'profile_image_url_https',
+                                        storageKey: null,
+                                      },
+                                    ],
+                                    storageKey: null,
+                                  },
+                                  (y = {
+                                    alias: null,
+                                    args: null,
+                                    filters: null,
+                                    handle: 'defaultScalars',
+                                    key: '',
+                                    kind: 'LinkedHandle',
+                                    name: 'legacy',
+                                  }),
+                                  (p = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                ],
+                                type: 'User',
+                                abstractKey: null,
+                              },
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  (g = {
+                                    alias: null,
+                                    args: null,
+                                    kind: 'ScalarField',
+                                    name: 'message',
+                                    storageKey: null,
+                                  }),
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'TimelineRichText',
+                                    kind: 'LinkedField',
+                                    name: 'unavailable_message',
+                                    plural: !1,
+                                    selections: [
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'alignment',
+                                        storageKey: null,
+                                      },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: 'TimelineRichTextEntity',
+                                        kind: 'LinkedField',
+                                        name: 'entities',
+                                        plural: !0,
+                                        selections: [
+                                          {
+                                            alias: 'fromIndex',
+                                            args: null,
+                                            kind: 'ScalarField',
+                                            name: 'from_index',
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: 'toIndex',
+                                            args: null,
+                                            kind: 'ScalarField',
+                                            name: 'to_index',
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            kind: 'ScalarField',
+                                            name: 'format',
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: null,
+                                            kind: 'LinkedField',
+                                            name: 'ref',
+                                            plural: !1,
+                                            selections: [
+                                              d,
+                                              { kind: 'TypeDiscriminator', abstractKey: '__isTimelineReferenceObject' },
+                                              {
+                                                alias: 'type',
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: '__typename',
+                                                storageKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: (h = [
+                                                  (f = {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'text',
+                                                    storageKey: null,
+                                                  }),
+                                                ]),
+                                                type: 'TimelineRichTextCashtag',
+                                                abstractKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: [
+                                                  p,
+                                                  (b = {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'url',
+                                                    storageKey: null,
+                                                  }),
+                                                ],
+                                                type: 'TimelineRichTextList',
+                                                abstractKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: h,
+                                                type: 'TimelineRichTextHashtag',
+                                                abstractKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: [
+                                                  b,
+                                                  {
+                                                    alias: 'urlType',
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'url_type',
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: 'urtEndpointOptions',
+                                                    args: null,
+                                                    concreteType: 'TimelineUrtEndpointOptions',
+                                                    kind: 'LinkedField',
+                                                    name: 'urt_endpoint_options',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        alias: 'cacheId',
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'cache_id',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'subtitle',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'title',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: 'requestParams',
+                                                        args: null,
+                                                        concreteType: 'RequestParamsEntry',
+                                                        kind: 'LinkedField',
+                                                        name: 'request_params',
+                                                        plural: !0,
+                                                        selections: [
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            kind: 'ScalarField',
+                                                            name: 'key',
+                                                            storageKey: null,
+                                                          },
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            kind: 'ScalarField',
+                                                            name: 'value',
+                                                            storageKey: null,
+                                                          },
+                                                        ],
+                                                        storageKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  },
+                                                ],
+                                                type: 'TimelineUrl',
+                                                abstractKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: [
+                                                  (k = {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: 'UserResults',
+                                                    kind: 'LinkedField',
+                                                    name: 'user_results',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: null,
+                                                        kind: 'LinkedField',
+                                                        name: 'result',
+                                                        plural: !1,
+                                                        selections: [
+                                                          d,
+                                                          {
+                                                            kind: 'InlineFragment',
+                                                            selections: [
+                                                              {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: 'ApiUser',
+                                                                kind: 'LinkedField',
+                                                                name: 'legacy',
+                                                                plural: !1,
+                                                                selections: [
+                                                                  (v = {
+                                                                    alias: null,
+                                                                    args: null,
+                                                                    kind: 'ScalarField',
+                                                                    name: 'screen_name',
+                                                                    storageKey: null,
+                                                                  }),
+                                                                ],
+                                                                storageKey: null,
+                                                              },
+                                                              y,
+                                                              m,
+                                                              p,
+                                                            ],
+                                                            type: 'User',
+                                                            abstractKey: null,
+                                                          },
+                                                          {
+                                                            kind: 'InlineFragment',
+                                                            selections: [
+                                                              (_ = {
+                                                                alias: 'reason',
+                                                                args: null,
+                                                                kind: 'ScalarField',
+                                                                name: 'unavailable_reason',
+                                                                storageKey: null,
+                                                              }),
+                                                              g,
+                                                            ],
+                                                            type: 'UserUnavailable',
+                                                            abstractKey: null,
+                                                          },
+                                                        ],
+                                                        storageKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  }),
+                                                ],
+                                                type: 'TimelineRichTextUser',
+                                                abstractKey: null,
+                                              },
+                                              {
+                                                kind: 'InlineFragment',
+                                                selections: [v, k],
+                                                type: 'TimelineRichTextMention',
+                                                abstractKey: null,
+                                              },
+                                            ],
+                                            storageKey: null,
+                                          },
+                                        ],
+                                        storageKey: null,
+                                      },
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'rtl', storageKey: null },
+                                      f,
+                                    ],
+                                    storageKey: null,
+                                  },
+                                  _,
+                                ],
+                                type: 'UserUnavailable',
+                                abstractKey: null,
+                              },
+                            ],
+                            storageKey: null,
+                          },
+                        ],
+                        storageKey: null,
+                      },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'default_theme', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'custom_theme', storageKey: null },
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'ApiMedia',
+                        kind: 'LinkedField',
+                        name: 'default_banner_media',
+                        plural: !1,
+                        selections: (E = [
+                          {
+                            alias: null,
+                            args: null,
+                            concreteType: null,
+                            kind: 'LinkedField',
+                            name: 'media_info',
+                            plural: !1,
+                            selections: [
+                              d,
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'MediaColorInfo',
+                                    kind: 'LinkedField',
+                                    name: 'color_info',
+                                    plural: !1,
+                                    selections: [
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: 'MediaColorPaletteItem',
+                                        kind: 'LinkedField',
+                                        name: 'palette',
+                                        plural: !0,
+                                        selections: [
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: 'MediaColor',
+                                            kind: 'LinkedField',
+                                            name: 'rgb',
+                                            plural: !1,
+                                            selections: [
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'red',
+                                                storageKey: null,
+                                              },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'green',
+                                                storageKey: null,
+                                              },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'blue',
+                                                storageKey: null,
+                                              },
+                                            ],
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            kind: 'ScalarField',
+                                            name: 'percentage',
+                                            storageKey: null,
+                                          },
+                                        ],
+                                        storageKey: null,
+                                      },
+                                    ],
+                                    storageKey: null,
+                                  },
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    kind: 'ScalarField',
+                                    name: 'original_img_url',
+                                    storageKey: null,
+                                  },
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    kind: 'ScalarField',
+                                    name: 'original_img_width',
+                                    storageKey: null,
+                                  },
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    kind: 'ScalarField',
+                                    name: 'original_img_height',
+                                    storageKey: null,
+                                  },
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'ApiMediaRect',
+                                    kind: 'LinkedField',
+                                    name: 'salient_rect',
+                                    plural: !1,
+                                    selections: [
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'left', storageKey: null },
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'top', storageKey: null },
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'width', storageKey: null },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'height',
+                                        storageKey: null,
+                                      },
+                                    ],
+                                    storageKey: null,
+                                  },
+                                ],
+                                type: 'ApiImage',
+                                abstractKey: null,
+                              },
+                            ],
+                            storageKey: null,
+                          },
+                          p,
+                        ]),
+                        storageKey: null,
+                      },
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'ApiMedia',
+                        kind: 'LinkedField',
+                        name: 'custom_banner_media',
+                        plural: !1,
+                        selections: E,
+                        storageKey: null,
+                      },
+                      p,
+                      s,
+                    ],
+                    storageKey: null,
+                  },
+                  c,
+                ],
+                storageKey: null,
+              },
+              {
+                alias: null,
+                args: u,
+                filters: ['query', 'count', 's'],
+                handle: 'slice',
+                key: 'CommunitiesSearchQuery_communities_slice',
+                kind: 'LinkedHandle',
+                name: 'communities_search_slice',
+              },
+            ],
+          },
+          params: {
+            id: '6ognTidFIQCWJ6zY9-d-Gg',
+            metadata: { sliceInfoPath: ['communities_search_slice', 'slice_info'] },
+            name: 'CommunitiesSearchQuery',
+            operationKind: 'query',
+            text: null,
+          },
+        }
+      ;(C.hash = 'c848c1bd320716d294b5f3f2b34ed1a8'), (t.default = C)
     },
     'Dm5+': function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m,
         d,
@@ -2011,7 +2676,7 @@
             selections: [
               {
                 alias: null,
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'community_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
@@ -2021,11 +2686,11 @@
                 name: 'community_join_request_approve',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                      (r = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                       (o = { alias: null, args: null, kind: 'ScalarField', name: 'responded_at', storageKey: null }),
                       { args: null, kind: 'FragmentSpread', name: 'cell_CommunityJoinRequest' },
                       { args: null, kind: 'FragmentSpread', name: 'actions_update_CommunityJoinRequest' },
@@ -2033,11 +2698,11 @@
                     type: 'CommunityJoinRequest',
                     abstractKey: null,
                   },
-                  (s = {
+                  (c = {
                     kind: 'InlineFragment',
                     selections: [
                       { alias: 'errorReason', args: null, kind: 'ScalarField', name: 'reason', storageKey: null },
-                      (c = { alias: null, args: null, kind: 'ScalarField', name: 'message', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: 'message', storageKey: null }),
                     ],
                     type: 'CommunityJoinRequestApproveError',
                     abstractKey: null,
@@ -2046,7 +2711,7 @@
                     kind: 'InlineFragment',
                     selections: [
                       { alias: 'unavailableReason', args: null, kind: 'ScalarField', name: 'reason', storageKey: null },
-                      c,
+                      s,
                     ],
                     type: 'CommunityJoinRequestApproveActionUnavailable',
                     abstractKey: null,
@@ -2066,17 +2731,17 @@
             selections: [
               {
                 alias: null,
-                args: r,
+                args: l,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'community_join_request_approve',
                 plural: !1,
                 selections: [
-                  l,
+                  i,
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      i,
+                      r,
                       o,
                       { alias: null, args: null, kind: 'ScalarField', name: 'created_at', storageKey: null },
                       { alias: null, args: null, kind: 'ScalarField', name: 'state', storageKey: null },
@@ -2104,7 +2769,7 @@
                                 name: 'result',
                                 plural: !1,
                                 selections: [
-                                  l,
+                                  i,
                                   {
                                     kind: 'InlineFragment',
                                     selections: [
@@ -2191,7 +2856,7 @@
                                         kind: 'LinkedHandle',
                                         name: 'legacy',
                                       },
-                                      i,
+                                      r,
                                     ],
                                     type: 'User',
                                     abstractKey: null,
@@ -2211,7 +2876,7 @@
                             plural: !1,
                             selections: [
                               m,
-                              i,
+                              r,
                               {
                                 alias: null,
                                 args: null,
@@ -2220,11 +2885,11 @@
                                 name: 'join_requests_result',
                                 plural: !1,
                                 selections: [
-                                  l,
+                                  i,
                                   {
                                     kind: 'InlineFragment',
                                     selections: [
-                                      i,
+                                      r,
                                       {
                                         alias: null,
                                         args: null,
@@ -2242,7 +2907,7 @@
                             ],
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -2261,7 +2926,7 @@
                             kind: 'LinkedField',
                             name: 'join_request_approve_action_result',
                             plural: !1,
-                            selections: (d = [l]),
+                            selections: (d = [i]),
                             storageKey: null,
                           },
                           {
@@ -2274,7 +2939,7 @@
                             selections: d,
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -2282,7 +2947,7 @@
                     type: 'CommunityJoinRequest',
                     abstractKey: null,
                   },
-                  s,
+                  c,
                   u,
                 ],
                 storageKey: null,
@@ -2305,13 +2970,13 @@
         return v
       })
       var a = n('VrFO'),
-        r = n.n(a),
-        l = n('Y9Ll'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('Y9Ll'),
+        r = n.n(i),
         o = n('1Pcy'),
-        c = n.n(o),
-        s = n('5Yy7'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('5Yy7'),
+        u = n.n(c),
         m = n('2VqO'),
         d = n.n(m),
         y = n('KEM+'),
@@ -2326,15 +2991,15 @@
           function n(e) {
             var a
             return (
-              r()(this, n),
+              l()(this, n),
               (a = t.call(this, e)),
-              p()(c()(a), '_handleClick', function (e) {
+              p()(s()(a), '_handleClick', function (e) {
                 a.setState({ showConfirmation: !0 })
               }),
-              p()(c()(a), '_handleCancel', function () {
+              p()(s()(a), '_handleCancel', function () {
                 a.setState({ showConfirmation: !1 })
               }),
-              p()(c()(a), '_handleConfirm', function () {
+              p()(s()(a), '_handleConfirm', function () {
                 a.setState({ showConfirmation: !1 }), a.props.onConfirmationSheetConfirm()
               }),
               (a.state = { showConfirmation: !1 }),
@@ -2342,7 +3007,7 @@
             )
           }
           return (
-            i()(n, [
+            r()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -2350,9 +3015,9 @@
                     t = e.align,
                     n = e.color,
                     a = e.confirmationSheetConfirmButtonLabel,
-                    r = e.confirmationSheetConfirmButtonType,
-                    l = e.confirmationSheetHeadline,
-                    i = e.confirmationSheetText,
+                    l = e.confirmationSheetConfirmButtonType,
+                    i = e.confirmationSheetHeadline,
+                    r = e.confirmationSheetText,
                     o = e.label
                   return f.a.createElement(
                     f.a.Fragment,
@@ -2361,11 +3026,11 @@
                     this.state.showConfirmation
                       ? f.a.createElement(b.a, {
                           confirmButtonLabel: a,
-                          confirmButtonType: r,
-                          headline: l,
+                          confirmButtonType: l,
+                          headline: i,
                           onCancel: this._handleCancel,
                           onConfirm: this._handleConfirm,
-                          text: i,
+                          text: r,
                         })
                       : null,
                   )
@@ -2380,13 +3045,13 @@
     EeFI: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('VrFO'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
-        c = n.n(o),
-        s = n('5Yy7'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('5Yy7'),
+        u = n.n(c),
         m = n('2VqO'),
         d = n.n(m),
         y = n('ERkP'),
@@ -2405,10 +3070,10 @@
           var t = d()(n)
           function n(e) {
             var a
-            return i()(this, n), ((a = t.call(this, e)).state = { orientedImage: null }), a
+            return r()(this, n), ((a = t.call(this, e)).state = { orientedImage: null }), a
           }
           return (
-            c()(n, [
+            s()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2439,13 +3104,13 @@
                     t = e.cropperRef,
                     n = e.defaultAspectRatio,
                     a = e.defaultCropData,
-                    r = e.media,
-                    l = e.withAspectRatioOptions,
-                    i = e.withZoomControl,
+                    l = e.media,
+                    i = e.withAspectRatioOptions,
+                    r = e.withZoomControl,
                     o = this.state.orientedImage,
-                    c = r || {},
-                    s = c.cropData,
-                    u = c.originalMediaFile,
+                    s = l || {},
+                    c = s.cropData,
+                    u = s.originalMediaFile,
                     m = void 0 === u ? {} : u
                   return o
                     ? p.a.createElement(
@@ -2453,12 +3118,12 @@
                         { style: F.cropper },
                         p.a.createElement(v.a, {
                           circle: this.props.circle,
-                          defaultAspectRatio: (a && a.aspectRatio) || (s && s.aspectRatio) || n,
-                          defaultCropData: a || s,
+                          defaultAspectRatio: (a && a.aspectRatio) || (c && c.aspectRatio) || n,
+                          defaultCropData: a || c,
                           image: { src: o.url, width: m.width, height: m.height },
                           ref: t,
-                          withAspectRatioOptions: l,
-                          withZoomControl: i,
+                          withAspectRatioOptions: i,
+                          withZoomControl: r,
                         }),
                       )
                     : null
@@ -2475,29 +3140,26 @@
           }
         })
       t.a = p.a.forwardRef(function (e, t) {
-        return p.a.createElement(S, r()({}, e, { cropperRef: t }))
+        return p.a.createElement(S, l()({}, e, { cropperRef: t }))
       })
     },
     Eh7u: function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
-        m,
-        d = {
+        m = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
           name: 'CommunityFacePile_community',
           selections: [
-            { alias: null, args: null, kind: 'ScalarField', name: 'member_count', storageKey: null },
-            (a = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
             {
               alias: null,
               args: null,
@@ -2514,7 +3176,7 @@
                   name: 'result',
                   plural: !1,
                   selections: [
-                    (r = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                    (a = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                     {
                       kind: 'InlineFragment',
                       selections: [
@@ -2593,7 +3255,7 @@
                                     },
                                     {
                                       kind: 'InlineFragment',
-                                      selections: (o = [
+                                      selections: (r = [
                                         (i = {
                                           alias: null,
                                           args: null,
@@ -2609,7 +3271,7 @@
                                       kind: 'InlineFragment',
                                       selections: [
                                         { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null },
-                                        (c = {
+                                        (o = {
                                           alias: null,
                                           args: null,
                                           kind: 'ScalarField',
@@ -2622,14 +3284,14 @@
                                     },
                                     {
                                       kind: 'InlineFragment',
-                                      selections: o,
+                                      selections: r,
                                       type: 'TimelineRichTextHashtag',
                                       abstractKey: null,
                                     },
                                     {
                                       kind: 'InlineFragment',
                                       selections: [
-                                        c,
+                                        o,
                                         {
                                           alias: 'urlType',
                                           args: null,
@@ -2701,7 +3363,7 @@
                                     {
                                       kind: 'InlineFragment',
                                       selections: [
-                                        (m = {
+                                        (u = {
                                           alias: null,
                                           args: null,
                                           concreteType: 'UserResults',
@@ -2717,7 +3379,7 @@
                                               name: 'result',
                                               plural: !1,
                                               selections: [
-                                                r,
+                                                a,
                                                 {
                                                   kind: 'InlineFragment',
                                                   selections: [
@@ -2739,7 +3401,13 @@
                                                       ],
                                                       storageKey: null,
                                                     },
-                                                    a,
+                                                    {
+                                                      alias: null,
+                                                      args: null,
+                                                      kind: 'ScalarField',
+                                                      name: 'rest_id',
+                                                      storageKey: null,
+                                                    },
                                                   ],
                                                   type: 'User',
                                                   abstractKey: null,
@@ -2747,7 +3415,7 @@
                                                 {
                                                   kind: 'InlineFragment',
                                                   selections: [
-                                                    (u = {
+                                                    (c = {
                                                       alias: 'reason',
                                                       args: null,
                                                       kind: 'ScalarField',
@@ -2771,7 +3439,7 @@
                                     },
                                     {
                                       kind: 'InlineFragment',
-                                      selections: [s, m],
+                                      selections: [s, u],
                                       type: 'TimelineRichTextMention',
                                       abstractKey: null,
                                     },
@@ -2786,7 +3454,7 @@
                           ],
                           storageKey: null,
                         },
-                        u,
+                        c,
                       ],
                       type: 'UserUnavailable',
                       abstractKey: null,
@@ -2797,13 +3465,12 @@
               ],
               storageKey: null,
             },
-            { args: null, kind: 'FragmentSpread', name: 'CommunityMemberCount_community' },
             { args: null, kind: 'FragmentSpread', name: 'useCommunityTheme_community' },
           ],
           type: 'Community',
           abstractKey: null,
         }
-      ;(d.hash = 'e2457666463c59c1a72f329db4ba964b'), (t.default = d)
+      ;(m.hash = '97ecd7a2189f93a563b3695f898d77ab'), (t.default = m)
     },
     FSMj: function (e, t, n) {
       'use strict'
@@ -2812,13 +3479,13 @@
           return C
         })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('vrRf'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('vrRf'), n('ERkP')),
+        r = n.n(i),
         o = n('LgBi'),
-        c = n('UZ0O'),
-        s = n('rxPX'),
-        u = Object(s.a)().withAnalytics({ page: 'communities', section: 'people' }),
+        s = n('UZ0O'),
+        c = n('rxPX'),
+        u = Object(c.a)().withAnalytics({ page: 'communities', section: 'people' }),
         m = n('3XMw'),
         d = n.n(m),
         y = n('gDCe'),
@@ -2835,13 +3502,13 @@
           var t = e.community,
             n = e.communityId,
             a = e.location,
-            l = i.a.useState(!1),
-            s = r()(l, 2),
-            u = s[0],
-            m = s[1],
+            i = r.a.useState(!1),
+            c = l()(i, 2),
+            u = c[0],
+            m = c[1],
             d = (null == a ? void 0 : a.pathname) && a.pathname.indexOf('members') > 0,
             C = d ? k : E,
-            S = i.a.useMemo(
+            S = r.a.useMemo(
               function () {
                 var e = n
                   ? [
@@ -2857,47 +3524,47 @@
                       },
                     ]
                   : []
-                return i.a.createElement(g.a, { accessibilityLabel: C, links: e })
+                return r.a.createElement(g.a, { accessibilityLabel: C, links: e })
               },
               [n, C, a],
             )
-          return i.a.createElement(
+          return r.a.createElement(
             p.a,
             null,
-            i.a.createElement(
+            r.a.createElement(
               f.a,
               {
                 communityId: t.id_str,
-                rightControl: d ? i.a.createElement(o.a, { communityId: n }) : void 0,
+                rightControl: d ? r.a.createElement(o.a, { communityId: n }) : void 0,
                 title: _,
               },
-              i.a.createElement(
+              r.a.createElement(
                 h.a,
                 null,
-                i.a.createElement(c.a, { community: t, communityId: n, onIsSearchingChange: m }),
+                r.a.createElement(s.a, { community: t, communityId: n, onIsSearchingChange: m }),
                 u
                   ? null
-                  : i.a.createElement(
-                      i.a.Fragment,
+                  : r.a.createElement(
+                      r.a.Fragment,
                       null,
                       S,
-                      i.a.createElement(
+                      r.a.createElement(
                         v.d,
                         null,
-                        i.a.createElement(
+                        r.a.createElement(
                           v.b,
                           { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/members') },
-                          i.a.createElement(b.b, {
+                          r.a.createElement(b.b, {
                             communityId: t.id_str,
                             mode: b.a.Members,
                             userRole: null == t ? void 0 : t.role,
                           }),
                         ),
-                        i.a.createElement(
+                        r.a.createElement(
                           v.b,
                           { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/moderators') },
-                          i.a.createElement(y.a, { community: t }),
-                          i.a.createElement(b.b, {
+                          r.a.createElement(y.a, { community: t }),
+                          r.a.createElement(b.b, {
                             communityId: t.id_str,
                             mode: b.a.Moderators,
                             userRole: null == t ? void 0 : t.role,
@@ -2915,18 +3582,18 @@
       'use strict'
       n.r(t),
         n.d(t, 'FeedbackType', function () {
-          return J
+          return Q
         }),
         n.d(t, 'CommunityFeedbackScreen', function () {
-          return Q
+          return J
         })
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('m3Bd'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('m3Bd'),
+        r = n.n(i),
         o = (n('yH/f'), n('KqXw'), n('WNMA'), n('ERkP')),
-        c = n.n(o),
-        s = n('v6aA'),
+        s = n.n(o),
+        c = n('v6aA'),
         u = n('+Kfv'),
         m = n('es0u'),
         d = (n('ZVkB'), n('ulNE'), n('urw/'), n('jQ3i'), n('x4t0'), n('eSoz')),
@@ -2939,21 +3606,21 @@
         },
         h = function (e, t) {
           var n = t.match.params
-          return Object.entries(n).flat().includes('tweetId') ? J.HiddenTweet : J.RemovedMember
+          return Object.entries(n).flat().includes('tweetId') ? Q.HiddenTweet : Q.RemovedMember
         },
         b = function (e, t) {
-          if (h(0, t) === J.HiddenTweet) {
+          if (h(0, t) === Q.HiddenTweet) {
             var n,
               a = t.match.params.tweetId,
-              r = a ? y.a.selectHydrated(e, a) : void 0,
-              l = null == r || null === (n = r.community_relationship) || void 0 === n ? void 0 : n.community
-            return l ? d.c.select(e, l) : void 0
+              l = a ? y.a.selectHydrated(e, a) : void 0,
+              i = null == l || null === (n = l.community_relationship) || void 0 === n ? void 0 : n.community
+            return i ? d.c.select(e, i) : void 0
           }
-          var i = t.match.params.communityId
-          return i ? d.c.select(e, i) : void 0
+          var r = t.match.params.communityId
+          return r ? d.c.select(e, r) : void 0
         },
         v = function (e, t) {
-          if (h(0, t) === J.HiddenTweet) {
+          if (h(0, t) === Q.HiddenTweet) {
             var n = t.match.params.tweetId
             return n ? y.a.selectFetchStatus(e, n) : void 0
           }
@@ -2977,30 +3644,30 @@
         w = n('MWbm'),
         T = n('X00g'),
         K = n('t62R'),
-        M = n('4zmP'),
-        x = n('0yYu'),
-        R = n('6vad'),
-        L = n('rHpw'),
+        L = n('4zmP'),
+        M = n('0yYu'),
+        x = n('6vad'),
+        R = n('rHpw'),
         O = S.a.j643a234,
         A = S.a.c730a21c,
         j = S.a.a5baa7d1,
         P = S.a.icc32e3d,
         D = T.a.getCommunityTheme('Default'),
-        B = L.a.create(function (e) {
+        B = R.a.create(function (e) {
           return {
             badges: { marginRight: e.spaces.space16, marginLeft: e.spaces.space2 },
             communityTitle: { marginTop: e.spaces.space24, marginBottom: e.spaces.space2 },
             helpText: { marginTop: e.spaces.space12, marginBottom: e.spaces.space24 },
             hiddenTweetWarningText: { marginTop: e.spaces.space2, marginBottom: e.spaces.space24 },
             removedMemberReason: {
-              backgroundColor: L.a.theme.colors.gray50,
-              borderRadius: L.a.theme.spacesPx.space4,
+              backgroundColor: R.a.theme.colors.gray50,
+              borderRadius: R.a.theme.spacesPx.space4,
               border: '1px solid gray',
-              padding: L.a.theme.spacesPx.space16,
-              marginBottom: L.a.theme.spaces.space24,
+              padding: R.a.theme.spacesPx.space16,
+              marginBottom: R.a.theme.spaces.space24,
             },
             rulesTitle: { marginHorizontal: e.spacesPx.space16 },
-            titleText: { marginTop: L.a.theme.spaces.space24, marginBottom: e.spacesPx.space24 },
+            titleText: { marginTop: R.a.theme.spaces.space24, marginBottom: e.spacesPx.space24 },
             tweetContainer: { marginBottom: e.spacesPx.space12 },
             tweetInfo: { display: 'flex', flexDirection: 'column', justifyContent: 'center' },
             tweetInfoItems: { marginHorizontal: e.spacesPx.space16 },
@@ -3011,20 +3678,20 @@
           var t,
             n = e.community,
             a = e.history,
-            r = e.location,
-            l = e.match,
-            i = e.tweet,
+            l = e.location,
+            i = e.match,
+            r = e.tweet,
             o = e.type,
-            s = { history: a, location: r, match: l },
-            u = null == i ? void 0 : i.community_relationship,
+            c = { history: a, location: l, match: i },
+            u = null == r ? void 0 : r.community_relationship,
             m = null == u ? void 0 : u.moderation_state,
             d =
               (null ===
                 (t = (function (e) {
                   switch (e) {
-                    case J.HiddenTweet:
+                    case Q.HiddenTweet:
                       return null == m ? void 0 : m.rule
-                    case J.RemovedMember:
+                    case Q.RemovedMember:
                       return null == n ? void 0 : n.viewerViolatedRule
                     default:
                       return
@@ -3038,57 +3705,57 @@
             f = T.a.getCommunityUIColorName(g),
             h = Object(E.a)({ communityName: y })
           return g && null != p && p.length
-            ? c.a.createElement(
+            ? s.a.createElement(
                 w.a,
                 { style: B.tweetInfo },
-                c.a.createElement(
+                s.a.createElement(
                   w.a,
                   { style: B.tweetInfoItems },
                   (function (e) {
                     switch (e) {
-                      case J.HiddenTweet:
-                        return c.a.createElement(
-                          c.a.Fragment,
+                      case Q.HiddenTweet:
+                        return s.a.createElement(
+                          s.a.Fragment,
                           null,
-                          c.a.createElement(
+                          s.a.createElement(
                             K.b,
                             { color: f, size: 'subtext1', style: B.communityTitle, weight: 'bold' },
                             y,
                           ),
-                          c.a.createElement(
+                          s.a.createElement(
                             K.b,
                             { size: 'headline1', style: [B.titleText, B.hiddenTweetWarningText], weight: 'heavy' },
                             O,
                           ),
-                          c.a.createElement(I.a, {
+                          s.a.createElement(I.a, {
                             style: B.tweetContainer,
-                            tweetId: null == i ? void 0 : i.id_str,
+                            tweetId: null == r ? void 0 : r.id_str,
                             withMediaAsTextLinks: !1,
                           }),
-                          c.a.createElement(M.a, { headline: A, text: d }),
-                          c.a.createElement(K.b, { style: B.helpText }, j),
+                          s.a.createElement(L.a, { headline: A, text: d }),
+                          s.a.createElement(K.b, { style: B.helpText }, j),
                         )
-                      case J.RemovedMember:
-                        return c.a.createElement(
-                          c.a.Fragment,
+                      case Q.RemovedMember:
+                        return s.a.createElement(
+                          s.a.Fragment,
                           null,
-                          c.a.createElement(
+                          s.a.createElement(
                             K.b,
                             { size: 'headline1', style: B.titleText, weight: 'heavy' },
                             P({ communityName: y }),
                           ),
-                          c.a.createElement(
+                          s.a.createElement(
                             w.a,
                             { style: B.removedMemberReason },
-                            c.a.createElement(K.b, { weight: 'bold' }, d),
+                            s.a.createElement(K.b, { weight: 'bold' }, d),
                           ),
                         )
                     }
                   })(o),
                 ),
-                c.a.createElement(x.a, null),
-                c.a.createElement(R.b, { text: h }),
-                c.a.createElement(k.b, {
+                s.a.createElement(M.a, null),
+                s.a.createElement(x.b, { text: h }),
+                s.a.createElement(k.b, {
                   badgeStyle: B.badges,
                   ruleContainerStyle: B.rules,
                   rules: p,
@@ -3097,7 +3764,7 @@
                   withHeader: !1,
                 }),
               )
-            : c.a.createElement(F.b, s)
+            : s.a.createElement(F.b, c)
         },
         N = n('G1WX'),
         U = n('yoO3'),
@@ -3106,21 +3773,21 @@
         q = ['analytics', 'community', 'fetchCommunity', 'fetchStatus', 'fetchTweet', 'loggedInUser', 'tweet', 'type'],
         W = S.a.jf99d610,
         X = { viewType: 'community' },
-        J = Object.freeze({ HiddenTweet: 'hidden_tweet', RemovedMember: 'removed_member' })
-      function Q(e) {
-        var t = c.a.useContext(s.a).featureSwitches.isTrue('c9s_enabled'),
+        Q = Object.freeze({ HiddenTweet: 'hidden_tweet', RemovedMember: 'removed_member' })
+      function J(e) {
+        var t = s.a.useContext(c.a).featureSwitches.isTrue('c9s_enabled'),
           n = (e.analytics, e.community),
           a = e.fetchCommunity,
-          l = e.fetchStatus,
+          i = e.fetchStatus,
           o = e.fetchTweet,
           d = e.loggedInUser,
           y = e.tweet,
           p = e.type,
-          g = i()(e, q),
+          g = r()(e, q),
           f = function (e) {
             var t, a
             switch (e) {
-              case J.HiddenTweet:
+              case Q.HiddenTweet:
                 return {
                   BEHAVIORAL_EVENT_VIEW_TYPE: 'hidden_tweet_feedback',
                   isAuthorizedViewer: Boolean(d && d.id_str === (null == y ? void 0 : y.user.id_str)),
@@ -3131,7 +3798,7 @@
                       : t.moderation_state.rule,
                   ),
                 }
-              case J.RemovedMember:
+              case Q.RemovedMember:
                 return {
                   BEHAVIORAL_EVENT_VIEW_TYPE: 'removed_member_feedback',
                   isAuthorizedViewer: Boolean(d && (null == n ? void 0 : n.viewerViolatedRule)),
@@ -3152,40 +3819,40 @@
           v = h.tweetId,
           _ = Object(V.useCreateLocalApiErrorHandler)('HIDDEN_TWEET_FEEDBACK_SCREEN'),
           k = Object(V.useCreateLocalApiErrorHandler)('REMOVED_MEMBER_FEEDBACK_SCREEN_CONTEXT'),
-          E = c.a.useEffect(
+          E = s.a.useEffect(
             function () {
               v && o(v).catch(_)
             },
             [_, o, v],
           ),
-          C = c.a.useEffect(
+          C = s.a.useEffect(
             function () {
               b && a(b).catch(k)
             },
             [b, k, a],
           ),
-          S = c.a.createElement(F.b, g)
-        return c.a.createElement(N.a, {
-          fetchStatus: l,
+          S = s.a.createElement(F.b, g)
+        return s.a.createElement(N.a, {
+          fetchStatus: i,
           onRequestRetry: f(p)._handleRetry,
           render: function () {
             var n = f(p),
               a = n.BEHAVIORAL_EVENT_VIEW_TYPE,
-              l = n.isAuthorizedViewer,
-              i = n.shouldRenderFeedback
-            return l && t
-              ? c.a.createElement(
+              i = n.isAuthorizedViewer,
+              r = n.shouldRenderFeedback
+            return i && t
+              ? s.a.createElement(
                   u.a,
                   { behavioralEventContext: X },
-                  i
-                    ? c.a.createElement(
+                  r
+                    ? s.a.createElement(
                         U.a,
                         { behavioralEventViewType: a },
-                        c.a.createElement(z.a, {
+                        s.a.createElement(z.a, {
                           backLocation: '/notifications',
                           history: g.history,
-                          primaryContent: c.a.createElement(H, r()({}, e, { type: p })),
-                          sidebarContent: c.a.createElement(m.a, null),
+                          primaryContent: s.a.createElement(H, l()({}, e, { type: p })),
+                          sidebarContent: s.a.createElement(m.a, null),
                           title: W,
                         }),
                       )
@@ -3195,16 +3862,16 @@
           },
         })
       }
-      var G = _(Q)
+      var G = _(J)
       t.default = G
     },
     'I/KZ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return r
+        return l
       }),
         n.d(t, 'b', function () {
-          return l
+          return i
         }),
         n.d(t, 'd', function () {
           return v
@@ -3217,49 +3884,49 @@
         })
       n('yH/f')
       var a,
-        r = Object.freeze({
+        l = Object.freeze({
           Open: 'CommunityOpenMembershipSettings',
           Restricted: 'CommunityRestrictedMembershipSettings',
         }),
-        l = Object.freeze({
+        i = Object.freeze({
           None: 'NoInvitesAllowed',
           Member: 'MemberInvitesAllowed',
           Moderator: 'ModeratorInvitesAllowed',
         }),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('3XMw'),
-        s = n.n(c),
+        r = n('ERkP'),
+        o = n.n(r),
+        s = n('3XMw'),
+        c = n.n(s),
         u = n('t62R'),
         m = n('3JAx'),
         d = n('e0ey'),
         y = n('rHpw'),
         p = [
-          { label: s.a.fd00a769, value: r.Open, helpText: s.a.a0a16d37 },
-          { label: s.a.ce0523a8, value: r.Restricted, helpText: s.a.i1aad6eb },
+          { label: c.a.fd00a769, value: l.Open, helpText: c.a.a0a16d37 },
+          { label: c.a.ce0523a8, value: l.Restricted, helpText: c.a.i1aad6eb },
         ],
-        g = s.a.c85960a0,
-        f = s.a.ca373cd2,
-        h = s.a.j7f554f5,
+        g = c.a.c85960a0,
+        f = c.a.ca373cd2,
+        h = c.a.j7f554f5,
         b = function (e) {
           var t = e.state,
             n = t.access,
             a = t.invitesPolicy,
-            i = e.setters,
-            c = i.setAccess,
-            s = i.setInvitesPolicy,
+            r = e.setters,
+            s = r.setAccess,
+            c = r.setInvitesPolicy,
             y = !e.hideInvitePolicy,
             b = o.a.useCallback(
               function (e, t) {
-                c(t)
+                s(t)
               },
-              [c],
+              [s],
             ),
             v = o.a.useCallback(
               function (e, t) {
-                s(t ? l.Member : l.Moderator)
+                c(t ? i.Member : i.Moderator)
               },
-              [s],
+              [c],
             )
           return o.a.createElement(
             o.a.Fragment,
@@ -3267,9 +3934,9 @@
             o.a.createElement(u.b, { color: 'gray700', size: 'subtext2', style: _.settingsItem }, h),
             o.a.createElement(m.a, { name: 'membershipSetting', onChange: b, options: p, value: n }),
             y &&
-              n === r.Restricted &&
+              n === l.Restricted &&
               o.a.createElement(d.a, {
-                checked: a === l.Member,
+                checked: a === i.Member,
                 helpText: f,
                 label: g,
                 name: 'allowInvites',
@@ -3285,144 +3952,57 @@
         E = n.n(k),
         C = n('KEM+'),
         S = n.n(C),
-        F = ((a = {}), S()(a, r.Open, l.Member), S()(a, r.Restricted, l.Moderator), a),
-        I = { access: r.Restricted, invitesPolicy: F[r.Restricted] }
+        F = ((a = {}), S()(a, l.Open, i.Member), S()(a, l.Restricted, i.Moderator), a),
+        I = { access: l.Restricted, invitesPolicy: F[l.Restricted] }
       function w() {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I,
           t = o.a.useState(e.access),
           n = E()(t, 2),
           a = n[0],
-          r = n[1],
-          l = o.a.useState(e.invitesPolicy),
-          i = E()(l, 2),
-          c = i[0],
-          s = i[1],
+          l = n[1],
+          i = o.a.useState(e.invitesPolicy),
+          r = E()(i, 2),
+          s = r[0],
+          c = r[1],
           u = o.a.useMemo(function () {
             return {
               setAccess: function (e) {
-                s(F[e]), r(e)
+                c(F[e]), l(e)
               },
-              setInvitesPolicy: s,
+              setInvitesPolicy: c,
             }
           }, []),
           m = o.a.useMemo(
             function () {
-              return { access: a, invitesPolicy: c }
+              return { access: a, invitesPolicy: s }
             },
-            [a, c],
+            [a, s],
           )
         return [m, u]
       }
       function T(e) {
         var t, n
         switch (e.access) {
-          case r.Open:
+          case l.Open:
             t = 'Open'
             break
-          case r.Restricted:
+          case l.Restricted:
           default:
             t = 'RestrictedJoinRequestsDisabled'
         }
         switch (e.invitesPolicy) {
-          case l.Moderator:
+          case i.Moderator:
             n = 'ModeratorInvitesAllowed'
             break
-          case l.Member:
+          case i.Member:
             n = 'MemberInvitesAllowed'
             break
-          case l.None:
+          case i.None:
           default:
             n = 'NoInvitesAllowed'
         }
         return { joinPolicy: t, invitesPolicy: n }
       }
-    },
-    Iqvj: function (e, t, n) {
-      'use strict'
-      n.r(t)
-      var a,
-        r,
-        l,
-        i = {
-          fragment: {
-            argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'communityId' }]),
-            kind: 'Fragment',
-            metadata: null,
-            name: 'MemberRequestsBadgeQuery',
-            selections: [
-              {
-                alias: 'community',
-                args: (r = [
-                  { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
-                  { kind: 'Literal', name: 's', value: 4 },
-                ]),
-                concreteType: 'Community',
-                kind: 'LinkedField',
-                name: 'community_by_rest_id',
-                plural: !1,
-                selections: [{ args: null, kind: 'FragmentSpread', name: 'MemberRequestsBadge_community' }],
-                storageKey: null,
-              },
-            ],
-            type: 'Query',
-            abstractKey: null,
-          },
-          kind: 'Request',
-          operation: {
-            argumentDefinitions: a,
-            kind: 'Operation',
-            name: 'MemberRequestsBadgeQuery',
-            selections: [
-              {
-                alias: 'community',
-                args: r,
-                concreteType: 'Community',
-                kind: 'LinkedField',
-                name: 'community_by_rest_id',
-                plural: !1,
-                selections: [
-                  {
-                    alias: null,
-                    args: null,
-                    concreteType: null,
-                    kind: 'LinkedField',
-                    name: 'join_requests_result',
-                    plural: !1,
-                    selections: [
-                      { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
-                      {
-                        kind: 'InlineFragment',
-                        selections: [
-                          (l = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
-                          {
-                            alias: null,
-                            args: null,
-                            kind: 'ScalarField',
-                            name: 'pending_join_request_count',
-                            storageKey: null,
-                          },
-                        ],
-                        type: 'CommunityJoinRequests',
-                        abstractKey: null,
-                      },
-                    ],
-                    storageKey: null,
-                  },
-                  l,
-                ],
-                storageKey: null,
-              },
-            ],
-          },
-          params: {
-            id: 'Pa1zNbA87WEj2_NZ545kYA',
-            metadata: {},
-            name: 'MemberRequestsBadgeQuery',
-            operationKind: 'query',
-            text: null,
-          },
-        }
-      ;(i.hash = '6a17e1b7d37fde19bd4ae3cf11983c91'), (t.default = i)
     },
     JAeQ: function (e, t, n) {
       'use strict'
@@ -3430,13 +4010,13 @@
         return g
       })
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ddV6'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ddV6'),
+        r = n.n(i),
         o = (n('yH/f'), n('kH1Z'), n('6U7i'), n('ERkP')),
-        c = n.n(o),
-        s = n('3XMw'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('3XMw'),
+        u = n.n(c),
         m = n('fS8x'),
         d = u.a.b7fb6bd9,
         y = u.a.e71cdf4d,
@@ -3445,62 +4025,62 @@
         var t = e.aspectRatio,
           n = e.media,
           a = e.onCancel,
-          l = e.onCropDone,
-          o = c.a.useState({ status: 'not_started' }),
-          s = i()(o, 2),
-          u = s[0],
-          g = s[1],
-          f = c.a.useState(!1),
-          h = i()(f, 2),
+          i = e.onCropDone,
+          o = s.a.useState({ status: 'not_started' }),
+          c = r()(o, 2),
+          u = c[0],
+          g = c[1],
+          f = s.a.useState(!1),
+          h = r()(f, 2),
           b = h[0],
           v = h[1],
-          _ = c.a.useState(!1),
-          k = i()(_, 2),
+          _ = s.a.useState(!1),
+          k = r()(_, 2),
           E = k[0],
           C = k[1],
           S = u.croppedMediaId,
           F = void 0 === S ? void 0 : S,
           I = u.status
-        c.a.useEffect(
+        s.a.useEffect(
           function () {
             I === p.NotStarted && (v(!0), g({ status: 'started' })),
               I === p.Completed && n.id !== F && g({ status: 'not_started', croppedMediaId: void 0 })
           },
           [I, n, F],
         )
-        var w = c.a.useCallback(
+        var w = s.a.useCallback(
             function () {
               v(!1), g({ status: p.Completed, croppedMediaId: n.id }), a()
             },
             [a, n],
           ),
-          T = c.a.useCallback(function () {
+          T = s.a.useCallback(function () {
             v(!1), C(!0)
           }, []),
-          K = c.a.useCallback(function () {
+          K = s.a.useCallback(function () {
             C(!1), v(!0)
           }, []),
-          M = c.a.useCallback(function () {
+          L = s.a.useCallback(function () {
             C(!1)
           }, []),
-          x = c.a.useCallback(
+          M = s.a.useCallback(
             function (e) {
-              g({ status: p.Completed, croppedMediaId: n.id }), null == l || l(e)
+              g({ status: p.Completed, croppedMediaId: n.id }), null == i || i(e)
             },
-            [l, n],
+            [i, n],
           ),
-          R = r()(r()({}, n), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n.mediaFile, cropData: void 0 })
-        return c.a.createElement(
-          c.a.Fragment,
+          x = l()(l()({}, n), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n.mediaFile, cropData: void 0 })
+        return s.a.createElement(
+          s.a.Fragment,
           null,
-          b ? c.a.createElement(m.a, { defaultAspectRatio: t, media: n, onCancel: w, onDone: T, title: d }) : null,
+          b ? s.a.createElement(m.a, { defaultAspectRatio: t, media: n, onCancel: w, onDone: T, title: d }) : null,
           E
-            ? c.a.createElement(m.a, {
+            ? s.a.createElement(m.a, {
                 defaultAspectRatio: 1,
-                media: R,
+                media: x,
                 onCancel: K,
-                onCropDone: x,
-                onDone: M,
+                onCropDone: M,
+                onDone: L,
                 title: y,
               })
             : null,
@@ -3539,72 +4119,72 @@
     KQzH: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
-        r = n.n(a),
-        l = (n('hBvt'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('hBvt'), n('ERkP')),
+        r = n.n(i),
         o = n('BUB3'),
-        c = n('shC7'),
-        s = n('csss'),
+        s = n('shC7'),
+        c = n('csss'),
         u = n('t62R')
       t.a = function (e) {
-        return i.a.createElement(o.a, { exact: !0, path: e.link }, function (t) {
-          var n = c.a.getConstants().isRTL ? 'rtl' : 'ltr'
-          return i.a.createElement(s.a, r()({ isActive: t }, e, { label: i.a.createElement(u.b, { dir: n }, e.label) }))
+        return r.a.createElement(o.a, { exact: !0, path: e.link }, function (t) {
+          var n = s.a.getConstants().isRTL ? 'rtl' : 'ltr'
+          return r.a.createElement(c.a, l()({ isActive: t }, e, { label: r.a.createElement(u.b, { dir: n }, e.label) }))
         })
       }
     },
     L47s: function (e, t, n) {
       'use strict'
       var a = n('ddV6'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('+Kfv'),
-        c = n('3XMw'),
-        s = n.n(c),
+        s = n('3XMw'),
+        c = n.n(s),
         u = n('feu+'),
         m = n('ii+P'),
-        d = s.a.j24c37b2,
+        d = c.a.j24c37b2,
         y = function (e) {
           var t = e.Content,
             n = e.actionLabel,
             a = void 0 === n ? d : n,
-            l = e.flag,
-            c = e.headline,
-            s = e.subtext,
+            i = e.flag,
+            s = e.headline,
+            c = e.subtext,
             y = e.behavioralEventContext,
             p = e.withCloseButton,
-            g = Object(m.a)(l),
-            f = r()(g, 2),
+            g = Object(m.a)(i),
+            f = l()(g, 2),
             h = f[0],
             b = f[1]
           if (!h) return null
-          var v = i.a.createElement(
+          var v = r.a.createElement(
             u.a,
             {
               actionLabel: a,
               graphicDisplayMode: 'none',
-              headline: c,
+              headline: s,
               onAction: b,
               onClose: b,
-              subtext: s,
+              subtext: c,
               withCloseButton: p,
             },
-            i.a.createElement(t, null),
+            r.a.createElement(t, null),
           )
-          return y ? i.a.createElement(o.a, { behavioralEventContext: y }, v) : v
+          return y ? r.a.createElement(o.a, { behavioralEventContext: y }, v) : v
         }
-      t.a = i.a.memo(y)
+      t.a = r.a.memo(y)
     },
     LgBi: function (e, t, n) {
       'use strict'
       var a,
-        r = n('97Jx'),
-        l = n.n(r),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('ERkP'),
-        s = n.n(c),
+        l = n('97Jx'),
+        i = n.n(l),
+        r = n('m3Bd'),
+        o = n.n(r),
+        s = n('ERkP'),
+        c = n.n(s),
         u = n('ogGF'),
         m = (n('enFi'), n('Fr3L')),
         d = n('IAZG'),
@@ -3615,27 +4195,27 @@
           var t = e.communityId,
             n = o()(e, y),
             a = Object(d.a)(g, { communityId: t })
-          return s.a.createElement(u.a, l()({ community: a.community }, n))
+          return c.a.createElement(u.a, i()({ community: a.community }, n))
         },
         h = function (e) {
-          return s.a.createElement(
+          return c.a.createElement(
             m.a,
             { errorConfig: p },
-            s.a.createElement(f, l()({ communityId: e.communityId }, e)),
+            c.a.createElement(f, i()({ communityId: e.communityId }, e)),
           )
         }
-      t.a = s.a.memo(h)
+      t.a = c.a.memo(h)
     },
     M2mT: function (e, t, n) {
       'use strict'
       var a = n('m3Bd'),
-        r = n.n(a),
-        l = n('VrFO'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
-        c = n.n(o),
-        s = n('1Pcy'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('1Pcy'),
+        u = n.n(c),
         m = n('5Yy7'),
         d = n.n(m),
         y = n('2VqO'),
@@ -3666,10 +4246,10 @@
         }),
         T = n('MWbm'),
         K = n('yw4N'),
-        M = n('TnY3'),
-        x = n('cHvH'),
-        R = n('3xLC'),
-        L = [
+        L = n('TnY3'),
+        M = n('cHvH'),
+        x = n('3xLC'),
+        R = [
           'children',
           'leftControl',
           'screenType',
@@ -3683,10 +4263,10 @@
           var t = p()(n)
           function n() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
+            r()(this, n)
+            for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(r))),
+              (e = t.call.apply(t, [this].concat(l))),
               f()(u()(e), '_renderChildren', function () {
                 var t = e.props.children
                 return e.context.rootDetailPerColumnScroll
@@ -3706,12 +4286,12 @@
             )
           }
           return (
-            c()(n, [
+            s()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this
-                  return v.a.createElement(x.a, null, function (t) {
+                  return v.a.createElement(M.a, null, function (t) {
                     var n = t.windowWidth
                     return _.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                   })
@@ -3729,7 +4309,7 @@
                       e.showSubtitleOnWideDetail,
                       e.withBottomBorder,
                       e.withDetailOpen,
-                      r()(e, L))
+                      l()(e, R))
                   return v.a.createElement(
                     v.a.Fragment,
                     null,
@@ -3758,12 +4338,12 @@
                   var t = e.isTwoColumnLayout,
                     n = this.props,
                     a = n.SideNavButton,
-                    r = n.TabBar,
-                    l = n.TeamsSwitcher,
-                    i = n.backLocation,
+                    l = n.TabBar,
+                    i = n.TeamsSwitcher,
+                    r = n.backLocation,
                     o = n.documentTitle,
-                    c = n.headerless,
-                    s = n.history,
+                    s = n.headerless,
+                    c = n.history,
                     u = n.leftControl,
                     m = n.middleControl,
                     d = n.onBackClick,
@@ -3778,22 +4358,22 @@
                     F = n.titleIconCell,
                     I = n.titleIconCellSize,
                     K = n.withDetailOpen,
-                    M = n.withSearchBox,
-                    x = n.withTweetButton,
-                    R = 'root' === p,
-                    L = 'secondaryRoot' === p,
+                    L = n.withSearchBox,
+                    M = n.withTweetButton,
+                    x = 'root' === p,
+                    R = 'secondaryRoot' === p,
                     O = 'primaryDetail' === p,
-                    A = (O && _) || (R && b),
-                    j = R || (O && t),
-                    P = R ? h.c : O ? h.a : void 0,
+                    A = (O && _) || (x && b),
+                    j = x || (O && t),
+                    P = x ? h.c : O ? h.a : void 0,
                     D = v.a.createElement(
                       T.a,
                       { style: w.appBarContainer },
                       v.a.createElement(k.a, {
-                        backLocation: i,
+                        backLocation: r,
                         fixed: !1,
                         hideBackButton: j,
-                        history: s,
+                        history: c,
                         leftControl: u,
                         middleControl: m,
                         onBackClick: d,
@@ -3807,23 +4387,23 @@
                       }),
                     ),
                     B =
-                      R || (L && K)
+                      x || (R && K)
                         ? null
                         : v.a.createElement(E.a.Configure, {
                             SideNavButton: a,
-                            TabBar: r,
-                            TeamsSwitcher: l,
-                            backLocation: i,
+                            TabBar: l,
+                            TeamsSwitcher: i,
+                            backLocation: r,
                             documentTitle: o,
-                            headerless: c,
+                            headerless: s,
                             middleControl: m,
                             onBackClick: d,
                             rightControl: y,
                             searchBoxOptions: g,
                             subtitle: C,
                             title: S,
-                            withSearchBox: M,
-                            withTweetButton: x,
+                            withSearchBox: L,
+                            withTweetButton: M,
                           })
                   return v.a.createElement(v.a.Fragment, null, B, D)
                 },
@@ -3832,9 +4412,9 @@
             n
           )
         })(v.a.Component)
-      f()(O, 'contextType', R.a),
+      f()(O, 'contextType', x.a),
         f()(O, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(M.a)(O)
+      t.a = Object(L.a)(O)
     },
     MCGW: function (e, t, n) {
       'use strict'
@@ -3843,12 +4423,12 @@
           return C
         })
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('97Jx'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('97Jx'),
+        r = n.n(i),
         o = (n('KqXw'), n('WNMA'), n('ho0z'), n('uFXj'), n('ERkP')),
-        c = n.n(o),
-        s = n('v6aA'),
+        s = n.n(o),
+        c = n('v6aA'),
         u = n('es0u'),
         m = n('PKbs'),
         d = n('egQk'),
@@ -3875,10 +4455,10 @@
         k = n('VS6U'),
         E = n('rHpw'),
         C = function (e) {
-          var t = c.a.useContext(s.a).featureSwitches,
+          var t = s.a.useContext(c.a).featureSwitches,
             n = e.community,
             a = e.createLocalApiErrorHandler,
-            l = e.fetchCommunityIfNeeded,
+            i = e.fetchCommunityIfNeeded,
             o = e.fetchStatus,
             y = e.history,
             p = e.isCommunityMember,
@@ -3886,13 +4466,13 @@
             f = e.match,
             h = f.params.communityId,
             E = t.isTrue('c9s_participation_enabled')
-          c.a.useEffect(
+          s.a.useEffect(
             function () {
-              h && !n && o !== b.a.LOADED && l(h).catch(a())
+              h && !n && o !== b.a.LOADED && i(h).catch(a())
             },
-            [h, n, a, o, l],
+            [h, n, a, o, i],
           )
-          var C = c.a.useMemo(
+          var C = s.a.useMemo(
             function () {
               return { selectedCommunityId: h || '', defaultText: '' }
             },
@@ -3905,12 +4485,12 @@
               T = {
                 composeOptions: C,
                 history: y,
-                sidebarContent: c.a.createElement(u.a, null),
+                sidebarContent: s.a.createElement(u.a, null),
                 title: (null == n ? void 0 : n.name) || null,
                 withTweetButton: E && p,
               }
             if (I.length > 0) {
-              var K = c.a.createElement(m.b, {
+              var K = s.a.createElement(m.b, {
                 badgeStyle: F.badgeStyle,
                 headerContainerStyle: F.containerStyle,
                 headerExplanationStyle: F.explanationStyle,
@@ -3919,20 +4499,20 @@
                 theme: w,
                 withBottomMargin: !0,
               })
-              return c.a.createElement(
+              return s.a.createElement(
                 k.a,
-                i()({}, T, {
+                r()({}, T, {
                   backLocation: '/i/communities/'.concat(h),
                   documentTitle: Object(d.a)({ communityName: S }),
                   primaryContent: K,
                 }),
               )
             }
-            var M = r()(r()({}, T), {}, { title: null }),
-              x = c.a.createElement(v.b, { history: y, location: g, match: f })
-            return c.a.createElement(k.a, i()({}, M, { primaryContent: x }))
+            var L = l()(l()({}, T), {}, { title: null }),
+              M = s.a.createElement(v.b, { history: y, location: g, match: f })
+            return s.a.createElement(k.a, r()({}, L, { primaryContent: M }))
           }
-          return o === b.a.LOADED || o === b.a.FAILED ? c.a.createElement(_.a, { to: '/' }) : null
+          return o === b.a.LOADED || o === b.a.FAILED ? s.a.createElement(_.a, { to: '/' }) : null
         },
         S = h(C),
         F =
@@ -3951,6 +4531,198 @@
               explanationStyle: { color: e.colors.text },
             }
           }))
+    },
+    MjKK: function (e, t, n) {
+      'use strict'
+      n.d(t, 'b', function () {
+        return p
+      })
+      n('z84I')
+      var a,
+        l,
+        i,
+        r,
+        o = n('ERkP'),
+        s = n.n(o),
+        c = n('cHTv'),
+        u = (n('enFi'), n('jAXQ')),
+        m = n.n(u),
+        d = function (e) {
+          var t,
+            l = m()(void 0 !== a ? a : (a = n('atLU')), e)
+          return s.a.useMemo(
+            function () {
+              var e,
+                t,
+                n = null == l || null === (e = l.custom_banner_media) || void 0 === e ? void 0 : e.media_info
+              if (
+                null != n &&
+                n.original_img_url &&
+                null != n &&
+                n.original_img_height &&
+                null != n &&
+                n.original_img_width &&
+                null != n &&
+                null !== (t = n.color_info) &&
+                void 0 !== t &&
+                t.palette
+              ) {
+                var a = n.color_info.palette
+                return {
+                  url: n.original_img_url,
+                  height: n.original_img_height,
+                  width: n.original_img_width,
+                  palette: a.map(function (e) {
+                    var t = e.percentage,
+                      n = e.rgb
+                    return { percentage: t, rgb: { blue: n.blue, red: n.red, green: n.green } }
+                  }),
+                }
+              }
+            },
+            [null == l || null === (t = l.custom_banner_media) || void 0 === t ? void 0 : t.media_info],
+          )
+        },
+        y = function (e) {
+          var t,
+            a = m()(void 0 !== l ? l : (l = n('xvEL')), e)
+          return s.a.useMemo(
+            function () {
+              var e,
+                t = null == a || null === (e = a.default_banner_media) || void 0 === e ? void 0 : e.media_info,
+                n = null == t ? void 0 : t.original_img_url,
+                l = null == t ? void 0 : t.original_img_height,
+                i = null == t ? void 0 : t.original_img_width
+              if (n && l && i) return { url: n, height: l, width: i }
+            },
+            [null == a || null === (t = a.default_banner_media) || void 0 === t ? void 0 : t.media_info],
+          )
+        }
+      t.a = function (e) {
+        var t = m()(void 0 !== i ? i : (i = n('dMLx')), e),
+          a = d(t),
+          l = y(t)
+        return a || l || c.c
+      }
+      var p = function (e) {
+          var t,
+            a,
+            l,
+            i,
+            o = m()(void 0 !== r ? r : (r = n('N5wd')), e),
+            u = d(o),
+            p = y(o)
+          return s.a.useMemo(
+            function () {
+              if (u) {
+                var e,
+                  t,
+                  n =
+                    null === (e = o.custom_banner_media) || void 0 === e || null === (t = e.media_info) || void 0 === t
+                      ? void 0
+                      : t.salient_rect
+                return { image: u, crop: g(n) }
+              }
+              if (p) {
+                var a,
+                  l,
+                  i =
+                    null === (a = o.default_banner_media) || void 0 === a || null === (l = a.media_info) || void 0 === l
+                      ? void 0
+                      : l.salient_rect
+                return { image: p, crop: g(i) }
+              }
+              return { image: c.c, crop: c.b }
+            },
+            [
+              null === (t = o.custom_banner_media) || void 0 === t || null === (a = t.media_info) || void 0 === a
+                ? void 0
+                : a.salient_rect,
+              null === (l = o.default_banner_media) || void 0 === l || null === (i = l.media_info) || void 0 === i
+                ? void 0
+                : i.salient_rect,
+              u,
+              p,
+            ],
+          )
+        },
+        g = function (e) {
+          if (!e) return []
+          var t = e.height
+          return [{ x: e.left, y: e.top, w: e.width, h: t }]
+        }
+    },
+    N5wd: function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a,
+        l = {
+          argumentDefinitions: [],
+          kind: 'Fragment',
+          metadata: null,
+          name: 'useCommunityBannerImageThumbnail_community',
+          selections: [
+            {
+              alias: null,
+              args: null,
+              concreteType: 'ApiMedia',
+              kind: 'LinkedField',
+              name: 'custom_banner_media',
+              plural: !1,
+              selections: (a = [
+                {
+                  alias: null,
+                  args: null,
+                  concreteType: null,
+                  kind: 'LinkedField',
+                  name: 'media_info',
+                  plural: !1,
+                  selections: [
+                    {
+                      kind: 'InlineFragment',
+                      selections: [
+                        {
+                          alias: null,
+                          args: null,
+                          concreteType: 'ApiMediaRect',
+                          kind: 'LinkedField',
+                          name: 'salient_rect',
+                          plural: !1,
+                          selections: [
+                            { alias: null, args: null, kind: 'ScalarField', name: 'left', storageKey: null },
+                            { alias: null, args: null, kind: 'ScalarField', name: 'top', storageKey: null },
+                            { alias: null, args: null, kind: 'ScalarField', name: 'width', storageKey: null },
+                            { alias: null, args: null, kind: 'ScalarField', name: 'height', storageKey: null },
+                          ],
+                          storageKey: null,
+                        },
+                      ],
+                      type: 'ApiImage',
+                      abstractKey: null,
+                    },
+                  ],
+                  storageKey: null,
+                },
+              ]),
+              storageKey: null,
+            },
+            {
+              alias: null,
+              args: null,
+              concreteType: 'ApiMedia',
+              kind: 'LinkedField',
+              name: 'default_banner_media',
+              plural: !1,
+              selections: a,
+              storageKey: null,
+            },
+            { args: null, kind: 'FragmentSpread', name: 'useCommunityBannerImageDefault_community' },
+            { args: null, kind: 'FragmentSpread', name: 'useCommunityBannerImageCustom_community' },
+          ],
+          type: 'Community',
+          abstractKey: null,
+        }
+      ;(l.hash = 'bda649c5a293882e2d130676e026a4d7'), (t.default = l)
     },
     OBBW: function (e, t, n) {
       'use strict'
@@ -3977,28 +4749,28 @@
       })
       n('uFXj')
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('rHpw'),
-        i = n('MWbm')
+        l = n.n(a),
+        i = n('rHpw'),
+        r = n('MWbm')
       function o(e) {
         var t = e.spacing
-        return r.a.createElement(i.a, {
+        return l.a.createElement(r.a, {
           accessibilityRole: 'separator',
-          style: [c.divider, { marginVertical: null != t ? l.a.theme.spaces[t] : void 0 }],
+          style: [s.divider, { marginVertical: null != t ? i.a.theme.spaces[t] : void 0 }],
         })
       }
-      var c = l.a.create(function (e) {
+      var s = i.a.create(function (e) {
         return { divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }
       })
     },
     OUEC: function (e, t, n) {
       'use strict'
       var a = n('KEM+'),
-        r = n.n(a),
-        l = n('yiKp'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('yiKp'),
+        r = n.n(i),
         o = n('ezF+'),
-        c =
+        s =
           (n('lTEL'),
           n('7x/C'),
           n('JtPf'),
@@ -4011,10 +4783,10 @@
             loaderKey: 'communityDefaultLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        s = o.e(c),
+        c = o.e(s),
         u = n('QIgh'),
         m = n('8UdT')
-      t.a = i()(i()({}, u.b), {}, r()({}, m.b.Community, s))
+      t.a = r()(r()({}, u.b), {}, l()({}, m.b.Community, c))
     },
     OwKm: function (e, t, n) {
       'use strict'
@@ -4022,117 +4794,117 @@
         return C
       })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('3XMw'),
-        s = n.n(c),
+        s = n('3XMw'),
+        c = n.n(s),
         u = n('Nh1N'),
         m = n('MWbm'),
         d = n('Ig1G'),
         y = n('4zmP'),
         p = n('p+r5'),
         g = n('rHpw'),
-        f = s.a.c66769a3,
-        h = s.a.ef02695a,
-        b = s.a.ef02695a,
-        v = s.a.c824202f,
-        _ = s.a.d32cf5e6,
-        k = s.a.f8fa00c7,
-        E = s.a.fc2a5c92,
+        f = c.a.c66769a3,
+        h = c.a.ef02695a,
+        b = c.a.ef02695a,
+        v = c.a.c824202f,
+        _ = c.a.d32cf5e6,
+        k = c.a.f8fa00c7,
+        E = c.a.fc2a5c92,
         C = function (e) {
-          var t = i.a.useContext(o.a).featureSwitches,
+          var t = r.a.useContext(o.a).featureSwitches,
             n = t.getNumberValue('c9s_max_rule_name_length', 50),
             a = t.getNumberValue('c9s_max_rule_description_length', 160),
-            l = e.description,
-            c = e.errorText,
-            s = e.name,
+            i = e.description,
+            s = e.errorText,
+            c = e.name,
             g = e.onChange,
-            C = i.a.useCallback(
+            C = r.a.useCallback(
               function (e) {
                 return !Object(d.h)(e, 3, n)
               },
               [n],
             ),
-            F = i.a.useCallback(
+            F = r.a.useCallback(
               function (e) {
                 return !Object(d.h)(e, 0, a)
               },
               [a],
             ),
-            I = i.a.useState(s),
-            w = r()(I, 2),
+            I = r.a.useState(c),
+            w = l()(I, 2),
             T = w[0],
             K = w[1],
-            M = i.a.useState(C(s)),
-            x = r()(M, 2),
-            R = x[0],
-            L = x[1],
-            O = i.a.useState(void 0),
-            A = r()(O, 2),
+            L = r.a.useState(C(c)),
+            M = l()(L, 2),
+            x = M[0],
+            R = M[1],
+            O = r.a.useState(void 0),
+            A = l()(O, 2),
             j = A[0],
             P = A[1],
-            D = i.a.useState(l),
-            B = r()(D, 2),
+            D = r.a.useState(i),
+            B = l()(D, 2),
             H = B[0],
             N = B[1],
-            U = i.a.useState(F(l)),
-            z = r()(U, 2),
+            U = r.a.useState(F(i)),
+            z = l()(U, 2),
             V = z[0],
             q = z[1],
-            W = i.a.useState(void 0),
-            X = r()(W, 2),
-            J = X[0],
-            Q = X[1],
-            G = i.a.useState('' !== s),
-            Y = r()(G, 2),
+            W = r.a.useState(void 0),
+            X = l()(W, 2),
+            Q = X[0],
+            J = X[1],
+            G = r.a.useState('' !== c),
+            Y = l()(G, 2),
             Z = Y[0],
             $ = Y[1],
-            ee = i.a.useCallback(
+            ee = r.a.useCallback(
               function (e) {
                 var t = !1,
                   a = e.target.value
                 C(a) && ((t = !0), P(b({ minCharacterCount: 3, maxCharacterCount: n }))),
                   $(!0),
-                  L(t),
+                  R(t),
                   K(a),
                   g({ description: H, name: a, valid: !t && !V })
               },
               [n, H, g, V, C],
             ),
-            te = i.a.useCallback(
+            te = r.a.useCallback(
               function (e) {
                 var t = !1,
                   n = e.target.value
-                F(n) && ((t = !0), Q(k({ maxCharacterCount: a }))),
+                F(n) && ((t = !0), J(k({ maxCharacterCount: a }))),
                   q(t),
                   N(n),
-                  g({ name: T, description: n, valid: !t && !R })
+                  g({ name: T, description: n, valid: !t && !x })
               },
-              [a, T, g, R, F],
+              [a, T, g, x, F],
             ),
-            ne = R && j ? void 0 : h({ minCharacterCount: 3, maxCharacterCount: n }),
+            ne = x && j ? void 0 : h({ minCharacterCount: 3, maxCharacterCount: n }),
             ae = V ? void 0 : _({ maxCharacterCount: a }),
-            re = c
-              ? i.a.createElement(
+            le = s
+              ? r.a.createElement(
                   m.a,
                   { style: S.error },
-                  i.a.createElement(y.a, { Icon: u.a, headline: E, text: c, type: 'danger' }),
+                  r.a.createElement(y.a, { Icon: u.a, headline: E, text: s, type: 'danger' }),
                 )
               : void 0
-          return i.a.createElement(
-            i.a.Fragment,
+          return r.a.createElement(
+            r.a.Fragment,
             null,
-            re,
-            i.a.createElement(p.a, {
+            le,
+            r.a.createElement(p.a, {
               autoComplete: 'off',
               autoCorrect: !1,
               autoFocus: !0,
               calculateLength: d.b,
               errorText: j,
               helperText: ne,
-              invalid: R && Z,
+              invalid: x && Z,
               label: f,
               name: 'typedRuleName',
               onChange: ee,
@@ -4140,11 +4912,11 @@
               validLength: n,
               value: T,
             }),
-            i.a.createElement(p.a, {
+            r.a.createElement(p.a, {
               autoComplete: 'off',
               autoCorrect: !1,
               calculateLength: d.b,
-              errorText: J,
+              errorText: Q,
               helperText: ae,
               invalid: V,
               label: v,
@@ -4164,7 +4936,7 @@
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -4196,14 +4968,14 @@
           type: 'CommunityJoinRequestActions',
           abstractKey: null,
         }
-      ;(r.hash = 'd9f3f2d3ef86dc1594fe3112f3b525a0'), (t.default = r)
+      ;(l.hash = 'd9f3f2d3ef86dc1594fe3112f3b525a0'), (t.default = l)
     },
     PbB6: function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r,
-        l = {
+        l,
+        i = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'communityId' }]),
             kind: 'Fragment',
@@ -4212,7 +4984,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -4235,7 +5007,7 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
@@ -4284,31 +5056,31 @@
             text: null,
           },
         }
-      ;(l.hash = '4f2f16fc8afcc27b4165058f28e61afa'), (t.default = l)
+      ;(i.hash = '4f2f16fc8afcc27b4165058f28e61afa'), (t.default = i)
     },
     Phky: function (e, t, n) {
       'use strict'
       var a = n('IGGJ')
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e) {
-          for (var t = [], n = (0, r.default)(e), a = 0; a < n.length; a++) {
-            var l = n[a].screenName
-            t.push(l)
+          for (var t = [], n = (0, l.default)(e), a = 0; a < n.length; a++) {
+            var i = n[a].screenName
+            t.push(i)
           }
           return t
         })
-      var r = a(n('GiKA'))
+      var l = a(n('GiKA'))
       e.exports = t.default
     },
     QRqA: function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('v6aA'),
-        i = n('xZGM'),
+        l = n.n(a),
+        i = n('v6aA'),
+        r = n('xZGM'),
         o = n('L47s'),
-        c = n('3XMw'),
-        s = n.n(c),
+        s = n('3XMw'),
+        c = n.n(s),
         u = n('MWbm'),
         m = n('X00g'),
         d = n('h0NW'),
@@ -4316,34 +5088,34 @@
         p = n('r9x5'),
         g = n('cOhU'),
         f = n('uCrx'),
-        h = s.a.b60e4f77,
-        b = s.a.f0fc827d,
-        v = s.a.c8e93b51,
-        _ = s.a.fc5c6913,
-        k = s.a.ad211086,
-        E = s.a.gf803ba1,
-        C = s.a.e92fe01b,
-        S = s.a.h3bb8068,
-        F = s.a.a709f8f8,
+        h = c.a.b60e4f77,
+        b = c.a.f0fc827d,
+        v = c.a.c8e93b51,
+        _ = c.a.fc5c6913,
+        k = c.a.ad211086,
+        E = c.a.gf803ba1,
+        C = c.a.e92fe01b,
+        S = c.a.h3bb8068,
+        F = c.a.a709f8f8,
         I = { viewType: 'welcome_education' },
-        w = r.a.memo(function (e) {
+        w = l.a.memo(function (e) {
           var t = e.forSingleCommunity,
-            n = r.a.useContext(l.a).featureSwitches,
-            a = r.a.useCallback(
+            n = l.a.useContext(i.a).featureSwitches,
+            a = l.a.useCallback(
               function () {
                 var e = n.isTrue('c9s_ui_colors_enabled_rweb') && (null == t ? void 0 : t.theme),
                   a = [T.decorationContainer, e && { color: m.a.getCommunityUIColor(e) }],
-                  l = r.a.createElement(p.a, { style: a }),
-                  i = r.a.createElement(g.a, { style: a }),
-                  o = r.a.createElement(f.a, { style: a })
-                return r.a.createElement(
+                  i = l.a.createElement(p.a, { style: a }),
+                  r = l.a.createElement(g.a, { style: a }),
+                  o = l.a.createElement(f.a, { style: a })
+                return l.a.createElement(
                   u.a,
                   { style: T.infoItemsContainer },
-                  r.a.createElement(d.a, {
+                  l.a.createElement(d.a, {
                     containerStyle: T.itemContainer,
                     items: [
-                      { label: _, description: k, decoration: l },
-                      { label: E, description: C, decoration: i },
+                      { label: _, description: k, decoration: i },
+                      { label: E, description: C, decoration: r },
                       { label: S, description: F, decoration: o },
                     ],
                   }),
@@ -4353,11 +5125,11 @@
             )
           return !1 === (null == t ? void 0 : t.canJoinCommunity)
             ? null
-            : r.a.createElement(o.a, {
+            : l.a.createElement(o.a, {
                 Content: a,
                 actionLabel: h,
                 behavioralEventContext: I,
-                flag: i.j,
+                flag: r.j,
                 headline: b,
                 subtext: v,
                 withCloseButton: !t,
@@ -4381,12 +5153,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m,
         d,
@@ -4408,7 +5180,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -4417,8 +5189,8 @@
                 name: 'community_by_rest_id',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
-                  (i = { alias: null, args: null, kind: 'ScalarField', name: 'role', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
+                  (r = { alias: null, args: null, kind: 'ScalarField', name: 'role', storageKey: null }),
                   {
                     alias: null,
                     args: null,
@@ -4427,14 +5199,14 @@
                     name: 'actions',
                     plural: !1,
                     selections: [
-                      (s = {
+                      (c = {
                         alias: null,
                         args: null,
                         concreteType: null,
                         kind: 'LinkedField',
                         name: 'join_action_result',
                         plural: !1,
-                        selections: (c = [
+                        selections: (s = [
                           (o = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                         ]),
                         storageKey: null,
@@ -4463,14 +5235,14 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
                 plural: !1,
                 selections: [
-                  l,
                   i,
+                  r,
                   {
                     alias: null,
                     args: null,
@@ -4479,7 +5251,7 @@
                     name: 'actions',
                     plural: !1,
                     selections: [
-                      s,
+                      c,
                       (u = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                     ],
                     storageKey: null,
@@ -4551,7 +5323,7 @@
                     kind: 'LinkedField',
                     name: 'membership_settings',
                     plural: !1,
-                    selections: c,
+                    selections: s,
                     storageKey: null,
                   },
                   { alias: null, args: null, kind: 'ScalarField', name: 'created_at', storageKey: null },
@@ -4563,7 +5335,7 @@
                     name: 'rules',
                     plural: !0,
                     selections: [
-                      l,
+                      i,
                       m,
                       (p = { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }),
                       u,
@@ -4697,7 +5469,6 @@
                     selections: g,
                     storageKey: null,
                   },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'member_count', storageKey: null },
                   {
                     alias: null,
                     args: null,
@@ -4942,7 +5713,7 @@
                                                             storageKey: null,
                                                           },
                                                           y,
-                                                          l,
+                                                          i,
                                                           u,
                                                         ],
                                                         type: 'User',
@@ -5001,6 +5772,7 @@
                     ],
                     storageKey: null,
                   },
+                  { alias: null, args: null, kind: 'ScalarField', name: 'member_count', storageKey: null },
                   {
                     alias: null,
                     args: null,
@@ -5021,7 +5793,7 @@
             ],
           },
           params: {
-            id: 'JrDziDMJ_IXU4Iyzr1gqQg',
+            id: '8LnZso5PjE7dbFyiQzRdEQ',
             metadata: {},
             name: 'PrimaryContentQuery',
             operationKind: 'query',
@@ -5042,12 +5814,12 @@
           return f
         })
       var a = n('KEM+'),
-        r = n.n(a),
-        l = n('yiKp'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('yiKp'),
+        r = n.n(i),
         o = (n('yH/f'), n('oEOe')),
-        c = n('kGix'),
-        s = n('Ssj5'),
+        s = n('kGix'),
+        c = n('Ssj5'),
         u = 'communityModeration',
         m = Object.freeze({
           REQUEST: 'rweb/communityModerationData/FETCH_MODERATION_DATA_REQUEST',
@@ -5059,7 +5831,7 @@
         },
         y = function (e, t) {
           var n
-          return null !== (n = e[u].fetchStatus[t]) && void 0 !== n ? n : c.a.NONE
+          return null !== (n = e[u].fetchStatus[t]) && void 0 !== n ? n : s.a.NONE
         },
         p = Object.freeze({ fetchStatus: {} })
       function g(e) {
@@ -5067,37 +5839,37 @@
       }
       var f = function (e) {
         return function (t, n, a) {
-          var r = a.api
-          return o.b(t, { params: { communityId: e }, request: r.Communities.fetchCommunityModeration })({
+          var l = a.api
+          return o.b(t, { params: { communityId: e }, request: l.Communities.fetchCommunityModeration })({
             meta: { communityId: e },
             actionTypes: m,
             context: 'FETCH_MODERATION_DATA',
           })
         }
       }
-      s.a.register(
-        r()({}, u, function () {
+      c.a.register(
+        l()({}, u, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case m.REQUEST:
-              return i()(i()({}, e), {}, { fetchStatus: i()(i()({}, e.fetchStatus), {}, r()({}, g(t), c.a.LOADING)) })
+              return r()(r()({}, e), {}, { fetchStatus: r()(r()({}, e.fetchStatus), {}, l()({}, g(t), s.a.LOADING)) })
             case m.FAILURE:
-              return i()(
-                i()({}, e),
+              return r()(
+                r()({}, e),
                 {},
-                { fetchStatus: i()(i()({}, e.fetchStatus), {}, r()({}, g(t), c.a.FAILED)), error: t.payload },
+                { fetchStatus: r()(r()({}, e.fetchStatus), {}, l()({}, g(t), s.a.FAILED)), error: t.payload },
               )
             case m.SUCCESS:
               var n
               if (t.payload)
-                return i()(
-                  i()({}, e),
+                return r()(
+                  r()({}, e),
                   {},
                   ((n = {}),
-                  r()(n, g(t), t.payload),
-                  r()(n, 'fetchStatus', i()(i()({}, e.fetchStatus), {}, r()({}, g(t), c.a.LOADED))),
-                  r()(n, 'error', null),
+                  l()(n, g(t), t.payload),
+                  l()(n, 'fetchStatus', r()(r()({}, e.fetchStatus), {}, l()({}, g(t), s.a.LOADED))),
+                  l()(n, 'error', null),
                   n),
                 )
               break
@@ -5114,13 +5886,13 @@
         return _
       })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('p+r5'),
-        s = n('3XMw'),
-        u = n.n(s),
+        s = n('p+r5'),
+        c = n('3XMw'),
+        u = n.n(c),
         m = n('Ig1G'),
         d = n('nmVb'),
         y = n.n(d),
@@ -5134,18 +5906,18 @@
           var t = e.autoFocus,
             n = void 0 !== t && t,
             a = e.communityName,
-            l = e.onChange,
-            s = i.a.useContext(o.a).featureSwitches,
-            u = i.a.useState(!1),
-            d = r()(u, 2),
+            i = e.onChange,
+            c = r.a.useContext(o.a).featureSwitches,
+            u = r.a.useState(!1),
+            d = l()(u, 2),
             p = d[0],
             _ = d[1],
-            k = i.a.useState(void 0),
-            E = r()(k, 2),
+            k = r.a.useState(void 0),
+            E = l()(k, 2),
             C = E[0],
             S = E[1],
-            F = s.getNumberValue('c9s_max_community_name_length', 30),
-            I = i.a.useCallback(
+            F = c.getNumberValue('c9s_max_community_name_length', 30),
+            I = r.a.useCallback(
               function (e) {
                 var t = e.target.value,
                   n = !1
@@ -5153,12 +5925,12 @@
                   ? (y()(t).length > 0 || g()(t).length > 0) && ((n = !0), S(v))
                   : ((n = !0), S(b({ minCharacterCount: 3, maxCharacterCount: F }))),
                   _(n),
-                  l(t, n)
+                  i(t, n)
               },
-              [F, l, S],
+              [F, i, S],
             ),
             w = h({ minCharacterCount: 3, maxCharacterCount: F })
-          return i.a.createElement(c.a, {
+          return r.a.createElement(s.a, {
             autoComplete: 'off',
             autoCorrect: !1,
             autoFocus: n,
@@ -5177,13 +5949,13 @@
     },
     Rqga: function (e, t, n) {
       var a = n('ax0f'),
-        r = Math.log,
-        l = Math.LN2
+        l = Math.log,
+        i = Math.LN2
       a(
         { target: 'Math', stat: !0 },
         {
           log2: function (e) {
-            return r(e) / l
+            return l(e) / i
           },
         },
       )
@@ -5191,17 +5963,17 @@
     'S+H3': function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -5209,22 +5981,22 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M15.09 9.07c-.25-1.83-1.43-2.98-3.1-2.98-1.66 0-2.85 1.15-3.09 2.98-.18 1.32 0 2.26.55 2.89.66.76 1.66.86 2.54.86.89 0 1.88-.1 2.54-.86.56-.63.74-1.57.56-2.89zm-1.68 1.9c-.21.24-.65.35-1.42.35-.76 0-1.2-.11-1.41-.35-.24-.28-.31-.86-.2-1.7.1-.76.47-1.68 1.61-1.68.58 0 .95.23 1.2.56.24.32.36.74.41 1.12.12.84.05 1.42-.19 1.7zm2.67 4.09c-.99-.99-2.4-1.52-4.07-1.52h-.03c-1.62 0-3.06.55-4.06 1.55-.87.87-1.34 2.02-1.34 3.25 0 .79.64 1.44 1.44 1.44h7.95c.79 0 1.44-.65 1.44-1.44 0-1.26-.47-2.43-1.33-3.28zm-7.44 3.276c-.318.002-.562-.288-.502-.6.116-.595.406-1.14.842-1.576.72-.72 1.78-1.12 3.01-1.12H12c1.27 0 2.32.37 3.02 1.08.432.432.715.962.83 1.564.06.308-.178.598-.492.6l-6.72.052zM21.75 6.97c-.22-1.7-1.32-2.75-2.86-2.75-1.53 0-2.64 1.05-2.87 2.75-.16 1.2.02 2.07.52 2.65.62.71 1.53.81 2.35.81.81 0 1.73-.1 2.34-.8.39-.45.59-1.07.59-1.85 0-.22-.02-.47-.07-.81zm-4.22.2c.13-.95.59-1.43 1.36-1.43.43 0 .77.15 1 .46.23.29.32.69.35.97.03.22.05.43.05.61 0 .4-.07.69-.21.84-.16.2-.54.28-1.19.28-.66 0-1.04-.08-1.2-.28-.2-.22-.25-.73-.16-1.45zm6.3 8.37c0 .74-.62 1.34-1.37 1.34h-3.75c-.41 0-.76-.34-.76-.76 0-.43.34-.76.76-.76h3.24c.1 0 .2-.05.26-.13.07-.09.1-.2.07-.3-.12-.53-.37-.99-.74-1.36-.61-.62-1.53-.94-2.64-.94-.73 0-1.39.15-1.93.44l-.5.32c-.36.21-.83.1-1.04-.25-.23-.36-.12-.82.24-1.05l.54-.34c.78-.42 1.71-.64 2.66-.64h.03c1.52 0 2.81.47 3.72 1.38.79.8 1.22 1.88 1.21 3.05zM2.18 7.78c0 .78.2 1.4.59 1.85.61.7 1.53.8 2.34.8.82 0 1.73-.1 2.35-.81.5-.58.68-1.45.52-2.65-.23-1.7-1.34-2.75-2.87-2.75-1.54 0-2.64 1.05-2.86 2.75-.05.34-.07.59-.07.81zm4.13.84c-.16.2-.54.28-1.2.28-.65 0-1.03-.08-1.19-.28-.14-.15-.21-.44-.21-.84 0-.18.02-.39.05-.61.03-.28.12-.68.35-.97.23-.31.57-.46 1-.46.77 0 1.23.48 1.36 1.43.09.72.04 1.23-.16 1.45zM.17 15.54c0 .74.62 1.34 1.37 1.34h3.75c.41 0 .76-.34.76-.76 0-.43-.34-.76-.76-.76H2.05c-.1 0-.2-.05-.26-.13-.07-.09-.1-.2-.07-.3.12-.53.37-.99.74-1.36.61-.62 1.53-.94 2.64-.94.73 0 1.39.15 1.93.44l.5.32c.36.21.83.1 1.04-.25.23-.36.12-.82-.24-1.05l-.54-.34c-.78-.42-1.71-.64-2.66-.64H5.1c-1.52 0-2.81.47-3.72 1.38-.79.8-1.22 1.88-1.21 3.05z',
               }),
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     S91Q: function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
-        r = {
+        l = {
           fragment: {
             argumentDefinitions: [],
             kind: 'Fragment',
@@ -5302,22 +6074,22 @@
             text: null,
           },
         }
-      ;(r.hash = 'aaa46fdf5fd0dc56bacf696d9e8a4740'), (t.default = r)
+      ;(l.hash = 'aaa46fdf5fd0dc56bacf696d9e8a4740'), (t.default = l)
     },
     SNyS: function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -5325,19 +6097,19 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M12.025 22.75c-5.928 0-10.75-4.822-10.75-10.75S6.098 1.25 12.025 1.25 22.775 6.072 22.775 12s-4.822 10.75-10.75 10.75zm0-20c-5.1 0-9.25 4.15-9.25 9.25s4.15 9.25 9.25 9.25 9.25-4.15 9.25-9.25-4.15-9.25-9.25-9.25z',
               }),
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M13.064 17.47c0-.616-.498-1.114-1.114-1.114-.616 0-1.114.498-1.114 1.114 0 .615.498 1.114 1.114 1.114.616 0 1.114-.5 1.114-1.114zm3.081-7.528c0-2.312-1.882-4.194-4.194-4.194-2.312 0-4.194 1.882-4.194 4.194 0 .414.336.75.75.75s.75-.336.75-.75c0-1.485 1.21-2.694 2.695-2.694 1.486 0 2.695 1.21 2.695 2.694 0 1.486-1.21 2.695-2.694 2.695-.413 0-.75.336-.75.75v1.137c0 .414.337.75.75.75s.75-.336.75-.75v-.463c1.955-.354 3.445-2.06 3.445-4.118z',
               }),
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     SyZD: function (e, t, n) {
       'use strict'
@@ -5346,13 +6118,13 @@
           return Y
         })
       var a = n('97Jx'),
-        r = n.n(a),
-        l = (n('KqXw'), n('WNMA'), n('2G9S'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('KqXw'), n('WNMA'), n('2G9S'), n('ERkP')),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('Ig1G'),
-        s = n('rxPX'),
-        u = Object(s.a)().withAnalytics({ page: 'communities', section: 'edit_rules' }),
+        s = n('Ig1G'),
+        c = n('rxPX'),
+        u = Object(c.a)().withAnalytics({ page: 'communities', section: 'edit_rules' }),
         m = n('3XMw'),
         d = n.n(m),
         y = n('yoO3'),
@@ -5362,7 +6134,7 @@
         h = (n('z84I'), n('/yvb')),
         b = n('eSoz'),
         v = n('0KEI'),
-        _ = Object(s.a)()
+        _ = Object(c.a)()
           .propsFromActions(function () {
             return {
               reorderRules: b.c.reorderRules,
@@ -5388,43 +6160,43 @@
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.explanation,
-            r = e.history,
-            l = e.reorderRules,
+            l = e.history,
+            i = e.reorderRules,
             o = t.id_str,
-            c = t.rules,
-            s = t.theme,
-            u = i.a.useState(c),
+            s = t.rules,
+            c = t.theme,
+            u = r.a.useState(s),
             m = f()(u, 2),
             d = m[0],
             p = m[1],
-            g = i.a.useCallback(
+            g = r.a.useCallback(
               function (e) {
                 p(e)
               },
               [p],
             ),
-            b = i.a.useCallback(
+            b = r.a.useCallback(
               function () {
                 var e = n({}),
                   t = d.map(function (e) {
                     return e.rest_id
                   })
-                l(o, { ruleIds: t })
+                i(o, { ruleIds: t })
                   .then(function () {
-                    r.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/rules') })
+                    l.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/rules') })
                   })
                   .catch(e)
               },
-              [o, d, l, r, n],
+              [o, d, i, l, n],
             ),
-            v = i.a.createElement(h.a, { onPress: b, size: 'small', type: 'brandFilled' }, F)
-          return i.a.createElement(
+            v = r.a.createElement(h.a, { onPress: b, size: 'small', type: 'brandFilled' }, F)
+          return r.a.createElement(
             y.a,
             null,
-            i.a.createElement(
+            r.a.createElement(
               C.a,
               { communityId: o, rightControl: v, screenType: 'primaryDetail', title: I },
-              i.a.createElement(S.b, {
+              r.a.createElement(S.b, {
                 badgeStyle: E.badgeStyle,
                 displayType: S.a.Reorder,
                 explanation: a,
@@ -5432,29 +6204,29 @@
                 onReorder: g,
                 ruleContainerStyle: E.ruleContainerStyle,
                 rules: d,
-                theme: s,
+                theme: c,
               }),
             ),
           )
         }),
         T = n('xZGM'),
         K = n('L47s'),
-        M = n('MWbm'),
-        x = n('t62R'),
-        R = d.a.a9ba79c0,
-        L = [d.a.h5482c79, d.a.d5033a7a, d.a.ee8c43af],
+        L = n('MWbm'),
+        M = n('t62R'),
+        x = d.a.a9ba79c0,
+        R = [d.a.h5482c79, d.a.d5033a7a, d.a.ee8c43af],
         O = d.a.j24c37b2,
         A = function () {
-          return i.a.createElement(
-            M.a,
+          return r.a.createElement(
+            L.a,
             { style: P.content },
-            L.map(function (e) {
-              return i.a.createElement(x.b, { color: 'gray700', key: e, size: 'body', style: P.item }, e)
+            R.map(function (e) {
+              return r.a.createElement(M.b, { color: 'gray700', key: e, size: 'body', style: P.item }, e)
             }),
           )
         },
         j = function () {
-          return i.a.createElement(K.a, { Content: A, actionLabel: O, flag: T.i, headline: R, subtext: '' })
+          return r.a.createElement(K.a, { Content: A, actionLabel: O, flag: T.i, headline: x, subtext: '' })
         },
         P = k.a.create(function (e) {
           return {
@@ -5462,7 +6234,7 @@
             item: { paddingTop: e.spaces.space16 },
           }
         }),
-        D = i.a.memo(j),
+        D = r.a.memo(j),
         B = n('mjJ+'),
         H = n('iY63'),
         N = n('ACHU'),
@@ -5472,29 +6244,29 @@
         q = d.a.j560c8ea,
         W = d.a.ab8089ea,
         X = d.a.h63a5c3b,
-        J = i.a.createElement(H.a, null),
-        Q = i.a.createElement(N.a, null),
+        Q = r.a.createElement(H.a, null),
+        J = r.a.createElement(N.a, null),
         G = { viewType: 'add' },
         Y = function (e) {
-          var t = i.a.useContext(o.a).featureSwitches,
+          var t = r.a.useContext(o.a).featureSwitches,
             n = t.isTrue('c9s_rule_creation_enabled'),
             a = t.isTrue('c9s_rule_editing_enabled'),
-            l = t.isTrue('c9s_rule_reordering_enabled'),
-            s = e.community,
+            i = t.isTrue('c9s_rule_reordering_enabled'),
+            c = e.community,
             u = e.history,
             m = e.match,
-            d = s.id_str,
-            g = s.role,
-            f = s.rules,
-            b = s.theme,
+            d = c.id_str,
+            g = c.role,
+            f = c.rules,
+            b = c.theme,
             v = m.url,
-            _ = g === c.a.Admin,
+            _ = g === s.a.Admin,
             k =
               n && _
-                ? i.a.createElement(h.a, {
+                ? r.a.createElement(h.a, {
                     accessibilityLabel: q,
                     behavioralEventContext: G,
-                    icon: J,
+                    icon: Q,
                     link: '/i/communities/'.concat(d, '/tools/rules/add'),
                     pullRight: !0,
                     type: 'primaryText',
@@ -5502,20 +6274,20 @@
                 : void 0,
             F = f.length > 1,
             I =
-              l && _ && F
-                ? i.a.createElement(h.a, {
+              i && _ && F
+                ? r.a.createElement(h.a, {
                     accessibilityLabel: X,
-                    icon: Q,
+                    icon: J,
                     pullRight: !0,
                     renderMenu: function (e) {
                       var t = [{ text: W, link: '/i/communities/'.concat(d, '/tools/rules/reorder') }]
-                      return i.a.createElement(B.a, { items: t, onCloseRequested: e, shouldCloseOnClick: !0 })
+                      return r.a.createElement(B.a, { items: t, onCloseRequested: e, shouldCloseOnClick: !0 })
                     },
                     style: Z.actionsButton,
                     type: 'primaryText',
                   })
                 : void 0,
-            T = i.a.createElement(M.a, { style: Z.rightControlStyle }, k, I),
+            T = r.a.createElement(L.a, { style: Z.rightControlStyle }, k, I),
             K = { displayType: S.a.Default, getPivotLink: void 0 }
           return (
             _ &&
@@ -5524,22 +6296,22 @@
               (K.getPivotLink = function (e) {
                 return '/i/communities/'.concat(d, '/tools/rules/').concat(e.rest_id, '/edit')
               })),
-            i.a.createElement(
+            r.a.createElement(
               U.d,
               null,
-              i.a.createElement(
+              r.a.createElement(
                 U.b,
                 { exact: !0, path: ''.concat(v, '/') },
-                i.a.createElement(
+                r.a.createElement(
                   y.a,
                   null,
-                  i.a.createElement(
+                  r.a.createElement(
                     C.a,
                     { communityId: d, rightControl: T, screenType: 'primaryDetail', title: z },
-                    _ ? i.a.createElement(D, null) : null,
-                    i.a.createElement(
+                    _ ? r.a.createElement(D, null) : null,
+                    r.a.createElement(
                       S.b,
-                      r()(
+                      l()(
                         {
                           badgeStyle: E.badgeStyle,
                           explanation: V,
@@ -5554,12 +6326,12 @@
                   ),
                 ),
               ),
-              i.a.createElement(
+              r.a.createElement(
                 U.b,
                 { exact: !0, path: ''.concat(v, '/reorder') },
-                i.a.createElement(w, { community: s, explanation: V, history: u }),
+                r.a.createElement(w, { community: c, explanation: V, history: u }),
               ),
-              i.a.createElement(U.b, null, i.a.createElement(p.a, { to: ''.concat(v, '/') })),
+              r.a.createElement(U.b, null, r.a.createElement(p.a, { to: ''.concat(v, '/') })),
             )
           )
         },
@@ -5572,27 +6344,27 @@
       'use strict'
       n.r(t),
         n.d(t, 'getTweetButtonLocationState', function () {
-          return wr
+          return El
         }),
         n.d(t, 'CommunityScreen', function () {
-          return Tr
+          return Cl
         })
       var a = n('yiKp'),
-        r = n.n(a),
-        l = (n('ho0z'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('ho0z'), n('ERkP')),
+        r = n.n(i),
         o = n('+Kfv'),
-        c = n('es0u'),
-        s = n('v6aA'),
+        s = n('es0u'),
+        c = n('v6aA'),
         u = n('rxPX'),
         m = n('0KEI'),
         d = n('R5kW'),
         y = function (e, t) {
           var n = Object(d.b)(e, t.communityId) || {},
             a = n.pending_join_request_count,
-            r = void 0 === a ? 0 : a,
-            l = n.tweet_case_count
-          return { pending_join_request_count: r, tweet_case_count: void 0 === l ? 0 : l }
+            l = void 0 === a ? 0 : a,
+            i = n.tweet_case_count
+          return { pending_join_request_count: l, tweet_case_count: void 0 === i ? 0 : i }
         },
         p = function (e, t) {
           return Object(d.c)(e, t.communityId)
@@ -5623,12 +6395,12 @@
         w = n('SNyS'),
         T = n('Lsrn'),
         K = n('k/Ka'),
-        M = function () {
+        L = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(K.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -5636,19 +6408,19 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M20.5 6.49h-3.53v-.46c0-1.26-1.02-2.28-2.26-2.28H9.3c-1.25 0-2.26 1.02-2.26 2.28v.46H3.5c-1.24 0-2.25 1.01-2.25 2.25v4.48c0 .42.34.75.75.75h.22v4c0 1.25 1.01 2.28 2.26 2.28h15.05c1.24 0 2.26-1.03 2.26-2.28v-4H22c.42 0 .75-.33.75-.75V8.74c0-1.24-1.01-2.25-2.25-2.25zM8.54 6.03c0-.43.34-.78.76-.78h5.41c.42 0 .76.35.76.78v.46H8.54v-.46zm11.75 11.94c0 .43-.34.78-.76.78H4.48c-.42 0-.76-.35-.76-.78v-4h5.67v1.89c0 .41.34.75.75.75h3.72c.42 0 .75-.34.75-.75v-1.89h5.68v4zm-9.4-2.86v-2.59h2.22v2.59h-2.22zm10.36-2.64h-6.64v-.7c0-.42-.33-.75-.75-.75h-3.72c-.41 0-.75.33-.75.75v.7H2.75V8.74c0-.41.34-.75.75-.75h17c.42 0 .75.34.75.75v3.73z',
               }),
             ),
           )
         }
-      M.metadata = { width: 24, height: 24 }
-      var x = M,
-        R = n('ACHU'),
-        L = _.a.h6beb5fa,
+      L.metadata = { width: 24, height: 24 }
+      var M = L,
+        x = n('ACHU'),
+        R = _.a.h6beb5fa,
         O = _.a.e3f04700,
         A = _.a.e2429f56,
         j = _.a.df15d5b7,
@@ -5672,22 +6444,22 @@
           var t = e.canModerate,
             n = e.communityId,
             a = e.count,
-            r = void 0 === a ? 0 : a,
-            l = (e.history, e.userRole),
-            o = i.a.useContext(s.a).featureSwitches,
-            c = o.isTrue('c9s_settings_enabled'),
+            l = void 0 === a ? 0 : a,
+            i = (e.history, e.userRole),
+            o = r.a.useContext(c.a).featureSwitches,
+            s = o.isTrue('c9s_settings_enabled'),
             u = o.isTrue('c9s_report_community_enabled'),
             m = o.isTrue('c9s_moderation_enabled') && t,
-            d = c && t,
+            d = s && t,
             y = u && !t,
-            p = i.a.useCallback(
+            p = r.a.useCallback(
               function (e) {
                 var t = []
                 return (
                   m &&
                     t.push({
                       text: A,
-                      subText: j({ count: r }),
+                      subText: j({ count: l }),
                       Icon: I.a,
                       link: '/i/communities/'.concat(n, '/moderation/reported_tweets'),
                     }),
@@ -5698,31 +6470,31 @@
                       link: 'https://help.twitter.com/forms/safety-and-sensitive-content/communities',
                     }),
                   t.push({ text: D, Icon: w.a, link: 'https://help.twitter.com/using-twitter/communities' }),
-                  i.a.createElement(E.a, { items: t, onCloseRequested: e })
+                  r.a.createElement(E.a, { items: t, onCloseRequested: e })
                 )
               },
-              [n, r, m, y],
+              [n, l, m, y],
             ),
-            g = t ? x : R.a,
-            f = t ? (l === b.a.Admin ? H : N) : B
-          return i.a.createElement(
+            g = t ? M : x.a,
+            f = t ? (i === b.a.Admin ? H : N) : B
+          return r.a.createElement(
             k.a,
             { style: z.root },
-            i.a.createElement(C.a, {
+            r.a.createElement(C.a, {
               accessibilityLabel: f,
               behavioralEventContext: U,
               hoverLabel: { label: f },
-              icon: i.a.createElement(g, null),
+              icon: r.a.createElement(g, null),
               link: d ? '/i/communities/'.concat(n, '/tools') : void 0,
               renderMenu: d ? void 0 : p,
               size: 'large',
               type: 'primaryText',
             }),
-            m && r > 0
-              ? i.a.createElement(S.a, {
-                  count: r,
+            m && l > 0
+              ? r.a.createElement(S.a, {
+                  count: l,
                   style: z.menuControlBadge,
-                  truncatedCountFormatter: L,
+                  truncatedCountFormatter: R,
                   unreadCountLabel: O,
                   withBorder: !1,
                 })
@@ -5732,79 +6504,78 @@
       var q,
         W,
         X,
-        J,
         Q,
-        G = g(function (e) {
-          var t = i.a.useContext(s.a).featureSwitches.isTrue('c9s_request_to_join_enabled'),
+        J = g(function (e) {
+          var t = r.a.useContext(c.a).featureSwitches.isTrue('c9s_request_to_join_enabled'),
             n = e.canModerate,
             a = e.communityId,
-            r = e.count,
-            l = e.createLocalApiErrorHandler,
+            l = e.count,
+            i = e.createLocalApiErrorHandler,
             o = e.fetchCommunityModerationData,
-            c = e.fetchStatus,
+            s = e.fetchStatus,
             u = e.userRole,
-            m = r.pending_join_request_count,
-            d = r.tweet_case_count
+            m = l.pending_join_request_count,
+            d = l.tweet_case_count
           return (
-            i.a.useEffect(
+            r.a.useEffect(
               function () {
-                c === f.a.NONE && n && o(a).catch(l())
+                s === f.a.NONE && n && o(a).catch(i())
               },
-              [l, o, c, a, n],
+              [i, o, s, a, n],
             ),
-            i.a.createElement(V, { canModerate: n, communityId: a, count: t ? m + d : d, userRole: u })
+            r.a.createElement(V, { canModerate: n, communityId: a, count: t ? m + d : d, userRole: u })
           )
         }),
-        Y = n('m3Bd'),
-        Z = n.n(Y),
-        $ = n('1Idg'),
-        ee = n('eSoz'),
-        te = n('G6rE'),
-        ne = n('o3oN'),
-        ae = n('/ekK'),
-        re = ['loggedInUser'],
+        G = n('m3Bd'),
+        Y = n.n(G),
+        Z = n('1Idg'),
+        $ = n('eSoz'),
+        ee = n('G6rE'),
+        te = n('o3oN'),
+        ne = n('/ekK'),
+        ae = ['loggedInUser'],
         le = function (e, t) {
-          var n = $.c(e, t)
-          return !n || Object(ae.a)(e, n, 'mod_education_flag')
+          var n = Z.c(e, t)
+          return !n || Object(ne.a)(e, n, 'mod_education_flag')
         },
         ie = Object(u.a)()
           .propsFromState(function () {
             return {
-              communityId: $.c,
-              community: $.a,
-              communityTheme: $.f,
-              fetchStatus: $.b,
+              communityId: Z.c,
+              community: Z.a,
+              communityTheme: Z.f,
+              fetchStatus: Z.b,
               hasShownModEducation: le,
-              membershipsFetchStatus: ne.d,
-              isCommunityMember: $.g,
-              loggedInUser: te.e.selectLoggedInUser,
+              membershipsFetchStatus: te.d,
+              isCommunityMember: Z.g,
+              loggedInUser: ee.e.selectLoggedInUser,
             }
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUser,
-              n = Z()(e, re)
-            return r()({ screenName: t ? t.screen_name : void 0 }, n)
+              n = Y()(e, ae)
+            return l()({ screenName: t ? t.screen_name : void 0 }, n)
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_SCREEN'),
-              fetchCommunityIfNeeded: ee.c.fetchOneIfNeeded,
-              fetchCommunityMemberships: ne.a,
-              setFlag: ae.c,
+              fetchCommunityIfNeeded: $.c.fetchOneIfNeeded,
+              fetchCommunityMemberships: te.a,
+              setFlag: ne.c,
             }
           })
           .withAnalytics({ page: 'community' }),
-        oe = n('feu+'),
-        ce = (n('yH/f'), n('WpDa')),
+        re = n('feu+'),
+        oe = (n('yH/f'), n('WpDa')),
         se = n('ZNT5'),
-        ue = (n('1t7P'), n('jQ/y'), n('jV+4')),
-        me = n('t62R'),
-        de = (n('enFi'), n('jAXQ')),
-        ye = n.n(de),
-        pe = function (e) {
+        ce = (n('1t7P'), n('jQ/y'), n('jV+4')),
+        ue = n('t62R'),
+        me = (n('enFi'), n('jAXQ')),
+        de = n.n(me),
+        ye = function (e) {
           var t,
-            a = ye()(void 0 !== q ? q : (q = n('pChJ')), e.community),
-            r = i.a.useMemo(
+            a = de()(void 0 !== q ? q : (q = n('pChJ')), e.community),
+            l = r.a.useMemo(
               function () {
                 return new Date(a.created_at).toLocaleString('default', {
                   day: 'numeric',
@@ -5814,11 +6585,11 @@
               },
               [a.created_at],
             ),
-            l = i.a.useMemo(
+            i = r.a.useMemo(
               function () {
                 var e, t, n
                 if ('User' === (null === (e = a.creator_results.result) || void 0 === e ? void 0 : e.__typename))
-                  return i.a.createElement(ue.a, {
+                  return r.a.createElement(ce.a, {
                     isVerified:
                       (null === (t = a.creator_results.result.legacy) || void 0 === t ? void 0 : t.verified) || !1,
                     screenName:
@@ -5830,72 +6601,72 @@
             )
           return a.creator_results &&
             'User' === (null === (t = a.creator_results.result) || void 0 === t ? void 0 : t.__typename)
-            ? i.a.createElement(
-                me.b,
+            ? r.a.createElement(
+                ue.b,
                 { color: 'gray700' },
-                i.a.createElement(_.a.I18NFormatMessage, { $i18n: 'a346641a', date: r }, l),
+                r.a.createElement(_.a.I18NFormatMessage, { $i18n: 'a346641a', date: l }, i),
               )
             : null
         },
-        ge = i.a.memo(pe),
-        fe = n('s8G+'),
-        he = n('6vad'),
-        be = n('csss'),
-        ve = n('h0NW'),
-        _e = n('0yYu'),
-        ke = n('cOhU'),
-        Ee = n('DlMI'),
-        Ce = n('Lxak'),
-        Se = n('a5gf'),
-        Fe = i.a.createElement(me.b, { weight: 'bold' }),
-        Ie = _.a.af7c11a9,
-        we = _.a.db1b9462,
-        Te = _.a.ea49402d,
-        Ke = i.a.createElement(_.a.I18NFormatMessage, { $i18n: 'he99cc29' }, i.a.cloneElement(Fe, null, _.a.gedb877c)),
-        Me = _.a.fcef2921,
-        xe = _.a.c93dd2c8,
-        Re = function (e) {
-          var t = ye()(void 0 !== W ? W : (W = n('1rMX')), e.community),
-            a = Object(fe.a)('c9s_request_to_join_enabled'),
-            r = i.a.useMemo(
+        pe = r.a.memo(ye),
+        ge = n('s8G+'),
+        fe = n('6vad'),
+        he = n('csss'),
+        be = n('h0NW'),
+        ve = n('0yYu'),
+        _e = n('cOhU'),
+        ke = n('DlMI'),
+        Ee = n('Lxak'),
+        Ce = n('a5gf'),
+        Se = r.a.createElement(ue.b, { weight: 'bold' }),
+        Fe = _.a.af7c11a9,
+        Ie = _.a.db1b9462,
+        we = _.a.ea49402d,
+        Te = r.a.createElement(_.a.I18NFormatMessage, { $i18n: 'he99cc29' }, r.a.cloneElement(Se, null, _.a.gedb877c)),
+        Ke = _.a.fcef2921,
+        Le = _.a.c93dd2c8,
+        Me = function (e) {
+          var t = de()(void 0 !== W ? W : (W = n('1rMX')), e.community),
+            a = Object(ge.a)('c9s_request_to_join_enabled'),
+            l = r.a.useMemo(
               function () {
                 var e,
                   n = function (e) {
-                    return i.a.createElement(me.b, null, e)
+                    return r.a.createElement(ue.b, null, e)
                   },
-                  r = i.a.createElement(ge, { community: t }),
-                  l = t.membership_settings.__typename,
+                  l = r.a.createElement(pe, { community: t }),
+                  i = t.membership_settings.__typename,
                   o = {
-                    CommunityMemberAllowedActions: { decoration: Oe, label: n(we) },
-                    CommunityOpenMembershipEducation: { decoration: Ae, label: Ke, description: Me },
-                    CommunityRestrictedMembershipEducation: { decoration: Pe, label: Ke, description: xe },
-                    CommunityVisibilityEducation: { decoration: Ae, label: n(Te) },
-                    OriginationAttributionEducation: { decoration: je, label: r },
+                    CommunityMemberAllowedActions: { decoration: Re, label: n(Ie) },
+                    CommunityOpenMembershipEducation: { decoration: Oe, label: Te, description: Ke },
+                    CommunityRestrictedMembershipEducation: { decoration: je, label: Te, description: Le },
+                    CommunityVisibilityEducation: { decoration: Oe, label: n(we) },
+                    OriginationAttributionEducation: { decoration: Ae, label: l },
                   },
-                  c = [o.CommunityMemberAllowedActions]
+                  s = [o.CommunityMemberAllowedActions]
                 return (
                   a
-                    ? ('CommunityRestrictedMembershipSettings' === l &&
-                        c.push(o.CommunityRestrictedMembershipEducation),
-                      'CommunityOpenMembershipSettings' === l && c.push(o.CommunityOpenMembershipEducation))
-                    : c.push(o.CommunityVisibilityEducation),
+                    ? ('CommunityRestrictedMembershipSettings' === i &&
+                        s.push(o.CommunityRestrictedMembershipEducation),
+                      'CommunityOpenMembershipSettings' === i && s.push(o.CommunityOpenMembershipEducation))
+                    : s.push(o.CommunityVisibilityEducation),
                   'User' === (null === (e = t.creator_results.result) || void 0 === e ? void 0 : e.__typename) &&
-                    c.push(o.OriginationAttributionEducation),
-                  c
+                    s.push(o.OriginationAttributionEducation),
+                  s
                 )
               },
               [t, a],
             )
-          return i.a.createElement(
-            i.a.Fragment,
+          return r.a.createElement(
+            r.a.Fragment,
             null,
-            i.a.createElement(he.b, { text: Ie }),
-            Object(b.g)(t.role) && t.description ? i.a.createElement(be.a, { label: t.description }) : null,
-            i.a.createElement(ve.a, { containerStyle: Le.containerStyle, items: r }),
-            i.a.createElement(_e.a, null),
+            r.a.createElement(fe.b, { text: Fe }),
+            Object(b.g)(t.role) && t.description ? r.a.createElement(he.a, { label: t.description }) : null,
+            r.a.createElement(be.a, { containerStyle: xe.containerStyle, items: l }),
+            r.a.createElement(ve.a, null),
           )
         },
-        Le = F.a.create(function (e) {
+        xe = F.a.create(function (e) {
           return {
             containerStyle: {
               paddingVertical: e.componentDimensions.gutterVertical,
@@ -5911,37 +6682,24 @@
             },
           }
         }),
-        Oe = i.a.createElement(ke.a, { style: Le.icon }),
-        Ae = i.a.createElement(Ee.a, { style: Le.icon }),
-        je = i.a.createElement(Ce.a, { style: Le.icon }),
-        Pe = i.a.createElement(Se.a, { style: Le.icon }),
-        De = i.a.memo(Re),
-        Be = n('fTQJ'),
-        He = (n('z84I'), n('PKbs')),
-        Ne = n('X00g'),
-        Ue = function (e) {
-          var t = ye()(void 0 !== X ? X : (X = n('DCZs')), e),
-            a = t.custom_theme,
-            r = t.default_theme,
-            l = null != a ? a : r
-          return i.a.useMemo(
-            function () {
-              return Ne.a.getCommunityTheme(l)
-            },
-            [l],
-          )
-        },
-        ze = Ue,
-        Ve = n('rC8y'),
-        qe = void 0 !== J ? J : (J = n('BX8b')),
-        We = _.a.gfca5254,
-        Xe = _.a.ffd9cfe6,
-        Je = function (e) {
+        Re = r.a.createElement(_e.a, { style: xe.icon }),
+        Oe = r.a.createElement(ke.a, { style: xe.icon }),
+        Ae = r.a.createElement(Ee.a, { style: xe.icon }),
+        je = r.a.createElement(Ce.a, { style: xe.icon }),
+        Pe = r.a.memo(Me),
+        De = n('fTQJ'),
+        Be = (n('z84I'), n('PKbs')),
+        He = n('1Xyu'),
+        Ne = n('rC8y'),
+        Ue = void 0 !== X ? X : (X = n('BX8b')),
+        ze = _.a.gfca5254,
+        Ve = _.a.ffd9cfe6,
+        qe = function (e) {
           var t = e.community,
-            n = ye()(qe, t),
+            n = de()(Ue, t),
             a = n.rules,
-            r = ze(n),
-            l = i.a.useMemo(
+            l = Object(He.a)(n),
+            i = r.a.useMemo(
               function () {
                 return a.map(function (e) {
                   return { rest_id: e.rest_id, name: e.name, description: e.description || '' }
@@ -5951,31 +6709,31 @@
             )
           return 0 === a.length
             ? null
-            : i.a.createElement(
-                i.a.Fragment,
+            : r.a.createElement(
+                r.a.Fragment,
                 null,
-                i.a.createElement(he.b, { text: We }),
-                i.a.createElement(He.b, {
-                  badgeStyle: Qe.badgeStyle,
-                  headerContainerStyle: [Qe.containerStyle, Qe.headingContainerStyle],
-                  headerExplanationStyle: Qe.explanationStyle,
+                r.a.createElement(fe.b, { text: ze }),
+                r.a.createElement(Be.b, {
+                  badgeStyle: We.badgeStyle,
+                  headerContainerStyle: [We.containerStyle, We.headingContainerStyle],
+                  headerExplanationStyle: We.explanationStyle,
                   limit: 5,
-                  ruleContainerStyle: Qe.ruleContainerStyle,
-                  rules: l,
-                  theme: r,
+                  ruleContainerStyle: We.ruleContainerStyle,
+                  rules: i,
+                  theme: l,
                 }),
                 a.length > 5
-                  ? i.a.createElement(
-                      i.a.Fragment,
+                  ? r.a.createElement(
+                      r.a.Fragment,
                       null,
-                      i.a.createElement(Ve.a, { link: '/i/communities/'.concat(n.rest_id, '/rules'), text: Xe }),
+                      r.a.createElement(Ne.a, { link: '/i/communities/'.concat(n.rest_id, '/rules'), text: Ve }),
                       ' ',
-                      i.a.createElement(_e.a, null),
+                      r.a.createElement(ve.a, null),
                     )
                   : null,
               )
         },
-        Qe = F.a.create(function (e) {
+        We = F.a.create(function (e) {
           return {
             explanationStyle: { color: e.colors.text },
             containerStyle: {
@@ -5988,12 +6746,12 @@
             badgeStyle: { marginRight: e.spaces.space16, marginLeft: e.spaces.space2 },
           }
         }),
-        Ge = i.a.memo(Je),
-        Ye = _.a.i9028824,
-        Ze = _.a.cc683fb9,
-        $e = function (e) {
-          var t = ye()(void 0 !== Q ? Q : (Q = n('+BRr')), e.community),
-            a = i.a.useMemo(
+        Xe = r.a.memo(qe),
+        Qe = _.a.i9028824,
+        Je = _.a.cc683fb9,
+        Ge = function (e) {
+          var t = de()(void 0 !== Q ? Q : (Q = n('+BRr')), e.community),
+            a = r.a.useMemo(
               function () {
                 return (
                   (e = t.rest_id),
@@ -6007,62 +6765,62 @@
                     },
                     context: 'FETCH_COMMUNITY_ABOUT_TIMELINE',
                     perfKey: 'communityAbout',
-                    formatResponse: ce.a,
+                    formatResponse: oe.a,
                   })
                 )
                 var e
               },
               [t.rest_id],
             )
-          return i.a.createElement(
-            i.a.Fragment,
+          return r.a.createElement(
+            r.a.Fragment,
             null,
-            i.a.createElement(De, { community: t }),
-            i.a.createElement(Ge, { community: t }),
-            i.a.createElement(Be.a, { loadingAccessibilityLabel: Ye, module: a, title: Ze }),
+            r.a.createElement(Pe, { community: t }),
+            r.a.createElement(Xe, { community: t }),
+            r.a.createElement(De.a, { loadingAccessibilityLabel: Qe, module: a, title: Je }),
           )
         },
-        et = i.a.memo($e),
-        tt = (n('LW0h'), n('7x/C'), n('tVqn'), n('uFXj'), n('97Jx')),
-        nt = n.n(tt),
-        at = n('ddV6'),
-        rt = n.n(at),
-        lt = (n('7xRU'), n('KqXw'), n('WNMA'), n('egQk')),
-        it = n('li/m'),
-        ot = function (e, t) {
+        Ye = r.a.memo(Ge),
+        Ze = (n('LW0h'), n('7x/C'), n('tVqn'), n('uFXj'), n('97Jx')),
+        $e = n.n(Ze),
+        et = n('ddV6'),
+        tt = n.n(et),
+        nt = (n('7xRU'), n('KqXw'), n('WNMA'), n('egQk')),
+        at = n('li/m'),
+        lt = function (e, t) {
           var n
-          return (null === (n = t.location.state) || void 0 === n ? void 0 : n.community) || $.a(e, t)
+          return (null === (n = t.location.state) || void 0 === n ? void 0 : n.community) || Z.a(e, t)
         },
-        ct = Object(u.a)()
+        it = Object(u.a)()
           .propsFromState(function () {
-            return { community: ot, fetchStatus: $.b, isCommunityMember: $.g }
+            return { community: lt, fetchStatus: Z.b, isCommunityMember: Z.g }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_RULES_SCREEN',
               ),
-              join: it.b,
-              requestToJoin: ee.c.requestToJoin,
-              fetchCommunityIfNeeded: ee.c.fetchOneIfNeeded,
+              join: at.b,
+              requestToJoin: $.c.requestToJoin,
+              fetchCommunityIfNeeded: $.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'rules', component: 'modal' }),
-        st = n('MDbM'),
-        ut = n('jHSc'),
-        mt = n('5FtR'),
-        dt = _.a.h4fbfa57,
-        yt = _.a.ea8cfb1d,
-        pt = _.a.dc1b14a1,
-        gt = { viewType: 'community' },
-        ft = ct(function (e) {
+        rt = n('MDbM'),
+        ot = n('jHSc'),
+        st = n('5FtR'),
+        ct = _.a.h4fbfa57,
+        ut = _.a.ea8cfb1d,
+        mt = _.a.dc1b14a1,
+        dt = { viewType: 'community' },
+        yt = it(function (e) {
           var t,
             n = e.community,
             a = e.createLocalApiErrorHandler,
-            r = e.fetchCommunityIfNeeded,
-            l = e.fetchStatus,
-            c = e.isCommunityMember,
-            s = e.join,
+            l = e.fetchCommunityIfNeeded,
+            i = e.fetchStatus,
+            s = e.isCommunityMember,
+            c = e.join,
             u = e.match,
             m = e.onDismiss,
             d = e.requestToJoin,
@@ -6070,25 +6828,25 @@
             p =
               'ViewerRequestRequired' ===
               (null == n || null === (t = n.actions.join_action_result) || void 0 === t ? void 0 : t.reason)
-          i.a.useEffect(function () {
-            y && !n && l !== st.a.LOADED && r(y).catch(a())
+          r.a.useEffect(function () {
+            y && !n && i !== rt.a.LOADED && l(y).catch(a())
           })
-          var g = i.a.useCallback(function (e) {
-              return i.a.createElement(me.b, { size: 'title4', weight: 'bold' }, pt({ communityName: e }))
+          var g = r.a.useCallback(function (e) {
+              return r.a.createElement(ue.b, { size: 'title4', weight: 'bold' }, mt({ communityName: e }))
             }, []),
-            f = p ? yt : dt,
-            h = i.a.useCallback(
+            f = p ? ut : ct,
+            h = r.a.useCallback(
               function () {
                 if (n) {
                   var e = n.id_str
-                  ;(p ? d : s)(e).then(m).catch(a())
+                  ;(p ? d : c)(e).then(m).catch(a())
                 }
               },
-              [n, a, s, p, m, d],
+              [n, a, c, p, m, d],
             ),
-            b = i.a.useCallback(
+            b = r.a.useCallback(
               function () {
-                return i.a.createElement(C.a, { onPress: h, size: 'small', type: 'brandFilled' }, f)
+                return r.a.createElement(C.a, { onPress: h, size: 'small', type: 'brandFilled' }, f)
               },
               [f, h],
             )
@@ -6096,33 +6854,33 @@
             var v = n.name,
               _ = n.rules,
               k = n.theme
-            return _ && _.length && !c
-              ? i.a.createElement(
+            return _ && _.length && !s
+              ? r.a.createElement(
                   o.a,
-                  { behavioralEventContext: gt },
-                  i.a.createElement(
-                    ut.b,
+                  { behavioralEventContext: dt },
+                  r.a.createElement(
+                    ot.b,
                     {
                       behavioralEventViewType: 'rules',
                       onBackClick: m,
                       rightControl: b(),
-                      title: Object(lt.a)({ communityName: v }),
+                      title: Object(nt.a)({ communityName: v }),
                     },
-                    i.a.createElement(He.b, {
-                      badgeStyle: ht.badgeStyle,
-                      headerContainerStyle: ht.containerStyle,
-                      headerExplanationStyle: ht.headerExplanationStyle,
+                    r.a.createElement(Be.b, {
+                      badgeStyle: pt.badgeStyle,
+                      headerContainerStyle: pt.containerStyle,
+                      headerExplanationStyle: pt.headerExplanationStyle,
                       heading: g(v),
                       rules: _,
                       theme: k,
                     }),
                   ),
                 )
-              : i.a.createElement(mt.a, { to: '/i/communities/'.concat(n.id_str) })
+              : r.a.createElement(st.a, { to: '/i/communities/'.concat(n.id_str) })
           }
-          return l === st.a.LOADED ? i.a.createElement(mt.a, { to: '/' }) : null
+          return i === rt.a.LOADED ? r.a.createElement(st.a, { to: '/' }) : null
         }),
-        ht = F.a.create(function (e) {
+        pt = F.a.create(function (e) {
           return {
             badgeStyle: { marginRight: e.spaces.space16 },
             headerExplanationStyle: { marginTop: e.spaces.space8 },
@@ -6132,85 +6890,85 @@
             },
           }
         }),
-        bt = ['loggedInUser'],
-        vt = Object(u.a)()
+        gt = ['loggedInUser'],
+        ft = Object(u.a)()
           .propsFromState(function () {
-            return { community: $.a, loggedInUser: te.e.selectLoggedInUser, joinActionResultType: $.h }
+            return { community: Z.a, loggedInUser: ee.e.selectLoggedInUser, joinActionResultType: Z.h }
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUser,
-              n = Z()(e, bt)
-            return r()({ isProtectedUser: null == t ? void 0 : t.protected }, n)
+              n = Y()(e, gt)
+            return l()({ isProtectedUser: null == t ? void 0 : t.protected }, n)
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_DETAIL'),
-              join: it.b,
-              requestToJoin: ee.c.requestToJoin,
-              leave: it.c,
+              join: at.b,
+              requestToJoin: $.c.requestToJoin,
+              leave: at.c,
             }
           }),
-        _t = (n('ssJ/'), n('X8FW')),
-        kt = n('cHvH'),
-        Et = n('sgih'),
-        Ct = i.a.memo(function (e) {
-          var t = Object(kt.b)().windowWidth,
+        ht = (n('ssJ/'), n('X8FW')),
+        bt = n('cHvH'),
+        vt = n('sgih'),
+        _t = r.a.memo(function (e) {
+          var t = Object(bt.b)().windowWidth,
             n = e.children
           return t > F.a.theme.breakpoints.medium
-            ? i.a.createElement(_t.b, { modalSize: _t.a.fixed }, n)
-            : i.a.createElement(Et.a, { type: 'full' }, n)
+            ? r.a.createElement(ht.b, { modalSize: ht.a.fixed }, n)
+            : r.a.createElement(vt.a, { type: 'full' }, n)
         }),
-        St = n('CGyZ'),
-        Ft = _.a.fad95333,
-        It = function (e) {
+        kt = n('CGyZ'),
+        Et = _.a.fad95333,
+        Ct = function (e) {
           var t = e.offendingRule
-          return i.a.createElement(
+          return r.a.createElement(
             k.a,
             null,
             t
-              ? i.a.createElement(
+              ? r.a.createElement(
                   k.a,
-                  { style: wt.offendingRule },
+                  { style: St.offendingRule },
                   (function (e) {
-                    return i.a.createElement(
+                    return r.a.createElement(
                       _.a.I18NFormatMessage,
                       { $i18n: 'jb124a07' },
-                      i.a.createElement(me.b, { weight: 'bold' }, _.a.a0e0a52b({ offendingRule: e })),
+                      r.a.createElement(ue.b, { weight: 'bold' }, _.a.a0e0a52b({ offendingRule: e })),
                     )
                   })(t),
                 )
               : null,
-            i.a.createElement(me.b, null, Ft),
+            r.a.createElement(ue.b, null, Et),
           )
         },
-        wt = F.a.create(function (e) {
+        St = F.a.create(function (e) {
           return { offendingRule: { display: 'flex', marginBottom: e.spaces.space12 } }
         }),
-        Tt = _.a.hafa07f2,
-        Kt = _.a.fa94c9da,
-        Mt = _.a.c15bee31,
-        xt = _.a.i859676b,
-        Rt = i.a.createElement(
+        Ft = _.a.hafa07f2,
+        It = _.a.fa94c9da,
+        wt = _.a.c15bee31,
+        Tt = _.a.i859676b,
+        Kt = r.a.createElement(
           _.a.I18NFormatMessage,
           { $i18n: 'd8d8fcba' },
-          i.a.createElement(me.b, { link: '/settings/audience_and_tagging' }, _.a.e77dfaf0),
+          r.a.createElement(ue.b, { link: '/settings/audience_and_tagging' }, _.a.e77dfaf0),
         ),
         Lt = _.a.fc2a5c92,
-        Ot = _.a.bf7bdb60,
-        At = _.a.h27d695f,
-        jt = _.a.b02360f5,
-        Pt = Object.freeze({
+        Mt = _.a.bf7bdb60,
+        xt = _.a.h27d695f,
+        Rt = _.a.b02360f5,
+        Ot = Object.freeze({
           joinAvailable: 'CommunityJoinAction',
           joinUnavailable: 'CommunityJoinActionUnavailable',
           leaveAvailable: 'CommunityLeaveAction',
           leaveUnavailable: 'CommunityLeaveActionUnavailable',
         }),
-        Dt = Object.freeze({
+        At = Object.freeze({
           Unavailable: 'Unavailable',
           ViewerNotMember: 'ViewerNotMember',
           ViewerIsSoleAdmin: 'ViewerIsSoleAdmin',
         }),
-        Bt = Object.freeze({
+        jt = Object.freeze({
           Unavailable: 'Unavailable',
           ViewerIsMember: 'ViewerIsMember',
           ViewerIsRemoved: 'ViewerIsRemoved',
@@ -6219,26 +6977,25 @@
           ViewerRequestPending: 'ViewerRequestPending',
           ViewerJoinRequestRequired: 'ViewerRequestRequired',
         })
-      var Ht,
-        Nt,
-        Ut,
-        zt = n('zCf4'),
-        Vt = ['community', 'communityId', 'match'],
-        qt = _.a.e6057013,
-        Wt = _.a.b533478f,
-        Xt = { follow: _.a.b171d7c4, following: _.a.aa7ae3f6, unfollow: _.a.bb1d57b6 },
-        Jt = _.a.j24c37b2,
-        Qt = function (e) {
-          var t = i.a.useState(void 0),
-            n = rt()(t, 2),
+      var Pt,
+        Dt,
+        Bt = n('zCf4'),
+        Ht = ['community', 'communityId', 'match'],
+        Nt = _.a.e6057013,
+        Ut = _.a.b533478f,
+        zt = { follow: _.a.b171d7c4, following: _.a.aa7ae3f6, unfollow: _.a.bb1d57b6 },
+        Vt = _.a.j24c37b2,
+        qt = function (e) {
+          var t = r.a.useState(void 0),
+            n = tt()(t, 2),
             a = n[0],
-            l = n[1],
-            o = i.a.useState(!1),
-            c = rt()(o, 2),
-            s = c[0],
-            u = c[1],
-            m = { history: Object(zt.f)(), location: Object(zt.g)(), match: Object(zt.i)() },
-            d = Object(fe.a)('c9s_request_to_join_enabled'),
+            i = n[1],
+            o = r.a.useState(!1),
+            s = tt()(o, 2),
+            c = s[0],
+            u = s[1],
+            m = { history: Object(Bt.f)(), location: Object(Bt.g)(), match: Object(Bt.i)() },
+            d = Object(ge.a)('c9s_request_to_join_enabled'),
             y = e.community,
             p = e.createLocalApiErrorHandler,
             g = e.isProtectedUser,
@@ -6252,112 +7009,112 @@
             I = y.name,
             w = y.role,
             T = Object(b.g)(w),
-            K = E.reason === Bt.ViewerJoinRequestRequired && d,
-            M = E.reason === Bt.ViewerRequestPending && d,
-            x = { viewType: 'join', viewState: { type: 'toggleable', toggledTo: !T } },
-            R = i.a.useCallback(
+            K = E.reason === jt.ViewerJoinRequestRequired && d,
+            L = E.reason === jt.ViewerRequestPending && d,
+            M = { viewType: 'join', viewState: { type: 'toggleable', toggledTo: !T } },
+            x = r.a.useCallback(
               function () {
                 var e = y.rules,
                   t = y.viewerViolatedRule,
                   n = (function (e, t, n, a) {
-                    var r = e.__typename,
-                      l = e.reason,
+                    var l = e.__typename,
+                      i = e.reason,
                       o = function (e) {
                         return { canAction: !0, message: e }
                       },
-                      c = function (e) {
+                      s = function (e) {
                         return { canAction: !1, message: e }
                       },
-                      s = c({ headline: Lt, text: Ot })
-                    switch (r) {
-                      case Pt.joinAvailable:
+                      c = s({ headline: Lt, text: Mt })
+                    switch (l) {
+                      case Ot.joinAvailable:
                         return o()
-                      case Pt.joinUnavailable:
-                        switch (l) {
-                          case Bt.ViewerIsRemoved:
-                            return c({
-                              headline: Mt,
-                              text: i.a.createElement(It, { offendingRule: null == n ? void 0 : n.name }),
+                      case Ot.joinUnavailable:
+                        switch (i) {
+                          case jt.ViewerIsRemoved:
+                            return s({
+                              headline: wt,
+                              text: r.a.createElement(Ct, { offendingRule: null == n ? void 0 : n.name }),
                             })
-                          case Bt.ViewerNotInvited:
-                            return c({ headline: Tt, text: Kt })
-                          case Bt.ViewerIsProtected:
-                            return t ? c({ headline: xt, text: Rt }) : o()
-                          case Bt.ViewerJoinRequestRequired:
-                            return a ? o() : s
+                          case jt.ViewerNotInvited:
+                            return s({ headline: Ft, text: It })
+                          case jt.ViewerIsProtected:
+                            return t ? s({ headline: Tt, text: Kt }) : o()
+                          case jt.ViewerJoinRequestRequired:
+                            return a ? o() : c
                           default:
-                            return s
+                            return c
                         }
                       default:
-                        return s
+                        return c
                     }
                   })(E, g, t, d),
                   a = n.canAction,
-                  r = n.message
-                !a && r && l(r), a && (e && e.length > 0 ? u(!0) : K ? v(F).catch(p({})) : f(F).catch(p({})))
+                  l = n.message
+                !a && l && i(l), a && (e && e.length > 0 ? u(!0) : K ? v(F).catch(p({})) : f(F).catch(p({})))
               },
               [y, F, p, g, d, f, K, E, v],
             ),
-            L = i.a.useCallback(
+            R = r.a.useCallback(
               function () {
                 var e = (function (e) {
                     var t,
                       n = e.__typename,
                       a = e.reason,
-                      r = function (e) {
+                      l = function (e) {
                         return { canAction: !1, message: e }
                       },
-                      l = r({ headline: Lt, text: Ot })
+                      i = l({ headline: Lt, text: Mt })
                     switch (n) {
-                      case Pt.leaveAvailable:
+                      case Ot.leaveAvailable:
                         return { canAction: !0, message: t }
-                      case Pt.leaveUnavailable:
+                      case Ot.leaveUnavailable:
                         switch (a) {
-                          case Dt.ViewerIsSoleAdmin:
-                            return r({ headline: At, text: jt })
+                          case At.ViewerIsSoleAdmin:
+                            return l({ headline: xt, text: Rt })
                           default:
-                            return l
+                            return i
                         }
                       default:
-                        return l
+                        return i
                     }
                   })(S),
                   t = e.canAction,
                   n = e.message
-                !t && n && l(n), t && h(F).catch(p({}))
+                !t && n && i(n), t && h(F).catch(p({}))
               },
               [F, p, h, S],
             ),
-            O = i.a.useCallback(function () {
-              l(void 0)
+            O = r.a.useCallback(function () {
+              i(void 0)
             }, []),
-            A = i.a.useCallback(function () {
+            A = r.a.useCallback(function () {
               u(!1)
             }, []),
-            j = i.a.useMemo(
+            j = r.a.useMemo(
               function () {
-                return K ? r()(r()({}, Xt), {}, { follow: qt }) : Xt
+                return K ? l()(l()({}, zt), {}, { follow: Nt }) : zt
               },
               [K],
             )
-          return i.a.createElement(
+          return r.a.createElement(
             k.a,
-            { style: Gt.button },
-            s ? i.a.createElement(Ct, null, i.a.createElement(ft, nt()({ communityId: F, onDismiss: A }, m))) : null,
-            M
-              ? i.a.createElement(C.a, { disabled: !0, type: 'onMediaOutlined' }, Wt)
-              : i.a.createElement(St.a, {
-                  behavioralEventContext: x,
+            { style: Wt.button },
+            c ? r.a.createElement(_t, null, r.a.createElement(yt, $e()({ communityId: F, onDismiss: A }, m))) : null,
+            L
+              ? r.a.createElement(C.a, { disabled: !0, type: 'onMediaOutlined' }, Ut)
+              : r.a.createElement(kt.a, {
+                  behavioralEventContext: M,
                   buttonText: j,
                   isFollowing: T,
                   name: I,
-                  onFollow: R,
-                  onUnfollow: L,
+                  onFollow: x,
+                  onUnfollow: R,
                   type: 'community',
                 }),
             a
-              ? i.a.createElement(oe.a, {
-                  actionLabel: Jt,
+              ? r.a.createElement(re.a, {
+                  actionLabel: Vt,
                   graphicDisplayMode: 'none',
                   headline: a.headline,
                   onAction: O,
@@ -6368,96 +7125,48 @@
               : null,
           )
         },
-        Gt = F.a.create(function (e) {
+        Wt = F.a.create(function (e) {
           return { button: { justifyContent: 'right' } }
         }),
-        Yt = vt(function (e) {
+        Xt = ft(function (e) {
           var t = e.community,
-            n = (e.communityId, e.match, Z()(e, Vt))
-          return t ? i.a.createElement(Qt, nt()({ community: t }, n)) : null
+            n = (e.communityId, e.match, Y()(e, Ht))
+          return t ? r.a.createElement(qt, $e()({ community: t }, n)) : null
         }),
-        Zt = n('YeIG'),
-        $t = n('cHTv'),
+        Qt = n('YeIG'),
+        Jt = n('MjKK'),
+        Gt = n('TIdA'),
+        Yt = n('A91F'),
+        Zt = n('9Xij'),
+        $t = void 0 !== Pt ? Pt : (Pt = n('fK4d')),
         en = function (e) {
-          var t = ye()(void 0 !== Ht ? Ht : (Ht = n('dMLx')), e)
-          return i.a.useMemo(
-            function () {
-              return (
-                (function (e) {
-                  var t,
-                    n,
-                    a = null == e || null === (t = e.custom_banner_media) || void 0 === t ? void 0 : t.media_info
-                  if (
-                    null != a &&
-                    a.original_img_url &&
-                    null != a &&
-                    a.original_img_height &&
-                    null != a &&
-                    a.original_img_width &&
-                    null != a &&
-                    null !== (n = a.color_info) &&
-                    void 0 !== n &&
-                    n.palette
-                  ) {
-                    var r = a.color_info.palette
-                    return {
-                      url: a.original_img_url,
-                      height: a.original_img_height,
-                      width: a.original_img_width,
-                      palette: r,
-                    }
-                  }
-                })(t) ||
-                (function (e) {
-                  var t,
-                    n = null == e || null === (t = e.default_banner_media) || void 0 === t ? void 0 : t.media_info
-                  if (
-                    null != n &&
-                    n.original_img_url &&
-                    null != n &&
-                    n.original_img_height &&
-                    null != n &&
-                    n.original_img_width
-                  )
-                    return { url: n.original_img_url, height: n.original_img_height, width: n.original_img_width }
-                })(t) ||
-                $t.b
-              )
-            },
-            [t],
-          )
-        },
-        tn = n('TIdA'),
-        nn = n('A91F'),
-        an = n('9Xij'),
-        rn = void 0 !== Nt ? Nt : (Nt = n('fK4d')),
-        ln = function (e) {
-          var t = ye()(rn, e.community),
-            n = en(t),
+          var t = de()($t, e.community),
+            n = Object(Jt.a)(t),
             a = F.a.theme.aspectRatios.communityBanner
-          return n && !Object(Zt.a)(n)
-            ? i.a.createElement(
+          return n && !Object(Qt.a)(n)
+            ? r.a.createElement(
                 k.a,
                 null,
-                i.a.createElement(tn.a, {
+                r.a.createElement(Gt.a, {
                   accessibilityLabel: '',
-                  aspectMode: nn.a.exact(a),
+                  aspectMode: Yt.a.exact(a),
                   backgroundColor: F.a.theme.colors.gray300,
                   image: n,
                 }),
               )
-            : i.a.createElement(an.a, { ratio: a }, i.a.createElement(k.a, { style: on.placeholderImageContainer }))
+            : r.a.createElement(Zt.a, { ratio: a }, r.a.createElement(k.a, { style: tn.placeholderImageContainer }))
         },
-        on = F.a.create(function (e) {
+        tn = F.a.create(function (e) {
           return { placeholderImageContainer: { backgroundColor: e.colors.gray300, height: '100%' } }
         }),
-        cn = i.a.memo(ln),
-        sn = n('K1iM'),
-        un = n.n(sn),
-        mn = (n('2G9S'), n('n4Eu')),
-        dn = { red: 0, green: 0, blue: 0 },
-        yn = '10px',
-        pn = F.a.create(function (e) {
+        nn = r.a.memo(en),
+        an = n('K1iM'),
+        ln = n.n(an),
+        rn = (n('2G9S'), n('X00g')),
+        on = n('n4Eu'),
+        sn = { red: 0, green: 0, blue: 0 },
+        cn = '10px',
+        un = F.a.create(function (e) {
           return {
             descriptionContainer: {
               paddingHorizontal: e.spaces.space16,
@@ -6470,20 +7179,20 @@
             backgroundColorWhite: { height: '100%', width: '100%', backgroundColor: e.colors.white, zIndex: 0 },
           }
         }),
-        gn = function (e) {
+        mn = function (e) {
           var t = e.children,
             a = e.community,
-            r = ye()(void 0 !== Ut ? Ut : (Ut = n('OBBW')), a),
-            l = ze(r),
-            o = en(r).palette,
-            c = []
+            l = de()(void 0 !== Dt ? Dt : (Dt = n('OBBW')), a),
+            i = Object(He.a)(l),
+            o = Object(Jt.a)(l).palette,
+            s = []
           if (o) {
-            var s,
-              u = un()(o)
+            var c,
+              u = ln()(o)
             try {
-              for (u.s(); !(s = u.n()).done; ) {
-                var m = s.value
-                c.push({ percentage: m.percentage, rgb: { blue: m.rgb.blue, green: m.rgb.green, red: m.rgb.red } })
+              for (u.s(); !(c = u.n()).done; ) {
+                var m = c.value
+                s.push({ percentage: m.percentage, rgb: { blue: m.rgb.blue, green: m.rgb.green, red: m.rgb.red } })
               }
             } catch (y) {
               u.e(y)
@@ -6491,46 +7200,46 @@
               u.f()
             }
           }
-          var d = Object(fe.a)('c9s_ui_colors_enabled_rweb')
-          return i.a.createElement(
+          var d = Object(ge.a)('c9s_ui_colors_enabled_rweb')
+          return r.a.createElement(
             k.a,
             null,
-            i.a.createElement(k.a, { style: pn.descriptionContainer }, t),
-            i.a.createElement(k.a, { style: [F.a.absoluteFill, pn.backgroundColorWhite] }),
-            i.a.createElement(k.a, {
+            r.a.createElement(k.a, { style: un.descriptionContainer }, t),
+            r.a.createElement(k.a, { style: [F.a.absoluteFill, un.backgroundColorWhite] }),
+            r.a.createElement(k.a, {
               style: [
                 F.a.absoluteFill,
-                pn.backgroundColor,
+                un.backgroundColor,
                 (function (e, t) {
-                  if (d) return Ne.a.getCommunityGradientStyle(t, yn)
-                  var n = e && mn.a.get(e),
-                    a = n ? (null == n ? void 0 : n.rgb) : dn,
-                    r = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 0.9)'),
-                    l = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 1)')
+                  if (d) return rn.a.getCommunityGradientStyle(t, cn)
+                  var n = e && on.a.get(e),
+                    a = n ? (null == n ? void 0 : n.rgb) : sn,
+                    l = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 0.9)'),
+                    i = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 1)')
                   return {
                     backgroundImage: 'linear-gradient(to bottom, '
-                      .concat(r, ' ')
-                      .concat(yn, ', ')
                       .concat(l, ' ')
-                      .concat(yn, ' 100%)'),
+                      .concat(cn, ', ')
+                      .concat(i, ' ')
+                      .concat(cn, ' 100%)'),
                   }
-                })(c, l),
+                })(s, i),
               ],
             }),
           )
         },
-        fn = n('ogGF'),
-        hn = n('CaKu'),
-        bn = n('1YZw'),
-        vn = Object(u.a)().propsFromActions(function () {
-          return { addToast: bn.b }
+        dn = n('ogGF'),
+        yn = n('CaKu'),
+        pn = n('1YZw'),
+        gn = Object(u.a)().propsFromActions(function () {
+          return { addToast: pn.b }
         }),
-        _n = function () {
+        fn = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(K.a)(
             'svg',
-            r()(
-              r()({}, e),
+            l()(
+              l()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -6538,147 +7247,146 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            r.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M19.5 22h-15C3.122 22 2 20.878 2 19.5V14c0-.552.448-1 1-1s1 .448 1 1v5.5c0 .271.229.5.5.5h15c.271 0 .5-.229.5-.5V14c0-.552.448-1 1-1s1 .448 1 1v5.5c0 1.378-1.122 2.5-2.5 2.5z',
               }),
-              i.a.createElement('path', {
+              r.a.createElement('path', {
                 d: 'M17.71 8.703c-.2.2-.45.3-.71.3s-.51-.1-.71-.3L13 5.413v9.59c0 .55-.45 1-1 1s-1-.45-1-1v-9.59l-3.29 3.29c-.2.2-.45.3-.71.3s-.51-.1-.71-.3c-.39-.39-.39-1.02 0-1.41l5-5c.39-.39 1.03-.39 1.42 0l5 5c.391.39.391 1.02 0 1.41z',
               }),
             ),
           )
         }
-      _n.metadata = { width: 24, height: 24 }
-      var kn,
-        En,
-        Cn,
-        Sn,
-        Fn,
-        In = _n,
-        wn = n('I/9y'),
-        Tn = n('pwey'),
-        Kn = _.a.bec3b8f9,
-        Mn = { viewType: 'share_community' },
-        xn = _.a.f88553c8,
-        Rn = { viewType: 'copy_link' },
-        Ln = { viewType: 'invite_members' },
-        On = _.a.b139b549,
-        An = _.a.e05c00b4,
-        jn = i.a.createElement(In, null),
-        Pn = F.a.create(function (e) {
+      fn.metadata = { width: 24, height: 24 }
+      var hn,
+        bn,
+        vn,
+        _n,
+        kn,
+        En = fn,
+        Cn = n('I/9y'),
+        Sn = n('pwey'),
+        Fn = _.a.bec3b8f9,
+        In = { viewType: 'share_community' },
+        wn = _.a.f88553c8,
+        Tn = { viewType: 'copy_link' },
+        Kn = { viewType: 'invite_members' },
+        Ln = _.a.b139b549,
+        Mn = _.a.e05c00b4,
+        xn = r.a.createElement(En, null),
+        Rn = F.a.create(function (e) {
           return { shareButton: { marginRight: e.spaces.space8 } }
         }),
-        Dn = vn(function (e) {
-          var t = ye()(void 0 !== kn ? kn : (kn = n('X/n0')), e.community),
+        On = gn(function (e) {
+          var t = de()(void 0 !== hn ? hn : (hn = n('X/n0')), e.community),
             a = e.addToast,
-            r = t.rest_id,
-            l = t.role,
-            o = Object(b.g)(l),
-            c = i.a.useCallback(
+            l = t.rest_id,
+            i = t.role,
+            o = Object(b.g)(i),
+            s = r.a.useCallback(
               function (e) {
-                hn.a.setString('https://twitter.com/i/communities/'.concat(r)), e(), a({ text: xn })
+                yn.a.setString('https://twitter.com/i/communities/'.concat(l)), e(), a({ text: wn })
               },
-              [a, r],
+              [a, l],
             ),
-            s = i.a.useMemo(
+            c = r.a.useMemo(
               function () {
                 return function (e) {
                   var t = []
                   return (
-                    t.push({ behavioralEventContext: Rn, text: An, Icon: wn.a, onClick: c }),
+                    t.push({ behavioralEventContext: Tn, text: Mn, Icon: Cn.a, onClick: s }),
                     o &&
                       t.push({
-                        behavioralEventContext: Ln,
-                        text: On,
-                        Icon: Tn.a,
-                        link: '/i/communities/'.concat(r, '/invite'),
+                        behavioralEventContext: Kn,
+                        text: Ln,
+                        Icon: Sn.a,
+                        link: '/i/communities/'.concat(l, '/invite'),
                       }),
-                    i.a.createElement(E.a, { items: t, onCloseRequested: e })
+                    r.a.createElement(E.a, { items: t, onCloseRequested: e })
                   )
                 }
               },
-              [o, r, c],
+              [o, l, s],
             )
-          return i.a.createElement(C.a, {
-            accessibilityLabel: Kn,
-            behavioralEventContext: Mn,
-            icon: jn,
-            renderMenu: s,
-            style: Pn.shareButton,
+          return r.a.createElement(C.a, {
+            accessibilityLabel: Fn,
+            behavioralEventContext: In,
+            icon: xn,
+            renderMenu: c,
+            style: Rn.shareButton,
             type: 'onMediaOutlined',
           })
         }),
-        Bn = i.a.memo(Dn),
-        Hn = _.a.hb9400db,
-        Nn = function (e) {
+        An = r.a.memo(On),
+        jn = _.a.hb9400db,
+        Pn = function (e) {
           var t = e.community,
-            a = ye()(void 0 !== En ? En : (En = n('ldL/')), t),
-            r = a.description,
-            l = a.role,
-            o = i.a.useState(!1),
-            c = rt()(o, 2),
-            s = c[0],
-            u = c[1],
-            m = i.a.useState(!1),
-            d = rt()(m, 2),
+            a = de()(void 0 !== bn ? bn : (bn = n('ldL/')), t),
+            l = a.description,
+            i = a.role,
+            o = r.a.useState(!1),
+            s = tt()(o, 2),
+            c = s[0],
+            u = s[1],
+            m = r.a.useState(!1),
+            d = tt()(m, 2),
             y = d[0],
             p = d[1],
-            g = i.a.useCallback(
+            g = r.a.useCallback(
               function (e) {
-                e.preventDefault(), e.stopPropagation(), u(!s)
+                e.preventDefault(), e.stopPropagation(), u(!c)
               },
-              [s],
+              [c],
             )
-          return !r || Object(b.g)(l)
+          return !l || Object(b.g)(i)
             ? null
-            : i.a.createElement(
+            : r.a.createElement(
                 k.a,
-                { style: Un.description },
-                i.a.createElement(me.b, { color: 'white', getTextOverflow: p, numberOfLines: s ? void 0 : 2 }, r),
-                !s && y ? i.a.createElement(me.b, { color: 'white', onPress: g, weight: 'bold' }, Hn) : null,
+                { style: Dn.description },
+                r.a.createElement(ue.b, { color: 'white', getTextOverflow: p, numberOfLines: c ? void 0 : 2 }, l),
+                !c && y ? r.a.createElement(ue.b, { color: 'white', onPress: g, weight: 'bold' }, jn) : null,
               )
         },
-        Un = F.a.create(function (e) {
+        Dn = F.a.create(function (e) {
           return { description: { width: '100%', marginTop: e.spaces.space4, marginBottom: e.spaces.space16 } }
         }),
-        zn = i.a.memo(Nn),
-        Vn = n('MtXG'),
-        qn = _.a.d58baa7e,
-        Wn = function (e) {
+        Bn = r.a.memo(Pn),
+        Hn = n('ja7Y'),
+        Nn = n('MtXG'),
+        Un = _.a.d58baa7e,
+        zn = function (e) {
           var t = e.community,
-            a = ye()(void 0 !== Cn ? Cn : (Cn = n('WuQQ')), t).member_count,
-            r = void 0 === a ? 0 : a,
-            l = qn(r)
-          return i.a.createElement(
-            Vn.a.Group,
+            a = de()(void 0 !== vn ? vn : (vn = n('WuQQ')), t).member_count,
+            l = void 0 === a ? 0 : a,
+            i = Un(l)
+          return r.a.createElement(
+            Nn.a.Group,
             null,
-            i.a.createElement(
-              Vn.a,
+            r.a.createElement(
+              Nn.a,
               { onMedia: !0 },
-              i.a.createElement(
-                me.b,
+              r.a.createElement(
+                ue.b,
                 { color: 'white' },
-                i.a.createElement(
+                r.a.createElement(
                   _.a.I18NFormatMessage,
                   { $i18n: 'b38e130b' },
-                  i.a.createElement(Vn.a.Value, null, _.a.ibd0106d({ formattedCount: l })),
-                  i.a.createElement(Vn.a.Label, null, _.a.cface2d0({ count: r })),
+                  r.a.createElement(Nn.a.Value, null, _.a.ibd0106d({ formattedCount: i })),
+                  r.a.createElement(Nn.a.Label, null, _.a.cface2d0({ count: l })),
                 ),
               ),
             ),
           )
         },
-        Xn = n('cm6r'),
-        Jn = n('MAI/'),
-        Qn = n('I4+6'),
-        Gn = Qn.a.generate({
+        Vn = n('cm6r'),
+        qn = n('I4+6').a.generate({
           backgroundColor: F.a.theme.colors.transparent,
           color: F.a.theme.colors.white,
           customHoverBackgroundColor: 'rgba(255,255,255,0.1)',
         }),
-        Yn = F.a.create(function (e) {
+        Wn = F.a.create(function (e) {
           return {
             description: { width: '100%', marginTop: e.spaces.space4, marginBottom: e.spaces.space16 },
             membersContainer: {
@@ -6693,123 +7401,92 @@
             rightSpace: { marginRight: e.spaces.space12 },
           }
         }),
-        Zn = function (e) {
+        Xn = function (e) {
           var t = e.community,
-            a = ye()(void 0 !== Sn ? Sn : (Sn = n('Eh7u')), t),
-            r = Object(fe.a)('c9s_ui_colors_enabled_rweb'),
-            l = a.members_facepile_results,
-            o = a.rest_id,
-            c = (function (e) {
-              var t,
-                n = [],
-                a = un()(e)
-              try {
-                for (a.s(); !(t = a.n()).done; ) {
-                  var r = t.value.result
-                  if ('User' === (null == r ? void 0 : r.__typename)) {
-                    var l,
-                      i = null === (l = r.legacy) || void 0 === l ? void 0 : l.profile_image_url_https
-                    i && n.push(i)
-                  }
-                }
-              } catch (o) {
-                a.e(o)
-              } finally {
-                a.f()
-              }
-              return n
-            })(l),
-            s = Ue(a),
-            u = r ? Ne.a.getCommunityBackgroundColorName(s) : void 0
-          return i.a.createElement(
-            Xn.a,
-            { interactiveStyles: Gn, link: '/i/communities/'.concat(o, '/members'), style: Yn.membersContainer },
-            c.length > 0
-              ? i.a.createElement(Jn.a, {
-                  borderColor: u,
-                  style: Yn.rightSpace,
-                  userAvatarSize: 'large',
-                  userAvatarUrls: c,
-                })
-              : null,
-            i.a.createElement(Wn, { community: a }),
+            a = de()(void 0 !== _n ? _n : (_n = n('weg/')), t),
+            l = a.rest_id
+          return r.a.createElement(
+            Vn.a,
+            { interactiveStyles: qn, link: '/i/communities/'.concat(l, '/members'), style: Wn.membersContainer },
+            r.a.createElement(Hn.a, { community: a, style: Wn.rightSpace }),
+            r.a.createElement(zn, { community: a }),
           )
         },
-        $n = n('yoO3'),
-        ea = n('k/OQ'),
-        ta = _.a.a0e3ece4,
-        na = _.a.ha8209bb,
-        aa = _.a.d601fc2f,
-        ra = _.a.b721eb37,
-        la = { viewType: 'description' },
-        ia = { viewType: 'facepiles_with_count' },
-        oa = function (e) {
-          var t = ye()(void 0 !== Fn ? Fn : (Fn = n('+BRT')), e.community),
+        Qn = n('yoO3'),
+        Jn = n('k/OQ'),
+        Gn = _.a.a0e3ece4,
+        Yn = _.a.ha8209bb,
+        Zn = _.a.d601fc2f,
+        $n = _.a.b721eb37,
+        ea = { viewType: 'description' },
+        ta = { viewType: 'facepiles_with_count' },
+        na = function (e) {
+          var t = de()(void 0 !== kn ? kn : (kn = n('+BRT')), e.community),
             a = t.rest_id,
-            r = Object(fe.a)('c9s_participation_enabled'),
-            l = Object(fe.a)('c9s_timelines_ranking_enabled'),
-            c = Object(fe.a)('c9s_share_community_enabled'),
-            s = Object(zt.i)(),
-            u = i.a.useMemo(
+            l = Object(ge.a)('c9s_participation_enabled'),
+            i = Object(ge.a)('c9s_timelines_ranking_enabled'),
+            s = Object(ge.a)('c9s_share_community_enabled'),
+            c = Object(Bt.i)(),
+            u = r.a.useMemo(
               function () {
                 var e = [
-                  { to: '/i/communities/'.concat(a), label: na, key: na },
-                  { to: '/i/communities/'.concat(a, '/latest'), label: aa, key: aa },
-                  { to: '/i/communities/'.concat(a, '/about'), label: ra, key: ra },
+                  { to: '/i/communities/'.concat(a), label: Yn, key: Yn },
+                  { to: '/i/communities/'.concat(a, '/latest'), label: Zn, key: Zn },
+                  { to: '/i/communities/'.concat(a, '/about'), label: $n, key: $n },
                 ]
-                return i.a.createElement(ea.a, {
-                  accessibilityLabel: ta,
-                  links: l
+                return r.a.createElement(Jn.a, {
+                  accessibilityLabel: Gn,
+                  links: i
                     ? e
                     : (function (e) {
                         return e.filter(function (e) {
-                          return e.label !== aa
+                          return e.label !== Zn
                         })
                       })(e),
                 })
               },
-              [a, l],
+              [a, i],
             )
-          return i.a.createElement(
-            $n.a,
+          return r.a.createElement(
+            Qn.a,
             { behavioralEventViewType: 'timeline' },
-            i.a.createElement(
+            r.a.createElement(
               k.a,
-              { style: ca.container },
-              i.a.createElement(
+              { style: aa.container },
+              r.a.createElement(
                 k.a,
                 null,
-                i.a.createElement(cn, { community: t }),
-                i.a.createElement(
+                r.a.createElement(nn, { community: t }),
+                r.a.createElement(
                   o.a,
-                  { behavioralEventContext: la },
-                  i.a.createElement(
-                    gn,
+                  { behavioralEventContext: ea },
+                  r.a.createElement(
+                    mn,
                     { community: t },
-                    i.a.createElement(
-                      me.b,
-                      { color: 'white', size: 'title2', style: ca.name, weight: 'bold' },
+                    r.a.createElement(
+                      ue.b,
+                      { color: 'white', size: 'title2', style: aa.name, weight: 'bold' },
                       t.name.trim(),
                     ),
-                    i.a.createElement(zn, { community: t }),
-                    i.a.createElement(
+                    r.a.createElement(Bn, { community: t }),
+                    r.a.createElement(
                       o.a,
-                      { behavioralEventContext: ia },
-                      i.a.createElement(
+                      { behavioralEventContext: ta },
+                      r.a.createElement(
                         k.a,
-                        { style: ca.bottomContainer },
-                        i.a.createElement(Zn, { community: t }),
-                        i.a.createElement(
+                        { style: aa.bottomContainer },
+                        r.a.createElement(Xn, { community: t }),
+                        r.a.createElement(
                           k.a,
-                          { style: ca.buttons },
-                          c
-                            ? i.a.createElement(Bn, { community: t })
-                            : i.a.createElement(fn.a, {
+                          { style: aa.buttons },
+                          s
+                            ? r.a.createElement(An, { community: t })
+                            : r.a.createElement(dn.a, {
                                 community: t,
-                                style: ca.inviteButton,
+                                style: aa.inviteButton,
                                 type: 'onMediaOutlined',
                               }),
-                          r ? i.a.createElement(Yt, { communityId: a, match: s }) : null,
+                          l ? r.a.createElement(Xt, { communityId: a, match: c }) : null,
                         ),
                       ),
                     ),
@@ -6820,7 +7497,7 @@
             ),
           )
         },
-        ca = F.a.create(function (e) {
+        aa = F.a.create(function (e) {
           return {
             name: { flexDirection: 'column', justifyContent: 'left', marginBottom: e.spaces.space8 },
             container: {
@@ -6833,100 +7510,100 @@
             inviteButton: { marginRight: e.spaces.space8 },
           }
         }),
-        sa = i.a.memo(oa),
-        ua = n('/de5')
-      function ma() {
-        var e = Object(zt.f)(),
-          t = Object(zt.g)(),
-          n = Object(zt.i)()
-        return i.a.createElement(ua.b, { history: e, location: t, match: n })
+        la = r.a.memo(na),
+        ia = n('/de5')
+      function ra() {
+        var e = Object(Bt.f)(),
+          t = Object(Bt.g)(),
+          n = Object(Bt.i)()
+        return r.a.createElement(ia.b, { history: e, location: t, match: n })
       }
-      var da = n('hqKg'),
-        ya = n('8Lfv'),
-        pa = n('LI/a'),
-        ga = function (e, t) {
+      var oa = n('hqKg'),
+        sa = n('8Lfv'),
+        ca = n('LI/a'),
+        ua = function (e, t) {
           return t.communityId
         },
-        fa = function (e, t) {
-          var n = ee.c.select(e, t.communityId)
+        ma = function (e, t) {
+          var n = $.c.select(e, t.communityId)
           return Object(b.g)(null == n ? void 0 : n.role)
         },
-        ha = Object(u.a)()
+        da = Object(u.a)()
           .propsFromState(function () {
             return {
-              isCommunityMember: fa,
-              rankedTweetsModule: Object(da.createSelector)(ga, function (e) {
-                return Object(pa.b)(e)
+              isCommunityMember: ma,
+              rankedTweetsModule: Object(oa.createSelector)(ua, function (e) {
+                return Object(ca.b)(e)
               }),
-              tweetsModule: Object(da.createSelector)(ga, function (e) {
-                return Object(pa.a)(e)
+              tweetsModule: Object(oa.createSelector)(ua, function (e) {
+                return Object(ca.a)(e)
               }),
             }
           })
           .propsFromActions(function () {
             return {
-              clearTimelineCache: ya.a,
+              clearTimelineCache: sa.a,
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_TWEETS'),
             }
           }),
-        ba = n('FIs5'),
-        va = n('EUHl'),
-        _a = n('7BdX'),
-        ka = n('7JQg'),
-        Ea = _.a.c18e3a3e,
-        Ca = _.a.d68146c0,
-        Sa = _.a.h5245afa,
-        Fa = _.a.f05dbeff,
-        Ia = { page: 'community', section: 'home' },
-        wa = { page: 'community', section: 'latest' },
-        Ta = { page: 'community', section: 'tweets' },
-        Ka = ha(function (e) {
-          var t = i.a.useContext(s.a).featureSwitches.isTrue('c9s_timelines_ranking_enabled'),
+        ya = n('FIs5'),
+        pa = n('EUHl'),
+        ga = n('7BdX'),
+        fa = n('7JQg'),
+        ha = _.a.c18e3a3e,
+        ba = _.a.d68146c0,
+        va = _.a.h5245afa,
+        _a = _.a.f05dbeff,
+        ka = { page: 'community', section: 'home' },
+        Ea = { page: 'community', section: 'latest' },
+        Ca = { page: 'community', section: 'tweets' },
+        Sa = da(function (e) {
+          var t = r.a.useContext(c.a).featureSwitches.isTrue('c9s_timelines_ranking_enabled'),
             n = e.clearTimelineCache,
             a = e.createLocalApiErrorHandler,
-            r = e.isCommunityMember,
-            l = e.rankedTweetsModule,
+            l = e.isCommunityMember,
+            i = e.rankedTweetsModule,
             o = e.tweetsModule,
-            c = e.type === gr.Home ? { module: l, scribeNamespace: Ia } : { module: o, scribeNamespace: wa },
-            u = t ? c : { module: o, scribeNamespace: Ta },
+            s = e.type === ul.Home ? { module: i, scribeNamespace: ka } : { module: o, scribeNamespace: Ea },
+            u = t ? s : { module: o, scribeNamespace: Ca },
             m = u.module,
             d = u.scribeNamespace
-          i.a.useEffect(
+          r.a.useEffect(
             function () {
               n(m).catch(a())
             },
-            [n, a, r, m],
+            [n, a, l, m],
           )
-          var y = i.a.useCallback(function () {
-            return i.a.createElement(ba.a, { buttonType: 'brandOutlined', header: Ea, message: Ca })
+          var y = r.a.useCallback(function () {
+            return r.a.createElement(ya.a, { buttonType: 'brandOutlined', header: ha, message: ba })
           }, [])
-          return i.a.createElement(
-            ka.c,
+          return r.a.createElement(
+            fa.c,
             { namespace: d },
-            i.a.createElement(
-              $n.a,
+            r.a.createElement(
+              Qn.a,
               { behavioralEventViewType: 'tweets' },
-              i.a.createElement(Be.a, {
-                loadingAccessibilityLabel: Fa,
+              r.a.createElement(De.a, {
+                loadingAccessibilityLabel: _a,
                 module: m,
-                newTweetsPillMode: va.a.CLIENT,
-                prerollDisplayLocation: _a.c.OTHER,
+                newTweetsPillMode: pa.a.CLIENT,
+                prerollDisplayLocation: ga.c.OTHER,
                 refreshControl: null,
                 renderEmptyState: y,
-                title: Sa,
+                title: va,
               }),
             ),
           )
         }),
-        Ma = n('mw9i'),
-        xa =
+        Fa = n('mw9i'),
+        Ia =
           (n('MvUL'),
           function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return Object(K.a)(
               'svg',
-              r()(
-                r()({}, e),
+              l()(
+                l()({}, e),
                 {},
                 {
                   accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -6934,81 +7611,81 @@
                   viewBox: '0 0 24 24',
                 },
               ),
-              i.a.createElement(
+              r.a.createElement(
                 'g',
                 null,
-                i.a.createElement('path', {
+                r.a.createElement('path', {
                   d: 'M9.24 21.09l1.33 1.33H4.2c-.69 0-1.29-.28-1.71-.81-.43-.56-.6-1.31-.42-2.04.87-3.66 4.24-5.8 8.2-5.8.53 0 1.04.04 1.54.11l-2.57 2.57c-1.29 1.27-1.29 3.35 0 4.64zm1.03-9.06c-1.34 0-2.84-.15-3.79-1.24-.8-.92-1.06-2.34-.8-4.34C6.05 3.67 7.77 2 10.27 2s4.21 1.67 4.59 4.46c.27 2 .01 3.42-.8 4.34-.96 1.09-2.45 1.23-3.79 1.23z',
                 }),
-                i.a.createElement('path', {
+                r.a.createElement('path', {
                   d: 'M22 18.76c0 .63-.51 1.14-1.14 1.14h-6.54l1.14 1.14c.45.45.45 1.17 0 1.62-.22.22-.52.33-.8.33-.29 0-.59-.11-.81-.33l-3.1-3.1c-.45-.45-.45-1.16 0-1.61l3.1-3.1c.45-.45 1.16-.45 1.61 0 .45.45.45 1.16 0 1.61l-1.15 1.15h6.55c.63.02 1.14.52 1.14 1.15z',
                 }),
               ),
             )
           })
-      xa.metadata = { width: 24, height: 24 }
-      var Ra,
-        La,
-        Oa = xa,
-        Aa = n('wpLu'),
-        ja = _.a.bf359e0d,
-        Pa = _.a.e8fcdd3a,
-        Da = _.a.b37d580e,
-        Ba = _.a.cafca4b2,
-        Ha = _.a.ea3b38fa,
-        Na = _.a.jd667130,
-        Ua = _.a.ca7eeabf,
-        za = _.a.acae4034,
-        Va = _.a.e2186ee2,
-        qa = _.a.j24c37b2,
-        Wa = function (e) {
-          var t = ye()(void 0 !== Ra ? Ra : (Ra = n('2rr8')), e.community),
-            a = Object(zt.f)(),
-            r = i.a.useCallback(
+      Ia.metadata = { width: 24, height: 24 }
+      var wa,
+        Ta,
+        Ka = Ia,
+        La = n('wpLu'),
+        Ma = _.a.bf359e0d,
+        xa = _.a.e8fcdd3a,
+        Ra = _.a.b37d580e,
+        Oa = _.a.cafca4b2,
+        Aa = _.a.ea3b38fa,
+        ja = _.a.jd667130,
+        Pa = _.a.ca7eeabf,
+        Da = _.a.acae4034,
+        Ba = _.a.e2186ee2,
+        Ha = _.a.j24c37b2,
+        Na = function (e) {
+          var t = de()(void 0 !== wa ? wa : (wa = n('2rr8')), e.community),
+            a = Object(Bt.f)(),
+            l = r.a.useCallback(
               function () {
                 a.replace('/i/communities/'.concat(t.rest_id, '/'))
               },
               [a, t.rest_id],
             ),
-            l = i.a.createElement(
+            i = r.a.createElement(
               k.a,
-              { accessibilityRole: 'list', style: Xa.rulesContainer },
+              { accessibilityRole: 'list', style: Ua.rulesContainer },
               t.rules.map(function (e) {
-                return i.a.createElement(
-                  me.b,
-                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Xa.rule },
+                return r.a.createElement(
+                  ue.b,
+                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Ua.rule },
                   e.name,
                 )
               }),
             ),
             o = 'Public' === t.access,
-            c = o ? Ha : Da,
-            s = o ? Na : Ba
-          return i.a.createElement(
-            oe.a,
+            s = o ? Aa : Ra,
+            c = o ? ja : Oa
+          return r.a.createElement(
+            re.a,
             {
-              actionLabel: qa,
+              actionLabel: Ha,
               graphicDisplayMode: 'none',
-              headline: ja,
+              headline: Ma,
               isFullHeightOnMobile: !0,
-              onAction: r,
-              subtext: Pa,
+              onAction: l,
+              subtext: xa,
             },
-            i.a.createElement(
+            r.a.createElement(
               k.a,
-              { style: Xa.infoItemsContainer },
-              i.a.createElement(ve.a, {
-                containerStyle: Xa.itemContainer,
+              { style: Ua.infoItemsContainer },
+              r.a.createElement(be.a, {
+                containerStyle: Ua.itemContainer,
                 items: [
-                  { label: c, description: s, decoration: i.a.createElement(Oa, { style: Xa.decorationContainer }) },
-                  { label: Ua, decoration: i.a.createElement(Aa.a, { style: Xa.decorationContainer }), description: l },
-                  { label: za, description: Va, decoration: i.a.createElement(x, { style: Xa.decorationContainer }) },
+                  { label: s, description: c, decoration: r.a.createElement(Ka, { style: Ua.decorationContainer }) },
+                  { label: Pa, decoration: r.a.createElement(La.a, { style: Ua.decorationContainer }), description: i },
+                  { label: Da, description: Ba, decoration: r.a.createElement(M, { style: Ua.decorationContainer }) },
                 ],
               }),
             ),
           )
         },
-        Xa = F.a.create(function (e) {
+        Ua = F.a.create(function (e) {
           return {
             infoItemsContainer: { paddingBottom: e.spaces.space32 },
             itemContainer: { paddingHorizontal: 0 },
@@ -7022,31 +7699,31 @@
             rule: { display: 'list-item', listStyleType: 'disc', listStylePosition: 'inside' },
           }
         }),
-        Ja = i.a.memo(Wa),
-        Qa = n('dwig'),
-        Ga = n('0+qk'),
-        Ya = n('L/9f'),
-        Za = n('3G7m'),
-        $a =
+        za = r.a.memo(Na),
+        Va = n('dwig'),
+        qa = n('0+qk'),
+        Wa = n('L/9f'),
+        Xa = n('3G7m'),
+        Qa =
           (n('FtFR'),
           n('hBvt'),
           Object(u.a)()
             .propsFromState(function () {
-              return { flags: ae.b }
+              return { flags: ne.b }
             })
             .propsFromActions(function () {
-              return { setFlag: ae.c }
+              return { setFlag: ne.c }
             })),
-        er = n('hOZg'),
-        tr = n('WtWS'),
-        nr = n('0ULw'),
-        ar = _.a.c66b37f9,
-        rr = _.a.g2768d0e,
-        lr = _.a.b192b58b,
-        ir = _.a.gd30278f,
-        or = _.a.cbdddb09,
-        cr = _.a.h5890b1a,
-        sr = [
+        Ja = n('hOZg'),
+        Ga = n('WtWS'),
+        Ya = n('0ULw'),
+        Za = _.a.c66b37f9,
+        $a = _.a.g2768d0e,
+        el = _.a.b192b58b,
+        tl = _.a.gd30278f,
+        nl = _.a.cbdddb09,
+        al = _.a.h5890b1a,
+        ll = [
           {
             flag: 'setup_clicked_rules',
             title: _.a.b4a6fac9,
@@ -7075,77 +7752,77 @@
               return {
                 pathname: '/compose/tweet',
                 state: {
-                  text: ''.concat(ir, ' https://twitter.com/i/communities/').concat(e),
+                  text: ''.concat(tl, ' https://twitter.com/i/communities/').concat(e),
                   positionCursorAtBeginning: !0,
                 },
               }
             },
           },
         ],
-        ur = i.a.memo(function (e) {
+        il = r.a.memo(function (e) {
           var t = e.communityId,
             n = e.flags,
             a = e.setFlag,
-            r = i.a.useContext(s.a).featureSwitches.isTrue('c9s_community_creation_setup_checklist_enabled'),
-            l = Object(zt.f)(),
-            o = i.a.useCallback(
+            l = r.a.useContext(c.a).featureSwitches.isTrue('c9s_community_creation_setup_checklist_enabled'),
+            i = Object(Bt.f)(),
+            o = r.a.useCallback(
               function () {
                 a(t, 'setup_show_checklist', !1)
               },
               [t, a],
             )
-          if (!n.setup_show_checklist || !r) return null
-          var c = function (e) {
+          if (!n.setup_show_checklist || !l) return null
+          var s = function (e) {
               a(t, e.flag, !0).then(function () {
-                l.push(e.link(t))
+                i.push(e.link(t))
               })
             },
             u = function (e, t) {
-              13 === t.keyCode && c(e)
+              13 === t.keyCode && s(e)
             }
-          return i.a.createElement(
+          return r.a.createElement(
             k.a,
-            { style: mr.wrapper },
-            i.a.createElement(
+            { style: rl.wrapper },
+            r.a.createElement(
               k.a,
-              { style: mr.header },
-              i.a.createElement(me.b, { size: 'title3', weight: 'bold' }, ar),
-              i.a.createElement(C.a, {
-                accessibilityLabel: lr,
-                icon: i.a.createElement(er.a, { style: mr.close }),
+              { style: rl.header },
+              r.a.createElement(ue.b, { size: 'title3', weight: 'bold' }, Za),
+              r.a.createElement(C.a, {
+                accessibilityLabel: el,
+                icon: r.a.createElement(Ja.a, { style: rl.close }),
                 onClick: o,
                 pullRight: !0,
                 size: 'medium',
-                style: mr.dismiss,
+                style: rl.dismiss,
                 type: 'brandText',
               }),
             ),
-            i.a.createElement(me.b, { style: mr.subtext }, rr),
-            i.a.createElement(
+            r.a.createElement(ue.b, { style: rl.subtext }, $a),
+            r.a.createElement(
               k.a,
-              { accessibilityRole: 'list', style: mr.list },
-              sr.map(function (e) {
+              { accessibilityRole: 'list', style: rl.list },
+              ll.map(function (e) {
                 var t = Boolean(n[e.flag])
-                return i.a.createElement(
+                return r.a.createElement(
                   k.a,
                   {
                     accessibilityRole: 'listitem',
                     focusable: !t,
                     key: e.flag,
-                    onClick: t ? void 0 : c.bind(null, e),
+                    onClick: t ? void 0 : s.bind(null, e),
                     onKeyPress: t ? void 0 : u.bind(null, e),
-                    style: [mr.entry, t ? mr.completedEntry : mr.uncompletedEntry],
+                    style: [rl.entry, t ? rl.completedEntry : rl.uncompletedEntry],
                   },
-                  i.a.createElement(me.b, { weight: 'bold' }, e.title),
+                  r.a.createElement(ue.b, { weight: 'bold' }, e.title),
                   t
-                    ? i.a.createElement(tr.a, { accessibilityLabel: or, style: mr.iconCompleted })
-                    : i.a.createElement(nr.a, { accessibilityLabel: cr, style: mr.iconUncompleted }),
+                    ? r.a.createElement(Ga.a, { accessibilityLabel: nl, style: rl.iconCompleted })
+                    : r.a.createElement(Ya.a, { accessibilityLabel: al, style: rl.iconUncompleted }),
                 )
               }),
             ),
           )
         }),
-        mr = F.a.create(function (e) {
+        rl = F.a.create(function (e) {
           return {
             wrapper: {
               padding: e.spaces.space32,
@@ -7165,142 +7842,142 @@
             iconUncompleted: { marginLeft: 'auto', color: e.colors.gray300 },
           }
         }),
-        dr = $a(ur),
-        yr = n('IAZG'),
-        pr = n('QRqA'),
-        gr = Object.freeze({ Home: 'home', Latest: 'latest' }),
-        fr = void 0 !== La ? La : (La = n('R0yc')),
-        hr = function (e) {
+        ol = Qa(il),
+        sl = n('IAZG'),
+        cl = n('QRqA'),
+        ul = Object.freeze({ Home: 'home', Latest: 'latest' }),
+        ml = void 0 !== Ta ? Ta : (Ta = n('R0yc')),
+        dl = function (e) {
           var t = e.communityId,
             n = e.composeOptions,
-            a = Object(yr.a)(fr, { communityId: t }).community,
-            r = Object(fe.a)('c9s_participation_enabled'),
-            l = Object(zt.f)(),
-            o = Object(zt.g)(),
-            c = Object(zt.i)(),
-            s = a.role === b.a.Admin && void 0 !== o.query.show_creation_summary,
-            u = Object(b.g)(a.role) && r,
-            m = ze(a),
-            d = i.a.useMemo(
+            a = Object(sl.a)(ml, { communityId: t }).community,
+            l = Object(ge.a)('c9s_participation_enabled'),
+            i = Object(Bt.f)(),
+            o = Object(Bt.g)(),
+            s = Object(Bt.i)(),
+            c = a.role === b.a.Admin && void 0 !== o.query.show_creation_summary,
+            u = Object(b.g)(a.role) && l,
+            m = Object(He.a)(a),
+            d = r.a.useMemo(
               function () {
                 return { canJoinCommunity: 'CommunityJoinAction' === a.actions.join_action_result.__typename, theme: m }
               },
               [m, a.actions.join_action_result],
             ),
-            y = i.a.useMemo(
+            y = r.a.useMemo(
               function () {
                 return u
-                  ? i.a.createElement(Ga.a, {
+                  ? r.a.createElement(qa.a, {
                       getLocationState: function () {
                         return n
                       },
-                      history: l,
+                      history: i,
                     })
                   : null
               },
-              [u, l, n],
+              [u, i, n],
             )
-          return i.a.createElement(
-            Qa.a,
-            { component: Ma.a, fab: y },
-            i.a.createElement(pr.a, { forSingleCommunity: d }),
-            s && i.a.createElement(Ja, { community: a }),
-            i.a.createElement(sa, { community: a }),
-            i.a.createElement(
-              zt.d,
+          return r.a.createElement(
+            Va.a,
+            { component: Fa.a, fab: y },
+            r.a.createElement(cl.a, { forSingleCommunity: d }),
+            c && r.a.createElement(za, { community: a }),
+            r.a.createElement(la, { community: a }),
+            r.a.createElement(
+              Bt.d,
               null,
-              i.a.createElement(
-                zt.b,
+              r.a.createElement(
+                Bt.b,
                 { exact: !0, path: '/i/communities/'.concat(t, '/') },
-                i.a.createElement(dr, { communityId: t }),
-                i.a.createElement(Ka, { communityId: t, location: o, match: c, type: gr.Home }),
+                r.a.createElement(ol, { communityId: t }),
+                r.a.createElement(Sa, { communityId: t, location: o, match: s, type: ul.Home }),
               ),
-              i.a.createElement(
-                zt.b,
+              r.a.createElement(
+                Bt.b,
                 { path: '/i/communities/'.concat(t, '/latest') },
-                i.a.createElement(dr, { communityId: t }),
-                i.a.createElement(Ka, { communityId: t, location: o, match: c, type: gr.Latest }),
+                r.a.createElement(ol, { communityId: t }),
+                r.a.createElement(Sa, { communityId: t, location: o, match: s, type: ul.Latest }),
               ),
-              i.a.createElement(
-                zt.b,
+              r.a.createElement(
+                Bt.b,
                 { exact: !0, path: '/i/communities/'.concat(t, '/about') },
-                i.a.createElement(et, { community: a }),
+                r.a.createElement(Ye, { community: a }),
               ),
             ),
           )
         },
-        br = { page: 'community', section: 'primaryContent' },
-        vr = {
+        yl = { page: 'community', section: 'primaryContent' },
+        pl = {
           type: 'CustomRetry',
           content: function () {
-            return i.a.createElement(ma, null)
+            return r.a.createElement(ra, null)
           },
         },
-        _r = function (e) {
-          return i.a.createElement(
-            ka.c,
-            { namespace: br },
-            i.a.createElement(
-              $n.a,
+        gl = function (e) {
+          return r.a.createElement(
+            fa.c,
+            { namespace: yl },
+            r.a.createElement(
+              Qn.a,
               { behavioralEventViewType: 'Community' },
-              i.a.createElement(
-                Ya.a,
-                { errorConfig: { context: 'CommunityScreen' }, fallback: vr },
-                i.a.createElement(Za.a, null, i.a.createElement(hr, e)),
+              r.a.createElement(
+                Wa.a,
+                { errorConfig: { context: 'CommunityScreen' }, fallback: pl },
+                r.a.createElement(Xa.a, null, r.a.createElement(dl, e)),
               ),
             ),
           )
         },
-        kr = n('VS6U'),
-        Er = { type: 'serversideContextKey', serversideContextType: 'community' },
-        Cr = _.a.a7c2e06c,
-        Sr = _.a.j24c37b2,
-        Fr = _.a.a94092a1,
-        Ir = _.a.i1fda797,
-        wr = function (e) {
+        fl = n('VS6U'),
+        hl = { type: 'serversideContextKey', serversideContextType: 'community' },
+        bl = _.a.a7c2e06c,
+        vl = _.a.j24c37b2,
+        _l = _.a.a94092a1,
+        kl = _.a.i1fda797,
+        El = function (e) {
           return { selectedCommunityId: e, defaultText: '' }
         },
-        Tr = function (e) {
+        Cl = function (e) {
           var t = e.community,
             n = e.communityId,
             a = e.createLocalApiErrorHandler,
-            l = e.fetchCommunityIfNeeded,
-            s = e.fetchCommunityMemberships,
+            i = e.fetchCommunityIfNeeded,
+            c = e.fetchCommunityMemberships,
             u = e.hasShownModEducation,
             m = e.history,
             d = e.isCommunityMember,
             y = e.membershipsFetchStatus,
             p = e.screenName,
             g = e.setFlag,
-            h = Object(fe.a)('c9s_participation_enabled'),
-            v = Object(fe.a)('c9s_edit_moderators_enabled'),
-            _ = i.a.useCallback(
+            h = Object(ge.a)('c9s_participation_enabled'),
+            v = Object(ge.a)('c9s_edit_moderators_enabled'),
+            _ = r.a.useCallback(
               function () {
-                n && l(n).catch(a({})), y === f.a.NONE && s().catch(a())
+                n && i(n).catch(a({})), y === f.a.NONE && c().catch(a())
               },
-              [y, l, n, s, a],
+              [y, i, n, c, a],
             )
-          i.a.useEffect(
+          r.a.useEffect(
             function () {
               _()
             },
             [_],
           )
-          var k = i.a.useCallback(
+          var k = r.a.useCallback(
               function () {
                 n && g(n, 'mod_education_flag', !0)
               },
               [n, g],
             ),
-            E = i.a.useMemo(
+            E = r.a.useMemo(
               function () {
-                return { clientEntity: r()(r()({}, Er), {}, { serversideContextId: n || '' }), viewType: 'community' }
+                return { clientEntity: l()(l()({}, hl), {}, { serversideContextId: n || '' }), viewType: 'community' }
               },
               [n],
             ),
-            C = i.a.useMemo(
+            C = r.a.useMemo(
               function () {
-                return wr(n)
+                return El(n)
               },
               [n],
             ),
@@ -7309,55 +7986,55 @@
             I = !!d && h,
             w = (null == t ? void 0 : t.rules) && (null == t ? void 0 : t.rules.length) > 0,
             T = v && F === b.a.Moderator && !u,
-            K = i.a.useMemo(
+            K = r.a.useMemo(
               function () {
-                return i.a.createElement(G, { canModerate: Object(b.c)(F), communityId: n || '', userRole: F })
+                return r.a.createElement(J, { canModerate: Object(b.c)(F), communityId: n || '', userRole: F })
               },
               [F, n],
             ),
-            M = i.a.useMemo(
+            L = r.a.useMemo(
               function () {
-                return i.a.createElement(c.a, { communityId: n || '', withCommunityRules: w })
+                return r.a.createElement(s.a, { communityId: n || '', withCommunityRules: w })
               },
               [n, w],
             ),
-            x = i.a.useMemo(
+            M = r.a.useMemo(
               function () {
-                return i.a.createElement(_r, { communityId: n || '', composeOptions: C })
+                return r.a.createElement(gl, { communityId: n || '', composeOptions: C })
               },
               [n, C],
             )
           return n
-            ? i.a.createElement(
+            ? r.a.createElement(
                 o.a,
                 { behavioralEventContext: E },
-                i.a.createElement(kr.a, {
+                r.a.createElement(fl.a, {
                   backLocation: p && '/'.concat(p, '/communities'),
                   composeOptions: C,
-                  documentTitle: S ? Cr({ communityName: S }) : '',
+                  documentTitle: S ? bl({ communityName: S }) : '',
                   history: m,
-                  primaryContent: x,
+                  primaryContent: M,
                   rightControl: K,
-                  sidebarContent: M,
+                  sidebarContent: L,
                   title: S || null,
                   withTweetButton: I,
                 }),
                 T
-                  ? i.a.createElement(oe.a, {
-                      actionLabel: Sr,
+                  ? r.a.createElement(re.a, {
+                      actionLabel: vl,
                       graphicDisplayMode: 'none',
-                      headline: Fr,
+                      headline: _l,
                       onAction: k,
                       onClose: k,
-                      subtext: Ir,
+                      subtext: kl,
                       withCloseButton: !0,
                     })
                   : null,
               )
             : null
         },
-        Kr = ie(Tr)
-      t.default = Kr
+        Sl = ie(Cl)
+      t.default = Sl
     },
     U0Qk: function (e, t, n) {
       'use strict'
@@ -7365,13 +8042,13 @@
         return g
       })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('p+r5'),
-        s = n('3XMw'),
-        u = n.n(s),
+        s = n('p+r5'),
+        c = n('3XMw'),
+        u = n.n(c),
         m = n('Ig1G'),
         d = u.a.e2df7cf1,
         y = u.a.be9bb312,
@@ -7380,25 +8057,25 @@
           var t = e.autoFocus,
             n = void 0 !== t && t,
             a = e.communityPurpose,
-            l = e.onChange,
-            s = i.a.useState(void 0),
-            u = r()(s, 2),
+            i = e.onChange,
+            c = r.a.useState(void 0),
+            u = l()(c, 2),
             g = u[0],
             f = u[1],
-            h = i.a.useState(!1),
-            b = r()(h, 2),
+            h = r.a.useState(!1),
+            b = l()(h, 2),
             v = b[0],
             _ = b[1],
-            k = i.a.useContext(o.a).featureSwitches.getNumberValue('c9s_max_community_description_length', 160),
-            E = i.a.useCallback(
+            k = r.a.useContext(o.a).featureSwitches.getNumberValue('c9s_max_community_description_length', 160),
+            E = r.a.useCallback(
               function (e) {
                 var t = e.target.value,
                   n = !Object(m.h)(t, 3, k)
-                n && f(p({ minCharacterCount: 3, maxCharacterCount: k })), _(n), l(t, n)
+                n && f(p({ minCharacterCount: 3, maxCharacterCount: k })), _(n), i(t, n)
               },
-              [k, f, l],
+              [k, f, i],
             )
-          return i.a.createElement(c.a, {
+          return r.a.createElement(s.a, {
             autoComplete: 'off',
             autoCorrect: !1,
             autoFocus: n,
@@ -7424,12 +8101,12 @@
           return A
         })
       var a = n('yiKp'),
-        r = n.n(a),
-        l = n('ddV6'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('ddV6'),
+        r = n.n(i),
         o = (n('KqXw'), n('MvUL'), n('ERkP')),
-        c = n.n(o),
-        s = n('+Kfv'),
+        s = n.n(o),
+        c = n('+Kfv'),
         u = n('ROT1'),
         m = n('U0Qk'),
         d = n('eSoz'),
@@ -7456,82 +8133,82 @@
         w = n('I/KZ'),
         T = b.a.i6e7e298,
         K = b.a.a226497c,
-        M = b.a.c9d56b71,
-        x = b.a.fc2a5c92,
-        R = b.a.c1ad5a11,
-        L = b.a.f713fbd1,
+        L = b.a.c9d56b71,
+        M = b.a.fc2a5c92,
+        x = b.a.c1ad5a11,
+        R = b.a.f713fbd1,
         O = { viewType: 'community' },
-        A = c.a.memo(function (e) {
+        A = s.a.memo(function (e) {
           var t = e.communitiesActions,
             n = e.createCommunity,
             a = e.history,
-            l = Object(k.a)('c9s_community_creation_form_membership_type_enabled'),
-            o = c.a.useState(!0),
-            d = i()(o, 2),
+            i = Object(k.a)('c9s_community_creation_form_membership_type_enabled'),
+            o = s.a.useState(!0),
+            d = r()(o, 2),
             y = d[0],
             p = d[1],
-            g = c.a.useState(!1),
-            h = i()(g, 2),
+            g = s.a.useState(!1),
+            h = r()(g, 2),
             b = h[0],
             I = h[1],
             A = y || b,
-            P = c.a.useState(''),
-            D = i()(P, 2),
+            P = s.a.useState(''),
+            D = r()(P, 2),
             B = D[0],
             H = D[1],
-            N = c.a.useState(''),
-            U = i()(N, 2),
+            N = s.a.useState(''),
+            U = r()(N, 2),
             z = U[0],
             V = U[1],
-            q = c.a.useState(null),
-            W = i()(q, 2),
+            q = s.a.useState(null),
+            W = r()(q, 2),
             X = W[0],
-            J = W[1],
-            Q = c.a.useCallback(function (e, t) {
+            Q = W[1],
+            J = s.a.useCallback(function (e, t) {
               H(e), p(t)
             }, []),
-            G = c.a.useCallback(function (e, t) {
+            G = s.a.useCallback(function (e, t) {
               V(e), 0 === e.length ? I(!1) : I(t)
             }, []),
             Y = Object(w.e)(),
-            Z = i()(Y, 2),
+            Z = r()(Y, 2),
             $ = Z[0],
             ee = Z[1],
-            te = c.a.useCallback(
+            te = s.a.useCallback(
               function () {
-                return l ? r()({ description: z }, Object(w.c)($)) : { description: z }
+                return i ? l()({ description: z }, Object(w.c)($)) : { description: z }
               },
-              [z, l, $],
+              [z, i, $],
             ),
-            ne = c.a.useCallback(
+            ne = s.a.useCallback(
               function () {
-                J(null),
+                Q(null),
                   n(B, te())
                     .then(function (e) {
                       if ('Community' === (null == e ? void 0 : e.type)) {
                         var t = null == e ? void 0 : e.normalized.result
                         'string' == typeof t && a.replace('/i/communities/'.concat(t, '?show_creation_summary'))
-                      } else 'CreateError' === (null == e ? void 0 : e.type) && J(e)
+                      } else 'CreateError' === (null == e ? void 0 : e.type) && Q(e)
                     })
                     .catch(function (e) {
-                      J({ error: 'GraphQL error', reason: e })
+                      Q({ error: 'GraphQL error', reason: e })
                     })
               },
               [B, n, te, a],
             )
-          if (null == t || !t.create) return c.a.createElement(_.a, { to: '/home' })
-          var ae = c.a.createElement(C.a, { disabled: A, onClick: ne, size: 'small', type: 'brandFilled' }, T),
-            re = X
-              ? c.a.createElement(
+          if (null == t || !t.create) return s.a.createElement(_.a, { to: '/home' })
+          var ae = s.a.createElement(C.a, { disabled: A, onClick: ne, size: 'small', type: 'brandFilled' }, T),
+            le = X
+              ? s.a.createElement(
                   E.a,
                   { style: j.error },
-                  c.a.createElement(S.a, { Icon: v.a, headline: x, text: R, type: 'danger' }),
+                  s.a.createElement(S.a, { Icon: v.a, headline: M, text: x, type: 'danger' }),
                 )
               : void 0
-          return c.a.createElement(
-            s.a,
+          return s.a.createElement(
+            c.a,
             { behavioralEventContext: O },
-            c.a.createElement(
+            s.a.createElement(
               f.b,
               {
                 behavioralEventViewType: 'create_community',
@@ -7540,19 +8217,19 @@
                 rightControl: ae,
                 title: K,
               },
-              c.a.createElement(
-                c.a.Fragment,
+              s.a.createElement(
+                s.a.Fragment,
                 null,
-                re,
-                c.a.createElement(F.b, { color: 'gray700', style: j.text }, M),
-                c.a.createElement(u.a, { autoFocus: !0, communityName: B, onChange: Q }),
-                c.a.createElement(m.a, { communityPurpose: z, onChange: G }),
-                l
-                  ? c.a.createElement(
-                      c.a.Fragment,
+                le,
+                s.a.createElement(F.b, { color: 'gray700', style: j.text }, L),
+                s.a.createElement(u.a, { autoFocus: !0, communityName: B, onChange: J }),
+                s.a.createElement(m.a, { communityPurpose: z, onChange: G }),
+                i
+                  ? s.a.createElement(
+                      s.a.Fragment,
                       null,
-                      c.a.createElement(F.b, { size: 'headline2', style: j.membership, weight: 'bold' }, L),
-                      c.a.createElement(w.d, { hideInvitePolicy: !0, setters: ee, state: $ }),
+                      s.a.createElement(F.b, { size: 'headline2', style: j.membership, weight: 'bold' }, R),
+                      s.a.createElement(w.d, { hideInvitePolicy: !0, setters: ee, state: $ }),
                     )
                   : null,
               ),
@@ -7576,13 +8253,13 @@
         return F
       })
       var a = n('KEM+'),
-        r = n.n(a),
-        l = n('yiKp'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('yiKp'),
+        r = n.n(i),
         o = n('ddV6'),
-        c = n.n(o),
-        s = n('ERkP'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('ERkP'),
+        u = n.n(c),
         m = n('v6aA'),
         d = n('3XMw'),
         y = n.n(d),
@@ -7599,22 +8276,22 @@
           var t = e.communityId,
             n = e.onCommunityRoleChange,
             a = e.userCommunityRoleRelationship,
-            r = e.userId
+            l = e.userId
           if (
             (u.a.useEffect(
               function () {
-                a && n(r, a)
+                a && n(l, a)
               },
-              [a, r, n],
+              [a, l, n],
             ),
             !a)
           )
             return null
-          var l = a.role,
-            i = a.user,
-            o = i.id,
-            c = i.screen_name
-          return u.a.createElement(g.a, { communityId: t, communityRole: l, recordId: o, screenName: c, userId: r })
+          var i = a.role,
+            r = a.user,
+            o = r.id,
+            s = r.screen_name
+          return u.a.createElement(g.a, { communityId: t, communityRole: i, recordId: o, screenName: s, userId: l })
         }),
         _ = n('4e/K'),
         k = n('Ig1G'),
@@ -7625,47 +8302,47 @@
         var t = u.a.useContext(m.a).featureSwitches.isTrue('c9s_members_list_search_enabled'),
           n = e.community,
           a = e.communityId,
-          l = e.onIsSearchingChange,
+          i = e.onIsSearchingChange,
           o = (null == n ? void 0 : n.role) === k.a.Admin,
-          s = u.a.useState(!1),
-          d = c()(s, 2),
+          c = u.a.useState(!1),
+          d = s()(c, 2),
           y = d[0],
           p = d[1],
           g = u.a.useState(''),
-          f = c()(g, 2),
+          f = s()(g, 2),
           h = f[0],
           b = f[1],
           F = u.a.useState({}),
-          w = c()(F, 2),
+          w = s()(F, 2),
           T = w[0],
           K = w[1],
-          M = u.a.useCallback(
+          L = u.a.useCallback(
             function (e, t) {
               K(function (n) {
-                return i()(i()({}, n), {}, r()({}, e, t))
+                return r()(r()({}, n), {}, l()({}, e, t))
               })
             },
             [K],
           ),
-          x = u.a.useCallback(
+          M = u.a.useCallback(
             function () {
-              p(!0), l(!0)
+              p(!0), i(!0)
             },
-            [l],
+            [i],
           ),
-          R = u.a.useCallback(
+          x = u.a.useCallback(
             function (e) {
               b(e)
               var t = !!e
-              l(t), p(t)
+              i(t), p(t)
             },
-            [l],
+            [i],
           ),
-          L = u.a.useCallback(
+          R = u.a.useCallback(
             function () {
-              h || (l(!1), p(!1))
+              h || (i(!1), p(!1))
             },
-            [l, h],
+            [i, h],
           )
         if (!a) return null
         return t && o
@@ -7682,13 +8359,13 @@
               },
               inputStyle: I.textInput,
               isModal: !0,
-              onDismiss: L,
-              onFocus: x,
-              onQueryChange: R,
+              onDismiss: R,
+              onFocus: M,
+              onQueryChange: x,
               placeholder: C,
               renderUserDecoration: function (e) {
                 var t = e.userId
-                return u.a.createElement(v, { communityId: a, onCommunityRoleChange: M, userId: t })
+                return u.a.createElement(v, { communityId: a, onCommunityRoleChange: L, userId: t })
               },
               rounded: !0,
               source: E.d.CommunityMemberSearch,
@@ -7702,6 +8379,94 @@
           textInput: { marginBottom: e.spaces.space8 },
         }
       })
+    },
+    WWTc: function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a,
+        l,
+        i,
+        r = {
+          fragment: {
+            argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'communityId' }]),
+            kind: 'Fragment',
+            metadata: null,
+            name: 'MemberRequestsPivotContainerQuery',
+            selections: [
+              {
+                alias: 'community',
+                args: (l = [
+                  { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
+                  { kind: 'Literal', name: 's', value: 4 },
+                ]),
+                concreteType: 'Community',
+                kind: 'LinkedField',
+                name: 'community_by_rest_id',
+                plural: !1,
+                selections: [{ args: null, kind: 'FragmentSpread', name: 'MemberRequestsPivot_community' }],
+                storageKey: null,
+              },
+            ],
+            type: 'Query',
+            abstractKey: null,
+          },
+          kind: 'Request',
+          operation: {
+            argumentDefinitions: a,
+            kind: 'Operation',
+            name: 'MemberRequestsPivotContainerQuery',
+            selections: [
+              {
+                alias: 'community',
+                args: l,
+                concreteType: 'Community',
+                kind: 'LinkedField',
+                name: 'community_by_rest_id',
+                plural: !1,
+                selections: [
+                  { alias: 'communityId', args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null },
+                  {
+                    alias: null,
+                    args: null,
+                    concreteType: null,
+                    kind: 'LinkedField',
+                    name: 'join_requests_result',
+                    plural: !1,
+                    selections: [
+                      { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
+                      {
+                        kind: 'InlineFragment',
+                        selections: [
+                          {
+                            alias: null,
+                            args: null,
+                            kind: 'ScalarField',
+                            name: 'pending_join_request_count',
+                            storageKey: null,
+                          },
+                          (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                        ],
+                        type: 'CommunityJoinRequests',
+                        abstractKey: null,
+                      },
+                    ],
+                    storageKey: null,
+                  },
+                  i,
+                ],
+                storageKey: null,
+              },
+            ],
+          },
+          params: {
+            id: 'bgIrkbAlmbsKZJGcd7VGYg',
+            metadata: {},
+            name: 'MemberRequestsPivotContainerQuery',
+            operationKind: 'query',
+            text: null,
+          },
+        }
+      ;(r.hash = '9b955902020d0baa1431bc7848010386'), (t.default = r)
     },
     WuQQ: function (e, t, n) {
       'use strict'
@@ -7736,37 +8501,80 @@
       }
       t.default = a
     },
-    aJqr: function (e, t, n) {
+    atLU: function (e, t, n) {
       'use strict'
       n.r(t)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
-        name: 'MemberRequestsBadge_community',
+        name: 'useCommunityBannerImageCustom_community',
         selections: [
           {
             alias: null,
             args: null,
-            concreteType: null,
+            concreteType: 'ApiMedia',
             kind: 'LinkedField',
-            name: 'join_requests_result',
+            name: 'custom_banner_media',
             plural: !1,
             selections: [
               {
-                kind: 'InlineFragment',
+                alias: null,
+                args: null,
+                concreteType: null,
+                kind: 'LinkedField',
+                name: 'media_info',
+                plural: !1,
                 selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null },
                   {
-                    alias: null,
-                    args: null,
-                    kind: 'ScalarField',
-                    name: 'pending_join_request_count',
-                    storageKey: null,
+                    kind: 'InlineFragment',
+                    selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'MediaColorInfo',
+                        kind: 'LinkedField',
+                        name: 'color_info',
+                        plural: !1,
+                        selections: [
+                          {
+                            alias: null,
+                            args: null,
+                            concreteType: 'MediaColorPaletteItem',
+                            kind: 'LinkedField',
+                            name: 'palette',
+                            plural: !0,
+                            selections: [
+                              {
+                                alias: null,
+                                args: null,
+                                concreteType: 'MediaColor',
+                                kind: 'LinkedField',
+                                name: 'rgb',
+                                plural: !1,
+                                selections: [
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'red', storageKey: null },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'green', storageKey: null },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'blue', storageKey: null },
+                                ],
+                                storageKey: null,
+                              },
+                              { alias: null, args: null, kind: 'ScalarField', name: 'percentage', storageKey: null },
+                            ],
+                            storageKey: null,
+                          },
+                        ],
+                        storageKey: null,
+                      },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_url', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_width', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_height', storageKey: null },
+                    ],
+                    type: 'ApiImage',
+                    abstractKey: null,
                   },
                 ],
-                type: 'CommunityJoinRequests',
-                abstractKey: null,
+                storageKey: null,
               },
             ],
             storageKey: null,
@@ -7774,19 +8582,19 @@
         ],
         type: 'Community',
         abstractKey: null,
-        hash: 'c9e131a34a481514621ffb32e3b7fd1d',
+        hash: 'f5fb6cadef5e830d674feb387a9eff99',
       }
       t.default = a
     },
     b5s6: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('m3Bd'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('m3Bd'),
+        r = n.n(i),
         o = n('ERkP'),
-        c = n.n(o),
-        s = n('v6aA'),
+        s = n.n(o),
+        c = n('v6aA'),
         u = n('XOJV'),
         m = n('eSoz'),
         d = n('rxPX'),
@@ -7819,29 +8627,29 @@
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.fetchCommunityIfNeeded,
-            l = e.hydratedTweet,
-            o = (e.tweetId, i()(e, _)),
-            u = c.a.useContext(s.a),
+            i = e.hydratedTweet,
+            o = (e.tweetId, r()(e, _)),
+            u = s.a.useContext(c.a),
             m = u.featureSwitches,
             d = u.loggedInUserId,
-            y = null == l ? void 0 : l.community_id_str
-          c.a.useEffect(
+            y = null == i ? void 0 : i.community_id_str
+          s.a.useEffect(
             function () {
               y && Object(h.a)(t) && a(y).catch(n())
             },
             [t, y, n, a],
           )
           var p = m.isTrue('responsive_web_alt_text_badge_enabled'),
-            g = l && Object(v.f)(l, d, t),
+            g = i && Object(v.f)(i, d, t),
             f = g && Object(v.e)(g),
             k = m.isTrue('responsive_web_reactions_enabled')
-          return c.a.createElement(
+          return s.a.createElement(
             b.a,
-            r()({}, o, {
+            l()({}, o, {
               loggedInUserId: d,
               shouldShowAltLabelAlways: p,
               socialContextProps: f,
-              tweet: l,
+              tweet: i,
               withReactions: k,
             }),
           )
@@ -7851,16 +8659,16 @@
     bCEw: function (e, t, n) {
       'use strict'
       var a = n('IGGJ')(n('K1iM')),
-        r = n('23An'),
-        l = n('Ud88'),
-        i = n('aQQo'),
-        o = i.loadQuery,
-        c = i.useTrackLoadQueryInRender,
-        s = n('ERkP'),
-        u = s.useCallback,
-        m = s.useEffect,
-        d = s.useRef,
-        y = s.useState,
+        l = n('23An'),
+        i = n('Ud88'),
+        r = n('aQQo'),
+        o = r.loadQuery,
+        s = r.useTrackLoadQueryInRender,
+        c = n('ERkP'),
+        u = c.useCallback,
+        m = c.useEffect,
+        d = c.useRef,
+        y = c.useState,
         p = n('K1lQ').getRequest,
         g = { kind: 'NullQueryReference' }
       function f(e) {
@@ -7870,9 +8678,9 @@
       }
       e.exports = function (e, t) {
         var n = null != t ? t : g,
-          i = l()
-        c()
-        var s = r(),
+          r = i()
+        s()
+        var c = l(),
           p = d(new Set([n])),
           h = y(function () {
             return n
@@ -7887,9 +8695,9 @@
         n !== k && (p.current.add(n), E(n), v(n))
         var C = u(
             function () {
-              s.current && (p.current.add(g), v(g))
+              c.current && (p.current.add(g), v(g))
             },
-            [s],
+            [c],
           ),
           S = u(
             function (t, n) {
@@ -7901,13 +8709,13 @@
                       __nameForWarning: n.__nameForWarning,
                     }
                   : n
-              if (s.current) {
-                var r,
-                  l = o(null !== (r = null == n ? void 0 : n.__environment) && void 0 !== r ? r : i, e, t, a)
-                p.current.add(l), v(l)
+              if (c.current) {
+                var l,
+                  i = o(null !== (l = null == n ? void 0 : n.__environment) && void 0 !== l ? l : r, e, t, a)
+                p.current.add(i), v(i)
               }
             },
-            [i, e, v, s],
+            [r, e, v, c],
           ),
           F = d(!1)
         return (
@@ -7927,25 +8735,25 @@
                   )
                 )
               var t = p.current
-              if (s.current) {
+              if (c.current) {
                 var n,
-                  r = (0, a.default)(t)
+                  l = (0, a.default)(t)
                 try {
-                  for (r.s(); !(n = r.n()).done; ) {
-                    var l = n.value
-                    if (l === b) break
-                    t.delete(l),
-                      'NullQueryReference' !== l.kind &&
-                        (f(e) ? l.dispose && l.dispose() : l.releaseQuery && l.releaseQuery())
+                  for (l.s(); !(n = l.n()).done; ) {
+                    var i = n.value
+                    if (i === b) break
+                    t.delete(i),
+                      'NullQueryReference' !== i.kind &&
+                        (f(e) ? i.dispose && i.dispose() : i.releaseQuery && i.releaseQuery())
                   }
-                } catch (i) {
-                  r.e(i)
+                } catch (r) {
+                  l.e(r)
                 } finally {
-                  r.f()
+                  l.f()
                 }
               }
             },
-            [b, s, S, e],
+            [b, c, S, e],
           ),
           m(
             function () {
@@ -7954,12 +8762,12 @@
                   n = (0, a.default)(p.current)
                 try {
                   for (n.s(); !(t = n.n()).done; ) {
-                    var r = t.value
-                    'NullQueryReference' !== r.kind &&
-                      (f(e) ? r.dispose && r.dispose() : r.releaseQuery && r.releaseQuery())
+                    var l = t.value
+                    'NullQueryReference' !== l.kind &&
+                      (f(e) ? l.dispose && l.dispose() : l.releaseQuery && l.releaseQuery())
                   }
-                } catch (l) {
-                  n.e(l)
+                } catch (i) {
+                  n.e(i)
                 } finally {
                   n.f()
                 }
@@ -7975,12 +8783,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u = {
           fragment: {
             argumentDefinitions: (a = [
@@ -7994,7 +8802,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -8005,7 +8813,7 @@
                 selections: [
                   {
                     alias: 'members_slice',
-                    args: [(l = { kind: 'Variable', name: 'count', variableName: 'count' })],
+                    args: [(i = { kind: 'Variable', name: 'count', variableName: 'count' })],
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: '__CommunityMembers_Query_members_slice_slice',
@@ -8024,7 +8832,7 @@
                             kind: 'FragmentSpread',
                             name: 'communityPeopleSliceItem_userResult',
                           },
-                          (i = {
+                          (r = {
                             kind: 'ClientExtension',
                             selections: [
                               { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
@@ -8064,7 +8872,7 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
@@ -8072,7 +8880,7 @@
                 selections: [
                   {
                     alias: null,
-                    args: (c = [l, { kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
+                    args: (s = [i, { kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: 'members_slice',
@@ -8098,7 +8906,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (s = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                  (c = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                                   {
                                     alias: null,
                                     args: [{ kind: 'Variable', name: 'community_id', variableName: 'communityId' }],
@@ -8176,7 +8984,7 @@
                             ],
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -8186,7 +8994,7 @@
                   },
                   {
                     alias: null,
-                    args: c,
+                    args: s,
                     filters: ['count'],
                     handle: 'slice',
                     key: 'CommunityMembers_Query_members_slice',
@@ -8194,7 +9002,7 @@
                     name: 'members_slice',
                     handleArgs: [{ kind: 'Literal', name: 'itemsFieldName', value: 'items_results' }],
                   },
-                  s,
+                  c,
                 ],
                 storageKey: null,
               },
@@ -8213,32 +9021,85 @@
     cL2e: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return c
+        return I
       }),
         n.d(t, 'a', function () {
-          return v
+          return P
         }),
         n.d(t, 'b', function () {
-          return S
+          return N
         })
-      var a = n('ERkP'),
-        r = n.n(a),
-        l = n('t62R'),
-        i = n('s8G+'),
-        o = function (e) {
-          return Object(i.a)('c9s_communities_search_enabled') ? r.a.createElement(l.b, null, 'To be filled') : null
-        },
-        c = r.a.memo(o),
-        s = n('ddV6'),
-        u = n.n(s),
-        m = (n('KqXw'), n('MvUL'), n('VY6S')),
-        d = n('6OUF'),
-        y = n('3XMw'),
+      var a,
+        l,
+        i = n('ERkP'),
+        r = n.n(i),
+        o = (n('enFi'), n('TEoO')),
+        s = n('Fr3L'),
+        c = (n('ho0z'), n('j57/')),
+        u = n('ja7Y'),
+        m = n('rHpw'),
+        d = n('MjKK'),
+        y = n('jAXQ'),
         p = n.n(y),
-        g = n('VwDm'),
-        f = n('zCf4'),
-        h = p.a.fbf01e51,
-        b = function (e) {
+        g = function (e) {
+          var t = e.item,
+            l = p()(void 0 !== a ? a : (a = n('08/x')), t),
+            i = Object(d.b)(l)
+          return r.a.createElement(c.a, {
+            communityId: l.rest_id,
+            media: i,
+            memberCount: l.member_count,
+            membersFacepile: r.a.createElement(u.a, { community: l, shouldUseThemeColor: !1, style: f.facepile }),
+            name: l.name,
+          })
+        },
+        f = m.a.create(function (e) {
+          return { facepile: { justifyContent: 'flex-start' } }
+        }),
+        h = r.a.memo(g),
+        b = n('s8G+'),
+        v = n('DQzJ'),
+        _ = { context: 'CommunitiesSearchQuery' },
+        k = function (e) {
+          return e.__id
+        },
+        E = void 0 !== l ? l : (l = n('DVIF')),
+        C = function (e) {
+          return r.a.createElement(h, { item: e })
+        },
+        S = function (e) {
+          var t,
+            n = e.query,
+            a = void 0 === n ? '' : n,
+            l = Object(v.a)(E, { query: a }),
+            i = l.data,
+            s = l.fetchNext,
+            c = null == i || null === (t = i.communities_search_slice) || void 0 === t ? void 0 : t.items
+          return r.a.createElement(o.a, {
+            cacheKey: 'CommunitiesSearch',
+            identityFunction: k,
+            items: c,
+            onNearEnd: s,
+            renderer: C,
+          })
+        },
+        F = function (e) {
+          var t = e.query
+          return Object(b.a)('c9s_communities_search_enabled') && t
+            ? r.a.createElement(s.a, { errorConfig: _ }, r.a.createElement(S, { query: t }))
+            : null
+        },
+        I = r.a.memo(F),
+        w = n('ddV6'),
+        T = n.n(w),
+        K = (n('KqXw'), n('MvUL'), n('VY6S')),
+        L = n('6OUF'),
+        M = n('3XMw'),
+        x = n.n(M),
+        R = n('VwDm'),
+        O = n('zCf4'),
+        A = x.a.fbf01e51,
+        j = function (e) {
           var t = e.initialValue,
             n = void 0 === t ? '' : t,
             a = r.a.useRef(!1)
@@ -8251,71 +9112,113 @@
             )
           }, [])
           var l = r.a.useState(n),
-            i = u()(l, 2),
+            i = T()(l, 2),
             o = i[0],
-            c = i[1],
-            s = Object(f.f)(),
-            y = r.a.useCallback(
+            s = i[1],
+            c = Object(O.f)(),
+            u = r.a.useCallback(
               function () {
-                c(''), s.replace('/i/communities/suggested')
+                s(''), c.replace('/i/communities/suggested')
               },
-              [s],
+              [c],
             ),
-            p = r.a.useMemo(
+            m = r.a.useMemo(
               function () {
-                return Object(m.a)(function (e) {
-                  a.current && (e.length > 0 ? s.replace('/i/communities/suggested?q='.concat(e)) : y())
+                return Object(K.a)(function (e) {
+                  a.current && (e.length > 0 ? c.replace('/i/communities/suggested?q='.concat(e)) : u())
                 }, 1e3)
               },
-              [y, s],
+              [u, c],
             ),
-            b = r.a.useCallback(
+            d = r.a.useCallback(
               function (e) {
                 var t = e.target.value
-                c(t), p(t)
+                s(t), m(t)
               },
-              [p],
+              [m],
             )
-          return r.a.createElement(d.a, {
-            Icon: g.a,
+          return r.a.createElement(L.a, {
+            Icon: R.a,
             autoComplete: 'off',
             isCompact: !0,
-            onChange: b,
-            onClear: y,
-            placeholder: h,
+            onChange: d,
+            onClear: u,
+            placeholder: A,
             value: o,
             withClearButton: !0,
           })
         },
-        v = r.a.memo(b),
-        _ = n('/yvb'),
-        k = n('rHpw'),
-        E = p.a.fbf01e51,
-        C = function (e) {
-          return Object(i.a)('c9s_communities_search_enabled')
-            ? r.a.createElement(_.a, {
-                icon: r.a.createElement(g.a, { accessibilityLabel: E, style: F.searchButton }),
+        P = r.a.memo(j),
+        D = n('/yvb'),
+        B = x.a.fbf01e51,
+        H = function (e) {
+          return Object(b.a)('c9s_communities_search_enabled')
+            ? r.a.createElement(D.a, {
+                icon: r.a.createElement(R.a, { accessibilityLabel: B, style: U.searchButton }),
                 link: '/i/communities/suggested',
                 size: 'medium',
                 type: 'brandText',
               })
             : null
         },
-        S = r.a.memo(C),
-        F = k.a.create(function (e) {
+        N = r.a.memo(H),
+        U = m.a.create(function (e) {
           return { searchButton: { color: e.colors.text } }
         })
+    },
+    'cd+Z': function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'MemberRequestsPivot_community',
+        selections: [
+          { alias: 'communityId', args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null },
+          {
+            alias: null,
+            args: null,
+            concreteType: null,
+            kind: 'LinkedField',
+            name: 'join_requests_result',
+            plural: !1,
+            selections: [
+              { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
+              {
+                kind: 'InlineFragment',
+                selections: [
+                  {
+                    alias: null,
+                    args: null,
+                    kind: 'ScalarField',
+                    name: 'pending_join_request_count',
+                    storageKey: null,
+                  },
+                ],
+                type: 'CommunityJoinRequests',
+                abstractKey: null,
+              },
+            ],
+            storageKey: null,
+          },
+        ],
+        type: 'Community',
+        abstractKey: null,
+        hash: 'aa55c598ec362c825293e24820d368a3',
+      }
+      t.default = a
     },
     'cz/h': function (e, t, n) {
       'use strict'
       n.r(t)
       n('lTEL'), n('7x/C'), n('87if'), n('kYxP'), n('KrtT'), n('KqXw'), n('LJOr')
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('es0u'),
-        i = n('WpDa'),
+        l = n.n(a),
+        i = n('es0u'),
+        r = n('WpDa'),
         o = n('ZNT5'),
-        c = Object(o.a)({
+        s = Object(o.a)({
           timelineId: 'communitiesDiscoveryTimeline',
           getEndpoint: function (e) {
             return e.Communities.fetchCommunityDiscoveryTimeline
@@ -8327,9 +9230,9 @@
           },
           context: 'FETCH_COMMUNITIES_DISCOVERY_TIMELINE',
           perfKey: 'communitiesDiscoveryTimeline',
-          formatResponse: i.a,
+          formatResponse: r.a,
         }),
-        s = n('OUEC'),
+        c = n('OUEC'),
         u = n('3XMw'),
         m = n.n(u),
         d = n('yoO3'),
@@ -8343,133 +9246,56 @@
           var t = Object(h.f)(),
             n = Object(h.g)(),
             a = Object(g.a)('c9s_communities_search_enabled'),
-            i = r.a.useCallback(function () {
-              return r.a.createElement(y.a, { entryConfiguration: s.a, module: c, refreshControl: null, title: b })
+            r = l.a.useCallback(function () {
+              return l.a.createElement(y.a, { entryConfiguration: c.a, module: s, refreshControl: null, title: b })
             }, []),
-            o = r.a.useMemo(
+            o = l.a.useMemo(
               function () {
                 var e
                 return null !== (e = new URLSearchParams(n.search).get('q')) && void 0 !== e ? e : void 0
               },
               [n.search],
             ),
-            u = r.a.useCallback(
+            u = l.a.useCallback(
               function () {
-                return o ? r.a.createElement(f.c, { query: o }) : i()
+                return o ? l.a.createElement(f.c, { query: o }) : r()
               },
-              [i, o],
+              [r, o],
             ),
-            m = a ? u() : i()
-          return r.a.createElement(
+            m = a ? u() : r()
+          return l.a.createElement(
             d.a,
             { behavioralEventViewType: 'discover' },
-            r.a.createElement(p.a, {
+            l.a.createElement(p.a, {
               backLocation: '/',
-              customSearchBox: a ? r.a.createElement(f.a, { initialValue: o }) : null,
+              customSearchBox: a ? l.a.createElement(f.a, { initialValue: o }) : null,
               history: t,
               primaryContent: m,
-              sidebarContent: r.a.createElement(l.a, null),
+              sidebarContent: l.a.createElement(i.a, null),
               title: b,
               withSearchBox: a,
             }),
           )
         }
-      t.default = r.a.memo(v)
+      t.default = l.a.memo(v)
     },
     dMLx: function (e, t, n) {
       'use strict'
       n.r(t)
-      var a,
-        r = {
-          argumentDefinitions: [],
-          kind: 'Fragment',
-          metadata: null,
-          name: 'useCommunityBannerImage_community',
-          selections: [
-            {
-              alias: null,
-              args: null,
-              concreteType: 'ApiMedia',
-              kind: 'LinkedField',
-              name: 'custom_banner_media',
-              plural: !1,
-              selections: (a = [
-                {
-                  alias: null,
-                  args: null,
-                  concreteType: null,
-                  kind: 'LinkedField',
-                  name: 'media_info',
-                  plural: !1,
-                  selections: [
-                    {
-                      kind: 'InlineFragment',
-                      selections: [
-                        {
-                          alias: null,
-                          args: null,
-                          concreteType: 'MediaColorInfo',
-                          kind: 'LinkedField',
-                          name: 'color_info',
-                          plural: !1,
-                          selections: [
-                            {
-                              alias: null,
-                              args: null,
-                              concreteType: 'MediaColorPaletteItem',
-                              kind: 'LinkedField',
-                              name: 'palette',
-                              plural: !0,
-                              selections: [
-                                {
-                                  alias: null,
-                                  args: null,
-                                  concreteType: 'MediaColor',
-                                  kind: 'LinkedField',
-                                  name: 'rgb',
-                                  plural: !1,
-                                  selections: [
-                                    { alias: null, args: null, kind: 'ScalarField', name: 'red', storageKey: null },
-                                    { alias: null, args: null, kind: 'ScalarField', name: 'green', storageKey: null },
-                                    { alias: null, args: null, kind: 'ScalarField', name: 'blue', storageKey: null },
-                                  ],
-                                  storageKey: null,
-                                },
-                                { alias: null, args: null, kind: 'ScalarField', name: 'percentage', storageKey: null },
-                              ],
-                              storageKey: null,
-                            },
-                          ],
-                          storageKey: null,
-                        },
-                        { alias: null, args: null, kind: 'ScalarField', name: 'original_img_url', storageKey: null },
-                        { alias: null, args: null, kind: 'ScalarField', name: 'original_img_width', storageKey: null },
-                        { alias: null, args: null, kind: 'ScalarField', name: 'original_img_height', storageKey: null },
-                      ],
-                      type: 'ApiImage',
-                      abstractKey: null,
-                    },
-                  ],
-                  storageKey: null,
-                },
-              ]),
-              storageKey: null,
-            },
-            {
-              alias: null,
-              args: null,
-              concreteType: 'ApiMedia',
-              kind: 'LinkedField',
-              name: 'default_banner_media',
-              plural: !1,
-              selections: a,
-              storageKey: null,
-            },
-          ],
-          type: 'Community',
-          abstractKey: null,
-        }
-      ;(r.hash = '66a8dff93611f1369bc53655a9aacb32'), (t.default = r)
+      var a = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useCommunityBannerImage_community',
+        selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useCommunityBannerImageCustom_community' },
+          { args: null, kind: 'FragmentSpread', name: 'useCommunityBannerImageDefault_community' },
+        ],
+        type: 'Community',
+        abstractKey: null,
+        hash: 'aecce1c8907386fe71248f72f90e1e26',
+      }
+      t.default = a
     },
     fK4d: function (e, t, n) {
       'use strict'
@@ -8489,13 +9315,13 @@
     fS8x: function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('VrFO'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
-        c = n.n(o),
-        s = n('1Pcy'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('1Pcy'),
+        u = n.n(c),
         m = n('5Yy7'),
         d = n.n(m),
         y = n('2VqO'),
@@ -8526,15 +9352,15 @@
         w = 'applyButton',
         T = n('/yvb'),
         K = n('rHpw'),
-        M = F.a.gd80afba,
-        x = F.a.a753a87f,
-        R = (function (e) {
+        L = F.a.gd80afba,
+        M = F.a.a753a87f,
+        x = (function (e) {
           d()(n, e)
           var t = p()(n)
           function n(e) {
             var a
             return (
-              i()(this, n),
+              r()(this, n),
               (a = t.call(this, e)),
               f()(u()(a), '_getMedia', function () {
                 var e = a.props.media
@@ -8542,10 +9368,10 @@
               }),
               f()(u()(a), '_renderAppBarRightControl', function () {
                 var e = a.state.isProcessing
-                return r.a.createElement(
+                return l.a.createElement(
                   T.a,
                   { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', testID: w, type: 'primaryFilled' },
-                  x,
+                  M,
                 )
               }),
               f()(u()(a), '_handleBackClick', function () {
@@ -8559,33 +9385,33 @@
                   t = a._cropper.current
                 if (t) {
                   var n = a.props,
-                    r = n.analytics,
-                    l = n.media,
-                    i = n.mediaId,
+                    l = n.analytics,
+                    i = n.media,
+                    r = n.mediaId,
                     o = n.onDone,
-                    c = n.processMedia,
-                    s = n.updateMediaUpload
+                    s = n.processMedia,
+                    c = n.updateMediaUpload
                   a.setState({ isProcessing: !0 })
                   var u = t.getCropData(),
-                    m = (l || {}).originalMediaFile,
+                    m = (i || {}).originalMediaFile,
                     d = !m || (0 === u.top && 0 === u.left && u.width === m.width && u.height === m.height)
-                  Object(h.a)(i) &&
+                  Object(h.a)(r) &&
                     (e
                       ? (e(u), o())
-                      : (s({ id: i, cropData: d ? void 0 : u }),
-                        c(i).then(function () {
-                          a.setState({ isProcessing: !1 }), r.scribe({ action: 'done' }), o()
+                      : (c({ id: r, cropData: d ? void 0 : u }),
+                        s(r).then(function () {
+                          a.setState({ isProcessing: !1 }), l.scribe({ action: 'done' }), o()
                         })))
                 }
               }),
               (a.state = { isProcessing: !1 }),
-              (a._cropper = r.a.createRef()),
+              (a._cropper = l.a.createRef()),
               e.media || e.onCancel(),
               a
             )
           }
           return (
-            c()(n, [
+            s()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -8593,26 +9419,26 @@
                     t = e.defaultAspectRatio,
                     n = e.history,
                     a = e.title,
-                    l = e.withAspectRatioOptions,
-                    i = e.withZoomControl,
+                    i = e.withAspectRatioOptions,
+                    r = e.withZoomControl,
                     o = this._getMedia()
-                  return r.a.createElement(
+                  return l.a.createElement(
                     C.b,
                     {
                       backButtonType: 'back',
-                      containerStyle: L.root,
-                      documentTitle: a || M,
+                      containerStyle: R.root,
+                      documentTitle: a || L,
                       history: n,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: a || M,
+                      title: a || L,
                     },
-                    r.a.createElement(I.a, {
+                    l.a.createElement(I.a, {
                       defaultAspectRatio: t,
                       media: o,
                       ref: this._cropper,
-                      withAspectRatioOptions: l,
-                      withZoomControl: i,
+                      withAspectRatioOptions: i,
+                      withZoomControl: r,
                     }),
                   )
                 },
@@ -8620,20 +9446,20 @@
             ]),
             n
           )
-        })(r.a.Component),
-        L = K.a.create(function (e) {
+        })(l.a.Component),
+        R = K.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
-        O = E(R),
+        O = E(x),
         A = n('X8FW'),
         j = K.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
-        return r.a.createElement(
+        return l.a.createElement(
           A.b,
           { clickMaskToClose: !1, modalSize: 'fitChildren', style: j.modal },
-          r.a.createElement(O, e),
+          l.a.createElement(O, e),
         )
       }
     },
@@ -8641,12 +9467,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m = {
           fragment: {
@@ -8657,7 +9483,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -8666,7 +9492,7 @@
                 name: 'community_by_rest_id',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }),
                   {
                     alias: null,
                     args: null,
@@ -8675,7 +9501,7 @@
                     name: 'join_requests_result',
                     plural: !1,
                     selections: [
-                      (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                      (r = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                       {
                         kind: 'InlineFragment',
                         selections: [
@@ -8738,13 +9564,13 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
                 plural: !1,
                 selections: [
-                  l,
+                  i,
                   {
                     alias: null,
                     args: null,
@@ -8753,7 +9579,7 @@
                     name: 'join_requests_result',
                     plural: !1,
                     selections: [
-                      i,
+                      r,
                       {
                         kind: 'InlineFragment',
                         selections: [
@@ -8773,7 +9599,7 @@
                                 name: 'items',
                                 plural: !0,
                                 selections: [
-                                  (c = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                  (s = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                                   {
                                     alias: null,
                                     args: null,
@@ -8806,11 +9632,11 @@
                                             name: 'result',
                                             plural: !1,
                                             selections: [
-                                              i,
+                                              r,
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (s = {
+                                                  (c = {
                                                     alias: 'id_str',
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -8860,7 +9686,7 @@
                                                         name: 'muting',
                                                         storageKey: null,
                                                       },
-                                                      l,
+                                                      i,
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -8887,7 +9713,7 @@
                                                     kind: 'LinkedHandle',
                                                     name: 'legacy',
                                                   },
-                                                  c,
+                                                  s,
                                                 ],
                                                 type: 'User',
                                                 abstractKey: null,
@@ -8905,10 +9731,10 @@
                                         kind: 'LinkedField',
                                         name: 'community',
                                         plural: !1,
-                                        selections: [s, c],
+                                        selections: [c, s],
                                         storageKey: null,
                                       },
-                                      c,
+                                      s,
                                     ],
                                     storageKey: null,
                                   },
@@ -8927,7 +9753,7 @@
                                         kind: 'LinkedField',
                                         name: 'join_request_approve_action_result',
                                         plural: !1,
-                                        selections: (u = [i]),
+                                        selections: (u = [r]),
                                         storageKey: null,
                                       },
                                       {
@@ -8940,7 +9766,7 @@
                                         selections: u,
                                         storageKey: null,
                                       },
-                                      c,
+                                      s,
                                     ],
                                     storageKey: null,
                                   },
@@ -8960,7 +9786,7 @@
                             kind: 'LinkedHandle',
                             name: 'pending_join_requests_slice',
                           },
-                          c,
+                          s,
                         ],
                         type: 'CommunityJoinRequests',
                         abstractKey: null,
@@ -8968,7 +9794,7 @@
                     ],
                     storageKey: null,
                   },
-                  c,
+                  s,
                 ],
                 storageKey: null,
               },
@@ -8989,29 +9815,29 @@
     gDCe: function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('v6aA'),
-        i = n('Ig1G'),
+        l = n.n(a),
+        i = n('v6aA'),
+        r = n('Ig1G'),
         o = n('3XMw'),
-        c = n.n(o),
-        s = n('Nh1N'),
+        s = n.n(o),
+        c = n('Nh1N'),
         u = n('MWbm'),
         m = n('4zmP'),
         d = n('rHpw'),
-        y = c.a.b6e22e15,
-        p = c.a.d17c10d9,
-        g = c.a.a1ecaf33,
-        f = r.a.memo(function (e) {
+        y = s.a.b6e22e15,
+        p = s.a.d17c10d9,
+        g = s.a.a1ecaf33,
+        f = l.a.memo(function (e) {
           var t,
             n = e.community,
-            a = r.a.useContext(l.a).featureSwitches.isTrue('c9s_edit_moderators_enabled')
-          return !n || n.role !== i.a.Admin || a
+            a = l.a.useContext(i.a).featureSwitches.isTrue('c9s_edit_moderators_enabled')
+          return !n || n.role !== r.a.Admin || a
             ? null
-            : r.a.createElement(
+            : l.a.createElement(
                 u.a,
                 { style: h.info },
-                r.a.createElement(m.a, {
-                  Icon: s.a,
+                l.a.createElement(m.a, {
+                  Icon: c.a,
                   action: {
                     label: g,
                     link: {
@@ -9105,17 +9931,17 @@
     'ii+P': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return i
+        return r
       })
       n('FtFR')
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('wtru')
-      function i(e) {
-        var t = Object(l.b)()
+        l = n.n(a),
+        i = n('wtru')
+      function r(e) {
+        var t = Object(i.b)()
         return [
           !!t && !t.flags[e],
-          r.a.useCallback(
+          l.a.useCallback(
             function () {
               null == t || t.addFlag(e)
             },
@@ -9124,15 +9950,184 @@
         ]
       }
     },
+    'j57/': function (e, t, n) {
+      'use strict'
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = (n('ho0z'), n('ERkP')),
+        r = n.n(i),
+        o = n('+Kfv'),
+        s = n('zCf4'),
+        c = n('MWbm'),
+        u = n('TIdA'),
+        m = n('A91F'),
+        d = n('rHpw'),
+        y = n('MtXG'),
+        p = n('t62R'),
+        g = n('htQn'),
+        f = n('MAI/'),
+        h = n('3XMw'),
+        b = n.n(h),
+        v = b.a.d58baa7e,
+        _ = { type: 'serversideContextKey', serversideContextType: 'community' },
+        k = function (e) {
+          var t = e.crop,
+            n = e.image
+          return r.a.createElement(
+            c.a,
+            { style: S.thumbnailContainer },
+            r.a.createElement(u.a, {
+              accessibilityLabel: '',
+              aspectMode: m.a.SQUARE,
+              backgroundColor: d.a.theme.colors.gray300,
+              cropCandidates: t,
+              image: n,
+            }),
+          )
+        },
+        E = function (e) {
+          var t = e.communityId,
+            n = e.count,
+            a = v(n),
+            l = '/i/communities/'.concat(t, '/members'),
+            i = Object(s.f)(),
+            o = r.a.useCallback(
+              function (e) {
+                e.preventDefault(), i.push(l)
+              },
+              [i, l],
+            )
+          return r.a.createElement(
+            y.a.Group,
+            null,
+            r.a.createElement(
+              y.a,
+              { onPress: o },
+              r.a.createElement(
+                p.b,
+                { color: 'gray700' },
+                r.a.createElement(
+                  b.a.I18NFormatMessage,
+                  { $i18n: 'b38e130b' },
+                  r.a.createElement(y.a.Value, null, b.a.ibd0106d({ formattedCount: a })),
+                  r.a.createElement(y.a.Label, null, b.a.cface2d0({ count: n })),
+                ),
+              ),
+            ),
+          )
+        },
+        C = function (e) {
+          var t = e.communityId,
+            n = e.media,
+            a = e.memberCount,
+            i = e.membersFacepile,
+            s = e.name,
+            u = r.a.useMemo(
+              function () {
+                return { clientEntity: l()(l()({}, _), {}, { serversideContextId: t }), viewType: 'community_cell' }
+              },
+              [t],
+            ),
+            m = '/i/communities/'.concat(t)
+          return r.a.createElement(
+            o.a,
+            { behavioralEventContext: u },
+            r.a.createElement(
+              g.a,
+              { link: m, style: S.root },
+              r.a.createElement(
+                c.a,
+                { style: S.container },
+                r.a.createElement(
+                  c.a,
+                  { style: S.leftColumn },
+                  n ? r.a.createElement(k, n) : null,
+                  r.a.createElement(
+                    c.a,
+                    { style: S.attribution },
+                    r.a.createElement(
+                      c.a,
+                      { style: S.name },
+                      r.a.createElement(p.b, { numberOfLines: 1, weight: 'bold' }, s),
+                    ),
+                    r.a.createElement(E, { communityId: t, count: a }),
+                    Array.isArray(i)
+                      ? r.a.createElement(f.a, { style: S.facepile, userAvatarSize: 'large', userAvatarUrls: i })
+                      : i,
+                  ),
+                ),
+              ),
+            ),
+          )
+        }
+      t.a = r.a.memo(C)
+      var S = d.a.create(function (e) {
+        return {
+          root: {
+            backgroundColor: e.colors.cellBackground,
+            paddingHorizontal: e.componentDimensions.gutterHorizontal,
+            paddingVertical: e.componentDimensions.gutterVertical,
+          },
+          container: { flexDirection: 'row' },
+          leftColumn: { alignItems: 'center', flexDirection: 'row', flex: 1, flexShrink: 1 },
+          attribution: { height: '100%', justifyContent: 'space-between', flexShrink: 1 },
+          facepile: { justifyContent: 'flex-start' },
+          name: { marginBottom: e.spaces.space2, flexDirection: 'row' },
+          thumbnailContainer: {
+            width: '96px',
+            marginRight: e.spaces.space12,
+            borderRadius: e.borderRadii.large,
+            overflow: 'hidden',
+          },
+        }
+      })
+    },
+    ja7Y: function (e, t, n) {
+      'use strict'
+      n('KOtZ'), n('7x/C')
+      var a,
+        l = n('ERkP'),
+        i = n.n(l),
+        r = n('1Xyu'),
+        o = n('s8G+'),
+        s = n('X00g'),
+        c = n('MAI/'),
+        u = (n('enFi'), n('jAXQ')),
+        m = n.n(u)
+      t.a = function (e) {
+        var t = e.community,
+          l = e.shouldUseThemeColor,
+          u = void 0 === l || l,
+          d = e.style,
+          y = m()(void 0 !== a ? a : (a = n('Eh7u')), t),
+          p = Object(o.a)('c9s_ui_colors_enabled_rweb') && u,
+          g = (function (e) {
+            return e.reduce(function (e, t) {
+              var n = t.result
+              if ('User' === (null == n ? void 0 : n.__typename)) {
+                var a,
+                  l = null === (a = n.legacy) || void 0 === a ? void 0 : a.profile_image_url_https
+                l && e.push(l)
+              }
+              return e
+            }, [])
+          })(y.members_facepile_results),
+          f = Object(r.b)(y),
+          h = p ? s.a.getCommunityBackgroundColorName(f) : void 0
+        return g.length > 0
+          ? i.a.createElement(c.a, { borderColor: h, style: d, userAvatarSize: 'large', userAvatarUrls: g })
+          : null
+      }
+    },
     jtO7: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('m3Bd'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('m3Bd'),
+        r = n.n(i),
         o = n('ERkP'),
-        c = n.n(o),
-        s = n('t62R'),
+        s = n.n(o),
+        c = n('t62R'),
         u = n('I4+6'),
         m = n('cm6r'),
         d = n('rHpw'),
@@ -9153,20 +10148,20 @@
         var t = e.align,
           n = void 0 === t ? 'center' : t,
           a = e.color,
-          l = e.label,
-          o = i()(e, p),
+          i = e.label,
+          o = r()(e, p),
           f = u.a.generate({
             backgroundColor: d.a.theme.colors.transparent,
             color: d.a.theme.colors[a],
             insetFocusRing: !0,
           })
-        return c.a.createElement(
+        return s.a.createElement(
           y.a,
           { style: g.container },
-          c.a.createElement(
+          s.a.createElement(
             m.a,
-            r()({}, o, { interactiveStyles: f, style: g.root }),
-            c.a.createElement(s.b, { align: n, color: a }, l),
+            l()({}, o, { interactiveStyles: f, style: g.root }),
+            s.a.createElement(c.b, { align: n, color: a }, i),
           ),
         )
       }
@@ -9177,12 +10172,12 @@
         return H
       })
       var a,
-        r,
         l,
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('v6aA'),
-        s = n('WpDa'),
+        i,
+        r = n('ERkP'),
+        o = n.n(r),
+        s = n('v6aA'),
+        c = n('WpDa'),
         u = n('ZNT5'),
         m = n('Ig1G'),
         d = n('FIs5'),
@@ -9196,22 +10191,22 @@
         _ = n.n(v),
         k = function (e) {
           var t = e.communityId,
-            r = e.userResult,
-            l = _()(void 0 !== a ? a : (a = n('tgdH')), r).result
-          if (!l || 'User' !== l.__typename || !l.legacy) return null
-          var i = l.community_role,
-            c = l.id,
-            s = l.legacy,
-            u = s.id_str,
-            d = s.name,
+            l = e.userResult,
+            i = _()(void 0 !== a ? a : (a = n('tgdH')), l).result
+          if (!i || 'User' !== i.__typename || !i.legacy) return null
+          var r = i.community_role,
+            s = i.id,
+            c = i.legacy,
+            u = c.id_str,
+            d = c.name,
             y = void 0 === d ? '' : d,
-            p = s.profile_image_url_https,
-            g = s.protected,
-            f = s.screen_name,
-            v = s.verified
+            p = c.profile_image_url_https,
+            g = c.protected,
+            f = c.screen_name,
+            v = c.verified
           if (!f || !p || !y) return null
-          var k = Object(m.d)(i),
-            E = o.a.createElement(h.a, { communityId: t, communityRole: i, recordId: c, screenName: f, userId: u })
+          var k = Object(m.d)(r),
+            E = o.a.createElement(h.a, { communityId: t, communityRole: r, recordId: s, screenName: f, userId: u })
           return o.a.createElement(b.a, {
             avatarUri: p,
             decoration: E,
@@ -9226,7 +10221,7 @@
         },
         E = n('DQzJ'),
         C = { context: 'members' },
-        S = void 0 !== r ? r : (r = n('cI4y')),
+        S = void 0 !== l ? l : (l = n('cI4y')),
         F = function (e) {
           return e.__id
         },
@@ -9234,15 +10229,15 @@
           var t = e.communityId,
             n = e.renderEmptyState,
             a = Object(E.a)(S, { communityId: t }),
-            r = a.data,
-            l = a.fetchNext,
-            i = r.community.members_slice.items_results
+            l = a.data,
+            i = a.fetchNext,
+            r = l.community.members_slice.items_results
           return o.a.createElement(g.a, {
             cacheKey: 'SlicesRelay_CommunityMembersList_'.concat(t),
             identityFunction: F,
-            items: i,
+            items: r,
             noItemsRenderer: n,
-            onNearEnd: l,
+            onNearEnd: i,
             renderer: function (e) {
               return o.a.createElement(k, { communityId: t, userResult: e })
             },
@@ -9253,30 +10248,30 @@
         },
         T = n('oQhu'),
         K = { context: 'members' },
-        M = void 0 !== l ? l : (l = n('w9f9')),
-        x = function (e) {
+        L = void 0 !== i ? i : (i = n('w9f9')),
+        M = function (e) {
           return e.__id
         },
-        R = function (e) {
+        x = function (e) {
           var t = e.communityId,
             n = e.renderEmptyState,
-            a = Object(E.a)(M, { communityId: t }),
-            r = a.data,
-            l = a.fetchNext,
-            i = r.community.moderators_slice.items_results
+            a = Object(E.a)(L, { communityId: t }),
+            l = a.data,
+            i = a.fetchNext,
+            r = l.community.moderators_slice.items_results
           return o.a.createElement(g.a, {
             cacheKey: 'SlicesRelay_CommunityModeratorsList_'.concat(t),
-            identityFunction: x,
-            items: i,
+            identityFunction: M,
+            items: r,
             noItemsRenderer: n,
-            onNearEnd: l,
+            onNearEnd: i,
             renderer: function (e) {
               return o.a.createElement(k, { communityId: t, userResult: e })
             },
           })
         },
-        L = function (e) {
-          return o.a.createElement(f.a, { errorConfig: K }, o.a.createElement(R, e))
+        R = function (e) {
+          return o.a.createElement(f.a, { errorConfig: K }, o.a.createElement(x, e))
         },
         O = n('fTQJ'),
         A = p.a.cdd87523,
@@ -9299,7 +10294,7 @@
               },
               context: 'FETCH_COMMUNITY_MEMBERS_TIMELINE',
               perfKey: 'communityMembers',
-              formatResponse: s.a,
+              formatResponse: c.a,
             })
           })(e)
         }),
@@ -9317,7 +10312,7 @@
               },
               context: 'FETCH_COMMUNITY_MODERATORS_TIMELINE',
               perfKey: 'communityModerators',
-              formatResponse: s.a,
+              formatResponse: c.a,
             })
           })(e)
         }),
@@ -9325,290 +10320,293 @@
           return o.a.createElement(d.a, { header: A, message: j })
         }
       t.b = function (e) {
-        var t = o.a.useContext(c.a).featureSwitches.isTrue('c9s_members_list_v2_enabled'),
+        var t = o.a.useContext(s.a).featureSwitches.isTrue('c9s_members_list_v2_enabled'),
           n = e.communityId,
           a = e.mode,
-          r = e.userRole,
-          l = a === H.Moderators
-        if (t && r === m.a.Admin)
-          return l
-            ? o.a.createElement(L, { communityId: n, renderEmptyState: z })
+          l = e.userRole,
+          i = a === H.Moderators
+        if (t && l === m.a.Admin)
+          return i
+            ? o.a.createElement(R, { communityId: n, renderEmptyState: z })
             : o.a.createElement(w, { communityId: n, renderEmptyState: z })
-        var i = l ? U(n) : N(n),
-          s = l ? D : B
-        return o.a.createElement(O.a, { loadingAccessibilityLabel: s, module: i, renderEmptyState: z, title: P })
+        var r = i ? U(n) : N(n),
+          c = i ? D : B
+        return o.a.createElement(O.a, { loadingAccessibilityLabel: c, module: r, renderEmptyState: z, title: P })
       }
     },
     l3Hs: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'CommunityToolsScreen', function () {
-          return Ie
+          return we
         })
       n('KqXw'), n('WNMA')
-      var a,
-        r,
-        l = n('ERkP'),
-        i = n.n(l),
-        o = n('v6aA'),
-        c = n('Ig1G'),
-        s = n('EPsT'),
-        u = n('eSoz'),
-        m = n('rxPX'),
-        d = n('0KEI'),
-        y = n('R5kW'),
-        p = function (e, t) {
+      var a = n('ERkP'),
+        l = n.n(a),
+        i = n('v6aA'),
+        r = n('Ig1G'),
+        o = n('EPsT'),
+        s = n('eSoz'),
+        c = n('rxPX'),
+        u = n('0KEI'),
+        m = n('R5kW'),
+        d = function (e, t) {
           var n,
-            a = Object(y.b)(e, t.communityId)
+            a = Object(m.b)(e, t.communityId)
           return null !== (n = null == a ? void 0 : a.tweet_case_count) && void 0 !== n ? n : 0
         },
-        g = function (e, t) {
-          var n = Object(u.h)(e, t.communityId)
-          return 'CommunityJoinRequests' === (null == n ? void 0 : n.__typename)
+        y = function (e, t) {
+          return Object(m.c)(e, t.communityId)
         },
-        f = function (e, t) {
-          return Object(y.c)(e, t.communityId)
-        },
-        h = Object(m.a)()
+        p = Object(c.a)()
           .propsFromState(function () {
-            return { canReviewMemberRequests: g, count: p, moderationFetchStatus: f }
+            return { count: d, moderationFetchStatus: y }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_TOOLS'),
-              updateModeratorRole: u.c.updateRole,
-              fetchCommunityModerationData: y.a,
+              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_TOOLS'),
+              updateModeratorRole: s.c.updateRole,
+              fetchCommunityModerationData: m.a,
             }
           })
           .withAnalytics({ page: 'communities', section: 'tools' }),
-        b = n('kGix'),
-        v = n('3XMw'),
-        _ = n.n(v),
-        k = (n('enFi'), n('Znyr')),
-        E = n('jAXQ'),
-        C = n.n(E),
-        S = _.a.h6beb5fa,
-        F = _.a.dde5f322,
-        I = void 0 !== a ? a : (a = n('aJqr')),
-        w = function (e) {
-          var t,
-            n = e.community,
-            a = null !== (t = C()(I, n).join_requests_result.pending_join_request_count) && void 0 !== t ? t : 0
-          return a > 0
-            ? i.a.createElement(k.a, {
-                count: a,
-                standalone: !0,
-                truncatedCountFormatter: S,
-                unreadCountLabel: F,
-                withBorder: !1,
-              })
-            : null
-        },
-        T = i.a.memo(w),
-        K = n('Fr3L'),
-        M = n('IAZG'),
-        x = { context: 'MemberRequestsBadgeContainerQuery' },
-        R = void 0 !== r ? r : (r = n('Iqvj')),
-        L = function (e) {
-          var t = e.communityId,
-            n = Object(M.a)(R, { communityId: t })
-          return i.a.createElement(T, { community: n.community })
-        },
-        O = function (e) {
-          return i.a.createElement(K.a, { errorConfig: x }, i.a.createElement(L, { communityId: e.communityId }))
-        },
-        A = i.a.memo(O),
-        j = n('KQzH'),
-        P = n('yoO3'),
-        D = n('mWs5'),
-        B = n('MWbm'),
-        H = n('rHpw'),
-        N = n('6vad'),
-        U = n('csss'),
-        z = n('OOKO'),
-        V = n('zIWA'),
-        q = n('yiKp'),
-        W = n.n(q),
-        X = n('Lsrn'),
-        J = n('k/Ka'),
-        Q = function () {
+        g = n('kGix'),
+        f = n('3XMw'),
+        h = n.n(f),
+        b = (n('enFi'), n('yiKp')),
+        v = n.n(b),
+        _ = n('Lsrn'),
+        k = n('k/Ka'),
+        E = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(J.a)(
+          return Object(k.a)(
             'svg',
-            W()(
-              W()({}, e),
+            v()(
+              v()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [X.a.root, e.style],
+                style: [_.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            i.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              i.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M19.192 9.3c-.205 0-.403-.085-.546-.236l-2.66-2.824c-.283-.302-.27-.776.032-1.06.303-.286.776-.27 1.06.03L19 7.25 22.157.877c.184-.37.63-.52 1.005-.34.372.185.523.635.34 1.006L19.864 8.88c-.108.22-.318.374-.562.41-.036.006-.073.01-.11.01zM8.417 11.816c1.355 0 2.872-.15 3.84-1.256.813-.93 1.077-2.367.806-4.392-.38-2.826-2.116-4.513-4.645-4.513-2.53 0-4.267 1.687-4.646 4.513-.273 2.025-.01 3.462.805 4.393.968 1.108 2.485 1.257 3.84 1.257zm-3.16-5.448c.16-1.2.786-3.212 3.16-3.212 2.373 0 2.998 2.013 3.16 3.212.207 1.55.056 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.256-.223-2.71-.743c-.507-.578-.658-1.656-.45-3.205zm11.44 12.867c-.88-3.525-4.283-5.988-8.28-5.988-3.998 0-7.403 2.463-8.28 5.988-.172.693-.03 1.4.395 1.94.408.522 1.04.822 1.733.822H14.57c.69 0 1.323-.3 1.73-.82.425-.54.568-1.247.396-1.942zm-1.577 1.018c-.126.16-.316.245-.55.245H2.264c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.113 1.994 6.824 4.85c.06.24.017.48-.12.655z',
               }),
             ),
           )
         }
-      Q.metadata = { width: 24, height: 24 }
-      var G = Q,
-        Y = n('M2x3'),
-        Z = n('SNyS'),
-        $ = n('S+H3'),
-        ee = n('PU7B'),
-        te = _.a.dce5e1b3,
-        ne = _.a.c5d8c93d,
-        ae = _.a.c8c7f9fc,
-        re = _.a.c045c7b6,
-        le = _.a.a87df2ee,
-        ie = _.a.dc6ce7b4,
-        oe = _.a.gfca5254,
-        ce = _.a.bb081ea1,
-        se = _.a.h6beb5fa,
-        ue = _.a.e3f04700,
-        me = _.a.efc26607,
-        de = _.a.gfccba44,
-        ye = _.a.adfcc3cd,
-        pe = _.a.d0330d9c,
-        ge = _.a.fd67f7c8,
-        fe = _.a.gc00d212,
-        he = _.a.a997eca0,
-        be = { label: _.a.c6ea29a1, header: _.a.a6e13fac, text: _.a.e538848b, confirmButtonLabel: _.a.j49e6aa2 },
-        ve = H.a.create(function (e) {
+      E.metadata = { width: 24, height: 24 }
+      var C,
+        S = E,
+        F = n('KQzH'),
+        I = n('s8G+'),
+        w = n('jAXQ'),
+        T = n.n(w),
+        K = n('Znyr'),
+        L = n('rHpw'),
+        M = h.a.gfccba44,
+        x = h.a.h6beb5fa,
+        R = h.a.dde5f322,
+        O = void 0 !== C ? C : (C = n('cd+Z'))
+      function A(e) {
+        var t = e.community,
+          n = Object(I.a)('c9s_request_to_join_enabled'),
+          a = T()(O, t),
+          i = a.communityId,
+          r = a.join_requests_result,
+          o = 'CommunityJoinRequests' === r.__typename,
+          s = l.a.useCallback(
+            function () {
+              var e = r.pending_join_request_count,
+                t = void 0 === e ? 0 : e
+              return t > 0
+                ? l.a.createElement(K.a, {
+                    count: t,
+                    standalone: !0,
+                    truncatedCountFormatter: x,
+                    unreadCountLabel: R,
+                    withBorder: !1,
+                  })
+                : null
+            },
+            [r],
+          )
+        return n && o
+          ? l.a.createElement(F.a, {
+              label: M,
+              link: '/i/communities/'.concat(i, '/moderation/member_requests'),
+              renderRightContent: s,
+              thumbnail: B,
+            })
+          : null
+      }
+      var j,
+        P = l.a.memo(A),
+        D = L.a.create(function (e) {
           return { thumbnail: { color: e.colors.gray700 } }
         }),
-        _e = i.a.createElement(V.a, { style: ve.thumbnail }),
-        ke = i.a.createElement(G, { style: ve.thumbnail }),
-        Ee = i.a.createElement(Y.a, { style: ve.thumbnail }),
-        Ce = i.a.createElement(Z.a, { style: ve.thumbnail }),
-        Se = i.a.createElement($.a, { style: ve.thumbnail }),
-        Fe = i.a.createElement(ee.a, { style: ve.thumbnail }),
-        Ie = function (e) {
-          var t = i.a.useContext(o.a),
+        B = l.a.createElement(S, { style: D.thumbnail }),
+        H = n('Fr3L'),
+        N = n('IAZG'),
+        U = { context: 'MemberRequestsPivotContainerQuery' },
+        z = void 0 !== j ? j : (j = n('WWTc')),
+        V = function (e) {
+          var t = e.communityId,
+            n = Object(N.a)(z, { communityId: t })
+          return l.a.createElement(P, { community: n.community })
+        },
+        q = function (e) {
+          return l.a.createElement(H.a, { errorConfig: U }, l.a.createElement(V, { communityId: e.communityId }))
+        },
+        W = l.a.memo(q),
+        X = n('yoO3'),
+        Q = n('mWs5'),
+        J = n('MWbm'),
+        G = n('6vad'),
+        Y = n('csss'),
+        Z = n('OOKO'),
+        $ = n('zIWA'),
+        ee = n('M2x3'),
+        te = n('SNyS'),
+        ne = n('S+H3'),
+        ae = n('PU7B'),
+        le = h.a.dce5e1b3,
+        ie = h.a.c5d8c93d,
+        re = h.a.c8c7f9fc,
+        oe = h.a.c045c7b6,
+        se = h.a.a87df2ee,
+        ce = h.a.dc6ce7b4,
+        ue = h.a.gfca5254,
+        me = h.a.bb081ea1,
+        de = h.a.h6beb5fa,
+        ye = h.a.e3f04700,
+        pe = h.a.efc26607,
+        ge = h.a.adfcc3cd,
+        fe = h.a.d0330d9c,
+        he = h.a.fd67f7c8,
+        be = h.a.gc00d212,
+        ve = h.a.a997eca0,
+        _e = { label: h.a.c6ea29a1, header: h.a.a6e13fac, text: h.a.e538848b, confirmButtonLabel: h.a.j49e6aa2 },
+        ke = L.a.create(function (e) {
+          return { thumbnail: { color: e.colors.gray700 } }
+        }),
+        Ee = l.a.createElement($.a, { style: ke.thumbnail }),
+        Ce = l.a.createElement(ee.a, { style: ke.thumbnail }),
+        Se = l.a.createElement(te.a, { style: ke.thumbnail }),
+        Fe = l.a.createElement(ne.a, { style: ke.thumbnail }),
+        Ie = l.a.createElement(ae.a, { style: ke.thumbnail }),
+        we = function (e) {
+          var t = l.a.useContext(i.a),
             n = t.featureSwitches,
             a = t.loggedInUserId,
-            r = e.canReviewMemberRequests,
-            l = e.community,
-            u = e.communityId,
-            m = e.count,
-            d = e.createLocalApiErrorHandler,
-            y = e.fetchCommunityModerationData,
-            p = e.history,
-            g = e.match,
+            s = e.community,
+            c = e.communityId,
+            u = e.count,
+            m = e.createLocalApiErrorHandler,
+            d = e.fetchCommunityModerationData,
+            y = e.history,
+            p = e.match,
             f = e.moderationFetchStatus,
             h = e.updateModeratorRole,
-            v = d(),
-            _ = n.isTrue('c9s_moderation_enabled'),
-            E = n.isTrue('c9s_rule_management_enabled'),
-            C = n.isTrue('c9s_request_to_join_enabled'),
-            S = n.isTrue('c9s_edit_moderators_enabled')
-          i.a.useEffect(
+            b = m(),
+            v = n.isTrue('c9s_moderation_enabled'),
+            _ = n.isTrue('c9s_rule_management_enabled'),
+            k = n.isTrue('c9s_edit_moderators_enabled')
+          l.a.useEffect(
             function () {
-              f === b.a.NONE && _ && y(u).catch(v)
+              f === g.a.NONE && v && d(c).catch(b)
             },
-            [v, u, y, f, _],
+            [b, c, d, f, v],
           )
-          var F = i.a.useCallback(
+          var E = l.a.useCallback(
               function () {
-                return _ && m > 0
-                  ? i.a.createElement(k.a, {
-                      count: m,
+                return v && u > 0
+                  ? l.a.createElement(K.a, {
+                      count: u,
                       standalone: !0,
-                      truncatedCountFormatter: se,
-                      unreadCountLabel: ue,
+                      truncatedCountFormatter: de,
+                      unreadCountLabel: ye,
                       withBorder: !1,
                     })
                   : null
               },
-              [m, _],
+              [u, v],
             ),
-            I = i.a.useCallback(
-              function () {
-                return i.a.createElement(A, { communityId: u })
-              },
-              [u],
-            ),
-            w = l.role,
-            T = w === c.a.Admin ? te : ne,
-            K = w === c.a.Admin ? ye : pe,
-            M = !g.isExact
-          return i.a.createElement(
-            P.a,
+            C = s.role,
+            S = C === r.a.Admin ? le : ie,
+            I = C === r.a.Admin ? ge : fe,
+            w = !p.isExact
+          return l.a.createElement(
+            X.a,
             { locationKey: 'communitySettingsRoot' },
-            i.a.createElement(
-              D.a,
-              { communityId: u, screenType: 'secondaryRoot', title: T, withDetailOpen: M },
-              i.a.createElement(
-                B.a,
+            l.a.createElement(
+              Q.a,
+              { communityId: c, screenType: 'secondaryRoot', title: S, withDetailOpen: w },
+              l.a.createElement(
+                J.a,
                 null,
-                _
-                  ? i.a.createElement(
-                      i.a.Fragment,
+                v
+                  ? l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      i.a.createElement(N.b, { text: ae }),
-                      i.a.createElement(j.a, {
-                        label: re,
-                        link: '/i/communities/'.concat(u, '/moderation/reported_tweets'),
-                        renderRightContent: F,
-                        thumbnail: _e,
+                      l.a.createElement(G.b, { text: re }),
+                      l.a.createElement(F.a, {
+                        label: oe,
+                        link: '/i/communities/'.concat(c, '/moderation/reported_tweets'),
+                        renderRightContent: E,
+                        thumbnail: Ee,
                       }),
                     )
                   : null,
-                C && r
-                  ? i.a.createElement(j.a, {
-                      label: de,
-                      link: '/i/communities/'.concat(u, '/moderation/member_requests'),
-                      renderRightContent: I,
-                      thumbnail: ke,
+                l.a.createElement(W, { communityId: c }),
+                l.a.createElement(G.b, { text: se }),
+                l.a.createElement(F.a, {
+                  description: pe({ memberCount: s.member_count }),
+                  label: ce,
+                  link: '/i/communities/'.concat(c, '/tools/members'),
+                  thumbnail: Fe,
+                }),
+                _
+                  ? l.a.createElement(F.a, {
+                      description: I,
+                      label: ue,
+                      link: '/i/communities/'.concat(c, '/tools/rules'),
+                      thumbnail: Ie,
                     })
                   : null,
-                i.a.createElement(N.b, { text: le }),
-                i.a.createElement(j.a, {
-                  description: me({ memberCount: l.member_count }),
-                  label: ie,
-                  link: '/i/communities/'.concat(u, '/tools/members'),
+                C === r.a.Admin
+                  ? l.a.createElement(F.a, {
+                      description: he,
+                      label: me,
+                      link: '/i/communities/'.concat(c, '/tools/settings'),
+                      thumbnail: Ce,
+                    })
+                  : null,
+                l.a.createElement(Y.a, {
+                  description: ve,
+                  label: be,
+                  link: { external: !0, pathname: 'https://help.twitter.com/using-twitter/communities' },
                   thumbnail: Se,
                 }),
-                E
-                  ? i.a.createElement(j.a, {
-                      description: K,
-                      label: oe,
-                      link: '/i/communities/'.concat(u, '/tools/rules'),
-                      thumbnail: Fe,
-                    })
-                  : null,
-                w === c.a.Admin
-                  ? i.a.createElement(j.a, {
-                      description: ge,
-                      label: ce,
-                      link: '/i/communities/'.concat(u, '/tools/settings'),
-                      thumbnail: Ee,
-                    })
-                  : null,
-                i.a.createElement(U.a, {
-                  description: he,
-                  label: fe,
-                  link: { external: !0, pathname: 'https://help.twitter.com/using-twitter/communities' },
-                  thumbnail: Ce,
-                }),
-                w === c.a.Moderator && S
-                  ? i.a.createElement(
-                      i.a.Fragment,
+                C === r.a.Moderator && k
+                  ? l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      i.a.createElement(z.a, { spacing: 'space1' }),
-                      i.a.createElement(s.a, {
-                        confirmationSheetConfirmButtonLabel: be.confirmButtonLabel,
+                      l.a.createElement(Z.a, { spacing: 'space1' }),
+                      l.a.createElement(o.a, {
+                        confirmationSheetConfirmButtonLabel: _e.confirmButtonLabel,
                         confirmationSheetConfirmButtonType: 'destructiveFilled',
-                        confirmationSheetHeadline: be.header,
-                        confirmationSheetText: be.text,
-                        label: be.label,
+                        confirmationSheetHeadline: _e.header,
+                        confirmationSheetText: _e.text,
+                        label: _e.label,
                         onConfirmationSheetConfirm: function () {
                           a &&
-                            h(u, { userId: a, role: c.a.Member }).then(function () {
-                              p.push('i/communities/'.concat(u))
+                            h(c, { userId: a, role: r.a.Member }).then(function () {
+                              y.push('i/communities/'.concat(c))
                             })
                         },
                         withBottomBorder: !1,
@@ -9619,8 +10617,8 @@
             ),
           )
         },
-        we = h(Ie)
-      t.default = we
+        Te = p(we)
+      t.default = Te
     },
     'ldL/': function (e, t, n) {
       'use strict'
@@ -9647,12 +10645,12 @@
           return Xt
         })
       var a,
-        r,
         l,
-        i = n('97Jx'),
-        o = n.n(i),
-        c = n('m3Bd'),
-        s = n.n(c),
+        i,
+        r = n('97Jx'),
+        o = n.n(r),
+        s = n('m3Bd'),
+        c = n.n(s),
         u = (n('KqXw'), n('WNMA'), n('ERkP')),
         m = n.n(u),
         d = n('v6aA'),
@@ -9685,10 +10683,10 @@
         w = n('FIs5'),
         T = n('TEoO'),
         K = (n('1t7P'), n('jQ/y'), n('ddV6')),
-        M = n.n(K),
-        x = n('1YZw'),
-        R = n('uDfI'),
-        L = n('MWbm'),
+        L = n.n(K),
+        M = n('1YZw'),
+        x = n('uDfI'),
+        R = n('MWbm'),
         O = n('/yvb'),
         A = n('rHpw'),
         j = (n('enFi'), n('jAXQ')),
@@ -9700,34 +10698,34 @@
         N,
         U,
         z,
-        V = void 0 !== r ? r : (r = n('Dm5+')),
-        q = void 0 !== l ? l : (l = n('C2fM')),
+        V = void 0 !== l ? l : (l = n('Dm5+')),
+        q = void 0 !== i ? i : (i = n('C2fM')),
         W = C.a.i22835dd,
         X = C.a.cb59a0fd,
-        J = C.a.ic7db4ea,
-        Q = void 0 !== H ? H : (H = n('PMbW')),
+        Q = C.a.ic7db4ea,
+        J = void 0 !== H ? H : (H = n('PMbW')),
         G = function (e) {
           var t = e.communityId,
             n = e.communityJoinRequestActions,
             a = e.userId,
-            r = P()(Q, n),
-            l = r.join_request_approve_action_result,
-            i = r.join_request_deny_action_result,
+            l = P()(J, n),
+            i = l.join_request_approve_action_result,
+            r = l.join_request_deny_action_result,
             o = (function () {
               var e = B()(V),
-                t = M()(e, 2),
+                t = L()(e, 2),
                 n = t[0],
                 a = t[1]
               return [
                 m.a.useCallback(
                   function (e) {
                     var t = e.communityId,
-                      r = e.userId
+                      l = e.userId
                     return a
                       ? Promise.reject(new Error('Already committing action on member request'))
                       : new Promise(function (e, a) {
                           n({
-                            variables: { communityId: t, userId: r },
+                            variables: { communityId: t, userId: l },
                             onCompleted: function (t) {
                               e()
                             },
@@ -9740,24 +10738,24 @@
                 a,
               ]
             })(),
-            c = M()(o, 2),
-            s = c[0],
-            u = c[1],
+            s = L()(o, 2),
+            c = s[0],
+            u = s[1],
             d = (function () {
               var e = B()(q),
-                t = M()(e, 2),
+                t = L()(e, 2),
                 n = t[0],
                 a = t[1]
               return [
                 m.a.useCallback(
                   function (e) {
                     var t = e.communityId,
-                      r = e.userId
+                      l = e.userId
                     return a
                       ? Promise.reject(new Error('Already committing action on member request'))
                       : new Promise(function (e, a) {
                           n({
-                            variables: { communityId: t, userId: r },
+                            variables: { communityId: t, userId: l },
                             onCompleted: function (t) {
                               e()
                             },
@@ -9770,31 +10768,31 @@
                 a,
               ]
             })(),
-            y = M()(d, 2),
+            y = L()(d, 2),
             p = y[0],
             g = y[1],
-            f = Object(R.c)(),
+            f = Object(x.c)(),
             h = u || g,
-            b = 'CommunityJoinRequestDenyAction' === (null == i ? void 0 : i.__typename),
-            v = 'CommunityJoinRequestApproveAction' === (null == l ? void 0 : l.__typename),
+            b = 'CommunityJoinRequestDenyAction' === (null == r ? void 0 : r.__typename),
+            v = 'CommunityJoinRequestApproveAction' === (null == i ? void 0 : i.__typename),
             _ = m.a.useCallback(
               function () {
                 p({ communityId: t, userId: a }).catch(function () {
-                  f(Object(x.b)({ text: J }))
+                  f(Object(M.b)({ text: Q }))
                 })
               },
               [f, p, t, a],
             ),
             k = m.a.useCallback(
               function () {
-                s({ communityId: t, userId: a }).catch(function () {
-                  f(Object(x.b)({ text: J }))
+                c({ communityId: t, userId: a }).catch(function () {
+                  f(Object(M.b)({ text: Q }))
                 })
               },
-              [f, s, t, a],
+              [f, c, t, a],
             )
           return m.a.createElement(
-            L.a,
+            R.a,
             { style: Y.buttons },
             m.a.createElement(O.a, { disabled: !b || h, onPress: _, style: Y.button, type: 'destructiveOutlined' }, X),
             m.a.createElement(O.a, { disabled: !v || h, onPress: k, style: Y.button, type: 'primaryOutlined' }, W),
@@ -9812,12 +10810,12 @@
         te = n('0yYu'),
         ne = n('IMA+'),
         ae = n('GBcw'),
-        re = n('6Rrp'),
-        le = n('5oT/'),
-        ie = void 0 !== N ? N : (N = n('8vG3')),
+        le = n('6Rrp'),
+        ie = n('5oT/'),
+        re = void 0 !== N ? N : (N = n('8vG3')),
         oe = C.a.d7f13fb8,
-        ce = C.a.a340df66,
-        se = function (e) {
+        se = C.a.a340df66,
+        ce = function (e) {
           var t = e.icon,
             n = e.label
           return m.a.createElement(
@@ -9839,15 +10837,15 @@
         de = {},
         ye = function (e) {
           var t = e.communityJoinRequest,
-            n = P()(ie, t),
+            n = P()(re, t),
             a = n.user_relationship.community.id_str,
-            r = n.user_relationship.user_results.result,
-            l = n.state
-          if (!r || 'User' !== r.__typename || !r.legacy) return null
-          var i = r.id_str,
-            o = r.legacy,
-            c = o.blocking,
-            s = o.description,
+            l = n.user_relationship.user_results.result,
+            i = n.state
+          if (!l || 'User' !== l.__typename || !l.legacy) return null
+          var r = l.id_str,
+            o = l.legacy,
+            s = o.blocking,
+            c = o.description,
             u = o.followed_by,
             d = o.following,
             y = o.muting,
@@ -9855,11 +10853,11 @@
             g = o.profile_image_url_https,
             f = o.screen_name
           if (!g || !f || !p) return null
-          switch (l) {
+          switch (i) {
             case 'Approved':
-              return m.a.createElement(se, { icon: ge, label: oe({ screenName: f }) })
+              return m.a.createElement(ce, { icon: ge, label: oe({ screenName: f }) })
             case 'Denied':
-              return m.a.createElement(se, { icon: fe, label: ce({ screenName: f }) })
+              return m.a.createElement(ce, { icon: fe, label: se({ screenName: f }) })
             case 'Invalid':
               return null
           }
@@ -9873,12 +10871,12 @@
               var t = e.blocking,
                 n = e.muting
               return t ? ue.blocking : n ? ue.muting : void 0
-            })({ blocking: c, muting: y }),
+            })({ blocking: s, muting: y }),
             _ = m.a.createElement(
-              L.a,
+              R.a,
               null,
               v && m.a.createElement(ee.b, { color: 'red500', style: pe.bottomText }, v),
-              m.a.createElement(G, { communityId: a, communityJoinRequestActions: n.actions, userId: i }),
+              m.a.createElement(G, { communityId: a, communityJoinRequestActions: n.actions, userId: r }),
             )
           return m.a.createElement(
             m.a.Fragment,
@@ -9886,14 +10884,14 @@
             m.a.createElement(ne.a, {
               avatarUri: g,
               bottomControl: _,
-              description: s || void 0,
+              description: c || void 0,
               displayMode: 'UserDetailed',
               entities: de,
               name: p,
               screenName: f,
               screenNameSuffix: m.a.createElement(ae.a, { color: 'gray700', timestamp: h }),
               socialContext: b,
-              userId: i,
+              userId: r,
             }),
             m.a.createElement(te.a, null),
           )
@@ -9911,8 +10909,8 @@
             container: { paddingHorizontal: e.componentDimensions.gutterHorizontal },
           }
         }),
-        ge = m.a.createElement(re.a, { style: pe.icon }),
-        fe = m.a.createElement(le.a, { style: pe.icon }),
+        ge = m.a.createElement(le.a, { style: pe.icon }),
+        fe = m.a.createElement(ie.a, { style: pe.icon }),
         he = C.a.addbb11e,
         be = C.a.c38131de,
         ve = void 0 !== U ? U : (U = n('Jt8P')),
@@ -9944,18 +10942,18 @@
         we = C.a.gfccba44,
         Te = 'member_requests',
         Ke = { context: Te },
-        Me = void 0 !== z ? z : (z = n('gAl+')),
-        xe = function (e) {
+        Le = void 0 !== z ? z : (z = n('gAl+')),
+        Me = function (e) {
           var t = Object(Fe.f)(),
             n = e.communityId,
-            a = Object(Ie.a)(Me, { communityId: n }),
-            r = a.data,
-            l = a.fetchNext,
-            i = r.community,
-            o = i.join_requests_result,
-            c = i.name
+            a = Object(Ie.a)(Le, { communityId: n }),
+            l = a.data,
+            i = a.fetchNext,
+            r = l.community,
+            o = r.join_requests_result,
+            s = r.name
           if ('CommunityJoinRequests' === o.__typename) {
-            var s = o.pending_join_requests_slice,
+            var c = o.pending_join_requests_slice,
               u = m.a.createElement(k.a, {
                 communityId: n,
                 withCommunityRules: !0,
@@ -9963,7 +10961,7 @@
                 withTrends: !1,
                 withWhoToFollow: !1,
               }),
-              d = m.a.createElement(Ce, { communityJoinRequests: s, fetchNext: l })
+              d = m.a.createElement(Ce, { communityJoinRequests: c, fetchNext: i })
             return m.a.createElement(
               F.a,
               { behavioralEventViewType: Te },
@@ -9972,18 +10970,18 @@
                 history: t,
                 primaryContent: d,
                 sidebarContent: u,
-                subtitle: c,
+                subtitle: s,
                 title: we,
               }),
             )
           }
           return m.a.createElement(S.a, null)
         },
-        Re = function (e) {
+        xe = function (e) {
           var t = e.communityId
-          return m.a.createElement(I.a, { errorConfig: Ke }, m.a.createElement(xe, { communityId: t }))
+          return m.a.createElement(I.a, { errorConfig: Ke }, m.a.createElement(Me, { communityId: t }))
         },
-        Le = n('/de5'),
+        Re = n('/de5'),
         Oe = n('yiKp'),
         Ae = n.n(Oe),
         je = (n('2G9S'), n('uFXj'), n('z84I'), n('3zvM')),
@@ -10007,7 +11005,7 @@
         qe = n('5mJL'),
         We = n('efqG'),
         Xe = n('21zW'),
-        Je = function (e) {
+        Qe = function (e) {
           return (function (e) {
             var t = e.count,
               n = e.formattedCount
@@ -10018,28 +11016,28 @@
             )
           })({ count: e, formattedCount: ze.a.getFormattedCount(e) })
         },
-        Qe = function (e) {
+        Je = function (e) {
           var t = e.report,
             n = e.withBottomBorder,
             a = t.created_at,
-            r = t.reporter,
-            l = m.a.createElement(ae.a, { timestamp: a })
-          return r
+            l = t.reporter,
+            i = m.a.createElement(ae.a, { timestamp: a })
+          return l
             ? m.a.createElement(Ve.a, null, function (e) {
                 var a = e.windowWidth
                 return m.a.createElement(
-                  L.a,
+                  R.a,
                   { style: n ? Ye.bottomBorder : null },
                   m.a.createElement(ne.a, {
-                    avatarUri: r.profile_image_url_https,
-                    decoration: l,
+                    avatarUri: l.profile_image_url_https,
+                    decoration: i,
                     displayMode: 'UserCompact',
-                    isProtected: r.protected,
-                    isVerified: r.verified,
-                    name: r.name,
-                    screenName: r.screen_name,
+                    isProtected: l.protected,
+                    isVerified: l.verified,
+                    name: l.name,
+                    screenName: l.screen_name,
                     style: a > A.a.theme.breakpoints.small ? Ye.userCell : void 0,
-                    userId: r.id_str,
+                    userId: l.id_str,
                   }),
                   m.a.createElement(
                     qe.a,
@@ -10052,13 +11050,13 @@
         },
         Ge = Ue(function (e) {
           var t = m.a.useState(!1),
-            n = M()(t, 2),
+            n = L()(t, 2),
             a = n[0],
-            r = n[1],
-            l = e.reports,
-            i = e.tweetCase,
-            o = i.report_count,
-            c = i.report_created_at_max
+            l = n[1],
+            i = e.reports,
+            r = e.tweetCase,
+            o = r.report_count,
+            s = r.report_created_at_max
           return m.a.createElement(
             m.a.Fragment,
             null,
@@ -10067,14 +11065,14 @@
               {
                 contentStyle: Ye.popover,
                 onDismiss: function () {
-                  r(!1)
+                  l(!1)
                 },
                 renderContent: function () {
                   return m.a.createElement(
-                    L.a,
+                    R.a,
                     { style: Ye.contentContainer },
-                    l.map(function (e, t) {
-                      return m.a.createElement(Qe, { key: e.id_str, report: e, withBottomBorder: t < l.length - 1 })
+                    i.map(function (e, t) {
+                      return m.a.createElement(Je, { key: e.id_str, report: e, withBottomBorder: t < i.length - 1 })
                     }),
                   )
                 },
@@ -10084,14 +11082,14 @@
                 ee.b,
                 {
                   onPress: function () {
-                    r(!0)
+                    l(!0)
                   },
                 },
-                Je(o),
+                Qe(o),
               ),
             ),
             m.a.createElement(Xe.a, null),
-            m.a.createElement(ae.a, { timestamp: c }),
+            m.a.createElement(ae.a, { timestamp: s }),
           )
         }),
         Ye = A.a.create(function (e) {
@@ -10144,27 +11142,27 @@
         tt = Ae()(Ae()({}, $e), et),
         nt = Pe.a.register(tt),
         at = n('XOJV'),
-        rt = function (e, t) {
+        lt = function (e, t) {
           var n = t.tweetId
           return n ? at.a.selectHydrated(e, n) : void 0
         },
-        lt = function (e, t) {
+        it = function (e, t) {
           var n = t.tweetId
           return nt.select(e, n)
         },
-        it = function (e, t) {
-          var n = rt(e, t)
-          return !!n && Object(f.i)(e, n)
+        rt = function (e, t) {
+          var n = lt(e, t)
+          return !!n && Object(f.h)(e, n)
         },
         ot = Object(h.a)()
           .propsFromState(function () {
-            return { tweet: rt, tweetCase: lt, disableRemoveFromCommunity: it }
+            return { tweet: lt, tweetCase: it, disableRemoveFromCommunity: rt }
           })
           .propsFromActions(function () {
             return { keep: nt.keepTweet, dismiss: nt.dismissTweet }
           }),
-        ct = n('b5s6'),
-        st = n('mjJ+'),
+        st = n('b5s6'),
+        ct = n('mjJ+'),
         ut = n('IG7M'),
         mt = n('boUI'),
         dt = n('zIWA'),
@@ -10186,11 +11184,11 @@
                 a = [{ label: bt(n), decoration: kt }]
               return m.a.createElement($.a, { accessibilityLabel: ft, containerStyle: _t.container, items: a })
             case gt.Kept:
-              var r = (function (e) {
+              var l = (function (e) {
                   return m.a.createElement(C.a.I18NFormatMessage, { $i18n: 'a6d33440' }, e)
                 })(t),
-                l = [{ label: bt(r), decoration: Et }]
-              return m.a.createElement($.a, { accessibilityLabel: ht, containerStyle: _t.container, items: l })
+                i = [{ label: bt(l), decoration: Et }]
+              return m.a.createElement($.a, { accessibilityLabel: ht, containerStyle: _t.container, items: i })
             default:
               return null
           }
@@ -10207,7 +11205,7 @@
           }
         }),
         kt = m.a.createElement(pt.a, { style: _t.icon }),
-        Et = m.a.createElement(re.a, { style: _t.icon }),
+        Et = m.a.createElement(le.a, { style: _t.icon }),
         Ct = { page: 'reported_tweets', component: 'tweet' },
         St = { viewType: 'tweet_moderation_case' },
         Ft = C.a.f1d9930c,
@@ -10215,32 +11213,32 @@
         wt = C.a.fa524057,
         Tt = C.a.g30bc699,
         Kt = C.a.f0306107,
-        Mt = C.a.b99364a5,
-        xt = ot(function (e) {
+        Lt = C.a.b99364a5,
+        Mt = ot(function (e) {
           var t,
             n = m.a.useContext(d.a).featureSwitches.isTrue('c9s_remove_member_enabled'),
             a = e.dismiss,
-            r = e.keep,
-            l = e.tweet,
-            i = e.tweetCase,
+            l = e.keep,
+            i = e.tweet,
+            r = e.tweetCase,
             o = e.tweetId,
-            c = null == l || null === (t = l.user) || void 0 === t ? void 0 : t.screen_name,
-            s = m.a.useCallback(
+            s = null == i || null === (t = i.user) || void 0 === t ? void 0 : t.screen_name,
+            c = m.a.useCallback(
               function (t) {
-                if (l && c) {
+                if (i && s) {
                   var a = [
                     {
                       behavioralEventContext: { viewType: 'view_profile' },
-                      text: Tt({ screenName: c }),
+                      text: Tt({ screenName: s }),
                       Icon: mt.a,
-                      link: '/'.concat(c),
+                      link: '/'.concat(s),
                     },
                     {
                       text: Kt,
                       Icon: dt.a,
                       behavioralEventContext: { viewType: 'report_tweet' },
                       link: {
-                        pathname: '/i/report/'.concat(yt.a.Tweet, '/').concat(l.id_str),
+                        pathname: '/i/report/'.concat(yt.a.Tweet, '/').concat(i.id_str),
                         state: { clientReferer: window.location.pathname, scribeNamespace: Ct },
                       },
                       onClick: function () {
@@ -10252,75 +11250,75 @@
                     n &&
                       !e.disableRemoveFromCommunity &&
                       a.push({
-                        text: Mt({ screenName: c }),
-                        Icon: le.a,
+                        text: Lt({ screenName: s }),
+                        Icon: ie.a,
                         behavioralEventContext: { viewType: 'remove_user' },
                         link: {
-                          pathname: '/i/report/'.concat(yt.a.RemoveCommunityMember, '/').concat(l.id_str),
+                          pathname: '/i/report/'.concat(yt.a.RemoveCommunityMember, '/').concat(i.id_str),
                           state: { clientReferer: window.location.pathname, scribeNamespace: Ct },
                         },
                         onClick: function () {
                           t()
                         },
                       }),
-                    m.a.createElement(st.a, { items: a, onCloseRequested: t })
+                    m.a.createElement(ct.a, { items: a, onCloseRequested: t })
                   )
                 }
                 return null
               },
-              [l, c, n, e.disableRemoveFromCommunity],
+              [i, s, n, e.disableRemoveFromCommunity],
             ),
             u = function () {
-              r(o)
+              l(o)
             },
             p = function () {
               a(o)
             }
-          if (c && (null == l ? void 0 : l.reportingVisibility) === yt.b.HiddenCommunityTweet)
+          if (s && (null == i ? void 0 : i.reportingVisibility) === yt.b.HiddenCommunityTweet)
             return m.a.createElement(
               m.a.Fragment,
               null,
-              m.a.createElement(vt, { screenName: c, type: gt.Hidden }),
+              m.a.createElement(vt, { screenName: s, type: gt.Hidden }),
               m.a.createElement(te.a, null),
             )
           if (
-            (null != i && i.isDismissed) ||
-            'community_tweet_member_removed' === (null == l ? void 0 : l.limited_actions)
+            (null != r && r.isDismissed) ||
+            'community_tweet_member_removed' === (null == i ? void 0 : i.limited_actions)
           )
             return null
-          if (c && null != i && i.isKept)
+          if (s && null != r && r.isKept)
             return m.a.createElement(
               m.a.Fragment,
               null,
-              m.a.createElement(vt, { screenName: c, type: gt.Kept }),
+              m.a.createElement(vt, { screenName: s, type: gt.Kept }),
               m.a.createElement(te.a, null),
             )
-          if (!i) return null
+          if (!r) return null
           return m.a.createElement(
             y.a,
             { behavioralEventContext: St },
             m.a.createElement(
-              L.a,
-              { style: Rt.container },
+              R.a,
+              { style: xt.container },
               m.a.createElement(
-                L.a,
-                { style: Rt.reportsBar },
-                m.a.createElement(Ge, { tweetCase: i }),
+                R.a,
+                { style: xt.reportsBar },
+                m.a.createElement(Ge, { tweetCase: r }),
                 m.a.createElement(ut.a, {
                   activeColor: 'primary',
                   iconSize: 'large',
-                  renderActionMenu: s,
-                  style: Rt.menu,
+                  renderActionMenu: c,
+                  style: xt.menu,
                 }),
               ),
-              m.a.createElement(ct.a, { tweetId: o }),
-              l
+              m.a.createElement(st.a, { tweetId: o }),
+              i
                 ? m.a.createElement(Ve.a, null, function (e) {
                     e.windowHeight
                     var t = e.windowWidth <= A.a.theme.breakpoints.small
                     return m.a.createElement(
-                      L.a,
-                      { style: [Rt.buttons, t && Rt.buttonsMobile] },
+                      R.a,
+                      { style: [xt.buttons, t && xt.buttonsMobile] },
                       m.a.createElement(
                         O.a,
                         {
@@ -10330,7 +11328,7 @@
                             state: { scribeNamespace: Ae()(Ae()({}, Ct), {}, { action: 'hide_tweet' }) },
                           },
                           size: 'large',
-                          style: [Rt.button, t && Rt.buttonMobile],
+                          style: [xt.button, t && xt.buttonMobile],
                           type: 'primaryOutlined',
                         },
                         Ft,
@@ -10341,7 +11339,7 @@
                           behavioralEventContext: { viewType: 'keep_tweet' },
                           onPress: u,
                           size: 'large',
-                          style: [Rt.button, t && Rt.buttonMobile],
+                          style: [xt.button, t && xt.buttonMobile],
                           type: 'primaryOutlined',
                         },
                         wt,
@@ -10349,14 +11347,14 @@
                     )
                   })
                 : m.a.createElement(
-                    L.a,
-                    { style: Rt.buttons },
+                    R.a,
+                    { style: xt.buttons },
                     m.a.createElement(
                       O.a,
                       {
                         behavioralEventContext: { viewType: 'dismiss_tweet' },
                         onPress: p,
-                        style: Rt.button,
+                        style: xt.button,
                         type: 'primaryOutlined',
                       },
                       It,
@@ -10366,7 +11364,7 @@
             m.a.createElement(te.a, null),
           )
         }),
-        Rt = A.a.create(function (e) {
+        xt = A.a.create(function (e) {
           return {
             buttons: { flexDirection: 'row', marginVertical: e.spaces.space16 },
             buttonsMobile: { justifyContent: 'space-between' },
@@ -10384,14 +11382,14 @@
             reportsBar: { marginVertical: e.spaces.space16, flexDirection: 'row' },
           }
         }),
-        Lt = n('hqKg'),
+        Rt = n('hqKg'),
         Ot = n('wAC9'),
         At = function (e, t) {
           var n = t.community
           return n ? n.id_str : void 0
         },
         jt = function () {
-          return Object(Lt.createSelector)(At, function (e) {
+          return Object(Rt.createSelector)(At, function (e) {
             return e
               ? (function (e) {
                   return Object(Ot.a)({
@@ -10421,20 +11419,20 @@
           var t = m.a.useContext(d.a).featureSwitches,
             n = e.community,
             a = e.history,
-            r = e.sliceModule,
-            l = n.id_str,
-            i = n.name,
+            l = e.sliceModule,
+            i = n.id_str,
+            r = n.name,
             o = (n || []).rules,
-            c = (null == n ? void 0 : n.rules) && (null == n ? void 0 : n.rules.length) > 0,
-            s = t.isTrue('responsive_web_communities_slices_enabled'),
-            u = r
+            s = (null == n ? void 0 : n.rules) && (null == n ? void 0 : n.rules.length) > 0,
+            c = t.isTrue('responsive_web_communities_slices_enabled'),
+            u = l
               ? m.a.createElement(Dt.a, {
-                  module: r,
+                  module: l,
                   noItemsRenderer: function () {
                     return m.a.createElement(w.a, { header: Ht, message: Nt })
                   },
                   renderer: function (e) {
-                    return m.a.createElement(xt, { tweetId: e })
+                    return m.a.createElement(Mt, { tweetId: e })
                   },
                 })
               : null
@@ -10442,18 +11440,18 @@
             F.a,
             { behavioralEventViewType: 'reported_tweets' },
             m.a.createElement(Se.a, {
-              backLocation: '/i/communities/'.concat(l),
+              backLocation: '/i/communities/'.concat(i),
               history: a,
-              primaryContent: s ? u : null,
+              primaryContent: c ? u : null,
               sidebarContent: m.a.createElement(k.a, {
-                communityId: l,
+                communityId: i,
                 rulesLimit: null == o ? void 0 : o.length,
-                withCommunityRules: c,
+                withCommunityRules: s,
                 withTopicsToFollow: !1,
                 withTrends: !1,
                 withWhoToFollow: !1,
               }),
-              subtitle: i,
+              subtitle: r,
               title: Bt,
             }),
           )
@@ -10464,9 +11462,9 @@
       function Wt(e) {
         var t = m.a.useContext(d.a).featureSwitches,
           n = (e.analytics, e.community),
-          a = s()(e, zt),
-          r = a.match.path,
-          l = t.isTrue('c9s_request_to_join_enabled')
+          a = c()(e, zt),
+          l = a.match.path,
+          i = t.isTrue('c9s_request_to_join_enabled')
         return Object(p.c)(n.role)
           ? m.a.createElement(
               y.a,
@@ -10476,46 +11474,46 @@
                 null,
                 m.a.createElement(
                   Fe.b,
-                  { exact: !0, path: ''.concat(r, '/reported_tweets') },
+                  { exact: !0, path: ''.concat(l, '/reported_tweets') },
                   m.a.createElement(Ut, o()({}, a, { community: n })),
                 ),
-                l
+                i
                   ? m.a.createElement(
                       Fe.b,
-                      { exact: !0, path: ''.concat(r, '/member_requests') },
-                      m.a.createElement(Re, { communityId: n.id_str }),
+                      { exact: !0, path: ''.concat(l, '/member_requests') },
+                      m.a.createElement(xe, { communityId: n.id_str }),
                     )
                   : null,
-                m.a.createElement(Fe.b, null, m.a.createElement(Le.b, a)),
+                m.a.createElement(Fe.b, null, m.a.createElement(Re.b, a)),
               ),
             )
-          : m.a.createElement(Le.b, a)
+          : m.a.createElement(Re.b, a)
       }
       function Xt(e) {
         var t = e.community,
           n = e.createLocalApiErrorHandler,
           a = e.fetchCommunityIfNeeded,
-          r = e.fetchStatus,
-          l = s()(e, Vt),
-          i = l.match.params.communityId,
-          c = m.a.useCallback(
+          l = e.fetchStatus,
+          i = c()(e, Vt),
+          r = i.match.params.communityId,
+          s = m.a.useCallback(
             function () {
-              i && a(i).catch(n())
+              r && a(r).catch(n())
             },
-            [i, n, a],
+            [r, n, a],
           )
         return (
           m.a.useEffect(
             function () {
-              return c()
+              return s()
             },
-            [c],
+            [s],
           ),
           m.a.createElement(_.a, {
-            fetchStatus: r,
-            onRequestRetry: c,
+            fetchStatus: l,
+            onRequestRetry: s,
             render: function () {
-              return t ? m.a.createElement(Wt, o()({}, l, { community: t })) : null
+              return t ? m.a.createElement(Wt, o()({}, i, { community: t })) : null
             },
           })
         )
@@ -10529,47 +11527,47 @@
       })
       n('KqXw'), n('MvUL'), n('2G9S')
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('3XMw'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('3XMw'),
+        r = n.n(i),
         o = n('M2mT'),
-        c = n('zCf4'),
-        s = n('MWbm'),
+        s = n('zCf4'),
+        c = n('MWbm'),
         u = n('mw9i'),
         m = n('0yYu'),
         d = n('/yvb'),
         y = n('rHpw'),
-        p = i.a.i2209530
+        p = r.a.i2209530
       function g(e) {
         var t = e.children,
           n = e.communityId,
           a = e.onSubmit,
-          l = e.rightControl,
-          i = e.screenType,
+          i = e.rightControl,
+          r = e.screenType,
           y = e.secondaryBar,
           g = e.submitDisabled,
           h = e.subtitle,
           b = e.title,
           v = e.withBottomBorder,
           _ = e.withDetailOpen,
-          k = Object(c.f)(),
-          E = 'secondaryRoot' === i,
+          k = Object(s.f)(),
+          E = 'secondaryRoot' === r,
           C = '/i/communities/'.concat(n),
           S = ''.concat(C, '/tools'),
           F = E ? C : S,
-          I = r.a.useCallback(
+          I = l.a.useCallback(
             function () {
               E ? k.replace(F) : k.goBack({ backLocation: F })
             },
             [F, k, E],
           )
-        return r.a.createElement(
+        return l.a.createElement(
           o.a,
           {
             backLocation: F,
             onBackClick: I,
-            rightControl: l,
-            screenType: i,
+            rightControl: i,
+            screenType: r,
             secondaryBar: y,
             showSubtitleOnWideDetail: !1,
             subtitle: h,
@@ -10577,19 +11575,19 @@
             withBottomBorder: v,
             withDetailOpen: _,
           },
-          r.a.createElement(
+          l.a.createElement(
             u.a,
             { style: f.contentRoot },
-            r.a.createElement(s.a, { style: f.chilrenRoot }, t),
+            l.a.createElement(c.a, { style: f.chilrenRoot }, t),
             a
-              ? r.a.createElement(
-                  r.a.Fragment,
+              ? l.a.createElement(
+                  l.a.Fragment,
                   null,
-                  r.a.createElement(m.a, null),
-                  r.a.createElement(
+                  l.a.createElement(m.a, null),
+                  l.a.createElement(
                     u.a,
                     { style: f.buttonContainer },
-                    r.a.createElement(d.a, { disabled: g, onPress: a, style: f.button, type: 'brandFilled' }, p),
+                    l.a.createElement(d.a, { disabled: g, onPress: a, style: f.button, type: 'brandFilled' }, p),
                   ),
                 )
               : null,
@@ -10622,17 +11620,17 @@
           return P
         })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('eSoz'),
-        s = n('xZGM'),
+        s = n('eSoz'),
+        c = n('xZGM'),
         u = n('rxPX'),
         m = n('0KEI'),
         d = n('1Idg'),
         y = function (e, t) {
-          return Object(s.C)(e, s.h)
+          return Object(c.C)(e, c.h)
         },
         p = Object(u.a)()
           .propsFromState(function () {
@@ -10641,10 +11639,10 @@
           .propsFromActions(function () {
             return {
               addRuleInformEducationFlag: function () {
-                return Object(s.y)(s.h)
+                return Object(c.y)(c.h)
               },
-              editRule: c.c.editRule,
-              removeRule: c.c.removeRule,
+              editRule: s.c.editRule,
+              removeRule: s.c.removeRule,
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_RULE_SCREEN',
               ),
@@ -10666,51 +11664,51 @@
         w = n('rHpw'),
         T = b.a.h99020ef,
         K = b.a.i2209530,
-        M = b.a.a1c93d73,
-        x = b.a.f74a5adb,
-        R = b.a.fbb0ed91,
-        L = b.a.gea6cc19,
+        L = b.a.a1c93d73,
+        M = b.a.f74a5adb,
+        x = b.a.fbb0ed91,
+        R = b.a.gea6cc19,
         O = b.a.hed35471,
         A = b.a.c8677445,
         j = b.a.c3a0d44e
       function P(e) {
-        var t = i.a.useContext(o.a).featureSwitches.isTrue('c9s_rule_removal_enabled'),
+        var t = r.a.useContext(o.a).featureSwitches.isTrue('c9s_rule_removal_enabled'),
           n = e.addRuleInformEducationFlag,
           a = e.community,
-          l = e.createLocalApiErrorHandler,
-          c = e.editRule,
-          s = e.history,
+          i = e.createLocalApiErrorHandler,
+          s = e.editRule,
+          c = e.history,
           u = e.removeRule,
           m = e.rule,
           d = e.ruleId,
           y = e.shouldShowRuleInformEducation,
           p = a.id_str,
           h = a.rules,
-          b = i.a.useState(''),
-          w = r()(b, 2),
+          b = r.a.useState(''),
+          w = l()(b, 2),
           P = w[0],
           B = w[1],
-          H = i.a.useState(''),
-          N = r()(H, 2),
+          H = r.a.useState(''),
+          N = l()(H, 2),
           U = N[0],
           z = N[1],
-          V = i.a.useState(!1),
-          q = r()(V, 2),
+          V = r.a.useState(!1),
+          q = l()(V, 2),
           W = q[0],
           X = q[1],
-          J = i.a.useState(''),
-          Q = r()(J, 2),
-          G = Q[0],
-          Y = Q[1],
-          Z = i.a.useState(!1),
-          $ = r()(Z, 2),
+          Q = r.a.useState(''),
+          J = l()(Q, 2),
+          G = J[0],
+          Y = J[1],
+          Z = r.a.useState(!1),
+          $ = l()(Z, 2),
           ee = $[0],
           te = $[1],
-          ne = i.a.useState(!1),
-          ae = r()(ne, 2),
-          re = ae[0],
-          le = ae[1],
-          ie = i.a.useCallback(
+          ne = r.a.useState(!1),
+          ae = l()(ne, 2),
+          le = ae[0],
+          ie = ae[1],
+          re = r.a.useCallback(
             function (e) {
               var t = e.description,
                 n = e.name,
@@ -10719,51 +11717,51 @@
             },
             [B, z, X],
           ),
-          oe = i.a.useCallback(
+          oe = r.a.useCallback(
             function () {
-              var e = l({
+              var e = i({
                 customErrorHandler: function (e) {
-                  var t = r()(e.errors, 1)[0],
-                    n = t.code === g.a.GenericBadRequest && t.message ? t.message : M
+                  var t = l()(e.errors, 1)[0],
+                    n = t.code === g.a.GenericBadRequest && t.message ? t.message : L
                   return Y(n), X(!1), []
                 },
               })
               'string' == typeof d &&
-                c(p, { ruleId: d, name: P, description: U })
+                s(p, { ruleId: d, name: P, description: U })
                   .then(function () {
-                    s.goBack({ backLocation: '/i/communities/'.concat(p, '/tools/rules') })
+                    c.goBack({ backLocation: '/i/communities/'.concat(p, '/tools/rules') })
                   })
                   .catch(e)
             },
-            [p, P, U, d, c, s, l],
+            [p, P, U, d, s, c, i],
           ),
-          ce = i.a.useCallback(
+          se = r.a.useCallback(
             function () {
-              var e = l({
+              var e = i({
                 customErrorHandler: function (e) {
-                  var t = r()(e.errors, 1)[0],
-                    n = t.code === g.a.GenericBadRequest && t.message ? t.message : M
+                  var t = l()(e.errors, 1)[0],
+                    n = t.code === g.a.GenericBadRequest && t.message ? t.message : L
                   return Y(n), te(!1), []
                 },
               })
               'string' == typeof d &&
                 u(p, { ruleId: d })
                   .then(function () {
-                    s.goBack({ backLocation: '/i/communities/'.concat(p, '/tools/rules') })
+                    c.goBack({ backLocation: '/i/communities/'.concat(p, '/tools/rules') })
                   })
                   .catch(e)
             },
-            [p, d, u, s, l],
+            [p, d, u, c, i],
           )
-        if (!d || !m) return i.a.createElement(v.a, { to: '/i/communities/'.concat(p, '/tools/rules') })
-        var se = m.description,
+        if (!d || !m) return r.a.createElement(v.a, { to: '/i/communities/'.concat(p, '/tools/rules') })
+        var ce = m.description,
           ue = m.name,
-          me = i.a.createElement(
+          me = r.a.createElement(
             C.a,
             {
               disabled: !W,
               onPress: function () {
-                y ? le(!0) : oe()
+                y ? ie(!0) : oe()
               },
               size: 'small',
               type: 'brandFilled',
@@ -10772,48 +11770,48 @@
           ),
           de = 1 === h.length,
           ye = t
-            ? i.a.createElement(
+            ? r.a.createElement(
                 E.a,
                 { style: D.delete },
-                i.a.createElement(S.a, {
+                r.a.createElement(S.a, {
                   color: 'red500',
                   disabled: de,
-                  label: R,
+                  label: x,
                   onPress: function () {
                     te(!0)
                   },
                 }),
               )
             : void 0,
-          pe = de ? i.a.createElement(E.a, { style: D.callout }, i.a.createElement(F.a, { text: x })) : void 0,
+          pe = de ? r.a.createElement(E.a, { style: D.callout }, r.a.createElement(F.a, { text: M })) : void 0,
           ge = ee
-            ? i.a.createElement(I.a, {
+            ? r.a.createElement(I.a, {
                 cancelButtonLabel: j,
                 confirmButtonLabel: A,
                 confirmButtonType: 'destructiveFilled',
-                headline: L,
+                headline: R,
                 onCancel: function () {
                   te(!1)
                 },
-                onConfirm: ce,
+                onConfirm: se,
                 text: O,
               })
             : void 0,
-          fe = re
-            ? i.a.createElement(k.a, {
+          fe = le
+            ? r.a.createElement(k.a, {
                 onCancel: function () {
-                  le(!1)
+                  ie(!1)
                 },
                 onConfirm: function () {
-                  n(), oe(), le(!1)
+                  n(), oe(), ie(!1)
                 },
               })
             : void 0
-        return i.a.createElement(
+        return r.a.createElement(
           f.b,
-          { behavioralEventViewType: 'rules', history: s, rightControl: me, title: T },
+          { behavioralEventViewType: 'rules', history: c, rightControl: me, title: T },
           pe,
-          i.a.createElement(_.a, { description: se || '', errorText: G, name: ue, onChange: ie }),
+          r.a.createElement(_.a, { description: ce || '', errorText: G, name: ue, onChange: re }),
           ye,
           ge,
           fe,
@@ -10833,13 +11831,13 @@
         return P
       })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = n('VrFO'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
-        c = n.n(o),
-        s = n('1Pcy'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('1Pcy'),
+        u = n.n(c),
         m = n('5Yy7'),
         d = n.n(m),
         y = n('2VqO'),
@@ -10862,10 +11860,10 @@
         w = n.n(I),
         T = n('21nk'),
         K = n.n(T),
-        M = n('bCEw'),
-        x = n.n(M),
-        R = n('Ud88'),
-        L = n.n(R),
+        L = n('bCEw'),
+        M = n.n(L),
+        x = n('Ud88'),
+        R = n.n(x),
         O = function (e) {
           return (0, e.render)({ fetchStatus: C.a.LOADING, data: null, error: null, retry: S.a })
         },
@@ -10874,12 +11872,12 @@
           var t = p()(n)
           function n() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
-            return (e = t.call.apply(t, [this].concat(r))), f()(u()(e), 'state', { error: null }), e
+            r()(this, n)
+            for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
+            return (e = t.call.apply(t, [this].concat(l))), f()(u()(e), 'state', { error: null }), e
           }
           return (
-            c()(
+            s()(
               n,
               [
                 {
@@ -10912,23 +11910,23 @@
           var t = e.query,
             n = e.queryRef,
             a = e.render,
-            r = K()(t, n)
-          return a({ fetchStatus: C.a.LOADED, data: r, error: null, retry: S.a })
+            l = K()(t, n)
+          return a({ fetchStatus: C.a.LOADED, data: l, error: null, retry: S.a })
         },
         P = function (e, t) {
           if (_.canUseDOM)
             return function (n) {
               var a = n.fetchPolicy,
-                l = void 0 === a ? 'store-or-network' : a,
-                i = n.render,
+                i = void 0 === a ? 'store-or-network' : a,
+                r = n.render,
                 o = n.variables,
-                c = x()(e),
-                s = r()(c, 2),
-                u = s[0],
-                m = s[1],
+                s = M()(e),
+                c = l()(s, 2),
+                u = c[0],
+                m = c[1],
                 d = Object(F.useCreateLocalApiErrorHandler)(t.errorConfig.context),
                 y = w()(o),
-                p = r()(y, 1)[0],
+                p = l()(y, 1)[0],
                 g = b.a.useCallback(
                   function () {
                     m(p, { fetchPolicy: 'network-only' })
@@ -10938,21 +11936,21 @@
               return (
                 b.a.useLayoutEffect(
                   function () {
-                    m(p, { fetchPolicy: l })
+                    m(p, { fetchPolicy: i })
                   },
-                  [l, m, p],
+                  [i, m, p],
                 ),
                 u
                   ? b.a.createElement(
                       b.a.Suspense,
-                      { fallback: b.a.createElement(O, { render: i }) },
+                      { fallback: b.a.createElement(O, { render: r }) },
                       b.a.createElement(
                         A,
                         { errorHandler: d(t.errorConfig.options || {}), key: u.fetchKey, retry: g },
                         function (t, n) {
                           return t
-                            ? i({ fetchStatus: C.a.FAILED, error: t, data: null, retry: n })
-                            : b.a.createElement(j, { query: e, queryRef: u, render: i })
+                            ? r({ fetchStatus: C.a.FAILED, error: t, data: null, retry: n })
+                            : b.a.createElement(j, { query: e, queryRef: u, render: r })
                         },
                       ),
                     )
@@ -10962,12 +11960,12 @@
           var n = new WeakMap()
           return function (a) {
             a.fetchPolicy
-            var l = a.render,
-              i = a.variables,
-              o = L()(),
-              c = Object(F.useCreateLocalApiErrorHandler)(t.errorConfig.context),
-              s = w()(i),
-              u = r()(s, 1)[0],
+            var i = a.render,
+              r = a.variables,
+              o = R()(),
+              s = Object(F.useCreateLocalApiErrorHandler)(t.errorConfig.context),
+              c = w()(r),
+              u = l()(c, 1)[0],
               m = n.get(o)
             if (m) return m
             var d = b.a.lazy(function () {
@@ -10975,12 +11973,12 @@
                 .toPromise()
                 .then(
                   function (e) {
-                    return l({ fetchStatus: C.a.LOADED, data: e, error: null, retry: S.a })
+                    return i({ fetchStatus: C.a.LOADED, data: e, error: null, retry: S.a })
                   },
                   function (e) {
                     return e instanceof v.a
-                      ? (c(t.errorConfig.options || {})(e),
-                        l({ fetchStatus: C.a.FAILED, data: null, error: e, retry: S.a }))
+                      ? (s(t.errorConfig.options || {})(e),
+                        i({ fetchStatus: C.a.FAILED, data: null, error: e, retry: S.a }))
                       : b.a.createElement(function () {
                           throw e
                         })
@@ -11001,16 +11999,16 @@
           return T
         })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
+        r = n.n(i),
         o = n('v6aA'),
-        c = n('eSoz'),
-        s = n('xZGM'),
+        s = n('eSoz'),
+        c = n('xZGM'),
         u = n('rxPX'),
         m = n('0KEI'),
         d = function (e, t) {
-          return Object(s.C)(e, s.h)
+          return Object(c.C)(e, c.h)
         },
         y = Object(u.a)()
           .propsFromState(function () {
@@ -11019,9 +12017,9 @@
           .propsFromActions(function () {
             return {
               addRuleInformEducationFlag: function () {
-                return Object(s.y)(s.h)
+                return Object(c.y)(c.h)
               },
-              createRule: c.c.createRule,
+              createRule: s.c.createRule,
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_ADD_RULE_SCREEN',
               ),
@@ -11043,99 +12041,99 @@
         I = h.a.fcbe0992,
         w = h.a.j24c37b2
       function T(e) {
-        var t = i.a.useContext(o.a).featureSwitches.getNumberValue('c9s_max_rule_count', 10),
+        var t = r.a.useContext(o.a).featureSwitches.getNumberValue('c9s_max_rule_count', 10),
           n = e.addRuleInformEducationFlag,
           a = e.community,
-          l = e.createLocalApiErrorHandler,
-          c = e.createRule,
-          s = e.history,
+          i = e.createLocalApiErrorHandler,
+          s = e.createRule,
+          c = e.history,
           u = e.shouldShowRuleInformEducation,
           m = a.id_str,
           d = a.rules,
-          y = i.a.useState(''),
-          f = r()(y, 2),
+          y = r.a.useState(''),
+          f = l()(y, 2),
           h = f[0],
           T = f[1],
-          K = i.a.useState(''),
-          M = r()(K, 2),
-          x = M[0],
-          R = M[1],
-          L = i.a.useState(!1),
-          O = r()(L, 2),
+          K = r.a.useState(''),
+          L = l()(K, 2),
+          M = L[0],
+          x = L[1],
+          R = r.a.useState(!1),
+          O = l()(R, 2),
           A = O[0],
           j = O[1],
-          P = i.a.useState(!1),
-          D = r()(P, 2),
+          P = r.a.useState(!1),
+          D = l()(P, 2),
           B = D[0],
           H = D[1],
-          N = i.a.useState(''),
-          U = r()(N, 2),
+          N = r.a.useState(''),
+          U = l()(N, 2),
           z = U[0],
           V = U[1],
-          q = i.a.useState(!1),
-          W = r()(q, 2),
+          q = r.a.useState(!1),
+          W = l()(q, 2),
           X = W[0],
-          J = W[1],
-          Q = i.a.useCallback(
+          Q = W[1],
+          J = r.a.useCallback(
             function (e) {
               var t = e.description,
                 n = e.name,
                 a = e.valid
-              V(''), T(n), R(t), j(a)
+              V(''), T(n), x(t), j(a)
             },
-            [T, R, j],
+            [T, x, j],
           ),
-          G = i.a.useCallback(
+          G = r.a.useCallback(
             function () {
               H(!0)
-              var e = l({
+              var e = i({
                 customErrorHandler: function (e) {
-                  var t = r()(e.errors, 1)[0],
+                  var t = l()(e.errors, 1)[0],
                     n = t.code === p.a.GenericBadRequest && t.message ? t.message : S
                   return V(n), j(!1), []
                 },
               })
-              c(m, { name: h, description: x })
+              s(m, { name: h, description: M })
                 .then(function () {
-                  s.goBack({ backLocation: '/i/communities/'.concat(m, '/tools/rules') })
+                  c.goBack({ backLocation: '/i/communities/'.concat(m, '/tools/rules') })
                 })
                 .catch(e)
             },
-            [m, h, x, c, s, l],
+            [m, h, M, s, c, i],
           ),
-          Y = i.a.useCallback(
+          Y = r.a.useCallback(
             function () {
-              u ? J(!0) : G()
+              u ? Q(!0) : G()
             },
             [G, u],
           ),
-          Z = i.a.createElement(_.a, { disabled: !A, onPress: Y, size: 'small', type: 'brandFilled' }, C),
+          Z = r.a.createElement(_.a, { disabled: !A, onPress: Y, size: 'small', type: 'brandFilled' }, C),
           $ = d.length >= t,
-          ee = i.a.createElement(k.a, {
+          ee = r.a.createElement(k.a, {
             confirmButtonLabel: w,
             headline: F,
             onConfirm: function () {
-              s.goBack({ backLocation: '/i/communities/'.concat(m, '/tools/rules') })
+              c.goBack({ backLocation: '/i/communities/'.concat(m, '/tools/rules') })
             },
             text: I({ maxRuleCount: t }),
             withCancelButton: !1,
           }),
           te = X
-            ? i.a.createElement(v.a, {
+            ? r.a.createElement(v.a, {
                 onCancel: function () {
-                  J(!1)
+                  Q(!1)
                 },
                 onConfirm: function () {
-                  n(), G(), J(!1)
+                  n(), G(), Q(!1)
                 },
               })
             : void 0
         return $ && !B
           ? ee
-          : i.a.createElement(
+          : r.a.createElement(
               g.b,
-              { behavioralEventViewType: 'add_rule', history: s, rightControl: Z, title: E },
-              i.a.createElement(b.a, { description: '', errorText: z, name: '', onChange: Q }),
+              { behavioralEventViewType: 'add_rule', history: c, rightControl: Z, title: E },
+              r.a.createElement(b.a, { description: '', errorText: z, name: '', onChange: J }),
               te,
             )
       }
@@ -11146,21 +12144,21 @@
       var a = n('IGGJ')
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e) {
-          for (var t = [], n = (0, r.default)(e), a = 0; a < n.length; a++) t.push(n[a].hashtag)
+          for (var t = [], n = (0, l.default)(e), a = 0; a < n.length; a++) t.push(n[a].hashtag)
           return t
         })
-      var r = a(n('yyPN'))
+      var l = a(n('yyPN'))
       e.exports = t.default
     },
     ogGF: function (e, t, n) {
       'use strict'
       var a,
-        r = n('97Jx'),
-        l = n.n(r),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('ERkP'),
-        s = n.n(c),
+        l = n('97Jx'),
+        i = n.n(l),
+        r = n('m3Bd'),
+        o = n.n(r),
+        s = n('ERkP'),
+        c = n.n(s),
         u = n('/yvb'),
         m = n('3XMw'),
         d = n.n(m),
@@ -11169,16 +12167,16 @@
         g = n.n(p),
         f = ['community'],
         h = d.a.b139b549,
-        b = s.a.createElement(y.a, null),
+        b = c.a.createElement(y.a, null),
         v = function (e) {
           var t = e.community,
-            r = o()(e, f),
-            i = g()(void 0 !== a ? a : (a = n('qre1')), t)
-          if (!i || 'CommunityInvitesUnavailable' === i.invites_result.__typename) return null
-          var c = '/i/communities/'.concat(i.rest_id, '/invite')
-          return s.a.createElement(u.a, l()({ accessibilityLabel: h, icon: b, link: c, type: 'primaryText' }, r))
+            l = o()(e, f),
+            r = g()(void 0 !== a ? a : (a = n('qre1')), t)
+          if (!r || 'CommunityInvitesUnavailable' === r.invites_result.__typename) return null
+          var s = '/i/communities/'.concat(r.rest_id, '/invite')
+          return c.a.createElement(u.a, i()({ accessibilityLabel: h, icon: b, link: s, type: 'primaryText' }, l))
         }
-      t.a = s.a.memo(v)
+      t.a = c.a.memo(v)
     },
     'p+r5': function (e, t, n) {
       'use strict'
@@ -11187,13 +12185,13 @@
       })
       n('yiKp')
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('m3Bd'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('m3Bd'),
+        r = n.n(i),
         o = n('VrFO'),
-        c = n.n(o),
-        s = n('Y9Ll'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('Y9Ll'),
+        u = n.n(c),
         m = n('1Pcy'),
         d = n.n(m),
         y = n('5Yy7'),
@@ -11213,10 +12211,10 @@
         w = n('tI3i'),
         T = n.n(w),
         K = n('oQhu'),
-        M = n('rHpw'),
-        x = n('aITJ'),
-        R = n('MWbm'),
-        L = n('n5fo'),
+        L = n('rHpw'),
+        M = n('aITJ'),
+        x = n('MWbm'),
+        R = n('n5fo'),
         O = n('5emT'),
         A = n('Oib4'),
         j = n('WtWS'),
@@ -11258,7 +12256,7 @@
           var t = f()(n)
           function n(e) {
             var a
-            c()(this, n),
+            s()(this, n),
               (a = t.call(this, e)),
               b()(d()(a), '_blurOnBackspaceKeyUpForKaiOS', !1),
               b()(d()(a), '_isLabelLarge', function () {
@@ -11278,8 +12276,8 @@
                 var e = a.props,
                   t = e.showPasswordVisibilityIcon,
                   n = e.type,
-                  r = a.state.isPasswordRevealed
-                return 'password' === n && t ? (r ? 'text' : 'password') : n
+                  l = a.state.isPasswordRevealed
+                return 'password' === n && t ? (l ? 'text' : 'password') : n
               }),
               b()(d()(a), '_calculateLength', function (e) {
                 return H(e, a.props.calculateLength)
@@ -11293,23 +12291,23 @@
                 var e,
                   t,
                   n,
-                  r,
                   l,
-                  i = a.props.type,
+                  i,
+                  r = a.props.type,
                   o =
                     null === (e = a._textInput) || void 0 === e || null === (t = e.textInputNode) || void 0 === t
                       ? void 0
                       : t.value,
-                  c =
+                  s =
                     null === (n = a._textInput) ||
                     void 0 === n ||
-                    null === (r = n.textInputNode) ||
-                    void 0 === r ||
-                    null === (l = r.validity) ||
-                    void 0 === l
+                    null === (l = n.textInputNode) ||
+                    void 0 === l ||
+                    null === (i = l.validity) ||
+                    void 0 === i
                       ? void 0
-                      : l.badInput
-                return 'number' === i && '' === o && !0 === c
+                      : i.badInput
+                return 'number' === r && '' === o && !0 === s
               }),
               b()(d()(a), '_getActualCount', function (e) {
                 var t = e.length
@@ -11318,23 +12316,23 @@
               b()(d()(a), '_handleBlur', function (e) {
                 var t = a.props.onBlur,
                   n = e.currentTarget.value,
-                  r = a._calculateLength(n),
-                  l = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: r, actualCount: l }), t && t(e)
+                  l = a._calculateLength(n),
+                  i = a._getActualCount(n)
+                a.setState({ isFocused: !1, displayCount: l, actualCount: i }), t && t(e)
               }),
               b()(d()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,
                   n = a.state.previousValue,
-                  r = e.currentTarget.value,
-                  l = a._calculateLength(r),
-                  i = a._getActualCount(r),
+                  l = e.currentTarget.value,
+                  i = a._calculateLength(l),
+                  r = a._getActualCount(l),
                   o = a._getAdjustedMaxLength()
-                void 0 !== o && r.length > o && n.length < r.length
+                void 0 !== o && l.length > o && n.length < l.length
                   ? (e.currentTarget.value = n)
                   : (a.setState({
                       isFocused: !0,
-                      displayCount: l,
-                      actualCount: i,
+                      displayCount: i,
+                      actualCount: r,
                       previousValue: e.currentTarget.value,
                     }),
                     t && t(e))
@@ -11346,19 +12344,19 @@
               b()(d()(a), '_handleKeyPress', function (e) {
                 var t = a.props,
                   n = t.multiline,
-                  r = t.onKeyPress,
-                  l = t.onSubmitEditing
-                r && r(e),
-                  e.isDefaultPrevented() || 'Enter' !== e.key || e.shiftKey || n || !l || (e.preventDefault(), l(e))
+                  l = t.onKeyPress,
+                  i = t.onSubmitEditing
+                l && l(e),
+                  e.isDefaultPrevented() || 'Enter' !== e.key || e.shiftKey || n || !i || (e.preventDefault(), i(e))
               }),
               b()(d()(a), '_handleKeyDown', function (e) {
                 var t = a.props.onKeyDown,
                   n = 0 === a.state.displayCount
-                x.b.isKaiOS() && 'Backspace' === e.key && n ? (a._blurOnBackspaceKeyUpForKaiOS = n) : t && t(e)
+                M.b.isKaiOS() && 'Backspace' === e.key && n ? (a._blurOnBackspaceKeyUpForKaiOS = n) : t && t(e)
               }),
               b()(d()(a), '_handleKeyUp', function (e) {
                 var t = a.props.onKeyUp
-                x.b.isKaiOS() &&
+                M.b.isKaiOS() &&
                   'Backspace' === e.key &&
                   a._blurOnBackspaceKeyUpForKaiOS &&
                   (e.preventDefault(), a.blur()),
@@ -11376,17 +12374,17 @@
                 var t = e.defaultValue,
                   n = e.maxLength,
                   a = e.onChange,
-                  r = e.validLength,
-                  l = !!a,
-                  i = 'string' == typeof e.value,
+                  l = e.validLength,
+                  i = !!a,
+                  r = 'string' == typeof e.value,
                   o = 'string' == typeof t
                 T()(
-                  !(!o && i && !l),
+                  !(!o && r && !i),
                   'A controlled component, a component with a value prop, must have an onChange handler. The value prop cannot be undefined.',
                 ),
-                  T()(!(n && r && r > n), 'Max length should be equal or greater than valid length.'),
+                  T()(!(n && l && l > n), 'Max length should be equal or greater than valid length.'),
                   T()(
-                    !((void 0 !== n && n <= 0) || (void 0 !== r && r <= 0)),
+                    !((void 0 !== n && n <= 0) || (void 0 !== l && l <= 0)),
                     'Set editable to false instead of limiting the valid character count to 0.',
                   )
               }),
@@ -11404,15 +12402,15 @@
                 return e ? e + t.length - n : void 0
               }),
               a._checkComponentPropsUsageCorrectness(e)
-            var r = e.defaultValue,
-              l = e.value || r || ''
+            var l = e.defaultValue,
+              i = e.value || l || ''
             return (
               (a.state = {
-                displayCount: a._calculateLength(l),
-                actualCount: B(l),
+                displayCount: a._calculateLength(i),
+                actualCount: B(i),
                 isFocused: !1,
                 isPasswordRevealed: !1,
-                previousValue: l,
+                previousValue: i,
               }),
               a
             )
@@ -11427,13 +12425,13 @@
                     var t = this.props,
                       n = t.maxLength,
                       a = t.onChange,
-                      r = t.validLength,
-                      l = t.value,
-                      i = e.maxLength,
+                      l = t.validLength,
+                      i = t.value,
+                      r = e.maxLength,
                       o = e.onChange,
-                      c = e.validLength,
-                      s = e.value
-                    ;(c === r && n === i && !!a === !!o && ('string' == typeof l) === ('string' == typeof s)) ||
+                      s = e.validLength,
+                      c = e.value
+                    ;(s === l && n === r && !!a === !!o && ('string' == typeof i) === ('string' == typeof c)) ||
                       this._checkComponentPropsUsageCorrectness(this.props)
                   },
                 },
@@ -11444,15 +12442,15 @@
                       t = e.accessibilityLabel,
                       n = e.editable,
                       a = e.errorText,
-                      r = e.helperText,
-                      l = e.style,
-                      i = this.state.isFocused,
+                      l = e.helperText,
+                      i = e.style,
+                      r = this.state.isFocused,
                       o = this._isFormInvalid()
                     return _.a.createElement(
-                      R.a,
-                      { style: [q.root, l] },
+                      x.a,
+                      { style: [q.root, i] },
                       _.a.createElement(
-                        R.a,
+                        x.a,
                         {
                           accessibilityLabel: t,
                           accessibilityRole: 'label',
@@ -11460,16 +12458,16 @@
                             S.a.border,
                             q.textInputFormStyle,
                             o && S.a.invalidBorderColor,
-                            i && o && S.a.focusedBorderInvalid,
-                            i && !o && S.a.focusedBorderValid,
+                            r && o && S.a.focusedBorderInvalid,
+                            r && !o && S.a.focusedBorderValid,
                             !n && S.a.disabled,
                           ],
                         },
                         _.a.createElement(
-                          R.a,
+                          x.a,
                           { style: q.textInputFormWrapper },
                           _.a.createElement(
-                            R.a,
+                            x.a,
                             { style: q.textInputHeader },
                             this._renderLabel(),
                             this._shouldRenderDisplayCount() ? this._renderDisplayCount() : null,
@@ -11478,12 +12476,12 @@
                         ),
                       ),
                       _.a.createElement(
-                        R.a,
+                        x.a,
                         { style: [q.sidePadding, q.underTextInputForm] },
                         _.a.createElement(
-                          R.a,
+                          x.a,
                           { style: q.subtextWrapper },
-                          r ? this._renderHelperText() : null,
+                          l ? this._renderHelperText() : null,
                           o && a ? this._renderErrorText() : null,
                         ),
                       ),
@@ -11534,9 +12532,9 @@
                         e.onSubmitEditing,
                         e.showPasswordVisibilityIcon,
                         e.showValidationIcon),
-                      l = (e.style, e.type, e.validLength, i()(e, D))
+                      i = (e.style, e.type, e.validLength, r()(e, D))
                     return _.a.createElement(
-                      R.a,
+                      x.a,
                       { style: V.container },
                       t && !this._isLabelLarge() ? this._renderIcon() : null,
                       _.a.createElement(
@@ -11544,7 +12542,7 @@
                         { size: 'headline1', style: V.wrapper },
                         _.a.createElement(
                           P.a,
-                          r()({}, l, {
+                          l()({}, i, {
                             editable: n,
                             maxLength: this._getAdjustedMaxLength(),
                             onBlur: this._handleBlur,
@@ -11573,13 +12571,13 @@
                       a = this.state.isPasswordRevealed
                     return 'password' === n && t
                       ? _.a.createElement(
-                          R.a,
+                          x.a,
                           { style: q.passwordVisibilityIconContainer },
                           _.a.createElement(C.a, {
                             accessibilityLabel: a ? U : N,
                             focusable: !0,
                             hoverLabel: { label: a ? U : N },
-                            icon: a ? _.a.createElement(L.a, null) : _.a.createElement(O.a, null),
+                            icon: a ? _.a.createElement(R.a, null) : _.a.createElement(O.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -11592,7 +12590,7 @@
                   key: '_renderHelperText',
                   value: function () {
                     return _.a.createElement(
-                      R.a,
+                      x.a,
                       { accessibilityLiveRegion: 'polite' },
                       _.a.createElement(
                         E.b,
@@ -11606,7 +12604,7 @@
                   key: '_renderErrorText',
                   value: function () {
                     return _.a.createElement(
-                      R.a,
+                      x.a,
                       { accessibilityLiveRegion: 'assertive' },
                       _.a.createElement(
                         E.b,
@@ -11623,14 +12621,14 @@
                       t = this._getMaxDisplayCount(),
                       n = this._exceedsValidLength(e),
                       a = t && I.a.ia24dc8c(t),
-                      r = I.a.ia24dc8c(e)
+                      l = I.a.ia24dc8c(e)
                     return _.a.createElement(
-                      R.a,
+                      x.a,
                       { accessibilityLiveRegion: 'polite', style: [q.textInputHeaderItem, q.displayCount] },
                       _.a.createElement(
                         E.b,
                         { color: n ? 'red500' : 'gray700', size: 'subtext2' },
-                        a ? ''.concat(r, ' / ').concat(a) : '',
+                        a ? ''.concat(l, ' / ').concat(a) : '',
                       ),
                     )
                   },
@@ -11692,9 +12690,9 @@
                   value: function (e, t) {
                     var n = e.calculateLength,
                       a = e.value,
-                      r = 'string' == typeof a ? H(a, n) : 0
-                    return 'string' == typeof a && r !== t.displayCount
-                      ? { displayCount: r, actualCount: a.length }
+                      l = 'string' == typeof a ? H(a, n) : 0
+                    return 'string' == typeof a && l !== t.displayCount
+                      ? { displayCount: l, actualCount: a.length }
                       : null
                   },
                 },
@@ -11705,7 +12703,7 @@
         })(_.a.Component)
       b()(z, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
         (z.propTypes = {})
-      var V = M.a.create(function (e) {
+      var V = L.a.create(function (e) {
           return {
             container: {
               flexDirection: 'row',
@@ -11733,7 +12731,7 @@
             disabled: { color: e.colors.gray700 },
           }
         }),
-        q = M.a.create(function (e) {
+        q = L.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -11836,12 +12834,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m,
         d,
@@ -11857,7 +12855,7 @@
             selections: [
               {
                 alias: null,
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'community_id', variableName: 'communityId' },
                   {
                     kind: 'Variable',
@@ -11871,13 +12869,23 @@
                 name: 'community_membership_settings_restricted_update',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                      (r = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                       (o = { alias: 'id_str', args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
-                      (c = { alias: null, args: null, kind: 'ScalarField', name: 'access', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: 'access', storageKey: null }),
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: null,
+                        kind: 'LinkedField',
+                        name: 'join_requests_result',
+                        plural: !1,
+                        selections: [i],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -11886,8 +12894,8 @@
                         name: 'membership_settings',
                         plural: !1,
                         selections: [
-                          l,
-                          (s = {
+                          i,
+                          (c = {
                             kind: 'InlineFragment',
                             selections: [
                               {
@@ -11948,20 +12956,33 @@
             selections: [
               {
                 alias: null,
-                args: r,
+                args: l,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'community_membership_settings_restricted_update',
                 plural: !1,
                 selections: [
-                  l,
+                  i,
                   { kind: 'TypeDiscriminator', abstractKey: '__isCommunityMembershipSettingsUpdateResult' },
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      i,
+                      r,
                       o,
-                      c,
+                      s,
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: null,
+                        kind: 'LinkedField',
+                        name: 'join_requests_result',
+                        plural: !1,
+                        selections: [
+                          i,
+                          { kind: 'InlineFragment', selections: [r], type: 'CommunityJoinRequests', abstractKey: null },
+                        ],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -11970,9 +12991,9 @@
                         name: 'membership_settings',
                         plural: !1,
                         selections: [
-                          l,
+                          i,
                           { kind: 'TypeDiscriminator', abstractKey: '__isCommunityMembershipSettings' },
-                          s,
+                          c,
                         ],
                         storageKey: null,
                       },
@@ -11988,7 +13009,7 @@
             ],
           },
           params: {
-            id: 'FqEbFNXw1mnkDrNk7OQl-Q',
+            id: 'MMT67l6ylVMDenMLi5G-8Q',
             metadata: {},
             name: 'edit_CommunityRestricted_Mutation',
             operationKind: 'mutation',
@@ -12050,11 +13071,11 @@
     's8G+': function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('v6aA')
+        l = n.n(a),
+        i = n('v6aA')
       t.a = function (e) {
-        var t = r.a.useContext(l.a).featureSwitches
-        return r.a.useMemo(
+        var t = l.a.useContext(i.a).featureSwitches
+        return l.a.useMemo(
           function () {
             return t.isTrue(e)
           },
@@ -12066,12 +13087,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u,
         m,
         d,
@@ -12087,7 +13108,7 @@
             selections: [
               {
                 alias: null,
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'community_id', variableName: 'communityId' },
                   { kind: 'Variable', name: 'open_membership_settings', variableName: 'openMembershipSettings' },
                   { kind: 'Literal', name: 's', value: 4 },
@@ -12097,13 +13118,23 @@
                 name: 'community_membership_settings_open_update',
                 plural: !1,
                 selections: [
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                      (r = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                       (o = { alias: 'id_str', args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
-                      (c = { alias: null, args: null, kind: 'ScalarField', name: 'access', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: 'access', storageKey: null }),
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: null,
+                        kind: 'LinkedField',
+                        name: 'join_requests_result',
+                        plural: !1,
+                        selections: [i],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -12112,8 +13143,8 @@
                         name: 'membership_settings',
                         plural: !1,
                         selections: [
-                          l,
-                          (s = {
+                          i,
+                          (c = {
                             kind: 'InlineFragment',
                             selections: [
                               {
@@ -12174,20 +13205,33 @@
             selections: [
               {
                 alias: null,
-                args: r,
+                args: l,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'community_membership_settings_open_update',
                 plural: !1,
                 selections: [
-                  l,
+                  i,
                   { kind: 'TypeDiscriminator', abstractKey: '__isCommunityMembershipSettingsUpdateResult' },
                   {
                     kind: 'InlineFragment',
                     selections: [
-                      i,
+                      r,
                       o,
-                      c,
+                      s,
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: null,
+                        kind: 'LinkedField',
+                        name: 'join_requests_result',
+                        plural: !1,
+                        selections: [
+                          i,
+                          { kind: 'InlineFragment', selections: [r], type: 'CommunityJoinRequests', abstractKey: null },
+                        ],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -12196,9 +13240,9 @@
                         name: 'membership_settings',
                         plural: !1,
                         selections: [
-                          l,
+                          i,
                           { kind: 'TypeDiscriminator', abstractKey: '__isCommunityMembershipSettings' },
-                          s,
+                          c,
                         ],
                         storageKey: null,
                       },
@@ -12214,7 +13258,7 @@
             ],
           },
           params: {
-            id: 'T8cVbovU4L1jOLVfHdJ-Tg',
+            id: 's3bbji6oNTSXrOD6TRIpvg',
             metadata: {},
             name: 'edit_CommunityOpen_Mutation',
             operationKind: 'mutation',
@@ -12304,15 +13348,15 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityPeopleScreen', function () {
-          return x
+          return M
         })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('vrRf'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('vrRf'), n('ERkP')),
+        r = n.n(i),
         o = n('+Kfv'),
-        c = n('es0u'),
-        s = n('LgBi'),
+        s = n('es0u'),
+        c = n('LgBi'),
         u = n('UZ0O'),
         m = n('1Idg'),
         d = n('eSoz'),
@@ -12345,27 +13389,27 @@
         w = h.a.ga2aa43c,
         T = { viewType: 'community' },
         K = { viewType: 'all' },
-        M = { viewType: 'moderators' },
-        x = i.a.memo(function (e) {
+        L = { viewType: 'moderators' },
+        M = r.a.memo(function (e) {
           var t = e.community,
             n = e.communityId,
             a = e.createLocalApiErrorHandler,
-            l = e.fetchCommunityIfNeeded,
+            i = e.fetchCommunityIfNeeded,
             m = e.history,
             d = e.location
-          i.a.useEffect(
+          r.a.useEffect(
             function () {
-              n && l(n).catch(a())
+              n && i(n).catch(a())
             },
-            [n, a, l],
+            [n, a, i],
           )
-          var y = i.a.useState(!1),
-            p = r()(y, 2),
+          var y = r.a.useState(!1),
+            p = l()(y, 2),
             g = p[0],
             f = p[1],
             h = (null == d ? void 0 : d.pathname) && d.pathname.indexOf('members') > 0,
-            x = h ? F : w,
-            R = i.a.useMemo(
+            M = h ? F : w,
+            x = r.a.useMemo(
               function () {
                 return n
                   ? [
@@ -12380,41 +13424,41 @@
               },
               [n, d.state],
             ),
-            L = n
-              ? i.a.createElement(
-                  i.a.Fragment,
+            R = n
+              ? r.a.createElement(
+                  r.a.Fragment,
                   null,
-                  i.a.createElement(u.a, { community: t, communityId: n, onIsSearchingChange: f }),
+                  r.a.createElement(u.a, { community: t, communityId: n, onIsSearchingChange: f }),
                   g
                     ? null
-                    : i.a.createElement(
-                        i.a.Fragment,
+                    : r.a.createElement(
+                        r.a.Fragment,
                         null,
-                        i.a.createElement(k.a, { accessibilityLabel: x, links: R }),
-                        i.a.createElement(
+                        r.a.createElement(k.a, { accessibilityLabel: M, links: x }),
+                        r.a.createElement(
                           C.d,
                           null,
-                          i.a.createElement(
+                          r.a.createElement(
                             C.b,
                             { exact: !0, path: '/i/communities/'.concat(n, '/members') },
-                            i.a.createElement(
+                            r.a.createElement(
                               o.a,
                               { behavioralEventContext: K },
-                              i.a.createElement(E.b, {
+                              r.a.createElement(E.b, {
                                 communityId: n,
                                 mode: E.a.Members,
                                 userRole: null == t ? void 0 : t.role,
                               }),
                             ),
                           ),
-                          i.a.createElement(
+                          r.a.createElement(
                             C.b,
                             { exact: !0, path: '/i/communities/'.concat(n, '/moderators') },
-                            i.a.createElement(
+                            r.a.createElement(
                               o.a,
-                              { behavioralEventContext: M },
-                              i.a.createElement(b.a, { community: t }),
-                              i.a.createElement(E.b, {
+                              { behavioralEventContext: L },
+                              r.a.createElement(b.a, { community: t }),
+                              r.a.createElement(E.b, {
                                 communityId: n,
                                 mode: E.a.Moderators,
                                 userRole: null == t ? void 0 : t.role,
@@ -12425,26 +13469,26 @@
                       ),
                 )
               : null
-          return i.a.createElement(
+          return r.a.createElement(
             o.a,
             { behavioralEventContext: T },
-            i.a.createElement(
+            r.a.createElement(
               v.a,
               { behavioralEventViewType: 'members' },
-              i.a.createElement(_.a, {
+              r.a.createElement(_.a, {
                 backLocation: n ? '/i/communities/'.concat(n, '/') : '/',
                 documentTitle: S,
                 history: m,
-                primaryContent: L,
-                rightControl: h && n ? i.a.createElement(s.a, { communityId: n }) : null,
-                sidebarContent: i.a.createElement(c.a, null),
+                primaryContent: R,
+                rightControl: h && n ? r.a.createElement(c.a, { communityId: n }) : null,
+                sidebarContent: r.a.createElement(s.a, null),
                 title: F,
               }),
             ),
           )
         }),
-        R = g(x)
-      t.default = R
+        x = g(M)
+      t.default = x
     },
     u0MR: function (e, t, n) {
       'use strict'
@@ -12453,13 +13497,13 @@
           return et
         })
       var a,
-        r,
-        l = n('VrFO'),
-        i = n.n(l),
+        l,
+        i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
-        c = n.n(o),
-        s = n('1Pcy'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('1Pcy'),
+        u = n.n(c),
         m = n('5Yy7'),
         d = n.n(m),
         y = n('2VqO'),
@@ -12492,31 +13536,31 @@
           })
           .withAnalytics({ page: 'communities' }),
         K = n('3XMw'),
-        M = n.n(K),
-        x = n('5oT/'),
-        R = n('/yvb'),
-        L = n('rHpw'),
+        L = n.n(K),
+        M = n('5oT/'),
+        x = n('/yvb'),
+        R = n('rHpw'),
         O = (n('enFi'), n('jAXQ')),
         A = n.n(O),
-        j = M.a.a226497c,
+        j = L.a.a226497c,
         P = b.a.memo(function (e) {
           return 'CommunityCreateAction' !== A()(void 0 !== a ? a : (a = n('zum0')), e.createActionResult).__typename
             ? null
-            : b.a.createElement(R.a, {
-                icon: b.a.createElement(x.a, { accessibilityLabel: j, style: D.createButton }),
+            : b.a.createElement(x.a, {
+                icon: b.a.createElement(M.a, { accessibilityLabel: j, style: D.createButton }),
                 link: '/i/communities/create',
                 size: 'medium',
                 type: 'brandText',
               })
         }),
-        D = L.a.create(function (e) {
+        D = R.a.create(function (e) {
           return { createButton: { color: e.colors.text, transform: 'rotate(45deg)' } }
         }),
         B = b.a.memo(P),
         H = n('Fr3L'),
         N = n('IAZG'),
         U = { context: 'CommunityCreateButton' },
-        z = void 0 !== r ? r : (r = n('S91Q')),
+        z = void 0 !== l ? l : (l = n('S91Q')),
         V = function (e) {
           var t,
             n =
@@ -12530,8 +13574,8 @@
         },
         W = b.a.memo(q),
         X = n('GOQE'),
-        J = (n('z84I'), n('M+/F'), n('yiKp')),
-        Q = n.n(J),
+        Q = (n('z84I'), n('M+/F'), n('yiKp')),
+        J = n.n(Q),
         G = (n('ho0z'), n('tVqn'), n('uFXj'), n('v6aA')),
         Y = n('YeIG'),
         Z = 'community-thumbnail-image',
@@ -12540,11 +13584,11 @@
         te = n('X00g'),
         ne = n('htQn'),
         ae = n('9Xij'),
-        re = n('TIdA'),
-        le = n('A91F'),
-        ie = n('t62R'),
+        le = n('TIdA'),
+        ie = n('A91F'),
+        re = n('t62R'),
         oe = { type: 'serversideContextKey', serversideContextType: 'community' },
-        ce = L.a.create(function (e) {
+        se = R.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.spaces.space4,
@@ -12555,7 +13599,7 @@
               borderRadius: e.borderRadii.large,
             },
             container: {
-              width: 'calc(('.concat(L.a.theme.spaces.space36, ' * 3) + ').concat(L.a.theme.spaces.space24, ')'),
+              width: 'calc(('.concat(R.a.theme.spaces.space36, ' * 3) + ').concat(R.a.theme.spaces.space24, ')'),
               borderRadius: e.borderRadii.large,
               overflow: 'hidden',
               borderWidth: e.borderWidths.small,
@@ -12564,53 +13608,53 @@
             name: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space8, width: '100%' },
           }
         }),
-        se = function (e) {
+        ce = function (e) {
           var t = b.a.useContext(G.a).featureSwitches.isTrue('c9s_ui_colors_enabled_rweb'),
             n = e.community,
             a = n.id_str,
-            r = n.media,
-            l = n.name,
-            i = n.theme,
+            l = n.media,
+            i = n.name,
+            r = n.theme,
             o = b.a.useMemo(
               function () {
-                return { clientEntity: Q()(Q()({}, oe), {}, { serversideContextId: a || '' }), viewType: 'thumbnail' }
+                return { clientEntity: J()(J()({}, oe), {}, { serversideContextId: a || '' }), viewType: 'thumbnail' }
               },
               [a],
             )
-          if (Object(Y.a)(null == r ? void 0 : r.image) || !l) return null
-          var c = null == r ? void 0 : r.image,
-            s = null == r ? void 0 : r.crop,
-            u = L.a.theme.aspectRatios.communityBanner,
-            m = t ? te.a.getCommunityBackgroundColor(i) : L.a.theme.colors.translucentBlack77
-          return c
+          if (Object(Y.a)(null == l ? void 0 : l.image) || !i) return null
+          var s = null == l ? void 0 : l.image,
+            c = null == l ? void 0 : l.crop,
+            u = R.a.theme.aspectRatios.communityBanner,
+            m = t ? te.a.getCommunityBackgroundColor(r) : R.a.theme.colors.translucentBlack77
+          return s
             ? b.a.createElement(
                 v.a,
                 { behavioralEventContext: o },
                 b.a.createElement(
                   ne.a,
-                  { link: '/i/communities/'.concat(a), style: ce.root },
+                  { link: '/i/communities/'.concat(a), style: se.root },
                   b.a.createElement(
                     ee.a,
-                    { style: ce.container },
+                    { style: se.container },
                     b.a.createElement(
                       ae.a,
                       { ratio: u },
-                      b.a.createElement(re.a, {
+                      b.a.createElement(le.a, {
                         accessibilityLabel: '',
-                        aspectMode: le.a.exact(u),
-                        backgroundColor: L.a.theme.colors.gray300,
-                        cropCandidates: s,
-                        image: c,
+                        aspectMode: ie.a.exact(u),
+                        backgroundColor: R.a.theme.colors.gray300,
+                        cropCandidates: c,
+                        image: s,
                         testID: Z,
                       }),
                     ),
                     b.a.createElement(
                       ee.a,
-                      { style: [ce.name, { backgroundColor: m }], testID: $ },
+                      { style: [se.name, { backgroundColor: m }], testID: $ },
                       b.a.createElement(
-                        ie.b,
+                        re.b,
                         { align: 'left', color: 'white', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
-                        l.trim(),
+                        i.trim(),
                       ),
                     ),
                   ),
@@ -12640,23 +13684,23 @@
         pe = n('kGix'),
         ge = n('6iuV'),
         fe = n('rC8y'),
-        he = M.a.d228a9a0,
+        he = L.a.d228a9a0,
         be = b.a.memo(function (e) {
           var t = e.communities,
             n = e.createLocalApiErrorHandler,
             a = e.fetchCommunityMemberships,
-            r = e.fetchStatus,
-            l = e.location.pathname
+            l = e.fetchStatus,
+            i = e.location.pathname
           b.a.useEffect(
             function () {
-              r === pe.a.NONE && a().catch(n())
+              l === pe.a.NONE && a().catch(n())
             },
-            [n, a, r],
+            [n, a, l],
           )
-          var i = b.a.useMemo(
+          var r = b.a.useMemo(
             function () {
               return t.slice(0, 10).map(function (e) {
-                return b.a.createElement(se, { community: e, key: e.id_str })
+                return b.a.createElement(ce, { community: e, key: e.id_str })
               })
             },
             [t],
@@ -12666,16 +13710,16 @@
             : b.a.createElement(
                 b.a.Fragment,
                 null,
-                b.a.createElement(ge.a, { style: [ve.paddingHorizontal, ve.bottomBorder] }, i),
+                b.a.createElement(ge.a, { style: [ve.paddingHorizontal, ve.bottomBorder] }, r),
                 t.length > 10 &&
                   b.a.createElement(
                     ee.a,
                     { style: ve.bottomBorder },
-                    b.a.createElement(fe.a, { link: '/'.concat(l, '/memberships'), text: he }),
+                    b.a.createElement(fe.a, { link: '/'.concat(i, '/memberships'), text: he }),
                   ),
               )
         }),
-        ve = L.a.create(function (e) {
+        ve = R.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground },
             paddingHorizontal: { paddingHorizontal: e.spaces.space4 },
@@ -12709,21 +13753,21 @@
         we = n('oQhu'),
         Te = n('7BdX'),
         Ke = n('fTQJ'),
-        Me = n('QRqA'),
-        xe = n('FIs5'),
-        Re = n('mw9i'),
-        Le = M.a.c63602d3,
-        Oe = M.a.d7346631,
-        Ae = M.a.fbd12fea,
+        Le = n('QRqA'),
+        Me = n('FIs5'),
+        xe = n('mw9i'),
+        Re = L.a.c63602d3,
+        Oe = L.a.d7346631,
+        Ae = L.a.fbd12fea,
         je = (function (e) {
           d()(n, e)
           var t = p()(n)
           function n() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
+            r()(this, n)
+            for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(r))),
+              (e = t.call.apply(t, [this].concat(l))),
               f()(u()(e), '_c9sParticipationEnabled', e.context.featureSwitches.isTrue('c9s_participation_enabled')),
               f()(
                 u()(e),
@@ -12733,13 +13777,13 @@
                 }),
               ),
               f()(u()(e), '_renderEmptyTimeline', function () {
-                return b.a.createElement(xe.a, { header: Oe, message: Ae })
+                return b.a.createElement(Me.a, { header: Oe, message: Ae })
               }),
               e
             )
           }
           return (
-            c()(n, [
+            s()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -12747,25 +13791,25 @@
                     t = e.hasCommunityMemberships,
                     n = e.history,
                     a = e.isLoggedInUser,
-                    r = e.location,
-                    l = this._getModule(),
-                    i = this._c9sParticipationEnabled && t ? b.a.createElement(Ie.a, { history: n }) : null
-                  return a && l
+                    l = e.location,
+                    i = this._getModule(),
+                    r = this._c9sParticipationEnabled && t ? b.a.createElement(Ie.a, { history: n }) : null
+                  return a && i
                     ? b.a.createElement(
                         b.a.Fragment,
                         null,
-                        b.a.createElement(Me.a, null),
+                        b.a.createElement(Le.a, null),
                         b.a.createElement(
                           Fe.a,
-                          { container: Re.a, fab: i },
-                          b.a.createElement(_e, { location: r }),
+                          { container: xe.a, fab: r },
+                          b.a.createElement(_e, { location: l }),
                           b.a.createElement(Ke.a, {
                             entryConfiguration: Se.a,
-                            module: l,
+                            module: i,
                             prerollDisplayLocation: Te.c.OTHER,
                             refreshControl: null,
                             renderEmptyState: this._renderEmptyTimeline,
-                            title: Le,
+                            title: Re,
                           }),
                         ),
                       )
@@ -12810,27 +13854,27 @@
           })
           .withAnalytics({ page: 'communities', section: 'memberships' }),
         Ue = n('yoO3'),
-        ze = M.a.c63602d3,
-        Ve = M.a.d7346631,
-        qe = M.a.hb01fe46,
+        ze = L.a.c63602d3,
+        Ve = L.a.d7346631,
+        qe = L.a.hb01fe46,
         We = Ne(
           (function (e) {
             d()(n, e)
             var t = p()(n)
             function n() {
               var e
-              i()(this, n)
-              for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
+              r()(this, n)
+              for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
               return (
-                (e = t.call.apply(t, [this].concat(r))),
+                (e = t.call.apply(t, [this].concat(l))),
                 f()(u()(e), '_renderEmptyState', function () {
-                  return e.props.isLoggedInUser ? b.a.createElement(xe.a, { header: Ve, message: qe }) : null
+                  return e.props.isLoggedInUser ? b.a.createElement(Me.a, { header: Ve, message: qe }) : null
                 }),
                 e
               )
             }
             return (
-              c()(n, [
+              s()(n, [
                 {
                   key: 'render',
                   value: function () {
@@ -12856,21 +13900,21 @@
           })(b.a.Component),
         ),
         Xe = n('5FtR'),
-        Je = n('Y6L+'),
-        Qe = n('VS6U'),
+        Qe = n('Y6L+'),
+        Je = n('VS6U'),
         Ge = n('zCf4'),
-        Ye = M.a.h02a6fe5,
-        Ze = M.a.c63602d3,
+        Ye = L.a.h02a6fe5,
+        Ze = L.a.c63602d3,
         $e = { viewType: 'communities' },
         et = (function (e) {
           d()(n, e)
           var t = p()(n)
           function n() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
+            r()(this, n)
+            for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(r))),
+              (e = t.call.apply(t, [this].concat(l))),
               f()(u()(e), '_renderRightControl', function () {
                 return b.a.createElement(
                   ee.a,
@@ -12883,36 +13927,36 @@
                 var t = e.props,
                   n = t.hasCommunityMemberships,
                   a = t.history,
-                  r = t.location,
-                  l = t.user,
-                  i = e._isLoggedInUser()
+                  l = t.location,
+                  i = t.user,
+                  r = e._isLoggedInUser()
                 return b.a.createElement(
                   Ge.d,
                   null,
                   b.a.createElement(
                     Ge.b,
-                    { exact: !0, path: '/'.concat(Je.J, '/communities') },
-                    b.a.createElement(Pe, { hasCommunityMemberships: n, history: a, isLoggedInUser: i, location: r }),
+                    { exact: !0, path: '/'.concat(Qe.J, '/communities') },
+                    b.a.createElement(Pe, { hasCommunityMemberships: n, history: a, isLoggedInUser: r, location: l }),
                   ),
                   b.a.createElement(
                     Ge.b,
-                    { exact: !0, path: '/'.concat(Je.J, '/communities/memberships') },
-                    b.a.createElement(We, { isLoggedInUser: i, user: l }),
+                    { exact: !0, path: '/'.concat(Qe.J, '/communities/memberships') },
+                    b.a.createElement(We, { isLoggedInUser: r, user: i }),
                   ),
                 )
               }),
               f()(u()(e), '_handleFetchUser', function (t) {
                 var n = t || e.props,
                   a = n.createLocalApiErrorHandler,
-                  r = n.fetchOneUserByScreenNameIfNeeded,
-                  l = n.screenName
-                l && r(l).catch(a(X.a))
+                  l = n.fetchOneUserByScreenNameIfNeeded,
+                  i = n.screenName
+                i && l(i).catch(a(X.a))
               }),
               e
             )
           }
           return (
-            c()(n, [
+            s()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -12942,7 +13986,7 @@
                     return b.a.createElement(
                       v.a,
                       { behavioralEventContext: $e },
-                      b.a.createElement(Qe.a, {
+                      b.a.createElement(Je.a, {
                         backLocation: '/',
                         history: e,
                         primaryContent: this._renderPrimaryContent(),
@@ -12960,7 +14004,7 @@
           )
         })(b.a.Component)
       f()(et, 'contextType', G.a)
-      var tt = L.a.create(function (e) {
+      var tt = R.a.create(function (e) {
           return { rightControl: { color: e.colors.text, display: 'flex', flexDirection: 'row' } }
         }),
         nt = T(et)
@@ -12969,13 +14013,13 @@
     uI9t: function (e, t, n) {
       'use strict'
       var a = n('VrFO'),
-        r = n.n(a),
-        l = n('Y9Ll'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('Y9Ll'),
+        r = n.n(i),
         o = n('5Yy7'),
-        c = n.n(o),
-        s = n('2VqO'),
-        u = n.n(s),
+        s = n.n(o),
+        c = n('2VqO'),
+        u = n.n(c),
         m = n('KEM+'),
         d = n.n(m),
         y = (n('z84I'), n('ERkP')),
@@ -12992,14 +14036,14 @@
         S = n('x0mb'),
         F = n('IMYl'),
         I = (function (e) {
-          c()(n, e)
+          s()(n, e)
           var t = u()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var a = arguments.length, l = new Array(a), i = 0; i < a; i++) l[i] = arguments[i]
+            l()(this, n)
+            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
+              (e = t.call.apply(t, [this].concat(i))),
               d()(b()(e), '_radioRef', p.a.createRef()),
               d()(b()(e), '_handleChange', function () {
                 var t = e.props,
@@ -13010,7 +14054,7 @@
             )
           }
           return (
-            i()(n, [
+            r()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -13024,24 +14068,24 @@
                     t = e.accessibilityLabel,
                     n = e.colorName,
                     a = e.isSelected,
-                    r = e.name,
-                    l = e.style,
-                    i = k.a.theme.colors[n],
+                    l = e.name,
+                    i = e.style,
+                    r = k.a.theme.colors[n],
                     o = v.a.generate({
                       backgroundColor: k.a.theme.colors.transparent,
-                      color: i,
+                      color: r,
                       withFocusWithinFocusRing: !0,
                     })
                   return p.a.createElement(
                     C.a,
-                    { style: [w.container, l] },
+                    { style: [w.container, i] },
                     p.a.createElement(
                       _.a,
                       { accessibilityRole: 'label', interactiveStyles: o, style: [w.choice, w.choiceContainer] },
-                      p.a.createElement(S.a, { style: [w.choice, { color: i }] }),
+                      p.a.createElement(S.a, { style: [w.choice, { color: r }] }),
                       Object(E.a)('input', {
                         accessibilityLabel: t,
-                        name: r,
+                        name: l,
                         checked: a,
                         onChange: this._handleChange,
                         ref: this._radioRef,
@@ -13053,7 +14097,7 @@
                       p.a.createElement(
                         C.a,
                         { style: [w.choice, w.checkMarkContainer] },
-                        p.a.createElement(F.a, { style: [w.choiceSelected, { backgroundColor: i }] }),
+                        p.a.createElement(F.a, { style: [w.choiceSelected, { backgroundColor: r }] }),
                       ),
                   )
                 },
@@ -13082,15 +14126,15 @@
         }),
         T = I,
         K = 1,
-        M = (function (e) {
-          c()(n, e)
+        L = (function (e) {
+          s()(n, e)
           var t = u()(n)
           function n() {
             var e
-            return r()(this, n), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(K, '_LABEL')), (K += 1), e
+            return l()(this, n), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(K, '_LABEL')), (K += 1), e
           }
           return (
-            i()(n, [
+            r()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -13098,27 +14142,27 @@
                     t = this.props,
                     n = t.accessibilityLabel,
                     a = t.autoFocus,
-                    r = t.layout,
-                    l = t.onChange,
-                    i = t.options,
+                    l = t.layout,
+                    i = t.onChange,
+                    r = t.options,
                     o = t.value,
-                    c = 'two-rows' === r,
-                    s = [x.root, c && x.flexWrap],
-                    u = c ? { width: ''.concat((2 / i.length) * 100, '%') } : void 0
+                    s = 'two-rows' === l,
+                    c = [M.root, s && M.flexWrap],
+                    u = s ? { width: ''.concat((2 / r.length) * 100, '%') } : void 0
                   return p.a.createElement(
                     C.a,
-                    { accessibilityLabel: n, accessibilityRole: 'radiogroup', style: s },
-                    i.map(function (t) {
+                    { accessibilityLabel: n, accessibilityRole: 'radiogroup', style: c },
+                    r.map(function (t) {
                       var n = t.accessibilityLabel,
-                        r = t.colorName
+                        l = t.colorName
                       return p.a.createElement(T, {
                         accessibilityLabel: n,
-                        autoFocus: a && o === r,
-                        colorName: r,
-                        isSelected: o === r,
-                        key: r,
+                        autoFocus: a && o === l,
+                        colorName: l,
+                        isSelected: o === l,
+                        key: l,
                         name: e._colorPickerId,
-                        onChange: l,
+                        onChange: i,
                         style: u,
                       })
                     }),
@@ -13129,29 +14173,29 @@
             n
           )
         })(p.a.Component)
-      d()(M, 'defaultProps', { layout: 'one-row' })
-      var x = k.a.create(function (e) {
+      d()(L, 'defaultProps', { layout: 'one-row' })
+      var M = k.a.create(function (e) {
         return { root: { flexDirection: 'row', justifyContent: 'space-around' }, flexWrap: { flexWrap: 'wrap' } }
       })
-      t.a = M
+      t.a = L
     },
     ulNE: function (e, t, n) {
       'use strict'
       var a = n('ax0f'),
-        r = n('42ly'),
-        l = n('N9G2'),
-        i = n('BIH/'),
+        l = n('42ly'),
+        i = n('N9G2'),
+        r = n('BIH/'),
         o = n('lhaq'),
-        c = n('aoZ+')
+        s = n('aoZ+')
       a(
         { target: 'Array', proto: !0 },
         {
           flat: function () {
             var e = arguments.length ? arguments[0] : void 0,
-              t = l(this),
-              n = i(t),
-              a = c(t, 0)
-            return (a.length = r(a, t, t, n, 0, void 0 === e ? 1 : o(e))), a
+              t = i(this),
+              n = r(t),
+              a = s(t, 0)
+            return (a.length = l(a, t, t, n, 0, void 0 === e ? 1 : o(e))), a
           },
         },
       )
@@ -13163,12 +14207,12 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
         i,
+        r,
         o,
-        c,
         s,
+        c,
         u = {
           fragment: {
             argumentDefinitions: (a = [
@@ -13182,7 +14226,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -13193,7 +14237,7 @@
                 selections: [
                   {
                     alias: 'moderators_slice',
-                    args: [(l = { kind: 'Variable', name: 'count', variableName: 'count' })],
+                    args: [(i = { kind: 'Variable', name: 'count', variableName: 'count' })],
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: '__CommunityModerators_Query_moderators_slice_slice',
@@ -13212,7 +14256,7 @@
                             kind: 'FragmentSpread',
                             name: 'communityPeopleSliceItem_userResult',
                           },
-                          (i = {
+                          (r = {
                             kind: 'ClientExtension',
                             selections: [
                               { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
@@ -13252,7 +14296,7 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
@@ -13260,7 +14304,7 @@
                 selections: [
                   {
                     alias: null,
-                    args: (c = [l, { kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
+                    args: (s = [i, { kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: 'moderators_slice',
@@ -13286,7 +14330,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (s = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                  (c = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                                   {
                                     alias: null,
                                     args: [{ kind: 'Variable', name: 'community_id', variableName: 'communityId' }],
@@ -13364,7 +14408,7 @@
                             ],
                             storageKey: null,
                           },
-                          i,
+                          r,
                         ],
                         storageKey: null,
                       },
@@ -13374,7 +14418,7 @@
                   },
                   {
                     alias: null,
-                    args: c,
+                    args: s,
                     filters: ['count'],
                     handle: 'slice',
                     key: 'CommunityModerators_Query_moderators_slice',
@@ -13382,7 +14426,7 @@
                     name: 'moderators_slice',
                     handleArgs: [{ kind: 'Literal', name: 'itemsFieldName', value: 'items_results' }],
                   },
-                  s,
+                  c,
                 ],
                 storageKey: null,
               },
@@ -13398,6 +14442,25 @@
         }
       ;(u.hash = '826c736bcf5ab4ef9f03b7a814b87dec'), (t.default = u)
     },
+    'weg/': function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'CommunityDetailFacePile_community',
+        selections: [
+          { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null },
+          { args: null, kind: 'FragmentSpread', name: 'CommunityFacePile_community' },
+          { args: null, kind: 'FragmentSpread', name: 'CommunityMemberCount_community' },
+        ],
+        type: 'Community',
+        abstractKey: null,
+        hash: 'f7e39a44a3d05288497e302dba9f17fd',
+      }
+      t.default = a
+    },
     xPe1: function (e, t, n) {
       'use strict'
       n.r(t),
@@ -13406,12 +14469,12 @@
         })
       n('KqXw'), n('WNMA'), n('1t7P'), n('jQ/y'), n('ho0z')
       var a = n('ERkP'),
-        r = n.n(a),
-        l = n('v6aA'),
-        i = n('rxPX'),
-        o = Object(i.a)().withAnalytics({ page: 'communities', section: 'settings' }),
-        c = n('ddV6'),
-        s = n.n(c),
+        l = n.n(a),
+        i = n('v6aA'),
+        r = n('rxPX'),
+        o = Object(r.a)().withAnalytics({ page: 'communities', section: 'settings' }),
+        s = n('ddV6'),
+        c = n.n(s),
         u = n('jTgF'),
         m = n('AspN'),
         d = n('eSoz'),
@@ -13419,9 +14482,9 @@
         p = function (e, t) {
           var n = t.localMediaId,
             a = n && isFinite(n) ? m.k(e, n) : []
-          return s()(a, 1)[0]
+          return c()(a, 1)[0]
         },
-        g = Object(i.a)()
+        g = Object(r.a)()
           .propsFromState(function () {
             return { localMedia: p }
           })
@@ -13454,10 +14517,10 @@
         w = n('4zmP'),
         T = n('eb3s'),
         K = h.a.a49f884d,
-        M = h.a.ea965b81,
-        x = h.a.gea6cc19,
-        R = h.a.cfd2f35d,
-        L = h.a.j35d3ad6,
+        L = h.a.ea965b81,
+        M = h.a.gea6cc19,
+        x = h.a.cfd2f35d,
+        R = h.a.j35d3ad6,
         O = h.a.f1e8fb21,
         A = h.a.fc2a5c92,
         j = h.a.e405ec21
@@ -13471,30 +14534,30 @@
           var t = e.addLocalMediaId,
             n = e.communityId,
             a = e.createLocalApiErrorHandler,
-            l = e.editCommunityBanner,
-            i = e.hasCustomMedia,
+            i = e.editCommunityBanner,
+            r = e.hasCustomMedia,
             o = e.localMedia,
-            c = e.localMediaId,
+            s = e.localMediaId,
             m = e.media,
             d = e.removeBanner,
             y = e.removeLocalMediaId,
-            p = r.a.useState(!1),
-            g = s()(p, 2),
+            p = l.a.useState(!1),
+            g = c()(p, 2),
             f = g[0],
             h = g[1],
-            _ = r.a.useState(!1),
-            P = s()(_, 2),
+            _ = l.a.useState(!1),
+            P = c()(_, 2),
             D = P[0],
             B = P[1],
-            N = r.a.useState(!1),
-            U = s()(N, 2),
+            N = l.a.useState(!1),
+            U = c()(N, 2),
             z = U[0],
             V = U[1],
-            q = r.a.useState(!1),
-            W = s()(q, 2),
+            q = l.a.useState(!1),
+            W = c()(q, 2),
             X = W[0],
-            J = W[1],
-            Q = null == m ? void 0 : m.image,
+            Q = W[1],
+            J = null == m ? void 0 : m.image,
             G = S.a.theme.aspectRatios.communityBanner,
             Y = a({
               customErrorHandler: function (e) {
@@ -13502,49 +14565,49 @@
               },
             }),
             Z = function (e) {
-              return V(!1), J(Boolean(e)), e ? t(n, e) : y(n)
+              return V(!1), Q(Boolean(e)), e ? t(n, e) : y(n)
             },
-            $ = Q ? r.a.createElement(F.a, { accessibilityLabel: K, aspectMode: I.a.exact(G), image: Q }) : null
-          return r.a.createElement(
-            r.a.Fragment,
+            $ = J ? l.a.createElement(F.a, { accessibilityLabel: K, aspectMode: I.a.exact(G), image: J }) : null
+          return l.a.createElement(
+            l.a.Fragment,
             null,
             D
-              ? r.a.createElement(
+              ? l.a.createElement(
                   C.a,
                   { style: H.error },
-                  r.a.createElement(w.a, { Icon: b.a, headline: A, text: D, type: 'danger' }),
+                  l.a.createElement(w.a, { Icon: b.a, headline: A, text: D, type: 'danger' }),
                 )
               : null,
-            r.a.createElement(k, {
-              accessibilityLabel: M,
+            l.a.createElement(k, {
+              accessibilityLabel: L,
               aspectRatio: G,
               currentContent: $,
               location: E.d.CommunityBanner,
               mediaItem: z ? o : void 0,
               onChange: function (e) {
-                var t = s()(e, 1)[0]
+                var t = c()(e, 1)[0]
                 B(!1), Z(t)
               },
               onFailure: function () {
                 B(j), y(n)
               },
               onRemove:
-                i || z
+                r || z
                   ? function () {
                       Z(), h(!0)
                     }
                   : void 0,
             }),
             X && o
-              ? r.a.createElement(v.a, {
+              ? l.a.createElement(v.a, {
                   aspectRatio: G,
                   media: o,
                   onCancel: Z,
                   onCropDone: function (e) {
-                    J(!1),
-                      c
+                    Q(!1),
+                      s
                         ? (V(!0),
-                          l(n, { mediaId: c, cropData: e }).catch(function (e) {
+                          i(n, { mediaId: s, cropData: e }).catch(function (e) {
                             Z(), Object(u.a)(e) ? B(j) : Y(e)
                           }))
                         : B(j)
@@ -13552,11 +14615,11 @@
                 })
               : null,
             f
-              ? r.a.createElement(T.a, {
-                  cancelButtonLabel: R,
-                  confirmButtonLabel: L,
+              ? l.a.createElement(T.a, {
+                  cancelButtonLabel: x,
+                  confirmButtonLabel: R,
                   confirmButtonType: 'destructiveFilled',
-                  headline: x,
+                  headline: M,
                   onCancel: function () {
                     h(!1)
                   },
@@ -13568,7 +14631,7 @@
               : null,
           )
         }),
-        U = Object(i.a)()
+        U = Object(r.a)()
           .propsFromActions(function () {
             return {
               editAccess: d.c.editAccess,
@@ -13586,37 +14649,37 @@
           { label: h.a.fd00a769, value: 'Public', helpText: h.a.d0784408 },
           { label: h.a.ce0523a8, value: 'Closed', helpText: h.a.ccfafe8c },
         ],
-        J = U(function (e) {
+        Q = U(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.editAccess,
-            l = e.history,
-            i = t.id_str,
-            o = r.a.useState(t.access),
-            c = s()(o, 2),
-            u = c[0],
-            m = c[1],
-            d = r.a.useCallback(
+            i = e.history,
+            r = t.id_str,
+            o = l.a.useState(t.access),
+            s = c()(o, 2),
+            u = s[0],
+            m = s[1],
+            d = l.a.useCallback(
               function () {
-                a(i, { access: u })
+                a(r, { access: u })
                   .then(function () {
-                    l.goBack({ backLocation: '/i/communities/'.concat(i, '/tools/settings') })
+                    i.goBack({ backLocation: '/i/communities/'.concat(r, '/tools/settings') })
                   })
                   .catch(n({ showToast: !0 }))
               },
-              [i, u, a, l, n],
+              [r, u, a, i, n],
             ),
             y = u !== t.access
-          return r.a.createElement(
+          return l.a.createElement(
             z.a,
             null,
-            r.a.createElement(
+            l.a.createElement(
               V.a,
-              { communityId: i, onSubmit: d, submitDisabled: !y, title: W },
-              r.a.createElement(
+              { communityId: r, onSubmit: d, submitDisabled: !y, title: W },
+              l.a.createElement(
                 C.a,
-                { style: Q.root },
-                r.a.createElement(q.a, {
+                { style: J.root },
+                l.a.createElement(q.a, {
                   name: 'membershipSetting',
                   onChange: function (e, t) {
                     m(t)
@@ -13628,7 +14691,7 @@
             ),
           )
         }),
-        Q = S.a.create(function (e) {
+        J = S.a.create(function (e) {
           return { root: { paddingBottom: e.spaces.space12 } }
         }),
         G = n('n0Rl'),
@@ -13639,8 +14702,8 @@
         te = (n('enFi'), n('9SqB')),
         ne = n.n(te),
         ae = void 0 !== P ? P : (P = n('tFuX')),
-        re = void 0 !== D ? D : (D = n('pd/v')),
-        le = function (e) {
+        le = void 0 !== D ? D : (D = n('pd/v')),
+        ie = function (e) {
           if ('Community' === (null == e ? void 0 : e.__typename)) {
             var t
             switch (e.membership_settings.__typename) {
@@ -13657,10 +14720,10 @@
             return { id_str: e.id_str, access: e.access, membership_settings: t }
           }
         },
-        ie = n('zCf4'),
+        re = n('zCf4'),
         oe = n('Hsf0'),
-        ce = n.n(oe),
-        se = void 0 !== B ? B : (B = n('tnnC'))
+        se = n.n(oe),
+        ce = void 0 !== B ? B : (B = n('tnnC'))
       var ue,
         me,
         de = n('jAXQ'),
@@ -13675,10 +14738,10 @@
           var t,
             n,
             a,
-            l,
             i,
+            r,
             o,
-            c,
+            s,
             u,
             m,
             p,
@@ -13690,7 +14753,7 @@
             E = k.membership_settings,
             S = k.rest_id,
             F = (function (e) {
-              var t = ce()(se, e)
+              var t = se()(ce, e)
               switch (t.__typename) {
                 case $.a.Restricted:
                   return { access: $.a.Restricted, invitesPolicy: t.invites_policy }
@@ -13700,116 +14763,116 @@
                   throw new Error('Unhandled membership type '.concat(t.__typename))
               }
             })(E),
-            I = r.a.useState(),
-            K = s()(I, 2),
-            M = K[0],
-            x = K[1],
-            R =
+            I = l.a.useState(),
+            K = c()(I, 2),
+            L = K[0],
+            M = K[1],
+            x =
               ((t = ne()(ae)),
-              (n = s()(t, 2)),
+              (n = c()(t, 2)),
               (a = n[0]),
-              (l = n[1]),
-              (i = ne()(re)),
-              (o = s()(i, 2)),
-              (c = o[0]),
+              (i = n[1]),
+              (r = ne()(le)),
+              (o = c()(r, 2)),
+              (s = o[0]),
               (u = o[1]),
               (m = Object(Z.c)()),
-              r.a.useCallback(
+              l.a.useCallback(
                 function (e, t) {
-                  return l || u
+                  return i || u
                     ? Promise.reject(new Error('Already updating membership settings'))
-                    : new Promise(function (n, r) {
-                        var l = t.access,
-                          i = t.invitesPolicy
-                        l === $.a.Open
+                    : new Promise(function (n, l) {
+                        var i = t.access,
+                          r = t.invitesPolicy
+                        i === $.a.Open
                           ? a({
                               variables: { communityId: e, openMembershipSettings: {} },
                               onCompleted: function (e) {
-                                var t = le(e.community_membership_settings_open_update)
+                                var t = ie(e.community_membership_settings_open_update)
                                 t && m(d.c.updateOne(t.id_str, t)), n()
                               },
-                              onError: r,
+                              onError: l,
                             })
-                          : l === $.a.Restricted &&
-                            c({
+                          : i === $.a.Restricted &&
+                            s({
                               variables: {
                                 communityId: e,
-                                restrictedMembershipSettings: { invites_policy: i, join_approval_policy: ee.Moderator },
+                                restrictedMembershipSettings: { invites_policy: r, join_approval_policy: ee.Moderator },
                               },
                               onCompleted: function (e) {
-                                var t = le(e.community_membership_settings_restricted_update)
+                                var t = ie(e.community_membership_settings_restricted_update)
                                 t && m(d.c.updateOne(t.id_str, t)), n()
                               },
-                              onError: r,
+                              onError: l,
                             })
                       })
                 },
-                [a, c, m, l, u],
+                [a, s, m, i, u],
               )),
-            L = Object(ie.f)(),
-            O = r.a.useState(),
-            A = s()(O, 2),
+            R = Object(re.f)(),
+            O = l.a.useState(),
+            A = c()(O, 2),
             j = A[0],
             P = A[1],
             D = Object(y.useCreateLocalApiErrorHandler)('COMMUNITY_SETTINGS_EDIT_MEMBERSHIP_TYPE'),
             B = Object($.e)(F),
-            H = s()(B, 2),
+            H = c()(B, 2),
             N = H[0],
             U = H[1],
-            z = r.a.useCallback(
+            z = l.a.useCallback(
               function () {
                 var e = D({
                   customErrorHandler: function (e) {
-                    var t = s()(e.errors, 1)[0],
+                    var t = c()(e.errors, 1)[0],
                       n = t.code === Y.a.GenericBadRequest && t.message ? t.message : be
                     return P(n), []
                   },
                 })
-                R(S, N)
+                x(S, N)
                   .then(function () {
-                    L.goBack({ backLocation: '/i/communities/'.concat(S, '/tools/settings') })
+                    R.goBack({ backLocation: '/i/communities/'.concat(S, '/tools/settings') })
                   })
                   .catch(e)
               },
-              [S, D, L, N, R],
+              [S, D, R, N, x],
             ),
-            q = r.a.useCallback(
+            q = l.a.useCallback(
               function () {
                 var e = (function (e, t) {
                   if (e.access === $.a.Restricted && t.access === $.a.Open) return h.a.daedd9fa
                 })(F, N)
-                e ? x(e) : z()
+                e ? M(e) : z()
               },
               [F, N, z],
             ),
-            W = r.a.useCallback(function () {
-              return x(void 0)
+            W = l.a.useCallback(function () {
+              return M(void 0)
             }, []),
             X =
               ((g = N),
               (f = (p = F).access !== g.access),
               (v = p.access === $.a.Restricted && p.invitesPolicy !== g.invitesPolicy),
               !(f || v)),
-            J = j
-              ? r.a.createElement(
+            Q = j
+              ? l.a.createElement(
                   C.a,
                   { style: ke.error },
-                  r.a.createElement(w.a, { Icon: b.a, headline: he, text: j, type: 'danger' }),
+                  l.a.createElement(w.a, { Icon: b.a, headline: he, text: j, type: 'danger' }),
                 )
               : void 0
-          return r.a.createElement(
+          return l.a.createElement(
             V.a,
             { communityId: S, onSubmit: q, submitDisabled: X, title: pe },
-            J,
-            r.a.createElement($.d, { setters: U, state: N }),
-            M &&
-              r.a.createElement(T.a, {
+            Q,
+            l.a.createElement($.d, { setters: U, state: N }),
+            L &&
+              l.a.createElement(T.a, {
                 confirmButtonLabel: ge,
                 confirmButtonType: 'primary',
                 headline: fe,
                 onCancel: W,
                 onConfirm: z,
-                text: M,
+                text: L,
               }),
           )
         },
@@ -13821,17 +14884,17 @@
         Se = Object(G.b)(Ce, { errorConfig: { context: 'COMMUNITY_EDIT_MEMBERSHIP_SCREEN' } }),
         Fe = function (e) {
           var t = { communityId: e.communityId }
-          return r.a.createElement(Se, {
+          return l.a.createElement(Se, {
             render: function (e) {
               var t = e.data,
                 n = (e.error, e.fetchStatus),
                 a = e.retry,
-                l = null == t ? void 0 : t.community
-              return r.a.createElement(Ee.a, {
+                i = null == t ? void 0 : t.community
+              return l.a.createElement(Ee.a, {
                 fetchStatus: n,
                 onRequestRetry: a,
                 render: function () {
-                  return l ? r.a.createElement(_e, { community: l }) : null
+                  return i ? l.a.createElement(_e, { community: i }) : null
                 },
                 retryable: !0,
               })
@@ -13840,7 +14903,7 @@
           })
         },
         Ie = n('ROT1'),
-        we = Object(i.a)()
+        we = Object(r.a)()
           .propsFromActions(function () {
             return {
               editName: d.c.editName,
@@ -13852,60 +14915,60 @@
           .withAnalytics({ page: 'communities', section: 'edit_name' }),
         Te = h.a.h3c0f1a2,
         Ke = h.a.fc2a5c92,
-        Me = h.a.cb5e6510
-      var xe = S.a.create(function (e) {
+        Le = h.a.cb5e6510
+      var Me = S.a.create(function (e) {
           return { error: { paddingTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }
         }),
-        Re = we(function (e) {
+        xe = we(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.editName,
-            l = e.history,
-            i = t.id_str,
+            i = e.history,
+            r = t.id_str,
             o = t.name,
-            c = r.a.useState(o),
-            u = s()(c, 2),
+            s = l.a.useState(o),
+            u = c()(s, 2),
             m = u[0],
             d = u[1],
-            y = r.a.useState(!1),
-            p = s()(y, 2),
+            y = l.a.useState(!1),
+            p = c()(y, 2),
             g = p[0],
             f = p[1],
-            h = r.a.useState(void 0),
-            v = s()(h, 2),
+            h = l.a.useState(void 0),
+            v = c()(h, 2),
             _ = v[0],
             k = v[1],
-            E = r.a.useCallback(
+            E = l.a.useCallback(
               function () {
                 var e = n({
                   customErrorHandler: function (e) {
-                    var t = s()(e.errors, 1)[0],
-                      n = t.code === Y.a.GenericBadRequest && t.message ? t.message : Me
+                    var t = c()(e.errors, 1)[0],
+                      n = t.code === Y.a.GenericBadRequest && t.message ? t.message : Le
                     return k(n), f(!0), []
                   },
                 })
-                a(i, { name: m })
+                a(r, { name: m })
                   .then(function () {
-                    l.goBack({ backLocation: '/i/communities/'.concat(i, '/tools/settings') })
+                    i.goBack({ backLocation: '/i/communities/'.concat(r, '/tools/settings') })
                   })
                   .catch(e)
               },
-              [i, m, a, l, n],
+              [r, m, a, i, n],
             )
-          return r.a.createElement(
+          return l.a.createElement(
             z.a,
             null,
-            r.a.createElement(
+            l.a.createElement(
               V.a,
-              { communityId: i, onSubmit: E, submitDisabled: g, title: Te },
+              { communityId: r, onSubmit: E, submitDisabled: g, title: Te },
               _
-                ? r.a.createElement(
+                ? l.a.createElement(
                     C.a,
-                    { style: xe.error },
-                    r.a.createElement(w.a, { Icon: b.a, headline: Ke, text: _, type: 'danger' }),
+                    { style: Me.error },
+                    l.a.createElement(w.a, { Icon: b.a, headline: Ke, text: _, type: 'danger' }),
                   )
                 : void 0,
-              r.a.createElement(Ie.a, {
+              l.a.createElement(Ie.a, {
                 autoFocus: !0,
                 communityName: m,
                 onChange: function (e, t) {
@@ -13915,8 +14978,8 @@
             ),
           )
         }),
-        Le = n('U0Qk'),
-        Oe = Object(i.a)()
+        Re = n('U0Qk'),
+        Oe = Object(r.a)()
           .propsFromActions(function () {
             return {
               editPurpose: d.c.editPurpose,
@@ -13936,52 +14999,52 @@
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.editPurpose,
-            l = e.history,
-            i = t.description,
+            i = e.history,
+            r = t.description,
             o = t.id_str,
-            c = r.a.useState(i || ''),
-            u = s()(c, 2),
+            s = l.a.useState(r || ''),
+            u = c()(s, 2),
             m = u[0],
             d = u[1],
-            y = r.a.useState(!1),
-            p = s()(y, 2),
+            y = l.a.useState(!1),
+            p = c()(y, 2),
             g = p[0],
             f = p[1],
-            h = r.a.useState(void 0),
-            v = s()(h, 2),
+            h = l.a.useState(void 0),
+            v = c()(h, 2),
             _ = v[0],
             k = v[1],
-            E = r.a.useCallback(
+            E = l.a.useCallback(
               function () {
                 var e = n({
                   customErrorHandler: function (e) {
-                    var t = s()(e.errors, 1)[0],
+                    var t = c()(e.errors, 1)[0],
                       n = t.code === Y.a.GenericBadRequest && t.message ? t.message : Pe
                     return k(n), f(!0), []
                   },
                 })
                 a(o, { purpose: m })
                   .then(function () {
-                    l.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/settings') })
+                    i.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/settings') })
                   })
                   .catch(e)
               },
-              [o, m, a, l, n],
+              [o, m, a, i, n],
             )
-          return r.a.createElement(
+          return l.a.createElement(
             z.a,
             null,
-            r.a.createElement(
+            l.a.createElement(
               V.a,
               { communityId: o, onSubmit: E, submitDisabled: g, title: Ae },
               _
-                ? r.a.createElement(
+                ? l.a.createElement(
                     C.a,
                     { style: De.error },
-                    r.a.createElement(w.a, { Icon: b.a, headline: je, text: _, type: 'danger' }),
+                    l.a.createElement(w.a, { Icon: b.a, headline: je, text: _, type: 'danger' }),
                   )
                 : void 0,
-              r.a.createElement(Le.a, {
+              l.a.createElement(Re.a, {
                 autoFocus: !0,
                 communityPurpose: m,
                 onChange: function (e, t) {
@@ -13999,8 +15062,8 @@
         qe = n('6vad'),
         We = n('csss'),
         Xe = n('0yYu'),
-        Je = h.a.bb081ea1,
-        Qe = h.a.h3e55b40,
+        Qe = h.a.bb081ea1,
+        Je = h.a.h3e55b40,
         Ge = h.a.j8af8ea9,
         Ye = h.a.d5f01115,
         Ze = h.a.c3c04b70,
@@ -14009,22 +15072,22 @@
         tt = h.a.f713fbd1,
         nt = function (e) {
           var t = e.children
-          return r.a.createElement(ze.b, { color: 'gray700', size: 'subtext2' }, t)
+          return l.a.createElement(ze.b, { color: 'gray700', size: 'subtext2' }, t)
         },
         at = function (e) {
           var t = e.community,
             n = e.history,
             a = e.match,
-            i = t.access,
+            r = t.access,
             o = t.description,
-            c = t.hasCustomMedia,
-            s = t.id_str,
+            s = t.hasCustomMedia,
+            c = t.id_str,
             u = t.localMediaId,
             m = t.media,
             d = t.membership_settings,
             y = t.name,
             p = t.theme,
-            g = r.a.useContext(l.a).featureSwitches,
+            g = l.a.useContext(i.a).featureSwitches,
             f = g.isTrue('c9s_edit_community_name_enabled'),
             h = g.isTrue('c9s_edit_community_description_enabled'),
             b = g.isTrue('c9s_edit_community_membership_settings_enabled'),
@@ -14032,84 +15095,84 @@
             _ = g.isTrue('c9s_edit_community_banner_enabled'),
             k = g.isTrue('c9s_edit_community_theme_enabled'),
             E = a.url,
-            C = r.a.useMemo(
+            C = l.a.useMemo(
               function () {
-                return v ? (d.__typename === $.a.Open ? $e.Public : $e.Closed) : $e[i]
+                return v ? (d.__typename === $.a.Open ? $e.Public : $e.Closed) : $e[r]
               },
-              [i, v, d.__typename],
+              [r, v, d.__typename],
             ),
             S = Object(He.e)(t),
             F = Ve.a.getCommunityThemeDisplayName(S),
             I = Ve.a.getCommunityBackgroundColor(p)
-          return r.a.createElement(
-            ie.d,
+          return l.a.createElement(
+            re.d,
             null,
             f
-              ? r.a.createElement(
-                  ie.b,
+              ? l.a.createElement(
+                  re.b,
                   { exact: !0, path: ''.concat(E, '/name') },
-                  r.a.createElement(Re, { community: t, history: n }),
+                  l.a.createElement(xe, { community: t, history: n }),
                 )
               : null,
             h
-              ? r.a.createElement(
-                  ie.b,
+              ? l.a.createElement(
+                  re.b,
                   { exact: !0, path: ''.concat(E, '/purpose') },
-                  r.a.createElement(Be, { community: t, history: n }),
+                  l.a.createElement(Be, { community: t, history: n }),
                 )
               : null,
             v
-              ? r.a.createElement(
-                  ie.b,
+              ? l.a.createElement(
+                  re.b,
                   { exact: !0, path: ''.concat(E, '/membership') },
-                  r.a.createElement(Fe, { communityId: s }),
+                  l.a.createElement(Fe, { communityId: c }),
                 )
               : b
-              ? r.a.createElement(
-                  ie.b,
+              ? l.a.createElement(
+                  re.b,
                   { exact: !0, path: ''.concat(E, '/membership') },
-                  r.a.createElement(J, { community: t, history: n }),
+                  l.a.createElement(Q, { community: t, history: n }),
                 )
               : null,
-            r.a.createElement(
-              ie.b,
+            l.a.createElement(
+              re.b,
               { exact: !0, path: ''.concat(E, '/') },
-              r.a.createElement(
+              l.a.createElement(
                 z.a,
                 null,
-                r.a.createElement(
+                l.a.createElement(
                   V.a,
-                  { communityId: s, screenType: 'primaryDetail', title: Je },
-                  _ ? r.a.createElement(N, { communityId: s, hasCustomMedia: c, localMediaId: u, media: m }) : null,
-                  r.a.createElement(qe.b, { text: et }),
-                  r.a.createElement(We.a, {
-                    description: r.a.createElement(nt, null, y),
-                    label: Qe,
+                  { communityId: c, screenType: 'primaryDetail', title: Qe },
+                  _ ? l.a.createElement(N, { communityId: c, hasCustomMedia: s, localMediaId: u, media: m }) : null,
+                  l.a.createElement(qe.b, { text: et }),
+                  l.a.createElement(We.a, {
+                    description: l.a.createElement(nt, null, y),
+                    label: Je,
                     link: f ? ''.concat(E, '/name') : void 0,
                   }),
-                  r.a.createElement(We.a, {
-                    description: o ? r.a.createElement(nt, null, o) : void 0,
+                  l.a.createElement(We.a, {
+                    description: o ? l.a.createElement(nt, null, o) : void 0,
                     label: Ye,
                     link: h ? ''.concat(E, '/purpose') : void 0,
                   }),
                   k
-                    ? r.a.createElement(We.a, {
-                        description: r.a.createElement(nt, null, F),
+                    ? l.a.createElement(We.a, {
+                        description: l.a.createElement(nt, null, F),
                         label: Ze,
                         link: k ? ''.concat(E, '/theme') : void 0,
                         renderRightContent: function () {
-                          return r.a.createElement(Ne.a, { style: [{ color: I }, rt.themeIcon] })
+                          return l.a.createElement(Ne.a, { style: [{ color: I }, lt.themeIcon] })
                         },
                       })
                     : null,
                   v || b
-                    ? r.a.createElement(
-                        r.a.Fragment,
+                    ? l.a.createElement(
+                        l.a.Fragment,
                         null,
-                        r.a.createElement(Xe.a, null),
-                        r.a.createElement(qe.b, { text: tt }),
-                        r.a.createElement(We.a, {
-                          description: r.a.createElement(nt, null, C),
+                        l.a.createElement(Xe.a, null),
+                        l.a.createElement(qe.b, { text: tt }),
+                        l.a.createElement(We.a, {
+                          description: l.a.createElement(nt, null, C),
                           label: Ge,
                           link: ''.concat(E, '/membership'),
                         }),
@@ -14118,25 +15181,110 @@
                 ),
               ),
             ),
-            r.a.createElement(ie.b, null, r.a.createElement(Ue.a, { to: ''.concat(E, '/') })),
+            l.a.createElement(re.b, null, l.a.createElement(Ue.a, { to: ''.concat(E, '/') })),
           )
         },
-        rt =
+        lt =
           ((t.default = o(at)),
           S.a.create(function (e) {
             return { themeIcon: { width: e.spaces.space24, height: e.spaces.space24 } }
           }))
     },
+    xvEL: function (e, t, n) {
+      'use strict'
+      n.r(t)
+      var a = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useCommunityBannerImageDefault_community',
+        selections: [
+          {
+            alias: null,
+            args: null,
+            concreteType: 'ApiMedia',
+            kind: 'LinkedField',
+            name: 'default_banner_media',
+            plural: !1,
+            selections: [
+              {
+                alias: null,
+                args: null,
+                concreteType: null,
+                kind: 'LinkedField',
+                name: 'media_info',
+                plural: !1,
+                selections: [
+                  {
+                    kind: 'InlineFragment',
+                    selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'MediaColorInfo',
+                        kind: 'LinkedField',
+                        name: 'color_info',
+                        plural: !1,
+                        selections: [
+                          {
+                            alias: null,
+                            args: null,
+                            concreteType: 'MediaColorPaletteItem',
+                            kind: 'LinkedField',
+                            name: 'palette',
+                            plural: !0,
+                            selections: [
+                              {
+                                alias: null,
+                                args: null,
+                                concreteType: 'MediaColor',
+                                kind: 'LinkedField',
+                                name: 'rgb',
+                                plural: !1,
+                                selections: [
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'red', storageKey: null },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'green', storageKey: null },
+                                  { alias: null, args: null, kind: 'ScalarField', name: 'blue', storageKey: null },
+                                ],
+                                storageKey: null,
+                              },
+                              { alias: null, args: null, kind: 'ScalarField', name: 'percentage', storageKey: null },
+                            ],
+                            storageKey: null,
+                          },
+                        ],
+                        storageKey: null,
+                      },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_url', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_width', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'original_img_height', storageKey: null },
+                    ],
+                    type: 'ApiImage',
+                    abstractKey: null,
+                  },
+                ],
+                storageKey: null,
+              },
+            ],
+            storageKey: null,
+          },
+        ],
+        type: 'Community',
+        abstractKey: null,
+        hash: 'da44821ed2bd33fa8de3b5bd8503e57a',
+      }
+      t.default = a
+    },
     xvzJ: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
-        r = n.n(a),
-        l = n('yiKp'),
-        i = n.n(l),
+        l = n.n(a),
+        i = n('yiKp'),
+        r = n.n(i),
         o = n('ddV6'),
-        c = n.n(o),
-        s = (n('yH/f'), n('2G9S'), n('ERkP')),
-        u = n.n(s),
+        s = n.n(o),
+        c = (n('yH/f'), n('2G9S'), n('ERkP')),
+        u = n.n(c),
         m = n('1YZw'),
         d = n('v6aA'),
         y = n('Ig1G'),
@@ -14156,8 +15304,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(F.a)(
             'svg',
-            i()(
-              i()({}, e),
+            r()(
+              r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -14180,8 +15328,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(F.a)(
             'svg',
-            i()(
-              i()({}, e),
+            r()(
+              r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -14200,10 +15348,10 @@
         }
       T.metadata = { width: 24, height: 24 }
       var K,
-        M = T,
-        x = n('boUI'),
-        R = Object.freeze({ PromoteModerator: 'PROMOTE_MODERATOR', DemoteModerator: 'DEMOTE_MODERATOR' }),
-        L = C.a.g30bc699,
+        L = T,
+        M = n('boUI'),
+        x = Object.freeze({ PromoteModerator: 'PROMOTE_MODERATOR', DemoteModerator: 'DEMOTE_MODERATOR' }),
+        R = C.a.g30bc699,
         O = C.a.e585d844,
         A = C.a.cab7c6f8,
         j = C.a.af40a8ef,
@@ -14241,19 +15389,19 @@
         var t = u.a.useContext(d.a),
           n = t.featureSwitches,
           a = t.loggedInUserId,
-          l = n.isTrue('c9s_edit_moderators_enabled'),
+          i = n.isTrue('c9s_edit_moderators_enabled'),
           o = e.communityId,
-          s = e.communityRole,
+          c = e.communityRole,
           f = e.recordId,
           _ = e.screenName,
           E = e.userId,
           C = u.a.useState(null),
-          S = c()(C, 2),
+          S = s()(C, 2),
           F = S[0],
           I = S[1],
           T = Object(p.c)(),
           K = k()(W),
-          A = c()(K, 2),
+          A = s()(K, 2),
           j = A[0],
           H = A[1],
           N = u.a.useCallback(
@@ -14261,18 +15409,18 @@
               var t = e.communityId,
                 n = e.errorMessage,
                 a = e.recordId,
-                r = e.role,
-                l = (e.screenName, e.successMessage),
-                i = e.userId
+                l = e.role,
+                i = (e.screenName, e.successMessage),
+                r = e.userId
               j({
-                variables: { communityId: t, userId: i, role: r },
+                variables: { communityId: t, userId: r, role: l },
                 updater: function (e) {
                   var n = e.get(a)
-                  null == n || n.setValue(r, 'community_role(community_id:"'.concat(t, '")')),
-                    T(g.b.updateOne(''.concat(t, '_').concat(i), { role: r }))
+                  null == n || n.setValue(l, 'community_role(community_id:"'.concat(t, '")')),
+                    T(g.b.updateOne(''.concat(t, '_').concat(r), { role: l }))
                 },
                 onCompleted: function () {
-                  T(Object(m.b)({ text: l }))
+                  T(Object(m.b)({ text: i }))
                 },
                 onError: function () {
                   T(Object(m.b)({ text: n }))
@@ -14286,36 +15434,36 @@
               var t,
                 n,
                 a,
-                r,
-                l = e.communityId,
+                l,
+                i = e.communityId,
                 o = e.recordId,
-                c = e.roleAction,
-                s = e.screenName,
+                s = e.roleAction,
+                c = e.screenName,
                 u = e.userId
-              switch (c) {
-                case R.PromoteModerator:
-                  ;(t = V), (a = y.a.Moderator), (r = P({ screenName: s })), (n = D({ screenName: s }))
+              switch (s) {
+                case x.PromoteModerator:
+                  ;(t = V), (a = y.a.Moderator), (l = P({ screenName: c })), (n = D({ screenName: c }))
                   break
-                case R.DemoteModerator:
-                  ;(t = q), (a = y.a.Member), (r = U({ screenName: s })), (n = z({ screenName: s }))
+                case x.DemoteModerator:
+                  ;(t = q), (a = y.a.Member), (l = U({ screenName: c })), (n = z({ screenName: c }))
                   break
                 default:
                   return
               }
               I(
-                i()(
-                  i()({}, t),
+                r()(
+                  r()({}, t),
                   {},
                   {
-                    text: t.text(s),
+                    text: t.text(c),
                     onConfirm: function () {
                       N({
-                        communityId: l,
+                        communityId: i,
                         errorMessage: n,
                         recordId: o,
                         role: a,
-                        screenName: s,
-                        successMessage: r,
+                        screenName: c,
+                        successMessage: l,
                         userId: u,
                       }),
                         I(null)
@@ -14329,11 +15477,11 @@
             },
             [N],
           ),
-          J = u.a.useCallback(
+          Q = u.a.useCallback(
             function (e) {
               var t = []
-              if (l)
-                switch (s) {
+              if (i)
+                switch (c) {
                   case y.a.Moderator:
                     t.push({
                       behavioralEventContext: { viewType: 'remove_moderator' },
@@ -14344,7 +15492,7 @@
                         return X({
                           communityId: o,
                           recordId: f,
-                          roleAction: R.DemoteModerator,
+                          roleAction: x.DemoteModerator,
                           screenName: _,
                           userId: E,
                         })
@@ -14356,12 +15504,12 @@
                       behavioralEventContext: { viewType: 'add_moderator' },
                       disabled: H,
                       text: O,
-                      Icon: M,
+                      Icon: L,
                       onClick: function () {
                         return X({
                           communityId: o,
                           recordId: f,
-                          roleAction: R.PromoteModerator,
+                          roleAction: x.PromoteModerator,
                           screenName: _,
                           userId: E,
                         })
@@ -14371,24 +15519,24 @@
               return (
                 t.push({
                   behavioralEventContext: { viewType: 'view_profile' },
-                  text: L({ screenName: _ }),
-                  Icon: x.a,
+                  text: R({ screenName: _ }),
+                  Icon: M.a,
                   link: '/'.concat(_),
                 }),
                 u.a.createElement(h.a, { items: t, onCloseRequested: e, shouldCloseOnClick: !0 })
               )
             },
-            [o, X, l, f, s, H, _, E],
+            [o, X, i, f, c, H, _, E],
           )
         return E !== a
           ? u.a.createElement(
               u.a.Fragment,
               null,
-              u.a.createElement(b.a, { renderActionMenu: J }),
+              u.a.createElement(b.a, { renderActionMenu: Q }),
               F
                 ? u.a.createElement(
                     v.a,
-                    r()(
+                    l()(
                       {
                         confirmButtonType: 'primary',
                         onCancel: function () {
@@ -14410,17 +15558,17 @@
           return I
         })
       var a = n('ddV6'),
-        r = n.n(a),
-        l = (n('yH/f'), n('jwue'), n('7x/C'), n('+oxZ'), n('ERkP')),
-        i = n.n(l),
+        l = n.n(a),
+        i = (n('yH/f'), n('jwue'), n('7x/C'), n('+oxZ'), n('ERkP')),
+        r = n.n(i),
         o = n('eSoz'),
-        c = n('rxPX'),
-        s = n('0KEI'),
-        u = Object(c.a)()
+        s = n('rxPX'),
+        c = n('0KEI'),
+        u = Object(s.a)()
           .propsFromActions(function () {
             return {
               editTheme: o.c.editTheme,
-              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(c.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_THEME_SCREEN',
               ),
             }
@@ -14445,31 +15593,31 @@
         var t = e.community,
           n = e.createLocalApiErrorHandler,
           a = e.editTheme,
-          l = e.history,
+          i = e.history,
           o = t.id_str,
-          c = t.theme,
-          s = f.a.getCommunityBackgroundColorName(c),
-          u = i.a.useState(!1),
-          y = r()(u, 2),
+          s = t.theme,
+          c = f.a.getCommunityBackgroundColorName(s),
+          u = r.a.useState(!1),
+          y = l()(u, 2),
           p = y[0],
           v = y[1],
-          I = i.a.useState(Object(d.e)(t)),
-          T = r()(I, 2),
+          I = r.a.useState(Object(d.e)(t)),
+          T = l()(I, 2),
           K = T[0],
-          M = T[1],
-          x = i.a.useState(f.a.getCommunityThemeDisplayName(K)),
-          R = r()(x, 2),
-          L = R[0],
-          O = R[1],
-          A = i.a.useState(s),
-          j = r()(A, 2),
+          L = T[1],
+          M = r.a.useState(f.a.getCommunityThemeDisplayName(K)),
+          x = l()(M, 2),
+          R = x[0],
+          O = x[1],
+          A = r.a.useState(c),
+          j = l()(A, 2),
           P = j[0],
           D = j[1],
-          B = i.a.useState([]),
-          H = r()(B, 2),
+          B = r.a.useState([]),
+          H = l()(B, 2),
           N = H[0],
           U = H[1]
-        i.a.useEffect(
+        r.a.useEffect(
           function () {
             var e
             return (
@@ -14489,34 +15637,34 @@
           },
           [U],
         )
-        var z = i.a.useCallback(
+        var z = r.a.useCallback(
             function () {
               a(o, { theme: K })
                 .then(function () {
-                  l.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/settings') })
+                  i.goBack({ backLocation: '/i/communities/'.concat(o, '/tools/settings') })
                 })
                 .catch(n({ showToast: !0 }))
             },
-            [o, K, a, l, n],
+            [o, K, a, i, n],
           ),
-          V = i.a.createElement(
+          V = r.a.createElement(
             h.a,
-            { accessibilityLabel: E({ themeName: L }), disabled: !p, onPress: z, size: 'small', type: 'brandFilled' },
+            { accessibilityLabel: E({ themeName: R }), disabled: !p, onPress: z, size: 'small', type: 'brandFilled' },
             k,
           )
-        return i.a.createElement(
+        return r.a.createElement(
           m.b,
-          { behavioralEventViewType: 'edit_theme', history: l, rightControl: V, title: _ },
-          i.a.createElement(
+          { behavioralEventViewType: 'edit_theme', history: i, rightControl: V, title: _ },
+          r.a.createElement(
             g.a,
             { style: w.themePickerContainer },
-            i.a.createElement(b.a, {
+            r.a.createElement(b.a, {
               accessibilityLabel: C,
               layout: 'two-rows',
               onChange: function (e) {
                 var n = F[e],
                   a = n !== Object(d.e)(t)
-                M(n), O(f.a.getCommunityThemeDisplayName(n)), D(e), v(a)
+                L(n), O(f.a.getCommunityThemeDisplayName(n)), D(e), v(a)
               },
               options: N,
               value: P,
@@ -14533,9 +15681,9 @@
       'use strict'
       n.r(t)
       var a,
-        r,
         l,
-        i = {
+        i,
+        r = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'communityId' }]),
             kind: 'Fragment',
@@ -14544,7 +15692,7 @@
             selections: [
               {
                 alias: 'community',
-                args: (r = [
+                args: (l = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'communityId' },
                   { kind: 'Literal', name: 's', value: 4 },
                 ]),
@@ -14567,7 +15715,7 @@
             selections: [
               {
                 alias: 'community',
-                args: r,
+                args: l,
                 concreteType: 'Community',
                 kind: 'LinkedField',
                 name: 'community_by_rest_id',
@@ -14586,7 +15734,7 @@
                       {
                         kind: 'InlineFragment',
                         selections: [
-                          (l = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                          (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                         ],
                         type: 'CommunityInvites',
                         abstractKey: null,
@@ -14594,7 +15742,7 @@
                     ],
                     storageKey: null,
                   },
-                  l,
+                  i,
                 ],
                 storageKey: null,
               },
@@ -14608,7 +15756,7 @@
             text: null,
           },
         }
-      ;(i.hash = '9533cbfb5394a4601514cbc83020138b'), (t.default = i)
+      ;(r.hash = '9533cbfb5394a4601514cbc83020138b'), (t.default = r)
     },
     zum0: function (e, t, n) {
       'use strict'

@@ -337,7 +337,7 @@
           return {
             circle: { borderRadius: e.borderRadii.infinite, overflow: 'hidden' },
             container: { height: 'auto', width: '100%' },
-            itemAccessory: { top: -e.spacesPx.space24, right: -e.spacesPx.space24 },
+            itemAccessory: { top: -e.spacesPx.space24, right: -e.spacesPx.space16 },
             userDecoration: {
               fontSize: e.fontSizes.subtext3,
               position: 'absolute',
