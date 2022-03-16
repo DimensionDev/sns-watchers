@@ -36,12 +36,29 @@ function wipeDynamic(code) {
       return full
     })
 }
+
+/**
+ * retry asyncfn {times} times
+ * @param {() => Promise} asyncfn
+ * @param {number} times
+ */
+async function retry(asyncfn, times) {
+  while (times) {
+    try {
+      return await asyncfn()
+    } catch (e) {
+      times -= 1
+    }
+  }
+  throw new Error('retry')
+}
+
 /**
  * wrap a wipeDynamic() as a preprocesser inside
  * @type import('./utils').download
  */
 const download = (url, saveAs) => {
-  return originalDownload(url, saveAs, wipeDynamic)
+  return retry(() => originalDownload(url, saveAs, wipeDynamic), 3)
 }
 
 /** @param {string} dir */
@@ -69,7 +86,6 @@ function getAllScriptUrls(html) {
       match = html.match(/{\d+:"[0-9a-z]{7}",.*?}/m)
       if (match) {
         const hashMap = eval(`(${match[0]})`)
-        debugger
         Object.keys(scriptsMap)
           .filter((id) => hashMap[id])
           .forEach((id) => {
@@ -85,16 +101,26 @@ function getAllScriptUrls(html) {
 async function start() {
   const html = await download(url, null)
   await del(['twitter.com/scripts/*.js'])
+
   const scriptUrls = getAllScriptUrls(html)
-  const tasks = scriptUrls.map(async (url) => {
-    const fileName = url
-      .split('/')
-      .pop()
-      .replace(/(.*?)\.\w+\.js/, '$1')
-    await download(url, dest(`scripts/${fileName}.js`))
-  })
-  while (tasks.length) {
-    await Promise.allSettled(tasks.splice(0, 10))
+  /** @type {string[]} */
+  const failedList = []
+  while (scriptUrls.length) {
+    const fragments = scriptUrls.splice(0, 10)
+    const tasks = fragments.map(async (url) => {
+      const fileName = url
+        .split('/')
+        .pop()
+        .replace(/(.*?)\.\w+\.js/, '$1')
+      await download(url, dest(`scripts/${fileName}.js`)).catch(() => {
+        console.info('Fails to download', url)
+        failedList.push(url)
+      })
+    })
+    await Promise.allSettled(tasks)
+  }
+  if (failedList.length) {
+    console.log('Failed list', failedList)
   }
 }
 

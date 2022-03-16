@@ -21,7 +21,6 @@ async function fetchFile(url) {
  * @returns Promise<string>
  */
 async function download(url, saveAs, preprocesser = (code) => code) {
-  console.info('downloading', url)
   try {
     let content = await fetchFile(url)
     content = preprocesser(content)
@@ -31,11 +30,12 @@ async function download(url, saveAs, preprocesser = (code) => code) {
         await fs.writeFile(saveAs, content)
       } catch (e) {
         console.log('Fails to format', url)
+        throw e
       }
     }
     return content
   } catch (err) {
-    console.info('fails to download', url)
+    throw err
   }
 }
 /**
