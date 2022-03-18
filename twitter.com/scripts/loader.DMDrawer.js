@@ -10539,7 +10539,7 @@
         ke = (n('JtPf'), n('87if'), n('zb92')),
         Re = Object(ke.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(20), n.e(235)]).then(n.bind(null, 'Rk1B'))
+            return Promise.all([n.e(0), n.e(20), n.e(236)]).then(n.bind(null, 'Rk1B'))
           },
         }),
         Te = n('aWzz'),
@@ -13851,15 +13851,9 @@
                 e.props.analytics.scribe({ component: 'search', element: 'empty_results', action: 'compose' })
               }),
               v()(d()(e), '_handleFooterClick', function () {
-                var t, n, a
-                e._textInputRef && e._textInputRef.focus(),
-                  null === (t = e._textInputRef) ||
-                    void 0 === t ||
-                    null === (n = t.textInput) ||
-                    void 0 === n ||
-                    null === (a = n.textInputNode) ||
-                    void 0 === a ||
-                    a.select()
+                var t, n
+                null === (t = e._textInputRef) || void 0 === t || t.clear(),
+                  null === (n = e._textInputRef) || void 0 === n || n.focus()
               }),
               v()(d()(e), '_handleRefetchSearch', function () {
                 var t = e.props,

@@ -9445,7 +9445,7 @@
             return { module: le, moduleFetchStatus: se }
           })
           .propsFromActions(function () {
-            return { setCount: ie.g }
+            return { setCount: ie.f }
           })
           .withAnalytics({ page: 'list_management' }),
         ce = n('kGix'),
@@ -9896,9 +9896,9 @@
                     }),
                     t && t(e))
               }),
-              v()(p()(a), '_handleFocus', function (e) {
-                var t = a.props.onFocus
-                a.setState({ isFocused: !0 }), t && t(e)
+              v()(p()(a), '_handleFocus', function () {
+                var e = a.props.onFocus
+                a.setState({ isFocused: !0 }), e && e()
               }),
               v()(p()(a), '_handleKeyPress', function (e) {
                 var t = a.props,

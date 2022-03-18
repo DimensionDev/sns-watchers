@@ -2967,7 +2967,7 @@
               ;(M(!1), F.current) &&
                 (C && S
                   ? F.current.focus()
-                  : (C && (null === (n = F.current.textInput) || void 0 === n || n.clear()),
+                  : (C && (null === (n = F.current) || void 0 === n || n.clear()),
                     null === (a = F.current) || void 0 === a || a.blur()))
               me(r), null == p || p(), null == m || m(e, t)
             },

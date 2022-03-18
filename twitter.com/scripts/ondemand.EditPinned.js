@@ -40,12 +40,12 @@
         j = n('wqZ5'),
         I = Object(O.a)()
           .propsFromState(function () {
-            return { listIds: j.f, loggedInUser: w.e.selectLoggedInUser }
+            return { listIds: j.e, loggedInUser: w.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
-              updateOrder: j.i,
-              fetchPins: j.c,
+              updateOrder: j.h,
+              fetchPins: j.b,
               createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
                 'EDIT_PINNED_LISTS_ORDER_CONTEXT',
               ),

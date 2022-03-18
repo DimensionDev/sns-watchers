@@ -60,54 +60,73 @@
       'use strict'
       n.r(t),
         n.d(t, 'sidebarLayoutScreenTitle', function () {
-          return L
+          return O
         }),
         n.d(t, 'TwitterArticleScreen', function () {
-          return A
+          return M
         })
       n('KqXw'), n('WNMA'), n('uFXj')
       var r = n('ERkP'),
         a = n.n(r),
         i = n('es0u'),
         o = n('6au1'),
-        l = n('rxPX'),
-        c = function (e, t) {
-          return o.a.selectFetchStatus(e, t.match.params.twitterArticleId)
+        l = n('G6rE'),
+        c = n('rxPX'),
+        s = n('0KEI'),
+        u = n('kGix'),
+        d = function (e, t) {
+          return t.match.params.twitterArticleId
         },
-        s = Object(l.a)()
-          .propsFromState(function () {
-            return { fetchStatus: c }
-          })
-          .propsFromActions(function () {
-            return { fetchTwitterArticle: o.a.fetchOne }
-          }),
-        u = n('VS6U'),
-        d = (n('ho0z'), n('6U7i'), n('G6rE')),
         p = function (e, t) {
-          var n = t.twitterArticleId
+          var n = d(0, t)
           return o.a.select(e, n)
         },
         h = function (e, t) {
           var n,
             r = p(e, t),
-            a = null == r || null === (n = r.metadata) || void 0 === n ? void 0 : n.authorResults.result,
-            i = 'User' === (null == a ? void 0 : a.__typename) ? (null == a ? void 0 : a.rest_id) : void 0
-          return i ? d.e.select(e, i) : void 0
+            a = null == r || null === (n = r.metadata) || void 0 === n ? void 0 : n.authorResults.result
+          return 'User' === (null == a ? void 0 : a.__typename) ? (null == a ? void 0 : a.rest_id) : void 0
         },
-        f = Object(l.a)().propsFromState(function () {
-          return { author: h, twitterArticle: p }
-        }),
-        m = (n('849X'), n('TJCb'), n('gEvp')),
-        y = function (e) {
+        f = function (e, t) {
+          var n = h(e, t)
+          return n ? l.e.select(e, n) : void 0
+        },
+        m = function (e, t) {
+          var n = (function (e, t) {
+              var n = d(0, t)
+              return o.a.selectFetchStatus(e, n)
+            })(e, t),
+            r = (function (e, t) {
+              var n = h(e, t)
+              return n ? l.e.selectFetchStatus(e, n) : void 0
+            })(e, t)
+          return Object(u.d)(n, r)
+        },
+        y = Object(c.a)()
+          .propsFromState(function () {
+            return { author: f, authorId: h, fetchStatus: m, twitterArticle: p }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
+                'TWITTER_ARTICLE_SCREEN',
+              ),
+              fetchTwitterArticle: o.a.fetchOne,
+              fetchUserIfNeeded: l.e.fetchOneIfNeeded,
+            }
+          }),
+        b = n('VS6U'),
+        g = (n('ho0z'), n('6U7i'), n('849X'), n('TJCb'), n('gEvp')),
+        v = function (e) {
           var t = e.block,
             n = e.contentState,
             r = t.getEntityAt(0),
             i = r ? n.getEntity(r).getData() : null
-          return null != i && i.tweetId ? a.a.createElement(m.a, { tweetId: i.tweetId }) : null
+          return null != i && i.tweetId ? a.a.createElement(g.a, { tweetId: i.tweetId }) : null
         },
-        b = n('nXUu'),
-        g = { atomic: { component: y, editable: !1 } },
-        v = function (e) {
+        w = n('nXUu'),
+        E = { atomic: { component: v, editable: !1 } },
+        C = function (e) {
           var t = e.contentStateJson,
             n = t
               ? (function (e) {
@@ -118,14 +137,14 @@
                   } catch (n) {}
                 })(t)
               : void 0
-          return n ? a.a.createElement(b.a, { componentByType: g, contentState: n }) : null
+          return n ? a.a.createElement(w.a, { componentByType: E, contentState: n }) : null
         },
-        w = n('t62R'),
-        E = function (e) {
+        T = n('t62R'),
+        x = function (e) {
           var t = e.size,
             n = e.title
           return a.a.createElement(
-            w.b,
+            T.b,
             {
               color: n ? 'text' : 'gray700',
               numberOfLines: 1,
@@ -136,11 +155,11 @@
             n || 'Untitled',
           )
         },
-        C = n('MWbm'),
-        T = n('jV+4'),
-        x = n('GBcw'),
-        I = n('rHpw'),
-        k = I.a.create(function (e) {
+        I = n('MWbm'),
+        k = n('jV+4'),
+        S = n('GBcw'),
+        _ = n('rHpw'),
+        L = _.a.create(function (e) {
           return {
             container: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -150,81 +169,87 @@
             paddedView: { paddingVertical: e.spaces.space12 },
           }
         }),
-        S = f(function (e) {
+        A = function (e) {
           var t = e.author,
-            n = e.twitterArticle
-          if (!n || !t) return null
-          var r = n.data,
+            n = e.twitterArticle,
+            r = n.data,
             i = n.metadata,
             o = n.title
           return a.a.createElement(
-            C.a,
-            { style: k.container },
-            a.a.createElement(T.a, {
+            I.a,
+            { style: L.container },
+            a.a.createElement(k.a, {
               isVerified: t.verified,
               name: t.name,
               profileImageUrl: t.profile_image_url_https,
               screenName: t.screen_name,
-              style: k.paddedView,
+              style: L.paddedView,
               withLink: !0,
             }),
-            a.a.createElement(C.a, { style: k.paddedView }, a.a.createElement(E, { size: 'title1', title: o })),
+            a.a.createElement(I.a, { style: L.paddedView }, a.a.createElement(x, { size: 'title1', title: o })),
             null != i && i.publishedAtMs
               ? a.a.createElement(
-                  C.a,
-                  { style: k.paddedView },
-                  a.a.createElement(x.a, { humanReadable: !0, timestamp: Number(i.publishedAtMs) }),
+                  I.a,
+                  { style: L.paddedView },
+                  a.a.createElement(S.a, { humanReadable: !0, timestamp: Number(i.publishedAtMs) }),
                 )
               : null,
             null != r && r.contentStateJson
               ? a.a.createElement(
-                  C.a,
-                  { style: k.paddedView, testID: 'twitterArticleRichTextView' },
-                  a.a.createElement(v, { contentStateJson: r.contentStateJson }),
+                  I.a,
+                  { style: L.paddedView, testID: 'twitterArticleRichTextView' },
+                  a.a.createElement(C, { contentStateJson: r.contentStateJson }),
                 )
               : null,
           )
-        }),
-        _ = n('G1WX'),
-        L = 'Twitter Article',
-        A = function (e) {
-          var t = e.fetchStatus,
-            n = e.fetchTwitterArticle,
-            r = e.history,
-            o = e.match.params.twitterArticleId,
-            l = a.a.useCallback(
+        },
+        B = n('G1WX'),
+        O = 'Twitter Article',
+        M = function (e) {
+          var t = e.author,
+            n = e.authorId,
+            r = e.createLocalApiErrorHandler,
+            o = e.fetchStatus,
+            l = e.fetchTwitterArticle,
+            c = e.fetchUserIfNeeded,
+            s = e.history,
+            u = e.match.params.twitterArticleId,
+            d = e.twitterArticle,
+            p = a.a.useCallback(
               function () {
-                n(o)
+                d || l(u), n && !t && c(n).catch(r())
               },
-              [n, o],
+              [t, n, r, l, c, d, u],
             )
           a.a.useEffect(
             function () {
-              l()
+              p()
             },
-            [l],
+            [p],
           )
-          var c = function () {
-            return a.a.createElement(
-              C.a,
-              { testID: 'twitterArticleView' },
-              a.a.createElement(S, { twitterArticleId: o }),
-            )
+          var h = function () {
+            return d && t
+              ? a.a.createElement(
+                  I.a,
+                  { testID: 'twitterArticleView' },
+                  a.a.createElement(A, { author: t, twitterArticle: d }),
+                )
+              : null
           }
-          return a.a.createElement(u.a, {
-            history: r,
+          return a.a.createElement(b.a, {
+            history: s,
             primaryContent: function () {
               return a.a.createElement(
-                C.a,
-                { style: B.container },
-                a.a.createElement(_.a, { fetchStatus: t, onRequestRetry: l, render: c }),
+                I.a,
+                { style: R.container },
+                a.a.createElement(B.a, { fetchStatus: o, onRequestRetry: p, render: h }),
               )
             },
             sidebarContent: a.a.createElement(i.a, null),
-            title: L,
+            title: O,
           })
         },
-        B = I.a.create(function (e) {
+        R = _.a.create(function (e) {
           return {
             container: {
               borderTopColor: e.colors.borderColor,
@@ -236,8 +261,8 @@
             title: { paddingBottom: e.spaces.space24 },
           }
         }),
-        O = s(A)
-      t.default = O
+        F = y(M)
+      t.default = F
     },
     '5emT': function (e, t, n) {
       'use strict'
@@ -323,10 +348,10 @@
         B = n('kXdP'),
         O = n('BLtI'),
         M = n('MWbm'),
-        F = n('htQn'),
-        R = n('Znyr'),
-        P = n('kY28'),
-        H = n('rHpw'),
+        R = n('htQn'),
+        F = n('Znyr'),
+        H = n('kY28'),
+        P = n('rHpw'),
         z = n('v6aA'),
         D = n('6Rrp'),
         V = n('0ULw'),
@@ -418,7 +443,7 @@
                     ? this._renderDisabledTweet(t)
                     : i
                     ? w.a.createElement(
-                        F.a,
+                        R.a,
                         { onPress: this._handleOnClick, style: G.root },
                         this._renderDragCount(a),
                         this._renderContent(),
@@ -436,7 +461,7 @@
                     : w.a.createElement(
                         M.a,
                         { style: G.countBadgeContainer },
-                        w.a.createElement(R.a, {
+                        w.a.createElement(F.a, {
                           count: e,
                           standalone: !0,
                           style: G.countBadge,
@@ -455,18 +480,18 @@
         })(w.a.PureComponent)
       g()(U, 'contextType', z.a),
         g()(U, 'defaultProps', {
-          replyContext: P.a.ReplyContextTypes.Isolated,
+          replyContext: H.a.ReplyContextTypes.Isolated,
           withActions: !0,
           showDragCount: 0,
           isPartOfDraggedSelection: !1,
           isSelected: !1,
         })
-      var G = H.a.create(function (e) {
+      var G = P.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground, flexDirection: 'row' },
             tweet: { flex: 1 },
             disabledTweetMask: o()(
-              o()({}, H.a.absoluteFillObject),
+              o()({}, P.a.absoluteFillObject),
               {},
               { backgroundColor: e.colors.navigationBackground, opacity: '50%' },
             ),
@@ -637,7 +662,7 @@
           'withBottomBorder',
           'withDetailOpen',
         ],
-        F = (function (e) {
+        R = (function (e) {
           p()(n, e)
           var t = f()(n)
           function n() {
@@ -741,26 +766,26 @@
                     B = n.withTweetButton,
                     O = 'root' === f,
                     M = 'secondaryRoot' === f,
-                    F = 'primaryDetail' === f,
-                    R = (F && w) || (O && g),
-                    P = O || (F && t),
-                    H = O ? b.c : F ? b.a : void 0,
+                    R = 'primaryDetail' === f,
+                    F = (R && w) || (O && g),
+                    H = O || (R && t),
+                    P = O ? b.c : R ? b.a : void 0,
                     z = v.a.createElement(
                       _.a,
                       { style: S.appBarContainer },
                       v.a.createElement(E.a, {
                         backLocation: o,
                         fixed: !1,
-                        hideBackButton: P,
+                        hideBackButton: H,
                         history: s,
                         leftControl: u,
                         middleControl: d,
                         onBackClick: p,
                         rightControl: h,
                         secondaryBar: y,
-                        subtitle: R ? T : void 0,
+                        subtitle: F ? T : void 0,
                         title: x,
-                        titleDomId: H,
+                        titleDomId: P,
                         titleIconCell: I,
                         titleIconCellSize: k,
                       }),
@@ -791,9 +816,9 @@
             n
           )
         })(v.a.Component)
-      y()(F, 'contextType', O.a),
-        y()(F, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(A.a)(F)
+      y()(R, 'contextType', O.a),
+        y()(R, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+      t.a = Object(A.a)(R)
     },
     QdNu: function (e, t, n) {
       'use strict'
@@ -900,17 +925,17 @@
         B = n('yiKp'),
         O = n.n(B),
         M = n('Fcw+'),
-        F = n('QIgh'),
-        R = n('8UdT'),
-        P = n('VrCx'),
-        H = n('oQhu'),
+        R = n('QIgh'),
+        F = n('8UdT'),
+        H = n('VrCx'),
+        P = n('oQhu'),
         z = n('fTQJ'),
         D = n('7fPw'),
         V = n('MWbm'),
         j = n('t62R'),
         W = n('/yvb'),
         K = n('rHpw'),
-        U = Object(H.a)(function (e) {
+        U = Object(P.a)(function (e) {
           return Object(D.a)(e)
         }),
         G = K.a.create(function (e) {
@@ -952,15 +977,15 @@
                   var t = e.handleTweetClick,
                     n = e.selectedTweetIds
                   return O()(
-                    O()({}, F.b),
+                    O()({}, R.b),
                     {},
                     A()(
                       {},
-                      R.b.Tweet,
+                      F.b.Tweet,
                       O()(
-                        O()({}, F.b[R.b.Tweet]),
+                        O()({}, R.b[F.b.Tweet]),
                         {},
-                        { handlers: A()({}, P.a.Tweet, Object(M.default)({ onClick: t, selectedTweetIds: n })) },
+                        { handlers: A()({}, H.a.Tweet, Object(M.default)({ onClick: t, selectedTweetIds: n })) },
                       ),
                     ),
                   )
@@ -1094,7 +1119,7 @@
             d = function (e) {
               if ('atomic' === e.getType()) return { component: k, editable: !1 }
             },
-            p = Object(H.a)(function (e) {
+            p = Object(P.a)(function (e) {
               return function (t) {
                 e(t), n(t)
               }
@@ -1217,7 +1242,7 @@
                 return !e
               })
             },
-            F = o.a.createElement(
+            R = o.a.createElement(
               V.a,
               { style: Te.controlsContainer },
               o.a.createElement(
@@ -1255,7 +1280,7 @@
             )
           return o.a.createElement(
             v.a,
-            { rightControl: F, screenType: 'primaryDetail', title: 'Edit Twitter Article' },
+            { rightControl: R, screenType: 'primaryDetail', title: 'Edit Twitter Article' },
             _
               ? o.a.createElement(de.a, {
                   headline: 'Delete Twitter Article?',
@@ -1429,9 +1454,9 @@
         B = n.n(A),
         O = n('FG+G'),
         M = n('IG7M'),
-        F = n('rHpw'),
-        R = n('MWbm'),
-        P = F.a.create(function (e) {
+        R = n('rHpw'),
+        F = n('MWbm'),
+        H = R.a.create(function (e) {
           return {
             separator: {
               borderRightWidth: e.borderWidths.small,
@@ -1440,9 +1465,9 @@
             },
           }
         }),
-        H = function (e) {
+        P = function (e) {
           var t = e.style
-          return k.a.createElement(R.a, { style: [P.separator, t] })
+          return k.a.createElement(F.a, { style: [H.separator, t] })
         },
         z = n('Lsrn'),
         D = n('k/Ka'),
@@ -1572,7 +1597,7 @@
         }
       Y.metadata = { width: 24, height: 24 }
       var q = Y,
-        Q = F.a.create(function (e) {
+        Q = R.a.create(function (e) {
           return { iconGray: { color: e.colors.gray700 } }
         }),
         Z = {
@@ -1649,9 +1674,9 @@
               }),
               x()(g()(e), '_renderToolbarButtonGroup', function (t, n) {
                 return k.a.createElement(
-                  R.a,
+                  F.a,
                   { style: ue.buttonGroup },
-                  n ? null : k.a.createElement(H, { style: ue.itemMargin }),
+                  n ? null : k.a.createElement(P, { style: ue.itemMargin }),
                   t.map(function (t, r) {
                     return k.a.createElement(
                       L.a,
@@ -1728,12 +1753,12 @@
                     k.a.Fragment,
                     null,
                     k.a.createElement(
-                      R.a,
+                      F.a,
                       { style: ue.toolbar },
                       this._renderToolbarButtonGroup(p, !0),
-                      k.a.createElement(H, { style: ue.itemMargin }),
+                      k.a.createElement(P, { style: ue.itemMargin }),
                       k.a.createElement(
-                        R.a,
+                        F.a,
                         { style: ue.textSizeSelection },
                         k.a.createElement(_.b, { color: 'gray700', numberOfLines: 1 }, null == d ? void 0 : d.label),
                         k.a.createElement(M.a, {
@@ -1773,7 +1798,7 @@
           )
         })(k.a.Component)
       x()(se, 'defaultProps', { leftAligned: !0, multiline: !0, styleType: 'selection' })
-      var ue = F.a.create(function (e) {
+      var ue = R.a.create(function (e) {
         return {
           buttonGroup: { flexDirection: 'row' },
           input: { paddingHorizontal: 0, paddingBottom: 0 },
@@ -2110,10 +2135,10 @@
         B = n('aITJ'),
         O = n('MWbm'),
         M = n('n5fo'),
-        F = n('5emT'),
-        R = n('Oib4'),
-        P = n('WtWS'),
-        H = n('ioan'),
+        R = n('5emT'),
+        F = n('Oib4'),
+        H = n('WtWS'),
+        P = n('ioan'),
         z = [
           'Icon',
           'accessibilityLabel',
@@ -2232,9 +2257,9 @@
                     }),
                     t && t(e))
               }),
-              g()(p()(r), '_handleFocus', function (e) {
-                var t = r.props.onFocus
-                r.setState({ isFocused: !0 }), t && t(e)
+              g()(p()(r), '_handleFocus', function () {
+                var e = r.props.onFocus
+                r.setState({ isFocused: !0 }), e && e()
               }),
               g()(p()(r), '_handleKeyPress', function (e) {
                 var t = r.props,
@@ -2436,7 +2461,7 @@
                         C.b,
                         { size: 'headline1', style: U.wrapper },
                         w.a.createElement(
-                          H.a,
+                          P.a,
                           a()({}, i, {
                             editable: n,
                             maxLength: this._getAdjustedMaxLength(),
@@ -2472,7 +2497,7 @@
                             accessibilityLabel: r ? W : j,
                             focusable: !0,
                             hoverLabel: { label: r ? W : j },
-                            icon: r ? w.a.createElement(M.a, null) : w.a.createElement(F.a, null),
+                            icon: r ? w.a.createElement(M.a, null) : w.a.createElement(R.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -2541,8 +2566,8 @@
                   key: '_renderValidationIcon',
                   value: function () {
                     return this._isFormInvalid()
-                      ? w.a.createElement(R.a, { style: [G.validationIcon, x.a.invalidColor] })
-                      : w.a.createElement(P.a, { style: [G.validationIcon, x.a.validColor] })
+                      ? w.a.createElement(F.a, { style: [G.validationIcon, x.a.invalidColor] })
+                      : w.a.createElement(H.a, { style: [G.validationIcon, x.a.validColor] })
                   },
                 },
                 {

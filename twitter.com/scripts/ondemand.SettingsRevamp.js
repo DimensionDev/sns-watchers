@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [239],
+  [240],
   {
     '1Uii': function (e, t, a) {
       'use strict'
@@ -886,7 +886,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'UndoTweetScreen', function () {
-          return H
+          return x
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -896,40 +896,39 @@
         l = a.n(o),
         s = a('v6aA'),
         u = a('gUb7'),
-        d = a('qlwE'),
-        f = a('P1r1'),
-        m = a('rxPX'),
-        p = Object(m.a)()
+        d = a('rxPX'),
+        f = a('u7LJ'),
+        m = Object(d.a)()
           .propsFromState(function () {
-            return { undoTweetSettings: d.p, userClaimsFetchStatus: u.c }
+            return { undoTweetSettings: f.b, userClaimsFetchStatus: u.c }
           })
           .propsFromActions(function () {
-            return { updateSettings: f.M }
+            return { updateSettings: f.c }
           })
           .withAnalytics({ page: 'settings', section: 'undo_tweet' }),
-        b = a('5oBF'),
-        h = a('v//M'),
-        E = a('3XMw'),
-        g = a.n(E),
-        y = a('/de5'),
-        v = a('yoO3'),
-        S = a('7FtF'),
-        _ = a('0KEI'),
-        w = a('ehR8'),
-        k = a('MWbm'),
-        C = a('RKmr'),
-        T = a('e0ey'),
-        O = a('fyvP'),
-        F = a('rHpw'),
-        L = g.a.de43eaf2,
-        R = g.a.b6ab9962,
-        I = g.a.jdceda6f,
-        P = g.a.j45978a8,
-        A = g.a.be077e8b,
-        M = g.a.i9028824,
-        U = g.a.j905e6fe,
-        x = g.a.e2c39a4c
-      function H(e) {
+        p = a('5oBF'),
+        b = a('v//M'),
+        h = a('3XMw'),
+        E = a.n(h),
+        g = a('/de5'),
+        y = a('yoO3'),
+        v = a('7FtF'),
+        S = a('0KEI'),
+        _ = a('ehR8'),
+        w = a('MWbm'),
+        k = a('RKmr'),
+        C = a('e0ey'),
+        T = a('fyvP'),
+        O = a('rHpw'),
+        F = E.a.de43eaf2,
+        L = E.a.b6ab9962,
+        R = E.a.jdceda6f,
+        I = E.a.j45978a8,
+        P = E.a.be077e8b,
+        A = E.a.i9028824,
+        M = E.a.j905e6fe,
+        U = E.a.e2c39a4c
+      function x(e) {
         var t = e.undoTweetSettings,
           a = e.updateSettings,
           n = e.userClaimsFetchStatus,
@@ -938,19 +937,19 @@
           u = t.quote,
           d = t.reply,
           f = t.thread,
-          m = Object(w.a)(),
-          p = m.history,
-          E = m.location,
-          F = m.match,
-          H = l.a.useContext(s.a),
-          D = H.featureSwitches,
-          N = H.userClaims,
-          z = (c || b.a).toString(),
-          B = Object(_.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
+          m = Object(_.a)(),
+          h = m.history,
+          O = m.location,
+          x = m.match,
+          j = l.a.useContext(s.a),
+          D = j.featureSwitches,
+          N = j.userClaims,
+          z = (c || p.a).toString(),
+          B = Object(S.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
           K = N.isTrueAndEnabled('subscriptions_feature_1003'),
           Q = D.isTrue('subscriptions_undo_quote_tweets_enabled'),
           W = D.isTrue('subscriptions_undo_thread_tweets_enabled'),
-          X = g.a.i3b7a017,
+          X = E.a.i3b7a017,
           V = [5, 10, 20, 30, 60].map(function (e) {
             return { label: X(e), value: e.toString() }
           })
@@ -960,37 +959,37 @@
             a(c).catch(B({}))
           } else a({ undoPreview: i()(i()({}, t), {}, { durationSecs: Number(n) }) })
         }
-        return l.a.createElement(h.a, {
-          accessibilityLabel: M,
+        return l.a.createElement(b.a, {
+          accessibilityLabel: A,
           fetchStatus: n,
           render: function () {
             return K
               ? l.a.createElement(
-                  v.a,
+                  y.a,
                   null,
                   l.a.createElement(
-                    S.a,
-                    { location: E, title: L },
-                    l.a.createElement(C.a, { description: x }),
-                    l.a.createElement(T.a, { checked: void 0 === o || o, label: R, name: 'original', onChange: G }),
-                    l.a.createElement(T.a, { checked: void 0 === d || d, label: I, name: 'reply', onChange: G }),
-                    Q && l.a.createElement(T.a, { checked: void 0 === u || u, label: P, name: 'quote', onChange: G }),
-                    W && l.a.createElement(T.a, { checked: void 0 === f || f, label: A, name: 'thread', onChange: G }),
+                    v.a,
+                    { location: O, title: F },
+                    l.a.createElement(k.a, { description: U }),
+                    l.a.createElement(C.a, { checked: void 0 === o || o, label: L, name: 'original', onChange: G }),
+                    l.a.createElement(C.a, { checked: void 0 === d || d, label: R, name: 'reply', onChange: G }),
+                    Q && l.a.createElement(C.a, { checked: void 0 === u || u, label: I, name: 'quote', onChange: G }),
+                    W && l.a.createElement(C.a, { checked: void 0 === f || f, label: P, name: 'thread', onChange: G }),
                     l.a.createElement(
-                      k.a,
-                      { style: j.radioGroup },
-                      l.a.createElement(O.a, { label: U, name: 'period', onChange: G, options: V, value: z }),
+                      w.a,
+                      { style: H.radioGroup },
+                      l.a.createElement(T.a, { label: M, name: 'period', onChange: G, options: V, value: z }),
                     ),
                   ),
                 )
-              : l.a.createElement(y.b, { history: p, location: E, match: F })
+              : l.a.createElement(g.b, { history: h, location: O, match: x })
           },
         })
       }
-      var j = F.a.create(function (e) {
+      var H = O.a.create(function (e) {
         return { radioGroup: { padding: e.spaces.space16 } }
       })
-      t.default = p(H)
+      t.default = m(x)
     },
     CiSv: function (e, t, a) {
       'use strict'

@@ -40,23 +40,23 @@
         f = n('2VqO'),
         _ = n.n(f),
         g = n('KEM+'),
-        v = n.n(g),
-        b = (n('z84I'), n('ho0z'), n('2G9S'), n('ERkP')),
-        y = n.n(b),
+        b = n.n(g),
+        v = (n('z84I'), n('ho0z'), n('2G9S'), n('ERkP')),
+        y = n.n(v),
         T = n('es0u'),
         k = n('wM4e'),
         w = n('kHBp'),
-        E = n('wqZ5'),
-        L = n('rxPX'),
+        E = n('rxPX'),
+        L = n('wqZ5'),
         S = function (e) {
-          return w.a.selectMany(e, Object(E.f)(e))
+          return w.a.selectMany(e, Object(L.e)(e))
         },
-        F = Object(L.a)()
+        F = Object(E.a)()
           .propsFromState(function () {
             return { configurationFetchStatus: k.a, pinnedLists: S, selectedTimelineId: k.d, useLatest: k.e }
           })
           .propsFromActions(function () {
-            return { clearLocalPinnedListStorage: E.a, fetchPins: E.c, updateBehavior: k.f }
+            return { fetchPins: L.b, updateBehavior: k.f }
           })
           .withAnalytics({ page: 'home' }),
         C = n('s14A'),
@@ -65,7 +65,7 @@
         I = n('0+qk'),
         O = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
         M = n('G6rE'),
-        A = Object(L.a)()
+        A = Object(E.a)()
           .propsFromState(function () {
             return { loggedInUser: M.e.selectLoggedInUser }
           })
@@ -227,7 +227,7 @@
           },
         }),
         ue = n('1YZw'),
-        de = Object(L.a)()
+        de = Object(E.a)()
           .propsFromState(function () {
             return { selectedTimelineId: k.d, useLatest: k.e }
           })
@@ -256,10 +256,10 @@
         fe = n('mjJ+'),
         _e = n('v6aA'),
         ge = n('Lsrn'),
-        ve = n('k/Ka'),
-        be = function () {
+        be = n('k/Ka'),
+        ve = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ve.a)(
+          return Object(be.a)(
             'svg',
             i()(
               i()({}, e),
@@ -300,11 +300,11 @@
             ),
           )
         }
-      be.metadata = { width: 36, height: 36 }
-      var ye = be,
+      ve.metadata = { width: 36, height: 36 }
+      var ye = ve,
         Te = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ve.a)(
+          return Object(be.a)(
             'svg',
             i()(
               i()({}, e),
@@ -362,7 +362,7 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              v()(m()(e), '_renderActionMenu', function (t) {
+              b()(m()(e), '_renderActionMenu', function (t) {
                 var n = e.props.useLatest,
                   a = e._getContent().description,
                   i = n ? ye : ke
@@ -375,7 +375,7 @@
                   onCloseRequested: t,
                 })
               }),
-              v()(m()(e), '_getActionMenuItems', function () {
+              b()(m()(e), '_getActionMenuItems', function () {
                 var t = e._getContent(),
                   n = t.subText
                 return [
@@ -383,17 +383,17 @@
                   { link: '/settings/content_preferences', text: Le, onClick: e._handleContentPreferences, Icon: Ee.a },
                 ]
               }),
-              v()(m()(e), '_getContent', function () {
+              b()(m()(e), '_getContent', function () {
                 var t = e.props.useLatest
                 return e.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
                   ? { description: t ? Oe : Pe, subText: t ? Re : ze, text: t ? He : je }
                   : { description: t ? Ie : Pe, subText: t ? Ke : Be, text: t ? Me : Ae }
               }),
-              v()(m()(e), '_handleTimelineSwitch', function (t) {
+              b()(m()(e), '_handleTimelineSwitch', function (t) {
                 var n = e.props.onToggle
                 t(), n()
               }),
-              v()(m()(e), '_handleContentPreferences', function (t) {
+              b()(m()(e), '_handleContentPreferences', function (t) {
                 var n = e.props.onContentPreferencesSelect
                 t(), n()
               }),
@@ -422,7 +422,7 @@
             n
           )
         })(y.a.PureComponent)
-      v()(De, 'contextType', _e.a)
+      b()(De, 'contextType', _e.a)
       var Ue = J.a.create(function (e) {
           return {
             description: {
@@ -445,7 +445,7 @@
             for (var a = arguments.length, l = new Array(a), r = 0; r < a; r++) l[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(l))),
-              v()(m()(e), '_handleToggle', function () {
+              b()(m()(e), '_handleToggle', function () {
                 var t,
                   n = e.context,
                   a = n.featureSwitches,
@@ -466,10 +466,10 @@
                     m || s({ text: p })
                   })
               }),
-              v()(m()(e), '_handleSwitchPress', function () {
+              b()(m()(e), '_handleSwitchPress', function () {
                 e.props.analytics.scribe({ section: 'navigation_bar', element: 'customize_button', action: 'click' })
               }),
-              v()(m()(e), '_handleContentPreferencesSelect', function () {
+              b()(m()(e), '_handleContentPreferencesSelect', function () {
                 e.props.analytics.scribe({ component: 'customize', element: 'see_preferences', action: 'click' })
               }),
               e
@@ -493,7 +493,7 @@
             n
           )
         })(y.a.Component)
-      v()(Ne, 'contextType', _e.a)
+      b()(Ne, 'contextType', _e.a)
       var We,
         Ge,
         qe = de(Ne),
@@ -532,7 +532,7 @@
           var n
           return null !== (n = rt()(e, t).selectInitialFetchStatus(e)) && void 0 !== n ? n : nt.a.LOADING
         },
-        ot = Object(L.a)()
+        ot = Object(E.a)()
           .propsFromState(function () {
             return { initialFetchStatus: st, isColdStart: k.c, module: rt() }
           })
@@ -561,7 +561,7 @@
               mt.a,
             ),
             {},
-            v()({}, ut.b.EventSummary, Object(dt.a)({})),
+            b()({}, ut.b.EventSummary, Object(dt.a)({})),
           )
         },
         ht = n('97Jx'),
@@ -584,8 +584,8 @@
             width: 1200,
           },
         ],
-        vt = { headerMessage: K.a.d4d5785f, bodyMessage: K.a.f3f4c67b, buttonText: K.a.a399ed2f },
-        bt = K.a.d2c66f1f,
+        bt = { headerMessage: K.a.d4d5785f, bodyMessage: K.a.f3f4c67b, buttonText: K.a.a399ed2f },
+        vt = K.a.d2c66f1f,
         yt = K.a.c3fbf1da,
         Tt = K.a.bf17ded9,
         kt = function (e) {
@@ -593,14 +593,14 @@
             n = e.onButtonPress,
             a = e.onImpression,
             i = y.a.useContext(_e.a).featureSwitches.getStringValue('responsive_web_htl_empty_state_redesign_variant'),
-            l = 'a_no_graphic_new_copy' === (t = i) || 'b_new_graphic_new_copy' === t ? vt : void 0,
+            l = 'a_no_graphic_new_copy' === (t = i) || 'b_new_graphic_new_copy' === t ? bt : void 0,
             r = (function (e) {
               return 'b_new_graphic_new_copy' === e || 'c_new_graphic_old_copy' === e ? gt : void 0
             })(i)
           return y.a.createElement(
             _t.a,
             ft()(
-              { buttonLink: '/i/connect_people', buttonText: l ? l.buttonText : Tt, header: l ? l.headerMessage : bt },
+              { buttonLink: '/i/connect_people', buttonText: l ? l.buttonText : Tt, header: l ? l.headerMessage : vt },
               r && { imageVariants: r },
               { message: l ? l.bodyMessage : yt, onButtonPress: n, onImpression: a },
             ),
@@ -630,13 +630,13 @@
             f = e.withUserPresence,
             _ = void 0 !== f && f,
             g = y.a.useRef(!0),
-            v = y.a.useCallback(
+            b = y.a.useCallback(
               function () {
                 t.scribe({ component: 'empty_message', action: 'impression' })
               },
               [t],
             ),
-            b = y.a.useCallback(
+            v = y.a.useCallback(
               function () {
                 t.scribe({ component: 'empty_message', element: 'primary_cta', action: 'click' })
               },
@@ -656,9 +656,9 @@
             ),
             k = y.a.useCallback(
               function () {
-                return y.a.createElement(kt, { onButtonPress: b, onImpression: v })
+                return y.a.createElement(kt, { onButtonPress: v, onImpression: b })
               },
-              [b, v],
+              [v, b],
             )
           return (
             Object(St.a)(function () {
@@ -796,7 +796,7 @@
               [c],
             ),
             g = u ? '/'.concat(u.screen_name, '/topics') : '/i/topics/picker',
-            v = y.a.createElement(
+            b = y.a.createElement(
               Q.a,
               {
                 accessibilityLabel: Wt,
@@ -818,7 +818,7 @@
                   onVisibleRangeChange: f,
                   style: Zt.carousel,
                 },
-                [].concat(r()(m), [v]),
+                [].concat(r()(m), [b]),
               )
             : null
         },
@@ -854,9 +854,9 @@
             var l
             o()(this, a),
               (l = t.call(this, e, n)),
-              v()(m()(l), '_lastTimelineSwitchTimestamp', 0),
-              v()(m()(l), '_unmounted', !1),
-              v()(m()(l), '_getLink', function (e, t) {
+              b()(m()(l), '_lastTimelineSwitchTimestamp', 0),
+              b()(m()(l), '_unmounted', !1),
+              b()(m()(l), '_getLink', function (e, t) {
                 var n = l.props,
                   a = n.analytics,
                   i = n.selectedTimelineId,
@@ -879,7 +879,7 @@
                   to: { pathname: '/home' },
                 }
               }),
-              v()(m()(l), '_getLinks', function () {
+              b()(m()(l), '_getLinks', function () {
                 var e = l.props,
                   t = e.pinnedLists,
                   n = e.useLatest,
@@ -896,7 +896,7 @@
                   c = l._latestTimelineSwitchEnabled && n ? [i] : [a]
                 return [].concat(r()(l._isLatestPinned() ? o : c), r()(s))
               }),
-              v()(m()(l), '_getTimelineMetadata', function () {
+              b()(m()(l), '_getTimelineMetadata', function () {
                 var e = l._isLatestActive(),
                   t = e ? cn : on
                 return (
@@ -905,30 +905,30 @@
                   { scribeNamespace: t, title: l._pinnedListsEnabled ? rn : e ? ln : rn }
                 )
               }),
-              v()(m()(l), '_handleSoftLeftClick', function () {
+              b()(m()(l), '_handleSoftLeftClick', function () {
                 return l.props.history.push('/account')
               }),
-              v()(m()(l), '_handleTabRefresh', function () {
+              b()(m()(l), '_handleTabRefresh', function () {
                 var e
                 return null === (e = l._timeline) || void 0 === e ? void 0 : e.refreshOrGoTop()
               }),
-              v()(m()(l), '_handleWindowFocus', function () {
+              b()(m()(l), '_handleWindowFocus', function () {
                 var e
                 return null === (e = l._timeline) || void 0 === e ? void 0 : e.fetchTop({ onlyIfStale: !0 })
               }),
-              v()(m()(l), '_isLatestActive', function () {
+              b()(m()(l), '_isLatestActive', function () {
                 return l._isLatestPinned()
                   ? l.props.selectedTimelineId === me.a.HOME_LATEST
                   : l._latestTimelineSwitchEnabled && l.props.useLatest
               }),
-              v()(m()(l), '_isLatestPinned', function () {
+              b()(m()(l), '_isLatestPinned', function () {
                 return (
                   l._latestTimelineSwitchEnabled &&
                   l.props.useLatest &&
                   l.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
                 )
               }),
-              v()(m()(l), '_renderTimeline', function () {
+              b()(m()(l), '_renderTimeline', function () {
                 var e = l.props.selectedTimelineId,
                   t = l._isLatestActive(),
                   n = l._isLatestPinned(),
@@ -950,7 +950,7 @@
                   }),
                 )
               }),
-              v()(m()(l), '_renderPrimaryContent', function () {
+              b()(m()(l), '_renderPrimaryContent', function () {
                 var e = l.props,
                   t = e.configurationFetchStatus,
                   n = e.history,
@@ -978,7 +978,7 @@
                   ),
                 )
               }),
-              v()(m()(l), '_setTimelineRef', function (e) {
+              b()(m()(l), '_setTimelineRef', function (e) {
                 l._timeline = e
               })
             var s = l.context.featureSwitches
@@ -997,7 +997,6 @@
                   if (
                     ((this._lastTimelineSwitchTimestamp = Date.now()),
                     window.addEventListener('focus', this._handleWindowFocus),
-                    this.props.clearLocalPinnedListStorage(),
                     this._pinnedListsEnabled && this.props.fetchPins(),
                     this.context.featureSwitches.isTrue('responsive_web_framerate_tracking_home_enabled'))
                   ) {
@@ -1005,7 +1004,7 @@
                       a = 'home'.concat(t)
                     ;(Ze()
                       ? n
-                          .e(350)
+                          .e(351)
                           .then(n.bind(null, 'Iid0'))
                           .then(function (e) {
                             return e.default
@@ -1076,7 +1075,7 @@
             a
           )
         })(y.a.Component)
-      v()(dn, 'contextType', _e.a)
+      b()(dn, 'contextType', _e.a)
       var mn = J.a.create(function (e) {
         return { iconTwitter: { flexGrow: 1, height: '1.75rem', color: e.colors.primary } }
       })

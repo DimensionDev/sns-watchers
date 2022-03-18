@@ -46,18 +46,18 @@
       'use strict'
       n.r(t),
         n.d(t, 'PreviewActions', function () {
-          return E
+          return I
         })
       var a = n('ddV6'),
         i = n.n(a),
         r = (n('Blm6'), n('uFXj'), n('ERkP')),
         o = n.n(r),
-        u = n('qlwE'),
+        u = n('u7LJ'),
         s = n('rxPX'),
         l = n('5oBF'),
         d = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: l.e, undoTweetSettings: u.p }
+            return { previewTweet: l.e, undoTweetSettings: u.b }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -104,7 +104,7 @@
         T = p.a.gf5e9ea6,
         g = p.a.j4c40da3,
         h = p.a.b23688c7,
-        E = function (e) {
+        I = function (e) {
           var t = Object(m.f)(),
             n = e.analytics,
             a = e.communityIdValue,
@@ -116,8 +116,8 @@
             c = e.tweetType,
             p = e.undoPeriod,
             v = e.undoTweet,
-            E = o.a.useState(),
-            _ = i()(E, 2),
+            I = o.a.useState(),
+            _ = i()(I, 2),
             W = _[0],
             x = _[1],
             C = o.a.useState(!1),
@@ -125,8 +125,8 @@
             D = R[0],
             j = R[1],
             k = o.a.useState(1e3 * parseInt(p, 10)),
-            F = i()(k, 1)[0],
-            L = o.a.useState(parseInt(d, 10) - F),
+            L = i()(k, 1)[0],
+            F = o.a.useState(parseInt(d, 10) - L),
             P = (function (e, t) {
               var n = o.a.useState(0),
                 a = i()(n, 2),
@@ -150,7 +150,7 @@
                 ),
                 r
               )
-            })(F, i()(L, 1)[0])
+            })(L, i()(F, 1)[0])
           if (P >= 1) return null
           return 'number' != typeof d
             ? null
@@ -169,21 +169,21 @@
                         : n.width) || 0,
                     )
                   },
-                  style: I.root,
+                  style: E.root,
                 },
                 o.a.createElement(
                   w.a,
-                  { style: I.timer },
+                  { style: E.timer },
                   o.a.createElement(
                     w.a,
-                    { style: I.timerWrapper },
+                    { style: E.timerWrapper },
                     o.a.createElement(y.a, { accessibilityLabel: h, count: P, maxCount: 1 }),
                   ),
-                  !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, S),
+                  !W || W < 470 ? null : o.a.createElement(f.b, { style: E.sendingLabel, weight: 'bold' }, S),
                 ),
                 o.a.createElement(
                   w.a,
-                  { style: I.buttonWrapper },
+                  { style: E.buttonWrapper },
                   o.a.createElement(
                     b.a,
                     {
@@ -231,7 +231,7 @@
                 ),
               )
         },
-        I = v.a.create(function (e) {
+        E = v.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,
@@ -248,7 +248,7 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        _ = d(E)
+        _ = d(I)
       t.default = _
     },
   },

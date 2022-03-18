@@ -40,7 +40,7 @@
         },
         x = Object(C.a)()
           .propsFromState(function () {
-            return { list: L, user: _, dataSaverMode: E.j, couldPinList: w.b, media: I }
+            return { list: L, user: _, dataSaverMode: E.j, couldPinList: w.a, media: I }
           })
           .adjustStateProps(function (e) {
             var t = e.couldPinList,

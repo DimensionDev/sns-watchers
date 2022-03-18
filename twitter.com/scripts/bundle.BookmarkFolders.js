@@ -1368,9 +1368,9 @@
                     }),
                     t && t(e))
               }),
-              g()(m()(o), '_handleFocus', function (e) {
-                var t = o.props.onFocus
-                o.setState({ isFocused: !0 }), t && t(e)
+              g()(m()(o), '_handleFocus', function () {
+                var e = o.props.onFocus
+                o.setState({ isFocused: !0 }), e && e()
               }),
               g()(m()(o), '_handleKeyPress', function (e) {
                 var t = o.props,

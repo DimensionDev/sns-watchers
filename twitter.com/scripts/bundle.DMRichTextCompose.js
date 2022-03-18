@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [52, 8, 20, 235],
+  [52, 8, 20, 236],
   {
     '+0pD': function (e, t) {
       var n =
@@ -11282,13 +11282,14 @@
                 h()(l()(e), 'blur', function () {
                   e._editor && e._editor.blur()
                 }),
-                h()(l()(e), 'value', function () {
+                h()(l()(e), 'getValue', function () {
                   return e.props.editorState.getCurrentContent().getPlainText()
                 }),
                 h()(l()(e), 'getOffsetHeight', function () {
                   var t = (e._editor || {}).editor
                   return (t && t.offsetHeight) || 0
                 }),
+                h()(l()(e), 'clear', function () {}),
                 h()(l()(e), '_setEditorRef', function (t) {
                   e._editor = t
                 }),

@@ -4,10 +4,10 @@
     LQrL: function (e, t, n) {
       'use strict'
       n.d(t, 'd', function () {
-        return h
+        return g
       }),
         n.d(t, 'c', function () {
-          return g
+          return h
         }),
         n.d(t, 'b', function () {
           return y
@@ -33,7 +33,7 @@
             n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
         },
         p = { clipPath: 'circle(0% at center)' },
-        h = {
+        g = {
           strategy: function (e, t, n) {
             e.findEntityRanges(function (e) {
               var t = e.getEntity(),
@@ -47,7 +47,7 @@
               : null
           },
         },
-        g = {
+        h = {
           strategy: f,
           component: function (e) {
             var t = l()(e.decoratedText)[0]
@@ -126,9 +126,9 @@
         d = n('2VqO'),
         f = n.n(d),
         p = n('KEM+'),
-        h = n.n(p),
-        g = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
-        y = n.n(g),
+        g = n.n(p),
+        h = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
+        y = n.n(h),
         v = n('oEoC'),
         m = n('2dXj'),
         C = n('4bHO'),
@@ -144,9 +144,9 @@
             for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              h()(c()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
-              h()(c()(e), '_genericWrapperRef', y.a.createRef()),
-              h()(c()(e), 'render', function () {
+              g()(c()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
+              g()(c()(e), '_genericWrapperRef', y.a.createRef()),
+              g()(c()(e), 'render', function () {
                 var t = e.props,
                   n = t.children,
                   r = t.contextText,
@@ -174,14 +174,14 @@
                   n(e._handleInputChange),
                 )
               }),
-              h()(c()(e), '_getCaret', function (e) {
+              g()(c()(e), '_getCaret', function (e) {
                 return e.getSelection().getStartOffset()
               }),
-              h()(c()(e), '_getPlaintextFromCurrentBlock', function (e) {
+              g()(c()(e), '_getPlaintextFromCurrentBlock', function (e) {
                 var t = e.getSelection().anchorKey
                 return e.getCurrentContent().getBlockForKey(t).getText()
               }),
-              h()(c()(e), '_handleSelectItem', function (t) {
+              g()(c()(e), '_handleSelectItem', function (t) {
                 var n = e.props.onTextUpdated,
                   r = e.state.queryContext
                 if (r) {
@@ -190,7 +190,7 @@
                 }
                 e._setQueryContext(void 0)
               }),
-              h()(c()(e), '_handleInputChange', function (t) {
+              g()(c()(e), '_handleInputChange', function (t) {
                 if (!Object(S.a)(t))
                   throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
                 var n = e.state.queryContext,
@@ -210,10 +210,10 @@
                     e._setQueryContext({ word: s, resultType: d, editorState: t, startIndex: l, endIndex: i })
                   } else e._setQueryContext(void 0)
               }),
-              h()(c()(e), '_setQueryContext', function (t) {
+              g()(c()(e), '_setQueryContext', function (t) {
                 return e.setState({ queryContext: t, canShowTypeahead: !!t })
               }),
-              h()(c()(e), '_handleDismiss', function () {
+              g()(c()(e), '_handleDismiss', function () {
                 return e.setState({ canShowTypeahead: !1 })
               }),
               e
@@ -393,9 +393,9 @@
             d = e.getCurrentContent().getSelectionAfter(),
             f = e.getCurrentContent(),
             p = f.getBlocksAsArray(),
-            h = 'number' == typeof t && t > -1,
-            g = h ? i(p, t) : Object.freeze({})
-          if ((r && ((u = l(u, g)), (n = !0)), h && ((u = c(u, g)), (n = !0)), n)) {
+            g = 'number' == typeof t && t > -1,
+            h = g ? i(p, t) : Object.freeze({})
+          if ((r && ((u = l(u, h)), (n = !0)), g && ((u = c(u, h)), (n = !0)), n)) {
             var y = (u = a.EditorState.forceSelection(u, o)).getCurrentContent()
             ;(y = (y = y.set('selectionBefore', s)).set('selectionAfter', d)),
               (u = a.EditorState.set(e, { allowUndo: !0, currentContent: y }))
@@ -417,9 +417,9 @@
         d = n('2VqO'),
         f = n.n(d),
         p = n('KEM+'),
-        h = n.n(p),
-        g = n('97Jx'),
-        y = n.n(g),
+        g = n.n(p),
+        h = n('97Jx'),
+        y = n.n(h),
         v =
           (n('2G9S'),
           n('jwue'),
@@ -497,7 +497,7 @@
               for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
               return (
                 (e = t.call.apply(t, [this].concat(a))),
-                h()(c()(e), '_setSelectionToStart', function () {
+                g()(c()(e), '_setSelectionToStart', function () {
                   var t = e.props.editorState,
                     n = t.getCurrentContent().getFirstBlock().getKey()
                   return _.EditorState.acceptSelection(
@@ -511,11 +511,11 @@
                     }),
                   )
                 }),
-                h()(c()(e), '_setFocusToStart', function () {
+                g()(c()(e), '_setFocusToStart', function () {
                   var t = e._setSelectionToStart()
                   return _.EditorState.forceSelection(t, t.getSelection())
                 }),
-                h()(c()(e), '_setFocusToEnd', function () {
+                g()(c()(e), '_setFocusToEnd', function () {
                   var t = e.props,
                     n = t.autoFocus,
                     r = t.editorState,
@@ -524,33 +524,34 @@
                     ? null == o || o(_.EditorState.moveFocusToEnd(r))
                     : null == o || o(_.EditorState.moveSelectionToEnd(r))
                 }),
-                h()(c()(e), '_setDraftJsStyle', function () {
+                g()(c()(e), '_setDraftJsStyle', function () {
                   var t = e.props.placeholderTextColor,
                     n = document.createElement('style')
                   n.innerHTML = S({ placeholderTextColor: t })
                   var r = document.head
                   r && r.insertBefore(n, r.firstChild)
                 }),
-                h()(c()(e), 'focus', function () {
+                g()(c()(e), 'focus', function () {
                   e._editor && e._editor.focus()
                 }),
-                h()(c()(e), 'blur', function () {
+                g()(c()(e), 'blur', function () {
                   e._editor && e._editor.blur()
                 }),
-                h()(c()(e), 'value', function () {
+                g()(c()(e), 'getValue', function () {
                   return e.props.editorState.getCurrentContent().getPlainText()
                 }),
-                h()(c()(e), 'getOffsetHeight', function () {
+                g()(c()(e), 'getOffsetHeight', function () {
                   var t = (e._editor || {}).editor
                   return (t && t.offsetHeight) || 0
                 }),
-                h()(c()(e), '_setEditorRef', function (t) {
+                g()(c()(e), 'clear', function () {}),
+                g()(c()(e), '_setEditorRef', function (t) {
                   e._editor = t
                 }),
-                h()(c()(e), '_handleViewClick', function () {
+                g()(c()(e), '_handleViewClick', function () {
                   return e.focus()
                 }),
-                h()(c()(e), '_onPastedFiles', function (t) {
+                g()(c()(e), '_onPastedFiles', function (t) {
                   var n = e.props.onFilesAdded,
                     r = []
                   return (
@@ -560,14 +561,14 @@
                     r.length && (null == n ? void 0 : n(r)) ? 'handled' : 'not-handled'
                   )
                 }),
-                h()(c()(e), '_removeNewLines', function (e, t) {
+                g()(c()(e), '_removeNewLines', function (e, t) {
                   return _.EditorState.push(
                     t,
                     _.Modifier.replaceText(t.getCurrentContent(), t.getSelection(), e.replace(/[\r\n]+/g, ' ')),
                     'insert-characters',
                   )
                 }),
-                h()(c()(e), '_removeInvalidStylesFromContentBlock', function (t) {
+                g()(c()(e), '_removeInvalidStylesFromContentBlock', function (t) {
                   var n = e.props.pastedStylesAllowlist,
                     r = t.getCharacterList().map(function (e) {
                       return e
@@ -581,7 +582,7 @@
                     })
                   return (null != n && n.includes(t.getType()) ? t : t.set('type', 'unstyled')).set('characterList', r)
                 }),
-                h()(c()(e), '_removeInvalidStyles', function (t, n) {
+                g()(c()(e), '_removeInvalidStyles', function (t, n) {
                   var r = e.props.blockRenderMap,
                     o = t ? Object(_.convertFromHTML)(t, void 0, r) : void 0
                   if (o) {
@@ -601,7 +602,7 @@
                   }
                   return null
                 }),
-                h()(c()(e), '_onPastedText', function (t, n, r) {
+                g()(c()(e), '_onPastedText', function (t, n, r) {
                   var o = e.props,
                     a = o.multiline,
                     i = o.onChange,
@@ -615,23 +616,23 @@
                   }
                   return 'not-handled'
                 }),
-                h()(c()(e), '_myKeyBindingFn', function (t) {
+                g()(c()(e), '_myKeyBindingFn', function (t) {
                   var n = e.props,
                     r = n.dismissComposerCommandName,
                     o = n.sendTweetCommandName,
                     a = _.KeyBindingUtil.hasCommandModifier
                   return 13 === t.keyCode && a(t) ? o : 27 === t.keyCode ? r : Object(_.getDefaultKeyBinding)(t)
                 }),
-                h()(c()(e), '_onKeyCommand', function (t) {
+                g()(c()(e), '_onKeyCommand', function (t) {
                   var n = e.props.keyCommandHandlers,
                     r = n && n[t]
                   return r ? (r(), 'handled') : 'not-handled'
                 }),
-                h()(c()(e), '_onSingleLineReturn', function (t, n) {
+                g()(c()(e), '_onSingleLineReturn', function (t, n) {
                   var r = e.props.handleReturn
                   return null == r || r(t, n), 'handled'
                 }),
-                h()(c()(e), '_getContainerStyle', function () {
+                g()(c()(e), '_getContainerStyle', function () {
                   var t = e.props,
                     n = t.appTextSize,
                     r = t.maxNumberOfLines,
@@ -694,7 +695,7 @@
                         d = t.onChange,
                         f = t.onFocus,
                         p = t.onKeyDown,
-                        g = t.onKeyPress,
+                        h = t.onKeyPress,
                         y = t.onKeyUp,
                         v = t.pastedStylesAllowlist,
                         S = t.placeholder,
@@ -718,9 +719,9 @@
                           blockRendererFn: l,
                           customAttrs:
                             ((e = {}),
-                            h()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
-                            h()(e, 'onKeyPress', g),
-                            h()(e, 'onKeyUp', y),
+                            g()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            g()(e, 'onKeyPress', h),
+                            g()(e, 'onKeyUp', y),
                             e),
                           customStyleMap: K(m.a.theme),
                           editorState: c,
@@ -755,7 +756,7 @@
               n
             )
           })(E.a.Component))
-      h()(F, 'defaultProps', {
+      g()(F, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},

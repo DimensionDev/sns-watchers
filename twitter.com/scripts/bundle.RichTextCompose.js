@@ -4335,7 +4335,6 @@
         Ve = B.a.create(function (e) {
           return {
             root: { flexDirection: 'column', paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge },
-            popover: { maxWidth: 5 * e.spacesPx.space64 },
             modal: { borderRadius: e.borderRadii.none },
             title: { flexDirection: 'column', paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space12 },
             createButton: { marginTop: e.spaces.space16, marginHorizontal: e.spaces.space16 },
@@ -4355,7 +4354,7 @@
                 accessibilityDescribedBy: 'trusted-friends-education-popover',
                 accessibilityLabelledBy: 'trustd-friends-education-title',
                 accessibilityRole: 'dialog',
-                style: [Ve.root, Ve.popover],
+                style: Ve.root,
               },
               w.a.createElement(
                 K.a,
@@ -4568,27 +4567,28 @@
             D = h.exclusivityControlValue || !1,
             A = h.trustedFriendsValue || !1,
             P = null == C ? void 0 : C.rest_id,
-            L = (f && !E) || (b && x),
-            O = dt
-          if ((M && null != E && E.name ? (O = E.name) : D ? (O = pt) : A && (O = mt), D))
+            L = b && x,
+            O = (f && !E) || L,
+            F = dt
+          if ((M && null != E && E.name ? (F = E.name) : D ? (F = pt) : A && (F = mt), D))
             t = { color: 'plum500', borderColor: 'plum500', backgroundColor: 'transparent' }
           else if (M && null != E && E.theme && I) {
-            var F = st.a.getCommunityUIColorName(E.theme)
-            t = { color: F, borderColor: F, backgroundColor: 'transparent' }
+            var B = st.a.getCommunityUIColorName(E.theme)
+            t = { color: B, borderColor: B, backgroundColor: 'transparent' }
           } else t = { type: 'brandOutlined' }
           Object(ot.a)(function () {
             var t = e.fetchOrCreateTrustedFriendsList
             b && (null == t || t())
           })
-          var B = w.a.useCallback(
+          var j = w.a.useCallback(
               function () {
                 u(!1), p(), m()
               },
               [p, m],
             ),
-            j = w.a.useCallback(
+            N = w.a.useCallback(
               function (e) {
-                return x
+                return L && !M
                   ? w.a.createElement(ze, { history: lt.a, onAction: e, setShowTrustedFriendsModal: s })
                   : w.a.createElement(se, {
                       audienceControlsValue: h,
@@ -4599,16 +4599,16 @@
                       isSuperFollowsCreator: y,
                       isTrustedFriendsEnabled: b,
                       onAudienceControlsValueChange: function (e) {
-                        B(), _(e)
+                        j(), _(e)
                       },
                       sliceModule: T,
                       trustedFriendsList: C,
                       updateSingleComposer: S,
                     })
               },
-              [B, T, S, h, g, v, y, C, x, _, b],
+              [j, T, S, h, g, v, y, C, _, M, L, b],
             ),
-            N = w.a.useCallback(
+            V = w.a.useCallback(
               function () {
                 P &&
                   _({
@@ -4628,7 +4628,7 @@
                   { style: gt.container },
                   o
                     ? w.a.createElement(rt, {
-                        changeAudienceToTrustedFriends: N,
+                        changeAudienceToTrustedFriends: V,
                         history: lt.a,
                         setShowModal: s,
                         trustedFriendsListId: P,
@@ -4637,12 +4637,12 @@
                   w.a.createElement(
                     ct.a,
                     {
-                      onDismiss: B,
+                      onDismiss: j,
                       onOpen: function () {
                         u(!0)
                       },
-                      renderContent: j,
-                      visibilityBehavior: L && !o ? 'forceVisible' : 'interactive',
+                      renderContent: N,
+                      visibilityBehavior: O && !o ? 'forceVisible' : 'interactive',
                     },
                     w.a.createElement(
                       q.a,
@@ -4657,7 +4657,7 @@
                         },
                         t,
                       ),
-                      O,
+                      F,
                     ),
                   ),
                 ),
@@ -7293,7 +7293,7 @@
         Jr = n('5oBF'),
         Zr = n('JYYi'),
         $r = n('/Rsk'),
-        ei = n('qlwE'),
+        ei = n('u7LJ'),
         ti = n('XOJV'),
         ni = n('G6rE'),
         ai = n('AspN'),
@@ -7462,6 +7462,7 @@
           addMedia: ai.b,
           processMultipleMedia: ai.g,
           removeMediaUpload: ai.i,
+          removeToast: Yr.c,
           updateSingleComposer: ce.w,
           setActiveParentKey: ce.r,
           copyDataFromInlineComposerToModalComposer: ce.c,
@@ -7494,7 +7495,7 @@
             selectedCommunityName: pi,
             sendingProgress: ce.o,
             convoCardData: Ei,
-            undoTweetSettings: ei.p,
+            undoTweetSettings: ei.b,
             userLanguage: he.o,
             quotedStatusId: ki,
           })
@@ -8000,8 +8001,9 @@
               _()(h()(s), '_handleDeletePreviewTweet', function () {
                 var e = s.props,
                   t = e.deletePreviewTweet,
-                  n = e.previewTweetId
-                n && t(n)
+                  n = e.previewTweetId,
+                  a = e.removeToast
+                n && (a(), t(n))
               }),
               _()(h()(s), '_handleAnimateComplete', function () {
                 var e = s.props,
@@ -9775,13 +9777,14 @@
                 h()(l()(e), 'blur', function () {
                   e._editor && e._editor.blur()
                 }),
-                h()(l()(e), 'value', function () {
+                h()(l()(e), 'getValue', function () {
                   return e.props.editorState.getCurrentContent().getPlainText()
                 }),
                 h()(l()(e), 'getOffsetHeight', function () {
                   var t = (e._editor || {}).editor
                   return (t && t.offsetHeight) || 0
                 }),
+                h()(l()(e), 'clear', function () {}),
                 h()(l()(e), '_setEditorRef', function (t) {
                   e._editor = t
                 }),
@@ -10427,9 +10430,9 @@
                     }),
                     t && t(e))
               }),
-              y()(p()(a), '_handleFocus', function (e) {
-                var t = a.props.onFocus
-                a.setState({ isFocused: !0 }), t && t(e)
+              y()(p()(a), '_handleFocus', function () {
+                var e = a.props.onFocus
+                a.setState({ isFocused: !0 }), e && e()
               }),
               y()(p()(a), '_handleKeyPress', function (e) {
                 var t = a.props,
@@ -11778,30 +11781,6 @@
           )
         })(g.a.Component)
       t.a = w
-    },
-    ulNE: function (e, t, n) {
-      'use strict'
-      var a = n('ax0f'),
-        r = n('42ly'),
-        i = n('N9G2'),
-        o = n('BIH/'),
-        s = n('lhaq'),
-        l = n('aoZ+')
-      a(
-        { target: 'Array', proto: !0 },
-        {
-          flat: function () {
-            var e = arguments.length ? arguments[0] : void 0,
-              t = i(this),
-              n = o(t),
-              a = l(t, 0)
-            return (a.length = r(a, t, t, n, 0, void 0 === e ? 1 : s(e))), a
-          },
-        },
-      )
-    },
-    'urw/': function (e, t, n) {
-      n('7St7')('flat')
     },
     w3n3: function (e, t, n) {
       'use strict'

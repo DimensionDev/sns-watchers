@@ -9021,85 +9021,90 @@
     cL2e: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return I
+        return M
       }),
         n.d(t, 'a', function () {
-          return P
+          return H
         }),
         n.d(t, 'b', function () {
-          return N
+          return V
         })
       var a,
         l,
         i = n('ERkP'),
         r = n.n(i),
-        o = (n('enFi'), n('TEoO')),
-        s = n('Fr3L'),
-        c = (n('ho0z'), n('j57/')),
-        u = n('ja7Y'),
-        m = n('rHpw'),
-        d = n('MjKK'),
-        y = n('jAXQ'),
-        p = n.n(y),
-        g = function (e) {
+        o = n('FIs5'),
+        s = (n('enFi'), n('3XMw')),
+        c = n.n(s),
+        u = n('TEoO'),
+        m = n('Fr3L'),
+        d = (n('ho0z'), n('j57/')),
+        y = n('ja7Y'),
+        p = n('rHpw'),
+        g = n('MjKK'),
+        f = n('jAXQ'),
+        h = n.n(f),
+        b = function (e) {
           var t = e.item,
-            l = p()(void 0 !== a ? a : (a = n('08/x')), t),
-            i = Object(d.b)(l)
-          return r.a.createElement(c.a, {
+            l = h()(void 0 !== a ? a : (a = n('08/x')), t),
+            i = Object(g.b)(l)
+          return r.a.createElement(d.a, {
             communityId: l.rest_id,
             media: i,
             memberCount: l.member_count,
-            membersFacepile: r.a.createElement(u.a, { community: l, shouldUseThemeColor: !1, style: f.facepile }),
+            membersFacepile: r.a.createElement(y.a, { community: l, shouldUseThemeColor: !1, style: v.facepile }),
             name: l.name,
           })
         },
-        f = m.a.create(function (e) {
+        v = p.a.create(function (e) {
           return { facepile: { justifyContent: 'flex-start' } }
         }),
-        h = r.a.memo(g),
-        b = n('s8G+'),
-        v = n('DQzJ'),
-        _ = { context: 'CommunitiesSearchQuery' },
-        k = function (e) {
+        _ = r.a.memo(b),
+        k = n('s8G+'),
+        E = n('DQzJ'),
+        C = { context: 'CommunitiesSearchQuery' },
+        S = c.a.c170a564,
+        F = c.a.ae111c99,
+        I = function (e) {
           return e.__id
         },
-        E = void 0 !== l ? l : (l = n('DVIF')),
-        C = function (e) {
-          return r.a.createElement(h, { item: e })
+        w = void 0 !== l ? l : (l = n('DVIF')),
+        T = function (e) {
+          return r.a.createElement(_, { item: e })
         },
-        S = function (e) {
+        K = function (e) {
           var t,
             n = e.query,
             a = void 0 === n ? '' : n,
-            l = Object(v.a)(E, { query: a }),
+            l = Object(E.a)(w, { query: a }),
             i = l.data,
             s = l.fetchNext,
             c = null == i || null === (t = i.communities_search_slice) || void 0 === t ? void 0 : t.items
-          return r.a.createElement(o.a, {
-            cacheKey: 'CommunitiesSearch',
-            identityFunction: k,
-            items: c,
-            onNearEnd: s,
-            renderer: C,
-          })
+          return 0 === c.length
+            ? r.a.createElement(o.a, { header: F({ query: a }), message: S })
+            : r.a.createElement(u.a, {
+                cacheKey: 'CommunitiesSearch',
+                identityFunction: I,
+                items: c,
+                onNearEnd: s,
+                renderer: T,
+              })
         },
-        F = function (e) {
+        L = function (e) {
           var t = e.query
-          return Object(b.a)('c9s_communities_search_enabled') && t
-            ? r.a.createElement(s.a, { errorConfig: _ }, r.a.createElement(S, { query: t }))
+          return Object(k.a)('c9s_communities_search_enabled') && t
+            ? r.a.createElement(m.a, { errorConfig: C }, r.a.createElement(K, { query: t }))
             : null
         },
-        I = r.a.memo(F),
-        w = n('ddV6'),
-        T = n.n(w),
-        K = (n('KqXw'), n('MvUL'), n('VY6S')),
-        L = n('6OUF'),
-        M = n('3XMw'),
-        x = n.n(M),
-        R = n('VwDm'),
-        O = n('zCf4'),
-        A = x.a.fbf01e51,
-        j = function (e) {
+        M = r.a.memo(L),
+        x = n('ddV6'),
+        R = n.n(x),
+        O = (n('KqXw'), n('MvUL'), n('VY6S')),
+        A = n('6OUF'),
+        j = n('VwDm'),
+        P = n('zCf4'),
+        D = c.a.fbf01e51,
+        B = function (e) {
           var t = e.initialValue,
             n = void 0 === t ? '' : t,
             a = r.a.useRef(!1)
@@ -9112,10 +9117,10 @@
             )
           }, [])
           var l = r.a.useState(n),
-            i = T()(l, 2),
+            i = R()(l, 2),
             o = i[0],
             s = i[1],
-            c = Object(O.f)(),
+            c = Object(P.f)(),
             u = r.a.useCallback(
               function () {
                 s(''), c.replace('/i/communities/suggested')
@@ -9124,7 +9129,7 @@
             ),
             m = r.a.useMemo(
               function () {
-                return Object(K.a)(function (e) {
+                return Object(O.a)(function (e) {
                   a.current && (e.length > 0 ? c.replace('/i/communities/suggested?q='.concat(e)) : u())
                 }, 1e3)
               },
@@ -9137,32 +9142,32 @@
               },
               [m],
             )
-          return r.a.createElement(L.a, {
-            Icon: R.a,
+          return r.a.createElement(A.a, {
+            Icon: j.a,
             autoComplete: 'off',
             isCompact: !0,
             onChange: d,
             onClear: u,
-            placeholder: A,
+            placeholder: D,
             value: o,
             withClearButton: !0,
           })
         },
-        P = r.a.memo(j),
-        D = n('/yvb'),
-        B = x.a.fbf01e51,
-        H = function (e) {
-          return Object(b.a)('c9s_communities_search_enabled')
-            ? r.a.createElement(D.a, {
-                icon: r.a.createElement(R.a, { accessibilityLabel: B, style: U.searchButton }),
+        H = r.a.memo(B),
+        N = n('/yvb'),
+        U = c.a.fbf01e51,
+        z = function (e) {
+          return Object(k.a)('c9s_communities_search_enabled')
+            ? r.a.createElement(N.a, {
+                icon: r.a.createElement(j.a, { accessibilityLabel: U, style: q.searchButton }),
                 link: '/i/communities/suggested',
                 size: 'medium',
                 type: 'brandText',
               })
             : null
         },
-        N = r.a.memo(H),
-        U = m.a.create(function (e) {
+        V = r.a.memo(z),
+        q = p.a.create(function (e) {
           return { searchButton: { color: e.colors.text } }
         })
     },
@@ -9235,19 +9240,25 @@
         c = n('OUEC'),
         u = n('3XMw'),
         m = n.n(u),
-        d = n('yoO3'),
-        y = n('fTQJ'),
-        p = n('VS6U'),
-        g = n('s8G+'),
-        f = n('cL2e'),
-        h = n('zCf4'),
-        b = m.a.cb6adb1f,
-        v = function (e) {
-          var t = Object(h.f)(),
-            n = Object(h.g)(),
-            a = Object(g.a)('c9s_communities_search_enabled'),
+        d = n('6vad'),
+        y = n('yoO3'),
+        p = n('fTQJ'),
+        g = n('VS6U'),
+        f = n('s8G+'),
+        h = n('cL2e'),
+        b = n('zCf4'),
+        v = m.a.cb6adb1f,
+        _ = function (e) {
+          var t = Object(b.f)(),
+            n = Object(b.g)(),
+            a = Object(f.a)('c9s_communities_search_enabled'),
             r = l.a.useCallback(function () {
-              return l.a.createElement(y.a, { entryConfiguration: c.a, module: s, refreshControl: null, title: b })
+              return l.a.createElement(
+                l.a.Fragment,
+                null,
+                l.a.createElement(d.b, { text: v }),
+                l.a.createElement(p.a, { entryConfiguration: c.a, module: s, refreshControl: null, title: '' }),
+              )
             }, []),
             o = l.a.useMemo(
               function () {
@@ -9258,26 +9269,26 @@
             ),
             u = l.a.useCallback(
               function () {
-                return o ? l.a.createElement(f.c, { query: o }) : r()
+                return o ? l.a.createElement(h.c, { query: o }) : r()
               },
               [r, o],
             ),
             m = a ? u() : r()
           return l.a.createElement(
-            d.a,
+            y.a,
             { behavioralEventViewType: 'discover' },
-            l.a.createElement(p.a, {
+            l.a.createElement(g.a, {
               backLocation: '/',
-              customSearchBox: a ? l.a.createElement(f.a, { initialValue: o }) : null,
+              customSearchBox: a ? l.a.createElement(h.a, { initialValue: o }) : null,
               history: t,
               primaryContent: m,
-              sidebarContent: l.a.createElement(i.a, null),
-              title: b,
+              sidebarContent: l.a.createElement(i.a, { withSearchBox: !1 }),
+              title: v,
               withSearchBox: a,
             }),
           )
         }
-      t.default = l.a.memo(v)
+      t.default = l.a.memo(_)
     },
     dMLx: function (e, t, n) {
       'use strict'
@@ -12337,9 +12348,9 @@
                     }),
                     t && t(e))
               }),
-              b()(d()(a), '_handleFocus', function (e) {
-                var t = a.props.onFocus
-                a.setState({ isFocused: !0 }), t && t(e)
+              b()(d()(a), '_handleFocus', function () {
+                var e = a.props.onFocus
+                a.setState({ isFocused: !0 }), e && e()
               }),
               b()(d()(a), '_handleKeyPress', function (e) {
                 var t = a.props,
@@ -14178,30 +14189,6 @@
         return { root: { flexDirection: 'row', justifyContent: 'space-around' }, flexWrap: { flexWrap: 'wrap' } }
       })
       t.a = L
-    },
-    ulNE: function (e, t, n) {
-      'use strict'
-      var a = n('ax0f'),
-        l = n('42ly'),
-        i = n('N9G2'),
-        r = n('BIH/'),
-        o = n('lhaq'),
-        s = n('aoZ+')
-      a(
-        { target: 'Array', proto: !0 },
-        {
-          flat: function () {
-            var e = arguments.length ? arguments[0] : void 0,
-              t = i(this),
-              n = r(t),
-              a = s(t, 0)
-            return (a.length = l(a, t, t, n, 0, void 0 === e ? 1 : o(e))), a
-          },
-        },
-      )
-    },
-    'urw/': function (e, t, n) {
-      n('7St7')('flat')
     },
     w9f9: function (e, t, n) {
       'use strict'

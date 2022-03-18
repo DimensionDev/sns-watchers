@@ -15,8 +15,8 @@
         s()
         var u,
           d = i(),
-          f = n.fetchKey,
-          p = n.fetchPolicy,
+          p = n.fetchKey,
+          f = n.fetchPolicy,
           m = n.source,
           y = n.variables,
           g = n.networkCacheConfig,
@@ -25,13 +25,13 @@
           v.request.node.params.name !== n.name && l(!1),
             (u = {
               componentDisplayName: 'usePreloadedQuery()',
-              fetchKey: f,
+              fetchKey: p,
               fetchObservable: o(d, v.request.identifier, function () {
                 return d === n.environment && null != m
                   ? d.executeWithSource({ operation: v, source: m })
                   : d.execute({ operation: v })
               }),
-              fetchPolicy: p,
+              fetchPolicy: f,
               query: v,
               renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy,
             })
@@ -40,8 +40,8 @@
           u = {
             componentDisplayName: 'usePreloadedQuery()',
             fetchObservable: null != m && d === n.environment ? m.ifEmpty(k) : (n.environment, k),
-            fetchKey: f,
-            fetchPolicy: p,
+            fetchKey: p,
+            fetchPolicy: f,
             query: v,
             renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy,
           }
@@ -62,12 +62,12 @@
         s = r.n(i),
         u = (r('enFi'), r('rZeG')),
         o = r('kGix'),
-        c = (r('ho0z'), r('hBpG'), r('7x/C'), r('1t7P'), r('jQ/y'), r('uFXj'), r('lD8l')),
-        d = r('+7VC'),
-        f = r('v//M'),
-        p = r('3XMw'),
-        m = r.n(p),
-        y = r('VTDR'),
+        c = (r('ho0z'), r('hBpG'), r('7x/C'), r('1t7P'), r('jQ/y'), r('uFXj'), r('v//M')),
+        d = r('3XMw'),
+        p = r.n(d),
+        f = r('VTDR'),
+        m = r('01Kk'),
+        y = r('Q8kk'),
         g = r('MAc7'),
         v = r('9VLy'),
         k = r('t62R'),
@@ -77,12 +77,12 @@
             k.b,
             { color: 'gray700', style: n },
             s.a.createElement(
-              m.a.I18NFormatMessage,
+              p.a.I18NFormatMessage,
               { $i18n: 'fce78785' },
               s.a.createElement(
                 k.b,
                 { color: 'plum500', link: 'https://legal.twitter.com/en/purchaser-terms.html' },
-                m.a.d822ae43,
+                p.a.d822ae43,
               ),
             ),
           )
@@ -95,17 +95,17 @@
         E = r('rHpw'),
         K = r('sgih'),
         T = r('jAXQ'),
-        C = r.n(T),
-        R = m.a.cbc8ce27,
-        L = m.a.b600eb88,
-        P = m.a.b08bbeb4,
-        D = m.a.d2613122,
-        Q = m.a.g61ed8a4,
-        U = m.a.c3d23f10,
-        N = m.a.d338f53e,
-        A = void 0 !== l ? l : (l = r('l62v')),
-        I = void 0 !== a ? a : (a = r('E0zt')),
-        O = E.a.create(function (e) {
+        R = r.n(T),
+        C = p.a.cbc8ce27,
+        L = p.a.b600eb88,
+        P = p.a.b08bbeb4,
+        Q = p.a.d2613122,
+        D = p.a.g61ed8a4,
+        U = p.a.c3d23f10,
+        A = p.a.d338f53e,
+        N = void 0 !== l ? l : (l = r('l62v')),
+        O = void 0 !== a ? a : (a = r('E0zt')),
+        B = E.a.create(function (e) {
           return {
             sheet: {
               backgroundColor: e.colors.cellBackground,
@@ -127,19 +127,19 @@
             wide: { maxHeight: '600px', paddingHorizontal: e.spaces.space64 },
           }
         }),
-        x = function (e) {
+        I = function (e) {
           var n = e.fetchStatus,
             r = e.onRetry,
             l = e.screenName,
             a = e.user,
             t = e.viewer,
-            i = C()(A, a),
-            u = C()(I, t),
+            i = R()(N, a),
+            u = R()(O, t),
             o = Object(_.f)(),
-            p = function () {
+            d = function () {
               o.push('/'.concat(l, '/superfollows'))
             },
-            m = function () {
+            p = function () {
               var e,
                 n,
                 r,
@@ -147,9 +147,9 @@
                 a,
                 t,
                 o,
-                f,
-                m,
-                y = null !== (e = null == i ? void 0 : i.legacy.name) && void 0 !== e ? e : void 0,
+                c,
+                p,
+                f = null !== (e = null == i ? void 0 : i.legacy.name) && void 0 !== e ? e : void 0,
                 k = null !== (n = null == i ? void 0 : i.legacy.profile_image_url_https) && void 0 !== n ? n : void 0,
                 _ = null !== (r = null == i ? void 0 : i.legacy.screen_name) && void 0 !== r ? r : void 0,
                 S =
@@ -171,21 +171,21 @@
                 ).find(function (e) {
                   return 'ExclusiveContent' === e.benefit_type
                 }),
-                K = null !== (f = null == E ? void 0 : E.title) && void 0 !== f ? f : R,
-                T = null !== (m = null == E ? void 0 : E.description) && void 0 !== m ? m : void 0
+                K = null !== (c = null == E ? void 0 : E.title) && void 0 !== c ? c : C,
+                T = null !== (p = null == E ? void 0 : E.description) && void 0 !== p ? p : void 0
               return s.a.createElement(
                 s.a.Fragment,
                 null,
-                s.a.createElement(g.a, { imageUrl: k, name: y, value: S }),
-                s.a.createElement(h.a, { description: T, style: O.titleDescription, title: K }),
-                s.a.createElement(v.a, { imageUrl: k, screenName: _, style: O.signature }),
-                s.a.createElement(c.a, { style: O.demoTweet }),
-                s.a.createElement(h.a, { description: P, style: O.titleDescription, title: L }),
-                u ? s.a.createElement(d.a, { style: [O.demoTweet, O.demoVIPTweetMarginTop], user: u }) : null,
-                s.a.createElement(b, { style: O.disclaimer }),
+                s.a.createElement(g.a, { imageUrl: k, name: f, value: S }),
+                s.a.createElement(h.a, { description: T, style: B.titleDescription, title: K }),
+                s.a.createElement(v.a, { imageUrl: k, screenName: _, style: B.signature }),
+                s.a.createElement(y.a, { style: B.demoTweet }),
+                s.a.createElement(h.a, { description: P, style: B.titleDescription, title: L }),
+                u ? s.a.createElement(m.a, { style: [B.demoTweet, B.demoVIPTweetMarginTop], user: u }) : null,
+                s.a.createElement(b, { style: B.disclaimer }),
                 s.a.createElement(
                   w.a,
-                  { style: O.subscribeButtonContainer },
+                  { style: B.subscribeButtonContainer },
                   s.a.createElement(
                     F.a,
                     {
@@ -193,10 +193,10 @@
                       borderColor: 'transparent',
                       color: 'white',
                       disabled: !0,
-                      onPress: p,
-                      style: O.subscribeButton,
+                      onPress: d,
+                      style: B.subscribeButton,
                     },
-                    D({ price: '$X.XX' }),
+                    Q({ price: '$X.XX' }),
                   ),
                 ),
               )
@@ -205,8 +205,8 @@
               return s.a.createElement(
                 s.a.Fragment,
                 null,
-                s.a.createElement(h.a, { description: U, style: O.errorTitleDescription, title: Q }),
-                s.a.createElement(F.a, { onPress: r, style: O.errorButton, type: 'brandFilled' }, N),
+                s.a.createElement(h.a, { description: U, style: B.errorTitleDescription, title: D }),
+                s.a.createElement(F.a, { onPress: r, style: B.errorButton, type: 'brandFilled' }, A),
               )
             }
           return s.a.createElement(S.a, null, function (e) {
@@ -216,19 +216,19 @@
               {
                 allowBackNavigation: !0,
                 enableMaskForDismiss: !0,
-                onMaskClick: p,
-                style: [O.sheet, l ? O.wide : O.narrow],
+                onMaskClick: d,
+                style: [B.sheet, l ? B.wide : B.narrow],
                 type: 'full',
                 withMask: !0,
               },
-              s.a.createElement(y.a, null),
-              s.a.createElement(f.a, { fetchStatus: n, onRequestRetry: r, render: m, renderFailure: k, retryable: !1 }),
+              s.a.createElement(f.a, null),
+              s.a.createElement(c.a, { fetchStatus: n, onRequestRetry: r, render: p, renderFailure: k, retryable: !1 }),
             )
           })
         },
-        B = r('n0Rl'),
+        x = r('n0Rl'),
         q = void 0 !== t ? t : (t = r('kbWR')),
-        M = Object(B.b)(q, { errorConfig: { context: 'SUPER_FOLLOWS_SUBSCRIPTION_SCREEN' } })
+        M = Object(x.b)(q, { errorConfig: { context: 'SUPER_FOLLOWS_SUBSCRIPTION_SCREEN' } })
       n.default = function () {
         var e = Object(_.h)().screenName || '',
           n = { screenName: Object(u.a)(e) }
@@ -245,7 +245,7 @@
                 null == t || null === (l = t.viewer) || void 0 === l || null === (a = l.user_results) || void 0 === a
                   ? void 0
                   : a.result
-            return s.a.createElement(x, {
+            return s.a.createElement(I, {
               fetchStatus: Object(o.b)(
                 i,
                 'User' === (null == c ? void 0 : c.__typename) && 'User' === (null == d ? void 0 : d.__typename),
@@ -268,10 +268,10 @@
         kind: 'Fragment',
         metadata: null,
         name: 'SuperFollowsSubscribeScreen_viewer',
-        selections: [{ args: null, kind: 'FragmentSpread', name: 'ExclusiveDemoVIPContent_user' }],
+        selections: [{ args: null, kind: 'FragmentSpread', name: 'SuperFollowsDemoBadge_user' }],
         type: 'User',
         abstractKey: null,
-        hash: 'fbdb22bbceb6934ff7a3400ee96f706c',
+        hash: 'f1f443908ee4e86c4784d908823314d6',
       }
       n.default = l
     },
@@ -286,8 +286,8 @@
         o = r('ERkP'),
         c = o.useCallback,
         d = o.useEffect,
-        f = o.useRef,
-        p = o.useState,
+        p = o.useRef,
+        f = o.useState,
         m = r('K1lQ').getRequest,
         y = { kind: 'NullQueryReference' }
       function g(e) {
@@ -300,13 +300,13 @@
           i = t()
         u()
         var o = a(),
-          m = f(new Set([r])),
-          v = p(function () {
+          m = p(new Set([r])),
+          v = f(function () {
             return r
           }),
           k = v[0],
           b = v[1],
-          h = p(function () {
+          h = f(function () {
             return r
           }),
           _ = h[0],
@@ -336,7 +336,7 @@
             },
             [i, e, b, o],
           ),
-          E = f(!1)
+          E = p(!1)
         return (
           d(function () {
             return function () {
@@ -410,7 +410,7 @@
         o,
         c,
         d,
-        f = {
+        p = {
           fragment: {
             argumentDefinitions: (l = [{ defaultValue: null, kind: 'LocalArgument', name: 'screenName' }]),
             kind: 'Fragment',
@@ -655,14 +655,14 @@
             ],
           },
           params: {
-            id: 'Y3qpvJNk_0iKIdtMmiG0Dg',
+            id: 'UZSFESaDqpXuh1GLia53MQ',
             metadata: {},
             name: 'SuperFollowsSubscribeQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(f.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (n.default = f)
+      ;(p.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (n.default = p)
     },
     l62v: function (e, n, r) {
       'use strict'
@@ -723,7 +723,7 @@
     n0Rl: function (e, n, r) {
       'use strict'
       r.d(n, 'b', function () {
-        return I
+        return O
       })
       var l = r('ddV6'),
         a = r.n(l),
@@ -734,9 +734,9 @@
         o = r('1Pcy'),
         c = r.n(o),
         d = r('5Yy7'),
-        f = r.n(d),
-        p = r('2VqO'),
-        m = r.n(p),
+        p = r.n(d),
+        f = r('2VqO'),
+        m = r.n(f),
         y = r('KEM+'),
         g = r.n(y),
         v = (r('2G9S'), r('lTEL'), r('7x/C'), r('87if'), r('ZUdG'), r('kYxP'), r('ERkP')),
@@ -753,17 +753,17 @@
         E = r('0KEI'),
         K = r('lU4h'),
         T = r.n(K),
-        C = r('21nk'),
-        R = r.n(C),
+        R = r('21nk'),
+        C = r.n(R),
         L = r('bCEw'),
         P = r.n(L),
-        D = r('Ud88'),
-        Q = r.n(D),
+        Q = r('Ud88'),
+        D = r.n(Q),
         U = function (e) {
           return (0, e.render)({ fetchStatus: F.a.LOADING, data: null, error: null, retry: S.a })
         },
-        N = (function (e) {
-          f()(r, e)
+        A = (function (e) {
+          p()(r, e)
           var n = m()(r)
           function r() {
             var e
@@ -801,14 +801,14 @@
             r
           )
         })(k.a.Component),
-        A = function (e) {
+        N = function (e) {
           var n = e.query,
             r = e.queryRef,
             l = e.render,
-            a = R()(n, r)
+            a = C()(n, r)
           return l({ fetchStatus: F.a.LOADED, data: a, error: null, retry: S.a })
         },
-        I = function (e, n) {
+        O = function (e, n) {
           if (h.canUseDOM)
             return function (r) {
               var l = r.fetchPolicy,
@@ -819,9 +819,9 @@
                 o = a()(u, 2),
                 c = o[0],
                 d = o[1],
-                f = Object(E.useCreateLocalApiErrorHandler)(n.errorConfig.context),
-                p = T()(s),
-                m = a()(p, 1)[0],
+                p = Object(E.useCreateLocalApiErrorHandler)(n.errorConfig.context),
+                f = T()(s),
+                m = a()(f, 1)[0],
                 y = k.a.useCallback(
                   function () {
                     d(m, { fetchPolicy: 'network-only' })
@@ -840,12 +840,12 @@
                       k.a.Suspense,
                       { fallback: k.a.createElement(U, { render: i }) },
                       k.a.createElement(
-                        N,
-                        { errorHandler: f(n.errorConfig.options || {}), key: c.fetchKey, retry: y },
+                        A,
+                        { errorHandler: p(n.errorConfig.options || {}), key: c.fetchKey, retry: y },
                         function (n, r) {
                           return n
                             ? i({ fetchStatus: F.a.FAILED, error: n, data: null, retry: r })
-                            : k.a.createElement(A, { query: e, queryRef: c, render: i })
+                            : k.a.createElement(N, { query: e, queryRef: c, render: i })
                         },
                       ),
                     )
@@ -857,13 +857,13 @@
             l.fetchPolicy
             var t = l.render,
               i = l.variables,
-              s = Q()(),
+              s = D()(),
               u = Object(E.useCreateLocalApiErrorHandler)(n.errorConfig.context),
               o = T()(i),
               c = a()(o, 1)[0],
               d = r.get(s)
             if (d) return d
-            var f = k.a.lazy(function () {
+            var p = k.a.lazy(function () {
               return w()(s, e, c)
                 .toPromise()
                 .then(
@@ -883,7 +883,7 @@
                   return { default: r.set(s, e).get.bind(r, s) }
                 })
             })
-            return k.a.createElement(k.a.Suspense, null, k.a.createElement(f, null))
+            return k.a.createElement(k.a.Suspense, null, k.a.createElement(p, null))
           }
         }
     },

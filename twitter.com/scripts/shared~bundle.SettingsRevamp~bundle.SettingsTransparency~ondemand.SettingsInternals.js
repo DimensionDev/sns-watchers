@@ -960,9 +960,9 @@
                     }),
                     t && t(e))
               }),
-              f()(p()(r), '_handleFocus', function (e) {
-                var t = r.props.onFocus
-                r.setState({ isFocused: !0 }), t && t(e)
+              f()(p()(r), '_handleFocus', function () {
+                var e = r.props.onFocus
+                r.setState({ isFocused: !0 }), e && e()
               }),
               f()(p()(r), '_handleKeyPress', function (e) {
                 var t = r.props,

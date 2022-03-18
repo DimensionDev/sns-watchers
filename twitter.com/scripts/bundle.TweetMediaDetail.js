@@ -166,8 +166,8 @@
           .withAnalytics({ page: 'tweet', section: 'media' }),
         M = n('VrFO'),
         S = n.n(M),
-        k = n('Y9Ll'),
-        _ = n.n(k),
+        _ = n('Y9Ll'),
+        k = n.n(_),
         L = n('1Pcy'),
         O = n.n(L),
         P = n('5Yy7'),
@@ -211,7 +211,7 @@
             )
           }
           return (
-            _()(n, [
+            k()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -322,8 +322,8 @@
             I = e.rootTweet,
             M = e.screenName,
             S = e.showTweetMediaDetailDrawer,
-            k = e.socialContext,
-            _ = e.tweet,
+            _ = e.socialContext,
+            k = e.tweet,
             L = e.tweetId,
             O = e.updateSettings,
             P = function () {
@@ -341,20 +341,20 @@
               var e,
                 t = P()
               if (t) return t.items
-              if (_) {
-                var n = null === (e = _.extended_entities) || void 0 === e ? void 0 : e.media
+              if (k) {
+                var n = null === (e = k.extended_entities) || void 0 === e ? void 0 : e.media
                 if (n) return n
-                if (_.card) {
+                if (k.card) {
                   var a = D()
                   if (a) return [a]
                 }
               }
             },
             D = function () {
-              if (null != _ && _.card) {
-                var e = { tweetId: _.id_str, tweetUserId: _.user.id_str, tweetPermalink: _.permalink }
-                ee()(void 0 !== _.card, 'tweet.card must be defined')
-                var t = Object(se.b)(_.card, e)
+              if (null != k && k.card) {
+                var e = { tweetId: k.id_str, tweetUserId: k.user.id_str, tweetPermalink: k.permalink }
+                ee()(void 0 !== k.card, 'tweet.card must be defined')
+                var t = Object(se.b)(k.unified_card || k.card, e)
                 if (t) {
                   var n = ue.a.getImageEntityFromCard(t.card)
                   if (n) return ue.a.convertImageEntityToPhoto(n)
@@ -375,27 +375,27 @@
             },
             W = l.a.useCallback(
               function () {
-                if (_ && _.user && M.toLowerCase() !== _.user.screen_name.toLowerCase()) {
+                if (k && k.user && M.toLowerCase() !== k.user.screen_name.toLowerCase()) {
                   var e =
-                    _ && _.user
+                    k && k.user
                       ? '/'
-                          .concat(_.user.screen_name, '/status/')
-                          .concat(_.id_str, '/photo/')
+                          .concat(k.user.screen_name, '/status/')
+                          .concat(k.id_str, '/photo/')
                           .concat(C + 1)
                       : null
                   e && E.replace(e)
                 }
               },
-              [E, C, M, _],
+              [E, C, M, k],
             ),
             F = l.a.useCallback(
               function () {
-                if (_) {
-                  var e = oe.a.getTweetItem(_)
+                if (k) {
+                  var e = oe.a.getTweetItem(k)
                   g(m.contextualScribeNamespace), m.scribe({ action: 'show', data: { items: [e] } })
                 }
               },
-              [m, g, _],
+              [m, g, k],
             ),
             B = function () {
               E.goBackThroughModals()
@@ -433,7 +433,7 @@
                 isFixed: !0,
                 items: [
                   {
-                    link: null != _ && _.user ? '/'.concat(_.user.screen_name, '/status/').concat(_.id_str) : '/',
+                    link: null != k && k.user ? '/'.concat(k.user.screen_name, '/status/').concat(k.id_str) : '/',
                     text: Ee,
                   },
                 ],
@@ -453,7 +453,7 @@
                     onClick: z(e),
                     type: 'onMediaDominantColorFilled',
                   })
-                : _ && !t
+                : k && !t
                 ? l.a.createElement(me.a, {
                     accessibilityLabel: Ce,
                     dominantColor: n ? a.rgb : void 0,
@@ -479,7 +479,7 @@
                 onMediaItemChanged: V,
                 onTap: o,
                 promotedContent: x,
-                videoId: 1 === t.length && _ ? ce.b.forTweet(_.id_str) : void 0,
+                videoId: 1 === t.length && k ? ce.b.forTweet(k.id_str) : void 0,
               })
             },
             Y = function (e) {
@@ -498,15 +498,15 @@
                 ne.a,
                 {
                   backgroundColor: n,
-                  footerButtons: _
+                  footerButtons: k
                     ? l.a.createElement(ie.a, {
                         actionSize: 'large',
                         activeColor: 'white',
                         allowDownvote: !0,
                         color: 'white',
-                        forwardPivotInfo: _.softIntervention || y,
-                        style: ke.actionsBar,
-                        tweet: _,
+                        forwardPivotInfo: k.softIntervention || y,
+                        style: _e.actionsBar,
+                        tweet: k,
                         withCount: !0,
                       })
                     : void 0,
@@ -531,10 +531,10 @@
             l.a.useEffect(
               function () {
                 var e
-                ;(null === (e = $.current) || void 0 === e ? void 0 : e.id_str) !== (null == _ ? void 0 : _.id_str) &&
-                  (F(), ($.current = _))
+                ;(null === (e = $.current) || void 0 === e ? void 0 : e.id_str) !== (null == k ? void 0 : k.id_str) &&
+                  (F(), ($.current = k))
               },
-              [F, _],
+              [F, k],
             ),
             l.a.useEffect(
               function () {
@@ -550,8 +550,8 @@
                     var t = e.windowWidth
                     return l.a.createElement(
                       le.a,
-                      { style: ke.container },
-                      l.a.createElement(le.a, { style: ke.neighbor }, Y(t)),
+                      { style: _e.container },
+                      l.a.createElement(le.a, { style: _e.neighbor }, Y(t)),
                       N(t)
                         ? l.a.createElement(Z, {
                             contextTweetId: w,
@@ -559,8 +559,8 @@
                             promotedContent: x,
                             rootTweet: I,
                             screenName: M,
-                            socialContext: k,
-                            tweet: _,
+                            socialContext: _,
+                            tweet: k,
                             tweetId: L,
                           })
                         : null,
@@ -570,7 +570,7 @@
             )
           )
         },
-        ke = z.a.create(function (e) {
+        _e = z.a.create(function (e) {
           return {
             actionsBar: { height: e.spaces.space48, maxWidth: 'none', paddingHorizontal: e.spaces.space12 },
             container: {
@@ -584,8 +584,8 @@
             neighbor: { flexGrow: 1, flexShrink: 1 },
           }
         }),
-        _e = I(Se)
-      t.default = _e
+        ke = I(Se)
+      t.default = ke
     },
   },
 ])

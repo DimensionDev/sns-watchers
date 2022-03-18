@@ -615,7 +615,7 @@
           c = void 0 === r ? 'inline' : r,
           l = e.nativeID,
           d = e.style,
-          p = o.b.useProps().edgeToEdgeEnabled()
+          p = o.b.useProps().withEdgeToEdgeActionsAndUsername()
         return a.a.createElement(
           s.a,
           {
@@ -3009,12 +3009,18 @@
                     trustedFriendsEnabled: function () {
                       return r.isTrue('trusted_friends_consumption_enabled')
                     },
-                  }
+                  },
+                  u = e._getWithTopLine(),
+                  d = e._getWithBottomLine(),
+                  p = !e.props.isFocal && (u || d)
                 return c()(
                   c()(c()({}, s), l),
                   {},
                   {
                     edgeToEdgeEnabled: function () {
+                      return !p && r.isTrue('media_edge_to_edge_content_enabled')
+                    },
+                    withEdgeToEdgeActionsAndUsername: function () {
                       return r.isTrue('media_edge_to_edge_content_enabled')
                     },
                     headsUpVariant: function () {
@@ -3299,9 +3305,10 @@
                     K = n && n.indents,
                     Q = this._getWithTopLine(),
                     X = this._getWithBottomLine(),
-                    G = Q || X || !this._isEdgeToEdgeEnabled,
-                    Y = z ? c()(c()({}, z), {}, { anchorless: !0 }) : void 0,
-                    Z = u ? 'detail' : 'inline'
+                    G = Q || X,
+                    Y = (G && !u) || !this._isEdgeToEdgeEnabled,
+                    Z = z ? c()(c()({}, z), {}, { anchorless: !0 }) : void 0,
+                    ee = u ? 'detail' : 'inline'
                   return !u &&
                     this.context.featureSwitches.isTrue('responsive_web_consumes_horizon_web_tweet_in_timelines')
                     ? C.a.createElement(
@@ -3314,7 +3321,7 @@
                             conversationTreeMetadata: n
                               ? { ancestorConnector: n.ancestorConnector, depth: n.depth, indents: n.indents }
                               : void 0,
-                            link: q.canUseDOM ? Y : void 0,
+                            link: q.canUseDOM ? Z : void 0,
                             onBlur: p,
                             onFocus: h,
                             onPress: m,
@@ -3394,7 +3401,7 @@
                               return e._renderReplyContext({ nativeID: t.nativeID })
                             },
                             renderRichContent: function (t) {
-                              return e._renderRichContent({ nativeID: t.nativeID, withRoundMediaCorners: G })
+                              return e._renderRichContent({ nativeID: t.nativeID, withRoundMediaCorners: Y })
                             },
                             renderSelfThreadCTA: function () {
                               return e._renderSelfThreadCTA()
@@ -3491,7 +3498,7 @@
                                   C.a.createElement(
                                     E.a,
                                     null,
-                                    e._renderRichContent({ nativeID: c.richContent, withRoundMediaCorners: G }),
+                                    e._renderRichContent({ nativeID: c.richContent, withRoundMediaCorners: Y }),
                                   ),
                                 )
                               : null,
@@ -3511,7 +3518,7 @@
                                 footer: e._renderFooter(),
                                 header: e._renderHeader(c),
                                 indents: K,
-                                link: u || !q.canUseDOM ? void 0 : Y,
+                                link: u || !q.canUseDOM ? void 0 : Z,
                                 onBlur: p,
                                 onFocus: h,
                                 onPress: m,
@@ -3526,7 +3533,7 @@
                                 withBottomLine: X,
                                 withElbow: K ? 'side' === W : void 0,
                                 withFooterGap: !u,
-                                withFullWidthChildren: u || e._isEdgeToEdgeEnabled,
+                                withFullWidthChildren: u || (!G && e._isEdgeToEdgeEnabled),
                                 withTopLine: Q,
                                 withUnreadStyles: A,
                               },
@@ -3535,7 +3542,7 @@
                               N,
                               z,
                               V &&
-                                'inline' === Z &&
+                                'inline' === ee &&
                                 C.a.createElement(
                                   O.a,
                                   {
@@ -3547,7 +3554,7 @@
                                   e._getPromoteButtonText(M),
                                 ),
                               e._renderFocalContent(B, V, I),
-                              'inline' === Z &&
+                              'inline' === ee &&
                                 C.a.createElement(st, {
                                   conversationControlLabelNativeID: c.conversationControlLabel,
                                   displayStyle: 'inline',
@@ -3575,7 +3582,7 @@
                               e._renderReaderModeButton(),
                               B || u ? null : y,
                               u ? null : I,
-                              'detail' === Z &&
+                              'detail' === ee &&
                                 C.a.createElement(st, {
                                   conversationControlLabelNativeID: c.conversationControlLabel,
                                   displayStyle: 'detail',
@@ -11867,17 +11874,18 @@
           T = d.a.isPromoted(g.promotedContent),
           S = c.b.useProps(),
           I = S.edgeToEdgeEnabled(),
-          x = S.tweetRendersPromotedContentBadgeBelowHeader(),
-          A = null === (t = g.conversationTreeMetadata) || void 0 === t ? void 0 : t.ancestorConnector,
-          O = null === (n = g.conversationTreeMetadata) || void 0 === n ? void 0 : n.indents,
-          P = g.conversationTreeMetadata
+          x = S.withEdgeToEdgeActionsAndUsername(),
+          A = S.tweetRendersPromotedContentBadgeBelowHeader(),
+          O = null === (t = g.conversationTreeMetadata) || void 0 === t ? void 0 : t.ancestorConnector,
+          P = null === (n = g.conversationTreeMetadata) || void 0 === n ? void 0 : n.indents,
+          L = g.conversationTreeMetadata
             ? r.a.createElement(
                 s.b,
                 { nativeID: _.conversationLevel, style: p.a.visuallyHidden },
                 ie({ conversationTreeDepth: g.conversationTreeMetadata.depth.toString() }),
               )
             : null,
-          L = g.renderTombstone({
+          R = g.renderTombstone({
             actionLink: C,
             actionText: null == k || null === (i = k.richRevealText) || void 0 === i ? void 0 : i.text,
             style: oe.tombstone,
@@ -11898,7 +11906,7 @@
                 style: oe.socialContext,
                 weight: 'bold',
               }),
-              indents: O,
+              indents: P,
               link: g.link
                 ? ((l = g.link),
                   'string' == typeof l ? { anchorless: !0, pathname: l } : a()(a()({}, l), {}, { anchorless: !0 }))
@@ -11916,29 +11924,29 @@
                 return null === (t = g.onPress) || void 0 === t ? void 0 : t.call(g, e)
               },
               testID: g.testID,
-              timestamp: T || I ? null : g.renderTimestamp(),
+              timestamp: T || x ? null : g.renderTimestamp(),
               userFollowIndicators: g.renderUserFollowIndicator(),
               userLabel: g.renderHighlightedUserLabel(),
               userName: g.renderUserName({
-                screenNameSuffix: T || !I ? null : g.renderTimestamp(),
-                withStackedLayout: I,
+                screenNameSuffix: T || !x ? null : g.renderTimestamp(),
+                withStackedLayout: x,
               }),
               withBottomLine: g.withBottomLine,
-              withElbow: O ? 'side' === A : void 0,
+              withElbow: P ? 'side' === O : void 0,
               withFullWidthChildren: I,
               withTopLine: g.withTopLine,
               withUnreadStyles: g.withUnreadStyles,
             },
-            x
+            A
               ? g.renderPromotedIndicator({
                   style: h.a.hasInteractiveText(y)
                     ? oe.promotedIndicatorBelowHeaderWithInteractiveHighlights
                     : oe.promotedIndicatorBelowHeader,
                 })
               : null,
-            P,
-            null !== L
-              ? L
+            L,
+            null !== R
+              ? R
               : r.a.createElement(
                   r.a.Fragment,
                   null,
@@ -11948,7 +11956,7 @@
                 ),
             g.renderEducation({ displayStyle: 'inline' }),
             g.renderActionsBar({ actionSize: 'normal', displayStyle: 'inline', style: oe.actionsBar, withCount: !0 }),
-            x ? null : g.renderPromotedIndicator({ style: oe.promotedIndicator }),
+            A ? null : g.renderPromotedIndicator({ style: oe.promotedIndicator }),
             g.renderPromotionStatusBadge({ nativeID: _.promotionStatusLabel }),
           ),
         )

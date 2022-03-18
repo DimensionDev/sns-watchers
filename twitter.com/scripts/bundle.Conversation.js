@@ -3426,77 +3426,76 @@
                   p = l.socialContext,
                   g = l.statusId,
                   f = l.userLanguage
-                u &&
-                  ((n = ze({ tweetText: Object(xe.a)(u.text), fullName: u.user.name })),
-                  (a = 'twitter://status?id='.concat(u.id_str)),
-                  (r = 'https://twitter.com'.concat(this._getCanonicalPath() || '')),
-                  (o = He({ fullName: u.user.name })),
-                  (c = u.possibly_sensitive))
-                var h = (function () {
+                if (u) {
+                  var h, E, w, I
+                  ;(e = ze({ tweetText: Object(xe.a)(u.text), fullName: u.user.name })),
+                    (t = 'twitter://status?id='.concat(u.id_str)),
+                    (n = 'https://twitter.com'.concat(this._getCanonicalPath() || '')),
+                    (a = He({ fullName: u.user.name })),
+                    (r = u.possibly_sensitive),
+                    (o = '“'.concat((null == u ? void 0 : u.full_text) || '', '”')),
+                    (c =
+                      (null == u || null === (h = u.entities) || void 0 === h || null === (E = h.media) || void 0 === E
+                        ? void 0
+                        : E[0].media_url_https) || '')
+                  var P =
+                    null === (w = u.entities) || void 0 === w || null === (I = w.media) || void 0 === I
+                      ? void 0
+                      : I[0].url
+                  P && ((o = o.replace(' '.concat(P), '')), (c = ''.concat(c, ':large')))
+                }
+                var T = (function () {
                     for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
                     return t.find(function (e) {
                       return e && Xe.includes(e.contextType)
                     })
                   })(p, s),
-                  E = h && b.a.createElement(Je, { context: h })
+                  S = T && b.a.createElement(Je, { context: T })
                 return b.a.createElement(
                   Pe.c,
                   { data: Ve(g, m), namespace: this._getScribeNamespace() },
                   b.a.createElement(
                     _e.a,
                     null,
-                    c
+                    r
                       ? b.a.createElement(oe.a, null, b.a.createElement('meta', { content: 'adult', name: 'rating' }))
                       : null,
-                    r
+                    n
                       ? b.a.createElement(
                           oe.a,
                           null,
-                          b.a.createElement('link', { href: r, rel: 'canonical' }),
+                          b.a.createElement('link', { href: n, rel: 'canonical' }),
                           b.a.createElement('link', {
-                            href: 'https://publish.twitter.com/oembed?url='.concat(r),
+                            href: 'https://publish.twitter.com/oembed?url='.concat(n),
                             rel: 'alternate',
-                            title: n,
+                            title: e,
                             type: 'application/json+oembed',
                           }),
                         )
                       : null,
-                    b.a.createElement(ve.a, {
-                      canonical: r,
-                      description: '“'.concat((null == u ? void 0 : u.full_text) || '', '”'),
-                      image:
-                        (null == u ||
-                        null === (e = u.entities) ||
-                        void 0 === e ||
-                        null === (t = e.media) ||
-                        void 0 === t
-                          ? void 0
-                          : t[0].media_url_https) || '',
-                      title: o,
-                      type: 'article',
-                    }),
+                    b.a.createElement(ve.a, { canonical: n, description: o, image: c, title: a, type: 'article' }),
                     b.a.createElement(_.a, {
                       featureSwitches: this.context.featureSwitches,
                       loggedInUserId: i,
                       userLanguage: f,
                     }),
-                    b.a.createElement(v.a, { deepLink: a }),
-                    r ? b.a.createElement(y.a, { canonical: r }) : null,
+                    b.a.createElement(v.a, { deepLink: t }),
+                    n ? b.a.createElement(y.a, { canonical: n }) : null,
                     b.a.createElement(
                       C.b.Provider,
-                      { value: null == h ? void 0 : h.contextType },
+                      { value: null == T ? void 0 : T.contextType },
                       b.a.createElement(Te.a, {
                         backLocation: '/',
-                        documentTitle: n,
+                        documentTitle: e,
                         history: d,
                         primaryContent: this._renderTimeline(),
                         rightControl: this._renderRightControl(),
                         sidebarContent: this._renderSidebarContent(),
-                        subtitle: E,
-                        title: (h && Ye(h)) || (u && u.self_thread ? qe : Re),
+                        subtitle: S,
+                        title: (T && Ye(T)) || (u && u.self_thread ? qe : Re),
                       }),
                     ),
-                    b.a.createElement(ne.a, { title: n, withMeta: !1 }),
+                    b.a.createElement(ne.a, { title: e, withMeta: !1 }),
                   ),
                 )
               },

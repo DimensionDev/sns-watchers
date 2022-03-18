@@ -4680,7 +4680,6 @@
         Ve = B.a.create(function (e) {
           return {
             root: { flexDirection: 'column', paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge },
-            popover: { maxWidth: 5 * e.spacesPx.space64 },
             modal: { borderRadius: e.borderRadii.none },
             title: { flexDirection: 'column', paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space12 },
             createButton: { marginTop: e.spaces.space16, marginHorizontal: e.spaces.space16 },
@@ -4700,7 +4699,7 @@
                 accessibilityDescribedBy: 'trusted-friends-education-popover',
                 accessibilityLabelledBy: 'trustd-friends-education-title',
                 accessibilityRole: 'dialog',
-                style: [Ve.root, Ve.popover],
+                style: Ve.root,
               },
               w.a.createElement(
                 G.a,
@@ -4913,27 +4912,28 @@
             A = h.exclusivityControlValue || !1,
             L = h.trustedFriendsValue || !1,
             P = null == C ? void 0 : C.rest_id,
-            D = (f && !E) || (_ && x),
-            O = dt
-          if ((M && null != E && E.name ? (O = E.name) : A ? (O = pt) : L && (O = mt), A))
+            D = _ && x,
+            O = (f && !E) || D,
+            F = dt
+          if ((M && null != E && E.name ? (F = E.name) : A ? (F = pt) : L && (F = mt), A))
             t = { color: 'plum500', borderColor: 'plum500', backgroundColor: 'transparent' }
           else if (M && null != E && E.theme && I) {
-            var F = st.a.getCommunityUIColorName(E.theme)
-            t = { color: F, borderColor: F, backgroundColor: 'transparent' }
+            var B = st.a.getCommunityUIColorName(E.theme)
+            t = { color: B, borderColor: B, backgroundColor: 'transparent' }
           } else t = { type: 'brandOutlined' }
           Object(ot.a)(function () {
             var t = e.fetchOrCreateTrustedFriendsList
             _ && (null == t || t())
           })
-          var B = w.a.useCallback(
+          var N = w.a.useCallback(
               function () {
                 u(!1), p(), m()
               },
               [p, m],
             ),
-            N = w.a.useCallback(
+            j = w.a.useCallback(
               function (e) {
-                return x
+                return D && !M
                   ? w.a.createElement(Ue, { history: ct.a, onAction: e, setShowTrustedFriendsModal: s })
                   : w.a.createElement(se, {
                       audienceControlsValue: h,
@@ -4944,16 +4944,16 @@
                       isSuperFollowsCreator: y,
                       isTrustedFriendsEnabled: _,
                       onAudienceControlsValueChange: function (e) {
-                        B(), b(e)
+                        N(), b(e)
                       },
                       sliceModule: T,
                       trustedFriendsList: C,
                       updateSingleComposer: S,
                     })
               },
-              [B, T, S, h, v, g, y, C, x, b, _],
+              [N, T, S, h, v, g, y, C, b, M, D, _],
             ),
-            j = w.a.useCallback(
+            V = w.a.useCallback(
               function () {
                 P &&
                   b({
@@ -4973,7 +4973,7 @@
                   { style: vt.container },
                   o
                     ? w.a.createElement(rt, {
-                        changeAudienceToTrustedFriends: j,
+                        changeAudienceToTrustedFriends: V,
                         history: ct.a,
                         setShowModal: s,
                         trustedFriendsListId: P,
@@ -4982,12 +4982,12 @@
                   w.a.createElement(
                     lt.a,
                     {
-                      onDismiss: B,
+                      onDismiss: N,
                       onOpen: function () {
                         u(!0)
                       },
-                      renderContent: N,
-                      visibilityBehavior: D && !o ? 'forceVisible' : 'interactive',
+                      renderContent: j,
+                      visibilityBehavior: O && !o ? 'forceVisible' : 'interactive',
                     },
                     w.a.createElement(
                       q.a,
@@ -5002,7 +5002,7 @@
                         },
                         t,
                       ),
-                      O,
+                      F,
                     ),
                   ),
                 ),
@@ -7638,7 +7638,7 @@
         Jr = n('5oBF'),
         Zr = n('JYYi'),
         $r = n('/Rsk'),
-        ei = n('qlwE'),
+        ei = n('u7LJ'),
         ti = n('XOJV'),
         ni = n('G6rE'),
         ai = n('AspN'),
@@ -7807,6 +7807,7 @@
           addMedia: ai.b,
           processMultipleMedia: ai.g,
           removeMediaUpload: ai.i,
+          removeToast: Yr.c,
           updateSingleComposer: le.w,
           setActiveParentKey: le.r,
           copyDataFromInlineComposerToModalComposer: le.c,
@@ -7839,7 +7840,7 @@
             selectedCommunityName: pi,
             sendingProgress: le.o,
             convoCardData: Ei,
-            undoTweetSettings: ei.p,
+            undoTweetSettings: ei.b,
             userLanguage: he.o,
             quotedStatusId: ki,
           })
@@ -8345,8 +8346,9 @@
               b()(h()(s), '_handleDeletePreviewTweet', function () {
                 var e = s.props,
                   t = e.deletePreviewTweet,
-                  n = e.previewTweetId
-                n && t(n)
+                  n = e.previewTweetId,
+                  a = e.removeToast
+                n && (a(), t(n))
               }),
               b()(h()(s), '_handleAnimateComplete', function () {
                 var e = s.props,
@@ -10477,9 +10479,9 @@
                     }),
                     t && t(e))
               }),
-              y()(p()(a), '_handleFocus', function (e) {
-                var t = a.props.onFocus
-                a.setState({ isFocused: !0 }), t && t(e)
+              y()(p()(a), '_handleFocus', function () {
+                var e = a.props.onFocus
+                a.setState({ isFocused: !0 }), e && e()
               }),
               y()(p()(a), '_handleKeyPress', function (e) {
                 var t = a.props,
@@ -11828,30 +11830,6 @@
           )
         })(v.a.Component)
       t.a = w
-    },
-    ulNE: function (e, t, n) {
-      'use strict'
-      var a = n('ax0f'),
-        r = n('42ly'),
-        i = n('N9G2'),
-        o = n('BIH/'),
-        s = n('lhaq'),
-        c = n('aoZ+')
-      a(
-        { target: 'Array', proto: !0 },
-        {
-          flat: function () {
-            var e = arguments.length ? arguments[0] : void 0,
-              t = i(this),
-              n = o(t),
-              a = c(t, 0)
-            return (a.length = r(a, t, t, n, 0, void 0 === e ? 1 : s(e))), a
-          },
-        },
-      )
-    },
-    'urw/': function (e, t, n) {
-      n('7St7')('flat')
     },
     vOV5: function (e, t, n) {
       'use strict'

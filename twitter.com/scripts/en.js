@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -277,6 +277,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jf9f3e53', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
           a('b89c5a5f', 'Pause'),
+          a('f91f00b9', 'Create clip'),
           a('e07f6e7d', function (e) {
             return 'Speed ' + e.rate + 'x'
           }),
@@ -836,6 +837,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d203e241', 'Not found'),
           a('e49537c1', 'Hmm...this page doesn’t exist. Try searching for something else.'),
           a('d35d74e3', 'Conversation'),
+          a('f88e624e', 'Conversation updated'),
           a('afb7e8f7', 'Read Article'),
           a('e43138c5', function (e) {
             return 'Follow ' + e.name
@@ -1166,12 +1168,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f82c0bbf',
             'Hidden replies are moved to a separate page, and anyone can view them by selecting the hidden reply icon on the Tweet.',
-          ),
-          a('b2615c6d', function (e) {
-            return 'Also block @' + e.screenName + '?'
-          }),
-          a('i62a03aa', 'No')
-        a('f20b040d', 'Hide Tweet'),
+          )
+        a('b2615c6d', function (e) {
+          return 'Also block @' + e.screenName + '?'
+        }),
+          a('i62a03aa', 'No'),
+          a('f20b040d', 'Hide Tweet'),
           a('e2d6c17e', 'Mute this conversation'),
           a('cd1942f4', 'Unmute this conversation'),
           a('bbd8bed6', 'Notifications muted for this conversation'),
@@ -1939,6 +1941,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jb0429b1', function (e) {
             return 'By ' + e.name + ' @' + e.screenName
           }),
+          a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
+          a('ae111c99', function (e) {
+            return 'No results for "' + e.query + '"'
+          }),
           a('fbf01e51', 'Search Communities'),
           a('a226497c', 'Create a new Community'),
           a('d7346631', 'You haven’t joined any Communities yet'),
@@ -2292,12 +2298,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
           a('e4e4e50a', 'Scheduled Tweets'),
           a('h3701ffd', 'Update'),
-          a('c5dd0190', 'Time'),
-          a('edeff231', 'Date'),
+          a('c5dd0190', 'Time')
+        a('edeff231', 'Date'),
           a('c2b358ce', 'AM/PM'),
           a('b43679d2', 'Hour'),
-          a('f1fce85d', 'Minute')
-        a('fddf24b4', 'Time zone'),
+          a('f1fce85d', 'Minute'),
+          a('fddf24b4', 'Time zone'),
           a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
           a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
           a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
@@ -2430,7 +2436,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
           a('d94f12b5', 'Try searching for notifications, privacy, etc.'),
-          a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('ba8f6f81', 'Search Settings'),
           a('cedbb01c', 'Legal'),
           a('b4f917d0', 'Miscellaneous'),
@@ -3527,15 +3532,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j4fa776e', 'Phones'),
           a('i7acdb35', 'Tablets'),
           a('c112dfc8', 'Desktop'),
-          a('jd8607b9', 'Activated on'),
-          a('ea4f6c9e', 'Browsers'),
+          a('jd8607b9', 'Activated on')
+        a('ea4f6c9e', 'Browsers'),
           a('d750b93e', function (e) {
             return e.count + ' browser' + n(e.count, '', 's')
           }),
-          a('a9783601', 'Mobile Devices')
-        a('j043aa31', function (e) {
-          return e.count + ' mobile device' + n(e.count, '', 's')
-        }),
+          a('a9783601', 'Mobile Devices'),
+          a('j043aa31', function (e) {
+            return e.count + ' mobile device' + n(e.count, '', 's')
+          }),
           a('f2aa6e95', 'This feature is off'),
           a('i4d7deee', 'Go to your personalization and data settings to turn it on'),
           a('ae415fd2', 'This setting is off.'),
@@ -3674,7 +3679,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7d6e5d5', 'Contributors'),
           a('cd76a281', 'No members have been added yet'),
           a('h502484e', 'Pending invite'),
-          a('c0aa3e32', 'Cancel invite'),
+          a('a171ca7c', 'Uninvite member'),
           a('f68f079c', 'Change role'),
           a('b2794e9d', 'Remove from group'),
           a('i5c61395', function (e) {
@@ -3683,11 +3688,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f8645589', function (e) {
             return 'They’ll no longer be a ' + e.role + ' on this account.'
           }),
+          a('hd67c2e8', 'Uninvite'),
           a('f0bd8ca8', function (e) {
             return 'Remove @' + e.screenName + '?'
           }),
+          a('a33eba46', function (e) {
+            return 'Uninvite @' + e.screenName + '?'
+          }),
           a('d472c9ea', function (e) {
             return '@' + e.screenName + ' removed from group'
+          }),
+          a('h5951996', function (e) {
+            return '@' + e.screenName + ' uninvited'
           }),
           a('a44c6033', 'Pending invites'),
           a('idc35f31', 'You haven’t been delegated to any accounts'),
@@ -4406,14 +4418,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
-          a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
+          a('bef0039f', 'You don’t have any message requests'),
           a('f5dc353c', 'Now filtering graphic media'),
+          a('daeda053', 'Go to Settings'),
           a(
             'fe1eaa95',
             'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
           ),
-          a('daeda053', 'Go to Settings'),
-          a('bef0039f', 'You don’t have any message requests'),
+          a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
           a('e7172d70', 'Additional messages'),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
@@ -4739,17 +4751,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
           ),
-          a('e16e8170', 'Position'),
-          a('a2bb5115', function (e) {
-            return e.count + ' Tweet' + n(e.count, '', 's')
-          }),
-          a('j5602a96', function (e) {
-            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
-          }),
-          a('j15abc53', 'Beginning'),
-          a('c371fb99', 'End'),
-          a('b5210d57', 'Enter Collection ID'),
-          a('a536fff6', 'Invalid Collection ID')
+          a('e16e8170', 'Position')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4766,7 +4768,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('c63d84a3', 'Search for Twitter account'),
+        a('a2bb5115', function (e) {
+          return e.count + ' Tweet' + n(e.count, '', 's')
+        }),
+          a('j5602a96', function (e) {
+            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
+          }),
+          a('j15abc53', 'Beginning'),
+          a('c371fb99', 'End'),
+          a('b5210d57', 'Enter Collection ID'),
+          a('a536fff6', 'Invalid Collection ID'),
+          a('c63d84a3', 'Search for Twitter account'),
           a('b367953c', 'Tweets by'),
           a('f12858d3', 'Liked by'),
           a('e2a098dc', 'Sort by'),
@@ -4914,9 +4926,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
           a('f4a654a3', 'View on Foursquare'),
           a('c09de2d4', 'Search timeline'),
-          a('ae111c99', function (e) {
-            return 'No results for "' + e.query + '"'
-          }),
           a('d2918e88', 'Search settings'),
           a('je5502ea', function (e) {
             return 'Including results for "' + e.suggestion + '"'
@@ -5871,6 +5880,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('if1b6f14', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
+          a('eab7b7dc', 'Swipe to rotate'),
           a('fbc2003b', 'Ended'),
           a('b3d828ed', 'Joined'),
           a('ca677073', 'Start listening'),
@@ -6019,14 +6029,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e9bd453e', 'Replay'),
           a('ec8ab8b4', 'Mute'),
-          a('b8b6344a', 'Unmute'),
-          a('c9a642f9', 'Volume slider'),
+          a('b8b6344a', 'Unmute')
+        a('c9a642f9', 'Volume slider'),
           a('c27e60bf', 'Full screen'),
           a('d2969f1f', 'Exit full screen'),
           a('c1658fc6', 'The media could not be played.'),
           a('ce871584', 'This broadcast has ended.'),
-          a('c101eb95', 'This broadcast is not available.')
-        a('gb24a513', 'This media has been disabled in response to a report by the copyright owner.'),
+          a('c101eb95', 'This broadcast is not available.'),
+          a('gb24a513', 'This media has been disabled in response to a report by the copyright owner.'),
           a('hcaf3e62', function (e) {
             return 'This media has been disabled due to a copyright claim by ' + e.holder + '.'
           }),
