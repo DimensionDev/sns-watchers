@@ -1,24 +1,24 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [359],
+  [358],
   {
     E3Hq: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return c
+        return a
       }),
         n.d(t, 'b', function () {
-          return o
+          return c
         })
       var r = n('Rp9C'),
-        a = n('XcJG'),
-        c = function (e) {
+        o = n('XcJG'),
+        a = function (e) {
           var t = e.feedbackItems,
             n = e.topic,
-            r = e.topicItemContent.topicFunctionalityType === a.b.Recommendation,
-            c = 1 === (null == t ? void 0 : t.length) ? t[0].onClick : void 0
-          return !(null != n && n.not_interested) && !(null != n && n.following) && r ? c : void 0
+            r = e.topicItemContent.topicFunctionalityType === o.b.Recommendation,
+            a = 1 === (null == t ? void 0 : t.length) ? t[0].onClick : void 0
+          return !(null != n && n.not_interested) && !(null != n && n.following) && r ? a : void 0
         },
-        o = function (e) {
+        c = function (e) {
           return r.a.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo)
         }
     },
@@ -34,10 +34,10 @@
       'use strict'
       n.r(t)
       var r = n('ezF+'),
-        a = n('VPAj'),
-        c = n('E3Hq'),
-        o = n('ERkP'),
-        i = n.n(o),
+        o = n('VPAj'),
+        a = n('E3Hq'),
+        c = n('ERkP'),
+        i = n.n(c),
         s = n('wtjx'),
         l = n('Zejx'),
         u = n('rxPX'),
@@ -52,14 +52,14 @@
             return { saveAsRecentSearch: s.a }
           }),
         f = n('fRsM'),
-        m = n('XcJG'),
-        h = n('Irs7'),
+        h = n('XcJG'),
+        m = n('Irs7'),
         v = function (e) {
-          var t = Object(h.b)(),
+          var t = Object(m.b)(),
             n = e.entry.content,
             r = e.feedbackItems,
-            a = e.saveAsRecentSearch,
-            o = e.shouldStoreTypeaheadItem,
+            o = e.saveAsRecentSearch,
+            c = e.shouldStoreTypeaheadItem,
             s = e.topic
           if (
             (i.a.useEffect(function () {
@@ -68,24 +68,24 @@
             !s)
           )
             return null
-          var l = Object(c.a)({ feedbackItems: r, topic: s, topicItemContent: n }),
-            u = n.topicDisplayType === m.a.Basic
+          var l = Object(a.a)({ feedbackItems: r, topic: s, topicItemContent: n }),
+            u = n.topicDisplayType === h.a.Basic
           return i.a.createElement(f.a, {
             notInterestedOnClick: l,
-            saveAsRecentSearch: a,
-            shouldStoreTypeaheadItem: o,
+            saveAsRecentSearch: o,
+            shouldStoreTypeaheadItem: c,
             topic: s,
             withIcon: u,
           })
         },
-        b = p(i.a.memo(v))
+        y = p(i.a.memo(v))
       t.default = function (e) {
         return r
           .b({
-            component: b,
-            isFocusable: Object(a.a)(!0),
-            getScribeDataItem: c.b,
-            shouldDisplayBorder: Object(a.a)(!1),
+            component: y,
+            isFocusable: Object(o.a)(!0),
+            getScribeDataItem: a.b,
+            shouldDisplayBorder: Object(o.a)(!1),
           })
           .getHandler(function () {
             return e
@@ -95,9 +95,9 @@
     'aV/s': function (e, t, n) {
       'use strict'
       var r = n('VrFO'),
-        a = n.n(r),
-        c = n('Y9Ll'),
-        o = n.n(c),
+        o = n.n(r),
+        a = n('Y9Ll'),
+        c = n.n(a),
         i = n('1Pcy'),
         s = n.n(i),
         l = n('5Yy7'),
@@ -105,18 +105,18 @@
         d = n('2VqO'),
         p = n.n(d),
         f = n('KEM+'),
-        m = n.n(f),
-        h = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
-        v = n.n(h),
-        b = n('t62R'),
-        y = n('3XMw'),
-        I = n.n(y),
+        h = n.n(f),
+        m = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
+        v = n.n(m),
+        y = n('t62R'),
+        b = n('3XMw'),
+        I = n.n(b),
         w = n('I4+6'),
         g = n('cm6r'),
         k = n('UnyZ'),
         S = n('rHpw'),
-        E = n('MWbm'),
-        C = n('hOZg'),
+        C = n('MWbm'),
+        E = n('hOZg'),
         x = n('iY63'),
         O = n('IMYl'),
         _ = { active: I.a.e557ad8d, expand: I.a.e3a58c27, remove: I.a.h517e8d8 },
@@ -125,11 +125,11 @@
           var t = p()(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
+            o()(this, n)
+            for (var r = arguments.length, a = new Array(r), c = 0; c < r; c++) a[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(c))),
-              m()(s()(e), '_handleSecondaryClick', function () {
+              (e = t.call.apply(t, [this].concat(a))),
+              h()(s()(e), '_handleSecondaryClick', function () {
                 var t = e.props.secondaryAction
                 t && t.onSecondaryClick()
               }),
@@ -137,7 +137,7 @@
             )
           }
           return (
-            o()(n, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -145,38 +145,38 @@
                     t = e.accessibilityLabel,
                     n = e.avatar,
                     r = e.compact,
-                    a = e.disabled,
-                    c = e.link,
-                    o = e.mode,
+                    o = e.disabled,
+                    a = e.link,
+                    c = e.mode,
                     i = e.onClick,
                     s = e.secondaryAction,
                     l = e.selected,
                     u = e.style,
                     d = e.text,
-                    p = this._renderIcon(!0, o),
+                    p = this._renderIcon(!0, c),
                     f = s && this._renderIcon(!1, s.mode),
-                    m = [L.root, r && L.compact, a && L.disabled, l && L.selected, u],
-                    h = [L.content, p && L.withIcon, n && ((r && L.withAvatarImageCompact) || L.withAvatarImage)],
-                    y = w.a.generate({
+                    h = [L.root, r && L.compact, o && L.disabled, l && L.selected, u],
+                    m = [L.content, p && L.withIcon, n && ((r && L.withAvatarImageCompact) || L.withAvatarImage)],
+                    b = w.a.generate({
                       backgroundColor: l ? S.a.theme.colors.primary : 'transparent',
                       color: l ? S.a.theme.colors.white : S.a.theme.colors.primary,
                     })
                   return v.a.createElement(
-                    E.a,
-                    { style: m },
+                    C.a,
+                    { style: h },
                     v.a.createElement(
                       g.a,
                       {
-                        accessibilityLabel: t || (o ? _[o] : ''),
-                        disabled: a,
-                        interactiveStyles: y,
-                        link: c,
+                        accessibilityLabel: t || (c ? _[c] : ''),
+                        disabled: o,
+                        interactiveStyles: b,
+                        link: a,
                         onPress: i,
-                        style: h,
+                        style: m,
                       },
                       this._renderAvatar(),
                       v.a.createElement(
-                        b.b,
+                        y.b,
                         {
                           color: l ? 'whiteOnColor' : 'text',
                           numberOfLines: 1,
@@ -193,13 +193,13 @@
                           g.a,
                           {
                             accessibilityLabel: s.accessibilityLabel || (s.mode ? _[s.mode] : ''),
-                            disabled: a || s.disabled,
+                            disabled: o || s.disabled,
                             hoverLabel: { label: s.hoverLabel || (s.mode ? _[s.mode] : '') },
-                            interactiveStyles: y,
+                            interactiveStyles: b,
                             onPress: this._handleSecondaryClick,
                             style: L.secondaryControl,
                           },
-                          v.a.createElement(E.a, { style: L.secondaryBorder }, f),
+                          v.a.createElement(C.a, { style: L.secondaryBorder }, f),
                         )
                       : null,
                   )
@@ -212,12 +212,12 @@
                     t = arguments.length > 1 ? arguments[1] : void 0,
                     n = this.props.selected,
                     r = [L.icon, n && L.iconSelected],
-                    a = [L.icon]
+                    o = [L.icon]
                   switch (t) {
                     case k.a.Remove:
-                      return v.a.createElement(C.a, { style: [L.dismissIcon, e && r] })
+                      return v.a.createElement(E.a, { style: [L.dismissIcon, e && r] })
                     case k.a.Expand:
-                      return v.a.createElement(x.a, { style: e ? r : a })
+                      return v.a.createElement(x.a, { style: e ? r : o })
                     case k.a.Active:
                       return v.a.createElement(O.a, { style: r })
                     default:
@@ -232,7 +232,7 @@
                     t = e.avatar,
                     n = e.compact
                   return t
-                    ? v.a.createElement(E.a, { style: [L.avatarContainer, n ? L.avatarCompact : L.avatar] }, t)
+                    ? v.a.createElement(C.a, { style: [L.avatarContainer, n ? L.avatarCompact : L.avatar] }, t)
                     : null
                 },
               },
@@ -240,7 +240,7 @@
             n
           )
         })(v.a.PureComponent)
-      m()(A, 'defaultProps', { compact: !1, disabled: !1, selected: !1 })
+      h()(A, 'defaultProps', { compact: !1, disabled: !1, selected: !1 })
       var L = S.a.create(function (e) {
         return {
           root: {
@@ -286,9 +286,9 @@
     fRsM: function (e, t, n) {
       'use strict'
       var r = n('yiKp'),
-        a = n.n(r),
-        c = n('VrFO'),
-        o = n.n(c),
+        o = n.n(r),
+        a = n('VrFO'),
+        c = n.n(a),
         i = n('Y9Ll'),
         s = n.n(i),
         l = n('1Pcy'),
@@ -296,18 +296,18 @@
         d = n('5Yy7'),
         p = n.n(d),
         f = n('2VqO'),
-        m = n.n(f),
-        h = n('KEM+'),
-        v = n.n(h),
-        b = (n('1t7P'), n('jQ/y'), n('ho0z'), n('7xRU'), n('ERkP')),
-        y = n.n(b),
+        h = n.n(f),
+        m = n('KEM+'),
+        v = n.n(m),
+        y = (n('1t7P'), n('jQ/y'), n('ho0z'), n('7xRU'), n('ERkP')),
+        b = n.n(y),
         I = n('LWCC'),
         w = n('3XMw'),
         g = n.n(w),
         k = n('EHV7'),
         S = n('YICZ'),
-        E = n('3IPs'),
-        C = n('X04g'),
+        C = n('3IPs'),
+        E = n('X04g'),
         x = n('MWbm'),
         O = n('Irs7'),
         _ = n('hxu0'),
@@ -320,43 +320,43 @@
         H = 0,
         F = (function (e) {
           p()(n, e)
-          var t = m()(n)
+          var t = h()(n)
           function n(e, r) {
-            var c
+            var a
             return (
-              o()(this, n),
-              (c = t.call(this, e, r)),
-              v()(u()(c), '_topicLink', {
-                pathname: '/i/topics/'.concat(c.props.topic.id),
+              c()(this, n),
+              (a = t.call(this, e, r)),
+              v()(u()(a), '_topicLink', {
+                pathname: '/i/topics/'.concat(a.props.topic.id),
                 state: {
-                  referringScribeNamespace: a()(
-                    a()({}, c.props.analytics.contextualScribeNamespace),
+                  referringScribeNamespace: o()(
+                    o()({}, a.props.analytics.contextualScribeNamespace),
                     {},
                     { action: 'click' },
                   ),
                 },
               }),
-              v()(u()(c), '_handleOnClick', function () {
-                var e = c.props,
+              v()(u()(a), '_handleOnClick', function () {
+                var e = a.props,
                   t = e.saveAsRecentSearch,
                   n = e.shouldStoreTypeaheadItem,
                   r = e.topic,
-                  a = r.description,
-                  o = r.id,
+                  o = r.description,
+                  c = r.id,
                   i = r.name
                 t &&
                   n &&
-                  n(C.a.ItemType.TOPIC) &&
-                  t({ topic: { id: o, name: i, description: a || '', type: E.a.Topic } }),
-                  c._handleScribe('click')
+                  n(E.a.ItemType.TOPIC) &&
+                  t({ topic: { id: c, name: i, description: o || '', type: C.a.Topic } }),
+                  a._handleScribe('click')
               }),
-              (c._topicDomId = 'topic'.concat(H)),
-              (c._nameDomId = 'topic-name'.concat(H)),
-              (c._descriptionDomId = 'topic-description'.concat(H)),
-              (c._followButtonDomId = 'topic-follow-button'.concat(H)),
-              (c._notInterestedButtonDomId = 'topic-not-interested-button'.concat(H)),
+              (a._topicDomId = 'topic'.concat(H)),
+              (a._nameDomId = 'topic-name'.concat(H)),
+              (a._descriptionDomId = 'topic-description'.concat(H)),
+              (a._followButtonDomId = 'topic-follow-button'.concat(H)),
+              (a._notInterestedButtonDomId = 'topic-not-interested-button'.concat(H)),
               (H += 1),
-              c
+              a
             )
           }
           return (
@@ -368,12 +368,12 @@
                     t = e.educateOnFollow,
                     n = e.isInSidebar,
                     r = e.nameWeight,
-                    a = e.notInterestedOnClick,
-                    c = e.topic,
-                    o = c.description,
-                    i = c.name,
+                    o = e.notInterestedOnClick,
+                    a = e.topic,
+                    c = a.description,
+                    i = a.name,
                     s = this.context.loggedInUserId
-                  return y.a.createElement(
+                  return b.a.createElement(
                     A.a,
                     {
                       accessibilityLabelledBy: [
@@ -389,38 +389,38 @@
                       style: [T.root, T.flexStart],
                       withDarkerInteractiveBackground: n,
                     },
-                    y.a.createElement(
+                    b.a.createElement(
                       x.a,
                       { style: T.topic },
-                      y.a.createElement(x.a, { accessibilityLabel: j, nativeID: this._topicDomId }),
+                      b.a.createElement(x.a, { accessibilityLabel: j, nativeID: this._topicDomId }),
                       this._renderIcon(),
-                      y.a.createElement(
+                      b.a.createElement(
                         x.a,
                         { style: T.text },
-                        y.a.createElement(
+                        b.a.createElement(
                           L.b,
                           { nativeID: this._nameDomId, weight: r, withInteractiveStyling: !!this._topicLink },
                           i,
                         ),
-                        o
-                          ? y.a.createElement(
+                        c
+                          ? b.a.createElement(
                               L.b,
                               { color: 'gray700', nativeID: this._descriptionDomId, numberOfLines: 2 },
-                              o,
+                              c,
                             )
                           : null,
                       ),
                     ),
-                    y.a.createElement(
+                    b.a.createElement(
                       x.a,
                       { style: T.buttons },
-                      y.a.createElement(I.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: c }),
-                      s && a
-                        ? y.a.createElement(S.a, {
+                      b.a.createElement(I.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: a }),
+                      s && o
+                        ? b.a.createElement(S.a, {
                             nativeID: this._notInterestedButtonDomId,
-                            onPress: a,
+                            onPress: o,
                             style: T.marginLeft,
-                            topicId: c.id,
+                            topicId: a.id,
                           })
                         : null,
                     ),
@@ -431,7 +431,7 @@
                 key: '_renderIcon',
                 value: function () {
                   return this.props.withIcon
-                    ? y.a.createElement(P.a, { Icon: k.a, size: 'large', style: T.icon })
+                    ? b.a.createElement(P.a, { Icon: k.a, size: 'large', style: T.icon })
                     : null
                 },
               },
@@ -444,7 +444,7 @@
             ]),
             n
           )
-        })(y.a.Component)
+        })(b.a.Component)
       v()(F, 'contextType', R.a), v()(F, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
       var T = D.a.create(function (e) {
         return {
@@ -468,33 +468,18 @@
     gwY8: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return a
+        return o
       })
       var r = n('ERkP'),
-        a = n.n(r).a.createContext({ onFollow: void 0, onInitialize: void 0, onUnfollow: void 0 })
-    },
-    hxu0: function (e, t, n) {
-      'use strict'
-      var r = n('97Jx'),
-        a = n.n(r),
-        c = n('ERkP'),
-        o = n.n(c),
-        i = n('vqbU')
-      t.a = function (e) {
-        return function (t) {
-          return o.a.createElement(i.a.Consumer, null, function (n) {
-            return o.a.createElement(e, a()({}, t, { isInSidebar: n }))
-          })
-        }
-      }
+        o = n.n(r).a.createContext({ onFollow: void 0, onInitialize: void 0, onUnfollow: void 0 })
     },
     wtjx: function (e, t, n) {
       'use strict'
       n.d(t, 'g', function () {
-        return m
+        return h
       }),
         n.d(t, 'f', function () {
-          return h
+          return m
         }),
         n.d(t, 'e', function () {
           return v
@@ -506,15 +491,15 @@
           return k
         }),
         n.d(t, 'a', function () {
-          return E
+          return C
         }),
         n.d(t, 'c', function () {
-          return C
+          return E
         })
       var r = n('KEM+'),
-        a = n.n(r),
-        c = n('yiKp'),
-        o = n.n(c),
+        o = n.n(r),
+        a = n('yiKp'),
+        c = n.n(a),
         i = (n('7x/C'), n('JtPf'), n('LW0h'), n('Ee2X'), n('Ssj5')),
         s = n('RqPI'),
         l = 'recentSearches',
@@ -534,44 +519,44 @@
               return e.keyword || e.topic || e.event || (e.user && e.user.id !== r.id)
             })
           } else if (e && e.topic) {
-            var a = e.topic
+            var o = e.topic
             n = t.filter(function (e) {
-              return e.keyword || e.user || e.event || (e.topic && e.topic.id !== a.id)
+              return e.keyword || e.user || e.event || (e.topic && e.topic.id !== o.id)
             })
           } else if (e && e.event) {
-            var c = e.event
+            var a = e.event
             n = t.filter(function (e) {
-              return e.keyword || e.user || e.topic || (e.event && e.event.id !== c.id)
+              return e.keyword || e.user || e.topic || (e.event && e.event.id !== a.id)
             })
           } else if (e && e.keyword) {
-            var o = e.keyword
+            var c = e.keyword
             n = t.filter(function (e) {
-              return (e.keyword && e.keyword.query !== o.query) || e.user || e.topic || e.event
+              return (e.keyword && e.keyword.query !== c.query) || e.user || e.topic || e.event
             })
           }
           return n
         },
         f = { fetched: !1, recentSearches: [] }
-      var m = function (e) {
+      var h = function (e) {
           return e.recentSearches.recentSearches
         },
-        h = function (e) {
-          return m(e)[0] || null
+        m = function (e) {
+          return h(e)[0] || null
         },
         v = function (e) {
           return e.recentSearches.fetched
         },
-        b = 'rweb/recentSearches/INIT_FROM_CACHE',
-        y = function (e) {
-          return { type: b, payload: e }
+        y = 'rweb/recentSearches/INIT_FROM_CACHE',
+        b = function (e) {
+          return { type: y, payload: e }
         },
         I = 'rweb/recentSearches/REMOVE_QUERY',
         w = function (e) {
           return function (t, n, r) {
             r.userPersistence
             t({ payload: e, type: I })
-            var a = n().recentSearches
-            return Object(s.m)(n()) ? t(d(a.recentSearches)) : Promise.resolve()
+            var o = n().recentSearches
+            return Object(s.m)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
           }
         },
         g = 'rweb/recentSearches/CLEAR_ALL',
@@ -584,52 +569,52 @@
           }
         },
         S = 'rweb/recentSearches/ADD_QUERY',
-        E = function (e) {
+        C = function (e) {
           return function (t, n, r) {
             r.userPersistence
             t({ payload: e, type: S })
-            var a = n().recentSearches
-            return Object(s.m)(n()) ? t(d(a.recentSearches)) : Promise.resolve()
+            var o = n().recentSearches
+            return Object(s.m)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
           }
         },
-        C = function () {
+        E = function () {
           return function (e, t, n) {
             n.userPersistence
             return t().recentSearches.fetched
               ? Promise.resolve()
               : e(function (e, t, n) {
                   var r = n.userPersistence,
-                    a = t()
-                  return Object(s.m)(a)
+                    o = t()
+                  return Object(s.m)(o)
                     ? r
                         .get(u)
                         .then(function (t) {
-                          e(y(t))
+                          e(b(t))
                         })
                         .catch(function () {
-                          e(y())
+                          e(b())
                         })
-                    : (e(y()), Promise.resolve())
+                    : (e(b()), Promise.resolve())
                 })
           }
         }
       i.a.register(
-        a()({}, l, function () {
+        o()({}, l, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case S:
               var n = t.payload,
                 r = n ? p(n, e.recentSearches) : []
-              return r.length > 49 && r.splice(49, 1), n && r.unshift(n), o()(o()({}, e), {}, { recentSearches: r })
+              return r.length > 49 && r.splice(49, 1), n && r.unshift(n), c()(c()({}, e), {}, { recentSearches: r })
             case I:
-              var a = t.payload,
-                c = a ? p(a, e.recentSearches) : []
-              return o()(o()({}, e), {}, { recentSearches: c })
+              var o = t.payload,
+                a = o ? p(o, e.recentSearches) : []
+              return c()(c()({}, e), {}, { recentSearches: a })
             case g:
               return { fetched: !0, recentSearches: [] }
-            case b:
-              return o()(o()(o()({}, e), t.payload), {}, { fetched: !0 })
+            case y:
+              return c()(c()(c()({}, e), t.payload), {}, { fetched: !0 })
             default:
               return e
           }
@@ -640,10 +625,10 @@
       'use strict'
       n.r(t)
       var r = n('ezF+'),
-        a = n('VPAj'),
-        c = n('E3Hq'),
-        o = (n('ho0z'), n('ERkP')),
-        i = n.n(o),
+        o = n('VPAj'),
+        a = n('E3Hq'),
+        c = (n('ho0z'), n('ERkP')),
+        i = n.n(c),
         s = n('Zejx'),
         l = n('rxPX'),
         u = function (e, t) {
@@ -654,66 +639,66 @@
         }),
         p = n('ddV6'),
         f = n.n(p),
-        m = n('v6aA'),
-        h = n('0KEI'),
+        h = n('v6aA'),
+        m = n('0KEI'),
         v = Object(l.a)()
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(h.createLocalApiErrorHandlerWithContextFactory)('TOPIC_PILL_CONTEXT'),
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('TOPIC_PILL_CONTEXT'),
               follow: s.a.follow,
               unfollow: s.a.unfollow,
             }
           })
           .withAnalytics(),
-        b = n('3XMw'),
-        y = n.n(b),
+        y = n('3XMw'),
+        b = n.n(y),
         I = n('Tp1h'),
         w = n('Jkc4'),
         g = n('gwY8'),
         k = n('MWbm'),
         S = n('UnyZ'),
-        E = n('aV/s'),
-        C = n('rHpw'),
-        x = y.a.ge8f3043,
-        O = y.a.aa576cbf,
-        _ = y.a.i77347d0,
-        A = y.a.e839db39,
+        C = n('aV/s'),
+        E = n('rHpw'),
+        x = b.a.ge8f3043,
+        O = b.a.aa576cbf,
+        _ = b.a.i77347d0,
+        A = b.a.e839db39,
         L = function (e) {
-          var t = i.a.useContext(m.a).loggedInUserId,
+          var t = i.a.useContext(h.a).loggedInUserId,
             n = e.analytics,
             r = e.createLocalApiErrorHandler,
-            a = e.follow,
-            c = e.notInterestedOnClick,
-            o = e.topic,
+            o = e.follow,
+            a = e.notInterestedOnClick,
+            c = e.topic,
             s = e.unfollow,
             l = e.withActionIcon,
-            u = o.following,
-            d = o.id,
-            p = o.name,
-            h = o.not_interested,
+            u = c.following,
+            d = c.id,
+            p = c.name,
+            m = c.not_interested,
             v = i.a.useRef(!1),
-            b = i.a.useState(0),
-            y = f()(b, 2),
-            C = y[0],
-            L = y[1],
+            y = i.a.useState(0),
+            b = f()(y, 2),
+            E = b[0],
+            L = b[1],
             D = i.a.useCallback(
               function (e) {
-                if (0 === C) {
+                if (0 === E) {
                   var t = e.nativeEvent.layout.width
                   L(t)
                 }
               },
-              [C],
+              [E],
             ),
             R = function (e) {
-              if (!h && l) return u ? S.a.Active : S.a.Expand
+              if (!m && l) return u ? S.a.Active : S.a.Expand
             },
             j = function (e, t, n) {
               return e(u ? F(n) : H(t))
             },
             H = function (e) {
               return function (t) {
-                a(d)
+                o(d)
                   .catch(r())
                   .then(e && e(d)),
                   n.scribeAction('follow')
@@ -728,31 +713,31 @@
               }
             },
             T = function (e, n, r) {
-              if (t && c)
+              if (t && a)
                 return {
                   mode: S.a.Remove,
-                  onSecondaryClick: c,
+                  onSecondaryClick: a,
                   accessibilityLabel: _({ topicName: p }),
                   hoverLabel: A,
-                  disabled: u || h,
+                  disabled: u || m,
                 }
             }
           return i.a.createElement(w.a, { customText: p, displayMode: I.a.topic }, function (e) {
             return i.a.createElement(g.a.Consumer, null, function (t) {
               var n = t.onFollow,
                 r = t.onInitialize,
-                a = t.onUnfollow
+                o = t.onUnfollow
               return (
                 r && !v.current && (r(d, u), (v.current = !0)),
                 i.a.createElement(
                   k.a,
-                  { onLayout: D, style: [P.root, { minWidth: C }] },
-                  i.a.createElement(E.a, {
+                  { onLayout: D, style: [P.root, { minWidth: E }] },
+                  i.a.createElement(C.a, {
                     accessibilityLabel: u ? O({ topicName: p }) : x({ topicName: p }),
-                    disabled: h,
+                    disabled: m,
                     key: d,
                     mode: R(),
-                    onClick: j(e, n, a),
+                    onClick: j(e, n, o),
                     secondaryAction: T(),
                     selected: u,
                     style: P.pill,
@@ -764,7 +749,7 @@
           })
         }
       L.defaultProps = { withActionIcon: !0 }
-      var P = C.a.create(function (e) {
+      var P = E.a.create(function (e) {
           return {
             root: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space4 },
             pill: { textOverflow: 'ellipsis' },
@@ -779,11 +764,11 @@
           var t = Object(R.b)(),
             n = e.entry.content,
             r = e.feedbackItems,
-            a = e.topic,
-            o = n.topicDisplayType,
+            o = e.topic,
+            c = n.topicDisplayType,
             s = n.topicFunctionalityType
           i.a.useEffect(function () {
-            a && t.scribeAction('impression')
+            o && t.scribeAction('impression')
           }, [])
           var l = i.a.useCallback(
             function () {
@@ -791,18 +776,18 @@
             },
             [t],
           )
-          if (!a) return null
-          var u = Object(c.a)({ feedbackItems: r, topic: a, topicItemContent: n }),
-            d = s !== H.b.Pivot && o !== H.a.PillWithoutActionIcon
+          if (!o) return null
+          var u = Object(a.a)({ feedbackItems: r, topic: o, topicItemContent: n }),
+            d = s !== H.b.Pivot && c !== H.a.PillWithoutActionIcon
           return s === H.b.Pivot
             ? i.a.createElement(
                 k.a,
                 { style: T.root },
-                i.a.createElement(j.a, { link: '/i/topics/'.concat(a.id), onClick: l, text: a.name }),
+                i.a.createElement(j.a, { link: '/i/topics/'.concat(o.id), onClick: l, text: o.name }),
               )
-            : i.a.createElement(D, { notInterestedOnClick: u, topic: a, withActionIcon: d })
+            : i.a.createElement(D, { notInterestedOnClick: u, topic: o, withActionIcon: d })
         },
-        T = C.a.create(function (e) {
+        T = E.a.create(function (e) {
           return { root: { margin: e.spaces.space4 } }
         }),
         B = d(i.a.memo(F))
@@ -812,9 +797,9 @@
         return r
           .b({
             component: B,
-            isFocusable: Object(a.a)(!0),
-            getScribeDataItem: c.b,
-            shouldDisplayBorder: Object(a.a)(n),
+            isFocusable: Object(o.a)(!0),
+            getScribeDataItem: a.b,
+            shouldDisplayBorder: Object(o.a)(n),
           })
           .getHandler()
       }

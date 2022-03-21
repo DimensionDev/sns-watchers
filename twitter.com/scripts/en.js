@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [126],
+    [124],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -2537,13 +2537,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1c78795', 'Official website'),
           a('cf93bcbf', 'Official website reference'),
           a('a7f1cff6', 'Add official website reference'),
-          a('c6bd60ec', 'Activist or organizer'),
-          a('je403ac5', 'Company, brand, or organization'),
-          a('ff8c97fb', 'Entertainer or entertainment group'),
-          a('h4d652fb', 'Government official or affiliate'),
-          a('c5b72ac5', 'Content creator or influential individual'),
-          a('f7ff070c', 'News organization or journalist'),
-          a('eb7de689', 'Professional sports or gaming entity'),
+          a('ff2ee0c1', 'Activism'),
+          a('j0e2cfa7', 'Business'),
+          a('hc61adfb', 'Entertainment'),
+          a('e404203c', 'Gaming'),
+          a('d2042392', 'Government'),
+          a('c8ee31da', 'News'),
+          a('d27beb9e', 'Sports'),
           a('cc4b66b5', 'Select a category'),
           a('b37461a4', 'Select an account type'),
           a('b27325f6', 'Content creator'),
@@ -2553,15 +2553,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'g704a939',
             'An official site associated with known advocacy work that references you in a leadership position.',
           ),
-          a('d2ea2049', 'Other influential individual'),
+          a('c6bd60ec', 'Activist or organizer'),
           a(
-            'h753ddd2',
-            'Individuals with a significant presence on and off the Twitter platform that do not fall into other categories.',
+            'i97c0925',
+            'Notable individuals using Twitter to bring about socioeconomic, political, or cultural change.',
           ),
+          a('a18c6dfb', 'Journalist'),
+          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.'),
           a('ff929feb', 'Prominent organization or affiliate'),
           a(
             'jf537894',
             'Prominent organizations, and secondary affiliated accounts, including companies, brands, and non-profit organizations.',
+          ),
+          a('d2ea2049', 'Other influential individual'),
+          a(
+            'h753ddd2',
+            'Individuals with a significant presence on and off the Twitter platform that do not fall into other categories.',
           ),
           a('i3e6aaa5', 'Senior leader or executive'),
           a(
@@ -2630,8 +2637,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2378d34', 'Add government reference'),
           a('a05b8445', 'Freelance journalist'),
           a('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
-          a('a18c6dfb', 'Journalist'),
-          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.'),
           a('d2d7af4b', 'News organization or publication'),
           a(
             'd83e51db',
@@ -2674,7 +2679,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
           ),
           a('b2808f47', 'Individual in gaming'),
-          a('jaa90f86', 'Professional esports rostered team members, coaches, and management.'),
+          a(
+            'db7b3557',
+            'Individual accounts of esport athletes that are affiliated with verified gaming teams or leagues.',
+          ),
           a(
             'bbd9a911',
             'I have confirmed that team, league, event, or organization associated with my account is already verified.',
@@ -2700,11 +2708,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
           ),
           a('j3da4de9', 'You can’t request verification right now'),
-          a('ff2ee0c1', 'Activism'),
           a('af39265e', 'Companies, Brands, and Organizations'),
-          a('hc61adfb', 'Entertainment'),
-          a('d2042392', 'Government'),
-          a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
           a('c076e32d', 'Learn more'),
           a('e492eeb4', 'Learn more'),
@@ -3532,12 +3536,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j4fa776e', 'Phones'),
           a('i7acdb35', 'Tablets'),
           a('c112dfc8', 'Desktop'),
-          a('jd8607b9', 'Activated on')
-        a('ea4f6c9e', 'Browsers'),
+          a('jd8607b9', 'Activated on'),
+          a('ea4f6c9e', 'Browsers'),
           a('d750b93e', function (e) {
             return e.count + ' browser' + n(e.count, '', 's')
-          }),
-          a('a9783601', 'Mobile Devices'),
+          })
+        a('a9783601', 'Mobile Devices'),
           a('j043aa31', function (e) {
             return e.count + ' mobile device' + n(e.count, '', 's')
           }),
@@ -3669,6 +3673,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i95202f6', 'Accounts delegated to you'),
           a('cb8ebf5b', 'Members you’ve delegated'),
           a('d9aef255', 'Your delegations'),
+          a('afb3ccf6', 'Don’t allow'),
+          a('dfae5248', 'Don’t allow others to invite you to their account?'),
+          a(
+            'b9c91523',
+            'In the future, you won’t receive invites to other delegations. You’ll still be able to access your existing delegations.',
+          ),
           a('d2da668b', 'Delegate members'),
           a(
             'e4d5db41',
@@ -4151,7 +4161,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c5d190c0', 'Fashion'),
           a('i6dfc494', 'Film and television'),
           a('ff2b68ca', 'Finance'),
-          a('e404203c', 'Gaming'),
           a('ab389321', 'Health and fitness'),
           a('a46fdec4', 'Lifestyle'),
           a('f28d8b06', 'Music'),
@@ -4162,7 +4171,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i5cade16', 'Reality TV'),
           a('e084f2af', 'Skincare'),
           a('a9db15b2', 'Small and medium business'),
-          a('d27beb9e', 'Sports'),
           a('a92db4a9', 'Tech'),
           a('fc64990d', 'Video'),
           a('hb5f1d64', 'Writing'),
@@ -4751,7 +4759,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
           ),
-          a('e16e8170', 'Position')
+          a('e16e8170', 'Position'),
+          a('a2bb5115', function (e) {
+            return e.count + ' Tweet' + n(e.count, '', 's')
+          })
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4768,12 +4779,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('a2bb5115', function (e) {
-          return e.count + ' Tweet' + n(e.count, '', 's')
+        a('j5602a96', function (e) {
+          return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
         }),
-          a('j5602a96', function (e) {
-            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
-          }),
           a('j15abc53', 'Beginning'),
           a('c371fb99', 'End'),
           a('b5210d57', 'Enter Collection ID'),
@@ -6029,9 +6037,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e9bd453e', 'Replay'),
           a('ec8ab8b4', 'Mute'),
-          a('b8b6344a', 'Unmute')
-        a('c9a642f9', 'Volume slider'),
-          a('c27e60bf', 'Full screen'),
+          a('b8b6344a', 'Unmute'),
+          a('c9a642f9', 'Volume slider')
+        a('c27e60bf', 'Full screen'),
           a('d2969f1f', 'Exit full screen'),
           a('c1658fc6', 'The media could not be played.'),
           a('ce871584', 'This broadcast has ended.'),
@@ -6424,8 +6432,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -8895,7 +8903,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
@@ -10615,6 +10623,46 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             ],
             l('en').pluralGenerator({}),
           )),
+          (l.a50325677 = h(
+            [
+              '',
+              ,
+              1,
+              0,
+              2,
+              ,
+              ,
+              ,
+              3,
+              ,
+              '',
+              '#,##0.###',
+              '-#,##0.###',
+              '-',
+              '',
+              b(),
+              '∞',
+              'NaN',
+              { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+              ,
+              {
+                3: { one: '0K', other: '0K' },
+                4: { one: '00K', other: '00K' },
+                5: { one: '000K', other: '000K' },
+                6: { one: '0M', other: '0M' },
+                7: { one: '00M', other: '00M' },
+                8: { one: '000M', other: '000M' },
+                9: { one: '0B', other: '0B' },
+                10: { one: '00B', other: '00B' },
+                11: { one: '000B', other: '000B' },
+                12: { one: '0T', other: '0T' },
+                13: { one: '00T', other: '00T' },
+                14: { one: '000T', other: '000T' },
+                maxExponent: 14,
+              },
+            ],
+            l('en').pluralGenerator({}),
+          )),
           (l.b1158699306 = h(
             [
               '',
@@ -11437,6 +11485,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h3629782', l.a1286203598),
           a('ja781451', l.a71710728),
           a('cfa1a7b8', l.a605057387),
+          a('eefcd267', l.a50325677),
           a('cf8abf58', l.b1158699306),
           a('d0783e70', l.b1207917069),
           a('e8c823d2', l.a330342455),

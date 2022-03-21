@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [72],
+  [70],
   {
     '0rgK': function (e, n, t) {
       'use strict'
@@ -130,14 +130,14 @@
         c = (t('lTEL'), t('7x/C'), t('JtPf'), t('87if'), t('kYxP'), t('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([t.e(0), t.e(353)]).then(t.bind(null, 'a+ad'))
+            return Promise.all([t.e(0), t.e(352)]).then(t.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: c.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([t.e(0), t.e(355)]).then(t.bind(null, 'hX2d'))
+            return Promise.all([t.e(0), t.e(354)]).then(t.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: c.a.Critical,

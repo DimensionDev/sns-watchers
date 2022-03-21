@@ -1,490 +1,133 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [111],
+  [109],
   {
-    '88ay': function (e, o, t) {
+    e5HP: function (e, o, t) {
       'use strict'
-      t.d(o, 'c', function () {
-        return ee
-      }),
-        t.d(o, 'e', function () {
-          return oe
-        }),
-        t.d(o, 'f', function () {
-          return te
-        }),
-        t.d(o, 'd', function () {
-          return re
-        }),
-        t.d(o, 'a', function () {
-          return ie
-        })
-      var r = t('m3Bd'),
+      t.d(o, 'a', function () {
+        return j
+      })
+      var r = t('VrFO'),
         n = t.n(r),
-        l = t('yiKp'),
-        i = t.n(l),
-        a = t('VrFO'),
-        c = t.n(a),
-        s = t('Y9Ll'),
+        l = t('Y9Ll'),
+        a = t.n(l),
+        c = t('5Yy7'),
+        i = t.n(c),
+        s = t('2VqO'),
         u = t.n(s),
-        d = t('1Pcy'),
-        f = t.n(d),
-        p = t('5Yy7'),
-        h = t.n(p),
-        m = t('2VqO'),
-        w = t.n(m),
-        _ = t('KEM+'),
-        v = t.n(_),
-        b = t('97Jx'),
-        y = t.n(b),
-        g = (t('1t7P'), t('jQ/y'), t('ho0z'), t('2G9S'), t('hBpG'), t('7x/C'), t('ERkP')),
-        I = t.n(g),
-        C = t('6rlp'),
-        E = t('zh9S'),
-        k = t('G6rE'),
-        S = t('rxPX'),
-        F = t('0KEI'),
-        A = function (e, o) {
-          return k.e.select(e, o.userId)
-        },
-        O = function (e, o) {
-          return o.promotedContent
-        },
-        L = Object(S.a)()
-          .propsFromState(function () {
-            return { promotedContent: O, user: A }
-          })
-          .adjustStateProps(function (e) {
-            var o = e.promotedContent,
-              t = e.user
-            return { promotedContent: o || (t ? t.promoted_content : void 0), user: t }
-          })
-          .propsFromActions(function () {
-            return {
-              createLocalApiErrorHandler: Object(F.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
-              log: C.a,
-              scribeAction: E.c,
-            }
-          }),
-        R = t('I57f'),
-        N = t('vMjK'),
-        T = t('MWbm'),
-        P = t('IG7M'),
-        U = t('rHpw'),
-        B = function (e) {
-          var o = e.children,
-            t = e.promotedContent,
-            r = e.user
-          return I.a.createElement(
-            T.a,
-            { style: x.decorationWrapper },
-            o,
-            I.a.createElement(P.a, {
-              renderActionMenu: function (e) {
-                return I.a.createElement(N.b, { onClose: e, promotedContent: t, user: r, view: 'follower' })
+        f = t('KEM+'),
+        d = t.n(f),
+        w = t('ERkP'),
+        p = t.n(w),
+        h = t('t62R'),
+        m = t('3XMw'),
+        y = t.n(m),
+        b = t('rHpw'),
+        v = t('MWbm'),
+        g = t('yiKp'),
+        _ = t.n(g),
+        E = t('Lsrn'),
+        O = t('k/Ka'),
+        I = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(O.a)(
+            'svg',
+            _()(
+              _()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [E.a.root, e.style],
+                viewBox: '0 0 24 24',
               },
-              style: x.actionMenu,
-            }),
+            ),
+            p.a.createElement(
+              'g',
+              null,
+              p.a.createElement('path', {
+                d: 'M12 1C5.92 1 1 5.92 1 12s4.92 11 11 11 11-4.92 11-11S18.08 1 12 1zm5.05 12.48c0 .48-.39.87-.88.87-.477 0-.87-.393-.87-.87V9.94l-6.85 6.85c-.163.166-.387.26-.62.26-.233 0-.457-.094-.62-.26-.338-.341-.338-.899 0-1.24l6.85-6.85h-3.54c-.477 0-.87-.393-.87-.87 0-.49.39-.88.87-.88h5.65c.11 0 .23.03.33.07.11.04.2.1.29.19.09.09.15.18.19.29.04.1.07.22.07.33v5.65z',
+              }),
+            ),
           )
-        },
-        x = U.a.create(function (e) {
-          return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
-        }),
-        j = t('uIZp'),
-        M = t('mN6z'),
-        K = t('caTy'),
-        G = t('3IPs'),
-        D = t('Rp9C'),
-        q = t('X04g'),
-        H = t('Re5t'),
-        W = t('TnY3'),
-        Q = t('hxu0'),
-        Y = t('v6aA'),
-        z = t('7JQg'),
-        J = t('nBUg'),
-        V = t('IMA+'),
-        X = t('cFuS'),
-        Z = [
-          'avatarDecoration',
-          'bottomControl',
-          'cellClickable',
-          'createLocalApiErrorHandler',
-          'decoration',
-          'followRequestReceived',
-          'hideBlocked',
-          'history',
-          'isAutoblocking',
-          'isBlockedBy',
-          'isBlocking',
-          'isDeviceFollowing',
-          'isFollowing',
-          'isInSidebar',
-          'location',
-          'log',
-          'onClick',
-          'promotedItemId',
-          'saveAsRecentSearch',
-          'scribeAction',
-          'scribeData',
-          'scribeNamespace',
-          'shouldScribeImpression',
-          'shouldScribeProfileClick',
-          'shouldStoreTypeaheadItem',
-          'socialContext',
-          'user',
-        ],
-        $ = function (e) {
-          var o = e.user
-          return o && o.profile_image_url_https
-            ? I.a.createElement(
-                ne,
-                y()({}, e, {
-                  avatarUri: o.profile_image_url_https,
-                  description: o.description,
-                  entities: o.entities,
-                  followRequestReceived: o.follow_request_received,
-                  highlightedLabel: o.highlightedLabel,
-                  isAutoblocking: o.smart_blocking,
-                  isBlockedBy: o.blocked_by,
-                  isBlocking: o.blocking,
-                  isDeviceFollowing: o.notifications,
-                  isFollowedBy: o.followed_by,
-                  isFollowing: o.following,
-                  isProtected: o.protected,
-                  isVerified: o.verified,
-                  name: o.name,
-                  screenName: o.screen_name,
-                  translatorType: o.translator_type,
-                  user: o,
-                  withheldDescription: o.withheld_description,
-                  withheldEntities: o.withheld_entities,
-                }),
-              )
-            : null
         }
-      $.defaultProps = {
-        cellClickable: !0,
-        decoration: null,
-        displayMode: H.a.UserCompact,
-        followRequestReceived: !1,
-        hideBlocked: !1,
-        promotedItemType: X.c.USER,
-        shouldScribeProfileClick: !0,
-        shouldScribeImpression: !1,
-        withFollowsYou: !1,
-      }
-      var ee = function (e) {
-          var o = e.isDeviceFollowing,
-            t = e.userId
-          return I.a.createElement(R.a, { isFollowing: o, style: le.followButton, userId: t })
-        },
-        oe = function (e) {
-          var o = e.loggedInUserId,
-            t = e.promotedContent,
-            r = e.userId
-          return o !== r
-            ? I.a.createElement(j.a, { promotedContent: t, size: 'small', style: le.followButton, userId: r })
-            : null
-        },
-        te = function (e) {
-          return I.a.createElement(B, { promotedContent: e.promotedContent, user: e.user }, oe(e))
-        },
-        re = function (e) {
-          return I.a.createElement(P.a, {
-            renderActionMenu: function (o) {
-              return I.a.createElement(N.b, {
-                onClose: o,
-                promotedContent: e.promotedContent,
-                user: e.user,
-                view: 'rito_flagged_accounts',
-              })
-            },
-          })
-        },
-        ne = (function (e) {
-          h()(t, e)
-          var o = w()(t)
+      I.metadata = { width: 24, height: 24 }
+      var L = I,
+        F = t('uFYP'),
+        C = y.a.f1a1b790,
+        S = y.a.if2bf8b3,
+        N = y.a.f3624b5c,
+        k = y.a.b4b3b113,
+        P = y.a.be22205f,
+        K = y.a.hcbbe447,
+        j = (function (e) {
+          i()(t, e)
+          var o = u()(t)
           function t() {
-            var e
-            c()(this, t)
-            for (var r = arguments.length, n = new Array(r), l = 0; l < r; l++) n[l] = arguments[l]
-            return (
-              (e = o.call.apply(o, [this].concat(n))),
-              v()(f()(e), '_handleAvatarClick', function () {
-                var o = e.props.shouldScribeProfileClick
-                e._handleSaveAsRecentSearch(),
-                  o && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(X.b.PROFILE_IMAGE_CLICK)
-              }),
-              v()(f()(e), '_handleCellClick', function () {
-                var o = e.props,
-                  t = o.history,
-                  r = o.onClick,
-                  n = o.screenName,
-                  l = o.user,
-                  i = e._getPromotedTweetState()
-                e._handleSaveAsRecentSearch(),
-                  e._handleScreenNameClick(),
-                  r ? r({ user: l, state: i }) : t.push({ pathname: '/'.concat(n), state: i || void 0 })
-              }),
-              v()(f()(e), '_handleScreenNameClick', function () {
-                var o = e.props.shouldScribeProfileClick
-                e._handleSaveAsRecentSearch(),
-                  o && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(X.b.SCREEN_NAME_CLICK)
-              }),
-              v()(f()(e), '_handleSaveAsRecentSearch', function () {
-                var o = e.props,
-                  t = o.saveAsRecentSearch,
-                  r = o.shouldStoreTypeaheadItem,
-                  n = o.userId
-                t && r && r(q.a.ItemType.USER) && t({ user: { id: n, type: G.a.User } })
-              }),
-              v()(f()(e), '_scribeAction', function (o) {
-                var t,
-                  r = e.props,
-                  n = r.promotedContent,
-                  l = r.scribeAction,
-                  a = r.scribeData,
-                  c = r.scribeNamespace,
-                  s = r.user,
-                  u = r.userId,
-                  d =
-                    null == a || null === (t = a.items) || void 0 === t
-                      ? void 0
-                      : t.find(function (e) {
-                          return e.item_type === q.a.ItemType.USER && e.id === u
-                        }),
-                  f = a.search_details,
-                  p = { items: [i()(i()({}, d), D.a.getUserItem(s, n))], profile_id: u, search_details: f }
-                l(i()(i()({}, c), o), p)
-              }),
-              e
-            )
+            return n()(this, t), o.apply(this, arguments)
           }
           return (
-            u()(t, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  this._shouldRender() && this._handleImpression()
-                },
-              },
-              {
-                key: 'shouldComponentUpdate',
-                value: function (e) {
-                  return !Object(M.a)(this.props, e)
-                },
-              },
+            a()(t, [
               {
                 key: 'render',
                 value: function () {
-                  var e = this,
-                    o = this.props,
-                    t = o.avatarDecoration,
-                    r = (o.bottomControl, o.cellClickable),
-                    l =
-                      (o.createLocalApiErrorHandler,
-                      o.decoration,
-                      o.followRequestReceived,
-                      o.hideBlocked,
-                      o.history,
-                      o.isAutoblocking,
-                      o.isBlockedBy,
-                      o.isBlocking,
-                      o.isDeviceFollowing,
-                      o.isFollowing,
-                      o.isInSidebar),
-                    i =
-                      (o.location,
-                      o.log,
-                      o.onClick,
-                      o.promotedItemId,
-                      o.saveAsRecentSearch,
-                      o.scribeAction,
-                      o.scribeData,
-                      o.scribeNamespace,
-                      o.shouldScribeImpression,
-                      o.shouldScribeProfileClick,
-                      o.shouldStoreTypeaheadItem,
-                      o.socialContext),
-                    a = o.user,
-                    c = n()(o, Z)
-                  return this._shouldRender()
-                    ? I.a.createElement(
-                        J.b.Provider,
-                        {
-                          value: {
-                            socialContextRefreshEnabled: function () {
-                              return e.context.featureSwitches.isTrue(
-                                'social_context_and_topic_context_refresh_alignment_enabled',
-                              )
-                            },
-                          },
-                        },
-                        I.a.createElement(
-                          V.a,
-                          y()({}, c, {
-                            avatarDecoration: t,
-                            bottomControl: this._renderBottomControl(),
-                            decoration: this._renderDecoration(),
-                            highlightedLabel: this._getHighlightedLabel(),
-                            isBlocking: a.blocking,
-                            onAvatarClick: this._handleAvatarClick,
-                            onCellClick: r ? this._handleCellClick : void 0,
-                            onScreenNameClick: this._handleScreenNameClick,
-                            socialContext: i
-                              ? {
-                                  contextType: i.contextType,
-                                  text: i.text,
-                                  link: i.landingUrl ? Object(K.b)(i.landingUrl) : void 0,
-                                }
-                              : void 0,
-                            withDarkerInteractiveBackground: l,
-                          }),
-                        ),
-                      )
-                    : null
+                  var e = this.props,
+                    o = e.color,
+                    t = e.nativeID,
+                    r = e.style,
+                    n = e.withCircleIcon ? L : F.a
+                  return p.a.createElement(
+                    v.a,
+                    { style: [R.root, r] },
+                    p.a.createElement(n, { style: [R.icon, o && R[o]] }),
+                    p.a.createElement(h.b, { color: o, nativeID: t, size: 'subtext2' }, this._getPromotedLabel()),
+                  )
                 },
               },
               {
-                key: '_renderBottomControl',
-                value: function () {
-                  return this._renderControl(this.props.bottomControl || null)
-                },
-              },
-              {
-                key: '_renderDecoration',
-                value: function () {
-                  return this._renderControl(this.props.decoration)
-                },
-              },
-              {
-                key: '_renderControl',
-                value: function (e) {
-                  var o = this.context.loggedInUserId,
-                    t = this.props,
-                    r = t.displayMode,
-                    n = t.followRequestReceived,
-                    l = t.isAutoblocking,
-                    i = t.isBlocking,
-                    a = t.isDeviceFollowing,
-                    c = t.isFollowing,
-                    s = t.promotedContent,
-                    u = t.screenName,
-                    d = t.user,
-                    f = t.userId
-                  return 'function' == typeof e
-                    ? e({
-                        displayMode: r,
-                        followRequestReceived: n,
-                        isAutoblocking: l,
-                        isBlocking: i,
-                        isDeviceFollowing: !!a,
-                        isFollowing: !!c,
-                        loggedInUserId: o,
-                        promotedContent: s,
-                        screenName: u,
-                        user: d,
-                        userId: f,
-                      })
-                    : e
-                },
-              },
-              {
-                key: '_shouldRender',
+                key: '_getPromotedLabel',
                 value: function () {
                   var e = this.props,
-                    o = e.hideBlocked,
-                    t = e.isBlockedBy,
-                    r = e.isBlocking,
-                    n = e.screenName
-                  return e.userId && n && !(o && (t || r))
-                },
-              },
-              {
-                key: '_getHighlightedLabel',
-                value: function () {
-                  var e = this.props.user.highlightedLabel,
-                    o = 'AutomatedLabel' === (null == e ? void 0 : e.userLabelType),
-                    t = !!o && this.context.featureSwitches.isTrue('account_taxonomy_automated_label_enabled')
-                  return !o || t ? e : void 0
-                },
-              },
-              {
-                key: '_getPromotedTweetState',
-                value: function () {
-                  var e = this.props,
-                    o = e.promotedContent,
-                    t = e.promotedItemType
-                  return o && t === X.c.TWEET ? { promotedTweetState: o } : null
-                },
-              },
-              {
-                key: '_handleAsyncPromotedEvent',
-                value: function (e) {
-                  var o = this.props,
-                    t = o.createLocalApiErrorHandler,
-                    r = o.log,
-                    n = o.promotedContent,
-                    l = o.promotedItemId,
-                    i = o.promotedItemType,
-                    a = o.userId
-                  n &&
-                    r({
-                      disclosureType: n.disclosure_type,
-                      itemId: l || a,
-                      itemType: i,
-                      params: { event: e, impression_id: n.impression_id },
-                    }).catch(t())
-                },
-              },
-              {
-                key: '_handleImpression',
-                value: function () {
-                  var e = this.props,
-                    o = e.createLocalApiErrorHandler,
-                    t = e.log,
+                    o = e.contentAuthorId,
+                    t = e.label,
                     r = e.promotedContent,
-                    n = e.promotedItemType,
-                    l = e.shouldScribeImpression,
-                    i = e.userId
-                  if (r && n === X.c.USER) {
-                    var a = r.disclosure_type,
-                      c = r.impression_id
-                    t({
-                      disclosureType: a,
-                      itemId: i,
-                      itemType: X.c.USER,
-                      params: { event: X.b.IMPRESSION, impression_id: c },
-                    }).catch(o())
-                  } else l && this._scribeAction({ action: 'impression' })
+                    n = r.adMetadataContainer,
+                    l = r.advertiser,
+                    a = r.advertiser_name,
+                    c = r.disclosure_type,
+                    i = o && l && o === l.id_str,
+                    s = 'string' == typeof c && 'political' === c.toLowerCase(),
+                    u = 'string' == typeof c && 'issue' === c.toLowerCase(),
+                    f = !(!n || 'POLITICAL' !== n.disclaimerType) || s,
+                    d = !(!n || 'ISSUE' !== n.disclaimerType) || u,
+                    w = (n || {}).removePromotedAttributionForPreroll
+                  return (
+                    t ||
+                    (!a || i || w
+                      ? f
+                        ? N
+                        : d
+                        ? P
+                        : S
+                      : f
+                      ? k({ fullName: a })
+                      : d
+                      ? K({ fullName: a })
+                      : C({ fullName: a }))
+                  )
                 },
               },
             ]),
             t
           )
-        })(I.a.Component)
-      v()(ne, 'contextType', Y.a), v()(ne, 'defaultProps', $.defaultProps)
-      var le = U.a.create(function (e) {
-          return { followButton: { marginLeft: e.spaces.space12 } }
-        }),
-        ie = Object(W.a)(Object(Q.a)(L($)))
-      o.b = Object(z.a)({ element: 'user' })(ie)
-    },
-    hxu0: function (e, o, t) {
-      'use strict'
-      var r = t('97Jx'),
-        n = t.n(r),
-        l = t('ERkP'),
-        i = t.n(l),
-        a = t('vqbU')
-      o.a = function (e) {
-        return function (o) {
-          return i.a.createElement(a.a.Consumer, null, function (t) {
-            return i.a.createElement(e, n()({}, o, { isInSidebar: t }))
-          })
+        })(p.a.Component)
+      d()(j, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
+      var R = b.a.create(function (e) {
+        return {
+          root: { alignItems: 'center', flexDirection: 'row' },
+          icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
+          gray700: { color: e.colors.gray700 },
+          white: { color: e.colors.white },
         }
-      }
+      })
     },
     k1Tk: function (e, o, t) {
       'use strict'
@@ -495,56 +138,56 @@
       var r = t('VrFO'),
         n = t.n(r),
         l = t('Y9Ll'),
-        i = t.n(l),
-        a = t('1Pcy'),
-        c = t.n(a),
+        a = t.n(l),
+        c = t('1Pcy'),
+        i = t.n(c),
         s = t('5Yy7'),
         u = t.n(s),
-        d = t('2VqO'),
-        f = t.n(d),
-        p = t('KEM+'),
-        h = t.n(p),
-        m = (t('2G9S'), t('ho0z'), t('ERkP')),
-        w = t.n(m),
-        _ = t('es0u'),
-        v = (t('KqXw'), t('WNMA'), t('XnvM')),
-        b = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
-        y = t('WpDa'),
-        g = t('ZNT5'),
-        I = t('G6rE'),
-        C = t('hqKg'),
-        E = t('0KEI'),
-        k = t('oEGd'),
-        S = t('RqPI'),
-        F = function (e, o) {
+        f = t('2VqO'),
+        d = t.n(f),
+        w = t('KEM+'),
+        p = t.n(w),
+        h = (t('2G9S'), t('ho0z'), t('ERkP')),
+        m = t.n(h),
+        y = t('es0u'),
+        b = (t('KqXw'), t('WNMA'), t('XnvM')),
+        v = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
+        g = t('WpDa'),
+        _ = t('ZNT5'),
+        E = t('G6rE'),
+        O = t('hqKg'),
+        I = t('0KEI'),
+        L = t('oEGd'),
+        F = t('RqPI'),
+        C = function (e, o) {
           return o.match.params.screenName
         },
-        A = Object(C.createSelector)(
+        S = Object(O.createSelector)(
           function (e, o) {
             var t = (function (e, o) {
-              return I.e.selectIdByScreenName(e, F(0, o))
+              return E.e.selectIdByScreenName(e, C(0, o))
             })(e, o)
-            return t ? v.c(e, t) : void 0
+            return t ? b.c(e, t) : void 0
           },
           function (e) {
             return e
           },
         ),
-        O = Object(C.createSelector)(
+        N = Object(O.createSelector)(
           function (e, o) {
-            return I.e.selectFetchStatusByScreenName(e, F(0, o))
+            return E.e.selectFetchStatusByScreenName(e, C(0, o))
           },
-          S.l,
+          F.l,
           function (e, o) {
             return o.match.params.followersSubroute
           },
-          F,
+          C,
           function (e, o) {
-            return I.e.selectByScreenName(e, F(0, o))
+            return E.e.selectByScreenName(e, C(0, o))
           },
-          S.q,
-          A,
-          function (e, o, t, r, n, l, i) {
+          F.q,
+          S,
+          function (e, o, t, r, n, l, a) {
             return {
               fetchStatus: e,
               isActiveCreator: o,
@@ -552,11 +195,11 @@
               screenName: r,
               user: n,
               loggedInUserId: l,
-              knownFollowersCount: i,
+              knownFollowersCount: a,
             }
           },
         ),
-        L = {
+        k = {
           cleanupOwnFollowersList: function (e) {
             return function (o, t) {
               var r = t()
@@ -564,9 +207,9 @@
                 e
                   .selectEntries(r)
                   .filter(function (e) {
-                    if (!e.content || e.type !== b.b.User) return !1
+                    if (!e.content || e.type !== v.b.User) return !1
                     var o = e.content.id,
-                      t = I.e.select(r, o)
+                      t = E.e.select(r, o)
                     return t && !t.followed_by
                   })
                   .map(function (o) {
@@ -575,76 +218,76 @@
               )
             }
           },
-          createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('USER_PROFILE_FOLLOWERS'),
-          fetchOneUserByScreenNameIfNeeded: I.e.fetchOneByScreenNameIfNeeded,
-          fetchKnownFollowersIfNeeded: v.a,
+          createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)('USER_PROFILE_FOLLOWERS'),
+          fetchOneUserByScreenNameIfNeeded: E.e.fetchOneByScreenNameIfNeeded,
+          fetchKnownFollowersIfNeeded: b.a,
         },
-        R = Object(k.f)(O, L),
-        N = t('yiKp'),
-        T = t.n(N),
-        P = t('QIgh'),
+        P = Object(L.f)(N, k),
+        K = t('yiKp'),
+        j = t.n(K),
+        R = t('QIgh'),
         U = t('88ay'),
-        B = t('Ka9G'),
-        x = function (e) {
+        M = t('Ka9G'),
+        G = function (e) {
           var o = e.withFollowerActionMenu,
             t = void 0 !== o && o
-          return T()(T()({}, Object(P.a)({})), {}, h()({}, b.b.User, Object(B.a)({ decoration: t ? U.f : void 0 })))
+          return j()(j()({}, Object(R.a)({})), {}, p()({}, v.b.User, Object(M.a)({ decoration: t ? U.f : void 0 })))
         },
-        j = t('7wqI'),
-        M = t('GOQE'),
-        K = t('v//M'),
-        G = t('oQhu'),
-        D = t('yoO3'),
+        A = t('7wqI'),
+        x = t('GOQE'),
+        T = t('v//M'),
+        H = t('oQhu'),
+        Q = t('yoO3'),
         q = t('txMZ'),
-        H = t('5FtR'),
-        W = t('fTQJ'),
-        Q = t('VS6U'),
-        Y = t('v6aA'),
-        z = t('FIs5'),
-        J = t('k/OQ'),
-        V = t('3XMw'),
-        X = t.n(V),
-        Z = X.a.fe9d3af9,
-        $ = X.a.fbce8dbd,
+        W = t('5FtR'),
+        Y = t('fTQJ'),
+        z = t('VS6U'),
+        B = t('v6aA'),
+        V = t('FIs5'),
+        D = t('k/OQ'),
+        X = t('3XMw'),
+        J = t.n(X),
+        Z = J.a.fe9d3af9,
+        $ = J.a.fbce8dbd,
         ee = {
-          superfollowers: X.a.ab7fc3ee,
-          followers_you_follow: X.a.j0d17377,
-          followers: X.a.fa9e827f,
-          following: X.a.ha979be5,
+          superfollowers: J.a.ab7fc3ee,
+          followers_you_follow: J.a.j0d17377,
+          followers: J.a.fa9e827f,
+          following: J.a.ha979be5,
         },
         oe = {
-          superfollowers: X.a.aa4209e8,
-          followers_you_follow: X.a.i099d32d,
-          followers: X.a.c64974fb,
-          following: X.a.d960b55b,
+          superfollowers: J.a.aa4209e8,
+          followers_you_follow: J.a.i099d32d,
+          followers: J.a.c64974fb,
+          following: J.a.d960b55b,
         },
         te = {
-          superfollowers: X.a.ed51baba,
-          followers_you_follow: X.a.g65f4bab,
-          followers: X.a.g65f4bab,
-          following: X.a.f9b11c03,
+          superfollowers: J.a.ed51baba,
+          followers_you_follow: J.a.g65f4bab,
+          followers: J.a.g65f4bab,
+          following: J.a.f9b11c03,
         },
         re = {
-          superfollowers: X.a.a1f9e34c,
-          followers_you_follow: X.a.j029a4db,
-          followers: X.a.j029a4db,
-          following: X.a.fdf1390e,
+          superfollowers: J.a.a1f9e34c,
+          followers_you_follow: J.a.j029a4db,
+          followers: J.a.j029a4db,
+          following: J.a.fdf1390e,
         },
         ne = {
-          superfollowers: X.a.j759a7c2,
-          followers_you_follow: X.a.d74ee2e2,
-          followers: X.a.f69e85ed,
-          following: X.a.ae5749c6,
+          superfollowers: J.a.j759a7c2,
+          followers_you_follow: J.a.d74ee2e2,
+          followers: J.a.f69e85ed,
+          following: J.a.ae5749c6,
         },
         le = {
-          superfollowers: X.a.b2f3c46a,
-          followers_you_follow: X.a.ec251f36,
-          followers: X.a.c0455f4a,
-          following: X.a.i8bd07a9,
+          superfollowers: J.a.b2f3c46a,
+          followers_you_follow: J.a.ec251f36,
+          followers: J.a.c0455f4a,
+          following: J.a.i8bd07a9,
         },
-        ie = {
+        ae = {
           superfollowers: function (e) {
-            return Object(g.a)({
+            return Object(_.a)({
               timelineId: 'superFollowersGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchSuperFollowers
@@ -656,11 +299,11 @@
               },
               context: 'FETCH_SUPER_FOLLOWERS',
               perfKey: 'superFollowersGraphQL',
-              formatResponse: y.a,
+              formatResponse: g.a,
             })
           },
           followers_you_follow: function (e) {
-            return Object(g.a)({
+            return Object(_.a)({
               timelineId: 'followersYouKnowGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowersYouKnow
@@ -672,11 +315,11 @@
               },
               context: 'FETCH_FOLLOWERS_YOU_KNOW',
               perfKey: 'followersYouKnowGraphQL',
-              formatResponse: y.a,
+              formatResponse: g.a,
             })
           },
           followers: function (e) {
-            return Object(g.a)({
+            return Object(_.a)({
               timelineId: 'followersGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowers
@@ -688,11 +331,11 @@
               },
               context: 'FETCH_FOLLOWERS',
               perfKey: 'followersGraphQL',
-              formatResponse: y.a,
+              formatResponse: g.a,
             })
           },
           following: function (e) {
-            return Object(g.a)({
+            return Object(_.a)({
               timelineId: 'followingGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowing
@@ -704,71 +347,71 @@
               },
               context: 'FETCH_FOLLOWING',
               perfKey: 'followingGraphQL',
-              formatResponse: y.a,
+              formatResponse: g.a,
             })
           },
         },
-        ae = Object(G.a)(function (e, o) {
-          return e && ie[o](e)
+        ce = Object(H.a)(function (e, o) {
+          return e && ae[o](e)
         }),
-        ce = Object(G.a)(function (e, o, t, r) {
+        ie = Object(H.a)(function (e, o, t, r) {
           return function () {
             var n = o === e,
               l = n && 'following' === r ? $ : void 0,
-              i = n && 'following' === r ? '/i/connect_people' : void 0,
-              a = n ? te[r] : ne[r]({ screenName: t }),
-              c = n ? re[r] : le[r]
-            return w.a.createElement(z.a, { buttonLink: i, buttonText: l, header: a, message: c })
+              a = n && 'following' === r ? '/i/connect_people' : void 0,
+              c = n ? te[r] : ne[r]({ screenName: t }),
+              i = n ? re[r] : le[r]
+            return m.a.createElement(V.a, { buttonLink: a, buttonText: l, header: c, message: i })
           }
         }),
         se = (function (e) {
           u()(t, e)
-          var o = f()(t)
+          var o = d()(t)
           function t() {
             var e
             n()(this, t)
-            for (var r = arguments.length, l = new Array(r), i = 0; i < r; i++) l[i] = arguments[i]
+            for (var r = arguments.length, l = new Array(r), a = 0; a < r; a++) l[a] = arguments[a]
             return (
               (e = o.call.apply(o, [this].concat(l))),
-              h()(c()(e), '_render', function () {
+              p()(i()(e), '_render', function () {
                 var o = e.props,
                   t = o.loggedInUserId,
                   r = o.mode,
                   n = o.screenName,
                   l = o.user,
-                  i = ae(null == l ? void 0 : l.id_str, r),
-                  a = ce(t, null == l ? void 0 : l.id_str, n, r),
-                  c =
+                  a = ce(null == l ? void 0 : l.id_str, r),
+                  c = ie(t, null == l ? void 0 : l.id_str, n, r),
+                  i =
                     e._isOwnProfile() &&
                     'followers' === r &&
                     e.context.featureSwitches.isTrue('followers_management_remove_follower_from_followers_list')
-                return i
-                  ? w.a.createElement(W.a, {
-                      entryConfiguration: e._getMemoizedEntryConfiguration(c),
+                return a
+                  ? m.a.createElement(Y.a, {
+                      entryConfiguration: e._getMemoizedEntryConfiguration(i),
                       loadingAccessibilityLabel: Z,
-                      module: i,
-                      renderEmptyState: a,
+                      module: a,
+                      renderEmptyState: c,
                       title: oe[r],
                     })
                   : null
               }),
-              h()(
-                c()(e),
+              p()(
+                i()(e),
                 '_getMemoizedEntryConfiguration',
-                Object(G.a)(function (e) {
-                  return x({ withFollowerActionMenu: e })
+                Object(H.a)(function (e) {
+                  return G({ withFollowerActionMenu: e })
                 }),
               ),
-              h()(c()(e), '_handleFetchUser', function () {
+              p()(i()(e), '_handleFetchUser', function () {
                 var o = e.props,
                   t = o.createLocalApiErrorHandler
-                ;(0, o.fetchOneUserByScreenNameIfNeeded)(o.screenName).catch(t(M.a))
+                ;(0, o.fetchOneUserByScreenNameIfNeeded)(o.screenName).catch(t(x.a))
               }),
               e
             )
           }
           return (
-            i()(t, [
+            a()(t, [
               {
                 key: 'UNSAFE_componentWillMount',
                 value: function () {
@@ -797,53 +440,53 @@
                     r = e.isActiveCreator,
                     n = e.knownFollowersCount,
                     l = e.loggedInUserId,
-                    i = e.mode,
-                    a = e.screenName,
-                    c = e.user,
-                    s = ee[i]({ screenName: a, fullName: c ? c.name : '' }),
+                    a = e.mode,
+                    c = e.screenName,
+                    i = e.user,
+                    s = ee[a]({ screenName: c, fullName: i ? i.name : '' }),
                     u = this._isOwnProfile(),
-                    d = u && r,
-                    f = !c || Object(j.b)({ isOwnProfile: u, user: c }),
-                    p = 'superfollowers' === i ? d : f,
-                    h = [
-                      c && l === c.id_str && r
-                        ? { key: 'superfollowers', to: '/'.concat(a, '/superfollowers'), label: oe.superfollowers }
+                    f = u && r,
+                    d = !i || Object(A.b)({ isOwnProfile: u, user: i }),
+                    w = 'superfollowers' === a ? f : d,
+                    p = [
+                      i && l === i.id_str && r
+                        ? { key: 'superfollowers', to: '/'.concat(c, '/superfollowers'), label: oe.superfollowers }
                         : null,
-                      c && l !== c.id_str && n
+                      i && l !== i.id_str && n
                         ? {
                             key: 'followers_you_follow',
-                            to: '/'.concat(a, '/followers_you_follow'),
+                            to: '/'.concat(c, '/followers_you_follow'),
                             label: oe.followers_you_follow,
                           }
                         : null,
-                      { key: 'followers', to: '/'.concat(a, '/followers'), label: oe.followers },
-                      { key: 'following', to: '/'.concat(a, '/following'), label: oe.following },
+                      { key: 'followers', to: '/'.concat(c, '/followers'), label: oe.followers },
+                      { key: 'following', to: '/'.concat(c, '/following'), label: oe.following },
                     ]
-                  return p
-                    ? w.a.createElement(
+                  return w
+                    ? m.a.createElement(
                         q.a,
-                        { scribeSection: i, userId: c && c.id_str },
-                        w.a.createElement(
-                          D.a,
+                        { scribeSection: a, userId: i && i.id_str },
+                        m.a.createElement(
+                          Q.a,
                           null,
-                          w.a.createElement(Q.a, {
-                            backLocation: '/'.concat(a),
+                          m.a.createElement(z.a, {
+                            backLocation: '/'.concat(c),
                             documentTitle: s,
                             history: t,
-                            primaryContent: w.a.createElement(K.a, {
+                            primaryContent: m.a.createElement(T.a, {
                               accessibilityLabel: Z,
                               fetchStatus: o,
                               onRequestRetry: this._handleFetchUser,
                               render: this._render,
                             }),
-                            secondaryBar: w.a.createElement(J.a, { links: h }),
-                            sidebarContent: w.a.createElement(_.a, null),
-                            subtitle: '@'.concat(a),
-                            title: c ? c.name : null,
+                            secondaryBar: m.a.createElement(D.a, { links: p }),
+                            sidebarContent: m.a.createElement(y.a, null),
+                            subtitle: '@'.concat(c),
+                            title: i ? i.name : null,
                           }),
                         ),
                       )
-                    : w.a.createElement(H.a, { to: '/'.concat(a) })
+                    : m.a.createElement(W.a, { to: '/'.concat(c) })
                 },
               },
               {
@@ -874,7 +517,7 @@
                     var o = this.props,
                       t = o.cleanupOwnFollowersList,
                       r = o.user,
-                      n = ae(null == r ? void 0 : r.id_str, e)
+                      n = ce(null == r ? void 0 : r.id_str, e)
                     n && t(n)
                   }
                 },
@@ -882,9 +525,41 @@
             ]),
             t
           )
-        })(w.a.Component)
-      h()(se, 'contextType', Y.a)
-      o.default = R(se)
+        })(m.a.Component)
+      p()(se, 'contextType', B.a)
+      o.default = P(se)
+    },
+    uFYP: function (e, o, t) {
+      'use strict'
+      var r = t('yiKp'),
+        n = t.n(r),
+        l = t('ERkP'),
+        a = t.n(l),
+        c = t('Lsrn'),
+        i = t('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(i.a)(
+            'svg',
+            n()(
+              n()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            a.a.createElement(
+              'g',
+              null,
+              a.a.createElement('path', {
+                d: 'M20.75 2H3.25C2.007 2 1 3.007 1 4.25v15.5C1 20.993 2.007 22 3.25 22h17.5c1.243 0 2.25-1.007 2.25-2.25V4.25C23 3.007 21.993 2 20.75 2zM17.5 13.504c0 .483-.392.875-.875.875s-.875-.393-.875-.876V9.967l-7.547 7.546c-.17.17-.395.256-.62.256s-.447-.086-.618-.257c-.342-.342-.342-.896 0-1.237l7.547-7.547h-3.54c-.482 0-.874-.393-.874-.876s.392-.875.875-.875h5.65c.483 0 .875.39.875.874v5.65z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (o.a = s)
     },
   },
 ])

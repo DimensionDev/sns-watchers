@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [31, 19],
+  [29, 18],
   {
     '5emT': function (e, t, a) {
       'use strict'
@@ -8,10 +8,10 @@
         r = a('ERkP'),
         o = a.n(r),
         l = a('Lsrn'),
-        c = a('k/Ka'),
-        E = function () {
+        E = a('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(E.a)(
             'svg',
             i()(
               i()({}, e),
@@ -34,7 +34,7 @@
             ),
           )
         }
-      ;(E.metadata = { width: 24, height: 24 }), (t.a = E)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     '5kR0': function (e, t, a) {
       'use strict'
@@ -57,12 +57,12 @@
         r = n(a('kfbJ')),
         o = n(a('5kR0')),
         l = n(a('Flng')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           '(?:#{validateUrlUnreserved}|#{validateUrlPctEncoded}|#{validateUrlSubDelims}|[:|@])',
           { validateUrlUnreserved: r.default, validateUrlPctEncoded: o.default, validateUrlSubDelims: l.default },
           'i',
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     Flng: function (e, t, a) {
       'use strict'
@@ -78,7 +78,7 @@
         r = n(a('W9cO')),
         o = n(a('vXsr')),
         l = n(a('oAj9')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           /(?:(?:#{validateUrlSubDomainSegment}\.)*(?:#{validateUrlDomainSegment}\.)#{validateUrlDomainTld})/i,
           {
             validateUrlSubDomainSegment: l.default,
@@ -86,7 +86,7 @@
             validateUrlDomainTld: o.default,
           },
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     IM13: function (e, t, a) {
       'use strict'
@@ -134,71 +134,75 @@
     },
     QJRq: function (e, t, a) {
       'use strict'
-      a.d(t, 's', function () {
+      a.d(t, 't', function () {
         return c
       }),
-        a.d(t, 'r', function () {
-          return E
-        }),
-        a.d(t, 'a', function () {
+        a.d(t, 's', function () {
           return s
         }),
-        a.d(t, 'd', function () {
+        a.d(t, 'a', function () {
           return I
         }),
-        a.d(t, 'c', function () {
+        a.d(t, 'd', function () {
           return T
         }),
-        a.d(t, 'o', function () {
+        a.d(t, 'c', function () {
+          return N
+        }),
+        a.d(t, 'p', function () {
           return u
         }),
         a.d(t, 'l', function () {
           return d
         }),
         a.d(t, 'm', function () {
-          return N
-        }),
-        a.d(t, 'b', function () {
           return _
         }),
-        a.d(t, 'e', function () {
+        a.d(t, 'b', function () {
           return p
         }),
-        a.d(t, 'f', function () {
+        a.d(t, 'e', function () {
           return A
         }),
-        a.d(t, 'i', function () {
-          return b
-        }),
-        a.d(t, 'j', function () {
+        a.d(t, 'f', function () {
           return R
         }),
-        a.d(t, 'k', function () {
+        a.d(t, 'i', function () {
           return C
         }),
-        a.d(t, 'q', function () {
+        a.d(t, 'j', function () {
+          return b
+        }),
+        a.d(t, 'k', function () {
+          return O
+        }),
+        a.d(t, 'r', function () {
           return m
         }),
         a.d(t, 'n', function () {
-          return O
-        }),
-        a.d(t, 'p', function () {
           return f
         }),
-        a.d(t, 'h', function () {
+        a.d(t, 'o', function () {
           return S
         }),
-        a.d(t, 'g', function () {
+        a.d(t, 'q', function () {
           return L
+        }),
+        a.d(t, 'h', function () {
+          return h
+        }),
+        a.d(t, 'g', function () {
+          return y
         })
       var n,
-        i = a('KEM+'),
-        r = a.n(i),
-        o = a('yiKp'),
-        l = a.n(o),
+        i,
+        r = a('KEM+'),
+        o = a.n(r),
+        l = a('yiKp'),
+        E = a.n(l),
         c = (a('yH/f'), Object.freeze({ IN_COMPLIANCE: 'in_compliance', OUT_OF_COMPLIANCE: 'out_of_compliance' })),
-        E = Object.freeze({ PROFILE_COMPLETION: 'profile_completion', ACCOUNT_SECURITY: 'account_security' }),
-        s = Object.freeze({
+        s = Object.freeze({ PROFILE_COMPLETION: 'profile_completion', ACCOUNT_SECURITY: 'account_security' }),
+        I = Object.freeze({
           DISABLED: 'disabled',
           INTAKE_PROGRESS: 'intake_progress',
           LOCKED: 'locked',
@@ -209,8 +213,8 @@
           VERIFICATION_PENDING: 'verification_pending',
           VERIFIED: 'verified',
         }),
-        I = Object.freeze({ IDENTITY_DOCUMENT: 'identity_document', EMAIL: 'email', WEBSITE: 'website' }),
-        T = { WEBSITE: 'siteUrl' },
+        T = Object.freeze({ IDENTITY_DOCUMENT: 'identity_document', EMAIL: 'email', WEBSITE: 'website' }),
+        N = { WEBSITE: 'siteUrl' },
         u = Object.freeze({
           CONCLUSIVE: 'conclusive',
           INCONCLUSIVE: 'inconclusive',
@@ -221,12 +225,13 @@
           ACTIVISM: 'activism',
           COMPANY: 'brand_company_organization',
           ENTERTAINMENT: 'entertainment',
+          GAMING: 'gaming',
           GOVERNMENT: 'government',
           INFLUENCER_OTHER: 'influencer_other',
           NEWS: 'news',
           SPORTS: 'sports',
         }),
-        N = {
+        _ = {
           ARTICLES: 'articleReferenceUrls',
           AUTHOR: 'authorReferenceUrl',
           GOOGLE: 'googleTrendsReferenceUrl',
@@ -241,23 +246,44 @@
           TEAM: 'teamReferenceUrl',
           WIKIPEDIA: 'wikipediaReferenceUrl',
         },
-        _ = Object.freeze({ ACTIVIST: 'activist' }),
-        p = Object.freeze({ COMPANY: 'company', EXECUTIVE: 'executive' }),
-        A = Object.freeze({
+        p = Object.freeze({ ACTIVIST: 'activist' }),
+        A = Object.freeze({ COMPANY: 'company', EXECUTIVE: 'executive' }),
+        R = Object.freeze({
           ENTERTAINMENT_COMPANY: 'entertainment_company',
           ENTERTAINMENT_INDIVIDUAL: 'entertainment_individual',
           PRODUCTION: 'production',
         }),
-        b = Object.freeze({ CANDIDATE: 'candidate', OFFICE: 'office', OFFICIAL: 'official' }),
-        R = Object.freeze({ CONTENT_CREATOR: 'content_creator', INFLUENTIAL_INDIVIDUAL: 'influential_individual' }),
-        C = Object.freeze({ FREELANCER: 'freelancer', JOURNALIST: 'journalist', ORGANIZATION: 'organization' }),
+        C = Object.freeze({ CANDIDATE: 'candidate', OFFICE: 'office', OFFICIAL: 'official' }),
+        b = Object.freeze({ CONTENT_CREATOR: 'content_creator', INFLUENTIAL_INDIVIDUAL: 'influential_individual' }),
+        O = Object.freeze({ FREELANCER: 'freelancer', JOURNALIST: 'journalist', ORGANIZATION: 'organization' }),
         m = Object.freeze({
           SPORTS_INDIVIDUAL: 'sports_individual',
           SPORTS_ENTITY: 'sports_entity',
           GAMING_INDIVIDUAL: 'gaming_individual',
         }),
-        O = Object.freeze(l()(l()(l()(l()(l()(l()(l()({}, _), p), A), b), R), C), m)),
-        f = Object.freeze({
+        f = Object.freeze(E()(E()(E()(E()(E()(E()(E()({}, p), A), R), C), b), O), m)),
+        S = Object.freeze(
+          ((n = {}),
+          o()(n, p.ACTIVIST, d.ACTIVISM),
+          o()(n, A.COMPANY, d.COMPANY),
+          o()(n, A.EXECUTIVE, d.COMPANY),
+          o()(n, R.ENTERTAINMENT_COMPANY, d.ENTERTAINMENT),
+          o()(n, R.ENTERTAINMENT_INDIVIDUAL, d.ENTERTAINMENT),
+          o()(n, R.PRODUCTION, d.ENTERTAINMENT),
+          o()(n, C.CANDIDATE, d.GOVERNMENT),
+          o()(n, C.OFFICE, d.GOVERNMENT),
+          o()(n, C.OFFICIAL, d.GOVERNMENT),
+          o()(n, b.CONTENT_CREATOR, d.INFLUENCER_OTHER),
+          o()(n, b.INFLUENTIAL_INDIVIDUAL, d.INFLUENCER_OTHER),
+          o()(n, O.FREELANCER, d.NEWS),
+          o()(n, O.JOURNALIST, d.NEWS),
+          o()(n, O.ORGANIZATION, d.NEWS),
+          o()(n, m.SPORTS_INDIVIDUAL, d.SPORTS),
+          o()(n, m.SPORTS_ENTITY, d.SPORTS),
+          o()(n, m.GAMING_INDIVIDUAL, d.SPORTS),
+          n),
+        ),
+        L = Object.freeze({
           LANDING_PAGE: 'landing_page',
           NOTABILITY_CATEGORY: 'notability_category_select',
           NOTABILITY_SUBCATEGORY: 'notability_subtype_select',
@@ -270,12 +296,13 @@
           REVIEW_SUBMIT: 'review_submit',
           THANK_YOU: 'thank_you',
         }),
-        S = Object.freeze({
+        h = Object.freeze({
           ACTIVIST_GOOGLE_TRENDS: 'ACTIVIST_GOOGLE_TRENDS',
           ACTIVIST_LEADERSHIP: 'ACTIVIST_LEADERSHIP',
           ACTIVIST_NEWS: 'ACTIVIST_NEWS',
           ACTIVIST_QUALIFICATIONS: 'ACTIVIST_QUALIFICATIONS',
           ACTIVIST_QUALIFICATIONS_INELIGIBLE: 'ACTIVIST_QUALIFICATIONS_INELIGIBLE',
+          ACTIVIST_SUBCATEGORY: 'ACTIVIST_SUBCATEGORY',
           ACTIVIST_WIKIPEDIA: 'ACTIVIST_WIKIPEDIA',
           AUTHENTICITY_TYPE_SELECT: 'AUTHENTICITY_TYPE_SELECT',
           COMPANY_GOOGLE_TRENDS: 'COMPANY_GOOGLE_TRENDS',
@@ -315,6 +342,7 @@
           GAMING_INDIVIDUAL_NOTABILITY_METHOD: 'GAMING_INDIVIDUAL_NOTABILITY_METHOD',
           GAMING_INDIVIDUAL_SCREENNAME_CONFIRM: 'GAMING_INDIVIDUAL_SCREENNAME_CONFIRM',
           GAMING_INDIVIDUAL_TEAM_REFERENCE_URL: 'GAMING_INDIVIDUAL_TEAM_REFERENCE_URL',
+          GAMING_SUBCATEGORY: 'GAMING_SUBCATEGORY',
           GOVERNMENT_CANDIDATE_LEVEL_CONFIRM: 'GOVERNMENT_CANDIDATE_LEVEL_CONFIRM',
           GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS: 'GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS',
           GOVERNMENT_CANDIDATE_PROFILE_CONFIRM: 'GOVERNMENT_CANDIDATE_PROFILE_CONFIRM',
@@ -375,241 +403,242 @@
           WEBSITE_REFERENCE_CONFIRM_AUTOFILL: 'WEBSITE_REFERENCE_CONFIRM_AUTOFILL',
           WEBSITE_REFERENCE_CONFIRM_PROCEED: 'WEBSITE_REFERENCE_CONFIRM_PROCEED',
         }),
-        L = Object.freeze(
-          ((n = {}),
-          r()(n, S.LANDING_PAGE, { next: S.NOTABILITY_CATEGORY_SELECT, scribeComponent: f.LANDING_PAGE }),
-          r()(n, S.NOTABILITY_CATEGORY_SELECT, { next: null, scribeComponent: f.NOTABILITY_CATEGORY }),
-          r()(n, S.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.ACTIVIST_GOOGLE_TRENDS, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ACTIVIST_LEADERSHIP, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+        y = Object.freeze(
+          ((i = {}),
+          o()(i, h.LANDING_PAGE, { next: h.NOTABILITY_CATEGORY_SELECT, scribeComponent: L.LANDING_PAGE }),
+          o()(i, h.NOTABILITY_CATEGORY_SELECT, { next: null, scribeComponent: L.NOTABILITY_CATEGORY }),
+          o()(i, h.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.ACTIVIST_GOOGLE_TRENDS, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ACTIVIST_LEADERSHIP, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ACTIVIST_NEWS, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.ACTIVIST_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
-          r()(n, S.ACTIVIST_WIKIPEDIA, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.COMPANY_SUBCATEGORY, {
-            next: S.COMPANY_NOTABILITY_METHOD,
-            scribeComponent: f.NOTABILITY_SUBCATEGORY,
+          o()(i, h.ACTIVIST_NEWS, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ACTIVIST_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
+          o()(i, h.ACTIVIST_SUBCATEGORY, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.ACTIVIST_WIKIPEDIA, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.COMPANY_SUBCATEGORY, {
+            next: h.COMPANY_NOTABILITY_METHOD,
+            scribeComponent: L.NOTABILITY_SUBCATEGORY,
           }),
-          r()(n, S.COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.COMPANY_STOCK_EXCHANGE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.COMPANY_NEWS_REFERENCE, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, {
-            next: S.COMPANY_INDIVIDUAL_NOTABILITY_METHOD,
+          o()(i, h.COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.COMPANY_WIKIPEDIA, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.COMPANY_STOCK_EXCHANGE, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.COMPANY_NEWS_REFERENCE, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, {
+            next: h.COMPANY_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          r()(n, S.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.COMPANY_INDIVIDUAL_LEADERSHIP, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.COMPANY_INDIVIDUAL_LEADERSHIP, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.CREATOR_PROFILE, { next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, scribeComponent: null }),
-          r()(n, S.CONTENT_CREATOR_GOOGLE_TRENDS, { next: S.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.CONTENT_CREATOR_NEWS, { next: S.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.CONTENT_CREATOR_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.CONTENT_CREATOR_WIKIPEDIA, { next: S.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.CREATOR_PROFILE, { next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, scribeComponent: null }),
+          o()(i, h.CONTENT_CREATOR_GOOGLE_TRENDS, { next: h.CREATOR_PROFILE, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.CONTENT_CREATOR_NEWS, { next: h.CREATOR_PROFILE, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.CONTENT_CREATOR_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.CONTENT_CREATOR_WIKIPEDIA, { next: h.CREATOR_PROFILE, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ENTERTAINMENT_COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
-            next: S.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ENTERTAINMENT_COMPANY_WIKIPEDIA, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
+            next: h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
-            next: S.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
+            next: h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, {
+          o()(i, h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, {
             next: null,
-            scribeComponent: f.NOTABILITY_INPUT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, {
+          o()(i, h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, {
             next: null,
-            scribeComponent: f.NOTABILITY_METHOD,
+            scribeComponent: L.NOTABILITY_METHOD,
           }),
-          r()(n, S.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, {
+          o()(i, h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, {
             next: null,
-            scribeComponent: f.NOTABILITY_INPUT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, {
+          o()(i, h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, {
             next: null,
-            scribeComponent: f.NOTABILITY_INPUT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.ENTERTAINMENT_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          r()(n, S.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
-            next: S.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM,
+          o()(i, h.ENTERTAINMENT_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
+            next: h.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM,
             scribeComponent: null,
           }),
-          r()(n, S.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
-            next: S.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
+            next: h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
-            next: S.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS,
+          o()(i, h.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
+            next: h.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          r()(n, S.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
-            next: S.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
+            next: h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
-            next: S.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS,
+          o()(i, h.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
+            next: h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          r()(n, S.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
-            next: S.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM,
+          o()(i, h.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
+            next: h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM,
             scribeComponent: null,
           }),
-          r()(n, S.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
-            next: S.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
+            next: h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
-            next: S.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS,
+          o()(i, h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
+            next: h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          r()(n, S.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GOVERNMENT_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          r()(n, S.INFLUENCER_GOOGLE_TRENDS, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.INFLUENCER_NEWS, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.INFLUENCER_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.INFLUENCER_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
-          r()(n, S.INFLUENCER_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          r()(n, S.INFLUENCER_WIKIPEDIA, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GOVERNMENT_SUBCATEGORY, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.INFLUENCER_GOOGLE_TRENDS, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.INFLUENCER_NEWS, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.INFLUENCER_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.INFLUENCER_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
+          o()(i, h.INFLUENCER_SUBCATEGORY, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.INFLUENCER_WIKIPEDIA, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_CREDIBILITY_PUBLICATION_REFERENCE_URL, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_CREDIBILITY_PUBLICATION_REFERENCE_URL, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
-            next: S.NEWS_NOTABILITY_CRITERIA_CONFIRMATION,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+            next: h.NEWS_NOTABILITY_CRITERIA_CONFIRMATION,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
-            next: S.NEWS_JOURNALIST_QUALIFICATIONS,
+          o()(i, h.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
+            next: h.NEWS_JOURNALIST_QUALIFICATIONS,
             scribeComponent: null,
           }),
-          r()(n, S.NEWS_JOURNALIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, { next: S.AUTHENTICITY_TYPE_SELECT, scribeComponent: null }),
-          r()(n, S.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_JOURNALIST_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, { next: h.AUTHENTICITY_TYPE_SELECT, scribeComponent: null }),
+          o()(i, h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
-            next: S.NEWS_ORGANIZATION_QUALIFICATIONS,
+          o()(i, h.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
+            next: h.NEWS_ORGANIZATION_QUALIFICATIONS,
             scribeComponent: null,
           }),
-          r()(n, S.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, {
-            next: S.NEWS_JOURNALIST_CRITERIA_CONFIRMATION,
+          o()(i, h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, {
+            next: h.NEWS_JOURNALIST_CRITERIA_CONFIRMATION,
             scribeComponent: null,
           }),
-          r()(n, S.NEWS_ORGANIZATION_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.NEWS_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          r()(n, S.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.NEWS_ORGANIZATION_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.NEWS_QUALIFICATIONS, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GAMING_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, {
-            next: S.GAMING_INDIVIDUAL_NOTABILITY_METHOD,
+          o()(i, h.GAMING_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, {
+            next: h.GAMING_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          r()(n, S.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.GAMING_INDIVIDUAL_INELIGIBLE, { next: null, scribeComponent: null }),
-          r()(n, S.SPORTS_ENTITY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.SPORTS_ENTITY_NEWS_REFERENCE, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.GAMING_INDIVIDUAL_INELIGIBLE, { next: null, scribeComponent: null }),
+          o()(i, h.GAMING_SUBCATEGORY, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.SPORTS_ENTITY_GOOGLE_TRENDS, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.SPORTS_ENTITY_NEWS_REFERENCE, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.SPORTS_ENTITY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.SPORTS_ENTITY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.SPORTS_ENTITY_WEBSITE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.SPORTS_ENTITY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          r()(n, S.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
-            next: S.AUTHENTICITY_TYPE_SELECT,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.SPORTS_ENTITY_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.SPORTS_ENTITY_STOCK_REFERENCE, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.SPORTS_ENTITY_WEBSITE, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.SPORTS_ENTITY_WIKIPEDIA, { next: null, scribeComponent: L.NOTABILITY_INPUT }),
+          o()(i, h.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+            next: h.AUTHENTICITY_TYPE_SELECT,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          r()(n, S.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, {
-            next: S.SPORTS_INDIVIDUAL_NOTABILITY_METHOD,
+          o()(i, h.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: L.NOTABILITY_METHOD }),
+          o()(i, h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, {
+            next: h.SPORTS_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          r()(n, S.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
-            next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
-            scribeComponent: f.NOTABILITY_INPUT,
+          o()(i, h.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
+            next: h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
+            scribeComponent: L.NOTABILITY_INPUT,
           }),
-          r()(n, S.SPORTS_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          r()(n, S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, { next: null, scribeComponent: f.ADD_WEBSITE }),
-          r()(n, S.WEBSITE_REFERENCE_CONFIRM_PROCEED, { next: S.REVIEW_SUBMIT, scribeComponent: f.ADD_WEBSITE }),
-          r()(n, S.AUTHENTICITY_TYPE_SELECT, { next: null, scribeComponent: f.AUTHENTICITY_TYPE }),
-          r()(n, S.INTAKE_TYPE_SELECT, { next: S.INTAKE_UPLOAD, scribeComponent: null }),
-          r()(n, S.ID_COUNTRY_SELECT, { next: S.INTAKE_TYPE_SELECT, scribeComponent: null }),
-          r()(n, S.ID_TYPE_SELECT, { next: S.INTAKE_TYPE_SELECT, scribeComponent: null }),
-          r()(n, S.INTAKE_UPLOAD, { next: S.INTAKE_LOADING, scribeComponent: f.ID_UPLOAD }),
-          r()(n, S.INTAKE_LOADING, { next: S.REVIEW_SUBMIT, scribeComponent: f.ID_UPLOAD }),
-          r()(n, S.EMAIL_VERIFICATION, { next: S.REVIEW_SUBMIT, scribeComponent: f.ADD_EMAIL }),
-          r()(n, S.SITE_VERIFICATION, { next: S.WEBSITE_REFERENCE_CONFIRM_PROCEED, scribeComponent: null }),
-          r()(n, S.REVIEW_SUBMIT, { next: S.THANK_YOU, scribeComponent: f.REVIEW_SUBMIT }),
-          r()(n, S.THANK_YOU, { next: null, scribeComponent: f.THANK_YOU }),
-          r()(n, S.TEST_INPUT, { next: S.TEST_RADIO, scribeComponent: null }),
-          r()(n, S.TEST_PIVOT, { next: S.THANK_YOU, scribeComponent: null }),
-          r()(n, S.TEST_RADIO, { next: S.THANK_YOU, scribeComponent: null }),
-          n),
+          o()(i, h.SPORTS_SUBCATEGORY, { next: null, scribeComponent: L.NOTABILITY_SUBCATEGORY }),
+          o()(i, h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, { next: null, scribeComponent: L.ADD_WEBSITE }),
+          o()(i, h.WEBSITE_REFERENCE_CONFIRM_PROCEED, { next: h.REVIEW_SUBMIT, scribeComponent: L.ADD_WEBSITE }),
+          o()(i, h.AUTHENTICITY_TYPE_SELECT, { next: null, scribeComponent: L.AUTHENTICITY_TYPE }),
+          o()(i, h.INTAKE_TYPE_SELECT, { next: h.INTAKE_UPLOAD, scribeComponent: null }),
+          o()(i, h.ID_COUNTRY_SELECT, { next: h.INTAKE_TYPE_SELECT, scribeComponent: null }),
+          o()(i, h.ID_TYPE_SELECT, { next: h.INTAKE_TYPE_SELECT, scribeComponent: null }),
+          o()(i, h.INTAKE_UPLOAD, { next: h.INTAKE_LOADING, scribeComponent: L.ID_UPLOAD }),
+          o()(i, h.INTAKE_LOADING, { next: h.REVIEW_SUBMIT, scribeComponent: L.ID_UPLOAD }),
+          o()(i, h.EMAIL_VERIFICATION, { next: h.REVIEW_SUBMIT, scribeComponent: L.ADD_EMAIL }),
+          o()(i, h.SITE_VERIFICATION, { next: h.WEBSITE_REFERENCE_CONFIRM_PROCEED, scribeComponent: null }),
+          o()(i, h.REVIEW_SUBMIT, { next: h.THANK_YOU, scribeComponent: L.REVIEW_SUBMIT }),
+          o()(i, h.THANK_YOU, { next: null, scribeComponent: L.THANK_YOU }),
+          o()(i, h.TEST_INPUT, { next: h.TEST_RADIO, scribeComponent: null }),
+          o()(i, h.TEST_PIVOT, { next: h.THANK_YOU, scribeComponent: null }),
+          o()(i, h.TEST_RADIO, { next: h.THANK_YOU, scribeComponent: null }),
+          i),
         )
     },
     'Qp/W': function (e, t, a) {
@@ -624,30 +653,30 @@
           null == t && (t = !0)
           null == a && (a = !0)
           if (!e) return !1
-          var n = e.match(E.default)
+          var n = e.match(c.default)
           if (!n || n[0] !== e) return !1
           var T = n[1],
-            u = n[2],
-            d = n[3],
-            N = n[4],
+            N = n[2],
+            u = n[3],
+            d = n[4],
             _ = n[5]
           if (
             !(
-              (!a || (I(T, c.default) && T.match(/^https?$/i))) &&
-              I(d, o.default) &&
-              I(N, l.default, !0) &&
+              (!a || (I(T, E.default) && T.match(/^https?$/i))) &&
+              I(u, o.default) &&
+              I(d, l.default, !0) &&
               I(_, r.default, !0)
             )
           )
             return !1
-          return (t && I(u, s.default)) || (!t && I(u, i.default))
+          return (t && I(N, s.default)) || (!t && I(N, i.default))
         })
       var i = n(a('ta7H')),
         r = n(a('kAdf')),
         o = n(a('OVD+')),
         l = n(a('IM13')),
-        c = n(a('IbdM')),
-        E = n(a('6sfk')),
+        E = n(a('IbdM')),
+        c = n(a('6sfk')),
         s = n(a('b1+5'))
       function I(e, t, a) {
         return a ? !e || (e.match(t) && RegExp['$&'] === e) : 'string' == typeof e && e.match(t) && RegExp['$&'] === e
@@ -661,10 +690,10 @@
         r = a('ERkP'),
         o = a.n(r),
         l = a('Lsrn'),
-        c = a('k/Ka'),
-        E = function () {
+        E = a('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(E.a)(
             'svg',
             i()(
               i()({}, e),
@@ -687,7 +716,7 @@
             ),
           )
         }
-      ;(E.metadata = { width: 24, height: 24 }), (t.a = E)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     Umjq: function (e, t, a) {
       'use strict'
@@ -736,10 +765,10 @@
           return oe
         }),
         a.d(t, 'q', function () {
-          return ce
+          return Ee
         }),
         a.d(t, 'r', function () {
-          return Ee
+          return ce
         }),
         a.d(t, 't', function () {
           return se
@@ -751,13 +780,13 @@
           return Te
         }),
         a.d(t, 'v', function () {
-          return ue
+          return Ne
         }),
         a.d(t, 'w', function () {
-          return de
+          return ue
         }),
         a.d(t, 'x', function () {
-          return Ne
+          return de
         }),
         a.d(t, 'z', function () {
           return _e
@@ -769,16 +798,16 @@
           return Ae
         }),
         a.d(t, 'B', function () {
-          return Re
-        }),
-        a.d(t, 'E', function () {
           return Ce
         }),
+        a.d(t, 'E', function () {
+          return be
+        }),
         a.d(t, 'D', function () {
-          return me
+          return Oe
         }),
         a.d(t, 'C', function () {
-          return Oe
+          return me
         }),
         a.d(t, 'F', function () {
           return fe
@@ -817,10 +846,10 @@
           return Pe
         }),
         a.d(t, 'a', function () {
-          return xe
+          return Ge
         }),
         a.d(t, 'c', function () {
-          return Ge
+          return xe
         }),
         a.d(t, 'd', function () {
           return Ye
@@ -853,10 +882,10 @@
           return ze
         }),
         a.d(t, 'f', function () {
-          return qe
+          return Qe
         }),
         a.d(t, 'X', function () {
-          return Qe
+          return qe
         }),
         a.d(t, 'h', function () {
           return $e
@@ -887,9 +916,9 @@
         r = a('KEM+'),
         o = a.n(r),
         l = a('RhWx'),
-        c = a.n(l),
-        E = a('yiKp'),
-        s = a.n(E),
+        E = a.n(l),
+        c = a('yiKp'),
+        s = a.n(c),
         I =
           (a('yH/f'),
           a('2G9S'),
@@ -902,17 +931,17 @@
           a('M+/F'),
           a('oEOe')),
         T = a('iD2S'),
-        u = a.n(T),
-        d = a('kGix'),
-        N = a('Ssj5'),
+        N = a.n(T),
+        u = a('kGix'),
+        d = a('Ssj5'),
         _ = a('vEo5'),
         p = a('AspN'),
         A = a('QJRq'),
-        b = 'accountVerification',
-        R = 'rweb/accountVerification/APPEND_NOTABILITY_ARTICLE_DATA',
-        C = 'rweb/accountVerification/APPEND_NOTABILITY_MAIN_REFERENCE_DATA',
-        m = 'rweb/accountVerification/APPEND_NOTABILITY_NEWS_DATA',
-        O = 'rweb/accountVerification/APPEND_NOTABILITY_PUBLIC_REFERENCE_DATA',
+        R = 'accountVerification',
+        C = 'rweb/accountVerification/APPEND_NOTABILITY_ARTICLE_DATA',
+        b = 'rweb/accountVerification/APPEND_NOTABILITY_MAIN_REFERENCE_DATA',
+        O = 'rweb/accountVerification/APPEND_NOTABILITY_NEWS_DATA',
+        m = 'rweb/accountVerification/APPEND_NOTABILITY_PUBLIC_REFERENCE_DATA',
         f = 'rweb/accountVerification/RESET_AUTHENTICATION_RESULT',
         S = 'rweb/accountVerification/RESET_AUTHENTICITY_DATA',
         L = 'rweb/accountVerification/RESET_AUTHENTICITY_TYPE',
@@ -925,8 +954,8 @@
         M = 'rweb/accountVerification/SET_AUTHENTICITY_DATA',
         g = 'rweb/accountVerification/SET_AUTHENTICITY_TYPE',
         P = 'rweb/accountVerification/SET_BACK_ID',
-        x = 'rweb/accountVerification/SET_FRONT_ID',
-        G = 'rweb/accountVerification/SET_ID_COUNTRY',
+        G = 'rweb/accountVerification/SET_FRONT_ID',
+        x = 'rweb/accountVerification/SET_ID_COUNTRY',
         Y = 'rweb/accountVerification/SET_ID_TYPE',
         V = 'rweb/accountVerification/SET_NEXT_FLOW',
         B = 'rweb/accountVerification/SET_NOTABILITY_CATEGORY',
@@ -945,12 +974,12 @@
           SUCCESS: 'rweb/accountVerification/FETCH_ACCOUNT_ELIGIBILITY_SUCCESS',
           FAILURE: 'rweb/accountVerification/FETCH_ACCOUNT_ELIGIBILITY_FAILURE',
         }),
-        q = Object.freeze({
+        Q = Object.freeze({
           REQUEST: 'rweb/accountVerification/FETCH_ACCOUNT_VIOLATIONS_REQUEST',
           SUCCESS: 'rweb/accountVerification/FETCH_ACCOUNT_VIOLATIONS_SUCCESS',
           FAILURE: 'rweb/accountVerification/FETCH_ACCOUNT_VIOLATIONS_FAILURE',
         }),
-        Q = Object.freeze({
+        q = Object.freeze({
           REQUEST: 'rweb/accountVerification/FETCH_AUTHENTICATION_RESULT_REQUEST',
           SUCCESS: 'rweb/accountVerification/FETCH_AUTHENTICATION_RESULT_SUCCESS',
           FAILURE: 'rweb/accountVerification/FETCH_AUTHENTICATION_RESULT_FAILURE',
@@ -976,19 +1005,19 @@
           FAILURE: 'rweb/accountVerification/VERIFY_ID_DOCUMENT_FAILURE',
         }),
         ee = A.h.LANDING_PAGE,
-        te = u()({
+        te = N()({
           access: {
             data: { applicationSubmissionTimeInMs: void 0, decisionMadeTimeInMs: void 0, status: A.a.DISABLED },
             error: null,
-            fetchStatus: d.a.NONE,
+            fetchStatus: u.a.NONE,
           },
           accountEligibility: {
             data: { followers_eligible: !1, mentions_eligible: !1 },
             error: null,
-            fetchStatus: d.a.NONE,
+            fetchStatus: u.a.NONE,
           },
-          accountViolations: { data: { violations: [] }, error: null, fetchStatus: d.a.NONE },
-          authenticationResult: { data: { errors: [], status: void 0 }, error: null, fetchStatus: d.a.NONE },
+          accountViolations: { data: { violations: [] }, error: null, fetchStatus: u.a.NONE },
+          authenticationResult: { data: { errors: [], status: void 0 }, error: null, fetchStatus: u.a.NONE },
           badgeViolations: {
             data: {
               button_text: '',
@@ -998,10 +1027,10 @@
               violations: [],
             },
             error: null,
-            fetchStatus: d.a.NONE,
+            fetchStatus: u.a.NONE,
           },
-          documentFormats: { data: void 0, error: null, fetchStatus: d.a.NONE },
-          documentIdProcess: { data: { errors: [], entity_id: void 0 }, error: null, fetchStatus: d.a.NONE },
+          documentFormats: { data: void 0, error: null, fetchStatus: u.a.NONE },
+          documentIdProcess: { data: { errors: [], entity_id: void 0 }, error: null, fetchStatus: u.a.NONE },
           formData: {
             authenticityType: void 0,
             authenticityData: void 0,
@@ -1020,10 +1049,10 @@
           currentStep: ee,
           stepsTaken: [ee],
           surveyUrl: void 0,
-          verifyAccount: { error: null, fetchStatus: d.a.NONE },
+          verifyAccount: { error: null, fetchStatus: u.a.NONE },
         })
-      N.a.register(
-        o()({}, b, function () {
+      d.a.register(
+        o()({}, R, function () {
           var e,
             t,
             a,
@@ -1035,7 +1064,7 @@
               return s()(
                 s()({}, i),
                 {},
-                { access: s()(s()({}, i.access), {}, { fetchStatus: d.a.LOADING, error: null }) },
+                { access: s()(s()({}, i.access), {}, { fetchStatus: u.a.LOADING, error: null }) },
               )
             case j.SUCCESS:
               if (r.payload)
@@ -1054,7 +1083,7 @@
                         },
                       ),
                       error: null,
-                      fetchStatus: d.a.LOADED,
+                      fetchStatus: u.a.LOADED,
                     },
                   },
                 )
@@ -1063,14 +1092,14 @@
               return s()(
                 s()({}, i),
                 {},
-                { access: s()(s()({}, i.access), {}, { error: r.payload, fetchStatus: d.a.FAILED }) },
+                { access: s()(s()({}, i.access), {}, { error: r.payload, fetchStatus: u.a.FAILED }) },
               )
             case z.REQUEST:
               return s()(
                 s()({}, i),
                 {},
                 {
-                  accountEligibility: s()(s()({}, i.accountEligibility), {}, { fetchStatus: d.a.LOADING, error: null }),
+                  accountEligibility: s()(s()({}, i.accountEligibility), {}, { fetchStatus: u.a.LOADING, error: null }),
                 },
               )
             case z.SUCCESS:
@@ -1078,7 +1107,7 @@
                 return s()(
                   s()({}, i),
                   {},
-                  { accountEligibility: { data: s()({}, r.payload), error: null, fetchStatus: d.a.LOADED } },
+                  { accountEligibility: { data: s()({}, r.payload), error: null, fetchStatus: u.a.LOADED } },
                 )
               break
             case z.FAILURE:
@@ -1089,33 +1118,7 @@
                   accountEligibility: s()(
                     s()({}, i.accountEligibility),
                     {},
-                    { error: r.payload, fetchStatus: d.a.FAILED },
-                  ),
-                },
-              )
-            case q.REQUEST:
-              return s()(
-                s()({}, i),
-                {},
-                { accountViolations: s()(s()({}, i.accountViolations), {}, { fetchStatus: d.a.LOADING, error: null }) },
-              )
-            case q.SUCCESS:
-              if (r.payload)
-                return s()(
-                  s()({}, i),
-                  {},
-                  { accountViolations: { data: s()({}, r.payload), error: null, fetchStatus: d.a.LOADED } },
-                )
-              break
-            case q.FAILURE:
-              return s()(
-                s()({}, i),
-                {},
-                {
-                  accountViolations: s()(
-                    s()({}, i.accountViolations),
-                    {},
-                    { error: r.payload, fetchStatus: d.a.FAILED },
+                    { error: r.payload, fetchStatus: u.a.FAILED },
                   ),
                 },
               )
@@ -1123,15 +1126,41 @@
               return s()(
                 s()({}, i),
                 {},
+                { accountViolations: s()(s()({}, i.accountViolations), {}, { fetchStatus: u.a.LOADING, error: null }) },
+              )
+            case Q.SUCCESS:
+              if (r.payload)
+                return s()(
+                  s()({}, i),
+                  {},
+                  { accountViolations: { data: s()({}, r.payload), error: null, fetchStatus: u.a.LOADED } },
+                )
+              break
+            case Q.FAILURE:
+              return s()(
+                s()({}, i),
+                {},
+                {
+                  accountViolations: s()(
+                    s()({}, i.accountViolations),
+                    {},
+                    { error: r.payload, fetchStatus: u.a.FAILED },
+                  ),
+                },
+              )
+            case q.REQUEST:
+              return s()(
+                s()({}, i),
+                {},
                 {
                   authenticationResult: s()(
                     s()({}, i.authenticationResult),
                     {},
-                    { error: null, fetchStatus: d.a.LOADING },
+                    { error: null, fetchStatus: u.a.LOADING },
                   ),
                 },
               )
-            case Q.SUCCESS:
+            case q.SUCCESS:
               return s()(
                 s()({}, i),
                 {},
@@ -1139,11 +1168,11 @@
                   authenticationResult: {
                     data: s()(s()({}, i.authenticationResult.data), r.payload),
                     error: null,
-                    fetchStatus: d.a.LOADED,
+                    fetchStatus: u.a.LOADED,
                   },
                 },
               )
-            case Q.FAILURE:
+            case q.FAILURE:
               return s()(
                 s()({}, i),
                 {},
@@ -1151,7 +1180,7 @@
                   authenticationResult: s()(
                     s()({}, i.authenticationResult),
                     {},
-                    { error: r.payload, fetchStatus: d.a.FAILED },
+                    { error: r.payload, fetchStatus: u.a.FAILED },
                   ),
                 },
               )
@@ -1159,57 +1188,57 @@
               return s()(
                 s()({}, i),
                 {},
-                { badgeViolations: s()(s()({}, i.badgeViolations), {}, { fetchStatus: d.a.LOADING }) },
+                { badgeViolations: s()(s()({}, i.badgeViolations), {}, { fetchStatus: u.a.LOADING }) },
               )
             case $.SUCCESS:
               if (r.payload)
                 return s()(
                   s()({}, i),
                   {},
-                  { badgeViolations: { data: s()({}, r.payload), error: null, fetchStatus: d.a.LOADED } },
+                  { badgeViolations: { data: s()({}, r.payload), error: null, fetchStatus: u.a.LOADED } },
                 )
               break
             case $.FAILURE:
               return s()(
                 s()({}, i),
                 {},
-                { badgeViolations: s()(s()({}, i.badgeViolations), {}, { error: r.payload, fetchStatus: d.a.FAILED }) },
+                { badgeViolations: s()(s()({}, i.badgeViolations), {}, { error: r.payload, fetchStatus: u.a.FAILED }) },
               )
             case Z.REQUEST:
               return s()(
                 s()({}, i),
                 {},
-                { documentFormats: s()(s()({}, i.documentFormats), {}, { error: null, fetchStatus: d.a.LOADING }) },
+                { documentFormats: s()(s()({}, i.documentFormats), {}, { error: null, fetchStatus: u.a.LOADING }) },
               )
             case Z.SUCCESS:
               if (r.payload)
                 return s()(
                   s()({}, i),
                   {},
-                  { documentFormats: { data: s()({}, r.payload), error: null, fetchStatus: d.a.LOADED } },
+                  { documentFormats: { data: s()({}, r.payload), error: null, fetchStatus: u.a.LOADED } },
                 )
               break
             case Z.FAILURE:
               return s()(
                 s()({}, i),
                 {},
-                { documentFormats: s()(s()({}, i.documentFormats), {}, { error: r.payload, fetchStatus: d.a.FAILED }) },
+                { documentFormats: s()(s()({}, i.documentFormats), {}, { error: r.payload, fetchStatus: u.a.FAILED }) },
               )
             case J.REQUEST:
-              return s()(s()({}, i), {}, { verifyAccount: { error: null, fetchStatus: d.a.LOADING } })
+              return s()(s()({}, i), {}, { verifyAccount: { error: null, fetchStatus: u.a.LOADING } })
             case J.SUCCESS:
               var l
               return (
                 r.payload && (l = r.payload.survey_url),
-                s()(s()({}, i), {}, { surveyUrl: l, verifyAccount: { error: null, fetchStatus: d.a.LOADED } })
+                s()(s()({}, i), {}, { surveyUrl: l, verifyAccount: { error: null, fetchStatus: u.a.LOADED } })
               )
             case J.FAILURE:
-              return s()(s()({}, i), {}, { verifyAccount: { error: r.payload, fetchStatus: d.a.FAILED } })
+              return s()(s()({}, i), {}, { verifyAccount: { error: r.payload, fetchStatus: u.a.FAILED } })
             case X.REQUEST:
               return s()(
                 s()({}, i),
                 {},
-                { documentIdProcess: s()(s()({}, i.documentIdProcess), {}, { error: null, fetchStatus: d.a.LOADING }) },
+                { documentIdProcess: s()(s()({}, i.documentIdProcess), {}, { error: null, fetchStatus: u.a.LOADING }) },
               )
             case X.SUCCESS:
               return s()(
@@ -1219,7 +1248,7 @@
                   documentIdProcess: {
                     data: s()(s()({}, i.documentIdProcess.data), r.payload),
                     error: null,
-                    fetchStatus: d.a.LOADED,
+                    fetchStatus: u.a.LOADED,
                   },
                 },
               )
@@ -1231,11 +1260,11 @@
                   documentIdProcess: s()(
                     s()({}, i.documentIdProcess),
                     {},
-                    { error: r.payload, fetchStatus: d.a.FAILED },
+                    { error: r.payload, fetchStatus: u.a.FAILED },
                   ),
                 },
               )
-            case R:
+            case C:
               return s()(
                 s()({}, i),
                 {},
@@ -1256,7 +1285,7 @@
                   ),
                 },
               )
-            case C:
+            case b:
               return s()(
                 s()({}, i),
                 {},
@@ -1274,7 +1303,7 @@
                   ),
                 },
               )
-            case m:
+            case O:
               return s()(
                 s()({}, i),
                 {},
@@ -1292,7 +1321,7 @@
                   ),
                 },
               )
-            case O:
+            case m:
               return s()(
                 s()({}, i),
                 {},
@@ -1314,9 +1343,9 @@
               )
             case P:
               return s()(s()({}, i), {}, { backID: r.payload })
-            case x:
-              return s()(s()({}, i), {}, { frontID: r.payload })
             case G:
+              return s()(s()({}, i), {}, { frontID: r.payload })
+            case x:
               if (r.payload)
                 return s()(
                   s()({}, i),
@@ -1335,13 +1364,13 @@
             case D:
               return s()(s()({}, i), {}, { backID: te.backID, frontID: te.frontID, isConfirmed: te.isConfirmed })
             case v:
-              var E = it(i.stepsTaken),
-                I = E.previousStep,
-                T = E.remainingSteps
+              var c = it(i.stepsTaken),
+                I = c.previousStep,
+                T = c.remainingSteps
               return s()(
                 s()({}, i),
                 {},
-                { currentStep: I, stepsTaken: c()(T), verifyAccount: { error: null, fetchStatus: d.a.NONE } },
+                { currentStep: I, stepsTaken: E()(T), verifyAccount: { error: null, fetchStatus: u.a.NONE } },
               )
             case H:
               return s()(s()({}, i), {}, { isConfirmed: !i.isConfirmed })
@@ -1354,14 +1383,14 @@
                 return s()(
                   s()({}, i),
                   {},
-                  { currentStep: r.payload, stepsTaken: [].concat(c()(i.stepsTaken), [r.payload]) },
+                  { currentStep: r.payload, stepsTaken: [].concat(E()(i.stepsTaken), [r.payload]) },
                 )
               break
             case k:
-              var u = it(i.stepsTaken),
-                N = u.previousStep,
-                _ = u.remainingSteps
-              return s()(s()({}, i), {}, { currentStep: N, stepsTaken: c()(_) })
+              var N = it(i.stepsTaken),
+                d = N.previousStep,
+                _ = N.remainingSteps
+              return s()(s()({}, i), {}, { currentStep: d, stepsTaken: E()(_) })
             case B:
               return s()(s()({}, i), {}, { formData: s()(s()({}, i.formData), {}, { notabilityCategory: r.payload }) })
             case F:
@@ -1448,92 +1477,92 @@
         }),
       )
       var ae = function (e) {
-          return e[b].access.data
+          return e[R].access.data
         },
         ne = function (e) {
-          return e[b].access.fetchStatus
+          return e[R].access.fetchStatus
         },
         ie = function (e) {
-          return e[b].accountEligibility.data
+          return e[R].accountEligibility.data
         },
         re = function (e) {
-          return e[b].accountEligibility.fetchStatus
+          return e[R].accountEligibility.fetchStatus
         },
         oe = function (e) {
-          return e[b].accountViolations.data
+          return e[R].accountViolations.data
         },
         le = function (e) {
-          return e[b].accountViolations.fetchStatus
-        },
-        ce = function (e) {
-          return e[b].authenticationResult.data.errors || []
+          return e[R].accountViolations.fetchStatus
         },
         Ee = function (e) {
-          return e[b].authenticationResult.data.status
+          return e[R].authenticationResult.data.errors || []
+        },
+        ce = function (e) {
+          return e[R].authenticationResult.data.status
         },
         se = function (e) {
-          return e[b].formData.authenticityType
+          return e[R].formData.authenticityType
         },
         Ie = function (e) {
-          return e[b].formData.authenticityData
+          return e[R].formData.authenticityData
         },
         Te = function (e) {
-          return e[b].backID
-        },
-        ue = function (e) {
-          return e[b].badgeViolations.data
-        },
-        de = function (e) {
-          return e[b].badgeViolations.fetchStatus
+          return e[R].backID
         },
         Ne = function (e) {
-          return e[b].isConfirmed
+          return e[R].badgeViolations.data
+        },
+        ue = function (e) {
+          return e[R].badgeViolations.fetchStatus
+        },
+        de = function (e) {
+          return e[R].isConfirmed
         },
         _e = function (e) {
-          return e[b].currentStep
+          return e[R].currentStep
         },
         pe = function (e) {
           var t = _e(e)
-          return e[b].formHistory[t] || void 0
+          return e[R].formHistory[t] || void 0
         },
         Ae = function (e) {
-          return e[b].documentFormats.data
-        },
-        be = function (e) {
-          return e[b].documentFormats.fetchStatus
+          return e[R].documentFormats.data
         },
         Re = function (e) {
-          return e[b].documentIdProcess.data.entity_id
+          return e[R].documentFormats.fetchStatus
         },
         Ce = function (e) {
-          return e[b].documentIdProcess.error
+          return e[R].documentIdProcess.data.entity_id
         },
-        me = function (e) {
-          return e[b].documentIdProcess.fetchStatus
+        be = function (e) {
+          return e[R].documentIdProcess.error
         },
         Oe = function (e) {
-          return e[b].documentIdProcess.data.errors || []
+          return e[R].documentIdProcess.fetchStatus
+        },
+        me = function (e) {
+          return e[R].documentIdProcess.data.errors || []
         },
         fe = function (e) {
-          return e[b].frontID
+          return e[R].frontID
         },
         Se = function (e) {
-          return e[b].idCountry
+          return e[R].idCountry
         },
         Le = function (e) {
-          return e[b].idCountryName
+          return e[R].idCountryName
         },
         he = function (e) {
-          return e[b].idType
+          return e[R].idType
         },
         ye = function (e) {
-          return e[b].idTypeName
+          return e[R].idTypeName
         },
         De = function (e) {
-          return e[b].formData.notabilityCategory
+          return e[R].formData.notabilityCategory
         },
         Fe = function (e) {
-          var t = e[b].formData,
+          var t = e[R].formData,
             a = t.notabilityCategory,
             n = t.notabilityData,
             i = t.notabilitySubcategory
@@ -1545,37 +1574,37 @@
           }
         },
         Ue = function (e) {
-          return e[b].formData.notabilityData
+          return e[R].formData.notabilityData
         },
         ve = function (e) {
-          return e[b].surveyUrl
+          return e[R].surveyUrl
         },
         Me = function (e) {
-          return e[b].verifyAccount.fetchStatus
+          return e[R].verifyAccount.fetchStatus
         },
         ge = function (e) {
           var t = ne(e),
             a = re(e),
             n = le(e),
             i = Object(_.selectFetchStatus)(e),
-            r = be(e)
-          return [t, a, n, i, r].includes(d.a.FAILED)
-            ? d.a.FAILED
+            r = Re(e)
+          return [t, a, n, i, r].includes(u.a.FAILED)
+            ? u.a.FAILED
             : (function (e) {
-                return e.includes(d.a.LOADING)
+                return e.includes(u.a.LOADING)
               })([t, a, n, i, r])
-            ? d.a.LOADING
-            : d.a.LOADED
+            ? u.a.LOADING
+            : u.a.LOADED
         },
         Pe = function () {
           return function (e, t, a) {
             a.api
             var n = t(),
               i = ne(n)
-            return i !== d.a.LOADING && i !== d.a.LOADED ? e(xe()) : Promise.resolve()
+            return i !== u.a.LOADING && i !== u.a.LOADED ? e(Ge()) : Promise.resolve()
           }
         },
-        xe = function () {
+        Ge = function () {
           return function (e, t, a) {
             var n = a.api
             return Object(I.b)(e, { request: n.AccountVerification.fetchAccess })({
@@ -1584,12 +1613,12 @@
             })
           }
         },
-        Ge = function () {
+        xe = function () {
           return function (e, t, a) {
             a.api
             var n = t(),
               i = re(n)
-            return i !== d.a.LOADING && i !== d.a.LOADED
+            return i !== u.a.LOADING && i !== u.a.LOADED
               ? e(function (e, t, a) {
                   var n = a.api
                   return Object(I.b)(e, { request: n.AccountVerification.fetchAccountEligibility })({
@@ -1605,11 +1634,11 @@
             a.api
             var n = t(),
               i = le(n)
-            return i !== d.a.LOADING && i !== d.a.LOADED
+            return i !== u.a.LOADING && i !== u.a.LOADED
               ? e(function (e, t, a) {
                   var n = a.api
                   return Object(I.b)(e, { request: n.AccountVerification.fetchAccountViolations })({
-                    actionTypes: q,
+                    actionTypes: Q,
                     context: 'FETCH_ACCOUNT_VIOLATIONS',
                   })
                 })
@@ -1620,12 +1649,12 @@
           return function (e, t, a) {
             a.api
             return (function (e) {
-              return e[b].authenticationResult.fetchStatus
-            })(t()) !== d.a.LOADING
+              return e[R].authenticationResult.fetchStatus
+            })(t()) !== u.a.LOADING
               ? e(function (e, t, a) {
                   var n = a.api
                   return Object(I.b)(e, { request: n.AccountVerification.fetchAuthenticationResult })({
-                    actionTypes: Q,
+                    actionTypes: q,
                     context: 'FETCH_AUTHENTICATION_RESULT',
                   })
                 })
@@ -1636,8 +1665,8 @@
           return function (e, t, a) {
             a.api
             var n = t(),
-              i = be(n)
-            return i !== d.a.LOADING && i !== d.a.LOADED
+              i = Re(n)
+            return i !== u.a.LOADING && i !== u.a.LOADED
               ? e(function (e, t, a) {
                   var n = a.api
                   return Object(I.b)(e, { request: n.AccountVerification.fetchDocumentFormats })({
@@ -1657,13 +1686,13 @@
         we = function (e) {
           return function (t, a, n) {
             n.api
-            t({ type: x, payload: e })
+            t({ type: G, payload: e })
           }
         },
         ke = function (e, t) {
           return function (a, n, i) {
             i.api
-            a({ type: G, payload: { countryCode: e, countryName: t } })
+            a({ type: x, payload: { countryCode: e, countryName: t } })
           }
         },
         He = function (e, t) {
@@ -1690,7 +1719,7 @@
             e({ type: v })
           }
         },
-        qe = function () {
+        Qe = function () {
           return function (e, t, a) {
             var n = a.api
             return Object(I.b)(e, { request: n.AccountVerification.fetchBadgeViolations })({
@@ -1699,7 +1728,7 @@
             })
           }
         },
-        Qe = function () {
+        qe = function () {
           return function (e, t, a) {
             a.api
             e({ type: H })
@@ -1742,39 +1771,39 @@
               r = a.api,
               o = t(),
               l = se(o) || void 0,
-              c = Ie(o) || void 0,
-              E = De(o) || void 0,
+              E = Ie(o) || void 0,
+              c = De(o) || void 0,
               T = Ue(o) || {},
-              u = Fe(o) || void 0,
-              d = u && E !== A.l.NEWS,
-              N = { authenticity_type: l }
-            null != c &&
-              c.siteUrl &&
-              (N = s()(
-                s()({}, N),
+              N = Fe(o) || void 0,
+              u = N && c !== A.l.NEWS,
+              d = { authenticity_type: l }
+            null != E &&
+              E.siteUrl &&
+              (d = s()(
+                s()({}, d),
                 {},
-                { site_url: null == c || null === (n = c.siteUrl) || void 0 === n ? void 0 : n[0] },
+                { site_url: null == E || null === (n = E.siteUrl) || void 0 === n ? void 0 : n[0] },
               ))
-            null != c &&
-              c.email &&
-              (N = s()(
-                s()({}, N),
+            null != E &&
+              E.email &&
+              (d = s()(
+                s()({}, d),
                 {},
-                { verified_email: null == c || null === (i = c.email) || void 0 === i ? void 0 : i[0] },
+                { verified_email: null == E || null === (i = E.email) || void 0 === i ? void 0 : i[0] },
               ))
             var _,
               p,
-              b,
               R,
               C,
-              m,
+              b,
               O,
+              m,
               f,
               S,
               L,
               h,
-              y = { category: E }
-            ;(d && (y = s()(s()({}, y), {}, { notability_subcategory: u })),
+              y = { category: c }
+            ;(u && (y = s()(s()({}, y), {}, { notability_subcategory: N })),
             null != T &&
               T.articleReferenceUrls &&
               (y = s()(s()({}, y), {}, { article_reference_urls: null == T ? void 0 : T.articleReferenceUrls })),
@@ -1804,7 +1833,7 @@
                 {},
                 {
                   hashtag_reference_url:
-                    null == T || null === (b = T.hashtagReferenceUrl) || void 0 === b ? void 0 : b[0],
+                    null == T || null === (R = T.hashtagReferenceUrl) || void 0 === R ? void 0 : R[0],
                 },
               ))
             null != T &&
@@ -1812,7 +1841,7 @@
               (y = s()(
                 s()({}, y),
                 {},
-                { imdb_reference_url: null == T || null === (R = T.imdbReferenceUrl) || void 0 === R ? void 0 : R[0] },
+                { imdb_reference_url: null == T || null === (C = T.imdbReferenceUrl) || void 0 === C ? void 0 : C[0] },
               ))
             null != T &&
               T.leadershipReferenceUrl &&
@@ -1821,7 +1850,7 @@
                 {},
                 {
                   leadership_reference_url:
-                    null == T || null === (C = T.leadershipReferenceUrl) || void 0 === C ? void 0 : C[0],
+                    null == T || null === (b = T.leadershipReferenceUrl) || void 0 === b ? void 0 : b[0],
                 },
               ))
             null != T &&
@@ -1829,7 +1858,7 @@
               (y = s()(
                 s()({}, y),
                 {},
-                { main_reference_url: null == T || null === (m = T.mainReferenceUrl) || void 0 === m ? void 0 : m[0] },
+                { main_reference_url: null == T || null === (O = T.mainReferenceUrl) || void 0 === O ? void 0 : O[0] },
               ))
             ;(null != T &&
               T.newsReferenceUrls &&
@@ -1841,7 +1870,7 @@
                 {},
                 {
                   public_reference_url:
-                    null == T || null === (O = T.publicReferenceUrl) || void 0 === O ? void 0 : O[0],
+                    null == T || null === (m = T.publicReferenceUrl) || void 0 === m ? void 0 : m[0],
                 },
               ))
             null != T &&
@@ -1880,7 +1909,7 @@
                     null == T || null === (h = T.wikipediaReferenceUrl) || void 0 === h ? void 0 : h[0],
                 },
               ))
-            var D = { authenticity_claim: N, notability_claim: y }
+            var D = { authenticity_claim: d, notability_claim: y }
             return Object(I.b)(e, { params: D, request: r.AccountVerification.verifyAccount })({
               actionTypes: J,
               context: 'VERIFY_ACCOUNT',
@@ -1893,24 +1922,24 @@
               r,
               o = a.api,
               l = t(),
-              c = Te(l),
-              E = fe(l),
+              E = Te(l),
+              c = fe(l),
               s = he(l),
               T = Se(l)
-            if (c) {
-              var u,
-                d = Object(p.k)(l, c),
-                N = i()(d, 1)[0]
-              r = null == N || null === (u = N.originalMediaFile) || void 0 === u ? void 0 : u.fileHandle
-            }
             if (E) {
-              var _,
-                A = Object(p.k)(l, E),
-                b = i()(A, 1)[0]
-              n = null == b || null === (_ = b.originalMediaFile) || void 0 === _ ? void 0 : _.fileHandle
+              var N,
+                u = Object(p.k)(l, E),
+                d = i()(u, 1)[0]
+              r = null == d || null === (N = d.originalMediaFile) || void 0 === N ? void 0 : N.fileHandle
             }
-            var R = { backImage: r, country: T, frontImage: n, idType: s }
-            return Object(I.b)(e, { params: R, request: o.AccountVerification.verifyIdDocument })({
+            if (c) {
+              var _,
+                A = Object(p.k)(l, c),
+                R = i()(A, 1)[0]
+              n = null == R || null === (_ = R.originalMediaFile) || void 0 === _ ? void 0 : _.fileHandle
+            }
+            var C = { backImage: r, country: T, frontImage: n, idType: s }
+            return Object(I.b)(e, { params: C, request: o.AccountVerification.verifyIdDocument })({
               actionTypes: X,
               context: 'VERIFY_ID_DOCUMENT',
             })
@@ -1922,19 +1951,23 @@
             var r,
               o = n(),
               l = null === (r = Ue(o)) || void 0 === r ? void 0 : r.newsType,
-              c = ie(o),
-              E = c.followers_eligible,
-              I = c.mentions_eligible
+              E = ie(o),
+              c = E.followers_eligible,
+              I = E.mentions_eligible
             switch (e) {
               case A.h.NOTABILITY_CATEGORY_SELECT:
                 a({ payload: t, type: B })
                 break
+              case A.h.ACTIVIST_SUBCATEGORY:
               case A.h.COMPANY_SUBCATEGORY:
               case A.h.ENTERTAINMENT_QUALIFICATIONS:
+              case A.h.GAMING_SUBCATEGORY:
               case A.h.GOVERNMENT_SUBCATEGORY:
               case A.h.INFLUENCER_SUBCATEGORY:
               case A.h.SPORTS_SUBCATEGORY:
-                a({ payload: t, type: w })
+                'string' == typeof t &&
+                  (a({ payload: A.o[t], type: B }),
+                  A.o[t] === A.l.NEWS ? a({ payload: { newsType: t }, type: W }) : a({ payload: t, type: w }))
                 break
               case A.h.NEWS_QUALIFICATIONS:
                 a({ payload: { newsType: t }, type: W })
@@ -1980,20 +2013,20 @@
                 break
               case A.h.COMPANY_NEWS_REFERENCE:
               case A.h.SPORTS_ENTITY_NEWS_REFERENCE:
-                a(E ? { payload: t, type: W } : { payload: t, type: m })
+                a(c ? { payload: t, type: W } : { payload: t, type: O })
                 break
               case A.h.CREATOR_PROFILE:
               case A.h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL:
-                a({ payload: t, type: C })
+                a({ payload: t, type: b })
                 break
               case A.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE:
               case A.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE:
-                a(E || I ? { payload: t, type: W } : { payload: t, type: m })
+                a(c || I ? { payload: t, type: W } : { payload: t, type: O })
                 break
               case A.h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL:
               case A.h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL:
               case A.h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL:
-                a({ payload: t, type: O })
+                a({ payload: t, type: m })
                 break
               case A.h.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS:
               case A.h.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL:
@@ -2006,9 +2039,9 @@
                 break
               case A.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS:
                 a(
-                  E || I
+                  c || I
                     ? { payload: s()(s()({}, t), {}, { newsType: l }), type: W }
-                    : { payload: s()({}, t), type: R },
+                    : { payload: s()({}, t), type: C },
                 )
                 break
               case A.h.AUTHENTICITY_TYPE_SELECT:
@@ -2029,7 +2062,7 @@
           var a = t.slice(-2),
             n = i()(a, 1)[0],
             r = void 0 === n ? ee : n,
-            o = [ee].concat(c()(t.slice(1, -1)))
+            o = [ee].concat(E()(t.slice(1, -1)))
           return r === A.h.INTAKE_LOADING ? e(o) : { previousStep: r, remainingSteps: o }
         }
     },
@@ -2041,12 +2074,12 @@
         r = n(a('fl4i')),
         o = n(a('ccgC')),
         l = n(a('Umjq')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           '(?:(#{validateUrlUserinfo})@)?(#{validateUrlUnicodeHost})(?::(#{validateUrlPort}))?',
           { validateUrlUserinfo: r.default, validateUrlUnicodeHost: o.default, validateUrlPort: l.default },
           'i',
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     ccgC: function (e, t, a) {
       'use strict'
@@ -2076,12 +2109,12 @@
         r = n(a('kfbJ')),
         o = n(a('5kR0')),
         l = n(a('Flng')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           '(?:#{validateUrlUnreserved}|#{validateUrlPctEncoded}|#{validateUrlSubDelims}|:)*',
           { validateUrlUnreserved: r.default, validateUrlPctEncoded: o.default, validateUrlSubDelims: l.default },
           'i',
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     iD2S: function (e, t) {
       e.exports = function e(t) {
@@ -2102,32 +2135,32 @@
       'use strict'
       a.r(t),
         a.d(t, 'renderNullHeader', function () {
-          return Ds
+          return gs
         }),
         a.d(t, 'AccountVerification', function () {
-          return Fs
+          return Ps
         })
       var n,
         i,
         r,
         o,
         l,
-        c,
         E,
+        c,
         s,
         I,
         T,
+        N,
         u,
         d,
-        N,
         _,
         p,
         A,
-        b,
         R,
         C,
-        m,
+        b,
         O,
+        m,
         f,
         S,
         L,
@@ -2140,8 +2173,8 @@
         M = a.n(v),
         g = a('yiKp'),
         P = a.n(g),
-        x = a('VrFO'),
-        G = a.n(x),
+        G = a('VrFO'),
+        x = a.n(G),
         Y = a('Y9Ll'),
         V = a.n(Y),
         B = a('1Pcy'),
@@ -2152,7 +2185,7 @@
         K = a.n(H),
         j = a('KEM+'),
         z = a.n(j),
-        q =
+        Q =
           (a('2G9S'),
           a('5BYb'),
           a('7x/C'),
@@ -2163,7 +2196,7 @@
           a('ho0z'),
           a('uFXj'),
           a('ERkP')),
-        Q = a.n(q),
+        q = a.n(Q),
         $ = (a('hBpG'), a('849X'), a('TJCb'), a('1t7P'), a('jQ/y'), a('3XMw')),
         Z = a.n($),
         J = a('cmUU'),
@@ -2176,49 +2209,49 @@
         re = Z.a.fff7d93c,
         oe = Z.a.g969bfad,
         le = Z.a.gb2f35e4,
-        ce = ee.b.isTwitterApp()
+        Ee = ee.b.isTwitterApp()
           ? { external: !0, pathname: 'twitter://settings/account', openInSameFrame: !0 }
           : { pathname: '/settings/account', openInSameFrame: !0 },
-        Ee = ee.b.isTwitterApp()
+        ce = ee.b.isTwitterApp()
           ? { external: !0, pathname: 'twitter://profiles/edit', openInSameFrame: !0 }
           : { external: !0, pathname: '/settings/profile', openInSameFrame: !0 },
         se = function (e) {
           var t,
             a = e.accountViolations,
-            n = [te.r.PROFILE_COMPLETION, te.r.ACCOUNT_SECURITY],
+            n = [te.s.PROFILE_COMPLETION, te.s.ACCOUNT_SECURITY],
             i =
               ((t = {}),
-              z()(t, te.r.PROFILE_COMPLETION, { actionLink: Ee, buttonText: re, description: le, title: oe }),
-              z()(t, te.r.ACCOUNT_SECURITY, { actionLink: ce, buttonText: ae, description: ie, title: ne }),
+              z()(t, te.s.PROFILE_COMPLETION, { actionLink: ce, buttonText: re, description: le, title: oe }),
+              z()(t, te.s.ACCOUNT_SECURITY, { actionLink: Ee, buttonText: ae, description: ie, title: ne }),
               t),
             r = n.find(function (e) {
               var t
               return null === (t = a.violations) || void 0 === t
                 ? void 0
                 : t.some(function (t) {
-                    return t.violation_category === e && t.violation_status === te.s.OUT_OF_COMPLIANCE
+                    return t.violation_category === e && t.violation_status === te.t.OUT_OF_COMPLIANCE
                   })
             })
           if (void 0 === r) throw new Error('cannot render Account violations without valid violations')
           var o = i[r],
             l = o.actionLink,
-            c = o.buttonText,
-            E = o.description,
+            E = o.buttonText,
+            c = o.description,
             s = o.title
-          return Q.a.createElement(J.a, {
-            actionLabel: c,
+          return q.a.createElement(J.a, {
+            actionLabel: E,
             actionLink: l,
             graphicDisplayMode: 'none',
             headline: s,
             onAction: X.a,
             onClose: X.a,
-            subtext: E,
+            subtext: c,
             withCloseButton: !1,
           })
         },
         Ie = a('ddV6'),
         Te = a.n(Ie),
-        ue =
+        Ne =
           (a('KqXw'),
           a('Ysgh'),
           a('z84I'),
@@ -2231,8 +2264,8 @@
           a('DZ+c'),
           a('3uku'),
           a('+/5o')),
-        de = a('rHpw'),
-        Ne = de.a.create(function (e) {
+        ue = a('rHpw'),
+        de = ue.a.create(function (e) {
           return {
             root: {
               height: 'calc(600px - '.concat(e.componentDimensions.appBarHeight, ')'),
@@ -2262,7 +2295,7 @@
             listItem: {
               justifyContent: 'space-between',
               minHeight: 'calc('
-                .concat(de.a.theme.lineHeights.headline1, ' + 2 * ')
+                .concat(ue.a.theme.lineHeights.headline1, ' + 2 * ')
                 .concat(e.componentDimensions.gutterVertical, ')'),
               paddingVertical: e.componentDimensions.gutterVertical,
             },
@@ -2278,11 +2311,11 @@
         _e = a('MWbm'),
         pe = a('t62R'),
         Ae = a('/yvb'),
-        be = a('w6IS'),
-        Re = a('tn7R'),
-        Ce = Z.a.j24c37b2,
-        me = Z.a.c1df579e,
-        Oe = Z.a.ge483f9e,
+        Re = a('w6IS'),
+        Ce = a('tn7R'),
+        be = Z.a.j24c37b2,
+        Oe = Z.a.c1df579e,
+        me = Z.a.ge483f9e,
         fe = Z.a.be03ecca,
         Se = Z.a.a411926a,
         Le = Z.a.c69a40de,
@@ -2310,13 +2343,13 @@
             r = e.handleOnClickInvalid,
             o = e.handleOnClickValid,
             l = e.isNarrow,
-            c = 0 === i.length
+            E = 0 === i.length
           if (
-            c ||
+            E ||
             (function (e) {
               var t = e.split('@'),
                 a = Te()(t, 2)[1],
-                n = Object(be.a)(Object(Re.a)(ye))
+                n = Object(Re.a)(Object(Ce.a)(ye))
                   .filter(function (e) {
                     return e
                   })
@@ -2327,55 +2360,55 @@
               return new RegExp(i, 'i').test(a)
             })(i)
           ) {
-            var E = c ? Le : he,
-              s = c
+            var c = E ? Le : he,
+              s = E
                 ? (function (e) {
-                    return Q.a.createElement(
+                    return q.a.createElement(
                       Z.a.I18NFormatMessage,
                       { $i18n: 'jf9308af' },
-                      Q.a.createElement(pe.b, { link: e }, Z.a.e1e878ed),
+                      q.a.createElement(pe.b, { link: e }, Z.a.e1e878ed),
                     )
                   })(n)
                 : (function (e) {
-                    return Q.a.createElement(
+                    return q.a.createElement(
                       Z.a.I18NFormatMessage,
                       { $i18n: 'e9976a40' },
-                      Q.a.createElement(pe.b, { link: e }, Z.a.ced76119),
+                      q.a.createElement(pe.b, { link: e }, Z.a.ced76119),
                     )
                   })(n)
-            return Q.a.createElement(J.a, {
-              actionLabel: Ce,
+            return q.a.createElement(J.a, {
+              actionLabel: be,
               graphicDisplayMode: 'none',
-              headline: E,
+              headline: c,
               onAction: r,
               onClose: X.a,
               subtext: s,
               withCloseButton: !1,
             })
           }
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: [Ne.container, l && Ne.narrowContainer] },
-            Q.a.createElement(
+            { style: [de.container, l && de.narrowContainer] },
+            q.a.createElement(
               pe.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
-                nativeID: ue.b,
+                nativeID: Ne.b,
                 size: 'title4',
-                style: Ne.header,
+                style: de.header,
                 weight: 'heavy',
               },
               Se,
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              Q.a.createElement(pe.b, { color: 'gray700' }, Oe),
-              ((a = fe), Q.a.createElement(pe.b, { size: 'subtext2', style: Ne.subheading, weight: 'heavy' }, a)),
-              ((t = i), Q.a.createElement(pe.b, { style: Ne.subtext }, t)),
+              { style: de.scrollableContainer },
+              q.a.createElement(pe.b, { color: 'gray700' }, me),
+              ((a = fe), q.a.createElement(pe.b, { size: 'subtext2', style: de.subheading, weight: 'heavy' }, a)),
+              ((t = i), q.a.createElement(pe.b, { style: de.subtext }, t)),
             ),
-            Q.a.createElement(Ae.a, { onClick: o, style: Ne.buttonFixed, type: 'brandFilled' }, me),
+            q.a.createElement(Ae.a, { onClick: o, style: de.buttonFixed, type: 'brandFilled' }, Oe),
           )
         },
         Fe = a('kGix'),
@@ -2384,8 +2417,8 @@
         Me = (a('yH/f'), a('TIdA')),
         ge = a('A91F'),
         Pe = 'https://abs.twimg.com/images/verification-form-start.png',
-        xe = 'https://abs.twimg.com/images/verification-form-loading.png',
-        Ge = 'https://abs.twimg.com/images/verification-form-sent.png',
+        Ge = 'https://abs.twimg.com/images/verification-form-loading.png',
+        xe = 'https://abs.twimg.com/images/verification-form-sent.png',
         Ye = 600,
         Ve = 1200,
         Be = Object.freeze({ START: 'start', LOADING: 'loading', SENT: 'sent' }),
@@ -2401,42 +2434,42 @@
           }),
           z()(n, Be.LOADING, {
             aspectRatio: 1.5,
-            default: xe,
+            default: Ge,
             variants: [
-              { uri: xe, width: Ye, height: 400 },
+              { uri: Ge, width: Ye, height: 400 },
               { uri: 'https://abs.twimg.com/images/verification-form-loading-large.png', width: Ve, height: 800 },
             ],
           }),
           z()(n, Be.SENT, {
             aspectRatio: 2,
-            default: Ge,
+            default: xe,
             variants: [
-              { uri: Ge, width: Ye, height: 300 },
+              { uri: xe, width: Ye, height: 300 },
               { uri: 'https://abs.twimg.com/images/verification-form-sent-large.png', width: Ve, height: 600 },
             ],
           }),
           n),
-        we = de.a.create(function () {
+        we = ue.a.create(function () {
           return { narrowBanner: { flex: 1 } }
         }),
         ke = function (e) {
           var t = e.isNarrow,
             a = e.type,
             n = We[a],
-            i = Q.a.createElement(Me.a, {
+            i = q.a.createElement(Me.a, {
               accessibilityLabel: '',
               aspectMode: t ? ge.a.COVER : ge.a.exact(n.aspectRatio),
               customVariants: n.variants,
               image: n.default,
             })
-          return t ? Q.a.createElement(_e.a, { style: we.narrowBanner }, i) : i
+          return t ? q.a.createElement(_e.a, { style: we.narrowBanner }, i) : i
         },
         He = Z.a.j163be32,
         Ke = Z.a.gaf821c8,
-        je = Q.a.createElement(
+        je = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'e5b4cc43' },
-          Q.a.createElement(
+          q.a.createElement(
             pe.b,
             { link: 'https://help.twitter.com/managing-your-account/twitter-verified-accounts' },
             Z.a.e1ac0f9a,
@@ -2445,46 +2478,46 @@
         ze = function (e) {
           var t = e.handleOnClick,
             a = e.isNarrow
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: Ne.largeBannerContainer },
-            Q.a.createElement(ke, { isNarrow: a, type: Be.START }),
-            Q.a.createElement(
+            { style: de.largeBannerContainer },
+            q.a.createElement(ke, { isNarrow: a, type: Be.START }),
+            q.a.createElement(
               _e.a,
-              { style: [Ne.container, Ne.verticalCenter, a && Ne.narrowContainer] },
-              Q.a.createElement(
+              { style: [de.container, de.verticalCenter, a && de.narrowContainer] },
+              q.a.createElement(
                 pe.b,
                 {
                   accessibilityLevel: 1,
                   accessibilityRole: 'heading',
-                  nativeID: ue.b,
+                  nativeID: Ne.b,
                   size: 'title4',
-                  style: Ne.header,
+                  style: de.header,
                   weight: 'heavy',
                 },
                 Ke,
               ),
-              Q.a.createElement(pe.b, { color: 'gray700' }, je),
-              Q.a.createElement(Ae.a, { onClick: t, style: Ne.buttonPadded, type: 'brandFilled' }, He),
+              q.a.createElement(pe.b, { color: 'gray700' }, je),
+              q.a.createElement(Ae.a, { onClick: t, style: de.buttonPadded, type: 'brandFilled' }, He),
             ),
           )
         },
-        qe = (a('tQbP'), a('+KXO'), a('WNMA'), a('rxPX')),
-        Qe = a('ZyHq'),
-        $e = Object(qe.a)()
+        Qe = (a('tQbP'), a('+KXO'), a('WNMA'), a('rxPX')),
+        qe = a('ZyHq'),
+        $e = Object(Qe.a)()
           .propsFromState(function () {
-            return { documentFormats: Qe.A, idCountry: Qe.G, idType: Qe.I }
+            return { documentFormats: qe.A, idCountry: qe.G, idType: qe.I }
           })
           .propsFromActions(function () {
-            return { setNextFlow: Qe.V }
+            return { setNextFlow: qe.V }
           })
           .withAnalytics(),
-        Ze = Object(qe.a)().propsFromActions(function () {
-          return { setNextFlow: Qe.V }
+        Ze = Object(Qe.a)().propsFromActions(function () {
+          return { setNextFlow: qe.V }
         }),
         Je = a('iySH'),
         Xe = a('htQn'),
-        et = de.a.create(function (e) {
+        et = ue.a.create(function (e) {
           return {
             contentContainer: { alignItems: 'center', flexDirection: 'row', flexGrow: 1 },
             content: { flexGrow: 1, flexShrink: 1 },
@@ -2499,35 +2532,35 @@
             r = e.items,
             o = e.setNextFlow,
             l = e.title
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: [Ne.container, i && Ne.narrowContainer] },
-            Q.a.createElement(
+            { style: [de.container, i && de.narrowContainer] },
+            q.a.createElement(
               pe.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
-                nativeID: ue.b,
+                nativeID: Ne.b,
                 size: 'title4',
-                style: Ne.header,
+                style: de.header,
                 weight: 'heavy',
               },
               l,
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              n && Q.a.createElement(pe.b, { color: 'gray700' }, n),
-              Q.a.createElement(
+              { style: de.scrollableContainer },
+              n && q.a.createElement(pe.b, { color: 'gray700' }, n),
+              q.a.createElement(
                 _e.a,
-                { accessibilityLabelledBy: ue.b, accessibilityRole: 'group', style: Ne.contentContainer },
+                { accessibilityLabelledBy: Ne.b, accessibilityRole: 'group', style: de.contentContainer },
                 r.map(function (e, t) {
                   var a = e.description,
                     n = e.disabled,
                     i = void 0 !== n && n,
                     r = e.label,
-                    c = e.nextStep
-                  return Q.a.createElement(
+                    E = e.nextStep
+                  return q.a.createElement(
                     Xe.a,
                     {
                       disabled: i,
@@ -2535,21 +2568,21 @@
                       onClick: function () {
                         !(function (e) {
                           o(e)
-                        })(c)
+                        })(E)
                       },
-                      style: [Ne.listItem, Ne.bottomBorder],
+                      style: [de.listItem, de.bottomBorder],
                       withInteractiveStyling: !0,
                     },
-                    Q.a.createElement(
+                    q.a.createElement(
                       _e.a,
                       { style: et.contentContainer },
-                      Q.a.createElement(
+                      q.a.createElement(
                         _e.a,
                         { style: et.content },
-                        Q.a.createElement(pe.b, null, r),
-                        a && Q.a.createElement(pe.b, { color: 'gray700', size: 'subtext2' }, a),
+                        q.a.createElement(pe.b, null, r),
+                        a && q.a.createElement(pe.b, { color: 'gray700', size: 'subtext2' }, a),
                       ),
-                      Q.a.createElement(Je.a, { style: et.icon }),
+                      q.a.createElement(Je.a, { style: et.icon }),
                     ),
                   )
                 }),
@@ -2564,13 +2597,13 @@
         rt = Z.a.b246aa5d,
         ot = Z.a.d6fb5877,
         lt = Z.a.b72f97cc,
-        ct = Z.a.b2ab6008,
-        Et = Z.a.c1df579e,
+        Et = Z.a.b2ab6008,
+        ct = Z.a.c1df579e,
         st = function (e, t) {
           return e && t ? e[t].country : ot
         },
         It = function (e, t, a) {
-          return e && t && a ? e[t].id_types[a].name : ct
+          return e && t && a ? e[t].id_types[a].name : Et
         },
         Tt = $e(function (e) {
           var t = e.documentFormats,
@@ -2578,18 +2611,18 @@
             n = e.idType,
             i = e.isNarrow,
             r = e.setNextFlow
-          return Q.a.createElement(at, {
-            button: Q.a.createElement(
+          return q.a.createElement(at, {
+            button: q.a.createElement(
               Ae.a,
               {
                 disabled: !(a && n),
                 onClick: function () {
                   return r()
                 },
-                style: Ne.buttonFixed,
+                style: de.buttonFixed,
                 type: 'brandFilled',
               },
-              Et,
+              ct,
             ),
             description: it,
             isNarrow: i,
@@ -2600,19 +2633,19 @@
             title: nt,
           })
         }),
-        ut = Tt,
-        dt = a('1byD'),
-        Nt = a('6OUF'),
+        Nt = Tt,
+        ut = a('1byD'),
+        dt = a('6OUF'),
         _t = Z.a.h9270b1b,
         pt = function (e) {
           var t = e.documentFormats,
             a = e.isNarrow,
             n = e.onCountryClick,
-            i = Q.a.useState(new RegExp('', 'i')),
+            i = q.a.useState(new RegExp('', 'i')),
             r = Te()(i, 2),
             o = r[0],
             l = r[1],
-            c = Q.a.useMemo(
+            E = q.a.useMemo(
               function () {
                 return t
                   ? Object.keys(t).sort(function (e, a) {
@@ -2622,33 +2655,33 @@
               },
               [t],
             )
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
             {
-              accessibilityLabelledBy: ue.b,
+              accessibilityLabelledBy: Ne.b,
               accessibilityRole: 'group',
-              style: [Ne.container, a && Ne.narrowContainer],
+              style: [de.container, a && de.narrowContainer],
             },
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.fixedContainer },
-              Q.a.createElement(
+              { style: de.fixedContainer },
+              q.a.createElement(
                 pe.b,
                 {
                   accessibilityLevel: 1,
                   accessibilityRole: 'heading',
-                  nativeID: ue.b,
+                  nativeID: Ne.b,
                   size: 'title4',
-                  style: Ne.header,
+                  style: de.header,
                   weight: 'heavy',
                 },
                 rt,
               ),
-              Q.a.createElement(
+              q.a.createElement(
                 _e.a,
-                { style: [Ne.contentContainer, Ne.topPaddingSmall] },
-                Q.a.createElement(Nt.a, {
-                  Icon: dt.a,
+                { style: [de.contentContainer, de.topPaddingSmall] },
+                q.a.createElement(dt.a, {
+                  Icon: ut.a,
                   onChange: function (e) {
                     return l(
                       new RegExp(
@@ -2663,22 +2696,22 @@
                 }),
               ),
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              c.map(function (e) {
+              { style: de.scrollableContainer },
+              E.map(function (e) {
                 return t && t[e].country.match(o)
-                  ? Q.a.createElement(
+                  ? q.a.createElement(
                       Xe.a,
                       {
                         key: e,
                         onClick: function () {
                           return n(e, t[e].country)
                         },
-                        style: [Ne.listItem, Ne.bottomBorder],
+                        style: [de.listItem, de.bottomBorder],
                         withInteractiveStyling: !0,
                       },
-                      Q.a.createElement(pe.b, null, t[e].country),
+                      q.a.createElement(pe.b, null, t[e].country),
                     )
                   : null
               }),
@@ -2690,69 +2723,69 @@
             a = e.idCountry,
             n = e.isNarrow,
             i = e.onTypeClick,
-            r = Q.a.useMemo(
+            r = q.a.useMemo(
               function () {
                 return t && a
-                  ? Object(Re.a)(t[a].id_types).sort(function (e, t) {
+                  ? Object(Ce.a)(t[a].id_types).sort(function (e, t) {
                       return e.name.localeCompare(t.name)
                     })
                   : []
               },
               [t, a],
             )
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
             {
-              accessibilityLabelledBy: ue.b,
+              accessibilityLabelledBy: Ne.b,
               accessibilityRole: 'group',
-              style: [Ne.container, n && Ne.narrowContainer],
+              style: [de.container, n && de.narrowContainer],
             },
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.fixedContainer },
-              Q.a.createElement(
+              { style: de.fixedContainer },
+              q.a.createElement(
                 pe.b,
                 {
                   accessibilityLevel: 1,
                   accessibilityRole: 'heading',
-                  nativeID: ue.b,
+                  nativeID: Ne.b,
                   size: 'title4',
-                  style: Ne.header,
+                  style: de.header,
                   weight: 'heavy',
                 },
                 lt,
               ),
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: [Ne.contentContainer, Ne.scrollableContainer, Ne.topPaddingSmall] },
+              { style: [de.contentContainer, de.scrollableContainer, de.topPaddingSmall] },
               r.map(function (e) {
                 var t = e.id_type,
                   a = e.name
-                return Q.a.createElement(
+                return q.a.createElement(
                   Xe.a,
                   {
                     key: t,
                     onClick: function () {
                       return i(t, a)
                     },
-                    style: [Ne.listItem, Ne.bottomBorder],
+                    style: [de.listItem, de.bottomBorder],
                     withInteractiveStyling: !0,
                   },
-                  Q.a.createElement(pe.b, null, a),
+                  q.a.createElement(pe.b, null, a),
                 )
               }),
             ),
           )
         },
-        bt = a('m3Bd'),
-        Rt = a.n(bt),
-        Ct = Object(qe.a)()
+        Rt = a('m3Bd'),
+        Ct = a.n(Rt),
+        bt = Object(Qe.a)()
           .propsFromActions(function () {
-            return { setNextFlow: Qe.V, setPreviousFlow: Qe.W }
+            return { setNextFlow: qe.V, setPreviousFlow: qe.W }
           })
           .withAnalytics(),
-        mt = [
+        Ot = [
           'analytics',
           'graphicDisplayMode',
           'onAction',
@@ -2763,7 +2796,7 @@
           'tertiaryActionLink',
           'withCloseButton',
         ],
-        Ot = Ct(function (e) {
+        mt = bt(function (e) {
           var t = e.analytics,
             a = e.graphicDisplayMode,
             n = void 0 === a ? 'none' : a,
@@ -2771,19 +2804,19 @@
             r = e.onTertiaryAction,
             o = e.setNextFlow,
             l = e.setPreviousFlow,
-            c = e.tertiaryActionLabel,
-            E = e.tertiaryActionLink,
+            E = e.tertiaryActionLabel,
+            c = e.tertiaryActionLink,
             s = e.withCloseButton,
             I = void 0 !== s && s,
-            T = Rt()(e, mt),
-            u =
+            T = Ct()(e, Ot),
+            N =
               r ||
-              (E
+              (c
                 ? X.a
                 : function () {
                     return l()
                   })
-          return Q.a.createElement(
+          return q.a.createElement(
             J.a,
             M()(
               {
@@ -2796,18 +2829,18 @@
                       { element: 'CTA', action: 'click', data: t.contextualScribeData },
                     ),
                   ),
-                    i ? i(e) : c ? o() : l()
+                    i ? i(e) : E ? o() : l()
                 },
-                onTertiaryAction: u,
-                tertiaryActionLabel: c,
-                tertiaryActionLink: E,
+                onTertiaryAction: N,
+                tertiaryActionLabel: E,
+                tertiaryActionLink: c,
                 withCloseButton: I,
               },
               T,
             ),
           )
         }),
-        ft = Ot,
+        ft = mt,
         St = a('RhWx'),
         Lt = a.n(St),
         ht =
@@ -2819,15 +2852,15 @@
           a('DfhM'),
           function (e) {
             var t,
-              a = Object(Qe.y)(e)
+              a = Object(qe.y)(e)
             return null !== (t = null == a ? void 0 : a.inputData) && void 0 !== t ? t : []
           }),
-        yt = Object(qe.a)()
+        yt = Object(Qe.a)()
           .propsFromState(function () {
-            return { currentStep: Qe.z, formHistory: ht }
+            return { currentStep: qe.z, formHistory: ht }
           })
           .propsFromActions(function () {
-            return { setFormStepData: Qe.R, setNextFlow: Qe.V, updateFormHistory: Qe.Y }
+            return { setFormStepData: qe.R, setNextFlow: qe.V, updateFormHistory: qe.Y }
           })
           .withAnalytics(),
         Dt = a('Qp/W'),
@@ -2844,44 +2877,44 @@
         Mt = function (e) {
           return { component: te.g[e].scribeComponent || e }
         },
-        gt = function (e, t, a, n, i, r, o, l, c) {
-          var E = n || r,
+        gt = function (e, t, a, n, i, r, o, l, E) {
+          var c = n || r,
             s =
               l &&
               (function (e) {
                 e.newsType
-                var t = Rt()(e, Ut)
+                var t = Ct()(e, Ut)
                 return Object.keys(t).map(function (e) {
                   return vt(e)
                 })
               })(l),
             I = {}
           switch (te.g[a].scribeComponent) {
-            case te.p.LANDING_PAGE:
+            case te.q.LANDING_PAGE:
               I = { access_status: e }
               break
-            case te.p.NOTABILITY_CATEGORY:
-              I = { meets_threshold: E, notability_category: o }
+            case te.q.NOTABILITY_CATEGORY:
+              I = { meets_threshold: c, notability_category: o }
               break
-            case te.p.NOTABILITY_SUBCATEGORY:
-              I = { meets_threshold: E, notability_category: o, category_subtype: c }
+            case te.q.NOTABILITY_SUBCATEGORY:
+              I = { meets_threshold: c, notability_category: o, category_subtype: E }
               break
-            case te.p.NOTABILITY_METHOD:
-            case te.p.NOTABILITY_INPUT:
-              I = { meets_threshold: E, notability_category: o, category_subtype: c, notability_method: s }
+            case te.q.NOTABILITY_METHOD:
+            case te.q.NOTABILITY_INPUT:
+              I = { meets_threshold: c, notability_category: o, category_subtype: E, notability_method: s }
               break
-            case te.p.AUTHENTICITY_TYPE:
-              I = { notability_category: o, category_subtype: c, authenticity_type: t }
+            case te.q.AUTHENTICITY_TYPE:
+              I = { notability_category: o, category_subtype: E, authenticity_type: t }
               break
-            case te.p.ID_UPLOAD:
-              I = { notability_category: o, category_subtype: c, authenticity_type: t, id_type: i }
+            case te.q.ID_UPLOAD:
+              I = { notability_category: o, category_subtype: E, authenticity_type: t, id_type: i }
               break
-            case te.p.REVIEW_SUBMIT:
-            case te.p.THANK_YOU:
+            case te.q.REVIEW_SUBMIT:
+            case te.q.THANK_YOU:
               I = {
-                meets_threshold: E,
+                meets_threshold: c,
                 notability_category: o,
-                category_subtype: c,
+                category_subtype: E,
                 notability_method: s,
                 authenticity_type: t,
                 id_type: i,
@@ -2897,8 +2930,8 @@
           }
         },
         Pt = a('855f'),
-        xt = a('p+r5'),
-        Gt = a('XiMS'),
+        Gt = a('p+r5'),
+        xt = a('XiMS'),
         Yt = ['isUrlInvalid', 'labelGenerator', 'required', 'value'],
         Vt = 'verification-checkbox-label',
         Bt = Z.a.i33cf691,
@@ -2916,7 +2949,7 @@
             })(e)
           )
         },
-        Ht = de.a.create(function (e) {
+        Ht = ue.a.create(function (e) {
           return {
             input: { paddingHorizontal: 0 },
             addFieldText: { alignSelf: 'flex-start', marginLeft: e.borderWidths.medium, paddingTop: e.spaces.space12 },
@@ -2931,20 +2964,20 @@
             r = e.analytics,
             o = e.buttonText,
             l = void 0 === o ? Wt : o,
-            c = e.confirmationText,
-            E = e.currentStep,
+            E = e.confirmationText,
+            c = e.currentStep,
             s = e.description,
             I = e.formHistory,
             T = e.isNarrow,
-            u = e.items,
-            d = e.maxItems,
-            N = void 0 === d ? 10 : d,
+            N = e.items,
+            u = e.maxItems,
+            d = void 0 === u ? 10 : u,
             _ = e.nextFormStep,
             p = e.setFormStepData,
             A = e.setNextFlow,
-            b = e.title,
-            R = e.updateFormHistory,
-            C = Q.a.useState(
+            R = e.title,
+            C = e.updateFormHistory,
+            b = q.a.useState(
               (function () {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
                   t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
@@ -2964,94 +2997,94 @@
                       }),
                   a
                 )
-              })(u, I),
+              })(N, I),
             ),
-            m = Te()(C, 2),
-            O = m[0],
-            f = m[1],
-            S = Q.a.useState(!1),
+            O = Te()(b, 2),
+            m = O[0],
+            f = O[1],
+            S = q.a.useState(!1),
             L = Te()(S, 2),
             h = L[0],
             y = L[1],
-            D = Q.a.useState(!1),
+            D = q.a.useState(!1),
             F = Te()(D, 2),
             U = F[0],
             v = F[1],
-            g = Q.a.useState(!0),
-            x = Te()(g, 2),
-            G = x[0],
-            Y = x[1],
-            V = Q.a.useState(null),
+            g = q.a.useState(!0),
+            G = Te()(g, 2),
+            x = G[0],
+            Y = G[1],
+            V = q.a.useState(null),
             B = Te()(V, 2),
             W = B[0],
             w = B[1],
-            k = u.length
-          Q.a.useEffect(
+            k = N.length
+          q.a.useEffect(
             function () {
-              var e = Object(Re.a)(O),
+              var e = Object(Ce.a)(m),
                 t = (i ? e.slice(0, k) : e).every(function (e) {
                   return kt(e.value)
                 }),
-                a = !t || !(!c || U)
+                a = !t || !(!E || U)
               y(t), Y(a)
             },
-            [i, c, O, U, k],
+            [i, E, m, U, k],
           )
           var H = function (e, t) {
             w(
               setTimeout(function () {
                 var a = !kt(e)
-                return f(P()(P()({}, O), {}, z()({}, t, P()(P()({}, O[t]), {}, { isUrlInvalid: a, value: e }))))
+                return f(P()(P()({}, m), {}, z()({}, t, P()(P()({}, m[t]), {}, { isUrlInvalid: a, value: e }))))
               }, 2e3),
             )
           }
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: [Ne.container, T && Ne.narrowContainer] },
-            Q.a.createElement(
+            { style: [de.container, T && de.narrowContainer] },
+            q.a.createElement(
               pe.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
-                nativeID: ue.b,
+                nativeID: Ne.b,
                 size: 'title4',
-                style: Ne.header,
+                style: de.header,
                 weight: 'heavy',
               },
-              b,
+              R,
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              s && Q.a.createElement(pe.b, { color: 'gray700' }, s),
-              Q.a.createElement(
+              { style: de.scrollableContainer },
+              s && q.a.createElement(pe.b, { color: 'gray700' }, s),
+              q.a.createElement(
                 _e.a,
-                { accessibilityLabelledBy: ue.b, accessibilityRole: 'group', style: Ne.contentContainer },
-                Object.keys(O).map(function (e, t) {
-                  var a = O[e],
+                { accessibilityLabelledBy: Ne.b, accessibilityRole: 'group', style: de.contentContainer },
+                Object.keys(m).map(function (e, t) {
+                  var a = m[e],
                     n = a.isUrlInvalid,
                     i = a.labelGenerator,
                     r = void 0 === i ? null : i,
                     o = (a.required, a.value),
-                    l = Rt()(a, Yt),
-                    c = l.label || '',
-                    s = l.name || ''.concat(E, '-').concat(e),
+                    l = Ct()(a, Yt),
+                    E = l.label || '',
+                    s = l.name || ''.concat(c, '-').concat(e),
                     I = l.errorText || wt,
                     T = Pt.a.getFormattedCount(t + 1),
-                    u = r ? r({ n: T }) : c
-                  return Q.a.createElement(
-                    xt.a,
+                    N = r ? r({ n: T }) : E
+                  return q.a.createElement(
+                    Gt.a,
                     M()({}, l, {
                       errorText: I,
                       invalid: n,
                       key: e,
-                      label: u,
+                      label: N,
                       name: s,
                       onBlur: function (t) {
                         return (function (e, t) {
                           clearTimeout(W)
                           var a = !kt(e.target.value)
-                          return f(P()(P()({}, O), {}, z()({}, t, P()(P()({}, O[t]), {}, { isUrlInvalid: a }))))
+                          return f(P()(P()({}, m), {}, z()({}, t, P()(P()({}, m[t]), {}, { isUrlInvalid: a }))))
                         })(t, e)
                       },
                       onChange: function (t) {
@@ -3060,8 +3093,8 @@
                           var a = !1,
                             n = e.target.value
                           return (
-                            O[t].isUrlInvalid ? (a = !kt(n)) : H(n, t),
-                            f(P()(P()({}, O), {}, z()({}, t, P()(P()({}, O[t]), {}, { isUrlInvalid: a, value: n }))))
+                            m[t].isUrlInvalid ? (a = !kt(n)) : H(n, t),
+                            f(P()(P()({}, m), {}, z()({}, t, P()(P()({}, m[t]), {}, { isUrlInvalid: a, value: n }))))
                           )
                         })(t, e)
                       },
@@ -3070,8 +3103,8 @@
                     }),
                   )
                 }),
-                i && h && Object.keys(O).length < N
-                  ? Q.a.createElement(
+                i && h && Object.keys(m).length < d
+                  ? q.a.createElement(
                       pe.b,
                       {
                         color: 'primary',
@@ -3084,7 +3117,7 @@
                                 {},
                                 z()({}, t, P()(P()({}, e[t - 1]), {}, { required: !1, value: '' })),
                               )
-                            })(O),
+                            })(m),
                           )
                         },
                         style: Ht.addFieldText,
@@ -3093,14 +3126,14 @@
                     )
                   : null,
               ),
-              c &&
-                Q.a.createElement(
+              E &&
+                q.a.createElement(
                   _e.a,
-                  { style: [Ne.contentContainer, Ne.checkboxContainer, Ht.checkboxContainer] },
-                  Q.a.createElement(
+                  { style: [de.contentContainer, de.checkboxContainer, Ht.checkboxContainer] },
+                  q.a.createElement(
                     _e.a,
-                    { style: Ne.checkbox },
-                    Q.a.createElement(Gt.a, {
+                    { style: de.checkbox },
+                    q.a.createElement(xt.a, {
                       accessibilityLabelledBy: Vt,
                       checked: U,
                       onChange: function () {
@@ -3108,22 +3141,22 @@
                       },
                     }),
                   ),
-                  Q.a.createElement(
+                  q.a.createElement(
                     _e.a,
-                    { nativeID: Vt, style: Ne.checkboxText },
-                    Q.a.createElement(pe.b, { color: 'gray700' }, c),
+                    { nativeID: Vt, style: de.checkboxText },
+                    q.a.createElement(pe.b, { color: 'gray700' }, E),
                   ),
                 ),
             ),
-            Q.a.createElement(
+            q.a.createElement(
               Ae.a,
               {
-                disabled: G,
+                disabled: x,
                 onClick: function () {
                   var e = (function (e) {
                       var t = {}
                       return (
-                        Object(Re.a)(e).forEach(function (e) {
+                        Object(Ce.a)(e).forEach(function (e) {
                           if (e.dataKey) {
                             var a,
                               n,
@@ -3134,11 +3167,11 @@
                         }),
                         t
                       )
-                    })(O),
+                    })(m),
                     t = Object.keys(e).map(function (e) {
                       return vt(e)
                     })
-                  p(E, e),
+                  p(c, e),
                     r.scribe(
                       P()(
                         P()({}, r.contextualScribeNamespace),
@@ -3160,17 +3193,17 @@
                         },
                       ),
                     ),
-                    R(
+                    C(
                       (function (e) {
-                        return Object(Re.a)(e).map(function (e) {
+                        return Object(Ce.a)(e).map(function (e) {
                           var t
                           return null !== (t = e.value) && void 0 !== t ? t : ''
                         })
-                      })(O),
+                      })(m),
                     ),
                     A(_)
                 },
-                style: Ne.buttonFixed,
+                style: de.buttonFixed,
                 type: 'brandFilled',
               },
               l,
@@ -3179,24 +3212,24 @@
         }),
         jt = Kt,
         zt = a('0KEI'),
-        qt = Object(qe.a)()
+        Qt = Object(Qe.a)()
           .propsFromState(function () {
-            return { errors: Qe.q, status: Qe.r }
+            return { errors: qe.q, status: qe.r }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(zt.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_VERIFICATION_INTAKE_LOADING',
               ),
-              fetchAuthenticationResult: Qe.e,
-              resetAuthenticationResult: Qe.h,
-              resetDocumentIdProcess: Qe.i,
-              setNextFlow: Qe.V,
-              setPreviousFlow: Qe.W,
+              fetchAuthenticationResult: qe.e,
+              resetAuthenticationResult: qe.h,
+              resetDocumentIdProcess: qe.i,
+              setNextFlow: qe.V,
+              setPreviousFlow: qe.W,
             }
           })
           .withAnalytics(),
-        Qt = a('B5iK'),
+        qt = a('B5iK'),
         $t = a('pXBW'),
         Zt = 'https://help.twitter.com/managing-your-account/twitter-verified-accounts',
         Jt = Z.a.abd587d1,
@@ -3209,26 +3242,26 @@
         ra = Z.a.a68b43ed,
         oa = Z.a.b5e3039f,
         la = Z.a.h146703d,
-        ca = Z.a.ee38d0f0,
-        Ea = Z.a.cb97ee3e,
+        Ea = Z.a.ee38d0f0,
+        ca = Z.a.cb97ee3e,
         sa = Z.a.hc371f34,
         Ia = Z.a.b9d0ad9f,
         Ta = Z.a.ge137dce,
-        ua = Z.a.h2b9a5fd,
-        da = Z.a.baccb708,
-        Na = Z.a.feadd98c,
+        Na = Z.a.h2b9a5fd,
+        ua = Z.a.baccb708,
+        da = Z.a.feadd98c,
         _a = Z.a.j7ae97a9,
         pa = Z.a.c368aa8d,
-        Aa = Q.a.createElement(
+        Aa = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'j23c6258' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.c076e32d),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.c076e32d),
         ),
-        ba = Z.a.ded0edad,
-        Ra = Z.a.bebae559,
-        Ca = Z.a.c557161f,
-        ma = Z.a.e2d42628,
-        Oa = Z.a.jc19b4e7,
+        Ra = Z.a.ded0edad,
+        Ca = Z.a.bebae559,
+        ba = Z.a.c557161f,
+        Oa = Z.a.e2d42628,
+        ma = Z.a.jc19b4e7,
         fa = Z.a.fc3ee695,
         Sa = Z.a.i3e65eb4,
         La = Z.a.jd014eba,
@@ -3242,752 +3275,779 @@
           return { title: ra, description: e, label: oa }
         },
         ga = function (e) {
-          return { title: Na, description: e, articleLabelGenerator: ba, addFieldText: Jt }
+          return { title: da, description: e, articleLabelGenerator: Ra, addFieldText: Jt }
         },
         Pa = function (e) {
-          return { title: Ea, description: e, label: la }
+          return { title: ca, description: e, label: la }
         },
-        xa = function (e) {
-          return { title: ma, description: e, label: Oa }
+        Ga = function (e) {
+          return { title: Oa, description: e, label: ma }
         },
-        Ga = Z.a.c6bd60ec,
-        Ya = Z.a.je403ac5,
-        Va = Z.a.ff8c97fb,
-        Ba = Z.a.h4d652fb,
-        Wa = Z.a.c5b72ac5,
-        wa = Z.a.f7ff070c,
-        ka = Z.a.eb7de689,
-        Ha =
+        xa = Z.a.ff2ee0c1,
+        Ya = Z.a.j0e2cfa7,
+        Va = Z.a.hc61adfb,
+        Ba = Z.a.e404203c,
+        Wa = Z.a.d2042392,
+        wa = Z.a.c365dcc5,
+        ka = Z.a.c8ee31da,
+        Ha = Z.a.d27beb9e,
+        Ka =
           ((i = {}),
-          z()(i, te.l.ACTIVISM, Ga),
+          z()(i, te.l.ACTIVISM, xa),
           z()(i, te.l.COMPANY, Ya),
           z()(i, te.l.ENTERTAINMENT, Va),
-          z()(i, te.l.GOVERNMENT, Ba),
-          z()(i, te.l.INFLUENCER_OTHER, Wa),
-          z()(i, te.l.NEWS, wa),
-          z()(i, te.l.SPORTS, ka),
+          z()(i, te.l.GAMING, Ba),
+          z()(i, te.l.GOVERNMENT, Wa),
+          z()(i, te.l.INFLUENCER_OTHER, wa),
+          z()(i, te.l.NEWS, ka),
+          z()(i, te.l.SPORTS, Ha),
           i),
-        Ka = Z.a.cc4b66b5,
-        ja = Q.a.createElement(
+        ja = Z.a.cc4b66b5,
+        za = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'gee7fae8' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.e492eeb4),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.e492eeb4),
         ),
-        za = { title: Ka, description: ja },
+        Qa = { title: ja, description: za },
         qa = Z.a.b37461a4,
-        Qa = Q.a.createElement(
+        $a = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd454b49e' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ece0b9bc),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ece0b9bc),
         ),
-        $a = Z.a.b27325f6,
-        Za = Z.a.a5a6affb,
-        Ja = Q.a.createElement(
+        Za = Z.a.b27325f6,
+        Ja = Z.a.a5a6affb,
+        Xa = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'hd977dd9' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.db252639),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.db252639),
         ),
-        Xa = Z.a.a15326dd,
-        en = Z.a.g704a939,
-        tn = Q.a.createElement(
+        en = Z.a.a15326dd,
+        tn = Z.a.g704a939,
+        an = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'e3432573' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.b25b02c1),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.b25b02c1),
         ),
-        an = {
+        nn = {
           title: ea,
-          description: Ja,
+          description: Xa,
           notEligibleButton: aa,
-          notEligibleDescription: tn,
+          notEligibleDescription: an,
           notEligibleTitle: Da,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Xa, label: sa },
-            { helpText: en, label: fa },
+            { helpText: Ea, label: la },
+            { helpText: en, label: sa },
+            { helpText: tn, label: fa },
           ],
         },
-        nn = Q.a.createElement(
+        rn = Z.a.c6bd60ec,
+        on = Z.a.i97c0925,
+        ln = Z.a.a18c6dfb,
+        En = Z.a.h0b46533,
+        cn = Z.a.ff929feb,
+        sn = Z.a.jf537894,
+        In = {
+          title: qa,
+          description: $a,
+          items: [
+            { helpText: on, label: rn },
+            { helpText: En, label: ln },
+            { helpText: sn, label: cn },
+          ],
+        },
+        Tn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'efd8f6e7' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
         ),
-        rn = Ma(nn),
-        on = Q.a.createElement(
+        Nn = Ma(Tn),
+        un = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'fe54dcfd' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d42d1629),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d42d1629),
         ),
-        ln = Pa(on),
-        cn = { title: da, description: Aa, articleLabelGenerator: ba, addFieldText: Jt },
-        En = Q.a.createElement(
+        dn = Pa(un),
+        _n = { title: ua, description: Aa, articleLabelGenerator: Ra, addFieldText: Jt },
+        pn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ie26d72d' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ccadfc84),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ccadfc84),
         ),
-        sn = { title: ha, description: En, label: ya, confirmationText: La },
-        In = Z.a.d2ea2049,
-        Tn = Z.a.h753ddd2,
-        un = {
+        An = { title: ha, description: pn, label: ya, confirmationText: La },
+        Rn = Z.a.d2ea2049,
+        Cn = Z.a.h753ddd2,
+        bn = {
           title: qa,
-          description: Qa,
+          description: $a,
           items: [
-            { helpText: Za, label: $a },
-            { helpText: Tn, label: In },
+            { helpText: Ja, label: Za },
+            { helpText: Cn, label: Rn },
           ],
         },
-        dn = Q.a.createElement(
+        On = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'af3fe861' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ddb47f56),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ddb47f56),
         ),
-        Nn = Z.a.a15326dd,
-        _n = Q.a.createElement(
+        mn = Z.a.a15326dd,
+        fn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'a08d6af3' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.bf9e181a),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.bf9e181a),
         ),
-        pn = {
+        Sn = {
           title: ea,
-          description: dn,
+          description: On,
           notEligibleButton: aa,
-          notEligibleDescription: _n,
+          notEligibleDescription: fn,
           notEligibleTitle: Da,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Nn, label: sa },
+            { helpText: Ea, label: la },
+            { helpText: mn, label: sa },
           ],
         },
-        An = Q.a.createElement(
+        Ln = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'efd8f6e7' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
         ),
-        bn = Ma(An),
-        Rn = Q.a.createElement(
+        hn = Ma(Ln),
+        yn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'fe54dcfd' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d42d1629),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d42d1629),
         ),
-        Cn = Pa(Rn),
-        mn = { title: da, description: Aa, articleLabelGenerator: ba, addFieldText: Jt },
-        On = (Z.a.I18NFormatMessage, pe.b, Z.a.ccadfc84, Z.a.ff929feb),
-        fn = Z.a.jf537894,
-        Sn = Z.a.i3e6aaa5,
-        Ln = Z.a.bbcbb9e6,
-        hn = {
+        Dn = Pa(yn),
+        Fn = { title: ua, description: Aa, articleLabelGenerator: Ra, addFieldText: Jt },
+        Un = (Z.a.I18NFormatMessage, pe.b, Z.a.ccadfc84, Z.a.i3e6aaa5),
+        vn = Z.a.bbcbb9e6,
+        Mn = {
           title: qa,
-          description: Qa,
+          description: $a,
           items: [
-            { helpText: fn, label: On },
-            { helpText: Ln, label: Sn },
+            { helpText: sn, label: cn },
+            { helpText: En, label: ln },
+            { helpText: vn, label: Un },
           ],
         },
-        yn = Q.a.createElement(
+        gn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'f774e39d' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.e8e39f94),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.e8e39f94),
         ),
-        Dn = {
+        Pn = {
           title: ea,
-          description: yn,
+          description: gn,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Ca, label: Ra },
-            { helpText: ua, label: sa },
+            { helpText: Ea, label: la },
+            { helpText: ba, label: Ca },
+            { helpText: Na, label: sa },
           ],
         },
-        Fn = Q.a.createElement(
+        Gn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd8510869' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.e126dd3e),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.e126dd3e),
         ),
-        Un = Ma(Fn),
-        vn = Q.a.createElement(
+        xn = Ma(Gn),
+        Yn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'h75e3640' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.gbdf1325),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.gbdf1325),
         ),
-        Mn = Pa(vn),
-        gn = Q.a.createElement(
+        Vn = Pa(Yn),
+        Bn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'de6d69a1' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.b0abbb16),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.b0abbb16),
         ),
-        Pn = xa(gn),
-        xn = Q.a.createElement(
+        Wn = Ga(Bn),
+        wn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'be0e8fda' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.g4e815f3),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.g4e815f3),
         ),
-        Gn = ga(xn),
-        Yn = Q.a.createElement(
+        kn = ga(wn),
+        Hn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'baed7213' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.i560665d),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.i560665d),
         ),
-        Vn = Z.a.j0bc23f3,
-        Bn = { title: ta, description: Yn, confirmationText: Vn },
-        Wn = Q.a.createElement(
+        Kn = Z.a.j0bc23f3,
+        jn = { title: ta, description: Hn, confirmationText: Kn },
+        zn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'c5d688ce' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.eb8eeaf0),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.eb8eeaf0),
         ),
-        wn = {
+        Qn = {
           title: ea,
-          description: Wn,
+          description: zn,
           items: [
             { helpText: pa, label: _a },
             { helpText: Sa, label: fa },
           ],
         },
-        kn = Q.a.createElement(
+        qn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'fce3e22d' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h486f753),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h486f753),
         ),
-        Hn = ga(kn),
-        Kn = Q.a.createElement(
+        $n = ga(qn),
+        Zn = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'f1b276f0' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a77ed149),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a77ed149),
         ),
-        jn = { title: Xt, description: Kn, label: fa, confirmationText: La },
-        zn = Z.a.aa6228de,
-        qn = Z.a.d5b3cbc9,
-        Qn = Z.a.b5a3e590,
-        $n = Z.a.e484f794,
-        Zn = Z.a.b8d8ea64,
-        Jn = Z.a.ff27db3c,
-        Xn = Q.a.createElement(
+        Jn = { title: Xt, description: Zn, label: fa, confirmationText: La },
+        Xn = Z.a.aa6228de,
+        ei = Z.a.d5b3cbc9,
+        ti = Z.a.b5a3e590,
+        ai = Z.a.e484f794,
+        ni = Z.a.b8d8ea64,
+        ii = Z.a.ff27db3c,
+        ri = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'e2465096' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.jc7215cd),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.jc7215cd),
         ),
-        ei = Ma(Xn),
-        ti = Q.a.createElement(
+        oi = Ma(ri),
+        li = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'g83bcecc' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.gdb5ae61),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.gdb5ae61),
         ),
-        ai = ga(ti),
-        ni = Q.a.createElement(
+        Ei = ga(li),
+        ci = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'f3016c6f' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.icb5913e),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.icb5913e),
         ),
-        ii = {
+        si = {
           title: ea,
-          description: ni,
+          description: ci,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Ca, label: Ra },
-            { helpText: ua, label: sa },
+            { helpText: Ea, label: la },
+            { helpText: ba, label: Ca },
+            { helpText: Na, label: sa },
           ],
         },
-        ri = Q.a.createElement(
+        Ii = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'h74144bd' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.af819831),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.af819831),
         ),
-        oi = xa(ri),
-        li = Q.a.createElement(
+        Ti = Ga(Ii),
+        Ni = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'jef5dfc5' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d35525bf),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d35525bf),
         ),
-        ci = Pa(li),
-        Ei = {
+        ui = Pa(Ni),
+        di = {
           title: qa,
-          description: Qa,
+          description: $a,
           items: [
-            { helpText: qn, label: zn },
-            { helpText: $n, label: Qn },
-            { helpText: Jn, label: Zn },
+            { helpText: ei, label: Xn },
+            { helpText: Ja, label: Za },
+            { helpText: ai, label: ti },
+            { helpText: ii, label: ni },
           ],
         },
-        si = Q.a.createElement(
+        _i = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'gf5a4309' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.cb181ed0),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.cb181ed0),
         ),
-        Ii = {
+        pi = {
           title: ea,
-          description: si,
+          description: _i,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Ca, label: Ra },
-            { helpText: ua, label: sa },
+            { helpText: Ea, label: la },
+            { helpText: ba, label: Ca },
+            { helpText: Na, label: sa },
           ],
         },
-        Ti = Q.a.createElement(
+        Ai = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'g2e175b1' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.f6c3d3ff),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.f6c3d3ff),
         ),
-        ui = Ma(Ti),
-        di = Q.a.createElement(
+        Ri = Ma(Ai),
+        Ci = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'efc369c2' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.bad6af53),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.bad6af53),
         ),
-        Ni = ga(di),
-        _i = Q.a.createElement(
+        bi = ga(Ci),
+        Oi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ff03f07c' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.af0cb1b5),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.af0cb1b5),
         ),
-        pi = xa(_i),
-        Ai = Q.a.createElement(
+        mi = Ga(Oi),
+        fi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'a3e9dde2' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h84f1fe0),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h84f1fe0),
         ),
-        bi = Pa(Ai),
-        Ri = Q.a.createElement(
+        Si = Pa(fi),
+        Li = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'c2b8fb3c' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.bd70d5d0),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.bd70d5d0),
         ),
-        Ci = Z.a.c0e57cb2,
-        mi = Q.a.createElement(
+        hi = Z.a.c0e57cb2,
+        yi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'da6e5b18' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h9ec0778),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h9ec0778),
         ),
-        Oi = Z.a.f3c605b6,
-        fi = {
+        Di = Z.a.f3c605b6,
+        Fi = {
           title: ea,
-          description: Ri,
+          description: Li,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
+            { helpText: Ea, label: la },
             { helpText: Ta, label: sa },
           ],
         },
-        Si = { title: Ci, description: mi, items: [{ label: Oi }] },
-        Li = Q.a.createElement(
+        Ui = { title: hi, description: yi, items: [{ label: Di }] },
+        vi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'efd8f6e7' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.j6ef6afa),
         ),
-        hi = { title: ra, description: Li, label: oa },
-        yi = Q.a.createElement(
+        Mi = { title: ra, description: vi, label: oa },
+        gi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'bb47d2b9' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.f7998564),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.f7998564),
         ),
-        Di = { title: Ea, description: yi, label: la },
-        Fi = { title: da, description: Aa, articleLabelGenerator: ba, addFieldText: Jt },
-        Ui = Q.a.createElement(
+        Pi = { title: ca, description: gi, label: la },
+        Gi = { title: ua, description: Aa, articleLabelGenerator: Ra, addFieldText: Jt },
+        xi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'db930fb2' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.b4e93970),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.b4e93970),
         ),
-        vi = Z.a.h042d1a5,
-        Mi = Z.a.d2310f0b,
-        gi = {
+        Yi = Z.a.h042d1a5,
+        Vi = Z.a.d2310f0b,
+        Bi = {
           title: ea,
-          description: Ui,
+          description: xi,
           items: [
-            { description: Mi, label: vi },
+            { description: Vi, label: Yi },
             { description: Ta, label: _a },
           ],
         },
-        Pi = Z.a.ba04b4c1,
-        xi = Q.a.createElement(
+        Wi = Z.a.ba04b4c1,
+        wi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'dc263ec0' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.jb3e663d),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.jb3e663d),
         ),
-        Gi = { title: Pi, description: xi, label: vi },
-        Yi = { title: Na, description: Aa, articleLabelGenerator: ba, addFieldText: Jt },
-        Vi = Q.a.createElement(
+        ki = { title: Wi, description: wi, label: Yi },
+        Hi = { title: da, description: Aa, articleLabelGenerator: Ra, addFieldText: Jt },
+        Ki = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd8b21ebb' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a7a51b91),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a7a51b91),
         ),
-        Bi = { title: va, description: Vi, label: Fa },
-        Wi = Q.a.createElement(
+        ji = { title: va, description: Ki, label: Fa },
+        zi = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'i3b4217a' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.c58d2c6b),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.c58d2c6b),
         ),
-        wi = Z.a.i9b124b6,
-        ki = Z.a.f84a99ee,
-        Hi = Z.a.j2cb5f50,
-        Ki = Z.a.j2472894,
-        ji = Z.a.ha44c13f,
-        zi = Z.a.j8ae9d40,
-        qi = {
+        Qi = Z.a.i9b124b6,
+        qi = Z.a.f84a99ee,
+        $i = Z.a.j2cb5f50,
+        Zi = Z.a.j2472894,
+        Ji = Z.a.ha44c13f,
+        Xi = Z.a.j8ae9d40,
+        er = {
           title: qa,
-          description: Wi,
+          description: zi,
           items: [
-            { helpText: ki, label: wi },
-            { helpText: Ki, label: Hi },
-            { helpText: zi, label: ji },
+            { helpText: qi, label: Qi },
+            { helpText: Zi, label: $i },
+            { helpText: Xi, label: Ji },
           ],
         },
-        Qi = Z.a.ef1d6175,
-        $i = Z.a.f54ba6e6,
-        Zi = Z.a.dd85d0af,
-        Ji = Z.a.f0058c60,
-        Xi = Z.a.f420a711,
-        er = Z.a.fb97d22b,
-        tr = {
-          candidateTitle: Qi,
-          candidateDescription: $i,
-          officialTitle: Zi,
-          officialDescription: Ji,
-          confirmButtonLabel: Xi,
-          declineButtonLabel: er,
+        tr = Z.a.ef1d6175,
+        ar = Z.a.f54ba6e6,
+        nr = Z.a.dd85d0af,
+        ir = Z.a.f0058c60,
+        rr = Z.a.f420a711,
+        or = Z.a.fb97d22b,
+        lr = {
+          candidateTitle: tr,
+          candidateDescription: ar,
+          officialTitle: nr,
+          officialDescription: ir,
+          confirmButtonLabel: rr,
+          declineButtonLabel: or,
         },
-        ar = Z.a.e16b1cc8,
-        nr = Z.a.cf2ee92e,
-        ir = Z.a.g544885e,
-        rr = Z.a.bd0b4542,
-        or = Z.a.i45b224c,
-        lr = Z.a.fba1dd66,
-        cr = Z.a.e95c44dd,
-        Er = Z.a.fa5e15e1,
-        sr = {
-          candidateTitle: ar,
-          candidateDescription: nr,
-          officeTitle: ir,
-          officeDescription: rr,
-          officialTitle: or,
-          officialDescription: lr,
-          confirmButtonLabel: cr,
-          declineButtonLabel: Er,
+        Er = Z.a.e16b1cc8,
+        cr = Z.a.cf2ee92e,
+        sr = Z.a.g544885e,
+        Ir = Z.a.bd0b4542,
+        Tr = Z.a.i45b224c,
+        Nr = Z.a.fba1dd66,
+        ur = Z.a.e95c44dd,
+        dr = Z.a.fa5e15e1,
+        _r = {
+          candidateTitle: Er,
+          candidateDescription: cr,
+          officeTitle: sr,
+          officeDescription: Ir,
+          officialTitle: Tr,
+          officialDescription: Nr,
+          confirmButtonLabel: ur,
+          declineButtonLabel: dr,
         },
-        Ir = Q.a.createElement(
+        pr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ja62479f' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.c04b4b1b),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.c04b4b1b),
         ),
-        Tr = ga(Ir),
-        ur = Q.a.createElement(
+        Ar = ga(pr),
+        Rr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'f28bbbb0' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a60039a6),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a60039a6),
         ),
-        dr = ga(ur),
-        Nr = Q.a.createElement(
+        Cr = ga(Rr),
+        br = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'b229f4b8' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ba75f2ad),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ba75f2ad),
         ),
-        _r = ga(Nr),
-        pr = Z.a.jdf47e8d,
-        Ar = Z.a.eeec7315,
-        br = Q.a.createElement(
+        Or = ga(br),
+        mr = Z.a.jdf47e8d,
+        fr = Z.a.eeec7315,
+        Sr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ec71430d' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d9486fbf),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d9486fbf),
         ),
-        Rr = { title: Ar, description: br, websiteLabel: pr },
-        Cr = Z.a.b163b653,
-        mr = Z.a.d2378d34,
-        Or = Q.a.createElement(
+        Lr = { title: fr, description: Sr, websiteLabel: mr },
+        hr = Z.a.b163b653,
+        yr = Z.a.d2378d34,
+        Dr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'f9e2b0f2' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.e3b02224),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.e3b02224),
         ),
-        fr = { title: mr, description: Or, websiteLabel: Cr },
-        Sr = Q.a.createElement(
+        Fr = { title: yr, description: Dr, websiteLabel: hr },
+        Ur = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'a394654e' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.e332fb11),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.e332fb11),
         ),
-        Lr = { title: Xt, description: Sr, websiteLabel: Cr },
-        hr = Z.a.a05b8445,
-        yr = Z.a.hdad12b1,
-        Dr = Z.a.a18c6dfb,
-        Fr = Z.a.h0b46533,
-        Ur = Z.a.d2d7af4b,
-        vr = Z.a.d83e51db,
-        Mr = {
+        vr = { title: Xt, description: Ur, websiteLabel: hr },
+        Mr = Z.a.a05b8445,
+        gr = Z.a.hdad12b1,
+        Pr = Z.a.d2d7af4b,
+        Gr = Z.a.d83e51db,
+        xr = {
           title: qa,
-          description: Qa,
+          description: $a,
           items: [
-            { description: Fr, label: Dr },
-            { description: yr, label: hr },
-            { description: vr, label: Ur },
+            { description: En, label: ln },
+            { description: gr, label: Mr },
+            { description: Gr, label: Pr },
           ],
         },
-        gr = Z.a.g708cbdb,
-        Pr = Z.a.b107ee5b,
-        xr = Z.a.e95c44dd,
-        Gr = Z.a.fa5e15e1,
-        Yr = { title: gr, description: Pr, confirmButtonLabel: xr, declineButtonLabel: Gr },
-        Vr = Q.a.createElement(
+        Yr = Z.a.g708cbdb,
+        Vr = Z.a.b107ee5b,
+        Br = Z.a.e95c44dd,
+        Wr = Z.a.fa5e15e1,
+        wr = { title: Yr, description: Vr, confirmButtonLabel: Br, declineButtonLabel: Wr },
+        kr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'dcb0da53' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h04c272b),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h04c272b),
         ),
-        Br = Z.a.e8746826,
-        Wr = { title: ta, description: Vr, confirmationText: Br },
-        wr = Z.a.jc09b420,
-        kr = Z.a.gfbd7e58,
-        Hr = Z.a.e95c44dd,
-        Kr = Z.a.fa5e15e1,
-        jr = { headline: wr, subtext: kr, actionLabel: Hr, tertiaryActionLabel: Kr },
-        zr = Q.a.createElement(
+        Hr = Z.a.e8746826,
+        Kr = { title: ta, description: kr, confirmationText: Hr },
+        jr = Z.a.jc09b420,
+        zr = Z.a.gfbd7e58,
+        Qr = Z.a.e95c44dd,
+        qr = Z.a.fa5e15e1,
+        $r = { headline: jr, subtext: zr, actionLabel: Qr, tertiaryActionLabel: qr },
+        Zr = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd82a96af' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.j331c658),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.j331c658),
         ),
-        qr = Z.a.h0ad4c9d,
-        Qr = Z.a.a6553b5f,
-        $r = Z.a.a29b2987,
-        Zr = Z.a.ab4eae60,
-        Jr = {
+        Jr = Z.a.h0ad4c9d,
+        Xr = Z.a.a6553b5f,
+        eo = Z.a.a29b2987,
+        to = Z.a.ab4eae60,
+        ao = {
           title: ea,
-          description: zr,
+          description: Zr,
           items: [
-            { description: Qr, label: qr },
-            { description: Zr, label: $r },
+            { description: Xr, label: Jr },
+            { description: to, label: eo },
           ],
         },
-        Xr = Q.a.createElement(
+        no = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd47b4101' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h02fe64e),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h02fe64e),
         ),
-        eo = Z.a.b3fac982,
-        to = { title: Xt, description: Xr, websiteLabel: Fa, confirmationText: eo },
-        ao = Z.a.e26dc9e2,
-        no = Q.a.createElement(
+        io = Z.a.b3fac982,
+        ro = { title: Xt, description: no, websiteLabel: Fa, confirmationText: io },
+        oo = Z.a.e26dc9e2,
+        lo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'a3540593' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a7df4b84),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a7df4b84),
         ),
-        io = { title: ao, description: no, articleNumerationLabelGenerator: ba, addFieldText: Jt },
-        ro = Z.a.e164df2d,
-        oo = Z.a.i80ff05e,
-        lo = Z.a.cf7482eb,
-        co = Z.a.cb70b893,
-        Eo = { title: ro, description: oo, actionLabel: lo, tertiaryActionLabel: co },
-        so = Q.a.createElement(
+        Eo = { title: oo, description: lo, articleNumerationLabelGenerator: Ra, addFieldText: Jt },
+        co = Z.a.e164df2d,
+        so = Z.a.i80ff05e,
+        Io = Z.a.cf7482eb,
+        To = Z.a.cb70b893,
+        No = { title: co, description: so, actionLabel: Io, tertiaryActionLabel: To },
+        uo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'edb782e6' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d575e579),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d575e579),
         ),
-        Io = {
+        _o = {
           title: ea,
-          description: so,
+          description: uo,
           items: [
             { description: ia, label: na },
-            { description: ca, label: la },
-            { description: Ca, label: Ra },
+            { description: Ea, label: la },
+            { description: ba, label: Ca },
             { description: Ia, label: sa },
           ],
         },
-        To = Q.a.createElement(
+        po = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'cc16af2c' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ede35c04),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ede35c04),
         ),
-        uo = Ma(To),
-        No = Q.a.createElement(
+        Ao = Ma(po),
+        Ro = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'b42b7001' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d5dedb7a),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d5dedb7a),
         ),
-        _o = Pa(No),
-        po = Q.a.createElement(
+        Co = Pa(Ro),
+        bo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'fd2c6f62' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ab604a66),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ab604a66),
         ),
-        Ao = xa(po),
-        bo = Q.a.createElement(
+        Oo = Ga(bo),
+        mo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ec7027cc' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.i532d121),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.i532d121),
         ),
-        Ro = ga(bo),
-        Co = Z.a.fcb96cfc,
-        mo = Z.a.ddc7d64a,
-        Oo = Z.a.c4e0d346,
-        fo = Z.a.e3ce81fa,
-        So = Z.a.b2808f47,
-        Lo = Z.a.jaa90f86,
-        ho = {
+        fo = ga(mo),
+        So = Z.a.fcb96cfc,
+        Lo = Z.a.ddc7d64a,
+        ho = Z.a.c4e0d346,
+        yo = Z.a.e3ce81fa,
+        Do = Z.a.b2808f47,
+        Fo = Z.a.db7b3557,
+        Uo = {
           title: qa,
-          description: Qa,
+          description: $a,
           items: [
-            { helpText: mo, label: Co },
-            { helpText: fo, label: Oo },
-            { helpText: Lo, label: So },
+            { helpText: Fo, label: Do },
+            { helpText: En, label: ln },
+            { helpText: Ja, label: Za },
+            { helpText: sn, label: cn },
           ],
         },
-        yo = Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'a0a9f835' }),
-        Do = Z.a.bbd9a911,
-        Fo = Q.a.createElement(
+        vo = {
+          title: qa,
+          description: $a,
+          items: [
+            { helpText: Lo, label: So },
+            { helpText: yo, label: ho },
+            { helpText: En, label: ln },
+            { helpText: Ja, label: Za },
+          ],
+        },
+        Mo = q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'a0a9f835' }),
+        go = Z.a.bbd9a911,
+        Po = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'iba551d5' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.f22a6d0c),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.f22a6d0c),
         ),
-        Uo = { title: ta, description: yo, confirmationText: Do },
-        vo = Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'h515e868' }),
-        Mo = { title: ta, description: vo, confirmationText: Do },
-        go = { headline: Da, subtext: Fo, actionLabel: aa },
-        Po = Q.a.createElement(
+        Go = { title: ta, description: Mo, confirmationText: go },
+        xo = q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'h515e868' }),
+        Yo = { title: ta, description: xo, confirmationText: go },
+        Vo = { headline: Da, subtext: Po, actionLabel: aa },
+        Bo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd2cd7f89' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.i78c9fd3),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.i78c9fd3),
         ),
-        xo = Z.a.he9c5637,
-        Go = {
+        Wo = Z.a.he9c5637,
+        wo = {
           title: ea,
-          description: Po,
+          description: Bo,
           items: [
             { helpText: ia, label: na },
-            { helpText: ca, label: la },
-            { helpText: Ca, label: Ra },
-            { helpText: xo, label: Ua },
-            { helpText: ua, label: sa },
+            { helpText: Ea, label: la },
+            { helpText: ba, label: Ca },
+            { helpText: Wo, label: Ua },
+            { helpText: Na, label: sa },
           ],
         },
-        Yo = Q.a.createElement(
+        ko = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'c68614a2' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.i78b0bd0),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.i78b0bd0),
         ),
-        Vo = Ma(Yo),
-        Bo = Q.a.createElement(
+        Ho = Ma(ko),
+        Ko = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'b4ea622e' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.i78103dc),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.i78103dc),
         ),
-        Wo = Pa(Bo),
-        wo = Q.a.createElement(
+        jo = Pa(Ko),
+        zo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'acab99f6' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.ebfa8bb3),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.ebfa8bb3),
         ),
-        ko = xa(wo),
-        Ho = Q.a.createElement(
+        Qo = Ga(zo),
+        qo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'df0b2577' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.fcfad60b),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.fcfad60b),
         ),
-        Ko = { title: va, description: Ho, label: Fa },
-        jo = Q.a.createElement(
+        $o = { title: va, description: qo, label: Fa },
+        Zo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'jfda4c28' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a5e8a43a),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a5e8a43a),
         ),
-        zo = ga(jo),
-        qo = Q.a.createElement(
+        Jo = ga(Zo),
+        Xo = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'g3299df1' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.d9bd3821),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.d9bd3821),
         ),
-        Qo = Z.a.bf06e1d5,
-        $o = Z.a.e241d35d,
-        Zo = {
+        el = Z.a.bf06e1d5,
+        tl = Z.a.e241d35d,
+        al = {
           title: ea,
-          description: qo,
+          description: Xo,
           items: [
-            { description: $o, label: _a },
-            { description: Qo, label: Ua },
-          ],
-        },
-        Jo = Q.a.createElement(
-          Z.a.I18NFormatMessage,
-          { $i18n: 'id6bbc01' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.a67f27bc),
-        ),
-        Xo = Z.a.ad456030,
-        el = Z.a.hbe2e65b,
-        tl = {
-          title: ea,
-          description: Jo,
-          items: [
-            { description: Xo, label: _a },
+            { description: tl, label: _a },
             { description: el, label: Ua },
           ],
         },
-        al = Q.a.createElement(
+        nl = q.a.createElement(
+          Z.a.I18NFormatMessage,
+          { $i18n: 'id6bbc01' },
+          q.a.createElement(pe.b, { link: Zt }, Z.a.a67f27bc),
+        ),
+        il = Z.a.ad456030,
+        rl = Z.a.hbe2e65b,
+        ol = {
+          title: ea,
+          description: nl,
+          items: [
+            { description: il, label: _a },
+            { description: rl, label: Ua },
+          ],
+        },
+        ll = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'fbe119c5' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.b8be7ad9),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.b8be7ad9),
         ),
-        nl = { title: va, description: al, websiteLabel: Fa },
-        il = ga(Aa),
-        rl = Q.a.createElement(
+        El = { title: va, description: ll, websiteLabel: Fa },
+        cl = ga(Aa),
+        sl = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'da0e7f32' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.fa437e4d),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.fa437e4d),
         ),
-        ol = { title: va, description: rl, websiteLabel: Fa },
-        ll = ga(Aa),
-        cl = Z.a.j24c37b2,
-        El = Z.a.j3da4de9,
-        sl = Q.a.createElement(
+        Il = { title: va, description: sl, websiteLabel: Fa },
+        Tl = ga(Aa),
+        Nl = Z.a.j24c37b2,
+        ul = Z.a.j3da4de9,
+        dl = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'ca20e39f' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.b436b100),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.b436b100),
         ),
-        Il = Z.a.ff2ee0c1,
-        Tl = Z.a.af39265e,
-        ul = Z.a.hc61adfb,
-        dl = Z.a.d2042392,
-        Nl = Z.a.c365dcc5,
-        _l = Z.a.c8ee31da,
-        pl = Z.a.bb51cd79,
-        Al =
+        _l = Z.a.ff2ee0c1,
+        pl = Z.a.af39265e,
+        Al = Z.a.hc61adfb,
+        Rl = Z.a.d2042392,
+        Cl = Z.a.c365dcc5,
+        bl = Z.a.c8ee31da,
+        Ol = Z.a.bb51cd79,
+        ml =
           ((r = {}),
-          z()(r, te.l.ACTIVISM, Il),
-          z()(r, te.l.COMPANY, Tl),
-          z()(r, te.l.ENTERTAINMENT, ul),
-          z()(r, te.l.GOVERNMENT, dl),
-          z()(r, te.l.INFLUENCER_OTHER, Nl),
-          z()(r, te.l.NEWS, _l),
-          z()(r, te.l.SPORTS, pl),
+          z()(r, te.l.ACTIVISM, _l),
+          z()(r, te.l.COMPANY, pl),
+          z()(r, te.l.ENTERTAINMENT, Al),
+          z()(r, te.l.GAMING, Ol),
+          z()(r, te.l.GOVERNMENT, Rl),
+          z()(r, te.l.INFLUENCER_OTHER, Cl),
+          z()(r, te.l.NEWS, bl),
+          z()(r, te.l.SPORTS, Ol),
           r),
-        bl = Z.a.d2ea2049,
-        Rl =
+        fl = Z.a.d2ea2049,
+        Sl =
           ((o = {}),
-          z()(o, te.n.ACTIVIST, Ga),
-          z()(o, te.n.CANDIDATE, Hi),
-          z()(o, te.n.COMPANY, On),
-          z()(o, te.n.CONTENT_CREATOR, $a),
-          z()(o, te.n.ENTERTAINMENT_COMPANY, zn),
-          z()(o, te.n.ENTERTAINMENT_INDIVIDUAL, Qn),
-          z()(o, te.n.EXECUTIVE, Sn),
-          z()(o, te.n.FREELANCER, hr),
-          z()(o, te.n.GAMING_INDIVIDUAL, So),
-          z()(o, te.n.INFLUENTIAL_INDIVIDUAL, bl),
-          z()(o, te.n.JOURNALIST, Dr),
-          z()(o, te.n.OFFICE, ji),
-          z()(o, te.n.OFFICIAL, wi),
-          z()(o, te.n.ORGANIZATION, Ur),
-          z()(o, te.n.PRODUCTION, Zn),
-          z()(o, te.n.SPORTS_ENTITY, Oo),
-          z()(o, te.n.SPORTS_INDIVIDUAL, Co),
+          z()(o, te.n.ACTIVIST, rn),
+          z()(o, te.n.CANDIDATE, $i),
+          z()(o, te.n.COMPANY, cn),
+          z()(o, te.n.CONTENT_CREATOR, Za),
+          z()(o, te.n.ENTERTAINMENT_COMPANY, Xn),
+          z()(o, te.n.ENTERTAINMENT_INDIVIDUAL, ti),
+          z()(o, te.n.EXECUTIVE, Un),
+          z()(o, te.n.FREELANCER, Mr),
+          z()(o, te.n.GAMING_INDIVIDUAL, Do),
+          z()(o, te.n.INFLUENTIAL_INDIVIDUAL, fl),
+          z()(o, te.n.JOURNALIST, ln),
+          z()(o, te.n.OFFICE, Ji),
+          z()(o, te.n.OFFICIAL, Qi),
+          z()(o, te.n.ORGANIZATION, Pr),
+          z()(o, te.n.PRODUCTION, ni),
+          z()(o, te.n.SPORTS_ENTITY, ho),
+          z()(o, te.n.SPORTS_INDIVIDUAL, So),
           o),
-        Cl = Z.a.fc2a5c92,
-        ml = Z.a.jf4b6f7f,
-        Ol = El,
-        fl = sl,
-        Sl = Z.a.d338f53e,
-        Ll = function (e) {
+        Ll = Z.a.fc2a5c92,
+        hl = Z.a.jf4b6f7f,
+        yl = ul,
+        Dl = dl,
+        Fl = Z.a.d338f53e,
+        Ul = function (e) {
           var t = e.error,
             a = e.onButtonClick,
             n = t instanceof $t.a ? t.status : void 0,
-            i = Sl,
-            r = Cl,
-            o = ml
+            i = Fl,
+            r = Ll,
+            o = hl
           return (
-            429 === n && ((i = cl), (r = Ol), (o = fl)),
-            Q.a.createElement(J.a, {
+            429 === n && ((i = Nl), (r = yl), (o = Dl)),
+            q.a.createElement(J.a, {
               actionLabel: i,
               graphicDisplayMode: 'none',
               headline: r,
@@ -3998,21 +4058,21 @@
             })
           )
         },
-        hl = Z.a.h2d4ba55,
-        yl = Z.a.i2051842,
-        Dl = (function (e) {
+        vl = Z.a.h2d4ba55,
+        Ml = Z.a.i2051842,
+        gl = (function (e) {
           k()(a, e)
           var t = K()(a)
           function a(e) {
             var n
             return (
-              G()(this, a),
+              x()(this, a),
               (n = t.call(this, e)),
               z()(W()(n), '_handleErrorButtonClick', function () {
                 n.props.resetDocumentIdProcess(), n.props.setPreviousFlow()
               }),
               z()(W()(n), '_isPollingDone', function (e) {
-                return e === te.o.NOT_STARTED || e === te.o.CONCLUSIVE || e === te.o.INCONCLUSIVE
+                return e === te.p.NOT_STARTED || e === te.p.CONCLUSIVE || e === te.p.INCONCLUSIVE
               }),
               (n.state = { retryCount: 0 }),
               n
@@ -4028,7 +4088,7 @@
                     a = t.createLocalApiErrorHandler,
                     n = t.fetchAuthenticationResult
                   n().catch(a()),
-                    (this._pollingTimer = new Qt.b(5e3).interval(function () {
+                    (this._pollingTimer = new qt.b(5e3).interval(function () {
                       n().catch(function () {
                         e.setState(function (e) {
                           return { retryCount: e.retryCount + 1 }
@@ -4051,7 +4111,7 @@
                     (n.length !== e.errors.length && n.length) ||
                     (o !== t.retryCount && 5 === o)) &&
                     this._stopTimer(),
-                    r === e.status || r !== te.o.CONCLUSIVE || n.length || (this._handleScribe('success'), i())
+                    r === e.status || r !== te.p.CONCLUSIVE || n.length || (this._handleScribe('success'), i())
                 },
               },
               {
@@ -4079,7 +4139,7 @@
                   var e = this.props,
                     t = e.errors,
                     a = e.status
-                  return t.length || a === te.o.INCONCLUSIVE || a === te.o.NOT_STARTED || 5 === this.state.retryCount
+                  return t.length || a === te.p.INCONCLUSIVE || a === te.p.NOT_STARTED || 5 === this.state.retryCount
                 },
               },
               {
@@ -4093,33 +4153,33 @@
                 value: function () {
                   return (
                     this._handleScribe('failure'),
-                    Q.a.createElement(Ll, { onButtonClick: this._handleErrorButtonClick })
+                    q.a.createElement(Ul, { onButtonClick: this._handleErrorButtonClick })
                   )
                 },
               },
               {
                 key: '_renderLoading',
                 value: function () {
-                  return Q.a.createElement(
+                  return q.a.createElement(
                     _e.a,
-                    { style: Ne.largeBannerContainer },
-                    Q.a.createElement(ke, { isNarrow: this.props.isNarrow, type: Be.LOADING }),
-                    Q.a.createElement(
+                    { style: de.largeBannerContainer },
+                    q.a.createElement(ke, { isNarrow: this.props.isNarrow, type: Be.LOADING }),
+                    q.a.createElement(
                       _e.a,
-                      { style: [Ne.container, Ne.verticalCenter, this.props.isNarrow && Ne.narrowContainer] },
-                      Q.a.createElement(
+                      { style: [de.container, de.verticalCenter, this.props.isNarrow && de.narrowContainer] },
+                      q.a.createElement(
                         pe.b,
                         {
                           accessibilityLevel: 1,
                           accessibilityRole: 'heading',
-                          nativeID: ue.b,
+                          nativeID: Ne.b,
                           size: 'title4',
-                          style: Ne.header,
+                          style: de.header,
                           weight: 'heavy',
                         },
-                        hl,
+                        vl,
                       ),
-                      Q.a.createElement(pe.b, { color: 'gray700' }, yl),
+                      q.a.createElement(pe.b, { color: 'gray700' }, Ml),
                     ),
                   )
                 },
@@ -4133,73 +4193,73 @@
             ]),
             a
           )
-        })(Q.a.Component),
-        Fl = qt(Dl),
-        Ul = Fl,
-        vl = a('AspN'),
-        Ml = function (e) {
-          var t = Object(Qe.u)(e)
-          return t ? Object(vl.k)(e, t)[0] : void 0
+        })(q.a.Component),
+        Pl = Qt(gl),
+        Gl = Pl,
+        xl = a('AspN'),
+        Yl = function (e) {
+          var t = Object(qe.u)(e)
+          return t ? Object(xl.k)(e, t)[0] : void 0
         },
-        gl = function (e) {
-          var t = Object(Qe.F)(e)
-          return t ? Object(vl.k)(e, t)[0] : void 0
+        Vl = function (e) {
+          var t = Object(qe.F)(e)
+          return t ? Object(xl.k)(e, t)[0] : void 0
         },
-        Pl = Object(qe.a)()
+        Bl = Object(Qe.a)()
           .propsFromState(function () {
             return {
-              backID: Qe.u,
-              backImage: Ml,
-              documentFormats: Qe.A,
-              frontID: Qe.F,
-              frontImage: gl,
-              idCountry: Qe.G,
-              idType: Qe.I,
-              isConfirmed: Qe.x,
-              uploadEntityId: Qe.B,
-              uploadErrors: Qe.C,
-              uploadFetchStatus: Qe.D,
-              uploadRequestError: Qe.E,
+              backID: qe.u,
+              backImage: Yl,
+              documentFormats: qe.A,
+              frontID: qe.F,
+              frontImage: Vl,
+              idCountry: qe.G,
+              idType: qe.I,
+              isConfirmed: qe.x,
+              uploadEntityId: qe.B,
+              uploadErrors: qe.C,
+              uploadFetchStatus: qe.D,
+              uploadRequestError: qe.E,
             }
           })
           .propsFromActions(function () {
             return {
-              addMedia: vl.b,
+              addMedia: xl.b,
               createLocalApiErrorHandler: Object(zt.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_VERIFICATION_INTAKE_UPLOAD',
               ),
-              processMultipleMedia: vl.g,
-              removeMedia: vl.h,
-              resetAuthenticationResult: Qe.h,
-              resetDocumentIdProcess: Qe.i,
-              resetIntakeUpload: Qe.k,
-              setBackID: Qe.Q,
-              setFrontID: Qe.S,
-              setNextFlow: Qe.V,
-              toggleCheckboxConfirmation: Qe.X,
-              verifyIdDocument: Qe.ab,
+              processMultipleMedia: xl.g,
+              removeMedia: xl.h,
+              resetAuthenticationResult: qe.h,
+              resetDocumentIdProcess: qe.i,
+              resetIntakeUpload: qe.k,
+              setBackID: qe.Q,
+              setFrontID: qe.S,
+              setNextFlow: qe.V,
+              toggleCheckboxConfirmation: qe.X,
+              verifyIdDocument: qe.ab,
             }
           })
           .withAnalytics(),
-        xl = a('LCtV'),
-        Gl = a('T8pk'),
-        Yl = a('VPdC'),
-        Vl = a('pKoL'),
-        Bl = a('rFBM'),
-        Wl = ['application/pdf', 'image/bmp', 'image/jpeg', 'image/png', 'image/tiff'],
-        wl = (function (e) {
+        Wl = a('LCtV'),
+        wl = a('T8pk'),
+        kl = a('VPdC'),
+        Hl = a('pKoL'),
+        Kl = a('rFBM'),
+        jl = ['application/pdf', 'image/bmp', 'image/jpeg', 'image/png', 'image/tiff'],
+        zl = (function (e) {
           k()(a, e)
           var t = K()(a)
           function a() {
             var e
-            G()(this, a)
+            x()(this, a)
             for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               z()(W()(e), '_handleDragDrop', function (t) {
                 var a = e.props.onChange,
                   n = t.find(function (e) {
-                    return Wl.includes(e.type)
+                    return jl.includes(e.type)
                   })
                 n && a([n])
               }),
@@ -4207,16 +4267,16 @@
                 var t = e.props,
                   a = t.accessibilityLabel,
                   n = t.onChange
-                return Q.a.createElement(Yl.a, {
+                return q.a.createElement(kl.a, {
                   acceptGifs: !1,
                   acceptImages: !1,
                   acceptVideo: !1,
                   accessibilityLabel: a,
-                  customMimeTypes: Wl,
-                  icon: Q.a.createElement(Gl.a, { style: kl.mediaPickerIcon }),
+                  customMimeTypes: jl,
+                  icon: q.a.createElement(wl.a, { style: Ql.mediaPickerIcon }),
                   onChange: n,
                   size: 'small',
-                  style: kl.mediaPicker,
+                  style: Ql.mediaPicker,
                   withIcon: !0,
                 })
               }),
@@ -4226,12 +4286,12 @@
               }),
               z()(W()(e), '_renderPreview', function (t) {
                 var a = e.props.onRemove
-                return Q.a.createElement(Vl.a, {
-                  borderRadius: xl.a.MEDIUM,
+                return q.a.createElement(Hl.a, {
+                  borderRadius: Wl.a.MEDIUM,
                   mediaItem: t,
                   onRemove: a,
                   resizeIfNeeded: e._getResizeIfNeeded(t),
-                  style: kl.mediaPreview,
+                  style: Ql.mediaPreview,
                   withCloseButton: !0,
                 })
               }),
@@ -4247,19 +4307,19 @@
                     t = e.mediaItem,
                     a = e.title,
                     n = t ? this._renderPreview(t) : this._renderDragDropTarget()
-                  return Q.a.createElement(
+                  return q.a.createElement(
                     _e.a,
-                    { style: kl.dragDropContainer },
-                    Q.a.createElement(pe.b, { weight: 'bold' }, a),
-                    Q.a.createElement(Bl.a, { onFilesAdded: this._handleDragDrop, style: kl.dragDropComponent }, n),
+                    { style: Ql.dragDropContainer },
+                    q.a.createElement(pe.b, { weight: 'bold' }, a),
+                    q.a.createElement(Kl.a, { onFilesAdded: this._handleDragDrop, style: Ql.dragDropComponent }, n),
                   )
                 },
               },
             ]),
             a
           )
-        })(Q.a.Component),
-        kl = de.a.create(function (e) {
+        })(q.a.Component),
+        Ql = ue.a.create(function (e) {
           return {
             dragDropContainer: {
               flex: 1,
@@ -4283,34 +4343,34 @@
             mediaPreview: { justifyContent: 'center', flex: 1 },
           }
         }),
-        Hl = wl,
-        Kl = a('eyty'),
-        jl = 'verification-checkbox-label',
-        zl = Z.a.ff1d68f7,
-        ql = Q.a.createElement(
+        ql = zl,
+        $l = a('eyty'),
+        Zl = 'verification-checkbox-label',
+        Jl = Z.a.ff1d68f7,
+        Xl = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'b8f15ec4' },
-          Q.a.createElement(pe.b, { link: Zt }, Z.a.h0ed9034),
+          q.a.createElement(pe.b, { link: Zt }, Z.a.h0ed9034),
         ),
-        Ql = Z.a.bdada5a5,
-        $l = Z.a.edfed0f6,
-        Zl = Z.a.b08821f3,
-        Jl = Z.a.b09aade5,
-        Xl = Z.a.b40ed190,
-        ec = Z.a.c6650b55,
-        tc = Z.a.d171ed16,
-        ac = Q.a.createElement(
+        eE = Z.a.bdada5a5,
+        tE = Z.a.edfed0f6,
+        aE = Z.a.b08821f3,
+        nE = Z.a.b09aade5,
+        iE = Z.a.b40ed190,
+        rE = Z.a.c6650b55,
+        oE = Z.a.d171ed16,
+        lE = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'd65a41c2' },
-          Q.a.createElement(pe.b, { link: 'https://twitter.com/privacy' }, Z.a.e9d83172),
+          q.a.createElement(pe.b, { link: 'https://twitter.com/privacy' }, Z.a.e9d83172),
         ),
-        nc = Z.a.c1df579e,
-        ic = (function (e) {
+        EE = Z.a.c1df579e,
+        cE = (function (e) {
           k()(a, e)
           var t = K()(a)
           function a() {
             var e
-            G()(this, a)
+            x()(this, a)
             for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
@@ -4326,7 +4386,7 @@
                   n = a.addMedia,
                   i = a.processMultipleMedia,
                   r = a.setBackID
-                n(t, { location: Kl.d.Verification }).then(function (t) {
+                n(t, { location: $l.d.Verification }).then(function (t) {
                   t.map(function (e) {
                     var t = e.id
                     r(t)
@@ -4346,7 +4406,7 @@
                   n = a.addMedia,
                   i = a.processMultipleMedia,
                   r = a.setFrontID
-                n(t, { location: Kl.d.Verification }).then(function (t) {
+                n(t, { location: $l.d.Verification }).then(function (t) {
                   t.map(function (e) {
                     var t = e.id
                     r(t)
@@ -4377,23 +4437,23 @@
               }),
               z()(W()(e), '_renderCheckbox', function () {
                 var t = e.props.isConfirmed
-                return Q.a.createElement(
+                return q.a.createElement(
                   _e.a,
-                  { style: [Ne.contentContainer, Ne.checkboxContainer] },
-                  Q.a.createElement(
+                  { style: [de.contentContainer, de.checkboxContainer] },
+                  q.a.createElement(
                     _e.a,
-                    { style: Ne.checkbox },
-                    Q.a.createElement(Gt.a, {
-                      accessibilityLabelledBy: jl,
+                    { style: de.checkbox },
+                    q.a.createElement(xt.a, {
+                      accessibilityLabelledBy: Zl,
                       checked: t,
                       onChange: e._handleCheckboxChange,
                     }),
                   ),
-                  Q.a.createElement(
+                  q.a.createElement(
                     _e.a,
-                    { nativeID: jl, style: Ne.checkboxText },
-                    Q.a.createElement(pe.b, { color: 'gray700' }, tc),
-                    Q.a.createElement(pe.b, { color: 'gray700', style: Ne.text }, ac),
+                    { nativeID: Zl, style: de.checkboxText },
+                    q.a.createElement(pe.b, { color: 'gray700' }, oE),
+                    q.a.createElement(pe.b, { color: 'gray700', style: de.text }, lE),
                   ),
                 )
               }),
@@ -4409,12 +4469,12 @@
                   a = t.backImage,
                   n = t.frontImage,
                   i = e._needsBackside(),
-                  r = i ? $l : ec,
-                  o = i ? Ql : Xl
-                return Q.a.createElement(
+                  r = i ? tE : rE,
+                  o = i ? eE : iE
+                return q.a.createElement(
                   _e.a,
-                  { accessibilityLabelledBy: ue.b, accessibilityRole: 'group', style: rc.gridContainer },
-                  Q.a.createElement(Hl, {
+                  { accessibilityLabelledBy: Ne.b, accessibilityRole: 'group', style: sE.gridContainer },
+                  q.a.createElement(ql, {
                     accessibilityLabel: r,
                     mediaItem: n,
                     onChange: e._handleAddFrontMedia,
@@ -4422,12 +4482,12 @@
                     title: o,
                   }),
                   i &&
-                    Q.a.createElement(Hl, {
-                      accessibilityLabel: Jl,
+                    q.a.createElement(ql, {
+                      accessibilityLabel: nE,
                       mediaItem: a,
                       onChange: e._handleAddBackMedia,
                       onRemove: e._handleRemoveBackID,
-                      title: Zl,
+                      title: aE,
                     }),
                 )
               }),
@@ -4483,7 +4543,7 @@
                   var e = this.props.uploadRequestError
                   return (
                     this._handleScribe('failure'),
-                    Q.a.createElement(Ll, { error: e, onButtonClick: this._handleErrorButtonClick })
+                    q.a.createElement(Ul, { error: e, onButtonClick: this._handleErrorButtonClick })
                   )
                 },
               },
@@ -4496,32 +4556,32 @@
                     n = e.isConfirmed,
                     i = e.isNarrow,
                     r = (this._needsBackside() && !t) || !a || !n || this._isUploading()
-                  return Q.a.createElement(
+                  return q.a.createElement(
                     _e.a,
-                    { style: [Ne.container, i && Ne.narrowContainer] },
-                    Q.a.createElement(
+                    { style: [de.container, i && de.narrowContainer] },
+                    q.a.createElement(
                       pe.b,
                       {
                         accessibilityLevel: 1,
                         accessibilityRole: 'heading',
-                        nativeID: ue.b,
+                        nativeID: Ne.b,
                         size: 'title4',
-                        style: Ne.header,
+                        style: de.header,
                         weight: 'heavy',
                       },
-                      zl,
+                      Jl,
                     ),
-                    Q.a.createElement(
+                    q.a.createElement(
                       _e.a,
-                      { style: Ne.scrollableContainer },
-                      Q.a.createElement(pe.b, { color: 'gray700' }, ql),
+                      { style: de.scrollableContainer },
+                      q.a.createElement(pe.b, { color: 'gray700' }, Xl),
                       this._renderUploadTargets(),
                       this._renderCheckbox(),
                     ),
-                    Q.a.createElement(
+                    q.a.createElement(
                       Ae.a,
-                      { disabled: r, onPress: this._handleSubmit, style: Ne.buttonFixed, type: 'brandFilled' },
-                      nc,
+                      { disabled: r, onPress: this._handleSubmit, style: de.buttonFixed, type: 'brandFilled' },
+                      EE,
                     ),
                   )
                 },
@@ -4535,13 +4595,13 @@
             ]),
             a
           )
-        })(Q.a.Component),
-        rc = de.a.create(function (e) {
+        })(q.a.Component),
+        sE = ue.a.create(function (e) {
           return { gridContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: e.spaces.space16 } }
         }),
-        oc = Pl(ic),
-        lc = { hasId: !0, hasEmail: !0, hasWebsite: !0 },
-        cc =
+        IE = Bl(cE),
+        TE = { hasId: !0, hasEmail: !0, hasWebsite: !0 },
+        NE =
           ((T = {}),
           z()(T, te.l.ACTIVISM, {
             hasId: !0,
@@ -4564,11 +4624,11 @@
             hasEmail: !1,
             hasWebsite: !0,
             subtype:
-              ((c = {}),
-              z()(c, te.f.ENTERTAINMENT_INDIVIDUAL, { hasId: !1, hasEmail: !1, hasWebsite: !1 }),
-              z()(c, te.f.ENTERTAINMENT_COMPANY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              z()(c, te.f.PRODUCTION, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              c),
+              ((E = {}),
+              z()(E, te.f.ENTERTAINMENT_INDIVIDUAL, { hasId: !1, hasEmail: !1, hasWebsite: !1 }),
+              z()(E, te.f.ENTERTAINMENT_COMPANY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              z()(E, te.f.PRODUCTION, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              E),
           }),
           z()(T, te.l.GOVERNMENT, {
             hasId: !1,
@@ -4581,10 +4641,10 @@
             hasEmail: !1,
             hasWebsite: !0,
             subtype:
-              ((E = {}),
-              z()(E, te.j.INFLUENTIAL_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-              z()(E, te.j.CONTENT_CREATOR, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              E),
+              ((c = {}),
+              z()(c, te.j.INFLUENTIAL_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              z()(c, te.j.CONTENT_CREATOR, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              c),
           }),
           z()(T, te.l.NEWS, {
             hasId: !1,
@@ -4603,100 +4663,100 @@
             hasWebsite: !0,
             subtype:
               ((I = {}),
-              z()(I, te.q.SPORTS_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-              z()(I, te.q.SPORTS_ENTITY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              z()(I, te.q.GAMING_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              z()(I, te.r.SPORTS_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              z()(I, te.r.SPORTS_ENTITY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              z()(I, te.r.GAMING_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
               I),
           }),
           T),
-        Ec = Z.a.i79902b4,
-        sc = Z.a.fb2fcb5b,
-        Ic = Z.a.e43425fa,
-        Tc = Z.a.cb7c2e2e,
-        uc = Z.a.a411926a,
-        dc = Z.a.g253cddf,
-        Nc = Z.a.cf93bcbf,
-        _c = Z.a.ca5fb0d4,
-        pc = Z.a.g40cd2c0,
-        Ac = { title: Ec, description: sc },
-        bc =
-          ((u = {}),
-          z()(u, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-          z()(u, te.d.EMAIL, { label: uc, subtext: dc }),
-          z()(u, te.d.WEBSITE, { label: Nc, subtext: _c }),
-          u),
-        Rc = P()(P()({}, Ac), {}, { items: P()({}, bc) }),
-        Cc = { title: Z.a.a7f1cff6, description: Z.a.ce40e7a5, websiteLabel: Nc },
-        mc = Z.a.dff1555f,
-        Oc = Z.a.ed751204,
-        fc = Z.a.fbc023bf,
-        Sc = { headline: mc, subtext: Oc, actionLabel: fc, tertiaryActionLabel: Z.a.e785ce06 },
-        Lc = Z.a.i8d58f3d,
-        hc = P()(P()({}, Sc), {}, { tertiaryActionLabel: Lc }),
-        yc = Z.a.eb21eca9,
-        Dc = P()(P()({}, Sc), {}, { tertiaryActionLabel: yc }),
-        Fc = Z.a.f848a69d,
-        Uc = Z.a.d59b5365,
-        vc = Z.a.bfb01c62,
-        Mc = { headline: mc, subtext: Fc, actionLabel: fc, tertiaryActionLabel: vc },
-        gc = P()(P()({}, Mc), {}, { subtext: Uc }),
-        Pc = { headline: mc, subtext: Fc, actionLabel: fc, tertiaryActionLabel: vc },
-        xc = Z.a.ibd16281,
-        Gc = Z.a.d5254e1b,
-        Yc = Z.a.h45b00d7,
-        Vc = Z.a.bd9d7f96,
-        Bc = Z.a.g32c2900,
-        Wc = Z.a.e6327f3b,
-        wc = Z.a.c7f75eab,
-        kc = Z.a.eb08a392,
-        Hc = Z.a.je4c4696,
-        Kc = Z.a.dcc23261,
-        jc = Z.a.h96ba9b6,
-        zc = Z.a.e4610048,
-        qc = Z.a.dedf41f1,
-        Qc = Z.a.c78e091a,
-        $c = Z.a.g5657ec3,
-        Zc = Z.a.baf718c3,
-        Jc = Z.a.c65bbbc1,
-        Xc = Z.a.i31e3606,
-        eE = Z.a.d85ef4a7,
-        tE = Z.a.ddb19f72,
-        aE = Z.a.a8d332f2,
-        nE = Z.a.f7afbaeb,
-        iE = Z.a.d4ab0055,
-        rE = Z.a.d2a77621,
-        oE = Z.a.e23b92c5,
-        lE = Z.a.b03ae068,
-        cE = Z.a.g0daba49,
-        EE = Z.a.h85524c4,
-        sE = Z.a.cdcd9cd5,
-        IE = Z.a.gcee7aad,
-        TE = Z.a.e6dc91b1,
-        uE = Z.a.ga603b22,
-        dE =
-          ((y = { header: Ec }),
+        uE = Z.a.i79902b4,
+        dE = Z.a.fb2fcb5b,
+        _E = Z.a.e43425fa,
+        pE = Z.a.cb7c2e2e,
+        AE = Z.a.a411926a,
+        RE = Z.a.g253cddf,
+        CE = Z.a.cf93bcbf,
+        bE = Z.a.ca5fb0d4,
+        OE = Z.a.g40cd2c0,
+        mE = { title: uE, description: dE },
+        fE =
+          ((N = {}),
+          z()(N, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+          z()(N, te.d.EMAIL, { label: AE, subtext: RE }),
+          z()(N, te.d.WEBSITE, { label: CE, subtext: bE }),
+          N),
+        SE = P()(P()({}, mE), {}, { items: P()({}, fE) }),
+        LE = { title: Z.a.a7f1cff6, description: Z.a.ce40e7a5, websiteLabel: CE },
+        hE = Z.a.dff1555f,
+        yE = Z.a.ed751204,
+        DE = Z.a.fbc023bf,
+        FE = { headline: hE, subtext: yE, actionLabel: DE, tertiaryActionLabel: Z.a.e785ce06 },
+        UE = Z.a.i8d58f3d,
+        vE = P()(P()({}, FE), {}, { tertiaryActionLabel: UE }),
+        ME = Z.a.eb21eca9,
+        gE = P()(P()({}, FE), {}, { tertiaryActionLabel: ME }),
+        PE = Z.a.f848a69d,
+        GE = Z.a.d59b5365,
+        xE = Z.a.bfb01c62,
+        YE = { headline: hE, subtext: PE, actionLabel: DE, tertiaryActionLabel: xE },
+        VE = P()(P()({}, YE), {}, { subtext: GE }),
+        BE = { headline: hE, subtext: PE, actionLabel: DE, tertiaryActionLabel: xE },
+        WE = Z.a.ibd16281,
+        wE = Z.a.d5254e1b,
+        kE = Z.a.h45b00d7,
+        HE = Z.a.bd9d7f96,
+        KE = Z.a.g32c2900,
+        jE = Z.a.e6327f3b,
+        zE = Z.a.c7f75eab,
+        QE = Z.a.eb08a392,
+        qE = Z.a.je4c4696,
+        $E = Z.a.dcc23261,
+        ZE = Z.a.h96ba9b6,
+        JE = Z.a.e4610048,
+        XE = Z.a.dedf41f1,
+        ec = Z.a.c78e091a,
+        tc = Z.a.g5657ec3,
+        ac = Z.a.baf718c3,
+        nc = Z.a.c65bbbc1,
+        ic = Z.a.i31e3606,
+        rc = Z.a.d85ef4a7,
+        oc = Z.a.ddb19f72,
+        lc = Z.a.a8d332f2,
+        Ec = Z.a.f7afbaeb,
+        cc = Z.a.d4ab0055,
+        sc = Z.a.d2a77621,
+        Ic = Z.a.e23b92c5,
+        Tc = Z.a.b03ae068,
+        Nc = Z.a.g0daba49,
+        uc = Z.a.h85524c4,
+        dc = Z.a.cdcd9cd5,
+        _c = Z.a.gcee7aad,
+        pc = Z.a.e6dc91b1,
+        Ac = Z.a.ga603b22,
+        Rc =
+          ((y = { header: uE }),
           z()(
             y,
             te.l.ACTIVISM,
             z()({}, te.b.ACTIVIST, {
-              description: Kc,
+              description: $E,
               items:
-                ((d = {}),
-                z()(d, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(d, te.d.WEBSITE, { label: Nc, subtext: jc, description: zc, inputLabel: pc }),
-                d),
+                ((u = {}),
+                z()(u, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(u, te.d.WEBSITE, { label: CE, subtext: ZE, description: JE, inputLabel: OE }),
+                u),
             }),
           ),
           z()(
             y,
             te.l.INFLUENCER_OTHER,
             z()({}, te.j.INFLUENTIAL_INDIVIDUAL, {
-              description: qc,
+              description: XE,
               items:
-                ((N = {}),
-                z()(N, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(N, te.d.WEBSITE, { label: Nc, subtext: Qc, description: $c, inputLabel: pc }),
-                N),
+                ((d = {}),
+                z()(d, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(d, te.d.WEBSITE, { label: CE, subtext: ec, description: tc, inputLabel: OE }),
+                d),
             }),
           ),
           z()(
@@ -4704,20 +4764,20 @@
             te.l.COMPANY,
             ((A = {}),
             z()(A, te.e.COMPANY, {
-              description: Zc,
+              description: ac,
               items:
                 ((_ = {}),
-                z()(_, te.d.EMAIL, { label: uc, subtext: Xc }),
-                z()(_, te.d.WEBSITE, { label: Nc, subtext: Vc, description: tE, inputLabel: pc }),
+                z()(_, te.d.EMAIL, { label: AE, subtext: ic }),
+                z()(_, te.d.WEBSITE, { label: CE, subtext: HE, description: oc, inputLabel: OE }),
                 _),
             }),
             z()(A, te.e.EXECUTIVE, {
-              description: Jc,
+              description: nc,
               items:
                 ((p = {}),
-                z()(p, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(p, te.d.EMAIL, { label: uc, subtext: Xc }),
-                z()(p, te.d.WEBSITE, { label: Nc, subtext: eE, description: aE, inputLabel: pc }),
+                z()(p, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(p, te.d.EMAIL, { label: AE, subtext: ic }),
+                z()(p, te.d.WEBSITE, { label: CE, subtext: rc, description: lc, inputLabel: OE }),
                 p),
             }),
             A),
@@ -4725,27 +4785,27 @@
           z()(
             y,
             te.l.ENTERTAINMENT,
-            ((b = {}),
-            z()(b, te.f.ENTERTAINMENT_COMPANY, {
-              description: Yc,
-              items: z()({}, te.d.WEBSITE, { label: Nc, subtext: wc, description: tE, inputLabel: pc }),
+            ((R = {}),
+            z()(R, te.f.ENTERTAINMENT_COMPANY, {
+              description: kE,
+              items: z()({}, te.d.WEBSITE, { label: CE, subtext: zE, description: oc, inputLabel: OE }),
             }),
-            z()(b, te.f.PRODUCTION, {
-              description: Bc,
-              items: z()({}, te.d.WEBSITE, { label: Nc, subtext: wc, description: Wc, inputLabel: pc }),
+            z()(R, te.f.PRODUCTION, {
+              description: KE,
+              items: z()({}, te.d.WEBSITE, { label: CE, subtext: zE, description: jE, inputLabel: OE }),
             }),
-            b),
+            R),
           ),
           z()(
             y,
             te.l.GOVERNMENT,
             z()({}, te.i.CANDIDATE, {
-              description: kc,
+              description: QE,
               items:
-                ((R = {}),
-                z()(R, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(R, te.d.WEBSITE, { label: Nc, subtext: Vc, description: Hc, inputLabel: pc }),
-                R),
+                ((C = {}),
+                z()(C, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(C, te.d.WEBSITE, { label: CE, subtext: HE, description: qE, inputLabel: OE }),
+                C),
             }),
           ),
           z()(
@@ -4753,29 +4813,29 @@
             te.l.NEWS,
             ((f = {}),
             z()(f, te.k.FREELANCER, {
-              description: iE,
+              description: cc,
               items:
-                ((C = {}),
-                z()(C, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(C, te.d.WEBSITE, { label: Nc, subtext: oE, description: xc }),
-                C),
+                ((b = {}),
+                z()(b, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(b, te.d.WEBSITE, { label: CE, subtext: Ic, description: WE }),
+                b),
             }),
             z()(f, te.k.JOURNALIST, {
-              description: nE,
-              items:
-                ((m = {}),
-                z()(m, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(m, te.d.EMAIL, { label: uc, subtext: rE }),
-                z()(m, te.d.WEBSITE, { label: Nc, subtext: oE, description: xc }),
-                m),
-            }),
-            z()(f, te.k.ORGANIZATION, {
-              description: lE,
+              description: Ec,
               items:
                 ((O = {}),
-                z()(O, te.d.EMAIL, { label: uc, subtext: rE }),
-                z()(O, te.d.WEBSITE, { label: Nc, subtext: Vc, description: Gc }),
+                z()(O, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(O, te.d.EMAIL, { label: AE, subtext: sc }),
+                z()(O, te.d.WEBSITE, { label: CE, subtext: Ic, description: WE }),
                 O),
+            }),
+            z()(f, te.k.ORGANIZATION, {
+              description: Tc,
+              items:
+                ((m = {}),
+                z()(m, te.d.EMAIL, { label: AE, subtext: sc }),
+                z()(m, te.d.WEBSITE, { label: CE, subtext: HE, description: wE }),
+                m),
             }),
             f),
           ),
@@ -4783,36 +4843,36 @@
             y,
             te.l.SPORTS,
             ((h = {}),
-            z()(h, te.q.SPORTS_INDIVIDUAL, {
-              description: TE,
+            z()(h, te.r.SPORTS_INDIVIDUAL, {
+              description: pc,
               items:
                 ((S = {}),
-                z()(S, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(S, te.d.WEBSITE, { label: Nc, subtext: Vc, description: uE }),
+                z()(S, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(S, te.d.WEBSITE, { label: CE, subtext: HE, description: Ac }),
                 S),
             }),
-            z()(h, te.q.SPORTS_ENTITY, {
-              description: sE,
-              items: z()({}, te.d.WEBSITE, { label: Nc, subtext: Vc, description: IE }),
+            z()(h, te.r.SPORTS_ENTITY, {
+              description: dc,
+              items: z()({}, te.d.WEBSITE, { label: CE, subtext: HE, description: _c }),
             }),
-            z()(h, te.q.GAMING_INDIVIDUAL, {
-              description: cE,
+            z()(h, te.r.GAMING_INDIVIDUAL, {
+              description: Nc,
               items:
                 ((L = {}),
-                z()(L, te.d.IDENTITY_DOCUMENT, { label: Ic, subtext: Tc }),
-                z()(L, te.d.WEBSITE, { label: Nc, subtext: Vc, description: EE }),
+                z()(L, te.d.IDENTITY_DOCUMENT, { label: _E, subtext: pE }),
+                z()(L, te.d.WEBSITE, { label: CE, subtext: HE, description: uc }),
                 L),
             }),
             h),
           ),
           y),
-        NE = function (e, t) {
-          return e && t ? dE[e][t] : Rc
+        Cc = function (e, t) {
+          return e && t ? Rc[e][t] : SE
         },
-        _E = function (e, t, a) {
-          var n = NE(t, a).items,
-            i = lc
-          t && a ? (i = cc[t].subtype[a]) : t && (i = cc[t])
+        bc = function (e, t, a) {
+          var n = Cc(t, a).items,
+            i = TE
+          t && a ? (i = NE[t].subtype[a]) : t && (i = NE[t])
           var r = []
           return (
             i.hasId &&
@@ -4829,7 +4889,7 @@
             r
           )
         },
-        pE = Object.freeze(
+        Oc = Object.freeze(
           ((D = {}),
           z()(D, te.h.AUTHENTICITY_TYPE_SELECT, function (e) {
             var t = e.notabilityCategory,
@@ -4838,7 +4898,7 @@
             return {
               type: 'radio',
               props: {
-                description: NE(t, a).description,
+                description: Cc(t, a).description,
                 getNextFormStep: function (e) {
                   switch (e) {
                     case te.d.IDENTITY_DOCUMENT:
@@ -4851,21 +4911,21 @@
                       return te.h.THANK_YOU
                   }
                 },
-                items: _E(n, t, a),
-                title: Rc.title,
+                items: bc(n, t, a),
+                title: SE.title,
               },
             }
           }),
           z()(D, te.h.SITE_VERIFICATION, function (e) {
             var t = e.notabilityCategory,
               a = e.notabilitySubcategory,
-              n = NE(t, a).items[te.d.WEBSITE]
+              n = Cc(t, a).items[te.d.WEBSITE]
             return {
               type: 'input',
               props: {
-                title: Cc.title,
-                description: n.description || Cc.description,
-                items: [{ dataKey: te.c.WEBSITE, label: n.inputLabel || Cc.websiteLabel, required: !0 }],
+                title: LE.title,
+                description: n.description || LE.description,
+                items: [{ dataKey: te.c.WEBSITE, label: n.inputLabel || LE.websiteLabel, required: !0 }],
               },
             }
           }),
@@ -4877,8 +4937,8 @@
               r,
               o = e.notabilityCategory,
               l = e.notabilityData,
-              c = e.notabilitySubcategory,
-              E = e.setFormStepData,
+              E = e.notabilitySubcategory,
+              c = e.setFormStepData,
               s = e.setNextFlow,
               I = e.setPreviousFlow,
               T = []
@@ -4900,75 +4960,72 @@
               case te.l.SPORTS:
                 T = null !== (r = null == l ? void 0 : l.teamReferenceUrl) && void 0 !== r ? r : []
             }
-            var u = Sc,
-              d = function () {
+            var N = FE,
+              u = function () {
                 return s(te.h.AUTHENTICITY_TYPE_SELECT)
               }
-            switch (c) {
+            switch (E) {
               case te.n.CONTENT_CREATOR:
-                ;(u = gc),
-                  (d = function () {
+                ;(N = VE),
+                  (u = function () {
                     return I()
                   })
                 break
               case te.n.ENTERTAINMENT_INDIVIDUAL:
-                ;(u = Mc),
-                  (d = function () {
+                ;(N = YE),
+                  (u = function () {
                     return I()
                   })
                 break
               case te.n.OFFICE:
-                ;(u = Dc),
-                  (d = function () {
-                    E(te.h.AUTHENTICITY_TYPE_SELECT, te.d.EMAIL), s(te.h.EMAIL_VERIFICATION)
+                ;(N = gE),
+                  (u = function () {
+                    c(te.h.AUTHENTICITY_TYPE_SELECT, te.d.EMAIL), s(te.h.EMAIL_VERIFICATION)
                   })
                 break
               case te.n.OFFICIAL:
-                ;(u = hc),
-                  (d = function () {
-                    E(te.h.AUTHENTICITY_TYPE_SELECT, te.d.IDENTITY_DOCUMENT), s(te.h.INTAKE_TYPE_SELECT)
+                ;(N = vE),
+                  (u = function () {
+                    c(te.h.AUTHENTICITY_TYPE_SELECT, te.d.IDENTITY_DOCUMENT), s(te.h.INTAKE_TYPE_SELECT)
                   })
             }
             return {
               type: 'info',
               props: P()(
-                P()({}, u),
+                P()({}, N),
                 {},
                 {
                   onAction: function () {
-                    E(te.h.AUTHENTICITY_TYPE_SELECT, te.d.WEBSITE),
-                      E(te.h.SITE_VERIFICATION, z()({}, te.c.WEBSITE, T)),
+                    c(te.h.AUTHENTICITY_TYPE_SELECT, te.d.WEBSITE),
+                      c(te.h.SITE_VERIFICATION, z()({}, te.c.WEBSITE, T)),
                       s(te.h.REVIEW_SUBMIT)
                   },
                   onTertiaryAction: function () {
-                    return d()
+                    return u()
                   },
                 },
               ),
             }
           }),
-          z()(D, te.h.WEBSITE_REFERENCE_CONFIRM_PROCEED, { type: 'info', props: P()({}, Pc) }),
+          z()(D, te.h.WEBSITE_REFERENCE_CONFIRM_PROCEED, { type: 'info', props: P()({}, BE) }),
           D),
         ),
-        AE =
+        mc =
           (a('i4UL'),
           Object.freeze(
             ((F = {}),
             z()(F, te.h.NOTABILITY_CATEGORY_SELECT, function (e) {
-              var t = e.followersEligible,
-                a = void 0 !== t && t,
-                n = e.mentionsEligible,
-                i = void 0 !== n && n
+              e.followersEligible, e.mentionsEligible
               return {
                 type: 'radio',
                 props: {
-                  description: za.description,
+                  description: Qa.description,
                   getNextFormStep: function (e) {
                     switch (e) {
                       case te.l.ACTIVISM:
-                        return a || i ? te.h.ACTIVIST_QUALIFICATIONS : te.h.ACTIVIST_QUALIFICATIONS_INELIGIBLE
+                        return te.h.ACTIVIST_SUBCATEGORY
                       case te.l.INFLUENCER_OTHER:
-                        return a || i ? te.h.INFLUENCER_SUBCATEGORY : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
+                        return te.h.INFLUENCER_SUBCATEGORY
                       case te.l.COMPANY:
                         return te.h.COMPANY_SUBCATEGORY
                       case te.l.ENTERTAINMENT:
@@ -4979,33 +5036,36 @@
                         return te.h.NEWS_QUALIFICATIONS
                       case te.l.SPORTS:
                         return te.h.SPORTS_SUBCATEGORY
+                      case te.l.GAMING:
+                        return te.h.GAMING_SUBCATEGORY
                       default:
                         return null
                     }
                   },
                   items: [
-                    { label: Ha[te.l.GOVERNMENT], value: te.l.GOVERNMENT },
-                    { label: Ha[te.l.COMPANY], value: te.l.COMPANY },
-                    { label: Ha[te.l.NEWS], value: te.l.NEWS },
-                    { label: Ha[te.l.ENTERTAINMENT], value: te.l.ENTERTAINMENT },
-                    { label: Ha[te.l.SPORTS], value: te.l.SPORTS },
-                    { label: Ha[te.l.INFLUENCER_OTHER], value: te.l.INFLUENCER_OTHER },
-                    { label: Ha[te.l.ACTIVISM], value: te.l.ACTIVISM },
+                    { label: Ka[te.l.ACTIVISM], value: te.l.ACTIVISM },
+                    { label: Ka[te.l.COMPANY], value: te.l.COMPANY },
+                    { label: Ka[te.l.ENTERTAINMENT], value: te.l.ENTERTAINMENT },
+                    { label: Ka[te.l.GAMING], value: te.l.GAMING },
+                    { label: Ka[te.l.GOVERNMENT], value: te.l.GOVERNMENT },
+                    { label: Ka[te.l.NEWS], value: te.l.NEWS },
+                    { label: Ka[te.l.SPORTS], value: te.l.SPORTS },
+                    { label: Ka[te.l.INFLUENCER_OTHER], value: te.l.INFLUENCER_OTHER },
                   ],
-                  title: za.title,
+                  title: Qa.title,
                 },
               }
             }),
             z()(F, te.h.ACTIVIST_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: an.title,
-                description: an.description,
+                title: nn.title,
+                description: nn.description,
                 items: [
-                  P()(P()({}, an.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, an.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, an.items[2]), {}, { value: te.m.NEWS }),
-                  P()(P()({}, an.items[3]), {}, { value: te.m.LEADERSHIP }),
+                  P()(P()({}, nn.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, nn.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, nn.items[2]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, nn.items[3]), {}, { value: te.m.LEADERSHIP }),
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.GOOGLE
@@ -5020,67 +5080,99 @@
                 },
               },
             }),
+            z()(F, te.h.ACTIVIST_SUBCATEGORY, function (e) {
+              var t = e.followersEligible,
+                a = void 0 !== t && t,
+                n = e.mentionsEligible,
+                i = void 0 !== n && n
+              return {
+                type: 'radio',
+                props: {
+                  title: In.title,
+                  description: In.description,
+                  items: [
+                    P()(P()({}, In.items[0]), {}, { value: te.b.ACTIVIST }),
+                    P()(P()({}, In.items[1]), {}, { value: te.k.JOURNALIST }),
+                    P()(P()({}, In.items[2]), {}, { value: te.e.COMPANY }),
+                  ],
+                  getNextFormStep: function (e) {
+                    return e === te.b.ACTIVIST
+                      ? a || i
+                        ? te.h.ACTIVIST_QUALIFICATIONS
+                        : te.h.ACTIVIST_QUALIFICATIONS_INELIGIBLE
+                      : e === te.k.JOURNALIST
+                      ? te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION
+                      : e === te.e.COMPANY
+                      ? te.h.COMPANY_NOTABILITY_METHOD
+                      : void 0
+                  },
+                },
+              }
+            }),
             z()(F, te.h.ACTIVIST_GOOGLE_TRENDS, {
               type: 'input',
               props: {
-                title: rn.title,
-                description: rn.description,
-                items: [{ dataKey: te.m.GOOGLE, label: rn.label, required: !0 }],
+                title: Nn.title,
+                description: Nn.description,
+                items: [{ dataKey: te.m.GOOGLE, label: Nn.label, required: !0 }],
               },
             }),
             z()(F, te.h.ACTIVIST_LEADERSHIP, {
               type: 'input',
               props: {
-                title: sn.title,
-                description: sn.description,
-                items: [{ dataKey: te.m.LEADERSHIP, label: sn.label, required: !0 }],
-                confirmationText: sn.confirmationText,
+                title: An.title,
+                description: An.description,
+                items: [{ dataKey: te.m.LEADERSHIP, label: An.label, required: !0 }],
+                confirmationText: An.confirmationText,
               },
             }),
             z()(F, te.h.ACTIVIST_NEWS, {
               type: 'input',
               props: {
-                title: cn.title,
-                description: cn.description,
+                title: _n.title,
+                description: _n.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: cn.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: _n.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: cn.addFieldText,
+                addFieldText: _n.addFieldText,
                 maxItems: 10,
               },
             }),
             z()(F, te.h.ACTIVIST_WIKIPEDIA, {
               type: 'input',
               props: {
-                title: ln.title,
-                description: ln.description,
-                items: [{ dataKey: te.m.WIKIPEDIA, label: ln.label, required: !0 }],
+                title: dn.title,
+                description: dn.description,
+                items: [{ dataKey: te.m.WIKIPEDIA, label: dn.label, required: !0 }],
               },
             }),
             z()(F, te.h.ACTIVIST_QUALIFICATIONS_INELIGIBLE, {
               type: 'info',
               props: {
-                headline: an.notEligibleTitle,
-                subtext: an.notEligibleDescription,
-                actionLabel: an.notEligibleButton,
+                headline: nn.notEligibleTitle,
+                subtext: nn.notEligibleDescription,
+                actionLabel: nn.notEligibleButton,
               },
             }),
             z()(F, te.h.COMPANY_SUBCATEGORY, {
               type: 'radio',
               props: P()(
-                P()({}, hn),
+                P()({}, Mn),
                 {},
                 {
                   items: [
-                    P()(P()({}, hn.items[0]), {}, { value: te.e.COMPANY }),
-                    P()(P()({}, hn.items[1]), {}, { value: te.e.EXECUTIVE }),
+                    P()(P()({}, Mn.items[0]), {}, { value: te.e.COMPANY }),
+                    P()(P()({}, Mn.items[1]), {}, { value: te.k.JOURNALIST }),
+                    P()(P()({}, Mn.items[2]), {}, { value: te.e.EXECUTIVE }),
                   ],
                   getNextFormStep: function (e) {
                     return e === te.e.COMPANY
                       ? te.h.COMPANY_NOTABILITY_METHOD
                       : e === te.e.EXECUTIVE
                       ? te.h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM
+                      : e === te.k.JOURNALIST
+                      ? te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION
                       : void 0
                   },
                 },
@@ -5090,15 +5182,15 @@
               var t = e.followersEligible,
                 a = void 0 !== t && t,
                 n = [
-                  P()(P()({}, Dn.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, Dn.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, Dn.items[2]), {}, { value: te.m.STOCK }),
-                  P()(P()({}, Dn.items[3]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, Pn.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, Pn.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, Pn.items[2]), {}, { value: te.m.STOCK }),
+                  P()(P()({}, Pn.items[3]), {}, { value: te.m.NEWS }),
                 ]
               return {
                 type: 'radio',
                 props: P()(
-                  P()({}, Dn),
+                  P()({}, Pn),
                   {},
                   {
                     items: a ? n : n.slice(0, -1),
@@ -5122,9 +5214,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Un.title,
-                  description: Un.description,
-                  items: [{ dataKey: te.m.GOOGLE, label: Un.label, required: !0 }],
+                  title: xn.title,
+                  description: xn.description,
+                  items: [{ dataKey: te.m.GOOGLE, label: xn.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5134,9 +5226,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Mn.title,
-                  description: Mn.description,
-                  items: [{ dataKey: te.m.WIKIPEDIA, label: Mn.label, required: !0 }],
+                  title: Vn.title,
+                  description: Vn.description,
+                  items: [{ dataKey: te.m.WIKIPEDIA, label: Vn.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5146,9 +5238,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Pn.title,
-                  description: Pn.description,
-                  items: [{ dataKey: te.m.STOCK, label: Pn.label, required: !0 }],
+                  title: Wn.title,
+                  description: Wn.description,
+                  items: [{ dataKey: te.m.STOCK, label: Wn.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5156,25 +5248,25 @@
             z()(F, te.h.COMPANY_NEWS_REFERENCE, {
               type: 'input',
               props: {
-                title: Gn.title,
-                description: Gn.description,
+                title: kn.title,
+                description: kn.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Gn.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: kn.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: Gn.addFieldText,
+                addFieldText: kn.addFieldText,
               },
             }),
-            z()(F, te.h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, Bn) }),
+            z()(F, te.h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, jn) }),
             z()(F, te.h.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, {
               type: 'radio',
               props: P()(
-                P()({}, wn),
+                P()({}, Qn),
                 {},
                 {
                   items: [
-                    P()(P()({}, wn.items[0]), {}, { value: te.m.NEWS }),
-                    P()(P()({}, wn.items[1]), {}, { value: te.m.LEADERSHIP }),
+                    P()(P()({}, Qn.items[0]), {}, { value: te.m.NEWS }),
+                    P()(P()({}, Qn.items[1]), {}, { value: te.m.LEADERSHIP }),
                   ],
                   getNextFormStep: function (e) {
                     return e === te.m.NEWS
@@ -5189,22 +5281,22 @@
             z()(F, te.h.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
               type: 'input',
               props: {
-                title: Hn.title,
-                description: Hn.description,
+                title: $n.title,
+                description: $n.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Hn.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: $n.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: Hn.addFieldText,
+                addFieldText: $n.addFieldText,
               },
             }),
             z()(F, te.h.COMPANY_INDIVIDUAL_LEADERSHIP, {
               type: 'input',
               props: {
-                title: jn.title,
-                description: jn.description,
-                items: [{ dataKey: te.m.LEADERSHIP, label: jn.label, required: !0 }],
-                confirmationText: jn.confirmationText,
+                title: Jn.title,
+                description: Jn.description,
+                items: [{ dataKey: te.m.LEADERSHIP, label: Jn.label, required: !0 }],
+                confirmationText: Jn.confirmationText,
               },
             }),
             z()(F, te.h.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, function (e) {
@@ -5215,9 +5307,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: ui.title,
-                  description: ui.description,
-                  items: [{ dataKey: te.m.GOOGLE, label: ui.label, required: !0 }],
+                  title: Ri.title,
+                  description: Ri.description,
+                  items: [{ dataKey: te.m.GOOGLE, label: Ri.label, required: !0 }],
                   nextFormStep: a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5225,13 +5317,13 @@
             z()(F, te.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
               type: 'input',
               props: {
-                title: Ni.title,
-                description: Ni.description,
+                title: bi.title,
+                description: bi.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Ni.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: bi.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: Ni.addFieldText,
+                addFieldText: bi.addFieldText,
               },
             }),
             z()(F, te.h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, function (e) {
@@ -5240,15 +5332,15 @@
                 n = e.mentionsEligible,
                 i = void 0 !== n && n,
                 r = [
-                  P()(P()({}, Ii.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, Ii.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, Ii.items[2]), {}, { value: te.m.STOCK }),
-                  P()(P()({}, Ii.items[3]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, pi.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, pi.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, pi.items[2]), {}, { value: te.m.STOCK }),
+                  P()(P()({}, pi.items[3]), {}, { value: te.m.NEWS }),
                 ]
               return {
                 type: 'radio',
                 props: P()(
-                  P()({}, Ii),
+                  P()({}, pi),
                   {},
                   {
                     items: a || i ? r : r.slice(0, -1),
@@ -5275,9 +5367,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: pi.title,
-                  description: pi.description,
-                  items: [{ dataKey: te.m.STOCK, label: pi.label, required: !0 }],
+                  title: mi.title,
+                  description: mi.description,
+                  items: [{ dataKey: te.m.STOCK, label: mi.label, required: !0 }],
                   nextFormStep: a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5290,9 +5382,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: bi.title,
-                  description: bi.description,
-                  items: [{ dataKey: te.m.WIKIPEDIA, label: bi.label, required: !0 }],
+                  title: Si.title,
+                  description: Si.description,
+                  items: [{ dataKey: te.m.WIKIPEDIA, label: Si.label, required: !0 }],
                   nextFormStep: a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
                 },
               }
@@ -5300,28 +5392,28 @@
             z()(F, te.h.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
               type: 'input',
               props: {
-                title: Gi.title,
-                description: Gi.description,
-                items: [{ dataKey: te.m.IMDB, label: Gi.label, required: !0 }],
+                title: ki.title,
+                description: ki.description,
+                items: [{ dataKey: te.m.IMDB, label: ki.label, required: !0 }],
               },
             }),
             z()(F, te.h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
               type: 'input',
               props: {
-                title: Bi.title,
-                description: Bi.description,
-                items: [{ dataKey: te.m.MAIN, label: Bi.label, required: !0 }],
+                title: ji.title,
+                description: ji.description,
+                items: [{ dataKey: te.m.MAIN, label: ji.label, required: !0 }],
               },
             }),
             z()(F, te.h.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
               type: 'input',
               props: {
-                title: Yi.title,
-                description: Yi.description,
+                title: Hi.title,
+                description: Hi.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Gn.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: kn.articleLabelGenerator, required: !0 }),
                 ),
-                addFieldText: Yi.addFieldText,
+                addFieldText: Hi.addFieldText,
                 allowAddFields: !0,
                 maxItems: 10,
               },
@@ -5329,11 +5421,11 @@
             z()(F, te.h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: gi.title,
-                description: gi.description,
+                title: Bi.title,
+                description: Bi.description,
                 items: [
-                  { helpText: gi.items[0].description, label: gi.items[0].label, value: te.m.IMDB },
-                  { helpText: gi.items[1].description, label: gi.items[1].label, value: te.m.NEWS },
+                  { helpText: Bi.items[0].description, label: Bi.items[0].label, value: te.m.IMDB },
+                  { helpText: Bi.items[1].description, label: Bi.items[1].label, value: te.m.NEWS },
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.IMDB
@@ -5352,9 +5444,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: ei.title,
-                  description: ei.description,
-                  items: [{ dataKey: te.m.GOOGLE, label: ei.label, required: !0 }],
+                  title: oi.title,
+                  description: oi.description,
+                  items: [{ dataKey: te.m.GOOGLE, label: oi.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
                 },
@@ -5363,13 +5455,13 @@
             z()(F, te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
               type: 'input',
               props: {
-                title: ai.title,
-                description: ai.description,
+                title: Ei.title,
+                description: Ei.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: ai.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Ei.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: ai.addFieldText,
+                addFieldText: Ei.addFieldText,
               },
             }),
             z()(F, te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, function (e) {
@@ -5378,15 +5470,15 @@
                 n = e.mentionsEligible,
                 i = void 0 !== n && n,
                 r = [
-                  P()(P()({}, ii.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, ii.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, ii.items[2]), {}, { value: te.m.STOCK }),
-                  P()(P()({}, ii.items[3]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, si.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, si.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, si.items[2]), {}, { value: te.m.STOCK }),
+                  P()(P()({}, si.items[3]), {}, { value: te.m.NEWS }),
                 ]
               return {
                 type: 'radio',
                 props: P()(
-                  P()({}, ii),
+                  P()({}, si),
                   {},
                   {
                     items: a || i ? r : r.slice(0, -1),
@@ -5413,9 +5505,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: oi.title,
-                  description: oi.description,
-                  items: [{ dataKey: te.m.STOCK, label: oi.label, required: !0 }],
+                  title: Ti.title,
+                  description: Ti.description,
+                  items: [{ dataKey: te.m.STOCK, label: Ti.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
                 },
@@ -5429,53 +5521,64 @@
               return {
                 type: 'input',
                 props: {
-                  title: ci.title,
-                  description: ci.description,
-                  items: [{ dataKey: te.m.WIKIPEDIA, label: ci.label, required: !0 }],
+                  title: ui.title,
+                  description: ui.description,
+                  items: [{ dataKey: te.m.WIKIPEDIA, label: ui.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
                 },
               }
             }),
-            z()(F, te.h.ENTERTAINMENT_QUALIFICATIONS, {
-              type: 'radio',
-              props: {
-                title: Ei.title,
-                description: Ei.description,
-                items: [
-                  P()(P()({}, Ei.items[0]), {}, { value: te.f.ENTERTAINMENT_COMPANY }),
-                  P()(P()({}, Ei.items[1]), {}, { value: te.f.ENTERTAINMENT_INDIVIDUAL }),
-                  P()(P()({}, Ei.items[2]), {}, { value: te.f.PRODUCTION }),
-                ],
-                getNextFormStep: function (e) {
-                  return e === te.f.ENTERTAINMENT_COMPANY
-                    ? te.h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD
-                    : e === te.f.ENTERTAINMENT_INDIVIDUAL
-                    ? te.h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS
-                    : e === te.f.PRODUCTION
-                    ? te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD
-                    : void 0
+            z()(F, te.h.ENTERTAINMENT_QUALIFICATIONS, function (e) {
+              var t = e.followersEligible,
+                a = void 0 !== t && t,
+                n = e.mentionsEligible,
+                i = void 0 !== n && n
+              return {
+                type: 'radio',
+                props: {
+                  title: di.title,
+                  description: di.description,
+                  items: [
+                    P()(P()({}, di.items[0]), {}, { value: te.f.ENTERTAINMENT_COMPANY }),
+                    P()(P()({}, di.items[1]), {}, { value: te.j.CONTENT_CREATOR }),
+                    P()(P()({}, di.items[2]), {}, { value: te.f.ENTERTAINMENT_INDIVIDUAL }),
+                    P()(P()({}, di.items[3]), {}, { value: te.f.PRODUCTION }),
+                  ],
+                  getNextFormStep: function (e) {
+                    return e === te.f.ENTERTAINMENT_COMPANY
+                      ? te.h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD
+                      : e === te.f.ENTERTAINMENT_INDIVIDUAL
+                      ? te.h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS
+                      : e === te.f.PRODUCTION
+                      ? te.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD
+                      : e === te.j.CONTENT_CREATOR
+                      ? a || i
+                        ? te.h.CONTENT_CREATOR_QUALIFICATIONS
+                        : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
+                      : void 0
+                  },
                 },
-              },
+              }
             }),
             z()(F, te.h.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
               type: 'info',
               props: {
-                headline: tr.candidateTitle,
-                subtext: tr.candidateDescription,
-                actionLabel: tr.confirmButtonLabel,
-                tertiaryActionLabel: tr.declineButtonLabel,
+                headline: lr.candidateTitle,
+                subtext: lr.candidateDescription,
+                actionLabel: lr.confirmButtonLabel,
+                tertiaryActionLabel: lr.declineButtonLabel,
               },
             }),
             z()(F, te.h.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: Tr.title,
-                description: Tr.description,
+                title: Ar.title,
+                description: Ar.description,
                 items: Lt()(
-                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: Tr.articleLabelGenerator, required: !0 }),
+                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: Ar.articleLabelGenerator, required: !0 }),
                 ),
-                addFieldText: Tr.addFieldText,
+                addFieldText: Ar.addFieldText,
                 allowAddFields: !0,
                 maxItems: 10,
               },
@@ -5483,85 +5586,14 @@
             z()(F, te.h.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
               type: 'info',
               props: {
-                headline: sr.candidateTitle,
-                subtext: sr.candidateDescription,
-                actionLabel: sr.confirmButtonLabel,
-                tertiaryActionLabel: sr.declineButtonLabel,
-                tertiaryActionLink: Ee,
+                headline: _r.candidateTitle,
+                subtext: _r.candidateDescription,
+                actionLabel: _r.confirmButtonLabel,
+                tertiaryActionLabel: _r.declineButtonLabel,
+                tertiaryActionLink: ce,
               },
             }),
             z()(F, te.h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
-              type: 'input',
-              props: {
-                title: Rr.title,
-                description: Rr.description,
-                items: [{ dataKey: te.m.PUBLIC, label: Rr.websiteLabel, required: !0 }],
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
-              type: 'input',
-              props: {
-                title: dr.title,
-                description: dr.description,
-                items: Lt()(
-                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: dr.articleLabelGenerator, required: !0 }),
-                ),
-                addFieldText: dr.addFieldText,
-                allowAddFields: !0,
-                maxItems: 10,
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
-              type: 'info',
-              props: {
-                headline: sr.officeTitle,
-                subtext: sr.officeDescription,
-                actionLabel: sr.confirmButtonLabel,
-                tertiaryActionLabel: sr.declineButtonLabel,
-                tertiaryActionLink: Ee,
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
-              type: 'input',
-              props: {
-                title: fr.title,
-                description: fr.description,
-                items: [{ dataKey: te.m.PUBLIC, label: fr.websiteLabel, required: !0 }],
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
-              type: 'info',
-              props: {
-                headline: tr.officialTitle,
-                subtext: tr.officialDescription,
-                actionLabel: tr.confirmButtonLabel,
-                tertiaryActionLabel: tr.declineButtonLabel,
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
-              type: 'input',
-              props: {
-                title: _r.title,
-                description: _r.description,
-                items: Lt()(
-                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: _r.articleLabelGenerator, required: !0 }),
-                ),
-                addFieldText: _r.addFieldText,
-                allowAddFields: !0,
-                maxItems: 10,
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
-              type: 'info',
-              props: {
-                headline: sr.officialTitle,
-                subtext: sr.officialDescription,
-                actionLabel: sr.confirmButtonLabel,
-                tertiaryActionLabel: sr.declineButtonLabel,
-                tertiaryActionLink: Ee,
-              },
-            }),
-            z()(F, te.h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
               type: 'input',
               props: {
                 title: Lr.title,
@@ -5569,15 +5601,86 @@
                 items: [{ dataKey: te.m.PUBLIC, label: Lr.websiteLabel, required: !0 }],
               },
             }),
+            z()(F, te.h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
+              type: 'input',
+              props: {
+                title: Cr.title,
+                description: Cr.description,
+                items: Lt()(
+                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: Cr.articleLabelGenerator, required: !0 }),
+                ),
+                addFieldText: Cr.addFieldText,
+                allowAddFields: !0,
+                maxItems: 10,
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
+              type: 'info',
+              props: {
+                headline: _r.officeTitle,
+                subtext: _r.officeDescription,
+                actionLabel: _r.confirmButtonLabel,
+                tertiaryActionLabel: _r.declineButtonLabel,
+                tertiaryActionLink: ce,
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
+              type: 'input',
+              props: {
+                title: Fr.title,
+                description: Fr.description,
+                items: [{ dataKey: te.m.PUBLIC, label: Fr.websiteLabel, required: !0 }],
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
+              type: 'info',
+              props: {
+                headline: lr.officialTitle,
+                subtext: lr.officialDescription,
+                actionLabel: lr.confirmButtonLabel,
+                tertiaryActionLabel: lr.declineButtonLabel,
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
+              type: 'input',
+              props: {
+                title: Or.title,
+                description: Or.description,
+                items: Lt()(
+                  Array(5).fill({ dataKey: te.m.NEWS, labelGenerator: Or.articleLabelGenerator, required: !0 }),
+                ),
+                addFieldText: Or.addFieldText,
+                allowAddFields: !0,
+                maxItems: 10,
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
+              type: 'info',
+              props: {
+                headline: _r.officialTitle,
+                subtext: _r.officialDescription,
+                actionLabel: _r.confirmButtonLabel,
+                tertiaryActionLabel: _r.declineButtonLabel,
+                tertiaryActionLink: ce,
+              },
+            }),
+            z()(F, te.h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
+              type: 'input',
+              props: {
+                title: vr.title,
+                description: vr.description,
+                items: [{ dataKey: te.m.PUBLIC, label: vr.websiteLabel, required: !0 }],
+              },
+            }),
             z()(F, te.h.GOVERNMENT_SUBCATEGORY, {
               type: 'radio',
               props: {
-                title: qi.title,
-                description: qi.description,
+                title: er.title,
+                description: er.description,
                 items: [
-                  P()(P()({}, qi.items[0]), {}, { value: te.i.OFFICIAL }),
-                  P()(P()({}, qi.items[1]), {}, { value: te.i.CANDIDATE }),
-                  P()(P()({}, qi.items[2]), {}, { value: te.i.OFFICE }),
+                  P()(P()({}, er.items[0]), {}, { value: te.i.OFFICIAL }),
+                  P()(P()({}, er.items[1]), {}, { value: te.i.CANDIDATE }),
+                  P()(P()({}, er.items[2]), {}, { value: te.i.OFFICE }),
                 ],
                 getNextFormStep: function (e) {
                   return e === te.i.OFFICIAL
@@ -5593,33 +5696,33 @@
             z()(F, te.h.CONTENT_CREATOR_GOOGLE_TRENDS, {
               type: 'input',
               props: {
-                title: hi.title,
-                description: hi.description,
-                items: [{ dataKey: te.m.GOOGLE, label: hi.label, required: !0 }],
+                title: Mi.title,
+                description: Mi.description,
+                items: [{ dataKey: te.m.GOOGLE, label: Mi.label, required: !0 }],
               },
             }),
             z()(F, te.h.CONTENT_CREATOR_NEWS, {
               type: 'input',
               props: {
-                title: Fi.title,
-                description: Fi.description,
+                title: Gi.title,
+                description: Gi.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Fi.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Gi.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: Fi.addFieldText,
+                addFieldText: Gi.addFieldText,
                 maxItems: 10,
               },
             }),
             z()(F, te.h.CONTENT_CREATOR_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: fi.title,
-                description: fi.description,
+                title: Fi.title,
+                description: Fi.description,
                 items: [
-                  P()(P()({}, fi.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, fi.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, fi.items[2]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, Fi.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, Fi.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, Fi.items[2]), {}, { value: te.m.NEWS }),
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.GOOGLE
@@ -5635,49 +5738,49 @@
             z()(F, te.h.CONTENT_CREATOR_WIKIPEDIA, {
               type: 'input',
               props: {
-                title: Di.title,
-                description: Di.description,
-                items: [{ dataKey: te.m.WIKIPEDIA, label: Di.label, required: !0 }],
+                title: Pi.title,
+                description: Pi.description,
+                items: [{ dataKey: te.m.WIKIPEDIA, label: Pi.label, required: !0 }],
               },
             }),
             z()(F, te.h.CREATOR_PROFILE, {
               type: 'input',
               props: {
-                title: Si.title,
-                description: Si.description,
-                items: [{ dataKey: te.m.MAIN, label: Si.items[0].label, required: !0 }],
+                title: Ui.title,
+                description: Ui.description,
+                items: [{ dataKey: te.m.MAIN, label: Ui.items[0].label, required: !0 }],
               },
             }),
             z()(F, te.h.INFLUENCER_GOOGLE_TRENDS, {
               type: 'input',
               props: {
-                title: bn.title,
-                description: bn.description,
-                items: [{ dataKey: te.m.GOOGLE, label: bn.label, required: !0 }],
+                title: hn.title,
+                description: hn.description,
+                items: [{ dataKey: te.m.GOOGLE, label: hn.label, required: !0 }],
               },
             }),
             z()(F, te.h.INFLUENCER_NEWS, {
               type: 'input',
               props: {
-                title: mn.title,
-                description: mn.description,
+                title: Fn.title,
+                description: Fn.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: mn.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Fn.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: mn.addFieldText,
+                addFieldText: Fn.addFieldText,
                 maxItems: 10,
               },
             }),
             z()(F, te.h.INFLUENCER_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: pn.title,
-                description: pn.description,
+                title: Sn.title,
+                description: Sn.description,
                 items: [
-                  P()(P()({}, pn.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, pn.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, pn.items[2]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, Sn.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, Sn.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, Sn.items[2]), {}, { value: te.m.NEWS }),
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.GOOGLE
@@ -5693,52 +5796,62 @@
             z()(F, te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE, {
               type: 'info',
               props: {
-                headline: pn.notEligibleTitle,
-                subtext: pn.notEligibleDescription,
-                actionLabel: pn.notEligibleButton,
+                headline: Sn.notEligibleTitle,
+                subtext: Sn.notEligibleDescription,
+                actionLabel: Sn.notEligibleButton,
               },
             }),
-            z()(F, te.h.INFLUENCER_SUBCATEGORY, {
-              type: 'radio',
-              props: P()(
-                P()({}, un),
-                {},
-                {
-                  items: [
-                    P()(P()({}, un.items[0]), {}, { value: te.j.CONTENT_CREATOR }),
-                    P()(P()({}, un.items[1]), {}, { value: te.j.INFLUENTIAL_INDIVIDUAL }),
-                  ],
-                  getNextFormStep: function (e) {
-                    return e === te.j.CONTENT_CREATOR
-                      ? te.h.CONTENT_CREATOR_QUALIFICATIONS
-                      : e === te.j.INFLUENTIAL_INDIVIDUAL
-                      ? te.h.INFLUENCER_QUALIFICATIONS
-                      : void 0
+            z()(F, te.h.INFLUENCER_SUBCATEGORY, function (e) {
+              var t = e.followersEligible,
+                a = void 0 !== t && t,
+                n = e.mentionsEligible,
+                i = void 0 !== n && n
+              return {
+                type: 'radio',
+                props: P()(
+                  P()({}, bn),
+                  {},
+                  {
+                    items: [
+                      P()(P()({}, bn.items[0]), {}, { value: te.j.CONTENT_CREATOR }),
+                      P()(P()({}, bn.items[1]), {}, { value: te.j.INFLUENTIAL_INDIVIDUAL }),
+                    ],
+                    getNextFormStep: function (e) {
+                      return e === te.j.CONTENT_CREATOR
+                        ? a || i
+                          ? te.h.CONTENT_CREATOR_QUALIFICATIONS
+                          : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
+                        : e === te.j.INFLUENTIAL_INDIVIDUAL
+                        ? a || i
+                          ? te.h.INFLUENCER_QUALIFICATIONS
+                          : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
+                        : void 0
+                    },
                   },
-                },
-              ),
+                ),
+              }
             }),
             z()(F, te.h.INFLUENCER_WIKIPEDIA, {
               type: 'input',
               props: {
-                title: Cn.title,
-                description: Cn.description,
-                items: [{ dataKey: te.m.WIKIPEDIA, label: Cn.label, required: !0 }],
+                title: Dn.title,
+                description: Dn.description,
+                items: [{ dataKey: te.m.WIKIPEDIA, label: Dn.label, required: !0 }],
               },
             }),
             z()(F, te.h.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: io.title,
-                description: io.description,
+                title: Eo.title,
+                description: Eo.description,
                 items: Lt()(
                   Array(3).fill({
                     dataKey: te.m.ARTICLES,
-                    labelGenerator: io.articleNumerationLabelGenerator,
+                    labelGenerator: Eo.articleNumerationLabelGenerator,
                     required: !0,
                   }),
                 ),
-                addFieldText: io.addFieldText,
+                addFieldText: Eo.addFieldText,
                 allowAddFields: !0,
                 maxItems: 10,
               },
@@ -5746,16 +5859,16 @@
             z()(F, te.h.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: io.title,
-                description: io.description,
+                title: Eo.title,
+                description: Eo.description,
                 items: Lt()(
                   Array(3).fill({
                     dataKey: te.m.ARTICLES,
-                    labelGenerator: io.articleNumerationLabelGenerator,
+                    labelGenerator: Eo.articleNumerationLabelGenerator,
                     required: !0,
                   }),
                 ),
-                addFieldText: io.addFieldText,
+                addFieldText: Eo.addFieldText,
                 allowAddFields: !0,
                 maxItems: 10,
               },
@@ -5763,30 +5876,30 @@
             z()(F, te.h.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
               type: 'input',
               props: {
-                title: to.title,
-                description: to.description,
-                items: [{ dataKey: te.m.AUTHOR, label: to.websiteLabel, required: !0 }],
-                confirmationText: to.confirmationText,
+                title: ro.title,
+                description: ro.description,
+                items: [{ dataKey: te.m.AUTHOR, label: ro.websiteLabel, required: !0 }],
+                confirmationText: ro.confirmationText,
               },
             }),
             z()(F, te.h.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, {
               type: 'info',
               props: {
-                headline: Eo.title,
-                subtext: Eo.description,
-                actionLabel: Eo.actionLabel,
-                tertiaryActionLabel: Eo.tertiaryActionLabel,
+                headline: No.title,
+                subtext: No.description,
+                actionLabel: No.actionLabel,
+                tertiaryActionLabel: No.tertiaryActionLabel,
               },
             }),
             z()(F, te.h.NEWS_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: Mr.title,
-                description: Mr.description,
+                title: xr.title,
+                description: xr.description,
                 items: [
-                  { helpText: Mr.items[0].description, label: Mr.items[0].label, value: te.k.JOURNALIST },
-                  { helpText: Mr.items[1].description, label: Mr.items[1].label, value: te.k.FREELANCER },
-                  { helpText: Mr.items[2].description, label: Mr.items[2].label, value: te.k.ORGANIZATION },
+                  { helpText: xr.items[0].description, label: xr.items[0].label, value: te.k.JOURNALIST },
+                  { helpText: xr.items[1].description, label: xr.items[1].label, value: te.k.FREELANCER },
+                  { helpText: xr.items[2].description, label: xr.items[2].label, value: te.k.ORGANIZATION },
                 ],
                 getNextFormStep: function (e) {
                   return e === te.k.JOURNALIST
@@ -5801,17 +5914,17 @@
             }),
             z()(F, te.h.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
               type: 'info',
-              props: P()(P()({}, jr), {}, { tertiaryActionLink: Ee }),
+              props: P()(P()({}, $r), {}, { tertiaryActionLink: ce }),
             }),
-            z()(F, te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, { type: 'screenName', props: P()({}, Wr) }),
+            z()(F, te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, { type: 'screenName', props: P()({}, Kr) }),
             z()(F, te.h.NEWS_JOURNALIST_QUALIFICATIONS, {
               type: 'radio',
               props: {
-                title: Jr.title,
-                description: Jr.description,
+                title: ao.title,
+                description: ao.description,
                 items: [
-                  { helpText: Jr.items[0].description, label: Jr.items[0].label, value: te.m.AUTHOR },
-                  { helpText: Jr.items[1].description, label: Jr.items[1].label, value: te.m.ARTICLES },
+                  { helpText: ao.items[0].description, label: ao.items[0].label, value: te.m.AUTHOR },
+                  { helpText: ao.items[1].description, label: ao.items[1].label, value: te.m.ARTICLES },
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.ARTICLES
@@ -5825,11 +5938,11 @@
             z()(F, te.h.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
               type: 'info',
               props: {
-                headline: Yr.title,
-                subtext: Yr.description,
-                actionLabel: Yr.confirmButtonLabel,
-                tertiaryActionLabel: Yr.declineButtonLabel,
-                tertiaryActionLink: Ee,
+                headline: wr.title,
+                subtext: wr.description,
+                actionLabel: wr.confirmButtonLabel,
+                tertiaryActionLabel: wr.declineButtonLabel,
+                tertiaryActionLink: ce,
               },
             }),
             z()(F, te.h.NEWS_ORGANIZATION_QUALIFICATIONS, function (e) {
@@ -5840,16 +5953,16 @@
               return {
                 type: 'radio',
                 props: {
-                  title: Io.title,
-                  description: Io.description,
+                  title: _o.title,
+                  description: _o.description,
                   items: [
-                    { helpText: Io.items[0].description, label: Io.items[0].label, value: te.m.GOOGLE },
-                    { helpText: Io.items[1].description, label: Io.items[1].label, value: te.m.WIKIPEDIA },
-                    { helpText: Io.items[2].description, label: Io.items[2].label, value: te.m.STOCK },
+                    { helpText: _o.items[0].description, label: _o.items[0].label, value: te.m.GOOGLE },
+                    { helpText: _o.items[1].description, label: _o.items[1].label, value: te.m.WIKIPEDIA },
+                    { helpText: _o.items[2].description, label: _o.items[2].label, value: te.m.STOCK },
                   ].concat(
                     Lt()(
                       a || i
-                        ? [{ helpText: Io.items[3].description, label: Io.items[3].label, value: te.m.ARTICLES }]
+                        ? [{ helpText: _o.items[3].description, label: _o.items[3].label, value: te.m.ARTICLES }]
                         : [],
                     ),
                   ),
@@ -5875,9 +5988,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: uo.title,
-                  description: uo.description,
-                  items: [{ dataKey: te.m.GOOGLE, label: uo.label, required: !0 }],
+                  title: Ao.title,
+                  description: Ao.description,
+                  items: [{ dataKey: te.m.GOOGLE, label: Ao.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
                 },
@@ -5891,9 +6004,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: _o.title,
-                  description: _o.description,
-                  items: [{ dataKey: te.m.WIKIPEDIA, label: _o.label, required: !0 }],
+                  title: Co.title,
+                  description: Co.description,
+                  items: [{ dataKey: te.m.WIKIPEDIA, label: Co.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
                 },
@@ -5907,9 +6020,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Ao.title,
-                  description: Ao.description,
-                  items: [{ dataKey: te.m.STOCK, label: Ao.label, required: !0 }],
+                  title: Oo.title,
+                  description: Oo.description,
+                  items: [{ dataKey: te.m.STOCK, label: Oo.label, required: !0 }],
                   nextFormStep:
                     a || i ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
                 },
@@ -5918,37 +6031,73 @@
             z()(F, te.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: Ro.title,
-                description: Ro.description,
+                title: fo.title,
+                description: fo.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.ARTICLES, labelGenerator: Ro.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.ARTICLES, labelGenerator: fo.articleLabelGenerator, required: !0 }),
                 ),
-                addFieldText: Ro.addFieldText,
+                addFieldText: fo.addFieldText,
                 allowAddFields: !0,
                 maxItems: 10,
               },
             }),
+            z()(F, te.h.GAMING_SUBCATEGORY, function (e) {
+              var t = e.followersEligible,
+                a = void 0 !== t && t,
+                n = e.mentionsEligible,
+                i = void 0 !== n && n
+              return {
+                type: 'radio',
+                props: P()(
+                  P()({}, Uo),
+                  {},
+                  {
+                    items: [
+                      P()(P()({}, Uo.items[0]), {}, { value: te.r.GAMING_INDIVIDUAL }),
+                      P()(P()({}, Uo.items[1]), {}, { value: te.k.JOURNALIST }),
+                      P()(P()({}, Uo.items[2]), {}, { value: te.j.CONTENT_CREATOR }),
+                      P()(P()({}, Uo.items[3]), {}, { value: te.e.COMPANY }),
+                    ],
+                    getNextFormStep: function (e) {
+                      return e === te.r.GAMING_INDIVIDUAL
+                        ? a
+                          ? te.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM
+                          : te.h.GAMING_INDIVIDUAL_INELIGIBLE
+                        : e === te.k.JOURNALIST
+                        ? te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION
+                        : e === te.j.CONTENT_CREATOR
+                        ? a || i
+                          ? te.h.CONTENT_CREATOR_QUALIFICATIONS
+                          : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
+                        : e === te.e.COMPANY
+                        ? te.h.COMPANY_NOTABILITY_METHOD
+                        : void 0
+                    },
+                  },
+                ),
+              }
+            }),
             z()(F, te.h.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: ll.title,
-                description: ll.description,
+                title: Tl.title,
+                description: Tl.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: ll.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Tl.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: ll.addFieldText,
+                addFieldText: Tl.addFieldText,
                 maxItems: 10,
               },
             }),
             z()(F, te.h.GAMING_INDIVIDUAL_NOTABILITY_METHOD, {
               type: 'radio',
               props: {
-                title: tl.title,
-                description: tl.description,
+                title: ol.title,
+                description: ol.description,
                 items: [
-                  { helpText: tl.items[0].description, label: tl.items[0].label, value: te.m.NEWS },
-                  { helpText: tl.items[1].description, label: tl.items[1].label, value: te.m.TEAM },
+                  { helpText: ol.items[0].description, label: ol.items[0].label, value: te.m.NEWS },
+                  { helpText: ol.items[1].description, label: ol.items[1].label, value: te.m.TEAM },
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.TEAM
@@ -5962,46 +6111,46 @@
             z()(F, te.h.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
               type: 'input',
               props: {
-                title: ol.title,
-                description: ol.description,
-                items: [{ dataKey: te.m.TEAM, label: ol.websiteLabel, required: !0 }],
+                title: Il.title,
+                description: Il.description,
+                items: [{ dataKey: te.m.TEAM, label: Il.websiteLabel, required: !0 }],
               },
             }),
             z()(F, te.h.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
               type: 'input',
               props: {
-                title: il.title,
-                description: il.description,
+                title: cl.title,
+                description: cl.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: il.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: cl.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: il.addFieldText,
+                addFieldText: cl.addFieldText,
                 maxItems: 10,
               },
             }),
             z()(F, te.h.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
               type: 'input',
               props: {
-                title: nl.title,
-                description: nl.description,
-                items: [{ dataKey: te.m.TEAM, label: nl.websiteLabel, required: !0 }],
+                title: El.title,
+                description: El.description,
+                items: [{ dataKey: te.m.TEAM, label: El.websiteLabel, required: !0 }],
               },
             }),
             z()(F, te.h.SPORTS_ENTITY_NOTABILITY_METHOD, function (e) {
               var t = e.followersEligible,
                 a = void 0 !== t && t,
                 n = [
-                  P()(P()({}, Go.items[0]), {}, { value: te.m.GOOGLE }),
-                  P()(P()({}, Go.items[1]), {}, { value: te.m.WIKIPEDIA }),
-                  P()(P()({}, Go.items[2]), {}, { value: te.m.STOCK }),
-                  P()(P()({}, Go.items[3]), {}, { value: te.m.TEAM }),
-                  P()(P()({}, Go.items[4]), {}, { value: te.m.NEWS }),
+                  P()(P()({}, wo.items[0]), {}, { value: te.m.GOOGLE }),
+                  P()(P()({}, wo.items[1]), {}, { value: te.m.WIKIPEDIA }),
+                  P()(P()({}, wo.items[2]), {}, { value: te.m.STOCK }),
+                  P()(P()({}, wo.items[3]), {}, { value: te.m.TEAM }),
+                  P()(P()({}, wo.items[4]), {}, { value: te.m.NEWS }),
                 ]
               return {
                 type: 'radio',
                 props: P()(
-                  P()({}, Go),
+                  P()({}, wo),
                   {},
                   {
                     items: a ? n : n.slice(0, -1),
@@ -6027,9 +6176,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Vo.title,
-                  description: Vo.description,
-                  items: [{ dataKey: te.m.GOOGLE, label: Vo.label, required: !0 }],
+                  title: Ho.title,
+                  description: Ho.description,
+                  items: [{ dataKey: te.m.GOOGLE, label: Ho.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.SPORTS_ENTITY_NEWS_REFERENCE,
                 },
               }
@@ -6039,9 +6188,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Wo.title,
-                  description: Wo.description,
-                  items: [{ dataKey: te.m.WIKIPEDIA, label: Wo.label, required: !0 }],
+                  title: jo.title,
+                  description: jo.description,
+                  items: [{ dataKey: te.m.WIKIPEDIA, label: jo.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.SPORTS_ENTITY_NEWS_REFERENCE,
                 },
               }
@@ -6051,9 +6200,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: ko.title,
-                  description: ko.description,
-                  items: [{ dataKey: te.m.STOCK, label: ko.label, required: !0 }],
+                  title: Qo.title,
+                  description: Qo.description,
+                  items: [{ dataKey: te.m.STOCK, label: Qo.label, required: !0 }],
                   nextFormStep: t ? te.h.AUTHENTICITY_TYPE_SELECT : te.h.SPORTS_ENTITY_NEWS_REFERENCE,
                 },
               }
@@ -6063,9 +6212,9 @@
               return {
                 type: 'input',
                 props: {
-                  title: Ko.title,
-                  description: Ko.description,
-                  items: [{ dataKey: te.m.TEAM, label: Ko.label, required: !0 }],
+                  title: $o.title,
+                  description: $o.description,
+                  items: [{ dataKey: te.m.TEAM, label: $o.label, required: !0 }],
                   nextFormStep: t ? te.h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL : te.h.SPORTS_ENTITY_NEWS_REFERENCE,
                 },
               }
@@ -6073,26 +6222,26 @@
             z()(F, te.h.SPORTS_ENTITY_NEWS_REFERENCE, {
               type: 'input',
               props: {
-                title: zo.title,
-                description: zo.description,
+                title: Jo.title,
+                description: Jo.description,
                 items: Lt()(
-                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: zo.articleLabelGenerator, required: !0 }),
+                  Array(3).fill({ dataKey: te.m.NEWS, labelGenerator: Jo.articleLabelGenerator, required: !0 }),
                 ),
                 allowAddFields: !0,
-                addFieldText: zo.addFieldText,
+                addFieldText: Jo.addFieldText,
                 maxItems: 10,
               },
             }),
-            z()(F, te.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, Uo) }),
-            z()(F, te.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, Mo) }),
+            z()(F, te.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, Go) }),
+            z()(F, te.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: P()({}, Yo) }),
             z()(F, te.h.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, {
               type: 'radio',
               props: {
-                title: Zo.title,
-                description: Zo.description,
+                title: al.title,
+                description: al.description,
                 items: [
-                  { helpText: Zo.items[0].description, label: Zo.items[0].label, value: te.m.NEWS },
-                  { helpText: Zo.items[1].description, label: Zo.items[1].label, value: te.m.TEAM },
+                  { helpText: al.items[0].description, label: al.items[0].label, value: te.m.NEWS },
+                  { helpText: al.items[1].description, label: al.items[1].label, value: te.m.TEAM },
                 ],
                 getNextFormStep: function (e) {
                   return e === te.m.TEAM
@@ -6103,30 +6252,35 @@
                 },
               },
             }),
-            z()(F, te.h.GAMING_INDIVIDUAL_INELIGIBLE, { type: 'info', props: P()({}, go) }),
+            z()(F, te.h.GAMING_INDIVIDUAL_INELIGIBLE, { type: 'info', props: P()({}, Vo) }),
             z()(F, te.h.SPORTS_SUBCATEGORY, function (e) {
               var t = e.followersEligible,
-                a = void 0 !== t && t
+                a = void 0 !== t && t,
+                n = e.mentionsEligible,
+                i = void 0 !== n && n
               return {
                 type: 'radio',
                 props: P()(
-                  P()({}, ho),
+                  P()({}, vo),
                   {},
                   {
                     items: [
-                      P()(P()({}, ho.items[0]), {}, { value: te.q.SPORTS_INDIVIDUAL }),
-                      P()(P()({}, ho.items[1]), {}, { value: te.q.SPORTS_ENTITY }),
-                      P()(P()({}, ho.items[2]), {}, { value: te.q.GAMING_INDIVIDUAL }),
+                      P()(P()({}, vo.items[0]), {}, { value: te.r.SPORTS_INDIVIDUAL }),
+                      P()(P()({}, vo.items[1]), {}, { value: te.r.SPORTS_ENTITY }),
+                      P()(P()({}, vo.items[2]), {}, { value: te.k.JOURNALIST }),
+                      P()(P()({}, vo.items[3]), {}, { value: te.j.CONTENT_CREATOR }),
                     ],
                     getNextFormStep: function (e) {
-                      return e === te.q.SPORTS_INDIVIDUAL
+                      return e === te.r.SPORTS_INDIVIDUAL
                         ? te.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM
-                        : e === te.q.SPORTS_ENTITY
+                        : e === te.r.SPORTS_ENTITY
                         ? te.h.SPORTS_ENTITY_NOTABILITY_METHOD
-                        : e === te.q.GAMING_INDIVIDUAL
-                        ? a
-                          ? te.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM
-                          : te.h.GAMING_INDIVIDUAL_INELIGIBLE
+                        : e === te.k.JOURNALIST
+                        ? te.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION
+                        : e === te.j.CONTENT_CREATOR
+                        ? a || i
+                          ? te.h.CONTENT_CREATOR_QUALIFICATIONS
+                          : te.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE
                         : void 0
                     },
                   },
@@ -6135,7 +6289,7 @@
             }),
             F),
           )),
-        bE = Object.freeze(
+        fc = Object.freeze(
           ((U = {}),
           z()(U, te.h.TEST_INPUT, {
             type: 'input',
@@ -6206,78 +6360,78 @@
           }),
           U),
         ),
-        RE = Object.freeze(P()(P()(P()({}, pE), AE), bE)),
-        CE = function (e) {
-          var t = Object(Qe.y)(e)
+        Sc = Object.freeze(P()(P()(P()({}, Oc), mc), fc)),
+        Lc = function (e) {
+          var t = Object(qe.y)(e)
           return null != t && t.radioData ? t.radioData : ''
         },
-        mE = Object(qe.a)()
+        hc = Object(Qe.a)()
           .propsFromState(function () {
-            return { currentStep: Qe.z, formHistory: CE }
+            return { currentStep: qe.z, formHistory: Lc }
           })
           .propsFromActions(function () {
-            return { setFormStepData: Qe.R, setNextFlow: Qe.V, updateFormHistory: Qe.Y }
+            return { setFormStepData: qe.R, setNextFlow: qe.V, updateFormHistory: qe.Y }
           })
           .withAnalytics(),
-        OE = a('fyvP'),
-        fE = Z.a.c1df579e,
-        SE = de.a.create(function (e) {
+        yc = a('fyvP'),
+        Dc = Z.a.c1df579e,
+        Fc = ue.a.create(function (e) {
           return {
             radioContainer: {
               paddingRight: 'calc('.concat(e.spaces.space12, ' + ').concat(e.borderWidths.medium, ')'),
             },
           }
         }),
-        LE = mE(function (e) {
+        Uc = hc(function (e) {
           var t = e.analytics,
             a = e.buttonText,
-            n = void 0 === a ? fE : a,
+            n = void 0 === a ? Dc : a,
             i = e.currentStep,
             r = e.description,
             o = e.footer,
             l = e.formHistory,
-            c = e.getNextFormStep,
-            E = e.isNarrow,
+            E = e.getNextFormStep,
+            c = e.isNarrow,
             s = e.items,
             I = e.setFormStepData,
             T = e.setNextFlow,
-            u = e.title,
-            d = e.updateFormHistory,
-            N = Q.a.useState(l),
-            _ = Te()(N, 2),
+            N = e.title,
+            u = e.updateFormHistory,
+            d = q.a.useState(l),
+            _ = Te()(d, 2),
             p = _[0],
             A = _[1]
-          Q.a.useEffect(
+          q.a.useEffect(
             function () {
               A(l), I(i, l)
             },
             [i, l, I],
           )
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: [Ne.container, E && Ne.narrowContainer] },
-            Q.a.createElement(
+            { style: [de.container, c && de.narrowContainer] },
+            q.a.createElement(
               pe.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
-                nativeID: ue.b,
+                nativeID: Ne.b,
                 size: 'title4',
-                style: Ne.header,
+                style: de.header,
                 weight: 'heavy',
               },
-              u,
+              N,
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              r && Q.a.createElement(pe.b, { color: 'gray700' }, r),
-              Q.a.createElement(
+              { style: de.scrollableContainer },
+              r && q.a.createElement(pe.b, { color: 'gray700' }, r),
+              q.a.createElement(
                 _e.a,
-                { style: [Ne.contentContainer, SE.radioContainer] },
-                Q.a.createElement(OE.a, {
-                  accessibilityLabel: u,
-                  name: ''.concat(u, '-radiogroup'),
+                { style: [de.contentContainer, Fc.radioContainer] },
+                q.a.createElement(yc.a, {
+                  accessibilityLabel: N,
+                  name: ''.concat(N, '-radiogroup'),
                   onChange: function (e, t) {
                     A(t), I(i, t)
                   },
@@ -6285,9 +6439,9 @@
                   value: p,
                 }),
               ),
-              o && Q.a.createElement(pe.b, { color: 'gray700' }, o),
+              o && q.a.createElement(pe.b, { color: 'gray700' }, o),
             ),
-            Q.a.createElement(
+            q.a.createElement(
               Ae.a,
               {
                 disabled: !p,
@@ -6316,123 +6470,123 @@
                       },
                     )),
                     t.scribe(e),
-                    d(p || '')
-                  var a = c(p)
+                    u(p || '')
+                  var a = E(p)
                   a && T(a)
                 },
-                style: Ne.buttonFixed,
+                style: de.buttonFixed,
                 type: 'brandFilled',
               },
               n,
             ),
           )
         }),
-        hE = a('5FtR'),
-        yE = Object(qe.a)().propsFromActions(function () {
-          return { setNextFlow: Qe.V }
+        vc = a('5FtR'),
+        Mc = Object(Qe.a)().propsFromActions(function () {
+          return { setNextFlow: qe.V }
         }),
-        DE = a('EweD'),
-        FE = 'verification-checkbox-label',
-        UE = Z.a.c1df579e,
-        vE = Z.a.a6278dcb,
-        ME = function (e) {
+        gc = a('EweD'),
+        Pc = 'verification-checkbox-label',
+        Gc = Z.a.c1df579e,
+        xc = Z.a.a6278dcb,
+        Yc = function (e) {
           return !e.match(/\W/g)
         },
-        gE = de.a.create(function (e) {
+        Vc = ue.a.create(function (e) {
           return { input: { paddingHorizontal: 0 }, checkboxContainer: { paddingTop: 0 } }
         }),
-        PE = yE(function (e) {
+        Bc = Mc(function (e) {
           var t = e.buttonText,
-            a = void 0 === t ? UE : t,
+            a = void 0 === t ? Gc : t,
             n = e.confirmationText,
             i = e.description,
             r = e.isNarrow,
             o = e.setNextFlow,
             l = e.title,
-            c = Q.a.useState(''),
-            E = Te()(c, 2),
-            s = E[0],
-            I = E[1],
-            T = Q.a.useState(!1),
-            u = Te()(T, 2),
-            d = u[0],
-            N = u[1],
-            _ = Q.a.useState(!0),
+            E = q.a.useState(''),
+            c = Te()(E, 2),
+            s = c[0],
+            I = c[1],
+            T = q.a.useState(!1),
+            N = Te()(T, 2),
+            u = N[0],
+            d = N[1],
+            _ = q.a.useState(!0),
             p = Te()(_, 2),
             A = p[0],
-            b = p[1]
+            R = p[1]
           return (
-            Q.a.useEffect(
+            q.a.useEffect(
               function () {
-                var e = !!s && ME(s)
-                b(!e || !(!n || d))
+                var e = !!s && Yc(s)
+                R(!e || !(!n || u))
               },
-              [n, d, s, b],
+              [n, u, s, R],
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: [Ne.container, r && Ne.narrowContainer] },
-              Q.a.createElement(
+              { style: [de.container, r && de.narrowContainer] },
+              q.a.createElement(
                 pe.b,
                 {
                   accessibilityLevel: 1,
                   accessibilityRole: 'heading',
-                  nativeID: ue.b,
+                  nativeID: Ne.b,
                   size: 'title4',
-                  style: Ne.header,
+                  style: de.header,
                   weight: 'heavy',
                 },
                 l,
               ),
-              Q.a.createElement(
+              q.a.createElement(
                 _e.a,
-                { style: Ne.scrollableContainer },
-                i && Q.a.createElement(pe.b, { color: 'gray700' }, i),
-                Q.a.createElement(
+                { style: de.scrollableContainer },
+                i && q.a.createElement(pe.b, { color: 'gray700' }, i),
+                q.a.createElement(
                   _e.a,
-                  { accessibilityLabelledBy: ue.b, accessibilityRole: 'group', style: Ne.contentContainer },
-                  Q.a.createElement(xt.a, {
-                    Icon: DE.a,
-                    invalid: !ME(s),
-                    label: vE,
+                  { accessibilityLabelledBy: Ne.b, accessibilityRole: 'group', style: de.contentContainer },
+                  q.a.createElement(Gt.a, {
+                    Icon: gc.a,
+                    invalid: !Yc(s),
+                    label: xc,
                     name: '',
                     onChange: function (e) {
                       return I(e.target.value)
                     },
-                    style: gE.input,
+                    style: Vc.input,
                     value: s,
                   }),
                 ),
                 n &&
-                  Q.a.createElement(
+                  q.a.createElement(
                     _e.a,
-                    { style: [Ne.contentContainer, Ne.checkboxContainer, gE.checkboxContainer] },
-                    Q.a.createElement(
+                    { style: [de.contentContainer, de.checkboxContainer, Vc.checkboxContainer] },
+                    q.a.createElement(
                       _e.a,
-                      { style: Ne.checkbox },
-                      Q.a.createElement(Gt.a, {
-                        accessibilityLabelledBy: FE,
-                        checked: d,
+                      { style: de.checkbox },
+                      q.a.createElement(xt.a, {
+                        accessibilityLabelledBy: Pc,
+                        checked: u,
                         onChange: function () {
-                          return N(!d)
+                          return d(!u)
                         },
                       }),
                     ),
-                    Q.a.createElement(
+                    q.a.createElement(
                       _e.a,
-                      { nativeID: FE, style: Ne.checkboxText },
-                      Q.a.createElement(pe.b, { color: 'gray700' }, n),
+                      { nativeID: Pc, style: de.checkboxText },
+                      q.a.createElement(pe.b, { color: 'gray700' }, n),
                     ),
                   ),
               ),
-              Q.a.createElement(
+              q.a.createElement(
                 Ae.a,
                 {
                   disabled: A,
                   onClick: function () {
                     return o()
                   },
-                  style: Ne.buttonFixed,
+                  style: de.buttonFixed,
                   type: 'brandFilled',
                 },
                 a,
@@ -6440,11 +6594,11 @@
             )
           )
         }),
-        xE = a('7JQg'),
-        GE = (a('hBvt'), a('v6aA')),
-        YE = Z.a.ec6801cb,
-        VE = Z.a.j24c37b2,
-        BE = function (e) {
+        Wc = a('7JQg'),
+        wc = (a('hBvt'), a('v6aA')),
+        kc = Z.a.ec6801cb,
+        Hc = Z.a.j24c37b2,
+        Kc = function (e) {
           var t,
             a = e.daysForDecision,
             n = void 0 === a ? 14 : a,
@@ -6452,86 +6606,86 @@
             r = e.link,
             o = e.onSurveyClick,
             l = e.surveyUrl,
-            c = Q.a.useContext(GE.a).featureSwitches.isTrue('identity_verification_notable_demo_survey')
-          return Q.a.createElement(
+            E = q.a.useContext(wc.a).featureSwitches.isTrue('identity_verification_notable_demo_survey')
+          return q.a.createElement(
             _e.a,
-            { style: Ne.largeBannerContainer },
-            Q.a.createElement(ke, { isNarrow: i, type: Be.SENT }),
-            Q.a.createElement(
+            { style: de.largeBannerContainer },
+            q.a.createElement(ke, { isNarrow: i, type: Be.SENT }),
+            q.a.createElement(
               _e.a,
-              { style: [Ne.container, Ne.verticalCenter, i && Ne.narrowContainer] },
-              Q.a.createElement(
+              { style: [de.container, de.verticalCenter, i && de.narrowContainer] },
+              q.a.createElement(
                 pe.b,
                 {
                   accessibilityLevel: 1,
                   accessibilityRole: 'heading',
-                  nativeID: ue.b,
+                  nativeID: Ne.b,
                   size: 'title4',
-                  style: Ne.header,
+                  style: de.header,
                   weight: 'heavy',
                 },
-                YE,
+                kc,
               ),
-              Q.a.createElement(
+              q.a.createElement(
                 pe.b,
                 { color: 'gray700' },
                 ((t = n),
-                Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'a1c39f5b', days: Pt.a.getFormattedCount(t) })),
+                q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'a1c39f5b', days: Pt.a.getFormattedCount(t) })),
               ),
-              c &&
+              E &&
                 l &&
-                Q.a.createElement(
+                q.a.createElement(
                   pe.b,
-                  { color: 'gray700', style: Ne.text },
-                  Q.a.createElement(
+                  { color: 'gray700', style: de.text },
+                  q.a.createElement(
                     Z.a.I18NFormatMessage,
                     { $i18n: 'ja826537' },
-                    Q.a.createElement(
+                    q.a.createElement(
                       pe.b,
                       { link: { pathname: l, openInSameFrame: ee.b.isAndroid() && ee.b.isTwitterApp() }, onClick: o },
                       Z.a.i6ef95ec,
                     ),
                   ),
                 ),
-              Q.a.createElement(
+              q.a.createElement(
                 Ae.a,
-                { link: { pathname: r, openInSameFrame: !0 }, style: Ne.buttonPadded, type: 'brandFilled' },
-                VE,
+                { link: { pathname: r, openInSameFrame: !0 }, style: de.buttonPadded, type: 'brandFilled' },
+                Hc,
               ),
             ),
           )
         },
-        WE = Z.a.b772cd65,
-        wE = Z.a.j3da4de9,
-        kE = function (e) {
+        jc = Z.a.b772cd65,
+        zc = Z.a.j3da4de9,
+        Qc = function (e) {
           var t = Z.a.da44942d,
             a = new Date(e)
-          return Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'b7be91be', date: t(a) })
+          return q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'b7be91be', date: t(a) })
         },
-        HE = Z.a.j94e995e,
-        KE = Z.a.da458d6c,
-        jE = Z.a.j4ed9f0e,
-        zE = Z.a.b1ade78f,
-        qE = Z.a.b1ade78f,
-        QE = Z.a.j3da4de9,
-        $E = function (e) {
+        qc = Z.a.j94e995e,
+        $c = Z.a.da458d6c,
+        Zc = Z.a.j4ed9f0e,
+        Jc = Z.a.b1ade78f,
+        Xc = Z.a.b1ade78f,
+        es = Z.a.j3da4de9,
+        ts = function (e) {
           var t = Z.a.da44942d,
             a = new Date(e)
-          return Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'jcb00a94', date: t(a) })
+          return q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'jcb00a94', date: t(a) })
         },
-        ZE = Z.a.aab67626,
-        JE = function (e) {
+        as = Z.a.aab67626,
+        ns = function (e) {
           var t = Z.a.da44942d,
             a = new Date(e)
-          return Q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'j92ea4b8', date: t(a) })
+          return q.a.createElement(Z.a.I18NFormatMessage, { $i18n: 'j92ea4b8', date: t(a) })
         },
-        XE = Z.a.d3c1e25e,
-        es = Q.a.createElement(
+        is = Z.a.d3c1e25e,
+        rs = q.a.createElement(
           Z.a.I18NFormatMessage,
           { $i18n: 'jcd067dd' },
-          Q.a.createElement(pe.b, { link: 'https://help.twitter.com/rules-and-policies/twitter-rules' }, Z.a.g0bfb17a),
+          q.a.createElement(pe.b, { link: 'https://help.twitter.com/rules-and-policies/twitter-rules' }, Z.a.g0bfb17a),
         ),
-        ts = function (e) {
+        os = function (e) {
           var t,
             a = e.applicationSubmissionTimeInMs,
             n = e.decisionMadeTimeInMs,
@@ -6539,66 +6693,66 @@
             r = e.link,
             o = e.status,
             l = ((t = {}),
-            z()(t, te.a.DISABLED, { title: El, content: sl, button: cl }),
+            z()(t, te.a.DISABLED, { title: ul, content: dl, button: Nl }),
             z()(t, te.a.INTAKE_PROGRESS, { title: null, content: null, button: null }),
-            z()(t, te.a.LOCKED, { title: wE, content: n ? kE(n) : KE, button: cl }),
-            z()(t, te.a.NEW_ACCOUNT, { title: wE, content: qE, button: cl }),
-            z()(t, te.a.NOT_ELIGIBLE, { title: wE, content: zE, button: cl }),
+            z()(t, te.a.LOCKED, { title: zc, content: n ? Qc(n) : $c, button: Nl }),
+            z()(t, te.a.NEW_ACCOUNT, { title: zc, content: Xc, button: Nl }),
+            z()(t, te.a.NOT_ELIGIBLE, { title: zc, content: Jc, button: Nl }),
             z()(t, te.a.NOT_STARTED, { title: null, content: null, button: null }),
-            z()(t, te.a.VERIFICATION_DENIED, { title: QE, content: n ? $E(n) : HE, button: WE }),
-            z()(t, te.a.VERIFICATION_PENDING, { title: ZE, content: a ? JE(a) : jE, button: WE }),
-            z()(t, te.a.VERIFIED, { title: XE, content: es, button: WE }),
+            z()(t, te.a.VERIFICATION_DENIED, { title: es, content: n ? ts(n) : qc, button: jc }),
+            z()(t, te.a.VERIFICATION_PENDING, { title: as, content: a ? ns(a) : Zc, button: jc }),
+            z()(t, te.a.VERIFIED, { title: is, content: rs, button: jc }),
             t)[o],
-            c = l.button,
-            E = l.content,
+            E = l.button,
+            c = l.content,
             s = l.title
-          return s && E
-            ? Q.a.createElement(
+          return s && c
+            ? q.a.createElement(
                 _e.a,
-                { style: [Ne.container, Ne.verticalCenter, Ne.appBarOffset, i && Ne.narrowContainer] },
-                Q.a.createElement(
+                { style: [de.container, de.verticalCenter, de.appBarOffset, i && de.narrowContainer] },
+                q.a.createElement(
                   pe.b,
                   {
                     accessibilityLevel: 1,
                     accessibilityRole: 'heading',
-                    nativeID: ue.b,
+                    nativeID: Ne.b,
                     size: 'title4',
-                    style: Ne.header,
+                    style: de.header,
                     weight: 'heavy',
                   },
                   s,
                 ),
-                Q.a.createElement(pe.b, { color: 'gray700' }, E),
-                Q.a.createElement(
+                q.a.createElement(pe.b, { color: 'gray700' }, c),
+                q.a.createElement(
                   Ae.a,
-                  { link: { pathname: r, openInSameFrame: !0 }, style: Ne.buttonPadded, type: 'brandFilled' },
-                  c,
+                  { link: { pathname: r, openInSameFrame: !0 }, style: de.buttonPadded, type: 'brandFilled' },
+                  E,
                 ),
               )
             : null
         },
-        as = a('zh9S'),
-        ns = a('vEo5'),
-        is = { page: 'settings', section: 'account_verification' },
-        rs = Object(qe.a)()
+        ls = a('zh9S'),
+        Es = a('vEo5'),
+        cs = { page: 'settings', section: 'account_verification' },
+        ss = Object(Qe.a)()
           .propsFromState(function () {
             return {
-              access: Qe.m,
-              accessFetchStatus: Qe.n,
-              accountEligibility: Qe.o,
-              accountViolations: Qe.p,
-              authenticityType: Qe.t,
-              currentStep: Qe.z,
-              documentFormats: Qe.A,
-              idCountry: Qe.G,
-              idType: Qe.I,
-              initialIntakeFetchStatus: Qe.K,
-              surveyUrl: Qe.O,
-              userEmail: ns.selectFirstEmail,
-              verifyAccountFetchStatus: Qe.P,
-              notabilityCategory: Qe.L,
-              notabilityData: Qe.M,
-              notabilitySubcategory: Qe.N,
+              access: qe.m,
+              accessFetchStatus: qe.n,
+              accountEligibility: qe.o,
+              accountViolations: qe.p,
+              authenticityType: qe.t,
+              currentStep: qe.z,
+              documentFormats: qe.A,
+              idCountry: qe.G,
+              idType: qe.I,
+              initialIntakeFetchStatus: qe.K,
+              surveyUrl: qe.O,
+              userEmail: Es.selectFirstEmail,
+              verifyAccountFetchStatus: qe.P,
+              notabilityCategory: qe.L,
+              notabilityData: qe.M,
+              notabilitySubcategory: qe.N,
             }
           })
           .adjustStateProps(function (e) {
@@ -6609,14 +6763,14 @@
               r = e.authenticityType,
               o = e.currentStep,
               l = e.documentFormats,
-              c = e.idCountry,
-              E = e.idType,
+              E = e.idCountry,
+              c = e.idType,
               s = e.initialIntakeFetchStatus,
               I = e.notabilityCategory,
               T = e.notabilityData,
-              u = e.notabilitySubcategory,
-              d = e.surveyUrl,
-              N = e.userEmail,
+              N = e.notabilitySubcategory,
+              u = e.surveyUrl,
+              d = e.userEmail,
               _ = e.verifyAccountFetchStatus
             return {
               accessFetchStatus: a,
@@ -6628,16 +6782,16 @@
               decisionMadeTimeInMs: t.decisionMadeTimeInMs,
               documentFormats: l,
               followersEligible: n.followers_eligible,
-              idCountry: c,
-              idType: E,
+              idCountry: E,
+              idType: c,
               initialIntakeFetchStatus: s,
               mentionsEligible: n.mentions_eligible,
-              surveyUrl: d,
-              userEmail: N,
+              surveyUrl: u,
+              userEmail: d,
               verifyAccountFetchStatus: _,
               notabilityCategory: I,
               notabilityData: T,
-              notabilitySubcategory: u,
+              notabilitySubcategory: N,
             }
           })
           .propsFromActions(function () {
@@ -6645,60 +6799,60 @@
               createLocalApiErrorHandler: Object(zt.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_VERIFICATION',
               ),
-              fetchAccessIfNeeded: Qe.b,
-              fetchAccountEligibility: Qe.c,
-              fetchAccountViolations: Qe.d,
-              fetchDevices: ns.fetchDevicesIfNeeded,
-              fetchDocumentFormats: Qe.g,
-              googleAnalyticsPageView: as.a,
-              resetFlow: Qe.j,
-              resetSubmitVerification: Qe.l,
-              setFormStepData: Qe.R,
-              setIdCountry: Qe.T,
-              setIdType: Qe.U,
-              setNextFlow: Qe.V,
-              setPreviousFlow: Qe.W,
-              verifyAccount: Qe.Z,
+              fetchAccessIfNeeded: qe.b,
+              fetchAccountEligibility: qe.c,
+              fetchAccountViolations: qe.d,
+              fetchDevices: Es.fetchDevicesIfNeeded,
+              fetchDocumentFormats: qe.g,
+              googleAnalyticsPageView: ls.a,
+              resetFlow: qe.j,
+              resetSubmitVerification: qe.l,
+              setFormStepData: qe.R,
+              setIdCountry: qe.T,
+              setIdType: qe.U,
+              setNextFlow: qe.V,
+              setPreviousFlow: qe.W,
+              verifyAccount: qe.Z,
             }
           })
-          .withAnalytics(is),
-        os = 'info',
-        ls = 'input',
-        cs = 'pivot',
-        Es = 'radio',
-        ss = 'screenName',
-        Is = a('oQhu'),
-        Ts = a('0zXz'),
-        us = a('cHvH'),
-        ds =
+          .withAnalytics(cs),
+        Is = 'info',
+        Ts = 'input',
+        Ns = 'pivot',
+        us = 'radio',
+        ds = 'screenName',
+        _s = a('oQhu'),
+        ps = a('0zXz'),
+        As = a('cHvH'),
+        Rs =
           (a('ulNE'),
           a('urw/'),
           a('1IsZ'),
-          Object(qe.a)()
+          Object(Qe.a)()
             .propsFromState(function () {
               return {
-                authenticityType: Qe.t,
-                authenticityData: Qe.s,
-                idCountryName: Qe.H,
-                idTypeName: Qe.J,
-                notabilityCategory: Qe.L,
-                notabilitySubcategory: Qe.N,
-                notabilityData: Qe.M,
+                authenticityType: qe.t,
+                authenticityData: qe.s,
+                idCountryName: qe.H,
+                idTypeName: qe.J,
+                notabilityCategory: qe.L,
+                notabilitySubcategory: qe.N,
+                notabilityData: qe.M,
               }
             })
             .propsFromActions(function () {
-              return { verifyAccount: Qe.Z }
+              return { verifyAccount: qe.Z }
             })),
-        Ns = a('3A2y'),
-        _s = Z.a.a91bb144,
-        ps = Z.a.affce770,
-        As = Z.a.i0864917,
-        bs = Z.a.c7942073,
-        Rs = Z.a.b8121da9,
-        Cs = Z.a.d247ca7f,
-        ms = Z.a.b51afbb2,
-        Os = Z.a.cc87b01c,
-        fs = function (e) {
+        Cs = a('3A2y'),
+        bs = Z.a.a91bb144,
+        Os = Z.a.affce770,
+        ms = Z.a.i0864917,
+        fs = Z.a.c7942073,
+        Ss = Z.a.b8121da9,
+        Ls = Z.a.d247ca7f,
+        hs = Z.a.b51afbb2,
+        ys = Z.a.cc87b01c,
+        Ds = function (e) {
           var t,
             a,
             n,
@@ -6706,51 +6860,51 @@
             r = e.authenticityType,
             o = e.createLocalApiErrorHandler,
             l = e.handleOnClick,
-            c = e.isNarrow,
-            E = e.notabilityCategory,
+            E = e.isNarrow,
+            c = e.notabilityCategory,
             s = e.notabilityData,
             I = e.notabilitySubcategory,
             T = e.verifyAccount,
-            u = function (e) {
-              return Q.a.createElement(pe.b, { size: 'subtext2', style: Ne.subheading, weight: 'heavy' }, e)
+            N = function (e) {
+              return q.a.createElement(pe.b, { size: 'subtext2', style: de.subheading, weight: 'heavy' }, e)
             }
-          return Q.a.createElement(
+          return q.a.createElement(
             _e.a,
-            { style: [Ne.container, c && Ne.narrowContainer] },
-            Q.a.createElement(
+            { style: [de.container, E && de.narrowContainer] },
+            q.a.createElement(
               pe.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
-                nativeID: ue.b,
+                nativeID: Ne.b,
                 size: 'title4',
-                style: Ne.header,
+                style: de.header,
                 weight: 'heavy',
               },
-              Os,
+              ys,
             ),
-            Q.a.createElement(
+            q.a.createElement(
               _e.a,
-              { style: Ne.scrollableContainer },
-              Q.a.createElement(pe.b, { color: 'gray700' }, Cs),
-              u(As),
-              E && Q.a.createElement(pe.b, { style: Ne.subtext }, Al[E]),
+              { style: de.scrollableContainer },
+              q.a.createElement(pe.b, { color: 'gray700' }, Ls),
+              N(ms),
+              c && q.a.createElement(pe.b, { style: de.subtext }, ml[c]),
               I &&
-                ((i = Rl[I]), Q.a.createElement(_e.a, null, u(bs), Q.a.createElement(pe.b, { style: Ne.subtext }, i))),
+                ((i = Sl[I]), q.a.createElement(_e.a, null, N(fs), q.a.createElement(pe.b, { style: de.subtext }, i))),
               s &&
                 (function (e) {
-                  var t = Object(Ns.a)(e, 'newsType'),
+                  var t = Object(Cs.a)(e, 'newsType'),
                     a = Object.values(t).flat()
-                  return Q.a.createElement(
+                  return q.a.createElement(
                     _e.a,
                     null,
-                    u(Rs),
+                    N(Ss),
                     a.map(function (e, t) {
-                      return Q.a.createElement(pe.b, { key: t, style: Ne.subtext }, e)
+                      return q.a.createElement(pe.b, { key: t, style: de.subtext }, e)
                     }),
                   )
                 })(s),
-              u(ms),
+              N(hs),
               r &&
                 ((t = r),
                 (a = {}),
@@ -6758,35 +6912,35 @@
                 z()(a, te.d.EMAIL, Z.a.a411926a),
                 z()(a, te.d.WEBSITE, Z.a.e1c78795),
                 (n = a[t]),
-                Q.a.createElement(pe.b, { style: Ne.subtext }, n)),
-              Q.a.createElement(pe.b, { color: 'gray700', style: Ne.contentContainer }, ps),
+                q.a.createElement(pe.b, { style: de.subtext }, n)),
+              q.a.createElement(pe.b, { color: 'gray700', style: de.contentContainer }, Os),
             ),
-            Q.a.createElement(
+            q.a.createElement(
               Ae.a,
               {
                 onClick: function () {
                   T().catch(o()), l()
                 },
-                style: Ne.buttonFixed,
+                style: de.buttonFixed,
                 type: 'brandFilled',
               },
-              _s,
+              bs,
             ),
           )
         },
-        Ss = ds(fs),
-        Ls = 'INITIAL_FETCH_STATUS_RENDERER',
-        hs = 'SUBMIT_FETCH_STATUS_RENDERER',
-        ys = Z.a.g61ed8a4,
-        Ds = function (e) {
+        Fs = Rs(Ds),
+        Us = 'INITIAL_FETCH_STATUS_RENDERER',
+        vs = 'SUBMIT_FETCH_STATUS_RENDERER',
+        Ms = Z.a.g61ed8a4,
+        gs = function (e) {
           return null
         },
-        Fs = (function (e) {
+        Ps = (function (e) {
           k()(a, e)
           var t = K()(a)
           function a() {
             var e
-            G()(this, a)
+            x()(this, a)
             for (var n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
@@ -6800,7 +6954,7 @@
                 return null === (t = e.violations) || void 0 === t
                   ? void 0
                   : t.some(function (e) {
-                      return e.violation_status === te.s.OUT_OF_COMPLIANCE
+                      return e.violation_status === te.t.OUT_OF_COMPLIANCE
                     })
               }),
               z()(
@@ -6833,14 +6987,14 @@
               z()(
                 W()(e),
                 '_getMemoizedVerificationScribeNamespace',
-                Object(Is.a)(function (e) {
+                Object(_s.a)(function (e) {
                   return Mt(e)
                 }),
               ),
               z()(
                 W()(e),
                 '_getMemoizedVerificationScribeData',
-                Object(Is.a)(function (e) {
+                Object(_s.a)(function (e) {
                   var t = e.accessStatus,
                     a = e.authenticityType,
                     n = e.currentStep,
@@ -6848,9 +7002,9 @@
                     r = e.idType,
                     o = e.mentionsEligible,
                     l = e.notabilityCategory,
-                    c = e.notabilityData,
-                    E = e.notabilitySubcategory
-                  return gt(t, a, n, i, r, o, l, c, E)
+                    E = e.notabilityData,
+                    c = e.notabilitySubcategory
+                  return gt(t, a, n, i, r, o, l, E, c)
                 }),
               ),
               z()(W()(e), '_scribeAction', function (t, a) {
@@ -6859,12 +7013,12 @@
                   r = n.analytics,
                   o = n.authenticityType,
                   l = n.currentStep,
-                  c = n.followersEligible,
-                  E = n.idType,
+                  E = n.followersEligible,
+                  c = n.idType,
                   s = n.mentionsEligible,
                   I = n.notabilityCategory,
                   T = n.notabilityData,
-                  u = n.notabilitySubcategory
+                  N = n.notabilitySubcategory
                 r.scribe(
                   P()(
                     P()({}, e._getMemoizedVerificationScribeNamespace(l)),
@@ -6875,12 +7029,12 @@
                         accessStatus: i,
                         authenticityType: o,
                         currentStep: l,
-                        followersEligible: c,
-                        idType: E,
+                        followersEligible: E,
+                        idType: c,
                         mentionsEligible: s,
                         notabilityCategory: I,
                         notabilityData: T,
-                        notabilitySubcategory: u,
+                        notabilitySubcategory: N,
                       }),
                       element: a,
                     },
@@ -6895,14 +7049,14 @@
                   r = a.currentStep,
                   o = a.decisionMadeTimeInMs,
                   l = a.documentFormats,
-                  c = a.idCountry,
-                  E = a.initialIntakeFetchStatus,
+                  E = a.idCountry,
+                  c = a.initialIntakeFetchStatus,
                   s = a.resetSubmitVerification,
                   I = a.setIdCountry,
                   T = a.setIdType,
-                  u = a.setNextFlow,
-                  d = a.setPreviousFlow,
-                  N = a.surveyUrl,
+                  N = a.setNextFlow,
+                  u = a.setPreviousFlow,
+                  d = a.surveyUrl,
                   _ = a.userEmail,
                   p = a.verifyAccount,
                   A = a.verifyAccountFetchStatus
@@ -6912,23 +7066,23 @@
                     ComponentToRender: ze,
                     componentProps: {
                       handleOnClick: function () {
-                        e._scribeAction('click', 'CTA'), u()
+                        e._scribeAction('click', 'CTA'), N()
                       },
                     },
-                    genericModalProps: { renderHeader: Ds },
+                    genericModalProps: { renderHeader: gs },
                   }),
-                  z()(t, fs.name, {
-                    ComponentToRender: Ss,
+                  z()(t, Ds.name, {
+                    ComponentToRender: Fs,
                     componentProps: {
                       createLocalApiErrorHandler: i,
                       handleOnClick: function () {
-                        e._scribeAction('click', 'CTA'), u()
+                        e._scribeAction('click', 'CTA'), N()
                       },
                     },
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
-                  z()(t, ts.name, {
-                    ComponentToRender: ts,
+                  z()(t, os.name, {
+                    ComponentToRender: os,
                     componentProps: { decisionMadeTimeInMs: o, link: e._accountSettingsLink, status: n },
                     genericModalProps: { backButtonType: 'close', hideBackButton: ee.b.isTwitterApp() },
                   }),
@@ -6937,51 +7091,51 @@
                     componentProps: {
                       documentFormats: l,
                       onCountryClick: function (e, t) {
-                        I(e, t), d()
+                        I(e, t), u()
                       },
                     },
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
                   z()(t, At.name, {
                     ComponentToRender: At,
                     componentProps: {
                       documentFormats: l,
-                      idCountry: c,
+                      idCountry: E,
                       onTypeClick: function (e, t) {
-                        T(e, t), d()
+                        T(e, t), u()
                       },
                     },
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
                   z()(t, te.h.INTAKE_LOADING, {
-                    ComponentToRender: Ul,
+                    ComponentToRender: Gl,
                     componentProps: {},
-                    genericModalProps: { hideBackButton: !0, renderHeader: Ds },
+                    genericModalProps: { hideBackButton: !0, renderHeader: gs },
                   }),
                   z()(t, te.h.INTAKE_TYPE_SELECT, {
-                    ComponentToRender: ut,
+                    ComponentToRender: Nt,
                     componentProps: {},
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
                   z()(t, te.h.INTAKE_UPLOAD, {
-                    ComponentToRender: oc,
+                    ComponentToRender: IE,
                     componentProps: {
                       handleOnClick: function () {
                         return e._scribeAction('click', 'CTA')
                       },
                     },
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
-                  z()(t, BE.name, {
-                    ComponentToRender: BE,
+                  z()(t, Kc.name, {
+                    ComponentToRender: Kc,
                     componentProps: {
                       link: e._accountSettingsLink,
                       onSurveyClick: function () {
                         return e._scribeAction('click', 'survey_link')
                       },
-                      surveyUrl: N,
+                      surveyUrl: d,
                     },
-                    genericModalProps: { renderHeader: Ds },
+                    genericModalProps: { renderHeader: gs },
                   }),
                   z()(t, se.name, {
                     ComponentToRender: se,
@@ -6994,33 +7148,33 @@
                       accountSettingsLink: e._accountSettingsLink,
                       email: _ || '',
                       handleOnClickValid: function () {
-                        _ && e.props.setFormStepData(r, _), e._scribeAction('click', 'CTA'), u()
+                        _ && e.props.setFormStepData(r, _), e._scribeAction('click', 'CTA'), N()
                       },
                       handleOnClickInvalid: function () {
-                        d()
+                        u()
                       },
                     },
-                    genericModalProps: { onBackClick: d },
+                    genericModalProps: { onBackClick: u },
                   }),
-                  z()(t, hs, {
+                  z()(t, vs, {
                     ComponentToRender: Ue.a,
                     componentProps: {
                       fetchStatus: A,
                       onRequestRetry: function () {
                         p().catch(i())
                       },
-                      render: Ts.a,
-                      retryMessage: ys,
+                      render: ps.a,
+                      retryMessage: Ms,
                     },
                     genericModalProps: { hideBackButton: A === Fe.a.LOADING, onBackClick: s },
                   }),
-                  z()(t, Ls, {
+                  z()(t, Us, {
                     ComponentToRender: Ue.a,
                     componentProps: {
-                      fetchStatus: E,
+                      fetchStatus: c,
                       onRequestRetry: e._initialFetchRetry,
-                      render: Ts.a,
-                      retryMessage: ys,
+                      render: ps.a,
+                      retryMessage: Ms,
                     },
                     genericModalProps: { backButtonType: 'close', hideBackButton: ee.b.isTwitterApp() },
                   }),
@@ -7032,20 +7186,20 @@
                   n = a.ComponentToRender,
                   i = a.componentProps,
                   r = a.genericModalProps
-                return Q.a.createElement(
+                return q.a.createElement(
                   ve.b,
                   M()(
                     {
                       backButtonType: 'back',
                       backLocation: e._accountSettingsLink,
-                      containerStyle: r.renderHeader ? Ne.rootNoAppBar : Ne.root,
+                      containerStyle: r.renderHeader ? de.rootNoAppBar : de.root,
                       hideBackButton: !1,
                       history: e.props.history,
                       withBottomBorder: !1,
                     },
                     r,
                   ),
-                  Q.a.createElement(
+                  q.a.createElement(
                     n,
                     M()({}, i, { isNarrow: e._isNarrow, key: ''.concat(e.props.currentStep, '-screen') }),
                   ),
@@ -7055,30 +7209,30 @@
                 var a = e.props,
                   n = a.history,
                   i = a.setPreviousFlow
-                if (t && RE[t]) {
-                  var r = RE[t],
+                if (t && Sc[t]) {
+                  var r = Sc[t],
                     o = 'function' == typeof r ? r(P()({}, e.props)) : r
-                  return Q.a.createElement(
+                  return q.a.createElement(
                     ve.b,
-                    { backButtonType: 'back', containerStyle: Ne.root, hideBackButton: !1, history: n, onBackClick: i },
+                    { backButtonType: 'back', containerStyle: de.root, hideBackButton: !1, history: n, onBackClick: i },
                     e._renderLayoutComponent(o, t),
                   )
                 }
-                return Q.a.createElement(hE.a, { to: '/settings/account' })
+                return q.a.createElement(vc.a, { to: '/settings/account' })
               }),
               z()(W()(e), '_renderLayoutComponent', function (t, a) {
                 var n = { isNarrow: e._isNarrow, key: ''.concat(a, '-screen') }
                 switch (t.type) {
-                  case os:
-                    return Q.a.createElement(ft, M()({}, t.props, { key: ''.concat(a, '-screen') }))
-                  case ls:
-                    return Q.a.createElement(jt, M()({}, t.props, n))
-                  case cs:
-                    return Q.a.createElement(at, M()({}, t.props, n))
-                  case Es:
-                    return Q.a.createElement(LE, M()({}, t.props, n))
-                  case ss:
-                    return Q.a.createElement(PE, M()({}, t.props, n))
+                  case Is:
+                    return q.a.createElement(ft, M()({}, t.props, { key: ''.concat(a, '-screen') }))
+                  case Ts:
+                    return q.a.createElement(jt, M()({}, t.props, n))
+                  case Ns:
+                    return q.a.createElement(at, M()({}, t.props, n))
+                  case us:
+                    return q.a.createElement(Uc, M()({}, t.props, n))
+                  case ds:
+                    return q.a.createElement(Bc, M()({}, t.props, n))
                   default:
                     return null
                 }
@@ -7089,12 +7243,12 @@
                   n = t.currentStep,
                   i = t.initialIntakeFetchStatus,
                   r = t.verifyAccountFetchStatus
-                if (i !== Fe.a.LOADED) return e._wrapInGenericModalScreen(Ls)
-                if (r === Fe.a.LOADING || r === Fe.a.FAILED) return e._wrapInGenericModalScreen(hs)
+                if (i !== Fe.a.LOADED) return e._wrapInGenericModalScreen(Us)
+                if (r === Fe.a.LOADING || r === Fe.a.FAILED) return e._wrapInGenericModalScreen(vs)
                 if (e._hasBadgeViolations(a)) return e._wrapInGenericModalScreen(se.name)
                 switch (n) {
                   case te.h.LANDING_PAGE:
-                    return e._wrapInGenericModalScreen(e._shouldStartFlow ? ze.name : ts.name)
+                    return e._wrapInGenericModalScreen(e._shouldStartFlow ? ze.name : os.name)
                   case te.h.INTAKE_TYPE_SELECT:
                     return e._wrapInGenericModalScreen(te.h.INTAKE_TYPE_SELECT)
                   case te.h.ID_COUNTRY_SELECT:
@@ -7108,9 +7262,9 @@
                   case te.h.EMAIL_VERIFICATION:
                     return e._wrapInGenericModalScreen(De.name)
                   case te.h.REVIEW_SUBMIT:
-                    return e._wrapInGenericModalScreen(fs.name)
+                    return e._wrapInGenericModalScreen(Ds.name)
                   case te.h.THANK_YOU:
-                    return e._wrapInGenericModalScreen(BE.name)
+                    return e._wrapInGenericModalScreen(Kc.name)
                   default:
                     return e._createFormFromLayout(n)
                 }
@@ -7136,7 +7290,7 @@
                       return e._scribeAction('get_initial')
                     })
                     .catch(a()),
-                    i(is)
+                    i(cs)
                 },
               },
               {
@@ -7169,16 +7323,16 @@
                     r = t.followersEligible,
                     o = t.idType,
                     l = t.mentionsEligible,
-                    c = t.notabilityCategory,
-                    E = t.notabilityData,
+                    E = t.notabilityCategory,
+                    c = t.notabilityData,
                     s = t.notabilitySubcategory
                   return this._isVerificationIntakeEnabled
-                    ? Q.a.createElement(us.a, null, function (t) {
-                        var I = t.windowWidth < de.a.theme.breakpoints.small
+                    ? q.a.createElement(As.a, null, function (t) {
+                        var I = t.windowWidth < ue.a.theme.breakpoints.small
                         return (
                           I !== e._isNarrow && (e._isNarrow = I),
-                          Q.a.createElement(
-                            xE.c,
+                          q.a.createElement(
+                            Wc.c,
                             {
                               data: e._getMemoizedVerificationScribeData({
                                 accessStatus: a,
@@ -7187,8 +7341,8 @@
                                 followersEligible: r,
                                 idType: o,
                                 mentionsEligible: l,
-                                notabilityCategory: c,
-                                notabilityData: E,
+                                notabilityCategory: E,
+                                notabilityData: c,
                                 notabilitySubcategory: s,
                               }),
                               namespace: e._getMemoizedVerificationScribeNamespace(i),
@@ -7203,10 +7357,10 @@
             ]),
             a
           )
-        })(Q.a.Component)
-      z()(Fs, 'contextType', GE.a)
-      var Us = rs(Fs)
-      t.default = Us
+        })(q.a.Component)
+      z()(Ps, 'contextType', wc.a)
+      var Gs = ss(Ps)
+      t.default = Gs
     },
     je27: function (e, t, a) {
       'use strict'
@@ -7216,7 +7370,7 @@
         r = n(a('W7+t')),
         o = n(a('pvEE')),
         l = n(a('vLEV')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           /(?:(?:#{validateUrlUnicodeSubDomainSegment}\.)*(?:#{validateUrlUnicodeDomainSegment}\.)#{validateUrlUnicodeDomainTld})/i,
           {
             validateUrlUnicodeSubDomainSegment: r.default,
@@ -7224,7 +7378,7 @@
             validateUrlUnicodeDomainTld: l.default,
           },
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     kAdf: function (e, t, a) {
       'use strict'
@@ -7269,22 +7423,22 @@
         r = a('m3Bd'),
         o = a.n(r),
         l = a('VrFO'),
-        c = a.n(l),
-        E = a('Y9Ll'),
-        s = a.n(E),
+        E = a.n(l),
+        c = a('Y9Ll'),
+        s = a.n(c),
         I = a('1Pcy'),
         T = a.n(I),
-        u = a('5Yy7'),
-        d = a.n(u),
-        N = a('2VqO'),
-        _ = a.n(N),
+        N = a('5Yy7'),
+        u = a.n(N),
+        d = a('2VqO'),
+        _ = a.n(d),
         p = a('KEM+'),
         A = a.n(p),
-        b = (a('2G9S'), a('ERkP')),
-        R = a.n(b),
-        C = a('38/B'),
-        m = a('t62R'),
-        O = a('/yvb'),
+        R = (a('2G9S'), a('ERkP')),
+        C = a.n(R),
+        b = a('38/B'),
+        O = a('t62R'),
+        m = a('/yvb'),
         f = a('piX5'),
         S = a('3XMw'),
         L = a.n(S),
@@ -7297,8 +7451,8 @@
         M = a('n5fo'),
         g = a('5emT'),
         P = a('Oib4'),
-        x = a('WtWS'),
-        G = a('ioan'),
+        G = a('WtWS'),
+        x = a('ioan'),
         Y = [
           'Icon',
           'accessibilityLabel',
@@ -7332,11 +7486,11 @@
         W = L.a.de540c32,
         w = L.a.b4abfdb3,
         k = (function (e) {
-          d()(a, e)
+          u()(a, e)
           var t = _()(a)
           function a(e) {
             var n
-            c()(this, a),
+            E()(this, a),
               (n = t.call(this, e)),
               A()(T()(n), '_blurOnBackspaceKeyUpForKaiOS', !1),
               A()(T()(n), '_isLabelLarge', function () {
@@ -7378,7 +7532,7 @@
                     null === (e = n._textInput) || void 0 === e || null === (t = e.textInputNode) || void 0 === t
                       ? void 0
                       : t.value,
-                  c =
+                  E =
                     null === (a = n._textInput) ||
                     void 0 === a ||
                     null === (i = a.textInputNode) ||
@@ -7387,7 +7541,7 @@
                     void 0 === r
                       ? void 0
                       : r.badInput
-                return 'number' === o && '' === l && !0 === c
+                return 'number' === o && '' === l && !0 === E
               }),
               A()(T()(n), '_getActualCount', function (e) {
                 var t = e.length
@@ -7509,9 +7663,9 @@
                       r = t.value,
                       o = e.maxLength,
                       l = e.onChange,
-                      c = e.validLength,
-                      E = e.value
-                    ;(c === i && a === o && !!n === !!l && ('string' == typeof r) === ('string' == typeof E)) ||
+                      E = e.validLength,
+                      c = e.value
+                    ;(E === i && a === o && !!n === !!l && ('string' == typeof r) === ('string' == typeof c)) ||
                       this._checkComponentPropsUsageCorrectness(this.props)
                   },
                 },
@@ -7526,10 +7680,10 @@
                       r = e.style,
                       o = this.state.isFocused,
                       l = this._isFormInvalid()
-                    return R.a.createElement(
+                    return C.a.createElement(
                       v.a,
                       { style: [K.root, r] },
-                      R.a.createElement(
+                      C.a.createElement(
                         v.a,
                         {
                           accessibilityLabel: t,
@@ -7543,10 +7697,10 @@
                             !a && f.a.disabled,
                           ],
                         },
-                        R.a.createElement(
+                        C.a.createElement(
                           v.a,
                           { style: K.textInputFormWrapper },
-                          R.a.createElement(
+                          C.a.createElement(
                             v.a,
                             { style: K.textInputHeader },
                             this._renderLabel(),
@@ -7555,10 +7709,10 @@
                           this._renderTextInput(),
                         ),
                       ),
-                      R.a.createElement(
+                      C.a.createElement(
                         v.a,
                         { style: [K.sidePadding, K.underTextInputForm] },
-                        R.a.createElement(
+                        C.a.createElement(
                           v.a,
                           { style: K.subtextWrapper },
                           i ? this._renderHelperText() : null,
@@ -7575,8 +7729,8 @@
                       t = this.state.isFocused ? 'primary' : 'gray700',
                       a = this._isFormInvalid() ? 'red500' : t,
                       n = this._isLabelLarge()
-                    return R.a.createElement(
-                      m.b,
+                    return C.a.createElement(
+                      O.b,
                       {
                         color: n ? 'gray700' : a,
                         numberOfLines: 1,
@@ -7584,7 +7738,7 @@
                         style: [
                           K.textInputHeaderItem,
                           n && K.placeholderText,
-                          !C.a.reducedMotionEnabled && K.transition,
+                          !b.a.reducedMotionEnabled && K.transition,
                         ],
                       },
                       e,
@@ -7613,15 +7767,15 @@
                         e.showPasswordVisibilityIcon,
                         e.showValidationIcon),
                       r = (e.style, e.type, e.validLength, o()(e, Y))
-                    return R.a.createElement(
+                    return C.a.createElement(
                       v.a,
                       { style: H.container },
                       t && !this._isLabelLarge() ? this._renderIcon() : null,
-                      R.a.createElement(
-                        m.b,
+                      C.a.createElement(
+                        O.b,
                         { size: 'headline1', style: H.wrapper },
-                        R.a.createElement(
-                          G.a,
+                        C.a.createElement(
+                          x.a,
                           i()({}, r, {
                             editable: a,
                             maxLength: this._getAdjustedMaxLength(),
@@ -7650,14 +7804,14 @@
                       a = e.type,
                       n = this.state.isPasswordRevealed
                     return 'password' === a && t
-                      ? R.a.createElement(
+                      ? C.a.createElement(
                           v.a,
                           { style: K.passwordVisibilityIconContainer },
-                          R.a.createElement(O.a, {
+                          C.a.createElement(m.a, {
                             accessibilityLabel: n ? w : W,
                             focusable: !0,
                             hoverLabel: { label: n ? w : W },
-                            icon: n ? R.a.createElement(M.a, null) : R.a.createElement(g.a, null),
+                            icon: n ? C.a.createElement(M.a, null) : C.a.createElement(g.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -7669,11 +7823,11 @@
                 {
                   key: '_renderHelperText',
                   value: function () {
-                    return R.a.createElement(
+                    return C.a.createElement(
                       v.a,
                       { accessibilityLiveRegion: 'polite' },
-                      R.a.createElement(
-                        m.b,
+                      C.a.createElement(
+                        O.b,
                         { color: 'gray700', size: 'subtext2', style: K.subtext },
                         this.props.helperText,
                       ),
@@ -7683,11 +7837,11 @@
                 {
                   key: '_renderErrorText',
                   value: function () {
-                    return R.a.createElement(
+                    return C.a.createElement(
                       v.a,
                       { accessibilityLiveRegion: 'assertive' },
-                      R.a.createElement(
-                        m.b,
+                      C.a.createElement(
+                        O.b,
                         { color: 'red500', size: 'subtext2', style: K.subtext },
                         this.props.errorText,
                       ),
@@ -7702,11 +7856,11 @@
                       a = this._exceedsValidLength(e),
                       n = t && L.a.ia24dc8c(t),
                       i = L.a.ia24dc8c(e)
-                    return R.a.createElement(
+                    return C.a.createElement(
                       v.a,
                       { accessibilityLiveRegion: 'polite', style: [K.textInputHeaderItem, K.displayCount] },
-                      R.a.createElement(
-                        m.b,
+                      C.a.createElement(
+                        O.b,
                         { color: a ? 'red500' : 'gray700', size: 'subtext2' },
                         n ? ''.concat(i, ' / ').concat(n) : '',
                       ),
@@ -7719,15 +7873,15 @@
                     var e = this.props.Icon,
                       t = this.state.isFocused,
                       a = [K.icon, t && K.focusedIcon]
-                    return e && R.a.createElement(e, { style: a })
+                    return e && C.a.createElement(e, { style: a })
                   },
                 },
                 {
                   key: '_renderValidationIcon',
                   value: function () {
                     return this._isFormInvalid()
-                      ? R.a.createElement(P.a, { style: [K.validationIcon, f.a.invalidColor] })
-                      : R.a.createElement(x.a, { style: [K.validationIcon, f.a.validColor] })
+                      ? C.a.createElement(P.a, { style: [K.validationIcon, f.a.invalidColor] })
+                      : C.a.createElement(G.a, { style: [K.validationIcon, f.a.validColor] })
                   },
                 },
                 {
@@ -7780,7 +7934,7 @@
             ),
             a
           )
-        })(R.a.Component)
+        })(C.a.Component)
       A()(k, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
         (k.propTypes = {})
       var H = F.a.create(function (e) {
@@ -7887,12 +8041,12 @@
         r = n(a('fl4i')),
         o = n(a('Wqil')),
         l = n(a('Umjq')),
-        c = (0, i.default)(
+        E = (0, i.default)(
           '(?:(#{validateUrlUserinfo})@)?(#{validateUrlHost})(?::(#{validateUrlPort}))?',
           { validateUrlUserinfo: r.default, validateUrlHost: o.default, validateUrlPort: l.default },
           'i',
         )
-      ;(t.default = c), (e.exports = t.default)
+      ;(t.default = E), (e.exports = t.default)
     },
     vLEV: function (e, t, a) {
       'use strict'

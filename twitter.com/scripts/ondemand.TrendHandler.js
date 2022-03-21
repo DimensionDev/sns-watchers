@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [247],
+  [246],
   {
     '+92Z': function (e, t, n) {
       'use strict'
@@ -22,25 +22,25 @@
         h = n('caTy'),
         I = n('cFuS'),
         y = n('zh9S'),
-        v = n('Rp9C'),
-        T = n('VrFO'),
-        C = n.n(T),
-        w = n('Y9Ll'),
-        M = n.n(w),
+        T = n('Rp9C'),
+        v = n('VrFO'),
+        w = n.n(v),
+        C = n('Y9Ll'),
+        M = n.n(C),
         k = n('5Yy7'),
         _ = n.n(k),
         A = n('2VqO'),
-        x = n.n(A),
-        O = (n('KqXw'), n('WNMA'), n('MvUL'), n('hBvt'), n('aTAq')),
+        O = n.n(A),
+        x = (n('KqXw'), n('WNMA'), n('MvUL'), n('hBvt'), n('aTAq')),
         F = n('b5s6'),
         L = 'metadata',
         R = 'trend',
-        S = n('MWbm'),
-        D = n('hxu0'),
+        D = n('MWbm'),
+        S = n('hxu0'),
         H = n('PbQQ'),
         N = n('htQn'),
-        P = n('pjBI'),
-        j = n('t62R'),
+        j = n('pjBI'),
+        P = n('t62R'),
         z = n('tg+X'),
         U = n('e5HP'),
         V = n('rHpw'),
@@ -51,9 +51,9 @@
         },
         B = (function (e) {
           _()(n, e)
-          var t = x()(n)
+          var t = O()(n)
           function n() {
-            return C()(this, n), t.apply(this, arguments)
+            return w()(this, n), t.apply(this, arguments)
           }
           return (
             M()(n, [
@@ -90,27 +90,27 @@
                           withDarkerInteractiveBackground: i,
                         },
                         u.a.createElement(
-                          S.a,
+                          D.a,
                           { style: K.content },
                           u.a.createElement(
-                            P.a,
+                            j.a,
                             null,
                             m
                               ? u.a.createElement(
-                                  j.b,
+                                  P.b,
                                   { accessibilityHidden: !0, color: 'gray700', size: 'subtext2' },
                                   m,
                                 )
                               : null,
-                            u.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, o || null),
+                            u.a.createElement(P.b, { color: 'gray700', size: 'subtext2' }, o || null),
                           ),
-                          u.a.createElement(j.b, { dir: f, style: K.name, weight: 'bold', withHashflags: !0 }, d),
-                          a ? u.a.createElement(j.b, { color: 'gray700', style: K.description }, a) : null,
+                          u.a.createElement(P.b, { dir: f, style: K.name, weight: 'bold', withHashflags: !0 }, d),
+                          a ? u.a.createElement(P.b, { color: 'gray700', style: K.description }, a) : null,
                           E ? u.a.createElement(F.a, { isCondensed: !0, style: K.withMarginTop, tweetId: E }) : null,
-                          r ? u.a.createElement(S.a, { style: K.attachment }, r) : null,
+                          r ? u.a.createElement(D.a, { style: K.attachment }, r) : null,
                           u.a.createElement(z.a, { groupedTrends: c }),
                           e._renderMetadata(),
-                          u.a.createElement(S.a, { style: K.trendFeedbackMenuContainer }, p),
+                          u.a.createElement(D.a, { style: K.trendFeedbackMenuContainer }, p),
                         ),
                       ),
                     )
@@ -125,10 +125,10 @@
                     n = t.metaDescription,
                     r = t.promotedContent
                   r ? (e = u.a.createElement(U.a, { label: n, promotedContent: r })) : n && (e = n)
-                  var a = Object(O.a)(e) && e.length ? Y(e, e.length - 1) : void 0
+                  var a = Object(x.a)(e) && e.length ? Y(e, e.length - 1) : void 0
                   return e
                     ? u.a.createElement(
-                        j.b,
+                        P.b,
                         { color: 'gray700', dir: a, size: 'subtext2', style: K.withMarginTop, testID: L },
                         e,
                       )
@@ -139,7 +139,7 @@
             n
           )
         })(u.a.Component),
-        G = Object(D.a)(B),
+        G = Object(S.a)(B),
         K = V.a.create(function (e) {
           return {
             rootLink: {
@@ -248,7 +248,7 @@
               n = t.name,
               r = t.promotedMetadata,
               a = e.itemMetadata.clientEventInfo
-            return v.a.getTrendItem(n, r, a)
+            return T.a.getTrendItem(n, r, a)
           },
           onImpression: function (e) {
             var t = e.actions,
@@ -278,7 +278,7 @@
         o = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         c = Object(o.a)({
           loader: function () {
-            return n.e(176).then(n.bind(null, 'ACNv'))
+            return n.e(174).then(n.bind(null, 'ACNv'))
           },
         }),
         i = n('4bW+'),
@@ -345,7 +345,7 @@
         h = n('uCxL'),
         I = n('x5Pi'),
         y = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
-        v = E(function (e) {
+        T = E(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             r = e.fetchCommunityIfNeeded,
@@ -364,7 +364,7 @@
           var f = u.isTrue('responsive_web_alt_text_badge_enabled'),
             b = o && Object(I.f)(o, m, t),
             E = b && Object(I.e)(b),
-            v = u.isTrue('responsive_web_reactions_enabled')
+            T = u.isTrue('responsive_web_reactions_enabled')
           return s.a.createElement(
             h.a,
             a()({}, i, {
@@ -372,26 +372,11 @@
               shouldShowAltLabelAlways: f,
               socialContextProps: E,
               tweet: o,
-              withReactions: v,
+              withReactions: T,
             }),
           )
         })
-      t.a = v
-    },
-    hxu0: function (e, t, n) {
-      'use strict'
-      var r = n('97Jx'),
-        a = n.n(r),
-        o = n('ERkP'),
-        c = n.n(o),
-        i = n('vqbU')
-      t.a = function (e) {
-        return function (t) {
-          return c.a.createElement(i.a.Consumer, null, function (n) {
-            return c.a.createElement(e, a()({}, t, { isInSidebar: n }))
-          })
-        }
-      }
+      t.a = T
     },
     'tg+X': function (e, t, n) {
       'use strict'

@@ -15,8 +15,8 @@
       t('ho0z'), t('uFXj')
       var r = t('ERkP'),
         n = t.n(r),
-        o = t('MWbm'),
-        c = t('GcQN'),
+        c = t('MWbm'),
+        o = t('GcQN'),
         i = t('PU7B'),
         l = t('/WPq'),
         s = t('78ol'),
@@ -26,8 +26,8 @@
           var a = e.author,
             t = e.color,
             r = void 0 === t ? 'text' : t,
-            o = e.size,
-            c = void 0 === o ? 'subtext2' : o,
+            c = e.size,
+            o = void 0 === c ? 'subtext2' : c,
             i = e.style,
             l = e.withHoverCard,
             s = void 0 === l || l,
@@ -36,15 +36,15 @@
             p = e.withScreenName,
             h = void 0 !== p && p
           return n.a.createElement(d.a, {
-            avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[c],
+            avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[o],
             color: r,
             isProtected: a.protected,
             isVerified: a.verified,
             name: a.name,
-            nameSize: c,
+            nameSize: o,
             profileImageUrl: a.profile_image_url_https,
             screenName: a.screen_name,
-            screenNameSize: c,
+            screenNameSize: o,
             style: [g.authorUserName, i],
             withHoverCard: s,
             withLink: m,
@@ -54,15 +54,15 @@
         p = function (e) {
           var a = e.style
           return n.a.createElement(
-            o.a,
+            c.a,
             { style: [g.lightningBadge, a] },
-            n.a.createElement(c.a, { style: g.lightningIcon }),
+            n.a.createElement(o.a, { style: g.lightningIcon }),
           )
         },
         h = function (e) {
           var a = e.icon
           return n.a.createElement(
-            o.a,
+            c.a,
             { style: g.placeholderIconContainer },
             'news' === a
               ? n.a.createElement(i.a, { style: g.placeholderIcon })
@@ -101,6 +101,38 @@
           }
         })
     },
+    FITr: function (e, a, t) {
+      'use strict'
+      var r = t('yiKp'),
+        n = t.n(r),
+        c = t('ERkP'),
+        o = t.n(c),
+        i = t('Lsrn'),
+        l = t('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(l.a)(
+            'svg',
+            n()(
+              n()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [i.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            o.a.createElement(
+              'g',
+              null,
+              o.a.createElement('path', {
+                d: 'M20.235 14.61c-.375-1.745-2.342-3.506-4.01-4.125l-.544-4.948 1.495-2.242c.157-.236.172-.538.037-.787-.134-.25-.392-.403-.675-.403h-9.14c-.284 0-.542.154-.676.403-.134.25-.12.553.038.788l1.498 2.247-.484 4.943c-1.668.62-3.633 2.38-4.004 4.116-.04.16-.016.404.132.594.103.132.304.29.68.29H8.64l2.904 6.712c.078.184.26.302.458.302s.38-.118.46-.302l2.903-6.713h4.057c.376 0 .576-.156.68-.286.146-.188.172-.434.135-.59z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (a.a = s)
+    },
     GliE: function (e, a, t) {
       'use strict'
       t.d(a, 'a', function () {
@@ -109,24 +141,24 @@
       t('2G9S'), t('hBpG'), t('7x/C')
       var r = t('ajvb'),
         n = t('3XMw'),
-        o = t.n(n),
-        c = t('qB1G'),
-        i = o.a.a3484d21,
-        l = o.a.aab2efa8,
-        s = o.a.ba21c289,
+        c = t.n(n),
+        o = t('qB1G'),
+        i = c.a.a3484d21,
+        l = c.a.aab2efa8,
+        s = c.a.ba21c289,
         d = function (e) {
           return ''.concat(e.fullName || '', ' ').concat(e.score || '')
         },
-        u = function (e, a, t, n, o) {
+        u = function (e, a, t, n, c) {
           var u =
-              t && o
+              t && c
                 ? (function (e, a) {
                     return e && a
                       ? e.find(function (e) {
                           return e.id === a
                         })
                       : void 0
-                  })(t, o)
+                  })(t, c)
                 : void 0,
             m = Object(r.a)(a),
             p = e || '',
@@ -134,7 +166,7 @@
             g = t && t[1] ? d(t[1]) : '',
             f = n || '',
             b = u ? l({ winner: u.fullName }) : '',
-            C = a === c.a.Completed ? (u ? b : i) : f
+            C = a === o.a.Completed ? (u ? b : i) : f
           return s({ gameCategory: p, gameState: m, accessibleGameClockPeriod: C, teamOneLabel: h, teamTwoLabel: g })
         }
     },
@@ -143,8 +175,8 @@
       t('hBvt')
       var r = t('ERkP'),
         n = t.n(r),
-        o = t('I4+6'),
-        c = t('cm6r'),
+        c = t('I4+6'),
+        o = t('cm6r'),
         i = t('rHpw'),
         l = t('MWbm'),
         s = function (e) {
@@ -159,7 +191,7 @@
             g = e.upper,
             f = e.withInsetFocusRing,
             b = e.withInteractiveStyling,
-            C = o.a.generate({
+            C = c.a.generate({
               backgroundColor: i.a.theme.colors.transparent,
               color: i.a.theme.colors.primary,
               insetFocusRing: f,
@@ -171,7 +203,7 @@
               u ? n.a.createElement(l.a, { style: [d.defaultLowerContainerStyle, p] }, u) : null,
             )
           return n.a.createElement(
-            c.a,
+            o.a,
             {
               accessibilityLabel: a,
               interactive: b,
@@ -204,8 +236,8 @@
       })
       var r = t('VrFO'),
         n = t.n(r),
-        o = t('Y9Ll'),
-        c = t.n(o),
+        c = t('Y9Ll'),
+        o = t.n(c),
         i = t('1Pcy'),
         l = t.n(i),
         s = t('5Yy7'),
@@ -229,9 +261,9 @@
         E = t('gmfB'),
         I = S.a.ccaa970e,
         P = S.a.d725a288,
-        R = S.a.db355331,
-        _ = S.a.a8428d5e,
-        k = S.a.a7aad8b9,
+        k = S.a.db355331,
+        R = S.a.a8428d5e,
+        _ = S.a.a7aad8b9,
         x = S.a.e431f1aa,
         T = S.a.a7391707,
         O = S.a.d2dbfa91,
@@ -243,9 +275,9 @@
           function t() {
             var e
             n()(this, t)
-            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
+            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
             return (
-              (e = a.call.apply(a, [this].concat(o))),
+              (e = a.call.apply(a, [this].concat(c))),
               h()(l()(e), '_renderCategory', function () {
                 var a = e.props.category
                 return a
@@ -283,8 +315,8 @@
               h()(l()(e), '_renderGameStateValue', function (a, t) {
                 var r = e.props.gameClockPeriod,
                   n = e._getWinnerName(),
-                  o = a && n ? R({ team: n }) : t && r ? r : void 0
-                return o ? f.a.createElement(b.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, o) : null
+                  c = a && n ? k({ team: n }) : t && r ? r : void 0
+                return c ? f.a.createElement(b.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
               }),
               h()(l()(e), '_getWinnerName', function () {
                 var a = e.props,
@@ -301,7 +333,7 @@
             )
           }
           return (
-            c()(t, [
+            o()(t, [
               {
                 key: 'render',
                 value: function () {
@@ -310,7 +342,7 @@
                     t = e.withCategory,
                     r = a === E.a.Scheduled,
                     n = a === E.a.InProgress,
-                    o = a === E.a.Completed
+                    c = a === E.a.Completed
                   return f.a.createElement(
                     f.a.Fragment,
                     null,
@@ -325,9 +357,9 @@
                             (function (e) {
                               switch (e) {
                                 case E.a.Scheduled:
-                                  return _
+                                  return R
                                 case E.a.InProgress:
-                                  return k
+                                  return _
                                 case E.a.Completed:
                                   return x
                                 case E.a.Postponed:
@@ -339,7 +371,7 @@
                               }
                             })(a),
                           ),
-                          this._renderGameStateValue(o, n),
+                          this._renderGameStateValue(c, n),
                         ),
                     t ? this._renderCategory() : null,
                   )
@@ -355,23 +387,23 @@
       'use strict'
       var r = t('3XMw'),
         n = t.n(r),
-        o = t('qB1G'),
-        c = n.a.f178e38c,
+        c = t('qB1G'),
+        o = n.a.f178e38c,
         i = n.a.b6da6b01,
         l = n.a.i9f615c8,
         s = n.a.f897267a,
         d = n.a.f93c4b69
       a.a = function (e) {
         switch (e) {
-          case o.a.Scheduled:
-            return c
-          case o.a.InProgress:
+          case c.a.Scheduled:
+            return o
+          case c.a.InProgress:
             return i
-          case o.a.Completed:
+          case c.a.Completed:
             return l
-          case o.a.Postponed:
+          case c.a.Postponed:
             return s
-          case o.a.Cancelled:
+          case c.a.Cancelled:
             return d
           default:
             return ''
@@ -401,8 +433,8 @@
       })
       var r = t('VrFO'),
         n = t.n(r),
-        o = t('Y9Ll'),
-        c = t.n(o),
+        c = t('Y9Ll'),
+        o = t.n(c),
         i = t('1Pcy'),
         l = t.n(i),
         s = t('5Yy7'),
@@ -422,21 +454,21 @@
         E = t('rHpw'),
         I = t('MWbm'),
         P = Object.freeze({ SCORE: 'score', SECONDARY_SCORE: 'secondaryScore' }),
-        R = (function (e) {
+        k = (function (e) {
           d()(t, e)
           var a = m()(t)
           function t() {
             var e
             n()(this, t)
-            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
+            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
             return (
-              (e = a.call.apply(a, [this].concat(o))),
+              (e = a.call.apply(a, [this].concat(c))),
               h()(l()(e), 'state', { imageError: !1 }),
               h()(l()(e), '_renderTeamName', function () {
                 var a = e.props.team.shortName
                 return f.a.createElement(
                   I.a,
-                  { style: _.teamNameContainer },
+                  { style: R.teamNameContainer },
                   f.a.createElement(v.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, a),
                 )
               }),
@@ -445,19 +477,19 @@
                   t = a.isCompact,
                   r = a.team,
                   n = r.imageUrl,
-                  o = r.logo,
-                  c = e.state.imageError,
-                  i = (!o && !n) || c ? _.translucent : {},
-                  l = o ? S.a.exact(o.width / o.height) : S.a.SQUARE
+                  c = r.logo,
+                  o = e.state.imageError,
+                  i = (!c && !n) || o ? R.translucent : {},
+                  l = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
                 return f.a.createElement(
                   I.a,
-                  { style: [_.imageContainer, i, t && _.compactImageContainer] },
+                  { style: [R.imageContainer, i, t && R.compactImageContainer] },
                   f.a.createElement(y.a, {
                     accessibilityLabel: '',
                     aspectMode: l,
-                    image: o || n || '',
+                    image: c || n || '',
                     onError: e._handleImageError,
-                    rounded: !o,
+                    rounded: !c,
                   }),
                 )
               }),
@@ -469,10 +501,10 @@
                   t = a.gameState,
                   r = a.team,
                   n = a.winnerId,
-                  o = r.id,
-                  c = r.score,
+                  c = r.id,
+                  o = r.score,
                   i = r.secondaryScore,
-                  l = o === n,
+                  l = c === n,
                   s = !n,
                   d = t === w.a.Completed && !l && !s,
                   u = e._shouldRenderScore(),
@@ -481,8 +513,8 @@
                 return u
                   ? f.a.createElement(
                       I.a,
-                      { style: [_.teamScore, d && _.losingTeamScore] },
-                      f.a.createElement(v.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, c),
+                      { style: [R.teamScore, d && R.losingTeamScore] },
+                      f.a.createElement(v.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
                       i
                         ? f.a.createElement(v.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i)
                         : null,
@@ -510,7 +542,7 @@
             )
           }
           return (
-            c()(t, [
+            o()(t, [
               {
                 key: 'render',
                 value: function () {
@@ -523,13 +555,13 @@
                         (r && 'rgb('.concat(r.red, ', ').concat(r.green, ', ').concat(r.blue, ')')) ||
                         E.a.theme.colors[a],
                     },
-                    o = this._shouldRenderScore(),
-                    c = !t || !o
+                    c = this._shouldRenderScore(),
+                    o = !t || !c
                   return f.a.createElement(
                     I.a,
-                    { style: [_.root, n, t && _.compactRoot] },
+                    { style: [R.root, n, t && R.compactRoot] },
                     this._renderImage(),
-                    c ? this._renderTeamName() : null,
+                    o ? this._renderTeamName() : null,
                     this._renderScore(),
                   )
                 },
@@ -538,8 +570,8 @@
             t
           )
         })(f.a.Component)
-      h()(R, 'defaultProps', { isCompact: !1 })
-      var _ = E.a.create(function (e) {
+      h()(k, 'defaultProps', { isCompact: !1 })
+      var R = E.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -556,23 +588,23 @@
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
           }
         }),
-        k = R,
+        _ = k,
         x = (function (e) {
           d()(t, e)
           var a = m()(t)
           function t() {
             var e
             n()(this, t)
-            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
+            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
             return (
-              (e = a.call.apply(a, [this].concat(o))),
+              (e = a.call.apply(a, [this].concat(c))),
               h()(l()(e), '_renderGameStatus', function () {
                 var a = e.props,
                   t = a.category,
                   r = a.gameClock,
                   n = a.gameClockPeriod,
-                  o = a.gameState,
-                  c = a.isCompact,
+                  c = a.gameState,
+                  o = a.isCompact,
                   i = a.startTimeMillis,
                   l = a.teams,
                   s = a.winnerId
@@ -580,33 +612,33 @@
                   category: t,
                   gameClock: r,
                   gameClockPeriod: n,
-                  gameState: o,
+                  gameState: c,
                   startTimeMillis: i,
                   teams: l,
                   winnerId: s,
-                  withCategory: !c,
+                  withCategory: !o,
                 })
               }),
               h()(l()(e), '_renderTeamRow', function (a, t) {
                 var r = e.props,
                   n = r.gameState,
-                  o = r.isCompact,
-                  c = r.winnerId,
+                  c = r.isCompact,
+                  o = r.winnerId,
                   i = a.id
-                return f.a.createElement(k, {
+                return f.a.createElement(_, {
                   fallbackColor: t % 2 == 0 ? 'gray300' : 'gray700',
                   gameState: n,
-                  isCompact: o,
+                  isCompact: c,
                   key: i,
                   team: a,
-                  winnerId: c,
+                  winnerId: o,
                 })
               }),
               e
             )
           }
           return (
-            c()(t, [
+            o()(t, [
               {
                 key: 'render',
                 value: function () {
@@ -615,17 +647,17 @@
                     t = e.containerStyle,
                     r = e.isCompact,
                     n = e.link,
-                    o = e.onClick,
-                    c = e.teams
-                  if (c) {
-                    var i = c && c.map(this._renderTeamRow)
+                    c = e.onClick,
+                    o = e.teams
+                  if (o) {
+                    var i = o && o.map(this._renderTeamRow)
                     return f.a.createElement(b.a, {
                       accessibilityLabel: a,
                       containerStyle: t,
                       isCompact: r,
                       link: n,
                       lower: r ? void 0 : this._renderGameStatus(),
-                      onClick: o,
+                      onClick: c,
                       upper: i,
                       withInteractiveStyling: !0,
                     })
@@ -660,8 +692,8 @@
       t('yH/f'), t('2G9S')
       var r = t('0mK8'),
         n = t('ERkP'),
-        o = t.n(n),
-        c = t('GliE'),
+        c = t.n(n),
+        o = t('GliE'),
         i = t('YeIG'),
         l = t('MWbm'),
         s = t('TIdA'),
@@ -674,21 +706,21 @@
           var a = e.cropCandidates,
             t = e.dataSaverMode,
             n = e.icon,
-            c = e.image,
+            o = e.image,
             m = e.isCellWithProminentSocialContext,
             p = e.scoreEvent,
             h = e.type,
             g = b({ isCellWithProminentSocialContext: m, type: h })
-          return o.a.createElement(
+          return c.a.createElement(
             l.a,
             { style: [C.coverContainer, g] },
             p
               ? f(p)
-              : !c || Object(i.a)(c) || t
-              ? t || Object(i.a)(c)
-                ? o.a.createElement(u.a, { ratio: 1 }, o.a.createElement(r.c, { icon: n }))
+              : !o || Object(i.a)(o) || t
+              ? t || Object(i.a)(o)
+                ? c.a.createElement(u.a, { ratio: 1 }, c.a.createElement(r.c, { icon: n }))
                 : null
-              : o.a.createElement(s.a, { accessibilityLabel: '', aspectMode: d.a.SQUARE, cropCandidates: a, image: c }),
+              : c.a.createElement(s.a, { accessibilityLabel: '', aspectMode: d.a.SQUARE, cropCandidates: a, image: o }),
           )
         },
         f = function (e) {
@@ -699,8 +731,8 @@
             i = e.participants,
             l = e.startTimeMillis,
             s = e.winnerId,
-            d = Object(c.a)(a, t, i, n, s)
-          return o.a.createElement(m.a, {
+            d = Object(o.a)(a, t, i, n, s)
+          return c.a.createElement(m.a, {
             accessibilityLabel: d,
             category: a,
             containerStyle: C.scoreCardTile,

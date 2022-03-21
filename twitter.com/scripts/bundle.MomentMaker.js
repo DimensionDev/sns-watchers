@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [69, 4, 5, 6, 10, 176],
+  [67, 4, 6, 8, 11, 174],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -130,7 +130,7 @@
         v = (n('JtPf'), n('XBtf')),
         y = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(206)]).then(n.bind(null, 'zxwU'))
+            return Promise.all([n.e(0), n.e(204)]).then(n.bind(null, 'zxwU'))
           },
           loaderKey: 'dividerEntryLoader',
           strategy: v.a.Critical,
@@ -141,7 +141,7 @@
         w = n('SrIh'),
         C = {
           loader: function () {
-            return n.e(244).then(n.bind(null, 'WunU'))
+            return n.e(243).then(n.bind(null, 'WunU'))
           },
           loaderKey: 'tombstonedEntryLoader',
           strategy: v.a.Critical,
@@ -5640,7 +5640,7 @@
         v = function (e) {
           return {
             loader: function () {
-              return n.e(201).then(n.bind(null, '+93b'))
+              return n.e(199).then(n.bind(null, '+93b'))
             },
             loaderKey: 'defaultCarouselTimelineLoader',
             loaderOptions: e,
@@ -5661,7 +5661,7 @@
         }),
         g = {
           loader: function () {
-            return n.e(204).then(n.bind(null, 'GCNy'))
+            return n.e(202).then(n.bind(null, 'GCNy'))
           },
           loaderKey: 'conversationGapLoader',
           strategy: f.a.Critical,
@@ -5670,7 +5670,7 @@
         w = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, '3Rb8'))
+              return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, '3Rb8'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleFooterLoader',
@@ -5683,7 +5683,7 @@
         },
         E = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(226)]).then(n.bind(null, 'oiEo'))
+            return Promise.all([n.e(0), n.e(4), n.e(224)]).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: f.a.Critical,
@@ -5691,7 +5691,7 @@
         T = o.e(E),
         k = {
           loader: function () {
-            return n.e(216).then(n.bind(null, 'hKgB'))
+            return n.e(214).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: f.a.Critical,
@@ -5700,7 +5700,7 @@
         S = function (e) {
           return {
             loader: function () {
-              return n.e(242).then(n.bind(null, 'D9QQ'))
+              return n.e(240).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -6006,7 +6006,7 @@
         ee = G,
         te = {
           loader: function () {
-            return n.e(251).then(n.bind(null, 'VzRj'))
+            return n.e(250).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: f.a.Critical,
@@ -6093,7 +6093,7 @@
         },
         se = {
           loader: function () {
-            return n.e(252).then(n.bind(null, 'JKhl'))
+            return n.e(251).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: f.a.Critical,
@@ -6285,7 +6285,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(359)]).then(n.bind(null, 'YMZp'))
+              return Promise.all([n.e(0), n.e(4), n.e(5), n.e(358)]).then(n.bind(null, 'YMZp'))
             },
             loaderOptions: e,
             loaderKey: 'topicCellLoader',
@@ -6295,7 +6295,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(359)]).then(n.bind(null, 'zWr2'))
+              return Promise.all([n.e(0), n.e(4), n.e(5), n.e(358)]).then(n.bind(null, 'zWr2'))
             },
             loaderOptions: e,
             loaderKey: 'topicPillLoader',
@@ -6466,16 +6466,13 @@
                 var t = e.props.appTextSize
                 return C.a.createElement(
                   L.a,
-                  { onClick: e._handlePlaceholderClick, style: Q.placeholderView },
+                  { style: Q.placeholderView },
                   C.a.createElement(
                     E.b,
                     { numberOfLines: 1, size: t, style: e.getUnfocusedStyles() },
                     e._isInputEmpty() ? e.props.placeholder : e.getValue(),
                   ),
                 )
-              }),
-              _()(m()(e), '_handlePlaceholderClick', function () {
-                return e.focus()
               }),
               _()(m()(e), 'getUnfocusedStyles', function () {
                 var t = e.props.Icon,
@@ -6596,6 +6593,7 @@
                       C.a.createElement(
                         L.a,
                         {
+                          accessibilityRole: 'label',
                           style: [Q.textInput, this._isCentered() && Q.pillTextInput],
                           testID: u && ''.concat(u, '_label'),
                         },
@@ -11856,7 +11854,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(182).then(n.bind(null, 'mL9d'))
+            return n.e(180).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -13222,7 +13220,7 @@
                   var i,
                     o = (null === (i = a.landingUrl) || void 0 === i ? void 0 : i.url.match(J.A.id)) || '',
                     s = a.text || ''
-                  return n({ topic: { id: o && o[0], name: s, description: On, type: le.a.Topic } })
+                  n({ topic: { id: o && o[0], name: s, description: On, type: le.a.Topic } })
                 }
               }),
               _()(m()(e), '_renderTweetTextHWTweet', function (t) {
@@ -16017,7 +16015,7 @@
       }
       var T = {
           load: function () {
-            return n.e(223).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(221).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         k = (function (e) {
@@ -19005,7 +19003,7 @@
         o = n('RuTB'),
         s = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(187)]).then(n.bind(null, 'VeNJ'))
+            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'VeNJ'))
           },
           renderPlaceholder: function (e, t) {
             return a.a.createElement(o.a, { hasError: e, onRetry: t })
@@ -19258,7 +19256,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(248)]).then(n.bind(null, 'lX7a'))
+              return Promise.all([n.e(0), n.e(3), n.e(5), n.e(247)]).then(n.bind(null, 'lX7a'))
             },
             loaderKey: 'defaultUserLoader',
             loaderOptions: e,
@@ -20449,7 +20447,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(7), n.e(14), n.e(23), n.e(195)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(7), n.e(14), n.e(21), n.e(193)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return a.a.createElement('div', null)
@@ -22221,7 +22219,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(224)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(4), n.e(222)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -22238,14 +22236,14 @@
         s = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(214)]).then(n.bind(null, 'Xl5C'))
+            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
           strategy: s.a.Critical,
         },
         c = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(214)]).then(n.bind(null, 'ex5I'))
+            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
           strategy: s.a.Critical,
@@ -22253,7 +22251,7 @@
         u = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(214)]).then(n.bind(null, 'zXWy'))
+              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
@@ -22280,7 +22278,7 @@
               ((r = { withRuxInjections: !!d }),
               {
                 loader: function () {
-                  return Promise.all([n.e(0), n.e(214)]).then(n.bind(null, 'aqRH'))
+                  return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
@@ -22442,7 +22440,7 @@
         h = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         m = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(354)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
           strategy: h.a.Critical,
@@ -22457,14 +22455,14 @@
           })),
         b = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(356)]).then(n.bind(null, 'YIsX'))
+            return Promise.all([n.e(0), n.e(4), n.e(355)]).then(n.bind(null, 'YIsX'))
           },
           loaderKey: 'onboardingLikesStartPromptLoader',
           strategy: h.a.Critical,
         },
         g = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(356)]).then(n.bind(null, '3ukl'))
+            return Promise.all([n.e(0), n.e(4), n.e(355)]).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
           strategy: h.a.Critical,
@@ -22480,7 +22478,7 @@
         E = n('67iF'),
         T = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(245)]).then(n.bind(null, 'VSZh'))
+            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(244)]).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
           strategy: h.a.Critical,
@@ -22494,7 +22492,7 @@
         L = n('Ka9G'),
         P = {
           loader: function () {
-            return n.e(250).then(n.bind(null, 'bXO0'))
+            return n.e(249).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
           strategy: h.a.Critical,
@@ -30170,7 +30168,10 @@
           return {
             circle: { borderRadius: e.borderRadii.infinite, overflow: 'hidden' },
             container: { height: 'auto', width: '100%' },
-            itemAccessory: { top: -e.spacesPx.space24, right: -e.spacesPx.space16 },
+            itemAccessory: {
+              top: -e.spacesPx.space24 + e.spacesPx.space1,
+              right: -e.spacesPx.space16 - e.spacesPx.space1,
+            },
             userDecoration: {
               fontSize: e.fontSizes.subtext3,
               position: 'absolute',
@@ -38676,7 +38677,7 @@
         m = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(228)]).then(n.bind(null, 'Pb8P'))
+              return Promise.all([n.e(0), n.e(226)]).then(n.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',
@@ -39005,7 +39006,7 @@
         l = n('RuTB'),
         c = Object(s.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(167)]).then(n.bind(null, 'FwSR'))
+            return Promise.all([n.e(0), n.e(165)]).then(n.bind(null, 'FwSR'))
           },
           renderPlaceholder: function (e, t) {
             return o.a.createElement(l.a, { hasError: e, onRetry: t })
@@ -39695,7 +39696,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(4), n.e(15), n.e(212)]).then(n.bind(null, 'uuEz'))
+              return Promise.all([n.e(0), n.e(4), n.e(5), n.e(15), n.e(210)]).then(n.bind(null, 'uuEz'))
             },
             loaderOptions: e,
             loaderKey: 'eventSummaryDefaultLoader',
@@ -40289,7 +40290,7 @@
               paddingTop: e.spaces.space16,
               paddingBottom: e.spaces.space16,
               display: 'flex',
-              flexDirection: 'row',
+              flexDirection: 'column',
               height: '100%',
               position: 'relative',
             },
@@ -42697,7 +42698,7 @@
         T = n('RuTB'),
         k = Object(E.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(7), n.e(180)])
+            return Promise.all([n.e(0), n.e(7), n.e(178)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -45164,7 +45165,7 @@
         p = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(15), n.e(24), n.e(222)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(15), n.e(22), n.e(220)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -45173,7 +45174,7 @@
         },
         h = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(15), n.e(24), n.e(222)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(15), n.e(22), n.e(220)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: d.a.Critical,
@@ -46172,7 +46173,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(352)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(351)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -46181,14 +46182,14 @@
         },
         i = {
           loader: function () {
-            return n.e(362).then(n.bind(null, '1Tet'))
+            return n.e(361).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         o = {
           loader: function () {
-            return n.e(300).then(n.bind(null, '08qV'))
+            return n.e(299).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -48086,74 +48087,71 @@
     x5Pi: function (e, t, n) {
       'use strict'
       n.d(t, 'f', function () {
-        return s
+        return c
       }),
         n.d(t, 'c', function () {
-          return c
-        }),
-        n.d(t, 'd', function () {
-          return u
-        }),
-        n.d(t, 'e', function () {
           return d
         }),
-        n.d(t, 'a', function () {
+        n.d(t, 'd', function () {
           return p
         }),
-        n.d(t, 'b', function () {
+        n.d(t, 'e', function () {
           return h
+        }),
+        n.d(t, 'a', function () {
+          return m
+        }),
+        n.d(t, 'b', function () {
+          return f
         })
-      n('ho0z')
-      var r = n('ERkP'),
+      var r = n('yiKp'),
         a = n.n(r),
-        i = n('caTy'),
-        o = n('tocL'),
-        s = function (e, t, n) {
-          return e.retweeted_status ? l(e, t) : e.community_id_str && n ? c(e, n) : void 0
+        i = (n('ho0z'), n('ERkP')),
+        o = n.n(i),
+        s = n('caTy'),
+        l = n('tocL'),
+        c = function (e, t, n) {
+          return e.retweeted_status ? u(e, t) : e.community_id_str && n ? d(e, n) : void 0
         },
-        l = function (e, t) {
+        u = function (e, t) {
           if (e.retweeted_status)
             return {
-              contextType: o.a.Retweet,
+              contextType: l.a.Retweet,
               isSelfRetweet: e.user.id_str === t,
               name: e.user.name,
               screenName: e.user.screen_name,
             }
         },
-        c = function (e, t) {
+        d = function (e, t) {
           return {
-            contextType: o.a.Community,
+            contextType: l.a.Community,
             landingUrl: { url: 'https://twitter.com/i/communities/'.concat(t.id_str), urlType: 'ExternalUrl' },
             text: t.name,
           }
         },
-        u = function (e) {
+        p = function (e) {
           var t = e.isCellWithProminentSocialContext,
             n = e.socialContext,
-            r = e.topic,
-            a = n || {},
-            i = a.generalContext,
-            s = void 0 === i ? void 0 : i,
-            l = a.topicContext,
-            c = void 0 === l ? void 0 : l
-          return c && !s
-            ? {
-                contextType: t ? o.a.TextOnly : o.a.Topic,
-                iconUrl: null == r ? void 0 : r.icon_url,
-                landingUrl: { url: 'twitter://topics_timeline?id='.concat(c.topicId), urlType: 'DeepLink' },
-                text: null == r ? void 0 : r.name,
-                topicContext: c,
-              }
-            : s
+            r = e.topic
+          if (null != n && n.topicContext) {
+            var i = n.topicContext
+            return {
+              contextType: t ? l.a.TextOnly : l.a.Topic,
+              landingUrl: { url: 'twitter://topics_timeline?id='.concat(i.topicId), urlType: 'DeepLink' },
+              text: null == r ? void 0 : r.name,
+              topicContext: i,
+            }
+          }
+          if (null != n && n.generalContext) return a()({}, n.generalContext)
         },
-        d = function (e) {
+        h = function (e) {
           var t = e.contextType,
             n = e.landingUrl,
             r = e.text
-          return { link: n ? Object(i.b)(n) : void 0, text: r, contextType: t }
+          return { link: n ? Object(s.b)(n) : void 0, text: r, contextType: t }
         },
-        p = { contextType: o.a.Pin, text: '' },
-        h = a.a.createContext(void 0)
+        m = { contextType: l.a.Pin, text: '' },
+        f = o.a.createContext(void 0)
     },
     xWpm: function (e, t, n) {
       'use strict'
@@ -48180,7 +48178,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'ReVx'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'ReVx'))
             },
             loaderOptions: e,
             loaderKey: 'defaultTweetLoader',
@@ -48190,7 +48188,7 @@
         i = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'KQRq'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'KQRq'))
             },
             loaderOptions: e,
             loaderKey: 'tweetDetailLoader',
@@ -48200,7 +48198,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'A6fF'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'A6fF'))
             },
             loaderOptions: e,
             loaderKey: 'draggableTweetLoader',
@@ -48210,7 +48208,7 @@
         s = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'i8De'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'i8De'))
             },
             loaderOptions: e,
             loaderKey: 'promotedTweetLoader',
@@ -48220,7 +48218,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'tvEI'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'tvEI'))
             },
             loaderOptions: e,
             loaderKey: 'quoteTweetLoader',
@@ -48230,7 +48228,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(361)]).then(n.bind(null, 'Fcw+'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(25), n.e(360)]).then(n.bind(null, 'Fcw+'))
             },
             loaderOptions: e,
             loaderKey: 'selectableTweetLoader',
@@ -50713,7 +50711,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(0), n.e(227)]).then(n.bind(null, 'tFiq'))
+              return Promise.all([n.e(0), n.e(225)]).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

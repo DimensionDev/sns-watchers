@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [108],
+  [106],
   {
     '0ULw': function (e, t, n) {
       'use strict'
@@ -60,10 +60,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'sidebarLayoutScreenTitle', function () {
-          return O
+          return F
         }),
         n.d(t, 'TwitterArticleScreen', function () {
-          return M
+          return H
         })
       n('KqXw'), n('WNMA'), n('uFXj')
       var r = n('ERkP'),
@@ -115,14 +115,14 @@
               fetchUserIfNeeded: l.e.fetchOneIfNeeded,
             }
           }),
-        b = n('VS6U'),
-        g = (n('ho0z'), n('6U7i'), n('849X'), n('TJCb'), n('gEvp')),
+        g = n('VS6U'),
+        b = (n('ho0z'), n('6U7i'), n('849X'), n('TJCb'), n('gEvp')),
         v = function (e) {
           var t = e.block,
             n = e.contentState,
             r = t.getEntityAt(0),
             i = r ? n.getEntity(r).getData() : null
-          return null != i && i.tweetId ? a.a.createElement(g.a, { tweetId: i.tweetId }) : null
+          return null != i && i.tweetId ? a.a.createElement(b.a, { tweetId: i.tweetId }) : null
         },
         w = n('nXUu'),
         E = { atomic: { component: v, editable: !1 } },
@@ -203,9 +203,44 @@
               : null,
           )
         },
-        B = n('G1WX'),
-        O = 'Twitter Article',
+        B = n('zpdM'),
+        O = n('muX9'),
         M = function (e) {
+          var t,
+            n,
+            r,
+            i,
+            o,
+            l = e.author,
+            c = e.twitterArticle,
+            s = (function (e) {
+              try {
+                return Object(B.convertFromRaw)(JSON.parse(e)).getPlainText().substr(0, 200)
+              } catch (t) {
+                return ''
+              }
+            })((null === (t = c.data) || void 0 === t ? void 0 : t.contentStateJson) || ''),
+            u = null === (n = c.cover_image) || void 0 === n ? void 0 : n.media_info
+          return (
+            'ApiImage' === (null == u ? void 0 : u.__typename) &&
+              ((r = u.original_img_url), (i = u.original_img_width), (o = u.original_img_height)),
+            a.a.createElement(
+              O.a,
+              null,
+              a.a.createElement('meta', { content: 'true', name: 'twitter:article' }),
+              a.a.createElement('meta', { content: '86400', name: 'twitter:maxage' }),
+              a.a.createElement('meta', { content: c.title, name: 'og:title' }),
+              a.a.createElement('meta', { content: s, name: 'og:description' }),
+              a.a.createElement('meta', { content: l.screen_name, name: 'twitter:site' }),
+              r && a.a.createElement('meta', { content: r, name: 'og:image' }),
+              i && a.a.createElement('meta', { content: i, name: 'og:image:width' }),
+              o && a.a.createElement('meta', { content: o, name: 'og:image:height' }),
+            )
+          )
+        },
+        R = n('G1WX'),
+        F = 'Twitter Article',
+        H = function (e) {
           var t = e.author,
             n = e.authorId,
             r = e.createLocalApiErrorHandler,
@@ -232,24 +267,25 @@
               ? a.a.createElement(
                   I.a,
                   { testID: 'twitterArticleView' },
+                  a.a.createElement(M, { author: t, twitterArticle: d }),
                   a.a.createElement(A, { author: t, twitterArticle: d }),
                 )
               : null
           }
-          return a.a.createElement(b.a, {
+          return a.a.createElement(g.a, {
             history: s,
             primaryContent: function () {
               return a.a.createElement(
                 I.a,
-                { style: R.container },
-                a.a.createElement(B.a, { fetchStatus: o, onRequestRetry: p, render: h }),
+                { style: P.container },
+                a.a.createElement(R.a, { fetchStatus: o, onRequestRetry: p, render: h }),
               )
             },
             sidebarContent: a.a.createElement(i.a, null),
-            title: O,
+            title: F,
           })
         },
-        R = _.a.create(function (e) {
+        P = _.a.create(function (e) {
           return {
             container: {
               borderTopColor: e.colors.borderColor,
@@ -261,8 +297,8 @@
             title: { paddingBottom: e.spaces.space24 },
           }
         }),
-        F = y(M)
-      t.default = F
+        z = y(H)
+      t.default = z
     },
     '5emT': function (e, t, n) {
       'use strict'
@@ -315,8 +351,8 @@
         f = n.n(h),
         m = n('2VqO'),
         y = n.n(m),
-        b = n('KEM+'),
-        g = n.n(b),
+        g = n('KEM+'),
+        b = n.n(g),
         v = (n('2G9S'), n('ERkP')),
         w = n.n(v),
         E = n('XOJV'),
@@ -369,7 +405,7 @@
             for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              g()(p()(e), '_renderDisabledTweet', function (t) {
+              b()(p()(e), '_renderDisabledTweet', function (t) {
                 return w.a.createElement(
                   M.a,
                   { style: G.root },
@@ -382,7 +418,7 @@
                   ),
                 )
               }),
-              g()(p()(e), '_renderContent', function () {
+              b()(p()(e), '_renderContent', function () {
                 var t = e.props,
                   n = t.replyContext,
                   r = t.tweet,
@@ -413,12 +449,12 @@
                 }
                 return null
               }),
-              g()(p()(e), '_renderSelectIcon', function (e) {
+              b()(p()(e), '_renderSelectIcon', function (e) {
                 return e
                   ? w.a.createElement(D.a, { style: [G.icon, G.iconMargins, G.iconCheckmark] })
                   : w.a.createElement(V.a, { style: [G.icon, G.iconMargins] })
               }),
-              g()(p()(e), '_handleOnClick', function () {
+              b()(p()(e), '_handleOnClick', function () {
                 var t = e.props,
                   n = t.onClick,
                   r = t.originalTweet,
@@ -478,8 +514,8 @@
             n
           )
         })(w.a.PureComponent)
-      g()(U, 'contextType', z.a),
-        g()(U, 'defaultProps', {
+      b()(U, 'contextType', z.a),
+        b()(U, 'defaultProps', {
           replyContext: H.a.ReplyContextTypes.Isolated,
           withActions: !0,
           showDragCount: 0,
@@ -626,9 +662,9 @@
         f = n.n(h),
         m = n('KEM+'),
         y = n.n(m),
-        b = (n('2G9S'), n('i4UL'), n('+/5o')),
-        g = n('ERkP'),
-        v = n.n(g),
+        g = (n('2G9S'), n('i4UL'), n('+/5o')),
+        b = n('ERkP'),
+        v = n.n(b),
         w = n('HPNB'),
         E = n('VAZu'),
         C = n('wiP2'),
@@ -755,7 +791,7 @@
                     f = n.screenType,
                     m = n.searchBoxOptions,
                     y = n.secondaryBar,
-                    g = n.showSubtitleOnRoot,
+                    b = n.showSubtitleOnRoot,
                     w = n.showSubtitleOnWideDetail,
                     T = n.subtitle,
                     x = n.title,
@@ -767,9 +803,9 @@
                     O = 'root' === f,
                     M = 'secondaryRoot' === f,
                     R = 'primaryDetail' === f,
-                    F = (R && w) || (O && g),
+                    F = (R && w) || (O && b),
                     H = O || (R && t),
-                    P = O ? b.c : R ? b.a : void 0,
+                    P = O ? g.c : R ? g.a : void 0,
                     z = v.a.createElement(
                       _.a,
                       { style: S.appBarContainer },
@@ -836,7 +872,7 @@
           return ye
         }),
         n.d(t, 'successfulSaveMessage', function () {
-          return ge
+          return be
         }),
         n.d(t, 'successfulPublishMessage', function () {
           return ve
@@ -888,8 +924,8 @@
               updateTwitterArticleTitle: d.a.updateTitle,
             }
           }),
-        b = n('VY6S'),
-        g = n('HsFH'),
+        g = n('VY6S'),
+        b = n('HsFH'),
         v = n('M2mT'),
         w = (n('KOtZ'), n('7x/C'), n('zpdM')),
         E =
@@ -1170,11 +1206,11 @@
         fe = 'Publish',
         me = 'Unpublish',
         ye = 'View',
-        be = 'Twitter Article Title',
-        ge = 'Twitter Article Saved',
+        ge = 'Twitter Article Title',
+        be = 'Twitter Article Saved',
         ve = 'Twitter Article Published',
         we = 'Twitter Article Unpublished',
-        Ee = o.a.createElement(g.a, null),
+        Ee = o.a.createElement(b.a, null),
         Ce = function (e) {
           var t,
             n = e.addToast,
@@ -1190,7 +1226,7 @@
             f = e.updateTwitterArticleTitle,
             m = e.updateTwitterArticleVisibility,
             y = (null == h || null === (t = h.metadata) || void 0 === t ? void 0 : t.visibility) === E.PUBLISHED,
-            g = function (e) {
+            b = function (e) {
               var t
               try {
                 t = e ? JSON.parse(e) : void 0
@@ -1200,7 +1236,7 @@
               var n = se.a.initEditorState(t)
               return se.a.convertEmojiToEntities(n)
             },
-            C = o.a.useState(g()),
+            C = o.a.useState(b()),
             T = a()(C, 2),
             x = T[0],
             I = T[1],
@@ -1217,7 +1253,7 @@
             o.a.useEffect(
               function () {
                 var e,
-                  t = g(null == h || null === (e = h.data) || void 0 === e ? void 0 : e.contentStateJson)
+                  t = b(null == h || null === (e = h.data) || void 0 === e ? void 0 : e.contentStateJson)
                 I(t)
               },
               [h],
@@ -1231,7 +1267,7 @@
             },
             O = o.a.useMemo(
               function () {
-                return Object(b.a)(function (e) {
+                return Object(g.a)(function (e) {
                   f(u, { title: e || '' }).catch(r({}))
                 }, 250)
               },
@@ -1251,7 +1287,7 @@
                   onClick: function () {
                     var e = JSON.stringify(Object(w.convertToRaw)(x.getCurrentContent()))
                     d(u, { contentStateJson: e })
-                      .then(n({ text: ge }))
+                      .then(n({ text: be }))
                       .catch(r({}))
                   },
                   style: Te.buttonMargin,
@@ -1304,8 +1340,8 @@
                     o.a.createElement(ue.a, {
                       defaultValue: p,
                       key: 'title-input-'.concat(u),
-                      label: be,
-                      name: be,
+                      label: ge,
+                      name: ge,
                       onChange: B,
                     }),
                     o.a.createElement(
@@ -1363,9 +1399,9 @@
           f = e.style,
           m = e.title,
           y = o.a.useState(!1),
-          b = a()(y, 2),
-          g = b[0],
-          v = b[1],
+          g = a()(y, 2),
+          b = g[0],
+          v = g[1],
           w = function () {
             v(function (e) {
               return !e
@@ -1377,7 +1413,7 @@
                 s.a,
                 {
                   accessibilityLabel: i.label,
-                  disabled: g || i.forceDisabled,
+                  disabled: b || i.forceDisabled,
                   onClick: function () {
                     w(), null == i || i.onClick(w)
                   },
@@ -1437,8 +1473,8 @@
         f = n.n(h),
         m = n('Y9Ll'),
         y = n.n(m),
-        b = n('1Pcy'),
-        g = n.n(b),
+        g = n('1Pcy'),
+        b = n.n(g),
         v = n('5Yy7'),
         w = n.n(v),
         E = n('2VqO'),
@@ -1644,8 +1680,8 @@
             for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              x()(g()(e), 'state', { selectedTextSize: ne[2] }),
-              x()(g()(e), '_toggleTextStyle', function (t) {
+              x()(b()(e), 'state', { selectedTextSize: ne[2] }),
+              x()(b()(e), '_toggleTextStyle', function (t) {
                 var n = e.props,
                   r = n.onChange,
                   a = n.richTextInputContext.editorState
@@ -1655,16 +1691,16 @@
                   }
                 }
               }),
-              x()(g()(e), '_isEditorFocused', function () {
+              x()(b()(e), '_isEditorFocused', function () {
                 var t = e.props.richTextInputContext.editorState
                 return null == t ? void 0 : t.getSelection().getHasFocus()
               }),
-              x()(g()(e), '_handleTextSizeClick', function (t) {
+              x()(b()(e), '_handleTextSizeClick', function (t) {
                 return function () {
                   e.setState({ selectedTextSize: t }), e._toggleTextStyle(ae.RichUtils.toggleBlockType)(t.blockType)()
                 }
               }),
-              x()(g()(e), '_mergeMap', function (e, t) {
+              x()(b()(e), '_mergeMap', function (e, t) {
                 return Object(oe.a)(t).reduce(function (e, t) {
                   var n = p()(t, 2),
                     r = n[0],
@@ -1672,7 +1708,7 @@
                   return e.set(r, a)
                 }, e)
               }),
-              x()(g()(e), '_renderToolbarButtonGroup', function (t, n) {
+              x()(b()(e), '_renderToolbarButtonGroup', function (t, n) {
                 return k.a.createElement(
                   F.a,
                   { style: ue.buttonGroup },
@@ -1692,7 +1728,7 @@
                   }),
                 )
               }),
-              x()(g()(e), '_renderActionMenu', function (t) {
+              x()(b()(e), '_renderActionMenu', function (t) {
                 var n = ne.map(function (t) {
                   return { text: t.render(t.label), onClick: e._handleTextSizeClick(t) }
                 })
@@ -1703,7 +1739,7 @@
                   shouldCloseOnClick: !0,
                 })
               }),
-              x()(g()(e), '_setFieldTextInputRef', function (t) {
+              x()(b()(e), '_setFieldTextInputRef', function (t) {
                 e.fieldTextInput = t
               }),
               e
@@ -2019,7 +2055,7 @@
           return m
         }),
         n.d(t, 'f', function () {
-          return b
+          return g
         })
       var r = n('RhWx'),
         a = n.n(r),
@@ -2094,7 +2130,7 @@
           }
         }),
         y = 0,
-        b = function () {
+        g = function () {
           return 'typeaheadDropdown-'.concat((y += 1))
         }
     },
@@ -2118,8 +2154,8 @@
         f = n.n(h),
         m = n('2VqO'),
         y = n.n(m),
-        b = n('KEM+'),
-        g = n.n(b),
+        g = n('KEM+'),
+        b = n.n(g),
         v = (n('2G9S'), n('ERkP')),
         w = n.n(v),
         E = n('38/B'),
@@ -2178,36 +2214,36 @@
             var r
             c()(this, n),
               (r = t.call(this, e)),
-              g()(p()(r), '_blurOnBackspaceKeyUpForKaiOS', !1),
-              g()(p()(r), '_isLabelLarge', function () {
+              b()(p()(r), '_blurOnBackspaceKeyUpForKaiOS', !1),
+              b()(p()(r), '_isLabelLarge', function () {
                 var e = r.state,
                   t = e.actualCount,
                   n = e.isFocused
                 return !t && !n
               }),
-              g()(
+              b()(
                 p()(r),
                 '_getTextInputStyle',
                 Object(L.a)(function (e) {
                   return [U.root, !e && U.disabled]
                 }),
               ),
-              g()(p()(r), '_getTextInputType', function () {
+              b()(p()(r), '_getTextInputType', function () {
                 var e = r.props,
                   t = e.showPasswordVisibilityIcon,
                   n = e.type,
                   a = r.state.isPasswordRevealed
                 return 'password' === n && t ? (a ? 'text' : 'password') : n
               }),
-              g()(p()(r), '_calculateLength', function (e) {
+              b()(p()(r), '_calculateLength', function (e) {
                 return V(e, r.props.calculateLength)
               }),
-              g()(p()(r), '_shouldRenderDisplayCount', function () {
+              b()(p()(r), '_shouldRenderDisplayCount', function () {
                 var e = r.state.isFocused,
                   t = r._isFormInvalid()
                 return Boolean((e || t) && r._getMaxDisplayCount())
               }),
-              g()(p()(r), '_isInvalidNumber', function () {
+              b()(p()(r), '_isInvalidNumber', function () {
                 var e,
                   t,
                   n,
@@ -2229,18 +2265,18 @@
                       : i.badInput
                 return 'number' === o && '' === l && !0 === c
               }),
-              g()(p()(r), '_getActualCount', function (e) {
+              b()(p()(r), '_getActualCount', function (e) {
                 var t = e.length
                 return r._isInvalidNumber() && (t = 1), t
               }),
-              g()(p()(r), '_handleBlur', function (e) {
+              b()(p()(r), '_handleBlur', function (e) {
                 var t = r.props.onBlur,
                   n = e.currentTarget.value,
                   a = r._calculateLength(n),
                   i = r._getActualCount(n)
                 r.setState({ isFocused: !1, displayCount: a, actualCount: i }), t && t(e)
               }),
-              g()(p()(r), '_handleChange', function (e) {
+              b()(p()(r), '_handleChange', function (e) {
                 var t = r.props.onChange,
                   n = r.state.previousValue,
                   a = e.currentTarget.value,
@@ -2257,11 +2293,11 @@
                     }),
                     t && t(e))
               }),
-              g()(p()(r), '_handleFocus', function () {
+              b()(p()(r), '_handleFocus', function () {
                 var e = r.props.onFocus
                 r.setState({ isFocused: !0 }), e && e()
               }),
-              g()(p()(r), '_handleKeyPress', function (e) {
+              b()(p()(r), '_handleKeyPress', function (e) {
                 var t = r.props,
                   n = t.multiline,
                   a = t.onKeyPress,
@@ -2269,12 +2305,12 @@
                 a && a(e),
                   e.isDefaultPrevented() || 'Enter' !== e.key || e.shiftKey || n || !i || (e.preventDefault(), i(e))
               }),
-              g()(p()(r), '_handleKeyDown', function (e) {
+              b()(p()(r), '_handleKeyDown', function (e) {
                 var t = r.props.onKeyDown,
                   n = 0 === r.state.displayCount
                 B.b.isKaiOS() && 'Backspace' === e.key && n ? (r._blurOnBackspaceKeyUpForKaiOS = n) : t && t(e)
               }),
-              g()(p()(r), '_handleKeyUp', function (e) {
+              b()(p()(r), '_handleKeyUp', function (e) {
                 var t = r.props.onKeyUp
                 B.b.isKaiOS() &&
                   'Backspace' === e.key &&
@@ -2282,15 +2318,15 @@
                   (e.preventDefault(), r.blur()),
                   t && t(e)
               }),
-              g()(p()(r), '_handlePasswordVisibilityClick', function (e) {
+              b()(p()(r), '_handlePasswordVisibilityClick', function (e) {
                 r.setState(function (e) {
                   return { isPasswordRevealed: !e.isPasswordRevealed }
                 })
               }),
-              g()(p()(r), '_setTextInputRef', function (e) {
+              b()(p()(r), '_setTextInputRef', function (e) {
                 r._textInput = e
               }),
-              g()(p()(r), '_checkComponentPropsUsageCorrectness', function (e) {
+              b()(p()(r), '_checkComponentPropsUsageCorrectness', function (e) {
                 var t = e.defaultValue,
                   n = e.maxLength,
                   r = e.onChange,
@@ -2308,14 +2344,14 @@
                     'Set editable to false instead of limiting the valid character count to 0.',
                   )
               }),
-              g()(p()(r), '_exceedsValidLength', function (e) {
+              b()(p()(r), '_exceedsValidLength', function (e) {
                 var t = r._getMaxDisplayCount()
                 return !!t && e > t
               }),
-              g()(p()(r), '_getMaxDisplayCount', function () {
+              b()(p()(r), '_getMaxDisplayCount', function () {
                 return r.props.validLength || r.props.maxLength
               }),
-              g()(p()(r), '_getAdjustedMaxLength', function () {
+              b()(p()(r), '_getAdjustedMaxLength', function () {
                 var e = r.props.maxLength,
                   t = r.getValue(),
                   n = r._calculateLength(t)
@@ -2621,7 +2657,7 @@
             n
           )
         })(w.a.Component)
-      g()(K, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
+      b()(K, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
         (K.propTypes = {})
       var U = A.a.create(function (e) {
           return {
@@ -2717,10 +2753,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'rootDetailScreenTitle', function () {
-          return b
+          return g
         }),
         n.d(t, 'TwitterArticleListScreen', function () {
-          return g
+          return b
         })
       var r = n('ERkP'),
         a = n.n(r),
@@ -2747,8 +2783,8 @@
         f = n('MWbm'),
         m = n('/yvb'),
         y = n('rHpw'),
-        b = 'Twitter Articles',
-        g = function (e) {
+        g = 'Twitter Articles',
+        b = function (e) {
           var t = a.a.useContext(i.a),
             n = t.decrementDmDrawerInhibitorCount,
             r = t.incrementDmDrawerInhibitorCount,
@@ -2794,7 +2830,7 @@
           return s
             ? a.a.createElement(
                 p.a,
-                { rightControl: u, screenType: 'secondaryRoot', title: b },
+                { rightControl: u, screenType: 'secondaryRoot', title: g },
                 a.a.createElement(
                   f.a,
                   { style: v.container },
@@ -2807,7 +2843,7 @@
           return { container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }
         }),
         w = a.a.createElement(d.a, null),
-        E = u(g)
+        E = u(b)
       t.default = E
     },
     uy10: function (e, t, n) {
@@ -2871,16 +2907,16 @@
                 })
                 .catch(t({ showToast: !0 }))
             },
-            style: b.root,
+            style: g.root,
           })
         },
-        b = d.a.create(function (e) {
+        g = d.a.create(function (e) {
           return {
             root: { alignItems: 'center', justifyContent: 'center', flex: 1, backgroundColor: e.colors.cellBackground },
           }
         }),
-        g = c(y)
-      t.default = g
+        b = c(y)
+      t.default = b
     },
   },
 ])

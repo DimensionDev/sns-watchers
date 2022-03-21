@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [192],
+  [190],
   {
     q1GS: function (e, t, i) {
       'use strict'

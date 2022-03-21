@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [39],
+  [37],
   {
     '8Ir8': function (e, t, n) {
       'use strict'
@@ -143,7 +143,7 @@
                   i = e.violation_status,
                   c = e.violation_title,
                   l =
-                    i === B.s.IN_COMPLIANCE
+                    i === B.t.IN_COMPLIANCE
                       ? y.a.createElement(A.a, { style: [j.icon, j.green] })
                       : y.a.createElement(O.a, { style: [j.icon, j.red] })
                 return y.a.createElement(

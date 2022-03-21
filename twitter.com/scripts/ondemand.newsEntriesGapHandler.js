@@ -1,44 +1,44 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [354],
+  [353],
   {
-    '5bSN': function (e, n, t) {
+    '5bSN': function (e, t, n) {
       'use strict'
-      t.d(n, 'a', function () {
-        return b
+      n.d(t, 'a', function () {
+        return f
       })
-      t('hBvt')
-      var a = t('ERkP'),
-        r = t.n(a),
-        c = t('3XMw'),
-        i = t.n(c),
-        o = t('MWbm'),
-        s = t('htQn'),
-        l = t('Qwev'),
-        u = t('h0NW'),
-        p = t('t62R'),
-        d = t('rHpw'),
-        m = i.a.ee8c6c61,
-        f = i.a.i8005e73
-      function b(e) {
-        var n = e.children,
-          t = void 0 === n ? m : n,
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        i = n('3XMw'),
+        c = n.n(i),
+        o = n('MWbm'),
+        s = n('htQn'),
+        l = n('Qwev'),
+        p = n('h0NW'),
+        u = n('t62R'),
+        d = n('rHpw'),
+        m = c.a.ee8c6c61,
+        b = c.a.i8005e73
+      function f(e) {
+        var t = e.children,
+          n = void 0 === t ? m : t,
           a = e.isLoading,
-          c = e.link,
-          i = e.onClick,
+          i = e.link,
+          c = e.onClick,
           d = e.isTransparentCursor
         return r.a.createElement(
           s.a,
-          { link: c, onClick: i, style: v.root },
+          { link: i, onClick: c, style: v.root },
           r.a.createElement(
             o.a,
             { style: v.inner },
             a
-              ? r.a.createElement(l.a, { accessibilityLabel: f })
+              ? r.a.createElement(l.a, { accessibilityLabel: b })
               : d
               ? r.a.createElement(
                   r.a.Fragment,
                   null,
-                  r.a.createElement(u.a, {
+                  r.a.createElement(p.a, {
                     containerStyle: v.cursor,
                     items: [
                       {
@@ -47,9 +47,9 @@
                       },
                     ],
                   }),
-                  r.a.createElement(p.b, { children: 'View Replies', color: 'link', style: v.link }),
+                  r.a.createElement(u.b, { children: 'View Replies', color: 'link', style: v.link }),
                 )
-              : r.a.createElement(p.b, { align: 'center', children: t, color: 'link' }),
+              : r.a.createElement(u.b, { align: 'center', children: n, color: 'link' }),
           ),
         )
       }
@@ -66,77 +66,67 @@
         }
       })
     },
-    jv0Q: function (e, n, t) {
+    jv0Q: function (e, t, n) {
       'use strict'
-      t.r(n)
-      var a = t('yiKp'),
-        r = t.n(a),
-        c = t('ezF+'),
-        i = t('VPAj'),
-        o = t('3XMw'),
-        s = t.n(o),
-        l = t('97Jx'),
-        u = t.n(l),
-        p = t('m3Bd'),
-        d = t.n(p),
-        m = t('ERkP'),
-        f = t.n(m),
-        b = t('SrtL'),
-        v = t('5bSN'),
-        h = ['children', 'count']
-      var w = t('855f'),
-        y = t('zh9S'),
-        k = 'new_tweets_bar',
-        g = { component: k },
-        E = s.a.d6917e0c,
-        C = c.g({
-          divider: { top: !0, bottom: !0 },
-          component: function (e) {
-            var n = e.children,
-              t = e.count,
-              a = d()(e, h)
-            return f.a.createElement(
-              f.a.Fragment,
-              null,
-              f.a.createElement(b.a.Configure, { timelineNewCount: t }),
-              f.a.createElement(v.a, u()({}, a, { children: n })),
-            )
-          },
-          bindActions: function (e) {
-            return { applyInstructions: e.module.applyNewTweetsBarInstructions, scribeAction: y.c }
-          },
-          createProps: function (e) {
-            var n = e.actions,
-              t = n.applyInstructions,
-              a = n.scribeAction,
-              c = e.entry,
-              i = e.scribeNamespace,
-              o = c.content.count
-            return {
-              children: E({ count: w.a.getFormattedCount(o) }),
-              count: o,
-              onClick: function () {
-                a(r()(r()({}, i), {}, { action: 'click' }), { event_value: o }), t()
-              },
-            }
-          },
-          isFocusable: Object(i.a)(!0),
-          defaultScribeNamespace: g,
-          onImpression: function (e) {
-            var n = e.actions.scribeAction,
-              t = e.entry,
-              a = (e.scribeData, e.scribeNamespace),
-              c = t.content.count
-            n(r()(r()({}, a), {}, { action: 'impression' }), { event_value: c })
-          },
-          shouldDisplayBorder: function (e) {
-            return !0
-          },
-          getBehavioralEventContextOverride: function () {
-            return { viewType: k }
-          },
+      n.r(t)
+      var a = n('ezF+'),
+        r = n('VPAj'),
+        i = 'new_tweets_bar',
+        c = n('ERkP'),
+        o = n.n(c),
+        s = n('rxPX'),
+        l = { component: i },
+        p = Object(s.a)()
+          .propsFromActions(function (e) {
+            return { applyInstructions: e.module.applyNewTweetsBarInstructions }
+          })
+          .withAnalytics(l),
+        u = n('SrtL'),
+        d = n('3XMw'),
+        m = n.n(d),
+        b = n('855f'),
+        f = n('5bSN'),
+        v = n('FGLp'),
+        w = m.a.d6917e0c
+      function h(e) {
+        var t = e.analytics,
+          n = e.applyInstructions,
+          a = e.entry.content.count
+        Object(v.a)(function () {
+          t.scribe({ action: 'impression', data: { event_value: a } })
         })
-      n.default = C
+        var r = o.a.useCallback(
+            function () {
+              t.scribe({ action: 'click', data: { event_value: a } }), n()
+            },
+            [t, n, a],
+          ),
+          i = o.a.useMemo(
+            function () {
+              return w({ count: b.a.getFormattedCount(a) })
+            },
+            [a],
+          )
+        return o.a.createElement(
+          o.a.Fragment,
+          null,
+          o.a.createElement(u.a.Configure, { timelineNewCount: a }),
+          o.a.createElement(f.a, { children: i, onClick: r }),
+        )
+      }
+      var y = p(o.a.memo(h)),
+        k = a
+          .b({
+            component: y,
+            divider: { top: !0, bottom: !0 },
+            isFocusable: Object(r.a)(!0),
+            shouldDisplayBorder: Object(r.a)(!0),
+            getBehavioralEventContextOverride: function () {
+              return { viewType: i }
+            },
+          })
+          .getHandler()
+      t.default = k
     },
   },
 ])

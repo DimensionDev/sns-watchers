@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [245],
+  [244],
   {
     VSZh: function (e, t, n) {
       'use strict'
       n.r(t)
-      var i = n('ezF+'),
-        o = n('Rp9C'),
+      var o = n('ezF+'),
+        i = n('Rp9C'),
         a = (n('uFXj'), n('ERkP')),
         c = n.n(a),
         r = n('Zejx'),
@@ -17,28 +17,28 @@
           return { topic: l }
         }),
         d = n('fRsM'),
-        u = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
-        m = n('Irs7'),
+        m = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
+        u = n('Irs7'),
         h = n('MWbm'),
         I = n('t62R'),
         f = n('rHpw'),
         b = function (e) {
           var t = e.entry,
             n = e.topic,
-            i = Object(m.b)(),
-            o = t.content,
-            a = o.displayType,
-            r = o.followIncentiveText,
-            s = o.followIncentiveTitle,
-            l = a === u.IncentiveFocus
+            o = Object(u.b)(),
+            i = t.content,
+            a = i.displayType,
+            r = i.followIncentiveText,
+            s = i.followIncentiveTitle,
+            l = a === m.IncentiveFocus
           return (
             c.a.useEffect(function () {
-              n && i.scribeAction('impression')
+              n && o.scribeAction('impression')
             }, []),
             n
               ? c.a.createElement(
                   h.a,
-                  { style: l && v.incentiveFocus },
+                  { style: l && y.incentiveFocus },
                   c.a.createElement(d.a, {
                     educateOnFollow: !0,
                     nameWeight: l ? void 0 : 'heavy',
@@ -48,7 +48,7 @@
                   s || r
                     ? c.a.createElement(
                         h.a,
-                        { style: [v.text, l ? v.noMarginBottom : v.border] },
+                        { style: [y.text, l ? y.noMarginBottom : y.border] },
                         s ? c.a.createElement(I.b, { size: 'headline1', weight: 'bold' }, s) : null,
                         r ? c.a.createElement(I.b, { color: 'gray700' }, r) : null,
                       )
@@ -58,7 +58,7 @@
           )
         },
         g = p(c.a.memo(b)),
-        v = f.a.create(function (e) {
+        y = f.a.create(function (e) {
           return {
             border: {
               borderTopStyle: 'solid',
@@ -75,20 +75,20 @@
             },
           }
         }),
-        y = i
+        v = o
           .b({
             component: g,
             getScribeDataItem: function (e) {
-              return o.a.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo)
+              return i.a.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo)
             },
           })
           .getHandler()
-      t.default = y
+      t.default = v
     },
     fRsM: function (e, t, n) {
       'use strict'
-      var i = n('yiKp'),
-        o = n.n(i),
+      var o = n('yiKp'),
+        i = n.n(o),
         a = n('VrFO'),
         c = n.n(a),
         r = n('Y9Ll'),
@@ -96,16 +96,16 @@
         l = n('1Pcy'),
         p = n.n(l),
         d = n('5Yy7'),
-        u = n.n(d),
-        m = n('2VqO'),
-        h = n.n(m),
+        m = n.n(d),
+        u = n('2VqO'),
+        h = n.n(u),
         I = n('KEM+'),
         f = n.n(I),
         b = (n('1t7P'), n('jQ/y'), n('ho0z'), n('7xRU'), n('ERkP')),
         g = n.n(b),
-        v = n('LWCC'),
-        y = n('3XMw'),
-        w = n.n(y),
+        y = n('LWCC'),
+        v = n('3XMw'),
+        w = n.n(v),
         D = n('EHV7'),
         _ = n('YICZ'),
         k = n('3IPs'),
@@ -114,25 +114,25 @@
         S = n('Irs7'),
         T = n('hxu0'),
         O = n('htQn'),
-        C = n('t62R'),
-        F = n('j7Bv'),
-        L = n('rHpw'),
+        F = n('t62R'),
+        L = n('j7Bv'),
+        C = n('rHpw'),
         R = n('v6aA'),
         B = w.a.a2a3824a,
         j = 0,
-        P = (function (e) {
-          u()(n, e)
+        z = (function (e) {
+          m()(n, e)
           var t = h()(n)
-          function n(e, i) {
+          function n(e, o) {
             var a
             return (
               c()(this, n),
-              (a = t.call(this, e, i)),
+              (a = t.call(this, e, o)),
               f()(p()(a), '_topicLink', {
                 pathname: '/i/topics/'.concat(a.props.topic.id),
                 state: {
-                  referringScribeNamespace: o()(
-                    o()({}, a.props.analytics.contextualScribeNamespace),
+                  referringScribeNamespace: i()(
+                    i()({}, a.props.analytics.contextualScribeNamespace),
                     {},
                     { action: 'click' },
                   ),
@@ -142,14 +142,14 @@
                 var e = a.props,
                   t = e.saveAsRecentSearch,
                   n = e.shouldStoreTypeaheadItem,
-                  i = e.topic,
-                  o = i.description,
-                  c = i.id,
-                  r = i.name
+                  o = e.topic,
+                  i = o.description,
+                  c = o.id,
+                  r = o.name
                 t &&
                   n &&
                   n(x.a.ItemType.TOPIC) &&
-                  t({ topic: { id: c, name: r, description: o || '', type: k.a.Topic } }),
+                  t({ topic: { id: c, name: r, description: i || '', type: k.a.Topic } }),
                   a._handleScribe('click')
               }),
               (a._topicDomId = 'topic'.concat(j)),
@@ -169,8 +169,8 @@
                   var e = this.props,
                     t = e.educateOnFollow,
                     n = e.isInSidebar,
-                    i = e.nameWeight,
-                    o = e.notInterestedOnClick,
+                    o = e.nameWeight,
+                    i = e.notInterestedOnClick,
                     a = e.topic,
                     c = a.description,
                     r = a.name,
@@ -188,25 +188,25 @@
                       interactiveStyles: this._topicLink ? void 0 : null,
                       link: this._topicLink,
                       onClick: this._topicLink ? this._handleOnClick : void 0,
-                      style: [z.root, z.flexStart],
+                      style: [H.root, H.flexStart],
                       withDarkerInteractiveBackground: n,
                     },
                     g.a.createElement(
                       E.a,
-                      { style: z.topic },
+                      { style: H.topic },
                       g.a.createElement(E.a, { accessibilityLabel: B, nativeID: this._topicDomId }),
                       this._renderIcon(),
                       g.a.createElement(
                         E.a,
-                        { style: z.text },
+                        { style: H.text },
                         g.a.createElement(
-                          C.b,
-                          { nativeID: this._nameDomId, weight: i, withInteractiveStyling: !!this._topicLink },
+                          F.b,
+                          { nativeID: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink },
                           r,
                         ),
                         c
                           ? g.a.createElement(
-                              C.b,
+                              F.b,
                               { color: 'gray700', nativeID: this._descriptionDomId, numberOfLines: 2 },
                               c,
                             )
@@ -215,13 +215,13 @@
                     ),
                     g.a.createElement(
                       E.a,
-                      { style: z.buttons },
-                      g.a.createElement(v.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: a }),
-                      s && o
+                      { style: H.buttons },
+                      g.a.createElement(y.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: a }),
+                      s && i
                         ? g.a.createElement(_.a, {
                             nativeID: this._notInterestedButtonDomId,
-                            onPress: o,
-                            style: z.marginLeft,
+                            onPress: i,
+                            style: H.marginLeft,
                             topicId: a.id,
                           })
                         : null,
@@ -233,7 +233,7 @@
                 key: '_renderIcon',
                 value: function () {
                   return this.props.withIcon
-                    ? g.a.createElement(F.a, { Icon: D.a, size: 'large', style: z.icon })
+                    ? g.a.createElement(L.a, { Icon: D.a, size: 'large', style: H.icon })
                     : null
                 },
               },
@@ -247,8 +247,8 @@
             n
           )
         })(g.a.Component)
-      f()(P, 'contextType', R.a), f()(P, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
-      var z = L.a.create(function (e) {
+      f()(z, 'contextType', R.a), f()(z, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
+      var H = C.a.create(function (e) {
         return {
           root: {
             flexDirection: 'row',
@@ -265,22 +265,7 @@
           topic: { alignItems: 'center', flexDirection: 'row', flexShrink: 1, paddingRight: e.spaces.space4 },
         }
       })
-      t.a = Object(T.a)(Object(S.a)(P))
-    },
-    hxu0: function (e, t, n) {
-      'use strict'
-      var i = n('97Jx'),
-        o = n.n(i),
-        a = n('ERkP'),
-        c = n.n(a),
-        r = n('vqbU')
-      t.a = function (e) {
-        return function (t) {
-          return c.a.createElement(r.a.Consumer, null, function (n) {
-            return c.a.createElement(e, o()({}, t, { isInSidebar: n }))
-          })
-        }
-      }
+      t.a = Object(T.a)(Object(S.a)(z))
     },
   },
 ])
