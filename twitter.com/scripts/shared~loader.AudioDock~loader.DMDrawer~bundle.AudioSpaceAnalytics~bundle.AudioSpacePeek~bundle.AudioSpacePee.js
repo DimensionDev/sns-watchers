@@ -944,7 +944,9 @@
             y = null !== (t = P(p, h)) && void 0 !== t ? t : m,
             f = (function (e, t, n, a) {
               var r = e ? g.a.createElement(I, { onClick: n, viewMorePath: t }) : g.a.createElement('span', null),
-                i = e ? g.a.createElement(v.b, { color: 'link' }) : g.a.createElement('span', null),
+                i = function (e) {
+                  return o(e) ? g.a.createElement(v.b, { color: 'link' }) : g.a.createElement('span', null)
+                },
                 o = function (t) {
                   var n = null == a ? void 0 : a.includes(t.id_str)
                   return e && !n
@@ -959,12 +961,13 @@
                   var t = e.userOne,
                     a = e.userTwo,
                     r = S(o(t), M(t), n),
-                    l = S(o(a), M(a), n)
+                    l = S(o(a), M(a), n),
+                    s = i(a)
                   return g.a.createElement(
                     E.a.I18NFormatMessage,
                     { $i18n: 'ge01e6a2' },
                     r,
-                    g.a.cloneElement(i, null, E.a.f34e6516),
+                    g.a.cloneElement(s, null, E.a.f34e6516),
                     l,
                   )
                 },
@@ -985,13 +988,14 @@
                     r = e.userTwo,
                     l = S(o(t), M(t), n),
                     s = S(o(r), M(r), n),
-                    c = S(o(a), M(a), n)
+                    c = S(o(a), M(a), n),
+                    d = i(a)
                   return g.a.createElement(
                     E.a.I18NFormatMessage,
                     { $i18n: 'hd7dd197' },
                     l,
                     s,
-                    g.a.cloneElement(i, null, E.a.e06c99b6),
+                    g.a.cloneElement(d, null, E.a.e06c99b6),
                     c,
                   )
                 },

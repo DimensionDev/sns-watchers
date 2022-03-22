@@ -16,9 +16,9 @@
         m = n('2VqO'),
         b = n.n(m),
         y = n('KEM+'),
-        g = n.n(y),
-        h = (n('2G9S'), n('ho0z'), n('0zG9'), n('ERkP')),
-        _ = n.n(h),
+        h = n.n(y),
+        g = (n('2G9S'), n('ho0z'), n('0zG9'), n('ERkP')),
+        _ = n.n(g),
         f = n('/yvb'),
         w = n('hUVV'),
         S = n('3XMw'),
@@ -45,13 +45,13 @@
             for (var a = arguments.length, s = new Array(a), r = 0; r < a; r++) s[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(s))),
-              g()(p()(e), 'state', { isScriptLoaded: !1 }),
-              g()(
+              h()(p()(e), 'state', { isScriptLoaded: !1 }),
+              h()(
                 p()(e),
                 '_is3rdPartyIntegrationDisabled',
                 Object(z.a)('responsive_web_3rd_party_category_sign_in_with_apple', e.context.featureSwitches),
               ),
-              g()(p()(e), '_initAppleIDAuth', function () {
+              h()(p()(e), '_initAppleIDAuth', function () {
                 var t = window.AppleID,
                   n = e.props.fetchSsoInitToken,
                   a = Object(L.c)(e.context.featureSwitches) ? 'https://'.concat(L.b) : 'https://'.concat(L.a)
@@ -61,7 +61,7 @@
                     t.auth.init(i()(i()({}, x), {}, { redirectURI: a, state: n }))
                   })
               }),
-              g()(p()(e), '_handleOnPress', function () {
+              h()(p()(e), '_handleOnPress', function () {
                 var t = window.AppleID,
                   n = e.props,
                   a = n.analytics,
@@ -142,7 +142,7 @@
                         backgroundColor: 'white',
                         borderColor: 'gray200',
                         children: s,
-                        color: 'gray1100',
+                        color: 'alwaysBaseGray1100',
                         disabled: !i,
                         icon: _.a.createElement(k.a, null),
                         onPress: this._handleOnPress,
@@ -155,8 +155,8 @@
             n
           )
         })(_.a.PureComponent)
-      g()(R, 'contextType', I.a),
-        g()(R, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
+      h()(R, 'contextType', I.a),
+        h()(R, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
         (t.a = Object(C.a)(Object(w.a)(R)))
     },
     iKTg: function (e, t, n) {
@@ -210,8 +210,8 @@
         m = n('KEM+'),
         b = n.n(m),
         y = (n('2G9S'), n('ERkP')),
-        g = n.n(y),
-        h = (n('0zG9'), n('UpKB')),
+        h = n.n(y),
+        g = (n('0zG9'), n('UpKB')),
         _ = n('v6aA'),
         f = n('kG2l'),
         w = n('3XMw'),
@@ -246,41 +246,41 @@
         }),
         R = function (e) {
           var t = e.onSignupClick,
-            n = g.a.useContext(_.a).featureSwitches.isTrue('responsive_web_third_party_sso_buttons_enabled')
-          return g.a.createElement(
+            n = h.a.useContext(_.a).featureSwitches.isTrue('responsive_web_third_party_sso_buttons_enabled')
+          return h.a.createElement(
             k.a,
             { accessibilityLabel: L, accessibilityRole: 'summary' },
-            g.a.createElement(E.b, { text: T }),
-            g.a.createElement(P.b, { color: 'gray700', size: 'subtext2', style: x.moduleContent }, j),
-            g.a.createElement(A.a, null, function (e) {
+            h.a.createElement(E.b, { text: T }),
+            h.a.createElement(P.b, { color: 'gray700', size: 'subtext2', style: x.moduleContent }, j),
+            h.a.createElement(A.a, null, function (e) {
               var a = e.windowWidth,
                 i = v.a.isTwoColumnSmallLayout(a)
-              return g.a.createElement(
+              return h.a.createElement(
                 k.a,
                 { style: x.buttonContainer },
                 n
-                  ? g.a.createElement(
-                      g.a.Fragment,
+                  ? h.a.createElement(
+                      h.a.Fragment,
                       null,
-                      g.a.createElement(f.a, {
+                      h.a.createElement(f.a, {
                         buttonSize: 'medium',
                         buttonState: I.a.SignUp,
                         customWidth: i ? B.f : void 0,
                         displayType: B.e.Button,
                         style: [x.ssoButtonStyles, x.buttonStyles, i && x.narrowButtonStyles],
                       }),
-                      g.a.createElement(h.a, {
+                      h.a.createElement(g.a, {
                         buttonSize: 'medium',
                         buttonState: I.a.SignUp,
                         style: [x.ssoButtonStyles, x.buttonStyles, i && x.narrowButtonStyles],
                       }),
-                      g.a.createElement(
+                      h.a.createElement(
                         C.a,
                         {
                           accessibilityRole: 'link',
                           backgroundColor: 'white',
                           borderColor: 'gray200',
-                          color: 'gray1100',
+                          color: 'alwaysBaseGray1100',
                           link: {
                             pathname: '/i/flow/signup',
                             state: { input: { requested_variant: JSON.stringify({ signup_type: I.b }) } },
@@ -292,7 +292,7 @@
                         O,
                       ),
                     )
-                  : g.a.createElement(
+                  : h.a.createElement(
                       C.a,
                       {
                         accessibilityRole: 'link',
@@ -306,7 +306,7 @@
               )
             }),
             n
-              ? g.a.createElement(
+              ? h.a.createElement(
                   P.b,
                   { color: 'gray700', size: 'subtext2', style: [x.moduleContent, x.footerLabel] },
                   I.c,
@@ -335,13 +335,13 @@
               {
                 key: 'render',
                 value: function () {
-                  return g.a.createElement(R, { onSignupClick: this._handleSignupClick })
+                  return h.a.createElement(R, { onSignupClick: this._handleSignupClick })
                 },
               },
             ]),
             n
           )
-        })(g.a.Component)
+        })(h.a.Component)
       t.default = Object(U.a)(D, { component: 'signup_module' })
     },
   },

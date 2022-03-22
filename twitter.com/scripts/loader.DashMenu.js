@@ -291,7 +291,7 @@
         M = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         A = Object(M.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(189)]).then(n.bind(null, 'sAnO'))
+            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(189)]).then(n.bind(null, 'sAnO'))
           },
         }),
         S = n('3XMw'),

@@ -219,7 +219,7 @@
         ce = Object(oe.a)({
           loader: function () {
             return (O.a.preload() || Promise.resolve()).then(function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(84)]).then(n.bind(null, 'RrO2'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(84)]).then(n.bind(null, 'RrO2'))
             })
           },
           renderPlaceholder: function () {

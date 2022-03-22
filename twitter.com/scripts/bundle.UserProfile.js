@@ -2069,7 +2069,7 @@
         pa = a('EfHu'),
         fa = te.a.create(function (e) {
           return {
-            icon: { color: e.colors.gray1100, height: e.spaces.space32 },
+            icon: { color: e.colors.alwaysBaseGray1100, height: e.spaces.space32 },
             image: {
               alignItems: 'center',
               backgroundColor: e.colors.gray200,

@@ -6218,67 +6218,73 @@
       'use strict'
       n.r(t),
         n.d(t, 'ManageSubscriptionScreen', function () {
-          return w
+          return k
         })
       n('2G9S')
       var a = n('ERkP'),
         r = n.n(a),
-        c = n('rxPX'),
-        i = n('su2V'),
-        o = n('cnVF'),
-        s = Object(c.a)()
+        c = n('wrlS'),
+        i = n('rxPX'),
+        o = n('su2V'),
+        s = n('cnVF'),
+        l = function (e) {
+          return Object(c.d)(e).isTrue('subscriptions_stripe_testing') ? s.F : s.D
+        },
+        u = Object(i.a)()
           .propsFromState(function () {
             return {
-              productSubscriptionsFetchStatus: i.j,
+              productSubscriptionsFetchStatus: o.j,
               subscription: function (e) {
-                return Object(i.i)(e, o.E)
+                return Object(o.i)(e, s.E)
               },
               customerPortalUrlFetchStatus: function (e) {
-                return Object(i.h)(e, o.D)
+                return Object(o.h)(e, l(e))
               },
               customerPortalUrl: function (e) {
-                return Object(i.g)(e, o.D)
+                return Object(o.g)(e, l(e))
               },
+              twitterBlueID: l,
             }
           })
           .propsFromActions(function () {
-            return { fetchProductSubscriptions: i.a, fetchSubscriptionProductCustomerPortalUrl: i.c }
+            return { fetchProductSubscriptions: o.a, fetchSubscriptionProductCustomerPortalUrl: o.c }
           })
           .withAnalytics({ page: 'subscriptions', section: 'management' }),
-        l = n('v//M'),
-        u = n('3XMw'),
-        d = n.n(u),
-        f = n('Wc+h'),
-        m = n('yoO3'),
-        p =
+        d = n('v//M'),
+        f = n('3XMw'),
+        m = n.n(f),
+        p = n('Wc+h'),
+        b = n('yoO3'),
+        h =
           (n('yH/f'),
           Object.freeze({ AppleAppStore: 'AppleAppStore', GooglePlay: 'GooglePlay', TPay: 'TPay', Stripe: 'Stripe' })),
-        b = n('VKnd'),
-        h = n('7FtF'),
-        E = n('zCf4'),
-        g = n('MWbm'),
-        v = n('cm6r'),
-        y = n('FR63'),
-        S = n('t62R'),
-        _ = n('RKmr')
-      function w(e) {
+        E = n('VKnd'),
+        g = n('7FtF'),
+        v = n('zCf4'),
+        y = n('MWbm'),
+        S = n('cm6r'),
+        _ = n('FR63'),
+        w = n('t62R'),
+        C = n('RKmr')
+      function k(e) {
         var t = e.analytics,
           n = e.customerPortalUrl,
           a = e.customerPortalUrlFetchStatus,
           c = e.fetchProductSubscriptions,
           i = e.fetchSubscriptionProductCustomerPortalUrl,
-          s = e.productSubscriptionsFetchStatus,
-          u = e.subscription,
-          w = Object(E.g)(),
-          k = d.a.ib35705d,
-          T = d.a.e5fff0c7,
-          O = d.a.baf97715,
-          L = 'Expire' === (null == u ? void 0 : u.state) ? ''.concat(T, ' ').concat(O) : T,
-          I = d.a.fff413dc,
-          A = d.a.h201c4c1,
-          R = d.a.i8385a2c,
-          F = d.a.h80834de,
-          P = d.a.ib8ebf3b,
+          o = e.productSubscriptionsFetchStatus,
+          s = e.subscription,
+          l = e.twitterBlueID,
+          u = Object(v.g)(),
+          f = m.a.ib35705d,
+          k = m.a.e5fff0c7,
+          O = m.a.baf97715,
+          L = 'Expire' === (null == s ? void 0 : s.state) ? ''.concat(k, ' ').concat(O) : k,
+          I = m.a.fff413dc,
+          A = m.a.h201c4c1,
+          R = m.a.i8385a2c,
+          F = m.a.h80834de,
+          P = m.a.ib8ebf3b,
           M = function () {
             c()
           }
@@ -6295,57 +6301,57 @@
           t.scribe({
             action: 'click',
             data: {
-              payment_source: (null == u ? void 0 : u.payment_source) || '',
-              status: (null == u ? void 0 : u.state) || '',
+              payment_source: (null == s ? void 0 : s.payment_source) || '',
+              status: (null == s ? void 0 : s.state) || '',
             },
           }),
-            i(o.D, b.b)
+            i(l, E.b)
         }
         return r.a.createElement(
-          m.a,
+          b.a,
           null,
           r.a.createElement(
-            h.a,
-            { location: w, title: k },
-            r.a.createElement(_.a, { description: L }),
+            g.a,
+            { location: u, title: f },
+            r.a.createElement(C.a, { description: L }),
             r.a.createElement(
-              g.a,
+              y.a,
               null,
-              r.a.createElement(l.a, {
-                fetchStatus: s,
+              r.a.createElement(d.a, {
+                fetchStatus: o,
                 onRequestRetry: M,
                 render: function () {
                   var e,
-                    t = null == u ? void 0 : u.payment_source
-                  t && t !== p.Stripe && (e = t === p.AppleAppStore ? A : t === p.GooglePlay ? R : F)
+                    t = null == s ? void 0 : s.payment_source
+                  t && t !== h.Stripe && (e = t === h.AppleAppStore ? A : t === h.GooglePlay ? R : F)
                   var n = P({ mobilePlatform: e })
                   return r.a.createElement(
                     r.a.Fragment,
                     null,
-                    t === p.Stripe
+                    t === h.Stripe
                       ? r.a.createElement(
-                          v.a,
-                          { accessibilityRole: 'button', onPress: U, style: C.manageSubscriptionInteraction },
+                          S.a,
+                          { accessibilityRole: 'button', onPress: U, style: T.manageSubscriptionInteraction },
                           r.a.createElement(
-                            y.a,
+                            _.a,
                             null,
                             r.a.createElement(
-                              g.a,
-                              { style: C.manageSubscriptionSection },
-                              r.a.createElement(S.b, null, I),
-                              r.a.createElement(f.a, { style: C.goToSubscriptionPortalIcon }),
+                              y.a,
+                              { style: T.manageSubscriptionSection },
+                              r.a.createElement(w.b, null, I),
+                              r.a.createElement(p.a, { style: T.goToSubscriptionPortalIcon }),
                             ),
                           ),
                         )
-                      : r.a.createElement(_.a, { description: n }),
+                      : r.a.createElement(C.a, { description: n }),
                   )
                 },
                 retryable: !0,
               }),
-              r.a.createElement(l.a, {
+              r.a.createElement(d.a, {
                 fetchStatus: a,
                 onRequestRetry: function () {
-                  i(o.D, b.b)
+                  i(l, E.b)
                 },
                 render: function () {
                   return n && (window.location.href = n), null
@@ -6356,15 +6362,15 @@
           ),
         )
       }
-      var C = n('rHpw').a.create(function (e) {
+      var T = n('rHpw').a.create(function (e) {
           return {
             manageSubscriptionSection: { flexDirection: 'row', justifyContent: 'space-between' },
             goToSubscriptionPortalIcon: { color: e.colors.gray700 },
             manageSubscriptionInteraction: { cursor: 'pointer' },
           }
         }),
-        k = s(w)
-      t.default = k
+        O = u(k)
+      t.default = O
     },
     xrkw: function (e, t, n) {
       'use strict'

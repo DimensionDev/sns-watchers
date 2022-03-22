@@ -697,7 +697,7 @@
                     i.a.createElement(
                       b.a,
                       {
-                        dominantColor: 'buttonAlwaysBlack',
+                        dominantColor: 'alwaysBaseGray1100',
                         onPress: y,
                         size: 'medium',
                         style: [I.ctaButton, n && I.ctaButtonNarrow],
@@ -708,7 +708,7 @@
                     i.a.createElement(
                       b.a,
                       {
-                        dominantColor: 'buttonAlwaysBlack',
+                        dominantColor: 'alwaysBaseGray1100',
                         onPress: k,
                         size: 'medium',
                         style: [I.ctaButton, n && I.ctaButtonNarrow],
@@ -871,7 +871,7 @@
               flexDirection: 'row',
               width: '100%',
               justifyContent: 'space-evenly',
-              backgroundColor: e.colors.gray1100,
+              backgroundColor: e.colors.alwaysBaseGray1100,
               paddingHorizontal: e.spaces.space20,
               paddingVertical: e.spaces.space20,
             },
@@ -1746,70 +1746,73 @@
       'use strict'
       n.r(t),
         n.d(t, 'inputDetect', function () {
-          return Pt
-        }),
-        n.d(t, 'BottomCookieBannerPicker', function () {
-          return xt
-        }),
-        n.d(t, 'DtabBar', function () {
-          return Lt
-        }),
-        n.d(t, 'GlobalKeyboardShortcuts', function () {
           return jt
         }),
-        n.d(t, 'LivePipeline', function () {
+        n.d(t, 'BottomCookieBannerPicker', function () {
           return Dt
         }),
-        n.d(t, 'ModalSheet', function () {
+        n.d(t, 'DtabBar', function () {
           return Mt
         }),
-        n.d(t, 'SmartLockPrompt', function () {
+        n.d(t, 'GlobalKeyboardShortcuts', function () {
           return Rt
         }),
-        n.d(t, 'Seo', function () {
+        n.d(t, 'LivePipeline', function () {
           return Bt
         }),
-        n.d(t, 'Toast', function () {
+        n.d(t, 'ModalSheet', function () {
           return Nt
         }),
-        n.d(t, 'appReloader', function () {
+        n.d(t, 'SmartLockPrompt', function () {
           return Ut
         }),
-        n.d(t, 'badgeTimers', function () {
+        n.d(t, 'Seo', function () {
           return Ft
         }),
-        n.d(t, 'bindKeyboardShortcuts', function () {
+        n.d(t, 'Toast', function () {
           return Kt
         }),
-        n.d(t, 'ie11Reflower', function () {
+        n.d(t, 'appReloader', function () {
           return Ht
         }),
-        n.d(t, 'multiAccountListFetcher', function () {
+        n.d(t, 'badgeTimers', function () {
           return zt
         }),
-        n.d(t, 'redirectEmailUser', function () {
+        n.d(t, 'bindKeyboardShortcuts', function () {
           return Vt
         }),
-        n.d(t, 'scribeExternalReferer', function () {
+        n.d(t, 'ie11Reflower', function () {
           return Wt
         }),
-        n.d(t, 'getScreenReaderShortcutsDataAttribute', function () {
+        n.d(t, 'multiAccountListFetcher', function () {
           return Xt
         }),
-        n.d(t, 'altSvc', function () {
+        n.d(t, 'redirectEmailUser', function () {
           return qt
         }),
-        n.d(t, 'AppInstallOnLandingPrompt', function () {
+        n.d(t, 'scribeExternalReferer', function () {
           return Yt
         }),
-        n.d(t, 'AudioModule', function () {
+        n.d(t, 'getScreenReaderShortcutsDataAttribute', function () {
           return Gt
         }),
-        n.d(t, 'initGeoLocation', function () {
+        n.d(t, 'altSvc', function () {
           return Jt
         }),
-        n.d(t, 'userPresence', function () {
+        n.d(t, 'AppInstallOnLandingPrompt', function () {
           return Zt
+        }),
+        n.d(t, 'AudioModule', function () {
+          return Qt
+        }),
+        n.d(t, 'initGeoLocation', function () {
+          return $t
+        }),
+        n.d(t, 'userPresence', function () {
+          return en
+        }),
+        n.d(t, 'BonusFollowsModule', function () {
+          return tn
         })
       var r = {}
       n.r(r),
@@ -2101,26 +2104,71 @@
         },
         ce = (n('3voH'), n('+Aie')),
         se = n.n(ce)
-      var ue = n('Chb3'),
-        le = (n('7xRU'), n('lTEL'), n('87if'), n('kYxP'), n('Cm4o'), n('KrtT'), n('TJCb'), n('DZ+c'), n('Hde2')),
-        de = n('P1r1'),
-        pe = Object(H.a)()
+      n('849X'), n('TJCb'), n('JtPf'), n('7xRU')
+      var ue,
+        le = new Error('[BonusFollows] config not initialized'),
+        de = new ((function () {
+          function e() {
+            l()(this, e)
+          }
+          return (
+            s()(e, [
+              {
+                key: 'init',
+                value: function (e) {
+                  ue = e
+                },
+              },
+              {
+                key: 'initialized',
+                value: function () {
+                  return !!ue
+                },
+              },
+              {
+                key: 'fetchBonusFollows',
+                value: function (e) {
+                  return ue
+                    ? ue.api.BonusFollows.fetch({ user_id: e, template_name: 'bonus_follow' })
+                    : Promise.reject(le)
+                },
+              },
+              {
+                key: 'followAll',
+                value: function (e) {
+                  return ue ? ue.api.Friendships.createAllFriendships({ user_id: e.join(',') }) : Promise.reject(le)
+                },
+              },
+              {
+                key: 'unfollowAll',
+                value: function (e) {
+                  return ue ? ue.api.Friendships.destroyAllFriendships({ user_id: e.join(',') }) : Promise.reject(le)
+                },
+              },
+            ]),
+            e
+          )
+        })())(),
+        pe = n('Chb3'),
+        fe = (n('lTEL'), n('87if'), n('kYxP'), n('Cm4o'), n('KrtT'), n('DZ+c'), n('Hde2')),
+        he = n('P1r1'),
+        me = Object(H.a)()
           .propsFromState(function () {
-            return { dtabBarInfo: de.m }
+            return { dtabBarInfo: he.m }
           })
           .adjustStateProps(function (e) {
             var t = e.dtabBarInfo
             return { dtabAll: t && t.dtabAll, dtabRweb: t && t.dtabRweb, hide: t && t.hide, ttsToken: t && t.ttsToken }
           })
           .propsFromActions(function () {
-            return { setDtabBarInfo: de.H }
+            return { setDtabBarInfo: he.H }
           }),
-        fe = n('8jkQ'),
-        he = n('/yvb'),
-        me = n('mw9i'),
-        ve = n('t62R'),
-        be = n('rHpw'),
-        ye = (function (e) {
+        ve = n('8jkQ'),
+        be = n('/yvb'),
+        ye = n('mw9i'),
+        ge = n('t62R'),
+        _e = n('rHpw'),
+        Se = (function (e) {
           R()(n, e)
           var t = N()(n)
           function n(e, r) {
@@ -2133,17 +2181,17 @@
                   F.a.Fragment,
                   null,
                   F.a.createElement(
-                    he.a,
+                    be.a,
                     { onClick: i._handleInfo, size: 'xSmall', type: 'destructiveFilled' },
                     'Info',
                   ),
                   F.a.createElement(
-                    he.a,
+                    be.a,
                     { onClick: i._handleClear, size: 'xSmall', type: 'destructiveFilled' },
                     'Clear',
                   ),
                   F.a.createElement(
-                    he.a,
+                    be.a,
                     { onClick: i._handleClose, size: 'xSmall', type: 'destructiveFilled' },
                     'Hide',
                   ),
@@ -2169,10 +2217,10 @@
                 var e = i._getOverrides().join('\n'),
                   t = 'OK to clear overrides?\n'.concat(e)
                 if (window.confirm(t)) {
-                  var n = new URL(fe.b.get())
+                  var n = new URL(ve.b.get())
                   n.searchParams.set('dtab_local', ''),
                     n.searchParams.set('tts_token', ''),
-                    fe.b.navigateTo(n.toString())
+                    ve.b.navigateTo(n.toString())
                 }
               }),
               p()(D()(i), '_handleClose', function () {
@@ -2204,14 +2252,14 @@
                     n =
                       e.ttsToken || t
                         ? F.a.createElement(
-                            le.a,
-                            { style: ge.root },
+                            fe.a,
+                            { style: ke.root },
                             F.a.createElement(
-                              me.a,
-                              { isLarge: !0, style: ge.container, withGutter: !0 },
+                              ye.a,
+                              { isLarge: !0, style: ke.container, withGutter: !0 },
                               F.a.createElement(
-                                ve.b,
-                                { color: 'whiteOnColor', numberOfLines: 1, size: 'subtext2', style: ge.text },
+                                ge.b,
+                                { color: 'whiteOnColor', numberOfLines: 1, size: 'subtext2', style: ke.text },
                                 'Staging override is active',
                               ),
                               this._renderButtons(),
@@ -2225,8 +2273,8 @@
             n
           )
         })(F.a.PureComponent)
-      p()(ye, 'defaultProps', { hide: !1 })
-      var ge = be.a.create(function (e) {
+      p()(Se, 'defaultProps', { hide: !1 })
+      var ke = _e.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.red500 },
             container: {
@@ -2238,14 +2286,14 @@
             text: { width: '100%' },
           }
         }),
-        _e = pe(ye),
-        Se = n('OrGc'),
-        ke = n('rRIm'),
-        we = n('aITJ'),
-        Ee = {
+        we = me(Se),
+        Ee = n('OrGc'),
+        Te = n('rRIm'),
+        Ce = n('aITJ'),
+        Oe = {
           init: function (e) {
-            we.b.isDesktopOS() &&
-              we.b.isIE() &&
+            Ce.b.isDesktopOS() &&
+              Ce.b.isIE() &&
               ee.a.addEventListener('change', function (t) {
                 if ('active' === t && e && e.body) {
                   var n = e.body.style.display
@@ -2254,11 +2302,11 @@
               })
           },
         },
-        Te = (n('JtPf'), n('6/RC')),
-        Ce = n('M6MT'),
-        Oe = n('a/ea'),
-        Ie = function (e) {
-          return Object(de.o)(e.getState())
+        Ie = n('6/RC'),
+        Ae = n('M6MT'),
+        Pe = n('a/ea'),
+        xe = function (e) {
+          return Object(he.o)(e.getState())
             ? (function (e) {
                 var t, n, r
                 return null !== (t = navigator) && void 0 !== t && t.permissions
@@ -2266,29 +2314,29 @@
                     ? void 0
                     : r.query({ name: 'geolocation' }).then(function (t) {
                         return (
-                          e.dispatch(Object(Oe.e)(t.state)),
+                          e.dispatch(Object(Pe.e)(t.state)),
                           (t.onchange = function () {
-                            e.dispatch(Object(Oe.e)(this.state))
+                            e.dispatch(Object(Pe.e)(this.state))
                           }),
                           Promise.resolve(t.state)
                         )
                       })
                   : Promise.resolve()
               })(e).then(function (t) {
-                t === Ce.b.granted && e.dispatch(Object(Oe.a)())
+                t === Ae.b.granted && e.dispatch(Object(Pe.a)())
               })
             : Promise.resolve()
         },
-        Ae = (n('849X'), n('z84I'), n('pXBW')),
-        Pe = n('nS6Z')
-      function xe(e) {
+        Le = (n('z84I'), n('pXBW')),
+        je = n('nS6Z')
+      function De(e) {
         return e.json().then(function (e) {
           return e.errors.some(function (e) {
             return 392 === e.code
           })
         })
       }
-      function Le(e) {
+      function Me(e) {
         var t = e.condition,
           n = e.promiseFactory,
           r = e.sideEffect
@@ -2309,18 +2357,18 @@
             )
         }
       }
-      var je = n('T0aG'),
-        De = n.n(je)
+      var Re = n('T0aG'),
+        Be = n.n(Re)
       n('M+/F'), n('KOtZ')
-      function Me(e) {
-        return Object.keys(Re(e))
+      function Ne(e) {
+        return Object.keys(Ue(e))
       }
-      function Re(e) {
+      function Ue(e) {
         return e.reduce(function (e, t) {
           return (e[t] = !0), e
         }, {})
       }
-      var Be = (function () {
+      var Fe = (function () {
         function e(t) {
           var n = this,
             r = t.callback,
@@ -2349,9 +2397,9 @@
                   a.eventSource.readyState !== a.eventSource.CONNECTING ||
                   ((e = a.topics),
                   (t = n._getTopicsForAutoSubscribe()),
-                  (r = Re(e)),
+                  (r = Ue(e)),
                   (i = Object.keys(r)),
-                  (o = Me(t)),
+                  (o = Ne(t)),
                   i.length !== o.length ||
                     !o.every(function (e) {
                       return r[e]
@@ -2369,7 +2417,7 @@
               var e = n._getTopicsForAutoSubscribe()
               n.makeEventSource(e)
                 .then(function (t) {
-                  if ('object' !== De()(t)) throw new Error('EventSource must be defined')
+                  if ('object' !== Be()(t)) throw new Error('EventSource must be defined')
                   t.addEventListener('message', n._handleMessage),
                     t.addEventListener('error', n._handleError),
                     (n.connection = { eventSource: t, topics: e, hasConfig: !1 })
@@ -2425,9 +2473,9 @@
           e
         )
       })()
-      p()(Be, 'MAX_AUTO_SUBSCRIBE_TOPICS', 20)
-      var Ne = n('+d3d'),
-        Ue = (function () {
+      p()(Fe, 'MAX_AUTO_SUBSCRIBE_TOPICS', 20)
+      var Ke = n('+d3d'),
+        He = (function () {
           function e(t) {
             var n = this
             l()(this, e),
@@ -2436,7 +2484,7 @@
               p()(this, 'appliedState', { topics: [] }),
               p()(this, 'setTopics', function () {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : []
-                ;(n.pendingState.topics = Me(e)), n._applyPendingState()
+                ;(n.pendingState.topics = Ne(e)), n._applyPendingState()
               }),
               p()(this, '_subscribeAll', function () {
                 ;(n.pendingState.forceSubscribeAll = !0), n._applyPendingState()
@@ -2465,7 +2513,7 @@
               (this.throttlePeriod = o),
               null !== o &&
                 o >= 0 &&
-                (this._applyPendingState = Object(Ne.a)(this._applyPendingState, o, { leading: !1 }))
+                (this._applyPendingState = Object(Ke.a)(this._applyPendingState, o, { leading: !1 }))
           }
           return (
             s()(e, [
@@ -2498,11 +2546,11 @@
             e
           )
         })()
-      p()(Ue, 'DEFAULT_TTL', 12e4),
-        p()(Ue, 'TIMEOUT_PREEMPT_DURATION', 2e4),
-        p()(Ue, 'UPDATE_SUBSCRIPTIONS_THROTTLE', 1e3)
-      var Fe,
-        Ke = (function () {
+      p()(He, 'DEFAULT_TTL', 12e4),
+        p()(He, 'TIMEOUT_PREEMPT_DURATION', 2e4),
+        p()(He, 'UPDATE_SUBSCRIPTIONS_THROTTLE', 1e3)
+      var ze,
+        Ve = (function () {
           function e(t) {
             var n = this,
               r = t.makeEventSource,
@@ -2531,8 +2579,8 @@
                 })
               }),
               (this.makeEventSource = r),
-              (this.livePipelineResubscriber = new Ue({
-                updateSubscriptions: Le({ promiseFactory: i, condition: xe, sideEffect: this.restartEventSource }),
+              (this.livePipelineResubscriber = new He({
+                updateSubscriptions: Me({ promiseFactory: i, condition: De, sideEffect: this.restartEventSource }),
               }))
           }
           return (
@@ -2591,7 +2639,7 @@
                     this.eventSourceConnector && this.eventSourceConnector.setTopics(t),
                     n && !this.eventSourceConnector
                       ? (this._closeEventSource(),
-                        (this.eventSourceConnector = new Be({
+                        (this.eventSourceConnector = new Fe({
                           makeEventSource: this.makeEventSource,
                           callback: this._handleMessage,
                           topics: t,
@@ -2615,27 +2663,27 @@
             e
           )
         })()
-      p()(Ke, 'SYSTEM_CONFIG_TOPIC', '/system/config'), p()(Ke, 'UNUSED_CONNECTION_EXPIRY', 3e4)
-      var He = {
+      p()(Ve, 'SYSTEM_CONFIG_TOPIC', '/system/config'), p()(Ve, 'UNUSED_CONNECTION_EXPIRY', 3e4)
+      var We = {
           isSupported: function (e) {
             return 'EventSource' in window && e.isTrue('livepipeline_client_enabled')
           },
           isSupportedAndReady: function (e) {
-            return this.isSupported(e) && !!Fe
+            return this.isSupported(e) && !!ze
           },
           create: function (e, t, n) {
             var r = this
             if (!this.isSupported(e)) throw new Error('This browser does not support LivePipeline')
-            if (Fe) throw new Error('LivePipeline should only be initialized once')
+            if (ze) throw new Error('LivePipeline should only be initialized once')
             return (
-              (Fe = new Ke({
+              (ze = new Ve({
                 makeEventSource: function (e) {
                   var t = (function (e) {
                     var t = e.map(encodeURIComponent).join(','),
                       r = function (e) {
                         return ''.concat(e, '/live_pipeline/events?topic=').concat(t)
                       },
-                      i = r(Pe.b),
+                      i = r(je.b),
                       o = n.getReplacementHost(new URL(i))
                     return o ? r('https://'.concat(o)) : i
                   })(e)
@@ -2644,8 +2692,8 @@
                 updateSubscriptions: function (e) {
                   return t.LivePipeline.updateSubscriptions(e).catch(function (e) {
                     if (e)
-                      if (e instanceof Ae.a && Object($.c)(e, $.a.SessionNotFound)) Fe && Fe.restartEventSource()
-                      else if (!(e instanceof Ae.a) && e instanceof Error) return Promise.reject(e)
+                      if (e instanceof Le.a && Object($.c)(e, $.a.SessionNotFound)) ze && ze.restartEventSource()
+                      else if (!(e instanceof Le.a) && e instanceof Error) return Promise.reject(e)
                     return Promise.resolve()
                   })
                 },
@@ -2653,22 +2701,22 @@
               ee.a.addEventListener('change', function (e) {
                 return r._handleAppStateChange(e)
               }),
-              Fe
+              ze
             )
           },
           get: function () {
-            if (!Fe) throw new Error('LivePipeline instance has not been initialized')
-            return Fe
+            if (!ze) throw new Error('LivePipeline instance has not been initialized')
+            return ze
           },
           destroy: function () {
-            Fe && Fe.teardown(), (Fe = void 0)
+            ze && ze.teardown(), (ze = void 0)
           },
           _handleAppStateChange: function (e) {
             'active' === e ? this.get().resume() : this.get().suspend()
           },
         },
-        ze = n('pf9B'),
-        Ve = function (e) {
+        Xe = n('pf9B'),
+        qe = function (e) {
           var t = Object(x.createLocalApiErrorHandlerWithContextFactory)('MULTI_ACCOUNT_LIST_UPDATER'),
             n = e.dispatch(t(p()({ showToast: !1 }, $.a.AccessDeniedByBouncer, { customAction: ne.a }))),
             r = function (t) {
@@ -2680,40 +2728,40 @@
             })
           })
         },
-        We = n('Sksh'),
-        Xe = (n('KqXw'), n('MvUL'), n('Sp5X')),
-        qe = ['/login/error', '/i/sms_login', '/i/flow/lite_login', '/i/flow/login', '/i/flow/signup'],
-        Ye = function (e, t) {
+        Ye = n('Sksh'),
+        Ge = (n('KqXw'), n('MvUL'), n('Sp5X')),
+        Je = ['/login/error', '/i/sms_login', '/i/flow/lite_login', '/i/flow/login', '/i/flow/signup'],
+        Ze = function (e, t) {
           var n = !Q.m(t),
             r = Q.h(t),
             i = Q.g(t),
-            o = Xe.a.location.pathname
-          ;-1 === qe.indexOf(o) &&
-            (n && r ? Xe.a.replace('/i/sms_login') : n && i && Xe.a.replace('/i/flow/lite_login'))
+            o = Ge.a.location.pathname
+          ;-1 === Je.indexOf(o) &&
+            (n && r ? Ge.a.replace('/i/sms_login') : n && i && Ge.a.replace('/i/flow/lite_login'))
         },
-        Ge = n('yiKp'),
-        Je = n.n(Ge),
-        Ze = n('Mx3A'),
-        Qe = n('qzfk'),
-        $e = n('YeIG'),
-        et = n('TpKd'),
-        tt = { page: 'external', action: 'referred' },
-        nt = function (e, t, n, r) {
+        Qe = n('yiKp'),
+        $e = n.n(Qe),
+        et = n('Mx3A'),
+        tt = n('qzfk'),
+        nt = n('YeIG'),
+        rt = n('TpKd'),
+        it = { page: 'external', action: 'referred' },
+        ot = function (e, t, n, r) {
           var i = function (e) {
               return r.dispatch(Object(x.createLocalApiErrorHandlerWithContextFactory)(e)({}))
             },
-            o = Xe.a && Xe.a.location.query,
-            a = Ze.b({ query: o, httpReferer: document.referrer || '', requestUrl: window.location.href })
-          if (Object($e.a)(a)) return Promise.resolve()
-          if (a.referer && !fe.b.isExternalUrl(a.referer) && !fe.b.isInternalRedirect(a.referer))
+            o = Ge.a && Ge.a.location.query,
+            a = et.b({ query: o, httpReferer: document.referrer || '', requestUrl: window.location.href })
+          if (Object(nt.a)(a)) return Promise.resolve()
+          if (a.referer && !ve.b.isExternalUrl(a.referer) && !ve.b.isInternalRedirect(a.referer))
             return Promise.resolve()
           a.referer || (a.referer = ''),
             a.referral_details_str || (a.referral_details_str = ''),
             a.referral_type || (a.referral_type = 0)
-          var c = Object(et.a)(t)
+          var c = Object(rt.a)(t)
           c && (a.external_referer_cookie_value = c)
-          var s = a.referral_type === Ze.a.Access,
-            u = Je()(Je()({}, tt), {}, { client: Object(Qe.a)().clientName })
+          var s = a.referral_type === et.a.Access,
+            u = $e()($e()({}, it), {}, { client: Object(tt.a)().clientName })
           c && s && (u.action = 'set_access_referer_cookie')
           var l,
             d,
@@ -2735,39 +2783,39 @@
               : Promise.resolve())
           var h = e.Jot.externalReferer(f)
             .then(function (e) {
-              e && Object(et.c)(t, e[0])
+              e && Object(rt.c)(t, e[0])
             })
             .catch(function () {
               return i('SCRIBE_EXTERNAL_REFERER')
             })
           return Promise.all([h, l, d])
         },
-        rt = n('O6Yq'),
-        it = n('muX9'),
-        ot = n('zCf4')
-      var at = function () {
-          Object(ot.g)()
+        at = n('O6Yq'),
+        ct = n('muX9'),
+        st = n('zCf4')
+      var ut = function () {
+          Object(st.g)()
           var e,
-            t = (Te.canUseDOM && (e = window.location.href), e ? Object(rt.a)(e) : null)
-          return t ? F.a.createElement(it.a, null, F.a.createElement('link', { href: t, rel: 'canonical' })) : null
+            t = (Ie.canUseDOM && (e = window.location.href), e ? Object(at.a)(e) : null)
+          return t ? F.a.createElement(ct.a, null, F.a.createElement('link', { href: t, rel: 'canonical' })) : null
         },
-        ct =
+        lt =
           (n('ho0z'),
           Object(H.a)()
             .propsFromState(function () {
               return { loginReturnPath: Q.r }
             })
             .withAnalytics({ component: 'smartlock_prompt' })),
-        st = n('6oVL'),
-        ut = n('SrIh'),
-        lt = n('BnI0'),
-        dt = n('pQ3Z'),
-        pt = n.n(dt),
-        ft = n('cnVF'),
-        ht = n('MWbm'),
-        mt = n('mrHL'),
-        vt = ['/settings', '/signup', '/login/error', '/i/flow/signup', '/login/check'],
-        bt = (function (e) {
+        dt = n('6oVL'),
+        pt = n('SrIh'),
+        ft = n('BnI0'),
+        ht = n('pQ3Z'),
+        mt = n.n(ht),
+        vt = n('cnVF'),
+        bt = n('MWbm'),
+        yt = n('mrHL'),
+        gt = ['/settings', '/signup', '/login/error', '/i/flow/signup', '/login/check'],
+        _t = (function (e) {
           R()(n, e)
           var t = N()(n)
           function n(e, r) {
@@ -2779,7 +2827,7 @@
                 !!(window.PasswordCredential && navigator.credentials && navigator.credentials.get) &&
                 !r.loggedInUserId),
               (i._isSmartLockDisabledFromCookie =
-                '1' === e.getCookie({ featureSwitches: r.featureSwitches, cookieName: ft.y })),
+                '1' === e.getCookie({ featureSwitches: r.featureSwitches, cookieName: vt.y })),
               i
             )
           }
@@ -2789,14 +2837,14 @@
                 key: 'componentDidMount',
                 value: function () {
                   '/login/error' === this.props.location.pathname
-                    ? Object(lt.a)(this.context.featureSwitches)
+                    ? Object(ft.a)(this.context.featureSwitches)
                     : this._checkShouldDisplayPrompt()
                 },
               },
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
-                  pt()(e.location, this.props.location) || this._checkShouldDisplayPrompt()
+                  mt()(e.location, this.props.location) || this._checkShouldDisplayPrompt()
                 },
               },
               {
@@ -2809,10 +2857,10 @@
                     i = t.userName
                   return this._shouldDisplaySmartLockPrompt()
                     ? F.a.createElement(
-                        ht.a,
-                        { style: yt.hidden },
+                        bt.a,
+                        { style: St.hidden },
                         F.a.createElement(
-                          st.a,
+                          dt.a,
                           { autoSubmit: n, loginReturnPath: e },
                           F.a.createElement('input', { name: 'session[username_or_email]', type: 'hidden', value: i }),
                           F.a.createElement('input', { name: 'session[password]', type: 'hidden', value: r }),
@@ -2824,7 +2872,7 @@
               {
                 key: '_scribeAction',
                 value: function (e, t) {
-                  this.props.analytics.scribe(Je()(Je()({}, t), {}, { action: e }))
+                  this.props.analytics.scribe($e()($e()({}, t), {}, { action: e }))
                 },
               },
               {
@@ -2852,7 +2900,7 @@
                           } else
                             e._smartLockSupported &&
                               e.setState({ smartLockDisabled: !0 }, function () {
-                                return Object(lt.a)(e.context.featureSwitches)
+                                return Object(ft.a)(e.context.featureSwitches)
                               }),
                               i
                                 ? e._scribeAction('cancel', { element: 'no_credentials' })
@@ -2863,7 +2911,7 @@
                             'NotSupportedError' !== e.name &&
                             'NotAllowedError' !== e.name &&
                             'InvalidStateError' !== e.name &&
-                            Object(ut.a)(e)
+                            Object(pt.a)(e)
                         },
                       )
                   }
@@ -2880,7 +2928,7 @@
                       '/login' === n ||
                       (!this._isSmartLockDisabledFromCookie &&
                         !r &&
-                        !vt.some(function (e) {
+                        !gt.some(function (e) {
                           return e === n
                         }) &&
                         !this.context.featureSwitches.isTrue('stateful_login_enabled'))
@@ -2891,31 +2939,31 @@
             n
           )
         })(F.a.Component)
-      p()(bt, 'contextType', Y.a), p()(bt, 'defaultProps', { getCookie: mt.d })
-      var yt = be.a.create(function (e) {
+      p()(_t, 'contextType', Y.a), p()(_t, 'defaultProps', { getCookie: yt.d })
+      var St = _e.a.create(function (e) {
           return { hidden: { display: 'none' } }
         }),
-        gt = Object(q.a)(ct(bt)),
-        _t = n('HPNB'),
-        St = n('+Kfv'),
-        kt = n('1YZw'),
-        wt = Object(H.a)()
+        kt = Object(q.a)(lt(_t)),
+        wt = n('HPNB'),
+        Et = n('+Kfv'),
+        Tt = n('1YZw'),
+        Ct = Object(H.a)()
           .propsFromState(function () {
-            return { toast: kt.d }
+            return { toast: Tt.d }
           })
           .propsFromActions(function () {
-            return { onClose: kt.c }
+            return { onClose: Tt.c }
           }),
-        Et = n('ZB2A'),
-        Tt = 'toast',
-        Ct = n('cHvH'),
-        Ot = n('0FVZ'),
-        It = n('XTym'),
-        At = wt(function (e) {
+        Ot = n('ZB2A'),
+        It = 'toast',
+        At = n('cHvH'),
+        Pt = n('0FVZ'),
+        xt = n('XTym'),
+        Lt = Ct(function (e) {
           var t = e.onClose,
             n = e.toast,
-            r = Object(ot.g)(),
-            i = Object(Et.b)(r),
+            r = Object(st.g)(),
+            i = Object(Ot.b)(r),
             o = F.a.useMemo(
               function () {
                 return { viewType: i }
@@ -2923,13 +2971,13 @@
               [i],
             )
           return n
-            ? F.a.createElement(Ct.a, null, function (e) {
+            ? F.a.createElement(At.a, null, function (e) {
                 var r = e.windowWidth,
-                  i = _t.a.shouldRenderAsModal(r) ? Ot.a.ModalToasts : Ot.a.Toasts
+                  i = wt.a.shouldRenderAsModal(r) ? Pt.a.ModalToasts : Pt.a.Toasts
                 return F.a.createElement(
-                  St.a,
+                  Et.a,
                   { behavioralEventContext: o },
-                  F.a.createElement(It.a, {
+                  F.a.createElement(xt.a, {
                     LayerComponent: i,
                     action: n.action,
                     ariaOnly: n.ariaOnly,
@@ -2937,7 +2985,7 @@
                     behavioralEventEntityToken: n.behavioralEventEntityToken,
                     key: n.id,
                     onClose: t,
-                    testID: Tt,
+                    testID: It,
                     text: n.text,
                     withAutoDismiss: n.withAutoDismiss,
                     withClearButton: n.withClearButton,
@@ -2946,18 +2994,18 @@
               })
             : null
         }),
-        Pt = r,
-        xt = ue.a,
-        Lt = _e,
-        jt = ke.a,
-        Dt = He,
-        Mt = ze.a,
-        Rt = gt,
-        Bt = at,
-        Nt = At,
-        Ut = a,
-        Ft = ae,
-        Kt = function (e, t) {
+        jt = r,
+        Dt = pe.a,
+        Mt = we,
+        Rt = Te.a,
+        Bt = We,
+        Nt = Xe.a,
+        Ut = kt,
+        Ft = ut,
+        Kt = Lt,
+        Ht = a,
+        zt = ae,
+        Vt = function (e, t) {
           var n,
             r = Object.keys(e),
             i = !1,
@@ -2982,16 +3030,17 @@
             }
           )
         },
-        Ht = Ee,
-        zt = Ve,
-        Vt = Ye,
-        Wt = nt,
-        Xt = Se.d,
-        qt = L,
-        Yt = J,
-        Gt = Z.a,
-        Jt = Ie,
-        Zt = We.a
+        Wt = Oe,
+        Xt = qe,
+        qt = Ze,
+        Yt = ot,
+        Gt = Ee.d,
+        Jt = L,
+        Zt = J,
+        Qt = Z.a,
+        $t = xe,
+        en = Ye.a,
+        tn = de
     },
     rRIm: function (e, t, n) {
       'use strict'

@@ -8279,13 +8279,13 @@
         P = '/settings/blocked/imported',
         R = { page: 'settings', section: 'blocked_accounts' },
         M = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(5), n.e(12), n.e(237)]).then(n.bind(null, 'XFGu'))
+          return Promise.all([n.e(0), n.e(3), n.e(6), n.e(13), n.e(237)]).then(n.bind(null, 'XFGu'))
         }),
         x = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(5), n.e(12), n.e(237)]).then(n.bind(null, 'tJyY'))
+          return Promise.all([n.e(0), n.e(3), n.e(6), n.e(13), n.e(237)]).then(n.bind(null, 'tJyY'))
         }),
         N = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(5), n.e(12), n.e(237)]).then(n.bind(null, 'aaHS'))
+          return Promise.all([n.e(0), n.e(3), n.e(6), n.e(13), n.e(237)]).then(n.bind(null, 'aaHS'))
         }),
         D = (function (e) {
           u()(n, e)

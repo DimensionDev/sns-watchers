@@ -27,10 +27,10 @@
         E = 'https://help.twitter.com/using-twitter/twitter-circle',
         h = { page: 'trusted_friends_edit' },
         w = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(6), a.e(8), a.e(110)]).then(a.bind(null, 'gzLP'))
+          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(7), a.e(110)]).then(a.bind(null, 'gzLP'))
         }),
         k = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(6), a.e(8), a.e(110)]).then(a.bind(null, 'W8UM'))
+          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(7), a.e(110)]).then(a.bind(null, 'W8UM'))
         }),
         g = function (e) {
           var t = e.history,

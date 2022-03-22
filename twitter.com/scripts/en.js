@@ -4426,6 +4426,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
+          a('ac8e018f', function (e) {
+            return e.stringCount + ' pending request' + n(e.count, '', 's')
+          }),
+          a('i85df294', function (e) {
+            return e.stringCount + ' new pe' + n(e.count, 'rson', 'ople') + ' you may know'
+          }),
+          a('d62f81cb', function (e) {
+            return e.stringCount + ' pe' + n(e.count, 'rson', 'ople') + ' you may know'
+          }),
+          a('c983fc8c', function (e) {
+            return e.stringCount + ' new request' + n(e.count, '', 's')
+          }),
           a('bef0039f', 'You don’t have any message requests'),
           a('f5dc353c', 'Now filtering graphic media'),
           a('daeda053', 'Go to Settings'),
@@ -4753,16 +4765,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('b81437d2', 'Select visibility mode'),
           a('i693139c', 'Contains sensitive content'),
-          a('b198b98f', 'Your Moment’s visibility settings were updated.'),
-          a('ed26ca65', 'Add Tweets'),
-          a(
-            'c78fafa3',
-            'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
-          ),
-          a('e16e8170', 'Position'),
-          a('a2bb5115', function (e) {
-            return e.count + ' Tweet' + n(e.count, '', 's')
-          })
+          a('b198b98f', 'Your Moment’s visibility settings were updated.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4779,9 +4782,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('j5602a96', function (e) {
-          return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
-        }),
+        a('ed26ca65', 'Add Tweets'),
+          a(
+            'c78fafa3',
+            'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
+          ),
+          a('e16e8170', 'Position'),
+          a('a2bb5115', function (e) {
+            return e.count + ' Tweet' + n(e.count, '', 's')
+          }),
+          a('j5602a96', function (e) {
+            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
+          }),
           a('j15abc53', 'Beginning'),
           a('c371fb99', 'End'),
           a('b5210d57', 'Enter Collection ID'),
@@ -6034,12 +6046,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e791190a', '2x'),
           a('b3160a69', function (e) {
             return e.volumePercent + ' percent'
-          }),
-          a('e9bd453e', 'Replay'),
+          })
+        a('e9bd453e', 'Replay'),
           a('ec8ab8b4', 'Mute'),
           a('b8b6344a', 'Unmute'),
-          a('c9a642f9', 'Volume slider')
-        a('c27e60bf', 'Full screen'),
+          a('c9a642f9', 'Volume slider'),
+          a('c27e60bf', 'Full screen'),
           a('d2969f1f', 'Exit full screen'),
           a('c1658fc6', 'The media could not be played.'),
           a('ce871584', 'This broadcast has ended.'),

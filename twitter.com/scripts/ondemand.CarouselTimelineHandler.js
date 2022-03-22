@@ -58,28 +58,28 @@
         }),
         k = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(4), r.e(242)]).then(r.bind(null, 'CdHO'))
+            return Promise.all([r.e(0), r.e(5), r.e(242)]).then(r.bind(null, 'CdHO'))
           },
           loaderKey: 'standardHandlerLoader',
           strategy: T.a.Critical,
         },
         M = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(4), r.e(242)]).then(r.bind(null, 'vKPG'))
+            return Promise.all([r.e(0), r.e(5), r.e(242)]).then(r.bind(null, 'vKPG'))
           },
           loaderKey: 'broadcastLoader',
           strategy: T.a.Critical,
         },
         j = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(4), r.e(242)]).then(r.bind(null, 'kthL'))
+            return Promise.all([r.e(0), r.e(5), r.e(242)]).then(r.bind(null, 'kthL'))
           },
           loaderKey: 'callToActionLoader',
           strategy: T.a.Critical,
         },
         K = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(4), r.e(242)]).then(r.bind(null, 'FYbo'))
+            return Promise.all([r.e(0), r.e(5), r.e(242)]).then(r.bind(null, 'FYbo'))
           },
           loaderKey: 'scoreCardLoader',
           strategy: T.a.Critical,
@@ -116,7 +116,7 @@
         U = r('RuTB'),
         W = Object(q.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(198)]).then(r.bind(null, 'DO1+'))
+            return Promise.all([r.e(0), r.e(4), r.e(198)]).then(r.bind(null, 'DO1+'))
           },
           renderPlaceholder: function (e, t) {
             return d.a.createElement(U.a, { hasError: e, onRetry: t })
@@ -128,7 +128,7 @@
         Q = r('JfS+'),
         $ = Object(q.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(198)]).then(r.bind(null, '0xZH'))
+            return Promise.all([r.e(0), r.e(4), r.e(198)]).then(r.bind(null, '0xZH'))
           },
           renderPlaceholder: function (e, t) {
             return d.a.createElement(U.a, { hasError: e, onRetry: t })
