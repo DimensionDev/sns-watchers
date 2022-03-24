@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [84, 7, 9, 12, 18, 78],
+  [85, 7, 9, 10, 19, 79],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -478,14 +478,14 @@
         })(_.a.Component),
         B = n('rxPX'),
         N = function (e, t) {
-          return Object(w.C)(e, w.a)
+          return Object(w.D)(e, w.a)
         },
         j = Object(B.a)()
           .propsFromState(function () {
             return { showEducationOnMount: N }
           })
           .propsFromActions(function () {
-            return { addFlag: w.y }
+            return { addFlag: w.z }
           })
           .withAnalytics(),
         U = n('feu+'),
@@ -2625,7 +2625,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -3891,10 +3891,10 @@
                   s()(s()({}, l), c),
                   {},
                   {
-                    edgeToEdgeEnabled: function () {
+                    withEdgeToEdgeContent: function () {
                       return !p && o.isTrue('media_edge_to_edge_content_enabled')
                     },
-                    withEdgeToEdgeActionsAndUsername: function () {
+                    withEdgeToEdgeTweetAnatomy: function () {
                       return o.isTrue('media_edge_to_edge_content_enabled')
                     },
                     headsUpVariant: function () {
@@ -4207,34 +4207,30 @@
                                   return C.a.createElement($, { previewTweetId: T.id_str })
                                 }
                               : function (t) {
-                                  return C.a.createElement(
-                                    C.a.Fragment,
-                                    null,
-                                    H &&
-                                      C.a.createElement(
-                                        M.a,
-                                        {
-                                          link: ''.concat(T.permalink, '/quick_promote_web/intro'),
-                                          onPress: e._getPromoteButtonOnPress(F),
-                                          style: Dn.promoteButton,
-                                          type: 'primaryOutlined',
-                                        },
-                                        e._getPromoteButtonText(F),
-                                      ),
-                                    e._renderTweetActions({
-                                      actionSize: t.actionSize,
-                                      displayStyle: t.displayStyle,
-                                      nativeID: t.nativeID,
-                                      style: t.style,
-                                      withCount: t.withCount,
-                                      withAnalyticsAction: !0,
-                                    }),
-                                  )
+                                  return e._renderTweetActions({
+                                    actionSize: t.actionSize,
+                                    displayStyle: t.displayStyle,
+                                    nativeID: t.nativeID,
+                                    style: t.style,
+                                    withCount: t.withCount,
+                                    withAnalyticsAction: !0,
+                                  })
                                 },
                             renderEducation: function (t) {
                               return C.a.createElement(
                                 C.a.Fragment,
                                 null,
+                                H &&
+                                  C.a.createElement(
+                                    M.a,
+                                    {
+                                      link: ''.concat(T.permalink, '/quick_promote_web/intro'),
+                                      onPress: e._getPromoteButtonOnPress(F),
+                                      style: Dn.promoteButton,
+                                      type: 'primaryOutlined',
+                                    },
+                                    e._getPromoteButtonText(F),
+                                  ),
                                 C.a.createElement(
                                   lt,
                                   o()({}, t, {
@@ -8866,10 +8862,10 @@
           return n ? M.c.select(e, n) : void 0
         },
         Re = function (e, t) {
-          return Object(ve.C)(e, ve.f)
+          return Object(ve.D)(e, ve.f)
         },
         Me = function (e, t) {
-          return Object(ve.C)(e, ve.v)
+          return Object(ve.D)(e, ve.w)
         },
         Pe = function (e) {
           var t = Ee(e)
@@ -8895,10 +8891,10 @@
                 'COMMUNITIES_CONTROLS',
               ),
               addEducationFlag: function () {
-                return Object(ve.y)(ve.f)
+                return Object(ve.z)(ve.f)
               },
               addTrustedFriendsEducationFlag: function () {
-                return Object(ve.y)(ve.v)
+                return Object(ve.z)(ve.w)
               },
               updateSingleComposer: de.w,
               fetchOrCreateTrustedFriendsList: Se,
@@ -9388,7 +9384,7 @@
         Nt = n.n(Bt),
         jt = n('yZqq'),
         Ut = function (e, t) {
-          return Object(ve.C)(e, ve.r)
+          return Object(ve.D)(e, ve.s)
         },
         Ht = Object(P.a)()
           .propsFromState(function () {
@@ -9397,7 +9393,7 @@
           .propsFromActions(function () {
             return {
               addEducationFlag: function () {
-                return Object(ve.y)(ve.r)
+                return Object(ve.z)(ve.s)
               },
             }
           }),
@@ -12762,7 +12758,7 @@
                     if (o || !E) {
                       var u = o ? e[0].in_reply_to_status_id_str : e[0].id_str
                       s.link = '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '')
-                    } else s.onAction = Object(Wo.a)(d, m)
+                    } else s.onAction = Object(Wo.a)(d, m, D)
                     n({ text: E ? al : a, action: s }),
                       l.isInlineReply && l.setState({ focused: !1 }),
                       l._updateConvoCardState(),
@@ -14425,7 +14421,7 @@
         u = Object(l.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(209)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(210)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -14553,15 +14549,24 @@
           var t = e.inReplyToStatus && !e.isSelfThreadReply
           return e.isScheduled ? s : t ? l : e.isThread ? o : i({ verb: '' })
         },
-        d = function (e, t) {
+        d = function (e, t, n) {
           return function () {
-            var n,
-              a,
-              r =
-                (null === (n = t.state) || void 0 === n || null === (a = n.previousPath) || void 0 === a
-                  ? void 0
-                  : a.includes('/home')) && '/compose/tweet' === t.pathname
-            t.pathname.includes('/home') || r ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
+            if (n) {
+              var a, r
+              ;(null === (a = t.state) || void 0 === a || null === (r = a.previousPath) || void 0 === r
+                ? void 0
+                : r.includes(n)) && '/compose/tweet' === t.pathname
+                ? window.scrollTo(0, 0)
+                : e.push('/i/communities/'.concat(n), { lockScroll: !0 })
+            } else {
+              var i,
+                o,
+                l =
+                  (null === (i = t.state) || void 0 === i || null === (o = i.previousPath) || void 0 === o
+                    ? void 0
+                    : o.includes('/home')) && '/compose/tweet' === t.pathname
+              t.pathname.includes('/home') || l ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
+            }
           }
         },
         u = function (e) {
@@ -15289,7 +15294,7 @@
         E = n('RuTB'),
         x = Object(T.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(8), n.e(178)])
+            return Promise.all([n.e(0), n.e(8), n.e(179)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -15796,7 +15801,7 @@
           title: K,
           selectedCommunityIdFromLocationState: G,
           shouldShowCommunityAudienceEducation: function (e, t) {
-            return Object(k.C)(e, k.e)
+            return Object(k.D)(e, k.e)
           },
         }),
         Q = {
@@ -15805,7 +15810,7 @@
           fetchScheduledTweets: D.c,
           fetchDraftTweets: L.c,
           addCommunityAudienceEducationFlag: function () {
-            return Object(k.y)(k.e)
+            return Object(k.z)(k.e)
           },
           updateAudienceControlsValue: T.t,
         },
@@ -15821,14 +15826,14 @@
         ie = n('v6aA'),
         oe = n('rxPX'),
         le = function (e) {
-          return Object(k.C)(e, k.q)
+          return Object(k.D)(e, k.r)
         },
         se = Object(oe.a)()
           .propsFromState(function () {
             return { shouldShowNewsletterCallout: le }
           })
           .propsFromActions(function () {
-            return { addFlag: k.y }
+            return { addFlag: k.z }
           }),
         ce = n('Lsrn'),
         de = n('k/Ka'),
@@ -15884,7 +15889,7 @@
                   },
                   headline: ve,
                   onClose: function () {
-                    t(k.q)
+                    t(k.r)
                   },
                   text: ge,
                   withCloseButton: !0,

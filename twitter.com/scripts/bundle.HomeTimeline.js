@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [60],
+  [61],
   {
     '/n9r': function (e, t, n) {
       'use strict'
@@ -23,47 +23,47 @@
       'use strict'
       n.r(t),
         n.d(t, 'HomeTimeline', function () {
-          return dn
+          return un
         })
       var a = n('yiKp'),
         i = n.n(a),
-        l = n('RhWx'),
-        r = n.n(l),
-        s = n('VrFO'),
-        o = n.n(s),
+        r = n('RhWx'),
+        l = n.n(r),
+        o = n('VrFO'),
+        s = n.n(o),
         c = n('Y9Ll'),
         u = n.n(c),
         d = n('1Pcy'),
         m = n.n(d),
         p = n('5Yy7'),
         h = n.n(p),
-        f = n('2VqO'),
-        _ = n.n(f),
-        g = n('KEM+'),
-        b = n.n(g),
-        v = (n('z84I'), n('ho0z'), n('2G9S'), n('ERkP')),
-        y = n.n(v),
+        b = n('2VqO'),
+        f = n.n(b),
+        v = n('KEM+'),
+        _ = n.n(v),
+        g = (n('z84I'), n('ho0z'), n('2G9S'), n('ERkP')),
+        y = n.n(g),
         T = n('es0u'),
-        k = n('wM4e'),
-        w = n('kHBp'),
+        w = n('wM4e'),
+        k = n('kHBp'),
         E = n('rxPX'),
-        L = n('wqZ5'),
-        S = function (e) {
-          return w.a.selectMany(e, Object(L.e)(e))
+        S = n('wqZ5'),
+        L = function (e) {
+          return k.a.selectMany(e, Object(S.e)(e))
         },
-        F = Object(E.a)()
+        C = Object(E.a)()
           .propsFromState(function () {
-            return { configurationFetchStatus: k.a, pinnedLists: S, selectedTimelineId: k.d, useLatest: k.e }
+            return { configurationFetchStatus: w.a, pinnedLists: L, selectedTimelineId: w.d, useLatest: w.e }
           })
           .propsFromActions(function () {
-            return { fetchPins: L.b, updateBehavior: k.f }
+            return { fetchPins: S.b, updateBehavior: w.f }
           })
           .withAnalytics({ page: 'home' }),
-        C = n('s14A'),
-        x = n('dwig'),
-        P = n('v//M'),
-        I = n('0+qk'),
-        O = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
+        F = n('s14A'),
+        P = n('dwig'),
+        O = n('v//M'),
+        x = n('0+qk'),
+        I = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
         M = n('G6rE'),
         A = Object(E.a)()
           .propsFromState(function () {
@@ -74,31 +74,31 @@
             return { userAvatarURI: t && t.profile_image_url_https, userName: t && t.name }
           }),
         B = n('3XMw'),
-        K = n.n(B),
-        j = n('N5qz'),
-        z = n('MWbm'),
-        H = n('cHvH'),
-        R = n('5mJL'),
+        j = n.n(B),
+        K = n('N5qz'),
+        H = n('MWbm'),
+        R = n('cHvH'),
+        z = n('5mJL'),
         D = n('DNho'),
         U = n('XP29'),
         V = n('t62R'),
-        Q = n('/yvb'),
+        G = n('/yvb'),
         J = n('rHpw'),
         N = n('cjZk'),
-        W = n('3rWK'),
-        G = n('ll3R'),
-        q = n('pNJr'),
-        Y = n('J0mu'),
-        Z = n('KrGU'),
-        X = K.a.g34f2c63({ verb: '' }),
-        $ = K.a.e349147b,
+        Q = n('3rWK'),
+        W = n('ll3R'),
+        Y = n('pNJr'),
+        q = n('J0mu'),
+        X = n('KrGU'),
+        Z = j.a.g34f2c63({ verb: '' }),
+        $ = j.a.e349147b,
         ee = y.a.createElement(N.a, null),
-        te = y.a.createElement(W.a, null),
-        ne = y.a.createElement(G.a, null),
-        ae = y.a.createElement(q.a, null),
-        ie = y.a.createElement(Y.a, null),
-        le = y.a.createElement(Z.a, null),
-        re = J.a.create(function (e) {
+        te = y.a.createElement(Q.a, null),
+        ne = y.a.createElement(W.a, null),
+        ae = y.a.createElement(Y.a, null),
+        ie = y.a.createElement(q.a, null),
+        re = y.a.createElement(X.a, null),
+        le = J.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -136,103 +136,103 @@
             tweetButton: { marginLeft: e.spaces.space12 },
           }
         }),
-        se = A(function (e) {
+        oe = A(function (e) {
           var t = e.userAvatarURI
-          return y.a.createElement(H.a, null, function (e) {
+          return y.a.createElement(R.a, null, function (e) {
             var n = e.windowWidth,
-              a = !j.a.isOneColumnSquishedLayout(n)
+              a = !K.a.isOneColumnSquishedLayout(n)
             return y.a.createElement(
-              R.a,
+              z.a,
               {
                 avatarCell: y.a.createElement(D.a.Consumer, null, function (e) {
                   var n = e.avatarSize
-                  return y.a.createElement(U.a, { size: n, style: re.avatar, uri: t })
+                  return y.a.createElement(U.a, { size: n, style: le.avatar, uri: t })
                 }),
-                avatarCellStyle: re.avatarColumn,
-                cellStyle: re.body,
-                style: re.root,
+                avatarCellStyle: le.avatarColumn,
+                cellStyle: le.body,
+                style: le.root,
               },
-              y.a.createElement(V.b, { color: 'gray700', numberOfLines: 1, size: 'headline1', style: re.fakeInput }, $),
+              y.a.createElement(V.b, { color: 'gray700', numberOfLines: 1, size: 'headline1', style: le.fakeInput }, $),
               y.a.createElement(
-                z.a,
-                { style: re.toolbar },
+                H.a,
+                { style: le.toolbar },
                 y.a.createElement(
-                  z.a,
-                  { style: [re.toolbarSection, re.iconContainer] },
-                  y.a.createElement(Q.a, {
+                  H.a,
+                  { style: [le.toolbarSection, le.iconContainer] },
+                  y.a.createElement(G.a, {
                     disabled: !0,
                     icon: ee,
                     size: 'medium',
-                    style: [re.toolBarButton, re.firstToolBarButton],
+                    style: [le.toolBarButton, le.firstToolBarButton],
                     type: 'brandText',
                   }),
-                  y.a.createElement(Q.a, {
+                  y.a.createElement(G.a, {
                     disabled: !0,
                     icon: te,
                     size: 'medium',
-                    style: re.toolBarButton,
+                    style: le.toolBarButton,
                     type: 'brandText',
                   }),
                   a
-                    ? y.a.createElement(Q.a, {
+                    ? y.a.createElement(G.a, {
                         disabled: !0,
                         icon: ne,
                         size: 'medium',
-                        style: re.toolBarButton,
+                        style: le.toolBarButton,
                         type: 'brandText',
                       })
                     : null,
-                  y.a.createElement(Q.a, {
+                  y.a.createElement(G.a, {
                     disabled: !0,
                     icon: ae,
                     size: 'medium',
-                    style: re.toolBarButton,
+                    style: le.toolBarButton,
                     type: 'brandText',
                   }),
                   a
-                    ? y.a.createElement(Q.a, {
+                    ? y.a.createElement(G.a, {
                         disabled: !0,
                         icon: ie,
                         size: 'medium',
-                        style: re.toolBarButton,
+                        style: le.toolBarButton,
                         type: 'brandText',
                       })
                     : null,
-                  y.a.createElement(Q.a, {
+                  y.a.createElement(G.a, {
                     disabled: !0,
-                    icon: le,
+                    icon: re,
                     size: 'medium',
-                    style: re.toolBarButton,
+                    style: le.toolBarButton,
                     type: 'brandText',
                   }),
                 ),
                 y.a.createElement(
-                  z.a,
-                  { style: re.toolbarSection },
-                  y.a.createElement(Q.a, { disabled: !0, style: re.tweetButton, type: 'brandFilled' }, X),
+                  H.a,
+                  { style: le.toolbarSection },
+                  y.a.createElement(G.a, { disabled: !0, style: le.tweetButton, type: 'brandFilled' }, Z),
                 ),
               ),
             )
           })
         }),
-        oe = n('zb92'),
-        ce = Object(oe.a)({
+        se = n('zb92'),
+        ce = Object(se.a)({
           loader: function () {
-            return (O.a.preload() || Promise.resolve()).then(function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(84)]).then(n.bind(null, 'RrO2'))
+            return (I.a.preload() || Promise.resolve()).then(function () {
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(85)]).then(n.bind(null, 'RrO2'))
             })
           },
           renderPlaceholder: function () {
-            return y.a.createElement(se, null)
+            return y.a.createElement(oe, null)
           },
         }),
         ue = n('1YZw'),
         de = Object(E.a)()
           .propsFromState(function () {
-            return { selectedTimelineId: k.d, useLatest: k.e }
+            return { selectedTimelineId: w.d, useLatest: w.e }
           })
           .propsFromActions(function () {
-            return { addToast: ue.b, updateBehavior: k.f }
+            return { addToast: ue.b, updateBehavior: w.f }
           })
           .withAnalytics(),
         me = n('EY8L'),
@@ -242,31 +242,31 @@
             n = e.hoverLabel,
             a = e.onPress,
             i = e.renderMenu,
-            l = y.a.createElement(pe.a, null)
-          return y.a.createElement(Q.a, {
+            r = y.a.createElement(pe.a, null)
+          return y.a.createElement(G.a, {
             accessibilityLabel: t,
             hoverLabel: { label: n },
-            icon: l,
+            icon: r,
             onPress: a,
             pullRight: !0,
             renderMenu: i,
             type: 'primaryText',
           })
         },
-        fe = n('mjJ+'),
-        _e = n('v6aA'),
-        ge = n('Lsrn'),
-        be = n('k/Ka'),
-        ve = function () {
+        be = n('mjJ+'),
+        fe = n('v6aA'),
+        ve = n('Lsrn'),
+        _e = n('k/Ka'),
+        ge = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(be.a)(
+          return Object(_e.a)(
             'svg',
             i()(
               i()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ge.a.root, e.style],
+                style: [ve.a.root, e.style],
                 viewBox: '0 0 36 36',
               },
             ),
@@ -300,18 +300,18 @@
             ),
           )
         }
-      ve.metadata = { width: 36, height: 36 }
-      var ye = ve,
+      ge.metadata = { width: 36, height: 36 }
+      var ye = ge,
         Te = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(be.a)(
+          return Object(_e.a)(
             'svg',
             i()(
               i()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ge.a.root, e.style],
+                style: [ve.a.root, e.style],
                 viewBox: '0 0 36 36',
               },
             ),
@@ -334,39 +334,39 @@
           )
         }
       Te.metadata = { width: 36, height: 36 }
-      var ke = Te,
-        we = n('3JQt'),
+      var we = Te,
+        ke = n('3JQt'),
         Ee = n('M2x3'),
-        Le = K.a.j681ac0d,
-        Se = K.a.g8220472,
-        Fe = K.a.ccdd3766,
-        Ce = K.a.g2657de3,
-        xe = K.a.d126cb7c,
-        Pe = K.a.c41ecf3c,
-        Ie = K.a.d18aa6d4,
-        Oe = K.a.c90dcfa2,
-        Me = K.a.bc52b0cd,
-        Ae = K.a.j6382fe9,
-        Be = K.a.f89f6785,
-        Ke = K.a.e4acfd11,
-        je = K.a.f0c7628a,
-        ze = K.a.j7d0cac5,
-        He = K.a.eeab4419,
-        Re = K.a.cae804f9,
+        Se = j.a.j681ac0d,
+        Le = j.a.g8220472,
+        Ce = j.a.ccdd3766,
+        Fe = j.a.g2657de3,
+        Pe = j.a.d126cb7c,
+        Oe = j.a.c41ecf3c,
+        xe = j.a.d18aa6d4,
+        Ie = j.a.c90dcfa2,
+        Me = j.a.bc52b0cd,
+        Ae = j.a.j6382fe9,
+        Be = j.a.f89f6785,
+        je = j.a.e4acfd11,
+        Ke = j.a.f0c7628a,
+        He = j.a.j7d0cac5,
+        Re = j.a.eeab4419,
+        ze = j.a.cae804f9,
         De = (function (e) {
           h()(n, e)
-          var t = _()(n)
+          var t = f()(n)
           function n() {
             var e
-            o()(this, n)
-            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
+            s()(this, n)
+            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              b()(m()(e), '_renderActionMenu', function (t) {
+              _()(m()(e), '_renderActionMenu', function (t) {
                 var n = e.props.useLatest,
                   a = e._getContent().description,
-                  i = n ? ye : ke
-                return y.a.createElement(fe.a, {
+                  i = n ? ye : we
+                return y.a.createElement(be.a, {
                   DescriptionIcon: i,
                   description: a,
                   descriptionStyle: Ue.description,
@@ -375,25 +375,25 @@
                   onCloseRequested: t,
                 })
               }),
-              b()(m()(e), '_getActionMenuItems', function () {
+              _()(m()(e), '_getActionMenuItems', function () {
                 var t = e._getContent(),
                   n = t.subText
                 return [
-                  { text: t.text, onClick: e._handleTimelineSwitch, Icon: we.a, subText: n },
-                  { link: '/settings/content_preferences', text: Le, onClick: e._handleContentPreferences, Icon: Ee.a },
+                  { text: t.text, onClick: e._handleTimelineSwitch, Icon: ke.a, subText: n },
+                  { link: '/settings/content_preferences', text: Se, onClick: e._handleContentPreferences, Icon: Ee.a },
                 ]
               }),
-              b()(m()(e), '_getContent', function () {
+              _()(m()(e), '_getContent', function () {
                 var t = e.props.useLatest
                 return e.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
-                  ? { description: t ? Oe : Pe, subText: t ? Re : ze, text: t ? He : je }
-                  : { description: t ? Ie : Pe, subText: t ? Ke : Be, text: t ? Me : Ae }
+                  ? { description: t ? Ie : Oe, subText: t ? ze : He, text: t ? Re : Ke }
+                  : { description: t ? xe : Oe, subText: t ? je : Be, text: t ? Me : Ae }
               }),
-              b()(m()(e), '_handleTimelineSwitch', function (t) {
+              _()(m()(e), '_handleTimelineSwitch', function (t) {
                 var n = e.props.onToggle
                 t(), n()
               }),
-              b()(m()(e), '_handleContentPreferences', function (t) {
+              _()(m()(e), '_handleContentPreferences', function (t) {
                 var n = e.props.onContentPreferencesSelect
                 t(), n()
               }),
@@ -408,8 +408,8 @@
                   var e = this.props,
                     t = e.onPress,
                     n = e.useLatest,
-                    a = n ? Se : Fe,
-                    i = n ? xe : Ce
+                    a = n ? Le : Ce,
+                    i = n ? Pe : Fe
                   return y.a.createElement(he, {
                     accessibilityLabel: a,
                     hoverLabel: i,
@@ -422,7 +422,7 @@
             n
           )
         })(y.a.PureComponent)
-      b()(De, 'contextType', _e.a)
+      _()(De, 'contextType', fe.a)
       var Ue = J.a.create(function (e) {
           return {
             description: {
@@ -434,42 +434,42 @@
           }
         }),
         Ve = De,
-        Qe = K.a.e4c6d14c,
-        Je = K.a.bffa2da7,
+        Ge = j.a.e4c6d14c,
+        Je = j.a.bffa2da7,
         Ne = (function (e) {
           h()(n, e)
-          var t = _()(n)
+          var t = f()(n)
           function n() {
             var e
-            o()(this, n)
-            for (var a = arguments.length, l = new Array(a), r = 0; r < a; r++) l[r] = arguments[r]
+            s()(this, n)
+            for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
-              b()(m()(e), '_handleToggle', function () {
+              (e = t.call.apply(t, [this].concat(r))),
+              _()(m()(e), '_handleToggle', function () {
                 var t,
                   n = e.context,
                   a = n.featureSwitches,
-                  l = n.viewport,
-                  r = e.props,
-                  s = r.addToast,
-                  o = r.analytics,
-                  c = r.selectedTimelineId,
-                  u = r.updateBehavior,
-                  d = r.useLatest,
+                  r = n.viewport,
+                  l = e.props,
+                  o = l.addToast,
+                  s = l.analytics,
+                  c = l.selectedTimelineId,
+                  u = l.updateBehavior,
+                  d = l.useLatest,
                   m = a.isTrue('responsive_web_home_pinned_timelines_latest_enabled'),
-                  p = d ? Qe : Je
+                  p = d ? Ge : Je
                 m && d && c === me.a.HOME_LATEST && (t = me.a.HOME),
                   m || (t = c === me.a.HOME ? me.a.HOME_LATEST : me.a.HOME),
-                  l.scrollToTop(),
-                  o.scribe({ component: 'customize', element: d ? 'see_top' : 'see_latest', action: 'click' }),
+                  r.scrollToTop(),
+                  s.scribe({ component: 'customize', element: d ? 'see_top' : 'see_latest', action: 'click' }),
                   u(i()(i()({}, t && { selectedTimelineId: t }), {}, { useLatest: !d })).then(function () {
-                    m || s({ text: p })
+                    m || o({ text: p })
                   })
               }),
-              b()(m()(e), '_handleSwitchPress', function () {
+              _()(m()(e), '_handleSwitchPress', function () {
                 e.props.analytics.scribe({ section: 'navigation_bar', element: 'customize_button', action: 'click' })
               }),
-              b()(m()(e), '_handleContentPreferencesSelect', function () {
+              _()(m()(e), '_handleContentPreferencesSelect', function () {
                 e.props.analytics.scribe({ component: 'customize', element: 'see_preferences', action: 'click' })
               }),
               e
@@ -493,23 +493,23 @@
             n
           )
         })(y.a.Component)
-      b()(Ne, 'contextType', _e.a)
-      var We,
-        Ge,
-        qe = de(Ne),
-        Ye = n('lUZE'),
-        Ze = function () {
+      _()(Ne, 'contextType', fe.a)
+      var Qe,
+        We,
+        Ye = de(Ne),
+        qe = n('lUZE'),
+        Xe = function () {
           return window.performance && 'function' == typeof window.performance.now
         },
-        Xe = n('yoO3'),
+        Ze = n('yoO3'),
         $e = n('ZB2A'),
         et = (n('5BYb'), n('aeN7')),
         tt = n('hqKg'),
         nt = n('MDbM'),
         at = n('9TPy'),
         it = n('wrlS'),
-        lt = n('WA1W'),
-        rt = function () {
+        rt = n('WA1W'),
+        lt = function () {
           return Object(tt.createSelector)(
             function (e, t) {
               return t.isLatestActive
@@ -517,57 +517,52 @@
             function (e, t) {
               return t.isList
             },
-            k.d,
+            w.d,
             it.d,
             function (e, t, n, a) {
               return t
                 ? Object(at.a)({ listId: n })
                 : e
-                ? Object(lt.e)(a.isTrue('responsive_web_graphql_home_latest_enabled'))
-                : Object(lt.f)(a.isTrue('responsive_web_graphql_home_enabled'))
+                ? Object(rt.e)(a.isTrue('responsive_web_graphql_home_latest_enabled'))
+                : Object(rt.f)(a.isTrue('responsive_web_graphql_home_enabled'))
             },
           )
         },
-        st = function (e, t) {
+        ot = function (e, t) {
           var n
-          return null !== (n = rt()(e, t).selectInitialFetchStatus(e)) && void 0 !== n ? n : nt.a.LOADING
+          return null !== (n = lt()(e, t).selectInitialFetchStatus(e)) && void 0 !== n ? n : nt.a.LOADING
         },
-        ot = Object(E.a)()
+        st = Object(E.a)()
           .propsFromState(function () {
-            return { initialFetchStatus: st, isColdStart: k.c, module: rt() }
+            return { initialFetchStatus: ot, isColdStart: w.c, module: lt() }
           })
           .propsFromActions(function () {
-            return { updateBehavior: k.f }
+            return { updateBehavior: w.f }
           })
           .withAnalytics(),
-        ct = n('QIgh'),
-        ut = n('8UdT'),
-        dt = n('iu0J'),
-        mt = n('AP4B'),
-        pt = function (e) {
+        ct = n('8UdT'),
+        ut = n('iu0J'),
+        dt = n('AP4B'),
+        mt = function (e) {
           var t = e.withUserPresence,
-            n = void 0 !== t && t
-          return i()(
-            i()(
-              i()(
+            a = void 0 !== t && t,
+            r = e.errorContext,
+            l = void 0 === r ? 'HOME' : r,
+            o = e.featureSwitches,
+            s = { allowDownvote: !0, tweetDismissable: !0, shouldSelfThreadIncludeAvatar: !0, withUserPresence: a },
+            c = o.getValue('responsive_web_universal_config')
+          return c && 'control' !== c
+            ? n('l9Y6').createConfiguration(i()(i()({}, s), {}, { featureSwitches: o, errorContext: l }))
+            : i()(
+                i()(i()({}, n('QIgh').createConfiguration(s)), dt.a),
                 {},
-                Object(ct.a)({
-                  allowDownvote: !0,
-                  tweetDismissable: !0,
-                  shouldSelfThreadIncludeAvatar: !0,
-                  withUserPresence: n,
-                }),
-              ),
-              mt.a,
-            ),
-            {},
-            b()({}, ut.b.EventSummary, Object(dt.a)({})),
-          )
+                _()({}, ct.b.EventSummary, Object(ut.a)({})),
+              )
         },
-        ht = n('97Jx'),
-        ft = n.n(ht),
-        _t = n('FIs5'),
-        gt = [
+        pt = n('97Jx'),
+        ht = n.n(pt),
+        bt = n('FIs5'),
+        ft = [
           {
             height: 200,
             uri: 'https://abs.twimg.com/sticky/illustrations/empty-states/hatched-baby-chick-400x200.v1.png',
@@ -584,81 +579,88 @@
             width: 1200,
           },
         ],
-        bt = { headerMessage: K.a.d4d5785f, bodyMessage: K.a.f3f4c67b, buttonText: K.a.a399ed2f },
-        vt = K.a.d2c66f1f,
-        yt = K.a.c3fbf1da,
-        Tt = K.a.bf17ded9,
-        kt = function (e) {
+        vt = { headerMessage: j.a.d4d5785f, bodyMessage: j.a.f3f4c67b, buttonText: j.a.a399ed2f },
+        _t = j.a.d2c66f1f,
+        gt = j.a.c3fbf1da,
+        yt = j.a.bf17ded9,
+        Tt = function (e) {
           var t,
             n = e.onButtonPress,
             a = e.onImpression,
-            i = y.a.useContext(_e.a).featureSwitches.getStringValue('responsive_web_htl_empty_state_redesign_variant'),
-            l = 'a_no_graphic_new_copy' === (t = i) || 'b_new_graphic_new_copy' === t ? bt : void 0,
-            r = (function (e) {
-              return 'b_new_graphic_new_copy' === e || 'c_new_graphic_old_copy' === e ? gt : void 0
+            i = y.a.useContext(fe.a).featureSwitches.getStringValue('responsive_web_htl_empty_state_redesign_variant'),
+            r = 'a_no_graphic_new_copy' === (t = i) || 'b_new_graphic_new_copy' === t ? vt : void 0,
+            l = (function (e) {
+              return 'b_new_graphic_new_copy' === e || 'c_new_graphic_old_copy' === e ? ft : void 0
             })(i)
           return y.a.createElement(
-            _t.a,
-            ft()(
-              { buttonLink: '/i/connect_people', buttonText: l ? l.buttonText : Tt, header: l ? l.headerMessage : vt },
-              r && { imageVariants: r },
-              { message: l ? l.bodyMessage : yt, onButtonPress: n, onImpression: a },
+            bt.a,
+            ht()(
+              { buttonLink: '/i/connect_people', buttonText: r ? r.buttonText : yt, header: r ? r.headerMessage : _t },
+              l && { imageVariants: l },
+              { message: r ? r.bodyMessage : gt, onButtonPress: n, onImpression: a },
             ),
           )
         },
         wt = n('EUHl'),
-        Et = n('7BdX'),
-        Lt = n('fTQJ'),
+        kt = n('7BdX'),
+        Et = n('fTQJ'),
         St = n('FGLp'),
-        Ft = { count: void 0 },
-        Ct = K.a.f089620b,
-        xt = ot(function (e) {
+        Lt = { count: void 0 },
+        Ct = j.a.f089620b,
+        Ft = st(function (e) {
           var t = e.analytics,
             n = e.isColdStart,
             a = e.isLatestActive,
             i = void 0 !== a && a,
-            l = e.isLatestPinned,
-            r = void 0 !== l && l,
-            s = e.initialFetchStatus,
-            o = e.module,
+            r = e.isLatestPinned,
+            l = void 0 !== r && r,
+            o = e.initialFetchStatus,
+            s = e.module,
             c = e.recordTTFT,
             u = void 0 === c ? et.e : c,
             d = e.shouldFetchLoadedContentOnMount,
             m = void 0 === d || d,
             p = e.timelineRef,
             h = e.updateBehavior,
-            f = e.withUserPresence,
-            _ = void 0 !== f && f,
-            g = y.a.useRef(!0),
-            b = y.a.useCallback(
+            b = e.withUserPresence,
+            f = void 0 !== b && b,
+            v = y.a.useContext(fe.a).featureSwitches,
+            _ = y.a.useRef(!0),
+            g = y.a.useCallback(
+              function () {
+                return v.getStringValue('responsive_web_universal_config')
+              },
+              [v],
+            ),
+            T = y.a.useCallback(
               function () {
                 t.scribe({ component: 'empty_message', action: 'impression' })
               },
               [t],
             ),
-            v = y.a.useCallback(
+            w = y.a.useCallback(
               function () {
                 t.scribe({ component: 'empty_message', element: 'primary_cta', action: 'click' })
               },
               [t],
             ),
-            T = y.a.useCallback(
+            k = y.a.useCallback(
               function (e) {
                 var t = e.entries
-                if ((e.fetchStatus === nt.a.FAILED && (g.current = !1), g.current && t.length)) {
+                if ((e.fetchStatus === nt.a.FAILED && (_.current = !1), _.current && t.length)) {
                   var n = t.some(function (e) {
-                    return e.type === ut.b.Tweet
+                    return e.type === ct.b.Tweet
                   })
-                  ;(g.current = !1), n && u()
+                  ;(_.current = !1), n && u()
                 }
               },
-              [u, g],
+              [u, _],
             ),
-            k = y.a.useCallback(
+            E = y.a.useCallback(
               function () {
-                return y.a.createElement(kt, { onButtonPress: v, onImpression: b })
+                return y.a.createElement(Tt, { onButtonPress: w, onImpression: T })
               },
-              [v, b],
+              [w, T],
             )
           return (
             Object(St.a)(function () {
@@ -668,70 +670,71 @@
                   a = e.isLatestActive,
                   i = e.isLatestPinned
                 return t !== nt.a.LOADED && n && i && a
-              })({ initialFetchStatus: s, isColdStart: n, isLatestActive: i, isLatestPinned: r }) &&
+              })({ initialFetchStatus: o, isColdStart: n, isLatestActive: i, isLatestPinned: l }) &&
                 h({ selectedTimelineId: me.a.HOME })
             }),
-            y.a.createElement(Lt.a, {
-              entryConfiguration: pt({ withUserPresence: _ }),
-              fetchTopOptions: Ft,
-              module: o,
+            y.a.createElement(Et.a, {
+              entryConfiguration: mt({ featureSwitches: v, withUserPresence: f }),
+              fetchTopOptions: Lt,
+              module: s,
               newTweetsPillMode: wt.a.URT,
-              onEntriesRendered: T,
-              prerollDisplayLocation: Et.c.TIMELINE_HOME,
-              renderEmptyState: k,
+              onEntriesRendered: k,
+              prerollDisplayLocation: kt.c.TIMELINE_HOME,
+              processStrategyOverride: g(),
+              renderEmptyState: E,
               shouldFetchLoadedContentOnMount: m,
               timelineRef: p,
               title: Ct,
-              withUserPresence: _,
+              withUserPresence: f,
             })
           )
         }),
         Pt = n('7JQg'),
-        It = n('VS6U'),
-        Ot = n('Es6L'),
-        Mt = n('LsPn'),
-        At = n('gZV8'),
-        Bt = (n('enFi'), n('Fr3L')),
-        Kt = n('lnL+'),
+        Ot = n('VS6U'),
+        xt = n('Es6L'),
+        It = n('LsPn'),
+        Mt = n('gZV8'),
+        At = (n('enFi'), n('Fr3L')),
+        Bt = n('lnL+'),
         jt = n('Rp9C'),
-        zt = n('jAXQ'),
-        Ht = n.n(zt),
+        Kt = n('jAXQ'),
+        Ht = n.n(Kt),
         Rt = function (e) {
-          var t = Ht()(void 0 !== We ? We : (We = n('/n9r')), e.topic),
+          var t = Ht()(void 0 !== Qe ? Qe : (Qe = n('/n9r')), e.topic),
             a = t.name,
             i = t.topic_id
           Object(St.a)(function () {
             e.analytics.scribe({ element: 'topic', action: 'impression', data: { items: [jt.a.forTopic(i)] } })
           })
-          var l = y.a.useCallback(
+          var r = y.a.useCallback(
             function () {
               e.analytics.scribe({ element: 'topic', action: 'click', data: { items: [jt.a.forTopic(i)] } })
             },
             [e.analytics, i],
           )
-          return y.a.createElement(Kt.a, { link: '/i/topics/'.concat(i), onClick: l, text: a })
+          return y.a.createElement(Bt.a, { link: '/i/topics/'.concat(i), onClick: r, text: a })
         },
-        Dt = n('Irs7'),
-        Ut = n('yUQf'),
-        Vt = n('DQzJ'),
-        Qt = n('6iuV'),
-        Jt = K.a.j0310b9b,
-        Nt = K.a.ffd9cfe6,
-        Wt = K.a.i0560231,
-        Gt = void 0 !== Ge ? Ge : (Ge = n('yKhE')),
-        qt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
+        zt = n('Irs7'),
+        Dt = n('yUQf'),
+        Ut = n('DQzJ'),
+        Vt = n('6iuV'),
+        Gt = j.a.j0310b9b,
+        Jt = j.a.ffd9cfe6,
+        Nt = j.a.i0560231,
+        Qt = void 0 !== We ? We : (We = n('yKhE')),
+        Wt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
         Yt = function () {
           var e,
             t,
             n,
             a,
             i,
-            l,
-            s,
-            o = y.a.useRef(0),
-            c = Object(Dt.b)(),
-            u = Object(Ut.a)(M.e.selectLoggedInUser),
-            d = Object(Vt.a)(Gt, {}).data,
+            r,
+            o,
+            s = y.a.useRef(0),
+            c = Object(zt.b)(),
+            u = Object(Dt.a)(M.e.selectLoggedInUser),
+            d = Object(Ut.a)(Qt, {}).data,
             m = (
               ('User' ===
                 (null == d ||
@@ -748,12 +751,12 @@
                 void 0 === a ||
                 null === (i = a.user_results) ||
                 void 0 === i ||
-                null === (l = i.result) ||
-                void 0 === l ||
-                null === (s = l.home_topics_navigator_slices) ||
-                void 0 === s
+                null === (r = i.result) ||
+                void 0 === r ||
+                null === (o = r.home_topics_navigator_slices) ||
+                void 0 === o
                   ? void 0
-                  : s.items)) ||
+                  : o.items)) ||
               []
             ).map(function (e, t) {
               return null != e && e.topic ? y.a.createElement(Rt, { analytics: c, key: t, topic: e.topic }) : null
@@ -772,11 +775,11 @@
               },
               [c],
             ),
-            f = y.a.useCallback(
+            b = y.a.useCallback(
               function (e) {
                 var t = e.index,
                   n = e.intersectionRatio
-                t === o.current - 1 && n >= At.c && c.scribeAction('reached_end')
+                t === s.current - 1 && n >= Mt.c && c.scribeAction('reached_end')
               },
               [c],
             )
@@ -785,44 +788,44 @@
           }),
             y.a.useEffect(
               function () {
-                o.current = m.length + 1
+                s.current = m.length + 1
               },
               [m],
             )
-          var _ = y.a.useCallback(
+          var f = y.a.useCallback(
               function () {
                 c.scribe({ element: 'see_more', action: 'click' })
               },
               [c],
             ),
-            g = u ? '/'.concat(u.screen_name, '/topics') : '/i/topics/picker',
-            b = y.a.createElement(
-              Q.a,
+            v = u ? '/'.concat(u.screen_name, '/topics') : '/i/topics/picker',
+            _ = y.a.createElement(
+              G.a,
               {
-                accessibilityLabel: Wt,
+                accessibilityLabel: Nt,
                 borderColor: 'primary',
                 color: 'primary',
                 key: 'seeMorePivot',
-                link: g,
-                onClick: _,
+                link: v,
+                onClick: f,
               },
-              Nt,
+              Jt,
             )
           return m.length > 0
             ? y.a.createElement(
-                Qt.a,
+                Vt.a,
                 {
-                  accessibilityLabel: Jt,
-                  childrenStyle: Zt.childrenStyle,
+                  accessibilityLabel: Gt,
+                  childrenStyle: qt.childrenStyle,
                   onScroll: h,
-                  onVisibleRangeChange: f,
-                  style: Zt.carousel,
+                  onVisibleRangeChange: b,
+                  style: qt.carousel,
                 },
-                [].concat(r()(m), [b]),
+                [].concat(l()(m), [_]),
               )
             : null
         },
-        Zt = J.a.create(function (e) {
+        qt = J.a.create(function (e) {
           return {
             carousel: {
               marginHorizontal: 'calc('.concat(e.spaces.space12, ' - ').concat(e.spaces.space2, ')'),
@@ -834,33 +837,33 @@
           }
         }),
         Xt = function () {
-          return y.a.createElement(Bt.a, { errorConfig: qt }, y.a.createElement(Yt, null))
+          return y.a.createElement(At.a, { errorConfig: Wt }, y.a.createElement(Yt, null))
         },
-        $t = n('aITJ'),
-        en = n('0yYu'),
-        tn = n('mw9i'),
-        nn = n('k/OQ'),
-        an = K.a.i5f7b6b8,
-        ln = K.a.d126cb7c,
-        rn = K.a.ha8209bb,
-        sn = $e.a.HOME,
+        Zt = n('aITJ'),
+        $t = n('0yYu'),
+        en = n('mw9i'),
+        tn = n('k/OQ'),
+        nn = j.a.i5f7b6b8,
+        an = j.a.d126cb7c,
+        rn = j.a.ha8209bb,
+        ln = $e.a.HOME,
         on = { page: 'home' },
-        cn = { page: 'home_latest' },
-        un = { section: 'topics_navigator', component: 'suggest_topics_module' },
-        dn = (function (e) {
+        sn = { page: 'home_latest' },
+        cn = { section: 'topics_navigator', component: 'suggest_topics_module' },
+        un = (function (e) {
           h()(a, e)
-          var t = _()(a)
+          var t = f()(a)
           function a(e, n) {
-            var l
-            o()(this, a),
-              (l = t.call(this, e, n)),
-              b()(m()(l), '_lastTimelineSwitchTimestamp', 0),
-              b()(m()(l), '_unmounted', !1),
-              b()(m()(l), '_getLink', function (e, t) {
-                var n = l.props,
+            var r
+            s()(this, a),
+              (r = t.call(this, e, n)),
+              _()(m()(r), '_lastTimelineSwitchTimestamp', 0),
+              _()(m()(r), '_unmounted', !1),
+              _()(m()(r), '_getLink', function (e, t) {
+                var n = r.props,
                   a = n.analytics,
                   i = n.selectedTimelineId,
-                  r = n.updateBehavior
+                  l = n.updateBehavior
                 return {
                   isActive: function () {
                     return i === e
@@ -868,10 +871,10 @@
                   label: t,
                   key: e,
                   onClick: function () {
-                    if (i === e) l._timeline && l._timeline.refreshOrGoTop()
+                    if (i === e) r._timeline && r._timeline.refreshOrGoTop()
                     else {
-                      var t = Date.now() - l._lastTimelineSwitchTimestamp
-                      r({ selectedTimelineId: e }),
+                      var t = Date.now() - r._lastTimelineSwitchTimestamp
+                      l({ selectedTimelineId: e }),
                         a.scribe({ section: i, element: e, action: 'click', data: { duration_ms: t } })
                     }
                   },
@@ -879,113 +882,113 @@
                   to: { pathname: '/home' },
                 }
               }),
-              b()(m()(l), '_getLinks', function () {
-                var e = l.props,
+              _()(m()(r), '_getLinks', function () {
+                var e = r.props,
                   t = e.pinnedLists,
                   n = e.useLatest,
-                  a = l._getLink(me.a.HOME, rn),
-                  i = n ? l._getLink(me.a.HOME_LATEST, ln) : void 0,
-                  s = l._pinnedListsEnabled
+                  a = r._getLink(me.a.HOME, rn),
+                  i = n ? r._getLink(me.a.HOME_LATEST, an) : void 0,
+                  o = r._pinnedListsEnabled
                     ? t.map(function (e) {
                         var t = e.id_str,
                           n = e.name
-                        return l._getLink(Object(me.c)(t), n)
+                        return r._getLink(Object(me.c)(t), n)
                       })
                     : [],
-                  o = [a, i],
-                  c = l._latestTimelineSwitchEnabled && n ? [i] : [a]
-                return [].concat(r()(l._isLatestPinned() ? o : c), r()(s))
+                  s = [a, i],
+                  c = r._latestTimelineSwitchEnabled && n ? [i] : [a]
+                return [].concat(l()(r._isLatestPinned() ? s : c), l()(o))
               }),
-              b()(m()(l), '_getTimelineMetadata', function () {
-                var e = l._isLatestActive(),
-                  t = e ? cn : on
+              _()(m()(r), '_getTimelineMetadata', function () {
+                var e = r._isLatestActive(),
+                  t = e ? sn : on
                 return (
-                  l.context.featureSwitches.isTrue('responsive_web_home_namespace_update_enabled') &&
+                  r.context.featureSwitches.isTrue('responsive_web_home_namespace_update_enabled') &&
                     (t = i()(i()({}, on), {}, { section: e ? 'latest' : 'home' })),
-                  { scribeNamespace: t, title: l._pinnedListsEnabled ? rn : e ? ln : rn }
+                  { scribeNamespace: t, title: r._pinnedListsEnabled ? rn : e ? an : rn }
                 )
               }),
-              b()(m()(l), '_handleSoftLeftClick', function () {
-                return l.props.history.push('/account')
+              _()(m()(r), '_handleSoftLeftClick', function () {
+                return r.props.history.push('/account')
               }),
-              b()(m()(l), '_handleTabRefresh', function () {
+              _()(m()(r), '_handleTabRefresh', function () {
                 var e
-                return null === (e = l._timeline) || void 0 === e ? void 0 : e.refreshOrGoTop()
+                return null === (e = r._timeline) || void 0 === e ? void 0 : e.refreshOrGoTop()
               }),
-              b()(m()(l), '_handleWindowFocus', function () {
+              _()(m()(r), '_handleWindowFocus', function () {
                 var e
-                return null === (e = l._timeline) || void 0 === e ? void 0 : e.fetchTop({ onlyIfStale: !0 })
+                return null === (e = r._timeline) || void 0 === e ? void 0 : e.fetchTop({ onlyIfStale: !0 })
               }),
-              b()(m()(l), '_isLatestActive', function () {
-                return l._isLatestPinned()
-                  ? l.props.selectedTimelineId === me.a.HOME_LATEST
-                  : l._latestTimelineSwitchEnabled && l.props.useLatest
+              _()(m()(r), '_isLatestActive', function () {
+                return r._isLatestPinned()
+                  ? r.props.selectedTimelineId === me.a.HOME_LATEST
+                  : r._latestTimelineSwitchEnabled && r.props.useLatest
               }),
-              b()(m()(l), '_isLatestPinned', function () {
+              _()(m()(r), '_isLatestPinned', function () {
                 return (
-                  l._latestTimelineSwitchEnabled &&
-                  l.props.useLatest &&
-                  l.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
+                  r._latestTimelineSwitchEnabled &&
+                  r.props.useLatest &&
+                  r.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
                 )
               }),
-              b()(m()(l), '_renderTimeline', function () {
-                var e = l.props.selectedTimelineId,
-                  t = l._isLatestActive(),
-                  n = l._isLatestPinned(),
-                  a = l._pinnedListsEnabled && e !== me.a.HOME && e !== me.a.HOME_LATEST,
-                  i = l.context.featureSwitches.isTrue('responsive_web_audio_space_ring_home_timeline')
+              _()(m()(r), '_renderTimeline', function () {
+                var e = r.props.selectedTimelineId,
+                  t = r._isLatestActive(),
+                  n = r._isLatestPinned(),
+                  a = r._pinnedListsEnabled && e !== me.a.HOME && e !== me.a.HOME_LATEST,
+                  i = r.context.featureSwitches.isTrue('responsive_web_audio_space_ring_home_timeline')
                 return y.a.createElement(
-                  C.a,
+                  F.a,
                   null,
-                  l.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
-                    ? y.a.createElement(Pt.c, { namespace: un }, y.a.createElement(Xt, null))
+                  r.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
+                    ? y.a.createElement(Pt.c, { namespace: cn }, y.a.createElement(Xt, null))
                     : null,
-                  y.a.createElement(xt, {
+                  y.a.createElement(Ft, {
                     isLatestActive: t,
                     isLatestPinned: n,
                     isList: a,
                     shouldFetchLoadedContentOnMount: t,
-                    timelineRef: l._setTimelineRef,
+                    timelineRef: r._setTimelineRef,
                     withUserPresence: i,
                   }),
                 )
               }),
-              b()(m()(l), '_renderPrimaryContent', function () {
-                var e = l.props,
+              _()(m()(r), '_renderPrimaryContent', function () {
+                var e = r.props,
                   t = e.configurationFetchStatus,
                   n = e.history,
                   a = e.location,
-                  i = l.context.isRestrictedSession,
-                  r = y.a.createElement(I.a, { history: n })
+                  i = r.context.isRestrictedSession,
+                  l = y.a.createElement(x.a, { history: n })
                 return y.a.createElement(
                   y.a.Fragment,
                   null,
-                  Object(Ot.a)() && !i
+                  Object(xt.a)() && !i
                     ? y.a.createElement(
                         y.a.Fragment,
                         null,
                         y.a.createElement(ce, { history: n, location: a }),
-                        y.a.createElement(en.a, null),
+                        y.a.createElement($t.a, null),
                       )
                     : null,
                   y.a.createElement(
-                    x.a,
-                    { component: tn.a, fab: r },
-                    $t.b.isKaiOS()
-                      ? y.a.createElement(Mt.a, { leftText: an, onLeftClick: l._handleSoftLeftClick })
+                    P.a,
+                    { component: en.a, fab: l },
+                    Zt.b.isKaiOS()
+                      ? y.a.createElement(It.a, { leftText: nn, onLeftClick: r._handleSoftLeftClick })
                       : null,
-                    y.a.createElement(P.a, { fetchStatus: t, render: l._renderTimeline }),
+                    y.a.createElement(O.a, { fetchStatus: t, render: r._renderTimeline }),
                   ),
                 )
               }),
-              b()(m()(l), '_setTimelineRef', function (e) {
-                l._timeline = e
+              _()(m()(r), '_setTimelineRef', function (e) {
+                r._timeline = e
               })
-            var s = l.context.featureSwitches
+            var o = r.context.featureSwitches
             return (
-              (l._latestTimelineSwitchEnabled = s.isTrue('home_timeline_latest_timeline_switch_enabled')),
-              (l._pinnedListsEnabled = s.isTrue('responsive_web_home_pinned_timelines_lists_enabled')),
-              l
+              (r._latestTimelineSwitchEnabled = o.isTrue('home_timeline_latest_timeline_switch_enabled')),
+              (r._pinnedListsEnabled = o.isTrue('responsive_web_home_pinned_timelines_lists_enabled')),
+              r
             )
           }
           return (
@@ -1000,11 +1003,11 @@
                     this._pinnedListsEnabled && this.props.fetchPins(),
                     this.context.featureSwitches.isTrue('responsive_web_framerate_tracking_home_enabled'))
                   ) {
-                    var t = $t.b.isDesktopOS() ? '' : '_mobile',
+                    var t = Zt.b.isDesktopOS() ? '' : '_mobile',
                       a = 'home'.concat(t)
-                    ;(Ze()
+                    ;(Xe()
                       ? n
-                          .e(350)
+                          .e(351)
                           .then(n.bind(null, 'Iid0'))
                           .then(function (e) {
                             return e.default
@@ -1039,26 +1042,26 @@
                     n = e.selectedTimelineId,
                     a = this._getTimelineMetadata(),
                     i = a.scribeNamespace,
-                    l = a.title,
-                    r = !Object(Ot.a)(),
-                    s = this._getLinks(),
-                    o = s.length > 1,
-                    c = r && o ? y.a.createElement(Ye.a, { style: mn.iconTwitter }) : void 0,
+                    r = a.title,
+                    l = !Object(xt.a)(),
+                    o = this._getLinks(),
+                    s = o.length > 1,
+                    c = l && s ? y.a.createElement(qe.a, { style: dn.iconTwitter }) : void 0,
                     u =
                       this._latestTimelineSwitchEnabled && (n === me.a.HOME || n === me.a.HOME_LATEST)
-                        ? y.a.createElement(qe, null)
+                        ? y.a.createElement(Ye, null)
                         : void 0,
-                    d = o ? y.a.createElement(nn.a, { links: s }) : void 0,
-                    m = !r || !o ? l : null
+                    d = s ? y.a.createElement(tn.a, { links: o }) : void 0,
+                    m = !l || !s ? r : null
                   return y.a.createElement(
                     Pt.c,
                     { namespace: i },
                     y.a.createElement(
-                      Xe.a,
-                      { behavioralEventViewType: sn, locationKey: i.page },
-                      y.a.createElement(It.a, {
+                      Ze.a,
+                      { behavioralEventViewType: ln, locationKey: i.page },
+                      y.a.createElement(Ot.a, {
                         centeredLogo: c,
-                        documentTitle: l,
+                        documentTitle: r,
                         history: t,
                         onTabRefresh: this._handleTabRefresh,
                         primaryContent: this._renderPrimaryContent,
@@ -1075,21 +1078,187 @@
             a
           )
         })(y.a.Component)
-      b()(dn, 'contextType', _e.a)
-      var mn = J.a.create(function (e) {
+      _()(un, 'contextType', fe.a)
+      var dn = J.a.create(function (e) {
         return { iconTwitter: { flexGrow: 1, height: '1.75rem', color: e.colors.primary } }
       })
-      t.default = F(dn)
+      t.default = C(un)
+    },
+    l9Y6: function (e, t, n) {
+      'use strict'
+      n.r(t),
+        n.d(t, 'createConfiguration', function () {
+          return q
+        })
+      var a = n('KEM+'),
+        i = n.n(a),
+        r = n('ezF+'),
+        l = n('L+Yr'),
+        o = n('GjKI'),
+        s = n('rrdj'),
+        c = n('KOwe'),
+        u = n('0hnP'),
+        d = n('PnFR'),
+        m = n('yXvm'),
+        p = n('iu0J'),
+        h = n('A1s0'),
+        b = n('0O8K'),
+        f = n('96/T'),
+        v = n('AP4B'),
+        _ = n('ckGq'),
+        g = n('rpbw'),
+        y = n('S/Qv'),
+        T = n('zgaL'),
+        w = n('Wjib'),
+        k = n('TiJl'),
+        E = n('PH3B'),
+        S = n('p3rj'),
+        L = n('iPUv'),
+        C = n('/zpt'),
+        F = n('dVvn'),
+        P = n('+o05'),
+        O = n('SBkc'),
+        x = n('14Yn'),
+        I = n('vGH+'),
+        M = n('pgpd'),
+        A = n('5Y9N'),
+        B = n('91Nr'),
+        j = n('9+AQ'),
+        K = n('67iF'),
+        H = n('Hl0c'),
+        R =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return Promise.all([n.e(0), n.e(10), n.e(360)]).then(n.bind(null, 'WFPe'))
+            },
+            loaderKey: 'topicLandingHeaderLoader',
+            strategy: n('XBtf').a.Critical,
+          }),
+        z = r.e(R),
+        D = n('XtkE'),
+        U = n('Jz8S'),
+        V = n('Yy//'),
+        G = n('ogJ+'),
+        J = n('Ka9G'),
+        N = n('8C2w'),
+        Q = n('VKSc'),
+        W = n('Zr9n'),
+        Y = n('8UdT'),
+        q = function (e) {
+          var t,
+            n = e.allowDownvote,
+            a = void 0 !== n && n,
+            R = e.displayBlocked,
+            q = void 0 !== R && R,
+            X = e.featureSwitches,
+            Z = e.shouldSelfThreadIncludeAvatar,
+            $ = void 0 !== Z && Z,
+            ee = e.shouldStoreTypeaheadItem,
+            te = e.showWithheldBannerOnMyTweets,
+            ne = void 0 === te || te,
+            ae = e.tweetDismissable,
+            ie = void 0 !== ae && ae,
+            re = e.withMessageGaps,
+            le = void 0 === re || re,
+            oe = e.withMuteConversation,
+            se = void 0 !== oe && oe,
+            ce = e.withRemoveFromBookmarks,
+            ue = void 0 !== ce && ce,
+            de = (e.withSelfThreadCTA, e.withTweetActionsDisabled),
+            me = void 0 !== de && de,
+            pe = e.withUserPresence,
+            he = void 0 !== pe && pe,
+            be = e.bookmarkFolderId,
+            fe = void 0 === be ? void 0 : be,
+            ve = e.errorContext,
+            _e = void 0 === ve ? '' : ve,
+            ge = e.isInSidebar,
+            ye = void 0 !== ge && ge,
+            Te = e.withAuthorControls,
+            we = void 0 !== Te && Te,
+            ke = e.withThirdPartyCards,
+            Ee = void 0 === ke || ke
+          return (
+            (t = {}),
+            i()(t, Y.b.Article, l.a),
+            i()(t, Y.b.Community, c.a),
+            i()(t, Y.b.EventSummary, Object(p.a)({})),
+            i()(t, Y.b.FollowSearch, r.e(r.a())),
+            i()(t, Y.b.FollowSearchAction, r.e(r.a())),
+            i()(t, Y.b.Label, _.a),
+            i()(t, Y.b.Message, Object(y.a)({ withGaps: le })),
+            i()(t, Y.b.Moment, Object(w.a)({ withAuthorControls: we, errorContext: _e })),
+            i()(t, Y.b.MomentAnnotation, T.a),
+            i()(t, Y.b.News, E.a),
+            i()(t, Y.b.Notification, S.a),
+            i()(t, Y.b.PagedCarouselItem, L.a),
+            i()(t, Y.b.Place, r.e(r.a())),
+            i()(t, Y.b.Prompt, C.a),
+            i()(t, Y.b.RelatedSearch, F.a),
+            i()(t, Y.b.ScoreEventSummary, P.a),
+            i()(t, Y.b.Spelling, x.a),
+            i()(t, Y.b.ThreadHeader, I.a),
+            i()(t, Y.b.Tile, M.a),
+            i()(t, Y.b.TimelineCursor, Object(d.a)({})),
+            i()(t, Y.b.TimelineModule, Object(A.b)({})),
+            i()(t, Y.b.Tombstone, B.a),
+            i()(t, Y.b.Topic, Object(K.a)({ shouldStoreTypeaheadItem: ee })),
+            i()(t, Y.b.TopicFollowPrompt, H.a),
+            i()(t, Y.b.TopicLandingHeader, z),
+            i()(t, Y.b.Trend, Object(D.a)({ withThirdPartyCards: Ee, errorContext: _e })),
+            i()(
+              t,
+              Y.b.Tweet,
+              Object(V.a)({
+                allowDownvote: a,
+                displayBlocked: q,
+                dismissable: ie,
+                shouldSelfThreadIncludeAvatar: $,
+                showWithheldBannerOnMyTweets: ne,
+                shouldStoreTypeaheadItem: ee,
+                withActionsDisabled: me,
+                withMuteConversation: se,
+                withRemoveFromBookmarks: ue,
+                withUserPresence: he,
+                bookmarkFolderId: fe,
+              }),
+            ),
+            i()(t, Y.b.TweetComposer, U.a),
+            i()(t, Y.b.TwitterList, Object(g.a)({})),
+            i()(t, Y.b.User, Object(J.a)({ shouldStoreTypeaheadItem: ee })),
+            i()(t, Y.b.VerticalGridItem, N.a),
+            i()(t, Y.a.CollectionHeader, s.a),
+            i()(t, Y.a.ConversationModuleGap, u.a),
+            i()(t, Y.a.Divider, m.a),
+            i()(t, Y.a.ModuleCarouselTimeline, o.a),
+            i()(t, Y.a.ModuleFooter, Object(h.a)({ isInSidebar: ye })),
+            i()(t, Y.a.ModuleHeader, b.a),
+            i()(t, Y.a.ModuleImpressionPlaceholder, f.a),
+            i()(t, Y.a.ModuleShowMore, Object(O.a)({ isInSidebar: ye })),
+            i()(t, Y.a.ModuleVerticalGridList, Q.a),
+            i()(t, Y.a.ModuleVerticalGridTimelineRow, W.a),
+            i()(t, Y.a.NewEntries, k.a),
+            i()(t, Y.a.PushPrompt, v.b),
+            i()(t, Y.a.Tombstone, j.a),
+            i()(t, Y.a.Unsupported, Object(G.a)(X.isTrue('responsive_web_unsupported_entry_tombstone'))),
+            t
+          )
+        }
     },
     yKhE: function (e, t, n) {
       'use strict'
       n.r(t)
       var a,
         i,
-        l,
         r,
-        s,
+        l,
         o,
+        s,
         c = {
           fragment: {
             argumentDefinitions: (a = [
@@ -1124,13 +1293,13 @@
                         name: 'result',
                         plural: !1,
                         selections: [
-                          (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                          (r = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                           {
                             kind: 'InlineFragment',
                             selections: [
                               {
                                 alias: 'home_topics_navigator_slices',
-                                args: (r = [
+                                args: (l = [
                                   { kind: 'Variable', name: 'cursor_string', variableName: 'cursor_string' },
                                   { kind: 'Variable', name: 'max_count', variableName: 'max_count' },
                                 ]),
@@ -1172,7 +1341,7 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      (s = {
+                                      (o = {
                                         alias: null,
                                         args: null,
                                         concreteType: 'SliceInfo',
@@ -1251,19 +1420,19 @@
                         name: 'result',
                         plural: !1,
                         selections: [
-                          l,
+                          r,
                           {
                             kind: 'InlineFragment',
                             selections: [
                               {
                                 alias: null,
-                                args: r,
+                                args: l,
                                 concreteType: null,
                                 kind: 'LinkedField',
                                 name: 'home_topics_navigator_slices',
                                 plural: !1,
                                 selections: [
-                                  l,
+                                  r,
                                   {
                                     kind: 'InlineFragment',
                                     selections: [
@@ -1275,7 +1444,7 @@
                                         name: 'items',
                                         plural: !0,
                                         selections: [
-                                          l,
+                                          r,
                                           {
                                             kind: 'InlineFragment',
                                             selections: [
@@ -1301,7 +1470,7 @@
                                                     name: 'name',
                                                     storageKey: null,
                                                   },
-                                                  (o = {
+                                                  (s = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -1318,7 +1487,7 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      s,
+                                      o,
                                     ],
                                     type: 'HomeTopicsNavigatorSlices',
                                     abstractKey: null,
@@ -1328,14 +1497,14 @@
                               },
                               {
                                 alias: null,
-                                args: r,
+                                args: l,
                                 filters: ['cursor_string', 'max_count'],
                                 handle: 'slice',
                                 key: 'TopicPivotsCarouselQuery_home_topics_navigator_slices',
                                 kind: 'LinkedHandle',
                                 name: 'home_topics_navigator_slices',
                               },
-                              o,
+                              s,
                             ],
                             type: 'User',
                             abstractKey: null,

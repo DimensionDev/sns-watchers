@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [355],
+  [356],
   {
     '3ukl': function (e, t, n) {
       'use strict'
@@ -12,14 +12,14 @@
         l = n.n(c),
         s = n('IMYl'),
         p = n('hOZg'),
-        d = function (e) {
+        u = function (e) {
           return 'IconCheckmark' === e
             ? l.a.createElement(s.a, null)
             : 'IconClose' === e
             ? l.a.createElement(p.a, null)
             : void 0
         },
-        u =
+        d =
           (n('yH/f'),
           Object.freeze({ Compact: 'Compact', Normal: 'Normal', Large: 'Large', ThumbsUpAndDown: 'ThumbsUpAndDown' })),
         m = n('Irs7'),
@@ -65,7 +65,7 @@
             C = e.showConfirmation,
             v = e.title,
             E = Object(m.b)(),
-            I = n === u.ThumbsUpAndDown,
+            I = n === d.ThumbsUpAndDown,
             x = I,
             k = g.b.useOpaqueIdentifier(),
             R = function () {
@@ -79,7 +79,7 @@
                 f.a,
                 {
                   accessibilityLabel: t,
-                  icon: n ? d(n) : void 0,
+                  icon: n ? u(n) : void 0,
                   onPress: e,
                   size: n ? 'medium' : 'xSmall',
                   style: n ? h.icon : h.button,
@@ -120,7 +120,7 @@
         I = n('pbku'),
         x = n('0KEI'),
         k = function (e, t) {
-          if (e && e === u.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
+          if (e && e === d.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
         },
         R = o.g({
           component: C,
@@ -189,8 +189,8 @@
         l = n('rHpw'),
         s = 'onboardingLikesGuide-emptyHeart',
         p = 'onboardingLikesGuide-filledHeart',
-        d = n('MWbm'),
-        u = r.a.memo(function () {
+        u = n('MWbm'),
+        d = r.a.memo(function () {
           return r.a.createElement(i.a, { style: y.emptyHeart, testID: s })
         }),
         m = r.a.memo(function () {
@@ -248,9 +248,9 @@
           b < g;
           b++
         )
-          f.push(b < n ? r.a.createElement(m, null) : r.a.createElement(u, null))
+          f.push(b < n ? r.a.createElement(m, null) : r.a.createElement(d, null))
         return r.a.createElement(
-          d.a,
+          u.a,
           { style: y.container },
           r.a.createElement(c.a, {
             headline: l,
@@ -260,31 +260,31 @@
             subtext: t,
           }),
           r.a.createElement(
-            d.a,
+            u.a,
             { style: y.actionGuide },
             r.a.createElement(
-              d.a,
+              u.a,
               { accessibilityLabel: s, style: y.actionGuideLeft },
               r.a.createElement(
-                d.a,
+                u.a,
                 { style: y.actionContextIconContainer },
                 r.a.createElement(
-                  d.a,
+                  u.a,
                   { style: y.actionContextIconHighlight },
                   r.a.createElement(i.a, { style: y.actionContextIcon }),
                 ),
               ),
               r.a.createElement(
-                d.a,
+                u.a,
                 { style: y.actionContext },
                 r.a.createElement(o.b, { size: 'subtext2', weight: 'bold' }, s),
               ),
             ),
             r.a.createElement(
-              d.a,
+              u.a,
               { accessibilityLabel: s, accessibilityLiveRegion: 'polite', style: y.actionGuideRight },
               f.map(function (e, t) {
-                return r.a.createElement(d.a, { key: 'action-icon-'.concat(t), style: y.actionIcon }, e)
+                return r.a.createElement(u.a, { key: 'action-icon-'.concat(t), style: y.actionIcon }, e)
               }),
             ),
           ),
@@ -304,8 +304,8 @@
         l = n.n(c),
         s = n('5Yy7'),
         p = n.n(s),
-        d = n('2VqO'),
-        u = n.n(d),
+        u = n('2VqO'),
+        d = n.n(u),
         m = n('KEM+'),
         y = n.n(m),
         g = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
@@ -322,18 +322,19 @@
         w = n('MWbm'),
         T = (function (e) {
           p()(n, e)
-          var t = u()(n)
+          var t = d()(n)
           function n() {
             var e
             r()(this, n)
             for (var a = arguments.length, o = new Array(a), i = 0; i < a; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              y()(l()(e), '_renderImage', function (e) {
-                var t = f.a.createElement(b.a, {
+              y()(l()(e), '_renderImage', function (e, t) {
+                var n = f.a.createElement(b.a, {
                   accessibilityLabel: '',
                   aspectMode: C.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
+                  customVariants: t,
                   image: e,
                 })
                 return e.isCentered
@@ -343,10 +344,10 @@
                       f.a.createElement(
                         w.a,
                         { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
-                        t,
+                        n,
                       ),
                     )
-                  : t
+                  : n
               }),
               y()(l()(e), '_renderTitle', function () {
                 var t = e.props.headline
@@ -405,34 +406,35 @@
                 value: function () {
                   var e = this.props,
                     t = e.image,
-                    n = e.primaryAction,
-                    a = e.rightControl,
-                    r = e.secondaryAction,
-                    o = e.shouldRenderBorder
+                    n = e.imageVariants,
+                    a = e.primaryAction,
+                    r = e.rightControl,
+                    o = e.secondaryAction,
+                    i = e.shouldRenderBorder
                   return f.a.createElement(
                     w.a,
-                    { style: o ? [A.root, A.rootMargin] : L.root },
+                    { style: i ? [A.root, A.rootMargin] : L.root },
                     f.a.createElement(
                       f.a.Fragment,
                       null,
-                      t ? this._renderImage(t) : null,
+                      t ? this._renderImage(t, n) : null,
                       f.a.createElement(
                         w.a,
                         { style: this.styles.rootPadding, testID: I },
                         this._renderTitle(),
                         this._renderBodyText(),
-                        n
+                        a
                           ? this._renderAction({
-                              action: n,
+                              action: a,
                               buttonType: 'primaryFilled',
                               style: this.styles.primaryAction,
                               buttonSize: 'large',
                               testID: x,
                             })
                           : null,
-                        r
+                        o
                           ? this._renderAction({
-                              action: r,
+                              action: o,
                               buttonType: 'primaryOutlined',
                               style: this.styles.secondaryAction,
                               buttonSize: 'large',
@@ -441,7 +443,7 @@
                           : null,
                       ),
                     ),
-                    a ? f.a.createElement(w.a, { style: L.rightControl }, a) : null,
+                    r ? f.a.createElement(w.a, { style: L.rightControl }, r) : null,
                   )
                 },
               },
@@ -507,14 +509,14 @@
         o = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         i = Object(o.a)({
           loader: function () {
-            return n.e(174).then(n.bind(null, 'ACNv'))
+            return n.e(175).then(n.bind(null, 'ACNv'))
           },
         }),
         c = n('4bW+'),
         l = n('IG7M'),
         s = n('rHpw'),
         p = n('Irs7'),
-        d = s.a.create(function (e) {
+        u = s.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
       t.a = Object(p.a)(function (e) {
@@ -529,7 +531,7 @@
             renderActionMenu: function (e) {
               return r.a.createElement(i, { actionItems: n, onClose: e })
             },
-            style: d.curationControl,
+            style: u.curationControl,
             testID: c.a.caret,
             withDarkBackground: a,
           })
@@ -548,15 +550,15 @@
         l = n('RoyM'),
         s = n('3XMw'),
         p = n.n(s),
-        d = n('EycW'),
-        u = n('zh9S'),
+        u = n('EycW'),
+        d = n('zh9S'),
         m = n('G6rE'),
         y = p.a.a682906d,
         g = o.g({
-          component: d.a,
+          component: u.a,
           bindActions: function (e) {
             e.module
-            return { scribe: u.c }
+            return { scribe: d.c }
           },
           selectData: function () {
             return {
@@ -575,16 +577,16 @@
               s = null != i && i.onboardingLikesStartPrompt ? (null == i ? void 0 : i.onboardingLikesStartPrompt) : null
             if (!s) return null
             var p = (null == a ? void 0 : a.favourites_count) || 0,
-              d = s.likesNeededToCompleteOnboarding,
-              u = Math.max(0, d - p)
+              u = s.likesNeededToCompleteOnboarding,
+              d = Math.max(0, u - p)
             return {
               bodyText: null === (t = s.bodyRichText) || void 0 === t ? void 0 : t.text,
               currentLikeCount: p,
               headerIconUrl: s.headerIconUrl,
               headerText: null === (n = s.headerRichText) || void 0 === n ? void 0 : n.text,
-              likeContext: y({ count: u }),
+              likeContext: y({ count: d }),
               rightControl: o.length ? c.a.createElement(l.a, { feedbackItems: o }) : void 0,
-              totalLikeCount: d,
+              totalLikeCount: u,
             }
           },
           onImpression: function (e) {

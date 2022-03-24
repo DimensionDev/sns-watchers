@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [47],
+  [48],
   {
     'AEu/': function (e, t, n) {
       'use strict'
@@ -151,7 +151,7 @@
                       (t = e.withUnhideReply),
                       Object(A.a)(
                         {},
-                        L.b,
+                        L.default,
                         g()({}, j.b.Tweet, {
                           handlers: g()(
                             {},
@@ -3188,7 +3188,7 @@
         le = (n('JtPf'), n('87if'), n('zb92')),
         se = Object(le.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(189)]).then(n.bind(null, 'uo3S'))
+            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(190)]).then(n.bind(null, 'uo3S'))
           },
           renderPlaceholder: function (e, t) {
             return null

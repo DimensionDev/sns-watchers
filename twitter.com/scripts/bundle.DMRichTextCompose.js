@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [50, 234],
+  [51, 235],
   {
     '+0pD': function (e, t) {
       var n =
@@ -6182,7 +6182,7 @@
       var a = n('zb92')
       t.a = Object(a.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(24), n.e(170)])
+          return Promise.all([n.e(0), n.e(25), n.e(171)])
             .then(n.bind(null, 'u2Vg'))
             .then(function (e) {
               return { default: e.__DANGEROUS_IMPORT__ }
@@ -11480,7 +11480,7 @@
           I = e.newConversationParticipants,
           O = e.perspective,
           M = function (e) {
-            null != x && x.trusted ? h.push('/messages') : e()
+            null != x && x.trusted ? h.push({ pathname: '/messages', state: g.state }) : e()
           },
           F = function () {
             var e,

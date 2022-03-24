@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [110, 11, 18, 101, 174, 177],
+  [111, 12, 19, 102, 175, 178],
   {
     '/uhu': function (e, t, n) {
       'use strict'
@@ -27,10 +27,10 @@
         g = 'https://help.twitter.com/using-twitter/twitter-circle',
         y = { page: 'trusted_friends_edit' },
         v = Object(c.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'gzLP'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(111)]).then(n.bind(null, 'gzLP'))
         }),
         b = Object(c.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'W8UM'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(111)]).then(n.bind(null, 'W8UM'))
         }),
         _ = function (e) {
           var t = e.history,
@@ -4176,7 +4176,7 @@
               (e = t.call.apply(t, [this].concat(i))),
               h()(s()(e), '_renderPrimaryContent', function () {
                 return g.a.createElement(F.a, {
-                  entryConfiguration: _.b,
+                  entryConfiguration: _.default,
                   module: w(),
                   renderEmptyState: e._renderEmptyState,
                   title: R,
@@ -4288,7 +4288,7 @@
         }
       t.a = function (e, t) {
         return l()(
-          l()({}, Object(o.a)({ withMessageGaps: null == t ? void 0 : t.withMessageGaps })),
+          l()({}, Object(o.createConfiguration)({ withMessageGaps: null == t ? void 0 : t.withMessageGaps })),
           {},
           r()({}, s.b.TwitterList, Object(c.a)(e)),
         )

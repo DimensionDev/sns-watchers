@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [87, 12],
+  [88, 10],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -1157,7 +1157,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -2423,10 +2423,10 @@
                   c()(c()({}, l), s),
                   {},
                   {
-                    edgeToEdgeEnabled: function () {
+                    withEdgeToEdgeContent: function () {
                       return !p && i.isTrue('media_edge_to_edge_content_enabled')
                     },
-                    withEdgeToEdgeActionsAndUsername: function () {
+                    withEdgeToEdgeTweetAnatomy: function () {
                       return i.isTrue('media_edge_to_edge_content_enabled')
                     },
                     headsUpVariant: function () {
@@ -2739,34 +2739,30 @@
                                   return C.a.createElement($, { previewTweetId: E.id_str })
                                 }
                               : function (t) {
-                                  return C.a.createElement(
-                                    C.a.Fragment,
-                                    null,
-                                    j &&
-                                      C.a.createElement(
-                                        P.a,
-                                        {
-                                          link: ''.concat(E.permalink, '/quick_promote_web/intro'),
-                                          onPress: e._getPromoteButtonOnPress(M),
-                                          style: An.promoteButton,
-                                          type: 'primaryOutlined',
-                                        },
-                                        e._getPromoteButtonText(M),
-                                      ),
-                                    e._renderTweetActions({
-                                      actionSize: t.actionSize,
-                                      displayStyle: t.displayStyle,
-                                      nativeID: t.nativeID,
-                                      style: t.style,
-                                      withCount: t.withCount,
-                                      withAnalyticsAction: !0,
-                                    }),
-                                  )
+                                  return e._renderTweetActions({
+                                    actionSize: t.actionSize,
+                                    displayStyle: t.displayStyle,
+                                    nativeID: t.nativeID,
+                                    style: t.style,
+                                    withCount: t.withCount,
+                                    withAnalyticsAction: !0,
+                                  })
                                 },
                             renderEducation: function (t) {
                               return C.a.createElement(
                                 C.a.Fragment,
                                 null,
+                                j &&
+                                  C.a.createElement(
+                                    P.a,
+                                    {
+                                      link: ''.concat(E.permalink, '/quick_promote_web/intro'),
+                                      onPress: e._getPromoteButtonOnPress(M),
+                                      style: An.promoteButton,
+                                      type: 'primaryOutlined',
+                                    },
+                                    e._getPromoteButtonText(M),
+                                  ),
                                 C.a.createElement(
                                   lt,
                                   i()({}, t, {

@@ -1,7 +1,7 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [100],
+  [101],
   {
-    '+Bsv': function (t, e, n) {
+    '+Bsv': function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
         a = n.n(r),
@@ -13,49 +13,49 @@
         l = n('rHpw'),
         d = o.a.bb081ea1,
         f = { viewType: 'settings_button' },
-        b = a.a.memo(function (t) {
-          var e = t.onPress,
-            n = t.pullRight,
-            r = t.to
+        b = a.a.memo(function (e) {
+          var t = e.onPress,
+            n = e.pullRight,
+            r = e.to
           return a.a.createElement(s.a, {
             accessibilityLabel: d,
             behavioralEventContext: f,
             hoverLabel: { label: d },
             icon: a.a.createElement(c.a, null),
             link: r,
-            onPress: e,
+            onPress: t,
             pullRight: n,
             style: p.button,
             testID: u,
             type: 'primaryText',
           })
         }),
-        p = l.a.create(function (t) {
-          return { button: { marginVertical: 'calc(-'.concat(t.spaces.space12, ')') } }
+        p = l.a.create(function (e) {
+          return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
-      e.a = b
+      t.a = b
     },
-    BxsD: function (t, e, n) {
+    BxsD: function (e, t, n) {
       'use strict'
-      n.d(e, 'a', function () {
+      n.d(t, 'a', function () {
         return l
       }),
-        n.d(e, 'b', function () {
+        n.d(t, 'b', function () {
           return d
         }),
-        n.d(e, 'c', function () {
+        n.d(t, 'c', function () {
           return b
         }),
-        n.d(e, 'd', function () {
+        n.d(t, 'd', function () {
           return E
         }),
-        n.d(e, 'f', function () {
-          return v
-        }),
-        n.d(e, 'e', function () {
+        n.d(t, 'f', function () {
           return m
         }),
-        n.d(e, 'g', function () {
+        n.d(t, 'e', function () {
+          return v
+        }),
+        n.d(t, 'g', function () {
           return g
         })
       var r = n('yiKp'),
@@ -69,40 +69,40 @@
         d = 'explore-',
         f = 9e5,
         b = function () {
-          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-            e = t.contentType,
-            n = t.displayLocation,
-            r = t.featureSwitches,
-            i = t.focalTweetId,
-            o = t.includePageConfiguration,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            t = e.contentType,
+            n = e.displayLocation,
+            r = e.featureSwitches,
+            i = e.focalTweetId,
+            o = e.includePageConfiguration,
             u = void 0 !== o && o,
-            s = t.initialTabId,
-            l = t.profileUserId,
-            b = e || n || 'main',
+            s = e.initialTabId,
+            l = e.profileUserId,
+            b = t || n || 'main',
             E = i
               ? ''.concat(d).concat(b, '-tweet-').concat(i)
               : l
               ? ''.concat(d).concat(b, '-user-').concat(l)
               : ''.concat(d).concat(b),
-            v = r.isTrue('responsive_web_new_client_events_enabled')
+            m = r.isTrue('responsive_web_new_client_events_enabled')
           return Object(c.a)({
             timelineId: E,
-            formatResponse: p(v),
-            getEndpoint: function (t) {
-              return t.URT.fetchExplore
+            formatResponse: p(m),
+            getEndpoint: function (e) {
+              return e.URT.fetchExplore
             },
-            getEndpointParams: function (t) {
+            getEndpointParams: function (e) {
               return a()(
-                a()({}, t),
+                a()({}, e),
                 {},
                 {
-                  candidate_source: e,
+                  candidate_source: t,
                   display_location: n,
                   focal_tweet_id: i,
                   include_page_configuration: u,
                   initial_tab_id: s,
                   profile_user_id: l,
-                  entity_tokens: v,
+                  entity_tokens: m,
                 },
               )
             },
@@ -111,18 +111,18 @@
             staleIntervalMs: f,
           })
         },
-        p = function (t) {
-          return function (e) {
-            var n = e.pageConfiguration
-            if (t && n && n.tabs) {
-              var r = n.tabs.tabs.map(function (e) {
+        p = function (e) {
+          return function (t) {
+            var n = t.pageConfiguration
+            if (e && n && n.tabs) {
+              var r = n.tabs.tabs.map(function (t) {
                   var n,
                     r,
                     i,
                     o = a()(
                       a()(
                         {},
-                        null === (n = e.urtEndpoint) ||
+                        null === (n = t.urtEndpoint) ||
                           void 0 === n ||
                           null === (r = n.urtEndpointOptions) ||
                           void 0 === r
@@ -130,18 +130,18 @@
                           : r.requestParams,
                       ),
                       {},
-                      { entity_tokens: t },
+                      { entity_tokens: e },
                     )
                   return a()(
-                    a()({}, e),
+                    a()({}, t),
                     {},
                     {
                       urtEndpoint: a()(
-                        a()({}, e.urtEndpoint),
+                        a()({}, t.urtEndpoint),
                         {},
                         {
                           urtEndpointOptions: a()(
-                            a()({}, null === (i = e.urtEndpoint) || void 0 === i ? void 0 : i.urtEndpointOptions),
+                            a()({}, null === (i = t.urtEndpoint) || void 0 === i ? void 0 : i.urtEndpointOptions),
                             {},
                             { requestParams: o },
                           ),
@@ -151,61 +151,43 @@
                   )
                 }),
                 o = a()(
-                  a()({}, e),
+                  a()({}, t),
                   {},
                   { pageConfiguration: a()(a()({}, n), {}, { tabs: a()(a()({}, n.tabs), {}, { tabs: r }) }) },
                 )
               return Object(i.a)(o)
             }
-            return Object(i.a)(e)
+            return Object(i.a)(t)
           }
         },
-        E = function (t, e) {
-          return b({ featureSwitches: t, includePageConfiguration: !0, initialTabId: e })
+        E = function (e, t) {
+          return b({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
         },
-        v = Object(o.a)(function (t) {
-          return b({ featureSwitches: t, contentType: s.Trends })
+        m = Object(o.a)(function (e) {
+          return b({ featureSwitches: e, contentType: s.Trends })
         }),
-        m = Object(o.a)(function (t) {
-          return b({ featureSwitches: t, displayLocation: l.WebSidebar })
+        v = Object(o.a)(function (e) {
+          return b({ featureSwitches: e, displayLocation: l.WebSidebar })
         }),
         g = function () {
-          return function (t, e) {
-            return t(
-              Object(u.t)(e())
-                .filter(function (t) {
-                  return 0 === t.indexOf(d)
+          return function (e, t) {
+            return e(
+              Object(u.t)(t())
+                .filter(function (e) {
+                  return 0 === e.indexOf(d)
                 })
-                .map(function (t) {
-                  return Object(u.g)(t)
+                .map(function (e) {
+                  return Object(u.g)(e)
                 }),
             )
           }
         }
     },
-    XtkE: function (t, e, n) {
+    iBrK: function (e, t, n) {
       'use strict'
-      var r = n('ezF+'),
-        a = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf'))
-      e.a = function (t) {
-        var e = t.errorContext,
-          i = t.withThirdPartyCards,
-          o = void 0 !== i && i
-        return r.e({
-          loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(6), n.e(246)]).then(n.bind(null, '+92Z'))
-          },
-          loaderKey: 'trendDefaultLoader',
-          loaderOptions: { withThirdPartyCards: o, errorContext: e },
-          strategy: a.a.Critical,
-        })
-      }
-    },
-    iBrK: function (t, e, n) {
-      'use strict'
-      n.r(e),
-        n.d(e, 'TrendsScreen', function () {
-          return X
+      n.r(t),
+        n.d(t, 'TrendsScreen', function () {
+          return K
         })
       var r,
         a = n('ERkP'),
@@ -220,49 +202,49 @@
         b = n('8UdT'),
         p = n('5Y9N'),
         E = n('XtkE'),
-        v =
+        m =
           ((r = {}),
           d()(r, b.b.TimelineCursor, Object(f.a)({})),
           d()(r, b.b.Trend, Object(E.a)({ withThirdPartyCards: !0, errorContext: 'TRENDS_SCREEN' })),
           r),
-        m = s()(s()({}, Object(p.a)({})), v),
+        v = s()(s()({}, Object(p.a)({})), m),
         g = n('BxsD'),
-        y = n('dwig'),
-        h = n('0+qk'),
-        w = n('3XMw'),
-        T = n.n(w),
-        C = n('VTxf'),
-        _ = n('yoO3'),
-        O = n('fTQJ'),
-        x = n('+Bsv'),
-        P = n('VS6U'),
-        j = n('Irs7'),
-        R = n('FIs5'),
-        S = n('mw9i'),
+        w = n('dwig'),
+        y = n('0+qk'),
+        h = n('3XMw'),
+        T = n.n(h),
+        _ = n('VTxf'),
+        O = n('yoO3'),
+        C = n('fTQJ'),
+        j = n('+Bsv'),
+        x = n('VS6U'),
+        R = n('Irs7'),
+        S = n('FIs5'),
+        P = n('mw9i'),
         k = T.a.c5f4befa,
         I = T.a.ae05f268,
         L = function () {
-          return i.a.createElement(C.a, null)
+          return i.a.createElement(_.a, null)
         },
         B = function () {
-          return i.a.createElement(R.a, { message: I })
+          return i.a.createElement(S.a, { message: I })
         },
-        X = function (t) {
-          var e = t.history,
+        K = function (e) {
+          var t = e.history,
             n = i.a.useContext(o.a).featureSwitches,
-            r = i.a.createElement(h.a, { history: e }),
-            a = i.a.createElement(x.a, { pullRight: !0, to: '/settings/trends' })
+            r = i.a.createElement(y.a, { history: t }),
+            a = i.a.createElement(j.a, { pullRight: !0, to: '/settings/trends' })
           return i.a.createElement(
-            _.a,
+            O.a,
             null,
-            i.a.createElement(P.a, {
+            i.a.createElement(x.a, {
               backLocation: '/explore',
-              history: e,
+              history: t,
               primaryContent: i.a.createElement(
-                y.a,
-                { component: S.a, fab: r },
-                i.a.createElement(O.a, {
-                  entryConfiguration: m,
+                w.a,
+                { component: P.a, fab: r },
+                i.a.createElement(C.a, {
+                  entryConfiguration: v,
                   module: Object(g.f)(n),
                   renderEmptyState: L,
                   renderUnavailable: B,
@@ -275,7 +257,7 @@
             }),
           )
         }
-      e.default = Object(j.a)(X, { page: 'guide', section: 'all_trends' })
+      t.default = Object(R.a)(K, { page: 'guide', section: 'all_trends' })
     },
   },
 ])

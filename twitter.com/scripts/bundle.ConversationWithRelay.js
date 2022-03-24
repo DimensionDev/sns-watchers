@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [49],
+  [50],
   {
     '+s2u': function (e, t, a) {
       'use strict'
@@ -862,10 +862,10 @@
           p = s ? rt(s) : '',
           g = s ? it(s) : '',
           f = lt({ endTimeString: p, endDateString: g }),
-          y = (function (e, t, a) {
+          y = (function (e, t, a, n) {
             if (!e || !t || !a || t > e) return null
-            var n = function (e) {
-              return e.toLocaleString([], {
+            var i = function (e) {
+              return e.toLocaleString(null != n ? n : [], {
                 style: 'currency',
                 currency: a,
                 minimumFractionDigits: 0,
@@ -873,10 +873,10 @@
               })
             }
             try {
-              var i = n((e - t) / 1e6),
-                r = n(e / 1e6)
-              return ot({ spentBudget: i, totalBudget: r })
-            } catch (l) {
+              var r = i((e - t) / 1e6),
+                l = i(e / 1e6)
+              return ot({ spentBudget: r, totalBudget: l })
+            } catch (o) {
               return null
             }
           })(l, i, t)

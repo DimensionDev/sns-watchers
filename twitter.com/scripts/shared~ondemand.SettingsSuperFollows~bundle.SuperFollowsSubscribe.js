@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [25],
+  [26],
   {
     '+Tpo': function (e, t, n) {
       'use strict'
@@ -322,7 +322,7 @@
           l = void 0 === r ? 'inline' : r,
           s = e.nativeID,
           d = e.style,
-          m = o.b.useProps().withEdgeToEdgeActionsAndUsername()
+          m = o.b.useProps().withEdgeToEdgeTweetAnatomy()
         return i.a.createElement(
           c.a,
           {

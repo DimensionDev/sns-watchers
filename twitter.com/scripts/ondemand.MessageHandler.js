@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [222],
+  [223],
   {
     J23q: function (e, t, n) {
       'use strict'
@@ -290,11 +290,12 @@
             for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              y()(l()(e), '_renderImage', function (e) {
-                var t = g.a.createElement(b.a, {
+              y()(l()(e), '_renderImage', function (e, t) {
+                var n = g.a.createElement(b.a, {
                   accessibilityLabel: '',
                   aspectMode: v.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
+                  customVariants: t,
                   image: e,
                 })
                 return e.isCentered
@@ -304,10 +305,10 @@
                       g.a.createElement(
                         A.a,
                         { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
-                        t,
+                        n,
                       ),
                     )
-                  : t
+                  : n
               }),
               y()(l()(e), '_renderTitle', function () {
                 var t = e.props.headline
@@ -366,34 +367,35 @@
                 value: function () {
                   var e = this.props,
                     t = e.image,
-                    n = e.primaryAction,
-                    r = e.rightControl,
-                    o = e.secondaryAction,
-                    a = e.shouldRenderBorder
+                    n = e.imageVariants,
+                    r = e.primaryAction,
+                    o = e.rightControl,
+                    a = e.secondaryAction,
+                    i = e.shouldRenderBorder
                   return g.a.createElement(
                     A.a,
-                    { style: a ? [R.root, R.rootMargin] : w.root },
+                    { style: i ? [R.root, R.rootMargin] : w.root },
                     g.a.createElement(
                       g.a.Fragment,
                       null,
-                      t ? this._renderImage(t) : null,
+                      t ? this._renderImage(t, n) : null,
                       g.a.createElement(
                         A.a,
                         { style: this.styles.rootPadding, testID: x },
                         this._renderTitle(),
                         this._renderBodyText(),
-                        n
+                        r
                           ? this._renderAction({
-                              action: n,
+                              action: r,
                               buttonType: 'primaryFilled',
                               style: this.styles.primaryAction,
                               buttonSize: 'large',
                               testID: E,
                             })
                           : null,
-                        o
+                        a
                           ? this._renderAction({
-                              action: o,
+                              action: a,
                               buttonType: 'primaryOutlined',
                               style: this.styles.secondaryAction,
                               buttonSize: 'large',
@@ -402,7 +404,7 @@
                           : null,
                       ),
                     ),
-                    r ? g.a.createElement(A.a, { style: w.rightControl }, r) : null,
+                    o ? g.a.createElement(A.a, { style: w.rightControl }, o) : null,
                   )
                 },
               },
@@ -468,7 +470,7 @@
         a = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         i = Object(a.a)({
           loader: function () {
-            return n.e(174).then(n.bind(null, 'ACNv'))
+            return n.e(175).then(n.bind(null, 'ACNv'))
           },
         }),
         c = n('4bW+'),

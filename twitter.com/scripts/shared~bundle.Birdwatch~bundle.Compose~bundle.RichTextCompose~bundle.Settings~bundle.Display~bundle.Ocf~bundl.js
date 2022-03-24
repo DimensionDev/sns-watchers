@@ -335,7 +335,7 @@
           s = void 0 === r ? 'inline' : r,
           l = e.nativeID,
           d = e.style,
-          m = i.b.useProps().withEdgeToEdgeActionsAndUsername()
+          m = i.b.useProps().withEdgeToEdgeTweetAnatomy()
         return a.a.createElement(
           c.a,
           {
@@ -580,8 +580,8 @@
           g = e.innerForwardPivotInfo,
           k = e.isMediaMaxHeightEnabled,
           M = e.loggedInUserId,
-          F = e.mediaCacheLocationKey,
-          B = e.nativeID,
+          B = e.mediaCacheLocationKey,
+          F = e.nativeID,
           N = e.onCardLinkClick,
           H = e.onMediaClick,
           U = e.onQuoteTweetClick,
@@ -622,7 +622,7 @@
           ge = a()(_e, 2),
           ke = ge[0],
           Ce = ge[1],
-          Ee = u.b.useProps().edgeToEdgeEnabled(),
+          Ee = u.b.useProps().withEdgeToEdgeContent(),
           Te = Object(T.useOpaqueIdentifier)(),
           Se = Object(T.useOpaqueIdentifier)(),
           Ae = E.a.getOriginalTweet(ee),
@@ -688,7 +688,7 @@
                 })
               : null
           },
-          Fe = (function () {
+          Be = (function () {
             var e,
               t,
               n = E.a.getOriginalTweet(ee),
@@ -715,7 +715,7 @@
             return r.a.createElement(C.a, {
               authorId: n.user.id_str,
               authorScreenName: n.user.screen_name,
-              cacheLocationKey: F || L,
+              cacheLocationKey: B || L,
               displayMediaAttribution: !0,
               displayMediaMetadata: p,
               enableKeyboardShortcuts: b,
@@ -745,7 +745,7 @@
               withPostPlayback: !0,
             })
           })(),
-          Be = (function () {
+          Fe = (function () {
             if (y && y.displayType === I.a.SoftIntervention) {
               var e = y.displayType,
                 t = y.landingUrl,
@@ -807,13 +807,13 @@
             t
               ? r.a.createElement(w.a, { revealableTombstoneConfig: w.a.sensitiveMediaTombstoneConfig }, t)
               : t)
-        return Fe || He || Be
+        return Be || He || Fe
           ? r.a.createElement(
               S.a,
-              { accessibilityLabelledBy: [Se, Te], nativeID: B, ref: Ce },
-              Fe,
-              Ne,
+              { accessibilityLabelledBy: [Se, Te], nativeID: F, ref: Ce },
               Be,
+              Ne,
+              Fe,
               He ? r.a.createElement(S.a, { style: P.gap }, He) : null,
             )
           : null
@@ -1823,11 +1823,11 @@
           M = e.retweetActionSubText,
           P = e.retweetWithCommentLink,
           O = e.style,
-          F = e.testIDs,
-          B = e.withCount && 'number' == typeof r,
+          B = e.testIDs,
+          F = e.withCount && 'number' == typeof r,
           N = A ? g : y
         return (
-          B && (N = A ? C({ count: r }) : k({ count: r })),
+          F && (N = A ? C({ count: r }) : k({ count: r })),
           a.a.createElement(s.a, {
             ActiveIcon: l.a,
             Icon: u.a,
@@ -1861,15 +1861,15 @@
                     retweetActionSubText: M,
                     retweetWithCommentLink: P,
                     testIDs: {
-                      retweetConfirm: null == F ? void 0 : F.retweetConfirm,
-                      unretweetConfirm: null == F ? void 0 : F.unretweetConfirm,
+                      retweetConfirm: null == B ? void 0 : B.retweetConfirm,
+                      unretweetConfirm: null == B ? void 0 : B.unretweetConfirm,
                     },
                   })
                 }
               : void 0,
             style: O,
-            testID: A ? (null == F ? void 0 : F.unretweet) : null == F ? void 0 : F.retweet,
-            withCount: B,
+            testID: A ? (null == B ? void 0 : B.unretweet) : null == B ? void 0 : B.retweet,
+            withCount: F,
           })
         )
       }
@@ -2203,8 +2203,8 @@
           M = e.link,
           P = e.onError,
           O = void 0 === P ? x : P,
-          F = e.onLikeActionSelect,
-          B = e.onMenuCancel,
+          B = e.onLikeActionSelect,
+          F = e.onMenuCancel,
           N = e.onPress,
           H = e.style,
           U = e.testIDs,
@@ -2242,7 +2242,7 @@
                     {
                       text: E,
                       onClick: function () {
-                        e(), null == F || F()
+                        e(), null == B || B()
                       },
                       testID: null == U ? void 0 : U.like,
                       Icon: _.a,
@@ -2252,7 +2252,7 @@
                     description: t,
                     items: n,
                     onCloseRequested: function () {
-                      e(), null == B || B()
+                      e(), null == F || F()
                     },
                   })
                 }
@@ -2656,8 +2656,8 @@
         M = n('2VqO'),
         P = n.n(M),
         O = n('q1bs'),
-        F = 'https://abs.twimg.com/sticky/animations/reply.downvote.1.json',
-        B = new ((function (e) {
+        B = 'https://abs.twimg.com/sticky/animations/reply.downvote.1.json',
+        F = new ((function (e) {
           D()(n, e)
           var t = P()(n)
           function n() {
@@ -2668,7 +2668,7 @@
               {
                 key: 'check',
                 value: function (e) {
-                  return I()(R()(n.prototype), 'check', this).call(this, null != e ? e : F)
+                  return I()(R()(n.prototype), 'check', this).call(this, null != e ? e : B)
                 },
               },
             ]),
@@ -2988,11 +2988,11 @@
           var t = e.style
           return m.a.createElement(Y.a, { reactionType: Z.a.Like, style: t, withAnimation: !1 })
         },
-        Fe = function (e) {
+        Be = function (e) {
           var t = e.style
           return m.a.createElement(Y.a, { reactionType: Z.a.Sad, style: t, withAnimation: !1 })
         },
-        Be = ee.a.create(function (e) {
+        Fe = ee.a.create(function (e) {
           return {
             root: { justifyContent: 'center', userSelect: 'none' },
             popoverContainer: { minWidth: 0, overflow: 'visible' },
@@ -3032,10 +3032,10 @@
             M = r()(D, 2),
             P = M[0],
             O = M[1],
-            F = m.a.useState(!1),
-            B = r()(F, 2),
-            N = B[0],
-            H = B[1],
+            B = m.a.useState(!1),
+            F = r()(B, 2),
+            N = F[0],
+            H = F[1],
             U = m.a.useState(!1),
             j = r()(U, 2),
             K = j[0],
@@ -3132,7 +3132,7 @@
                 case Z.a.Like:
                   return v ? Ce.a : Oe
                 case Z.a.Sad:
-                  return Fe
+                  return Be
                 default:
                   return Oe
               }
@@ -3156,13 +3156,13 @@
                       reacted: b,
                       reactionCounts: k,
                       size: l,
-                      style: Be.fruitBasketSpacing,
+                      style: Fe.fruitBasketSpacing,
                     })
                 : null
             }
           return m.a.createElement(
             te.a,
-            { style: [Be.root, C] },
+            { style: [Fe.root, C] },
             m.a.createElement(
               y.a,
               { enabled: !!i, handlers: ne },
@@ -3172,7 +3172,7 @@
                   anchorRef: K ? E : W,
                   animationDuration: 'normal',
                   animationType: 'slide',
-                  contentStyle: Be.popoverContainer,
+                  contentStyle: Fe.popoverContainer,
                   disabled: u || d,
                   enableHover: !0,
                   enableLongPress: !0,
@@ -3196,7 +3196,7 @@
                       onTouchEnd: ue(t),
                       onTouchStart: re,
                       ref: V,
-                      style: Be.buttonContainer,
+                      style: Fe.buttonContainer,
                     },
                     function (e) {
                       var i = e.isFocusedWithin
@@ -3238,7 +3238,7 @@
                           isFaded: d,
                           isPresentational: p,
                           onPress: me(n),
-                          style: [!i && ee.a.visuallyHidden, !x && Be.caretWithoutCount],
+                          style: [!i && ee.a.visuallyHidden, !x && Fe.caretWithoutCount],
                         }),
                       )
                     },
@@ -3265,7 +3265,7 @@
             d = e.isDownvoted,
             p = e.isPresentational,
             v = e.downvoteTransitionAnimation,
-            f = void 0 === v ? F : v,
+            f = void 0 === v ? B : v,
             w = e.onError,
             b = void 0 === w ? q : w,
             C = e.onPress,
@@ -3284,7 +3284,7 @@
               return (
                 m.a.useEffect(
                   function () {
-                    ;('object' === h()(t) || B.check(t)) && n !== s.current && (c(n), (s.current = n))
+                    ;('object' === h()(t) || F.check(t)) && n !== s.current && (c(n), (s.current = n))
                   },
                   [n, t],
                 ),
@@ -3393,9 +3393,9 @@
           M = e.renderReactionAction,
           P = void 0 === M ? st : M,
           O = e.renderReplyAction,
-          F = void 0 === O ? lt : O,
-          B = e.renderRetweetAction,
-          N = void 0 === B ? ut : B,
+          B = void 0 === O ? lt : O,
+          F = e.renderRetweetAction,
+          N = void 0 === F ? ut : F,
           H = e.renderShareAction,
           U = void 0 === H ? dt : H,
           j = e.replyCount,
@@ -3472,7 +3472,7 @@
           m.a.createElement(
             Ze.b,
             { accessibilityLabel: de, displayStyle: l, nativeID: E, style: [W, ae && vt.hidden] },
-            F(
+            B(
               a()(
                 a()({}, me),
                 {},
@@ -3839,7 +3839,7 @@
         return o
       }),
         n.d(t, 'b', function () {
-          return r
+          return c
         })
       n('yH/f'), n('2G9S'), n('vrRf')
       var o = Object.freeze({
@@ -3866,37 +3866,42 @@
           VoteOnPoll: 'vote_on_poll',
         }),
         a = [o.AddToBookmarks, o.Retweet, o.SendViaDM, o.ShareTweetVia],
-        i = Object.freeze({
+        i = [o.Retweet, o.QuoteTweet, o.SendViaDM, o.ShareTweetVia, o.Embed],
+        r = Object.freeze({
           enabled: 'tweet_limited_actions_config_enabled',
           non_compliant: 'tweet_limited_actions_config_non_compliant',
           community_tweet_member: 'tweet_limited_actions_config_community_tweet_member',
           community_tweet_non_member: 'tweet_limited_actions_config_community_tweet_non_member',
           community_tweet_hidden: 'tweet_limited_actions_config_community_tweet_hidden',
           community_tweet_member_removed: 'tweet_limited_actions_config_community_tweet_member_removed',
+          limit_trusted_friends_tweet: 'tweet_limited_actions_config_limit_trusted_friends_tweet',
         }),
-        r = function (e, t, n, r) {
-          var c = (function (e, t, n) {
-              var r = t.community_id_str,
-                c = t.limited_actions
-              if ('limited_replies' === c) return [o.Reply]
-              if (c) {
-                if (!i.hasOwnProperty(c)) return []
-                var s = i[c]
-                return e.getArrayValue(s, [])
+        c = function (e, t, n, c) {
+          var s = (function (e, t, n) {
+              var c = t.community_id_str,
+                s = t.limited_actions,
+                l = t.trusted_friends_info
+              if ('limited_replies' === s) return [o.Reply]
+              if (s) {
+                if (!r.hasOwnProperty(s)) return []
+                var u = r[s]
+                return e.getArrayValue(u, [])
               }
-              return r
+              return c
                 ? e.isTrue('c9s_participation_enabled')
                   ? n
                     ? a
                     : [].concat(a, [o.VoteOnPoll, o.Reply])
                   : [].concat(a, [o.VoteOnPoll, o.Reply, o.QuoteTweet])
+                : l
+                ? i
                 : []
-            })(e, t, r),
-            s = e.isTrue('tweet_limited_actions_config_enabled'),
-            l =
+            })(e, t, c),
+            l = e.isTrue('tweet_limited_actions_config_enabled'),
+            u =
               '' !==
               e.getValueWithoutScribeImpression('conversation_controls_limited_replies_consumption_configuration')
-          return !(null == c || !c.length || (!s && !l)) && c.indexOf(n) > -1
+          return !(null == s || !s.length || (!l && !u)) && s.indexOf(n) > -1
         }
     },
     ms2t: function (e, t, n) {
@@ -3969,8 +3974,8 @@
         M = n('cTG8'),
         P = n('R7KY'),
         O = n('9VO7'),
-        F = n('jV+4'),
-        B = n('0/y9'),
+        B = n('jV+4'),
+        F = n('0/y9'),
         N = [
           'renderActionsBar',
           'renderActionMenu',
@@ -4007,7 +4012,7 @@
           Timestamp: E.a,
           UserAvatar: P.a,
           UserFollowIndicator: O.a,
-          UserName: F.a,
+          UserName: B.a,
         }),
         U = {
           linkProcessor: function (e) {
@@ -4102,8 +4107,8 @@
               M = void 0 === D ? ee : D,
               P = e.renderUserFollowIndicator,
               O = void 0 === P ? te : P,
-              F = e.renderUserName,
-              H = void 0 === F ? ne : F,
+              B = e.renderUserName,
+              H = void 0 === B ? ne : B,
               oe = e.promotedContent,
               ae = e.quotedTweetTombstoneInfo,
               ie = e.socialContext,
@@ -4112,7 +4117,7 @@
               se = e.tweet,
               le = _()(e, N),
               ue = v.a.getOriginalTweet(se),
-              de = Object(B.useTweetA11yIds)(ue),
+              de = Object(F.useTweetA11yIds)(ue),
               me = b()(de, 2),
               pe = me[0],
               ve = me[1],
@@ -4330,8 +4335,8 @@
           C = g.tombstoneInfo || y.tweet.tombstoneInfo,
           E = d.a.isPromoted(y.promotedContent),
           S = s.b.useProps(),
-          A = S.edgeToEdgeEnabled(),
-          I = S.withEdgeToEdgeActionsAndUsername(),
+          A = S.withEdgeToEdgeContent(),
+          I = S.withEdgeToEdgeTweetAnatomy(),
           x = S.tweetRendersPromotedContentBadgeBelowHeader(),
           R = null === (t = y.conversationTreeMetadata) || void 0 === t ? void 0 : t.ancestorConnector,
           L = null === (n = y.conversationTreeMetadata) || void 0 === n ? void 0 : n.indents,
@@ -4752,8 +4757,8 @@
         M = n('0weh'),
         P = n('6s7X'),
         O = n('iySH'),
-        F = T.a.i859a9d3,
-        B = T.a.gc45a909,
+        B = T.a.i859a9d3,
+        F = T.a.gc45a909,
         N = function (e) {
           var t = e.buttonLabel,
             n = e.condensedText,
@@ -4780,7 +4785,7 @@
                 r || i || _.a.createElement(M.a, { style: [H.iconPrimaryColor, H.iconExpanded] }),
                 _.a.createElement(A.a, { align: 'center', size: 'title4', style: H.text, weight: 'bold' }, a),
                 _.a.createElement(A.a, { align: 'center', color: 'gray700', style: H.text }, d),
-                s ? _.a.createElement(I.b, { align: 'center', link: s, style: H.learnMore }, F) : null,
+                s ? _.a.createElement(I.b, { align: 'center', link: s, style: H.learnMore }, B) : null,
                 _.a.createElement(x.a, { link: l, onPress: u, type: 'brandFilled' }, t),
               )
             : _.a.createElement(
@@ -4797,7 +4802,7 @@
                       ? _.a.createElement(L.a, null, function (e) {
                           var t = e.isHovered
                           return _.a.createElement(x.a, {
-                            accessibilityLabel: B,
+                            accessibilityLabel: F,
                             icon: _.a.createElement(P.a, { style: t ? H.infoIconPrimary : H.infoIconGray }),
                             onClick: f,
                             size: 'xSmall',
@@ -4903,13 +4908,13 @@
         he = n('TuTd'),
         fe = n('XOJV'),
         we = function (e, t) {
-          return Object(se.C)(e, se.b)
+          return Object(se.D)(e, se.b)
         },
         be = function (e, t) {
-          return Object(se.C)(e, se.t)
+          return Object(se.D)(e, se.u)
         },
         ye = function (e, t) {
-          return Object(se.A)(e, se.m)
+          return Object(se.B)(e, se.m)
         },
         _e = function (e) {
           return Z.k(e, '')
@@ -5029,7 +5034,7 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: se.y,
+              addFlag: se.z,
               addToast: $.b,
               createLocalApiErrorHandler: Object(de.createLocalApiErrorHandlerWithContextFactory)(
                 'TWEET_ACTIONS_BAR_CONTAINER',
@@ -5158,8 +5163,8 @@
             subtext: u,
           })
         },
-        Fe = n('4hQ9'),
-        Be = n('y+lG'),
+        Be = n('4hQ9'),
+        Fe = n('y+lG'),
         Ne = n('OrGc'),
         He = n('XEYr'),
         Ue = n('RxYA'),
@@ -5230,8 +5235,8 @@
         Mt = T.a.ff9348b8,
         Pt = T.a.ebad846b,
         Ot = T.a.h438b014,
-        Ft = T.a.d91695cb,
-        Bt = T.a.b59d8d10,
+        Bt = T.a.d91695cb,
+        Ft = T.a.b59d8d10,
         Nt = T.a.h5d6c720,
         Ht = T.a.f1fcb2eb,
         Ut = T.a.a2e7377e,
@@ -5754,7 +5759,7 @@
               b()(m()(a), '_hideReactionsEducation', function () {
                 var e = a.props,
                   t = e.addFlag
-                e.canShowReactionsEducation && t(se.t)
+                e.canShowReactionsEducation && t(se.u)
               }),
               b()(m()(a), '_handleBookmarkTweet', function () {
                 var e,
@@ -5774,7 +5779,7 @@
                         label: r ? an : on,
                         onAction: r ? a._handleBookmarkTweetToFolder : a._handleViewBookmarks,
                       },
-                      text: Bt,
+                      text: Ft,
                     })
                   },
                   function (e) {
@@ -5855,7 +5860,7 @@
                       : i.push({
                           state: {
                             inReplyToStatusId: c.id_str,
-                            isSelfThreadReply: Object(Fe.c)({ tweet: c, loggedInUserId: n }),
+                            isSelfThreadReply: Object(Be.c)({ tweet: c, loggedInUserId: n }),
                             promotedContent: r,
                           },
                           pathname: '/compose/tweet',
@@ -5885,7 +5890,7 @@
                 var e = a.props,
                   t = e.misinfoNudgeActionTaken,
                   n = e.sessionToken
-                Y.a.setString(Object(Be.a)(a.props.tweet.permalink, n)),
+                Y.a.setString(Object(Fe.a)(a.props.tweet.permalink, n)),
                   a.props.addToast({ text: rn }),
                   a._scribeAction('copy_link'),
                   a._scribeMisInfoNudgeAction({
@@ -5912,9 +5917,9 @@
                   r = n.tweet,
                   c = ct.a.getOriginalTweet(r),
                   s = a.context.featureSwitches.isTrue('responsive_web_share_only_tweet_url_omit_title_and_text'),
-                  l = Object(Be.a)(c.permalink, i),
+                  l = Object(Fe.a)(c.permalink, i),
                   u = Ot({ fullName: c.user.name, screenName: c.user.screen_name }),
-                  d = Ft({
+                  d = Bt({
                     fullName: c.user.name,
                     screenName: c.user.screen_name,
                     tweet: ((e = c.text), (t = document.createElement('textarea')), (t.innerHTML = e), t.value),
@@ -6192,13 +6197,13 @@
                     M = ct.a.getOriginalTweet(g),
                     P = this._getRetweetWithCommentLink(M, w, this._shouldShowArticleNudge()),
                     O = this._shouldDisable(M, Re.a.Analytics, d),
-                    F = this._shouldDisable(M, Re.a.Reply, d),
-                    B = !M.favorited && this._shouldDisable(M, Re.a.Like, d),
+                    B = this._shouldDisable(M, Re.a.Reply, d),
+                    F = !M.favorited && this._shouldDisable(M, Re.a.Like, d),
                     N = !M.reacted && this._shouldDisable(M, Re.a.Like, d),
                     H = this._shouldDisable(M, Re.a.Retweet, d),
                     U = !M.isDownvoted && this._shouldDisable(M, Re.a.Downvote, d),
                     j = this._shouldDisable(M, Re.a.QuoteTweet, d),
-                    K = F && 'limited_replies' === M.limited_actions,
+                    K = B && 'limited_replies' === M.limited_actions,
                     z = this._getShareMenuActionItems(g, w, T, i),
                     V = z.length < 1,
                     W = V && 'non_compliant' === M.limited_actions,
@@ -6252,13 +6257,13 @@
                           pt.a.ActionLike,
                           a()({}, t, {
                             actionMenuDescription: e._renderEngagementNudge(ft.a.like, !h, u),
-                            enableActionMenu: !B && Q,
-                            isFaded: B,
+                            enableActionMenu: !F && Q,
+                            isFaded: F,
                             likeActionIconContainerRef: m,
                             likeTransitionAnimation: p,
                             onLikeActionSelect: e._handleLike,
                             onMenuCancel: e._handleMenuCancel(ft.a.like),
-                            onPress: B
+                            onPress: F
                               ? e._handleOpenEducationPrompt(Re.a.Like)
                               : Q
                               ? e._handleLikeMenuPress
@@ -6289,8 +6294,8 @@
                         return _.a.createElement(
                           pt.a.ActionReply,
                           a()({}, t, {
-                            isFaded: F,
-                            onPress: F ? e._handleOpenEducationPrompt(Re.a.Reply) : e._handleReplyPress,
+                            isFaded: B,
+                            onPress: B ? e._handleOpenEducationPrompt(Re.a.Reply) : e._handleReplyPress,
                             renderWrapper: K ? e._replyWrapper : void 0,
                             testID: We.a.reply,
                           }),

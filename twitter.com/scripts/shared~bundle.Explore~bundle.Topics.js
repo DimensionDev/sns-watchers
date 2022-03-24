@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [19],
+  [20],
   {
     '180P': function (e, t, n) {
       'use strict'
@@ -833,7 +833,7 @@
           )
         }
       Ue.defaultProps = {
-        entryConfiguration: w.b,
+        entryConfiguration: w.default,
         renderEmptyState: function () {
           return s.a.createElement(Be.a, { header: De })
         },

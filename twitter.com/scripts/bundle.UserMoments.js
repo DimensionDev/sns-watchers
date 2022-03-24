@@ -1,103 +1,103 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [111],
+  [112],
   {
-    DghG: function (e, n, r) {
+    DghG: function (e, n, t) {
       'use strict'
-      r.r(n),
-        r.d(n, 'UserMomentsScreen', function () {
-          return x
+      t.r(n),
+        t.d(n, 'UserMomentsScreen', function () {
+          return R
         })
-      var t = r('VrFO'),
-        a = r.n(t),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        s = r('1Pcy'),
-        i = r.n(s),
-        u = r('5Yy7'),
-        l = r.n(u),
-        m = r('2VqO'),
-        d = r.n(m),
-        f = r('KEM+'),
-        h = r.n(f),
-        p = (r('2G9S'), r('ERkP')),
-        E = r.n(p),
-        M = r('es0u'),
-        O = (r('KqXw'), r('WNMA'), r('RqPI')),
-        w = r('Fg8X'),
-        y = r('G6rE'),
-        b = r('rxPX'),
-        I = r('0KEI'),
-        N = function (e, n) {
+      var r = t('VrFO'),
+        a = t.n(r),
+        o = t('Y9Ll'),
+        c = t.n(o),
+        s = t('1Pcy'),
+        i = t.n(s),
+        u = t('5Yy7'),
+        m = t.n(u),
+        l = t('2VqO'),
+        d = t.n(l),
+        h = t('KEM+'),
+        f = t.n(h),
+        p = (t('2G9S'), t('ERkP')),
+        E = t.n(p),
+        M = t('es0u'),
+        O = (t('KqXw'), t('WNMA'), t('RqPI')),
+        b = t('Fg8X'),
+        w = t('G6rE'),
+        I = t('rxPX'),
+        N = t('0KEI'),
+        v = function (e, n) {
           return n.match.params.screenName
         },
-        v = function (e, n) {
-          var r = N(0, n)
-          return y.e.selectByScreenName(e, r)
+        y = function (e, n) {
+          var t = v(0, n)
+          return w.e.selectByScreenName(e, t)
         },
-        C = Object(b.a)()
+        g = Object(I.a)()
           .propsFromState(function () {
-            return { screenName: N, user: v, loggedInUserId: O.q }
+            return { screenName: v, user: y, loggedInUserId: O.q }
           })
           .adjustStateProps(function (e) {
             var n = e.loggedInUserId,
-              r = e.screenName,
-              t = e.user
-            return { screenName: r, user: t, userId: null == t ? void 0 : t.id_str, loggedInUserId: n }
+              t = e.screenName,
+              r = e.user
+            return { screenName: t, user: r, userId: null == r ? void 0 : r.id_str, loggedInUserId: n }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)('USER_MOMENTS'),
-              createMoment: w.a.create,
-              fetchOneUserByScreenNameIfNeeded: y.e.fetchOneByScreenNameIfNeeded,
+              createLocalApiErrorHandler: Object(N.createLocalApiErrorHandlerWithContextFactory)('USER_MOMENTS'),
+              createMoment: b.a.create,
+              fetchOneUserByScreenNameIfNeeded: w.e.fetchOneByScreenNameIfNeeded,
             }
           })
           .withAnalytics({ page: 'profile', section: 'moments' }),
-        g = r('c+OQ'),
-        U = r('7wqI'),
-        A = r('3XMw'),
-        S = r.n(A),
-        _ = r('yoO3'),
-        P = r('5FtR'),
-        L = r('VS6U'),
-        T = r('gbni'),
-        k = r('yrzJ'),
-        F = r('G8HL'),
-        j = S.a.b4af8c6a,
-        x = (function (e) {
-          l()(r, e)
-          var n = d()(r)
-          function r() {
+        U = t('c+OQ'),
+        _ = t('7wqI'),
+        C = t('3XMw'),
+        S = t.n(C),
+        A = t('yoO3'),
+        F = t('5FtR'),
+        T = t('VS6U'),
+        j = t('gbni'),
+        k = t('yrzJ'),
+        L = t('G8HL'),
+        P = S.a.b4af8c6a,
+        R = (function (e) {
+          m()(t, e)
+          var n = d()(t)
+          function t() {
             var e
-            a()(this, r)
-            for (var t = arguments.length, o = new Array(t), c = 0; c < t; c++) o[c] = arguments[c]
+            a()(this, t)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = n.call.apply(n, [this].concat(o))),
-              h()(i()(e), '_renderTimeline', function () {
+              f()(i()(e), '_renderTimeline', function () {
                 var n = e.props,
-                  r = n.screenName,
-                  t = n.userId,
+                  t = n.screenName,
+                  r = n.userId,
                   a = e._isOwnMoments()
-                return E.a.createElement(T.a, { isOwnMoments: a, screenName: r, userId: t, withAuthorControls: !1 })
+                return E.a.createElement(j.a, { isOwnMoments: a, screenName: t, userId: r, withAuthorControls: !1 })
               }),
-              h()(i()(e), '_handleFetchUser', function () {
+              f()(i()(e), '_handleFetchUser', function () {
                 var n = e.props,
-                  r = n.createLocalApiErrorHandler
-                ;(0, n.fetchOneUserByScreenNameIfNeeded)(n.screenName).catch(r())
+                  t = n.createLocalApiErrorHandler
+                ;(0, n.fetchOneUserByScreenNameIfNeeded)(n.screenName).catch(t())
               }),
-              h()(i()(e), '_handleCreateMoment', function () {
+              f()(i()(e), '_handleCreateMoment', function () {
                 var n = e.props,
-                  r = n.createLocalApiErrorHandler,
-                  t = n.createMoment,
+                  t = n.createLocalApiErrorHandler,
+                  r = n.createMoment,
                   a = n.history
-                t().then(function (e) {
+                r().then(function (e) {
                   e && e.id && a.push({ pathname: '/i/moment_maker/edit/'.concat(e.id) })
-                }, r({ showToast: !0 }))
+                }, t({ showToast: !0 }))
               }),
               e
             )
           }
           return (
-            c()(r, [
+            c()(t, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -109,25 +109,25 @@
                 value: function () {
                   var e = this.props,
                     n = e.history,
-                    r = e.screenName,
-                    t = e.user,
-                    a = !t || (t && Object(U.b)({ isOwnProfile: this._isOwnMoments(), user: t })),
-                    o = this._isOwnMoments() ? E.a.createElement(g.a, { onPress: this._handleCreateMoment }) : void 0
+                    t = e.screenName,
+                    r = e.user,
+                    a = !r || (r && Object(_.b)({ isOwnProfile: this._isOwnMoments(), user: r })),
+                    o = this._isOwnMoments() ? E.a.createElement(U.a, { onPress: this._handleCreateMoment }) : void 0
                   return a
                     ? E.a.createElement(
-                        _.a,
+                        A.a,
                         null,
-                        E.a.createElement(L.a, {
-                          backLocation: '/'.concat(r),
+                        E.a.createElement(T.a, {
+                          backLocation: '/'.concat(t),
                           history: n,
                           primaryContent: this._renderTimeline(),
                           rightControl: o,
                           sidebarContent: E.a.createElement(M.a, null),
-                          subtitle: E.a.createElement(k.a, { screenName: r }),
-                          title: j,
+                          subtitle: E.a.createElement(k.a, { screenName: t }),
+                          title: P,
                         }),
                       )
-                    : E.a.createElement(P.a, { to: '/'.concat(r) })
+                    : E.a.createElement(F.a, { to: '/'.concat(t) })
                 },
               },
               {
@@ -135,98 +135,80 @@
                 value: function () {
                   var e = this.props,
                     n = e.loggedInUserId,
-                    r = e.userId
-                  return !!n && r === n
+                    t = e.userId
+                  return !!n && t === n
                 },
               },
             ]),
-            r
+            t
           )
         })(E.a.Component)
-      n.default = C(Object(F.a)(x))
+      n.default = g(Object(L.a)(R))
     },
-    gbni: function (e, n, r) {
+    gbni: function (e, n, t) {
       'use strict'
-      var t = r('ERkP'),
-        a = r.n(t),
-        o = r('KEM+'),
-        c = r.n(o),
-        s = r('k49u'),
-        i = r('LVU8'),
-        u = r('FIs5'),
-        l = r('ezF+'),
-        m = r('PnFR'),
-        d = r('8UdT'),
-        f = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
-        h = function (e) {
-          return {
-            loader: function () {
-              return Promise.all([r.e(0), r.e(226)]).then(r.bind(null, 'Pb8P'))
-            },
-            loaderOptions: e,
-            loaderKey: 'momentSummaryLoader',
-            strategy: f.a.Critical,
-          }
-        },
-        p = function (e) {
+      var r = t('ERkP'),
+        a = t.n(r),
+        o = t('KEM+'),
+        c = t.n(o),
+        s = t('k49u'),
+        i = t('LVU8'),
+        u = t('FIs5'),
+        m = t('ezF+'),
+        l = t('PnFR'),
+        d = t('8UdT'),
+        h = t('Wjib'),
+        f = function (e) {
           var n
           return (
             (n = {}),
-            c()(n, d.b.TimelineCursor, Object(m.a)({})),
-            c()(
-              n,
-              d.b.Moment,
-              (function (e) {
-                var n = e.errorContext,
-                  r = e.withAuthorControls
-                return l.e(h({ errorContext: n, withAuthorControls: r }))
-              })({ withAuthorControls: e, errorContext: 'USER_MOMENTS_TIMELINE' }),
-            ),
-            c()(n, d.b.MomentAnnotation, l.e(l.a())),
+            c()(n, d.b.TimelineCursor, Object(l.a)({})),
+            c()(n, d.b.Moment, Object(h.a)({ withAuthorControls: e, errorContext: 'USER_MOMENTS_TIMELINE' })),
+            c()(n, d.b.MomentAnnotation, m.e(m.a())),
             n
           )
         },
-        E = r('3XMw'),
-        M = r.n(E),
-        O = r('fTQJ'),
-        w = r('iUle'),
-        y = M.a.fea74b66,
-        b = M.a.e14206c3,
-        I = M.a.d1e5e327,
-        N = M.a.ee75768c,
-        v = M.a.f5978663,
-        C = M.a.a357d876,
+        p = t('3XMw'),
+        E = t.n(p),
+        M = t('fTQJ'),
+        O = t('iUle'),
+        b = E.a.fea74b66,
+        w = E.a.e14206c3,
+        I = E.a.d1e5e327,
+        N = E.a.ee75768c,
+        v = E.a.f5978663,
+        y = E.a.a357d876,
         g = function () {
-          return a.a.createElement(u.a, { message: C })
+          return a.a.createElement(u.a, { message: y })
         },
         U = function (e, n) {
           return function () {
-            return a.a.createElement(u.a, { header: n ? b : N({ screenName: e }), message: n ? I : v })
+            return a.a.createElement(u.a, { header: n ? w : N({ screenName: e }), message: n ? I : v })
           }
         }
       n.a = function (e) {
         var n = e.activeTeamId,
-          r = e.isOwnMoments,
-          t = e.screenName,
+          t = e.isOwnMoments,
+          r = e.screenName,
           o = e.userId,
           u = e.withAuthorControls,
-          l = a.a.useMemo(
+          m = a.a.useMemo(
             function () {
-              return Object(w.a)(o || '', n, u)
+              return Object(O.a)(o || '', n, u)
             },
             [o, n, u],
           )
-        return a.a.createElement(O.a, {
+        return a.a.createElement(M.a, {
           apiErrorHandlerMap: c()({}, s.a.TOOMomentsList, {
             customAction: function () {
               Object(i.d)('/explore', { statusCode: 401 })
             },
           }),
-          entryConfiguration: p(u),
-          module: l,
-          renderEmptyState: U(t, r),
+          entryConfiguration: f(u),
+          module: m,
+          renderEmptyState: U(r, t),
           renderUnavailable: g,
-          title: y({ screenName: t }),
+          title: b({ screenName: r }),
         })
       }
     },

@@ -1,54 +1,78 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [211],
+  [212],
   {
-    '3Rb8': function (e, n, t) {
+    '3Rb8': function (e, t, n) {
       'use strict'
-      t.r(n)
-      var r = t('yiKp'),
-        i = t.n(r),
-        o = t('ezF+'),
-        c = t('VPAj'),
-        a = t('rC8y'),
-        s = t('caTy'),
-        u = t('zh9S'),
-        b = t('ywYn'),
-        l = Object(c.a)(!1),
-        p = { viewType: 'module_footer' },
-        d = { element: 'footer' }
-      n.default = function (e) {
-        var n = e.isInSidebar
-        return o.g({
-          shouldDisplayBorder: n ? l : void 0,
-          component: a.a,
-          bindActions: Object(c.a)({ scribe: u.c }),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              r = e.entry.content,
-              o = r.landingUrl,
-              c = r.text,
-              a = r.url,
-              u = e.scribeNamespace,
-              l = o || (a && { urlType: b.a.DeepLink, url: a })
-            return {
-              link: l && Object(s.b)(l),
-              text: c,
-              onPress: function () {
-                t(i()(i()({}, u), {}, { element: 'footer', action: 'click' }))
+      n.r(t)
+      var r = n('ezF+'),
+        a = n('VPAj'),
+        o = n('ERkP'),
+        i = n.n(o),
+        c =
+          (n('yH/f'),
+          Object.freeze({ Classic: 'Classic', ContextEmphasis: 'ContextEmphasis' }),
+          Object.freeze({ Classic: 'Classic', Footnote: 'Footnote', Button: 'Button' })),
+        s = n('caTy'),
+        l = n('ywYn'),
+        u = n('Irs7'),
+        b = n('/yvb'),
+        d = n('rC8y'),
+        f = function (e) {
+          var t = e.entry,
+            n = (e.feedbackItems, e.isInSidebar),
+            r = (e.module, Object(u.b)())
+          i.a.useEffect(function () {
+            r.scribe({ element: 'footer', action: 'impression' })
+          }, [])
+          var a = i.a.useCallback(
+              function () {
+                return r.scribe({ element: 'footer', action: 'click' })
               },
-              withDarkerInteractiveBackground: n,
-            }
-          },
-          defaultScribeNamespace: d,
-          isFocusable: Object(c.a)(!0),
-          getBehavioralEventContextOverride: function () {
-            return p
-          },
-          onImpression: function (e) {
-            var n = e.actions.scribe,
-              t = e.scribeNamespace
-            n(i()(i()({}, t), {}, { element: 'footer', action: 'impression' }))
-          },
-        })
+              [r],
+            ),
+            o = t.content,
+            f = o.displayType,
+            m = o.landingUrl,
+            y = o.text,
+            w = o.url,
+            k = m || (w && { urlType: l.a.DeepLink, url: w }),
+            v = k && Object(s.b)(k)
+          switch (f) {
+            case c.Button:
+              return i.a.createElement(b.a, {
+                children: y,
+                link: v,
+                onPress: a,
+                style: p.containerStyle,
+                type: 'brandOutlined',
+              })
+            case c.Classic:
+              return i.a.createElement(d.a, { link: v, onPress: a, text: y, withDarkerInteractiveBackground: n })
+            default:
+              return null
+          }
+        },
+        p = n('rHpw').a.create(function (e) {
+          return { containerStyle: { width: '90%', marginVertical: e.spaces.space12, marginHorizontal: 'auto' } }
+        }),
+        m = i.a.memo(f),
+        y = Object(a.a)(!1),
+        w = { viewType: 'module_footer' },
+        k = { element: 'footer' }
+      t.default = function (e) {
+        return r
+          .b({
+            shouldDisplayBorder: e.isInSidebar ? y : void 0,
+            component: m,
+            defaultScribeNamespace: k,
+            isFocusable: Object(a.a)(!0),
+            getBehavioralEventContextOverride: function () {
+              return w
+            },
+          })
+          .getHandler(function () {
+            return e
+          })
       }
     },
   },

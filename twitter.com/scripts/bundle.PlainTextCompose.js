@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [78, 18],
+  [79, 19],
   {
     '/Rsk': function (e, t, a) {
       'use strict'
@@ -306,14 +306,14 @@
         })(_.a.Component),
         B = a('rxPX'),
         N = function (e, t) {
-          return Object(C.C)(e, C.a)
+          return Object(C.D)(e, C.a)
         },
         V = Object(B.a)()
           .propsFromState(function () {
             return { showEducationOnMount: N }
           })
           .propsFromActions(function () {
-            return { addFlag: C.y }
+            return { addFlag: C.z }
           })
           .withAnalytics(),
         z = a('feu+'),
@@ -2961,10 +2961,10 @@
           return a ? k.c.select(e, a) : void 0
         },
         Me = function (e, t) {
-          return Object(ge.C)(e, ge.f)
+          return Object(ge.D)(e, ge.f)
         },
         ke = function (e, t) {
-          return Object(ge.C)(e, ge.v)
+          return Object(ge.D)(e, ge.w)
         },
         Pe = function (e) {
           var t = xe(e)
@@ -2990,10 +2990,10 @@
                 'COMMUNITIES_CONTROLS',
               ),
               addEducationFlag: function () {
-                return Object(ge.y)(ge.f)
+                return Object(ge.z)(ge.f)
               },
               addTrustedFriendsEducationFlag: function () {
-                return Object(ge.y)(ge.v)
+                return Object(ge.z)(ge.w)
               },
               updateSingleComposer: de.w,
               fetchOrCreateTrustedFriendsList: Se,
@@ -3483,7 +3483,7 @@
         Nt = a.n(Bt),
         Vt = a('yZqq'),
         zt = function (e, t) {
-          return Object(ge.C)(e, ge.r)
+          return Object(ge.D)(e, ge.s)
         },
         jt = Object(P.a)()
           .propsFromState(function () {
@@ -3492,7 +3492,7 @@
           .propsFromActions(function () {
             return {
               addEducationFlag: function () {
-                return Object(ge.y)(ge.r)
+                return Object(ge.z)(ge.s)
               },
             }
           }),
@@ -6857,7 +6857,7 @@
                     if (o || !x) {
                       var u = o ? e[0].in_reply_to_status_id_str : e[0].id_str
                       l.link = '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '')
-                    } else l.onAction = Object(Uo.a)(d, m)
+                    } else l.onAction = Object(Uo.a)(d, m, L)
                     a({ text: x ? ns : n, action: l }),
                       s.isInlineReply && s.setState({ focused: !1 }),
                       s._updateConvoCardState(),
@@ -7901,15 +7901,24 @@
           var t = e.inReplyToStatus && !e.isSelfThreadReply
           return e.isScheduled ? l : t ? s : e.isThread ? o : r({ verb: '' })
         },
-        d = function (e, t) {
+        d = function (e, t, a) {
           return function () {
-            var a,
-              n,
-              i =
-                (null === (a = t.state) || void 0 === a || null === (n = a.previousPath) || void 0 === n
-                  ? void 0
-                  : n.includes('/home')) && '/compose/tweet' === t.pathname
-            t.pathname.includes('/home') || i ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
+            if (a) {
+              var n, i
+              ;(null === (n = t.state) || void 0 === n || null === (i = n.previousPath) || void 0 === i
+                ? void 0
+                : i.includes(a)) && '/compose/tweet' === t.pathname
+                ? window.scrollTo(0, 0)
+                : e.push('/i/communities/'.concat(a), { lockScroll: !0 })
+            } else {
+              var r,
+                o,
+                s =
+                  (null === (r = t.state) || void 0 === r || null === (o = r.previousPath) || void 0 === o
+                    ? void 0
+                    : o.includes('/home')) && '/compose/tweet' === t.pathname
+              t.pathname.includes('/home') || s ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
+            }
           }
         },
         u = function (e) {

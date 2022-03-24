@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [182],
+  [183],
   {
     Lz2T: function (e, t, n) {
       'use strict'
@@ -96,11 +96,12 @@
             for (var o = arguments.length, r = new Array(o), a = 0; a < o; a++) r[a] = arguments[a]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              h()(c()(e), '_renderImage', function (e) {
-                var t = y.a.createElement(b.a, {
+              h()(c()(e), '_renderImage', function (e, t) {
+                var n = y.a.createElement(b.a, {
                   accessibilityLabel: '',
                   aspectMode: v.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
+                  customVariants: t,
                   image: e,
                 })
                 return e.isCentered
@@ -110,10 +111,10 @@
                       y.a.createElement(
                         T.a,
                         { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
-                        t,
+                        n,
                       ),
                     )
-                  : t
+                  : n
               }),
               h()(c()(e), '_renderTitle', function () {
                 var t = e.props.headline
@@ -172,34 +173,35 @@
                 value: function () {
                   var e = this.props,
                     t = e.image,
-                    n = e.primaryAction,
-                    o = e.rightControl,
-                    i = e.secondaryAction,
-                    r = e.shouldRenderBorder
+                    n = e.imageVariants,
+                    o = e.primaryAction,
+                    i = e.rightControl,
+                    r = e.secondaryAction,
+                    a = e.shouldRenderBorder
                   return y.a.createElement(
                     T.a,
-                    { style: r ? [S.root, S.rootMargin] : _.root },
+                    { style: a ? [S.root, S.rootMargin] : _.root },
                     y.a.createElement(
                       y.a.Fragment,
                       null,
-                      t ? this._renderImage(t) : null,
+                      t ? this._renderImage(t, n) : null,
                       y.a.createElement(
                         T.a,
                         { style: this.styles.rootPadding, testID: P },
                         this._renderTitle(),
                         this._renderBodyText(),
-                        n
+                        o
                           ? this._renderAction({
-                              action: n,
+                              action: o,
                               buttonType: 'primaryFilled',
                               style: this.styles.primaryAction,
                               buttonSize: 'large',
                               testID: x,
                             })
                           : null,
-                        i
+                        r
                           ? this._renderAction({
-                              action: i,
+                              action: r,
                               buttonType: 'primaryOutlined',
                               style: this.styles.secondaryAction,
                               buttonSize: 'large',
@@ -208,7 +210,7 @@
                           : null,
                       ),
                     ),
-                    o ? y.a.createElement(T.a, { style: _.rightControl }, o) : null,
+                    i ? y.a.createElement(T.a, { style: _.rightControl }, i) : null,
                   )
                 },
               },
@@ -281,7 +283,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'PushNotificationsPromptContainer', function () {
-          return G
+          return V
         })
       var o = n('VrFO'),
         i = n.n(o),
@@ -357,7 +359,7 @@
         M = v.a.hd50e063,
         O = v.a.g4850f43,
         N = v.a.dc397181,
-        G = (function (e) {
+        V = (function (e) {
           p()(n, e)
           var t = u()(n)
           function n(e, o) {
@@ -447,9 +449,9 @@
             n
           )
         })(y.a.Component)
-      h()(G, 'defaultProps', { fullScreen: !1, message: L, onDismiss: D.a })
-      var V = _(G)
-      t.default = V
+      h()(V, 'defaultProps', { fullScreen: !1, message: L, onDismiss: D.a })
+      var G = _(V)
+      t.default = G
     },
   },
 ])
