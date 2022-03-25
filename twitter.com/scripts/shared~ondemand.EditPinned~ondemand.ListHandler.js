@@ -140,7 +140,7 @@
         },
         x = Object(S.a)()
           .propsFromState(function () {
-            return { list: P, user: I, dataSaverMode: w.j, couldPinList: y.a, media: _ }
+            return { list: P, user: I, dataSaverMode: w.j, couldPinList: y.b, media: _ }
           })
           .adjustStateProps(function (e) {
             var t = e.couldPinList,
@@ -161,24 +161,24 @@
           .withAnalytics(),
         L = r('f5/l'),
         R = r('3XMw'),
-        T = r.n(R),
-        O = r('mN6z'),
-        j = (r('uFXj'), r('0mK8')),
-        H = r('xZmF'),
-        B = r('2My+'),
-        z = r('Tp1h'),
+        O = r.n(R),
+        T = r('mN6z'),
+        H = (r('uFXj'), r('0mK8')),
+        j = r('xZmF'),
+        z = r('2My+'),
+        B = r('Tp1h'),
         M = r('Jkc4'),
         N = 'listCell',
         A = r('MWbm'),
-        F = r('t62R'),
-        U = r('/yvb'),
+        U = r('t62R'),
+        F = r('/yvb'),
         G = r('CGyZ'),
         W = r('htQn'),
         D = r('rHpw'),
         K = r('v6aA'),
         V = r('IMYl'),
         Y = r('a5gf'),
-        q = (T.a.d58baa7e, T.a.j681933d),
+        q = (O.a.d58baa7e, O.a.j681933d),
         X = (function (e) {
           u()(r, e)
           var t = m()(r)
@@ -191,14 +191,14 @@
               h()(l()(e), '_renderHoverCard', function (t) {
                 var r = e.props.listId,
                   n = '/i/lists/'.concat(r)
-                return t ? b.a.createElement(B.a, { basePath: n, listId: r }, t) : null
+                return t ? b.a.createElement(z.a, { basePath: n, listId: r }, t) : null
               }),
               h()(l()(e), '_renderName', function () {
                 var t = e.props.name
                 return b.a.createElement(
                   A.a,
                   { style: J.name },
-                  b.a.createElement(F.b, { weight: 'bold' }, t),
+                  b.a.createElement(U.b, { weight: 'bold' }, t),
                   e._renderPrivateIcon(),
                 )
               }),
@@ -207,7 +207,7 @@
                   r = t.description
                 return t.withDescription && r
                   ? b.a.createElement(
-                      F.b,
+                      U.b,
                       { color: 'gray700', numberOfLines: 2, size: 'subtext2', style: J.description },
                       r,
                     )
@@ -220,7 +220,7 @@
                 return b.a.createElement(
                   A.a,
                   { style: J.thumbnailImage },
-                  b.a.createElement(H.a, {
+                  b.a.createElement(j.a, {
                     cropCandidates: n.crop,
                     dataSaverMode: r,
                     icon: 'lists',
@@ -244,7 +244,7 @@
                 return i
                   ? b.a.createElement(V.a, { style: J.iconCheckmark })
                   : n
-                  ? b.a.createElement(U.a, {
+                  ? b.a.createElement(F.a, {
                       hoverLabel: r ? { label: r } : void 0,
                       icon: n,
                       onPress: l,
@@ -253,7 +253,7 @@
                   : d
                   ? b.a.createElement(
                       M.a,
-                      { customText: o, displayMode: z.a.subscribe, userFullName: u ? u.name : void 0 },
+                      { customText: o, displayMode: B.a.subscribe, userFullName: u ? u.name : void 0 },
                       function (e) {
                         return b.a.createElement(G.a, {
                           isFollowing: a,
@@ -271,7 +271,7 @@
               h()(l()(e), '_renderPrivateIcon', function () {
                 return 'private' === e.props.mode
                   ? b.a.createElement(
-                      F.b,
+                      U.b,
                       { size: 'body', style: J.icon },
                       b.a.createElement(Y.a, { accessibilityLabel: q, style: J.iconLock }),
                     )
@@ -308,7 +308,7 @@
                           this._renderHoverCard(this._renderName()),
                           this._renderDescription(),
                           n
-                            ? b.a.createElement(j.a, { author: n, withHoverCard: i, withLink: !0, withScreenName: !0 })
+                            ? b.a.createElement(H.a, { author: n, withHoverCard: i, withLink: !0, withScreenName: !0 })
                             : null,
                         ),
                       ),
@@ -347,12 +347,12 @@
         Z = r('LtQU'),
         $ = r('FITr'),
         ee = r('ShJ/'),
-        te = T.a.c5d23126,
-        re = T.a.j44ec61f,
-        ne = T.a.b01c0d14,
-        ae = T.a.fa816a0a,
-        ie = T.a.ac832ae4,
-        oe = T.a.cdb33880,
+        te = O.a.c5d23126,
+        re = O.a.j44ec61f,
+        ne = O.a.b01c0d14,
+        ae = O.a.fa816a0a,
+        ie = O.a.ac832ae4,
+        oe = O.a.cdb33880,
         ce = (function (e) {
           u()(r, e)
           var t = m()(r)
@@ -423,7 +423,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e, t) {
-                  return !Object(O.a)(e, this.props) || !Object(O.a)(t, this.state)
+                  return !Object(T.a)(e, this.props) || !Object(T.a)(t, this.state)
                 },
               },
               {
@@ -648,10 +648,42 @@
       })
       t.a = s
     },
+    LtQU: function (e, t, r) {
+      'use strict'
+      var n = r('yiKp'),
+        a = r.n(n),
+        i = r('ERkP'),
+        o = r.n(i),
+        c = r('Lsrn'),
+        l = r('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(l.a)(
+            'svg',
+            a()(
+              a()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            o.a.createElement(
+              'g',
+              null,
+              o.a.createElement('path', {
+                d: 'M19 10H5c-.553 0-1-.447-1-1s.447-1 1-1h14c.553 0 1 .447 1 1s-.447 1-1 1zm0 6H5c-.553 0-1-.447-1-1s.447-1 1-1h14c.553 0 1 .447 1 1s-.447 1-1 1z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+    },
     Nxr7: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return H
+        return j
       })
       var n = r('VrFO'),
         a = r.n(n),
@@ -685,10 +717,10 @@
         x = w.a.a7aad8b9,
         L = w.a.e431f1aa,
         R = w.a.a7391707,
-        T = w.a.d2dbfa91,
-        O = w.a.cd734f65,
-        j = w.a.c8891d06,
-        H = (function (e) {
+        O = w.a.d2dbfa91,
+        T = w.a.cd734f65,
+        H = w.a.c8891d06,
+        j = (function (e) {
           u()(r, e)
           var t = m()(r)
           function r() {
@@ -717,7 +749,7 @@
                 return b.a.createElement(
                   E.a,
                   null,
-                  b.a.createElement(g.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? O : j),
+                  b.a.createElement(g.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? T : H),
                   b.a.createElement(g.b, { color: 'gray700', size: 'subtext2' }, r),
                 )
               }),
@@ -784,7 +816,7 @@
                                 case S.a.Postponed:
                                   return R
                                 case S.a.Cancelled:
-                                  return T
+                                  return O
                                 default:
                                   return null
                               }
@@ -800,7 +832,7 @@
             r
           )
         })(b.a.Component)
-      h()(H, 'defaultProps', { withCategory: !0 })
+      h()(j, 'defaultProps', { withCategory: !0 })
     },
     Ox2E: function (e, t, r) {
       'use strict'

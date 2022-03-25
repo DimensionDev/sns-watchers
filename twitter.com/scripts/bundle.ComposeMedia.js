@@ -14,7 +14,7 @@
     '0uGn': function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return Te
+        return Me
       })
       var n = a('yiKp'),
         r = a.n(n),
@@ -48,10 +48,10 @@
           a('m9LP'),
           a('ERkP')),
         _ = a.n(y),
-        M = (a('TJCb'), a('DZ+c'), a('xZGM')),
-        T = a('GTeL'),
-        E = a('3XMw'),
-        C = a.n(E),
+        E = (a('TJCb'), a('DZ+c'), a('xZGM')),
+        M = a('GTeL'),
+        T = a('3XMw'),
+        C = a.n(T),
         S = a('rHpw'),
         w = S.a.create(function (e) {
           return {
@@ -118,7 +118,7 @@
                     _.a.createElement(
                       R.a,
                       { style: w.attachmentContainer },
-                      _.a.createElement(T.a, { mediaItem: n, orientedImage: r }),
+                      _.a.createElement(M.a, { mediaItem: n, orientedImage: r }),
                       _.a.createElement(P.a, {
                         accessibilityLabel: D,
                         autoFocus: t,
@@ -143,23 +143,23 @@
           )
         })(_.a.Component),
         U = a('rxPX'),
-        W = function (e, t) {
-          return Object(M.D)(e, M.a)
+        F = function (e, t) {
+          return Object(E.D)(e, E.a)
         },
-        F = Object(U.a)()
+        W = Object(U.a)()
           .propsFromState(function () {
-            return { showEducationOnMount: W }
+            return { showEducationOnMount: F }
           })
           .propsFromActions(function () {
-            return { addFlag: M.z }
+            return { addFlag: E.z }
           })
           .withAnalytics(),
         B = a('feu+'),
         V = C.a.ffe9ec3a,
         z = C.a.j063b261,
         G = C.a.e57144f0,
-        K = C.a.f9f9210c,
-        H = (function (e) {
+        H = C.a.f9f9210c,
+        K = (function (e) {
           h()(a, e)
           var t = f()(a)
           function a() {
@@ -198,7 +198,7 @@
                   e.showEducationOnMount &&
                     (this.setState({ showAltTextEducationSheet: !0 }),
                     a.scribe({ component: 'education', action: 'open' }),
-                    t(M.a))
+                    t(E.a))
                 },
               },
               {
@@ -222,7 +222,7 @@
                           onClose: this._handleCloseEducationPrompt,
                           onSecondaryAction: this._handleEducationPromptSecondaryAction,
                           primaryButtonTestID: k,
-                          secondaryActionLabel: K,
+                          secondaryActionLabel: H,
                           subtext: z,
                         })
                       : null,
@@ -246,7 +246,7 @@
         N = S.a.create(function (e) {
           return { root: { flexGrow: 1 } }
         }),
-        q = F(H),
+        q = W(K),
         Q = a('jHSc'),
         X = a('EeFI'),
         J = a('7JQg'),
@@ -285,9 +285,9 @@
         be = C.a.f96a38a2,
         ye = C.a.hac7c548,
         _e = C.a.e3dbfba3,
-        Me = C.a.dd4a83a5,
-        Te = { crop: 'crop', altText: 'alt_text', sensitiveMedia: 'sensitive_media' },
-        Ee = (function (e) {
+        Ee = C.a.dd4a83a5,
+        Me = { crop: 'crop', altText: 'alt_text', sensitiveMedia: 'sensitive_media' },
+        Te = (function (e) {
           h()(a, e)
           var t = f()(a)
           function a(e) {
@@ -299,9 +299,9 @@
                 m()(n),
                 '_getMemoizedTabMetadata',
                 Object(te.a)(function (e, t) {
-                  return t && e === Te.sensitiveMedia
-                    ? { namespace: he, title: Me, renderer: n._renderSensitiveMediaTab }
-                    : e === Te.altText
+                  return t && e === Me.sensitiveMedia
+                    ? { namespace: he, title: Ee, renderer: n._renderSensitiveMediaTab }
+                    : e === Me.altText
                     ? { namespace: me, title: _e, renderer: n._renderAltTextTab }
                     : { namespace: pe, title: ye, renderer: n._renderCropTab }
                 }),
@@ -615,7 +615,7 @@
                     a = t.location,
                     n = t.sensitiveMediaTabEnabled,
                     r = null === (e = a.state) || void 0 === e ? void 0 : e.tab
-                  return n && r === Te.sensitiveMedia ? Te.sensitiveMedia : r === Te.altText ? Te.altText : Te.crop
+                  return n && r === Me.sensitiveMedia ? Me.sensitiveMedia : r === Me.altText ? Me.altText : Me.crop
                 },
               },
               {
@@ -635,24 +635,24 @@
                       void 0 !== t &&
                       t.isImage &&
                       l.push({
-                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.crop }) }),
+                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Me.crop }) }),
                         label: _.a.createElement(ce.a, null),
-                        key: Te.crop,
+                        key: Me.crop,
                         accessibilityLabel: ye,
                         isActive: function () {
-                          return e === Te.crop
+                          return e === Me.crop
                         },
                         onClick: function () {
                           return i.scribePageImpression()
                         },
                       }),
                     l.push({
-                      to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.altText }) }),
+                      to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Me.altText }) }),
                       label: _.a.createElement(A.b, { weight: 'bold' }, 'ALT'),
-                      key: Te.altText,
+                      key: Me.altText,
                       accessibilityLabel: _e,
                       isActive: function () {
-                        return e === Te.altText
+                        return e === Me.altText
                       },
                       onClick: function () {
                         return a._handleClickTab('alt_text_button')
@@ -660,12 +660,12 @@
                     }),
                     s &&
                       l.push({
-                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.sensitiveMedia }) }),
+                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Me.sensitiveMedia }) }),
                         label: _.a.createElement(le.a, null),
-                        key: Te.sensitiveMedia,
-                        accessibilityLabel: Me,
+                        key: Me.sensitiveMedia,
+                        accessibilityLabel: Ee,
                         isActive: function () {
-                          return e === Te.sensitiveMedia
+                          return e === Me.sensitiveMedia
                         },
                         onClick: function () {
                           return a._handleClickTab('sensitive_media_tab')
@@ -679,11 +679,112 @@
             a
           )
         })(_.a.Component)
-      t.b = Ee
+      t.b = Te
     },
     '2prg': function (e, t, a) {
       var n = a('ZORK')
       e.exports = /Version\/10(?:\.\d+){1,2}(?: [\w./]+)?(?: Mobile\/\w+)? Safari\//.test(n)
+    },
+    '6vad': function (e, t, a) {
+      'use strict'
+      a.d(t, 'a', function () {
+        return p
+      })
+      a('yH/f')
+      var n = a('ERkP'),
+        r = a.n(n),
+        i = a('t62R'),
+        o = a('EHV7'),
+        s = a('rHpw'),
+        c = s.a.create(function (e) {
+          return {
+            icon: {
+              color: e.colors.primary,
+              height: e.fontSizes.title4,
+              paddingRight: e.spaces.space12,
+              width: e.fontSizes.title4,
+            },
+          }
+        }),
+        l = a('7Mjr'),
+        d = a('I4+6'),
+        u = a('cm6r'),
+        m = a('MWbm'),
+        p = Object.freeze({ TopicFilled: 'TOPIC_FILLED' })
+      var h = s.a.create(function (e) {
+        return {
+          root: {
+            justifyContent: 'space-between',
+            paddingHorizontal: e.componentDimensions.gutterHorizontal,
+            paddingVertical: e.componentDimensions.gutterVertical,
+          },
+          mainContent: { flexDirection: 'row' },
+          subtext: { alignSelf: 'flex-start' },
+          withSubtext: { alignSelf: 'center' },
+          icon: { alignSelf: 'flex-start', height: e.spaces.space20, justifyContent: 'center' },
+          iconArrow: { color: e.colors.text },
+          rightControlGroup: { flexDirection: 'row', justifyContent: 'flex-end', flexGrow: 1, alignSelf: 'center' },
+        }
+      })
+      t.b = function (e) {
+        var t = e.icon,
+          a = e.landingUrl,
+          n = e.nativeID,
+          v = e.rightControl,
+          f = e.style,
+          g = e.subtext,
+          b = e.testID,
+          y = e.text,
+          _ = (function (e) {
+            switch (e) {
+              case p.TopicFilled:
+                return r.a.createElement(o.a, { style: c.icon })
+              default:
+                return null
+            }
+          })(t),
+          E = g ? null : h.withSubtext,
+          M = d.a.generate({
+            backgroundColor: s.a.theme.colors.gray0,
+            color: s.a.theme.colors.cellBackground,
+            customFocusBackgroundColor: s.a.theme.colors.gray0,
+            customHoverBackgroundColor: s.a.theme.colors.gray0,
+            customPressedBackgroundColor: s.a.theme.colors.gray0,
+          })
+        return r.a.createElement(
+          u.a,
+          {
+            interactiveStyles: a ? M : null,
+            link: null == a ? void 0 : a.url,
+            nativeID: n,
+            style: [h.root, f],
+            testID: b,
+          },
+          r.a.createElement(
+            m.a,
+            { accessibilityLevel: 2, accessibilityRole: 'heading', style: h.mainContent },
+            r.a.createElement(m.a, { style: h.icon }, _),
+            r.a.createElement(
+              i.b,
+              { numberOfLines: 3, size: 'headline1', style: E, weight: 'heavy', withHashflags: !0 },
+              y,
+            ),
+            r.a.createElement(
+              m.a,
+              { style: h.rightControlGroup },
+              a ? r.a.createElement(m.a, { style: E }, r.a.createElement(l.a, { style: h.iconArrow })) : null,
+              v ? r.a.createElement(m.a, null, v) : null,
+            ),
+          ),
+          g
+            ? r.a.createElement(
+                i.b,
+                { color: 'gray700', numberOfLines: 2, size: 'subtext2', style: h.subtext, withHashflags: !0 },
+                g,
+              )
+            : null,
+        )
+      }
     },
     '8A5z': function (e, t, a) {
       'use strict'
@@ -805,7 +906,7 @@
           return j
         }),
         a.d(t, 'e', function () {
-          return W
+          return F
         }),
         a.d(t, 'i', function () {
           return B
@@ -820,7 +921,7 @@
           return G
         }),
         a.d(t, 'a', function () {
-          return H
+          return K
         }),
         a.d(t, 'b', function () {
           return q
@@ -857,9 +958,9 @@
         b = a('07FG'),
         y = a('Ssj5'),
         _ = a('fEA7'),
-        M = a.n(_),
-        T = a('uKEd'),
-        E = a('lnti'),
+        E = a.n(_),
+        M = a('uKEd'),
+        T = a('lnti'),
         C = a('/NU0'),
         S = [
           'senderId',
@@ -906,28 +1007,28 @@
               _ = s.recipients,
               w = void 0 === _ ? [] : _,
               I = s.requestId,
-              k = void 0 === I ? M.a.v1() : I,
+              k = void 0 === I ? E.a.v1() : I,
               R = s.tweetAttachment,
               A = s.quickReply,
               P = c()(s, S)
             t(Z(u))
             var D = a(),
-              L = y || F(a(), u),
+              L = y || W(a(), u),
               j = p.k(D, L),
               U = o()(j, 1)[0] || {},
-              W = U.mediaFile,
+              F = U.mediaFile,
               B = U.mediaMetadata,
               V = w.length > 0 && w.join(','),
               z = {}
-            W && W.isGif
+            F && F.isGif
               ? (z.extraInitParams = '&media_category=dm_gif')
-              : W && W.isVideo && (z.extraInitParams = '&media_category=dm_video')
-            var K = p.p(L, z),
-              H = [t(K)],
+              : F && F.isVideo && (z.extraInitParams = '&media_category=dm_video')
+            var H = p.p(L, z),
+              K = [t(H)],
               N = (G(D, u) || {}).found_media_origin
             return (
-              W && W.isGif && H.push(Object(g.a)(W)),
-              Promise.all(H).then(
+              F && F.isGif && K.push(Object(g.a)(F)),
+              Promise.all(K).then(
                 function (a) {
                   var n = o()(a, 2),
                     s = o()(n[0], 1)[0],
@@ -964,7 +1065,7 @@
                           sender_id: l,
                           text: e.text,
                         }),
-                        M = m()(
+                        E = m()(
                           m()(
                             m()(m()({}, P), Object(b.a)(d) && { card_uri: d }),
                             {},
@@ -975,17 +1076,17 @@
                           { recipient_ids: V, request_id: k, tweet_id: a },
                         )
                       A &&
-                        ((M['quick_reply_response[options][id]'] = A.id),
-                        (M['quick_reply_response[options][selected_id]'] = A.selected_id))
-                      var S = Object(E.a)([
+                        ((E['quick_reply_response[options][id]'] = A.id),
+                        (E['quick_reply_response[options][selected_id]'] = A.selected_id))
+                      var S = Object(T.a)([
                         ee(u),
                         { type: f.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        u && Object(T.b)(u, k, _),
+                        u && Object(M.b)(u, k, _),
                       ])
                       return (
                         t(S),
-                        i.DirectMessages.sendMessage(M).then(
+                        i.DirectMessages.sendMessage(E).then(
                           function (a) {
                             var n = a.entities,
                               i = n.cards,
@@ -994,10 +1095,10 @@
                               c = n.users,
                               l = a.result.conversations
                             Object(C.a)(L) && t(J(u, L))
-                            var d = Object(E.a)(
+                            var d = Object(T.a)(
                               [{ type: f.c.SUCCESS }].concat(
                                 r()(Object(h.a)({ conversations: l, entries: o, users: c, tweets: s, cards: i })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, u && Object(T.j)(u, k, e), O(u)],
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, u && Object(M.j)(u, k, e), O(u)],
                               ),
                             )
                             return t(d), Promise.resolve(Object.values(a.entities.entries)[0].conversation_id)
@@ -1013,10 +1114,10 @@
                                 sender_id: l,
                                 text: e.text,
                               }),
-                              i = Object(E.a)([
+                              i = Object(T.a)([
                                 { type: f.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                u && Object(T.b)(u, k, r),
+                                u && Object(M.b)(u, k, r),
                               ])
                             return t(i), Object(v.e)(t, a, 'ACTION_SEND_DM')
                           },
@@ -1029,7 +1130,7 @@
                   )
                 },
                 function (e) {
-                  return t(Object(E.a)([Object(C.a)(L) && J(u, L), ae(u)])), Promise.reject(e)
+                  return t(Object(T.a)([Object(C.a)(L) && J(u, L), ae(u)])), Promise.reject(e)
                 },
               )
             )
@@ -1055,15 +1156,15 @@
           return a ? a.cardUrl : null
         },
         U = 'rweb/dmComposer/SAVE_CARD_URL',
-        W = function (e, t) {
+        F = function (e, t) {
           return { type: U, conversationId: e, cardUrl: t }
         },
-        F = function (e, t) {
+        W = function (e, t) {
           var a = R(e, t)
           return a ? a.mediaId : null
         },
         B = function (e, t) {
-          var a = p.k(e, F(e, t))
+          var a = p.k(e, W(e, t))
           return a.length > 0 ? a[0] : null
         },
         V = function (e, t) {
@@ -1071,15 +1172,15 @@
           return !!a && a.isUploading
         },
         z = function (e, t) {
-          return p.l(e, F(e, t))
+          return p.l(e, W(e, t))
         },
         G = function (e, t) {
           var a = R(e, t)
           return a ? a.gifMetadata : null
         },
-        K = 'rweb/dmComposer/ADD_MEDIA',
-        H = function (e, t, a) {
-          return { payload: { isUploading: !1, mediaId: o()(t, 1)[0], gifMetadata: a }, type: K, conversationId: e }
+        H = 'rweb/dmComposer/ADD_MEDIA',
+        K = function (e, t, a) {
+          return { payload: { isUploading: !1, mediaId: o()(t, 1)[0], gifMetadata: a }, type: H, conversationId: e }
         },
         N = 'rweb/dmComposer/CANCEL_UPLOAD',
         q = function (e) {
@@ -1112,7 +1213,7 @@
             t = arguments.length > 1 ? arguments[1] : void 0,
             a = t.conversationId || 'new_group'
           switch (t.type) {
-            case K:
+            case H:
               var n = e[a] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return m()(m()({}, e), {}, d()({}, a, m()(m()({}, n), t.payload)))
             case Y:
@@ -1300,27 +1401,27 @@
         b = a.n(g),
         y = (a('KOtZ'), a('7x/C'), a('2G9S'), a('xVN5')),
         _ = a('rxPX'),
-        M = a('AspN'),
-        T = function (e, t) {
+        E = a('AspN'),
+        M = function (e, t) {
           var a, n
           return (
             null === (a = t.location) || void 0 === a || null === (n = a.state) || void 0 === n
               ? void 0
               : n.showAllMedia
           )
-            ? E(e)
+            ? T(e)
             : C(e)
         },
-        E = function (e) {
+        T = function (e) {
           var t = y.k(e).reduce(function (e, t) {
             return e.concat(t.mediaIds)
           }, [])
-          return Object(M.k)(e, t)
+          return Object(E.k)(e, t)
         },
         C = function (e) {
           var t = y.i(e),
             a = y.k(e)[t]
-          return Object(M.k)(e, a.mediaIds)
+          return Object(E.k)(e, a.mediaIds)
         },
         S = function (e, t) {
           var a, n
@@ -1330,10 +1431,10 @@
         },
         w = Object(_.a)()
           .propsFromState(function () {
-            return { initialMediaId: S, media: T }
+            return { initialMediaId: S, media: M }
           })
           .propsFromActions(function () {
-            return { setMediaMetadata: M.n, processMedia: M.f, updateMediaUpload: M.o }
+            return { setMediaMetadata: E.n, processMedia: E.f, updateMediaUpload: E.o }
           })
           .withAnalytics({ page: 'tabbed_media' }),
         I = a('jFmo'),
@@ -1434,9 +1535,9 @@
         b = a.n(g),
         y = a('9Xij'),
         _ = a('Zl35'),
-        M = a('epkG'),
-        T = a('I4+6'),
-        E = a('cm6r'),
+        E = a('epkG'),
+        M = a('I4+6'),
+        T = a('cm6r'),
         C = a('ZvMt'),
         S = a('rHpw'),
         w = a('97Jx'),
@@ -1521,7 +1622,7 @@
             intervalStrings: { display: 'flex', justifyContent: 'center' },
           }
         }),
-        W = function (e) {
+        F = function (e) {
           var t = e.duration,
             a = e.trimmerWidth,
             n = A(t, a),
@@ -1564,13 +1665,13 @@
             ),
           )
         },
-        F = a('Wms4'),
+        W = a('Wms4'),
         B = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
         V = 'decrease',
         z = 'increase',
         G = 'left',
-        K = 'right',
-        H = a('7ep7'),
+        H = 'right',
+        K = a('7ep7'),
         N = D.a.a394f904,
         q = D.a.f42c0c8f,
         Q = D.a.i667afe8,
@@ -1587,7 +1688,7 @@
               f()(
                 d()(e),
                 '_panResponders',
-                H.a.create({
+                K.a.create({
                   onStartShouldSetPanResponder: function () {
                     return !0
                   },
@@ -1633,7 +1734,7 @@
                   ? a
                     ? Y.rightScrubberRadius
                     : Y.leftScrubberRadius
-                  : t === K
+                  : t === H
                   ? a
                     ? Y.leftScrubberRadius
                     : Y.rightScrubberRadius
@@ -1655,7 +1756,7 @@
                     i = t.side,
                     o = t.style
                   return b.a.createElement(
-                    E.a,
+                    T.a,
                     I()(
                       {
                         accessibilityLabel: i === G ? Q : q,
@@ -1667,7 +1768,7 @@
                           text: N({ seconds: X(a / 1e3) }),
                         },
                         focusable: !0,
-                        interactiveStyles: T.a.generate({
+                        interactiveStyles: M.a.generate({
                           backgroundColor: S.a.theme.colors.primary,
                           color: S.a.theme.colors.primary,
                           customFocusBackgroundColor: S.a.theme.colors.primary,
@@ -1758,7 +1859,7 @@
               f()(
                 d()(e),
                 '_panResponderTermination',
-                H.a.create({
+                K.a.create({
                   onMoveShouldSetPanResponderCapture: function (t, a) {
                     var n = a.dx
                     return e._shouldTerminateChildrenPanResponders(n)
@@ -1823,7 +1924,7 @@
                     ],
                   },
                   b.a.createElement(
-                    F.a,
+                    W.a,
                     { background: 'maskColor', style: [ie.label, !a && ie.visibilityHidden] },
                     $({ timestamp: e._generateTimestampLabelString() }),
                   ),
@@ -1856,9 +1957,9 @@
                   var d = c
                   c <= 0 ? (d = 0) : i - l <= c && (d = i - l), o(G, d)
                 }
-                if (a === K) {
+                if (a === H) {
                   var u = c
-                  c >= r ? (u = r) : c - s <= l && (u = s + l), o(K, u)
+                  c >= r ? (u = r) : c - s <= l && (u = s + l), o(H, u)
                 }
               }),
               e
@@ -1900,7 +2001,7 @@
                       b.a.createElement(
                         j.a,
                         { style: ie.intervalsContainer },
-                        b.a.createElement(W, { duration: t, trimmerWidth: s }),
+                        b.a.createElement(F, { duration: t, trimmerWidth: s }),
                       ),
                       b.a.createElement(
                         b.a.Fragment,
@@ -1939,7 +2040,7 @@
                             onMoveChange: this._handlePanResponderChange,
                             onMoveEnd: this._handlePanResponderEnd,
                             onMoveStart: this._handlePanResponderGrant,
-                            side: K,
+                            side: H,
                             style: [ie.trimmerScrubber, f()({}, u, '-'.concat(c, 'px'))],
                           }),
                         ),
@@ -2005,7 +2106,7 @@
         se = a('mXq/'),
         ce = a('/run'),
         le = a('KwSe'),
-        de = new M.a({}),
+        de = new E.a({}),
         ue = (function (e) {
           m()(a, e)
           var t = h()(a)
@@ -2129,10 +2230,10 @@
                               function (t) {
                                 var a = t.playerApi
                                 return b.a.createElement(
-                                  E.a,
+                                  T.a,
                                   {
                                     focusable: !0,
-                                    interactiveStyles: T.a.generate({
+                                    interactiveStyles: M.a.generate({
                                       backgroundColor: S.a.theme.colors.transparent,
                                       color: S.a.theme.colors.primary,
                                       customFocusBackgroundColor: S.a.theme.colors.transparent,
@@ -2238,19 +2339,19 @@
         b = Object(v.f)(f, g),
         y = a('jHSc'),
         _ = a('3XMw'),
-        M = a.n(_),
-        T = a('Oib4'),
-        E = a('mN6z'),
+        E = a.n(_),
+        M = a('Oib4'),
+        T = a('mN6z'),
         C = a('2dXj'),
         S = a('MWbm'),
         w = a('4zmP'),
         I = a('/yvb'),
         x = a('rHpw'),
         k = a('7JQg'),
-        R = M.a.b772cd65,
-        A = M.a.c20dc653,
-        P = M.a.d1175c78,
-        D = M.a.ae0831ab
+        R = E.a.b772cd65,
+        A = E.a.c20dc653,
+        P = E.a.d1175c78,
+        D = E.a.ae0831ab
       function L(e) {
         var t = e.history,
           a = e.injections,
@@ -2272,7 +2373,7 @@
               }),
             )
           },
-          M = function () {
+          E = function () {
             var e = m
                 .map(function (e) {
                   return e.data.id_str
@@ -2283,7 +2384,7 @@
                   return e.data.id_str
                 })
                 .sort(),
-              a = e.length === t.length && Object(E.a)(e, t)
+              a = e.length === t.length && Object(T.a)(e, t)
             return c.a.createElement(
               S.a,
               { style: O.rightColumn },
@@ -2306,7 +2407,7 @@
                 backButtonType: 'close',
                 history: t,
                 onBackClick: x,
-                rightControl: M(),
+                rightControl: E(),
                 title: P,
               })
             },
@@ -2338,7 +2439,7 @@
                 ? c.a.createElement(
                     S.a,
                     { style: O.inlineCallout },
-                    c.a.createElement(w.a, { Icon: T.a, headline: A, type: 'warning' }),
+                    c.a.createElement(w.a, { Icon: M.a, headline: A, type: 'warning' }),
                   )
                 : null
             },
@@ -2386,7 +2487,7 @@
         _ = function (e, t) {
           return t.location && t.location.state && t.location.state.mediaId
         },
-        M = function (e, t) {
+        E = function (e, t) {
           var a = (function (e, t) {
             var a, n
             return null === (a = t.location) || void 0 === a || null === (n = a.state) || void 0 === n
@@ -2395,9 +2496,9 @@
           })(0, t)
           return Object(g.i)(e, a)
         },
-        T = Object(b.a)()
+        M = Object(b.a)()
           .propsFromState(function () {
-            return { media: M, initialMediaId: _ }
+            return { media: E, initialMediaId: _ }
           })
           .adjustStateProps(function (e) {
             var t = e.initialMediaId,
@@ -2408,7 +2509,7 @@
             return { setMediaMetadata: y.n, processMedia: y.f, updateMediaUpload: y.o }
           })
           .withAnalytics({ page: 'tabbed_media_dm' }),
-        E = a('jFmo'),
+        T = a('jFmo'),
         C = (function (e) {
           m()(a, e)
           var t = h()(a)
@@ -2424,14 +2525,14 @@
               {
                 key: 'render',
                 value: function () {
-                  return f.a.createElement(E.a, r()({}, this.props, { sensitiveMediaTabEnabled: !1 }))
+                  return f.a.createElement(T.a, r()({}, this.props, { sensitiveMediaTabEnabled: !1 }))
                 },
               },
             ]),
             a
           )
         })(f.a.Component)
-      t.default = T(C)
+      t.default = M(C)
     },
     jFmo: function (e, t, a) {
       'use strict'
@@ -2453,9 +2554,9 @@
         b = a.n(g),
         y = a('2VqO'),
         _ = a.n(y),
-        M = a('KEM+'),
-        T = a.n(M),
-        E = (a('hBpG'), a('7x/C'), a('jwue'), a('+oxZ'), a('lTEL'), a('LqLs'), a('87if'), a('kYxP'), a('jHSc')),
+        E = a('KEM+'),
+        M = a.n(E),
+        T = (a('hBpG'), a('7x/C'), a('jwue'), a('+oxZ'), a('lTEL'), a('LqLs'), a('87if'), a('kYxP'), a('jHSc')),
         C = a('3XMw'),
         S = a.n(C),
         w = a('oQhu'),
@@ -2487,14 +2588,14 @@
             }
           })
           .withAnalytics(),
-        W = a('eyty'),
-        F = a('m3Bd'),
-        B = a.n(F),
+        F = a('eyty'),
+        W = a('m3Bd'),
+        B = a.n(W),
         V = (a('7xRU'), a('pHub')),
         z = a('62wY'),
         G = 'fileInput',
-        K = a('MWbm'),
-        H = a('/Imo'),
+        H = a('MWbm'),
+        K = a('/Imo'),
         N = a('rHpw'),
         q = ['icon', 'style', 'withIcon'],
         Q = o.a.createElement(V.a, null),
@@ -2506,10 +2607,10 @@
             i = B()(e, q),
             s = z.a.join(',')
           return o.a.createElement(
-            K.a,
+            H.a,
             null,
             o.a.createElement(
-              H.a,
+              K.a,
               r()({}, i, { accept: s, icon: n ? t : void 0, style: [Y.button, a], testID: G, type: 'primaryFilled' }),
               X,
             ),
@@ -2534,16 +2635,16 @@
             for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              T()(f()(e), '_renderSubtitlesPickerButton', function () {
+              M()(f()(e), '_renderSubtitlesPickerButton', function () {
                 return o.a.createElement(Z, { onChange: e._handleAddMediaFiles, type: 'brandText' })
               }),
-              T()(f()(e), '_renderSubtitlesRemovalButton', function () {
+              M()(f()(e), '_renderSubtitlesRemovalButton', function () {
                 return o.a.createElement($.a, { onPress: e._handleRemoveSubtitles, type: 'destructiveOutlined' }, ne)
               }),
-              T()(f()(e), '_handleRemoveSubtitles', function () {
+              M()(f()(e), '_handleRemoveSubtitles', function () {
                 ;(0, e.props.onRemove)()
               }),
-              T()(f()(e), '_handleAddMediaFiles', function (t) {
+              M()(f()(e), '_handleAddMediaFiles', function (t) {
                 var a = e.props,
                   n = a.addMedia,
                   r = a.analytics,
@@ -2551,7 +2652,7 @@
                   o = a.languageName,
                   s = a.onChange
                 r.scribe({ element: 'subtitles_upload', action: 'click' }),
-                  n(t, { location: W.d.Tweet }).then(function (e) {
+                  n(t, { location: F.d.Tweet }).then(function (e) {
                     s(e[0], i, o)
                   })
               }),
@@ -2573,15 +2674,15 @@
                 value: function () {
                   var e = this.props.subtitles
                   return o.a.createElement(
-                    K.a,
+                    H.a,
                     { style: ie.root },
                     o.a.createElement(
-                      K.a,
+                      H.a,
                       { style: ie.attachmentContainer },
                       o.a.createElement(ee.b, { size: 'title3', style: ie.header, weight: 'heavy' }, te),
                       o.a.createElement(ee.b, { size: 'body', style: ie.body }, ae),
                       o.a.createElement(
-                        K.a,
+                        H.a,
                         { style: ie.buttonWrapper },
                         e ? this._renderSubtitlesRemovalButton() : this._renderSubtitlesPickerButton(),
                       ),
@@ -2617,9 +2718,9 @@
         be = S.a.i2209530,
         ye = S.a.b772cd65,
         _e = S.a.e0342f98,
-        Me = S.a.e7048e73,
-        Te = S.a.dd4a83a5,
-        Ee = 'subtitles',
+        Ee = S.a.e7048e73,
+        Me = S.a.dd4a83a5,
+        Te = 'subtitles',
         Ce = 'trimmer',
         Se = 'sensitive_media',
         we = (function (e) {
@@ -2629,8 +2730,8 @@
             var n
             m()(this, a),
               (n = t.call(this, e)),
-              T()(f()(n), '_videoTrimmerRef', o.a.createRef()),
-              T()(
+              M()(f()(n), '_videoTrimmerRef', o.a.createRef()),
+              M()(
                 f()(n),
                 '_getMemoizedCurrentTabMetadata',
                 Object(w.a)(function (e, t, a) {
@@ -2638,13 +2739,13 @@
                     case Ce:
                       if (t) return { namespace: pe, title: ve, renderer: n._renderTrimmerTab }
                     case Se:
-                      if (a) return { namespace: he, title: Te, renderer: n._renderSensitiveMediaTab }
+                      if (a) return { namespace: he, title: Me, renderer: n._renderSensitiveMediaTab }
                     default:
                       return { namespace: me, title: fe, renderer: n._renderSubtitlesTab }
                   }
                 }),
               ),
-              T()(f()(n), '_renderSegmentedControl', function () {
+              M()(f()(n), '_renderSegmentedControl', function () {
                 var e,
                   t = n.props,
                   a = t.isVideoTrimmerEnabled,
@@ -2656,10 +2757,10 @@
                   o.a.Fragment,
                   null,
                   s.length > 1 ? o.a.createElement(se.a, { accessibilityLabel: ve, links: s }) : null,
-                  o.a.createElement(K.a, { style: k.a.segmentedControlChildren }, c.renderer()),
+                  o.a.createElement(H.a, { style: k.a.segmentedControlChildren }, c.renderer()),
                 )
               }),
-              T()(f()(n), '_renderTrimmerTab', function () {
+              M()(f()(n), '_renderTrimmerTab', function () {
                 var e = n._getCurrentMediaItem(),
                   t = n.state.trimData
                 if (null != e && e.mediaFile && e.mediaFile instanceof R.c) {
@@ -2671,13 +2772,13 @@
                       width: a.width,
                     }
                   return o.a.createElement(
-                    K.a,
+                    H.a,
                     { style: k.a.videoTrimmerWrapper },
                     o.a.createElement(ce.a, { defaultTrimData: t, ref: n._videoTrimmerRef, video: r }),
                   )
                 }
               }),
-              T()(f()(n), '_addTrimDataToState', function () {
+              M()(f()(n), '_addTrimDataToState', function () {
                 var e,
                   t = null === (e = n._videoTrimmerRef.current) || void 0 === e ? void 0 : e.getTrimData()
                 null != t &&
@@ -2686,7 +2787,7 @@
                   t.startTime &&
                   n.setState({ trimData: { endTime: t.endTime, startTime: t.startTime } })
               }),
-              T()(f()(n), '_saveTrimData', function () {
+              M()(f()(n), '_saveTrimData', function () {
                 var e,
                   t = n.props,
                   a = t.processMedia,
@@ -2700,7 +2801,7 @@
                   (r(d()(d()({}, i), {}, { trimData: { endTime: o.endTime / 1e3, startTime: o.startTime / 1e3 } })),
                   a(i.id))
               }),
-              T()(f()(n), '_renderSubtitlesTab', function () {
+              M()(f()(n), '_renderSubtitlesTab', function () {
                 var e = n.props,
                   t = e.history,
                   a = e.initialMediaId,
@@ -2716,7 +2817,7 @@
                   subtitles: s,
                 })
               }),
-              T()(f()(n), '_renderSensitiveMediaTab', function () {
+              M()(f()(n), '_renderSensitiveMediaTab', function () {
                 var e = n.state.sensitiveMediaWarning,
                   t = n._getCurrentMediaItem()
                 return o.a.createElement(x.a, {
@@ -2725,10 +2826,10 @@
                   onWarningChange: n._handleSensitiveWarningChange,
                 })
               }),
-              T()(f()(n), '_renderAppBarRightControl', function () {
+              M()(f()(n), '_renderAppBarRightControl', function () {
                 var e = n.props.isVideoTrimmerEnabled
                 return o.a.createElement(
-                  K.a,
+                  H.a,
                   { style: k.a.rightControl },
                   o.a.createElement(
                     $.a,
@@ -2737,21 +2838,21 @@
                   ),
                 )
               }),
-              T()(f()(n), '_getCurrentMediaItem', function () {
+              M()(f()(n), '_getCurrentMediaItem', function () {
                 var e = n.props,
                   t = e.initialMediaId
                 return e.media.find(function (e) {
                   return e.id === t
                 })
               }),
-              T()(f()(n), '_handleEndEditingClick', function () {
+              M()(f()(n), '_handleEndEditingClick', function () {
                 var e = n.props,
                   t = e.history,
                   a = e.isVideoTrimmerEnabled,
                   r = e.sensitiveMediaTabEnabled
                 a && n._saveTrimData(), r && n._saveSensitiveMediaWarning(), t.goBack()
               }),
-              T()(f()(n), '_saveSubtitles', function (e) {
+              M()(f()(n), '_saveSubtitles', function (e) {
                 var t = n.props,
                   a = t.media,
                   r = t.setMediaMetadata,
@@ -2761,26 +2862,26 @@
                   r(t.id, d()(d()({}, o), {}, { subtitles: e }))
                 })
               }),
-              T()(f()(n), '_handleSubtitlesChange', function (e, t, a) {
+              M()(f()(n), '_handleSubtitlesChange', function (e, t, a) {
                 n.props.analytics.scribe({ element: 'subtitles_upload', action: 'add' }),
                   n._saveSubtitles({ lang: t, upload: e, displayName: a || _e })
               }),
-              T()(f()(n), '_handleSubtitlesRemove', function () {
+              M()(f()(n), '_handleSubtitlesRemove', function () {
                 n.props.analytics.scribe({ element: 'subtitles_upload', action: 'remove' }), n._saveSubtitles(void 0)
               }),
-              T()(f()(n), '_saveSensitiveMediaWarning', function () {
+              M()(f()(n), '_saveSensitiveMediaWarning', function () {
                 var e = n.props.setMediaMetadata,
                   t = n.state.sensitiveMediaWarning,
                   a = n._getCurrentMediaItem()
                 a && e(a.id, d()(d()({}, a.mediaMetadata), {}, { sensitiveMediaWarning: t }))
               }),
-              T()(f()(n), '_handleSensitiveWarningChange', function (e, t) {
+              M()(f()(n), '_handleSensitiveWarningChange', function (e, t) {
                 n.setState(function (a) {
                   var n = a.sensitiveMediaWarning
                   return t ? n.add(e) : n.delete(e), { sensitiveMediaWarning: n }
                 })
               }),
-              T()(f()(n), '_handleClickSensitiveMediaTab', function () {
+              M()(f()(n), '_handleClickSensitiveMediaTab', function () {
                 var e = n.props.analytics
                 n._addTrimDataToState(), e.scribePageImpression()
               })
@@ -2820,7 +2921,7 @@
                     I.c,
                     { namespace: s.namespace },
                     o.a.createElement(
-                      E.b,
+                      T.b,
                       {
                         backButtonType: 'back',
                         containerStyle: k.a.root,
@@ -2852,7 +2953,7 @@
                         to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Ce }) }),
                         label: o.a.createElement(le.a, null),
                         key: Ce,
-                        accessibilityLabel: Me,
+                        accessibilityLabel: Ee,
                         isActive: function () {
                           var e
                           return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Ce
@@ -2860,13 +2961,13 @@
                       }),
                     (null == s || null === (t = s.originalMediaFile) || void 0 === t ? void 0 : t.isVideo) &&
                       c.push({
-                        to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Ee }) }),
+                        to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Te }) }),
                         label: o.a.createElement(de.a, null),
-                        key: Ee,
+                        key: Te,
                         accessibilityLabel: ge,
                         isActive: function () {
                           var e
-                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Ee
+                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Te
                         },
                         onClick: this._addTrimDataToState,
                       }),
@@ -2875,7 +2976,7 @@
                         to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Se }) }),
                         label: o.a.createElement(ue.a, null),
                         key: Se,
-                        accessibilityLabel: Te,
+                        accessibilityLabel: Me,
                         isActive: function () {
                           var e
                           return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Se

@@ -212,12 +212,12 @@
         m = n.n(h),
         v = n('1Pcy'),
         p = n.n(v),
-        y = n('5Yy7'),
-        g = n.n(y),
+        g = n('5Yy7'),
+        y = n.n(g),
         _ = n('2VqO'),
-        k = n.n(_),
-        w = n('KEM+'),
-        S = n.n(w),
+        w = n.n(_),
+        k = n('KEM+'),
+        S = n.n(k),
         j =
           (n('z84I'),
           n('ho0z'),
@@ -239,8 +239,8 @@
         T = n('MWbm'),
         P = E.a.generate({ backgroundColor: 'transparent', color: I.a.theme.colors.primary }),
         D = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             var e
             f()(this, n)
@@ -278,7 +278,7 @@
                       s = t.isPressed
                     return C.a.createElement(
                       T.a,
-                      { style: F.container },
+                      { style: x.container },
                       C.a.createElement(
                         T.a,
                         {
@@ -287,8 +287,8 @@
                           onClick: e._handleClick,
                           onKeyDown: i ? e._handleKeyDown : void 0,
                           style: [
-                            F.iconWrapper,
-                            a || o ? void 0 : F.faded,
+                            x.iconWrapper,
+                            a || o ? void 0 : x.faded,
                             P.transitionStyle,
                             a && P.hoverStyle,
                             s && P.pressedStyle,
@@ -298,7 +298,7 @@
                         n,
                       ),
                       C.a.createElement(T.a, {
-                        style: [F.border, o ? { backgroundColor: I.a.theme.colors.primary } : null],
+                        style: [x.border, o ? { backgroundColor: I.a.theme.colors.primary } : null],
                       }),
                     )
                   })
@@ -308,7 +308,7 @@
             n
           )
         })(C.a.PureComponent),
-        F = I.a.create(function (e) {
+        x = I.a.create(function (e) {
           return {
             container: { flex: 1 },
             iconWrapper: { width: '100%', alignItems: 'center', paddingVertical: e.spaces.space4 },
@@ -316,7 +316,7 @@
             faded: { filter: 'grayscale(100%) contrast(80%)', opacity: 0.5 },
           }
         }),
-        x = D,
+        F = D,
         L = n('a6L8'),
         O = {
           people: '😀',
@@ -330,8 +330,8 @@
           recent: '🕑',
         },
         H = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             return f()(this, n), t.apply(this, arguments)
           }
@@ -358,7 +358,7 @@
                         u = !!n && t.id === n.id
                       return o
                         ? null
-                        : C.a.createElement(x, {
+                        : C.a.createElement(F, {
                             category: t,
                             icon: e._getIcon(s, c),
                             isActive: u,
@@ -392,8 +392,8 @@
         K = n.n(N),
         V = (n('5BYb'), n('uFXj'), n('VbCG')),
         W = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             var e
             f()(this, n)
@@ -499,8 +499,8 @@
         X = n('7nmT'),
         Q = n.n(X),
         $ = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             return f()(this, n), t.apply(this, arguments)
           }
@@ -545,8 +545,8 @@
         se = ['activeSkinTone', 'emoji'],
         ce = ['activeSkinTone', 'emoji', 'onSelect'],
         le = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             var e
             f()(this, n)
@@ -699,8 +699,8 @@
             : C.a.createElement(ve, u()({}, e, { ref: t }))
         }),
         ve = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n(e) {
             var o
             return (
@@ -841,7 +841,7 @@
                     var m = !!h.skin_variations,
                       v = r.spriteSheetColumns,
                       p = r.spriteSheetRows,
-                      y = {
+                      g = {
                         ariaDescendantId: d === i ? o : void 0,
                         emoji: h,
                         onFocus: a,
@@ -854,7 +854,7 @@
                     return C.a.createElement(
                       T.a,
                       { key: h.unified, ref: d === i ? c : void 0, style: pe.rowItem },
-                      m ? C.a.createElement(he, u()({}, y, { activeSkinTone: n })) : C.a.createElement(q, y),
+                      m ? C.a.createElement(he, u()({}, g, { activeSkinTone: n })) : C.a.createElement(q, g),
                     )
                   })
                 },
@@ -877,10 +877,10 @@
             spacer: { alignSelf: 'center', margin: V.c.EmojiGutter, height: V.c.EmojiHeight, width: V.c.EmojiWidth },
           }
         }),
-        ye = n('zrc3'),
-        ge = n('Myq3'),
+        ge = n('zrc3'),
+        ye = n('Myq3'),
         _e = n('EhiH'),
-        ke = (function () {
+        we = (function () {
           function e(t, n, o) {
             f()(this, e), (this._categories = t), (this._rowSize = o), (this._emojis = n)
           }
@@ -889,7 +889,7 @@
               {
                 key: 'getInitialFocus',
                 value: function () {
-                  var e = Object(ye.a)(this._categories, function (e) {
+                  var e = Object(ge.a)(this._categories, function (e) {
                     return e.emojis.length > 0
                   })
                   return this.formatFocusParams(0, 0, this._categories[e])
@@ -898,7 +898,7 @@
               {
                 key: 'getCategoryById',
                 value: function (e) {
-                  var t = Object(ye.a)(this._categories, function (t) {
+                  var t = Object(ge.a)(this._categories, function (t) {
                     return t.id === e
                   })
                   return this._categories[t]
@@ -908,10 +908,10 @@
                 key: 'getPreviousCategory',
                 value: function (e) {
                   if (e !== V.a.Search) {
-                    var t = Object(ye.a)(this._categories, function (t) {
+                    var t = Object(ge.a)(this._categories, function (t) {
                       return t.id === e
                     })
-                    return Object(ge.a)(this._categories.slice(0, t), function (e) {
+                    return Object(ye.a)(this._categories.slice(0, t), function (e) {
                       return e.emojis.length > 0
                     })
                   }
@@ -922,7 +922,7 @@
                 value: function (e) {
                   if (e !== V.a.Search) {
                     var t =
-                      Object(ye.a)(this._categories, function (t) {
+                      Object(ge.a)(this._categories, function (t) {
                         return t.id === e
                       }) + 1
                     return Object(_e.a)(this._categories.slice(t, this._categories.length), function (e) {
@@ -1039,9 +1039,20 @@
             e
           )
         })(),
-        we = n('xoZN'),
-        Se = (n('KqXw'), n('LJOr'), n('Ysgh'), n('tQbP'), n('s1N3')),
-        je = n('tn7R')
+        ke = n('xoZN'),
+        Se =
+          (n('KqXw'),
+          n('LJOr'),
+          n('iKE+'),
+          n('1LXv'),
+          n('e/gN'),
+          n('DZ+c'),
+          n('WNMA'),
+          n('Ysgh'),
+          n('TJCb'),
+          n('tQbP'),
+          n('tn7R')),
+        je = n('s1N3')
       function Ce(e, t) {
         for (var n = a()(t), o = 0, r = e; o < n.length; ) {
           var i = r.children[n[o]]
@@ -1070,24 +1081,44 @@
         return (
           (function e(t) {
             t.results.length && i.push.apply(i, a()(t.results)),
-              Object(je.a)(t.children).forEach(function (t) {
+              Object(Se.a)(t.children).forEach(function (t) {
                 return e(t)
               })
           })(o),
-          Object(Se.a)(i)
+          Object(je.a)(i)
         )
       }
       var Re = (function () {
           function e(t) {
             f()(this, e),
               S()(this, '_getScoreAndInsertResults', function (e, t, n) {
-                var o = {}
-                for (var r in e) {
-                  var i = e[r],
-                    a = i.search.indexOf(t)
-                  if (-1 !== a) {
-                    var s = a + 1
-                    t === r && (s = 0), be(n, t, i), (o[r] = s)
+                var o = {},
+                  r = 0,
+                  i = new RegExp('\\b'.concat(t, '\\b'))
+                for (var a in e) {
+                  var s = e[a].search,
+                    c = s.match(i),
+                    l = s.split(',')
+                  l.shift()
+                  var u = Object(ge.a)(l, function (e) {
+                      return e === t
+                    }),
+                    d = -1 !== u ? u : l.toString().indexOf(t)
+                  c && (r = Math.max(r, d))
+                }
+                for (var f in e) {
+                  var h = e[f],
+                    m = h.search,
+                    v = m.match(i),
+                    p = m.split(',')
+                  p.shift()
+                  var g = Object(ge.a)(p, function (e) {
+                      return e === t
+                    }),
+                    y = -1 !== g ? g : p.toString().indexOf(t)
+                  if (-1 !== y) {
+                    var _ = y + 1
+                    t === f ? (_ = 0) : v || (_ += r), be(n, t, h), (o[f] = _)
                   }
                 }
                 return o
@@ -1133,8 +1164,8 @@
           )
         })(),
         Ie = function (e, t) {
-          var n = Object(Se.a)(e),
-            o = Object(Se.a)(t)
+          var n = Object(je.a)(e),
+            o = Object(je.a)(t)
           return n.filter(function (e) {
             return o.indexOf(e) >= 0
           })
@@ -1142,15 +1173,15 @@
         Te = Re,
         Pe = n('6OUF'),
         De = n('VwDm'),
-        Fe = n('fs1G'),
-        xe = n('VY6S'),
+        xe = n('fs1G'),
+        Fe = n('VY6S'),
         Le = C.a.forwardRef(function (e, t) {
           var n = e.autoFocus,
             o = void 0 !== n && n,
             r = e.maxResults,
             i = void 0 === r ? 75 : r,
             a = e.onSearch,
-            s = void 0 === a ? Fe.a : a,
+            s = void 0 === a ? xe.a : a,
             c = e.data,
             l = e.ariaActiveDescendant,
             u = e.categoriesDomId,
@@ -1163,7 +1194,7 @@
             ),
             h = C.a.useMemo(
               function () {
-                return Object(xe.a)(function (e) {
+                return Object(Fe.a)(function (e) {
                   var t = f.search(e, { maxResults: i })
                   s(e, t)
                 }, 100)
@@ -1210,8 +1241,8 @@
         He = C.a.memo(Le),
         Me = n('IMYl'),
         Ae = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             var e
             f()(this, n)
@@ -1332,8 +1363,8 @@
         }),
         Be = Ae,
         Ue = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n() {
             var e
             f()(this, n)
@@ -1346,7 +1377,7 @@
                 return C.a.createElement(
                   T.a,
                   { accessibilityRole: 'radiogroup', style: Ne.palette },
-                  Object(je.a)(V.e).map(function (n) {
+                  Object(Se.a)(V.e).map(function (n) {
                     var o = n === t
                     return C.a.createElement(Be, {
                       accessibilityLabel: n.name,
@@ -1423,8 +1454,8 @@
         qe = [V.a.Search, V.a.Recent],
         Ye = 'emoji_picker_categories_dom_id',
         Ze = (function (e) {
-          g()(n, e)
-          var t = k()(n)
+          y()(n, e)
+          var t = w()(n)
           function n(e) {
             var o
             f()(this, n),
@@ -1641,7 +1672,7 @@
                       return e.unified
                     })
                   : []
-                Object(je.a)(o._categoryRefs).forEach(function (t) {
+                Object(Se.a)(o._categoryRefs).forEach(function (t) {
                   t && 'search' !== t.props.id && t.updateDisplay(!e)
                 }),
                   o.setState({ searchResults: n, query: e }),
@@ -1707,7 +1738,7 @@
               S()(p()(o), '_handleAnchorClick', function (e) {
                 o._shouldUpdateScrollPosition &&
                   ((o._shouldUpdateScrollPosition = !1),
-                  Object(je.a)(o._categoryRefs).forEach(function (e) {
+                  Object(Se.a)(o._categoryRefs).forEach(function (e) {
                     return e.updatePosition()
                   }))
                 var t = o._categoryRefs['category-'.concat(e.id)]
@@ -1741,7 +1772,7 @@
               (o._recentlyUsedCategoryInitialValue = { id: V.a.Recent, name: V.f.recentCategoryName, emojis: [] }),
               (o._defaultPreviewEmoji = o._uncompressedData.emojis[o.props.previewEmojiCodepoint]),
               o._categories.unshift(o._recentlyUsedCategoryInitialValue),
-              (o._focusHelper = new ke(o._categories, o._uncompressedData.emojis, e.rowSize)),
+              (o._focusHelper = new we(o._categories, o._uncompressedData.emojis, e.rowSize)),
               (o.state = {
                 activeCategory: o._categories[1],
                 activeSkinTone: V.e[e.defaultSkinTone],
@@ -1821,7 +1852,7 @@
                     })
                   }
                   ;(t.categories === o && e.rowSize === s) ||
-                    (this._focusHelper = new ke(o, this._uncompressedData.emojis, s))
+                    (this._focusHelper = new we(o, this._uncompressedData.emojis, s))
                 },
               },
               {
@@ -1851,7 +1882,7 @@
                     l = [r, i].concat(s),
                     u = [r, i, s[0]]
                   return C.a.createElement(
-                    we.a,
+                    ke.a,
                     { onKeyDown: this._handleKeyDown, style: Xe.root },
                     C.a.createElement(te, { style: Xe.searchSection }, this._renderSearch()),
                     C.a.createElement(te, { style: Xe.anchorsSection }, this._renderAnchors(l)),

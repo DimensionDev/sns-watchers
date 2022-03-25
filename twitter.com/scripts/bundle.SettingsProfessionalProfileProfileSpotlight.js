@@ -17,112 +17,114 @@
       'use strict'
       n.r(l),
         n.d(l, 'editableProfileModulesQuery', function () {
-          return v
+          return F
         }),
         n.d(l, 'ProfileSpotlightScreen', function () {
-          return E
+          return K
         })
-      n('z84I')
+      n('z84I'), n('jQ3i'), n('x4t0')
       var a,
         t = n('ERkP'),
         i = n.n(t),
         r = n('zrOZ'),
         s = n('v6aA'),
-        o = n('jHSc'),
-        u = n('3XMw'),
-        d = n.n(u),
-        c = n('Fr3L'),
-        p = n('9YVX'),
-        g = n('zCf4'),
-        m = n('IAZG'),
-        y = n('MWbm'),
-        f = n('t62R'),
-        b = n('CK8+'),
-        _ = n('rHpw'),
-        k = (n('enFi'), d.a.d4b6a6ef),
-        h = d.a.e2760643,
-        v = void 0 !== a ? a : (a = n('bl4H')),
-        F = { context: 'PROFILE_SPOTLIGHT_SCREEN' },
-        E = function () {
+        o = [],
+        u = n('jHSc'),
+        d = n('3XMw'),
+        c = n.n(d),
+        p = n('Fr3L'),
+        g = n('9YVX'),
+        m = n('zCf4'),
+        y = n('IAZG'),
+        f = n('MWbm'),
+        b = n('t62R'),
+        _ = n('CK8+'),
+        k = n('rHpw'),
+        v = (n('enFi'), c.a.d4b6a6ef),
+        h = c.a.e2760643,
+        F = void 0 !== a ? a : (a = n('bl4H')),
+        E = { context: 'PROFILE_SPOTLIGHT_SCREEN' },
+        K = function () {
           var e,
             l,
             n,
             a,
             t,
-            u = Object(g.f)(),
-            d = i.a.useContext(s.a).loggedInUserId || '',
-            _ = Object(m.a)(v, { userId: d }, { fetchPolicy: 'network-only' }),
-            E =
-              null == _ || null === (e = _.user) || void 0 === e || null === (l = e.result) || void 0 === l
+            d = Object(m.f)(),
+            c = i.a.useContext(s.a).loggedInUserId || '',
+            k = Object(y.a)(F, { userId: c }, { fetchPolicy: 'network-only' }),
+            K =
+              null == k || null === (e = k.user) || void 0 === e || null === (l = e.result) || void 0 === l
                 ? void 0
                 : l.editable_profilemodules,
-            w = Object(r.a)(
-              (null == E || null === (n = E.modules_for_display) || void 0 === n
+            C = Object(r.a)(
+              (null == K || null === (n = K.modules_for_display) || void 0 === n
                 ? void 0
                 : n.map(function (e) {
                     return e.module_id
                   })) || [],
             ),
-            C = null == E ? void 0 : E.configurable_modules_v1
-          if (!d) return u.push('/login'), null
-          var S = function () {
-            u.goBack({ backLocation: '/settings/professional_profile' })
+            S = null == K ? void 0 : K.configurable_modules_v1
+          if (!c) return d.push('/login'), null
+          var L = function () {
+            d.goBack({ backLocation: '/settings/professional_profile' })
           }
           return (
-            (null != _ &&
-              null !== (a = _.user) &&
+            (null != k &&
+              null !== (a = k.user) &&
               void 0 !== a &&
               null !== (t = a.result) &&
               void 0 !== t &&
               t.editable_profilemodules) ||
-              S(),
+              L(),
             i.a.createElement(
-              c.a,
-              { errorConfig: F },
+              p.a,
+              { errorConfig: E },
               i.a.createElement(
-                o.b,
-                { accessibilityHidden: !1, backButtonType: 'back', history: u, onBackClick: S, title: k },
+                u.b,
+                { accessibilityHidden: !1, backButtonType: 'back', history: d, onBackClick: L, title: v },
                 i.a.createElement(
-                  y.a,
-                  { style: K.container },
-                  null == C
+                  f.a,
+                  { style: w.container },
+                  null == S
                     ? void 0
-                    : C.map(function (e) {
-                        return (function (e) {
-                          if (e.module_data) {
-                            var l = e.module_data.module_id,
-                              n = e.title,
-                              a = e.subtitle,
-                              t = w.has(l)
+                    : S.map(function (e, l) {
+                        return (function (e, l) {
+                          var n,
+                            a = null === (n = e.module_data) || void 0 === n ? void 0 : n.module_id,
+                            t = e.title,
+                            r = e.subtitle,
+                            s = !!a,
+                            u = s && C.has(a)
+                          if (o.includes(e.module_type) || s)
                             return i.a.createElement(
-                              y.a,
-                              { accessibilityRole: 'label', key: l, testID: p.a.spotlightRow },
+                              f.a,
+                              { accessibilityRole: 'label', key: l, testID: g.a.spotlightRow },
                               i.a.createElement(
-                                y.a,
-                                { style: K.spotlightContainer },
-                                i.a.createElement(f.b, { weight: 'bold' }, n),
-                                i.a.createElement(b.a, { onValueChange: function () {}, value: t }),
+                                f.a,
+                                { style: w.spotlightContainer },
+                                i.a.createElement(b.b, { weight: 'bold' }, t),
+                                i.a.createElement(_.a, { onValueChange: function () {}, value: u }),
                               ),
                               i.a.createElement(
-                                y.a,
-                                { style: K.descriptionContainer },
-                                i.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, a),
+                                f.a,
+                                { style: w.descriptionContainer },
+                                i.a.createElement(b.b, { color: 'gray700', size: 'subtext2' }, r),
                               ),
                             )
-                          }
-                        })(e)
+                        })(e, l)
                       }),
                   i.a.createElement(
-                    y.a,
-                    { style: K.spotlightContainer },
-                    i.a.createElement(f.b, { color: 'gray700', size: 'subtext1' }, h),
+                    f.a,
+                    { style: w.spotlightContainer },
+                    i.a.createElement(b.b, { color: 'gray700', size: 'subtext1' }, h),
                   ),
                 ),
               ),
             )
           )
         },
-        K = _.a.create(function (e) {
+        w = k.a.create(function (e) {
           return {
             container: { paddingBottom: e.spaces.space64 },
             descriptionContainer: {
@@ -140,7 +142,7 @@
             },
           }
         })
-      l.default = E
+      l.default = K
     },
     bl4H: function (e, l, n) {
       'use strict'

@@ -34,6 +34,199 @@
       }
       t.default = n
     },
+    '0Yt+': function (e, t, a) {
+      'use strict'
+      var n = a('ERkP'),
+        i = a.n(n),
+        r = a('3XMw'),
+        l = a.n(r),
+        o = a('6s7X'),
+        s = a('rHpw'),
+        c = a('MWbm'),
+        u = a('t62R'),
+        d = a('/yvb'),
+        m = a('OiMc'),
+        p = l.a.affbaf62,
+        g = l.a.c388d026,
+        f = s.a.create(function (e) {
+          return {
+            popover: { padding: e.spaces.space32 },
+            popoverTitle: { marginBottom: e.spaces.space8 },
+            popoverText: { marginBottom: e.spaces.space24 },
+            iconInformation: {
+              color: e.colors.gray700,
+              fontSize: e.fontSizes.subtext3,
+              cursor: 'pointer',
+              marginLeft: e.spaces.space4,
+            },
+          }
+        }),
+        y = function (e) {
+          var t = e.label,
+            a = e.popover
+          return i.a.createElement(
+            c.a,
+            null,
+            i.a.createElement(
+              m.a,
+              {
+                preferredVerticalOrientation: 'up',
+                renderContent: function (e) {
+                  return i.a.createElement(
+                    c.a,
+                    { style: f.popover },
+                    i.a.createElement(
+                      c.a,
+                      { style: f.popoverTitle },
+                      i.a.createElement(u.b, { size: 'title3', weight: 'heavy' }, t),
+                    ),
+                    i.a.createElement(c.a, { style: f.popoverText }, a),
+                    i.a.createElement(d.a, { onPress: e, type: 'primaryOutlined' }, g),
+                  )
+                },
+                withArrow: !0,
+              },
+              i.a.createElement(o.a, { accessibilityLabel: p, accessibilityRole: 'tooltip', style: f.iconInformation }),
+            ),
+          )
+        },
+        b = a('wTX1'),
+        v = a('RjwM'),
+        w = a('7Mjr'),
+        k = a('WXWl'),
+        _ = l.a.i2785008,
+        h = l.a.d9687d23,
+        E = l.a.ac73eb5a,
+        I = l.a.c5a9f921,
+        T = function (e) {
+          var t = e.label,
+            a = e.popover
+          return t
+            ? i.a.createElement(
+                c.a,
+                { style: V.labelBar },
+                i.a.createElement(u.b, { color: 'gray700', size: 'subtext2', weight: 'medium' }, t),
+                a ? i.a.createElement(y, { label: t, popover: a }) : null,
+              )
+            : null
+        },
+        P = function (e) {
+          var t = e.unit
+          return t ? i.a.createElement(u.b, { color: 'gray700', style: V.unitText, weight: 'medium' }, t) : null
+        },
+        L = function (e) {
+          var t,
+            a,
+            n = e.trendValue
+          return void 0 === n
+            ? null
+            : ((n = Math.round(100 * n) / 100),
+              (t = _(n)),
+              (a = (function (e) {
+                if (e < 0) {
+                  var t = _(e)
+                  return h({ trendValueNegativePercent: t })
+                }
+                if (0 === e) return E
+                var a = _(e)
+                return I({ trendValuePositivePercent: a })
+              })(n)),
+              n < 0
+                ? i.a.createElement(
+                    c.a,
+                    { accessibilityLabel: a, style: V.trendBar },
+                    i.a.createElement(v.a, { style: V.trendIconNeg }),
+                    i.a.createElement(
+                      u.b,
+                      { accessibilityHidden: !0, color: 'red500', size: 'body', weight: 'medium' },
+                      t,
+                    ),
+                  )
+                : 0 === n
+                ? i.a.createElement(
+                    c.a,
+                    { accessibilityLabel: a, style: V.trendBar },
+                    i.a.createElement(w.a, { style: V.trendIconZero }),
+                    i.a.createElement(
+                      u.b,
+                      { accessibilityHidden: !0, color: 'gray700', size: 'body', weight: 'medium' },
+                      t,
+                    ),
+                  )
+                : i.a.createElement(
+                    c.a,
+                    { accessibilityLabel: a, style: V.trendBar },
+                    i.a.createElement(k.a, { style: V.trendIconPos }),
+                    i.a.createElement(
+                      u.b,
+                      { accessibilityHidden: !0, color: 'green500', size: 'body', weight: 'medium' },
+                      t,
+                    ),
+                  ))
+        },
+        V = s.a.create(function (e) {
+          return {
+            dataPoint: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start' },
+            labelBar: { display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: e.spaces.space2 },
+            valueBar: {
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'flex-end',
+              justifyContent: 'flex-end',
+              marginBottom: e.spaces.space4,
+            },
+            unitText: { marginLeft: e.spaces.space4, flexDirection: 'column' },
+            trendBar: { marginLeft: e.spaces.space4, flexDirection: 'row' },
+            trendIconPos: {
+              marginTop: e.spaces.space1,
+              marginBottom: e.spaces.space1,
+              marginRight: e.spaces.space2,
+              height: e.spaces.space16,
+              color: e.colors.green500,
+            },
+            trendIconZero: {
+              marginTop: e.spaces.space1,
+              marginBottom: e.spaces.space1,
+              marginRight: e.spaces.space2,
+              height: e.spaces.space16,
+              color: e.colors.gray700,
+            },
+            trendIconNeg: {
+              marginTop: e.spaces.space1,
+              marginBottom: e.spaces.space1,
+              marginRight: e.spaces.space2,
+              height: e.spaces.space16,
+              color: e.colors.red500,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.animated,
+          a = e.count,
+          n = e.label,
+          r = e.popover,
+          l = e.size,
+          o = e.subTextList,
+          s = e.trendValue,
+          d = e.unit,
+          m = e.value
+        return i.a.createElement(
+          c.a,
+          { style: V.dataPoint },
+          i.a.createElement(T, { label: n, popover: r }),
+          i.a.createElement(
+            c.a,
+            { style: V.valueBar },
+            t
+              ? i.a.createElement(b.a, { count: a, size: l, weight: 'bold' }, m)
+              : i.a.createElement(u.b, { size: l, weight: 'bold' }, m),
+            i.a.createElement(P, { unit: d }),
+            i.a.createElement(L, { trendValue: s }),
+          ),
+          o,
+        )
+      }
+    },
     '21nk': function (e, t, a) {
       'use strict'
       var n = a('I9iR'),
@@ -143,197 +336,6 @@
         }
       ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
-    '8bFt': function (e, t, a) {
-      'use strict'
-      var n = a('ERkP'),
-        i = a.n(n),
-        r = a('3XMw'),
-        l = a.n(r),
-        o = a('rHpw'),
-        s = a('MWbm'),
-        c = a('t62R'),
-        u = a('/yvb'),
-        d = a('OiMc'),
-        m = a('wTX1'),
-        p = a('6s7X'),
-        g = a('RjwM'),
-        f = a('7Mjr'),
-        y = a('WXWl'),
-        b = l.a.affbaf62,
-        v = l.a.c388d026,
-        w = l.a.i2785008,
-        k = l.a.d9687d23,
-        _ = l.a.ac73eb5a,
-        h = l.a.c5a9f921,
-        E = function (e) {
-          var t = e.label,
-            a = e.popover
-          return a
-            ? i.a.createElement(
-                s.a,
-                null,
-                i.a.createElement(
-                  d.a,
-                  {
-                    preferredVerticalOrientation: 'up',
-                    renderContent: function (e) {
-                      return i.a.createElement(
-                        s.a,
-                        { style: L.popover },
-                        i.a.createElement(
-                          s.a,
-                          { style: L.popoverTitle },
-                          i.a.createElement(c.b, { size: 'title3', weight: 'heavy' }, t),
-                        ),
-                        i.a.createElement(s.a, { style: L.popoverText }, a),
-                        i.a.createElement(u.a, { onPress: e, type: 'primaryOutlined' }, v),
-                      )
-                    },
-                    withArrow: !0,
-                  },
-                  i.a.createElement(p.a, {
-                    accessibilityLabel: b,
-                    accessibilityRole: 'tooltip',
-                    style: L.iconInformation,
-                  }),
-                ),
-              )
-            : null
-        },
-        I = function (e) {
-          var t = e.label,
-            a = e.popover
-          return t
-            ? i.a.createElement(
-                s.a,
-                { style: L.labelBar },
-                i.a.createElement(c.b, { color: 'gray700', size: 'subtext2', style: L.labelText, weight: 'medium' }, t),
-                i.a.createElement(E, { label: t, popover: a }),
-              )
-            : null
-        },
-        T = function (e) {
-          var t = e.unit
-          return t ? i.a.createElement(c.b, { color: 'gray700', style: L.unitText, weight: 'medium' }, t) : null
-        },
-        P = function (e) {
-          var t,
-            a,
-            n = e.trendValue
-          return void 0 === n
-            ? null
-            : ((n = Math.round(100 * n) / 100),
-              (t = w(n)),
-              (a = (function (e) {
-                if (e < 0) {
-                  var t = w(e)
-                  return k({ trendValueNegativePercent: t })
-                }
-                if (0 === e) return _
-                var a = w(e)
-                return h({ trendValuePositivePercent: a })
-              })(n)),
-              n < 0
-                ? i.a.createElement(
-                    s.a,
-                    { accessibilityLabel: a, style: L.trendBar },
-                    i.a.createElement(g.a, { style: L.trendIconNeg }),
-                    i.a.createElement(
-                      c.b,
-                      { accessibilityHidden: !0, color: 'red500', size: 'body', weight: 'medium' },
-                      t,
-                    ),
-                  )
-                : 0 === n
-                ? i.a.createElement(
-                    s.a,
-                    { accessibilityLabel: a, style: L.trendBar },
-                    i.a.createElement(f.a, { style: L.trendIconZero }),
-                    i.a.createElement(
-                      c.b,
-                      { accessibilityHidden: !0, color: 'gray700', size: 'body', weight: 'medium' },
-                      t,
-                    ),
-                  )
-                : i.a.createElement(
-                    s.a,
-                    { accessibilityLabel: a, style: L.trendBar },
-                    i.a.createElement(y.a, { style: L.trendIconPos }),
-                    i.a.createElement(
-                      c.b,
-                      { accessibilityHidden: !0, color: 'green500', size: 'body', weight: 'medium' },
-                      t,
-                    ),
-                  ))
-        },
-        L = o.a.create(function (e) {
-          return {
-            dataPoint: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start' },
-            labelBar: { display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: e.spaces.space2 },
-            labelText: { marginRight: e.spaces.space4 },
-            iconInformation: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, cursor: 'pointer' },
-            popover: { padding: e.spaces.space32 },
-            popoverTitle: { marginBottom: e.spaces.space8 },
-            popoverText: { marginBottom: e.spaces.space24 },
-            valueBar: {
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'flex-end',
-              justifyContent: 'flex-end',
-              marginBottom: e.spaces.space4,
-            },
-            unitText: { marginLeft: e.spaces.space4, flexDirection: 'column' },
-            trendBar: { marginLeft: e.spaces.space4, flexDirection: 'row' },
-            trendIconPos: {
-              marginTop: e.spaces.space1,
-              marginBottom: e.spaces.space1,
-              marginRight: e.spaces.space2,
-              height: e.spaces.space16,
-              color: e.colors.green500,
-            },
-            trendIconZero: {
-              marginTop: e.spaces.space1,
-              marginBottom: e.spaces.space1,
-              marginRight: e.spaces.space2,
-              height: e.spaces.space16,
-              color: e.colors.gray700,
-            },
-            trendIconNeg: {
-              marginTop: e.spaces.space1,
-              marginBottom: e.spaces.space1,
-              marginRight: e.spaces.space2,
-              height: e.spaces.space16,
-              color: e.colors.red500,
-            },
-          }
-        })
-      t.a = function (e) {
-        var t = e.animated,
-          a = e.count,
-          n = e.label,
-          r = e.popover,
-          l = e.size,
-          o = e.subTextList,
-          u = e.trendValue,
-          d = e.unit,
-          p = e.value
-        return i.a.createElement(
-          s.a,
-          { style: L.dataPoint },
-          i.a.createElement(I, { label: n, popover: r }),
-          i.a.createElement(
-            s.a,
-            { style: L.valueBar },
-            t
-              ? i.a.createElement(m.a, { count: a, size: l, weight: 'bold' }, p)
-              : i.a.createElement(c.b, { size: l, weight: 'bold' }, p),
-            i.a.createElement(T, { unit: d }),
-            i.a.createElement(P, { trendValue: u }),
-          ),
-          o,
-        )
-      }
-    },
     DL4F: function (e, t, a) {
       'use strict'
       a.r(t),
@@ -382,7 +384,7 @@
         S = function (e, t) {
           return Object(_.a)(e, L(0, t))
         },
-        R = Object(E.a)()
+        A = Object(E.a)()
           .propsFromState(function () {
             return {
               fetchStatus: F,
@@ -401,7 +403,7 @@
             }
           })
           .withAnalytics({ page: 'tweet', section: 'analytics', component: 'RwebConversationAnalytics' }),
-        A = a('v//M'),
+        R = a('v//M'),
         K = a('W5XZ'),
         D = a('jHSc'),
         O = a('KUGV'),
@@ -434,18 +436,18 @@
         var a = U(t)
         return 0 === a ? 0 : U(e) / a
       }
-      function J(e) {
+      function Y(e) {
         var t = U(e)
         return t >= 1e5 ? G(t) : Q(t)
       }
-      function Y(e) {
+      function J(e) {
         return null != e && e.value
           ? {
-              count: J(null == e ? void 0 : e.value.total),
+              count: Y(null == e ? void 0 : e.value.total),
               promotionPercentage: X(null == e ? void 0 : e.value.promoted, null == e ? void 0 : e.value.total),
             }
           : {
-              count: J(null == e ? void 0 : e.total_value),
+              count: Y(null == e ? void 0 : e.total_value),
               promotionPercentage: X(null == e ? void 0 : e.promoted_value, null == e ? void 0 : e.total_value),
             }
       }
@@ -472,7 +474,7 @@
         return new Date().toISOString()
       }
       var ee,
-        te = a('8bFt'),
+        te = a('0Yt+'),
         ae = function (e) {
           var t = e.label,
             a = e.metric,
@@ -489,7 +491,7 @@
             popover: n,
             size: 'title1',
             subTextList: s,
-            value: J(l),
+            value: Y(l),
           })
         },
         ne = a('MWbm'),
@@ -513,7 +515,7 @@
               popover: n,
               size: 'title3',
               subTextList: s,
-              value: J(l),
+              value: Y(l),
             }),
           )
         },
@@ -629,7 +631,7 @@
               ? void 0
               : y.datapoints_grid,
           )))
-        var R = [
+        var A = [
           k.a.createElement(re, { key: ge, label: ge, metric: h, popover: Ce(fe, v), showPromotionPercentages: v }),
           k.a.createElement(re, { key: Ie, label: Ie, metric: _, popover: Ce(Te, v), showPromotionPercentages: v }),
           k.a.createElement(re, { key: ye, label: ye, metric: E, popover: Ce(be, v), showPromotionPercentages: v }),
@@ -647,7 +649,7 @@
           ne.a,
           {
             style: [
-              Ae.grid,
+              Re.grid,
               { gridTemplateColumns: V ? ' 1fr 2fr' : '1fr' },
               { gridGap: x ? ie.a.theme.spaces.space24 : ie.a.theme.spaces.space40 },
               { marginTop: x ? ie.a.theme.spaces.space24 : ie.a.theme.spaces.space40 },
@@ -657,8 +659,8 @@
           k.a.createElement(ae, { label: me, metric: I, popover: Ce(pe, v), showPromotionPercentages: v }),
           k.a.createElement(
             ne.a,
-            { style: [Ae.minorDataPointsGrid, { gridGap: x ? ie.a.theme.spaces.space24 : ie.a.theme.spaces.space40 }] },
-            R.map(function (e, t) {
+            { style: [Re.minorDataPointsGrid, { gridGap: x ? ie.a.theme.spaces.space24 : ie.a.theme.spaces.space40 }] },
+            A.map(function (e, t) {
               return k.a.createElement(ne.a, { key: 'minorDataPoint'.concat(t) }, e)
             }),
           ),
@@ -675,7 +677,7 @@
                 {
                   color: 'primary900',
                   size: 'subtext3',
-                  style: [Ae.promotionLabel, Ae.popoverPromotionLabel],
+                  style: [Re.promotionLabel, Re.popoverPromotionLabel],
                   weight: 'bold',
                 },
                 Ve,
@@ -689,7 +691,7 @@
           i = t ? n : a
         return k.a.createElement(
           ne.a,
-          { accessibilityLabel: n, key: i, style: [Ae.subTextListItem, Ae.promotionLabel] },
+          { accessibilityLabel: n, key: i, style: [Re.subTextListItem, Re.promotionLabel] },
           k.a.createElement(
             se.b,
             { accessibilityHidden: !0, color: 'primary900', size: 'subtext3', weight: 'bold' },
@@ -697,8 +699,8 @@
           ),
         )
       }
-      var Re,
-        Ae = ie.a.create(function (e) {
+      var Ae,
+        Re = ie.a.create(function (e) {
           return {
             grid: { display: 'grid', marginBottom: e.spaces.space40 },
             minorDataPointsGrid: { display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' },
@@ -718,7 +720,7 @@
         Be = a('iEUn'),
         Ne = a('jlPL'),
         je = a('dFWS'),
-        He = void 0 !== Re ? Re : (Re = a('pYyV')),
+        He = void 0 !== Ae ? Ae : (Ae = a('pYyV')),
         ze = N.a.ib1f8491,
         qe = N.a.fbdb85f4,
         Me = N.a.d0eeb126,
@@ -772,13 +774,13 @@
               ? void 0
               : l.like_retweet_replies,
           )))
-        var m = Y(c),
+        var m = J(c),
           p = m.count,
           g = m.promotionPercentage,
-          f = Y(d),
+          f = J(d),
           y = f.count,
           b = f.promotionPercentage,
-          v = Y(u),
+          v = J(u),
           w = v.count,
           _ = v.promotionPercentage
         return k.a.createElement(
@@ -834,8 +836,8 @@
             promotionIcon: { fontSize: e.spaces.space4, color: e.colors.primary, marginRight: e.spaces.space4 },
           }
         }),
-        Je = a('97Jx'),
-        Ye = a.n(Je),
+        Ye = a('97Jx'),
+        Je = a.n(Ye),
         Ze = a('gmpV'),
         $e = a('876e'),
         et = a('JYMr'),
@@ -931,7 +933,7 @@
               },
             ],
           }
-        return k.a.createElement(tt.a, Ye()({}, l, { containerStyle: ut.infoItem }))
+        return k.a.createElement(tt.a, Je()({}, l, { containerStyle: ut.infoItem }))
       }
       var ut = ie.a.create(function (e) {
           return {
@@ -1074,7 +1076,7 @@
           r = {
             items: [{ label: k.a.createElement(se.b, { size: 'headline2', weight: 'heavy' }, kt), description: i }],
           }
-        var l = k.a.createElement(tt.a, Ye()({}, r, { containerStyle: Tt.infoItem })),
+        var l = k.a.createElement(tt.a, Je()({}, r, { containerStyle: Tt.infoItem })),
           o = null !== Object(O.a)(),
           s = ''
             .concat(e.tweetPermalink, '/')
@@ -1108,7 +1110,7 @@
         var r = {
             items: [{ label: k.a.createElement(se.b, { size: 'headline1', weight: 'heavy' }, Pt), description: i }],
           },
-          l = k.a.createElement(tt.a, Ye()({}, r, { containerStyle: Ct.infoItem }))
+          l = k.a.createElement(tt.a, Je()({}, r, { containerStyle: Ct.infoItem }))
         return k.a.createElement(yt, {
           buttonString: Vt,
           buttonTestID: e.buttonTestID,
@@ -1127,22 +1129,22 @@
           return { infoItem: { paddingHorizontal: '0px', paddingVertical: '0px' } }
         }),
         St = N.a.dcfb0332,
-        Rt = N.a.f96eec3c,
-        At = N.a.e9891f7c,
+        At = N.a.f96eec3c,
+        Rt = N.a.e9891f7c,
         Kt = N.a.i859a9d3
       function Dt(e) {
         var t = Object(vt.b)(),
           a = {
-            items: [{ label: k.a.createElement(se.b, { size: 'headline1', weight: 'heavy' }, St), description: Rt }],
+            items: [{ label: k.a.createElement(se.b, { size: 'headline1', weight: 'heavy' }, St), description: At }],
           }
-        var n = k.a.createElement(tt.a, Ye()({}, a, { containerStyle: Ot.infoItem })),
+        var n = k.a.createElement(tt.a, Je()({}, a, { containerStyle: Ot.infoItem })),
           i = null !== Object(O.a)(),
           r = ''
             .concat(e.tweetPermalink, '/')
             .concat(i ? wt.a.Webview : wt.a.Rweb, '/')
             .concat(wt.c.Intro)
         return k.a.createElement(yt, {
-          buttonString: At,
+          buttonString: Rt,
           expandButtonText: Kt,
           infoItemGroup: n,
           link: r,
@@ -1176,7 +1178,7 @@
           k.a.createElement(
             ne.a,
             { style: Qt.infoItemView },
-            k.a.createElement(tt.a, Ye()({}, a, { containerStyle: Qt.infoItem })),
+            k.a.createElement(tt.a, Je()({}, a, { containerStyle: Qt.infoItem })),
           ),
           k.a.createElement(
             ne.a,
@@ -1231,7 +1233,7 @@
           })),
         Ut = void 0 !== Mt ? Mt : (Mt = a('+s2u')),
         Xt = void 0 !== Wt ? Wt : (Wt = a('W08J'))
-      function Jt(e) {
+      function Yt(e) {
         var t,
           a,
           n,
@@ -1327,7 +1329,7 @@
             return null
         }
       }
-      var Yt,
+      var Jt,
         Zt,
         $t,
         ea = a('Ud88'),
@@ -1337,7 +1339,7 @@
         ia = a.n(na),
         ra = a('LLQb'),
         la = N.a.deaf5b15,
-        oa = void 0 !== Yt ? Yt : (Yt = a('2O3u')),
+        oa = void 0 !== Jt ? Jt : (Jt = a('2O3u')),
         sa = (void 0 !== Zt || (Zt = a('njVe')), void 0 !== $t ? $t : ($t = a('wfDE'))),
         ca = Object(aa.b)(sa, { errorConfig: { context: P } })
       function ua(e) {
@@ -1433,7 +1435,7 @@
                     ),
                     t || !E
                       ? null
-                      : k.a.createElement(Jt, {
+                      : k.a.createElement(Yt, {
                           campaignInfo: c.quick_promotion,
                           engagements: p,
                           impressions: f,
@@ -1694,7 +1696,7 @@
                     ),
                     t || !d
                       ? null
-                      : k.a.createElement(Jt, {
+                      : k.a.createElement(Yt, {
                           campaignInfo: u.quick_promotion,
                           engagements: null,
                           impressions: null,
@@ -1717,8 +1719,8 @@
         }),
         Ca = a('E0cF'),
         Sa = a('q9Zt'),
-        Ra = ['data'],
-        Aa = N.a.g9079b93,
+        Aa = ['data'],
+        Ra = N.a.g9079b93,
         Ka = N.a.a57daeb1,
         Da = N.a.deaf5b15,
         Oa = (function (e) {
@@ -1748,7 +1750,7 @@
                   r = e.context.featureSwitches.isTrue('responsive_web_tweet_analytics_m2_enabled'),
                   l = (i && Ca.a.getOriginalTweet(i)) || void 0
                 return !l || (l && l.user.id_str !== e.context.loggedInUserId)
-                  ? k.a.createElement(Sa.a, { onRetry: null, title: Aa })
+                  ? k.a.createElement(Sa.a, { onRetry: null, title: Ra })
                   : (e._scribeEligibility(),
                     k.a.createElement(
                       ne.a,
@@ -1799,7 +1801,7 @@
                   r = (n && Ca.a.getOriginalTweet(n)) || void 0,
                   o = H(e._dwellStartTime),
                   s = o.data,
-                  c = l()(o, Ra)
+                  c = l()(o, Aa)
                 a.scribe(i()(i()({}, c), {}, { data: i()(i()({}, s), {}, { items: r ? [M.a.getTweetItem(r)] : [] }) }))
               }),
               e
@@ -1843,7 +1845,7 @@
                       },
                       title: r ? null : Ka,
                     },
-                    k.a.createElement(A.a, { fetchStatus: t, render: this._render, retryMessage: Da }),
+                    k.a.createElement(R.a, { fetchStatus: t, render: this._render, retryMessage: Da }),
                   )
                 },
               },
@@ -1855,7 +1857,7 @@
       var Ba = ie.a.create(function (e) {
           return { topLevelView: { flex: 1 }, quoteTweet: { margin: e.spaces.space16, marginBottom: e.spaces.space12 } }
         }),
-        Na = R(Oa)
+        Na = A(Oa)
       t.default = Na
     },
     EhgS: function (e, t, a) {
@@ -2598,8 +2600,8 @@
         F = a('bCEw'),
         C = a.n(F),
         S = a('Ud88'),
-        R = a.n(S),
-        A = function (e) {
+        A = a.n(S),
+        R = function (e) {
           return (0, e.render)({ fetchStatus: E.a.LOADING, data: null, error: null, retry: I.a })
         },
         K = (function (e) {
@@ -2678,7 +2680,7 @@
                 u
                   ? v.a.createElement(
                       v.a.Suspense,
-                      { fallback: v.a.createElement(A, { render: l }) },
+                      { fallback: v.a.createElement(R, { render: l }) },
                       v.a.createElement(
                         K,
                         { errorHandler: m(t.errorConfig.options || {}), key: u.fetchKey, retry: f },
@@ -2697,7 +2699,7 @@
             n.fetchPolicy
             var r = n.render,
               l = n.variables,
-              o = R()(),
+              o = A()(),
               s = Object(T.useCreateLocalApiErrorHandler)(t.errorConfig.context),
               c = L()(l),
               u = i()(c, 1)[0],

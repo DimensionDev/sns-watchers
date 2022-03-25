@@ -10347,7 +10347,7 @@
             return { module: le, moduleFetchStatus: oe }
           })
           .propsFromActions(function () {
-            return { setCount: ie.f }
+            return { setCount: ie.g }
           })
           .withAnalytics({ page: 'list_management' }),
         ce = n('kGix'),

@@ -199,6 +199,107 @@
         o = r()(r()({}, i.a), {}, { pinToNewestWhenAtNewest: !0 })
       t.a = o
     },
+    '6vad': function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return p
+      })
+      n('yH/f')
+      var a = n('ERkP'),
+        r = n.n(a),
+        i = n('t62R'),
+        o = n('EHV7'),
+        l = n('rHpw'),
+        c = l.a.create(function (e) {
+          return {
+            icon: {
+              color: e.colors.primary,
+              height: e.fontSizes.title4,
+              paddingRight: e.spaces.space12,
+              width: e.fontSizes.title4,
+            },
+          }
+        }),
+        s = n('7Mjr'),
+        u = n('I4+6'),
+        d = n('cm6r'),
+        m = n('MWbm'),
+        p = Object.freeze({ TopicFilled: 'TOPIC_FILLED' })
+      var h = l.a.create(function (e) {
+        return {
+          root: {
+            justifyContent: 'space-between',
+            paddingHorizontal: e.componentDimensions.gutterHorizontal,
+            paddingVertical: e.componentDimensions.gutterVertical,
+          },
+          mainContent: { flexDirection: 'row' },
+          subtext: { alignSelf: 'flex-start' },
+          withSubtext: { alignSelf: 'center' },
+          icon: { alignSelf: 'flex-start', height: e.spaces.space20, justifyContent: 'center' },
+          iconArrow: { color: e.colors.text },
+          rightControlGroup: { flexDirection: 'row', justifyContent: 'flex-end', flexGrow: 1, alignSelf: 'center' },
+        }
+      })
+      t.b = function (e) {
+        var t = e.icon,
+          n = e.landingUrl,
+          a = e.nativeID,
+          v = e.rightControl,
+          f = e.style,
+          b = e.subtext,
+          _ = e.testID,
+          y = e.text,
+          g = (function (e) {
+            switch (e) {
+              case p.TopicFilled:
+                return r.a.createElement(o.a, { style: c.icon })
+              default:
+                return null
+            }
+          })(t),
+          E = b ? null : h.withSubtext,
+          I = u.a.generate({
+            backgroundColor: l.a.theme.colors.gray0,
+            color: l.a.theme.colors.cellBackground,
+            customFocusBackgroundColor: l.a.theme.colors.gray0,
+            customHoverBackgroundColor: l.a.theme.colors.gray0,
+            customPressedBackgroundColor: l.a.theme.colors.gray0,
+          })
+        return r.a.createElement(
+          d.a,
+          {
+            interactiveStyles: n ? I : null,
+            link: null == n ? void 0 : n.url,
+            nativeID: a,
+            style: [h.root, f],
+            testID: _,
+          },
+          r.a.createElement(
+            m.a,
+            { accessibilityLevel: 2, accessibilityRole: 'heading', style: h.mainContent },
+            r.a.createElement(m.a, { style: h.icon }, g),
+            r.a.createElement(
+              i.b,
+              { numberOfLines: 3, size: 'headline1', style: E, weight: 'heavy', withHashflags: !0 },
+              y,
+            ),
+            r.a.createElement(
+              m.a,
+              { style: h.rightControlGroup },
+              n ? r.a.createElement(m.a, { style: E }, r.a.createElement(s.a, { style: h.iconArrow })) : null,
+              v ? r.a.createElement(m.a, null, v) : null,
+            ),
+          ),
+          b
+            ? r.a.createElement(
+                i.b,
+                { color: 'gray700', numberOfLines: 2, size: 'subtext2', style: h.subtext, withHashflags: !0 },
+                b,
+              )
+            : null,
+        )
+      }
+    },
     '7sPD': function (e, t, n) {
       'use strict'
       n.r(t),
@@ -231,7 +332,7 @@
         w = function (e, t, n) {
           return { isFullPageInterstitial: e, type: t, screenName: n }
         },
-        T = function (e) {
+        D = function (e) {
           var t = e.isBlockedBy,
             n = void 0 !== t && t,
             a = e.isBlocking,
@@ -247,9 +348,9 @@
             c.length ? c : void 0
           )
         },
-        D = n('lPpt'),
-        P = n('tn7R'),
-        x = n('wrlS'),
+        T = n('lPpt'),
+        x = n('tn7R'),
+        P = n('wrlS'),
         A = n('G6rE'),
         O = n('RhWx'),
         L = n.n(O),
@@ -329,20 +430,20 @@
           return [].concat(null === (n = t.location.query) || void 0 === n ? void 0 : n.timeline)[0]
         },
         K = function (e, t) {
-          return D.a.select(e, Y(0, t))
+          return T.a.select(e, Y(0, t))
         },
         Q = function (e, t) {
-          return D.a.selectFetchStatus(e, Y(0, t))
+          return T.a.selectFetchStatus(e, Y(0, t))
         },
         J = function (e, t) {
-          var n = ((D.a.selectErrors(e) || {})[Y(0, t)] || {}).errors,
+          var n = ((T.a.selectErrors(e) || {})[Y(0, t)] || {}).errors,
             a = (void 0 === n ? [] : n).find(function (e) {
               return e.code === y.a.BlockedUserError
             })
           return a && a.message && a.message.replace('@', '')
         },
         Z = function (e, t) {
-          return D.a.selectIsTOO(e, Y(0, t))
+          return T.a.selectIsTOO(e, Y(0, t))
         },
         $ = function (e, t) {
           var n
@@ -374,7 +475,7 @@
               promotedCardState: $,
               loggedInUser: A.e.selectLoggedInUser,
               isTOO: Z,
-              featureSwitches: x.d,
+              featureSwitches: P.d,
               hasSeenEvent: ee,
             }
           })
@@ -403,7 +504,7 @@
                       timelineLinks: [],
                     },
                     hasSeenEvent: !1,
-                    interstitialOrderToDisplay: t ? T({ isBlockedBy: !0, screenName: t }) : void 0,
+                    interstitialOrderToDisplay: t ? D({ isBlockedBy: !0, screenName: t }) : void 0,
                     isTOO: !1,
                     isUserSuspended: !1,
                   },
@@ -424,7 +525,7 @@
                   i = a.attribution_user_id
                 return (
                   !!i &&
-                  !Object(P.a)(r || {}).some(function (e) {
+                  !Object(x.a)(r || {}).some(function (e) {
                     return e.id_str === i
                   })
                 )
@@ -434,7 +535,7 @@
               E = y.blocking,
               I = y.screen_name,
               C = n.liveEventDetails.sensitive,
-              k = T({ isBlockedBy: g, isBlocking: E, isSensitive: C, screenName: I })
+              k = D({ isBlockedBy: g, isBlocking: E, isSensitive: C, screenName: I })
             return r()(
               r()(r()({}, m), te(u)),
               {},
@@ -457,11 +558,11 @@
             return {
               addSeenEventId: H,
               createLocalApiErrorHandler: Object(G.createLocalApiErrorHandlerWithContextFactory)('LIVE_EVENT_SCREEN'),
-              fetchLiveEvent: D.a.fetchOne,
+              fetchLiveEvent: T.a.fetchOne,
               fetchSeenEventIds: z,
               googleAnalyticsPageView: C.a,
-              remindMeButtonSubscribe: D.a.subscribe,
-              remindMeButtonUnsubscribe: D.a.unSubscribe,
+              remindMeButtonSubscribe: T.a.subscribe,
+              remindMeButtonUnsubscribe: T.a.unSubscribe,
               scribeAction: C.c,
               scribePageImpression: C.d,
             }
@@ -566,10 +667,10 @@
                     S,
                     k,
                     w,
-                    T,
                     D,
-                    P,
+                    T,
                     x,
+                    P,
                     A,
                     O,
                     L,
@@ -662,16 +763,16 @@
                     {
                       name: 'twitter:text:event_thumbnail:media:size:crops:16x9:h',
                       content:
-                        (null === (w = n.slate) || void 0 === w || null === (T = w.cropCandidates) || void 0 === T
+                        (null === (w = n.slate) || void 0 === w || null === (D = w.cropCandidates) || void 0 === D
                           ? void 0
-                          : T.length) && (null === (D = n.slate) || void 0 === D ? void 0 : D.cropCandidates[0].h),
+                          : D.length) && (null === (T = n.slate) || void 0 === T ? void 0 : T.cropCandidates[0].h),
                     },
                     {
                       name: 'twitter:text:event_thumbnail:media:size:crops:16x9:x',
                       content:
-                        (null === (P = n.slate) || void 0 === P || null === (x = P.cropCandidates) || void 0 === x
+                        (null === (x = n.slate) || void 0 === x || null === (P = x.cropCandidates) || void 0 === P
                           ? void 0
-                          : x.length) && (null === (A = n.slate) || void 0 === A ? void 0 : A.cropCandidates[0].x),
+                          : P.length) && (null === (A = n.slate) || void 0 === A ? void 0 : A.cropCandidates[0].x),
                     },
                     {
                       name: 'twitter:text:event_thumbnail:media:size:crops:16x9:y',
@@ -771,10 +872,10 @@
             I
           )
         },
-        Te = n('9Bb1'),
-        De = n('5S/X'),
-        Pe = n('XvPy'),
-        xe = n('Vgm9'),
+        De = n('9Bb1'),
+        Te = n('5S/X'),
+        xe = n('XvPy'),
+        Pe = n('Vgm9'),
         Ae = n('VTxf'),
         Oe = n('rJoH'),
         Le = n('yoO3'),
@@ -847,7 +948,7 @@
                 return _.a.createElement(
                   Be.a,
                   { collectionName: v },
-                  _.a.createElement(Pe.a, {
+                  _.a.createElement(xe.a, {
                     carousel: r,
                     fetchStatus: i,
                     history: o,
@@ -1070,7 +1171,7 @@
                   return _.a.createElement(
                     _.a.Fragment,
                     null,
-                    d ? _.a.createElement(Te.a, { description: d }) : null,
+                    d ? _.a.createElement(De.a, { description: d }) : null,
                     _.a.createElement(Oe.a, {
                       canonical: v,
                       description: d,
@@ -1089,7 +1190,7 @@
                       title: e,
                       type: 'article',
                     }),
-                    De.b && null != p && p.slate
+                    Te.b && null != p && p.slate
                       ? _.a.createElement(ie, { liveEventDetails: s, slate: null == p ? void 0 : p.slate })
                       : null,
                     _.a.createElement(g.a, { deepLink: h }),
@@ -1114,7 +1215,7 @@
                     _.a.createElement(Ce, { author: a, hashtag: c, id: i, title: o }),
                     t
                       ? null
-                      : _.a.createElement(xe.a, {
+                      : _.a.createElement(Pe.a, {
                           author: a,
                           eventId: i,
                           onPress: this._handleOverflowButtonClickScribe,
@@ -1417,7 +1518,7 @@
         S = n.n(C),
         k = (n('z84I'), n('/Ikv')),
         w = n('muX9'),
-        T = function (e) {
+        D = function (e) {
           return []
             .concat(
               ((n = e),
@@ -1460,22 +1561,22 @@
             )
           var t, n, a, r, i, o
         },
-        D = function (e) {
+        T = function (e) {
           return void 0 !== e.content ? f.a.createElement('meta', e) : null
         },
-        P = function (e) {
+        x = function (e) {
           return f.a.createElement.apply(
             f.a,
             [w.a, null].concat(
               S()(
                 (function (e) {
-                  return T(e).map(D)
+                  return D(e).map(T)
                 })(e),
               ),
             ),
           )
         },
-        x = n('6/RC'),
+        P = n('6/RC'),
         A = n('es0u'),
         O = (n('KqXw'), n('WNMA'), n('yiKp')),
         L = n.n(O),
@@ -1567,10 +1668,10 @@
         Se = ge.a.ac4c73d8,
         ke = ge.a.e39b368e,
         we = ge.a.f2382014,
-        Te = ge.a.e3aac82a,
-        De = ge.a.hd0bc1eb,
-        Pe = ge.a.bea1f26a,
-        xe = ge.a.jceadc3e,
+        De = ge.a.e3aac82a,
+        Te = ge.a.hd0bc1eb,
+        xe = ge.a.bea1f26a,
+        Pe = ge.a.jceadc3e,
         Ae = ge.a.d980e29e,
         Oe = ge.a.fc209bb7,
         Le = function (e, t) {
@@ -1595,16 +1696,16 @@
                   if (r)
                     switch (n) {
                       case g:
-                        return De({ name: r })
+                        return Te({ name: r })
                       case I:
                       case E:
-                        return Pe({ name: r })
+                        return xe({ name: r })
                       case y:
                       default:
-                        return xe
+                        return Pe
                     }
                 }
-                return xe
+                return Pe
               }),
               h()(c()(e), '_getName', function (e) {
                 var t = e.twitter_username,
@@ -1617,7 +1718,7 @@
               h()(c()(e), '_renderPrimaryContent', function () {
                 var t = e.props.fetchStatus
                 return f.a.createElement(ee.a, {
-                  accessibilityLabel: Te,
+                  accessibilityLabel: De,
                   fetchStatus: t,
                   onRequestRetry: e._handleFetchBroadcast,
                   render: e._render,
@@ -1769,14 +1870,14 @@
                     l = 'twitter://broadcasts/'.concat(a),
                     c = Le(a),
                     s = Le(a, r)
-                  return x.canUseDOM
+                  return P.canUseDOM
                     ? null
                     : f.a.createElement(
                         f.a.Fragment,
                         null,
                         f.a.createElement(ae.a, { canonical: c, description: e, title: o, type: 'article' }),
                         f.a.createElement(_.a, { deepLink: l }),
-                        f.a.createElement(P, { broadcast: n, id: a, timecode: r, title: e, url: s }),
+                        f.a.createElement(x, { broadcast: n, id: a, timecode: r, title: e, url: s }),
                       )
                 },
               },
@@ -2427,8 +2528,8 @@
             })
           }
         },
-        T = n('rxPX'),
-        D = Object(T.a)()
+        D = n('rxPX'),
+        T = Object(D.a)()
           .propsFromState(function () {
             return { activeTeamId: C.c }
           })
@@ -2436,9 +2537,9 @@
             return { addToast: E.b, deleteMoment: w }
           })
           .withAnalytics({ component: 'action_sheet' }),
-        P = n('ACNv'),
-        x = n('3XMw'),
-        A = n.n(x),
+        x = n('ACNv'),
+        P = n('3XMw'),
+        A = n.n(P),
         O = n('Rp9C'),
         L = n('TnY3'),
         R = n('v6aA'),
@@ -2560,7 +2661,7 @@
                 key: 'render',
                 value: function () {
                   return this.context.loggedInUserId
-                    ? f.a.createElement(P.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
+                    ? f.a.createElement(x.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
                     : null
                 },
               },
@@ -2569,7 +2670,7 @@
           )
         })(f.a.Component)
       h()(K, 'contextType', R.a)
-      var Q = D(K),
+      var Q = T(K),
         J = Object(L.a)(Q),
         Z = n('2G3J'),
         $ = (function (e) {
@@ -2707,13 +2808,13 @@
         S = n('3XMw'),
         k = n.n(S),
         w = k.a.cfe836d1,
-        T = k.a.efb132c2
+        D = k.a.efb132c2
       k.a.f27deeea
-      var D = function (e) {
+      var T = function (e) {
           return E.a[e.currency_code.toUpperCase()](parseInt(e.micro_value, 10) / 1e6)
         },
-        P = function (e, t) {
-          var n = D(e)
+        x = function (e, t) {
+          var n = T(e)
           return 'Preorder' === t
             ? (function (e) {
                 return g.a.createElement(
@@ -2724,7 +2825,7 @@
               })(n)
             : g.a.createElement(I.b, { weight: 'bold' }, n)
         },
-        x = function (e, t) {
+        P = function (e, t) {
           var n = parseInt(t.micro_value, 10),
             a = parseInt(e.micro_value, 10),
             r = Math.round(((n - a) / n) * 100)
@@ -2762,9 +2863,9 @@
                       h = m.previousPrice
                     return {
                       formattedDescription: A(s, u),
-                      formattedPercentOff: h ? x(p, h) : void 0,
-                      formattedPreviousPrice: h ? D(h) : void 0,
-                      formattedPrice: P(p, a),
+                      formattedPercentOff: h ? P(p, h) : void 0,
+                      formattedPreviousPrice: h ? T(h) : void 0,
+                      formattedPrice: x(p, a),
                       formattedTitle: c,
                       image: 'ApiImage' === d.__typename ? d.original_img_url : '',
                       url: i.url,
@@ -2780,7 +2881,7 @@
               d = i.image,
               m = i.url
             return g.a.createElement(C.a, {
-              accessibilityLabel: T({ title: u, description: o, price: s }),
+              accessibilityLabel: D({ title: u, description: o, price: s }),
               containerStyle: a,
               description: o,
               image: d,
@@ -3080,9 +3181,9 @@
               : n()
             : n()
         },
-        Te = n('wAC9'),
-        De = function (e) {
-          return Object(Te.a)({
+        De = n('wAC9'),
+        Te = function (e) {
+          return Object(De.a)({
             contextSuffix: 'LIVE_COMMERCE_ITEMS_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.Commerce.fetchLiveCommerceItemsSlice
@@ -3093,8 +3194,8 @@
             sliceKey: 'liveCommerceItemsSlice-'.concat(e),
           })
         },
-        Pe = (n('jQ3i'), n('x4t0'), n('zrc3')),
-        xe = n('8/3a'),
+        xe = (n('jQ3i'), n('x4t0'), n('zrc3')),
+        Pe = n('8/3a'),
         Ae =
           (n('yH/f'),
           n('lTEL'),
@@ -3559,12 +3660,12 @@
         St = n('ZUOq'),
         kt = n('MMRb'),
         wt = n('zHh/'),
-        Tt = Object(Ne.createSelector)(Ue.d, kt.selectDrawerVisibility, function (e, t) {
+        Dt = Object(Ne.createSelector)(Ue.d, kt.selectDrawerVisibility, function (e, t) {
           return { canAutoplay: Object(wt.a)(e), dmDrawerVisibility: t }
         }),
-        Dt = Object(Ve.c)(Tt),
-        Pt = n('7JQg'),
-        xt = n('AQ79'),
+        Tt = Object(Ve.c)(Dt),
+        xt = n('7JQg'),
+        Pt = n('AQ79'),
         At = g.a.createContext({ dockRequested: !1, closeRequested: !1 }),
         Ot = n('MXDK'),
         Lt = { component: 'dock' },
@@ -4207,9 +4308,9 @@
                   var e = $.a.theme.spaces,
                     t = this.props.dmDrawerVisibility,
                     n = parseInt(''.concat(e.space20), 10)
-                  return t === xt.b.COLLAPSED
+                  return t === Pt.b.COLLAPSED
                     ? St.a.dmDrawerHeight.collapsed + n
-                    : t === xt.b.EXPANDED
+                    : t === Pt.b.EXPANDED
                     ? St.a.dmDrawerHeight.expanded + n
                     : n
                 },
@@ -4259,7 +4360,7 @@
                     S = y || {},
                     k = S.image,
                     w = S.periscopeVariants,
-                    T = {
+                    D = {
                       accessibilityLabel: fn,
                       aspectRatio: $.a.theme.aspectRatios.landscape,
                       backgroundColor: $.a.theme.colors.gray0,
@@ -4277,7 +4378,7 @@
                   if (m && f)
                     (e = m),
                       (t = o()(
-                        o()({}, T),
+                        o()({}, D),
                         {},
                         {
                           videoType: 'video',
@@ -4286,10 +4387,10 @@
                         },
                       ))
                   else if (I && C) {
-                    var D = un.b.forTweet(C),
-                      P = hn.a.getVideoFromCoverMedia(p),
-                      x = P && hn.a.extractVideoProps(D, P, u)
-                    ;(e = I), (t = x ? o()(o()({}, x), T) : void 0)
+                    var T = un.b.forTweet(C),
+                      x = hn.a.getVideoFromCoverMedia(p),
+                      P = x && hn.a.extractVideoProps(T, x, u)
+                    ;(e = I), (t = P ? o()(o()({}, P), D) : void 0)
                   }
                   return g.a.createElement(At.Consumer, null, function (a) {
                     var r = a.closeRequested,
@@ -4334,7 +4435,7 @@
             dockedContainerBackground: { backgroundColor: e.colors.cellBackground },
           }
         }),
-        In = Object(Pt.a)({ element: 'image' })(Dt(gn)),
+        In = Object(xt.a)({ element: 'image' })(Tt(gn)),
         Cn =
           (k.a.f2382014,
           k.a.g66c8347,
@@ -4351,7 +4452,7 @@
                 _()(m()(e), '_enableDocking', e.context.featureSwitches.isTrue('live_event_docking_enabled')),
                 _()(m()(e), 'state', { headerWidth: 0 }),
                 _()(m()(e), '_getSelectedItemIndex', function (e, t) {
-                  return Object(Pe.a)(e, function (e) {
+                  return Object(xe.a)(e, function (e) {
                     return e.id === t
                   })
                 }),
@@ -4401,7 +4502,7 @@
                       q.a,
                       { style: Sn.contentContainer },
                       d
-                        ? g.a.createElement(xe.a, {
+                        ? g.a.createElement(Pe.a, {
                             author: l,
                             coverTweet: m,
                             description: s,
@@ -4528,10 +4629,10 @@
         }),
         kn = n('9bsQ'),
         wn = n('3AAD'),
-        Tn = n('7BdX'),
-        Dn = n('IG4P'),
-        Pn = n('fTQJ'),
-        xn = n('k/OQ'),
+        Dn = n('7BdX'),
+        Tn = n('IG4P'),
+        xn = n('fTQJ'),
+        Pn = n('k/OQ'),
         An = n('mw9i'),
         On = n('QIgh'),
         Ln = n('8UdT'),
@@ -4601,7 +4702,7 @@
                 m()(a),
                 '_getLiveCommerceItemsSliceModuleMemoized',
                 Object(on.a)(function (e) {
-                  return De(e)
+                  return Te(e)
                 }),
               )
             var r = e.timelineMessageOverride,
@@ -4716,7 +4817,7 @@
                     ? g.a.createElement(
                         g.a.Fragment,
                         null,
-                        g.a.createElement(xn.a, {
+                        g.a.createElement(Pn.a, {
                           accessibilityLabel: Wn,
                           links: t.map(function (e) {
                             return { key: e.key, label: e.label, isActive: e.isActive, to: o()({}, e.to) }
@@ -4789,14 +4890,14 @@
                   return g.a.createElement(
                     ie.a,
                     { component: An.a, fab: m },
-                    g.a.createElement(Pn.a, {
+                    g.a.createElement(xn.a, {
                       anchoring: wn.a,
                       entryConfiguration: this._entryConfiguration,
                       module: d,
                       onTimelinePoll: i,
                       pollingIntervalMsOverride: o,
                       preprocessEntryList: this._timelinePreprocessor,
-                      prerollDisplayLocation: Tn.c.OTHER,
+                      prerollDisplayLocation: Dn.c.OTHER,
                       refreshControl: null,
                       renderEmptyState: Kn,
                       title: r,
@@ -4809,7 +4910,7 @@
                 value: function () {
                   var e = this.props.timelineDetails.eventId,
                     t = this._getLiveCommerceItemsSliceModuleMemoized(e)
-                  return g.a.createElement(Pt.c, { namespace: Xn }, g.a.createElement(re, { module: t }))
+                  return g.a.createElement(xt.c, { namespace: Xn }, g.a.createElement(re, { module: t }))
                 },
               },
               {
@@ -4825,7 +4926,7 @@
                   var t = this.props,
                     n = t.onFetch,
                     a = t.refreshStatus
-                  return g.a.createElement(Dn.a, { isRefreshing: a === oe.a.LOADING, onRefresh: n }, e)
+                  return g.a.createElement(Tn.a, { isRefreshing: a === oe.a.LOADING, onRefresh: n }, e)
                 },
               },
             ]),
@@ -5130,7 +5231,7 @@
     prG5: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return P
+        return x
       })
       var a = n('97Jx'),
         r = n.n(a),
@@ -5156,9 +5257,9 @@
         S = 'image',
         k = n('TIdA'),
         w = n('a6qo'),
-        T = ['accessibilityLabel', 'hideAcceptOverlay', 'shouldShowAltLabel'],
-        D = C.a.f93bb3ee,
-        P = (function (e) {
+        D = ['accessibilityLabel', 'hideAcceptOverlay', 'shouldShowAltLabel'],
+        T = C.a.f93bb3ee,
+        x = (function (e) {
           h()(n, e)
           var t = f()(n)
           function n() {
@@ -5173,7 +5274,7 @@
                   i = e.props,
                   l = i.accessibilityLabel,
                   c = (i.hideAcceptOverlay, i.shouldShowAltLabel),
-                  s = o()(i, T)
+                  s = o()(i, D)
                 return g.a.createElement(
                   g.a.Fragment,
                   null,
@@ -5196,7 +5297,7 @@
                     t = e.hideAcceptOverlay,
                     n = e.image
                   return g.a.createElement(E.a, {
-                    acceptLabel: D,
+                    acceptLabel: T,
                     hideAcceptOverlay: t,
                     renderContent: this._renderContent,
                     resourceId: 'string' == typeof n ? n : n.url,
@@ -5264,7 +5365,7 @@
           return S
         }),
         n.d(t, 'k', function () {
-          return T
+          return D
         }),
         n.d(t, 's', function () {
           return O
@@ -5405,7 +5506,7 @@
               (function (e, t) {
                 if (t.broadcast && t.broadcast.id) {
                   var n = t.broadcast.id,
-                    a = D(e, n)
+                    a = T(e, n)
                   return a && { small: a.image_url_small, medium: a.image_url_medium }
                 }
               })(t, e) || {},
@@ -5414,7 +5515,7 @@
             ? { id: n, image: a, imageAttribution: l, periscopeVariants: d, cropCandidates: r, label: i, tweetId: c }
             : void 0
         },
-        T = function (e, t) {
+        D = function (e, t) {
           var n = (function (e) {
               var t = e.liveEventDetails.attribution_user_id
               return e.users ? e.users[t] : void 0
@@ -5437,24 +5538,24 @@
             title: s,
           }
         },
-        D = function (e, t) {
+        T = function (e, t) {
           return e.broadcasts && t ? e.broadcasts[t] : void 0
         },
-        P = function (e, t) {
+        x = function (e, t) {
           var n = e.extended_entities,
             a = (void 0 === n ? {} : n).media
           return (void 0 === a ? [] : a).find(function (e) {
             return e.media_key === t || 'photo' !== e.type
           })
         },
-        x = function (e, t, n) {
+        P = function (e, t, n) {
           var a = e.media,
             r = (void 0 === a ? {} : a).mediaEntity
           return !r || (r.broadcast_id !== t && r.media_tweet_id !== n) ? void 0 : e.promotedContent
         },
         A = function (e, t, n, a, r, i) {
-          var o = t && r ? P(t, r) : void 0,
-            l = D(n, e),
+          var o = t && r ? x(t, r) : void 0,
+            l = T(n, e),
             c = l ? e : void 0,
             s = null == l ? void 0 : l.media_key,
             u = null == l ? void 0 : l.status,
@@ -5486,7 +5587,7 @@
             isLive: (function (e) {
               return !!e && e.state === y
             })(l),
-            promotedContent: i && x(i, c, r),
+            promotedContent: i && P(i, c, r),
           }
         },
         O = function (e, t) {
@@ -5654,7 +5755,7 @@
         W = function (e, t, n, a, r) {
           var i, o, l
           if (t && a && n) {
-            var c = P(a, n)
+            var c = x(a, n)
             if (c) {
               var s = c.type
               o = q(s)

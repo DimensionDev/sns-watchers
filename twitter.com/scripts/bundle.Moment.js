@@ -56,8 +56,8 @@
         I = a('3XMw'),
         L = a.n(I),
         P = L.a.e2e35f0d,
-        k = L.a.icfe5fe3,
-        A = L.a.a52a1fb9,
+        A = L.a.icfe5fe3,
+        k = L.a.a52a1fb9,
         D = L.a.if221231,
         B = (function (e) {
           l()(a, e)
@@ -172,7 +172,7 @@
                                     m.a.createElement(T.a.Value, null, L.a.a77bd6f4({ count: d })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, k),
+                                m.a.createElement(O.b, { color: 'gray700' }, A),
                               ),
                               m.a.createElement(
                                 U.a,
@@ -191,7 +191,7 @@
                                     m.a.createElement(T.a.Value, null, L.a.a30d7c4d({ count: h })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, A),
+                                m.a.createElement(O.b, { color: 'gray700' }, k),
                               ),
                               m.a.createElement(
                                 U.a,
@@ -405,7 +405,14 @@
       O.metadata = { width: 24, height: 24 }
       var T = O,
         R = function (e, t, a) {
-          var r = [{ icon: h, heading: d.a.a99d8e60, description: d.a.gdd8144c, platformAvailabilityLabel: ['Web'] }]
+          var r = [
+            {
+              icon: h,
+              heading: d.a.a99d8e60,
+              description: d.a.gdd8144c,
+              platformAvailabilityLabel: ['iOS', 'Android', 'Web'],
+            },
+          ]
           return (
             a &&
               r.push({
@@ -430,19 +437,19 @@
                 ],
               },
               {
-                blurb: d.a.ae3f4564,
+                blurb: d.a.j9b7ae03,
                 features: [
                   [
                     {
                       icon: v.a,
                       heading: d.a.i65802df,
-                      description: d.a.h0f8563b,
-                      platformAvailabilityLabel: ['iOS', 'Web'],
+                      description: d.a.cc75246f,
+                      platformAvailabilityLabel: ['iOS', 'Android', 'Web'],
                     },
                     {
                       icon: y.a,
                       heading: d.a.b7fa0cfd,
-                      description: d.a.a7f3dfc9,
+                      description: d.a.a29aa266,
                       platformAvailabilityLabel: e ? ['iOS', 'Android', 'Web'] : ['Android', 'Web'],
                     },
                   ],
@@ -450,7 +457,7 @@
                     {
                       icon: S.a,
                       heading: d.a.b62d6e4c,
-                      description: d.a.a24965fb,
+                      description: d.a.e48717d7,
                       platformAvailabilityLabel: ['iOS', 'Android', 'Web'],
                     },
                   ],
@@ -469,7 +476,12 @@
                     { icon: g.a, heading: d.a.i9223e6f, description: d.a.c1935a33, platformAvailabilityLabel: ['iOS'] },
                   ],
                   [
-                    { icon: U.a, heading: d.a.gc8d916e, description: d.a.a353aeee, platformAvailabilityLabel: ['iOS'] },
+                    {
+                      icon: U.a,
+                      heading: d.a.gc8d916e,
+                      description: d.a.a353aeee,
+                      platformAvailabilityLabel: ['iOS', 'Android'],
+                    },
                     { icon: T, heading: d.a.f39aef7b, description: d.a.b4a97be8, platformAvailabilityLabel: ['iOS'] },
                   ],
                 ],
@@ -482,25 +494,25 @@
         I = a('rxPX'),
         L = a('su2V'),
         P = a('cnVF'),
-        k = function (e) {
+        A = function (e) {
           return Object(w.d)(e).isTrue('subscriptions_stripe_testing') ? P.F : P.D
         },
-        A = Object(I.a)()
+        k = Object(I.a)()
           .propsFromState(function () {
             return {
               productDetailsFetchStatus: function (e) {
-                return Object(L.l)(e, k(e))
+                return Object(L.l)(e, A(e))
               },
               productDetails: function (e) {
-                return Object(L.k)(e, k(e))
+                return Object(L.k)(e, A(e))
               },
               checkoutUrlFetchStatus: function (e) {
-                return Object(L.f)(e, k(e))
+                return Object(L.f)(e, A(e))
               },
               checkoutUrl: function (e) {
-                return Object(L.e)(e, k(e))
+                return Object(L.e)(e, A(e))
               },
-              twitterBlueID: k,
+              twitterBlueID: A,
             }
           })
           .propsFromActions(function () {
@@ -555,7 +567,7 @@
             button: { width: '75%', cursor: 'pointer', alignItems: 'center' },
           }
         }),
-        W = A(function (e) {
+        W = k(function (e) {
           var t = e.analytics,
             a = e.buttonStyle,
             r = e.checkoutUrl,
@@ -669,7 +681,7 @@
         Z = a('hOZg'),
         $ = a('lUZE'),
         ee = a('tH6R'),
-        te = d.a.a0b7009f,
+        te = d.a.a7fedd05,
         ae = d.a.b08821f3,
         re = d.a.ed21f885,
         ne = function (e) {

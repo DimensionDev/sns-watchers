@@ -5,11 +5,11 @@
       'use strict'
       a.r(t),
         a.d(t, 'KeyboardShortcutsScreen', function () {
-          return I
+          return O
         })
       var r = a('ddV6'),
         n = a.n(r),
-        s =
+        i =
           (a('jQ3i'),
           a('x4t0'),
           a('KqXw'),
@@ -24,12 +24,12 @@
           a('Ysgh'),
           a('uFXj'),
           a('ERkP')),
-        i = a.n(s),
-        o = a('v6aA'),
+        o = a.n(i),
+        s = a('v6aA'),
         c = a('hqKg'),
         l = a('G6rE'),
-        d = a('rxPX'),
-        u = Object(d.a)()
+        u = a('rxPX'),
+        d = Object(u.a)()
           .propsFromState(function () {
             return {
               loggedInUserScreenName: Object(c.createSelector)(l.e.selectLoggedInUser, function (e) {
@@ -38,96 +38,96 @@
             }
           })
           .withAnalytics({ page: 'keyboard_shortcuts' }),
-        p = a('jHSc'),
-        m = a('ObVQ'),
-        b = a('3XMw'),
-        y = a.n(b),
-        g = a('MWbm'),
-        h = a('7N4s'),
-        f = a('k/OQ'),
+        m = a('jHSc'),
+        p = a('ObVQ'),
+        g = a('3XMw'),
+        y = a.n(g),
+        b = a('MWbm'),
+        f = a('7N4s'),
+        h = a('k/OQ'),
         v = a('6vad'),
-        k = a('t62R'),
-        w = a('rHpw'),
+        w = a('t62R'),
+        k = a('rHpw'),
         x = a('OrGc'),
         E = y.a.dfef5ab8,
-        P = y.a.h54e6137,
-        j = y.a.aefd89c7,
-        S = y.a.cafdefb1,
-        O = y.a.add55c97,
-        R = y.a.e95b9448,
-        T = y.a.c106055a,
-        I = function (e) {
+        S = y.a.h54e6137,
+        P = y.a.aefd89c7,
+        C = y.a.cafdefb1,
+        j = y.a.add55c97,
+        I = y.a.e95b9448,
+        H = y.a.c106055a,
+        O = function (e) {
           var t,
             a,
             r = e.history,
-            s = e.location,
+            i = e.location,
             c = e.loggedInUserScreenName,
-            l = i.a.useContext(o.a),
-            d = l.featureSwitches,
-            u = l.userClaims,
-            b = i.a.useContext(h.b).isModal,
+            l = o.a.useContext(s.a),
+            u = l.featureSwitches,
+            d = l.userClaims,
+            g = o.a.useContext(f.b).isModal,
             y =
-              null === (t = s.state) || void 0 === t || null === (a = t.previousPath) || void 0 === a
+              null === (t = i.state) || void 0 === t || null === (a = t.previousPath) || void 0 === a
                 ? void 0
                 : a.includes('/i/moment_maker'),
-            k = i.a.useState(!1),
-            w = n()(k, 2),
-            I = w[0],
-            _ = w[1]
-          i.a.useEffect(
+            w = o.a.useState(!1),
+            k = n()(w, 2),
+            O = k[0],
+            D = k[1]
+          o.a.useEffect(
             function () {
-              y && (_(!0), r.replace('/i/keyboard_shortcuts/moments'))
+              y && (D(!0), r.replace('/i/keyboard_shortcuts/moments'))
             },
             [r, y],
           )
-          var C = function (e) {
+          var z = function (e) {
               return c
                 ? e
                 : e.filter(function (e) {
                     return e && e.universal
                   })
             },
-            N = [
-              { key: T, label: T, to: { pathname: '/i/keyboard_shortcuts/moments', state: s.state } },
-              { key: R, label: R, to: { pathname: '/i/keyboard_shortcuts', state: s.state } },
+            M = [
+              { key: H, label: H, to: { pathname: '/i/keyboard_shortcuts/moments', state: i.state } },
+              { key: I, label: I, to: { pathname: '/i/keyboard_shortcuts', state: i.state } },
             ],
-            W = '/i/keyboard_shortcuts/moments' === s.pathname,
-            L = Object(x.c)(d, u.isTrueAndEnabled('subscriptions_feature_1007')),
-            Q = Object(x.a)(d),
-            V = Object(x.b)(d),
-            z = Object(m.a)(d),
-            D = C(L),
-            X = C(Q),
-            A = C(V),
-            B = C(z),
-            F = W
-              ? [{ headerText: void 0, shortcuts: B }]
+            L = '/i/keyboard_shortcuts/moments' === i.pathname,
+            _ = Object(x.c)(u, d.isTrueAndEnabled('subscriptions_feature_1007')),
+            V = Object(x.a)(u),
+            B = Object(x.b)(u),
+            F = Object(p.a)(u),
+            W = z(_),
+            N = z(V),
+            A = z(B),
+            G = z(F),
+            Q = L
+              ? [{ headerText: void 0, shortcuts: G }]
               : [
-                  { headerText: j, shortcuts: D },
-                  { headerText: S, shortcuts: X },
-                  { headerText: O, shortcuts: A },
+                  { headerText: P, shortcuts: W },
+                  { headerText: C, shortcuts: N },
+                  { headerText: j, shortcuts: A },
                 ]
-          return i.a.createElement(
-            p.b,
-            { documentTitle: E, history: r, isLarge: !0, title: P },
-            I ? i.a.createElement(f.a, { links: N }) : null,
-            i.a.createElement(
-              g.a,
-              { style: [H.root, b && H.row] },
-              F.map(function (e, t) {
+          return o.a.createElement(
+            m.b,
+            { documentTitle: E, history: r, isLarge: !0, title: S },
+            O ? o.a.createElement(h.a, { links: M }) : null,
+            o.a.createElement(
+              b.a,
+              { style: [T.root, g && T.row] },
+              Q.map(function (e, t) {
                 var a = e.headerText,
                   r = e.shortcuts,
-                  n = t === F.length - 1,
-                  s = F.length > 1
-                return i.a.createElement(
-                  g.a,
-                  { key: t, style: [H.section, !n && !b && H.sectionBottomMargin] },
-                  a ? i.a.createElement(v.b, { style: H.moduleHeader, text: a }) : null,
-                  i.a.createElement(
-                    g.a,
-                    { accessibilityRole: 'table', style: !n && s && b && H.divider },
+                  n = t === Q.length - 1,
+                  i = Q.length > 1
+                return o.a.createElement(
+                  b.a,
+                  { key: t, style: [T.section, !n && !g && T.sectionBottomMargin] },
+                  a ? o.a.createElement(v.b, { style: T.moduleHeader, text: a }) : null,
+                  o.a.createElement(
+                    b.a,
+                    { accessibilityRole: 'table', style: !n && i && g && T.divider },
                     r.map(function (e, t) {
-                      return i.a.createElement(M, { description: e.description, key: t, keys: e.keys })
+                      return o.a.createElement(R, { description: e.description, key: t, keys: e.keys })
                     }),
                   ),
                 )
@@ -135,28 +135,28 @@
             ),
           )
         },
-        M = function (e) {
+        R = function (e) {
           var t = e.description,
             a = e.keys.split(' ')
-          return i.a.createElement(
-            g.a,
-            { accessibilityRole: 'row', style: H.entry },
-            i.a.createElement(k.b, { accessibilityRole: 'cell' }, t),
-            i.a.createElement(
-              g.a,
-              { accessibilityRole: 'cell', style: H.keyRow },
+          return o.a.createElement(
+            b.a,
+            { accessibilityRole: 'row', style: T.entry },
+            o.a.createElement(w.b, { accessibilityRole: 'cell' }, t),
+            o.a.createElement(
+              b.a,
+              { accessibilityRole: 'cell', style: T.keyRow },
               a.map(function (e, t, a) {
-                return i.a.createElement(
-                  i.a.Fragment,
+                return o.a.createElement(
+                  o.a.Fragment,
                   { key: t },
-                  i.a.createElement(k.b, { align: 'center', style: H.key, withoutTwemojiAndHashflags: !0 }, e),
-                  t !== a.length - 1 ? i.a.createElement(k.b, { style: H.plus }, '+') : null,
+                  o.a.createElement(w.b, { align: 'center', style: T.key, withoutTwemojiAndHashflags: !0 }, e),
+                  t !== a.length - 1 ? o.a.createElement(w.b, { style: T.plus }, '+') : null,
                 )
               }),
             ),
           )
         },
-        H = w.a.create(function (e) {
+        T = k.a.create(function (e) {
           return {
             root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 },
             row: { flexDirection: 'row' },
@@ -192,13 +192,114 @@
             moduleHeader: { paddingLeft: e.spaces.space12 },
           }
         }),
-        _ = u(I)
-      t.default = _
+        D = d(O)
+      t.default = D
+    },
+    '6vad': function (e, t, a) {
+      'use strict'
+      a.d(t, 'a', function () {
+        return p
+      })
+      a('yH/f')
+      var r = a('ERkP'),
+        n = a.n(r),
+        i = a('t62R'),
+        o = a('EHV7'),
+        s = a('rHpw'),
+        c = s.a.create(function (e) {
+          return {
+            icon: {
+              color: e.colors.primary,
+              height: e.fontSizes.title4,
+              paddingRight: e.spaces.space12,
+              width: e.fontSizes.title4,
+            },
+          }
+        }),
+        l = a('7Mjr'),
+        u = a('I4+6'),
+        d = a('cm6r'),
+        m = a('MWbm'),
+        p = Object.freeze({ TopicFilled: 'TOPIC_FILLED' })
+      var g = s.a.create(function (e) {
+        return {
+          root: {
+            justifyContent: 'space-between',
+            paddingHorizontal: e.componentDimensions.gutterHorizontal,
+            paddingVertical: e.componentDimensions.gutterVertical,
+          },
+          mainContent: { flexDirection: 'row' },
+          subtext: { alignSelf: 'flex-start' },
+          withSubtext: { alignSelf: 'center' },
+          icon: { alignSelf: 'flex-start', height: e.spaces.space20, justifyContent: 'center' },
+          iconArrow: { color: e.colors.text },
+          rightControlGroup: { flexDirection: 'row', justifyContent: 'flex-end', flexGrow: 1, alignSelf: 'center' },
+        }
+      })
+      t.b = function (e) {
+        var t = e.icon,
+          a = e.landingUrl,
+          r = e.nativeID,
+          y = e.rightControl,
+          b = e.style,
+          f = e.subtext,
+          h = e.testID,
+          v = e.text,
+          w = (function (e) {
+            switch (e) {
+              case p.TopicFilled:
+                return n.a.createElement(o.a, { style: c.icon })
+              default:
+                return null
+            }
+          })(t),
+          k = f ? null : g.withSubtext,
+          x = u.a.generate({
+            backgroundColor: s.a.theme.colors.gray0,
+            color: s.a.theme.colors.cellBackground,
+            customFocusBackgroundColor: s.a.theme.colors.gray0,
+            customHoverBackgroundColor: s.a.theme.colors.gray0,
+            customPressedBackgroundColor: s.a.theme.colors.gray0,
+          })
+        return n.a.createElement(
+          d.a,
+          {
+            interactiveStyles: a ? x : null,
+            link: null == a ? void 0 : a.url,
+            nativeID: r,
+            style: [g.root, b],
+            testID: h,
+          },
+          n.a.createElement(
+            m.a,
+            { accessibilityLevel: 2, accessibilityRole: 'heading', style: g.mainContent },
+            n.a.createElement(m.a, { style: g.icon }, w),
+            n.a.createElement(
+              i.b,
+              { numberOfLines: 3, size: 'headline1', style: k, weight: 'heavy', withHashflags: !0 },
+              v,
+            ),
+            n.a.createElement(
+              m.a,
+              { style: g.rightControlGroup },
+              a ? n.a.createElement(m.a, { style: k }, n.a.createElement(l.a, { style: g.iconArrow })) : null,
+              y ? n.a.createElement(m.a, null, y) : null,
+            ),
+          ),
+          f
+            ? n.a.createElement(
+                i.b,
+                { color: 'gray700', numberOfLines: 2, size: 'subtext2', style: g.subtext, withHashflags: !0 },
+                f,
+              )
+            : null,
+        )
+      }
     },
     ObVQ: function (e, t, a) {
       'use strict'
       a.d(t, 'b', function () {
-        return o
+        return s
       }),
         a.d(t, 'a', function () {
           return c
@@ -206,9 +307,9 @@
       a('yH/f')
       var r = a('3XMw'),
         n = a.n(r),
-        s = a('oQhu'),
-        i = a('OrGc'),
-        o = Object.freeze({
+        i = a('oQhu'),
+        o = a('OrGc'),
+        s = Object.freeze({
           editingPanelNextItem: 'w',
           editingPanelPreviousItem: 'q',
           rightEditingPreviewPanel: 'g t',
@@ -217,20 +318,20 @@
           addTweet: 'i t',
           removeTweet: 'd t',
         }),
-        c = Object(s.a)(function (e) {
+        c = Object(i.a)(function (e) {
           return [
-            { description: n.a.d5696fcb, keys: i.e.openKeyboardShortcuts, universal: !0 },
-            { description: n.a.e814ed10, keys: o.editingPanelNextItem, universal: !0 },
-            { description: n.a.c1250b41, keys: o.editingPanelPreviousItem, universal: !0 },
-            { description: n.a.ddd4bf24, keys: i.e.nextItem, universal: !0 },
-            { description: n.a.ia2742f9, keys: i.e.previousItem, universal: !0 },
+            { description: n.a.d5696fcb, keys: o.e.openKeyboardShortcuts, universal: !0 },
+            { description: n.a.e814ed10, keys: s.editingPanelNextItem, universal: !0 },
+            { description: n.a.c1250b41, keys: s.editingPanelPreviousItem, universal: !0 },
+            { description: n.a.ddd4bf24, keys: o.e.nextItem, universal: !0 },
+            { description: n.a.ia2742f9, keys: o.e.previousItem, universal: !0 },
             { description: n.a.a8b6f61a, keys: 'space', universal: !1 },
             { description: n.a.dfe59ab8, keys: 'esc', universal: !1 },
-            { description: n.a.c602967d, keys: o.rightEditingPreviewPanel, universal: !1 },
-            { description: n.a.g42208cb, keys: o.leftNavigationMenuPanel, universal: !1 },
-            { description: n.a.gf73b335, keys: o.tweetDiscoveryPanel, universal: !1 },
-            { description: n.a.g45af04e, keys: o.addTweet, universal: !1 },
-            { description: n.a.ee9c4013, keys: o.removeTweet, universal: !1 },
+            { description: n.a.c602967d, keys: s.rightEditingPreviewPanel, universal: !1 },
+            { description: n.a.g42208cb, keys: s.leftNavigationMenuPanel, universal: !1 },
+            { description: n.a.gf73b335, keys: s.tweetDiscoveryPanel, universal: !1 },
+            { description: n.a.g45af04e, keys: s.addTweet, universal: !1 },
+            { description: n.a.ee9c4013, keys: s.removeTweet, universal: !1 },
           ]
         })
     },

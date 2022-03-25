@@ -3846,6 +3846,7 @@
           AddToBookmarks: 'add_to_bookmarks',
           AddToMoment: 'add_to_moment',
           Analytics: 'view_tweet_activity',
+          Autoplay: 'autoplay',
           Downvote: 'downvote',
           Embed: 'embed',
           FollowAuthor: 'follow',
@@ -3874,6 +3875,7 @@
           community_tweet_non_member: 'tweet_limited_actions_config_community_tweet_non_member',
           community_tweet_hidden: 'tweet_limited_actions_config_community_tweet_hidden',
           community_tweet_member_removed: 'tweet_limited_actions_config_community_tweet_member_removed',
+          disable_state_media_autoplay: 'tweet_limited_actions_config_disable_state_media_autoplay',
           limit_trusted_friends_tweet: 'tweet_limited_actions_config_limit_trusted_friends_tweet',
         }),
         c = function (e, t, n, c) {

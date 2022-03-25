@@ -1514,9 +1514,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f6432ce5', function (e) {
             return e.hostSpace + ' · ' + e.descriptionGeneric
           }),
-          a('c00c234e', function (e) {
-            return e.communityName + ' Rules'
-          }),
           a('b8e930fd', 'Trending now'),
           a('ae05f268', 'Trends are unavailable.'),
           a('ccc45ee6', function (e) {
@@ -1977,6 +1974,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8c6c4e9', 'Learn more about Communities'),
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
+          a('c00c234e', function (e) {
+            return e.communityName + ' Rules'
+          }),
           a('cc683fb9', 'About Community'),
           a('af7c11a9', 'Community Info'),
           a('db1b9462', 'Only members can Tweet, like, or reply.'),
@@ -5370,10 +5370,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('jeb4436c', 'No reactions found'),
           a('db29b5a9', 'When someone reacts to this Tweet, it’ll show up here'),
-          a(
-            'a0b7009f',
-            'Get more out of Twitter. Access exclusive features at our introductory price when you subscribe to Twitter Blue today.',
-          ),
+          a('a7fedd05', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
           a('c4debbdf', 'Upgrade your content'),
@@ -5381,14 +5378,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'g52ab673',
             'Typo? Forgot to tag someone? Give yourself time to preview and make changes to your Tweet before it goes live.',
           ),
-          a('ae3f4564', 'Get news without the noise'),
-          a(
-            'h0f8563b',
-            'Enjoy an ad-free reading experience, across a network of US-based popular publishers - not including paywall access.',
-          ),
-          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.'),
+          a('j9b7ae03', 'Read without the noise'),
+          a('cc75246f', 'Read ad-free on popular US-based publisher sites - not including paywall access.'),
+          a('a29aa266', 'A shortcut to the most-shared articles by people you follow'),
           a('b62d6e4c', 'Reader'),
-          a('a24965fb', 'Turn long threads into a more beautiful reading experience.'),
+          a('e48717d7', 'Read long threads minus the distractions.'),
           a('cd2b9647', 'Customize your Twitter experience'),
           a('hdc87500', 'Bookmark Folders'),
           a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
@@ -5804,6 +5798,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe94be6a', function (e) {
             return 'unlabelled data, ' + e.value
           }),
+          a('affbaf62', 'More information'),
+          a('c388d026', 'OK'),
           a('a7cd5cf4', 'Video'),
           a('b6eb8f69', 'Broadcast'),
           a('dcc2b9b2', function (e) {
@@ -5906,7 +5902,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('if1b6f14', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
-          a('eab7b7dc', 'Swipe to rotate'),
+          a('a6ada13d', 'Shop now'),
+          a('e1bddf52', 'Drag to rotate'),
           a('fbc2003b', 'Ended'),
           a('b3d828ed', 'Joined'),
           a('ca677073', 'Start listening'),
@@ -6027,7 +6024,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Visit ' + e.advertiserName
           }),
           a('c67e71aa', 'Watch now'),
-          a('a6ada13d', 'Shop now'),
           a('j0f12222', 'See more'),
           a('f569f7c7', 'Go to website'),
           a('j0c67729', 'Visit website'),
@@ -6045,10 +6041,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8b5757c', '0.25x'),
           a('e7e954de', '0.5x'),
           a('g07ffe66', '0.75x'),
-          a('d8bede9d', '1x'),
-          a('j41845c7', '1.25x'),
-          a('e9eeed9e', '1.5x')
-        a('fe45dc83', '1.75x'),
+          a('d8bede9d', '1x')
+        a('j41845c7', '1.25x'),
+          a('e9eeed9e', '1.5x'),
+          a('fe45dc83', '1.75x'),
           a('e791190a', '2x'),
           a('b3160a69', function (e) {
             return e.volumePercent + ' percent'
@@ -6142,8 +6138,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
-          a('affbaf62', 'More information'),
-          a('c388d026', 'OK'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
           }),
