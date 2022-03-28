@@ -50,10 +50,10 @@
           return E
         }),
         n.d(t, 'f', function () {
-          return m
+          return v
         }),
         n.d(t, 'e', function () {
-          return v
+          return m
         }),
         n.d(t, 'g', function () {
           return g
@@ -84,10 +84,10 @@
               : l
               ? ''.concat(d).concat(b, '-user-').concat(l)
               : ''.concat(d).concat(b),
-            m = r.isTrue('responsive_web_new_client_events_enabled')
+            v = r.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
             timelineId: E,
-            formatResponse: p(m),
+            formatResponse: p(v),
             getEndpoint: function (e) {
               return e.URT.fetchExplore
             },
@@ -102,7 +102,7 @@
                   include_page_configuration: u,
                   initial_tab_id: s,
                   profile_user_id: l,
-                  entity_tokens: m,
+                  entity_tokens: v,
                 },
               )
             },
@@ -163,10 +163,10 @@
         E = function (e, t) {
           return b({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
         },
-        m = Object(o.a)(function (e) {
+        v = Object(o.a)(function (e) {
           return b({ featureSwitches: e, contentType: s.Trends })
         }),
-        v = Object(o.a)(function (e) {
+        m = Object(o.a)(function (e) {
           return b({ featureSwitches: e, displayLocation: l.WebSidebar })
         }),
         g = function () {
@@ -202,15 +202,15 @@
         b = n('8UdT'),
         p = n('5Y9N'),
         E = n('XtkE'),
-        m =
+        v =
           ((r = {}),
           d()(r, b.b.TimelineCursor, Object(f.a)({})),
           d()(r, b.b.Trend, Object(E.a)({ withThirdPartyCards: !0, errorContext: 'TRENDS_SCREEN' })),
           r),
-        v = s()(s()({}, Object(p.a)({})), m),
+        m = s()(s()({}, Object(p.a)({})), v),
         g = n('BxsD'),
-        w = n('dwig'),
-        y = n('0+qk'),
+        y = n('dwig'),
+        w = n('0+qk'),
         h = n('3XMw'),
         T = n.n(h),
         _ = n('VTxf'),
@@ -232,7 +232,7 @@
         K = function (e) {
           var t = e.history,
             n = i.a.useContext(o.a).featureSwitches,
-            r = i.a.createElement(y.a, { history: t }),
+            r = i.a.createElement(w.a, { history: t }),
             a = i.a.createElement(j.a, { pullRight: !0, to: '/settings/trends' })
           return i.a.createElement(
             O.a,
@@ -241,10 +241,10 @@
               backLocation: '/explore',
               history: t,
               primaryContent: i.a.createElement(
-                w.a,
+                y.a,
                 { component: P.a, fab: r },
                 i.a.createElement(C.a, {
-                  entryConfiguration: v,
+                  entryConfiguration: m,
                   module: Object(g.f)(n),
                   renderEmptyState: L,
                   renderUnavailable: B,

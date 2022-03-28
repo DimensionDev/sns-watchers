@@ -88,7 +88,7 @@
         y = n('rxPX'),
         _ = Object(y.a)()
           .propsFromState(function () {
-            return { language: b.o, scale: v.y }
+            return { language: b.p, scale: v.y }
           })
           .propsFromActions(function () {
             return { updateSettings: v.M }
@@ -873,7 +873,7 @@
         },
         De = Object(Oe.a)()
           .propsFromState(function () {
-            return { translation: Ae, translationFetchStatus: Fe, userLanguage: Ee.o }
+            return { translation: Ae, translationFetchStatus: Fe, userLanguage: Ee.p }
           })
           .propsFromActions(function () {
             return {
@@ -3680,7 +3680,7 @@
         b = n('RqPI'),
         y = n('rxPX'),
         _ = Object(y.a)().propsFromState(function () {
-          return { language: b.o }
+          return { language: b.p }
         }),
         C = n('3XMw'),
         T = n.n(C),

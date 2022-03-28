@@ -355,7 +355,7 @@
         C = n('0KEI'),
         U = 'profile_accounts_sidebar',
         H = function (e, t) {
-          return R.q(e)
+          return R.r(e)
         },
         T = function (e, t) {
           return t.userId
@@ -1337,7 +1337,7 @@
         },
         f = Object(d.a)()
           .propsFromState(function () {
-            return { focalTweetId: h, loggedInUserId: s.q, tweetMap: l.a.selectAll }
+            return { focalTweetId: h, loggedInUserId: s.r, tweetMap: l.a.selectAll }
           })
           .adjustStateProps(function (e) {
             var t = e.focalTweetId,

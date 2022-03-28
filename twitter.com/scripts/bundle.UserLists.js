@@ -1013,12 +1013,12 @@
             return {
               author: s.d,
               basePath: s.a,
-              loggedInUserId: K.q,
+              loggedInUserId: K.r,
               isSubscribed: s.b,
               list: s.c,
               useRanked: s.n,
-              reporterCountry: K.y,
-              reporterLanguage: K.o,
+              reporterCountry: K.z,
+              reporterLanguage: K.p,
             }
           })
           .propsFromActions(function () {
@@ -2021,7 +2021,7 @@
           return a ? b.d(e, a) : F
         },
         x = function (e, t) {
-          return _.q(e)
+          return _.r(e)
         },
         R = function (e, t) {
           var n, a
@@ -6267,7 +6267,13 @@
                       { $i18n: 'hfbff3d1' },
                       o.a.createElement(
                         y.b,
-                        { color: 'text', link: p.TRUSTED_FRIENDS_LEARN_MORE_URL, weight: 'bold', withUnderline: !0 },
+                        {
+                          color: 'text',
+                          link: p.TRUSTED_FRIENDS_LEARN_MORE_URL,
+                          style: x.learnMore,
+                          weight: 'bold',
+                          withUnderline: !0,
+                        },
                         _.a.fe3a4dcb,
                       ),
                     ),
@@ -6287,6 +6293,7 @@
           return {
             input: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space4 },
             education: { marginHorizontal: e.spaces.space32, textAlign: 'center', marginBottom: e.spaces.space8 },
+            learnMore: { whiteSpace: 'nowrap' },
             activityIndicatior: { paddingVertical: 250 },
           }
         })
@@ -6419,7 +6426,7 @@
         I = n('0KEI'),
         C = Object(E.a)()
           .propsFromState(function () {
-            return { author: b.d, loggedInUserId: k.q, listId: b.k }
+            return { author: b.d, loggedInUserId: k.r, listId: b.k }
           })
           .propsFromActions(function () {
             return {
@@ -8259,7 +8266,7 @@
         },
         w = Object(k.a)()
           .propsFromState(function () {
-            return { list: I, user: C, loggedInUserId: b.q, media: S }
+            return { list: I, user: C, loggedInUserId: b.r, media: S }
           })
           .propsFromActions(function () {
             return {
@@ -8753,7 +8760,7 @@
         function () {
           return function (e, t, n) {
             var a = n.userPersistence
-            return Object(c.m)(t())
+            return Object(c.n)(t())
               ? a.get(u).then(function (t) {
                   t && e(f(t))
                 })
@@ -8836,7 +8843,13 @@
                 { $i18n: 'hfbff3d1' },
                 i.a.createElement(
                   h.b,
-                  { color: 'text', link: c.TRUSTED_FRIENDS_LEARN_MORE_URL, weight: 'bold', withUnderline: !0 },
+                  {
+                    color: 'text',
+                    link: c.TRUSTED_FRIENDS_LEARN_MORE_URL,
+                    style: L.learnMore,
+                    weight: 'bold',
+                    withUnderline: !0,
+                  },
                   y.a.fe3a4dcb,
                 ),
               ),
@@ -8854,7 +8867,13 @@
         },
         L = f.a.create(function (e) {
           return {
-            education: { marginHorizontal: e.spaces.space32, textAlign: 'center', marginBottom: e.spaces.space4 },
+            education: {
+              marginHorizontal: e.spaces.space32,
+              textAlign: 'center',
+              marginTop: e.spaces.space16,
+              marginBottom: e.spaces.space4,
+            },
+            learnMore: { whiteSpace: 'nowrap' },
             activityIndicatior: { paddingVertical: 250 },
           }
         })
@@ -12641,6 +12660,7 @@
             rightControl: l.a.createElement(
               o.a,
               {
+                accessibilityLabel: f,
                 disabled: y,
                 onPress: function () {
                   m(!0), t.current && t.current.create()

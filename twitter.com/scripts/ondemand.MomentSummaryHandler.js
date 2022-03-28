@@ -486,8 +486,8 @@
         W = O.a.cc8f8a8f,
         U = O.a.c33a97d6,
         Y = O.a.i7e9ecf2,
-        q = O.a.jceadc3e,
-        X =
+        X = O.a.jceadc3e,
+        q =
           ((i = {}),
           w()(i, H.d.private, 'magenta500'),
           w()(i, H.d.public, 'green500'),
@@ -583,7 +583,7 @@
                 var t = e.props,
                   n = t.title,
                   i = t.withAuthorControls,
-                  a = n || q
+                  a = n || X
                 return i
                   ? I.a.createElement(
                       L.b,
@@ -657,7 +657,7 @@
                 var t = e.props,
                   n = t.visibilityMode
                 if (t.withAuthorControls || n !== H.d.public) {
-                  var i = X[n],
+                  var i = q[n],
                     a = Q[n]
                   return i && a ? I.a.createElement(L.b, { color: i, weight: 'bold' }, a) : null
                 }
@@ -771,7 +771,7 @@
             isCurationStudioMoment: function (e) {
               return d.a.selectIsCurationStudioMoment(e, t.content.momentId)
             },
-            isLoggedIn: oe.m,
+            isLoggedIn: oe.n,
             isTOO: function (e) {
               return d.a.selectIsTOO(e, t.content.momentId)
             },
@@ -923,7 +923,7 @@
           return function (t, n, i) {
             var a = i.api,
               r = n(),
-              o = Object(E.q)(r) || '',
+              o = Object(E.r)(r) || '',
               c = Object(k.c)(r),
               s = Object(I.a)(o),
               l = { moment_id: e, teamUserId: c }
@@ -960,8 +960,8 @@
         W = S.a.fd61ab81,
         U = S.a.aaae5e7f,
         Y = S.a.d96cf7cd,
-        q = S.a.e7718461,
-        X = (function (e) {
+        X = S.a.e7718461,
+        q = (function (e) {
           d()(n, e)
           var t = m()(n)
           function n() {
@@ -1025,7 +1025,7 @@
                   o = t.redirectOnDelete
                 i(r).then(function () {
                   e._scribeAction('delete'),
-                    n({ text: q }),
+                    n({ text: X }),
                     o && a.goBack({ backLocation: o, shouldReplaceOnFallback: !0 })
                 })
               }),
@@ -1073,8 +1073,8 @@
             n
           )
         })(f.a.Component)
-      p()(X, 'contextType', z.a)
-      var Q = O(X),
+      p()(q, 'contextType', z.a)
+      var Q = O(q),
         J = Object(L.a)(Q),
         Z = n('2G3J'),
         $ = (function (e) {

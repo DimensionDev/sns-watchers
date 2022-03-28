@@ -185,7 +185,7 @@
           function (e, o) {
             return E.e.selectByScreenName(e, C(0, o))
           },
-          F.q,
+          F.r,
           S,
           function (e, o, t, r, n, l, a) {
             return {
@@ -242,8 +242,8 @@
         T = t('v//M'),
         H = t('oQhu'),
         Q = t('yoO3'),
-        q = t('txMZ'),
-        W = t('5FtR'),
+        W = t('txMZ'),
+        q = t('5FtR'),
         Y = t('fTQJ'),
         z = t('VS6U'),
         B = t('v6aA'),
@@ -468,7 +468,7 @@
                     ]
                   return w
                     ? m.a.createElement(
-                        q.a,
+                        W.a,
                         { scribeSection: a, userId: i && i.id_str },
                         m.a.createElement(
                           Q.a,
@@ -490,7 +490,7 @@
                           }),
                         ),
                       )
-                    : m.a.createElement(W.a, { to: '/'.concat(c) })
+                    : m.a.createElement(q.a, { to: '/'.concat(c) })
                 },
               },
               {

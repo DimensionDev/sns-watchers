@@ -2100,7 +2100,7 @@
         },
         Me = Object(Pe.a)()
           .propsFromState(function () {
-            return { translation: Re, translationFetchStatus: De, userLanguage: Ie.o }
+            return { translation: Re, translationFetchStatus: De, userLanguage: Ie.p }
           })
           .propsFromActions(function () {
             return {
@@ -12686,8 +12686,8 @@
               tweet: D.a.createHydratedTweetSelector(q),
               urtAdvertiser: $,
               urtPromotedContent: J,
-              userCountry: x.y,
-              userLanguage: x.o,
+              userCountry: x.z,
+              userLanguage: x.p,
             }
           })
           .adjustStateProps(function (e) {

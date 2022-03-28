@@ -926,7 +926,7 @@
             return n || (r && r.promoted_content)
           },
           h,
-          f.x,
+          f.y,
           function (e, t) {
             var a = g.e.selectIdByScreenName(e, h(0, t))
             return a ? d.a.selectFetchStatus(e, a, !0) : c.a.NONE
@@ -936,7 +936,7 @@
             var a = b(e, t)
             return a && a.profile_interstitial_type ? a.profile_interstitial_type : null
           },
-          f.o,
+          f.p,
           function (e, t, a, n, r, l, i, o, s, c, u, d, m, p, f, g, h) {
             return {
               displaySensitiveMedia: e,
@@ -2777,7 +2777,7 @@
         },
         Pn = Object(V.a)()
           .propsFromState(function () {
-            return { shouldShowEducation: Ln, isLoggedIn: f.m }
+            return { shouldShowEducation: Ln, isLoggedIn: f.n }
           })
           .propsFromActions(function () {
             return {

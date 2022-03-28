@@ -57,7 +57,7 @@
         l = n('5oBF'),
         d = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: l.e, undoTweetSettings: u.b }
+            return { previewTweet: l.e, undoTweetSettings: u.d }
           })
           .adjustStateProps(function (e) {
             var t,

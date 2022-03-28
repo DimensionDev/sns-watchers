@@ -188,7 +188,7 @@
         w = n('rxPX'),
         _ = Object(w.a)()
           .propsFromState(function () {
-            return { language: y.o, scale: b.y }
+            return { language: y.p, scale: b.y }
           })
           .propsFromActions(function () {
             return { updateSettings: b.M }
@@ -1386,7 +1386,7 @@
         },
         Me = Object(De.a)()
           .propsFromState(function () {
-            return { translation: Re, translationFetchStatus: Fe, userLanguage: ke.o }
+            return { translation: Re, translationFetchStatus: Fe, userLanguage: ke.p }
           })
           .propsFromActions(function () {
             return {
@@ -4665,7 +4665,7 @@
         y = n('RqPI'),
         w = n('rxPX'),
         _ = Object(w.a)().propsFromState(function () {
-          return { language: y.o }
+          return { language: y.p }
         }),
         C = n('3XMw'),
         E = n.n(C),
@@ -7171,7 +7171,7 @@
         I = n('rxPX'),
         L = n('0KEI'),
         P = ['featureSwitches'],
-        O = Object(x.createSelector)(E.m, C.selectPreferencesFetchStatus, function (e, t) {
+        O = Object(x.createSelector)(E.n, C.selectPreferencesFetchStatus, function (e, t) {
           return e ? k.a.LOADED : t
         }),
         D = Object(I.a)()
@@ -7180,6 +7180,7 @@
               fetchStatus: O,
               loggedInUser: T.e.selectLoggedInUser,
               isActiveCreator: E.l,
+              isApprovedCreator: E.m,
               personalizationPreferences: C.selectUserPreferences,
               featureSwitches: S.f,
             }
@@ -7206,25 +7207,23 @@
         j = n('K1iM'),
         U = n.n(j),
         z = n('ddV6'),
-        W = n.n(z),
-        V = (n('tVqn'), n('jwue'), n('+oxZ'), n('Grlw'))
-      function G(e) {
-        var t = e.isActiveCreator,
-          n = e.results,
-          a = e.setting,
-          r = e.type
-        if (!(a.id === V.a.Monetization || a.id === V.a.SuperFollows) || t) {
-          var o = {
-            id: a.id,
+        W = n.n(z)
+      n('tVqn'), n('jwue'), n('+oxZ')
+      function V(e) {
+        var t = e.results,
+          n = e.setting,
+          a = e.type,
+          r = {
+            id: n.id,
             type: 'setting',
-            data: { text: a.title, location: { pathname: a.path, openInSameFrame: !0 } },
+            data: { text: n.title, location: { pathname: n.path, openInSameFrame: !0 } },
           }
-          'setting' === r
-            ? n.push(y()(y()({}, o), {}, { type: 'setting' }))
-            : 'setting_group' === r && n.push(y()(y()({}, o), {}, { type: 'setting_group' }))
-        }
+        'setting' === a
+          ? t.push(y()(y()({}, r), {}, { type: 'setting' }))
+          : 'setting_group' === a && t.push(y()(y()({}, r), {}, { type: 'setting_group' }))
       }
-      var q = n('VY6S'),
+      var G = n('VY6S'),
+        q = n('Grlw'),
         K = n('Es6L'),
         Y = (n('uFXj'), n('3EFP')),
         X = n('woHV'),
@@ -7522,128 +7521,125 @@
         ye = M.a.ba8f6f81,
         we = { component: 'search', element: 'result' }
       function _e(e) {
-        var t = e.isActiveCreator,
-          n = e.isSearching,
-          a = e.onChange,
-          r = e.searchIndex,
-          o = Object(pe.a)('settings_revamp_search_bar_enabled'),
-          i = Object(de.b)(),
-          l = Object(me.f)(),
-          c = g.a.useState(''),
-          s = W()(c, 2),
-          u = s[0],
-          d = s[1],
-          p = g.a.useState(void 0),
-          m = W()(p, 2),
-          h = m[0],
-          f = m[1],
-          v = g.a.useState(!1),
-          b = W()(v, 2),
-          w = b[0],
-          _ = b[1],
-          C = g.a.useState([]),
-          E = W()(C, 2),
-          x = E[0],
-          k = E[1],
-          S = g.a.useMemo(
+        var t = e.isSearching,
+          n = e.onChange,
+          a = e.searchIndex,
+          r = Object(pe.a)('settings_revamp_search_bar_enabled'),
+          o = Object(de.b)(),
+          i = Object(me.f)(),
+          l = g.a.useState(''),
+          c = W()(l, 2),
+          s = c[0],
+          u = c[1],
+          d = g.a.useState(void 0),
+          p = W()(d, 2),
+          m = p[0],
+          h = p[1],
+          f = g.a.useState(!1),
+          v = W()(f, 2),
+          b = v[0],
+          w = v[1],
+          _ = g.a.useState([]),
+          C = W()(_, 2),
+          E = C[0],
+          x = C[1],
+          k = g.a.useMemo(
             function () {
-              return Object(q.a)(function (e) {
-                i.scribe(y()(y()({}, we), {}, { action: e ? 'show' : 'empty' }))
+              return Object(G.a)(function (e) {
+                o.scribe(y()(y()({}, we), {}, { action: e ? 'show' : 'empty' }))
               }, 500)
             },
-            [i],
+            [o],
           ),
-          T = u.toLocaleLowerCase().trim(),
-          I = Boolean(T.length)
+          S = s.toLocaleLowerCase().trim(),
+          T = Boolean(S.length)
         g.a.useEffect(
           function () {
-            I
+            T
               ? (function () {
                   var e,
-                    n = [],
-                    a = U()(r)
+                    t = [],
+                    n = U()(a)
                   try {
-                    var o = function () {
-                      var a = e.value,
-                        r = !1
-                      Array.isArray(a.items) &&
-                        a.items.forEach(function (e) {
-                          Object(V.b)(T, e) &&
-                            (r || ((r = !0), G({ results: n, setting: a, type: 'setting_group', isActiveCreator: t })),
-                            G({ results: n, setting: e, type: 'setting', isActiveCreator: t }))
+                    var r = function () {
+                      var n = e.value,
+                        a = !1
+                      Array.isArray(n.items) &&
+                        n.items.forEach(function (e) {
+                          Object(q.b)(S, e) &&
+                            (a || ((a = !0), V({ results: t, setting: n, type: 'setting_group' })),
+                            V({ results: t, setting: e, type: 'setting' }))
                         }),
-                        !r &&
-                          Object(V.b)(T, a) &&
-                          G({ results: n, setting: a, type: 'setting_group', isActiveCreator: t })
+                        !a && Object(q.b)(S, n) && V({ results: t, setting: n, type: 'setting_group' })
                     }
-                    for (a.s(); !(e = a.n()).done; ) o()
-                  } catch (i) {
-                    a.e(i)
+                    for (n.s(); !(e = n.n()).done; ) r()
+                  } catch (o) {
+                    n.e(o)
                   } finally {
-                    a.f()
+                    n.f()
                   }
-                  k(n), T !== h && (f(T), S(n.length))
+                  x(t), S !== m && (h(S), k(t.length))
                 })()
-              : k([])
+              : x([])
           },
-          [T, I, r, t, h, S],
+          [S, T, a, m, k],
         )
-        var L = g.a.useCallback(
+        var I = g.a.useCallback(
             function () {
-              a(!1)
+              n(!1)
             },
-            [a],
+            [n],
+          ),
+          L = g.a.useCallback(
+            function () {
+              n(!0)
+            },
+            [n],
           ),
           P = g.a.useCallback(
             function () {
-              a(!0)
+              s && n(!0)
             },
-            [a],
+            [n, s],
           ),
-          O = g.a.useCallback(
+          O = g.a.useMemo(
             function () {
-              u && a(!0)
-            },
-            [a, u],
-          ),
-          D = g.a.useMemo(
-            function () {
-              return Object(q.a)(function (e) {
-                a(!0), d(e)
+              return Object(G.a)(function (e) {
+                n(!0), u(e)
               }, 100)
             },
-            [a],
+            [n],
           ),
-          A = g.a.useCallback(
+          D = g.a.useCallback(
             function (e) {
-              !w &&
+              !b &&
                 e.trim().length &&
-                (_(!0), i.scribe({ component: 'search', element: 'search_box', action: 'began_typing' })),
-                D(e)
+                (w(!0), o.scribe({ component: 'search', element: 'search_box', action: 'began_typing' })),
+                O(e)
             },
-            [w, i, D],
+            [b, o, O],
           )
-        if (!o) return null
+        if (!r) return null
         return g.a.createElement(se, {
-          alwaysOpen: n,
+          alwaysOpen: t,
           dropdownPosition: 'inline',
           inputStyle: Ce.input,
-          items: x,
-          onBackClicked: Object(K.a)() ? L : void 0,
-          onClick: P,
-          onFocus: O,
+          items: E,
+          onBackClicked: Object(K.a)() ? I : void 0,
+          onClick: L,
+          onFocus: P,
           onItemClick: function (e) {
             if ('setting' === e.type || 'setting_group' === e.type) {
               var t = 'string' == typeof e.data.location ? e.data.location : e.data.location.pathname
-              i.scribe(y()(y()({}, we), {}, { action: 'click' })), l.push(t, { backLocation: window.location.pathname })
+              o.scribe(y()(y()({}, we), {}, { action: 'click' })), i.push(t, { backLocation: window.location.pathname })
             }
           },
-          onQueryChange: A,
+          onQueryChange: D,
           placeholder: ye,
           renderEmptyState: function (e) {
             var t = e.style
-            return I
-              ? g.a.createElement(fe.a, { header: ve({ query: u }), message: be, style: t })
+            return T
+              ? g.a.createElement(fe.a, { header: ve({ query: s }), message: be, style: t })
               : g.a.createElement(
                   J.a,
                   { style: [t, Ce.emptyState] },
@@ -7651,7 +7647,7 @@
                 )
           },
           rounded: !0,
-          shouldRenderEmptyState: n && (!I || 0 === x.length),
+          shouldRenderEmptyState: t && (!T || 0 === E.length),
           source: ue.d.SearchBox,
         })
       }
@@ -7758,17 +7754,14 @@
                 )
               }),
               h()(c()(o), '_renderSearchInput', function () {
-                var e = o.props,
-                  t = e.isActiveCreator,
-                  n = e.searchIndex,
-                  a = o.state.isSearching
+                var e = o.props.searchIndex,
+                  t = o.state.isSearching
                 return g.a.createElement(_e, {
-                  isActiveCreator: t,
-                  isSearching: a,
+                  isSearching: t,
                   onChange: function (e) {
                     o.setState({ isSearching: e })
                   },
-                  searchIndex: n,
+                  searchIndex: e,
                 })
               }),
               h()(c()(o), '_renderGeneral', function () {
@@ -7796,24 +7789,20 @@
                   : null
               }),
               h()(c()(o), '_renderMonetization', function () {
-                var e,
+                var e = o.context.featureSwitches,
                   t = o.props,
                   n = t.isActiveCreator,
-                  a =
-                    null ===
-                      (e = t.searchIndex.find(function (e) {
-                        return e.id === V.a.Monetization
-                      })) || void 0 === e
-                      ? void 0
-                      : e.path
-                return n && a ? g.a.createElement(B.a, { label: at, link: a }) : null
+                  a = t.isApprovedCreator,
+                  r = e.isTrue('super_follow_web_onboarding_enabled') && a,
+                  i = e.isTrue('super_follow_web_edit_perks_enabled') && n
+                return r || i ? g.a.createElement(B.a, { label: at, link: '/settings/monetization' }) : null
               }),
               h()(c()(o), '_renderTwitterBlue', function () {
                 var e,
                   t =
                     null ===
                       (e = o.props.searchIndex.find(function (e) {
-                        return e.id === V.a.TwitterBlue
+                        return e.id === q.a.TwitterBlue
                       })) || void 0 === e
                       ? void 0
                       : e.path
@@ -8242,7 +8231,7 @@
         i = n('rxPX'),
         l = Object(i.a)()
           .propsFromState(function () {
-            return { viewerCountry: o.y }
+            return { viewerCountry: o.z }
           })
           .withAnalytics({ page: 'settings', section: 'about' }),
         c = n('dzZ/'),

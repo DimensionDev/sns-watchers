@@ -9,8 +9,8 @@
         })
       var i = n('VrFO'),
         a = n.n(i),
-        r = n('Y9Ll'),
-        o = n.n(r),
+        o = n('Y9Ll'),
+        r = n.n(o),
         c = n('1Pcy'),
         l = n.n(c),
         s = n('5Yy7'),
@@ -32,7 +32,7 @@
             var t = f.h(e)
             return t ? Object(S.f)(['screen_name'])(e, t) : L.a.LOADING
           },
-          f.u,
+          f.v,
           L.d,
         ),
         k = function (e) {
@@ -44,8 +44,8 @@
           .propsFromState(function () {
             return {
               fetchStatus: v,
-              loginEligibility: f.t,
-              loginReturnPath: f.r,
+              loginEligibility: f.u,
+              loginReturnPath: f.s,
               emailLiteLoginUserId: f.g,
               userId: f.h,
               userScreenName: k,
@@ -56,8 +56,8 @@
               n = e.fetchStatus,
               i = e.loginEligibility,
               a = e.loginReturnPath,
-              r = e.userId,
-              o = e.userScreenName,
+              o = e.userId,
+              r = e.userScreenName,
               c = i ? 'true' === i.sms.eligible : void 0
             return {
               fetchStatus: n,
@@ -65,8 +65,8 @@
               loginReturnPath: a,
               phoneNumber: i ? i.sms.phone_number : void 0,
               shouldRedirectToEmailLiteLogin: !c && !!t,
-              userId: r,
-              userScreenName: o,
+              userId: o,
+              userScreenName: r,
             }
           })
           .propsFromActions(function () {
@@ -74,7 +74,7 @@
               createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('SMS_LOGIN_SCREEN'),
               fetchOneUserIfNeeded: S.e.fetchOneIfNeeded,
               fetchOneFactorLoginEligibility: f.c,
-              setLoginReturnPath: f.z,
+              setLoginReturnPath: f.A,
             }
           })
           .withAnalytics({ page: 'login_sms' }),
@@ -83,18 +83,18 @@
         C = n('3XMw'),
         R = n.n(C),
         B = n('lUZE'),
-        F = n('6oVL'),
-        I = n('yoO3'),
-        N = 'legalTerm',
-        O = n('fEA7'),
-        U = n.n(O),
-        A = n('mw9i'),
+        A = n('6oVL'),
+        F = n('yoO3'),
+        I = 'legalTerm',
+        N = n('fEA7'),
+        O = n.n(N),
+        U = n('mw9i'),
         j = n('t62R'),
         x = n('rHpw'),
         D = R.a.f0816dee,
         M = R.a.f9c558ae,
-        z = R.a.haa104f0,
-        q = R.a.h25bc383,
+        q = R.a.haa104f0,
+        z = R.a.h25bc383,
         V = R.a.ecde12c1,
         G = R.a.j4824c52,
         H = R.a.fca32b2f,
@@ -111,9 +111,9 @@
                   t = e.loginReturnPath,
                   n = e.phoneNumber,
                   a = e.userScreenName,
-                  r = a ? '/login?username_or_email='.concat(encodeURIComponent(a)) : '/login'
+                  o = a ? '/login?username_or_email='.concat(encodeURIComponent(a)) : '/login'
                 return b.a.createElement(
-                  A.a,
+                  U.a,
                   { style: W.root, withGutter: !0 },
                   b.a.createElement(B.a, { style: W.icon }),
                   b.a.createElement(
@@ -127,11 +127,11 @@
                     V({ phoneNumber: n }),
                   ),
                   b.a.createElement(
-                    F.a,
+                    A.a,
                     {
                       formActionUrl: '/login/error_options_sms',
                       loginReturnPath: t,
-                      submitButtonLabel: z,
+                      submitButtonLabel: q,
                       submitButtonStyle: W.submitButton,
                     },
                     b.a.createElement('input', { name: 'session[username_or_email]', type: 'hidden', value: a }),
@@ -141,8 +141,8 @@
                     { align: 'center', style: W.buttonWrapper },
                     b.a.createElement(
                       j.b,
-                      { align: 'center', link: r, onClick: i._handleScribePasswordLoginClick, weight: 'bold' },
-                      q,
+                      { align: 'center', link: o, onClick: i._handleScribePasswordLoginClick, weight: 'bold' },
+                      z,
                     ),
                   ),
                   b.a.createElement(
@@ -158,10 +158,10 @@
                       j.b,
                       {
                         align: 'center',
-                        link: r,
+                        link: o,
                         onClick: i._handleUpdatePhoneNumberClick,
                         size: 'subtext2',
-                        testID: N,
+                        testID: I,
                       },
                       H,
                     ),
@@ -173,8 +173,8 @@
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchOneFactorLoginEligibility,
                   a = e.fetchOneUserIfNeeded,
-                  r = e.userId
-                r ? (n().catch(t()), a(r).catch(t(P.a))) : i._redirectToLoginPage()
+                  o = e.userId
+                o ? (n().catch(t()), a(o).catch(t(P.a))) : i._redirectToLoginPage()
               }),
               d()(l()(i), '_handleScribePasswordLoginClick', function () {
                 i.props.analytics.scribe({ element: 'password_login', action: 'click' })
@@ -189,16 +189,16 @@
                 var t = i.props,
                   n = t.history,
                   a = t.shouldRedirectToEmailLiteLogin,
-                  r = a ? '/i/flow/lite_login' : '/login',
-                  o = a ? void 0 : { username_or_email: e }
-                n.replace({ pathname: r, query: o })
+                  o = a ? '/i/flow/lite_login' : '/login',
+                  r = a ? void 0 : { username_or_email: e }
+                n.replace({ pathname: o, query: r })
               }),
-              (i._mobileLoginToken = U.a.v1().replace(/-/g, '')),
+              (i._mobileLoginToken = O.a.v1().replace(/-/g, '')),
               i
             )
           }
           return (
-            o()(n, [
+            r()(n, [
               {
                 key: 'UNSAFE_componentWillReceiveProps',
                 value: function (e) {
@@ -219,7 +219,7 @@
                 value: function () {
                   var e = this.props.fetchStatus
                   return b.a.createElement(
-                    I.a,
+                    F.a,
                     null,
                     b.a.createElement(T.a, {
                       accessibilityLabel: D,
@@ -253,8 +253,8 @@
       'use strict'
       var i = n('ddV6'),
         a = n.n(i),
-        r = n('VrFO'),
-        o = n.n(r),
+        o = n('VrFO'),
+        r = n.n(o),
         c = n('Y9Ll'),
         l = n.n(c),
         s = n('1Pcy'),
@@ -279,16 +279,16 @@
         C = n('MWbm'),
         R = n('Irs7'),
         B = n('v6aA'),
-        F = n('/yvb'),
-        I = n('rHpw'),
-        N = E.a.e919c3bc,
-        O = (function (e) {
+        A = n('/yvb'),
+        F = n('rHpw'),
+        I = E.a.e919c3bc,
+        N = (function (e) {
           p()(n, e)
           var t = d()(n)
           function n() {
             var e
-            o()(this, n)
-            for (var i = arguments.length, a = new Array(i), r = 0; r < i; r++) a[r] = arguments[r]
+            r()(this, n)
+            for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
               b()(u()(e), '_mobileLoginToken', T.a.v1().replace(/-/g, '')),
@@ -337,14 +337,14 @@
                     t = e.children,
                     n = e.formActionUrl,
                     i = e.hideSubmitButton,
-                    r = e.horizontalLayout,
-                    o = e.loginReturnPath,
+                    o = e.horizontalLayout,
+                    r = e.loginReturnPath,
                     c = e.submitButtonDisabled,
                     l = e.submitButtonLabel,
                     s = e.submitButtonSize,
                     u = e.submitButtonStyle,
                     m = e.submitButtonType,
-                    p = 'string' == typeof o ? o.split('?') : [],
+                    p = 'string' == typeof r ? r.split('?') : [],
                     h = a()(p, 2),
                     d = h[0],
                     g = h[1],
@@ -353,7 +353,7 @@
                     _ = ''.concat('').concat(b).concat(f),
                     E = y.a.createElement(
                       C.a,
-                      { style: r && U.horizontalFields },
+                      { style: o && O.horizontalFields },
                       y.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: _ }),
                       y.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
                       y.a.createElement('input', {
@@ -368,9 +368,9 @@
                         ? null
                         : y.a.createElement(
                             C.a,
-                            { style: r && U.loginButtonContainer },
+                            { style: o && O.loginButtonContainer },
                             y.a.createElement(
-                              F.a,
+                              A.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
@@ -385,7 +385,7 @@
                     )
                   return y.a.createElement(
                     C.a,
-                    { style: U.loginForm },
+                    { style: O.loginForm },
                     y.a.createElement('form', {
                       action: n,
                       children: E,
@@ -401,23 +401,23 @@
             n
           )
         })(y.a.Component)
-      b()(O, 'contextType', B.a),
-        b()(O, 'defaultProps', {
+      b()(N, 'contextType', B.a),
+        b()(N, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: N,
+          submitButtonLabel: I,
           submitButtonType: 'brandFilled',
         })
-      var U = I.a.create(function (e) {
+      var O = F.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(R.a)(O, { element: 'inline_login_form' })
+      t.a = Object(R.a)(N, { element: 'inline_login_form' })
     },
   },
 ])

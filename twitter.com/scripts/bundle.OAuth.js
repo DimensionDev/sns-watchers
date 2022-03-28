@@ -94,7 +94,7 @@
           .propsFromState(function () {
             return {
               fetchStatus: A,
-              isLoggedIn: D.m,
+              isLoggedIn: D.n,
               oAuthConsentMetadata: T,
               postStatus: O,
               redirectUri: I,

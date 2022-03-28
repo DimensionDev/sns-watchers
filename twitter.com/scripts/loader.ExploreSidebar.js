@@ -23,12 +23,12 @@
         p = n.n(l),
         b = n('KEM+'),
         v = n.n(b),
-        _ = (n('2G9S'), n('ERkP')),
-        h = n.n(_),
+        h = (n('2G9S'), n('ERkP')),
+        _ = n.n(h),
         m = n('FIs5'),
         g = n('yiKp'),
-        w = n.n(g),
-        E = n('ezF+'),
+        E = n.n(g),
+        w = n('ezF+'),
         y = n('8UdT'),
         O = n('iu0J'),
         T = n('+o05'),
@@ -36,15 +36,15 @@
         j = n('XtkE'),
         I =
           ((r = {}),
-          v()(r, y.b.TimelineCursor, E.e(E.a())),
-          v()(r, y.b.Label, E.e(E.a())),
-          v()(r, y.b.Message, E.e(E.a())),
-          v()(r, y.b.News, E.e(E.a())),
+          v()(r, y.b.TimelineCursor, w.e(w.a())),
+          v()(r, y.b.Label, w.e(w.a())),
+          v()(r, y.b.Message, w.e(w.a())),
+          v()(r, y.b.News, w.e(w.a())),
           v()(r, y.b.Trend, Object(j.a)({ withThirdPartyCards: !1, errorContext: 'EXPLORE_SIDEBAR' })),
           v()(r, y.b.EventSummary, Object(O.a)({})),
           v()(r, y.b.ScoreEventSummary, T.a),
           r),
-        x = w()(w()({}, Object(S.a)({ isInSidebar: !0 })), I),
+        x = E()(E()({}, Object(S.a)({ isInSidebar: !0 })), I),
         L = n('3XMw'),
         R = n.n(L),
         C = n('oQhu'),
@@ -58,7 +58,7 @@
         D = R.a.ae05f268,
         K = 3e5,
         X = function () {
-          return h.a.createElement(m.a, { message: D })
+          return _.a.createElement(m.a, { message: D })
         },
         q = Object(C.a)(function (e, t) {
           return Object(F.c)({ featureSwitches: t, displayLocation: F.a.WebSidebar, focalTweetId: e })
@@ -114,10 +114,10 @@
               {
                 key: 'render',
                 value: function () {
-                  return h.a.createElement(
+                  return _.a.createElement(
                     A.a,
                     null,
-                    h.a.createElement(P.a, {
+                    _.a.createElement(P.a, {
                       entryConfiguration: x,
                       module: this._getModule(),
                       pollingIntervalMsOverride: K,
@@ -134,7 +134,7 @@
             ]),
             n
           )
-        })(h.a.Component)
+        })(_.a.Component)
       v()(J, 'contextType', M.a)
       t.default = J
     },
@@ -153,10 +153,10 @@
           return v
         }),
         n.d(t, 'f', function () {
-          return _
+          return h
         }),
         n.d(t, 'e', function () {
-          return h
+          return _
         }),
         n.d(t, 'g', function () {
           return m
@@ -187,10 +187,10 @@
               : s
               ? ''.concat(f).concat(p, '-user-').concat(s)
               : ''.concat(f).concat(p),
-            _ = r.isTrue('responsive_web_new_client_events_enabled')
+            h = r.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
             timelineId: v,
-            formatResponse: b(_),
+            formatResponse: b(h),
             getEndpoint: function (e) {
               return e.URT.fetchExplore
             },
@@ -205,7 +205,7 @@
                   include_page_configuration: u,
                   initial_tab_id: d,
                   profile_user_id: s,
-                  entity_tokens: _,
+                  entity_tokens: h,
                 },
               )
             },
@@ -266,10 +266,10 @@
         v = function (e, t) {
           return p({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
         },
-        _ = Object(o.a)(function (e) {
+        h = Object(o.a)(function (e) {
           return p({ featureSwitches: e, contentType: d.Trends })
         }),
-        h = Object(o.a)(function (e) {
+        _ = Object(o.a)(function (e) {
           return p({ featureSwitches: e, displayLocation: s.WebSidebar })
         }),
         m = function () {

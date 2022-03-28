@@ -2619,7 +2619,7 @@
               : u
               ? ''.concat(d).concat(h, '-user-').concat(u)
               : ''.concat(d).concat(h),
-            E = a.isTrue('responsive_web_new_client_events_enabled')
+            E = a.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
             timelineId: m,
             formatResponse: p(E),
@@ -3079,7 +3079,7 @@
               ? Promise.resolve()
               : e(function (e, t, n) {
                   var a = n.api
-                  return C.m(t())
+                  return C.n(t())
                     ? u.b(e, { request: a.Settings.fetchPlaceTrendSettings })({
                         actionTypes: O,
                         context: 'FETCH_TRENDS_SETTINGS',
@@ -3222,7 +3222,7 @@
         y = function (e) {
           return function (t, n, a) {
             var r = a.api
-            return c.b(t, { params: e, meta: { lang: Object(d.o)(n()) }, request: r.FeatureSwitch.fetchLanguages })({
+            return c.b(t, { params: e, meta: { lang: Object(d.p)(n()) }, request: r.FeatureSwitch.fetchLanguages })({
               actionTypes: p,
               context: 'FETCH_AVAILABLE_LANGUAGES',
             })
@@ -6489,7 +6489,7 @@
           return t && Object(C.b)(e, t)
         },
         A = function (e) {
-          var t = Object(_.o)(e)
+          var t = Object(_.p)(e)
           return t && Object(w.b)(e, t)
         },
         k = Object(y.a)()
@@ -6497,7 +6497,7 @@
             return {
               countryName: T,
               emails: S.selectEmails,
-              languageCode: _.o,
+              languageCode: _.p,
               languageName: A,
               loggedInUser: g.e.selectLoggedInUser,
               phones: S.selectPhoneNumbers,
@@ -8423,7 +8423,7 @@
         C = n('hqKg'),
         T = n('0KEI'),
         A = n('oEGd'),
-        k = Object(C.createSelector)(S.m, w.g, v.selectPreferences, function (e, t, n) {
+        k = Object(C.createSelector)(S.n, w.g, v.selectPreferences, function (e, t, n) {
           return !(!t.settings_metadata || !t.settings_metadata.is_eu) || n.is_eu_country
         }),
         L = Object(C.createSelector)(
@@ -11313,7 +11313,7 @@
         N = function () {
           return function (e, t, n) {
             var a = n.api,
-              r = w.q(t())
+              r = w.r(t())
             return S.b(e, { params: { userId: r }, request: a.EmailNotificationSettings.fetch })({
               actionTypes: O,
               context: 'FETCH_EMAIL_NOTIFICATIONS',
@@ -11323,7 +11323,7 @@
         D = function (e) {
           return function (t, n, a) {
             var r = a.api,
-              o = w.q(n())
+              o = w.r(n())
             return S.c(t, { params: { userId: o, settings: e }, request: r.EmailNotificationSettings.update })({
               actionTypes: I,
               context: 'UPDATE_EMAIL_NOTIFICATIONS',
@@ -12024,7 +12024,7 @@
             a.userPersistence
             t({ payload: e, type: g })
             var r = n().recentSearches
-            return Object(s.m)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
+            return Object(s.n)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
           }
         },
         v = 'rweb/recentSearches/CLEAR_ALL',
@@ -12033,7 +12033,7 @@
             n.userPersistence
             e({ type: v })
             var a = t().recentSearches
-            return Object(s.m)(t()) ? e(d(a.recentSearches)) : Promise.resolve()
+            return Object(s.n)(t()) ? e(d(a.recentSearches)) : Promise.resolve()
           }
         },
         w = 'rweb/recentSearches/ADD_QUERY',
@@ -12042,7 +12042,7 @@
             a.userPersistence
             t({ payload: e, type: w })
             var r = n().recentSearches
-            return Object(s.m)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
+            return Object(s.n)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
           }
         },
         T = function () {
@@ -12053,7 +12053,7 @@
               : e(function (e, t, n) {
                   var a = n.userPersistence,
                     r = t()
-                  return Object(s.m)(r)
+                  return Object(s.n)(r)
                     ? a
                         .get(u)
                         .then(function (t) {
@@ -12212,7 +12212,7 @@
         S = function () {
           return function (e, t, n) {
             var a = n.api,
-              r = (n.featureSwitches, l.q(t()))
+              r = (n.featureSwitches, l.r(t()))
             return Object(f.b)(e, { params: { userId: r }, request: a.Settings.fetchLoginVerificationSettings })({
               actionTypes: m,
               context: 'FETCH_LOGIN_VERIFICATION_SETTINGS',
@@ -12291,7 +12291,7 @@
       }
       function _(e) {
         var t = r.a.useContext(o.a).featureSwitches,
-          n = Object(f.a)(u.m),
+          n = Object(f.a)(u.n),
           a = Object(i.b)(l.u, t)
         return n || a ? e.children : r.a.createElement(b, null)
       }
@@ -12464,7 +12464,7 @@
         F = function () {
           return function (e, t, n) {
             var a = n.api,
-              r = v.q(t())
+              r = v.r(t())
             return r
               ? y.b(e, { params: { userId: r }, request: a.SafeSearch.fetch })({
                   actionTypes: A,
@@ -12477,7 +12477,7 @@
           return function (n, a, o) {
             var i = o.api,
               c = a(),
-              s = v.q(c)
+              s = v.r(c)
             if (!s) return Promise.resolve(n({ type: A.FAILURE }))
             var l = r()(r()({}, O(c)), {}, { userId: s })
             return (

@@ -35,10 +35,10 @@
           return F
         }),
         n.d(t, 'j', function () {
-          return q
+          return G
         }),
         n.d(t, 'k', function () {
-          return G
+          return q
         }),
         n.d(t, 'h', function () {
           return B
@@ -141,12 +141,12 @@
               N = i()(L, 1)[0] || {},
               P = N.mediaFile,
               F = N.mediaMetadata,
-              q = I.length > 0 && I.join(','),
-              G = {}
+              G = I.length > 0 && I.join(','),
+              q = {}
             P && P.isGif
-              ? (G.extraInitParams = '&media_category=dm_gif')
-              : P && P.isVideo && (G.extraInitParams = '&media_category=dm_video')
-            var W = m.p(x, G),
+              ? (q.extraInitParams = '&media_category=dm_gif')
+              : P && P.isVideo && (q.extraInitParams = '&media_category=dm_video')
+            var W = m.p(x, q),
               V = [t(W)],
               X = (B(O, l) || {}).found_media_origin
             return (
@@ -184,7 +184,7 @@
                           attachment: r,
                           conversation_id: l,
                           id: k,
-                          recipient_ids: q,
+                          recipient_ids: G,
                           sender_id: u,
                           text: e.text,
                         }),
@@ -196,7 +196,7 @@
                             !n && { media_id: y },
                           ),
                           {},
-                          { recipient_ids: q, request_id: k, tweet_id: n },
+                          { recipient_ids: G, request_id: k, tweet_id: n },
                         )
                       D &&
                         ((w['quick_reply_response[options][id]'] = D.id),
@@ -233,7 +233,7 @@
                                 error: !0,
                                 id: k,
                                 localMediaId: x,
-                                recipient_ids: q,
+                                recipient_ids: G,
                                 sender_id: u,
                                 text: e.text,
                               }),
@@ -290,11 +290,11 @@
           var n = m.k(e, H(e, t))
           return n.length > 0 ? n[0] : null
         },
-        q = function (e, t) {
+        G = function (e, t) {
           var n = R(e, t)
           return !!n && n.isUploading
         },
-        G = function (e, t) {
+        q = function (e, t) {
           return m.l(e, H(e, t))
         },
         B = function (e, t) {
@@ -433,10 +433,10 @@
         F = function (e, t) {
           return t.location && t.location.state && t.location.state.promotedContent
         },
-        q = function (e, t) {
+        G = function (e, t) {
           return t.location && t.location.state && t.location.state.conversationSection
         },
-        G = function (e, t) {
+        q = function (e, t) {
           return Object(j.e)(B(e, t))
         },
         B = function (e, t) {
@@ -472,7 +472,7 @@
           ) {
             var o = Object(R.a)(e, n),
               a = (function (e, t) {
-                return g.q(e)
+                return g.r(e)
               })(e)
             return K(o, a)
           }
@@ -510,14 +510,14 @@
               reportedId: W,
               inboxType: N,
               isMedia: H,
-              lang: g.o,
+              lang: g.p,
               liveEvent: J,
               moment: Y,
               list: z,
               promotedContent: F,
-              conversationSection: q,
+              conversationSection: G,
               reportType: B,
-              reportSource: G,
+              reportSource: q,
               scribeNamespace: P,
               tweet: V,
               user: X,

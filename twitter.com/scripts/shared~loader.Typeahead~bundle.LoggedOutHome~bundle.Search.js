@@ -2395,7 +2395,7 @@
           return function (e, t, a) {
             a.api
             var r = t()
-            return Object(m.m)(r)
+            return Object(m.n)(r)
               ? (function (e) {
                   return e.savedSearches.fetchStatus
                 })(r) === h.a.LOADED
@@ -2494,7 +2494,7 @@
             r.userPersistence
             t({ payload: e, type: b })
             var n = a().recentSearches
-            return Object(s.m)(a()) ? t(d(n.recentSearches)) : Promise.resolve()
+            return Object(s.n)(a()) ? t(d(n.recentSearches)) : Promise.resolve()
           }
         },
         g = 'rweb/recentSearches/CLEAR_ALL',
@@ -2503,7 +2503,7 @@
             a.userPersistence
             e({ type: g })
             var r = t().recentSearches
-            return Object(s.m)(t()) ? e(d(r.recentSearches)) : Promise.resolve()
+            return Object(s.n)(t()) ? e(d(r.recentSearches)) : Promise.resolve()
           }
         },
         w = 'rweb/recentSearches/ADD_QUERY',
@@ -2512,7 +2512,7 @@
             r.userPersistence
             t({ payload: e, type: w })
             var n = a().recentSearches
-            return Object(s.m)(a()) ? t(d(n.recentSearches)) : Promise.resolve()
+            return Object(s.n)(a()) ? t(d(n.recentSearches)) : Promise.resolve()
           }
         },
         I = function () {
@@ -2523,7 +2523,7 @@
               : e(function (e, t, a) {
                   var r = a.userPersistence,
                     n = t()
-                  return Object(s.m)(n)
+                  return Object(s.n)(n)
                     ? r
                         .get(u)
                         .then(function (t) {

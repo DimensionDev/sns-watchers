@@ -41,6 +41,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('hd8c22d2', 'Mod'),
           a('c3153100', 'Admin'),
+          a('b7fa0cfd', 'Top Articles'),
+          a('de43eaf2', 'Undo Tweet'),
+          a('f6e88161', 'Labs'),
+          a(
+            'e4972a1a',
+            'Check out some of the new features we’re testing before they’re available to everyone else and tell us what you think.',
+          ),
+          a('adcaa213', 'See the most-shared articles from people you follow.'),
+          a(
+            'ccfdbb86',
+            'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
+          ),
           a('ac0d27be', 'Sorry, this account has been suspended.'),
           a('bcee7443', 'Account update failed.'),
           a('e0cbf779', 'Add phone'),
@@ -153,7 +165,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gfb2ba0f', 'Show more about your choices.'),
           a('ia5e7487', 'Close'),
           a('fd0ff73b', 'Cookies Use'),
-          a('b7fa0cfd', 'Top Articles'),
           a('d5696fcb', 'Shortcut help'),
           a('e722b9d0', 'Next Tweet'),
           a('a86b5194', 'Previous Tweet'),
@@ -1153,20 +1164,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('a1aa840e', 'Your Tweet was deleted'),
           a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
-          a('e6c84638', 'Embed Tweet'),
-          a('c66afdc2', function (e) {
-            return 'Follow @' + e.screenName
-          }),
+          a('e6c84638', 'Embed Tweet')
+        a('c66afdc2', function (e) {
+          return 'Follow @' + e.screenName
+        }),
           a('e1618e48', function (e) {
             return 'You followed @' + e.screenName
           }),
           a('ge5067bb', 'Hide reply'),
           a('ea626ab3', 'Reply hidden from Tweet'),
-          a('fc716886', 'Hiding replies to your Tweets')
-        a(
-          'f2a2a06e',
-          'To give you more control over the conversations you start, Tweet authors can hide replies to their Tweets.',
-        ),
+          a('fc716886', 'Hiding replies to your Tweets'),
+          a(
+            'f2a2a06e',
+            'To give you more control over the conversations you start, Tweet authors can hide replies to their Tweets.',
+          ),
           a(
             'f82c0bbf',
             'Hidden replies are moved to a separate page, and anyone can view them by selecting the hidden reply icon on the Tweet.',
@@ -2293,13 +2304,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c20dc653', 'Only 10 people can be tagged.'),
           a('ae0831ab', function (e) {
             return '@' + e.screenName + ' can’t be tagged in photos'
-          }),
-          a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
+          })
+        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
           a('e4e4e50a', 'Scheduled Tweets'),
           a('h3701ffd', 'Update'),
           a('c5dd0190', 'Time'),
-          a('edeff231', 'Date')
-        a('c2b358ce', 'AM/PM'),
+          a('edeff231', 'Date'),
+          a('c2b358ce', 'AM/PM'),
           a('b43679d2', 'Hour'),
           a('f1fce85d', 'Minute'),
           a('fddf24b4', 'Time zone'),
@@ -2378,8 +2389,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7fde2b8', 'Your Twitter data'),
           a('d299431b', 'Monetization'),
           a('a6777c1b', 'Super Follows'),
-          a('de43eaf2', 'Undo Tweet'),
-          a('f6e88161', 'Labs'),
           a('ib35705d', 'Manage Subscription'),
           a('f8645654', 'Security and account access'),
           a('j95edf76', 'Security'),
@@ -3535,15 +3544,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i7acdb35', 'Tablets'),
           a('c112dfc8', 'Desktop'),
           a('jd8607b9', 'Activated on'),
-          a('ea4f6c9e', 'Browsers'),
-          a('d750b93e', function (e) {
-            return e.count + ' browser' + n(e.count, '', 's')
-          }),
+          a('ea4f6c9e', 'Browsers')
+        a('d750b93e', function (e) {
+          return e.count + ' browser' + n(e.count, '', 's')
+        }),
           a('a9783601', 'Mobile Devices'),
           a('j043aa31', function (e) {
             return e.count + ' mobile device' + n(e.count, '', 's')
-          })
-        a('f2aa6e95', 'This feature is off'),
+          }),
+          a('f2aa6e95', 'This feature is off'),
           a('i4d7deee', 'Go to your personalization and data settings to turn it on'),
           a('ae415fd2', 'This setting is off.'),
           a('a90be7b3', 'Email addresses'),
@@ -4313,14 +4322,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c336b06a', 'Learn more'),
           a('f1cb36b8', 'Payout setup'),
           a('e20f6661', 'You’re all set!'),
-          a(
-            'a9ee1ecc',
-            'We’ve verified your Stripe account and you’re good to go. We’ll send you a notification as soon as Super Follows is enabled on your account.',
-          ),
-          a(
-            'd0c4f937',
-            'We’ve confirmed your Stripe account. It can take 1–3 weeks for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
-          ),
+          a('d7d4da89', '1–3 weeks'),
           a('ja884230', 'Set up your payout details'),
           a('af1b808d', 'Add a verified Stripe account before getting started with Super Follows.'),
           a('fe339750', 'Create Stripe account'),
@@ -4375,16 +4377,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a21b8ad2', 'Ad-free Sites'),
           a('hd885aef', 'See your impact'),
           a('je4ccd3a', 'Ad-free Articles Help Center'),
-          a(
-            'e4972a1a',
-            'Check out some of the new features we’re testing before they’re available to everyone else and tell us what you think.',
-          ),
-          a('adcaa213', 'See the most-shared articles from people you follow.'),
           a('e5fff0c7', 'Your subscription is active.'),
-          a(
-            'ccfdbb86',
-            'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
-          ),
           a(
             'd15f6d3d',
             'Check out which sites are on our growing network of Twitter Blue Publishers. Doesn’t include paywall access right now.',
@@ -4768,7 +4761,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
-          )
+          ),
+          a('e16e8170', 'Position')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4785,10 +4779,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('e16e8170', 'Position'),
-          a('a2bb5115', function (e) {
-            return e.count + ' Tweet' + n(e.count, '', 's')
-          }),
+        a('a2bb5115', function (e) {
+          return e.count + ' Tweet' + n(e.count, '', 's')
+        }),
           a('j5602a96', function (e) {
             return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
           }),
@@ -6041,9 +6034,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8b5757c', '0.25x'),
           a('e7e954de', '0.5x'),
           a('g07ffe66', '0.75x'),
-          a('d8bede9d', '1x')
-        a('j41845c7', '1.25x'),
-          a('e9eeed9e', '1.5x'),
+          a('d8bede9d', '1x'),
+          a('j41845c7', '1.25x')
+        a('e9eeed9e', '1.5x'),
           a('fe45dc83', '1.75x'),
           a('e791190a', '2x'),
           a('b3160a69', function (e) {
@@ -8366,6 +8359,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
+                  ]
+                },
+              },
+              {
+                key: 'cf780193',
+                get: function () {
+                  return [
+                    'We’ve confirmed your Stripe account. It can take ',
+                    ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
                   ]
                 },
               },

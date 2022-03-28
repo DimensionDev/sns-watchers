@@ -539,7 +539,7 @@
         },
         Re = Object(Oe.a)()
           .propsFromState(function () {
-            return { translation: Me, translationFetchStatus: Fe, userLanguage: Ie.o }
+            return { translation: Me, translationFetchStatus: Fe, userLanguage: Ie.p }
           })
           .propsFromActions(function () {
             return {
@@ -3830,8 +3830,8 @@
               shouldShowDownvoteFullscreenEducation: $,
               topic: X,
               tweet: F.a.createHydratedTweetSelector(q),
-              userCountry: I.y,
-              userLanguage: I.o,
+              userCountry: I.z,
+              userLanguage: I.p,
             }
           })
           .adjustStateProps(function (e) {
@@ -5743,8 +5743,8 @@
               tweet: F.a.createHydratedTweetSelector(K),
               urtAdvertiser: $,
               urtPromotedContent: Z,
-              userCountry: x.y,
-              userLanguage: x.o,
+              userCountry: x.z,
+              userLanguage: x.p,
             }
           })
           .adjustStateProps(function (e) {

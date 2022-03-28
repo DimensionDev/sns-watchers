@@ -614,7 +614,8 @@
         }
       T.metadata = { width: 24, height: 24 }
       var k = T,
-        I = {
+        I = n('5wO0'),
+        S = {
           conversationControlsFollowersCanEngage: {
             Icon: f.a,
             calloutType: 'primary',
@@ -706,16 +707,16 @@
             detail: m.a.fe5ab73c,
             inline: m.a.fe5ab73c,
           },
-          trustedFriendsReplyOwn: { Icon: g.a, calloutType: 'success', detail: m.a.fe0c6436, inline: m.a.fe0c6436 },
+          trustedFriendsReplyOwn: { Icon: I.a, calloutType: 'success', detail: m.a.fe0c6436, inline: m.a.fe0c6436 },
           trustedFriendsReplyOthers: {
-            Icon: g.a,
+            Icon: I.a,
             calloutType: 'success',
             detail: m.a.h7a1a9de,
             detailAction: { label: m.a.d7e50a66, link: 'https://help.twitter.com/using-twitter/twitter-circle' },
             inline: m.a.e5e32275,
           },
         },
-        S = function (e, t) {
+        x = function (e, t) {
           return 'string' != typeof e ? e({ screenName: t }) : e
         }
       t.a = function (e) {
@@ -724,7 +725,7 @@
           r = e.screenName,
           i = e.style,
           o = e.type,
-          s = I[o],
+          s = S[o],
           l = s.Icon,
           c = s.calloutType,
           h = s.detail,
@@ -735,7 +736,7 @@
           b = 'detail' === t,
           g = b ? m : void 0,
           _ = b ? f : void 0,
-          w = S(b ? h : v, r)
+          w = x(b ? h : v, r)
         return a.a.createElement(
           p.a,
           { style: i },
@@ -792,7 +793,7 @@
         S = n('rxPX'),
         x = Object(S.a)()
           .propsFromState(function () {
-            return { homeHasUnread: I.b }
+            return { homeHasUnread: I.a }
           })
           .withAnalytics(),
         O = n('3XMw'),
@@ -5184,17 +5185,19 @@
                 value: function () {
                   var e = this.props,
                     t = e.Icon,
-                    n = e.headline,
-                    r = e.withThumbnail
+                    n = e.action,
+                    r = e.headline,
+                    a = e.withThumbnail,
+                    i = r || n
                   if (t) {
-                    if (r)
+                    if (a)
                       return y.a.createElement(C.a, {
                         Icon: t,
                         color: this._getThumbnailColor(),
-                        size: n ? 'large' : 'medium',
-                        style: [j.thumbnail, n && j.thumbnailLargeMargin],
+                        size: i ? 'large' : 'medium',
+                        style: [j.thumbnail, i && j.thumbnailLargeMargin],
                       })
-                    if (n)
+                    if (r)
                       return y.a.createElement(
                         b.b,
                         { align: 'center' },
@@ -5236,6 +5239,7 @@
                   if (t)
                     return y.a.createElement(b.b, {
                       children: t.label,
+                      color: 'text',
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
@@ -6267,6 +6271,38 @@
               }),
               o.a.createElement('path', {
                 d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
+              }),
+            ),
+          )
+        }
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
+    },
+    '5wO0': function (e, t, n) {
+      'use strict'
+      var r = n('yiKp'),
+        a = n.n(r),
+        i = n('ERkP'),
+        o = n.n(i),
+        s = n('Lsrn'),
+        l = n('k/Ka'),
+        c = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(l.a)(
+            'svg',
+            a()(
+              a()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [s.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            o.a.createElement(
+              'g',
+              null,
+              o.a.createElement('path', {
+                d: 'M4.7 5.846c.384-2.878 2.15-4.6 4.72-4.6s4.334 1.718 4.72 4.6C14.7 10 13.07 11.6 9.42 11.6S4.145 10 4.7 5.846zM3.217 21.94h9.573c-2.09-2.456-3.57-5.994-1.8-8.738-4.475-.665-8.87 1.732-9.916 5.948-.326 1.17.36 2.384 1.53 2.71.2.055.406.082.613.08zm8.976-6.066c0 3.54 4.18 7.1 5.34 7.126 1.16-.02 5.34-3.586 5.34-7.126.016-1.517-1.16-2.78-2.673-2.874-1.337 0-2.05 1.01-2.668 1.88-.617-.87-1.332-1.88-2.666-1.88-1.513.095-2.688 1.358-2.673 2.874z',
               }),
             ),
           )
@@ -12176,7 +12212,7 @@
         },
         Fe = Object(Pe.a)()
           .propsFromState(function () {
-            return { translation: Ae, translationFetchStatus: De, userLanguage: ke.o }
+            return { translation: Ae, translationFetchStatus: De, userLanguage: ke.p }
           })
           .propsFromActions(function () {
             return {
@@ -16098,7 +16134,7 @@
           l.api
           var c = l.featureSwitches
           return n(o.a.unretweet(e, t)).then(function () {
-            var t = Object(i.q)(r()),
+            var t = Object(i.r)(r()),
               l = o.a.select(r(), e),
               u = l && (l.retweeted_status ? o.a.select(r(), l.retweeted_status) : l)
             if (t && u && (u.user !== t || u.id_str !== e))
@@ -17646,7 +17682,7 @@
             },
             mapResponseToActions: function (e, t, n) {
               return function (t) {
-                var r = Object(h.q)(n())
+                var r = Object(h.r)(n())
                 if (r && e && 'Done' === (null == t ? void 0 : t.bookmark_collection_delete))
                   return [_(r).removeItems([e])]
               }
@@ -17670,7 +17706,7 @@
               return function (t) {
                 if (t) {
                   var r = null == t ? void 0 : t.bookmark_collection_update,
-                    a = Object(h.q)(n())
+                    a = Object(h.r)(n())
                   if (a && e && r) return [_(a).injectItems([r.id])]
                 }
               }
@@ -17701,7 +17737,7 @@
                   if ('Done' !== r.bookmark_collection_tweet_delete) return
                   if (!t.tweetId || !e) return []
                   var i = null == r ? void 0 : r.bookmark_collection_tweet_delete,
-                    o = Object(h.q)(n())
+                    o = Object(h.r)(n())
                   if (o && e && i) {
                     var s = _(o)
                     return [Object(u.a)(e).removeTweets(a()({}, t.tweetId, !0)), s.injectItems([e])]
@@ -17729,7 +17765,7 @@
                   if ('Done' !== r.bookmark_collection_tweet_put) return
                   if (!t.tweetId || !e) return []
                   var a = null == r ? void 0 : r.bookmark_collection_tweet_put,
-                    i = Object(h.q)(n())
+                    i = Object(h.r)(n())
                   if (i && e && a) {
                     var o = _(i)
                     return [
@@ -17767,7 +17803,7 @@
               function (e) {
                 if (e) {
                   var t = null == e ? void 0 : e.bookmark_collection_create,
-                    r = Object(h.q)(n())
+                    r = Object(h.r)(n())
                   if (t && r) {
                     var i = _(r)
                     return [g.add(a()({}, t.id, t)), i.injectItems([t.id])]
@@ -22433,8 +22469,8 @@
             l = Object(p.a)(),
             c = o && (null == s ? void 0 : s.isTrueAndEnabled('subscriptions_feature_1005')),
             u = null == n ? void 0 : n.id_str,
-            d = null == n || null === (t = n.user) || void 0 === t ? void 0 : t.screen_name,
-            m = function () {
+            m = null == n || null === (t = n.user) || void 0 === t ? void 0 : t.screen_name,
+            v = function () {
               l.scribe({
                 action: 'click',
                 element: r ? 'view_in_reader_mode_button' : 'reader_mode_header_icon_enable',
@@ -22445,11 +22481,16 @@
             }
           return c
             ? (function () {
-                if (u && d) {
-                  var e = '/'.concat(d, '/thread/').concat(u)
+                if (u && m) {
+                  var e = '/'.concat(m, '/thread/').concat(u)
                   return r
-                    ? a.a.createElement(h.a, { link: e, onClick: m, style: y.button, type: 'primaryOutlined' }, f)
-                    : a.a.createElement(h.a, { icon: b, link: e, onClick: m, type: 'brandText' })
+                    ? a.a.createElement(h.a, { link: e, onClick: v, style: y.button, type: 'primaryOutlined' }, f)
+                    : a.a.createElement(h.a, {
+                        icon: a.a.createElement(d.a, { style: y.icon }),
+                        link: e,
+                        onClick: v,
+                        type: 'brandText',
+                      })
                 }
                 return null
               })()
@@ -22461,14 +22502,13 @@
             icon: { color: e.colors.text, weight: 'bold' },
           }
         }),
-        b = a.a.createElement(d.a, { style: y.icon }),
-        g = l(function (e) {
+        b = l(function (e) {
           var t = e.focalTweet,
             n = e.isExpanded,
             r = e.readerModeAvailable
           return a.a.createElement(v, { focalTweet: t, isExpanded: n, readerModeAvailable: r })
         })
-      t.b = g
+      t.b = b
     },
     PlEh: function (e, t, n) {
       'use strict'
@@ -23737,7 +23777,7 @@
           return function (t, n, r) {
             var a = r.api,
               i = n(),
-              o = Object(T.q)(i) || '',
+              o = Object(T.r)(i) || '',
               s = Object(E.c)(i),
               l = Object(k.a)(o),
               c = { moment_id: e, teamUserId: s }
@@ -36720,7 +36760,7 @@
               droppedAds: Z,
               entries: B,
               initialFetchStatus: N,
-              isRestrictedSession: R.n,
+              isRestrictedSession: R.o,
               pinnedEntry: G,
               pollingIntervalMs: J,
               previewEntries: j,
@@ -36787,7 +36827,7 @@
         he = n('P1r1'),
         me = Object(M.a)()
           .propsFromState(function () {
-            return { guestSegment: R.j, isLoggedIn: R.m }
+            return { guestSegment: R.j, isLoggedIn: R.n }
           })
           .propsFromActions(function () {
             return { updateSettings: he.M }
@@ -40055,7 +40095,7 @@
         }),
         function () {
           return function (e, t, n) {
-            return d.m(t())
+            return d.n(t())
               ? Promise.all([
                   n.devicePersistence.get(b).then(function (t) {
                     var r = null == t ? void 0 : t.domains,
@@ -40767,7 +40807,7 @@
               return function (t) {
                 var r = n(),
                   a = D.select(r, e),
-                  i = Object(I.q)(r)
+                  i = Object(I.r)(r)
                 if (!a || !i) return []
                 var o = p.a(e),
                   s = Object(g.a)(i, i)
@@ -40856,7 +40896,7 @@
               return function (t) {
                 var r = n(),
                   a = D.select(r, e),
-                  i = Object(I.q)(r)
+                  i = Object(I.r)(r)
                 if (!a || !i || null == t || !t.entities) return []
                 var o = j(i),
                   s = Object(C.a)(e)
@@ -40886,7 +40926,7 @@
               return function (r) {
                 var a = n(),
                   i = D.select(a, e),
-                  o = Object(I.q)(a)
+                  o = Object(I.r)(a)
                 return i && o && i.muting !== t.mute && r ? [D.updateOne(e, { muting: t.mute })] : []
               }
             },
@@ -40908,7 +40948,7 @@
               return function (r) {
                 var a = n(),
                   i = D.select(a, e),
-                  o = Object(I.q)(a),
+                  o = Object(I.r)(a),
                   s = []
                 if (i && o && r) {
                   var c = t.isPinned
@@ -40940,7 +40980,7 @@
               return function (t) {
                 var r = n(),
                   a = D.select(r, e),
-                  i = Object(I.q)(r)
+                  i = Object(I.r)(r)
                 if (!a || !i || null == t || !t.entities) return []
                 var o = Object(C.a)(e)
                 return [].concat(l()(Object(x.d)(a, n)), [
@@ -40968,7 +41008,7 @@
                 .b(t, { request: a.Lists.createList, params: e })(
                   { actionTypes: D.actionTypes.CREATE, context: 'CREATE_LIST' },
                   function (e) {
-                    var t = Object(I.q)(n())
+                    var t = Object(I.r)(n())
                     if (e && t) {
                       var r = e.result,
                         a = B(r),
@@ -41031,7 +41071,7 @@
             return function (e, r, a) {
               a.api
               var i = r(),
-                o = Object(I.q)(i)
+                o = Object(I.r)(i)
               if (o) {
                 var s = Object(g.a)(o, n),
                   l = s.selectEntries(i),
@@ -42210,31 +42250,21 @@
     'ogJ+': function (e, t, n) {
       'use strict'
       var r = n('ezF+'),
-        a = n('ERkP'),
-        i = n.n(a),
-        o = n('t62R'),
-        s = n('xM7j')
+        a =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return n.e(364).then(n.bind(null, 'Xvmv'))
+            },
+            loaderKey: 'unsupportedDefaultLoader',
+            strategy: n('XBtf').a.Critical,
+          })
       t.a = function (e) {
-        return r.e(
-          e
-            ? r.d({
-                render: function (e) {
-                  return i.a.createElement(
-                    s.a,
-                    null,
-                    i.a.createElement(
-                      o.b,
-                      null,
-                      (function (e) {
-                        var t = 'Failed to parse item: '.concat(e.content.displayType)
-                        return e.content.contentType && (t += '\nof type: '.concat(e.content.contentType)), t
-                      })(e),
-                    ),
-                  )
-                },
-              })
-            : r.a(),
-        )
+        return r.e(e ? a : r.a())
       }
     },
     'p+r5': function (e, t, n) {
@@ -45919,8 +45949,9 @@
           s = e.screenName,
           l = e.style,
           c = e.tweetPermalink,
-          u = e.type,
-          d = C[u],
+          u = e.type
+        if (!C[u]) return t
+        var d = C[u],
           p = d.Icon,
           h = d.headline,
           m = d.subtext,
@@ -48759,7 +48790,7 @@
               liveCounts: we,
               loggedInUser: se.e.selectLoggedInUser,
               misinfoNudgeActionTaken: Ce,
-              sessionToken: ie.v,
+              sessionToken: ie.w,
               shouldShowArticleNudgeTip: ye,
               wasArticleVisited: Te,
               bookmarkFolderName: Ie,

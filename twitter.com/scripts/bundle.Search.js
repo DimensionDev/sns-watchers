@@ -1764,7 +1764,7 @@
         V = (n('hBvt'), n('RqPI')),
         U = n('rxPX'),
         N = Object(U.a)().propsFromState(function () {
-          return { currentCountry: V.y }
+          return { currentCountry: V.z }
         }),
         K = n('cnVF'),
         G = n('mrHL'),
@@ -2446,7 +2446,7 @@
         x = n('rxPX'),
         B = Object(x.a)()
           .propsFromState(function () {
-            return { userLanguage: C.o }
+            return { userLanguage: C.p }
           })
           .withAnalytics({ page: 'front' }),
         I = n('H1k/'),

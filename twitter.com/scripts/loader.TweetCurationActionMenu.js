@@ -353,8 +353,8 @@
         ne = Object(J.a)()
           .propsFromState(function () {
             return {
-              userCountry: Z.y,
-              userLanguage: Z.o,
+              userCountry: Z.z,
+              userLanguage: Z.p,
               shouldShowMuteEducationTip: X,
               shouldShowHideReplyTip: Q,
               shouldShowConversationControlsTip: $,

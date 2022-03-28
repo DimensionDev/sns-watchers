@@ -5,7 +5,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'MomentAnalyticsScreen', function () {
-          return B
+          return F
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -52,14 +52,14 @@
         O = a('t62R'),
         T = a('MtXG'),
         R = a('855f'),
-        w = a('rHpw'),
-        I = a('3XMw'),
-        L = a.n(I),
-        P = L.a.e2e35f0d,
-        A = L.a.icfe5fe3,
-        k = L.a.a52a1fb9,
-        D = L.a.if221231,
-        B = (function (e) {
+        I = a('rHpw'),
+        w = a('3XMw'),
+        P = a.n(w),
+        L = P.a.e2e35f0d,
+        A = P.a.icfe5fe3,
+        k = P.a.a52a1fb9,
+        D = P.a.if221231,
+        F = (function (e) {
           l()(a, e)
           var t = u()(a)
           function a(e) {
@@ -114,7 +114,7 @@
                     b = o.shares_from_capsule,
                     h = void 0 === b ? 0 : b,
                     g = a ? '/i/moments/'.concat(String(a)) : '/i/explore',
-                    E = L.a.ab0f5140
+                    E = P.a.ab0f5140
                   return m.a.createElement(
                     m.a.Fragment,
                     null,
@@ -124,11 +124,11 @@
                         { backButtonType: 'close', backLocation: g, documentTitle: E, history: t, title: E },
                         m.a.createElement(
                           U.a,
-                          { style: F.container },
+                          { style: B.container },
                           m.a.createElement(
                             U.a,
-                            { style: F.titleTextContainer },
-                            m.a.createElement(O.b, { style: F.titleText, weight: 'bold' }, c),
+                            { style: B.titleTextContainer },
+                            m.a.createElement(O.b, { style: B.titleText, weight: 'bold' }, c),
                           ),
                           m.a.createElement(
                             T.a.Group,
@@ -138,76 +138,76 @@
                               null,
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    L.a.I18NFormatMessage,
+                                    P.a.I18NFormatMessage,
                                     { $i18n: 'gfc363c4' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      L.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
+                                      P.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, L.a.c71523ef({ count: s })),
+                                    m.a.createElement(T.a.Value, null, P.a.c71523ef({ count: s })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, P),
+                                m.a.createElement(O.b, { color: 'gray700' }, L),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    L.a.I18NFormatMessage,
+                                    P.a.I18NFormatMessage,
                                     { $i18n: 'e79f5450' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      L.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
+                                      P.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, L.a.a77bd6f4({ count: d })),
+                                    m.a.createElement(T.a.Value, null, P.a.a77bd6f4({ count: d })),
                                   ),
                                 ),
                                 m.a.createElement(O.b, { color: 'gray700' }, A),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    L.a.I18NFormatMessage,
+                                    P.a.I18NFormatMessage,
                                     { $i18n: 'fcbb0929' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      L.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
+                                      P.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, L.a.a30d7c4d({ count: h })),
+                                    m.a.createElement(T.a.Value, null, P.a.a30d7c4d({ count: h })),
                                   ),
                                 ),
                                 m.a.createElement(O.b, { color: 'gray700' }, k),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    L.a.I18NFormatMessage,
+                                    P.a.I18NFormatMessage,
                                     { $i18n: 'afba3eba' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      L.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
+                                      P.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, L.a.j20f66ed({ count: f })),
+                                    m.a.createElement(T.a.Value, null, P.a.j20f66ed({ count: f })),
                                   ),
                                 ),
                                 m.a.createElement(O.b, { color: 'gray700' }, D),
@@ -223,7 +223,7 @@
             a
           )
         })(m.a.Component),
-        F = w.a.create(function (e) {
+        B = I.a.create(function (e) {
           return {
             analytic: { marginBottom: e.spaces.space16 },
             container: { height: '100%', padding: 20 },
@@ -231,7 +231,7 @@
             titleTextContainer: { marginBottom: e.spaces.space16 },
           }
         }),
-        x = E(B)
+        x = E(F)
       t.default = x
     },
     DBID: function (e, t, a) {
@@ -490,41 +490,41 @@
             ]
           )
         },
-        w = a('wrlS'),
-        I = a('rxPX'),
-        L = a('su2V'),
-        P = a('cnVF'),
+        I = a('wrlS'),
+        w = a('rxPX'),
+        P = a('su2V'),
+        L = a('cnVF'),
         A = function (e) {
-          return Object(w.d)(e).isTrue('subscriptions_stripe_testing') ? P.F : P.D
+          return Object(I.d)(e).isTrue('subscriptions_stripe_testing') ? L.F : L.D
         },
-        k = Object(I.a)()
+        k = Object(w.a)()
           .propsFromState(function () {
             return {
               productDetailsFetchStatus: function (e) {
-                return Object(L.l)(e, A(e))
+                return Object(P.l)(e, A(e))
               },
               productDetails: function (e) {
-                return Object(L.k)(e, A(e))
+                return Object(P.k)(e, A(e))
               },
               checkoutUrlFetchStatus: function (e) {
-                return Object(L.f)(e, A(e))
+                return Object(P.f)(e, A(e))
               },
               checkoutUrl: function (e) {
-                return Object(L.e)(e, A(e))
+                return Object(P.e)(e, A(e))
               },
               twitterBlueID: A,
             }
           })
           .propsFromActions(function () {
-            return { fetchSubscriptionProductDetails: L.d, fetchSubscriptionProductCheckoutUrl: L.b }
+            return { fetchSubscriptionProductDetails: P.d, fetchSubscriptionProductCheckoutUrl: P.b }
           })
           .withAnalytics({ page: 'subscriptions', section: 'marketing' }),
         D = a('v//M'),
-        B = a('MWbm'),
-        F = a('t62R'),
+        F = a('MWbm'),
+        B = a('t62R'),
         x = a('/yvb'),
-        H = a('rHpw'),
-        N = a('zCf4'),
+        N = a('rHpw'),
+        H = a('zCf4'),
         M = a('VKnd'),
         z = d.a.b9238e88,
         j = {
@@ -548,7 +548,7 @@
                   : r.slice(1)) ||
                 ''
         },
-        K = H.a.create(function (e) {
+        W = N.a.create(function (e) {
           return {
             buttonWrapper: {
               alignItems: 'center',
@@ -567,7 +567,7 @@
             button: { width: '75%', cursor: 'pointer', alignItems: 'center' },
           }
         }),
-        W = k(function (e) {
+        K = k(function (e) {
           var t = e.analytics,
             a = e.buttonStyle,
             r = e.checkoutUrl,
@@ -580,7 +580,7 @@
             m = e.style,
             p = e.termsOfServiceStyle,
             f = e.twitterBlueID,
-            b = Object(N.g)(),
+            b = Object(H.g)(),
             h = function () {
               t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: V(b) } }),
                 c(f)
@@ -625,18 +625,18 @@
                 var i = (0, j[t])(r),
                   c = z({ price: i })
                 return l.a.createElement(
-                  B.a,
-                  { style: [K.buttonWrapper, m] },
+                  F.a,
+                  { style: [W.buttonWrapper, m] },
                   l.a.createElement(
-                    B.a,
-                    { style: [K.termsOfService, p] },
+                    F.a,
+                    { style: [W.termsOfService, p] },
                     l.a.createElement(
-                      F.b,
+                      B.b,
                       { align: 'center', color: 'gray700', size: 'subtext3' },
                       l.a.createElement(
                         d.a.I18NFormatMessage,
                         { $i18n: 'a66ed614' },
-                        l.a.createElement(F.b, { link: 'https://legal.twitter.com/purchaser-terms' }, d.a.ea6a437a),
+                        l.a.createElement(B.b, { link: 'https://legal.twitter.com/purchaser-terms' }, d.a.ea6a437a),
                       ),
                     ),
                   ),
@@ -646,7 +646,7 @@
                       accessibilityLabel: c,
                       disabled: !s || 'loading' === n,
                       onPress: g,
-                      style: [K.button, a],
+                      style: [W.button, a],
                       type: 'primaryFilled',
                     },
                     c,
@@ -705,8 +705,8 @@
             i = a.isTrue('subscriptions_top_articles_on_ios_enabled'),
             o = a.isTrue('subscriptions_feature_1002'),
             u = !a.isTrue('dm_conversation_labels_pinned_enabled') && a.isTrue('subscriptions_feature_labs_1001'),
-            d = Object(N.f)(),
-            m = Object(N.g)(),
+            d = Object(H.f)(),
+            m = Object(H.g)(),
             p = l.a.useState(!1),
             f = c()(p, 2),
             b = f[0],
@@ -744,8 +744,8 @@
                     return l.a.createElement(
                       l.a.Fragment,
                       { key: e.illustrationName },
-                      l.a.createElement(B.a, { style: oe.widthDivider }),
-                      l.a.createElement(B.a, {
+                      l.a.createElement(F.a, { style: oe.widthDivider }),
+                      l.a.createElement(F.a, {
                         style: [
                           oe.feature,
                           oe.illustration,
@@ -760,26 +760,26 @@
                   if (e.icon) {
                     var r = e.icon
                     return l.a.createElement(
-                      B.a,
+                      F.a,
                       { key: t, style: oe.feature, testID: 'feature' },
-                      l.a.createElement(B.a, null, l.a.createElement(r, { style: oe.featureIcon })),
+                      l.a.createElement(F.a, null, l.a.createElement(r, { style: oe.featureIcon })),
                       l.a.createElement(
-                        B.a,
+                        F.a,
                         { style: oe.featureContent },
-                        l.a.createElement(F.b, { size: 'body', weight: 'bold' }, e.heading),
+                        l.a.createElement(B.b, { size: 'body', weight: 'bold' }, e.heading),
                         l.a.createElement(
-                          F.b,
+                          B.b,
                           { color: 'gray700', size: 'body', style: oe.featureDescription },
                           e.description,
                         ),
                         l.a.createElement(
-                          B.a,
+                          F.a,
                           { style: oe.labelWrapper },
                           e.platformAvailabilityLabel.map(function (e) {
                             return l.a.createElement(
                               X.a,
                               { background: 'maskColor', bold: !0, key: e, style: oe.labelStyle },
-                              l.a.createElement(F.b, { color: 'gray700' }, e),
+                              l.a.createElement(B.b, { color: 'gray700' }, e),
                             )
                           }),
                         ),
@@ -789,7 +789,7 @@
                   return null
                 })(e, t)
               })
-              return l.a.createElement(B.a, { key: t, style: oe.featureRow, testID: 'featureRow' }, a)
+              return l.a.createElement(F.a, { key: t, style: oe.featureRow, testID: 'featureRow' }, a)
             },
             y = R(i, o, u).map(function (e, t) {
               return (function (e, t) {
@@ -797,9 +797,9 @@
                   return v(e, t)
                 })
                 return l.a.createElement(
-                  B.a,
+                  F.a,
                   { key: t, style: oe.featureGroup },
-                  l.a.createElement(F.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
+                  l.a.createElement(B.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
                   a,
                 )
               })(e, t)
@@ -815,7 +815,7 @@
               withMask: !0,
             },
             l.a.createElement(
-              B.a,
+              F.a,
               { style: oe.appBarContainer },
               l.a.createElement(Y.a, {
                 centeredLogo: l.a.createElement($.a, { style: oe.twitterLogo }),
@@ -833,30 +833,30 @@
               }),
             ),
             l.a.createElement(
-              B.a,
+              F.a,
               { style: oe.contentWrapper },
               l.a.createElement(
-                B.a,
+                F.a,
                 { style: oe.bgImage },
                 l.a.createElement(
-                  B.a,
+                  F.a,
                   { style: [oe.topContent, { paddingTop: G.b.isMobileOS() ? '26px' : '50px' }] },
                   r
                     ? l.a.createElement(
-                        B.a,
+                        F.a,
                         { style: oe.contentBlueIcon },
                         l.a.createElement(ee.a, { style: oe.iconTwitterBlue }),
                       )
-                    : l.a.createElement(F.b, { size: 'title1', weight: 'heavy' }, re),
-                  l.a.createElement(F.b, { size: 'headline1', style: oe.subtitle }, te),
+                    : l.a.createElement(B.b, { size: 'title1', weight: 'heavy' }, re),
+                  l.a.createElement(B.b, { size: 'headline1', style: oe.subtitle }, te),
                 ),
               ),
-              l.a.createElement(B.a, { style: oe.content }, y),
+              l.a.createElement(F.a, { style: oe.content }, y),
             ),
-            l.a.createElement(W, { onClick: E }),
+            l.a.createElement(K, { onClick: E }),
           )
         },
-        oe = H.a.create(function (e) {
+        oe = N.a.create(function (e) {
           return {
             root: { minHeight: 400 },
             appBar: { zIndex: '2' },
@@ -937,39 +937,6 @@
         i = ''.concat(r, '/i/twitter_blue_sign_up'),
         c = ''.concat(i, '/welcome')
       ''.concat(i, '/unsuccessful')
-    },
-    g7Ra: function (e, t, a) {
-      'use strict'
-      var r = a('yiKp'),
-        n = a.n(r),
-        i = a('ERkP'),
-        c = a.n(i),
-        o = a('Lsrn'),
-        l = a('shC7'),
-        s = a('k/Ka'),
-        u = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            n()(
-              n()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style, l.a.getConstants().isRTL && o.a.iconRTL],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            c.a.createElement(
-              'g',
-              null,
-              c.a.createElement('path', {
-                d: 'M13.967 5.852H4.602l2.97-2.97c.293-.293.293-.768 0-1.06s-.768-.294-1.06 0L2.26 6.07c-.294.292-.294.767 0 1.06l4.25 4.25c.145.146.337.22.53.22s.383-.073.53-.22c.292-.293.292-.768 0-1.06L4.6 7.35h9.364c3.625 0 6.574 2.948 6.574 6.573S17.592 20.5 13.967 20.5H7.79c-.415 0-.75.336-.75.75s.335.75.75.75h6.178c4.452 0 8.074-3.622 8.074-8.074s-3.623-8.074-8.075-8.074z',
-              }),
-            ),
-          )
-        }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
     },
     hBoh: function (e, t, a) {
       'use strict'
@@ -1305,7 +1272,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TwitterBlueSignUpSuccess', function () {
-          return w
+          return I
         })
       var r = a('ddV6'),
         n = a.n(r),
@@ -1336,7 +1303,7 @@
         O = p.a.a219e217,
         T = p.a.f0e32de5,
         R = p.a.gc6e8c17
-      function w(e) {
+      function I(e) {
         var t = e.analytics,
           a = e.fetchUserClaims,
           r = Object(h.f)(),
@@ -1356,12 +1323,12 @@
         function S() {
           r.push('/home')
         }
-        function w() {
+        function I() {
           return c.a.createElement(
             c.a.Fragment,
             null,
-            c.a.createElement(E.b, { size: 'title2', style: I.title, weight: 'heavy' }, T),
-            c.a.createElement(E.b, { style: I.subtitle }, R),
+            c.a.createElement(E.b, { size: 'title2', style: w.title, weight: 'heavy' }, T),
+            c.a.createElement(E.b, { style: w.subtitle }, R),
             c.a.createElement(v.a, { onPress: S, size: 'xLarge', type: 'primaryFilled' }, O),
           )
         }
@@ -1374,14 +1341,14 @@
           }, []),
           c.a.createElement(
             y.a,
-            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: I.root, type: 'full' },
+            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: w.root, type: 'full' },
             c.a.createElement(
               _.a,
-              { style: I.topBar },
+              { style: w.topBar },
               c.a.createElement(v.a, {
                 accessibilityLabel: U,
                 hoverLabel: { label: U },
-                icon: c.a.createElement(f.a, { style: I.topIcons }),
+                icon: c.a.createElement(f.a, { style: w.topIcons }),
                 onPress: S,
                 pullRight: !0,
                 size: 'medium',
@@ -1390,14 +1357,14 @@
             ),
             c.a.createElement(
               _.a,
-              { style: g.b.isMobileOS() ? I.contentSmall : I.content },
-              c.a.createElement(C.a, { source: b, style: I.img }),
-              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: w, retryable: !0 }),
+              { style: g.b.isMobileOS() ? w.contentSmall : w.content },
+              c.a.createElement(C.a, { source: b, style: w.img }),
+              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: I, retryable: !0 }),
             ),
           )
         )
       }
-      var I = S.a.create(function (e) {
+      var w = S.a.create(function (e) {
           return {
             root: { minHeight: 600 },
             topBar: { alignItems: 'flex-start', flexDirection: 'row', paddingTop: 15, paddingLeft: 15 },
@@ -1411,8 +1378,8 @@
             closeButton: { paddingTop: 15 },
           }
         }),
-        L = u(w)
-      t.default = L
+        P = u(I)
+      t.default = P
     },
   },
 ])

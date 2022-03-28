@@ -11,7 +11,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'InlinePlayerContainer', function () {
-          return _e
+          return me
         })
       var a = n('97Jx'),
         r = n.n(a),
@@ -35,64 +35,73 @@
         I = n.n(g),
         C = n('6rlp'),
         A = n('H9MA'),
-        w = n('RqPI'),
-        k = n('yr4d'),
+        w = n('wrlS'),
+        k = n('RqPI'),
+        S = n('yr4d'),
         E = n('XOJV'),
-        S = n('rxPX'),
-        R = n('0KEI'),
-        T = n('eXeu'),
-        O = function () {
+        R = n('mqpi'),
+        T = n('rxPX'),
+        O = n('0KEI'),
+        H = n('eXeu'),
+        F = function () {
           return function (e, t, n) {
             return n.api.getHttpClient()
           }
         },
-        H = function (e, t) {
+        L = function (e, t) {
           var n = t.source && t.source.videoId
           return n && 'tweet' === n.type ? n.id : void 0
         },
-        F = Object(S.a)()
+        M = Object(T.a)()
           .propsFromState(function () {
-            return { dataSaverMode: A.c, language: w.o, sourceTweet: E.a.createHydratedTweetSelector(H) }
+            return {
+              dataSaverMode: A.c,
+              featureSwitches: w.d,
+              language: k.p,
+              sourceTweet: E.a.createHydratedTweetSelector(L),
+            }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
-              n = e.language,
-              a = e.sourceTweet
+              n = e.featureSwitches,
+              a = e.language,
+              r = e.sourceTweet
             return {
               dataSaverMode: t,
-              language: n,
-              mediaAvailability: (a && Object(T.c)(a)) || void 0,
-              publisherId: a ? Object(T.d)(a) : void 0,
+              disableAutoplay: !!r && Object(R.b)(n, r, R.a.Autoplay),
+              language: a,
+              mediaAvailability: (r && Object(H.c)(r)) || void 0,
+              publisherId: r ? Object(H.d)(r) : void 0,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(R.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)(
                 'INLINE_PLAYER_CONTAINER',
               ),
-              getTwitterAuthedHttpClient: O,
+              getTwitterAuthedHttpClient: F,
               logPromotedVideoEvent: C.b,
-              tweetAdProvider: k.b,
+              tweetAdProvider: S.b,
             }
           })
           .withAnalytics(),
-        L = (n('z84I'), n('6v1f')),
-        M = n('ZeN/'),
-        V = n('rHpw'),
-        x = n('MWbm'),
-        D = function (e) {
+        V = (n('z84I'), n('6v1f')),
+        x = n('ZeN/'),
+        D = n('rHpw'),
+        j = n('MWbm'),
+        z = function (e) {
           e.stopPropagation()
         },
-        j = function (e) {
+        U = function (e) {
           var t = e.children,
             n = e.testID
-          return I.a.createElement(x.a, { onClick: D, style: V.a.absoluteFill, testID: n }, t)
+          return I.a.createElement(j.a, { onClick: z, style: D.a.absoluteFill, testID: n }, t)
         },
-        z = n('epkG'),
-        U = n('mN6z'),
-        N = (n('2G9S'), n('gZV8')),
-        q = n('ylrv'),
-        B = (function () {
+        N = n('epkG'),
+        q = n('mN6z'),
+        B = (n('2G9S'), n('gZV8')),
+        G = n('ylrv'),
+        W = (function () {
           function e(t, n, a) {
             u()(this, e), (this.placement = t), (this.obstructions = n), (this.layerId = a)
           }
@@ -116,8 +125,8 @@
                   var t = this.layerId
                       ? this.obstructions.getObstructionAboveLayer(this.layerId, e)
                       : this.obstructions.getTotalObstruction(e),
-                    n = q.a.area(this.placement.item),
-                    a = (1 - t) * q.a.area(e)
+                    n = G.a.area(this.placement.item),
+                    a = (1 - t) * G.a.area(e)
                   return n > 0 ? a / n : 0
                 },
               },
@@ -149,9 +158,9 @@
             e
           )
         })(),
-        G = n('vF3p'),
-        W = n('S4UJ'),
-        X = (function (e) {
+        X = n('vF3p'),
+        J = n('S4UJ'),
+        Y = (function (e) {
           m()(n, e)
           var t = b()(n)
           function n() {
@@ -168,7 +177,7 @@
                     r = t.onPageVisibilityChange,
                     i = document.visibilityState,
                     o = e._obstructions || a.getObstructions(),
-                    l = new B(e._placement, o, n)
+                    l = new W(e._placement, o, n)
                   r && r(i, l)
                 }
               }),
@@ -206,7 +215,7 @@
                     t = e.children,
                     n = e.style
                   return I.a.createElement(
-                    N.e,
+                    B.e,
                     {
                       onPlacementChange: this._handlePlacementChange,
                       ref: this._setPlacementRef,
@@ -245,12 +254,12 @@
                   ;(this._placement = r || this._placement),
                     (this._obstructions = a || this._obstructions || l.getObstructions()),
                     this._placement
-                      ? t(new B(this._placement, this._obstructions, o))
+                      ? t(new W(this._placement, this._obstructions, o))
                       : this._placementRef &&
                         this._placementRef.sample(function (e) {
                           ;(n._placement = e),
                             (n._obstructions = n._obstructions || l.getObstructions()),
-                            t(new B(e, n._obstructions, o))
+                            t(new W(e, n._obstructions, o))
                         })
                 },
               },
@@ -258,21 +267,21 @@
             n
           )
         })(I.a.Component)
-      P()(X, 'defaultProps', { obstructionDetection: G.a })
-      var J = Object(W.a)(X),
-        Y = n('efbI'),
-        K = n('mf9H'),
-        Z = n('zHh/'),
-        Q = 'videoPlayer',
-        $ = n('v/3V'),
-        ee = n('aITJ'),
-        te = n('Zl35'),
-        ne = n('9Xij'),
-        ae = n('HT/6'),
-        re = n('v6aA'),
-        ie = n('iOGT'),
-        oe = new z.a({}),
-        le = (function (e) {
+      P()(Y, 'defaultProps', { obstructionDetection: X.a })
+      var K = Object(J.a)(Y),
+        Z = n('efbI'),
+        Q = n('mf9H'),
+        $ = n('zHh/'),
+        ee = 'videoPlayer',
+        te = n('v/3V'),
+        ne = n('aITJ'),
+        ae = n('Zl35'),
+        re = n('9Xij'),
+        ie = n('HT/6'),
+        oe = n('v6aA'),
+        le = n('iOGT'),
+        se = new N.a({}),
+        ce = (function (e) {
           m()(n, e)
           var t = b()(n)
           function n(e, a) {
@@ -308,19 +317,19 @@
                   A = t.twitterAuthedHttpClient,
                   w = t.uiStack,
                   k = t.videoEl,
-                  E = t.videoPlayer,
-                  S = t.viewCount
-                return I.a.createElement(Y.a.Consumer, null, function (t) {
+                  S = t.videoPlayer,
+                  E = t.viewCount
+                return I.a.createElement(Z.a.Consumer, null, function (t) {
                   var v = t.prerollDisplayLocation
                   return I.a.createElement(
-                    te.b,
+                    ae.b,
                     r()(
                       {
                         accessibilityLabel: n,
                         adProvider: i._tweetAdProvider(v),
                         analytics: a,
                         aspectRatio: o,
-                        basePlayerClass: E,
+                        basePlayerClass: S,
                         configType: 'static',
                         contentId: b,
                         cta: i._getPlayerCTA(),
@@ -346,7 +355,7 @@
                         twitterAuthedHttpClient: A,
                         videoEl: k,
                         videoId: P,
-                        viewCount: S,
+                        viewCount: E,
                         vmapUrl: g,
                       },
                       e,
@@ -387,7 +396,7 @@
                   s()(
                     s()({}, t),
                     {},
-                    { url: Object($.a)(i.context.featureSwitches, t.url, null == n ? void 0 : n.click_tracking_info) },
+                    { url: Object(te.a)(i.context.featureSwitches, t.url, null == n ? void 0 : n.click_tracking_info) },
                   )
                 )
               }),
@@ -464,7 +473,7 @@
               P()(_()(i), '_handleFullscreenChange', function (e) {
                 var t = i.context.viewport
                 if (((i._isPlayerFullscreen = e.isPlayerFullscreen), t)) {
-                  if ((t.temporarilySuppressScrollListeners(2e3), ee.b.isChrome() || ee.b.isSafari()))
+                  if ((t.temporarilySuppressScrollListeners(2e3), ne.b.isChrome() || ne.b.isSafari()))
                     if (i._isPlayerFullscreen) i._savedScrollPosition = { y: t.scrollY(), x: t.scrollX() }
                     else if (i._savedScrollPosition) {
                       var n = i._savedScrollPosition,
@@ -542,13 +551,14 @@
                   }
               })
             var o = e.autoplay,
-              l = e.forwardPivotInfo
+              l = e.disableAutoplay,
+              c = e.forwardPivotInfo
             return (
               (i._disableHls = !(
-                ee.b.isDesktopOS() ||
-                (ee.b.isAndroid() && i.context.featureSwitches.isTrue('web_video_hls_android_mse_enabled'))
+                ne.b.isDesktopOS() ||
+                (ne.b.isAndroid() && i.context.featureSwitches.isTrue('web_video_hls_android_mse_enabled'))
               )),
-              (i._shouldAutoplay = Object(Z.a)(o, l)),
+              (i._shouldAutoplay = !l && Object($.a)(o, c)),
               i
             )
           }
@@ -561,7 +571,7 @@
                     n = t.heightsReady,
                     a = t.playbackPriority
                   !e.heightsReady && n && this._submitInitialPlacement(),
-                    !Object(U.a)(e.source, this.props.source) && this._emitter && this._emitter.reset(),
+                    !Object(q.a)(e.source, this.props.source) && this._emitter && this._emitter.reset(),
                     e.playbackPriority !== a &&
                       void 0 !== a &&
                       this._emitter &&
@@ -573,15 +583,15 @@
                 value: function () {
                   var e = this.props.aspectRatio
                   return I.a.createElement(
-                    ne.a,
-                    { ratio: e, style: se.aspectRatio },
+                    re.a,
+                    { ratio: e, style: ue.aspectRatio },
                     I.a.createElement(
-                      J,
+                      K,
                       {
                         onChange: this._handlePlacementChange,
                         onPageVisibilityChange: this._handlePageVisibilityChange,
                         ref: this._setPlacementAPI,
-                        style: V.a.absoluteFill,
+                        style: D.a.absoluteFill,
                       },
                       this._renderPlayer(),
                     ),
@@ -612,7 +622,7 @@
                     p = l && l.length ? (c ? 'gif' : 'media_entity') : 'vmap'
                   this._isLooping = !!(a || c || u || (n && n <= this._getLoopingThreshold()))
                   var d = {
-                    bitrateCap: t ? M.a.MEDIUM : void 0,
+                    bitrateCap: t ? x.a.MEDIUM : void 0,
                     contentType: p,
                     loop: this._isLooping,
                     maxLoopCount: this._isLooping ? r : void 0,
@@ -623,14 +633,14 @@
                         : void 0,
                     variants:
                       (l &&
-                        Object(T.f)(
-                          Object(ie.b)(l, t ? ie.a.MEDIUM : ie.a.HIGH).map(function (e) {
+                        Object(H.f)(
+                          Object(le.b)(l, t ? le.a.MEDIUM : le.a.HIGH).map(function (e) {
                             return { src: e.url, type: e.content_type }
                           }),
                         )) ||
                       [],
                   }
-                  return I.a.createElement(j, { testID: Q }, this._renderHorizonPlayer(d))
+                  return I.a.createElement(U, { testID: ee }, this._renderHorizonPlayer(d))
                 },
               },
               {
@@ -648,25 +658,25 @@
             n
           )
         })(I.a.Component)
-      P()(le, 'contextType', re.a),
-        P()(le, 'defaultProps', {
-          autoplay: L.b.Off,
-          playbackCoordination: K.b,
-          playbackPriority: ae.a.NORMAL,
+      P()(ce, 'contextType', oe.a),
+        P()(ce, 'defaultProps', {
+          autoplay: V.b.Off,
+          playbackCoordination: Q.b,
+          playbackPriority: ie.a.NORMAL,
           showControls: !0,
           dataSaverMode: !1,
           geolocationPrompt: !0,
           heightsReady: !0,
-          noAuthHttpClient: oe,
+          noAuthHttpClient: se,
           includeBroadcastEventAssociation: !1,
         })
-      var se = V.a.create({ aspectRatio: { zIndex: void 0 } }),
-        ce = n('fs1G'),
-        ue = n('64vW'),
-        pe = n('gOg7'),
-        de = n('r1tX'),
-        ye = ['createLocalApiErrorHandler', 'getTwitterAuthedHttpClient', 'playbackPriority', 'tweetAdProvider'],
-        _e = (function (e) {
+      var ue = D.a.create({ aspectRatio: { zIndex: void 0 } }),
+        pe = n('fs1G'),
+        de = n('64vW'),
+        ye = n('gOg7'),
+        _e = n('r1tX'),
+        he = ['createLocalApiErrorHandler', 'getTwitterAuthedHttpClient', 'playbackPriority', 'tweetAdProvider'],
+        me = (function (e) {
           m()(n, e)
           var t = b()(n)
           function n(e, a) {
@@ -695,7 +705,7 @@
                   a = {
                     log: r.context.featureSwitches.isTrue('responsive_web_video_promoted_logging_enabled')
                       ? r._logPromotedVideoEvent
-                      : ce.a,
+                      : pe.a,
                   },
                   i = n.contextualScribeNamespace,
                   o = n.contextualScribeData,
@@ -707,7 +717,7 @@
                       'responsive_web_video_pcomplete_enabled',
                     ),
                   }
-                return new pe.a(t, a, e, c)
+                return new ye.a(t, a, e, c)
               }),
               P()(_()(r), '_logPromotedVideoEvent', function (e) {
                 var t = r.props.createLocalApiErrorHandler
@@ -750,17 +760,17 @@
                     t = this.props,
                     n = (t.createLocalApiErrorHandler, t.getTwitterAuthedHttpClient, t.playbackPriority),
                     a = t.tweetAdProvider,
-                    i = o()(t, ye)
-                  return I.a.createElement(ue.a.Consumer, null, function (t) {
+                    i = o()(t, he)
+                  return I.a.createElement(de.a.Consumer, null, function (t) {
                     var o = t.heightsReady
-                    return I.a.createElement(de.a.Consumer, null, function (t) {
+                    return I.a.createElement(_e.a.Consumer, null, function (t) {
                       var l = t.playbackPriority
                       return I.a.createElement(
-                        le,
+                        ce,
                         r()({}, i, {
                           analytics: e._analytics,
                           heightsReady: o,
-                          playbackPriority: l === ae.a.INELIGIBLE ? l : n,
+                          playbackPriority: l === ie.a.INELIGIBLE ? l : n,
                           setPlayer: e._setPlayer,
                           tweetAdProvider: a,
                           twitterAuthedHttpClient: e._twitterAuthedHttpClient,
@@ -774,9 +784,9 @@
             n
           )
         })(I.a.PureComponent)
-      P()(_e, 'contextType', re.a)
-      var he = F(_e)
-      t.default = he
+      P()(me, 'contextType', oe.a)
+      var ve = M(me)
+      t.default = ve
     },
   },
 ])

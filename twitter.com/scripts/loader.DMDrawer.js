@@ -722,7 +722,7 @@
         Me = n('RqPI'),
         Le = Object(Fe.a)()
           .propsFromState(function () {
-            return { reporterCountry: Me.y, reporterLanguage: Me.o }
+            return { reporterCountry: Me.z, reporterLanguage: Me.p }
           })
           .propsFromActions(function () {
             return {
@@ -1406,7 +1406,7 @@
           ),
         },
         on = Object(Se.e)(function () {
-          return Object(Ee.createSelector)(an, nn, Me.q, en.d, function (e, t, n, a) {
+          return Object(Ee.createSelector)(an, nn, Me.r, en.d, function (e, t, n, a) {
             var r,
               i = Object(Xe.a)(a, { includeInactive: !0 }),
               o = 0
@@ -1454,7 +1454,7 @@
           ),
         },
         mn = Object(Se.e)(function () {
-          return Object(Ee.createSelector)(cn, un, Me.q, dn, en.d, function (e, t, n, a, r) {
+          return Object(Ee.createSelector)(cn, un, Me.r, dn, en.d, function (e, t, n, a, r) {
             var i = Object(Xe.a)(r, { includeInactive: !0 }),
               o = []
             t.forEach(function (t) {
@@ -2266,11 +2266,11 @@
         ua = (n('1IsZ'), n('vjRr')),
         da = n('EGrD'),
         pa = function (e, t) {
-          return ua.a.createManyHydratedSelector([t.cardUrl])(e)[0]
+          return t.cardUrl
         },
         ma = Object(Fe.a)()
           .propsFromState(function () {
-            return { adFreeArticleDomains: da.c, card: pa }
+            return { adFreeArticleDomains: da.c, card: ua.a.createSingleHydratedSelector(pa) }
           })
           .propsFromActions(function () {
             return {
@@ -2448,23 +2448,24 @@
               }),
               h()(l()(a), '_handleOnClick', function (e) {
                 var t = a.props,
-                  n = t.card.binding_values,
-                  r = t.conversationId,
-                  i = t.popOutConversation
-                if ((r && i(r), a._hasClaimsForAdFreeArticles)) {
-                  var o = a.props,
-                    s = o.adFreeArticleDomains,
-                    l = o.createLocalApiErrorHandler,
-                    c = o.fetchAdFreeToken,
-                    u = new Ea.a(c, l()).getAdFreeArticlesClickHandler({
-                      destinationUrl: ka.a.getBindingValue(n, 'card_url'),
-                      linkDomain: ka.a.getBindingValue(n, 'domain'),
-                      adFreeArticleDomains: s,
+                  n = t.card,
+                  r = (n = void 0 === n ? {} : n).binding_values,
+                  i = t.conversationId,
+                  o = t.popOutConversation
+                if ((i && o(i), a._hasClaimsForAdFreeArticles)) {
+                  var s = a.props,
+                    l = s.adFreeArticleDomains,
+                    c = s.createLocalApiErrorHandler,
+                    u = s.fetchAdFreeToken,
+                    d = new Ea.a(u, c()).getAdFreeArticlesClickHandler({
+                      destinationUrl: ka.a.getBindingValue(r, 'card_url'),
+                      linkDomain: ka.a.getBindingValue(r, 'domain'),
+                      adFreeArticleDomains: l,
                     }),
-                    d = se()(u, 2),
-                    p = d[0],
-                    m = d[1]
-                  p && m(e)
+                    p = se()(d, 2),
+                    m = p[0],
+                    h = p[1]
+                  m && h(e)
                 }
               }),
               h()(l()(a), '_handleTextContentLayout', function (e) {
@@ -2502,23 +2503,25 @@
                     d = this.state,
                     p = d.attachmentWidth,
                     m = d.textContentWidth,
-                    h = !!Object.values(Ca).includes(t.name),
+                    h = !!Object.values(Ca).includes(null == t ? void 0 : t.name),
                     f = St(n, p, m),
                     g = f.isAttachmentSquared ? 'both' : s ? 'right' : 'left',
                     y =
                       this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                       this.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-                    b = v.a.createElement(
-                      J.a,
-                      { onClick: this._handleOnClick, onLayout: this._handleAttachmentLayout },
-                      v.a.createElement(Sa.a, {
-                        card: { name: t.name, url: t.url, binding_values: t.binding_values, users: t.users },
-                        cardContext: { tweetUserId: l.sender_id },
-                        dmSentOrReceived: s ? 'sent' : 'received',
-                        withBorderShadow: y,
-                        withSquareBottomBorderRadius: g,
-                      }),
-                    ),
+                    b = t
+                      ? v.a.createElement(
+                          J.a,
+                          { onClick: this._handleOnClick, onLayout: this._handleAttachmentLayout },
+                          v.a.createElement(Sa.a, {
+                            card: { name: t.name, url: t.url, binding_values: t.binding_values, users: t.users },
+                            cardContext: { tweetUserId: l.sender_id },
+                            dmSentOrReceived: s ? 'sent' : 'received',
+                            withBorderShadow: y,
+                            withSquareBottomBorderRadius: g,
+                          }),
+                        )
+                      : null,
                     _ = n
                       ? v.a.createElement(
                           J.a,
@@ -2527,7 +2530,7 @@
                             style: s ? Ia.sentMessageWrapper : Ia.receivedMessageWrapper,
                           },
                           v.a.createElement(ba, {
-                            excludeCardUrl: t.url,
+                            excludeCardUrl: null == t ? void 0 : t.url,
                             hasAssociatedAttachment: !0,
                             isActive: a,
                             isFailedDraft: r,
@@ -6816,7 +6819,7 @@
           function (e, t) {
             return E.selectEntriesForConversation(e, D(0, t))
           },
-          k.q,
+          k.r,
           function (e, t) {
             return t ? Object(O.e)(e, t) : void 0
           },
@@ -6827,7 +6830,7 @@
           },
           E.selectEntries,
           O.m,
-          k.q,
+          k.r,
           O.n,
           O.o,
           A.e.selectAll,
@@ -9616,7 +9619,7 @@
             return {
               conversations: _.selectConversations,
               drawerExperimentEnabled: _.selectDrawerExperimentEnabled,
-              perspective: E.q,
+              perspective: E.r,
               poppedOutConversationId: _.selectPoppedOutConversationId,
               visibility: _.selectDrawerVisibility,
             }
@@ -9650,7 +9653,7 @@
           function (e, t) {
             return _.selectEntriesForConversation(e, N(0, t))
           },
-          E.q,
+          E.r,
           function (e, t) {
             return t ? Object(F.e)(e, t) : void 0
           },
@@ -9670,7 +9673,7 @@
             return _.selectConversation(e, N(0, t))
           },
           entries: _.selectEntries,
-          perspective: E.q,
+          perspective: E.r,
           users: D.e.selectAll,
           dataSaverMode: P.j,
           dtabBarInfo: P.m,
@@ -11252,8 +11255,8 @@
           function (e, t) {
             return Object(E.D)(e, E.t)
           },
-          G.y,
-          G.o,
+          G.z,
+          G.p,
           function (e, t, n, a, r, i, o, s, l) {
             return {
               conversation: (null == t ? void 0 : t.data) && Object(z.a)(t.data, n, a),

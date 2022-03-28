@@ -497,7 +497,7 @@
         },
         Be = Object(Ae.a)()
           .propsFromState(function () {
-            return { translation: Re, translationFetchStatus: Me, userLanguage: xe.o }
+            return { translation: Re, translationFetchStatus: Me, userLanguage: xe.p }
           })
           .propsFromActions(function () {
             return {

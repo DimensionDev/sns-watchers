@@ -84,7 +84,7 @@
               : l
               ? ''.concat(d).concat(p, '-user-').concat(l)
               : ''.concat(d).concat(p),
-            h = a.isTrue('responsive_web_new_client_events_enabled')
+            h = a.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
             timelineId: m,
             formatResponse: b(h),

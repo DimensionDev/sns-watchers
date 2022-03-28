@@ -98,7 +98,7 @@
                 value: function () {
                   if (!this.initialized()) return !1
                   var e = S.store.getState()
-                  return Object(w.m)(e)
+                  return Object(w.n)(e)
                 },
               },
               {

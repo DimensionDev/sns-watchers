@@ -1310,7 +1310,7 @@
         _ = function (e) {
           return function (t, a, n) {
             var r = n.api
-            return s.b(t, { params: e, meta: { lang: Object(u.o)(a()) }, request: r.FeatureSwitch.fetchLanguages })({
+            return s.b(t, { params: e, meta: { lang: Object(u.p)(a()) }, request: r.FeatureSwitch.fetchLanguages })({
               actionTypes: h,
               context: 'FETCH_AVAILABLE_LANGUAGES',
             })
@@ -2570,12 +2570,12 @@
         L = a('0KEI'),
         O = a('FDFL'),
         j = function (e) {
-          var t = Object(A.o)(e)
+          var t = Object(A.p)(e)
           return t && Object(O.b)(e, t)
         },
         U = Object(D.a)()
           .propsFromState(function () {
-            return { language: A.o, languageName: j }
+            return { language: A.p, languageName: j }
           })
           .propsFromActions(function () {
             return {

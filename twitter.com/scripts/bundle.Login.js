@@ -70,7 +70,7 @@
             return {
               errorMessage: L,
               loginId: S,
-              loginReturnPath: y.r,
+              loginReturnPath: y.s,
               loggedInUser: E.e.selectLoggedInUser,
               shouldChallenge: R,
               shouldDisableUsernameLogin: O,

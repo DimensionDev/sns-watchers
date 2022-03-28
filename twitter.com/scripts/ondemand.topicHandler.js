@@ -556,7 +556,7 @@
             r.userPersistence
             t({ payload: e, type: I })
             var o = n().recentSearches
-            return Object(s.m)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
+            return Object(s.n)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
           }
         },
         g = 'rweb/recentSearches/CLEAR_ALL',
@@ -565,7 +565,7 @@
             n.userPersistence
             e({ type: g })
             var r = t().recentSearches
-            return Object(s.m)(t()) ? e(d(r.recentSearches)) : Promise.resolve()
+            return Object(s.n)(t()) ? e(d(r.recentSearches)) : Promise.resolve()
           }
         },
         S = 'rweb/recentSearches/ADD_QUERY',
@@ -574,7 +574,7 @@
             r.userPersistence
             t({ payload: e, type: S })
             var o = n().recentSearches
-            return Object(s.m)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
+            return Object(s.n)(n()) ? t(d(o.recentSearches)) : Promise.resolve()
           }
         },
         E = function () {
@@ -585,7 +585,7 @@
               : e(function (e, t, n) {
                   var r = n.userPersistence,
                     o = t()
-                  return Object(s.m)(o)
+                  return Object(s.n)(o)
                     ? r
                         .get(u)
                         .then(function (t) {

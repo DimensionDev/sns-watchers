@@ -262,7 +262,7 @@
         R = a('rxPX'),
         U = a('0KEI'),
         x = function (e) {
-          var t = Object(D.q)(e)
+          var t = Object(D.r)(e)
           return t
             ? (function (e, t) {
                 var a,
@@ -280,7 +280,7 @@
             : void 0
         },
         L = function (e) {
-          var t = Object(D.q)(e)
+          var t = Object(D.r)(e)
           return t
             ? (function (e, t) {
                 var a
@@ -290,7 +290,7 @@
         },
         P = Object(R.a)()
           .propsFromState(function () {
-            return { facepileUrls: x, count: L, userId: D.q, safetyModeSettings: w.c }
+            return { facepileUrls: x, count: L, userId: D.r, safetyModeSettings: w.c }
           })
           .adjustStateProps(function (e) {
             var t = e.count,
@@ -605,7 +605,7 @@
           return function (t, a, n) {
             var r = n.api,
               o = a(),
-              c = { userId: Object(l.q)(o) || '', duration: e }
+              c = { userId: Object(l.r)(o) || '', duration: e }
             return Object(u.c)(t, { params: c, request: r.SettingsGraphQL.updateSafetyModeSettings })({
               actionTypes: p,
               context: 'UPDATE_SAFETY_MODE_SETTINGS',

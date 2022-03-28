@@ -5,7 +5,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'BookmarksScreen', function () {
-          return N
+          return W
         })
       var o = r('VrFO'),
         n = r.n(o),
@@ -64,9 +64,9 @@
         x = R.a.h63a5c3b,
         H = R.a.c8c1fa6d,
         U = R.a.jf748f4f,
-        q = R.a.cc0f2f4f,
-        Q = R.a.dbd5d40f,
-        N = (function (e) {
+        Q = R.a.cc0f2f4f,
+        N = R.a.dbd5d40f,
+        W = (function (e) {
           s()(r, e)
           var t = m()(r)
           function r() {
@@ -124,12 +124,12 @@
                       }),
                       this.state.showConfirmRemoveAll
                         ? p.a.createElement(j.a, {
-                            confirmButtonLabel: Q,
+                            confirmButtonLabel: N,
                             confirmButtonType: 'destructiveFilled',
                             headline: U,
                             onCancel: this._handleClearCancel,
                             onConfirm: this._handleClearConfirmed,
-                            text: q,
+                            text: Q,
                           })
                         : null,
                     ),
@@ -158,9 +158,9 @@
             r
           )
         })(p.a.Component)
-      f()(N, 'contextType', L.a)
-      var W = B(N)
-      t.default = W
+      f()(W, 'contextType', L.a)
+      var q = B(W)
+      t.default = q
     },
     '1LtL': function (e, t, r) {
       'use strict'
@@ -398,7 +398,7 @@
             },
             mapResponseToActions: function (e, t, r) {
               return function (t) {
-                var o = Object(k.q)(r())
+                var o = Object(k.r)(r())
                 if (o && e && 'Done' === (null == t ? void 0 : t.bookmark_collection_delete))
                   return [O(o).removeItems([e])]
               }
@@ -422,7 +422,7 @@
               return function (t) {
                 if (t) {
                   var o = null == t ? void 0 : t.bookmark_collection_update,
-                    n = Object(k.q)(r())
+                    n = Object(k.r)(r())
                   if (n && e && o) return [O(n).injectItems([o.id])]
                 }
               }
@@ -453,7 +453,7 @@
                   if ('Done' !== o.bookmark_collection_tweet_delete) return
                   if (!t.tweetId || !e) return []
                   var a = null == o ? void 0 : o.bookmark_collection_tweet_delete,
-                    i = Object(k.q)(r())
+                    i = Object(k.r)(r())
                   if (i && e && a) {
                     var c = O(i)
                     return [Object(s.a)(e).removeTweets(n()({}, t.tweetId, !0)), c.injectItems([e])]
@@ -481,7 +481,7 @@
                   if ('Done' !== o.bookmark_collection_tweet_put) return
                   if (!t.tweetId || !e) return []
                   var n = null == o ? void 0 : o.bookmark_collection_tweet_put,
-                    a = Object(k.q)(r())
+                    a = Object(k.r)(r())
                   if (a && e && n) {
                     var i = O(a)
                     return [
@@ -519,7 +519,7 @@
               function (e) {
                 if (e) {
                   var t = null == e ? void 0 : e.bookmark_collection_create,
-                    o = Object(k.q)(r())
+                    o = Object(k.r)(r())
                   if (t && o) {
                     var a = O(o)
                     return [v.add(n()({}, t.id, t)), a.injectItems([t.id])]

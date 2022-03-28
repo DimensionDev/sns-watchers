@@ -4821,17 +4821,19 @@
                 value: function () {
                   var e = this.props,
                     t = e.Icon,
-                    n = e.headline,
-                    r = e.withThumbnail
+                    n = e.action,
+                    r = e.headline,
+                    o = e.withThumbnail,
+                    i = r || n
                   if (t) {
-                    if (r)
+                    if (o)
                       return g.a.createElement(w.a, {
                         Icon: t,
                         color: this._getThumbnailColor(),
-                        size: n ? 'large' : 'medium',
-                        style: [j.thumbnail, n && j.thumbnailLargeMargin],
+                        size: i ? 'large' : 'medium',
+                        style: [j.thumbnail, i && j.thumbnailLargeMargin],
                       })
-                    if (n)
+                    if (r)
                       return g.a.createElement(
                         y.b,
                         { align: 'center' },
@@ -4873,6 +4875,7 @@
                   if (t)
                     return g.a.createElement(y.b, {
                       children: t.label,
+                      color: 'text',
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
@@ -6529,7 +6532,7 @@
             context: 'CREATE_TWITTER_ARTICLE',
             mapResponseToActions: function (e, t, n) {
               return function (e) {
-                var t = Object(f.q)(n())
+                var t = Object(f.r)(n())
                 if (e && t) {
                   var r,
                     o = e.entities,
@@ -6553,7 +6556,7 @@
             context: 'DELETE_TWITTER_ARTICLE',
             mapResponseToActions: function (e, t, n) {
               return function (t) {
-                var r = Object(f.q)(n())
+                var r = Object(f.r)(n())
                 if (r) return [v(r).removeItems([e])]
               }
             },
@@ -12065,7 +12068,7 @@
         b = n('RqPI'),
         _ = n('rxPX'),
         E = Object(_.a)().propsFromState(function () {
-          return { viewerCountry: b.y }
+          return { viewerCountry: b.z }
         }),
         w = n('dzZ/'),
         S = n('3XMw'),
@@ -17305,8 +17308,8 @@
             s = Object(f.a)(),
             l = a && (null == c ? void 0 : c.isTrueAndEnabled('subscriptions_feature_1005')),
             u = null == n ? void 0 : n.id_str,
-            d = null == n || null === (t = n.user) || void 0 === t ? void 0 : t.screen_name,
-            h = function () {
+            h = null == n || null === (t = n.user) || void 0 === t ? void 0 : t.screen_name,
+            v = function () {
               s.scribe({
                 action: 'click',
                 element: r ? 'view_in_reader_mode_button' : 'reader_mode_header_icon_enable',
@@ -17317,11 +17320,16 @@
             }
           return l
             ? (function () {
-                if (u && d) {
-                  var e = '/'.concat(d, '/thread/').concat(u)
+                if (u && h) {
+                  var e = '/'.concat(h, '/thread/').concat(u)
                   return r
-                    ? o.a.createElement(p.a, { link: e, onClick: h, style: g.button, type: 'primaryOutlined' }, m)
-                    : o.a.createElement(p.a, { icon: y, link: e, onClick: h, type: 'brandText' })
+                    ? o.a.createElement(p.a, { link: e, onClick: v, style: g.button, type: 'primaryOutlined' }, m)
+                    : o.a.createElement(p.a, {
+                        icon: o.a.createElement(d.a, { style: g.icon }),
+                        link: e,
+                        onClick: v,
+                        type: 'brandText',
+                      })
                 }
                 return null
               })()
@@ -17333,14 +17341,13 @@
             icon: { color: e.colors.text, weight: 'bold' },
           }
         }),
-        y = o.a.createElement(d.a, { style: g.icon }),
-        b = s(function (e) {
+        y = s(function (e) {
           var t = e.focalTweet,
             n = e.isExpanded,
             r = e.readerModeAvailable
           return o.a.createElement(v, { focalTweet: t, isExpanded: n, readerModeAvailable: r })
         })
-      t.b = b
+      t.b = y
     },
     PlEh: function (e, t, n) {
       'use strict'
@@ -18482,7 +18489,7 @@
               (null === (t = e.quickPromote.account) || void 0 === t || null === (n = t.adsAccount) || void 0 === n
                 ? void 0
                 : n.country_code) ||
-              Object(h.y)(e) ||
+              Object(h.z)(e) ||
               'US'
           return 'XX' === r ? 'US' : r.toUpperCase()
         },
@@ -24280,7 +24287,7 @@
           a = void 0 !== i && i
         return r.e({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(6), n.e(247)]).then(n.bind(null, '+92Z'))
+            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(247)]).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: a, errorContext: t },
@@ -28382,7 +28389,7 @@
               droppedAds: Z,
               entries: B,
               initialFetchStatus: K,
-              isRestrictedSession: R.n,
+              isRestrictedSession: R.o,
               pinnedEntry: G,
               pollingIntervalMs: Q,
               previewEntries: j,
@@ -28449,7 +28456,7 @@
         pe = n('P1r1'),
         he = Object(M.a)()
           .propsFromState(function () {
-            return { guestSegment: R.j, isLoggedIn: R.m }
+            return { guestSegment: R.j, isLoggedIn: R.n }
           })
           .propsFromActions(function () {
             return { updateSettings: pe.M }
@@ -31435,7 +31442,7 @@
               return function (t) {
                 var r = n(),
                   o = D.select(r, e),
-                  i = Object(T.q)(r)
+                  i = Object(T.r)(r)
                 if (!o || !i) return []
                 var a = f.a(e),
                   c = Object(b.a)(i, i)
@@ -31524,7 +31531,7 @@
               return function (t) {
                 var r = n(),
                   o = D.select(r, e),
-                  i = Object(T.q)(r)
+                  i = Object(T.r)(r)
                 if (!o || !i || null == t || !t.entities) return []
                 var a = j(i),
                   c = Object(w.a)(e)
@@ -31554,7 +31561,7 @@
               return function (r) {
                 var o = n(),
                   i = D.select(o, e),
-                  a = Object(T.q)(o)
+                  a = Object(T.r)(o)
                 return i && a && i.muting !== t.mute && r ? [D.updateOne(e, { muting: t.mute })] : []
               }
             },
@@ -31576,7 +31583,7 @@
               return function (r) {
                 var o = n(),
                   i = D.select(o, e),
-                  a = Object(T.q)(o),
+                  a = Object(T.r)(o),
                   c = []
                 if (i && a && r) {
                   var l = t.isPinned
@@ -31608,7 +31615,7 @@
               return function (t) {
                 var r = n(),
                   o = D.select(r, e),
-                  i = Object(T.q)(r)
+                  i = Object(T.r)(r)
                 if (!o || !i || null == t || !t.entities) return []
                 var a = Object(w.a)(e)
                 return [].concat(s()(Object(O.d)(o, n)), [
@@ -31636,7 +31643,7 @@
                 .b(t, { request: o.Lists.createList, params: e })(
                   { actionTypes: D.actionTypes.CREATE, context: 'CREATE_LIST' },
                   function (e) {
-                    var t = Object(T.q)(n())
+                    var t = Object(T.r)(n())
                     if (e && t) {
                       var r = e.result,
                         o = B(r),
@@ -31699,7 +31706,7 @@
             return function (e, r, o) {
               o.api
               var i = r(),
-                a = Object(T.q)(i)
+                a = Object(T.r)(i)
               if (a) {
                 var c = Object(b.a)(a, n),
                   s = c.selectEntries(i),
@@ -32598,31 +32605,21 @@
     'ogJ+': function (e, t, n) {
       'use strict'
       var r = n('ezF+'),
-        o = n('ERkP'),
-        i = n.n(o),
-        a = n('t62R'),
-        c = n('xM7j')
+        o =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return n.e(364).then(n.bind(null, 'Xvmv'))
+            },
+            loaderKey: 'unsupportedDefaultLoader',
+            strategy: n('XBtf').a.Critical,
+          })
       t.a = function (e) {
-        return r.e(
-          e
-            ? r.d({
-                render: function (e) {
-                  return i.a.createElement(
-                    c.a,
-                    null,
-                    i.a.createElement(
-                      a.b,
-                      null,
-                      (function (e) {
-                        var t = 'Failed to parse item: '.concat(e.content.displayType)
-                        return e.content.contentType && (t += '\nof type: '.concat(e.content.contentType)), t
-                      })(e),
-                    ),
-                  )
-                },
-              })
-            : r.a(),
-        )
+        return r.e(e ? o : r.a())
       }
     },
     ooRk: function (e, t, n) {
@@ -35296,7 +35293,7 @@
         },
         x = Object(C.a)()
           .propsFromState(function () {
-            return { isLoggedIn: w.m, user: T }
+            return { isLoggedIn: w.n, user: T }
           })
           .propsFromActions(function () {
             return {
@@ -36144,7 +36141,7 @@
         k = n('RqPI'),
         T = Object(S.a)()
           .propsFromState(function () {
-            return { perspective: k.q, reporterCountry: k.y, reporterLanguage: k.o, sessionToken: k.v }
+            return { perspective: k.r, reporterCountry: k.z, reporterLanguage: k.p, sessionToken: k.w }
           })
           .propsFromActions(function () {
             return {
@@ -38562,7 +38559,7 @@
         J = function (e) {
           return function (t, n) {
             t(Object(h.U)(e))
-            var r = Object(D.o)(n())
+            var r = Object(D.p)(n())
             return Object(u.b)('targetingLocation', t(k.getTypeaheadResults(e, { query: e, lang: r })))
           }
         },
@@ -38575,8 +38572,8 @@
               t().quickPromote.targeting.targetedLocations.length
             )
               return Promise.resolve()
-            var o = Object(D.y)(t()) || 'US',
-              i = Object(D.o)(t())
+            var o = Object(D.z)(t()) || 'US',
+              i = Object(D.p)(t())
             return (
               e(Object(h.J)(a.a.LOADING)),
               Object(u.b)(

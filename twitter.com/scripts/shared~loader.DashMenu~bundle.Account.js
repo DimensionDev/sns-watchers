@@ -347,7 +347,7 @@
               hasCommunityMemberships: C.d,
               pendingFollowersInfo: k.f,
               loggedInUser: y.e.selectLoggedInUser,
-              userFeatures: w.p,
+              userFeatures: w.q,
               settings: g.g,
             }
           })
@@ -456,8 +456,8 @@
           )
         }
       N.metadata = { width: 24, height: 24 }
-      var W = N,
-        q = function () {
+      var q = N,
+        W = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(j.a)(
             'svg',
@@ -479,8 +479,8 @@
             ),
           )
         }
-      q.metadata = { width: 24, height: 24 }
-      var U = q,
+      W.metadata = { width: 24, height: 24 }
+      var U = W,
         G = R.a.create(function (e) {
           return { bristles: { color: e.colors.primary, position: 'absolute', top: 0, left: 0 } }
         }),
@@ -489,7 +489,7 @@
           return f.a.createElement(
             T.a,
             { accessibilityRole: 'none' },
-            f.a.createElement(W, { style: t }),
+            f.a.createElement(q, { style: t }),
             f.a.createElement(U, { style: [t, G.bristles] }),
           )
         },
@@ -636,8 +636,8 @@
         Ve = z.a.a58e0e51,
         je = z.a.deaf7e0a,
         Ne = z.a.b4af8c6a,
-        We = z.a.ed21f885,
-        qe = z.a.d0a51fb1,
+        qe = z.a.ed21f885,
+        We = z.a.d0a51fb1,
         Ue = 'Write',
         Ge = z.a.fa98627a,
         Ze = z.a.fd442790,
@@ -781,7 +781,7 @@
                   return f.a.createElement(F, {
                     icon: ue.a,
                     iconColor: R.a.theme.colors.brandColor,
-                    label: We,
+                    label: qe,
                     link: n,
                     onClick: e._handleTwitterBlueClick,
                   })
@@ -792,7 +792,7 @@
                 return e._newslettersEnabled
                   ? f.a.createElement(F, {
                       icon: he.a,
-                      label: qe,
+                      label: We,
                       link: '/i/newsletters',
                       onClick: e._handleNewslettersClick,
                     })

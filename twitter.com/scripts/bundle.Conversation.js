@@ -278,7 +278,7 @@
               dailyBudget: I,
               durationDays: P,
               availableBudgets: S,
-              lang: _.o,
+              lang: _.p,
               currency: k,
               audience: x,
               errorMessage: T,
@@ -854,7 +854,7 @@
         },
         Ct = Object(E.a)()
           .propsFromState(function () {
-            return { hasFundingInstrument: _t, coupons: Et, lang: _.o, currency: wt }
+            return { hasFundingInstrument: _t, coupons: Et, lang: _.p, currency: wt }
           })
           .withAnalytics(Ve.o),
         It = n.p + 'desktop_header_image.bfa9e365.png',
@@ -1772,7 +1772,7 @@
               gender: La,
               dailyBudget: ja,
               durationDays: Aa,
-              lang: _.o,
+              lang: _.p,
               country: C.p,
               currency: Da,
               fundingInstrument: Ba,
@@ -2208,7 +2208,7 @@
               targetingLocations: vr,
               targetedLocations: wr,
               fetchStatus: _r,
-              userCountry: _.y,
+              userCountry: _.z,
               campaigns: Cr,
             }
           })
@@ -3153,7 +3153,7 @@
               isForwardNavigation: M,
               isReferralSource: Q,
               isReferredFromExploreTopics: W,
-              userLanguage: S.o,
+              userLanguage: S.p,
               loggedInUser: L.e.selectLoggedInUser,
               overflowCount: V,
               promotedContent: U,

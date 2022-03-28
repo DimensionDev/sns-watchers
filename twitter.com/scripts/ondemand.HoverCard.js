@@ -874,7 +874,7 @@
         },
         F = Object(y.a)()
           .propsFromState(function () {
-            return { list: C, user: k, loggedInUserId: g.q, media: S }
+            return { list: C, user: k, loggedInUserId: g.r, media: S }
           })
           .propsFromActions(function () {
             return {
@@ -1217,7 +1217,7 @@
         function () {
           return function (e, t, n) {
             var r = n.userPersistence
-            return Object(c.m)(t())
+            return Object(c.n)(t())
               ? r.get(u).then(function (t) {
                   t && e(h(t))
                 })

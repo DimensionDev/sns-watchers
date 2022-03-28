@@ -15,8 +15,8 @@
         d,
         m,
         y,
-        g,
         p,
+        g,
         k,
         _,
         b,
@@ -281,7 +281,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (g = {
+                                                                      (p = {
                                                                         alias: null,
                                                                         args: null,
                                                                         filters: null,
@@ -290,7 +290,7 @@
                                                                         kind: 'LinkedHandle',
                                                                         name: 'legacy',
                                                                       }),
-                                                                      (p = {
+                                                                      (g = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -349,8 +349,8 @@
                                                         ],
                                                         storageKey: null,
                                                       },
-                                                      g,
                                                       p,
+                                                      g,
                                                     ]),
                                                     storageKey: null,
                                                   },
@@ -452,7 +452,7 @@
                                                                       {
                                                                         kind: 'InlineFragment',
                                                                         selections: [
-                                                                          p,
+                                                                          g,
                                                                           (f = {
                                                                             alias: null,
                                                                             args: null,
@@ -536,7 +536,7 @@
                                                                                 name: 'timeline_with_context',
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                  p,
+                                                                                  g,
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -632,8 +632,8 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  g,
                                                   p,
+                                                  g,
                                                 ],
                                                 type: 'User',
                                                 abstractKey: null,
@@ -651,7 +651,7 @@
                                 ],
                                 storageKey: null,
                               },
-                              p,
+                              g,
                             ],
                             type: 'User',
                             abstractKey: null,
@@ -700,13 +700,13 @@
             o = e.render,
             u = void 0 === o ? m : o,
             y = e.revealLabel,
-            g = void 0 === y ? c : y,
-            p = r.a.useState(!1),
-            k = t()(p, 2),
+            p = void 0 === y ? c : y,
+            g = r.a.useState(!1),
+            k = t()(g, 2),
             _ = k[0],
             b = k[1]
           return u({
-            actionText: _ ? a : g,
+            actionText: _ ? a : p,
             children: _ ? l : i,
             lang: s,
             onActionClick: function () {
@@ -1151,41 +1151,41 @@
         d = n('5Yy7'),
         m = n.n(d),
         y = n('2VqO'),
-        g = n.n(y),
-        p = n('KEM+'),
-        k = n.n(p),
+        p = n.n(y),
+        g = n('KEM+'),
+        k = n.n(g),
         _ = (n('yH/f'), n('2G9S'), n('ho0z'), n('hBvt'), n('vrRf'), n('1t7P'), n('jQ/y'), n('SV7d')),
         b = n('ERkP'),
         f = n.n(b),
         h = n('TIdA'),
         F = n('t62R'),
         T = n('5mJL'),
-        K = n('DNho'),
-        v = n('nBUg'),
+        v = n('DNho'),
+        K = n('nBUg'),
         S = n('qjak'),
         w = n('ir4X'),
         x = n('htQn'),
         C = n('e5HP'),
         E = n('FBXD'),
-        R = n('Nqmc'),
-        L = n('rHpw'),
+        L = n('Nqmc'),
+        R = n('rHpw'),
         I = n('jhWN'),
         U = n('1I0O'),
         D = n('pBrB'),
         z = n('jV+4'),
         B = n('MWbm'),
-        j = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
-        H = Object.freeze({
+        H = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
+        j = Object.freeze({
           UserCompact: 'UserCompact',
           UserConcise: 'UserConcise',
           UserDetailed: 'UserDetailed',
           ExperimentalUserTypeahead: 'ExperimentalUserTypeahead',
         }),
-        O = h.a.createLayoutCache(),
-        M = { viewType: 'user_cell' },
-        N = (function (e) {
+        M = h.a.createLayoutCache(),
+        O = { viewType: 'user_cell' },
+        A = (function (e) {
           m()(n, e)
-          var l = g()(n)
+          var l = p()(n)
           function n() {
             var e
             r()(this, n)
@@ -1206,8 +1206,8 @@
                   d = l.onScreenNameClick,
                   m = l.promotedContent,
                   y = l.promotedItemType,
-                  g = l.screenName,
-                  p = l.screenNameSuffix,
+                  p = l.screenName,
+                  g = l.screenNameSuffix,
                   k = l.translatorType,
                   _ = l.withFollowsYou,
                   b = l.withLink,
@@ -1218,9 +1218,9 @@
                     isVerified: u,
                     name: c,
                     onLinkClick: d,
-                    promotedContent: y === j.TWEET ? m : void 0,
-                    screenName: g,
-                    screenNameSuffix: p,
+                    promotedContent: y === H.TWEET ? m : void 0,
+                    screenName: p,
+                    screenNameSuffix: g,
                     translatorType: k,
                     withFollowsYou: _ && s,
                     withHoverCard: !i && !r && b,
@@ -1231,7 +1231,7 @@
                 return a
                   ? f.a.createElement(
                       B.a,
-                      { style: P.disabledMessageContainer },
+                      { style: N.disabledMessageContainer },
                       h,
                       f.a.createElement(F.b, { color: 'gray700' }, a),
                     )
@@ -1243,16 +1243,16 @@
                   a = l.displayMode,
                   t = l.socialContext
                 return t
-                  ? f.a.createElement(v.b.UseProps, null, function (e) {
-                      return f.a.createElement(R.a, {
+                  ? f.a.createElement(K.b.UseProps, null, function (e) {
+                      return f.a.createElement(L.a, {
                         avatarSize: n,
                         contextType: t.contextType,
                         iconSize: 'large',
                         link: t.link,
-                        style: P.socialContext,
+                        style: N.socialContext,
                         text: t.text,
                         weight: 'bold',
-                        withLeftPadding: !e.socialContextRefreshEnabled() && a !== H.ExperimentalUserTypeahead,
+                        withLeftPadding: !e.socialContextRefreshEnabled() && a !== j.ExperimentalUserTypeahead,
                       })
                     })
                   : null
@@ -1267,11 +1267,11 @@
                 return l
                   ? f.a.createElement(
                       B.a,
-                      { style: P.userTypeaheadSocialContext },
-                      f.a.createElement(B.a, { style: P.userTypeaheadSocialContextIcon }, a),
+                      { style: N.userTypeaheadSocialContext },
+                      f.a.createElement(B.a, { style: N.userTypeaheadSocialContextIcon }, a),
                       f.a.createElement(
                         F.b,
-                        { color: 'gray700', numberOfLines: 1, style: P.userTypeaheadSocialContextText },
+                        { color: 'gray700', numberOfLines: 1, style: N.userTypeaheadSocialContextText },
                         t,
                       ),
                     )
@@ -1283,7 +1283,7 @@
               }),
               k()(c()(e), '_isEligibleForBio', function () {
                 var l = e.props.displayMode
-                return -1 !== [H.UserDetailed, H.UserConcise].indexOf(l)
+                return -1 !== [j.UserDetailed, j.UserConcise].indexOf(l)
               }),
               k()(c()(e), '_handleKeyPress', function (l) {
                 l.defaultPrevented || 'Enter' !== l.key || e._handleClick(l)
@@ -1317,44 +1317,44 @@
                     d = e.isDisabled,
                     m = e.onAvatarClick,
                     y = e.onCellClick,
-                    g = e.onScreenNameClick,
-                    p = e.presenceIndicator,
+                    p = e.onScreenNameClick,
+                    g = e.presenceIndicator,
                     k = e.promotedContent,
                     b = e.promotedItemType,
                     h = e.screenName,
                     F = e.style,
-                    v = e.testID,
+                    K = e.testID,
                     S = e.userId,
                     w = e.withDarkerInteractiveBackground,
                     E = e.withInteractiveStyling,
-                    R = e.withLink,
-                    L = e.withUsernameCenterAligned,
-                    D = R && !c,
-                    z = u === H.UserCompact || L,
-                    N = u === H.ExperimentalUserTypeahead,
-                    V =
-                      k && b === j.USER && 'earned' !== (k.disclosure_type && k.disclosure_type.toLowerCase())
-                        ? f.a.createElement(C.a, { contentAuthorId: S, promotedContent: k, style: P.promotedIndicator })
+                    L = e.withLink,
+                    R = e.withUsernameCenterAligned,
+                    D = L && !c,
+                    z = u === j.UserCompact || R,
+                    A = u === j.ExperimentalUserTypeahead,
+                    P =
+                      k && b === H.USER && 'earned' !== (k.disclosure_type && k.disclosure_type.toLowerCase())
+                        ? f.a.createElement(C.a, { contentAuthorId: S, promotedContent: k, style: N.promotedIndicator })
                         : null,
-                    A = {
+                    V = {
                       accessibilityHidden: !0,
                       decoration: a,
                       focusable: !1,
-                      imageLayoutCache: O,
+                      imageLayoutCache: M,
                       onClick: m,
-                      onHoverCardScreenNameClick: g,
+                      onHoverCardScreenNameClick: p,
                       promotedContent: k,
                       screenName: h,
-                      style: P.avatar,
+                      style: N.avatar,
                       uri: r,
                       withHoverCard: D,
-                      withLink: R,
+                      withLink: L,
                     },
-                    W = f.a.createElement(K.a.Consumer, null, function (e) {
+                    W = f.a.createElement(v.a.Consumer, null, function (e) {
                       var l = e.avatarSize
-                      return p
-                        ? f.a.createElement(U.a, t()({}, A, p, { size: l }))
-                        : f.a.createElement(I.a, t()({ size: l }, A))
+                      return g
+                        ? f.a.createElement(U.a, t()({}, V, g, { size: l }))
+                        : f.a.createElement(I.a, t()({ size: l }, V))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== y,
@@ -1362,18 +1362,18 @@
                     Q = this._renderUserName(),
                     X = this._renderHighlightedUserLabel(),
                     Y = this._renderBio(),
-                    Z = X || Y || V || s,
+                    Z = X || Y || P || s,
                     $ = f.a.createElement(
                       f.a.Fragment,
                       null,
                       X,
                       Y,
-                      V,
-                      s ? f.a.createElement(B.a, { style: P.bottomControl }, s) : null,
+                      P,
+                      s ? f.a.createElement(B.a, { style: N.bottomControl }, s) : null,
                     )
                   return f.a.createElement(
                     _.a,
-                    { behavioralEventContext: M },
+                    { behavioralEventContext: O },
                     f.a.createElement(
                       x.a,
                       {
@@ -1385,28 +1385,28 @@
                         onClick: this._handleClick,
                         onKeyPress: this._handleKeyPress,
                         pointerEvents: d ? 'none' : void 0,
-                        style: [P.root, F],
-                        testID: v,
+                        style: [N.root, F],
+                        testID: K,
                         withDarkerInteractiveBackground: w,
                         withInteractiveStyling: null != E ? E : !!y,
                       },
-                      N ? null : this._renderSocialContext(),
+                      A ? null : this._renderSocialContext(),
                       f.a.createElement(
                         T.a,
                         {
                           avatarCell: W,
-                          avatarCellStyle: [P.avatarColumn, z && P.bodyColumnCentered],
-                          avatarSize: N ? 'xxxLarge' : i,
-                          cellStyle: [P.bodyColumn, z && P.bodyColumnCentered],
+                          avatarCellStyle: [N.avatarColumn, z && N.bodyColumnCentered],
+                          avatarSize: A ? 'xxxLarge' : i,
+                          cellStyle: [N.bodyColumn, z && N.bodyColumnCentered],
                         },
-                        f.a.createElement(B.a, { style: P.body }, Q, o),
+                        f.a.createElement(B.a, { style: N.body }, Q, o),
                         z ? null : $,
-                        N ? this._renderUserTypeaheadSocialContext() : null,
+                        A ? this._renderUserTypeaheadSocialContext() : null,
                       ),
                       Z && z
                         ? f.a.createElement(
                             T.a,
-                            { avatarCell: null, avatarCellStyle: P.avatarColumn, cellStyle: P.bodyColumn },
+                            { avatarCell: null, avatarCellStyle: N.avatarColumn, cellStyle: N.bodyColumn },
                             $,
                           )
                         : null,
@@ -1428,8 +1428,8 @@
                     ? f.a.createElement(D.a, {
                         description: l,
                         entities: a,
-                        isConcise: n === H.UserConcise,
-                        style: P.bio,
+                        isConcise: n === j.UserConcise,
+                        style: N.bio,
                         userId: t,
                         withheldDescription: i,
                         withheldEntities: r,
@@ -1441,8 +1441,8 @@
             n
           )
         })(f.a.PureComponent)
-      k()(N, 'defaultProps', { testID: 'UserCell', withLink: !0 })
-      var P = L.a.create(function (e) {
+      k()(A, 'defaultProps', { testID: 'UserCell', withLink: !0 })
+      var N = R.a.create(function (e) {
         return {
           root: {
             paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -1463,7 +1463,7 @@
           disabledMessageContainer: { flexShrink: 1 },
         }
       })
-      l.a = N
+      l.a = A
     },
     'r/Jf': function (e, l, n) {
       'use strict'
@@ -1533,28 +1533,28 @@
         s,
         o = n('ERkP'),
         u = n.n(o),
-        c = n('lnti'),
-        d = n('jHSc'),
-        m = (n('enFi'), n('3XMw')),
-        y = n.n(m),
-        g = n('Fr3L'),
+        c = n('jHSc'),
+        d = (n('enFi'), n('3XMw')),
+        m = n.n(d),
+        y = n('Fr3L'),
         p = n.p + 'report-detail-ear.0518acc5.png',
-        k = (n('z84I'), n('yiKp')),
-        _ = n.n(k),
-        b = n('97Jx'),
-        f = n.n(b),
-        h = (n('1t7P'), n('jQ/y'), n('ho0z'), n('uFXj'), n('axvi')),
+        g = (n('z84I'), n('yiKp')),
+        k = n.n(g),
+        _ = n('97Jx'),
+        b = n.n(_),
+        f = (n('1t7P'), n('jQ/y'), n('ho0z'), n('uFXj'), n('axvi')),
+        h = n('aITJ'),
         F = n('MWbm'),
         T = n('jAXQ'),
-        K = n.n(T),
-        v = n('7N4s'),
-        S = n('2MR/'),
-        w = n('v302'),
-        x = n('WLAg'),
-        C = n('tLTi'),
-        E = n('r7g+'),
-        R = n('rHpw'),
-        L = y.a.a098fa3c,
+        v = n.n(T),
+        K = n('7N4s'),
+        S = n('r7g+'),
+        w = n('2MR/'),
+        x = n('v302'),
+        C = n('WLAg'),
+        E = n('tLTi'),
+        L = n('rHpw'),
+        R = m.a.a098fa3c,
         I = {
           display_text_range: [0, 24],
           favorite_count: 0,
@@ -1606,57 +1606,64 @@
             o,
             c,
             d = e.tweet_results,
-            m = K()(void 0 !== a ? a : (a = n('Gi4s')), d),
-            y = u.a.useContext(v.b).isModal,
-            g = null == m || null === (l = m.result) || void 0 === l ? void 0 : l.__typename,
-            p =
-              'TweetWithVisibilityResults' === g
+            m = v()(void 0 !== a ? a : (a = n('Gi4s')), d),
+            y = u.a.useContext(K.b).isModal,
+            p = null == m || null === (l = m.result) || void 0 === l ? void 0 : l.__typename,
+            g =
+              'TweetWithVisibilityResults' === p
                 ? null === (t = m.result) || void 0 === t
                   ? void 0
                   : t.tweet
                 : m.result,
-            k = null == p || null === (i = p.legacy) || void 0 === i ? void 0 : i.full_text,
-            b = u.a.useCallback(
+            _ = null == g || null === (i = g.legacy) || void 0 === i ? void 0 : i.full_text,
+            T = h.b.isTwitterApp(),
+            L = u.a.useCallback(
+              function (e) {
+                return u.a.createElement(S.a.UserAvatar, b()({}, e, { withHoverCard: !T, withLink: !T }))
+              },
+              [T],
+            ),
+            D = u.a.useCallback(
               function () {
                 return u.a.createElement(
-                  S.a,
+                  w.a,
                   {
-                    label: L,
+                    label: R,
                     render: function (e) {
-                      return u.a.createElement(w.a, f()({}, e, { style: B.tombstone }))
+                      return u.a.createElement(x.a, b()({}, e, { style: B.tombstone }))
                     },
                   },
-                  k || '',
+                  _ || '',
                 )
               },
-              [k],
+              [_],
             ),
-            T = u.a.useMemo(
+            z = u.a.useMemo(
               function () {
-                if ('TweetTombstone' === g) {
+                if ('TweetTombstone' === p) {
                   var e,
                     l,
                     n =
                       null === (e = m.result) || void 0 === e || null === (l = e.tombstone) || void 0 === l
                         ? void 0
                         : l.text
-                  if (n) return Object(h.b)(n)
+                  if (n) return Object(f.b)(n)
                 }
               },
               [
                 null === (r = m.result) || void 0 === r || null === (s = r.tombstone) || void 0 === s ? void 0 : s.text,
-                g,
+                p,
               ],
             )
           if (
-            'TweetTombstone' === g &&
+            'TweetTombstone' === p &&
             (null === (o = m.result) || void 0 === o || null === (c = o.tombstone) || void 0 === c ? void 0 : c.text)
           )
-            return T
+            return z
               ? u.a.createElement(
-                  x.a,
+                  C.a,
                   null,
-                  u.a.createElement(C.a, { align: T.rtl ? 'right' : 'left', entities: T.entities, text: T.text }),
+                  u.a.createElement(E.a, { align: z.rtl ? 'right' : 'left', entities: z.entities, text: z.text }),
                 )
               : null
           return (function (e) {
@@ -1672,8 +1679,8 @@
             ) {
               var a = e.core.user_results.result.legacy,
                 t = {
-                  tweet: _()(
-                    _()({}, I),
+                  tweet: k()(
+                    k()({}, I),
                     {},
                     {
                       id_str: e.legacy.id_str || '',
@@ -1684,8 +1691,8 @@
                         richRevealText: { rtl: !1, text: 'View', entities: [] },
                         text: 'abc',
                       },
-                      user: _()(
-                        _()({}, U),
+                      user: k()(
+                        k()({}, U),
                         {},
                         {
                           description: a.description || '',
@@ -1703,25 +1710,26 @@
                 F.a,
                 { style: [B.tweet, y && B.wideScreen] },
                 u.a.createElement(
-                  E.a,
-                  f()({}, t, {
+                  S.a,
+                  b()({}, t, {
                     renderActionsBar: function () {
                       return null
                     },
                     renderTimestamp: function (e) {
-                      return u.a.createElement(E.a.Timestamp, f()({}, e, { link: void 0 }))
+                      return u.a.createElement(S.a.Timestamp, b()({}, e, { link: void 0 }))
                     },
-                    renderTombstone: b,
+                    renderTombstone: D,
+                    renderUserAvatar: L,
                     staticLinkConfig: null,
                   }),
                 ),
               )
             }
             return null
-          })(p)
+          })(g)
         },
         z = u.a.memo(D),
-        B = R.a.create(function (e) {
+        B = L.a.create(function (e) {
           return {
             tweet: {
               borderWidth: e.borderWidths.small,
@@ -1734,12 +1742,12 @@
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        j = n('IMA+'),
-        H = function (e) {
+        H = n('IMA+'),
+        j = function (e) {
           var l,
             a = e.userResults,
-            i = K()(void 0 !== t ? t : (t = n('r/Jf')), a),
-            r = u.a.useContext(v.b).isModal,
+            i = v()(void 0 !== t ? t : (t = n('r/Jf')), a),
+            r = u.a.useContext(K.b).isModal,
             s = null == i || null === (l = i.result) || void 0 === l ? void 0 : l.legacy,
             o = (null == s ? void 0 : s.idStr) || '',
             c = (null == s ? void 0 : s.description) || '',
@@ -1749,8 +1757,8 @@
           return o
             ? u.a.createElement(
                 F.a,
-                { style: [O.userCellContainer, r && O.wideScreen] },
-                u.a.createElement(j.a, {
+                { style: [M.userCellContainer, r && M.wideScreen] },
+                u.a.createElement(H.a, {
                   avatarUri: m,
                   description: c,
                   displayMode: 'UserDetailed',
@@ -1762,7 +1770,7 @@
               )
             : null
         },
-        O = R.a.create(function (e) {
+        M = L.a.create(function (e) {
           return {
             userCellContainer: {
               marginTop: e.spaces.space12,
@@ -1774,52 +1782,54 @@
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        M = function (e) {
+        O = function (e) {
           var l = e.report_entity_results,
-            a = K()(void 0 !== i ? i : (i = n('xYG4')), l)
+            a = v()(void 0 !== i ? i : (i = n('xYG4')), l)
           switch (a.__typename) {
             case 'TweetResults':
               return u.a.createElement(z, { tweet_results: a })
             case 'UserResults':
-              return u.a.createElement(H, { userResults: a })
+              return u.a.createElement(j, { userResults: a })
             default:
               return null
           }
         },
-        N = function (e) {
+        A = function (e) {
           var l = e.report,
-            a = K()(void 0 !== r ? r : (r = n('6mUz')), l)
+            a = v()(void 0 !== r ? r : (r = n('6mUz')), l)
           return u.a.createElement(
             F.a,
-            { style: P.entityList },
+            { style: N.entityList },
             a.map(function (e, l) {
-              return u.a.createElement(M, { key: l, report_entity_results: e })
+              return u.a.createElement(O, { key: l, report_entity_results: e })
             }),
           )
         },
-        P = R.a.create(function (e) {
+        N = L.a.create(function (e) {
           return { entityList: { marginVertical: e.spaces.space32 } }
         }),
-        V = n('IAZG'),
-        A = n('Irs7'),
+        P = n('IAZG'),
+        V = n('Irs7'),
         W = n('pjBI'),
         q = n('t62R'),
         G = n('3rX5'),
-        J = n('zCf4'),
-        Q = y.a.e37836f8,
-        X = y.a.ccf2f24e,
-        Y = y.a.e238c59f,
-        Z = 'gray700',
-        $ = void 0 !== s ? s : (s = n('+hxm')),
-        ee = function () {
+        J = n('lnti'),
+        Q = n('0zXz'),
+        X = n('zCf4'),
+        Y = m.a.e37836f8,
+        Z = m.a.ccf2f24e,
+        $ = m.a.e238c59f,
+        ee = 'gray700',
+        le = void 0 !== s ? s : (s = n('+hxm')),
+        ne = function () {
           var e,
             l,
             n,
             a,
             t,
             i,
-            r = Object(J.h)(),
-            s = Object(V.a)($, { reportId: r.reportId || '' }),
+            r = Object(X.h)(),
+            s = Object(P.a)(le, { reportId: r.reportId || '' }),
             o =
               null == s ||
               null === (e = s.viewer_v2) ||
@@ -1830,59 +1840,74 @@
               void 0 === n
                 ? void 0
                 : n.submitted_report,
-            d =
+            c =
               null != o && o.create_time
-                ? ((a = null == o ? void 0 : o.create_time), (t = y.a.ba2e82a1), (i = parseInt(a, 10)), t(new Date(i)))
+                ? ((a = null == o ? void 0 : o.create_time), (t = m.a.ba2e82a1), (i = parseInt(a, 10)), t(new Date(i)))
                 : '',
-            m = null == o ? void 0 : o.header,
-            g = null == o ? void 0 : o.follow_up_text,
+            d = null == o ? void 0 : o.header,
+            y = null == o ? void 0 : o.follow_up_text,
             p = null == o ? void 0 : o.report_entities_results
           return u.a.createElement(
             u.a.Fragment,
             null,
             u.a.createElement(
               W.a,
-              { color: Z },
-              u.a.createElement(q.b, { color: Z, weight: 'bold' }, X),
-              u.a.createElement(q.b, { color: Z }, d),
+              { color: ee },
+              u.a.createElement(q.b, { color: ee, weight: 'bold' }, Z),
+              u.a.createElement(q.b, { color: ee }, c),
             ),
-            u.a.createElement(q.b, { size: 'title3', weight: 'heavy' }, m),
-            p ? u.a.createElement(N, { report: Object(c.a)(p) }) : null,
-            u.a.createElement(q.b, { size: 'headline2', style: le.headline, weight: 'heavy' }, Y),
-            u.a.createElement(q.b, { color: Z, size: 'subtext2', weight: 'normal' }, g),
+            u.a.createElement(q.b, { size: 'title3', weight: 'heavy' }, d),
+            p ? u.a.createElement(A, { report: Object(J.a)(p) }) : null,
+            u.a.createElement(q.b, { size: 'headline2', style: ae.headline, weight: 'heavy' }, $),
+            u.a.createElement(q.b, { color: ee, size: 'subtext2', weight: 'normal' }, y),
           )
         },
-        le =
-          ((l.default = Object(A.a)(
+        ae =
+          ((l.default = Object(V.a)(
             function () {
-              var e = Object(J.f)(),
-                l = u.a.useContext(v.b).isModal
+              var e = Object(X.f)(),
+                l = u.a.useContext(K.b).isModal,
+                n = Q.a,
+                a = h.b.isTwitterApp(),
+                t = u.a.useMemo(
+                  function () {
+                    return a ? n : void 0
+                  },
+                  [a, n],
+                )
               return u.a.createElement(
-                d.b,
-                { backButtonType: 'close', containerStyle: le.root, documentTitle: Q, history: e, title: Q },
+                c.b,
+                {
+                  backButtonType: 'close',
+                  containerStyle: ae.root,
+                  documentTitle: Y,
+                  history: e,
+                  renderHeader: t,
+                  title: Y,
+                },
                 u.a.createElement(
                   F.a,
-                  { style: le.parentContainer },
+                  { style: ae.parentContainer },
                   u.a.createElement(
                     F.a,
-                    { style: le.contentHeader },
+                    { style: ae.contentHeader },
                     u.a.createElement(
                       F.a,
-                      { style: le.imageContainer },
-                      u.a.createElement(G.a, { accessibilityLabel: '', source: p, style: le.image }),
+                      { style: ae.imageContainer },
+                      u.a.createElement(G.a, { accessibilityLabel: '', source: p, style: ae.image }),
                     ),
                   ),
                   u.a.createElement(
                     F.a,
-                    { style: [le.contentBody, l ? le.wideScreen : le.narrowScreen] },
-                    u.a.createElement(g.a, { errorConfig: { context: 'REPORT_DETAIL' } }, u.a.createElement(ee, null)),
+                    { style: [ae.contentBody, l ? ae.wideScreen : ae.narrowScreen] },
+                    u.a.createElement(y.a, { errorConfig: { context: 'REPORT_DETAIL' } }, u.a.createElement(ne, null)),
                   ),
                 ),
               )
             },
             { page: 'report_center', component: 'report_detail' },
           )),
-          R.a.create(function (e) {
+          L.a.create(function (e) {
             return {
               root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
               parentContainer: { alignItems: 'left' },
@@ -1893,7 +1918,7 @@
               imageContainer: { height: '150px', width: '150px', marginBottom: e.spaces.space12 },
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space72 },
               narrowScreen: {
-                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(R.a.iPhoneOffsetBottom, ')'),
+                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(L.a.iPhoneOffsetBottom, ')'),
                 marginHorizontal: e.spaces.space32,
               },
               tombstone: { border: 'none', marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 },
