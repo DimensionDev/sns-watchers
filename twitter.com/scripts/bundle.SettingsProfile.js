@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [94, 19, 178],
+  [93, 18, 177],
   {
     '+0pD': function (e, t) {
       var a =
@@ -118,8 +118,8 @@
         w = a('97Jx'),
         I = a.n(w),
         R = a('m3Bd'),
-        L = a.n(R),
-        x = a('CHgo'),
+        x = a.n(R),
+        L = a('CHgo'),
         B = a('7ep7'),
         D = ['children', 'onPanEnd', 'onPanMove', 'onPinchMove', 'onWheel'],
         T = (function (e) {
@@ -142,8 +142,8 @@
                   r = t.onPinchMove,
                   o = t.onWheel
                 if (e) {
-                  ;(i || a || r) && (n._removeTouchMoveToScrollListener = Object(x.a)(e, n._preventDefaultEvent, !1)),
-                    o && (n._removeScrollToScaleListener = Object(x.b)(e, n._preventDefaultEvent, !1))
+                  ;(i || a || r) && (n._removeTouchMoveToScrollListener = Object(L.a)(e, n._preventDefaultEvent, !1)),
+                    o && (n._removeScrollToScaleListener = Object(L.b)(e, n._preventDefaultEvent, !1))
                   var s = e.getBoundingClientRect()
                   n._centerPosition = { x: s.width / 2 + s.left, y: s.height / 2 + s.top }
                 }
@@ -222,7 +222,7 @@
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, L()(e, D))
+                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, x()(e, D))
                   return v.a.createElement(
                     S.a,
                     I()({}, t, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers),
@@ -720,7 +720,7 @@
     '2Daw': function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return x
+        return L
       })
       var n = a('VrFO'),
         i = a.n(n),
@@ -748,8 +748,8 @@
         w = a('Mbn/'),
         I = a('T8pk'),
         R = g.a.b87ca51a,
-        L = g.a.eebff22c,
-        x = (function (e) {
+        x = g.a.eebff22c,
+        L = (function (e) {
           l()(a, e)
           var t = d()(a)
           function a() {
@@ -818,7 +818,7 @@
                     t = e.onCrop,
                     a = e.onRemove
                   return f.a.createElement(S.a, {
-                    accessibilityLabel: L,
+                    accessibilityLabel: x,
                     icon: f.a.createElement(w.a, null),
                     onPress: t,
                     size: 'large',
@@ -884,7 +884,7 @@
             a
           )
         })(f.a.Component)
-      h()(x, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: m.a.NONE })
+      h()(L, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: m.a.NONE })
       var B = M.a.create(function (e) {
           return {
             infinite: { borderRadius: e.borderRadii.infinite },
@@ -961,7 +961,7 @@
           return R
         }),
         a.d(t, 'b', function () {
-          return x
+          return L
         }),
         a.d(t, 'e', function () {
           return D
@@ -1020,9 +1020,9 @@
         R = function (e) {
           return { meta: { mediaId: e }, type: I }
         },
-        L = 'rweb/settings/profile/ADD_BANNER_MEDIA',
-        x = function (e) {
-          return { meta: { mediaId: e }, type: L }
+        x = 'rweb/settings/profile/ADD_BANNER_MEDIA',
+        L = function (e) {
+          return { meta: { mediaId: e }, type: x }
         },
         B = 'rweb/settings/profile/REMOVE_BANNER_MEDIA',
         D = function (e) {
@@ -1098,7 +1098,7 @@
               return l()(l()({}, e), {}, { avatarMediaId: t.meta.mediaId })
             case I:
               return l()(l()({}, e), {}, { avatarMediaId: null })
-            case L:
+            case x:
               return l()(l()({}, e), {}, { bannerMediaId: t.meta.mediaId })
             case B:
               return l()(l()({}, e), {}, { bannerMediaId: null })
@@ -1498,8 +1498,8 @@
         w = a('EeFI'),
         I = 'applyButton',
         R = a('/yvb'),
-        L = a('rHpw'),
-        x = P.a.gd80afba,
+        x = a('rHpw'),
+        L = P.a.gd80afba,
         B = P.a.a753a87f,
         D = (function (e) {
           h()(a, e)
@@ -1574,11 +1574,11 @@
                     {
                       backButtonType: 'back',
                       containerStyle: T.root,
-                      documentTitle: n || x,
+                      documentTitle: n || L,
                       history: a,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: n || x,
+                      title: n || L,
                     },
                     i.a.createElement(w.a, {
                       defaultAspectRatio: t,
@@ -1594,12 +1594,12 @@
             a
           )
         })(i.a.Component),
-        T = L.a.create(function (e) {
+        T = x.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
         k = S(D),
         A = a('X8FW'),
-        O = L.a.create(function (e) {
+        O = x.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
@@ -1650,8 +1650,8 @@
         w = a.n(P),
         I = a('tI3i'),
         R = a.n(I),
-        L = a('oQhu'),
-        x = a('rHpw'),
+        x = a('oQhu'),
+        L = a('rHpw'),
         B = a('aITJ'),
         D = a('MWbm'),
         T = a('n5fo'),
@@ -1708,7 +1708,7 @@
               _()(
                 h()(n),
                 '_getTextInputStyle',
-                Object(L.a)(function (e) {
+                Object(x.a)(function (e) {
                   return [W.root, !e && W.disabled]
                 }),
               ),
@@ -1753,12 +1753,13 @@
                 var t = e.length
                 return n._isInvalidNumber() && (t = 1), t
               }),
-              _()(h()(n), '_handleBlur', function (e) {
-                var t = n.props.onBlur,
-                  a = e.currentTarget.value,
+              _()(h()(n), '_handleBlur', function () {
+                var e,
+                  t = n.props.onBlur,
+                  a = (null === (e = n._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   i = n._calculateLength(a),
                   r = n._getActualCount(a)
-                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t(e)
+                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t()
               }),
               _()(h()(n), '_handleChange', function (e) {
                 var t = n.props.onChange,
@@ -2143,7 +2144,7 @@
         })(b.a.Component)
       _()(H, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
         (H.propTypes = {})
-      var W = x.a.create(function (e) {
+      var W = L.a.create(function (e) {
           return {
             container: {
               flexDirection: 'row',
@@ -2171,7 +2172,7 @@
             disabled: { color: e.colors.gray700 },
           }
         }),
-        K = x.a.create(function (e) {
+        K = L.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -2282,8 +2283,8 @@
         w = a('1YZw'),
         I = a('/NU0'),
         R = a('G6rE'),
-        L = a('rxPX'),
-        x = a('0KEI'),
+        x = a('rxPX'),
+        L = a('0KEI'),
         B = function (e, t) {
           var a,
             n = P.h(e)
@@ -2294,7 +2295,7 @@
             n = P.i(e)
           if (Object(I.a)(n)) return null === (a = M.k(e, n)) || void 0 === a ? void 0 : a[0]
         },
-        T = Object(L.a)()
+        T = Object(x.a)()
           .propsFromState(function () {
             return {
               loggedInUser: R.e.selectLoggedInUser,
@@ -2308,7 +2309,7 @@
               addAvatarMedia: P.a,
               addBannerMedia: P.b,
               addToast: w.b,
-              createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_PROFILE_SCREEN',
               ),
               persistProfileSettings: P.c,
@@ -2406,7 +2407,7 @@
         X = a('RuTB'),
         Y = Object(G.a)({
           loader: function () {
-            return Promise.all([a.e(0), a.e(208)]).then(a.bind(null, 'it2P'))
+            return Promise.all([a.e(0), a.e(207)]).then(a.bind(null, 'it2P'))
           },
           renderPlaceholder: function (e, t) {
             return S.a.createElement(X.a, { hasError: e, onRetry: t })
@@ -2425,7 +2426,7 @@
         re = Z.a.abd845fd,
         oe = Z.a.cfd2f35d,
         se = Z.a.bbf0afc7,
-        le = { headline: Z.a.f98d367e, text: Z.a.b982a8b4, confirmButtonLabel: Z.a.abd845fd },
+        le = { headline: Z.a.f98d367e, text: Z.a.d3f4330f, confirmButtonLabel: Z.a.abd845fd },
         ce = (function (e) {
           m()(a, e)
           var t = g()(a)
@@ -2549,8 +2550,8 @@
         we = Z.a.d4e220b3,
         Ie = Z.a.d9d293b8,
         Re = Z.a.a990900c,
-        Le = Z.a.jaaa8984,
-        xe = Z.a.i2209530,
+        xe = Z.a.jaaa8984,
+        Le = Z.a.i2209530,
         Be = Z.a.cb469ff5,
         De = Z.a.g511f467,
         Te = Z.a.ec3a116d,
@@ -2850,7 +2851,7 @@
                         testID: J.a.save,
                         type: 'primaryFilled',
                       },
-                      xe,
+                      Le,
                     )
                   return S.a.createElement(
                     j.b,
@@ -2901,7 +2902,7 @@
                       }),
                       S.a.createElement(_e.a, {
                         defaultValue: d,
-                        label: Le,
+                        label: xe,
                         maxLength: 30,
                         name: 'location',
                         onChange: this._handleChangeLocation,

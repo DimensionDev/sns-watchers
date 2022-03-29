@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [208],
+  [207],
   {
     '6XNv': function (e, a, t) {
       'use strict'
@@ -22,8 +22,8 @@
         g = (t('lTEL'), t('7x/C'), t('LqLs'), t('87if'), t('kYxP'), t('7xRU'), t('z84I'), t('2G9S'), t('ERkP')),
         _ = t.n(g),
         D = t('t62R'),
-        C = t('piX5'),
-        E = t('4r2z'),
+        E = t('piX5'),
+        C = t('4r2z'),
         I = t('FG+G'),
         S = t('rHpw'),
         R = t('k/Ka'),
@@ -98,7 +98,7 @@
                     b =
                       'ja' === p
                         ? S.a.theme.fontFamilies.japan
-                        : w.a.getConstants().isRTL || E.a.isLocaleRTL(p)
+                        : w.a.getConstants().isRTL || C.a.isLocaleRTL(p)
                         ? S.a.theme.fontFamilies.rtl
                         : S.a.theme.fontFamilies.normal,
                     y = void 0 === o ? !!n : o,
@@ -112,12 +112,12 @@
                       L.a,
                       {
                         style: [
-                          C.a.border,
-                          T.container,
-                          t && C.a.disabled,
-                          h && C.a.focusedBorderValid,
-                          y && C.a.invalidBorderColor,
-                          h && y && C.a.focusedBorderInvalid,
+                          E.a.border,
+                          F.container,
+                          t && E.a.disabled,
+                          h && E.a.focusedBorderValid,
+                          y && E.a.invalidBorderColor,
+                          h && y && E.a.focusedBorderInvalid,
                           s,
                         ],
                       },
@@ -134,24 +134,24 @@
                           onChange: this._handleChange,
                           onFocus: this._handleFocus,
                           ref: this._selectRef,
-                          style: [T.select, { fontFamily: b }, t && C.a.disabled],
+                          style: [F.select, { fontFamily: b }, t && E.a.disabled],
                           testID: c || '',
                           value: u,
                         },
-                        d ? _.a.createElement(M, { disabled: !0, style: T.option, value: '' }) : null,
+                        d ? _.a.createElement(M, { disabled: !0, style: F.option, value: '' }) : null,
                         l.map(function (e) {
                           var a = e.disabled,
                             t = e.label,
                             n = e.value
                           return _.a.createElement(
                             M,
-                            { disabled: a, key: ''.concat(t, '-').concat(n), style: T.option, value: n },
+                            { disabled: a, key: ''.concat(t, '-').concat(n), style: F.option, value: n },
                             t,
                           )
                         }),
                       ),
                       _.a.createElement(I.a, {
-                        style: [T.dropdownCaret, h && C.a.validColor, (o || n) && C.a.invalidColor],
+                        style: [F.dropdownCaret, h && E.a.validColor, (o || n) && E.a.invalidColor],
                       }),
                     ),
                     i ? this._renderHelperText() : null,
@@ -173,7 +173,7 @@
                       accessibilityRole: 'label',
                       color: t || a ? 'red500' : r ? 'primary' : 'gray700',
                       nativeID: this._labelID,
-                      style: T.label,
+                      style: F.label,
                     },
                     n,
                   )
@@ -187,7 +187,7 @@
                     { accessibilityLiveRegion: 'polite' },
                     _.a.createElement(
                       D.b,
-                      { color: 'gray700', nativeID: this._helperID, style: T.helperText },
+                      { color: 'gray700', nativeID: this._helperID, style: F.helperText },
                       this.props.helperText,
                     ),
                   )
@@ -201,7 +201,7 @@
                     { accessibilityLiveRegion: 'polite' },
                     _.a.createElement(
                       D.b,
-                      { color: 'red500', nativeID: this._errorID, style: T.helperText },
+                      { color: 'red500', nativeID: this._errorID, style: F.helperText },
                       this.props.errorText,
                     ),
                   )
@@ -212,7 +212,7 @@
           )
         })(_.a.PureComponent)
       m()(k, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (k.propTypes = {})
-      var T = S.a.create(function (e) {
+      var F = S.a.create(function (e) {
         return {
           container: { backgroundColor: e.colors.cellBackground },
           dropdownCaret: {
@@ -308,15 +308,15 @@
         g = t('nS1w'),
         _ = t('t62R'),
         D = t('p+r5'),
-        C = t('3XMw'),
-        E = t.n(C),
+        E = t('3XMw'),
+        C = t.n(E),
         I = t('6XNv'),
         S = t('rHpw'),
         R = t('aITJ'),
         w = t('MWbm'),
-        L = E.a.jf83d091,
-        O = E.a.af4abf2f,
-        M = E.a.b871f28f,
+        L = C.a.jf83d091,
+        O = C.a.af4abf2f,
+        M = C.a.b871f28f,
         x = 1,
         k = (function (e) {
           h()(t, e)
@@ -417,7 +417,7 @@
                     y = g.d(h, p, a, t)
                   return v.a.createElement(
                     w.a,
-                    { accessibilityLabel: i, accessibilityRole: 'group', style: [T.selectorsContainer, d] },
+                    { accessibilityLabel: i, accessibilityRole: 'group', style: [F.selectorsContainer, d] },
                     v.a.createElement(I.a, {
                       accessibilityDescribedBy: o.month ? this._errorID : void 0,
                       autofocus: l,
@@ -425,7 +425,7 @@
                       label: O,
                       onChange: this._handleMonthChange,
                       options: this._monthOptions,
-                      style: T.monthSelector,
+                      style: F.monthSelector,
                       testID: s,
                       value: t ? ''.concat(t) : '',
                       withEmptyOption: !0,
@@ -436,7 +436,7 @@
                       label: L,
                       onChange: this._handleDayChange,
                       options: b,
-                      style: T.daySelector,
+                      style: F.daySelector,
                       testID: c,
                       value: a ? ''.concat(a) : '',
                       withEmptyOption: !0,
@@ -447,7 +447,7 @@
                       label: M,
                       onChange: this._handleYearChange,
                       options: y,
-                      style: T.yearSelector,
+                      style: F.yearSelector,
                       testID: u,
                       value: n ? ''.concat(n) : '',
                       withEmptyOption: !0,
@@ -467,7 +467,7 @@
                     name: e,
                     numberOfLines: 1,
                     onChange: this._handleDateChange,
-                    style: T.dateInputRoot,
+                    style: F.dateInputRoot,
                     type: 'date',
                   })
                 },
@@ -476,7 +476,7 @@
             t
           )
         })(v.a.Component),
-        T = S.a.create(function (e) {
+        F = S.a.create(function (e) {
           return {
             selectorsContainer: { flexDirection: 'row', marginVertical: e.spaces.space16 },
             monthSelector: { flexGrow: 2, marginRight: e.spaces.space12 },
@@ -511,19 +511,19 @@
         g = t('MWbm'),
         _ = t('t62R'),
         D = t('S8sr'),
-        C = t('6XNv'),
-        E = t('eb3s'),
+        E = t('6XNv'),
+        C = t('eb3s'),
         I = t('jtO7'),
         S = t('rHpw'),
         R = t('3XMw'),
         w = t.n(R),
         L = t('P7wY'),
         O = w.a.c119dee8,
-        M = w.a.cfc38329,
+        M = w.a.g10411f0,
         x = w.a.a0c5e37f,
         k = w.a.i68fe54e,
-        T = w.a.b4e729b6,
-        F = { headline: w.a.f3bb1b48, text: w.a.c9cb9972, confirmButtonLabel: w.a.e68b09b4 },
+        F = w.a.b4e729b6,
+        T = { headline: w.a.f3bb1b48, text: w.a.c9cb9972, confirmButtonLabel: w.a.e68b09b4 },
         B = w.a.a2bef112,
         Y = w.a.c37622ec,
         V = [
@@ -598,6 +598,15 @@
                     g.a,
                     { accessibilityLabel: O, accessibilityRole: 'group' },
                     m.a.createElement(_.b, { color: 'gray700', style: H.description }, M),
+                    m.a.createElement(
+                      _.b,
+                      { color: 'gray700', style: H.description },
+                      m.a.createElement(
+                        w.a.I18NFormatMessage,
+                        { $i18n: 'd9ebec8c' },
+                        m.a.createElement(_.b, { link: 'https://twitter.com/privacy' }, w.a.a83de3ae),
+                      ),
+                    ),
                     m.a.createElement(D.a, {
                       autofocus: !0,
                       day: t,
@@ -642,7 +651,7 @@
                         ),
                       ),
                     ),
-                    m.a.createElement(C.a, {
+                    m.a.createElement(E.a, {
                       label: k,
                       onChange: this._handleDayMonthVisibilityChange,
                       options: V,
@@ -650,8 +659,8 @@
                       testID: v.a.dayMonthVisibility,
                       value: a,
                     }),
-                    m.a.createElement(C.a, {
-                      label: T,
+                    m.a.createElement(E.a, {
+                      label: F,
                       onChange: this._handleYearVisibilityChange,
                       options: Object(L.a)(e.year, e.month, e.day) ? j : V,
                       style: H.separator,
@@ -666,12 +675,12 @@
                 key: '_renderConfirmationModal',
                 value: function () {
                   return this.state.showRemoveConfirmationModal
-                    ? m.a.createElement(E.a, {
-                        confirmButtonLabel: F.confirmButtonLabel,
-                        headline: F.headline,
+                    ? m.a.createElement(C.a, {
+                        confirmButtonLabel: T.confirmButtonLabel,
+                        headline: T.headline,
                         onCancel: this._handleModalCancel,
                         onConfirm: this._handleModalConfirmed,
-                        text: F.text,
+                        text: T.text,
                       })
                     : null
                 },

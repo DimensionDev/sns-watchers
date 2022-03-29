@@ -443,10 +443,7 @@
                     r.a.createElement(v.b, { Icon: m, description: d, label: C, link: '/settings/superfollows' }),
                     r.a.createElement(y.a, null),
                     r.a.createElement(g.b, { text: A }),
-                    r.a.createElement(v.a, {
-                      label: F,
-                      link: 'https://help.twitter.com/forms/paid-features/superfollows',
-                    }),
+                    r.a.createElement(v.a, { label: F, link: 'https://help.twitter.com/using-twitter#creators' }),
                   ),
                 )
               },
@@ -1339,8 +1336,8 @@
         B = s.a.df5fa1d0,
         K = s.a.a244ed50,
         V = s.a.e908903a,
-        Q = s.a.h7a0dfbe,
-        G = s.a.b38d81ae,
+        G = s.a.h7a0dfbe,
+        Q = s.a.b38d81ae,
         W = s.a.f8d4746b,
         X = s.a.f2bd9c47,
         q = s.a.b2810ee7,
@@ -1403,8 +1400,8 @@
                     n = void 0 !== t && t,
                     a = e.includeSpacesSection
                   return [
-                    { label: V, description: Q, link: '/settings/audience_and_tagging', Icon: g.a },
-                    { label: G, description: W, link: '/settings/your_tweets', Icon: y.a },
+                    { label: V, description: G, link: '/settings/audience_and_tagging', Icon: g.a },
+                    { label: Q, description: W, link: '/settings/your_tweets', Icon: y.a },
                     { label: X, description: q, link: '/settings/content_you_see', Icon: k },
                     n ? { label: Y, description: J, link: '/settings/safety_mode', Icon: O } : void 0,
                     { label: Z, description: $, link: '/settings/mute_and_block', Icon: L.a },
@@ -3485,7 +3482,7 @@
         p = n('88ay'),
         b = n('Ka9G'),
         h = u()(
-          u()({}, d.default),
+          u()({}, d.b),
           {},
           ((a = {}),
           l()(a, f.b.Tweet, Object(m.a)({ displayBlocked: !0 })),
@@ -4046,8 +4043,8 @@
       var V = F.a.create(function (e) {
           return { avatar: { borderRadius: e.borderRadii.small, height: '100%', width: '100%' } }
         }),
-        Q = _(K)
-      t.default = Q
+        G = _(K)
+      t.default = G
     },
     dZRF: function (e, t, n) {
       'use strict'
@@ -4588,8 +4585,8 @@
         B = j.a.bca43fd0,
         K = j.a.bef6fc56,
         V = j.a.bbe9579b,
-        Q = j.a.b850cbd0,
-        G = j.a.ae1bbb26,
+        G = j.a.b850cbd0,
+        Q = j.a.ae1bbb26,
         W = j.a.i859a9d3,
         X = j.a.e5e8a899,
         q = j.a.cf3e3164,
@@ -4692,7 +4689,7 @@
                         i[0] ? this._renderSession(i[0], !1) : null,
                         g.a.createElement(U.a, null),
                         g.a.createElement(x.b, { text: B }),
-                        g.a.createElement(F.a, null, Q),
+                        g.a.createElement(F.a, null, G),
                         g.a.createElement(
                           F.a,
                           null,
@@ -4711,7 +4708,7 @@
                         ),
                         g.a.createElement(y.a, {
                           align: 'left',
-                          confirmationSheetConfirmButtonLabel: G,
+                          confirmationSheetConfirmButtonLabel: Q,
                           confirmationSheetConfirmButtonType: 'primary',
                           confirmationSheetHeadline: Y,
                           confirmationSheetText: $,
@@ -4960,10 +4957,10 @@
           return x
         }),
         n.d(t, 'adFreeHelpScribeElement', function () {
-          return Q
+          return G
         }),
         n.d(t, 'adFreeImpactScribeElement', function () {
-          return G
+          return Q
         }),
         n.d(t, 'adFreeSitesScribeElement', function () {
           return W
@@ -5026,8 +5023,8 @@
         B = p.a.db529452,
         K = p.a.f66d24be,
         V = p.a.d248d75e,
-        Q = 'ad_free_articles_help',
-        G = 'ad_free_articles_impact',
+        G = 'ad_free_articles_help',
+        Q = 'ad_free_articles_impact',
         W = 'ad_free_articles_sites'
       function X(e) {
         var t = e.analytics,
@@ -5051,7 +5048,7 @@
             ne(W)
           },
           te = function () {
-            ne(Q)
+            ne(G)
           },
           ne = function (e) {
             t.scribe({ page: 'subscriptions', section: 'settings', element: e, action: 'click' })
@@ -5100,7 +5097,7 @@
                           label: M,
                           link: { external: !0, pathname: T.b },
                           onPress: function (e) {
-                            new T.a(a, n()).getYourImpactChartLinkHandler()(e), ne(G)
+                            new T.a(a, n()).getYourImpactChartLinkHandler()(e), ne(Q)
                           },
                         }),
                         r.a.createElement(I.a, {
@@ -5142,7 +5139,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ContentYouSee', function () {
-          return F
+          return R
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -5150,13 +5147,14 @@
         i = n.n(c),
         o = n('ERkP'),
         l = n.n(o),
-        s = n('P1r1'),
-        u = n('G6rE'),
-        d = n('rxPX'),
-        f = n('0KEI'),
-        m = Object(d.a)()
+        s = n('v6aA'),
+        u = n('P1r1'),
+        d = n('G6rE'),
+        f = n('rxPX'),
+        m = n('0KEI'),
+        p = Object(f.a)()
           .propsFromState(function () {
-            return { settings: s.g, loggedInUser: u.e.selectLoggedInUser }
+            return { settings: u.g, loggedInUser: d.e.selectLoggedInUser }
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUser
@@ -5167,67 +5165,72 @@
           })
           .propsFromActions(function () {
             return {
-              updateSettings: s.M,
-              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
+              updateSettings: u.M,
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'CONTENT_YOU_SEE_SCREEN',
               ),
             }
           }),
-        p = n('3XMw'),
-        b = n.n(p),
-        h = n('yoO3'),
-        E = n('7JQg'),
-        g = n('7FtF'),
-        y = n('k89r'),
-        v = n('RKmr'),
-        S = n('e0ey'),
-        _ = n('csss'),
-        w = b.a.f2bd9c47,
-        C = b.a.b2810ee7,
-        k = b.a.fc1d217b,
-        T = b.a.b8533bac,
-        O = b.a.h1f01a24,
-        L = b.a.j018f2a1,
-        I = b.a.h1ef00db,
-        A = { page: 'settings', section: 'content_you_see' }
-      function F(e) {
+        b = n('3XMw'),
+        h = n.n(b),
+        E = n('yoO3'),
+        g = n('7JQg'),
+        y = n('7FtF'),
+        v = n('k89r'),
+        S = n('RKmr'),
+        _ = n('e0ey'),
+        w = n('csss'),
+        C = h.a.f2bd9c47,
+        k = h.a.b2810ee7,
+        T = h.a.fc1d217b,
+        O = h.a.b8533bac,
+        L = h.a.h1f01a24,
+        I = h.a.j018f2a1,
+        A = h.a.h1ef00db,
+        F = h.a.h9f2da68,
+        P = { page: 'settings', section: 'content_you_see' }
+      function R(e) {
         var t = e.createLocalApiErrorHandler,
           n = e.displaySensitiveMediaEnabled,
           a = e.location,
           c = e.loggedInUserScreenName,
           o = e.updateSettings,
-          s = Object(y.a)()
+          u = Object(v.a)(),
+          d = l.a.useContext(s.a).featureSwitches.isTrue('sensitive_media_settings_enabled')
         return void 0 !== c
           ? l.a.createElement(
-              E.c,
-              { namespace: A },
+              g.c,
+              { namespace: P },
               l.a.createElement(
-                h.a,
+                E.a,
                 null,
                 l.a.createElement(
-                  g.a,
-                  { location: a, screenType: 'secondaryDetail', title: w },
-                  l.a.createElement(v.a, { description: C }),
-                  l.a.createElement(S.a, {
-                    checked: n,
-                    label: k,
-                    name: 'display_sensitive_media',
-                    onChange: function (e, n) {
-                      s.scribe(i()(i()({}, A), {}, { element: e, action: n ? 'enable' : 'disable' })),
-                        o(r()({}, e, n)).catch(t({ showToast: !0 }))
-                    },
-                  }),
-                  l.a.createElement(_.a, { label: T, link: '/'.concat(c, '/topics') }),
-                  l.a.createElement(_.a, { label: O, link: '/settings/your_twitter_data/twitter_interests' }),
-                  l.a.createElement(_.a, { label: L, link: '/settings/explore' }),
-                  l.a.createElement(_.a, { label: I, link: '/settings/search' }),
+                  y.a,
+                  { location: a, screenType: 'secondaryDetail', title: C },
+                  l.a.createElement(S.a, { description: k }),
+                  d
+                    ? null
+                    : l.a.createElement(_.a, {
+                        checked: n,
+                        label: T,
+                        name: 'display_sensitive_media',
+                        onChange: function (e, n) {
+                          u.scribe(i()(i()({}, P), {}, { element: e, action: n ? 'enable' : 'disable' })),
+                            o(r()({}, e, n)).catch(t({ showToast: !0 }))
+                        },
+                      }),
+                  l.a.createElement(w.a, { label: O, link: '/'.concat(c, '/topics') }),
+                  l.a.createElement(w.a, { label: L, link: '/settings/your_twitter_data/twitter_interests' }),
+                  l.a.createElement(w.a, { label: I, link: '/settings/explore' }),
+                  l.a.createElement(w.a, { label: A, link: '/settings/search' }),
+                  d ? l.a.createElement(w.a, { label: F, link: '/settings/sensitive_media' }) : null,
                 ),
               ),
             )
           : null
       }
-      var P = m(F)
-      t.default = P
+      var M = p(R)
+      t.default = M
     },
     sZlh: function (e, t, n) {
       'use strict'
@@ -5440,7 +5443,7 @@
           return function (r, c, i) {
             var l = i.api,
               u = Object(o.b)(r, {
-                params: { price_id: t, success_url: n, cancel_url: a },
+                params: { external_product_id: t, success_url: n, cancel_url: a },
                 request: l.SubscriptionPayments.fetchSubscriptionProductCheckoutUrl,
               }),
               d = g(c(), e)
@@ -6189,7 +6192,7 @@
         m = n('8UdT'),
         p = n('88ay'),
         b = n('Ka9G'),
-        h = d()(d()({}, f.default), {}, s()({}, m.b.User, Object(b.a)({ decoration: p.d }))),
+        h = d()(d()({}, f.b), {}, s()({}, m.b.User, Object(b.a)({ decoration: p.d }))),
         E = n('jHSc'),
         g = n('fTQJ'),
         y = n('118N'),
@@ -6258,14 +6261,14 @@
         o = n('su2V'),
         l = n('cnVF'),
         s = function (e) {
-          return Object(c.d)(e).isTrue('subscriptions_stripe_testing') ? l.F : l.D
+          return Object(c.d)(e).isTrue('subscriptions_stripe_testing') ? l.G : l.D
         },
         u = Object(i.a)()
           .propsFromState(function () {
             return {
               productSubscriptionsFetchStatus: o.j,
               subscription: function (e) {
-                return Object(o.i)(e, l.E)
+                return Object(o.i)(e, l.F)
               },
               customerPortalUrlFetchStatus: function (e) {
                 return Object(o.h)(e, s(e))

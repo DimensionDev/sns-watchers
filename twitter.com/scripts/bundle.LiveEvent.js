@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [63, 175],
+  [62, 174],
   {
     '0GAP': function (e, t, n) {
       'use strict'
@@ -2388,7 +2388,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(8), n.e(16), n.e(23), n.e(194)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(8), n.e(16), n.e(22), n.e(193)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return r.a.createElement('div', null)
@@ -4712,7 +4712,7 @@
                 var t,
                   n = e.withTweetActionsDisabled
                 return o()(
-                  o()({}, Object(On.createConfiguration)({ withTweetActionsDisabled: n })),
+                  o()({}, Object(On.a)({ withTweetActionsDisabled: n })),
                   {},
                   ((t = {}), _()(t, Ln.b.MomentAnnotation, Bn.a), _()(t, Ln.b.EventSummary, Object(Rn.a)({})), t),
                 )
@@ -5340,6 +5340,24 @@
           )
         }
       ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+    },
+    zgaL: function (e, t, n) {
+      'use strict'
+      var a = n('ezF+'),
+        r =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return Promise.all([n.e(0), n.e(225)]).then(n.bind(null, 'tFiq'))
+            },
+            loaderKey: 'momentAnnoationLoader',
+            strategy: n('XBtf').a.Critical,
+          })
+      t.a = a.e(r)
     },
     zlxh: function (e, t, n) {
       'use strict'

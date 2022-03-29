@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [79, 19],
+  [78, 18],
   {
     '/Rsk': function (e, t, a) {
       'use strict'
@@ -7012,7 +7012,7 @@
                       var i = Object(ha.b)(n),
                         r = Object(ha.i)(n),
                         c = fs({ scheduleDate: i, scheduleTime: r })
-                      t({ text: c, action: { label: hs, link: '/compose/tweet/unsent/scheduled' } }),
+                      t({ text: c, action: { label: hs, link: { pathname: '/compose/tweet/unsent/scheduled' } } }),
                         s._scribeTweetSent(a[0], l()(l()({}, e), {}, { id_str: e.scheduled_id_str }), {
                           isScheduled: !0,
                         })
@@ -7032,7 +7032,7 @@
                 })
                   .then(function (e) {
                     s.setState({ showDiscardTweetConfirmation: !1 }),
-                      t({ text: ms, action: { label: hs, link: '/compose/tweet/unsent/drafts' } }),
+                      t({ text: ms, action: { label: hs, link: { pathname: '/compose/tweet/unsent/drafts' } } }),
                       s._scribeTweetSent(a[0], l()(l()({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
                       s._updateConvoCardState(),
                       s._close()
@@ -7201,7 +7201,7 @@
                       l = { label: hs, link: void 0, onAction: void 0 }
                     if (o || !T) {
                       var u = o ? e[0].in_reply_to_status_id_str : e[0].id_str
-                      l.link = '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '')
+                      l.link = { pathname: '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '') }
                     } else l.onAction = Object(Ko.a)(d, m, D)
                     a({ text: T ? rs : n, action: l }),
                       s.isInlineReply && s.setState({ focused: !1 }),
@@ -7531,40 +7531,45 @@
                 return function (t) {
                   var n,
                     i,
-                    r = s.props,
-                    o = r.addMedia,
-                    l = r.addToast,
-                    c = r.composerData,
-                    d = r.dataSaverMode,
-                    u = r.preUploadMedia,
-                    p = r.processMultipleMedia,
-                    m = r.removeMediaUpload,
-                    f = c[e],
-                    g = f.pollActive,
-                    v = Object(Uo.e)(
+                    r,
+                    o,
+                    l = s.props,
+                    c = l.addMedia,
+                    d = l.addToast,
+                    u = l.composerData,
+                    p = l.dataSaverMode,
+                    m = l.preUploadMedia,
+                    f = l.processMultipleMedia,
+                    g = l.removeMediaUpload,
+                    v = u[e],
+                    y = v.pollActive,
+                    b = Object(Uo.e)(
                       null === (n = h()(s)) || void 0 === n || null === (i = n.context) || void 0 === i
                         ? void 0
                         : i.userClaims,
+                      null === (r = h()(s)) || void 0 === r || null === (o = r.context) || void 0 === o
+                        ? void 0
+                        : o.featureSwitches,
                     )
-                  g ||
-                    o(t, { location: Uo.d.Tweet, canUploadLongVideo: v }).then(function (t) {
+                  y ||
+                    c(t, { location: Uo.d.Tweet, canUploadLongVideo: b }).then(function (t) {
                       var n = t.map(function (e) {
                         return e.id
                       })
-                      if (a._validateMedia(f, t)) {
-                        var i = f.media.map(function (e) {
+                      if (a._validateMedia(v, t)) {
+                        var i = v.media.map(function (e) {
                           return e.id
                         })
                         s._updateSingleComposer({ mediaIds: Object(jo.a)(i.concat(n)) }, e),
-                          p(t, { onFailure: s._handleMediaRemoveFactory(e) }).then(function (e) {
-                            d ||
-                              u(
+                          f(t, { onFailure: s._handleMediaRemoveFactory(e) }).then(function (e) {
+                            p ||
+                              m(
                                 e.map(function (e) {
                                   return e.id
                                 }),
                               )
                           })
-                      } else l({ text: ys }), m(n)
+                      } else d({ text: ys }), g(n)
                     })
                 }
               }),
@@ -8382,12 +8387,13 @@
                 var t = e.length
                 return n._isInvalidNumber() && (t = 1), t
               }),
-              y()(p()(n), '_handleBlur', function (e) {
-                var t = n.props.onBlur,
-                  a = e.currentTarget.value,
+              y()(p()(n), '_handleBlur', function () {
+                var e,
+                  t = n.props.onBlur,
+                  a = (null === (e = n._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   i = n._calculateLength(a),
                   r = n._getActualCount(a)
-                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t(e)
+                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t()
               }),
               y()(p()(n), '_handleChange', function (e) {
                 var t = n.props.onChange,

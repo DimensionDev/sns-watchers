@@ -1,7 +1,7 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [101],
+  [100],
   {
-    '+Bsv': function (e, t, n) {
+    '+Bsv': function (t, e, n) {
       'use strict'
       var r = n('ERkP'),
         a = n.n(r),
@@ -13,49 +13,49 @@
         l = n('rHpw'),
         d = o.a.bb081ea1,
         f = { viewType: 'settings_button' },
-        b = a.a.memo(function (e) {
-          var t = e.onPress,
-            n = e.pullRight,
-            r = e.to
+        b = a.a.memo(function (t) {
+          var e = t.onPress,
+            n = t.pullRight,
+            r = t.to
           return a.a.createElement(s.a, {
             accessibilityLabel: d,
             behavioralEventContext: f,
             hoverLabel: { label: d },
             icon: a.a.createElement(c.a, null),
             link: r,
-            onPress: t,
+            onPress: e,
             pullRight: n,
             style: p.button,
             testID: u,
             type: 'primaryText',
           })
         }),
-        p = l.a.create(function (e) {
-          return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
+        p = l.a.create(function (t) {
+          return { button: { marginVertical: 'calc(-'.concat(t.spaces.space12, ')') } }
         })
-      t.a = b
+      e.a = b
     },
-    BxsD: function (e, t, n) {
+    BxsD: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(e, 'a', function () {
         return l
       }),
-        n.d(t, 'b', function () {
+        n.d(e, 'b', function () {
           return d
         }),
-        n.d(t, 'c', function () {
+        n.d(e, 'c', function () {
           return b
         }),
-        n.d(t, 'd', function () {
+        n.d(e, 'd', function () {
           return E
         }),
-        n.d(t, 'f', function () {
+        n.d(e, 'f', function () {
           return v
         }),
-        n.d(t, 'e', function () {
+        n.d(e, 'e', function () {
           return m
         }),
-        n.d(t, 'g', function () {
+        n.d(e, 'g', function () {
           return g
         })
       var r = n('yiKp'),
@@ -69,16 +69,16 @@
         d = 'explore-',
         f = 9e5,
         b = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-            t = e.contentType,
-            n = e.displayLocation,
-            r = e.featureSwitches,
-            i = e.focalTweetId,
-            o = e.includePageConfiguration,
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            e = t.contentType,
+            n = t.displayLocation,
+            r = t.featureSwitches,
+            i = t.focalTweetId,
+            o = t.includePageConfiguration,
             u = void 0 !== o && o,
-            s = e.initialTabId,
-            l = e.profileUserId,
-            b = t || n || 'main',
+            s = t.initialTabId,
+            l = t.profileUserId,
+            b = e || n || 'main',
             E = i
               ? ''.concat(d).concat(b, '-tweet-').concat(i)
               : l
@@ -88,15 +88,15 @@
           return Object(c.a)({
             timelineId: E,
             formatResponse: p(v),
-            getEndpoint: function (e) {
-              return e.URT.fetchExplore
+            getEndpoint: function (t) {
+              return t.URT.fetchExplore
             },
-            getEndpointParams: function (e) {
+            getEndpointParams: function (t) {
               return a()(
-                a()({}, e),
+                a()({}, t),
                 {},
                 {
-                  candidate_source: t,
+                  candidate_source: e,
                   display_location: n,
                   focal_tweet_id: i,
                   include_page_configuration: u,
@@ -111,18 +111,18 @@
             staleIntervalMs: f,
           })
         },
-        p = function (e) {
-          return function (t) {
-            var n = t.pageConfiguration
-            if (e && n && n.tabs) {
-              var r = n.tabs.tabs.map(function (t) {
+        p = function (t) {
+          return function (e) {
+            var n = e.pageConfiguration
+            if (t && n && n.tabs) {
+              var r = n.tabs.tabs.map(function (e) {
                   var n,
                     r,
                     i,
                     o = a()(
                       a()(
                         {},
-                        null === (n = t.urtEndpoint) ||
+                        null === (n = e.urtEndpoint) ||
                           void 0 === n ||
                           null === (r = n.urtEndpointOptions) ||
                           void 0 === r
@@ -130,18 +130,18 @@
                           : r.requestParams,
                       ),
                       {},
-                      { entity_tokens: e },
+                      { entity_tokens: t },
                     )
                   return a()(
-                    a()({}, t),
+                    a()({}, e),
                     {},
                     {
                       urtEndpoint: a()(
-                        a()({}, t.urtEndpoint),
+                        a()({}, e.urtEndpoint),
                         {},
                         {
                           urtEndpointOptions: a()(
-                            a()({}, null === (i = t.urtEndpoint) || void 0 === i ? void 0 : i.urtEndpointOptions),
+                            a()({}, null === (i = e.urtEndpoint) || void 0 === i ? void 0 : i.urtEndpointOptions),
                             {},
                             { requestParams: o },
                           ),
@@ -151,43 +151,61 @@
                   )
                 }),
                 o = a()(
-                  a()({}, t),
+                  a()({}, e),
                   {},
                   { pageConfiguration: a()(a()({}, n), {}, { tabs: a()(a()({}, n.tabs), {}, { tabs: r }) }) },
                 )
               return Object(i.a)(o)
             }
-            return Object(i.a)(t)
+            return Object(i.a)(e)
           }
         },
-        E = function (e, t) {
-          return b({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
+        E = function (t, e) {
+          return b({ featureSwitches: t, includePageConfiguration: !0, initialTabId: e })
         },
-        v = Object(o.a)(function (e) {
-          return b({ featureSwitches: e, contentType: s.Trends })
+        v = Object(o.a)(function (t) {
+          return b({ featureSwitches: t, contentType: s.Trends })
         }),
-        m = Object(o.a)(function (e) {
-          return b({ featureSwitches: e, displayLocation: l.WebSidebar })
+        m = Object(o.a)(function (t) {
+          return b({ featureSwitches: t, displayLocation: l.WebSidebar })
         }),
         g = function () {
-          return function (e, t) {
-            return e(
-              Object(u.t)(t())
-                .filter(function (e) {
-                  return 0 === e.indexOf(d)
+          return function (t, e) {
+            return t(
+              Object(u.t)(e())
+                .filter(function (t) {
+                  return 0 === t.indexOf(d)
                 })
-                .map(function (e) {
-                  return Object(u.g)(e)
+                .map(function (t) {
+                  return Object(u.g)(t)
                 }),
             )
           }
         }
     },
-    iBrK: function (e, t, n) {
+    XtkE: function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'TrendsScreen', function () {
-          return K
+      var r = n('ezF+'),
+        a = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf'))
+      e.a = function (t) {
+        var e = t.errorContext,
+          i = t.withThirdPartyCards,
+          o = void 0 !== i && i
+        return r.e({
+          loader: function () {
+            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(247)]).then(n.bind(null, '+92Z'))
+          },
+          loaderKey: 'trendDefaultLoader',
+          loaderOptions: { withThirdPartyCards: o, errorContext: e },
+          strategy: a.a.Critical,
+        })
+      }
+    },
+    iBrK: function (t, e, n) {
+      'use strict'
+      n.r(e),
+        n.d(e, 'TrendsScreen', function () {
+          return X
         })
       var r,
         a = n('ERkP'),
@@ -210,40 +228,40 @@
         m = s()(s()({}, Object(p.a)({})), v),
         g = n('BxsD'),
         y = n('dwig'),
-        w = n('0+qk'),
-        h = n('3XMw'),
-        T = n.n(h),
-        _ = n('VTxf'),
+        h = n('0+qk'),
+        w = n('3XMw'),
+        T = n.n(w),
+        C = n('VTxf'),
         O = n('yoO3'),
-        C = n('fTQJ'),
-        j = n('+Bsv'),
-        x = n('VS6U'),
-        R = n('Irs7'),
-        S = n('FIs5'),
-        P = n('mw9i'),
+        _ = n('fTQJ'),
+        x = n('+Bsv'),
+        P = n('VS6U'),
+        j = n('Irs7'),
+        R = n('FIs5'),
+        S = n('mw9i'),
         k = T.a.c5f4befa,
         I = T.a.ae05f268,
         L = function () {
-          return i.a.createElement(_.a, null)
+          return i.a.createElement(C.a, null)
         },
         B = function () {
-          return i.a.createElement(S.a, { message: I })
+          return i.a.createElement(R.a, { message: I })
         },
-        K = function (e) {
-          var t = e.history,
+        X = function (t) {
+          var e = t.history,
             n = i.a.useContext(o.a).featureSwitches,
-            r = i.a.createElement(w.a, { history: t }),
-            a = i.a.createElement(j.a, { pullRight: !0, to: '/settings/trends' })
+            r = i.a.createElement(h.a, { history: e }),
+            a = i.a.createElement(x.a, { pullRight: !0, to: '/settings/trends' })
           return i.a.createElement(
             O.a,
             null,
-            i.a.createElement(x.a, {
+            i.a.createElement(P.a, {
               backLocation: '/explore',
-              history: t,
+              history: e,
               primaryContent: i.a.createElement(
                 y.a,
-                { component: P.a, fab: r },
-                i.a.createElement(C.a, {
+                { component: S.a, fab: r },
+                i.a.createElement(_.a, {
                   entryConfiguration: m,
                   module: Object(g.f)(n),
                   renderEmptyState: L,
@@ -257,7 +275,7 @@
             }),
           )
         }
-      t.default = Object(R.a)(K, { page: 'guide', section: 'all_trends' })
+      e.default = Object(j.a)(X, { page: 'guide', section: 'all_trends' })
     },
   },
 ])

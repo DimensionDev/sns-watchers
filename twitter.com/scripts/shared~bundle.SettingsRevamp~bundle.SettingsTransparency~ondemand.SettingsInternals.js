@@ -1037,12 +1037,13 @@
                 var t = e.length
                 return r._isInvalidNumber() && (t = 1), t
               }),
-              b()(p()(r), '_handleBlur', function (e) {
-                var t = r.props.onBlur,
-                  n = e.currentTarget.value,
+              b()(p()(r), '_handleBlur', function () {
+                var e,
+                  t = r.props.onBlur,
+                  n = (null === (e = r._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   a = r._calculateLength(n),
                   o = r._getActualCount(n)
-                r.setState({ isFocused: !1, displayCount: a, actualCount: o }), t && t(e)
+                r.setState({ isFocused: !1, displayCount: a, actualCount: o }), t && t()
               }),
               b()(p()(r), '_handleChange', function (e) {
                 var t = r.props.onChange,

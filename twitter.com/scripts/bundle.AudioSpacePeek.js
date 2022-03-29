@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36, 8],
+  [35, 8],
   {
     '0nhk': function (e, t, n) {
       'use strict'
@@ -5984,7 +5984,7 @@
         v = Object(f.a)({
           loader: function () {
             return m.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(230)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(17), n.e(229)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {

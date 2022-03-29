@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [43],
+  [42],
   {
     '3L7q': function (e, t, n) {
       'use strict'
@@ -8,44 +8,58 @@
       var r = n('ERkP'),
         o = n.n(r),
         a = n('SslV'),
-        c = n('es0u'),
-        i = n('mw9i'),
+        i = n('es0u'),
+        c = n('mw9i'),
         s = n('KEM+'),
         l = n.n(s),
         u = n('yiKp'),
         d = n.n(u),
-        p = n('rrdj'),
-        m = n('8UdT'),
-        f = n('QIgh'),
-        y = d()(d()({}, f.default), {}, l()({}, m.a.CollectionHeader, p.a)),
-        w = n('3XMw'),
-        I = n.n(w),
-        C = n('yoO3'),
-        b = n('fTQJ'),
-        x = n('7JQg'),
-        E = n('VS6U'),
-        h = I.a.f8cafdc1,
-        g = I.a.ddf0ba7e,
-        v = { page: 'collection', section: 'tweets' }
+        p = n('ezF+'),
+        m =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return n.e(253).then(n.bind(null, 'U0EQ'))
+            },
+            loaderKey: 'collectionHeaderLoader',
+            strategy: n('XBtf').a.Critical,
+          }),
+        f = p.e(m),
+        y = n('8UdT'),
+        w = n('QIgh'),
+        I = d()(d()({}, w.b), {}, l()({}, y.a.CollectionHeader, f)),
+        C = n('3XMw'),
+        b = n.n(C),
+        x = n('yoO3'),
+        E = n('fTQJ'),
+        h = n('7JQg'),
+        g = n('VS6U'),
+        T = b.a.f8cafdc1,
+        v = b.a.ddf0ba7e,
+        O = { page: 'collection', section: 'tweets' }
       t.default = function (e) {
         var t = e.history,
           n = e.match.params.collectionId
         return o.a.createElement(
-          x.c,
-          { namespace: v },
+          h.c,
+          { namespace: O },
           o.a.createElement(
-            C.a,
+            x.a,
             null,
-            o.a.createElement(E.a, {
+            o.a.createElement(g.a, {
               backLocation: '/',
               history: t,
               primaryContent: o.a.createElement(
-                i.a,
+                c.a,
                 null,
-                o.a.createElement(b.a, { entryConfiguration: y, module: Object(a.a)(n), title: h }),
+                o.a.createElement(E.a, { entryConfiguration: I, module: Object(a.a)(n), title: T }),
               ),
-              sidebarContent: o.a.createElement(c.a, null),
-              title: g,
+              sidebarContent: o.a.createElement(i.a, null),
+              title: v,
             }),
           ),
         )
@@ -56,9 +70,9 @@
       var r = n('yiKp'),
         o = n.n(r),
         a = n('m3Bd'),
-        c = n.n(a),
-        i = n('RhWx'),
-        s = n.n(i),
+        i = n.n(a),
+        c = n('RhWx'),
+        s = n.n(c),
         l = (n('KqXw'), n('MvUL'), n('2G9S'), n('ho0z'), n('1t7P'), n('jQ/y'), n('CXcw')),
         u = n('vWJI'),
         d = n('8UdT'),
@@ -86,9 +100,9 @@
             a = w(r, function (e, t) {
               return Object(m.a)(e.sortIndex, t.sortIndex)
             }),
-            c = (e.result.response.position || {}).min_position,
-            i = c && a && x(c, a.sortIndex)
-          i && r.push(i)
+            i = (e.result.response.position || {}).min_position,
+            c = i && a && x(i, a.sortIndex)
+          c && r.push(c)
           var l = e.result.response.timeline_id.replace('custom-', ''),
             u = e.entities,
             d = u.cards,
@@ -97,11 +111,11 @@
             E = u.users,
             h = f && f[l],
             g = !t.cursor && h && C(l, o ? o.sortIndex : '0', h),
-            v = g ? [g].concat(s()(r)) : r
+            T = g ? [g].concat(s()(r)) : r
           return {
             globalObjects: { cards: d || {}, tweets: I || {}, users: E || {} },
             timeline: {
-              instructions: v.length > 0 ? [{ type: p.a.AddEntries, parameters: { entries: v } }] : [],
+              instructions: T.length > 0 ? [{ type: p.a.AddEntries, parameters: { entries: T } }] : [],
               responseObjects: {},
             },
           }
@@ -143,7 +157,7 @@
           },
           getEndpointParams: function (t) {
             var n = t.cursor,
-              r = c()(t, h)
+              r = i()(t, h)
             return o()(o()({}, r), {}, { id: e, max_position: n })
           },
           context: 'FETCH_LEGACY_COLLECTION_CONTEXT',

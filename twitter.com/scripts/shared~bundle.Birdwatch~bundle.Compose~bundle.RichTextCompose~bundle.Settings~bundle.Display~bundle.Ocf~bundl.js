@@ -617,128 +617,129 @@
           F = e.nativeID,
           N = e.onCardLinkClick,
           H = e.onMediaClick,
-          j = e.onQuoteTweetClick,
-          U = e.preventVideoPlayback,
-          K = e.promotedContent,
-          z = e.quoteTweetSingleImageMinAspectRatio,
-          V = void 0 === z ? R : z,
-          W = e.quoteTweetSocialContextProps,
-          q = e.quotedTweetTombstoneInfo,
-          Q = e.renderQuoteTweetTombstone,
-          X = void 0 === Q ? O : Q,
-          J = e.singleImageMaxAspectRatio,
-          G = void 0 === J ? 10 : J,
-          Y = e.singleImageMinAspectRatio,
-          Z = void 0 === Y ? R : Y,
-          $ = e.mediaAltTranslations,
-          ee = e.tweet,
-          te = e.withActionsDisabled,
-          ne = e.withAltTextBadge,
-          oe = e.withCardLinks,
-          ae = void 0 !== oe && oe,
-          ie = e.withCenterCrop,
-          re = void 0 !== ie && ie,
-          ce = e.withCondensedQuoteTweet,
-          se = e.withHalvedMediaSize,
-          le = void 0 !== se && se,
-          ue = e.withMediaTagsIcon,
-          de = e.withQuoteTweetHeaderLinks,
-          me = e.withQuoteTweetLink,
-          pe = e.withQuoteTweetMedia,
-          ve = void 0 === pe || pe,
-          he = e.withReactions,
-          fe = e.withRoundMediaCorners,
-          we = e.withTweetMedia,
-          be = void 0 === we || we,
-          ye = e.withUserHoverCard,
-          _e = D(),
-          ge = a()(_e, 2),
-          ke = ge[0],
-          Ce = ge[1],
-          Ee = u.b.useProps().withEdgeToEdgeContent(),
-          Te = Object(T.useOpaqueIdentifier)(),
+          j = e.onPlaybackStarted,
+          U = e.onQuoteTweetClick,
+          K = e.preventVideoPlayback,
+          z = e.promotedContent,
+          V = e.quoteTweetSingleImageMinAspectRatio,
+          W = void 0 === V ? R : V,
+          q = e.quoteTweetSocialContextProps,
+          Q = e.quotedTweetTombstoneInfo,
+          X = e.renderQuoteTweetTombstone,
+          J = void 0 === X ? O : X,
+          G = e.singleImageMaxAspectRatio,
+          Y = void 0 === G ? 10 : G,
+          Z = e.singleImageMinAspectRatio,
+          $ = void 0 === Z ? R : Z,
+          ee = e.mediaAltTranslations,
+          te = e.tweet,
+          ne = e.withActionsDisabled,
+          oe = e.withAltTextBadge,
+          ae = e.withCardLinks,
+          ie = void 0 !== ae && ae,
+          re = e.withCenterCrop,
+          ce = void 0 !== re && re,
+          se = e.withCondensedQuoteTweet,
+          le = e.withHalvedMediaSize,
+          ue = void 0 !== le && le,
+          de = e.withMediaTagsIcon,
+          me = e.withQuoteTweetHeaderLinks,
+          pe = e.withQuoteTweetLink,
+          ve = e.withQuoteTweetMedia,
+          he = void 0 === ve || ve,
+          fe = e.withReactions,
+          we = e.withRoundMediaCorners,
+          be = e.withTweetMedia,
+          ye = void 0 === be || be,
+          _e = e.withUserHoverCard,
+          ge = D(),
+          ke = a()(ge, 2),
+          Ce = ke[0],
+          Ee = ke[1],
+          Te = u.b.useProps().withEdgeToEdgeContent(),
           Se = Object(T.useOpaqueIdentifier)(),
-          Ae = E.a.getOriginalTweet(ee),
-          Ie = function () {
-            return E.a.hasMedia(Ae, !be)
+          Ae = Object(T.useOpaqueIdentifier)(),
+          Ie = E.a.getOriginalTweet(te),
+          xe = function () {
+            return E.a.hasMedia(Ie, !ye)
           },
-          xe = function (e) {
+          Re = function (e) {
             var t,
               n = null == e || null === (t = e.extended_entities) || void 0 === t ? void 0 : t.media
             if (n && 1 === n.length && 'photo' === n[0].type) return n[0]
           },
-          Re = function () {
-            return xe(Ae)
-          },
           Le = function () {
-            return xe(Ae.quoted_status)
+            return Re(Ie)
           },
           De = function () {
-            var e = Le()
+            return Re(Ie.quoted_status)
+          },
+          Me = function () {
+            var e = De()
             if (e && e.original_info) {
               var t = e && e.original_info,
                 n = t.height,
                 o = t.width
-              return Object(d.b)(V, G, { width: o, height: n })
+              return Object(d.b)(W, Y, { width: o, height: n })
             }
           },
-          Me = function (e) {
+          Pe = function (e) {
             var t = h.a.getBackgroundColor(e)
             return t ? 'rgb('.concat(t.red, ',').concat(t.green, ',').concat(t.blue, ')') : null
           },
-          Pe = function (e, t) {
-            return [Ee && P.negativeMargin, t && Ee && [P.centerItems, { backgroundColor: e }]]
+          Oe = function (e, t) {
+            return [Te && P.negativeMargin, t && Te && [P.centerItems, { backgroundColor: e }]]
           },
-          Oe = function () {
+          Be = function () {
             var e,
               t,
               n,
-              o = E.a.getOriginalTweet(ee),
-              a = Ie(),
-              i = k && !a && !!(e = De()) && e < 1 && ke,
-              c = (t = Le()) ? Me(t) : null
+              o = E.a.getOriginalTweet(te),
+              a = xe(),
+              i = k && !a && !!(e = Me()) && e < 1 && Ce,
+              c = (t = De()) ? Pe(t) : null
             return o && o.is_quote_status
               ? r.a.createElement(f.a, {
                   forwardPivotInfo: (null === (n = o.quoted_status) || void 0 === n ? void 0 : n.softIntervention) || g,
-                  isCondensed: ce,
+                  isCondensed: se,
                   loggedInUserId: M,
-                  mediaContentStyles: !ce && Pe(c, !!i),
-                  mediaMaxHeight: i ? (Ee ? 596 : 510) : void 0,
-                  nativeID: Se,
-                  onPress: j,
-                  preventVideoPlayback: U,
-                  shouldShowAltLabelAlways: ne,
-                  singleImageMaxAspectRatio: G,
-                  singleImageMinAspectRatio: V,
-                  socialContextProps: W,
+                  mediaContentStyles: !se && Oe(c, !!i),
+                  mediaMaxHeight: i ? (Te ? 596 : 510) : void 0,
+                  nativeID: Ae,
+                  onPress: U,
+                  preventVideoPlayback: K,
+                  shouldShowAltLabelAlways: oe,
+                  singleImageMaxAspectRatio: Y,
+                  singleImageMinAspectRatio: W,
+                  socialContextProps: q,
                   tweet: o.quoted_status,
-                  withCenterCrop: re,
-                  withHeaderLinks: de,
-                  withLink: me,
-                  withMediaAsTextLinks: !ve,
-                  withReactions: he,
-                  withUserHoverCard: ye,
+                  withCenterCrop: ce,
+                  withHeaderLinks: me,
+                  withLink: pe,
+                  withMediaAsTextLinks: !he,
+                  withReactions: fe,
+                  withUserHoverCard: _e,
                 })
               : null
           },
-          Be = (function () {
+          Fe = (function () {
             var e,
               t,
-              n = E.a.getOriginalTweet(ee),
+              n = E.a.getOriginalTweet(te),
               o =
                 k &&
                 (function () {
-                  if (!Ie()) return !1
-                  var e = Re()
+                  if (!xe()) return !1
+                  var e = Le()
                   if (!e || !e.original_info) return !1
                   var t = e && e.original_info,
                     n = t.height,
                     o = t.width
-                  return Object(d.b)(Z, G, { width: o, height: n }) < 1
+                  return Object(d.b)($, Y, { width: o, height: n }) < 1
                 })() &&
-                ke,
-              a = (t = Re()) ? Me(t) : null
-            if (!Ie()) return null
+                Ce,
+              a = (t = Le()) ? Pe(t) : null
+            if (!xe()) return null
             if (A.a.hasVoiceMedia(n))
               return r.a.createElement(S.a, { style: P.gap }, r.a.createElement(A.a, { tweet: n }))
             if (Object(x.c)(n)) {
@@ -755,30 +756,31 @@
               forwardPivotInfo: y,
               hasSensitiveMedia: n.possibly_sensitive,
               loggedInUserId: M,
-              mediaAltTranslations: $,
-              mediaContentStyles: [Pe(a, !!o)],
+              mediaAltTranslations: ee,
+              mediaContentStyles: [Oe(a, !!o)],
               mediaDetails: null === (e = n.extended_entities) || void 0 === e ? void 0 : e.media,
-              mediaMaxHeight: o ? (Ee ? 596 : 510) : void 0,
+              mediaMaxHeight: o ? (Te ? 596 : 510) : void 0,
               mediaTagsLink: ''.concat(n.permalink, '/media_tags'),
               onClick: H,
-              preventPlayback: U,
-              promotedContent: K,
-              shouldShowAltLabelAlways: ne,
-              showBorder: !(o && Ee),
-              showRoundCorners: fe,
-              singleImageMaxAspectRatio: G,
-              singleImageMinAspectRatio: Z,
-              style: [P.gap, o && !Ee && P.explicitlySized],
+              onPlaybackStarted: j,
+              preventPlayback: K,
+              promotedContent: z,
+              shouldShowAltLabelAlways: oe,
+              showBorder: !(o && Te),
+              showRoundCorners: we,
+              singleImageMaxAspectRatio: Y,
+              singleImageMinAspectRatio: $,
+              style: [P.gap, o && !Te && P.explicitlySized],
               tweetCreatedAt: n.created_at,
               tweetId: n.id_str,
               tweetText: n.text,
-              withCenterCrop: re,
-              withHalvedMediaSize: le,
-              withMediaTagsIcon: ue,
+              withCenterCrop: ce,
+              withHalvedMediaSize: ue,
+              withMediaTagsIcon: de,
               withPostPlayback: !0,
             })
           })(),
-          Fe = (function () {
+          Ne = (function () {
             if (y && y.displayType === I.a.SoftIntervention) {
               var e = y.displayType,
                 t = y.landingUrl,
@@ -789,65 +791,65 @@
                 { style: P.mediaPivotGap },
                 r.a.createElement(I.b, {
                   displayType: e,
-                  isTweetNonCompliant: 'non_compliant' === ee.limited_actions,
+                  isTweetNonCompliant: 'non_compliant' === te.limited_actions,
                   landingUrl: t,
                   softInterventionDisplayType: n,
                   text: o,
-                  tweetId: ee.id_str,
-                  withReactions: he,
+                  tweetId: te.id_str,
+                  withReactions: fe,
                 }),
               )
             }
           })(),
-          Ne = _ ? r.a.createElement(S.a, { style: P.mediaPivotGap }, r.a.createElement(v.a, _)) : null,
-          He =
-            ((c = Oe()),
+          He = _ ? r.a.createElement(S.a, { style: P.mediaPivotGap }, r.a.createElement(v.a, _)) : null,
+          je =
+            ((c = Be()),
             (t =
-              (c && q ? X({ children: c, config: q, nativeID: Se }) : c) ||
-              (Ae && Ae.card && !Ie() && (!ae || l.a.isPollCard(Ae.card.name)) && Ae.card
+              (c && Q ? J({ children: c, config: Q, nativeID: Ae }) : c) ||
+              (Ie && Ie.card && !xe() && (!ie || l.a.isPollCard(Ie.card.name)) && Ie.card
                 ? r.a.createElement(s.a, {
                     card: {
-                      name: Ae.card.name,
-                      url: Ae.card.url,
-                      binding_values: Ae.card.binding_values,
-                      users: Ae.card.users,
+                      name: Ie.card.name,
+                      url: Ie.card.url,
+                      binding_values: Ie.card.binding_values,
+                      users: Ie.card.users,
                     },
                     cardContext: {
                       locationKey: m || L,
-                      tweetId: Ae.id_str,
-                      tweetPermalink: Ae.permalink,
-                      tweetUserId: Ae.user.id_str,
+                      tweetId: Ie.id_str,
+                      tweetPermalink: Ie.permalink,
+                      tweetUserId: Ie.user.id_str,
                       viewerUserId: M,
-                      withActionsDisabled: te,
+                      withActionsDisabled: ne,
                     },
-                    nativeID: Te,
+                    nativeID: Se,
                     onCardLinkClick: N,
-                    preventVideoPlayback: U,
-                    promotedContent: K,
-                    unifiedCard: Ae.unified_card,
+                    preventVideoPlayback: K,
+                    promotedContent: z,
+                    unifiedCard: Ie.unified_card,
                   })
                 : null)),
-            (o = Ae.possibly_sensitive),
-            ((null != (i = Ae.quoted_status) &&
+            (o = Ie.possibly_sensitive),
+            ((null != (i = Ie.quoted_status) &&
               i.possibly_sensitive &&
-              Ae.quoted_status &&
-              Ae.quoted_status.entities &&
-              Ae.quoted_status.entities.media &&
-              Ae.quoted_status.entities.media.length > 0 &&
-              ve &&
-              !q) ||
-              (o && !l.a.isPollCard(null === (n = Ae.card) || void 0 === n ? void 0 : n.name))) &&
+              Ie.quoted_status &&
+              Ie.quoted_status.entities &&
+              Ie.quoted_status.entities.media &&
+              Ie.quoted_status.entities.media.length > 0 &&
+              he &&
+              !Q) ||
+              (o && !l.a.isPollCard(null === (n = Ie.card) || void 0 === n ? void 0 : n.name))) &&
             t
               ? r.a.createElement(w.a, { revealableTombstoneConfig: w.a.sensitiveMediaTombstoneConfig }, t)
               : t)
-        return Be || He || Fe
+        return Fe || je || Ne
           ? r.a.createElement(
               S.a,
-              { accessibilityLabelledBy: [Se, Te], nativeID: F, ref: Ce },
-              Be,
-              Ne,
+              { accessibilityLabelledBy: [Ae, Se], nativeID: F, ref: Ee },
               Fe,
-              He ? r.a.createElement(S.a, { style: P.gap }, He) : null,
+              He,
+              Ne,
+              je ? r.a.createElement(S.a, { style: P.gap }, je) : null,
             )
           : null
       }

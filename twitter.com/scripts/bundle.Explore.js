@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [56],
+  [55],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -8,16 +8,16 @@
         i = n('3XMw'),
         o = n.n(i),
         c = n('M2x3'),
-        s = 'settingsAppBar',
-        u = n('/yvb'),
-        l = n('rHpw'),
+        l = 'settingsAppBar',
+        s = n('/yvb'),
+        u = n('rHpw'),
         d = o.a.bb081ea1,
         f = { viewType: 'settings_button' },
         p = r.a.memo(function (e) {
           var t = e.onPress,
             n = e.pullRight,
             a = e.to
-          return r.a.createElement(u.a, {
+          return r.a.createElement(s.a, {
             accessibilityLabel: d,
             behavioralEventContext: f,
             hoverLabel: { label: d },
@@ -26,19 +26,45 @@
             onPress: t,
             pullRight: n,
             style: b.button,
-            testID: s,
+            testID: l,
             type: 'primaryText',
           })
         }),
-        b = l.a.create(function (e) {
+        b = u.a.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
       t.a = p
     },
+    '+o05': function (e, t, n) {
+      'use strict'
+      var a = n('KEM+'),
+        r = n.n(a),
+        i = n('ezF+'),
+        o = (n('yH/f'), Object.freeze({ Cell: 'Cell', Hero: 'Hero', Tile: 'Tile' })),
+        c =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return n.e(236).then(n.bind(null, 'QPD4'))
+            },
+            loaderKey: 'defaultScoreEventSummaryLoader',
+            strategy: n('XBtf').a.Critical,
+          })
+      t.a = i.c({
+        selectDisplayType: function (e) {
+          return e.content.displayType
+        },
+        handlers: r()({}, o.Cell, c),
+      })
+    },
     BxsD: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return l
+        return u
       }),
         n.d(t, 'b', function () {
           return d
@@ -56,16 +82,16 @@
           return g
         }),
         n.d(t, 'g', function () {
-          return E
+          return v
         })
       var a = n('yiKp'),
         r = n.n(a),
         i = (n('yH/f'), n('2G9S'), n('z84I'), n('LW0h'), n('7x/C'), n('vrRf'), n('vXCH')),
         o = n('oQhu'),
         c = n('ZNT5'),
-        s = n('eR3e'),
-        u = Object.freeze({ Trends: 'trends' }),
-        l = Object.freeze({ WebSidebar: 'web_sidebar' }),
+        l = n('eR3e'),
+        s = Object.freeze({ Trends: 'trends' }),
+        u = Object.freeze({ WebSidebar: 'web_sidebar' }),
         d = 'explore-',
         f = 9e5,
         p = function () {
@@ -75,14 +101,14 @@
             a = e.featureSwitches,
             i = e.focalTweetId,
             o = e.includePageConfiguration,
-            s = void 0 !== o && o,
-            u = e.initialTabId,
-            l = e.profileUserId,
+            l = void 0 !== o && o,
+            s = e.initialTabId,
+            u = e.profileUserId,
             p = t || n || 'main',
             m = i
               ? ''.concat(d).concat(p, '-tweet-').concat(i)
-              : l
-              ? ''.concat(d).concat(p, '-user-').concat(l)
+              : u
+              ? ''.concat(d).concat(p, '-user-').concat(u)
               : ''.concat(d).concat(p),
             h = a.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
@@ -99,9 +125,9 @@
                   candidate_source: t,
                   display_location: n,
                   focal_tweet_id: i,
-                  include_page_configuration: s,
-                  initial_tab_id: u,
-                  profile_user_id: l,
+                  include_page_configuration: l,
+                  initial_tab_id: s,
+                  profile_user_id: u,
                   entity_tokens: h,
                 },
               )
@@ -164,24 +190,71 @@
           return p({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
         },
         h = Object(o.a)(function (e) {
-          return p({ featureSwitches: e, contentType: u.Trends })
+          return p({ featureSwitches: e, contentType: s.Trends })
         }),
         g = Object(o.a)(function (e) {
-          return p({ featureSwitches: e, displayLocation: l.WebSidebar })
+          return p({ featureSwitches: e, displayLocation: u.WebSidebar })
         }),
-        E = function () {
+        v = function () {
           return function (e, t) {
             return e(
-              Object(s.t)(t())
+              Object(l.t)(t())
                 .filter(function (e) {
                   return 0 === e.indexOf(d)
                 })
                 .map(function (e) {
-                  return Object(s.g)(e)
+                  return Object(l.g)(e)
                 }),
             )
           }
         }
+    },
+    PH3B: function (e, t, n) {
+      'use strict'
+      var a,
+        r = n('KEM+'),
+        i = n.n(r),
+        o = n('ezF+'),
+        c = (n('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
+        l = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
+        s = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'a+ad'))
+          },
+          loaderKey: 'newsCellLoader',
+          strategy: l.a.Critical,
+        },
+        u = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'hX2d'))
+          },
+          loaderKey: 'newsPreviewCardLoader',
+          strategy: l.a.Critical,
+        }
+      t.a = o.c({
+        selectDisplayType: function (e) {
+          return e.content.newsDisplayType
+        },
+        handlers: ((a = {}), i()(a, c.Cell, s), i()(a, c.PreviewCard, u), a),
+      })
+    },
+    XtkE: function (e, t, n) {
+      'use strict'
+      var a = n('ezF+'),
+        r = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf'))
+      t.a = function (e) {
+        var t = e.errorContext,
+          i = e.withThirdPartyCards,
+          o = void 0 !== i && i
+        return a.e({
+          loader: function () {
+            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(247)]).then(n.bind(null, '+92Z'))
+          },
+          loaderKey: 'trendDefaultLoader',
+          loaderOptions: { withThirdPartyCards: o, errorContext: t },
+          strategy: r.a.Critical,
+        })
+      }
     },
     jcx9: function (e, t, n) {
       'use strict'
@@ -194,21 +267,21 @@
         i = n.n(r),
         o = n('Y9Ll'),
         c = n.n(o),
-        s = n('1Pcy'),
-        u = n.n(s),
-        l = n('5Yy7'),
-        d = n.n(l),
+        l = n('1Pcy'),
+        s = n.n(l),
+        u = n('5Yy7'),
+        d = n.n(u),
         f = n('2VqO'),
         p = n.n(f),
         b = n('KEM+'),
         m = n.n(b),
         h = (n('2G9S'), n('ERkP')),
         g = n.n(h),
-        E = n('es0u'),
-        v = (n('KqXw'), n('WNMA'), n('hqKg')),
-        w = n('BxsD'),
-        y = n('oQhu'),
-        _ = n('wrlS'),
+        v = n('es0u'),
+        y = (n('KqXw'), n('WNMA'), n('hqKg')),
+        E = n('BxsD'),
+        w = n('oQhu'),
+        C = n('wrlS'),
         T = n('rxPX'),
         x = function (e, t) {
           var n, a
@@ -217,21 +290,21 @@
             void 0
           )
         },
-        S = Object(T.a)()
+        _ = Object(T.a)()
           .propsFromState(function () {
             return {
               initialTabModule:
-                ((e = Object(y.a)(function (e) {
-                  return Object(w.d)(e)
+                ((e = Object(w.a)(function (e) {
+                  return Object(E.d)(e)
                 })),
-                (t = Object(y.a)(function (e, t) {
-                  return Object(w.d)(e, t)
+                (t = Object(w.a)(function (e, t) {
+                  return Object(E.d)(e, t)
                 })),
-                Object(v.createSelector)(
-                  _.d,
+                Object(y.createSelector)(
+                  C.d,
                   x,
                   function (t) {
-                    return e(Object(_.d)(t)).selectPageConfiguration(t)
+                    return e(Object(C.d)(t)).selectPageConfiguration(t)
                   },
                   function (e, n, a) {
                     var r
@@ -243,47 +316,47 @@
             var e, t
           })
           .withAnalytics({ page: 'guide', section: 'main' }),
-        k = n('FIs5'),
-        O = n('yiKp'),
-        C = n.n(O),
-        B = n('QIgh'),
-        L = n('8UdT'),
-        R = n('iu0J'),
-        P = n('PH3B'),
-        j = n('+o05'),
+        P = n('FIs5'),
+        k = n('yiKp'),
+        O = n.n(k),
+        S = n('QIgh'),
+        B = n('8UdT'),
+        L = n('iu0J'),
+        j = n('PH3B'),
+        R = n('+o05'),
         I = n('XtkE'),
-        H = C()(
-          C()({}, B.default),
+        H = O()(
+          O()({}, S.b),
           {},
           ((a = {}),
-          m()(a, L.b.EventSummary, Object(R.a)({})),
-          m()(a, L.b.News, P.a),
-          m()(a, L.b.ScoreEventSummary, j.a),
-          m()(a, L.b.Trend, Object(I.a)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' })),
+          m()(a, B.b.EventSummary, Object(L.a)({})),
+          m()(a, B.b.News, j.a),
+          m()(a, B.b.ScoreEventSummary, R.a),
+          m()(a, B.b.Trend, Object(I.a)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' })),
           a),
         ),
-        M = n('0+qk'),
-        F = n('3XMw'),
-        X = n.n(F),
-        K = n('VTxf'),
-        q = n('rJoH'),
-        N = n('7BdX'),
-        A = n('7nmT'),
-        D = n.n(A),
-        J = n('UZjl'),
-        V = n('+Bsv'),
-        U = n('LsPn'),
-        W = n('aITJ'),
+        K = n('0+qk'),
+        X = n('3XMw'),
+        M = n.n(X),
+        F = n('VTxf'),
+        D = n('rJoH'),
+        J = n('7BdX'),
+        q = n('7nmT'),
+        N = n.n(q),
+        Y = n('UZjl'),
+        z = n('+Bsv'),
+        A = n('LsPn'),
+        V = n('aITJ'),
         Q = n('v6aA'),
-        Y = X.a.fcf3e54b,
-        G = X.a.ead349a7,
-        z = X.a.a19ce06f,
-        Z = X.a.a9ae1e78,
+        U = M.a.fcf3e54b,
+        W = M.a.ead349a7,
+        G = M.a.a19ce06f,
+        Z = M.a.a9ae1e78,
         $ = function () {
-          return g.a.createElement(K.a, null)
+          return g.a.createElement(F.a, null)
         },
         ee = function () {
-          return g.a.createElement(k.a, { message: z })
+          return g.a.createElement(P.a, { message: G })
         },
         te = 600,
         ne = 315,
@@ -297,20 +370,20 @@
             for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              m()(u()(e), '_getTabLink', function (e) {
+              m()(s()(e), '_getTabLink', function (e) {
                 return { pathname: '/explore/tabs/'.concat(e) }
               }),
-              m()(u()(e), '_handleSettingsClick', function (t) {
+              m()(s()(e), '_handleSettingsClick', function (t) {
                 e.props.analytics.scribe({ element: 'settings_button', action: 'click' })
               }),
-              m()(u()(e), '_handleBackClick', function () {
+              m()(s()(e), '_handleBackClick', function () {
                 e.props.history.goBack()
               }),
-              m()(u()(e), '_setSearchBoxRef', function (t) {
+              m()(s()(e), '_setSearchBoxRef', function (t) {
                 e._searchBoxRef = t
               }),
-              m()(u()(e), '_handleSoftLeftClick', function () {
-                var t = D.a.findDOMNode(e._searchBoxRef)
+              m()(s()(e), '_handleSoftLeftClick', function () {
+                var t = N.a.findDOMNode(e._searchBoxRef)
                 t && t instanceof window.HTMLElement && t.querySelector('input').focus()
               }),
               e
@@ -327,26 +400,26 @@
                     a = e.initialTabModule,
                     r = e.location,
                     i = e.selectedTabId,
-                    o = g.a.createElement(M.a, { history: n }),
+                    o = g.a.createElement(K.a, { history: n }),
                     c = this.context.featureSwitches.isTrue('responsive_web_trends_setting_new_endpoints')
                       ? '/settings/explore'
                       : '/settings/trends',
-                    s = g.a.createElement(V.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
-                    u = r.state && r.state.searchFocused,
-                    l = g.a.createElement(E.a, { withSearchBox: !1, withTrends: !1 })
+                    l = g.a.createElement(z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
+                    s = r.state && r.state.searchFocused,
+                    u = g.a.createElement(v.a, { withSearchBox: !1, withTrends: !1 })
                   return g.a.createElement(
                     g.a.Fragment,
                     null,
-                    g.a.createElement(q.a, {
+                    g.a.createElement(D.a, {
                       canonical: 'https://twitter.com/explore',
-                      description: G,
+                      description: W,
                       image: ae,
                       imageH: ne,
                       imageW: te,
-                      title: Y,
+                      title: U,
                       type: 'article',
                     }),
-                    g.a.createElement(J.a, {
+                    g.a.createElement(Y.a, {
                       behavioralEventViewType: 'guide',
                       entryConfiguration: H,
                       fab: o,
@@ -354,22 +427,22 @@
                       history: n,
                       initialPageNamespace: t.contextualScribeNamespace,
                       module: a,
-                      onBackClick: u ? this._handleBackClick : void 0,
-                      prerollDisplayLocation: N.c.OTHER,
+                      onBackClick: s ? this._handleBackClick : void 0,
+                      prerollDisplayLocation: J.c.OTHER,
                       renderEmptyState: $,
                       renderUnavailable: ee,
-                      rightControl: s,
+                      rightControl: l,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: i,
-                      sidebarContent: l,
-                      timelinePrefix: w.b,
-                      title: Y,
+                      sidebarContent: u,
+                      timelinePrefix: E.b,
+                      title: U,
                       withBottomLoginSignupBar: !0,
                       withDeferredView: !0,
                       withSearchBox: !0,
                     }),
-                    W.b.isKaiOS()
-                      ? g.a.createElement(U.a, { leftText: Z, onLeftClick: this._handleSoftLeftClick })
+                    V.b.isKaiOS()
+                      ? g.a.createElement(A.a, { leftText: Z, onLeftClick: this._handleSoftLeftClick })
                       : null,
                   )
                 },
@@ -379,7 +452,7 @@
           )
         })(g.a.Component)
       m()(re, 'contextType', Q.a)
-      t.default = S(re)
+      t.default = _(re)
     },
     rA3t: function (e, t, n) {
       'use strict'
@@ -392,9 +465,9 @@
         i = n('ERkP'),
         o = n.n(i),
         c = n('v6aA'),
-        s = n('es0u'),
-        u = n('mw9i'),
-        l = n('s14A'),
+        l = n('es0u'),
+        s = n('mw9i'),
+        u = n('s14A'),
         d = n('dwig'),
         f = n('0+qk'),
         p = n('WpDa'),
@@ -415,22 +488,22 @@
         }),
         h = n('3XMw'),
         g = n.n(h),
-        E = n('rJoH'),
-        v = n('yoO3'),
-        w = n('7nmT'),
-        y = n.n(w),
-        _ = n('fTQJ'),
+        v = n('rJoH'),
+        y = n('yoO3'),
+        E = n('7nmT'),
+        w = n.n(E),
+        C = n('fTQJ'),
         T = n('+Bsv'),
         x = n('VS6U'),
-        S = n('LsPn'),
-        k = n('aITJ'),
-        O = n('Irs7'),
-        C = g.a.fcf3e54b,
-        B = g.a.ead349a7,
-        L = g.a.a9ae1e78,
-        R = { page: 'guide', section: 'main' },
-        P = 600,
-        j = 315,
+        _ = n('LsPn'),
+        P = n('aITJ'),
+        k = n('Irs7'),
+        O = g.a.fcf3e54b,
+        S = g.a.ead349a7,
+        B = g.a.a9ae1e78,
+        L = { page: 'guide', section: 'main' },
+        j = 600,
+        R = 315,
         I = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
         H = function (e) {
           var t = e.analytics,
@@ -442,64 +515,64 @@
             h = i.isTrue('responsive_web_trends_setting_new_endpoints') ? '/settings/explore' : '/settings/trends',
             g = o.a.useCallback(
               function (e) {
-                t.scribe(r()(r()({}, R), {}, { element: 'settings_button', action: 'click' }))
+                t.scribe(r()(r()({}, L), {}, { element: 'settings_button', action: 'click' }))
               },
               [t],
             ),
-            w = o.a.useCallback(
+            E = o.a.useCallback(
               function () {
                 n.goBack({ backLocation: '/' })
               },
               [n],
             ),
-            O = o.a.useCallback(
+            k = o.a.useCallback(
               function () {
-                var e = y.a.findDOMNode(p.current)
+                var e = w.a.findDOMNode(p.current)
                 e && e instanceof window.HTMLElement && e.querySelector('input').focus()
               },
               [p],
             ),
             H = o.a.createElement(f.a, { history: n }),
-            M = o.a.createElement(T.a, { onPress: g, pullRight: !0, to: h }),
-            F = o.a.createElement(s.a, { withSearchBox: !1, withTrends: !1 })
+            K = o.a.createElement(T.a, { onPress: g, pullRight: !0, to: h }),
+            X = o.a.createElement(l.a, { withSearchBox: !1, withTrends: !1 })
           return o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
-              v.a,
+              y.a,
               { behavioralEventViewType: 'guide' },
-              o.a.createElement(E.a, {
+              o.a.createElement(v.a, {
                 canonical: 'https://twitter.com/explore',
-                description: B,
+                description: S,
                 image: I,
-                imageH: j,
-                imageW: P,
-                title: C,
+                imageH: R,
+                imageW: j,
+                title: O,
                 type: 'article',
               }),
               o.a.createElement(x.a, {
                 history: n,
-                onBackClick: b ? w : void 0,
+                onBackClick: b ? E : void 0,
                 primaryContent: o.a.createElement(
                   d.a,
-                  { component: u.a, fab: H },
-                  o.a.createElement(l.a, null, o.a.createElement(_.a, { module: m, title: C })),
+                  { component: s.a, fab: H },
+                  o.a.createElement(u.a, null, o.a.createElement(C.a, { module: m, title: O })),
                 ),
-                rightControl: M,
+                rightControl: K,
                 searchBoxRef: function (e) {
                   p.current = e
                 },
                 secondaryBar: null,
-                sidebarContent: F,
-                title: C,
+                sidebarContent: X,
+                title: O,
                 withBottomLoginSignupBar: !0,
                 withSearchBox: !0,
               }),
             ),
-            k.b.isKaiOS() ? o.a.createElement(S.a, { leftText: L, onLeftClick: O }) : null,
+            P.b.isKaiOS() ? o.a.createElement(_.a, { leftText: B, onLeftClick: k }) : null,
           )
         }
-      t.default = Object(O.a)(H)
+      t.default = Object(k.a)(H)
     },
   },
 ])

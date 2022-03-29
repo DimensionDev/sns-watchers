@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [11],
+  [10],
   {
     '5emT': function (e, t, n) {
       'use strict'
@@ -9,7 +9,7 @@
         r = n.n(o),
         s = n('Lsrn'),
         l = n('k/Ka'),
-        c = function () {
+        u = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(l.a)(
             'svg',
@@ -34,7 +34,7 @@
             ),
           )
         }
-      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
+      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
     },
     '6oVL': function (e, t, n) {
       'use strict'
@@ -44,8 +44,8 @@
         r = n.n(o),
         s = n('Y9Ll'),
         l = n.n(s),
-        c = n('1Pcy'),
-        u = n.n(c),
+        u = n('1Pcy'),
+        c = n.n(u),
         d = n('5Yy7'),
         p = n.n(d),
         h = n('2VqO'),
@@ -78,21 +78,21 @@
             for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              y()(u()(e), '_mobileLoginToken', S.a.v1().replace(/-/g, '')),
-              y()(u()(e), '_handleSubmit', function () {
+              y()(c()(e), '_mobileLoginToken', S.a.v1().replace(/-/g, '')),
+              y()(c()(e), '_handleSubmit', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.onSubmit
                 if ((n.scribe({ action: 'submit' }), C.a.flushHTMLCache(), e._setLoginCookie(), a))
                   return a(e._form.elements), !1
               }),
-              y()(u()(e), '_handleSubmitButtonClick', function () {
+              y()(c()(e), '_handleSubmitButtonClick', function () {
                 !1 !== e._handleSubmit() && e._form.submit()
               }),
-              y()(u()(e), '_setFormRef', function (t) {
+              y()(c()(e), '_setFormRef', function (t) {
                 t && (e._form = t)
               }),
-              y()(u()(e), '_setLoginCookie', function () {
+              y()(c()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
                   Object(I.e)(x.q, e._mobileLoginToken, {
@@ -128,8 +128,8 @@
                     r = e.loginReturnPath,
                     s = e.submitButtonDisabled,
                     l = e.submitButtonLabel,
-                    c = e.submitButtonSize,
-                    u = e.submitButtonStyle,
+                    u = e.submitButtonSize,
+                    c = e.submitButtonStyle,
                     d = e.submitButtonType,
                     p = 'string' == typeof r ? r.split('?') : [],
                     h = i()(p, 2),
@@ -161,8 +161,8 @@
                               {
                                 disabled: s,
                                 onPress: this._handleSubmitButtonClick,
-                                size: c,
-                                style: u,
+                                size: u,
+                                style: c,
                                 testID: L,
                                 type: d,
                               },
@@ -220,9 +220,9 @@
         r = n.n(o),
         s = n('ERkP'),
         l = n.n(s),
-        c = n('t62R'),
-        u = n('3XMw'),
-        d = n.n(u),
+        u = n('t62R'),
+        c = n('3XMw'),
+        d = n.n(c),
         p = (n('yH/f'), n('ho0z'), n('p+r5')),
         h = ['name'],
         m = Object.freeze({ password: 'password', username: 'username_or_email' }),
@@ -237,7 +237,7 @@
         y = ['helperText', 'label', 'withForgotPasswordLink'],
         g = d.a.d1091f50,
         f = l.a.createElement(
-          c.b,
+          u.b,
           { link: { external: !0, pathname: 'https://twitter.com/account/begin_password_reset', openInSameFrame: !0 } },
           g,
         ),
@@ -269,12 +269,12 @@
             a = e.withEmailDisabled,
             o = e.withPhoneDisabled,
             s = e.withUsernameDisabled,
-            c = r()(e, I),
-            u = l.a.useContext(w.a).featureSwitches,
+            u = r()(e, I),
+            c = l.a.useContext(w.a).featureSwitches,
             d = L
           return (
             s ? (d = k) : o ? (d = E) : a && (d = S),
-            l.a.createElement(b, i()({}, c, { autoFocus: t, label: n || d, name: m.username, type: C(u) }))
+            l.a.createElement(b, i()({}, u, { autoFocus: t, label: n || d, name: m.username, type: C(c) }))
           )
         }
       T.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
@@ -292,8 +292,8 @@
         r = n.n(o),
         s = n('VrFO'),
         l = n.n(s),
-        c = n('Y9Ll'),
-        u = n.n(c),
+        u = n('Y9Ll'),
+        c = n.n(u),
         d = n('1Pcy'),
         p = n.n(d),
         h = n('5Yy7'),
@@ -415,12 +415,13 @@
                 var t = e.length
                 return a._isInvalidNumber() && (t = 1), t
               }),
-              f()(p()(a), '_handleBlur', function (e) {
-                var t = a.props.onBlur,
-                  n = e.currentTarget.value,
+              f()(p()(a), '_handleBlur', function () {
+                var e,
+                  t = a.props.onBlur,
+                  n = (null === (e = a._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   i = a._calculateLength(n),
                   o = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: i, actualCount: o }), t && t(e)
+                a.setState({ isFocused: !1, displayCount: i, actualCount: o }), t && t()
               }),
               f()(p()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,
@@ -518,7 +519,7 @@
             )
           }
           return (
-            u()(
+            c()(
               n,
               [
                 {
@@ -532,8 +533,8 @@
                       r = e.maxLength,
                       s = e.onChange,
                       l = e.validLength,
-                      c = e.value
-                    ;(l === i && n === r && !!a === !!s && ('string' == typeof o) === ('string' == typeof c)) ||
+                      u = e.value
+                    ;(l === i && n === r && !!a === !!s && ('string' == typeof o) === ('string' == typeof u)) ||
                       this._checkComponentPropsUsageCorrectness(this.props)
                   },
                 },

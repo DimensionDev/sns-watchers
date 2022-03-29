@@ -1,78 +1,89 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [102],
+  [101],
   {
-    '/uhu': function (e, t, a) {
+    '/uhu': function (e, t, n) {
       'use strict'
-      a.r(t),
-        a.d(t, 'TRUSTED_FRIENDS_LEARN_MORE_URL', function () {
-          return E
+      n.r(t),
+        n.d(t, 'TRUSTED_FRIENDS_LEARN_MORE_URL', function () {
+          return k
         }),
-        a.d(t, 'TrustedFriendsManagementScreen', function () {
-          return g
+        n.d(t, 'TrustedFriendsManagementScreen', function () {
+          return _
         })
-      a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('KqXw'), a('WNMA')
-      var n = a('ERkP'),
-        r = a.n(n),
-        c = a('jHSc'),
-        s = a('3XMw'),
-        i = a.n(s),
-        l = a('/de5'),
-        u = a('wytG'),
-        d = a('7JQg'),
-        o = a('k/OQ'),
-        m = a('zCf4'),
-        b = i.a.ad964e3f,
-        f = i.a.d0748dae,
-        p = i.a.ef8f5d90,
-        E = 'https://help.twitter.com/using-twitter/twitter-circle',
+      n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('KqXw'), n('WNMA')
+      var a = n('ERkP'),
+        c = n.n(a),
+        r = n('jHSc'),
+        s = n('3XMw'),
+        i = n.n(s),
+        l = n('/de5'),
+        u = n('wytG'),
+        o = n('7JQg'),
+        d = n('k/OQ'),
+        m = n('Irs7'),
+        b = n('zCf4'),
+        f = i.a.ad964e3f,
+        p = i.a.d0748dae,
+        E = i.a.ef8f5d90,
+        k = 'https://help.twitter.com/using-twitter/twitter-circle',
         h = { page: 'trusted_friends_edit' },
         w = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(7), a.e(111)]).then(a.bind(null, 'gzLP'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'gzLP'))
         }),
-        k = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(7), a.e(111)]).then(a.bind(null, 'W8UM'))
+        g = Object(u.a)(function () {
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'W8UM'))
         }),
-        g = function (e) {
+        _ = function (e) {
           var t = e.history,
-            a = e.location,
-            n = e.match.params.trustedFriendsId,
-            s = r.a.useCallback(
+            n = e.location,
+            a = e.match.params.trustedFriendsId,
+            s = Object(m.b)(),
+            i = c.a.useCallback(
               function () {
-                if (!n) return null
+                if (!a) return null
                 var e = [
-                  { to: { pathname: '/i/circles/'.concat(n, '/members'), state: a.state }, label: f, key: f },
-                  { to: { pathname: '/i/circles/'.concat(n, '/members/suggested'), state: a.state }, label: p, key: p },
+                  { to: { pathname: '/i/circles/'.concat(a, '/members'), state: n.state }, label: p, key: p },
+                  { to: { pathname: '/i/circles/'.concat(a, '/members/suggested'), state: n.state }, label: E, key: E },
                 ]
-                return r.a.createElement(o.a, { accessibilityLabel: b, links: e })
+                return c.a.createElement(d.a, { accessibilityLabel: f, links: e })
               },
-              [a, n],
+              [n, a],
             )
-          return r.a.createElement(
-            d.c,
+          return c.a.createElement(
+            o.c,
             { namespace: h },
-            r.a.createElement(
-              c.b,
-              { backButtonType: 'close', history: t, secondaryBar: s(), title: b },
-              n
-                ? r.a.createElement(
-                    m.d,
+            c.a.createElement(
+              r.b,
+              {
+                backButtonType: 'close',
+                history: t,
+                onBackClick: function () {
+                  s.scribe({ element: 'trusted_friends', component: 'list_dismiss_button', action: 'click' }),
+                    t.goBack()
+                },
+                secondaryBar: i(),
+                title: f,
+              },
+              a
+                ? c.a.createElement(
+                    b.d,
                     null,
-                    r.a.createElement(
-                      m.b,
-                      { exact: !0, path: '/i/circles/'.concat(n, '/members') },
-                      r.a.createElement(w, { trustedFriendsId: n }),
+                    c.a.createElement(
+                      b.b,
+                      { exact: !0, path: '/i/circles/'.concat(a, '/members') },
+                      c.a.createElement(w, { trustedFriendsId: a }),
                     ),
-                    r.a.createElement(
-                      m.b,
-                      { exact: !0, path: '/i/circles/'.concat(n, '/members/suggested') },
-                      r.a.createElement(k, { trustedFriendsId: n }),
+                    c.a.createElement(
+                      b.b,
+                      { exact: !0, path: '/i/circles/'.concat(a, '/members/suggested') },
+                      c.a.createElement(g, { trustedFriendsId: a }),
                     ),
                   )
-                : r.a.createElement(l.b, e),
+                : c.a.createElement(l.b, e),
             ),
           )
         }
-      t.default = g
+      t.default = _
     },
   },
 ])
