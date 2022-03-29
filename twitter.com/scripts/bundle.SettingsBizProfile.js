@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [88],
+  [89],
   {
     '3JAx': function (e, t, n) {
       'use strict'
@@ -538,7 +538,7 @@
           })
           .withAnalytics(),
         K = n('Dtul'),
-        N =
+        U =
           (n('iKE+'),
           n('1LXv'),
           n('e/gN'),
@@ -547,7 +547,7 @@
           n('3uku'),
           n('dlmX'),
           new RegExp('^[a-zA-Z0-9_\\-+\\.!\\&]+@(?:[a-zA-Z0-9\\-_]+\\.)+[a-zA-Z]{2,63}$')),
-        U = new RegExp('^[0-9]{10}$'),
+        N = new RegExp('^[0-9]{10}$'),
         Y = new RegExp('^[0-9]{5}$'),
         j = [
           'category',
@@ -570,12 +570,12 @@
           phoneNumber: function (e) {
             return e.startsWith('+') || e.startsWith('(1)') || e.startsWith('00')
               ? 'Please enter phone number without country code'
-              : U.test(e)
+              : N.test(e)
               ? void 0
               : 'Please enter a valid phone number'
           },
           email: function (e) {
-            if (!N.test(e)) return 'Please enter a valid email'
+            if (!U.test(e)) return 'Please enter a valid email'
           },
           zipCode: function (e) {
             if (!Y.test(e)) return 'Zip code must be 5 digits length'
@@ -852,10 +852,9 @@
                 e.setState(y()({}, t, n))
               }),
               y()(u()(e), '_handleOnBlurEventForBizProfiles', function (t) {
-                return function () {
-                  var n = q(t, e.state[t], e.state.errors)
-                  e.setState({ errors: n })
-                }
+                var n = t.currentTarget,
+                  a = q(n.name, n.value, e.state.errors)
+                e.setState({ errors: a })
               }),
               y()(u()(e), '_handleHtmlEventForBizProfiles', function (t) {
                 var n = t.currentTarget,
@@ -1040,7 +1039,7 @@
                         invalid: m.has('businessName'),
                         label: 'Business name',
                         name: 'businessName',
-                        onBlur: this._handleOnBlurEventForBizProfiles('businessName'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
@@ -1050,7 +1049,7 @@
                         invalid: m.has('category'),
                         label: 'Type of business (e.g., restaurant, retail store, agency)',
                         name: 'category',
-                        onBlur: this._handleOnBlurEventForBizProfiles('category'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
@@ -1065,7 +1064,7 @@
                         invalid: m.has('email'),
                         label: 'Business email',
                         name: 'email',
-                        onBlur: this._handleOnBlurEventForBizProfiles('email'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                         type: 'email',
@@ -1103,7 +1102,7 @@
                           label: 'Phone number',
                           maxLength: 10,
                           name: 'phoneNumber',
-                          onBlur: this._handleOnBlurEventForBizProfiles('phoneNumber'),
+                          onBlur: this._handleOnBlurEventForBizProfiles,
                           onChange: this._handleHtmlEventForBizProfiles,
                           showValidationIcon: !0,
                           style: we.expand,
@@ -1136,7 +1135,7 @@
                         invalid: m.has('website'),
                         label: 'Business website',
                         name: 'website',
-                        onBlur: this._handleOnBlurEventForBizProfiles('website'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                         type: 'url',
@@ -1152,7 +1151,7 @@
                         invalid: m.has('address'),
                         label: 'Street address',
                         name: 'address',
-                        onBlur: this._handleOnBlurEventForBizProfiles('address'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
@@ -1162,7 +1161,7 @@
                         invalid: m.has('city'),
                         label: 'City',
                         name: 'city',
-                        onBlur: this._handleOnBlurEventForBizProfiles('city'),
+                        onBlur: this._handleOnBlurEventForBizProfiles,
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
@@ -1186,7 +1185,7 @@
                           invalid: m.has('zipCode'),
                           label: 'ZIP/Postal code',
                           name: 'zipCode',
-                          onBlur: this._handleOnBlurEventForBizProfiles('zipCode'),
+                          onBlur: this._handleOnBlurEventForBizProfiles,
                           onChange: this._handleHtmlEventForBizProfiles,
                           showValidationIcon: !0,
                           style: we.expand,
@@ -1583,7 +1582,7 @@
     'p+r5': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return N
+        return U
       })
       n('yiKp')
       var a = n('97Jx'),
@@ -1653,7 +1652,7 @@
         },
         W = I.a.de540c32,
         K = I.a.b4abfdb3,
-        N = (function (e) {
+        U = (function (e) {
           m()(n, e)
           var t = y()(n)
           function n(e) {
@@ -1671,7 +1670,7 @@
                 p()(a),
                 '_getTextInputStyle',
                 Object(B.a)(function (e) {
-                  return [U.root, !e && U.disabled]
+                  return [N.root, !e && N.disabled]
                 }),
               ),
               b()(p()(a), '_getTextInputType', function () {
@@ -1715,13 +1714,12 @@
                 var t = e.length
                 return a._isInvalidNumber() && (t = 1), t
               }),
-              b()(p()(a), '_handleBlur', function () {
-                var e,
-                  t = a.props.onBlur,
-                  n = (null === (e = a._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
+              b()(p()(a), '_handleBlur', function (e) {
+                var t = a.props.onBlur,
+                  n = e.currentTarget.value,
                   o = a._calculateLength(n),
                   r = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: o, actualCount: r }), t && t()
+                a.setState({ isFocused: !1, displayCount: o, actualCount: r }), t && t(e)
               }),
               b()(p()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,
@@ -1938,11 +1936,11 @@
                       r = (e.style, e.type, e.validLength, i()(e, A))
                     return _.a.createElement(
                       D.a,
-                      { style: U.container },
+                      { style: N.container },
                       t && !this._isLabelLarge() ? this._renderIcon() : null,
                       _.a.createElement(
                         E.b,
-                        { size: 'headline1', style: U.wrapper },
+                        { size: 'headline1', style: N.wrapper },
                         _.a.createElement(
                           H.a,
                           o()({}, r, {
@@ -2104,9 +2102,9 @@
             n
           )
         })(_.a.Component)
-      b()(N, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
-        (N.propTypes = {})
-      var U = z.a.create(function (e) {
+      b()(U, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
+        (U.propTypes = {})
+      var N = z.a.create(function (e) {
           return {
             container: {
               flexDirection: 'row',

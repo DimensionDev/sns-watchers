@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [84, 7, 9, 12, 18, 78],
+  [85, 7, 9, 10, 19, 79],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -2752,7 +2752,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -12918,7 +12918,7 @@
                       var r = Object(fn.b)(a),
                         i = Object(fn.i)(a),
                         c = fl({ scheduleDate: r, scheduleTime: i })
-                      t({ text: c, action: { label: hl, link: { pathname: '/compose/tweet/unsent/scheduled' } } }),
+                      t({ text: c, action: { label: hl, link: '/compose/tweet/unsent/scheduled' } }),
                         l._scribeTweetSent(n[0], s()(s()({}, e), {}, { id_str: e.scheduled_id_str }), {
                           isScheduled: !0,
                         })
@@ -12938,7 +12938,7 @@
                 })
                   .then(function (e) {
                     l.setState({ showDiscardTweetConfirmation: !1 }),
-                      t({ text: ml, action: { label: hl, link: { pathname: '/compose/tweet/unsent/drafts' } } }),
+                      t({ text: ml, action: { label: hl, link: '/compose/tweet/unsent/drafts' } }),
                       l._scribeTweetSent(n[0], s()(s()({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
                       l._updateConvoCardState(),
                       l._close()
@@ -13107,7 +13107,7 @@
                       s = { label: hl, link: void 0, onAction: void 0 }
                     if (o || !T) {
                       var u = o ? e[0].in_reply_to_status_id_str : e[0].id_str
-                      s.link = { pathname: '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '') }
+                      s.link = '/'.concat(t ? t.screen_name : 'i', '/status/').concat(u || '')
                     } else s.onAction = Object(Go.a)(d, m, D)
                     n({ text: T ? il : a, action: s }),
                       l.isInlineReply && l.setState({ focused: !1 }),
@@ -13437,45 +13437,40 @@
                 return function (t) {
                   var a,
                     r,
-                    i,
-                    o,
-                    s = l.props,
-                    c = s.addMedia,
-                    d = s.addToast,
-                    u = s.composerData,
-                    p = s.dataSaverMode,
-                    m = s.preUploadMedia,
-                    f = s.processMultipleMedia,
-                    g = s.removeMediaUpload,
-                    v = u[e],
-                    y = v.pollActive,
-                    b = Object(Wo.e)(
+                    i = l.props,
+                    o = i.addMedia,
+                    s = i.addToast,
+                    c = i.composerData,
+                    d = i.dataSaverMode,
+                    u = i.preUploadMedia,
+                    p = i.processMultipleMedia,
+                    m = i.removeMediaUpload,
+                    f = c[e],
+                    g = f.pollActive,
+                    v = Object(Wo.e)(
                       null === (a = h()(l)) || void 0 === a || null === (r = a.context) || void 0 === r
                         ? void 0
                         : r.userClaims,
-                      null === (i = h()(l)) || void 0 === i || null === (o = i.context) || void 0 === o
-                        ? void 0
-                        : o.featureSwitches,
                     )
-                  y ||
-                    c(t, { location: Wo.d.Tweet, canUploadLongVideo: b }).then(function (t) {
+                  g ||
+                    o(t, { location: Wo.d.Tweet, canUploadLongVideo: v }).then(function (t) {
                       var a = t.map(function (e) {
                         return e.id
                       })
-                      if (n._validateMedia(v, t)) {
-                        var r = v.media.map(function (e) {
+                      if (n._validateMedia(f, t)) {
+                        var r = f.media.map(function (e) {
                           return e.id
                         })
                         l._updateSingleComposer({ mediaIds: Object(Uo.a)(r.concat(a)) }, e),
-                          f(t, { onFailure: l._handleMediaRemoveFactory(e) }).then(function (e) {
-                            p ||
-                              m(
+                          p(t, { onFailure: l._handleMediaRemoveFactory(e) }).then(function (e) {
+                            d ||
+                              u(
                                 e.map(function (e) {
                                   return e.id
                                 }),
                               )
                           })
-                      } else d({ text: yl }), g(a)
+                      } else s({ text: yl }), m(a)
                     })
                 }
               }),
@@ -14750,7 +14745,7 @@
         u = Object(l.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(209)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(210)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -15140,13 +15135,12 @@
                 var t = e.length
                 return a._isInvalidNumber() && (t = 1), t
               }),
-              y()(p()(a), '_handleBlur', function () {
-                var e,
-                  t = a.props.onBlur,
-                  n = (null === (e = a._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
+              y()(p()(a), '_handleBlur', function (e) {
+                var t = a.props.onBlur,
+                  n = e.currentTarget.value,
                   r = a._calculateLength(n),
                   i = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t()
+                a.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t(e)
               }),
               y()(p()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,
@@ -15624,7 +15618,7 @@
         T = n('RuTB'),
         x = Object(E.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(8), n.e(178)])
+            return Promise.all([n.e(0), n.e(8), n.e(179)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }

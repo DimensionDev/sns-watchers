@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [18],
+  [19],
   {
     '21U8': function (e, t, n) {
       'use strict'
@@ -930,13 +930,12 @@
                 var t = e.length
                 return a._isInvalidNumber() && (t = 1), t
               }),
-              y()(p()(a), '_handleBlur', function () {
-                var e,
-                  t = a.props.onBlur,
-                  n = (null === (e = a._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
+              y()(p()(a), '_handleBlur', function (e) {
+                var t = a.props.onBlur,
+                  n = e.currentTarget.value,
                   o = a._calculateLength(n),
                   i = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: o, actualCount: i }), t && t()
+                a.setState({ isFocused: !1, displayCount: o, actualCount: i }), t && t(e)
               }),
               y()(p()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [11],
+  [12],
   {
     '3EFP': function (e, t, n) {
       'use strict'
@@ -35,7 +35,7 @@
           return z
         }),
         n.d(t, 'styles', function () {
-          return q
+          return V
         })
       var r = n('VrFO'),
         a = n.n(r),
@@ -61,16 +61,16 @@
         C = n('WPfJ'),
         E = n('N5qz'),
         S = n('Es6L'),
-        T = n('OEYw'),
-        D = n('GZwR'),
+        D = n('OEYw'),
+        T = n('GZwR'),
         k = n('MWbm'),
         R = n('v6aA'),
         O = n('rHpw'),
         L = n('xoZN'),
-        F = n('6OUF'),
-        P = n('pf9B'),
-        U = n('cHvH'),
-        N = n('oEoC'),
+        P = n('6OUF'),
+        U = n('pf9B'),
+        N = n('cHvH'),
+        F = n('oEoC'),
         j = I.a.f065ba8c,
         M = { viewType: 'typeahead_input' },
         A = function (e) {
@@ -118,22 +118,22 @@
                   { behavioralEventContext: M },
                   v.a.createElement(
                     k.a,
-                    { onLayout: o._handleLayout, ref: o._setRootContainerNode, style: [q.root, m] },
+                    { onLayout: o._handleLayout, ref: o._setRootContainerNode, style: [V.root, m] },
                     v.a.createElement(
                       L.a,
-                      { onKeyDown: o._handleKeyDown, style: q.keydownInputListener },
+                      { onKeyDown: o._handleKeyDown, style: V.keydownInputListener },
                       v.a.createElement(
                         _.a,
                         {
                           accessibilityLabel: u,
                           accessibilityRole: 'search',
                           onSubmit: o._handleFormSubmit,
-                          style: q.wrapper,
+                          style: V.wrapper,
                         },
                         v.a.createElement(
                           k.a,
                           { ref: o._setInputContainerNode, style: s },
-                          v.a.createElement(F.a, {
+                          v.a.createElement(P.a, {
                             Icon: x.a,
                             ariaActiveDescendant: o.state.ariaDescendantId,
                             ariaAutocomplete: 'list',
@@ -164,7 +164,7 @@
                         ),
                         v.a.createElement(
                           k.a,
-                          { style: [q.typeaheadContainer, !p && q.topBorder] },
+                          { style: [V.typeaheadContainer, !p && V.topBorder] },
                           b ? o._renderDropdown(t) : null,
                         ),
                       ),
@@ -196,35 +196,34 @@
                   x = t.renderUserDecoration,
                   C = t.selectedItems,
                   E = t.shouldDeferPrefetch,
-                  D = t.source,
-                  k = t.trustedFriendsId,
-                  R = t.withFixedPositioning,
-                  L = t.withSectionDivider,
-                  F = e >= O.a.theme.breakpoints.medium || Object(S.a)(),
+                  T = t.source,
+                  k = t.withFixedPositioning,
+                  R = t.withSectionDivider,
+                  L = e >= O.a.theme.breakpoints.medium || Object(S.a)(),
                   P = o.state,
                   U = P.dropdownOffset,
-                  j = P.query,
-                  M = p
-                    ? q.modalDropdown
+                  N = P.query,
+                  j = p
+                    ? V.modalDropdown
                     : [
-                        q.dropdown,
-                        !F && R && U ? [Object(N.d)(U), { height: 'calc(100vh - '.concat(U, 'px)') }] : null,
-                        (F || f) && q.wideModeDropdown,
+                        V.dropdown,
+                        !L && k && U ? [Object(F.d)(U), { height: 'calc(100vh - '.concat(U, 'px)') }] : null,
+                        (L || f) && V.wideModeDropdown,
                         o._withNewTypeaheadUI && d && A(e),
-                        f && q.shortModeDropdown,
-                        !F && f && q.shortModeDropdownMobile,
+                        f && V.shortModeDropdown,
+                        !L && f && V.shortModeDropdownMobile,
                       ],
-                  H = {
+                  M = {
                     ariaDescendantId: o.state.ariaDescendantId,
                     domId: o._dropdownDomId,
                     onDismiss: o._handleOnEmptyStateDismiss,
                     onItemFocusChanged: o._handleItemFocusChanged,
                     ref: o._handleDropdownRef,
-                    style: M,
+                    style: j,
                   }
-                return _ && !j
-                  ? _(H)
-                  : v.a.createElement(T.a, {
+                return _ && !N
+                  ? _(M)
+                  : v.a.createElement(D.a, {
                       ariaDescendantId: o.state.ariaDescendantId,
                       communityId: n,
                       domId: o._dropdownDomId,
@@ -241,7 +240,7 @@
                       onItemFocusChanged: o._handleItemFocusChanged,
                       onItemsChanged: y,
                       orderResults: b,
-                      query: j,
+                      query: N,
                       ref: o._handleDropdownRef,
                       renderCallout: g,
                       renderHeader: w,
@@ -249,10 +248,9 @@
                       renderUserDecoration: x,
                       selectedItems: C,
                       shouldDeferPrefetch: E,
-                      source: D,
-                      style: M,
-                      trustedFriendsId: k,
-                      withSectionDivider: L,
+                      source: T,
+                      style: j,
+                      withSectionDivider: R,
                     })
               }),
               h()(c()(o), '_dismissDropdown', function () {
@@ -286,7 +284,7 @@
                 ;(o._inputContainerNode = e || null), o._inputContainerNode && o._updatePosition()
               }),
               h()(c()(o), '_handleFocusChange', function (e) {
-                var t = P.a.getCount() > 0
+                var t = U.a.getCount() > 0
                 ;(o._rootContainerNode && o._rootContainerNode.contains(e.target)) ||
                   t ||
                   (o.state.showTypeaheadDropdown && o._dismissDropdown())
@@ -294,7 +292,7 @@
               h()(c()(o), '_handleKeyDown', function (e) {
                 var t = e.key,
                   n = o.state.showTypeaheadDropdown
-                if (Object(N.g)(e)) {
+                if (Object(F.g)(e)) {
                   if (t === m.a) return o._focusNext(), void e.preventDefault()
                   if (t === m.b) return o._focusPrevious(), void e.preventDefault()
                   if (t === m.d) return o._dismissDropdown(), void e.preventDefault()
@@ -306,7 +304,7 @@
                 }
               }),
               h()(c()(o), '_handleItemFocusChanged', function () {
-                o.setState({ ariaDescendantId: Object(N.b)() })
+                o.setState({ ariaDescendantId: Object(F.b)() })
               }),
               h()(c()(o), '_handleInputClear', function () {
                 o.setQuery('')
@@ -350,7 +348,7 @@
               h()(c()(o), '_focusPrevious', function () {
                 o._dropdownRef && o._dropdownRef.focusPrevious()
               }),
-              (o.state = { ariaDescendantId: Object(N.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
+              (o.state = { ariaDescendantId: Object(F.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
               (o._dropdownDomId = 'typeaheadDropdown-'.concat(H)),
               (H += 1),
               (o._withNewTypeaheadUI = o.context.featureSwitches.isTrue(
@@ -382,7 +380,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return v.a.createElement(U.a, null, this._render)
+                  return v.a.createElement(N.a, null, this._render)
                 },
               },
               {
@@ -403,13 +401,13 @@
         })(v.a.Component)
       h()(z, 'defaultProps', {
         disableClearButton: !1,
-        filter: [D.a.Users, D.a.Topics],
+        filter: [T.a.Users, T.a.Topics],
         isInSidebar: !1,
         initialValue: '',
         withSectionDivider: !0,
       }),
         h()(z, 'contextType', R.a)
-      var q = O.a.create(function (e) {
+      var V = O.a.create(function (e) {
         return {
           root: { flex: 1, flexDirection: 'column', position: 'relative', zIndex: C.d + 1 },
           typeaheadContainer: { flex: 1, position: 'relative' },
@@ -659,16 +657,16 @@
         C = n('nBUg'),
         E = n('qjak'),
         S = n('ir4X'),
-        T = n('htQn'),
-        D = n('e5HP'),
+        D = n('htQn'),
+        T = n('e5HP'),
         k = n('FBXD'),
         R = n('Nqmc'),
         O = n('rHpw'),
         L = n('jhWN'),
-        F = n('1I0O'),
-        P = n('pBrB'),
-        U = n('jV+4'),
-        N = n('MWbm'),
+        P = n('1I0O'),
+        U = n('pBrB'),
+        N = n('jV+4'),
+        F = n('MWbm'),
         j = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
         M = Object.freeze({
           UserCompact: 'UserCompact',
@@ -706,7 +704,7 @@
                   y = t.translatorType,
                   v = t.withFollowsYou,
                   b = t.withLink,
-                  _ = g.a.createElement(U.a, {
+                  _ = g.a.createElement(N.a, {
                     badgeContext: n,
                     displayNameLabel: a,
                     isProtected: c,
@@ -725,8 +723,8 @@
                   })
                 return r
                   ? g.a.createElement(
-                      N.a,
-                      { style: q.disabledMessageContainer },
+                      F.a,
+                      { style: V.disabledMessageContainer },
                       _,
                       g.a.createElement(w.b, { color: 'gray700' }, r),
                     )
@@ -744,7 +742,7 @@
                         contextType: a.contextType,
                         iconSize: 'large',
                         link: a.link,
-                        style: q.socialContext,
+                        style: V.socialContext,
                         text: a.text,
                         weight: 'bold',
                         withLeftPadding: !e.socialContextRefreshEnabled() && r !== M.ExperimentalUserTypeahead,
@@ -761,12 +759,12 @@
                   a = n.text
                 return t
                   ? g.a.createElement(
-                      N.a,
-                      { style: q.userTypeaheadSocialContext },
-                      g.a.createElement(N.a, { style: q.userTypeaheadSocialContextIcon }, r),
+                      F.a,
+                      { style: V.userTypeaheadSocialContext },
+                      g.a.createElement(F.a, { style: V.userTypeaheadSocialContextIcon }, r),
                       g.a.createElement(
                         w.b,
-                        { color: 'gray700', numberOfLines: 1, style: q.userTypeaheadSocialContextText },
+                        { color: 'gray700', numberOfLines: 1, style: V.userTypeaheadSocialContextText },
                         a,
                       ),
                     )
@@ -824,12 +822,12 @@
                     k = e.withInteractiveStyling,
                     R = e.withLink,
                     O = e.withUsernameCenterAligned,
-                    P = R && !u,
-                    U = l === M.UserCompact || O,
+                    U = R && !u,
+                    N = l === M.UserCompact || O,
                     z = l === M.ExperimentalUserTypeahead,
-                    V =
+                    q =
                       y && b === j.USER && 'earned' !== (y.disclosure_type && y.disclosure_type.toLowerCase())
-                        ? g.a.createElement(D.a, { contentAuthorId: E, promotedContent: y, style: q.promotedIndicator })
+                        ? g.a.createElement(T.a, { contentAuthorId: E, promotedContent: y, style: V.promotedIndicator })
                         : null,
                     B = {
                       accessibilityHidden: !0,
@@ -840,15 +838,15 @@
                       onHoverCardScreenNameClick: h,
                       promotedContent: y,
                       screenName: _,
-                      style: q.avatar,
+                      style: V.avatar,
                       uri: i,
-                      withHoverCard: P,
+                      withHoverCard: U,
                       withLink: R,
                     },
                     W = g.a.createElement(x.a.Consumer, null, function (e) {
                       var t = e.avatarSize
                       return m
-                        ? g.a.createElement(F.a, a()({}, B, m, { size: t }))
+                        ? g.a.createElement(P.a, a()({}, B, m, { size: t }))
                         : g.a.createElement(L.a, a()({ size: t }, B))
                     }),
                     G = n && 'boolean' == typeof n.checked,
@@ -857,20 +855,20 @@
                     Q = this._renderUserName(),
                     X = this._renderHighlightedUserLabel(),
                     J = this._renderBio(),
-                    Z = X || J || V || s,
+                    Z = X || J || q || s,
                     $ = g.a.createElement(
                       g.a.Fragment,
                       null,
                       X,
                       J,
-                      V,
-                      s ? g.a.createElement(N.a, { style: q.bottomControl }, s) : null,
+                      q,
+                      s ? g.a.createElement(F.a, { style: V.bottomControl }, s) : null,
                     )
                   return g.a.createElement(
                     v.a,
                     { behavioralEventContext: H },
                     g.a.createElement(
-                      T.a,
+                      D.a,
                       {
                         accessibilityLabel: t,
                         accessibilityRole: Y,
@@ -880,7 +878,7 @@
                         onClick: this._handleClick,
                         onKeyPress: this._handleKeyPress,
                         pointerEvents: d ? 'none' : void 0,
-                        style: [q.root, w],
+                        style: [V.root, w],
                         testID: C,
                         withDarkerInteractiveBackground: S,
                         withInteractiveStyling: null != k ? k : !!f,
@@ -890,18 +888,18 @@
                         I.a,
                         {
                           avatarCell: W,
-                          avatarCellStyle: [q.avatarColumn, U && q.bodyColumnCentered],
+                          avatarCellStyle: [V.avatarColumn, N && V.bodyColumnCentered],
                           avatarSize: z ? 'xxxLarge' : o,
-                          cellStyle: [q.bodyColumn, U && q.bodyColumnCentered],
+                          cellStyle: [V.bodyColumn, N && V.bodyColumnCentered],
                         },
-                        g.a.createElement(N.a, { style: q.body }, Q, c),
-                        U ? null : $,
+                        g.a.createElement(F.a, { style: V.body }, Q, c),
+                        N ? null : $,
                         z ? this._renderUserTypeaheadSocialContext() : null,
                       ),
-                      Z && U
+                      Z && N
                         ? g.a.createElement(
                             I.a,
-                            { avatarCell: null, avatarCellStyle: q.avatarColumn, cellStyle: q.bodyColumn },
+                            { avatarCell: null, avatarCellStyle: V.avatarColumn, cellStyle: V.bodyColumn },
                             $,
                           )
                         : null,
@@ -920,11 +918,11 @@
                     o = e.withheldDescription,
                     i = e.withheldEntities
                   return r && t && this._isEligibleForBio()
-                    ? g.a.createElement(P.a, {
+                    ? g.a.createElement(U.a, {
                         description: t,
                         entities: r,
                         isConcise: n === M.UserConcise,
-                        style: q.bio,
+                        style: V.bio,
                         userId: a,
                         withheldDescription: o,
                         withheldEntities: i,
@@ -937,7 +935,7 @@
           )
         })(g.a.PureComponent)
       y()(z, 'defaultProps', { testID: 'UserCell', withLink: !0 })
-      var q = O.a.create(function (e) {
+      var V = O.a.create(function (e) {
         return {
           root: {
             paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -986,8 +984,8 @@
         C = n('oEoC'),
         E = n('o52z'),
         S = n('kGix'),
-        T = n('M0jS'),
-        D = n('Qyxo'),
+        D = n('M0jS'),
+        T = n('Qyxo'),
         k = n('lnti'),
         R = n('rxPX'),
         O = n('0KEI'),
@@ -1003,17 +1001,17 @@
           n('jQ3i'),
           n('x4t0'),
           n('/kEJ')),
-        F = n('oEOe'),
-        P = n('vy4g'),
-        U = n('3A2y'),
-        N = n('Y6L+'),
+        P = n('oEOe'),
+        U = n('vy4g'),
+        N = n('3A2y'),
+        F = n('Y6L+'),
         j = n('9EWH'),
         M = n('Ssj5'),
         A = n('GZwR'),
         H = ['rounded_score', 'tokens'],
         z = ['rounded_score', 'tokens'],
-        q = 'typeaheadV2',
-        V = [],
+        V = 'typeaheadV2',
+        q = [],
         B = Object.freeze({
           REQUEST: 'rweb/typeaheadV2/FETCH_REQUEST',
           SUCCESS: 'rweb/typeaheadV2/FETCH_SUCCESS',
@@ -1025,9 +1023,7 @@
             a = e.src,
             o = r
           return (
-            null != t && t.communityId
-              ? (o = ''.concat(r, '_').concat(t.communityId))
-              : null != t && t.trustedFriendsId && (o = ''.concat(r, '_').concat(t.trustedFriendsId)),
+            null != t && t.communityId && (o = ''.concat(r, '_').concat(t.communityId)),
             ''.concat(n, '_').concat(o, '_').concat(a)
           )
         },
@@ -1049,7 +1045,7 @@
               r = e.tokens,
               a = i()(e, z),
               o = A.b.Event,
-              s = null == a || null === (t = a.url) || void 0 === t ? void 0 : t.match(N.A.id)
+              s = null == a || null === (t = a.url) || void 0 === t ? void 0 : t.match(F.A.id)
             return { id: (null == s ? void 0 : s[0]) || '', type: o, tokens: r, rounded_score: n, data: a }
           })
         },
@@ -1068,39 +1064,32 @@
             var o = a.api
             if (!e || !e.q || '' === e.q.trim()) return Promise.resolve()
             var i = { queryId: W(e, t) },
-              s = t || {},
-              c = s.communityId,
-              l = s.trustedFriendsId,
-              u = e.result_type.split(','),
-              d = { actionTypes: B, context: 'FETCH_TYPEAHEAD', meta: i }
-            if (u.includes(A.a.CommunityUsers) && c) {
-              return Object(F.b)(n, {
-                params: { communityId: c, prefix: e.q },
+              s = (t || {}).communityId,
+              c = e.result_type.split(','),
+              l = { actionTypes: B, context: 'FETCH_TYPEAHEAD', meta: i }
+            if (c.includes(A.a.CommunityUsers) && s) {
+              return Object(P.b)(n, {
+                params: { communityId: s, prefix: e.q },
                 request: o.Typeahead.fetchCommunityInviteUsers,
-              })(d, function (e) {
+              })(l, function (e) {
                 var t = ((null == e ? void 0 : e.invite_action_results) || {}).entities
                 return t ? [Object(L.c)(t)] : void 0
               })
             }
-            if (u.includes(A.a.CommunityMembers) && c) {
-              return Object(F.b)(n, {
-                params: { communityId: c, prefix: e.q },
+            if (c.includes(A.a.CommunityMembers) && s) {
+              return Object(P.b)(n, {
+                params: { communityId: s, prefix: e.q },
                 request: o.Typeahead.fetchCommunityMembers,
-              })(d, function (e) {
+              })(l, function (e) {
                 var t = ((null == e ? void 0 : e.user_community_relationships) || {}).entities
                 return t ? [Object(L.c)(t)] : void 0
               })
             }
-            return u.includes(A.a.TrustedFriendsSuggested) && l
-              ? Object(F.b)(n, {
-                  params: { trustedFriendsId: l, prefix: e.q },
-                  request: o.Typeahead.fetchTrustedFriendsSuggestions,
-                })(d)
-              : Object(F.b)(n, { params: e, request: o.Typeahead.fetch })(d)
+            return Object(P.b)(n, { params: e, request: o.Typeahead.fetch })(l)
           }
         }
       M.a.register(
-        b()({}, q, function () {
+        b()({}, V, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
@@ -1115,7 +1104,7 @@
                 a = t.payload
               if (!a) return e
               var o = a.users.map(function (e) {
-                  return Object(P.a)(e, A.c.Remote)
+                  return Object(U.a)(e, A.c.Remote)
                 }),
                 i = {
                   fetchStatus: S.a.LOADED,
@@ -1132,7 +1121,7 @@
                 })),
                   e.cachedIds.push(r),
                   e.cachedIds.length >= 25 &&
-                    (e.remoteResults = Object(U.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
+                    (e.remoteResults = Object(N.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
                   (e.remoteResults[r] = i)
               })
             case B.FAILURE:
@@ -1151,9 +1140,8 @@
           var t = e.communityId,
             n = e.filter,
             r = e.query,
-            a = e.source,
-            o = e.trustedFriendsId
-          return W({ q: r, result_type: (n || $).join(','), src: a }, { communityId: t, trustedFriendsId: o })
+            a = e.source
+          return W({ q: r, result_type: (n || $).join(','), src: a }, { communityId: t })
         },
         te = function (e, t) {
           return (function (e, t) {
@@ -1164,19 +1152,19 @@
         ne = function (e, t) {
           return (function (e, t) {
             var n = Q(e, t)
-            return (n && n.users) || V
+            return (n && n.users) || q
           })(e, ee(t))
         },
         re = function (e, t) {
           return (function (e, t) {
             var n = Q(e, t)
-            return (n && n.topics) || V
+            return (n && n.topics) || q
           })(e, ee(t))
         },
         ae = function (e, t) {
           return (function (e, t) {
             var n = Q(e, t)
-            return (n && n.events) || V
+            return (n && n.events) || q
           })(e, ee(t))
         },
         oe = function (e, t) {
@@ -1221,7 +1209,7 @@
               return t.userLimit
             },
             function (e, t, n, r, a, o, i) {
-              var s = Object(D.a)(r || [], function (e) {
+              var s = Object(T.a)(r || [], function (e) {
                   return e.type === A.b.User ? e.data.id_str : void 0
                 }),
                 c = t.filter(function (e) {
@@ -1317,7 +1305,7 @@
                 'TYPEAHEAD_DROPDOWN_CONTAINER_CONTEXT',
               ),
               fetchTypeaheadIfNeeded: X,
-              fetchUsersPresenceIfNeeded: T.b.fetchManyIfNeeded,
+              fetchUsersPresenceIfNeeded: D.b.fetchManyIfNeeded,
               prefetchTypeaheadUsersIfNeeded: Z.b,
             }
           })
@@ -1352,7 +1340,6 @@
           'query',
           'shouldDeferPrefetch',
           'topicType',
-          'trustedFriendsId',
           'userLimit',
         ],
         ve = (function (e) {
@@ -1374,7 +1361,7 @@
                         context_text: e.contextText,
                         topic_type: e.topicType,
                       },
-                      { communityId: e.communityId, trustedFriendsId: e.trustedFriendsId },
+                      { communityId: e.communityId },
                     )
                     .catch(e.createLocalApiErrorHandler({}))
               }),
@@ -1482,7 +1469,7 @@
                       e.orderResults,
                       e.prefetchTypeaheadUsersIfNeeded,
                       e.query),
-                    c = (e.shouldDeferPrefetch, e.topicType, e.trustedFriendsId, e.userLimit, i()(e, ye)),
+                    c = (e.shouldDeferPrefetch, e.topicType, e.userLimit, i()(e, ye)),
                     l = s && n !== S.a.LOADED,
                     u = l && !this.state.shouldShowPrefetchResults ? r : o
                   return _.a.createElement(
@@ -1563,31 +1550,31 @@
           C = e.titleWeight,
           E = void 0 === C ? 'bold' : C,
           S = e.withParticipantsCount,
-          T = void 0 !== S && S,
-          D = e.withScreenName,
-          k = void 0 === D || D,
+          D = void 0 !== S && S,
+          T = e.withScreenName,
+          k = void 0 === T || T,
           R = e.withVDLRefresh,
           O = void 0 !== R && R
         if (t) {
           var L = w ? w() : null
           if (t.type === s.a.ONE_TO_ONE) {
-            var F = Object(c.a)(t, m).map(function (e) {
+            var P = Object(c.a)(t, m).map(function (e) {
                 return e.user
               }),
-              P = a()(F, 1)[0],
-              U = i.a.createElement(p.a, {
+              U = a()(P, 1)[0],
+              N = i.a.createElement(p.a, {
                 color: x,
-                isProtected: P.protected,
-                isVerified: P.verified,
-                name: P.name,
-                screenName: P.screen_name,
+                isProtected: U.protected,
+                isVerified: U.verified,
+                name: U.name,
+                screenName: U.screen_name,
                 weight: E,
                 withLink: !1,
                 withScreenName: k,
               })
-            return (O && !r) || l ? i.a.createElement(f.a, null, U, L) : U
+            return (O && !r) || l ? i.a.createElement(f.a, null, N, L) : N
           }
-          var N = t.participants.length + (O ? -1 : 0)
+          var F = t.participants.length + (O ? -1 : 0)
           if (r)
             return i.a.createElement(
               f.a,
@@ -1598,7 +1585,7 @@
                 : i.a.createElement(
                     h.b,
                     { color: 'gray700', numberOfLines: 1, weight: 'normal' },
-                    v({ peopleCount: N }),
+                    v({ peopleCount: F }),
                   ),
             )
           var j = i.a.createElement(h.b, { color: x, numberOfLines: 1, weight: E }, Object(y.a)(t, m, r))
@@ -1607,7 +1594,7 @@
                 d.a,
                 { style: _.dmGroup },
                 i.a.createElement(f.a, null, j, L),
-                T && i.a.createElement(h.b, { color: 'gray700', numberOfLines: 1 }, b({ peopleCount: N })),
+                D && i.a.createElement(h.b, { color: 'gray700', numberOfLines: 1 }, b({ peopleCount: F })),
               )
             : j
         }
@@ -1766,8 +1753,8 @@
               r = { conversation: void 0 }
             return null != t && t.data && (r.conversation = Object(_.b)(t.data, void 0, n)), r
           }),
-        T = n('aA19'),
-        D = n('OhSZ'),
+        D = n('aA19'),
+        T = n('OhSZ'),
         k = n('5mJL'),
         R = n('rHpw'),
         O = R.a.create(function (e) {
@@ -1794,13 +1781,13 @@
             ? y.a.createElement(
                 k.a,
                 {
-                  avatarCell: y.a.createElement(T.a, { conversation: t, perspective: a, size: 'xLarge' }),
+                  avatarCell: y.a.createElement(D.a, { conversation: t, perspective: a, size: 'xLarge' }),
                   avatarCellStyle: O.avatarColumn,
                   avatarSize: 'xLarge',
                   cellStyle: O.bodyColumn,
                   style: [O.root, !r && n && O.disabled],
                 },
-                y.a.createElement(D.b, {
+                y.a.createElement(T.b, {
                   conversation: t,
                   perspective: a,
                   withParticipantsCount: !0,
@@ -1810,10 +1797,10 @@
               )
             : null
         }),
-        F = (n('uFXj'), n('MWbm')),
-        P = n('LbZ7'),
-        U = n('t62R'),
-        N = n('9Xij'),
+        P = (n('uFXj'), n('MWbm')),
+        U = n('LbZ7'),
+        N = n('t62R'),
+        F = n('9Xij'),
         j = n('TIdA'),
         M = n('A91F'),
         A = (function (e) {
@@ -1832,23 +1819,23 @@
                     n = e.image,
                     r = e.supportText
                   return y.a.createElement(
-                    F.a,
+                    P.a,
                     { style: z.root },
                     y.a.createElement(
-                      P.a,
+                      U.a,
                       { withGutter: !0 },
                       y.a.createElement(
-                        F.a,
+                        P.a,
                         { style: z.bodyColumn },
-                        r ? y.a.createElement(U.b, { color: 'gray700', size: 'subtext2' }, r) : null,
-                        y.a.createElement(U.b, { numberOfLines: 1 }, t),
+                        r ? y.a.createElement(N.b, { color: 'gray700', size: 'subtext2' }, r) : null,
+                        y.a.createElement(N.b, { numberOfLines: 1 }, t),
                       ),
                       n
                         ? y.a.createElement(
-                            F.a,
+                            P.a,
                             { style: z.coverContainer },
                             y.a.createElement(
-                              N.a,
+                              F.a,
                               { ratio: 1 },
                               y.a.createElement(j.a, { accessibilityLabel: '', aspectMode: M.a.SQUARE, image: n }),
                             ),
@@ -1879,8 +1866,8 @@
             },
           }
         }),
-        q = A,
-        V = n('5T6p'),
+        V = A,
+        q = n('5T6p'),
         B =
           (n('z84I'),
           n('2G9S'),
@@ -1980,7 +1967,7 @@
               return n
             })(e.topic, t.isTrue('responsive_web_typeahead_reverse_bolding_enabled') ? r : '', true),
             c = y.a.createElement(
-              U.b,
+              N.b,
               null,
               s.map(function (e, t) {
                 return y.a.createElement(G.b, { key: ''.concat(e.text).concat(t), part: e })
@@ -1992,17 +1979,17 @@
               c,
               a
                 ? y.a.createElement(
-                    F.a,
+                    P.a,
                     { style: X.context },
                     a && a.types[0] && 'followable_topic' === a.types[0].type
                       ? y.a.createElement(Y.a, { style: X.icon })
                       : null,
-                    y.a.createElement(U.b, { color: 'gray700' }, a.display_string || ' '),
+                    y.a.createElement(N.b, { color: 'gray700' }, a.display_string || ' '),
                   )
                 : null,
             )
           return y.a.createElement(
-            F.a,
+            P.a,
             { style: [X.root, n && X.disabled, i] },
             o
               ? (function (e) {
@@ -2224,7 +2211,7 @@
                   v.a,
                   { behavioralEventContext: ye },
                   y.a.createElement(
-                    F.a,
+                    P.a,
                     {
                       accessibilityRole: 'option',
                       accessibilityState: {
@@ -2265,7 +2252,7 @@
                 switch (o.type) {
                   case oe.b.User:
                     var l = o.data,
-                      u = s ? s({ userId: l.id_str, user: l, isSelected: a }) : void 0,
+                      u = s ? s({ userId: l.id_str, isSelected: a }) : void 0,
                       d = n ? n(o, l) : void 0
                     return y.a.createElement(pe, {
                       avatarUri: l.profile_image_url_https,
@@ -2290,14 +2277,14 @@
                   case oe.b.Event:
                     var p = o.data
                     return this._withNewTypeaheadUI
-                      ? y.a.createElement(V.a, {
+                      ? y.a.createElement(q.a, {
                           image: p.primary_image && p.primary_image.original_info,
                           style: _e.itemPadding,
                           supportText: p.supporting_text,
                           title: p.topic,
                           withNewTypeaheadUI: !0,
                         })
-                      : y.a.createElement(q, {
+                      : y.a.createElement(V, {
                           event: p.topic,
                           image: p.primary_image && p.primary_image.original_info,
                           supportText: p.supporting_text,
@@ -2328,22 +2315,22 @@
                   case oe.b.SettingGroup:
                     var v = o.data.text
                     return y.a.createElement(
-                      F.a,
+                      P.a,
                       { style: _e.navigationLink },
-                      y.a.createElement(U.b, { style: _e.content, weight: 'bold' }, v),
+                      y.a.createElement(N.b, { style: _e.content, weight: 'bold' }, v),
                       y.a.createElement(he.a, { style: _e.icon }),
                     )
                   case oe.b.Setting:
                     var b = o.data.text
                     return y.a.createElement(
-                      F.a,
+                      P.a,
                       { style: _e.navigationLink },
-                      y.a.createElement(U.b, { style: _e.content }, b),
+                      y.a.createElement(N.b, { style: _e.content }, b),
                       y.a.createElement(he.a, { style: _e.icon }),
                     )
                   case oe.b.NoResult:
                     var g = o.data.text
-                    return y.a.createElement(U.b, { style: _e.noResult }, g)
+                    return y.a.createElement(N.b, { style: _e.noResult }, g)
                   default:
                     return null
                 }
@@ -2503,7 +2490,7 @@
               })
             : [],
           S = E.slice(0, 3),
-          T =
+          D =
             (function (e) {
               var t = e && e.avatar && e.avatar.image && e.avatar.image.original_info
               return t
@@ -2523,7 +2510,7 @@
               var r = e.length
               return 0 === r ? null : 1 === r ? t(e[0]) : a.a.createElement(b.a, { style: _.circle }, n(e))
             })(S),
-          D =
+          T =
             s ||
             (function (e, t) {
               if (e)
@@ -2534,14 +2521,14 @@
                   : void 0
             })(r, E),
           k = w && null != r && r.participants ? r.participants.length - 1 : 0
-        return T
+        return D
           ? a.a.createElement(
               a.a.Fragment,
               null,
               a.a.createElement(
                 h.a,
                 { ratio: 1 },
-                D ? a.a.createElement(y.a, { interactiveStyles: null, link: D, testID: l.a.conversationAvatar }, T) : T,
+                T ? a.a.createElement(y.a, { interactiveStyles: null, link: T, testID: l.a.conversationAvatar }, D) : D,
               ),
               k
                 ? (function (e) {
@@ -2578,7 +2565,7 @@
     e5HP: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return F
+        return P
       })
       var r = n('VrFO'),
         a = n.n(r),
@@ -2626,13 +2613,13 @@
       C.metadata = { width: 24, height: 24 }
       var E = C,
         S = n('uFYP'),
-        T = v.a.f1a1b790,
-        D = v.a.if2bf8b3,
+        D = v.a.f1a1b790,
+        T = v.a.if2bf8b3,
         k = v.a.f3624b5c,
         R = v.a.b4b3b113,
         O = v.a.be22205f,
         L = v.a.hcbbe447,
-        F = (function (e) {
+        P = (function (e) {
           c()(n, e)
           var t = u()(n)
           function n() {
@@ -2650,8 +2637,8 @@
                     a = e.withCircleIcon ? E : S.a
                   return h.a.createElement(
                     g.a,
-                    { style: [P.root, r] },
-                    h.a.createElement(a, { style: [P.icon, t && P[t]] }),
+                    { style: [U.root, r] },
+                    h.a.createElement(a, { style: [U.icon, t && U[t]] }),
                     h.a.createElement(m.b, { color: t, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
                   )
                 },
@@ -2680,12 +2667,12 @@
                         ? k
                         : p
                         ? O
-                        : D
+                        : T
                       : d
                       ? R({ fullName: i })
                       : p
                       ? L({ fullName: i })
-                      : T({ fullName: i }))
+                      : D({ fullName: i }))
                   )
                 },
               },
@@ -2693,8 +2680,8 @@
             n
           )
         })(h.a.Component)
-      p()(F, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
-      var P = b.a.create(function (e) {
+      p()(P, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
+      var U = b.a.create(function (e) {
         return {
           root: { alignItems: 'center', flexDirection: 'row' },
           icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
@@ -2931,9 +2918,9 @@
         C = n.n(x),
         E = n('kIAd'),
         S = n('JYMr'),
-        T = n('rHpw'),
-        D = C.a.f2b3fe06,
-        k = T.a.create(function (e) {
+        D = n('rHpw'),
+        T = C.a.f2b3fe06,
+        k = D.a.create(function (e) {
           return { hidden: { visibility: 'hidden' } }
         }),
         R = function (e) {
@@ -2959,15 +2946,15 @@
               },
               [t],
             ),
-            y.a.createElement(S.a, { ariaValueText: a ? D : '', indeterminate: a, style: !a && k.hidden })
+            y.a.createElement(S.a, { ariaValueText: a ? T : '', indeterminate: a, style: !a && k.hidden })
           )
         },
         O = n('ZcYN'),
         L = n('MWbm'),
-        F = n('oQhu'),
-        P = n('w6IS'),
-        U = n('MXDK'),
-        N = { viewType: 'typeahead_dropdown' },
+        P = n('oQhu'),
+        U = n('w6IS'),
+        N = n('MXDK'),
+        F = { viewType: 'typeahead_dropdown' },
         j = (function (e) {
           u()(n, e)
           var t = p()(n)
@@ -2979,7 +2966,7 @@
               h()(c()(o), '_setFocusedItemRef', function (e) {
                 o._shouldScrollToFocusedItem &&
                   e &&
-                  (Object(U.c)(o._getScrollParent(), e), (o._shouldScrollToFocusedItem = !1))
+                  (Object(N.c)(o._getScrollParent(), e), (o._shouldScrollToFocusedItem = !1))
               }),
               h()(c()(o), '_resetScroll', function () {
                 var e = o._getScrollParent()
@@ -2988,8 +2975,8 @@
               h()(
                 c()(o),
                 '_getFlattenedItems',
-                Object(F.a)(function (e) {
-                  return Object(P.a)(e)
+                Object(P.a)(function (e) {
+                  return Object(U.a)(e)
                 }),
               ),
               h()(c()(o), '_handleItemClick', function (e, t) {
@@ -3095,7 +3082,7 @@
                   return u
                     ? y.a.createElement(
                         v.a,
-                        { behavioralEventContext: N },
+                        { behavioralEventContext: F },
                         y.a.createElement(
                           L.a,
                           { accessibilityMultiSelectable: p, accessibilityRole: 'listbox', nativeID: n, style: l },
@@ -3175,7 +3162,7 @@
                 key: '_getScrollParent',
                 value: function () {
                   if (!this._scrollParent) {
-                    var e = Object(U.a)(_.a.findDOMNode(this))
+                    var e = Object(N.a)(_.a.findDOMNode(this))
                     this._scrollParent = e === window ? null : e
                   }
                   return this._scrollParent

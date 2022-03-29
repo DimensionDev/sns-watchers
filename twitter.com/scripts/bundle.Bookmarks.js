@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [40],
+  [41],
   {
     '/kFL': function (e, t, r) {
       'use strict'
@@ -221,7 +221,7 @@
           i.a,
           { component: f.a, fab: u },
           n.a.createElement(d.a, {
-            entryConfiguration: Object(a.a)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
+            entryConfiguration: Object(a.createConfiguration)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
             module: l,
             prerollDisplayLocation: s.c.OTHER,
             renderEmptyState: function () {

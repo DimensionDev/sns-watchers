@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [32],
+  [33],
   {
     '0Yt+': function (e, a, t) {
       'use strict'
@@ -7,58 +7,104 @@
         r = t.n(n),
         i = t('3XMw'),
         c = t.n(i),
-        s = t('KSuC'),
-        l = t('rHpw'),
+        l = t('6s7X'),
+        s = t('rHpw'),
         o = t('MWbm'),
-        u = t('t62R'),
-        p = t('wTX1'),
-        d = t('RjwM'),
-        m = t('7Mjr'),
-        g = t('WXWl'),
-        v = c.a.i2785008,
-        b = c.a.d9687d23,
-        y = c.a.ac73eb5a,
-        f = c.a.c5a9f921,
-        h = function (e) {
+        p = t('t62R'),
+        u = t('/yvb'),
+        d = t('OiMc'),
+        m = c.a.affbaf62,
+        g = c.a.c388d026,
+        v = s.a.create(function (e) {
+          return {
+            popover: { padding: e.spaces.space32 },
+            popoverTitle: { marginBottom: e.spaces.space8 },
+            popoverText: { marginBottom: e.spaces.space24 },
+            iconInformation: {
+              color: e.colors.gray700,
+              fontSize: e.fontSizes.subtext3,
+              cursor: 'pointer',
+              marginLeft: e.spaces.space4,
+            },
+          }
+        }),
+        b = function (e) {
+          var a = e.label,
+            t = e.popover
+          return r.a.createElement(
+            o.a,
+            null,
+            r.a.createElement(
+              d.a,
+              {
+                preferredVerticalOrientation: 'up',
+                renderContent: function (e) {
+                  return r.a.createElement(
+                    o.a,
+                    { style: v.popover },
+                    r.a.createElement(
+                      o.a,
+                      { style: v.popoverTitle },
+                      r.a.createElement(p.b, { size: 'title3', weight: 'heavy' }, a),
+                    ),
+                    r.a.createElement(o.a, { style: v.popoverText }, t),
+                    r.a.createElement(u.a, { onPress: e, type: 'primaryOutlined' }, g),
+                  )
+                },
+                withArrow: !0,
+              },
+              r.a.createElement(l.a, { accessibilityLabel: m, accessibilityRole: 'tooltip', style: v.iconInformation }),
+            ),
+          )
+        },
+        y = t('wTX1'),
+        f = t('RjwM'),
+        h = t('7Mjr'),
+        E = t('WXWl'),
+        w = c.a.i2785008,
+        k = c.a.d9687d23,
+        T = c.a.ac73eb5a,
+        x = c.a.c5a9f921,
+        B = function (e) {
           var a = e.label,
             t = e.popover
           return a
             ? r.a.createElement(
                 o.a,
-                { style: k.labelBar },
-                r.a.createElement(u.b, { color: 'gray700', size: 'subtext2', weight: 'medium' }, a),
-                t ? r.a.createElement(s.a, { label: a, popover: t }) : null,
+                { style: I.labelBar },
+                r.a.createElement(p.b, { color: 'gray700', size: 'subtext2', weight: 'medium' }, a),
+                t ? r.a.createElement(b, { label: a, popover: t }) : null,
               )
             : null
         },
-        E = function (e) {
+        L = function (e) {
           var a = e.unit
-          return a ? r.a.createElement(u.b, { color: 'gray700', style: k.unitText, weight: 'medium' }, a) : null
+          return a ? r.a.createElement(p.b, { color: 'gray700', style: I.unitText, weight: 'medium' }, a) : null
         },
-        w = function (e) {
+        R = function (e) {
           var a,
             t,
             n = e.trendValue
           return void 0 === n
             ? null
             : ((n = Math.round(100 * n) / 100),
-              (a = v(n)),
+              (a = w(n)),
               (t = (function (e) {
                 if (e < 0) {
-                  var a = v(e)
-                  return b({ trendValueNegativePercent: a })
+                  var a = w(e)
+                  return k({ trendValueNegativePercent: a })
                 }
-                if (0 === e) return y
-                var t = v(e)
-                return f({ trendValuePositivePercent: t })
+                if (0 === e) return T
+                var t = w(e)
+                return x({ trendValuePositivePercent: t })
               })(n)),
               n < 0
                 ? r.a.createElement(
                     o.a,
-                    { accessibilityLabel: t, style: k.trendBar },
-                    r.a.createElement(d.a, { style: k.trendIconNeg }),
+                    { accessibilityLabel: t, style: I.trendBar },
+                    r.a.createElement(f.a, { style: I.trendIconNeg }),
                     r.a.createElement(
-                      u.b,
+                      p.b,
                       { accessibilityHidden: !0, color: 'red500', size: 'body', weight: 'medium' },
                       a,
                     ),
@@ -66,26 +112,26 @@
                 : 0 === n
                 ? r.a.createElement(
                     o.a,
-                    { accessibilityLabel: t, style: k.trendBar },
-                    r.a.createElement(m.a, { style: k.trendIconZero }),
+                    { accessibilityLabel: t, style: I.trendBar },
+                    r.a.createElement(h.a, { style: I.trendIconZero }),
                     r.a.createElement(
-                      u.b,
+                      p.b,
                       { accessibilityHidden: !0, color: 'gray700', size: 'body', weight: 'medium' },
                       a,
                     ),
                   )
                 : r.a.createElement(
                     o.a,
-                    { accessibilityLabel: t, style: k.trendBar },
-                    r.a.createElement(g.a, { style: k.trendIconPos }),
+                    { accessibilityLabel: t, style: I.trendBar },
+                    r.a.createElement(E.a, { style: I.trendIconPos }),
                     r.a.createElement(
-                      u.b,
+                      p.b,
                       { accessibilityHidden: !0, color: 'green500', size: 'body', weight: 'medium' },
                       a,
                     ),
                   ))
         },
-        k = l.a.create(function (e) {
+        I = s.a.create(function (e) {
           return {
             dataPoint: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start' },
             labelBar: { display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: e.spaces.space2 },
@@ -127,24 +173,24 @@
           n = e.label,
           i = e.popover,
           c = e.size,
-          s = e.subTextList,
-          l = e.trendValue,
-          d = e.unit,
-          m = e.value
+          l = e.subTextList,
+          s = e.trendValue,
+          u = e.unit,
+          d = e.value
         return r.a.createElement(
           o.a,
-          { style: k.dataPoint },
-          r.a.createElement(h, { label: n, popover: i }),
+          { style: I.dataPoint },
+          r.a.createElement(B, { label: n, popover: i }),
           r.a.createElement(
             o.a,
-            { style: k.valueBar },
+            { style: I.valueBar },
             a
-              ? r.a.createElement(p.a, { count: t, size: c, weight: 'bold' }, m)
-              : r.a.createElement(u.b, { size: c, weight: 'bold' }, m),
-            r.a.createElement(E, { unit: d }),
-            r.a.createElement(w, { trendValue: l }),
+              ? r.a.createElement(y.a, { count: t, size: c, weight: 'bold' }, d)
+              : r.a.createElement(p.b, { size: c, weight: 'bold' }, d),
+            r.a.createElement(L, { unit: u }),
+            r.a.createElement(R, { trendValue: s }),
           ),
-          s,
+          l,
         )
       }
     },
@@ -154,18 +200,18 @@
         r = t.n(n),
         i = t('ERkP'),
         c = t.n(i),
-        s = t('Lsrn'),
-        l = t('k/Ka'),
+        l = t('Lsrn'),
+        s = t('k/Ka'),
         o = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(l.a)(
+          return Object(s.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.a.root, e.style],
+                style: [l.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -184,63 +230,6 @@
         }
       ;(o.metadata = { width: 24, height: 24 }), (a.a = o)
     },
-    KSuC: function (e, a, t) {
-      'use strict'
-      var n = t('ERkP'),
-        r = t.n(n),
-        i = t('3XMw'),
-        c = t.n(i),
-        s = t('6s7X'),
-        l = t('rHpw'),
-        o = t('MWbm'),
-        u = t('t62R'),
-        p = t('/yvb'),
-        d = t('OiMc'),
-        m = c.a.affbaf62,
-        g = c.a.c388d026,
-        v = l.a.create(function (e) {
-          return {
-            popover: { padding: e.spaces.space32 },
-            popoverTitle: { marginBottom: e.spaces.space8 },
-            popoverText: { marginBottom: e.spaces.space24 },
-            iconInformation: {
-              color: e.colors.gray700,
-              fontSize: e.fontSizes.subtext3,
-              cursor: 'pointer',
-              marginLeft: e.spaces.space4,
-            },
-          }
-        })
-      a.a = function (e) {
-        var a = e.label,
-          t = e.popover
-        return r.a.createElement(
-          o.a,
-          null,
-          r.a.createElement(
-            d.a,
-            {
-              preferredVerticalOrientation: 'up',
-              renderContent: function (e) {
-                return r.a.createElement(
-                  o.a,
-                  { style: v.popover },
-                  r.a.createElement(
-                    o.a,
-                    { style: v.popoverTitle },
-                    r.a.createElement(u.b, { size: 'title3', weight: 'heavy' }, a),
-                  ),
-                  r.a.createElement(o.a, { style: v.popoverText }, t),
-                  r.a.createElement(p.a, { onPress: e, type: 'primaryOutlined' }, g),
-                )
-              },
-              withArrow: !0,
-            },
-            r.a.createElement(s.a, { accessibilityLabel: m, accessibilityRole: 'tooltip', style: v.iconInformation }),
-          ),
-        )
-      }
-    },
     RMBq: function (e, a, t) {
       'use strict'
       t.r(a),
@@ -251,11 +240,11 @@
         r = t('ddV6'),
         i = t.n(r),
         c = (t('KqXw'), t('WNMA'), t('ERkP')),
-        s = t.n(c),
-        l = t('Pc/x'),
+        l = t.n(c),
+        s = t('Pc/x'),
         o = t('KEM+'),
-        u = t.n(o),
-        p = (t('z84I'), t('TJCb'), t('7x/C'), t('DZ+c'), t('yH/f'), t('7lsG')),
+        p = t.n(o),
+        u = (t('z84I'), t('TJCb'), t('7x/C'), t('DZ+c'), t('yH/f'), t('7lsG')),
         d = t('Z5jE'),
         m = t('3XMw'),
         g = t.n(m),
@@ -266,11 +255,11 @@
         h = t('rHpw')
       var E = function (e, a, t) {
           var n,
-            r = x[e],
+            r = B[e],
             i = r.label,
             c = r.popover
-          return (n = e === R.Duration ? k(a) : w(e, a))
-            ? s.a.createElement(y.a, { key: e, label: i, popover: c, size: t, value: n })
+          return (n = e === T.Duration ? k(a) : w(e, a))
+            ? l.a.createElement(y.a, { key: e, label: i, popover: c, size: t, value: n })
             : null
         },
         w = function (e, a) {
@@ -279,23 +268,23 @@
             r,
             i = a.space,
             c = a.utils,
-            s = null == i ? void 0 : i.is_space_available_for_replay,
-            l = null == i ? void 0 : i.total_live_listeners,
+            l = null == i ? void 0 : i.is_space_available_for_replay,
+            s = null == i ? void 0 : i.total_live_listeners,
             o = null == i ? void 0 : i.total_replay_watched
           switch (e) {
-            case R.Cohosts:
+            case T.Cohosts:
               r = null == i ? void 0 : i.cohosts.length
               break
-            case R.LiveListeners:
-              r = s ? l : void 0
+            case T.LiveListeners:
+              r = l ? s : void 0
               break
-            case R.RecordingReplays:
-              r = s ? o : void 0
+            case T.RecordingReplays:
+              r = l ? o : void 0
               break
-            case R.Speakers:
+            case T.Speakers:
               r = null == i || null === (t = i.participants) || void 0 === t ? void 0 : t.speakers.length
               break
-            case R.TunedIn:
+            case T.TunedIn:
               r = c.getTunedInCount()
               break
             default:
@@ -309,9 +298,9 @@
             n = null == a ? void 0 : a.started_at
           if (!t || !n) return null
           var r = t - n
-          return s.a.createElement(f.a, { narrow: !0, timeMs: r })
+          return l.a.createElement(f.a, { narrow: !0, timeMs: r })
         },
-        R = Object.freeze({
+        T = Object.freeze({
           Cohosts: 'Cohosts',
           Duration: 'Duration',
           LiveListeners: 'LiveListeners',
@@ -319,17 +308,17 @@
           Speakers: 'Speakers',
           TunedIn: 'TunedIn',
         }),
-        T = [R.LiveListeners, R.RecordingReplays, R.Cohosts, R.Speakers, R.Duration],
-        x =
+        x = [T.LiveListeners, T.RecordingReplays, T.Cohosts, T.Speakers, T.Duration],
+        B =
           ((n = {}),
-          u()(n, R.Cohosts, { label: g.a.i2caef48 }),
-          u()(n, R.Duration, { label: g.a.d9d6e10e }),
-          u()(n, R.LiveListeners, { label: g.a.fcb205d9 }),
-          u()(n, R.RecordingReplays, { label: g.a.jb088200 }),
-          u()(n, R.Speakers, { label: g.a.j245c654 }),
-          u()(n, R.TunedIn, { label: g.a.if653289 }),
+          p()(n, T.Cohosts, { label: g.a.i2caef48 }),
+          p()(n, T.Duration, { label: g.a.d9d6e10e }),
+          p()(n, T.LiveListeners, { label: g.a.fcb205d9 }),
+          p()(n, T.RecordingReplays, { label: g.a.jb088200 }),
+          p()(n, T.Speakers, { label: g.a.j245c654 }),
+          p()(n, T.TunedIn, { label: g.a.if653289 }),
           n),
-        B = h.a.create(function (e) {
+        L = h.a.create(function (e) {
           return {
             cardContainer: { marginTop: e.spaces.space12 },
             container: { paddingHorizontal: e.spaces.space16 },
@@ -348,51 +337,51 @@
             },
           }
         }),
-        L = function (e) {
+        R = function (e) {
           var a = Object(d.a)(e.match),
             t = Object(v.a)(a)
-          return s.a.createElement(
-            s.a.Fragment,
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            s.a.createElement(
+            l.a.createElement(
               b.a,
-              { style: B.container },
-              s.a.createElement(
+              { style: L.container },
+              l.a.createElement(
                 b.a,
-                { style: B.cardContainer },
-                s.a.createElement(p.a, { audioSpaceId: a, isInteractive: !1, withoutButton: !0 }),
+                { style: L.cardContainer },
+                l.a.createElement(u.a, { audioSpaceId: a, isInteractive: !1, withoutButton: !0 }),
               ),
             ),
-            s.a.createElement(
+            l.a.createElement(
               b.a,
-              { style: B.grid },
-              E(R.TunedIn, t, 'title1'),
-              s.a.createElement(
+              { style: L.grid },
+              E(T.TunedIn, t, 'title1'),
+              l.a.createElement(
                 b.a,
-                { style: B.minorDataPointsGrid },
-                T.map(function (e) {
+                { style: L.minorDataPointsGrid },
+                x.map(function (e) {
                   return E(e, t, 'title3')
                 }),
               ),
             ),
           )
         },
-        M = t('aITJ'),
-        I = t('Tg44'),
-        C = t('q9Zt'),
-        z = t('5Vk4'),
+        I = t('aITJ'),
+        M = t('Tg44'),
+        z = t('q9Zt'),
+        C = t('5Vk4'),
         j = t('sgih'),
         P = t('xKuM')
       function S(e) {
-        var a = s.a.useState(void 0),
+        var a = l.a.useState(void 0),
           t = i()(a, 2),
           n = t[0],
           r = t[1],
           c = Object(d.a)(e.match),
           o = Object(v.a)(c).utils,
-          u = o.state() === I.a.StateEnum.unavailable
-        s.a.useEffect(function () {
-          l.a.proxsee
+          p = o.state() === M.a.StateEnum.unavailable
+        l.a.useEffect(function () {
+          s.a.proxsee
             .login()
             .then(function () {
               r(!0)
@@ -401,29 +390,29 @@
               r(!1)
             })
         }, [])
-        var p = function () {
+        var u = function () {
             return e.history.goBackThroughModals()
           },
-          m = s.a.createElement(z.a, { backButtonType: 'close', onClick: p })
+          m = l.a.createElement(C.a, { backButtonType: 'close', onClick: u })
         return void 0 !== o.state() && void 0 !== n
-          ? s.a.createElement(
+          ? l.a.createElement(
               j.a,
               {
                 accessibilityRole: 'menu',
                 allowBackNavigation: !0,
                 enableMaskForDismiss: !0,
-                onMaskClick: p,
+                onMaskClick: u,
                 type: 'full',
                 withKeyboardNavigation: !0,
                 withMask: !0,
               },
-              !M.b.isTwitterApp() &&
-                s.a.createElement(P.a, { leftControl: m, style: H.appBar, title: D.title, withGutter: !0 }),
+              !I.b.isTwitterApp() &&
+                l.a.createElement(P.a, { leftControl: m, style: H.appBar, title: D.title, withGutter: !0 }),
               !1 === n
-                ? s.a.createElement(C.a, { onRetry: null, title: D.wrongUser })
-                : u
-                ? s.a.createElement(C.a, { onRetry: null, title: D.genericError })
-                : s.a.createElement(L, e),
+                ? l.a.createElement(z.a, { onRetry: null, title: D.wrongUser })
+                : p
+                ? l.a.createElement(z.a, { onRetry: null, title: D.genericError })
+                : l.a.createElement(R, e),
             )
           : null
       }
@@ -442,18 +431,18 @@
         r = t.n(n),
         i = t('ERkP'),
         c = t.n(i),
-        s = t('Lsrn'),
-        l = t('k/Ka'),
+        l = t('Lsrn'),
+        s = t('k/Ka'),
         o = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(l.a)(
+          return Object(s.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.a.root, e.style],
+                style: [l.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -474,18 +463,18 @@
         r = t.n(n),
         i = t('ERkP'),
         c = t.n(i),
-        s = t('Lsrn'),
-        l = t('k/Ka'),
+        l = t('Lsrn'),
+        s = t('k/Ka'),
         o = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(l.a)(
+          return Object(s.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.a.root, e.style],
+                style: [l.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),

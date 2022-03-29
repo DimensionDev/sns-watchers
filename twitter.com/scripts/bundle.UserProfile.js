@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [113],
+  [114],
   {
     '+wNI': function (e, t, a) {
       'use strict'
@@ -636,7 +636,7 @@
             ],
           },
           params: {
-            id: '_qbQAxk9v1Rr6BREA_5k_A',
+            id: 'uJJxieUqDdAEUxp8Icr4PA',
             metadata: {},
             name: 'ProfileSpotlightsQuery',
             operationKind: 'query',
@@ -851,35 +851,10 @@
         kind: 'Fragment',
         metadata: null,
         name: 'LocationSpotlight_aboutModule',
-        selections: [
-          {
-            alias: null,
-            args: null,
-            concreteType: 'AboutModuleData',
-            kind: 'LinkedField',
-            name: 'data',
-            plural: !1,
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'BusinessAddressResponse',
-                kind: 'LinkedField',
-                name: 'address',
-                plural: !1,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'formatted_address', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-            storageKey: null,
-          },
-          { args: null, kind: 'FragmentSpread', name: 'LocationSpotlightDescription_aboutModule' },
-        ],
+        selections: [{ args: null, kind: 'FragmentSpread', name: 'LocationSpotlightDescription_aboutModule' }],
         type: 'AboutModule',
         abstractKey: null,
-        hash: '3ff9fd0a1b8f8b76e820d6c38e4a9730',
+        hash: 'f50892e9fd6b68a9dc0d66b82bbcadf6',
       }
       t.default = n
     },
@@ -1008,11 +983,11 @@
         L = a('1Pcy'),
         P = a.n(L),
         x = a('5Yy7'),
-        R = a.n(x),
-        M = a('2VqO'),
-        B = a.n(M),
-        N = a('KEM+'),
-        A = a.n(N),
+        M = a.n(x),
+        R = a('2VqO'),
+        N = a.n(R),
+        B = a('KEM+'),
+        A = a.n(B),
         O =
           (a('lTEL'),
           a('7x/C'),
@@ -1037,10 +1012,10 @@
         W = a('I/ms'),
         V = a('rxPX'),
         q = a('M0jS'),
-        G = function (e, t) {
+        J = function (e, t) {
           return Object(q.c)(e, t.user.id_str)
         },
-        J = function (e, t) {
+        G = function (e, t) {
           var a = q.b.select(e, t.user.id_str)
           return null != a && a.refresh_delay_secs ? 1e3 * a.refresh_delay_secs : 1e3 * q.a
         },
@@ -1052,7 +1027,7 @@
             }
           })
           .propsFromState(function () {
-            return { userPresencePollingInterval: J, userSpace: G }
+            return { userPresencePollingInterval: G, userSpace: J }
           })
           .withAnalytics(),
         Q = a('3XMw'),
@@ -1215,8 +1190,8 @@
         Ie = X.a.h63a5c3b,
         Te = i.a.createElement(Se.a, null),
         Le = (function (e) {
-          R()(a, e)
-          var t = B()(a)
+          M()(a, e)
+          var t = N()(a)
           function a() {
             var e
             C()(this, a)
@@ -1255,10 +1230,10 @@
         })(i.a.PureComponent),
         Pe = a('pHkl'),
         xe = X.a.g7088266,
-        Re = X.a.gd7acb84,
-        Me = X.a.b7636014,
-        Be = i.a.createElement(_e.a, null),
-        Ne = te.a.create(function (e) {
+        Me = X.a.gd7acb84,
+        Re = X.a.b7636014,
+        Ne = i.a.createElement(_e.a, null),
+        Be = te.a.create(function (e) {
           return {
             buttons: {
               maxWidth: '100%',
@@ -1289,26 +1264,26 @@
             h = o.default_profile_image && !o.description && !o.profile_banner_url
           return i.a.createElement(
             ce.a,
-            { style: Ne.buttons },
+            { style: Be.buttons },
             n && c
               ? i.a.createElement(
                   ke.a,
                   {
                     link: h ? '/i/flow/setup_profile' : '/settings/profile',
-                    style: Ne.lastButton,
+                    style: Be.lastButton,
                     testID: we.a.editProfileButton,
                     type: 'primaryOutlined',
                   },
-                  h ? Re : xe,
+                  h ? Me : xe,
                 )
               : null,
-            f && i.a.createElement(Le, { buttonStyle: Ne.button, promotedContent: l, user: o }),
+            f && i.a.createElement(Le, { buttonStyle: Be.button, promotedContent: l, user: o }),
             !c &&
               p &&
               i.a.createElement(ke.a, {
-                accessibilityLabel: Me,
-                hoverLabel: { label: Me },
-                icon: Be,
+                accessibilityLabel: Re,
+                hoverLabel: { label: Re },
+                icon: Ne,
                 onPress: function () {
                   if (n) {
                     var e = Object(he.a)(o.id_str, n)
@@ -1325,7 +1300,7 @@
                       t.push('/messages/'.concat(e))
                   }
                 },
-                style: Ne.button,
+                style: Be.button,
                 testID: we.a.sendDMFromProfile,
                 type: 'primaryOutlined',
               }),
@@ -1334,7 +1309,7 @@
               i.a.createElement(be.a, {
                 allowPromptForPush: !0,
                 isFollowing: o.notifications,
-                style: Ne.button,
+                style: Be.button,
                 userId: o.id_str,
               }),
             !c &&
@@ -1343,7 +1318,7 @@
               i.a.createElement(
                 ve.a,
                 { onOffscreenChange: r },
-                i.a.createElement(ye.a, { promotedContent: l, style: Ne.lastButton, userId: o.id_str }),
+                i.a.createElement(ye.a, { promotedContent: l, style: Be.lastButton, userId: o.id_str }),
               ),
           )
         },
@@ -1357,10 +1332,10 @@
         We = a('t62R'),
         Ve = a('GWvE'),
         qe = a('Lsrn'),
-        Ge = a('k/Ka'),
-        Je = function () {
+        Je = a('k/Ka'),
+        Ge = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(Ge.a)(
+          return Object(Je.a)(
             'svg',
             S()(
               S()({}, e),
@@ -1380,8 +1355,8 @@
             ),
           )
         }
-      Je.metadata = { width: 24, height: 24 }
-      var $e = Je,
+      Ge.metadata = { width: 24, height: 24 }
+      var $e = Ge,
         Qe = a('KrGU'),
         Xe = a('I/9y'),
         Ye = a('YUdS'),
@@ -1642,8 +1617,8 @@
           )
         },
         xt = a('jV+4'),
-        Rt = a('ir4X'),
-        Mt = function (e) {
+        Mt = a('ir4X'),
+        Rt = function (e) {
           var t,
             a = e.isOwnProfile,
             n = e.isWithheld,
@@ -1698,15 +1673,15 @@
                 withStackedLayout: !0,
               }),
             ),
-            h ? i.a.createElement(Rt.a, { isIconLarge: !0, label: h }) : null,
+            h ? i.a.createElement(Mt.a, { isIconLarge: !0, label: h }) : null,
           )
         },
-        Bt = (a('uFXj'), a('W55q')),
-        Nt = a('YeSc'),
+        Nt = (a('uFXj'), a('W55q')),
+        Bt = a('YeSc'),
         At = { page: 'profile', section: void 0, component: 'newsletter_module' },
         Ot = Object(V.a)()
           .propsFromState(function () {
-            return { newsletter: Nt.f }
+            return { newsletter: Bt.f }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -1719,7 +1694,7 @@
             return {
               isSubscribed:
                 (null == n || null === (a = n.context) || void 0 === a ? void 0 : a.user_subscription_status) ===
-                Bt.c.Subscribed,
+                Nt.c.Subscribed,
               profileUrl: null == n ? void 0 : n.data.revue_account.profile_info.profile_url,
               revueAccountId: null == n ? void 0 : n.config.revue_account_id,
               showNewsletterSubscription: r,
@@ -1730,13 +1705,13 @@
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'NEWSLETTER_PROFILE_HEADER',
               ),
-              fetchUserBizProfileIfNeeded: Nt.c,
+              fetchUserBizProfileIfNeeded: Bt.c,
             }
           })
           .withAnalytics(At),
         Kt = Object(V.a)()
           .propsFromState(function () {
-            return { newsletter: Nt.f }
+            return { newsletter: Bt.f }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -1894,8 +1869,8 @@
         Wt,
         Vt,
         qt,
-        Gt,
         Jt,
+        Gt,
         $t,
         Qt,
         Xt,
@@ -2241,26 +2216,24 @@
             i.a.createElement(We.b, { size: 'body', weight: 'bold' }, t),
           )
         },
-        Ra = X.a.jaaa8984,
-        Ma = X.a.c2059c9f,
-        Ba = X.a.e2acb642,
-        Na = void 0 !== jt ? jt : (jt = a('nUER')),
+        Ma = X.a.jaaa8984,
+        Ra = X.a.c2059c9f,
+        Na = X.a.e2acb642,
+        Ba = void 0 !== jt ? jt : (jt = a('nUER')),
         Aa = void 0 !== Wt ? Wt : (Wt = a('hyc7')),
         Oa = function (e) {
-          var t,
-            a = e.profileSpotlightRef,
-            n = e.userRef,
-            r = i.a.useContext(j.a).featureSwitches.isTrue('responsive_web_location_spotlight_v1_display')
-          ca()(Na, n)
-          var l = ca()(Aa, a),
-            o = null === (t = l.data.address) || void 0 === t ? void 0 : t.formatted_address
-          return r
+          var t = e.profileSpotlightRef,
+            a = e.userRef,
+            n = i.a.useContext(j.a).featureSwitches.isTrue('responsive_web_location_spotlight_v1_display')
+          ca()(Ba, a)
+          var r = ca()(Aa, t)
+          return n
             ? i.a.createElement(re.a, null, function (e) {
                 var t = e.windowWidth <= te.a.theme.breakpoints.small
                 return i.a.createElement(
                   i.a.Fragment,
                   null,
-                  i.a.createElement(xa, { label: Ra }),
+                  i.a.createElement(xa, { label: Ma }),
                   (function (e) {
                     return i.a.createElement(
                       ka,
@@ -2269,23 +2242,14 @@
                         Fa,
                         null,
                         i.a.createElement(La, { isMobileLayout: e }, i.a.createElement(ga, null)),
-                        i.a.createElement(Ia, null, i.a.createElement(ma, { aboutModuleRef: l })),
+                        i.a.createElement(Ia, null, i.a.createElement(ma, { aboutModuleRef: r })),
                       ),
                       i.a.createElement(
                         _a,
                         null,
-                        o &&
-                          i.a.createElement(
-                            i.a.Fragment,
-                            null,
-                            i.a.createElement(ba, {
-                              label: Ma,
-                              link: 'https://www.google.com/maps/search/?api=1&query='.concat(encodeURIComponent(o)),
-                              onPress: function () {},
-                            }),
-                            i.a.createElement(wa, null),
-                          ),
-                        i.a.createElement(ba, { label: Ba, link: 'dummy_contact_link', onPress: function () {} }),
+                        i.a.createElement(ba, { label: Ra, link: 'dummy_directions_link', onPress: function () {} }),
+                        i.a.createElement(wa, null),
+                        i.a.createElement(ba, { label: Na, link: 'dummy_contact_link', onPress: function () {} }),
                       ),
                     )
                   })(t),
@@ -2437,8 +2401,8 @@
         Wa = X.a.d834aec4,
         Va = X.a.ab0deccf,
         qa = X.a.caeab0f7,
-        Ga = void 0 !== qt ? qt : (qt = a('hRT2')),
-        Ja = void 0 !== Gt ? Gt : (Gt = a('bu6k')),
+        Ja = void 0 !== qt ? qt : (qt = a('hRT2')),
+        Ga = void 0 !== Jt ? Jt : (Jt = a('bu6k')),
         $a = te.a.create(function (e) {
           return {
             actionButton: { margin: 'auto' },
@@ -2473,13 +2437,13 @@
             r = e.userRef,
             l = i.a.useContext(j.a).featureSwitches,
             o = Object(Ee.b)(),
-            s = ca()(Ga, r),
-            c = ca()(Ja, n),
+            s = ca()(Ja, r),
+            c = ca()(Ga, n),
             u = null == c ? void 0 : c.config.revue_account_id,
             d = null == c ? void 0 : c.data.revue_account.profile_info.profile_url,
             m =
               (null == c || null === (t = c.context) || void 0 === t ? void 0 : t.user_subscription_status) ===
-              Bt.c.Subscribed,
+              Nt.c.Subscribed,
             p =
               null == c || null === (a = c.data) || void 0 === a
                 ? void 0
@@ -2583,7 +2547,7 @@
               })
             : null
         },
-        Xa = void 0 !== Jt ? Jt : (Jt = a('+wNI')),
+        Xa = void 0 !== Gt ? Gt : (Gt = a('+wNI')),
         Ya = void 0 !== $t ? $t : ($t = a('Xcj+')),
         Za = Object.freeze({ Location: 'AboutModule', Newsletter: 'RevueModule' }),
         en = function (e) {
@@ -2668,8 +2632,8 @@
         },
         fn = { page: 'profile', section: 'header' },
         gn = (function (e) {
-          R()(a, e)
-          var t = B()(a)
+          M()(a, e)
+          var t = N()(a)
           function a(e, n) {
             var r
             return (
@@ -2742,7 +2706,7 @@
                             user: o,
                           }),
                         ),
-                        i.a.createElement(Mt, { isOwnProfile: s, isWithheld: a, namespace: fn, user: o }),
+                        i.a.createElement(Rt, { isOwnProfile: s, isWithheld: a, namespace: fn, user: o }),
                         c ? null : i.a.createElement(rt, { isOwnProfile: s, professionalCategoryName: r, user: o }),
                         u
                           ? null
@@ -2824,11 +2788,11 @@
           })
           .withAnalytics({ section: 'nft_nux_consumption' }),
         xn = a.p + 'nft_education_graphic.72be3745.png',
-        Rn = a('Wms4'),
-        Mn = a('feu+'),
-        Bn = function () {
+        Mn = a('Wms4'),
+        Rn = a('feu+'),
+        Nn = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(Ge.a)(
+          return Object(Je.a)(
             'svg',
             S()(
               S()({}, e),
@@ -2851,11 +2815,11 @@
             ),
           )
         }
-      Bn.metadata = { width: 24, height: 24 }
-      var Nn = Bn,
+      Nn.metadata = { width: 24, height: 24 }
+      var Bn = Nn,
         An = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(Ge.a)(
+          return Object(Je.a)(
             'svg',
             S()(
               S()({}, e),
@@ -2946,7 +2910,7 @@
             ),
           )
           return s
-            ? i.a.createElement(Mn.a, {
+            ? i.a.createElement(Rn.a, {
                 accessibilityRole: 'dialog',
                 actionLabel: Dn,
                 contentStyle: Vn.interstitialContent,
@@ -2980,7 +2944,7 @@
                     i.a.createElement(
                       ce.a,
                       { style: Vn.iconContainer },
-                      i.a.createElement(Nn, { style: Vn.icon }),
+                      i.a.createElement(Bn, { style: Vn.icon }),
                       i.a.createElement(We.b, null, Wn),
                     ),
                     i.a.createElement(
@@ -2994,7 +2958,7 @@
                       { style: [Vn.iconContainer, Vn.noMarginTop] },
                       i.a.createElement(ce.a, { style: Vn.icon }),
                       i.a.createElement(
-                        Rn.a,
+                        Mn.a,
                         { style: Vn.label },
                         i.a.createElement(On, { style: Vn.labelIcon }),
                         i.a.createElement(We.b, { weight: 'bold' }, Kn),
@@ -3007,14 +2971,14 @@
               })
             : null
         }),
-        Gn = a('AJXH'),
-        Jn = a('rJoH'),
+        Jn = a('AJXH'),
+        Gn = a('rJoH'),
         $n = a('Y6L+'),
         Qn = a('jS2K'),
         Xn = a('IG4P'),
         Yn = (function (e) {
-          R()(a, e)
-          var t = B()(a)
+          M()(a, e)
+          var t = N()(a)
           function a() {
             return C()(this, a), t.apply(this, arguments)
           }
@@ -3172,10 +3136,10 @@
         Lr = X.a.c4af3561,
         Pr = X.a.dbcaaab5,
         xr = X.a.hf162fb6,
-        Rr = X.a.ad7b2b38,
-        Mr = X.a.f19b4073,
-        Br = X.a.ha62da97,
-        Nr = X.a.ica87fde,
+        Mr = X.a.ad7b2b38,
+        Rr = X.a.f19b4073,
+        Nr = X.a.ha62da97,
+        Br = X.a.ica87fde,
         Ar = X.a.e79ed125,
         Or = X.a.g8475f82,
         Kr = X.a.c9a1cb5d,
@@ -3187,17 +3151,17 @@
         Wr = X.a.j58e7b00,
         Vr = X.a.d834ab9c,
         qr = { section: 'profile_interstitial' },
-        Gr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, '8KtR'))
-        }),
         Jr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'cFl3'))
+          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, '8KtR'))
+        }),
+        Gr = Object(Zn.a)(function () {
+          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'cFl3'))
         }),
         $r = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'ivpD'))
+          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'ivpD'))
         }),
         Qr = Object(Zn.a)(function () {
-          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'ylAD'))
+          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'ylAD'))
         }),
         Xr = 'about',
         Yr = 'likes',
@@ -3213,8 +3177,8 @@
           }
         }),
         il = (function (e) {
-          R()(a, e)
-          var t = B()(a)
+          M()(a, e)
+          var t = N()(a)
           function a(e, n) {
             var r
             return (
@@ -3405,9 +3369,9 @@
                     i = Math.floor(l / 24),
                     o = l % 24
                   return 0 === i
-                    ? Mr({ hourCount: o })
+                    ? Rr({ hourCount: o })
                     : 0 === o
-                    ? Rr({ dayCount: i })
+                    ? Mr({ dayCount: i })
                     : xr({ dayCount: i, hourCount: o })
                 }
                 return ''
@@ -3579,7 +3543,7 @@
                     primaryContent: i.a.createElement(
                       _n.a,
                       { fab: y },
-                      i.a.createElement(Jn.a, {
+                      i.a.createElement(Gn.a, {
                         canonical: E,
                         description: null == m ? void 0 : m.description,
                         image: null == m ? void 0 : m.profile_image_url_https,
@@ -3723,7 +3687,7 @@
                     Cn.b && d && m
                       ? i.a.createElement(ar, { screenName: m })
                       : Cn.b
-                      ? i.a.createElement(Gn.a, null)
+                      ? i.a.createElement(Jn.a, null)
                       : null,
                     i.a.createElement(ur.a, {
                       buttonText: t,
@@ -3781,7 +3745,7 @@
                   if (!e) return null
                   var t = this._getSmartBlockEndTimeSentence(),
                     a = e.screen_name,
-                    n = Br({ screenName: a }),
+                    n = Nr({ screenName: a }),
                     r = i.a.createElement(We.b, { color: 'gray700', weight: 'bold' }),
                     l = i.a.createElement(
                       ce.a,
@@ -3828,7 +3792,7 @@
                       { $i18n: 'ccade2e6', screenName: t },
                       i.a.createElement(We.b, { link: 'https://support.twitter.com/articles/20172060' }, X.a.de078c23),
                     )
-                  return this._renderEmptyState({ header: Nr, message: a })
+                  return this._renderEmptyState({ header: Br, message: a })
                 },
               },
               {
@@ -4088,32 +4052,32 @@
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/intent/follow' },
-                        i.a.createElement(Gr, r()({}, h, b)),
+                        i.a.createElement(Jr, r()({}, h, b)),
                       ),
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/intent/user' },
-                        i.a.createElement(Gr, r()({}, h, b)),
+                        i.a.createElement(Jr, r()({}, h, b)),
                       ),
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/'.concat($n.J) },
-                        i.a.createElement(Gr, r()({}, h, b, { onEntriesRendered: this._handleEntriesRendered })),
+                        i.a.createElement(Jr, r()({}, h, b, { onEntriesRendered: this._handleEntriesRendered })),
                       ),
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/'.concat($n.J, '/').concat(nl) },
-                        i.a.createElement(Gr, r()({}, h, b, { mode: 'with_replies' })),
+                        i.a.createElement(Jr, r()({}, h, b, { mode: 'with_replies' })),
                       ),
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/'.concat($n.J, '/').concat(tl) },
-                        i.a.createElement(Gr, r()({}, h, b, { mode: 'superfollows' })),
+                        i.a.createElement(Jr, r()({}, h, b, { mode: 'superfollows' })),
                       ),
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/'.concat($n.J, '/').concat(al) },
-                        i.a.createElement(Jr, r()({}, h, { hasTwitterArticles: t, twitterArticlesFetchStatus: l })),
+                        i.a.createElement(Gr, r()({}, h, { hasTwitterArticles: t, twitterArticlesFetchStatus: l })),
                       ),
                       i.a.createElement(
                         gr.b,
@@ -4128,7 +4092,7 @@
                       i.a.createElement(
                         gr.b,
                         { exact: !0, path: '/'.concat($n.J, '/').concat(Xr) },
-                        i.a.createElement(Gr, r()({}, h, b, { onEntriesRendered: this._handleEntriesRendered })),
+                        i.a.createElement(Jr, r()({}, h, b, { onEntriesRendered: this._handleEntriesRendered })),
                       ),
                     ),
                   )

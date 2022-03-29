@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [124],
+    [125],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -696,7 +696,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8581ccd', 'The term you entered did not bring up any results'),
           a('f08940ab', 'Start new message'),
           a('gaae1fd5', 'Try searching for people or groups'),
-          a('i5d7593a', 'Try searching for people, groups, or messages'),
           a('f8321d82', 'All'),
           a('c94ac69d', 'Groups'),
           a('g2fd3205', 'People'),
@@ -1164,11 +1163,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
           ),
           a('a1aa840e', 'Your Tweet was deleted'),
-          a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.')
-        a('e6c84638', 'Embed Tweet'),
-          a('c66afdc2', function (e) {
-            return 'Follow @' + e.screenName
-          }),
+          a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
+          a('e6c84638', 'Embed Tweet')
+        a('c66afdc2', function (e) {
+          return 'Follow @' + e.screenName
+        }),
           a('e1618e48', function (e) {
             return 'You followed @' + e.screenName
           }),
@@ -2302,11 +2301,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c6a6dc2f', function (e) {
             return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
           }),
-          a('c20dc653', 'Only 10 people can be tagged.')
-        a('ae0831ab', function (e) {
-          return '@' + e.screenName + ' can’t be tagged in photos'
-        }),
-          a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
+          a('c20dc653', 'Only 10 people can be tagged.'),
+          a('ae0831ab', function (e) {
+            return '@' + e.screenName + ' can’t be tagged in photos'
+          })
+        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
           a('e4e4e50a', 'Scheduled Tweets'),
           a('h3701ffd', 'Update'),
           a('c5dd0190', 'Time'),
@@ -2418,7 +2417,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h14ba864', 'Data sharing with business partners'),
           a('jabb9c9a', 'Location information'),
           a('eb029cab', 'Add location information to your Tweets'),
-          a('h9f2da68', 'Sensitive media'),
           a('gaac7109', 'Report Center'),
           a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
@@ -3367,13 +3365,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c119dee8', 'Birth date'),
           a('bbf0afc7', 'Add your date of birth'),
           a('f98d367e', 'Edit date of birth?'),
+          a('b982a8b4', 'This can only be changed a few times.'),
           a(
-            'd3f4330f',
-            'This can only be changed a few times. Make sure you enter the age of the person using the account.',
-          ),
-          a(
-            'g10411f0',
-            'This should be the date of birth of the person using the account. Even if you’re making an account for your business, event, or cat.',
+            'cfc38329',
+            'This should be your date of birth, whether this account is for your business, event, or even your cat.',
           ),
           a('a0c5e37f', 'Who sees this?'),
           a('i68fe54e', 'Month and day'),
@@ -3384,7 +3379,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c37622ec', 'Please enter a valid date'),
           a('c33a97d6', 'Public'),
           a('f679d165', 'Your followers'),
-          a('a83de3ae', 'Privacy Policy'),
           a('d32983bd', 'Learn more'),
           a('a46f80ab', function (e) {
             return 'Born ' + e.birthdate
@@ -3547,13 +3541,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g1aced04', 'Apps, devices & information'),
           a('j4fa776e', 'Phones'),
-          a('i7acdb35', 'Tablets')
-        a('c112dfc8', 'Desktop'),
+          a('i7acdb35', 'Tablets'),
+          a('c112dfc8', 'Desktop'),
           a('jd8607b9', 'Activated on'),
-          a('ea4f6c9e', 'Browsers'),
-          a('d750b93e', function (e) {
-            return e.count + ' browser' + n(e.count, '', 's')
-          }),
+          a('ea4f6c9e', 'Browsers')
+        a('d750b93e', function (e) {
+          return e.count + ' browser' + n(e.count, '', 's')
+        }),
           a('a9783601', 'Mobile Devices'),
           a('j043aa31', function (e) {
             return e.count + ' mobile device' + n(e.count, '', 's')
@@ -4762,7 +4756,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('b81437d2', 'Select visibility mode'),
           a('i693139c', 'Contains sensitive content'),
-          a('b198b98f', 'Your Moment’s visibility settings were updated.')
+          a('b198b98f', 'Your Moment’s visibility settings were updated.'),
+          a('ed26ca65', 'Add Tweets'),
+          a(
+            'c78fafa3',
+            'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
+          ),
+          a('e16e8170', 'Position')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4779,15 +4779,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ed26ca65', 'Add Tweets'),
-          a(
-            'c78fafa3',
-            'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
-          ),
-          a('e16e8170', 'Position'),
-          a('a2bb5115', function (e) {
-            return e.count + ' Tweet' + n(e.count, '', 's')
-          }),
+        a('a2bb5115', function (e) {
+          return e.count + ' Tweet' + n(e.count, '', 's')
+        }),
           a('j5602a96', function (e) {
             return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
           }),
@@ -4957,7 +4951,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('i1801686', 'This is an invalid search query. Please try a different one.'),
           a('cd9102d4', 'Choose category'),
-          a('eb551ae9', 'Show category on profile'),
+          a('d93271e2', 'Show category'),
+          a('h26379fe', 'If enabled, the category will be visible in your profile.'),
           a('f386777a', 'Switch account type'),
           a('d4b6a6ef', 'Profile Spotlight'),
           a('d834aec4', 'Newsletter'),
@@ -5212,21 +5207,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jede3014', 'Your promotion is under review'),
           a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
-          a('ge538875', 'Metrics for the video you shared'),
-          a('dcc05a7d', 'Views'),
-          a('ca7e10d7', 'Unique views'),
-          a('bd174250', 'Total number of times this video was viewed across all Tweets'),
-          a('a69cd868', 'Number of unique views for this video'),
-          a('f894a687', 'Audience retention'),
-          a(
-            'ad9d9204',
-            'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
-          ),
-          a('e5b7dd84', 'Start'),
-          a('de2d89a2', 'Watched 25%'),
-          a('i92754c2', 'Watched 50%'),
-          a('be8ddcc1', 'Watched 75%'),
-          a('b01410d5', 'Watched 100%'),
           a('a065172e', 'You may only promote your own Tweets.'),
           a('cfcdb4a1', 'Something went wrong. Make sure you’ve disabled any ad blockers.'),
           a('a3a09d48', 'Your total budget'),
@@ -5741,13 +5721,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d441fe05', 'When someone requests to follow you, it’ll show up here.'),
           a('j85d8d9f', 'No follow request pending for that user.'),
           a('ec2d8341', 'Decline'),
+          a('d2613122', function (e) {
+            return 'Subscribe - ' + e.price + '/mo'
+          }),
           a(
             'c3d23f10',
             'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
           ),
-          a('d2613122', function (e) {
-            return 'Subscribe - ' + e.price + '/mo'
-          }),
           a('d822ae43', 'Twitter Purchaser Terms'),
           a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446cd', 'This browser is no longer supported.'),
@@ -6037,8 +6017,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Visit ' + e.advertiserName
           }),
           a('c67e71aa', 'Watch now'),
-          a('j0f12222', 'See more')
-        a('f569f7c7', 'Go to website'),
+          a('j0f12222', 'See more'),
+          a('f569f7c7', 'Go to website'),
           a('j0c67729', 'Visit website'),
           a('f73003aa', 'Video will play after ad'),
           a('b3112b89', 'Skip'),
@@ -6055,8 +6035,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7e954de', '0.5x'),
           a('g07ffe66', '0.75x'),
           a('d8bede9d', '1x'),
-          a('j41845c7', '1.25x'),
-          a('e9eeed9e', '1.5x'),
+          a('j41845c7', '1.25x')
+        a('e9eeed9e', '1.5x'),
           a('fe45dc83', '1.75x'),
           a('e791190a', '2x'),
           a('b3160a69', function (e) {
@@ -8106,15 +8086,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'e9dec56e',
                 get: function () {
                   return ['You are confirming that ', ', is accurate. If it’s not, your account may be affected.']
-                },
-              },
-              {
-                key: 'd9ebec8c',
-                get: function () {
-                  return [
-                    'Twitter uses your age to customize your experience, including ads, as explained in our ',
-                    '.',
-                  ]
                 },
               },
               {
@@ -10706,27 +10677,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             ],
             l('en').pluralGenerator({}),
           )),
-          (l.b1911307442 = h([
-            '',
-            ,
-            1,
-            0,
-            0,
-            ,
-            ,
-            ,
-            3,
-            ,
-            '',
-            '#,##0.###',
-            '-#,##0.###',
-            '-',
-            '',
-            b('round'),
-            '∞',
-            'NaN',
-            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-          ])),
           (l.b1158699306 = h(
             [
               '',
@@ -11550,7 +11500,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ja781451', l.a71710728),
           a('cfa1a7b8', l.a605057387),
           a('eefcd267', l.a50325677),
-          a('fa8afc43', l.b1911307442),
           a('cf8abf58', l.b1158699306),
           a('d0783e70', l.b1207917069),
           a('e8c823d2', l.a330342455),

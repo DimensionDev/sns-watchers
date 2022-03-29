@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [30],
+  [31],
   {
     '3EFP': function (e, t, a) {
       'use strict'
@@ -1530,13 +1530,12 @@
                 var t = e.length
                 return n._isInvalidNumber() && (t = 1), t
               }),
-              b()(p()(n), '_handleBlur', function () {
-                var e,
-                  t = n.props.onBlur,
-                  a = (null === (e = n._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
+              b()(p()(n), '_handleBlur', function (e) {
+                var t = n.props.onBlur,
+                  a = e.currentTarget.value,
                   r = n._calculateLength(a),
                   o = n._getActualCount(a)
-                n.setState({ isFocused: !1, displayCount: r, actualCount: o }), t && t()
+                n.setState({ isFocused: !1, displayCount: r, actualCount: o }), t && t(e)
               }),
               b()(p()(n), '_handleChange', function (e) {
                 var t = n.props.onChange,

@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [66],
+  [67],
   {
     CBsz: function (e, t, a) {
       'use strict'
       a.r(t),
         a.d(t, 'MomentAnalyticsScreen', function () {
-          return B
+          return F
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -51,15 +51,15 @@
         U = a('MWbm'),
         O = a('t62R'),
         T = a('MtXG'),
-        I = a('855f'),
-        R = a('rHpw'),
+        R = a('855f'),
+        I = a('rHpw'),
         w = a('3XMw'),
         P = a.n(w),
         L = P.a.e2e35f0d,
         A = P.a.icfe5fe3,
-        D = P.a.a52a1fb9,
-        k = P.a.if221231,
-        B = (function (e) {
+        k = P.a.a52a1fb9,
+        D = P.a.if221231,
+        F = (function (e) {
           l()(a, e)
           var t = u()(a)
           function a(e) {
@@ -124,11 +124,11 @@
                         { backButtonType: 'close', backLocation: g, documentTitle: E, history: t, title: E },
                         m.a.createElement(
                           U.a,
-                          { style: F.container },
+                          { style: B.container },
                           m.a.createElement(
                             U.a,
-                            { style: F.titleTextContainer },
-                            m.a.createElement(O.b, { style: F.titleText, weight: 'bold' }, c),
+                            { style: B.titleTextContainer },
+                            m.a.createElement(O.b, { style: B.titleText, weight: 'bold' }, c),
                           ),
                           m.a.createElement(
                             T.a.Group,
@@ -138,7 +138,7 @@
                               null,
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
@@ -148,7 +148,7 @@
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.f22fc1cb({ formattedCount: I.a.getFormattedCount(Number(s)) }),
+                                      P.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
                                     ),
                                     m.a.createElement(T.a.Value, null, P.a.c71523ef({ count: s })),
                                   ),
@@ -157,7 +157,7 @@
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
@@ -167,7 +167,7 @@
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.eca2dfe8({ formattedCount: I.a.getFormattedCount(Number(d)) }),
+                                      P.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
                                     ),
                                     m.a.createElement(T.a.Value, null, P.a.a77bd6f4({ count: d })),
                                   ),
@@ -176,7 +176,7 @@
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
@@ -186,16 +186,16 @@
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.cb22dca4({ formattedCount: I.a.getFormattedCount(Number(h)) }),
+                                      P.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
                                     ),
                                     m.a.createElement(T.a.Value, null, P.a.a30d7c4d({ count: h })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, D),
+                                m.a.createElement(O.b, { color: 'gray700' }, k),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: F.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
@@ -205,12 +205,12 @@
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.e5463c29({ formattedCount: I.a.getFormattedCount(f) }),
+                                      P.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
                                     ),
                                     m.a.createElement(T.a.Value, null, P.a.j20f66ed({ count: f })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, k),
+                                m.a.createElement(O.b, { color: 'gray700' }, D),
                               ),
                             ),
                           ),
@@ -223,7 +223,7 @@
             a
           )
         })(m.a.Component),
-        F = R.a.create(function (e) {
+        B = I.a.create(function (e) {
           return {
             analytic: { marginBottom: e.spaces.space16 },
             container: { height: '100%', padding: 20 },
@@ -231,7 +231,7 @@
             titleTextContainer: { marginBottom: e.spaces.space16 },
           }
         }),
-        x = E(B)
+        x = E(F)
       t.default = x
     },
     DBID: function (e, t, a) {
@@ -302,10 +302,10 @@
       'use strict'
       a.r(t),
         a.d(t, 'getReferringPage', function () {
-          return ie
+          return ne
         }),
         a.d(t, 'TwitterBlueSignUpScreen', function () {
-          return oe
+          return ce
         })
       var r = a('yiKp'),
         n = a.n(r),
@@ -404,7 +404,7 @@
         }
       O.metadata = { width: 24, height: 24 }
       var T = O,
-        I = function (e, t, a) {
+        R = function (e, t, a) {
           var r = [
             {
               icon: h,
@@ -490,15 +490,12 @@
             ]
           )
         },
-        R = a('wrlS'),
+        I = a('wrlS'),
         w = a('rxPX'),
         P = a('su2V'),
         L = a('cnVF'),
         A = function (e) {
-          return Object(R.d)(e).isTrue('subscriptions_stripe_testing') ? L.G : L.D
-        },
-        D = function (e) {
-          return Object(R.d)(e).isTrue('subscriptions_stripe_testing') ? L.H : L.E
+          return Object(I.d)(e).isTrue('subscriptions_stripe_testing') ? L.F : L.D
         },
         k = Object(w.a)()
           .propsFromState(function () {
@@ -516,22 +513,21 @@
                 return Object(P.e)(e, A(e))
               },
               twitterBlueID: A,
-              twitterBlueIDUnhashed: D,
             }
           })
           .propsFromActions(function () {
             return { fetchSubscriptionProductDetails: P.d, fetchSubscriptionProductCheckoutUrl: P.b }
           })
           .withAnalytics({ page: 'subscriptions', section: 'marketing' }),
-        B = a('v//M'),
+        D = a('v//M'),
         F = a('MWbm'),
-        x = a('t62R'),
-        H = a('/yvb'),
+        B = a('t62R'),
+        x = a('/yvb'),
         N = a('rHpw'),
-        M = a('zCf4'),
-        z = a('VKnd'),
-        j = d.a.b9238e88,
-        V = {
+        H = a('zCf4'),
+        M = a('VKnd'),
+        z = d.a.b9238e88,
+        j = {
           USD: d.a.d0783e70,
           EUR: d.a.e8c823d2,
           GBP: d.a.gbf0e6c6,
@@ -539,7 +535,7 @@
           AUD: d.a.c93cb976,
           NZD: d.a.c32b252a,
         },
-        W = function (e) {
+        V = function (e) {
           var t,
             a,
             r,
@@ -552,7 +548,7 @@
                   : r.slice(1)) ||
                 ''
         },
-        K = N.a.create(function (e) {
+        W = N.a.create(function (e) {
           return {
             buttonWrapper: {
               alignItems: 'center',
@@ -571,7 +567,7 @@
             button: { width: '75%', cursor: 'pointer', alignItems: 'center' },
           }
         }),
-        Q = k(function (e) {
+        K = k(function (e) {
           var t = e.analytics,
             a = e.buttonStyle,
             r = e.checkoutUrl,
@@ -584,73 +580,73 @@
             m = e.style,
             p = e.termsOfServiceStyle,
             f = e.twitterBlueID,
-            b = e.twitterBlueIDUnhashed,
-            h = Object(M.g)(),
-            g = function () {
-              t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: W(h) } }),
+            b = Object(H.g)(),
+            h = function () {
+              t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: V(b) } }),
                 c(f)
                   .then(function () {
-                    t.scribe({ action: 'success', element: 'fetch_product', data: { referring_page: W(h) } })
+                    t.scribe({ action: 'success', element: 'fetch_product', data: { referring_page: V(b) } })
                   })
                   .catch(function () {
-                    t.scribe({ action: 'failure', element: 'fetch_product', data: { referring_page: W(h) } })
+                    t.scribe({ action: 'failure', element: 'fetch_product', data: { referring_page: V(b) } })
                   })
             }
           l.a.useEffect(
             function () {
-              g()
+              h()
             },
             [c],
           )
-          var E = l.a.useCallback(
+          var g = l.a.useCallback(
             function () {
-              if ((t.scribe({ action: 'click', element: 'subscribe', data: { referring_page: W(h) } }), s)) {
+              if ((t.scribe({ action: 'click', element: 'subscribe', data: { referring_page: V(b) } }), s)) {
                 var e,
-                  a = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null
-                ;(null == a ? void 0 : a.external_price_id) && i(f, b, z.c, z.a)
+                  a = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
+                  r = null == a ? void 0 : a.external_price_id
+                r && i(f, r, M.c, M.a)
               }
               o && o()
             },
-            [o, t, h, i, s, f, b],
+            [o, t, b, i, s, f],
           )
           return l.a.createElement(
             l.a.Fragment,
             null,
-            l.a.createElement(B.a, {
+            l.a.createElement(D.a, {
               fetchStatus: u,
               onRequestRetry: function () {
-                g()
+                h()
               },
               render: function () {
                 var e = null != s && s.prices && s.prices.length ? s.prices[0] : null,
                   t = null == e ? void 0 : e.currency_code.toUpperCase(),
                   r = null != e && e.amount_local_micro ? e.amount_local_micro / 1e6 : null
                 if (!t || !r) return null
-                var i = (0, V[t])(r),
-                  c = j({ price: i })
+                var i = (0, j[t])(r),
+                  c = z({ price: i })
                 return l.a.createElement(
                   F.a,
-                  { style: [K.buttonWrapper, m] },
+                  { style: [W.buttonWrapper, m] },
                   l.a.createElement(
                     F.a,
-                    { style: [K.termsOfService, p] },
+                    { style: [W.termsOfService, p] },
                     l.a.createElement(
-                      x.b,
+                      B.b,
                       { align: 'center', color: 'gray700', size: 'subtext3' },
                       l.a.createElement(
                         d.a.I18NFormatMessage,
                         { $i18n: 'a66ed614' },
-                        l.a.createElement(x.b, { link: 'https://legal.twitter.com/purchaser-terms' }, d.a.ea6a437a),
+                        l.a.createElement(B.b, { link: 'https://legal.twitter.com/purchaser-terms' }, d.a.ea6a437a),
                       ),
                     ),
                   ),
                   l.a.createElement(
-                    H.a,
+                    x.a,
                     {
                       accessibilityLabel: c,
                       disabled: !s || 'loading' === n,
-                      onPress: E,
-                      style: [K.button, a],
+                      onPress: g,
+                      style: [W.button, a],
                       type: 'primaryFilled',
                     },
                     c,
@@ -659,13 +655,14 @@
               },
               retryable: !0,
             }),
-            l.a.createElement(B.a, {
+            l.a.createElement(D.a, {
               fetchStatus: n,
               onRequestRetry: function () {
                 if (s) {
                   var e,
-                    t = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null
-                  ;(null == t ? void 0 : t.external_price_id) && i(f, b, z.c, z.a)
+                    t = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
+                    a = null == t ? void 0 : t.external_price_id
+                  a && i(f, a, M.c, M.a)
                 }
               },
               render: function () {
@@ -675,19 +672,19 @@
             }),
           )
         }),
-        G = a.p + 'twitter-blue-wave.d1b48db5.svg',
+        Q = a.p + 'twitter-blue-wave.d1b48db5.svg',
         q = a('Irs7'),
-        X = a('aITJ'),
-        J = a('Wms4'),
-        Y = a('sgih'),
-        Z = a('xKuM'),
-        $ = a('hOZg'),
-        ee = a('lUZE'),
-        te = a('tH6R'),
-        ae = d.a.a7fedd05,
-        re = d.a.b08821f3,
-        ne = d.a.ed21f885,
-        ie = function (e) {
+        G = a('aITJ'),
+        X = a('Wms4'),
+        J = a('sgih'),
+        Y = a('xKuM'),
+        Z = a('hOZg'),
+        $ = a('lUZE'),
+        ee = a('tH6R'),
+        te = d.a.a7fedd05,
+        ae = d.a.b08821f3,
+        re = d.a.ed21f885,
+        ne = function (e) {
           var t,
             a,
             r,
@@ -700,16 +697,16 @@
                   : r.slice(1)) ||
                 ''
         },
-        ce = { page: 'subscriptions', section: 'marketing' },
-        oe = function (e) {
+        ie = { page: 'subscriptions', section: 'marketing' },
+        ce = function (e) {
           var t = Object(q.b)(),
             a = l.a.useContext(s.a).featureSwitches,
             r = a.isTrue('subscriptions_twitter_blue_logo_enabled'),
             i = a.isTrue('subscriptions_top_articles_on_ios_enabled'),
             o = a.isTrue('subscriptions_feature_1002'),
             u = !a.isTrue('dm_conversation_labels_pinned_enabled') && a.isTrue('subscriptions_feature_labs_1001'),
-            d = Object(M.f)(),
-            m = Object(M.g)(),
+            d = Object(H.f)(),
+            m = Object(H.g)(),
             p = l.a.useState(!1),
             f = c()(p, 2),
             b = f[0],
@@ -717,12 +714,12 @@
           l.a.useEffect(function () {
             var e = Date.now()
             return (
-              t.scribe(n()(n()({}, ce), {}, { action: 'impression', data: { referring_page: ie(m) } })),
+              t.scribe(n()(n()({}, ie), {}, { action: 'impression', data: { referring_page: ne(m) } })),
               function () {
                 var a = Math.floor((Date.now() - e) / 1e3)
                 t.scribe(
                   n()(
-                    n()({}, ce),
+                    n()({}, ie),
                     {},
                     {
                       action: 'end_session',
@@ -743,15 +740,15 @@
               var a = e.map(function (e, t) {
                 return (function (e, t) {
                   if (e.illustrationName) {
-                    var a = X.b.isMobileOS() ? '100px' : 'initial'
+                    var a = G.b.isMobileOS() ? '100px' : 'initial'
                     return l.a.createElement(
                       l.a.Fragment,
                       { key: e.illustrationName },
-                      l.a.createElement(F.a, { style: le.widthDivider }),
+                      l.a.createElement(F.a, { style: oe.widthDivider }),
                       l.a.createElement(F.a, {
                         style: [
-                          le.feature,
-                          le.illustration,
+                          oe.feature,
+                          oe.illustration,
                           {
                             backgroundImage: 'url('.concat(null == e ? void 0 : e.illustrationName, ')'),
                             maxHeight: a,
@@ -764,25 +761,25 @@
                     var r = e.icon
                     return l.a.createElement(
                       F.a,
-                      { key: t, style: le.feature, testID: 'feature' },
-                      l.a.createElement(F.a, null, l.a.createElement(r, { style: le.featureIcon })),
+                      { key: t, style: oe.feature, testID: 'feature' },
+                      l.a.createElement(F.a, null, l.a.createElement(r, { style: oe.featureIcon })),
                       l.a.createElement(
                         F.a,
-                        { style: le.featureContent },
-                        l.a.createElement(x.b, { size: 'body', weight: 'bold' }, e.heading),
+                        { style: oe.featureContent },
+                        l.a.createElement(B.b, { size: 'body', weight: 'bold' }, e.heading),
                         l.a.createElement(
-                          x.b,
-                          { color: 'gray700', size: 'body', style: le.featureDescription },
+                          B.b,
+                          { color: 'gray700', size: 'body', style: oe.featureDescription },
                           e.description,
                         ),
                         l.a.createElement(
                           F.a,
-                          { style: le.labelWrapper },
+                          { style: oe.labelWrapper },
                           e.platformAvailabilityLabel.map(function (e) {
                             return l.a.createElement(
-                              J.a,
-                              { background: 'maskColor', bold: !0, key: e, style: le.labelStyle },
-                              l.a.createElement(x.b, { color: 'gray700' }, e),
+                              X.a,
+                              { background: 'maskColor', bold: !0, key: e, style: oe.labelStyle },
+                              l.a.createElement(B.b, { color: 'gray700' }, e),
                             )
                           }),
                         ),
@@ -792,79 +789,79 @@
                   return null
                 })(e, t)
               })
-              return l.a.createElement(F.a, { key: t, style: le.featureRow, testID: 'featureRow' }, a)
+              return l.a.createElement(F.a, { key: t, style: oe.featureRow, testID: 'featureRow' }, a)
             },
-            y = I(i, o, u).map(function (e, t) {
+            y = R(i, o, u).map(function (e, t) {
               return (function (e, t) {
                 var a = e.features.map(function (e, t) {
                   return v(e, t)
                 })
                 return l.a.createElement(
                   F.a,
-                  { key: t, style: le.featureGroup },
-                  l.a.createElement(x.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
+                  { key: t, style: oe.featureGroup },
+                  l.a.createElement(B.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
                   a,
                 )
               })(e, t)
             })
           return l.a.createElement(
-            Y.a,
+            J.a,
             {
               allowBackNavigation: !0,
               enableMaskForDismiss: !0,
               onMaskClick: g,
-              style: le.root,
+              style: oe.root,
               type: 'full',
               withMask: !0,
             },
             l.a.createElement(
               F.a,
-              { style: le.appBarContainer },
-              l.a.createElement(Z.a, {
-                centeredLogo: l.a.createElement(ee.a, { style: le.twitterLogo }),
-                leftControl: l.a.createElement(H.a, {
-                  accessibilityLabel: re,
+              { style: oe.appBarContainer },
+              l.a.createElement(Y.a, {
+                centeredLogo: l.a.createElement($.a, { style: oe.twitterLogo }),
+                leftControl: l.a.createElement(x.a, {
+                  accessibilityLabel: ae,
                   borderColor: 'transparent',
-                  hoverLabel: { label: re },
-                  icon: l.a.createElement($.a, { style: le.topIcons }),
+                  hoverLabel: { label: ae },
+                  icon: l.a.createElement(Z.a, { style: oe.topIcons }),
                   onPress: g,
                   pullLeft: !0,
                   size: 'medium',
                 }),
-                style: le.appBar,
+                style: oe.appBar,
                 withBackground: !1,
               }),
             ),
             l.a.createElement(
               F.a,
-              { style: le.contentWrapper },
+              { style: oe.contentWrapper },
               l.a.createElement(
                 F.a,
-                { style: le.bgImage },
+                { style: oe.bgImage },
                 l.a.createElement(
                   F.a,
-                  { style: [le.topContent, { paddingTop: X.b.isMobileOS() ? '26px' : '50px' }] },
+                  { style: [oe.topContent, { paddingTop: G.b.isMobileOS() ? '26px' : '50px' }] },
                   r
                     ? l.a.createElement(
                         F.a,
-                        { style: le.contentBlueIcon },
-                        l.a.createElement(te.a, { style: le.iconTwitterBlue }),
+                        { style: oe.contentBlueIcon },
+                        l.a.createElement(ee.a, { style: oe.iconTwitterBlue }),
                       )
-                    : l.a.createElement(x.b, { size: 'title1', weight: 'heavy' }, ne),
-                  l.a.createElement(x.b, { size: 'headline1', style: le.subtitle }, ae),
+                    : l.a.createElement(B.b, { size: 'title1', weight: 'heavy' }, re),
+                  l.a.createElement(B.b, { size: 'headline1', style: oe.subtitle }, te),
                 ),
               ),
-              l.a.createElement(F.a, { style: le.content }, y),
+              l.a.createElement(F.a, { style: oe.content }, y),
             ),
-            l.a.createElement(Q, { onClick: E }),
+            l.a.createElement(K, { onClick: E }),
           )
         },
-        le = N.a.create(function (e) {
+        oe = N.a.create(function (e) {
           return {
             root: { minHeight: 400 },
             appBar: { zIndex: '2' },
             appBarContainer: { backgroundColor: e.colors.white },
-            bgImage: { backgroundImage: 'url('.concat(G, ')'), backgroundRepeat: 'no-repeat' },
+            bgImage: { backgroundImage: 'url('.concat(Q, ')'), backgroundRepeat: 'no-repeat' },
             iconTwitterBlue: { transform: [{ scale: 1.5 }], transformOrigin: 'bottom left' },
             illustration: {
               backgroundSize: 'contain',
@@ -890,7 +887,7 @@
             widthDivider: { width: 24 },
           }
         })
-      t.default = oe
+      t.default = ce
     },
     'ShJ/': function (e, t, a) {
       'use strict'
@@ -1012,7 +1009,7 @@
           return T
         }),
         a.d(t, 'c', function () {
-          return I
+          return R
         })
       var r = a('KEM+'),
         n = a.n(r),
@@ -1097,7 +1094,7 @@
           return function (n, i, c) {
             var l = c.api,
               u = Object(o.b)(n, {
-                params: { external_product_id: t, success_url: a, cancel_url: r },
+                params: { price_id: t, success_url: a, cancel_url: r },
                 request: l.SubscriptionPayments.fetchSubscriptionProductCheckoutUrl,
               }),
               d = E(i(), e)
@@ -1116,7 +1113,7 @@
               : n({ actionTypes: p, context: 'FETCH_PRODUCT_SUBSCRIPTIONS', meta: {} })
           }
         },
-        I = function (e, t) {
+        R = function (e, t) {
           return function (a, r, n) {
             var i = n.api,
               c = Object(o.b)(a, {
@@ -1275,7 +1272,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TwitterBlueSignUpSuccess', function () {
-          return R
+          return I
         })
       var r = a('ddV6'),
         n = a.n(r),
@@ -1305,8 +1302,8 @@
         U = p.a.ia5e7487,
         O = p.a.a219e217,
         T = p.a.f0e32de5,
-        I = p.a.gc6e8c17
-      function R(e) {
+        R = p.a.gc6e8c17
+      function I(e) {
         var t = e.analytics,
           a = e.fetchUserClaims,
           r = Object(h.f)(),
@@ -1326,12 +1323,12 @@
         function S() {
           r.push('/home')
         }
-        function R() {
+        function I() {
           return c.a.createElement(
             c.a.Fragment,
             null,
             c.a.createElement(E.b, { size: 'title2', style: w.title, weight: 'heavy' }, T),
-            c.a.createElement(E.b, { style: w.subtitle }, I),
+            c.a.createElement(E.b, { style: w.subtitle }, R),
             c.a.createElement(v.a, { onPress: S, size: 'xLarge', type: 'primaryFilled' }, O),
           )
         }
@@ -1362,7 +1359,7 @@
               _.a,
               { style: g.b.isMobileOS() ? w.contentSmall : w.content },
               c.a.createElement(C.a, { source: b, style: w.img }),
-              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: R, retryable: !0 }),
+              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: I, retryable: !0 }),
             ),
           )
         )
@@ -1381,7 +1378,7 @@
             closeButton: { paddingTop: 15 },
           }
         }),
-        P = u(R)
+        P = u(I)
       t.default = P
     },
   },

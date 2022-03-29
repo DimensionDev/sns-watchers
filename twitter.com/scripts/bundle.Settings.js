@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [87, 12],
+  [88, 10],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -1258,7 +1258,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -7016,7 +7016,7 @@
                 switch (o.type) {
                   case oe.b.User:
                     var s = o.data,
-                      u = l ? l({ userId: s.id_str, user: s, isSelected: r }) : void 0,
+                      u = l ? l({ userId: s.id_str, isSelected: r }) : void 0,
                       d = n ? n(o, s) : void 0
                     return g.a.createElement(pe, {
                       avatarUri: s.profile_image_url_https,

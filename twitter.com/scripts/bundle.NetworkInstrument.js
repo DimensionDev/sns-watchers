@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [69],
+  [70],
   {
     ujfh: function (e, t, n) {
       'use strict'
@@ -40,8 +40,8 @@
         h = n('k49u'),
         f = n('ZjLa'),
         l = n('Myq3'),
-        w = n('EhiH'),
-        v = n('/NU0'),
+        v = n('EhiH'),
+        w = n('/NU0'),
         g = ['error'],
         y = [h.a.BadOauthToken, h.a.OauthTimestampException, h.a.BadAuthenticationData, h.a.AccessDeniedByBouncer],
         k = (function () {
@@ -53,22 +53,12 @@
                   n = e.error,
                   i = s()(e, g),
                   o = new window.URL(i.url)
-                if (n || !t) {
-                  var a = new window.URL(e.url)
-                  if (
-                    ((t = {
-                      request: { host: a.origin, method: e.method, headers: e.headers, path: a.pathname, uri: e.url },
-                      headers: {},
-                      body: '',
-                      status: n ? n.status : 500,
-                    }),
-                    !(n instanceof p.a))
-                  )
-                    return
-                }
-                if (!r._shouldFilter(o)) {
+                if (
+                  ((!n && t) || ((t = { headers: {}, body: '', status: n ? n.status : 500 }), n instanceof p.a)) &&
+                  !r._shouldFilter(o)
+                ) {
                   r._flushResourceTimingBuffer()
-                  var u = Object(l.a)(r._buffer, function (e) {
+                  var a = Object(l.a)(r._buffer, function (e) {
                     var t = e.request
                     return (
                       o.protocol === t.uri_scheme &&
@@ -77,13 +67,13 @@
                       o.searchParams.toString() === t.uri_query
                     )
                   })
-                  if (u) {
-                    var _ = r._buffer.indexOf(u)
-                    r._buffer[_] = r._updateEventWithRequestResponse(u, i, t, n)
+                  if (a) {
+                    var u = r._buffer.indexOf(a)
+                    r._buffer[u] = r._updateEventWithRequestResponse(a, i, t, n)
                   } else {
-                    var c = r._prepareEvent(i.url),
-                      m = c && r._updateEventWithRequestResponse(c, i, t, n)
-                    m && r._buffer.push(m)
+                    var _ = r._prepareEvent(i.url),
+                      c = _ && r._updateEventWithRequestResponse(_, i, t, n)
+                    c && r._buffer.push(c)
                   }
                   r._flushBuffer()
                 }
@@ -239,7 +229,7 @@
                       .filter(function (e) {
                         return void 0 !== e
                       }),
-                    r = Object(w.a)(n, function (e) {
+                    r = Object(v.a)(n, function (e) {
                       return y.indexOf(e) > -1
                     })
                   return r || (n.length > 0 ? n[0] : void 0)
@@ -287,7 +277,7 @@
               {
                 key: '_getTiming',
                 value: function (e, t) {
-                  return Object(v.a)(e) && Object(v.a)(t) ? Math.round(t - e) : void 0
+                  return Object(w.a)(e) && Object(w.a)(t) ? Math.round(t - e) : void 0
                 },
               },
               {

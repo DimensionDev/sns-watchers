@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [109],
+  [110],
   {
     e5HP: function (e, o, t) {
       'use strict'
@@ -22,9 +22,9 @@
         m = t('3XMw'),
         y = t.n(m),
         b = t('rHpw'),
-        v = t('MWbm'),
-        g = t('yiKp'),
-        _ = t.n(g),
+        g = t('MWbm'),
+        v = t('yiKp'),
+        _ = t.n(v),
         E = t('Lsrn'),
         O = t('k/Ka'),
         I = function () {
@@ -75,7 +75,7 @@
                     r = e.style,
                     n = e.withCircleIcon ? L : F.a
                   return p.a.createElement(
-                    v.a,
+                    g.a,
                     { style: [R.root, r] },
                     p.a.createElement(n, { style: [R.icon, o && R[o]] }),
                     p.a.createElement(h.b, { color: o, nativeID: t, size: 'subtext2' }, this._getPromotedLabel()),
@@ -151,8 +151,8 @@
         m = t.n(h),
         y = t('es0u'),
         b = (t('KqXw'), t('WNMA'), t('XnvM')),
-        v = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
-        g = t('WpDa'),
+        g = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
+        v = t('WpDa'),
         _ = t('ZNT5'),
         E = t('G6rE'),
         O = t('hqKg'),
@@ -207,7 +207,7 @@
                 e
                   .selectEntries(r)
                   .filter(function (e) {
-                    if (!e.content || e.type !== v.b.User) return !1
+                    if (!e.content || e.type !== g.b.User) return !1
                     var o = e.content.id,
                       t = E.e.select(r, o)
                     return t && !t.followed_by
@@ -231,7 +231,11 @@
         G = function (e) {
           var o = e.withFollowerActionMenu,
             t = void 0 !== o && o
-          return j()(j()({}, Object(R.a)({})), {}, p()({}, v.b.User, Object(M.a)({ decoration: t ? U.f : void 0 })))
+          return j()(
+            j()({}, Object(R.createConfiguration)({})),
+            {},
+            p()({}, g.b.User, Object(M.a)({ decoration: t ? U.f : void 0 })),
+          )
         },
         A = t('7wqI'),
         x = t('GOQE'),
@@ -299,7 +303,7 @@
               },
               context: 'FETCH_SUPER_FOLLOWERS',
               perfKey: 'superFollowersGraphQL',
-              formatResponse: g.a,
+              formatResponse: v.a,
             })
           },
           followers_you_follow: function (e) {
@@ -315,7 +319,7 @@
               },
               context: 'FETCH_FOLLOWERS_YOU_KNOW',
               perfKey: 'followersYouKnowGraphQL',
-              formatResponse: g.a,
+              formatResponse: v.a,
             })
           },
           followers: function (e) {
@@ -331,7 +335,7 @@
               },
               context: 'FETCH_FOLLOWERS',
               perfKey: 'followersGraphQL',
-              formatResponse: g.a,
+              formatResponse: v.a,
             })
           },
           following: function (e) {
@@ -347,7 +351,7 @@
               },
               context: 'FETCH_FOLLOWING',
               perfKey: 'followingGraphQL',
-              formatResponse: g.a,
+              formatResponse: v.a,
             })
           },
         },
