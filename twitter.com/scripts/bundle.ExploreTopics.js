@@ -1,143 +1,172 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [57],
+  [56],
   {
-    gRxV: function (t, e, n) {
+    PH3B: function (e, t, n) {
       'use strict'
-      n.r(e),
-        n.d(e, 'ExploreTopicsScreen', function () {
-          return Q
+      var a,
+        r = n('KEM+'),
+        i = n.n(r),
+        o = n('ezF+'),
+        c = (n('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
+        l = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
+        u = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'a+ad'))
+          },
+          loaderKey: 'newsCellLoader',
+          strategy: l.a.Critical,
+        },
+        d = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'hX2d'))
+          },
+          loaderKey: 'newsPreviewCardLoader',
+          strategy: l.a.Critical,
+        }
+      t.a = o.c({
+        selectDisplayType: function (e) {
+          return e.content.newsDisplayType
+        },
+        handlers: ((a = {}), i()(a, c.Cell, u), i()(a, c.PreviewCard, d), a),
+      })
+    },
+    gRxV: function (e, t, n) {
+      'use strict'
+      n.r(t),
+        n.d(t, 'ExploreTopicsScreen', function () {
+          return N
         })
       n('2G9S'), n('vrRf')
       var a,
         r = n('ERkP'),
-        o = n.n(r),
-        i = n('es0u'),
+        i = n.n(r),
+        o = n('es0u'),
         c = (n('KqXw'), n('WNMA'), n('hqKg')),
-        u = n('KEM+'),
-        l = n.n(u),
-        s = n('yiKp'),
-        d = n.n(s),
+        l = n('KEM+'),
+        u = n.n(l),
+        d = n('yiKp'),
+        s = n.n(d),
         p = n('ZNT5'),
-        m = { news: 'url', sim_cluster: 'cluster_id', ttt: 'ttt_id', semantic_core: 'entity_id' },
-        f = n('kGix'),
+        f = { news: 'url', sim_cluster: 'cluster_id', ttt: 'ttt_id', semantic_core: 'entity_id' },
+        m = n('kGix'),
         y = n('3XMw'),
-        E = n.n(y),
-        w = n('rxPX'),
-        x = E.a.fcf3e54b,
-        b = function (t, e) {
-          return e.match.params.topicId
+        w = n.n(y),
+        E = n('rxPX'),
+        b = w.a.fcf3e54b,
+        h = function (e, t) {
+          return t.match.params.topicId
         },
-        g = function (t, e) {
-          return e.match.params.taxonomy
+        x = function (e, t) {
+          return t.match.params.taxonomy
         },
-        h = Object(c.createSelector)(b, g, function (t, e) {
-          return (function (t) {
-            var e = t.taxonomy,
-              n = t.topicId
+        g = Object(c.createSelector)(h, x, function (e, t) {
+          return (function (e) {
+            var t = e.taxonomy,
+              n = e.topicId
             return Object(p.a)({
-              timelineId: 'guide-'.concat(n, '-').concat(e, '-topic'),
-              getEndpoint: function (t) {
-                return t.URT.fetchExploreTopic
+              timelineId: 'guide-'.concat(n, '-').concat(t, '-topic'),
+              getEndpoint: function (e) {
+                return e.URT.fetchExploreTopic
               },
-              getEndpointParams: function (t) {
-                return d()(l()({}, m[e], n), t)
+              getEndpointParams: function (e) {
+                return s()(u()({}, f[t], n), e)
               },
               context: 'FETCH_EXPLORE_TOPIC',
               perfKey: 'guide-topic',
             })
-          })({ topicId: t, taxonomy: e })
+          })({ topicId: e, taxonomy: t })
         }),
-        T = function (t, e) {
-          var n = h(t, e)
-          if (n.selectInitialFetchStatus(t, e) !== f.a.LOADED) return ''
-          var a = n.selectMetadata(t).title
-          return void 0 === a ? x : a
+        v = function (e, t) {
+          var n = g(e, t)
+          if (n.selectInitialFetchStatus(e, t) !== m.a.LOADED) return ''
+          var a = n.selectMetadata(e).title
+          return void 0 === a ? b : a
         },
-        v = Object(w.a)()
+        C = Object(E.a)()
           .propsFromState(function () {
-            return { module: h, topicId: b, taxonomy: g, title: T }
+            return { module: g, topicId: h, taxonomy: x, title: v }
           })
           .withAnalytics({ page: 'guide', section: 'topic' }),
-        O = n('PnFR'),
-        I = n('QIgh'),
-        S = n('8UdT'),
-        _ = n('S/Qv'),
-        j = n('PH3B'),
-        P =
+        T = n('PnFR'),
+        P = n('QIgh'),
+        O = n('8UdT'),
+        I = n('S/Qv'),
+        S = n('PH3B'),
+        _ =
           ((a = {}),
-          l()(a, S.b.Message, Object(_.a)({ withGaps: !1 })),
-          l()(a, S.b.News, j.a),
-          l()(a, S.b.TimelineCursor, Object(O.a)({})),
+          u()(a, O.b.Message, Object(I.a)({ withGaps: !1 })),
+          u()(a, O.b.News, S.a),
+          u()(a, O.b.TimelineCursor, Object(T.a)({})),
           a),
-        R = d()(d()({}, I.default), P),
-        k = n('dwig'),
-        C = n('0+qk'),
+        j = s()(s()({}, P.b), _),
+        K = n('dwig'),
+        k = n('0+qk'),
         F = n('VTxf'),
-        M = n('yoO3'),
-        K = n('7BdX'),
-        U = n('SrIh'),
+        L = n('yoO3'),
+        M = n('7BdX'),
+        R = n('SrIh'),
         X = n('fTQJ'),
-        q = n('VS6U'),
-        L = n('FIs5'),
-        A = n('mw9i'),
-        D = E.a.a2a3824a,
-        G = E.a.ed827af6,
-        H = function () {
-          return o.a.createElement(F.a, null)
-        },
+        D = n('VS6U'),
+        H = n('FIs5'),
+        U = n('mw9i'),
+        q = w.a.a2a3824a,
+        B = w.a.ed827af6,
         J = function () {
-          return o.a.createElement(L.a, { message: G })
+          return i.a.createElement(F.a, null)
         },
-        N = ['news', 'ttt', 'semantic_core', 'sim_cluster']
-      function Q(t) {
-        var e = t.history,
-          n = t.title,
-          a = o.a.createElement(C.a, { history: e }),
+        A = function () {
+          return i.a.createElement(H.a, { message: B })
+        },
+        G = ['news', 'ttt', 'semantic_core', 'sim_cluster']
+      function N(e) {
+        var t = e.history,
+          n = e.title,
+          a = i.a.createElement(k.a, { history: t }),
           r = function () {
-            var e = t.taxonomy
-            return N.indexOf(e) >= 0
+            var t = e.taxonomy
+            return G.indexOf(t) >= 0
           }
-        return o.a.createElement(
-          M.a,
+        return i.a.createElement(
+          L.a,
           null,
-          o.a.createElement(q.a, {
+          i.a.createElement(D.a, {
             backLocation: '/explore',
-            documentTitle: D,
-            history: e,
-            primaryContent: o.a.createElement(
-              k.a,
-              { container: A.a, fab: a },
+            documentTitle: q,
+            history: t,
+            primaryContent: i.a.createElement(
+              K.a,
+              { container: U.a, fab: a },
               (function () {
                 if (r()) {
-                  var e = t.module
-                  return o.a.createElement(X.a, {
-                    entryConfiguration: R,
-                    module: e,
-                    prerollDisplayLocation: K.c.OTHER,
-                    renderEmptyState: H,
-                    renderUnavailable: J,
-                    title: D,
+                  var t = e.module
+                  return i.a.createElement(X.a, {
+                    entryConfiguration: j,
+                    module: t,
+                    prerollDisplayLocation: M.c.OTHER,
+                    renderEmptyState: J,
+                    renderUnavailable: A,
+                    title: q,
                   })
                 }
-                var n = t.taxonomy,
-                  a = t.topicId
+                var n = e.taxonomy,
+                  a = e.topicId
                 return (
                   n && a
-                    ? Object(U.a)(
+                    ? Object(R.a)(
                         "Unexpected guide topic: Taxonomy '".concat(n, "' requested with topicId '").concat(a, "'"),
                       )
-                    : Object(U.a)('Missing taxonomy and/or topic id for guide topic:'),
-                  H()
+                    : Object(R.a)('Missing taxonomy and/or topic id for guide topic:'),
+                  J()
                 )
               })(),
             ),
-            sidebarContent: o.a.createElement(i.a, { withWhoToFollow: !1 }),
+            sidebarContent: i.a.createElement(o.a, { withWhoToFollow: !1 }),
             title: n,
           }),
         )
       }
-      var V = v(Q)
-      e.default = V
+      var Q = C(N)
+      t.default = Q
     },
   },
 ])

@@ -1,154 +1,185 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [59],
+  [58],
   {
-    '180P': function (t, e, n) {
+    '180P': function (e, t, n) {
       'use strict'
-      n.d(e, 'a', function () {
+      n.d(t, 'a', function () {
         return r
       })
       n('TJCb'), n('7x/C'), n('DZ+c'), n('KOtZ'), n('0zG9'), n('KqXw'), n('Ysgh'), n('tQbP'), n('7xRU')
-      var r = function (t) {
-          var e = (JSON.stringify(t) || '').split('')
-          e.sort()
-          var n = e.join('')
+      var r = function (e) {
+          var t = (JSON.stringify(e) || '').split('')
+          t.sort()
+          var n = t.join('')
           return i(n, 0).toString()
         },
-        i = function (t, e) {
-          for (var n = 'string' == typeof t ? t : String(t), r = e, i = 0; i < n.length; i++) {
+        i = function (e, t) {
+          for (var n = 'string' == typeof e ? e : String(e), r = t, i = 0; i < n.length; i++) {
             ;(r = (r << 5) - r + n.charCodeAt(i)), (r &= r)
           }
           return r
         }
     },
-    'O5w+': function (t, e, n) {
+    'O5w+': function (e, t, n) {
       'use strict'
-      n.r(e),
-        n.d(e, 'GenericTimelineScreen', function () {
-          return G
+      n.r(t),
+        n.d(t, 'GenericTimelineScreen', function () {
+          return U
         })
       var r,
         i = n('ERkP'),
-        o = n.n(i),
-        a = n('v84o'),
+        a = n.n(i),
+        o = n('v84o'),
         c = n('es0u'),
         u = n('yiKp'),
-        s = n.n(u),
-        l = n('KEM+'),
-        d = n.n(l),
+        l = n.n(u),
+        s = n('KEM+'),
+        d = n.n(s),
         f = n('QIgh'),
         p = n('8UdT'),
         m = n('iu0J'),
-        b = n('ckGq'),
-        g = n('rpbw'),
-        v = n('PH3B'),
-        E =
+        b = n('ezF+'),
+        v = n('Ai1p'),
+        g = b.e(v.a),
+        y = n('rpbw'),
+        E = n('PH3B'),
+        w =
           ((r = {}),
           d()(r, p.b.EventSummary, Object(m.a)({})),
-          d()(r, p.b.Label, b.a),
-          d()(r, p.b.News, v.a),
-          d()(r, p.b.TwitterList, Object(g.a)({})),
+          d()(r, p.b.Label, g),
+          d()(r, p.b.News, E.a),
+          d()(r, p.b.TwitterList, Object(y.a)({})),
           r),
-        I = s()(s()({}, Object(f.createConfiguration)({ withMuteConversation: !0 })), E),
-        h = n('3XMw'),
-        w = n.n(h),
-        y = n('yoO3'),
+        C = l()(l()({}, Object(f.a)({ withMuteConversation: !0 })), w),
+        P = n('3XMw'),
+        h = n.n(P),
+        I = n('yoO3'),
         O = n('5FtR'),
         T = n('fTQJ'),
-        P = n('VS6U'),
-        C = n('Irs7'),
-        j = w.a.a6d5b010,
-        G = function (t) {
-          var e = t.history,
-            n = (function (t) {
-              return t.state && t.state.urtUrl
-            })(t.location),
+        j = n('VS6U'),
+        K = n('Irs7'),
+        L = h.a.a6d5b010,
+        U = function (e) {
+          var t = e.history,
+            n = (function (e) {
+              return e.state && e.state.urtUrl
+            })(e.location),
             r = null == n ? void 0 : n.urtEndpointOptions,
-            i = r ? r.title : j,
+            i = r ? r.title : L,
             u = r ? r.subtitle : void 0,
-            s = o.a.useMemo(
+            l = a.a.useMemo(
               function () {
-                return n && Object(a.a)({ urtUrl: n, timelinePrefix: 'generic-' })
+                return n && Object(o.a)({ urtUrl: n, timelinePrefix: 'generic-' })
               },
               [n],
             )
-          return s
-            ? o.a.createElement(
-                y.a,
+          return l
+            ? a.a.createElement(
+                I.a,
                 null,
-                o.a.createElement(P.a, {
+                a.a.createElement(j.a, {
                   backLocation: '/',
-                  history: e,
-                  primaryContent: o.a.createElement(T.a, { entryConfiguration: I, module: s, title: i }),
-                  sidebarContent: o.a.createElement(c.a, { withWhoToFollow: !1 }),
+                  history: t,
+                  primaryContent: a.a.createElement(T.a, { entryConfiguration: C, module: l, title: i }),
+                  sidebarContent: a.a.createElement(c.a, { withWhoToFollow: !1 }),
                   subtitle: u,
                   title: i,
                 }),
               )
-            : o.a.createElement(O.a, { to: '/' })
+            : a.a.createElement(O.a, { to: '/' })
         }
-      e.default = Object(C.a)(G, { page: 'generic_timeline' })
+      t.default = Object(K.a)(U, { page: 'generic_timeline' })
     },
-    doI8: function (t, e, n) {
+    PH3B: function (e, t, n) {
       'use strict'
-      n.d(e, 'a', function () {
+      var r,
+        i = n('KEM+'),
+        a = n.n(i),
+        o = n('ezF+'),
+        c = (n('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
+        u = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
+        l = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'a+ad'))
+          },
+          loaderKey: 'newsCellLoader',
+          strategy: u.a.Critical,
+        },
+        s = {
+          loader: function () {
+            return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'hX2d'))
+          },
+          loaderKey: 'newsPreviewCardLoader',
+          strategy: u.a.Critical,
+        }
+      t.a = o.c({
+        selectDisplayType: function (e) {
+          return e.content.newsDisplayType
+        },
+        handlers: ((r = {}), a()(r, c.Cell, l), a()(r, c.PreviewCard, s), r),
+      })
+    },
+    doI8: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
         return c
       })
       var r = n('yiKp'),
         i = n.n(r),
-        o = n('WpDa'),
-        a = n('ZNT5')
-      e.b = function (t) {
-        var e = t.endpointParams,
-          n = t.endpointUrl,
-          r = t.timelineId
-        return Object(a.a)({
+        a = n('WpDa'),
+        o = n('ZNT5')
+      t.b = function (e) {
+        var t = e.endpointParams,
+          n = e.endpointUrl,
+          r = e.timelineId
+        return Object(o.a)({
           timelineId: r,
-          getEndpoint: function (t) {
-            return t.URT.fetchGeneric
+          getEndpoint: function (e) {
+            return e.URT.fetchGeneric
           },
-          getEndpointParams: function (t) {
-            var r = t.count,
-              o = t.cursor
-            return i()(i()({}, e), {}, { cursor: 'string' == typeof o ? o : void 0, count: r, endpointUrl: n })
+          getEndpointParams: function (e) {
+            var r = e.count,
+              a = e.cursor
+            return i()(i()({}, t), {}, { cursor: 'string' == typeof a ? a : void 0, count: r, endpointUrl: n })
           },
           context: 'FETCH_TIMELINE',
           perfKey: 'generic',
         })
       }
-      var c = function (t) {
-        return Object(a.a)({
-          timelineId: 'generic-graphql-timeline-'.concat(t),
-          getEndpoint: function (t) {
-            return t.Graphql.fetchGenericTimelineById
+      var c = function (e) {
+        return Object(o.a)({
+          timelineId: 'generic-graphql-timeline-'.concat(e),
+          getEndpoint: function (e) {
+            return e.Graphql.fetchGenericTimelineById
           },
-          getEndpointParams: function (e) {
-            var n = e.count,
-              r = e.cursor
-            return { cursor: 'string' == typeof r ? r : void 0, count: n, timelineId: t }
+          getEndpointParams: function (t) {
+            var n = t.count,
+              r = t.cursor
+            return { cursor: 'string' == typeof r ? r : void 0, count: n, timelineId: e }
           },
-          formatResponse: o.a,
+          formatResponse: a.a,
           context: 'FETCH_GENERIC_TIMELINE_GQL',
           perfKey: 'genericGQL',
         })
       }
     },
-    v84o: function (t, e, n) {
+    v84o: function (e, t, n) {
       'use strict'
       n('2G9S')
       var r = n('180P'),
         i = n('doI8')
-      e.a = function (t) {
-        var e = t.timelinePrefix,
-          n = void 0 === e ? 'generic-timeline-' : e,
-          o = t.urtUrl,
-          a = o.url,
-          c = o.urtEndpointOptions || {},
+      t.a = function (e) {
+        var t = e.timelinePrefix,
+          n = void 0 === t ? 'generic-timeline-' : t,
+          a = e.urtUrl,
+          o = a.url,
+          c = a.urtEndpointOptions || {},
           u = c.cacheId,
-          s = c.requestParams
+          l = c.requestParams
         return Object(i.b)({
-          timelineId: u || ''.concat(n).concat(Object(r.a)(o)),
-          endpointUrl: a,
-          endpointParams: s || {},
+          timelineId: u || ''.concat(n).concat(Object(r.a)(a)),
+          endpointUrl: o,
+          endpointParams: l || {},
         })
       }
     },

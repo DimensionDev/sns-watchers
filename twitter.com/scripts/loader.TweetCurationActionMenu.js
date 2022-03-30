@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [187, 175],
+  [186, 174],
   {
     '86D9': function (e, t, n) {
       'use strict'
@@ -778,7 +778,10 @@
             text: Lt({ screenName: e.screen_name }),
             Icon: Ot.a,
             link: {
-              pathname: '/i/report/'.concat(Xe.a.RemoveCommunityMember, '/').concat(t),
+              pathname: '/i/report/'
+                .concat(Xe.a.RemoveCommunityMember, '/')
+                .concat(e.id_str, '?community_id=')
+                .concat(t),
               state: { scribeNamespace: n },
             },
           }
@@ -931,7 +934,7 @@
         dn = n('zb92'),
         un = Object(dn.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(220)]).then(n.bind(null, 'cM6C'))
+            return Promise.all([n.e(0), n.e(5), n.e(219)]).then(n.bind(null, 'cM6C'))
           },
         }),
         mn = T.a.bb16cc75,
@@ -1365,14 +1368,16 @@
                     W.id_str !== V)
                   ) {
                     if (!y && Q) {
-                      var $ = f.contextualScribeNamespace
+                      var $ = f.contextualScribeNamespace,
+                        ee = L.community_id_str
                       e._shouldDisable(L, an.a.HideCommunityTweet) ||
                         (Y.hideTweet = $e(L.id_str, r()(r()({}, $), {}, { element: 'hide_tweet' }))),
                         e._c9sRemoveMemberEnabled &&
                           !e._shouldDisable(L, an.a.RemoveCommunityMember) &&
+                          ee &&
                           (Y.removeCommunityMember = Mt(
                             W,
-                            L.id_str,
+                            ee,
                             r()(r()({}, $), {}, { element: 'remove_community_member' }),
                           ))
                     }
@@ -1408,16 +1413,16 @@
                           ),
                         )),
                       U && (Y.unhideReply = Yt(r()(r()({}, X), {}, { tweet: L, unhideReply: e.props.unhideReply })))
-                    var ee = {
+                    var te = {
                       user: W,
                       source: At.k.TWEET_CARET,
                       testID: pt,
                       blockAction: e._handleBlock,
                       unblockAction: e._handleUnblock,
                     }
-                    if (((Y.blockOrUnblock = Object(At.g)(ee)), W.smart_blocking)) {
-                      var te = { history: g, user: W, removeAutoblockAction: e._handleUnblock }
-                      Y.removeAutoblock = St(te)
+                    if (((Y.blockOrUnblock = Object(At.g)(te)), W.smart_blocking)) {
+                      var ne = { history: g, user: W, removeAutoblockAction: e._handleUnblock }
+                      Y.removeAutoblock = St(ne)
                     }
                   } else
                     T
@@ -1449,9 +1454,9 @@
                         e._convoControlsEnabled &&
                         (Y.changeConversationControls = j({ tweet: L, onChangeConversationControls: t })),
                       (Y.delete = Ce(r()(r()({}, X), {}, { deleteTweet: o, onDeleteTweet: k, tweet: L })))
-                var ne = V && V !== W.id_str
+                var oe = V && V !== W.id_str
                 return (
-                  ne
+                  oe
                     ? (Y.report = gn({
                         analytics: f,
                         history: g,
@@ -1473,9 +1478,9 @@
                             return !e.excludeFromActionMenu
                           })
                         : []
-                      q.push.apply(q, a()(t)), ne && q.length && G.push(q.length - 1)
+                      q.push.apply(q, a()(t)), oe && q.length && G.push(q.length - 1)
                     } else if (Y[e]) {
-                      ne && ('embed' === e || ('report' === e && !Y.embed)) && G.push(q.length - 1), q.push(Y[e])
+                      oe && ('embed' === e || ('report' === e && !Y.embed)) && G.push(q.length - 1), q.push(Y[e])
                     }
                   }),
                   (e._dividerIndices = G),

@@ -85,7 +85,7 @@
           return y
         }),
         n.d(t, 'a', function () {
-          return O
+          return R
         }),
         n.d(t, 'c', function () {
           return M
@@ -150,7 +150,7 @@
       }
       function S(e) {
         h.setState(function (t) {
-          e.filter(R).forEach(function (e) {
+          e.filter(O).forEach(function (e) {
             var n = e.body.body,
               a = e.data.sender.twitter_id,
               r = T(t, a)
@@ -195,7 +195,7 @@
       }
       function E(e) {
         h.setState(function (t) {
-          e.filter(R).forEach(function (e) {
+          e.filter(O).forEach(function (e) {
             var n = e.data.sender.twitter_id,
               a = T(t, n)
             e.body.final
@@ -270,11 +270,11 @@
           return e.speaker.id_str === t
         })
       }
-      function R(e) {
+      function O(e) {
         var t = e.body.body
         return !!t && t.length > 0
       }
-      function O(e) {
+      function R(e) {
         var t = e.body.body,
           n = e.type
         return f.a.Chat === n && t.startsWith('[cc]')
@@ -338,16 +338,16 @@
         var t = { count: e.count, labelType: 'otherListeners' }
         return s.a.createElement(
           p.a,
-          { style: R.otherParticipantsWrapper },
+          { style: O.otherParticipantsWrapper },
           s.a.createElement(
             I,
             e,
             s.a.createElement(
               p.a,
-              { style: R.otherParticipantsContainer },
+              { style: O.otherParticipantsContainer },
               s.a.createElement(
                 p.a,
-                { style: R.otherParticipantsText },
+                { style: O.otherParticipantsText },
                 s.a.createElement(
                   f.b,
                   { size: T.fontSize, weight: 'bold' },
@@ -369,7 +369,7 @@
             null,
             s.a.createElement(
               p.a,
-              { style: R.popoverSheetDescription },
+              { style: O.popoverSheetDescription },
               s.a.createElement(
                 f.b,
                 { color: 'gray700', size: 'body' },
@@ -380,10 +380,10 @@
                 ),
               ),
             ),
-            s.a.createElement(f.b, { size: 'body', weight: 'bold' }, O.shareWithPeople),
+            s.a.createElement(f.b, { size: 'body', weight: 'bold' }, R.shareWithPeople),
             s.a.createElement(
               p.a,
-              { style: R.popoverShareButtonContainer },
+              { style: O.popoverShareButtonContainer },
               s.a.createElement(d.a, { audioSpaceId: t }),
             ),
           )
@@ -393,7 +393,7 @@
               null,
               s.a.createElement(
                 p.a,
-                { style: R.popoverTitle },
+                { style: O.popoverTitle },
                 s.a.createElement(
                   f.b,
                   { size: 'title4', weight: 'heavy' },
@@ -407,10 +407,10 @@
               null,
               s.a.createElement(
                 p.a,
-                { style: R.popoverSheetTitleContainer },
+                { style: O.popoverSheetTitleContainer },
                 s.a.createElement(
                   p.a,
-                  { style: R.popoverSheetTitle },
+                  { style: O.popoverSheetTitle },
                   s.a.createElement(
                     f.b,
                     { size: 'headline2', weight: 'heavy' },
@@ -418,11 +418,11 @@
                   ),
                 ),
                 s.a.createElement(h.a, {
-                  accessibilityLabel: O.close,
+                  accessibilityLabel: R.close,
                   borderColor: 'transparent',
                   color: 'text',
-                  hoverLabel: { label: O.close },
-                  icon: s.a.createElement(E.a, { style: R.popoverSheetClose }),
+                  hoverLabel: { label: R.close },
+                  icon: s.a.createElement(E.a, { style: O.popoverSheetClose }),
                   onPress: n,
                   size: 'medium',
                 }),
@@ -451,11 +451,11 @@
       }
       function P(e) {
         return e.interactive
-          ? s.a.createElement(p.a, { style: R.otherParticipantsArrow }, s.a.createElement(k.a, null))
+          ? s.a.createElement(p.a, { style: O.otherParticipantsArrow }, s.a.createElement(k.a, null))
           : null
       }
       var T = { fontSize: 'body' },
-        R = b.a.create(function (e) {
+        O = b.a.create(function (e) {
           var t = e.lineHeightsPx[T.fontSize],
             n = {
               flexDirection: 'row',
@@ -489,7 +489,7 @@
             popoverShareButtonContainer: { marginVertical: e.spacesPx.space16 },
           }
         }),
-        O = { close: S.a.ia5e7487, share: S.a.ifea3114, shareWithPeople: S.a.i7f853ea }
+        R = { close: S.a.ia5e7487, share: S.a.ifea3114, shareWithPeople: S.a.i7f853ea }
     },
     '8A5z': function (e, t, n) {
       'use strict'
@@ -1154,8 +1154,8 @@
         }),
         P = n('K1iM'),
         T = n.n(P),
-        R = (n('KqXw'), n('3uku'), n('jQ3i'), n('x4t0'), n('1YZw')),
-        O = n('Chkh'),
+        O = (n('KqXw'), n('3uku'), n('jQ3i'), n('x4t0'), n('1YZw')),
+        R = n('Chkh'),
         M = n('3XMw'),
         _ = n.n(M),
         L = n('zCf4'),
@@ -1196,7 +1196,7 @@
                     return null == t ? void 0 : t.isPlaying
                   },
                   function (e) {
-                    e ? O.a.start() : O.a.stop()
+                    e ? R.a.start() : R.a.stop()
                   },
                 )
               },
@@ -1242,7 +1242,7 @@
                         var c
                         ;((null === (c = o.body) || void 0 === c ? void 0 : c.twitter_participant_ids) || []).includes(
                           t,
-                        ) && (n('exit'), a(Object(R.b)({ text: N.removedFromSpace })))
+                        ) && (n('exit'), a(Object(O.b)({ text: N.removedFromSpace })))
                     }
                   }
                 } catch (s) {
@@ -1252,7 +1252,7 @@
                 }
                 return { clearHeapForMessageType: !0 }
               }
-              if (t) return O.a.subscribe(d.a.HydraControlMessage, e)
+              if (t) return R.a.subscribe(d.a.HydraControlMessage, e)
             },
             [t, n, a],
           ),
@@ -1695,8 +1695,8 @@
         I = n('Pl95'),
         P = n('0nhk'),
         T = n('AMlz'),
-        R = n('5Ixf'),
-        O = n('AtEG'),
+        O = n('5Ixf'),
+        R = n('AtEG'),
         M = n('yiKp'),
         _ = n.n(M),
         L = n('Lsrn'),
@@ -1819,7 +1819,7 @@
             n = e.togglePlayback
           return c.a.createElement(f, {
             accessibilityLabel: t ? q.pause : q.play,
-            icon: t ? c.a.createElement(R.a, null) : c.a.createElement(O.a, null),
+            icon: t ? c.a.createElement(O.a, null) : c.a.createElement(R.a, null),
             onPress: n,
             size: 'xLarge',
           })
@@ -2078,7 +2078,7 @@
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     a = n.params,
-                    r = Object.assign(O(), n.headers),
+                    r = Object.assign(R(), n.headers),
                     i = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
                     o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
                   return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: a, data: i })
@@ -2143,7 +2143,7 @@
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
                     var a = n.params,
-                      r = Object.assign(O(), n.headers),
+                      r = Object.assign(R(), n.headers),
                       i = JSON.stringify({
                         access_token: e.access_token,
                         cursor: e.cursor,
@@ -2199,13 +2199,13 @@
         I = 'X-Idempotence',
         P = 'X-Periscope-User-Agent',
         T = 'X-Attempt',
-        R = ((y = {}), u()(y, P, 'Twitter/m5'), u()(y, T, 1), y)
-      function O() {
+        O = ((y = {}), u()(y, P, 'Twitter/m5'), u()(y, T, 1), y)
+      function R() {
         var e,
           t = Date.now()
         return (
           (C = t <= C ? C + 1 : t),
-          Object.assign({}, R, ((e = {}), u()(e, I, C), u()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, O, ((e = {}), u()(e, I, C), u()(e, 'content-type', 'application/json'), e))
         )
       }
       var M = 'm5-proxsee-login-a2011357b73e',
@@ -2897,7 +2897,7 @@
     Xda3: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return O
+        return R
       }),
         n.d(t, 'a', function () {
           return B
@@ -2943,10 +2943,10 @@
         I = n.n(x),
         P = '/chatapi/v1/chatnow',
         T = '/chatapi/v1/history',
-        R = null
-      function O() {
+        O = null
+      function R() {
         var e
-        null === (e = R) || void 0 === e || e.disconnect(), (R = null), k.a.reset(), g.b()
+        null === (e = O) || void 0 === e || e.disconnect(), (O = null), k.a.reset(), g.b()
       }
       S.d.subscribe(
         function (e) {
@@ -2955,9 +2955,9 @@
         function (e) {
           e &&
             (function (e) {
-              O(),
+              R(),
                 new M(e).connect().then(function (e) {
-                  k.a.start(), (R = e)
+                  k.a.start(), (O = e)
                 })
             })(e)
         },
@@ -3312,8 +3312,8 @@
         I = n('rHpw'),
         P = n('MH+I'),
         T = n('jhWN'),
-        R = n('jV+4'),
-        O = n('MWbm'),
+        O = n('jV+4'),
+        R = n('MWbm'),
         M = n('kRXa'),
         _ = n('5Ixf'),
         L = n('AtEG'),
@@ -3327,7 +3327,7 @@
           p.a.Fragment,
           null,
           p.a.createElement(
-            O.a,
+            R.a,
             { style: V.sliderContainer },
             p.a.createElement(D.SeekSlider, {
               durationMs: e.durationMs,
@@ -3338,7 +3338,7 @@
             }),
           ),
           p.a.createElement(
-            O.a,
+            R.a,
             { style: V.dockContentRow },
             p.a.createElement(T.a, {
               accessibilityHidden: !0,
@@ -3350,12 +3350,12 @@
               withLink: !0,
             }),
             p.a.createElement(
-              O.a,
+              R.a,
               { style: V.dockContentTitle },
               p.a.createElement(
                 w.a,
                 { size: 'subtext2' },
-                p.a.createElement(R.a, {
+                p.a.createElement(O.a, {
                   isVerified: e.user.verified,
                   name: e.user.name,
                   nameSize: 'subtext2',
@@ -3381,7 +3381,7 @@
                 N,
               ),
             ),
-            p.a.createElement(O.a, { style: V.dockContentButtonSpacer }),
+            p.a.createElement(R.a, { style: V.dockContentButtonSpacer }),
             p.a.createElement(
               m.a,
               u()({ accessibilityLabel: B.close, icon: p.a.createElement(z.a, null), onPress: a, testID: 'close' }, N),
@@ -3408,13 +3408,13 @@
           ),
           o = e.isMuted ? B.unmute : B.mute
         return p.a.createElement(
-          O.a,
+          R.a,
           { style: [F.wideContainer, F.wideContainerBorderRadius] },
           p.a.createElement(
-            O.a,
+            R.a,
             { style: F.mainContentContainer },
             p.a.createElement(
-              O.a,
+              R.a,
               { style: [F.wideAvatarContainer, { backgroundColor: i }] },
               p.a.createElement(T.a, {
                 accessibilityHidden: !0,
@@ -3427,9 +3427,9 @@
               }),
             ),
             p.a.createElement(
-              O.a,
+              R.a,
               { style: F.mainContent },
-              p.a.createElement(R.a, {
+              p.a.createElement(O.a, {
                 isVerified: e.user.verified,
                 name: e.user.name,
                 nameSize: 'subtext2',
@@ -3444,10 +3444,10 @@
             ),
           ),
           p.a.createElement(
-            O.a,
+            R.a,
             { style: F.belowMainContent },
             p.a.createElement(
-              O.a,
+              R.a,
               { style: F.slider },
               p.a.createElement(D.SeekSlider, {
                 durationMs: e.durationMs,
@@ -3459,7 +3459,7 @@
               }),
             ),
             p.a.createElement(
-              O.a,
+              R.a,
               { style: F.iconRow },
               p.a.createElement(
                 M.a,
@@ -3584,7 +3584,7 @@
               style: [V.container, i],
             },
             p.a.createElement(
-              O.a,
+              R.a,
               { style: [V.innerContainer, i] },
               e.isWide ? p.a.createElement(A, u) : p.a.createElement(j, u),
             ),
@@ -3598,7 +3598,7 @@
           t,
           null,
           p.a.createElement(E.a, { id: 'VoiceTweetDock' }, function (t, a) {
-            return p.a.createElement(O.a, u()({ ref: t() }, a({ style: n })), p.a.createElement(H, e))
+            return p.a.createElement(R.a, u()({ ref: t() }, a({ style: n })), p.a.createElement(H, e))
           }),
         )
       }
@@ -3648,11 +3648,11 @@
         if (!e.withTimes) return m
         var h = e.durationMs - t
         return p.a.createElement(
-          O.a,
+          R.a,
           null,
-          p.a.createElement(O.a, { style: F.sliderRow }, p.a.createElement(O.a, { style: F.slider }, m)),
+          p.a.createElement(R.a, { style: F.sliderRow }, p.a.createElement(R.a, { style: F.slider }, m)),
           p.a.createElement(
-            O.a,
+            R.a,
             { style: F.sliderTimes },
             p.a.createElement(P.a, { size: 'subtext2', timeMs: Object(y.a)(t) ? t : 0 }),
             p.a.createElement(P.a, {
@@ -3766,7 +3766,7 @@
     dgjd: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return _
+        return L
       })
       var a = n('ddV6'),
         r = n.n(a),
@@ -3797,7 +3797,8 @@
         b = n('KEM+'),
         y = n.n(b),
         S = (n('KqXw'), n('Ysgh'), n('KOtZ'), n('2G9S'), n('cnVF')),
-        E = new ((function () {
+        E = n('X04g'),
+        k = new ((function () {
           function e() {
             h()(this, e), y()(this, 'events', [])
           }
@@ -3816,8 +3817,16 @@
                       u = Object.keys(l).reduce(function (e, t) {
                         var n = l[t]
                         return '*' === n || (e[t] = n || void 0), e
-                      }, {})
-                    e.analytics.scribe(f()(f()({}, u), {}, { data: { audio_space_details: o } })),
+                      }, {}),
+                      d = f()(
+                        f()({}, u),
+                        {},
+                        {
+                          action: u.action,
+                          data: { items: [{ item_type: E.a.ItemType.AUDIO_SPACE, audio_space_details: o }] },
+                        },
+                      )
+                    e.analytics.scribe(d),
                       t.events.push({ event_name: ''.concat(S.w).concat(n), ts: Date.now(), audio_space_details: o }),
                       t.timerId || t._scheduleNextPublish()
                   }
@@ -3846,27 +3855,27 @@
             e
           )
         })())(),
-        k = n('nmVb'),
-        w = n.n(k),
-        C = n('kGix'),
-        x = n('3XMw'),
-        I = n.n(x),
-        P = n('b2fv'),
-        T = n('Tg44'),
+        w = n('nmVb'),
+        C = n.n(w),
+        x = n('kGix'),
+        I = n('3XMw'),
+        P = n.n(I),
+        T = n('b2fv'),
+        O = n('Tg44'),
         R = n('Irs7'),
-        O = n('LxAE'),
-        M = n('yUQf')
-      function _(e) {
+        M = n('LxAE'),
+        _ = n('yUQf')
+      function L(e) {
         var t,
           n,
           a,
           c,
           p,
           f = Object(R.b)(),
-          m = Object(M.a)(l.n),
+          m = Object(_.a)(l.n),
           h = (function (e) {
             var t = (function () {
-                var e = Object(O.a)(),
+                var e = Object(M.a)(),
                   t = r()(e.audioSpaces.cache, 2),
                   n = t[0],
                   a = t[1]
@@ -3880,7 +3889,7 @@
                 }
                 function i(e) {
                   var t = n[e]
-                  return t || L(C.a.NONE)
+                  return t || z(x.a.NONE)
                 }
                 function o(e) {
                   return d.a.subscribeToScheduledSpace(e).then(function () {
@@ -3895,24 +3904,24 @@
                 function s(e, t) {
                   var n,
                     r = i(e)
-                  if ('number' == typeof t && r.status !== C.a.NONE && !((Date.now() - r.time) / 1e3 > t))
+                  if ('number' == typeof t && r.status !== x.a.NONE && !((Date.now() - r.time) / 1e3 > t))
                     return Promise.resolve(r)
                   function o(t) {
-                    var n = L(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
+                    var n = z(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
                     a(function (t) {
                       var a = Object.assign({}, t[e], n)
                       return (t[e] = a), Object.assign({}, t)
                     })
                   }
                   return d.a.initialized()
-                    ? (o(C.a.LOADING),
+                    ? (o(x.a.LOADING),
                       d.a
                         .audioSpace(e)
                         .catch(function (e) {
                           n = e
                         })
                         .then(function (e) {
-                          e ? o(C.a.LOADED, { data: e, error: void 0 }) : n && o(C.a.FAILED, { error: n })
+                          e ? o(x.a.LOADED, { data: e, error: void 0 }) : n && o(x.a.FAILED, { error: n })
                         }))
                     : Promise.reject(new Error('[useAudioSpaceMetadata] AudioModule not initialized'))
                 }
@@ -3946,7 +3955,7 @@
                       i = { broadcast_id: e, ntp_timestamp: void 0, timecode: void 0 }
                     if (a && a.id3NtpTime && r) {
                       var s = Math.floor(a.id3NtpTime)
-                      ;(i.ntp_timestamp = s), (i.timecode = Math.floor((Object(P.b)(s) - r) / 1e3))
+                      ;(i.ntp_timestamp = s), (i.timecode = Math.floor((Object(T.b)(s) - r) / 1e3))
                     }
                     return c[n](i)
                   }
@@ -3961,63 +3970,63 @@
           b = h.subscribe,
           y = h.unsubscribe,
           S = h.get(),
-          k = S.data,
-          x = null == k ? void 0 : k.state,
+          E = S.data,
+          w = null == E ? void 0 : E.state,
           I = {
-            NotStarted: x === T.a.SpaceState.NotStarted,
-            PrePublished: x === T.a.SpaceState.PrePublished,
-            Running: x === T.a.SpaceState.Running,
-            TimedOut: x === T.a.SpaceState.TimedOut,
-            Ended: x === T.a.SpaceState.Ended,
-            Canceled: x === T.a.SpaceState.Canceled,
-            loaded: !!k || S.status === C.a.FAILED,
-            loading: S.status === C.a.LOADING,
-            error: S.status === C.a.FAILED && S.error,
+            NotStarted: w === O.a.SpaceState.NotStarted,
+            PrePublished: w === O.a.SpaceState.PrePublished,
+            Running: w === O.a.SpaceState.Running,
+            TimedOut: w === O.a.SpaceState.TimedOut,
+            Ended: w === O.a.SpaceState.Ended,
+            Canceled: w === O.a.SpaceState.Canceled,
+            loaded: !!E || S.status === x.a.FAILED,
+            loading: S.status === x.a.LOADING,
+            error: S.status === x.a.FAILED && S.error,
             joined:
               (null === (t = v.activeItem) || void 0 === t ? void 0 : t.type) === u.a.space &&
               (null === (n = v.activeItem) || void 0 === n ? void 0 : n.id) === e,
             recording: !1,
             replayable: !1,
           }
-        function _() {
+        function P() {
           var e,
             t,
-            n = null == k || null === (e = k.title) || void 0 === e ? void 0 : e.trim(),
-            a = null == k || null === (t = k.host) || void 0 === t ? void 0 : t.display_name
-          return n || (a ? j.title({ name: a }) : j.titleFallback)
+            n = null == E || null === (e = E.title) || void 0 === e ? void 0 : e.trim(),
+            a = null == E || null === (t = E.host) || void 0 === t ? void 0 : t.display_name
+          return n || (a ? A.title({ name: a }) : A.titleFallback)
         }
-        null != k &&
-          k.is_space_available_for_replay &&
+        null != E &&
+          E.is_space_available_for_replay &&
           (I.Running ? (I.recording = !0) : (I.Ended || I.TimedOut) && (I.replayable = !0))
-        var A = 'live_not_recording'
-        null != k && k.is_space_available_for_replay && (A = I.Running ? 'live_recording' : 'replay')
-        var H = E.createScribeFunction({
+        var L = 'live_not_recording'
+        null != E && E.is_space_available_for_replay && (L = I.Running ? 'live_recording' : 'replay')
+        var H = k.createScribeFunction({
           analytics: f,
           details: {
             broadcast_id: e,
             host_id:
-              null == k || null === (a = k.host) || void 0 === a || null === (c = a.user) || void 0 === c
+              null == E || null === (a = E.host) || void 0 === a || null === (c = a.user) || void 0 === c
                 ? void 0
                 : c.rest_id,
-            host_periscope_id: null == k || null === (p = k.host) || void 0 === p ? void 0 : p.periscope_user_id,
-            audio_space_start_type: null != k && k.scheduled_start ? 'scheduled' : 'adhoc',
-            audio_space_recording_type: A,
-            state: x,
+            host_periscope_id: null == E || null === (p = E.host) || void 0 === p ? void 0 : p.periscope_user_id,
+            audio_space_start_type: null != E && E.scheduled_start ? 'scheduled' : 'adhoc',
+            audio_space_recording_type: L,
+            state: w,
             is_logged_in: m,
           },
         })
         var D = {
             is: I,
-            title: _,
+            title: P,
             hashtags: function () {
-              return w()(_()).map(function (e) {
+              return C()(P()).map(function (e) {
                 return '#'.concat(e)
               })
             },
             scribe: H,
             state: function () {
               var e,
-                t = T.a.StateEnum
+                t = O.a.StateEnum
               return (
                 I.loaded && I.error
                   ? (e = t.unavailable)
@@ -4034,7 +4043,7 @@
               )
             },
             getTunedInCount: function () {
-              var e = k || {},
+              var e = E || {},
                 t = e.total_live_listeners,
                 n = e.total_replay_watched
               return (null != t ? t : 0) + (null != n ? n : 0)
@@ -4047,7 +4056,7 @@
           s.a.useEffect(
             function () {
               var e,
-                t = z
+                t = j
               return (
                 B &&
                   (function n() {
@@ -4060,14 +4069,14 @@
                 }
               )
             },
-            [B, e, x],
+            [B, e, w],
           )
         var V = {
           subscribe: b,
           unsubscribe: y,
           report: g,
           join: function (t) {
-            var n = k
+            var n = E
             n &&
               d.a.proxsee.login().then(function () {
                 var a = D.is.Running || D.is.replayable,
@@ -4082,15 +4091,15 @@
               })
           },
         }
-        return { space: k, audioContext: v, utils: D, handlers: V }
+        return { space: E, audioContext: v, utils: D, handlers: V }
       }
-      function L(e) {
+      function z(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           n = { status: e, time: Date.now() }
         return t.data && (n.data = t.data), t.error && (n.error = t.error), n
       }
-      var z = 15,
-        j = { title: I.a.b6d3e0ee, titleFallback: I.a.ab4fc8bb }
+      var j = 15,
+        A = { title: P.a.b6d3e0ee, titleFallback: P.a.ab4fc8bb }
     },
     hUaP: function (e, t, n) {
       'use strict'
@@ -4238,7 +4247,7 @@
       function x(e) {
         var t = e.size,
           n = Math.floor(t / 4.5)
-        return s.a.createElement(f.a, { style: [R.root, P(t)] }, s.a.createElement(I, { width: n }))
+        return s.a.createElement(f.a, { style: [O.root, P(t)] }, s.a.createElement(I, { width: n }))
       }
       function I(e) {
         var t = e.width
@@ -4248,7 +4257,7 @@
           Array(3)
             .fill(0)
             .map(function (e, n) {
-              return s.a.createElement(f.a, { key: n, style: [R.dot, T(n, t)] })
+              return s.a.createElement(f.a, { key: n, style: [O.dot, T(n, t)] })
             }),
         )
       }
@@ -4258,7 +4267,7 @@
       function T(e, t) {
         return w()({ animationDelay: ''.concat(0.5 * e, 's'), borderRadius: '100%' }, C(t))
       }
-      var R = u.a.create(function (e) {
+      var O = u.a.create(function (e) {
           return {
             root: { alignItems: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'center' },
             dot: {
@@ -4282,7 +4291,7 @@
             },
           }
         }),
-        O = n('sIe2'),
+        R = n('sIe2'),
         M = [
           'captions',
           'footerHeight',
@@ -4333,7 +4342,7 @@
           s.a.createElement(
             f.a,
             { ref: g, style: j.root },
-            s.a.createElement(O.a, {
+            s.a.createElement(R.a, {
               ListFooterComponent: s.a.createElement(z, { footerHeight: a, unintelligible: d }),
               ListHeaderComponent: s.a.createElement(L, { headerHeight: c }),
               accessibilityRole: 'listbox',
@@ -4423,8 +4432,8 @@
         I = n('9RkS'),
         P = n('rHpw'),
         T = n('A53h'),
-        R = n('sTSP'),
-        O = n('MWbm'),
+        O = n('sTSP'),
+        R = n('MWbm'),
         M = [
           'accessibilityLabelIcon',
           'accessibilityLabelSlider',
@@ -4532,7 +4541,7 @@
                     h = t.withGraySliderTrack,
                     v = t.withNavigationSliderBackground,
                     g = o()(t, M),
-                    b = c ? S.a.createElement(T.a, null) : S.a.createElement(R.a, null),
+                    b = c ? S.a.createElement(T.a, null) : S.a.createElement(O.a, null),
                     y = v ? z.sliderWithNavigationBackground : z.sliderWithDefaultBackground
                   return S.a.createElement(
                     C.a,
@@ -4544,7 +4553,7 @@
                       onHoverOut: d ? this._hideSlider : void 0,
                     },
                     S.a.createElement(
-                      O.a,
+                      R.a,
                       { onKeyDown: d ? this._handleKeyDown : void 0 },
                       S.a.createElement(
                         E.a,
@@ -4564,7 +4573,7 @@
                         S.a.createElement(C.a, { onFocusRingGained: u, onFocusRingLost: s }, function (t) {
                           var n = t.isFocusedWithin
                           return S.a.createElement(
-                            O.a,
+                            R.a,
                             {
                               style: [
                                 z.sliderBackground,
@@ -4724,7 +4733,7 @@
         return x
       }),
         n.d(t, 'b', function () {
-          return R
+          return O
         })
       var a,
         r = n('yiKp'),
@@ -4742,7 +4751,7 @@
         v = Object(m.a)({
           loader: function () {
             return f.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(230)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(17), n.e(229)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -4776,7 +4785,7 @@
               imageLayoutCache: C,
               screenName: s,
               shape: p ? 'hex' : 'circle',
-              size: O,
+              size: R,
               style: T.participantAvatarSize,
               uri: m,
               withHoverCard: !0,
@@ -4835,7 +4844,7 @@
             participantAvatarSize: n,
           }
         })
-      function R(e) {
+      function O(e) {
         var t = M(e)
         return {
           getWidth: function () {
@@ -4846,7 +4855,7 @@
           },
         }
       }
-      var O = 'xxLarge'
+      var R = 'xxLarge'
       function M(e) {
         var t = y.a.getSizeStyle('xxLarge').width || e.spacesPx.space48,
           n = e.spacesPx.space20,
@@ -5048,9 +5057,9 @@
             .filter(function (e) {
               return e && e.tweet && e.user
             })
-        return a.length ? h.a.createElement(R, { items: a }) : null
+        return a.length ? h.a.createElement(O, { items: a }) : null
       }
-      function R(e) {
+      function O(e) {
         var t = e.items,
           n = t.reduce(function (e, t) {
             return t.tweet ? (e.length ? ''.concat(e, '.').concat(t.id) : t.id) : e
@@ -5081,13 +5090,13 @@
               visibleItemIndex: c,
             },
             t.map(function (e, t) {
-              return h.a.createElement(O, { item: e, key: e.id || t })
+              return h.a.createElement(R, { item: e, key: e.id || t })
             }),
           ),
           h.a.createElement(C.a, { count: t.length, key: ''.concat(n, '-indicators'), max: M, selectedIndex: c }),
         )
       }
-      function O(e) {
+      function R(e) {
         if (!e.item) return null
         var t = e.item,
           n = t.tweet,
@@ -5467,7 +5476,7 @@
                       var a = new URLSearchParams(be()({}, Te.clipId, e.clip.clip_id))
                       t.push({
                         pathname: '/compose/tweet',
-                        query: { text: Re(e.clip.broadcast_id, a.toString()) },
+                        query: { text: Oe(e.clip.broadcast_id, a.toString()) },
                         state: { positionCursorAtBeginning: !0 },
                       })
                     }
@@ -5476,13 +5485,13 @@
             },
             [a, r.durationMs, n, t, e.currentTimeMs],
           )
-        return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Oe.next)
+        return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Re.next)
       }
       var Te = Object.freeze({ clipId: 'clipID' }),
-        Re = function (e, t) {
+        Oe = function (e, t) {
           return 'https://twitter.com/i/spaces/'.concat(e, '?').concat(t)
         },
-        Oe = { heading: S.a.cc724cb0, cancel: S.a.cfd2f35d, next: S.a.c1df579e },
+        Re = { heading: S.a.cc724cb0, cancel: S.a.cfd2f35d, next: S.a.c1df579e },
         Me = P.a.create(function (e) {
           var t = Object(Ee.b)(e)
           return {
@@ -5518,9 +5527,9 @@
                   size: 'xSmall',
                   style: Me.cancelButton,
                 },
-                Oe.cancel,
+                Re.cancel,
               ),
-              h.a.createElement(ee.b, { align: 'center', size: 'headline1', weight: 'bold' }, Oe.heading),
+              h.a.createElement(ee.b, { align: 'center', size: 'headline1', weight: 'bold' }, Re.heading),
               h.a.createElement(te.a, {
                 backgroundColor: 'transparent',
                 borderColor: 'transparent',
@@ -6031,15 +6040,15 @@
         It = n('yUQf'),
         Pt = n('7ep7'),
         Tt = n('v6aA'),
-        Rt = n('DlVf'),
-        Ot = n('RqPI'),
+        Ot = n('DlVf'),
+        Rt = n('RqPI'),
         Mt = n('mjJ+'),
         _t = n('FXw/'),
         Lt = n('GCOQ')
       function zt(e) {
         var t = (function (e) {
             var t = Object(E.a)(e).utils,
-              n = Object(It.a)(Ot.n),
+              n = Object(It.a)(Rt.n),
               a = p.k().openSheet,
               r = []
             n &&
@@ -6172,7 +6181,7 @@
                   borderColor: 'transparent',
                   color: 'text',
                   hoverLabel: { label: 'Reactions' },
-                  icon: h.a.createElement(Rt.a, null),
+                  icon: h.a.createElement(Ot.a, null),
                   onPress: function () {},
                   size: 'medium',
                   type: 'primaryOutlined',

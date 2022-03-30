@@ -1,89 +1,100 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [111, 12, 19, 102, 175, 178],
+  [110, 11, 18, 101, 174, 177],
   {
     '/uhu': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TRUSTED_FRIENDS_LEARN_MORE_URL', function () {
-          return g
+          return y
         }),
         n.d(t, 'TrustedFriendsManagementScreen', function () {
-          return _
+          return k
         })
       n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('KqXw'), n('WNMA')
       var a = n('ERkP'),
         r = n.n(a),
         i = n('jHSc'),
         l = n('3XMw'),
-        o = n.n(l),
-        s = n('/de5'),
+        s = n.n(l),
+        o = n('/de5'),
         c = n('wytG'),
         u = n('7JQg'),
         d = n('k/OQ'),
-        p = n('zCf4'),
-        m = o.a.ad964e3f,
-        h = o.a.d0748dae,
-        f = o.a.ef8f5d90,
-        g = 'https://help.twitter.com/using-twitter/twitter-circle',
-        y = { page: 'trusted_friends_edit' },
-        v = Object(c.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(111)]).then(n.bind(null, 'gzLP'))
-        }),
+        p = n('Irs7'),
+        m = n('zCf4'),
+        h = s.a.ad964e3f,
+        f = s.a.d0748dae,
+        g = s.a.ef8f5d90,
+        y = 'https://help.twitter.com/using-twitter/twitter-circle',
+        v = { page: 'trusted_friends_edit' },
         b = Object(c.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(111)]).then(n.bind(null, 'W8UM'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'gzLP'))
         }),
-        _ = function (e) {
+        _ = Object(c.a)(function () {
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(110)]).then(n.bind(null, 'W8UM'))
+        }),
+        k = function (e) {
           var t = e.history,
             n = e.location,
             a = e.match.params.trustedFriendsId,
-            l = r.a.useCallback(
+            l = Object(p.b)(),
+            s = r.a.useCallback(
               function () {
                 if (!a) return null
                 var e = [
-                  { to: { pathname: '/i/circles/'.concat(a, '/members'), state: n.state }, label: h, key: h },
-                  { to: { pathname: '/i/circles/'.concat(a, '/members/suggested'), state: n.state }, label: f, key: f },
+                  { to: { pathname: '/i/circles/'.concat(a, '/members'), state: n.state }, label: f, key: f },
+                  { to: { pathname: '/i/circles/'.concat(a, '/members/suggested'), state: n.state }, label: g, key: g },
                 ]
-                return r.a.createElement(d.a, { accessibilityLabel: m, links: e })
+                return r.a.createElement(d.a, { accessibilityLabel: h, links: e })
               },
               [n, a],
             )
           return r.a.createElement(
             u.c,
-            { namespace: y },
+            { namespace: v },
             r.a.createElement(
               i.b,
-              { backButtonType: 'close', history: t, secondaryBar: l(), title: m },
+              {
+                backButtonType: 'close',
+                history: t,
+                onBackClick: function () {
+                  l.scribe({ element: 'trusted_friends', component: 'list_dismiss_button', action: 'click' }),
+                    t.goBack()
+                },
+                secondaryBar: s(),
+                title: h,
+              },
               a
                 ? r.a.createElement(
-                    p.d,
+                    m.d,
                     null,
                     r.a.createElement(
-                      p.b,
+                      m.b,
                       { exact: !0, path: '/i/circles/'.concat(a, '/members') },
-                      r.a.createElement(v, { trustedFriendsId: a }),
-                    ),
-                    r.a.createElement(
-                      p.b,
-                      { exact: !0, path: '/i/circles/'.concat(a, '/members/suggested') },
                       r.a.createElement(b, { trustedFriendsId: a }),
                     ),
+                    r.a.createElement(
+                      m.b,
+                      { exact: !0, path: '/i/circles/'.concat(a, '/members/suggested') },
+                      r.a.createElement(_, { trustedFriendsId: a }),
+                    ),
                   )
-                : r.a.createElement(s.b, e),
+                : r.a.createElement(o.b, e),
             ),
           )
         }
-      t.default = _
+      t.default = k
     },
     '1LLC': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return o
+        return s
       })
       var a = n('KEM+'),
         r = n.n(a),
         i = n('k49u'),
         l = n('LVU8'),
-        o = r()({}, i.a.GenericNotFound, { customAction: l.c })
+        s = r()({}, i.a.GenericNotFound, { customAction: l.c })
     },
     '21U8': function (e, t, n) {
       'use strict'
@@ -91,8 +102,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -143,12 +154,12 @@
             return (
               r()(this, n),
               (a = t.call(this, e)),
-              h()(s()(a), '_previousTouchDistance', 0),
-              h()(s()(a), '_previousPositionX', 0),
-              h()(s()(a), '_previousPositionY', 0),
-              h()(s()(a), '_centerPosition', { x: 0, y: 0 }),
-              h()(s()(a), '_panResponder', {}),
-              h()(s()(a), '_setRef', function (e) {
+              h()(o()(a), '_previousTouchDistance', 0),
+              h()(o()(a), '_previousPositionX', 0),
+              h()(o()(a), '_previousPositionY', 0),
+              h()(o()(a), '_centerPosition', { x: 0, y: 0 }),
+              h()(o()(a), '_panResponder', {}),
+              h()(o()(a), '_setRef', function (e) {
                 var t = a.props,
                   n = t.onPanEnd,
                   r = t.onPanMove,
@@ -157,32 +168,32 @@
                 if (e) {
                   ;(r || n || i) && (a._removeTouchMoveToScrollListener = Object(x.a)(e, a._preventDefaultEvent, !1)),
                     l && (a._removeScrollToScaleListener = Object(x.b)(e, a._preventDefaultEvent, !1))
-                  var o = e.getBoundingClientRect()
-                  a._centerPosition = { x: o.width / 2 + o.left, y: o.height / 2 + o.top }
+                  var s = e.getBoundingClientRect()
+                  a._centerPosition = { x: s.width / 2 + s.left, y: s.height / 2 + s.top }
                 }
               }),
-              h()(s()(a), '_preventDefaultEvent', function (e) {
+              h()(o()(a), '_preventDefaultEvent', function (e) {
                 e.preventDefault()
               }),
-              h()(s()(a), '_handlePanResponderMove', function (e, t) {
+              h()(o()(a), '_handlePanResponderMove', function (e, t) {
                 var n,
                   r,
                   i = a.props,
                   l = i.onPanMove,
-                  o = i.onPinchMove,
-                  s = e.nativeEvent.touches
+                  s = i.onPinchMove,
+                  o = e.nativeEvent.touches
                 if (2 === t.numberActiveTouches) {
-                  if (o) {
+                  if (s) {
                     var c =
-                        ((n = s[0]),
-                        (r = s[1]),
+                        ((n = o[0]),
+                        (r = o[1]),
                         Math.sqrt(Math.pow(n.pageY - r.pageY, 2) + Math.pow(n.pageX - r.pageX, 2))),
                       u = (function (e, t) {
                         return {
                           pageX: Math.min(t.pageX, e.pageX) + Math.abs(t.pageX - e.pageX) / 2,
                           pageY: Math.min(t.pageY, e.pageY) + Math.abs(t.pageY - e.pageY) / 2,
                         }
-                      })(s[0], s[1]),
+                      })(o[0], o[1]),
                       d = u.pageX,
                       p = u.pageY,
                       m = a._previousPositionX ? d - a._previousPositionX : 0,
@@ -190,27 +201,27 @@
                       f = a._previousTouchDistance ? c - a._previousTouchDistance : 0
                     ;(a._previousPositionX = d), (a._previousPositionY = p), (a._previousTouchDistance = c)
                     var g = a._centerPosition
-                    o(f, g.x - d, g.y - p, m, h)
+                    s(f, g.x - d, g.y - p, m, h)
                   }
                 } else l && l(t.dx, t.dy)
                 document.addEventListener('selectstart', a._preventDefaultEvent, !1)
               }),
-              h()(s()(a), '_handlePanResponderEnd', function (e, t) {
+              h()(o()(a), '_handlePanResponderEnd', function (e, t) {
                 a.props.onPanEnd && a.props.onPanEnd(t.dx, t.dy),
                   a.props.onPinchMove && (a._previousTouchDistance = 0),
                   (a._previousPositionX = 0),
                   (a._previousPositionY = 0),
                   a._removeSelectStartListener()
               }),
-              h()(s()(a), '_handleWheel', function (e) {
+              h()(o()(a), '_handleWheel', function (e) {
                 var t = e.clientX,
                   n = e.clientY,
                   r = e.deltaX,
                   i = e.deltaY,
                   l = a._centerPosition,
-                  o = l.x - t,
-                  s = l.y - n
-                a.props.onWheel && a.props.onWheel(r, i, o, s)
+                  s = l.x - t,
+                  o = l.y - n
+                a.props.onWheel && a.props.onWheel(r, i, s, o)
               }),
               (a._panResponder = R.a.create({
                 onStartShouldSetPanResponder: function () {
@@ -255,11 +266,11 @@
             n
           )
         })(g.a.Component),
-        P = n('9RkS'),
-        D = n('rOXj'),
-        U = n('aITJ'),
-        K = n('yiKp'),
-        A = n.n(K),
+        K = n('9RkS'),
+        P = n('rOXj'),
+        D = n('aITJ'),
+        U = n('yiKp'),
+        A = n.n(U),
         j = n('Lsrn'),
         N = n('k/Ka'),
         B = function () {
@@ -360,8 +371,8 @@
           )
         }
       G.metadata = { width: 24, height: 24 }
-      var X = G,
-        Y = function () {
+      var Y = G,
+        X = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(N.a)(
             'svg',
@@ -386,8 +397,8 @@
             ),
           )
         }
-      Y.metadata = { width: 24, height: 24 }
-      var Q = Y,
+      X.metadata = { width: 24, height: 24 }
+      var Q = X,
         J = b.a.d85bc1b8,
         Z = b.a.f596ace8,
         $ = b.a.df031fca,
@@ -408,13 +419,13 @@
             return (
               r()(this, n),
               (a = t.call(this, e)),
-              h()(s()(a), '_previousLeft', 0),
-              h()(s()(a), '_previousTop', 0),
-              h()(s()(a), '_panStyles', { top: 0, left: 0 }),
-              h()(s()(a), '_shouldShowZoomControl', function () {
-                return (!U.b.isMobileOS() || !D.a.isTouchSupported()) && a.props.withZoomControl
+              h()(o()(a), '_previousLeft', 0),
+              h()(o()(a), '_previousTop', 0),
+              h()(o()(a), '_panStyles', { top: 0, left: 0 }),
+              h()(o()(a), '_shouldShowZoomControl', function () {
+                return (!D.b.isMobileOS() || !P.a.isTouchSupported()) && a.props.withZoomControl
               }),
-              h()(s()(a), '_renderControls', function () {
+              h()(o()(a), '_renderControls', function () {
                 var e = a.props,
                   t = e.image,
                   n = e.withAspectRatioOptions,
@@ -462,10 +473,10 @@
                         ? g.a.createElement(
                             E.a,
                             { style: le.zoomContainer },
-                            g.a.createElement(P.a, {
+                            g.a.createElement(K.a, {
                               accessibilityLabel: J,
                               max: a._maxScale,
-                              maxIcon: g.a.createElement(X, { style: le.icon }),
+                              maxIcon: g.a.createElement(Y, { style: le.icon }),
                               min: 0,
                               minIcon: g.a.createElement(Q, { style: le.icon }),
                               onChange: a._handleScaleChange,
@@ -477,23 +488,23 @@
                     )
                   : null
               }),
-              h()(s()(a), '_setImageRef', function (e) {
+              h()(o()(a), '_setImageRef', function (e) {
                 a._imageRef = e
               }),
-              h()(s()(a), '_handleScaleChange', function (e) {
+              h()(o()(a), '_handleScaleChange', function (e) {
                 a.setState({ imageScale: e })
               }),
-              h()(s()(a), '_getImageDimensions', function () {
+              h()(o()(a), '_getImageDimensions', function () {
                 var e = a.state.imageScale,
                   t = a.props.image.width / a.props.image.height,
                   n = a._getMaskDimensions(),
                   r = n.height,
                   i = n.width,
                   l = S.a.getCoverDimensions({ width: i, height: r }, t),
-                  o = l.height
-                return { width: l.width * Math.pow(2, e), height: o * Math.pow(2, e) }
+                  s = l.height
+                return { width: l.width * Math.pow(2, e), height: s * Math.pow(2, e) }
               }),
-              h()(s()(a), '_getMaskDimensions', function () {
+              h()(o()(a), '_getMaskDimensions', function () {
                 var e = a.state,
                   t = e.aspectRatio,
                   n = e.containerHeight,
@@ -502,7 +513,7 @@
                   l = i.height
                 return { width: i.width, height: l }
               }),
-              h()(s()(a), '_handleLayout', function (e) {
+              h()(o()(a), '_handleLayout', function (e) {
                 var t = e.nativeEvent.layout,
                   n = t.height,
                   r = t.width
@@ -510,7 +521,7 @@
                   ? a.setState({ containerHeight: n, containerWidth: r })
                   : (a.setState({ containerHeight: n, containerWidth: r }), a._setDefaultCropData())
               }),
-              h()(s()(a), '_setDefaultCropData', function () {
+              h()(o()(a), '_setDefaultCropData', function () {
                 var e = a.props,
                   t = e.defaultCropData,
                   n = e.image
@@ -518,19 +529,19 @@
                   var r = a._getImageDimensions().width,
                     i = a._getMaskDimensions().width,
                     l = r / n.width,
-                    o = re(i / (t.width * l))
-                  a.setState({ imageScale: o })
-                  var s = a._getUnscaledCropData(),
-                    c = s.left,
-                    u = s.top
-                  ;(a._panStyles.top = u - t.top * l * Math.pow(2, o)),
+                    s = re(i / (t.width * l))
+                  a.setState({ imageScale: s })
+                  var o = a._getUnscaledCropData(),
+                    c = o.left,
+                    u = o.top
+                  ;(a._panStyles.top = u - t.top * l * Math.pow(2, s)),
                     (a._previousTop = a._panStyles.top),
-                    (a._panStyles.left = c - t.left * l * Math.pow(2, o)),
+                    (a._panStyles.left = c - t.left * l * Math.pow(2, s)),
                     (a._previousLeft = a._panStyles.left),
                     a._updateNativeStyles()
                 }
               }),
-              h()(s()(a), '_handleWheel', function (e, t, n, r) {
+              h()(o()(a), '_handleWheel', function (e, t, n, r) {
                 var i = (-1 * t) / 500
                 a.setState(function (e) {
                   var t = e.imageScale,
@@ -544,44 +555,44 @@
                   )
                 })
               }),
-              h()(s()(a), '_handlePanMove', function (e, t) {
+              h()(o()(a), '_handlePanMove', function (e, t) {
                 ;(a._panStyles.left = a._previousLeft + e),
                   (a._panStyles.top = a._previousTop + t),
                   a._updateNativeStyles(),
                   a._adjustToInBounds()
               }),
-              h()(s()(a), '_handlePanEnd', function (e, t) {
+              h()(o()(a), '_handlePanEnd', function (e, t) {
                 ;(a._previousLeft = a._panStyles.left), (a._previousTop = a._panStyles.top)
               }),
-              h()(s()(a), '_handlePinchMove', function (e, t, n, r, i) {
+              h()(o()(a), '_handlePinchMove', function (e, t, n, r, i) {
                 var l = e / 200
                 a.setState(function (e) {
-                  var o = e.imageScale,
-                    s = Math.min(a._maxScale, Math.max(o + l, 0))
+                  var s = e.imageScale,
+                    o = Math.min(a._maxScale, Math.max(s + l, 0))
                   return (
-                    (a._panStyles.left += t * (s - o) + r),
-                    (a._panStyles.top += n * (s - o) + i),
+                    (a._panStyles.left += t * (o - s) + r),
+                    (a._panStyles.top += n * (o - s) + i),
                     (a._previousLeft = a._panStyles.left),
                     (a._previousTop = a._panStyles.top),
-                    { imageScale: s }
+                    { imageScale: o }
                   )
                 })
               }),
-              h()(s()(a), '_adjustToInBounds', function () {
+              h()(o()(a), '_adjustToInBounds', function () {
                 var e = a._getUnscaledCropData(),
                   t = a._getImageDimensions(),
                   n = e.left,
                   r = e.top,
                   i = e.left + e.width - t.width,
                   l = e.top + e.height - t.height,
-                  o = !1
-                n < 0 && ((o = !0), (a._panStyles.left += n), (a._previousLeft += n)),
-                  r < 0 && ((o = !0), (a._panStyles.top += r), (a._previousTop += r)),
-                  i > 0 && ((o = !0), (a._panStyles.left += i), (a._previousLeft += i)),
-                  l > 0 && ((o = !0), (a._panStyles.top += l), (a._previousTop += l)),
-                  o && a._updateNativeStyles()
+                  s = !1
+                n < 0 && ((s = !0), (a._panStyles.left += n), (a._previousLeft += n)),
+                  r < 0 && ((s = !0), (a._panStyles.top += r), (a._previousTop += r)),
+                  i > 0 && ((s = !0), (a._panStyles.left += i), (a._previousLeft += i)),
+                  l > 0 && ((s = !0), (a._panStyles.top += l), (a._previousTop += l)),
+                  s && a._updateNativeStyles()
               }),
-              h()(s()(a), '_updateNativeStyles', function () {
+              h()(o()(a), '_updateNativeStyles', function () {
                 var e = a._panStyles,
                   t = e.left,
                   n = e.top
@@ -590,18 +601,18 @@
                     style: { transform: [{ translate3d: ''.concat(t, 'px, ').concat(n, 'px, 0') }] },
                   })
               }),
-              h()(s()(a), '_getUnscaledCropData', function () {
+              h()(o()(a), '_getUnscaledCropData', function () {
                 var e = a._getImageDimensions(),
                   t = e.height,
                   n = e.width,
                   r = a._getMaskDimensions(),
                   i = r.height,
                   l = r.width,
-                  o = a._panStyles,
-                  s = o.left
-                return { top: (t - i) / 2 - o.top, left: (n - l) / 2 - s, width: l, height: i }
+                  s = a._panStyles,
+                  o = s.left
+                return { top: (t - i) / 2 - s.top, left: (n - l) / 2 - o, width: l, height: i }
               }),
-              h()(s()(a), '_setAspectRatio', function (e) {
+              h()(o()(a), '_setAspectRatio', function (e) {
                 return function () {
                   a.setState({ aspectRatio: e })
                 }
@@ -628,9 +639,9 @@
                     r = this._getImageDimensions(),
                     i = r.height,
                     l = r.width,
-                    o = this._getMaskDimensions(),
-                    s = o.height,
-                    c = o.width,
+                    s = this._getMaskDimensions(),
+                    o = s.height,
+                    c = s.width,
                     u = this.state.containerWidth && this.state.containerHeight
                   return g.a.createElement(
                     E.a,
@@ -654,7 +665,7 @@
                               source: { uri: n.src, width: l, height: i },
                               style: le.image,
                             }),
-                            g.a.createElement(C, { circle: t, height: s, width: c }),
+                            g.a.createElement(C, { circle: t, height: o, width: c }),
                           )
                         : null,
                     ),
@@ -759,8 +770,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('5Yy7'),
-        s = n.n(o),
+        s = n('5Yy7'),
+        o = n.n(s),
         c = n('2VqO'),
         u = n.n(c),
         d = n('KEM+'),
@@ -783,7 +794,7 @@
         F = y.a.b87ca51a,
         T = y.a.eebff22c,
         x = (function (e) {
-          s()(n, e)
+          o()(n, e)
           var t = u()(n)
           function n() {
             return r()(this, n), t.apply(this, arguments)
@@ -800,8 +811,8 @@
                     r = e.onAddMediaFiles,
                     i = e.onCrop,
                     l = e.onRemove,
-                    o = e.rootStyle,
-                    s = e.withDragDrop,
+                    s = e.rootStyle,
+                    o = e.withDragDrop,
                     c = a && !a.uploader,
                     u = h.a.createElement(
                       h.a.Fragment,
@@ -824,8 +835,8 @@
                     )
                   return h.a.createElement(
                     _.a,
-                    { style: [M.container, o, R[t]] },
-                    s && r ? h.a.createElement(k.a, { onFilesAdded: r, style: [M.dragDropContainer, R[t]] }, u) : u,
+                    { style: [M.container, s, R[t]] },
+                    o && r ? h.a.createElement(k.a, { onFilesAdded: r, style: [M.dragDropContainer, R[t]] }, u) : u,
                   )
                 },
               },
@@ -961,20 +972,20 @@
       'use strict'
       n.r(t),
         n.d(t, 'ListScreen', function () {
-          return Ye
+          return Xe
         })
       var a = n('yiKp'),
         r = n.n(a),
         i = (n('KqXw'), n('WNMA'), n('ERkP')),
         l = n.n(i),
-        o = n('es0u'),
-        s = n('iPch'),
+        s = n('es0u'),
+        o = n('iPch'),
         c = n('kHBp'),
         u = n('rxPX'),
         d = n('0KEI'),
         p = Object(u.a)()
           .propsFromState(function () {
-            return { fetchStatus: s.e, listId: s.k, listMode: s.i, listName: s.j, screenName: s.l }
+            return { fetchStatus: o.e, listId: o.k, listMode: o.i, listName: o.j, screenName: o.l }
           })
           .propsFromActions(function () {
             return {
@@ -1004,31 +1015,31 @@
         R = n('KEM+'),
         M = n.n(R),
         O = (n('2G9S'), n('0zG9'), n('EbOo')),
-        P = n('1YZw'),
-        D = n('gNWl'),
-        U = n('G6rE'),
-        K = n('RqPI'),
+        K = n('1YZw'),
+        P = n('gNWl'),
+        D = n('G6rE'),
+        U = n('RqPI'),
         A = Object(u.a)()
           .propsFromState(function () {
             return {
-              author: s.d,
-              basePath: s.a,
-              loggedInUserId: K.r,
-              isSubscribed: s.b,
-              list: s.c,
-              useRanked: s.n,
-              reporterCountry: K.z,
-              reporterLanguage: K.p,
+              author: o.d,
+              basePath: o.a,
+              loggedInUserId: U.r,
+              isSubscribed: o.b,
+              list: o.c,
+              useRanked: o.n,
+              reporterCountry: U.z,
+              reporterLanguage: U.p,
             }
           })
           .propsFromActions(function () {
             return {
-              addToast: P.b,
-              block: U.e.block,
+              addToast: K.b,
+              block: D.e.block,
               createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('LIST_ACTIONS'),
               toggleMute: c.a.toggleMute,
-              unblock: U.e.unblock,
-              updateRankMode: D.b,
+              unblock: D.e.unblock,
+              updateRankMode: P.b,
             }
           })
           .withAnalytics({ page: 'spheres_detail' }),
@@ -1041,7 +1052,7 @@
             return { author: N }
           })
           .propsFromActions(function () {
-            return { addToast: P.b }
+            return { addToast: K.b }
           })
           .withAnalytics(),
         H = n('I6Uj'),
@@ -1055,8 +1066,8 @@
         }),
         q = n('vCw9'),
         G = n('fs1G'),
-        X = n('2G3J'),
-        Y = n('u0B7'),
+        Y = n('2G3J'),
+        X = n('u0B7'),
         Q = n('MWbm'),
         J = n('v6aA'),
         Z = n('24HD'),
@@ -1068,8 +1079,8 @@
         re = n('fz3c'),
         ie = (b.a.a9ca06d2, b.a.h63a5c3b),
         le = b.a.bffa2da7,
-        oe = b.a.b689c7ef,
-        se = b.a.f9bef353,
+        se = b.a.b689c7ef,
+        oe = b.a.f9bef353,
         ce = b.a.f22b6ad5,
         ue = b.a.g03a6be4,
         de = b.a.gf89e0a2,
@@ -1090,7 +1101,7 @@
             function n() {
               var e
               E()(this, n)
-              for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+              for (var a = arguments.length, i = new Array(a), s = 0; s < a; s++) i[s] = arguments[s]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
                 M()(
@@ -1112,7 +1123,7 @@
                 M()(w()(e), '_renderOverflowMenu', function () {
                   var t = e._getActionMenuItems()
                   return e.props.listId && t.length > 0
-                    ? l.a.createElement(X.a, {
+                    ? l.a.createElement(Y.a, {
                         accessibilityLabel: ie,
                         onPress: e._handleOverflowMenuPress,
                         renderMenu: e._renderActionMenu,
@@ -1144,8 +1155,8 @@
                       var l = e._getSwitchRankModeAction()
                       a.push(l)
                     }
-                    var o = e._getMuteToggleAction()
-                    o && a.push(o)
+                    var s = e._getMuteToggleAction()
+                    s && a.push(s)
                   }
                   return a
                 }),
@@ -1156,14 +1167,14 @@
                     r = t.listId,
                     i = t.reporterCountry,
                     l = t.reporterLanguage,
-                    o = e.context.featureSwitches,
-                    s = re.a.List
-                  if (Object(re.g)(o, s, i, l)) {
+                    s = e.context.featureSwitches,
+                    o = re.a.List
+                  if (Object(re.g)(s, o, i, l)) {
                     var c = Object(re.d)({
                       clientReferer: window.location.pathname,
                       isMedia: !1,
                       isPromoted: !1,
-                      reportType: s,
+                      reportType: o,
                       reportedList: a,
                       reportedUser: null == a ? void 0 : a.user,
                       scribeNamespace: n.contextualScribeNamespace,
@@ -1208,12 +1219,12 @@
                     a = t.analytics,
                     i = t.isSubscribed,
                     l = t.list,
-                    o = t.toggleMute
+                    s = t.toggleMute
                   if (l && i && e._isMutingEnabled)
                     return Object(q.a)({
                       list: l,
                       addToast: n,
-                      toggleMute: o,
+                      toggleMute: s,
                       scribe: function (e) {
                         return a.scribe(r()({ component: 'customize' }, e))
                       },
@@ -1221,7 +1232,7 @@
                 }),
                 M()(w()(e), '_getSwitchRankModeAction', function () {
                   var t = e.props.useRanked
-                  return { text: t ? se : ue, Icon: ae.a, onClick: e._handleSwitchRankMode, subText: t ? ce : de }
+                  return { text: t ? oe : ue, Icon: ae.a, onClick: e._handleSwitchRankMode, subText: t ? ce : de }
                 }),
                 M()(w()(e), '_handleBlockUser', function () {
                   var t = e.props,
@@ -1243,7 +1254,7 @@
                     r = t.createLocalApiErrorHandler,
                     i = t.unblock
                   a &&
-                    (i(a.id_str, { promotedContent: a.promoted_content }).catch(r(Y.a)),
+                    (i(a.id_str, { promotedContent: a.promoted_content }).catch(r(X.a)),
                     n.scribe({ action: 'unblock' }))
                 }),
                 M()(w()(e), '_handleSwitchRankMode', function () {
@@ -1253,12 +1264,12 @@
                     r = t.listId,
                     i = t.updateRankMode,
                     l = t.useRanked,
-                    o = l ? le : oe,
-                    s = l ? 'see_latest' : 'see_top'
+                    s = l ? le : se,
+                    o = l ? 'see_latest' : 'see_top'
                   i({ listId: r, useRanked: !l }).then(function () {
-                    n({ text: o })
+                    n({ text: s })
                   }),
-                    a.scribe({ action: 'click', component: 'customize', element: s })
+                    a.scribe({ action: 'click', component: 'customize', element: o })
                 }),
                 e
               )
@@ -1295,11 +1306,11 @@
         ve =
           (n('MvUL'),
           function (e, t) {
-            var n = s.l(e, t)
-            return n ? U.e.selectByScreenName(e, n) : void 0
+            var n = o.l(e, t)
+            return n ? D.e.selectByScreenName(e, n) : void 0
           }),
         be = Object(u.a)().propsFromState(function () {
-          return { listName: s.j, listId: s.f, screenName: s.l, useRanked: s.n, user: ve }
+          return { listName: o.j, listId: o.f, screenName: o.l, useRanked: o.n, user: ve }
         }),
         _e = n('SrtL'),
         ke = n('ehWl'),
@@ -1315,10 +1326,10 @@
         Re = b.a.dcdc75a3,
         Me = b.a.f05dbeff,
         Oe = b.a.h2b32b90,
-        Pe = b.a.de8ba957,
-        De = b.a.fa884025,
-        Ue = b.a.eeab4adf,
-        Ke = b.a.e79ed125,
+        Ke = b.a.de8ba957,
+        Pe = b.a.fa884025,
+        De = b.a.eeab4adf,
+        Ue = b.a.e79ed125,
         Ae = (function (e) {
           F()(n, e)
           var t = x()(n)
@@ -1344,7 +1355,7 @@
                         newTweetsPillMode: Ce.a.CLIENT,
                         prerollDisplayLocation: we.c.OTHER,
                         renderEmptyState: r._renderEmptyState,
-                        title: De,
+                        title: Pe,
                       })
                   : null
               }),
@@ -1379,19 +1390,19 @@
                   t = e.header,
                   n = void 0 === t ? Oe : t,
                   a = e.message,
-                  i = void 0 === a ? Pe : a,
-                  o = e.buttonText,
-                  s = e.onButtonPress
+                  i = void 0 === a ? Ke : a,
+                  s = e.buttonText,
+                  o = e.onButtonPress
                 return l.a.createElement(
                   l.a.Fragment,
                   null,
                   r._renderListDetail(),
                   l.a.createElement(Te.a, {
-                    buttonText: o,
+                    buttonText: s,
                     buttonType: 'brandOutlined',
                     header: n,
                     message: i,
-                    onButtonPress: s,
+                    onButtonPress: o,
                   }),
                 )
               }),
@@ -1432,7 +1443,7 @@
                   var e = this.props.user
                   if (!e) return null
                   var t = e.screen_name,
-                    n = Ke({ screenName: t }),
+                    n = Ue({ screenName: t }),
                     a = l.a.createElement(
                       b.a.I18NFormatMessage,
                       { $i18n: 'e645092a', screenName: t },
@@ -1441,7 +1452,7 @@
                   return this._renderEmptyState({
                     header: n,
                     message: a,
-                    buttonText: Ue,
+                    buttonText: De,
                     onButtonPress: this._handleShowBlockedTweets,
                   })
                 },
@@ -1460,13 +1471,13 @@
         We = n('mw9i'),
         qe = b.a.fa884025,
         Ge = b.a.eb7b54bd,
-        Xe = b.a.j681933d,
-        Ye = function (e) {
+        Ye = b.a.j681933d,
+        Xe = function (e) {
           var t = e.createLocalApiErrorHandler,
             n = e.fetchListIfNeeded,
             a = e.fetchStatus,
             i = e.history,
-            s = e.listId,
+            o = e.listId,
             c = e.listMode,
             u = e.listName,
             d = e.location,
@@ -1477,16 +1488,16 @@
             E = 'private' === c,
             I = l.a.useMemo(
               function () {
-                return { items: [r()({}, Be.a.forList(s))] }
+                return { items: [r()({}, Be.a.forList(o))] }
               },
-              [s],
+              [o],
             ),
-            C = l.a.createElement(ye, { listId: s, match: p, scribeNamespace: b }),
+            C = l.a.createElement(ye, { listId: o, match: p, scribeNamespace: b }),
             S = l.a.useCallback(
               function () {
-                n(s).catch(t(h.a))
+                n(o).catch(t(h.a))
               },
-              [t, n, s],
+              [t, n, o],
             )
           return (
             l.a.useEffect(
@@ -1516,13 +1527,13 @@
                       }),
                     ),
                     rightControl: C,
-                    sidebarContent: l.a.createElement(o.a, null),
+                    sidebarContent: l.a.createElement(s.a, null),
                     subtitle: v && '@'.concat(v),
                     title: l.a.createElement(
                       Q.a,
                       { style: Qe.title },
                       l.a.createElement(xe.b, null, u),
-                      E ? l.a.createElement(_.a, { accessibilityLabel: Xe, style: Qe.iconLock }) : null,
+                      E ? l.a.createElement(_.a, { accessibilityLabel: Ye, style: Qe.iconLock }) : null,
                     ),
                   }),
                 )
@@ -1532,7 +1543,7 @@
         Qe = ee.a.create(function (e) {
           return { iconLock: { alignSelf: 'center', marginLeft: e.spaces.space2 }, title: { flexDirection: 'row' } }
         }),
-        Je = p(Object(ze.a)(Ye))
+        Je = p(Object(ze.a)(Xe))
       t.default = Je
     },
     '3EFP': function (e, t, n) {
@@ -1550,17 +1561,17 @@
           return l
         }),
         n.d(t, 'e', function () {
-          return o
+          return s
         }),
         n.d(t, 'f', function () {
-          return s
+          return o
         })
       var a = 'ArrowDown',
         r = 'ArrowUp',
         i = 'Enter',
         l = 'Escape',
-        o = 'ESC',
-        s = 'Tab'
+        s = 'ESC',
+        o = 'Tab'
     },
     '4e/K': function (e, t, n) {
       'use strict'
@@ -1575,8 +1586,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -1602,10 +1613,10 @@
         R = n('rHpw'),
         M = n('xoZN'),
         O = n('6OUF'),
-        P = n('pf9B'),
-        D = n('cHvH'),
-        U = n('oEoC'),
-        K = E.a.f065ba8c,
+        K = n('pf9B'),
+        P = n('cHvH'),
+        D = n('oEoC'),
+        U = E.a.f065ba8c,
         A = { viewType: 'typeahead_input' },
         j = function (e) {
           return S.a.isTwoColumnNormalLayout(e)
@@ -1629,15 +1640,15 @@
             return (
               r()(this, n),
               (i = t.call(this, e, a)),
-              h()(s()(i), '_withNewTypeaheadUI', !1),
-              h()(s()(i), '_render', function (e) {
+              h()(o()(i), '_withNewTypeaheadUI', !1),
+              h()(o()(i), '_render', function (e) {
                 var t = e.windowWidth,
                   n = i.props,
                   a = n.alwaysOpen,
                   r = n.disableClearButton,
                   l = n.forceVdlDisable,
-                  o = n.inputStyle,
-                  s = n.isCompact,
+                  s = n.inputStyle,
+                  o = n.isCompact,
                   c = n.isOnHomepage,
                   u = n.placeholder,
                   d = n.renderInSearchField,
@@ -1666,13 +1677,13 @@
                         },
                         y.a.createElement(
                           T.a,
-                          { ref: i._setInputContainerNode, style: o },
+                          { ref: i._setInputContainerNode, style: s },
                           y.a.createElement(O.a, {
                             Icon: I.a,
                             ariaActiveDescendant: i.state.ariaDescendantId,
                             ariaAutocomplete: 'list',
                             ariaExpanded: v,
-                            ariaLabel: K,
+                            ariaLabel: U,
                             ariaOwns: i._dropdownDomId,
                             ariaRole: 'combobox',
                             autoComplete: 'off',
@@ -1680,7 +1691,7 @@
                             autoFocus: m,
                             contentBelow: d && d(),
                             focusOnClear: h,
-                            isCompact: s,
+                            isCompact: o,
                             leftAligned: c,
                             onChange: i._handleInputChange,
                             onClear: i._handleInputClear,
@@ -1706,14 +1717,14 @@
                   ),
                 )
               }),
-              h()(s()(i), '_renderDropdown', function (e) {
+              h()(o()(i), '_renderDropdown', function (e) {
                 var t = i.props,
                   n = t.communityId,
                   a = t.filter,
                   r = t.getItemDisabledMessage,
                   l = t.getItemIsDisabled,
-                  o = t.getTopicExactMatch,
-                  s = t.getUserDisplayNameLabel,
+                  s = t.getTopicExactMatch,
+                  o = t.getUserDisplayNameLabel,
                   c = t.getUserExactMatch,
                   u = t.injectedItems,
                   d = t.isInSidebar,
@@ -1731,32 +1742,33 @@
                   C = t.selectedItems,
                   S = t.shouldDeferPrefetch,
                   F = t.source,
-                  T = t.withFixedPositioning,
-                  x = t.withSectionDivider,
-                  M = e >= R.a.theme.breakpoints.medium || Object(w.a)(),
-                  O = i.state,
-                  P = O.dropdownOffset,
-                  D = O.query,
-                  K = p
+                  T = t.trustedFriendsId,
+                  x = t.withFixedPositioning,
+                  M = t.withSectionDivider,
+                  O = e >= R.a.theme.breakpoints.medium || Object(w.a)(),
+                  K = i.state,
+                  P = K.dropdownOffset,
+                  U = K.query,
+                  A = p
                     ? H.modalDropdown
                     : [
                         H.dropdown,
-                        !M && T && P ? [Object(U.d)(P), { height: 'calc(100vh - '.concat(P, 'px)') }] : null,
-                        (M || m) && H.wideModeDropdown,
+                        !O && x && P ? [Object(D.d)(P), { height: 'calc(100vh - '.concat(P, 'px)') }] : null,
+                        (O || m) && H.wideModeDropdown,
                         i._withNewTypeaheadUI && d && j(e),
                         m && H.shortModeDropdown,
-                        !M && m && H.shortModeDropdownMobile,
+                        !O && m && H.shortModeDropdownMobile,
                       ],
-                  A = {
+                  N = {
                     ariaDescendantId: i.state.ariaDescendantId,
                     domId: i._dropdownDomId,
                     onDismiss: i._handleOnEmptyStateDismiss,
                     onItemFocusChanged: i._handleItemFocusChanged,
                     ref: i._handleDropdownRef,
-                    style: K,
+                    style: A,
                   }
-                return _ && !D
-                  ? _(A)
+                return _ && !U
+                  ? _(N)
                   : y.a.createElement(L.a, {
                       ariaDescendantId: i.state.ariaDescendantId,
                       communityId: n,
@@ -1764,8 +1776,8 @@
                       filter: a,
                       getItemDisabledMessage: r,
                       getItemIsDisabled: l,
-                      getTopicExactMatch: o,
-                      getUserDisplayNameLabel: s,
+                      getTopicExactMatch: s,
+                      getUserDisplayNameLabel: o,
                       getUserExactMatch: c,
                       injectedItems: u,
                       maxEvents: h,
@@ -1774,7 +1786,7 @@
                       onItemFocusChanged: i._handleItemFocusChanged,
                       onItemsChanged: g,
                       orderResults: v,
-                      query: D,
+                      query: U,
                       ref: i._handleDropdownRef,
                       renderCallout: b,
                       renderHeader: k,
@@ -1783,50 +1795,51 @@
                       selectedItems: C,
                       shouldDeferPrefetch: S,
                       source: F,
-                      style: K,
-                      withSectionDivider: x,
+                      style: A,
+                      trustedFriendsId: T,
+                      withSectionDivider: M,
                     })
               }),
-              h()(s()(i), '_dismissDropdown', function () {
+              h()(o()(i), '_dismissDropdown', function () {
                 i.setState({ showTypeaheadDropdown: !1 }), i.props.onDismiss && i.props.onDismiss()
               }),
-              h()(s()(i), '_handleOnEmptyStateDismiss', function () {
+              h()(o()(i), '_handleOnEmptyStateDismiss', function () {
                 i._dismissDropdown(), i._inputRef && i._inputRef.blur()
               }),
-              h()(s()(i), '_handleLayout', function () {
+              h()(o()(i), '_handleLayout', function () {
                 i._updatePosition()
               }),
-              h()(s()(i), '_handleInputLayoutChanged', function () {
+              h()(o()(i), '_handleInputLayoutChanged', function () {
                 i._updatePosition()
               }),
-              h()(s()(i), '_updatePosition', function () {
+              h()(o()(i), '_updatePosition', function () {
                 if (i._inputContainerNode) {
                   var e = i._inputContainerNode.getBoundingClientRect().bottom
                   e !== i.state.dropdownOffset && i.setState({ dropdownOffset: e })
                 }
               }),
-              h()(s()(i), '_handleDropdownRef', function (e) {
+              h()(o()(i), '_handleDropdownRef', function (e) {
                 i._dropdownRef = e
               }),
-              h()(s()(i), '_setRootContainerNode', function (e) {
+              h()(o()(i), '_setRootContainerNode', function (e) {
                 i._rootContainerNode = e || null
               }),
-              h()(s()(i), '_setInputRef', function (e) {
+              h()(o()(i), '_setInputRef', function (e) {
                 i._inputRef = e
               }),
-              h()(s()(i), '_setInputContainerNode', function (e) {
+              h()(o()(i), '_setInputContainerNode', function (e) {
                 ;(i._inputContainerNode = e || null), i._inputContainerNode && i._updatePosition()
               }),
-              h()(s()(i), '_handleFocusChange', function (e) {
-                var t = P.a.getCount() > 0
+              h()(o()(i), '_handleFocusChange', function (e) {
+                var t = K.a.getCount() > 0
                 ;(i._rootContainerNode && i._rootContainerNode.contains(e.target)) ||
                   t ||
                   (i.state.showTypeaheadDropdown && i._dismissDropdown())
               }),
-              h()(s()(i), '_handleKeyDown', function (e) {
+              h()(o()(i), '_handleKeyDown', function (e) {
                 var t = e.key,
                   n = i.state.showTypeaheadDropdown
-                if (Object(U.g)(e)) {
+                if (Object(D.g)(e)) {
                   if (t === f.a) return i._focusNext(), void e.preventDefault()
                   if (t === f.b) return i._focusPrevious(), void e.preventDefault()
                   if (t === f.d) return i._dismissDropdown(), void e.preventDefault()
@@ -1837,19 +1850,19 @@
                   i._dismissDropdown()
                 }
               }),
-              h()(s()(i), '_handleItemFocusChanged', function () {
-                i.setState({ ariaDescendantId: Object(U.b)() })
+              h()(o()(i), '_handleItemFocusChanged', function () {
+                i.setState({ ariaDescendantId: Object(D.b)() })
               }),
-              h()(s()(i), '_handleInputClear', function () {
+              h()(o()(i), '_handleInputClear', function () {
                 i.setQuery('')
               }),
-              h()(s()(i), '_handleInputFocus', function () {
+              h()(o()(i), '_handleInputFocus', function () {
                 i.setState({ showTypeaheadDropdown: !0 }), i._updatePosition(), i.props.onFocus && i.props.onFocus()
               }),
-              h()(s()(i), '_handleInputChange', function (e) {
+              h()(o()(i), '_handleInputChange', function (e) {
                 i.setQuery(e.target.value), i._updatePosition()
               }),
-              h()(s()(i), '_handleFormSubmit', function (e) {
+              h()(o()(i), '_handleFormSubmit', function (e) {
                 e.preventDefault(),
                   e.stopPropagation(),
                   i._inputRef && i._inputRef.blur(),
@@ -1857,32 +1870,32 @@
                   i.props.onDismiss && i.props.onDismiss(),
                   i.props.onSubmit && i.props.onSubmit()
               }),
-              h()(s()(i), '_handleItemClick', function (e, t) {
+              h()(o()(i), '_handleItemClick', function (e, t) {
                 var n = i.props,
                   a = n.onDismiss,
                   r = n.onItemClick,
                   l = n.shouldClearOnSelect,
-                  o = n.shouldFocusOnClear,
-                  s = l ? '' : i.state.query
+                  s = n.shouldFocusOnClear,
+                  o = l ? '' : i.state.query
                 i.setState({ showTypeaheadDropdown: !1 }),
-                  i._inputRef && (l && o ? i._inputRef.focus() : i._inputRef.blur()),
-                  i.setQuery(s),
+                  i._inputRef && (l && s ? i._inputRef.focus() : i._inputRef.blur()),
+                  i.setQuery(o),
                   a && a(),
                   r && r(e, t)
               }),
-              h()(s()(i), '_hasFocusedItem', function () {
+              h()(o()(i), '_hasFocusedItem', function () {
                 return i._dropdownRef && i._dropdownRef.hasFocusedItem()
               }),
-              h()(s()(i), '_selectFocusedItem', function () {
+              h()(o()(i), '_selectFocusedItem', function () {
                 i._dropdownRef && i._dropdownRef.selectFocusedItem()
               }),
-              h()(s()(i), '_focusNext', function () {
+              h()(o()(i), '_focusNext', function () {
                 i._dropdownRef && i._dropdownRef.focusNext()
               }),
-              h()(s()(i), '_focusPrevious', function () {
+              h()(o()(i), '_focusPrevious', function () {
                 i._dropdownRef && i._dropdownRef.focusPrevious()
               }),
-              (i.state = { ariaDescendantId: Object(U.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
+              (i.state = { ariaDescendantId: Object(D.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
               (i._dropdownDomId = 'typeaheadDropdown-'.concat(N)),
               (N += 1),
               (i._withNewTypeaheadUI = i.context.featureSwitches.isTrue(
@@ -1914,7 +1927,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return y.a.createElement(D.a, null, this._render)
+                  return y.a.createElement(P.a, null, this._render)
                 },
               },
               {
@@ -1993,8 +2006,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -2042,7 +2055,7 @@
           var n = t.location && t.location.state && t.location.state.userId
           return n ? S.e.select(e, n) : void 0
         },
-        P = Object(w.a)()
+        K = Object(w.a)()
           .propsFromState(function () {
             return {
               shouldRedirect: R,
@@ -2069,10 +2082,10 @@
             }
           })
           .withAnalytics({ page: 'lists', section: 'add_member' }),
-        D = n('NZCa'),
-        U = n('jHSc'),
-        K = n('3XMw'),
-        A = n.n(K),
+        P = n('NZCa'),
+        D = n('jHSc'),
+        U = n('3XMw'),
+        A = n.n(U),
         j = n('oQhu'),
         N = n('5FtR'),
         B = n('fTQJ'),
@@ -2082,8 +2095,8 @@
         W = n('FIs5'),
         q = n('rHpw'),
         G = A.a.i2209530,
-        X = A.a.e24ba7e8,
-        Y = A.a.c0fa683c,
+        Y = A.a.e24ba7e8,
+        X = A.a.c0fa683c,
         Q = A.a.c09609d7,
         J = A.a.d2826908,
         Z = A.a.he062e8a,
@@ -2124,7 +2137,7 @@
                 u()(a),
                 '_getEntryConfiguration',
                 Object(j.a)(function () {
-                  return Object(D.a)({ withDescription: !1, withUserInfo: !1, onClick: a._handleListClick })
+                  return Object(P.a)({ withDescription: !1, withUserInfo: !1, onClick: a._handleListClick })
                 }),
               ),
               g()(u()(a), '_getIsUserInList', function (e) {
@@ -2159,9 +2172,9 @@
                   i = n.user
                 if ((e.stopPropagation(), e.preventDefault(), i)) {
                   var l = i.id_str,
-                    o = t.id_str
-                  a._getIsUserInList(o) ? a._handleRemoveListMember(t) : a._handleAddListMember(t),
-                    r({ targetUserId: l, listId: o })
+                    s = t.id_str
+                  a._getIsUserInList(s) ? a._handleRemoveListMember(t) : a._handleAddListMember(t),
+                    r({ targetUserId: l, listId: s })
                 }
               }),
               g()(u()(a), '_handleClose', function () {
@@ -2214,7 +2227,7 @@
                 })
               }),
               g()(u()(a), '_renderEmptyState', function () {
-                return v.a.createElement(W.a, { buttonLink: '/i/lists/create', buttonText: Q, header: X, message: Y })
+                return v.a.createElement(W.a, { buttonLink: '/i/lists/create', buttonText: Q, header: Y, message: X })
               }),
               g()(u()(a), '_handleFetch', function () {
                 var e = a.props,
@@ -2228,7 +2241,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2244,11 +2257,11 @@
                     a = this.state,
                     i = a.listsToAddTo,
                     l = a.listsToRemoveFrom,
-                    o = a.saved
-                  if (n && !o) {
-                    var s = n.id_str
+                    s = a.saved
+                  if (n && !s) {
+                    var o = n.id_str
                     ;[].concat(r()(i), r()(l)).forEach(function (e) {
-                      t({ targetUserId: s, listId: e })
+                      t({ targetUserId: o, listId: e })
                     })
                   }
                 },
@@ -2266,7 +2279,7 @@
                   }
                   return a
                     ? v.a.createElement(
-                        U.b,
+                        D.b,
                         {
                           backLocation: n ? '/'.concat(n.screen_name, '/lists') : '/',
                           history: t,
@@ -2316,7 +2329,7 @@
             button: { marginLeft: e.spaces.space12 },
           }
         }),
-        ne = P(ee)
+        ne = K(ee)
       t.default = ne
     },
     '5T6p': function (e, t, n) {
@@ -2325,8 +2338,8 @@
         r = n.n(a),
         i = n('MWbm'),
         l = n('TIdA'),
-        o = n('A91F'),
-        s = n('t62R')
+        s = n('A91F'),
+        o = n('t62R')
       var c = n('rHpw').a.create(function (e) {
         return {
           root: { flexDirection: 'row', flexShrink: 1, flexGrow: 1 },
@@ -2354,13 +2367,13 @@
           r.a.createElement(
             i.a,
             { style: [c.coverContainer, d ? c.largeCellThumbnail : c.cellThumbnail] },
-            t ? r.a.createElement(l.a, { accessibilityLabel: '', aspectMode: o.a.SQUARE, image: t }) : null,
+            t ? r.a.createElement(l.a, { accessibilityLabel: '', aspectMode: s.a.SQUARE, image: t }) : null,
           ),
           r.a.createElement(
             i.a,
             { style: c.bodyColumn },
-            a ? r.a.createElement(s.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, a) : null,
-            r.a.createElement(s.b, { numberOfLines: 2, weight: 'bold' }, u),
+            a ? r.a.createElement(o.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, a) : null,
+            r.a.createElement(o.b, { numberOfLines: 2, weight: 'bold' }, u),
           ),
         )
       }
@@ -2371,18 +2384,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -2406,18 +2419,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -2446,8 +2459,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -2488,10 +2501,10 @@
         R = n('G8HL'),
         M = n('v6aA'),
         O = F.a.b69e2f71,
-        P = F.a.e05568cb,
-        D = F.a.b86a0989,
-        U = F.a.h06e09a1,
-        K = F.a.gbaa5488,
+        K = F.a.e05568cb,
+        P = F.a.b86a0989,
+        D = F.a.h06e09a1,
+        U = F.a.gbaa5488,
         A = (function (e) {
           u()(n, e)
           var t = p()(n)
@@ -2501,11 +2514,11 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_entryConfiguration', Object(w.a)({ shouldDisplayPin: !1 })),
-              h()(s()(e), '_renderEmptyItem', function () {
+              h()(o()(e), '_entryConfiguration', Object(w.a)({ shouldDisplayPin: !1 })),
+              h()(o()(e), '_renderEmptyItem', function () {
                 var t = e.props.user,
                   n = e.context.loggedInUserId === t.id_str
-                return g.a.createElement(S.a, { header: n ? D : O({ screenName: t.screen_name }), message: n ? U : P })
+                return g.a.createElement(S.a, { header: n ? P : O({ screenName: t.screen_name }), message: n ? D : K })
               }),
               e
             )
@@ -2518,7 +2531,7 @@
                   var e = this.props,
                     t = e.module,
                     n = e.user,
-                    a = K({ screenName: n.screen_name })
+                    a = U({ screenName: n.screen_name })
                   return g.a.createElement(
                     T.a,
                     null,
@@ -2546,8 +2559,8 @@
         r = n('ERkP'),
         i = n('Ud88'),
         l = n('K1lQ').commitMutation,
-        o = r.useState,
-        s = r.useEffect,
+        s = r.useState,
+        o = r.useEffect,
         c = r.useRef,
         u = r.useCallback,
         d = n('23An')
@@ -2558,7 +2571,7 @@
           p = c(n),
           m = c(e),
           h = c(new Set()),
-          f = o(!1),
+          f = s(!1),
           g = f[0],
           y = f[1],
           v = u(
@@ -2567,7 +2580,7 @@
             },
             [n, r, e],
           )
-        s(
+        o(
           function () {
             ;(p.current === n && m.current === e) ||
               ((h.current = new Set()), r.current && y(!1), (p.current = n), (m.current = e))
@@ -2609,8 +2622,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -2634,16 +2647,16 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), 'state', { activeConfirmation: null }),
-              h()(s()(e), '_handleConfirm', function (t) {
+              h()(o()(e), 'state', { activeConfirmation: null }),
+              h()(o()(e), '_handleConfirm', function (t) {
                 e.setState({ activeConfirmation: t })
               }),
-              h()(s()(e), '_handleConfirmed', function () {
+              h()(o()(e), '_handleConfirmed', function () {
                 e.state.activeConfirmation && e.state.activeConfirmation.callback(),
                   e.setState({ activeConfirmation: null }),
                   e.props.onClose()
               }),
-              h()(s()(e), '_handleCancelConfirm', function () {
+              h()(o()(e), '_handleCancelConfirm', function () {
                 e.setState({ activeConfirmation: null })
               }),
               e
@@ -2703,8 +2716,8 @@
         C = Object(b.a)(function (e, t, n, a) {
           return e.reduce(function (e, r, i) {
             var l = r.Icon,
-              o = r.behavioralEventContext,
-              s = r.confirmation,
+              s = r.behavioralEventContext,
+              o = r.confirmation,
               c = r.disabled,
               u = r.excludeFromActionMenu,
               d = r.isEmphasized,
@@ -2717,22 +2730,22 @@
             if (!u) {
               var y = m
                 ? function () {
-                    s
-                      ? s.render
-                        ? a({ callback: m, render: s.render })
+                    o
+                      ? o.render
+                        ? a({ callback: m, render: o.render })
                         : a({
                             callback: m,
-                            text: s.text,
-                            headline: s.headline,
-                            label: s.label,
-                            confirmButtonType: s.confirmButtonType,
-                            withCancelButton: s.withCancelButton,
+                            text: o.text,
+                            headline: o.headline,
+                            label: o.label,
+                            confirmButtonType: o.confirmButtonType,
+                            withCancelButton: o.withCancelButton,
                           })
                       : (m(), n())
                   }
                 : n
               e.push({
-                behavioralEventContext: o,
+                behavioralEventContext: s,
                 disabled: c,
                 Icon: l,
                 isEmphasized: d,
@@ -2761,8 +2774,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = (n('z84I'), n('Blm6'), n('lTEL'), n('7x/C'), n('kYxP'), n('LW0h'), n('lnti')),
-        s = n('aWyx'),
+        s = (n('z84I'), n('Blm6'), n('lTEL'), n('7x/C'), n('kYxP'), n('LW0h'), n('lnti')),
+        o = n('aWyx'),
         c = n('Yatk'),
         u = ['users'],
         d = ['conversation_id', 'participants'],
@@ -2809,9 +2822,9 @@
             n = arguments.length > 2 ? arguments[2] : void 0,
             a = e.conversation_id,
             i = e.participants,
-            o = l()(e, d)
+            s = l()(e, d)
           return r()(
-            r()({ conversation_id: a }, o),
+            r()({ conversation_id: a }, s),
             {},
             { entries: t.entryIdsByConversationId[a] || [], participants: h(i, n) },
           )
@@ -2831,14 +2844,14 @@
               (g.social_proof = (function () {
                 var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                 return (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : []).map(function (t) {
-                  if (t.proof_type === s.d.MUTUAL_FRIENDS) {
+                  if (t.proof_type === o.d.MUTUAL_FRIENDS) {
                     var n = t.users,
                       a = l()(t, u)
                     return r()(
                       r()({}, a),
                       {},
                       {
-                        users: Object(o.a)(
+                        users: Object(s.a)(
                           n.map(function (t) {
                             return Object(c.a)(e[t])
                           }),
@@ -2863,8 +2876,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -2915,10 +2928,10 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_noItemsRenderer', function () {
+              h()(o()(e), '_noItemsRenderer', function () {
                 return g.a.createElement(C.a, { header: T, message: x })
               }),
-              h()(s()(e), '_handleListFetch', function () {
+              h()(o()(e), '_handleListFetch', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler
                 ;(0, t.fetchListIfNeeded)(t.listId).catch(n())
@@ -2951,8 +2964,8 @@
             n
           )
         })(g.a.Component),
-        P = I(O)
-      t.default = P
+        K = I(O)
+      t.default = K
     },
     CWsg: function (e, t, n) {
       'use strict'
@@ -2960,8 +2973,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -3031,10 +3044,10 @@
           .withAnalytics(),
         M = n('3XMw'),
         O = n.n(M),
-        P = n('JAeQ'),
-        D = n('YeIG'),
-        U = n('KePI'),
-        K = n('P68U'),
+        K = n('JAeQ'),
+        P = n('YeIG'),
+        D = n('KePI'),
+        U = n('P68U'),
         A = n('eyty'),
         j = n('MWbm'),
         N = n('GWvE'),
@@ -3045,8 +3058,8 @@
         W = n('p+r5'),
         q = n('e0ey'),
         G = n('v6aA'),
-        X = n('jTgF'),
-        Y = 'public',
+        Y = n('jTgF'),
+        X = 'public',
         Q = 'private',
         J = O.a.d4e220b3,
         Z = O.a.e36287c6,
@@ -3084,21 +3097,21 @@
                   a = e.name,
                   r = e.shouldDeleteBanner,
                   l = i.props,
-                  o = l.analytics,
-                  s = l.createLocalApiErrorHandler,
+                  s = l.analytics,
+                  o = l.createLocalApiErrorHandler,
                   c = l.deleteListMedia,
                   u = l.editList,
                   d = l.list,
                   p = l.listId
-                i.setState({ isSaving: !0 }), o.scribeAction('save')
+                i.setState({ isSaving: !0 }), s.scribeAction('save')
                 var m = []
                 if (r && p) {
-                  var h = c(p).catch(s({ defaultToast: { text: te }, showToast: !0 }))
+                  var h = c(p).catch(o({ defaultToast: { text: te }, showToast: !0 }))
                   m.push(h)
                 }
                 if ((i._hasMediaChanged() && d && m.push(i._handleUploadMedia(d)), i._hasListDataChanged() && p)) {
-                  var f = u(p, { description: t, mode: n ? Q : Y, name: a }).catch(
-                    s(
+                  var f = u(p, { description: t, mode: n ? Q : X, name: a }).catch(
+                    o(
                       g()({ defaultToast: { text: ne }, showToast: !0 }, b.a.ValidationFailure, {
                         customAction: i._handleListUpdateFailure,
                       }),
@@ -3118,14 +3131,14 @@
                   a = e.name,
                   r = i.props,
                   l = r.analytics,
-                  o = r.createList,
-                  s = r.createLocalApiErrorHandler,
+                  s = r.createList,
+                  o = r.createLocalApiErrorHandler,
                   c = r.onError,
                   u = r.suggestedUser,
-                  d = n ? Q : Y
+                  d = n ? Q : X
                 i.setState({ isSaving: !0 }),
                   l.scribeAction('create'),
-                  o({ name: a, description: t, mode: d }).then(
+                  s({ name: a, description: t, mode: d }).then(
                     function (e) {
                       return (
                         e &&
@@ -3134,7 +3147,7 @@
                             var t = i.props.history,
                               n = {
                                 pathname: ''.concat(e.uri, '/members/suggested'),
-                                state: { previousStep: U.a.Creation, suggestedUser: u },
+                                state: { previousStep: D.a.Creation, suggestedUser: u },
                               }
                             u ? t.push(n) : t.replace(n)
                           }
@@ -3143,7 +3156,7 @@
                     },
                     function (e) {
                       c && c(),
-                        s(
+                        o(
                           g()({ defaultToast: { text: ne }, showToast: !0 }, b.a.ValidationFailure, {
                             customAction: i._handleListUpdateFailure,
                           }),
@@ -3165,9 +3178,9 @@
                   a = t.removeMediaUpload,
                   r = t.uploadedMedia,
                   l = i.state.iconCrop,
-                  o = e.id_str
-                return r && r.uploader && o
-                  ? n({ listId: o, mediaId: r.id, iconCrop: l }).then(function () {
+                  s = e.id_str
+                return r && r.uploader && s
+                  ? n({ listId: s, mediaId: r.id, iconCrop: l }).then(function () {
                       return a(r.id), Promise.resolve(e)
                     }, i._handleMediaUpdateFailure(r, ne))
                   : Promise.resolve(e)
@@ -3177,7 +3190,7 @@
               }),
               g()(u()(i), '_handleIconCropDone', function (e) {
                 var t = i.props.analytics
-                Object(D.a)(e) || i.setState({ iconCrop: e }), t.scribe({ element: 'banner_image', action: 'select' })
+                Object(P.a)(e) || i.setState({ iconCrop: e }), t.scribe({ element: 'banner_image', action: 'select' })
               }),
               g()(u()(i), '_handlePrivacyChange', function (e, t) {
                 i.setState({ isPrivate: t })
@@ -3200,8 +3213,8 @@
                   n = i.props,
                   a = n.addLocalMediaId,
                   l = n.listId,
-                  o = n.uploadedMedia
-                o && i._clearBannerMedia(o.id), a({ listId: l || '-1', mediaId: t })
+                  s = n.uploadedMedia
+                s && i._clearBannerMedia(s.id), a({ listId: l || '-1', mediaId: t })
               }),
               g()(u()(i), '_handleBannerMediaFailure', function (e) {
                 i._clearBannerMedia(e)
@@ -3217,28 +3230,28 @@
                   var a = i.props,
                     r = a.addToast,
                     l = a.createLocalApiErrorHandler,
-                    o = a.removeMediaUpload,
-                    s = Object(X.a)(n)
-                  if (s) {
-                    var c = Object(X.b)(s, t)
+                    s = a.removeMediaUpload,
+                    o = Object(Y.a)(n)
+                  if (o) {
+                    var c = Object(Y.b)(o, t)
                     c && r(c)
                   } else l({ showToast: !0 })(n)
-                  o(e.id), i.setState({ isSaving: !1 })
+                  s(e.id), i.setState({ isSaving: !1 })
                 }
               }),
               g()(u()(i), '_handleListUpdateFailure', function (e) {
                 i.setState({ nameError: e.message || ae })
               })
-            var o = e.list,
-              s = (null == o ? void 0 : o.name) || '',
-              c = (null == o ? void 0 : o.description) || '',
-              d = (null == o ? void 0 : o.mode) === Q
+            var s = e.list,
+              o = (null == s ? void 0 : s.name) || '',
+              c = (null == s ? void 0 : s.description) || '',
+              d = (null == s ? void 0 : s.mode) === Q
             return (
               (i.state = {
                 description: c,
                 isPrivate: d,
                 isSaving: !1,
-                name: s,
+                name: o,
                 nameError: '',
                 showConfirmation: !1,
                 shouldDeleteBanner: !1,
@@ -3247,7 +3260,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'componentWillUnmount',
                 value: function () {
@@ -3284,10 +3297,10 @@
                     r = this.state,
                     i = r.description,
                     l = r.isPrivate,
-                    o = r.name,
-                    s = r.nameError,
+                    s = r.name,
+                    o = r.nameError,
                     c = r.shouldDeleteBanner,
-                    u = !Object(D.a)(null == t ? void 0 : t.image),
+                    u = !Object(P.a)(null == t ? void 0 : t.image),
                     d = c || !u ? (null == n ? void 0 : n.image) : null == t ? void 0 : t.image,
                     p = v.a.createElement(
                       B.a,
@@ -3297,7 +3310,7 @@
                   return v.a.createElement(
                     j.a,
                     null,
-                    v.a.createElement(K.default, {
+                    v.a.createElement(U.default, {
                       accessibilityLabel: ee,
                       aspectRatio: 3,
                       currentContent: p,
@@ -3308,13 +3321,13 @@
                       onRemove: u || a ? this._handleBannerMediaRemove : void 0,
                     }),
                     v.a.createElement(W.a, {
-                      errorText: s,
-                      invalid: !!s,
+                      errorText: o,
+                      invalid: !!o,
                       label: J,
                       maxLength: 25,
                       name: 'name',
                       onChange: this._handleNameChange,
-                      value: o,
+                      value: s,
                     }),
                     v.a.createElement(W.a, {
                       label: Z,
@@ -3326,7 +3339,7 @@
                       value: i,
                     }),
                     a
-                      ? v.a.createElement(P.a, {
+                      ? v.a.createElement(K.a, {
                           aspectRatio: 3,
                           media: a,
                           onCancel: this._handleIconCropCancel,
@@ -3357,8 +3370,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -3382,7 +3395,7 @@
             return l()(this, n), ((a = t.call(this, e)).state = { orientedImage: null }), a
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -3416,12 +3429,12 @@
                     r = e.media,
                     i = e.withAspectRatioOptions,
                     l = e.withZoomControl,
-                    o = this.state.orientedImage,
-                    s = r || {},
-                    c = s.cropData,
-                    u = s.originalMediaFile,
+                    s = this.state.orientedImage,
+                    o = r || {},
+                    c = o.cropData,
+                    u = o.originalMediaFile,
                     d = void 0 === u ? {} : u
-                  return o
+                  return s
                     ? h.a.createElement(
                         y.a,
                         { style: S.cropper },
@@ -3429,7 +3442,7 @@
                           circle: this.props.circle,
                           defaultAspectRatio: (a && a.aspectRatio) || (c && c.aspectRatio) || n,
                           defaultCropData: a || c,
-                          image: { src: o.url, width: d.width, height: d.height },
+                          image: { src: s.url, width: d.width, height: d.height },
                           ref: t,
                           withAspectRatioOptions: i,
                           withZoomControl: l,
@@ -3458,18 +3471,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 20.5 20.5',
               },
             ),
@@ -3490,8 +3503,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -3517,10 +3530,10 @@
         R = n('rHpw'),
         M = n('jhWN'),
         O = n('1I0O'),
-        P = n('pBrB'),
-        D = n('jV+4'),
-        U = n('MWbm'),
-        K = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
+        K = n('pBrB'),
+        P = n('jV+4'),
+        D = n('MWbm'),
+        U = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
         A = Object.freeze({
           UserCompact: 'UserCompact',
           UserConcise: 'UserConcise',
@@ -3545,8 +3558,8 @@
                   r = t.displayNameLabel,
                   i = t.isBlocking,
                   l = t.isDisabled,
-                  o = t.isFollowedBy,
-                  s = t.isProtected,
+                  s = t.isFollowedBy,
+                  o = t.isProtected,
                   c = t.isVerified,
                   u = t.name,
                   d = t.onScreenNameClick,
@@ -3557,18 +3570,18 @@
                   g = t.translatorType,
                   y = t.withFollowsYou,
                   v = t.withLink,
-                  _ = b.a.createElement(D.a, {
+                  _ = b.a.createElement(P.a, {
                     badgeContext: n,
                     displayNameLabel: r,
-                    isProtected: s,
+                    isProtected: o,
                     isVerified: c,
                     name: u,
                     onLinkClick: d,
-                    promotedContent: m === K.TWEET ? p : void 0,
+                    promotedContent: m === U.TWEET ? p : void 0,
                     screenName: h,
                     screenNameSuffix: f,
                     translatorType: g,
-                    withFollowsYou: y && o,
+                    withFollowsYou: y && s,
                     withHoverCard: !i && !l && v,
                     withLink: !l && v,
                     withScreenName: !a,
@@ -3576,7 +3589,7 @@
                   })
                 return a
                   ? b.a.createElement(
-                      U.a,
+                      D.a,
                       { style: H.disabledMessageContainer },
                       _,
                       b.a.createElement(k.b, { color: 'gray700' }, a),
@@ -3612,9 +3625,9 @@
                   r = n.text
                 return t
                   ? b.a.createElement(
-                      U.a,
+                      D.a,
                       { style: H.userTypeaheadSocialContext },
-                      b.a.createElement(U.a, { style: H.userTypeaheadSocialContextIcon }, a),
+                      b.a.createElement(D.a, { style: H.userTypeaheadSocialContextIcon }, a),
                       b.a.createElement(
                         k.b,
                         { color: 'gray700', numberOfLines: 1, style: H.userTypeaheadSocialContextText },
@@ -3646,7 +3659,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -3656,8 +3669,8 @@
                     a = e.avatarDecoration,
                     i = e.avatarSize,
                     l = e.avatarUri,
-                    o = e.bottomControl,
-                    s = e.decoration,
+                    s = e.bottomControl,
+                    o = e.decoration,
                     c = e.displayMode,
                     u = e.isBlocking,
                     d = e.isDisabled,
@@ -3675,11 +3688,11 @@
                     T = e.withInteractiveStyling,
                     x = e.withLink,
                     R = e.withUsernameCenterAligned,
-                    P = x && !u,
-                    D = c === A.UserCompact || R,
+                    K = x && !u,
+                    P = c === A.UserCompact || R,
                     B = c === A.ExperimentalUserTypeahead,
                     V =
-                      g && v === K.USER && 'earned' !== (g.disclosure_type && g.disclosure_type.toLowerCase())
+                      g && v === U.USER && 'earned' !== (g.disclosure_type && g.disclosure_type.toLowerCase())
                         ? b.a.createElement(F.a, { contentAuthorId: S, promotedContent: g, style: H.promotedIndicator })
                         : null,
                     z = {
@@ -3693,7 +3706,7 @@
                       screenName: _,
                       style: H.avatar,
                       uri: l,
-                      withHoverCard: P,
+                      withHoverCard: K,
                       withLink: x,
                     },
                     W = b.a.createElement(I.a.Consumer, null, function (e) {
@@ -3704,18 +3717,18 @@
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== m,
-                    X = (q ? 'radio' : G && 'button') || 'listitem',
-                    Y = this._renderUserName(),
+                    Y = (q ? 'radio' : G && 'button') || 'listitem',
+                    X = this._renderUserName(),
                     Q = this._renderHighlightedUserLabel(),
                     J = this._renderBio(),
-                    Z = Q || J || V || o,
+                    Z = Q || J || V || s,
                     $ = b.a.createElement(
                       b.a.Fragment,
                       null,
                       Q,
                       J,
                       V,
-                      o ? b.a.createElement(U.a, { style: H.bottomControl }, o) : null,
+                      s ? b.a.createElement(D.a, { style: H.bottomControl }, s) : null,
                     )
                   return b.a.createElement(
                     y.a,
@@ -3724,7 +3737,7 @@
                       L.a,
                       {
                         accessibilityLabel: t,
-                        accessibilityRole: X,
+                        accessibilityRole: Y,
                         accessibilityState: n,
                         disabled: !!d,
                         focusable: q || G,
@@ -3741,15 +3754,15 @@
                         E.a,
                         {
                           avatarCell: W,
-                          avatarCellStyle: [H.avatarColumn, D && H.bodyColumnCentered],
+                          avatarCellStyle: [H.avatarColumn, P && H.bodyColumnCentered],
                           avatarSize: B ? 'xxxLarge' : i,
-                          cellStyle: [H.bodyColumn, D && H.bodyColumnCentered],
+                          cellStyle: [H.bodyColumn, P && H.bodyColumnCentered],
                         },
-                        b.a.createElement(U.a, { style: H.body }, Y, s),
-                        D ? null : $,
+                        b.a.createElement(D.a, { style: H.body }, X, o),
+                        P ? null : $,
                         B ? this._renderUserTypeaheadSocialContext() : null,
                       ),
-                      Z && D
+                      Z && P
                         ? b.a.createElement(
                             E.a,
                             { avatarCell: null, avatarCellStyle: H.avatarColumn, cellStyle: H.bodyColumn },
@@ -3771,7 +3784,7 @@
                     i = e.withheldDescription,
                     l = e.withheldEntities
                   return a && t && this._isEligibleForBio()
-                    ? b.a.createElement(P.a, {
+                    ? b.a.createElement(K.a, {
                         description: t,
                         entities: a,
                         isConcise: n === A.UserConcise,
@@ -3820,8 +3833,8 @@
         r = n.n(a),
         i = n('ddV6'),
         l = n.n(i),
-        o = (n('yH/f'), n('kH1Z'), n('6U7i'), n('ERkP')),
-        s = n.n(o),
+        s = (n('yH/f'), n('kH1Z'), n('6U7i'), n('ERkP')),
+        o = n.n(s),
         c = n('3XMw'),
         u = n.n(c),
         d = n('fS8x'),
@@ -3833,56 +3846,56 @@
           n = e.media,
           a = e.onCancel,
           i = e.onCropDone,
-          o = s.a.useState({ status: 'not_started' }),
-          c = l()(o, 2),
+          s = o.a.useState({ status: 'not_started' }),
+          c = l()(s, 2),
           u = c[0],
           f = c[1],
-          g = s.a.useState(!1),
+          g = o.a.useState(!1),
           y = l()(g, 2),
           v = y[0],
           b = y[1],
-          _ = s.a.useState(!1),
+          _ = o.a.useState(!1),
           k = l()(_, 2),
           E = k[0],
           I = k[1],
           C = u.croppedMediaId,
           S = void 0 === C ? void 0 : C,
           w = u.status
-        s.a.useEffect(
+        o.a.useEffect(
           function () {
             w === h.NotStarted && (b(!0), f({ status: 'started' })),
               w === h.Completed && n.id !== S && f({ status: 'not_started', croppedMediaId: void 0 })
           },
           [w, n, S],
         )
-        var L = s.a.useCallback(
+        var L = o.a.useCallback(
             function () {
               b(!1), f({ status: h.Completed, croppedMediaId: n.id }), a()
             },
             [a, n],
           ),
-          F = s.a.useCallback(function () {
+          F = o.a.useCallback(function () {
             b(!1), I(!0)
           }, []),
-          T = s.a.useCallback(function () {
+          T = o.a.useCallback(function () {
             I(!1), b(!0)
           }, []),
-          x = s.a.useCallback(function () {
+          x = o.a.useCallback(function () {
             I(!1)
           }, []),
-          R = s.a.useCallback(
+          R = o.a.useCallback(
             function (e) {
               f({ status: h.Completed, croppedMediaId: n.id }), null == i || i(e)
             },
             [i, n],
           ),
           M = r()(r()({}, n), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n.mediaFile, cropData: void 0 })
-        return s.a.createElement(
-          s.a.Fragment,
+        return o.a.createElement(
+          o.a.Fragment,
           null,
-          v ? s.a.createElement(d.a, { defaultAspectRatio: t, media: n, onCancel: L, onDone: F, title: p }) : null,
+          v ? o.a.createElement(d.a, { defaultAspectRatio: t, media: n, onCancel: L, onDone: F, title: p }) : null,
           E
-            ? s.a.createElement(d.a, {
+            ? o.a.createElement(d.a, {
                 defaultAspectRatio: 1,
                 media: M,
                 onCancel: T,
@@ -3904,8 +3917,8 @@
         r = n('ERkP'),
         i = n.n(r),
         l = n('v6aA'),
-        o = n('tI3i'),
-        s = n.n(o),
+        s = n('tI3i'),
+        o = n.n(s),
         c = n('cFuS'),
         u = n('zCf4'),
         d = n('IMA+'),
@@ -3915,20 +3928,20 @@
       function f(e) {
         var t = h()(void 0 !== a ? a : (a = n('whk1')), e.user).legacy,
           r = e.cellClickable,
-          o = e.decoration,
+          s = e.decoration,
           p = e.displayMode,
           m = (function () {
             var e = i.a.useContext(l.a).loggedInUserId
-            return s()(!!e, 'loggedInUserId is undefined!'), e
+            return o()(!!e, 'loggedInUserId is undefined!'), e
           })(),
           f = Object(u.f)(),
           g = i.a.useCallback(
             function () {
-              return 'function' == typeof o
-                ? o({ displayMode: p, loggedInUserId: m, userId: null == t ? void 0 : t.id_str })
-                : o
+              return 'function' == typeof s
+                ? s({ displayMode: p, loggedInUserId: m, userId: null == t ? void 0 : t.id_str })
+                : s
             },
-            [o, m, t, p],
+            [s, m, t, p],
           ),
           y = i.a.useCallback(
             function () {
@@ -3962,8 +3975,8 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('VrFO'),
-        s = n.n(o),
+        s = n('VrFO'),
+        o = n.n(s),
         c = n('Y9Ll'),
         u = n.n(c),
         d = n('1Pcy'),
@@ -3996,8 +4009,8 @@
             var t = g()(n)
             function n() {
               var e
-              s()(this, n)
-              for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+              o()(this, n)
+              for (var a = arguments.length, i = new Array(a), s = 0; s < a; s++) i[s] = arguments[s]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
                 r()(p()(e), '_renderAddButton', function () {
@@ -4021,15 +4034,15 @@
                     r = t.listId,
                     i = t.onAdd,
                     l = t.shouldAddUserToList,
-                    o = t.userId
+                    s = t.userId
                   l()
-                    ? (n(r, { userId: o, shouldInjectURTEntry: !1 })
+                    ? (n(r, { userId: s, shouldInjectURTEntry: !1 })
                         .then(function () {
-                          i && i(o)
+                          i && i(s)
                         })
                         .catch(a(y.a)),
                       e._scribeAction('add'))
-                    : i && i(o)
+                    : i && i(s)
                 }),
                 r()(p()(e), '_handleRemove', function () {
                   var t = e.props,
@@ -4075,7 +4088,7 @@
             r = e.onRemove,
             i = e.shouldAddUserToList
           return function (e) {
-            var o = e.userId
+            var s = e.userId
             return l.a.createElement(L, {
               getIsMember: t,
               listId: n,
@@ -4087,7 +4100,7 @@
                   : function () {
                       return !0
                     },
-              userId: o,
+              userId: s,
             })
           }
         }
@@ -4097,15 +4110,15 @@
           a = e.isListAuthor,
           i = e.listId,
           l = e.onAdd,
-          o = e.onRemove,
-          s = e.shouldAddUserToList
+          s = e.onRemove,
+          o = e.shouldAddUserToList
         return (
           (t = {}),
           r()(
             t,
             T.b.User,
             Object(x.a)({
-              decoration: a ? R({ getIsMember: n, shouldAddUserToList: s, listId: i, onAdd: l, onRemove: o }) : void 0,
+              decoration: a ? R({ getIsMember: n, shouldAddUserToList: o, listId: i, onAdd: l, onRemove: s }) : void 0,
             }),
           ),
           r()(t, T.b.TimelineCursor, Object(F.a)({})),
@@ -4117,14 +4130,14 @@
       'use strict'
       n.r(t),
         n.d(t, 'UserListsDiscoveryScreen', function () {
-          return P
+          return K
         })
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -4165,7 +4178,7 @@
         R = I.a.h421e74c,
         M = I.a.e9f1fbcb,
         O = I.a.e5e4d3a9,
-        P = (function (e) {
+        K = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -4174,15 +4187,15 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_renderPrimaryContent', function () {
+              h()(o()(e), '_renderPrimaryContent', function () {
                 return g.a.createElement(F.a, {
-                  entryConfiguration: _.default,
+                  entryConfiguration: _.b,
                   module: w(),
                   renderEmptyState: e._renderEmptyState,
                   title: R,
                 })
               }),
-              h()(s()(e), '_renderEmptyState', function () {
+              h()(o()(e), '_renderEmptyState', function () {
                 return g.a.createElement(k.a, { header: M, message: O })
               }),
               e
@@ -4211,9 +4224,9 @@
             n
           )
         })(g.a.Component)
-      h()(P, 'contextType', x.a)
-      var D = b(P)
-      t.default = D
+      h()(K, 'contextType', x.a)
+      var P = b(K)
+      t.default = P
     },
     'Mbn/': function (e, t, n) {
       'use strict'
@@ -4221,18 +4234,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -4259,15 +4272,15 @@
         r = n.n(a),
         i = n('yiKp'),
         l = n.n(i),
-        o = (n('z84I'), n('ERkP'), n('QIgh')),
-        s = n('8UdT'),
+        s = (n('z84I'), n('ERkP'), n('QIgh')),
+        o = n('8UdT'),
         c = n('rpbw'),
         u = n('f1iL'),
         d = function (e) {
           var t = e.renderPinnedEditButton
           return function (e) {
             return e.map(function (e) {
-              if (e.type === s.b.TimelineModule && e.entryId === u.a.pinnedListModule) {
+              if (e.type === o.b.TimelineModule && e.entryId === u.a.pinnedListModule) {
                 var n = e.content.items.length > 1
                 if (e.content.header && n)
                   return l()(
@@ -4288,9 +4301,9 @@
         }
       t.a = function (e, t) {
         return l()(
-          l()({}, Object(o.createConfiguration)({ withMessageGaps: null == t ? void 0 : t.withMessageGaps })),
+          l()({}, Object(s.a)({ withMessageGaps: null == t ? void 0 : t.withMessageGaps })),
           {},
-          r()({}, s.b.TwitterList, Object(c.a)(e)),
+          r()({}, o.b.TwitterList, Object(c.a)(e)),
         )
       }
     },
@@ -4300,8 +4313,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = n('VrFO'),
-        s = n.n(o),
+        s = n('VrFO'),
+        o = n.n(s),
         c = n('Y9Ll'),
         u = n.n(c),
         d = n('1Pcy'),
@@ -4338,10 +4351,10 @@
           n('x4t0'),
           n('/kEJ')),
         O = n('oEOe'),
-        P = n('vy4g'),
-        D = n('3A2y'),
-        U = n('Y6L+'),
-        K = n('9EWH'),
+        K = n('vy4g'),
+        P = n('3A2y'),
+        D = n('Y6L+'),
+        U = n('9EWH'),
         A = n('Ssj5'),
         j = n('GZwR'),
         N = ['rounded_score', 'tokens'],
@@ -4359,7 +4372,9 @@
             r = e.src,
             i = a
           return (
-            null != t && t.communityId && (i = ''.concat(a, '_').concat(t.communityId)),
+            null != t && t.communityId
+              ? (i = ''.concat(a, '_').concat(t.communityId))
+              : null != t && t.trustedFriendsId && (i = ''.concat(a, '_').concat(t.trustedFriendsId)),
             ''.concat(n, '_').concat(i, '_').concat(r)
           )
         },
@@ -4374,23 +4389,23 @@
             return { id: ''.concat(i, '_').concat(r.replace(' ', '_')), type: i, tokens: n, rounded_score: t, data: a }
           })
         },
-        X = function (e) {
+        Y = function (e) {
           return e.map(function (e) {
             var t,
               n = e.rounded_score,
               a = e.tokens,
               r = l()(e, B),
               i = j.b.Event,
-              o = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(U.A.id)
-            return { id: (null == o ? void 0 : o[0]) || '', type: i, tokens: a, rounded_score: n, data: r }
+              s = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(D.A.id)
+            return { id: (null == s ? void 0 : s[0]) || '', type: i, tokens: a, rounded_score: n, data: r }
           })
         },
-        Y = function (e, t) {
+        X = function (e, t) {
           return e.typeaheadV2.remoteResults[t]
         },
         Q = function (e, t) {
           return function (n, a) {
-            var r = Y(a(), W(e, t)),
+            var r = X(a(), W(e, t)),
               i = r && r.timestamp
             return i && Date.now() - i <= 3e5 ? Promise.resolve() : n(J(e, t))
           }
@@ -4400,28 +4415,35 @@
             var i = r.api
             if (!e || !e.q || '' === e.q.trim()) return Promise.resolve()
             var l = { queryId: W(e, t) },
-              o = (t || {}).communityId,
-              s = e.result_type.split(','),
-              c = { actionTypes: z, context: 'FETCH_TYPEAHEAD', meta: l }
-            if (s.includes(j.a.CommunityUsers) && o) {
+              s = t || {},
+              o = s.communityId,
+              c = s.trustedFriendsId,
+              u = e.result_type.split(','),
+              d = { actionTypes: z, context: 'FETCH_TYPEAHEAD', meta: l }
+            if (u.includes(j.a.CommunityUsers) && o) {
               return Object(O.b)(n, {
                 params: { communityId: o, prefix: e.q },
                 request: i.Typeahead.fetchCommunityInviteUsers,
-              })(c, function (e) {
+              })(d, function (e) {
                 var t = ((null == e ? void 0 : e.invite_action_results) || {}).entities
                 return t ? [Object(M.c)(t)] : void 0
               })
             }
-            if (s.includes(j.a.CommunityMembers) && o) {
+            if (u.includes(j.a.CommunityMembers) && o) {
               return Object(O.b)(n, {
                 params: { communityId: o, prefix: e.q },
                 request: i.Typeahead.fetchCommunityMembers,
-              })(c, function (e) {
+              })(d, function (e) {
                 var t = ((null == e ? void 0 : e.user_community_relationships) || {}).entities
                 return t ? [Object(M.c)(t)] : void 0
               })
             }
-            return Object(O.b)(n, { params: e, request: i.Typeahead.fetch })(c)
+            return u.includes(j.a.TrustedFriendsSuggested) && c
+              ? Object(O.b)(n, {
+                  params: { trustedFriendsId: c, prefix: e.q },
+                  request: i.Typeahead.fetchTrustedFriendsSuggestions,
+                })(d)
+              : Object(O.b)(n, { params: e, request: i.Typeahead.fetch })(d)
           }
         }
       A.a.register(
@@ -4431,7 +4453,7 @@
           switch (t.type) {
             case z.REQUEST:
               var n = t.meta.queryId
-              return Object(K.a)(e, function (e) {
+              return Object(U.a)(e, function (e) {
                 e.remoteResults[n] || (e.remoteResults[n] = { fetchStatus: w.a.NONE }),
                   (e.remoteResults[n].fetchStatus = w.a.LOADING)
               })
@@ -4440,30 +4462,30 @@
                 r = t.payload
               if (!r) return e
               var i = r.users.map(function (e) {
-                  return Object(P.a)(e, j.c.Remote)
+                  return Object(K.a)(e, j.c.Remote)
                 }),
                 l = {
                   fetchStatus: w.a.LOADED,
                   id: a,
                   orderedSections: r.ordered_sections,
-                  events: X(r.events),
+                  events: Y(r.events),
                   topics: G(r.topics),
                   users: Object(j.i)(i),
                   timestamp: Date.now(),
                 }
-              return Object(K.a)(e, function (e) {
+              return Object(U.a)(e, function (e) {
                 ;(e.cachedIds = e.cachedIds.filter(function (e) {
                   return e !== a
                 })),
                   e.cachedIds.push(a),
                   e.cachedIds.length >= 25 &&
-                    (e.remoteResults = Object(D.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
+                    (e.remoteResults = Object(P.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
                   (e.remoteResults[a] = l)
               })
             case z.FAILURE:
-              var o = t.meta.queryId
-              return Object(K.a)(e, function (e) {
-                e.remoteResults[o].fetchStatus = w.a.FAILED
+              var s = t.meta.queryId
+              return Object(U.a)(e, function (e) {
+                e.remoteResults[s].fetchStatus = w.a.FAILED
               })
             default:
               return e
@@ -4476,30 +4498,31 @@
           var t = e.communityId,
             n = e.filter,
             a = e.query,
-            r = e.source
-          return W({ q: a, result_type: (n || $).join(','), src: r }, { communityId: t })
+            r = e.source,
+            i = e.trustedFriendsId
+          return W({ q: a, result_type: (n || $).join(','), src: r }, { communityId: t, trustedFriendsId: i })
         },
         te = function (e, t) {
           return (function (e, t) {
-            var n = Y(e, t)
+            var n = X(e, t)
             return n && n.fetchStatus
           })(e, ee(t))
         },
         ne = function (e, t) {
           return (function (e, t) {
-            var n = Y(e, t)
+            var n = X(e, t)
             return (n && n.users) || V
           })(e, ee(t))
         },
         ae = function (e, t) {
           return (function (e, t) {
-            var n = Y(e, t)
+            var n = X(e, t)
             return (n && n.topics) || V
           })(e, ee(t))
         },
         re = function (e, t) {
           return (function (e, t) {
-            var n = Y(e, t)
+            var n = X(e, t)
             return (n && n.events) || V
           })(e, ee(t))
         },
@@ -4545,29 +4568,29 @@
               return t.userLimit
             },
             function (e, t, n, a, r, i, l) {
-              var o = Object(F.a)(a || [], function (e) {
+              var s = Object(F.a)(a || [], function (e) {
                   return e.type === j.b.User ? e.data.id_str : void 0
                 }),
-                s = t.filter(function (e) {
-                  return o.indexOf(e.id) < 0
+                o = t.filter(function (e) {
+                  return s.indexOf(e.id) < 0
                 }),
                 c = e.filter(function (e) {
-                  return o.indexOf(e.id) < 0
+                  return s.indexOf(e.id) < 0
                 }),
-                u = Object(C.a)(s, c).slice(0, l || 10),
+                u = Object(C.a)(o, c).slice(0, l || 10),
                 d = n === w.a.LOADED,
                 p = i && i({ query: r, hasResults: !!e.length, isLoaded: d }),
                 m = p ? [].concat(E()(u), [p]) : u
               return {
                 users: m.length ? m : Object(S.a)(),
                 userExactMatch: p,
-                filteredPrefetchUsers: s,
+                filteredPrefetchUsers: o,
                 filteredRemoteUsers: c,
               }
             },
           )
         },
-        oe = function () {
+        se = function () {
           return Object(I.createSelector)(
             le(),
             Object(I.createSelector)(
@@ -4585,8 +4608,8 @@
               function (e, t, n, a, r) {
                 var i = t === w.a.LOADED,
                   l = r && r({ query: n, hasResults: !!e.length, isLoaded: i }),
-                  o = e.slice(0, a || 3)
-                return l && o.push(l), o.length ? o : Object(S.a)()
+                  s = e.slice(0, a || 3)
+                return l && s.push(l), s.length ? s : Object(S.a)()
               },
             ),
             Object(I.createSelector)(
@@ -4616,7 +4639,7 @@
             function (e, t, n, a, r) {
               var i = e.users,
                 l = a && a.length ? a : null,
-                o = r
+                s = r
                   ? r(
                       l,
                       i,
@@ -4627,13 +4650,13 @@
                       null == e ? void 0 : e.userExactMatch,
                     )
                   : Object(T.a)([l, n.length ? n : void 0, t.length ? t : void 0, i.length ? i : void 0])
-              return t.length || i.length || n.length ? o : l ? [l] : Object(S.a)()
+              return t.length || i.length || n.length ? s : l ? [l] : Object(S.a)()
             },
           )
         },
-        se = Object(x.a)()
+        oe = Object(x.a)()
           .propsFromState(function () {
-            return { fetchStatus: te, items: oe() }
+            return { fetchStatus: te, items: se() }
           })
           .propsFromActions(function () {
             return {
@@ -4676,6 +4699,7 @@
           'query',
           'shouldDeferPrefetch',
           'topicType',
+          'trustedFriendsId',
           'userLimit',
         ],
         ye = (function (e) {
@@ -4684,7 +4708,7 @@
           function n(e, a) {
             var r
             return (
-              s()(this, n),
+              o()(this, n),
               (r = t.call(this, e, a)),
               v()(p()(r), '_fetchTypeaheadResultsIfNeeded', function (e) {
                 e.query &&
@@ -4697,7 +4721,7 @@
                         context_text: e.contextText,
                         topic_type: e.topicType,
                       },
-                      { communityId: e.communityId },
+                      { communityId: e.communityId, trustedFriendsId: e.trustedFriendsId },
                     )
                     .catch(e.createLocalApiErrorHandler({}))
               }),
@@ -4707,9 +4731,9 @@
                   i = n.onItemClick,
                   l = n.query
                 i(e, t)
-                var o = de.a.forTypeaheadResult(e, t),
-                  s = o ? [o] : void 0
-                a.scribe({ action: 'click', data: { search_details: { query: l }, targets: s } })
+                var s = de.a.forTypeaheadResult(e, t),
+                  o = s ? [s] : void 0
+                a.scribe({ action: 'click', data: { search_details: { query: l }, targets: o } })
               }),
               v()(p()(r), '_scribeResults', function () {
                 var e = r.props,
@@ -4752,8 +4776,8 @@
                     r = n.fetchUsersPresenceIfNeeded,
                     i = n.filter,
                     l = n.items,
-                    o = n.onItemsChanged,
-                    s = n.query,
+                    s = n.onItemsChanged,
+                    o = n.query,
                     c = n.shouldDeferPrefetch,
                     u = n.source,
                     d = e.filter,
@@ -4761,7 +4785,7 @@
                     m = e.source,
                     h = this.context.loggedInUserId,
                     f = this.context.featureSwitches.isTrue('voice_rooms_typeahead_audiospace_ring_enabled') && h
-                  if (null != l && l.length && l !== e.items && (this._scribeResults(), o && o(l), f)) {
+                  if (null != l && l.length && l !== e.items && (this._scribeResults(), s && s(l), f)) {
                     var g = Object(fe.a)(l)
                       .filter(function (e) {
                         return e.type === ce.b.User
@@ -4771,7 +4795,7 @@
                       })
                     g && r(g).catch(a({}))
                   }
-                  ;(s === p && i === d && u === m) ||
+                  ;(o === p && i === d && u === m) ||
                     (this._debouncedFetchTypeaheadResultsIfNeeded(this.props),
                     c &&
                       (clearTimeout(this._prefetchResultsTimer),
@@ -4797,7 +4821,7 @@
                       e.getUserExactMatch,
                       e.injectedItems),
                     i = e.items,
-                    o =
+                    s =
                       (e.maxEvents,
                       e.maxTopics,
                       e.onItemClick,
@@ -4805,12 +4829,12 @@
                       e.orderResults,
                       e.prefetchTypeaheadUsersIfNeeded,
                       e.query),
-                    s = (e.shouldDeferPrefetch, e.topicType, e.userLimit, l()(e, ge)),
-                    c = o && n !== w.a.LOADED,
+                    o = (e.shouldDeferPrefetch, e.topicType, e.trustedFriendsId, e.userLimit, l()(e, ge)),
+                    c = s && n !== w.a.LOADED,
                     u = c && !this.state.shouldShowPrefetchResults ? a : i
                   return _.a.createElement(
                     pe.a,
-                    r()({}, s, { isLoading: !!c, items: u, onItemClick: this._handleItemClick, query: o, ref: t }),
+                    r()({}, o, { isLoading: !!c, items: u, onItemClick: this._handleItemClick, query: s, ref: t }),
                   )
                 },
               },
@@ -4823,7 +4847,7 @@
       var ve = _.a.forwardRef(function (e, t) {
           return _.a.createElement(ye, r()({}, e, { dropdownRef: t }))
         }),
-        be = se.forwardRef(ve)
+        be = oe.forwardRef(ve)
       t.a = be
     },
     OhSZ: function (e, t, n) {
@@ -4835,8 +4859,8 @@
         r = n.n(a),
         i = (n('z84I'), n('ho0z'), n('ERkP')),
         l = n.n(i),
-        o = n('aWyx'),
-        s = n('XnpN'),
+        s = n('MMRb'),
+        o = n('XnpN'),
         c = n('3XMw'),
         u = n.n(c),
         d = n('MWbm'),
@@ -4861,8 +4885,8 @@
             n = e.newConversationParticipants,
             a = e.perspective
           if (t) {
-            if (t.type === o.a.ONE_TO_ONE) {
-              var i = Object(s.a)(t, a).map(function (e) {
+            if (t.type === s.CONVERSATION_TYPE.ONE_TO_ONE) {
+              var i = Object(o.a)(t, a).map(function (e) {
                 return e.user
               })
               return r()(i, 1)[0].name
@@ -4883,40 +4907,46 @@
           k = e.renderTimestamp,
           E = e.textColor,
           I = void 0 === E ? 'text' : E,
-          C = e.titleWeight,
-          S = void 0 === C ? 'bold' : C,
-          w = e.withParticipantsCount,
-          L = void 0 !== w && w,
-          F = e.withScreenName,
-          T = void 0 === F || F,
-          x = e.withVDLRefresh,
-          R = void 0 !== x && x
+          C = e.textSize,
+          S = e.titleWeight,
+          w = void 0 === S ? 'bold' : S,
+          L = e.withParticipantsCount,
+          F = void 0 !== L && L,
+          T = e.withScreenName,
+          x = void 0 === T || T,
+          R = e.withVDLRefresh,
+          M = void 0 !== R && R
         if (t) {
-          var M = k ? k() : null
-          if (t.type === o.a.ONE_TO_ONE) {
-            var O = Object(s.a)(t, f).map(function (e) {
+          var O = k ? k() : null
+          if (t.type === s.CONVERSATION_TYPE.ONE_TO_ONE) {
+            var K = Object(o.a)(t, f).map(function (e) {
                 return e.user
               }),
-              P = r()(O, 1)[0],
+              P = r()(K, 1)[0],
               D = l.a.createElement(p.a, {
                 color: I,
                 isProtected: P.protected,
                 isVerified: P.verified,
                 name: P.name,
+                nameSize: C,
                 screenName: P.screen_name,
-                weight: S,
+                weight: w,
                 withLink: !1,
-                withScreenName: T,
+                withScreenName: x,
               })
-            return (R && !a) || c ? l.a.createElement(m.a, null, D, M) : D
+            return (M && !a) || c ? l.a.createElement(m.a, null, D, O) : D
           }
-          var U = t.participants.length + (R ? -1 : 0)
+          var U = t.participants.length + (M ? -1 : 0)
           if (a)
             return l.a.createElement(
               m.a,
               { color: I },
-              l.a.createElement(h.b, { color: I, numberOfLines: 1, style: _.title, weight: S }, Object(g.a)(t, f, a)),
-              R
+              l.a.createElement(
+                h.b,
+                { color: I, numberOfLines: 1, size: C, style: _.title, weight: w },
+                Object(g.a)(t, f, a),
+              ),
+              M
                 ? null
                 : l.a.createElement(
                     h.b,
@@ -4924,18 +4954,18 @@
                     y({ peopleCount: U }),
                   ),
             )
-          var K = l.a.createElement(h.b, { color: I, numberOfLines: 1, weight: S }, Object(g.a)(t, f, a))
-          return (R && !a) || c
+          var A = l.a.createElement(h.b, { color: I, numberOfLines: 1, size: C, weight: w }, Object(g.a)(t, f, a))
+          return (M && !a) || c
             ? l.a.createElement(
                 d.a,
                 { style: _.dmGroup },
-                l.a.createElement(m.a, null, K, M),
-                L && l.a.createElement(h.b, { color: 'gray700', numberOfLines: 1 }, v({ peopleCount: U })),
+                l.a.createElement(m.a, null, A, O),
+                F && l.a.createElement(h.b, { color: 'gray700', numberOfLines: 1, size: C }, v({ peopleCount: U })),
               )
-            : K
+            : A
         }
-        var A = b(u)
-        return l.a.createElement(h.b, { color: I, numberOfLines: 1, weight: S }, Object(g.b)(A, f))
+        var j = b(u)
+        return l.a.createElement(h.b, { color: I, numberOfLines: 1, size: C, weight: w }, Object(g.b)(j, f))
       }
     },
     Ox2E: function (e, t, n) {
@@ -4954,19 +4984,19 @@
         r = n('k49u'),
         i = n('3XMw'),
         l = n.n(i),
-        o = l.a.add55942,
-        s = l.a.ib8f5f3b,
+        s = l.a.add55942,
+        o = l.a.ib8f5f3b,
         c = l.a.e20fc755,
         u = l.a.hae1c933,
         d = {
           customErrorHandler: function () {
-            return Object(a.b)({ text: o })
+            return Object(a.b)({ text: s })
           },
           showToast: !0,
         },
         p = {
           customErrorHandler: function () {
-            return Object(a.b)({ text: s })
+            return Object(a.b)({ text: o })
           },
           showToast: !0,
         },
@@ -4995,8 +5025,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -5021,16 +5051,16 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_handleAddMediaFiles', function (t) {
+              h()(o()(e), '_handleAddMediaFiles', function (t) {
                 var n = e.props,
                   a = n.addMedia,
                   r = n.location,
                   i = n.onChange,
                   l = n.onFailure,
-                  o = n.processMultipleMedia,
-                  s = e._getAcceptedFileInputs(),
+                  s = n.processMultipleMedia,
+                  o = e._getAcceptedFileInputs(),
                   c = Array.from(t).find(function (e) {
-                    return s.includes(e.type)
+                    return o.includes(e.type)
                   })
                 c &&
                   a([c], { location: r }).then(function (e) {
@@ -5040,10 +5070,10 @@
                           return e.id
                         }),
                       ),
-                      o(e, { onFailure: l })
+                      s(e, { onFailure: l })
                   })
               }),
-              h()(s()(e), '_getAcceptedFileInputs', function () {
+              h()(o()(e), '_getAcceptedFileInputs', function () {
                 var t = e.props,
                   n = t.acceptGifs,
                   a = t.acceptVideo
@@ -5064,8 +5094,8 @@
                     r = e.aspectRatio,
                     i = e.borderRadius,
                     l = e.currentContent,
-                    o = e.maskStyle,
-                    s = e.mediaItem,
+                    s = e.maskStyle,
+                    o = e.mediaItem,
                     c = e.onCrop,
                     u = e.onRemove,
                     d = e.rootStyle
@@ -5076,8 +5106,8 @@
                     aspectRatio: r,
                     borderRadius: i,
                     currentContent: l,
-                    maskStyle: o,
-                    mediaItem: s,
+                    maskStyle: s,
+                    mediaItem: o,
                     onAddMediaFiles: this._handleAddMediaFiles,
                     onCrop: c,
                     onRemove: u,
@@ -5101,8 +5131,8 @@
         r,
         i,
         l,
-        o,
         s,
+        o,
         c,
         u,
         d,
@@ -5128,6 +5158,7 @@
         R,
         M,
         O,
+        K,
         P = {
           fragment: {
             argumentDefinitions: [
@@ -5158,7 +5189,7 @@
                     name: '__TrustedFriendsRecommended_slice_result_slice',
                     plural: !1,
                     selections: [
-                      (o = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                       {
                         alias: null,
                         args: null,
@@ -5175,7 +5206,7 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              o,
+                              s,
                               {
                                 kind: 'InlineFragment',
                                 selections: [
@@ -5187,7 +5218,7 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      (s = {
+                                      (o = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -5197,6 +5228,19 @@
                                     ],
                                     storageKey: null,
                                   },
+                                  (c = {
+                                    alias: null,
+                                    args: [
+                                      {
+                                        kind: 'Variable',
+                                        name: 'trusted_friends_list_id',
+                                        variableName: 'trustedFriendsId',
+                                      },
+                                    ],
+                                    kind: 'ScalarField',
+                                    name: 'is_trusted_friends_list_member',
+                                    storageKey: null,
+                                  }),
                                 ],
                                 type: 'User',
                                 abstractKey: null,
@@ -5205,7 +5249,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (c = {
+                                  (u = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
@@ -5220,7 +5264,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      (u = {
+                                      (d = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -5235,21 +5279,21 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          (d = {
+                                          (p = {
                                             alias: 'fromIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'from_index',
                                             storageKey: null,
                                           }),
-                                          (p = {
+                                          (m = {
                                             alias: 'toIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'to_index',
                                             storageKey: null,
                                           }),
-                                          (m = {
+                                          (h = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -5264,17 +5308,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              (h = {
+                                              (f = {
                                                 alias: 'type',
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: '__typename',
                                                 storageKey: null,
                                               }),
-                                              (y = {
+                                              (v = {
                                                 kind: 'InlineFragment',
-                                                selections: (g = [
-                                                  (f = {
+                                                selections: (y = [
+                                                  (g = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -5285,11 +5329,11 @@
                                                 type: 'TimelineRichTextCashtag',
                                                 abstractKey: null,
                                               }),
-                                              (b = {
+                                              (_ = {
                                                 kind: 'InlineFragment',
                                                 selections: [
                                                   l,
-                                                  (v = {
+                                                  (b = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -5300,16 +5344,16 @@
                                                 type: 'TimelineRichTextList',
                                                 abstractKey: null,
                                               }),
-                                              (_ = {
+                                              (k = {
                                                 kind: 'InlineFragment',
-                                                selections: g,
+                                                selections: y,
                                                 type: 'TimelineRichTextHashtag',
                                                 abstractKey: null,
                                               }),
-                                              (k = {
+                                              (E = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  v,
+                                                  b,
                                                   {
                                                     alias: 'urlType',
                                                     args: null,
@@ -5381,7 +5425,7 @@
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (L = {
+                                                  (F = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -5397,11 +5441,11 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          o,
+                                                          s,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (I = {
+                                                              (C = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -5409,7 +5453,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (E = {
+                                                                  (I = {
                                                                     alias: null,
                                                                     args: null,
                                                                     kind: 'ScalarField',
@@ -5419,7 +5463,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                               }),
-                                                              (C = {
+                                                              (S = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -5430,17 +5474,17 @@
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          (w = {
+                                                          (L = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (S = {
+                                                              (w = {
                                                                 alias: 'reason',
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'unavailable_reason',
                                                                 storageKey: null,
                                                               }),
-                                                              c,
+                                                              u,
                                                             ],
                                                             type: 'UserUnavailable',
                                                             abstractKey: null,
@@ -5457,7 +5501,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, L],
+                                                selections: [I, F],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -5467,35 +5511,36 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      (F = {
+                                      (T = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'rtl',
                                         storageKey: null,
                                       }),
-                                      f,
+                                      g,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  w,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
                               },
+                              (x = {
+                                kind: 'ClientExtension',
+                                selections: [
+                                  { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
+                                ],
+                              }),
                             ],
                             storageKey: null,
                           },
-                          (T = {
-                            kind: 'ClientExtension',
-                            selections: [
-                              { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
-                            ],
-                          }),
+                          x,
                         ],
                         storageKey: null,
                       },
-                      (x = {
+                      (R = {
                         alias: null,
                         args: null,
                         concreteType: 'SliceInfo',
@@ -5535,13 +5580,13 @@
                   l,
                   {
                     alias: null,
-                    args: (R = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
+                    args: (M = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: 'recommended_members_slice',
                     plural: !1,
                     selections: [
-                      o,
+                      s,
                       {
                         alias: null,
                         args: null,
@@ -5558,7 +5603,7 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              o,
+                              s,
                               {
                                 kind: 'InlineFragment',
                                 selections: [
@@ -5570,7 +5615,7 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      s,
+                                      o,
                                       {
                                         alias: null,
                                         args: null,
@@ -5593,7 +5638,7 @@
                                         name: 'protected',
                                         storageKey: null,
                                       },
-                                      E,
+                                      I,
                                       {
                                         alias: null,
                                         args: null,
@@ -5604,7 +5649,7 @@
                                     ],
                                     storageKey: null,
                                   },
-                                  (M = {
+                                  (O = {
                                     alias: null,
                                     args: null,
                                     filters: null,
@@ -5613,6 +5658,7 @@
                                     kind: 'LinkedHandle',
                                     name: 'legacy',
                                   }),
+                                  c,
                                   l,
                                 ],
                                 type: 'User',
@@ -5621,7 +5667,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  c,
+                                  u,
                                   {
                                     alias: null,
                                     args: null,
@@ -5630,7 +5676,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      u,
+                                      d,
                                       {
                                         alias: null,
                                         args: null,
@@ -5639,9 +5685,9 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          d,
                                           p,
                                           m,
+                                          h,
                                           {
                                             alias: null,
                                             args: null,
@@ -5650,17 +5696,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              o,
+                                              s,
                                               { kind: 'TypeDiscriminator', abstractKey: '__isTimelineReferenceObject' },
-                                              h,
-                                              y,
-                                              b,
+                                              f,
+                                              v,
                                               _,
                                               k,
+                                              E,
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (O = {
+                                                  (K = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -5676,14 +5722,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          o,
+                                                          s,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [I, M, C, l],
+                                                            selections: [C, O, S, l],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          w,
+                                                          L,
                                                         ],
                                                         storageKey: null,
                                                       },
@@ -5696,7 +5742,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, O],
+                                                selections: [I, K],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -5706,30 +5752,31 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      F,
-                                      f,
+                                      T,
+                                      g,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  w,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
                               },
+                              x,
                             ],
                             storageKey: null,
                           },
-                          T,
+                          x,
                         ],
                         storageKey: null,
                       },
-                      x,
+                      R,
                     ],
                     storageKey: null,
                   },
                   {
                     alias: null,
-                    args: R,
+                    args: M,
                     filters: [],
                     handle: 'slice',
                     key: 'TrustedFriendsRecommended_slice_result',
@@ -5743,27 +5790,27 @@
             ],
           },
           params: {
-            id: 'EdfctJMMTrFeVoqpLAQY3A',
+            id: 'Pc--LAAUOhp3FcAnJSMCcQ',
             metadata: { sliceInfoPath: ['trusted_friends_list_by_rest_id', 'recommended_members_slice', 'slice_info'] },
             name: 'TrustedFriendsRecommendedQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(P.hash = 'ff12eada8a30243a3599cfdd48bb1569'), (t.default = P)
+      ;(P.hash = 'cdfe999dbe73cad67b63c435f832d349'), (t.default = P)
     },
     R2Jb: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'ListUserManagementScreen', function () {
-          return Y
+          return X
         })
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -5829,10 +5876,10 @@
         R = n('3XMw'),
         M = n.n(R),
         O = n('KePI'),
-        P = n('wytG'),
-        D = n('7JQg'),
-        U = n('/yvb'),
-        K = n('k/OQ'),
+        K = n('wytG'),
+        P = n('7JQg'),
+        D = n('/yvb'),
+        U = n('k/OQ'),
         A = n('zCf4'),
         j = M.a.c4d7650c,
         N = M.a.f0ab07f4,
@@ -5842,26 +5889,26 @@
         z = M.a.dfeaeb26,
         W = { page: 'spheres_create_members' },
         q = { page: 'spheres_edit_members' },
-        G = Object(P.a)(function () {
+        G = Object(K.a)(function () {
           return Promise.resolve().then(n.bind(null, 'YlLE'))
         }),
-        X = Object(P.a)(function () {
+        Y = Object(K.a)(function () {
           return Promise.resolve().then(n.bind(null, 'o8dJ'))
         }),
-        Y = (function (e) {
+        X = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n(e) {
             var a
             r()(this, n),
               (a = t.call(this, e)),
-              h()(s()(a), '_getCurrentNamespace', function () {
+              h()(o()(a), '_getCurrentNamespace', function () {
                 return a._shouldRenderSegmentedView ? (a.props.previousStep === O.a.Creation ? W : q) : T.a
               }),
-              h()(s()(a), '_renderDoneButton', function () {
-                return g.a.createElement(U.a, { onPress: a._handleDonePress, size: 'small', type: 'primaryFilled' }, H)
+              h()(o()(a), '_renderDoneButton', function () {
+                return g.a.createElement(D.a, { onPress: a._handleDonePress, size: 'small', type: 'primaryFilled' }, H)
               }),
-              h()(s()(a), '_renderSegmentedControl', function () {
+              h()(o()(a), '_renderSegmentedControl', function () {
                 var e = a.props,
                   t = e.listId,
                   n = e.location,
@@ -5871,9 +5918,9 @@
                     { to: { pathname: '/i/lists/'.concat(t, '/members'), state: n.state }, label: i, key: i },
                     { to: { pathname: '/i/lists/'.concat(t, '/members/suggested'), state: n.state }, label: B, key: B },
                   ]
-                return g.a.createElement(K.a, { accessibilityLabel: a.title, links: l })
+                return g.a.createElement(U.a, { accessibilityLabel: a.title, links: l })
               }),
-              h()(s()(a), '_renderTimelineContent', function () {
+              h()(o()(a), '_renderTimelineContent', function () {
                 var e = a.props,
                   t = e.listId,
                   n = e.match,
@@ -5891,17 +5938,17 @@
                   g.a.createElement(
                     A.b,
                     { exact: !0, path: '/i/lists/'.concat(t, '/members/suggested') },
-                    g.a.createElement(X, { match: n, membersModule: r, suggestedUserId: i, suggestedUsersModule: l }),
+                    g.a.createElement(Y, { match: n, membersModule: r, suggestedUserId: i, suggestedUsersModule: l }),
                   ),
                 )
               }),
-              h()(s()(a), '_handleDonePress', function () {
+              h()(o()(a), '_handleDonePress', function () {
                 var e = a.props,
                   t = e.basePath,
                   n = e.history
                 e.suggestedUserId ? n.go(-3) : n.replace(t)
               }),
-              h()(s()(a), '_handleListFetch', function () {
+              h()(o()(a), '_handleListFetch', function () {
                 var e = a.props,
                   t = e.createLocalApiErrorHandler
                 ;(0, e.fetchListIfNeeded)(e.listId).catch(t())
@@ -5927,7 +5974,7 @@
                     r = e.previousStep,
                     i = e.suggestedUserId
                   return g.a.createElement(
-                    D.c,
+                    P.c,
                     { namespace: this._getCurrentNamespace() },
                     g.a.createElement(
                       x.b,
@@ -5956,7 +6003,7 @@
             n
           )
         })(g.a.Component),
-        Q = L(Y)
+        Q = L(X)
       t.default = Q
     },
     Rqga: function (e, t, n) {
@@ -5978,7 +6025,7 @@
         return l
       }),
         n.d(t, 'a', function () {
-          return o
+          return s
         })
       n('TJCb'), n('7x/C'), n('DZ+c'), n('z84I')
       var a = n('WpDa'),
@@ -6010,7 +6057,7 @@
             n(t.injectEntry(r))
           }
         },
-        o = function (e, t, n) {
+        s = function (e, t, n) {
           return function (a) {
             var r = []
             n.map(function (n) {
@@ -6027,18 +6074,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -6075,8 +6122,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = n('VrFO'),
-        s = n.n(o),
+        s = n('VrFO'),
+        o = n.n(s),
         c = n('Y9Ll'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -6110,7 +6157,7 @@
           p()(n, e)
           var t = h()(n)
           function n() {
-            return s()(this, n), t.apply(this, arguments)
+            return o()(this, n), t.apply(this, arguments)
           }
           return (
             u()(n, [
@@ -6122,8 +6169,8 @@
                     n = e.acceptImages,
                     a = e.acceptVideo,
                     i = e.customMimeTypes,
-                    o = e.icon,
-                    s = e.style,
+                    s = e.icon,
+                    o = e.style,
                     c = e.withIcon,
                     u = l()(e, L),
                     d = R({ acceptGifs: t, acceptImages: n, acceptVideo: a }).concat(i).join(',')
@@ -6132,8 +6179,8 @@
                     r()({}, u, {
                       accept: d,
                       behavioralEventContext: T,
-                      icon: c ? o : void 0,
-                      style: [O.root, s],
+                      icon: c ? s : void 0,
+                      style: [O.root, o],
                       testID: E,
                     }),
                   )
@@ -6162,134 +6209,164 @@
       'use strict'
       n.r(t),
         n.d(t, 'trustedFriendsRecommendedQuery', function () {
-          return C
+          return w
         }),
         n.d(t, 'TrustedFriendsRecommended', function () {
-          return T
+          return R
         }),
         n.d(t, 'default', function () {
-          return R
+          return O
         })
       var a,
         r = n('ddV6'),
         i = n.n(r),
         l = n('ERkP'),
-        o = n.n(l),
-        s = n('kHa5'),
+        s = n.n(l),
+        o = n('kHa5'),
         c = n('oUUt'),
         u = (n('enFi'), n('TEoO')),
         d = n('Fr3L'),
         p = n('/uhu'),
-        m = n('4e/K'),
-        h = n('KbZL'),
-        f = n('DQzJ'),
-        g = n('MWbm'),
-        y = n('t62R'),
-        v = n('rHpw'),
-        b = n('3XMw'),
-        _ = n.n(b),
-        k = n('GZwR'),
-        E = _.a.fc9dd578,
-        I = [k.a.Users],
-        C = void 0 !== a ? a : (a = n('PCo+')),
-        S = 'TRUSTED_FRIENDS_RECOMMENDED',
-        w = { context: S },
-        L = function (e) {
+        m = n('lR1r'),
+        h = n('4e/K'),
+        f = n('s1N3'),
+        g = n('KbZL'),
+        y = n('DQzJ'),
+        v = n('MWbm'),
+        b = n('t62R'),
+        _ = n('rHpw'),
+        k = n('3XMw'),
+        E = n.n(k),
+        I = n('GZwR'),
+        C = E.a.fc9dd578,
+        S = [I.a.TrustedFriendsSuggested],
+        w = void 0 !== a ? a : (a = n('PCo+')),
+        L = 'TRUSTED_FRIENDS_RECOMMENDED',
+        F = { context: L },
+        T = function (e) {
           return e.__id
         },
-        F = function (e, t) {
+        x = function (e, t) {
           return function (n) {
             var a,
               r,
               i,
-              l =
+              l,
+              c,
+              u =
                 null == n || null === (a = n.result) || void 0 === a || null === (r = a.legacy) || void 0 === r
                   ? void 0
-                  : r.id_str
-            if (!l || 'User' !== (null == n || null === (i = n.result) || void 0 === i ? void 0 : i.__typename))
+                  : r.id_str,
+              d = null == n || null === (i = n.result) || void 0 === i ? void 0 : i.__id,
+              p = null == n || null === (l = n.result) || void 0 === l ? void 0 : l.is_trusted_friends_list_member
+            if (!u || 'User' !== (null == n || null === (c = n.result) || void 0 === c ? void 0 : c.__typename))
               return null
-            var c = o.a.createElement(s.a, { sliceID: t, trustedFriendsId: e, userId: l })
-            return o.a.createElement(h.a, { decoration: c, user: n.result })
+            var h = s.a.createElement(o.a, {
+              isMember: p,
+              sliceID: t,
+              sliceItemID: d,
+              trustedFriendsId: e,
+              type: m.a.Recommendations,
+              userId: u,
+            })
+            return s.a.createElement(g.a, { decoration: h, user: n.result })
           }
         },
-        T = function (e) {
+        R = function (e) {
           var t,
             n,
-            a = o.a.useState(),
+            a = s.a.useState(),
             r = i()(a, 2),
             l = r[0],
             d = r[1],
-            h = e.trustedFriendsId,
-            v = Object(f.a)(C, { trustedFriendsId: h }),
-            b = v.data,
-            w = v.fetchNext,
-            T =
-              null == b || null === (t = b.trusted_friends_list_by_rest_id) || void 0 === t
+            g = e.trustedFriendsId,
+            _ = Object(y.a)(w, { trustedFriendsId: g }),
+            k = _.data,
+            F = _.fetchNext,
+            R =
+              null == k || null === (t = k.trusted_friends_list_by_rest_id) || void 0 === t
                 ? void 0
                 : t.recommended_members_slice,
-            R = Object(c.c)(
-              null == b || null === (n = b.trusted_friends_list_by_rest_id) || void 0 === n ? void 0 : n.id,
+            O = Object(c.c)(
+              null == k || null === (n = k.trusted_friends_list_by_rest_id) || void 0 === n ? void 0 : n.id,
               'TrustedFriendsMembers_slice_result',
             ),
-            M = o.a.useCallback(
+            K = s.a.useCallback(
               function (e) {
-                var t = e.userId
-                return o.a.createElement(s.a, { sliceID: R, trustedFriendsId: h, userId: t })
+                var t = e.user,
+                  n = e.userId
+                return s.a.createElement(o.a, {
+                  isMember: null == t ? void 0 : t.is_trusted_friends_list_member,
+                  sliceID: O,
+                  trustedFriendsId: g,
+                  type: m.a.Search,
+                  userId: n,
+                })
               },
-              [R, h],
-            )
-          return o.a.createElement(
-            g.a,
+              [O, g],
+            ),
+            P =
+              null != R && R.items_results
+                ? Object(f.a)(null == R ? void 0 : R.items_results, function (e) {
+                    var t, n
+                    return null === (t = e.result) || void 0 === t || null === (n = t.legacy) || void 0 === n
+                      ? void 0
+                      : n.id_str
+                  })
+                : []
+          return s.a.createElement(
+            v.a,
             null,
-            o.a.createElement(m.default, {
+            s.a.createElement(h.default, {
               alwaysOpen: !0,
-              filter: I,
+              filter: S,
               isModal: !0,
               onQueryChange: d,
-              placeholder: E,
-              renderUserDecoration: M,
+              placeholder: C,
+              renderUserDecoration: K,
               rounded: !0,
               shouldAutoFocus: !0,
               shouldFocusOnClear: !0,
-              source: k.d.TrustedFriendsSuggested,
-              style: x.input,
+              source: I.d.TrustedFriendsSuggested,
+              style: M.input,
+              trustedFriendsId: g,
             }),
             l
               ? null
-              : o.a.createElement(
-                  o.a.Fragment,
+              : s.a.createElement(
+                  s.a.Fragment,
                   null,
-                  o.a.createElement(
-                    y.b,
-                    { color: 'gray700', size: 'body', style: x.education },
-                    o.a.createElement(
-                      _.a.I18NFormatMessage,
+                  s.a.createElement(
+                    b.b,
+                    { color: 'gray700', size: 'body', style: M.education },
+                    s.a.createElement(
+                      E.a.I18NFormatMessage,
                       { $i18n: 'hfbff3d1' },
-                      o.a.createElement(
-                        y.b,
+                      s.a.createElement(
+                        b.b,
                         {
                           color: 'text',
                           link: p.TRUSTED_FRIENDS_LEARN_MORE_URL,
-                          style: x.learnMore,
+                          style: M.learnMore,
                           weight: 'bold',
                           withUnderline: !0,
                         },
-                        _.a.fe3a4dcb,
+                        E.a.fe3a4dcb,
                       ),
                     ),
                   ),
-                  o.a.createElement(u.a, {
-                    cacheKey: S,
-                    identityFunction: L,
-                    items: (null == T ? void 0 : T.items_results) || [],
-                    onNearEnd: w,
-                    renderer: F(h, R),
+                  s.a.createElement(u.a, {
+                    cacheKey: L,
+                    identityFunction: T,
+                    items: P,
+                    onNearEnd: F,
+                    renderer: x(g, O),
                     withoutHeadroom: !0,
                   }),
                 ),
           )
         },
-        x = v.a.create(function (e) {
+        M = _.a.create(function (e) {
           return {
             input: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space4 },
             education: { marginHorizontal: e.spaces.space32, textAlign: 'center', marginBottom: e.spaces.space8 },
@@ -6297,8 +6374,8 @@
             activityIndicatior: { paddingVertical: 250 },
           }
         })
-      function R(e) {
-        return o.a.createElement(d.a, { errorConfig: w }, o.a.createElement(T, e))
+      function O(e) {
+        return s.a.createElement(d.a, { errorConfig: F }, s.a.createElement(R, e))
       }
     },
     XnpN: function (e, t, n) {
@@ -6307,8 +6384,8 @@
         r = n.n(a),
         i = n('ddV6'),
         l = n.n(i),
-        o = (n('2G9S'), n('tQbP'), n('aWyx')),
-        s = (n('6U7i'), n('LW0h'), n('7x/C'), n('z84I'), n('t0aI')),
+        s = (n('2G9S'), n('tQbP'), n('aWyx')),
+        o = (n('6U7i'), n('LW0h'), n('7x/C'), n('z84I'), n('t0aI')),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
           return new Date(Number(e))
@@ -6319,7 +6396,7 @@
         d = function (e, t) {
           var n = e.user,
             a = t.user
-          return Object(s.a)(n.id_str, a.id_str)
+          return Object(o.a)(n.id_str, a.id_str)
         },
         p = function (e) {
           return (function () {
@@ -6359,13 +6436,13 @@
         var n = e.created_by_user_id,
           a = e.participants,
           i = e.type,
-          s = Object(m.a)(a, function (e) {
+          o = Object(m.a)(a, function (e) {
             return e.user.id_str === t
           }),
-          c = l()(s, 2),
+          c = l()(o, 2),
           u = c[0],
           d = c[1]
-        return d.length ? (i === o.a.GROUP && 1 === d.length ? [].concat(r()(u), r()(d)) : n ? d.sort(p(n)) : d) : u
+        return d.length ? (i === s.a.GROUP && 1 === d.length ? [].concat(r()(u), r()(d)) : n ? d.sort(p(n)) : d) : u
       }
     },
     Yatk: function (e, t, n) {
@@ -6401,14 +6478,14 @@
       'use strict'
       n.r(t),
         n.d(t, 'ListMembersScreen', function () {
-          return K
+          return U
         })
       var a = n('RhWx'),
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -6444,22 +6521,22 @@
         R = n('oQhu'),
         M = n('zrOZ'),
         O = F.a.dc24ae43,
-        P = F.a.efb6f61d,
-        D = F.a.h9ce3405,
-        U = Object(R.a)(function (e, t, n, a, r, i, l) {
+        K = F.a.efb6f61d,
+        P = F.a.h9ce3405,
+        D = Object(R.a)(function (e, t, n, a, r, i, l) {
           return Object(w.a)({ getIsMember: r, listId: t, isListAuthor: Object(T.b)(e, n), onAdd: i, onRemove: l })
         }),
-        K = (function (e) {
+        U = (function (e) {
           p()(n, e)
           var t = h()(n)
           function n() {
             var e
             l()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), s = 0; s < a; s++) i[s] = arguments[s]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               g()(u()(e), '_noItemsRenderer', function () {
-                return v.a.createElement(S.a, { header: P, message: O })
+                return v.a.createElement(S.a, { header: K, message: O })
               }),
               g()(u()(e), 'state', { removedUsers: new Set() }),
               g()(u()(e), '_getEntryConfiguration', function () {
@@ -6468,7 +6545,7 @@
                   a = t.listId,
                   r = t.loggedInUserId,
                   i = e.state.removedUsers
-                return U(n, a, r, i, e._isCurrentMember, e._onAdd, e._onRemove)
+                return D(n, a, r, i, e._isCurrentMember, e._onAdd, e._onRemove)
               }),
               g()(u()(e), '_isCurrentMember', function (t) {
                 return !e.state.removedUsers.has(t)
@@ -6485,7 +6562,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'componentWillUnmount',
                 value: function () {
@@ -6501,7 +6578,7 @@
                     entryConfiguration: this._getEntryConfiguration(),
                     module: e,
                     renderEmptyState: this._noItemsRenderer,
-                    title: D,
+                    title: P,
                   })
                 },
               },
@@ -6509,7 +6586,7 @@
             n
           )
         })(v.a.Component),
-        A = C(K)
+        A = C(U)
       t.default = A
     },
     ZcYN: function (e, t, n) {
@@ -6524,8 +6601,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -6602,10 +6679,10 @@
             : null
         }),
         O = (n('uFXj'), n('MWbm')),
-        P = n('LbZ7'),
-        D = n('t62R'),
-        U = n('9Xij'),
-        K = n('TIdA'),
+        K = n('LbZ7'),
+        P = n('t62R'),
+        D = n('9Xij'),
+        U = n('TIdA'),
         A = n('A91F'),
         j = (function (e) {
           u()(n, e)
@@ -6626,22 +6703,22 @@
                     O.a,
                     { style: B.root },
                     g.a.createElement(
-                      P.a,
+                      K.a,
                       { withGutter: !0 },
                       g.a.createElement(
                         O.a,
                         { style: B.bodyColumn },
-                        a ? g.a.createElement(D.b, { color: 'gray700', size: 'subtext2' }, a) : null,
-                        g.a.createElement(D.b, { numberOfLines: 1 }, t),
+                        a ? g.a.createElement(P.b, { color: 'gray700', size: 'subtext2' }, a) : null,
+                        g.a.createElement(P.b, { numberOfLines: 1 }, t),
                       ),
                       n
                         ? g.a.createElement(
                             O.a,
                             { style: B.coverContainer },
                             g.a.createElement(
-                              U.a,
+                              D.a,
                               { ratio: 1 },
-                              g.a.createElement(K.a, { accessibilityLabel: '', aspectMode: A.a.SQUARE, image: n }),
+                              g.a.createElement(U.a, { accessibilityLabel: '', aspectMode: A.a.SQUARE, image: n }),
                             ),
                           )
                         : null,
@@ -6689,8 +6766,8 @@
         W = n.n(z)
       var q = n('FiRh'),
         G = n('j7Bv'),
-        X = n('EHV7'),
-        Y = n('Gfoi')
+        Y = n('EHV7'),
+        X = n('Gfoi')
       var Q = x.a.create(function (e) {
           return {
             root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 },
@@ -6714,43 +6791,43 @@
             r = e.resultContext,
             i = e.showIcon,
             l = e.style,
-            o = (function (e, t) {
+            s = (function (e, t) {
               var n,
                 a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                 r = W()(e),
                 i = e.toLowerCase().indexOf(t.toLowerCase()),
                 l = i + t.length
               if (0 === r.length) {
-                var o = a ? [i > 0 ? [0, i] : void 0, [l, e.length]].filter(Boolean) : [[i, l]]
-                n = [{ highlights: -1 !== i ? o : void 0, text: e, entityType: 'text', prefix: '' }]
+                var s = a ? [i > 0 ? [0, i] : void 0, [l, e.length]].filter(Boolean) : [[i, l]]
+                n = [{ highlights: -1 !== i ? s : void 0, text: e, entityType: 'text', prefix: '' }]
               } else {
-                var s = r.flatMap(function (t, n, a) {
+                var o = r.flatMap(function (t, n, a) {
                     var r = t.indices,
                       i = 0 === n ? 0 : a[n - 1].indices[1],
                       l = n === a.length - 1,
-                      o = []
+                      s = []
                     return (
-                      i !== r[0] && o.push(e.slice(i, r[0])),
-                      o.push(e.substring(r[0], r[1])),
-                      l && e.length !== r[1] && o.push(e.slice(r[1])),
-                      o
+                      i !== r[0] && s.push(e.slice(i, r[0])),
+                      s.push(e.substring(r[0], r[1])),
+                      l && e.length !== r[1] && s.push(e.slice(r[1])),
+                      s
                     )
                   }),
                   c = 0,
-                  u = s.map(function (e, t, n) {
+                  u = o.map(function (e, t, n) {
                     c += t > 0 ? n[t - 1].length : 0
                     var a = e.length
                     return { runningTotal: c, containsQuery: -1 !== i && c + a >= i && c < l }
                   })
-                n = s.map(function (e, t) {
+                n = o.map(function (e, t) {
                   var n,
                     r,
-                    o = u[t],
-                    s = o.containsQuery,
-                    c = o.runningTotal,
+                    s = u[t],
+                    o = s.containsQuery,
+                    c = s.runningTotal,
                     d = e.includes('#')
-                  if (a && !s) r = [[0, e.length]]
-                  else if (s) {
+                  if (a && !o) r = [[0, e.length]]
+                  else if (o) {
                     var p = c < i ? i - c : 0,
                       m = c + e.length < l ? e.length : l - c,
                       h = d ? p - 1 : p,
@@ -6770,25 +6847,25 @@
               }
               return n
             })(e.topic, t.isTrue('responsive_web_typeahead_reverse_bolding_enabled') ? a : '', true),
-            s = g.a.createElement(
-              D.b,
+            o = g.a.createElement(
+              P.b,
               null,
-              o.map(function (e, t) {
+              s.map(function (e, t) {
                 return g.a.createElement(q.b, { key: ''.concat(e.text).concat(t), part: e })
               }),
             ),
             c = g.a.createElement(
               g.a.Fragment,
               null,
-              s,
+              o,
               r
                 ? g.a.createElement(
                     O.a,
                     { style: Q.context },
                     r && r.types[0] && 'followable_topic' === r.types[0].type
-                      ? g.a.createElement(X.a, { style: Q.icon })
+                      ? g.a.createElement(Y.a, { style: Q.icon })
                       : null,
-                    g.a.createElement(D.b, { color: 'gray700' }, r.display_string || ' '),
+                    g.a.createElement(P.b, { color: 'gray700' }, r.display_string || ' '),
                   )
                 : null,
             )
@@ -6797,7 +6874,7 @@
             { style: [Q.root, n && Q.disabled, l] },
             i
               ? (function (e) {
-                  var t = g.a.createElement(G.a, { Icon: Y.a, color: 'neutral', size: 'xxxLarge', style: Q.searchIcon })
+                  var t = g.a.createElement(G.a, { Icon: X.a, color: 'neutral', size: 'xxxLarge', style: Q.searchIcon })
                   return g.a.createElement(
                     T.a,
                     {
@@ -6825,8 +6902,8 @@
         re = 'TypeaheadUser',
         ie = n('GZwR'),
         le = n('IMA+'),
-        oe = ne.a.ae2205d1,
-        se = ne.a.d960b55b,
+        se = ne.a.ae2205d1,
+        oe = ne.a.d960b55b,
         ce = ne.a.fd06b02f,
         ue = Object.freeze({
           num_of_followers: ae.a.Follow,
@@ -6849,10 +6926,10 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_handleAvatarClick', function () {
+              h()(o()(e), '_handleAvatarClick', function () {
                 e.props.userSpace || e._handleClick()
               }),
-              h()(s()(e), '_handleClick', function () {
+              h()(o()(e), '_handleClick', function () {
                 var t = e.props,
                   n = t.isDisabled,
                   a = t.item,
@@ -6874,8 +6951,8 @@
                     r = e.displayNameLabel,
                     i = e.isDisabled,
                     l = e.isProtected,
-                    o = e.isVerified,
-                    s = e.name,
+                    s = e.isVerified,
+                    o = e.name,
                     c = e.screenName,
                     u = e.source,
                     d = e.userId,
@@ -6897,8 +6974,8 @@
                       displayNameLabel: r,
                       isDisabled: i,
                       isProtected: l,
-                      isVerified: o,
-                      name: s,
+                      isVerified: s,
+                      name: o,
                       onAvatarClick: this._handleAvatarClick,
                       onCellClick: this._handleClick,
                       onScreenNameClick: this._handleClick,
@@ -6918,7 +6995,7 @@
                 value: function () {
                   var e = this.props.socialContext
                   if (e && e.following) {
-                    var t = e.followed_by ? oe : se
+                    var t = e.followed_by ? se : oe
                     return { contextType: ae.a.Follow, text: t }
                   }
                 },
@@ -6960,12 +7037,12 @@
           return (
             r()(this, n),
             (i = t.call(this, e, a)),
-            h()(s()(i), '_onViewRef', function (e) {
+            h()(o()(i), '_onViewRef', function (e) {
               i._viewRef = e
               var t = i.props.onRef
               t && t(e)
             }),
-            h()(s()(i), '_handleClick', function () {
+            h()(o()(i), '_handleClick', function () {
               var e = i.props.item
               e.type !== ie.b.User && i.props.onClick && i.props.onClick(e, i.isDisabled)
             }),
@@ -7051,12 +7128,12 @@
                   r = e.isSelected,
                   i = e.item,
                   l = e.onClick,
-                  o = e.renderUserDecoration,
-                  s = e.source
+                  s = e.renderUserDecoration,
+                  o = e.source
                 switch (i.type) {
                   case ie.b.User:
                     var c = i.data,
-                      u = o ? o({ userId: c.id_str, isSelected: r }) : void 0,
+                      u = s ? s({ userId: c.id_str, user: c, isSelected: r }) : void 0,
                       d = n ? n(i, c) : void 0
                     return g.a.createElement(pe, {
                       avatarUri: c.profile_image_url_https,
@@ -7074,7 +7151,7 @@
                       resultContext: c.result_context,
                       screenName: c.screen_name,
                       socialContext: c.social_context,
-                      source: s,
+                      source: o,
                       userId: c.id_str,
                       withNewTypeaheadUI: this._withNewTypeaheadUI,
                     })
@@ -7097,7 +7174,7 @@
                   case ie.b.Topic:
                     var m = this.props.query,
                       h = i.data,
-                      f = s === ie.d.SearchBox
+                      f = o === ie.d.SearchBox
                     return g.a.createElement(J, {
                       isDisabled: a,
                       query: m || '',
@@ -7121,7 +7198,7 @@
                     return g.a.createElement(
                       O.a,
                       { style: _e.navigationLink },
-                      g.a.createElement(D.b, { style: _e.content, weight: 'bold' }, y),
+                      g.a.createElement(P.b, { style: _e.content, weight: 'bold' }, y),
                       g.a.createElement(he.a, { style: _e.icon }),
                     )
                   case ie.b.Setting:
@@ -7129,12 +7206,12 @@
                     return g.a.createElement(
                       O.a,
                       { style: _e.navigationLink },
-                      g.a.createElement(D.b, { style: _e.content }, v),
+                      g.a.createElement(P.b, { style: _e.content }, v),
                       g.a.createElement(he.a, { style: _e.icon }),
                     )
                   case ie.b.NoResult:
                     var b = i.data.text
-                    return g.a.createElement(D.b, { style: _e.noResult }, b)
+                    return g.a.createElement(P.b, { style: _e.noResult }, b)
                   default:
                     return null
                 }
@@ -7184,8 +7261,8 @@
         r = n.n(a),
         i = n('aWyx'),
         l = n('XnpN'),
-        o = n('3XMw'),
-        s = n.n(o),
+        s = n('3XMw'),
+        o = n.n(s),
         c = n('aI6n'),
         u = n('rHpw'),
         d = n('TIdA'),
@@ -7196,7 +7273,7 @@
         g = n('cm6r'),
         y = n('U+bB'),
         v = n('MWbm'),
-        b = s.a.fd48249b,
+        b = o.a.fd48249b,
         _ = u.a.create(function (e) {
           return {
             circle: { borderRadius: e.borderRadii.infinite, overflow: 'hidden' },
@@ -7284,12 +7361,12 @@
             return r.a.createElement(I, { left: a, right: i })
           },
           a = e.conversation,
-          o = e.link,
-          s = e.perspective,
+          s = e.link,
+          o = e.perspective,
           k = e.withBadge,
           E = a && a.avatar_image_https,
           S = a
-            ? Object(l.a)(a, s).map(function (e) {
+            ? Object(l.a)(a, o).map(function (e) {
                 return e.user
               })
             : [],
@@ -7315,7 +7392,7 @@
               return 0 === a ? null : 1 === a ? t(e[0]) : r.a.createElement(v.a, { style: _.circle }, n(e))
             })(w),
           F =
-            o ||
+            s ||
             (function (e, t) {
               if (e)
                 return e.type === i.a.GROUP
@@ -7376,8 +7453,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -7423,7 +7500,7 @@
             return (
               r()(this, n),
               (a = t.call(this, e)),
-              h()(s()(a), '_handleListFetch', function () {
+              h()(o()(a), '_handleListFetch', function () {
                 var e = a.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchListIfNeeded,
@@ -7475,8 +7552,8 @@
         r,
         i,
         l,
-        o,
         s,
+        o,
         c,
         u,
         d,
@@ -7501,7 +7578,10 @@
         x,
         R,
         M,
-        O = {
+        O,
+        K,
+        P,
+        D = {
           fragment: {
             argumentDefinitions: [
               (a = { defaultValue: null, kind: 'LocalArgument', name: 'slices' }),
@@ -7514,9 +7594,9 @@
             selections: [
               {
                 alias: null,
-                args: (l = [
+                args: (s = [
                   { kind: 'Literal', name: 's', value: 46 },
-                  { kind: 'Variable', name: 'trusted_friends_list_id', variableName: 'trustedFriendsId' },
+                  (l = { kind: 'Variable', name: 'trusted_friends_list_id', variableName: 'trustedFriendsId' }),
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: null,
@@ -7528,6 +7608,24 @@
                   {
                     kind: 'InlineFragment',
                     selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'TrustedFriendsList',
+                        kind: 'LinkedField',
+                        name: 'trusted_friends_list',
+                        plural: !1,
+                        selections: [
+                          (c = {
+                            alias: null,
+                            args: null,
+                            kind: 'ScalarField',
+                            name: 'member_count',
+                            storageKey: null,
+                          }),
+                        ],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -7545,11 +7643,25 @@
                             plural: !1,
                             selections: [
                               o,
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  (u = {
+                                    alias: null,
+                                    args: [l],
+                                    kind: 'ScalarField',
+                                    name: 'is_trusted_friends_list_member',
+                                    storageKey: null,
+                                  }),
+                                ],
+                                type: 'User',
+                                abstractKey: null,
+                              },
                               { args: null, kind: 'FragmentSpread', name: 'UserCellRelay_user' },
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (s = {
+                                  (d = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
@@ -7564,7 +7676,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      (c = {
+                                      (p = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -7579,21 +7691,21 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          (u = {
+                                          (m = {
                                             alias: 'fromIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'from_index',
                                             storageKey: null,
                                           }),
-                                          (d = {
+                                          (h = {
                                             alias: 'toIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'to_index',
                                             storageKey: null,
                                           }),
-                                          (p = {
+                                          (f = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -7608,17 +7720,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              (m = {
+                                              (g = {
                                                 alias: 'type',
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: '__typename',
                                                 storageKey: null,
                                               }),
-                                              (g = {
+                                              (b = {
                                                 kind: 'InlineFragment',
-                                                selections: (f = [
-                                                  (h = {
+                                                selections: (v = [
+                                                  (y = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -7629,17 +7741,17 @@
                                                 type: 'TimelineRichTextCashtag',
                                                 abstractKey: null,
                                               }),
-                                              (b = {
+                                              (E = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (y = {
+                                                  (_ = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'id',
                                                     storageKey: null,
                                                   }),
-                                                  (v = {
+                                                  (k = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -7650,16 +7762,16 @@
                                                 type: 'TimelineRichTextList',
                                                 abstractKey: null,
                                               }),
-                                              (_ = {
+                                              (I = {
                                                 kind: 'InlineFragment',
-                                                selections: f,
+                                                selections: v,
                                                 type: 'TimelineRichTextHashtag',
                                                 abstractKey: null,
                                               }),
-                                              (k = {
+                                              (C = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  v,
+                                                  k,
                                                   {
                                                     alias: 'urlType',
                                                     args: null,
@@ -7731,7 +7843,7 @@
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (L = {
+                                                  (x = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -7751,7 +7863,7 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (I = {
+                                                              (w = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -7759,7 +7871,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (E = {
+                                                                  (S = {
                                                                     alias: null,
                                                                     args: null,
                                                                     kind: 'ScalarField',
@@ -7769,7 +7881,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                               }),
-                                                              (C = {
+                                                              (L = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -7780,17 +7892,17 @@
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          (w = {
+                                                          (T = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (S = {
+                                                              (F = {
                                                                 alias: 'reason',
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'unavailable_reason',
                                                                 storageKey: null,
                                                               }),
-                                                              s,
+                                                              d,
                                                             ],
                                                             type: 'UserUnavailable',
                                                             abstractKey: null,
@@ -7807,7 +7919,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, L],
+                                                selections: [S, x],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -7817,18 +7929,18 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      (F = {
+                                      (R = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'rtl',
                                         storageKey: null,
                                       }),
-                                      h,
+                                      y,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  F,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
@@ -7839,7 +7951,7 @@
                         ],
                         storageKey: null,
                       },
-                      (T = {
+                      (M = {
                         kind: 'ClientExtension',
                         selections: [{ alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null }],
                       }),
@@ -7847,7 +7959,7 @@
                     type: 'TrustedFriendsListMemberAddSuccess',
                     abstractKey: null,
                   },
-                  (x = {
+                  (O = {
                     kind: 'InlineFragment',
                     selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'reason', storageKey: null }],
                     type: 'TrustedFriendsListMemberAddInvalid',
@@ -7868,7 +7980,7 @@
             selections: [
               {
                 alias: null,
-                args: l,
+                args: s,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'trusted_friends_list_member_add',
@@ -7878,6 +7990,16 @@
                   {
                     kind: 'InlineFragment',
                     selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'TrustedFriendsList',
+                        kind: 'LinkedField',
+                        name: 'trusted_friends_list',
+                        plural: !1,
+                        selections: [c, _],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -7898,6 +8020,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
+                                  u,
                                   {
                                     alias: null,
                                     args: null,
@@ -7935,7 +8058,7 @@
                                         name: 'protected',
                                         storageKey: null,
                                       },
-                                      E,
+                                      S,
                                       {
                                         alias: null,
                                         args: null,
@@ -7946,7 +8069,7 @@
                                     ],
                                     storageKey: null,
                                   },
-                                  (R = {
+                                  (K = {
                                     alias: null,
                                     args: null,
                                     filters: null,
@@ -7955,7 +8078,7 @@
                                     kind: 'LinkedHandle',
                                     name: 'legacy',
                                   }),
-                                  y,
+                                  _,
                                 ],
                                 type: 'User',
                                 abstractKey: null,
@@ -7963,7 +8086,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  s,
+                                  d,
                                   {
                                     alias: null,
                                     args: null,
@@ -7972,7 +8095,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      c,
+                                      p,
                                       {
                                         alias: null,
                                         args: null,
@@ -7981,9 +8104,9 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          u,
-                                          d,
-                                          p,
+                                          m,
+                                          h,
+                                          f,
                                           {
                                             alias: null,
                                             args: null,
@@ -7994,15 +8117,15 @@
                                             selections: [
                                               o,
                                               { kind: 'TypeDiscriminator', abstractKey: '__isTimelineReferenceObject' },
-                                              m,
                                               g,
                                               b,
-                                              _,
-                                              k,
+                                              E,
+                                              I,
+                                              C,
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (M = {
+                                                  (P = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -8021,11 +8144,11 @@
                                                           o,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [I, R, C, y],
+                                                            selections: [w, K, L, _],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          w,
+                                                          T,
                                                         ],
                                                         storageKey: null,
                                                       },
@@ -8038,7 +8161,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, M],
+                                                selections: [S, P],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -8048,12 +8171,12 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      F,
-                                      h,
+                                      R,
+                                      y,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  F,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
@@ -8074,26 +8197,26 @@
                         name: 'user_results',
                         handleArgs: [{ kind: 'Variable', name: 'slices', variableName: 'slices' }],
                       },
-                      T,
+                      M,
                     ],
                     type: 'TrustedFriendsListMemberAddSuccess',
                     abstractKey: null,
                   },
-                  x,
+                  O,
                 ],
                 storageKey: null,
               },
             ],
           },
           params: {
-            id: 'b2htxotnDNcrdoSYr2sBBA',
+            id: 'tFGUHIefq3TyUP8d8Exubg',
             metadata: {},
             name: 'TrustedFriendsAddRemoveButtonAddMutation',
             operationKind: 'mutation',
             text: null,
           },
         }
-      ;(O.hash = '555152fac2cf96185175d167206f359d'), (t.default = O)
+      ;(D.hash = 'd9fc2fad28366b2ad407c3d99620dcb0'), (t.default = D)
     },
     e5HP: function (e, t, n) {
       'use strict'
@@ -8104,8 +8227,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('5Yy7'),
-        s = n.n(o),
+        s = n('5Yy7'),
+        o = n.n(s),
         c = n('2VqO'),
         u = n.n(c),
         d = n('KEM+'),
@@ -8153,7 +8276,7 @@
         R = y.a.be22205f,
         M = y.a.hcbbe447,
         O = (function (e) {
-          s()(n, e)
+          o()(n, e)
           var t = u()(n)
           function n() {
             return r()(this, n), t.apply(this, arguments)
@@ -8170,8 +8293,8 @@
                     r = e.withCircleIcon ? S : w.a
                   return h.a.createElement(
                     b.a,
-                    { style: [P.root, a] },
-                    h.a.createElement(r, { style: [P.icon, t && P[t]] }),
+                    { style: [K.root, a] },
+                    h.a.createElement(r, { style: [K.icon, t && K[t]] }),
                     h.a.createElement(f.b, { color: t, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
                   )
                 },
@@ -8186,16 +8309,16 @@
                     r = a.adMetadataContainer,
                     i = a.advertiser,
                     l = a.advertiser_name,
-                    o = a.disclosure_type,
-                    s = t && i && t === i.id_str,
-                    c = 'string' == typeof o && 'political' === o.toLowerCase(),
-                    u = 'string' == typeof o && 'issue' === o.toLowerCase(),
+                    s = a.disclosure_type,
+                    o = t && i && t === i.id_str,
+                    c = 'string' == typeof s && 'political' === s.toLowerCase(),
+                    u = 'string' == typeof s && 'issue' === s.toLowerCase(),
                     d = !(!r || 'POLITICAL' !== r.disclaimerType) || c,
                     p = !(!r || 'ISSUE' !== r.disclaimerType) || u,
                     m = (r || {}).removePromotedAttributionForPreroll
                   return (
                     n ||
-                    (!l || s || m
+                    (!l || o || m
                       ? d
                         ? T
                         : p
@@ -8214,7 +8337,7 @@
           )
         })(h.a.Component)
       p()(O, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
-      var P = v.a.create(function (e) {
+      var K = v.a.create(function (e) {
         return {
           root: { alignItems: 'center', flexDirection: 'row' },
           icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
@@ -8236,8 +8359,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -8283,10 +8406,10 @@
         R = n('Tp1h'),
         M = n('Jkc4'),
         O = n('MWbm'),
-        P = n('MtXG'),
-        D = n('TIdA'),
-        U = n('A91F'),
-        K = n('rHpw'),
+        K = n('MtXG'),
+        P = n('TIdA'),
+        D = n('A91F'),
+        U = n('rHpw'),
         A = n('9Xij'),
         j = n('t62R'),
         N = n('jV+4'),
@@ -8300,12 +8423,12 @@
           return g.a.createElement(
             W.a.I18NFormatMessage,
             { $i18n: 'd2924acb' },
-            g.a.createElement(P.a.Value, null, W.a.ec08efe3({ formattedCount: t })),
-            g.a.createElement(P.a.Label, null, W.a.h9f711f0({ count: e })),
+            g.a.createElement(K.a.Value, null, W.a.ec08efe3({ formattedCount: t })),
+            g.a.createElement(K.a.Label, null, W.a.h9f711f0({ count: e })),
           )
         },
-        X = W.a.ca5d0a81,
-        Y = W.a.j681933d,
+        Y = W.a.ca5d0a81,
+        X = W.a.j681933d,
         Q = (function (e) {
           u()(n, e)
           var t = p()(n)
@@ -8315,7 +8438,7 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_renderImage', function () {
+              h()(o()(e), '_renderImage', function () {
                 var t = e.props.media.image
                 if (t && !Object(x.a)(t)) {
                   var n = t.url
@@ -8323,10 +8446,10 @@
                     g.a.Fragment,
                     null,
                     g.a.createElement(F.a, null, g.a.createElement('meta', { content: n, property: 'og:image' })),
-                    g.a.createElement(D.a, {
+                    g.a.createElement(P.a, {
                       accessibilityLabel: '',
-                      aspectMode: U.a.exact(3),
-                      backgroundColor: K.a.theme.colors.gray300,
+                      aspectMode: D.a.exact(3),
+                      backgroundColor: U.a.theme.colors.gray300,
                       image: t,
                     }),
                   )
@@ -8337,7 +8460,7 @@
                   g.a.createElement(O.a, { style: J.placeholderImageContainer }),
                 )
               }),
-              h()(s()(e), '_renderListDescription', function () {
+              h()(o()(e), '_renderListDescription', function () {
                 var t = e.props,
                   n = t.list,
                   a = t.user
@@ -8345,8 +8468,8 @@
                   var r = n.description,
                     i = n.member_count,
                     l = n.mode,
-                    o = n.name,
-                    s = n.subscriber_count || 0,
+                    s = n.name,
+                    o = n.subscriber_count || 0,
                     c = i || 0,
                     u = 'private' === l
                   return g.a.createElement(
@@ -8355,8 +8478,8 @@
                     g.a.createElement(
                       O.a,
                       { style: [J.name, J.text] },
-                      g.a.createElement(j.b, { align: 'center', size: 'headline1', weight: 'bold' }, o.trim()),
-                      u ? g.a.createElement(T.a, { accessibilityLabel: Y, style: J.iconLock }) : null,
+                      g.a.createElement(j.b, { align: 'center', size: 'headline1', weight: 'bold' }, s.trim()),
+                      u ? g.a.createElement(T.a, { accessibilityLabel: X, style: J.iconLock }) : null,
                     ),
                     r
                       ? g.a.createElement(
@@ -8382,48 +8505,48 @@
                           withLink: !0,
                         })
                       : null,
-                    e._renderCount(s, c),
+                    e._renderCount(o, c),
                     e._renderActionButton(),
                   )
                 }
               }),
-              h()(s()(e), '_renderCount', function (t, n) {
+              h()(o()(e), '_renderCount', function (t, n) {
                 var a = e.props.basePath,
                   r = q(t),
                   i = q(n)
                 return g.a.createElement(
-                  P.a.Group,
+                  K.a.Group,
                   null,
                   g.a.createElement(
-                    P.a,
+                    K.a,
                     { count: n, link: ''.concat(a, '/members'), onPress: e._handleMembersCountPress },
                     g.a.createElement(
                       W.a.I18NFormatMessage,
                       { $i18n: 'b38e130b' },
-                      g.a.createElement(P.a.Value, null, W.a.ibd0106d({ formattedCount: i })),
-                      g.a.createElement(P.a.Label, null, W.a.cface2d0({ count: n })),
+                      g.a.createElement(K.a.Value, null, W.a.ibd0106d({ formattedCount: i })),
+                      g.a.createElement(K.a.Label, null, W.a.cface2d0({ count: n })),
                     ),
                   ),
                   g.a.createElement(
-                    P.a,
+                    K.a,
                     { count: t, link: ''.concat(a, '/followers'), onPress: e._handleSubscribersCountPress },
                     G(t, r),
                   ),
                 )
               }),
-              h()(s()(e), '_handleEditPress', function () {
+              h()(o()(e), '_handleEditPress', function () {
                 e._scribe({ element: 'edit', action: 'click' })
               }),
-              h()(s()(e), '_handleUserNamePress', function () {
+              h()(o()(e), '_handleUserNamePress', function () {
                 e._scribe({ element: 'user', action: 'click' })
               }),
-              h()(s()(e), '_handleMembersCountPress', function () {
+              h()(o()(e), '_handleMembersCountPress', function () {
                 e._scribe({ element: 'list_member', action: 'click' })
               }),
-              h()(s()(e), '_handleSubscribersCountPress', function () {
+              h()(o()(e), '_handleSubscribersCountPress', function () {
                 e._scribe({ element: 'list_subscribed', action: 'click' })
               }),
-              h()(s()(e), '_handleSubscribeActions', function () {
+              h()(o()(e), '_handleSubscribeActions', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler,
                   a = t.list,
@@ -8431,11 +8554,11 @@
                   i = t.unsubscribe
                 if (a) {
                   var l = a.following,
-                    o = a.id_str
-                  Object(L.a)(n, l, o, r, i, e._scribe)
+                    s = a.id_str
+                  Object(L.a)(n, l, s, r, i, e._scribe)
                 }
               }),
-              h()(s()(e), '_renderActionButton', function () {
+              h()(o()(e), '_renderActionButton', function () {
                 var t = e.props,
                   n = t.basePath,
                   a = t.list,
@@ -8443,7 +8566,7 @@
                   i = t.user,
                   l = t.withEditButton
                 if (a && a.user) {
-                  var o = null == i ? void 0 : i.blocking
+                  var s = null == i ? void 0 : i.blocking
                   return a.user === r && l
                     ? g.a.createElement(
                         B.a,
@@ -8453,7 +8576,7 @@
                           style: J.button,
                           type: 'primaryOutlined',
                         },
-                        X,
+                        Y,
                       )
                     : a.user !== r
                     ? g.a.createElement(
@@ -8464,7 +8587,7 @@
                           { customText: a.name, displayMode: R.a.subscribe, userFullName: i && i.name },
                           function (t) {
                             return g.a.createElement(H.a, {
-                              disabled: o,
+                              disabled: s,
                               isFollowing: !!a.following,
                               onFollow: t(e._handleSubscribeActions),
                               onUnfollow: t(e._handleSubscribeActions),
@@ -8477,7 +8600,7 @@
                     : null
                 }
               }),
-              h()(s()(e), '_scribe', function (t) {
+              h()(o()(e), '_scribe', function (t) {
                 e.props.analytics.scribe(t)
               }),
               e
@@ -8512,7 +8635,7 @@
           )
         })(g.a.Component)
       h()(Q, 'contextType', V.a), h()(Q, 'defaultProps', { withEditButton: !0 })
-      var J = K.a.create(function (e) {
+      var J = U.a.create(function (e) {
           return {
             container: {
               borderBottomWidth: e.borderWidths.small,
@@ -8559,8 +8682,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -8629,8 +8752,8 @@
                     r = n.analytics,
                     i = n.media,
                     l = n.mediaId,
-                    o = n.onDone,
-                    s = n.processMedia,
+                    s = n.onDone,
+                    o = n.processMedia,
                     c = n.updateMediaUpload
                   a.setState({ isProcessing: !0 })
                   var u = t.getCropData(),
@@ -8638,10 +8761,10 @@
                     p = !d || (0 === u.top && 0 === u.left && u.width === d.width && u.height === d.height)
                   Object(y.a)(l) &&
                     (e
-                      ? (e(u), o())
+                      ? (e(u), s())
                       : (c({ id: l, cropData: p ? void 0 : u }),
-                        s(l).then(function () {
-                          a.setState({ isProcessing: !1 }), r.scribe({ action: 'done' }), o()
+                        o(l).then(function () {
+                          a.setState({ isProcessing: !1 }), r.scribe({ action: 'done' }), s()
                         })))
                 }
               }),
@@ -8652,7 +8775,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -8662,7 +8785,7 @@
                     a = e.title,
                     i = e.withAspectRatioOptions,
                     l = e.withZoomControl,
-                    o = this._getMedia()
+                    s = this._getMedia()
                   return r.a.createElement(
                     I.b,
                     {
@@ -8676,7 +8799,7 @@
                     },
                     r.a.createElement(w.a, {
                       defaultAspectRatio: t,
-                      media: o,
+                      media: s,
                       ref: this._cropper,
                       withAspectRatioOptions: i,
                       withZoomControl: l,
@@ -8691,16 +8814,16 @@
         O = T.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
-        P = E(M),
-        D = n('X8FW'),
-        U = T.a.create(function (e) {
+        K = E(M),
+        P = n('X8FW'),
+        D = T.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
         return r.a.createElement(
-          D.b,
-          { clickMaskToClose: !1, modalSize: 'fitChildren', style: U.modal },
-          r.a.createElement(P, e),
+          P.b,
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: D.modal },
+          r.a.createElement(K, e),
         )
       }
     },
@@ -8716,8 +8839,8 @@
         r = n.n(a),
         i = n('yiKp'),
         l = n.n(i),
-        o = (n('yH/f'), n('7x/C'), n('JtPf'), n('kHBp')),
-        s = n('Ssj5'),
+        s = (n('yH/f'), n('7x/C'), n('JtPf'), n('kHBp')),
+        o = n('Ssj5'),
         c = n('RqPI'),
         u = 'rweb.channelsTimelineBehavior',
         d = 'channelsTimelineBehavior',
@@ -8733,20 +8856,20 @@
           var t = e.listId,
             n = e.useRanked
           return function (e, a, i) {
-            var s = i.userPersistence,
+            var o = i.userPersistence,
               c = a(),
               d = m(c),
               p = l()(l()({}, d), {}, r()({}, t, { useRanked: n }))
             e(f(p))
-            var h = o.a.select(c, t)
+            var h = s.a.select(c, t)
             return h && h.following
-              ? s.get(u).then(function (e) {
-                  return s.set(u, l()(l()({}, e), {}, r()({}, t, { useRanked: n })))
+              ? o.get(u).then(function (e) {
+                  return o.set(u, l()(l()({}, e), {}, r()({}, t, { useRanked: n })))
                 })
               : Promise.resolve()
           }
         }
-      s.a.register(
+      o.a.register(
         r()({}, d, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
             t = arguments.length > 1 ? arguments[1] : void 0
@@ -8773,99 +8896,128 @@
       'use strict'
       n.r(t),
         n.d(t, 'trustedFriendsMembersQuery', function () {
-          return k
+          return C
         }),
         n.d(t, 'errorConfig', function () {
-          return I
-        }),
-        n.d(t, 'TrustedFriendsMembers', function () {
           return w
         }),
+        n.d(t, 'TrustedFriendsMembers', function () {
+          return T
+        }),
         n.d(t, 'default', function () {
-          return F
+          return R
         })
       var a,
         r = n('ERkP'),
         i = n.n(r),
         l = n('kHa5'),
+        s = n('oUUt'),
         o = (n('enFi'), n('TEoO')),
-        s = n('Fr3L'),
-        c = n('/uhu'),
-        u = n('KbZL'),
-        d = n('DQzJ'),
-        p = n('MWbm'),
-        m = n('FIs5'),
-        h = n('t62R'),
-        f = n('rHpw'),
-        g = n('3XMw'),
-        y = n.n(g),
-        v = y.a.c7323afe,
-        b = y.a.dab58e31,
-        _ = function () {
-          return i.a.createElement(m.a, { header: v, message: b })
+        c = n('Fr3L'),
+        u = n('/uhu'),
+        d = n('s1N3'),
+        p = n('KbZL'),
+        m = n('DQzJ'),
+        h = n('MWbm'),
+        f = n('FIs5'),
+        g = n('t62R'),
+        y = n('rHpw'),
+        v = n('3XMw'),
+        b = n.n(v),
+        _ = n('lR1r'),
+        k = b.a.c7323afe,
+        E = b.a.dab58e31,
+        I = function () {
+          return i.a.createElement(f.a, { header: k, message: E })
         },
-        k = void 0 !== a ? a : (a = n('kHId')),
-        E = 'TRUSTED_FRIENDS_MEMBERS',
-        I = { context: E },
-        C = function (e) {
+        C = void 0 !== a ? a : (a = n('kHId')),
+        S = 'TRUSTED_FRIENDS_MEMBERS',
+        w = { context: S },
+        L = function (e) {
           return e.__id
         },
-        S = function (e) {
-          return function (t) {
-            var n,
-              a,
+        F = function (e, t) {
+          return function (n) {
+            var a,
               r,
-              o =
-                null == t || null === (n = t.result) || void 0 === n || null === (a = n.legacy) || void 0 === a
+              s,
+              o,
+              c,
+              u =
+                null == n || null === (a = n.result) || void 0 === a || null === (r = a.legacy) || void 0 === r
                   ? void 0
-                  : a.id_str
-            if (!o || 'User' !== (null == t || null === (r = t.result) || void 0 === r ? void 0 : r.__typename))
+                  : r.id_str,
+              d = null == n || null === (s = n.result) || void 0 === s ? void 0 : s.__id,
+              m = null == n || null === (o = n.result) || void 0 === o ? void 0 : o.is_trusted_friends_list_member
+            if (!u || 'User' !== (null == n || null === (c = n.result) || void 0 === c ? void 0 : c.__typename))
               return null
-            var s = i.a.createElement(l.a, { isMember: !0, trustedFriendsId: e, userId: o })
-            return i.a.createElement(u.a, { decoration: s, user: t.result })
+            var h = i.a.createElement(l.a, {
+              isMember: m,
+              sliceID: t,
+              sliceItemID: d,
+              trustedFriendsId: e,
+              type: _.a.Recommendations,
+              userId: u,
+            })
+            return i.a.createElement(p.a, { decoration: h, user: n.result })
           }
         },
-        w = function (e) {
+        T = function (e) {
           var t,
-            n = e.trustedFriendsId,
-            a = Object(d.a)(k, { trustedFriendsId: n }),
-            r = a.data,
-            l = a.fetchNext,
-            s = null == r || null === (t = r.trusted_friends_list_by_rest_id) || void 0 === t ? void 0 : t.members_slice
+            n,
+            a = e.trustedFriendsId,
+            r = Object(m.a)(C, { trustedFriendsId: a }),
+            l = r.data,
+            c = r.fetchNext,
+            p =
+              null == l || null === (t = l.trusted_friends_list_by_rest_id) || void 0 === t ? void 0 : t.members_slice,
+            f = Object(s.c)(
+              null == l || null === (n = l.trusted_friends_list_by_rest_id) || void 0 === n ? void 0 : n.id,
+              'TrustedFriendsMembers_slice_result',
+            ),
+            y =
+              null != p && p.items_results
+                ? Object(d.a)(null == p ? void 0 : p.items_results, function (e) {
+                    var t, n
+                    return null === (t = e.result) || void 0 === t || null === (n = t.legacy) || void 0 === n
+                      ? void 0
+                      : n.id_str
+                  })
+                : []
           return i.a.createElement(
-            p.a,
+            h.a,
             null,
             i.a.createElement(
-              h.b,
-              { color: 'gray700', size: 'body', style: L.education },
+              g.b,
+              { color: 'gray700', size: 'body', style: x.education },
               i.a.createElement(
-                y.a.I18NFormatMessage,
+                b.a.I18NFormatMessage,
                 { $i18n: 'hfbff3d1' },
                 i.a.createElement(
-                  h.b,
+                  g.b,
                   {
                     color: 'text',
-                    link: c.TRUSTED_FRIENDS_LEARN_MORE_URL,
-                    style: L.learnMore,
+                    link: u.TRUSTED_FRIENDS_LEARN_MORE_URL,
+                    style: x.learnMore,
                     weight: 'bold',
                     withUnderline: !0,
                   },
-                  y.a.fe3a4dcb,
+                  b.a.fe3a4dcb,
                 ),
               ),
             ),
             i.a.createElement(o.a, {
-              cacheKey: E,
-              identityFunction: C,
-              items: (null == s ? void 0 : s.items_results) || [],
-              noItemsRenderer: _,
-              onNearEnd: l,
-              renderer: S(n),
+              cacheKey: S,
+              identityFunction: L,
+              items: y,
+              noItemsRenderer: I,
+              onNearEnd: c,
+              renderer: F(a, f),
               withoutHeadroom: !0,
             }),
           )
         },
-        L = f.a.create(function (e) {
+        x = y.a.create(function (e) {
           return {
             education: {
               marginHorizontal: e.spaces.space32,
@@ -8877,8 +9029,8 @@
             activityIndicatior: { paddingVertical: 250 },
           }
         })
-      function F(e) {
-        return i.a.createElement(s.a, { errorConfig: I }, i.a.createElement(w, e))
+      function R(e) {
+        return i.a.createElement(c.a, { errorConfig: w }, i.a.createElement(T, e))
       }
     },
     iPch: function (e, t, n) {
@@ -8930,8 +9082,8 @@
         r = n('kGix'),
         i = n('tI3i'),
         l = n.n(i),
-        o = n('kHBp'),
-        s = n('gNWl'),
+        s = n('kHBp'),
+        o = n('gNWl'),
         c = n('G6rE'),
         u = { url: 'https://pbs.twimg.com/media/EXZ2rMvVAAAAfrN.png', width: 1125, height: 375 },
         d = function (e, t) {
@@ -8956,7 +9108,7 @@
         },
         g = function (e, t) {
           var n = p(0, t)
-          return n ? o.a.select(e, n) : o.a.selectByKey(e, k(e, t))
+          return n ? s.a.select(e, n) : s.a.selectByKey(e, k(e, t))
         },
         y = function (e, t) {
           var n = g(e, t)
@@ -8968,7 +9120,7 @@
         },
         b = function (e, t) {
           var n = p(0, t)
-          return t.match.params.screenName || void 0 || (n && o.a.selectListAuthorScreenName(e, n))
+          return t.match.params.screenName || void 0 || (n && s.a.selectListAuthorScreenName(e, n))
         },
         _ = function (e, t) {
           var n = g(e, t)
@@ -8987,7 +9139,7 @@
                 r = b(e, t)
               return n && r ? Object(a.a)(r, n) : ''
             })(e, t)
-          return o.a.selectFetchStatus(e, n) || r.a.NONE
+          return s.a.selectFetchStatus(e, n) || r.a.NONE
         },
         I = function (e, t) {
           var n = b(e, t)
@@ -8995,11 +9147,11 @@
         },
         C = function (e, t) {
           var n = f(e, t),
-            a = Object(s.a)(e)
+            a = Object(o.a)(e)
           return (n && a[n] && a[n].useRanked) || !1
         },
         S = function (e, t) {
-          var n = o.a.select(e, t)
+          var n = s.a.select(e, t)
           if (n) {
             var a = n.customBanner
             return a || n.defaultBanner
@@ -9017,8 +9169,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = n('ERkP'),
-        s = n.n(o),
+        s = n('ERkP'),
+        o = n.n(s),
         c = n('t62R'),
         u = n('I4+6'),
         d = n('cm6r'),
@@ -9041,19 +9193,19 @@
           n = void 0 === t ? 'center' : t,
           a = e.color,
           i = e.label,
-          o = l()(e, h),
+          s = l()(e, h),
           g = u.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[a],
             insetFocusRing: !0,
           })
-        return s.a.createElement(
+        return o.a.createElement(
           m.a,
           { style: f.container },
-          s.a.createElement(
+          o.a.createElement(
             d.a,
-            r()({}, o, { interactiveStyles: g, style: f.root }),
-            s.a.createElement(c.b, { align: n, color: a }, i),
+            r()({}, s, { interactiveStyles: g, style: f.root }),
+            o.a.createElement(c.b, { align: n, color: a }, i),
           ),
         )
       }
@@ -9065,8 +9217,8 @@
         r,
         i,
         l,
-        o,
         s,
+        o,
         c,
         u,
         d,
@@ -9092,6 +9244,7 @@
         R,
         M,
         O,
+        K,
         P = {
           fragment: {
             argumentDefinitions: [
@@ -9113,6 +9266,7 @@
                 name: 'trusted_friends_list_by_rest_id',
                 plural: !1,
                 selections: [
+                  (l = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                   {
                     alias: 'members_slice',
                     args: null,
@@ -9121,7 +9275,7 @@
                     name: '__TrustedFriendsMembers_slice_result_slice',
                     plural: !1,
                     selections: [
-                      (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                      (s = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                       {
                         alias: null,
                         args: null,
@@ -9138,7 +9292,7 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              l,
+                              s,
                               {
                                 kind: 'InlineFragment',
                                 selections: [
@@ -9160,6 +9314,19 @@
                                     ],
                                     storageKey: null,
                                   },
+                                  (c = {
+                                    alias: null,
+                                    args: [
+                                      {
+                                        kind: 'Variable',
+                                        name: 'trusted_friends_list_id',
+                                        variableName: 'trustedFriendsId',
+                                      },
+                                    ],
+                                    kind: 'ScalarField',
+                                    name: 'is_trusted_friends_list_member',
+                                    storageKey: null,
+                                  }),
                                 ],
                                 type: 'User',
                                 abstractKey: null,
@@ -9168,7 +9335,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (s = {
+                                  (u = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
@@ -9183,7 +9350,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      (c = {
+                                      (d = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -9198,21 +9365,21 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          (u = {
+                                          (p = {
                                             alias: 'fromIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'from_index',
                                             storageKey: null,
                                           }),
-                                          (d = {
+                                          (m = {
                                             alias: 'toIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'to_index',
                                             storageKey: null,
                                           }),
-                                          (p = {
+                                          (h = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -9227,17 +9394,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              (m = {
+                                              (f = {
                                                 alias: 'type',
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: '__typename',
                                                 storageKey: null,
                                               }),
-                                              (g = {
+                                              (v = {
                                                 kind: 'InlineFragment',
-                                                selections: (f = [
-                                                  (h = {
+                                                selections: (y = [
+                                                  (g = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -9248,17 +9415,11 @@
                                                 type: 'TimelineRichTextCashtag',
                                                 abstractKey: null,
                                               }),
-                                              (b = {
+                                              (_ = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (y = {
-                                                    alias: null,
-                                                    args: null,
-                                                    kind: 'ScalarField',
-                                                    name: 'id',
-                                                    storageKey: null,
-                                                  }),
-                                                  (v = {
+                                                  l,
+                                                  (b = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -9269,16 +9430,16 @@
                                                 type: 'TimelineRichTextList',
                                                 abstractKey: null,
                                               }),
-                                              (_ = {
+                                              (k = {
                                                 kind: 'InlineFragment',
-                                                selections: f,
+                                                selections: y,
                                                 type: 'TimelineRichTextHashtag',
                                                 abstractKey: null,
                                               }),
-                                              (k = {
+                                              (E = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  v,
+                                                  b,
                                                   {
                                                     alias: 'urlType',
                                                     args: null,
@@ -9350,7 +9511,7 @@
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (L = {
+                                                  (F = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -9366,11 +9527,11 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          l,
+                                                          s,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (I = {
+                                                              (C = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -9378,7 +9539,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (E = {
+                                                                  (I = {
                                                                     alias: null,
                                                                     args: null,
                                                                     kind: 'ScalarField',
@@ -9388,7 +9549,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                               }),
-                                                              (C = {
+                                                              (S = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -9399,17 +9560,17 @@
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          (w = {
+                                                          (L = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (S = {
+                                                              (w = {
                                                                 alias: 'reason',
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'unavailable_reason',
                                                                 storageKey: null,
                                                               }),
-                                                              s,
+                                                              u,
                                                             ],
                                                             type: 'UserUnavailable',
                                                             abstractKey: null,
@@ -9426,7 +9587,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, L],
+                                                selections: [I, F],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -9436,35 +9597,36 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      (F = {
+                                      (T = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'rtl',
                                         storageKey: null,
                                       }),
-                                      h,
+                                      g,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  w,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
                               },
+                              (x = {
+                                kind: 'ClientExtension',
+                                selections: [
+                                  { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
+                                ],
+                              }),
                             ],
                             storageKey: null,
                           },
-                          (T = {
-                            kind: 'ClientExtension',
-                            selections: [
-                              { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null },
-                            ],
-                          }),
+                          x,
                         ],
                         storageKey: null,
                       },
-                      (x = {
+                      (R = {
                         alias: null,
                         args: null,
                         concreteType: 'SliceInfo',
@@ -9477,7 +9639,7 @@
                         ],
                         storageKey: null,
                       }),
-                      T,
+                      x,
                     ],
                     storageKey: null,
                   },
@@ -9502,15 +9664,16 @@
                 name: 'trusted_friends_list_by_rest_id',
                 plural: !1,
                 selections: [
+                  l,
                   {
                     alias: null,
-                    args: (R = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
+                    args: (M = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }]),
                     concreteType: 'UserSlice',
                     kind: 'LinkedField',
                     name: 'members_slice',
                     plural: !1,
                     selections: [
-                      l,
+                      s,
                       {
                         alias: null,
                         args: null,
@@ -9527,7 +9690,7 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              l,
+                              s,
                               {
                                 kind: 'InlineFragment',
                                 selections: [
@@ -9562,7 +9725,7 @@
                                         name: 'protected',
                                         storageKey: null,
                                       },
-                                      E,
+                                      I,
                                       {
                                         alias: null,
                                         args: null,
@@ -9573,7 +9736,7 @@
                                     ],
                                     storageKey: null,
                                   },
-                                  (M = {
+                                  (O = {
                                     alias: null,
                                     args: null,
                                     filters: null,
@@ -9582,7 +9745,8 @@
                                     kind: 'LinkedHandle',
                                     name: 'legacy',
                                   }),
-                                  y,
+                                  c,
+                                  l,
                                 ],
                                 type: 'User',
                                 abstractKey: null,
@@ -9590,7 +9754,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  s,
+                                  u,
                                   {
                                     alias: null,
                                     args: null,
@@ -9599,7 +9763,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      c,
+                                      d,
                                       {
                                         alias: null,
                                         args: null,
@@ -9608,9 +9772,9 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          u,
-                                          d,
                                           p,
+                                          m,
+                                          h,
                                           {
                                             alias: null,
                                             args: null,
@@ -9619,17 +9783,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              l,
+                                              s,
                                               { kind: 'TypeDiscriminator', abstractKey: '__isTimelineReferenceObject' },
-                                              m,
-                                              g,
-                                              b,
+                                              f,
+                                              v,
                                               _,
                                               k,
+                                              E,
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (O = {
+                                                  (K = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -9645,14 +9809,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          l,
+                                                          s,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [I, M, C, y],
+                                                            selections: [C, O, S, l],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          w,
+                                                          L,
                                                         ],
                                                         storageKey: null,
                                                       },
@@ -9665,7 +9829,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [E, O],
+                                                selections: [I, K],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -9675,31 +9839,32 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      F,
-                                      h,
+                                      T,
+                                      g,
                                     ],
                                     storageKey: null,
                                   },
-                                  S,
+                                  w,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
                               },
+                              x,
                             ],
                             storageKey: null,
                           },
-                          T,
+                          x,
                         ],
                         storageKey: null,
                       },
+                      R,
                       x,
-                      T,
                     ],
                     storageKey: null,
                   },
                   {
                     alias: null,
-                    args: R,
+                    args: M,
                     filters: [],
                     handle: 'slice',
                     key: 'TrustedFriendsMembers_slice_result',
@@ -9707,21 +9872,20 @@
                     name: 'members_slice',
                     handleArgs: [{ kind: 'Literal', name: 'itemsFieldName', value: 'items_results' }],
                   },
-                  y,
                 ],
                 storageKey: null,
               },
             ],
           },
           params: {
-            id: 'jXM5QVtMdNOoIarFBqwQJQ',
+            id: 'ac-cI1Zoec6CvDqSWI-RBw',
             metadata: { sliceInfoPath: ['trusted_friends_list_by_rest_id', 'members_slice', 'slice_info'] },
             name: 'TrustedFriendsMembersQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(P.hash = '69c69cd9bb739edd6343061909cf2300'), (t.default = P)
+      ;(P.hash = '7e4e3a2605b9b7e7fede2f14993d8ff0'), (t.default = P)
     },
     kHa5: function (e, t, n) {
       'use strict'
@@ -9729,8 +9893,8 @@
         r,
         i = n('ddV6'),
         l = n.n(i),
-        o = n('ERkP'),
-        s = n.n(o),
+        s = n('ERkP'),
+        o = n.n(s),
         c = n('/yvb'),
         u = n('3XMw'),
         d = n.n(u),
@@ -9744,54 +9908,96 @@
       t.a = function (e) {
         var t = e.isMember,
           n = e.sliceID,
-          a = e.trustedFriendsId,
-          r = e.userId,
-          i = h()(y),
-          o = l()(i, 2),
-          u = o[0],
-          d = o[1],
-          m = h()(v),
-          b = l()(m, 2),
-          _ = b[0],
-          k = b[1],
-          E = s.a.useState(t || !1),
-          I = l()(E, 2),
-          C = I[0],
-          S = I[1],
-          w = Object(p.b)(),
-          L = s.a.useCallback(
+          a = e.sliceItemID,
+          r = e.trustedFriendsId,
+          i = e.type,
+          s = e.userId,
+          u = h()(y),
+          d = l()(u, 2),
+          m = d[0],
+          b = d[1],
+          _ = h()(v),
+          k = l()(_, 2),
+          E = k[0],
+          I = k[1],
+          C = o.a.useState(t || !1),
+          S = l()(C, 2),
+          w = S[0],
+          L = S[1],
+          F = Object(p.b)(),
+          T = o.a.useCallback(
             function () {
-              u({ variables: { trustedFriendsId: a, userId: r, slices: [n || ''] } }),
-                S(!0),
-                w.scribe({
-                  element: 'trusted_friends_recommendations',
-                  component: 'add_trusted_friends_button',
-                  action: 'click',
-                })
+              m({
+                variables: { trustedFriendsId: r, userId: s, slices: [n || ''] },
+                onCompleted: function (e) {
+                  var t, n, a
+                  'TrustedFriendsListMemberRemoveSuccess' ===
+                    (null == e || null === (t = e.trusted_friends_list_member_add) || void 0 === t
+                      ? void 0
+                      : t.__typename) &&
+                    F.scribe({
+                      component: 'trusted_friends_'.concat(i),
+                      element: 'add_trusted_friends_button',
+                      action: 'click',
+                      data: {
+                        trusted_friends_control_details: {
+                          list_member_count:
+                            null === (n = e.trusted_friends_list_member_add) ||
+                            void 0 === n ||
+                            null === (a = n.trusted_friends_list) ||
+                            void 0 === a
+                              ? void 0
+                              : a.member_count,
+                        },
+                      },
+                    })
+                },
+              }),
+                L(!0)
             },
-            [w, u, n, a, r],
+            [F, m, n, r, s, i],
           ),
-          F = s.a.useCallback(
+          x = o.a.useCallback(
             function () {
-              _({ variables: { trustedFriendsId: a, userId: r } }),
-                S(!1),
-                w.scribe({
-                  element: 'trusted_friends_recommendations',
-                  component: 'remove_trusted_friends_button',
-                  action: 'click',
-                })
+              E({
+                variables: { trustedFriendsId: r, userId: s, slices: [n || ''], itemID: a || '' },
+                onCompleted: function (e) {
+                  var t, n, a
+                  'TrustedFriendsListMemberRemoveSuccess' ===
+                    (null == e || null === (t = e.trusted_friends_list_member_remove) || void 0 === t
+                      ? void 0
+                      : t.__typename) &&
+                    F.scribe({
+                      component: 'trusted_friends_'.concat(i),
+                      element: 'remove_trusted_friends_button',
+                      action: 'click',
+                      data: {
+                        trusted_friends_control_details: {
+                          list_member_count:
+                            null === (n = e.trusted_friends_list_member_remove) ||
+                            void 0 === n ||
+                            null === (a = n.trusted_friends_list) ||
+                            void 0 === a
+                              ? void 0
+                              : a.member_count,
+                        },
+                      },
+                    })
+                },
+              }),
+                L(!1)
             },
-            [w, _, a, r],
+            [F, E, r, s, n, a, i],
           )
-        return C
-          ? s.a.createElement(
+        return w
+          ? o.a.createElement(
               c.a,
-              { accessibilityLabel: f, disabled: k, onPress: F, size: 'small', type: 'primaryOutlined' },
+              { accessibilityLabel: f, disabled: I, onPress: x, size: 'small', type: 'primaryOutlined' },
               f,
             )
-          : s.a.createElement(
+          : o.a.createElement(
               c.a,
-              { accessibilityLabel: g, disabled: d, onPress: L, size: 'small', type: 'primaryFilled' },
+              { accessibilityLabel: g, disabled: b, onPress: T, size: 'small', type: 'primaryFilled' },
               g,
             )
       }
@@ -9833,6 +10039,14 @@
           WordEnd: /[^!'%&'()*+,\\\-./:;<=>?[\]^{|}~\s]+$/,
         }
     },
+    lR1r: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return a
+      })
+      n('yH/f')
+      var a = Object.freeze({ Recommendations: 'recommendations', Search: 'search' })
+    },
     o52z: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
@@ -9852,8 +10066,8 @@
         r = n.n(a),
         i = n('VrFO'),
         l = n.n(i),
-        o = n('Y9Ll'),
-        s = n.n(o),
+        s = n('Y9Ll'),
+        o = n.n(s),
         c = n('1Pcy'),
         u = n.n(c),
         d = n('5Yy7'),
@@ -9896,10 +10110,10 @@
         R = n('7JQg'),
         M = n('4e/K'),
         O = n('MWbm'),
-        P = n('oQhu'),
-        D = n('zrOZ'),
-        U = n('v6aA'),
-        K = n('FIs5'),
+        K = n('oQhu'),
+        P = n('zrOZ'),
+        D = n('v6aA'),
+        U = n('FIs5'),
         A = n('4zmP'),
         j = n('rHpw'),
         N = n('Lwx/'),
@@ -9910,8 +10124,8 @@
         W = F.a.e3deb125,
         q = F.a.c2fb1e94,
         G = { section: 'search' },
-        X = [B.a.Users],
-        Y = Object(P.a)(function (e, t, n, a, r) {
+        Y = [B.a.Users],
+        X = Object(K.a)(function (e, t, n, a, r) {
           return Object(N.b)({
             getIsMember: function (e) {
               return n.has(e)
@@ -9922,7 +10136,7 @@
             onRemove: r,
           })
         }),
-        Q = Object(P.a)(function (e, t, n, a, r, i) {
+        Q = Object(K.a)(function (e, t, n, a, r, i) {
           return Object(N.a)({
             getIsMember: a,
             shouldAddUserToList: n,
@@ -9938,12 +10152,12 @@
           function n() {
             var e
             l()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), s = 0; s < a; s++) i[s] = arguments[s]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               g()(u()(e), 'state', { addedUsers: new Set(), query: '', showListMemberExceededMessage: !1 }),
               g()(u()(e), '_noItemsRenderer', function () {
-                return v.a.createElement(K.a, { header: V, message: z })
+                return v.a.createElement(U.a, { header: V, message: z })
               }),
               g()(u()(e), '_isListMemberCountValid', function () {
                 var t = e.props.list
@@ -9957,12 +10171,12 @@
                   var n = e.props,
                     a = n.createLocalApiErrorHandler
                   ;(0, n.fetchUserIfNeeded)(t).catch(a())
-                  var i = Object(D.a)(r()(e.state.addedUsers))
+                  var i = Object(P.a)(r()(e.state.addedUsers))
                   i.add(t), e.setState({ addedUsers: i })
                 } else e.setState({ showListMemberExceededMessage: !0 })
               }),
               g()(u()(e), '_onRemove', function (t) {
-                var n = Object(D.a)(r()(e.state.addedUsers))
+                var n = Object(P.a)(r()(e.state.addedUsers))
                 n.delete(t), e.setState({ addedUsers: n })
               }),
               g()(u()(e), '_handleQueryChange', function (t) {
@@ -9972,7 +10186,7 @@
             )
           }
           return (
-            s()(n, [
+            o()(n, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
@@ -10015,11 +10229,11 @@
                       { namespace: G },
                       v.a.createElement(M.default, {
                         alwaysOpen: !0,
-                        filter: X,
+                        filter: Y,
                         isModal: !0,
                         onQueryChange: this._handleQueryChange,
                         placeholder: H,
-                        renderUserDecoration: Y(this._isListMemberCountValid, t, r, this._onAdd, this._onRemove),
+                        renderUserDecoration: X(this._isListMemberCountValid, t, r, this._onAdd, this._onRemove),
                         rounded: !0,
                         shouldAutoFocus: !0,
                         shouldFocusOnClear: !0,
@@ -10050,7 +10264,7 @@
             n
           )
         })(v.a.Component)
-      g()(J, 'contextType', U.a)
+      g()(J, 'contextType', D.a)
       var Z = j.a.create(function (e) {
           return {
             input: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space8 },
@@ -10087,7 +10301,7 @@
         r = n.n(a),
         i = n('yiKp'),
         l = n.n(i),
-        o =
+        s =
           (n('hBpG'),
           n('7x/C'),
           n('vrRf'),
@@ -10102,11 +10316,11 @@
           n('LW0h'),
           n('2G9S'),
           n('oQhu')),
-        s = n('kIAd'),
+        o = n('kIAd'),
         c = n('rHpw')
       function u(e, t) {
         var n,
-          a = s.b.scoper.find(function (a) {
+          a = o.b.scoper.find(function (a) {
             if (-1 !== a.srcInputs.indexOf(t)) return (n = e.match(a.regexp))
           }),
           r = ''
@@ -10115,11 +10329,11 @@
       function d(e, t) {
         var n = t.slice(0, e),
           a = t.slice(e, t.length),
-          r = n.search(s.b.WordEnd),
+          r = n.search(o.b.WordEnd),
           i = r >= 0 ? n.slice(r) : '',
-          l = a.search(s.b.WordBoundary),
-          o = i + a.slice(0, l)
-        return o.trim() ? { start: r, end: e + l, word: o } : { start: -1, end: -1, word: '' }
+          l = a.search(o.b.WordBoundary),
+          s = i + a.slice(0, l)
+        return s.trim() ? { start: r, end: e + l, word: s } : { start: -1, end: -1, word: '' }
       }
       function p() {
         return 'typeaheadFocus-'.concat(Math.random())
@@ -10146,7 +10360,7 @@
           })
         return [].concat(n, r()(i))
       }
-      var f = Object(o.a)(function (e) {
+      var f = Object(s.a)(function (e) {
           return {
             bottom: 0,
             paddingBottom: 'calc(2.5 * '.concat(c.a.theme.spaces.space64, ')'),
@@ -10170,8 +10384,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -10229,8 +10443,8 @@
         R = L.a.gbc2cf50,
         M = L.a.b081cdf6,
         O = L.a.f5978663,
-        P = Object(S.a)({ shouldDisplayPin: !1, withDescription: !0 }),
-        D = E(
+        K = Object(S.a)({ shouldDisplayPin: !1, withDescription: !0 }),
+        P = E(
           (function (e) {
             u()(n, e)
             var t = p()(n)
@@ -10240,7 +10454,7 @@
               for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
-                h()(s()(e), '_renderEmptyTimeline', function () {
+                h()(o()(e), '_renderEmptyTimeline', function () {
                   var t = e.props.user
                   return g.a.createElement(C.a, { header: M({ screenName: t.screen_name }), message: O })
                 }),
@@ -10269,7 +10483,7 @@
                         null,
                         g.a.createElement(I.a, { title: x({ screenName: n.screen_name }) }),
                         g.a.createElement(T.a, {
-                          entryConfiguration: P,
+                          entryConfiguration: K,
                           module: t,
                           renderEmptyState: this._renderEmptyTimeline,
                           title: R,
@@ -10283,15 +10497,15 @@
             )
           })(g.a.Component),
         ),
-        U = n('es0u'),
-        K = (n('KqXw'), n('WNMA'), n('G6rE')),
+        D = n('es0u'),
+        U = (n('KqXw'), n('WNMA'), n('G6rE')),
         A = n('0KEI'),
         j = function (e, t) {
           return t.match.params.screenName || void 0
         },
         N = function (e, t) {
           var n = j(0, t)
-          if (n) return K.e.selectByScreenName(e, n)
+          if (n) return U.e.selectByScreenName(e, n)
         },
         B = Object(_.a)()
           .propsFromState(function () {
@@ -10300,7 +10514,7 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('USER_LISTS'),
-              fetchOneUserByScreenNameIfNeeded: K.e.fetchOneByScreenNameIfNeeded,
+              fetchOneUserByScreenNameIfNeeded: U.e.fetchOneByScreenNameIfNeeded,
             }
           }),
         H = n('/yvb'),
@@ -10320,8 +10534,8 @@
         W = n('ACNv'),
         q = n('7wqI'),
         G = n('dwig'),
-        X = n('GOQE'),
-        Y = n('QB0K'),
+        Y = n('GOQE'),
+        X = n('QB0K'),
         Q = n('FRNI'),
         J = n('Irs7'),
         Z = L.a.d2826908,
@@ -10341,7 +10555,7 @@
               },
               [t, n],
             )
-          return g.a.createElement(Y.a, {
+          return g.a.createElement(X.a, {
             accessibilityLabel: Z,
             href: '/i/lists/create',
             icon: ee,
@@ -10358,12 +10572,12 @@
         le = Object(re.a)(function () {
           return ae.b
         }),
-        oe = function (e, t) {
+        se = function (e, t) {
           return le().selectInitialFetchStatus(e)
         },
-        se = Object(_.a)()
+        oe = Object(_.a)()
           .propsFromState(function () {
-            return { module: le, moduleFetchStatus: oe }
+            return { module: le, moduleFetchStatus: se }
           })
           .propsFromActions(function () {
             return { setCount: ie.g }
@@ -10405,15 +10619,15 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_handleEditPress', function () {
+              h()(o()(e), '_handleEditPress', function () {
                 e.props.analytics.scribe({ section: 'pinned', element: 'edit', action: 'click' })
               }),
-              h()(s()(e), '_renderPinnedEditButton', function () {
+              h()(o()(e), '_renderPinnedEditButton', function () {
                 var t = e.props.user
                 return de(t, e._handleEditPress)
               }),
-              h()(s()(e), '_timelinePreprocessor', Object(S.b)({ renderPinnedEditButton: e._renderPinnedEditButton })),
-              h()(s()(e), '_renderEmptyTimeline', function () {
+              h()(o()(e), '_timelinePreprocessor', Object(S.b)({ renderPinnedEditButton: e._renderPinnedEditButton })),
+              h()(o()(e), '_renderEmptyTimeline', function () {
                 var t = e.props.user,
                   n = e.context.loggedInUserId,
                   a = !!n && e._getIsLoggedInUser(n, t.id_str)
@@ -10425,14 +10639,14 @@
                 })
               }),
               h()(
-                s()(e),
+                o()(e),
                 '_getIsLoggedInUser',
                 Object(re.a)(function (e, t) {
                   return e === t
                 }),
               ),
               h()(
-                s()(e),
+                o()(e),
                 '_getEntryConfiguration',
                 Object(re.a)(function (e) {
                   return Object(S.a)({ withDescription: !e }, { withMessageGaps: !1 })
@@ -10489,7 +10703,7 @@
           )
         })(g.a.Component)
       h()(ke, 'contextType', pe.a)
-      var Ee = se(ke),
+      var Ee = oe(ke),
         Ie = n('fs1G'),
         Ce = n('2G3J'),
         Se = n('5FtR'),
@@ -10501,10 +10715,10 @@
         Re = n('G8HL'),
         Me = n('mw9i'),
         Oe = n('yrzJ'),
-        Pe = n('rHpw'),
-        De = n('zCf4'),
-        Ue = L.a.h63a5c3b,
-        Ke = L.a.d2004da3,
+        Ke = n('rHpw'),
+        Pe = n('zCf4'),
+        De = L.a.h63a5c3b,
+        Ue = L.a.d2004da3,
         Ae = L.a.b0041756,
         je = L.a.i0bcc456,
         Ne = L.a.d8315ca0,
@@ -10521,30 +10735,30 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_renderRightControl', function () {
+              h()(o()(e), '_renderRightControl', function () {
                 var t = e.isLoggedInUserView() ? g.a.createElement(z, null) : null,
                   n = e._renderOverflowMenu()
                 return g.a.createElement(xe.a, { style: ze.rightControl }, Object(Te.a)() ? t : null, n)
               }),
-              h()(s()(e), '_renderOverflowMenu', function () {
+              h()(o()(e), '_renderOverflowMenu', function () {
                 return e._getOverflowMenuItems().length > 0
                   ? g.a.createElement(Ce.a, {
-                      accessibilityLabel: Ue,
+                      accessibilityLabel: De,
                       renderMenu: e._renderActionMenu,
                       style: ze.overflowMenu,
                     })
                   : null
               }),
-              h()(s()(e), '_renderActionMenu', function (t) {
+              h()(o()(e), '_renderActionMenu', function (t) {
                 var n = e._getOverflowMenuItems()
                 return g.a.createElement(W.default, { actionItems: n, onClose: t })
               }),
-              h()(s()(e), '_getOverflowMenuItems', function () {
+              h()(o()(e), '_getOverflowMenuItems', function () {
                 var t = e.props.user,
                   n = []
                 return t && n.push(e._getViewMembershipsAction(t)), n
               }),
-              h()(s()(e), '_getViewMembershipsAction', function (t) {
+              h()(o()(e), '_getViewMembershipsAction', function (t) {
                 return {
                   text: e._getMembershipsLabel(),
                   Icon: ne.a,
@@ -10552,10 +10766,10 @@
                   link: { pathname: '/'.concat(t.screen_name, '/lists/memberships') },
                 }
               }),
-              h()(s()(e), '_getMembershipsLabel', function () {
+              h()(o()(e), '_getMembershipsLabel', function () {
                 return e.isLoggedInUserView() ? Ne : Be
               }),
-              h()(s()(e), '_renderPrimaryContent', function () {
+              h()(o()(e), '_renderPrimaryContent', function () {
                 var t = e.props,
                   n = t.history,
                   a = t.user,
@@ -10565,22 +10779,22 @@
                       : void 0
                 return a
                   ? (null == a ? void 0 : a.protected) && !(null != a && a.following) && !e.isLoggedInUserView()
-                    ? g.a.createElement(C.a, { header: Ke({ screenName: a.screen_name }), message: je })
+                    ? g.a.createElement(C.a, { header: Ue({ screenName: a.screen_name }), message: je })
                     : g.a.createElement(
                         G.a,
                         { component: Me.a, fab: r },
                         g.a.createElement(
-                          De.d,
+                          Pe.d,
                           null,
                           g.a.createElement(
-                            De.b,
+                            Pe.b,
                             { exact: !0, path: '/'.concat(Le.J, '/lists') },
                             e.isLoggedInUserView()
                               ? g.a.createElement(Ee, { user: a })
-                              : g.a.createElement(D, { user: a }),
+                              : g.a.createElement(P, { user: a }),
                           ),
                           g.a.createElement(
-                            De.b,
+                            Pe.b,
                             { exact: !0, path: '/'.concat(Le.J, '/lists/memberships') },
                             g.a.createElement(He, { user: a }),
                           ),
@@ -10588,12 +10802,12 @@
                       )
                   : null
               }),
-              h()(s()(e), '_handleFetchUser', function (t) {
+              h()(o()(e), '_handleFetchUser', function (t) {
                 var n = t || e.props,
                   a = n.createLocalApiErrorHandler,
                   r = n.fetchOneUserByScreenNameIfNeeded,
                   i = n.screenName
-                i && r(i).catch(a(X.a))
+                i && r(i).catch(a(Y.a))
               }),
               e
             )
@@ -10636,7 +10850,7 @@
                           history: t,
                           primaryContent: this._renderPrimaryContent(),
                           rightControl: this.isMembershipsView() ? null : this._renderRightControl(),
-                          sidebarContent: g.a.createElement(U.a, null),
+                          sidebarContent: g.a.createElement(D.a, null),
                           subtitle: g.a.createElement(Oe.a, { screenName: n }),
                           title: i,
                         })
@@ -10649,7 +10863,7 @@
           )
         })(g.a.Component)
       h()(Ve, 'contextType', pe.a)
-      var ze = Pe.a.create(function (e) {
+      var ze = Ke.a.create(function (e) {
           return {
             overflowMenu: { marginLeft: e.spaces.space12 },
             rightControl: { alignItems: 'center', flexDirection: 'row' },
@@ -10668,8 +10882,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = n('VrFO'),
-        s = n.n(o),
+        s = n('VrFO'),
+        o = n.n(s),
         c = n('Y9Ll'),
         u = n.n(c),
         d = n('1Pcy'),
@@ -10695,10 +10909,10 @@
         R = n('aITJ'),
         M = n('MWbm'),
         O = n('n5fo'),
-        P = n('5emT'),
-        D = n('Oib4'),
-        U = n('WtWS'),
-        K = n('ioan'),
+        K = n('5emT'),
+        P = n('Oib4'),
+        D = n('WtWS'),
+        U = n('ioan'),
         A = [
           'Icon',
           'accessibilityLabel',
@@ -10736,7 +10950,7 @@
           var t = g()(n)
           function n(e) {
             var a
-            s()(this, n),
+            o()(this, n),
               (a = t.call(this, e)),
               v()(p()(a), '_blurOnBackspaceKeyUpForKaiOS', !1),
               v()(p()(a), '_isLabelLarge', function () {
@@ -10774,11 +10988,11 @@
                   r,
                   i,
                   l = a.props.type,
-                  o =
+                  s =
                     null === (e = a._textInput) || void 0 === e || null === (t = e.textInputNode) || void 0 === t
                       ? void 0
                       : t.value,
-                  s =
+                  o =
                     null === (n = a._textInput) ||
                     void 0 === n ||
                     null === (r = n.textInputNode) ||
@@ -10787,18 +11001,19 @@
                     void 0 === i
                       ? void 0
                       : i.badInput
-                return 'number' === l && '' === o && !0 === s
+                return 'number' === l && '' === s && !0 === o
               }),
               v()(p()(a), '_getActualCount', function (e) {
                 var t = e.length
                 return a._isInvalidNumber() && (t = 1), t
               }),
-              v()(p()(a), '_handleBlur', function (e) {
-                var t = a.props.onBlur,
-                  n = e.currentTarget.value,
+              v()(p()(a), '_handleBlur', function () {
+                var e,
+                  t = a.props.onBlur,
+                  n = (null === (e = a._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   r = a._calculateLength(n),
                   i = a._getActualCount(n)
-                a.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t(e)
+                a.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t()
               }),
               v()(p()(a), '_handleChange', function (e) {
                 var t = a.props.onChange,
@@ -10806,8 +11021,8 @@
                   r = e.currentTarget.value,
                   i = a._calculateLength(r),
                   l = a._getActualCount(r),
-                  o = a._getAdjustedMaxLength()
-                void 0 !== o && r.length > o && n.length < r.length
+                  s = a._getAdjustedMaxLength()
+                void 0 !== s && r.length > s && n.length < r.length
                   ? (e.currentTarget.value = n)
                   : (a.setState({
                       isFocused: !0,
@@ -10857,9 +11072,9 @@
                   r = e.validLength,
                   i = !!a,
                   l = 'string' == typeof e.value,
-                  o = 'string' == typeof t
+                  s = 'string' == typeof t
                 F()(
-                  !(!o && l && !i),
+                  !(!s && l && !i),
                   'A controlled component, a component with a value prop, must have an onChange handler. The value prop cannot be undefined.',
                 ),
                   F()(!(n && r && r > n), 'Max length should be equal or greater than valid length.'),
@@ -10908,10 +11123,10 @@
                       r = t.validLength,
                       i = t.value,
                       l = e.maxLength,
-                      o = e.onChange,
-                      s = e.validLength,
+                      s = e.onChange,
+                      o = e.validLength,
                       c = e.value
-                    ;(s === r && n === l && !!a === !!o && ('string' == typeof i) === ('string' == typeof c)) ||
+                    ;(o === r && n === l && !!a === !!s && ('string' == typeof i) === ('string' == typeof c)) ||
                       this._checkComponentPropsUsageCorrectness(this.props)
                   },
                 },
@@ -10925,7 +11140,7 @@
                       r = e.helperText,
                       i = e.style,
                       l = this.state.isFocused,
-                      o = this._isFormInvalid()
+                      s = this._isFormInvalid()
                     return _.a.createElement(
                       M.a,
                       { style: [W.root, i] },
@@ -10937,9 +11152,9 @@
                           style: [
                             C.a.border,
                             W.textInputFormStyle,
-                            o && C.a.invalidBorderColor,
-                            l && o && C.a.focusedBorderInvalid,
-                            l && !o && C.a.focusedBorderValid,
+                            s && C.a.invalidBorderColor,
+                            l && s && C.a.focusedBorderInvalid,
+                            l && !s && C.a.focusedBorderValid,
                             !n && C.a.disabled,
                           ],
                         },
@@ -10962,7 +11177,7 @@
                           M.a,
                           { style: W.subtextWrapper },
                           r ? this._renderHelperText() : null,
-                          o && a ? this._renderErrorText() : null,
+                          s && a ? this._renderErrorText() : null,
                         ),
                       ),
                     )
@@ -11021,7 +11236,7 @@
                         E.b,
                         { size: 'headline1', style: z.wrapper },
                         _.a.createElement(
-                          K.a,
+                          U.a,
                           r()({}, i, {
                             editable: n,
                             maxLength: this._getAdjustedMaxLength(),
@@ -11057,7 +11272,7 @@
                             accessibilityLabel: a ? H : B,
                             focusable: !0,
                             hoverLabel: { label: a ? H : B },
-                            icon: a ? _.a.createElement(O.a, null) : _.a.createElement(P.a, null),
+                            icon: a ? _.a.createElement(O.a, null) : _.a.createElement(K.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -11126,8 +11341,8 @@
                   key: '_renderValidationIcon',
                   value: function () {
                     return this._isFormInvalid()
-                      ? _.a.createElement(D.a, { style: [W.validationIcon, C.a.invalidColor] })
-                      : _.a.createElement(U.a, { style: [W.validationIcon, C.a.validColor] })
+                      ? _.a.createElement(P.a, { style: [W.validationIcon, C.a.invalidColor] })
+                      : _.a.createElement(D.a, { style: [W.validationIcon, C.a.validColor] })
                   },
                 },
                 {
@@ -11259,9 +11474,9 @@
         r = n.n(a),
         i = (n('ho0z'), n('z84I'), n('LW0h'), n('7x/C'), n('Xrkv')),
         l = n('aWyx'),
-        o = n('XnpN'),
-        s = n('3XMw'),
-        c = n.n(s),
+        s = n('XnpN'),
+        o = n('3XMw'),
+        c = n.n(o),
         u = c.a.b5b7fb93,
         d = c.a.g755fcde,
         p = c.a.f6b1ff81
@@ -11269,11 +11484,11 @@
         var a = e.type,
           r = e.name,
           i = e.participants,
-          s = void 0 === i ? {} : i
+          o = void 0 === i ? {} : i
         if (a === l.a.GROUP && r) return r
-        if (s.length) {
+        if (o.length) {
           if (a === l.a.GROUP && n) return u
-          var c = Object(o.a)(e, t).map(function (e) {
+          var c = Object(s.a)(e, t).map(function (e) {
             return e.user
           })
           return m(c, t, a)
@@ -11294,9 +11509,9 @@
           case 0:
             return d
           case 1:
-            var o = r()(a, 1),
-              s = o[0]
-            return n === l.a.GROUP ? p({ name: s }) : s
+            var s = r()(a, 1),
+              o = s[0]
+            return n === l.a.GROUP ? p({ name: o }) : o
           default:
             var c = !0
             return Object(i.a)(a, c)
@@ -11307,14 +11522,14 @@
       'use strict'
       n.r(t),
         n.d(t, 'ListInfoScreen', function () {
-          return X
+          return Y
         })
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -11361,10 +11576,10 @@
         R = n('5FtR'),
         M = n('MWbm'),
         O = n('jtO7'),
-        P = n('eb3s'),
-        D = n('/yvb'),
-        U = n('csss'),
-        K = n('t62R'),
+        K = n('eb3s'),
+        P = n('/yvb'),
+        D = n('csss'),
+        U = n('t62R'),
         A = n('rHpw'),
         j = n('v6aA'),
         N = 'LIST_EDIT_SCREEN',
@@ -11375,7 +11590,7 @@
         W = w.a.b18e5cd1,
         q = w.a.cdd73e9c,
         G = { confirmButtonLabel: w.a.d96cf7cd, headline: w.a.def8ff61, text: w.a.j8b9cde8 },
-        X = (function (e) {
+        Y = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -11384,9 +11599,9 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_formRef', g.a.createRef()),
-              h()(s()(e), 'state', { canSave: !1, showConfirmation: !1, showIconCropper: !1 }),
-              h()(s()(e), '_render', function () {
+              h()(o()(e), '_formRef', g.a.createRef()),
+              h()(o()(e), 'state', { canSave: !1, showConfirmation: !1, showIconCropper: !1 }),
+              h()(o()(e), '_render', function () {
                 var t = e.state.showConfirmation,
                   n = e.props,
                   a = n.history,
@@ -11398,7 +11613,7 @@
                   null,
                   g.a.createElement(
                     M.a,
-                    { style: Y.mainSettings },
+                    { style: X.mainSettings },
                     g.a.createElement(T.a, {
                       context: N,
                       history: a,
@@ -11412,7 +11627,7 @@
                   e._renderManageMembers(),
                   g.a.createElement(O.a, { color: 'red500', label: q, onPress: e._handleShowConfirmDelete }),
                   t &&
-                    g.a.createElement(P.a, {
+                    g.a.createElement(K.a, {
                       confirmButtonLabel: G.confirmButtonLabel,
                       confirmButtonType: 'destructiveFilled',
                       headline: G.headline,
@@ -11422,77 +11637,77 @@
                     }),
                 )
               }),
-              h()(s()(e), '_renderSaveButton', function () {
+              h()(o()(e), '_renderSaveButton', function () {
                 var t = e.state.canSave
                 return g.a.createElement(
-                  D.a,
+                  P.a,
                   { disabled: !t, onPress: e._handleOnSave, size: 'small', type: 'primaryFilled' },
                   H,
                 )
               }),
-              h()(s()(e), '_handleChange', function (t) {
+              h()(o()(e), '_handleChange', function (t) {
                 e.setState({ canSave: t })
               }),
-              h()(s()(e), '_handleOnSave', function () {
+              h()(o()(e), '_handleOnSave', function () {
                 e._formRef.current && e._formRef.current.save()
               }),
-              h()(s()(e), '_renderManageMembers', function () {
+              h()(o()(e), '_renderManageMembers', function () {
                 var t = e.props.basePath
                 return g.a.createElement(
                   M.a,
-                  { style: Y.topBorder },
-                  g.a.createElement(U.a, {
+                  { style: X.topBorder },
+                  g.a.createElement(D.a, {
                     label: B,
                     link: { pathname: ''.concat(t, '/members'), state: { previousStep: x.a.Edit } },
                     onPress: e._handleManageMembersPress,
                   }),
                 )
               }),
-              h()(s()(e), '_handleBackClick', function () {
+              h()(o()(e), '_handleBackClick', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.history
                 n.scribeAction('cancel'), a.goBack()
               }),
-              h()(s()(e), '_handleManageMembersPress', function () {
+              h()(o()(e), '_handleManageMembersPress', function () {
                 e.props.analytics.scribe({ element: 'manage', action: 'click' })
               }),
-              h()(s()(e), '_handleAddPeople', function () {
+              h()(o()(e), '_handleAddPeople', function () {
                 var t = e.props,
                   n = t.basePath
                 t.history.push(''.concat(n, '/add_users'))
               }),
-              h()(s()(e), '_handleShowConfirmDelete', function () {
+              h()(o()(e), '_handleShowConfirmDelete', function () {
                 e.setState({ showConfirmation: !0 })
               }),
-              h()(s()(e), '_handleConfirmDelete', function () {
+              h()(o()(e), '_handleConfirmDelete', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.createLocalApiErrorHandler,
                   r = t.deleteList,
                   i = t.history,
                   l = t.listId,
-                  o = t.screenName
+                  s = t.screenName
                 n.scribe({ element: 'delete', action: 'click' }),
                   r(l)
                     .then(function () {
-                      return o && i.replace('/'.concat(o, '/lists/'))
+                      return s && i.replace('/'.concat(s, '/lists/'))
                     })
                     .catch(function (t) {
                       a({ defaultToast: { text: W }, showToast: !0 })(t), e.setState({ showConfirmation: !1 })
                     })
               }),
-              h()(s()(e), '_handleCancelDelete', function () {
+              h()(o()(e), '_handleCancelDelete', function () {
                 e.setState({ showConfirmation: !1 })
               }),
-              h()(s()(e), '_renderNumber', function (e) {
+              h()(o()(e), '_renderNumber', function (e) {
                 return function () {
                   return Object(L.a)(e)
-                    ? g.a.createElement(M.a, { style: Y.countText }, g.a.createElement(K.b, { color: 'gray700' }, e))
+                    ? g.a.createElement(M.a, { style: X.countText }, g.a.createElement(U.b, { color: 'gray700' }, e))
                     : null
                 }
               }),
-              h()(s()(e), '_handleFetchListIfNeeded', function () {
+              h()(o()(e), '_handleFetchListIfNeeded', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler
                 ;(0, t.fetchListIfNeeded)(t.listId).catch(n(E.a))
@@ -11541,8 +11756,8 @@
             n
           )
         })(g.a.Component)
-      h()(X, 'contextType', j.a)
-      var Y = A.a.create(function (e) {
+      h()(Y, 'contextType', j.a)
+      var X = A.a.create(function (e) {
           return {
             countText: { alignItems: 'flex-start' },
             mainSettings: { backgroundColor: e.colors.cellBackground },
@@ -11553,7 +11768,7 @@
             },
           }
         }),
-        Q = k(X)
+        Q = k(Y)
       t.default = Q
     },
     piX5: function (e, t, n) {
@@ -11586,8 +11801,8 @@
         r,
         i,
         l,
-        o,
         s,
+        o,
         c,
         u,
         d,
@@ -11610,21 +11825,29 @@
         F,
         T,
         x,
-        R = {
+        R,
+        M,
+        O,
+        K,
+        P,
+        D,
+        U = {
           fragment: {
-            argumentDefinitions: (a = [
-              { defaultValue: null, kind: 'LocalArgument', name: 'trustedFriendsId' },
-              { defaultValue: null, kind: 'LocalArgument', name: 'userId' },
-            ]),
+            argumentDefinitions: [
+              (a = { defaultValue: null, kind: 'LocalArgument', name: 'itemID' }),
+              (r = { defaultValue: null, kind: 'LocalArgument', name: 'slices' }),
+              (i = { defaultValue: null, kind: 'LocalArgument', name: 'trustedFriendsId' }),
+              (l = { defaultValue: null, kind: 'LocalArgument', name: 'userId' }),
+            ],
             kind: 'Fragment',
             metadata: null,
             name: 'TrustedFriendsAddRemoveButtonRemoveMutation',
             selections: [
               {
                 alias: null,
-                args: (r = [
+                args: (o = [
                   { kind: 'Literal', name: 's', value: 46 },
-                  { kind: 'Variable', name: 'trusted_friends_list_id', variableName: 'trustedFriendsId' },
+                  (s = { kind: 'Variable', name: 'trusted_friends_list_id', variableName: 'trustedFriendsId' }),
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: null,
@@ -11632,10 +11855,28 @@
                 name: 'trusted_friends_list_member_remove',
                 plural: !1,
                 selections: [
-                  (i = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (c = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'TrustedFriendsList',
+                        kind: 'LinkedField',
+                        name: 'trusted_friends_list',
+                        plural: !1,
+                        selections: [
+                          (u = {
+                            alias: null,
+                            args: null,
+                            kind: 'ScalarField',
+                            name: 'member_count',
+                            storageKey: null,
+                          }),
+                        ],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -11652,12 +11893,26 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              i,
+                              c,
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  (d = {
+                                    alias: null,
+                                    args: [s],
+                                    kind: 'ScalarField',
+                                    name: 'is_trusted_friends_list_member',
+                                    storageKey: null,
+                                  }),
+                                ],
+                                type: 'User',
+                                abstractKey: null,
+                              },
                               { args: null, kind: 'FragmentSpread', name: 'UserCellRelay_user' },
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  (l = {
+                                  (p = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
@@ -11672,7 +11927,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      (o = {
+                                      (m = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -11687,21 +11942,21 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          (s = {
+                                          (h = {
                                             alias: 'fromIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'from_index',
                                             storageKey: null,
                                           }),
-                                          (c = {
+                                          (f = {
                                             alias: 'toIndex',
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'to_index',
                                             storageKey: null,
                                           }),
-                                          (u = {
+                                          (g = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -11716,17 +11971,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              (d = {
+                                              (y = {
                                                 alias: 'type',
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: '__typename',
                                                 storageKey: null,
                                               }),
-                                              (h = {
+                                              (_ = {
                                                 kind: 'InlineFragment',
-                                                selections: (m = [
-                                                  (p = {
+                                                selections: (b = [
+                                                  (v = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -11737,17 +11992,17 @@
                                                 type: 'TimelineRichTextCashtag',
                                                 abstractKey: null,
                                               }),
-                                              (y = {
+                                              (I = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (f = {
+                                                  (k = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'id',
                                                     storageKey: null,
                                                   }),
-                                                  (g = {
+                                                  (E = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -11758,16 +12013,16 @@
                                                 type: 'TimelineRichTextList',
                                                 abstractKey: null,
                                               }),
-                                              (v = {
+                                              (C = {
                                                 kind: 'InlineFragment',
-                                                selections: m,
+                                                selections: b,
                                                 type: 'TimelineRichTextHashtag',
                                                 abstractKey: null,
                                               }),
-                                              (b = {
+                                              (S = {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  g,
+                                                  E,
                                                   {
                                                     alias: 'urlType',
                                                     args: null,
@@ -11839,7 +12094,7 @@
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (S = {
+                                                  (R = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -11855,11 +12110,11 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          i,
+                                                          c,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (k = {
+                                                              (L = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -11867,7 +12122,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (_ = {
+                                                                  (w = {
                                                                     alias: null,
                                                                     args: null,
                                                                     kind: 'ScalarField',
@@ -11877,7 +12132,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                               }),
-                                                              (E = {
+                                                              (F = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -11888,17 +12143,17 @@
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          (C = {
+                                                          (x = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (I = {
+                                                              (T = {
                                                                 alias: 'reason',
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'unavailable_reason',
                                                                 storageKey: null,
                                                               }),
-                                                              l,
+                                                              p,
                                                             ],
                                                             type: 'UserUnavailable',
                                                             abstractKey: null,
@@ -11915,7 +12170,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [_, S],
+                                                selections: [w, R],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -11925,18 +12180,18 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      (w = {
+                                      (M = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'rtl',
                                         storageKey: null,
                                       }),
-                                      p,
+                                      v,
                                     ],
                                     storageKey: null,
                                   },
-                                  I,
+                                  T,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
@@ -11947,15 +12202,17 @@
                         ],
                         storageKey: null,
                       },
-                      (L = {
+                      {
                         kind: 'ClientExtension',
-                        selections: [{ alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null }],
-                      }),
+                        selections: [
+                          (O = { alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null }),
+                        ],
+                      },
                     ],
                     type: 'TrustedFriendsListMemberRemoveSuccess',
                     abstractKey: null,
                   },
-                  (F = {
+                  (K = {
                     kind: 'InlineFragment',
                     selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'reason', storageKey: null }],
                     type: 'TrustedFriendsListMemberRemoveInvalid',
@@ -11970,22 +12227,32 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: a,
+            argumentDefinitions: [i, l, r, a],
             kind: 'Operation',
             name: 'TrustedFriendsAddRemoveButtonRemoveMutation',
             selections: [
               {
                 alias: null,
-                args: r,
+                args: o,
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'trusted_friends_list_member_remove',
                 plural: !1,
                 selections: [
-                  i,
+                  c,
                   {
                     kind: 'InlineFragment',
                     selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'TrustedFriendsList',
+                        kind: 'LinkedField',
+                        name: 'trusted_friends_list',
+                        plural: !1,
+                        selections: [u, k],
+                        storageKey: null,
+                      },
                       {
                         alias: null,
                         args: null,
@@ -12002,10 +12269,11 @@
                             name: 'result',
                             plural: !1,
                             selections: [
-                              i,
+                              c,
                               {
                                 kind: 'InlineFragment',
                                 selections: [
+                                  d,
                                   {
                                     alias: null,
                                     args: null,
@@ -12043,7 +12311,7 @@
                                         name: 'protected',
                                         storageKey: null,
                                       },
-                                      _,
+                                      w,
                                       {
                                         alias: null,
                                         args: null,
@@ -12054,7 +12322,7 @@
                                     ],
                                     storageKey: null,
                                   },
-                                  (T = {
+                                  (P = {
                                     alias: null,
                                     args: null,
                                     filters: null,
@@ -12063,7 +12331,7 @@
                                     kind: 'LinkedHandle',
                                     name: 'legacy',
                                   }),
-                                  f,
+                                  k,
                                 ],
                                 type: 'User',
                                 abstractKey: null,
@@ -12071,7 +12339,7 @@
                               {
                                 kind: 'InlineFragment',
                                 selections: [
-                                  l,
+                                  p,
                                   {
                                     alias: null,
                                     args: null,
@@ -12080,7 +12348,7 @@
                                     name: 'unavailable_message',
                                     plural: !1,
                                     selections: [
-                                      o,
+                                      m,
                                       {
                                         alias: null,
                                         args: null,
@@ -12089,9 +12357,9 @@
                                         name: 'entities',
                                         plural: !0,
                                         selections: [
-                                          s,
-                                          c,
-                                          u,
+                                          h,
+                                          f,
+                                          g,
                                           {
                                             alias: null,
                                             args: null,
@@ -12100,17 +12368,17 @@
                                             name: 'ref',
                                             plural: !1,
                                             selections: [
-                                              i,
+                                              c,
                                               { kind: 'TypeDiscriminator', abstractKey: '__isTimelineReferenceObject' },
-                                              d,
-                                              h,
                                               y,
-                                              v,
-                                              b,
+                                              _,
+                                              I,
+                                              C,
+                                              S,
                                               {
                                                 kind: 'InlineFragment',
                                                 selections: [
-                                                  (x = {
+                                                  (D = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: 'UserResults',
@@ -12126,14 +12394,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          i,
+                                                          c,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [k, T, E, f],
+                                                            selections: [L, P, F, k],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
-                                                          C,
+                                                          x,
                                                         ],
                                                         storageKey: null,
                                                       },
@@ -12146,7 +12414,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: [_, x],
+                                                selections: [w, D],
                                                 type: 'TimelineRichTextMention',
                                                 abstractKey: null,
                                               },
@@ -12156,12 +12424,12 @@
                                         ],
                                         storageKey: null,
                                       },
-                                      w,
-                                      p,
+                                      M,
+                                      v,
                                     ],
                                     storageKey: null,
                                   },
-                                  I,
+                                  T,
                                 ],
                                 type: 'UserUnavailable',
                                 abstractKey: null,
@@ -12172,26 +12440,44 @@
                         ],
                         storageKey: null,
                       },
-                      L,
+                      {
+                        kind: 'ClientExtension',
+                        selections: [
+                          O,
+                          {
+                            alias: null,
+                            args: null,
+                            filters: null,
+                            handle: 'deleteSliceItem',
+                            key: '',
+                            kind: 'ScalarHandle',
+                            name: '__id',
+                            handleArgs: [
+                              { kind: 'Variable', name: 'itemID', variableName: 'itemID' },
+                              { kind: 'Variable', name: 'slices', variableName: 'slices' },
+                            ],
+                          },
+                        ],
+                      },
                     ],
                     type: 'TrustedFriendsListMemberRemoveSuccess',
                     abstractKey: null,
                   },
-                  F,
+                  K,
                 ],
                 storageKey: null,
               },
             ],
           },
           params: {
-            id: 'puNdz9hzXH_FkeiTcdrgBw',
+            id: 'Bmd6-7S30JyhONuz1zQulw',
             metadata: {},
             name: 'TrustedFriendsAddRemoveButtonRemoveMutation',
             operationKind: 'mutation',
             text: null,
           },
         }
-      ;(R.hash = 'aaf39ee824ccffbcfdaa63f79af385e8'), (t.default = R)
+      ;(U.hash = '1367c7515265e8ec38094d731af0d722'), (t.default = U)
     },
     rFBM: function (e, t, n) {
       'use strict'
@@ -12199,8 +12485,8 @@
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -12224,20 +12510,20 @@
             for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_dragEnterCount', 0),
-              h()(s()(e), 'state', { active: !1 }),
-              h()(s()(e), '_handleDragDrop', function (t) {
+              h()(o()(e), '_dragEnterCount', 0),
+              h()(o()(e), 'state', { active: !1 }),
+              h()(o()(e), '_handleDragDrop', function (t) {
                 var n = e.props.onFilesAdded
                 t.preventDefault(), n(Array.from(t && t.dataTransfer.files)), e._updateDragCount(0)
               }),
-              h()(s()(e), '_handleDragEnter', function (t) {
+              h()(o()(e), '_handleDragEnter', function (t) {
                 var n = e.props.onDragEnter
                 t.preventDefault(), n && n(), e._updateDragCount(e._dragEnterCount + 1)
               }),
-              h()(s()(e), '_handleDragLeave', function (t) {
+              h()(o()(e), '_handleDragLeave', function (t) {
                 t.preventDefault(), e._updateDragCount(e._dragEnterCount - 1)
               }),
-              h()(s()(e), '_handleDragOver', function (e) {
+              h()(o()(e), '_handleDragOver', function (e) {
                 e.preventDefault()
               }),
               e
@@ -12294,14 +12580,14 @@
     tAeL: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return K
+        return U
       })
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
         l = n.n(i),
-        o = n('1Pcy'),
-        s = n.n(o),
+        s = n('1Pcy'),
+        o = n.n(s),
         c = n('5Yy7'),
         u = n.n(c),
         d = n('2VqO'),
@@ -12354,10 +12640,10 @@
         R = n('ZcYN'),
         M = n('MWbm'),
         O = n('oQhu'),
-        P = n('w6IS'),
-        D = n('MXDK'),
-        U = { viewType: 'typeahead_dropdown' },
-        K = (function (e) {
+        K = n('w6IS'),
+        P = n('MXDK'),
+        D = { viewType: 'typeahead_dropdown' },
+        U = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n(e, a) {
@@ -12365,43 +12651,43 @@
             return (
               r()(this, n),
               (i = t.call(this, e)),
-              h()(s()(i), '_setFocusedItemRef', function (e) {
+              h()(o()(i), '_setFocusedItemRef', function (e) {
                 i._shouldScrollToFocusedItem &&
                   e &&
-                  (Object(D.c)(i._getScrollParent(), e), (i._shouldScrollToFocusedItem = !1))
+                  (Object(P.c)(i._getScrollParent(), e), (i._shouldScrollToFocusedItem = !1))
               }),
-              h()(s()(i), '_resetScroll', function () {
+              h()(o()(i), '_resetScroll', function () {
                 var e = i._getScrollParent()
                 e && (e.scrollTop = 0)
               }),
               h()(
-                s()(i),
+                o()(i),
                 '_getFlattenedItems',
                 Object(O.a)(function (e) {
-                  return Object(P.a)(e)
+                  return Object(K.a)(e)
                 }),
               ),
-              h()(s()(i), '_handleItemClick', function (e, t) {
+              h()(o()(i), '_handleItemClick', function (e, t) {
                 var n = i.props,
                   a = n.items,
                   r = n.onItemClick,
                   l = i._getFlattenedItems(a).indexOf(e)
                 e && !t && !i._shouldBlockInteractivity && r(e, l), i._resetFocus()
               }),
-              h()(s()(i), '_getResultCount', function () {
+              h()(o()(i), '_getResultCount', function () {
                 var e = i.props.items
                 return i._getFlattenedItems(e).length
               }),
-              h()(s()(i), '_setFocusIndex', function (e, t) {
+              h()(o()(i), '_setFocusIndex', function (e, t) {
                 var n = i.props,
                   a = n.items,
                   r = n.onItemFocusChanged
                 ;(i._shouldScrollToFocusedItem = t), i.setState({ focusIndex: e }), r && r(i._getFlattenedItems(a)[e])
               }),
-              h()(s()(i), '_resetFocus', function () {
+              h()(o()(i), '_resetFocus', function () {
                 i._setFocusIndex(i.props.withItemAlwaysSelected ? 0 : -1)
               }),
-              h()(s()(i), 'focusNext', function () {
+              h()(o()(i), 'focusNext', function () {
                 var e = i.state.focusIndex,
                   t = i._getResultCount()
                 if (0 !== t) {
@@ -12409,7 +12695,7 @@
                   i._setFocusIndex(n, !0)
                 }
               }),
-              h()(s()(i), 'focusPrevious', function () {
+              h()(o()(i), 'focusPrevious', function () {
                 var e = i.state.focusIndex,
                   t = i._getResultCount()
                 if (0 !== t) {
@@ -12417,12 +12703,12 @@
                   i._setFocusIndex(n, !0)
                 }
               }),
-              h()(s()(i), 'hasFocusedItem', function () {
+              h()(o()(i), 'hasFocusedItem', function () {
                 var e = i.state.focusIndex,
                   t = i._getResultCount()
                 return e >= 0 && t > e
               }),
-              h()(s()(i), 'selectFocusedItem', function () {
+              h()(o()(i), 'selectFocusedItem', function () {
                 var e = i.state.focusIndex,
                   t = i.props,
                   n = t.getItemIsDisabled,
@@ -12475,16 +12761,16 @@
                     r = t.items,
                     i = t.renderCallout,
                     l = t.renderHeader,
-                    o = t.renderNoResultsState,
-                    s = t.selectedItems,
+                    s = t.renderNoResultsState,
+                    o = t.selectedItems,
                     c = t.style,
                     u = a || r.length,
                     d = 0,
-                    p = !!s
+                    p = !!o
                   return u
                     ? g.a.createElement(
                         y.a,
-                        { behavioralEventContext: U },
+                        { behavioralEventContext: D },
                         g.a.createElement(
                           M.a,
                           { accessibilityMultiSelectable: p, accessibilityRole: 'listbox', nativeID: n, style: c },
@@ -12503,8 +12789,8 @@
                             : null,
                         ),
                       )
-                    : o
-                    ? o()
+                    : s
+                    ? s()
                     : null
                 },
               },
@@ -12532,8 +12818,8 @@
                     r = n.getItemDisabledMessage,
                     i = n.getItemIsDisabled,
                     l = n.getUserDisplayNameLabel,
-                    o = n.query,
-                    s = n.renderUserDecoration,
+                    s = n.query,
+                    o = n.renderUserDecoration,
                     c = n.selectedItems,
                     u = n.source,
                     d = this.state.focusIndex,
@@ -12554,8 +12840,8 @@
                     key: 'typeaheadItem-'.concat(t, '-').concat(e.id || ''),
                     onClick: this._handleItemClick,
                     onRef: h ? this._setFocusedItemRef : void 0,
-                    query: o,
-                    renderUserDecoration: s,
+                    query: s,
+                    renderUserDecoration: o,
                     source: u,
                   })
                 },
@@ -12564,7 +12850,7 @@
                 key: '_getScrollParent',
                 value: function () {
                   if (!this._scrollParent) {
-                    var e = Object(D.a)(_.a.findDOMNode(this))
+                    var e = Object(P.a)(_.a.findDOMNode(this))
                     this._scrollParent = e === window ? null : e
                   }
                   return this._scrollParent
@@ -12581,18 +12867,18 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('Lsrn'),
-        s = n('k/Ka'),
+        s = n('Lsrn'),
+        o = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+          return Object(o.a)(
             'svg',
             r()(
               r()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
+                style: [s.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -12617,13 +12903,13 @@
         r = n.n(a),
         i = n('ERkP'),
         l = n.n(i),
-        o = n('/yvb'),
-        s = n('rxPX'),
+        s = n('/yvb'),
+        o = n('rxPX'),
         c = function (e, t) {
           var n
           return null === (n = t.location.state) || void 0 === n ? void 0 : n.suggestedUser
         },
-        u = Object(s.a)()
+        u = Object(o.a)()
           .propsFromState(function () {
             return { suggestedUser: c }
           })
@@ -12639,7 +12925,7 @@
           n = l.a.useState(!1),
           a = r()(n, 2),
           i = a[0],
-          s = a[1],
+          o = a[1],
           c = l.a.useState(!1),
           u = r()(c, 2),
           p = u[0],
@@ -12658,7 +12944,7 @@
               v.scribeAction('cancel'), b.goBack()
             },
             rightControl: l.a.createElement(
-              o.a,
+              s.a,
               {
                 accessibilityLabel: f,
                 disabled: y,
@@ -12677,7 +12963,7 @@
             history: b,
             location: _,
             onChange: function (e) {
-              s(e)
+              o(e)
             },
             onError: function () {
               m(!1)
@@ -12729,8 +13015,8 @@
         r = n.n(a),
         i = n('m3Bd'),
         l = n.n(i),
-        o = (n('ERkP'), n('k/Ka')),
-        s = n('rHpw').a.create({
+        s = (n('ERkP'), n('k/Ka')),
+        o = n('rHpw').a.create({
           initial: {
             alignItems: 'stretch',
             borderWidth: 0,
@@ -12750,7 +13036,7 @@
       t.a = function (e) {
         var t = e.style,
           n = l()(e, c)
-        return Object(o.a)('form', r()(r()({}, n), {}, { action: '#', style: [s.initial, t] }))
+        return Object(s.a)('form', r()(r()({}, n), {}, { action: '#', style: [o.initial, t] }))
       }
     },
   },

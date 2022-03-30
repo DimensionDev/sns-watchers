@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [180],
+  [179],
   {
     WXWl: function (e, t, i) {
       'use strict'
@@ -59,21 +59,21 @@
         m = i('2VqO'),
         h = i.n(m),
         p = i('KEM+'),
-        d = i.n(p),
-        _ = (i('uFXj'), i('ERkP')),
-        w = i.n(_),
+        w = i.n(p),
+        _ = (i('2G9S'), i('uFXj'), i('ERkP')),
+        d = i.n(_),
         y = (i('z84I'), i('lnti')),
-        f = i('hqKg'),
-        v = i('o52z'),
-        b = i('G6rE'),
-        S = i('rxPX'),
-        g = function (e, t) {
-          return (t.alert && t.alert.userIds) || Object(v.a)()
+        b = i('hqKg'),
+        f = i('o52z'),
+        v = i('G6rE'),
+        g = i('rxPX'),
+        T = function (e, t) {
+          return (t.alert && t.alert.userIds) || Object(f.a)()
         },
-        T = Object(S.a)()
+        S = Object(g.a)()
           .propsFromState(function () {
             return {
-              userImageUrls: Object(f.createSelector)(b.e.selectAll, g, function (e, t) {
+              userImageUrls: Object(b.createSelector)(v.e.selectAll, T, function (e, t) {
                 return t
                   ? Object(y.a)(
                       t.map(function (t) {
@@ -90,10 +90,10 @@
         D = i.n(k),
         A = i('WXWl'),
         I = i('IbOt'),
-        O = i('fs1G'),
-        x = i('rcen'),
-        L = i('MWbm'),
-        C = i('I4+6'),
+        x = i('fs1G'),
+        L = i('rcen'),
+        C = i('MWbm'),
+        O = i('I4+6'),
         E = i('rHpw'),
         M = i('cm6r'),
         j = i('MAI/'),
@@ -106,72 +106,66 @@
         W = (function (e) {
           u()(i, e)
           var t = h()(i)
-          function i(e, n) {
-            var s
+          function i() {
+            var e
+            a()(this, i)
+            for (var n = arguments.length, s = new Array(n), o = 0; o < n; o++) s[o] = arguments[o]
             return (
-              a()(this, i),
-              (s = t.call(this, e, n)),
-              d()(l()(s), 'state', { show: !1 }),
-              d()(l()(s), '_getLastShownTime', function () {
-                return U[s.props.timelineId]
+              (e = t.call.apply(t, [this].concat(s))),
+              w()(l()(e), 'state', { show: !1 }),
+              w()(l()(e), '_getLastShownTime', function () {
+                return U[e.props.timelineId]
               }),
-              d()(l()(s), '_hide', function () {
-                var e = s.props,
-                  t = e.alert,
-                  i = e.removeAlert,
-                  n = e.timelineId
-                s._mounted && (s._updateLastShownTime(n), s.setState({ show: !1 })),
-                  t &&
+              w()(l()(e), '_hide', function () {
+                var t = e.props,
+                  i = t.alert,
+                  n = t.removeAlert,
+                  a = t.timelineId
+                e._mounted && (e._updateLastShownTime(a), e.setState({ show: !1 })),
+                  i &&
                     setTimeout(function () {
-                      return i()
+                      return n()
                     }, 500)
               }),
-              d()(l()(s), '_attemptShow', function () {
-                var e = s.props,
-                  t = e.alert,
-                  i = e.isAtNewest,
-                  n = e.removeAlert,
-                  a = e.timelineId,
-                  o = e.unreadCount
+              w()(l()(e), '_attemptShow', function () {
+                var t = e.context.featureSwitches,
+                  i = e.props,
+                  n = i.alert,
+                  a = i.isAtNewest,
+                  s = i.removeAlert,
+                  o = i.timelineId,
+                  r = i.unreadCount
                 if (
-                  (s._attemptShowTimeout && (clearTimeout(s._attemptShowTimeout), (s._attemptShowTimeout = null)),
-                  s._mounted && (t || o > 0))
+                  (e._attemptShowTimeout && (clearTimeout(e._attemptShowTimeout), (e._attemptShowTimeout = null)),
+                  e._mounted && (n || r > 0))
                 ) {
-                  var r = s._getDelayRemaining()
-                  if (r <= 0) {
-                    if (t && i()) return void n()
-                    s.setState({ show: !0 }),
-                      (N[a] = Date.now()),
-                      s._scribeAction('show'),
-                      s._isSticky &&
-                        s._stickyDurationSeconds > 0 &&
-                        (s._autoDismissTimeout = setTimeout(s._hide, 1e3 * s._stickyDurationSeconds))
-                  } else s._attemptShowTimeout = setTimeout(s._attemptShow, r)
+                  var l = e._getDelayRemaining()
+                  if (l <= 0) {
+                    if (n && a()) return void s()
+                    e.setState({ show: !0 }), (N[o] = Date.now()), e._scribeAction('show')
+                    var c = t.isTrue('responsive_web_home_sticky_new_tweets_pill_enabled'),
+                      u = t.getNumberValue('responsive_web_home_sticky_new_tweets_pill_duration_seconds', -1)
+                    c && u > 0 && (e._autoDismissTimeout = setTimeout(e._hide, 1e3 * u))
+                  } else e._attemptShowTimeout = setTimeout(e._attemptShow, l)
                 }
               }),
-              d()(l()(s), '_handleScrollDown', function () {
-                var e = s.props,
-                  t = e.alert,
-                  i = e.remainVisibleInterval,
-                  n = e.timelineId,
-                  a = i
-                t && t.displayDurationMs && t.displayDurationMs > -1 && (a = t.displayDurationMs),
-                  s.state.show && Date.now() >= N[n] + a && (s._scribeAction('dismiss'), s._hide())
+              w()(l()(e), '_handleScrollDown', function () {
+                var t = e.context.featureSwitches,
+                  i = e.props,
+                  n = i.alert,
+                  a = i.remainVisibleInterval,
+                  s = i.timelineId
+                if (!(n && e.state.show && t.isTrue('responsive_web_home_sticky_new_tweets_pill_enabled'))) {
+                  var o = a
+                  n && n.displayDurationMs && n.displayDurationMs > -1 && (o = n.displayDurationMs),
+                    e.state.show && Date.now() >= N[s] + o && (e._scribeAction('dismiss'), e._hide())
+                }
               }),
-              d()(l()(s), '_handleClick', function () {
-                var e = s.props.applyNewTweetsBarInstructions
-                s._scribeAction('click'), window.scrollTo(0, 0), null == e || e(), s._hide()
+              w()(l()(e), '_handleClick', function () {
+                var t = e.props.applyNewTweetsBarInstructions
+                e._scribeAction('click'), window.scrollTo(0, 0), null == t || t(), e._hide()
               }),
-              (s._isSticky = s.context.featureSwitches.isTrue('responsive_web_home_sticky_new_tweets_pill_enabled')),
-              (s._stickyDurationSeconds = s.context.featureSwitches.getNumberValue(
-                'responsive_web_home_sticky_new_tweets_pill_duration_seconds',
-                -1,
-              )),
-              (s._delayOverrideSeconds = s.context.featureSwitches.getNumberValue(
-                'responsive_web_home_sticky_new_tweets_pill_delay_seconds',
-                1,
-              )),
-              s
+              e
             )
           }
           return (
@@ -182,10 +176,7 @@
                   ;(this._mounted = !0),
                     this._getLastShownTime() || this._updateLastShownTime(this.props.timelineId),
                     this._attemptShow(),
-                    (this._cancelMomentum = Object(I.a)({
-                      onUp: O.a,
-                      onDown: this._isSticky ? O.a : this._handleScrollDown,
-                    }))
+                    (this._cancelMomentum = Object(I.a)({ onUp: x.a, onDown: this._handleScrollDown }))
                 },
               },
               {
@@ -231,16 +222,16 @@
                     a = t.userImageUrls,
                     s = this.state.show
                   e = i
-                    ? i.richText && w.a.createElement(x.a, { entities: i.richText.entities, text: i.richText.text })
+                    ? i.richText && d.a.createElement(L.a, { entities: i.richText.entities, text: i.richText.text })
                     : n
-                  var o = C.a.generate({
+                  var o = O.a.generate({
                     backgroundColor: E.a.theme.colors.primary,
                     color: E.a.theme.colors.whiteOnColor,
                   })
-                  return w.a.createElement(
-                    L.a,
+                  return d.a.createElement(
+                    C.a,
                     { accessibilityRole: 'status' },
-                    w.a.createElement(
+                    d.a.createElement(
                       M.a,
                       {
                         accessibilityHidden: !s,
@@ -250,22 +241,22 @@
                         onClick: this._handleClick,
                         style: [F.pill, s && F.show],
                       },
-                      w.a.createElement(
-                        L.a,
+                      d.a.createElement(
+                        C.a,
                         { style: F.innerPill },
-                        w.a.createElement(A.a, { style: F.icon }),
+                        d.a.createElement(A.a, { style: F.icon }),
                         a && a.length > 0
-                          ? w.a.createElement(
-                              L.a,
+                          ? d.a.createElement(
+                              C.a,
                               { style: F.facepile },
-                              w.a.createElement(j.a, {
+                              d.a.createElement(j.a, {
                                 borderColor: 'primary',
                                 userAvatarSize: 'large',
                                 userAvatarUrls: a,
                               }),
                             )
                           : null,
-                        w.a.createElement(P.b, { color: 'whiteOnColor', numberOfLines: 1, style: F.pillText }, e),
+                        d.a.createElement(P.b, { color: 'whiteOnColor', numberOfLines: 1, style: F.pillText }, e),
                       ),
                     ),
                   )
@@ -274,14 +265,16 @@
               {
                 key: '_getDelayRemaining',
                 value: function () {
-                  var e = this.props,
-                    t = e.alert,
-                    i = e.triggerDelay,
-                    n =
-                      this._isSticky && this._delayOverrideSeconds > 0
-                        ? 1e3 * this._delayOverrideSeconds
-                        : (t && t.triggerDelayMs) || i
-                  return this._getLastShownTime() + n - Date.now()
+                  var e = this.context.featureSwitches,
+                    t = this.props,
+                    i = t.alert,
+                    n = t.triggerDelay,
+                    a = e.getNumberValue('responsive_web_home_sticky_new_tweets_pill_delay_seconds', 1),
+                    s =
+                      e.isTrue('responsive_web_home_sticky_new_tweets_pill_enabled') && a > 0
+                        ? 1e3 * a
+                        : (i && i.triggerDelayMs) || n
+                  return this._getLastShownTime() + s - Date.now()
                 },
               },
               {
@@ -299,9 +292,9 @@
             ]),
             i
           )
-        })(w.a.PureComponent)
-      d()(W, 'contextType', R.a),
-        d()(W, 'defaultProps', {
+        })(d.a.PureComponent)
+      w()(W, 'contextType', R.a),
+        w()(W, 'defaultProps', {
           isAtNewest: function () {
             return !0
           },
@@ -340,7 +333,7 @@
             },
           }
         }),
-        H = T(W)
+        H = S(W)
       t.default = H
     },
   },

@@ -2815,7 +2815,7 @@
         D = n('88ay'),
         U = n('Ka9G'),
         H = E()(
-          E()({}, Object(M.createConfiguration)({ tweetDismissable: !0 })),
+          E()({}, Object(M.a)({ tweetDismissable: !0 })),
           {},
           f()({}, N.b.User, Object(U.a)({ decoration: D.c })),
         ),

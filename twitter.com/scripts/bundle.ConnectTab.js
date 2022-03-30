@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [47],
+  [46],
   {
     '/fAK': function (e, t, n) {
       'use strict'
@@ -101,7 +101,7 @@
           backLocation: '/',
           history: n,
           primaryContent: o.a.createElement(E.a, {
-            entryConfiguration: b.default,
+            entryConfiguration: b.b,
             module: _,
             renderEmptyState: O,
             renderUnavailable: T,

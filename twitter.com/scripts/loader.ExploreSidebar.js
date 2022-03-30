@@ -1,11 +1,37 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [174],
+  [173],
   {
+    '+o05': function (e, t, n) {
+      'use strict'
+      var r = n('KEM+'),
+        i = n.n(r),
+        a = n('ezF+'),
+        o = (n('yH/f'), Object.freeze({ Cell: 'Cell', Hero: 'Hero', Tile: 'Tile' })),
+        c =
+          (n('lTEL'),
+          n('7x/C'),
+          n('JtPf'),
+          n('87if'),
+          n('kYxP'),
+          {
+            loader: function () {
+              return n.e(236).then(n.bind(null, 'QPD4'))
+            },
+            loaderKey: 'defaultScoreEventSummaryLoader',
+            strategy: n('XBtf').a.Critical,
+          })
+      t.a = a.c({
+        selectDisplayType: function (e) {
+          return e.content.displayType
+        },
+        handlers: i()({}, o.Cell, c),
+      })
+    },
     'A+RP': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'UPDATE_INTERVAL', function () {
-          return K
+          return X
         }),
         n.d(t, 'ExploreSidebar', function () {
           return J
@@ -17,54 +43,54 @@
         c = n.n(o),
         u = n('1Pcy'),
         d = n.n(u),
-        s = n('5Yy7'),
-        f = n.n(s),
-        l = n('2VqO'),
-        p = n.n(l),
+        l = n('5Yy7'),
+        f = n.n(l),
+        s = n('2VqO'),
+        p = n.n(s),
         b = n('KEM+'),
         v = n.n(b),
         h = (n('2G9S'), n('ERkP')),
-        _ = n.n(h),
-        m = n('FIs5'),
-        g = n('yiKp'),
-        E = n.n(g),
-        w = n('ezF+'),
-        y = n('8UdT'),
-        O = n('iu0J'),
-        T = n('+o05'),
+        y = n.n(h),
+        E = n('FIs5'),
+        m = n('yiKp'),
+        T = n.n(m),
+        _ = n('ezF+'),
+        g = n('8UdT'),
+        w = n('iu0J'),
+        O = n('+o05'),
         S = n('5Y9N'),
-        j = n('XtkE'),
-        I =
+        C = n('XtkE'),
+        P =
           ((r = {}),
-          v()(r, y.b.TimelineCursor, w.e(w.a())),
-          v()(r, y.b.Label, w.e(w.a())),
-          v()(r, y.b.Message, w.e(w.a())),
-          v()(r, y.b.News, w.e(w.a())),
-          v()(r, y.b.Trend, Object(j.a)({ withThirdPartyCards: !1, errorContext: 'EXPLORE_SIDEBAR' })),
-          v()(r, y.b.EventSummary, Object(O.a)({})),
-          v()(r, y.b.ScoreEventSummary, T.a),
+          v()(r, g.b.TimelineCursor, _.e(_.a())),
+          v()(r, g.b.Label, _.e(_.a())),
+          v()(r, g.b.Message, _.e(_.a())),
+          v()(r, g.b.News, _.e(_.a())),
+          v()(r, g.b.Trend, Object(C.a)({ withThirdPartyCards: !1, errorContext: 'EXPLORE_SIDEBAR' })),
+          v()(r, g.b.EventSummary, Object(w.a)({})),
+          v()(r, g.b.ScoreEventSummary, O.a),
           r),
-        x = E()(E()({}, Object(S.a)({ isInSidebar: !0 })), I),
-        L = n('3XMw'),
-        R = n.n(L),
-        C = n('oQhu'),
-        P = n('fTQJ'),
-        U = n('b8qQ'),
-        k = n('2g+p'),
-        A = n('MWbm'),
-        M = n('v6aA'),
-        F = n('BxsD'),
-        W = R.a.b8e930fd,
-        D = R.a.ae05f268,
-        K = 3e5,
-        X = function () {
-          return _.a.createElement(m.a, { message: D })
+        x = T()(T()({}, Object(S.a)({ isInSidebar: !0 })), P),
+        j = n('3XMw'),
+        L = n.n(j),
+        I = n('oQhu'),
+        R = n('fTQJ'),
+        k = n('b8qQ'),
+        F = n('2g+p'),
+        M = n('MWbm'),
+        U = n('v6aA'),
+        A = n('BxsD'),
+        D = L.a.b8e930fd,
+        K = L.a.ae05f268,
+        X = 3e5,
+        z = function () {
+          return y.a.createElement(E.a, { message: K })
         },
-        q = Object(C.a)(function (e, t) {
-          return Object(F.c)({ featureSwitches: t, displayLocation: F.a.WebSidebar, focalTweetId: e })
+        W = Object(I.a)(function (e, t) {
+          return Object(A.c)({ featureSwitches: t, displayLocation: A.a.WebSidebar, focalTweetId: e })
         }),
-        z = Object(C.a)(function (e, t) {
-          return Object(F.c)({ featureSwitches: t, displayLocation: F.a.WebSidebar, profileUserId: e })
+        H = Object(I.a)(function (e, t) {
+          return Object(A.c)({ featureSwitches: t, displayLocation: A.a.WebSidebar, profileUserId: e })
         }),
         J = (function (e) {
           f()(n, e)
@@ -80,10 +106,10 @@
                   n = t.focalTweetId,
                   r = t.profileUserId
                 return n
-                  ? q(n, e.context.featureSwitches)
+                  ? W(n, e.context.featureSwitches)
                   : r
-                  ? z(r, e.context.featureSwitches)
-                  : Object(F.e)(e.context.featureSwitches)
+                  ? H(r, e.context.featureSwitches)
+                  : Object(A.e)(e.context.featureSwitches)
               }),
               v()(d()(e), '_setTimelineRef', function (t) {
                 e._timeline = t
@@ -92,7 +118,7 @@
                 'active' === t && e._fetchUpdates()
               }),
               v()(d()(e), '_fetchUpdates', function () {
-                e._timeline && 'active' === k.a.currentState && e._timeline.fetchTop({})
+                e._timeline && 'active' === F.a.currentState && e._timeline.fetchTop({})
               }),
               e
             )
@@ -102,30 +128,30 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  k.a.addEventListener('change', this._onAppForegrounded)
+                  F.a.addEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  k.a.removeEventListener('change', this._onAppForegrounded)
+                  F.a.removeEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  return _.a.createElement(
-                    A.a,
+                  return y.a.createElement(
+                    M.a,
                     null,
-                    _.a.createElement(P.a, {
+                    y.a.createElement(R.a, {
                       entryConfiguration: x,
                       module: this._getModule(),
-                      pollingIntervalMsOverride: K,
-                      renderUnavailable: X,
-                      scroller: U.a,
+                      pollingIntervalMsOverride: X,
+                      renderUnavailable: z,
+                      scroller: k.a,
                       showLoadingFooter: !1,
                       timelineRef: this._setTimelineRef,
-                      title: W,
+                      title: D,
                       withKeyboardShortcuts: !1,
                     }),
                   )
@@ -134,14 +160,14 @@
             ]),
             n
           )
-        })(_.a.Component)
-      v()(J, 'contextType', M.a)
+        })(y.a.Component)
+      v()(J, 'contextType', U.a)
       t.default = J
     },
     BxsD: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return s
+        return l
       }),
         n.d(t, 'b', function () {
           return f
@@ -156,10 +182,10 @@
           return h
         }),
         n.d(t, 'e', function () {
-          return _
+          return y
         }),
         n.d(t, 'g', function () {
-          return m
+          return E
         })
       var r = n('yiKp'),
         i = n.n(r),
@@ -168,9 +194,9 @@
         c = n('ZNT5'),
         u = n('eR3e'),
         d = Object.freeze({ Trends: 'trends' }),
-        s = Object.freeze({ WebSidebar: 'web_sidebar' }),
+        l = Object.freeze({ WebSidebar: 'web_sidebar' }),
         f = 'explore-',
-        l = 9e5,
+        s = 9e5,
         p = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
             t = e.contentType,
@@ -180,12 +206,12 @@
             o = e.includePageConfiguration,
             u = void 0 !== o && o,
             d = e.initialTabId,
-            s = e.profileUserId,
+            l = e.profileUserId,
             p = t || n || 'main',
             v = a
               ? ''.concat(f).concat(p, '-tweet-').concat(a)
-              : s
-              ? ''.concat(f).concat(p, '-user-').concat(s)
+              : l
+              ? ''.concat(f).concat(p, '-user-').concat(l)
               : ''.concat(f).concat(p),
             h = r.isTrue('responsive_web_behavioral_events_enabled')
           return Object(c.a)({
@@ -204,14 +230,14 @@
                   focal_tweet_id: a,
                   include_page_configuration: u,
                   initial_tab_id: d,
-                  profile_user_id: s,
+                  profile_user_id: l,
                   entity_tokens: h,
                 },
               )
             },
             context: 'FETCH_EXPLORE',
             perfKey: ''.concat(f).concat(p),
-            staleIntervalMs: l,
+            staleIntervalMs: s,
           })
         },
         b = function (e) {
@@ -269,10 +295,10 @@
         h = Object(o.a)(function (e) {
           return p({ featureSwitches: e, contentType: d.Trends })
         }),
-        _ = Object(o.a)(function (e) {
-          return p({ featureSwitches: e, displayLocation: s.WebSidebar })
+        y = Object(o.a)(function (e) {
+          return p({ featureSwitches: e, displayLocation: l.WebSidebar })
         }),
-        m = function () {
+        E = function () {
           return function (e, t) {
             return e(
               Object(u.t)(t())
@@ -285,6 +311,24 @@
             )
           }
         }
+    },
+    XtkE: function (e, t, n) {
+      'use strict'
+      var r = n('ezF+'),
+        i = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf'))
+      t.a = function (e) {
+        var t = e.errorContext,
+          a = e.withThirdPartyCards,
+          o = void 0 !== a && a
+        return r.e({
+          loader: function () {
+            return Promise.all([n.e(0), n.e(3), n.e(5), n.e(247)]).then(n.bind(null, '+92Z'))
+          },
+          loaderKey: 'trendDefaultLoader',
+          loaderOptions: { withThirdPartyCards: o, errorContext: t },
+          strategy: i.a.Critical,
+        })
+      }
     },
   },
 ])

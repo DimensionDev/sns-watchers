@@ -1,31 +1,31 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36, 8],
+  [35, 8],
   {
-    '0nhk': function (e, t, n) {
+    '0nhk': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return f
       })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = (n('7xRU'), n('ERkP')),
-        o = n.n(i),
-        c = n('3XMw'),
-        s = n.n(c),
-        l = n('dgjd'),
-        u = n('/yvb'),
-        d = n('rHpw'),
-        p = n('fn9Y'),
-        m = n('I6Uj')
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = (a('7xRU'), a('ERkP')),
+        o = a.n(i),
+        c = a('3XMw'),
+        s = a.n(c),
+        l = a('dgjd'),
+        u = a('/yvb'),
+        d = a('rHpw'),
+        p = a('fn9Y'),
+        m = a('I6Uj')
       function f(e) {
         var t = e.audioSpaceId,
-          n = e.type,
-          a = Object(l.a)(t),
-          r = a.space,
-          i = a.utils,
+          a = e.type,
+          n = Object(l.a)(t),
+          r = n.space,
+          i = n.utils,
           c = i.hashtags().join(' '),
           s = h
-        'icon' === n ? (s = v) : 'icon-borderless' === n && (s = g)
+        'icon' === a ? (s = v) : 'icon-borderless' === a && (s = g)
         var u = i.is.replayable ? void 0 : w.dmText,
           d = Boolean(null == r ? void 0 : r.is_employee_only)
         return o.a.createElement(
@@ -73,49 +73,49 @@
           size: 'medium',
         }
     },
-    '2C8o': function (e, t, n) {
+    '2C8o': function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return g
       }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return b
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return y
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return R
         }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return L
         })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ddV6'),
-        o = n.n(i),
-        c = n('RhWx'),
-        s = n.n(c),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ddV6'),
+        o = a.n(i),
+        c = a('RhWx'),
+        s = a.n(c),
         l =
-          (n('2G9S'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('LW0h'),
-          n('Ee2X'),
-          n('vfdX'),
-          n('lZm3'),
-          n('z84I'),
-          n('i4UL'),
-          n('3voH'),
-          n('KqXw'),
-          n('MvUL'),
-          n('Q/sS')),
-        u = n('ERkP'),
-        d = n.n(u),
-        p = n('Chkh'),
-        m = n('Xda3'),
-        f = n('ssnq'),
+          (a('2G9S'),
+          a('jwue'),
+          a('7x/C'),
+          a('+oxZ'),
+          a('LW0h'),
+          a('Ee2X'),
+          a('vfdX'),
+          a('lZm3'),
+          a('z84I'),
+          a('i4UL'),
+          a('3voH'),
+          a('KqXw'),
+          a('MvUL'),
+          a('Q/sS')),
+        u = a('ERkP'),
+        d = a.n(u),
+        p = a('Chkh'),
+        m = a('Xda3'),
+        f = a('ssnq'),
         h = new f.a({ liveCaptions: [], pastCaptions: [], currentCaptionSequenceId: 0 }),
         v = h
       function g() {
@@ -128,9 +128,9 @@
             function () {
               if (e === l.c.On) {
                 var t = p.a.subscribe(m.a.ChatCaption, w),
-                  n = p.a.subscribe(m.a.ServerAudioTranscription, k)
+                  a = p.a.subscribe(m.a.ServerAudioTranscription, k)
                 return function () {
-                  t(), n()
+                  t(), a()
                 }
               }
             },
@@ -144,50 +144,50 @@
       function y() {
         return h.useSlice(function (e) {
           var t = e.liveCaptions,
-            n = e.pastCaptions
-          return 0 !== t.length || 0 !== n.length
+            a = e.pastCaptions
+          return 0 !== t.length || 0 !== a.length
         })
       }
       function S(e) {
         h.setState(function (t) {
           e.filter(O).forEach(function (e) {
-            var n = e.body.body,
-              a = e.data.sender.twitter_id,
-              r = T(t, a)
+            var a = e.body.body,
+              n = e.data.sender.twitter_id,
+              r = T(t, n)
             ;-1 === r
               ? C(t, e)
               : (function (e, t) {
-                  var n = e.length < t.length ? { longer: t, shorter: e } : { longer: e, shorter: t },
-                    a = n.longer,
-                    r = n.shorter
-                  if (0 === a.length) return 1
+                  var a = e.length < t.length ? { longer: t, shorter: e } : { longer: e, shorter: t },
+                    n = a.longer,
+                    r = a.shorter
+                  if (0 === n.length) return 1
                   return (
-                    (a.length -
+                    (n.length -
                       (function () {
                         for (
                           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
                             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '',
-                            n = Array(t.length + 1)
+                            a = Array(t.length + 1)
                               .fill(null)
                               .map(function () {
                                 return Array(e.length + 1).fill(null)
                               }),
-                            a = 0;
-                          a <= e.length;
-                          a += 1
+                            n = 0;
+                          n <= e.length;
+                          n += 1
                         )
-                          n[0][a] = a
-                        for (var r = 0; r <= t.length; r += 1) n[r][0] = r
+                          a[0][n] = n
+                        for (var r = 0; r <= t.length; r += 1) a[r][0] = r
                         for (var i = 1; i <= t.length; i += 1)
                           for (var o = 1; o <= e.length; o += 1) {
                             var c = e[o - 1] === t[i - 1] ? 0 : 1
-                            n[i][o] = Math.min(n[i][o - 1] + 1, n[i - 1][o] + 1, n[i - 1][o - 1] + c)
+                            a[i][o] = Math.min(a[i][o - 1] + 1, a[i - 1][o] + 1, a[i - 1][o - 1] + c)
                           }
-                        return n[t.length][e.length]
-                      })(a, r)) /
-                    parseFloat(a.length)
+                        return a[t.length][e.length]
+                      })(n, r)) /
+                    parseFloat(n.length)
                   )
-                })(n, t.liveCaptions[r].text) > 0.1
+                })(a, t.liveCaptions[r].text) > 0.1
               ? x(t, e, r)
               : P(t, e, r)
           })
@@ -196,32 +196,32 @@
       function E(e) {
         h.setState(function (t) {
           e.filter(O).forEach(function (e) {
-            var n = e.data.sender.twitter_id,
-              a = T(t, n)
+            var a = e.data.sender.twitter_id,
+              n = T(t, a)
             e.body.final
-              ? (function (e, t, n) {
-                  var a,
+              ? (function (e, t, a) {
+                  var n,
                     r = t.data.sender.twitter_id
-                  if (n > -1) {
-                    var i = e.liveCaptions.splice(n, 1)
-                    a = o()(i, 1)[0].sequenceId
-                  } else (e.currentCaptionSequenceId += 1), (a = e.currentCaptionSequenceId)
-                  var c = L(t, { final: !0, sequenceId: a })
+                  if (a > -1) {
+                    var i = e.liveCaptions.splice(a, 1)
+                    n = o()(i, 1)[0].sequenceId
+                  } else (e.currentCaptionSequenceId += 1), (n = e.currentCaptionSequenceId)
+                  var c = L(t, { final: !0, sequenceId: n })
                   ;(e.pastCaptions = [].concat(s()(e.pastCaptions), [c])), I(e, r, t.timestamp)
-                })(t, e, a)
-              : -1 === a
+                })(t, e, n)
+              : -1 === n
               ? C(t, e)
-              : !(function (e, t, n) {
-                  var a = !1,
-                    r = e.liveCaptions[n].text,
+              : !(function (e, t, a) {
+                  var n = !1,
+                    r = e.liveCaptions[a].text,
                     i = t.body.body
                   if (!t.body.final && i.length > 0 && r.length > 0) {
-                    a = i.length / r.length < 0.2
+                    n = i.length / r.length < 0.2
                   }
-                  return a
-                })(t, e, a)
-              ? x(t, e, a)
-              : P(t, e, a)
+                  return n
+                })(t, e, n)
+              ? x(t, e, n)
+              : P(t, e, n)
           })
         })
       }
@@ -232,38 +232,38 @@
         return E(e), { clearHeapForMessageType: !0 }
       }
       function C(e, t) {
-        var n = t.data.sender.twitter_id
+        var a = t.data.sender.twitter_id
         e.currentCaptionSequenceId += 1
-        var a = L(t, { sequenceId: e.currentCaptionSequenceId })
-        return e.liveCaptions.push(a), I(e, n, t.timestamp), a
+        var n = L(t, { sequenceId: e.currentCaptionSequenceId })
+        return e.liveCaptions.push(n), I(e, a, t.timestamp), n
       }
-      function x(e, t, n) {
-        var a = e.liveCaptions.splice(n, 1),
-          r = o()(a, 1)[0],
+      function x(e, t, a) {
+        var n = e.liveCaptions.splice(a, 1),
+          r = o()(n, 1)[0],
           i = L(t, { sequenceId: r.sequenceId, timestamp: r.timestamp })
         return e.liveCaptions.push(i), i
       }
-      function I(e, t, n) {
+      function I(e, t, a) {
         e.liveCaptions
           .filter(function (e) {
-            return !(e.speaker.id_str === t) && n - e.timestamp > 250
+            return !(e.speaker.id_str === t) && a - e.timestamp > 250
           })
           .forEach(function (t) {
-            var n = e.liveCaptions.findIndex(function (e) {
+            var a = e.liveCaptions.findIndex(function (e) {
                 return e.sequenceId === t.sequenceId
               }),
-              a = e.liveCaptions.splice(n, 1),
-              r = o()(a, 1)[0]
+              n = e.liveCaptions.splice(a, 1),
+              r = o()(n, 1)[0]
             e.pastCaptions.push(r)
           })
       }
-      function P(e, t, n) {
-        var a = t.data.sender.twitter_id,
-          r = e.liveCaptions.splice(n, 1),
+      function P(e, t, a) {
+        var n = t.data.sender.twitter_id,
+          r = e.liveCaptions.splice(a, 1),
           i = o()(r, 1)[0]
         ;(i.final = !0), (e.pastCaptions = [].concat(s()(e.pastCaptions), [i]))
         var c = C(e, t)
-        return I(e, a, t.timestamp), c
+        return I(e, n, t.timestamp), c
       }
       function T(e, t) {
         return e.liveCaptions.findIndex(function (e) {
@@ -276,14 +276,14 @@
       }
       function R(e) {
         var t = e.body.body,
-          n = e.type
-        return m.a.Chat === n && t.startsWith('[cc]')
+          a = e.type
+        return m.a.Chat === a && t.startsWith('[cc]')
       }
       function L(e, t) {
-        var n = e.body.final,
-          a = e.data,
-          i = a.sender,
-          o = a.sender.twitter_id,
+        var a = e.body.final,
+          n = e.data,
+          i = n.sender,
+          o = n.sender.twitter_id,
           c = e.timestamp,
           s = e.body.body,
           l = t.sequenceId
@@ -291,7 +291,7 @@
           (s = s.replace(/^\[cc\]\s?/, '')),
           r()(
             {
-              final: n,
+              final: a,
               sequenceId: l || c,
               speaker: {
                 id_str: o,
@@ -307,31 +307,31 @@
         )
       }
     },
-    '4EYz': function (e, t, n) {
+    '4EYz': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return C
       })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = (n('uFXj'), n('ERkP')),
-        s = n.n(c),
-        l = n('tM6R'),
-        u = n('fs1G'),
-        d = n('0nhk'),
-        p = n('MWbm'),
-        m = n('t62R'),
-        f = n('fzjU'),
-        h = n('/yvb'),
-        v = n('efqG'),
-        g = n('cm6r'),
-        b = n('rHpw'),
-        y = n('3XMw'),
-        S = n.n(y),
-        E = n('hOZg'),
-        w = n('7Mjr'),
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = a('m3Bd'),
+        o = a.n(i),
+        c = (a('uFXj'), a('ERkP')),
+        s = a.n(c),
+        l = a('tM6R'),
+        u = a('fs1G'),
+        d = a('0nhk'),
+        p = a('MWbm'),
+        m = a('t62R'),
+        f = a('fzjU'),
+        h = a('/yvb'),
+        v = a('efqG'),
+        g = a('cm6r'),
+        b = a('rHpw'),
+        y = a('3XMw'),
+        S = a.n(y),
+        E = a('hOZg'),
+        w = a('7Mjr'),
         k = ['audioSpaceId', 'dismiss', 'type']
       function C(e) {
         if (e.count < 1) return null
@@ -361,8 +361,8 @@
       }
       function x(e) {
         var t = e.audioSpaceId,
-          n = e.dismiss,
-          a = e.type,
+          a = e.dismiss,
+          n = e.type,
           r = o()(e, k),
           i = s.a.createElement(
             s.a.Fragment,
@@ -387,7 +387,7 @@
               s.a.createElement(d.a, { audioSpaceId: t }),
             ),
           )
-        return 'popover' === a
+        return 'popover' === n
           ? s.a.createElement(
               s.a.Fragment,
               null,
@@ -423,7 +423,7 @@
                   color: 'text',
                   hoverLabel: { label: R.close },
                   icon: s.a.createElement(E.a, { style: O.popoverSheetClose }),
-                  onPress: n,
+                  onPress: a,
                   size: 'medium',
                 }),
               ),
@@ -436,8 +436,8 @@
         return s.a.createElement(
           v.a,
           {
-            renderContent: function (n, a) {
-              return s.a.createElement(x, r()({ audioSpaceId: e.audioSpaceId, dismiss: n, type: a }, t))
+            renderContent: function (a, n) {
+              return s.a.createElement(x, r()({ audioSpaceId: e.audioSpaceId, dismiss: a, type: n }, t))
             },
             withArrow: !0,
             withDefaultContainer: !0,
@@ -457,7 +457,7 @@
       var T = { fontSize: 'body' },
         O = b.a.create(function (e) {
           var t = e.lineHeightsPx[T.fontSize],
-            n = {
+            a = {
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
@@ -469,14 +469,14 @@
               borderRadius: e.borderRadiiPx.medium,
               borderColor: e.colors.gray50,
             },
-            a = { width: t, height: t, color: e.colors.text },
+            n = { width: t, height: t, color: e.colors.text },
             r = { marginVertical: e.spacesPx.space12 },
             i = { color: e.colors.gray300, width: e.spacesPx.space24, height: e.spacesPx.space24 }
           return {
             otherParticipantsWrapper: { width: '100%' },
-            otherParticipantsContainer: n,
+            otherParticipantsContainer: a,
             otherParticipantsText: { flex: 1 },
-            otherParticipantsArrow: a,
+            otherParticipantsArrow: n,
             popoverTitle: r,
             popoverSheetTitleContainer: {
               flexDirection: 'row',
@@ -491,14 +491,14 @@
         }),
         R = { close: S.a.ia5e7487, share: S.a.ifea3114, shareWithPeople: S.a.i7f853ea }
     },
-    '8A5z': function (e, t, n) {
+    '8A5z': function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(s.a)(
@@ -526,55 +526,55 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    A7Vd: function (e, t, n) {
+    A7Vd: function (e, t, a) {
       'use strict'
-      n.d(t, 'd', function () {
+      a.d(t, 'd', function () {
         return o
       }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return c
         }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return s
         }),
-        n.d(t, 'f', function () {
+        a.d(t, 'f', function () {
           return l
         }),
-        n.d(t, 'j', function () {
+        a.d(t, 'j', function () {
           return u
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return d
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return p
         }),
-        n.d(t, 'g', function () {
+        a.d(t, 'g', function () {
           return m
         }),
-        n.d(t, 'l', function () {
+        a.d(t, 'l', function () {
           return f
         }),
-        n.d(t, 'm', function () {
+        a.d(t, 'm', function () {
           return h
         }),
-        n.d(t, 'k', function () {
+        a.d(t, 'k', function () {
           return v
         }),
-        n.d(t, 'n', function () {
+        a.d(t, 'n', function () {
           return g
         }),
-        n.d(t, 'h', function () {
+        a.d(t, 'h', function () {
           return b
         }),
-        n.d(t, 'i', function () {
+        a.d(t, 'i', function () {
           return y
         })
-      var a = n('yiKp'),
-        r = n.n(a),
+      var n = a('yiKp'),
+        r = a.n(n),
         i =
-          (n('+KXO'),
-          new (n('ssnq').a)({
+          (a('+KXO'),
+          new (a('ssnq').a)({
             id: null,
             api: null,
             state: null,
@@ -582,37 +582,37 @@
             chatToken: null,
           })),
         o = i
-      function c(e, t, n) {
-        var a,
+      function c(e, t, a) {
+        var n,
           o = 'SPEAKERS',
           c = { host: { audioLevel: 0 } }
-        if (n) {
-          c.host.audioLevel = S(n.audioLevels.host)
-          for (var s = Object.keys(n.guests), l = 0; l < s.length; l++) {
+        if (a) {
+          c.host.audioLevel = S(a.audioLevels.host)
+          for (var s = Object.keys(a.guests), l = 0; l < s.length; l++) {
             var u = s[l],
-              d = n.guests[u],
+              d = a.guests[u],
               p = d.UserId,
-              m = S(n.audioLevels.guests[u])
+              m = S(a.audioLevels.guests[u])
             ;(c[p] = { guest: d, audioLevel: m }), (o += '-'.concat(p))
           }
         }
         var f = { signature: o, lookup: c },
-          h = (null === (a = t.tracks[t.currentTrackId]) || void 0 === a ? void 0 : a.chatToken) || null
-        i.setState(function (n) {
-          return r()(r()({}, n), {}, { id: e, state: t, guests: f, chatToken: h })
+          h = (null === (n = t.tracks[t.currentTrackId]) || void 0 === n ? void 0 : n.chatToken) || null
+        i.setState(function (a) {
+          return r()(r()({}, a), {}, { id: e, state: t, guests: f, chatToken: h })
         })
       }
       function s(e, t) {
-        i.setState(function (n) {
-          return r()(r()({}, n), {}, { id: e, api: t })
+        i.setState(function (a) {
+          return r()(r()({}, a), {}, { id: e, api: t })
         })
       }
       function l(e) {
         return i.useSlice(function (t) {
-          var n = e.isHost ? 'host' : e.periscopeUserId
-          if (!n) return 0
-          var a = t.guests.lookup[n],
-            r = null == a ? void 0 : a.audioLevel
+          var a = e.isHost ? 'host' : e.periscopeUserId
+          if (!a) return 0
+          var n = t.guests.lookup[a],
+            r = null == n ? void 0 : n.audioLevel
           return 'number' == typeof r ? r : 0
         })
       }
@@ -627,8 +627,8 @@
             return e.guests.lookup
           },
           {
-            equalityFn: function (e, t, n, a) {
-              return n.guests.signature === a.guests.signature
+            equalityFn: function (e, t, a, n) {
+              return a.guests.signature === n.guests.signature
             },
           },
         )
@@ -640,8 +640,8 @@
       }
       function p(e) {
         var t,
-          n = e
-        return n || (n = i.getState().state), null === (t = n) || void 0 === t ? void 0 : t.tracks[n.currentTrackId]
+          a = e
+        return a || (a = i.getState().state), null === (t = a) || void 0 === t ? void 0 : t.tracks[a.currentTrackId]
       }
       function m() {
         return o.useSlice(function (e) {
@@ -688,40 +688,40 @@
         return e / 100
       }
     },
-    AMlz: function (e, t, n) {
+    AMlz: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return c
       })
-      var a = n('Q/sS'),
-        r = n('ERkP'),
-        i = n.n(r),
-        o = n('v6aA')
+      var n = a('Q/sS'),
+        r = a('ERkP'),
+        i = a.n(r),
+        o = a('v6aA')
       function c() {
-        var e = a.m(),
+        var e = n.m(),
           t = i.a.useContext(o.a).featureSwitches,
-          n = t.getNumberValue('voice_rooms_clip_duration')
+          a = t.getNumberValue('voice_rooms_clip_duration')
         return {
           isCreationEnabled: e && t.isTrue('voice_rooms_clipping_enabled'),
-          durationMs: 1e3 * n,
-          durationSeconds: n,
+          durationMs: 1e3 * a,
+          durationSeconds: a,
         }
       }
     },
-    BXJq: function (e, t, n) {
+    BXJq: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return s
       })
-      var a = n('ddV6'),
-        r = n.n(a),
-        i = (n('7x/C'), n('JtPf'), n('Qavd'), n('ERkP')),
-        o = n.n(i),
-        c = n('dgjd')
+      var n = a('ddV6'),
+        r = a.n(n),
+        i = (a('7x/C'), a('JtPf'), a('Qavd'), a('ERkP')),
+        o = a.n(i),
+        c = a('dgjd')
       function s(e) {
         var t = Object(c.a)(e),
-          n = t.handlers,
-          a = t.space,
+          a = t.handlers,
+          n = t.space,
           i = o.a.useState(!1),
           s = r()(i, 2),
           l = s[0],
@@ -730,62 +730,62 @@
         return (
           (function (e) {
             return e && e.host && e.scheduled_start && ('NotStarted' === e.state || 'PrePublished' === e.state)
-          })(a) &&
-            ((d.hasReminderSet = Boolean(null == a ? void 0 : a.is_subscribed)),
+          })(n) &&
+            ((d.hasReminderSet = Boolean(null == n ? void 0 : n.is_subscribed)),
             (d.onClick = function () {
               var e = function () {
                 return u(!1)
               }
-              u(!0), d.hasReminderSet ? n.unsubscribe().finally(e) : n.subscribe().finally(e)
+              u(!0), d.hasReminderSet ? a.unsubscribe().finally(e) : a.subscribe().finally(e)
             }),
-            (d.scheduledStart = null == a ? void 0 : a.scheduled_start)),
+            (d.scheduledStart = null == n ? void 0 : n.scheduled_start)),
           { props: d, isSubscribing: l }
         )
       }
     },
-    Chkh: function (e, t, n) {
+    Chkh: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return m
       })
-      var a = n('KEM+'),
-        r = n.n(a),
-        i = n('RhWx'),
-        o = n.n(i),
-        c = n('yiKp'),
-        s = n.n(c),
+      var n = a('KEM+'),
+        r = a.n(n),
+        i = a('RhWx'),
+        o = a.n(i),
+        c = a('yiKp'),
+        s = a.n(c),
         l =
-          (n('Ee2X'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('2G9S'),
-          n('z84I'),
-          n('LW0h'),
-          n('+KXO'),
-          n('6U7i'),
-          n('A7Vd')),
-        u = n('2C8o'),
-        d = n('Xda3'),
-        p = n('ssnq')
+          (a('Ee2X'),
+          a('jwue'),
+          a('7x/C'),
+          a('+oxZ'),
+          a('2G9S'),
+          a('z84I'),
+          a('LW0h'),
+          a('+KXO'),
+          a('6U7i'),
+          a('A7Vd')),
+        u = a('2C8o'),
+        d = a('Xda3'),
+        p = a('ssnq')
       function m(e, t) {
-        var n,
-          a = 0,
+        var a,
+          n = 0,
           r = e.length - 1,
           i = -1,
           o = -1
-        if (a > r) return -1
-        for (; a <= r; ) {
-          if (((o = t(e[(i = Math.floor((a + r) / 2))])), void 0 !== n && 0 !== o)) return n
-          o >= 0 ? (a = i + 1) : (r = i - 1), 0 === o && (n = i)
+        if (n > r) return -1
+        for (; n <= r; ) {
+          if (((o = t(e[(i = Math.floor((n + r) / 2))])), void 0 !== a && 0 !== o)) return a
+          o >= 0 ? (n = i + 1) : (r = i - 1), 0 === o && (a = i)
         }
-        return void 0 !== n || o > 0 ? i : i - 1
+        return void 0 !== a || o > 0 ? i : i - 1
       }
       t.a = new (function () {
         var e,
           t = !1,
-          n = 0,
           a = 0,
+          n = 0,
           i = 0,
           c = 0,
           f = {},
@@ -795,10 +795,10 @@
         }
         function g(e, t) {
           if (Array.isArray(f[e])) {
-            var n = m(f[e], function (e) {
+            var a = m(f[e], function (e) {
               return t.ntpTimeInSeconds - e.ntpTimeInSeconds
             })
-            f[e].splice(n + 1, 0, t)
+            f[e].splice(a + 1, 0, t)
           } else f[e] = [t]
         }
         function b() {
@@ -818,17 +818,17 @@
             h.setState(function (t) {
               var l = s()({}, t)
               return (
-                a === n ? (i = n + (100 * (c += 1)) / 1e3) : ((c = 0), (i = a = n)),
+                n === a ? (i = a + (100 * (c += 1)) / 1e3) : ((c = 0), (i = n = a)),
                 e().forEach(function (e) {
-                  var n = f[e]
-                  if (n && 0 !== n.length) {
-                    var a = t[e] || [],
-                      c = m(n, function (e) {
+                  var a = f[e]
+                  if (a && 0 !== a.length) {
+                    var n = t[e] || [],
+                      c = m(a, function (e) {
                         return i - e.ntpTimeInSeconds
                       })
                     if (!(c < 0)) {
-                      var u = n.splice(0, c + 1)
-                      l = s()(s()({}, l), {}, r()({}, e, [].concat(o()(a), o()(u))))
+                      var u = a.splice(0, c + 1)
+                      l = s()(s()({}, l), {}, r()({}, e, [].concat(o()(n), o()(u))))
                     }
                   }
                 }),
@@ -842,11 +842,11 @@
           l.d.subscribe(
             function (e) {
               var t,
-                n = e.state
-              return null == n || null === (t = n.tracks[n.currentTrackId]) || void 0 === t ? void 0 : t.id3NtpTime
+                a = e.state
+              return null == a || null === (t = a.tracks[a.currentTrackId]) || void 0 === t ? void 0 : t.id3NtpTime
             },
             function (e) {
-              e && (n = e)
+              e && (a = e)
             },
           ),
           {
@@ -867,10 +867,10 @@
             },
             reset: function () {
               for (var e in (v(), f)) delete f[e]
-              ;(n = 0), (a = 0), (i = 0), (c = 0), h.reset()
+              ;(a = 0), (n = 0), (i = 0), (c = 0), h.reset()
             },
             setCurrentNtpTimeSeconds: function (e) {
-              n = e
+              a = e
             },
             stacks: f,
             start: function () {
@@ -883,14 +883,14 @@
                 function (t) {
                   return t[e] || []
                 },
-                function (n) {
-                  var a
-                  n &&
-                    n.length > 0 &&
-                    t(n).clearHeapForMessageType &&
-                    ((a = e),
+                function (a) {
+                  var n
+                  a &&
+                    a.length > 0 &&
+                    t(a).clearHeapForMessageType &&
+                    ((n = e),
                     h.setState(function (e) {
-                      return s()(s()({}, e), {}, r()({}, a, []))
+                      return s()(s()({}, e), {}, r()({}, n, []))
                     }))
                 },
               )
@@ -899,35 +899,35 @@
         )
       })()
     },
-    'Fg/a': function (e, t, n) {
+    'Fg/a': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return j
       })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('1Pcy'),
-        s = n.n(c),
-        l = n('5Yy7'),
-        u = n.n(l),
-        d = n('2VqO'),
-        p = n.n(d),
-        m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
-        v = n.n(h),
-        g = n('Pc/x'),
-        b = n('6/RC'),
-        y = (n('KqXw'), n('WNMA'), n('Z5jE')),
-        S = n('rxPX'),
+      var n = a('VrFO'),
+        r = a.n(n),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('1Pcy'),
+        s = a.n(c),
+        l = a('5Yy7'),
+        u = a.n(l),
+        d = a('2VqO'),
+        p = a.n(d),
+        m = a('KEM+'),
+        f = a.n(m),
+        h = (a('2G9S'), a('849X'), a('TJCb'), a('ERkP')),
+        v = a.n(h),
+        g = a('Pc/x'),
+        b = a('6/RC'),
+        y = (a('KqXw'), a('WNMA'), a('Z5jE')),
+        S = a('rxPX'),
         E = function (e, t) {
           return Object(y.a)(t.match)
         },
         w = function (e) {
-          return function (t, n, a) {
-            return a.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
+          return function (t, a, n) {
+            return n.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
           }
         },
         k = Object(S.a)()
@@ -937,19 +937,19 @@
           .propsFromActions(function () {
             return { fetchAudioSpace: w }
           }),
-        C = (n('1t7P'), n('jQ/y'), n('3XMw')),
-        x = n.n(C),
-        I = n('rJoH'),
-        P = n('fzjU'),
-        T = n('Tg44')
+        C = (a('1t7P'), a('jQ/y'), a('3XMw')),
+        x = a.n(C),
+        I = a('rJoH'),
+        P = a('fzjU'),
+        T = a('Tg44')
       function O(e) {
         var t = e.space
         if (!t) return null
-        var n = (function (e) {
+        var a = (function (e) {
           var t = (function (e) {
               var t,
-                n,
                 a,
+                n,
                 r,
                 i = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
                 o = i ? R.hostSpace({ name: i }) : R.hostSpaceFallback,
@@ -959,30 +959,35 @@
                 u = P.a.formatCountShort(l),
                 d = R.descriptionListening({ count: u })
               if (e.state === T.a.SpaceState.Running)
-                (n = R.titleRunning({ spaceTitle: c })),
-                  (a = R.descriptionFormatRunning({ hostSpace: o, descriptionListening: d, descriptionGeneric: s })),
+                (a = R.titleRunning({ spaceTitle: c })),
+                  (n = R.descriptionFormatRunning({ hostSpace: o, descriptionListening: d, descriptionGeneric: s })),
                   (r = L.ttl.Frequent)
               else if (e.state === T.a.SpaceState.NotStarted || e.state === T.a.SpaceState.PrePublished) {
                 var p = R.scheduledSpaceGeneric
-                ;(n = R.titleScheduled({ date: p, spaceTitle: c })),
-                  (a = R.descriptionFormatScheduled({ hostSpace: o, descriptionGeneric: s })),
+                ;(a = R.titleScheduled({ date: p, spaceTitle: c })),
+                  (n = R.descriptionFormatScheduled({ hostSpace: o, descriptionGeneric: s })),
                   (r = L.ttl.Frequent)
               } else
-                (n = R.titleEnded({ spaceTitle: c })),
-                  (a = R.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
-                  (r = L.ttl.LongLivedCache)
+                (e.state !== T.a.SpaceState.Ended && e.state !== T.a.SpaceState.TimedOut) ||
+                !e.is_space_available_for_replay
+                  ? ((a = R.titleEnded({ spaceTitle: c })),
+                    (n = R.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
+                    (r = L.ttl.LongLivedCache))
+                  : ((a = R.titleRecording({ spaceTitle: c })),
+                    (n = R.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
+                    (r = L.ttl.LongLivedCache))
               var m = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
-              return { title: n, canonical: m, description: a, ttl: r }
+              return { title: a, canonical: m, description: n, ttl: r }
             })(e),
-            n = t.canonical,
-            a = t.description,
+            a = t.canonical,
+            n = t.description,
             r = t.title,
             i = t.ttl
           return {
             type: 'website',
-            canonical: n,
+            canonical: a,
             title: r,
-            description: a,
+            description: n,
             image: L.image.url,
             imageType: L.image.type,
             imageW: L.image.width,
@@ -991,7 +996,7 @@
             ttl: i,
           }
         })(t)
-        return v.a.createElement(I.a, n)
+        return v.a.createElement(I.a, a)
       }
       var R = {
           twitterSpaces: x.a.gaa01f2c,
@@ -1004,6 +1009,7 @@
           titleRunning: x.a.a065e7e7,
           titleScheduled: x.a.hd5e7b20,
           titleEnded: x.a.f826f7ee,
+          titleRecording: x.a.i8478ae7,
           descriptionFormatRunning: x.a.b2a94e92,
           descriptionFormatScheduled: x.a.f6432ce5,
           descriptionFormatEnded: x.a.f6432ce5,
@@ -1018,18 +1024,18 @@
             alt: R.twitterSpaces,
           },
         },
-        _ = n('G8HL'),
+        _ = a('G8HL'),
         M = (function (e) {
-          u()(n, e)
-          var t = p()(n)
-          function n() {
+          u()(a, e)
+          var t = p()(a)
+          function a() {
             var e
-            r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            r()(this, a)
+            for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o]
             return (e = t.call.apply(t, [this].concat(i))), f()(s()(e), 'state', { space: null }), e
           }
           return (
-            o()(n, [
+            o()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -1056,7 +1062,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(v.a.Component)
       function z(e) {
@@ -1069,28 +1075,28 @@
       }
       var j = k(Object(_.a)(M))
     },
-    'G/+M': function (e, t, n) {
+    'G/+M': function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return d
       }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return p
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return m
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return f
         })
-      var a = n('K1iM'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('v6aA'),
-        s = n('Chkh'),
-        l = n('Xda3'),
-        u = new (n('ssnq').a)({}),
+      var n = a('K1iM'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('v6aA'),
+        s = a('Chkh'),
+        l = a('Xda3'),
+        u = new (a('ssnq').a)({}),
         d = u
       function p(e) {
         return u.useSlice(function (t) {
@@ -1099,8 +1105,8 @@
       }
       function m(e) {
         u.setState(function (t) {
-          var n
-          null === (n = t[e.participantId]) || void 0 === n || n.shift()
+          var a
+          null === (a = t[e.participantId]) || void 0 === a || a.shift()
         })
       }
       function f() {
@@ -1120,21 +1126,21 @@
       function h(e) {
         return (
           u.setState(function (t) {
-            var n,
-              a = r()(e)
+            var a,
+              n = r()(e)
             try {
-              for (a.s(); !(n = a.n()).done; ) {
+              for (n.s(); !(a = n.n()).done; ) {
                 var i,
-                  o = v(n.value),
+                  o = v(a.value),
                   c = o.reaction,
                   s = o.sender
                 t[s.participantId] || (t[s.participantId] = []),
                   null === (i = t[s.participantId]) || void 0 === i || i.push(c)
               }
             } catch (l) {
-              a.e(l)
+              n.e(l)
             } finally {
-              a.f()
+              n.f()
             }
           }),
           { clearHeapForMessageType: !0 }
@@ -1148,57 +1154,57 @@
         }
       }
     },
-    HmZq: function (e, t, n) {
+    HmZq: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'reset', function () {
+      a.r(t),
+        a.d(t, 'reset', function () {
           return p
         }),
-        n.d(t, 'getTranscript', function () {
+        a.d(t, 'getTranscript', function () {
           return m
         }),
-        n.d(t, 'insert', function () {
+        a.d(t, 'insert', function () {
           return f
         }),
-        n.d(t, 'onCompleteHistory', function () {
+        a.d(t, 'onCompleteHistory', function () {
           return h
         }),
-        n.d(t, 'seek', function () {
+        a.d(t, 'seek', function () {
           return v
         }),
-        n.d(t, 'publishToQueue', function () {
+        a.d(t, 'publishToQueue', function () {
           return g
         })
-      n('z84I'), n('LW0h'), n('7x/C'), n('jwue'), n('+oxZ'), n('Ee2X'), n('M+/F')
-      var a = n('2C8o'),
-        r = n('Q/sS'),
-        i = n('A7Vd'),
-        o = n('G/+M'),
-        c = n('b2fv'),
-        s = n('VY6S'),
-        l = n('Chkh'),
-        u = n('Xda3'),
+      a('z84I'), a('LW0h'), a('7x/C'), a('jwue'), a('+oxZ'), a('Ee2X'), a('M+/F')
+      var n = a('2C8o'),
+        r = a('Q/sS'),
+        i = a('A7Vd'),
+        o = a('G/+M'),
+        c = a('b2fv'),
+        s = a('VY6S'),
+        l = a('Chkh'),
+        u = a('Xda3'),
         d = []
       function p() {
         d = []
       }
       function m(e, t) {
         return d
-          .filter(function (n) {
+          .filter(function (a) {
             return (
-              n.type === u.a.ServerAudioTranscription &&
-              n.body.final &&
-              n.body.ntpTimeInSeconds >= e &&
-              n.body.ntpTimeInSeconds <= t &&
-              Boolean(n.body.body)
+              a.type === u.a.ServerAudioTranscription &&
+              a.body.final &&
+              a.body.ntpTimeInSeconds >= e &&
+              a.body.ntpTimeInSeconds <= t &&
+              Boolean(a.body.body)
             )
           })
           .map(function (e) {
-            return a.c(e, {})
+            return n.c(e, {})
           })
       }
       function f() {
-        for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
+        for (var e = arguments.length, t = new Array(e), a = 0; a < e; a++) t[a] = arguments[a]
         t.forEach(function (e) {
           var t = Object(l.b)(d, function (t) {
             return e.ntpTimeInSeconds - t.ntpTimeInSeconds
@@ -1214,12 +1220,12 @@
       var v = Object(s.a)(function (e) {
         var t = r.i.getState().startTimeMs
         if (t) {
-          var n = t + e
-          g(Object(c.a)(n))
+          var a = t + e
+          g(Object(c.a)(a))
         }
       }, 100)
       function g(e) {
-        l.a.reset(), a.b(), o.b.reset()
+        l.a.reset(), n.b(), o.b.reset()
         var t = Object(l.b)(d, function (t) {
           return e - t.ntpTimeInSeconds
         })
@@ -1229,26 +1235,26 @@
           l.a.start()
       }
     },
-    ISLN: function (e, t, n) {
+    ISLN: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return s
       })
-      n('uFXj')
-      var a = n('ERkP'),
-        r = n.n(a),
-        i = n('cm6r'),
-        o = n('CDzS'),
-        c = n('rHpw')
+      a('uFXj')
+      var n = a('ERkP'),
+        r = a.n(n),
+        i = a('cm6r'),
+        o = a('CDzS'),
+        c = a('rHpw')
       function s(e) {
         var t = e.accessibilityLabel,
-          n = e.children,
-          a = e.onPress,
+          a = e.children,
+          n = e.onPress,
           c = e.style
         return r.a.createElement(
           i.a,
-          { accessibilityLabel: t, onPress: a, style: [l.button, c] },
-          r.a.createElement(o.a.Default, { style: l.gradient }, n),
+          { accessibilityLabel: t, onPress: n, style: [l.button, c] },
+          r.a.createElement(o.a.Default, { style: l.gradient }, a),
         )
       }
       s.getHeightPx = function (e) {
@@ -1267,66 +1273,66 @@
         }
       })
     },
-    LxAE: function (e, t, n) {
+    LxAE: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return ae
+      a.d(t, 'a', function () {
+        return ne
       })
-      var a = {}
-      n.r(a),
-        n.d(a, 'buildPlayerProps', function () {
+      var n = {}
+      a.r(n),
+        a.d(n, 'buildPlayerProps', function () {
           return G
         }),
-        n.d(a, 'buildDockConfig', function () {
-          return J
+        a.d(n, 'buildDockConfig', function () {
+          return X
         })
       var r = {}
-      n.r(r),
-        n.d(r, 'buildPlayerProps', function () {
+      a.r(r),
+        a.d(r, 'buildPlayerProps', function () {
           return $
         }),
-        n.d(r, 'buildDockConfig', function () {
+        a.d(r, 'buildDockConfig', function () {
           return ee
         })
-      var i = n('yiKp'),
-        o = n.n(i),
-        c = n('ddV6'),
-        s = n.n(c),
-        l = (n('849X'), n('TJCb'), n('Nsgw')),
-        u = n('OoQt'),
-        d = n('Xda3'),
-        p = n('ERkP'),
-        m = n.n(p),
-        f = n('QEWO'),
-        h = n('v6aA'),
-        v = n('HmZq'),
-        g = n('Q/sS'),
-        b = n('A7Vd'),
-        y = (n('jwue'), n('7x/C'), n('+oxZ'), n('VKFJ')),
-        S = n('MWbm'),
-        E = n('n7AW'),
-        w = n('rHpw'),
-        k = n('t62R')
+      var i = a('yiKp'),
+        o = a.n(i),
+        c = a('ddV6'),
+        s = a.n(c),
+        l = (a('849X'), a('TJCb'), a('Nsgw')),
+        u = a('OoQt'),
+        d = a('Xda3'),
+        p = a('ERkP'),
+        m = a.n(p),
+        f = a('QEWO'),
+        h = a('v6aA'),
+        v = a('HmZq'),
+        g = a('Q/sS'),
+        b = a('A7Vd'),
+        y = (a('jwue'), a('7x/C'), a('+oxZ'), a('VKFJ')),
+        S = a('MWbm'),
+        E = a('n7AW'),
+        w = a('rHpw'),
+        k = a('t62R')
       function C(e) {
         var t = (function (e) {
           var t = m.a.useRef({ lastActive: { displayName: '', audioLevel: 0 } }),
-            n = Object(y.b)(e).speakers,
-            a = b.j(),
+            a = Object(y.b)(e).speakers,
+            n = b.j(),
             r = { displayName: '', audioLevel: 0 }
           if (
-            (n.forEach(function (e) {
+            (a.forEach(function (e) {
               var t = y.b.isParticipantHost(e.kind) || !e.periscopeUserId ? 'host' : e.periscopeUserId,
-                n = a[t]
-              n &&
-                n.audioLevel > r.audioLevel &&
+                a = n[t]
+              a &&
+                a.audioLevel > r.audioLevel &&
                 e.user.display_name &&
-                ((r.displayName = e.user.display_name), (r.audioLevel = n.audioLevel))
+                ((r.displayName = e.user.display_name), (r.audioLevel = a.audioLevel))
             }),
             r.audioLevel > 0)
           )
             return (t.current.lastActive = r), t.current.lastActive
           if (t.current.lastActive.displayName) return o()(o()({}, t.current.lastActive), {}, { audioLevel: 0 })
-          var i = s()(n, 1)[0]
+          var i = s()(a, 1)[0]
           return o()(o()({}, r), {}, { displayName: i.user.display_name || '' })
         })(e.audioSpaceId)
         return m.a.createElement(x, t)
@@ -1357,40 +1363,40 @@
             activeSpeakerIndicatorNameInactive: { opacity: 0.6 },
           }
         }),
-        P = n('K1iM'),
-        T = n.n(P),
-        O = (n('KqXw'), n('3uku'), n('jQ3i'), n('x4t0'), n('1YZw')),
-        R = n('Chkh'),
-        L = n('3XMw'),
-        _ = n.n(L),
-        M = n('zCf4'),
-        z = n('dgjd'),
-        j = n('xZGM'),
-        H = n('uDfI')
+        P = a('K1iM'),
+        T = a.n(P),
+        O = (a('KqXw'), a('3uku'), a('jQ3i'), a('x4t0'), a('1YZw')),
+        R = a('Chkh'),
+        L = a('3XMw'),
+        _ = a.n(L),
+        M = a('zCf4'),
+        z = a('dgjd'),
+        j = a('xZGM'),
+        H = a('uDfI')
       function A(e) {
         var t,
-          n,
           a,
+          n,
           r = e.audioSpaceId,
           i = e.isSideNavLayout
         return (
           (function (e) {
             var t = Object(z.a)(e).utils,
-              n = g.p()
+              a = g.p()
             m.a.useEffect(
               function () {
-                g.i.getState().isReplay || t.is.Running || n('exit')
+                g.i.getState().isReplay || t.is.Running || a('exit')
               },
-              [n, t.is.Running],
+              [a, t.is.Running],
             )
           })(r),
           (function (e) {
             var t = Object(z.a)(e),
-              n = t.space,
-              a = t.utils,
+              a = t.space,
+              n = t.utils,
               r = b.h(),
               i = b.n(),
-              o = null == n ? void 0 : n.replay_start_time,
+              o = null == a ? void 0 : a.replay_start_time,
               c = (i || {}).scrubToFraction,
               s = g.m()
             m.a.useEffect(
@@ -1409,31 +1415,31 @@
             ),
               m.a.useEffect(
                 function () {
-                  a.is.replayable && a.is.joined && c && r && o && c((1e3 * o) / r)
+                  n.is.replayable && n.is.joined && c && r && o && c((1e3 * o) / r)
                 },
-                [c, a.is.replayable, a.is.joined, o, r],
+                [c, n.is.replayable, n.is.joined, o, r],
               )
           })(r),
           (function (e) {
             var t = g.q(),
-              n = g.p(),
-              a = Object(M.g)(),
-              r = a.key,
-              i = a.pathname,
+              a = g.p(),
+              n = Object(M.g)(),
+              r = n.key,
+              i = n.pathname,
               o = m.a.useRef({ key: r, pathname: i })
             m.a.useEffect(
               function () {
                 if (!e) {
-                  if (o.current.key !== r) B.spaceUrl.test(o.current.pathname) || 'collapse' === t || n('collapse')
+                  if (o.current.key !== r) B.spaceUrl.test(o.current.pathname) || 'collapse' === t || a('collapse')
                   ;(o.current.key = r), (o.current.pathname = i)
                 }
               },
-              [r, i, e, n, t],
+              [r, i, e, a, t],
             )
           })(i),
           (t = m.a.useContext(h.a).loggedInUserId),
-          (n = g.p()),
-          (a = Object(H.c)()),
+          (a = g.p()),
+          (n = Object(H.c)()),
           m.a.useEffect(
             function () {
               function e(e) {
@@ -1447,7 +1453,7 @@
                         var c
                         ;((null === (c = o.body) || void 0 === c ? void 0 : c.twitter_participant_ids) || []).includes(
                           t,
-                        ) && (n('exit'), a(Object(O.b)({ text: N.removedFromSpace })))
+                        ) && (a('exit'), n(Object(O.b)({ text: N.removedFromSpace })))
                     }
                   }
                 } catch (s) {
@@ -1459,19 +1465,19 @@
               }
               if (t) return R.a.subscribe(d.a.HydraControlMessage, e)
             },
-            [t, n, a],
+            [t, a, n],
           ),
           (function () {
             var e = Object(H.c)(),
               t = g.k().openSheet,
-              n = g.q() === g.a.full,
-              a = Object(H.d)(D)
+              a = g.q() === g.a.full,
+              n = Object(H.d)(D)
             m.a.useEffect(
               function () {
                 var r
                 return (
-                  n &&
-                    a &&
+                  a &&
+                    n &&
                     (r = setTimeout(function () {
                       t(g.b.generalNux), e(Object(j.z)(j.v))
                     }, 2e3)),
@@ -1480,7 +1486,7 @@
                   }
                 )
               },
-              [n, a],
+              [a, n],
             )
           })(),
           null
@@ -1491,15 +1497,15 @@
       }
       var B = { spaceUrl: /i\/spaces\/.+/ },
         N = { removedFromSpace: _.a.jd859c9c },
-        F = n('fzjU'),
-        V = n('xVWt')
+        F = a('fzjU'),
+        V = a('xVWt')
       function U(e) {
         var t = e.audioSpaceId,
-          n = Object(z.a)(t),
-          a = n.space,
-          r = n.utils,
+          a = Object(z.a)(t),
+          n = a.space,
+          r = a.utils,
           i = r.title(),
-          o = (null == a ? void 0 : a.participants.total) || 0
+          o = (null == n ? void 0 : n.participants.total) || 0
         return m.a.createElement(F.a, {
           activeSpeakers: m.a.createElement(C, { audioSpaceId: t }),
           isWide: e.isSideNavLayout,
@@ -1516,10 +1522,10 @@
       }
       function W(e) {
         var t = m.a.useContext(h.a).featureSwitches,
-          n = m.a.useState(!1),
-          a = s()(n, 2),
-          r = a[0],
-          i = a[1]
+          a = m.a.useState(!1),
+          n = s()(a, 2),
+          r = n[0],
+          i = n[1]
         var c = o()(
             o()({}, e),
             {},
@@ -1549,25 +1555,25 @@
         e.commonApi
         var t = K(e.context)
         if (!t) return { media: null }
-        var n = t.activeItem
+        var a = t.activeItem
         return {
-          broadcastId: n.id,
+          broadcastId: a.id,
           disablePlaybackCoordination: !0,
-          mediaKey: n.mediaKey,
-          isLive: n.isLive,
+          mediaKey: a.mediaKey,
+          isLive: a.isLive,
           onPlayerApi: function (e) {
-            b.b(n.id, e)
+            b.b(a.id, e)
           },
           onPlayerState: function (e, t) {
-            b.c(n.id, e, t)
+            b.c(a.id, e, t)
           },
         }
       }
-      function J(e) {
+      function X(e) {
         var t = e.audioDockProps,
-          n = e.commonApi,
-          a = e.context,
-          r = (e.history, K(a))
+          a = e.commonApi,
+          n = e.context,
+          r = (e.history, K(n))
         if (!r) return null
         var i = r.activeItem
         return m.a.createElement(
@@ -1577,39 +1583,39 @@
               key: i.id,
               audioSpaceId: i.id,
               onRequestClose: function () {
-                n.clear(), v.reset(), g.i.reset()
+                a.clear(), v.reset(), g.i.reset()
               },
             },
             t,
           ),
         )
       }
-      n('tVqn'), n('MvUL')
-      var X = n('zrc3'),
-        Z = n('abiO'),
-        Y = n('pupE')
+      a('tVqn'), a('MvUL')
+      var J = a('zrc3'),
+        Z = a('abiO'),
+        Y = a('pupE')
       function Q(e) {
         var t,
-          n = s()(e.activeItem, 1)[0],
-          a = e.hydrateVoiceTweetTrack(n.conversationId),
-          r = Object(X.a)(a.tweets, function (e) {
-            return e.id_str === n.id
+          a = s()(e.activeItem, 1)[0],
+          n = e.hydrateVoiceTweetTrack(a.conversationId),
+          r = Object(J.a)(n.tweets, function (e) {
+            return e.id_str === a.id
           }),
-          i = a.tweets[r]
+          i = n.tweets[r]
         if (!i) return null
         var o = (null === (t = i.extended_entities) || void 0 === t ? void 0 : t.media) || [],
           c = s()(o, 1)[0],
           l = 'photo' !== (null == c ? void 0 : c.type) ? c : null
-        return { activeItem: n, track: a, media: l, activeIndex: r, activeTweet: i }
+        return { activeItem: a, track: n, media: l, activeIndex: r, activeTweet: i }
       }
       function $(e) {
         var t = e.commonApi,
-          n = Q(e.context)
-        if (!n) return { media: null }
-        var a = n.activeIndex,
-          r = n.activeItem,
-          i = n.media,
-          o = n.track.tweets[a + 1]
+          a = Q(e.context)
+        if (!a) return { media: null }
+        var n = a.activeIndex,
+          r = a.activeItem,
+          i = a.media,
+          o = a.track.tweets[n + 1]
         return {
           media: i,
           requestedTimecode: r.startTimeMs,
@@ -1620,14 +1626,14 @@
       }
       function ee(e) {
         var t = e.audioDockProps,
-          n = e.commonApi,
-          a = e.context,
+          a = e.commonApi,
+          n = e.context,
           r = e.history,
-          i = s()(a.playerApi, 1)[0],
-          o = s()(a.playerState, 1)[0],
-          c = n.currentTrack
+          i = s()(n.playerApi, 1)[0],
+          o = s()(n.playerState, 1)[0],
+          c = a.currentTrack
         if (!o || !i || !c) return null
-        var l = Q(a)
+        var l = Q(n)
         if (!l) return null
         var u = l.activeIndex,
           d = l.activeTweet,
@@ -1660,16 +1666,16 @@
           volume: 100 * b,
           title: x,
           user: I,
-          onRequestClose: n.clear,
-          onTogglePlayback: n.togglePlayback,
+          onRequestClose: a.clear,
+          onTogglePlayback: a.togglePlayback,
           onDockPress: function () {
             return r.push(d.permalink)
           },
-          onMuteToggle: n.toggleMute,
-          onVolumeChange: n.setVolume,
+          onMuteToggle: a.toggleMute,
+          onVolumeChange: a.setVolume,
           onSeek: function (e) {
             te(f.tweets, function (t) {
-              var a = t.durationMs,
+              var n = t.durationMs,
                 r = t.endMs,
                 o = t.i,
                 c = t.startMs,
@@ -1677,9 +1683,9 @@
               if (e >= c && e <= r) {
                 var l = e - c
                 if (o === u) {
-                  var d = l / a
+                  var d = l / n
                   i.scrubToFraction(d)
-                } else n.load.voiceTweet(s, l)
+                } else a.load.voiceTweet(s, l)
                 return !0
               }
             })
@@ -1687,29 +1693,29 @@
         })
       }
       function te(e, t) {
-        for (var n = 0, a = 0; a < e.length; a++) {
-          var r = e[a],
+        for (var a = 0, n = 0; n < e.length; n++) {
+          var r = e[n],
             i = Y.a.getVoiceTweetDuration(r),
-            o = n + i
-          if (t({ i: a, tweet: r, startMs: n, endMs: o, durationMs: i })) break
-          n = o
+            o = a + i
+          if (t({ i: n, tweet: r, startMs: a, endMs: o, durationMs: i })) break
+          a = o
         }
       }
-      var ne = { default: { buildDockConfig: n('0zXz').a }, space: a, voiceTweet: r }
-      function ae() {
+      var ae = { default: { buildDockConfig: a('0zXz').a }, space: n, voiceTweet: r }
+      function ne() {
         var e = m.a.useRef({}),
           t = m.a.useContext(h.a).history,
-          n = m.a.useContext(u.a),
-          a = s()(n.activeItem, 2),
-          r = a[0],
-          i = a[1],
-          c = s()(n.playerApi, 2),
+          a = m.a.useContext(u.a),
+          n = s()(a.activeItem, 2),
+          r = n[0],
+          i = n[1],
+          c = s()(a.playerApi, 2),
           p = c[0],
           v = c[1],
-          g = s()(n.playerState, 2),
+          g = s()(a.playerState, 2),
           b = g[0],
           y = g[1],
-          S = s()(n.guestsState, 2),
+          S = s()(a.guestsState, 2),
           E = S[0],
           w = S[1],
           k = re(b)
@@ -1725,22 +1731,22 @@
           x = m.a.useMemo(function () {
             return function () {
               var t = e.current,
-                n = t.playerApi,
-                a = t.playerState
-              n && a && (a.isPlaying ? n.pause : n.play)()
+                a = t.playerApi,
+                n = t.playerState
+              a && n && (n.isPlaying ? a.pause : a.play)()
             }
           }, []),
           I = m.a.useMemo(function () {
             return function () {
               var t = e.current,
-                n = t.playerApi,
-                a = t.playerState
-              n && a && (a.isMuted ? n.unmute : n.mute)()
+                a = t.playerApi,
+                n = t.playerState
+              a && n && (n.isMuted ? a.unmute : a.mute)()
             }
           }, []),
           P = {
-            space: function (e, t, n) {
-              i({ type: f.a.space, id: e, mediaKey: t, isLive: n })
+            space: function (e, t, a) {
+              i({ type: f.a.space, id: e, mediaKey: t, isLive: a })
             },
             voiceTweet: function (e, t) {
               i({ type: f.a.voiceTweet, id: e.id_str, conversationId: l.a(e), startTimeMs: t })
@@ -1754,8 +1760,8 @@
             togglePlayback: x,
             setVolume: m.a.useMemo(function () {
               return function (t) {
-                var n = e.current.playerApi
-                n && n.setVolume(t / 100)
+                var a = e.current.playerApi
+                a && a.setVolume(t / 100)
               }
             }, []),
           }
@@ -1766,14 +1772,14 @@
           player: { api: p, state: b, guests: E, currentTrack: k, toggleMute: I, togglePlayback: x },
           config: {
             dock: function (e) {
-              if (!r) return ne.default.buildDockConfig()
+              if (!r) return ae.default.buildDockConfig()
               switch (r.type) {
                 case f.a.space:
-                  return ne.space.buildDockConfig({ history: t, context: n, commonApi: T, audioDockProps: e })
+                  return ae.space.buildDockConfig({ history: t, context: a, commonApi: T, audioDockProps: e })
                 case f.a.voiceTweet:
-                  return ne.voiceTweet.buildDockConfig({ history: t, context: n, commonApi: T, audioDockProps: e })
+                  return ae.voiceTweet.buildDockConfig({ history: t, context: a, commonApi: T, audioDockProps: e })
                 default:
-                  return ne.default.buildDockConfig()
+                  return ae.default.buildDockConfig()
               }
             },
             player: function () {
@@ -1790,10 +1796,10 @@
               if (!r) return t
               switch (r.type) {
                 case f.a.space:
-                  e = ne.space.buildPlayerProps({ context: n, commonApi: T })
+                  e = ae.space.buildPlayerProps({ context: a, commonApi: T })
                   break
                 case f.a.voiceTweet:
-                  e = ne.voiceTweet.buildPlayerProps({ context: n, commonApi: T })
+                  e = ae.voiceTweet.buildPlayerProps({ context: a, commonApi: T })
                   break
                 default:
                   throw new Error('[AudioContext:Player] unhandled active item type ['.concat(r.type, ']'))
@@ -1801,28 +1807,28 @@
               return o()(o()({}, t), e)
             },
           },
-          audioSpaces: { cache: n.audioSpaceCache },
+          audioSpaces: { cache: a.audioSpaceCache },
         }
       }
       var re = function (e) {
         return e && e.tracks[e.currentTrackId]
       }
     },
-    O07O: function (e, t, n) {
+    O07O: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return N
       })
-      var a = n('HmZq'),
-        r = n('Q/sS'),
-        i = n('A7Vd'),
-        o = n('ERkP'),
-        c = n.n(o),
-        s = n('tI3i'),
-        l = n.n(s),
-        u = n('fs1G'),
-        d = n('/yvb'),
-        p = n('rHpw')
+      var n = a('HmZq'),
+        r = a('Q/sS'),
+        i = a('A7Vd'),
+        o = a('ERkP'),
+        c = a.n(o),
+        s = a('tI3i'),
+        l = a.n(s),
+        u = a('fs1G'),
+        d = a('/yvb'),
+        p = a('rHpw')
       function m(e) {
         return (
           l()(e.accessibilityLabel, 'ControlButton must have an accessibilityLabel'),
@@ -1844,33 +1850,33 @@
       var f = p.a.create(function (e) {
           return { button: { height: '100%' } }
         }),
-        h = n('3XMw'),
-        v = n.n(h),
-        g = (n('z84I'), n('akpX')),
-        b = n('dgjd'),
-        y = n('MWbm'),
-        S = n('mjJ+'),
-        E = n('t62R')
+        h = a('3XMw'),
+        v = a.n(h),
+        g = (a('z84I'), a('akpX')),
+        b = a('dgjd'),
+        y = a('MWbm'),
+        S = a('mjJ+'),
+        E = a('t62R')
       function w(e) {
         var t = Object(b.a)(e.audioSpaceId).utils,
-          n = i.m(),
-          a = x.map(function (e) {
-            var a = e.rate
+          a = i.m(),
+          n = x.map(function (e) {
+            var n = e.rate
             return {
               text: e.text,
-              disabled: n === a,
+              disabled: a === n,
               onClick: function () {
                 t.scribe(':audiospace:replay:recording:speed:click')
                 var e = i.d.getState().api
-                e && e.setPlaybackRate(a)
+                e && e.setPlaybackRate(n)
               },
             }
           })
         return c.a.createElement(m, {
-          accessibilityLabel: C.accessibility({ rate: ''.concat(n) }),
-          icon: c.a.createElement(w.Icon, { playbackRate: n }),
+          accessibilityLabel: C.accessibility({ rate: ''.concat(a) }),
+          icon: c.a.createElement(w.Icon, { playbackRate: a }),
           renderMenu: function (e) {
-            return c.a.createElement(S.a, { isFixed: !0, items: a, onCloseRequested: e, shouldCloseOnClick: !0 })
+            return c.a.createElement(S.a, { isFixed: !0, items: n, onCloseRequested: e, shouldCloseOnClick: !0 })
           },
         })
       }
@@ -1897,15 +1903,15 @@
           { text: v.a.j0e5c2cd, rate: 1.5 },
           { text: v.a.b3f2318d, rate: 2 },
         ],
-        I = n('Pl95'),
-        P = n('0nhk'),
-        T = n('AMlz'),
-        O = n('5Ixf'),
-        R = n('AtEG'),
-        L = n('yiKp'),
-        _ = n.n(L),
-        M = n('Lsrn'),
-        z = n('k/Ka'),
+        I = a('Pl95'),
+        P = a('0nhk'),
+        T = a('AMlz'),
+        O = a('5Ixf'),
+        R = a('AtEG'),
+        L = a('yiKp'),
+        _ = a.n(L),
+        M = a('Lsrn'),
+        z = a('k/Ka'),
         j = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(z.a)(
@@ -1957,7 +1963,7 @@
         }
       A.metadata = { width: 24, height: 24 }
       var D = A,
-        B = n('abiO')
+        B = a('abiO')
       function N(e) {
         var t = Object(T.a)()
         return c.a.createElement(
@@ -1983,22 +1989,22 @@
       }
       function V(e) {
         var t = i.d.getState().api,
-          n = i.a()
-        if (null != n && n.durationMs && null != t && t.scrubToFraction) {
-          a.seek(e)
-          var r = e / n.durationMs
+          a = i.a()
+        if (null != a && a.durationMs && null != t && t.scrubToFraction) {
+          n.seek(e)
+          var r = e / a.durationMs
           t.scrubToFraction(r)
         }
       }
       ;(N.SeekSlider = function () {
         var e = N.useSeekSliderProps(),
           t = e.currentTimeMs,
-          n = e.durationMs,
-          a = e.externalSeeking,
+          a = e.durationMs,
+          n = e.externalSeeking,
           r = e.onSeek
         return c.a.createElement(B.a.SeekSlider, {
-          durationMs: n,
-          externalSeeking: a,
+          durationMs: a,
+          externalSeeking: n,
           onSeek: r,
           progressMs: t,
           withTimes: !0,
@@ -2011,21 +2017,21 @@
         }),
         (N.Captions = function (e) {
           var t = e.audioSpaceId,
-            n = I.a.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
-            a = n.disabled,
-            r = n.icon,
-            i = n.label,
-            o = n.onPress
-          return c.a.createElement(m, { accessibilityLabel: i, disabled: a, icon: r, onPress: o })
+            a = I.a.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
+            n = a.disabled,
+            r = a.icon,
+            i = a.label,
+            o = a.onPress
+          return c.a.createElement(m, { accessibilityLabel: i, disabled: n, icon: r, onPress: o })
         }),
         (N.Play = function () {
           var e = N.usePlayButtonProps(),
             t = e.isPlaying,
-            n = e.togglePlayback
+            a = e.togglePlayback
           return c.a.createElement(m, {
             accessibilityLabel: t ? W.pause : W.play,
             icon: t ? c.a.createElement(O.a, null) : c.a.createElement(R.a, null),
-            onPress: n,
+            onPress: a,
             size: 'xLarge',
           })
         }),
@@ -2049,9 +2055,9 @@
         (N.Clip = function (e) {
           e.audioSpaceId
           var t = r.k().openSheet,
-            n = i.g(),
-            a = Object(T.a)(),
-            o = n && n.currentTimeMs < a.durationMs
+            a = i.g(),
+            n = Object(T.a)(),
+            o = a && a.currentTimeMs < n.durationMs
           return c.a.createElement(m, {
             accessibilityLabel: W.createClip,
             disabled: o,
@@ -2070,32 +2076,32 @@
         W = { skipForward: v.a.jf9f3e53, play: v.a.ic1e826e, pause: v.a.b89c5a5f, createClip: v.a.f91f00b9 },
         q = 15e3
     },
-    PaZX: function (e, t, n) {
+    PaZX: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return g
       }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return b
         })
-      n('1t7P'), n('jQ/y'), n('z84I'), n('+KXO')
-      var a = n('ERkP'),
-        r = n.n(a),
-        i = n('1YZw'),
-        o = n('hUaP'),
-        c = n('3XMw'),
-        s = n.n(c),
-        l = n('uDfI'),
-        u = n('Q/sS'),
-        d = n('dgjd'),
-        p = n('MWbm'),
-        m = n('t62R'),
-        f = n('CKsB'),
-        h = n('/yvb'),
-        v = n('rHpw')
+      a('1t7P'), a('jQ/y'), a('z84I'), a('+KXO')
+      var n = a('ERkP'),
+        r = a.n(n),
+        i = a('1YZw'),
+        o = a('hUaP'),
+        c = a('3XMw'),
+        s = a.n(c),
+        l = a('uDfI'),
+        u = a('Q/sS'),
+        d = a('dgjd'),
+        p = a('MWbm'),
+        m = a('t62R'),
+        f = a('CKsB'),
+        h = a('/yvb'),
+        v = a('rHpw')
       function g(e) {
         var t = Object(u.k)().requestSheetDismissal,
-          n = g.useReportingItems({ audioSpaceId: e.audioSpaceId })
+          a = g.useReportingItems({ audioSpaceId: e.audioSpaceId })
         return r.a.createElement(
           p.a,
           { style: y.container },
@@ -2108,9 +2114,9 @@
               b.reportThisSpace,
             ),
             r.a.createElement(m.b, { align: 'center', style: y.description }, b.describeTheIssue),
-            null == n
+            null == a
               ? void 0
-              : n.map(function (e) {
+              : a.map(function (e) {
                   return r.a.createElement(f.a, {
                     actionText: e.label,
                     key: e.label,
@@ -2126,20 +2132,20 @@
       }
       g.useReportingItems = function (e) {
         var t = e.audioSpaceId,
-          n = Object(l.c)(),
-          a = Object(d.a)(t).handlers.report
+          a = Object(l.c)(),
+          n = Object(d.a)(t).handlers.report
         return r.a.useMemo(
           function () {
-            return Object.keys(a).map(function (e) {
+            return Object.keys(n).map(function (e) {
               return {
                 label: b[e],
                 onClick: function () {
-                  a && a[e](), n(Object(i.b)({ text: b.spaceReported }))
+                  n && n[e](), a(Object(i.b)({ text: b.spaceReported }))
                 },
               }
             })
           },
-          [a, n],
+          [n, a],
         )
       }
       var b = {
@@ -2164,54 +2170,54 @@
         })
       t.b = g
     },
-    'Pc/x': function (e, t, n) {
+    'Pc/x': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return B
       })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = (n('849X'), n('TJCb'), n('7x/C'), n('JtPf'), n('KqXw'), n('LJOr'), n('yiKp')),
-        s = n.n(c),
-        l = n('KEM+'),
-        u = n.n(l),
-        d = (n('IAdD'), n('0zG9'), n('yH/f'), n('5Yy7')),
-        p = n.n(d),
-        m = n('2VqO'),
-        f = n.n(m),
-        h = n('mAxt'),
-        v = n.n(h),
-        g = (n('2G9S'), n('CEs6')),
+      var n = a('VrFO'),
+        r = a.n(n),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = (a('849X'), a('TJCb'), a('7x/C'), a('JtPf'), a('KqXw'), a('LJOr'), a('yiKp')),
+        s = a.n(c),
+        l = a('KEM+'),
+        u = a.n(l),
+        d = (a('IAdD'), a('0zG9'), a('yH/f'), a('5Yy7')),
+        p = a.n(d),
+        m = a('2VqO'),
+        f = a.n(m),
+        h = a('mAxt'),
+        v = a.n(h),
+        g = (a('2G9S'), a('CEs6')),
         b = (function (e) {
-          p()(n, e)
-          var t = f()(n)
-          function n(e, a, i) {
+          p()(a, e)
+          var t = f()(a)
+          function a(e, n, i) {
             var o
             return (
-              r()(this, n),
+              r()(this, a),
               ((o = t.call(
                 this,
-                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(a, ' message: ').concat(i),
+                ''.concat(a.displayName, ': ').concat(e, ' HTTP-').concat(n, ' message: ').concat(i),
               )).url = e),
-              (o.status = a),
+              (o.status = n),
               o
             )
           }
-          return o()(n)
+          return o()(a)
         })(v()(Error))
       u()(b, 'displayName', 'ProxseeApiError')
       var y,
         S,
-        E = n('epkG'),
-        w = n('SrIh'),
-        k = n('RqPI'),
+        E = a('epkG'),
+        w = a('SrIh'),
+        k = a('RqPI'),
         C = 0,
         x = (function () {
           function e() {
             var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _
+              a = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _
             r()(this, e),
               u()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
@@ -2233,8 +2239,8 @@
                   return t._reportSpace(s()({ abuse_type: j.AbusiveBehavior }, e))
                 },
               })
-            var a = n.httpConfig
-            ;(this.client = new E.a(s()(s()({}, M), a))), (this._authToken = void 0), (this._authPromise = null)
+            var n = a.httpConfig
+            ;(this.client = new E.a(s()(s()({}, M), n))), (this._authToken = void 0), (this._authPromise = null)
           }
           return (
             o()(e, [
@@ -2281,12 +2287,12 @@
               {
                 key: 'post',
                 value: function (e, t) {
-                  var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                    a = n.params,
-                    r = Object.assign(R(), n.headers),
+                  var a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                    n = a.params,
+                    r = Object.assign(R(), a.headers),
                     i = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
                     o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
-                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: a, data: i })
+                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: n, data: i })
                 },
               },
               {
@@ -2345,10 +2351,10 @@
                 key: 'getChatHistory',
                 value: function (e) {
                   var t = this,
-                    n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+                    a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
-                    var a = n.params,
-                      r = Object.assign(R(), n.headers),
+                    var n = a.params,
+                      r = Object.assign(R(), a.headers),
                       i = JSON.stringify({
                         access_token: e.access_token,
                         cursor: e.cursor,
@@ -2356,7 +2362,7 @@
                         since: null,
                         quick_get: !0,
                       })
-                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: a, data: i })
+                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: n, data: i })
                   })
                 },
               },
@@ -2419,17 +2425,17 @@
           host: 'https://proxsee.pscp.tv',
           errorFilter: function (e, t) {
             return t(e).then(function (t) {
-              return t.status && ((n = t.status) < 200 || n > 399)
+              return t.status && ((a = t.status) < 200 || a > 399)
                 ? Promise.reject(
                     (function (e, t) {
-                      var n = e.uri,
-                        a = t.status,
+                      var a = e.uri,
+                        n = t.status,
                         r = Object(g.a)(t)
-                      return new b(n, a, r.msg)
+                      return new b(a, n, r.msg)
                     })(e, t),
                   )
                 : t
-              var n
+              var a
             })
           },
         }
@@ -2443,7 +2449,7 @@
           AbusiveBehavior: 'HARASSMENT',
         }),
         H = new x(),
-        A = n('G6rE'),
+        A = a('G6rE'),
         D = new Error('[AudioModule] config not initialized'),
         B = new ((function () {
           function e() {
@@ -2501,32 +2507,32 @@
           )
         })())()
     },
-    Pl95: function (e, t, n) {
+    Pl95: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return f
       })
-      var a = n('Q/sS'),
-        r = n('ERkP'),
-        i = n.n(r),
-        o = n('3XMw'),
-        c = n.n(o),
-        s = n('dgjd'),
-        l = n('/yvb'),
-        u = n('rHpw'),
-        d = n('pHub'),
-        p = n('8A5z'),
-        m = n('d5IS')
+      var n = a('Q/sS'),
+        r = a('ERkP'),
+        i = a.n(r),
+        o = a('3XMw'),
+        c = a.n(o),
+        s = a('dgjd'),
+        l = a('/yvb'),
+        u = a('rHpw'),
+        d = a('pHub'),
+        p = a('8A5z'),
+        m = a('d5IS')
       function f(e) {
         var t = e.audioSpaceId,
-          n = f.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
-          a = n.disabled,
-          r = n.icon,
-          o = n.label,
-          c = n.onPress
+          a = f.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
+          n = a.disabled,
+          r = a.icon,
+          o = a.label,
+          c = a.onPress
         return i.a.createElement(l.a, {
           accessibilityLabel: o,
-          disabled: a,
+          disabled: n,
           hoverLabel: { label: o },
           icon: r,
           onPress: c,
@@ -2537,38 +2543,38 @@
       }
       function h(e) {
         switch (e.captionsState) {
-          case a.c.On:
+          case n.c.On:
             return i.a.createElement(d.a, { style: v.icon })
-          case a.c.Off:
+          case n.c.Off:
             return i.a.createElement(p.a, { style: v.icon })
-          case a.c.Unavailable:
+          case n.c.Unavailable:
           default:
             return i.a.createElement(m.a, { style: v.icon })
         }
       }
       f.useSpaceCaptionsToggleProps = function (e) {
         var t = e.audioSpaceId,
-          n = a.o(),
-          r = i.a.createElement(h, { captionsState: n })
+          a = n.o(),
+          r = i.a.createElement(h, { captionsState: a })
         return {
-          disabled: !(n !== a.c.Unavailable),
+          disabled: !(a !== n.c.Unavailable),
           icon: r,
           label: (function (e) {
             switch (e) {
-              case a.c.On:
+              case n.c.On:
                 return g.hideCaptions
-              case a.c.Off:
+              case n.c.Off:
                 return g.showCaptions
-              case a.c.Unavailable:
+              case n.c.Unavailable:
               default:
                 return g.captionsUnavailable
             }
-          })(n),
+          })(a),
           onPress: (function (e) {
             var t = e.audioSpaceId,
-              n = Object(s.a)(t).utils
+              a = Object(s.a)(t).utils
             return function () {
-              a.j(), n.scribe(':audiospace::caret:view_transcriptions:click')
+              n.j(), a.scribe(':audiospace::caret:view_transcriptions:click')
             }
           })({ audioSpaceId: t }),
         }
@@ -2578,63 +2584,63 @@
         }),
         g = { showCaptions: c.a.e674c120, hideCaptions: c.a.f45bace3, captionsUnavailable: c.a.ce96f1db }
     },
-    'Q/sS': function (e, t, n) {
+    'Q/sS': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return o
       }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return c
         }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return s
         }),
-        n.d(t, 'i', function () {
+        a.d(t, 'i', function () {
           return d
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return p
         }),
-        n.d(t, 'k', function () {
+        a.d(t, 'k', function () {
           return m
         }),
-        n.d(t, 'l', function () {
+        a.d(t, 'l', function () {
           return f
         }),
-        n.d(t, 'p', function () {
+        a.d(t, 'p', function () {
           return h
         }),
-        n.d(t, 'q', function () {
+        a.d(t, 'q', function () {
           return v
         }),
-        n.d(t, 'h', function () {
+        a.d(t, 'h', function () {
           return g
         }),
-        n.d(t, 'g', function () {
+        a.d(t, 'g', function () {
           return b
         }),
-        n.d(t, 'f', function () {
+        a.d(t, 'f', function () {
           return y
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return S
         }),
-        n.d(t, 'm', function () {
+        a.d(t, 'm', function () {
           return E
         }),
-        n.d(t, 'o', function () {
+        a.d(t, 'o', function () {
           return x
         }),
-        n.d(t, 'j', function () {
+        a.d(t, 'j', function () {
           return I
         }),
-        n.d(t, 'n', function () {
+        a.d(t, 'n', function () {
           return P
         })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = (n('7x/C'), n('JtPf'), n('2C8o')),
-        o = (n('yH/f'), Object.freeze({ full: 'full', collapse: 'collapse', exit: 'exit' })),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = (a('7x/C'), a('JtPf'), a('2C8o')),
+        o = (a('yH/f'), Object.freeze({ full: 'full', collapse: 'collapse', exit: 'exit' })),
         c = Object.freeze({ On: 'on', Off: 'off', Unavailable: 'unavailable' }),
         s = Object.freeze({
           generalNux: 'general-nux',
@@ -2643,7 +2649,7 @@
           report: 'report',
           createClip: 'create-clip',
         }),
-        l = n('ssnq'),
+        l = a('ssnq'),
         u = {
           isReplay: !1,
           startTimeMs: -1,
@@ -2756,23 +2762,23 @@
         return e && t === c.On
       }
     },
-    QEWO: function (e, t, n) {
+    QEWO: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return r
       })
-      n('ERkP')
-      var a = n('89tF'),
-        r = Object(a.a)({ space: !0, voiceTweet: !0, voiceMessage: !0 })
+      a('ERkP')
+      var n = a('89tF'),
+        r = Object(n.a)({ space: !0, voiceTweet: !0, voiceMessage: !0 })
     },
-    'S+H3': function (e, t, n) {
+    'S+H3': function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(s.a)(
@@ -2797,14 +2803,14 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    SNyS: function (e, t, n) {
+    SNyS: function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(s.a)(
@@ -2832,18 +2838,18 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    SQlS: function (e, t, n) {
+    SQlS: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return u
       })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = (n('i4UL'), n('ERkP')),
-        o = n.n(i),
-        c = n('CDzS'),
-        s = n('rHpw'),
-        l = n('k/Ka')
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = (a('i4UL'), a('ERkP')),
+        o = a.n(i),
+        c = a('CDzS'),
+        s = a('rHpw'),
+        l = a('k/Ka')
       function u(e) {
         return Object(l.a)(
           'svg',
@@ -2877,28 +2883,28 @@
         }
       })
     },
-    TCYy: function (e, t, n) {
+    TCYy: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return d
       })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ddV6'),
-        o = n.n(i),
-        c = (n('z84I'), n('i4UL'), n('2G9S'), n('uFXj'), n('yH/f'), n('ERkP')),
-        s = n.n(c),
-        l = n('rHpw'),
-        u = n('MWbm')
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ddV6'),
+        o = a.n(i),
+        c = (a('z84I'), a('i4UL'), a('2G9S'), a('uFXj'), a('yH/f'), a('ERkP')),
+        s = a.n(c),
+        l = a('rHpw'),
+        u = a('MWbm')
       function d(e) {
         var t,
-          n = e.count,
-          a = e.max,
+          a = e.count,
+          n = e.max,
           r = e.selectedIndex,
           i = 2 * f((t = l.a.theme)).px + t.borderWidthsPx.small,
-          c = s.a.useRef({ left: 0, right: a - 1 }),
+          c = s.a.useRef({ left: 0, right: n - 1 }),
           d = s.a.useRef(0),
-          v = s.a.useState(m(c.current, n, i)),
+          v = s.a.useState(m(c.current, a, i)),
           g = o()(v, 2),
           b = g[0],
           y = g[1]
@@ -2908,30 +2914,30 @@
               ;
               (e = void 0),
                 (t = void 0),
-                (a = void 0),
+                (n = void 0),
                 (o = void 0),
                 (s = void 0),
                 (l = void 0),
-                (e = n - 1),
+                (e = a - 1),
                 (t = c.current),
-                (a = t.left),
+                (n = t.left),
                 (o = t.right),
-                (l = r + 1 - a <= 2 && 0 !== a),
+                (l = r + 1 - n <= 2 && 0 !== n),
                 ((s = o - r + 1 <= 2 && o !== e) || l) &&
                   (s
-                    ? ((c.current.left = a + 1), (c.current.right = o + 1))
-                    : l && ((c.current.left = a - 1), (c.current.right = o - 1)),
+                    ? ((c.current.left = n + 1), (c.current.right = o + 1))
+                    : l && ((c.current.left = n - 1), (c.current.right = o - 1)),
                   1);
 
             );
-            var e, t, a, o, s, l
-            y(m(c.current, n, i)), (d.current = r)
+            var e, t, n, o, s, l
+            y(m(c.current, a, i)), (d.current = r)
           },
-          [r, n, a, i],
+          [r, a, n, i],
         )
-        var S = new Array(n).fill(1).map(function (e, t) {
+        var S = new Array(a).fill(1).map(function (e, t) {
           var i = t === r
-          if (n <= a) return s.a.createElement(p, { key: t, selected: i })
+          if (a <= n) return s.a.createElement(p, { key: t, selected: i })
           var o = b[t]
           return s.a.createElement(p, { continuation: Boolean(o), continuationType: o, key: t, selected: i })
         })
@@ -2940,7 +2946,7 @@
           {
             style: [
               h.indicatorWindowContainer,
-              { width: 'calc('.concat(a, ' * ').concat(i, 'px)'), height: ''.concat(i, 'px') },
+              { width: 'calc('.concat(n, ' * ').concat(i, 'px)'), height: ''.concat(i, 'px') },
             ],
           },
           s.a.createElement(
@@ -2948,7 +2954,7 @@
             {
               style: [
                 h.indicatorsContainer,
-                { height: ''.concat(i, 'px'), width: 'calc('.concat(i, 'px * ').concat(n, ')') },
+                { height: ''.concat(i, 'px'), width: 'calc('.concat(i, 'px * ').concat(a, ')') },
                 b.style,
               ],
             },
@@ -2969,18 +2975,18 @@
           }
         return s.a.createElement(u.a, { style: t })
       }
-      function m(e, t, n) {
-        var a = e.left,
+      function m(e, t, a) {
+        var n = e.left,
           r = e.right,
-          i = { style: { transform: [{ translateX: -1 * n * a }] } }
+          i = { style: { transform: [{ translateX: -1 * a * n }] } }
         return (
-          (i[a - 1] = v.small),
-          (i[a] = v.small),
-          (i[a + 1] = v.medium),
+          (i[n - 1] = v.small),
+          (i[n] = v.small),
+          (i[n + 1] = v.medium),
           (i[r - 1] = v.medium),
           (i[r] = v.small),
           (i[r + 1] = v.small),
-          0 === a ? (delete i[0], delete i[1]) : r > t - 2 && (delete i[t - 1], delete i[t - 2]),
+          0 === n ? (delete i[0], delete i[1]) : r > t - 2 && (delete i[t - 1], delete i[t - 2]),
           i
         )
       }
@@ -2989,9 +2995,9 @@
       }
       var h = l.a.create(function (e) {
           var t = f(e).style,
-            n = { transition: 'transform 200ms' },
-            a = r()(
-              r()({}, n),
+            a = { transition: 'transform 200ms' },
+            n = r()(
+              r()({}, a),
               {},
               {
                 display: 'inline-flex',
@@ -3004,16 +3010,16 @@
                 transform: [{ scale: 0.5 }],
               },
             ),
-            i = r()(r()({}, a), {}, { backgroundColor: e.colors.gray300 })
+            i = r()(r()({}, n), {}, { backgroundColor: e.colors.gray300 })
           return {
             indicatorWindowContainer: { marginVertical: e.spaces.space12, overflow: 'hidden', margin: 'auto' },
             indicatorsContainer: r()(
-              r()({}, n),
+              r()({}, a),
               {},
               { display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 'auto' },
             ),
             indicatorSelected: r()(
-              r()({}, a),
+              r()({}, n),
               {},
               {
                 borderWidth: e.borderWidths.small,
@@ -3023,31 +3029,31 @@
                 transform: [{ scale: 1 }],
               },
             ),
-            indicator: r()(r()({}, a), {}, { backgroundColor: e.colors.gray300 }),
+            indicator: r()(r()({}, n), {}, { backgroundColor: e.colors.gray300 }),
             indicatorContinuationSmall: r()(r()({}, i), {}, { transform: [{ scale: 0.3 }] }),
             indicatorContinuationMedium: r()(r()({}, i), {}, { transform: [{ scale: 0.4 }] }),
           }
         }),
         v = Object.freeze({ small: 'small', medium: 'medium' })
     },
-    UUFr: function (e, t, n) {
+    UUFr: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'default', function () {
+      a.r(t),
+        a.d(t, 'default', function () {
           return Fe
         })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = (n('KqXw'), n('WNMA'), n('ERkP')),
-        o = n.n(i),
-        c = n('Fg/a'),
-        s = n('Z5jE'),
-        l = n('yiKp'),
-        u = n.n(l),
-        d = (n('7xRU'), n('3XMw')),
-        p = n.n(d),
-        m = n('t62R'),
-        f = n('rHpw')
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = (a('KqXw'), a('WNMA'), a('ERkP')),
+        o = a.n(i),
+        c = a('Fg/a'),
+        s = a('Z5jE'),
+        l = a('yiKp'),
+        u = a.n(l),
+        d = (a('7xRU'), a('3XMw')),
+        p = a.n(d),
+        m = a('t62R'),
+        f = a('rHpw')
       function h(e) {
         return o.a.createElement(
           m.b,
@@ -3059,32 +3065,32 @@
         g = f.a.create(function (e) {
           return { container: { paddingBottom: e.spaces.space48 } }
         }),
-        b = n('Pc/x'),
-        y = (n('z84I'), n('p3P5')),
-        S = n('m3Bd'),
-        E = n.n(S),
-        w = n('ddV6'),
-        k = n.n(w),
-        C = n('hOZg'),
-        x = n('RqPI')
-      var I = n('zCf4'),
-        P = n('uDfI'),
-        T = n('dgjd'),
-        O = n('mjJ+'),
-        R = n('/yvb'),
-        L = n('FXw/'),
-        _ = n('GCOQ')
+        b = a('Pc/x'),
+        y = (a('z84I'), a('p3P5')),
+        S = a('m3Bd'),
+        E = a.n(S),
+        w = a('ddV6'),
+        k = a.n(w),
+        C = a('hOZg'),
+        x = a('RqPI')
+      var I = a('zCf4'),
+        P = a('uDfI'),
+        T = a('dgjd'),
+        O = a('mjJ+'),
+        R = a('/yvb'),
+        L = a('FXw/'),
+        _ = a('GCOQ')
       function M(e) {
         var t = (function (e) {
             var t = Object(I.f)(),
-              n = Object(T.a)(e).utils,
-              a = Object(P.d)(x.n),
+              a = Object(T.a)(e).utils,
+              n = Object(P.d)(x.n),
               r = [],
               i = {
                 Icon: _.a,
                 isEmphasized: !0,
                 onClick: function () {
-                  n.scribe(':audiospace::caret:report:click'),
+                  a.scribe(':audiospace::caret:report:click'),
                     t.push(
                       (function (e) {
                         return '/i/spaces/'.concat(e, '/peek/report')
@@ -3093,13 +3099,13 @@
                 },
                 text: z.reportThisSpace,
               }
-            a && r.push(i)
+            n && r.push(i)
             return { items: r }
           })(e.audioSpaceId),
-          n = o.a.useState(!1),
-          a = k()(n, 2),
-          r = a[0],
-          i = a[1]
+          a = o.a.useState(!1),
+          n = k()(a, 2),
+          r = n[0],
+          i = n[1]
         if (t.items.length < 1) return null
         var c = r
           ? o.a.createElement(O.a, {
@@ -3130,16 +3136,16 @@
         )
       }
       var z = { more: p.a.h63a5c3b, reportThisSpace: p.a.b3481ffd },
-        j = n('0nhk'),
-        H = n('xVWt')
-      var A = n('MWbm'),
-        D = n('sgih'),
+        j = a('0nhk'),
+        H = a('xVWt')
+      var A = a('MWbm'),
+        D = a('sgih'),
         B = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
         N = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
       function F(e) {
         var t,
-          n,
           a,
+          n,
           i,
           c,
           s = {
@@ -3152,20 +3158,20 @@
           },
           l =
             ((t = o.a.useState(null)),
-            (n = k()(t, 2)),
-            (a = n[0]),
-            (i = n[1]),
+            (a = k()(t, 2)),
+            (n = a[0]),
+            (i = a[1]),
             (c = o.a.useMemo(
               function () {
-                if (!a)
+                if (!n)
                   return function (e) {
                     var t = e.nativeEvent.layout
                     t && i(t)
                   }
               },
-              [a],
+              [n],
             )),
-            [a, c]),
+            [n, c]),
           u = k()(l, 2),
           d = u[0],
           p = u[1],
@@ -3186,11 +3192,11 @@
       function V(e) {
         e.Content, e.CustomHeader, e.withoutDescription, e.withoutPadding
         var t = E()(e, B),
-          n = o.a.createElement(
+          a = o.a.createElement(
             R.a,
             r()(
               {
-                accessibilityLabel: J.close,
+                accessibilityLabel: X.close,
                 icon: o.a.createElement(C.a, { style: K.closeIcon }),
                 onPress: e.onClose,
                 pullLeft: !0,
@@ -3198,24 +3204,24 @@
               G,
             ),
           )
-        if (e.CustomHeader) return o.a.createElement(e.CustomHeader, r()({}, t, { closeButton: n }))
-        var a = e.space.rest_id
+        if (e.CustomHeader) return o.a.createElement(e.CustomHeader, r()({}, t, { closeButton: a }))
+        var n = e.space.rest_id
         return o.a.createElement(
           A.a,
           { style: K.header },
-          o.a.createElement(A.a, { style: K.headerLeft }, n),
+          o.a.createElement(A.a, { style: K.headerLeft }, a),
           o.a.createElement(
             A.a,
             { style: K.headerRight },
             o.a.createElement(
               A.a,
               { style: K.headerRightItem },
-              o.a.createElement(j.a, { audioSpaceId: a, type: 'icon-borderless' }),
+              o.a.createElement(j.a, { audioSpaceId: n, type: 'icon-borderless' }),
             ),
             o.a.createElement(
               A.a,
               { style: K.headerRightItem },
-              o.a.createElement(M, { audioSpaceId: a, pullRight: !0 }),
+              o.a.createElement(M, { audioSpaceId: n, pullRight: !0 }),
             ),
           ),
         )
@@ -3233,11 +3239,11 @@
         if (!e.Content) return null
         e.Content, e.CustomHeader
         var t = e.shellLayout,
-          n = (e.withoutDescription, e.withoutPadding, E()(e, N))
+          a = (e.withoutDescription, e.withoutPadding, E()(e, N))
         return o.a.createElement(
           A.a,
           { style: [K.content, e.withoutPadding && K.withoutPadding] },
-          o.a.createElement(e.Content, r()({}, n, { onClose: e.onClose, shellLayout: t })),
+          o.a.createElement(e.Content, r()({}, a, { onClose: e.onClose, shellLayout: t })),
         )
       }
       function q(e) {
@@ -3245,15 +3251,15 @@
       }
       var K = f.a.create(function (e) {
           var t = q(e),
-            n = { height: e.spacesPx.space24 },
-            a = u()({ flex: 1 }, t.sheetContainer),
+            a = { height: e.spacesPx.space24 },
+            n = u()({ flex: 1 }, t.sheetContainer),
             r = { flex: 1, paddingVertical: e.spacesPx.space20 },
             i = { marginLeft: e.spaces.space8 },
             o = { paddingVertical: e.spacesPx.space16 },
             c = e.spacesPx.space24
           return {
-            sheetSpacerTop: n,
-            sheetContainer: a,
+            sheetSpacerTop: a,
+            sheetContainer: n,
             withoutPadding: { paddingHorizontal: 0, paddingVertical: 0 },
             content: r,
             header: { flexDirection: 'row' },
@@ -3265,18 +3271,18 @@
           }
         }),
         G = { borderColor: 'transparent', color: 'text', size: 'medium' },
-        J = { close: p.a.ia5e7487 }
-      function X(e, t) {
-        var n,
-          a,
+        X = { close: p.a.ia5e7487 }
+      function J(e, t) {
+        var a,
+          n,
           r = t.width,
           i = t.height,
           o =
-            ((n = f.a.theme),
-            (a = q(n)),
+            ((a = f.a.theme),
+            (n = q(a)),
             {
               getHorizontal: function (e) {
-                return e - 2 * a.sheetContainer.paddingHorizontal
+                return e - 2 * n.sheetContainer.paddingHorizontal
               },
             }),
           c = Object(y.b)(f.a.theme),
@@ -3294,28 +3300,28 @@
       var Z = 600,
         Y = 0.8,
         Q = 1,
-        $ = n('4EYz'),
-        ee = n('s1N3'),
-        te = n('i4Oy'),
-        ne = n('VKFJ')
-      function ae(e) {
+        $ = a('4EYz'),
+        ee = a('s1N3'),
+        te = a('i4Oy'),
+        ae = a('VKFJ')
+      function ne(e) {
         var t = e.shellLayout
         if (!t) return null
-        var n = ie(te.a.get('window')),
-          a = X(ie(t), n),
+        var a = ie(te.a.get('window')),
+          n = J(ie(t), a),
           r = e.cohosts,
           i = e.host,
           c = e.participants,
           s = []
-        i && s.push({ user: i, kind: ne.a.host })
+        i && s.push({ user: i, kind: ae.a.host })
         for (
           var l = Object(ee.a)(r, function (e) {
               return e.twitter_screen_name
             }).map(function (e) {
-              return { user: e, kind: ne.a.cohost }
+              return { user: e, kind: ae.a.cohost }
             }),
             u = 0;
-          u < l.length && !(s.length >= a.maxDisplayParticipantCount);
+          u < l.length && !(s.length >= n.maxDisplayParticipantCount);
           u++
         )
           s.push(l[u])
@@ -3323,16 +3329,16 @@
           var d = Object(ee.a)(c.speakers, function (e) {
               return e.twitter_screen_name
             }).map(function (e) {
-              return { user: e, kind: ne.a.speaker }
+              return { user: e, kind: ae.a.speaker }
             }),
             p = 0;
-          p < d.length && !(s.length >= a.maxDisplayParticipantCount);
+          p < d.length && !(s.length >= n.maxDisplayParticipantCount);
           p++
         )
           s.push(d[p])
-        for (var m = 0; m < c.listeners.length && !(s.length >= a.maxDisplayParticipantCount); m++) {
+        for (var m = 0; m < c.listeners.length && !(s.length >= n.maxDisplayParticipantCount); m++) {
           var f = c.listeners[m]
-          f && e._temp_omitByScreenName !== f.twitter_screen_name && s.push({ user: f, kind: ne.a.listener })
+          f && e._temp_omitByScreenName !== f.twitter_screen_name && s.push({ user: f, kind: ae.a.listener })
         }
         var h = c.total || l.length + d.length,
           v = Math.max(0, h - s.length)
@@ -3354,7 +3360,7 @@
                   name: e.user.display_name,
                   profile_image_url_https: e.user.avatar_url,
                   screenName: e.user.twitter_screen_name,
-                  width: a.dynamicParticipantWidth,
+                  width: n.dynamicParticipantWidth,
                 })
               }),
             ),
@@ -3372,17 +3378,17 @@
         var t = e.height
         return { width: e.width, height: t }
       }
-      var oe = n('ISLN')
+      var oe = a('ISLN')
       function ce(e) {
         var t = e.space
         if (!t) return null
-        var n = b.a.loggedInUser(),
-          a = n && n.screen_name
+        var a = b.a.loggedInUser(),
+          n = a && a.screen_name
         return o.a.createElement(
           o.a.Fragment,
           null,
-          o.a.createElement(ae, {
-            _temp_omitByScreenName: a,
+          o.a.createElement(ne, {
+            _temp_omitByScreenName: n,
             audioSpaceId: t.rest_id,
             cohosts: t.cohosts,
             host: t.host,
@@ -3430,10 +3436,10 @@
             },
           }
         }),
-        ue = n('BXJq'),
-        de = n('VRZ4'),
-        pe = n('CDzS'),
-        me = n('Tg44')
+        ue = a('BXJq'),
+        de = a('VRZ4'),
+        pe = a('CDzS'),
+        me = a('Tg44')
       function fe(e) {
         var t = Object(ue.a)(e.broadcastId)
         return o.a.createElement(
@@ -3480,7 +3486,7 @@
         be = f.a.create(function (e) {
           return { container: { paddingBottom: e.spaces.space48 } }
         }),
-        ye = (n('LW0h'), n('7x/C'), n('cFuS'))
+        ye = (a('LW0h'), a('7x/C'), a('cFuS'))
       function Se(e) {
         return o.a.createElement(
           A.a,
@@ -3517,9 +3523,9 @@
             endedSubtitle: { paddingTop: e.spaces.space12 },
           }
         }),
-        ke = n('hqDb'),
-        Ce = n('cHvH'),
-        xe = n('88ay'),
+        ke = a('hqDb'),
+        Ce = a('cHvH'),
+        xe = a('88ay'),
         Ie = ['windowWidth']
       function Pe(e, t) {
         return o.a.createElement(xe.b, {
@@ -3540,14 +3546,14 @@
       }
       function Re(e) {
         var t = e.isWide,
-          n = e.label,
-          a = e.style,
+          a = e.label,
+          n = e.style,
           r = e.users
         return 0 === r.length
           ? null
           : o.a.createElement(
               A.a,
-              { style: a },
+              { style: n },
               o.a.createElement(
                 m.b,
                 {
@@ -3556,15 +3562,15 @@
                   style: t ? ze.endedSubtitleWide : ze.endedSubtitle,
                   weight: 'bold',
                 },
-                n,
+                a,
               ),
               o.a.createElement(ke.a, { displayMode: 'UserCompact', renderUserCell: t ? Oe : Te, userIds: r }),
             )
       }
       function Le(e) {
         var t,
-          n,
-          a = e.windowWidth,
+          a,
+          n = e.windowWidth,
           r = E()(e, Ie),
           i = r.space
         if (!i) return o.a.createElement(Se, r)
@@ -3580,10 +3586,10 @@
                     .filter(Boolean)) || [],
             )
           },
-          s = null === (t = i.host) || void 0 === t || null === (n = t.user) || void 0 === n ? void 0 : n.rest_id,
+          s = null === (t = i.host) || void 0 === t || null === (a = t.user) || void 0 === a ? void 0 : a.rest_id,
           l = c(i.cohosts),
           u = c(i.participants.speakers),
-          d = a > f.a.theme.breakpoints.medium
+          d = n > f.a.theme.breakpoints.medium
         return o.a.createElement(
           A.a,
           { style: d ? ze.endedContainerWide : ze.endedContainer },
@@ -3608,17 +3614,17 @@
       }
       function _e(e) {
         return o.a.createElement(Ce.a, null, function (t) {
-          var n = t.windowWidth
-          return o.a.createElement(Le, r()({ windowWidth: n }, e))
+          var a = t.windowWidth
+          return o.a.createElement(Le, r()({ windowWidth: a }, e))
         })
       }
       var Me = { spaceEnded: p.a.ba55e824, host: p.a.cededf29, cohosts: p.a.aadbc746, speakers: p.a.hbd6035f },
         ze = f.a.create(function (e) {
           var t = { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 },
-            n = { width: '100%', maxHeight: 550, overflow: 'auto' }
+            a = { width: '100%', maxHeight: 550, overflow: 'auto' }
           return {
-            endedContainer: n,
-            endedContainerWide: u()(u()({}, n), {}, { paddingBottom: e.componentDimensions.gutterHorizontalPx }),
+            endedContainer: a,
+            endedContainerWide: u()(u()({}, a), {}, { paddingBottom: e.componentDimensions.gutterHorizontalPx }),
             endedSubtitle: u()(u()({}, t), {}, { paddingHorizontal: e.componentDimensions.gutterHorizontalPx }),
             endedSubtitleWide: u()(u()({}, t), {}, { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx }),
             userCell: { paddingHorizontal: e.componentDimensions.gutterHorizontalPx },
@@ -3627,22 +3633,22 @@
             userSectionPadding: { paddingTop: e.spacesPx.space16 },
           }
         }),
-        je = n('21zW'),
-        He = n('MH+I')
+        je = a('21zW'),
+        He = a('MH+I')
       function Ae(e) {
         var t,
-          n,
-          a = null === (t = e.space) || void 0 === t ? void 0 : t.ended_at,
-          r = null === (n = e.space) || void 0 === n ? void 0 : n.started_at,
+          a,
+          n = null === (t = e.space) || void 0 === t ? void 0 : t.ended_at,
+          r = null === (a = e.space) || void 0 === a ? void 0 : a.started_at,
           i = 0
         return (
-          null != a && null != r && (i = a - r),
+          null != n && null != r && (i = n - r),
           o.a.createElement(Ce.a, null, function (t) {
-            var n,
-              a = t.windowWidth
+            var a,
+              n = t.windowWidth
             return o.a.createElement(
               A.a,
-              { style: a > f.a.theme.breakpoints.medium ? Be.endedHeaderWide : Be.endedHeader },
+              { style: n > f.a.theme.breakpoints.medium ? Be.endedHeaderWide : Be.endedHeader },
               o.a.createElement(
                 A.a,
                 null,
@@ -3669,7 +3675,7 @@
               o.a.createElement(
                 m.b,
                 { size: 'title2', weight: 'bold' },
-                null === (n = e.space) || void 0 === n ? void 0 : n.title,
+                null === (a = e.space) || void 0 === a ? void 0 : a.title,
               ),
             )
           })
@@ -3689,14 +3695,14 @@
         })
       function Ne(e) {
         var t,
-          n,
-          a = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
+          a,
+          n = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
           i = Object(T.a)(e.broadcastId || '')
         o.a.useEffect(function () {
           var e
           return (
             i.utils.is.joined && (e = setTimeout(s, 1e3)),
-            i.utils.scribe(':audiospace:preview:::impression', { origin: a }),
+            i.utils.scribe(':audiospace:preview:::impression', { origin: n }),
             function () {
               clearTimeout(e)
             }
@@ -3714,11 +3720,11 @@
             space: c,
             onClose: s,
             onJoin: function () {
-              return i.handlers.join(a)
+              return i.handlers.join(n)
             },
           },
         )
-        return null !== (n = i.space) && void 0 !== n && n.ticket_group_id
+        return null !== (a = i.space) && void 0 !== a && a.ticket_group_id
           ? o.a.createElement(F, r()({}, l, { Content: ve }))
           : i.utils.is.joined
           ? o.a.createElement(F, r()({}, l, { Content: h }))
@@ -3741,27 +3747,27 @@
         return o.a.createElement(Ne, r()({}, e, { broadcastId: t }))
       }
     },
-    VKFJ: function (e, t, n) {
+    VKFJ: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return p
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return m
         })
-      var a,
-        r = n('KEM+'),
-        i = n.n(r),
-        o = n('RhWx'),
-        c = n.n(o),
-        s = (n('lTEL'), n('m9LP'), n('7x/C'), n('87if'), n('kYxP'), n('2G9S'), n('yH/f'), n('A7Vd')),
-        l = n('ERkP'),
-        u = n.n(l),
-        d = n('dgjd')
+      var n,
+        r = a('KEM+'),
+        i = a.n(r),
+        o = a('RhWx'),
+        c = a.n(o),
+        s = (a('lTEL'), a('m9LP'), a('7x/C'), a('87if'), a('kYxP'), a('2G9S'), a('yH/f'), a('A7Vd')),
+        l = a('ERkP'),
+        u = a.n(l),
+        d = a('dgjd')
       function p(e) {
         var t = Object(d.a)(e),
-          n = t.space,
-          a = t.utils,
+          a = t.space,
+          n = t.utils,
           r = s.e()
         return u.a.useMemo(
           function () {
@@ -3770,35 +3776,35 @@
               i = []
             function o() {
               var e = [].concat(t, i),
-                a = (null == n ? void 0 : n.participants.total) || 0,
-                r = Math.max(0, a - e.length)
+                n = (null == a ? void 0 : a.participants.total) || 0,
+                r = Math.max(0, n - e.length)
               return { all: e, speakers: t, listeners: i, otherParticipantsTotal: r }
             }
-            function s(n, a, r) {
-              var o = a.twitter_screen_name
+            function s(a, n, r) {
+              var o = n.twitter_screen_name
               if (o && !e.has(o)) {
                 e.set(o, !0)
-                var c = { key: o, user: a, kind: n, periscopeUserId: r }
-                p.canParticipantSpeak(n) ? t.push(c) : i.push(c)
+                var c = { key: o, user: n, kind: a, periscopeUserId: r }
+                p.canParticipantSpeak(a) ? t.push(c) : i.push(c)
               }
             }
-            if (!n) return o()
-            n.host && s(m.host, n.host, n.host.periscope_user_id)
-            var l = [].concat(c()(n.cohosts), c()(n.participants.speakers))
-            a.is.replayable || l.push.apply(l, c()(n.participants.listeners))
+            if (!a) return o()
+            a.host && s(m.host, a.host, a.host.periscope_user_id)
+            var l = [].concat(c()(a.cohosts), c()(a.participants.speakers))
+            n.is.replayable || l.push.apply(l, c()(a.participants.listeners))
             for (var u = 0; u < l.length; u++) {
               var d = l[u],
                 f = d.periscope_user_id
               if (f)
                 r.get(f)
-                  ? u < n.cohosts.length
+                  ? u < a.cohosts.length
                     ? s(m.cohost, d, f)
                     : s(m.speaker, d, f)
-                  : a.is.replayable || s(m.listener, d, f)
+                  : n.is.replayable || s(m.listener, d, f)
             }
             return o()
           },
-          [n, r, a.is.replayable],
+          [a, r, n.is.replayable],
         )
       }
       ;(p.canParticipantSpeak = function (e) {
@@ -3808,55 +3814,55 @@
           return e === m.host
         })
       var m = Object.freeze({ host: 'host', cohost: 'cohost', speaker: 'speaker', listener: 'listener' }),
-        f = ((a = {}), i()(a, m.host, !0), i()(a, m.cohost, !0), i()(a, m.speaker, !0), a)
+        f = ((n = {}), i()(n, m.host, !0), i()(n, m.cohost, !0), i()(n, m.speaker, !0), n)
     },
-    Xda3: function (e, t, n) {
+    Xda3: function (e, t, a) {
       'use strict'
-      n.d(t, 'c', function () {
+      a.d(t, 'c', function () {
         return R
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return B
         }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return N
         })
-      var a = n('1Pcy'),
-        r = n.n(a),
-        i = n('5Yy7'),
-        o = n.n(i),
-        c = n('2VqO'),
-        s = n.n(c),
-        l = n('RhWx'),
-        u = n.n(l),
-        d = n('VrFO'),
-        p = n.n(d),
-        m = n('Y9Ll'),
-        f = n.n(m),
-        h = n('KEM+'),
-        v = n.n(h),
+      var n = a('1Pcy'),
+        r = a.n(n),
+        i = a('5Yy7'),
+        o = a.n(i),
+        c = a('2VqO'),
+        s = a.n(c),
+        l = a('RhWx'),
+        u = a.n(l),
+        d = a('VrFO'),
+        p = a.n(d),
+        m = a('Y9Ll'),
+        f = a.n(m),
+        h = a('KEM+'),
+        v = a.n(h),
         g =
-          (n('7x/C'),
-          n('JtPf'),
-          n('TJCb'),
-          n('DZ+c'),
-          n('jwue'),
-          n('+oxZ'),
-          n('0zG9'),
-          n('lZm3'),
-          n('yH/f'),
-          n('KqXw'),
-          n('MvUL'),
-          n('2C8o')),
-        b = n('HmZq'),
-        y = n('Q/sS'),
-        S = n('A7Vd'),
-        E = n('Pc/x'),
-        w = n('Chkh'),
-        k = n('b2fv'),
-        C = n('SrIh'),
-        x = n('fEA7'),
-        I = n.n(x),
+          (a('7x/C'),
+          a('JtPf'),
+          a('TJCb'),
+          a('DZ+c'),
+          a('jwue'),
+          a('+oxZ'),
+          a('0zG9'),
+          a('lZm3'),
+          a('yH/f'),
+          a('KqXw'),
+          a('MvUL'),
+          a('2C8o')),
+        b = a('HmZq'),
+        y = a('Q/sS'),
+        S = a('A7Vd'),
+        E = a('Pc/x'),
+        w = a('Chkh'),
+        k = a('b2fv'),
+        C = a('SrIh'),
+        x = a('fEA7'),
+        I = a.n(x),
         P = '/chatapi/v1/chatnow',
         T = '/chatapi/v1/history',
         O = null
@@ -3880,21 +3886,21 @@
       )
       var L = (function () {
           function e(t) {
-            var n = this
+            var a = this
             p()(this, e),
               v()(this, 'session', null),
               v()(this, 'socket', null),
               v()(this, 'socketState', H.Uninitialized),
               v()(this, 'handleOnOpen', function () {
-                n.authAndJoinRoom(), (n.socketState = H.Connected)
+                a.authAndJoinRoom(), (a.socketState = H.Connected)
               }),
               v()(this, 'handleOnMessage', function (e) {
                 if ('string' == typeof e.data) {
                   var t = JSON.parse(e.data)
                   if (t.kind === A.Chat) {
-                    var n = t.payload,
-                      a = t.signature,
-                      r = new j(n, { signature: a })
+                    var a = t.payload,
+                      n = t.signature,
+                      r = new j(a, { signature: n })
                     w.a.publish(r)
                   }
                 }
@@ -3907,15 +3913,15 @@
                 key: 'connect',
                 value: function () {
                   var e = this
-                  return new Promise(function (t, n) {
+                  return new Promise(function (t, a) {
                     E.a.proxsee
                       .accessChat(e.chatToken)
                       .then(
-                        function (n) {
-                          return (e.session = n), y.i.getState().isReplay ? e.loadChatHistory() : e.openSocket(), t(e)
+                        function (a) {
+                          return (e.session = a), y.i.getState().isReplay ? e.loadChatHistory() : e.openSocket(), t(e)
                         },
                         function (e) {
-                          return n(e)
+                          return a(e)
                         },
                       )
                       .catch(function (e) {
@@ -3965,10 +3971,10 @@
                   if (this.session) {
                     var e,
                       t,
-                      n = this.session,
-                      a = n.access_token,
-                      r = n.room_id
-                    null === (e = this.socket) || void 0 === e || e.send(z.build(a).toString()),
+                      a = this.session,
+                      n = a.access_token,
+                      r = a.room_id
+                    null === (e = this.socket) || void 0 === e || e.send(z.build(n).toString()),
                       null === (t = this.socket) || void 0 === t || t.send(M.buildJoin(r).toString())
                   }
                 },
@@ -3978,9 +3984,9 @@
                 value: function () {
                   var e = this,
                     t = this.session || {},
-                    n = t.access_token,
-                    a = t.endpoint
-                  if (!n || !a) return Promise.resolve([])
+                    a = t.access_token,
+                    n = t.endpoint
+                  if (!a || !n) return Promise.resolve([])
                   try {
                     return new Promise(function (t, r) {
                       var i = [],
@@ -3992,7 +3998,7 @@
                           if (!s) return b.onCompleteHistory(), t(i)
                           ;(o = s), e.handleHistoryMessages(l), i.push.apply(i, u()(l))
                         }
-                        E.a.proxsee.getChatHistory({ access_token: n, host: a, path: T, cursor: o }).then(r)
+                        E.a.proxsee.getChatHistory({ access_token: a, host: n, path: T, cursor: o }).then(r)
                       })()
                     })
                   } catch (r) {
@@ -4006,9 +4012,9 @@
                   var t = []
                   e.forEach(function (e) {
                     if (e.kind === A.Chat) {
-                      var n = e.payload,
-                        a = e.signature
-                      t.push(new j(n, { signature: a }))
+                      var a = e.payload,
+                        n = e.signature
+                      t.push(new j(a, { signature: n }))
                     }
                   }),
                     b.insert.apply(b, t)
@@ -4019,8 +4025,8 @@
           )
         })(),
         _ = (function () {
-          function e(t, n) {
-            p()(this, e), (this.payload = t), (this.kind = n)
+          function e(t, a) {
+            p()(this, e), (this.payload = t), (this.kind = a)
           }
           return (
             f()(e, [
@@ -4037,56 +4043,56 @@
           )
         })(),
         M = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            var a
-            return p()(this, n), (a = t.call(this, e, A.Control)), v()(r()(a), 'data', {}), (a.data = JSON.parse(e)), a
+          o()(a, e)
+          var t = s()(a)
+          function a(e) {
+            var n
+            return p()(this, a), (n = t.call(this, e, A.Control)), v()(r()(n), 'data', {}), (n.data = JSON.parse(e)), n
           }
           return (
-            f()(n, null, [
+            f()(a, null, [
               {
                 key: 'buildJoin',
                 value: function (e) {
-                  return new n(JSON.stringify({ body: JSON.stringify({ room: e }), kind: D.Join }))
+                  return new a(JSON.stringify({ body: JSON.stringify({ room: e }), kind: D.Join }))
                 },
               },
             ]),
-            n
+            a
           )
         })(_),
         z = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            return p()(this, n), t.call(this, e, A.Auth)
+          o()(a, e)
+          var t = s()(a)
+          function a(e) {
+            return p()(this, a), t.call(this, e, A.Auth)
           }
           return (
-            f()(n, null, [
+            f()(a, null, [
               {
                 key: 'build',
                 value: function (e) {
-                  return new n(JSON.stringify({ access_token: e }))
+                  return new a(JSON.stringify({ access_token: e }))
                 },
               },
             ]),
-            n
+            a
           )
         })(_),
         j = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            var a,
+          o()(a, e)
+          var t = s()(a)
+          function a(e) {
+            var n,
               i,
               o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-            p()(this, n), (i = t.call(this, e, A.Chat)), v()(r()(i), 'data', {}), v()(r()(i), 'body', {})
+            p()(this, a), (i = t.call(this, e, A.Chat)), v()(r()(i), 'data', {}), v()(r()(i), 'body', {})
             var c = o.currentNtpTimeInSeconds,
               s = o.isReplay,
               l = o.signature
             return (
               (i.data = JSON.parse(e)),
-              (i.body = ((null === (a = i.data) || void 0 === a ? void 0 : a.body) && JSON.parse(i.data.body)) || {}),
+              (i.body = ((null === (n = i.data) || void 0 === n ? void 0 : n.body) && JSON.parse(i.data.body)) || {}),
               i.setUuid(l),
               i.setTime(c, s),
               (i.type = i.body.type),
@@ -4096,7 +4102,7 @@
             )
           }
           return (
-            f()(n, [
+            f()(a, [
               {
                 key: 'setUuid',
                 value: function (e) {
@@ -4108,9 +4114,9 @@
                 value: function () {
                   var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
                     t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = t && !!this.body.ntpForBroadcasterFrame,
-                    a = n ? this.body.ntpForBroadcasterFrame : this.body.ntpForLiveFrame || e,
-                    r = parseFloat(a / 4294967296)
+                    a = t && !!this.body.ntpForBroadcasterFrame,
+                    n = a ? this.body.ntpForBroadcasterFrame : this.body.ntpForLiveFrame || e,
+                    r = parseFloat(n / 4294967296)
                   ;(this.body.ntpTimeInSeconds = r), (this.body.timestamp = Object(k.b)(r).getTime())
                 },
               },
@@ -4121,7 +4127,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(_),
         H = Object.freeze({
@@ -4165,23 +4171,23 @@
         }),
         N = Object.freeze({ RemoveParticipant: 15 })
     },
-    Z5jE: function (e, t, n) {
+    Z5jE: function (e, t, a) {
       'use strict'
-      function a(e) {
+      function n(e) {
         return e.params.broadcastId || ''
       }
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       })
     },
-    Zg3A: function (e, t, n) {
+    Zg3A: function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(s.a)(
@@ -4206,47 +4212,47 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    abiO: function (e, t, n) {
+    abiO: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return D
       })
-      var a = n('KEM+'),
-        r = n.n(a),
-        i = n('yiKp'),
-        o = n.n(i),
-        c = n('ddV6'),
-        s = n.n(c),
-        l = n('97Jx'),
-        u = n.n(l),
-        d = (n('ho0z'), n('2G9S'), n('ERkP')),
-        p = n.n(d),
-        m = n('t62R'),
-        f = n('/yvb'),
-        h = n('n4Eu'),
-        v = n('3XMw'),
-        g = n.n(v),
-        b = n('cm6r'),
-        y = n('/NU0'),
-        S = n('wD1h'),
-        E = n('Oe3h'),
-        w = n('0FVZ'),
-        k = n('pjBI'),
-        C = n('FBXD'),
-        x = n('9RkS'),
-        I = n('rHpw'),
-        P = n('MH+I'),
-        T = n('jhWN'),
-        O = n('jV+4'),
-        R = n('MWbm'),
-        L = n('kRXa'),
-        _ = n('5Ixf'),
-        M = n('AtEG'),
-        z = n('hOZg')
+      var n = a('KEM+'),
+        r = a.n(n),
+        i = a('yiKp'),
+        o = a.n(i),
+        c = a('ddV6'),
+        s = a.n(c),
+        l = a('97Jx'),
+        u = a.n(l),
+        d = (a('ho0z'), a('2G9S'), a('ERkP')),
+        p = a.n(d),
+        m = a('t62R'),
+        f = a('/yvb'),
+        h = a('n4Eu'),
+        v = a('3XMw'),
+        g = a.n(v),
+        b = a('cm6r'),
+        y = a('/NU0'),
+        S = a('wD1h'),
+        E = a('Oe3h'),
+        w = a('0FVZ'),
+        k = a('pjBI'),
+        C = a('FBXD'),
+        x = a('9RkS'),
+        I = a('rHpw'),
+        P = a('MH+I'),
+        T = a('jhWN'),
+        O = a('jV+4'),
+        R = a('MWbm'),
+        L = a('kRXa'),
+        _ = a('5Ixf'),
+        M = a('AtEG'),
+        z = a('hOZg')
       function j(e) {
         var t = U(e.onDockPress),
-          n = U(e.onUserPress),
-          a = U(e.onRequestClose),
+          a = U(e.onUserPress),
+          n = U(e.onRequestClose),
           r = U(e.onTogglePlayback)
         return p.a.createElement(
           p.a.Fragment,
@@ -4268,7 +4274,7 @@
             p.a.createElement(T.a, {
               accessibilityHidden: !0,
               focusable: !1,
-              onClick: n,
+              onClick: a,
               screenName: e.user.screen_name,
               size: 'large',
               uri: e.user.profile_image_url_https,
@@ -4284,7 +4290,7 @@
                   isVerified: e.user.verified,
                   name: e.user.name,
                   nameSize: 'subtext2',
-                  onLinkClick: n,
+                  onLinkClick: a,
                   screenName: e.user.screen_name,
                   screenNameSize: 'subtext2',
                   weight: 'normal',
@@ -4309,23 +4315,23 @@
             p.a.createElement(R.a, { style: F.dockContentButtonSpacer }),
             p.a.createElement(
               f.a,
-              u()({ accessibilityLabel: B.close, icon: p.a.createElement(z.a, null), onPress: a, testID: 'close' }, N),
+              u()({ accessibilityLabel: B.close, icon: p.a.createElement(z.a, null), onPress: n, testID: 'close' }, N),
             ),
           ),
         )
       }
       function H(e) {
         var t = U(e.onDockPress),
-          n = U(e.onRequestClose),
-          a = U(e.onTogglePlayback),
+          a = U(e.onRequestClose),
+          n = U(e.onTogglePlayback),
           r = U(e.onUserPress),
           i = p.a.useMemo(
             function () {
               var t,
-                n = null === (t = e.user.profile_image_extensions_media_color) || void 0 === t ? void 0 : t.palette
-              if (n) {
-                var a = h.a.get(n)
-                if (a) return W(a.rgb)
+                a = null === (t = e.user.profile_image_extensions_media_color) || void 0 === t ? void 0 : t.palette
+              if (a) {
+                var n = h.a.get(a)
+                if (n) return W(n.rgb)
               }
               return I.a.theme.colors.primary
             },
@@ -4410,7 +4416,7 @@
                   {
                     accessibilityLabel: e.isPlaying ? B.pause : B.play,
                     icon: e.isPlaying ? p.a.createElement(_.a, null) : p.a.createElement(M.a, null),
-                    onPress: a,
+                    onPress: n,
                     testID: 'togglePlayback',
                   },
                   N,
@@ -4424,7 +4430,7 @@
               {
                 accessibilityLabel: B.close,
                 icon: p.a.createElement(z.a, null),
-                onPress: n,
+                onPress: a,
                 style: V.closeIcon,
                 testID: 'close',
               },
@@ -4435,15 +4441,15 @@
       }
       function A(e) {
         var t,
-          n = p.a.useRef({}),
-          a = p.a.useRef(null),
+          a = p.a.useRef({}),
+          n = p.a.useRef(null),
           i = e.isWide && V.wideContainerBorderRadius,
           c = U(function () {
-            n.current.isSliderActive || e.onDockPress()
+            a.current.isSliderActive || e.onDockPress()
           }),
           s = p.a.useMemo(function () {
             return function () {
-              a.current && a.current.focus()
+              n.current && n.current.focus()
             }
           }, [])
         p.a.useEffect(
@@ -4462,17 +4468,17 @@
               }
             })(e)
             return (
-              a.current && a.current.addEventListener('keydown', t),
+              n.current && n.current.addEventListener('keydown', t),
               function () {
-                a.current && a.current.removeEventListener('keydown', t)
+                n.current && n.current.removeEventListener('keydown', t)
               }
             )
           },
-          [a.current, e.onTogglePlayback],
+          [n.current, e.onTogglePlayback],
         ),
           p.a.useEffect(function () {
             return function () {
-              clearTimeout(n.current.onSliderActiveTimeout)
+              clearTimeout(a.current.onSliderActiveTimeout)
             }
           }, [])
         var l = e.title || B.untitled,
@@ -4482,11 +4488,11 @@
             {
               title: l,
               onSliderActive: function (e) {
-                clearTimeout(n.current.onSliderActiveTimeout),
+                clearTimeout(a.current.onSliderActiveTimeout),
                   e
-                    ? (n.current.isSliderActive = e)
-                    : (n.current.onSliderActiveTimeout = setTimeout(function () {
-                        n.current.isSliderActive = e
+                    ? (a.current.isSliderActive = e)
+                    : (a.current.onSliderActiveTimeout = setTimeout(function () {
+                        a.current.isSliderActive = e
                       }, q))
               },
             },
@@ -4504,7 +4510,7 @@
               accessibilityLabel: B.voiceDock,
               onPress: c,
               ref: function (e) {
-                a.current = e
+                n.current = e
               },
               style: [F.container, i],
             },
@@ -4518,20 +4524,20 @@
       }
       function D(e) {
         var t = e.isWide ? w.a.DesktopVoiceTweetDock : w.a.MobileVoiceTweetDock,
-          n = [e.isWide ? [V.root, { maxWidth: e.width }] : F.root]
+          a = [e.isWide ? [V.root, { maxWidth: e.width }] : F.root]
         return p.a.createElement(
           t,
           null,
-          p.a.createElement(E.a, { id: 'VoiceTweetDock' }, function (t, a) {
-            return p.a.createElement(R.a, u()({ ref: t() }, a({ style: n })), p.a.createElement(A, e))
+          p.a.createElement(E.a, { id: 'VoiceTweetDock' }, function (t, n) {
+            return p.a.createElement(R.a, u()({ ref: t() }, n({ style: a })), p.a.createElement(A, e))
           }),
         )
       }
       D.SeekSlider = function (e) {
         var t,
-          n = p.a.useRef({ isSliderActive: !1, lastSeekMs: -1 }),
-          a = p.a.useState(!1),
-          r = s()(a, 2),
+          a = p.a.useRef({ isSliderActive: !1, lastSeekMs: -1 }),
+          n = p.a.useState(!1),
+          r = s()(n, 2),
           i = r[0],
           o = r[1],
           c = p.a.useState(e.progressMs),
@@ -4539,16 +4545,16 @@
           u = l[0],
           d = l[1]
         function m(e) {
-          ;(n.current.lastSeekMs = e), d(e)
+          ;(a.current.lastSeekMs = e), d(e)
         }
         p.a.useEffect(
           function () {
-            e.externalSeeking || (n.current.lastSeekMs = -1)
+            e.externalSeeking || (a.current.lastSeekMs = -1)
           },
           [e.externalSeeking],
         ),
           (t =
-            e.externalSeeking && u !== n.current.lastSeekMs ? e.progressMs : e.externalSeeking || i ? u : e.progressMs)
+            e.externalSeeking && u !== a.current.lastSeekMs ? e.progressMs : e.externalSeeking || i ? u : e.progressMs)
         var f = p.a.createElement(x.a, {
           accessibilityLabel: B.seekSlider,
           color: 'purple500',
@@ -4558,12 +4564,12 @@
           min: 0,
           onActive: function (t) {
             e.onSliderActive && e.onSliderActive(t),
-              (n.current.isSliderActive = t),
+              (a.current.isSliderActive = t),
               t ? m(e.progressMs) : e.onSeek(u),
               o(t)
           },
           onChange: function (t) {
-            n.current.isSliderActive ? m(t) : e.onSeek(t)
+            a.current.isSliderActive ? m(t) : e.onSeek(t)
           },
           step: 'any',
           value: t,
@@ -4632,8 +4638,8 @@
         }),
         V = I.a.create(function (e) {
           var t = e.spaces.space16,
-            n = e.borderRadii.xLarge,
-            a = e.spaces.space4
+            a = e.borderRadii.xLarge,
+            n = e.spaces.space4
           return {
             root: {
               alignSelf: 'flex-end',
@@ -4641,8 +4647,8 @@
               marginVertical: e.spaces.space20,
               marginRight: e.spaces.space20,
             },
-            wideContainerBorderRadius: { borderRadius: n },
-            wideContainer: { padding: t, paddingRight: a },
+            wideContainerBorderRadius: { borderRadius: a },
+            wideContainer: { padding: t, paddingRight: n },
             wideAvatarContainer: { borderRadius: e.borderRadii.medium, padding: e.spaces.space12 },
             mainContentContainer: { flexDirection: 'row' },
             mainContent: {
@@ -4652,7 +4658,7 @@
               flexDirection: 'column',
             },
             username: { color: e.colors.gray700 },
-            closeIcon: { position: 'absolute', top: a, right: a },
+            closeIcon: { position: 'absolute', top: n, right: n },
             belowMainContent: { marginTop: e.spaces.space12, flexDirection: 'row' },
             sliderRow: { flexDirection: 'row' },
             slider: { flex: 1 },
@@ -4671,16 +4677,16 @@
         },
         q = 200
     },
-    b2fv: function (e, t, n) {
+    b2fv: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return i
       }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return o
         })
-      var a = new Date('Jan 01 1900 GMT').getTime(),
-        r = new Date('Jan 01 1970 GMT').getTime() - a,
+      var n = new Date('Jan 01 1900 GMT').getTime(),
+        r = new Date('Jan 01 1970 GMT').getTime() - n,
         i = function (e) {
           return new Date(1e3 * e - r)
         },
@@ -4688,41 +4694,42 @@
           return (e + r) / 1e3
         }
     },
-    dgjd: function (e, t, n) {
+    dgjd: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return _
+      a.d(t, 'a', function () {
+        return M
       })
-      var a = n('ddV6'),
-        r = n.n(a),
+      var n = a('ddV6'),
+        r = a.n(n),
         i =
-          (n('tVqn'),
-          n('z84I'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('+KXO'),
-          n('JtPf'),
-          n('IAdD'),
-          n('849X'),
-          n('TJCb'),
-          n('Q/sS')),
-        o = n('A7Vd'),
-        c = n('ERkP'),
-        s = n.n(c),
-        l = n('RqPI'),
-        u = n('QEWO'),
-        d = n('Pc/x'),
-        p = n('yiKp'),
-        m = n.n(p),
-        f = n('VrFO'),
-        h = n.n(f),
-        v = n('Y9Ll'),
-        g = n.n(v),
-        b = n('KEM+'),
-        y = n.n(b),
-        S = (n('KqXw'), n('Ysgh'), n('KOtZ'), n('2G9S'), n('cnVF')),
-        E = new ((function () {
+          (a('tVqn'),
+          a('z84I'),
+          a('jwue'),
+          a('7x/C'),
+          a('+oxZ'),
+          a('+KXO'),
+          a('JtPf'),
+          a('IAdD'),
+          a('849X'),
+          a('TJCb'),
+          a('Q/sS')),
+        o = a('A7Vd'),
+        c = a('ERkP'),
+        s = a.n(c),
+        l = a('RqPI'),
+        u = a('QEWO'),
+        d = a('Pc/x'),
+        p = a('yiKp'),
+        m = a.n(p),
+        f = a('VrFO'),
+        h = a.n(f),
+        v = a('Y9Ll'),
+        g = a.n(v),
+        b = a('KEM+'),
+        y = a.n(b),
+        S = (a('KqXw'), a('Ysgh'), a('KOtZ'), a('2G9S'), a('cnVF')),
+        E = a('X04g'),
+        w = new ((function () {
           function e() {
             h()(this, e), y()(this, 'events', [])
           }
@@ -4732,18 +4739,26 @@
                 key: 'createScribeFunction',
                 value: function (e) {
                   var t = this
-                  return function (n, a) {
+                  return function (a, n) {
                     var i = e.analytics.contextualScribeNamespace,
-                      o = m()(m()({}, e.details), {}, { scribe_context_namespace: i }, a),
-                      c = n.split(':'),
+                      o = m()(m()({}, e.details), {}, { scribe_context_namespace: i }, n),
+                      c = a.split(':'),
                       s = r()(c, 6),
                       l = { page: s[1], section: s[2], component: s[3], element: s[4], action: s[5] },
                       u = Object.keys(l).reduce(function (e, t) {
-                        var n = l[t]
-                        return '*' === n || (e[t] = n || void 0), e
-                      }, {})
-                    e.analytics.scribe(m()(m()({}, u), {}, { data: { audio_space_details: o } })),
-                      t.events.push({ event_name: ''.concat(S.w).concat(n), ts: Date.now(), audio_space_details: o }),
+                        var a = l[t]
+                        return '*' === a || (e[t] = a || void 0), e
+                      }, {}),
+                      d = m()(
+                        m()({}, u),
+                        {},
+                        {
+                          action: u.action,
+                          data: { items: [{ item_type: E.a.ItemType.AUDIO_SPACE, audio_space_details: o }] },
+                        },
+                      )
+                    e.analytics.scribe(d),
+                      t.events.push({ event_name: ''.concat(S.w).concat(a), ts: Date.now(), audio_space_details: o }),
                       t.timerId || t._scheduleNextPublish()
                   }
                 },
@@ -4771,30 +4786,30 @@
             e
           )
         })())(),
-        w = n('nmVb'),
-        k = n.n(w),
-        C = n('kGix'),
-        x = n('3XMw'),
-        I = n.n(x),
-        P = n('b2fv'),
-        T = n('Tg44'),
-        O = n('Irs7'),
-        R = n('LxAE'),
-        L = n('yUQf')
-      function _(e) {
+        k = a('nmVb'),
+        C = a.n(k),
+        x = a('kGix'),
+        I = a('3XMw'),
+        P = a.n(I),
+        T = a('b2fv'),
+        O = a('Tg44'),
+        R = a('Irs7'),
+        L = a('LxAE'),
+        _ = a('yUQf')
+      function M(e) {
         var t,
-          n,
           a,
+          n,
           c,
           p,
-          m = Object(O.b)(),
-          f = Object(L.a)(l.n),
+          m = Object(R.b)(),
+          f = Object(_.a)(l.n),
           h = (function (e) {
             var t = (function () {
-                var e = Object(R.a)(),
+                var e = Object(L.a)(),
                   t = r()(e.audioSpaces.cache, 2),
-                  n = t[0],
-                  a = t[1]
+                  a = t[0],
+                  n = t[1]
                 return {
                   getAudioSpace: i,
                   fetchAudioSpace: s,
@@ -4804,8 +4819,8 @@
                   audioContext: e,
                 }
                 function i(e) {
-                  var t = n[e]
-                  return t || M(C.a.NONE)
+                  var t = a[e]
+                  return t || z(x.a.NONE)
                 }
                 function o(e) {
                   return d.a.subscribeToScheduledSpace(e).then(function () {
@@ -4818,38 +4833,38 @@
                   })
                 }
                 function s(e, t) {
-                  var n,
+                  var a,
                     r = i(e)
-                  if ('number' == typeof t && r.status !== C.a.NONE && !((Date.now() - r.time) / 1e3 > t))
+                  if ('number' == typeof t && r.status !== x.a.NONE && !((Date.now() - r.time) / 1e3 > t))
                     return Promise.resolve(r)
                   function o(t) {
-                    var n = M(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
-                    a(function (t) {
-                      var a = Object.assign({}, t[e], n)
-                      return (t[e] = a), Object.assign({}, t)
+                    var a = z(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
+                    n(function (t) {
+                      var n = Object.assign({}, t[e], a)
+                      return (t[e] = n), Object.assign({}, t)
                     })
                   }
                   return d.a.initialized()
-                    ? (o(C.a.LOADING),
+                    ? (o(x.a.LOADING),
                       d.a
                         .audioSpace(e)
                         .catch(function (e) {
-                          n = e
+                          a = e
                         })
                         .then(function (e) {
-                          e ? o(C.a.LOADED, { data: e, error: void 0 }) : n && o(C.a.FAILED, { error: n })
+                          e ? o(x.a.LOADED, { data: e, error: void 0 }) : a && o(x.a.FAILED, { error: a })
                         }))
                     : Promise.reject(new Error('[useAudioSpaceMetadata] AudioModule not initialized'))
                 }
               })(),
-              n = t.audioContext,
-              a = t.fetchAudioSpace,
+              a = t.audioContext,
+              n = t.fetchAudioSpace,
               i = t.getAudioSpace,
               c = t.reportSpaceFor,
               s = t.subscribeToScheduledSpace,
               l = t.unsubscribeFromScheduledSpace
             function u(t) {
-              return a(e, t)
+              return n(e, t)
             }
             function p() {
               return i(e)
@@ -4863,86 +4878,86 @@
             function h() {
               var t = {}
               return (
-                Object.keys(c).forEach(function (n) {
-                  t[n] = function () {
+                Object.keys(c).forEach(function (a) {
+                  t[a] = function () {
                     var t,
-                      a = o.a(),
+                      n = o.a(),
                       r = null === (t = p().data) || void 0 === t ? void 0 : t.started_at,
                       i = { broadcast_id: e, ntp_timestamp: void 0, timecode: void 0 }
-                    if (a && a.id3NtpTime && r) {
-                      var s = Math.floor(a.id3NtpTime)
-                      ;(i.ntp_timestamp = s), (i.timecode = Math.floor((Object(P.b)(s) - r) / 1e3))
+                    if (n && n.id3NtpTime && r) {
+                      var s = Math.floor(n.id3NtpTime)
+                      ;(i.ntp_timestamp = s), (i.timecode = Math.floor((Object(T.b)(s) - r) / 1e3))
                     }
-                    return c[n](i)
+                    return c[a](i)
                   }
                 }),
                 t
               )
             }
-            return { fetch: u, get: p, subscribe: m, unsubscribe: f, audioContext: n, report: h() }
+            return { fetch: u, get: p, subscribe: m, unsubscribe: f, audioContext: a, report: h() }
           })(e),
           v = h.audioContext,
           g = h.report,
           b = h.subscribe,
           y = h.unsubscribe,
           S = h.get(),
-          w = S.data,
-          x = null == w ? void 0 : w.state,
+          E = S.data,
+          k = null == E ? void 0 : E.state,
           I = {
-            NotStarted: x === T.a.SpaceState.NotStarted,
-            PrePublished: x === T.a.SpaceState.PrePublished,
-            Running: x === T.a.SpaceState.Running,
-            TimedOut: x === T.a.SpaceState.TimedOut,
-            Ended: x === T.a.SpaceState.Ended,
-            Canceled: x === T.a.SpaceState.Canceled,
-            loaded: !!w || S.status === C.a.FAILED,
-            loading: S.status === C.a.LOADING,
-            error: S.status === C.a.FAILED && S.error,
+            NotStarted: k === O.a.SpaceState.NotStarted,
+            PrePublished: k === O.a.SpaceState.PrePublished,
+            Running: k === O.a.SpaceState.Running,
+            TimedOut: k === O.a.SpaceState.TimedOut,
+            Ended: k === O.a.SpaceState.Ended,
+            Canceled: k === O.a.SpaceState.Canceled,
+            loaded: !!E || S.status === x.a.FAILED,
+            loading: S.status === x.a.LOADING,
+            error: S.status === x.a.FAILED && S.error,
             joined:
               (null === (t = v.activeItem) || void 0 === t ? void 0 : t.type) === u.a.space &&
-              (null === (n = v.activeItem) || void 0 === n ? void 0 : n.id) === e,
+              (null === (a = v.activeItem) || void 0 === a ? void 0 : a.id) === e,
             recording: !1,
             replayable: !1,
           }
-        function _() {
+        function P() {
           var e,
             t,
-            n = null == w || null === (e = w.title) || void 0 === e ? void 0 : e.trim(),
-            a = null == w || null === (t = w.host) || void 0 === t ? void 0 : t.display_name
-          return n || (a ? j.title({ name: a }) : j.titleFallback)
+            a = null == E || null === (e = E.title) || void 0 === e ? void 0 : e.trim(),
+            n = null == E || null === (t = E.host) || void 0 === t ? void 0 : t.display_name
+          return a || (n ? H.title({ name: n }) : H.titleFallback)
         }
-        null != w &&
-          w.is_space_available_for_replay &&
+        null != E &&
+          E.is_space_available_for_replay &&
           (I.Running ? (I.recording = !0) : (I.Ended || I.TimedOut) && (I.replayable = !0))
-        var H = 'live_not_recording'
-        null != w && w.is_space_available_for_replay && (H = I.Running ? 'live_recording' : 'replay')
-        var A = E.createScribeFunction({
+        var M = 'live_not_recording'
+        null != E && E.is_space_available_for_replay && (M = I.Running ? 'live_recording' : 'replay')
+        var A = w.createScribeFunction({
           analytics: m,
           details: {
             broadcast_id: e,
             host_id:
-              null == w || null === (a = w.host) || void 0 === a || null === (c = a.user) || void 0 === c
+              null == E || null === (n = E.host) || void 0 === n || null === (c = n.user) || void 0 === c
                 ? void 0
                 : c.rest_id,
-            host_periscope_id: null == w || null === (p = w.host) || void 0 === p ? void 0 : p.periscope_user_id,
-            audio_space_start_type: null != w && w.scheduled_start ? 'scheduled' : 'adhoc',
-            audio_space_recording_type: H,
-            state: x,
+            host_periscope_id: null == E || null === (p = E.host) || void 0 === p ? void 0 : p.periscope_user_id,
+            audio_space_start_type: null != E && E.scheduled_start ? 'scheduled' : 'adhoc',
+            audio_space_recording_type: M,
+            state: k,
             is_logged_in: f,
           },
         })
         var D = {
             is: I,
-            title: _,
+            title: P,
             hashtags: function () {
-              return k()(_()).map(function (e) {
+              return C()(P()).map(function (e) {
                 return '#'.concat(e)
               })
             },
             scribe: A,
             state: function () {
               var e,
-                t = T.a.StateEnum
+                t = O.a.StateEnum
               return (
                 I.loaded && I.error
                   ? (e = t.unavailable)
@@ -4959,10 +4974,10 @@
               )
             },
             getTunedInCount: function () {
-              var e = w || {},
+              var e = E || {},
                 t = e.total_live_listeners,
-                n = e.total_replay_watched
-              return (null != t ? t : 0) + (null != n ? n : 0)
+                a = e.total_replay_watched
+              return (null != t ? t : 0) + (null != a ? a : 0)
             },
           },
           B = d.a.initialized(),
@@ -4972,77 +4987,77 @@
           s.a.useEffect(
             function () {
               var e,
-                t = z
+                t = j
               return (
                 B &&
-                  (function n() {
-                    var a = N.current.utils.is.loaded,
+                  (function a() {
+                    var n = N.current.utils.is.loaded,
                       r = N.current.utils.is.Running
-                    ;(a && !r) || (N.current.audioSpaceMetadata.fetch(t), (e = setTimeout(n, 1e3 * t)))
+                    ;(n && !r) || (N.current.audioSpaceMetadata.fetch(t), (e = setTimeout(a, 1e3 * t)))
                   })(),
                 function () {
                   clearTimeout(e)
                 }
               )
             },
-            [B, e, x],
+            [B, e, k],
           )
         var F = {
           subscribe: b,
           unsubscribe: y,
           report: g,
           join: function (t) {
-            var n = w
-            n &&
+            var a = E
+            a &&
               d.a.proxsee.login().then(function () {
-                var a = D.is.Running || D.is.replayable,
-                  r = n.media_key
+                var n = D.is.Running || D.is.replayable,
+                  r = a.media_key
                 r &&
-                  a &&
+                  n &&
                   (D.is.replayable
-                    ? (i.f(n.started_at), D.scribe(':audiospace:replay:recording:play:click', { origin: t }))
+                    ? (i.f(a.started_at), D.scribe(':audiospace:replay:recording:play:click', { origin: t }))
                     : i.e(),
                   v.load.space(e, r, D.is.Running),
                   D.scribe(':audiospace:event:join:listener:success', { origin: t }))
               })
           },
         }
-        return { space: w, audioContext: v, utils: D, handlers: F }
+        return { space: E, audioContext: v, utils: D, handlers: F }
       }
-      function M(e) {
+      function z(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-          n = { status: e, time: Date.now() }
-        return t.data && (n.data = t.data), t.error && (n.error = t.error), n
+          a = { status: e, time: Date.now() }
+        return t.data && (a.data = t.data), t.error && (a.error = t.error), a
       }
-      var z = 15,
-        j = { title: I.a.b6d3e0ee, titleFallback: I.a.ab4fc8bb }
+      var j = 15,
+        H = { title: P.a.b6d3e0ee, titleFallback: P.a.ab4fc8bb }
     },
-    e5HP: function (e, t, n) {
+    e5HP: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return M
       })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('5Yy7'),
-        s = n.n(c),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('KEM+'),
-        p = n.n(d),
-        m = n('ERkP'),
-        f = n.n(m),
-        h = n('t62R'),
-        v = n('3XMw'),
-        g = n.n(v),
-        b = n('rHpw'),
-        y = n('MWbm'),
-        S = n('yiKp'),
-        E = n.n(S),
-        w = n('Lsrn'),
-        k = n('k/Ka'),
+      var n = a('VrFO'),
+        r = a.n(n),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('5Yy7'),
+        s = a.n(c),
+        l = a('2VqO'),
+        u = a.n(l),
+        d = a('KEM+'),
+        p = a.n(d),
+        m = a('ERkP'),
+        f = a.n(m),
+        h = a('t62R'),
+        v = a('3XMw'),
+        g = a.n(v),
+        b = a('rHpw'),
+        y = a('MWbm'),
+        S = a('yiKp'),
+        E = a.n(S),
+        w = a('Lsrn'),
+        k = a('k/Ka'),
         C = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(k.a)(
@@ -5067,7 +5082,7 @@
         }
       C.metadata = { width: 24, height: 24 }
       var x = C,
-        I = n('uFYP'),
+        I = a('uFYP'),
         P = g.a.f1a1b790,
         T = g.a.if2bf8b3,
         O = g.a.f3624b5c,
@@ -5075,26 +5090,26 @@
         L = g.a.be22205f,
         _ = g.a.hcbbe447,
         M = (function (e) {
-          s()(n, e)
-          var t = u()(n)
-          function n() {
-            return r()(this, n), t.apply(this, arguments)
+          s()(a, e)
+          var t = u()(a)
+          function a() {
+            return r()(this, a), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.color,
-                    n = e.nativeID,
-                    a = e.style,
+                    a = e.nativeID,
+                    n = e.style,
                     r = e.withCircleIcon ? x : I.a
                   return f.a.createElement(
                     y.a,
-                    { style: [z.root, a] },
+                    { style: [z.root, n] },
                     f.a.createElement(r, { style: [z.icon, t && z[t]] }),
-                    f.a.createElement(h.b, { color: t, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
+                    f.a.createElement(h.b, { color: t, nativeID: a, size: 'subtext2' }, this._getPromotedLabel()),
                   )
                 },
               },
@@ -5103,12 +5118,12 @@
                 value: function () {
                   var e = this.props,
                     t = e.contentAuthorId,
-                    n = e.label,
-                    a = e.promotedContent,
-                    r = a.adMetadataContainer,
-                    i = a.advertiser,
-                    o = a.advertiser_name,
-                    c = a.disclosure_type,
+                    a = e.label,
+                    n = e.promotedContent,
+                    r = n.adMetadataContainer,
+                    i = n.advertiser,
+                    o = n.advertiser_name,
+                    c = n.disclosure_type,
                     s = t && i && t === i.id_str,
                     l = 'string' == typeof c && 'political' === c.toLowerCase(),
                     u = 'string' == typeof c && 'issue' === c.toLowerCase(),
@@ -5116,7 +5131,7 @@
                     p = !(!r || 'ISSUE' !== r.disclaimerType) || u,
                     m = (r || {}).removePromotedAttributionForPreroll
                   return (
-                    n ||
+                    a ||
                     (!o || s || m
                       ? d
                         ? O
@@ -5132,7 +5147,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(f.a.Component)
       p()(M, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
@@ -5145,29 +5160,29 @@
         }
       })
     },
-    hUaP: function (e, t, n) {
+    hUaP: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return l
       }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return u
         })
-      var a = n('rHpw'),
+      var n = a('rHpw'),
         r = 0.85,
         i = 0.7635,
         o = 0.5,
         c = 812,
         s = 300
-      function l(e, t, n) {
+      function l(e, t, a) {
         var l = e
         if (t) {
           l = Math.min(c, e)
-          var d = n || {},
+          var d = a || {},
             p = d.height,
             m = d.top + p
           if (m - l < 0) {
-            var f = m - u(a.a.theme).marginVerticalPx
+            var f = m - u(n.a.theme).marginVerticalPx
             f > s && (l = f)
           }
         }
@@ -5175,34 +5190,34 @@
       }
       function u(e) {
         var t = e.borderRadiiPx.large,
-          n = e.spaces.space16,
-          a = e.spacesPx.space8
+          a = e.spaces.space16,
+          n = e.spacesPx.space8
         return {
           borderRadius: t,
-          paddingHorizontal: n,
+          paddingHorizontal: a,
           marginVertical: e.spaces.space20,
           marginVerticalPx: e.spacesPx.space20,
-          shadowOffset: a,
+          shadowOffset: n,
         }
       }
     },
-    hhqq: function (e, t, n) {
+    hhqq: function (e, t, a) {
       'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('ERkP'),
-        s = n.n(c),
-        l = (n('ho0z'), n('21zW')),
-        u = n('rHpw'),
-        d = n('MH+I'),
-        p = n('jV+4'),
-        m = n('MWbm')
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = a('m3Bd'),
+        o = a.n(i),
+        c = a('ERkP'),
+        s = a.n(c),
+        l = (a('ho0z'), a('21zW')),
+        u = a('rHpw'),
+        d = a('MH+I'),
+        p = a('jV+4'),
+        m = a('MWbm')
       function f(e) {
         var t = e.speaker,
-          n = e.speakerAvatarSize,
-          a = void 0 === n ? 'small' : n,
+          a = e.speakerAvatarSize,
+          n = void 0 === a ? 'small' : a,
           r = e.speakerNameSize,
           i = void 0 === r ? 'subtext2' : r,
           o = e.speakerScreenNameSize,
@@ -5219,7 +5234,7 @@
           m.a,
           { style: g.root },
           s.a.createElement(p.a, {
-            avatarSize: a,
+            avatarSize: n,
             name: t.name,
             nameSize: i,
             profileImageUrl: d ? t.profile_image_url_https : '',
@@ -5238,13 +5253,13 @@
       }
       function v(e) {
         var t = e.size,
-          n = void 0 === t ? 'small' : t,
-          a = e.timeMs
+          a = void 0 === t ? 'small' : t,
+          n = e.timeMs
         return s.a.createElement(
           s.a.Fragment,
           null,
-          s.a.createElement(l.a, { size: n }),
-          s.a.createElement(d.a, { color: 'gray700', humanReadable: !0, size: n, timeMs: a }),
+          s.a.createElement(l.a, { size: a }),
+          s.a.createElement(d.a, { color: 'gray700', humanReadable: !0, size: a, timeMs: n }),
         )
       }
       var g = u.a.create(function (e) {
@@ -5253,20 +5268,20 @@
             userName: { marginBottom: e.spaces.space4, paddingRight: e.spaces.space4 },
           }
         }),
-        b = n('t62R'),
+        b = a('t62R'),
         y = ['caption', 'captionTextSize', 'withSpeaker']
       function S(e) {
         var t = e.caption,
-          n = e.captionTextSize,
-          a = e.withSpeaker,
-          i = void 0 === a || a,
+          a = e.captionTextSize,
+          n = e.withSpeaker,
+          i = void 0 === n || n,
           c = o()(e, y),
           l = t.speaker
         return s.a.createElement(
           m.a,
           { style: [E.root, !i && E.missingSpeakerSpacer] },
           i ? s.a.createElement(f, r()({}, c, { speaker: l, timestamp: t.timestamp })) : null,
-          s.a.createElement(b.b, { lang: t.lang, size: n, style: E.captionText }, t.text),
+          s.a.createElement(b.b, { lang: t.lang, size: a, style: E.captionText }, t.text),
         )
       }
       var E = u.a.create(function (e) {
@@ -5280,18 +5295,18 @@
             },
           }
         }),
-        w = n('yiKp'),
-        k = n.n(w),
+        w = a('yiKp'),
+        k = a.n(w),
         C =
-          (n('z84I'),
-          n('i4UL'),
+          (a('z84I'),
+          a('i4UL'),
           function (e) {
             return { width: e, height: e }
           })
       function x(e) {
         var t = e.size,
-          n = Math.floor(t / 4.5)
-        return s.a.createElement(m.a, { style: [O.root, P(t)] }, s.a.createElement(I, { width: n }))
+          a = Math.floor(t / 4.5)
+        return s.a.createElement(m.a, { style: [O.root, P(t)] }, s.a.createElement(I, { width: a }))
       }
       function I(e) {
         var t = e.width
@@ -5300,8 +5315,8 @@
           null,
           Array(3)
             .fill(0)
-            .map(function (e, n) {
-              return s.a.createElement(m.a, { key: n, style: [O.dot, T(n, t)] })
+            .map(function (e, a) {
+              return s.a.createElement(m.a, { key: a, style: [O.dot, T(a, t)] })
             }),
         )
       }
@@ -5335,7 +5350,7 @@
             },
           }
         }),
-        R = n('sIe2'),
+        R = a('sIe2'),
         L = [
           'captions',
           'footerHeight',
@@ -5346,8 +5361,8 @@
         ]
       function _(e) {
         var t = e.captions,
-          n = e.footerHeight,
-          a = void 0 === n ? 28 : n,
+          a = e.footerHeight,
+          n = void 0 === a ? 28 : a,
           i = e.headerHeight,
           c = void 0 === i ? 28 : i,
           l = e.scrollContainerStyle,
@@ -5387,7 +5402,7 @@
             m.a,
             { ref: g, style: j.root },
             s.a.createElement(R.a, {
-              ListFooterComponent: s.a.createElement(z, { footerHeight: a, unintelligible: d }),
+              ListFooterComponent: s.a.createElement(z, { footerHeight: n, unintelligible: d }),
               ListHeaderComponent: s.a.createElement(M, { headerHeight: c }),
               accessibilityRole: 'listbox',
               contentContainerStyle: { marginBottom: 0 },
@@ -5401,21 +5416,21 @@
               },
               onScroll: function (e) {
                 var t = e.nativeEvent,
-                  n = t.contentOffset,
+                  a = t.contentOffset,
                   r = t.contentSize,
                   i = t.layoutMeasurement,
-                  o = 2 * (y.current.containerHeight || 0) + a,
-                  c = r.height - i.height - n.y - o > 0
+                  o = 2 * (y.current.containerHeight || 0) + n,
+                  c = r.height - i.height - a.y - o > 0
                 y.current.hasUserScrolledUp = c
               },
               ref: b,
               renderItem: function (e) {
-                var n,
-                  a = e.index,
+                var a,
+                  n = e.index,
                   i = e.item,
                   o = !0
                 return (
-                  f || (o = !h(i.speaker, null === (n = t[a - 1]) || void 0 === n ? void 0 : n.speaker)),
+                  f || (o = !h(i.speaker, null === (a = t[n - 1]) || void 0 === a ? void 0 : a.speaker)),
                   s.a.createElement(S, r()({}, v, { caption: i, key: i.sequenceId, withSpeaker: o }))
                 )
               },
@@ -5431,11 +5446,11 @@
       }
       function z(e) {
         var t = e.footerHeight,
-          n = e.unintelligible
+          a = e.unintelligible
         return s.a.createElement(
           s.a.Fragment,
           null,
-          n ? s.a.createElement(x, { size: 20 }) : null,
+          a ? s.a.createElement(x, { size: 20 }) : null,
           s.a.createElement(m.a, { style: { height: t } }),
         )
       }
@@ -5448,32 +5463,32 @@
       ;(_.Caption = S), (_.areSpeakersIdentical = h)
       t.a = _
     },
-    hqDb: function (e, t, n) {
+    hqDb: function (e, t, a) {
       'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('VrFO'),
-        s = n.n(c),
-        l = n('Y9Ll'),
-        u = n.n(l),
-        d = n('1Pcy'),
-        p = n.n(d),
-        m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        v = n.n(h),
-        g = n('KEM+'),
-        b = n.n(g),
-        y = (n('2G9S'), n('ERkP')),
-        S = n.n(y),
-        E = n('k49u'),
-        w = (n('LW0h'), n('7x/C'), n('KOtZ'), n('vrRf'), n('6xIQ')),
-        k = n('kGix'),
-        C = n('G6rE'),
-        x = n('rxPX'),
-        I = n('0KEI'),
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = a('m3Bd'),
+        o = a.n(i),
+        c = a('VrFO'),
+        s = a.n(c),
+        l = a('Y9Ll'),
+        u = a.n(l),
+        d = a('1Pcy'),
+        p = a.n(d),
+        m = a('5Yy7'),
+        f = a.n(m),
+        h = a('2VqO'),
+        v = a.n(h),
+        g = a('KEM+'),
+        b = a.n(g),
+        y = (a('2G9S'), a('ERkP')),
+        S = a.n(y),
+        E = a('k49u'),
+        w = (a('LW0h'), a('7x/C'), a('KOtZ'), a('vrRf'), a('6xIQ')),
+        k = a('kGix'),
+        C = a('G6rE'),
+        x = a('rxPX'),
+        I = a('0KEI'),
         P = function (e, t) {
           return t.userIds
         },
@@ -5483,9 +5498,9 @@
           })
         },
         O = function (e, t) {
-          return t.userIds.reduce(function (t, n) {
-            var a = C.e.selectFetchStatus(e, n)
-            return (t[n] = a === k.a.NONE ? k.a.LOADING : a), t
+          return t.userIds.reduce(function (t, a) {
+            var n = C.e.selectFetchStatus(e, a)
+            return (t[a] = n === k.a.NONE ? k.a.LOADING : n), t
           }, {})
         },
         R = Object(x.a)()
@@ -5494,16 +5509,16 @@
               availableUserIds: Object(w.a)(T, function (e) {
                 return e
               }),
-              fetchStatus: Object(w.a)(T, O, P, function (e, t, n) {
-                for (var a = k.a.LOADED, r = 0; r < n.length; r++) {
-                  var i = n[r]
+              fetchStatus: Object(w.a)(T, O, P, function (e, t, a) {
+                for (var n = k.a.LOADED, r = 0; r < a.length; r++) {
+                  var i = a[r]
                   if (-1 === e.indexOf(i)) {
                     var o = t[i] || k.a.LOADING
-                    a = a === k.a.LOADED ? o : a
+                    n = n === k.a.LOADED ? o : n
                   }
-                  if (a === k.a.LOADED) break
+                  if (n === k.a.LOADED) break
                 }
-                return a
+                return n
               }),
             }
           })
@@ -5515,26 +5530,26 @@
               fetchUsersIfNeeded: C.e.fetchManyIfNeeded,
             }
           }),
-        L = n('v//M'),
-        _ = n('3XMw'),
-        M = n.n(_),
-        z = n('pQ3Z'),
-        j = n.n(z),
-        H = (n('z84I'), n('cFuS')),
-        A = n('Re5t'),
-        D = n('MWbm'),
-        B = n('88ay'),
+        L = a('v//M'),
+        _ = a('3XMw'),
+        M = a.n(_),
+        z = a('pQ3Z'),
+        j = a.n(z),
+        H = (a('z84I'), a('cFuS')),
+        A = a('Re5t'),
+        D = a('MWbm'),
+        B = a('88ay'),
         N = function (e) {
           var t = e.displayMode,
-            n = e.renderUserCell,
-            a = e.userIds
+            a = e.renderUserCell,
+            n = e.userIds
           e.withFinalItemBorder, e.withItemBorder
           return S.a.createElement(
             D.a,
             null,
-            a.map(function (e, a) {
-              return n
-                ? n(e)
+            n.map(function (e, n) {
+              return a
+                ? a(e)
                 : S.a.createElement(B.b, {
                     decoration: B.e,
                     displayMode: t,
@@ -5553,20 +5568,20 @@
         W = { viewType: 'user_list' },
         q = R(
           (function (e) {
-            f()(n, e)
-            var t = v()(n)
-            function n() {
+            f()(a, e)
+            var t = v()(a)
+            function a() {
               var e
-              s()(this, n)
-              for (var a = arguments.length, i = new Array(a), c = 0; c < a; c++) i[c] = arguments[c]
+              s()(this, a)
+              for (var n = arguments.length, i = new Array(n), c = 0; c < n; c++) i[c] = arguments[c]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
                 b()(p()(e), 'state', { allUsersUnavailable: !1 }),
                 b()(p()(e), '_renderContent', function () {
                   var t = e.props,
-                    n = t.availableUserIds,
-                    a = (t.createLocalApiErrorHandler, t.fetchStatus, t.fetchUsersIfNeeded, t.userIds, o()(t, V))
-                  return S.a.createElement(F, r()({}, a, { userIds: n }))
+                    a = t.availableUserIds,
+                    n = (t.createLocalApiErrorHandler, t.fetchStatus, t.fetchUsersIfNeeded, t.userIds, o()(t, V))
+                  return S.a.createElement(F, r()({}, n, { userIds: a }))
                 }),
                 b()(p()(e), '_handleFetch', function () {
                   e._fetchUsersIfNeeded()
@@ -5575,7 +5590,7 @@
               )
             }
             return (
-              u()(n, [
+              u()(a, [
                 {
                   key: 'componentDidMount',
                   value: function () {
@@ -5606,10 +5621,10 @@
                   value: function () {
                     var e,
                       t = this,
-                      n = this.props,
-                      a = n.availableUserIds,
-                      r = n.createLocalApiErrorHandler
-                    ;(0, n.fetchUsersIfNeeded)(n.userIds).then(
+                      a = this.props,
+                      n = a.availableUserIds,
+                      r = a.createLocalApiErrorHandler
+                    ;(0, a.fetchUsersIfNeeded)(a.userIds).then(
                       function () {
                         t.setState({ allUsersUnavailable: !1 })
                       },
@@ -5617,12 +5632,12 @@
                         ((e = {}),
                         b()(e, E.a.AddressBookLookupNotFound, {
                           customAction: function () {
-                            0 === a.length && t.setState({ allUsersUnavailable: !0 })
+                            0 === n.length && t.setState({ allUsersUnavailable: !0 })
                           },
                         }),
                         b()(e, E.a.OtherUserSuspended, {
                           customAction: function () {
-                            0 === a.length && t.setState({ allUsersUnavailable: !0 })
+                            0 === n.length && t.setState({ allUsersUnavailable: !0 })
                           },
                         }),
                         e),
@@ -5631,42 +5646,42 @@
                   },
                 },
               ]),
-              n
+              a
             )
           })(S.a.Component),
         )
       t.a = q
     },
-    kRXa: function (e, t, n) {
+    kRXa: function (e, t, a) {
       'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('VrFO'),
-        s = n.n(c),
-        l = n('Y9Ll'),
-        u = n.n(l),
-        d = n('1Pcy'),
-        p = n.n(d),
-        m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        v = n.n(h),
-        g = n('KEM+'),
-        b = n.n(g),
-        y = (n('2G9S'), n('ERkP')),
-        S = n.n(y),
-        E = n('/yvb'),
-        w = n('3XMw'),
-        k = n.n(w),
-        C = n('py1r'),
-        x = n('oLZl'),
-        I = n('9RkS'),
-        P = n('rHpw'),
-        T = n('A53h'),
-        O = n('sTSP'),
-        R = n('MWbm'),
+      var n = a('97Jx'),
+        r = a.n(n),
+        i = a('m3Bd'),
+        o = a.n(i),
+        c = a('VrFO'),
+        s = a.n(c),
+        l = a('Y9Ll'),
+        u = a.n(l),
+        d = a('1Pcy'),
+        p = a.n(d),
+        m = a('5Yy7'),
+        f = a.n(m),
+        h = a('2VqO'),
+        v = a.n(h),
+        g = a('KEM+'),
+        b = a.n(g),
+        y = (a('2G9S'), a('ERkP')),
+        S = a.n(y),
+        E = a('/yvb'),
+        w = a('3XMw'),
+        k = a.n(w),
+        C = a('py1r'),
+        x = a('oLZl'),
+        I = a('9RkS'),
+        P = a('rHpw'),
+        T = a('A53h'),
+        O = a('sTSP'),
+        R = a('MWbm'),
         L = [
           'accessibilityLabelIcon',
           'accessibilityLabelSlider',
@@ -5684,22 +5699,22 @@
         ],
         _ = k.a.b3160a69,
         M = (function (e) {
-          f()(n, e)
-          var t = v()(n)
-          function n() {
+          f()(a, e)
+          var t = v()(a)
+          function a() {
             var e
-            s()(this, n)
-            for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
+            s()(this, a)
+            for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
               b()(p()(e), 'state', { showSlider: !1, isSliderActive: !1 }),
               b()(p()(e), '_handleButtonLayoutChange', function (t) {
-                var n = e.props.containerHeight,
-                  a = e.state.sliderMaxHeight,
+                var a = e.props.containerHeight,
+                  n = e.state.sliderMaxHeight,
                   r = t.nativeEvent.layout.height
-                if (n) {
-                  var i = ''.concat(n - r - P.a.theme.spacesPx.space20, 'px')
-                  i !== a && e.setState({ sliderMaxHeight: i })
+                if (a) {
+                  var i = ''.concat(a - r - P.a.theme.spacesPx.space20, 'px')
+                  i !== n && e.setState({ sliderMaxHeight: i })
                 }
               }),
               b()(p()(e), '_handleSliderActive', function (t) {
@@ -5722,9 +5737,9 @@
                 return j['large' === t ? 'xLarge' : t]
               }),
               b()(p()(e), '_handleKeyDown', function (t) {
-                var n = e.props,
-                  a = n.onSliderChange,
-                  r = n.volumePercent,
+                var a = e.props,
+                  n = a.onSliderChange,
+                  r = a.volumePercent,
                   i = t.altKey,
                   o = t.ctrlKey,
                   c = t.metaKey
@@ -5733,7 +5748,7 @@
                     l = t.key === x.a.ArrowDown || t.key === x.a.ArrowLeft
                   if (s || l) {
                     var u = e._normalizeValue(r + 10 * (s ? 1 : -1))
-                    a && a(u), t.preventDefault()
+                    n && n(u), t.preventDefault()
                   }
                 }
               }),
@@ -5741,17 +5756,17 @@
             )
           }
           return (
-            u()(n, [
+            u()(a, [
               {
                 key: 'componentDidUpdate',
                 value: function (e, t) {
-                  var n = this.props,
-                    a = n.onHideSlider,
-                    r = n.onShowSlider
-                  if (n.onSliderChange) {
+                  var a = this.props,
+                    n = a.onHideSlider,
+                    r = a.onShowSlider
+                  if (a.onSliderChange) {
                     var i = this._shouldShowSlider(t),
                       o = this._shouldShowSlider(this.state)
-                    !i && o && r && r(), i && !o && a && a()
+                    !i && o && r && r(), i && !o && n && n()
                   }
                 },
               },
@@ -5760,8 +5775,8 @@
                 value: function () {
                   var e = this,
                     t = this.props,
-                    n = t.accessibilityLabelIcon,
-                    a = t.accessibilityLabelSlider,
+                    a = t.accessibilityLabelIcon,
+                    n = t.accessibilityLabelSlider,
                     i = t.containerHeight,
                     c = t.isMuted,
                     s = t.onHideSlider,
@@ -5792,7 +5807,7 @@
                         E.a,
                         r()(
                           {
-                            accessibilityLabel: n,
+                            accessibilityLabel: a,
                             icon: b,
                             onLayout: this._handleButtonLayoutChange,
                             onPress: l,
@@ -5804,7 +5819,7 @@
                       ),
                       d &&
                         S.a.createElement(C.a, { onFocusRingGained: u, onFocusRingLost: s }, function (t) {
-                          var n = t.isFocusedWithin
+                          var a = t.isFocusedWithin
                           return S.a.createElement(
                             R.a,
                             {
@@ -5812,12 +5827,12 @@
                                 z.sliderBackground,
                                 y,
                                 e._getSliderMarginStyles(g.size),
-                                n || e._shouldShowSlider(e.state) ? null : P.a.visuallyHidden,
+                                a || e._shouldShowSlider(e.state) ? null : P.a.visuallyHidden,
                                 i && { maxHeight: e.state.sliderMaxHeight },
                               ],
                             },
                             S.a.createElement(I.a, {
-                              accessibilityLabel: a,
+                              accessibilityLabel: n,
                               accessibilityLabelValueText: _({ volumePercent: f }),
                               color: m || 'white',
                               isVertical: !0,
@@ -5837,7 +5852,7 @@
                 },
               },
             ]),
-            n
+            a
           )
         })(S.a.PureComponent)
       b()(M, 'defaultProps', { pullRight: !1 })
@@ -5862,29 +5877,29 @@
         }),
         j = P.a.create(function (e) {
           var t = e.spaces,
-            n = e.spacesPx,
-            a = ''.concat(n.space16 + n.space4 + n.space2, 'px'),
-            r = ''.concat(n.space20 + n.space24, 'px'),
-            i = ''.concat(n.space12 + n.space40, 'px')
+            a = e.spacesPx,
+            n = ''.concat(a.space16 + a.space4 + a.space2, 'px'),
+            r = ''.concat(a.space20 + a.space24, 'px'),
+            i = ''.concat(a.space12 + a.space40, 'px')
           return {
             xSmall: { marginBottom: t.space24 },
             small: { marginBottom: t.space32 },
             medium: { marginBottom: t.space36 },
             large: { marginBottom: r },
             xLarge: { marginBotom: i },
-            smallCompact: { marginBottom: a },
+            smallCompact: { marginBottom: n },
             DEPRECATED_normalCompact: { marginBottom: t.space32 },
             DEPRECATED_normal: { marginBottom: t.space40 },
           }
         })
       t.a = M
     },
-    lOQR: function (e, t, n) {
+    lOQR: function (e, t, a) {
       'use strict'
-      n('hBpG'), n('7x/C')
-      var a = n('6/RC'),
-        r = n.n(a),
-        i = n('aITJ'),
+      a('hBpG'), a('7x/C')
+      var n = a('6/RC'),
+        r = a.n(n),
+        i = a('aITJ'),
         o = {
           setLocation: function (e) {
             document.location = e
@@ -5892,11 +5907,11 @@
           getAppStoreURLs: function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 'rwoiah',
               t = c(e),
-              n = [t.android, t.ios, t.windows],
-              a = n.find(function (e) {
+              a = [t.android, t.ios, t.windows],
+              n = a.find(function (e) {
                 return e.matches()
               })
-            return a ? [a] : n
+            return n ? [n] : a
           },
           getiOSAppStoreLink: function (e) {
             var t = c(e)
@@ -5949,71 +5964,71 @@
         }
       t.a = o
     },
-    nmVb: function (e, t, n) {
+    nmVb: function (e, t, a) {
       'use strict'
-      var a = n('IGGJ')
+      var n = a('IGGJ')
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e) {
-          for (var t = [], n = (0, r.default)(e), a = 0; a < n.length; a++) t.push(n[a].hashtag)
+          for (var t = [], a = (0, r.default)(e), n = 0; n < a.length; n++) t.push(a[n].hashtag)
           return t
         })
-      var r = a(n('yyPN'))
+      var r = n(a('yyPN'))
       e.exports = t.default
     },
-    p3P5: function (e, t, n) {
+    p3P5: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return x
       }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return O
         })
-      var a,
-        r = n('yiKp'),
-        i = n.n(r),
-        o = n('KEM+'),
-        c = n.n(o),
-        s = (n('ho0z'), n('z84I'), n('ERkP')),
-        l = n.n(s),
-        u = n('G/+M'),
-        d = n('v6aA'),
-        p = n('3XMw'),
-        m = n.n(p),
-        f = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
-        h = n('RuTB'),
+      var n,
+        r = a('yiKp'),
+        i = a.n(r),
+        o = a('KEM+'),
+        c = a.n(o),
+        s = (a('ho0z'), a('z84I'), a('ERkP')),
+        l = a.n(s),
+        u = a('G/+M'),
+        d = a('v6aA'),
+        p = a('3XMw'),
+        m = a.n(p),
+        f = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('zb92')),
+        h = a('RuTB'),
         v = Object(f.a)({
           loader: function () {
             return m.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(230)]).then(n.bind(null, '4AX5'))
+              return Promise.all([a.e(17), a.e(229)]).then(a.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {
             return l.a.createElement(h.a, { hasError: e, onRetry: t })
           },
         }),
-        g = n('MWbm'),
-        b = n('TIdA'),
-        y = n('jhWN'),
-        S = n('t62R'),
-        E = n('jV+4'),
-        w = n('rHpw'),
-        k = n('VKFJ'),
+        g = a('MWbm'),
+        b = a('TIdA'),
+        y = a('jhWN'),
+        S = a('t62R'),
+        E = a('jV+4'),
+        w = a('rHpw'),
+        k = a('VKFJ'),
         C = b.a.createLayoutCache()
       function x(e) {
         var t = l.a.useContext(d.a).featureSwitches,
-          n = e.children,
-          a = e.hasNftAvatar,
+          a = e.children,
+          n = e.hasNftAvatar,
           r = e.isVerified,
           i = e.kind,
           o = e.name,
           c = e.periscopeUserId,
           s = e.screenName,
           u = e.width,
-          p = a && t.isTrue('responsive_web_nft_avatar'),
+          p = n && t.isTrue('responsive_web_nft_avatar'),
           m = i ? P[i] : null,
           f = e.profile_image_url_https || '',
           h =
-            n ||
+            a ||
             l.a.createElement(y.a, {
               imageLayoutCache: C,
               screenName: s,
@@ -6047,34 +6062,34 @@
       }
       function I(e) {
         var t = e.periscopeUserId,
-          n = L(w.a.theme).avatar.size,
-          a = u.c(t)
+          a = L(w.a.theme).avatar.size,
+          n = u.c(t)
         return l.a.createElement(
           l.a.Fragment,
           null,
-          null == a
+          null == n
             ? void 0
-            : a.map(function (e) {
-                return l.a.createElement(v, { key: e.id, reaction: e, size: n })
+            : n.map(function (e) {
+                return l.a.createElement(v, { key: e.id, reaction: e, size: a })
               }),
         )
       }
       var P =
-          ((a = {}),
-          c()(a, k.a.host, m.a.cededf29),
-          c()(a, k.a.cohost, m.a.f77997bf),
-          c()(a, k.a.speaker, m.a.i48f4ed8),
-          c()(a, k.a.listener, m.a.a77c8e02),
-          a),
+          ((n = {}),
+          c()(n, k.a.host, m.a.cededf29),
+          c()(n, k.a.cohost, m.a.f77997bf),
+          c()(n, k.a.speaker, m.a.i48f4ed8),
+          c()(n, k.a.listener, m.a.a77c8e02),
+          n),
         T = w.a.create(function (e) {
           var t = L(e),
-            n = { width: t.avatar.size, height: t.avatar.size }
+            a = { width: t.avatar.size, height: t.avatar.size }
           return {
             participantCell: i()({ justifyContent: 'center', alignItems: 'center' }, t.participantCell),
             participantCellUsername: t.participantCellUsername,
             participantCellKindContainer: { position: 'relative', justifyContent: 'center' },
             participantCellKind: { lineHeight: t.kind.lineHeight },
-            participantAvatarSize: n,
+            participantAvatarSize: a,
           }
         })
       function O(e) {
@@ -6091,42 +6106,42 @@
       var R = 'xxLarge'
       function L(e) {
         var t = y.a.getSizeStyle('xxLarge').width || e.spacesPx.space48,
-          n = e.spacesPx.space20,
-          a = e.spacesPx.space8,
-          r = e.spacesPx.space80 + 2 * a,
+          a = e.spacesPx.space20,
+          n = e.spacesPx.space8,
+          r = e.spacesPx.space80 + 2 * n,
           i = e.spacesPx.space4,
           o = e.lineHeightsPx.headline2,
           c = e.lineHeightsPx.headline2
         return {
-          participantCell: { marginBottom: n, paddingHorizontal: a, minWidth: r, height: t + i + o + c + n },
+          participantCell: { marginBottom: a, paddingHorizontal: n, minWidth: r, height: t + i + o + c + a },
           avatar: { size: t },
           participantCellUsername: { lineHeight: o, paddingTop: i },
           kind: { lineHeight: c },
         }
       }
     },
-    ssnq: function (e, t, n) {
+    ssnq: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return m
       })
-      var a = n('ddV6'),
-        r = n.n(a),
-        i = n('T0aG'),
-        o = n.n(i),
+      var n = a('ddV6'),
+        r = a.n(n),
+        i = a('T0aG'),
+        o = a.n(i),
         c =
-          (n('lTEL'),
-          n('7x/C'),
-          n('LqLs'),
-          n('87if'),
-          n('kYxP'),
-          n('jwue'),
-          n('+oxZ'),
-          n('M+/F'),
-          n('+KXO'),
-          n('ERkP')),
-        s = n.n(c),
-        l = (n('z84I'), n('FgXs'))
+          (a('lTEL'),
+          a('7x/C'),
+          a('LqLs'),
+          a('87if'),
+          a('kYxP'),
+          a('jwue'),
+          a('+oxZ'),
+          a('M+/F'),
+          a('+KXO'),
+          a('ERkP')),
+        s = a.n(c),
+        l = (a('z84I'), a('FgXs'))
       function u(e) {
         return 'object' !== o()(e) || null === e
           ? e
@@ -6136,66 +6151,66 @@
               return u(e)
             })
       }
-      var d = n('fs1G'),
-        p = n('9EWH')
+      var d = a('fs1G'),
+        p = a('9EWH')
       function m(e) {
         var t = u(e || {}),
-          n = u(t),
-          a = new Set()
+          a = u(t),
+          n = new Set()
         function i(e) {
           return (
-            a.add(e),
+            n.add(e),
             function () {
-              a.delete(e)
+              n.delete(e)
             }
           )
         }
         function c() {
-          a.forEach(function (e) {
-            e(n)
+          n.forEach(function (e) {
+            e(a)
           })
         }
         function l(e) {
           return function (t) {
-            var n = e.current.slice,
-              a = e.current.state,
+            var a = e.current.slice,
+              n = e.current.state,
               r = e.current.selector(t)
-            e.current.equality(r, n, t, a) ||
+            e.current.equality(r, a, t, n) ||
               ((e.current.slice = r), (e.current.state = t), e.current.onUpdate(e.current.slice))
           }
         }
         return {
           getState: function () {
-            return n
+            return a
           },
           setState: function (e) {
-            ;(n = Object(p.a)(n, function (t) {
-              var n,
-                a,
+            ;(a = Object(p.a)(a, function (t) {
+              var a,
+                n,
                 r,
                 i = e(t)
               i &&
                 'object' === o()(i) &&
-                ((n = t),
-                (a = i),
+                ((a = t),
+                (n = i),
                 (r = {}),
-                Object.keys(a).forEach(function (e) {
-                  ;(r[e] = !0), (n[e] = a[e])
-                }),
                 Object.keys(n).forEach(function (e) {
-                  r[e] || delete n[e]
+                  ;(r[e] = !0), (a[e] = n[e])
+                }),
+                Object.keys(a).forEach(function (e) {
+                  r[e] || delete a[e]
                 }))
             })),
               c()
           },
           reset: function () {
-            ;(n = u(t)), c()
+            ;(a = u(t)), c()
           },
           useSlice: function (e, t) {
-            var a = (null == t ? void 0 : t.equalityFn) || f.equality,
+            var n = (null == t ? void 0 : t.equalityFn) || f.equality,
               o = d.a,
-              c = s.a.useRef({ state: n, slice: e(n), selector: e, equality: a, onUpdate: o })
-            ;(c.current.selector = e), (c.current.equality = a)
+              c = s.a.useRef({ state: a, slice: e(a), selector: e, equality: n, onUpdate: o })
+            ;(c.current.selector = e), (c.current.equality = n)
             var u = s.a.useState(function () {
                 return c.current.slice
               }),
@@ -6211,11 +6226,11 @@
                   })
                 }
                 var t = l(c)
-                function a(n) {
-                  e && t(n)
+                function n(a) {
+                  e && t(a)
                 }
-                a(n)
-                var r = i(a)
+                n(a)
+                var r = i(n)
                 return function () {
                   ;(e = !1), r()
                 }
@@ -6223,9 +6238,9 @@
               m
             )
           },
-          subscribe: function (e, t, a) {
-            var r = (null == a ? void 0 : a.equalityFn) || f.equality,
-              o = { current: { state: n, slice: e(n), selector: e, equality: r, onUpdate: t } },
+          subscribe: function (e, t, n) {
+            var r = (null == n ? void 0 : n.equalityFn) || f.equality,
+              o = { current: { state: a, slice: e(a), selector: e, equality: r, onUpdate: t } },
               c = i(l(o))
             return o.current.onUpdate(o.current.slice), c
           },
@@ -6233,26 +6248,26 @@
       }
       Object(p.b)()
       var f = {
-        equality: function (e, t, n, a) {
+        equality: function (e, t, a, n) {
           return e === t
         },
       }
     },
-    tM6R: function (e, t, n) {
+    tM6R: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       })
-      var a = { help: 'https://help.twitter.com/using-twitter/spaces', settings: 'https://twitter.com/settings/spaces' }
+      var n = { help: 'https://help.twitter.com/using-twitter/spaces', settings: 'https://twitter.com/settings/spaces' }
     },
-    uFYP: function (e, t, n) {
+    uFYP: function (e, t, a) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
+      var n = a('yiKp'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(s.a)(
@@ -6277,60 +6292,60 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    xVWt: function (e, t, n) {
+    xVWt: function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return nn
+      a.d(t, 'a', function () {
+        return aa
       }),
-        n.d(t, 'b', function () {
-          return cn
+        a.d(t, 'b', function () {
+          return oa
         }),
-        n.d(t, 'c', function () {
-          return hn
+        a.d(t, 'c', function () {
+          return fa
         })
-      var a = n('m3Bd'),
-        r = n.n(a),
-        i = n('yiKp'),
-        o = n.n(i),
-        c = n('97Jx'),
-        s = n.n(c),
-        l = n('ddV6'),
-        u = n.n(l),
-        d = (n('7x/C'), n('JtPf'), n('z84I'), n('IAdD'), n('cFyg')),
-        p = n('Q/sS'),
-        m = n('A7Vd'),
-        f = n('ERkP'),
-        h = n.n(f),
-        v = n('G/+M'),
-        g = n('RhWx'),
-        b = n.n(g),
-        y = (n('LW0h'), n('wFPu'), n('vfdX'), n('ho0z'), n('KOtZ'), n('2G9S'), n('3XMw')),
-        S = n.n(y),
-        E = n('dgjd'),
-        w = n('MWbm'),
-        k = n('6iuV'),
-        C = n('TCYy'),
-        x = n('uCxL'),
-        I = n('jV+4'),
-        P = n('rHpw')
+      var n = a('m3Bd'),
+        r = a.n(n),
+        i = a('yiKp'),
+        o = a.n(i),
+        c = a('97Jx'),
+        s = a.n(c),
+        l = a('ddV6'),
+        u = a.n(l),
+        d = (a('7x/C'), a('JtPf'), a('z84I'), a('IAdD'), a('cFyg')),
+        p = a('Q/sS'),
+        m = a('A7Vd'),
+        f = a('ERkP'),
+        h = a.n(f),
+        v = a('G/+M'),
+        g = a('RhWx'),
+        b = a.n(g),
+        y = (a('LW0h'), a('wFPu'), a('vfdX'), a('ho0z'), a('KOtZ'), a('2G9S'), a('3XMw')),
+        S = a.n(y),
+        E = a('dgjd'),
+        w = a('MWbm'),
+        k = a('6iuV'),
+        C = a('TCYy'),
+        x = a('uCxL'),
+        I = a('jV+4'),
+        P = a('rHpw')
       function T(e) {
         var t = Object(E.a)(e.audioSpaceId).space
         if (!t) return null
-        var n = t.sharings,
-          a = b()(n)
+        var a = t.sharings,
+          n = b()(a)
             .reverse()
             .filter(function (e) {
               return e && e.tweet && e.user
             })
-        return a.length ? h.a.createElement(O, { items: a }) : null
+        return n.length ? h.a.createElement(O, { items: n }) : null
       }
       function O(e) {
         var t = e.items,
-          n = t.reduce(function (e, t) {
+          a = t.reduce(function (e, t) {
             return t.tweet ? (e.length ? ''.concat(e, '.').concat(t.id) : t.id) : e
           }, ''),
-          a = h.a.useState(),
-          r = u()(a, 2),
+          n = h.a.useState(),
+          r = u()(n, 2),
           i = r[0],
           o = r[1],
           c = Math.max(
@@ -6346,10 +6361,10 @@
             k.a,
             {
               childrenStyle: M.carouselChildrenStyles,
-              key: n,
+              key: a,
               onVisibleRangeChange: function (e) {
-                var n = e.index
-                1 === e.intersectionRatio && o(t[n].id)
+                var a = e.index
+                1 === e.intersectionRatio && o(t[a].id)
               },
               updateObserverWithChildren: !0,
               visibleItemIndex: c,
@@ -6358,23 +6373,23 @@
               return h.a.createElement(R, { item: e, key: e.id || t })
             }),
           ),
-          h.a.createElement(C.a, { count: t.length, key: ''.concat(n, '-indicators'), max: L, selectedIndex: c }),
+          h.a.createElement(C.a, { count: t.length, key: ''.concat(a, '-indicators'), max: L, selectedIndex: c }),
         )
       }
       function R(e) {
         if (!e.item) return null
         var t = e.item,
-          n = t.tweet,
-          a = t.user
+          a = t.tweet,
+          n = t.user
         return h.a.createElement(
           w.a,
-          { key: n.id_str, style: M.sharedContentContainer },
-          h.a.createElement(x.a, { isCondensed: !0, tweet: n }),
+          { key: a.id_str, style: M.sharedContentContainer },
+          h.a.createElement(x.a, { isCondensed: !0, tweet: a }),
           h.a.createElement(I.a, {
             avatarSize: 'small',
-            name: _.sharedBy({ name: null == a ? void 0 : a.name }),
+            name: _.sharedBy({ name: null == n ? void 0 : n.name }),
             nameSize: 'subtext2',
-            profileImageUrl: null == a ? void 0 : a.profile_image_url_https,
+            profileImageUrl: null == n ? void 0 : n.profile_image_url_https,
             style: M.sharedContentBy,
             weight: 'normal',
           }),
@@ -6384,40 +6399,40 @@
         _ = { sharedBy: S.a.bdfa93eb },
         M = P.a.create(function (e) {
           return {
-            sharedContentContainer: { paddingHorizontal: hn(e).container.paddingHorizontal, width: '100%' },
+            sharedContentContainer: { paddingHorizontal: fa(e).container.paddingHorizontal, width: '100%' },
             carouselChildrenStyles: { scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
             sharedContentBy: { marginTop: e.spaces.space8 },
           }
         }),
-        z = n('2C8o'),
-        j = n('FGLp'),
-        H = n('hhqq'),
-        A = n('vbJ7')
+        z = a('2C8o'),
+        j = a('FGLp'),
+        H = a('hhqq'),
+        A = a('vbJ7')
       function D(e) {
         var t = e.audioSpaceId,
-          n = e.height,
-          a = z.d()
+          a = e.height,
+          n = z.d()
         return p.n()
           ? h.a.createElement(
               w.a,
-              { style: [N.container, { height: n }] },
+              { style: [N.container, { height: a }] },
               h.a.createElement(w.a, { style: N.fadeIn }),
-              h.a.createElement(B, { audioSpaceId: t, captions: a }),
+              h.a.createElement(B, { audioSpaceId: t, captions: n }),
               h.a.createElement(w.a, { style: N.fadeOut }),
             )
           : null
       }
       function B(e) {
         var t = e.audioSpaceId,
-          n = e.captions,
-          a = Object(E.a)(t).utils
+          a = e.captions,
+          n = Object(E.a)(t).utils
         return (
           Object(j.a)(function () {
-            a.scribe(':audiospace:::transcription:impression')
+            n.scribe(':audiospace:::transcription:impression')
           }),
           h.a.createElement(H.a, {
             captionTextSize: 'body',
-            captions: n,
+            captions: a,
             footerHeight: 28,
             headerHeight: 28,
             scrollContainerStyle: N.scrollContainerStyle,
@@ -6428,7 +6443,7 @@
       }
       var N = P.a.create(function (e) {
           var t = A.a.hexToCss(e.colors.navigationBackground, 0),
-            n = A.a.hexToCss(e.colors.navigationBackground, 0.8)
+            a = A.a.hexToCss(e.colors.navigationBackground, 0.8)
           return {
             container: {
               width: '100%',
@@ -6447,7 +6462,7 @@
               height: e.spaces.space16,
               backgroundImage: e.highContrastEnabled
                 ? void 0
-                : 'linear-gradient(to top, '.concat(t, ', ').concat(n, ')'),
+                : 'linear-gradient(to top, '.concat(t, ', ').concat(a, ')'),
               pointerEvents: 'none',
               zIndex: 1,
             },
@@ -6459,38 +6474,38 @@
               height: e.spaces.space8,
               backgroundImage: e.highContrastEnabled
                 ? void 0
-                : 'linear-gradient(to bottom, '.concat(t, ', ').concat(n, ')'),
+                : 'linear-gradient(to bottom, '.concat(t, ', ').concat(a, ')'),
               pointerEvents: 'none',
               zIndex: 1,
             },
           }
         }),
-        F = n.p + 'spaces_clipping_banner.1bf85ac5.png',
-        V = n('tM6R'),
-        U = n.p + 'bird_spaces_transparent.4a7e7195.png',
-        W = (n('1Iuc'), n('cm6r')),
-        q = n('Wms4'),
-        K = n('+/1j')
+        F = a.p + 'spaces_clipping_banner.1bf85ac5.png',
+        V = a('tM6R'),
+        U = a.p + 'bird_spaces_transparent.4a7e7195.png',
+        W = (a('1Iuc'), a('cm6r')),
+        q = a('Wms4'),
+        K = a('+/1j')
       function G(e) {
         return e.withEducationOnClick && e.audioSpaceId
-          ? h.a.createElement(J, { audioSpaceId: e.audioSpaceId })
-          : h.a.createElement(X, e)
+          ? h.a.createElement(X, { audioSpaceId: e.audioSpaceId })
+          : h.a.createElement(J, e)
       }
-      function J(e) {
+      function X(e) {
         var t = Object(E.a)(e.audioSpaceId).utils,
-          n = p.k().openSheet
+          a = p.k().openSheet
         return h.a.createElement(
           W.a,
           {
             accessibilityLabel: Y.recordingActive,
             onPress: function () {
-              n(p.b.recordingEducation), t.scribe(':audiospace::recording:icon:click')
+              a(p.b.recordingEducation), t.scribe(':audiospace::recording:icon:click')
             },
           },
-          h.a.createElement(X, { audioSpaceId: e.audioSpaceId }),
+          h.a.createElement(J, { audioSpaceId: e.audioSpaceId }),
         )
       }
-      function X(e) {
+      function J(e) {
         return h.a.createElement(
           w.a,
           { style: Z.indicatorWrapper },
@@ -6532,22 +6547,22 @@
           }
         }),
         Y = { REC: 'REC', recordingActive: S.a.b4f91a89 },
-        Q = n('TIdA'),
-        $ = n('A91F'),
-        ee = n('t62R'),
-        te = n('/yvb'),
-        ne = n('Lsrn'),
-        ae = n('k/Ka'),
+        Q = a('TIdA'),
+        $ = a('A91F'),
+        ee = a('t62R'),
+        te = a('/yvb'),
+        ae = a('Lsrn'),
+        ne = a('k/Ka'),
         re = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ae.a)(
+          return Object(ne.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ne.a.root, e.style],
+                style: [ae.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -6565,7 +6580,7 @@
         }
       re.metadata = { width: 24, height: 24 }
       var ie = re,
-        oe = n('RUwF')
+        oe = a('RUwF')
       function ce() {
         var e = p.k().requestSheetDismissal
         return h.a.createElement(
@@ -6641,8 +6656,8 @@
             sectionMarginBottom: { marginBottom: e.spaces.space12 },
           }
         }),
-        de = n('SNyS'),
-        pe = n('S+H3')
+        de = a('SNyS'),
+        pe = a('S+H3')
       function me() {
         var e = p.k().requestSheetDismissal
         return h.a.createElement(
@@ -6680,22 +6695,22 @@
           { icon: h.a.createElement(ie, { style: fe.icon }), title: S.a.ed1d1ccf, subtitle: S.a.e5d193c7 },
         ],
         ve = { title: S.a.e1547ec0, subtitle: S.a.i154245e, gotIt: S.a.j24c37b2 },
-        ge = n('KEM+'),
-        be = n.n(ge),
-        ye = (n('lTEL'), n('87if'), n('kYxP'), n('KrtT'), n('TJCb'), n('DZ+c'), n('yH/f'), n('HmZq')),
-        Se = n('Pc/x'),
-        Ee = n('hUaP'),
-        we = n('fs1G'),
-        ke = n('AMlz'),
-        Ce = n('zCf4'),
-        xe = n('sIe2')
+        ge = a('KEM+'),
+        be = a.n(ge),
+        ye = (a('lTEL'), a('87if'), a('kYxP'), a('KrtT'), a('TJCb'), a('DZ+c'), a('yH/f'), a('HmZq')),
+        Se = a('Pc/x'),
+        Ee = a('hUaP'),
+        we = a('fs1G'),
+        ke = a('AMlz'),
+        Ce = a('zCf4'),
+        xe = a('sIe2')
       function Ie(e) {
         var t = e.id3NtpTime,
-          n = Object(ke.a)(),
-          a = t && Math.floor(t - n.durationSeconds),
+          a = Object(ke.a)(),
+          n = t && Math.floor(t - a.durationSeconds),
           r = []
         return (
-          a && t && (r = ye.getTranscript(a, t)),
+          n && t && (r = ye.getTranscript(n, t)),
           h.a.createElement(
             w.a,
             null,
@@ -6708,11 +6723,11 @@
               },
               renderItem: function (e) {
                 var t,
-                  n = e.index,
-                  a = e.item,
-                  i = null === (t = r[n - 1]) || void 0 === t ? void 0 : t.speaker,
-                  o = !H.a.areSpeakersIdentical(a.speaker, i)
-                return h.a.createElement(H.a.Caption, { caption: a, key: a.sequenceId, withSpeaker: o })
+                  a = e.index,
+                  n = e.item,
+                  i = null === (t = r[a - 1]) || void 0 === t ? void 0 : t.speaker,
+                  o = !H.a.areSpeakersIdentical(n.speaker, i)
+                return h.a.createElement(H.a.Caption, { caption: n, key: n.sequenceId, withSpeaker: o })
               },
               scrollEventThrottle: 100,
             }),
@@ -6721,34 +6736,34 @@
       }
       function Pe(e) {
         var t = Object(Ce.f)(),
-          n = Object(p.k)().requestSheetDismissal,
-          a = Object(E.a)(e.audioSpaceId).space,
+          a = Object(p.k)().requestSheetDismissal,
+          n = Object(E.a)(e.audioSpaceId).space,
           r = Object(ke.a)(),
           i = h.a.useCallback(
             function () {
-              if (a) {
+              if (n) {
                 var i = e.currentTimeMs
                 if (!i || i < r.durationMs) return
                 Se.a.proxsee
                   .createClip({
-                    broadcast_id: a.rest_id,
+                    broadcast_id: n.rest_id,
                     start_timecode_millis: Math.floor(i - r.durationMs),
                     end_timecode_millis: Math.floor(i),
                   })
                   .then(function (e) {
                     if (null != e && e.clip) {
-                      n()
-                      var a = new URLSearchParams(be()({}, Te.clipId, e.clip.clip_id))
+                      a()
+                      var n = new URLSearchParams(be()({}, Te.clipId, e.clip.clip_id))
                       t.push({
                         pathname: '/compose/tweet',
-                        query: { text: Oe(e.clip.broadcast_id, a.toString()) },
+                        query: { text: Oe(e.clip.broadcast_id, n.toString()) },
                         state: { positionCursorAtBeginning: !0 },
                       })
                     }
                   })
               }
             },
-            [a, r.durationMs, n, t, e.currentTimeMs],
+            [n, r.durationMs, a, t, e.currentTimeMs],
           )
         return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Re.next)
       }
@@ -6775,7 +6790,7 @@
         }),
         _e = function (e) {
           var t = Object(p.k)().requestSheetDismissal,
-            n = h.a.useRef(m.a()).current
+            a = h.a.useRef(m.a()).current
           return h.a.createElement(
             w.a,
             { style: Le.container },
@@ -6805,26 +6820,26 @@
                 style: Le.helpCircle,
               }),
             ),
-            h.a.createElement(Ie, s()({}, e, { id3NtpTime: null == n ? void 0 : n.id3NtpTime })),
-            h.a.createElement(Pe, s()({}, e, { currentTimeMs: null == n ? void 0 : n.currentTimeMs })),
+            h.a.createElement(Ie, s()({}, e, { id3NtpTime: null == a ? void 0 : a.id3NtpTime })),
+            h.a.createElement(Pe, s()({}, e, { currentTimeMs: null == a ? void 0 : a.currentTimeMs })),
           )
         },
-        Me = n('PaZX'),
-        ze = n('lOQR'),
-        je = n('SQlS'),
-        He = n('ISLN'),
-        Ae = n('sTSP'),
-        De = n('Zg3A'),
+        Me = a('PaZX'),
+        ze = a('lOQR'),
+        je = a('SQlS'),
+        He = a('ISLN'),
+        Ae = a('sTSP'),
+        De = a('Zg3A'),
         Be = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ae.a)(
+          return Object(ne.a)(
             'svg',
             o()(
               o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ne.a.root, e.style],
+                style: [ae.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -6946,8 +6961,8 @@
       }
       function We(e) {
         var t = e.icon,
-          n = e.subtitle,
-          a = e.title,
+          a = e.subtitle,
+          n = e.title,
           r = e.withMarginBottom,
           i = void 0 === r || r
         return h.a.createElement(
@@ -6957,8 +6972,8 @@
           h.a.createElement(
             w.a,
             { style: Ge.sectionContent },
-            h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, a),
-            n,
+            h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, n),
+            a,
           ),
         )
       }
@@ -7003,11 +7018,11 @@
             ctaContainer: { paddingHorizontal: e.spaces.space16 },
           }
         }),
-        Je = n('WrBE'),
-        Xe = n('i4Oy')
+        Xe = a('WrBE'),
+        Je = a('i4Oy')
       function Ze(e) {
         var t = Object(p.k)().requestSheetDismissal
-        return h.a.createElement(Je.a.View, {
+        return h.a.createElement(Xe.a.View, {
           onClick: t,
           style: [
             Qe.dockSheetOverlayBase,
@@ -7026,7 +7041,7 @@
           w.a,
           { style: [e.style, e.hasDismissRequest && Qe.pointerEventsNone] },
           h.a.createElement(
-            Je.a.View,
+            Xe.a.View,
             {
               style: [
                 Qe.contentAnimatedContainer,
@@ -7046,7 +7061,7 @@
       }
       var Qe = P.a.create(function (e) {
           var t = Object(Ee.b)(e),
-            n = t.borderRadius
+            a = t.borderRadius
           return {
             dockSheetContainer: {
               position: 'absolute',
@@ -7062,8 +7077,8 @@
               bottom: '0',
               margin: 0,
               padding: 0,
-              borderTopRightRadius: n,
-              borderTopLeftRadius: n,
+              borderTopRightRadius: a,
+              borderTopLeftRadius: a,
             },
             contentWrapperContainer: {
               height: '100%',
@@ -7101,29 +7116,29 @@
         }),
         et = function (e) {
           var t = e.audioSpaceId,
-            n = e.dockAnimation,
-            a = e.isSideNavLayout,
+            a = e.dockAnimation,
+            n = e.isSideNavLayout,
             r = Object(p.l)(),
             i = r.clearSheet,
             o = r.hasDismissRequest,
             c = r.sheetId,
             s = (function (e) {
-              var t = Xe.a.get('window'),
-                n = Object(Ee.a)(t.height, e),
-                a = h.a.useRef(new Je.a.Value(n.full)).current
+              var t = Je.a.get('window'),
+                a = Object(Ee.a)(t.height, e),
+                n = h.a.useRef(new Xe.a.Value(a.full)).current
               return {
-                animatedPan: a,
-                shellHeights: n,
+                animatedPan: n,
+                shellHeights: a,
                 springToOpen: function (e) {
-                  return Je.a.spring(a, { toValue: 0, bounciness: 2 }).start(e)
+                  return Xe.a.spring(n, { toValue: 0, bounciness: 2 }).start(e)
                 },
                 springToClose: function (e) {
-                  return Je.a.spring(a, { toValue: n.full }).start(e)
+                  return Xe.a.spring(n, { toValue: a.full }).start(e)
                 },
               }
-            })(a),
-            l = n.shellHeights.sheetMaxHeight,
-            u = a ? $e.contentContainer : Qe.contentContainer,
+            })(n),
+            l = a.shellHeights.sheetMaxHeight,
+            u = n ? $e.contentContainer : Qe.contentContainer,
             d = h.a.useMemo(
               function () {
                 switch (c) {
@@ -7159,20 +7174,20 @@
             !d)
           )
             return null
-          var m = a ? $e.dockSheetContainer : Qe.dockSheetContainer
+          var m = n ? $e.dockSheetContainer : Qe.dockSheetContainer
           return h.a.createElement(
-            Je.a.View,
+            Xe.a.View,
             {
               style: [
                 m,
                 o && Qe.pointerEventsNone,
                 {
-                  height: n.shellHeights.full - n.animatedPan._value,
+                  height: a.shellHeights.full - a.animatedPan._value,
                   opacity: s.animatedPan.interpolate({ inputRange: [0, s.shellHeights.half], outputRange: [1, 0] }),
                 },
               ],
             },
-            h.a.createElement(Ze, { animation: s, isSideNavLayout: a }),
+            h.a.createElement(Ze, { animation: s, isSideNavLayout: n }),
             h.a.createElement(Ye, { animation: s, hasDismissRequest: o, maxHeight: l, style: u }, d),
           )
         }
@@ -7180,16 +7195,16 @@
         var t = e.children
         return p.m() ? null : t
       }
-      var nt = function () {
+      var at = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(ae.a)(
+        return Object(ne.a)(
           'svg',
           o()(
             o()({}, e),
             {},
             {
               accessibilityHidden: void 0 === e.accessibilityLabel,
-              style: [ne.a.root, e.style],
+              style: [ae.a.root, e.style],
               viewBox: '0 0 17 9.5',
             },
           ),
@@ -7202,8 +7217,8 @@
           ),
         )
       }
-      nt.metadata = { width: 17, height: 9.5 }
-      var at = nt
+      at.metadata = { width: 17, height: 9.5 }
+      var nt = at
       function rt(e) {
         var t = p.m()
         return h.a.createElement(
@@ -7213,19 +7228,19 @@
         )
       }
       var it = { leave: S.a.bb1d57b6, close: S.a.ia5e7487 },
-        ot = n('4EYz'),
-        ct = n('MMRb'),
-        st = n('Pl95'),
-        lt = n('0nhk'),
-        ut = n('pjBI'),
-        dt = n('MH+I'),
-        pt = n('fzjU')
+        ot = a('4EYz'),
+        ct = a('MMRb'),
+        st = a('Pl95'),
+        lt = a('0nhk'),
+        ut = a('pjBI'),
+        dt = a('MH+I'),
+        pt = a('fzjU')
       function mt(e) {
         var t = Object(E.a)(e.audioSpaceId),
-          n = t.space,
-          a = t.utils,
-          r = (n || {}).ended_at,
-          i = a.getTunedInCount()
+          a = t.space,
+          n = t.utils,
+          r = (a || {}).ended_at,
+          i = n.getTunedInCount()
         return h.a.createElement(
           ut.a,
           { color: bt.color, style: vt.container },
@@ -7236,18 +7251,18 @@
       function ft(e) {
         var t = e.ended_at
         if (!t) return null
-        var n = null,
-          a = Date.now() - t
+        var a = null,
+          n = Date.now() - t
         return (
-          (n =
-            a < St
+          (a =
+            n < St
               ? h.a.createElement(
                   S.a.I18NFormatMessage,
                   { $i18n: 'f0e84608' },
-                  h.a.createElement(dt.a, { short: !0, timeMs: a }),
+                  h.a.createElement(dt.a, { short: !0, timeMs: n }),
                 )
               : yt(new Date(t))),
-          h.a.createElement(ee.b, bt, n)
+          h.a.createElement(ee.b, bt, a)
         )
       }
       function ht(e) {
@@ -7301,36 +7316,36 @@
             titleLabelSpacer: { paddingRight: e.spacesPx.space4 },
           }
         }),
-        xt = n('VKFJ'),
-        It = n('yUQf'),
-        Pt = n('7ep7'),
-        Tt = n('v6aA'),
-        Ot = n('DlVf'),
-        Rt = n('RqPI'),
-        Lt = n('mjJ+'),
-        _t = n('FXw/'),
-        Mt = n('GCOQ')
+        xt = a('VKFJ'),
+        It = a('yUQf'),
+        Pt = a('7ep7'),
+        Tt = a('v6aA'),
+        Ot = a('DlVf'),
+        Rt = a('RqPI'),
+        Lt = a('mjJ+'),
+        _t = a('FXw/'),
+        Mt = a('GCOQ')
       function zt(e) {
         var t = (function (e) {
             var t = Object(E.a)(e).utils,
-              n = Object(It.a)(Rt.n),
-              a = p.k().openSheet,
+              a = Object(It.a)(Rt.n),
+              n = p.k().openSheet,
               r = []
-            n &&
+            a &&
               r.push({
                 Icon: Mt.a,
                 text: jt.reportThisSpace,
                 isEmphasized: !0,
                 onClick: function () {
-                  a(p.b.report), t.scribe(':audiospace::caret:report:click')
+                  n(p.b.report), t.scribe(':audiospace::caret:report:click')
                 },
               })
             return { items: r }
           })(e.audioSpaceId),
-          n = h.a.useState(!1),
-          a = u()(n, 2),
-          r = a[0],
-          i = a[1]
+          a = h.a.useState(!1),
+          n = u()(a, 2),
+          r = n[0],
+          i = n[1]
         if (t.items.length < 1) return null
         var o = r
           ? h.a.createElement(Lt.a, {
@@ -7361,11 +7376,11 @@
         )
       }
       var jt = { more: S.a.h63a5c3b, reportThisSpace: S.a.b3481ffd },
-        Ht = n('O07O'),
-        At = (n('i4UL'), n('CDzS'))
+        Ht = a('O07O'),
+        At = (a('i4UL'), a('CDzS'))
       function Dt() {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(ae.a)(
+        return Object(ne.a)(
           'svg',
           o()(o()({}, e), {}, { style: [Bt.root, e.style], viewBox: '0 0 24 24' }),
           h.a.createElement(
@@ -7402,10 +7417,10 @@
         Nt = ['isSideNavLayout', 'onLayout']
       function Ft(e) {
         var t = e.isSideNavLayout,
-          n = e.onLayout,
-          a = r()(e, Nt),
+          a = e.onLayout,
+          n = r()(e, Nt),
           i = [Wt.footer, t && Wt.footerWide]
-        return h.a.createElement(w.a, { onLayout: n, style: i }, h.a.createElement(Vt, a))
+        return h.a.createElement(w.a, { onLayout: a, style: i }, h.a.createElement(Vt, n))
       }
       function Vt(e) {
         return p.m()
@@ -7464,14 +7479,14 @@
       }
       var Wt = P.a.create(function (e) {
           var t = Object(Ee.b)(e),
-            n = t.borderRadius,
-            a = t.paddingHorizontal
+            a = t.borderRadius,
+            n = t.paddingHorizontal
           return {
             footerButtonSpacer: { width: e.spaces.space16 },
             footerLeft: { flexDirection: 'row' },
             footerRight: { flexDirection: 'row' },
             footer: {
-              paddingHorizontal: a,
+              paddingHorizontal: n,
               width: '100%',
               height: 'calc('.concat(100, 'px + ').concat(P.a.iPhoneOffsetBottom, ')'),
               flexDirection: 'row',
@@ -7480,35 +7495,35 @@
               boxShadow: '0px -1px 0px '.concat(e.colors.gray50),
               backgroundColor: e.colors.navigationBackground,
             },
-            footerWide: { borderBottomLeftRadius: n, borderBottomRightRadius: n, boxShadow: e.boxShadows.xSmall },
+            footerWide: { borderBottomLeftRadius: a, borderBottomRightRadius: a, boxShadow: e.boxShadows.xSmall },
           }
         }),
-        qt = n('0FVZ'),
-        Kt = n('Oe3h'),
-        Gt = n('cTG8'),
-        Jt = n('U7kY'),
-        Xt = n('n7AW'),
-        Zt = n('yyPN'),
-        Yt = n.n(Zt),
-        Qt = n('GiKA'),
-        $t = n.n(Qt),
-        en = n('p3P5'),
-        tn = ['periscopeUserId']
-      function nn(e) {
+        qt = a('0FVZ'),
+        Kt = a('Oe3h'),
+        Gt = a('cTG8'),
+        Xt = a('U7kY'),
+        Jt = a('n7AW'),
+        Zt = a('yyPN'),
+        Yt = a.n(Zt),
+        Qt = a('GiKA'),
+        $t = a.n(Qt),
+        ea = a('p3P5'),
+        ta = ['periscopeUserId']
+      function aa(e) {
         var t = e.isSideNavLayout ? qt.a.WideExpandedSpaceDock : qt.a.NarrowExpandedSpaceDock
-        return h.a.createElement(t, null, h.a.createElement(an, e))
+        return h.a.createElement(t, null, h.a.createElement(na, e))
       }
-      function an(e) {
+      function na(e) {
         var t = Object(It.a)(ct.selectDrawerVisibility),
-          n = Object(Ee.b)(P.a.theme),
-          a = e.width + n.shadowOffset,
-          r = e.isSideNavLayout ? [bn.root, { width: a }] : null,
+          a = Object(Ee.b)(P.a.theme),
+          n = e.width + a.shadowOffset,
+          r = e.isSideNavLayout ? [ga.root, { width: n }] : null,
           i = h.a.useState(),
           o = u()(i, 2),
           c = o[0],
           l = o[1],
           p = h.a.useRef(null),
-          m = Xe.a.get('window')
+          m = Je.a.get('window')
         function f() {
           var e,
             t = null === (e = p.current) || void 0 === e ? void 0 : e.getBoundingClientRect()
@@ -7525,28 +7540,28 @@
             },
             [t],
           ),
-          h.a.createElement(w.a, { ref: p, style: r }, h.a.createElement(sn, s()({}, e, { layout: c })))
+          h.a.createElement(w.a, { ref: p, style: r }, h.a.createElement(ca, s()({}, e, { layout: c })))
         )
       }
-      function rn(e) {
+      function ra(e) {
         var t = Object(Ee.b)(P.a.theme),
-          n = e.animation.shellHeights.full - t.shadowOffset
+          a = e.animation.shellHeights.full - t.shadowOffset
         return h.a.createElement(
-          Je.a.View,
+          Xe.a.View,
           {
             style: [
-              vn.expandedShell,
-              { height: n, transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }] },
+              ha.expandedShell,
+              { height: a, transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }] },
             ],
           },
-          h.a.createElement(on, e),
+          h.a.createElement(ia, e),
         )
       }
-      function on(e) {
+      function ia(e) {
         var t = p.n(),
-          n = Object(ke.a)(),
-          a = e.footerHeight,
-          r = h.a.useRef(new Je.a.Value(a))
+          a = Object(ke.a)(),
+          n = e.footerHeight,
+          r = h.a.useRef(new Xe.a.Value(n))
         function i() {
           e.animation.springTo('collapse')
         }
@@ -7556,29 +7571,29 @@
         return (
           h.a.useEffect(
             function () {
-              Je.a.spring(r.current, { toValue: t ? a + mn : a }).start()
+              Xe.a.spring(r.current, { toValue: t ? n + pa : n }).start()
             },
-            [t, a],
+            [t, n],
           ),
-          h.a.createElement(Kt.a, { id: 'SpaceDockExpanded' }, function (t, a) {
+          h.a.createElement(Kt.a, { id: 'SpaceDockExpanded' }, function (t, n) {
             return h.a.createElement(
               w.a,
-              s()({ ref: t() }, a({ style: vn.expandedShellContent })),
+              s()({ ref: t() }, n({ style: ha.expandedShellContent })),
               h.a.createElement(
-                Je.a.View,
-                s()({}, e.animation.panResponder.panHandlers, { style: vn.expandedShellHeader }),
+                Xe.a.View,
+                s()({}, e.animation.panResponder.panHandlers, { style: ha.expandedShellHeader }),
                 h.a.createElement(
                   w.a,
-                  { style: vn.expandedShellHeaderGripContainer },
-                  h.a.createElement(w.a, { style: vn.expandedShellHeaderGrip }),
+                  { style: ha.expandedShellHeaderGripContainer },
+                  h.a.createElement(w.a, { style: ha.expandedShellHeaderGrip }),
                 ),
                 h.a.createElement(
                   w.a,
-                  { style: vn.expandedShellHeaderButtons },
+                  { style: ha.expandedShellHeaderButtons },
                   h.a.createElement(te.a, {
-                    accessibilityLabel: yn.collapse,
-                    hoverLabel: { label: yn.collapse },
-                    icon: h.a.createElement(at, { style: vn.iconChevronDown }),
+                    accessibilityLabel: ba.collapse,
+                    hoverLabel: { label: ba.collapse },
+                    icon: h.a.createElement(nt, { style: ha.iconChevronDown }),
                     onPress: i,
                     pullLeft: !0,
                     size: 'medium',
@@ -7586,9 +7601,9 @@
                   }),
                   h.a.createElement(
                     w.a,
-                    { style: vn.expandedShellHeaderRight },
+                    { style: ha.expandedShellHeaderRight },
                     h.a.createElement(tt, null, h.a.createElement(st.a, { audioSpaceId: e.audioSpaceId })),
-                    n.isCreationEnabled
+                    a.isCreationEnabled
                       ? h.a.createElement(lt.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon-borderless' })
                       : null,
                     h.a.createElement(rt, { onPress: o }),
@@ -7596,38 +7611,38 @@
                 ),
                 h.a.createElement(
                   w.a,
-                  { style: vn.expandedShellDescription },
-                  h.a.createElement(cn, { audioSpaceId: e.audioSpaceId }),
+                  { style: ha.expandedShellDescription },
+                  h.a.createElement(oa, { audioSpaceId: e.audioSpaceId }),
                 ),
               ),
               h.a.createElement(
-                Je.a.View,
+                Xe.a.View,
                 {
                   id: 'ParticipantsWrapper',
-                  style: [vn.participantsContainer, { paddingBottom: Je.a.add(r.current, e.animation.animatedPan) }],
+                  style: [ha.participantsContainer, { paddingBottom: Xe.a.add(r.current, e.animation.animatedPan) }],
                 },
-                e.mounted ? h.a.createElement(ln, e) : null,
+                e.mounted ? h.a.createElement(sa, e) : null,
               ),
             )
           })
         )
       }
-      function cn(e) {
+      function oa(e) {
         var t = Object(E.a)(e.audioSpaceId).utils.title(),
-          n = {
+          a = {
             hashtags: Yt()(t).map(function (e) {
               return (e.text = e.hashtag), e
             }),
             user_mentions: $t()(t),
           },
-          a = [0, t.length]
+          n = [0, t.length]
         return h.a.createElement(
           h.a.Fragment,
           null,
           h.a.createElement(Et, { audioSpaceId: e.audioSpaceId, isOutsideDock: e.isOutsideDock }),
           h.a.createElement(Gt.a, {
-            displayTextRange: a,
-            entities: n,
+            displayTextRange: n,
+            entities: a,
             linkify: !0,
             numberOfLines: 3,
             size: 'headline1',
@@ -7636,19 +7651,19 @@
           }),
         )
       }
-      function sn(e) {
+      function ca(e) {
         var t = h.a.useState(!1),
-          n = u()(t, 2),
-          a = n[0],
-          r = n[1],
-          i = (function (e, t, n) {
-            var a = h.a.useRef({ state: p.a.full, animatedPanOffset: 0 }),
-              r = Xe.a.get('window'),
+          a = u()(t, 2),
+          n = a[0],
+          r = a[1],
+          i = (function (e, t, a) {
+            var n = h.a.useRef({ state: p.a.full, animatedPanOffset: 0 }),
+              r = Je.a.get('window'),
               i = h.a.useMemo(
                 function () {
-                  return Object(Ee.a)(r.height, e.isSideNavLayout, n)
+                  return Object(Ee.a)(r.height, e.isSideNavLayout, a)
                 },
-                [r.height, e.isSideNavLayout, n],
+                [r.height, e.isSideNavLayout, a],
               ),
               o = h.a.useMemo(
                 function () {
@@ -7668,22 +7683,22 @@
                 },
                 [i],
               ),
-              c = h.a.useRef(new Je.a.Value(i.full)).current
+              c = h.a.useRef(new Xe.a.Value(i.full)).current
             Object(j.a)(function () {
-              var e = o(a.current.state)
-              Je.a.spring(c, { toValue: e }).start(t)
+              var e = o(n.current.state)
+              Xe.a.spring(c, { toValue: e }).start(t)
             })
             var s = e.onRequestClose,
               l = e.onToggleCollapsed,
               u = h.a.useMemo(
                 function () {
                   return function (e, t) {
-                    ;(a.current.state = e), p.h(e)
-                    var n = o(a.current.state),
+                    ;(n.current.state = e), p.h(e)
+                    var a = o(n.current.state),
                       r = null == t ? void 0 : t.vy
                     return new Promise(function (t) {
                       if (e === p.a.exit) return s(), t()
-                      Je.a.spring(c, { velocity: r, toValue: n }).start(function () {
+                      Xe.a.spring(c, { velocity: r, toValue: a }).start(function () {
                         e === p.a.collapse && l(), t()
                       })
                     })
@@ -7705,16 +7720,16 @@
                       return Math.abs(t.dy) > 5
                     },
                     onPanResponderGrant: function (e, t) {
-                      a.current.animatedPanOffset = c._value
+                      n.current.animatedPanOffset = c._value
                     },
                     onPanResponderMove: function (e, t) {
-                      var n = a.current.animatedPanOffset + t.dy
-                      n >= 0 && c.setValue(n)
+                      var a = n.current.animatedPanOffset + t.dy
+                      a >= 0 && c.setValue(a)
                     },
                     onPanResponderRelease: function (e, t) {
-                      var n = (null == t ? void 0 : t.vy) || 0,
-                        r = Math.abs(n) >= fn
-                      c._value > i.collapse || (r && t.dy > 0) ? u(p.a.collapse, t) : u(a.current.state, t)
+                      var a = (null == t ? void 0 : t.vy) || 0,
+                        r = Math.abs(a) >= ma
+                      c._value > i.collapse || (r && t.dy > 0) ? u(p.a.collapse, t) : u(n.current.state, t)
                     },
                   }),
                 ).current,
@@ -7730,12 +7745,12 @@
             },
             e.layout,
           ),
-          c = h.a.useRef(new Je.a.Value(i.shellHeights.full)).current,
-          l = o()(o()({}, e), {}, { mounted: a, animation: i })
+          c = h.a.useRef(new Xe.a.Value(i.shellHeights.full)).current,
+          l = o()(o()({}, e), {}, { mounted: n, animation: i })
         h.a.useEffect(
           function () {
             var e = i.shellHeights.full
-            Je.a.spring(c, { toValue: e }).start()
+            Xe.a.spring(c, { toValue: e }).start()
           },
           [i.shellHeights.full],
         )
@@ -7752,22 +7767,22 @@
           )
         return h.a.useMemo(
           function () {
-            var t = e.isSideNavLayout ? bn.container : vn.container,
-              n = e.isSideNavLayout ? bn.expandedShellContainer : vn.expandedShellContainer,
-              a = e.isSideNavLayout ? bn.footerContainer : vn.footerContainer,
+            var t = e.isSideNavLayout ? ga.container : ha.container,
+              a = e.isSideNavLayout ? ga.expandedShellContainer : ha.expandedShellContainer,
+              n = e.isSideNavLayout ? ga.footerContainer : ha.footerContainer,
               r = c,
               o = i.animatedPan.interpolate({
                 inputRange: [i.shellHeights.collapse, i.shellHeights.full],
                 outputRange: [1, 0],
               })
             return h.a.createElement(
-              Je.a.View,
-              { style: [t, vn.forceGPULayer, { height: r, opacity: o }] },
-              h.a.createElement(w.a, { style: n }, h.a.createElement(rn, s()({}, l, { footerHeight: f }))),
+              Xe.a.View,
+              { style: [t, ha.forceGPULayer, { height: r, opacity: o }] },
+              h.a.createElement(w.a, { style: a }, h.a.createElement(ra, s()({}, l, { footerHeight: f }))),
               h.a.createElement(
                 w.a,
-                { style: a },
-                h.a.createElement(D, { audioSpaceId: e.audioSpaceId, height: mn }),
+                { style: n },
+                h.a.createElement(D, { audioSpaceId: e.audioSpaceId, height: pa }),
                 h.a.createElement(Ft, {
                   audioSpaceId: e.audioSpaceId,
                   isSideNavLayout: e.isSideNavLayout,
@@ -7781,17 +7796,17 @@
               }),
             )
           },
-          [e.audioSpaceId, e.isSideNavLayout, a, e.layout],
+          [e.audioSpaceId, e.isSideNavLayout, n, e.layout],
         )
       }
-      function ln(e) {
+      function sa(e) {
         var t = Object(xt.b)(e.audioSpaceId),
-          n = t.all,
-          a = t.otherParticipantsTotal
+          a = t.all,
+          n = t.otherParticipantsTotal
         v.d()
-        var r = Xe.a.get('window'),
-          i = (e.isSideNavLayout ? e.width : r.width) - 2 * hn(P.a.theme).container.paddingHorizontal,
-          c = Object(en.b)(P.a.theme),
+        var r = Je.a.get('window'),
+          i = (e.isSideNavLayout ? e.width : r.width) - 2 * fa(P.a.theme).container.paddingHorizontal,
+          c = Object(ea.b)(P.a.theme),
           l = c.getHeight(),
           u = c.getWidth(),
           d = Math.min(4, Math.floor(i / u)),
@@ -7799,9 +7814,9 @@
         h.a.useEffect(
           function () {
             return (
-              e.isSideNavLayout || Jt.a.disable(),
+              e.isSideNavLayout || Xt.a.disable(),
               function () {
-                Jt.a.enable()
+                Xt.a.enable()
               }
             )
           },
@@ -7810,11 +7825,11 @@
         var m = h.a.useMemo(
           function () {
             var e = p
-            return n.map(function (t) {
+            return a.map(function (t) {
               return o()(o()({}, t), {}, { width: e })
             })
           },
-          [n, p],
+          [a, p],
         )
         return h.a.useMemo(
           function () {
@@ -7827,15 +7842,15 @@
               getItemLayout: function (e, t) {
                 return { length: l, offset: l * t, index: t }
               },
-              renderItem: un,
+              renderItem: la,
               ListHeaderComponent: h.a.createElement(T, { audioSpaceId: e.audioSpaceId }),
               ListFooterComponent: h.a.createElement(
                 tt,
                 null,
                 h.a.createElement(
                   w.a,
-                  { style: vn.participantsFooterContainer },
-                  h.a.createElement(ot.a, { audioSpaceId: e.audioSpaceId, count: a, interactive: !0 }),
+                  { style: ha.participantsFooterContainer },
+                  h.a.createElement(ot.a, { audioSpaceId: e.audioSpaceId, count: n, interactive: !0 }),
                 ),
               ),
             }
@@ -7844,9 +7859,9 @@
           [m],
         )
       }
-      function un(e) {
+      function la(e) {
         var t = e.item
-        return h.a.createElement(dn, {
+        return h.a.createElement(ua, {
           hasNftAvatar: t.user.has_nft_avatar,
           isVerified: t.user.is_verified,
           key: t.key,
@@ -7858,38 +7873,38 @@
           width: t.width,
         })
       }
-      function dn(e) {
+      function ua(e) {
         var t = e.periscopeUserId,
-          n = r()(e, tn),
-          a = xt.b.isParticipantHost(n.kind),
-          i = xt.b.canParticipantSpeak(n.kind) ? h.a.createElement(pn, { isHost: a, periscopeUserId: t }) : null,
-          o = Object.assign({}, { speakingIndicator: i, periscopeUserId: t }, n)
-        return h.a.createElement(en.a, o)
+          a = r()(e, ta),
+          n = xt.b.isParticipantHost(a.kind),
+          i = xt.b.canParticipantSpeak(a.kind) ? h.a.createElement(da, { isHost: n, periscopeUserId: t }) : null,
+          o = Object.assign({}, { speakingIndicator: i, periscopeUserId: t }, a)
+        return h.a.createElement(ea.a, o)
       }
-      function pn(e) {
+      function da(e) {
         var t = e.isHost,
-          n = e.periscopeUserId,
-          a = m.f({ isHost: t, periscopeUserId: n })
+          a = e.periscopeUserId,
+          n = m.f({ isHost: t, periscopeUserId: a })
         return h.a.createElement(
           w.a,
-          { style: gn.container },
-          h.a.createElement(Xt.a, { audioLevel: a || 0, size: P.a.theme.spacesPx.space16 }),
+          { style: va.container },
+          h.a.createElement(Jt.a, { audioLevel: n || 0, size: P.a.theme.spacesPx.space16 }),
         )
       }
-      var mn = 100,
-        fn = 0.5
-      function hn(e) {
+      var pa = 100,
+        ma = 0.5
+      function fa(e) {
         return { container: { paddingHorizontal: e.spacesPx.space8 } }
       }
-      var vn = P.a.create(function (e) {
+      var ha = P.a.create(function (e) {
         var t = Object(Ee.b)(e),
-          n = t.paddingHorizontal,
-          a = t.borderRadius,
-          r = hn(e)
+          a = t.paddingHorizontal,
+          n = t.borderRadius,
+          r = fa(e)
         return {
           forceGPULayer: { transform: [{ translate3d: '0, 0, 0' }] },
           container: { position: 'fixed', bottom: 0, width: '100%', backgroundColor: e.colors.maskColor },
-          expandedShellContainer: { width: '100%', borderRadius: a },
+          expandedShellContainer: { width: '100%', borderRadius: n },
           expandedShell: { boxShadow: e.boxShadows.xSmall, width: '100%', height: '100%', borderRadius: 'inherit' },
           expandedShellHeader: { userSelect: 'none', borderRadius: 'inherit' },
           expandedShellHeaderGripContainer: { paddingVertical: 5, justifyContent: 'center', alignItems: 'center' },
@@ -7899,7 +7914,7 @@
             backgroundColor: e.colors.gray200,
             borderRadius: e.borderRadiiPx.xLarge,
           },
-          expandedShellHeaderButtons: { flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: n },
+          expandedShellHeaderButtons: { flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: a },
           iconChevronDown: { color: e.colors.text, width: e.spaces.space16 },
           expandedShellHeaderRight: { flexDirection: 'row' },
           expandedShellContent: {
@@ -7910,14 +7925,14 @@
           expandedShellDescription: {
             marginTop: e.spaces.space4,
             marginBottom: e.spaces.space16,
-            paddingHorizontal: n,
+            paddingHorizontal: a,
           },
           participantsContainer: o()(o()({}, r.container), {}, { flex: 1 }),
           participantsFooterContainer: { paddingVertical: e.spaces.space16 },
           footerContainer: { position: 'absolute', bottom: 0, width: '100%' },
         }
       })
-      var gn = P.a.create(function (e) {
+      var va = P.a.create(function (e) {
           return {
             container: {
               position: 'absolute',
@@ -7930,7 +7945,7 @@
             },
           }
         }),
-        bn = P.a.create(function (e) {
+        ga = P.a.create(function (e) {
           var t = Object(Ee.b)(e)
           return {
             root: {
@@ -7958,7 +7973,7 @@
             },
           }
         }),
-        yn = { collapse: S.a.d227d19e }
+        ba = { collapse: S.a.d227d19e }
     },
   },
 ])

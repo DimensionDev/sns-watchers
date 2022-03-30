@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [30, 21],
+  [29, 20],
   {
     '5emT': function (e, t, a) {
       'use strict'
@@ -7547,12 +7547,13 @@
                 var t = e.length
                 return n._isInvalidNumber() && (t = 1), t
               }),
-              A()(T()(n), '_handleBlur', function (e) {
-                var t = n.props.onBlur,
-                  a = e.currentTarget.value,
+              A()(T()(n), '_handleBlur', function () {
+                var e,
+                  t = n.props.onBlur,
+                  a = (null === (e = n._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   i = n._calculateLength(a),
                   r = n._getActualCount(a)
-                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t(e)
+                n.setState({ isFocused: !1, displayCount: i, actualCount: r }), t && t()
               }),
               A()(T()(n), '_handleChange', function (e) {
                 var t = n.props.onChange,

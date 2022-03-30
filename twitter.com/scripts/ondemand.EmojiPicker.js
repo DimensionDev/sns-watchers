@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [210],
+  [209],
   {
     '5RdJ': function (e, t, n) {
       'use strict'
@@ -384,8 +384,8 @@
         M = I.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between' } }
         }),
-        A = H,
-        z = n('t62R'),
+        z = H,
+        A = n('t62R'),
         B = n('/yvb'),
         U = n('2ZFc'),
         N = n('ddV6'),
@@ -780,7 +780,7 @@
                         C.a.createElement(
                           te,
                           { style: pe.headerSection, withTopBorder: !0 },
-                          C.a.createElement(z.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
+                          C.a.createElement(A.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
                           n,
                         ),
                       ),
@@ -1049,7 +1049,6 @@
           n('DZ+c'),
           n('WNMA'),
           n('Ysgh'),
-          n('TJCb'),
           n('tQbP'),
           n('tn7R')),
         je = n('s1N3')
@@ -1091,8 +1090,17 @@
       var Re = (function () {
           function e(t) {
             f()(this, e),
-              S()(this, '_getScoreAndInsertResults', function (e, t, n) {
-                var o = {},
+              S()(this, '_getRelevantEmojis', function (e, t, n) {
+                var o = {}
+                for (var r in e) {
+                  var i = e[r]
+                  ;-1 !== i.search.indexOf(t) && (o[r] = i)
+                }
+                return o
+              }),
+              S()(this, '_getScores', function (e, t) {
+                var n = {},
+                  o = {},
                   r = 0,
                   i = new RegExp('\\b'.concat(t, '\\b'))
                 for (var a in e) {
@@ -1103,25 +1111,19 @@
                   var u = Object(ge.a)(l, function (e) {
                       return e === t
                     }),
-                    d = -1 !== u ? u : l.toString().indexOf(t)
-                  c && (r = Math.max(r, d))
+                    d = -1 !== u ? u : s.indexOf(t)
+                  ;(o[a] = d + 1), c && ((n[a] = o[a]), (r = Math.max(r, d)))
                 }
                 for (var f in e) {
-                  var h = e[f],
-                    m = h.search,
-                    v = m.match(i),
-                    p = m.split(',')
-                  p.shift()
-                  var g = Object(ge.a)(p, function (e) {
-                      return e === t
-                    }),
-                    y = -1 !== g ? g : p.toString().indexOf(t)
-                  if (-1 !== y) {
-                    var _ = y + 1
-                    t === f ? (_ = 0) : v || (_ += r), be(n, t, h), (o[f] = _)
-                  }
+                  var h = e[f].search.match(i)
+                  ;-1 !== o[f] && (t === f ? (n[f] = 0) : h || (n[f] = r + o[f]))
                 }
-                return o
+                return n
+              }),
+              S()(this, '_insertEmojisToTrie', function (e, t, n) {
+                for (var o in e) {
+                  be(n, t, e[o])
+                }
               }),
               (this._data = t),
               (this._index = { results: [], children: {} }),
@@ -1142,14 +1144,17 @@
                       l = (c = c.slice(0, 2))
                         .map(function (e) {
                           var t = [],
-                            o = Ee(s, e)
-                          if (0 === o.length) {
-                            var r = n._getScoreAndInsertResults(i, e, s)
-                            ;(t = Ee(s, e)).sort(function (e, t) {
-                              return r[e.id] - r[t.id]
-                            })
-                          } else t = o
-                          return t
+                            o = Ee(s, e),
+                            r = new RegExp('\\b'.concat(e, '\\b')),
+                            a = n._getRelevantEmojis(i, e, r),
+                            c = n._getScores(a, e)
+                          return (
+                            0 === o.length ? (n._insertEmojisToTrie(a, e, s), (t = Ee(s, e))) : (t = o),
+                            t.sort(function (e, t) {
+                              return c[e.id] - c[t.id]
+                            }),
+                            t
+                          )
                         })
                         .filter(function (e) {
                           return !!e
@@ -1240,7 +1245,7 @@
         }),
         He = C.a.memo(Le),
         Me = n('IMYl'),
-        Ae = (function (e) {
+        ze = (function (e) {
           y()(n, e)
           var t = w()(n)
           function n() {
@@ -1329,14 +1334,14 @@
                           T.a,
                           {
                             style: [
-                              ze.root,
+                              Ae.root,
                               { backgroundColor: i.color },
                               s.transitionStyle,
                               (l || c) && s.focusedStyle,
-                              (u || r) && ze.selected,
+                              (u || r) && Ae.selected,
                             ],
                           },
-                          r ? C.a.createElement(Me.a, { style: ze.checkmarkIcon }) : null,
+                          r ? C.a.createElement(Me.a, { style: Ae.checkmarkIcon }) : null,
                         ),
                       )
                     },
@@ -1347,7 +1352,7 @@
             n
           )
         })(C.a.Component),
-        ze = I.a.create(function (e) {
+        Ae = I.a.create(function (e) {
           return {
             outer: { paddingLeft: e.spaces.space4 },
             root: {
@@ -1361,7 +1366,7 @@
             checkmarkIcon: { height: '1em', width: '1em', color: e.colors.cellBackground },
           }
         }),
-        Be = Ae,
+        Be = ze,
         Ue = (function (e) {
           y()(n, e)
           var t = w()(n)
@@ -1470,7 +1475,7 @@
                 var t = o.state,
                   n = t.activeCategory,
                   r = t.query
-                return C.a.createElement(A, {
+                return C.a.createElement(z, {
                   activeCategory: r ? void 0 : n,
                   categories: e,
                   disableAll: !!r,
@@ -1601,7 +1606,7 @@
                 var e = o.state.previewEmoji
                 return e
                   ? C.a.createElement(
-                      z.b,
+                      A.b,
                       {
                         align: 'left',
                         color: 'gray700',

@@ -1,15 +1,15 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [34],
+  [33],
   {
     'Fg/a': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return M
+        return R
       })
       var i = n('VrFO'),
-        r = n.n(i),
-        a = n('Y9Ll'),
-        c = n.n(a),
+        a = n.n(i),
+        r = n('Y9Ll'),
+        c = n.n(r),
         o = n('1Pcy'),
         s = n.n(o),
         u = n('5Yy7'),
@@ -41,8 +41,8 @@
           }),
         w = (n('1t7P'), n('jQ/y'), n('3XMw')),
         T = n.n(w),
-        A = n('rJoH'),
-        _ = n('fzjU'),
+        _ = n('rJoH'),
+        A = n('fzjU'),
         C = n('Tg44')
       function j(e) {
         var t = e.space
@@ -52,48 +52,53 @@
               var t,
                 n,
                 i,
-                r,
-                a = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
-                c = a ? O.hostSpace({ name: a }) : O.hostSpaceFallback,
+                a,
+                r = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
+                c = r ? O.hostSpace({ name: r }) : O.hostSpaceFallback,
                 o = e.title || c,
                 s = O.descriptionGeneric,
                 u = (null == e ? void 0 : e.participants.total) || 0,
-                l = _.a.formatCountShort(u),
+                l = A.a.formatCountShort(u),
                 p = O.descriptionListening({ count: l })
               if (e.state === C.a.SpaceState.Running)
                 (n = O.titleRunning({ spaceTitle: o })),
                   (i = O.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: s })),
-                  (r = F.ttl.Frequent)
+                  (a = F.ttl.Frequent)
               else if (e.state === C.a.SpaceState.NotStarted || e.state === C.a.SpaceState.PrePublished) {
                 var h = O.scheduledSpaceGeneric
                 ;(n = O.titleScheduled({ date: h, spaceTitle: o })),
                   (i = O.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: s })),
-                  (r = F.ttl.Frequent)
+                  (a = F.ttl.Frequent)
               } else
-                (n = O.titleEnded({ spaceTitle: o })),
-                  (i = O.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
-                  (r = F.ttl.LongLivedCache)
+                (e.state !== C.a.SpaceState.Ended && e.state !== C.a.SpaceState.TimedOut) ||
+                !e.is_space_available_for_replay
+                  ? ((n = O.titleEnded({ spaceTitle: o })),
+                    (i = O.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
+                    (a = F.ttl.LongLivedCache))
+                  : ((n = O.titleRecording({ spaceTitle: o })),
+                    (i = O.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
+                    (a = F.ttl.LongLivedCache))
               var d = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
-              return { title: n, canonical: d, description: i, ttl: r }
+              return { title: n, canonical: d, description: i, ttl: a }
             })(e),
             n = t.canonical,
             i = t.description,
-            r = t.title,
-            a = t.ttl
+            a = t.title,
+            r = t.ttl
           return {
             type: 'website',
             canonical: n,
-            title: r,
+            title: a,
             description: i,
             image: F.image.url,
             imageType: F.image.type,
             imageW: F.image.width,
             imageH: F.image.height,
             imageAlt: F.image.alt,
-            ttl: a,
+            ttl: r,
           }
         })(t)
-        return v.a.createElement(A.a, n)
+        return v.a.createElement(_.a, n)
       }
       var O = {
           twitterSpaces: T.a.gaa01f2c,
@@ -106,6 +111,7 @@
           titleRunning: T.a.a065e7e7,
           titleScheduled: T.a.hd5e7b20,
           titleEnded: T.a.f826f7ee,
+          titleRecording: T.a.i8478ae7,
           descriptionFormatRunning: T.a.b2a94e92,
           descriptionFormatScheduled: T.a.f6432ce5,
           descriptionFormatEnded: T.a.f6432ce5,
@@ -126,9 +132,9 @@
           var t = h()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var i = arguments.length, a = new Array(i), c = 0; c < i; c++) a[c] = arguments[c]
-            return (e = t.call.apply(t, [this].concat(a))), f()(s()(e), 'state', { space: null }), e
+            a()(this, n)
+            for (var i = arguments.length, r = new Array(i), c = 0; c < i; c++) r[c] = arguments[c]
+            return (e = t.call.apply(t, [this].concat(r))), f()(s()(e), 'state', { space: null }), e
           }
           return (
             c()(n, [
@@ -169,17 +175,17 @@
           e.children
         )
       }
-      var M = E(Object(x.a)(I))
+      var R = E(Object(x.a)(I))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return R
+        return H
       })
       var i = n('VrFO'),
-        r = n.n(i),
-        a = n('Y9Ll'),
-        c = n.n(a),
+        a = n.n(i),
+        r = n('Y9Ll'),
+        c = n.n(r),
         o = (n('849X'), n('TJCb'), n('7x/C'), n('JtPf'), n('KqXw'), n('LJOr'), n('yiKp')),
         s = n.n(o),
         u = n('KEM+'),
@@ -194,13 +200,13 @@
         S = (function (e) {
           h()(n, e)
           var t = f()(n)
-          function n(e, i, a) {
+          function n(e, i, r) {
             var c
             return (
-              r()(this, n),
+              a()(this, n),
               ((c = t.call(
                 this,
-                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(i, ' message: ').concat(a),
+                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(i, ' message: ').concat(r),
               )).url = e),
               (c.status = i),
               c
@@ -219,25 +225,25 @@
           function e() {
             var t = this,
               n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x
-            r()(this, e),
+            a()(this, e),
               l()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.SelfHarm }, e))
+                  return t._reportSpace(s()({ abuse_type: R.SelfHarm }, e))
                 },
                 Violence: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.Violence }, e))
+                  return t._reportSpace(s()({ abuse_type: R.Violence }, e))
                 },
                 SexualContent: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.SexualContent }, e))
+                  return t._reportSpace(s()({ abuse_type: R.SexualContent }, e))
                 },
                 ChildSafety: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.ChildSafety }, e))
+                  return t._reportSpace(s()({ abuse_type: R.ChildSafety }, e))
                 },
                 PrivateInformation: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.PrivateInformation }, e))
+                  return t._reportSpace(s()({ abuse_type: R.PrivateInformation }, e))
                 },
                 AbusiveBehavior: function (e) {
-                  return t._reportSpace(s()({ abuse_type: M.AbusiveBehavior }, e))
+                  return t._reportSpace(s()({ abuse_type: R.AbusiveBehavior }, e))
                 },
               })
             var i = n.httpConfig
@@ -290,10 +296,10 @@
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     i = n.params,
-                    r = Object.assign(O(), n.headers),
-                    a = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
+                    a = Object.assign(O(), n.headers),
+                    r = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
                     c = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
-                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(c), headers: r, params: i, data: a })
+                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(c), headers: a, params: i, data: r })
                 },
               },
               {
@@ -355,15 +361,15 @@
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
                     var i = n.params,
-                      r = Object.assign(O(), n.headers),
-                      a = JSON.stringify({
+                      a = Object.assign(O(), n.headers),
+                      r = JSON.stringify({
                         access_token: e.access_token,
                         cursor: e.cursor,
                         limit: 1e3,
                         since: null,
                         quick_get: !0,
                       })
-                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
+                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: a, params: i, data: r })
                   })
                 },
               },
@@ -408,16 +414,16 @@
             e
           )
         })(),
-        A = 'X-Idempotence',
-        _ = 'X-Periscope-User-Agent',
+        _ = 'X-Idempotence',
+        A = 'X-Periscope-User-Agent',
         C = 'X-Attempt',
-        j = ((y = {}), l()(y, _, 'Twitter/m5'), l()(y, C, 1), y)
+        j = ((y = {}), l()(y, A, 'Twitter/m5'), l()(y, C, 1), y)
       function O() {
         var e,
           t = Date.now()
         return (
           (w = t <= w ? w + 1 : t),
-          Object.assign({}, j, ((e = {}), l()(e, A, w), l()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, j, ((e = {}), l()(e, _, w), l()(e, 'content-type', 'application/json'), e))
         )
       }
       var F = 'm5-proxsee-login-a2011357b73e',
@@ -431,8 +437,8 @@
                     (function (e, t) {
                       var n = e.uri,
                         i = t.status,
-                        r = Object(g.a)(t)
-                      return new S(n, i, r.msg)
+                        a = Object(g.a)(t)
+                      return new S(n, i, a.msg)
                     })(e, t),
                   )
                 : t
@@ -441,7 +447,7 @@
           },
         }
       var L,
-        M = Object.freeze({
+        R = Object.freeze({
           SelfHarm: 'SELF_HARM',
           Violence: 'VIOLENCE',
           SexualContent: 'SEXUAL_CONTENT',
@@ -449,19 +455,19 @@
           PrivateInformation: 'PRIVATE_INFO',
           AbusiveBehavior: 'HARASSMENT',
         }),
-        z = new T(),
-        G = n('G6rE'),
-        H = new Error('[AudioModule] config not initialized'),
-        R = new ((function () {
+        G = new T(),
+        M = n('G6rE'),
+        z = new Error('[AudioModule] config not initialized'),
+        H = new ((function () {
           function e() {
-            r()(this, e), (this.proxsee = z)
+            a()(this, e), (this.proxsee = G)
           }
           return (
             c()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  ;(L = e), z.init(L)
+                  ;(L = e), G.init(L)
                 },
               },
               {
@@ -475,32 +481,32 @@
                 value: function () {
                   if (this.initialized()) {
                     var e = L.store.getState()
-                    return G.e.selectLoggedInUser(e)
+                    return M.e.selectLoggedInUser(e)
                   }
                 },
               },
               {
                 key: 'audioSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(H)
+                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'subscribeToScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(H)
+                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'unsubscribeFromScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(H)
+                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'searchAudioSpace',
                 value: function (e, t) {
-                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(H)
+                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(z)
                 },
               },
             ]),
@@ -525,8 +531,8 @@
         })
       n('KqXw'), n('WNMA')
       var i = n('ERkP'),
-        r = n.n(i),
-        a = n('Fg/a'),
+        a = n.n(i),
+        r = n('Fg/a'),
         c = n('es0u'),
         o = n('SrtL'),
         s = n('Z5jE'),
@@ -536,33 +542,33 @@
         h = n('MWbm'),
         d = n('VRZ4')
       function f(e) {
-        return r.a.createElement(a.a, e, r.a.createElement(m, e))
+        return a.a.createElement(r.a, e, a.a.createElement(m, e))
       }
       function m(e) {
         var t = S.title
-        return r.a.createElement(
-          r.a.Fragment,
+        return a.a.createElement(
+          a.a.Fragment,
           null,
-          r.a.createElement(o.a, { title: t, withMeta: !1 }),
-          r.a.createElement(p.a, {
+          a.a.createElement(o.a, { title: t, withMeta: !1 }),
+          a.a.createElement(p.a, {
             backLocation: '/',
             documentTitle: t,
             history: e.history,
-            primaryContent: r.a.createElement(v, e),
-            sidebarContent: r.a.createElement(c.a, null),
+            primaryContent: a.a.createElement(v, e),
+            sidebarContent: a.a.createElement(c.a, null),
             title: t,
           }),
         )
       }
       function v(e) {
         var t = Object(s.a)(e.match)
-        return r.a.createElement(
+        return a.a.createElement(
           h.a,
           { style: g.container },
-          r.a.createElement(
+          a.a.createElement(
             h.a,
             { style: g.cardContainer },
-            r.a.createElement(d.a, { audioSpaceId: t, withDirectJoin: !0 }),
+            a.a.createElement(d.a, { audioSpaceId: t, withDirectJoin: !0 }),
           ),
         )
       }

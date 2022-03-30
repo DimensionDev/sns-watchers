@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [202],
+  [201],
   {
     '+/sI': function (e, t, a) {
       'use strict'
@@ -1419,6 +1419,7 @@
                             isAmplify: v[0].isAmplify,
                             canUploadLongVideo: Object(Ce.e)(
                               null === (a = e.context) || void 0 === a ? void 0 : a.userClaims,
+                              e.context.featureSwitches,
                             ),
                           })
                         })
@@ -2483,12 +2484,13 @@
                 var t = e.length
                 return n._isInvalidNumber() && (t = 1), t
               }),
-              y()(h()(n), '_handleBlur', function (e) {
-                var t = n.props.onBlur,
-                  a = e.currentTarget.value,
+              y()(h()(n), '_handleBlur', function () {
+                var e,
+                  t = n.props.onBlur,
+                  a = (null === (e = n._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
                   r = n._calculateLength(a),
                   i = n._getActualCount(a)
-                n.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t(e)
+                n.setState({ isFocused: !1, displayCount: r, actualCount: i }), t && t()
               }),
               y()(h()(n), '_handleChange', function (e) {
                 var t = n.props.onChange,
