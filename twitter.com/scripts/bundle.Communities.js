@@ -61,36 +61,46 @@
         var n = e.communityId,
           l = e.userResult,
           m = e.viewerRole,
-          y = r.a.useContext(i.a).loggedInUserId,
-          g = d()(void 0 !== t ? t : (t = a('tgdH')), l).result
-        if (!g || 'User' !== g.__typename || !g.legacy) return null
-        var p = g.community_role,
-          f = g.id,
-          b = g.legacy,
-          h = b.id_str,
-          _ = b.name,
-          k = void 0 === _ ? '' : _,
-          v = b.profile_image_url_https,
-          E = b.protected,
-          C = b.screen_name,
-          F = b.verified
-        if (!C || !v || !k) return null
-        var S = Object(u.d)(p)
+          y = r.a.useContext(i.a),
+          g = y.featureSwitches,
+          p = y.loggedInUserId,
+          f = g.isTrue('c9s_remove_member_list_enabled'),
+          b = d()(void 0 !== t ? t : (t = a('tgdH')), l).result
+        if (!b || 'User' !== b.__typename || !b.legacy) return null
+        var h = b.community_role,
+          _ = b.id,
+          k = b.legacy,
+          v = k.id_str,
+          E = k.name,
+          C = void 0 === E ? '' : E,
+          F = k.profile_image_url_https,
+          S = k.protected,
+          I = k.screen_name,
+          K = k.verified
+        if (!I || !F || !C) return null
+        var w = Object(u.d)(h),
+          T = m === u.a.Admin || (f && m === u.a.Moderator)
         return r.a.createElement(c.a, {
-          avatarUri: v,
-          decoration:
-            m === u.a.Admin
-              ? r.a.createElement(o.a, { communityId: n, communityRole: p, recordId: f, screenName: C, userId: h })
-              : y !== h
-              ? r.a.createElement(s.a, { user: g })
-              : null,
+          avatarUri: F,
+          decoration: T
+            ? r.a.createElement(o.a, {
+                communityId: n,
+                communityRole: h,
+                recordId: _,
+                screenName: I,
+                userId: v,
+                viewerRole: m,
+              })
+            : p !== v
+            ? r.a.createElement(s.a, { user: b })
+            : null,
           displayMode: 'UserCompact',
-          displayNameLabel: S,
-          isProtected: E,
-          isVerified: F,
-          name: k,
-          screenName: C,
-          userId: h,
+          displayNameLabel: w,
+          isProtected: S,
+          isVerified: K,
+          name: C,
+          screenName: I,
+          userId: v,
         })
       }
     },
@@ -7968,7 +7978,8 @@
           var n = e.communityId,
             a = e.onCommunityRoleChange,
             t = e.userCommunityRoleRelationship,
-            l = e.userId
+            l = e.userId,
+            r = e.viewerRole
           if (
             (u.a.useEffect(
               function () {
@@ -7979,11 +7990,18 @@
             !t)
           )
             return null
-          var r = t.role,
-            i = t.user,
-            o = i.id,
-            s = i.screen_name
-          return u.a.createElement(p.a, { communityId: n, communityRole: r, recordId: o, screenName: s, userId: l })
+          var i = t.role,
+            o = t.user,
+            s = o.id,
+            c = o.screen_name
+          return u.a.createElement(p.a, {
+            communityId: n,
+            communityRole: i,
+            recordId: s,
+            screenName: c,
+            userId: l,
+            viewerRole: r,
+          })
         }),
         k = a('4e/K'),
         v = a('Ig1G'),
@@ -7991,73 +8009,77 @@
         C = y.a.cf4898a0,
         F = [E.a.CommunityMembers]
       function S(e) {
-        var n = u.a.useContext(m.a).featureSwitches.isTrue('c9s_members_list_search_enabled'),
-          a = e.community,
-          t = e.communityId,
-          r = e.onIsSearchingChange,
-          o = (null == a ? void 0 : a.role) === v.a.Admin,
-          c = u.a.useState(!1),
-          d = s()(c, 2),
-          y = d[0],
-          g = d[1],
-          p = u.a.useState(''),
-          f = s()(p, 2),
-          b = f[0],
-          h = f[1],
-          S = u.a.useState({}),
-          K = s()(S, 2),
-          w = K[0],
-          T = K[1],
-          R = u.a.useCallback(
+        var n = u.a.useContext(m.a).featureSwitches,
+          a = n.isTrue('c9s_members_list_search_enabled'),
+          t = n.isTrue('c9s_remove_member_list_enabled'),
+          r = e.community,
+          o = e.communityId,
+          c = e.onIsSearchingChange,
+          d = null == r ? void 0 : r.role,
+          y = u.a.useState(!1),
+          g = s()(y, 2),
+          p = g[0],
+          f = g[1],
+          b = u.a.useState(''),
+          h = s()(b, 2),
+          S = h[0],
+          K = h[1],
+          w = u.a.useState({}),
+          T = s()(w, 2),
+          R = T[0],
+          L = T[1],
+          M = u.a.useCallback(
             function (e, n) {
-              T(function (a) {
+              L(function (a) {
                 return i()(i()({}, a), {}, l()({}, e, n))
               })
             },
-            [T],
-          ),
-          L = u.a.useCallback(
-            function () {
-              g(!0), r(!0)
-            },
-            [r],
-          ),
-          M = u.a.useCallback(
-            function (e) {
-              h(e)
-              var n = !!e
-              r(n), g(n)
-            },
-            [r],
+            [L],
           ),
           x = u.a.useCallback(
             function () {
-              b || (r(!1), g(!1))
+              f(!0), c(!0)
             },
-            [r, b],
+            [c],
+          ),
+          O = u.a.useCallback(
+            function (e) {
+              K(e)
+              var n = !!e
+              c(n), f(n)
+            },
+            [c],
+          ),
+          A = u.a.useCallback(
+            function () {
+              S || (c(!1), f(!1))
+            },
+            [c, S],
           )
-        if (!t) return null
-        return n && o
+        if (!o) return null
+        return a && (d === v.a.Admin || (t && d === v.a.Moderator))
           ? u.a.createElement(k.default, {
-              alwaysOpen: y,
-              communityId: t,
+              alwaysOpen: p,
+              communityId: o,
               filter: F,
               getUserDisplayNameLabel: function (e) {
                 if ('user' === e.type) {
                   var n = e.data.id_str,
-                    a = w[n]
+                    a = R[n]
                   if (a) return Object(v.d)(a.role)
                 }
               },
               inputStyle: I.textInput,
               isModal: !0,
-              onDismiss: x,
-              onFocus: L,
-              onQueryChange: M,
+              onDismiss: A,
+              onFocus: x,
+              onQueryChange: O,
               placeholder: C,
               renderUserDecoration: function (e) {
                 var n = e.userId
-                return u.a.createElement(_, { communityId: t, onCommunityRoleChange: R, userId: n })
+                return d
+                  ? u.a.createElement(_, { communityId: o, onCommunityRoleChange: M, userId: n, viewerRole: d })
+                  : null
               },
               rounded: !0,
               source: E.d.CommunityMemberSearch,
@@ -14871,16 +14893,17 @@
           f = e.recordId,
           k = e.screenName,
           E = e.userId,
-          C = u.a.useState(null),
-          F = s()(C, 2),
-          S = F[0],
-          I = F[1],
-          w = Object(g.c)(),
-          T = v()(Q),
-          A = s()(T, 2),
-          j = A[0],
-          H = A[1],
-          N = u.a.useCallback(
+          C = e.viewerRole,
+          F = u.a.useState(null),
+          S = s()(F, 2),
+          I = S[0],
+          w = S[1],
+          T = Object(g.c)(),
+          A = v()(Q),
+          j = s()(A, 2),
+          H = j[0],
+          N = j[1],
+          W = u.a.useCallback(
             function (e) {
               var n = e.communityId,
                 a = e.errorMessage,
@@ -14888,24 +14911,24 @@
                 l = e.role,
                 r = (e.screenName, e.successMessage),
                 i = e.userId
-              j({
+              H({
                 variables: { communityId: n, userId: i, role: l },
                 updater: function (e) {
                   var a = e.get(t)
                   null == a || a.setValue(l, 'community_role(community_id:"'.concat(n, '")')),
-                    w(p.b.updateOne(''.concat(n, '_').concat(i), { role: l }))
+                    T(p.b.updateOne(''.concat(n, '_').concat(i), { role: l }))
                 },
                 onCompleted: function () {
-                  w(Object(m.b)({ text: r }))
+                  T(Object(m.b)({ text: r }))
                 },
                 onError: function () {
-                  w(Object(m.b)({ text: a }))
+                  T(Object(m.b)({ text: a }))
                 },
               })
             },
-            [j, w],
+            [H, T],
           ),
-          W = u.a.useCallback(
+          J = u.a.useCallback(
             function (e) {
               var n,
                 a,
@@ -14926,14 +14949,14 @@
                 default:
                   return
               }
-              I(
+              w(
                 i()(
                   i()({}, n),
                   {},
                   {
                     text: n.text(c),
                     onConfirm: function () {
-                      N({
+                      W({
                         communityId: r,
                         errorMessage: a,
                         recordId: o,
@@ -14942,30 +14965,30 @@
                         successMessage: l,
                         userId: u,
                       }),
-                        I(null)
+                        w(null)
                     },
                     onCancel: function () {
-                      I(null)
+                      w(null)
                     },
                   },
                 ),
               )
             },
-            [N],
+            [W],
           ),
-          J = u.a.useCallback(
+          X = u.a.useCallback(
             function (e) {
               var n = []
-              if (r)
+              if (r && C === y.a.Admin)
                 switch (c) {
                   case y.a.Moderator:
                     n.push({
                       behavioralEventContext: { viewType: 'remove_moderator' },
-                      disabled: H,
+                      disabled: N,
                       text: D,
                       Icon: K,
                       onClick: function () {
-                        return W({
+                        return J({
                           communityId: o,
                           recordId: f,
                           roleAction: M.DemoteModerator,
@@ -14978,11 +15001,11 @@
                   case y.a.Member:
                     n.push({
                       behavioralEventContext: { viewType: 'add_moderator' },
-                      disabled: H,
+                      disabled: N,
                       text: O,
                       Icon: R,
                       onClick: function () {
-                        return W({
+                        return J({
                           communityId: o,
                           recordId: f,
                           roleAction: M.PromoteModerator,
@@ -15002,24 +15025,24 @@
                 u.a.createElement(b.a, { items: n, onCloseRequested: e, shouldCloseOnClick: !0 })
               )
             },
-            [o, W, r, f, c, H, k, E],
+            [o, J, r, f, c, N, k, E, C],
           )
         return E !== t
           ? u.a.createElement(
               u.a.Fragment,
               null,
-              u.a.createElement(h.a, { renderActionMenu: J }),
-              S
+              u.a.createElement(h.a, { renderActionMenu: X }),
+              I
                 ? u.a.createElement(
                     _.a,
                     l()(
                       {
                         confirmButtonType: 'primary',
                         onCancel: function () {
-                          I(null)
+                          w(null)
                         },
                       },
-                      S,
+                      I,
                     ),
                   )
                 : null,

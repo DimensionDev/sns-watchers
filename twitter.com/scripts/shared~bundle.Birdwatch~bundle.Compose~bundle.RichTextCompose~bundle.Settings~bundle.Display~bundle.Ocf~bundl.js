@@ -685,7 +685,7 @@
           },
           Pe = function (e) {
             var t = h.a.getBackgroundColor(e)
-            return t ? 'rgb('.concat(t.red, ',').concat(t.green, ',').concat(t.blue, ')') : null
+            if (t) return 'rgb('.concat(t.red, ',').concat(t.green, ',').concat(t.blue, ')')
           },
           Oe = function (e, t) {
             return [Te && P.negativeMargin, t && Te && [P.centerItems, { backgroundColor: e }]]
@@ -693,18 +693,20 @@
           Be = function () {
             var e,
               t,
-              n,
-              o = E.a.getOriginalTweet(te),
-              a = xe(),
-              i = k && !a && !!(e = Me()) && e < 1 && Ce,
-              c = (t = De()) ? Pe(t) : null
-            return o && o.is_quote_status
+              n = E.a.getOriginalTweet(te),
+              o = xe(),
+              a = k && !o && !!(e = Me()) && e < 1 && Ce,
+              i = (function () {
+                var e = De()
+                if (e) return Pe(e)
+              })()
+            return n && n.is_quote_status
               ? r.a.createElement(f.a, {
-                  forwardPivotInfo: (null === (n = o.quoted_status) || void 0 === n ? void 0 : n.softIntervention) || g,
+                  forwardPivotInfo: (null === (t = n.quoted_status) || void 0 === t ? void 0 : t.softIntervention) || g,
                   isCondensed: se,
                   loggedInUserId: M,
-                  mediaContentStyles: !se && Oe(c, !!i),
-                  mediaMaxHeight: i ? (Te ? 596 : 510) : void 0,
+                  mediaContentStyles: !se && Oe(i, !!a),
+                  mediaMaxHeight: a ? (Te ? 596 : 510) : void 0,
                   nativeID: Ae,
                   onPress: U,
                   preventVideoPlayback: K,
@@ -712,7 +714,7 @@
                   singleImageMaxAspectRatio: Y,
                   singleImageMinAspectRatio: W,
                   socialContextProps: q,
-                  tweet: o.quoted_status,
+                  tweet: n.quoted_status,
                   withCenterCrop: ce,
                   withHeaderLinks: me,
                   withLink: pe,
@@ -724,9 +726,8 @@
           },
           Fe = (function () {
             var e,
-              t,
-              n = E.a.getOriginalTweet(te),
-              o =
+              t = E.a.getOriginalTweet(te),
+              n =
                 k &&
                 (function () {
                   if (!xe()) return !1
@@ -738,42 +739,46 @@
                   return Object(d.b)($, Y, { width: o, height: n }) < 1
                 })() &&
                 Ce,
-              a = (t = Le()) ? Pe(t) : null
+              o = (function () {
+                var e = Le()
+                if (e) return Pe(e)
+              })()
             if (!xe()) return null
-            if (A.a.hasVoiceMedia(n))
-              return r.a.createElement(S.a, { style: P.gap }, r.a.createElement(A.a, { tweet: n }))
-            if (Object(x.c)(n)) {
-              var i = Object(x.b)(n)
-              if (i) return r.a.createElement(S.a, { style: P.gap }, r.a.createElement(x.a, { audioSpaceId: i }))
+            if (A.a.hasVoiceMedia(t))
+              return r.a.createElement(S.a, { style: P.gap }, r.a.createElement(A.a, { tweet: t }))
+            if (Object(x.c)(t)) {
+              var a = Object(x.b)(t)
+              if (a) return r.a.createElement(S.a, { style: P.gap }, r.a.createElement(x.a, { audioSpaceId: a }))
             }
             return r.a.createElement(C.a, {
-              authorId: n.user.id_str,
-              authorScreenName: n.user.screen_name,
+              authorId: t.user.id_str,
+              authorScreenName: t.user.screen_name,
               cacheLocationKey: B || L,
+              customHoverBackgroundColor: n && Te ? o : void 0,
               displayMediaAttribution: !0,
               displayMediaMetadata: p,
               enableKeyboardShortcuts: b,
               forwardPivotInfo: y,
-              hasSensitiveMedia: n.possibly_sensitive,
+              hasSensitiveMedia: t.possibly_sensitive,
               loggedInUserId: M,
               mediaAltTranslations: ee,
-              mediaContentStyles: [Oe(a, !!o)],
-              mediaDetails: null === (e = n.extended_entities) || void 0 === e ? void 0 : e.media,
-              mediaMaxHeight: o ? (Te ? 596 : 510) : void 0,
-              mediaTagsLink: ''.concat(n.permalink, '/media_tags'),
+              mediaContentStyles: [Oe(o, !!n)],
+              mediaDetails: null === (e = t.extended_entities) || void 0 === e ? void 0 : e.media,
+              mediaMaxHeight: n ? (Te ? 596 : 510) : void 0,
+              mediaTagsLink: ''.concat(t.permalink, '/media_tags'),
               onClick: H,
               onPlaybackStarted: j,
               preventPlayback: K,
               promotedContent: z,
               shouldShowAltLabelAlways: oe,
-              showBorder: !(o && Te),
+              showBorder: !(n && Te),
               showRoundCorners: we,
               singleImageMaxAspectRatio: Y,
               singleImageMinAspectRatio: $,
-              style: [P.gap, o && !Te && P.explicitlySized],
-              tweetCreatedAt: n.created_at,
-              tweetId: n.id_str,
-              tweetText: n.text,
+              style: [P.gap, n && !Te && P.explicitlySized],
+              tweetCreatedAt: t.created_at,
+              tweetId: t.id_str,
+              tweetText: t.text,
               withCenterCrop: ce,
               withHalvedMediaSize: ue,
               withMediaTagsIcon: de,
@@ -4312,6 +4317,7 @@
                               entities: t.richText.entities,
                               text: t.richText.text,
                             }),
+                            nativeID: pe.tombstone,
                           },
                           e,
                         ),

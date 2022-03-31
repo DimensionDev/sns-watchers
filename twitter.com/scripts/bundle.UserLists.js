@@ -12477,7 +12477,7 @@
             text: null,
           },
         }
-      ;(U.hash = '1367c7515265e8ec38094d731af0d722'), (t.default = U)
+      ;(U.hash = 'f44db02f3d6056c0e88f440be8801762'), (t.default = U)
     },
     rFBM: function (e, t, n) {
       'use strict'
@@ -12764,7 +12764,7 @@
                     s = t.renderNoResultsState,
                     o = t.selectedItems,
                     c = t.style,
-                    u = a || r.length,
+                    u = !(!a && !r.length),
                     d = 0,
                     p = !!o
                   return u

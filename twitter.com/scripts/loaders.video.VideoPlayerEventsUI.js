@@ -24,30 +24,31 @@
         v = a('/yvb'),
         b = a('3XMw'),
         I = a.n(b),
-        g = a('RUwF'),
+        A = a('RUwF'),
         S = a('rHpw'),
-        A = a('Q0n6'),
+        g = a('Q0n6'),
         O = a('Wms4'),
         w =
           (a('yH/f'),
           Object.freeze({
             LIVE_BROADCAST: 'liveBroadcast',
             REPLAY_BROADCAST: 'replayBroadcast',
+            AUDIOSPACE: 'audiospace',
             VOD: 'vod',
             GIF: 'gif',
             SLATE: 'slate',
           })),
         D = I.a.j190bf19,
-        R = I.a.f6dc9146,
-        C = function (e) {
+        C = I.a.f6dc9146,
+        R = function (e) {
           var t = e.playbackDurationMs
           switch (e.type) {
             case w.LIVE_BROADCAST:
               return E.a.createElement(O.a, { type: 'live' }, D)
             case w.REPLAY_BROADCAST:
-              return E.a.createElement(O.a, { bold: !0 }, R)
+              return E.a.createElement(O.a, { bold: !0 }, C)
             case w.VOD:
-              return 'number' == typeof t && E.a.createElement(O.a, null, Object(A.c)(t) || '')
+              return 'number' == typeof t && E.a.createElement(O.a, null, Object(g.c)(t) || '')
             case w.GIF:
               return E.a.createElement(O.a, { bold: !0 }, 'GIF')
             default:
@@ -117,7 +118,7 @@
                       E.a.createElement(
                         L.a,
                         { style: _.badgeContainer },
-                        E.a.createElement(C, { playbackDurationMs: a, type: n }),
+                        E.a.createElement(R, { playbackDurationMs: a, type: n }),
                       ),
                     ),
                   )
@@ -151,7 +152,7 @@
                     { style: _.replayWrapper },
                     E.a.createElement(v.a, {
                       accessibilityLabel: k,
-                      icon: E.a.createElement(g.a, null),
+                      icon: E.a.createElement(A.a, null),
                       onPress: e,
                       size: 'medium',
                       type: 'onMediaText',
@@ -198,14 +199,14 @@
         v = a('aoyV'),
         b = a('kCRK'),
         I = a('fZNH'),
-        g = a('ub6r'),
+        A = a('ub6r'),
         S = a('mf6X'),
-        A = a('0nHQ'),
+        g = a('0nHQ'),
         O = a('USG3'),
         w = a('Q0n6'),
         D = a('5VhU'),
-        R = a('hhMf'),
-        C = a('Ur4q'),
+        C = a('hhMf'),
+        R = a('Ur4q'),
         x = a('oH2E'),
         P = a('TlAO'),
         L = a('mNIZ'),
@@ -240,9 +241,9 @@
                     'PLAY_REQUESTED' !==
                     (null == u || null === (a = u.controls) || void 0 === a ? void 0 : a.playState),
                   b = t.Observer,
-                  g = t.observed,
-                  D = Object(k.c)(u, g, k.b),
-                  R = !!u.error,
+                  A = t.observed,
+                  D = Object(k.c)(u, A, k.b),
+                  C = !!u.error,
                   L = !(null != c && c.hidePosterImage)
                 return E.a.createElement(
                   I.a,
@@ -250,12 +251,12 @@
                   E.a.createElement(
                     b,
                     { click: !0, interactionKey: k.a.Root, mousemove: !0, mouseover: !0 },
-                    R
+                    C
                       ? null
                       : E.a.createElement(
                           E.a.Fragment,
                           null,
-                          E.a.createElement(C.a, {
+                          E.a.createElement(R.a, {
                             hideControls: D,
                             isTouchOnlyUI: k.b,
                             playerApi: s,
@@ -283,8 +284,8 @@
                         ),
                     E.a.createElement(
                       O.a,
-                      { show: R },
-                      R && E.a.createElement(A.a, { imageSrc: m, playerApi: s, playerState: u }),
+                      { show: C },
+                      C && E.a.createElement(g.a, { imageSrc: m, playerApi: s, playerState: u }),
                     ),
                   ),
                 )
@@ -323,7 +324,7 @@
                       E.a.createElement(
                         l,
                         { focus: !0, interactionKey: k.a.ControlBar, mouseover: !0, touch: !0 },
-                        E.a.createElement(g.a, {
+                        E.a.createElement(A.a, {
                           containerRef: s,
                           hideControls: n,
                           playerApi: r,
@@ -358,7 +359,7 @@
                     t = e.playerApi,
                     a = e.playerState
                   return t && a
-                    ? E.a.createElement(R.a, null, E.a.createElement(R.a.Context.Consumer, null, this._render))
+                    ? E.a.createElement(C.a, null, E.a.createElement(C.a.Context.Consumer, null, this._render))
                     : null
                 },
               },

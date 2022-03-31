@@ -14,24 +14,30 @@
       a.r(t),
         a.d(t, 'UserPicker', function () {
           return O
+        }),
+        a.d(t, 'finalGetItemIsDisabled', function () {
+          return F
+        }),
+        a.d(t, 'getFinalItemDisabledMessage', function () {
+          return M
         })
       var n = a('VrFO'),
         r = a.n(n),
         o = a('Y9Ll'),
         s = a.n(o),
         i = a('1Pcy'),
-        l = a.n(i),
-        c = a('5Yy7'),
-        d = a.n(c),
+        c = a.n(i),
+        l = a('5Yy7'),
+        d = a.n(l),
         p = a('2VqO'),
         u = a.n(p),
         h = a('KEM+'),
         m = a.n(h),
-        y = (a('z84I'), a('ho0z'), a('vrRf'), a('2G9S'), a('ERkP')),
-        f = a.n(y),
-        v = a('ZcYN'),
-        g = a('3XMw'),
-        b = a.n(g),
+        f = (a('z84I'), a('ho0z'), a('2G9S'), a('vrRf'), a('ERkP')),
+        y = a.n(f),
+        g = a('ZcYN'),
+        v = a('3XMw'),
+        b = a.n(v),
         w = 'searchPeople',
         I = a('4e/K'),
         _ = a('MWbm'),
@@ -50,48 +56,50 @@
             return (
               r()(this, a),
               (o = t.call(this, e, n)),
-              m()(l()(o), '_renderSelectedUsersList', function () {
+              m()(c()(o), '_renderSelectedUsersList', function () {
                 var e = o.props.selectedUsers
-                return f.a.createElement(_.a, { style: P.selectedUsersList }, e.map(o._renderSelectedUserPill))
+                return y.a.createElement(_.a, { style: A.selectedUsersList }, e.map(o._renderSelectedUserPill))
               }),
-              m()(l()(o), '_renderSelectedUserPill', function (e) {
+              m()(c()(o), '_renderSelectedUserPill', function (e) {
                 var t = o.props.withCompactPills,
-                  a = o.props.onRemove.bind(l()(o), e),
+                  a = o.props.onRemove.bind(c()(o), e),
                   n =
                     e.type === S.b.User
-                      ? f.a.createElement(C.a, {
+                      ? y.a.createElement(C.a, {
                           accessibilityHidden: !0,
                           focusable: !1,
                           size: 'custom',
                           uri: e.data.profile_image_url_https,
                         })
                       : void 0
-                return f.a.createElement(x.a, {
+                return y.a.createElement(x.a, {
                   accessibilityLabel: R({ name: e.data.name }),
                   avatar: n,
                   compact: t,
                   key: e.id,
                   mode: 'remove',
                   onClick: a,
-                  style: P.selectionPill,
+                  style: A.selectionPill,
                   text: e.data.name,
                 })
               }),
-              m()(l()(o), '_getItemIsDisabled', function (e) {
+              m()(c()(o), '_getItemIsDisabled', function (e) {
                 var t = o.props,
-                  a = t.getItemIsDisabled
-                return t.preselectedUsers.indexOf(e.id) >= 0 || !(!a || !a(e))
+                  a = t.getItemIsDisabled,
+                  n = t.preselectedUsers
+                return F(e, a, n)
               }),
-              m()(l()(o), '_getItemDisabledMessage', function (e) {
+              m()(c()(o), '_getItemDisabledMessage', function (e) {
                 var t = o.props,
-                  a = t.getItemDisabledMessage
-                return t.preselectedUsers.indexOf(e.id) >= 0 ? void 0 : a ? a(e) : void 0
+                  a = t.getItemDisabledMessage,
+                  n = t.preselectedUsers
+                return M(e, a, n)
               }),
-              m()(l()(o), '_handleQueryChange', function (e) {
+              m()(c()(o), '_handleQueryChange', function (e) {
                 var t = o.props.onQueryChange
                 o.setState({ query: e }), t && t(e)
               }),
-              m()(l()(o), '_handleOnSelect', function (e) {
+              m()(c()(o), '_handleOnSelect', function (e) {
                 var t = o.props.onSelect
                 t && t(e)
               }),
@@ -112,15 +120,15 @@
                     o = e.selectedUsers,
                     s = e.shouldAutoFocus,
                     i = e.source,
-                    l = o
+                    c = o
                       .map(function (e) {
                         return e.id
                       })
                       .concat(a)
-                  return f.a.createElement(
+                  return y.a.createElement(
                     _.a,
-                    { style: P.root },
-                    f.a.createElement(I.default, {
+                    { style: A.root },
+                    y.a.createElement(I.default, {
                       alwaysOpen: !0,
                       disableClearButton: !0,
                       filter: k,
@@ -134,8 +142,8 @@
                       renderCallout: n,
                       renderHeader: r,
                       renderInSearchField: o.length ? this._renderSelectedUsersList : void 0,
-                      renderUserDecoration: v.a,
-                      selectedItems: l,
+                      renderUserDecoration: g.a,
+                      selectedItems: c,
                       shouldAutoFocus: s,
                       shouldClearOnSelect: !0,
                       shouldFocusOnClear: !0,
@@ -149,15 +157,24 @@
             ]),
             a
           )
-        })(f.a.Component)
+        })(y.a.Component)
       m()(O, 'defaultProps', { preselectedUsers: [], shouldAutoFocus: !0, withCompactPills: !1 })
-      var P = D.a.create(function (e) {
-        return {
-          root: { flex: 1 },
-          selectionPill: { margin: e.spaces.space4, maxWidth: 'calc(100% - '.concat(e.spaces.space16, ')') },
-          selectedUsersList: { flexDirection: 'row', flexWrap: 'wrap', padding: e.spaces.space4 },
-        }
-      })
+      var P = function (e, t) {
+          return t.indexOf(e) >= 0
+        },
+        F = function (e, t, a) {
+          return P(e.id, a) || !(!t || !t(e))
+        },
+        M = function (e, t, a) {
+          if (!P(e.id, a) && t) return t(e)
+        },
+        A = D.a.create(function (e) {
+          return {
+            root: { flex: 1 },
+            selectionPill: { margin: e.spaces.space4, maxWidth: 'calc(100% - '.concat(e.spaces.space16, ')') },
+            selectedUsersList: { flexDirection: 'row', flexWrap: 'wrap', padding: e.spaces.space4 },
+          }
+        })
       t.default = O
     },
     'aV/s': function (e, t, a) {
@@ -167,18 +184,18 @@
         o = a('Y9Ll'),
         s = a.n(o),
         i = a('1Pcy'),
-        l = a.n(i),
-        c = a('5Yy7'),
-        d = a.n(c),
+        c = a.n(i),
+        l = a('5Yy7'),
+        d = a.n(l),
         p = a('2VqO'),
         u = a.n(p),
         h = a('KEM+'),
         m = a.n(h),
-        y = (a('2G9S'), a('hBvt'), a('uFXj'), a('ERkP')),
-        f = a.n(y),
-        v = a('t62R'),
-        g = a('3XMw'),
-        b = a.n(g),
+        f = (a('2G9S'), a('hBvt'), a('uFXj'), a('ERkP')),
+        y = a.n(f),
+        g = a('t62R'),
+        v = a('3XMw'),
+        b = a.n(v),
         w = a('I4+6'),
         I = a('cm6r'),
         _ = a('UnyZ'),
@@ -197,7 +214,7 @@
             for (var n = arguments.length, o = new Array(n), s = 0; s < n; s++) o[s] = arguments[s]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              m()(l()(e), '_handleSecondaryClick', function () {
+              m()(c()(e), '_handleSecondaryClick', function () {
                 var t = e.props.secondaryAction
                 t && t.onSecondaryClick()
               }),
@@ -217,36 +234,36 @@
                     o = e.link,
                     s = e.mode,
                     i = e.onClick,
-                    l = e.secondaryAction,
-                    c = e.selected,
+                    c = e.secondaryAction,
+                    l = e.selected,
                     d = e.style,
                     p = e.text,
                     u = this._renderIcon(!0, s),
-                    h = l && this._renderIcon(!1, l.mode),
-                    m = [O.root, n && O.compact, r && O.disabled, c && O.selected, d],
-                    y = [O.content, u && O.withIcon, a && ((n && O.withAvatarImageCompact) || O.withAvatarImage)],
-                    g = w.a.generate({
-                      backgroundColor: c ? C.a.theme.colors.primary : 'transparent',
-                      color: c ? C.a.theme.colors.white : C.a.theme.colors.primary,
+                    h = c && this._renderIcon(!1, c.mode),
+                    m = [O.root, n && O.compact, r && O.disabled, l && O.selected, d],
+                    f = [O.content, u && O.withIcon, a && ((n && O.withAvatarImageCompact) || O.withAvatarImage)],
+                    v = w.a.generate({
+                      backgroundColor: l ? C.a.theme.colors.primary : 'transparent',
+                      color: l ? C.a.theme.colors.white : C.a.theme.colors.primary,
                     })
-                  return f.a.createElement(
+                  return y.a.createElement(
                     x.a,
                     { style: m },
-                    f.a.createElement(
+                    y.a.createElement(
                       I.a,
                       {
                         accessibilityLabel: t || (s ? E[s] : ''),
                         disabled: r,
-                        interactiveStyles: g,
+                        interactiveStyles: v,
                         link: o,
                         onPress: i,
-                        style: y,
+                        style: f,
                       },
                       this._renderAvatar(),
-                      f.a.createElement(
-                        v.b,
+                      y.a.createElement(
+                        g.b,
                         {
-                          color: c ? 'whiteOnColor' : 'text',
+                          color: l ? 'whiteOnColor' : 'text',
                           numberOfLines: 1,
                           selectable: !1,
                           style: O.text,
@@ -256,18 +273,18 @@
                       ),
                       u,
                     ),
-                    l
-                      ? f.a.createElement(
+                    c
+                      ? y.a.createElement(
                           I.a,
                           {
-                            accessibilityLabel: l.accessibilityLabel || (l.mode ? E[l.mode] : ''),
-                            disabled: r || l.disabled,
-                            hoverLabel: { label: l.hoverLabel || (l.mode ? E[l.mode] : '') },
-                            interactiveStyles: g,
+                            accessibilityLabel: c.accessibilityLabel || (c.mode ? E[c.mode] : ''),
+                            disabled: r || c.disabled,
+                            hoverLabel: { label: c.hoverLabel || (c.mode ? E[c.mode] : '') },
+                            interactiveStyles: v,
                             onPress: this._handleSecondaryClick,
                             style: O.secondaryControl,
                           },
-                          f.a.createElement(x.a, { style: O.secondaryBorder }, h),
+                          y.a.createElement(x.a, { style: O.secondaryBorder }, h),
                         )
                       : null,
                   )
@@ -283,11 +300,11 @@
                     r = [O.icon]
                   switch (t) {
                     case _.a.Remove:
-                      return f.a.createElement(D.a, { style: [O.dismissIcon, e && n] })
+                      return y.a.createElement(D.a, { style: [O.dismissIcon, e && n] })
                     case _.a.Expand:
-                      return f.a.createElement(S.a, { style: e ? n : r })
+                      return y.a.createElement(S.a, { style: e ? n : r })
                     case _.a.Active:
-                      return f.a.createElement(k.a, { style: n })
+                      return y.a.createElement(k.a, { style: n })
                     default:
                       return null
                   }
@@ -300,14 +317,14 @@
                     t = e.avatar,
                     a = e.compact
                   return t
-                    ? f.a.createElement(x.a, { style: [O.avatarContainer, a ? O.avatarCompact : O.avatar] }, t)
+                    ? y.a.createElement(x.a, { style: [O.avatarContainer, a ? O.avatarCompact : O.avatar] }, t)
                     : null
                 },
               },
             ]),
             a
           )
-        })(f.a.PureComponent)
+        })(y.a.PureComponent)
       m()(R, 'defaultProps', { compact: !1, disabled: !1, selected: !1 })
       var O = C.a.create(function (e) {
         return {
@@ -362,17 +379,17 @@
         o = a('VrFO'),
         s = a.n(o),
         i = a('Y9Ll'),
-        l = a.n(i),
-        c = a('1Pcy'),
-        d = a.n(c),
+        c = a.n(i),
+        l = a('1Pcy'),
+        d = a.n(l),
         p = a('5Yy7'),
         u = a.n(p),
         h = a('2VqO'),
         m = a.n(h),
-        y = a('KEM+'),
-        f = a.n(y),
-        v = (a('uFXj'), a('ERkP')),
-        g = a.n(v),
+        f = a('KEM+'),
+        y = a.n(f),
+        g = (a('uFXj'), a('ERkP')),
+        v = a.n(g),
         b = a('oEoC'),
         w = a('oQhu'),
         I = a('7nmT'),
@@ -397,16 +414,16 @@
             return (
               s()(this, a),
               (o = t.call(this, e, n)),
-              f()(d()(o), '_typeaheadActive', !1),
-              f()(d()(o), '_renderTypeaheadDropdown', function (e) {
+              y()(d()(o), '_typeaheadActive', !1),
+              y()(d()(o), '_renderTypeaheadDropdown', function (e) {
                 var t = o.props,
                   a = t.contextText,
                   n = t.isInlineReply,
                   r = t.onSelectItem,
                   s = t.source,
                   i = o.context.isModal,
-                  l = e.resultType === P.a.Topics ? 'hashtag' : void 0,
-                  c = g.a.createElement(x.a, {
+                  c = e.resultType === P.a.Topics ? 'hashtag' : void 0,
+                  l = v.a.createElement(x.a, {
                     ariaDescendantId: o.state.ariaDescendantId,
                     contextText: a,
                     domId: o._dropdownDomId,
@@ -418,32 +435,32 @@
                     ref: o._handleTypeaheadRef,
                     source: s,
                     style: o._calcStyle(),
-                    topicType: l,
+                    topicType: c,
                     withItemAlwaysSelected: !0,
                   })
                 return i || n
-                  ? g.a.createElement(
+                  ? v.a.createElement(
                       k.a.HalfSheet,
                       null,
-                      g.a.createElement(
-                        g.a.Fragment,
+                      v.a.createElement(
+                        v.a.Fragment,
                         null,
-                        g.a.createElement(D.a, { onClick: o._handleDismiss, style: T.mask }),
-                        c,
+                        v.a.createElement(D.a, { onClick: o._handleDismiss, style: T.mask }),
+                        l,
                       ),
                     )
-                  : g.a.createElement(
-                      g.a.Fragment,
+                  : v.a.createElement(
+                      v.a.Fragment,
                       null,
-                      g.a.createElement(D.a, { onClick: o._handleDismiss, style: T.mask }),
-                      c,
+                      v.a.createElement(D.a, { onClick: o._handleDismiss, style: T.mask }),
+                      l,
                     )
               }),
-              f()(d()(o), 'render', function () {
+              y()(d()(o), 'render', function () {
                 var e = o.props,
                   t = e.children,
                   a = e.query,
-                  n = g.a.cloneElement(t, {
+                  n = v.a.cloneElement(t, {
                     ariaAutocomplete: 'list',
                     ariaControls: o._dropdownDomId,
                     ariaActiveDescendant: o.state.ariaDescendantId,
@@ -453,10 +470,10 @@
                       a && a(e)
                     },
                   })
-                return g.a.createElement(
+                return v.a.createElement(
                   D.a,
                   { style: T.inputContainer },
-                  g.a.createElement(
+                  v.a.createElement(
                     E.a,
                     { onKeyDown: o._handleKeyDown },
                     n,
@@ -464,10 +481,10 @@
                   ),
                 )
               }),
-              f()(d()(o), '_getFilter', function (e) {
+              y()(d()(o), '_getFilter', function (e) {
                 return 'users' === e ? F : M
               }),
-              f()(d()(o), '_calcStyle', function () {
+              y()(d()(o), '_calcStyle', function () {
                 var e = o.context.isModal,
                   t = o.props,
                   a = t.isInline,
@@ -475,17 +492,17 @@
                   r = o._textInputNode,
                   s = window.innerHeight,
                   i = window.innerWidth,
-                  l = (o._textInputRef && o._textInputRef.getTextInputHeight()) || 20
+                  c = (o._textInputRef && o._textInputRef.getTextInputHeight()) || 20
                 if (r instanceof window.HTMLElement) {
                   if (e || a) {
-                    var c = r.getBoundingClientRect()
-                    return [o._getDropdownPositioningStyle(s, i, c.top, c.top + l, c.left, e, !!n), T.dropdownStyle]
+                    var l = r.getBoundingClientRect()
+                    return [o._getDropdownPositioningStyle(s, i, l.top, l.top + c, l.left, e, !!n), T.dropdownStyle]
                   }
-                  return [o._getModalFullViewportStyle(l), T.modalFullViewportStyle]
+                  return [o._getModalFullViewportStyle(c), T.modalFullViewportStyle]
                 }
-                return [o._getDropdownPositioningStyle(l, i, 0, 0, 0, e, !!n), T.dropdownStyle]
+                return [o._getDropdownPositioningStyle(c, i, 0, 0, 0, e, !!n), T.dropdownStyle]
               }),
-              f()(d()(o), '_handleKeyDown', function (e) {
+              y()(d()(o), '_handleKeyDown', function (e) {
                 var t = o.state.selectedItem,
                   a = o.props,
                   n = a.onSelectItem,
@@ -501,16 +518,16 @@
                     ? t && (n(t), e.preventDefault())
                     : 'Escape' === s && (o._handleDismiss(), e.preventDefault()))
               }),
-              f()(d()(o), '_handleItemFocusChanged', function (e) {
+              y()(d()(o), '_handleItemFocusChanged', function (e) {
                 return o.setState({ ariaDescendantId: b.b(), selectedItem: e })
               }),
-              f()(d()(o), '_handleTypeaheadRef', function (e) {
+              y()(d()(o), '_handleTypeaheadRef', function (e) {
                 o._typeaheadRef = e
               }),
-              f()(d()(o), '_handleDismiss', function () {
+              y()(d()(o), '_handleDismiss', function () {
                 o._textInputRef && o._textInputRef.focus(), o.props.onDismiss()
               }),
-              f()(
+              y()(
                 d()(o),
                 '_getDropdownHeight',
                 Object(w.a)(function (e, t) {
@@ -518,14 +535,14 @@
                   return a > t ? t : a
                 }),
               ),
-              f()(
+              y()(
                 d()(o),
                 '_getModalOrInlineReplyDropdownStyles',
                 Object(w.a)(function (e, t, a) {
                   return e ? { bottom: ''.concat(a, 'px') } : { top: ''.concat(t, 'px') }
                 }),
               ),
-              f()(
+              y()(
                 d()(o),
                 '_getDropdownPositioningStyle',
                 Object(w.a)(function (e, t) {
@@ -533,28 +550,28 @@
                     n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
                     s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0,
                     i = arguments.length > 5 && void 0 !== arguments[5] && arguments[5],
-                    l = arguments.length > 6 && void 0 !== arguments[6] && arguments[6],
-                    c = 10,
-                    d = t - s - c,
+                    c = arguments.length > 6 && void 0 !== arguments[6] && arguments[6],
+                    l = 10,
+                    d = t - s - l,
                     p = Math.min(d, 300),
                     u = e - n,
                     h = a,
                     m = u / e < 0.5 && h > u,
-                    y = m ? o._getDropdownHeight(e, h - c) : o._getDropdownHeight(e, u - c),
-                    f = { maxWidth: ''.concat(d, 'px'), minWidth: ''.concat(p, 'px'), maxHeight: ''.concat(y, 'px') }
-                  return i || l
+                    f = m ? o._getDropdownHeight(e, h - l) : o._getDropdownHeight(e, u - l),
+                    y = { maxWidth: ''.concat(d, 'px'), minWidth: ''.concat(p, 'px'), maxHeight: ''.concat(f, 'px') }
+                  return i || c
                     ? r()(
-                        r()({}, f),
+                        r()({}, y),
                         {},
                         { position: 'fixed', left: ''.concat(s, 'px') },
                         o._getModalOrInlineReplyDropdownStyles(m, n, e - a),
                       )
                     : m
-                    ? r()(r()({}, f), {}, { bottom: '100%', position: 'absolute' })
-                    : r()(r()({}, f), {}, { top: '100%', position: 'absolute' })
+                    ? r()(r()({}, y), {}, { bottom: '100%', position: 'absolute' })
+                    : r()(r()({}, y), {}, { top: '100%', position: 'absolute' })
                 }),
               ),
-              f()(
+              y()(
                 d()(o),
                 '_getModalFullViewportStyle',
                 Object(w.a)(function (e) {
@@ -568,7 +585,7 @@
             )
           }
           return (
-            l()(a, [
+            c()(a, [
               {
                 key: 'componentDidUpdate',
                 value: function () {
@@ -588,8 +605,8 @@
             ]),
             a
           )
-        })(g.a.Component)
-      f()(H, 'contextType', R.b), f()(H, 'defaultProps', { source: P.d.Compose })
+        })(v.a.Component)
+      y()(H, 'contextType', R.b), y()(H, 'defaultProps', { source: P.d.Compose })
       var T = O.a.create(function (e) {
         return {
           dropdownStyle: {

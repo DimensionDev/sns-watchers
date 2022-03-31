@@ -6156,25 +6156,41 @@
                 key: '_renderLexicalInput',
                 value: function () {
                   var e = this.props,
-                    t = e.inputStyle,
-                    n = e.isCompact,
-                    r = e.lexicalInputContext,
-                    o = e.onFilesAdded,
-                    i = e.placeholder,
-                    a = r || {},
-                    c = a.element,
-                    s = a.withDebug,
-                    l = c
+                    t = e.ariaActiveDescendant,
+                    n = e.ariaAutocomplete,
+                    r = e.ariaControls,
+                    o = e.ariaLabel,
+                    i = e.autoFocus,
+                    a = e.inputStyle,
+                    c = e.isCompact,
+                    s = e.lexicalInputContext,
+                    l = e.multiline,
+                    u = e.onFilesAdded,
+                    d = e.placeholder,
+                    f = e.spellCheck,
+                    p = e.testID,
+                    h = s || {},
+                    m = h.element,
+                    v = h.withDebug,
+                    g = m
                   return w.a.createElement(
                     L.a,
-                    { style: [G.richContainer, n && G.compact, t] },
-                    w.a.createElement(l, {
+                    { style: [G.richContainer, c && G.compact, a] },
+                    w.a.createElement(g, {
+                      ariaActiveDescendant: t,
+                      ariaAutocomplete: n,
+                      ariaControls: r,
+                      ariaLabel: o,
+                      autoFocus: i,
+                      multiline: l,
                       onChange: this._handleLexicalChange,
-                      onFilesAdded: o,
+                      onFilesAdded: u,
                       onFocus: this._handleFocus,
-                      placeholder: i,
+                      placeholder: d,
                       ref: this._textFieldAPI,
-                      withDebug: s,
+                      spellCheck: f,
+                      testID: p,
+                      withDebug: v,
                     }),
                   )
                 },
@@ -7055,8 +7071,10 @@
     '7n04': function (e, t, n) {
       'use strict'
       n('z84I'), n('LW0h'), n('7x/C'), n('KOtZ')
-      var r = n('OeMK'),
-        o = function (e, t, n) {
+      function r(e) {
+        return '_listHeader' === e || '_listFooter' === e
+      }
+      var o = function (e, t, n) {
           var r = e(t),
             o = e(n)
           return !r && o ? -1 : r && !o ? 1 : 0
@@ -7085,7 +7103,7 @@
             },
             u = t.getList().filter(function (e) {
               var o = e.id
-              return !Object(r.a)(o) && n.isRendered(o) && t.isRendered(o)
+              return !r(o) && n.isRendered(o) && t.isRendered(o)
             }),
             d =
               u.length > 0
@@ -7125,8 +7143,7 @@
             return e
               .findVisibleItems()
               .filter(function (e) {
-                var t = e.id
-                return !Object(r.a)(t)
+                return !r(e.id)
               })
               .map(function (e) {
                 return { id: e.id, distanceToViewportTop: e.rectangle.getTop() - t }
@@ -16374,23 +16391,6 @@
         ZERO: 48,
         NUMPAD_0: 96,
         NUMPAD_9: 105,
-      }
-    },
-    OeMK: function (e, t, n) {
-      'use strict'
-      n.d(t, 'c', function () {
-        return r
-      }),
-        n.d(t, 'b', function () {
-          return o
-        }),
-        n.d(t, 'a', function () {
-          return i
-        })
-      var r = '_listHeader',
-        o = '_listFooter'
-      function i(e) {
-        return e === r || e === o
       }
     },
     OrGc: function (e, t, n) {
@@ -32285,32 +32285,35 @@
     },
     pHkl: function (e, t, n) {
       'use strict'
-      n.d(t, 'g', function () {
+      n.d(t, 'h', function () {
         return o
       }),
         n.d(t, 'b', function () {
           return i
         }),
-        n.d(t, 'f', function () {
+        n.d(t, 'd', function () {
           return a
         }),
-        n.d(t, 'h', function () {
+        n.d(t, 'g', function () {
           return c
         }),
         n.d(t, 'i', function () {
           return s
         }),
-        n.d(t, 'c', function () {
+        n.d(t, 'j', function () {
           return l
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'c', function () {
           return u
         }),
         n.d(t, 'e', function () {
           return d
         }),
-        n.d(t, 'a', function () {
+        n.d(t, 'f', function () {
           return f
+        }),
+        n.d(t, 'a', function () {
+          return p
         })
       n('yH/f')
       var r = n('aWyx'),
@@ -32324,10 +32327,11 @@
           r.b.DISABLE_NOTIFICATIONS,
           r.b.ENABLE_NOTIFICATIONS,
         ]),
-        a = Object.freeze({ MAX_PINS_REACHED: 'max_pins_reached' }),
-        c = Object.freeze({ ALL: 'all', GROUPS: 'groups', PEOPLE: 'people', MESSAGES: 'messages' }),
-        s = Object.freeze({ GROUP: 1, ONE_TO_ONE: 0 }),
-        l = Object.freeze({
+        a = Object.freeze([r.b.MESSAGE]),
+        c = Object.freeze({ MAX_PINS_REACHED: 'max_pins_reached' }),
+        s = Object.freeze({ ALL: 'all', GROUPS: 'groups', PEOPLE: 'people', MESSAGES: 'messages' }),
+        l = Object.freeze({ GROUP: 1, ONE_TO_ONE: 0 }),
+        u = Object.freeze({
           ALL: 'all',
           CELL_X_BUTTON: 'cell_x_button',
           CONVERSATION_INFO: 'conversation_info',
@@ -32339,13 +32343,13 @@
           REQUEST_ACTION_SHEET: 'request_action_sheet',
           THREE_DOT_MENU: 'three_dot_menu',
         }),
-        u = Object.freeze({
+        d = Object.freeze({
           PRIMARY: 'primary',
           REQUEST: 'requests',
           LOW_QUALITY: 'low_quality',
           NOT_AVAILABLE: 'not_available',
         }),
-        d = Object.freeze({
+        f = Object.freeze({
           CARD: 'card',
           GIF: 'gif',
           NOT_APPLICABLE: 'not_applicable',
@@ -32356,7 +32360,7 @@
           VIDEO: 'video',
           VOICE: 'voice',
         }),
-        f = Object.freeze({ CONVERSATION: 'conversation', MESSAGE: 'message' })
+        p = Object.freeze({ CONVERSATION: 'conversation', MESSAGE: 'message' })
     },
     pIB9: function (e, t, n) {
       'use strict'

@@ -62,14 +62,14 @@
         E = n.n(T),
         w = n('oQhu'),
         M = n('z2Pn'),
-        S = n('xZGM'),
-        P = n('rxPX'),
+        P = n('xZGM'),
+        S = n('rxPX'),
         A = Object(w.a)(function (t, e) {
           return e && e.notificationsModule(t)
         }),
         k = n('FIs5'),
-        x = n('yiKp'),
-        C = n.n(x),
+        C = n('yiKp'),
+        x = n.n(C),
         I = n('ezF+'),
         O = n('QIgh'),
         L = n('8UdT'),
@@ -136,7 +136,7 @@
             }),
           ),
           i),
-        F = C()(C()(C()({}, Object(O.a)({ tweetDismissable: !0, withMuteConversation: !0 })), B), V.a),
+        F = x()(x()(x()({}, Object(O.a)({ tweetDismissable: !0, withMuteConversation: !0 })), B), V.a),
         Q = R.a.create(function (t) {
           return {
             quotedTweet: {
@@ -156,10 +156,10 @@
           },
         }),
         q = n('EUHl'),
-        W = n('5waQ'),
-        X = n('VE3M'),
-        Y = n('yoO3'),
-        Z = n('fTQJ'),
+        X = n('5waQ'),
+        Y = n('VE3M'),
+        Z = n('yoO3'),
+        W = n('fTQJ'),
         $ = n('v6aA'),
         tt =
           (n('jQ3i'),
@@ -202,13 +202,13 @@
         et = {
           notifications_alt_a:
             ((o = {}),
-            _()(o, W.a.All, { headerMessage: G.a.b6a43e77, bodyMessage: G.a.f269c47d, buttonText: G.a.g6871092 }),
-            _()(o, W.a.Mentions, { headerMessage: G.a.e577e1a1, bodyMessage: G.a.b91e5a3a }),
+            _()(o, X.a.All, { headerMessage: G.a.b6a43e77, bodyMessage: G.a.f269c47d, buttonText: G.a.g6871092 }),
+            _()(o, X.a.Mentions, { headerMessage: G.a.e577e1a1, bodyMessage: G.a.b91e5a3a }),
             o),
           notifications_alt_b:
             ((r = {}),
-            _()(r, W.a.All, { headerMessage: G.a.g264f125, bodyMessage: G.a.a3420a9b, buttonText: G.a.g6871092 }),
-            _()(r, W.a.Mentions, { headerMessage: G.a.ef0b8028, bodyMessage: G.a.b91e5a3a }),
+            _()(r, X.a.All, { headerMessage: G.a.g264f125, bodyMessage: G.a.a3420a9b, buttonText: G.a.g6871092 }),
+            _()(r, X.a.Mentions, { headerMessage: G.a.ef0b8028, bodyMessage: G.a.b91e5a3a }),
             r),
         },
         nt = function (t) {
@@ -249,7 +249,7 @@
               (t = e.call.apply(e, [this].concat(i))),
               _()(m()(t), '_getNewItemsPillLabel', function () {
                 switch (t.props.notificationsType) {
-                  case W.a.All:
+                  case X.a.All:
                     return yt
                   default:
                     return
@@ -258,11 +258,11 @@
               _()(m()(t), '_getEmptyMessageBody', function () {
                 var e = t.context.featureSwitches.isTrue('responsive_web_reactions_enabled')
                 switch (t.props.notificationsType) {
-                  case W.a.Mentions:
+                  case X.a.Mentions:
                     return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
                       ? rt(t._emptyStateVariant, t.props.notificationsType)
                       : pt
-                  case W.a.Verified:
+                  case X.a.Verified:
                     return e ? mt : ft
                   default:
                     return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
@@ -316,8 +316,7 @@
                   n = e.addLeaveThisConversationEducationFlag,
                   a = e.notificationsType
                 return e.shouldShowUnmentionEducation &&
-                  a === W.a.Mentions &&
-                  !0 === t.context.featureSwitches.getValueWithoutScribeImpression('dont_mention_me_enabled') &&
+                  a === X.a.Mentions &&
                   t.context.featureSwitches.isTrue('dont_mention_me_mentions_tab_education_enabled')
                   ? E.a.createElement(z, { onDismiss: n })
                   : void 0
@@ -341,7 +340,7 @@
                   var t = this.props,
                     e = t.markAllAsRead,
                     n = t.notificationsType
-                  this._updateLastReadIfNeeded(), n === W.a.All && e()
+                  this._updateLastReadIfNeeded(), n === X.a.All && e()
                 },
               },
               {
@@ -350,9 +349,9 @@
                   var t = this.props.notificationsModule
                   return t
                     ? E.a.createElement(
-                        Y.a,
+                        Z.a,
                         null,
-                        E.a.createElement(Z.a, {
+                        E.a.createElement(W.a, {
                           entryConfiguration: F,
                           header: this._renderTimelineHeader(),
                           key: 'notification-timeline',
@@ -385,11 +384,11 @@
       var bt = function (t) {
           return Object(J.a)(
             (function (t) {
-              return Object(P.a)()
+              return Object(S.a)()
                 .propsFromState(function () {
                   return {
                     shouldShowUnmentionEducation: function (t) {
-                      return Object(S.D)(t, S.o)
+                      return Object(P.D)(t, P.o)
                     },
                     unreadCount: function (e, n) {
                       var a,
@@ -415,7 +414,7 @@
                     a = e.ntabData
                   return {
                     addLeaveThisConversationEducationFlag: function () {
-                      return Object(S.z)(S.o)
+                      return Object(P.z)(P.o)
                     },
                     markAllAsRead: null === (n = A(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
                     updateLastRead: a && a.updateLastSeenCursor,
@@ -424,7 +423,7 @@
                 })
                 .withAnalytics({ page: 'ntab', section: t })
             })(t)(ht),
-            { ntabData: X.a },
+            { ntabData: Y.a },
           )
         },
         gt = function (t) {
@@ -469,12 +468,12 @@
         E = n('zCf4'),
         w = m.a.eb75875d,
         M = m.a.f8321d82,
-        S = m.a.cdb53d79,
-        P = m.a.h3290871,
+        P = m.a.cdb53d79,
+        S = m.a.h3290871,
         A = m.a.a98ba778,
         k = '/notifications',
-        x = '/notifications/mentions',
-        C = '/notifications/verified',
+        C = '/notifications/mentions',
+        x = '/notifications/verified',
         I = i.a.createElement(g.a, { pullRight: !0, to: '/settings/notifications' }),
         O = m.a.eb75875d,
         L = Object(l.a)(
@@ -494,9 +493,9 @@
         ),
         U = [
           { to: k, key: M, label: M, retainScrollPosition: !1 },
-          { to: x, key: S, label: S, retainScrollPosition: !1 },
+          { to: C, key: P, label: P, retainScrollPosition: !1 },
         ],
-        R = [].concat(U, [{ to: C, key: P, label: P, retainScrollPosition: !1 }]),
+        R = [].concat(U, [{ to: x, key: S, label: S, retainScrollPosition: !1 }]),
         D = function (t) {
           var e,
             n,
@@ -511,10 +510,10 @@
               E.d,
               null,
               i.a.createElement(E.b, { component: L, exact: !0, path: k }),
-              i.a.createElement(E.b, { component: V, exact: !0, path: x }),
-              i.a.createElement(E.b, { component: j, exact: !0, path: C }),
+              i.a.createElement(E.b, { component: V, exact: !0, path: C }),
+              i.a.createElement(E.b, { component: j, exact: !0, path: x }),
             )
-          return u.pathname !== C || l
+          return u.pathname !== x || l
             ? i.a.createElement(
                 y.a,
                 null,

@@ -1316,7 +1316,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g31872be', 'Tweet to only them'),
           a('b28ec85f', 'Go on - share those thoughts. Only your Twitter Circle can see and reply to them.'),
           a('h0318479', 'Change things up anytime'),
-          a('edbbcc22', 'Want to edit your Twitter Circle? Go for it. People won`t be notified if you remove them.'),
+          a('b2f72d11', 'Learn more'),
           a('gfca5254', 'Rules'),
           a('f510c8b2', 'Community Rules'),
           a('b154b059', 'Twitter’s rules'),
@@ -1389,6 +1389,29 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             )
           }),
           a('de5071ba', 'Super Followers'),
+          a('b9f0a3f7', function (e) {
+            return '' + e.userName
+          }),
+          a('ca43a0c6', function (e) {
+            return e.replyUserName + ' and ' + e.otherUserName
+          }),
+          a('g2257dd2', function (e) {
+            return e.replyUserName + '`s'
+          }),
+          a('d339d100', function (e) {
+            return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+          }),
+          a('aeaba5d4', function (e) {
+            return e.userOneName + '`s'
+          }),
+          a('f48a8367', function (e) {
+            return (
+              e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+            )
+          }),
+          a('e9861a9c', function (e) {
+            return e.userOneName + '`s'
+          }),
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
@@ -2287,8 +2310,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cb6adb1f', 'Discover Communities'),
           a('c2117be6', 'See that stuff in the nav? 👀'),
           a('c2c4dad3', 'Pick something and it’ll show up here. Go ahead. We’ll wait.'),
-          a('b8f0483e', 'Compose new Tweet'),
-          a('a133d13e', 'Unsent Tweets'),
+          a('b8f0483e', 'Compose new Tweet')
+        a('a133d13e', 'Unsent Tweets'),
           a('a1183237', 'Tweeting within a Community'),
           a(
             'da2663f5',
@@ -2297,10 +2320,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ed33a3b6', 'Hello, wordsmiths.'),
           a('d5bda8b3', 'We now have a newsletter tool.'),
           a('c55eed71', 'Replying to'),
-          a('caca3101', 'Others in this conversation')
-        a('c6a6dc2f', function (e) {
-          return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
-        }),
+          a('caca3101', 'Others in this conversation'),
+          a('c6a6dc2f', function (e) {
+            return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
+          }),
           a('c20dc653', 'Only 10 people can be tagged.'),
           a('ae0831ab', function (e) {
             return '@' + e.screenName + ' can’t be tagged in photos'
@@ -3530,8 +3553,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hf9c2caa', 'Request advertiser list?'),
           a('c29b7970', function (e) {
             return 'This will be sent to ' + e.primaryEmail + '.'
-          }),
-          a('a8276fab', 'Request advertiser list'),
+          })
+        a('a8276fab', 'Request advertiser list'),
           a('g7912a84', 'Got it. Your list will be emailed once it’s ready.'),
           a(
             'fdfed926',
@@ -3544,8 +3567,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efd23f39', function (e) {
             return e.num_advertisers + ' advertisers'
           }),
-          a('g1aced04', 'Apps, devices & information')
-        a('j4fa776e', 'Phones'),
+          a('g1aced04', 'Apps, devices & information'),
+          a('j4fa776e', 'Phones'),
           a('i7acdb35', 'Tablets'),
           a('c112dfc8', 'Desktop'),
           a('jd8607b9', 'Activated on'),
@@ -4427,16 +4450,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
-          a('ac8e018f', function (e) {
+          a('f041be05', function (e) {
             return e.stringCount + ' pending request' + n(e.count, '', 's')
           }),
-          a('i85df294', function (e) {
+          a('a2fad0f2', function (e) {
             return e.stringCount + ' new pe' + n(e.count, 'rson', 'ople') + ' you may know'
           }),
-          a('d62f81cb', function (e) {
+          a('cbddf365', function (e) {
             return e.stringCount + ' pe' + n(e.count, 'rson', 'ople') + ' you may know'
           }),
-          a('c983fc8c', function (e) {
+          a('fac945ad', function (e) {
             return e.stringCount + ' new request' + n(e.count, '', 's')
           }),
           a('bef0039f', 'You don’t have any message requests'),
@@ -4752,14 +4775,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hdfa2dc6', 'Publish Moment'),
           a('d64d1548', 'Tweet your Moment'),
           a('a58e18a2', 'Your Moment is now published. Tweet it to let people discover it.'),
-          a('d7725ee1', 'Your Moment was published.'),
-          a('h7eceedf', 'Your Moment was updated.'),
-          a('bf615cf9', 'Go to Moment'),
-          a('d8438441', 'Visibility settings'),
-          a('a1d5303c', 'Private'),
-          a('a787e494', 'Only owners can see this Moment.'),
-          a('effa6f11', 'Everyone can discover this Moment.'),
-          a('cc8f8a8f', 'Unlisted')
+          a('d7725ee1', 'Your Moment was published.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4776,10 +4792,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'd6352bf7',
-          'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
-        ),
+        a('h7eceedf', 'Your Moment was updated.'),
+          a('bf615cf9', 'Go to Moment'),
+          a('d8438441', 'Visibility settings'),
+          a('a1d5303c', 'Private'),
+          a('a787e494', 'Only owners can see this Moment.'),
+          a('effa6f11', 'Everyone can discover this Moment.'),
+          a('cc8f8a8f', 'Unlisted'),
+          a(
+            'd6352bf7',
+            'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
+          ),
           a('b81437d2', 'Select visibility mode'),
           a('i693139c', 'Contains sensitive content'),
           a('b198b98f', 'Your Moment’s visibility settings were updated.'),
@@ -6016,10 +6039,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b03e1629', 'Listen live'),
           a('fb236727', 'Pause'),
           a('fc45ccc5', 'Embedded video'),
-          a('a9edea48', 'Reload'),
-          a('f1ad0df1', function (e) {
-            return 'Ad · ' + e.timeRemaining
-          }),
+          a('a9edea48', 'Reload')
+        a('f1ad0df1', function (e) {
+          return 'Ad · ' + e.timeRemaining
+        }),
           a('ef16ab2b', function (e) {
             return 'Ad by ' + e.advertiserName + ' · ' + e.timeRemaining
           }),
@@ -6027,10 +6050,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1b6bcec', 'Copy Gif Address'),
           a('j25d7cc9', 'Hide captions'),
           a('a858b25b', 'Show captions'),
-          a('faf9f483', 'Ad')
-        a('ae2ea9e6', function (e) {
-          return 'Ad by ' + e.advertiserName
-        }),
+          a('faf9f483', 'Ad'),
+          a('ae2ea9e6', function (e) {
+            return 'Ad by ' + e.advertiserName
+          }),
           a('hea01797', 'Seek slider'),
           a('f8a09386', 'View on Periscope'),
           a('f06f2e53', function (e) {
@@ -7104,6 +7127,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'c97dfde4',
+                get: function () {
+                  return [
+                    'Want to edit your Twitter Circle? Go for it. People won`t be notified if you remove them. ',
+                    '.',
+                  ]
+                },
+              },
+              {
                 key: 'i5ba24f4',
                 get: function () {
                   return ['These are set and enforced by Community admins and are in addition to ', '.']
@@ -7188,6 +7220,33 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fec57cab',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
+                key: 'db690c7e',
+                get: function () {
+                  return [
+                    'Replying to ',
+                    '. ' + this.props.userName + '`s Twitter Circle will also be able to see your reply.',
+                  ]
+                },
+              },
+              {
+                key: 'gb7cb27c',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                },
+              },
+              {
+                key: 'e9288772',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                },
+              },
+              {
+                key: 'h0589b50',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {

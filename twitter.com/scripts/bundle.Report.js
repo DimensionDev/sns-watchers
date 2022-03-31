@@ -1202,20 +1202,20 @@
         },
         l = function (e) {
           var t = e.message_data,
-            n = c.e.UNKNOWN,
+            n = c.f.UNKNOWN,
             r = (t && t.attachment) || {}
           return (
             r.tweet
-              ? (n = c.e.TWEET)
+              ? (n = c.f.TWEET)
               : r.photo
-              ? (n = c.e.PHOTO)
+              ? (n = c.f.PHOTO)
               : r.animated_gif
-              ? (n = c.e.GIF)
+              ? (n = c.f.GIF)
               : r.video
-              ? (n = r.video.audio_only ? c.e.VOICE : c.e.VIDEO)
+              ? (n = r.video.audio_only ? c.f.VOICE : c.f.VIDEO)
               : r.card
-              ? (n = c.e.CARD)
-              : null != t && t.text && (n = c.e.TEXT),
+              ? (n = c.f.CARD)
+              : null != t && t.text && (n = c.f.TEXT),
             n
           )
         }
@@ -1225,7 +1225,7 @@
         })
       }
       function m(e) {
-        return e === i.d.SECONDARY ? c.d.REQUESTS : e === i.d.TERTIARY ? c.d.LOW_QUALITY : c.d.PRIMARY
+        return e === i.d.SECONDARY ? c.e.REQUESTS : e === i.d.TERTIARY ? c.e.LOW_QUALITY : c.e.PRIMARY
       }
       function f(e) {
         return e.isTrue('dm_voice_rendering_enabled')

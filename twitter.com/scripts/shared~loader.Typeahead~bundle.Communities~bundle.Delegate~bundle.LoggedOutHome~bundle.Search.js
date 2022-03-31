@@ -3095,7 +3095,7 @@
                     s = t.renderNoResultsState,
                     c = t.selectedItems,
                     l = t.style,
-                    u = r || a.length,
+                    u = !(!r && !a.length),
                     d = 0,
                     p = !!c
                   return u

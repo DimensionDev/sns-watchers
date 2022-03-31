@@ -3,20 +3,23 @@
   {
     LQrL: function (e, t, n) {
       'use strict'
-      n.d(t, 'd', function () {
-        return h
+      n.d(t, 'e', function () {
+        return v
       }),
+        n.d(t, 'd', function () {
+          return m
+        }),
         n.d(t, 'c', function () {
-          return g
+          return C
         }),
         n.d(t, 'b', function () {
-          return y
+          return S
         }),
-        n.d(t, 'e', function () {
-          return v
+        n.d(t, 'f', function () {
+          return E
         }),
         n.d(t, 'a', function () {
-          return m
+          return b
         })
       n('hBvt'), n('KqXw'), n('z84I')
       var r = n('ERkP'),
@@ -24,50 +27,67 @@
         i = n('t62R'),
         a = n('dWxr'),
         l = n.n(a),
-        c = n('hHEM'),
-        u = n('rHpw'),
-        s = n('aITJ'),
-        d = n('IZ3v'),
-        f = function (e, t) {
+        c = n('OiMc'),
+        u = n('hHEM'),
+        s = n('rHpw'),
+        d = n('aITJ'),
+        f = n('IZ3v'),
+        p = function (e, t) {
           for (var n = l()(e.getText()), r = 0; r < n.length; r++)
             n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
         },
-        p = { clipPath: 'circle(0% at center)' },
-        h = {
-          strategy: function (e, t, n) {
-            e.findEntityRanges(function (e) {
-              var t = e.getEntity(),
-                r = t ? n.getEntity(t) : null
-              return !!r && 'LINK' === r.getType()
-            }, t)
-          },
+        h = { clipPath: 'circle(0% at center)' },
+        g = function (e, t, n) {
+          e.findEntityRanges(function (e) {
+            var t = e.getEntity(),
+              r = t ? n.getEntity(t) : null
+            return !!r && 'LINK' === r.getType()
+          }, t)
+        },
+        y = function (e) {
+          return function (t) {
+            if (!t.entityKey) return null
+            var n = t.children,
+              r = t.contentState.getEntity(t.entityKey).getData().url
+            return o.a.createElement(
+              c.a,
+              { animationDuration: 'normal', renderContent: e(n, r), withArrow: !0 },
+              o.a.createElement(i.b, { color: 'text', withInteractiveStyling: !0, withUnderline: !0 }, n),
+            )
+          }
+        },
+        v = function (e) {
+          return { strategy: g, component: y(e) }
+        },
+        m = {
+          strategy: g,
           component: function (e) {
             return e.entityKey
               ? o.a.createElement(i.b, { link: e.contentState.getEntity(e.entityKey).getData().url }, e.children)
               : null
           },
         },
-        g = {
-          strategy: f,
+        C = {
+          strategy: p,
           component: function (e) {
             var t = l()(e.decoratedText)[0]
             if (!t) return null
-            var n = Object(d.b)(t)
-            return n ? o.a.createElement(i.b, { link: Object(d.c)(n, e.decoratedText) }, e.children) : null
+            var n = Object(f.b)(t)
+            return n ? o.a.createElement(i.b, { link: Object(f.c)(n, e.decoratedText) }, e.children) : null
           },
         },
-        y = {
-          strategy: f,
+        S = {
+          strategy: p,
           component: function (e) {
-            return o.a.createElement('span', { style: { color: u.a.theme.colors.link } }, e.children)
+            return o.a.createElement('span', { style: { color: s.a.theme.colors.link } }, e.children)
           },
         },
-        v = {
+        E = {
           strategy: function (e, t, n) {
             e.findEntityRanges(function (e) {
               var t = e.getEntity(),
                 r = t && n.getEntity(t)
-              return !(!r || r.type !== c.a.TWEMOJI_ENTITY_TYPE)
+              return !(!r || r.type !== u.a.TWEMOJI_ENTITY_TYPE)
             }, t)
           },
           component: function (e) {
@@ -75,11 +95,11 @@
               n = e.contentState,
               r = e.entityKey,
               i = (r && n.getEntity(r)) || {}
-            return !(s.b.isFirefox() && s.b.firefoxVersion() < 49)
+            return !(d.b.isFirefox() && d.b.firefoxVersion() < 49)
               ? o.a.Children.map(t, function (e) {
                   var t,
                     n = o.a.Children.map(e, function (e) {
-                      return o.a.createElement('span', { style: p }, e)
+                      return o.a.createElement('span', { style: h }, e)
                     })[0]
                   return o.a.cloneElement(
                     o.a.createElement('span', null),
@@ -101,7 +121,7 @@
               : t
           },
         },
-        m = {
+        b = {
           strategy: function (e, t) {
             var n = (function (e, t, n) {
               for (var r, o, i = t.getText(); (r = e.exec(i)); ) n((o = r.index), o + r[0].length)
@@ -388,7 +408,7 @@
         getRelativeOffset: a,
         initEditorState: function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
-            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { decorators: [o.b, o.e, o.a] },
+            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { decorators: [o.b, o.f, o.a] },
             n = t.decorators,
             r = i.EditorState.createWithContent(
               'string' == typeof e ? i.ContentState.createFromText(e) : Object(i.convertFromRaw)(e),

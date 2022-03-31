@@ -102,8 +102,8 @@
         w = n('5mJL'),
         b = n('nBUg'),
         C = n('qjak'),
-        x = n('dC06'),
-        k = n('rHpw'),
+        k = n('dC06'),
+        x = n('rHpw'),
         T = n('XIXT'),
         E = n('yDX5'),
         _ = n('MWbm'),
@@ -151,20 +151,20 @@
                     p = t.topControl,
                     m = t.weight,
                     g = (t.withBottomBorder, t.withLeftPadding),
-                    x = (t.withTextCentered, r()(t, R)),
-                    k = Object(C.a)(x),
-                    T = k.Icon,
-                    E = k.accessibilityLabel,
-                    I = k.link,
-                    L = k.text,
+                    k = (t.withTextCentered, r()(t, R)),
+                    x = Object(C.a)(k),
+                    T = x.Icon,
+                    E = x.accessibilityLabel,
+                    I = x.link,
+                    L = x.text,
                     P = v.a.createElement(
                       f.b,
                       { accessibilityLabel: E, color: u, nativeID: o, numberOfLines: 2, size: h, testID: d, weight: m },
                       L,
                     ),
                     U = this._getStyles(),
-                    O = U.cellStyle,
-                    B = U.viewStyle
+                    B = U.cellStyle,
+                    O = U.viewStyle
                   return L
                     ? v.a.createElement(b.b.UseProps, null, function (t) {
                         return v.a.createElement(
@@ -178,7 +178,7 @@
                               _.a,
                               {
                                 onLayout: l,
-                                style: [c, B, t.socialContextRefreshEnabled() && !g && M.socialContextRefresh],
+                                style: [c, O, t.socialContextRefreshEnabled() && !g && M.socialContextRefresh],
                               },
                               v.a.createElement(
                                 w.a,
@@ -191,7 +191,7 @@
                                     t.socialContextRefreshEnabled() && !g && M.socialContextRefreshIcon,
                                   ],
                                   avatarSize: n,
-                                  cellStyle: O,
+                                  cellStyle: B,
                                 },
                                 v.a.createElement(
                                   _.a,
@@ -229,9 +229,9 @@
                     s = n.topicData,
                     c = (o || {}).screenName,
                     d = v.a.createElement(f.b, { color: l, link: e, nativeID: r, onClick: i }, t)
-                  return a === x.a.Topic && s
+                  return a === k.a.Topic && s
                     ? v.a.createElement(T.a, { topicId: s.topicId }, d)
-                    : a === x.a.Retweet && c
+                    : a === k.a.Retweet && c
                     ? v.a.createElement(E.a, { screenName: c }, d)
                     : d
                 },
@@ -244,7 +244,7 @@
                     n = e.contextType,
                     a = e.withBottomBorder,
                     r = e.withTextCentered,
-                    i = n === x.a.TextOnly,
+                    i = n === k.a.TextOnly,
                     o = a ? [M.bottomBorderMargin, t && M.bottomBorder] : [],
                     l = a && !t ? [M.bottomBorder] : []
                   return (
@@ -266,7 +266,7 @@
         withLeftPadding: !0,
         withTextCentered: !1,
       })
-      var M = k.a.create(function (e) {
+      var M = x.a.create(function (e) {
         return {
           socialContextIconColumn: { alignItems: 'flex-end', justifyContent: 'center' },
           bottomBorderMargin: { marginBottom: e.componentDimensions.gutterVertical },
@@ -328,7 +328,7 @@
                     a = e.users,
                     r = e.withIcon,
                     i = this._decodeUserList(),
-                    o = i.isCurrentUserIncluded ? k.withCurrentUser : k.withoutCurrentUser,
+                    o = i.isCurrentUserIncluded ? x.withCurrentUser : x.withoutCurrentUser,
                     l = this._selectMessage(o, i),
                     s = a.map(function (e) {
                       return e.user_id
@@ -386,20 +386,20 @@
             n
           )
         })(h.a.Component),
-        x = function (e) {
+        k = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 'normal'
           return h.a.createElement(p.b, { color: 'gray700', weight: t }, e)
         },
-        k = {
+        x = {
           withCurrentUser: {
             single: function () {
-              return x(b, 'bold')
+              return k(b, 'bold')
             },
             multiple: function (e) {
               var t = e.otherUsersCount,
                 n = e.secondName
               return t && n
-                ? x(
+                ? k(
                     h.a.createElement(
                       w.a.I18NFormatMessage,
                       { $i18n: 'd7b2c271' },
@@ -413,14 +413,14 @@
           withoutCurrentUser: {
             single: function (e) {
               var t = e.firstName
-              return t ? x(t) : null
+              return t ? k(t) : null
             },
             multiple: function (e) {
               var t = e.firstName,
                 n = e.otherUsersCount,
                 a = e.secondName
               return n
-                ? x(
+                ? k(
                     h.a.createElement(
                       w.a.I18NFormatMessage,
                       { $i18n: 'b035fe73' },
@@ -584,8 +584,8 @@
         w = n('2VqO'),
         b = n.n(w),
         C = n('KEM+'),
-        x = n.n(C),
-        k =
+        k = n.n(C),
+        x =
           (n('2G9S'),
           n('LW0h'),
           n('7x/C'),
@@ -597,7 +597,7 @@
           n('KqXw'),
           n('MvUL'),
           n('ERkP')),
-        T = n.n(k),
+        T = n.n(x),
         E = n('t62R'),
         _ = n('OIC0'),
         R = n('rHpw'),
@@ -637,7 +637,7 @@
             for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              x()(g()(e), '_getTextParts', function () {
+              k()(g()(e), '_getTextParts', function () {
                 var t,
                   n,
                   a = e.props,
@@ -673,8 +673,8 @@
                   )
                 }
                 var C = [0, v.length],
-                  x = [(r || C)[0], v.length],
-                  k = c || []
+                  k = [(r || C)[0], v.length],
+                  x = c || []
                 return (
                   null !== (t = f) &&
                     void 0 !== t &&
@@ -692,9 +692,9 @@
                         }),
                       },
                     )),
-                  S.a.tweetTextParts(v, x, f, i, {
+                  S.a.tweetTextParts(v, k, f, i, {
                     useHashtagUrl: !0,
-                    hitHighlights: k,
+                    hitHighlights: x,
                     baseUrl: l,
                     renderUnicodeEmojis: g,
                   })
@@ -729,8 +729,8 @@
                     C = b.some(function (e) {
                       return e.entityType === _.a.MEDIA
                     }),
-                    x = C && !v,
-                    k = h && !f,
+                    k = C && !v,
+                    x = h && !f,
                     R = b
                       .map(function (e, a) {
                         var r = a === b.length - 1,
@@ -738,8 +738,8 @@
                         if (!v && e.entityType === _.a.MEDIA) return null
                         if (i && C && e.indices && t[1] === e.indices[1]) return null
                         if (r) {
-                          if (i && k && !x) return null
-                          if (!x && !k && !g && n && (n === e.url || n === e.expandedUrl)) return null
+                          if (i && x && !k) return null
+                          if (!k && !x && !g && n && (n === e.url || n === e.expandedUrl)) return null
                         }
                         return e
                       })
@@ -784,7 +784,7 @@
             n
           )
         })(T.a.Component)
-      x()(L, 'defaultProps', {
+      k()(L, 'defaultProps', {
         linkColor: 'link',
         linkify: I.a.linkify,
         underlineLinks: !1,
@@ -854,8 +854,8 @@
         w = n('MWbm'),
         b = n('ddV6'),
         C = n.n(b),
-        x = n('RhWx'),
-        k = n.n(x),
+        k = n('RhWx'),
+        x = n.n(k),
         T =
           (n('hBpG'),
           n('7x/C'),
@@ -899,8 +899,8 @@
           })
         },
         U = 'NotIncluded',
-        O = 'DirectReply',
-        B = 'NonDirectReply',
+        B = 'DirectReply',
+        O = 'NonDirectReply',
         N = function (e) {
           var t = e.displayTextRange,
             n = e.inReplyToName,
@@ -910,7 +910,7 @@
             o = i.filter(function (e) {
               return e.indices[0] < t[0] || e.id_str === r
             }),
-            l = k()(o),
+            l = x()(o),
             s = P(i, r),
             c = n || a
           return (
@@ -1019,22 +1019,22 @@
             b = p.some(function (e) {
               return e.id_str === l
             })
-          switch (w ? O : b ? B : U) {
-            case O:
+          switch (w ? B : b ? O : U) {
+            case B:
             case U:
               switch (p.length) {
                 case 1:
                   return f.replyToOne({ user: y })
                 case 2:
-                  var x,
-                    k =
+                  var k,
+                    x =
                       null !==
-                        (x = p.find(function (e) {
+                        (k = p.find(function (e) {
                           return e !== y
-                        })) && void 0 !== x
-                        ? x
+                        })) && void 0 !== k
+                        ? k
                         : m
-                  return f.replyToTwo({ userOne: y, userTwo: k })
+                  return f.replyToTwo({ userOne: y, userTwo: x })
                 case 3:
                   var T = p.filter(function (e) {
                       return e !== y
@@ -1054,7 +1054,7 @@
                         : m
                   return f.indirectReplyToMany({ userOne: y, userTwo: z, othersCount: p.length - 2 })
               }
-            case B:
+            case O:
               switch (p.length) {
                 case 1:
                   return null
@@ -1212,10 +1212,10 @@
         w = n('yiKp'),
         b = n.n(w),
         C = n('Lsrn'),
-        x = n('k/Ka'),
-        k = function () {
+        k = n('k/Ka'),
+        x = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(x.a)(
+          return Object(k.a)(
             'svg',
             b()(
               b()({}, e),
@@ -1235,8 +1235,8 @@
             ),
           )
         }
-      k.metadata = { width: 24, height: 24 }
-      var T = k,
+      x.metadata = { width: 24, height: 24 }
+      var T = x,
         E = n('EHV7'),
         _ = n('wpLu'),
         R = n('EfHu'),
@@ -1245,7 +1245,7 @@
         M = n('r9x5'),
         L = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(x.a)(
+          return Object(k.a)(
             'svg',
             b()(
               b()({}, e),
@@ -1268,10 +1268,10 @@
       L.metadata = { width: 24, height: 24 }
       var P = L,
         U = n('0qK0'),
-        O = n('aPcQ'),
-        B = function () {
+        B = n('aPcQ'),
+        O = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(x.a)(
+          return Object(k.a)(
             'svg',
             b()(
               b()({}, e),
@@ -1291,8 +1291,8 @@
             ),
           )
         }
-      B.metadata = { width: 24, height: 24 }
-      var N = B,
+      O.metadata = { width: 24, height: 24 }
+      var N = O,
         H = n('lUZE'),
         z = u.a.jb767df7,
         F = u.a.bb3323fa,
@@ -1341,7 +1341,7 @@
           w = u.isSelfRetweet,
           b = u.name,
           C = u.screenName,
-          x = (function (e, t) {
+          k = (function (e, t) {
             var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
               a = j[t],
               i = [X.colorDeepGray, a],
@@ -1352,16 +1352,16 @@
               w = r.a.createElement(g.a, { style: i }),
               b = r.a.createElement(v.a, { style: X.circle }),
               C = r.a.createElement(f.a, { style: i }),
-              x = r.a.createElement(T, { style: i }),
-              k = r.a.createElement(E.a, { style: i }),
+              k = r.a.createElement(T, { style: i }),
+              x = r.a.createElement(E.a, { style: i }),
               L = r.a.createElement(_.a, { style: i }),
-              B = r.a.createElement(R.a, { style: i }),
+              O = r.a.createElement(R.a, { style: i }),
               z = r.a.createElement(S.a, { style: i }),
               F = r.a.createElement(I.a, { style: i }),
               W = r.a.createElement(M.a, { style: i }),
               A = r.a.createElement(P, { style: i }),
               D = r.a.createElement(U.a, { style: i }),
-              V = r.a.createElement(O.a, { style: i }),
+              V = r.a.createElement(B.a, { style: i }),
               q = r.a.createElement(N, { style: i }),
               K = r.a.createElement(o.a, { borderColor: 'cellBackground', userAvatarSize: t, userAvatarUrls: n }),
               Y = r.a.createElement(H.a, { style: i })
@@ -1382,13 +1382,13 @@
               case s.a.Conversation:
                 return C
               case s.a.Feedback:
-                return x
-              case s.a.Topic:
                 return k
+              case s.a.Topic:
+                return x
               case s.a.List:
                 return L
               case s.a.Location:
-                return B
+                return O
               case s.a.Community:
                 return z
               case s.a.Spaces:
@@ -1415,12 +1415,12 @@
           })(t, n, d)
         switch (t) {
           case s.a.Retweet:
-            return { Icon: x, text: l || V(b, w), link: C ? 'https://twitter.com/'.concat(C) : void 0 }
+            return { Icon: k, text: l || V(b, w), link: C ? 'https://twitter.com/'.concat(C) : void 0 }
           case s.a.Pin:
-            return { Icon: x, text: l || F }
+            return { Icon: k, text: l || F }
           case s.a.Topic:
             return {
-              Icon: x,
+              Icon: k,
               accessibilityLabel:
                 'Recommendation' === (null == c ? void 0 : c.functionalityType) ||
                 'RecWithEducation' === (null == c ? void 0 : c.functionalityType)
@@ -1430,7 +1430,7 @@
               link: a,
             }
           default:
-            return { Icon: x, text: l ? D(l) : null, link: a }
+            return { Icon: k, text: l ? D(l) : null, link: a }
         }
       }
     },
@@ -1497,8 +1497,8 @@
           n('ERkP')),
         b = n.n(w),
         C = n('nBUg'),
-        x = n('3XMw'),
-        k = n.n(x),
+        k = n('3XMw'),
+        x = n.n(k),
         T = n('I4+6'),
         E = n('cm6r'),
         _ = n('wD1h'),
@@ -1509,8 +1509,8 @@
         L = n('XrEN'),
         P = n('k2KP'),
         U = n('Sp5X'),
-        O = n('gK2g'),
-        B = n('rHpw'),
+        B = n('gK2g'),
+        O = n('rHpw'),
         N = n('t62R'),
         H = n('MWbm'),
         z = function (e) {
@@ -1525,7 +1525,7 @@
               )
             : null
         },
-        F = B.a.create(function (e) {
+        F = O.a.create(function (e) {
           return {
             metadata: { marginBottom: e.spaces.space4 },
             metadataContainer: {
@@ -1544,7 +1544,7 @@
         j = n('zrOZ'),
         X = n('oQhu'),
         q = n('Qyxo'),
-        K = k.a.b74bf8b7,
+        K = x.a.b74bf8b7,
         Y = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -1599,7 +1599,7 @@
                       l = e.sensitiveMediaWarnings,
                       s = l.size && i()
                     return b.a.createElement(
-                      O.a.Provider,
+                      B.a.Provider,
                       { namespace: { element: 'media' } },
                       b.a.createElement(
                         H.a,
@@ -1628,26 +1628,28 @@
                 key: '_renderContent',
                 value: function () {
                   var e = this.props,
-                    t = e.mediaContentStyles,
-                    n = e.showBorder,
-                    a = e.showRoundCorners,
-                    r = this._getPhotos(),
-                    i = n && (r.length >= 1 || this._isVideo()),
-                    o = r.length
+                    t = e.customHoverBackgroundColor,
+                    n = e.mediaContentStyles,
+                    a = e.showBorder,
+                    r = e.showRoundCorners,
+                    i = this._getPhotos(),
+                    o = a && (i.length >= 1 || this._isVideo()),
+                    l = i.length
                       ? T.a.generate({
                           backgroundColor: 'transparent',
-                          color: B.a.theme.colors.primary,
+                          color: O.a.theme.colors.primary,
                           withFocusWithinFocusRing: !0,
+                          customHoverBackgroundColor: t,
                         })
                       : null,
-                    l = null
+                    s = null
                   return (
-                    r.length >= 1 ? (l = this._renderPhotos()) : this._isVideo() && (l = this._renderVideo()),
-                    l
+                    i.length >= 1 ? (s = this._renderPhotos()) : this._isVideo() && (s = this._renderVideo()),
+                    s
                       ? b.a.createElement(
                           E.a,
-                          { interactiveStyles: o, style: [i && G.itemWithBorder, a && G.itemWithRoundCorners, t] },
-                          l,
+                          { interactiveStyles: l, style: [o && G.itemWithBorder, r && G.itemWithRoundCorners, n] },
+                          s,
                           this._renderMediaMetadata(),
                         )
                       : null
@@ -1846,7 +1848,7 @@
             )
           })
         }),
-        G = B.a.create(function (e) {
+        G = O.a.create(function (e) {
           return {
             halvedMediaSize: { minWidth: 2 * e.spacesPx.space72, width: '50%' },
             itemWithBorder: { borderWidth: '1px', borderStyle: 'solid', borderColor: e.colors.nestedBorderColor },
@@ -1878,8 +1880,8 @@
         w = (n('2G9S'), n('ho0z'), n('5BYb'), n('7x/C'), n('kFen'), n('qd3W'), n('uFXj'), n('SV7d')),
         b = n('ERkP'),
         C = n.n(b),
-        x = n('t62R'),
-        k = n('/Ikv'),
+        k = n('t62R'),
+        x = n('/Ikv'),
         T = n('ir4X'),
         E = n('3XMw'),
         _ = n.n(E),
@@ -1890,8 +1892,8 @@
         L = n('rOiJ'),
         P = n('kY28'),
         U = n('cTG8'),
-        O = n('UzHQ'),
-        B = n('E0cF'),
+        B = n('UzHQ'),
+        O = n('E0cF'),
         N = n('jV+4'),
         H = n('IV4V'),
         z = n('Y6la'),
@@ -1908,8 +1910,8 @@
         Q = { viewType: 'quote_tweet' }
       t.a = function (e) {
         var t = e.tweet,
-          n = !!t && !B.a.isQuotedTweetUnavailable({ is_quote_status: !0, quoted_status: t })
-        return t && n ? C.a.createElement(G, f()({}, e, { tweet: t })) : C.a.createElement(O.a, null)
+          n = !!t && !O.a.isQuotedTweetUnavailable({ is_quote_status: !0, quoted_status: t })
+        return t && n ? C.a.createElement(G, f()({}, e, { tweet: t })) : C.a.createElement(B.a, null)
       }
       var G = (function (e) {
         h()(n, e)
@@ -1980,7 +1982,7 @@
                   C.a.createElement(
                     A.a,
                     { nativeID: t },
-                    C.a.createElement(x.b, { style: M.a.visuallyHidden }, q),
+                    C.a.createElement(k.b, { style: M.a.visuallyHidden }, q),
                     C.a.createElement(
                       R.a,
                       {
@@ -2060,7 +2062,7 @@
                     },
                     this._renderUserName(a),
                     C.a.createElement(
-                      x.b,
+                      k.b,
                       { color: 'gray700', dir: W.a.getConstants().isRTL ? 'rtl' : 'ltr', style: $.timestampWrapper },
                       ' ',
                       '· ',
@@ -2268,7 +2270,7 @@
               key: '_renderShowText',
               value: function (e) {
                 var t = this.props.withLink
-                return C.a.createElement(x.b, { color: 'link', style: [$.marginTopXXSmall, !t && $.disabledLink] }, e)
+                return C.a.createElement(k.b, { color: 'link', style: [$.marginTopXXSmall, !t && $.disabledLink] }, e)
               },
             },
             {
@@ -2301,7 +2303,7 @@
               key: 'shouldRenderShowPollText',
               get: function () {
                 var e = this.props.tweet
-                return e.card && k.a.isPollCard(e.card.name)
+                return e.card && x.a.isPollCard(e.card.name)
               },
             },
             {

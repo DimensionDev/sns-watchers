@@ -5410,13 +5410,13 @@
           return z
         }),
         n.d(t, 'h', function () {
-          return Y
+          return X
         }),
         n.d(t, 'l', function () {
-          return K
+          return Q
         }),
         n.d(t, 'c', function () {
-          return Q
+          return J
         })
       var a = n('yiKp'),
         r = n.n(a),
@@ -5464,6 +5464,7 @@
         I = Object.freeze({
           LIVE_BROADCAST: 'liveBroadcast',
           REPLAY_BROADCAST: 'replayBroadcast',
+          AUDIOSPACE: 'audiospace',
           VOD: 'vod',
           GIF: 'gif',
           SLATE: 'slate',
@@ -5622,7 +5623,7 @@
         },
         L = function (e, t) {
           switch (t) {
-            case Q.SHOP:
+            case J.SHOP:
               return e.isTrue('responsive_web_live_commerce_enabled')
             default:
               return !0
@@ -5736,9 +5737,13 @@
                 var p = e.broadcasts ? e.broadcasts[t.broadcast.id] : void 0
                 ;(i = (p && p.twitter_user_id && e.users && e.users[p.twitter_user_id]) || void 0),
                   (a = p ? H(i, p) : void 0)
+              } else if (t.audiospace) {
+                var h = e.audiospaces ? e.audiospaces[t.audiospace.id] : void 0
+                ;(i = (h && h.creator_twitter_user_id && e.users && e.users[h.creator_twitter_user_id]) || void 0),
+                  (a = h ? W(i, h) : void 0)
               } else if ((t.slate && u) || t.tweet_media) {
-                var h = u && e.tweets ? e.tweets[u] : void 0
-                a = (i = h && e.users ? e.users[h.user] : void 0) ? W(i, !!t.tweet_media, c, h, e) : void 0
+                var v = u && e.tweets ? e.tweets[u] : void 0
+                a = (i = v && e.users ? e.users[v.user] : void 0) ? G(i, !!t.tweet_media, c, v, e) : void 0
               } else t.slate && l && (a = { type: I.SLATE })
               return (
                 a || !l || t.tweet_media || (a = { type: I.SLATE }),
@@ -5770,17 +5775,29 @@
             profileImageUrl: e ? e.profile_image_url_https : void 0,
           }
         },
-        W = function (e, t, n, a, r) {
+        W = function (e, t) {
+          return {
+            audiospace: t,
+            verified: !!e && e.verified,
+            screenName: e ? e.screen_name : t.host.username,
+            name: e ? e.name : t.host.display_name,
+            userId: e ? e.id_str : t.creator_twitter_user_id,
+            type: I.AUDIOSPACE,
+            accountType: e ? z.TWITTER : z.PERISCOPE,
+            profileImageUrl: e ? e.profile_image_url_https : t.host.avatar_url,
+          }
+        },
+        G = function (e, t, n, a, r) {
           var i, o, l
           if (t && a && n) {
             var c = x(a, n)
             if (c) {
               var s = c.type
-              o = q(s)
+              o = Y(s)
               var u = h.a.getVideoFromCoverMedia(c) || {},
                 d = u.source_user_id_str,
                 m = u.video_info
-              ;(i = m && m.duration_millis), (l = d && G(d, r))
+              ;(i = m && m.duration_millis), (l = d && q(d, r))
             }
           } else o = I.SLATE
           var p = l || e || {},
@@ -5792,10 +5809,10 @@
             ? { accountType: z.TWITTER, verified: _, screenName: b, name: f, type: o, playbackDuration: i, userId: v }
             : void 0
         },
-        G = function (e, t) {
+        q = function (e, t) {
           return t.users && t.users[e]
         },
-        q = function (e) {
+        Y = function (e) {
           switch (e) {
             case 'animated_gif':
               return I.GIF
@@ -5806,7 +5823,7 @@
               return
           }
         },
-        Y = function (e) {
+        X = function (e) {
           var t
           if (e) {
             var n = new URL(e).pathname.split('/')
@@ -5814,16 +5831,16 @@
           }
           return t
         },
-        X = function (e) {
+        K = function (e) {
           return !!e && !!e.carouselItemInfo && e.carouselItemInfo.type !== I.GIF && e.carouselItemInfo.type !== I.SLATE
         },
-        K = function (e) {
+        Q = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
             n = e + 1,
-            a = t.slice(n).findIndex(X)
+            a = t.slice(n).findIndex(K)
           return a > -1 ? a + n : a
         },
-        Q = Object.freeze({ SHOP: 'shop' })
+        J = Object.freeze({ SHOP: 'shop' })
     },
   },
 ])
