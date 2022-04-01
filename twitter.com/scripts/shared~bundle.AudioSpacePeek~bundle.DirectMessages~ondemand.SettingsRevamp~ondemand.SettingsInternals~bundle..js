@@ -62,7 +62,7 @@
             return {
               createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
               log: S.a,
-              scribeAction: E.c,
+              scribeAction: E.scribeAction,
             }
           }),
         L = n('I57f'),

@@ -7508,7 +7508,8 @@
             if (t) return 'rgb('.concat(t.red, ',').concat(t.green, ',').concat(t.blue, ')')
           },
           De = function (e, t) {
-            return [ke && A.negativeMargin, t && ke && [A.centerItems, { backgroundColor: e }]]
+            var n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]
+            return [ke && !n && A.negativeMargin, t && ke && [A.centerItems, { backgroundColor: e }]]
           },
           Fe = function () {
             var e,
@@ -7525,7 +7526,7 @@
                   forwardPivotInfo: (null === (t = n.quoted_status) || void 0 === t ? void 0 : t.softIntervention) || w,
                   isCondensed: le,
                   loggedInUserId: M,
-                  mediaContentStyles: !le && De(i, !!a),
+                  mediaContentStyles: !le && De(i, !!a, !0),
                   mediaMaxHeight: a ? (ke ? 596 : 510) : void 0,
                   nativeID: Se,
                   onPress: V,
@@ -7683,7 +7684,7 @@
           gap: { marginTop: e.spaces.space12 },
           mediaPivotGap: { marginTop: e.spaces.space4 },
           explicitlySized: { alignSelf: 'flex-start' },
-          negativeMargin: { marginRight: -e.spacesPx.space16, marginLeft: -e.spacesPx.space16 },
+          negativeMargin: { marginHorizontal: -e.spacesPx.space16 },
           centerItems: { alignItems: 'center' },
         }
       })
@@ -12297,6 +12298,7 @@
           'fetchTranslation',
           'header',
           'hitHighlights',
+          'isFocal',
           'onMediaTranslation',
           'style',
           'supplementalLang',
@@ -12312,6 +12314,7 @@
           'disableTranslation',
           'fetchTranslation',
           'header',
+          'isFocal',
           'onMediaTranslation',
           'style',
           'supplementalLang',
@@ -12341,11 +12344,15 @@
                   n = t.disableTranslation,
                   r = t.displayTextRange,
                   a = t.entities,
-                  i = t.lang,
-                  o = t.supplementalLang,
-                  s = t.text,
-                  l = t.userLanguage
-                return e._getMemoizedDisableTranslation(n, r, a, s, i, o, l)
+                  i = t.isFocal,
+                  o = t.lang,
+                  s = t.supplementalLang,
+                  l = t.text,
+                  c = t.userLanguage
+                return (
+                  e._getMemoizedDisableTranslation(n, r, a, l, o, s, c) ||
+                  !(i || e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled'))
+                )
               }),
               _()(m()(e), '_renderTranslation', function () {
                 var t = e.props,
@@ -12356,6 +12363,7 @@
                     t.fetchTranslation,
                     t.header,
                     t.hitHighlights,
+                    t.isFocal,
                     t.onMediaTranslation,
                     t.style,
                     t.supplementalLang,
@@ -12416,7 +12424,7 @@
                 value: function () {
                   var e = this.props,
                     t = (e.createLocalApiErrorHandler, e.disableTranslation, e.fetchTranslation, e.header),
-                    n = (e.onMediaTranslation, e.style),
+                    n = (e.isFocal, e.onMediaTranslation, e.style),
                     r = (e.supplementalLang, e.translation),
                     a = e.translationFetchStatus,
                     i = e.tweetId,
@@ -13533,8 +13541,7 @@
                   f = un.a.getOriginalTweet(u),
                   v = un.a.hasInteractiveText(f),
                   y = d || (v ? 'title4' : t.size),
-                  b = e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled'),
-                  g = l()(
+                  b = l()(
                     l()({}, t),
                     {},
                     {
@@ -13556,20 +13563,19 @@
                 return C.a.createElement(
                   Kt,
                   null,
-                  b
-                    ? C.a.createElement(
-                        st,
-                        o()({}, g, {
-                          disableTranslation: f.user.protected,
-                          lang: f.lang,
-                          onMediaTranslation: e._handleMediaTranslations,
-                          supplementalLang: f.supplemental_language,
-                          text: f.text,
-                          tweetId: f.id_str,
-                          withOriginalText: i,
-                        }),
-                      )
-                    : C.a.createElement($e.a, g),
+                  C.a.createElement(
+                    st,
+                    o()({}, b, {
+                      disableTranslation: f.user.protected,
+                      isFocal: i,
+                      lang: f.lang,
+                      onMediaTranslation: e._handleMediaTranslations,
+                      supplementalLang: f.supplemental_language,
+                      text: f.text,
+                      tweetId: f.id_str,
+                      withOriginalText: i,
+                    }),
+                  ),
                 )
               }),
               _()(m()(e), '_renderTweetText', function (t) {
@@ -13586,63 +13592,39 @@
                   p = n.withQuotedTweetLinks,
                   h = un.a.getOriginalTweet(l),
                   m = un.a.hasInteractiveText(h),
-                  f = c || (i || m ? 'title4' : 'body'),
-                  v = e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled')
+                  f = c || (i || m ? 'title4' : 'body')
                 return C.a.createElement(
                   Kt,
                   null,
-                  i || v
-                    ? C.a.createElement(st, {
-                        disableTranslation: h.user.protected,
-                        displayTextRange: h.display_text_range,
-                        enrichments: h.enrichments,
-                        entities: h.entities,
-                        excludeCardUrl: r,
-                        hitHighlights: i ? void 0 : a,
-                        lang: h.lang,
-                        linkify: !!i || o,
-                        nativeID: t,
-                        onEntityClick: s,
-                        onMediaTranslation: e._handleMediaTranslations,
-                        quotedTweetId: h.quoted_status && h.quoted_status.id_str,
-                        quotedTweetPermalink: h.quoted_status_permalink,
-                        size: f,
-                        style: i ? Yn.expandedTweetText : m && Yn.interactiveHighlightSpacer,
-                        supplementalLang: h.supplemental_language,
-                        text: h.text,
-                        transformUrl: e._transformUrl,
-                        tweetId: h.id_str,
-                        unmentionedUserIds: h.unmentioned_user_ids,
-                        weight: m ? 'heavy' : void 0,
-                        withCardLinks: i ? void 0 : u,
-                        withMediaLinks: i ? void 0 : !d,
-                        withOriginalText: i,
-                        withQuoteLinks: (!i && p) || un.a.isQuotedTweetUnavailable(h),
-                        withUnicodeEmojis: Y.b,
-                      })
-                    : C.a.createElement($e.a, {
-                        displayTextRange: h.display_text_range,
-                        enrichments: h.enrichments,
-                        entities: h.entities,
-                        excludeCardUrl: r,
-                        hitHighlights: a,
-                        lang: h.lang,
-                        linkify: o,
-                        nativeID: t,
-                        onEntityClick: e.props.onEntityClick,
-                        quotedTweetId: h.quoted_status && h.quoted_status.id_str,
-                        quotedTweetPermalink: h.quoted_status_permalink,
-                        size: f,
-                        style: m && Yn.interactiveHighlightSpacer,
-                        text: h.text,
-                        transformUrl: e._transformUrl,
-                        unmentionedUserIds: h.unmentioned_user_ids,
-                        weight: m ? 'heavy' : void 0,
-                        withCardLinks: u,
-                        withMediaLinks: !d,
-                        withQuoteLinks: p || un.a.isQuotedTweetUnavailable(h),
-                        withUnicodeEmojis: Y.b,
-                      }),
+                  C.a.createElement(st, {
+                    disableTranslation: h.user.protected,
+                    displayTextRange: h.display_text_range,
+                    enrichments: h.enrichments,
+                    entities: h.entities,
+                    excludeCardUrl: r,
+                    hitHighlights: i ? void 0 : a,
+                    isFocal: i,
+                    lang: h.lang,
+                    linkify: !!i || o,
+                    nativeID: t,
+                    onEntityClick: s,
+                    onMediaTranslation: e._handleMediaTranslations,
+                    quotedTweetId: h.quoted_status && h.quoted_status.id_str,
+                    quotedTweetPermalink: h.quoted_status_permalink,
+                    size: f,
+                    style: i ? Yn.expandedTweetText : m && Yn.interactiveHighlightSpacer,
+                    supplementalLang: h.supplemental_language,
+                    text: h.text,
+                    transformUrl: e._transformUrl,
+                    tweetId: h.id_str,
+                    unmentionedUserIds: h.unmentioned_user_ids,
+                    weight: m ? 'heavy' : void 0,
+                    withCardLinks: i ? void 0 : u,
+                    withMediaLinks: i ? void 0 : !d,
+                    withOriginalText: i,
+                    withQuoteLinks: (!i && p) || un.a.isQuotedTweetUnavailable(h),
+                    withUnicodeEmojis: Y.b,
+                  }),
                 )
               }),
               _()(m()(e), '_handleMediaTranslations', function (t) {
@@ -13886,7 +13868,7 @@
                           z = C.a.createElement(
                             C.a.Fragment,
                             null,
-                            B ? e._renderTombstone(B) : null,
+                            B ? e._renderTombstone(l.tombstone, B) : null,
                             u || !B
                               ? C.a.createElement(
                                   C.a.Fragment,
@@ -14613,16 +14595,17 @@
                   var t = e.actionLink,
                     n = e.actionText,
                     r = e.children,
-                    a = e.style,
-                    i = this.props,
-                    o = i.conversationTreeMetadata,
-                    s = i.onClick
+                    a = e.nativeID,
+                    i = e.style,
+                    o = this.props,
+                    s = o.conversationTreeMetadata,
+                    l = o.onClick
                   return C.a.createElement(
                     k.a,
-                    { style: a },
+                    { nativeID: a, style: i },
                     C.a.createElement(
                       ye.a,
-                      { actionLink: t, actionText: n, conversationTreeMetadata: o, inline: !0, onClick: s },
+                      { actionLink: t, actionText: n, conversationTreeMetadata: s, inline: !0, onClick: l },
                       r,
                     ),
                   )
@@ -14630,28 +14613,28 @@
               },
               {
                 key: '_renderTombstone',
-                value: function (e) {
-                  var t = this.props,
-                    n = t.conversationTreeMetadata,
-                    r = t.isFocal,
-                    a = t.onClick,
-                    i = t.tweet,
-                    o = un.a.getOriginalTweet(i),
-                    s = e.richText
-                  return o && e && s
+                value: function (e, t) {
+                  var n = this.props,
+                    r = n.conversationTreeMetadata,
+                    a = n.isFocal,
+                    i = n.onClick,
+                    o = n.tweet,
+                    s = un.a.getOriginalTweet(o),
+                    l = t.richText
+                  return s && t && l
                     ? C.a.createElement(
                         k.a,
-                        { style: Yn.spacingVertical },
+                        { nativeID: e, style: Yn.spacingVertical },
                         C.a.createElement(
                           ye.a,
                           {
-                            actionLink: r ? void 0 : o.permalink,
-                            actionText: r ? void 0 : Un,
-                            conversationTreeMetadata: n,
+                            actionLink: a ? void 0 : s.permalink,
+                            actionText: a ? void 0 : Un,
+                            conversationTreeMetadata: r,
                             inline: !0,
-                            onClick: r ? void 0 : a,
+                            onClick: a ? void 0 : i,
                           },
-                          C.a.createElement(E.a, { entities: s.entities, rtl: s.rtl, text: s.text }),
+                          C.a.createElement(E.a, { entities: l.entities, rtl: l.rtl, text: l.text }),
                         ),
                       )
                     : null

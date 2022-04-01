@@ -693,7 +693,7 @@
         d('e2c2b5a1', 'gest,hand,glad,höjde,kvinna,kvinnlig,kvinnor'),
         d('g8cb6fb0', 'Glad person som räcker upp handen'),
         d('ec80b42a', 'gest,hand,glad,höjde'),
-        d('bbbe07d6', 'Glad man som räcker upp handen'),
+        d('bbbe07d6', 'Glad man  som räcker upp handen'),
         d('jb204bd6', 'gest,hand,glad,höjde,man,manlig,män'),
         d('f0c5fba4', 'Kvinna som slår handen för ansiktet'),
         d('iaaf2e57', 'misstro,förbittring,ansikte,handflata,kvinna,kvinnlig,kvinnor'),

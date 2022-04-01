@@ -787,7 +787,7 @@
         i('h418b697', 'dans,dansend,danser,man,mannen'),
         i('c182c686', 'Vrouwen met konijnenoren'),
         i('a46b9849', 'konijn,danseres,vrouw,vrouwen'),
-        i('b84a0b21', 'Mensen met konijnenoren'),
+        i('b84a0b21', 'Mensen  met konijnenoren'),
         i('h1cdbc1c', 'konijn,danser'),
         i('b74e9528', 'Mannen met konijnenoren'),
         i('b368b790', 'konijn,danser,man,mannen'),

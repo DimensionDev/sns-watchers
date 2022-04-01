@@ -97,14 +97,14 @@
         },
         j = t('MWbm'),
         R = t('rHpw')
-      var B = R.a.create(function (e) {
+      var A = R.a.create(function (e) {
           return {
             eventStateContainer: { alignSelf: 'flex-end', flexDirection: 'row' },
             row: { flexDirection: 'row', marginVertical: e.spaces.space4 },
             rowElem: { flexGrow: 1, alignSelf: 'center' },
           }
         }),
-        O = function (e) {
+        B = function (e) {
           var a = e.category,
             t = e.eventState,
             n = e.gameClockPeriod,
@@ -115,18 +115,18 @@
             l = o && new Date(o)
           return y.a.createElement(
             j.a,
-            { style: B.row },
-            y.a.createElement(P.b, { align: 'left', size: 'subtext2', style: B.rowElem, weight: 'bold' }, a),
+            { style: A.row },
+            y.a.createElement(P.b, { align: 'left', size: 'subtext2', style: A.rowElem, weight: 'bold' }, a),
             y.a.createElement(
               j.a,
-              { style: B.eventStateContainer },
+              { style: A.eventStateContainer },
               c && l
                 ? y.a.createElement(D, { date: l })
                 : y.a.createElement(T, { eventState: t, gameClockPeriod: n, participants: r, winnerId: i }),
             ),
           )
         },
-        A = t('A91F'),
+        O = t('A91F'),
         F = t('TIdA'),
         G = (function (e) {
           g()(t, e)
@@ -144,7 +144,7 @@
                   n = a.logo,
                   r = e.state.imageError,
                   o = (!n && !t) || r ? H.translucent : {},
-                  i = n ? A.a.exact(n.width / n.height) : A.a.SQUARE
+                  i = n ? O.a.exact(n.width / n.height) : O.a.SQUARE
                 return y.a.createElement(
                   j.a,
                   { style: H.teamLogoContainer },
@@ -321,7 +321,7 @@
                     i = e.startTimeMillis,
                     c = e.summary,
                     l = e.winnerId
-                  return y.a.createElement(O, {
+                  return y.a.createElement(B, {
                     category: a,
                     eventState: t,
                     gameClock: n,
@@ -351,7 +351,7 @@
         q = t('zh9S'),
         X = t('Rp9C'),
         Q = t('X04g'),
-        J = Object(i.a)({ scribe: q.c }),
+        J = Object(i.a)({ scribe: q.scribeAction }),
         K = o.g({
           component: U,
           isFocusable: Object(i.a)(!0),

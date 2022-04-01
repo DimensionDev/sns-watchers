@@ -486,7 +486,7 @@
         o('d1506df8', 'Kuchařka'),
         o('f6dd58ec', 'food,service,chef,cook,cooking,woman,female,women'),
         o('c78eadfb', 'Kuchař'),
-        o('de5dbe22', 'jídlo,servis,šéfkuchař,kuchař,vaření'),
+        o('de5dbe22', 'jídlo,servis,šefkuchař,kuchař,vaření'),
         o('ad201b46', 'Kuchař'),
         o('cf252fa3', 'food,service,chef,cook,cooking,man,male,men'),
         o('d25db246', 'Zpěvačka'),

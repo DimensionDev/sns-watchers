@@ -82,7 +82,7 @@
               deleteSavedSearch: B.a,
               fetchSavedSearchesIfNeeded: B.b,
               saveSearch: B.c,
-              scribeAction: E.c,
+              scribeAction: E.scribeAction,
             }
           })
           .withAnalytics({ page: 'search' }),

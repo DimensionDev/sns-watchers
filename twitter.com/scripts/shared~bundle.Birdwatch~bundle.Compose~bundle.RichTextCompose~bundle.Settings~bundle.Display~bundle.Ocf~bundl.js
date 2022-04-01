@@ -688,7 +688,8 @@
             if (t) return 'rgb('.concat(t.red, ',').concat(t.green, ',').concat(t.blue, ')')
           },
           Oe = function (e, t) {
-            return [Te && P.negativeMargin, t && Te && [P.centerItems, { backgroundColor: e }]]
+            var n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]
+            return [Te && !n && P.negativeMargin, t && Te && [P.centerItems, { backgroundColor: e }]]
           },
           Be = function () {
             var e,
@@ -705,7 +706,7 @@
                   forwardPivotInfo: (null === (t = n.quoted_status) || void 0 === t ? void 0 : t.softIntervention) || g,
                   isCondensed: se,
                   loggedInUserId: M,
-                  mediaContentStyles: !se && Oe(i, !!a),
+                  mediaContentStyles: !se && Oe(i, !!a, !0),
                   mediaMaxHeight: a ? (Te ? 596 : 510) : void 0,
                   nativeID: Ae,
                   onPress: U,
@@ -863,7 +864,7 @@
           gap: { marginTop: e.spaces.space12 },
           mediaPivotGap: { marginTop: e.spaces.space4 },
           explicitlySized: { alignSelf: 'flex-start' },
-          negativeMargin: { marginRight: -e.spacesPx.space16, marginLeft: -e.spacesPx.space16 },
+          negativeMargin: { marginHorizontal: -e.spacesPx.space16 },
           centerItems: { alignItems: 'center' },
         }
       })

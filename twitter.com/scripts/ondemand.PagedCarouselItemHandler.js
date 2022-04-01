@@ -23,8 +23,8 @@
         u = r('XOJV'),
         d = r('eSoz'),
         p = r('rxPX'),
-        f = r('0KEI'),
-        b = function (e, t) {
+        b = r('0KEI'),
+        f = function (e, t) {
           return t.tweetId
         },
         m = function (e, t) {
@@ -34,11 +34,11 @@
         },
         w = Object(p.a)()
           .propsFromState(function () {
-            return { community: m, hydratedTweet: u.a.createHydratedTweetSelector(b) }
+            return { community: m, hydratedTweet: u.a.createHydratedTweetSelector(f) }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
               fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
@@ -57,14 +57,14 @@
             u = i.a.useContext(l.a),
             d = u.featureSwitches,
             p = u.loggedInUserId,
-            f = null == a ? void 0 : a.community_id_str
+            b = null == a ? void 0 : a.community_id_str
           i.a.useEffect(
             function () {
-              f && Object(h.a)(t) && n(f).catch(r())
+              b && Object(h.a)(t) && n(b).catch(r())
             },
-            [t, f, r, n],
+            [t, b, r, n],
           )
-          var b = d.isTrue('responsive_web_alt_text_badge_enabled'),
+          var f = d.isTrue('responsive_web_alt_text_badge_enabled'),
             m = a && Object(C.f)(a, p, t),
             w = m && Object(C.e)(m),
             I = d.isTrue('responsive_web_reactions_enabled')
@@ -72,7 +72,7 @@
             E.a,
             o()({}, s, {
               loggedInUserId: p,
-              shouldShowAltLabelAlways: b,
+              shouldShowAltLabelAlways: f,
               socialContextProps: w,
               tweet: a,
               withReactions: I,
@@ -114,17 +114,17 @@
             o = e.showMoreOnClick,
             d = e.showMoreText,
             p = a.a.useRef(),
-            f = Object(s.b)(),
-            b = function (e) {
+            b = Object(s.b)(),
+            f = function (e) {
               return function (t) {
                 var r
-                f.scribeAction('show_more'), o(), null === (r = p.current) || void 0 === r || r.blur(), e(t)
+                b.scribeAction('show_more'), o(), null === (r = p.current) || void 0 === r || r.blur(), e(t)
               }
             },
             m = function (e) {
               return function (t) {
                 var n, o
-                f.scribeAction('show_less'),
+                b.scribeAction('show_less'),
                   r(),
                   null === (n = p.current) || void 0 === n || n.focus(),
                   null === (o = p.current) || void 0 === o || o.blur(),
@@ -132,7 +132,7 @@
               }
             },
             w = function () {
-              f.scribeAction('click')
+              b.scribeAction('click')
             }
           return a.a.createElement(c.a.Consumer, null, function (e) {
             var r = e.handleNextSlide
@@ -150,7 +150,7 @@
                 ),
                 a.a.createElement(
                   l.a,
-                  { onPress: b(r), ref: p, size: 'medium', style: [u.button, u.rightControl], type: 'primaryFilled' },
+                  { onPress: f(r), ref: p, size: 'medium', style: [u.button, u.rightControl], type: 'primaryFilled' },
                   d,
                 ),
               ),
@@ -158,8 +158,8 @@
           })
         },
         p = r('VPAj'),
-        f = r('EIk2'),
-        b = r('b5s6'),
+        b = r('EIk2'),
+        f = r('b5s6'),
         m = r('zh9S'),
         w = r('Rp9C'),
         h = r('pbku'),
@@ -178,8 +178,8 @@
               createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)(
                 'PAGED_CAROUSEL_FEEDBACK_ITEM',
               ),
-              processCallback: f.a,
-              scribe: m.c,
+              processCallback: b.a,
+              scribe: m.scribeAction,
             }
           },
           selectData: function (e) {
@@ -201,7 +201,7 @@
               d = i.showMoreCallback,
               p = i.showMoreText
             return {
-              content: a.a.createElement(b.a, { shouldShowBorder: !1, tweetId: c.id_str }),
+              content: a.a.createElement(f.a, { shouldShowBorder: !1, tweetId: c.id_str }),
               showLessText: u,
               showLessOnClick: function () {
                 o(l).catch(n())

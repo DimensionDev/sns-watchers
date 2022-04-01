@@ -273,7 +273,7 @@
         e('c4e46c24', 'hiling,katawan,yuko,nakahalukipkip,senyas,kamay,pakiusap,dasal,salamat'),
         e('ae3d36c5', 'Pakikipagkamay'),
         e('ia2d4486', 'kasunduan,kamay,pakikipagkamay,pulong,kamayan'),
-        e('b066e85a', 'Thumbs up'),
+        e('b066e85a', 'Ayos'),
         e('a467b0e8', 'katawan,taas,kamay,hinlalaki,thumbs up,+1'),
         e('ada4be42', 'Thumbs down'),
         e('b0384782', 'katawan,baba,kamay,hinlalaki,thumbs down,-1'),

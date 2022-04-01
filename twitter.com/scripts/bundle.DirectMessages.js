@@ -133,7 +133,7 @@
           o = Object(x.h)().conversationId,
           c = Object(I.a)(M, { id: o || '' })
         i.a.useEffect(function () {
-          l.d(w), l.a(w), Object(K.b)(w)
+          l.scribePageImpression(w), l.googleAnalyticsPageView(w), Object(K.b)(w)
         }, []),
           i.a.useEffect(
             function () {
@@ -1727,7 +1727,7 @@
         ve = a('Yatk'),
         _e = a('G6rE'),
         be = a('P1r1'),
-        ke = { scribeAction: fe.c },
+        ke = { scribeAction: fe.scribeAction },
         Se = Object(ye.createSelector)(
           function (e, n) {
             return _e.e.select(e, n.senderId)
@@ -13262,12 +13262,12 @@
             fetchConversationIfNeeded: k.fetchConversationIfNeeded,
             fetchInboxIfNeeded: k.fetchInboxIfNeeded,
             fetchUpdatesIfNeeded: k.fetchUpdatesIfNeeded,
-            googleAnalyticsPageView: b.a,
+            googleAnalyticsPageView: b.googleAnalyticsPageView,
             leaveConversation: k.leaveConversation,
             removeMedia: Object(M.b)(e.conversationId),
             removeText: S.d,
-            scribeAction: b.c,
-            scribePageImpression: b.d,
+            scribeAction: b.scribeAction,
+            scribePageImpression: b.scribePageImpression,
             sendMessage: S.m,
             updateConversationReadState: k.updateConversationReadState,
             updateTweetDetailNav: L.b,
@@ -21845,9 +21845,9 @@
         w = Object(K.d)(x, function (e) {
           return {
             cancelUpload: Object(I.a)(e.match.params.conversationId),
-            googleAnalyticsPageView: v.a,
+            googleAnalyticsPageView: v.googleAnalyticsPageView,
             removeMedia: Object(I.b)(e.match.params.conversationId),
-            scribePageImpression: v.d,
+            scribePageImpression: v.scribePageImpression,
             setLastViewedDmInboxPath: E.h,
             updateTweetDetailNav: C.b,
           }
@@ -32478,7 +32478,7 @@
               addToast: k.b,
               processMultipleMedia: E.g,
               removeMediaUpload: E.i,
-              scribeAction: S.c,
+              scribeAction: S.scribeAction,
               preUploadMedia: E.e,
             }
           }),
@@ -36637,7 +36637,7 @@
           fetchConversationIfNeeded: k.fetchConversationIfNeeded,
           leaveConversation: k.leaveConversation,
           muteDMUser: k.muteDMUser,
-          scribeAction: I.c,
+          scribeAction: I.scribeAction,
           unblock: L.e.unblock,
           unmuteDMUser: k.unmuteDMUser,
           updateConversationName: k.updateConversationName,

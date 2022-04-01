@@ -304,7 +304,7 @@
         return i.g({
           isFocusable: Object(o.a)(!0),
           component: e,
-          bindActions: Object(o.a)({ scribe: l.c }),
+          bindActions: Object(o.a)({ scribe: l.scribeAction }),
           selectData: function () {
             return { dataSaverMode: s.j }
           },

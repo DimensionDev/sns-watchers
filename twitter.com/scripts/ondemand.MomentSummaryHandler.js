@@ -294,9 +294,9 @@
         I = n('Vgm9'),
         M = n('ObVQ'),
         x = n('Rp9C'),
-        O = n('MWbm'),
-        P = n('Irs7'),
-        A = n('rHpw'),
+        A = n('MWbm'),
+        O = n('Irs7'),
+        P = n('rHpw'),
         S = (function (e) {
           m()(n, e)
           var t = p()(n)
@@ -353,7 +353,7 @@
                     s = e.withLinkAction,
                     l = this._getEditIcon()
                   return g.a.createElement(
-                    O.a,
+                    A.a,
                     { style: T.buttonContainer },
                     g.a.createElement(
                       E.a,
@@ -389,7 +389,7 @@
             n
           )
         })(g.a.Component),
-        T = A.a.create(function (e) {
+        T = P.a.create(function (e) {
           return {
             buttonContainer: { flexDirection: 'row' },
             button: { marginRight: e.spaces.space4 },
@@ -397,7 +397,7 @@
             colorDeepGray: { color: e.colors.gray700 },
           }
         })
-      t.a = Object(P.a)(S)
+      t.a = Object(O.a)(S)
     },
     ObVQ: function (e, t, n) {
       'use strict'
@@ -466,9 +466,9 @@
         I = n.n(E),
         M = n('BUB3'),
         x = n('3XMw'),
-        O = n.n(x),
-        P = n('MREw'),
-        A = n('MWbm'),
+        A = n.n(x),
+        O = n('MREw'),
+        P = n('MWbm'),
         S = n('htQn'),
         T = n('pjBI'),
         L = n('t62R'),
@@ -482,11 +482,11 @@
         H = n('29/U'),
         K = n('TnY3'),
         F = { page: 'moment_maker', section: 'landing', component: 'moment_summary' },
-        G = O.a.a1d5303c,
-        W = O.a.cc8f8a8f,
-        U = O.a.c33a97d6,
-        Y = O.a.i7e9ecf2,
-        X = O.a.jceadc3e,
+        G = A.a.a1d5303c,
+        W = A.a.cc8f8a8f,
+        U = A.a.c33a97d6,
+        Y = A.a.i7e9ecf2,
+        X = A.a.jceadc3e,
         q =
           ((i = {}),
           w()(i, H.d.private, 'magenta500'),
@@ -525,18 +525,18 @@
                       style: ne.root,
                     },
                     I.a.createElement(
-                      A.a,
+                      P.a,
                       { style: ne.leftContainer },
                       e._renderTitle(),
                       e._renderDescription(),
                       I.a.createElement(
-                        A.a,
+                        P.a,
                         { style: ne.topMargin },
                         I.a.createElement(T.a, null, e._renderVisibilityLabel(), e._renderCreationSource()),
                       ),
                       e._renderLastModifiedTime(),
                     ),
-                    I.a.createElement(A.a, { style: ne.rightContainer }, e._renderCoverImage(), e._renderButtons()),
+                    I.a.createElement(P.a, { style: ne.rightContainer }, e._renderCoverImage(), e._renderButtons()),
                   )
                 })
               }),
@@ -546,11 +546,11 @@
                   S.a,
                   { link: e._getLinkToMoment(), onClick: t, style: ne.root },
                   I.a.createElement(
-                    A.a,
+                    P.a,
                     { style: ne.leftContainer },
                     e._renderAuthorCategory(),
                     e._renderTitle(),
-                    I.a.createElement(A.a, { style: ne.topMarginSmall }, e._renderVisibilityLabel()),
+                    I.a.createElement(P.a, { style: ne.topMarginSmall }, e._renderVisibilityLabel()),
                   ),
                   e._renderCoverImage(),
                 )
@@ -569,7 +569,7 @@
                     ? I.a.createElement(k.a, { author: n, size: 'subtext2' })
                     : null
                 return I.a.createElement(
-                  A.a,
+                  P.a,
                   { style: ne.authorCategoryContainer },
                   I.a.createElement(
                     T.a,
@@ -596,7 +596,7 @@
                 var t = e.props.description
                 return t
                   ? I.a.createElement(
-                      A.a,
+                      P.a,
                       { style: ne.topMargin },
                       I.a.createElement(
                         L.b,
@@ -610,7 +610,7 @@
                 var t = e.props.coverMedia,
                   n = t && B.a.getOriginalImage(t)
                 return I.a.createElement(
-                  A.a,
+                  P.a,
                   { style: ne.coverContainer },
                   n && t
                     ? I.a.createElement(R.a, {
@@ -636,9 +636,9 @@
                   l = t.visibilityMode,
                   d = o === e._getLinkToPreview()
                 return I.a.createElement(
-                  A.a,
+                  P.a,
                   { style: ne.buttonContainer },
-                  I.a.createElement(P.a, {
+                  I.a.createElement(O.a, {
                     author: n,
                     isTOO: a,
                     lastPublishedTime: r,
@@ -674,7 +674,7 @@
                   a = t.visibilityMode
                 return i
                   ? I.a.createElement(
-                      A.a,
+                      P.a,
                       { style: ne.horizontalContainer },
                       n && a !== H.d.private
                         ? I.a.createElement(j.a, { background: 'orange500', style: ne.pendingChangesLabel }, Y)
@@ -757,7 +757,7 @@
         oe = n('RqPI'),
         ce = function (e) {
           e.errorContext
-          return Object(l.a)({ scribe: ae.c })
+          return Object(l.a)({ scribe: ae.scribeAction })
         },
         se = function (e) {
           var t = e.entry
@@ -933,7 +933,7 @@
           }
         },
         x = n('rxPX'),
-        O = Object(x.a)()
+        A = Object(x.a)()
           .propsFromState(function () {
             return { activeTeamId: k.c }
           })
@@ -941,9 +941,9 @@
             return { addToast: _.b, deleteMoment: M }
           })
           .withAnalytics({ component: 'action_sheet' }),
-        P = n('ACNv'),
-        A = n('3XMw'),
-        S = n.n(A),
+        O = n('ACNv'),
+        P = n('3XMw'),
+        S = n.n(P),
         T = n('Rp9C'),
         L = n('TnY3'),
         z = n('v6aA'),
@@ -1065,7 +1065,7 @@
                 key: 'render',
                 value: function () {
                   return this.context.loggedInUserId
-                    ? f.a.createElement(P.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
+                    ? f.a.createElement(O.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
                     : null
                 },
               },
@@ -1074,7 +1074,7 @@
           )
         })(f.a.Component)
       p()(q, 'contextType', z.a)
-      var Q = O(q),
+      var Q = A(q),
         J = Object(L.a)(Q),
         Z = n('2G3J'),
         $ = (function (e) {

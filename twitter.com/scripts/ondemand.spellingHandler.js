@@ -13,7 +13,7 @@
         u = n('ONGZ'),
         l = a.g({
           bindActions: function () {
-            return { scribe: c.c }
+            return { scribe: c.scribeAction }
           },
           component: s.b,
           divider: { top: !0, bottom: !0 },
@@ -47,7 +47,7 @@
         u = n('ONGZ'),
         l = a.g({
           bindActions: function () {
-            return { scribe: c.c }
+            return { scribe: c.scribeAction }
           },
           component: s.a,
           divider: { top: !0, bottom: !0 },

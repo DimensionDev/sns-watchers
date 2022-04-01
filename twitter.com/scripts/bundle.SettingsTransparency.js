@@ -60,18 +60,18 @@
             return { fetchStatus: e, interests: t, preferences: a }
           },
         ),
-        k = {
+        P = {
           createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
             'SETTINGS_TRANSPARENCY_DASHBOARD_TWITTER_INTERESTS_SCREEN',
           ),
           fetchInterests: v.fetchTwitterInterestsIfNeeded,
           fetchPreferences: v.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: y.a,
-          scribeAction: y.c,
-          scribePageImpression: y.d,
+          googleAnalyticsPageView: y.googleAnalyticsPageView,
+          scribeAction: y.scribeAction,
+          scribePageImpression: y.scribePageImpression,
           updateInterest: v.updateInterest,
         },
-        P = Object(w.f)(D, k),
+        k = Object(w.f)(D, P),
         C = a('xCYy'),
         x = a('v//M'),
         F = a('3XMw'),
@@ -240,7 +240,7 @@
           )
         })(b.a.Component)
       g()(te, 'contextType', V.a)
-      t.default = P(te)
+      t.default = k(te)
     },
     '67GR': function (e, t, a) {
       'use strict'
@@ -296,13 +296,13 @@
           ),
           fetchData: y.fetchDataIfNeeded,
           fetchPreferences: y.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: _.a,
-          scribeAction: _.c,
-          scribePageImpression: _.d,
+          googleAnalyticsPageView: _.googleAnalyticsPageView,
+          scribeAction: _.scribeAction,
+          scribePageImpression: _.scribePageImpression,
           updateLanguage: y.updateLanguage,
         },
-        k = Object(A.f)(w, D),
-        P = a('xCYy'),
+        P = Object(A.f)(w, D),
+        k = a('xCYy'),
         C = a('3XMw'),
         x = a.n(C),
         F = a('PK8P'),
@@ -423,7 +423,7 @@
                       L.a,
                       { location: a, title: H },
                       b.a.createElement(
-                        P.a,
+                        k.a,
                         null,
                         b.a.createElement(F.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),
                       ),
@@ -435,7 +435,7 @@
             a
           )
         })(b.a.Component)
-      t.default = k(X)
+      t.default = P(X)
     },
     C40e: function (e, t, a) {
       'use strict'
@@ -506,8 +506,8 @@
         A = a('v//M'),
         w = a('3XMw'),
         D = a.n(w),
-        k = a('yoO3'),
-        P = a('7FtF'),
+        P = a('yoO3'),
+        k = a('7FtF'),
         C = a('iCwC'),
         x = a('XYIJ'),
         F = a('MWbm'),
@@ -581,10 +581,10 @@
                     t = e.deviceFetchStatus,
                     a = e.location
                   return g.a.createElement(
-                    k.a,
+                    P.a,
                     null,
                     g.a.createElement(
-                      P.a,
+                      k.a,
                       { location: a, title: O },
                       g.a.createElement(
                         I.a,
@@ -728,13 +728,13 @@
           ),
           fetchData: b.fetchDataIfNeeded,
           fetchPreferences: b.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: E.a,
-          scribePageImpression: E.d,
+          googleAnalyticsPageView: E.googleAnalyticsPageView,
+          scribePageImpression: E.scribePageImpression,
         },
         w = Object(S.f)(I, A),
         D = a('xCYy'),
-        k = a('PK8P'),
-        P = a('7JQg'),
+        P = a('PK8P'),
+        k = a('7JQg'),
         C = a('7FtF'),
         x = a('iCwC'),
         F = a('XYIJ'),
@@ -1006,7 +1006,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return g.a.createElement(
-                    P.c,
+                    k.c,
                     { namespace: se },
                     g.a.createElement(
                       C.a,
@@ -1014,7 +1014,7 @@
                       g.a.createElement(
                         D.a,
                         null,
-                        g.a.createElement(k.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),
+                        g.a.createElement(P.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),
                       ),
                     ),
                   )
@@ -1086,8 +1086,8 @@
           })
           .withAnalytics({ page: 'settings', section: 'your_twitter_data', component: 'your_profile' }),
         D = a('xCYy'),
-        k = a('yoO3'),
-        P = a('PK8P'),
+        P = a('yoO3'),
+        k = a('PK8P'),
         C = a('7FtF'),
         x = a('XYIJ'),
         F = a('MWbm'),
@@ -1264,7 +1264,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return g.a.createElement(
-                    k.a,
+                    P.a,
                     null,
                     g.a.createElement(
                       C.a,
@@ -1272,7 +1272,7 @@
                       g.a.createElement(
                         D.a,
                         null,
-                        g.a.createElement(P.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),
+                        g.a.createElement(k.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),
                       ),
                     ),
                   )
@@ -1332,8 +1332,8 @@
         A = a('yoO3'),
         w = a('PK8P'),
         D = a('7FtF'),
-        k = a('iCwC'),
-        P = a('XYIJ'),
+        P = a('iCwC'),
+        k = a('XYIJ'),
         C = a('MWbm'),
         x = a('t62R'),
         F = a('j7Bv'),
@@ -1380,7 +1380,7 @@
                     null,
                     g.a.createElement(
                       C.a,
-                      { style: [P.a.infoItem, P.a.bottomBorder] },
+                      { style: [k.a.infoItem, k.a.bottomBorder] },
                       g.a.createElement(x.b, { color: 'gray700' }, O),
                     ),
                     t ? e._renderLocations() : e._renderMessage(H, Y),
@@ -1396,12 +1396,12 @@
                     t.map(function (e, t) {
                       return g.a.createElement(
                         C.a,
-                        { key: "loc-'".concat(t), style: [P.a.infoItem, P.a.locationInfo, P.a.bottomBorder] },
+                        { key: "loc-'".concat(t), style: [k.a.infoItem, k.a.locationInfo, k.a.bottomBorder] },
                         g.a.createElement(F.a, {
                           Icon: I.a,
                           color: 'neutral',
                           size: 'xLarge',
-                          style: P.a.locationIcon,
+                          style: k.a.locationIcon,
                         }),
                         g.a.createElement(x.b, null, e),
                       )
@@ -1422,9 +1422,9 @@
               p()(l()(e), '_renderMessage', function (e, t) {
                 return g.a.createElement(
                   C.a,
-                  { style: k.a.calloutTextBlock },
+                  { style: P.a.calloutTextBlock },
                   g.a.createElement(x.b, { align: 'center', size: 'headline1' }, e),
-                  t ? g.a.createElement(x.b, { align: 'center', color: 'gray700', style: P.a.helpText }, t) : null,
+                  t ? g.a.createElement(x.b, { align: 'center', color: 'gray700', style: k.a.helpText }, t) : null,
                 )
               }),
               p()(l()(e), '_scribeAction', function (t) {
@@ -1538,8 +1538,8 @@
         A = a('csss'),
         w = a('7FtF'),
         D = a('v6aA'),
-        k = S.a.gbde3534,
-        P = S.a.a54826c5,
+        P = S.a.gbde3534,
+        k = S.a.a54826c5,
         C = S.a.fdb55209,
         x = S.a.e1c6b2d5,
         F = S.a.ed19d10d,
@@ -1564,7 +1564,7 @@
                   null,
                   g.a.createElement(
                     w.a,
-                    { location: a, title: k },
+                    { location: a, title: P },
                     g.a.createElement(A.a, {
                       description: n.tailored_audience_summary ? T({ count: n.num_twitter_interests }) : null,
                       label: C,
@@ -1572,7 +1572,7 @@
                     }),
                     g.a.createElement(A.a, {
                       description: n.tailored_audience_summary ? T({ count: n.num_partner_interests }) : null,
-                      label: P,
+                      label: k,
                       link: '/settings/your_twitter_data/partner_interests',
                     }),
                     g.a.createElement(A.a, {
@@ -1681,8 +1681,8 @@
               ),
               fetchData: b.fetchDataIfNeeded,
               fetchPreferences: b.fetchPreferencesIfNeeded,
-              googleAnalyticsPageView: E.a,
-              scribePageImpression: E.d,
+              googleAnalyticsPageView: E.googleAnalyticsPageView,
+              scribePageImpression: E.scribePageImpression,
             }
           })
           .withAnalytics({ page: 'settings', section: 'your_twitter_data', component: 'account_history' }),
@@ -1691,8 +1691,8 @@
         A = a('yoO3'),
         w = a('csss'),
         D = a('7FtF'),
-        k = a('v6aA'),
-        P = I.a.i6b3f59a,
+        P = a('v6aA'),
+        k = I.a.i6b3f59a,
         C = I.a.b523ecc5,
         x = I.a.d9cbe351,
         F = I.a.de90b049,
@@ -1734,7 +1734,7 @@
                     null,
                     g.a.createElement(
                       D.a,
-                      { location: t, title: P },
+                      { location: t, title: k },
                       g.a.createElement(w.a, {
                         description: r > 0 ? x({ count: r }) : null,
                         label: C,
@@ -1753,7 +1753,7 @@
             a
           )
         })(g.a.Component)
-      p()(L, 'contextType', k.a)
+      p()(L, 'contextType', P.a)
       t.default = v(L)
     },
     fpiQ: function (e, t, a) {
@@ -1800,13 +1800,13 @@
           ),
           fetchInterests: y.fetchPartnerInterestsIfNeeded,
           fetchPreferences: y.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: _.a,
-          scribeAction: _.c,
-          scribePageImpression: _.d,
+          googleAnalyticsPageView: _.googleAnalyticsPageView,
+          scribeAction: _.scribeAction,
+          scribePageImpression: _.scribePageImpression,
           updateInterest: y.updateInterest,
         },
-        k = Object(A.f)(w, D),
-        P = a('xCYy'),
+        P = Object(A.f)(w, D),
+        k = a('xCYy'),
         C = a('v//M'),
         x = a('7JQg'),
         F = a('7FtF'),
@@ -1925,7 +1925,7 @@
                       F.a,
                       { location: a, title: H },
                       b.a.createElement(
-                        P.a,
+                        k.a,
                         null,
                         b.a.createElement(C.a, {
                           fetchStatus: t,
@@ -1941,7 +1941,7 @@
             a
           )
         })(b.a.Component)
-      t.default = k(X)
+      t.default = P(X)
     },
     'h/+I': function (e, t, a) {
       'use strict'
@@ -1973,14 +1973,14 @@
         A = a('YeIG'),
         w = a('G6rE'),
         D = a('0KEI'),
-        k = a('oEGd'),
-        P = a('kGix'),
+        P = a('oEGd'),
+        k = a('kGix'),
         C = Object(I.createSelector)(
           v.selectData,
           function (e, t) {
             var a = w.e.selectLoggedInUser(e),
-              n = Object(A.a)(a) ? P.a.LOADED : y.selectFetchStatus(e)
-            return Object(P.d)(v.selectFetchDataStatus(e), v.selectPreferencesFetchStatus(e), n)
+              n = Object(A.a)(a) ? k.a.LOADED : y.selectFetchStatus(e)
+            return Object(k.d)(v.selectFetchDataStatus(e), v.selectPreferencesFetchStatus(e), n)
           },
           v.selectPreferences,
           y.selectFirstEmail,
@@ -1997,11 +1997,11 @@
           fetchData: v.fetchDataIfNeeded,
           fetchDevices: y.fetchDevices,
           fetchPreferences: v.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: _.a,
-          scribeAction: _.c,
-          scribePageImpression: _.d,
+          googleAnalyticsPageView: _.googleAnalyticsPageView,
+          scribeAction: _.scribeAction,
+          scribePageImpression: _.scribePageImpression,
         },
-        F = Object(k.f)(C, x),
+        F = Object(P.f)(C, x),
         T = a('xCYy'),
         L = a('yoO3'),
         R = a('PK8P'),
@@ -2206,8 +2206,8 @@
         A = a('XYIJ'),
         w = a('MWbm'),
         D = a('t62R'),
-        k = a('RKmr'),
-        P = a('v6aA'),
+        P = a('RKmr'),
+        k = a('v6aA'),
         C = a('3XMw'),
         x = a.n(C),
         F = x.a.b523ecc5,
@@ -2282,7 +2282,7 @@
                     g.a.createElement(
                       I.a,
                       { location: n, title: F },
-                      g.a.createElement(k.a, { description: this._fsSettingsRevamp ? O : N }),
+                      g.a.createElement(P.a, { description: this._fsSettingsRevamp ? O : N }),
                       g.a.createElement(S.a, { fetch: t, fetchStatus: a, render: this._render }),
                     ),
                   )
@@ -2292,7 +2292,7 @@
             a
           )
         })(g.a.Component)
-      p()(M, 'contextType', P.a)
+      p()(M, 'contextType', k.a)
       t.default = y(M)
     },
     jtO7: function (e, t, a) {
@@ -2390,8 +2390,8 @@
           })
           .withAnalytics({ page: 'settings', section: 'your_twitter_data', component: 'gender' }),
         D = a('xCYy'),
-        k = a('3XMw'),
-        P = a.n(k),
+        P = a('3XMw'),
+        k = a.n(P),
         C = a('yoO3'),
         x = a('PK8P'),
         F = a('7FtF'),
@@ -2403,24 +2403,24 @@
         M = a('p+r5'),
         B = a('e0ey'),
         H = a('v6aA'),
-        Y = P.a.a8d0108d,
+        Y = k.a.a8d0108d,
         G = 'custom',
-        j = P.a.a8d0108d,
-        z = P.a.fbf0e61d,
-        V = P.a.de32365f,
-        X = P.a.b6ab31bd,
-        K = P.a.b4568a3a,
-        U = P.a.c0be743d,
-        W = P.a.i2209530,
+        j = k.a.a8d0108d,
+        z = k.a.fbf0e61d,
+        V = k.a.de32365f,
+        X = k.a.b6ab31bd,
+        K = k.a.b4568a3a,
+        U = k.a.c0be743d,
+        W = k.a.i2209530,
         q = [
           { label: V, value: 'female' },
           { label: X, value: 'male' },
           { label: K, value: G },
         ],
-        J = P.a.b7cb74e0,
-        $ = P.a.cdb0d3e6,
-        Q = P.a.e9f1fbcb,
-        Z = P.a.cf0daa24,
+        J = k.a.b7cb74e0,
+        $ = k.a.cdb0d3e6,
+        Q = k.a.e9f1fbcb,
+        Z = k.a.cf0daa24,
         ee = (function (e) {
           f()(a, e)
           var t = p()(a)
@@ -2642,8 +2642,8 @@
         A = a('yoO3'),
         w = a('PK8P'),
         D = a('7FtF'),
-        k = a('iCwC'),
-        P = a('XYIJ'),
+        P = a('iCwC'),
+        k = a('XYIJ'),
         C = a('MWbm'),
         x = a('t62R'),
         F = a('Xrkv'),
@@ -2687,7 +2687,7 @@
                   null,
                   e._renderAges(),
                   e.isLoggedIn
-                    ? g.a.createElement(C.a, { style: P.a.infoItem }, g.a.createElement(x.b, { color: 'gray700' }, B))
+                    ? g.a.createElement(C.a, { style: k.a.infoItem }, g.a.createElement(x.b, { color: 'gray700' }, B))
                     : e._renderUseAge(),
                 )
               }),
@@ -2700,15 +2700,15 @@
                     !0,
                   )
                 return a
-                  ? g.a.createElement(C.a, { style: [P.a.infoItem, P.a.bottomBorder] }, g.a.createElement(x.b, null, a))
+                  ? g.a.createElement(C.a, { style: [k.a.infoItem, k.a.bottomBorder] }, g.a.createElement(x.b, null, a))
                   : e._renderMessage(G, j)
               }),
               p()(l()(e), '_renderMessage', function (e, t) {
                 return g.a.createElement(
                   C.a,
-                  { style: [k.a.calloutTextBlock, k.a.bottomBorder] },
+                  { style: [P.a.calloutTextBlock, P.a.bottomBorder] },
                   g.a.createElement(x.b, { align: 'center', size: 'headline1' }, e),
-                  t ? g.a.createElement(x.b, { align: 'center', color: 'gray700', style: P.a.helpText }, t) : null,
+                  t ? g.a.createElement(x.b, { align: 'center', color: 'gray700', style: k.a.helpText }, t) : null,
                 )
               }),
               p()(l()(e), '_renderUseAge', function () {
@@ -2755,7 +2755,7 @@
                         null,
                         g.a.createElement(
                           C.a,
-                          { style: [P.a.infoItem, P.a.bottomBorder] },
+                          { style: [k.a.infoItem, k.a.bottomBorder] },
                           g.a.createElement(x.b, { color: 'gray700' }, this.isLoggedIn ? M : H),
                         ),
                         g.a.createElement(w.a, { fetch: this._combinedFetches, fetchStatus: t, render: this._render }),

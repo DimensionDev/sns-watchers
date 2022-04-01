@@ -1082,7 +1082,7 @@
           ]),
           fetchSettingsIfNeeded: o.f,
           fetchTwitterArticlesIfNeeded: d.a.fetchIfNeeded,
-          scribeAction: u.c,
+          scribeAction: u.scribeAction,
         },
         w = Object(p.f)(_, v),
         k = a('txMZ'),
@@ -2325,25 +2325,27 @@
           var t = e.actions,
             a = e.bodyElements,
             n = e.headline,
-            l = e.isMobileLayout,
-            r = e.label,
-            o = e.media
-          return i.a.createElement(
-            ce.a,
-            { style: Ea.spotlight },
-            i.a.createElement(va, { isMobileLayout: l, label: r }),
-            i.a.createElement(
+            l = e.label,
+            r = e.media
+          return i.a.createElement(le.a, null, function (e) {
+            var o = e.windowWidth <= te.a.theme.breakpoints.small
+            return i.a.createElement(
               ce.a,
-              { style: [Ea.spotlightCard, te.a.isDarkMode() ? Ea.darkModeContentBackground : Ea.contentBackground] },
+              { style: Ea.spotlight },
+              i.a.createElement(va, { isMobileLayout: o, label: l }),
               i.a.createElement(
                 ce.a,
-                { style: Ea.spotlightContent },
-                i.a.createElement(ka, { children: o, isMobileLayout: l }),
-                i.a.createElement(_a, { headline: n, isMobileLayout: l, lines: a }),
+                { style: [Ea.spotlightCard, te.a.isDarkMode() ? Ea.darkModeContentBackground : Ea.contentBackground] },
+                i.a.createElement(
+                  ce.a,
+                  { style: Ea.spotlightContent },
+                  i.a.createElement(ka, { children: r, isMobileLayout: o }),
+                  i.a.createElement(_a, { headline: n, isMobileLayout: o, lines: a }),
+                ),
+                t && i.a.createElement(ya, { actions: t }),
               ),
-              t && i.a.createElement(ya, { actions: t }),
-            ),
-          )
+            )
+          })
         },
         Fa = a('jAXQ'),
         Ca = a.n(Fa),
@@ -2364,18 +2366,18 @@
             n = e.userRef,
             l = i.a.useContext(z.a).featureSwitches.isTrue('responsive_web_location_spotlight_v1_display')
           Ca()(Aa, n)
-          var r = Ca()(Oa, a),
-            o = null === (t = r.data.address) || void 0 === t ? void 0 : t.formatted_address,
-            s = function () {
-              var e = r.data.open_times
-              if (null == e) return null
-              var t = e.open_times_type
-              return t && 'AlwaysOpen' === t ? c() : t && 'RegularHours' === t ? u(e) : d()
-            },
-            c = function () {
+          var r,
+            o,
+            s,
+            c,
+            u,
+            d,
+            m = Ca()(Oa, a),
+            p = null === (t = m.data.address) || void 0 === t ? void 0 : t.formatted_address,
+            f = function () {
               return { elements: [{ text: Pa, color: 'green700' }] }
             },
-            u = function (e) {
+            g = function (e) {
               var t = null == e ? void 0 : e.is_open
               if (null == t) return null
               var a = t ? (null == e ? void 0 : e.closes) : null == e ? void 0 : e.opens
@@ -2389,37 +2391,36 @@
                     ],
                   }
             },
-            d = function () {
+            h = function () {
               return { elements: [{ text: Ba }] }
             }
           return l
-            ? i.a.createElement(le.a, null, function (e) {
-                return (function (e) {
-                  return i.a.createElement(Sa, {
-                    actions:
-                      ((u = []),
-                      o &&
-                        u.push({
-                          label: Ia,
-                          link: 'https://www.google.com/maps/search/?api=1&query='.concat(encodeURIComponent(o)),
-                        }),
-                      u.push({ label: La, link: 'dummy_contact_link' }),
-                      u),
-                    bodyElements: [
-                      ((n = r.data.website),
-                      (l = null == n ? void 0 : n.url),
-                      (c = null == n ? void 0 : n.display),
-                      l && c ? { elements: [{ text: c, link: { pathname: l, external: !0 } }] } : null),
-                      ((a = null === (t = r.data.address) || void 0 === t ? void 0 : t.formatted_address),
-                      a ? { elements: [{ text: a }] } : null),
-                      s(),
-                    ],
-                    isMobileLayout: e,
-                    label: Ta,
-                    media: i.a.createElement(ma, null),
-                  })
-                  var t, a, n, l, c, u
-                })(e.windowWidth <= te.a.theme.breakpoints.small)
+            ? i.a.createElement(Sa, {
+                actions:
+                  ((d = []),
+                  p &&
+                    d.push({
+                      label: Ia,
+                      link: 'https://www.google.com/maps/search/?api=1&query='.concat(encodeURIComponent(p)),
+                    }),
+                  d.push({ label: La, link: 'dummy_contact_link' }),
+                  d),
+                bodyElements: [
+                  ((s = m.data.website),
+                  (c = null == s ? void 0 : s.url),
+                  (u = null == s ? void 0 : s.display),
+                  c && u ? { elements: [{ text: u, link: { pathname: c, external: !0 } }] } : null),
+                  ((o = null === (r = m.data.address) || void 0 === r ? void 0 : r.formatted_address),
+                  o ? { elements: [{ text: o }] } : null),
+                  (function () {
+                    var e = m.data.open_times
+                    if (null == e) return null
+                    var t = e.open_times_type
+                    return t && 'AlwaysOpen' === t ? f() : t && 'RegularHours' === t ? g(e) : h()
+                  })(),
+                ],
+                label: Ta,
+                media: i.a.createElement(ma, null),
               })
             : null
         },

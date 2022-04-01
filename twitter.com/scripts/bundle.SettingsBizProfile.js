@@ -528,8 +528,8 @@
               createLocalApiErrorHandler: Object(R.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_BIZ_PROFILE_SCREEN',
               ),
-              googleAnalyticsPageView: L.a,
-              scribePageImpression: L.d,
+              googleAnalyticsPageView: L.googleAnalyticsPageView,
+              scribePageImpression: L.scribePageImpression,
               createBusinessProfile: O.a,
               fetchUserBizProfile: O.b,
               fetchDevices: M.fetchDevices,

@@ -189,7 +189,7 @@
         i('b1c2bf54', 'pusing,wajah,mata,terhipnotis,spiral,masalah,huh'),
         i('f1f6c794', 'Woozy face'),
         i('c7a3fed1', 'face,dizzy,intoxicated,tipsy,uneven eyes,wavy mouth'),
-        i('f4a2fbe7', 'Wajah terkejut'),
+        i('f4a2fbe7', 'Wajah tercengang'),
         i('a19a6d5b', 'terkejut,wajah,muka,kaget,heran,takjub'),
         i('i87f0152', 'Kepala meledak'),
         i('idd7a183', 'face,shocked,explosion,mad,mind blowing'),

@@ -116,20 +116,20 @@
         b = function (e, t) {
           return u.a.selectFetchStatus(e, h(0, t))
         },
-        y = function (e, t) {
+        g = function (e, t) {
           return e.location && e.location.state && e.location.state[t]
         },
-        g = function (e, t) {
-          return y(t, 'forwardPivotInfo')
+        y = function (e, t) {
+          return g(t, 'forwardPivotInfo')
         },
         E = function (e, t) {
-          return y(t, 'promotedContent')
+          return g(t, 'promotedContent')
         },
         C = function (e, t) {
-          return y(t, 'socialContext')
+          return g(t, 'socialContext')
         },
         T = function (e, t) {
-          return y(t, 'contextTweetId')
+          return g(t, 'contextTweetId')
         },
         x = function (e, t) {
           var n = h(0, t),
@@ -140,7 +140,7 @@
           .propsFromState(function () {
             return {
               fetchStatus: b,
-              forwardPivotInfo: g,
+              forwardPivotInfo: y,
               index: p,
               screenName: v,
               tweetId: h,
@@ -159,7 +159,7 @@
                 'TWEET_MEDIA_DETAIL_SCREEN',
               ),
               fetchTweetIfNeeded: u.a.fetchOneIfNeeded,
-              googleAnalyticsPageView: d.a,
+              googleAnalyticsPageView: d.googleAnalyticsPageView,
               updateSettings: w.M,
             }
           })
@@ -181,9 +181,9 @@
         F = n('iyiT'),
         B = n('oQhu'),
         K = n('AUxQ'),
-        X = n('rHpw'),
-        z = n('yw4N'),
-        V = n('v6aA'),
+        V = n('rHpw'),
+        X = n('yw4N'),
+        z = n('v6aA'),
         q = (function (e) {
           A()(n, e)
           var t = D()(n)
@@ -227,7 +227,7 @@
                     s = this.context.featureSwitches,
                     u = { selectedTweetId: d }
                   return l.a.createElement(
-                    z.a,
+                    X.a,
                     { accessibilityExpanded: !0, style: U.root },
                     l.a.createElement(K.a, {
                       apiErrorHandlerMap: this._getApiErrorHandlerMap(o),
@@ -249,8 +249,8 @@
             n
           )
         })(l.a.Component)
-      R()(q, 'contextType', V.a)
-      var U = X.a.create(function (e) {
+      R()(q, 'contextType', z.a)
+      var U = V.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -287,8 +287,8 @@
         he = n('RCZO'),
         pe = n('mpWK'),
         be = n('NP4V'),
-        ye = n('ACHU'),
-        ge = G.a.d132269b,
+        ge = n('ACHU'),
+        ye = G.a.d132269b,
         Ee = G.a.dd657211,
         Ce = G.a.h63a5c3b,
         Te = G.a.f20b040d,
@@ -313,8 +313,8 @@
             h = e.dataSaver,
             p = e.fetchStatus,
             b = e.fetchTweetIfNeeded,
-            y = e.forwardPivotInfo,
-            g = e.googleAnalyticsPageView,
+            g = e.forwardPivotInfo,
+            y = e.googleAnalyticsPageView,
             E = e.history,
             C = e.index,
             T = e.location,
@@ -393,10 +393,10 @@
               function () {
                 if (S) {
                   var e = oe.a.getTweetItem(S)
-                  g(m.contextualScribeNamespace), m.scribe({ action: 'show', data: { items: [e] } })
+                  y(m.contextualScribeNamespace), m.scribe({ action: 'show', data: { items: [e] } })
                 }
               },
-              [m, g, S],
+              [m, y, S],
             ),
             B = function () {
               E.goBackThroughModals()
@@ -407,7 +407,7 @@
               },
               [v, b, L],
             ),
-            X = function (e) {
+            V = function (e) {
               return function () {
                 e && Me(e)
                   ? (m.scribe({ component: 'conversation_drawer', action: u ? 'collapse' : 'expand' }), f(!u))
@@ -415,7 +415,7 @@
                     O({ showTweetMediaDetailDrawer: !_ }))
               }
             },
-            z = function (e) {
+            X = function (e) {
               var t = A(),
                 n = j()
               if (e !== t) {
@@ -429,7 +429,7 @@
                 E.replace({ state: R(e), pathname: a && a.expanded_url })
               }
             },
-            V = function (e) {
+            z = function (e) {
               return l.a.createElement(fe.a, {
                 isFixed: !0,
                 items: [
@@ -451,15 +451,15 @@
                     dominantColor: a.rgb,
                     hoverLabel: { label: r ? xe : Ie },
                     icon: r ? l.a.createElement(pe.a, null) : l.a.createElement(be.a, null),
-                    onClick: X(e),
+                    onClick: V(e),
                     type: 'onMediaDominantColorFilled',
                   })
                 : S && !t
                 ? l.a.createElement(me.a, {
                     accessibilityLabel: Ce,
                     dominantColor: n ? a.rgb : void 0,
-                    icon: l.a.createElement(ye.a, null),
-                    renderMenu: V,
+                    icon: l.a.createElement(ge.a, null),
+                    renderMenu: z,
                     type: n ? 'onMediaDominantColorFilled' : 'onMediaWhiteFilled',
                   })
                 : void 0
@@ -477,7 +477,7 @@
                 mediaItems: t,
                 onDismiss: B,
                 onMediaDetailZoomed: a,
-                onMediaItemChanged: z,
+                onMediaItemChanged: X,
                 onTap: o,
                 promotedContent: x,
                 videoId: 1 === t.length && S ? ce.b.forTweet(S.id_str) : void 0,
@@ -505,7 +505,7 @@
                         activeColor: 'white',
                         allowDownvote: !0,
                         color: 'white',
-                        forwardPivotInfo: S.softIntervention || y,
+                        forwardPivotInfo: S.softIntervention || g,
                         style: ke.actionsBar,
                         tweet: S,
                         withCount: !0,
@@ -517,7 +517,7 @@
                   overlayFooter: a,
                   topRightButton: q(e),
                 },
-                l.a.createElement(J.a, { accessibilityLabel: ge, fetchStatus: p, onRequestRetry: K, render: U }),
+                l.a.createElement(J.a, { accessibilityLabel: ye, fetchStatus: p, onRequestRetry: K, render: U }),
               )
             },
             G = l.a.useRef(null)
@@ -571,7 +571,7 @@
             )
           )
         },
-        ke = X.a.create(function (e) {
+        ke = V.a.create(function (e) {
           return {
             actionsBar: { height: e.spaces.space48, maxWidth: 'none', paddingHorizontal: e.spaces.space12 },
             container: {

@@ -32,10 +32,10 @@
           l = e.controls,
           u = void 0 === l ? null : l,
           d = e.focusable,
-          m = void 0 === d || d
+          b = void 0 === d || d
         return o.a.createElement(
           c.a,
-          { focusable: m, style: s.root, tabIndex: '0' },
+          { focusable: b, style: s.root, tabIndex: '0' },
           n.text
             ? o.a.createElement(
                 c.a,
@@ -79,7 +79,7 @@
       t.default = r.g({
         component: c.a,
         bindActions: function () {
-          return { scribe: s.c }
+          return { scribe: s.scribeAction }
         },
         createProps: function (e) {
           var t = e.entry.content

@@ -214,7 +214,7 @@
             return {
               applyReactionInstructions: e.module.applyReactionInstructions,
               richScribeAction: u.richScribeAction,
-              scribe: oe.c,
+              scribe: oe.scribeAction,
             }
           },
           component: ne,

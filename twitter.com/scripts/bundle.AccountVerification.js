@@ -6804,7 +6804,7 @@
               fetchAccountViolations: qe.d,
               fetchDevices: Es.fetchDevicesIfNeeded,
               fetchDocumentFormats: qe.g,
-              googleAnalyticsPageView: ls.a,
+              googleAnalyticsPageView: ls.googleAnalyticsPageView,
               resetFlow: qe.j,
               resetSubmitVerification: qe.l,
               setFormStepData: qe.R,

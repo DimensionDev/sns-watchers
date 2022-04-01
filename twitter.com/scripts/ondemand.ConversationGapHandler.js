@@ -8,8 +8,8 @@
         o = n.n(a),
         r = n('3XMw'),
         i = n.n(r),
-        l = n('MWbm'),
-        c = n('t62R'),
+        c = n('MWbm'),
+        l = n('t62R'),
         s = n('5mJL'),
         d = n('PV92'),
         p = n('htQn'),
@@ -53,7 +53,7 @@
           r = e.link,
           i = e.onClick,
           f = e.withElbow,
-          u = o.a.createElement(c.b, { color: 'link', style: m.enlargeTouchTarget }, a),
+          u = o.a.createElement(l.b, { color: 'link', style: m.enlargeTouchTarget }, a),
           h = o.a.createElement(
             s.a,
             {
@@ -62,9 +62,9 @@
                 : o.a.createElement(
                     o.a.Fragment,
                     null,
-                    o.a.createElement(l.a, { style: m.dot }),
-                    o.a.createElement(l.a, { style: m.dot }),
-                    o.a.createElement(l.a, { style: m.dot }),
+                    o.a.createElement(c.a, { style: m.dot }),
+                    o.a.createElement(c.a, { style: m.dot }),
+                    o.a.createElement(c.a, { style: m.dot }),
                   ),
               avatarCellStyle: m.dotGroup,
               cellStyle: [m.content, t && m.treeContent],
@@ -72,7 +72,7 @@
             n ? g : u,
           )
         return o.a.createElement(
-          l.a,
+          c.a,
           { style: [m.gap, t && m.treeGap, t && 0 === t.length && m.treeGapTopLevel] },
           t
             ? o.a.createElement(d.a, {
@@ -110,8 +110,8 @@
         o = n.n(a),
         r = n('ezF+'),
         i = n('ERkP'),
-        l = n.n(i),
-        c = n('EnM6'),
+        c = n.n(i),
+        l = n('EnM6'),
         s = n('3XMw'),
         d = n.n(s),
         p = d.a.i569ff3e,
@@ -122,13 +122,13 @@
             a = e.onImpression,
             o = e.url
           return (
-            l.a.useEffect(
+            c.a.useEffect(
               function () {
                 a({ isSelfThreadGap: t })
               },
               [a, t],
             ),
-            l.a.createElement(c.a, {
+            c.a.createElement(l.a, {
               label: t ? p : f,
               link: o,
               onClick: function () {
@@ -142,7 +142,7 @@
         g = n('VPAj'),
         v = n('xN10'),
         w = r.g({
-          bindActions: Object(g.a)({ scribeAction: h.c }),
+          bindActions: Object(g.a)({ scribeAction: h.scribeAction }),
           component: u,
           defaultScribeNamespace: { component: 'timeline_conversation' },
           selectData: function (e) {

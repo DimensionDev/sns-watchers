@@ -3157,7 +3157,7 @@
         },
         _ = function (e, n) {
           return function () {
-            var t = i.c({ page: 'app', element: 'journeys_banner', action: e })
+            var t = i.scribeAction({ page: 'app', element: 'journeys_banner', action: e })
             n.dispatch(t)
           }
         },
@@ -3169,7 +3169,7 @@
                 var r = t && t.has_app,
                   a = Object(u.a)(window) ? 'webview' : 'browser',
                   o = r ? 'has_app' : 'has_no_app',
-                  c = i.c({ page: 'app', section: a, element: o, action: 'launch' })
+                  c = i.scribeAction({ page: 'app', section: a, element: o, action: 'launch' })
                 n.dispatch(c)
               }
             }),

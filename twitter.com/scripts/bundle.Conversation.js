@@ -59,8 +59,8 @@
           })
           .withAnalytics({ page: 'tweet', section: 'moderated_replies' }),
         L = n('QIgh'),
-        j = n('8UdT'),
-        A = n('IcAo'),
+        A = n('8UdT'),
+        j = n('IcAo'),
         D = n('VrCx'),
         B = n('xWpm'),
         M = n('WU0f'),
@@ -149,10 +149,10 @@
                     entryConfiguration:
                       ((e = { withUnhideReply: r === a }),
                       (t = e.withUnhideReply),
-                      Object(A.a)(
+                      Object(j.a)(
                         {},
                         L.b,
-                        g()({}, j.b.Tweet, {
+                        g()({}, A.b.Tweet, {
                           handlers: g()(
                             {},
                             D.a.Tweet,
@@ -297,8 +297,8 @@
           })
           .withAnalytics({ page: 'quick_promote' }),
         L = (n('1t7P'), n('jQ/y'), n('MWbm')),
-        j = n('t62R'),
-        A = n('rHpw'),
+        A = n('t62R'),
+        j = n('rHpw'),
         D = function (e) {
           var t = e.children,
             n = e.description,
@@ -310,13 +310,13 @@
           return h.a.createElement(
             L.a,
             { style: [B.descriptionItem, i ? B.bottomBorder : void 0] },
-            !!o && h.a.createElement(j.b, { weight: 'bold' }, o),
+            !!o && h.a.createElement(A.b, { weight: 'bold' }, o),
             !!n &&
               h.a.createElement(
                 L.a,
                 { style: B.descriptionContainer },
                 h.a.createElement(
-                  j.b,
+                  A.b,
                   { color: 'gray700', dir: a, size: 'subtext2', style: B.descriptionContainer, testID: r },
                   n,
                 ),
@@ -324,7 +324,7 @@
             t,
           )
         },
-        B = A.a.create(function (e) {
+        B = j.a.create(function (e) {
           return {
             descriptionItem: {
               backgroundColor: e.colors.cellBackground,
@@ -372,7 +372,7 @@
             L.a,
             { style: [V.bottomBorder, V.titleContainer] },
             h.a.createElement(
-              j.b,
+              A.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
@@ -386,7 +386,7 @@
               h.a.createElement(
                 L.a,
                 { style: V.primaryLabelContainer },
-                h.a.createElement(j.b, { align: 'center', color: 'primary', size: 'title4' }, t),
+                h.a.createElement(A.b, { align: 'center', color: 'primary', size: 'title4' }, t),
               ),
             h.a.createElement(
               L.a,
@@ -395,7 +395,7 @@
             ),
           )
         },
-        V = A.a.create(function (e) {
+        V = j.a.create(function (e) {
           return {
             titleContainer: { paddingVertical: e.spaces.space32 },
             primaryLabelContainer: { marginTop: e.spaces.space12 },
@@ -448,8 +448,8 @@
         xe = W.a.c21037d0,
         Oe = W.a.b07cc9f1,
         Le = W.a.ce309bed,
-        je = W.a.c6c16a51,
-        Ae = W.a.cc49d03f,
+        Ae = W.a.c6c16a51,
+        je = W.a.cc49d03f,
         De = W.a.dbe9353d,
         Be = W.a.c64974fb,
         Me = W.a.i638f89c
@@ -474,9 +474,9 @@
           case 'METROS':
             return Le
           case 'CITIES':
-            return je
-          case 'POSTAL_CODES':
             return Ae
+          case 'POSTAL_CODES':
+            return je
           default:
             return Object(be.a)('Unknown targeting locationType: '.concat(e)), e
         }
@@ -655,8 +655,8 @@
                         h.a.createElement(
                           ge.a,
                           v()({ accessibilityLabel: Qe, accessibilityLabelValueText: '"'.concat(p, '"') }, w, {
-                            maxIcon: h.a.createElement(j.b, { style: $e.iconText }, f),
-                            minIcon: h.a.createElement(j.b, { style: $e.iconText }, g),
+                            maxIcon: h.a.createElement(A.b, { style: $e.iconText }, f),
+                            minIcon: h.a.createElement(A.b, { style: $e.iconText }, g),
                             onChange: this._handleBudgetSlider,
                             thumbLabel: p,
                           }),
@@ -672,8 +672,8 @@
                         h.a.createElement(
                           ge.a,
                           v()({ accessibilityLabel: Xe, accessibilityLabelValueText: '"'.concat(y, '"') }, C, {
-                            maxIcon: h.a.createElement(j.b, { style: $e.iconText }, E),
-                            minIcon: h.a.createElement(j.b, { style: $e.iconText }, _),
+                            maxIcon: h.a.createElement(A.b, { style: $e.iconText }, E),
+                            minIcon: h.a.createElement(A.b, { style: $e.iconText }, _),
                             onChange: this._handleDurationSlider,
                             thumbLabel: y,
                           }),
@@ -693,7 +693,7 @@
           )
         })(h.a.PureComponent)
       g()(Ze, 'contextType', fe.a)
-      var $e = A.a.create(function (e) {
+      var $e = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             disclaimer: {
@@ -882,13 +882,13 @@
         var t = e.style
         return h.a.createElement(Ot.a, null, function (e) {
           var n = e.windowHeight
-          return e.windowWidth > A.a.theme.breakpoints.medium
+          return e.windowWidth > j.a.theme.breakpoints.medium
             ? h.a.createElement(St, { style: t })
             : h.a.createElement(xt, { style: [t, { height: 0.5 * n }] })
         })
       }
-      var jt = W.a.dcfb0332,
-        At = W.a.db841200,
+      var At = W.a.dcfb0332,
+        jt = W.a.db841200,
         Dt = W.a.hc67be9d,
         Bt = W.a.e8702fea,
         Mt = W.a.i2e3c1ce,
@@ -970,8 +970,8 @@
                       fractionDigits: 0,
                     }),
                     s = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled') && i > 0,
-                    u = s ? Bt({ couponAmount: l }) : jt,
-                    d = s ? Mt({ couponAmount: l }) : At,
+                    u = s ? Bt({ couponAmount: l }) : At,
+                    d = s ? Mt({ couponAmount: l }) : jt,
                     m = s ? Ft : Dt
                   return h.a.createElement(
                     h.a.Fragment,
@@ -1050,7 +1050,7 @@
             })
           )
         },
-        Zt = A.a.create(function (e) {
+        Zt = j.a.create(function (e) {
           return {
             heading: { marginBottom: e.spaces.space40 },
             infoItemGroup: { marginBottom: e.spaces.space20 },
@@ -1109,7 +1109,7 @@
         In = W.a.e974b2d4,
         Pn = W.a.b9c9b214,
         Tn = W.a.i0e569bf,
-        Sn = A.a.create(function (e) {
+        Sn = j.a.create(function (e) {
           return {
             labelContainer: { flexGrow: 1, paddingVertical: e.spaces.space16 },
             qpContainer: { flex: 1 },
@@ -1145,10 +1145,10 @@
           { label: gn, description: Pn, decoration: h.a.createElement(cn.a, { style: [Sn.icon, Sn.followersIcon] }) },
           { label: fn, description: Tn, decoration: h.a.createElement(dn, { style: [Sn.icon, Sn.websiteClicksIcon] }) },
         ]
-      function jn() {
+      function An() {
         return h.a.createElement(pe.a, { Icon: yn, headline: hn, text: bn, type: 'warning' })
       }
-      function An() {
+      function jn() {
         return h.a.createElement(pe.a, { Icon: En, headline: vn, text: _n, type: 'danger' })
       }
       var Dn = Wt(function (e) {
@@ -1199,15 +1199,15 @@
                   return [kn]
                     .concat(
                       Ut()(
-                        r ? [] : [Ht()(Ht()({}, xn), {}, { description: a && t === $t.c.Followers ? jn() : void 0 })],
+                        r ? [] : [Ht()(Ht()({}, xn), {}, { description: a && t === $t.c.Followers ? An() : void 0 })],
                       ),
-                      [Ht()(Ht()({}, On), {}, { disabled: !n, description: !n && An() })],
+                      [Ht()(Ht()({}, On), {}, { disabled: !n, description: !n && jn() })],
                     )
                     .map(function (e) {
                       return Ht()(
                         Ht()({}, e),
                         {},
-                        { label: h.a.createElement(j.b, { size: 'headline2', weight: 'bold' }, e.label) },
+                        { label: h.a.createElement(A.b, { size: 'headline2', weight: 'bold' }, e.label) },
                       )
                     })
                 })({ tweetHasMedia: f, tweetContainsLinks: b, selectedObjective: d, tweetIsReply: y })
@@ -1227,7 +1227,7 @@
             h.a.createElement(
               L.a,
               { style: Sn.titleContainer },
-              h.a.createElement(j.b, { align: 'center', size: 'headline1', weight: 'bold' }, mn),
+              h.a.createElement(A.b, { align: 'center', size: 'headline1', weight: 'bold' }, mn),
             ),
             h.a.createElement(
               L.a,
@@ -1339,12 +1339,12 @@
                     { style: ia.cardImageContainer },
                     h.a.createElement(Un.a, { source: e.imgSrcUrl, style: ia.cardImage }),
                   )
-                : h.a.createElement(j.b, { size: 'body' }, 'Card'),
+                : h.a.createElement(A.b, { size: 'body' }, 'Card'),
               h.a.createElement(
                 L.a,
                 { style: ia.descriptionContainer },
                 h.a.createElement(
-                  j.b,
+                  A.b,
                   { color: 'gray700', size: 'subtext1' },
                   ''.concat(ea, ' ').concat(e.lastFourDigits),
                 ),
@@ -1356,7 +1356,7 @@
                   h.a.createElement(
                     Vn.a,
                     { style: ia.expiredBadge },
-                    h.a.createElement(j.b, { size: 'subtext3', style: ia.expiredBadge, weight: 'bold' }, e.status),
+                    h.a.createElement(A.b, { size: 'subtext3', style: ia.expiredBadge, weight: 'bold' }, e.status),
                   ),
                 ),
             ),
@@ -1383,11 +1383,11 @@
           )
         },
         ca = Kn.a.generate({
-          backgroundColor: A.a.theme.colors.transparent,
-          color: A.a.theme.colors.primary,
+          backgroundColor: j.a.theme.colors.transparent,
+          color: j.a.theme.colors.primary,
           insetFocusRing: !0,
         }),
-        ia = A.a.create(function (e) {
+        ia = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1, overflow: 'auto' },
             paymentMethod: { flexDirection: 'row', justifyContent: 'space-between' },
@@ -1464,7 +1464,7 @@
                   L.a,
                   { style: ia.titleContainer },
                   h.a.createElement(
-                    j.b,
+                    A.b,
                     {
                       accessibilityLevel: 1,
                       accessibilityRole: 'heading',
@@ -1516,7 +1516,7 @@
                       style: ia.addPaymentMethodInteractiveContainer,
                     },
                     h.a.createElement(Xn.a, { style: ia.plusIcon }),
-                    h.a.createElement(j.b, { align: 'left', color: 'primary' }, Zn),
+                    h.a.createElement(A.b, { align: 'left', color: 'primary' }, Zn),
                   ),
                 ),
                 v &&
@@ -1579,7 +1579,7 @@
                 'QUICK_PROMOTE_PAYMENT_SCREEN',
               ),
               fetchTweetIfNeeded: nt.a.fetchOneIfNeeded,
-              scribeAction: sa.c,
+              scribeAction: sa.scribeAction,
               savePlatformRedirectBackState: function () {
                 return Object(ua.k)(e.match.params.quickPromotePlatform)
               },
@@ -1707,7 +1707,7 @@
           )
         })(h.a.PureComponent)
       g()(wa, 'contextType', fe.a)
-      var Ca = A.a.create(function (e) {
+      var Ca = j.a.create(function (e) {
           return { iframe: { flexGrow: 1, paddingTop: 0 } }
         }),
         Ia = ba(wa)
@@ -1717,7 +1717,7 @@
       function Ta() {
         return h.a.createElement(Ot.a, null, function (e) {
           e.windowHeight
-          return Pa(e.windowWidth > A.a.theme.breakpoints.medium ? It : kt), null
+          return Pa(e.windowWidth > j.a.theme.breakpoints.medium ? It : kt), null
         })
       }
       var Sa = n('0zXz'),
@@ -1733,10 +1733,10 @@
         La = function (e, t) {
           return e.quickPromote.targeting.gender
         },
-        ja = function (e, t) {
+        Aa = function (e, t) {
           return e.quickPromote.budget.dailyBudget
         },
-        Aa = function (e, t) {
+        ja = function (e, t) {
           return e.quickPromote.budget.durationDays
         },
         Da = function (e) {
@@ -1770,8 +1770,8 @@
               targetedLocations: xa,
               ageBucket: Oa,
               gender: La,
-              dailyBudget: ja,
-              durationDays: Aa,
+              dailyBudget: Aa,
+              durationDays: ja,
               lang: _.p,
               country: C.p,
               currency: Da,
@@ -1978,7 +1978,7 @@
                         : null,
                     x = k ? '' : qe({ amount: l * s, lang: m, currency: i }),
                     O = p.params,
-                    A = O.quickPromotePlatform,
+                    j = O.quickPromotePlatform,
                     B = O.screenName,
                     M = O.statusId,
                     F = this._getPromoteErrorMessage(),
@@ -2034,13 +2034,13 @@
                                     status: y.cardStatus,
                                   })
                                 : h.a.createElement(
-                                    j.b,
+                                    A.b,
                                     { color: 'primary', size: 'subtext2' },
                                     this._getPaymentDescription(V, G),
                                   ),
-                            label: h.a.createElement(j.b, { weight: 'bold' }, Ya),
+                            label: h.a.createElement(A.b, { weight: 'bold' }, Ya),
                             link:
-                              !y || H ? Object(Ve.j)(B, M, A, Ve.c.Payment) : Object(Ve.j)(B, M, A, Ve.c.PaymentSelect),
+                              !y || H ? Object(Ve.j)(B, M, j, Ve.c.Payment) : Object(Ve.j)(B, M, j, Ve.c.PaymentSelect),
                             testID: ce,
                           })
                         : h.a.createElement(Ua.a, {
@@ -2048,12 +2048,12 @@
                               u && !H
                                 ? u.description
                                 : h.a.createElement(
-                                    j.b,
+                                    A.b,
                                     { color: 'primary', size: 'subtext2' },
                                     this._getPaymentDescription(V, G),
                                   ),
-                            label: h.a.createElement(j.b, { weight: 'bold' }, Ya),
-                            link: !u || H ? Object(Ve.j)(B, M, A, Ve.c.Payment) : void 0,
+                            label: h.a.createElement(A.b, { weight: 'bold' }, Ya),
+                            link: !u || H ? Object(Ve.j)(B, M, j, Ve.c.Payment) : void 0,
                             testID: ce,
                           }),
                       T
@@ -2076,25 +2076,25 @@
                                     h.a.createElement(
                                       L.a,
                                       { style: hr.promotionTotalRow },
-                                      h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, $a),
-                                      h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, o),
+                                      h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, $a),
+                                      h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, o),
                                     ),
                                     h.a.createElement(
                                       L.a,
                                       { style: hr.promotionTotalRow },
-                                      h.a.createElement(j.b, { color: 'blue500', size: 'subtext2' }, er),
-                                      h.a.createElement(j.b, { color: 'blue500', size: 'subtext2' }, '-', c),
+                                      h.a.createElement(A.b, { color: 'blue500', size: 'subtext2' }, er),
+                                      h.a.createElement(A.b, { color: 'blue500', size: 'subtext2' }, '-', c),
                                     ),
                                     h.a.createElement(
                                       L.a,
                                       { style: hr.promotionTotalRow },
                                       h.a.createElement(
-                                        j.b,
+                                        A.b,
                                         { color: 'gray700', size: 'subtext2', weight: 'bold' },
                                         tr,
                                       ),
                                       h.a.createElement(
-                                        j.b,
+                                        A.b,
                                         { color: 'gray700', size: 'subtext2', testID: ie, weight: 'bold' },
                                         i,
                                       ),
@@ -2103,8 +2103,8 @@
                                       h.a.createElement(
                                         L.a,
                                         { style: hr.promotionTotalRow },
-                                        h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, nr),
-                                        h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, l),
+                                        h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, nr),
+                                        h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, l),
                                       ),
                                   )
                                 })({ subtotal: l * s, balance: k.total_amount || 0, currency: i, lang: m })
@@ -2134,13 +2134,13 @@
                             ? h.a.createElement(
                                 W.a.I18NFormatMessage,
                                 { $i18n: 'cace9784' },
-                                h.a.createElement(j.b, { link: Object(Ve.k)(e) }, W.a.acff74af),
-                                h.a.createElement(j.b, { link: Object(Ve.g)(t) }, W.a.cb8d4ace),
+                                h.a.createElement(A.b, { link: Object(Ve.k)(e) }, W.a.acff74af),
+                                h.a.createElement(A.b, { link: Object(Ve.g)(t) }, W.a.cb8d4ace),
                               )
                             : h.a.createElement(
                                 W.a.I18NFormatMessage,
                                 { $i18n: 'c99d7100' },
-                                h.a.createElement(j.b, { link: Object(Ve.k)(e) }, W.a.d56b5ac3),
+                                h.a.createElement(A.b, { link: Object(Ve.k)(e) }, W.a.d56b5ac3),
                               )
                         })(o, m, !!k),
                       ),
@@ -2154,7 +2154,7 @@
         })(h.a.PureComponent)
       g()(gr, 'contextType', fe.a)
       var fr,
-        hr = A.a.create(function (e) {
+        hr = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1, overflow: 'auto' },
             bottomElements: { marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space32 },
@@ -2230,8 +2230,8 @@
         xr = n('5Vk4'),
         Or = n('6OUF'),
         Lr = n('zrOZ'),
-        jr = n('kevv'),
-        Ar = W.a.cc642518,
+        Ar = n('kevv'),
+        jr = W.a.cc642518,
         Dr = W.a.i0e8c3c6,
         Br = W.a.deaf5b15,
         Mr = W.a.f69ad048,
@@ -2261,7 +2261,7 @@
                     onClear: e._handleClear,
                     targetingLocationQuery: a,
                   },
-                  h.a.createElement(L.a, null, h.a.createElement(j.b, { style: Hr.headingText, weight: 'heavy' }, Dr)),
+                  h.a.createElement(L.a, null, h.a.createElement(A.b, { style: Hr.headingText, weight: 'heavy' }, Dr)),
                   h.a.createElement(Tr.a, { fetchStatus: n, render: e._renderSearchList, retryMessage: Br }),
                 )
               }),
@@ -2317,7 +2317,7 @@
                       n = e.localized_name
                     return s(n, t, o) !== Ve.e.NoMatch
                   })
-                return Object(jr.a)(
+                return Object(Ar.a)(
                   u,
                   [
                     function (e) {
@@ -2393,7 +2393,7 @@
                         { style: Hr.gutter },
                         h.a.createElement(pe.a, { text: r, type: 'danger' }),
                       ),
-                    h.a.createElement(j.b, { style: Hr.headingText, weight: 'heavy' }, ze({ numLocations: n.length })),
+                    h.a.createElement(A.b, { style: Hr.headingText, weight: 'heavy' }, ze({ numLocations: n.length })),
                   ),
                   h.a.createElement(
                     L.a,
@@ -2491,7 +2491,7 @@
                 name: 'locationTargetingInput',
                 onChange: a,
                 onClear: r,
-                placeholder: Ar,
+                placeholder: jr,
                 style: Hr.input,
                 testID: ue,
                 value: o,
@@ -2501,7 +2501,7 @@
             t,
           )
         },
-        Hr = A.a.create(function (e) {
+        Hr = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             input: { marginVertical: e.spaces.space12 },
@@ -2673,7 +2673,7 @@
                         return e.localized_name
                       }),
                     ),
-                    label: h.a.createElement(j.b, { weight: 'bold' }, s),
+                    label: h.a.createElement(A.b, { weight: 'bold' }, s),
                     link: Object(Ve.j)(i, l, c, Ve.c.TargetingLocation),
                     testID: le,
                   }),
@@ -2719,7 +2719,7 @@
         )
       })(h.a.PureComponent)
       g()(mo, 'contextType', fe.a)
-      var po = A.a.create(function (e) {
+      var po = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             genderSelection: { marginTop: e.spaces.space4 },
@@ -2968,7 +2968,7 @@
           )
         })(h.a.PureComponent)
       g()(_o, 'contextType', fe.a)
-      var Eo = A.a.create(function (e) {
+      var Eo = j.a.create(function (e) {
           return { progressBar: { backgroundColor: e.colors.gray50 }, noScrollView: { overflowX: 'hidden', flex: 1 } }
         }),
         wo = st(_o)
@@ -3062,8 +3062,8 @@
         x = n('pNZL'),
         O = n('XOJV'),
         L = n('G6rE'),
-        j = n('rxPX'),
-        A = n('0KEI'),
+        A = n('rxPX'),
+        j = n('0KEI'),
         D = n('Mx3A'),
         B = function (e, t) {
           return e.location && e.location.state && e.location.state[t]
@@ -3142,7 +3142,7 @@
           a = n ? Object(T.g)(e, n) : void 0
         return n && a ? Object(C.c)(n, a) : void 0
       }
-      var $ = Object(j.a)()
+      var $ = Object(A.a)()
           .propsFromState(function () {
             return {
               communitySocialContextOfFocalTweet: Z,
@@ -3170,7 +3170,7 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('CONVERSATION_SCREEN'),
+              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('CONVERSATION_SCREEN'),
               clearTimelineCache: function (e, t) {
                 return Object(I.a)(e, t)
               },
@@ -3240,8 +3240,8 @@
         xe = n('2fY8'),
         Oe = n('MWbm'),
         Le = n('G8HL'),
-        je = n('pxuL'),
-        Ae = n('t62R'),
+        Ae = n('pxuL'),
+        je = n('t62R'),
         De = n('rHpw'),
         Be = n('oQhu'),
         Me = n('mN6z'),
@@ -3287,7 +3287,7 @@
         switch (t.contextType) {
           case Se.a.Community:
             var n = t.landingUrl ? Object(Ee.b)(t.landingUrl) : void 0
-            return b.a.createElement(Ae.b, { link: n }, t.text)
+            return b.a.createElement(je.b, { link: n }, t.text)
           default:
             return null
         }
@@ -3597,7 +3597,7 @@
           n
         )
       })(b.a.Component)
-      g()(Ze, 'contextType', je.a), g()(Ze, 'defaultProps', { recordTTFL: f.c })
+      g()(Ze, 'contextType', Ae.a), g()(Ze, 'defaultProps', { recordTTFL: f.c })
       var $e = De.a.create(function (e) {
         return {
           mobileAppBarRightControl: {

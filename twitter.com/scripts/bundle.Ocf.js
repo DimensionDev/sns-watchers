@@ -2286,6 +2286,7 @@
           'fetchTranslation',
           'header',
           'hitHighlights',
+          'isFocal',
           'onMediaTranslation',
           'style',
           'supplementalLang',
@@ -2301,6 +2302,7 @@
           'disableTranslation',
           'fetchTranslation',
           'header',
+          'isFocal',
           'onMediaTranslation',
           'style',
           'supplementalLang',
@@ -2330,11 +2332,15 @@
                   n = t.disableTranslation,
                   a = t.displayTextRange,
                   r = t.entities,
-                  i = t.lang,
-                  o = t.supplementalLang,
-                  s = t.text,
-                  l = t.userLanguage
-                return e._getMemoizedDisableTranslation(n, a, r, s, i, o, l)
+                  i = t.isFocal,
+                  o = t.lang,
+                  s = t.supplementalLang,
+                  l = t.text,
+                  c = t.userLanguage
+                return (
+                  e._getMemoizedDisableTranslation(n, a, r, l, o, s, c) ||
+                  !(i || e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled'))
+                )
               }),
               y()(m()(e), '_renderTranslation', function () {
                 var t = e.props,
@@ -2345,6 +2351,7 @@
                     t.fetchTranslation,
                     t.header,
                     t.hitHighlights,
+                    t.isFocal,
                     t.onMediaTranslation,
                     t.style,
                     t.supplementalLang,
@@ -2405,7 +2412,7 @@
                 value: function () {
                   var e = this.props,
                     t = (e.createLocalApiErrorHandler, e.disableTranslation, e.fetchTranslation, e.header),
-                    n = (e.onMediaTranslation, e.style),
+                    n = (e.isFocal, e.onMediaTranslation, e.style),
                     a = (e.supplementalLang, e.translation),
                     r = e.translationFetchStatus,
                     i = e.tweetId,
@@ -3522,8 +3529,7 @@
                   f = un.a.getOriginalTweet(u),
                   v = un.a.hasInteractiveText(f),
                   _ = d || (v ? 'title4' : t.size),
-                  b = e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled'),
-                  g = l()(
+                  b = l()(
                     l()({}, t),
                     {},
                     {
@@ -3545,20 +3551,19 @@
                 return w.a.createElement(
                   Gt,
                   null,
-                  b
-                    ? w.a.createElement(
-                        st,
-                        o()({}, g, {
-                          disableTranslation: f.user.protected,
-                          lang: f.lang,
-                          onMediaTranslation: e._handleMediaTranslations,
-                          supplementalLang: f.supplemental_language,
-                          text: f.text,
-                          tweetId: f.id_str,
-                          withOriginalText: i,
-                        }),
-                      )
-                    : w.a.createElement($e.a, g),
+                  w.a.createElement(
+                    st,
+                    o()({}, b, {
+                      disableTranslation: f.user.protected,
+                      isFocal: i,
+                      lang: f.lang,
+                      onMediaTranslation: e._handleMediaTranslations,
+                      supplementalLang: f.supplemental_language,
+                      text: f.text,
+                      tweetId: f.id_str,
+                      withOriginalText: i,
+                    }),
+                  ),
                 )
               }),
               y()(m()(e), '_renderTweetText', function (t) {
@@ -3575,63 +3580,39 @@
                   p = n.withQuotedTweetLinks,
                   h = un.a.getOriginalTweet(l),
                   m = un.a.hasInteractiveText(h),
-                  f = c || (i || m ? 'title4' : 'body'),
-                  v = e.context.featureSwitches.isTrue('tweet_translation_timeline_enabled')
+                  f = c || (i || m ? 'title4' : 'body')
                 return w.a.createElement(
                   Gt,
                   null,
-                  i || v
-                    ? w.a.createElement(st, {
-                        disableTranslation: h.user.protected,
-                        displayTextRange: h.display_text_range,
-                        enrichments: h.enrichments,
-                        entities: h.entities,
-                        excludeCardUrl: a,
-                        hitHighlights: i ? void 0 : r,
-                        lang: h.lang,
-                        linkify: !!i || o,
-                        nativeID: t,
-                        onEntityClick: s,
-                        onMediaTranslation: e._handleMediaTranslations,
-                        quotedTweetId: h.quoted_status && h.quoted_status.id_str,
-                        quotedTweetPermalink: h.quoted_status_permalink,
-                        size: f,
-                        style: i ? Yn.expandedTweetText : m && Yn.interactiveHighlightSpacer,
-                        supplementalLang: h.supplemental_language,
-                        text: h.text,
-                        transformUrl: e._transformUrl,
-                        tweetId: h.id_str,
-                        unmentionedUserIds: h.unmentioned_user_ids,
-                        weight: m ? 'heavy' : void 0,
-                        withCardLinks: i ? void 0 : u,
-                        withMediaLinks: i ? void 0 : !d,
-                        withOriginalText: i,
-                        withQuoteLinks: (!i && p) || un.a.isQuotedTweetUnavailable(h),
-                        withUnicodeEmojis: Y.b,
-                      })
-                    : w.a.createElement($e.a, {
-                        displayTextRange: h.display_text_range,
-                        enrichments: h.enrichments,
-                        entities: h.entities,
-                        excludeCardUrl: a,
-                        hitHighlights: r,
-                        lang: h.lang,
-                        linkify: o,
-                        nativeID: t,
-                        onEntityClick: e.props.onEntityClick,
-                        quotedTweetId: h.quoted_status && h.quoted_status.id_str,
-                        quotedTweetPermalink: h.quoted_status_permalink,
-                        size: f,
-                        style: m && Yn.interactiveHighlightSpacer,
-                        text: h.text,
-                        transformUrl: e._transformUrl,
-                        unmentionedUserIds: h.unmentioned_user_ids,
-                        weight: m ? 'heavy' : void 0,
-                        withCardLinks: u,
-                        withMediaLinks: !d,
-                        withQuoteLinks: p || un.a.isQuotedTweetUnavailable(h),
-                        withUnicodeEmojis: Y.b,
-                      }),
+                  w.a.createElement(st, {
+                    disableTranslation: h.user.protected,
+                    displayTextRange: h.display_text_range,
+                    enrichments: h.enrichments,
+                    entities: h.entities,
+                    excludeCardUrl: a,
+                    hitHighlights: i ? void 0 : r,
+                    isFocal: i,
+                    lang: h.lang,
+                    linkify: !!i || o,
+                    nativeID: t,
+                    onEntityClick: s,
+                    onMediaTranslation: e._handleMediaTranslations,
+                    quotedTweetId: h.quoted_status && h.quoted_status.id_str,
+                    quotedTweetPermalink: h.quoted_status_permalink,
+                    size: f,
+                    style: i ? Yn.expandedTweetText : m && Yn.interactiveHighlightSpacer,
+                    supplementalLang: h.supplemental_language,
+                    text: h.text,
+                    transformUrl: e._transformUrl,
+                    tweetId: h.id_str,
+                    unmentionedUserIds: h.unmentioned_user_ids,
+                    weight: m ? 'heavy' : void 0,
+                    withCardLinks: i ? void 0 : u,
+                    withMediaLinks: i ? void 0 : !d,
+                    withOriginalText: i,
+                    withQuoteLinks: (!i && p) || un.a.isQuotedTweetUnavailable(h),
+                    withUnicodeEmojis: Y.b,
+                  }),
                 )
               }),
               y()(m()(e), '_handleMediaTranslations', function (t) {
@@ -3875,7 +3856,7 @@
                           z = w.a.createElement(
                             w.a.Fragment,
                             null,
-                            B ? e._renderTombstone(B) : null,
+                            B ? e._renderTombstone(l.tombstone, B) : null,
                             u || !B
                               ? w.a.createElement(
                                   w.a.Fragment,
@@ -4602,16 +4583,17 @@
                   var t = e.actionLink,
                     n = e.actionText,
                     a = e.children,
-                    r = e.style,
-                    i = this.props,
-                    o = i.conversationTreeMetadata,
-                    s = i.onClick
+                    r = e.nativeID,
+                    i = e.style,
+                    o = this.props,
+                    s = o.conversationTreeMetadata,
+                    l = o.onClick
                   return w.a.createElement(
                     I.a,
-                    { style: r },
+                    { nativeID: r, style: i },
                     w.a.createElement(
                       _e.a,
-                      { actionLink: t, actionText: n, conversationTreeMetadata: o, inline: !0, onClick: s },
+                      { actionLink: t, actionText: n, conversationTreeMetadata: s, inline: !0, onClick: l },
                       a,
                     ),
                   )
@@ -4619,28 +4601,28 @@
               },
               {
                 key: '_renderTombstone',
-                value: function (e) {
-                  var t = this.props,
-                    n = t.conversationTreeMetadata,
-                    a = t.isFocal,
-                    r = t.onClick,
-                    i = t.tweet,
-                    o = un.a.getOriginalTweet(i),
-                    s = e.richText
-                  return o && e && s
+                value: function (e, t) {
+                  var n = this.props,
+                    a = n.conversationTreeMetadata,
+                    r = n.isFocal,
+                    i = n.onClick,
+                    o = n.tweet,
+                    s = un.a.getOriginalTweet(o),
+                    l = t.richText
+                  return s && t && l
                     ? w.a.createElement(
                         I.a,
-                        { style: Yn.spacingVertical },
+                        { nativeID: e, style: Yn.spacingVertical },
                         w.a.createElement(
                           _e.a,
                           {
-                            actionLink: a ? void 0 : o.permalink,
-                            actionText: a ? void 0 : Hn,
-                            conversationTreeMetadata: n,
+                            actionLink: r ? void 0 : s.permalink,
+                            actionText: r ? void 0 : Hn,
+                            conversationTreeMetadata: a,
                             inline: !0,
-                            onClick: a ? void 0 : r,
+                            onClick: r ? void 0 : i,
                           },
-                          w.a.createElement(C.a, { entities: s.entities, rtl: s.rtl, text: s.text }),
+                          w.a.createElement(C.a, { entities: l.entities, rtl: l.rtl, text: l.text }),
                         ),
                       )
                     : null
@@ -9408,10 +9390,10 @@
             startFlow: t.startFlow,
             submitFlow: t.submitFlow,
             updateFlow: t.updateFlow,
-            googleAnalyticsPageView: ft.a,
-            googleAnalyticsSendEvent: ft.b,
-            scribeAction: ft.c,
-            scribePageImpression: ft.d,
+            googleAnalyticsPageView: ft.googleAnalyticsPageView,
+            googleAnalyticsSendEvent: ft.googleAnalyticsSendEvent,
+            scribeAction: ft.scribeAction,
+            scribePageImpression: ft.scribePageImpression,
             verifyCredentials: kt.B,
           }
         }),
@@ -9529,7 +9511,7 @@
         jt = {
           createLocalApiErrorHandler: Object(qe.createLocalApiErrorHandlerWithContextFactory)('EMAIL_CONTACTS_SYNC'),
           importStatus: vt.e,
-          scribeAction: ft.c,
+          scribeAction: ft.scribeAction,
           syncContacts: vt.y,
         },
         Ht = Object(gt.f)(Ut, jt),
@@ -11311,7 +11293,7 @@
           }
         }),
         ba = (n('Qavd'), n('5oBF')),
-        ga = { scribeAction: ft.c, sendAllPreviews: ba.g },
+        ga = { scribeAction: ft.scribeAction, sendAllPreviews: ba.g },
         ya = Object(gt.b)(ga),
         ka = 'LoginForm_Login_Button',
         wa = n('0yYu'),
@@ -14592,7 +14574,7 @@
             return {
               createLocalApiErrorHandler: vo,
               fetchPreferencesIfNeeded: mo.fetchPreferencesIfNeeded,
-              scribeAction: ft.c,
+              scribeAction: ft.scribeAction,
               syncPersonalizationSettings: mo.syncSettings,
             }
           }),
@@ -15859,7 +15841,7 @@
             return { avatarMedia: Rs, bannerMedia: Ns }
           })
           .propsFromActions(function () {
-            return { scribeAction: ft.c, updateProfileAvatar: wi.l, updateProfileBanner: wi.m }
+            return { scribeAction: ft.scribeAction, updateProfileAvatar: wi.l, updateProfileBanner: wi.m }
           })
           .withAnalytics()(
           (function (e) {

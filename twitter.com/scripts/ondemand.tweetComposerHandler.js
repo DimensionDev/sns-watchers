@@ -14,7 +14,7 @@
         u = n('G6rE'),
         l = i.g({
           component: d.a,
-          bindActions: Object(a.a)({ scribe: s.c }),
+          bindActions: Object(a.a)({ scribe: s.scribeAction }),
           selectData: function (e) {
             e.entry, e.module
             return {

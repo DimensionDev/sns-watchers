@@ -1975,7 +1975,7 @@
             return { scheduledFor: e, scheduledTweetId: t, language: a }
           },
         ),
-        S = { addToast: _.b, deleteScheduledTweet: T.a, updateSingleComposer: v.w, scribeAction: E.c },
+        S = { addToast: _.b, deleteScheduledTweet: T.a, updateSingleComposer: v.w, scribeAction: E.scribeAction },
         I = Object(x.f)(D, S),
         L = a('jHSc'),
         F = a('Gpeq'),

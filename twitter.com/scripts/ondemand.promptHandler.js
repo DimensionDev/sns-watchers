@@ -9,14 +9,14 @@
         o = n('ezF+'),
         i = n('EIk2'),
         c = (n('uFXj'), n('ERkP')),
-        l = n.n(c),
-        s = n('IMYl'),
+        s = n.n(c),
+        l = n('IMYl'),
         p = n('hOZg'),
         u = function (e) {
           return 'IconCheckmark' === e
-            ? l.a.createElement(s.a, null)
+            ? s.a.createElement(l.a, null)
             : 'IconClose' === e
-            ? l.a.createElement(p.a, null)
+            ? s.a.createElement(p.a, null)
             : void 0
         },
         d =
@@ -60,7 +60,7 @@
             o = e.isRelevantText,
             i = e.notRelevantIcon,
             c = e.notRelevantOnClick,
-            s = e.notRelevantText,
+            l = e.notRelevantText,
             p = e.onIsRelevant,
             C = e.showConfirmation,
             v = e.title,
@@ -75,7 +75,7 @@
               E.scribe({ element: 'not_relevant', action: 'click' }), c()
             },
             T = function (e, t, n) {
-              return l.a.createElement(
+              return s.a.createElement(
                 f.a,
                 {
                   accessibilityLabel: t,
@@ -88,28 +88,28 @@
                 n ? null : t,
               )
             }
-          return l.a.createElement(
+          return s.a.createElement(
             y.a,
             { accessibilityLabelledBy: k, accessibilityRole: 'group', style: h.promptContainer },
             C
-              ? l.a.createElement(
+              ? s.a.createElement(
                   y.a,
                   { accessibilityRole: 'alert' },
-                  l.a.createElement(b.b, { style: I && h.survey }, t),
+                  s.a.createElement(b.b, { style: I && h.survey }, t),
                 )
-              : l.a.createElement(
+              : s.a.createElement(
                   y.a,
                   { style: [h.root, I && h.survey] },
-                  l.a.createElement(y.a, { style: h.firstHalf }, l.a.createElement(b.b, { nativeID: k }, v)),
-                  l.a.createElement(
+                  s.a.createElement(y.a, { style: h.firstHalf }, s.a.createElement(b.b, { nativeID: k }, v)),
+                  s.a.createElement(
                     y.a,
                     { style: h.secondHalf },
-                    l.a.createElement(
+                    s.a.createElement(
                       y.a,
                       { style: h.buttonContainer },
                       x
-                        ? l.a.createElement(l.a.Fragment, null, T(R, o, a), T(w, s, i))
-                        : l.a.createElement(l.a.Fragment, null, T(w, s, i), T(R, o, a)),
+                        ? s.a.createElement(s.a.Fragment, null, T(R, o, a), T(w, l, i))
+                        : s.a.createElement(s.a.Fragment, null, T(w, l, i), T(R, o, a)),
                     ),
                   ),
                 ),
@@ -128,7 +128,7 @@
             var t = e.module
             return {
               createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
-              scribe: v.c,
+              scribe: v.scribeAction,
               processCallback: i.a,
               applyReactionInstructions: t.applyReactionInstructions,
               updateEntry: t.updateEntry,
@@ -141,29 +141,29 @@
               o = t.processCallback,
               i = (t.scribe, t.updateEntry),
               c = e.entry,
-              l = c.content,
-              s = null != l && l.relevancePrompt ? l.relevancePrompt : null
-            if (!s) return null
+              s = c.content,
+              l = null != s && s.relevancePrompt ? s.relevancePrompt : null
+            if (!l) return null
             return {
               onIsRelevant: function () {
                 n({ entry: c, triggerName: I.a.ON_IS_RELEVANT })
               },
-              title: s.title,
-              confirmation: s.confirmation,
-              isRelevantText: s.isRelevantText,
-              notRelevantText: s.notRelevantText,
-              isRelevantIcon: k(s.displayType, !0),
-              notRelevantIcon: k(s.displayType, !1),
+              title: l.title,
+              confirmation: l.confirmation,
+              isRelevantText: l.isRelevantText,
+              notRelevantText: l.notRelevantText,
+              isRelevantIcon: k(l.displayType, !0),
+              notRelevantIcon: k(l.displayType, !1),
               isRelevantOnClick: function () {
-                i(c.entryId, { relevancePrompt: r()(r()({}, s), {}, { showConfirmation: !0 }) }),
-                  o(s.isRelevantCallback).catch(a())
+                i(c.entryId, { relevancePrompt: r()(r()({}, l), {}, { showConfirmation: !0 }) }),
+                  o(l.isRelevantCallback).catch(a())
               },
               notRelevantOnClick: function () {
-                i(c.entryId, { relevancePrompt: r()(r()({}, s), {}, { showConfirmation: !0 }) }),
-                  o(s.notRelevantCallback).catch(a())
+                i(c.entryId, { relevancePrompt: r()(r()({}, l), {}, { showConfirmation: !0 }) }),
+                  o(l.notRelevantCallback).catch(a())
               },
-              displayType: s.displayType,
-              showConfirmation: s.showConfirmation,
+              displayType: l.displayType,
+              showConfirmation: l.showConfirmation,
             }
           },
           getScribeDataItem: function (e) {
@@ -186,17 +186,17 @@
         o = n('t62R'),
         i = n('uCrx'),
         c = n('PnKw'),
-        l = n('rHpw'),
-        s = 'onboardingLikesGuide-emptyHeart',
+        s = n('rHpw'),
+        l = 'onboardingLikesGuide-emptyHeart',
         p = 'onboardingLikesGuide-filledHeart',
         u = n('MWbm'),
         d = r.a.memo(function () {
-          return r.a.createElement(i.a, { style: y.emptyHeart, testID: s })
+          return r.a.createElement(i.a, { style: y.emptyHeart, testID: l })
         }),
         m = r.a.memo(function () {
           return r.a.createElement(i.a, { style: y.filledHeart, testID: p })
         }),
-        y = l.a.create(function (e) {
+        y = s.a.create(function (e) {
           return {
             actionContext: { marginLeft: e.spaces.space8, display: 'inline' },
             actionGuide: {
@@ -239,8 +239,8 @@
           var t = e.bodyText,
             n = e.currentLikeCount,
             a = e.headerIconUrl,
-            l = e.headerText,
-            s = e.likeContext,
+            s = e.headerText,
+            l = e.likeContext,
             p = e.rightControl,
             g = e.totalLikeCount,
             f = [],
@@ -253,7 +253,7 @@
           u.a,
           { style: y.container },
           r.a.createElement(c.a, {
-            headline: l,
+            headline: s,
             image: a ? { url: a, width: 68, height: 68, isCentered: !0 } : void 0,
             isCompact: !0,
             rightControl: p,
@@ -264,7 +264,7 @@
             { style: y.actionGuide },
             r.a.createElement(
               u.a,
-              { accessibilityLabel: s, style: y.actionGuideLeft },
+              { accessibilityLabel: l, style: y.actionGuideLeft },
               r.a.createElement(
                 u.a,
                 { style: y.actionContextIconContainer },
@@ -277,12 +277,12 @@
               r.a.createElement(
                 u.a,
                 { style: y.actionContext },
-                r.a.createElement(o.b, { size: 'subtext2', weight: 'bold' }, s),
+                r.a.createElement(o.b, { size: 'subtext2', weight: 'bold' }, l),
               ),
             ),
             r.a.createElement(
               u.a,
-              { accessibilityLabel: s, accessibilityLiveRegion: 'polite', style: y.actionGuideRight },
+              { accessibilityLabel: l, accessibilityLiveRegion: 'polite', style: y.actionGuideRight },
               f.map(function (e, t) {
                 return r.a.createElement(u.a, { key: 'action-icon-'.concat(t), style: y.actionIcon }, e)
               }),
@@ -301,9 +301,9 @@
         o = n('Y9Ll'),
         i = n.n(o),
         c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        p = n.n(s),
+        s = n.n(c),
+        l = n('5Yy7'),
+        p = n.n(l),
         u = n('2VqO'),
         d = n.n(u),
         m = n('KEM+'),
@@ -329,7 +329,7 @@
             for (var a = arguments.length, o = new Array(a), i = 0; i < a; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              y()(l()(e), '_renderImage', function (e, t) {
+              y()(s()(e), '_renderImage', function (e, t) {
                 var n = f.a.createElement(b.a, {
                   accessibilityLabel: '',
                   aspectMode: C.a.exact(e.width / e.height),
@@ -349,7 +349,7 @@
                     )
                   : n
               }),
-              y()(l()(e), '_renderTitle', function () {
+              y()(s()(e), '_renderTitle', function () {
                 var t = e.props.headline
                 return t
                   ? f.a.createElement(
@@ -366,7 +366,7 @@
                     )
                   : null
               }),
-              y()(l()(e), '_renderBodyText', function () {
+              y()(s()(e), '_renderBodyText', function () {
                 var t = e.props.subtext
                 return t
                   ? f.a.createElement(
@@ -376,22 +376,22 @@
                     )
                   : null
               }),
-              y()(l()(e), '_renderAction', function (t) {
+              y()(s()(e), '_renderAction', function (t) {
                 var n = t.action,
                   a = t.buttonSize,
                   r = t.buttonType,
                   o = t.style,
                   i = t.testID,
                   c = e.props.secondaryAction,
-                  l = n.link,
-                  s = n.onClick,
+                  s = n.link,
+                  l = n.onClick,
                   p = n.text
                 return f.a.createElement(
                   w.a,
                   { style: [e.styles.actionContainer, o, { justifyContent: 'flex-start' }], testID: i },
                   f.a.createElement(
                     v.a,
-                    { link: l, onPress: s, size: a, style: { width: c ? '100%' : 'auto' }, type: r },
+                    { link: s, onPress: l, size: a, style: { width: c ? '100%' : 'auto' }, type: r },
                     p,
                   ),
                 )
@@ -513,10 +513,10 @@
           },
         }),
         c = n('4bW+'),
-        l = n('IG7M'),
-        s = n('rHpw'),
+        s = n('IG7M'),
+        l = n('rHpw'),
         p = n('Irs7'),
-        u = s.a.create(function (e) {
+        u = l.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
       t.a = Object(p.a)(function (e) {
@@ -524,7 +524,7 @@
           n = e.feedbackItems,
           a = e.isDisplayedOnMedia
         if (n && n.length > 0) {
-          return r.a.createElement(l.a, {
+          return r.a.createElement(s.a, {
             onClick: function () {
               return t.scribe({ element: 'caret', action: 'click' })
             },
@@ -547,9 +547,9 @@
         o = n('ezF+'),
         i = n('ERkP'),
         c = n.n(i),
-        l = n('RoyM'),
-        s = n('3XMw'),
-        p = n.n(s),
+        s = n('RoyM'),
+        l = n('3XMw'),
+        p = n.n(l),
         u = n('EycW'),
         d = n('zh9S'),
         m = n('G6rE'),
@@ -558,7 +558,7 @@
           component: u.a,
           bindActions: function (e) {
             e.module
-            return { scribe: d.c }
+            return { scribe: d.scribeAction }
           },
           selectData: function () {
             return {
@@ -574,18 +574,18 @@
               r = e.entry,
               o = e.feedbackItems,
               i = r.content,
-              s = null != i && i.onboardingLikesStartPrompt ? (null == i ? void 0 : i.onboardingLikesStartPrompt) : null
-            if (!s) return null
+              l = null != i && i.onboardingLikesStartPrompt ? (null == i ? void 0 : i.onboardingLikesStartPrompt) : null
+            if (!l) return null
             var p = (null == a ? void 0 : a.favourites_count) || 0,
-              u = s.likesNeededToCompleteOnboarding,
+              u = l.likesNeededToCompleteOnboarding,
               d = Math.max(0, u - p)
             return {
-              bodyText: null === (t = s.bodyRichText) || void 0 === t ? void 0 : t.text,
+              bodyText: null === (t = l.bodyRichText) || void 0 === t ? void 0 : t.text,
               currentLikeCount: p,
-              headerIconUrl: s.headerIconUrl,
-              headerText: null === (n = s.headerRichText) || void 0 === n ? void 0 : n.text,
+              headerIconUrl: l.headerIconUrl,
+              headerText: null === (n = l.headerRichText) || void 0 === n ? void 0 : n.text,
               likeContext: y({ count: d }),
-              rightControl: o.length ? c.a.createElement(l.a, { feedbackItems: o }) : void 0,
+              rightControl: o.length ? c.a.createElement(s.a, { feedbackItems: o }) : void 0,
               totalLikeCount: u,
             }
           },

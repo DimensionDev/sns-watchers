@@ -701,7 +701,7 @@
         d('f0c5fba4', 'Mulher com a mão no rosto'),
         d('iaaf2e57', 'descrença,irritação,cara,mão,mulher,feminino,mulheres'),
         d('ae0a4603', 'Pessia com a mão no rosto'),
-        d('b2231a72', 'descrença, desespero, rosto, palma'),
+        d('b2231a72', 'descrença,irritação,rosto,palma'),
         d('d06b9a8a', 'Homem com a mão no rosto'),
         d('geba6515', 'descrença,irritação,cara,mão,homem,masculino,homens'),
         d('g59109da', 'Mulher com deficiência auditiva'),

@@ -22,9 +22,9 @@
         m = n('ERkP'),
         E = n.n(m),
         b = (n('LW0h'), n('7x/C'), n('KqXw'), n('WNMA'), n('zh9S')),
-        _ = n('1YZw'),
-        g = n('yiKp'),
-        y = n.n(g),
+        g = n('1YZw'),
+        _ = n('yiKp'),
+        y = n.n(_),
         v = (n('z84I'), n('WpDa')),
         S = n('ZNT5'),
         w = n('G6rE'),
@@ -42,7 +42,7 @@
             formatResponse: v.a,
           })
         },
-        T = function (e) {
+        A = function (e) {
           return function (t, n) {
             var a = n()
             t(
@@ -59,7 +59,7 @@
             )
           }
         },
-        A = n('lbf8'),
+        T = n('lbf8'),
         k = n('rxPX'),
         L = function (e, t) {
           return t.match.params.filter
@@ -70,11 +70,11 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: _.b,
-              cleanupMuteList: A.b,
-              cleanupDMMuteList: T,
-              googleAnalyticsPageView: b.a,
-              scribePageImpression: b.d,
+              addToast: g.b,
+              cleanupMuteList: T.b,
+              cleanupDMMuteList: A,
+              googleAnalyticsPageView: b.googleAnalyticsPageView,
+              scribePageImpression: b.scribePageImpression,
             }
           })
           .withAnalytics({ page: 'settings', section: 'muted_accounts' }),
@@ -103,7 +103,7 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: _.b,
+              addToast: g.b,
               createLocalApiErrorHandler: Object(Y.createLocalApiErrorHandlerWithContextFactory)(
                 'MUTE_BUTTON_CONTAINER',
               ),
@@ -196,7 +196,7 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: _.b,
+              addToast: g.b,
               createLocalApiErrorHandler: Object(Y.createLocalApiErrorHandlerWithContextFactory)(
                 'MUTE_DM_BUTTON_CONTAINER',
               ),
@@ -314,16 +314,16 @@
         ),
         Ee = oe.a.a6194d10,
         be = oe.a.ga3ef87d,
-        _e = oe.a.cd9701d3,
-        ge = oe.a.b8e49590,
+        ge = oe.a.cd9701d3,
+        _e = oe.a.b8e49590,
         ye = oe.a.i859a9d3,
         ve = 'https://support.twitter.com/articles/20171399',
         Se = function () {
-          var e = E.a.createElement('div', null, ge, ' ', E.a.createElement(M.b, { link: ve }, ye))
+          var e = E.a.createElement('div', null, _e, ' ', E.a.createElement(M.b, { link: ve }, ye))
           return E.a.createElement(N.a, { header: be, message: e })
         },
         we = function () {
-          var e = E.a.createElement('div', null, _e, ' ', E.a.createElement(M.b, { link: ve }, ye))
+          var e = E.a.createElement('div', null, ge, ' ', E.a.createElement(M.b, { link: ve }, ye))
           return E.a.createElement(N.a, { header: be, message: e })
         },
         Ce = (function (e) {
@@ -349,7 +349,7 @@
                     a = this.context.loggedInUserId,
                     r = t === I.a.Messages
                   return (
-                    (this._module = r ? C(a) : Object(A.a)()),
+                    (this._module = r ? C(a) : Object(T.a)()),
                     E.a.createElement(
                       F.a,
                       null,
@@ -378,7 +378,7 @@
                     n = e.cleanupMuteList,
                     a = this.context.loggedInUserId,
                     r = C(a)
-                  n(Object(A.a)()), t(r)
+                  n(Object(T.a)()), t(r)
                 },
               },
             ]),
@@ -434,8 +434,8 @@
         m = (n('ho0z'), n('ERkP')),
         E = n.n(m),
         b = n('k49u'),
-        _ = n('dZRF'),
-        g = n('1YZw'),
+        g = n('dZRF'),
+        _ = n('1YZw'),
         y = n('oEOe'),
         v = function (e, t, n) {
           return function (a, r, o) {
@@ -450,7 +450,7 @@
         w = n('0KEI'),
         C = Object(S.a)()
           .propsFromState(function () {
-            return { applications: _.a.selectUniqUnrevokedApps, fetchStatus: _.d }
+            return { applications: g.a.selectUniqUnrevokedApps, fetchStatus: g.d }
           })
           .adjustStateProps(function (e) {
             var t = e.applications,
@@ -459,17 +459,17 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: g.b,
+              addToast: _.b,
               changePassword: v,
               createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_PASSWORD_SCREEN',
               ),
-              fetchApplicationsIfNeeded: _.b,
+              fetchApplicationsIfNeeded: g.b,
             }
           })
           .withAnalytics({ page: 'settings', section: 'password' }),
-        T = n('v//M'),
-        A = n('yoO3'),
+        A = n('v//M'),
+        T = n('yoO3'),
         k = n('7FtF'),
         L = n('MWbm'),
         O = n('Irs7'),
@@ -679,9 +679,9 @@
                     k.a,
                     { location: n, onSubmit: this._handleSubmit, submitDisabled: this.state.hasBlankFields, title: D },
                     E.a.createElement(
-                      A.a,
+                      T.a,
                       null,
-                      E.a.createElement(T.a, {
+                      E.a.createElement(A.a, {
                         accessibilityLabel: q,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetchApps,
@@ -718,14 +718,14 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('EPsT'),
-        _ = n('zh9S'),
-        g = n('a/ea'),
+        g = n('zh9S'),
+        _ = n('a/ea'),
         y = n('P1r1'),
         v = n('rxPX'),
         S = n('0KEI'),
         w = Object(v.a)()
           .propsFromState(function () {
-            return { permissionStatus: g.c, settings: y.g }
+            return { permissionStatus: _.c, settings: y.g }
           })
           .propsFromActions(function () {
             return {
@@ -733,15 +733,15 @@
                 'SETTINGS_LOCATION_SCREEN',
               ),
               deleteLocationData: y.c,
-              googleAnalyticsPageView: _.a,
-              loadGeoLocation: g.a,
-              scribePageImpression: _.d,
+              googleAnalyticsPageView: g.googleAnalyticsPageView,
+              loadGeoLocation: _.a,
+              scribePageImpression: g.scribePageImpression,
               updateSettings: y.M,
             }
           }),
         C = n('M6MT'),
-        T = n('eM8g'),
-        A = n('7FtF'),
+        A = n('eM8g'),
+        T = n('7FtF'),
         k = n('MWbm'),
         L = n('t62R'),
         O = n('e0ey'),
@@ -799,13 +799,13 @@
                     n = e.permissionStatus,
                     a = e.settings
                   return E.a.createElement(
-                    A.a,
+                    T.a,
                     { location: t, title: P },
                     E.a.createElement(
                       k.a,
                       null,
                       E.a.createElement(
-                        T.a,
+                        A.a,
                         null,
                         E.a.createElement(
                           F.a.I18NFormatMessage,
@@ -817,7 +817,7 @@
                           ),
                         ),
                       ),
-                      n === C.b.denied ? E.a.createElement(T.a, null, M) : null,
+                      n === C.b.denied ? E.a.createElement(A.a, null, M) : null,
                       E.a.createElement(O.a, {
                         checked: a.geo_enabled,
                         label: R,
@@ -884,30 +884,30 @@
         m = (n('2G9S'), n('ho0z'), n('6U7i'), n('ly4k'), n('ERkP')),
         E = n.n(m),
         b = n('EPsT'),
-        _ = (n('KqXw'), n('WNMA'), n('uo4S')),
-        g = n('1YZw'),
+        g = (n('KqXw'), n('WNMA'), n('uo4S')),
+        _ = n('1YZw'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = function (e, t) {
           var n = decodeURIComponent(t.match.params.sessionId || '')
-          return _.e(e, n)
+          return g.e(e, n)
         },
         w = Object(y.a)()
           .propsFromState(function () {
-            return { fetchStatus: _.d, session: S }
+            return { fetchStatus: g.d, session: S }
           })
           .propsFromActions(function () {
             return {
-              addToast: g.b,
+              addToast: _.b,
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('SESSION_DETAIL'),
-              fetchSessionsIfNeeded: _.a,
-              revokeSession: _.c,
+              fetchSessionsIfNeeded: g.a,
+              revokeSession: g.c,
             }
           })
           .withAnalytics({ page: 'settings', section: 'session_detail' }),
         C = n('v//M'),
-        T = n('3XMw'),
-        A = n.n(T),
+        A = n('3XMw'),
+        T = n.n(A),
         k = n('yoO3'),
         L = n('ZvNX'),
         O = n('7FtF'),
@@ -917,15 +917,15 @@
         R = n('t62R'),
         x = n('0yYu'),
         M = n('6vad'),
-        N = A.a.ed5ab169,
-        D = A.a.d64e29c5,
-        U = { headline: A.a.idfa01cb, text: A.a.d4cca0f7, confirmButtonLabel: A.a.ae1bbb26 },
-        H = A.a.e04ba39c,
-        K = A.a.bfbc051c,
-        j = A.a.jaaa8984,
-        V = A.a.h667fc02,
-        B = A.a.ddcd3d26,
-        G = A.a.d2f0f3fd,
+        N = T.a.ed5ab169,
+        D = T.a.d64e29c5,
+        U = { headline: T.a.idfa01cb, text: T.a.d4cca0f7, confirmButtonLabel: T.a.ae1bbb26 },
+        H = T.a.e04ba39c,
+        K = T.a.bfbc051c,
+        j = T.a.jaaa8984,
+        V = T.a.h667fc02,
+        B = T.a.ddcd3d26,
+        G = T.a.d2f0f3fd,
         Y = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -1142,12 +1142,12 @@
           n('2G9S'),
           n('MvUL'),
           n('ERkP')),
-        _ = n.n(b),
-        g = n('O0uF'),
+        g = n.n(b),
+        _ = n('O0uF'),
         y = n('rxPX'),
         v = Object(y.a)()
           .propsFromState(function () {
-            return { featureSwitches: g.f }
+            return { featureSwitches: _.f }
           })
           .adjustStateProps(function (e) {
             var t = e.featureSwitches
@@ -1157,8 +1157,8 @@
         S = n('VwDm'),
         w = n('sXY3'),
         C = n('yoO3'),
-        T = n('7FtF'),
-        A = (n('ho0z'), n('Blm6'), n('uFXj'), n('MWbm')),
+        A = n('7FtF'),
+        T = (n('ho0z'), n('Blm6'), n('uFXj'), n('MWbm')),
         k = n('p+r5'),
         L = n('rHpw'),
         O = (function (e) {
@@ -1194,10 +1194,10 @@
                     o = e.value,
                     i = e.withBottomBorder,
                     c = !!t
-                  return _.a.createElement(
-                    A.a,
+                  return g.a.createElement(
+                    T.a,
                     { style: [i && I.bottomBorder, c && I.disabled] },
-                    _.a.createElement(k.a, {
+                    g.a.createElement(k.a, {
                       editable: !c,
                       helperText: n,
                       label: a,
@@ -1213,7 +1213,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(O, 'defaultProps', { type: 'text', withBottomBorder: !0 })
       var I = L.a.create(function (e) {
           return {
@@ -1253,29 +1253,29 @@
                 var e = o.props.config,
                   t = o.experimentOverrides.getAll()
                 return Object.keys(t).length > 0
-                  ? _.a.createElement(
-                      A.a,
+                  ? g.a.createElement(
+                      T.a,
                       null,
-                      _.a.createElement(P.b, { text: 'Currently Active Overrides' }),
+                      g.a.createElement(P.b, { text: 'Currently Active Overrides' }),
                       Object(w.a)(t).map(function (t) {
                         var n = r()(t, 2),
                           a = n[0],
                           o = n[1]
-                        return _.a.createElement(
-                          A.a,
+                        return g.a.createElement(
+                          T.a,
                           { key: a, style: [F.a.viewItem, F.a.bottomBorder] },
-                          _.a.createElement(R.b, null, a),
-                          _.a.createElement(
+                          g.a.createElement(R.b, null, a),
+                          g.a.createElement(
                             R.b,
                             { color: e[a] && e[a].value !== o ? 'magenta500' : 'gray700' },
                             o.toString(),
                           ),
                         )
                       }),
-                      _.a.createElement(
-                        A.a,
+                      g.a.createElement(
+                        T.a,
                         { style: F.a.viewItem },
-                        _.a.createElement(
+                        g.a.createElement(
                           x.a,
                           { onPress: o._handleClearOverrides, type: 'destructiveOutlined' },
                           'Clear all overrides',
@@ -1285,16 +1285,16 @@
                   : null
               }),
               E()(u()(o), '_renderSearch', function () {
-                return _.a.createElement(
-                  A.a,
+                return g.a.createElement(
+                  T.a,
                   null,
-                  _.a.createElement(M.a, {
+                  g.a.createElement(M.a, {
                     checked: o.state.onlyDDGs,
                     label: 'Only DDGs',
                     name: 'onlyDDGs',
                     onChange: o._handleFilterChanged,
                   }),
-                  _.a.createElement(N.a, {
+                  g.a.createElement(N.a, {
                     Icon: S.a,
                     onChange: o._handleSearch,
                     placeholder: 'Search feature switches',
@@ -1309,13 +1309,13 @@
                   n = t.allSwitches,
                   a = t.config,
                   i = o.experimentOverrides.getAll()
-                return _.a.createElement(
-                  A.a,
+                return g.a.createElement(
+                  T.a,
                   null,
-                  _.a.createElement(P.b, { text: 'Filters' }),
+                  g.a.createElement(P.b, { text: 'Filters' }),
                   o._renderSearch(),
-                  _.a.createElement(D.a, null),
-                  _.a.createElement(P.b, { text: 'Feature switches' }),
+                  g.a.createElement(D.a, null),
+                  g.a.createElement(P.b, { text: 'Feature switches' }),
                   Object(w.a)(a).map(function (t) {
                     var c = r()(t, 2),
                       s = c[0]
@@ -1336,7 +1336,7 @@
                       E = u || f ? ''.concat(u, '\n').concat(f) : void 0
                     switch (h) {
                       case 'boolean':
-                        return _.a.createElement(M.a, {
+                        return g.a.createElement(M.a, {
                           checked: m,
                           helpText: E,
                           key: s,
@@ -1345,7 +1345,7 @@
                           onChange: o._handleItemChanged,
                         })
                       case 'experiment':
-                        return _.a.createElement(U.a, {
+                        return g.a.createElement(U.a, {
                           description: E,
                           key: s,
                           label: s,
@@ -1359,19 +1359,19 @@
                       case 'number':
                       default:
                         return Array.isArray(m)
-                          ? _.a.createElement(
-                              A.a,
+                          ? g.a.createElement(
+                              T.a,
                               { key: s, style: [F.a.viewItem, F.a.bottomBorder] },
-                              _.a.createElement(R.b, null, s),
-                              _.a.createElement(
+                              g.a.createElement(R.b, null, s),
+                              g.a.createElement(
                                 R.b,
                                 { color: 'gray700' },
                                 'Array value type editing not supported yet',
                               ),
-                              _.a.createElement('br', null),
-                              _.a.createElement(R.b, null, m.toString()),
+                              g.a.createElement('br', null),
+                              g.a.createElement(R.b, null, m.toString()),
                             )
-                          : _.a.createElement(O, {
+                          : g.a.createElement(O, {
                               helpText: E,
                               key: s,
                               label: s,
@@ -1402,13 +1402,13 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     C.a,
                     null,
-                    _.a.createElement(
-                      T.a,
+                    g.a.createElement(
+                      A.a,
                       { location: e, title: 'Feature switches' },
-                      _.a.createElement(A.a, null, this._renderCurrentOverrides(), this._renderAll()),
+                      g.a.createElement(T.a, null, this._renderCurrentOverrides(), this._renderAll()),
                     ),
                   )
                 },
@@ -1416,7 +1416,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(j, 'contextType', H.a)
       t.default = v(j)
     },
@@ -1454,15 +1454,15 @@
         m = (n('6U7i'), n('ly4k'), n('z84I'), n('uFXj'), n('ERkP')),
         E = n.n(m),
         b = n('X8EX'),
-        _ = n('1YZw'),
-        g = n('xZGM'),
+        g = n('1YZw'),
+        _ = n('xZGM'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = function (e, t) {
-          return Object(g.D)(e, g.q)
+          return Object(_.D)(e, _.q)
         },
         w = function (e, t) {
-          return Object(g.D)(e, g.x)
+          return Object(_.D)(e, _.x)
         },
         C = Object(y.a)()
           .propsFromState(function () {
@@ -1475,16 +1475,16 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: g.z,
-              addToast: _.b,
+              addFlag: _.z,
+              addToast: g.b,
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('MUTED_KEYWORDS'),
               deleteMutedKeyword: b.b,
               fetchMutedKeywordsIfNeeded: b.e,
             }
           })
           .withAnalytics({ page: 'settings', section: 'notifications', component: 'mute_keyword', element: 'list' }),
-        T = n('v//M'),
-        A = n('NTtI'),
+        A = n('v//M'),
+        T = n('NTtI'),
         k = (n('2G9S'), n('3XMw')),
         L = n.n(k),
         O = n('qz6Z'),
@@ -1530,7 +1530,7 @@
               {
                 key: '_updateUnmuteConfirmationPersistence',
                 value: function () {
-                  ;(0, this.props.addFlag)(g.x)
+                  ;(0, this.props.addFlag)(_.x)
                 },
               },
               {
@@ -1698,7 +1698,7 @@
                       this.state.showMuteKeywordEducationSheet
                         ? E.a.createElement(z.a, {
                             actionLabel: Z,
-                            graphic: A.a,
+                            graphic: T.a,
                             graphicDisplayMode: 'illustration',
                             headline: ie,
                             onAction: this._handleCloseEducationPrompt,
@@ -1706,7 +1706,7 @@
                             subtext: E.a.createElement(ce, null),
                           })
                         : null,
-                      E.a.createElement(T.a, {
+                      E.a.createElement(A.a, {
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
@@ -1771,7 +1771,7 @@
               {
                 key: '_updateMuteKeywordEducationCookie',
                 value: function () {
-                  ;(0, this.props.addFlag)(g.q)
+                  ;(0, this.props.addFlag)(_.q)
                 },
               },
             ]),
@@ -1826,22 +1826,22 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('2G9S'), n('z84I'), n('tVqn'), n('ERkP')),
-        _ = n.n(b),
-        g = n('EPsT'),
+        g = n.n(b),
+        _ = n('EPsT'),
         y = n('P1r1'),
         v = n('hqKg'),
         S = n('0KEI'),
         w = n('oEGd'),
         C = n('yiKp'),
-        T = n.n(C),
-        A = (n('1IsZ'), n('7x/C'), n('JtPf'), n('kGix')),
+        A = n.n(C),
+        T = (n('1IsZ'), n('7x/C'), n('JtPf'), n('kGix')),
         k = n('XMGw'),
         L = n('Ssj5'),
         O = n('oEOe'),
         I = ''.concat(k.a, '/contacts'),
         F = 'rweb/'.concat(k.a),
         P = Object(O.a)(F, 'FETCH_ADDRESS_BOOK'),
-        R = { cursor: null, contacts: [], fetchStatus: A.a.NONE }
+        R = { cursor: null, contacts: [], fetchStatus: T.a.NONE }
       L.a.register(
         E()({}, I, function () {
           var e,
@@ -1849,22 +1849,22 @@
             n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
           switch (n.type) {
             case P.REQUEST:
-              return T()(T()({}, t), {}, { fetchStatus: A.a.LOADING })
+              return A()(A()({}, t), {}, { fetchStatus: T.a.LOADING })
             case P.SUCCESS:
               return (
                 (e = n.payload.entities.vcards ? Object.values(n.payload.entities.vcards) : []),
-                T()(
-                  T()({}, t),
+                A()(
+                  A()({}, t),
                   {},
                   {
                     contacts: [].concat(r()(t.contacts), r()(e)),
                     cursor: n.payload.result.next_cursor,
-                    fetchStatus: A.a.LOADED,
+                    fetchStatus: T.a.LOADED,
                   },
                 )
               )
             case P.FAILURE:
-              return T()(T()({}, t), {}, { error: n.payload, fetchStatus: A.a.FAILED })
+              return A()(A()({}, t), {}, { error: n.payload, fetchStatus: T.a.FAILED })
             default:
               return t
           }
@@ -1898,7 +1898,7 @@
           deleteContacts: y.b,
           fetchContactsIfNeeded: function (e) {
             return function (t, n) {
-              return x(n()) === A.a.LOADED ? Promise.resolve() : t(M(e))
+              return x(n()) === T.a.LOADED ? Promise.resolve() : t(M(e))
             }
           },
           fetchContactsNext: function (e) {
@@ -1907,7 +1907,7 @@
                 r = (function (e) {
                   return e[I].cursor
                 })(a)
-              return r && x(a) === A.a.LOADED ? t(M(T()(T()({}, e), {}, { cursor: r }))) : Promise.resolve()
+              return r && x(a) === T.a.LOADED ? t(M(A()(A()({}, e), {}, { cursor: r }))) : Promise.resolve()
             }
           },
         },
@@ -1933,10 +1933,10 @@
         ae = n.n(ne),
         re = { page: 'settings', section: 'contacts_dashboard' },
         oe = ae.a.bbcafbd9,
-        ie = _.a.createElement(
+        ie = g.a.createElement(
           ae.a.I18NFormatMessage,
           { $i18n: 'ec152666' },
-          _.a.createElement(
+          g.a.createElement(
             X.b,
             { link: 'https://help.twitter.com/using-twitter/upload-your-contacts-to-search-for-friends' },
             ae.a.b8dd5e4d,
@@ -1962,7 +1962,7 @@
                 var t = e.props,
                   n = t.contacts,
                   a = t.fetchStatus
-                return _.a.createElement(j.a, {
+                return g.a.createElement(j.a, {
                   assumedItemHeight: 70,
                   cacheKey: 'CONTACTS_DASHBOARD',
                   footer: e._renderFooter(a),
@@ -1980,31 +1980,31 @@
                   c = e._getContactProperties(o.get('tel')),
                   s = e._getContactProperties(o.get('email')),
                   l = [].concat(r()(s), r()(c))
-                return _.a.createElement(
+                return g.a.createElement(
                   q.a,
                   { key: n, style: [[W.a.infoText, W.a.bottomBorder], fe.contactContainer] },
-                  _.a.createElement(Q.a, { Icon: K.a, color: 'neutral', style: fe.personIcon }),
-                  _.a.createElement(
+                  g.a.createElement(Q.a, { Icon: K.a, color: 'neutral', style: fe.personIcon }),
+                  g.a.createElement(
                     q.a,
                     null,
-                    _.a.createElement(X.b, null, i),
+                    g.a.createElement(X.b, null, i),
                     l
                       ? l.map(function (e) {
-                          return _.a.createElement(X.b, { color: 'gray700', key: e, size: 'subtext2' }, e)
+                          return g.a.createElement(X.b, { color: 'gray700', key: e, size: 'subtext2' }, e)
                         })
                       : null,
                     a
-                      ? _.a.createElement(X.b, { color: 'gray700', size: 'subtext2' }, 'Imported from '.concat(a))
+                      ? g.a.createElement(X.b, { color: 'gray700', size: 'subtext2' }, 'Imported from '.concat(a))
                       : null,
                   ),
                 )
               }),
               E()(u()(e), '_renderFooter', function (e) {
-                return e === A.a.LOADING
-                  ? _.a.createElement(
+                return e === T.a.LOADING
+                  ? g.a.createElement(
                       q.a,
                       { style: fe.loadingContainer },
-                      _.a.createElement(H.a, { fetchStatus: e, render: ee.a }),
+                      g.a.createElement(H.a, { fetchStatus: e, render: ee.a }),
                     )
                   : null
               }),
@@ -2045,16 +2045,16 @@
                     n = e.fetchContactsIfNeeded,
                     a = e.fetchStatus,
                     r = e.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     G.c,
                     { namespace: re },
-                    _.a.createElement(
+                    g.a.createElement(
                       V.a,
                       null,
-                      _.a.createElement(
+                      g.a.createElement(
                         z.a,
                         { location: r, title: oe },
-                        _.a.createElement(g.a, {
+                        g.a.createElement(_.a, {
                           confirmationSheetConfirmButtonLabel: se.confirmButtonLabel,
                           confirmationSheetConfirmButtonType: 'destructiveFilled',
                           confirmationSheetHeadline: se.headline,
@@ -2062,11 +2062,11 @@
                           label: ce,
                           onConfirmationSheetConfirm: this._handleRemoveContacts,
                         }),
-                        _.a.createElement(Y.a, null, ie),
-                        _.a.createElement(J.a, null),
-                        _.a.createElement(B.a, {
+                        g.a.createElement(Y.a, null, ie),
+                        g.a.createElement(J.a, null),
+                        g.a.createElement(B.a, {
                           fetch: n,
-                          fetchStatus: t.length > 0 ? A.a.LOADED : a,
+                          fetchStatus: t.length > 0 ? T.a.LOADED : a,
                           render: this._renderTimeline,
                         }),
                       ),
@@ -2077,7 +2077,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(de, 'contextType', $.a)
       var fe = Z.a.create(function (e) {
         return {
@@ -2108,18 +2108,18 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('3XMw'),
-        _ = n.n(b),
-        g = n('7FtF'),
+        g = n.n(b),
+        _ = n('7FtF'),
         y = n('iCwC'),
         v = n('MWbm'),
         S = n('t62R'),
         w = n('6vad'),
         C = n('p+r5'),
-        T = _.a.a999cb72,
-        A = _.a.dec3c9b8,
-        k = _.a.acc20811,
-        L = _.a.d1091f50,
-        O = _.a.i2209530,
+        A = g.a.a999cb72,
+        T = g.a.dec3c9b8,
+        k = g.a.acc20811,
+        L = g.a.d1091f50,
+        O = g.a.i2209530,
         I = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -2163,7 +2163,7 @@
                       L,
                     )
                   return E.a.createElement(
-                    g.a,
+                    _.a,
                     { location: t, onSubmit: this._handleSubmit, submitLabel: r, submitType: o, title: a },
                     E.a.createElement(w.b, { text: a }),
                     E.a.createElement(
@@ -2173,7 +2173,7 @@
                     ),
                     E.a.createElement(C.a, {
                       helperText: i,
-                      label: A,
+                      label: T,
                       name: 'current_password',
                       onChange: this._handleChange,
                       type: 'password',
@@ -2190,7 +2190,7 @@
                     n = e.location,
                     a = e.promptForPassword,
                     r = e.title
-                  return a ? this._renderPasswordPrompt() : E.a.createElement(g.a, { location: n, title: r }, t || null)
+                  return a ? this._renderPasswordPrompt() : E.a.createElement(_.a, { location: n, title: r }, t || null)
                 },
               },
             ]),
@@ -2201,7 +2201,7 @@
         children: null,
         promptForPassword: !1,
         reenterPasswordLabel: k,
-        saveChangesHeaderLabel: T,
+        saveChangesHeaderLabel: A,
         submitLabel: O,
       })
     },
@@ -2226,8 +2226,8 @@
         m = (n('2G9S'), n('z84I'), n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('ERkP')),
         E = n.n(m),
         b = n('k49u'),
-        _ = n('1YZw'),
-        g = n('55TG'),
+        g = n('1YZw'),
+        _ = n('55TG'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = n('P1r1'),
@@ -2238,19 +2238,19 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: _.b,
+              addToast: g.b,
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT',
               ),
               deleteSSOConnection: S.d,
               fetchDevicesIfNeeded: w.fetchDevicesIfNeeded,
               fetchSettingsIfNeeded: S.f,
-              verifyPassword: g.b,
+              verifyPassword: _.b,
             }
           })
           .withAnalytics({ page: 'settings', section: 'connected_accounts', component: 'delete_sso_connection' }),
-        T = n('3XMw'),
-        A = n.n(T),
+        A = n('3XMw'),
+        T = n.n(A),
         k = n('yoO3'),
         L = n('iCwC'),
         O = n('MWbm'),
@@ -2260,12 +2260,12 @@
         R = n('mw9i'),
         x = n('/yvb'),
         M = n('rHpw'),
-        N = A.a.dec3c9b8,
-        D = A.a.d1091f50,
-        U = A.a.i4efb2e3,
-        H = A.a.g9677c6d,
-        K = A.a.c8cb0b4c,
-        j = A.a.fe36fe1f,
+        N = T.a.dec3c9b8,
+        D = T.a.d1091f50,
+        U = T.a.i4efb2e3,
+        H = T.a.g9677c6d,
+        K = T.a.c8cb0b4c,
+        j = T.a.fe36fe1f,
         V = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -2390,13 +2390,13 @@
         Z = n('6Rrp'),
         $ = n('jmcQ'),
         ee = n('iKTg'),
-        te = A.a.h1abfbcd,
-        ne = A.a.a45d71b8,
-        ae = A.a.d84ed6b1,
-        re = A.a.i51130d4,
-        oe = A.a.e28901f2,
-        ie = A.a.cf8560be,
-        ce = A.a.ead2429e,
+        te = T.a.h1abfbcd,
+        ne = T.a.a45d71b8,
+        ae = T.a.d84ed6b1,
+        re = T.a.i51130d4,
+        oe = T.a.e28901f2,
+        ie = T.a.cf8560be,
+        ce = T.a.ead2429e,
         se = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -2591,7 +2591,7 @@
           return b
         }),
         n.d(t, 'g', function () {
-          return _
+          return g
         })
       var a = n('yiKp'),
         r = n.n(a),
@@ -2704,7 +2704,7 @@
         b = Object(i.a)(function (e) {
           return h({ featureSwitches: e, displayLocation: u.WebSidebar })
         }),
-        _ = function () {
+        g = function () {
           return function (e, t) {
             return e(
               Object(s.t)(t())
@@ -2739,15 +2739,15 @@
         m = n('yiKp'),
         E = n.n(m),
         b = n('ZNT5'),
-        _ = n('RhWx'),
-        g = n.n(_),
+        g = n('RhWx'),
+        _ = n.n(g),
         y = n('T0aG'),
         v = n.n(y),
         S = n('m3Bd'),
         w = n.n(S),
         C = (n('jwue'), n('7x/C'), n('+oxZ'), n('vWJI')),
-        T = n('PiaM'),
-        A = n('9/1j'),
+        A = n('PiaM'),
+        T = n('9/1j'),
         k = n('Re5t'),
         L = ['cursor'],
         O = function (e) {
@@ -2758,9 +2758,9 @@
             var r = n && 'object' === v()(n) ? n.sortValue : Date.now(),
               o = r - 1
             e.result.users.forEach(function (e) {
-              a.push(T.l({ id: e, sortIndex: ''.concat(o), displayType: k.a.UserDetailed })), (o -= 1)
+              a.push(A.l({ id: e, sortIndex: ''.concat(o), displayType: k.a.UserDetailed })), (o -= 1)
             }),
-              a.push.apply(a, g()(I(e, o)))
+              a.push.apply(a, _()(I(e, o)))
           }
           return F(a, e.entities, P)
         },
@@ -2781,7 +2781,7 @@
             globalObjects: t,
             timeline: {
               responseObjects: n,
-              instructions: e.length ? [{ type: A.a.AddEntries, parameters: { entries: e } }] : [],
+              instructions: e.length ? [{ type: T.a.AddEntries, parameters: { entries: e } }] : [],
             },
           }
         },
@@ -2882,7 +2882,7 @@
     EPsT: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return g
+        return _
       })
       var a = n('VrFO'),
         r = n.n(a),
@@ -2899,8 +2899,8 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('jtO7'),
-        _ = n('eb3s'),
-        g = (function (e) {
+        g = n('eb3s'),
+        _ = (function (e) {
           u()(n, e)
           var t = f()(n)
           function n(e) {
@@ -2939,7 +2939,7 @@
                     null,
                     E.a.createElement(b.a, { align: t, color: n, label: c, onPress: this._handleClick }),
                     this.state.showConfirmation
-                      ? E.a.createElement(_.a, {
+                      ? E.a.createElement(g.a, {
                           confirmButtonLabel: a,
                           confirmButtonType: r,
                           headline: o,
@@ -2955,7 +2955,7 @@
             n
           )
         })(E.a.Component)
-      p()(g, 'defaultProps', { color: 'red500', align: 'center' })
+      p()(_, 'defaultProps', { color: 'red500', align: 'center' })
     },
     EyIn: function (e, t, n) {
       'use strict'
@@ -2969,7 +2969,7 @@
           return b
         }),
         n.d(t, 'i', function () {
-          return _
+          return g
         }),
         n.d(t, 'd', function () {
           return F
@@ -2978,7 +2978,7 @@
           return P
         }),
         n.d(t, 'b', function () {
-          return g
+          return _
         }),
         n.d(t, 'c', function () {
           return y
@@ -3023,10 +3023,10 @@
         b = function (e) {
           return e.trends.locations.woeTrendsLocations
         },
-        _ = function (e) {
+        g = function (e) {
           return e.trends.locations.woeTrendsFetchStatus
         },
-        g = function (e) {
+        _ = function (e) {
           return function (t, n, a) {
             var r = a.api
             return u.b(t, { params: e, request: r.Settings.fetchPlaceTrendsLocations })({
@@ -3038,7 +3038,7 @@
         y = function () {
           return function (e, t, n) {
             n.api
-            return _(t()) === d.a.LOADED ? Promise.resolve() : e(v())
+            return g(t()) === d.a.LOADED ? Promise.resolve() : e(v())
           }
         },
         v = function () {
@@ -3053,8 +3053,8 @@
         S = n('m3Bd'),
         w = n.n(S),
         C = (n('z84I'), n('RqPI')),
-        T = n('YeIG'),
-        A = n('BxsD'),
+        A = n('YeIG'),
+        T = n('BxsD'),
         k = ['places'],
         L = Object.freeze({
           REQUEST: 'rweb/trends/UPDATE_TRENDS_SETTINGS_REQUEST',
@@ -3091,7 +3091,7 @@
         x = function (e) {
           return function (t, n, a) {
             var r = a.api
-            if (Object(T.a)(e)) return Promise.resolve()
+            if (Object(A.a)(e)) return Promise.resolve()
             e.places
             var o = w()(e, k),
               i = l()({}, o)
@@ -3108,7 +3108,7 @@
                   meta: e,
                 })
                 .then(function () {
-                  return t(Object(A.g)())
+                  return t(Object(T.g)())
                 })
             )
           }
@@ -3164,10 +3164,10 @@
         return b
       }),
         n.d(t, 'b', function () {
-          return _
+          return g
         }),
         n.d(t, 'a', function () {
-          return g
+          return _
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -3207,14 +3207,14 @@
       var b = function (e) {
           return e[f].languages
         },
-        _ = function (e, t) {
+        g = function (e, t) {
           var n = Object(l.c)(t).toLowerCase(),
             a = e[f].languages.find(function (e) {
               return e.code === n
             })
           return a ? a.name : null
         },
-        g = function () {
+        _ = function () {
           return function (e, t) {
             return t()[f].fetchStatus === s.a.LOADED ? Promise.resolve() : e(y())
           }
@@ -3343,8 +3343,8 @@
         m = n('csss'),
         E = u.a.hee41732,
         b = u.a.e75f25a8,
-        _ = u.a.bcd81cab,
-        g = u.a.da867c58,
+        g = u.a.bcd81cab,
+        _ = u.a.da867c58,
         y = u.a.i859a9d3,
         v = { page: 'settings', section: 'preferences' }
       function S(e) {
@@ -3358,9 +3358,9 @@
             null,
             r.a.createElement(
               h.a,
-              { location: n, title: _ },
+              { location: n, title: g },
               r.a.createElement(p.a, {
-                description: g,
+                description: _,
                 learnMoreLabel: y,
                 learnMoreLink: 'https://help.twitter.com/managing-your-account/notifications-on-mobile-devices',
               }),
@@ -3433,21 +3433,21 @@
           n('ERkP')),
         E = n.n(m),
         b = (n('KqXw'), n('WNMA'), n('dZRF')),
-        _ = n('rxPX'),
-        g = n('0KEI'),
+        g = n('rxPX'),
+        _ = n('0KEI'),
         y = function (e, t) {
           return t.match.params.appId
         },
         v = function (e, t) {
           return b.a.selectAppsById(e, t.match.params.appId)
         },
-        S = Object(_.a)()
+        S = Object(g.a)()
           .propsFromState(function () {
             return { appId: y, fetchStatus: b.d, details: v }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)('APPLICATION_DETAIL'),
+              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)('APPLICATION_DETAIL'),
               fetchApplication: b.c,
               revokeApplication: b.a.revokeApplication,
               revokeOauth2Token: b.a.revokeOauth2Token,
@@ -3456,13 +3456,13 @@
           .withAnalytics({ page: 'settings', section: 'application_detail' }),
         w = n('v//M'),
         C = n('3XMw'),
-        T = n.n(C),
-        A = n('oQhu'),
+        A = n.n(C),
+        T = n('oQhu'),
         k = n('yoO3'),
         L = n('jtO7'),
         O = n('MWbm'),
-        I = T.a.da6cdba7,
-        F = T.a.ef1d3dcc,
+        I = A.a.da6cdba7,
+        F = A.a.ef1d3dcc,
         P = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -3510,21 +3510,21 @@
         j = n('htQn'),
         V = n('3Ohe'),
         B = n('U+bB'),
-        G = T.a.g8d1b99b,
-        Y = T.a.eafcc76a,
-        z = T.a.j3998a15,
-        W = T.a.a6845663,
-        q = T.a.b2347f7b,
-        X = T.a.e1fda16d,
-        Q = T.a.da1201c6,
-        J = T.a.gb8d09b9,
-        Z = T.a.g6dc09af,
-        $ = T.a.a6e6e897,
-        ee = T.a.cde3b9ae,
-        te = T.a.g0d78139,
-        ne = T.a.c9b35b9e,
-        ae = T.a.e0191264,
-        re = T.a.b73e1e89,
+        G = A.a.g8d1b99b,
+        Y = A.a.eafcc76a,
+        z = A.a.j3998a15,
+        W = A.a.a6845663,
+        q = A.a.b2347f7b,
+        X = A.a.e1fda16d,
+        Q = A.a.da1201c6,
+        J = A.a.gb8d09b9,
+        Z = A.a.g6dc09af,
+        $ = A.a.a6e6e897,
+        ee = A.a.cde3b9ae,
+        te = A.a.g0d78139,
+        ne = A.a.c9b35b9e,
+        ae = A.a.e0191264,
+        re = A.a.b73e1e89,
         oe = 'https://support.twitter.com/articles/20170805',
         ie = 'https://support.twitter.com/forms/platform',
         ce = 'oauth1',
@@ -3541,7 +3541,7 @@
               p()(
                 s()(e),
                 '_getSortedCanViewScopes',
-                Object(A.a)(function (e) {
+                Object(T.a)(function (e) {
                   return e
                     .filter(function (e) {
                       return 'can_view' === e.category
@@ -3554,7 +3554,7 @@
               p()(
                 s()(e),
                 '_getSortedCanDoScopes',
-                Object(A.a)(function (e) {
+                Object(T.a)(function (e) {
                   return e
                     .filter(function (e) {
                       return 'can_do' === e.category
@@ -3872,8 +3872,8 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('yiKp'),
-        _ = n.n(b),
-        g = (n('yH/f'), n('oEOe')),
+        g = n.n(b),
+        _ = (n('yH/f'), n('oEOe')),
         y = n('kGix'),
         v = n('Ssj5'),
         S = 'temporaryPassword',
@@ -3889,27 +3889,27 @@
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case w.REQUEST:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.LOADING })
+              return g()(g()({}, e), {}, { fetchStatus: y.a.LOADING })
             case w.SUCCESS:
               var n = t.payload && t.payload.temporary_password
-              return _()(_()({}, e), {}, { temporaryPassword: n, fetchStatus: y.a.LOADED })
+              return g()(g()({}, e), {}, { temporaryPassword: n, fetchStatus: y.a.LOADED })
             case w.FAILURE:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.FAILED })
+              return g()(g()({}, e), {}, { fetchStatus: y.a.FAILED })
             default:
               return e
           }
         }),
       )
-      var T = function (e) {
+      var A = function (e) {
           return e[S].temporaryPassword
         },
-        A = function (e) {
+        T = function (e) {
           return e[S].fetchStatus
         },
         k = function () {
           return function (e, t, n) {
             var a = n.api
-            return Object(g.b)(e, { request: a.Settings.fetchTemporaryPassword })({
+            return Object(_.b)(e, { request: a.Settings.fetchTemporaryPassword })({
               actionTypes: w,
               context: 'FETCH_TEMPORARY_PASSWORD',
             })
@@ -3920,7 +3920,7 @@
         I = n('0KEI'),
         F = Object(O.a)()
           .propsFromState(function () {
-            return { temporaryPassword: T, fetchStatus: A }
+            return { temporaryPassword: A, fetchStatus: T }
           })
           .propsFromActions(function () {
             return {
@@ -4051,7 +4051,7 @@
     Rdmj: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return _e
+        return ge
       })
       var a,
         r = n('97Jx'),
@@ -4068,8 +4068,8 @@
         m = n.n(p),
         E = n('KEM+'),
         b = n.n(E),
-        _ = (n('2G9S'), n('ERkP')),
-        g = n.n(_),
+        g = (n('2G9S'), n('ERkP')),
+        _ = n.n(g),
         y = n('PFE4'),
         v = n('rxPX'),
         S = Object(v.a)().propsFromActions(function () {
@@ -4077,8 +4077,8 @@
         }),
         w = n('yiKp'),
         C = n.n(w),
-        T = n('EbOo'),
-        A = n('1YZw'),
+        A = n('EbOo'),
+        T = n('1YZw'),
         k = n('G6rE'),
         L = n('0KEI'),
         O = function (e, t) {
@@ -4090,7 +4090,7 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: A.b,
+              addToast: T.b,
               block: k.e.block,
               createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('AUTOBLOCK_BUTTON'),
               unblock: k.e.unblock,
@@ -4122,7 +4122,7 @@
                 (e = t.call.apply(t, [this].concat(r))),
                 b()(d()(e), 'state', { showBlockConfirmation: !1, showRemoveAutoblockConfirmation: !1 }),
                 b()(d()(e), '_renderMenu', function (t) {
-                  return g.a.createElement(x.a, {
+                  return _.a.createElement(x.a, {
                     items: e._getActionItems(),
                     onCloseRequested: t,
                     shouldCloseOnClick: !0,
@@ -4162,7 +4162,7 @@
                     r = t.createLocalApiErrorHandler
                   a(t.userId).then(function (t) {
                     n({ text: B }), e._scribeAction('block')
-                  }, r(T.a))
+                  }, r(A.a))
                 }),
                 b()(d()(e), '_handleRemoveAutoblock', function () {
                   e.setState({ showRemoveAutoblockConfirmation: !1 })
@@ -4181,10 +4181,10 @@
                 {
                   key: 'render',
                   value: function () {
-                    return g.a.createElement(
-                      g.a.Fragment,
+                    return _.a.createElement(
+                      _.a.Fragment,
                       null,
-                      g.a.createElement(
+                      _.a.createElement(
                         M.a,
                         { accessibilityLabel: H, renderMenu: this._renderMenu, type: 'destructiveFilled' },
                         H,
@@ -4235,7 +4235,7 @@
               ]),
               n
             )
-          })(g.a.Component),
+          })(_.a.Component),
         ),
         Y = n('PnFR'),
         z = n('8UdT'),
@@ -4250,7 +4250,7 @@
           })
           .propsFromActions(function () {
             return {
-              addToast: A.b,
+              addToast: T.b,
               block: k.e.block,
               createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('UNBLOCK_BUTTON'),
               unblock: k.e.unblock,
@@ -4286,7 +4286,7 @@
                       }, r(R.a))
                     : a(c).then(function (t) {
                         n({ text: te }), e._scribeAction('block')
-                      }, r(T.a))
+                      }, r(A.a))
                 }),
                 e
               )
@@ -4299,7 +4299,7 @@
                     var e = this.props.user
                     if (e) {
                       var t = e.blocking ? Z : $
-                      return g.a.createElement(
+                      return _.a.createElement(
                         M.a,
                         {
                           accessibilityLabel: t,
@@ -4326,7 +4326,7 @@
               ]),
               n
             )
-          })(g.a.Component),
+          })(_.a.Component),
         ),
         ae = n('Ka9G'),
         re = C()(
@@ -4341,7 +4341,7 @@
               decoration: function (e) {
                 var t = e.isAutoblocking,
                   n = e.userId
-                return t ? g.a.createElement(G, { userId: n }) : g.a.createElement(ne, { userId: n })
+                return t ? _.a.createElement(G, { userId: n }) : _.a.createElement(ne, { userId: n })
               },
             }),
           ),
@@ -4359,10 +4359,10 @@
         he = P.a.a5f32aa2,
         pe = P.a.ef731b13,
         me = P.a.i859a9d3,
-        Ee = g.a.createElement(
+        Ee = _.a.createElement(
           P.a.I18NFormatMessage,
           { $i18n: 'ab3bf5a7' },
-          g.a.createElement(ue.b, { link: 'https://support.twitter.com/articles/117063' }, P.a.e554ba82),
+          _.a.createElement(ue.b, { link: 'https://support.twitter.com/articles/117063' }, P.a.e554ba82),
         ),
         be = (function (e) {
           h()(n, e)
@@ -4397,8 +4397,8 @@
                 '_getMemoizedEmptyStateRenderer',
                 Object(oe.a)(function (e, t, n, a) {
                   return function () {
-                    var e = g.a.createElement('div', null, a, ' ', t && g.a.createElement(ue.b, { link: t }, me))
-                    return g.a.createElement(de.a, { header: n, message: e })
+                    var e = _.a.createElement('div', null, a, ' ', t && _.a.createElement(ue.b, { link: t }, me))
+                    return _.a.createElement(de.a, { header: n, message: e })
                   }
                 }),
               ),
@@ -4416,18 +4416,18 @@
               {
                 key: 'render',
                 value: function () {
-                  return g.a.createElement(
+                  return _.a.createElement(
                     ie.a,
                     null,
                     'autoblock' === this.props.blockType
                       ? null
-                      : g.a.createElement(
+                      : _.a.createElement(
                           'div',
                           null,
-                          g.a.createElement(le.a, null, Ee),
-                          g.a.createElement(fe.a, null),
+                          _.a.createElement(le.a, null, Ee),
+                          _.a.createElement(fe.a, null),
                         ),
-                    g.a.createElement(ce.a, {
+                    _.a.createElement(ce.a, {
                       entryConfiguration: re,
                       loadingAccessibilityLabel: pe,
                       module: this._getLegacyModule(),
@@ -4440,18 +4440,18 @@
             ]),
             n
           )
-        })(g.a.Component),
-        _e = function (e) {
+        })(_.a.Component),
+        ge = function (e) {
           var t = e.blockType,
             n = e.emptyStateMessage,
             a = e.emptyStateTitle,
             r = e.scribeNamespace,
             i = e.supportUrl
           return S(function (e) {
-            return g.a.createElement(
+            return _.a.createElement(
               se.c,
               { namespace: r },
-              g.a.createElement(
+              _.a.createElement(
                 be,
                 o()({}, e, { blockType: t, emptyStateMessage: n, emptyStateTitle: a, supportUrl: i }),
               ),
@@ -4637,14 +4637,14 @@
         m = (n('2G9S'), n('ho0z'), n('ERkP')),
         E = n.n(m),
         b = n('k49u'),
-        _ = n('P1r1'),
-        g = n('EyIn'),
+        g = n('P1r1'),
+        _ = n('EyIn'),
         y = n('+OgG'),
         v = n('rxPX'),
         S = n('0KEI'),
         w = Object(v.a)()
           .propsFromState(function () {
-            return { allSettings: _.g, placeTrendSettings: g.d, placeTrendSettingsFetchStatus: g.e }
+            return { allSettings: g.g, placeTrendSettings: _.d, placeTrendSettingsFetchStatus: _.e }
           })
           .adjustStateProps(function (e) {
             var t = e.allSettings,
@@ -4662,15 +4662,15 @@
               createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_TRENDS_SCREEN',
               ),
-              fetchPlaceTrendSettingsIfNeeded: g.a,
+              fetchPlaceTrendSettingsIfNeeded: _.a,
               updateWoeTrendSettings: y.a,
-              updatePlaceTrendSettings: g.j,
+              updatePlaceTrendSettings: _.j,
             }
           })
           .withAnalytics({ page: 'guide', section: 'settings' }),
         C = n('v//M'),
-        T = n('LVU8'),
-        A = n('jHSc'),
+        A = n('LVU8'),
+        T = n('jHSc'),
         k = n('3XMw'),
         L = n.n(k),
         O = n('OySi'),
@@ -4738,7 +4738,7 @@
                   c = r.updatePlaceTrendSettings,
                   s = r.updateWoeTrendSettings,
                   l = p()({}, t, n),
-                  u = ((a = {}), p()(a, b.a.AppInReadOnlyMode, { customAction: T.b }), p()(a, 'showToast', !0), a)
+                  u = ((a = {}), p()(a, b.a.AppInReadOnlyMode, { customAction: A.b }), p()(a, 'showToast', !0), a)
                 e._usePlaceTrendSettings ? c(l).catch(i(u)) : s(l).catch(i(u)),
                   o.scribe({ element: 'personalized_trends', action: 'toggle' })
               }),
@@ -4836,7 +4836,7 @@
                     n = e.location.pathname === re,
                     a = this._usePlaceTrendSettings && n ? K : H
                   return E.a.createElement(
-                    A.b,
+                    T.b,
                     { history: t, title: a },
                     this._usePlaceTrendSettings ? this._renderPlaceLoader() : this._renderWoeContent(),
                     this._policySectionUrl ? this._renderPolicySection() : null,
@@ -4883,17 +4883,17 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('P1r1'),
-        _ = n('hqKg'),
-        g = n('0KEI'),
+        g = n('hqKg'),
+        _ = n('0KEI'),
         y = n('oEGd'),
-        v = Object(_.createSelector)(b.g, function (e) {
+        v = Object(g.createSelector)(b.g, function (e) {
           return {
             discoverableByEmail: e.discoverable_by_email,
             discoverableByMobilePhone: e.discoverable_by_mobile_phone,
           }
         }),
         S = {
-          createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(
+          createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
             'SETTINGS_CONTACTS_SCREEN',
           ),
           deleteContacts: b.b,
@@ -4901,8 +4901,8 @@
         },
         w = Object(y.f)(v, S),
         C = n('3XMw'),
-        T = n.n(C),
-        A = n('yoO3'),
+        A = n.n(C),
+        T = n('yoO3'),
         k = n('7JQg'),
         L = n('7FtF'),
         O = n('RKmr'),
@@ -4910,19 +4910,19 @@
         F = n('e0ey'),
         P = n('0yYu'),
         R = n('csss'),
-        x = T.a.fd4d9068,
-        M = T.a.ab987f3b,
-        N = T.a.b033248c,
-        D = T.a.a904e0ee,
-        U = T.a.ebc41952,
-        H = T.a.f40a6338,
-        K = T.a.ac9314aa,
-        j = T.a.d86a220e,
+        x = A.a.fd4d9068,
+        M = A.a.ab987f3b,
+        N = A.a.b033248c,
+        D = A.a.a904e0ee,
+        U = A.a.ebc41952,
+        H = A.a.f40a6338,
+        K = A.a.ac9314aa,
+        j = A.a.d86a220e,
         V = 'https://help.twitter.com/safety-and-security/email-and-phone-discoverability-settings',
-        B = T.a.ac77c66c,
-        G = T.a.bbcafbd9,
-        Y = T.a.jadf483e,
-        z = T.a.i859a9d3,
+        B = A.a.ac77c66c,
+        G = A.a.bbcafbd9,
+        Y = A.a.jadf483e,
+        z = A.a.i859a9d3,
         W = { page: 'settings', section: 'contacts' },
         q = (function (e) {
           u()(n, e)
@@ -4959,7 +4959,7 @@
                     k.c,
                     { namespace: W },
                     E.a.createElement(
-                      A.a,
+                      T.a,
                       null,
                       E.a.createElement(
                         L.a,
@@ -5024,8 +5024,8 @@
         m = (n('KqXw'), n('WNMA'), n('7xRU'), n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('yiKp'),
-        _ = n.n(b),
-        g = (n('yH/f'), n('oEOe')),
+        g = n.n(b),
+        _ = (n('yH/f'), n('oEOe')),
         y = n('kGix'),
         v = n('Ssj5'),
         S = 'backupCode',
@@ -5041,27 +5041,27 @@
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case w.REQUEST:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.LOADING })
+              return g()(g()({}, e), {}, { fetchStatus: y.a.LOADING })
             case w.SUCCESS:
               var n = t.payload && t.payload.codes
-              return _()(_()({}, e), {}, { backupCode: n && n[0], fetchStatus: y.a.LOADED })
+              return g()(g()({}, e), {}, { backupCode: n && n[0], fetchStatus: y.a.LOADED })
             case w.FAILURE:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.FAILED })
+              return g()(g()({}, e), {}, { fetchStatus: y.a.FAILED })
             default:
               return e
           }
         }),
       )
-      var T = function (e) {
+      var A = function (e) {
           return e.backupCode.backupCode
         },
-        A = function (e) {
+        T = function (e) {
           return e.backupCode.fetchStatus
         },
         k = function () {
           return function (e, t, n) {
             var a = n.api
-            return Object(g.b)(e, { request: a.Settings.fetchBackupCode })({
+            return Object(_.b)(e, { request: a.Settings.fetchBackupCode })({
               actionTypes: w,
               context: 'FETCH_BACKUP_CODE',
             })
@@ -5070,7 +5070,7 @@
         L = function () {
           return function (e, t, n) {
             var a = n.api
-            return Object(g.b)(e, { request: a.Settings.fetchNewBackupCode })({
+            return Object(_.b)(e, { request: a.Settings.fetchNewBackupCode })({
               actionTypes: w,
               context: 'FETCH_BACKUP_CODE',
             })
@@ -5081,7 +5081,7 @@
         F = n('0KEI'),
         P = Object(I.a)()
           .propsFromState(function () {
-            return { backupCode: T, fetchStatus: A }
+            return { backupCode: A, fetchStatus: T }
           })
           .propsFromActions(function () {
             return {
@@ -5248,8 +5248,8 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('NeAX'),
-        _ = n('rxPX'),
-        g = Object(_.a)()
+        g = n('rxPX'),
+        _ = Object(g.a)()
           .propsFromState(function () {
             return { personalizationSettings: b.selectUserPreferences }
           })
@@ -5259,8 +5259,8 @@
         S = n.n(v),
         w = n('yoO3'),
         C = n('7FtF'),
-        T = 'exploreHeader',
-        A = n('v6aA'),
+        A = 'exploreHeader',
+        T = n('v6aA'),
         k = n('6vad'),
         L = n('csss'),
         O = n('0yYu'),
@@ -5322,7 +5322,7 @@
                     E.a.createElement(
                       C.a,
                       { location: e, screenType: 'primaryDetail', title: F },
-                      E.a.createElement(k.b, { testID: T, text: P }),
+                      E.a.createElement(k.b, { testID: A, text: P }),
                       E.a.createElement(L.a, { label: D, link: '/settings/search' }),
                       E.a.createElement(L.a, { label: this._trendsLabel, link: t }),
                       this._contentLanguageSettingsEnabled
@@ -5354,8 +5354,8 @@
             n
           )
         })(E.a.Component)
-      p()(V, 'contextType', A.a)
-      t.default = g(V)
+      p()(V, 'contextType', T.a)
+      t.default = _(V)
     },
     X1GS: function (e, t, n) {
       'use strict'
@@ -5415,10 +5415,10 @@
           return C
         }),
         n.d(t, 'f', function () {
-          return T
+          return A
         }),
         n.d(t, 'd', function () {
-          return A
+          return T
         }),
         n.d(t, 'e', function () {
           return I
@@ -5453,8 +5453,8 @@
         m = c.a(h, 'FETCH_MUTED_KEYWORDS'),
         E = c.a(h, 'ADD_MUTED_KEYWORD'),
         b = c.a(h, 'DELETE_MUTED_KEYWORD'),
-        _ = c.a(h, 'UPDATE_MUTED_KEYWORD'),
-        g = {
+        g = c.a(h, 'UPDATE_MUTED_KEYWORD'),
+        _ = {
           defaultOptions: {
             id: '',
             keyword: '',
@@ -5468,7 +5468,7 @@
           mutedKeywords: [],
         }
       function y() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
           t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
         switch (t.type) {
           case L:
@@ -5486,7 +5486,7 @@
             )
           case E.SUCCESS:
           case b.SUCCESS:
-          case _.SUCCESS:
+          case g.SUCCESS:
             return i()(i()({}, e), {}, { mutedKeywords: t.payload.muted_keywords })
           case P:
             return i()(i()({}, e), {}, { defaultOptions: t.payload.default_options })
@@ -5510,10 +5510,10 @@
             return e.id === t
           })
         },
-        T = function (e, t) {
+        A = function (e, t) {
           return e.mutedKeywords.defaultOptions
         },
-        A = function () {
+        T = function () {
           return function (e, t, n) {
             var a = n.userPersistence
             return v(t()).length
@@ -5606,7 +5606,7 @@
           return function (t, n, a) {
             var r = a.api
             return c.b(t, { params: e, request: r.MuteKeywordSettings.updateMutedKeyword })({
-              actionTypes: _,
+              actionTypes: g,
               context: 'ACTION_UPDATE_MUTED_KEYWORD',
               meta: { params: e },
             })
@@ -5673,12 +5673,12 @@
           n('ERkP')),
         E = n.n(m),
         b = n('wvRX'),
-        _ = n('hqKg'),
-        g = n('QK5w'),
+        g = n('hqKg'),
+        _ = n('QK5w'),
         y = n('0KEI'),
         v = n('oEGd'),
-        S = Object(_.createSelector)(
-          g.a,
+        S = Object(g.createSelector)(
+          _.a,
           function (e, t) {
             return t.location && t.location.state && t.location.state.bounce_location
           },
@@ -5694,8 +5694,8 @@
           fetchLoginVerificationSettings: b.e,
         },
         C = Object(v.f)(S, w),
-        T = n('kGix'),
-        A = n('jHSc'),
+        A = n('kGix'),
+        T = n('jHSc'),
         k = n('bPFD'),
         L = n('rHpw'),
         O = n('2qJZ'),
@@ -5710,7 +5710,7 @@
           return (r.search = ''.concat(r.search).concat(o).concat(F)), r.href
         },
         R = function (e, t, n) {
-          return e !== T.a.LOADED || !t || !n
+          return e !== A.a.LOADED || !t || !n
         },
         x = (function (e) {
           u()(n, e)
@@ -5781,7 +5781,7 @@
                   return R(a, n, t)
                     ? null
                     : E.a.createElement(
-                        A.b,
+                        T.b,
                         { backButtonType: 'close', backLocation: I, history: r, onBackClick: this._handleClose },
                         E.a.createElement(k.a, { allowForms: !0, src: P(t), style: [L.a.absoluteFill, M.iframe] }),
                       )
@@ -5817,39 +5817,39 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('yiKp'),
-        _ = n.n(b),
-        g = (n('7x/C'), n('JtPf'), n('oEOe')),
+        g = n.n(b),
+        _ = (n('7x/C'), n('JtPf'), n('oEOe')),
         y = n('kGix'),
         v = n('Ssj5'),
         S = 'notificationFilters',
         w = 'rweb/'.concat(S),
         C = 'rweb.'.concat(S),
-        T = g.a(w, 'FETCH_NOTIFICATION_FILTERS'),
-        A = g.a(w, 'ENABLE_NOTIFICATION_FILTER'),
-        k = g.a(w, 'DISABLE_NOTIFICATION_FILTER'),
+        A = _.a(w, 'FETCH_NOTIFICATION_FILTERS'),
+        T = _.a(w, 'ENABLE_NOTIFICATION_FILTER'),
+        k = _.a(w, 'DISABLE_NOTIFICATION_FILTER'),
         L = { fetchStatus: y.a.NONE, notificationFilters: {} }
       v.a.register(
         p()({}, S, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
           switch (t.type) {
-            case T.REQUEST:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.LOADING })
-            case T.FAILURE:
-              return _()(_()({}, e), {}, { fetchStatus: y.a.FAILED })
-            case T.SUCCESS:
-              return _()(_()({}, e), {}, { notificationFilters: t.payload, fetchStatus: y.a.LOADED })
             case A.REQUEST:
-              return _()(
-                _()({}, e),
+              return g()(g()({}, e), {}, { fetchStatus: y.a.LOADING })
+            case A.FAILURE:
+              return g()(g()({}, e), {}, { fetchStatus: y.a.FAILED })
+            case A.SUCCESS:
+              return g()(g()({}, e), {}, { notificationFilters: t.payload, fetchStatus: y.a.LOADED })
+            case T.REQUEST:
+              return g()(
+                g()({}, e),
                 {},
-                { notificationFilters: _()(_()({}, e.notificationFilters), {}, p()({}, t.meta.filterName, !0)) },
+                { notificationFilters: g()(g()({}, e.notificationFilters), {}, p()({}, t.meta.filterName, !0)) },
               )
             case k.REQUEST:
-              return _()(
-                _()({}, e),
+              return g()(
+                g()({}, e),
                 {},
-                { notificationFilters: _()(_()({}, e.notificationFilters), {}, p()({}, t.meta.filterName, !1)) },
+                { notificationFilters: g()(g()({}, e.notificationFilters), {}, p()({}, t.meta.filterName, !1)) },
               )
             default:
               return e
@@ -5869,7 +5869,7 @@
             return I(t()) === y.a.LOADED
               ? Promise.resolve()
               : a.get(C, 24e4).then(function (t) {
-                  return e(t ? { payload: t, type: T.SUCCESS } : P())
+                  return e(t ? { payload: t, type: A.SUCCESS } : P())
                 })
           }
         },
@@ -5877,44 +5877,38 @@
           return function (e, t, n) {
             var a = n.api,
               r = n.userPersistence
-            return g
-              .b(e, { request: a.Settings.fetchNotificationFilters })({
-                actionTypes: T,
-                context: 'FETCH_NOTIFICATION_FILTERS',
-              })
-              .then(function (e) {
-                return r.set(C, O(t())), e
-              })
+            return _.b(e, { request: a.Settings.fetchNotificationFilters })({
+              actionTypes: A,
+              context: 'FETCH_NOTIFICATION_FILTERS',
+            }).then(function (e) {
+              return r.set(C, O(t())), e
+            })
           }
         },
         R = function (e) {
           return function (t, n, a) {
             var r = a.api,
               o = a.userPersistence
-            return g
-              .c(t, { params: p()({}, e, !0), request: r.Settings.updateNotificationFilters })({
-                actionTypes: A,
-                context: 'ACTION_ENABLE_NOTIFICATION_FILTER',
-                meta: { filterName: e },
-              })
-              .then(function (e) {
-                return o.set(C, O(n())), e
-              })
+            return _.c(t, { params: p()({}, e, !0), request: r.Settings.updateNotificationFilters })({
+              actionTypes: T,
+              context: 'ACTION_ENABLE_NOTIFICATION_FILTER',
+              meta: { filterName: e },
+            }).then(function (e) {
+              return o.set(C, O(n())), e
+            })
           }
         },
         x = function (e) {
           return function (t, n, a) {
             var r = a.api,
               o = a.userPersistence
-            return g
-              .c(t, { params: p()({}, e, !1), request: r.Settings.updateNotificationFilters })({
-                actionTypes: k,
-                context: 'ACTION_DISABLE_NOTIFICATION_FILTER',
-                meta: { filterName: e },
-              })
-              .then(function (e) {
-                return o.set(C, O(n())), e
-              })
+            return _.c(t, { params: p()({}, e, !1), request: r.Settings.updateNotificationFilters })({
+              actionTypes: k,
+              context: 'ACTION_DISABLE_NOTIFICATION_FILTER',
+              meta: { filterName: e },
+            }).then(function (e) {
+              return o.set(C, O(n())), e
+            })
           }
         },
         M = n('rxPX'),
@@ -6103,29 +6097,29 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('kPZX'),
-        _ = n('P1r1'),
-        g = n('rxPX'),
+        g = n('P1r1'),
+        _ = n('rxPX'),
         y = n('0KEI'),
         v = function (e) {
           return b.g()
         },
-        S = Object(g.a)()
+        S = Object(_.a)()
           .propsFromState(function () {
-            return { browserPushAllowed: v, universalQualityFilteringEnabled: _.G }
+            return { browserPushAllowed: v, universalQualityFilteringEnabled: g.G }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_NOTIFICATIONS_SCREEN',
               ),
-              updateSettings: _.M,
+              updateSettings: g.M,
             }
           })
           .withAnalytics({ page: 'settings', section: 'notifications' }),
         w = n('3XMw'),
         C = n.n(w),
-        T = n('yoO3'),
-        A = n('7FtF'),
+        A = n('yoO3'),
+        T = n('7FtF'),
         k = 'filtersHeader',
         L = n('6vad'),
         O = n('e0ey'),
@@ -6167,10 +6161,10 @@
                     n = e.location,
                     a = e.universalQualityFilteringEnabled
                   return E.a.createElement(
-                    T.a,
+                    A.a,
                     null,
                     E.a.createElement(
-                      A.a,
+                      T.a,
                       { location: n, screenType: 'primaryDetail', title: P },
                       E.a.createElement(L.b, { testID: k, text: R }),
                       E.a.createElement(O.a, {
@@ -6218,16 +6212,16 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('4+NY'),
-        _ = n('XMGw'),
-        g = n('8jkQ'),
+        g = n('XMGw'),
+        _ = n('8jkQ'),
         y = n('oEOe'),
-        v = ''.concat(_.a, '/deactivate'),
+        v = ''.concat(g.a, '/deactivate'),
         S = 'rweb/'.concat(v),
         w = Object(y.a)(S, 'DEACTIVATE_ACCOUNT'),
         C = function () {
-          return g.b.navigateTo('/settings/deactivated')
+          return _.b.navigateTo('/settings/deactivated')
         },
-        T = function (e, t) {
+        A = function (e, t) {
           return function (n, a, r) {
             r.api
             return n(Object(b.d)()).then(function () {
@@ -6245,11 +6239,11 @@
             })
           }
         },
-        A = n('G6rE'),
+        T = n('G6rE'),
         k = n('rxPX'),
         L = n('0KEI'),
         O = function (e) {
-          var t = A.e.selectLoggedInUser(e)
+          var t = T.e.selectLoggedInUser(e)
           return !!t && t.verified
         },
         I = Object(k.a)()
@@ -6259,7 +6253,7 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('DEACTIVATE'),
-              deactivate: T,
+              deactivate: A,
             }
           })
           .withAnalytics({ page: 'settings', section: 'deactivate' }),
@@ -6477,29 +6471,29 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('P1r1'),
-        _ = n('RqPI'),
-        g = n('G6rE'),
+        g = n('RqPI'),
+        _ = n('G6rE'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = n('vEo5'),
         w = n('FDFL'),
         C = n('S/HT'),
-        T = function (e) {
+        A = function (e) {
           var t = Object(b.i)(e)
           return t && Object(C.b)(e, t)
         },
-        A = function (e) {
-          var t = Object(_.p)(e)
+        T = function (e) {
+          var t = Object(g.p)(e)
           return t && Object(w.b)(e, t)
         },
         k = Object(y.a)()
           .propsFromState(function () {
             return {
-              countryName: T,
+              countryName: A,
               emails: S.selectEmails,
-              languageCode: _.p,
-              languageName: A,
-              loggedInUser: g.e.selectLoggedInUser,
+              languageCode: g.p,
+              languageName: T,
+              loggedInUser: _.e.selectLoggedInUser,
               phones: S.selectPhoneNumbers,
             }
           })
@@ -6646,10 +6640,10 @@
         m = n('yiKp'),
         E = n.n(m),
         b = n('Lsrn'),
-        _ = n('k/Ka'),
-        g = function () {
+        g = n('k/Ka'),
+        _ = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(_.a)(
+          return Object(g.a)(
             'svg',
             E()(
               E()({}, e),
@@ -6669,11 +6663,11 @@
             ),
           )
         }
-      g.metadata = { width: 24, height: 24 }
-      var y = g,
+      _.metadata = { width: 24, height: 24 }
+      var y = _,
         v = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(_.a)(
+          return Object(g.a)(
             'svg',
             E()(
               E()({}, e),
@@ -6700,7 +6694,7 @@
       var S = v,
         w = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(_.a)(
+          return Object(g.a)(
             'svg',
             E()(
               E()({}, e),
@@ -6726,7 +6720,7 @@
         }
       w.metadata = { width: 24, height: 24 }
       var C = w,
-        T = (function (e) {
+        A = (function (e) {
           s()(n, e)
           var t = u()(n)
           function n() {
@@ -6753,8 +6747,8 @@
             n
           )
         })(f.a.PureComponent),
-        A = n('3XMw'),
-        k = n.n(A),
+        T = n('3XMw'),
+        k = n.n(T),
         L = n('GBcw'),
         O = n('Wms4'),
         I = n('pjBI'),
@@ -6784,7 +6778,7 @@
                 key: '_renderDeviceIcon',
                 value: function () {
                   var e = this.props.session
-                  return f.a.createElement(T, { deviceType: e.icon_type })
+                  return f.a.createElement(A, { deviceType: e.icon_type })
                 },
               },
               {
@@ -6861,7 +6855,7 @@
         m = 'rweb/geoLocation/SET_POSITION',
         E = function () {
           return function (e, t) {
-            return _()
+            return g()
               .then(function (t) {
                 return e({ payload: t, type: m })
               })
@@ -6875,7 +6869,7 @@
             return f(t()) ? Promise.resolve() : e(E())
           }
         },
-        _ = function () {
+        g = function () {
           return new Promise(function (e, t) {
             return navigator.geolocation.getCurrentPosition(function (t) {
               var n = {
@@ -6950,18 +6944,18 @@
         m = (n('z84I'), n('LW0h'), n('7x/C'), n('3voH'), n('ho0z'), n('5BYb'), n('ERkP')),
         E = n.n(m),
         b = n('P1r1'),
-        _ = n('EyIn'),
-        g = n('+OgG'),
+        g = n('EyIn'),
+        _ = n('+OgG'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = Object(y.a)()
           .propsFromState(function () {
             return {
-              placeTrendsLocations: _.f,
-              placeTrendsLocationsFetchStatus: _.g,
-              placeTrendsSettings: _.d,
-              woeTrendsLocations: _.h,
-              woeTrendsLocationsFetchStatus: _.i,
+              placeTrendsLocations: g.f,
+              placeTrendsLocationsFetchStatus: g.g,
+              placeTrendsSettings: g.d,
+              woeTrendsLocations: g.h,
+              woeTrendsLocationsFetchStatus: g.i,
               woeTrendsLocationSettings: b.E,
             }
           })
@@ -6970,17 +6964,17 @@
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_TRENDS_LOCATION_SCREEN',
               ),
-              fetchWoeTrendsLocationsIfNeeded: _.c,
-              fetchPlaceTrendsLocations: _.b,
-              updateWoeTrendSettings: g.a,
-              updatePlaceTrendSettings: _.j,
+              fetchWoeTrendsLocationsIfNeeded: g.c,
+              fetchPlaceTrendsLocations: g.b,
+              updateWoeTrendSettings: _.a,
+              updatePlaceTrendSettings: g.j,
             }
           })
           .withAnalytics({ page: 'settings', section: 'trends', component: 'locations', element: 'list' }),
         w = n('v//M'),
         C = n('jHSc'),
-        T = n('3XMw'),
-        A = n.n(T),
+        A = n('3XMw'),
+        T = n.n(A),
         k = n('VwDm'),
         L = 19,
         O = 12,
@@ -6993,7 +6987,7 @@
         x = n('htQn'),
         M = n('t62R'),
         N = n('rHpw'),
-        D = A.a.d5c9174e,
+        D = T.a.d5c9174e,
         U = N.a.create(function (e) {
           return {
             item: {
@@ -7024,9 +7018,9 @@
         V = n('oQhu'),
         B = n('VY6S'),
         G = n('6OUF'),
-        Y = A.a.b3aab6d3,
-        z = A.a.e53e05e4,
-        W = A.a.be6cc44d,
+        Y = T.a.b3aab6d3,
+        z = T.a.e53e05e4,
+        W = T.a.be6cc44d,
         q = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -7265,12 +7259,12 @@
         m = (n('2G9S'), n('M+/F'), n('z84I'), n('ho0z'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
         E = n.n(m),
         b = n('3XMw'),
-        _ = n.n(b),
-        g = n('t62R'),
+        g = n.n(b),
+        _ = n('t62R'),
         y = n('htQn'),
         v = n('rHpw'),
-        S = _.a.c174e46e,
-        w = _.a.a39075ff,
+        S = g.a.c174e46e,
+        w = g.a.a39075ff,
         C = (function (e) {
           u()(n, e)
           var t = f()(n)
@@ -7303,29 +7297,29 @@
                   return E.a.createElement(
                     E.a.Fragment,
                     null,
-                    E.a.createElement(g.b, { style: T.scopesHeader, weight: 'bold' }, a),
+                    E.a.createElement(_.b, { style: A.scopesHeader, weight: 'bold' }, a),
                     E.a.createElement(
                       y.a,
                       { withInteractiveStyling: !1 },
                       o.map(function (e) {
                         return E.a.createElement(
-                          g.b,
-                          { color: 'subtext2' === n ? 'gray700' : void 0, key: e.name, size: n, style: T.listItem },
+                          _.b,
+                          { color: 'subtext2' === n ? 'gray700' : void 0, key: e.name, size: n, style: A.listItem },
                           e.description,
                         )
                       }),
                     ),
                     i && r
                       ? E.a.createElement(
-                          g.b,
-                          { onPress: this._handleToggleShowMoreScopes, style: T.toggleMoreLink },
+                          _.b,
+                          { onPress: this._handleToggleShowMoreScopes, style: A.toggleMoreLink },
                           S,
                         )
                       : null,
                     i && !r
                       ? E.a.createElement(
-                          g.b,
-                          { onPress: this._handleToggleShowMoreScopes, style: T.toggleMoreLink },
+                          _.b,
+                          { onPress: this._handleToggleShowMoreScopes, style: A.toggleMoreLink },
                           w({ n: t.length - 3 }),
                         )
                       : null,
@@ -7336,7 +7330,7 @@
             n
           )
         })(E.a.Component),
-        T = v.a.create(function (e) {
+        A = v.a.create(function (e) {
           return {
             listItem: {
               display: 'list-item',
@@ -7353,7 +7347,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'FilterPage', function () {
-          return T
+          return A
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -7381,14 +7375,14 @@
         m = n('7FtF'),
         E = n('RKmr'),
         b = n('e0ey'),
-        _ = n('csss'),
-        g = f.a.ef1b5cbb,
+        g = n('csss'),
+        _ = f.a.ef1b5cbb,
         y = f.a.i647fb03,
         v = f.a.aaafffd9,
         S = f.a.afdf29b8,
         w = f.a.c54b6236,
         C = { page: 'settings', section: 'filters' }
-      function T(e) {
+      function A(e) {
         var t = e.createLocalApiErrorHandler,
           n = e.location,
           a = e.universalQualityFilteringEnabled,
@@ -7402,7 +7396,7 @@
             i.a.createElement(
               m.a,
               { location: n, title: y },
-              i.a.createElement(E.a, { description: g }),
+              i.a.createElement(E.a, { description: _ }),
               i.a.createElement(b.a, {
                 checked: a,
                 helpText: w,
@@ -7414,13 +7408,13 @@
                   o(r()({}, e, n ? 'enabled' : 'disabled')).catch(t({ showToast: !0 }))
                 },
               }),
-              i.a.createElement(_.a, { label: v, link: '/settings/notifications/advanced_filters' }),
+              i.a.createElement(g.a, { label: v, link: '/settings/notifications/advanced_filters' }),
             ),
           ),
         )
       }
-      var A = u(T)
-      t.default = A
+      var T = u(A)
+      t.default = T
     },
     dMlH: function (e, t, n) {
       'use strict'
@@ -7455,8 +7449,8 @@
         m = n('7JQg'),
         E = n('MWbm'),
         b = n('RKmr'),
-        _ = n('oFxb'),
-        g = n('t62R'),
+        g = n('oFxb'),
+        _ = n('t62R'),
         y = f.a.d13e165c,
         v = f.a.cf24a081,
         S = f.a.d1e97fdf,
@@ -7465,8 +7459,8 @@
           { label: f.a.h69bd4ee, value: 'following' },
         ],
         C = f.a.d0a1d1d9,
-        T = f.a.i859a9d3,
-        A = { page: 'settings', section: 'teams' },
+        A = f.a.i859a9d3,
+        T = { page: 'settings', section: 'teams' },
         k = function (e) {
           var t = e.createLocalApiErrorHandler,
             n = e.fetchSettingsIfNeeded,
@@ -7487,7 +7481,7 @@
             k = u || o
           return i.a.createElement(
             m.c,
-            { namespace: A },
+            { namespace: T },
             i.a.createElement(
               h.a,
               null,
@@ -7508,12 +7502,12 @@
                   E.a,
                   null,
                   i.a.createElement(b.a, { description: S }),
-                  i.a.createElement(_.a, {
+                  i.a.createElement(g.a, {
                     description: i.a.createElement(
                       i.a.Fragment,
                       null,
                       ''.concat(C, ' '),
-                      i.a.createElement(g.b, { link: 'https://help.twitter.com/using-twitter/tweetdeck-teams' }, T),
+                      i.a.createElement(_.b, { link: 'https://help.twitter.com/using-twitter/tweetdeck-teams' }, A),
                     ),
                     label: v,
                     name: 'allow_contributor_request',
@@ -7553,22 +7547,22 @@
         m = n('2VqO'),
         E = n.n(m),
         b = n('KEM+'),
-        _ = n.n(b),
-        g = (n('vrRf'), n('hBpG'), n('7x/C'), n('KqXw'), n('MvUL'), n('tVqn'), n('7xRU'), n('ERkP')),
-        y = n.n(g),
+        g = n.n(b),
+        _ = (n('vrRf'), n('hBpG'), n('7x/C'), n('KqXw'), n('MvUL'), n('tVqn'), n('7xRU'), n('ERkP')),
+        y = n.n(_),
         v = n('k49u'),
         S = (n('WNMA'), n('X8EX')),
         w = n('1YZw'),
         C = n('rxPX'),
-        T = n('0KEI'),
-        A = function (e, t) {
+        A = n('0KEI'),
+        T = function (e, t) {
           return t.match.params.mutedKeywordId
         },
         k = function (e, t) {
-          return S.i(e, A(0, t))
+          return S.i(e, T(0, t))
         },
         L = function (e, t) {
-          return !!A(0, t)
+          return !!T(0, t)
         },
         O = Object(C.a)()
           .propsFromState(function () {
@@ -7578,7 +7572,7 @@
             return {
               addMutedKeyword: S.a,
               addToast: w.b,
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
                 'MUTED_KEYWORD_DETAIL',
               ),
               fetchDefaultOptionsIfNeeded: S.c,
@@ -7646,7 +7640,7 @@
             var a
             s()(this, n),
               (a = t.call(this, e)),
-              _()(f()(a), '_renderSettings', function () {
+              g()(f()(a), '_renderSettings', function () {
                 var e = a.props,
                   t = e.isEditing,
                   n = e.mutedKeyword,
@@ -7677,7 +7671,7 @@
                   a._renderOptions(),
                 )
               }),
-              _()(f()(a), '_renderOptions', function () {
+              g()(f()(a), '_renderOptions', function () {
                 var e = a.props.isEditing
                 return y.a.createElement(
                   D.a,
@@ -7709,14 +7703,14 @@
                   e ? y.a.createElement(U.b, { color: 'gray700', size: 'subtext2', style: pe.infoText }, ie) : null,
                 )
               }),
-              _()(f()(a), '_renderEditTimeDurationLabel', function () {
+              g()(f()(a), '_renderEditTimeDurationLabel', function () {
                 var e = a.props.mutedKeyword
                 return null != e && e.valid_until ? te : ne
               }),
-              _()(f()(a), '_renderNotFound', function () {
+              g()(f()(a), '_renderNotFound', function () {
                 return y.a.createElement(x.a, null)
               }),
-              _()(f()(a), '_initializeMuteKeywordStates', function (e) {
+              g()(f()(a), '_initializeMuteKeywordStates', function (e) {
                 return {
                   id: e.id,
                   keyword: e.keyword,
@@ -7730,18 +7724,18 @@
                   time_duration: e.valid_until ? '' : 'forever',
                 }
               }),
-              _()(f()(a), '_isMutedKeywordNotFound', function () {
+              g()(f()(a), '_isMutedKeywordNotFound', function () {
                 var e = a.props,
                   t = e.fetchStatus,
                   n = e.isEditing,
                   r = e.mutedKeyword
                 return n && t === I.a.LOADED && !r
               }),
-              _()(f()(a), '_getFetchStatus', function () {
+              g()(f()(a), '_getFetchStatus', function () {
                 var e = a.props.fetchStatus
                 return a.state.isUpdatingMutedKeyword ? I.a.LOADING : a._isMutedKeywordNotFound() ? I.a.FAILED : e
               }),
-              _()(f()(a), '_handleFetch', function () {
+              g()(f()(a), '_handleFetch', function () {
                 var e = a.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchDefaultOptionsIfNeeded,
@@ -7751,17 +7745,17 @@
                   c = e.isEditing
                 r().catch(t()), c || i === I.a.NONE ? o().catch(t()) : n()
               }),
-              _()(f()(a), '_handleKeywordChanged', function (e) {
+              g()(f()(a), '_handleKeywordChanged', function (e) {
                 var t = e.target.value
                 a.setState({ keyword: t }, a._checkKeywordValidity)
               }),
-              _()(f()(a), '_handleEntryUpdated', function (e, t) {
-                a.setState(_()({}, e, t), a._checkKeywordValidity)
+              g()(f()(a), '_handleEntryUpdated', function (e, t) {
+                a.setState(g()({}, e, t), a._checkKeywordValidity)
               }),
-              _()(f()(a), '_handleGoBack', function () {
+              g()(f()(a), '_handleGoBack', function () {
                 a.props.history.goBack({ backLocation: '/settings/muted_keywords' })
               }),
-              _()(f()(a), '_handleMutedKeywordIdChanged', function (e, t) {
+              g()(f()(a), '_handleMutedKeywordIdChanged', function (e, t) {
                 var n = a.props.history
                 if (e) {
                   var r =
@@ -7773,7 +7767,7 @@
                   r && n.replace({ pathname: '/settings/muted_keywords/'.concat(r.id) })
                 }
               }),
-              _()(f()(a), '_handleSubmit', function () {
+              g()(f()(a), '_handleSubmit', function () {
                 var e = a._getMuteKeywordParams()
                 a.props.isEditing ? a._updateExistingMutedKeyword(e) : a._createNewMutedKeyword(e)
               })
@@ -7795,7 +7789,7 @@
                 value: function () {
                   var e = this
                   this._handleFetch(),
-                    (this._mutateMutedKeywordApiErrorHandlingConfiguration = _()({}, v.a.ValidationFailure, {
+                    (this._mutateMutedKeywordApiErrorHandlingConfiguration = g()({}, v.a.ValidationFailure, {
                       customAction: function (t) {
                         t.message && e.setState({ errorText: t.message, hasValidKeyword: !1 })
                       },
@@ -7984,10 +7978,10 @@
           return C
         }),
         n.d(t, 'b', function () {
-          return T
+          return A
         }),
         n.d(t, 'c', function () {
-          return A
+          return T
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -8004,17 +7998,17 @@
         m = n('s1N3'),
         E = ''.concat(h.a, '/applications'),
         b = 'rweb/'.concat(E),
-        _ = c.a(b, 'FETCH_APPLICATIONS'),
-        g = { fetchStatus: f.a.NONE }
+        g = c.a(b, 'FETCH_APPLICATIONS'),
+        _ = { fetchStatus: f.a.NONE }
       function y() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
           t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
         switch (t.type) {
-          case _.REQUEST:
+          case g.REQUEST:
             return i()(i()({}, e), {}, { fetchStatus: f.a.LOADING })
-          case _.FAILURE:
+          case g.FAILURE:
             return i()(i()({}, e), {}, { error: t.payload, fetchStatus: f.a.FAILED })
-          case _.SUCCESS:
+          case g.SUCCESS:
             return i()(i()({}, e), {}, { error: null, fetchStatus: f.a.LOADED })
           default:
             return e
@@ -8089,12 +8083,12 @@
         C = function (e) {
           return e[E].fetchStatus
         },
-        T = function (e) {
+        A = function (e) {
           return function (t, n) {
             return C(n()) === f.a.LOADED ? Promise.resolve() : t(k(e))
           }
         },
-        A = function (e, t, n) {
+        T = function (e, t, n) {
           return function (n, a, r) {
             r.api
             var o = a()
@@ -8105,7 +8099,7 @@
           return function (t, n, a) {
             var r = a.api
             return c.b(t, { params: e, request: r.Settings.fetchApplications })(
-              { actionTypes: _, context: 'FETCH_APPLICATIONS' },
+              { actionTypes: g, context: 'FETCH_APPLICATIONS' },
               function (e, t) {
                 if (e) return [Object(s.c)(e.entities)]
               },
@@ -8133,8 +8127,8 @@
         m = n('t62R'),
         E = n('3XMw'),
         b = n.n(E),
-        _ = n('rHpw'),
-        g = n('MWbm'),
+        g = n('rHpw'),
+        _ = n('MWbm'),
         y = n('yiKp'),
         v = n.n(y),
         S = n('Lsrn'),
@@ -8162,8 +8156,8 @@
           )
         }
       C.metadata = { width: 24, height: 24 }
-      var T = C,
-        A = n('uFYP'),
+      var A = C,
+        T = n('uFYP'),
         k = b.a.f1a1b790,
         L = b.a.if2bf8b3,
         O = b.a.f3624b5c,
@@ -8185,9 +8179,9 @@
                     t = e.color,
                     n = e.nativeID,
                     a = e.style,
-                    r = e.withCircleIcon ? T : A.a
+                    r = e.withCircleIcon ? A : T.a
                   return p.a.createElement(
-                    g.a,
+                    _.a,
                     { style: [x.root, a] },
                     p.a.createElement(r, { style: [x.icon, t && x[t]] }),
                     p.a.createElement(m.b, { color: t, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
@@ -8232,7 +8226,7 @@
           )
         })(p.a.Component)
       f()(R, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
-      var x = _.a.create(function (e) {
+      var x = g.a.create(function (e) {
         return {
           root: { alignItems: 'center', flexDirection: 'row' },
           icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
@@ -8262,18 +8256,18 @@
         m = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('3XMw'),
-        _ = n.n(b),
-        g = n('yoO3'),
+        g = n.n(b),
+        _ = n('yoO3'),
         y = n('wytG'),
         v = n('7JQg'),
         S = n('7FtF'),
         w = n('k/OQ'),
         C = n('v6aA'),
-        T = n('zCf4'),
-        A = _.a.a5f32aa2,
-        k = _.a.f8321d82,
-        L = _.a.cf67f6d5,
-        O = _.a.eb233865,
+        A = n('zCf4'),
+        T = g.a.a5f32aa2,
+        k = g.a.f8321d82,
+        L = g.a.cf67f6d5,
+        O = g.a.eb233865,
         I = '/settings/blocked/all',
         F = '/settings/safety_mode/autoblocked',
         P = '/settings/blocked/imported',
@@ -8307,7 +8301,7 @@
                   e._fsAutoBlockListEnabled ? { to: F, key: L, label: L, retainScrollPosition: !1 } : void 0,
                   { to: P, key: O, label: O, retainScrollPosition: !1 },
                 ]
-                return E.a.createElement(w.a, { accessibilityLabel: A, links: t })
+                return E.a.createElement(w.a, { accessibilityLabel: T, links: t })
               }),
               e
             )
@@ -8321,25 +8315,25 @@
                     v.c,
                     { namespace: R },
                     E.a.createElement(
-                      g.a,
+                      _.a,
                       null,
                       E.a.createElement(
                         S.a,
                         {
                           location: this.props.location,
                           secondaryBar: this._renderTabs(),
-                          title: A,
+                          title: T,
                           withBottomBorder: !0,
                           withMarginBottom: !1,
                         },
                         E.a.createElement(
-                          T.d,
+                          A.d,
                           null,
-                          E.a.createElement(T.b, { component: x, exact: !0, path: I }),
+                          E.a.createElement(A.b, { component: x, exact: !0, path: I }),
                           this._fsAutoBlockListEnabled
-                            ? E.a.createElement(T.b, { component: M, exact: !0, path: F })
+                            ? E.a.createElement(A.b, { component: M, exact: !0, path: F })
                             : null,
-                          E.a.createElement(T.b, { component: N, exact: !0, path: P }),
+                          E.a.createElement(A.b, { component: N, exact: !0, path: P }),
                         ),
                       ),
                     ),
@@ -8414,15 +8408,15 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('jwue'), n('7x/C'), n('+oxZ'), n('+KXO'), n('ERkP')),
-        _ = n.n(b),
-        g = n('6/RC'),
+        g = n.n(b),
+        _ = n('6/RC'),
         y = n('zh9S'),
         v = n('NeAX'),
         S = n('RqPI'),
         w = n('P1r1'),
         C = n('hqKg'),
-        T = n('0KEI'),
-        A = n('oEGd'),
+        A = n('0KEI'),
+        T = n('oEGd'),
         k = Object(C.createSelector)(S.n, w.g, v.selectPreferences, function (e, t, n) {
           return !(!t.settings_metadata || !t.settings_metadata.is_eu) || n.is_eu_country
         }),
@@ -8436,17 +8430,17 @@
           },
         ),
         O = {
-          createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)(
+          createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
             'SETTINGS_PERSONALIZATION_SCREEN',
           ),
           fetchPreferencesIfNeeded: v.fetchPreferencesIfNeeded,
-          googleAnalyticsPageView: y.a,
-          scribeAction: y.c,
-          scribePageImpression: y.d,
+          googleAnalyticsPageView: y.googleAnalyticsPageView,
+          scribeAction: y.scribeAction,
+          scribePageImpression: y.scribePageImpression,
           syncSettings: v.syncSettings,
           updateSettings: v.updateSettings,
         },
-        I = Object(A.f)(L, O),
+        I = Object(T.f)(L, O),
         F = n('xCYy'),
         P = n('v//M'),
         R = n('uD2z'),
@@ -8488,8 +8482,8 @@
         me = M.a.b276596b,
         Ee = M.a.c966aaf4,
         be = M.a.d3c20d8f,
-        _e = M.a.jdaf84e3,
-        ge = { page: 'settings', section: 'personalization' },
+        ge = M.a.jdaf84e3,
+        _e = { page: 'settings', section: 'personalization' },
         ye = (function (e) {
           f()(n, e)
           var t = p()(n)
@@ -8507,19 +8501,19 @@
                   i = o.state,
                   c = i.showDisableEUConfirmation,
                   s = i.showSwitchAllConfirmation
-                return _.a.createElement(
+                return g.a.createElement(
                   K.a,
                   null,
-                  _.a.createElement(
+                  g.a.createElement(
                     K.a,
                     null,
-                    _.a.createElement(
+                    g.a.createElement(
                       V.b,
                       { color: 'gray700', size: 'subtext2', style: [H.a.infoText, H.a.bottomBorder] },
                       o._isLoggedIn ? Q : J,
                     ),
                   ),
-                  _.a.createElement(B.a, {
+                  g.a.createElement(B.a, {
                     checked: o._getSwitchAllValue(),
                     helpText: $,
                     key: 'switchAll',
@@ -8528,9 +8522,9 @@
                     onChange: o._handleSwitchAllChanged,
                     type: 'switch',
                   }),
-                  _.a.createElement(G.a, null),
-                  _.a.createElement(Y.b, { text: ee }),
-                  _.a.createElement(B.a, {
+                  g.a.createElement(G.a, null),
+                  g.a.createElement(Y.b, { text: ee }),
+                  g.a.createElement(B.a, {
                     checked: r,
                     disabled: o._adsPersonalizationOSLevelDisabled,
                     helpText: o._adsPersonalizationOSLevelDisabled ? le : se,
@@ -8540,7 +8534,7 @@
                     name: 'allowPersonalization',
                     onChange: o._handleBooleanChanged,
                   }),
-                  _.a.createElement(B.a, {
+                  g.a.createElement(B.a, {
                     checked: t,
                     helpText: de,
                     key: 'allowDeviceAccess',
@@ -8550,7 +8544,7 @@
                     onChange: o._handleBooleanChanged,
                   }),
                   o._isLoggedIn &&
-                    _.a.createElement(B.a, {
+                    g.a.createElement(B.a, {
                       checked: n,
                       helpText: he,
                       key: 'allowLocationHistoryUse',
@@ -8558,21 +8552,21 @@
                       name: 'allowLocationHistoryUse',
                       onChange: o._handleBooleanChanged,
                     }),
-                  _.a.createElement(G.a, null),
-                  _.a.createElement(Y.b, { text: te }),
+                  g.a.createElement(G.a, null),
+                  g.a.createElement(Y.b, { text: te }),
                   o._renderCookiePersonalizationSetting(),
-                  _.a.createElement(B.a, {
+                  g.a.createElement(B.a, {
                     checked: a,
-                    helpText: _e,
+                    helpText: ge,
                     key: 'allowPartnerships',
                     label: be,
                     learnMoreLink: 'https://support.twitter.com/articles/20175379',
                     name: 'allowPartnerships',
                     onChange: o._handleBooleanChanged,
                   }),
-                  o._isLoggedIn && _.a.createElement(z.a, { label: ne, link: '/settings/your_twitter_data' }),
+                  o._isLoggedIn && g.a.createElement(z.a, { label: ne, link: '/settings/your_twitter_data' }),
                   c &&
-                    _.a.createElement(W.a, {
+                    g.a.createElement(W.a, {
                       cancelButtonLabel: ie,
                       confirmButtonLabel: oe,
                       onCancel: o._handleCancelDisableEU,
@@ -8580,7 +8574,7 @@
                       text: re,
                     }),
                   s &&
-                    _.a.createElement(W.a, {
+                    g.a.createElement(W.a, {
                       confirmButtonLabel: ae.confirmButtonLabel,
                       headline: ae.headline,
                       onCancel: o._handleCancelSwitchAll,
@@ -8631,7 +8625,7 @@
                 o._scribeAction(e, i), r(i).catch(a())
               }),
               E()(u()(o), '_scribeAction', function (e, t) {
-                ;(0, o.props.scribeAction)(r()(r()({}, ge), {}, { component: e, action: 'edit' }), { metadata: t })
+                ;(0, o.props.scribeAction)(r()(r()({}, _e), {}, { component: e, action: 'edit' }), { metadata: t })
               }),
               E()(u()(o), '_handleFetchPreferences', function () {
                 var e = o.props,
@@ -8651,7 +8645,7 @@
                   this._handleFetchPreferences(),
                     (this._isLoggedIn = !!e),
                     (this._adsPersonalizationOSLevelDisabled =
-                      !g.canUseDOM ||
+                      !_.canUseDOM ||
                       (window.apkInterface &&
                         window.apkInterface.isOsAdsTrackingOn &&
                         !window.apkInterface.isOsAdsTrackingOn()))
@@ -8665,7 +8659,7 @@
                     n = e.googleAnalyticsPageView,
                     a = e.scribePageImpression,
                     r = e.syncSettings
-                  n(ge), a(ge), !this._isLoggedIn && g.canUseDOM && r().catch(t())
+                  n(_e), a(_e), !this._isLoggedIn && _.canUseDOM && r().catch(t())
                 },
               },
               {
@@ -8674,16 +8668,16 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     D.c,
-                    { namespace: ge },
-                    _.a.createElement(
+                    { namespace: _e },
+                    g.a.createElement(
                       U.a,
                       { location: n, title: X },
-                      _.a.createElement(
+                      g.a.createElement(
                         F.a,
                         null,
-                        _.a.createElement(P.a, {
+                        g.a.createElement(P.a, {
                           fetchStatus: t,
                           onRequestRetry: this._handleFetchPreferences,
                           render: this._render,
@@ -8707,7 +8701,7 @@
                     t
                       ? ((e = Ee), a ? (o = this._handleEUCookiesChanged) : (r = !0))
                       : ((e = me), (o = this._handleBooleanChanged)),
-                    _.a.createElement(B.a, {
+                    g.a.createElement(B.a, {
                       checked: n,
                       disabled: r,
                       helpText: e,
@@ -8731,7 +8725,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(ye, 'contextType', q.a)
       t.default = I(Object(j.a)(ye))
     },
@@ -8837,9 +8831,9 @@
           m = o && o.peopleFilter ? 'searcher_follows' : void 0,
           E = m ? '-pf' : '',
           b = o && o.locationFilter && !t.includes(d) ? ''.concat(t).concat(d) : t,
-          _ = ''.concat(u).concat(b, '-').concat(a).concat(p).concat(E)
+          g = ''.concat(u).concat(b, '-').concat(a).concat(p).concat(E)
         return Object(s.a)({
-          timelineId: _,
+          timelineId: g,
           getEndpoint: function (e) {
             return e.URT.fetchSearch
           },
@@ -8912,19 +8906,19 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('2G9S'), n('z84I'), n('ho0z'), n('uFXj'), n('ERkP')),
-        _ = n.n(b),
-        g = n('EPsT'),
+        g = n.n(b),
+        _ = n('EPsT'),
         y = n('dZRF'),
         v = n('uo4S'),
         S = n('kGix'),
         w = n('rxPX'),
         C = n('0KEI'),
-        T = function (e, t) {
+        A = function (e, t) {
           return Object(S.d)(y.d(e), v.d(e, t))
         },
-        A = Object(w.a)()
+        T = Object(w.a)()
           .propsFromState(function () {
-            return { fetchStatus: T, applications: y.a.selectUniqUnrevokedApps, sessions: v.f }
+            return { fetchStatus: A, applications: y.a.selectUniqUnrevokedApps, sessions: v.f }
           })
           .propsFromActions(function () {
             return {
@@ -8994,19 +8988,19 @@
               }),
               E()(u()(e), '_render', function () {
                 var t = e.props.applications
-                return _.a.createElement(
+                return g.a.createElement(
                   V.a,
                   null,
-                  _.a.createElement(R.b, { text: B }),
-                  t.length ? null : _.a.createElement(x.a, { header: J, message: $ }),
+                  g.a.createElement(R.b, { text: B }),
+                  t.length ? null : g.a.createElement(x.a, { header: J, message: $ }),
                   t.map(function (e, t) {
                     var n = '/settings/applications/'.concat(e.app_id)
-                    return _.a.createElement(M.a, {
+                    return g.a.createElement(M.a, {
                       description: e.organization ? Z({ name: e.organization }) : null,
                       key: e.app_id,
                       label: e.name,
                       link: n,
-                      thumbnail: _.a.createElement(j.a, {
+                      thumbnail: g.a.createElement(j.a, {
                         accessibilityLabel: '',
                         source: e.img_url,
                         style: re.avatar,
@@ -9018,7 +9012,7 @@
               }),
               E()(u()(e), '_renderSession', function (e, t) {
                 var n = '/settings/sessions/'.concat(encodeURIComponent(e.token))
-                return _.a.createElement(I.a, {
+                return g.a.createElement(I.a, {
                   key: e.token,
                   link: n,
                   session: e,
@@ -9043,13 +9037,13 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     L.a,
                     null,
-                    _.a.createElement(
+                    g.a.createElement(
                       P.a,
                       { location: n, title: z },
-                      _.a.createElement(k.a, {
+                      g.a.createElement(k.a, {
                         accessibilityLabel: q,
                         fetchStatus: t,
                         onRequestRetry: this._handleRetry,
@@ -9072,13 +9066,13 @@
                     i = o[0],
                     c = o[1]
                   return n
-                    ? _.a.createElement(
+                    ? g.a.createElement(
                         V.a,
                         null,
-                        _.a.createElement(N.a, null),
-                        _.a.createElement(R.b, { text: G }),
+                        g.a.createElement(N.a, null),
+                        g.a.createElement(R.b, { text: G }),
                         i[0] ? this._renderSession(i[0], !1) : null,
-                        _.a.createElement(g.a, {
+                        g.a.createElement(_.a, {
                           confirmationSheetConfirmButtonLabel: Y,
                           confirmationSheetConfirmButtonType: 'primary',
                           confirmationSheetHeadline: Q,
@@ -9086,13 +9080,13 @@
                           label: X,
                           onConfirmationSheetConfirm: this._handleLogOutAll,
                         }),
-                        _.a.createElement(
+                        g.a.createElement(
                           F.a,
                           null,
-                          _.a.createElement(
+                          g.a.createElement(
                             K.a.I18NFormatMessage,
                             { $i18n: 'i34eeb36', infoText: n > 1 ? ee({ num: n - 1 }) : te },
-                            _.a.createElement(
+                            g.a.createElement(
                               D.b,
                               {
                                 link: 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
@@ -9102,7 +9096,7 @@
                             ),
                           ),
                         ),
-                        _.a.createElement(N.a, null),
+                        g.a.createElement(N.a, null),
                         c.map(function (t, a) {
                           return e._renderSession(t, n - 1 === a)
                         }),
@@ -9113,12 +9107,12 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(ae, 'defaultProps', { applications: [], sessions: [] })
       var re = U.a.create(function (e) {
         return { avatar: { borderRadius: e.borderRadii.small, height: '100%', width: '100%' } }
       })
-      t.default = A(ae)
+      t.default = T(ae)
     },
     'jm1/': function (e, t, n) {
       'use strict'
@@ -9243,15 +9237,15 @@
         m = n('KEM+'),
         E = n.n(m),
         b = n('ERkP'),
-        _ = n.n(b),
-        g = n('vEo5'),
+        g = n.n(b),
+        _ = n('vEo5'),
         y = n('1YZw'),
         v = n('P1r1'),
         S = n('rxPX'),
         w = n('0KEI'),
         C = Object(S.a)()
           .propsFromState(function () {
-            return { emails: g.selectEmails, fetchStatus: g.selectFetchStatus }
+            return { emails: _.selectEmails, fetchStatus: _.selectFetchStatus }
           })
           .propsFromActions(function () {
             return {
@@ -9259,15 +9253,15 @@
               createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_EMAIL_SCREEN',
               ),
-              fetchDevices: g.fetchDevices,
+              fetchDevices: _.fetchDevices,
               fetchSettings: v.e,
-              resendConfirmationEmail: g.resendConfirmationEmail,
-              updateEmail: g.updateEmail,
+              resendConfirmationEmail: _.resendConfirmationEmail,
+              updateEmail: _.updateEmail,
             }
           })
           .withAnalytics({ page: 'settings', section: 'email' }),
-        T = n('v//M'),
-        A = n('yoO3'),
+        A = n('v//M'),
+        T = n('yoO3'),
         k = n('VIKJ'),
         L = n('7FtF'),
         O = n('MWbm'),
@@ -9306,11 +9300,11 @@
                   s = i[1],
                   l = null === (e = c[0]) || void 0 === e ? void 0 : e.email,
                   u = null === (t = s[0]) || void 0 === t ? void 0 : t.email
-                return _.a.createElement(
+                return g.a.createElement(
                   O.a,
                   null,
                   l
-                    ? _.a.createElement(I.a, {
+                    ? g.a.createElement(I.a, {
                         defaultValue: l,
                         editable: !1,
                         label: H,
@@ -9319,21 +9313,21 @@
                       })
                     : null,
                   u ? o._renderUnverifiedEmailMessage(u) : null,
-                  _.a.createElement(F.a, null),
-                  _.a.createElement(P.a, { color: 'primary', label: n.length ? V : j, link: '/i/flow/add_email' }),
+                  g.a.createElement(F.a, null),
+                  g.a.createElement(P.a, { color: 'primary', label: n.length ? V : j, link: '/i/flow/add_email' }),
                 )
               }),
               E()(u()(o), '_renderUnverifiedEmailMessage', function (e) {
-                return _.a.createElement(
+                return g.a.createElement(
                   R.a,
                   null,
-                  _.a.createElement(
+                  g.a.createElement(
                     x.b,
                     { color: 'gray700' },
-                    _.a.createElement(
+                    g.a.createElement(
                       N.a.I18NFormatMessage,
                       { $i18n: 'f3c4e2c5', unverifiedEmail: e },
-                      _.a.createElement(
+                      g.a.createElement(
                         x.b,
                         { accessibilityRole: 'button', color: 'link', onClick: o._handleResendVerification },
                         N.a.h021352e({ resendConfirmationLabel: B }),
@@ -9384,13 +9378,13 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     L.a,
                     { location: n, submitDisabled: !this.state.email, submitLabel: D, title: U },
-                    _.a.createElement(
-                      A.a,
+                    g.a.createElement(
+                      T.a,
                       null,
-                      _.a.createElement(T.a, {
+                      g.a.createElement(A.a, {
                         accessibilityLabel: K,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetchDevices,
@@ -9403,7 +9397,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       t.default = C(Y)
     },
     oFxb: function (e, t, n) {
@@ -9426,8 +9420,8 @@
         m = (n('ho0z'), n('1t7P'), n('jQ/y'), n('uFXj'), n('ERkP')),
         E = n.n(m),
         b = n('zfvc'),
-        _ = n('t62R'),
-        g = n('fyvP'),
+        g = n('t62R'),
+        _ = n('fyvP'),
         y = n('rHpw'),
         v = n('CK8+'),
         S = n('MWbm'),
@@ -9481,7 +9475,7 @@
                       accessibilityLabel: t,
                       accessibilityLabelledBy: r && !t ? this._labelId : void 0,
                       accessibilityRole: 'group',
-                      style: [T.root, a && T.disabled],
+                      style: [A.root, a && A.disabled],
                     },
                     E.a.createElement(
                       E.a.Fragment,
@@ -9489,18 +9483,18 @@
                       r
                         ? E.a.createElement(
                             S.a,
-                            { accessibilityRole: 'label', nativeID: this._labelId, style: T.header },
+                            { accessibilityRole: 'label', nativeID: this._labelId, style: A.header },
                             E.a.createElement(
                               S.a,
-                              { style: T.label },
-                              E.a.createElement(_.b, { weight: 'bold' }, r),
+                              { style: A.label },
+                              E.a.createElement(g.b, { weight: 'bold' }, r),
                               E.a.createElement(v.a, {
                                 disabled: a,
                                 onValueChange: this._handleGateToggle,
                                 value: l !== i,
                               }),
                             ),
-                            n ? E.a.createElement(_.b, { color: 'gray700', size: 'subtext2' }, n) : null,
+                            n ? E.a.createElement(g.b, { color: 'gray700', size: 'subtext2' }, n) : null,
                           )
                         : null,
                       s &&
@@ -9512,8 +9506,8 @@
                             null,
                             E.a.createElement(
                               S.a,
-                              { style: T.radioGroup, tabIndex: 0 },
-                              E.a.createElement(g.a, {
+                              { style: A.radioGroup, tabIndex: 0 },
+                              E.a.createElement(_.a, {
                                 accessibilityLabel: t || r,
                                 disabled: a,
                                 name: o,
@@ -9534,7 +9528,7 @@
           )
         })(E.a.Component)
       p()(C, 'defaultProps', { disabled: !1 })
-      var T = y.a.create(function (e) {
+      var A = y.a.create(function (e) {
         return {
           root: { backgroundColor: e.colors.cellBackground },
           header: {
@@ -9580,20 +9574,20 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('2G9S'), n('KqXw'), n('MvUL'), n('kPZX')),
-        _ = n('ERkP'),
-        g = n.n(_),
+        g = n('ERkP'),
+        _ = n.n(g),
         y = n('zh9S'),
         v = n('vEo5'),
         S = n('1YZw'),
         w = n('hqKg'),
         C = n('auX9'),
-        T = n('G6rE'),
-        A = n('0KEI'),
+        A = n('G6rE'),
+        T = n('0KEI'),
         k = n('oEGd'),
         L = Object(w.createSelector)(
           v.selectPushSettingsFetchStatus,
           function (e) {
-            var t = T.e.selectLoggedInUser(e)
+            var t = A.e.selectLoggedInUser(e)
             return t && t.verified
           },
           v.selectBrowserPushStatus,
@@ -9613,15 +9607,15 @@
         ),
         O = {
           addToast: S.b,
-          createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
+          createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)(
             'SETTINGS_NOTIFICATIONS_PUSH_SCREEN',
           ),
           fetchPushSettingsIfNeeded: v.fetchPushSettingsIfNeeded,
-          googleAnalyticsPageView: y.a,
+          googleAnalyticsPageView: y.googleAnalyticsPageView,
           pushSubscribe: v.pushSubscribe,
           removePushDeviceIfSubscribed: v.removePushDeviceIfSubscribed,
-          scribeAction: y.c,
-          scribePageImpression: y.d,
+          scribeAction: y.scribeAction,
+          scribePageImpression: y.scribePageImpression,
           updatePushNotificationSettings: v.updatePushNotificationSettings,
         },
         I = Object(k.f)(L, O),
@@ -9674,19 +9668,19 @@
                     a = t.isVerified,
                     r = t.template.template.settings
                   return r.length
-                    ? g.a.createElement(
+                    ? _.a.createElement(
                         'div',
                         null,
                         r.map(function (t, r) {
-                          return g.a.createElement(
+                          return _.a.createElement(
                             'div',
                             { key: r },
                             t.section_header
-                              ? g.a.createElement(
-                                  g.a.Fragment,
+                              ? _.a.createElement(
+                                  _.a.Fragment,
                                   null,
-                                  g.a.createElement(N.a, null),
-                                  g.a.createElement(D.b, { text: t.section_header }),
+                                  _.a.createElement(N.a, null),
+                                  _.a.createElement(D.b, { text: t.section_header }),
                                 )
                               : null,
                             t.section_entries.map(function (t, r) {
@@ -9700,7 +9694,7 @@
                                   })
                                   return (
                                     o.push({ label: t.off_description, value: 'off' }),
-                                    g.a.createElement(U.a, {
+                                    _.a.createElement(U.a, {
                                       key: t.id,
                                       label: t.name,
                                       name: t.id,
@@ -9711,7 +9705,7 @@
                                   )
                                 case 'tweet_control':
                                   var i = n[t.id] && 'on' === n[t.id]
-                                  return g.a.createElement(H.a, {
+                                  return _.a.createElement(H.a, {
                                     checked: i,
                                     helpText: K,
                                     key: t.id,
@@ -9723,7 +9717,7 @@
                                   })
                                 case 'on_off':
                                   var c = n[t.id] && 'on' === n[t.id]
-                                  return g.a.createElement(H.a, {
+                                  return _.a.createElement(H.a, {
                                     checked: c,
                                     key: t.id,
                                     label: t.name,
@@ -9743,7 +9737,7 @@
             ]),
             n
           )
-        })(g.a.Component),
+        })(_.a.Component),
         B = n('7FtF'),
         G = n('FIs5'),
         Y = x.a.hee41732,
@@ -9781,7 +9775,7 @@
                   i = t.scribeAction,
                   c = 'denied' === b.d()
                 if (r.subscribed)
-                  return g.a.createElement(V, {
+                  return _.a.createElement(V, {
                     currentSettings: a,
                     isVerified: n,
                     onChange: e._handleSettingsChanged,
@@ -9791,16 +9785,16 @@
                   })
                 if (c) {
                   var s = oe() ? ae : ne
-                  return g.a.createElement(G.a, { header: te, message: s })
+                  return _.a.createElement(G.a, { header: te, message: s })
                 }
                 return r.supported
-                  ? g.a.createElement(G.a, {
+                  ? _.a.createElement(G.a, {
                       buttonText: z,
                       header: J,
                       message: Z,
                       onButtonPress: e._handlePushSubscribe,
                     })
-                  : g.a.createElement(G.a, { header: $, message: ee })
+                  : _.a.createElement(G.a, { header: $, message: ee })
               }),
               E()(u()(e), '_handleFetch', function () {
                 var t = e.props,
@@ -9867,7 +9861,7 @@
                     r = e.pushStatus,
                     o =
                       !oe() && r.supported
-                        ? g.a.createElement(H.a, {
+                        ? _.a.createElement(H.a, {
                             checked: r.subscribed,
                             helpText: X + (n ? ' '.concat(Q) : ''),
                             key: 'switchAll',
@@ -9877,18 +9871,18 @@
                             type: 'switch',
                           })
                         : null
-                  return g.a.createElement(
+                  return _.a.createElement(
                     B.a,
                     { location: a, title: Y },
                     o,
-                    g.a.createElement(P.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: this._render }),
+                    _.a.createElement(P.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: this._render }),
                   )
                 },
               },
             ]),
             n
           )
-        })(g.a.Component)
+        })(_.a.Component)
       t.default = I(ie)
     },
     oX5A: function (e, t, n) {
@@ -9921,8 +9915,8 @@
         m = n.n(p),
         E = n('KEM+'),
         b = n.n(E),
-        _ = (n('yH/f'), n('0zG9'), n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('z84I'), n('ERkP')),
-        g = n.n(_),
+        g = (n('yH/f'), n('0zG9'), n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('z84I'), n('ERkP')),
+        _ = n.n(g),
         y = n('k49u'),
         v = n('wvRX'),
         S = n('rxPX'),
@@ -9944,9 +9938,9 @@
             }
           })
           .withAnalytics({ page: 'settings', section: 'loginVerification' }),
-        T = n('v//M'),
-        A = n('3XMw'),
-        k = n.n(A),
+        A = n('v//M'),
+        T = n('3XMw'),
+        k = n.n(T),
         L = n('N9bX'),
         O = n('yoO3'),
         I = n('7FtF'),
@@ -9991,21 +9985,21 @@
         me = k.a.gf91694d,
         Ee = k.a.a219e217,
         be = k.a.j265ddb6,
-        _e = k.a.a136ecac,
-        ge = k.a.fc2a5c92,
+        ge = k.a.a136ecac,
+        _e = k.a.fc2a5c92,
         ye = k.a.d7bfde1a,
         ve = 'two_factor',
         Se = 'Sms',
         we = 'Totp',
         Ce = 'U2fSecurityKey',
-        Te =
+        Ae =
           ((a = {}),
           b()(a, ve, 'two_factor'),
           b()(a, Se, 'two_factor_auth_sms'),
           b()(a, we, 'two_factor_auth_totp'),
           b()(a, Ce, 'two_factor_auth_u2f_security_key'),
           a),
-        Ae =
+        Te =
           ((r = {}),
           b()(r, Se, '/i/flow/two-factor-sms-enrollment'),
           b()(r, we, '/i/flow/two-factor-auth-app-enrollment'),
@@ -10034,8 +10028,8 @@
               b()(d()(r), '_previousPath', r._initialPath),
               b()(d()(r), '_render', function () {
                 var e = r.props.loginVerificationSettings.isOldPushUser
-                return g.a.createElement(
-                  g.a.Fragment,
+                return _.a.createElement(
+                  _.a.Fragment,
                   null,
                   e ? r._renderLegacyPush2FASettings() : r._render2FASettings(),
                   r.state.confirmationType !== Le.NONE ? r._renderConfirmationSheet() : null,
@@ -10044,7 +10038,7 @@
               b()(d()(r), '_renderConfirmationSheet', function () {
                 switch (r.state.confirmationType) {
                   case Le.ROOT_SETTING:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: z,
                       headline: B,
                       onCancel: r._handleCloseConfirmation,
@@ -10052,7 +10046,7 @@
                       text: V,
                     })
                   case Le.METHOD:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: z,
                       headline: B,
                       onCancel: r._handleCloseConfirmation,
@@ -10060,17 +10054,17 @@
                       text: Y,
                     })
                   case Le.VERIFY_EMAIL:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       cancelButtonLabel: $,
                       cancelButtonLink: 'https://help.twitter.com/managing-your-account/cant-confirm-my-email-address',
                       confirmButtonLabel: Ee,
                       headline: be,
                       onCancel: r._handleCloseConfirmation,
                       onConfirm: r._handleCloseConfirmation,
-                      text: _e,
+                      text: ge,
                     })
                   case Le.ENABLE_LOGIN_VERIFICATION:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: he,
                       headline: de,
                       onConfirm: r._handleCloseConfirmation,
@@ -10078,7 +10072,7 @@
                       withCancelButton: !1,
                     })
                   case Le.MAX_SECURITY_KEY_LIMIT_REACHED:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: he,
                       headline: pe,
                       onConfirm: r._handleCloseConfirmation,
@@ -10086,16 +10080,16 @@
                       withCancelButton: !1,
                     })
                   case Le.STANDALONE_SECURITY_KEY:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: X,
                       onConfirm: r._handleCloseConfirmation,
                       text: Q,
                       withCancelButton: !1,
                     })
                   case Le.SUSPENDED:
-                    return g.a.createElement(F.a, {
+                    return _.a.createElement(F.a, {
                       confirmButtonLabel: he,
-                      headline: ge,
+                      headline: _e,
                       learnMoreLink: 'https://help.twitter.com/managing-your-account/suspended-twitter-accounts',
                       learnMoreText: $,
                       onConfirm: r._handleCloseConfirmation,
@@ -10120,8 +10114,8 @@
                 var n = r.props.createLocalApiErrorHandler
                 t
                   ? r._isOcf2faEnrollmentEnabled
-                    ? r.props.history.push({ pathname: Ae[e] })
-                    : (0, r.props.enrollIn2FA)({ flow: Te[e] }).catch(n(r._enrollmentErrorHandlingMap))
+                    ? r.props.history.push({ pathname: Te[e] })
+                    : (0, r.props.enrollIn2FA)({ flow: Ae[e] }).catch(n(r._enrollmentErrorHandlingMap))
                   : r._isOcf2faUnenrollmentEnabled
                   ? r.props.history.push({
                       pathname: '/i/flow/two-factor-unenrollment',
@@ -10263,13 +10257,13 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return g.a.createElement(
+                  return _.a.createElement(
                     O.a,
                     null,
-                    g.a.createElement(
+                    _.a.createElement(
                       I.a,
                       { location: n, title: Z },
-                      g.a.createElement(T.a, {
+                      _.a.createElement(A.a, {
                         accessibilityLabel: J,
                         fetchStatus: t,
                         onRequestRetry: this._handleRetry,
@@ -10283,25 +10277,25 @@
                 key: '_render2FASettings',
                 value: function () {
                   var e = this.props.loginVerificationSettings.twoFactorAuthEnabled
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return _.a.createElement(
+                    _.a.Fragment,
                     null,
-                    g.a.createElement(P.b, { text: Z }),
-                    g.a.createElement(R.a, {
+                    _.a.createElement(P.b, { text: Z }),
+                    _.a.createElement(R.a, {
                       checked: e && this._isChecked(Se),
                       helpText: te,
                       label: ee,
                       name: Se,
                       onChange: this._handleTwoFactorMethodsChange,
                     }),
-                    g.a.createElement(R.a, {
+                    _.a.createElement(R.a, {
                       checked: e && this._isChecked(we),
                       helpText: ae,
                       label: ne,
                       name: we,
                       onChange: this._handleTwoFactorMethodsChange,
                     }),
-                    g.a.createElement(R.a, {
+                    _.a.createElement(R.a, {
                       checked: e && this._isChecked(Ce),
                       helpText: this.context.featureSwitches.isTrue('responsive_web_new_copy_security_key_2fa_enabled')
                         ? ie
@@ -10322,20 +10316,20 @@
                   var e
                   return null !== (e = this.props.loginVerificationSettings.methods[Ce]) && void 0 !== e && e.length
                     ? this._isOcf2faEnrollmentEnabled
-                      ? g.a.createElement(x.a, {
+                      ? _.a.createElement(x.a, {
                           align: 'left',
                           color: 'primary',
                           label: se,
                           link: { pathname: '/settings/account/login_verification/security_keys' },
                         })
-                      : g.a.createElement(
-                          g.a.Fragment,
+                      : _.a.createElement(
+                          _.a.Fragment,
                           null,
-                          g.a.createElement(M.a, {
+                          _.a.createElement(M.a, {
                             label: se,
                             link: { pathname: '/settings/account/login_verification/security_keys' },
                           }),
-                          g.a.createElement(x.a, {
+                          _.a.createElement(x.a, {
                             align: 'left',
                             color: 'primary',
                             label: ce,
@@ -10349,10 +10343,10 @@
                 key: '_renderLegacyPush2FASettings',
                 value: function () {
                   var e = this.props.loginVerificationSettings.twoFactorAuthEnabled
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return _.a.createElement(
+                    _.a.Fragment,
                     null,
-                    g.a.createElement(R.a, {
+                    _.a.createElement(R.a, {
                       checked: e,
                       helpText: q,
                       label: W,
@@ -10366,17 +10360,17 @@
               {
                 key: '_renderAdditionalMethods',
                 value: function () {
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return _.a.createElement(
+                    _.a.Fragment,
                     null,
-                    g.a.createElement(N.a, null),
-                    g.a.createElement(P.b, { text: U }),
-                    g.a.createElement(M.a, {
+                    _.a.createElement(N.a, null),
+                    _.a.createElement(P.b, { text: U }),
+                    _.a.createElement(M.a, {
                       description: K,
                       label: H,
                       link: '/settings/account/login_verification/backup_code',
                     }),
-                    g.a.createElement(M.a, {
+                    _.a.createElement(M.a, {
                       description: ue,
                       label: le,
                       link: '/settings/account/login_verification/temporary_password',
@@ -10387,7 +10381,7 @@
             ]),
             n
           )
-        })(g.a.Component)
+        })(_.a.Component)
       b()(Oe, 'contextType', D.a)
       t.default = C(Oe)
     },
@@ -10412,27 +10406,27 @@
         m = (n('z84I'), n('ho0z'), n('ERkP')),
         E = n.n(m),
         b = n('k49u'),
-        _ = n('wvRX'),
-        g = n('rxPX'),
+        g = n('wvRX'),
+        _ = n('rxPX'),
         y = n('0KEI'),
-        v = Object(g.a)()
+        v = Object(_.a)()
           .propsFromState(function () {
-            return { fetchStatus: _.f, loginVerificationSettings: _.g }
+            return { fetchStatus: g.f, loginVerificationSettings: g.g }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_SECURITY_KEYS_SCREEN',
               ),
-              enrollIn2FA: _.d,
-              fetchLoginVerificationSettings: _.e,
+              enrollIn2FA: g.d,
+              fetchLoginVerificationSettings: g.e,
             }
           }),
         S = n('v//M'),
         w = n('3XMw'),
         C = n.n(w),
-        T = n('N9bX'),
-        A = n('5FtR'),
+        A = n('N9bX'),
+        T = n('5FtR'),
         k = n('7FtF'),
         L = n('RKmr'),
         O = n('eb3s'),
@@ -10470,7 +10464,7 @@
                       o._renderU2fSecurityKeys(),
                       o.state.showMaxKeyLimitConfirmation ? o._renderMaxKeyLimitConfirmation() : null,
                     )
-                  : E.a.createElement(A.a, { to: '/settings/account/login_verification' })
+                  : E.a.createElement(T.a, { to: '/settings/account/login_verification' })
               }),
               p()(s()(o), '_renderMaxKeyLimitConfirmation', function () {
                 return E.a.createElement(O.a, {
@@ -10488,7 +10482,7 @@
               }),
               p()(s()(o), '_handleAddSecurityKey', function () {
                 var e = o.props.loginVerificationSettings.methods
-                Array.isArray(e.U2fSecurityKey) && e.U2fSecurityKey.length >= T.a
+                Array.isArray(e.U2fSecurityKey) && e.U2fSecurityKey.length >= A.a
                   ? o.setState({ showMaxKeyLimitConfirmation: !0 })
                   : o._handleKeyEnroll()
               }),
@@ -10612,17 +10606,17 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('P1r1'),
-        _ = n('LXAX'),
-        g = n('G6rE'),
+        g = n('LXAX'),
+        _ = n('G6rE'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = Object(y.a)()
           .propsFromState(function () {
-            return { loggedInUser: g.e.selectLoggedInUser }
+            return { loggedInUser: _.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
-              clearUsernameAvailability: _.a,
+              clearUsernameAvailability: g.a,
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_SCREEN_NAME_SCREEN',
               ),
@@ -10632,15 +10626,15 @@
           .withAnalytics({ page: 'settings', section: 'screen_name' }),
         w = n('3XMw'),
         C = n.n(w),
-        T = n('yoO3'),
-        A =
+        A = n('yoO3'),
+        T =
           (n('ho0z'),
           n('z84I'),
           n('LW0h'),
           n('7x/C'),
           Object(y.a)()
             .propsFromState(function () {
-              return { loggedInUser: g.e.selectLoggedInUser, usernameData: _.c }
+              return { loggedInUser: _.e.selectLoggedInUser, usernameData: g.c }
             })
             .adjustStateProps(function (e) {
               var t = e.loggedInUser,
@@ -10661,7 +10655,7 @@
               }
             })
             .propsFromActions(function () {
-              return { fetchUsernameAvailability: _.b }
+              return { fetchUsernameAvailability: g.b }
             })),
         k = n('VY6S'),
         L = n('MWbm'),
@@ -10785,7 +10779,7 @@
             altOptionText: { display: 'block', paddingVertical: e.spaces.space12 },
           }
         }),
-        U = A(N),
+        U = T(N),
         H = n('7FtF'),
         K = C.a.je506a60,
         j = (function (e) {
@@ -10831,7 +10825,7 @@
                     a = this.state.screenName,
                     r = a && n && a !== n.screen_name
                   return E.a.createElement(
-                    T.a,
+                    A.a,
                     null,
                     E.a.createElement(
                       H.a,
@@ -10868,15 +10862,15 @@
         m = (n('2G9S'), n('KqXw'), n('WNMA'), n('hBpG'), n('7x/C'), n('ho0z'), n('0zG9'), n('Blm6'), n('ERkP')),
         E = n.n(m),
         b = n('wvRX'),
-        _ = n('rxPX'),
-        g = n('0KEI'),
-        y = Object(_.a)()
+        g = n('rxPX'),
+        _ = n('0KEI'),
+        y = Object(g.a)()
           .propsFromState(function () {
             return { fetchStatus: b.f, loginVerificationSettings: b.g }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_MANAGE_SECURITY_KEY_SCREEN',
               ),
               fetchLoginVerificationSettings: b.e,
@@ -10886,8 +10880,8 @@
         S = n('3XMw'),
         w = n.n(S),
         C = n('5FtR'),
-        T = n('7FtF'),
-        A = n('MWbm'),
+        A = n('7FtF'),
+        T = n('MWbm'),
         k = n('p+r5'),
         L = n('RKmr'),
         O = n('0yYu'),
@@ -10925,10 +10919,10 @@
                   i = o && e._getSecurityKeyAddedDate(o.createdAtMs)
                 return o
                   ? E.a.createElement(
-                      T.a,
+                      A.a,
                       { location: n, title: R },
                       E.a.createElement(
-                        A.a,
+                        T.a,
                         null,
                         E.a.createElement(k.a, {
                           defaultValue: o.name || '('.concat(H, ')'),
@@ -10938,7 +10932,7 @@
                           style: j.formTextInput,
                         }),
                         E.a.createElement(
-                          A.a,
+                          T.a,
                           { style: j.settingDescriptionCellContainer },
                           E.a.createElement(L.a, { description: D({ securityKeyAddedDate: i }) }),
                         ),
@@ -11060,15 +11054,15 @@
         m = n('ERkP'),
         E = n.n(m),
         b = n('EPsT'),
-        _ = n('vEo5'),
-        g = n('wvRX'),
+        g = n('vEo5'),
+        _ = n('wvRX'),
         y = n('1YZw'),
         v = n('P1r1'),
         S = n('rxPX'),
         w = n('0KEI'),
         C = Object(S.a)()
           .propsFromState(function () {
-            return { fetchStatus: _.selectFetchStatus, phones: _.selectPhoneNumbers, loginVerificationSettings: g.g }
+            return { fetchStatus: g.selectFetchStatus, phones: g.selectPhoneNumbers, loginVerificationSettings: _.g }
           })
           .propsFromActions(function () {
             return {
@@ -11076,16 +11070,16 @@
               createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_PHONE_SCREEN',
               ),
-              fetchDevices: _.fetchDevices,
+              fetchDevices: g.fetchDevices,
               fetchSettings: v.e,
-              removeDevice: _.removeDevice,
-              fetchLoginVerificationSettings: g.e,
+              removeDevice: g.removeDevice,
+              fetchLoginVerificationSettings: _.e,
             }
           })
           .withAnalytics({ page: 'settings', section: 'phone' }),
-        T = n('v//M'),
-        A = n('3XMw'),
-        k = n.n(A),
+        A = n('v//M'),
+        T = n('3XMw'),
+        k = n.n(T),
         L = n('yoO3'),
         O = n('7FtF'),
         I = n('MWbm'),
@@ -11202,7 +11196,7 @@
                     E.a.createElement(
                       O.a,
                       { location: n, title: M },
-                      E.a.createElement(T.a, {
+                      E.a.createElement(A.a, {
                         fetchStatus: t,
                         onRequestRetry: this._handleFetchDevices,
                         render: this._renderOCFPhone,
@@ -11264,16 +11258,16 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('2G9S'), n('ERkP')),
-        _ = n.n(b),
-        g = n('G6rE'),
+        g = n.n(b),
+        _ = n('G6rE'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = (n('7x/C'), n('JtPf'), n('oEOe')),
         w = n('RqPI'),
         C = n('kGix'),
-        T = n('XMGw'),
-        A = n('Ssj5'),
-        k = ''.concat(T.a, '/email_notifications'),
+        A = n('XMGw'),
+        T = n('Ssj5'),
+        k = ''.concat(A.a, '/email_notifications'),
         L = 'rweb/'.concat(k),
         O = S.a(L, 'FETCH_EMAIL_NOTIFICATIONS'),
         I = S.a(L, 'UPDATE_EMAIL_NOTIFICATIONS'),
@@ -11298,7 +11292,7 @@
             return e
         }
       }
-      A.a.register(E()({}, k, P))
+      T.a.register(E()({}, k, P))
       var R = function (e) {
           return e[k].fetchStatus
         },
@@ -11332,7 +11326,7 @@
           }
         },
         U = function (e) {
-          var t = g.e.selectLoggedInUser(e)
+          var t = _.e.selectLoggedInUser(e)
           return !(!t || !t.verified)
         },
         H = Object(y.a)()
@@ -11411,7 +11405,7 @@
                   c = r.type,
                   s = re[t]
                 return a.hasOwnProperty(t)
-                  ? _.a.createElement(q.a, {
+                  ? g.a.createElement(q.a, {
                       checked: a[t],
                       disabled: !a.send_twitter_emails && 'send_twitter_emails' !== t,
                       helpText: o,
@@ -11429,7 +11423,7 @@
                   a = re[t],
                   r = n[t]
                 return n.hasOwnProperty(t)
-                  ? _.a.createElement(X.a, {
+                  ? g.a.createElement(X.a, {
                       disabled: !n.send_twitter_emails,
                       key: t,
                       label: a,
@@ -11445,7 +11439,7 @@
                   r = re[t],
                   o = a[t]
                 return a.hasOwnProperty(t)
-                  ? _.a.createElement(q.a, {
+                  ? g.a.createElement(q.a, {
                       checked: o && 'Weekly' === o,
                       disabled: !a.send_twitter_emails,
                       key: t,
@@ -11457,7 +11451,7 @@
               }),
               E()(u()(e), '_render', function () {
                 var t = e.props.isVerified
-                return _.a.createElement(
+                return g.a.createElement(
                   W.a,
                   null,
                   e._renderBooleanSetting('send_twitter_emails', {
@@ -11468,23 +11462,23 @@
                     withBottomBorder: t,
                   }),
                   t
-                    ? _.a.createElement(
-                        _.a.Fragment,
+                    ? g.a.createElement(
+                        g.a.Fragment,
                         null,
-                        _.a.createElement(Q.a, null),
-                        _.a.createElement(J.b, { text: ne }),
+                        g.a.createElement(Q.a, null),
+                        g.a.createElement(J.b, { text: ne }),
                         e._renderBooleanSetting('send_email_vit_weekly'),
                       )
                     : null,
-                  _.a.createElement(Q.a, null),
-                  _.a.createElement(J.b, { text: ee }),
+                  g.a.createElement(Q.a, null),
+                  g.a.createElement(J.b, { text: ee }),
                   e._renderBooleanSetting('send_network_activity_email'),
                   e._renderBooleanSetting('send_new_direct_text_email'),
                   e._renderBooleanSetting('send_shared_tweet_email'),
                   e._renderNetworkDigestSetting('send_network_digest'),
                   e._renderPerformanceDigestSetting('send_performance_digest', { withBottomBorder: !1 }),
-                  _.a.createElement(Q.a, null),
-                  _.a.createElement(J.b, { text: te }),
+                  g.a.createElement(Q.a, null),
+                  g.a.createElement(J.b, { text: te }),
                   e._renderBooleanSetting('send_email_newsletter'),
                   e._renderBooleanSetting('send_activation_email'),
                   e._renderBooleanSetting('send_resurrection_email'),
@@ -11544,13 +11538,13 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.location
-                  return _.a.createElement(
+                  return g.a.createElement(
                     Y.a,
                     null,
-                    _.a.createElement(
+                    g.a.createElement(
                       z.a,
                       { location: n, title: $ },
-                      _.a.createElement(V.a, {
+                      g.a.createElement(V.a, {
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
@@ -11562,7 +11556,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       t.default = H(ie)
     },
     u3ZE: function (e, t, n) {
@@ -11608,13 +11602,13 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('yH/f'), n('ERkP')),
-        _ = n.n(b),
-        g = n('P1r1'),
+        g = n.n(b),
+        _ = n('P1r1'),
         y = n('rxPX'),
         v = n('0KEI'),
         S = Object(y.a)()
           .propsFromState(function () {
-            return { settings: g.g }
+            return { settings: _.g }
           })
           .adjustStateProps(function (e) {
             return { protectPasswordReset: e.settings.protect_password_reset }
@@ -11624,13 +11618,13 @@
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_SECURITY_SCREEN',
               ),
-              updateSettings: g.M,
+              updateSettings: _.M,
             }
           }),
         w = n('3XMw'),
         C = n.n(w),
-        T = n('yoO3'),
-        A = n('98E1'),
+        A = n('yoO3'),
+        T = n('98E1'),
         k = n('7JQg'),
         L = n('MWbm'),
         O = n('v6aA'),
@@ -11682,24 +11676,24 @@
                     t = e.location,
                     n = e.protectPasswordReset,
                     a = this.state.showPasswordDialog
-                  return _.a.createElement(
+                  return g.a.createElement(
                     k.c,
                     { namespace: B },
-                    _.a.createElement(
-                      T.a,
+                    g.a.createElement(
+                      A.a,
                       null,
-                      _.a.createElement(
-                        A.a,
+                      g.a.createElement(
+                        T.a,
                         { location: t, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: a, title: M },
-                        _.a.createElement(
+                        g.a.createElement(
                           L.a,
                           null,
-                          _.a.createElement(I.a, { description: N }),
+                          g.a.createElement(I.a, { description: N }),
                           this._renderTwoFactorAuthentication(),
-                          _.a.createElement(F.a, null),
-                          _.a.createElement(P.b, { text: H }),
-                          _.a.createElement(I.a, { description: j }),
-                          _.a.createElement(R.a, {
+                          g.a.createElement(F.a, null),
+                          g.a.createElement(P.b, { text: H }),
+                          g.a.createElement(I.a, { description: j }),
+                          g.a.createElement(R.a, {
                             checked: !!n,
                             label: K,
                             learnMoreLink: 'https://help.twitter.com/safety-and-security/account-security-tips',
@@ -11715,20 +11709,20 @@
               {
                 key: '_renderTwoFactorAuthentication',
                 value: function () {
-                  var e = _.a.createElement(P.b, { text: D }),
-                    t = _.a.createElement(x.a, { label: D, link: '/settings/account/login_verification' }),
-                    n = _.a.createElement(I.a, {
+                  var e = g.a.createElement(P.b, { text: D }),
+                    t = g.a.createElement(x.a, { label: D, link: '/settings/account/login_verification' }),
+                    n = g.a.createElement(I.a, {
                       description: U,
                       learnMoreLabel: V,
                       learnMoreLink: 'https://help.twitter.com/managing-your-account/two-factor-authentication',
                     })
-                  return _.a.createElement(_.a.Fragment, null, e, n, t)
+                  return g.a.createElement(g.a.Fragment, null, e, n, t)
                 },
               },
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       E()(Y, 'contextType', O.a)
       t.default = S(Y)
     },
@@ -11804,10 +11798,10 @@
         return C
       }),
         n.d(t, 'e', function () {
-          return T
+          return A
         }),
         n.d(t, 'd', function () {
-          return A
+          return T
         }),
         n.d(t, 'a', function () {
           return k
@@ -11833,10 +11827,10 @@
         m = 'rweb/'.concat(p),
         E = c.a(m, 'FETCH_SESSIONS'),
         b = c.a(m, 'REVOKE_SESSION'),
-        _ = c.a(m, 'REVOKE_ALL_SESSIONS'),
-        g = { fetchStatus: l.a.NONE, sessions: {} }
+        g = c.a(m, 'REVOKE_ALL_SESSIONS'),
+        _ = { fetchStatus: l.a.NONE, sessions: {} }
       function y() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
           t = arguments.length > 1 ? arguments[1] : void 0
         switch (t.type) {
           case E.REQUEST:
@@ -11896,15 +11890,15 @@
         C = Object(s.createSelector)(w, function (e) {
           return Object.values(e)
         }),
-        T = function (e, t) {
+        A = function (e, t) {
           return w(e)[t]
         },
-        A = function (e) {
+        T = function (e) {
           return e[p].fetchStatus
         },
         k = function (e) {
           return function (t, n) {
-            return A(n()) === l.a.LOADED ? Promise.resolve() : t(L(e))
+            return T(n()) === l.a.LOADED ? Promise.resolve() : t(L(e))
           }
         },
         L = function (e) {
@@ -11932,7 +11926,7 @@
             var r = a.api
             return c
               .b(t, { params: e, request: r.Settings.revokeAllSessions })({
-                actionTypes: _,
+                actionTypes: g,
                 context: 'REVOKE_ALL_SESSIONS',
               })
               .then(function () {
@@ -11962,7 +11956,7 @@
           return C
         }),
         n.d(t, 'c', function () {
-          return T
+          return A
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -12015,14 +12009,14 @@
           return e.recentSearches.fetched
         },
         b = 'rweb/recentSearches/INIT_FROM_CACHE',
-        _ = function (e) {
+        g = function (e) {
           return { type: b, payload: e }
         },
-        g = 'rweb/recentSearches/REMOVE_QUERY',
+        _ = 'rweb/recentSearches/REMOVE_QUERY',
         y = function (e) {
           return function (t, n, a) {
             a.userPersistence
-            t({ payload: e, type: g })
+            t({ payload: e, type: _ })
             var r = n().recentSearches
             return Object(s.n)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
           }
@@ -12045,7 +12039,7 @@
             return Object(s.n)(n()) ? t(d(r.recentSearches)) : Promise.resolve()
           }
         },
-        T = function () {
+        A = function () {
           return function (e, t, n) {
             n.userPersistence
             return t().recentSearches.fetched
@@ -12057,12 +12051,12 @@
                     ? a
                         .get(u)
                         .then(function (t) {
-                          e(_(t))
+                          e(g(t))
                         })
                         .catch(function () {
-                          e(_())
+                          e(g())
                         })
-                    : (e(_()), Promise.resolve())
+                    : (e(g()), Promise.resolve())
                 })
           }
         }
@@ -12075,7 +12069,7 @@
               var n = t.payload,
                 a = n ? f(n, e.recentSearches) : []
               return a.length > 49 && a.splice(49, 1), n && a.unshift(n), i()(i()({}, e), {}, { recentSearches: a })
-            case g:
+            case _:
               var r = t.payload,
                 o = r ? f(r, e.recentSearches) : []
               return i()(i()({}, e), {}, { recentSearches: o })
@@ -12107,10 +12101,10 @@
           return C
         }),
         n.d(t, 'b', function () {
-          return T
+          return A
         }),
         n.d(t, 'c', function () {
-          return A
+          return T
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -12139,15 +12133,15 @@
           SUCCESS: 'rweb/settings/loginVerification/DISABLE_LOGIN_VERIFICATION_SUCCESS',
           FAILURE: 'rweb/settings/loginVerification/DISABLE_LOGIN_VERIFICATION_FAILURE',
         },
-        _ = {
+        g = {
           REQUEST: 'rweb/settings/loginVerification/DISABLE_LOGIN_VERIFICATION_METHOD_REQUEST',
           SUCCESS: 'rweb/settings/loginVerification/DISABLE_LOGIN_VERIFICATION_METHOD_SUCCESS',
           FAILURE: 'rweb/settings/loginVerification/DISABLE_LOGIN_VERIFICATION_METHOD_FAILURE',
         },
-        g = { isOldPushUser: !1, twoFactorAuthEnabled: !1, methods: {}, fetchStatus: u.a.NONE }
+        _ = { isOldPushUser: !1, twoFactorAuthEnabled: !1, methods: {}, fetchStatus: u.a.NONE }
       d.a.register(
         r()({}, h, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case m.REQUEST:
@@ -12182,7 +12176,7 @@
               return s()(s()({}, e), {}, { error: t.payload, fetchStatus: u.a.FAILED })
             case b.REQUEST:
               return s()(s()({}, e), {}, { isOldPushUser: !1, twoFactorAuthEnabled: !1, methods: {} })
-            case _.SUCCESS:
+            case g.SUCCESS:
               var l = (t && t.meta && t.meta.method) || '',
                 d = Object.keys(e.methods).reduce(function (t, n) {
                   return n !== l && (t[n] = e.methods[n]), t
@@ -12236,7 +12230,7 @@
             })
           }
         },
-        T = function () {
+        A = function () {
           return function (e, t, n) {
             var a = n.api
             return Object(f.c)(e, { request: a.Settings.disable2FA })({
@@ -12245,13 +12239,13 @@
             })
           }
         },
-        A = function (e) {
+        T = function (e) {
           var t = e.method
           return function (e, n, a) {
             var r = a.api,
               o = y(n()).methods[t]
             return Object(f.b)(e, { request: r.Settings.disable2FAMethod, params: { methodId: o } })({
-              actionTypes: _,
+              actionTypes: g,
               context: 'DISABLE_LOGIN_VERIFICATION_METHOD',
               meta: { method: t },
             })
@@ -12261,7 +12255,7 @@
     xCYy: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return _
+        return g
       })
       var a = n('ERkP'),
         r = n.n(a),
@@ -12289,7 +12283,7 @@
           r.a.createElement(h.a, { title: m }, r.a.createElement(p.b, null, E))
         )
       }
-      function _(e) {
+      function g(e) {
         var t = r.a.useContext(o.a).featureSwitches,
           n = Object(f.a)(u.n),
           a = Object(i.b)(l.u, t)
@@ -12317,9 +12311,9 @@
         m = (n('2G9S'), n('ERkP')),
         E = n.n(m),
         b = n('P1r1'),
-        _ = n('rxPX'),
-        g = n('0KEI'),
-        y = Object(_.a)()
+        g = n('rxPX'),
+        _ = n('0KEI'),
+        y = Object(g.a)()
           .propsFromState(function () {
             return { settings: b.g }
           })
@@ -12328,7 +12322,7 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_TAGGING_SCREEN',
               ),
               updateSettings: b.M,
@@ -12339,8 +12333,8 @@
         S = n.n(v),
         w = n('yoO3'),
         C = n('7FtF'),
-        T = n('oFxb'),
-        A = n('MWbm'),
+        A = n('oFxb'),
+        T = n('MWbm'),
         k = S.a.f56d108e,
         L = S.a.f56d108e,
         O = S.a.gd758533,
@@ -12380,9 +12374,9 @@
                       C.a,
                       { location: t, title: k },
                       E.a.createElement(
-                        A.a,
+                        T.a,
                         null,
-                        E.a.createElement(T.a, {
+                        E.a.createElement(A.a, {
                           description: O,
                           label: L,
                           name: 'allow_media_tagging',
@@ -12423,27 +12417,27 @@
         m = n('KEM+'),
         E = n.n(m),
         b = (n('2G9S'), n('ERkP')),
-        _ = n.n(b),
-        g = n('wtjx'),
+        g = n.n(b),
+        _ = n('wtjx'),
         y = (n('7x/C'), n('JtPf'), n('oEOe')),
         v = n('RqPI'),
         S = n('kGix'),
         w = n('Ssj5'),
         C = 'safeSearch',
-        T = 'rweb/'.concat(C),
-        A = y.a(T, 'FETCH_SEARCH_SETTINGS'),
-        k = y.a(T, 'UPDATE_SEARCH_SETTINGS'),
+        A = 'rweb/'.concat(C),
+        T = y.a(A, 'FETCH_SEARCH_SETTINGS'),
+        k = y.a(A, 'UPDATE_SEARCH_SETTINGS'),
         L = { fetchStatus: S.a.NONE, searchSettings: {} }
       w.a.register(
         E()({}, C, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case A.REQUEST:
+            case T.REQUEST:
               return r()(r()({}, e), {}, { fetchStatus: S.a.LOADING })
-            case A.FAILURE:
+            case T.FAILURE:
               return r()(r()({}, e), {}, { fetchStatus: S.a.FAILED })
-            case A.SUCCESS:
+            case T.SUCCESS:
               return r()(r()({}, e), {}, { searchSettings: t.payload || L.searchSettings, fetchStatus: S.a.LOADED })
             case k.REQUEST:
               var n = t.meta || {},
@@ -12467,10 +12461,10 @@
               r = v.r(t())
             return r
               ? y.b(e, { params: { userId: r }, request: a.SafeSearch.fetch })({
-                  actionTypes: A,
+                  actionTypes: T,
                   context: 'FETCH_SEARCH_SETTINGS',
                 })
-              : Promise.resolve(e({ type: A.FAILURE }))
+              : Promise.resolve(e({ type: T.FAILURE }))
           }
         },
         P = function (e, t) {
@@ -12478,7 +12472,7 @@
             var i = o.api,
               c = a(),
               s = v.r(c)
-            if (!s) return Promise.resolve(n({ type: A.FAILURE }))
+            if (!s) return Promise.resolve(n({ type: T.FAILURE }))
             var l = r()(r()({}, O(c)), {}, { userId: s })
             return (
               (l[e] = t),
@@ -12496,7 +12490,7 @@
         N = n('0KEI'),
         D = Object(M.a)()
           .propsFromState(function () {
-            return { fetchStatus: I, lastSearchQuery: g.f, settings: O }
+            return { fetchStatus: I, lastSearchQuery: _.f, settings: O }
           })
           .propsFromActions(function () {
             return {
@@ -12556,10 +12550,10 @@
               }),
               E()(u()(e), '_render', function () {
                 var t = e.props.settings
-                return _.a.createElement(
+                return g.a.createElement(
                   'div',
                   null,
-                  _.a.createElement(B.a, {
+                  g.a.createElement(B.a, {
                     checked: t.optInFiltering,
                     helpText: Z,
                     label: q,
@@ -12568,7 +12562,7 @@
                     onChange: e._handleSettingChanged,
                     testID: G,
                   }),
-                  _.a.createElement(B.a, {
+                  g.a.createElement(B.a, {
                     checked: t.optInBlocking,
                     helpText: $,
                     label: X,
@@ -12601,10 +12595,10 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.history
-                  return _.a.createElement(
+                  return g.a.createElement(
                     K.b,
                     { history: n, title: W },
-                    _.a.createElement(H.a, {
+                    g.a.createElement(H.a, {
                       fetchStatus: t,
                       onRequestRetry: this._handleFetchSettings,
                       render: this._render,
@@ -12615,7 +12609,7 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(g.a.Component)
       t.default = D(te)
     },
   },
