@@ -2869,6 +2869,7 @@
         R = n('JYMr'),
         V = n('rHpw'),
         z = [
+          'children',
           'leftControlShouldClose',
           'percentageComplete',
           'rightControl',
@@ -2878,34 +2879,37 @@
         ],
         A = x.a.a6777c1b,
         M = function (e) {
-          var a = e.leftControlShouldClose,
-            n = e.percentageComplete,
-            t = e.rightControl,
-            r = e.screenRef,
-            l = e.withCenteredLogo,
-            i = e.withInfoButton,
-            o = b()(e, z),
-            s = Object(B.f)(),
-            u = a ? 'close' : 'back',
-            d = h,
-            p = l ? c.a.createElement(K.a, { style: U.iconTwitter }) : void 0,
-            m = i ? c.a.createElement(I.a, { style: U.rightControl }, c.a.createElement(T, null), t) : t,
-            f = n ? c.a.createElement(R.a, { progress: n }) : void 0,
-            y = function () {
-              a ? s.goBackThroughModals({ fallbackPath: d }) : s.goBack({ backLocation: d })
+          var a = e.children,
+            n = e.leftControlShouldClose,
+            t = e.percentageComplete,
+            r = e.rightControl,
+            l = e.screenRef,
+            i = e.withCenteredLogo,
+            o = e.withInfoButton,
+            s = b()(e, z),
+            u = Object(B.f)(),
+            d = n ? 'close' : 'back',
+            p = h,
+            m = i ? c.a.createElement(K.a, { style: U.iconTwitter }) : void 0,
+            f = o ? c.a.createElement(I.a, { style: U.rightControl }, c.a.createElement(T, null), r) : r,
+            y = t ? c.a.createElement(R.a, { progress: t }) : void 0,
+            v = c.a.createElement(I.a, { style: U.childrenWrapper }, a),
+            w = function () {
+              n ? u.goBackThroughModals({ fallbackPath: p }) : u.goBack({ backLocation: p })
             }
           return (
-            r && (r.current = { goBack: y }),
+            l && (l.current = { goBack: w }),
             c.a.createElement(
               E.b,
-              g()({}, o, {
-                backButtonType: u,
-                backLocation: d,
-                centeredLogo: p,
+              g()({}, s, {
+                backButtonType: d,
+                backLocation: p,
+                centeredLogo: m,
+                children: v,
                 documentTitle: A,
-                onBackClick: y,
-                rightControl: m,
-                secondaryBar: f,
+                onBackClick: w,
+                rightControl: f,
+                secondaryBar: y,
               }),
             )
           )
@@ -2914,6 +2918,7 @@
           return {
             iconTwitter: { color: e.colors.primary, flexGrow: 1, height: '1.75rem' },
             rightControl: { alignItems: 'center', flexDirection: 'row', gap: e.spaces.space4 },
+            childrenWrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: 'auto' },
           }
         }),
         j = n('5FtR'),

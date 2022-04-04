@@ -4,7 +4,7 @@
     e5HP: function (e, o, t) {
       'use strict'
       t.d(o, 'a', function () {
-        return j
+        return K
       })
       var r = t('VrFO'),
         n = t.n(r),
@@ -22,17 +22,17 @@
         m = t('3XMw'),
         y = t.n(m),
         b = t('rHpw'),
-        v = t('MWbm'),
-        g = t('yiKp'),
-        _ = t.n(g),
+        g = t('MWbm'),
+        _ = t('yiKp'),
+        v = t.n(_),
         E = t('Lsrn'),
         O = t('k/Ka'),
         I = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(O.a)(
             'svg',
-            _()(
-              _()({}, e),
+            v()(
+              v()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -56,9 +56,9 @@
         S = y.a.if2bf8b3,
         N = y.a.f3624b5c,
         k = y.a.b4b3b113,
-        P = y.a.be22205f,
-        K = y.a.hcbbe447,
-        j = (function (e) {
+        M = y.a.be22205f,
+        P = y.a.hcbbe447,
+        K = (function (e) {
           i()(t, e)
           var o = u()(t)
           function t() {
@@ -75,9 +75,9 @@
                     r = e.style,
                     n = e.withCircleIcon ? L : F.a
                   return p.a.createElement(
-                    v.a,
-                    { style: [R.root, r] },
-                    p.a.createElement(n, { style: [R.icon, o && R[o]] }),
+                    g.a,
+                    { style: [j.root, r] },
+                    p.a.createElement(n, { style: [j.icon, o && j[o]] }),
                     p.a.createElement(h.b, { color: o, nativeID: t, size: 'subtext2' }, this._getPromotedLabel()),
                   )
                 },
@@ -105,12 +105,12 @@
                       ? f
                         ? N
                         : d
-                        ? P
+                        ? M
                         : S
                       : f
                       ? k({ fullName: a })
                       : d
-                      ? K({ fullName: a })
+                      ? P({ fullName: a })
                       : C({ fullName: a }))
                   )
                 },
@@ -119,8 +119,8 @@
             t
           )
         })(p.a.Component)
-      d()(j, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
-      var R = b.a.create(function (e) {
+      d()(K, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
+      var j = b.a.create(function (e) {
         return {
           root: { alignItems: 'center', flexDirection: 'row' },
           icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
@@ -133,7 +133,7 @@
       'use strict'
       t.r(o),
         t.d(o, 'FollowersScreen', function () {
-          return se
+          return ie
         })
       var r = t('VrFO'),
         n = t.n(r),
@@ -151,9 +151,9 @@
         m = t.n(h),
         y = t('es0u'),
         b = (t('KqXw'), t('WNMA'), t('XnvM')),
-        v = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
-        g = t('WpDa'),
-        _ = t('ZNT5'),
+        g = (t('LW0h'), t('7x/C'), t('z84I'), t('8UdT')),
+        _ = t('WpDa'),
+        v = t('ZNT5'),
         E = t('G6rE'),
         O = t('hqKg'),
         I = t('0KEI'),
@@ -207,7 +207,7 @@
                 e
                   .selectEntries(r)
                   .filter(function (e) {
-                    if (!e.content || e.type !== v.b.User) return !1
+                    if (!e.content || e.type !== g.b.User) return !1
                     var o = e.content.id,
                       t = E.e.select(r, o)
                     return t && !t.followed_by
@@ -222,26 +222,26 @@
           fetchOneUserByScreenNameIfNeeded: E.e.fetchOneByScreenNameIfNeeded,
           fetchKnownFollowersIfNeeded: b.a,
         },
-        P = Object(L.f)(N, k),
-        K = t('yiKp'),
-        j = t.n(K),
-        R = t('QIgh'),
-        U = t('88ay'),
-        M = t('Ka9G'),
+        M = Object(L.f)(N, k),
+        P = t('yiKp'),
+        K = t.n(P),
+        j = t('QIgh'),
+        R = t('88ay'),
+        U = t('Ka9G'),
         G = function (e) {
           var o = e.withFollowerActionMenu,
             t = void 0 !== o && o
-          return j()(j()({}, Object(R.a)({})), {}, p()({}, v.b.User, Object(M.a)({ decoration: t ? U.f : void 0 })))
+          return K()(K()({}, Object(j.a)({})), {}, p()({}, g.b.User, Object(U.a)({ decoration: t ? R.f : void 0 })))
         },
         A = t('7wqI'),
         x = t('GOQE'),
         T = t('v//M'),
         H = t('oQhu'),
         Q = t('yoO3'),
-        W = t('txMZ'),
-        q = t('5FtR'),
-        Y = t('fTQJ'),
-        z = t('VS6U'),
+        z = t('txMZ'),
+        W = t('5FtR'),
+        q = t('fTQJ'),
+        Y = t('VS6U'),
         B = t('v6aA'),
         V = t('FIs5'),
         D = t('k/OQ'),
@@ -287,7 +287,7 @@
         },
         ae = {
           superfollowers: function (e) {
-            return Object(_.a)({
+            return Object(v.a)({
               timelineId: 'superFollowersGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchSuperFollowers
@@ -299,11 +299,11 @@
               },
               context: 'FETCH_SUPER_FOLLOWERS',
               perfKey: 'superFollowersGraphQL',
-              formatResponse: g.a,
+              formatResponse: _.a,
             })
           },
           followers_you_follow: function (e) {
-            return Object(_.a)({
+            return Object(v.a)({
               timelineId: 'followersYouKnowGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowersYouKnow
@@ -315,11 +315,11 @@
               },
               context: 'FETCH_FOLLOWERS_YOU_KNOW',
               perfKey: 'followersYouKnowGraphQL',
-              formatResponse: g.a,
+              formatResponse: _.a,
             })
           },
           followers: function (e) {
-            return Object(_.a)({
+            return Object(v.a)({
               timelineId: 'followersGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowers
@@ -331,11 +331,11 @@
               },
               context: 'FETCH_FOLLOWERS',
               perfKey: 'followersGraphQL',
-              formatResponse: g.a,
+              formatResponse: _.a,
             })
           },
           following: function (e) {
-            return Object(_.a)({
+            return Object(v.a)({
               timelineId: 'followingGraphQL-'.concat(e),
               getEndpoint: function (e) {
                 return e.Graphql.fetchFollowing
@@ -347,14 +347,11 @@
               },
               context: 'FETCH_FOLLOWING',
               perfKey: 'followingGraphQL',
-              formatResponse: g.a,
+              formatResponse: _.a,
             })
           },
         },
-        ce = Object(H.a)(function (e, o) {
-          return e && ae[o](e)
-        }),
-        ie = Object(H.a)(function (e, o, t, r) {
+        ce = Object(H.a)(function (e, o, t, r) {
           return function () {
             var n = o === e,
               l = n && 'following' === r ? $ : void 0,
@@ -364,7 +361,7 @@
             return m.a.createElement(V.a, { buttonLink: a, buttonText: l, header: c, message: i })
           }
         }),
-        se = (function (e) {
+        ie = (function (e) {
           u()(t, e)
           var o = d()(t)
           function t() {
@@ -373,20 +370,27 @@
             for (var r = arguments.length, l = new Array(r), a = 0; a < r; a++) l[a] = arguments[a]
             return (
               (e = o.call.apply(o, [this].concat(l))),
+              p()(
+                i()(e),
+                '_getMemoizeModule',
+                Object(H.a)(function (e, o) {
+                  return e && ae[o](e)
+                }),
+              ),
               p()(i()(e), '_render', function () {
                 var o = e.props,
                   t = o.loggedInUserId,
                   r = o.mode,
                   n = o.screenName,
                   l = o.user,
-                  a = ce(null == l ? void 0 : l.id_str, r),
-                  c = ie(t, null == l ? void 0 : l.id_str, n, r),
+                  a = e._getMemoizeModule(null == l ? void 0 : l.id_str, r),
+                  c = ce(t, null == l ? void 0 : l.id_str, n, r),
                   i =
                     e._isOwnProfile() &&
                     'followers' === r &&
                     e.context.featureSwitches.isTrue('followers_management_remove_follower_from_followers_list')
                 return a
-                  ? m.a.createElement(Y.a, {
+                  ? m.a.createElement(q.a, {
                       entryConfiguration: e._getMemoizedEntryConfiguration(i),
                       loadingAccessibilityLabel: Z,
                       module: a,
@@ -464,12 +468,12 @@
                     ]
                   return w
                     ? m.a.createElement(
-                        W.a,
+                        z.a,
                         { scribeSection: a, userId: i && i.id_str },
                         m.a.createElement(
                           Q.a,
                           null,
-                          m.a.createElement(z.a, {
+                          m.a.createElement(Y.a, {
                             backLocation: '/'.concat(c),
                             documentTitle: s,
                             history: t,
@@ -486,7 +490,7 @@
                           }),
                         ),
                       )
-                    : m.a.createElement(q.a, { to: '/'.concat(c) })
+                    : m.a.createElement(W.a, { to: '/'.concat(c) })
                 },
               },
               {
@@ -517,7 +521,7 @@
                     var o = this.props,
                       t = o.cleanupOwnFollowersList,
                       r = o.user,
-                      n = ce(null == r ? void 0 : r.id_str, e)
+                      n = this._getMemoizeModule(null == r ? void 0 : r.id_str, e)
                     n && t(n)
                   }
                 },
@@ -526,8 +530,8 @@
             t
           )
         })(m.a.Component)
-      p()(se, 'contextType', B.a)
-      o.default = P(se)
+      p()(ie, 'contextType', B.a)
+      o.default = M(ie)
     },
     uFYP: function (e, o, t) {
       'use strict'

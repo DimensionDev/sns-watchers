@@ -5023,6 +5023,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e37836f8', 'Report Detail'),
           a('e238c59f', 'What’s next'),
           a('a098fa3c', 'Tweet content hidden'),
+          a('fb35e52a', 'View Rule'),
+          a('b7ba7129', 'Violation found'),
+          a('d90b8c04', 'No Violation Found'),
           a('h030c24b', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c33', 'Follow your interests.'),
@@ -5311,10 +5314,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8702fea', function (e) {
             return 'Get ' + e.couponAmount + ' on us!'
           }),
-          a('i2e3c1ce', function (e) {
-            return (
-              'Get started now and get ' + e.couponAmount + ' off on your first promotion before February 28, 2022.'
-            )
+          a('e44dc578', function (e) {
+            return 'Get started now and get ' + e.couponAmount + ' off on your first promotion before ' + e.date + '.'
           }),
           a('fcc839b5', 'What’s your goal?'),
           a('d80964aa', 'Increase engagement'),
@@ -5930,6 +5931,30 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db9ed19f', function (e) {
             return e.formattedCount + ' day' + n(e.count, '', 's') + ' left'
           }),
+          a('e1ebcecb', function (e) {
+            return (
+              e.formattedDays +
+              ' day' +
+              n(e.days, '', 's') +
+              ' ' +
+              e.formattedHours +
+              ' hour' +
+              n(e.hours, '', 's') +
+              ' left'
+            )
+          }),
+          a('cc1da1fd', function (e) {
+            return (
+              e.formattedHours +
+              ' hour' +
+              n(e.hours, '', 's') +
+              ' ' +
+              e.formattedMins +
+              ' minute' +
+              n(e.mins, '', 's') +
+              ' left'
+            )
+          }),
           a('hdf426f5', function (e) {
             return 'Topic · ' + e.description
           }),
@@ -6032,17 +6057,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('bfb44f89', function (e) {
             return e.count + ' here'
-          }),
-          a('dc718e53', function (e) {
-            return '+' + e.count + ' other' + n(e.count, '', 's')
-          }),
+          })
+        a('dc718e53', function (e) {
+          return '+' + e.count + ' other' + n(e.count, '', 's')
+        }),
           a('b03e1629', 'Listen live'),
           a('fb236727', 'Pause'),
           a('fc45ccc5', 'Embedded video'),
-          a('a9edea48', 'Reload')
-        a('f1ad0df1', function (e) {
-          return 'Ad · ' + e.timeRemaining
-        }),
+          a('a9edea48', 'Reload'),
+          a('f1ad0df1', function (e) {
+            return 'Ad · ' + e.timeRemaining
+          }),
           a('ef16ab2b', function (e) {
             return 'Ad by ' + e.advertiserName + ' · ' + e.timeRemaining
           }),

@@ -1405,25 +1405,35 @@
         y = function (e) {
           var t = e.coverTweet,
             n = e.description,
-            a = e.imageAttribution,
-            r = e.mediaType,
-            o = e.pivotText,
-            l = n ? n.trim() : void 0,
-            c = l ? h.a.descriptionTextParts(l) : []
+            a = e.descriptionEntities,
+            r = e.imageAttribution,
+            o = e.mediaType,
+            l = e.pivotText,
+            c = n ? n.trim() : void 0,
+            u = a
+              ? {
+                  description: {
+                    urls: a.map(function (e) {
+                      return { display_url: e.displayUrl, expanded_url: e.expandedUrl, url: e.url, indices: e.indices }
+                    }),
+                  },
+                }
+              : void 0,
+            m = c ? h.a.descriptionTextParts(c, u) : []
           return i.a.createElement(
             s.a,
             { style: f.description },
-            c.length
+            m.length
               ? i.a.createElement(
                   d.b,
                   null,
-                  c.map(function (e, t) {
+                  m.map(function (e, t) {
                     return i.a.createElement(v.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
                   }),
                 )
               : null,
-            b(t, r, a),
-            o ? i.a.createElement(d.b, { color: 'gray700' }, o) : null,
+            b(t, o, r),
+            l ? i.a.createElement(d.b, { color: 'gray700' }, l) : null,
           )
         },
         g = n('pjBI'),
@@ -1439,52 +1449,60 @@
         var t = e.author,
           n = e.coverTweet,
           r = e.description,
-          o = e.imageAttribution,
-          l = e.isTOO,
-          c = e.mediaType,
-          u = e.pivotText,
-          m = e.preTitle,
-          p = e.remindMeButton,
-          h = e.time,
-          v = e.title,
-          f = e.withHashflags,
-          b = function () {
+          o = e.descriptionEntities,
+          l = e.imageAttribution,
+          c = e.isTOO,
+          u = e.mediaType,
+          m = e.pivotText,
+          p = e.preTitle,
+          h = e.remindMeButton,
+          v = e.time,
+          f = e.title,
+          b = e.withHashflags,
+          _ = function () {
             return t
               ? i.a.createElement(
                   s.a,
                   null,
                   i.a.createElement(a.a, { author: t, size: 'body', withLink: !0, withScreenName: !0 }),
-                  h ? _(!0) : null,
+                  v ? I(!0) : null,
                 )
               : null
           },
-          _ = function () {
+          I = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
             return i.a.createElement(
               d.b,
               { color: 'gray700', numberOfLines: 1, size: 'body', style: [E.timeString, e && E.timeStringMargin] },
-              h,
+              v,
             )
           },
-          I = function () {
-            return m
+          C = function () {
+            return p
               ? i.a.createElement(
                   g.a,
                   null,
-                  i.a.createElement(d.b, { color: 'gray700', numberOfLines: 1, size: 'body', weight: 'bold' }, m),
-                  h ? _() : null,
+                  i.a.createElement(d.b, { color: 'gray700', numberOfLines: 1, size: 'body', weight: 'bold' }, p),
+                  v ? I() : null,
                 )
               : null
           }
         return i.a.createElement(
           i.a.Fragment,
           null,
-          l && m ? I() : b() || I(),
-          i.a.createElement(d.b, { dir: 'auto', size: 'title4', style: E.title, weight: 'heavy', withHashflags: f }, v),
-          r || n || o
-            ? i.a.createElement(y, { coverTweet: n, description: r, imageAttribution: o, mediaType: c, pivotText: u })
+          c && p ? C() : _() || C(),
+          i.a.createElement(d.b, { dir: 'auto', size: 'title4', style: E.title, weight: 'heavy', withHashflags: b }, f),
+          r || n || l
+            ? i.a.createElement(y, {
+                coverTweet: n,
+                description: r,
+                descriptionEntities: o,
+                imageAttribution: l,
+                mediaType: u,
+                pivotText: m,
+              })
             : null,
-          p ? i.a.createElement(s.a, { style: E.remindMeButton }, p) : null,
+          h ? i.a.createElement(s.a, { style: E.remindMeButton }, h) : null,
         )
       }
     },
@@ -4493,26 +4511,28 @@
                       l = o.author,
                       c = o.category,
                       s = o.description,
-                      u = o.timeString,
-                      d = o.title,
-                      m = null == e || null === (t = e.mediaDetails) || void 0 === t ? void 0 : t.coverTweet,
-                      p = null == e || null === (n = e.mediaDetails) || void 0 === n ? void 0 : n.coverMedia,
-                      h = null == e || null === (a = e.slate) || void 0 === a ? void 0 : a.imageAttribution
+                      u = o.descriptionEntities,
+                      d = o.timeString,
+                      m = o.title,
+                      p = null == e || null === (t = e.mediaDetails) || void 0 === t ? void 0 : t.coverTweet,
+                      h = null == e || null === (n = e.mediaDetails) || void 0 === n ? void 0 : n.coverMedia,
+                      v = null == e || null === (a = e.slate) || void 0 === a ? void 0 : a.imageAttribution
                     return g.a.createElement(
                       q.a,
                       { style: Sn.contentContainer },
-                      d
+                      m
                         ? g.a.createElement(Pe.a, {
                             author: l,
-                            coverTweet: m,
+                            coverTweet: p,
                             description: s,
-                            imageAttribution: h,
+                            descriptionEntities: u,
+                            imageAttribution: v,
                             isTOO: i,
-                            mediaType: null == p ? void 0 : p.type,
+                            mediaType: null == h ? void 0 : h.type,
                             preTitle: i || !l ? c : '',
                             remindMeButton: this._renderRemindMeButton(),
-                            time: u,
-                            title: d,
+                            time: d,
+                            title: m,
                             withHashflags: !0,
                           })
                         : null,
@@ -5542,19 +5562,21 @@
             a = t.liveEventDetails,
             r = a.category,
             i = a.description,
-            o = a.remind_me_subscription,
-            l = a.short_title,
-            c = a.time_string,
-            s = a.title
+            o = a.descriptionEntities,
+            l = a.remind_me_subscription,
+            c = a.short_title,
+            s = a.time_string,
+            u = a.title
           return {
             author: n,
             category: r,
             description: i,
+            descriptionEntities: o,
             eventId: e,
-            remindMeSubscription: o,
-            shortTitle: l || s,
-            timeString: c,
-            title: s,
+            remindMeSubscription: l,
+            shortTitle: c || u,
+            timeString: s,
+            title: u,
           }
         },
         T = function (e, t) {

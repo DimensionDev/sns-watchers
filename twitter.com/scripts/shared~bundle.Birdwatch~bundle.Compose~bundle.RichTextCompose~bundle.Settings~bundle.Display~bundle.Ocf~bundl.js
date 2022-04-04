@@ -417,21 +417,15 @@
         n.d(t, 'd', function () {
           return h
         })
-      n('ERkP')
+      n('0zG9'), n('ERkP')
       var o = n('3XMw'),
         a = n.n(o),
         i = n('Nh1N'),
         r = n('RT39'),
-        c = a.a.e86cb37f,
-        s = a.a.f1824804,
-        l = i.a,
-        u = function (e, t) {
-          return (
-            ('US' === e.toUpperCase() && 'EN' === t.toUpperCase()) ||
-            ('JP' === e.toUpperCase() && 'JA' === t.toUpperCase()) ||
-            ('MX' === e.toUpperCase() && 'ES' === t.toUpperCase())
-          )
-        },
+        c = n('fz3c'),
+        s = a.a.e86cb37f,
+        l = a.a.f1824804,
+        u = i.a,
         d = function (e) {
           var t = e.loggedInUserId,
             n = e.tweet,
@@ -443,15 +437,12 @@
             n = e.isNsfwUser,
             o = e.loggedInUserId,
             a = e.tweet,
-            i = e.userCountry,
-            r = e.userLanguage,
-            c = a.retweeted_status || a
+            i = (e.userCountry, e.userLanguage, a.retweeted_status || a)
           return !(
-            o !== c.user.id_str ||
+            o !== i.user.id_str ||
             a.tombstoneInfo ||
-            !c.possibly_sensitive ||
+            !i.possibly_sensitive ||
             n ||
-            !u(i || '', r) ||
             !t.isTrue('enable_label_appealing_sensitive_content_enabled')
           )
         },
@@ -471,31 +462,47 @@
           var t = e.featureSwitches,
             n = e.forwardPivotDisplayType,
             o = e.loggedInUserId,
-            a = e.tweet,
-            i = e.userCountry,
-            c = e.userLanguage
+            a = e.tweet
+          e.userCountry, e.userLanguage
           return (
             o === (a.retweeted_status || a).user.id_str &&
             !a.tombstoneInfo &&
             n === r.a.SoftIntervention &&
-            u(i || '', c) &&
             t.isTrue('enable_label_appealing_misinfo_enabled')
           )
         },
-        h = function (e, t) {
-          var n = e.retweeted_status || e
-          return {
-            text: c,
-            action: {
-              label: s,
-              link: {
-                pathname: ''.concat('/i/report/appeal_tweet_warning', '/').concat(n.id_str),
-                state: { scribeNamespace: t },
-              },
-            },
-            Icon: l,
-            withThumbnail: !0,
-          }
+        h = function (e, t, n) {
+          var o,
+            a = e.retweeted_status || e,
+            i = c.a.AppealTweetWarning
+          if (n && Object(c.g)(n, i)) {
+            var r,
+              d,
+              m =
+                ((null == a ||
+                null === (r = a.extended_entities) ||
+                void 0 === r ||
+                null === (d = r.media) ||
+                void 0 === d
+                  ? void 0
+                  : d.length) || 0) > 0,
+              p = !!a.promoted_content,
+              v = Object(c.d)({
+                clientReferer: window.location.pathname,
+                isMedia: m,
+                isPromoted: void 0 !== p,
+                reportType: i,
+                reportedTweet: a,
+                reportedUser: a.user.id_str,
+                scribeNamespace: t,
+              })
+            o = { pathname: '/i/safety/report_story_start', state: { input: { requested_variant: JSON.stringify(v) } } }
+          } else
+            o = {
+              pathname: ''.concat('/i/report/appeal_tweet_warning', '/').concat(a.id_str),
+              state: { scribeNamespace: t },
+            }
+          return { text: s, action: { label: l, link: o }, Icon: u, withThumbnail: !0 }
         }
     },
     '5wO0': function (e, t, n) {

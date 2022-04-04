@@ -20,8 +20,8 @@
         c = n('PU7B'),
         l = n('/WPq'),
         s = n('78ol'),
-        u = n('jV+4'),
-        d = n('rHpw'),
+        d = n('jV+4'),
+        u = n('rHpw'),
         m = function (e) {
           var t = e.author,
             n = e.color,
@@ -31,11 +31,11 @@
             c = e.style,
             l = e.withHoverCard,
             s = void 0 === l || l,
-            d = e.withLink,
-            m = void 0 !== d && d,
+            u = e.withLink,
+            m = void 0 !== u && u,
             p = e.withScreenName,
             g = void 0 !== p && p
-          return a.a.createElement(u.a, {
+          return a.a.createElement(d.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[o],
             color: r,
             isProtected: t.protected,
@@ -71,7 +71,7 @@
               : a.a.createElement(s.a, { style: h.placeholderIcon }),
           )
         },
-        h = d.a.create(function (e) {
+        h = u.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -111,13 +111,13 @@
         c = n.n(o),
         l = n('caTy'),
         s = n('MWbm'),
-        u = n('rHpw'),
-        d = n('t62R'),
+        d = n('rHpw'),
+        u = n('t62R'),
         m = n('yrzJ'),
         p = n('XrEN'),
         g = n('Q0VY'),
         h = n('FiRh'),
-        b = u.a.create(function (e) {
+        b = d.a.create(function (e) {
           return { description: { marginTop: e.spaces.space12 } }
         }),
         v = function (e, t, n) {
@@ -125,12 +125,12 @@
             ? (function (e) {
                 var t,
                   n = e.url ? (null === (t = Object(l.a)(e.url)) || void 0 === t ? void 0 : t.pathname) : void 0
-                return i.a.createElement(d.b, { color: 'gray700', link: n }, e.text)
+                return i.a.createElement(u.b, { color: 'gray700', link: n }, e.text)
               })(n)
             : e && p.a.VIDEO_TYPES.includes(t)
             ? (function (e, t) {
                 return i.a.createElement(
-                  d.b,
+                  u.b,
                   { color: 'gray700', link: e.permalink },
                   f(t, { screenName: i.a.createElement(m.a, { screenName: e.user.screen_name }) }),
                 )
@@ -151,29 +151,39 @@
         y = function (e) {
           var t = e.coverTweet,
             n = e.description,
-            r = e.imageAttribution,
-            a = e.mediaType,
-            o = e.pivotText,
-            c = n ? n.trim() : void 0,
-            l = c ? g.a.descriptionTextParts(c) : []
+            r = e.descriptionEntities,
+            a = e.imageAttribution,
+            o = e.mediaType,
+            c = e.pivotText,
+            l = n ? n.trim() : void 0,
+            d = r
+              ? {
+                  description: {
+                    urls: r.map(function (e) {
+                      return { display_url: e.displayUrl, expanded_url: e.expandedUrl, url: e.url, indices: e.indices }
+                    }),
+                  },
+                }
+              : void 0,
+            m = l ? g.a.descriptionTextParts(l, d) : []
           return i.a.createElement(
             s.a,
             { style: b.description },
-            l.length
+            m.length
               ? i.a.createElement(
-                  d.b,
+                  u.b,
                   null,
-                  l.map(function (e, t) {
+                  m.map(function (e, t) {
                     return i.a.createElement(h.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
                   }),
                 )
               : null,
-            v(t, a, r),
-            o ? i.a.createElement(d.b, { color: 'gray700' }, o) : null,
+            v(t, o, a),
+            c ? i.a.createElement(u.b, { color: 'gray700' }, c) : null,
           )
         },
         E = n('pjBI'),
-        w = u.a.create(function (e) {
+        w = d.a.create(function (e) {
           return {
             title: { alignItems: 'center', flexDirection: 'row', paddingTop: e.spaces.space4 },
             timeString: { flexShrink: 0 },
@@ -185,52 +195,60 @@
         var t = e.author,
           n = e.coverTweet,
           a = e.description,
-          o = e.imageAttribution,
-          c = e.isTOO,
-          l = e.mediaType,
-          u = e.pivotText,
-          m = e.preTitle,
-          p = e.remindMeButton,
-          g = e.time,
-          h = e.title,
-          b = e.withHashflags,
-          v = function () {
+          o = e.descriptionEntities,
+          c = e.imageAttribution,
+          l = e.isTOO,
+          d = e.mediaType,
+          m = e.pivotText,
+          p = e.preTitle,
+          g = e.remindMeButton,
+          h = e.time,
+          b = e.title,
+          v = e.withHashflags,
+          f = function () {
             return t
               ? i.a.createElement(
                   s.a,
                   null,
                   i.a.createElement(r.a, { author: t, size: 'body', withLink: !0, withScreenName: !0 }),
-                  g ? f(!0) : null,
+                  h ? T(!0) : null,
                 )
               : null
           },
-          f = function () {
+          T = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
             return i.a.createElement(
-              d.b,
+              u.b,
               { color: 'gray700', numberOfLines: 1, size: 'body', style: [w.timeString, e && w.timeStringMargin] },
-              g,
+              h,
             )
           },
-          T = function () {
-            return m
+          k = function () {
+            return p
               ? i.a.createElement(
                   E.a,
                   null,
-                  i.a.createElement(d.b, { color: 'gray700', numberOfLines: 1, size: 'body', weight: 'bold' }, m),
-                  g ? f() : null,
+                  i.a.createElement(u.b, { color: 'gray700', numberOfLines: 1, size: 'body', weight: 'bold' }, p),
+                  h ? T() : null,
                 )
               : null
           }
         return i.a.createElement(
           i.a.Fragment,
           null,
-          c && m ? T() : v() || T(),
-          i.a.createElement(d.b, { dir: 'auto', size: 'title4', style: w.title, weight: 'heavy', withHashflags: b }, h),
-          a || n || o
-            ? i.a.createElement(y, { coverTweet: n, description: a, imageAttribution: o, mediaType: l, pivotText: u })
+          l && p ? k() : f() || k(),
+          i.a.createElement(u.b, { dir: 'auto', size: 'title4', style: w.title, weight: 'heavy', withHashflags: v }, b),
+          a || n || c
+            ? i.a.createElement(y, {
+                coverTweet: n,
+                description: a,
+                descriptionEntities: o,
+                imageAttribution: c,
+                mediaType: d,
+                pivotText: m,
+              })
             : null,
-          p ? i.a.createElement(s.a, { style: w.remindMeButton }, p) : null,
+          g ? i.a.createElement(s.a, { style: w.remindMeButton }, g) : null,
         )
       }
     },
@@ -245,8 +263,8 @@
         c = n('8/3a'),
         l = n('MWbm'),
         s = n('htQn'),
-        u = n('9Xij'),
-        d = n('TIdA'),
+        d = n('9Xij'),
+        u = n('TIdA'),
         m = n('A91F'),
         p = n('rHpw').a.create(function (e) {
           return {
@@ -272,10 +290,10 @@
               l.a,
               { style: p.coverContainer },
               o.a.createElement(
-                u.a,
+                d.a,
                 { ratio: 16 / 9 },
                 g
-                  ? o.a.createElement(d.a, { accessibilityLabel: '', aspectMode: m.a.COVER, image: g })
+                  ? o.a.createElement(u.a, { accessibilityLabel: '', aspectMode: m.a.COVER, image: g })
                   : o.a.createElement(a.c, { icon: 'news' }),
               ),
             ),
@@ -315,8 +333,8 @@
               o = e.scribeNamespace,
               l = i.content,
               s = l.landingUrl && Object(c.b)(l.landingUrl),
-              u = t({ content: l }),
-              d = {
+              d = t({ content: l }),
+              u = {
                 author: l.author,
                 link: s,
                 originalImage: r ? void 0 : l.originalImage,
@@ -325,7 +343,7 @@
                 },
                 title: l.title,
               }
-            return a()(a()({}, d), u)
+            return a()(a()({}, u), d)
           },
         })
       }

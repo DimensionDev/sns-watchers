@@ -1016,30 +1016,21 @@
         M = n.n(R),
         O = (n('2G9S'), n('0zG9'), n('EbOo')),
         D = n('1YZw'),
-        U = n('gNWl'),
-        K = n('G6rE'),
-        P = n('RqPI'),
+        U = n('RqPI'),
+        K = n('gNWl'),
+        P = n('G6rE'),
         A = Object(u.a)()
           .propsFromState(function () {
-            return {
-              author: o.d,
-              basePath: o.a,
-              loggedInUserId: P.r,
-              isSubscribed: o.b,
-              list: o.c,
-              useRanked: o.n,
-              reporterCountry: P.z,
-              reporterLanguage: P.p,
-            }
+            return { author: o.d, basePath: o.a, loggedInUserId: U.r, isSubscribed: o.b, list: o.c, useRanked: o.n }
           })
           .propsFromActions(function () {
             return {
               addToast: D.b,
-              block: K.e.block,
+              block: P.e.block,
               createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('LIST_ACTIONS'),
               toggleMute: c.a.toggleMute,
-              unblock: K.e.unblock,
-              updateRankMode: U.b,
+              unblock: P.e.unblock,
+              updateRankMode: K.b,
             }
           })
           .withAnalytics({ page: 'spheres_detail' }),
@@ -1165,16 +1156,14 @@
                     n = t.analytics,
                     a = t.list,
                     r = t.listId,
-                    i = t.reporterCountry,
-                    l = t.reporterLanguage,
-                    s = e.context.featureSwitches,
-                    o = re.a.List
-                  if (Object(re.g)(s, o, i, l)) {
-                    var c = Object(re.d)({
+                    i = e.context.featureSwitches,
+                    l = re.a.List
+                  if (Object(re.g)(i, l)) {
+                    var s = Object(re.d)({
                       clientReferer: window.location.pathname,
                       isMedia: !1,
                       isPromoted: !1,
-                      reportType: o,
+                      reportType: l,
                       reportedList: a,
                       reportedUser: null == a ? void 0 : a.user,
                       scribeNamespace: n.contextualScribeNamespace,
@@ -1185,7 +1174,7 @@
                       onClick: G.a,
                       link: {
                         pathname: '/i/safety/report_story_start',
-                        state: { input: { requested_variant: JSON.stringify(c) } },
+                        state: { input: { requested_variant: JSON.stringify(s) } },
                       },
                     }
                   }
@@ -1307,7 +1296,7 @@
           (n('MvUL'),
           function (e, t) {
             var n = o.l(e, t)
-            return n ? K.e.selectByScreenName(e, n) : void 0
+            return n ? P.e.selectByScreenName(e, n) : void 0
           }),
         be = Object(u.a)().propsFromState(function () {
           return { listName: o.j, listId: o.f, screenName: o.l, useRanked: o.n, user: ve }

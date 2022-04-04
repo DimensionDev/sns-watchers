@@ -989,81 +989,78 @@
             a = e.isAppealTweetWarning,
             i = void 0 !== a && a,
             r = e.promotedContent,
-            c = e.reporterCountry,
-            l = e.reporterLanguage,
-            s = e.scribeAction,
-            d = e.tweet,
-            u = { element: 'report_tweet' },
-            m = '/i/report/status',
-            v = Xe.a.Tweet,
-            h = fn.a,
-            p = r ? Cn : yn
+            c = (e.reporterCountry, e.reporterLanguage, e.scribeAction),
+            l = e.tweet,
+            s = { element: 'report_tweet' },
+            d = '/i/report/status',
+            u = Xe.a.Tweet,
+            m = fn.a,
+            v = r ? Cn : yn
           i &&
-            ((u = { element: 'appeal_tweet_warning' }),
-            (m = '/i/report/appeal_tweet_warning'),
-            (v = Xe.a.AppealTweetWarning),
-            (h = wn.a),
-            (p = _n))
+            ((s = { element: 'appeal_tweet_warning' }),
+            (d = '/i/report/appeal_tweet_warning'),
+            (u = Xe.a.AppealTweetWarning),
+            (m = wn.a),
+            (v = _n))
           return {
             behavioralEventContext: { viewType: 'report' },
-            Icon: h,
+            Icon: m,
             onClick: function () {
               var e,
                 a,
-                h,
-                p,
-                b,
-                f = t.contextualScribeData,
-                w =
-                  ((null == d ||
-                  null === (e = d.extended_entities) ||
+                i,
+                m,
+                v,
+                h = t.contextualScribeData,
+                p =
+                  ((null == l ||
+                  null === (e = l.extended_entities) ||
                   void 0 === e ||
                   null === (a = e.media) ||
                   void 0 === a
                     ? void 0
                     : a.length) || 0) > 0,
-                _ =
-                  f.items &&
-                  f.items[0] &&
-                  (null === (h = f.items[0].conversation_details) || void 0 === h ? void 0 : h.conversation_section)
+                b =
+                  h.items &&
+                  h.items[0] &&
+                  (null === (i = h.items[0].conversation_details) || void 0 === i ? void 0 : i.conversation_section)
               if (
-                (s(u),
+                (c(s),
                 !(
-                  i ||
-                  d.community_id_str ||
-                  '745291183405076480:broadcast' === (null === (p = d.card) || void 0 === p ? void 0 : p.name) ||
-                  '3691233323:periscope_broadcast' === (null === (b = d.card) || void 0 === b ? void 0 : b.name) ||
+                  l.community_id_str ||
+                  '745291183405076480:broadcast' === (null === (m = l.card) || void 0 === m ? void 0 : m.name) ||
+                  '3691233323:periscope_broadcast' === (null === (v = l.card) || void 0 === v ? void 0 : v.name) ||
                   r
-                ) && Object(Xe.g)(n, v, c, l))
+                ) && Object(Xe.g)(n, u))
               ) {
-                var y = Object(Xe.d)({
+                var f = Object(Xe.d)({
                   clientReferer: window.location.pathname,
-                  conversationSection: _,
-                  isMedia: w,
+                  conversationSection: b,
+                  isMedia: p,
                   isPromoted: void 0 !== r,
-                  reportType: v,
-                  reportedTweet: d,
-                  reportedUser: d.user.id_str,
+                  reportType: u,
+                  reportedTweet: l,
+                  reportedUser: l.user.id_str,
                   scribeNamespace: t.contextualScribeNamespace,
                 })
                 o.push({
                   pathname: '/i/safety/report_story_start',
-                  state: { input: { requested_variant: JSON.stringify(y) } },
+                  state: { input: { requested_variant: JSON.stringify(f) } },
                 })
               } else
                 o.push({
-                  pathname: ''.concat(m, '/').concat(d.id_str),
+                  pathname: ''.concat(d, '/').concat(l.id_str),
                   state: {
                     clientReferer: window.location.pathname,
-                    conversationSection: _,
-                    isMedia: w,
+                    conversationSection: b,
+                    isMedia: p,
                     promotedContent: r,
                     scribeNamespace: t.contextualScribeNamespace,
                   },
                 })
             },
             testID: wt,
-            text: p,
+            text: v,
           }
         },
         Tn = function (e) {
