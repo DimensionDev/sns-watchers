@@ -1,184 +1,206 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [202],
+  [201],
   {
-    EnM6: function (e, t, n) {
+    EnM6: function (e, n, t) {
       'use strict'
-      n('hBvt')
-      var a = n('ERkP'),
-        o = n.n(a),
-        r = n('3XMw'),
-        i = n.n(r),
-        c = n('MWbm'),
-        l = n('t62R'),
-        s = n('5mJL'),
-        d = n('PV92'),
-        p = n('htQn'),
-        f = n('rHpw'),
-        u = n('Qwev'),
-        h = i.a.i8005e73,
-        m = f.a.create(function (e) {
+      t('hBvt')
+      var a = t('ERkP'),
+        i = t.n(a),
+        o = t('3XMw'),
+        r = t.n(o),
+        s = t('MWbm'),
+        c = t('t62R'),
+        l = t('5mJL'),
+        d = t('PV92'),
+        p = t('htQn'),
+        h = t('rHpw'),
+        v = t('Qwev'),
+        f = r.a.i8005e73,
+        m = h.a.create(function (e) {
           return {
-            gap: { overflow: 'hidden' },
-            treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
-            treeGapTopLevel: { paddingLeft: 0 },
             connectors: { zIndex: 1 },
-            hoverBox: { flexGrow: 1, marginLeft: e.spaces.space12, paddingLeft: e.spaces.space4 },
-            hoverBoxIndented: { marginLeft: 0 },
-            hoverBoxTopLevel: { marginLeft: 0 },
-            dotGroup: {
-              alignItems: 'center',
-              alignSelf: 'center',
-              flexGrow: 0,
-              justifyContent: 'space-between',
-              position: 'relative',
-              height: e.spaces.space16,
-            },
             content: { flexGrow: 1 },
-            treeContent: { paddingHorizontal: e.spaces.space4 },
+            conversationConnector: {
+              alignItems: 'center',
+              display: 'flex',
+              position: 'relative',
+              height: e.spaces.space36,
+              flexGrow: 0,
+            },
+            conversationLine: {
+              backgroundColor: e.colors.gray200,
+              width: e.componentDimensions.conversationLineWidth,
+              height: e.spaces.space8,
+            },
             dot: {
               display: 'block',
               backgroundColor: e.colors.gray200,
               height: e.componentDimensions.conversationLineWidth,
               width: e.componentDimensions.conversationLineWidth,
             },
+            ellipsis: {
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              height: e.spaces.space16,
+              marginVertical: 'auto',
+            },
+            ellipsisWithConversationLines: { height: e.spaces.space12 },
             enlargeTouchTarget: { paddingVertical: e.spaces.space8 },
+            gap: { overflow: 'hidden' },
+            hoverBox: { flexGrow: 1, marginLeft: e.spaces.space12, paddingLeft: e.spaces.space4 },
+            hoverBoxIndented: { marginLeft: 0 },
+            hoverBoxTopLevel: { marginLeft: 0 },
             loadingIndicator: { paddingVertical: e.spaces.space4 },
+            treeContent: { paddingHorizontal: e.spaces.space4 },
+            treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
+            treeGapTopLevel: { paddingLeft: 0 },
           }
         }),
-        g = o.a.createElement(u.a, { accessibilityLabel: h, style: m.loadingIndicator })
-      t.a = function (e) {
-        var t = e.indents,
-          n = e.isLoading,
+        g = i.a.createElement(v.a, { accessibilityLabel: f, style: m.loadingIndicator })
+      n.a = function (e) {
+        var n = e.indents,
+          t = e.isLoading,
           a = e.label,
-          r = e.link,
-          i = e.onClick,
+          o = e.link,
+          r = e.onClick,
+          h = e.withConversationLines,
+          v = void 0 !== h && h,
           f = e.withElbow,
-          u = o.a.createElement(l.b, { color: 'link', style: m.enlargeTouchTarget }, a),
-          h = o.a.createElement(
-            s.a,
+          u = i.a.createElement(c.b, { color: 'link', style: m.enlargeTouchTarget }, a),
+          w = i.a.createElement(
+            l.a,
             {
-              avatarCell: t
+              avatarCell: n
                 ? void 0
-                : o.a.createElement(
-                    o.a.Fragment,
+                : i.a.createElement(
+                    i.a.Fragment,
                     null,
-                    o.a.createElement(c.a, { style: m.dot }),
-                    o.a.createElement(c.a, { style: m.dot }),
-                    o.a.createElement(c.a, { style: m.dot }),
+                    v && i.a.createElement(s.a, { style: m.conversationLine, testID: 'conversationLine' }),
+                    i.a.createElement(
+                      s.a,
+                      { style: [m.ellipsis, v && m.ellipsisWithConversationLines] },
+                      i.a.createElement(s.a, { style: m.dot }),
+                      i.a.createElement(s.a, { style: m.dot }),
+                      i.a.createElement(s.a, { style: m.dot }),
+                    ),
+                    v && i.a.createElement(s.a, { style: m.conversationLine, testID: 'conversationLine' }),
                   ),
-              avatarCellStyle: m.dotGroup,
-              cellStyle: [m.content, t && m.treeContent],
+              avatarCellStyle: m.conversationConnector,
+              cellStyle: [m.content, n && m.treeContent],
             },
-            n ? g : u,
+            t ? g : u,
           )
-        return o.a.createElement(
-          c.a,
-          { style: [m.gap, t && m.treeGap, t && 0 === t.length && m.treeGapTopLevel] },
-          t
-            ? o.a.createElement(d.a, {
-                indents: t,
+        return i.a.createElement(
+          s.a,
+          { style: [m.gap, n && m.treeGap, n && 0 === n.length && m.treeGapTopLevel] },
+          n
+            ? i.a.createElement(d.a, {
+                indents: n,
                 paddingTop: 5,
                 smallFirstCell: !1,
                 style: m.connectors,
-                wideElbow: 1 === t.length,
+                wideElbow: 1 === n.length,
                 withElbow: !!f,
               })
             : null,
-          i || r
-            ? o.a.createElement(
+          r || o
+            ? i.a.createElement(
                 p.a,
                 {
-                  link: n ? void 0 : r,
-                  onClick: n ? void 0 : i,
+                  link: t ? void 0 : o,
+                  onClick: t ? void 0 : r,
                   style: [
                     m.hoverBox,
-                    t && 0 === t.length && m.hoverBoxTopLevel,
-                    t && t.length > 1 && m.hoverBoxIndented,
+                    n && 0 === n.length && m.hoverBoxTopLevel,
+                    n && n.length > 1 && m.hoverBoxIndented,
                   ],
-                  withInteractiveStyling: !n,
+                  withInteractiveStyling: !t,
                 },
-                h,
+                w,
               )
-            : h,
+            : w,
         )
       }
     },
-    GCNy: function (e, t, n) {
+    GCNy: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var a = n('yiKp'),
-        o = n.n(a),
-        r = n('ezF+'),
-        i = n('ERkP'),
-        c = n.n(i),
-        l = n('EnM6'),
-        s = n('3XMw'),
-        d = n.n(s),
-        p = d.a.i569ff3e,
-        f = d.a.c837fca9,
-        u = function (e) {
-          var t = e.isSelfThread,
-            n = e.onClick,
+      t.r(n)
+      var a = t('yiKp'),
+        i = t.n(a),
+        o = t('ezF+'),
+        r = t('ERkP'),
+        s = t.n(r),
+        c = t('v6aA'),
+        l = t('EnM6'),
+        d = t('3XMw'),
+        p = t.n(d),
+        h = p.a.i569ff3e,
+        v = p.a.c837fca9,
+        f = function (e) {
+          var n = e.isSelfThread,
+            t = e.onClick,
             a = e.onImpression,
-            o = e.url
+            i = e.url,
+            o = s.a.useContext(c.a).featureSwitches.isTrue('media_edge_to_edge_content_enabled')
           return (
-            c.a.useEffect(
+            s.a.useEffect(
               function () {
-                a({ isSelfThreadGap: t })
+                a({ isSelfThreadGap: n })
               },
-              [a, t],
+              [a, n],
             ),
-            c.a.createElement(l.a, {
-              label: t ? p : f,
-              link: o,
+            s.a.createElement(l.a, {
+              label: n ? h : v,
+              link: i,
               onClick: function () {
-                n({ isSelfThreadGap: t })
+                t({ isSelfThreadGap: n })
               },
+              withConversationLines: o,
             })
           )
         },
-        h = n('zh9S'),
-        m = n('XOJV'),
-        g = n('VPAj'),
-        v = n('xN10'),
-        w = r.g({
-          bindActions: Object(g.a)({ scribeAction: h.scribeAction }),
-          component: u,
+        m = t('zh9S'),
+        g = t('XOJV'),
+        u = t('VPAj'),
+        w = t('xN10'),
+        b = o.g({
+          bindActions: Object(u.a)({ scribeAction: m.scribeAction }),
+          component: f,
           defaultScribeNamespace: { component: 'timeline_conversation' },
           selectData: function (e) {
-            var t = e.entry
+            var n = e.entry
             e.module
             return {
               isSelfThread: function (e) {
-                var n
-                return Object(v.a)(t.content.allTweetIds, function (t, a) {
-                  var o = m.a.select(e, t)
-                  return !o || (0 === a ? ((n = o.id_str), !0) : !!o.self_thread && o.self_thread.id_str === n)
+                var t
+                return Object(w.a)(n.content.allTweetIds, function (n, a) {
+                  var i = g.a.select(e, n)
+                  return !i || (0 === a ? ((t = i.id_str), !0) : !!i.self_thread && i.self_thread.id_str === t)
                 })
               },
             }
           },
           createProps: function (e) {
-            var t = e.actions.scribeAction,
-              n = e.data.isSelfThread,
+            var n = e.actions.scribeAction,
+              t = e.data.isSelfThread,
               a = e.entry,
-              r = e.scribeNamespace
+              o = e.scribeNamespace
             return {
-              isSelfThread: n,
+              isSelfThread: t,
               onClick: function (e) {
-                var n = e.isSelfThreadGap
-                t(o()(o()({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'click' }))
+                var t = e.isSelfThreadGap
+                n(i()(i()({}, o), {}, { element: t ? 'see_more' : 'gap', action: 'click' }))
               },
               onImpression: function (e) {
-                var n = e.isSelfThreadGap
-                t(o()(o()({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'impression' }))
+                var t = e.isSelfThreadGap
+                n(i()(i()({}, o), {}, { element: t ? 'see_more' : 'gap', action: 'impression' }))
               },
               url: '/i/status/'.concat(a.content.focalTweetId),
             }
           },
-          shouldDisplayBorder: Object(g.a)(!1),
+          shouldDisplayBorder: Object(u.a)(!1),
         })
-      t.default = w
+      n.default = b
     },
   },
 ])

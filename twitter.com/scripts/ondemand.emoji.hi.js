@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [324],
+  [323],
   {
     FqyK: function (e, a, c) {
       'use strict'
@@ -1041,7 +1041,7 @@
         d('aa63504f', 'झींगुर'),
         d('f40b9d50', 'बीटल,बग,कीट'),
         d('j705854e', 'कीड़ा'),
-        d('i9dae6ba', 'beetle,insect,lady beetle,ladybird,ladybug'),
+        d('i9dae6ba', 'भृंग, कीट, महिला भृंग, एक प्रकार का गुबरैला, एक प्रकार का गुबरैला'),
         d('f6c22298', 'चींटी'),
         d('g79cb7a5', 'चींटी,कीट‌‌'),
         d('e65b0808', 'क्रिकेट'),
@@ -1065,7 +1065,7 @@
         d('d28efcfd', 'कछुआ'),
         d('e50f3ef1', 'कछुआ‌‌'),
         d('h8aac240', 'साँप'),
-        d('j08e0dfd', 'bearer,ophiuchus,serpent,snake,zodiac'),
+        d('j08e0dfd', 'वाहक, ओफियुचस, नाग, सांप, राशि'),
         d('i622c87d', 'छिपकली'),
         d('d148f547', 'छिपकली,सरीसृप'),
         d('e8a113bd', 'ऑक्टोपस'),

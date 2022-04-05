@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [93, 18, 177],
+  [92, 176],
   {
     '+0pD': function (e, t) {
       var a =
@@ -2407,7 +2407,7 @@
         X = a('RuTB'),
         Y = Object(G.a)({
           loader: function () {
-            return Promise.all([a.e(0), a.e(207)]).then(a.bind(null, 'it2P'))
+            return Promise.all([a.e(0), a.e(206)]).then(a.bind(null, 'it2P'))
           },
           renderPlaceholder: function (e, t) {
             return S.a.createElement(X.a, { hasError: e, onRetry: t })

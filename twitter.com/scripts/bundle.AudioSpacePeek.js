@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [35, 8],
+  [34, 8],
   {
     '0nhk': function (e, t, a) {
       'use strict'
@@ -4837,6 +4837,7 @@
                     r = i(e)
                   if ('number' == typeof t && r.status !== x.a.NONE && !((Date.now() - r.time) / 1e3 > t))
                     return Promise.resolve(r)
+                  if (0 === e.trim().length) return Promise.resolve(r)
                   function o(t) {
                     var a = z(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
                     n(function (t) {
@@ -5999,7 +6000,7 @@
         v = Object(f.a)({
           loader: function () {
             return m.a.emoji.then(function () {
-              return Promise.all([a.e(17), a.e(229)]).then(a.bind(null, '4AX5'))
+              return Promise.all([a.e(17), a.e(228)]).then(a.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {

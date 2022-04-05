@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [95],
+  [94],
   {
     '3JAx': function (e, t, a) {
       'use strict'
@@ -441,7 +441,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'AccountActivityScreen', function () {
-          return p
+          return h
         })
       var n = a('ERkP'),
         r = a.n(n),
@@ -449,25 +449,30 @@
         o = a.n(c),
         i = a('yoO3'),
         l = a('csss'),
-        s = a('7FtF'),
-        d = a('7JQg'),
+        s = a('7JQg'),
+        d = a('7FtF'),
         u = o.a.j9d10268,
         f = o.a.a5f32aa2,
         m = o.a.daef29b7,
-        p = function (e) {
+        p = { page: 'settings', section: 'your_twitter_data', component: 'account_activity' },
+        h = function (e) {
           var t = e.location
           return r.a.createElement(
-            i.a,
-            null,
+            s.c,
+            { namespace: p },
             r.a.createElement(
-              s.a,
-              { location: t, title: u },
-              r.a.createElement(l.a, { label: f, link: '/settings/blocked/all' }),
-              r.a.createElement(l.a, { label: m, link: '/settings/muted/all' }),
+              i.a,
+              null,
+              r.a.createElement(
+                d.a,
+                { location: t, title: u },
+                r.a.createElement(l.a, { label: f, link: '/settings/blocked/all' }),
+                r.a.createElement(l.a, { label: m, link: '/settings/muted/all' }),
+              ),
             ),
           )
         }
-      t.default = Object(d.a)({ page: 'settings', section: 'your_twitter_data', component: 'account_activity' })(p)
+      t.default = h
     },
     E7qF: function (e, t, a) {
       'use strict'

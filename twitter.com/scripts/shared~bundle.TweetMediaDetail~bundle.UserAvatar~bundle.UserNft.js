@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [14],
+  [15],
   {
     '0Ki6': function (e, t, n) {
       'use strict'
@@ -773,6 +773,7 @@
                           onVisibleRangeChange: this._handleChangeV2,
                           scrollToCenter: !0,
                           style: le.dimensions,
+                          swipeablePadding: 0,
                           visibleItemIndex: o,
                           withAddedNavButtonClickArea: !s,
                           withGlobalKeyboardNavigation: !0,

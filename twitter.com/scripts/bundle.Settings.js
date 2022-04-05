@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [87, 12],
+  [86, 9, 13],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -1352,7 +1352,7 @@
         pe = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         me = Object(pe.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(179).then(n.bind(null, 'mL9d'))
           },
         }),
         he = n('m3Bd'),
@@ -1688,7 +1688,7 @@
         pt = n('xXop'),
         mt = n('xrkw'),
         ht = n('mqpi'),
-        ft = K.a.g1fa869c,
+        ft = K.a.e6901eeb,
         gt = (function (e) {
           g()(n, e)
           var t = b()(n)
@@ -1716,7 +1716,7 @@
                   return !this._shouldDisable(o, ht.a.Analytics) && n === o.user.id_str
                     ? C.a.createElement(
                         x.a,
-                        { style: [vt.activityContainerWithChildren, r] },
+                        { style: [vt.analyticsContainerWithChildren, r] },
                         C.a.createElement(
                           T.a,
                           {
@@ -1742,7 +1742,7 @@
           return {
             analyticsIcon: { color: e.colors.gray700, paddingRight: e.spaces.space4 },
             analyticsButton: { paddingVertical: e.spaces.space16, flexDirection: 'row', flexGrow: 1 },
-            activityContainerWithChildren: {
+            analyticsContainerWithChildren: {
               justifyContent: 'space-between',
               borderTopColor: e.colors.borderColor,
               borderTopStyle: 'solid',
@@ -3319,7 +3319,7 @@
                                 {
                                   link: ''.concat(i.permalink, '/quick_promote_web/intro'),
                                   onPress: this._getPromoteButtonOnPress(m),
-                                  style: qn.tweetActivityPromoteButton,
+                                  style: qn.tweetAnalyticsPromoteButton,
                                   type: 'primaryFilled',
                                 },
                                 this._getPromoteButtonText(m),
@@ -3999,7 +3999,7 @@
             borderBottomWidth: e.borderWidths.small,
           },
           promoteButton: { marginTop: e.spaces.space12 },
-          tweetActivityPromoteButton: { marginVertical: e.spaces.space8 },
+          tweetAnalyticsPromoteButton: { marginVertical: e.spaces.space8 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
           promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },
@@ -8876,14 +8876,14 @@
       'use strict'
       n.r(t),
         n.d(t, 'DisplayScreen', function () {
-          return x
+          return S
         })
       var a = n('ERkP'),
         r = n.n(a),
-        o = n('7JQg'),
-        i = n('3XMw'),
-        l = n.n(i),
-        c = n('yoO3'),
+        o = n('3XMw'),
+        i = n.n(o),
+        l = n('yoO3'),
+        c = n('7JQg'),
         s = n('7FtF'),
         u = 'aboutText',
         d = n('5hXE'),
@@ -8895,34 +8895,39 @@
         v = n('0yYu'),
         b = n('6vad'),
         y = n('rHpw'),
-        w = l.a.c4881c66,
-        _ = l.a.a5ce82a4,
-        C = l.a.ce494bb3,
-        E = l.a.c783d45e,
-        k = l.a.h306a357,
-        x = function (e) {
+        w = i.a.c4881c66,
+        _ = i.a.a5ce82a4,
+        C = i.a.ce494bb3,
+        E = i.a.c783d45e,
+        k = i.a.h306a357,
+        x = { page: 'settings', section: 'display' },
+        S = function (e) {
           var t = e.location
           return r.a.createElement(
-            c.a,
-            null,
+            c.c,
+            { namespace: x },
             r.a.createElement(
-              s.a,
-              { location: t, screenType: 'secondaryDetail', title: w },
-              r.a.createElement(g.b, { color: 'gray700', size: 'subtext2', style: S.aboutText, testID: u }, _),
-              r.a.createElement(h.a, null),
-              r.a.createElement(v.a, null),
-              r.a.createElement(b.b, { text: C }),
-              r.a.createElement(d.a, null),
-              r.a.createElement(v.a, null),
-              r.a.createElement(b.b, { text: E }),
-              r.a.createElement(f.a, { style: S.colorPicker }, r.a.createElement(m.a, null)),
-              r.a.createElement(v.a, null),
-              r.a.createElement(b.b, { text: k }),
-              r.a.createElement(f.a, { style: S.backgroundPicker }, r.a.createElement(p.a, null)),
+              l.a,
+              null,
+              r.a.createElement(
+                s.a,
+                { location: t, screenType: 'secondaryDetail', title: w },
+                r.a.createElement(g.b, { color: 'gray700', size: 'subtext2', style: T.aboutText, testID: u }, _),
+                r.a.createElement(h.a, null),
+                r.a.createElement(v.a, null),
+                r.a.createElement(b.b, { text: C }),
+                r.a.createElement(d.a, null),
+                r.a.createElement(v.a, null),
+                r.a.createElement(b.b, { text: E }),
+                r.a.createElement(f.a, { style: T.colorPicker }, r.a.createElement(m.a, null)),
+                r.a.createElement(v.a, null),
+                r.a.createElement(b.b, { text: k }),
+                r.a.createElement(f.a, { style: T.backgroundPicker }, r.a.createElement(p.a, null)),
+              ),
             ),
           )
         },
-        S = y.a.create(function (e) {
+        T = y.a.create(function (e) {
           return {
             aboutText: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -8932,7 +8937,7 @@
             colorPicker: { paddingVertical: e.spaces.space4 },
           }
         })
-      t.default = Object(o.a)({ page: 'settings', section: 'display' })(x)
+      t.default = S
     },
     huBF: function (e, t, n) {
       'use strict'

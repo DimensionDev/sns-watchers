@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [124],
+    [123],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1092,7 +1092,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
           a('jead3bc1', 'Why can’t you share this?'),
-          a('ff25aba5', 'Why can’t you view Tweet activity?'),
+          a('bf02eab5', 'Why can’t you view Tweet analytics?'),
           a(
             'c8b72f50',
             'Only the Tweet author and Community moderation team can see it, and engagements are disabled.',
@@ -1112,7 +1112,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
-          a('g1fa869c', 'View Tweet activity'),
+          a('e6901eeb', 'View Tweet analytics'),
           a('g6237a1e', 'Promotion running'),
           a('d6b5949e', 'Promotion paused'),
           a('fd80ffbf', 'View Quote Tweets'),
@@ -2000,14 +2000,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3f04700', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's') + ' to review'
           }),
+          a('dce5e1b3', 'Admin tools'),
+          a('c5d8c93d', 'Moderator tools'),
           a('e2429f56', 'Tweets to review'),
           a('df15d5b7', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's')
           }),
           a('e48fbb01', 'Report Community'),
           a('c8c6c4e9', 'Learn more about Communities'),
-          a('dce5e1b3', 'Admin tools'),
-          a('c5d8c93d', 'Moderator tools'),
           a('c00c234e', function (e) {
             return e.communityName + ' Rules'
           }),
@@ -3719,10 +3719,49 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e4d5db41',
             'Invite others to act on behalf of an account and manage account roles. Members can send Direct Messages, publish Tweets, and create Lists - as well as view them.',
           ),
+          a('efee0a5f', 'Invite a member to this account'),
+          a('ja0a1aa5', 'Invite a contributor to this account'),
+          a('db4f623a', 'Assign a role to this member'),
+          a('be7350e3', function (e) {
+            return 'Assign @' + e.screenName + ' as an admin?'
+          }),
+          a('b7aa7641', 'Invite sent'),
+          a('edbca223', 'Send invite'),
+          a('f4834ca6', 'Invite another member'),
+          a('cb04a823', 'Contributor'),
+          a(
+            'c4088a8b',
+            'Contributors can send Direct Messages, publish Tweets, and create Lists. Contributors can also view the account’s Direct Messages, Tweets, and Lists.',
+          ),
+          a(
+            'b9f6e803',
+            'Admins have the same permissions as contributors. They can also invite or remove contributors and view account analytics.',
+          ),
+          a(
+            'c045430e',
+            'Admins can invite other contributors to this account. Double-check that you’re assigning the role for the right person.',
+          ),
+          a('d8eda248', function (e) {
+            return (
+              'Once @' +
+              e.screenName +
+              ' accepts their invite, they’ll be able to contribute to this account with their updated permissions.'
+            )
+          }),
+          a('b5faf215', 'This member doesn’t allow Delegate invites.'),
+          a('hcc3b4cd', 'This member is blocked by your account.'),
+          a('ace0f0a4', 'This member limits who can invite them to Delegate.'),
           a('c2e8f726', 'Admins'),
           a('h383c79b', 'Admins can also invite or remove contributors to the account and view account analytics.'),
           a('b7d6e5d5', 'Contributors'),
           a('cd76a281', 'No members have been added yet'),
+          a('db25d795', 'Change this members role'),
+          a('e4133790', 'Role updated'),
+          a('a1a27c26', 'Change Role'),
+          a('fd7b1b1b', 'Go Back'),
+          a('ec67d021', function (e) {
+            return '@' + e.screenName + ' can act on behalf of this account with their new permissions.'
+          }),
           a('h502484e', 'Pending invite'),
           a('a171ca7c', 'Uninvite member'),
           a('f68f079c', 'Change role'),
@@ -4589,6 +4628,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hbae0a4e', function (e) {
             return '⚡️ “' + e.title + '” by @' + e.author
           }),
+          a('j51ab633', 'Share Moment'),
           a('abdcd689', 'Loading Event'),
           a('a1bb552d', function (e) {
             return 'Tweet about ' + e.hashtag
@@ -4609,6 +4649,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.formattedPrice
           }),
           a('g66c8347', 'REPLAY'),
+          a('db4620aa', 'LIVE SPACE'),
+          a('c958e691', 'RECORDED SPACE'),
           a('i3f7ff0f', 'Media thumbnail'),
           a('j1d352d7', 'Reminder set'),
           a('d18909d4', 'Set reminder'),
@@ -4750,8 +4792,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2ae33cd', 'Invalid Tweet URL'),
           a('ac308436', 'Tweet not found'),
           a('f586b7f9', 'Add a title'),
-          a('j7bc6ace', 'Write a short description about this Moment'),
-          a('f24b1a62', 'Title not set'),
+          a('j7bc6ace', 'Write a short description about this Moment')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('f24b1a62', 'Title not set'),
           a('a85ae660', 'Description not set'),
           a('ge5b5fa4', 'Edit title and description'),
           a('ic05a145', 'Title'),
@@ -4775,24 +4833,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hdfa2dc6', 'Publish Moment'),
           a('d64d1548', 'Tweet your Moment'),
           a('a58e18a2', 'Your Moment is now published. Tweet it to let people discover it.'),
-          a('d7725ee1', 'Your Moment was published.')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('h7eceedf', 'Your Moment was updated.'),
+          a('d7725ee1', 'Your Moment was published.'),
+          a('h7eceedf', 'Your Moment was updated.'),
           a('bf615cf9', 'Go to Moment'),
           a('d8438441', 'Visibility settings'),
           a('a1d5303c', 'Private'),
@@ -5006,6 +5048,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c701200b', 'Switched to Business account'),
           a('acd8da09', 'Switched to Creator account'),
           a('e2760643', 'Currently not all modules are supported on all Twitter clients'),
+          a('b5aed332', 'No spotlights available'),
           a('fc7b0980', 'This will be visible to the public.'),
           a('ie85a7a8', 'Delete your business info?'),
           a('c16c9568', 'Address'),
@@ -5980,6 +6023,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a6ada13d', 'Shop now'),
           a('e1bddf52', 'Drag to rotate'),
+          a('d0e7b11b', function (e) {
+            return e.date + ' at ' + e.time
+          }),
+          a('b4349cbb', function (e) {
+            return '' + e.relativeDay
+          }),
           a('fbc2003b', 'Ended'),
           a('b3d828ed', 'Joined'),
           a('ca677073', 'Start listening'),
@@ -5993,10 +6042,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b27cf499', function (e) {
             return 'Join a space hosted by ' + e.host + ', with ' + e.count + ' others'
-          }),
-          a('ace2ffe8', function (e) {
-            return 'Join a space with ' + e.count + ' others'
-          }),
+          })
+        a('ace2ffe8', function (e) {
+          return 'Join a space with ' + e.count + ' others'
+        }),
           a('d19b9f76', function (e) {
             return e.action + ' for ' + e.title + ' hosted by ' + e.host + ', ' + e.scheduledStart
           }),
@@ -6011,12 +6060,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f5b51d69', 'Now playing'),
           a('d2543d97', function (e) {
             return '+' + e.count
-          }),
-          a('d0e7b11b', function (e) {
-            return e.date + ' at ' + e.time
-          }),
-          a('b4349cbb', function (e) {
-            return '' + e.relativeDay
           }),
           a('ebe41366', function (e) {
             return 'Time ' + e.time
@@ -6057,10 +6100,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('bfb44f89', function (e) {
             return e.count + ' here'
-          })
-        a('dc718e53', function (e) {
-          return '+' + e.count + ' other' + n(e.count, '', 's')
-        }),
+          }),
+          a('dc718e53', function (e) {
+            return '+' + e.count + ' other' + n(e.count, '', 's')
+          }),
           a('b03e1629', 'Listen live'),
           a('fb236727', 'Pause'),
           a('fc45ccc5', 'Embedded video'),
@@ -6435,7 +6478,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
           }),
           a('f2849136', 'Analytics'),
-          a('dedf22f3', 'View Tweet activity'),
+          a('ee9a81b6', 'View Tweet analytics'),
           a('d2b2b8e5', 'Downvote'),
           a('hcb3286f', 'Undo downvote'),
           a('cb5dafd3', 'Downvote, selected'),
@@ -11066,11 +11109,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           (l.a1608008627 = y(l('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
           (l.a1321204873 = y(l('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
           (l.a1653031457 = y(l('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
-          (l.a1269826356 = p(
+          (l.b129255162 = p(
+            { 1: l('en').numberFormatter({ raw: '0' }), 2: l('en').numberFormatter({ raw: '00' }) },
+            { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
+          )),
+          (l.a683162061 = p(
             { 1: l('en').numberFormatter({ raw: '0' }) },
             {
-              pattern: 'MMM d',
+              pattern: 'E, MMM d',
               timeSeparator: ':',
+              days: {
+                E: { 1: { sun: 'Sun', mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat' } },
+              },
               months: {
                 M: {
                   3: {
@@ -11091,18 +11141,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
-          (l.b129255162 = p(
-            { 1: l('en').numberFormatter({ raw: '0' }), 2: l('en').numberFormatter({ raw: '00' }) },
-            { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
-          )),
-          (l.a683162061 = p(
+          (l.a1269826356 = p(
             { 1: l('en').numberFormatter({ raw: '0' }) },
             {
-              pattern: 'E, MMM d',
+              pattern: 'MMM d',
               timeSeparator: ':',
-              days: {
-                E: { 1: { sun: 'Sun', mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat' } },
-              },
               months: {
                 M: {
                   3: {
@@ -11416,9 +11459,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
-          (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.b965415715 = w(l('en').dateToPartsFormatter({ skeleton: 'hm' }))),
           (l.a1434444438 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
+          (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.a816076018 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMd' }))),
           (l.a837317001 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMdd' }))),
           (l.b498196529 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
@@ -11546,10 +11589,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie5d110e', l.a223746363),
           a('df5f11b3', l.b2116965749),
           a('f668e928', l.b385502835),
-          a('ccaa970e', l.a878419275),
           a('c333da63', l.b687161418),
           a('d725a288', l.b965415715),
           a('h8054d90', l.a1434444438),
+          a('ccaa970e', l.a878419275),
           a('e8733ed8', l.b1436183524),
           a('i61fef37', l.b1554153647),
           a('be59d8c3', l.a1963255228),

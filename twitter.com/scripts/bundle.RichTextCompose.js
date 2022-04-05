@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [84, 7, 9, 12, 18, 78],
+  [83, 7, 11, 13, 77],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -2846,7 +2846,7 @@
         pe = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         me = Object(pe.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(179).then(n.bind(null, 'mL9d'))
           },
         }),
         he = n('m3Bd'),
@@ -3182,7 +3182,7 @@
         pt = n('xXop'),
         mt = n('xrkw'),
         ht = n('mqpi'),
-        ft = G.a.g1fa869c,
+        ft = G.a.e6901eeb,
         gt = (function (e) {
           g()(n, e)
           var t = y()(n)
@@ -3210,7 +3210,7 @@
                   return !this._shouldDisable(i, ht.a.Analytics) && n === i.user.id_str
                     ? C.a.createElement(
                         x.a,
-                        { style: [vt.activityContainerWithChildren, r] },
+                        { style: [vt.analyticsContainerWithChildren, r] },
                         C.a.createElement(
                           I.a,
                           {
@@ -3236,7 +3236,7 @@
           return {
             analyticsIcon: { color: e.colors.gray700, paddingRight: e.spaces.space4 },
             analyticsButton: { paddingVertical: e.spaces.space16, flexDirection: 'row', flexGrow: 1 },
-            activityContainerWithChildren: {
+            analyticsContainerWithChildren: {
               justifyContent: 'space-between',
               borderTopColor: e.colors.borderColor,
               borderTopStyle: 'solid',
@@ -4813,7 +4813,7 @@
                                 {
                                   link: ''.concat(o.permalink, '/quick_promote_web/intro'),
                                   onPress: this._getPromoteButtonOnPress(m),
-                                  style: qn.tweetActivityPromoteButton,
+                                  style: qn.tweetAnalyticsPromoteButton,
                                   type: 'primaryFilled',
                                 },
                                 this._getPromoteButtonText(m),
@@ -5493,7 +5493,7 @@
             borderBottomWidth: e.borderWidths.small,
           },
           promoteButton: { marginTop: e.spaces.space12 },
-          tweetActivityPromoteButton: { marginVertical: e.spaces.space8 },
+          tweetAnalyticsPromoteButton: { marginVertical: e.spaces.space8 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
           promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },
@@ -14862,7 +14862,7 @@
         u = Object(l.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(209)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(208)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -15736,7 +15736,7 @@
         T = n('RuTB'),
         x = Object(E.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(8), n.e(178)])
+            return Promise.all([n.e(0), n.e(8), n.e(177)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }

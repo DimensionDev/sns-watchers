@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [227],
+  [226],
   {
     '2qZs': function (e, t, a) {
       'use strict'
@@ -121,8 +121,8 @@
           })
         },
         F = a('MWbm'),
-        P = a('cTG8'),
-        I = function (e) {
+        I = a('cTG8'),
+        P = function (e) {
           var t = e.focused,
             a = e.template.aggregateUserActionsV1,
             n = a.additionalContext,
@@ -133,10 +133,10 @@
           return i
             ? o.a.createElement(
                 F.a,
-                { style: R.target },
+                { style: T.target },
                 (function (e) {
                   var a = e.retweeted_status || e
-                  return o.a.createElement(P.a, {
+                  return o.a.createElement(I.a, {
                     color: 'gray700',
                     displayTextRange: a.display_text_range,
                     entities: a.entities,
@@ -149,13 +149,13 @@
                 })(i),
               )
             : n && n.contextText
-            ? o.a.createElement(F.a, { style: R.target }, o.a.createElement(O, { focused: t, text: n.contextText }))
+            ? o.a.createElement(F.a, { style: T.target }, o.a.createElement(O, { focused: t, text: n.contextText }))
             : null
         },
-        R = H.a.create(function (e) {
+        T = H.a.create(function (e) {
           return { target: { marginTop: e.spaces.space12 } }
         }),
-        T = (a('M+/F'), a('jhWN')),
+        R = (a('M+/F'), a('jhWN')),
         S = function (e) {
           var t = e.userDecorations,
             a = e.users.slice(0, e.maxItems).filter(function (e) {
@@ -165,7 +165,7 @@
             F.a,
             { style: [V.root, 'center' === e.align && V.rootCenter, e.style] },
             a.map(function (a, n) {
-              return o.a.createElement(T.a, {
+              return o.a.createElement(R.a, {
                 accessibilityHidden: !0,
                 decoration: t && t[n],
                 key: n,
@@ -503,10 +503,10 @@
       var je = De,
         Oe = a('A7Fw'),
         Fe = 'notification-message-text',
-        Pe = 'notification-tweet-text',
-        Ie = 'notification-show-more-text',
-        Re = 'notification-additional-context',
-        Te = H.a.create(function (e) {
+        Ie = 'notification-tweet-text',
+        Pe = 'notification-show-more-text',
+        Te = 'notification-additional-context',
+        Re = H.a.create(function (e) {
           return {
             root: { cursor: 'pointer', paddingVertical: e.componentDimensions.gutterVertical },
             horizontalPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal },
@@ -515,6 +515,7 @@
             isTweet: { padding: 0 },
             unread: { backgroundColor: e.colors.unreadCellBackground },
             itemIcon: { alignItems: 'flex-end' },
+            edgeToEdgeItemIcon: { alignItems: 'center' },
             itemContent: { flexGrow: 1 },
             curationControl: {
               position: 'absolute',
@@ -538,35 +539,35 @@
             avatarDecoration: { width: '1.2em', height: '1.2em', position: 'absolute', top: '1em', right: 0 },
           }
         }),
-        Se = o.a.createElement(Q.a, { style: [Te.colorPurple, Te.icon] }),
-        Ve = o.a.createElement(J.a, { style: [Te.colorBlue, Te.icon] }),
-        Ge = o.a.createElement(W.a, { style: [Te.colorBlue, Te.icon] }),
-        Ue = o.a.createElement(Z.a, { style: [Te.colorBlue, Te.icon] }),
-        Ne = o.a.createElement(X.a, { style: [Te.colorRed, Te.icon] }),
-        qe = o.a.createElement(Y.a, { style: [Te.colorRed, Te.icon] }),
-        Ke = o.a.createElement(ce, { style: [Te.colorRed, Te.icon] }),
-        Qe = o.a.createElement(ie.a, { style: [Te.colorDeepGray, Te.icon] }),
-        Je = o.a.createElement(le.a, { style: [Te.colorBlue, Te.icon] }),
-        We = o.a.createElement(re.a, { style: [Te.colorDeepGray, Te.icon] }),
-        Ze = o.a.createElement(se, { style: [Te.colorDeepGray, Te.icon] }),
-        Xe = o.a.createElement(ue, { style: Te.icon }),
-        Ye = o.a.createElement(me.a, { style: [Te.colorBlue, Te.icon] }),
-        $e = o.a.createElement(ge.a, { style: [Te.colorBlue, Te.icon] }),
-        et = o.a.createElement(he, { style: [Te.colorDeepGray, Te.icon] }),
-        tt = o.a.createElement(ve.a, { style: [Te.colorGreen, Te.icon] }),
-        at = o.a.createElement(pe, { style: Te.icon }),
-        nt = o.a.createElement(be, { style: Te.icon }),
-        ct = o.a.createElement(j.a, { style: Te.icon }),
-        it = o.a.createElement(xe.a, { style: [Te.colorPrimary, Te.icon] }),
-        lt = o.a.createElement(we.a, { style: [Te.twitterIcon, Te.icon] }),
-        rt = o.a.createElement(_e.a, { style: [Te.colorOrange, Te.icon] }),
-        ot = o.a.createElement(ke, { style: [Te.colorOrange, Te.icon] }),
-        st = o.a.createElement(Me, { style: Te.icon }),
-        dt = o.a.createElement(He, { style: Te.icon }),
-        ut = o.a.createElement(Ae.a, { style: [Te.colorPlum, Te.icon] }),
-        mt = o.a.createElement(Le.a, { style: [Te.colorRed, Te.icon] }),
-        gt = o.a.createElement(je, { style: [Te.colorBlue, Te.icon] }),
-        yt = o.a.createElement(Oe.a, { style: [Te.colorBlue, Te.icon] }),
+        Se = o.a.createElement(Q.a, { style: [Re.colorPurple, Re.icon] }),
+        Ve = o.a.createElement(J.a, { style: [Re.colorBlue, Re.icon] }),
+        Ge = o.a.createElement(W.a, { style: [Re.colorBlue, Re.icon] }),
+        Ue = o.a.createElement(Z.a, { style: [Re.colorBlue, Re.icon] }),
+        Ne = o.a.createElement(X.a, { style: [Re.colorRed, Re.icon] }),
+        qe = o.a.createElement(Y.a, { style: [Re.colorRed, Re.icon] }),
+        Ke = o.a.createElement(ce, { style: [Re.colorRed, Re.icon] }),
+        Qe = o.a.createElement(ie.a, { style: [Re.colorDeepGray, Re.icon] }),
+        Je = o.a.createElement(le.a, { style: [Re.colorBlue, Re.icon] }),
+        We = o.a.createElement(re.a, { style: [Re.colorDeepGray, Re.icon] }),
+        Ze = o.a.createElement(se, { style: [Re.colorDeepGray, Re.icon] }),
+        Xe = o.a.createElement(ue, { style: Re.icon }),
+        Ye = o.a.createElement(me.a, { style: [Re.colorBlue, Re.icon] }),
+        $e = o.a.createElement(ge.a, { style: [Re.colorBlue, Re.icon] }),
+        et = o.a.createElement(he, { style: [Re.colorDeepGray, Re.icon] }),
+        tt = o.a.createElement(ve.a, { style: [Re.colorGreen, Re.icon] }),
+        at = o.a.createElement(pe, { style: Re.icon }),
+        nt = o.a.createElement(be, { style: Re.icon }),
+        ct = o.a.createElement(j.a, { style: Re.icon }),
+        it = o.a.createElement(xe.a, { style: [Re.colorPrimary, Re.icon] }),
+        lt = o.a.createElement(we.a, { style: [Re.twitterIcon, Re.icon] }),
+        rt = o.a.createElement(_e.a, { style: [Re.colorOrange, Re.icon] }),
+        ot = o.a.createElement(ke, { style: [Re.colorOrange, Re.icon] }),
+        st = o.a.createElement(Me, { style: Re.icon }),
+        dt = o.a.createElement(He, { style: Re.icon }),
+        ut = o.a.createElement(Ae.a, { style: [Re.colorPlum, Re.icon] }),
+        mt = o.a.createElement(Le.a, { style: [Re.colorRed, Re.icon] }),
+        gt = o.a.createElement(je, { style: [Re.colorBlue, Re.icon] }),
+        yt = o.a.createElement(Oe.a, { style: [Re.colorBlue, Re.icon] }),
         ht = {
           alert_bell_icon: Ve,
           bar_chart_icon: Se,
@@ -659,31 +660,31 @@
                   return o.a.createElement(U.a, {
                     legacyHeart: w,
                     reactionType: e,
-                    style: Te.avatarDecoration,
+                    style: Re.avatarDecoration,
                     withAnimation: !1,
                   })
                 })
               : void 0,
             j = C && !B.length && !x,
             O = f && f.id && ht[f.id] ? ht[f.id] : lt,
-            P = b && ('string' == typeof b ? { pathname: b } : b)
+            I = b && ('string' == typeof b ? { pathname: b } : b)
           return o.a.createElement(N.a.Consumer, null, function (e) {
             return o.a.createElement(
               q.a,
               {
-                accessibilityLabelledBy: c ? [Fe, Pe, Ie, Re].join(' ') : void 0,
+                accessibilityLabelledBy: c ? [Fe, Ie, Pe, Te].join(' ') : void 0,
                 accessibilityRole: 'article',
-                link: P ? e.withAnchorless(P) : void 0,
+                link: I ? e.withAnchorless(I) : void 0,
                 onBlur: v,
                 onClick: y,
                 onFocus: h,
-                style: [Te.root, _ ? Te.reducedHorizontalPadding : Te.horizontalPadding, m && Te.unread],
+                style: [Re.root, _ ? Re.reducedHorizontalPadding : Re.horizontalPadding, m && Re.unread],
               },
               x
                 ? o.a.createElement(D.a, {
                     contextType: x.contextType,
                     link: x.landingUrl ? Object(z.b)(x.landingUrl) : void 0,
-                    style: Te.socialContext,
+                    style: Re.socialContext,
                     text: x.text,
                   })
                 : null,
@@ -691,14 +692,14 @@
                 K.a,
                 {
                   avatarCell: O,
-                  avatarCellStyle: Te.itemIcon,
-                  cellStyle: [Te.itemContent, Te.timelineRowText, j && Te.curationPadding],
-                  style: _ && Te.edgeToEdgeSocialContext,
+                  avatarCellStyle: _ ? Re.edgeToEdgeItemIcon : Re.itemIcon,
+                  cellStyle: [Re.itemContent, Re.timelineRowText, j && Re.curationPadding],
+                  style: _ && Re.edgeToEdgeSocialContext,
                 },
                 B.length
                   ? o.a.createElement(
                       F.a,
-                      { style: Te.userAvatarList },
+                      { style: Re.userAvatarList },
                       o.a.createElement(G, { userDecorations: L, users: B }),
                     )
                   : null,
@@ -709,10 +710,10 @@
                   rtl: p.rtl,
                   text: p.text,
                 }),
-                o.a.createElement(I, { focused: c, template: E }),
+                o.a.createElement(P, { focused: c, template: E }),
                 o.a.createElement(A, { focused: c, link: b, template: E }),
               ),
-              C ? o.a.createElement(F.a, { style: Te.curationControl }, C) : null,
+              C ? o.a.createElement(F.a, { style: Re.curationControl }, C) : null,
             )
           })
         },
@@ -738,7 +739,7 @@
         i = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('zb92')),
         l = Object(i.a)({
           loader: function () {
-            return a.e(174).then(a.bind(null, 'ACNv'))
+            return a.e(173).then(a.bind(null, 'ACNv'))
           },
         }),
         r = a('4bW+'),

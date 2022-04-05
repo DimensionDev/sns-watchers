@@ -13,7 +13,7 @@
         c = n('xrkw'),
         s = n('wwsH'),
         l = r.a.f2849136,
-        u = r.a.dedf22f3,
+        u = r.a.ee9a81b6,
         d = { viewType: 'analytics' }
       function m(e) {
         var t = e.activeColor,
@@ -5172,7 +5172,7 @@
                   case Re.a.Share:
                     return T.a.jead3bc1
                   case Re.a.Analytics:
-                    return T.a.ff25aba5
+                    return T.a.bf02eab5
                   default:
                     return ''
                 }

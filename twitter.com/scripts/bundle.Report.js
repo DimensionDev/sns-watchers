@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [82],
+  [81],
   {
     '07FG': function (e, t, n) {
       'use strict'
@@ -29,7 +29,7 @@
           return L
         }),
         n.d(t, 'e', function () {
-          return P
+          return H
         }),
         n.d(t, 'i', function () {
           return F
@@ -38,10 +38,10 @@
           return q
         }),
         n.d(t, 'k', function () {
-          return G
+          return B
         }),
         n.d(t, 'h', function () {
-          return B
+          return G
         }),
         n.d(t, 'a', function () {
           return V
@@ -96,8 +96,8 @@
           'quickReply',
         ],
         A = 'dmComposer',
-        U = {}
-      var M = function (e) {
+        M = {}
+      var U = function (e) {
           var t = e.conversation_id,
             n = e.id,
             r = e.localMediaId,
@@ -129,28 +129,28 @@
               y = c.localMediaId,
               g = c.recipients,
               A = void 0 === g ? [] : g,
-              U = c.requestId,
-              k = void 0 === U ? w.a.v1() : U,
+              M = c.requestId,
+              k = void 0 === M ? w.a.v1() : M,
               R = c.tweetAttachment,
               D = c.quickReply,
               S = s()(c, I)
             t(Z(l))
             var O = n(),
-              x = y || H(n(), l),
+              x = y || P(n(), l),
               L = m.k(O, x),
               N = i()(L, 1)[0] || {},
-              P = N.mediaFile,
+              H = N.mediaFile,
               F = N.mediaMetadata,
               q = A.length > 0 && A.join(','),
-              G = {}
-            P && P.isGif
-              ? (G.extraInitParams = '&media_category=dm_gif')
-              : P && P.isVideo && (G.extraInitParams = '&media_category=dm_video')
-            var W = m.p(x, G),
+              B = {}
+            H && H.isGif
+              ? (B.extraInitParams = '&media_category=dm_gif')
+              : H && H.isVideo && (B.extraInitParams = '&media_category=dm_video')
+            var W = m.p(x, B),
               V = [t(W)],
-              X = (B(O, l) || {}).found_media_origin
+              X = (G(O, l) || {}).found_media_origin
             return (
-              P && P.isGif && V.push(Object(b.a)(P)),
+              H && H.isGif && V.push(Object(b.a)(H)),
               Promise.all(V).then(
                 function (n) {
                   var r = i()(n, 2),
@@ -180,7 +180,7 @@
                           : m.isVideo && (r.video = p()(p()({}, b), {}, { media_url_https: m.url, type: 'video' }))
                       } else R && (r.tweet = { status: n })
                       var y = (c || {}).uploadId,
-                        g = M({
+                        g = U({
                           attachment: r,
                           conversation_id: l,
                           id: k,
@@ -227,7 +227,7 @@
                             return t(d), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
                           },
                           function (n) {
-                            var o = M({
+                            var o = U({
                                 attachment: r,
                                 conversation_id: l,
                                 error: !0,
@@ -279,25 +279,25 @@
           return n ? n.cardUrl : null
         },
         N = 'rweb/dmComposer/SAVE_CARD_URL',
-        P = function (e, t) {
+        H = function (e, t) {
           return { type: N, conversationId: e, cardUrl: t }
         },
-        H = function (e, t) {
+        P = function (e, t) {
           var n = R(e, t)
           return n ? n.mediaId : null
         },
         F = function (e, t) {
-          var n = m.k(e, H(e, t))
+          var n = m.k(e, P(e, t))
           return n.length > 0 ? n[0] : null
         },
         q = function (e, t) {
           var n = R(e, t)
           return !!n && n.isUploading
         },
-        G = function (e, t) {
-          return m.l(e, H(e, t))
-        },
         B = function (e, t) {
+          return m.l(e, P(e, t))
+        },
+        G = function (e, t) {
           var n = R(e, t)
           return n ? n.gifMetadata : null
         },
@@ -309,13 +309,13 @@
         Q = function (e) {
           return { type: X, conversationId: e }
         },
-        K = 'rweb/dmComposer/REMOVE_MEDIA',
-        Y = function (e) {
-          return { type: K, conversationId: e }
+        Y = 'rweb/dmComposer/REMOVE_MEDIA',
+        K = function (e) {
+          return { type: Y, conversationId: e }
         },
         z = function (e, t) {
           return function (n) {
-            n(m.i(t)), n([Q(e), Y(e)])
+            n(m.i(t)), n([Q(e), K(e)])
           }
         },
         J = 'rweb/dmComposer/UPLOAD_REQUEST',
@@ -332,7 +332,7 @@
         }
       y.a.register(
         d()({}, A, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.conversationId || 'new_group'
           switch (t.type) {
@@ -347,7 +347,7 @@
               return p()(p()({}, e), {}, d()({}, n, p()(p()({}, a), {}, { isUploading: !1 })))
             case te:
             case $:
-            case K:
+            case Y:
               var i = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(
                 p()({}, e),
@@ -373,7 +373,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ReportScreen', function () {
-          return Me
+          return Ue
         })
       var r = n('yiKp'),
         o = n.n(r),
@@ -409,8 +409,8 @@
         C = n('MMRb'),
         I = n('kHBp'),
         A = n('lPpt'),
-        U = n('Fg8X'),
-        M = n('0pUJ'),
+        M = n('Fg8X'),
+        U = n('0pUJ'),
         k = n('Fmkq'),
         R = n('QK5w'),
         D = n('V5Qi'),
@@ -422,10 +422,10 @@
         N = function (e, t) {
           return t.location && t.location.state && t.location.state.clientReferer
         },
-        P = function (e, t) {
+        H = function (e, t) {
           return t.location && t.location.state && t.location.state.inboxType
         },
-        H = function (e, t) {
+        P = function (e, t) {
           return t.location && t.location.state && t.location.state.scribeNamespace
         },
         F = function (e, t) {
@@ -434,10 +434,10 @@
         q = function (e, t) {
           return t.location && t.location.state && t.location.state.promotedContent
         },
-        G = function (e, t) {
+        B = function (e, t) {
           return t.location && t.location.state && t.location.state.conversationSection
         },
-        B = function (e, t) {
+        G = function (e, t) {
           return t.location && t.location.query && Object(T.a)(t.location.query.community_id)
         },
         W = function (e, t) {
@@ -461,11 +461,11 @@
               return
           }
         },
-        K = function (e, t) {
+        Y = function (e, t) {
           var n = V(e, t) === L.a.User ? X(0, t) : void 0
           return n ? O.e.select(e, n) : void 0
         },
-        Y = function (e, t) {
+        K = function (e, t) {
           var n,
             r = V(e, t)
           if (
@@ -494,7 +494,7 @@
             )
         },
         J = function (e, t) {
-          return V(e, t) === L.a.Moment ? U.a.select(e, X(0, t)) : void 0
+          return V(e, t) === L.a.Moment ? M.a.select(e, X(0, t)) : void 0
         },
         Z = function (e, t) {
           var n = V(e, t) === L.a.List ? X(0, t) : void 0
@@ -509,22 +509,22 @@
             return {
               canGoBack: R.a,
               clientReferer: N,
-              communityId: B,
-              dmConversation: Y,
+              communityId: G,
+              dmConversation: K,
               reportedId: X,
-              inboxType: P,
+              inboxType: H,
               isMedia: F,
               lang: g.p,
               liveEvent: $,
               moment: J,
               list: Z,
               promotedContent: q,
-              conversationSection: G,
+              conversationSection: B,
               reportType: V,
               reportSource: W,
-              scribeNamespace: H,
+              scribeNamespace: P,
               tweet: Q,
-              user: K,
+              user: Y,
             }
           })
           .propsFromActions(function () {
@@ -533,7 +533,7 @@
               block: O.e.block,
               createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
               fetchUpdates: C.fetchUpdates,
-              mute: M.a,
+              mute: U.a,
               markTweetAsReported: S.a.markAsReported,
               markTweetsAsRemovedFromCommunity: S.a.markTweetsAsRemovedFromCommunity,
               richScribeAction: k.richScribeAction,
@@ -580,8 +580,8 @@
         Ce = ae.a.a9fd20be,
         Ie = ae.a.i2b9632d,
         Ae = ae.a.b772cd65,
-        Ue = 'https://twitter.com',
-        Me = (function (e) {
+        Me = 'https://twitter.com',
+        Ue = (function (e) {
           p()(n, e)
           var t = f()(n)
           function n(e, r) {
@@ -784,7 +784,7 @@
                       return ''.concat(encodeURIComponent(e), '=').concat(encodeURIComponent(y[e]))
                     })
                     .join('&')
-                return ''.concat(Ue, '/i/safety/report_story?').concat(g)
+                return ''.concat(Me, '/i/safety/report_story?').concat(g)
               }),
               v()(d()(o), '_messageHandler', function (e) {
                 var t = o.props,
@@ -792,7 +792,7 @@
                   r = t.markTweetAsReported,
                   a = t.markTweetsAsRemovedFromCommunity,
                   i = t.reportSource
-                if (e.origin === Ue && 'ReportAction' === e.data.type) {
+                if (e.origin === Me && 'ReportAction' === e.data.type) {
                   var c = o.props,
                     s = c.block,
                     u = c.createLocalApiErrorHandler,
@@ -990,7 +990,7 @@
             n
           )
         })(h.a.Component)
-      v()(Me, 'defaultProps', {
+      v()(Ue, 'defaultProps', {
         addMessageListener: function (e) {
           return window.addEventListener('message', e)
         },
@@ -999,8 +999,8 @@
           return window.removeEventListener('message', e)
         },
       }),
-        v()(Me, 'contextType', ve.a)
-      var ke = ee(Me)
+        v()(Ue, 'contextType', ve.a)
+      var ke = ee(Ue)
       t.default = ke
     },
     LqVV: function (e, t, n) {
@@ -1056,8 +1056,8 @@
         C = n('MWbm'),
         I = n('P2xQ'),
         A = n('fs1G'),
-        U = n('0zXz'),
-        M = y.a.a9fd20be,
+        M = n('0zXz'),
+        U = y.a.a9fd20be,
         k = y.a.i2b9632d
       function R(e) {
         return (
@@ -1109,7 +1109,7 @@
                               }, r(w.a))
                             }),
                         },
-                        text: M,
+                        text: U,
                       })
                     }, i(a.a)),
                 c.goBackThroughModals())
@@ -1118,7 +1118,7 @@
           o.a.createElement(
             C.a,
             { style: D.root },
-            o.a.createElement(b.a, { fetchStatus: v.a.LOADING, onRequestRetry: A.a, render: U.a, retryable: !1 }),
+            o.a.createElement(b.a, { fetchStatus: v.a.LOADING, onRequestRetry: A.a, render: M.a, retryable: !1 }),
           )
         )
       }
@@ -1283,73 +1283,6 @@
             ? n.message_data.quick_reply
             : void 0
         }
-    },
-    XnpN: function (e, t, n) {
-      'use strict'
-      var r = n('RhWx'),
-        o = n.n(r),
-        a = n('ddV6'),
-        i = n.n(a),
-        c = (n('2G9S'), n('tQbP'), n('aWyx')),
-        s = (n('6U7i'), n('LW0h'), n('7x/C'), n('z84I'), n('t0aI')),
-        u = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
-          return new Date(Number(e))
-        },
-        d = function (e, t) {
-          return u(e.join_time) - u(t.join_time)
-        },
-        l = function (e, t) {
-          var n = e.user,
-            r = t.user
-          return Object(s.a)(n.id_str, r.id_str)
-        },
-        p = function (e) {
-          return (function () {
-            for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
-            return function (e, n) {
-              return (
-                t
-                  .map(function (t) {
-                    return t(e, n)
-                  })
-                  .filter(function (e) {
-                    return !!e
-                  })[0] || 0
-              )
-            }
-          })(
-            (function (e) {
-              return function (t, n) {
-                var r = t.user,
-                  o = n.user
-                switch (e) {
-                  case r.id_str:
-                    return -1
-                  case o.id_str:
-                    return 1
-                  default:
-                    return 0
-                }
-              }
-            })(e),
-            d,
-            l,
-          )
-        },
-        m = n('VIKJ')
-      t.a = function (e, t) {
-        var n = e.created_by_user_id,
-          r = e.participants,
-          a = e.type,
-          s = Object(m.a)(r, function (e) {
-            return e.user.id_str === t
-          }),
-          u = i()(s, 2),
-          d = u[0],
-          l = u[1]
-        return l.length ? (a === c.a.GROUP && 1 === l.length ? [].concat(o()(d), o()(l)) : n ? l.sort(p(n)) : l) : d
-      }
     },
   },
 ])

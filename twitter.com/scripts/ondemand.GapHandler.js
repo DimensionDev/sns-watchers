@@ -1,45 +1,45 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [212],
+  [211],
   {
-    '5bSN': function (e, t, n) {
+    '5bSN': function (e, n, t) {
       'use strict'
-      n.d(t, 'a', function () {
-        return f
+      t.d(n, 'a', function () {
+        return m
       })
-      n('hBvt')
-      var a = n('ERkP'),
-        r = n.n(a),
-        o = n('3XMw'),
-        i = n.n(o),
-        c = n('MWbm'),
-        l = n('htQn'),
-        s = n('Qwev'),
-        u = n('h0NW'),
-        d = n('t62R'),
-        p = n('rHpw'),
-        h = i.a.ee8c6c61,
-        v = i.a.i8005e73
-      function f(e) {
-        var t = e.children,
-          n = void 0 === t ? h : t,
+      t('hBvt')
+      var a = t('ERkP'),
+        r = t.n(a),
+        i = t('3XMw'),
+        o = t.n(i),
+        c = t('MWbm'),
+        s = t('htQn'),
+        l = t('Qwev'),
+        u = t('h0NW'),
+        d = t('t62R'),
+        p = t('rHpw'),
+        h = o.a.ee8c6c61,
+        v = o.a.i8005e73
+      function m(e) {
+        var n = e.children,
+          t = void 0 === n ? h : n,
           a = e.isLoading,
-          o = e.link,
-          i = e.onClick,
+          i = e.link,
+          o = e.onClick,
           p = e.isTransparentCursor
         return r.a.createElement(
-          l.a,
-          { link: o, onClick: i, style: m.root },
+          s.a,
+          { link: i, onClick: o, style: f.root },
           r.a.createElement(
             c.a,
-            { style: m.inner },
+            { style: f.inner },
             a
-              ? r.a.createElement(s.a, { accessibilityLabel: v })
+              ? r.a.createElement(l.a, { accessibilityLabel: v })
               : p
               ? r.a.createElement(
                   r.a.Fragment,
                   null,
                   r.a.createElement(u.a, {
-                    containerStyle: m.cursor,
+                    containerStyle: f.cursor,
                     items: [
                       {
                         description: 'These may include replies that are potentially spammy, harmful, or offensive.',
@@ -47,13 +47,13 @@
                       },
                     ],
                   }),
-                  r.a.createElement(d.b, { children: 'View Replies', color: 'link', style: m.link }),
+                  r.a.createElement(d.b, { children: 'View Replies', color: 'link', style: f.link }),
                 )
-              : r.a.createElement(d.b, { align: 'center', children: n, color: 'link' }),
+              : r.a.createElement(d.b, { align: 'center', children: t, color: 'link' }),
           ),
         )
       }
-      var m = p.a.create(function (e) {
+      var f = p.a.create(function (e) {
         return {
           root: { justifyContent: 'center', minHeight: e.spaces.space48, width: '100%' },
           inner: { flexGrow: 1, flexShrink: 1, justifyContent: 'center' },
@@ -66,157 +66,176 @@
         }
       })
     },
-    EnM6: function (e, t, n) {
+    EnM6: function (e, n, t) {
       'use strict'
-      n('hBvt')
-      var a = n('ERkP'),
-        r = n.n(a),
-        o = n('3XMw'),
-        i = n.n(o),
-        c = n('MWbm'),
-        l = n('t62R'),
-        s = n('5mJL'),
-        u = n('PV92'),
-        d = n('htQn'),
-        p = n('rHpw'),
-        h = n('Qwev'),
-        v = i.a.i8005e73,
-        f = p.a.create(function (e) {
+      t('hBvt')
+      var a = t('ERkP'),
+        r = t.n(a),
+        i = t('3XMw'),
+        o = t.n(i),
+        c = t('MWbm'),
+        s = t('t62R'),
+        l = t('5mJL'),
+        u = t('PV92'),
+        d = t('htQn'),
+        p = t('rHpw'),
+        h = t('Qwev'),
+        v = o.a.i8005e73,
+        m = p.a.create(function (e) {
           return {
-            gap: { overflow: 'hidden' },
-            treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
-            treeGapTopLevel: { paddingLeft: 0 },
             connectors: { zIndex: 1 },
-            hoverBox: { flexGrow: 1, marginLeft: e.spaces.space12, paddingLeft: e.spaces.space4 },
-            hoverBoxIndented: { marginLeft: 0 },
-            hoverBoxTopLevel: { marginLeft: 0 },
-            dotGroup: {
-              alignItems: 'center',
-              alignSelf: 'center',
-              flexGrow: 0,
-              justifyContent: 'space-between',
-              position: 'relative',
-              height: e.spaces.space16,
-            },
             content: { flexGrow: 1 },
-            treeContent: { paddingHorizontal: e.spaces.space4 },
+            conversationConnector: {
+              alignItems: 'center',
+              display: 'flex',
+              position: 'relative',
+              height: e.spaces.space36,
+              flexGrow: 0,
+            },
+            conversationLine: {
+              backgroundColor: e.colors.gray200,
+              width: e.componentDimensions.conversationLineWidth,
+              height: e.spaces.space8,
+            },
             dot: {
               display: 'block',
               backgroundColor: e.colors.gray200,
               height: e.componentDimensions.conversationLineWidth,
               width: e.componentDimensions.conversationLineWidth,
             },
+            ellipsis: {
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              height: e.spaces.space16,
+              marginVertical: 'auto',
+            },
+            ellipsisWithConversationLines: { height: e.spaces.space12 },
             enlargeTouchTarget: { paddingVertical: e.spaces.space8 },
+            gap: { overflow: 'hidden' },
+            hoverBox: { flexGrow: 1, marginLeft: e.spaces.space12, paddingLeft: e.spaces.space4 },
+            hoverBoxIndented: { marginLeft: 0 },
+            hoverBoxTopLevel: { marginLeft: 0 },
             loadingIndicator: { paddingVertical: e.spaces.space4 },
+            treeContent: { paddingHorizontal: e.spaces.space4 },
+            treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
+            treeGapTopLevel: { paddingLeft: 0 },
           }
         }),
-        m = r.a.createElement(h.a, { accessibilityLabel: v, style: f.loadingIndicator })
-      t.a = function (e) {
-        var t = e.indents,
-          n = e.isLoading,
+        f = r.a.createElement(h.a, { accessibilityLabel: v, style: m.loadingIndicator })
+      n.a = function (e) {
+        var n = e.indents,
+          t = e.isLoading,
           a = e.label,
-          o = e.link,
-          i = e.onClick,
-          p = e.withElbow,
-          h = r.a.createElement(l.b, { color: 'link', style: f.enlargeTouchTarget }, a),
-          v = r.a.createElement(
-            s.a,
+          i = e.link,
+          o = e.onClick,
+          p = e.withConversationLines,
+          h = void 0 !== p && p,
+          v = e.withElbow,
+          g = r.a.createElement(s.b, { color: 'link', style: m.enlargeTouchTarget }, a),
+          y = r.a.createElement(
+            l.a,
             {
-              avatarCell: t
+              avatarCell: n
                 ? void 0
                 : r.a.createElement(
                     r.a.Fragment,
                     null,
-                    r.a.createElement(c.a, { style: f.dot }),
-                    r.a.createElement(c.a, { style: f.dot }),
-                    r.a.createElement(c.a, { style: f.dot }),
+                    h && r.a.createElement(c.a, { style: m.conversationLine, testID: 'conversationLine' }),
+                    r.a.createElement(
+                      c.a,
+                      { style: [m.ellipsis, h && m.ellipsisWithConversationLines] },
+                      r.a.createElement(c.a, { style: m.dot }),
+                      r.a.createElement(c.a, { style: m.dot }),
+                      r.a.createElement(c.a, { style: m.dot }),
+                    ),
+                    h && r.a.createElement(c.a, { style: m.conversationLine, testID: 'conversationLine' }),
                   ),
-              avatarCellStyle: f.dotGroup,
-              cellStyle: [f.content, t && f.treeContent],
+              avatarCellStyle: m.conversationConnector,
+              cellStyle: [m.content, n && m.treeContent],
             },
-            n ? m : h,
+            t ? f : g,
           )
         return r.a.createElement(
           c.a,
-          { style: [f.gap, t && f.treeGap, t && 0 === t.length && f.treeGapTopLevel] },
-          t
+          { style: [m.gap, n && m.treeGap, n && 0 === n.length && m.treeGapTopLevel] },
+          n
             ? r.a.createElement(u.a, {
-                indents: t,
+                indents: n,
                 paddingTop: 5,
                 smallFirstCell: !1,
-                style: f.connectors,
-                wideElbow: 1 === t.length,
-                withElbow: !!p,
+                style: m.connectors,
+                wideElbow: 1 === n.length,
+                withElbow: !!v,
               })
             : null,
-          i || o
+          o || i
             ? r.a.createElement(
                 d.a,
                 {
-                  link: n ? void 0 : o,
-                  onClick: n ? void 0 : i,
+                  link: t ? void 0 : i,
+                  onClick: t ? void 0 : o,
                   style: [
-                    f.hoverBox,
-                    t && 0 === t.length && f.hoverBoxTopLevel,
-                    t && t.length > 1 && f.hoverBoxIndented,
+                    m.hoverBox,
+                    n && 0 === n.length && m.hoverBoxTopLevel,
+                    n && n.length > 1 && m.hoverBoxIndented,
                   ],
-                  withInteractiveStyling: !n,
+                  withInteractiveStyling: !t,
                 },
-                v,
+                y,
               )
-            : v,
+            : y,
         )
       }
     },
-    Xl5C: function (e, t, n) {
+    Xl5C: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var a = n('nGQU'),
+      t.r(n)
+      var a = t('nGQU'),
         r = Object(a.a)({})
-      t.default = r
+      n.default = r
     },
-    aqRH: function (e, t, n) {
+    aqRH: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var a = n('nGQU')
-      t.default = function (e) {
-        var t = e.withRuxInjections
+      t.r(n)
+      var a = t('nGQU')
+      n.default = function (e) {
+        var n = e.withRuxInjections
         return Object(a.a)({
           divider: function (e) {
             return e.conversationTreeMetadata ? { top: !1, bottom: !1 } : { top: !0, bottom: !1 }
           },
-          withRuxInjections: t,
+          withRuxInjections: n,
         })
       }
     },
-    ex5I: function (e, t, n) {
+    ex5I: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var a = n('nGQU'),
+      t.r(n)
+      var a = t('nGQU'),
         r = Object(a.a)({ divider: { top: !1, bottom: !1 } })
-      t.default = r
+      n.default = r
     },
-    nGQU: function (e, t, n) {
+    nGQU: function (e, n, t) {
       'use strict'
-      n('LW0h'), n('7x/C')
-      var a = n('ezF+'),
-        r = n('VPAj'),
-        o = n('97Jx'),
-        i = n.n(o),
-        c = n('yiKp'),
-        l = n.n(c),
-        s = n('KEM+'),
-        u = n.n(s),
-        d = n('ERkP'),
-        p = n.n(d),
-        h = n('v6aA'),
-        v = n('MDbM'),
-        f = n('rxPX'),
-        m = n('0KEI'),
-        g = function (e, t) {
-          return t.module.selectCursorFetchStatus(e, t.entry)
+      t('LW0h'), t('7x/C')
+      var a = t('ezF+'),
+        r = t('VPAj'),
+        i = t('97Jx'),
+        o = t.n(i),
+        c = t('yiKp'),
+        s = t.n(c),
+        l = t('KEM+'),
+        u = t.n(l),
+        d = t('ERkP'),
+        p = t.n(d),
+        h = t('v6aA'),
+        v = t('MDbM'),
+        m = t('rxPX'),
+        f = t('0KEI'),
+        g = function (e, n) {
+          return n.module.selectCursorFetchStatus(e, n.entry)
         },
-        w = Object(f.a)()
+        y = Object(m.a)()
           .propsFromState(function () {
             return { fetchStatus: g }
           })
@@ -226,144 +245,144 @@
           .propsFromActions(function (e) {
             return {
               fetchCursor: e.module.fetchCursor,
-              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('URT_CURSOR'),
+              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)('URT_CURSOR'),
             }
           })
           .withAnalytics(),
-        y = n('caTy'),
-        b = n('5bSN'),
-        k = n('VrFO'),
-        C = n.n(k),
-        E = n('Y9Ll'),
-        T = n.n(E),
-        L = n('5Yy7'),
-        x = n.n(L),
-        S = n('2VqO'),
-        M = n.n(S),
-        j = (n('hBvt'), n('EnM6')),
-        G = n('3XMw'),
-        I = n.n(G).a.ee8c6c61,
+        w = t('caTy'),
+        b = t('5bSN'),
+        C = t('VrFO'),
+        k = t.n(C),
+        E = t('Y9Ll'),
+        L = t.n(E),
+        T = t('5Yy7'),
+        x = t.n(T),
+        M = t('2VqO'),
+        S = t.n(M),
+        j = (t('hBvt'), t('EnM6')),
+        I = t('3XMw'),
+        G = t.n(I).a.ee8c6c61,
         R = (function (e) {
-          x()(n, e)
-          var t = M()(n)
-          function n() {
-            return C()(this, n), t.apply(this, arguments)
+          x()(t, e)
+          var n = S()(t)
+          function t() {
+            return k()(this, t), n.apply(this, arguments)
           }
           return (
-            T()(n, [
+            L()(t, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
-                    n = e.conversationTreeMetadata,
+                    n = e.children,
+                    t = e.conversationTreeMetadata,
                     a = e.isLoading,
                     r = e.link,
-                    o = e.onClick,
-                    i = n && n.ancestorConnector,
-                    c = n && n.indents
+                    i = e.onClick,
+                    o = t && t.ancestorConnector,
+                    c = t && t.indents
                   return p.a.createElement(j.a, {
                     indents: c,
                     isLoading: a,
-                    label: t,
+                    label: n,
                     link: r,
-                    onClick: o,
-                    withElbow: c ? 'side' === i : void 0,
+                    onClick: i,
+                    withElbow: c ? 'side' === o : void 0,
                   })
                 },
               },
             ]),
-            n
+            t
           )
         })(p.a.PureComponent)
-      u()(R, 'defaultProps', { children: I })
+      u()(R, 'defaultProps', { children: G })
       var P,
         O = R,
         B = (function (e) {
-          x()(n, e)
-          var t = M()(n)
-          function n() {
-            return C()(this, n), t.apply(this, arguments)
+          x()(t, e)
+          var n = S()(t)
+          function t() {
+            return k()(this, t), n.apply(this, arguments)
           }
           return (
-            T()(n, [
+            L()(t, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
-                    n = e.conversationTreeMetadata,
+                    n = e.children,
+                    t = e.conversationTreeMetadata,
                     a = e.isLoading,
                     r = e.link,
-                    o = e.onClick
-                  return n
+                    i = e.onClick
+                  return t
                     ? p.a.createElement(O, this.props)
-                    : p.a.createElement(b.a, { children: t, isLoading: a, link: r, onClick: o })
+                    : p.a.createElement(b.a, { children: n, isLoading: a, link: r, onClick: i })
                 },
               },
             ]),
-            n
+            t
           )
         })(p.a.PureComponent),
-        H = n('1Pcy'),
-        Q = n.n(H),
-        _ =
-          (n('2G9S'),
+        W = t('1Pcy'),
+        H = t.n(W),
+        Q =
+          (t('2G9S'),
           (function (e) {
-            x()(n, e)
-            var t = M()(n)
-            function n() {
+            x()(t, e)
+            var n = S()(t)
+            function t() {
               var e
-              C()(this, n)
-              for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
+              k()(this, t)
+              for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
               return (
-                (e = t.call.apply(t, [this].concat(r))),
-                u()(Q()(e), '_abusiveQualityCursorText', 'Show more replies'),
+                (e = n.call.apply(n, [this].concat(r))),
+                u()(H()(e), '_abusiveQualityCursorText', 'Show more replies'),
                 e
               )
             }
             return (
-              T()(n, [
+              L()(t, [
                 {
                   key: 'render',
                   value: function () {
                     var e = this.props,
-                      t = e.children,
-                      n = e.isLoading,
+                      n = e.children,
+                      t = e.isLoading,
                       a = e.link,
                       r = e.onClick
                     return p.a.createElement(b.a, {
-                      children: t,
-                      isLoading: n,
-                      isTransparentCursor: t !== this._abusiveQualityCursorText,
+                      children: n,
+                      isLoading: t,
+                      isTransparentCursor: n !== this._abusiveQualityCursorText,
                       link: a,
                       onClick: r,
                     })
                   },
                 },
               ]),
-              n
+              t
             )
           })(p.a.PureComponent)),
-        F = (function (e) {
-          x()(n, e)
-          var t = M()(n)
-          function n() {
-            return C()(this, n), t.apply(this, arguments)
+        _ = (function (e) {
+          x()(t, e)
+          var n = S()(t)
+          function t() {
+            return k()(this, t), n.apply(this, arguments)
           }
           return (
-            T()(n, [
+            L()(t, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
-                    n = e.isLoading,
+                    n = e.children,
+                    t = e.isLoading,
                     a = e.link,
                     r = e.onClick
                   return p.a.createElement(b.a, {
-                    children: t,
-                    isLoading: n,
+                    children: n,
+                    isLoading: t,
                     isTransparentCursor: !0,
                     link: a,
                     onClick: r,
@@ -371,122 +390,122 @@
                 },
               },
             ]),
-            n
+            t
           )
         })(p.a.PureComponent),
-        A = n('xM7j'),
-        W = n('vWJI'),
-        U = { component: 'cursor', action: 'click' },
+        F = t('xM7j'),
+        A = t('vWJI'),
+        D = { component: 'cursor', action: 'click' },
         V = { component: 'cursor', action: 'impression' },
-        z = { action: 'get_middle' },
-        D = { component: 'gap', action: 'impression' },
+        U = { action: 'get_middle' },
+        z = { component: 'gap', action: 'impression' },
         X =
           ((P = {}),
-          u()(P, W.a.ShowMoreThreads, { event_info: 'ShowMoreThreads' }),
-          u()(P, W.a.ShowMoreThreadsPrompt, { event_info: 'ShowMoreThreadsPrompt' }),
+          u()(P, A.a.ShowMoreThreads, { event_info: 'ShowMoreThreads' }),
+          u()(P, A.a.ShowMoreThreadsPrompt, { event_info: 'ShowMoreThreadsPrompt' }),
           P),
         J = !1,
         N = function (e) {
-          var t = p.a.useContext(h.a).featureSwitches,
-            n = e.analytics,
+          var n = p.a.useContext(h.a).featureSwitches,
+            t = e.analytics,
             a = e.createLocalApiErrorHandler,
             r = e.entry,
-            o = e.fetchCursor,
+            i = e.fetchCursor,
             c = e.isLoading,
-            s = e.withRuxInjections,
+            l = e.withRuxInjections,
             u = r.content,
             d = u.cursorType,
             v = u.displayTreatment,
-            f = u.url,
-            m = f && Object(y.b)(f),
+            m = u.url,
+            f = m && Object(w.b)(m),
             g = X[d],
-            w = t.isTrue('responsive_web_deamplification_transparent_cursors_enabled') && !s
+            y = n.isTrue('responsive_web_deamplification_transparent_cursors_enabled') && !l
           p.a.useEffect(function () {
-            var e = d === W.a.Gap ? D : V
-            n.scribe(l()(l()({}, e), {}, { data: g })), d === W.a.ShowMoreThreads && (J = !0)
+            var e = d === A.a.Gap ? z : V
+            t.scribe(s()(s()({}, e), {}, { data: g })), d === A.a.ShowMoreThreads && (J = !0)
           }, [])
-          var k = p.a.useCallback(
+          var C = p.a.useCallback(
               function (e) {
-                o(r).then(e).catch(a())
+                i(r).then(e).catch(a())
               },
-              [a, r, o],
+              [a, r, i],
             ),
-            C = p.a.useCallback(
+            k = p.a.useCallback(
               function () {
-                var e = d === W.a.Gap ? z : U
-                n.scribe(l()(l()({}, e), {}, { data: g }))
+                var e = d === A.a.Gap ? U : D
+                t.scribe(s()(s()({}, e), {}, { data: g }))
               },
-              [n, d, g],
+              [t, d, g],
             ),
             E = {
               isLoading: c,
               onClick: p.a.useCallback(
                 function () {
-                  m ? C() : k(C)
+                  f ? k() : C(k)
                 },
-                [m, k, C],
+                [f, C, k],
               ),
-              link: m,
+              link: f,
             },
-            T = l()(l()({}, E), {}, { conversationTreeMetadata: r.conversationTreeMetadata }),
-            L = (null == v ? void 0 : v.actionText) || null
+            L = s()(s()({}, E), {}, { conversationTreeMetadata: r.conversationTreeMetadata }),
+            T = (null == v ? void 0 : v.actionText) || null
           switch (d) {
-            case W.a.Gap:
-              return p.a.createElement(b.a, E, L)
-            case W.a.ShowMore:
-              return p.a.createElement(O, T, L)
-            case W.a.ShowMoreThreads:
-              var x = w ? F : B
-              return p.a.createElement(x, T, L)
-            case W.a.ShowMoreThreadsPrompt:
-              var S,
-                M = w ? _ : A.a,
+            case A.a.Gap:
+              return p.a.createElement(b.a, E, T)
+            case A.a.ShowMore:
+              return p.a.createElement(O, L, T)
+            case A.a.ShowMoreThreads:
+              var x = y ? _ : B
+              return p.a.createElement(x, L, T)
+            case A.a.ShowMoreThreadsPrompt:
+              var M,
+                S = y ? Q : F.a,
                 j = (null == v ? void 0 : v.labelText) || null,
-                G = J && w ? 'Show more replies' : j
+                I = J && y ? 'Show more replies' : j
               return p.a.createElement(
-                M,
-                i()({}, T, {
-                  actionText: null === (S = r.content.displayTreatment) || void 0 === S ? void 0 : S.actionText,
+                S,
+                o()({}, L, {
+                  actionText: null === (M = r.content.displayTreatment) || void 0 === M ? void 0 : M.actionText,
                 }),
-                G,
+                I,
               )
             default:
               return null
           }
         },
-        K = w(p.a.memo(N))
-      t.a = function (e) {
-        var t = e.divider,
-          n = e.withRuxInjections
+        K = y(p.a.memo(N))
+      n.a = function (e) {
+        var n = e.divider,
+          t = e.withRuxInjections
         return a
           .b({
-            divider: t || { top: !0, bottom: !0 },
+            divider: n || { top: !0, bottom: !0 },
             component: K,
             isFocusable: Object(r.a)(!0),
             shouldDisplayBorder: function (e) {
-              var t = e.conversationTreeMetadata
+              var n = e.conversationTreeMetadata
               return (
-                !t ||
-                (!1 === t.descendantConnector &&
+                !n ||
+                (!1 === n.descendantConnector &&
                   0 ===
-                    t.indents.filter(function (e) {
+                    n.indents.filter(function (e) {
                       return 'line' === e.displayType
                     }).length)
               )
             },
           })
           .getHandler(function () {
-            return { withRuxInjections: n }
+            return { withRuxInjections: t }
           })
       }
     },
-    zXWy: function (e, t, n) {
+    zXWy: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var a = n('nGQU')
-      t.default = function (e) {
-        var t = e.withRuxInjections
-        return Object(a.a)({ divider: { top: !1, bottom: !1 }, withRuxInjections: t })
+      t.r(n)
+      var a = t('nGQU')
+      n.default = function (e) {
+        var n = e.withRuxInjections
+        return Object(a.a)({ divider: { top: !1, bottom: !1 }, withRuxInjections: n })
       }
     },
   },

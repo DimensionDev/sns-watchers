@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [12],
+  [13],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -463,7 +463,7 @@
         pe = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         me = Object(pe.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(179).then(n.bind(null, 'mL9d'))
           },
         }),
         he = n('m3Bd'),
@@ -799,7 +799,7 @@
         pt = n('xXop'),
         mt = n('xrkw'),
         ht = n('mqpi'),
-        wt = Q.a.g1fa869c,
+        wt = Q.a.e6901eeb,
         ft = (function (e) {
           f()(n, e)
           var t = g()(n)
@@ -827,7 +827,7 @@
                   return !this._shouldDisable(i, ht.a.Analytics) && n === i.user.id_str
                     ? C.a.createElement(
                         x.a,
-                        { style: [vt.activityContainerWithChildren, o] },
+                        { style: [vt.analyticsContainerWithChildren, o] },
                         C.a.createElement(
                           I.a,
                           {
@@ -853,7 +853,7 @@
           return {
             analyticsIcon: { color: e.colors.gray700, paddingRight: e.spaces.space4 },
             analyticsButton: { paddingVertical: e.spaces.space16, flexDirection: 'row', flexGrow: 1 },
-            activityContainerWithChildren: {
+            analyticsContainerWithChildren: {
               justifyContent: 'space-between',
               borderTopColor: e.colors.borderColor,
               borderTopStyle: 'solid',
@@ -2430,7 +2430,7 @@
                                 {
                                   link: ''.concat(r.permalink, '/quick_promote_web/intro'),
                                   onPress: this._getPromoteButtonOnPress(m),
-                                  style: Gn.tweetActivityPromoteButton,
+                                  style: Gn.tweetAnalyticsPromoteButton,
                                   type: 'primaryFilled',
                                 },
                                 this._getPromoteButtonText(m),
@@ -3110,7 +3110,7 @@
             borderBottomWidth: e.borderWidths.small,
           },
           promoteButton: { marginTop: e.spaces.space12 },
-          tweetActivityPromoteButton: { marginVertical: e.spaces.space8 },
+          tweetAnalyticsPromoteButton: { marginVertical: e.spaces.space8 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
           promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },

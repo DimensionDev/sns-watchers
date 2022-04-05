@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [352, 12],
+  [351, 13],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -45,7 +45,7 @@
       var o = n('zb92'),
         i = Object(o.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(186)]).then(n.bind(null, 'MzK7'))
+            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = i
@@ -505,7 +505,7 @@
         pe = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         he = Object(pe.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(179).then(n.bind(null, 'mL9d'))
           },
         }),
         me = n('m3Bd'),
@@ -841,7 +841,7 @@
         pt = n('xXop'),
         ht = n('xrkw'),
         mt = n('mqpi'),
-        vt = K.a.g1fa869c,
+        vt = K.a.e6901eeb,
         wt = (function (e) {
           w()(n, e)
           var t = f()(n)
@@ -869,7 +869,7 @@
                   return !this._shouldDisable(a, mt.a.Analytics) && n === a.user.id_str
                     ? y.a.createElement(
                         I.a,
-                        { style: [_t.activityContainerWithChildren, i] },
+                        { style: [_t.analyticsContainerWithChildren, i] },
                         y.a.createElement(
                           x.a,
                           {
@@ -895,7 +895,7 @@
           return {
             analyticsIcon: { color: e.colors.gray700, paddingRight: e.spaces.space4 },
             analyticsButton: { paddingVertical: e.spaces.space16, flexDirection: 'row', flexGrow: 1 },
-            activityContainerWithChildren: {
+            analyticsContainerWithChildren: {
               justifyContent: 'space-between',
               borderTopColor: e.colors.borderColor,
               borderTopStyle: 'solid',
@@ -2472,7 +2472,7 @@
                                 {
                                   link: ''.concat(r.permalink, '/quick_promote_web/intro'),
                                   onPress: this._getPromoteButtonOnPress(h),
-                                  style: Gn.tweetActivityPromoteButton,
+                                  style: Gn.tweetAnalyticsPromoteButton,
                                   type: 'primaryFilled',
                                 },
                                 this._getPromoteButtonText(h),
@@ -3152,7 +3152,7 @@
             borderBottomWidth: e.borderWidths.small,
           },
           promoteButton: { marginTop: e.spaces.space12 },
-          tweetActivityPromoteButton: { marginVertical: e.spaces.space8 },
+          tweetAnalyticsPromoteButton: { marginVertical: e.spaces.space8 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
           promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },
@@ -3908,7 +3908,7 @@
         ne = (n('JtPf'), n('zb92')),
         oe = Object(ne.a)({
           loader: function () {
-            return n.e(205).then(n.bind(null, '5Yok'))
+            return n.e(204).then(n.bind(null, '5Yok'))
           },
         }),
         ie = (n('uFXj'), n('IqLm')),
@@ -3961,7 +3961,7 @@
         fe = n('RuTB'),
         be = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(9), n.e(78)]).then(n.bind(null, 'x8Sc'))
+            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(11), n.e(77)]).then(n.bind(null, 'x8Sc'))
           },
           renderPlaceholder: function (e, t) {
             return y.a.createElement(fe.a, { hasError: e, onRetry: t })
@@ -3969,7 +3969,7 @@
         }),
         ge = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(84)]).then(n.bind(null, 'RrO2'))
+            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(5), n.e(83)]).then(n.bind(null, 'RrO2'))
           },
           renderPlaceholder: function (e, t) {
             return y.a.createElement(fe.a, { hasError: e, onRetry: t })

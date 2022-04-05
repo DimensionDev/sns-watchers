@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [92],
+  [91],
   {
     '23An': function (e, l, n) {
       'use strict'
@@ -249,15 +249,15 @@
       'use strict'
       n.r(l),
         n.d(l, 'editableProfileSpotlightsQuery', function () {
-          return h
+          return U
         }),
         n.d(l, 'ProfileSpotlightScreen', function () {
-          return E
+          return M
         })
       var a,
         i = n('ddV6'),
         t = n.n(i),
-        s = (n('z84I'), n('jQ3i'), n('x4t0'), n('ERkP')),
+        s = (n('z84I'), n('LW0h'), n('7x/C'), n('jQ3i'), n('x4t0'), n('ERkP')),
         r = n.n(s),
         u = [],
         o = n('jHSc'),
@@ -275,11 +275,13 @@
         K = n('vVrK'),
         v = n('t62R'),
         S = n('CK8+'),
-        L = n('rHpw'),
-        T = c.a.d4b6a6ef,
-        R = c.a.e2760643,
-        h = void 0 !== b ? b : (b = n('PiRV')),
-        E = function (e) {
+        L = n('FIs5'),
+        T = n('rHpw'),
+        R = c.a.d4b6a6ef,
+        h = c.a.e2760643,
+        E = c.a.b5aed332,
+        U = void 0 !== b ? b : (b = n('PiRV')),
+        M = function (e) {
           var l,
             n,
             a,
@@ -287,7 +289,7 @@
             s,
             d = e.loggedInUserId,
             c = Object(g.f)(),
-            k = Object(m.a)(h, { userId: d }, { fetchPolicy: 'network-only' }),
+            k = Object(m.a)(U, { userId: d }, { fetchPolicy: 'network-only' }),
             b = (function (e) {
               var l = f()(_),
                 n = t()(l, 1)[0],
@@ -327,19 +329,32 @@
               null == k || null === (l = k.user) || void 0 === l || null === (n = l.result) || void 0 === n
                 ? void 0
                 : n.editable_profilemodules,
-            L = r.a.useState(
+            T = r.a.useState(
               (null == K || null === (a = K.modules_for_display) || void 0 === a
                 ? void 0
                 : a.map(function (e) {
                     return e.module_id
                   })) || [],
             ),
-            E = t()(L, 2),
-            M = E[0],
-            I = E[1],
-            C = null == K ? void 0 : K.configurable_modules_v1
+            M = t()(T, 2),
+            C = M[0],
+            w = M[1],
+            V = r.a.useMemo(
+              function () {
+                var e
+                return null == K || null === (e = K.configurable_modules_v1) || void 0 === e
+                  ? void 0
+                  : e.filter(function (e) {
+                      var l
+                      return (
+                        u.includes(e.module_type) || !(null === (l = e.module_data) || void 0 === l || !l.module_id)
+                      )
+                    })
+              },
+              [K],
+            )
           if (!d) return c.push('/login'), null
-          var w = function () {
+          var P = function () {
             c.goBack({ backLocation: '/settings/professional_profile' })
           }
           return (
@@ -349,59 +364,65 @@
               null !== (s = i.result) &&
               void 0 !== s &&
               s.editable_profilemodules) ||
-              w(),
+              P(),
             r.a.createElement(
               o.b,
-              { accessibilityHidden: !1, backButtonType: 'back', history: c, onBackClick: w, title: T },
+              { accessibilityHidden: !1, backButtonType: 'back', history: c, onBackClick: P, title: R },
               r.a.createElement(
                 F.a,
-                { style: U.container },
-                null == C
-                  ? void 0
-                  : C.map(function (e, l) {
-                      return (function (e, l) {
-                        var n,
-                          a,
-                          i = null === (n = e.module_data) || void 0 === n ? void 0 : n.module_id,
-                          t = e.title,
-                          s = e.subtitle,
-                          o = !!i,
-                          d = o && M.includes(i)
-                        if (u.includes(e.module_type) || o)
-                          return r.a.createElement(
-                            F.a,
-                            { accessibilityRole: 'label', key: l, testID: p.a.spotlightRow },
-                            r.a.createElement(
-                              F.a,
-                              { style: U.spotlightContainer },
-                              r.a.createElement(v.b, { weight: 'bold' }, t),
-                              r.a.createElement(S.a, {
-                                onValueChange:
-                                  ((a = i),
-                                  function (e) {
-                                    a && (b(e, a), I(e ? [a] : []))
-                                  }),
-                                value: d,
-                              }),
-                            ),
-                            r.a.createElement(
-                              F.a,
-                              { style: U.descriptionContainer },
-                              r.a.createElement(v.b, { color: 'gray700', size: 'subtext2' }, s),
-                            ),
-                          )
-                      })(e, l)
-                    }),
-                r.a.createElement(
-                  F.a,
-                  { style: U.spotlightContainer },
-                  r.a.createElement(v.b, { color: 'gray700', size: 'subtext1' }, R),
-                ),
+                { style: I.container },
+                V && V.length > 0
+                  ? r.a.createElement(
+                      r.a.Fragment,
+                      null,
+                      null == V
+                        ? void 0
+                        : V.map(function (e, l) {
+                            return (function (e, l) {
+                              var n,
+                                a,
+                                i = null === (n = e.module_data) || void 0 === n ? void 0 : n.module_id,
+                                t = e.title,
+                                s = e.subtitle,
+                                o = !!i,
+                                d = o && C.includes(i)
+                              if (u.includes(e.module_type) || o)
+                                return r.a.createElement(
+                                  F.a,
+                                  { accessibilityRole: 'label', key: l, testID: p.a.spotlightRow },
+                                  r.a.createElement(
+                                    F.a,
+                                    { style: I.spotlightContainer },
+                                    r.a.createElement(v.b, { weight: 'bold' }, t),
+                                    r.a.createElement(S.a, {
+                                      onValueChange:
+                                        ((a = i),
+                                        function (e) {
+                                          a && (b(e, a), w(e ? [a] : []))
+                                        }),
+                                      value: d,
+                                    }),
+                                  ),
+                                  r.a.createElement(
+                                    F.a,
+                                    { style: I.descriptionContainer },
+                                    r.a.createElement(v.b, { color: 'gray700', size: 'subtext2' }, s),
+                                  ),
+                                )
+                            })(e, l)
+                          }),
+                      r.a.createElement(
+                        F.a,
+                        { style: I.spotlightContainer },
+                        r.a.createElement(v.b, { color: 'gray700', size: 'subtext1' }, h),
+                      ),
+                    )
+                  : r.a.createElement(L.a, { header: E, message: h }),
               ),
             )
           )
         },
-        U = L.a.create(function (e) {
+        I = T.a.create(function (e) {
           return {
             container: { paddingBottom: e.spaces.space64 },
             descriptionContainer: {
@@ -419,7 +440,7 @@
             },
           }
         })
-      l.default = Object(K.b)(E, { context: 'PROFILE_SPOTLIGHT_SCREEN' })
+      l.default = Object(K.b)(M, { context: 'PROFILE_SPOTLIGHT_SCREEN' })
     },
     rcBc: function (e, l, n) {
       'use strict'
