@@ -4,89 +4,90 @@
     '+92Z': function (e, t, n) {
       'use strict'
       n.r(t)
-      n('ho0z')
       var r,
-        a = n('ezF+'),
-        o = n('VPAj'),
-        c = n('Rp9C'),
-        i = n('97Jx'),
-        s = n.n(i),
-        l = (n('1t7P'), n('jQ/y'), n('z84I'), n('ERkP')),
+        a = n('yiKp'),
+        o = n.n(a),
+        c = (n('ho0z'), n('ezF+')),
+        i = n('VPAj'),
+        s = n('Rp9C'),
+        l = n('97Jx'),
         u = n.n(l),
-        d = n('vjRr'),
-        m = n('o52z'),
-        p = n('6rlp'),
-        f = n('rxPX'),
-        b = n('0KEI'),
-        E = function (e, t) {
-          return t.entry.content.associatedCardUrls || Object(m.a)()
+        d = (n('1t7P'), n('jQ/y'), n('z84I'), n('ERkP')),
+        m = n.n(d),
+        p = n('vjRr'),
+        f = n('o52z'),
+        b = n('6rlp'),
+        E = n('rxPX'),
+        g = n('0KEI'),
+        h = function (e, t) {
+          return t.entry.content.associatedCardUrls || Object(f.a)()
         },
-        g = Object(f.a)()
+        I = Object(E.a)()
           .propsFromState(function () {
-            return { cards: d.a.createManyHydratedSelector(E) }
+            return { cards: p.a.createManyHydratedSelector(h) }
           })
           .propsFromActions(function (e) {
             var t = e.errorContext
             return {
-              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)(t),
-              logTrend: p.c,
+              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(t),
+              logTrend: b.c,
             }
           }),
-        h = n('RoyM'),
-        I = n('caTy'),
-        v = n('cFuS'),
-        y = n('b5s6'),
-        T = n('vqbU'),
-        w = 'trend',
-        C = n('KEM+'),
-        k = n.n(C),
-        M = (n('yH/f'), n('/Ikv')),
-        A = n('aX4+'),
-        _ = M.a.CardNames,
-        x = Object.freeze(
+        v = n('RoyM'),
+        y = n('caTy'),
+        T = n('cFuS'),
+        w = n('b5s6'),
+        C = n('vqbU'),
+        k = 'trend',
+        M = n('KEM+'),
+        A = n.n(M),
+        _ = (n('yH/f'), n('/Ikv')),
+        x = n('aX4+'),
+        O = _.a.CardNames,
+        j = Object.freeze(
           ((r = {}),
-          k()(r, _.LIVE_EVENT, !0),
-          k()(r, _.MOMENT, !0),
-          k()(r, _.SUMMARY, !0),
-          k()(r, _.SUMMARY_LARGE_IMAGE, !0),
-          k()(r, _.AUDIOSPACE, !0),
+          A()(r, O.LIVE_EVENT, !0),
+          A()(r, O.MOMENT, !0),
+          A()(r, O.SUMMARY, !0),
+          A()(r, O.SUMMARY_LARGE_IMAGE, !0),
+          A()(r, O.AUDIOSPACE, !0),
           r),
         ),
-        O = function (e) {
+        D = function (e) {
           var t = e.card
-          if (!e.withThirdPartyCards && t.name !== _.LIVE_EVENT && t.name !== _.AUDIOSPACE) return null
-          var n = t.name === _.SUMMARY_LARGE_IMAGE ? _.SUMMARY : t.name
-          return x[n]
-            ? u.a.createElement(A.a, {
+          if (!e.withThirdPartyCards && t.name !== O.LIVE_EVENT && t.name !== O.AUDIOSPACE) return null
+          var n = t.name === O.SUMMARY_LARGE_IMAGE ? O.SUMMARY : t.name
+          return j[n]
+            ? m.a.createElement(x.a, {
                 card: { url: t.url, name: n, binding_values: t.binding_values, users: t.users },
                 cardContext: { locationKey: 'trend', tweetUserId: 'TREND_CARD_NO_TWEET_USER_ID' },
                 cardState: 'secondary',
               })
             : null
         },
-        j = u.a.memo(O),
-        D = n('kSj6'),
-        F = n('Irs7'),
-        R = function (e) {
+        F = m.a.memo(D),
+        R = n('kSj6'),
+        P = n('Irs7'),
+        S = function (e) {
           var t = e.cards,
             n = e.createLocalApiErrorHandler,
             r = e.entry.content,
             a = e.feedbackItems,
             o = e.logTrend,
             c = e.withThirdPartyCards,
-            i = Object(F.b)(),
-            l = u.a.useContext(T.a),
-            d = r.associatedTweetIds,
-            m = r.description,
+            i = Object(P.b)(),
+            s = m.a.useContext(C.a),
+            l = r.associatedTweetIds,
+            d = r.description,
             p = r.groupedTrends,
             f = r.name,
             b = r.promotedMetadata,
             E = r.rank,
             g = r.url,
-            C = r.trendMetadata,
-            k = C.domainContext,
-            M = C.metaDescription,
-            A = u.a.useCallback(
+            h = r.trendMetadata,
+            I = h.domainContext,
+            M = h.metaDescription,
+            A = m.a.useCallback(
               function (e) {
                 null != b &&
                   b.promotedTrendId &&
@@ -94,38 +95,38 @@
               },
               [n, o, b],
             )
-          u.a.useEffect(function () {
-            i.scribeAction('impression'), A(v.d.TREND_VIEW)
+          m.a.useEffect(function () {
+            i.scribeAction('impression'), A(T.d.TREND_VIEW)
           }, [])
-          var _ = u.a.useCallback(
+          var _ = m.a.useCallback(
               function () {
-                i.scribeAction('search'), A(v.d.TREND_CLICK)
+                i.scribeAction('search'), A(T.d.TREND_CLICK)
               },
               [i, A],
             ),
-            x = u.a.useMemo(
+            x = m.a.useMemo(
               function () {
-                return null != t && t.length ? u.a.createElement(j, { card: t[0], withThirdPartyCards: c }) : void 0
+                return null != t && t.length ? m.a.createElement(F, { card: t[0], withThirdPartyCards: c }) : void 0
               },
               [t, c],
             ),
-            O = u.a.useMemo(
+            O = m.a.useMemo(
               function () {
                 return p
                   ? p.map(function (e) {
-                      return { name: e.name, link: Object(I.b)(e.url) }
+                      return { name: e.name, link: Object(y.b)(e.url) }
                     })
                   : []
               },
               [p],
             ),
-            R = u.a.useMemo(
+            j = m.a.useMemo(
               function () {
-                return g ? Object(I.b)(g) : void 0
+                return g ? Object(y.b)(g) : void 0
               },
               [g],
             ),
-            P = u.a.useMemo(
+            D = m.a.useMemo(
               function () {
                 return null != b && b.promotedTrendId
                   ? { disclosure_type: b.disclosureType, impression_id: b.promotedTrendId }
@@ -133,56 +134,56 @@
               },
               [b],
             ),
-            S = u.a.useMemo(
+            S = m.a.useMemo(
               function () {
-                return null != d && d.length
+                return null != l && l.length
                   ? function (e) {
-                      return u.a.createElement(y.a, s()({}, e, { tweetId: d[0] }))
+                      return m.a.createElement(w.a, u()({}, e, { tweetId: l[0] }))
                     }
                   : void 0
               },
-              [d],
+              [l],
             ),
-            L = u.a.useMemo(
+            L = m.a.useMemo(
               function () {
-                return null != a && a.length ? u.a.createElement(h.a, { feedbackItems: a }) : void 0
+                return null != a && a.length ? m.a.createElement(v.a, { feedbackItems: a }) : void 0
               },
               [a],
             )
-          return u.a.createElement(D.a, {
+          return m.a.createElement(R.a, {
             attachment: x,
-            description: m,
-            domainContext: k,
+            description: d,
+            domainContext: I,
             groupedTrends: O,
-            link: R,
-            metaDescription: P ? void 0 : M,
+            link: j,
+            metaDescription: D ? void 0 : M,
             name: f,
             onClick: _,
-            promotedContent: P,
-            promotedLabel: P ? M : void 0,
+            promotedContent: D,
+            promotedLabel: D ? M : void 0,
             rank: E,
             renderQuoteTweet: S,
-            testID: w,
+            testID: k,
             trendFeedbackMenu: L,
-            withDarkerInteractiveBackground: l,
+            withDarkerInteractiveBackground: s,
           })
         },
-        P = g(u.a.memo(R))
+        L = I(m.a.memo(S))
       t.default = function (e) {
-        return a
+        return c
           .b({
-            isFocusable: Object(o.a)(!0),
-            component: P,
+            isFocusable: Object(i.a)(!0),
+            component: L,
             getScribeDataItem: function (e) {
               var t = e.content,
                 n = t.name,
                 r = t.promotedMetadata,
                 a = e.itemMetadata.clientEventInfo
-              return c.a.getTrendItem(n, r, a)
+              return s.a.getTrendItem(n, r, a)
             },
           })
           .getHandler(function () {
-            return e
+            return o()({}, e)
           })
       }
     },

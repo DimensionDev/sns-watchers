@@ -2158,7 +2158,7 @@
             isFocusable: Object(i.a)(!0),
           })
           .getHandler(function () {
-            return e
+            return n()({}, e)
           })
       }
     },

@@ -1,56 +1,58 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [219],
   {
-    '1Ws7': function (e, t, a) {
+    '1Ws7': function (e, t, n) {
       'use strict'
-      a.r(t)
-      var n = a('ezF+'),
-        i = a('VPAj'),
-        r = a('97Jx'),
-        o = a.n(r),
-        c = a('m3Bd'),
-        s = a.n(c),
-        l = a('ERkP'),
-        d = a.n(l),
-        u = a('1AUC'),
-        m = a('sYiQ'),
-        p = ['entry', 'feedbackItems', 'module', 'shouldDisplayPin'],
-        b = function (e) {
+      n.r(t)
+      var a = n('yiKp'),
+        i = n.n(a),
+        r = n('ezF+'),
+        o = n('VPAj'),
+        c = n('97Jx'),
+        s = n.n(c),
+        l = n('m3Bd'),
+        d = n.n(l),
+        u = n('ERkP'),
+        m = n.n(u),
+        p = n('1AUC'),
+        b = n('sYiQ'),
+        f = ['entry', 'feedbackItems', 'module', 'shouldDisplayPin'],
+        v = function (e) {
           var t = e.entry,
-            a = (e.feedbackItems, e.module, e.shouldDisplayPin),
-            n = s()(e, p),
-            i = a ? m.a.Pinning : void 0
-          return d.a.createElement(u.a, o()({ isMember: t.content.isMember, listId: t.content.id, mode: i }, n))
+            n = (e.feedbackItems, e.module, e.shouldDisplayPin),
+            a = d()(e, f),
+            i = n ? b.a.Pinning : void 0
+          return m.a.createElement(p.a, s()({ isMember: t.content.isMember, listId: t.content.id, mode: i }, a))
         },
-        f = d.a.memo(b),
-        v = a('Rp9C')
+        g = m.a.memo(v),
+        y = n('Rp9C')
       t.default = function (e) {
-        return n
+        return r
           .b({
-            component: f,
-            isFocusable: Object(i.a)(!0),
+            component: g,
+            isFocusable: Object(o.a)(!0),
             getScribeDataItem: function (e) {
               var t = e.content.id
-              return v.a.forList(t)
+              return y.a.forList(t)
             },
           })
           .getHandler(function () {
-            return e
+            return i()({}, e)
           })
       }
     },
-    O4YN: function (e, t, a) {
+    O4YN: function (e, t, n) {
       'use strict'
-      a.r(t)
-      var n = a('ezF+'),
-        i = a('VPAj'),
-        r = (a('ho0z'), a('tVqn'), a('ERkP')),
-        o = a.n(r),
-        c = a('xZmF'),
-        s = a('iPch'),
-        l = a('kHBp'),
-        d = a('P1r1'),
-        u = a('rxPX'),
+      n.r(t)
+      var a = n('ezF+'),
+        i = n('VPAj'),
+        r = (n('ho0z'), n('tVqn'), n('ERkP')),
+        o = n.n(r),
+        c = n('xZmF'),
+        s = n('iPch'),
+        l = n('kHBp'),
+        d = n('P1r1'),
+        u = n('rxPX'),
         m = function (e, t) {
           return t.entry.content.id
         },
@@ -66,31 +68,31 @@
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
-              a = e.list,
-              n = e.listId,
+              n = e.list,
+              a = e.listId,
               i = e.media
             return {
-              name: null == a ? void 0 : a.name,
-              isPrivate: 'private' === (null == a ? void 0 : a.mode),
-              listId: n,
+              name: null == n ? void 0 : n.name,
+              isPrivate: 'private' === (null == n ? void 0 : n.mode),
+              listId: a,
               dataSaverMode: t,
               media: i,
             }
           })
           .withAnalytics(),
-        v = a('3XMw'),
-        g = a.n(v),
-        P = a('a5gf'),
-        k = a('2My+'),
-        y = a('MWbm'),
-        h = a('htQn'),
-        w = a('t62R'),
-        I = a('rHpw'),
+        v = n('3XMw'),
+        g = n.n(v),
+        y = n('a5gf'),
+        P = n('2My+'),
+        k = n('MWbm'),
+        h = n('htQn'),
+        w = n('t62R'),
+        I = n('rHpw'),
         j = g.a.j681933d,
         M = function (e) {
           var t = e.analytics,
-            a = e.dataSaverMode,
-            n = e.isPrivate,
+            n = e.dataSaverMode,
+            a = e.isPrivate,
             i = e.listId,
             r = e.media,
             s = e.name,
@@ -102,17 +104,17 @@
               [t],
             )
           return o.a.createElement(
-            k.a,
+            P.a,
             { basePath: l, listId: i },
             o.a.createElement(
               h.a,
               { link: l, onPress: d, style: S.root },
-              o.a.createElement(c.a, { cropCandidates: r.crop, dataSaverMode: a, icon: 'lists', image: r.image }),
+              o.a.createElement(c.a, { cropCandidates: r.crop, dataSaverMode: n, icon: 'lists', image: r.image }),
               o.a.createElement(
-                y.a,
+                k.a,
                 { style: S.name },
                 o.a.createElement(w.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, s ? s.trim() : null),
-                n ? o.a.createElement(P.a, { accessibilityLabel: j, style: S.iconLock }) : null,
+                a ? o.a.createElement(y.a, { accessibilityLabel: j, style: S.iconLock }) : null,
               ),
             ),
           )
@@ -131,8 +133,8 @@
           }
         }),
         E = f(o.a.memo(M)),
-        C = a('Rp9C'),
-        x = n
+        C = n('Rp9C'),
+        x = a
           .b({
             component: E,
             isFocusable: Object(i.a)(!0),

@@ -1,29 +1,8 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [89],
   {
-    '23An': function (e, n, l) {
-      'use strict'
-      var a = l('ERkP'),
-        s = a.useEffect,
-        t = a.useRef
-      e.exports = function () {
-        var e = t(!0)
-        return (
-          s(function () {
-            return (
-              (e.current = !0),
-              function () {
-                e.current = !1
-              }
-            )
-          }, []),
-          e
-        )
-      }
-    },
     '7Gn9': function (e, n, l) {
       'use strict'
-      l.r(n)
       var a,
         s,
         t,
@@ -176,6 +155,15 @@
                         ],
                         storageKey: null,
                       },
+                      {
+                        alias: null,
+                        args: null,
+                        filters: null,
+                        handle: 'user',
+                        key: '',
+                        kind: 'LinkedHandle',
+                        name: 'result',
+                      },
                     ],
                     storageKey: null,
                   },
@@ -192,69 +180,7 @@
             text: null,
           },
         }
-      ;(o.hash = 'a1f24919f856f42252acc05cedeffad2'), (n.default = o)
-    },
-    '9SqB': function (e, n, l) {
-      'use strict'
-      var a = l('IGGJ')(l('yiKp')),
-        s = l('ERkP'),
-        t = l('Ud88'),
-        r = l('K1lQ').commitMutation,
-        i = s.useState,
-        o = s.useEffect,
-        u = s.useRef,
-        c = s.useCallback,
-        d = l('23An')
-      e.exports = function (e) {
-        var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          l = t(),
-          s = d(),
-          p = u(l),
-          f = u(e),
-          m = u(new Set()),
-          y = i(!1),
-          g = y[0],
-          k = y[1],
-          b = c(
-            function (n) {
-              p.current === l && f.current === e && (m.current.delete(n), s.current && k(m.current.size > 0))
-            },
-            [l, s, e],
-          )
-        o(
-          function () {
-            ;(p.current === l && f.current === e) ||
-              ((m.current = new Set()), s.current && k(!1), (p.current = l), (f.current = e))
-          },
-          [l, s, e],
-        )
-        var _ = c(
-          function (t) {
-            var r = n(
-              l,
-              (0, a.default)(
-                (0, a.default)({}, t),
-                {},
-                {
-                  mutation: e,
-                  onCompleted: function (e, n) {
-                    b(r), t.onCompleted && t.onCompleted(e, n)
-                  },
-                  onError: function (e) {
-                    b(r), t.onError && t.onError(e)
-                  },
-                  onUnsubscribe: function () {
-                    b(r), t.onUnsubscribe && t.onUnsubscribe()
-                  },
-                },
-              ),
-            )
-            return m.current.add(r), s.current && k(!0), r
-          },
-          [b, n, l, s, e],
-        )
-        return [_, g]
-      }
+      ;(o.hash = 'a1f24919f856f42252acc05cedeffad2'), (e.exports = o)
     },
     '9YVX': function (e, n, l) {
       'use strict'
@@ -264,13 +190,82 @@
       var a = {
         categoryLabel: 'category_label',
         categoryDisplay: 'category_display',
+        editSpotlightRow: 'edit_spotlight_row',
         switchAccountType: 'switch_account_type',
         spotlightRow: 'spotlight_row',
       }
     },
+    HvW7: function (e, n, l) {
+      'use strict'
+      var a = l('IGGJ')(l('yiKp')),
+        s = l('XiYe'),
+        t = l('PJTX'),
+        r = l('ERkP'),
+        i = l('e1/f').commitMutation,
+        o = r.useState,
+        u = r.useEffect,
+        c = r.useRef,
+        d = r.useCallback
+      e.exports = function (e) {
+        var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i,
+          l = t(),
+          r = s(),
+          p = c(l),
+          f = c(e),
+          m = c(new Set()),
+          g = o(!1),
+          y = g[0],
+          k = g[1],
+          b = d(
+            function (n) {
+              p.current === l && f.current === e && (m.current.delete(n), r.current && k(m.current.size > 0))
+            },
+            [l, r, e],
+          )
+        u(
+          function () {
+            ;(p.current === l && f.current === e) ||
+              ((m.current = new Set()), r.current && k(!1), (p.current = l), (f.current = e))
+          },
+          [l, r, e],
+        )
+        var _ = d(
+          function (s) {
+            var t = n(
+              l,
+              (0, a.default)(
+                (0, a.default)({}, s),
+                {},
+                {
+                  mutation: e,
+                  onCompleted: function (e, n) {
+                    var l
+                    b(t), null === (l = s.onCompleted) || void 0 === l || l.call(s, e, n)
+                  },
+                  onError: function (e) {
+                    var n
+                    b(t), null === (n = s.onError) || void 0 === n || n.call(s, e)
+                  },
+                  onUnsubscribe: function () {
+                    var e
+                    b(t), null === (e = s.onUnsubscribe) || void 0 === e || e.call(s)
+                  },
+                  onNext: function () {
+                    var e
+                    null === (e = s.onNext) || void 0 === e || e.call(s)
+                  },
+                },
+              ),
+            )
+            return m.current.add(t), r.current && k(!0), t
+          },
+          [b, n, l, r, e],
+        )
+        return [_, y]
+      }
+    },
     WN76: function (e, n, l) {
       'use strict'
-      l.r(n)
       var a,
         s,
         t,
@@ -441,6 +436,15 @@
                     ],
                     storageKey: null,
                   },
+                  {
+                    alias: null,
+                    args: null,
+                    filters: null,
+                    handle: 'user',
+                    key: '',
+                    kind: 'LinkedHandle',
+                    name: 'result',
+                  },
                 ],
                 storageKey: null,
               },
@@ -454,11 +458,30 @@
             text: null,
           },
         }
-      ;(i.hash = 'b6fd1834c9a4727b73ff791a81da3f94'), (n.default = i)
+      ;(i.hash = 'b6fd1834c9a4727b73ff791a81da3f94'), (e.exports = i)
+    },
+    XiYe: function (e, n, l) {
+      'use strict'
+      var a = l('ERkP'),
+        s = a.useEffect,
+        t = a.useRef
+      e.exports = function () {
+        var e = t(!0)
+        return (
+          s(function () {
+            return (
+              (e.current = !0),
+              function () {
+                e.current = !1
+              }
+            )
+          }, []),
+          e
+        )
+      }
     },
     YmSc: function (e, n, l) {
       'use strict'
-      l.r(n)
       var a,
         s,
         t,
@@ -588,6 +611,15 @@
                         ],
                         storageKey: null,
                       },
+                      {
+                        alias: null,
+                        args: null,
+                        filters: null,
+                        handle: 'user',
+                        key: '',
+                        kind: 'LinkedHandle',
+                        name: 'result',
+                      },
                     ],
                     storageKey: null,
                   },
@@ -604,11 +636,10 @@
             text: null,
           },
         }
-      ;(i.hash = '3f5ecb0efa8cb1c7fc83a7dcf471e727'), (n.default = i)
+      ;(i.hash = '3f5ecb0efa8cb1c7fc83a7dcf471e727'), (e.exports = i)
     },
     dOgT: function (e, n, l) {
       'use strict'
-      l.r(n)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -641,7 +672,7 @@
         abstractKey: null,
         hash: 'f7cce126c1dd02fbf665fb2dcd8e359c',
       }
-      n.default = a
+      e.exports = a
     },
     jtO7: function (e, n, l) {
       'use strict'
@@ -657,7 +688,7 @@
         p = l('rHpw'),
         f = l('MWbm'),
         m = ['align', 'color', 'label'],
-        y = p.a.create(function (e) {
+        g = p.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -674,17 +705,17 @@
           a = e.color,
           t = e.label,
           i = r()(e, m),
-          g = c.a.generate({
+          y = c.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[a],
             insetFocusRing: !0,
           })
         return o.a.createElement(
           f.a,
-          { style: y.container },
+          { style: g.container },
           o.a.createElement(
             d.a,
-            s()({}, i, { interactiveStyles: g, style: y.root }),
+            s()({}, i, { interactiveStyles: y, style: g.root }),
             o.a.createElement(u.b, { align: l, color: a }, t),
           ),
         )
@@ -692,7 +723,6 @@
     },
     rTC2: function (e, n, l) {
       'use strict'
-      l.r(n)
       var a,
         s,
         t,
@@ -829,6 +859,15 @@
                         ],
                         storageKey: null,
                       },
+                      {
+                        alias: null,
+                        args: null,
+                        filters: null,
+                        handle: 'user',
+                        key: '',
+                        kind: 'LinkedHandle',
+                        name: 'result',
+                      },
                     ],
                     storageKey: null,
                   },
@@ -845,73 +884,70 @@
             text: null,
           },
         }
-      ;(o.hash = '1c04fb4103acc6910999ba2135b7b0bd'), (n.default = o)
+      ;(o.hash = '1c04fb4103acc6910999ba2135b7b0bd'), (e.exports = o)
     },
     rf4p: function (e, n, l) {
       'use strict'
       l.r(n),
         l.d(n, 'professionalProfileQuery', function () {
           return be
-        }),
-        l.d(n, 'default', function () {
-          return Fe
         })
       var a = l('ERkP'),
         s = l.n(a),
-        t = l('v6aA'),
-        r = (l('enFi'), l('tI3i')),
-        i = l.n(r),
-        o = l('ddV6'),
-        u = l.n(o),
-        c = (l('ho0z'), l('mC9n')),
-        d = l('jHSc'),
-        p = l('3XMw'),
+        t = (l('YWiL'), l('ddV6')),
+        r = l.n(t),
+        i = (l('ho0z'), l('mC9n')),
+        o = l('v6aA'),
+        u = l('jHSc'),
+        c = l('3XMw'),
+        d = l.n(c),
+        p = l('tI3i'),
         f = l.n(p),
         m = l('Irs7'),
-        y = l('MWbm'),
-        g = l('feu+'),
+        g = l('MWbm'),
+        y = l('feu+'),
         k = l('cHvH'),
         b = l('rHpw'),
         _ = l('sgih'),
         v = l('/yvb'),
-        F = f.a.cfd2f35d,
-        K = { actionLabel: f.a.ia492079, secondaryActionLabel: f.a.a9b5e3a9 },
-        L = {
-          menuItemLabel: f.a.cb55eccd,
-          confirmationTitleLabel: f.a.f6c453fb,
-          confirmationDescriptionLabel: f.a.a8be809d,
+        L = d.a.cfd2f35d,
+        K = { actionLabel: d.a.ia492079, secondaryActionLabel: d.a.a9b5e3a9 },
+        F = {
+          menuItemLabel: d.a.cb55eccd,
+          confirmationTitleLabel: d.a.f6c453fb,
+          confirmationDescriptionLabel: d.a.a8be809d,
         },
         T = {
-          menuItemLabel: f.a.hbb1af08,
-          confirmationTitleLabel: f.a.g3f74901,
-          confirmationDescriptionLabel: f.a.f3bcfacf,
+          menuItemLabel: d.a.hbb1af08,
+          confirmationTitleLabel: d.a.g3f74901,
+          confirmationDescriptionLabel: d.a.f3bcfacf,
         },
         h = {
-          menuItemLabel: f.a.d0c3f02d,
-          confirmationTitleLabel: f.a.a01e84ef,
-          confirmationDescriptionLabel: f.a.e8af8ef3,
+          menuItemLabel: d.a.d0c3f02d,
+          confirmationTitleLabel: d.a.a01e84ef,
+          confirmationDescriptionLabel: d.a.e8af8ef3,
         },
         C = function (e) {
           var n = e.onClose,
             l = e.onSwitchToBusinessAccountConfirm,
             a = e.onSwitchToCreatorAccountConfirm,
             t = e.onSwitchToNonProfessionalConfirm,
-            r = e.professionalType,
-            i = Object(m.b)(),
-            o = s.a.useState(!1),
-            d = u()(o, 2),
+            o = e.professionalType,
+            u = Object(m.b)(),
+            c = s.a.useState(!1),
+            d = r()(c, 2),
             p = d[0],
             f = d[1],
             C = s.a.useState(!1),
-            P = u()(C, 2),
+            P = r()(C, 2),
             w = P[0],
             E = P[1],
-            I = s.a.useState(!1),
-            U = u()(I, 2),
-            R = U[0],
-            D = U[1],
-            M = function (e, l, a) {
-              return s.a.createElement(g.a, {
+            R = s.a.useState(!1),
+            I = r()(R, 2),
+            U = I[0],
+            D = I[1],
+            x = function (e, l, a) {
+              return s.a.createElement(y.a, {
                 actionLabel: K.actionLabel,
                 graphicDisplayMode: 'none',
                 headline: e,
@@ -924,46 +960,46 @@
                 withCloseButton: !1,
               })
             },
-            A = function () {
-              i.scribe(c.j('personal')), f(!0)
+            M = function () {
+              u.scribe(i.j('personal')), f(!0)
             },
-            B = function () {
-              i.scribe(c.j('creator')), D(!0)
+            A = function () {
+              u.scribe(i.j('creator')), D(!0)
             },
             O = function () {
-              i.scribe(c.j('business')), E(!0)
+              u.scribe(i.j('business')), E(!0)
             }
           return s.a.createElement(k.a, null, function (e) {
             e.windowHeight
-            var i = e.windowWidth > b.a.theme.breakpoints.medium
+            var r = e.windowWidth > b.a.theme.breakpoints.medium
             return s.a.createElement(
               _.a,
               {
                 enableMaskForDismiss: !0,
                 onMaskClick: n,
-                style: i && S.roundedBorders,
-                type: i ? 'center' : 'bottom',
+                style: r && S.roundedBorders,
+                type: r ? 'center' : 'bottom',
                 withMask: !0,
               },
               s.a.createElement(
-                y.a,
+                g.a,
                 {
                   accessibilityRole: 'dialog',
                   accessibilityState: { modal: !0 },
-                  style: [S.root, i && S.centeredContent],
+                  style: [S.root, r && S.centeredContent],
                 },
                 s.a.createElement(
-                  y.a,
+                  g.a,
                   { style: S.content },
                   s.a.createElement(
                     v.a,
-                    { onPress: A, size: 'xLarge', style: S.button, type: 'primaryFilled' },
-                    L.menuItemLabel,
+                    { onPress: M, size: 'xLarge', style: S.button, type: 'primaryFilled' },
+                    F.menuItemLabel,
                   ),
-                  'Business' === r
+                  'Business' === o
                     ? s.a.createElement(
                         v.a,
-                        { onPress: B, size: 'xLarge', style: S.button, type: 'primaryFilled' },
+                        { onPress: A, size: 'xLarge', style: S.button, type: 'primaryFilled' },
                         h.menuItemLabel,
                       )
                     : s.a.createElement(
@@ -971,12 +1007,12 @@
                         { onPress: O, size: 'xLarge', style: S.button, type: 'primaryFilled' },
                         T.menuItemLabel,
                       ),
-                  s.a.createElement(v.a, { onPress: n, size: 'xLarge', style: S.button, type: 'primaryOutlined' }, F),
+                  s.a.createElement(v.a, { onPress: n, size: 'xLarge', style: S.button, type: 'primaryOutlined' }, L),
                 ),
               ),
-              p ? M(L.confirmationTitleLabel, L.confirmationDescriptionLabel, t) : null,
-              w ? M(T.confirmationTitleLabel, T.confirmationDescriptionLabel, l) : null,
-              R ? M(h.confirmationTitleLabel, h.confirmationDescriptionLabel, a) : null,
+              p ? x(F.confirmationTitleLabel, F.confirmationDescriptionLabel, t) : null,
+              w ? x(T.confirmationTitleLabel, T.confirmationDescriptionLabel, l) : null,
+              U ? x(h.confirmationTitleLabel, h.confirmationDescriptionLabel, a) : null,
             )
           })
         },
@@ -992,85 +1028,85 @@
         P = l('9YVX'),
         w = l('zCf4'),
         E = l('csss'),
-        I = l('t62R'),
-        U = l('CK8+'),
-        R = l('jtO7'),
-        D = l('jAXQ'),
-        M = l.n(D),
-        A = l('1YZw'),
-        B = l('G6rE')
+        R = l('t62R'),
+        I = l('CK8+'),
+        U = l('jtO7'),
+        D = l('CVPS'),
+        x = l.n(D),
+        M = l('1YZw'),
+        A = l('G6rE')
       function O(e, n) {
         var l
-        if (!n) return B.e.patchUser(e, { professional: void 0 })
-        i()(
+        if (!n) return A.e.patchUser(e, { professional: void 0 })
+        f()(
           (null == n ? void 0 : n.category) && (null == n ? void 0 : n.professional_type),
           'professional must be defined',
         )
         var a = null == n || null === (l = n.category) || void 0 === l ? void 0 : l[0]
-        i()((null == a ? void 0 : a.id) && (null == a ? void 0 : a.name), 'category must be defined')
+        f()((null == a ? void 0 : a.id) && (null == a ? void 0 : a.name), 'category must be defined')
         var s = {
           rest_id: e,
           professional_type: n.professional_type,
           category: [{ id: a.id, name: a.name, display: !!a.display }],
         }
-        return B.e.patchUser(e, { professional: s })
+        return A.e.patchUser(e, { professional: s })
       }
-      var x,
-        j = l('0KEI'),
+      var B,
+        H = l('0KEI'),
         V = l('uDfI'),
-        H = l('9SqB'),
-        N = l.n(H),
-        z = f.a.db48309f,
-        G = void 0 !== x ? x : (x = l('YmSc'))
-      var Q,
-        q,
-        W = l('yiKp'),
-        J = l.n(W),
-        X = l('fEA7'),
-        Y = l.n(X),
-        Z = void 0 !== Q ? Q : (Q = l('7Gn9'))
+        j = l('HvW7'),
+        N = l.n(j),
+        z = d.a.db48309f,
+        W = void 0 !== B ? B : (B = l('YmSc'))
+      var G,
+        Y,
+        Q = l('yiKp'),
+        X = l.n(Q),
+        q = l('fEA7'),
+        J = l.n(q),
+        Z = void 0 !== G ? G : (G = l('7Gn9'))
       var $,
         ee,
-        ne = { Personal: f.a.db48309f, Business: f.a.c701200b, Creator: f.a.acd8da09 },
-        le = void 0 !== q ? q : (q = l('rTC2'))
-      var ae = f.a.e1f76977,
-        se = f.a.i0864917,
-        te = f.a.cd9102d4,
-        re = f.a.eb551ae9,
-        ie = f.a.f386777a,
-        oe = f.a.d4b6a6ef,
-        ue = { AboutModule: f.a.jaaa8984, RevueModule: f.a.d834aec4, ShopModule: f.a.c8b4bcaf },
+        ne = { Personal: d.a.db48309f, Business: d.a.c701200b, Creator: d.a.acd8da09 },
+        le = void 0 !== Y ? Y : (Y = l('rTC2'))
+      var ae = d.a.e1f76977,
+        se = d.a.i0864917,
+        te = d.a.cd9102d4,
+        re = d.a.eb551ae9,
+        ie = d.a.f386777a,
+        oe = d.a.d4b6a6ef,
+        ue = { AboutModule: d.a.jaaa8984, RevueModule: d.a.d834aec4, ShopModule: d.a.c8b4bcaf },
         ce = void 0 !== $ ? $ : ($ = l('seTK')),
         de = void 0 !== ee ? ee : (ee = l('dOgT'))
       function pe(e) {
         var n,
           l,
           a = e.loggedInUserId,
-          r = s.a.useContext(t.a).featureSwitches,
-          o = M()(ce, e.professionalRef),
-          p = M()(de, e.spotlightsRef),
-          f = s.a.useState(!1),
-          g = u()(f, 2),
-          k = g[0],
-          b = g[1],
+          t = s.a.useContext(o.a).featureSwitches,
+          c = x()(ce, e.professionalRef),
+          d = x()(de, e.spotlightsRef),
+          p = s.a.useState(!1),
+          y = r()(p, 2),
+          k = y[0],
+          b = y[1],
           _ = Object(m.b)(),
           v = Object(w.f)(),
-          F = (function (e, n) {
+          L = (function (e, n) {
             var l = N()(le),
-              a = u()(l, 1)[0],
-              t = Object(j.useApiErrorHandler)(),
-              r = Object(V.c)()
+              a = r()(l, 1)[0],
+              t = Object(H.useApiErrorHandler)(),
+              i = Object(V.c)()
             return s.a.useCallback(
               function (l) {
                 a({
                   variables: { userId: e, professionalType: l },
                   onCompleted: function () {
-                    r(Object(A.b)({ text: ne[l] })), r(O(e, J()(J()({}, n), {}, { professional_type: l })))
+                    i(Object(M.b)({ text: ne[l] })), i(O(e, X()(X()({}, n), {}, { professional_type: l })))
                   },
                   optimisticResponse: {
                     user_change_professional_account_type_v2: {
                       user_results: {
-                        result: { __typename: 'User', id: e, professional: { id: Y.a.v4(), professional_type: l } },
+                        result: { __typename: 'User', id: e, professional: { id: J.a.v4(), professional_type: l } },
                       },
                     },
                   },
@@ -1079,58 +1115,58 @@
                   },
                 })
               },
-              [r, t, e, n, a],
+              [i, t, e, n, a],
             )
-          })(a, o),
+          })(a, c),
           K = (function (e, n) {
             var l = N()(Z),
-              a = u()(l, 1)[0],
-              t = Object(j.useApiErrorHandler)(),
-              r = Object(V.c)()
+              a = r()(l, 1)[0],
+              t = Object(H.useApiErrorHandler)(),
+              i = Object(V.c)()
             return s.a.useCallback(
               function (l) {
                 var s,
-                  o = null == n || null === (s = n.category) || void 0 === s ? void 0 : s[0]
-                i()((null == o ? void 0 : o.id) && (null == o ? void 0 : o.name), 'category must be defined')
-                var u = J()(J()({}, o), {}, { display: l })
+                  r = null == n || null === (s = n.category) || void 0 === s ? void 0 : s[0]
+                f()((null == r ? void 0 : r.id) && (null == r ? void 0 : r.name), 'category must be defined')
+                var o = X()(X()({}, r), {}, { display: l })
                 a({
                   variables: { userId: e, displayCategory: l },
                   optimisticResponse: {
                     user_update_professional_category_display: {
                       user_results: {
-                        result: { __typename: 'User', id: e, professional: { id: Y.a.v4(), category: [u] } },
+                        result: { __typename: 'User', id: e, professional: { id: J.a.v4(), category: [o] } },
                       },
                     },
                   },
                   onCompleted: function () {
-                    r(O(e, J()(J()({}, n), {}, { category: [u] })))
+                    i(O(e, X()(X()({}, n), {}, { category: [o] })))
                   },
                   onError: function (e) {
                     t(e)
                   },
                 })
               },
-              [r, t, e, n, a],
+              [i, t, e, n, a],
             )
-          })(a, o),
-          L = (function (e, n) {
-            var l = N()(G),
-              a = u()(l, 1)[0],
-              t = Object(j.useApiErrorHandler)(),
-              r = Object(V.c)()
+          })(a, c),
+          F = (function (e, n) {
+            var l = N()(W),
+              a = r()(l, 1)[0],
+              t = Object(H.useApiErrorHandler)(),
+              i = Object(V.c)()
             return s.a.useCallback(
               function () {
                 a({
                   variables: { userId: e },
                   onCompleted: function () {
-                    r(Object(A.b)({ text: z })), r(O(e, void 0))
+                    i(Object(M.b)({ text: z })), i(O(e, void 0))
                   },
                   onError: function (e) {
                     t(e)
                   },
                 })
               },
-              [r, t, e, a],
+              [i, t, e, a],
             )
           })(a),
           T = s.a.useCallback(
@@ -1141,83 +1177,83 @@
           )
         s.a.useEffect(
           function () {
-            _.scribe(c.e())
+            _.scribe(i.e())
           },
           [_],
         )
         var h,
           S,
           D,
+          A,
           B,
-          x,
-          H = null == o || null === (n = o.category) || void 0 === n ? void 0 : n[0],
-          Q = null === (l = null == H ? void 0 : H.display) || void 0 === l || l,
-          q = function (e) {
-            e.preventDefault(), _.scribe(c.h()), b(!0)
+          j = null == c || null === (n = c.category) || void 0 === n ? void 0 : n[0],
+          G = null === (l = null == j ? void 0 : j.display) || void 0 === l || l,
+          Y = function (e) {
+            e.preventDefault(), _.scribe(i.h()), b(!0)
           },
-          W = function () {
-            _.scribe(c.a())
+          Q = function () {
+            _.scribe(i.a())
           },
-          X = function () {
-            _.scribe(c.d()), K(!Q)
+          q = function () {
+            _.scribe(i.d()), K(!G)
           },
           $ = function () {
             b(!1)
           },
           ee = function () {
-            _.scribe(c.i('personal')), L(), b(!1), T()
+            _.scribe(i.i('personal')), F(), b(!1), T()
           },
           pe = function (e) {
             return function () {
               var n = 'Creator' === e ? 'creator' : 'business'
-              _.scribe(c.i(n)), F(e), b(!1)
+              _.scribe(i.i(n)), L(e), b(!1)
             }
           },
-          fe = r.isTrue('responsive_web_profile_spotlight_v0_config')
+          fe = t.isTrue('responsive_web_profile_spotlight_v0_config')
         return s.a.createElement(
-          d.b,
+          u.b,
           { accessibilityHidden: k, backButtonType: 'back', history: v, onBackClick: T, title: ae },
           s.a.createElement(
-            y.a,
+            g.a,
             { style: me.container },
             s.a.createElement(E.a, {
-              description: null !== (x = null == H ? void 0 : H.name) && void 0 !== x ? x : te,
+              description: null !== (B = null == j ? void 0 : j.name) && void 0 !== B ? B : te,
               label: se,
               link: '/i/flow/update_professional_category',
-              onPress: W,
+              onPress: Q,
               testID: P.a.categoryLabel,
             }),
             s.a.createElement(
-              y.a,
+              g.a,
               { testID: P.a.categoryDisplay },
               s.a.createElement(
-                y.a,
+                g.a,
                 { style: me.categoryDisplaySwitchContainer },
-                s.a.createElement(I.b, null, re),
-                s.a.createElement(U.a, { onValueChange: X, value: Q }),
+                s.a.createElement(R.b, null, re),
+                s.a.createElement(I.a, { onValueChange: q, value: G }),
               ),
             ),
             fe &&
               ((D =
-                null == p || null === (h = p.v1) || void 0 === h || null === (S = h[0]) || void 0 === S
+                null == d || null === (h = d.v1) || void 0 === h || null === (S = h[0]) || void 0 === S
                   ? void 0
                   : S.profile_module.__typename),
-              (B = D ? ue[D] : ''),
+              (A = D ? ue[D] : ''),
               s.a.createElement(E.a, {
-                description: B,
+                description: A,
                 label: oe,
                 link: '/settings/professional_profile/profile_spotlight',
               })),
-            s.a.createElement(R.a, {
+            s.a.createElement(U.a, {
               align: 'left',
               color: 'primary',
               label: ie,
-              onPress: q,
+              onPress: Y,
               testID: P.a.switchAccountType,
             }),
             (function () {
-              i()(!(null == o || !o.professional_type), 'professional.professional_type must be defined')
-              var e = o.professional_type
+              f()(!(null == c || !c.professional_type), 'professional.professional_type must be defined')
+              var e = c.professional_type
               return k
                 ? s.a.createElement(C, {
                     onClose: $,
@@ -1246,37 +1282,34 @@
             },
           }
         }),
-        ye = l('5FtR'),
-        ge = l('Fr3L'),
-        ke = l('IAZG'),
-        be = void 0 !== fe ? fe : (fe = l('WN76')),
-        _e = { context: 'SETTINGS_PROFESSIONAL_PROFILE_SCREEN' }
-      function ve(e) {
-        var n,
-          l,
-          a,
-          t,
-          r = e.loggedInUserId,
-          o = Object(ke.a)(be, { rest_id: r }, { fetchPolicy: 'network-only' }).user
-        return null !== (n = o.result) && void 0 !== n && n.professional
-          ? (i()(null === (l = o.result) || void 0 === l ? void 0 : l.profilemodules, 'profilemodules must be defined'),
-            s.a.createElement(pe, {
-              loggedInUserId: r,
-              professionalRef: null === (a = o.result) || void 0 === a ? void 0 : a.professional,
-              spotlightsRef: null === (t = o.result) || void 0 === t ? void 0 : t.profilemodules,
-            }))
-          : s.a.createElement(ye.a, { to: '/settings/profile' })
-      }
-      function Fe() {
-        var e = s.a.useContext(t.a).loggedInUserId
-        return e
-          ? s.a.createElement(ge.a, { errorConfig: _e }, s.a.createElement(ve, { loggedInUserId: e }))
-          : s.a.createElement(ye.a, { to: '/login' })
-      }
+        ge = l('5FtR'),
+        ye = l('IAZG'),
+        ke = l('vVrK'),
+        be = void 0 !== fe ? fe : (fe = l('WN76'))
+      n.default = Object(ke.a)(
+        function (e) {
+          var n,
+            l,
+            a = e.loggedInUserId,
+            t = Object(ye.a)(be, { rest_id: a }, { fetchPolicy: 'network-only' }).user
+          return null !== (n = t.result) &&
+            void 0 !== n &&
+            n.professional &&
+            null !== (l = t.result) &&
+            void 0 !== l &&
+            l.profilemodules
+            ? s.a.createElement(pe, {
+                loggedInUserId: a,
+                professionalRef: t.result.professional,
+                spotlightsRef: t.result.profilemodules,
+              })
+            : s.a.createElement(ge.a, { to: '/settings/profile' })
+        },
+        { context: 'SETTINGS_PROFESSIONAL_PROFILE_SCREEN' },
+      )
     },
     seTK: function (e, n, l) {
       'use strict'
-      l.r(n)
       var a,
         s = {
           argumentDefinitions: [],
@@ -1304,7 +1337,32 @@
           type: 'Professional',
           abstractKey: null,
         }
-      ;(s.hash = 'a6eba8faed16c247b3e8cf33bf58708c'), (n.default = s)
+      ;(s.hash = 'a6eba8faed16c247b3e8cf33bf58708c'), (e.exports = s)
+    },
+    vVrK: function (e, n, l) {
+      'use strict'
+      l.d(n, 'a', function () {
+        return u
+      })
+      l('T0aG'), l('KqXw'), l('Ysgh')
+      var a = l('ERkP'),
+        s = l.n(a),
+        t = l('v6aA'),
+        r = l('5FtR'),
+        i = l('Fr3L')
+      function o(e) {
+        var n = e.WrappedComponent,
+          l = e.errorConfig,
+          a = s.a.useContext(t.a).loggedInUserId
+        return a
+          ? s.a.createElement(i.a, { errorConfig: l }, s.a.createElement(n, { loggedInUserId: a }))
+          : s.a.createElement(r.a, { to: '/login' })
+      }
+      function u(e, n) {
+        return function () {
+          return s.a.createElement(o, { WrappedComponent: e, errorConfig: n })
+        }
+      }
     },
   },
 ])

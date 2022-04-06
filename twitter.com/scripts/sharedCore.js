@@ -9,6 +9,414 @@
         })
       }
     },
+    '+6Cn': function (e, t, n) {
+      'use strict'
+      var r = n('IGGJ'),
+        o = r(n('yiKp')),
+        i = r(n('KEM+')),
+        a = r(n('RhWx')),
+        c = n('D/x4'),
+        s = n('wtyv').getQueryResourceForEnvironment,
+        l = n('Xzr5'),
+        u = n('I9iR'),
+        d = n('e1/f'),
+        f = d.RelayFeatureFlags,
+        p = d.__internal,
+        h = p.fetchQuery,
+        m = p.getPromiseForActiveRequest,
+        v = d.createOperationDescriptor,
+        g = d.getFragmentIdentifier,
+        y = d.getPendingOperationsForFragment,
+        b = d.getSelector,
+        _ = d.getVariablesFromFragment,
+        E = d.handlePotentialSnapshotErrors,
+        w = d.isPromise,
+        S = d.recycleNodesInto,
+        C = 'function' == typeof WeakMap,
+        k = Object.freeze([])
+      function T(e) {
+        return Array.isArray(e)
+          ? e.some(function (e) {
+              return e.isMissingData
+            })
+          : e.isMissingData
+      }
+      function x(e, t, n) {
+        return Array.isArray(t)
+          ? {
+              cacheKey: e,
+              snapshot: t,
+              data: t.map(function (e) {
+                return e.data
+              }),
+              isMissingData: T(t),
+              storeEpoch: n,
+            }
+          : { cacheKey: e, snapshot: t, data: t.data, isMissingData: T(t), storeEpoch: n }
+      }
+      var O = (function () {
+          function e(e) {
+            ;(0, i.default)(this, '_cache', new Map()),
+              (0, i.default)(this, '_retainCounts', new Map()),
+              (this._environment = e)
+          }
+          var t = e.prototype
+          return (
+            (t.get = function (e) {
+              var t, n
+              return null !== (t = null === (n = this._cache.get(e)) || void 0 === n ? void 0 : n[0]) && void 0 !== t
+                ? t
+                : void 0
+            }),
+            (t.recordQueryResults = function (e, t) {
+              var n = this,
+                r = this._cache.get(e)
+              if (r) {
+                var o = r[0],
+                  i = r[1]
+                t.forEach(function (e) {
+                  o.push(e)
+                }),
+                  i.temporaryRetain(this._environment)
+              } else {
+                var a = new l(function () {
+                  return n._retain(e)
+                })
+                this._cache.set(e, [t, a]), a.temporaryRetain(this._environment)
+              }
+            }),
+            (t._retain = function (e) {
+              var t,
+                n = this,
+                r = (null !== (t = this._retainCounts.get(e)) && void 0 !== t ? t : 0) + 1
+              return (
+                this._retainCounts.set(e, r),
+                {
+                  dispose: function () {
+                    var t,
+                      r = (null !== (t = n._retainCounts.get(e)) && void 0 !== t ? t : 0) - 1
+                    r > 0 ? n._retainCounts.set(e, r) : (n._retainCounts.delete(e), n._cache.delete(e))
+                  },
+                }
+              )
+            }),
+            e
+          )
+        })(),
+        I = (function () {
+          function e(e) {
+            ;(this._environment = e),
+              (this._cache = c.create(1e6)),
+              f.ENABLE_CLIENT_EDGES && (this._clientEdgeQueryResultsCache = new O(e))
+          }
+          var t = e.prototype
+          return (
+            (t.read = function (e, t, n, r) {
+              return this.readWithIdentifier(e, t, g(e, t), n, r)
+            }),
+            (t.readWithIdentifier = function (e, t, n, r, o) {
+              var i,
+                c,
+                l = this,
+                d = this._environment
+              if (null == t) return { cacheKey: n, data: null, isMissingData: !1, snapshot: null, storeEpoch: 0 }
+              var p = d.getStore().getEpoch()
+              if (
+                !0 === (null == e || null === (i = e.metadata) || void 0 === i ? void 0 : i.plural) &&
+                (Array.isArray(t) || u(!1), 0 === t.length)
+              )
+                return { cacheKey: n, data: k, isMissingData: !1, snapshot: k, storeEpoch: p }
+              var h = this._cache.get(n)
+              if (null != h) {
+                if ('pending' === h.kind && w(h.promise))
+                  throw (
+                    (d.__log({
+                      name: 'suspense.fragment',
+                      data: h.result.data,
+                      fragment: e,
+                      isRelayHooks: !0,
+                      isMissingData: h.result.isMissingData,
+                      isPromiseCached: !0,
+                      pendingOperations: h.pendingOperations,
+                    }),
+                    h.promise)
+                  )
+                if ('done' === h.kind && h.result.snapshot)
+                  return this._handlePotentialSnapshotErrorsInSnapshot(h.result.snapshot), h.result
+              }
+              var v = b(e, t)
+              null == v && u(!1)
+              var g =
+                  'PluralReaderSelector' === v.kind
+                    ? v.selectors.map(function (e) {
+                        return d.lookup(e)
+                      })
+                    : d.lookup(v),
+                y = x(n, g, p)
+              if (!y.isMissingData)
+                return (
+                  this._handlePotentialSnapshotErrorsInSnapshot(g), this._cache.set(n, { kind: 'done', result: y }), y
+                )
+              var _ = null
+              if (
+                f.ENABLE_CLIENT_EDGES &&
+                (function (e) {
+                  var t, n
+                  return Array.isArray(e)
+                    ? e.some(function (e) {
+                        var t, n
+                        return (
+                          (null !== (t = null === (n = e.missingClientEdges) || void 0 === n ? void 0 : n.length) &&
+                          void 0 !== t
+                            ? t
+                            : 0) > 0
+                        )
+                      })
+                    : (null !== (t = null === (n = e.missingClientEdges) || void 0 === n ? void 0 : n.length) &&
+                      void 0 !== t
+                        ? t
+                        : 0) > 0
+                })(g)
+              ) {
+                _ = []
+                var E = s(this._environment),
+                  S = []
+                !(function (e, t) {
+                  Array.isArray(e) ? e.forEach(t) : t(e)
+                })(g, function (n) {
+                  var r
+                  null === (r = n.missingClientEdges) ||
+                    void 0 === r ||
+                    r.forEach(function (n) {
+                      var r,
+                        o = n.request,
+                        i = n.clientEdgeDestinationID,
+                        a = l._performClientEdgeQuery(E, e, t, o, i),
+                        c = a.queryResult,
+                        s = a.requestDescriptor
+                      S.push(c), null === (r = _) || void 0 === r || r.push(s)
+                    })
+                }),
+                  null == this._clientEdgeQueryResultsCache && u(!1),
+                  this._clientEdgeQueryResultsCache.recordQueryResults(n, S)
+              }
+              var C = null
+              f.ENABLE_CLIENT_EDGES &&
+                _ &&
+                (C = _.map(function (e) {
+                  return m(l._environment, e)
+                }).filter(function (e) {
+                  return null != e
+                }))
+              var T,
+                O,
+                I,
+                R = 'PluralReaderSelector' === v.kind ? v.selectors[0].owner : v.owner,
+                M = this._getAndSavePromiseForFragmentRequestInFlight(n, e, R, y),
+                L = null == M ? void 0 : M.promise
+              if ((null === (c = C) || void 0 === c ? void 0 : c.length) || w(L))
+                throw (
+                  (d.__log({
+                    name: 'suspense.fragment',
+                    data: y.data,
+                    fragment: e,
+                    isRelayHooks: !0,
+                    isPromiseCached: !1,
+                    isMissingData: y.isMissingData,
+                    pendingOperations: [].concat(
+                      (0, a.default)(null !== (T = null == M ? void 0 : M.pendingOperations) && void 0 !== T ? T : []),
+                      (0, a.default)(null !== (O = _) && void 0 !== O ? O : []),
+                    ),
+                  }),
+                  (null === (I = C) || void 0 === I ? void 0 : I.length)
+                    ? Promise.all([L].concat((0, a.default)(C)))
+                    : L)
+                )
+              return this._handlePotentialSnapshotErrorsInSnapshot(g), x(n, g, p)
+            }),
+            (t._performClientEdgeQuery = function (e, t, n, r, i) {
+              var a = _(t, n),
+                c = (0, o.default)((0, o.default)({}, a), {}, { id: i }),
+                s = v(r, c, {}),
+                l = h(this._environment, s),
+                u = e.prepare(s, l)
+              return { requestDescriptor: s.request, queryResult: u }
+            }),
+            (t._handlePotentialSnapshotErrorsInSnapshot = function (e) {
+              var t = this
+              Array.isArray(e)
+                ? e.forEach(function (e) {
+                    E(t._environment, e.missingRequiredFields, e.relayResolverErrors)
+                  })
+                : E(this._environment, e.missingRequiredFields, e.relayResolverErrors)
+            }),
+            (t.readSpec = function (e, t, n) {
+              var r = {}
+              for (var o in e) r[o] = this.read(e[o], t[o], n, o)
+              return r
+            }),
+            (t.subscribe = function (e, t) {
+              var n = this,
+                r = this._environment,
+                o = e.cacheKey,
+                i = e.snapshot
+              if (!i) return { dispose: function () {} }
+              var a = this.checkMissedUpdates(e),
+                c = a[0],
+                l = a[1]
+              c && t()
+              var d = []
+              if (
+                (Array.isArray(i)
+                  ? (Array.isArray(l) || u(!1),
+                    l.forEach(function (e, i) {
+                      d.push(
+                        r.subscribe(e, function (e) {
+                          var a = r.getStore().getEpoch()
+                          n._updatePluralSnapshot(o, l, e, i, a), t()
+                        }),
+                      )
+                    }))
+                  : ((null == l || Array.isArray(l)) && u(!1),
+                    d.push(
+                      r.subscribe(l, function (e) {
+                        var i = r.getStore().getEpoch()
+                        n._cache.set(o, { kind: 'done', result: x(o, e, i) }), t()
+                      }),
+                    )),
+                f.ENABLE_CLIENT_EDGES)
+              ) {
+                var p,
+                  h,
+                  m =
+                    null !==
+                      (p = null === (h = this._clientEdgeQueryResultsCache) || void 0 === h ? void 0 : h.get(o)) &&
+                    void 0 !== p
+                      ? p
+                      : void 0
+                if (null == m ? void 0 : m.length) {
+                  var v = s(this._environment)
+                  m.forEach(function (e) {
+                    d.push(v.retain(e))
+                  })
+                }
+              }
+              return {
+                dispose: function () {
+                  d.forEach(function (e) {
+                    return e.dispose()
+                  }),
+                    n._cache.delete(o)
+                },
+              }
+            }),
+            (t.subscribeSpec = function (e, t) {
+              var n = this,
+                r = Object.keys(e).map(function (r) {
+                  return n.subscribe(e[r], t)
+                })
+              return {
+                dispose: function () {
+                  r.forEach(function (e) {
+                    e.dispose()
+                  })
+                },
+              }
+            }),
+            (t.checkMissedUpdates = function (e) {
+              var t = this._environment,
+                n = e.snapshot
+              if (!n) return [!1, null]
+              var r
+              if (((r = t.getStore().getEpoch()), e.storeEpoch === r)) return [!1, e.snapshot]
+              var i = e.cacheKey
+              if (Array.isArray(n)) {
+                var a = !1,
+                  c = []
+                return (
+                  n.forEach(function (e, n) {
+                    var r = t.lookup(e.selector),
+                      i = e.data,
+                      s = r.data,
+                      l = S(i, s)
+                    l !== i && ((r = (0, o.default)((0, o.default)({}, r), {}, { data: l })), (a = !0)), (c[n] = r)
+                  }),
+                  a && this._cache.set(i, { kind: 'done', result: x(i, c, r) }),
+                  [a, c]
+                )
+              }
+              var s = t.lookup(n.selector),
+                l = n.data,
+                u = s.data,
+                d = S(l, u),
+                f = {
+                  data: d,
+                  isMissingData: s.isMissingData,
+                  missingClientEdges: s.missingClientEdges,
+                  seenRecords: s.seenRecords,
+                  selector: s.selector,
+                  missingRequiredFields: s.missingRequiredFields,
+                  relayResolverErrors: s.relayResolverErrors,
+                }
+              return d !== l && this._cache.set(i, { kind: 'done', result: x(i, f, r) }), [d !== l, f]
+            }),
+            (t.checkMissedUpdatesSpec = function (e) {
+              var t = this
+              return Object.keys(e).some(function (n) {
+                return t.checkMissedUpdates(e[n])[0]
+              })
+            }),
+            (t._getAndSavePromiseForFragmentRequestInFlight = function (e, t, n, r) {
+              var o = this,
+                i = y(this._environment, t, n)
+              if (null == i) return null
+              var a = i.promise,
+                c = i.pendingOperations,
+                s = a
+                  .then(function () {
+                    o._cache.delete(e)
+                  })
+                  .catch(function (t) {
+                    o._cache.delete(e)
+                  })
+              return (
+                (s.displayName = a.displayName),
+                this._cache.set(e, { kind: 'pending', pendingOperations: c, promise: s, result: r }),
+                { promise: s, pendingOperations: c }
+              )
+            }),
+            (t._updatePluralSnapshot = function (e, t, n, r, o) {
+              var i,
+                c = this._cache.get(e)
+              if (w(c)) R(n.selector.node.name)
+              else {
+                var s = null == c || null === (i = c.result) || void 0 === i ? void 0 : i.snapshot
+                if (!s || Array.isArray(s)) {
+                  var l = s ? (0, a.default)(s) : (0, a.default)(t)
+                  ;(l[r] = n), this._cache.set(e, { kind: 'done', result: x(e, l, o) })
+                } else R(n.selector.node.name)
+              }
+            }),
+            e
+          )
+        })()
+      function R(e) {
+        u(!1)
+      }
+      function M(e) {
+        return new I(e)
+      }
+      var L = C ? new WeakMap() : new Map()
+      e.exports = {
+        createFragmentResource: M,
+        getFragmentResourceForEnvironment: function (e) {
+          var t = L.get(e)
+          if (t) return t
+          var n = M(e)
+          return L.set(e, n), n
+        },
+      }
+    },
     '+RfI': function (e, t, n) {
       'use strict'
       var r = n('yiKp'),
@@ -3388,6 +3796,167 @@
         }
       }
     },
+    '2V3d': function (e, t, n) {
+      'use strict'
+      n('z84I'), n('1t7P'), n('jQ/y'), n('uFXj')
+      var r = n('ERkP'),
+        o = n.n(r),
+        i = n.p + 'block_party.5a58d7a5.png',
+        a = n.p + 'bodyguard_ai.51f7c3c5.png',
+        c = n('Bwid'),
+        s = n.p + 'moderate.366e1895.png',
+        l = n('Irs7'),
+        u = n('htQn'),
+        d = n('3rX5'),
+        f = n('mw9i'),
+        p = n('t62R'),
+        h = n('/yvb'),
+        m = n('mjJ+'),
+        v = n('IG7M'),
+        g = n('rHpw'),
+        y = [
+          {
+            url: 'https://developer.twitter.com/en/community/toolbox/block-party',
+            title: 'BlockParty App',
+            avatarURI: i,
+            description:
+              'Say "bye-bye" to trolls with a suite of anti-harassment tools to help you reclaim your Twitter experience.',
+          },
+          {
+            url: 'https://developer.twitter.com/en/community/toolbox/bodyguard',
+            title: 'Bodyguard.ai',
+            avatarURI: a,
+            description: 'Protecting people against toxic content.',
+          },
+          {
+            url: 'https://developer.twitter.com/en/community/toolbox/moderate',
+            title: 'Moderate',
+            avatarURI: s,
+            description:
+              'Improve your social media experience and beat the trolls with simple, AI based moderation tools.',
+          },
+        ],
+        b = g.a.create(function (e) {
+          return {
+            root: { display: 'flex', paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 },
+            headerContainer: { display: 'flex', justifyContent: 'space-between' },
+            headerText: { flexDirection: 'row', justifyContent: 'space-between' },
+            headerTitle: { display: 'flex', flexDirection: 'row', alignItems: 'center' },
+            titleSubText: { marginTop: e.spaces.space4 },
+            toolboxHeader: {
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginVertical: e.spaces.space4,
+            },
+            toolboxItem: {
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginVertical: e.spaces.space12,
+            },
+            avatar: {
+              borderColor: e.colors.gray100,
+              borderRadius: e.borderRadii.large,
+              borderWidth: e.borderWidths.small,
+              width: e.spaces.space48,
+              height: e.spaces.space48,
+            },
+            toolboxRightContent: { flex: '1', paddingHorizontal: e.spaces.space16 },
+            footerLink: { marginTop: e.spaces.space12 },
+          }
+        })
+      t.a = function (e) {
+        var t = e.onDismiss,
+          n = Object(l.b)()
+        o.a.useEffect(
+          function () {
+            n.scribe({ action: 'show', component: 'TwitterToolboxUpsell' })
+          },
+          [n],
+        )
+        var r = o.a.useCallback(
+            function (e) {
+              n.scribe({ action: 'click', component: 'TwitterToolboxUpsell', element: e })
+            },
+            [n],
+          ),
+          i = o.a.useCallback(
+            function () {
+              return y.map(function (e) {
+                return o.a.createElement(
+                  u.a,
+                  { key: e.title, style: b.toolboxItem, withInteractiveStyling: !1 },
+                  o.a.createElement(d.a, { source: { uri: e.avatarURI }, style: b.avatar }),
+                  o.a.createElement(
+                    f.a,
+                    { style: b.toolboxRightContent },
+                    o.a.createElement(p.b, { size: 'body', style: b.toolboxHeader, weight: 'bold' }, e.title),
+                    o.a.createElement(p.b, { size: 'subtext2' }, e.description),
+                  ),
+                  o.a.createElement(
+                    h.a,
+                    {
+                      link: e.url,
+                      onClick: function () {
+                        return r(e.title)
+                      },
+                      testID: ''.concat(e.title, ' button'),
+                      type: 'primaryOutlined',
+                    },
+                    'Learn more',
+                  ),
+                )
+              })
+            },
+            [r],
+          ),
+          a = o.a.useCallback(
+            function (e) {
+              return o.a.createElement(m.a, {
+                items: [{ Icon: c.a, text: 'Hide this', onClick: t }],
+                onCloseRequested: e,
+              })
+            },
+            [t],
+          )
+        return o.a.createElement(
+          f.a,
+          { style: b.root },
+          o.a.createElement(
+            f.a,
+            { style: b.headerContainer },
+            o.a.createElement(
+              f.a,
+              { style: b.headerText },
+              o.a.createElement(
+                p.b,
+                { size: 'headline1', testID: 'title', weight: 'heavy' },
+                'Discover more blocking tools',
+              ),
+              o.a.createElement(v.a, { renderActionMenu: a }),
+            ),
+            o.a.createElement(
+              p.b,
+              { color: 'gray700', size: 'subtext2', style: b.titleSubText, testID: 'subTitle' },
+              'The Twitter Toolbox offers more solutions to improve your experience on Twitter.',
+            ),
+          ),
+          i(),
+          o.a.createElement(
+            p.b,
+            {
+              link: 'https://developer.twitter.com/en/community/toolbox#safety',
+              onPress: function () {
+                return r('View Twitter Toolbox')
+              },
+              style: b.footerLink,
+            },
+            'View Twitter Toolbox',
+          ),
+        )
+      }
+    },
     '2Wwg': function (e, t, n) {
       'use strict'
       function r(e) {
@@ -3517,71 +4086,6 @@
           )
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    '3KVO': function (e, t, n) {
-      'use strict'
-      var r = n('B7Uq'),
-        o = n('ERkP'),
-        i = n('64tQ'),
-        a = n('Vt13'),
-        c = n('Ud88'),
-        s = n('F8W6'),
-        l = s.getQueryResourceForEnvironment,
-        u = s.getQueryCacheIdentifier,
-        d = o.useContext,
-        f = o.useEffect,
-        p = o.useState,
-        h = o.useRef
-      e.exports = function (e) {
-        var t = e.query,
-          n = e.componentDisplayName,
-          o = e.fetchObservable,
-          s = e.fetchPolicy,
-          m = e.fetchKey,
-          v = e.renderPolicy,
-          g = c(),
-          y = d(r),
-          b = l(g),
-          _ = p(0),
-          E = _[0],
-          w = _[1],
-          S = i(),
-          C = S.startFetch,
-          k = S.completeFetch,
-          T = ''.concat(E, '-').concat(null != m ? m : ''),
-          x = u(g, t, s, v, T),
-          O = y.wrapPrepareQueryResource(function () {
-            return b.prepareWithIdentifier(x, t, o, s, v, { start: C, complete: k, error: k }, y)
-          }),
-          I = h(!1)
-        f(function () {
-          return function () {
-            I.current = !0
-          }
-        }, []),
-          f(
-            function () {
-              if (!0 === I.current)
-                return (
-                  (I.current = !1),
-                  void w(function (e) {
-                    return e + 1
-                  })
-                )
-              var e = b.retain(O, y)
-              return function () {
-                e.dispose()
-              }
-            },
-            [g, x],
-          ),
-          f(function () {
-            b.releaseTemporaryRetain(O)
-          })
-        var R = O.fragmentNode,
-          M = O.fragmentRef
-        return a(R, M, n).data
-      }
     },
     '3Lh0': function (e, t, n) {
       'use strict'
@@ -4501,27 +5005,6 @@
         return r.removeRange(a, c, n)
       }
     },
-    '4gIZ': function (e, t, n) {
-      'use strict'
-      var r = n('3KVO'),
-        o = n('yLYC'),
-        i = n('Ud88'),
-        a = n('aQQo').useTrackLoadQueryInRender,
-        c = n('K1lQ').__internal.fetchQuery
-      e.exports = function (e, t, n) {
-        a()
-        var s = i(),
-          l = o(e, t, n && n.networkCacheConfig ? n.networkCacheConfig : { force: !0 })
-        return r({
-          componentDisplayName: 'useLazyLoadQuery()',
-          fetchKey: null == n ? void 0 : n.fetchKey,
-          fetchObservable: c(s, l),
-          fetchPolicy: null == n ? void 0 : n.fetchPolicy,
-          query: l,
-          renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
-        })
-      }
-    },
     '4zmP': function (e, t, n) {
       'use strict'
       var r = n('VrFO'),
@@ -4544,49 +5027,20 @@
         _ = n('oQhu'),
         E = n('rHpw'),
         w = n('j7Bv'),
-        S = n('3XMw'),
-        C = n.n(S),
-        k = n('shC7'),
-        T = n('MWbm'),
-        x = n('hOZg'),
-        O = n('yiKp'),
-        I = n.n(O),
-        R = n('Lsrn'),
-        M = n('k/Ka'),
-        L = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(M.a)(
-            'svg',
-            I()(
-              I()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            g.a.createElement(
-              'g',
-              null,
-              g.a.createElement('path', {
-                d: 'M21.938 6.708c-.117-.277-.39-.458-.69-.458h-18.5c-.302 0-.573.18-.69.458-.12.277-.058.598.152.814l9.248 9.53c.14.147.335.23.538.23s.396-.083.538-.23l9.252-9.53c.21-.215.27-.537.152-.814z',
-              }),
-            ),
-          )
-        }
-      L.metadata = { width: 24, height: 24 }
-      var P = L,
-        A = n('nb/L'),
-        D = C.a.af8fa2ad,
-        F = Object.freeze({
+        S = n('MWbm'),
+        C = n('3XMw'),
+        k = n.n(C),
+        T = n('hOZg'),
+        x = n('nb/L'),
+        O = k.a.af8fa2ad,
+        I = Object.freeze({
           primary: { accessibilityLiveRegion: 'polite' },
           exclusive: { accessibilityLiveRegion: 'polite' },
           danger: { accessibilityLiveRegion: 'assertive' },
           success: { accessibilityLiveRegion: 'polite' },
           warning: { accessibilityLiveRegion: 'polite' },
         }),
-        B = (function (e) {
+        R = (function (e) {
           u()(n, e)
           var t = f()(n)
           function n() {
@@ -4623,57 +5077,55 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    n = t.arrowPositionStart,
-                    r = t.behavioralEventContext,
-                    o = t.onClose,
-                    i = t.style,
-                    a = t.type,
-                    c = t.withCloseButton,
-                    s = t.withRightArrow,
-                    l = F[a].accessibilityLiveRegion,
-                    u = null !== (e = null == r ? void 0 : r.viewType) && void 0 !== e ? e : 'inline_callout',
-                    d = this._getMemoizedBehavioralEventContext(u)
+                    n = t.behavioralEventContext,
+                    r = t.onClose,
+                    o = t.style,
+                    i = t.type,
+                    a = t.withCloseButton,
+                    c = t.withRightArrow,
+                    s = I[i].accessibilityLiveRegion,
+                    l = null !== (e = null == n ? void 0 : n.viewType) && void 0 !== e ? e : 'inline_callout',
+                    u = this._getMemoizedBehavioralEventContext(l)
                   return g.a.createElement(
                     g.a.Fragment,
                     null,
                     g.a.createElement(
                       m.a,
-                      { behavioralEventContext: d },
+                      { behavioralEventContext: u },
                       g.a.createElement(
-                        T.a,
+                        S.a,
                         {
-                          accessibilityLiveRegion: l,
+                          accessibilityLiveRegion: s,
                           onLayout: this._handleLayout,
                           ref: this._setContentNode,
-                          style: [j.root, K[a], i],
+                          style: [M.root, L[i], o],
                         },
                         g.a.createElement(
-                          T.a,
-                          { style: j.contentContainer },
+                          S.a,
+                          { style: M.contentContainer },
                           this._renderIconOrThumbnail(),
                           g.a.createElement(
-                            T.a,
-                            { style: j.contentTextContainer },
+                            S.a,
+                            { style: M.contentTextContainer },
                             this._renderHeadline(),
                             this._renderSubtext(),
                           ),
                         ),
-                        c && o
+                        a && r
                           ? g.a.createElement(b.a, {
-                              accessibilityLabel: D,
-                              icon: g.a.createElement(x.a, null),
-                              onPress: o,
+                              accessibilityLabel: O,
+                              icon: g.a.createElement(T.a, null),
+                              onPress: r,
                               size: 'smallCompact',
                               type: 'brandText',
                             })
                           : null,
                       ),
-                      n ? g.a.createElement(P, { style: [N[a], this._getArrowStyle()] }) : null,
-                      s
-                        ? g.a.createElement(A.a, {
+                      c
+                        ? g.a.createElement(x.a, {
                             style: [
                               { transform: 'rotate(90deg)', position: 'absolute' },
-                              N[a],
+                              P[i],
                               this._getSideArrowStyle(),
                             ],
                           })
@@ -4697,13 +5149,13 @@
                         Icon: t,
                         color: this._getThumbnailColor(),
                         size: i ? 'large' : 'medium',
-                        style: [j.thumbnail, i && j.thumbnailLargeMargin],
+                        style: [M.thumbnail, i && M.thumbnailLargeMargin],
                       })
                     if (r)
                       return g.a.createElement(
                         y.b,
                         { align: 'center' },
-                        g.a.createElement(t, { style: j.headlineIcon }),
+                        g.a.createElement(t, { style: M.headlineIcon }),
                       )
                   }
                 },
@@ -4714,7 +5166,7 @@
                   var e = this.props,
                     t = e.headline,
                     n = e.text
-                  if (t) return g.a.createElement(y.b, { style: n && j.headlineMarginBottom, weight: 'bold' }, t)
+                  if (t) return g.a.createElement(y.b, { style: n && M.headlineMarginBottom, weight: 'bold' }, t)
                 },
               },
               {
@@ -4745,7 +5197,7 @@
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
-                      style: j.actionText,
+                      style: M.actionText,
                       weight: 'bold',
                       withInteractiveStyling: !0,
                       withUnderline: !0,
@@ -4768,20 +5220,6 @@
                 },
               },
               {
-                key: '_getArrowStyle',
-                value: function () {
-                  var e = this.props.arrowPositionStart,
-                    t = this.state.contentMidpoint,
-                    n = k.a.getConstants().isRTL,
-                    r = [j.arrow]
-                  if (e && t) {
-                    var o = e - t
-                    r.push({ left: n ? void 0 : o, right: n ? o : void 0 })
-                  }
-                  return r
-                },
-              },
-              {
                 key: '_getSideArrowStyle',
                 value: function () {
                   if (this._contentNode) {
@@ -4799,8 +5237,8 @@
             n
           )
         })(g.a.Component)
-      h()(B, 'defaultProps', { type: 'primary', withCloseButton: !1, withThumbnail: !1 })
-      var j = E.a.create(function (e) {
+      h()(R, 'defaultProps', { type: 'primary', withCloseButton: !1, withThumbnail: !1 })
+      var M = E.a.create(function (e) {
           return {
             root: {
               borderRadius: e.borderRadii.medium,
@@ -4829,7 +5267,7 @@
             headlineIcon: { marginRight: e.spaces.space8 },
           }
         }),
-        K = E.a.create(function (e) {
+        L = E.a.create(function (e) {
           return {
             primary: { backgroundColor: e.colors.primary0 },
             exclusive: { backgroundColor: e.colors.plum0 },
@@ -4838,7 +5276,7 @@
             warning: { backgroundColor: e.colors.orange0 },
           }
         }),
-        N = E.a.create(function (e) {
+        P = E.a.create(function (e) {
           return {
             primary: { color: e.colors.primary0 },
             exclusive: { color: e.colors.plum0 },
@@ -4847,7 +5285,7 @@
             warning: { backgroundColor: e.colors.orange50 },
           }
         })
-      t.a = B
+      t.a = R
     },
     '5/F0': function (e, t, n) {
       'use strict'
@@ -5280,14 +5718,14 @@
               var d = { isStart: c, isEnd: a === e.length - 1, position: 'descendant', showReplyContext: c || u },
                 f =
                   i.type === l.b.Tweet
-                    ? J({
+                    ? Q({
                         item: i,
                         conversationPosition: d,
                         conversationTreeMetadata: void 0,
                         isFirst: c,
                         sortIndex: o,
                       })
-                    : Q({ item: i, conversationPosition: d, sortIndex: o })
+                    : J({ item: i, conversationPosition: d, sortIndex: o })
               r.push(f)
             }),
             r
@@ -5312,8 +5750,8 @@
                 d = { isStart: !1, isEnd: o === e.length - 1 },
                 f =
                   a.type === l.b.Tweet
-                    ? J({ isFirst: c, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
-                    : Q({ item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
+                    ? Q({ isFirst: c, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
+                    : J({ item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
               r.push(f)
             }),
             r
@@ -5326,14 +5764,14 @@
             o = r >= 0 && r < n.length - 1 && n[r + 1]
           return !!o && o !== t.content.id
         },
-        Q = function (e) {
+        J = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.item,
             o = e.sortIndex
           return s()(s()({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: o })
         },
-        J = function (e) {
+        Q = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.isFirst,
@@ -5619,35 +6057,6 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    '64tQ': function (e, t, n) {
-      'use strict'
-      var r = n('ERkP'),
-        o = r.useCallback,
-        i = r.useEffect,
-        a = r.useRef
-      e.exports = function () {
-        var e = a(null),
-          t = a(!1),
-          n = o(function () {
-            null != e.current && (e.current.unsubscribe(), (e.current = null)), (t.current = !1)
-          }, []),
-          r = o(function (n) {
-            ;(e.current = n), (t.current = !0)
-          }, []),
-          c = o(function () {
-            ;(e.current = null), (t.current = !1)
-          }, [])
-        return (
-          i(
-            function () {
-              return n
-            },
-            [n],
-          ),
-          { isFetchingRef: t, startFetch: r, disposeFetch: n, completeFetch: c }
-        )
-      }
-    },
     '67iF': function (e, t, n) {
       'use strict'
       var r = n('KEM+'),
@@ -5809,37 +6218,37 @@
                   case K:
                     return [
                       !r && !a && W.transparent,
-                      !a && Q.legacyFadedGrayColor,
+                      !a && J.legacyFadedGrayColor,
                       !o && V.infinite,
-                      Q.root,
+                      J.root,
                       r && W.invalid,
                       !r && a && W.legacyFocused,
-                      a && Q.legacyPilltransparentColor,
+                      a && J.legacyPilltransparentColor,
                       o && V.legacyRound,
-                      !n && Q.legacyDisabled,
+                      !n && J.legacyDisabled,
                     ]
                   case N:
                     return [
                       !r && !a && W.unfocused,
-                      !a && Q.fadedGrayColor,
+                      !a && J.fadedGrayColor,
                       !o && V.infinite,
-                      Q.root,
-                      Q.pillRoot,
+                      J.root,
+                      J.pillRoot,
                       r && W.invalid,
                       !r && a && W.focused,
-                      a && Q.backgroundColor,
+                      a && J.backgroundColor,
                       o && V.round,
-                      !n && Q.disabled,
+                      !n && J.disabled,
                     ]
                   default:
-                    return [W.none, Q.root, Q.selectionBackground]
+                    return [W.none, J.root, J.selectionBackground]
                 }
               }),
               _()(h()(e), '_renderUnfocusedPlaceholder', function () {
                 var t = e.props.appTextSize
                 return w.a.createElement(
                   M.a,
-                  { style: Q.placeholderView },
+                  { style: J.placeholderView },
                   w.a.createElement(
                     S.b,
                     { numberOfLines: 1, size: t, style: e.getUnfocusedStyles() },
@@ -5967,16 +6376,16 @@
                         M.a,
                         {
                           accessibilityRole: 'label',
-                          style: [Q.textInput, this._isCentered() && Q.pillTextInput],
+                          style: [J.textInput, this._isCentered() && J.pillTextInput],
                           testID: u && ''.concat(u, '_label'),
                         },
                         this._renderIcon(),
                         w.a.createElement(
                           M.a,
-                          { style: [Q.fitText, this._isCentered() ? null : Q.appTextLeft] },
+                          { style: [J.fitText, this._isCentered() ? null : J.appTextLeft] },
                           w.a.createElement(
                             S.b,
-                            { size: t, style: [Q.appText, f ? null : this._isCentered() ? G.hiddenStyle : null] },
+                            { size: t, style: [J.appText, f ? null : this._isCentered() ? G.hiddenStyle : null] },
                             i ? this._renderLexicalInput() : c ? this._renderRichTextInput() : this._renderTextInput(),
                           ),
                           f ? null : this._isCentered() ? this._renderUnfocusedPlaceholder() : null,
@@ -6403,7 +6812,7 @@
             leftIcon: { display: 'flex', justifyContent: 'center', cursor: 'default' },
           }
         }),
-        Q = O.a.create(function (e) {
+        J = O.a.create(function (e) {
           return {
             root: { flexDirection: 'column', flexGrow: 1, flexShrink: 1, justifyContent: 'center' },
             pillRoot: { minHeight: e.spaces.space40 },
@@ -6632,6 +7041,25 @@
         i = n('hqKg'),
         a = Object(i.createSelectorCreator)(i.defaultMemoize, o.a)
       t.a = a
+    },
+    '6zvL': function (e, t, n) {
+      'use strict'
+      var r = n('VYI2'),
+        o = n('ERkP'),
+        i = n('e1/f'),
+        a = i.createOperationDescriptor,
+        c = i.getRequest,
+        s = o.useMemo
+      e.exports = function (e, t, n) {
+        var o = r(t)[0],
+          i = r(n || {})[0]
+        return s(
+          function () {
+            return a(c(e), o, i)
+          },
+          [e, o, i],
+        )
+      }
     },
     7002: function (e, t, n) {
       'use strict'
@@ -8914,49 +9342,6 @@
         return o.a.createElement(i.a, null, o.a.createElement('meta', { content: t, name: 'description' }))
       }
     },
-    '9EbC': function (e, t, n) {
-      'use strict'
-      var r = n('I9iR'),
-        o = (function () {
-          function e(e) {
-            ;(this._capacity = e), this._capacity > 0 || r(!1), (this._map = new Map())
-          }
-          var t = e.prototype
-          return (
-            (t.set = function (e, t) {
-              if ((this._map.delete(e), this._map.set(e, t), this._map.size > this._capacity)) {
-                var n = this._map.keys().next()
-                n.done || this._map.delete(n.value)
-              }
-            }),
-            (t.get = function (e) {
-              var t = this._map.get(e)
-              return null != t && (this._map.delete(e), this._map.set(e, t)), t
-            }),
-            (t.has = function (e) {
-              return this._map.has(e)
-            }),
-            (t.delete = function (e) {
-              this._map.delete(e)
-            }),
-            (t.size = function () {
-              return this._map.size
-            }),
-            (t.capacity = function () {
-              return this._capacity - this._map.size
-            }),
-            (t.clear = function () {
-              this._map.clear()
-            }),
-            e
-          )
-        })()
-      e.exports = {
-        create: function (e) {
-          return new o(e)
-        },
-      }
-    },
     '9Kr7': function (e, t, n) {
       'use strict'
       var r = n('7002'),
@@ -9792,15 +10177,6 @@
         t.a = l
       }.call(this, n('fRV1')))
     },
-    B7Uq: function (e, t, n) {
-      'use strict'
-      var r = n('ERkP').createContext({
-        wrapPrepareQueryResource: function (e) {
-          return e()
-        },
-      })
-      e.exports = r
-    },
     BTrg: function (e, t, n) {
       'use strict'
       function r() {
@@ -10334,14 +10710,14 @@
           )
         })(g.a.Component),
         X = n('tI3i'),
-        Q = n.n(X),
-        J = n('upxf'),
+        J = n.n(X),
+        Q = n('upxf'),
         Z = _.a.f305840e,
         $ = _.a.e23b20af,
         ee = _.a.fe04d899,
         te = _.a.i036327c,
         ne = _.a.j95e3097,
-        re = g.a.createElement(J.a, null),
+        re = g.a.createElement(Q.a, null),
         oe = function (e) {
           var t = e.disabled,
             n = e.displayMode,
@@ -10531,7 +10907,7 @@
                     n = e.showRelationshipChangeConfirmation,
                     r = n && 'string' == typeof t,
                     o = !n
-                  Q()(r || o, 'When showRelationshipChangeConfirmation is true, name must be defined.')
+                  J()(r || o, 'When showRelationshipChangeConfirmation is true, name must be defined.')
                 },
               },
             ]),
@@ -10784,6 +11160,18 @@
       B.propTypes = {}
       t.a = B
     },
+    CVPS: function (e, t, n) {
+      'use strict'
+      var r = n('EORa').useTrackLoadQueryInRender,
+        o = n('cOV6'),
+        i = n('T0A1'),
+        a = (n('ERkP').useDebugValue, n('e1/f').getFragment)
+      e.exports = function (e, t) {
+        r()
+        var n = a(e)
+        return i(n, 'first argument of useFragment()'), o(n, t, 'useFragment()').data
+      }
+    },
     CaKu: function (e, t, n) {
       'use strict'
       var r
@@ -10956,6 +11344,49 @@
         return { x: t.left, y: t.top, width: t.right - t.left, height: t.bottom - t.top }
       }
     },
+    'D/x4': function (e, t, n) {
+      'use strict'
+      var r = n('I9iR'),
+        o = (function () {
+          function e(e) {
+            ;(this._capacity = e), this._capacity > 0 || r(!1), (this._map = new Map())
+          }
+          var t = e.prototype
+          return (
+            (t.set = function (e, t) {
+              if ((this._map.delete(e), this._map.set(e, t), this._map.size > this._capacity)) {
+                var n = this._map.keys().next()
+                n.done || this._map.delete(n.value)
+              }
+            }),
+            (t.get = function (e) {
+              var t = this._map.get(e)
+              return null != t && (this._map.delete(e), this._map.set(e, t)), t
+            }),
+            (t.has = function (e) {
+              return this._map.has(e)
+            }),
+            (t.delete = function (e) {
+              this._map.delete(e)
+            }),
+            (t.size = function () {
+              return this._map.size
+            }),
+            (t.capacity = function () {
+              return this._capacity - this._map.size
+            }),
+            (t.clear = function () {
+              this._map.clear()
+            }),
+            e
+          )
+        })()
+      e.exports = {
+        create: function (e) {
+          return new o(e)
+        },
+      }
+    },
     DQLs: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
@@ -11101,13 +11532,13 @@
         h = n('SrIh'),
         m = n('0KEI'),
         v = n('IAZG'),
-        g = n('lU4h'),
+        g = n('VYI2'),
         y = n.n(g),
-        b = n('Ud88'),
+        b = n('PJTX'),
         _ = n.n(b),
-        E = n('UIzd'),
+        E = n('P74S'),
         w = n.n(E),
-        S = n('enFi')
+        S = n('YWiL')
       function C(e, t) {
         var n = u.a.useState(!1),
           r = a()(n, 2),
@@ -11445,6 +11876,173 @@
         )
       t.a = z
     },
+    EORa: function (e, t, n) {
+      'use strict'
+      var r = n('IGGJ')(n('yiKp')),
+        o = n('I9iR'),
+        i = n('ERkP'),
+        a = n('e1/f'),
+        c = a.Observable,
+        s = a.PreloadableQueryRegistry,
+        l = a.RelayFeatureFlags,
+        u = a.ReplaySubject,
+        d = a.__internal.fetchQueryDeduped,
+        f = a.createOperationDescriptor,
+        p = a.getRequest,
+        h = a.getRequestIdentifier,
+        m = (n('/2Cm'), null),
+        v = 100001
+      e.exports = {
+        loadQuery: function (e, t, n, a, m) {
+          var g, y, b
+          null === (g = i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) ||
+            void 0 === g ||
+            null === (y = g.ReactCurrentDispatcher) ||
+            void 0 === y ||
+            y.current,
+            v++
+          var _,
+            E,
+            w,
+            S,
+            C,
+            k,
+            T = null !== (b = null == a ? void 0 : a.fetchPolicy) && void 0 !== b ? b : 'store-or-network',
+            x = (0, r.default)((0, r.default)({}, null == a ? void 0 : a.networkCacheConfig), {}, { force: !0 }),
+            O = !1,
+            I = function (t, n) {
+              return (O = !0), e.executeWithSource({ operation: t, source: n })
+            },
+            R = new u(),
+            M = c.create(function (e) {
+              return R.subscribe(e)
+            }),
+            L = null,
+            P = !1,
+            A = function (t) {
+              var r
+              P = !0
+              var o = new u()
+              if (!0 === l.ENABLE_LOAD_QUERY_REQUEST_DEDUPING) {
+                var i = 'raw-network-request-' + h(t, n)
+                r = d(e, i, function () {
+                  return e.getNetwork().execute(t, n, x)
+                })
+              } else {
+                r = e.getNetwork().execute(t, n, x)
+              }
+              var a = r.subscribe({
+                error: function (e) {
+                  ;(L = e), o.error(e)
+                },
+                next: function (e) {
+                  o.next(e)
+                },
+                complete: function () {
+                  o.complete()
+                },
+              }).unsubscribe
+              return (
+                (E = a),
+                c.create(function (e) {
+                  var t = o.subscribe(e)
+                  return function () {
+                    t.unsubscribe(), E()
+                  }
+                })
+              )
+            },
+            D = function (t, n) {
+              !0 === l.ENABLE_LOAD_QUERY_REQUEST_DEDUPING && (P = !0)
+              var r = d(e, t.request.identifier, n).subscribe({
+                error: function (e) {
+                  R.error(e)
+                },
+                next: function (e) {
+                  R.next(e)
+                },
+                complete: function () {
+                  R.complete()
+                },
+              })
+              w = r.unsubscribe
+            },
+            F = function (t) {
+              var r = f(t, n, x)
+              ;((_ = e.retain(r)), 'store-only' !== T) &&
+                ('store-or-network' !== T || 'available' !== e.check(r).status) &&
+                D(r, function () {
+                  var e = A(t.params)
+                  return I(r, e)
+                })
+            }
+          if ('PreloadableConcreteRequest' === t.kind) {
+            null === (k = (S = t.params).id) && o(!1)
+            var B = s.get(k)
+            if (null != B) F(B)
+            else {
+              var j = 'store-only' === T ? null : A(S),
+                K = s.onLoad(k, function (t) {
+                  C()
+                  var r = f(t, n, x)
+                  ;(_ = e.retain(r)),
+                    null != j &&
+                      D(r, function () {
+                        return I(r, j)
+                      })
+                })
+              C = K.dispose
+            }
+          } else {
+            var N = p(t)
+            ;(k = null != (S = N.params).cacheID ? S.cacheID : S.id), F(N)
+          }
+          var z = !1,
+            H = !1,
+            U = !1,
+            V = function () {
+              H || (_ && _.dispose(), (H = !0))
+            },
+            W = function () {
+              U || (O ? w && w() : E && E(), C && C(), (U = !0))
+            }
+          return {
+            kind: 'PreloadedQuery',
+            environment: e,
+            environmentProviderOptions: m,
+            dispose: function () {
+              z || (V(), W(), (z = !0))
+            },
+            releaseQuery: V,
+            cancelNetworkRequest: W,
+            fetchKey: v,
+            id: k,
+            get isDisposed() {
+              return z || H
+            },
+            get networkError() {
+              return L
+            },
+            name: S.name,
+            networkCacheConfig: x,
+            fetchPolicy: T,
+            source: P ? M : void 0,
+            variables: n,
+          }
+        },
+        useTrackLoadQueryInRender: function () {
+          var e, t
+          null === m &&
+            (m =
+              null === (e = i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) ||
+              void 0 === e ||
+              null === (t = e.ReactCurrentDispatcher) ||
+              void 0 === t
+                ? void 0
+                : t.current)
+        },
+      }
+    },
     EUHl: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
@@ -11587,311 +12185,6 @@
           )
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    F8W6: function (e, t, n) {
-      'use strict'
-      var r = n('IGGJ'),
-        o = r(n('yiKp')),
-        i = r(n('KEM+')),
-        a = n('9EbC'),
-        c = n('I9iR'),
-        s = (n('/2Cm'), n('K1lQ').isPromise),
-        l = 'store-or-network',
-        u = 'function' == typeof WeakMap
-      function d(e) {
-        return void 0 !== e.request.node.params.metadata.live
-      }
-      function f(e, t, n, r, o) {
-        var i = null != n ? n : l,
-          a = null != r ? r : e.UNSTABLE_getDefaultRenderPolicy(),
-          c = ''.concat(i, '-').concat(a, '-').concat(t.request.identifier)
-        return null != o ? ''.concat(c, '-').concat(o) : c
-      }
-      function p(e, t) {
-        var n = {
-          __id: e.fragment.dataID,
-          __fragments: (0, i.default)({}, e.fragment.node.name, e.request.variables),
-          __fragmentOwner: e.request,
-        }
-        return { cacheIdentifier: t, fragmentNode: e.request.node.fragment, fragmentRef: n, operation: e }
-      }
-      var h = 2e5
-      function m(e, t, n, r, o, i) {
-        var a = d(t),
-          s = r,
-          l = 0,
-          u = null,
-          f = null,
-          p = o,
-          m = function (e) {
-            return (
-              1 === ++l && (u = e.retain(t)),
-              {
-                dispose: function () {
-                  0 === (l = Math.max(0, l - 1)) && (null == u && c(!1), u.dispose(), (u = null)), i(v)
-                },
-              }
-            )
-          },
-          v = {
-            cacheIdentifier: e,
-            id: h++,
-            processedPayloadsCount: 0,
-            operationAvailability: n,
-            getValue: function () {
-              return s
-            },
-            setValue: function (e) {
-              s = e
-            },
-            getRetainCount: function () {
-              return l
-            },
-            getNetworkSubscription: function () {
-              return p
-            },
-            setNetworkSubscription: function (e) {
-              a && null != p && p.unsubscribe(), (p = e)
-            },
-            temporaryRetain: function (e) {
-              if (e.isServer()) return { dispose: function () {} }
-              var t = m(e),
-                n = null,
-                r = function () {
-                  clearTimeout(n), (n = null), (f = null), t.dispose(), a && l <= 0 && null != p && p.unsubscribe()
-                }
-              return (
-                (n = setTimeout(r, 3e5)),
-                null != f && f(),
-                (f = r),
-                {
-                  dispose: function () {
-                    f && f()
-                  },
-                }
-              )
-            },
-            permanentRetain: function (e) {
-              var t = m(e)
-              return (
-                null != f && (f(), (f = null)),
-                {
-                  dispose: function () {
-                    t.dispose(), a && l <= 0 && null != p && p.unsubscribe()
-                  },
-                }
-              )
-            },
-            releaseTemporaryRetain: function () {
-              null != f && (f(), (f = null))
-            },
-          }
-        return v
-      }
-      var v = (function () {
-        function e(e) {
-          var t = this
-          ;(0, i.default)(this, '_clearCacheEntry', function (e) {
-            e.getRetainCount() <= 0 && t._cache.delete(e.cacheIdentifier)
-          }),
-            (this._environment = e),
-            (this._cache = a.create(1e3))
-        }
-        var t = e.prototype
-        return (
-          (t.prepare = function (e, t, n, r, o, i, a) {
-            var c = f(this._environment, e, n, r, i)
-            return this.prepareWithIdentifier(c, e, t, n, r, o, a)
-          }),
-          (t.prepareWithIdentifier = function (e, t, n, r, i, a, c) {
-            var u = this._environment,
-              d = null != r ? r : l,
-              f = null != i ? i : u.UNSTABLE_getDefaultRenderPolicy(),
-              p = this._cache.get(e),
-              h = null,
-              m = null != p
-            null == p &&
-              (p = this._fetchAndSaveQuery(
-                e,
-                t,
-                n,
-                d,
-                f,
-                c,
-                (0, o.default)(
-                  (0, o.default)({}, a),
-                  {},
-                  {
-                    unsubscribe: function (e) {
-                      null != h && h.dispose()
-                      var t = null == a ? void 0 : a.unsubscribe
-                      t && t(e)
-                    },
-                  },
-                ),
-              )),
-              (h = p.temporaryRetain(u))
-            var v = p.getValue()
-            if (s(v))
-              throw (
-                (u.__log({
-                  name: 'suspense.query',
-                  fetchPolicy: d,
-                  isPromiseCached: m,
-                  operation: t,
-                  queryAvailability: p.operationAvailability,
-                  renderPolicy: f,
-                }),
-                v)
-              )
-            if (v instanceof Error) throw v
-            return v
-          }),
-          (t.retain = function (e, t) {
-            var n = this._environment,
-              r = e.cacheIdentifier,
-              o = e.operation,
-              i = this._getOrCreateCacheEntry(r, o, null, e, null),
-              a = i.permanentRetain(n)
-            return (
-              n.__log({ name: 'queryresource.retain', profilerContext: t, resourceID: i.id }),
-              {
-                dispose: function () {
-                  a.dispose()
-                },
-              }
-            )
-          }),
-          (t.releaseTemporaryRetain = function (e) {
-            var t = this._cache.get(e.cacheIdentifier)
-            null != t && t.releaseTemporaryRetain()
-          }),
-          (t.TESTS_ONLY__getCacheEntry = function (e, t, n, r) {
-            var o = f(this._environment, e, t, n, r)
-            return this._cache.get(o)
-          }),
-          (t._getOrCreateCacheEntry = function (e, t, n, r, o) {
-            var i = this._cache.get(e)
-            return null == i && ((i = m(e, t, n, r, o, this._clearCacheEntry)), this._cache.set(e, i)), i
-          }),
-          (t._fetchAndSaveQuery = function (e, t, n, r, i, a, s) {
-            var l,
-              u,
-              f = this,
-              h = this._environment,
-              v = h.check(t),
-              g = v.status,
-              y = 'available' === g,
-              b = y || ('partial' === i && 'stale' !== g),
-              _ = function () {}
-            switch (r) {
-              case 'store-only':
-                ;(l = !1), (u = !0)
-                break
-              case 'store-or-network':
-                ;(l = !y), (u = b)
-                break
-              case 'store-and-network':
-                ;(l = !0), (u = b)
-                break
-              case 'network-only':
-              default:
-                ;(l = !0), (u = !1)
-            }
-            if (u) {
-              var E = p(t, e),
-                w = m(e, t, v, E, null, this._clearCacheEntry)
-              this._cache.set(e, w)
-            }
-            if (l) {
-              var S,
-                C = p(t, e)
-              n.subscribe({
-                start: function (n) {
-                  S = n
-                  var r = f._cache.get(e)
-                  r && r.setNetworkSubscription(S)
-                  var i = null == s ? void 0 : s.start
-                  i &&
-                    i(
-                      (0, o.default)(
-                        (0, o.default)({}, n),
-                        {},
-                        {
-                          unsubscribe: function () {
-                            d(t) && n.unsubscribe()
-                          },
-                        },
-                      ),
-                    )
-                },
-                next: function () {
-                  var n = f._getOrCreateCacheEntry(e, t, v, C, S)
-                  ;(n.processedPayloadsCount += 1), n.setValue(C), _()
-                  var r = null == s ? void 0 : s.next
-                  null != r && r(h.lookup(t.fragment))
-                },
-                error: function (n) {
-                  var r = f._getOrCreateCacheEntry(e, t, v, n, S)
-                  0 === r.processedPayloadsCount && r.setValue(n), _(), (S = null), r.setNetworkSubscription(null)
-                  var o = null == s ? void 0 : s.error
-                  o && o(n)
-                },
-                complete: function () {
-                  _(), (S = null)
-                  var t = f._cache.get(e)
-                  t && t.setNetworkSubscription(null)
-                  var n = null == s ? void 0 : s.complete
-                  n && n()
-                },
-                unsubscribe: null == s ? void 0 : s.unsubscribe,
-              })
-              var k = this._cache.get(e)
-              if (!k) {
-                var T = new Promise(function (e) {
-                  _ = e
-                })
-                ;(T.displayName = 'Relay(' + t.fragment.node.name + ')'),
-                  (k = m(e, t, v, T, S, this._clearCacheEntry)),
-                  this._cache.set(e, k)
-              }
-            } else {
-              var x = null == s ? void 0 : s.complete
-              x && x()
-            }
-            var O = this._cache.get(e)
-            return (
-              null == O && c(!1),
-              h.__log({
-                name: 'queryresource.fetch',
-                resourceID: O.id,
-                operation: t,
-                profilerContext: a,
-                fetchPolicy: r,
-                renderPolicy: i,
-                queryAvailability: v,
-                shouldFetch: l,
-              }),
-              O
-            )
-          }),
-          e
-        )
-      })()
-      function g(e) {
-        return new v(e)
-      }
-      var y = u ? new WeakMap() : new Map()
-      e.exports = {
-        createQueryResource: g,
-        getQueryResourceForEnvironment: function (e) {
-          var t = y.get(e)
-          if (t) return t
-          var n = g(e)
-          return y.set(e, n), n
-        },
-        getQueryCacheIdentifier: f,
-      }
     },
     'FG+G': function (e, t, n) {
       'use strict'
@@ -13114,12 +13407,12 @@
         s = n.n(c),
         l = n('pXBW'),
         u = n('Pw8r'),
-        d = n('4gIZ'),
+        d = n('QHh2'),
         f = n.n(d),
-        p = n('lU4h'),
+        p = n('VYI2'),
         h = n.n(p),
-        m = n('enFi'),
-        v = n('Z3eX'),
+        m = n('YWiL'),
+        v = n('erpl'),
         g = n.n(v)
       function y(e, t, n) {
         var r,
@@ -14353,8 +14646,8 @@
                   do {
                     X.push(C[q].block), q++
                   } while (q < C.length && C[q].wrapperTemplate === Y.wrapperTemplate)
-                  var Q = l.cloneElement(Y.wrapperTemplate, { key: Y.key + '-wrap', 'data-offset-key': Y.offsetKey }, X)
-                  G.push(Q)
+                  var J = l.cloneElement(Y.wrapperTemplate, { key: Y.key + '-wrap', 'data-offset-key': Y.offsetKey }, X)
+                  G.push(J)
                 } else G.push(Y.block), q++
               }
               return l.createElement('div', { 'data-contents': 'true' }, G)
@@ -16735,6 +17028,16 @@
             : m
         }
     },
+    PJTX: function (e, t, n) {
+      'use strict'
+      var r = n('I9iR'),
+        o = n('ERkP').useContext,
+        i = n('nDGl')
+      e.exports = function () {
+        var e = o(i)
+        return null == e && r(!1), e.environment
+      }
+    },
     PSpH: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
@@ -17251,7 +17554,7 @@
               e
             )
           })()),
-        u = n('Ud88'),
+        u = n('PJTX'),
         d = n.n(u),
         f = 'function' == typeof WeakMap ? new WeakMap() : new Map()
       var p = function () {
@@ -17548,6 +17851,27 @@
             selectionAfter: t.merge({ anchorKey: c, anchorOffset: l, focusKey: c, focusOffset: l, isBackward: !1 }),
           })
         )
+      }
+    },
+    QHh2: function (e, t, n) {
+      'use strict'
+      var r = n('EORa').useTrackLoadQueryInRender,
+        o = n('h2Du'),
+        i = n('6zvL'),
+        a = n('PJTX'),
+        c = n('e1/f').__internal.fetchQuery
+      e.exports = function (e, t, n) {
+        r()
+        var s = a(),
+          l = i(e, t, n && n.networkCacheConfig ? n.networkCacheConfig : { force: !0 })
+        return o({
+          componentDisplayName: 'useLazyLoadQuery()',
+          fetchKey: null == n ? void 0 : n.fetchKey,
+          fetchObservable: c(s, l),
+          fetchPolicy: null == n ? void 0 : n.fetchPolicy,
+          query: l,
+          renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
+        })
       }
     },
     QIgh: function (e, t, n) {
@@ -18265,12 +18589,12 @@
         q = 'rweb/quickPromote/setPromoteErrorCode',
         Y = 'rweb/quickPromote/paymentMethods',
         X = 'rweb/quickPromote/setPaymentMethodsFetchStatus',
-        Q = Object.freeze({
+        J = Object.freeze({
           REQUEST: 'rweb/quickPromote/eligibilityRequest',
           SUCCESS: 'rweb/quickPromote/eligibilitySuccess',
           FAILURE: 'rweb/quickPromote/eligibilityFailure',
         }),
-        J = Object.freeze({
+        Q = Object.freeze({
           REQUEST: 'rweb/quickPromote/promoteRequest',
           SUCCESS: 'rweb/quickPromote/promoteSuccess',
           FAILURE: 'rweb/quickPromote/promoteFailure',
@@ -18380,7 +18704,7 @@
           return function (t, n, r) {
             var o = r.api
             return Object(d.b)(t, { request: o.QuickPromote.getQuickPromoteEligibility, params: e })({
-              actionTypes: Q,
+              actionTypes: J,
               context: 'FETCH_ELIGIBILITY',
               meta: e,
             })
@@ -18411,7 +18735,7 @@
           return function (t, n, r) {
             var o = r.api
             return Object(d.b)(t, { request: o.QuickPromote.createPromotion, params: e })({
-              actionTypes: J,
+              actionTypes: Q,
               context: 'FETCH_PROMOTE',
             })
           }
@@ -18566,21 +18890,21 @@
                 )
               }
               break
-            case Q.REQUEST:
+            case J.REQUEST:
               var ce = t.meta.tweetId
               return a()(
                 a()({}, e),
                 {},
                 { eligibility: a()(a()({}, e.eligibility), {}, o()({}, ce, { eligibilityFetchStatus: f.a.LOADING })) },
               )
-            case Q.FAILURE:
+            case J.FAILURE:
               var se = t.meta.tweetId
               return a()(
                 a()({}, e),
                 {},
                 { eligibility: a()(a()({}, e.eligibility), {}, o()({}, se, { eligibilityFetchStatus: f.a.FAILED })) },
               )
-            case Q.SUCCESS:
+            case J.SUCCESS:
               var le = t.meta.tweetId
               return a()(
                 a()({}, e),
@@ -18647,11 +18971,11 @@
                 return a()(a()({}, e), {}, { paymentMethodsFetchStatus: ye })
               }
               break
-            case J.REQUEST:
+            case Q.REQUEST:
               return a()(a()({}, e), {}, { promoteStatus: f.a.LOADING })
-            case J.FAILURE:
+            case Q.FAILURE:
               return a()(a()({}, e), {}, { promoteStatus: f.a.FAILED })
-            case J.SUCCESS:
+            case Q.SUCCESS:
               return a()(a()({}, e), {}, { promoteStatus: f.a.LOADED })
             default:
               return t.type, e
@@ -18709,7 +19033,7 @@
           return s(e) ? e : X(e)
         }
         function i(e) {
-          return a(e) && !l(e) ? e : Q(e)
+          return a(e) && !l(e) ? e : J(e)
         }
         function a(e) {
           return !(!e || !e[d])
@@ -18828,7 +19152,7 @@
         function X(e) {
           return null == e ? ae() : a(e) ? (c(e) ? e.entrySeq() : e.toIndexedSeq()) : se(e)
         }
-        function Q(e) {
+        function J(e) {
           return (null == e ? ae() : a(e) ? (c(e) ? e.entrySeq() : e) : se(e)).toSetSeq()
         }
         ;(K.prototype.toString = function () {
@@ -18888,18 +19212,18 @@
           (X.prototype.__iterator = function (e, t) {
             return fe(this, e, t, !1)
           }),
-          t(Q, q),
-          (Q.of = function () {
-            return Q(arguments)
+          t(J, q),
+          (J.of = function () {
+            return J(arguments)
           }),
-          (Q.prototype.toSetSeq = function () {
+          (J.prototype.toSetSeq = function () {
             return this
           }),
           (q.isSeq = ie),
           (q.Keyed = Y),
-          (q.Set = Q),
+          (q.Set = J),
           (q.Indexed = X)
-        var J,
+        var Q,
           Z,
           $,
           ee = '@@__IMMUTABLE_SEQ__@@'
@@ -18920,7 +19244,7 @@
           return !(!e || !e[ee])
         }
         function ae() {
-          return J || (J = new te([]))
+          return Q || (Q = new te([]))
         }
         function ce(e) {
           var t = Array.isArray(e)
@@ -19480,10 +19804,10 @@
         function Xe(e, t) {
           ;(this.ownerID = e), (this.entries = t)
         }
-        function Qe(e, t, n) {
+        function Je(e, t, n) {
           ;(this.ownerID = e), (this.bitmap = t), (this.nodes = n)
         }
-        function Je(e, t, n) {
+        function Qe(e, t, n) {
           ;(this.ownerID = e), (this.count = t), (this.nodes = n)
         }
         function Ze(e, t, n) {
@@ -19536,7 +19860,7 @@
           var i,
             a = (0 === n ? e.keyHash : e.keyHash >>> n) & y,
             c = (0 === n ? r : r >>> n) & y
-          return new Qe(
+          return new Je(
             t,
             (1 << a) | (1 << c),
             a === c ? [st(e, t, n + v, r, o)] : ((i = new $e(t, r, o)), a < c ? [e, i] : [i, e]),
@@ -19555,11 +19879,11 @@
             var u = t[c]
             void 0 !== u && c !== r && ((o |= s), (a[i++] = u))
           }
-          return new Qe(e, o, a)
+          return new Je(e, o, a)
         }
         function dt(e, t, n, r, o) {
           for (var i = 0, a = new Array(g), c = 0; 0 !== n; c++, n >>>= 1) a[c] = 1 & n ? t[i++] : void 0
-          return (a[r] = o), new Je(e, i + 1, a)
+          return (a[r] = o), new Qe(e, i + 1, a)
         }
         function ft(e, t, n) {
           for (var o = [], i = 0; i < n.length; i++) {
@@ -19667,13 +19991,13 @@
               )
             }
           }),
-          (Qe.prototype.get = function (e, t, n, r) {
+          (Je.prototype.get = function (e, t, n, r) {
             void 0 === t && (t = Oe(n))
             var o = 1 << ((0 === e ? t : t >>> e) & y),
               i = this.bitmap
             return 0 == (i & o) ? r : this.nodes[gt(i & (o - 1))].get(e + v, t, n, r)
           }),
-          (Qe.prototype.update = function (e, t, n, r, o, i, a) {
+          (Je.prototype.update = function (e, t, n, r, o, i, a) {
             void 0 === n && (n = Oe(r))
             var c = (0 === t ? n : n >>> t) & y,
               s = 1 << c,
@@ -19691,15 +20015,15 @@
             var m = e && e === this.ownerID,
               g = u ? (h ? l : l ^ s) : l | s,
               _ = u ? (h ? yt(f, d, h, m) : _t(f, d, m)) : bt(f, d, h, m)
-            return m ? ((this.bitmap = g), (this.nodes = _), this) : new Qe(e, g, _)
+            return m ? ((this.bitmap = g), (this.nodes = _), this) : new Je(e, g, _)
           }),
-          (Je.prototype.get = function (e, t, n, r) {
+          (Qe.prototype.get = function (e, t, n, r) {
             void 0 === t && (t = Oe(n))
             var o = (0 === e ? t : t >>> e) & y,
               i = this.nodes[o]
             return i ? i.get(e + v, t, n, r) : r
           }),
-          (Je.prototype.update = function (e, t, n, r, o, i, a) {
+          (Qe.prototype.update = function (e, t, n, r, o, i, a) {
             void 0 === n && (n = Oe(r))
             var c = (0 === t ? n : n >>> t) & y,
               s = o === b,
@@ -19714,7 +20038,7 @@
             } else f++
             var p = e && e === this.ownerID,
               h = yt(l, c, d, p)
-            return p ? ((this.count = f), (this.nodes = h), this) : new Je(e, f, h)
+            return p ? ((this.count = f), (this.nodes = h), this) : new Qe(e, f, h)
           }),
           (Ze.prototype.get = function (e, t, n, r) {
             for (var o = this.entries, i = 0, a = o.length; i < a; i++) if (ge(n, o[i][0])) return o[i][1]
@@ -19756,7 +20080,7 @@
             function (e, t) {
               for (var n = this.entries, r = 0, o = n.length - 1; r <= o; r++) if (!1 === e(n[t ? o - r : r])) return !1
             }),
-          (Qe.prototype.iterate = Je.prototype.iterate =
+          (Je.prototype.iterate = Qe.prototype.iterate =
             function (e, t) {
               for (var n = this.nodes, r = 0, o = n.length - 1; r <= o; r++) {
                 var i = n[t ? o - r : r]
@@ -20181,10 +20505,10 @@
         function Xt(e) {
           ;(this._iter = e), (this.size = e.size)
         }
-        function Qt(e) {
+        function Jt(e) {
           ;(this._iter = e), (this.size = e.size)
         }
-        function Jt(e) {
+        function Qt(e) {
           var t = bn(e)
           return (
             (t._iter = e),
@@ -20271,7 +20595,7 @@
             }),
             e.flip &&
               (n.flip = function () {
-                var t = Jt(e)
+                var t = Qt(e)
                 return (
                   (t.reverse = function () {
                     return e.flip()
@@ -20595,7 +20919,7 @@
                       i[t] = e[1]
                     },
               ),
-            r ? Y(i) : s(e) ? X(i) : Q(i)
+            r ? Y(i) : s(e) ? X(i) : J(i)
           )
         }
         function fn(e, t, n) {
@@ -20677,7 +21001,7 @@
           return c(e) ? r : s(e) ? o : i
         }
         function bn(e) {
-          return Object.create((c(e) ? Y : s(e) ? X : Q).prototype)
+          return Object.create((c(e) ? Y : s(e) ? X : J).prototype)
         }
         function _n() {
           return this._iter.cacheResult
@@ -20831,7 +21155,7 @@
               return t.done ? t : N(e, r++, t.value, t)
             })
           }),
-          t(Xt, Q),
+          t(Xt, J),
           (Xt.prototype.has = function (e) {
             return this._iter.includes(e)
           }),
@@ -20848,11 +21172,11 @@
               return t.done ? t : N(e, t.value, t.value, t)
             })
           }),
-          t(Qt, Y),
-          (Qt.prototype.entrySeq = function () {
+          t(Jt, Y),
+          (Jt.prototype.entrySeq = function () {
             return this._iter.toSeq()
           }),
-          (Qt.prototype.__iterate = function (e, t) {
+          (Jt.prototype.__iterate = function (e, t) {
             var n = this
             return this._iter.__iterate(function (t) {
               if (t) {
@@ -20862,7 +21186,7 @@
               }
             }, t)
           }),
-          (Qt.prototype.__iterator = function (e, t) {
+          (Jt.prototype.__iterator = function (e, t) {
             var n = this._iter.__iterator(A, t)
             return new K(function () {
               for (;;) {
@@ -20880,7 +21204,7 @@
           (Yt.prototype.cacheResult =
             qt.prototype.cacheResult =
             Xt.prototype.cacheResult =
-            Qt.prototype.cacheResult =
+            Jt.prototype.cacheResult =
               _n),
           t(Sn, Se),
           (Sn.prototype.toString = function () {
@@ -21262,7 +21586,7 @@
         function Xn() {
           return Wn || (Wn = Yn(0))
         }
-        function Qn(e, t) {
+        function Jn(e, t) {
           var n = function (n) {
             e.prototype[n] = t[n]
           }
@@ -21276,7 +21600,7 @@
           (qn.asImmutable = Ye.asImmutable),
           (qn.wasAltered = Ye.wasAltered),
           (n.Iterator = K),
-          Qn(n, {
+          Jn(n, {
             toArray: function () {
               Ue(this.size)
               var e = new Array(this.size || 0)
@@ -21483,7 +21807,7 @@
               return mn(this, sn(this, e, !0))
             },
             fromEntrySeq: function () {
-              return new Qt(this)
+              return new Jt(this)
             },
             get: function (e, t) {
               return this.find(
@@ -21576,20 +21900,20 @@
               return this.__hash || (this.__hash = ar(this))
             },
           })
-        var Jn = n.prototype
-        ;(Jn[d] = !0),
-          (Jn[j] = Jn.values),
-          (Jn.__toJS = Jn.toArray),
-          (Jn.__toStringMapper = rr),
-          (Jn.inspect = Jn.toSource =
+        var Qn = n.prototype
+        ;(Qn[d] = !0),
+          (Qn[j] = Qn.values),
+          (Qn.__toJS = Qn.toArray),
+          (Qn.__toStringMapper = rr),
+          (Qn.inspect = Qn.toSource =
             function () {
               return this.toString()
             }),
-          (Jn.chain = Jn.flatMap),
-          (Jn.contains = Jn.includes),
+          (Qn.chain = Qn.flatMap),
+          (Qn.contains = Qn.includes),
           (function () {
             try {
-              Object.defineProperty(Jn, 'length', {
+              Object.defineProperty(Qn, 'length', {
                 get: function () {
                   if (!n.noLengthWarning) {
                     var e
@@ -21604,9 +21928,9 @@
               })
             } catch (e) {}
           })(),
-          Qn(r, {
+          Jn(r, {
             flip: function () {
-              return mn(this, Jt(this))
+              return mn(this, Qt(this))
             },
             findKey: function (e, t) {
               var n = this.findEntry(e, t)
@@ -21716,12 +22040,12 @@
         }
         return (
           (Zn[f] = !0),
-          (Zn[j] = Jn.entries),
-          (Zn.__toJS = Jn.toObject),
+          (Zn[j] = Qn.entries),
+          (Zn.__toJS = Qn.toObject),
           (Zn.__toStringMapper = function (e, t) {
             return JSON.stringify(t) + ': ' + rr(e)
           }),
-          Qn(o, {
+          Jn(o, {
             toKeyedSeq: function () {
               return new qt(this, !1)
             },
@@ -21805,7 +22129,7 @@
           }),
           (o.prototype[p] = !0),
           (o.prototype[h] = !0),
-          Qn(i, {
+          Jn(i, {
             get: function (e, t) {
               return this.has(e) ? e : t
             },
@@ -21816,13 +22140,13 @@
               return this.valueSeq()
             },
           }),
-          (i.prototype.has = Jn.includes),
-          Qn(Y, r.prototype),
-          Qn(X, o.prototype),
-          Qn(Q, i.prototype),
-          Qn(Se, r.prototype),
-          Qn(Ce, o.prototype),
-          Qn(ke, i.prototype),
+          (i.prototype.has = Qn.includes),
+          Jn(Y, r.prototype),
+          Jn(X, o.prototype),
+          Jn(J, i.prototype),
+          Jn(Se, r.prototype),
+          Jn(Ce, o.prototype),
+          Jn(ke, i.prototype),
           {
             Iterable: n,
             Seq: q,
@@ -21872,6 +22196,11 @@
             return e.name
           })
         }
+    },
+    T0A1: function (e, t, n) {
+      'use strict'
+      n('ERkP').useRef, n('/2Cm')
+      e.exports = function (e, t) {}
     },
     TEoO: function (e, t, n) {
       'use strict'
@@ -22036,15 +22365,14 @@
         return u
       }
     },
-    Ud88: function (e, t, n) {
+    UXBi: function (e, t, n) {
       'use strict'
-      var r = n('m5wm'),
-        o = n('I9iR'),
-        i = n('ERkP').useContext
-      e.exports = function () {
-        var e = i(r)
-        return null == e && o(!1), e.environment
-      }
+      var r = n('ERkP').createContext({
+        wrapPrepareQueryResource: function (e) {
+          return e()
+        },
+      })
+      e.exports = r
     },
     UfDk: function (e, t, n) {
       'use strict'
@@ -22119,11 +22447,6 @@
         return i.push(e, r, 'insert-fragment')
       }
       e.exports = p
-    },
-    V78V: function (e, t, n) {
-      'use strict'
-      n('/2Cm'), n('ERkP').useRef
-      e.exports = function (e, t) {}
     },
     VIKJ: function (e, t, n) {
       'use strict'
@@ -22324,7 +22647,7 @@
         q = n('mw9i'),
         Y = n('SyIi'),
         X = { section: 'sidebar' },
-        Q = (function (e) {
+        J = (function (e) {
           u()(n, e)
           var t = f()(n)
           function n() {
@@ -22342,7 +22665,7 @@
                       o = !Object(K.a)() && n <= x.a.theme.breakpoints.medium
                     return v.a.createElement(
                       T.a,
-                      { style: J.root },
+                      { style: Q.root },
                       v.a.createElement(
                         T.a,
                         { style: e._getContainerStyle(r) },
@@ -22360,7 +22683,7 @@
                   return v.a.createElement(
                     q.a,
                     {
-                      style: [J.primaryColumn, Object(K.a)() && Z.primaryColumn, t && J.primaryColumnMobile],
+                      style: [Q.primaryColumn, Object(K.a)() && Z.primaryColumn, t && Q.primaryColumnMobile],
                       testID: U,
                     },
                     v.a.createElement(Y.a, { showReload: !0 }, 'function' == typeof n ? n({ isWide: e }) : n),
@@ -22371,9 +22694,9 @@
                 key: '_renderSidebar',
                 value: function (e) {
                   var t = this.props.sidebarContent,
-                    n = W.b.isFirefox() && J.firefoxOverflowHidden,
+                    n = W.b.isFirefox() && Q.firefoxOverflowHidden,
                     r = Object(K.a)() ? N.a.getSidebarWidthStyle(e) : $.sidebarColumnWidth,
-                    o = [J.sidebarColumn, !Object(K.a)() && $.sidebarColumn, r, n]
+                    o = [Q.sidebarColumn, !Object(K.a)() && $.sidebarColumn, r, n]
                   return v.a.createElement(
                     B.c,
                     { namespace: X },
@@ -22388,7 +22711,7 @@
                           { style: r },
                           v.a.createElement(
                             T.a,
-                            { style: J.safari10NestingFix },
+                            { style: Q.safari10NestingFix },
                             v.a.createElement(j.a.Provider, { value: !0 }, t),
                           ),
                         ),
@@ -22400,15 +22723,15 @@
               {
                 key: '_getContainerStyle',
                 value: function (e) {
-                  return Object(K.a)() ? [J.container, Z.container] : [J.container, $.container, e && $.containerWide]
+                  return Object(K.a)() ? [Q.container, Z.container] : [Q.container, $.container, e && $.containerWide]
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      h()(Q, 'contextType', M.a)
-      var J = x.a.create(function (e) {
+      h()(J, 'contextType', M.a)
+      var Q = x.a.create(function (e) {
           return {
             root: { backfaceVisibility: 'hidden', flexGrow: 1 },
             container: {
@@ -22445,7 +22768,7 @@
             sidebarColumnWidth: { width: F.a.columnWidths.secondary.normal },
           }
         }),
-        ee = Q,
+        ee = J,
         te = n('/yvb'),
         ne = (function (e) {
           u()(n, e)
@@ -22771,6 +23094,34 @@
         }
       }.call(this, n('fRV1')))
     },
+    VYI2: function (e, t, n) {
+      'use strict'
+      var r = n('njtZ'),
+        o = n('ERkP'),
+        i = o.useMemo,
+        a = o.useRef,
+        c = o.useState
+      e.exports = function (e) {
+        var t,
+          n,
+          o = a(0),
+          s = c(e),
+          l = s[0],
+          u = s[1]
+        return (
+          r(e, l) || ((o.current = (null !== (n = o.current) && void 0 !== n ? n : 0) + 1), u(e)),
+          [
+            i(
+              function () {
+                return e
+              },
+              [o.current],
+            ),
+            null !== (t = o.current) && void 0 !== t ? t : 0,
+          ]
+        )
+      }
+    },
     VeLA: function (e, t, n) {
       'use strict'
       function r(e) {
@@ -23059,53 +23410,6 @@
         ReaderMode: 'ReaderMode',
       })
       t.a = r
-    },
-    Vt13: function (e, t, n) {
-      'use strict'
-      var r = n('Ud88'),
-        o = (n('/2Cm'), n('YdUg').getFragmentResourceForEnvironment),
-        i = n('ERkP'),
-        a = i.useEffect,
-        c = i.useRef,
-        s = i.useState,
-        l = n('K1lQ').getFragmentIdentifier
-      e.exports = function (e, t, n) {
-        var i = r(),
-          u = o(i),
-          d = c(!1),
-          f = s(0)[1],
-          p = l(e, t),
-          h = u.readWithIdentifier(e, t, p, n),
-          m = c(!0)
-        function v() {
-          !1 !== d.current &&
-            !1 !== m.current &&
-            f(function (e) {
-              return e + 1
-            })
-        }
-        return (
-          a(
-            function () {
-              d.current = !0
-              var e = u.subscribe(h, v)
-              return function () {
-                ;(d.current = !1), e.dispose()
-              }
-            },
-            [i, p],
-          ),
-          {
-            data: h.data,
-            disableStoreUpdates: function () {
-              m.current = !1
-            },
-            enableStoreUpdates: function () {
-              ;(m.current = !0), u.checkMissedUpdates(h)[0] && v()
-            },
-          }
-        )
-      }
     },
     Vwge: function (e, t, n) {
       'use strict'
@@ -23994,6 +24298,72 @@
         return t
       }
     },
+    Xzr5: function (e, t, n) {
+      'use strict'
+      var r = n('IGGJ')(n('KEM+')),
+        o = n('I9iR'),
+        i = (function () {
+          function e(e) {
+            var t = this
+            ;(0, r.default)(this, '_retainCount', 0),
+              (0, r.default)(this, '_retainDisposable', null),
+              (0, r.default)(this, '_releaseTemporaryRetain', null),
+              (this._retain = function (n) {
+                return (
+                  t._retainCount++,
+                  1 === t._retainCount && (t._retainDisposable = e(n)),
+                  {
+                    dispose: function () {
+                      ;(t._retainCount = Math.max(0, t._retainCount - 1)),
+                        0 === t._retainCount &&
+                          (null == t._retainDisposable && o(!1),
+                          t._retainDisposable.dispose(),
+                          (t._retainDisposable = null))
+                    },
+                  }
+                )
+              })
+          }
+          var t = e.prototype
+          return (
+            (t.temporaryRetain = function (e) {
+              var t,
+                n = this
+              if (e.isServer()) return { dispose: function () {} }
+              var r = this._retain(e),
+                o = null,
+                i = function () {
+                  clearTimeout(o), (o = null), (n._releaseTemporaryRetain = null), r.dispose()
+                }
+              return (
+                (o = setTimeout(i, 3e5)),
+                null === (t = this._releaseTemporaryRetain) || void 0 === t || t.call(this),
+                (this._releaseTemporaryRetain = i),
+                {
+                  dispose: function () {
+                    var e
+                    null === (e = n._releaseTemporaryRetain) || void 0 === e || e.call(n)
+                  },
+                }
+              )
+            }),
+            (t.permanentRetain = function (e) {
+              var t = this._retain(e)
+              return this.releaseTemporaryRetain(), t
+            }),
+            (t.releaseTemporaryRetain = function () {
+              var e
+              null === (e = this._releaseTemporaryRetain) || void 0 === e || e.call(this),
+                (this._releaseTemporaryRetain = null)
+            }),
+            (t.getRetainCount = function () {
+              return this._retainCount
+            }),
+            e
+          )
+        })()
+      e.exports = i
+    },
     Y3fD: function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
@@ -24158,264 +24528,6 @@
           )
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    YdUg: function (e, t, n) {
-      'use strict'
-      var r = n('IGGJ'),
-        o = r(n('yiKp')),
-        i = r(n('RhWx')),
-        a = n('9EbC'),
-        c = n('I9iR'),
-        s = n('K1lQ'),
-        l = s.getFragmentIdentifier,
-        u = s.getPendingOperationsForFragment,
-        d = s.getSelector,
-        f = s.isPromise,
-        p = s.recycleNodesInto,
-        h = s.reportMissingRequiredFields,
-        m = 'function' == typeof WeakMap,
-        v = Object.freeze([])
-      function g(e) {
-        return Array.isArray(e)
-          ? e.some(function (e) {
-              return e.isMissingData
-            })
-          : e.isMissingData
-      }
-      function y(e, t, n) {
-        return Array.isArray(t)
-          ? {
-              cacheKey: e,
-              snapshot: t,
-              data: t.map(function (e) {
-                return e.data
-              }),
-              isMissingData: g(t),
-              storeEpoch: n,
-            }
-          : { cacheKey: e, snapshot: t, data: t.data, isMissingData: g(t), storeEpoch: n }
-      }
-      var b = (function () {
-        function e(e) {
-          ;(this._environment = e), (this._cache = a.create(1e6))
-        }
-        var t = e.prototype
-        return (
-          (t.read = function (e, t, n, r) {
-            return this.readWithIdentifier(e, t, l(e, t), n, r)
-          }),
-          (t.readWithIdentifier = function (e, t, n, r, o) {
-            var i,
-              a = this._environment
-            if (null == t) return { cacheKey: n, data: null, isMissingData: !1, snapshot: null, storeEpoch: 0 }
-            var s = a.getStore().getEpoch()
-            if (
-              !0 === (null == e || null === (i = e.metadata) || void 0 === i ? void 0 : i.plural) &&
-              (Array.isArray(t) || c(!1), 0 === t.length)
-            )
-              return { cacheKey: n, data: v, isMissingData: !1, snapshot: v, storeEpoch: s }
-            var l = this._cache.get(n)
-            if (null != l) {
-              if ('pending' === l.kind && f(l.promise))
-                throw (
-                  (a.__log({
-                    name: 'suspense.fragment',
-                    data: l.result.data,
-                    fragment: e,
-                    isRelayHooks: !0,
-                    isMissingData: l.result.isMissingData,
-                    isPromiseCached: !0,
-                    pendingOperations: l.pendingOperations,
-                  }),
-                  l.promise)
-                )
-              if ('done' === l.kind && l.result.snapshot)
-                return this._reportMissingRequiredFieldsInSnapshot(l.result.snapshot), l.result
-            }
-            var u = d(e, t)
-            null == u && c(!1)
-            var p =
-                'PluralReaderSelector' === u.kind
-                  ? u.selectors.map(function (e) {
-                      return a.lookup(e)
-                    })
-                  : a.lookup(u),
-              h = y(n, p, s)
-            if (!h.isMissingData)
-              return this._reportMissingRequiredFieldsInSnapshot(p), this._cache.set(n, { kind: 'done', result: h }), h
-            var m = 'PluralReaderSelector' === u.kind ? u.selectors[0].owner : u.owner,
-              g = this._getAndSavePromiseForFragmentRequestInFlight(n, e, m, h)
-            if (null != g && f(g.promise))
-              throw (
-                (a.__log({
-                  name: 'suspense.fragment',
-                  data: h.data,
-                  fragment: e,
-                  isRelayHooks: !0,
-                  isPromiseCached: !1,
-                  isMissingData: h.isMissingData,
-                  pendingOperations: g.pendingOperations,
-                }),
-                g.promise)
-              )
-            return this._reportMissingRequiredFieldsInSnapshot(p), y(n, p, s)
-          }),
-          (t._reportMissingRequiredFieldsInSnapshot = function (e) {
-            var t = this
-            Array.isArray(e)
-              ? e.forEach(function (e) {
-                  null != e.missingRequiredFields && h(t._environment, e.missingRequiredFields)
-                })
-              : null != e.missingRequiredFields && h(this._environment, e.missingRequiredFields)
-          }),
-          (t.readSpec = function (e, t, n) {
-            var r = {}
-            for (var o in e) r[o] = this.read(e[o], t[o], n, o)
-            return r
-          }),
-          (t.subscribe = function (e, t) {
-            var n = this,
-              r = this._environment,
-              o = e.cacheKey,
-              i = e.snapshot
-            if (!i) return { dispose: function () {} }
-            var a = this.checkMissedUpdates(e),
-              s = a[0],
-              l = a[1]
-            s && t()
-            var u = []
-            return (
-              Array.isArray(i)
-                ? (Array.isArray(l) || c(!1),
-                  l.forEach(function (e, i) {
-                    u.push(
-                      r.subscribe(e, function (e) {
-                        var a = r.getStore().getEpoch()
-                        n._updatePluralSnapshot(o, l, e, i, a), t()
-                      }),
-                    )
-                  }))
-                : ((null == l || Array.isArray(l)) && c(!1),
-                  u.push(
-                    r.subscribe(l, function (e) {
-                      var i = r.getStore().getEpoch()
-                      n._cache.set(o, { kind: 'done', result: y(o, e, i) }), t()
-                    }),
-                  )),
-              {
-                dispose: function () {
-                  u.map(function (e) {
-                    return e.dispose()
-                  }),
-                    n._cache.delete(o)
-                },
-              }
-            )
-          }),
-          (t.subscribeSpec = function (e, t) {
-            var n = this,
-              r = Object.keys(e).map(function (r) {
-                return n.subscribe(e[r], t)
-              })
-            return {
-              dispose: function () {
-                r.forEach(function (e) {
-                  e.dispose()
-                })
-              },
-            }
-          }),
-          (t.checkMissedUpdates = function (e) {
-            var t = this._environment,
-              n = e.snapshot
-            if (!n) return [!1, null]
-            var r
-            if (((r = t.getStore().getEpoch()), e.storeEpoch === r)) return [!1, e.snapshot]
-            var i = e.cacheKey
-            if (Array.isArray(n)) {
-              var a = !1,
-                c = []
-              return (
-                n.forEach(function (e, n) {
-                  var r = t.lookup(e.selector),
-                    i = e.data,
-                    s = r.data,
-                    l = p(i, s)
-                  l !== i && ((r = (0, o.default)((0, o.default)({}, r), {}, { data: l })), (a = !0)), (c[n] = r)
-                }),
-                a && this._cache.set(i, { kind: 'done', result: y(i, c, r) }),
-                [a, c]
-              )
-            }
-            var s = t.lookup(n.selector),
-              l = n.data,
-              u = s.data,
-              d = p(l, u),
-              f = {
-                data: d,
-                isMissingData: s.isMissingData,
-                seenRecords: s.seenRecords,
-                selector: s.selector,
-                missingRequiredFields: s.missingRequiredFields,
-              }
-            return d !== l && this._cache.set(i, { kind: 'done', result: y(i, f, r) }), [d !== l, f]
-          }),
-          (t.checkMissedUpdatesSpec = function (e) {
-            var t = this
-            return Object.keys(e).some(function (n) {
-              return t.checkMissedUpdates(e[n])[0]
-            })
-          }),
-          (t._getAndSavePromiseForFragmentRequestInFlight = function (e, t, n, r) {
-            var o = this,
-              i = u(this._environment, t, n)
-            if (null == i) return null
-            var a = i.promise,
-              c = i.pendingOperations,
-              s = a
-                .then(function () {
-                  o._cache.delete(e)
-                })
-                .catch(function (t) {
-                  o._cache.delete(e)
-                })
-            return (
-              (s.displayName = a.displayName),
-              this._cache.set(e, { kind: 'pending', pendingOperations: c, promise: s, result: r }),
-              { promise: s, pendingOperations: c }
-            )
-          }),
-          (t._updatePluralSnapshot = function (e, t, n, r, o) {
-            var a,
-              c = this._cache.get(e)
-            if (f(c)) _(n.selector.node.name)
-            else {
-              var s = null == c || null === (a = c.result) || void 0 === a ? void 0 : a.snapshot
-              if (!s || Array.isArray(s)) {
-                var l = s ? (0, i.default)(s) : (0, i.default)(t)
-                ;(l[r] = n), this._cache.set(e, { kind: 'done', result: y(e, l, o) })
-              } else _(n.selector.node.name)
-            }
-          }),
-          e
-        )
-      })()
-      function _(e) {
-        c(!1)
-      }
-      function E(e) {
-        return new b(e)
-      }
-      var w = m ? new WeakMap() : new Map()
-      e.exports = {
-        createFragmentResource: E,
-        getFragmentResourceForEnvironment: function (e) {
-          var t = w.get(e)
-          if (t) return t
-          var n = E(e)
-          return w.set(e, n), n
-        },
-      }
     },
     YeSc: function (e, t, n) {
       'use strict'
@@ -24777,6 +24889,43 @@
         })
       }
     },
+    ZB2A: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return r
+      }),
+        n.d(t, 'b', function () {
+          return o
+        })
+      n('yH/f'), n('3voH'), n('mlET'), n('jQ3i'), n('x4t0')
+      var r = Object.freeze({
+          APP: 'app',
+          COMMUNITIES: 'communities',
+          COMMUNITY: 'community',
+          COMPOSE: 'compose',
+          EXPLORE: 'guide',
+          HOME: 'home',
+          MESSAGES: 'messages',
+          TWEET_DETAILS: 'tweet_details',
+        }),
+        o = function (e) {
+          return e.pathname.startsWith('/explore')
+            ? r.EXPLORE
+            : e.pathname.endsWith('/communities') &&
+              '/communities' !== e.pathname &&
+              !e.pathname.includes('/i/communities')
+            ? r.COMMUNITIES
+            : e.pathname.includes('/i/communities') || e.pathname.includes('community_feedback')
+            ? r.COMMUNITY
+            : e.pathname.includes('/compose')
+            ? r.COMPOSE
+            : e.pathname.includes('/messages')
+            ? r.MESSAGES
+            : e.pathname.includes('/home')
+            ? r.HOME
+            : 'app'
+        }
+    },
     ZFda: function (e, t, n) {
       'use strict'
       var r = n('1xkk'),
@@ -25131,173 +25280,6 @@
           }
         }),
       )
-    },
-    aQQo: function (e, t, n) {
-      'use strict'
-      var r = n('IGGJ')(n('yiKp')),
-        o = n('ERkP'),
-        i = n('I9iR'),
-        a = (n('/2Cm'), n('K1lQ')),
-        c = a.PreloadableQueryRegistry,
-        s = a.ReplaySubject,
-        l = a.createOperationDescriptor,
-        u = a.getRequest,
-        d = a.getRequestIdentifier,
-        f = a.Observable,
-        p = a.RelayFeatureFlags,
-        h = a.__internal.fetchQueryDeduped,
-        m = null,
-        v = 100001
-      e.exports = {
-        loadQuery: function (e, t, n, a, m) {
-          var g, y, b
-          null === (g = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) ||
-            void 0 === g ||
-            null === (y = g.ReactCurrentDispatcher) ||
-            void 0 === y ||
-            y.current,
-            v++
-          var _,
-            E,
-            w,
-            S,
-            C,
-            k,
-            T = null !== (b = null == a ? void 0 : a.fetchPolicy) && void 0 !== b ? b : 'store-or-network',
-            x = (0, r.default)((0, r.default)({}, null == a ? void 0 : a.networkCacheConfig), {}, { force: !0 }),
-            O = !1,
-            I = function (t, n) {
-              return (O = !0), e.executeWithSource({ operation: t, source: n })
-            },
-            R = new s(),
-            M = f.create(function (e) {
-              return R.subscribe(e)
-            }),
-            L = null,
-            P = !1,
-            A = function (t) {
-              var r
-              P = !0
-              var o = new s()
-              if (!0 === p.ENABLE_LOAD_QUERY_REQUEST_DEDUPING) {
-                var i = 'raw-network-request-' + d(t, n)
-                r = h(e, i, function () {
-                  return e.getNetwork().execute(t, n, x)
-                })
-              } else {
-                r = e.getNetwork().execute(t, n, x)
-              }
-              var a = r.subscribe({
-                error: function (e) {
-                  ;(L = e), o.error(e)
-                },
-                next: function (e) {
-                  o.next(e)
-                },
-                complete: function () {
-                  o.complete()
-                },
-              }).unsubscribe
-              return (
-                (E = a),
-                f.create(function (e) {
-                  var t = o.subscribe(e)
-                  return function () {
-                    t.unsubscribe(), E()
-                  }
-                })
-              )
-            },
-            D = function (t, n) {
-              !0 === p.ENABLE_LOAD_QUERY_REQUEST_DEDUPING && (P = !0)
-              var r = h(e, t.request.identifier, n).subscribe({
-                error: function (e) {
-                  R.error(e)
-                },
-                next: function (e) {
-                  R.next(e)
-                },
-                complete: function () {
-                  R.complete()
-                },
-              })
-              w = r.unsubscribe
-            },
-            F = function (t) {
-              var r = l(t, n, x)
-              ;((_ = e.retain(r)), 'store-only' !== T) &&
-                ('store-or-network' !== T || 'available' !== e.check(r).status) &&
-                D(r, function () {
-                  var e = A(t.params)
-                  return I(r, e)
-                })
-            }
-          if ('PreloadableConcreteRequest' === t.kind) {
-            null === (k = (S = t.params).id) && i(!1)
-            var B = c.get(k)
-            if (null != B) F(B)
-            else {
-              var j = 'store-only' === T ? null : A(S),
-                K = c.onLoad(k, function (t) {
-                  C()
-                  var r = l(t, n, x)
-                  ;(_ = e.retain(r)),
-                    null != j &&
-                      D(r, function () {
-                        return I(r, j)
-                      })
-                })
-              C = K.dispose
-            }
-          } else {
-            var N = u(t)
-            ;(k = null != (S = N.params).cacheID ? S.cacheID : S.id), F(N)
-          }
-          var z = !1,
-            H = !1,
-            U = !1,
-            V = function () {
-              H || (_ && _.dispose(), (H = !0))
-            },
-            W = function () {
-              U || (O ? w && w() : E && E(), C && C(), (U = !0))
-            }
-          return {
-            kind: 'PreloadedQuery',
-            environment: e,
-            environmentProviderOptions: m,
-            dispose: function () {
-              z || (V(), W(), (z = !0))
-            },
-            releaseQuery: V,
-            cancelNetworkRequest: W,
-            fetchKey: v,
-            id: k,
-            get isDisposed() {
-              return z || H
-            },
-            get networkError() {
-              return L
-            },
-            name: S.name,
-            networkCacheConfig: x,
-            fetchPolicy: T,
-            source: P ? M : void 0,
-            variables: n,
-          }
-        },
-        useTrackLoadQueryInRender: function () {
-          var e, t
-          null === m &&
-            (m =
-              null === (e = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) ||
-              void 0 === e ||
-              null === (t = e.ReactCurrentDispatcher) ||
-              void 0 === t
-                ? void 0
-                : t.current)
-        },
-      }
     },
     akpX: function (e, t, n) {
       'use strict'
@@ -25707,6 +25689,54 @@
           })
         })
       t.a = S
+    },
+    cOV6: function (e, t, n) {
+      'use strict'
+      var r = n('+6Cn').getFragmentResourceForEnvironment,
+        o = n('PJTX'),
+        i = n('ERkP'),
+        a = i.useEffect,
+        c = i.useRef,
+        s = i.useState,
+        l = n('e1/f').getFragmentIdentifier
+      n('/2Cm')
+      e.exports = function (e, t, n) {
+        var i = o(),
+          u = r(i),
+          d = c(!1),
+          f = s(0)[1],
+          p = l(e, t),
+          h = u.readWithIdentifier(e, t, p, n),
+          m = c(!0)
+        function v() {
+          !1 !== d.current &&
+            !1 !== m.current &&
+            f(function (e) {
+              return e + 1
+            })
+        }
+        return (
+          a(
+            function () {
+              d.current = !0
+              var e = u.subscribe(h, v)
+              return function () {
+                ;(d.current = !1), e.dispose()
+              }
+            },
+            [i, p],
+          ),
+          {
+            data: h.data,
+            disableStoreUpdates: function () {
+              m.current = !1
+            },
+            enableStoreUpdates: function () {
+              ;(m.current = !0), u.checkMissedUpdates(h)[0] && v()
+            },
+          }
+        )
+      }
     },
     cQcL: function (e, t, n) {
       'use strict'
@@ -26907,7 +26937,7 @@
     'ezF+': function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return Je
+        return Qe
       }),
         n.d(t, 'e', function () {
           return $e
@@ -27017,8 +27047,8 @@
         X = function () {
           return {}
         },
-        Q = [],
-        J = function (e, t) {
+        J = [],
+        Q = function (e, t) {
           var n,
             r,
             o = t.config,
@@ -27030,7 +27060,7 @@
               null === (r = n.feedbackInfo) ||
               void 0 === r
                 ? void 0
-                : r.feedbackKeys) || Q,
+                : r.feedbackKeys) || J,
             s = a.selectFeedbackActions(e, t)
           return Object(j.a)(c, function (e) {
             return s[e] ? e : (Object(V.a)('Feedback key has no backing action '.concat(e)), null)
@@ -27038,7 +27068,7 @@
         },
         Z = function (e, t) {
           var n = t.module.selectFeedbackActions(e, t)
-          return J(e, t).map(function (e) {
+          return Q(e, t).map(function (e) {
             return n[e]
           })
         },
@@ -27102,7 +27132,7 @@
               i = Object(z.a)(te, function (e) {
                 return e
               }),
-              a = Object(z.a)(J, Z, function (e, t) {
+              a = Object(z.a)(Q, Z, function (e, t) {
                 return t.map(function (t, n) {
                   return o()(o()({}, t), {}, { feedbackKey: e[n] })
                 })
@@ -27751,8 +27781,8 @@
         qe = n('FgXs'),
         Ye = n('VPAj'),
         Xe = ['divider', 'shouldDisplayBorder', 'isClickable', 'isFocusable', 'isEmpty', 'injectProps'],
-        Qe = ['divider', 'shouldDisplayBorder', 'isClickable', 'isFocusable', 'isEmpty'],
-        Je = function (e) {
+        Je = ['divider', 'shouldDisplayBorder', 'isClickable', 'isFocusable', 'isEmpty'],
+        Qe = function (e) {
           var t = e.handlers,
             n = e.injectProps
           return {
@@ -27821,7 +27851,7 @@
             c = e.isFocusable,
             s = void 0 === c ? ot : c,
             l = e.isEmpty,
-            d = a()(e, Qe)
+            d = a()(e, Je)
           return {
             render: y(
               function (e, t) {
@@ -28017,11 +28047,11 @@
         X = function (e, t) {
           return !!t.module.selectInitialFetchStatus(e)
         },
-        Q = function (e, t) {
+        J = function (e, t) {
           var n = t.module
           return t.newTweetsPillMode === O.a.CLIENT ? n.selectTopUnreadCount(e) : 0
         },
-        J = function (e, t) {
+        Q = function (e, t) {
           var n = t.module
           return t.pollingIntervalMsOverride || n.selectPollingIntervalMs(e)
         },
@@ -28044,12 +28074,12 @@
               initialFetchStatus: K,
               isRestrictedSession: R.o,
               pinnedEntry: G,
-              pollingIntervalMs: J,
+              pollingIntervalMs: Q,
               previewEntries: j,
               timelineExist: X,
               timelineId: U,
               topFetchStatus: z,
-              topUnseenCount: Q,
+              topUnseenCount: J,
               unavailableReason: V,
               wasAtleastOneEntryHoisted: $,
             }
@@ -29542,6 +29572,71 @@
         )
       }
     },
+    h2Du: function (e, t, n) {
+      'use strict'
+      var r = n('UXBi'),
+        o = n('wtyv'),
+        i = o.getQueryCacheIdentifier,
+        a = o.getQueryResourceForEnvironment,
+        c = n('xT1p'),
+        s = n('cOV6'),
+        l = n('PJTX'),
+        u = n('ERkP'),
+        d = u.useContext,
+        f = u.useEffect,
+        p = u.useState,
+        h = u.useRef
+      e.exports = function (e) {
+        var t = e.query,
+          n = e.componentDisplayName,
+          o = e.fetchObservable,
+          u = e.fetchPolicy,
+          m = e.fetchKey,
+          v = e.renderPolicy,
+          g = l(),
+          y = d(r),
+          b = a(g),
+          _ = p(0),
+          E = _[0],
+          w = _[1],
+          S = c(),
+          C = S.startFetch,
+          k = S.completeFetch,
+          T = ''.concat(E, '-').concat(null != m ? m : ''),
+          x = i(g, t, u, v, T),
+          O = y.wrapPrepareQueryResource(function () {
+            return b.prepareWithIdentifier(x, t, o, u, v, { start: C, complete: k, error: k }, y)
+          }),
+          I = h(!1)
+        f(function () {
+          return function () {
+            I.current = !0
+          }
+        }, []),
+          f(
+            function () {
+              if (!0 === I.current)
+                return (
+                  (I.current = !1),
+                  void w(function (e) {
+                    return e + 1
+                  })
+                )
+              var e = b.retain(O, y)
+              return function () {
+                e.dispose()
+              }
+            },
+            [g, x],
+          ),
+          f(function () {
+            b.releaseTemporaryRetain(O)
+          })
+        var R = O.fragmentNode,
+          M = O.fragmentRef
+        return s(R, M, n).data
+      }
+    },
     hDHP: function (e, t, n) {
       'use strict'
       var r = n('n1lM'),
@@ -30099,7 +30194,7 @@
                       G = [q.alignLeft],
                       Y = E ? U : W,
                       X = E ? V : G,
-                      Q = Object.assign(
+                      J = Object.assign(
                         {},
                         a()(
                           a()(a()({}, H), Y),
@@ -30113,8 +30208,8 @@
                           },
                         ),
                       ),
-                      J = E ? j : 'input'
-                    return Object(K.a)(J, Q)
+                      Q = E ? j : 'input'
+                    return Object(K.a)(Q, J)
                   },
                 },
                 {
@@ -30490,18 +30585,6 @@
           )
         })(h.a.Component)
       f()(w, 'contextType', _.a), f()(w, 'defaultProps', { displayBlocked: !1 }), (t.default = w)
-    },
-    jAXQ: function (e, t, n) {
-      'use strict'
-      var r = n('Vt13'),
-        o = n('V78V'),
-        i = n('aQQo').useTrackLoadQueryInRender,
-        a = (n('ERkP').useDebugValue, n('K1lQ').getFragment)
-      e.exports = function (e, t) {
-        i()
-        var n = a(e)
-        return o(n, 'first argument of useFragment()'), r(n, t, 'useFragment()').data
-      }
     },
     jPSd: function (e, t) {
       ;(function (t) {
@@ -31677,34 +31760,6 @@
         getPunctuation: function () {
           return '[.,+*?$|#{}()\'\\^\\-\\[\\]\\\\\\/!@%"~=<>_:;・、。〈-】〔-〟：-？！-／［-｀｛-･⸮؟٪-٬؛،؍﴾﴿᠁।၊။‐-‧‰-⁞¡-±´-¸º»¿]'
         },
-      }
-    },
-    lU4h: function (e, t, n) {
-      'use strict'
-      var r = n('ERkP'),
-        o = n('njtZ'),
-        i = r.useMemo,
-        a = r.useRef,
-        c = r.useState
-      e.exports = function (e) {
-        var t,
-          n,
-          r = a(0),
-          s = c(e),
-          l = s[0],
-          u = s[1]
-        return (
-          o(e, l) || ((r.current = (null !== (n = r.current) && void 0 !== n ? n : 0) + 1), u(e)),
-          [
-            i(
-              function () {
-                return e
-              },
-              [r.current],
-            ),
-            null !== (t = r.current) && void 0 !== t ? t : 0,
-          ]
-        )
       }
     },
     laB8: function (e, t, n) {
@@ -34849,8 +34904,8 @@
         q = R.a.df4c86bf,
         Y = R.a.bba40ffa,
         X = R.a.f558829d,
-        Q = R.a.a6941096,
-        J = R.a.j24c37b2,
+        J = R.a.a6941096,
+        Q = R.a.j24c37b2,
         Z = R.a.if8cd2a3,
         $ = R.a.b597226f,
         ee = (function (e) {
@@ -34948,7 +35003,7 @@
                       }),
                       v()(e, b.a.CannotFollowFromCountry, {
                         customAction: function () {
-                          t.setState({ showDialog: !0, dialogText: Q, dialogHeadline: Y })
+                          t.setState({ showDialog: !0, dialogText: J, dialogHeadline: Y })
                         },
                       }),
                       v()(e, b.a.BirthdateRequired, {
@@ -34986,7 +35041,7 @@
                       null,
                       d
                         ? y.a.createElement(V.a, {
-                            confirmButtonLabel: J,
+                            confirmButtonLabel: Q,
                             headline: l,
                             onCancel: this._handleClose,
                             onConfirm: this._handleClose,
@@ -35692,13 +35747,13 @@
         q = 'share',
         Y = n('97Jx'),
         X = n.n(Y),
-        Q = n('ddV6'),
-        J = n.n(Q),
+        J = n('ddV6'),
+        Q = n.n(J),
         Z = n('eb3s'),
         $ = function (e) {
           return function (t) {
             var n = v.a.useState(null),
-              r = J()(n, 2),
+              r = Q()(n, 2),
               o = r[0],
               i = r[1]
             if (o) {
@@ -36081,8 +36136,8 @@
         qe = P.a.f88553c8,
         Ye = P.a.e6b88aba,
         Xe = P.a.c6ea308b,
-        Qe = P.a.c1eb0fe5,
-        Je = P.a.c32a3d02,
+        Je = P.a.c1eb0fe5,
+        Qe = P.a.c32a3d02,
         Ze = P.a.badf3f34,
         $e = (function (e) {
           u()(n, e)
@@ -36226,7 +36281,7 @@
                   o = Object(ce.a)('https://twitter.com/'.concat(r.screen_name), n),
                   i = {
                     title: Xe({ fullName: r.name, screenName: r.screen_name }),
-                    text: Qe({ fullName: r.name, bio: r.description }),
+                    text: Je({ fullName: r.name, bio: r.description }),
                     url: o,
                   }
                 window.navigator.share &&
@@ -36254,7 +36309,7 @@
                   o = t.removeFollower,
                   i = t.user
                 o(i.id_str).then(function () {
-                  n({ text: Je({ screenName: i.screen_name }) })
+                  n({ text: Qe({ screenName: i.screen_name }) })
                 }, r(se)),
                   e._scribeAction('remove_follower')
               }),
@@ -37000,6 +37055,278 @@
         }),
       )
     },
+    wtyv: function (e, t, n) {
+      'use strict'
+      var r = n('IGGJ'),
+        o = r(n('yiKp')),
+        i = r(n('KEM+')),
+        a = n('D/x4'),
+        c = n('Xzr5'),
+        s = n('I9iR'),
+        l = n('e1/f').isPromise,
+        u = (n('/2Cm'), 'store-or-network'),
+        d = 'function' == typeof WeakMap
+      function f(e) {
+        return void 0 !== e.request.node.params.metadata.live
+      }
+      function p(e, t, n, r, o) {
+        var i = null != n ? n : u,
+          a = null != r ? r : e.UNSTABLE_getDefaultRenderPolicy(),
+          c = ''.concat(i, '-').concat(a, '-').concat(t.request.identifier)
+        return null != o ? ''.concat(c, '-').concat(o) : c
+      }
+      function h(e, t) {
+        var n = {
+          __id: e.fragment.dataID,
+          __fragments: (0, i.default)({}, e.fragment.node.name, e.request.variables),
+          __fragmentOwner: e.request,
+        }
+        return { cacheIdentifier: t, fragmentNode: e.request.node.fragment, fragmentRef: n, operation: e }
+      }
+      var m = 2e5
+      function v(e, t, n, r, o, i) {
+        var a = f(t),
+          s = r,
+          l = o,
+          u = new c(function (e) {
+            var n = e.retain(t)
+            return {
+              dispose: function () {
+                a && null != l && l.unsubscribe(), n.dispose(), i(d)
+              },
+            }
+          }),
+          d = {
+            cacheIdentifier: e,
+            id: m++,
+            processedPayloadsCount: 0,
+            operationAvailability: n,
+            getValue: function () {
+              return s
+            },
+            setValue: function (e) {
+              s = e
+            },
+            setNetworkSubscription: function (e) {
+              a && null != l && l.unsubscribe(), (l = e)
+            },
+            temporaryRetain: function (e) {
+              return u.temporaryRetain(e)
+            },
+            permanentRetain: function (e) {
+              return u.permanentRetain(e)
+            },
+            releaseTemporaryRetain: function () {
+              u.releaseTemporaryRetain()
+            },
+          }
+        return d
+      }
+      var g = (function () {
+        function e(e) {
+          var t = this
+          ;(0, i.default)(this, '_clearCacheEntry', function (e) {
+            t._cache.delete(e.cacheIdentifier)
+          }),
+            (this._environment = e),
+            (this._cache = a.create(1e3))
+        }
+        var t = e.prototype
+        return (
+          (t.prepare = function (e, t, n, r, o, i, a) {
+            var c = p(this._environment, e, n, r, i)
+            return this.prepareWithIdentifier(c, e, t, n, r, o, a)
+          }),
+          (t.prepareWithIdentifier = function (e, t, n, r, i, a, c) {
+            var s = this._environment,
+              d = null != r ? r : u,
+              f = null != i ? i : s.UNSTABLE_getDefaultRenderPolicy(),
+              p = this._cache.get(e),
+              h = null,
+              m = null != p
+            null == p &&
+              (p = this._fetchAndSaveQuery(
+                e,
+                t,
+                n,
+                d,
+                f,
+                c,
+                (0, o.default)(
+                  (0, o.default)({}, a),
+                  {},
+                  {
+                    unsubscribe: function (e) {
+                      null != h && h.dispose()
+                      var t = null == a ? void 0 : a.unsubscribe
+                      t && t(e)
+                    },
+                  },
+                ),
+              )),
+              (h = p.temporaryRetain(s))
+            var v = p.getValue()
+            if (l(v))
+              throw (
+                (s.__log({
+                  name: 'suspense.query',
+                  fetchPolicy: d,
+                  isPromiseCached: m,
+                  operation: t,
+                  queryAvailability: p.operationAvailability,
+                  renderPolicy: f,
+                }),
+                v)
+              )
+            if (v instanceof Error) throw v
+            return v
+          }),
+          (t.retain = function (e, t) {
+            var n = this._environment,
+              r = e.cacheIdentifier,
+              o = e.operation,
+              i = this._getOrCreateCacheEntry(r, o, null, e, null),
+              a = i.permanentRetain(n)
+            return (
+              n.__log({ name: 'queryresource.retain', profilerContext: t, resourceID: i.id }),
+              {
+                dispose: function () {
+                  a.dispose()
+                },
+              }
+            )
+          }),
+          (t.releaseTemporaryRetain = function (e) {
+            var t = this._cache.get(e.cacheIdentifier)
+            null != t && t.releaseTemporaryRetain()
+          }),
+          (t.TESTS_ONLY__getCacheEntry = function (e, t, n, r) {
+            var o = p(this._environment, e, t, n, r)
+            return this._cache.get(o)
+          }),
+          (t._getOrCreateCacheEntry = function (e, t, n, r, o) {
+            var i = this._cache.get(e)
+            return null == i && ((i = v(e, t, n, r, o, this._clearCacheEntry)), this._cache.set(e, i)), i
+          }),
+          (t._fetchAndSaveQuery = function (e, t, n, r, i, a, c) {
+            var l,
+              u,
+              d = this,
+              p = this._environment,
+              m = p.check(t),
+              g = m.status,
+              y = 'available' === g,
+              b = y || ('partial' === i && 'stale' !== g),
+              _ = function () {}
+            switch (r) {
+              case 'store-only':
+                ;(l = !1), (u = !0)
+                break
+              case 'store-or-network':
+                ;(l = !y), (u = b)
+                break
+              case 'store-and-network':
+                ;(l = !0), (u = b)
+                break
+              case 'network-only':
+              default:
+                ;(l = !0), (u = !1)
+            }
+            if (u) {
+              var E = h(t, e),
+                w = v(e, t, m, E, null, this._clearCacheEntry)
+              this._cache.set(e, w)
+            }
+            if (l) {
+              var S,
+                C = h(t, e)
+              n.subscribe({
+                start: function (n) {
+                  S = n
+                  var r = d._cache.get(e)
+                  r && r.setNetworkSubscription(S)
+                  var i = null == c ? void 0 : c.start
+                  i &&
+                    i(
+                      (0, o.default)(
+                        (0, o.default)({}, n),
+                        {},
+                        {
+                          unsubscribe: function () {
+                            f(t) && n.unsubscribe()
+                          },
+                        },
+                      ),
+                    )
+                },
+                next: function () {
+                  var n = d._getOrCreateCacheEntry(e, t, m, C, S)
+                  ;(n.processedPayloadsCount += 1), n.setValue(C), _()
+                  var r = null == c ? void 0 : c.next
+                  null != r && r(p.lookup(t.fragment))
+                },
+                error: function (n) {
+                  var r = d._getOrCreateCacheEntry(e, t, m, n, S)
+                  0 === r.processedPayloadsCount && r.setValue(n), _(), (S = null), r.setNetworkSubscription(null)
+                  var o = null == c ? void 0 : c.error
+                  o && o(n)
+                },
+                complete: function () {
+                  _(), (S = null)
+                  var t = d._cache.get(e)
+                  t && t.setNetworkSubscription(null)
+                  var n = null == c ? void 0 : c.complete
+                  n && n()
+                },
+                unsubscribe: null == c ? void 0 : c.unsubscribe,
+              })
+              var k = this._cache.get(e)
+              if (!k) {
+                var T = new Promise(function (e) {
+                  _ = e
+                })
+                ;(T.displayName = 'Relay(' + t.fragment.node.name + ')'),
+                  (k = v(e, t, m, T, S, this._clearCacheEntry)),
+                  this._cache.set(e, k)
+              }
+            } else {
+              var x = null == c ? void 0 : c.complete
+              x && x()
+            }
+            var O = this._cache.get(e)
+            return (
+              null == O && s(!1),
+              p.__log({
+                name: 'queryresource.fetch',
+                resourceID: O.id,
+                operation: t,
+                profilerContext: a,
+                fetchPolicy: r,
+                renderPolicy: i,
+                queryAvailability: m,
+                shouldFetch: l,
+              }),
+              O
+            )
+          }),
+          e
+        )
+      })()
+      function y(e) {
+        return new g(e)
+      }
+      var b = d ? new WeakMap() : new Map()
+      e.exports = {
+        createQueryResource: y,
+        getQueryResourceForEnvironment: function (e) {
+          var t = b.get(e)
+          if (t) return t
+          var n = y(e)
+          return b.set(e, n), n
+        },
+        getQueryCacheIdentifier: p,
+      }
+    },
     wu3P: function (e, t, n) {
       'use strict'
       e.exports = function (e, t, n) {
@@ -37387,6 +37714,35 @@
         h = { contextType: s.a.Pin, text: '' },
         m = a.a.createContext(void 0)
     },
+    xT1p: function (e, t, n) {
+      'use strict'
+      var r = n('ERkP'),
+        o = r.useCallback,
+        i = r.useEffect,
+        a = r.useRef
+      e.exports = function () {
+        var e = a(null),
+          t = a(!1),
+          n = o(function () {
+            null != e.current && (e.current.unsubscribe(), (e.current = null)), (t.current = !1)
+          }, []),
+          r = o(function (n) {
+            ;(e.current = n), (t.current = !0)
+          }, []),
+          c = o(function () {
+            ;(e.current = null), (t.current = !1)
+          }, [])
+        return (
+          i(
+            function () {
+              return n
+            },
+            [n],
+          ),
+          { isFetchingRef: t, startFetch: r, disposeFetch: n, completeFetch: c }
+        )
+      }
+    },
     xWpm: function (e, t, n) {
       'use strict'
       n.d(t, 'f', function () {
@@ -37518,7 +37874,7 @@
           return W
         }),
         n.d(t, 'l', function () {
-          return J
+          return Q
         }),
         n.d(t, 'g', function () {
           return Z
@@ -37980,7 +38336,7 @@
                               var c = Object(u.b)('fetchFundingInstrumentsForAccount', Y(i)(a.id)).then(function (e) {
                                   n(Object(h.I)(e)), n(Object(h.P)(e[0] || null))
                                 }),
-                                s = Object(u.b)('fetchVatInfoForAccount', Q(i)(a.id)).then(function (e) {
+                                s = Object(u.b)('fetchVatInfoForAccount', J(i)(a.id)).then(function (e) {
                                   n(Object(h.V)(e))
                                 }),
                                 l = Object(u.b)('fetchCampaignsForAccount', X(i)(a.id)).then(function (e) {
@@ -37997,7 +38353,7 @@
                             var r = Object(u.b)('fetchFundingInstrumentsForAccount', Y(i)(t.id)).then(function (e) {
                                 n(Object(h.I)(e)), n(Object(h.P)(e[0] || null))
                               }),
-                              o = Object(u.b)('fetchVatInfoForAccount', Q(i)(t.id)).then(function (e) {
+                              o = Object(u.b)('fetchVatInfoForAccount', J(i)(t.id)).then(function (e) {
                                 n(Object(h.V)(e))
                               }),
                               a = Object(u.b)('fetchCampaignsForAccount', X(i)(t.id)).then(function (e) {
@@ -38075,14 +38431,14 @@
             return e.AaProxy.getCampaigns(t, { q: 'Quick promote', count: 1 })
           }
         },
-        Q = function (e) {
+        J = function (e) {
           return function (t) {
             return e.AaProxy.getVatInfo(t).catch(function () {
               return null
             })
           }
         },
-        J = function (e) {
+        Q = function (e) {
           return function (t, n) {
             t(Object(h.U)(e))
             var r = Object(D.p)(n())
@@ -38273,25 +38629,6 @@
             )
           }
         }
-    },
-    yLYC: function (e, t, n) {
-      'use strict'
-      var r = n('ERkP'),
-        o = n('lU4h'),
-        i = n('K1lQ'),
-        a = i.createOperationDescriptor,
-        c = i.getRequest,
-        s = r.useMemo
-      e.exports = function (e, t, n) {
-        var r = o(t)[0],
-          i = o(n || {})[0]
-        return s(
-          function () {
-            return a(c(e), r, i)
-          },
-          [e, r, i],
-        )
-      }
     },
     yZDr: function (e, t, n) {
       'use strict'

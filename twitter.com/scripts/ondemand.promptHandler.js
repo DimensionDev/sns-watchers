@@ -357,9 +357,9 @@
                       {
                         accessibilityRole: 'heading',
                         align: 'left',
-                        size: 'title4',
+                        size: 'title3',
                         style: L.flexGrow,
-                        weight: 'bold',
+                        weight: 'heavy',
                         withHashflags: !0,
                       },
                       t,

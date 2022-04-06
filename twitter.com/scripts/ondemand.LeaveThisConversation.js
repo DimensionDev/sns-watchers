@@ -52,8 +52,8 @@
         h = n.n(p),
         g = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
         f = n.n(g),
-        b = n('TIdA'),
-        y = n('t62R'),
+        y = n('TIdA'),
+        b = n('t62R'),
         E = n('A91F'),
         w = n('/yvb'),
         v = n('rHpw'),
@@ -72,7 +72,7 @@
             return (
               (e = t.call.apply(t, [this].concat(i))),
               h()(l()(e), '_renderImage', function (e, t) {
-                var n = f.a.createElement(b.a, {
+                var n = f.a.createElement(y.a, {
                   accessibilityLabel: '',
                   aspectMode: E.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
@@ -95,13 +95,13 @@
                 var t = e.props.headline
                 return t
                   ? f.a.createElement(
-                      y.b,
+                      b.b,
                       {
                         accessibilityRole: 'heading',
                         align: 'left',
-                        size: 'title4',
+                        size: 'title3',
                         style: L.flexGrow,
-                        weight: 'bold',
+                        weight: 'heavy',
                         withHashflags: !0,
                       },
                       t,
@@ -112,7 +112,7 @@
                 var t = e.props.subtext
                 return t
                   ? f.a.createElement(
-                      y.b,
+                      b.b,
                       { align: 'left', color: 'gray700', style: e.styles.body, withHashflags: !0 },
                       t,
                     )
@@ -268,8 +268,8 @@
             { uri: p, width: 1800, height: 525 },
           ],
         },
-        b = n('Irs7'),
-        y = n('MWbm'),
+        y = n('Irs7'),
+        b = n('MWbm'),
         E = n('PnKw'),
         w = n('t62R'),
         v = n('rHpw'),
@@ -299,7 +299,7 @@
           a = r()(n, 2),
           i = a[0],
           l = a[1],
-          s = Object(b.b)()
+          s = Object(y.b)()
         o.a.useEffect(
           function () {
             s.scribe({ element: C, action: 'impression' })
@@ -324,7 +324,7 @@
               },
             }),
           o.a.createElement(
-            y.a,
+            b.a,
             { style: P.wrapper },
             o.a.createElement(E.a, {
               headline: x,
@@ -462,8 +462,8 @@
           )
         }
       f.metadata = { width: 24, height: 24 }
-      var b = f,
-        y = n('pu5c'),
+      var y = f,
+        b = n('pu5c'),
         E = n('IpT4'),
         w = o.a.aed79c53,
         v = o.a.h12044a3,
@@ -483,14 +483,14 @@
             r.a.createElement(
               l.a,
               { style: T.details },
-              r.a.createElement(b, { style: T.icon }),
+              r.a.createElement(y, { style: T.icon }),
               r.a.createElement(
                 l.a,
                 null,
                 r.a.createElement(s.b, { style: T.title }, C),
                 r.a.createElement(s.b, null, k),
               ),
-              r.a.createElement(y.a, { style: T.icon }),
+              r.a.createElement(b.a, { style: T.icon }),
               r.a.createElement(
                 l.a,
                 null,

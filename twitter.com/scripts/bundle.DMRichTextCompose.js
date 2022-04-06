@@ -14,27 +14,27 @@
       var a,
         r = n('zh9S'),
         i = n('ERkP'),
-        o = n.n(i),
-        l = n('i4Oy'),
+        l = n.n(i),
+        o = n('i4Oy'),
         s = n('yiKp'),
         c = n.n(s),
-        u = (n('lTEL'), n('7x/C'), n('kYxP'), n('wFPu'), n('mw9i')),
-        d = n('4AMG'),
+        d = (n('lTEL'), n('7x/C'), n('kYxP'), n('wFPu'), n('mw9i')),
+        u = n('4AMG'),
         p = n('h3MB'),
-        m = (n('enFi'), n('NjAB')),
-        f = n('Fr3L'),
-        h = n('sl05'),
-        g = n('s8G+'),
+        m = (n('YWiL'), n('NjAB')),
+        g = n('Fr3L'),
+        f = n('sl05'),
+        h = n('s8G+'),
         v = n('DQzJ'),
         y = void 0 !== a ? a : (a = n('GjeS')),
-        b = { context: 'DM_CONVERSATION_METADATA' }
-      function _(e) {
+        _ = { context: 'DM_CONVERSATION_METADATA' }
+      function b(e) {
         var t = e.conversation,
           n = e.isWide,
           a = e.perspective,
-          r = Object(g.a)('rito_safety_mode_blocked_profile_enabled'),
-          i = Object(g.a)('super_follow_user_api_enabled'),
-          l = (function (e, t) {
+          r = Object(h.a)('rito_safety_mode_blocked_profile_enabled'),
+          i = Object(h.a)('super_follow_user_api_enabled'),
+          o = (function (e, t) {
             var n,
               a,
               r =
@@ -47,45 +47,45 @@
                   : a.items
             if (!r || !r.length) return null
             var i = Object(m.b)(r, [p.b]).entities.entries,
-              o = []
-            for (var l in i) o.push(i[l])
-            return o.reverse(), c()(c()({}, e), {}, { entries: o, social_proof: [] })
+              l = []
+            for (var o in i) l.push(i[o])
+            return l.reverse(), c()(c()({}, e), {}, { entries: l, social_proof: [] })
           })(
             t,
             Object(v.a)(y, { id: t.conversation_id || '', withSafetyModeUserFields: r, withSuperFollowsUserFields: i })
               .data,
           )
-        return o.a.useCallback(
+        return l.a.useCallback(
           function (e) {
-            return l
-              ? o.a.createElement(
-                  u.a,
-                  { style: h.a.root },
-                  o.a.createElement(d.a, {
-                    conversation: l,
+            return o
+              ? l.a.createElement(
+                  d.a,
+                  { style: f.a.root },
+                  l.a.createElement(u.a, {
+                    conversation: o,
                     inboxType: 'primary',
                     isWide: n,
                     onHistoryRequest: function () {},
                     perspective: a,
                     scribeNamespace: {},
-                    style: h.a.activity,
+                    style: f.a.activity,
                   }),
                 )
               : null
           },
-          [l, n, a],
+          [o, n, a],
         )(e)
       }
       function k(e) {
-        return o.a.createElement(f.a, { errorConfig: b }, o.a.createElement(_, e))
+        return l.a.createElement(g.a, { errorConfig: _ }, l.a.createElement(b, e))
       }
       var S,
         C = n('qBaR'),
         E = n('RqPI'),
         T = n('z2Pn'),
         w = n('rHpw'),
-        x = n('pNZL'),
-        R = n('IAZG'),
+        R = n('pNZL'),
+        x = n('IAZG'),
         F = n('uDfI'),
         A = n('zCf4'),
         I = { page: 'messages', section: 'thread' },
@@ -97,35 +97,35 @@
           a = Object(A.f)(),
           i = Object(A.g)(),
           s = Object(A.h)().conversationId,
-          c = Object(R.a)(O, { id: s || '' })
-        o.a.useEffect(function () {
-          r.scribePageImpression(I), r.googleAnalyticsPageView(I), Object(x.b)(I)
+          c = Object(x.a)(O, { id: s || '' })
+        l.a.useEffect(function () {
+          r.scribePageImpression(I), r.googleAnalyticsPageView(I), Object(R.b)(I)
         }, []),
-          o.a.useEffect(
+          l.a.useEffect(
             function () {
               Object(T.h)(i.pathname)
             },
             [i.pathname],
           )
-        var u = 'string' == typeof i.query.text ? i.query.text : void 0,
-          d = l.a.get('window').width >= w.a.theme.breakpoints.small,
-          f = Object(F.d)(E.r) || '',
-          h = (function (e) {
+        var d = 'string' == typeof i.query.text ? i.query.text : void 0,
+          u = o.a.get('window').width >= w.a.theme.breakpoints.small,
+          g = Object(F.d)(E.r) || '',
+          f = (function (e) {
             if (!e) return null
             var t = Object(m.b)([e.dm_conversation_by_rest_id], [p.a]).entities.conversations
             for (var n in t) return t[n]
             return null
           })(c)
-        return h && h.conversation_id
-          ? o.a.createElement(
+        return f && f.conversation_id
+          ? l.a.createElement(
               C.a,
-              { conversation: h, conversationId: h.conversation_id, newConversationParticipants: [], perspective: f },
-              o.a.createElement(k, {
-                conversation: h,
+              { conversation: f, conversationId: f.conversation_id, newConversationParticipants: [], perspective: g },
+              l.a.createElement(k, {
+                conversation: f,
                 history: a,
-                isWide: d,
-                perspective: f,
-                prefillText: u,
+                isWide: u,
+                perspective: g,
+                prefillText: d,
                 richTextInputContext: t,
                 typeaheadWrapper: n,
               }),
@@ -133,7 +133,7 @@
           : null
       }
       function D(e) {
-        return o.a.createElement(f.a, { errorConfig: M }, o.a.createElement(L, e))
+        return l.a.createElement(g.a, { errorConfig: M }, l.a.createElement(L, e))
       }
     },
     '07FG': function (e, t, n) {
@@ -149,7 +149,7 @@
     '33Kz': function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return l
+        return o
       }),
         n.d(t, 'a', function () {
           return s
@@ -167,13 +167,13 @@
           function (e) {
             return e.getArrayValue('dm_reactions_config_active_reactions')
           }),
-        o = function (e) {
+        l = function (e) {
           var t = e.getArrayValue('dm_reactions_config_inactive_reactions'),
             n = i(e)
           return [].concat(r()(n), r()(t))
         },
-        l = function (e, t) {
-          var n = o(t).find(function (t) {
+        o = function (e, t) {
+          var n = l(t).find(function (t) {
             return t.endsWith(e)
           })
           if (n) return n.split(':')[0]
@@ -181,7 +181,7 @@
         s = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { includeInactive: !1 }
           return t.includeInactive
-            ? o(e).map(function (e) {
+            ? l(e).map(function (e) {
                 return e.split(':')[1]
               })
             : i(e).map(function (e) {
@@ -194,8 +194,8 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('7n04'),
-        o = r()(r()({}, i.a), {}, { pinToNewestWhenAtNewest: !0 })
-      t.a = o
+        l = r()(r()({}, i.a), {}, { pinToNewestWhenAtNewest: !0 })
+      t.a = l
     },
     '4AMG': function (e, t, n) {
       'use strict'
@@ -205,31 +205,31 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('ejT/')),
-        g = n('ERkP'),
-        v = n.n(g),
+        g = n.n(m),
+        f = (n('2G9S'), n('ejT/')),
+        h = n('ERkP'),
+        v = n.n(h),
         y = (n('lTEL'), n('7x/C'), n('kYxP'), n('M+/F'), n('KOtZ'), n('gbD7')),
-        b = n('X/yg'),
-        _ = (n('Blm6'), n('b9JY')),
+        _ = n('X/yg'),
+        b = (n('Blm6'), n('b9JY')),
         k = function (e, t) {
-          if (e && e.message_data && t && t.message_data && Object(_.b)(e) && Object(_.b)(t)) {
+          if (e && e.message_data && t && t.message_data && Object(b.b)(e) && Object(b.b)(t)) {
             var n = e.message_data,
               a = n.sender_id,
               r = n.time,
               i = t.message_data,
-              o = i.sender_id,
-              l = i.time,
-              s = parseInt(l, 10) - parseInt(r, 10)
-            return a === o && s >= 0 && s <= 6e4
+              l = i.sender_id,
+              o = i.time,
+              s = parseInt(o, 10) - parseInt(r, 10)
+            return a === l && s >= 0 && s <= 6e4
           }
           return !1
         },
@@ -238,8 +238,8 @@
         E = (n('1t7P'), n('jQ/y'), n('z84I'), n('ho0z'), n('uFXj'), n('v6aA')),
         T = n('XnpN'),
         w = n('LhSm'),
-        x = n('I4+6'),
-        R = n('rHpw'),
+        R = n('I4+6'),
+        x = n('rHpw'),
         F = n('PbQQ'),
         A = n('cm6r'),
         I = n('jV+4'),
@@ -264,7 +264,7 @@
             userIsVerified: a && a.verified,
           }
         },
-        D = R.a.create(function (e) {
+        D = x.a.create(function (e) {
           return {
             root: {
               flexDirection: 'column',
@@ -290,57 +290,57 @@
             r = v.a.useContext(E.a).loggedInUserId
           if (!t) return null
           var i = L(t, r || ''),
-            o = i.userDescription,
-            l = i.userEntities,
+            l = i.userDescription,
+            o = i.userEntities,
             s = i.userFollowerCount,
             c = i.userFriendsCount,
-            u = i.userIdStr,
-            d = i.userIsVerified,
+            d = i.userIdStr,
+            u = i.userIsVerified,
             p = i.userJoinDate,
             m = i.userName,
-            f = i.userScreenName,
-            h = i.userWithheldDescription,
-            g = i.userWithheldEntities,
-            y = !!(m && f && ((s && c) || p)),
-            b = x.a.generate({
-              color: R.a.theme.colors.text,
-              backgroundColor: R.a.theme.colors.transparent,
-              customFocusBackgroundColor: R.a.theme.colors.gray0,
-              customHoverBackgroundColor: R.a.theme.colors.gray0,
-              customPressedBackgroundColor: R.a.theme.colors.activeFaintGray,
+            g = i.userScreenName,
+            f = i.userWithheldDescription,
+            h = i.userWithheldEntities,
+            y = !!(m && g && ((s && c) || p)),
+            _ = R.a.generate({
+              color: x.a.theme.colors.text,
+              backgroundColor: x.a.theme.colors.transparent,
+              customFocusBackgroundColor: x.a.theme.colors.gray0,
+              customHoverBackgroundColor: x.a.theme.colors.gray0,
+              customPressedBackgroundColor: x.a.theme.colors.activeFaintGray,
             })
           return v.a.createElement(F.a.Consumer, null, function (e) {
             return v.a.createElement(
               A.a,
               {
-                interactiveStyles: b,
-                link: e.withAnchorless('https://twitter.com/'.concat(f || '')),
+                interactiveStyles: _,
+                link: e.withAnchorless('https://twitter.com/'.concat(g || '')),
                 style: [D.root, a && y && D.borderBottom],
               },
               v.a.createElement(I.a, {
-                isVerified: d,
+                isVerified: u,
                 name: m,
-                screenName: f,
+                screenName: g,
                 style: D.profileInfoItemMargin,
                 weight: 'bold',
                 withHoverCard: !0,
                 withLink: !0,
               }),
-              o && l && u
+              l && o && d
                 ? v.a.createElement(O.a, {
-                    description: o,
-                    entities: l,
+                    description: l,
+                    entities: o,
                     style: [D.profileInfoItemMargin, D.description],
-                    userId: u,
-                    withheldDescription: h,
-                    withheldEntities: g,
+                    userId: d,
+                    withheldDescription: f,
+                    withheldEntities: h,
                   })
                 : null,
               s && c
                 ? v.a.createElement(M.a, {
                     followersCount: s,
                     friendsCount: c,
-                    screenName: f || '',
+                    screenName: g || '',
                     style: D.profileInfoItemMargin,
                     withLink: !1,
                   })
@@ -355,34 +355,34 @@
         U = n('aA19'),
         N = n('aWyx'),
         H = n('mN6z'),
-        V = n('MWbm'),
-        W = n('t62R'),
-        z = n('jhWN'),
-        q = n('MAI/'),
+        W = n('MWbm'),
+        V = n('t62R'),
+        q = n('jhWN'),
+        z = n('MAI/'),
         G = n('zQEV'),
         Y = function (e) {
           var t = e.children,
             n = e.link,
             a = e.style
-          return v.a.createElement(W.b, { align: 'center', color: 'gray700', link: n, size: 'subtext2', style: a }, t)
+          return v.a.createElement(V.b, { align: 'center', color: 'gray700', link: n, size: 'subtext2', style: a }, t)
         },
         Q = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_renderContents', function () {
+              g()(s()(e), '_renderContents', function () {
                 var t = e.props,
                   n = t.conversation,
                   a = t.entry,
                   r = t.entryType,
                   i = t.perspective,
-                  o = t.users,
-                  l = Object(G.a)(a, r, i, o)
+                  l = t.users,
+                  o = Object(G.a)(a, r, i, l)
                 switch (r) {
                   case N.b.CONVERSATION_AVATAR_UPDATE:
                     var s = n.avatar_image_https === a.conversation_avatar_image_https
@@ -391,38 +391,38 @@
                       null,
                       e._isValidImageSource(n.avatar_image_https) && s
                         ? v.a.createElement(
-                            V.a,
+                            W.a,
                             { style: X.conversationAvatarContainer },
                             v.a.createElement(U.a, { conversation: n, perspective: i }),
                           )
                         : null,
-                      v.a.createElement(Y, null, l),
+                      v.a.createElement(Y, null, o),
                     )
                   case N.b.JOIN_CONVERSATION:
-                    var c = e._getAddedYouMessageWithProfileInfo(l),
-                      u = e._getParticipantsFromEntry(),
-                      d = v.a.createElement(
-                        W.b,
+                    var c = e._getAddedYouMessageWithProfileInfo(o),
+                      d = e._getParticipantsFromEntry(),
+                      u = v.a.createElement(
+                        V.b,
                         { align: 'center', color: 'gray700', size: 'subtext2' },
-                        e._getParticipantsFromEntryText(u),
+                        e._getParticipantsFromEntryText(d),
                       ),
-                      p = e._getJoinConversationDetailsWithFacepile(u, d)
+                      p = e._getJoinConversationDetailsWithFacepile(d, u)
                     return v.a.createElement(v.a.Fragment, null, c, p)
                   default:
-                    return v.a.createElement(Y, null, l)
+                    return v.a.createElement(Y, null, o)
                 }
               }),
-              f()(s()(e), '_getAddedYouMessageWithProfileInfo', function (t) {
+              g()(s()(e), '_getAddedYouMessageWithProfileInfo', function (t) {
                 var n = e.props,
                   a = n.entry,
                   r = n.users,
                   i = a.sender_id ? r[a.sender_id] : void 0,
-                  o = i ? { pathname: 'https://twitter.com/'.concat(i.screen_name) } : void 0
+                  l = i ? { pathname: 'https://twitter.com/'.concat(i.screen_name) } : void 0
                 return v.a.createElement(
                   A.a,
-                  { interactiveStyles: null, link: o, style: X.userAddedYouContainer },
+                  { interactiveStyles: null, link: l, style: X.userAddedYouContainer },
                   i
-                    ? v.a.createElement(z.a, {
+                    ? v.a.createElement(q.a, {
                         accessibilityLabel: i.screen_name,
                         screenName: i.screen_name,
                         size: 'medium',
@@ -431,10 +431,10 @@
                         withLink: !0,
                       })
                     : null,
-                  v.a.createElement(Y, { link: o, style: X.userAddedYouText }, t),
+                  v.a.createElement(Y, { link: l, style: X.userAddedYouText }, t),
                 )
               }),
-              f()(s()(e), '_getJoinConversationDetailsWithFacepile', function (t, n) {
+              g()(s()(e), '_getJoinConversationDetailsWithFacepile', function (t, n) {
                 var a = e.props.conversation,
                   r = t.slice(0, 20).map(function (e) {
                     return e.profile_image_url_https
@@ -447,14 +447,14 @@
                     style: X.joinConversationDetails,
                   },
                   n,
-                  v.a.createElement(q.a, { style: X.userAvatarFacepile, userAvatarSize: 'xLarge', userAvatarUrls: r }),
+                  v.a.createElement(z.a, { style: X.userAvatarFacepile, userAvatarSize: 'xLarge', userAvatarUrls: r }),
                 )
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'shouldComponentUpdate',
                 value: function (e) {
@@ -464,7 +464,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return v.a.createElement(V.a, { style: X.root }, this._renderContents())
+                  return v.a.createElement(W.a, { style: X.root }, this._renderContents())
                 },
               },
               {
@@ -505,7 +505,7 @@
             n
           )
         })(v.a.Component),
-        X = R.a.create(function (e) {
+        X = x.a.create(function (e) {
           return {
             root: { paddingBottom: e.spaces.space20 },
             conversationAvatarContainer: {
@@ -528,37 +528,37 @@
         te = n.n(ee),
         ne = n('oQhu')
       var ae = Object(ne.a)(function (e) {
-          var t = R.a.theme.spacesPx.space40
+          var t = x.a.theme.spacesPx.space40
           return {
             DMUserAvatarSizeType: 'xLarge',
             DMUserAvatarSizePx: t,
-            DMUserAvatarSpacerPx: t + R.a.theme.spacesPx.space12,
+            DMUserAvatarSpacerPx: t + x.a.theme.spacesPx.space12,
           }
         }),
         re = n('shC7'),
         ie = n('38/B'),
-        oe = function (e) {
-          return le(e, ie.a.reducedMotionEnabled)
+        le = function (e) {
+          return oe(e, ie.a.reducedMotionEnabled)
         },
-        le = Object(ne.a)(function (e, t) {
+        oe = Object(ne.a)(function (e, t) {
           var n,
             a,
             r,
             i,
-            o,
             l,
+            o,
             s,
             c,
-            u,
-            d =
-              ((n = ae(R.a.theme.scale)),
+            d,
+            u =
+              ((n = ae(x.a.theme.scale)),
               (a = n.DMUserAvatarSizePx),
               (r = n.DMUserAvatarSpacerPx),
-              (i = de[R.a.theme.scale]),
-              (o = ce / i),
-              (l = ue / a),
-              (c = ue - (s = ue / 2)),
-              (u = ue - s - r),
+              (i = ue[x.a.theme.scale]),
+              (l = ce / i),
+              (o = de / a),
+              (c = de - (s = de / 2)),
+              (d = de - s - r),
               {
                 cssTransition: ie.a.reducedMotionEnabled
                   ? {}
@@ -567,15 +567,15 @@
                   base: { transform: [{ translateX: 0 }] },
                   active: {
                     sent: { transform: [{ translateX: (re.a.getConstants().isRTL ? 1 : -1) * c }] },
-                    received: { transform: [{ translateX: (re.a.getConstants().isRTL ? -1 : 1) * u }] },
+                    received: { transform: [{ translateX: (re.a.getConstants().isRTL ? -1 : 1) * d }] },
                   },
                 },
                 actionsContainer: {
                   base: { transform: [{ translateX: 0 }] },
                   active: {
-                    sent: { transform: [{ translateX: (re.a.getConstants().isRTL ? 1 : -1) * pe[R.a.theme.scale] }] },
+                    sent: { transform: [{ translateX: (re.a.getConstants().isRTL ? 1 : -1) * pe[x.a.theme.scale] }] },
                     received: {
-                      transform: [{ translateX: (re.a.getConstants().isRTL ? -1 : 1) * (pe[R.a.theme.scale] + u) - s }],
+                      transform: [{ translateX: (re.a.getConstants().isRTL ? -1 : 1) * (pe[x.a.theme.scale] + d) - s }],
                     },
                   },
                 },
@@ -583,13 +583,13 @@
                   container: { base: { height: i }, active: { height: ce } },
                   base: { height: i, transform: [{ scale: 1 }] },
                   active: {
-                    base: { transform: [{ scale: o }] },
+                    base: { transform: [{ scale: l }] },
                     sent: {
-                      paddingRight: s / o,
+                      paddingRight: s / l,
                       transformOrigin: re.a.getConstants().isRTL ? 'bottom left' : 'bottom right',
                     },
                     received: {
-                      paddingLeft: s / o,
+                      paddingLeft: s / l,
                       transformOrigin: re.a.getConstants().isRTL ? 'bottom right' : 'bottom left',
                     },
                   },
@@ -598,7 +598,7 @@
                   base: { transform: [{ scale: 1 }] },
                   sent: { transformOrigin: re.a.getConstants().isRTL ? 'bottom left' : 'bottom right' },
                   received: { transformOrigin: re.a.getConstants().isRTL ? 'bottom right' : 'bottom left' },
-                  active: { opacity: 1, pointerEvents: 'all', transform: [{ scale: l }] },
+                  active: { opacity: 1, pointerEvents: 'all', transform: [{ scale: o }] },
                   visuallyHidden: { opacity: 0, pointerEvents: 'none' },
                 },
               })
@@ -606,44 +606,44 @@
             actionsContainer: function (e) {
               var t = e.isSent,
                 n = e.isVoiceMessageActive,
-                a = [d.cssTransition, d.actionsContainer.base]
-              return n && a.push(t ? d.actionsContainer.active.sent : d.actionsContainer.active.received), a
+                a = [u.cssTransition, u.actionsContainer.base]
+              return n && a.push(t ? u.actionsContainer.active.sent : u.actionsContainer.active.received), a
             },
             messageContainer: function (e) {
               var t = e.isSent,
                 n = e.isVoiceMessageActive,
-                a = [d.cssTransition, d.messageContainer.base]
-              return n && a.push(t ? d.messageContainer.active.sent : d.messageContainer.active.received), a
+                a = [u.cssTransition, u.messageContainer.base]
+              return n && a.push(t ? u.messageContainer.active.sent : u.messageContainer.active.received), a
             },
             voiceMessageContainer: function (e) {
               e.isSent
               var t = e.isVoiceMessageActive,
-                n = [d.cssTransition, d.voiceMessage.container.base]
-              return t && n.push(d.voiceMessage.container.active), n
+                n = [u.cssTransition, u.voiceMessage.container.base]
+              return t && n.push(u.voiceMessage.container.active), n
             },
             voiceMessage: function (e) {
               var t = e.isSent,
                 n = e.isVoiceMessageActive,
-                a = [d.cssTransition, d.voiceMessage.base]
+                a = [u.cssTransition, u.voiceMessage.base]
               return (
                 n &&
-                  (a.push(d.voiceMessage.active.base),
-                  a.push(t ? d.voiceMessage.active.sent : d.voiceMessage.active.received)),
+                  (a.push(u.voiceMessage.active.base),
+                  a.push(t ? u.voiceMessage.active.sent : u.voiceMessage.active.received)),
                 a
               )
             },
             userAvatar: function (e) {
               var t = e.isSent,
                 n = e.isVoiceMessageActive,
-                a = [d.cssTransition, d.userAvatar.base, t ? d.userAvatar.sent : d.userAvatar.received]
-              return n ? a.push(d.userAvatar.active) : t && a.push(d.userAvatar.visuallyHidden), a
+                a = [u.cssTransition, u.userAvatar.base, t ? u.userAvatar.sent : u.userAvatar.received]
+              return n ? a.push(u.userAvatar.active) : t && a.push(u.userAvatar.visuallyHidden), a
             },
           }
         })
       var se,
         ce = 60,
-        ue = ce,
-        de = { xSmall: 42, small: 42, normal: 47, large: 47, xLarge: 47 },
+        de = ce,
+        ue = { xSmall: 42, small: 42, normal: 47, large: 47, xLarge: 47 },
         pe = {
           xSmall: 72.26,
           small: 165.61 - 89.3,
@@ -652,29 +652,29 @@
           xLarge: 181.55 - 111.81,
         },
         me = '0.2s 0s ease-in-out',
-        fe = n('+Kfv'),
-        he = n('hqKg'),
-        ge = n('oEGd'),
+        ge = n('+Kfv'),
+        fe = n('hqKg'),
+        he = n('oEGd'),
         ve = n('zh9S'),
         ye = n('Yatk'),
-        be = n('G6rE'),
-        _e = n('P1r1'),
+        _e = n('G6rE'),
+        be = n('P1r1'),
         ke = { scribeAction: ve.scribeAction },
-        Se = Object(he.createSelector)(
+        Se = Object(fe.createSelector)(
           function (e, t) {
-            return be.e.select(e, t.senderId)
+            return _e.e.select(e, t.senderId)
           },
-          _e.k,
-          _e.q,
+          be.k,
+          be.q,
           function (e, t, n) {
             return { user: Object(ye.a)(e), displaySensitiveMedia: t, isDmNsfwMediaFilterEnabled: n }
           },
         ),
-        Ce = Object(ge.f)(Se, ke),
+        Ce = Object(he.f)(Se, ke),
         Ee = (n('0zG9'), n('jwue'), n('+oxZ'), n('KqXw'), n('MvUL'), n('1YZw')),
         Te = n('rxPX'),
         we = n('0KEI'),
-        xe = Object(Te.a)()
+        Re = Object(Te.a)()
           .propsFromActions(function () {
             return {
               addToast: Ee.b,
@@ -685,7 +685,7 @@
             }
           })
           .withAnalytics(),
-        Re = n('k49u'),
+        xe = n('k49u'),
         Fe = n('LVU8'),
         Ae = n('3XMw'),
         Ie = n.n(Ae),
@@ -693,14 +693,14 @@
         Me = Ie.a.ad5a8e8e,
         Le =
           ((se = {}),
-          f()(se, Re.a.MissingParameter, { toast: Object(Fe.a)(Oe) }),
-          f()(se, Re.a.DirectMessageDestroyPermissionsError, { toast: { text: Me } }),
-          f()(se, 'showToast', !0),
+          g()(se, xe.a.MissingParameter, { toast: Object(Fe.a)(Oe) }),
+          g()(se, xe.a.DirectMessageDestroyPermissionsError, { toast: { text: Me } }),
+          g()(se, 'showToast', !0),
           se),
         De = (n('jQ3i'), n('x4t0'), n('xCUF')),
         Pe = n('uKEd'),
         Ke = [],
-        Be = Object(he.createSelector)(
+        Be = Object(fe.createSelector)(
           function (e) {
             return Object(Pe.l)(e).entries
           },
@@ -731,40 +731,40 @@
           fetchUpdatesIfNeeded: De.d,
           removeReaction: Pe.k,
         },
-        Ue = Object(ge.f)(Be, je),
+        Ue = Object(he.f)(Be, je),
         Ne = n('RhWx'),
         He = n.n(Ne),
-        Ve = n('33Kz'),
-        We = n('wTX1'),
-        ze = function (e) {
+        We = n('33Kz'),
+        Ve = n('wTX1'),
+        qe = function (e) {
           var t = e.accessibilityLabelFormatter,
             n = e.count,
             a = e.emojiSize,
             r = e.emotion,
             i = e.enableHoverStyle,
-            o = e.focusable,
-            l = e.onPress,
+            l = e.focusable,
+            o = e.onPress,
             s = e.style,
             c = v.a.useContext(E.a).featureSwitches,
-            u = Object(Ve.b)(r, c),
-            d = t && u ? t({ emoji: u, count: n }) : void 0,
-            p = x.a.generate({ backgroundColor: R.a.theme.colors.gray50, color: R.a.theme.colors.gray700 })
+            d = Object(We.b)(r, c),
+            u = t && d ? t({ emoji: d, count: n }) : void 0,
+            p = R.a.generate({ backgroundColor: x.a.theme.colors.gray50, color: x.a.theme.colors.gray700 })
           return v.a.createElement(
             A.a,
             {
-              accessibilityLabel: d,
-              focusable: o,
+              accessibilityLabel: u,
+              focusable: l,
               interactiveStyles: i ? p : null,
-              onPress: l,
-              style: [qe.container].concat(He()(s || [])),
+              onPress: o,
+              style: [ze.container].concat(He()(s || [])),
             },
-            v.a.createElement(W.b, { size: a, style: qe.unsetLineHeight }, u),
+            v.a.createElement(V.b, { size: a, style: ze.unsetLineHeight }, d),
             n
-              ? v.a.createElement(We.a, { color: 'gray700', containerStyle: qe.count, count: n, size: 'subtext3' }, n)
+              ? v.a.createElement(Ve.a, { color: 'gray700', containerStyle: ze.count, count: n, size: 'subtext3' }, n)
               : null,
           )
         },
-        qe = R.a.create(function (e) {
+        ze = x.a.create(function (e) {
           return {
             container: { flexDirection: 'row' },
             count: { alignSelf: 'center', minWidth: e.spaces.space16, paddingLeft: e.spaces.space2 },
@@ -776,22 +776,22 @@
         Qe = Ie.a.ca7a2214,
         Xe = Ie.a.fc0e94b7,
         Je = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_handleReactionScribing', function (t, n) {
+              g()(s()(e), '_handleReactionScribing', function (t, n) {
                 var a = e.props,
                   r = a.analytics,
                   i = a.entry,
-                  o = a.isGroupDM,
-                  l = a.participantsCount,
+                  l = a.isGroupDM,
+                  o = a.participantsCount,
                   s = n ? 'delete_reaction' : 'create_reaction',
-                  c = Object(b.c)(i)
+                  c = Object(_.c)(i)
                 r.scribe({
                   section: 'twitter_service',
                   component: 'direct_messages',
@@ -799,46 +799,46 @@
                   action: 'success',
                   data: {
                     conversation_id: i.conversation_id,
-                    conversation_participant_count: l,
-                    conversation_type: o ? Ge.j.GROUP : Ge.j.ONE_TO_ONE,
+                    conversation_participant_count: o,
+                    conversation_type: l ? Ge.j.GROUP : Ge.j.ONE_TO_ONE,
                     message_type: c,
                     reaction_emotion: t,
                   },
                 })
               }),
-              f()(s()(e), '_reactionClickHandler', function (t, n) {
+              g()(s()(e), '_reactionClickHandler', function (t, n) {
                 return function () {
                   var a = e.props,
                     r = a.createLocalApiErrorHandler,
                     i = a.createReaction,
-                    o = a.dismiss,
-                    l = a.entry,
+                    l = a.dismiss,
+                    o = a.entry,
                     s = a.fetchUpdatesIfNeeded,
                     c = a.perspective,
-                    u = a.removeReaction,
-                    d = { reaction_key: t, conversation_id: l.conversation_id, dm_id: l.id, perspective: c }
-                  ;(n ? u : i)(d)
+                    d = a.removeReaction,
+                    u = { reaction_key: t, conversation_id: o.conversation_id, dm_id: o.id, perspective: c }
+                  ;(n ? d : i)(u)
                     .then(e._handleReactionScribing(t, n))
                     .then(function () {
                       return s()
                     })
                     .catch(r()),
-                    o()
+                    l()
                 }
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this,
                     t = this.props.selectedReactions,
-                    n = Object(Ve.a)(this.context.featureSwitches).map(function (n) {
+                    n = Object(We.a)(this.context.featureSwitches).map(function (n) {
                       var a = t.includes(n)
-                      return v.a.createElement(ze, {
+                      return v.a.createElement(qe, {
                         accessibilityLabelFormatter: a ? Qe : Xe,
                         emojiSize: 'title4',
                         emotion: n,
@@ -849,16 +849,16 @@
                         style: [$e.reaction, a && $e.selectedReaction],
                       })
                     })
-                  return v.a.createElement(V.a, { style: $e.reactions }, n)
+                  return v.a.createElement(W.a, { style: $e.reactions }, n)
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      f()(Je, 'contextType', E.a)
+      g()(Je, 'contextType', E.a)
       var Ze = Object(Ye.a)(Ue(Je)),
-        $e = R.a.create(function (e) {
+        $e = x.a.create(function (e) {
           return {
             reactions: { cursor: 'pointer', flexDirection: 'row', padding: e.spaces.space12 },
             reaction: { borderRadius: e.borderRadii.small, padding: e.spaces.space4 },
@@ -867,33 +867,33 @@
         }),
         et = n('OiMc'),
         tt = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_renderDMReactionPickerContent', function (t) {
+              g()(s()(e), '_renderDMReactionPickerContent', function (t) {
                 var n = e.props,
                   a = n.entry,
                   r = n.isGroupDM,
                   i = n.participantsCount,
-                  o = n.perspective
+                  l = n.perspective
                 return v.a.createElement(Ze, {
                   dismiss: t,
                   entry: a,
                   isGroupDM: r,
                   participantsCount: i,
-                  perspective: o,
+                  perspective: l,
                 })
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -918,17 +918,17 @@
             n
           )
         })(v.a.Component)
-      f()(tt, 'contextType', K.a)
+      g()(tt, 'contextType', K.a)
       var nt = n('TnY3'),
         at = n('mjJ+'),
         rt = n('Q0VY'),
         it = n('eb3s'),
-        ot = n('/yvb'),
-        lt = n('ZToW'),
+        lt = n('/yvb'),
+        ot = n('ZToW'),
         st = n('CaKu'),
         ct = n('i4Oy'),
-        ut = (n('hBpG'), n('tVqn'), n('tQbP'), n('4w6w')),
-        dt = function (e, t) {
+        dt = (n('hBpG'), n('tVqn'), n('tQbP'), n('4w6w')),
+        ut = function (e, t) {
           if (null == e) return !1
           var n = t || [0, 0],
             a = $()(n, 2),
@@ -943,13 +943,13 @@
           if (!n) return !0
           if (n.sticker) return !1
           var a = n.tweet || n.photo || n.animated_gif || n.video || void 0
-          if (a) return dt(t.text, a.indices)
+          if (a) return ut(t.text, a.indices)
           if (n.card) {
             var r,
               i = ((null === (r = t.entities) || void 0 === r ? void 0 : r.urls) || []).find(function (e) {
                 return e.url === n.card
               })
-            return dt(t.text, i && i.indices)
+            return ut(t.text, i && i.indices)
           }
           return !0
         },
@@ -958,26 +958,26 @@
             n = null == e || null === (t = e.message_data) || void 0 === t ? void 0 : t.attachment
           return !(!n || !(n.card || n.tweet || n.photo || n.animated_gif || n.video))
         },
-        ft = function (e) {
+        gt = function (e) {
           var t,
             n = null == e || null === (t = e.message_data) || void 0 === t ? void 0 : t.attachment
           return !(!n || !n.fleet)
         },
-        ht = function (e, t, n) {
-          var a = 1.25 * R.a.theme.fontSizesPx.body
+        ft = function (e, t, n) {
+          var a = 1.25 * x.a.theme.fontSizesPx.body
           return {
             compositeRendered: e ? void 0 !== t && void 0 !== n : void 0 !== t,
             isTextSquared: void 0 !== t && void 0 !== n && (n === t || n <= t - a),
             isAttachmentSquared: void 0 !== n && void 0 !== t && (t === n || t <= n - a),
           }
         },
-        gt = n('hiGS'),
+        ht = n('hiGS'),
         vt = n('zIWA'),
         yt = n('Lsrn'),
-        bt = n('k/Ka'),
-        _t = function () {
+        _t = n('k/Ka'),
+        bt = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(bt.a)(
+          return Object(_t.a)(
             'svg',
             te()(
               te()({}, e),
@@ -1000,15 +1000,15 @@
             ),
           )
         }
-      _t.metadata = { width: 24, height: 24 }
-      var kt = _t,
+      bt.metadata = { width: 24, height: 24 }
+      var kt = bt,
         St = n('DlVf'),
         Ct = n('ACHU'),
         Et = n('UgB4'),
         Tt = n('fz3c'),
         wt = Ie.a.ba60339a,
-        xt = Ie.a.j4bfee22,
-        Rt = Ie.a.d96cf7cd,
+        Rt = Ie.a.j4bfee22,
+        xt = Ie.a.d96cf7cd,
         Ft = Ie.a.faddd3a2,
         At = Ie.a.eb497e08,
         It = Ie.a.b170974a,
@@ -1019,33 +1019,33 @@
         Pt = Ie.a.cac14829,
         Kt = Ie.a.h63a5c3b,
         Bt = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e, a) {
             var i
             return (
               r()(this, n),
               (i = t.call(this, e, a)),
-              f()(s()(i), '_renderOverflowMenu', function (e) {
+              g()(s()(i), '_renderOverflowMenu', function (e) {
                 var t = i.props,
                   n = t.analytics,
                   a = t.entry,
                   r = t.featureSwitches,
-                  o = t.isSent,
-                  l = Tt.a.DMMessage,
+                  l = t.isSent,
+                  o = Tt.a.DMMessage,
                   s = n.contextualScribeNamespace,
-                  c = [{ text: wt, Icon: gt.a, isEmphasized: !0, onClick: i._handleShowDeleteConfirmation(e) }]
-                if (!o)
-                  if (Object(Tt.g)(r, l)) {
-                    var u,
-                      d = Object(Tt.d)({
+                  c = [{ text: wt, Icon: ht.a, isEmphasized: !0, onClick: i._handleShowDeleteConfirmation(e) }]
+                if (!l)
+                  if (Object(Tt.g)(r, o)) {
+                    var d,
+                      u = Object(Tt.d)({
                         clientReferer: window.location.pathname,
                         isMedia: !1,
                         isPromoted: !1,
-                        reportType: l,
+                        reportType: o,
                         reportedConversationId: a.conversation_id,
                         reportedMessageId: a.id,
-                        reportedUser: null === (u = a.message_data) || void 0 === u ? void 0 : u.sender_id,
+                        reportedUser: null === (d = a.message_data) || void 0 === d ? void 0 : d.sender_id,
                         scribeNamespace: n.contextualScribeNamespace,
                       })
                     c.push({
@@ -1053,7 +1053,7 @@
                       Icon: vt.a,
                       link: {
                         pathname: '/i/safety/report_story_start',
-                        state: { input: { requested_variant: JSON.stringify(d) } },
+                        state: { input: { requested_variant: JSON.stringify(u) } },
                       },
                       onClick: i.props.onReportMessage,
                     })
@@ -1062,7 +1062,7 @@
                       text: Ot,
                       Icon: vt.a,
                       link: {
-                        pathname: '/i/report/'.concat(l, '/').concat(a.id),
+                        pathname: '/i/report/'.concat(o, '/').concat(a.id),
                         state: {
                           clientReferer: window.location.pathname,
                           conversationId: a.conversation_id,
@@ -1081,12 +1081,12 @@
                   })
                 )
               }),
-              f()(s()(i), '_handleCopyMessageText', function (e) {
+              g()(s()(i), '_handleCopyMessageText', function (e) {
                 var t = i.props.addToast,
                   n = i._replaceMessageUrls()
                 n && (st.a.setString(n), t({ text: Lt })), e && e()
               }),
-              f()(s()(i), '_handleForwardButton', function () {
+              g()(s()(i), '_handleForwardButton', function () {
                 var e,
                   t,
                   n = i.props,
@@ -1100,62 +1100,62 @@
                   void 0 !== t &&
                   t.tweet
                 ) {
-                  var o = a.message_data.attachment.tweet
+                  var l = a.message_data.attachment.tweet
                   r.push({
                     pathname: '/messages/compose',
-                    state: { tweetAttachment: te()(te()({}, o), {}, { id_str: o.status }) },
+                    state: { tweetAttachment: te()(te()({}, l), {}, { id_str: l.status }) },
                   })
                 }
               }),
-              f()(s()(i), '_handleSetActionsActive', function () {
+              g()(s()(i), '_handleSetActionsActive', function () {
                 var e = i.props.setShouldFreezeUpdates
                 i.setState({ actionsAreActive: !0 }), e(!0)
               }),
-              f()(s()(i), '_handleDelete', function () {
+              g()(s()(i), '_handleDelete', function () {
                 var e = i.props,
                   t = e.analytics,
                   n = e.createLocalApiErrorHandler,
                   a = e.deleteEntry,
                   r = e.entry,
-                  o = e.inboxType,
-                  l = e.isGroupDM,
+                  l = e.inboxType,
+                  o = e.isGroupDM,
                   s = e.participantsCount,
-                  c = Object(b.c)(r)
+                  c = Object(_.c)(r)
                 t.scribe({
                   action: 'delete',
                   data: {
                     conversation_id: r.conversation_id,
-                    conversation_type: l ? Ge.j.GROUP : Ge.j.ONE_TO_ONE,
+                    conversation_type: o ? Ge.j.GROUP : Ge.j.ONE_TO_ONE,
                     conversation_participant_count: s,
                     message_type: c,
-                    inbox_type: Object(b.i)(o),
+                    inbox_type: Object(_.i)(l),
                   },
                 }),
                   a({ conversationId: r.conversation_id, id: r.id }).catch(n(Le))
               }),
-              f()(s()(i), '_handleHideDeleteConfirmation', function () {
+              g()(s()(i), '_handleHideDeleteConfirmation', function () {
                 i.setState({ showDeleteConfirmation: !1 })
               }),
-              f()(s()(i), '_handleHideActionsAndMenus', function (e) {
+              g()(s()(i), '_handleHideActionsAndMenus', function (e) {
                 return function () {
                   var t = i.props.setShouldFreezeUpdates
                   e && e(), i.setState({ actionsAreActive: !1 }), t(!1)
                 }
               }),
-              f()(s()(i), '_handlePressReactionPickerButton', function () {
+              g()(s()(i), '_handlePressReactionPickerButton', function () {
                 var e = i.props,
                   t = e.analytics,
                   n = e.entry
-                t.scribe({ component: 'reaction_button', element: Object(b.c)(n), action: 'click' }),
+                t.scribe({ component: 'reaction_button', element: Object(_.c)(n), action: 'click' }),
                   i._handleSetActionsActive()
               }),
-              f()(s()(i), '_handleShowDeleteConfirmation', function (e) {
+              g()(s()(i), '_handleShowDeleteConfirmation', function (e) {
                 return function () {
                   var t = i.props.setShouldFreezeUpdates
                   e(), i.setState({ actionsAreActive: !1, showDeleteConfirmation: !0 }), t(!1)
                 }
               }),
-              f()(s()(i), '_replaceMessageUrls', function () {
+              g()(s()(i), '_replaceMessageUrls', function () {
                 var e = i.props.entry,
                   t = e && e.message_data && e.message_data.entities,
                   n = (e && e.message_data && e.message_data.text) || ''
@@ -1168,12 +1168,12 @@
               }),
               (i.state = { actionsAreActive: !1, showDeleteConfirmation: !1 }),
               (i._hasMedia = mt(i.props.entry)),
-              (i._isNarrow = ct.a.get('screen').width < R.a.theme.breakpoints.xSmall),
+              (i._isNarrow = ct.a.get('screen').width < x.a.theme.breakpoints.xSmall),
               i
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -1183,20 +1183,20 @@
                     a = n.entry,
                     r = n.isSent,
                     i = n.shouldShowReactionButton,
-                    o = n.style,
-                    l = n.withVDLRefresh,
+                    l = n.style,
+                    o = n.withVDLRefresh,
                     s = this._areActionsVisible()
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     {
                       pointerEvents: s ? 'auto' : 'none',
                       style: [
                         Ut.messageActions,
                         r ? Ut.messageActionsLeft : Ut.messageActionsRight,
                         s ? Ut.visible : Ut.invisible,
-                        l && Ut.vdlMessageActions,
+                        o && Ut.vdlMessageActions,
                         this._isNarrow && (this._hasMedia ? Ut.messageActionsMediaNarrow : Ut.messageActionsNarrow),
-                        o,
+                        l,
                       ],
                     },
                     (null == a ||
@@ -1206,7 +1206,7 @@
                     void 0 === t
                       ? void 0
                       : t.tweet) &&
-                      l &&
+                      o &&
                       this._renderForwardButton(),
                     i && this._renderReactionButton(),
                     this._renderOverflowButton(),
@@ -1219,9 +1219,9 @@
                 value: function () {
                   return this.state.showDeleteConfirmation
                     ? v.a.createElement(it.a, {
-                        confirmButtonLabel: Rt,
+                        confirmButtonLabel: xt,
                         confirmButtonType: 'destructiveFilled',
-                        headline: xt,
+                        headline: Rt,
                         onCancel: this._handleHideDeleteConfirmation,
                         onConfirm: this._handleDelete,
                         text: Ft,
@@ -1232,7 +1232,7 @@
               {
                 key: '_renderForwardButton',
                 value: function () {
-                  return v.a.createElement(ot.a, {
+                  return v.a.createElement(lt.a, {
                     accessibilityLabel: Dt,
                     hoverLabel: { label: Dt },
                     icon: Nt,
@@ -1251,8 +1251,8 @@
                     a = e.participantsCount,
                     r = e.perspective,
                     i = e.withVDLRefresh,
-                    o = this.state.actionsAreActive,
-                    l = v.a.createElement(St.a, { style: i ? Ut.vdlActionIcon : Ut.actionIcon })
+                    l = this.state.actionsAreActive,
+                    o = v.a.createElement(St.a, { style: i ? Ut.vdlActionIcon : Ut.actionIcon })
                   return v.a.createElement(
                     tt,
                     {
@@ -1262,12 +1262,12 @@
                       participantsCount: a,
                       perspective: r,
                     },
-                    v.a.createElement(ot.a, {
-                      accessibilityExpanded: !!o,
+                    v.a.createElement(lt.a, {
+                      accessibilityExpanded: !!l,
                       accessibilityHasPopup: 'menu',
                       accessibilityLabel: It,
                       hoverLabel: { label: Pt },
-                      icon: l,
+                      icon: o,
                       onPress: this._handlePressReactionPickerButton,
                       size: this._isNarrow ? 'small' : 'medium',
                       type: 'brandText',
@@ -1280,7 +1280,7 @@
                 value: function () {
                   var e = this.props.withVDLRefresh,
                     t = v.a.createElement(Ct.a, { style: e ? Ut.vdlActionIcon : Ut.actionIcon })
-                  return v.a.createElement(ot.a, {
+                  return v.a.createElement(lt.a, {
                     accessibilityLabel: At,
                     hoverLabel: { label: Kt },
                     icon: t,
@@ -1300,18 +1300,18 @@
                     a = t.containerIsFocused,
                     r = t.containerIsHovered,
                     i = t.isDraft,
-                    o = this.state.actionsAreActive,
-                    l = ((e = this.props.entry), !pt(e) && mt(e) && !lt.a.isEnabled)
-                  return !i && (l || (n && !lt.a.isEnabled) || a || r || o)
+                    l = this.state.actionsAreActive,
+                    o = ((e = this.props.entry), !pt(e) && mt(e) && !ot.a.isEnabled)
+                  return !i && (o || (n && !ot.a.isEnabled) || a || r || l)
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      f()(Bt, 'contextType', K.a)
-      var jt = Object(nt.a)(xe(Bt)),
-        Ut = R.a.create(function (e) {
+      g()(Bt, 'contextType', K.a)
+      var jt = Object(nt.a)(Re(Bt)),
+        Ut = x.a.create(function (e) {
           return {
             invisible: { opacity: 0 },
             messageActions: { alignSelf: 'flex-end', flexDirection: 'row' },
@@ -1327,20 +1327,20 @@
         }),
         Nt = v.a.createElement(Et.a, { style: Ut.vdlActionIcon }),
         Ht = n('97Jx'),
-        Vt = n.n(Ht),
-        Wt = (n('6U7i'), n('CDB5')),
-        zt = Object(Te.a)()
+        Wt = n.n(Ht),
+        Vt = (n('6U7i'), n('CDB5')),
+        qt = Object(Te.a)()
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(we.createLocalApiErrorHandlerWithContextFactory)(
                 'DIRECT_MESSAGES_CONVERSATION',
               ),
               removeEntry: C.removeEntry,
-              sendMessage: Wt.m,
+              sendMessage: Vt.m,
             }
           })
           .withAnalytics(),
-        qt = '87.5%',
+        zt = '87.5%',
         Gt = (n('hCOa'), n('87if'), n('dlmX'), n('m9LP'), n('wrlS')),
         Yt = n('RqPI'),
         Qt = [],
@@ -1355,26 +1355,26 @@
             'DIRECT_MESSAGES_REACTIONS',
           ),
         },
-        $t = Object(ge.e)(function () {
-          return Object(he.createSelector)(Jt, Xt, Yt.r, Gt.d, function (e, t, n, a) {
+        $t = Object(he.e)(function () {
+          return Object(fe.createSelector)(Jt, Xt, Yt.r, Gt.d, function (e, t, n, a) {
             var r,
-              i = Object(Ve.a)(a, { includeInactive: !0 }),
-              o = 0
+              i = Object(We.a)(a, { includeInactive: !0 }),
+              l = 0
             return {
               reactionsWithCounts: t.reduceRight(function (t, a) {
-                var l = e[a] && e[a].data
-                if (!l) return t
-                if (!i.includes(l.reaction_key)) return t
-                var s = (t.get(l.reaction_key) || 0) + 1
+                var o = e[a] && e[a].data
+                if (!o) return t
+                if (!i.includes(o.reaction_key)) return t
+                var s = (t.get(o.reaction_key) || 0) + 1
                 return (
-                  t.set(l.reaction_key, s),
-                  (null == l ? void 0 : l.sender_id) === n && (r = l.reaction_key),
-                  (o += 1),
+                  t.set(o.reaction_key, s),
+                  (null == o ? void 0 : o.sender_id) === n && (r = o.reaction_key),
+                  (l += 1),
                   t
                 )
               }, new Map()),
               selectedReactionKey: r,
-              totalReactionCount: o,
+              totalReactionCount: l,
             }
           })
         }, Zt),
@@ -1389,59 +1389,59 @@
           return Object(Pe.p)(e, tn(0, t)) || en
         },
         rn = function (e, t) {
-          return be.e.selectMany(
+          return _e.e.selectMany(
             e,
             (function (e, t) {
               return Object(Pe.q)(e, tn(0, t))
             })(e, t),
           )
         },
-        on = {
+        ln = {
           removeReaction: Pe.k,
           fetchUpdatesIfNeeded: De.d,
           createLocalApiErrorHandler: Object(we.createLocalApiErrorHandlerWithContextFactory)(
             'DIRECT_MESSAGES_REACTION_SUMMARY_CONTEXT',
           ),
         },
-        ln = Object(ge.e)(function () {
-          return Object(he.createSelector)(nn, an, Yt.r, rn, Gt.d, function (e, t, n, a, r) {
-            var i = Object(Ve.a)(r, { includeInactive: !0 }),
-              o = []
+        on = Object(he.e)(function () {
+          return Object(fe.createSelector)(nn, an, Yt.r, rn, Gt.d, function (e, t, n, a, r) {
+            var i = Object(We.a)(r, { includeInactive: !0 }),
+              l = []
             t.forEach(function (t) {
               var r = e[t] && e[t].data
               if (r && i.includes(r.reaction_key)) {
-                var l = a.find(function (e) {
+                var o = a.find(function (e) {
                     return e && e.id_str === r.sender_id
                   }),
-                  s = l && {
-                    avatarUri: l.profile_image_url_https,
-                    userId: l.id_str,
+                  s = o && {
+                    avatarUri: o.profile_image_url_https,
+                    userId: o.id_str,
                     reactionKey: r.reaction_key,
-                    isLoggedInUser: l.id_str === n,
-                    screenName: l.screen_name,
-                    name: l.name,
-                    isProtected: l.protected,
-                    isVerified: l.verified,
+                    isLoggedInUser: o.id_str === n,
+                    screenName: o.screen_name,
+                    name: o.name,
+                    isProtected: o.protected,
+                    isVerified: o.verified,
                     time: r.time,
                   }
-                s && o.push(s)
+                s && l.push(s)
               }
             }),
-              o.sort(function (e, t) {
+              l.sort(function (e, t) {
                 return t.time - e.time
               })
-            var l = o.findIndex(function (e) {
+            var o = l.findIndex(function (e) {
               return e.userId === n
             })
-            return l > -1 && o.push.apply(o, He()(o.splice(0, l))), { loggedInUserId: n, usersWithReactions: o }
+            return o > -1 && l.push.apply(l, He()(l.splice(0, o))), { loggedInUserId: n, usersWithReactions: l }
           })
-        }, on),
+        }, ln),
         sn = n('TIdA'),
         cn = n('htQn'),
-        un = Ie.a.gf5e9ea6,
-        dn = Ie.a.a2d48778,
+        dn = Ie.a.gf5e9ea6,
+        un = Ie.a.a2d48778,
         pn = sn.a.createLayoutCache()
-      var mn = R.a.create(function (e) {
+      var mn = x.a.create(function (e) {
           return {
             bodyColumn: { flexShrink: 1, flexGrow: 1, justifyContent: 'center', marginHorizontal: e.spaces.space4 },
             body: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
@@ -1464,18 +1464,18 @@
             },
           }
         }),
-        fn = function (e) {
+        gn = function (e) {
           var t = v.a.useContext(E.a).featureSwitches,
             n = e.onUndoPress,
             a = e.renderUndo,
             r = e.user,
             i = e.withBottomBorder,
-            o = r.avatarUri,
-            l = r.isProtected,
+            l = r.avatarUri,
+            o = r.isProtected,
             s = r.isVerified,
             c = r.name,
-            u = r.screenName,
-            d = v.a.useMemo(
+            d = r.screenName,
+            u = v.a.useMemo(
               function () {
                 return function (e) {
                   e.stopPropagation(), n()
@@ -1483,89 +1483,89 @@
               },
               [n],
             ),
-            p = v.a.createElement(z.a, { imageLayoutCache: pn, screenName: u, size: 'xxLarge', uri: o }),
-            m = v.a.createElement(ze, { emojiSize: 'title4', emotion: r.reactionKey, focusable: !1 }),
-            f = v.a.createElement(I.a, {
+            p = v.a.createElement(q.a, { imageLayoutCache: pn, screenName: d, size: 'xxLarge', uri: l }),
+            m = v.a.createElement(qe, { emojiSize: 'title4', emotion: r.reactionKey, focusable: !1 }),
+            g = v.a.createElement(I.a, {
               badgeContext: 'content',
-              isProtected: l,
+              isProtected: o,
               isVerified: s,
               name: c,
-              screenName: u,
+              screenName: d,
               withHoverCard: !0,
               withStackedLayout: !0,
             })
           return v.a.createElement(
             cn.a,
-            { link: { pathname: '/'.concat(u), anchorless: !0 }, style: [mn.root, i && mn.bottomBorder] },
-            v.a.createElement(V.a, { style: mn.reactionColumn }, m),
-            v.a.createElement(V.a, { style: mn.column }, p),
-            v.a.createElement(V.a, { style: mn.bodyColumn }, v.a.createElement(V.a, { style: mn.body }, f)),
+            { link: { pathname: '/'.concat(d), anchorless: !0 }, style: [mn.root, i && mn.bottomBorder] },
+            v.a.createElement(W.a, { style: mn.reactionColumn }, m),
+            v.a.createElement(W.a, { style: mn.column }, p),
+            v.a.createElement(W.a, { style: mn.bodyColumn }, v.a.createElement(W.a, { style: mn.body }, g)),
             a
               ? v.a.createElement(
-                  V.a,
+                  W.a,
                   { style: mn.column },
                   v.a.createElement(
-                    ot.a,
+                    lt.a,
                     {
-                      accessibilityLabel: dn({ emoji: Object(Ve.b)(r.reactionKey, t) }),
-                      onClick: d,
+                      accessibilityLabel: un({ emoji: Object(We.b)(r.reactionKey, t) }),
+                      onClick: u,
                       size: 'small',
                       type: 'brandText',
                     },
-                    un,
+                    dn,
                   ),
                 )
               : null,
           )
         },
-        hn = n('xKuM'),
-        gn = n('efqG'),
+        fn = n('xKuM'),
+        hn = n('efqG'),
         vn = Ie.a.b772cd65,
         yn = Ie.a.c0098d49,
-        bn = Ie.a.j85999eb,
-        _n = (function (e) {
-          u()(n, e)
+        _n = Ie.a.j85999eb,
+        bn = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_renderContent', function (t, n) {
+              g()(s()(e), '_renderContent', function (t, n) {
                 return v.a.createElement(
-                  V.a,
+                  W.a,
                   null,
                   e._renderHeader(t, n),
                   e._renderUsers(t, n),
                   e._renderDoneButton(t, n),
                 )
               }),
-              f()(s()(e), '_renderHeader', function (e, t) {
+              g()(s()(e), '_renderHeader', function (e, t) {
                 return 'sheet' === t
-                  ? v.a.createElement(hn.a, { title: yn })
-                  : v.a.createElement(W.b, { visuallyHidden: !0 }, yn)
+                  ? v.a.createElement(fn.a, { title: yn })
+                  : v.a.createElement(V.b, { visuallyHidden: !0 }, yn)
               }),
-              f()(s()(e), '_renderUsers', function (t, n) {
+              g()(s()(e), '_renderUsers', function (t, n) {
                 return v.a.createElement(
-                  V.a,
-                  { accessibilityLabel: bn, style: [kn.container, 'sheet' === n ? kn.sheet : kn.popover] },
+                  W.a,
+                  { accessibilityLabel: _n, style: [kn.container, 'sheet' === n ? kn.sheet : kn.popover] },
                   e._renderUserCells(t),
                 )
               }),
-              f()(s()(e), '_renderDoneButton', function (e, t) {
+              g()(s()(e), '_renderDoneButton', function (e, t) {
                 return (
                   'sheet' === t &&
                   v.a.createElement(
-                    ot.a,
+                    lt.a,
                     { key: 'button_done', onPress: e, style: kn.cancelButton, type: 'primaryOutlined' },
                     vn,
                   )
                 )
               }),
-              f()(s()(e), '_renderUserCells', function (t) {
+              g()(s()(e), '_renderUserCells', function (t) {
                 return e.props.usersWithReactions.filter(Boolean).map(function (n, a) {
-                  return v.a.createElement(fn, {
+                  return v.a.createElement(gn, {
                     history: e.props.history,
                     key: n.userId,
                     onUndoPress: e._reactionUndoHandler(n.reactionKey, t),
@@ -1575,20 +1575,20 @@
                   })
                 })
               }),
-              f()(s()(e), '_reactionUndoHandler', function (t, n) {
+              g()(s()(e), '_reactionUndoHandler', function (t, n) {
                 return function () {
                   var a = e.props,
                     r = a.conversationId,
                     i = a.createLocalApiErrorHandler,
-                    o = a.entryId,
-                    l = a.fetchUpdatesIfNeeded,
+                    l = a.entryId,
+                    o = a.fetchUpdatesIfNeeded,
                     s = a.loggedInUserId,
                     c = a.removeReaction,
-                    u = { reaction_key: t, conversation_id: r, dm_id: o, perspective: s }
-                  n(), c(u).then(e._handleScribeRemoveReaction(t)).then(l).catch(i())
+                    d = { reaction_key: t, conversation_id: r, dm_id: l, perspective: s }
+                  n(), c(d).then(e._handleScribeRemoveReaction(t)).then(o).catch(i())
                 }
               }),
-              f()(s()(e), '_handleScribeRemoveReaction', function (t) {
+              g()(s()(e), '_handleScribeRemoveReaction', function (t) {
                 return function () {
                   e.props.analytics.scribe({
                     page: 'app',
@@ -1604,13 +1604,13 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.children
                   return v.a.createElement(
-                    gn.a,
+                    hn.a,
                     { renderContent: this._renderContent, withFixedPosition: this.context.isDrawer },
                     e,
                   )
@@ -1620,8 +1620,8 @@
             n
           )
         })(v.a.PureComponent)
-      f()(_n, 'contextType', K.a)
-      var kn = R.a.create(function (e) {
+      g()(bn, 'contextType', K.a)
+      var kn = x.a.create(function (e) {
           return {
             cancelButton: { marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space12 },
             container: { overflowY: 'auto', paddingVertical: e.spaces.space12 },
@@ -1629,42 +1629,42 @@
             sheet: { maxHeight: '65vh' },
           }
         }),
-        Sn = Object(nt.a)(Object(Ye.a)(ln(_n))),
+        Sn = Object(nt.a)(Object(Ye.a)(on(bn))),
         Cn = Ie.a.h95f9e76,
         En = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e) {
             var a
             return (
               r()(this, n),
               (a = t.call(this, e)),
-              f()(s()(a), '_handleScribeDMReactionSummary', function () {
+              g()(s()(a), '_handleScribeDMReactionSummary', function () {
                 a.props.analytics.scribe({ component: 'dm_reaction_summary', action: 'show' })
               }),
-              f()(s()(a), '_onSetReactionsNode', function (e) {
+              g()(s()(a), '_onSetReactionsNode', function (e) {
                 a._measureWidths(e || void 0)
               }),
-              f()(s()(a), '_renderReactions', function (e) {
+              g()(s()(a), '_renderReactions', function (e) {
                 var t = e.isHovered,
                   n = a.props,
                   r = n.reactionsWithCounts,
                   i = n.selectedReactionKey,
-                  o = a.state.emojiSize || 'headline1',
-                  l = r.size - 1
+                  l = a.state.emojiSize || 'headline1',
+                  o = r.size - 1
                 return Array.from(r, function (e, n) {
                   var a = $()(e, 2),
                     r = a[0],
                     s = a[1]
-                  return v.a.createElement(ze, {
+                  return v.a.createElement(qe, {
                     count: s,
-                    emojiSize: o,
+                    emojiSize: l,
                     emotion: r,
                     enableHoverStyle: !1,
                     focusable: !0,
                     key: r,
                     style: [
-                      n === l && Tn.rightPadding,
+                      n === o && Tn.rightPadding,
                       Tn.elementPadding,
                       i === r ? Tn.selfSelect : null,
                       t && Tn.isHoveredDMReaction,
@@ -1677,7 +1677,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -1687,18 +1687,18 @@
                     a = e.isEndOfDM,
                     r = e.isSent,
                     i = e.totalReactionCount,
-                    o = this.state.emojiSize
+                    l = this.state.emojiSize
                   if (0 === i) return null
-                  var l = x.a.generate({ backgroundColor: R.a.theme.colors.gray50, color: R.a.theme.colors.gray700 }),
+                  var o = R.a.generate({ backgroundColor: x.a.theme.colors.gray50, color: x.a.theme.colors.gray700 }),
                     s = Cn({ reactionCount: i })
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     {
                       style: [
                         Tn.container,
                         a ? Tn.marginShort : Tn.marginLong,
                         r ? Tn.alignRight : Tn.alignLeft,
-                        o ? Tn.visible : Tn.invisible,
+                        l ? Tn.visible : Tn.invisible,
                       ],
                     },
                     v.a.createElement(
@@ -1709,7 +1709,7 @@
                         {
                           accessibilityLabel: s,
                           focusable: !0,
-                          interactiveStyles: l,
+                          interactiveStyles: o,
                           onPress: this._handleScribeDMReactionSummary,
                           ref: this._onSetReactionsNode,
                           style: Tn.content,
@@ -1737,7 +1737,7 @@
             n
           )
         })(v.a.PureComponent),
-        Tn = R.a.create(function (e) {
+        Tn = x.a.create(function (e) {
           return {
             container: { boxSizing: 'border-box' },
             content: { borderRadius: e.borderRadii.infinite, display: 'flex', flexDirection: 'row' },
@@ -1749,7 +1749,7 @@
               paddingTop: e.spaces.space2,
               paddingLeft: 'calc('.concat(e.spaces.space2, ' * 2)'),
             },
-            selfSelect: { borderColor: R.a.theme.colors.gray50, borderRadius: e.borderRadii.infinite },
+            selfSelect: { borderColor: x.a.theme.colors.gray50, borderRadius: e.borderRadii.infinite },
             alignLeft: { alignSelf: 'flex-start' },
             alignRight: { alignSelf: 'flex-end' },
             invisible: { opacity: 0 },
@@ -1760,20 +1760,20 @@
           }
         }),
         wn = Object(Ye.a)($t(En)),
-        xn = n('Xrkv'),
-        Rn = Ie.a.icd0bf34,
+        Rn = n('Xrkv'),
+        xn = Ie.a.icd0bf34,
         Fn = Ie.a.e8bd8fec,
         An = Ie.a.b2d32fad,
         In = Ie.a.a763d33e,
         On = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e) {
             var a
             return (
               r()(this, n),
               (a = t.call(this, e)),
-              f()(s()(a), '_handlePress', function (e) {
+              g()(s()(a), '_handlePress', function (e) {
                 e.stopPropagation(), a.setState({ showFullList: !0 })
               }),
               (a.state = { showFullList: !1 }),
@@ -1781,7 +1781,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -1790,10 +1790,10 @@
                     n = e.isSeenByEveryone,
                     a = e.namesToDisplay
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     { style: Mn.root },
                     v.a.createElement(
-                      W.b,
+                      V.b,
                       { align: 'right', color: 'gray700', size: 'subtext2', style: Mn.seenLabel },
                       this._renderSeenLabel(),
                     ),
@@ -1808,7 +1808,7 @@
                     t = e.isGroupDM,
                     n = e.isSeenByEveryone,
                     a = e.namesToDisplay
-                  return n ? (t ? An : Rn) : a.length ? In({ count: a.length }) : Fn
+                  return n ? (t ? An : xn) : a.length ? In({ count: a.length }) : Fn
                 },
               },
               {
@@ -1824,20 +1824,20 @@
                       return v.a.createElement(
                         Ie.a.I18NFormatMessage,
                         { $i18n: 'f6464106' },
-                        v.a.createElement(W.b, null, n),
+                        v.a.createElement(V.b, null, n),
                         v.a.createElement(
-                          W.b,
+                          V.b,
                           { color: 'link', onPress: e._handlePress },
                           Ie.a.d7a0722f({ othersCount: a }),
                         ),
                       )
                     }
                   n && (t = t.slice(0, 10))
-                  var i = Object(xn.a)(t, n)
+                  var i = Object(Rn.a)(t, n)
                   return v.a.createElement(
-                    W.b,
+                    V.b,
                     { align: 'right', color: 'gray700', size: 'subtext2', style: Mn.namesList },
-                    n ? v.a.createElement(r, { namesList: i, othersCount: a }) : v.a.createElement(W.b, null, i),
+                    n ? v.a.createElement(r, { namesList: i, othersCount: a }) : v.a.createElement(V.b, null, i),
                   )
                 },
               },
@@ -1845,7 +1845,7 @@
             n
           )
         })(v.a.PureComponent),
-        Mn = R.a.create(function (e) {
+        Mn = x.a.create(function (e) {
           return {
             root: { alignItems: 'flex-end', width: 'calc(100% - '.concat(e.spaces.space2, ')') },
             seenLabel: { cursor: 'pointer' },
@@ -1868,11 +1868,11 @@
           return n.reduce(function (e, n) {
             var r = n.join_conversation_event_id,
               i = n.last_read_event_id,
-              o = n.user.name,
-              l = n.user_id !== a.id_str,
+              l = n.user.name,
+              o = n.user_id !== a.id_str,
               s = i && 1 !== Object(Dn.a)(t, i),
               c = !r || 1 !== Object(Dn.a)(r, t)
-            return l && s && c && e.push(o), e
+            return o && s && c && e.push(l), e
           }, [])
         },
         Bn = n('IMYl'),
@@ -1880,28 +1880,28 @@
         Un = n('gmpV'),
         Nn = Ie.a.fad48ee9,
         Hn = Ie.a.ba60339a,
-        Vn = Ie.a.d338f53e,
-        Wn = Ie.a.ae7d7a24,
-        zn = Ie.a.d725a288,
-        qn = Ie.a.bbe74f3f,
+        Wn = Ie.a.d338f53e,
+        Vn = Ie.a.ae7d7a24,
+        qn = Ie.a.d725a288,
+        zn = Ie.a.bbe74f3f,
         Gn = Ie.a.h0e4cdf4,
         Yn = Ie.a.bfbc051c,
         Qn = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_handleRemove', function () {
+              g()(s()(e), '_handleRemove', function () {
                 var t = e.props,
                   n = t.conversationId,
                   a = t.entryId
                 ;(0, t.removeEntry)(n, null, { id: a })
               }),
-              f()(s()(e), '_handleTryAgain', function () {
+              g()(s()(e), '_handleTryAgain', function () {
                 var t = e.props,
                   n = t.conversationId,
                   a = t.entryText,
@@ -1919,7 +1919,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -1929,19 +1929,19 @@
                     a = this._renderSending(),
                     r = this._renderError(),
                     i = this._renderTimestamp(),
-                    o = this._renderReadReceipt(),
-                    l = this._renderSentCheckmark(),
+                    l = this._renderReadReceipt(),
+                    o = this._renderSentCheckmark(),
                     s = this._renderReactions(),
-                    c = i || o || l,
-                    u = a || r || s || c,
-                    d =
+                    c = i || l || o,
+                    d = a || r || s || c,
+                    u =
                       this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                       this.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled')
                   return (
-                    u &&
+                    d &&
                     v.a.createElement(
-                      V.a,
-                      { style: [Xn.root, d && Xn.vdlRootMargin, t && Xn.sentMessage] },
+                      W.a,
+                      { style: [Xn.root, u && Xn.vdlRootMargin, t && Xn.sentMessage] },
                       a,
                       r,
                       s,
@@ -1949,8 +1949,8 @@
                         ? v.a.createElement(
                             A.a,
                             { interactiveStyles: null, onPress: n, style: t && Xn.sentContainer },
-                            v.a.createElement(V.a, { style: t && Xn.groupedItems }, i, l),
-                            o,
+                            v.a.createElement(W.a, { style: t && Xn.groupedItems }, i, o),
+                            l,
                           )
                         : null,
                     )
@@ -1963,14 +1963,14 @@
                   return (
                     this.props.isError &&
                     v.a.createElement(
-                      V.a,
+                      W.a,
                       null,
-                      v.a.createElement(W.b, { align: 'right', color: 'gray700', size: 'subtext2' }, Wn),
+                      v.a.createElement(V.b, { align: 'right', color: 'gray700', size: 'subtext2' }, Vn),
                       v.a.createElement(
-                        V.a,
+                        W.a,
                         { style: Xn.groupedItems },
                         v.a.createElement(
-                          W.b,
+                          V.b,
                           {
                             accessibilityRole: 'button',
                             color: 'magenta500',
@@ -1982,7 +1982,7 @@
                         ),
                         v.a.createElement(jn.a, null),
                         v.a.createElement(
-                          W.b,
+                          V.b,
                           {
                             accessibilityRole: 'button',
                             color: 'primary',
@@ -1990,7 +1990,7 @@
                             size: 'subtext2',
                             withInteractiveStyling: !0,
                           },
-                          Vn,
+                          Wn,
                         ),
                       ),
                     )
@@ -2006,13 +2006,13 @@
                     a = e.isLastRapidFire,
                     r = e.isRapidFire,
                     i = e.isSent,
-                    o = e.withUserAvatar,
-                    l = !r || a
+                    l = e.withUserAvatar,
+                    o = !r || a
                   return t
                     ? v.a.createElement(
-                        V.a,
-                        { style: o && Xn.footerPadderWithAvatar },
-                        v.a.createElement(wn, { conversationId: t, entryId: n, isEndOfDM: l, isSent: i }),
+                        W.a,
+                        { style: l && Xn.footerPadderWithAvatar },
+                        v.a.createElement(wn, { conversationId: t, entryId: n, isEndOfDM: o, isSent: i }),
                       )
                     : null
                 },
@@ -2026,11 +2026,11 @@
                     a = e.isDraft,
                     r = e.isError,
                     i = e.isGroupDM,
-                    o = e.isSent,
-                    l = e.participants,
+                    l = e.isSent,
+                    o = e.participants,
                     s = e.user
-                  return n && o && !a && !r
-                    ? v.a.createElement(Ln, Vt()({ isGroupDM: i }, Pn({ entryId: t, participants: l, user: s })))
+                  return n && l && !a && !r
+                    ? v.a.createElement(Ln, Wt()({ isGroupDM: i }, Pn({ entryId: t, participants: o, user: s })))
                     : null
                 },
               },
@@ -2040,7 +2040,7 @@
                   var e = this.props,
                     t = e.isDraft,
                     n = e.isError
-                  return t && !n && v.a.createElement(W.b, { align: 'right', color: 'gray700', size: 'subtext2' }, Nn)
+                  return t && !n && v.a.createElement(V.b, { align: 'right', color: 'gray700', size: 'subtext2' }, Nn)
                 },
               },
               {
@@ -2052,14 +2052,14 @@
                     a = e.isError,
                     r = e.isLastRapidFire,
                     i = e.isRapidFire,
-                    o = e.isSent,
-                    l = e.participants,
+                    l = e.isSent,
+                    o = e.participants,
                     s = e.user,
-                    c = Pn({ entryId: t, participants: l, user: s }).isSeenByEveryone
-                  return !o || n || a || (i && !r)
+                    c = Pn({ entryId: t, participants: o, user: s }).isSeenByEveryone
+                  return !l || n || a || (i && !r)
                     ? null
                     : v.a.createElement(
-                        W.b,
+                        V.b,
                         { color: c ? 'primary' : 'gray700', style: Xn.checkmarkContainer },
                         v.a.createElement(Bn.a, { style: Xn.checkmark }),
                       )
@@ -2074,30 +2074,30 @@
                     a = e.isError,
                     r = e.isGroupDM,
                     i = e.isLastRapidFire,
-                    o = e.isRapidFire,
-                    l = e.isSent,
+                    l = e.isRapidFire,
+                    o = e.isSent,
                     s = e.user.name,
                     c = e.withUserAvatar
-                  if (n || a || (o && !i)) return null
-                  var u,
-                    d = new Date(Number(t))
-                  u = Object(Un.c)(d) ? zn(d) : Object(Un.d)(d) ? qn({ time: zn(d) }) : Object(Un.e)(d) ? Gn(d) : Yn(d)
-                  var p = r && !l,
-                    m = l ? 'right' : 'left'
+                  if (n || a || (l && !i)) return null
+                  var d,
+                    u = new Date(Number(t))
+                  d = Object(Un.c)(u) ? qn(u) : Object(Un.d)(u) ? zn({ time: qn(u) }) : Object(Un.e)(u) ? Gn(u) : Yn(u)
+                  var p = r && !o,
+                    m = o ? 'right' : 'left'
                   return v.a.createElement(
-                    V.a,
-                    { style: [c && Xn.footerPadderWithAvatar, l && Xn.timestamp] },
+                    W.a,
+                    { style: [c && Xn.footerPadderWithAvatar, o && Xn.timestamp] },
                     v.a.createElement(
-                      W.b,
-                      { align: m, color: 'gray700', size: 'subtext2', withInteractiveStyling: l || !lt.a.isEnabled },
+                      V.b,
+                      { align: m, color: 'gray700', size: 'subtext2', withInteractiveStyling: o || !ot.a.isEnabled },
                       p &&
                         v.a.createElement(
                           Ie.a.I18NFormatMessage,
                           { $i18n: 'c8b914d4' },
-                          v.a.createElement(W.b, null, s),
+                          v.a.createElement(V.b, null, s),
                         ),
                       p && ' ',
-                      u,
+                      d,
                     ),
                   )
                 },
@@ -2106,10 +2106,10 @@
             n
           )
         })(v.a.PureComponent)
-      f()(Qn, 'contextType', E.a)
-      var Xn = R.a.create(function (e) {
+      g()(Qn, 'contextType', E.a)
+      var Xn = x.a.create(function (e) {
           return {
-            root: { marginTop: e.spaces.space2, overflow: 'hidden', width: qt },
+            root: { marginTop: e.spaces.space2, overflow: 'hidden', width: zt },
             vdlRootMargin: { marginTop: 'calc('.concat(e.spaces.space8, ' - ').concat(e.spaces.space2, ')') },
             sentMessage: { alignSelf: 'flex-end', justifyContent: 'flex-end' },
             sentContainer: { flexDirection: 'column' },
@@ -2122,9 +2122,9 @@
             },
           }
         }),
-        Jn = zt(Qn),
+        Jn = qt(Qn),
         Zn = n('jtO7'),
-        $n = R.a.create(function (e) {
+        $n = x.a.create(function (e) {
           return {
             root: {
               borderColor: e.colors.gray50,
@@ -2149,8 +2149,8 @@
             a = e.isSent,
             r = e.label,
             i = e.onClick,
-            o = e.outsideTopRounded,
-            l = e.tcoUrl,
+            l = e.outsideTopRounded,
+            o = e.tcoUrl,
             s = [
               $n.root,
               n && $n.isLast,
@@ -2158,24 +2158,24 @@
               n && !a && $n.receivedLast,
               t && a && $n.insideTopRoundedSent,
               t && !a && $n.insideTopRoundedReceived,
-              o && a && $n.outsideTopRoundedSent,
-              o && !a && $n.outsideTopRoundedReceived,
+              l && a && $n.outsideTopRoundedSent,
+              l && !a && $n.outsideTopRoundedReceived,
             ]
           return v.a.createElement(
-            V.a,
+            W.a,
             { style: s },
-            v.a.createElement(Zn.a, { align: 'center', color: 'primary', label: r, link: l, onClick: i }),
+            v.a.createElement(Zn.a, { align: 'center', color: 'primary', label: r, link: o, onClick: i }),
           )
         },
         ta = n('fs1G'),
         na = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             return r()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2191,36 +2191,36 @@
                     a = e.onCtaClick,
                     r = e.withSticker,
                     i = e.withUserText,
-                    o = t.map(function (e, o) {
-                      var l = 0 === o
+                    l = t.map(function (e, l) {
+                      var o = 0 === l
                       return v.a.createElement(ea, {
-                        insideTopRounded: l && (r || !i),
-                        isLast: o === t.length - 1,
+                        insideTopRounded: o && (r || !i),
+                        isLast: l === t.length - 1,
                         isSent: n,
-                        key: o,
+                        key: l,
                         label: e.label,
                         onClick: a,
-                        outsideTopRounded: l && r,
+                        outsideTopRounded: o && r,
                         tcoUrl: e.tco_url,
                       })
                     })
-                  return v.a.createElement(V.a, null, o)
+                  return v.a.createElement(W.a, null, l)
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      f()(na, 'defaultProps', { onCtaClick: ta.a, onImpression: ta.a })
+      g()(na, 'defaultProps', { onCtaClick: ta.a, onImpression: ta.a })
       var aa = na,
         ra = (n('1IsZ'), n('vjRr')),
         ia = n('EGrD'),
-        oa = function (e, t) {
+        la = function (e, t) {
           return t.cardUrl
         },
-        la = Object(Te.a)()
+        oa = Object(Te.a)()
           .propsFromState(function () {
-            return { adFreeArticleDomains: ia.c, card: ra.a.createSingleHydratedSelector(oa) }
+            return { adFreeArticleDomains: ia.c, card: ra.a.createSingleHydratedSelector(la) }
           })
           .propsFromActions(function () {
             return {
@@ -2230,7 +2230,7 @@
               popOutConversation: C.popOutConversation,
             }
           }),
-        sa = R.a.create(function (e) {
+        sa = x.a.create(function (e) {
           return { root: { width: '100%' }, invisible: { opacity: 0 }, visible: { opacity: 1 } }
         }),
         ca = function (e) {
@@ -2239,74 +2239,74 @@
             a = e.isVisible,
             r = void 0 === a || a,
             i = e.textContent
-          return v.a.createElement(V.a, { style: [r ? sa.visible : sa.invisible, sa.root] }, n, t, i)
+          return v.a.createElement(W.a, { style: [r ? sa.visible : sa.invisible, sa.root] }, n, t, i)
         },
-        ua = n('cTG8'),
-        da = function (e) {
+        da = n('cTG8'),
+        ua = function (e) {
           var t = e.excludeCardUrl,
             n = e.isActive,
             a = void 0 !== n && n,
             r = e.isFailedDraft,
             i = e.isFirstRapidFire,
-            o = void 0 !== i && i,
-            l = e.isRapidFire,
-            s = void 0 !== l && l,
+            l = void 0 !== i && i,
+            o = e.isRapidFire,
+            s = void 0 !== o && o,
             c = e.isSent,
-            u = e.hasAssociatedAttachment,
-            d = e.messageData,
-            p = void 0 === d ? {} : d,
+            d = e.hasAssociatedAttachment,
+            u = e.messageData,
+            p = void 0 === u ? {} : u,
             m = e.rootStyle,
-            f = e.tweetId,
-            h = e.withCta,
-            g = e.withMediaLinks,
+            g = e.tweetId,
+            f = e.withCta,
+            h = e.withMediaLinks,
             y = e.withMessageBubble,
-            b = v.a.useContext(E.a).featureSwitches,
-            _ = b.isTrue('dm_vdl_enabled') && b.isTrue('dm_vdl_chat_p0_enabled'),
+            _ = v.a.useContext(E.a).featureSwitches,
+            b = _.isTrue('dm_vdl_enabled') && _.isTrue('dm_vdl_chat_p0_enabled'),
             k = [
               m,
               y && pa.messageTextContainer,
               y && c && pa.sent,
               y && !c && pa.received,
               r && pa.failedDraft,
-              s && !o && !c && pa.rapidFireReceived,
-              s && !o && c && pa.rapidFireSent,
-              u && c && pa.hasAssociatedAttachmentSent,
-              u && !c && pa.hasAssociatedAttachmentReceived,
-              y && _ && c && pa.vdlSent,
+              s && !l && !c && pa.rapidFireReceived,
+              s && !l && c && pa.rapidFireSent,
+              d && c && pa.hasAssociatedAttachmentSent,
+              d && !c && pa.hasAssociatedAttachmentReceived,
+              y && b && c && pa.vdlSent,
               y && a && c && pa.activeSent,
-              y && _ && a && c && pa.vdlActiveSent,
-              y && a && !c && !lt.a.isEnabled && pa.activeReceived,
-              h && pa.withCta,
+              y && b && a && c && pa.vdlActiveSent,
+              y && a && !c && !ot.a.isEnabled && pa.activeReceived,
+              f && pa.withCta,
             ],
             S = [pa.tweetText, y && pa.textAlignLeft, !y && c && pa.textAlignRight],
-            C = R.a.theme.colors,
+            C = x.a.theme.colors,
             T = C.gray0,
             w = C.magenta500,
             F = C.primary,
             I = C.text,
             O = C.white,
-            M = x.a.generate({ color: c ? O : I, backgroundColor: r ? w : c ? F : T }),
+            M = R.a.generate({ color: c ? O : I, backgroundColor: r ? w : c ? F : T }),
             L = (p.text && p.text.length) || 0
           return v.a.createElement(
             A.a,
             { accessibilityRole: 'none', interactive: c, interactiveStyles: y ? M : null, style: k },
-            v.a.createElement(ua.a, {
-              color: R.a.isDarkMode() || c ? 'whiteOnColor' : void 0,
+            v.a.createElement(da.a, {
+              color: x.a.isDarkMode() || c ? 'whiteOnColor' : void 0,
               displayTextRange: [0, L],
               entities: p.entities,
               excludeCardUrl: t,
-              linkColor: (y && c) || R.a.isDarkMode() ? 'whiteOnColor' : 'link',
+              linkColor: (y && c) || x.a.isDarkMode() ? 'whiteOnColor' : 'link',
               linkify: !0,
-              quotedTweetId: f,
+              quotedTweetId: g,
               size: y ? void 0 : 'title2',
               style: S,
               text: p.text || '',
               underlineLinks: !0,
-              withMediaLinks: g,
+              withMediaLinks: h,
             }),
           )
         },
-        pa = R.a.create(function (e) {
+        pa = x.a.create(function (e) {
           return {
             tweetText: { overflow: 'hidden', wordBreak: 'break-word' },
             messageTextContainer: {
@@ -2342,83 +2342,83 @@
             hasAssociatedAttachmentReceived: { borderTopLeftRadius: e.borderRadii.none },
           }
         })
-      da.defaultProps = { withMediaLinks: !1 }
-      var ma = da,
-        fa = function (e) {
+      ua.defaultProps = { withMediaLinks: !1 }
+      var ma = ua,
+        ga = function (e) {
           var t = e.isActive,
             n = void 0 !== t && t,
             a = e.isFailedDraft,
             r = e.isFirstRapidFire,
             i = void 0 !== r && r,
-            o = e.isRapidFire,
-            l = void 0 !== o && o,
+            l = e.isRapidFire,
+            o = void 0 !== l && l,
             s = e.isSent,
             c = e.messageData,
-            u = e.withCta,
-            d = e.withMessageBubble
+            d = e.withCta,
+            u = e.withMessageBubble
           return v.a.createElement(ma, {
             isActive: n,
             isFailedDraft: a,
             isFirstRapidFire: i,
-            isRapidFire: l,
+            isRapidFire: o,
             isSent: s,
             messageData: c,
-            withCta: u,
+            withCta: d,
             withMediaLinks: !0,
-            withMessageBubble: d,
+            withMessageBubble: u,
           })
         },
-        ha = n('LSr9'),
-        ga = n('aX4+'),
+        fa = n('LSr9'),
+        ha = n('aX4+'),
         va = n('/Ikv'),
         ya = va.a.CardNames,
-        ba = (function (e) {
-          u()(n, e)
+        _a = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e, a
             r()(this, n)
-            for (var i = arguments.length, o = new Array(i), l = 0; l < i; l++) o[l] = arguments[l]
+            for (var i = arguments.length, l = new Array(i), o = 0; o < i; o++) l[o] = arguments[o]
             return (
-              (a = t.call.apply(t, [this].concat(o))),
-              f()(s()(a), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
-              f()(
+              (a = t.call.apply(t, [this].concat(l))),
+              g()(s()(a), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
+              g()(
                 s()(a),
                 '_hasClaimsForAdFreeArticles',
                 null === (e = a.context.userClaims) || void 0 === e
                   ? void 0
                   : e.isTrueAndEnabled('subscriptions_feature_1006'),
               ),
-              f()(s()(a), '_handleAttachmentLayout', function (e) {
+              g()(s()(a), '_handleAttachmentLayout', function (e) {
                 var t = e.nativeEvent.layout.width
                 if (a.state.attachmentWidth !== t) {
                   var n = { attachmentWidth: t }
                   a.setState(n)
                 }
               }),
-              f()(s()(a), '_handleOnClick', function (e) {
+              g()(s()(a), '_handleOnClick', function (e) {
                 var t = a.props,
                   n = t.card,
                   r = (n = void 0 === n ? {} : n).binding_values,
                   i = t.conversationId,
-                  o = t.popOutConversation
-                if ((i && o(i), a._hasClaimsForAdFreeArticles)) {
-                  var l = a.props,
-                    s = l.adFreeArticleDomains,
-                    c = l.createLocalApiErrorHandler,
-                    u = l.fetchAdFreeToken,
-                    d = new ha.a(u, c()).getAdFreeArticlesClickHandler({
+                  l = t.popOutConversation
+                if ((i && l(i), a._hasClaimsForAdFreeArticles)) {
+                  var o = a.props,
+                    s = o.adFreeArticleDomains,
+                    c = o.createLocalApiErrorHandler,
+                    d = o.fetchAdFreeToken,
+                    u = new fa.a(d, c()).getAdFreeArticlesClickHandler({
                       destinationUrl: va.a.getBindingValue(r, 'card_url'),
                       linkDomain: va.a.getBindingValue(r, 'domain'),
                       adFreeArticleDomains: s,
                     }),
-                    p = $()(d, 2),
+                    p = $()(u, 2),
                     m = p[0],
-                    f = p[1]
-                  m && f(e)
+                    g = p[1]
+                  m && g(e)
                 }
               }),
-              f()(s()(a), '_handleTextContentLayout', function (e) {
+              g()(s()(a), '_handleTextContentLayout', function (e) {
                 var t = e.nativeEvent.layout.width
                 if (a.state.textContentWidth !== t) {
                   var n = { textContentWidth: t }
@@ -2429,7 +2429,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2445,39 +2445,39 @@
                     a = e.isActive,
                     r = e.isFailedDraft,
                     i = e.isFirstRapidFire,
-                    o = e.isRapidFire,
-                    l = e.isSent,
+                    l = e.isRapidFire,
+                    o = e.isSent,
                     s = e.messageData,
                     c = e.withCta,
-                    u = e.withMessageBubble,
-                    d = this.state,
-                    p = d.attachmentWidth,
-                    m = d.textContentWidth,
-                    f = !!Object.values(ya).includes(null == t ? void 0 : t.name),
-                    h = ht(n, p, m),
-                    g = h.isAttachmentSquared ? 'both' : l ? 'right' : 'left',
+                    d = e.withMessageBubble,
+                    u = this.state,
+                    p = u.attachmentWidth,
+                    m = u.textContentWidth,
+                    g = !!Object.values(ya).includes(null == t ? void 0 : t.name),
+                    f = ft(n, p, m),
+                    h = f.isAttachmentSquared ? 'both' : o ? 'right' : 'left',
                     y =
                       this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                       this.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-                    b = t
+                    _ = t
                       ? v.a.createElement(
-                          V.a,
+                          W.a,
                           { onClick: this._handleOnClick, onLayout: this._handleAttachmentLayout },
-                          v.a.createElement(ga.a, {
+                          v.a.createElement(ha.a, {
                             card: { name: t.name, url: t.url, binding_values: t.binding_values, users: t.users },
                             cardContext: { tweetUserId: s.sender_id },
-                            dmSentOrReceived: l ? 'sent' : 'received',
+                            dmSentOrReceived: o ? 'sent' : 'received',
                             withBorderShadow: y,
-                            withSquareBottomBorderRadius: g,
+                            withSquareBottomBorderRadius: h,
                           }),
                         )
                       : null,
-                    _ = n
+                    b = n
                       ? v.a.createElement(
-                          V.a,
+                          W.a,
                           {
                             onLayout: this._handleTextContentLayout,
-                            style: l ? _a.sentMessageWrapper : _a.receivedMessageWrapper,
+                            style: o ? ba.sentMessageWrapper : ba.receivedMessageWrapper,
                           },
                           v.a.createElement(ma, {
                             excludeCardUrl: null == t ? void 0 : t.url,
@@ -2485,26 +2485,26 @@
                             isActive: a,
                             isFailedDraft: r,
                             isFirstRapidFire: i,
-                            isRapidFire: o,
-                            isSent: l,
+                            isRapidFire: l,
+                            isSent: o,
                             messageData: s,
-                            rootStyle: h.isTextSquared ? (l ? _a.textSentSquared : _a.textReceivedSquared) : void 0,
+                            rootStyle: f.isTextSquared ? (o ? ba.textSentSquared : ba.textReceivedSquared) : void 0,
                             withCta: c,
-                            withMessageBubble: u,
+                            withMessageBubble: d,
                           }),
                         )
                       : null
-                  return f
-                    ? v.a.createElement(ca, { attachmentContent: b, isVisible: h.compositeRendered, textContent: _ })
-                    : v.a.createElement(fa, {
+                  return g
+                    ? v.a.createElement(ca, { attachmentContent: _, isVisible: f.compositeRendered, textContent: b })
+                    : v.a.createElement(ga, {
                         isActive: a,
                         isFailedDraft: r,
                         isFirstRapidFire: i,
-                        isRapidFire: o,
-                        isSent: l,
+                        isRapidFire: l,
+                        isSent: o,
                         messageData: s,
                         withCta: c,
-                        withMessageBubble: u,
+                        withMessageBubble: d,
                       })
                 },
               },
@@ -2512,8 +2512,8 @@
             n
           )
         })(v.a.Component)
-      f()(ba, 'defaultProps', { hasUserText: !1 }), f()(ba, 'contextType', E.a)
-      var _a = R.a.create(function (e) {
+      g()(_a, 'defaultProps', { hasUserText: !1 }), g()(_a, 'contextType', E.a)
+      var ba = x.a.create(function (e) {
           return {
             attachmentReceivedSquared: { borderBottomRightRadius: e.borderRadii.none },
             attachmentSentSquared: { borderBottomLeftRadius: e.borderRadii.none },
@@ -2526,28 +2526,28 @@
             textSentSquared: { borderTopLeftRadius: e.borderRadii.none },
           }
         }),
-        ka = la(ba),
+        ka = oa(_a),
         Sa = Ie.a.f720438f,
         Ca = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
-              f()(s()(e), '_getSquareBottomStyles', function (t) {
+              g()(s()(e), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
+              g()(s()(e), '_getSquareBottomStyles', function (t) {
                 var n = e.props.isSent,
                   a = 'left'
                 return t ? (a = 'both') : n && (a = 'right'), Ea[a]
               }),
-              f()(s()(e), '_handleAttachmentLayout', function (t) {
+              g()(s()(e), '_handleAttachmentLayout', function (t) {
                 var n = t.nativeEvent.layout.width
                 e.state.attachmentWidth !== n && e.setState({ attachmentWidth: n })
               }),
-              f()(s()(e), '_handleTextContentLayout', function (t) {
+              g()(s()(e), '_handleTextContentLayout', function (t) {
                 var n = t.nativeEvent.layout.width
                 e.state.textContentWidth !== n && e.setState({ textContentWidth: n })
               }),
@@ -2555,7 +2555,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -2565,35 +2565,35 @@
                     a = e.isFailedDraft,
                     r = e.isFirstRapidFire,
                     i = e.isRapidFire,
-                    o = e.isSent,
-                    l = e.messageData,
+                    l = e.isSent,
+                    o = e.messageData,
                     s = e.withCta,
                     c = e.withMessageBubble,
-                    u = this.state,
-                    d = u.attachmentWidth,
-                    p = u.textContentWidth
-                  if (!l || !l.attachment || !l.attachment.fleet) return null
-                  var m = ht(t, d, p),
-                    f = m.compositeRendered,
-                    h = m.isAttachmentSquared,
-                    g = m.isTextSquared,
+                    d = this.state,
+                    u = d.attachmentWidth,
+                    p = d.textContentWidth
+                  if (!o || !o.attachment || !o.attachment.fleet) return null
+                  var m = ft(t, u, p),
+                    g = m.compositeRendered,
+                    f = m.isAttachmentSquared,
+                    h = m.isTextSquared,
                     y = [
                       Ta.tombstoneWrapper,
-                      o ? Ta.sentMessageWrapper : Ta.receivedMessageWrapper,
-                      this._getSquareBottomStyles(h),
+                      l ? Ta.sentMessageWrapper : Ta.receivedMessageWrapper,
+                      this._getSquareBottomStyles(f),
                     ],
-                    b = v.a.createElement(
-                      V.a,
+                    _ = v.a.createElement(
+                      W.a,
                       { onLayout: this._handleAttachmentLayout, style: y },
-                      v.a.createElement(W.b, { color: 'gray700' }, Sa),
+                      v.a.createElement(V.b, { color: 'gray700' }, Sa),
                     ),
-                    _ = t
+                    b = t
                       ? v.a.createElement(
-                          V.a,
+                          W.a,
                           {
                             onLayout: this._handleTextContentLayout,
                             style: [
-                              o ? Ta.sentMessageWrapper : Ta.receivedMessageWrapper,
+                              l ? Ta.sentMessageWrapper : Ta.receivedMessageWrapper,
                               !c && Ta.fleetReactionSpacing,
                             ],
                           },
@@ -2603,29 +2603,29 @@
                             isFailedDraft: a,
                             isFirstRapidFire: r,
                             isRapidFire: i,
-                            isSent: o,
-                            messageData: l,
-                            rootStyle: g ? (o ? Ta.sentSquared : Ta.receivedSquared) : void 0,
+                            isSent: l,
+                            messageData: o,
+                            rootStyle: h ? (l ? Ta.sentSquared : Ta.receivedSquared) : void 0,
                             withCta: s,
                             withMessageBubble: c,
                           }),
                         )
                       : null
-                  return v.a.createElement(ca, { attachmentContent: b, isVisible: f, textContent: _ })
+                  return v.a.createElement(ca, { attachmentContent: _, isVisible: g, textContent: b })
                 },
               },
             ]),
             n
           )
         })(v.a.Component),
-        Ea = R.a.create(function (e) {
+        Ea = x.a.create(function (e) {
           return {
             both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
             left: { borderBottomLeftRadius: e.borderRadii.none },
             right: { borderBottomRightRadius: e.borderRadii.none },
           }
         }),
-        Ta = R.a.create(function (e) {
+        Ta = x.a.create(function (e) {
           return {
             fleetReactionSpacing: { marginTop: e.spaces.space4 },
             receivedMessageWrapper: { alignSelf: 'flex-start' },
@@ -2646,8 +2646,8 @@
           }
         }),
         wa = Ca,
-        xa = (n('849X'), n('TJCb'), n('prG5')),
-        Ra = n('RCZO'),
+        Ra = (n('849X'), n('TJCb'), n('prG5')),
+        xa = n('RCZO'),
         Fa = n('A91F'),
         Aa = Ie.a.b327c129,
         Ia = function (e) {
@@ -2659,14 +2659,14 @@
             a = t.ext_alt_text || Aa,
             r = t.media_url_https,
             i = t.original_info || {},
-            o = i.height,
-            l = i.width,
-            s = Object(Ra.b)(t).rgb,
-            c = v.a.createElement(xa.a, {
+            l = i.height,
+            o = i.width,
+            s = Object(xa.b)(t).rgb,
+            c = v.a.createElement(Ra.a, {
               accessibilityLabel: a,
               aspectMode: Fa.a.withinRange(9 / 16, 10),
               backgroundColor: s,
-              image: { url: r, width: l, height: o },
+              image: { url: r, width: o, height: l },
               shouldShowAltLabel: !!t.ext_alt_text,
             })
           return n ? v.a.createElement(A.a, { interactiveStyles: null, link: n, onPress: Ia }, c) : c
@@ -2682,30 +2682,30 @@
           return a
             ? v.a.createElement(
                 Ma.a,
-                Vt()({}, a, { aspectRatio: Pa.a.getAspectRatio(t.video_info), withPostPlayback: !0 }),
+                Wt()({}, a, { aspectRatio: Pa.a.getAspectRatio(t.video_info), withPostPlayback: !0 }),
               )
             : null
         },
         Ba = Object(Te.a)().withAnalytics(),
         ja = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e, a) {
             var i
             return (
               r()(this, n),
               (i = t.call(this, e, a)),
-              f()(s()(i), '_handleLayout', function (e) {
+              g()(s()(i), '_handleLayout', function (e) {
                 var t = e.nativeEvent.layout.width
                 i.state.width !== t && i.setState({ width: t })
               }),
-              f()(s()(i), '_getElement', function () {
+              g()(s()(i), '_getElement', function () {
                 var e = i.props,
                   t = e.contentType,
                   n = e.isSensitive
                 return ''.concat(n ? 'sensitive' : 'untrusted', '_').concat(t, '_interstitial')
               }),
-              f()(s()(i), '_handleClick', function () {
+              g()(s()(i), '_handleClick', function () {
                 var e = i.props.analytics
                 i.setState({ hide: !1 }), e.scribe({ element: i._getElement(), action: 'reveal' })
               }),
@@ -2714,7 +2714,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2730,26 +2730,26 @@
                     a = e.description,
                     r = e.withSquareBottomBorderRadius,
                     i = this.state,
-                    o = i.hide,
-                    l = i.width < R.a.theme.breakpoints.micro
-                  return o
+                    l = i.hide,
+                    o = i.width < x.a.theme.breakpoints.micro
+                  return l
                     ? v.a.createElement(
-                        V.a,
+                        W.a,
                         {
                           focusable: !0,
                           onLayout: this._handleLayout,
                           style: [
                             Na.root,
-                            l ? { flexDirection: 'column' } : { flexDirection: 'row', alignItems: 'center' },
+                            o ? { flexDirection: 'column' } : { flexDirection: 'row', alignItems: 'center' },
                             r && Ua[r],
                           ],
                         },
-                        v.a.createElement(V.a, { style: Na.description }, v.a.createElement(W.b, null, a)),
+                        v.a.createElement(W.a, { style: Na.description }, v.a.createElement(V.b, null, a)),
                         v.a.createElement(
-                          V.a,
-                          { style: [Na.button, l ? Na.breakButtonWrapper : void 0] },
+                          W.a,
+                          { style: [Na.button, o ? Na.breakButtonWrapper : void 0] },
                           v.a.createElement(
-                            ot.a,
+                            lt.a,
                             { onClick: this._handleClick, size: 'small', style: Na.buttonElement, type: 'brandText' },
                             n,
                           ),
@@ -2762,18 +2762,18 @@
             n
           )
         })(v.a.PureComponent)
-      f()(ja, 'defaultProps', { isSensitive: !1 })
-      var Ua = R.a.create(function (e) {
+      g()(ja, 'defaultProps', { isSensitive: !1 })
+      var Ua = x.a.create(function (e) {
           return {
             both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
             left: { borderBottomLeftRadius: e.borderRadii.none },
             right: { borderBottomRightRadius: e.borderRadii.none },
           }
         }),
-        Na = R.a.create(function (e) {
+        Na = x.a.create(function (e) {
           return {
             breakButtonWrapper: {
-              marginTop: R.a.theme.spaces.space4,
+              marginTop: x.a.theme.spaces.space4,
               marginLeft: 'calc(-1 * '.concat(e.spaces.space12, ')'),
             },
             button: { flexGrow: 1, alignItems: 'flex-start' },
@@ -2796,77 +2796,77 @@
           }
         }),
         Ha = Object(Ye.a)(Ba(ja)),
-        Va = n('CoGJ'),
-        Wa = v.a.createElement(Va.a, null),
-        za = Ie.a.d9de7b57,
-        qa = Ie.a.f2879f4d,
+        Wa = n('CoGJ'),
+        Va = v.a.createElement(Wa.a, null),
+        qa = Ie.a.d9de7b57,
+        za = Ie.a.f2879f4d,
         Ga = Ie.a.b518221e,
         Ya = Ie.a.eeaa9f90,
         Qa = Ie.a.g2b43663,
         Xa = Ie.a.f277e949,
         Ja = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
-              f()(s()(e), '_renderAttachment', function () {
+              g()(s()(e), 'state', { attachmentWidth: void 0, textContentWidth: void 0 }),
+              g()(s()(e), '_renderAttachment', function () {
                 var t,
                   n,
                   a = e.props,
                   r = a.entry,
                   i = a.hasUserText,
-                  o = a.isFirstRapidFire,
-                  l = a.isRapidFire,
+                  l = a.isFirstRapidFire,
+                  o = a.isRapidFire,
                   s = a.isSent,
                   c = a.isTrusted,
-                  u = a.messageData,
-                  d = e.state,
-                  p = d.attachmentWidth,
-                  m = d.textContentWidth,
-                  f = (u || {}).attachment,
-                  h = r.is_draft,
-                  g = ht(i, p, m),
+                  d = a.messageData,
+                  u = e.state,
+                  p = u.attachmentWidth,
+                  m = u.textContentWidth,
+                  g = (d || {}).attachment,
+                  f = r.is_draft,
+                  h = ft(i, p, m),
                   y = [
                     Za.mediaAttachment,
                     s && Za.isSent,
                     !s && Za.received,
-                    s && g.isAttachmentSquared && Za.equalComponentDimensionsSent,
-                    !s && g.isAttachmentSquared && Za.equalComponentDimensionsReceived,
-                    l && !o && s && Za.rapidFireSent,
-                    l && !o && !s && Za.rapidFireReceived,
+                    s && h.isAttachmentSquared && Za.equalComponentDimensionsSent,
+                    !s && h.isAttachmentSquared && Za.equalComponentDimensionsReceived,
+                    o && !l && s && Za.rapidFireSent,
+                    o && !l && !s && Za.rapidFireReceived,
                   ],
-                  _ = null
+                  b = null
                 if (
-                  (!h && r.conversation_id && (_ = '/messages/'.concat(r.conversation_id, '/media/').concat(r.id)), f)
+                  (!f && r.conversation_id && (b = '/messages/'.concat(r.conversation_id, '/media/').concat(r.id)), g)
                 )
-                  if (f.photo) (t = f.photo), (n = v.a.createElement(Oa, { media: t, mediaUrl: _ }))
-                  else if (f.animated_gif)
-                    (t = f.animated_gif), (n = v.a.createElement(Ka, { media: t, messageId: r.id }))
-                  else if (f.video) {
-                    if (((t = f.video), Object(b.l)(f, e.context.featureSwitches)))
+                  if (g.photo) (t = g.photo), (n = v.a.createElement(Oa, { media: t, mediaUrl: b }))
+                  else if (g.animated_gif)
+                    (t = g.animated_gif), (n = v.a.createElement(Ka, { media: t, messageId: r.id }))
+                  else if (g.video) {
+                    if (((t = g.video), Object(_.l)(g, e.context.featureSwitches)))
                       throw new Error('DMMediaMessage should not be used to render voice messages')
                     n = v.a.createElement(Ka, { media: t, messageId: r.id })
                   }
-                var k = g.isAttachmentSquared ? 'both' : s ? 'right' : 'left',
+                var k = h.isAttachmentSquared ? 'both' : s ? 'right' : 'left',
                   S = t && n && (s ? n : e._getMediaContentWithGuard(t, c, n, k))
                 return {
-                  attachmentContent: v.a.createElement(V.a, { onLayout: e._handleAttachmentLayout, style: y }, S),
+                  attachmentContent: v.a.createElement(W.a, { onLayout: e._handleAttachmentLayout, style: y }, S),
                   media: t,
                 }
               }),
-              f()(s()(e), '_handleAttachmentLayout', function (t) {
+              g()(s()(e), '_handleAttachmentLayout', function (t) {
                 var n = t.nativeEvent.layout.width
                 if (e.state.attachmentWidth !== n) {
                   var a = { attachmentWidth: n }
                   e.setState(a)
                 }
               }),
-              f()(s()(e), '_handleTextContentLayout', function (t) {
+              g()(s()(e), '_handleTextContentLayout', function (t) {
                 var n = t.nativeEvent.layout.width
                 if (e.state.textContentWidth !== n) {
                   var a = { textContentWidth: n }
@@ -2877,7 +2877,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -2887,41 +2887,41 @@
                     a = e.isActive,
                     r = e.isFailedDraft,
                     i = e.isFirstRapidFire,
-                    o = e.isRapidFire,
-                    l = e.isSent,
+                    l = e.isRapidFire,
+                    o = e.isSent,
                     s = e.messageData,
                     c = e.withCta,
-                    u = e.withMessageBubble,
-                    d = this.state,
-                    p = d.attachmentWidth,
-                    m = d.textContentWidth,
-                    f = t.is_draft,
-                    h = ht(n, p, m),
-                    g = this._renderAttachment(),
-                    y = g.attachmentContent,
-                    b = g.media,
-                    _ = n
+                    d = e.withMessageBubble,
+                    u = this.state,
+                    p = u.attachmentWidth,
+                    m = u.textContentWidth,
+                    g = t.is_draft,
+                    f = ft(n, p, m),
+                    h = this._renderAttachment(),
+                    y = h.attachmentContent,
+                    _ = h.media,
+                    b = n
                       ? v.a.createElement(
-                          V.a,
+                          W.a,
                           {
                             onLayout: this._handleTextContentLayout,
-                            style: l ? Za.sentMessageWrapper : Za.receivedMessageWrapper,
+                            style: o ? Za.sentMessageWrapper : Za.receivedMessageWrapper,
                           },
                           v.a.createElement(ma, {
                             hasAssociatedAttachment: !0,
                             isActive: !!a,
                             isFailedDraft: r,
                             isFirstRapidFire: !!i,
-                            isRapidFire: !!o,
-                            isSent: l,
-                            messageData: f ? s : this._parseMessageData(s, b),
-                            rootStyle: h.isTextSquared ? (l ? Za.sentSquared : Za.receivedSquared) : void 0,
+                            isRapidFire: !!l,
+                            isSent: o,
+                            messageData: g ? s : this._parseMessageData(s, _),
+                            rootStyle: f.isTextSquared ? (o ? Za.sentSquared : Za.receivedSquared) : void 0,
                             withCta: c,
-                            withMessageBubble: u,
+                            withMessageBubble: d,
                           }),
                         )
                       : null
-                  return v.a.createElement(ca, { attachmentContent: y, isVisible: h.compositeRendered, textContent: _ })
+                  return v.a.createElement(ca, { attachmentContent: y, isVisible: f.compositeRendered, textContent: b })
                 },
               },
               {
@@ -2929,19 +2929,19 @@
                 value: function (e, t, n, a) {
                   var r = this.props,
                     i = r.displaySensitiveMedia,
-                    o = r.isDmNsfwMediaFilterEnabled
+                    l = r.isDmNsfwMediaFilterEnabled
                   if (
                     e.possibly_sensitive &&
                     this.context.featureSwitches.isTrue('dm_conversations_nsfw_media_filter_enabled')
                   ) {
-                    if (o) {
-                      var l = ('animated_gif' === e.type && Qa) || ('video' === e.type && Ya) || Ga
+                    if (l) {
+                      var o = ('animated_gif' === e.type && Qa) || ('video' === e.type && Ya) || Ga
                       return v.a.createElement(
                         Ha,
                         {
                           contentType: e.type,
-                          ctaText: l,
-                          description: qa,
+                          ctaText: o,
+                          description: za,
                           isSensitive: !0,
                           withSquareBottomBorderRadius: a,
                         },
@@ -2954,7 +2954,7 @@
                       {
                         contentType: e.type,
                         ctaText: Xa,
-                        description: Wa,
+                        description: Va,
                         isSensitive: !0,
                         withSquareBottomBorderRadius: a,
                       },
@@ -2964,7 +2964,7 @@
                     ? n
                     : v.a.createElement(
                         Ha,
-                        { contentType: e.type, ctaText: Xa, description: za, withSquareBottomBorderRadius: a },
+                        { contentType: e.type, ctaText: Xa, description: qa, withSquareBottomBorderRadius: a },
                         n,
                       )
                 },
@@ -2992,8 +2992,8 @@
             n
           )
         })(v.a.Component)
-      f()(Ja, 'contextType', E.a), f()(Ja, 'defaultProps', { hasUserText: !1 })
-      var Za = R.a.create(function (e) {
+      g()(Ja, 'contextType', E.a), g()(Ja, 'defaultProps', { hasUserText: !1 })
+      var Za = x.a.create(function (e) {
           return {
             equalComponentDimensionsSent: { borderBottomLeftRadius: e.borderRadii.none },
             equalComponentDimensionsReceived: { borderBottomRightRadius: e.borderRadii.none },
@@ -3024,15 +3024,15 @@
         rr = Ie.a.fb3ccb55,
         ir = er(
           (function (e) {
-            u()(n, e)
+            d()(n, e)
             var t = p()(n)
             function n() {
               var e
               r()(this, n)
-              for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+              for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
-                f()(s()(e), '_handlePress', function (t) {
+                g()(s()(e), '_handlePress', function (t) {
                   return function () {
                     var n = e.props,
                       a = n.conversationId,
@@ -3044,7 +3044,7 @@
               )
             }
             return (
-              o()(n, [
+              l()(n, [
                 {
                   key: 'render',
                   value: function () {
@@ -3061,14 +3061,14 @@
                   key: '_renderButtons',
                   value: function () {
                     return v.a.createElement(
-                      V.a,
-                      { style: or.buttons },
+                      W.a,
+                      { style: lr.buttons },
                       v.a.createElement(
-                        ot.a,
-                        { onPress: this._handlePress(!1), style: or.leftButton, type: 'brandOutlined' },
+                        lt.a,
+                        { onPress: this._handlePress(!1), style: lr.leftButton, type: 'brandOutlined' },
                         nr,
                       ),
-                      v.a.createElement(ot.a, { onPress: this._handlePress(!0), type: 'brandOutlined' }, tr),
+                      v.a.createElement(lt.a, { onPress: this._handlePress(!0), type: 'brandOutlined' }, tr),
                     )
                   },
                 },
@@ -3077,19 +3077,19 @@
             )
           })(v.a.PureComponent),
         ),
-        or = R.a.create(function (e) {
+        lr = x.a.create(function (e) {
           return {
             buttons: { flexDirection: 'row', paddingTop: e.spaces.space4 },
             leftButton: { marginRight: e.spaces.space12 },
           }
         }),
-        lr = n('U+bB'),
+        or = n('U+bB'),
         sr = function (e) {
           var t = e.images,
             n = t.svg || t.size_1x
           if (n) return n.url
         },
-        cr = R.a.create(function (e) {
+        cr = x.a.create(function (e) {
           return {
             stickerItem: {
               height: 'calc(3 * '.concat(e.fontSizes.title2, ')'),
@@ -3097,11 +3097,11 @@
             },
           }
         }),
-        ur = function (e) {
+        dr = function (e) {
           var t = e.sticker
-          return v.a.createElement(lr.a, { accessibilityLabel: t.display_name, source: sr(t), style: cr.stickerItem })
+          return v.a.createElement(or.a, { accessibilityLabel: t.display_name, source: sr(t), style: cr.stickerItem })
         },
-        dr = n('XOJV'),
+        ur = n('XOJV'),
         pr = function (e, t) {
           var n,
             a = null === (n = t.messageData) || void 0 === n ? void 0 : n.attachment
@@ -3109,26 +3109,26 @@
         },
         mr = Object(Te.a)()
           .propsFromState(function () {
-            return { tweet: dr.a.createHydratedTweetSelector(pr) }
+            return { tweet: ur.a.createHydratedTweetSelector(pr) }
           })
           .propsFromActions(function () {
             return { popOutConversation: C.popOutConversation }
           }),
-        fr = n('b5s6'),
-        hr = v.a.createElement(W.b, { link: '/settings/safety' }),
-        gr = function (e) {
+        gr = n('b5s6'),
+        fr = v.a.createElement(V.b, { link: '/settings/safety' }),
+        hr = function (e) {
           return v.a.createElement(
             Ie.a.I18NFormatMessage,
             { $i18n: 'j3c7dd33' },
-            v.a.cloneElement(hr, null, Ie.a.adcf07b5),
+            v.a.cloneElement(fr, null, Ie.a.adcf07b5),
           )
         },
         vr = Ie.a.e4df0ad7,
         yr = Ie.a.f277e949,
-        br = Ie.a.b5b91d58,
-        _r = Ie.a.bb594d7b,
-        kr = v.a.createElement(gr, null)
-      var Sr = R.a.create(function (e) {
+        _r = Ie.a.b5b91d58,
+        br = Ie.a.bb594d7b,
+        kr = v.a.createElement(hr, null)
+      var Sr = x.a.create(function (e) {
           return {
             attachment: { marginBottom: 0 },
             receivedMessageWrapper: { alignSelf: 'flex-start' },
@@ -3147,29 +3147,29 @@
             a = e.displaySensitiveMedia,
             r = e.hasUserText,
             i = void 0 !== r && r,
-            o = e.isActive,
-            l = void 0 !== o && o,
+            l = e.isActive,
+            o = void 0 !== l && l,
             s = e.isDmNsfwMediaFilterEnabled,
             c = e.isFailedDraft,
-            u = e.isFirstRapidFire,
-            d = void 0 !== u && u,
+            d = e.isFirstRapidFire,
+            u = void 0 !== d && d,
             p = e.isRapidFire,
             m = void 0 !== p && p,
-            f = e.isSent,
-            h = e.isTrusted,
-            g = e.messageData,
+            g = e.isSent,
+            f = e.isTrusted,
+            h = e.messageData,
             y = e.popOutConversation,
-            b = e.tweet,
-            _ = e.withCta,
+            _ = e.tweet,
+            b = e.withCta,
             k = e.withMessageBubble,
             S = v.a.useState(void 0),
             C = $()(S, 2),
             T = C[0],
             w = C[1],
-            x = v.a.useState(void 0),
-            R = $()(x, 2),
-            F = R[0],
-            A = R[1],
+            R = v.a.useState(void 0),
+            x = $()(R, 2),
+            F = x[0],
+            A = x[1],
             I = v.a.useMemo(
               function () {
                 return function () {
@@ -3196,37 +3196,37 @@
               },
               [F],
             )
-          if (!g || !g.attachment || !g.attachment.tweet) return null
-          var L = g.attachment.tweet,
-            D = f ? 'sent' : 'received',
-            P = ht(i, T, F),
-            K = v.a.createElement(fr.a, {
+          if (!h || !h.attachment || !h.attachment.tweet) return null
+          var L = h.attachment.tweet,
+            D = g ? 'sent' : 'received',
+            P = ft(i, T, F),
+            K = v.a.createElement(gr.a, {
               onPress: I,
               style: [
                 Sr[D],
                 i && Sr.attachment,
-                P.isAttachmentSquared ? (f ? Sr.sentAttachmentSquared : Sr.receivedAttachmentSquared) : void 0,
+                P.isAttachmentSquared ? (g ? Sr.sentAttachmentSquared : Sr.receivedAttachmentSquared) : void 0,
               ],
               tweetId: L.status,
             }),
-            B = P.isAttachmentSquared ? 'both' : f ? 'right' : 'left',
+            B = P.isAttachmentSquared ? 'both' : g ? 'right' : 'left',
             j = (function () {
-              if (!b) return null
-              if (f) return K
-              if (b.possibly_sensitive && t.isTrue('dm_conversations_nsfw_media_filter_enabled')) {
+              if (!_) return null
+              if (g) return K
+              if (_.possibly_sensitive && t.isTrue('dm_conversations_nsfw_media_filter_enabled')) {
                 if (s || void 0 === s)
                   return v.a.createElement(
                     Ha,
-                    { contentType: 'photo', ctaText: _r, description: br, withSquareBottomBorderRadius: B },
+                    { contentType: 'photo', ctaText: br, description: _r, withSquareBottomBorderRadius: B },
                     K,
                   )
-              } else if (!a && b.possibly_sensitive)
+              } else if (!a && _.possibly_sensitive)
                 return v.a.createElement(
                   Ha,
                   { contentType: 'photo', ctaText: yr, description: kr, withSquareBottomBorderRadius: B },
                   K,
                 )
-              return h
+              return f
                 ? K
                 : v.a.createElement(
                     Ha,
@@ -3234,22 +3234,22 @@
                     K,
                   )
             })(),
-            U = v.a.createElement(V.a, { onLayout: O, style: Sr.attachment }, j),
+            U = v.a.createElement(W.a, { onLayout: O, style: Sr.attachment }, j),
             N = i
               ? v.a.createElement(
-                  V.a,
-                  { onLayout: M, style: f ? Sr.sentMessageWrapper : Sr.receivedMessageWrapper },
+                  W.a,
+                  { onLayout: M, style: g ? Sr.sentMessageWrapper : Sr.receivedMessageWrapper },
                   v.a.createElement(ma, {
                     hasAssociatedAttachment: !0,
-                    isActive: l,
+                    isActive: o,
                     isFailedDraft: c,
-                    isFirstRapidFire: d,
+                    isFirstRapidFire: u,
                     isRapidFire: m,
-                    isSent: f,
-                    messageData: g,
-                    rootStyle: P.isTextSquared ? (f ? Sr.sentSquared : Sr.receivedSquared) : void 0,
+                    isSent: g,
+                    messageData: h,
+                    rootStyle: P.isTextSquared ? (g ? Sr.sentSquared : Sr.receivedSquared) : void 0,
                     tweetId: L.status,
-                    withCta: _,
+                    withCta: b,
                     withMediaLinks: !0,
                     withMessageBubble: k,
                   }),
@@ -3260,52 +3260,52 @@
         Er = n('htvZ'),
         Tr = n('MH+I'),
         wr = n('5Ixf'),
-        xr = n('AtEG')
-      function Rr(e) {
+        Rr = n('AtEG')
+      function xr(e) {
         var t,
           n,
           a = v.a.useContext(Er.a),
           r = e.isLowQuality,
           i = e.isSent,
-          o = e.isTrusted
+          l = e.isTrusted
         if (null === (t = e.media) || void 0 === t || !t.video_info) return null
-        var l = $()(a.activeVoiceMessage, 2),
-          s = l[0],
-          c = l[1],
-          u = $()(a.playerApi, 1)[0],
-          d = $()(a.playerState, 1)[0],
+        var o = $()(a.activeVoiceMessage, 2),
+          s = o[0],
+          c = o[1],
+          d = $()(a.playerApi, 1)[0],
+          u = $()(a.playerState, 1)[0],
           p = a.scribeAction,
           m = $()(s, 1)[0],
-          f = e.messageId === m
+          g = e.messageId === m
         if (!p) return null
-        var h = Ar(d),
-          g = (null === (n = e.media) || void 0 === n ? void 0 : n.video_info.duration_millis) || 0,
+        var f = Ar(u),
+          h = (null === (n = e.media) || void 0 === n ? void 0 : n.video_info.duration_millis) || 0,
           y = {
-            durationMs: g,
-            isActive: f,
+            durationMs: h,
+            isActive: g,
             isSent: i,
             playerApi: null,
             playerState: null,
             onImpression: function () {
-              return p.impression({ isLowQuality: r, isTrusted: o })
+              return p.impression({ isLowQuality: r, isTrusted: l })
             },
             onPlayRequest: function () {
               return c([e.messageId, e.media])
             },
             onPlay: function () {
-              return p.play({ data: { duration_ms: g } })
+              return p.play({ data: { duration_ms: h } })
             },
             onPause: function () {
               return p.pause()
             },
           }
         return (
-          f &&
-            h &&
-            h.contentId === e.media.id_str &&
-            ((y.playerApi = u),
-            (y.playerState = d),
-            null != h && h.durationMs && (y.durationMs = null == h ? void 0 : h.durationMs)),
+          g &&
+            f &&
+            f.contentId === e.media.id_str &&
+            ((y.playerApi = d),
+            (y.playerState = u),
+            null != f && f.durationMs && (y.durationMs = null == f ? void 0 : f.durationMs)),
           v.a.createElement(Fr, y)
         )
       }
@@ -3315,50 +3315,50 @@
           a = e.playerApi,
           r = e.playerState,
           i = null == r ? void 0 : r.isPlaying,
-          o = Ar(r),
-          l = (null == o ? void 0 : o.currentTimeMs) || 0,
-          s = (null == o ? void 0 : o.durationMs) || e.durationMs,
-          c = Math.max(t ? s - l : s, 0)
+          l = Ar(r),
+          o = (null == l ? void 0 : l.currentTimeMs) || 0,
+          s = (null == l ? void 0 : l.durationMs) || e.durationMs,
+          c = Math.max(t ? s - o : s, 0)
         v.a.useLayoutEffect(function () {
           e.onImpression()
         }, []),
           v.a.useEffect(
             function () {
-              a && 0 === l && (a.play(), e.onPlay())
+              a && 0 === o && (a.play(), e.onPlay())
             },
             [a],
           )
-        var u = R.a.isDarkMode() || n,
-          d = { color: u ? 'whiteOnColor' : 'text' },
+        var d = x.a.isDarkMode() || n,
+          u = { color: d ? 'whiteOnColor' : 'text' },
           p = [
             Mr.voiceMessage,
             Lr({ isSent: n, squared: t }),
             n ? Mr.voiceMessageSent : Mr.voiceMessageReceived,
-            oe(R.a.theme.scale).voiceMessage({ isVoiceMessageActive: t, isSent: n }),
+            le(x.a.theme.scale).voiceMessage({ isVoiceMessageActive: t, isSent: n }),
           ],
-          m = i ? wr.a : xr.a
+          m = i ? wr.a : Rr.a
         return v.a.createElement(
-          V.a,
-          { style: [Mr.container, oe(R.a.theme.scale).voiceMessageContainer({ isVoiceMessageActive: t, isSent: n })] },
+          W.a,
+          { style: [Mr.container, le(x.a.theme.scale).voiceMessageContainer({ isVoiceMessageActive: t, isSent: n })] },
           v.a.createElement(
-            V.a,
+            W.a,
             { style: p },
-            v.a.createElement(V.a, { style: Mr.startSpacer }),
-            v.a.createElement(ot.a, {
+            v.a.createElement(W.a, { style: Mr.startSpacer }),
+            v.a.createElement(lt.a, {
               accessibilityLabel: i ? Or : Ir,
-              icon: v.a.createElement(m, { style: u ? Mr.iconColorDark : Mr.iconColorDefault }),
+              icon: v.a.createElement(m, { style: d ? Mr.iconColorDark : Mr.iconColorDefault }),
               onPress: function () {
                 a ? (i ? (a.pause(), e.onPause()) : (a.play(), e.onPlay())) : e.onPlayRequest()
               },
               type: 'onMediaText',
             }),
-            v.a.createElement(V.a, { style: Mr.durationSpacer }),
+            v.a.createElement(W.a, { style: Mr.durationSpacer }),
             v.a.createElement(
-              V.a,
+              W.a,
               { style: n ? Mr.durationOpacity : void 0 },
               v.a.createElement(
                 Tr.a,
-                Vt()({ countdown: !0, timeMs: c }, d, {
+                Wt()({ countdown: !0, timeMs: c }, u, {
                   color: 'gray700',
                   size: 'subtext2',
                   style: n ? Mr.durationDark : void 0,
@@ -3367,7 +3367,7 @@
                 }),
               ),
             ),
-            v.a.createElement(V.a, { style: Mr.endSpacer }),
+            v.a.createElement(W.a, { style: Mr.endSpacer }),
           ),
         )
       }
@@ -3376,7 +3376,7 @@
         },
         Ir = Ie.a.c94b7d89,
         Or = Ie.a.eb6f9582,
-        Mr = R.a.create(function (e) {
+        Mr = x.a.create(function (e) {
           return {
             displayNone: { display: 'none' },
             container: { flexDirection: 'row', alignSelf: 'flex-end', alignItems: 'center', justifyContent: 'center' },
@@ -3402,7 +3402,7 @@
           n = e.squared
         return [Dr.base, t ? Dr.sent : Dr.received, n ? (t ? Dr.sentSquared : Dr.receivedSquared) : void 0]
       }
-      var Dr = R.a.create(function (e) {
+      var Dr = x.a.create(function (e) {
           return {
             base: {
               borderRadius: e.borderRadii.xLarge,
@@ -3416,13 +3416,13 @@
           }
         }),
         Pr = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             return r()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -3432,18 +3432,18 @@
                     a = t.isSent,
                     r = t.onCtaClick,
                     i = t.onCtaImpression,
-                    o = n.message_data,
-                    l = o && o.attachment ? o.attachment : {},
+                    l = n.message_data,
+                    o = l && l.attachment ? l.attachment : {},
                     s = n.marked_as_spam,
                     c = mt(n),
-                    u = !!o && !!o.ctas,
-                    d = pt(n),
+                    d = !!l && !!l.ctas,
+                    u = pt(n),
                     p = (function (e) {
                       var t = e.message_data
                       if (!t) return !1
-                      if (mt(e) && !ft(e)) return !1
+                      if (mt(e) && !gt(e)) return !1
                       if (!t.text) return !1
-                      var n = Object(ut.parse)(t.text)
+                      var n = Object(dt.parse)(t.text)
                       if (!n || 0 === n.length) return !1
                       var a = n
                         .sort(function (e, t) {
@@ -3455,29 +3455,29 @@
                         .trim()
                       return n.length <= 10 && 0 === a.length
                     })(n),
-                    m = !(d && p),
-                    f = ft(n)
-                  e = l.sticker ? v.a.createElement(ur, { sticker: l.sticker }) : this._renderDMMessage(d, u, m)
-                  var h = s ? v.a.createElement(ir, { conversationId: n.conversation_id, dmId: n.id }, e) : e,
-                    g = c && !f && !Object(b.l)(null == o ? void 0 : o.attachment, this.context.featureSwitches),
+                    m = !(u && p),
+                    g = gt(n)
+                  e = o.sticker ? v.a.createElement(dr, { sticker: o.sticker }) : this._renderDMMessage(u, d, m)
+                  var f = s ? v.a.createElement(ir, { conversationId: n.conversation_id, dmId: n.id }, e) : e,
+                    h = c && !g && !Object(_.l)(null == l ? void 0 : l.attachment, this.context.featureSwitches),
                     y = [
                       a ? Kr.isSent : Kr.isReceived,
-                      u && Kr.withCta,
-                      g ? Kr.mediaRoot : Kr.flexShrink,
+                      d && Kr.withCta,
+                      h ? Kr.mediaRoot : Kr.flexShrink,
                       this.props.style,
                     ]
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     { style: y },
-                    h,
-                    o && o.ctas
+                    f,
+                    l && l.ctas
                       ? v.a.createElement(aa, {
-                          callToActions: o.ctas,
+                          callToActions: l.ctas,
                           isSent: a,
                           onCtaClick: r,
                           onImpression: i,
-                          withSticker: !!l.sticker || p,
-                          withUserText: d,
+                          withSticker: !!o.sticker || p,
+                          withUserText: u,
                         })
                       : null,
                   )
@@ -3489,81 +3489,81 @@
                   var a = this.props,
                     r = a.displaySensitiveMedia,
                     i = a.entry,
-                    o = a.isActive,
-                    l = a.isDmNsfwMediaFilterEnabled,
+                    l = a.isActive,
+                    o = a.isDmNsfwMediaFilterEnabled,
                     s = a.isFirstRapidFire,
                     c = a.isLowQuality,
-                    u = a.isRapidFire,
-                    d = a.isSent,
+                    d = a.isRapidFire,
+                    u = a.isSent,
                     p = a.isTrusted,
                     m = i.error,
-                    f = i.message_data,
-                    h = f && te()(te()({}, f), {}, { entities: (f && f.entities) || void 0, error: m }),
-                    g = null == h ? void 0 : h.attachment,
+                    g = i.message_data,
+                    f = g && te()(te()({}, g), {}, { entities: (g && g.entities) || void 0, error: m }),
+                    h = null == f ? void 0 : f.attachment,
                     y = {
-                      isActive: o,
+                      isActive: l,
                       isFailedDraft: !!m,
                       isFirstRapidFire: s,
-                      isRapidFire: u,
-                      isSent: d,
+                      isRapidFire: d,
+                      isSent: u,
                       withCta: t,
                       withMessageBubble: n,
                     }
-                  if (h && g) {
-                    if (g.tweet)
+                  if (f && h) {
+                    if (h.tweet)
                       return v.a.createElement(
                         Cr,
-                        Vt()(
+                        Wt()(
                           {
                             conversationId: i.conversation_id,
                             displaySensitiveMedia: r,
                             hasUserText: e,
-                            isDmNsfwMediaFilterEnabled: l,
+                            isDmNsfwMediaFilterEnabled: o,
                             isTrusted: p,
-                            messageData: h,
+                            messageData: f,
                           },
                           y,
                         ),
                       )
-                    if (g.photo || g.animated_gif || g.video)
-                      return g.video && Object(b.l)(g, this.context.featureSwitches)
-                        ? v.a.createElement(Rr, {
+                    if (h.photo || h.animated_gif || h.video)
+                      return h.video && Object(_.l)(h, this.context.featureSwitches)
+                        ? v.a.createElement(xr, {
                             isLowQuality: c,
-                            isSent: !!d,
+                            isSent: !!u,
                             isTrusted: p,
-                            media: g.video,
+                            media: h.video,
                             messageId: i.id,
                           })
                         : v.a.createElement(
                             $a,
-                            Vt()(
+                            Wt()(
                               {
                                 displaySensitiveMedia: r,
                                 entry: i,
                                 hasUserText: e,
-                                isDmNsfwMediaFilterEnabled: l,
+                                isDmNsfwMediaFilterEnabled: o,
                                 isTrusted: p,
-                                messageData: h,
+                                messageData: f,
                               },
                               y,
                             ),
                           )
-                    if (g.card)
+                    if (h.card)
                       return v.a.createElement(
                         ka,
-                        Vt()({ cardUrl: g.card, conversationId: i.conversation_id, hasUserText: e, messageData: h }, y),
+                        Wt()({ cardUrl: h.card, conversationId: i.conversation_id, hasUserText: e, messageData: f }, y),
                       )
-                    if (g.fleet) return v.a.createElement(wa, Vt()({ entry: i, hasUserText: e, messageData: h }, y))
+                    if (h.fleet) return v.a.createElement(wa, Wt()({ entry: i, hasUserText: e, messageData: f }, y))
                   }
-                  return v.a.createElement(fa, Vt()({}, y, { messageData: h }))
+                  return v.a.createElement(ga, Wt()({}, y, { messageData: f }))
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      f()(Pr, 'contextType', E.a)
-      var Kr = R.a.create(function (e) {
+      g()(Pr, 'contextType', E.a)
+      var Kr = x.a.create(function (e) {
           return {
             flexShrink: { flexShrink: 1 },
             mediaRoot: { flex: 1 },
@@ -3573,7 +3573,7 @@
           }
         }),
         Br = Pr,
-        jr = R.a.create(function (e) {
+        jr = x.a.create(function (e) {
           return { avatar: { borderRadius: e.borderRadii.infinite } }
         }),
         Ur = function (e) {
@@ -3582,61 +3582,61 @@
             a = void 0 === n ? 'xLarge' : n,
             r = e.user
           return t
-            ? v.a.createElement(z.a, {
+            ? v.a.createElement(q.a, {
                 accessibilityLabel: r.name,
                 link: { pathname: '/'.concat(r.screen_name) },
                 size: a,
                 uri: r.profile_image_url_https,
               })
-            : v.a.createElement(V.a, { style: [jr.avatar, z.a.getSizeStyle(a)] })
+            : v.a.createElement(W.a, { style: [jr.avatar, q.a.getSizeStyle(a)] })
         },
         Nr = n('m3Bd'),
         Hr = n.n(Nr),
-        Vr = n('B3eJ'),
-        Wr = ['color', 'isActive', 'size']
-      function zr(e) {
+        Wr = n('B3eJ'),
+        Vr = ['color', 'isActive', 'size']
+      function qr(e) {
         var t = e.color,
           n = e.isActive,
           a = e.size,
-          r = Hr()(e, Wr),
+          r = Hr()(e, Vr),
           i = v.a.useContext(Er.a),
-          o = v.a.useState(0.5),
-          l = $()(o, 2),
-          s = l[0],
-          c = l[1],
-          u = $()(i.playerState, 1)[0]
+          l = v.a.useState(0.5),
+          o = $()(l, 2),
+          s = o[0],
+          c = o[1],
+          d = $()(i.playerState, 1)[0]
         v.a.useEffect(
           function () {
-            n && u && u.isPlaying && c(Math.random())
+            n && d && d.isPlaying && c(Math.random())
           },
-          [n, u],
+          [n, d],
         )
-        var d = n && (null == u ? void 0 : u.isPlaying),
-          p = a + 2 * qr,
+        var u = n && (null == d ? void 0 : d.isPlaying),
+          p = a + 2 * zr,
           m = [Gr.container, r.style, { width: a, height: a }]
         return v.a.createElement(
-          V.a,
+          W.a,
           { style: m },
           v.a.createElement(
-            V.a,
-            { style: [Gr.container, Gr.transitionOpacity, d ? Gr.show : Gr.hide] },
+            W.a,
+            { style: [Gr.container, Gr.transitionOpacity, u ? Gr.show : Gr.hide] },
             ie.a.reducedMotionEnabled
               ? null
-              : v.a.createElement(Vr.a, { audioLevel: s, color: t, paused: !d, size: a }),
+              : v.a.createElement(Wr.a, { audioLevel: s, color: t, paused: !u, size: a }),
           ),
-          v.a.createElement(V.a, {
+          v.a.createElement(W.a, {
             style: [Gr.border, { width: p, height: p }, Gr.transitionOpacity, n ? Gr.show : Gr.hide],
           }),
         )
       }
-      var qr = parseInt(R.a.theme.spaces.space2, 10),
-        Gr = R.a.create(function (e) {
+      var zr = parseInt(x.a.theme.spaces.space2, 10),
+        Gr = x.a.create(function (e) {
           return {
             container: { alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' },
             border: {
               position: 'absolute',
-              top: -1 * qr,
-              left: -1 * qr,
+              top: -1 * zr,
+              left: -1 * zr,
               backgroundColor: e.colors.navigationBackground,
               borderRadius: e.borderRadii.infinite,
             },
@@ -3651,16 +3651,16 @@
         Jr = { viewType: 'message' },
         Zr = { isGroupDM: !1, isRapidFire: !1, isFirstRapidFire: !1, isLastRapidFire: !1 },
         $r = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), 'state', { shouldFadeHighlight: !1 }),
-              f()(
+              g()(s()(e), 'state', { shouldFadeHighlight: !1 }),
+              g()(
                 s()(e),
                 '_handleClick',
                 Object(Yr.a)(function () {
@@ -3669,28 +3669,28 @@
                     a = n.error,
                     r = n.id,
                     i = n.is_draft,
-                    o = t.isActive,
-                    l = t.setActiveEntry
-                  i || a || (l(o ? null : r), e._handleScribeMessageEntryClick())
+                    l = t.isActive,
+                    o = t.setActiveEntry
+                  i || a || (o(l ? null : r), e._handleScribeMessageEntryClick())
                 }),
               ),
-              f()(s()(e), '_handleScribeMessageEntryClick', function () {
+              g()(s()(e), '_handleScribeMessageEntryClick', function () {
                 var t = e.props.isActive
-                if (!lt.a.isEnabled && !t) {
+                if (!ot.a.isEnabled && !t) {
                   var n = e.props.entry,
-                    a = { component: 'message', element: Object(b.c)(n), action: 'click' }
+                    a = { component: 'message', element: Object(_.c)(n), action: 'click' }
                   e._scribeAction(a)
                 }
               }),
-              f()(s()(e), '_handleCtaImpression', function () {
+              g()(s()(e), '_handleCtaImpression', function () {
                 e._scribeAction(te()(te()({}, Xr), {}, { action: 'show' }))
               }),
-              f()(s()(e), '_handleCtaClick', function () {
+              g()(s()(e), '_handleCtaClick', function () {
                 e._scribeAction(te()(te()({}, Xr), {}, { action: 'click' }))
               }),
-              f()(s()(e), '_isDMVoiceMessage', function () {
+              g()(s()(e), '_isDMVoiceMessage', function () {
                 var t
-                return Object(b.l)(
+                return Object(_.l)(
                   null === (t = e.props.entry.message_data) || void 0 === t ? void 0 : t.attachment,
                   e.context.featureSwitches,
                 )
@@ -3699,7 +3699,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -3723,13 +3723,13 @@
                     a = t.isGroupDM,
                     r = t.isHighlightedMessageSearchEntry,
                     i = t.isSent,
-                    o = t.user,
-                    l = this._getRapidFireProps(),
-                    s = !l.isRapidFire || l.isLastRapidFire,
+                    l = t.user,
+                    o = this._getRapidFireProps(),
+                    s = !o.isRapidFire || o.isLastRapidFire,
                     c =
                       this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                       this.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-                    u = [
+                    d = [
                       ti.root.base,
                       c && ti.root.vdlPadding,
                       s && ti.root.contentSpacing,
@@ -3737,16 +3737,16 @@
                       r && ti.root.highlightableEntry,
                       r && this.state.shouldFadeHighlight && ti.root.remove,
                     ],
-                    d = this._isDMVoiceMessage(),
-                    p = c ? a && !i : !i || d
-                  if (!o) return null
-                  var m = !lt.a.isEnabled || i
+                    u = this._isDMVoiceMessage(),
+                    p = c ? a && !i : !i || u
+                  if (!l) return null
+                  var m = !ot.a.isEnabled || i
                   return v.a.createElement(
-                    fe.a,
+                    ge.a,
                     { behavioralEventContext: Jr },
                     v.a.createElement(
-                      V.a,
-                      { style: u },
+                      W.a,
+                      { style: d },
                       v.a.createElement(
                         A.a,
                         {
@@ -3763,13 +3763,13 @@
                           return e._renderMessage({
                             isFocused: n,
                             isHovered: a,
-                            rapidFireProps: l,
+                            rapidFireProps: o,
                             withVDLRefresh: c,
                             withUserAvatar: p,
                           })
                         },
                       ),
-                      this._renderFooter(l, p),
+                      this._renderFooter(o, p),
                     ),
                   )
                 },
@@ -3782,41 +3782,41 @@
                     a = e.rapidFireProps,
                     r = e.withUserAvatar,
                     i = e.withVDLRefresh,
-                    o = this.props,
-                    l = o.displaySensitiveMedia,
-                    s = o.entry,
-                    c = o.inboxType,
-                    u = o.isActive,
-                    d = o.isDmNsfwMediaFilterEnabled,
-                    p = o.isGroupDM,
-                    m = o.isLowQuality,
-                    f = o.isReadOnly,
-                    h = o.isSent,
-                    g = o.isTrusted,
-                    y = o.isVoiceMessageActive,
-                    b = o.isWide,
-                    _ = o.participants,
-                    k = o.perspective,
-                    S = o.scribeVoiceMessage,
-                    C = o.setShouldFreezeUpdates,
+                    l = this.props,
+                    o = l.displaySensitiveMedia,
+                    s = l.entry,
+                    c = l.inboxType,
+                    d = l.isActive,
+                    u = l.isDmNsfwMediaFilterEnabled,
+                    p = l.isGroupDM,
+                    m = l.isLowQuality,
+                    g = l.isReadOnly,
+                    f = l.isSent,
+                    h = l.isTrusted,
+                    y = l.isVoiceMessageActive,
+                    _ = l.isWide,
+                    b = l.participants,
+                    k = l.perspective,
+                    S = l.scribeVoiceMessage,
+                    C = l.setShouldFreezeUpdates,
                     E = a.isFirstRapidFire,
                     T = a.isRapidFire,
                     w = [
-                      h ? ti.messageContainer.sent : ti.messageContainer.received,
-                      b ? ti.messageContainer.wide : ti.messageContainer.narrow,
-                      h && b && ti.messageContainer.sentWide,
-                      !h && b && ti.messageContainer.receivedWide,
+                      f ? ti.messageContainer.sent : ti.messageContainer.received,
+                      _ ? ti.messageContainer.wide : ti.messageContainer.narrow,
+                      f && _ && ti.messageContainer.sentWide,
+                      !f && _ && ti.messageContainer.receivedWide,
                     ],
-                    x = g && !f,
+                    R = h && !g,
                     F = this._isDMVoiceMessage(),
-                    A = (null == _ ? void 0 : _.length) || 0
+                    A = (null == b ? void 0 : b.length) || 0
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     { style: w },
                     s.error
                       ? null
                       : v.a.createElement(jt, {
-                          containerIsActive: u,
+                          containerIsActive: d,
                           containerIsFocused: t,
                           containerIsHovered: n,
                           entry: s,
@@ -3824,34 +3824,34 @@
                           inboxType: c,
                           isDraft: !!s.is_draft,
                           isGroupDM: p,
-                          isSent: h,
+                          isSent: f,
                           onReportMessage:
                             F && S
                               ? function () {
-                                  return S.report({ isLowQuality: m, isTrusted: g })
+                                  return S.report({ isLowQuality: m, isTrusted: h })
                                 }
                               : void 0,
                           participantsCount: A,
                           perspective: k,
                           setShouldFreezeUpdates: C,
-                          shouldShowReactionButton: x,
-                          style: F && oe(R.a.theme.scale).actionsContainer({ isSent: h, isVoiceMessageActive: y }),
+                          shouldShowReactionButton: R,
+                          style: F && le(x.a.theme.scale).actionsContainer({ isSent: f, isVoiceMessageActive: y }),
                           withVDLRefresh: i,
                         }),
                     v.a.createElement(Br, {
-                      displaySensitiveMedia: l,
+                      displaySensitiveMedia: o,
                       entry: s,
-                      isActive: u,
-                      isDmNsfwMediaFilterEnabled: d,
+                      isActive: d,
+                      isDmNsfwMediaFilterEnabled: u,
                       isFirstRapidFire: E,
                       isLowQuality: m,
                       isRapidFire: T,
-                      isSent: h,
-                      isTrusted: g,
+                      isSent: f,
+                      isTrusted: h,
                       key: s.id,
                       onCtaClick: this._handleClick,
                       onCtaImpression: this._handleCtaImpression,
-                      style: F && oe(R.a.theme.scale).messageContainer({ isSent: h, isVoiceMessageActive: y }),
+                      style: F && le(x.a.theme.scale).messageContainer({ isSent: f, isVoiceMessageActive: y }),
                     }),
                     this._possiblyRenderUserAvatar(a, r),
                   )
@@ -3864,29 +3864,29 @@
                     a,
                     r = e.isLastRapidFire,
                     i = e.isRapidFire,
-                    o = this.props,
-                    l = o.entry,
-                    s = o.isActive,
-                    c = o.isGroupDM,
-                    u = o.isSent,
-                    d = o.participants,
-                    p = o.user
+                    l = this.props,
+                    o = l.entry,
+                    s = l.isActive,
+                    c = l.isGroupDM,
+                    d = l.isSent,
+                    u = l.participants,
+                    p = l.user
                   return p
                     ? v.a.createElement(Jn, {
-                        conversationId: l.conversation_id,
-                        entryId: l.id,
-                        entryText: null === (n = l.message_data) || void 0 === n ? void 0 : n.text,
-                        entryTime: l.time,
+                        conversationId: o.conversation_id,
+                        entryId: o.id,
+                        entryText: null === (n = o.message_data) || void 0 === n ? void 0 : n.text,
+                        entryTime: o.time,
                         isActive: s,
-                        isDraft: !!l.is_draft,
-                        isError: !!l.error,
+                        isDraft: !!o.is_draft,
+                        isError: !!o.error,
                         isGroupDM: c,
                         isLastRapidFire: r,
                         isRapidFire: i,
-                        isSent: u,
-                        localMediaId: null === (a = l.message_data) || void 0 === a ? void 0 : a.localMediaId,
+                        isSent: d,
+                        localMediaId: null === (a = o.message_data) || void 0 === a ? void 0 : a.localMediaId,
                         onPress: this._handleClick,
-                        participants: d,
+                        participants: u,
                         user: p,
                         withUserAvatar: t,
                       })
@@ -3900,31 +3900,31 @@
                     a = e.isRapidFire,
                     r = this.props,
                     i = r.isSent,
-                    o = r.isVoiceMessageActive,
-                    l = r.user,
+                    l = r.isVoiceMessageActive,
+                    o = r.user,
                     s = this._isDMVoiceMessage()
-                  if (!l || (!t && !o)) return null
-                  var c = ae(R.a.theme.scale),
-                    u = c.DMUserAvatarSizePx,
-                    d = { showAvatar: !!s || !a || !!n, size: c.DMUserAvatarSizeType, user: l },
+                  if (!o || (!t && !l)) return null
+                  var c = ae(x.a.theme.scale),
+                    d = c.DMUserAvatarSizePx,
+                    u = { showAvatar: !!s || !a || !!n, size: c.DMUserAvatarSizeType, user: o },
                     p = [
                       ti.userAvatar.base,
                       i ? ti.userAvatar.sent : ti.userAvatar.received,
-                      s && oe(R.a.theme.scale).userAvatar({ isVoiceMessageActive: o, isSent: i }),
+                      s && le(x.a.theme.scale).userAvatar({ isVoiceMessageActive: l, isSent: i }),
                     ]
                   return v.a.createElement(
-                    V.a,
+                    W.a,
                     { style: ti.userAvatar.container },
-                    i ? null : v.a.createElement(V.a, { style: ti.userAvatar.spacer }),
+                    i ? null : v.a.createElement(W.a, { style: ti.userAvatar.spacer }),
                     s
-                      ? v.a.createElement(zr, {
-                          color: i ? R.a.theme.colors.primary : R.a.theme.colors.text,
-                          isActive: !!o,
-                          size: u,
+                      ? v.a.createElement(qr, {
+                          color: i ? x.a.theme.colors.primary : x.a.theme.colors.text,
+                          isActive: !!l,
+                          size: d,
                           style: p,
                         })
                       : null,
-                    v.a.createElement(V.a, { style: p }, v.a.createElement(Ur, d)),
+                    v.a.createElement(W.a, { style: p }, v.a.createElement(Ur, u)),
                   )
                 },
               },
@@ -3948,7 +3948,7 @@
             n
           )
         })(v.a.Component)
-      f()($r, 'contextType', E.a), f()($r, 'defaultProps', Zr)
+      g()($r, 'contextType', E.a), g()($r, 'defaultProps', Zr)
       var ei = Object(Ye.a)(
           Ce(
             (function (e) {
@@ -3957,16 +3957,16 @@
                   a = v.a.useContext(Er.a),
                   r = $()(a.activeVoiceMessage, 1)[0],
                   i = a.scribeAction,
-                  o = $()(r, 1)[0] === n.id,
-                  l = te()(te()({}, t), {}, { isVoiceMessageActive: o, scribeVoiceMessage: i })
-                return v.a.createElement(e, l)
+                  l = $()(r, 1)[0] === n.id,
+                  o = te()(te()({}, t), {}, { isVoiceMessageActive: l, scribeVoiceMessage: i })
+                return v.a.createElement(e, o)
               }
               return (t.defaultProps = Zr), t
             })($r),
           ),
         ),
         ti = {
-          root: R.a.create(function (e) {
+          root: x.a.create(function (e) {
             return {
               base: { flexDirection: 'column', paddingBottom: e.spaces.space2 },
               vdlPadding: { paddingBottom: '0px' },
@@ -3983,17 +3983,17 @@
               remove: { backgroundColor: e.colors.cellBackground },
             }
           }),
-          messageContainer: R.a.create(function (e) {
+          messageContainer: x.a.create(function (e) {
             return {
               sent: { flexDirection: 'row', justifyContent: 'flex-end' },
               received: { flexDirection: 'row-reverse', justifyContent: 'flex-end' },
               narrow: { width: '100%' },
-              wide: { width: qt },
+              wide: { width: zt },
               receivedWide: { paddingRight: e.spaces.space12 },
               sentWide: { paddingLeft: e.spaces.space12 },
             }
           }),
-          userAvatar: R.a.create(function (e) {
+          userAvatar: x.a.create(function (e) {
             return {
               container: { flexDirection: 'row', alignItems: 'flex-end' },
               base: { position: 'absolute' },
@@ -4010,54 +4010,54 @@
             a = e.inboxType,
             r = e.isActive,
             i = e.isFirstRapidFire,
-            o = e.isHighlightedMessageSearchEntry,
-            l = e.isLastRapidFire,
+            l = e.isHighlightedMessageSearchEntry,
+            o = e.isLastRapidFire,
             s = e.isRapidFire,
             c = e.isWide,
-            u = e.perspective,
-            d = e.scribeNamespace,
+            d = e.perspective,
+            u = e.scribeNamespace,
             p = e.setActiveEntry,
             m = e.setShouldFreezeUpdates
-          if (Object(_.b)(n) || Object(_.e)(n)) {
-            var f = t.conversation_id,
-              h = t.low_quality,
-              g = t.participants,
+          if (Object(b.b)(n) || Object(b.e)(n)) {
+            var g = t.conversation_id,
+              f = t.low_quality,
+              h = t.participants,
               y = t.read_only,
-              b = t.trusted,
+              _ = t.trusted,
               k = t.type,
               S = n.message_data,
               E = (S = void 0 === S ? {} : S).sender_id,
-              T = void 0 === f || b
+              T = void 0 === g || _
             return v.a.createElement(ei, {
               entry: n,
               inboxType: a,
               isActive: r,
               isFirstRapidFire: i,
               isGroupDM: k === C.CONVERSATION_TYPE.GROUP,
-              isHighlightedMessageSearchEntry: o,
-              isLastRapidFire: l,
-              isLowQuality: !!h,
+              isHighlightedMessageSearchEntry: l,
+              isLastRapidFire: o,
+              isLowQuality: !!f,
               isRapidFire: s,
               isReadOnly: y,
-              isSent: E === u,
+              isSent: E === d,
               isTrusted: !!T,
               isWide: c,
-              participants: g,
-              perspective: u,
-              scribeNamespace: d,
+              participants: h,
+              perspective: d,
+              scribeNamespace: u,
               senderId: E,
               setActiveEntry: p,
               setShouldFreezeUpdates: m,
             })
           }
-          return Object(_.a)(n)
-            ? v.a.createElement(J, { conversation: t, entry: n, entryType: n.type, perspective: u })
-            : Object(_.d)(n)
+          return Object(b.a)(n)
+            ? v.a.createElement(J, { conversation: t, entry: n, entryType: n.type, perspective: d })
+            : Object(b.d)(n)
             ? v.a.createElement(ni.a, { entry: n, isCompact: !1 })
             : null
         },
         ri = n('0JOx'),
-        ii = Object(he.createSelector)(
+        ii = Object(fe.createSelector)(
           function (e, t) {
             var n = Object(Pe.o)(e, t.conversationId),
               a = n && Object(S.a)(n)
@@ -4067,35 +4067,35 @@
             return { lastEntry: e }
           },
         ),
-        oi = Object(ge.c)(ii),
-        li = (n('Ef13'), n('uDfI')),
-        si = Object(he.createSelector)(
+        li = Object(he.c)(ii),
+        oi = (n('Ef13'), n('uDfI')),
+        si = Object(fe.createSelector)(
           function (e, t) {
-            return be.e.selectMany(e, t.userIds || [])
+            return _e.e.selectMany(e, t.userIds || [])
           },
           function (e) {
             return { users: e }
           },
         ),
-        ci = Object(li.b)(si),
-        ui = n('VPAj'),
-        di = n('Enqy'),
+        ci = Object(oi.b)(si),
+        di = n('VPAj'),
+        ui = n('Enqy'),
         pi = n('+/1j'),
         mi = 'overflow',
-        fi = function (e, t) {
+        gi = function (e, t) {
           return e.id_str < t.id_str ? -1 : e.id_str > t.id_str ? 1 : 0
         },
-        hi = { stiffness: 1e3, damping: 70 },
-        gi = 140,
-        vi = { scale: Object(di.spring)(1, hi), translateY: Object(di.spring)(0, hi) },
+        fi = { stiffness: 1e3, damping: 70 },
+        hi = 140,
+        vi = { scale: Object(ui.spring)(1, fi), translateY: Object(ui.spring)(0, fi) },
         yi = function (e, t) {
           return { key: e.id_str, data: e, style: vi }
         },
-        bi = Object(ui.a)({ translateY: gi, scale: 0 }),
-        _i = Object(ui.a)({ scale: Object(di.spring)(1, hi), translateY: Object(di.spring)(gi, hi) }),
-        ki = [{ key: 'bubble', style: { scale: Object(di.spring)(1, hi), translateY: Object(di.spring)(0, hi) } }],
-        Si = Object(ui.a)({ translateY: gi, scale: 0 }),
-        Ci = Object(ui.a)({ scale: Object(di.spring)(1, hi), translateY: Object(di.spring)(gi, hi) }),
+        _i = Object(di.a)({ translateY: hi, scale: 0 }),
+        bi = Object(di.a)({ scale: Object(ui.spring)(1, fi), translateY: Object(ui.spring)(hi, fi) }),
+        ki = [{ key: 'bubble', style: { scale: Object(ui.spring)(1, fi), translateY: Object(ui.spring)(0, fi) } }],
+        Si = Object(di.a)({ translateY: hi, scale: 0 }),
+        Ci = Object(di.a)({ scale: Object(ui.spring)(1, fi), translateY: Object(ui.spring)(hi, fi) }),
         Ei = function (e) {
           return [
             isFinite(e.scale) && { scale: e.scale.toFixed(3) },
@@ -4103,16 +4103,16 @@
           ].filter(Boolean)
         },
         Ti = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), 'state', { isHidden: !0 }),
-              f()(s()(e), '_afterLeave', function () {
+              g()(s()(e), 'state', { isHidden: !0 }),
+              g()(s()(e), '_afterLeave', function () {
                 var t = e.props.users
                 e.setState(function (e) {
                   return { isHidden: 0 === t.length }
@@ -4122,7 +4122,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidUpdate',
                 value: function (e, t) {
@@ -4140,18 +4140,18 @@
                 value: function () {
                   var e = this.state.isHidden,
                     t = this.props.users,
-                    n = t.sort(fi).slice(0, 5).map(yi)
+                    n = t.sort(gi).slice(0, 5).map(yi)
                   return (
                     t.length > 5 && n.push({ key: mi, style: vi }),
                     v.a.createElement(
-                      V.a,
+                      W.a,
                       { style: [wi.root, e && wi.hidden] },
                       v.a.createElement(
-                        V.a,
+                        W.a,
                         { style: wi.avatarRow },
                         v.a.createElement(
-                          di.TransitionMotion,
-                          { styles: n, willEnter: bi, willLeave: _i },
+                          ui.TransitionMotion,
+                          { styles: n, willEnter: _i, willLeave: bi },
                           function (e) {
                             return v.a.createElement(
                               v.a.Fragment,
@@ -4161,7 +4161,7 @@
                                 var a = Ei(e.style)
                                 return e.key === mi
                                   ? v.a.createElement(
-                                      V.a,
+                                      W.a,
                                       {
                                         key: e.key,
                                         style: [wi.avatar, wi.avatarSpacer, wi.overflowAvatar, { transform: a }],
@@ -4169,9 +4169,9 @@
                                       v.a.createElement(pi.a, { style: wi.overflowAvatarText }, '+', t.length - 5),
                                     )
                                   : v.a.createElement(
-                                      V.a,
+                                      W.a,
                                       { key: e.key, style: [wi.avatar, { transform: a }] },
-                                      v.a.createElement(z.a, {
+                                      v.a.createElement(q.a, {
                                         accessibilityLabel: e.data && e.data.name,
                                         size: 'xLarge',
                                         uri: e.data && e.data.profile_image_url_https,
@@ -4183,7 +4183,7 @@
                         ),
                       ),
                       v.a.createElement(
-                        di.TransitionMotion,
+                        ui.TransitionMotion,
                         { didLeave: this._afterLeave, styles: t.length > 0 ? ki : [], willEnter: Si, willLeave: Ci },
                         function (e) {
                           return v.a.createElement(
@@ -4191,11 +4191,11 @@
                             null,
                             e.map(function (e) {
                               return v.a.createElement(
-                                V.a,
+                                W.a,
                                 { key: e.key, style: [wi.messageBubble, { transform: Ei(e.style) }] },
-                                v.a.createElement(V.a, { style: wi.dot }),
-                                v.a.createElement(V.a, { style: [wi.dot, wi.dot1] }),
-                                v.a.createElement(V.a, { style: [wi.dot, wi.dot2] }),
+                                v.a.createElement(W.a, { style: wi.dot }),
+                                v.a.createElement(W.a, { style: [wi.dot, wi.dot1] }),
+                                v.a.createElement(W.a, { style: [wi.dot, wi.dot2] }),
                               )
                             }),
                           )
@@ -4209,7 +4209,7 @@
             n
           )
         })(v.a.Component),
-        wi = R.a.create(function (e) {
+        wi = x.a.create(function (e) {
           return {
             root: {
               flexDirection: 'row',
@@ -4269,20 +4269,20 @@
             dot2: { animationDelay: '0.2s' },
           }
         }),
-        xi = ci(Ti),
-        Ri = n('tn7R'),
+        Ri = ci(Ti),
+        xi = n('tn7R'),
         Fi = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_timers', {}),
-              f()(s()(e), 'state', { forceHide: !1, userIds: [] }),
-              f()(s()(e), '_handleLivePipelineUpdate', function (t) {
+              g()(s()(e), '_timers', {}),
+              g()(s()(e), 'state', { forceHide: !1, userIds: [] }),
+              g()(s()(e), '_handleLivePipelineUpdate', function (t) {
                 var n = t.dm_typing.user_id
                 n !== e.context.loggedInUserId &&
                   (e._timers[n] && clearTimeout(e._timers[n]),
@@ -4303,7 +4303,7 @@
                     }
                   }))
               }),
-              f()(s()(e), '_removeAvatar', function (t) {
+              g()(s()(e), '_removeAvatar', function (t) {
                 var n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1]
                 e.setState(function (e) {
                   var a = e.userIds.filter(function (e) {
@@ -4316,7 +4316,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -4348,13 +4348,13 @@
                   var e = this.state,
                     t = e.forceHide,
                     n = e.userIds
-                  return !t && v.a.createElement(xi, { userIds: n })
+                  return !t && v.a.createElement(Ri, { userIds: n })
                 },
               },
               {
                 key: '_teardownLivePipeline',
                 value: function () {
-                  Object(Ri.a)(this._timers).forEach(function (e) {
+                  Object(xi.a)(this._timers).forEach(function (e) {
                     return clearTimeout(e)
                   }),
                     this._livePipelineSubscription && this._livePipelineSubscription.teardown()
@@ -4380,8 +4380,8 @@
             n
           )
         })(v.a.PureComponent)
-      f()(Fi, 'contextType', E.a)
-      var Ai = oi(Fi),
+      g()(Fi, 'contextType', E.a)
+      var Ai = li(Fi),
         Ii = n('3AAD'),
         Oi = n('iBK2'),
         Mi = n('RJrc'),
@@ -4396,17 +4396,17 @@
           return e.entry.type === N.b.MESSAGE
         },
         Ui = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e, a) {
             var i
             return (
               r()(this, n),
               (i = t.call(this, e, a)),
-              f()(s()(i), '_handleScrollEnd', function () {
+              g()(s()(i), '_handleScrollEnd', function () {
                 i.setState({ didRenderMessageSearchEntry: !0 })
               }),
-              f()(s()(i), '_renderItem', function (e) {
+              g()(s()(i), '_renderItem', function (e) {
                 var t = i.props.conversation,
                   n = t.conversation_id
                 switch (e.type) {
@@ -4415,14 +4415,14 @@
                   case N.b.READ_ONLY_INDICATOR:
                     return n
                       ? v.a.createElement(
-                          V.a,
+                          W.a,
                           { style: Ni.readOnly },
                           v.a.createElement(
-                            W.b,
+                            V.b,
                             { align: 'center', color: 'gray700', size: 'subtext2' },
                             Ki,
                             ' ',
-                            v.a.createElement(W.b, { link: 'https://support.twitter.com/articles/14606#faq' }, Pi),
+                            v.a.createElement(V.b, { link: 'https://support.twitter.com/articles/14606#faq' }, Pi),
                           ),
                         )
                       : null
@@ -4432,10 +4432,10 @@
                     return i._renderDMEntry(e)
                 }
               }),
-              f()(s()(i), '_setActiveEntry', function (e) {
+              g()(s()(i), '_setActiveEntry', function (e) {
                 i.setState({ activeEntryId: e })
               }),
-              f()(s()(i), '_setShouldFreezeUpdates', function (e) {
+              g()(s()(i), '_setShouldFreezeUpdates', function (e) {
                 i.setState({ shouldFreezeUpdates: e })
               }),
               (i.state = { activeEntryId: null, didRenderMessageSearchEntry: !1, shouldFreezeUpdates: !1 }),
@@ -4443,7 +4443,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'shouldComponentUpdate',
                 value: function (e, t) {
@@ -4459,30 +4459,30 @@
                     a = t.drawerHeader,
                     r = t.isWide,
                     i = t.messageSearchEntryId,
-                    o = t.onForwardRequest,
-                    l = t.onHistoryRequest,
+                    l = t.onForwardRequest,
+                    o = t.onHistoryRequest,
                     s = t.shouldScrollToCenter,
                     c = t.style,
-                    u = this.state.activeEntryId,
-                    d = (function (e) {
+                    d = this.state.activeEntryId,
+                    u = (function (e) {
                       var t = e.activeEntryId,
                         n = e.canInjectConversationProfileInfoHeader,
                         a = e.conversation,
                         r = e.footer,
                         i = e.messageSearchEntryId,
-                        o = e.readOnlyEntry,
-                        l = (a && a.entries) || [],
+                        l = e.readOnlyEntry,
+                        o = (a && a.entries) || [],
                         s = null == a ? void 0 : a.max_search_entry_id,
                         c = null == a ? void 0 : a.min_search_entry_id,
-                        u = (null == a ? void 0 : a.status) === C.PAGINATION_STATUS.AT_END,
-                        d = s ? Object(b.d)(l, s) : l.length - 1,
-                        p = c ? Object(b.d)(l, c) : -1,
-                        m = i && -1 === p ? Object(b.d)(l, i) : p,
-                        f = l.slice(u ? 0 : m, d + 1),
-                        h = (i ? f : l).reduce(function (e, r, o) {
-                          n && 0 === o && e.push(y.b)
+                        d = (null == a ? void 0 : a.status) === C.PAGINATION_STATUS.AT_END,
+                        u = s ? Object(_.d)(o, s) : o.length - 1,
+                        p = c ? Object(_.d)(o, c) : -1,
+                        m = i && -1 === p ? Object(_.d)(o, i) : p,
+                        g = o.slice(d ? 0 : m, u + 1),
+                        f = (i ? g : o).reduce(function (e, r, l) {
+                          n && 0 === l && e.push(y.b)
                           var s = Object(S.a)(e),
-                            c = o === l.length - 1
+                            c = l === o.length - 1
                           if (
                             (e.push({
                               isRapidFire: !1,
@@ -4495,23 +4495,23 @@
                             }),
                             s)
                           ) {
-                            var u = k(s.entry, r),
-                              d = e[e.length - 2]
-                            u
+                            var d = k(s.entry, r),
+                              u = e[e.length - 2]
+                            d
                               ? ((e[e.length - 1].isRapidFire = !0),
-                                d.isRapidFire || ((d.isFirstRapidFire = !0), (d.isRapidFire = !0)),
+                                u.isRapidFire || ((u.isFirstRapidFire = !0), (u.isRapidFire = !0)),
                                 c && (e[e.length - 1].isLastRapidFire = !0))
-                              : d.isRapidFire && (d.isLastRapidFire = !0)
+                              : u.isRapidFire && (u.isLastRapidFire = !0)
                           }
                           return e
                         }, [])
-                      return r && !i && h.push(r), a.read_only && o && !i && h.push(o), h
+                      return r && !i && f.push(r), a.read_only && l && !i && f.push(l), f
                     })({
                       conversation: n,
                       footer: y.d,
                       readOnlyEntry: y.c,
                       canInjectConversationProfileInfoHeader: n.status === N.c.AT_END && n.type === N.a.ONE_TO_ONE,
-                      activeEntryId: u,
+                      activeEntryId: d,
                       messageSearchEntryId: i,
                     }),
                     p = n.conversation_id,
@@ -4524,38 +4524,38 @@
                         return e[e.length - 1]
                       })(e)
                     },
-                    f = i ? 'dm-activity-'.concat(p, '-').concat(i) : 'dm-activity-'.concat(p),
-                    g =
+                    g = i ? 'dm-activity-'.concat(p, '-').concat(i) : 'dm-activity-'.concat(p),
+                    h =
                       this.state.didRenderMessageSearchEntry &&
                       (null == n ? void 0 : n.min_search_entry_id) &&
                       n.status !== N.c.AT_END
                   return v.a.createElement(K.a.Consumer, null, function (t) {
-                    var u = t.isDrawer ? B.b.drawerHeaderRadius : Ni.scrollSpace
+                    var d = t.isDrawer ? B.b.drawerHeaderRadius : Ni.scrollSpace
                     return v.a.createElement(
-                      V.a,
-                      { style: [Ni.scrollContainer, u] },
+                      W.a,
+                      { style: [Ni.scrollContainer, d] },
                       v.a.createElement(
                         Li.a,
-                        { style: [Ni.scrollContainer, r && Ni.conversationsPadding, u, c] },
+                        { style: [Ni.scrollContainer, r && Ni.conversationsPadding, d, c] },
                         a || null,
-                        (n.status && n.status !== N.c.AT_END && !i) || g ? v.a.createElement(Mi.a, null) : null,
+                        (n.status && n.status !== N.c.AT_END && !i) || h ? v.a.createElement(Mi.a, null) : null,
                         v.a.createElement(
                           Di.a,
                           { style: [Ni.content, Ni.alignTop], withGutter: !0 },
                           v.a.createElement(Oi.b, {
                             anchoring: Ii.a,
                             assumedItemHeight: 50,
-                            cacheKey: f,
+                            cacheKey: g,
                             canBeAnchorFunction: ji,
                             centerInitialAnchor: i && s,
                             hasNewContentAtBottom: !0,
                             identityFunction: Bi,
-                            initialAnchor: d.length > 0 ? h.a(i && s ? i : Bi(m(d))) : void 0,
-                            items: d,
+                            initialAnchor: u.length > 0 ? f.a(i && s ? i : Bi(m(u))) : void 0,
+                            items: u,
                             nearStartProximityRatio: 2,
-                            onAtEnd: i && e.state.didRenderMessageSearchEntry ? o : void 0,
-                            onAtStart: i && e.state.didRenderMessageSearchEntry ? l : void 0,
-                            onNearStart: i ? void 0 : l,
+                            onAtEnd: i && e.state.didRenderMessageSearchEntry ? l : void 0,
+                            onAtStart: i && e.state.didRenderMessageSearchEntry ? o : void 0,
+                            onNearStart: i ? void 0 : o,
                             onScrollEnd: i && !e.state.didRenderMessageSearchEntry ? e._handleScrollEnd : void 0,
                             renderer: e._renderItem,
                             withoutHeadroom: !1,
@@ -4580,17 +4580,17 @@
                     a = e.isFirstRapidFire,
                     r = e.isLastRapidFire,
                     i = e.isRapidFire,
-                    o = this.props,
-                    l = o.conversation,
-                    s = o.inboxType,
-                    c = o.isWide,
-                    u = o.messageSearchEntryId,
-                    d = o.perspective,
-                    p = o.scribeNamespace,
-                    m = t.id === u
+                    l = this.props,
+                    o = l.conversation,
+                    s = l.inboxType,
+                    c = l.isWide,
+                    d = l.messageSearchEntryId,
+                    u = l.perspective,
+                    p = l.scribeNamespace,
+                    m = t.id === d
                   return t && s
                     ? v.a.createElement(ai, {
-                        conversation: l,
+                        conversation: o,
                         entry: t,
                         inboxType: s,
                         isActive: n,
@@ -4600,7 +4600,7 @@
                         isRapidFire: i,
                         isWide: c,
                         key: t.id,
-                        perspective: d,
+                        perspective: u,
                         scribeNamespace: p,
                         setActiveEntry: this._setActiveEntry,
                         setShouldFreezeUpdates: this._setShouldFreezeUpdates,
@@ -4612,8 +4612,8 @@
             n
           )
         })(v.a.Component)
-      f()(Ui, 'contextType', E.a)
-      var Ni = R.a.create(function (e) {
+      g()(Ui, 'contextType', E.a)
+      var Ni = x.a.create(function (e) {
         return {
           spinner: { alignItems: 'center', marginVertical: '30px' },
           scrollContainer: {
@@ -4677,8 +4677,8 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('ERkP'),
-        o = n.n(i),
-        l = n('Lsrn'),
+        l = n.n(i),
+        o = n('Lsrn'),
         s = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -4689,18 +4689,18 @@
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [l.a.root, e.style],
+                style: [o.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            o.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              o.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M12 18.042c-.553 0-1-.447-1-1v-5.5c0-.553.447-1 1-1s1 .447 1 1v5.5c0 .553-.447 1-1 1z',
               }),
-              o.a.createElement('circle', { cx: '12', cy: '8.042', r: '1.25' }),
-              o.a.createElement('path', {
+              l.a.createElement('circle', { cx: '12', cy: '8.042', r: '1.25' }),
+              l.a.createElement('path', {
                 d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
               }),
             ),
@@ -4713,46 +4713,46 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('849X'), n('TJCb'), n('M+/F'), n('ERkP')),
-        g = n.n(h),
+        g = n.n(m),
+        f = (n('2G9S'), n('849X'), n('TJCb'), n('M+/F'), n('ERkP')),
+        h = n.n(f),
         v = n('oEoC'),
         y = n('2dXj'),
-        b = n('4bHO'),
-        _ = n('dzqK'),
+        _ = n('4bHO'),
+        b = n('dzqK'),
         k = n('GZwR'),
         S = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_genericWrapperRef', g.a.createRef()),
-              f()(s()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
-              f()(s()(e), 'render', function () {
+              g()(s()(e), '_genericWrapperRef', h.a.createRef()),
+              g()(s()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
+              g()(s()(e), 'render', function () {
                 var t = e.props,
                   n = t.children,
                   a = t.contextText,
                   r = t.isInline,
                   i = t.isInlineReply,
-                  o = t.onTypeaheadStateChange,
-                  l = t.source,
+                  l = t.onTypeaheadStateChange,
+                  o = t.source,
                   s = e.state,
                   c = s.canShowTypeahead,
-                  u = s.queryContext,
-                  d = c && u ? { word: u.word, resultType: u.resultType } : void 0
-                return g.a.createElement(
+                  d = s.queryContext,
+                  u = c && d ? { word: d.word, resultType: d.resultType } : void 0
+                return h.a.createElement(
                   y.a,
                   {
                     contextText: a,
@@ -4760,66 +4760,66 @@
                     isInlineReply: i,
                     onDismiss: e._handleDismiss,
                     onSelectItem: e._handleSelectItem,
-                    onTypeaheadStateChange: o,
-                    query: d,
+                    onTypeaheadStateChange: l,
+                    query: u,
                     ref: e._genericWrapperRef,
-                    source: l || k.d.Compose,
+                    source: o || k.d.Compose,
                   },
                   n(e._handleInputChange),
                 )
               }),
-              f()(s()(e), '_handleSelectItem', function (t) {
+              g()(s()(e), '_handleSelectItem', function (t) {
                 var n = e.props.onTextUpdated,
                   a = e.state.queryContext
                 if (a) {
-                  var r = Object(b.a)(t, a.resultType),
+                  var r = Object(_.a)(t, a.resultType),
                     i = e._replaceToken(r, a),
-                    o = i.newCursor,
-                    l = i.newTweetText
-                  n({ target: { value: l } }), e._updateDOMTextArea(o, l)
+                    l = i.newCursor,
+                    o = i.newTweetText
+                  n({ target: { value: o } }), e._updateDOMTextArea(l, o)
                 }
                 e._setQueryContext(void 0)
               }),
-              f()(s()(e), '_updateDOMTextArea', function (t, n) {
+              g()(s()(e), '_updateDOMTextArea', function (t, n) {
                 e._textAreaRef &&
                   ((e._textAreaRef.value = n),
                   (e._textAreaRef.selectionStart = t),
                   (e._textAreaRef.selectionEnd = t),
                   e._textAreaRef.focus())
               }),
-              f()(s()(e), '_handleInputChange', function (t) {
-                if (Object(_.a)(t))
+              g()(s()(e), '_handleInputChange', function (t) {
+                if (Object(b.a)(t))
                   throw new Error('PlainTextTypeaheadComposeWrapper cannot handle rich text input changes')
                 var n = t && (t.currentTarget || t.target),
                   a = e.state.queryContext
                 e._textAreaRef = n
                 var r = a && a.word,
                   i = n.value,
-                  o = v.c(n.selectionStart, i),
-                  l = o.end,
-                  s = o.start,
-                  c = o.word,
-                  u = v.e(c || '', 'compose')
-                if ((null == u ? void 0 : u.q) !== r)
+                  l = v.c(n.selectionStart, i),
+                  o = l.end,
+                  s = l.start,
+                  c = l.word,
+                  d = v.e(c || '', 'compose')
+                if ((null == d ? void 0 : d.q) !== r)
                   if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === s))
                     e._setQueryContext(void 0)
-                  else if (u) {
-                    var d = u.q,
-                      p = u.result_type
-                    e._setQueryContext({ word: d, resultType: p, fullText: n.value, startIndex: s, endIndex: l })
+                  else if (d) {
+                    var u = d.q,
+                      p = d.result_type
+                    e._setQueryContext({ word: u, resultType: p, fullText: n.value, startIndex: s, endIndex: o })
                   } else e._setQueryContext(void 0)
               }),
-              f()(s()(e), '_setQueryContext', function (t) {
+              g()(s()(e), '_setQueryContext', function (t) {
                 return e.setState({ queryContext: t, canShowTypeahead: !!t })
               }),
-              f()(s()(e), '_handleDismiss', function () {
+              g()(s()(e), '_handleDismiss', function () {
                 return e.setState({ canShowTypeahead: !1 })
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: '_replaceToken',
                 value: function (e, t) {
@@ -4833,7 +4833,7 @@
             ]),
             n
           )
-        })(g.a.Component)
+        })(h.a.Component)
       t.a = S
     },
     '883S': function (e, t, n) {
@@ -4850,48 +4850,48 @@
       var a,
         r = n('KEM+'),
         i = n.n(r),
-        o = n('k49u'),
-        l = n('3XMw'),
-        s = n.n(l),
+        l = n('k49u'),
+        o = n('3XMw'),
+        s = n.n(o),
         c = n('fs1G'),
-        u = s.a.c3752568,
-        d = s.a.f78aa3e9,
+        d = s.a.c3752568,
+        u = s.a.f78aa3e9,
         p = s.a.f9690dc0,
         m = s.a.i859a9d3,
-        f = s.a.b1d35407,
-        h = s.a.g539cca6,
-        g = s.a.bbac0019,
+        g = s.a.b1d35407,
+        f = s.a.g539cca6,
+        h = s.a.bbac0019,
         v = s.a.a1d2a68d,
         y = s.a.d4f2d9d8,
-        b = s.a.hf383be4,
-        _ = s.a.b25c5b2a,
+        _ = s.a.hf383be4,
+        b = s.a.b25c5b2a,
         k = s.a.c4fdbd16,
         S = s.a.hf3e7e38,
-        C = i()({}, o.a.DirectMessageConversationNotFound, {
+        C = i()({}, l.a.DirectMessageConversationNotFound, {
           customAction: function () {
             return !1
           },
         }),
-        E = { defaultToast: { text: d }, showToast: !0 },
+        E = { defaultToast: { text: u }, showToast: !0 },
         T =
-          ((a = { defaultToast: { text: u } }),
-          i()(a, o.a.CurrentUserSuspended, {
-            toast: { text: h, action: { label: m, link: 'https://support.twitter.com/articles/15790' } },
+          ((a = { defaultToast: { text: d } }),
+          i()(a, l.a.CurrentUserSuspended, {
+            toast: { text: f, action: { label: m, link: 'https://support.twitter.com/articles/15790' } },
           }),
-          i()(a, o.a.DirectMessageCannotDmOtherUser, { toast: { text: p } }),
-          i()(a, o.a.DirectMessageDuplicate, { toast: { text: _ } }),
-          i()(a, o.a.DirectMessageOtherUserNotFollowing, {
+          i()(a, l.a.DirectMessageCannotDmOtherUser, { toast: { text: p } }),
+          i()(a, l.a.DirectMessageDuplicate, { toast: { text: b } }),
+          i()(a, l.a.DirectMessageOtherUserNotFollowing, {
             toast: { text: v, action: { label: m, link: 'https://support.twitter.com/articles/14606' } },
           }),
-          i()(a, o.a.DirectMessagesSenderBlocksRecipient, { toast: { text: k } }),
-          i()(a, o.a.DirectMessageTooLongError, { toast: { text: g } }),
-          i()(a, o.a.DirectMessageTweetNotFound, { toast: { text: y } }),
-          i()(a, o.a.GenericBadRequest, { customAction: c.a }),
-          i()(a, o.a.MessageSendError, { toast: { text: S } }),
-          i()(a, o.a.OverStatusUpdateLimit, {
-            toast: { action: { label: m, link: 'https://support.twitter.com/articles/15364' }, text: f },
+          i()(a, l.a.DirectMessagesSenderBlocksRecipient, { toast: { text: k } }),
+          i()(a, l.a.DirectMessageTooLongError, { toast: { text: h } }),
+          i()(a, l.a.DirectMessageTweetNotFound, { toast: { text: y } }),
+          i()(a, l.a.GenericBadRequest, { customAction: c.a }),
+          i()(a, l.a.MessageSendError, { toast: { text: S } }),
+          i()(a, l.a.OverStatusUpdateLimit, {
+            toast: { action: { label: m, link: 'https://support.twitter.com/articles/15364' }, text: g },
           }),
-          i()(a, o.a.TargetUserNotFound, { toast: { text: b } }),
+          i()(a, l.a.TargetUserNotFound, { toast: { text: _ } }),
           i()(a, 'showToast', !0),
           a)
     },
@@ -4913,23 +4913,23 @@
       'use strict'
       n.r(t),
         n.d(t, 'DMConversationScreenWithRichText', function () {
-          return u
+          return d
         })
       var a = n('97Jx'),
         r = n.n(a),
         i = n('ERkP'),
-        o = n.n(i),
-        l = n('cOtO'),
+        l = n.n(i),
+        o = n('cOtO'),
         s = n('Rk1B'),
         c = n('RH6X'),
-        u = function (e) {
-          return o.a.createElement(s.default, null, function (t) {
+        d = function (e) {
+          return l.a.createElement(s.default, null, function (t) {
             var n = t.richTextInputContext
             t.typeaheadWrapper
-            return o.a.createElement(l.default, r()({}, e, { richTextInputContext: n, typeaheadWrapper: c.a }))
+            return l.a.createElement(o.default, r()({}, e, { richTextInputContext: n, typeaheadWrapper: c.a }))
           })
         }
-      t.default = u
+      t.default = d
     },
     CDB5: function (e, t, n) {
       'use strict'
@@ -4961,10 +4961,10 @@
           return H
         }),
         n.d(t, 'h', function () {
-          return V
+          return W
         }),
         n.d(t, 'a', function () {
-          return z
+          return q
         }),
         n.d(t, 'b', function () {
           return G
@@ -4975,13 +4975,13 @@
       var a = n('RhWx'),
         r = n.n(a),
         i = n('ddV6'),
-        o = n.n(i),
-        l = n('m3Bd'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('m3Bd'),
+        s = n.n(o),
         c = n('KEM+'),
-        u = n.n(c),
-        d = n('yiKp'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('yiKp'),
+        p = n.n(u),
         m =
           (n('TJCb'),
           n('7x/C'),
@@ -4994,14 +4994,14 @@
           n('2G9S'),
           n('1IsZ'),
           n('AspN')),
-        f = n('xPna'),
-        h = n('oEOe'),
-        g = n('xCUF'),
+        g = n('xPna'),
+        f = n('oEOe'),
+        h = n('xCUF'),
         v = n('ude7'),
         y = n('07FG'),
-        b = n('Ssj5'),
-        _ = n('fEA7'),
-        k = n.n(_),
+        _ = n('Ssj5'),
+        b = n('fEA7'),
+        k = n.n(b),
         S = n('uKEd'),
         C = n('lnti'),
         E = n('/NU0'),
@@ -5016,49 +5016,49 @@
           'quickReply',
         ],
         w = 'dmComposer',
-        x = {}
-      var R = function (e) {
+        R = {}
+      var x = function (e) {
           var t = e.conversation_id,
             n = e.id,
             a = e.localMediaId,
             r = e.recipient_ids,
             i = e.sender_id,
-            o = e.text,
-            l = e.attachment,
-            s = void 0 === l ? {} : l,
+            l = e.text,
+            o = e.attachment,
+            s = void 0 === o ? {} : o,
             c = e.error,
-            u = Date.now().toString()
+            d = Date.now().toString()
           return {
             conversation_id: t,
             recipient_ids: r,
             error: c,
             id: n,
             is_draft: !0,
-            message_data: { attachment: s, localMediaId: a, sender_id: i, text: o, time: u },
+            message_data: { attachment: s, localMediaId: a, sender_id: i, text: l, time: d },
             type: 'message',
-            time: u,
+            time: d,
           }
         },
         F = function (e) {
           return function (t, n, a) {
             var i = a.api,
-              l = e || {},
-              c = l.senderId,
-              u = l.cardUrl,
-              d = l.conversationId,
-              b = l.localMediaId,
-              _ = l.recipients,
-              w = void 0 === _ ? [] : _,
-              x = l.requestId,
-              F = void 0 === x ? k.a.v1() : x,
-              A = l.tweetAttachment,
-              I = l.quickReply,
-              O = s()(l, T)
-            t(Z(d))
+              o = e || {},
+              c = o.senderId,
+              d = o.cardUrl,
+              u = o.conversationId,
+              _ = o.localMediaId,
+              b = o.recipients,
+              w = void 0 === b ? [] : b,
+              R = o.requestId,
+              F = void 0 === R ? k.a.v1() : R,
+              A = o.tweetAttachment,
+              I = o.quickReply,
+              O = s()(o, T)
+            t(Z(u))
             var M = n(),
-              L = b || j(n(), d),
+              L = _ || j(n(), u),
               P = m.k(M, L),
-              K = o()(P, 1)[0] || {},
+              K = l()(P, 1)[0] || {},
               B = K.mediaFile,
               U = K.mediaMetadata,
               N = w.length > 0 && w.join(','),
@@ -5066,29 +5066,29 @@
             B && B.isGif
               ? (H.extraInitParams = '&media_category=dm_gif')
               : B && B.isVideo && (H.extraInitParams = '&media_category=dm_video')
-            var W = m.p(L, H),
-              z = [t(W)],
-              q = (V(M, d) || {}).found_media_origin
+            var V = m.p(L, H),
+              q = [t(V)],
+              z = (W(M, u) || {}).found_media_origin
             return (
-              B && B.isGif && z.push(Object(v.a)(B)),
-              Promise.all(z).then(
+              B && B.isGif && q.push(Object(v.a)(B)),
+              Promise.all(q).then(
                 function (n) {
-                  var a = o()(n, 2),
-                    l = o()(a[0], 1)[0],
+                  var a = l()(n, 2),
+                    o = l()(a[0], 1)[0],
                     s = a[1],
                     v = (null == U ? void 0 : U.altText) || (null == U ? void 0 : U.defaultAltText),
-                    b = !!v
+                    _ = !!v
                   return (
-                    l && (q || b)
-                      ? t(m.m(p()({ media_id: l.uploadId, found_media_origin: q }, !!b && { alt_text: { text: v } })))
+                    o && (z || _)
+                      ? t(m.m(p()({ media_id: o.uploadId, found_media_origin: z }, !!_ && { alt_text: { text: v } })))
                       : Promise.resolve()
                   ).then(
                     function () {
                       var n = (A || {}).id_str,
                         a = {}
-                      if (l) {
-                        var o = l.mediaFile,
-                          m = void 0 === o ? {} : o,
+                      if (o) {
+                        var l = o.mediaFile,
+                          m = void 0 === l ? {} : l,
                           v = {
                             original_info: { width: m.width, height: m.height },
                             sizes: [{ h: m.height, w: m.width, resize: 'fit' }],
@@ -5099,10 +5099,10 @@
                           ? (a.animated_gif = p()(p()({}, v), {}, { media_url_https: s, type: 'animated_gif' }))
                           : m.isVideo && (a.video = p()(p()({}, v), {}, { media_url_https: m.url, type: 'video' }))
                       } else A && (a.tweet = { status: n })
-                      var b = (l || {}).uploadId,
-                        _ = R({
+                      var _ = (o || {}).uploadId,
+                        b = x({
                           attachment: a,
-                          conversation_id: d,
+                          conversation_id: u,
                           id: F,
                           recipient_ids: N,
                           sender_id: c,
@@ -5110,10 +5110,10 @@
                         }),
                         k = p()(
                           p()(
-                            p()(p()({}, O), Object(y.a)(u) && { card_uri: u }),
+                            p()(p()({}, O), Object(y.a)(d) && { card_uri: d }),
                             {},
-                            { conversation_id: d },
-                            !n && { media_id: b },
+                            { conversation_id: u },
+                            !n && { media_id: _ },
                           ),
                           {},
                           { recipient_ids: N, request_id: F, tweet_id: n },
@@ -5122,10 +5122,10 @@
                         ((k['quick_reply_response[options][id]'] = I.id),
                         (k['quick_reply_response[options][selected_id]'] = I.selected_id))
                       var T = Object(C.a)([
-                        ee(d),
-                        { type: g.c.REQUEST },
+                        ee(u),
+                        { type: h.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        d && Object(S.b)(d, F, _),
+                        u && Object(S.b)(u, F, b),
                       ])
                       return (
                         t(T),
@@ -5133,23 +5133,23 @@
                           function (n) {
                             var a = n.entities,
                               i = a.cards,
-                              o = a.entries,
-                              l = a.tweets,
+                              l = a.entries,
+                              o = a.tweets,
                               s = a.users,
                               c = n.result.conversations
-                            Object(E.a)(L) && t(X(d, L))
-                            var u = Object(C.a)(
-                              [{ type: g.c.SUCCESS }].concat(
-                                r()(Object(f.a)({ conversations: c, entries: o, users: s, tweets: l, cards: i })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, d && Object(S.j)(d, F, e), D(d)],
+                            Object(E.a)(L) && t(X(u, L))
+                            var d = Object(C.a)(
+                              [{ type: h.c.SUCCESS }].concat(
+                                r()(Object(g.a)({ conversations: c, entries: l, users: s, tweets: o, cards: i })),
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, u && Object(S.j)(u, F, e), D(u)],
                               ),
                             )
-                            return t(u), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
+                            return t(d), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
                           },
                           function (n) {
-                            var r = R({
+                            var r = x({
                                 attachment: a,
-                                conversation_id: d,
+                                conversation_id: u,
                                 error: !0,
                                 id: F,
                                 localMediaId: L,
@@ -5158,22 +5158,22 @@
                                 text: e.text,
                               }),
                               i = Object(C.a)([
-                                { type: g.c.SUCCESS },
+                                { type: h.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                d && Object(S.b)(d, F, r),
+                                u && Object(S.b)(u, F, r),
                               ])
-                            return t(i), Object(h.e)(t, n, 'ACTION_SEND_DM')
+                            return t(i), Object(f.e)(t, n, 'ACTION_SEND_DM')
                           },
                         )
                       )
                     },
                     function (e) {
-                      return t(ne(d)), (e.type = 'metadata'), Promise.reject(e)
+                      return t(ne(u)), (e.type = 'metadata'), Promise.reject(e)
                     },
                   )
                 },
                 function (e) {
-                  return t(Object(C.a)([Object(E.a)(L) && X(d, L), ne(d)])), Promise.reject(e)
+                  return t(Object(C.a)([Object(E.a)(L) && X(u, L), ne(u)])), Promise.reject(e)
                 },
               )
             )
@@ -5217,17 +5217,17 @@
         H = function (e, t) {
           return m.l(e, j(e, t))
         },
-        V = function (e, t) {
+        W = function (e, t) {
           var n = A(e, t)
           return n ? n.gifMetadata : null
         },
-        W = 'rweb/dmComposer/ADD_MEDIA',
-        z = function (e, t, n) {
-          return { payload: { isUploading: !1, mediaId: o()(t, 1)[0], gifMetadata: n }, type: W, conversationId: e }
+        V = 'rweb/dmComposer/ADD_MEDIA',
+        q = function (e, t, n) {
+          return { payload: { isUploading: !1, mediaId: l()(t, 1)[0], gifMetadata: n }, type: V, conversationId: e }
         },
-        q = 'rweb/dmComposer/CANCEL_UPLOAD',
+        z = 'rweb/dmComposer/CANCEL_UPLOAD',
         G = function (e) {
-          return { type: q, conversationId: e }
+          return { type: z, conversationId: e }
         },
         Y = 'rweb/dmComposer/REMOVE_MEDIA',
         Q = function (e) {
@@ -5250,39 +5250,39 @@
         ne = function (e) {
           return { type: te, conversationId: e }
         }
-      b.a.register(
-        u()({}, w, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x,
+      _.a.register(
+        d()({}, w, function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.conversationId || 'new_group'
           switch (t.type) {
-            case W:
+            case V:
               var a = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, a), t.payload)))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, a), t.payload)))
             case J:
               var r = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, r), {}, { isUploading: !0 })))
-            case q:
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, r), {}, { isUploading: !0 })))
+            case z:
               var i = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, i), {}, { isUploading: !1 })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, i), {}, { isUploading: !1 })))
             case te:
             case $:
             case Y:
-              var o = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
+              var l = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(
                 p()({}, e),
                 {},
-                u()({}, n, p()(p()({}, o), {}, { isUploading: !1, mediaId: null, gifMetadata: void 0 })),
+                d()({}, n, p()(p()({}, l), {}, { isUploading: !1, mediaId: null, gifMetadata: void 0 })),
               )
             case O:
-              var l = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, l), {}, { text: t.text })))
+              var o = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, o), {}, { text: t.text })))
             case K:
               var s = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, s), {}, { cardUrl: t.cardUrl })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, s), {}, { cardUrl: t.cardUrl })))
             case L:
               var c = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, u()({}, n, p()(p()({}, c), {}, { text: null })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, c), {}, { text: null })))
             default:
               return e
           }
@@ -5297,22 +5297,22 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = (n('yH/f'), n('B5iK')),
+        l = n.n(i),
+        o = (n('yH/f'), n('B5iK')),
         s = (function () {
           function e(t) {
             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.freeze({})
             r()(this, e)
             var a = n.interval,
               i = void 0 === a ? 6e4 : a,
-              o = n.burstInterval,
-              s = void 0 === o ? 3e3 : o,
+              l = n.burstInterval,
+              s = void 0 === l ? 3e3 : l,
               c = n.burstDuration,
-              u = void 0 === c ? 3e5 : c
-            ;(this.pollTimer = new l.b(i).interval(t)), (this.burstTimer = new l.a(this.pollTimer, s, u))
+              d = void 0 === c ? 3e5 : c
+            ;(this.pollTimer = new o.b(i).interval(t)), (this.burstTimer = new o.a(this.pollTimer, s, d))
           }
           return (
-            o()(e, [
+            l()(e, [
               {
                 key: 'start',
                 value: function (e) {
@@ -5338,33 +5338,32 @@
     },
     GjeS: function (e, t, n) {
       'use strict'
-      n.r(t)
       var a,
         r,
         i,
-        o,
         l,
+        o,
         s,
         c,
-        u,
         d,
+        u,
         p,
         m,
+        g,
         f,
         h,
-        g,
         v,
         y,
-        b,
         _,
+        b,
         k,
         S,
         C,
         E,
         T,
         w,
-        x,
         R,
+        x,
         F,
         A,
         I,
@@ -5379,10 +5378,10 @@
         U,
         N,
         H,
-        V,
         W,
-        z,
+        V,
         q,
+        z,
         G,
         Y,
         Q,
@@ -5396,29 +5395,29 @@
         ae,
         re,
         ie,
-        oe,
         le,
+        oe,
         se,
         ce,
-        ue,
         de,
+        ue,
         pe,
         me,
+        ge,
         fe,
         he,
-        ge,
         ve,
         ye,
-        be,
         _e,
+        be,
         ke,
         Se,
         Ce,
         Ee,
         Te,
         we,
-        xe,
         Re,
+        xe,
         Fe,
         Ae,
         Ie,
@@ -5429,14 +5428,53 @@
         Pe,
         Ke,
         Be,
-        je = {
+        je,
+        Ue,
+        Ne,
+        He,
+        We,
+        Ve,
+        qe,
+        ze,
+        Ge,
+        Ye,
+        Qe,
+        Xe,
+        Je,
+        Ze,
+        $e,
+        et,
+        tt,
+        nt,
+        at,
+        rt,
+        it,
+        lt,
+        ot,
+        st,
+        ct,
+        dt,
+        ut,
+        pt,
+        mt,
+        gt,
+        ft,
+        ht,
+        vt,
+        yt,
+        _t,
+        bt,
+        kt,
+        St,
+        Ct,
+        Et = {
           fragment: {
             argumentDefinitions: [
               (a = { defaultValue: null, kind: 'LocalArgument', name: 'id' }),
               (r = { defaultValue: null, kind: 'LocalArgument', name: 'next_cursor' }),
               (i = { defaultValue: null, kind: 'LocalArgument', name: 'previous_cursor' }),
-              (o = { defaultValue: !1, kind: 'LocalArgument', name: 'withAttachments' }),
-              (l = { defaultValue: !1, kind: 'LocalArgument', name: 'withDmMuting' }),
+              (l = { defaultValue: !1, kind: 'LocalArgument', name: 'withAttachments' }),
+              (o = { defaultValue: !1, kind: 'LocalArgument', name: 'withDmMuting' }),
               (s = { defaultValue: null, kind: 'LocalArgument', name: 'withSafetyModeUserFields' }),
               (c = { defaultValue: null, kind: 'LocalArgument', name: 'withSuperFollowsUserFields' }),
             ],
@@ -5446,7 +5484,7 @@
             selections: [
               {
                 alias: null,
-                args: (u = [
+                args: (d = [
                   { kind: 'Variable', name: 'conversation_id', variableName: 'id' },
                   { kind: 'Literal', name: 's', value: 25 },
                 ]),
@@ -5457,7 +5495,7 @@
                 selections: [
                   {
                     alias: 'legacy_conversation_slice',
-                    args: (d = [
+                    args: (u = [
                       { kind: 'Variable', name: 'next_cursor', variableName: 'next_cursor' },
                       { kind: 'Variable', name: 'previous_cursor', variableName: 'previous_cursor' },
                     ]),
@@ -5501,21 +5539,21 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      (f = {
+                                      (g = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'affects_sort',
                                         storageKey: null,
                                       }),
-                                      (h = {
+                                      (f = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'created_at_millis',
                                         storageKey: null,
                                       }),
-                                      (g = {
+                                      (h = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -5554,7 +5592,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              (b = {
+                                              (_ = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -5569,8 +5607,8 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  b,
-                                                  (_ = {
+                                                  _,
+                                                  (b = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -5591,7 +5629,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'created_by_user_results',
                                                     plural: !1,
-                                                    selections: (E = [
+                                                    selections: [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -5605,25 +5643,30 @@
                                                             selections: [
                                                               m,
                                                               p,
-                                                              (C = {
-                                                                alias: null,
-                                                                args: null,
-                                                                concreteType: 'ApiUser',
-                                                                kind: 'LinkedField',
-                                                                name: 'legacy',
-                                                                plural: !1,
-                                                                selections: [
-                                                                  k,
-                                                                  (S = {
-                                                                    alias: null,
-                                                                    args: null,
-                                                                    kind: 'ScalarField',
-                                                                    name: 'screen_name',
-                                                                    storageKey: null,
-                                                                  }),
-                                                                ],
-                                                                storageKey: null,
-                                                              }),
+                                                              {
+                                                                kind: 'RequiredField',
+                                                                field: (C = {
+                                                                  alias: null,
+                                                                  args: null,
+                                                                  concreteType: 'ApiUser',
+                                                                  kind: 'LinkedField',
+                                                                  name: 'legacy',
+                                                                  plural: !1,
+                                                                  selections: [
+                                                                    k,
+                                                                    (S = {
+                                                                      alias: null,
+                                                                      args: null,
+                                                                      kind: 'ScalarField',
+                                                                      name: 'screen_name',
+                                                                      storageKey: null,
+                                                                    }),
+                                                                  ],
+                                                                  storageKey: null,
+                                                                }),
+                                                                action: 'THROW',
+                                                                path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.conversation.legacy.metadata.created_by_user_results.result.legacy',
+                                                              },
                                                             ],
                                                             type: 'User',
                                                             abstractKey: null,
@@ -5631,10 +5674,10 @@
                                                         ],
                                                         storageKey: null,
                                                       },
-                                                    ]),
+                                                    ],
                                                     storageKey: null,
                                                   },
-                                                  h,
+                                                  f,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -5642,7 +5685,34 @@
                                                     kind: 'LinkedField',
                                                     name: 'admin_user_results',
                                                     plural: !1,
-                                                    selections: E,
+                                                    selections: [
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: null,
+                                                        kind: 'LinkedField',
+                                                        name: 'result',
+                                                        plural: !1,
+                                                        selections: [
+                                                          {
+                                                            kind: 'InlineFragment',
+                                                            selections: [
+                                                              m,
+                                                              p,
+                                                              {
+                                                                kind: 'RequiredField',
+                                                                field: C,
+                                                                action: 'THROW',
+                                                                path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.conversation.legacy.metadata.admin_user_results.result.legacy',
+                                                              },
+                                                            ],
+                                                            type: 'User',
+                                                            abstractKey: null,
+                                                          },
+                                                        ],
+                                                        storageKey: null,
+                                                      },
+                                                    ],
                                                     storageKey: null,
                                                   },
                                                   {
@@ -5665,21 +5735,21 @@
                                                           (R = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (T = {
+                                                              (E = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'original_img_url',
                                                                 storageKey: null,
                                                               }),
-                                                              (w = {
+                                                              (T = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'original_img_width',
                                                                 storageKey: null,
                                                               }),
-                                                              (x = {
+                                                              (w = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -5728,33 +5798,38 @@
                                                             selections: [
                                                               m,
                                                               p,
-                                                              (I = {
-                                                                alias: null,
-                                                                args: null,
-                                                                concreteType: 'ApiUser',
-                                                                kind: 'LinkedField',
-                                                                name: 'legacy',
-                                                                plural: !1,
-                                                                selections: [
-                                                                  (F = {
-                                                                    alias: null,
-                                                                    args: null,
-                                                                    kind: 'ScalarField',
-                                                                    name: 'id_str',
-                                                                    storageKey: null,
-                                                                  }),
-                                                                  k,
-                                                                  S,
-                                                                  (A = {
-                                                                    alias: null,
-                                                                    args: null,
-                                                                    kind: 'ScalarField',
-                                                                    name: 'profile_image_url_https',
-                                                                    storageKey: null,
-                                                                  }),
-                                                                ],
-                                                                storageKey: null,
-                                                              }),
+                                                              {
+                                                                kind: 'RequiredField',
+                                                                field: (A = {
+                                                                  alias: null,
+                                                                  args: null,
+                                                                  concreteType: 'ApiUser',
+                                                                  kind: 'LinkedField',
+                                                                  name: 'legacy',
+                                                                  plural: !1,
+                                                                  selections: [
+                                                                    (x = {
+                                                                      alias: null,
+                                                                      args: null,
+                                                                      kind: 'ScalarField',
+                                                                      name: 'id_str',
+                                                                      storageKey: null,
+                                                                    }),
+                                                                    k,
+                                                                    S,
+                                                                    (F = {
+                                                                      alias: null,
+                                                                      args: null,
+                                                                      kind: 'ScalarField',
+                                                                      name: 'profile_image_url_https',
+                                                                      storageKey: null,
+                                                                    }),
+                                                                  ],
+                                                                  storageKey: null,
+                                                                }),
+                                                                action: 'THROW',
+                                                                path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.conversation.legacy.participants_metadata.user_results.result.legacy',
+                                                              },
                                                             ],
                                                             type: 'User',
                                                             abstractKey: null,
@@ -5765,21 +5840,21 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  (O = {
+                                                  (I = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'last_read_event_id',
                                                     storageKey: null,
                                                   }),
-                                                  (M = {
+                                                  (O = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'join_time_millis',
                                                     storageKey: null,
                                                   }),
-                                                  (L = {
+                                                  (M = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -5789,7 +5864,7 @@
                                                 ],
                                                 storageKey: null,
                                               },
-                                              (D = {
+                                              (L = {
                                                 alias: null,
                                                 args: null,
                                                 concreteType: 'PerspectivalConversationMetadata',
@@ -5797,7 +5872,7 @@
                                                 name: 'perspectival_conversation_metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  O,
+                                                  I,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -5850,7 +5925,7 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
-                                          (P = {
+                                          (D = {
                                             alias: null,
                                             args: null,
                                             concreteType: 'DMInitialLowQualityState',
@@ -5868,28 +5943,28 @@
                                             ],
                                             storageKey: null,
                                           }),
-                                          (K = {
+                                          (P = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_new_one_to_one_convo',
                                             storageKey: null,
                                           }),
-                                          (B = {
+                                          (K = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_spam_hide',
                                             storageKey: null,
                                           }),
-                                          (j = {
+                                          (B = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'marked_as_abuse',
                                             storageKey: null,
                                           }),
-                                          (U = {
+                                          (j = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -5897,14 +5972,14 @@
                                             storageKey: null,
                                           }),
                                           k,
-                                          (N = {
+                                          (U = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'possibly_spam',
                                             storageKey: null,
                                           }),
-                                          (H = {
+                                          (N = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -5918,7 +5993,34 @@
                                             kind: 'LinkedField',
                                             name: 'users_results',
                                             plural: !0,
-                                            selections: E,
+                                            selections: [
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: 'LinkedField',
+                                                name: 'result',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    kind: 'InlineFragment',
+                                                    selections: [
+                                                      m,
+                                                      p,
+                                                      {
+                                                        kind: 'RequiredField',
+                                                        field: C,
+                                                        action: 'THROW',
+                                                        path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.users_results.result.legacy',
+                                                      },
+                                                    ],
+                                                    type: 'User',
+                                                    abstractKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
+                                            ],
                                             storageKey: null,
                                           },
                                           {
@@ -5928,7 +6030,34 @@
                                             kind: 'LinkedField',
                                             name: 'participants_snapshot_results',
                                             plural: !0,
-                                            selections: E,
+                                            selections: [
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: 'LinkedField',
+                                                name: 'result',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    kind: 'InlineFragment',
+                                                    selections: [
+                                                      m,
+                                                      p,
+                                                      {
+                                                        kind: 'RequiredField',
+                                                        field: C,
+                                                        action: 'THROW',
+                                                        path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.participants_snapshot_results.result.legacy',
+                                                      },
+                                                    ],
+                                                    type: 'User',
+                                                    abstractKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
+                                            ],
                                             storageKey: null,
                                           },
                                           {
@@ -5938,7 +6067,34 @@
                                             kind: 'LinkedField',
                                             name: 'initiating_user_results',
                                             plural: !1,
-                                            selections: E,
+                                            selections: [
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: 'LinkedField',
+                                                name: 'result',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    kind: 'InlineFragment',
+                                                    selections: [
+                                                      m,
+                                                      p,
+                                                      {
+                                                        kind: 'RequiredField',
+                                                        field: C,
+                                                        action: 'THROW',
+                                                        path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.initiating_user_results.result.legacy',
+                                                      },
+                                                    ],
+                                                    type: 'User',
+                                                    abstractKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
+                                            ],
                                             storageKey: null,
                                           },
                                           {
@@ -5949,7 +6105,7 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              (V = {
+                                              (H = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -5965,26 +6121,6 @@
                                                 storageKey: null,
                                               }),
                                               {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'UserResults',
-                                                kind: 'LinkedField',
-                                                name: 'recipient_results',
-                                                plural: !1,
-                                                selections: E,
-                                                storageKey: null,
-                                              },
-                                              {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'UserResults',
-                                                kind: 'LinkedField',
-                                                name: 'sender_results',
-                                                plural: !1,
-                                                selections: E,
-                                                storageKey: null,
-                                              },
-                                              {
                                                 condition: 'withAttachments',
                                                 kind: 'Condition',
                                                 passingValue: !0,
@@ -5997,14 +6133,14 @@
                                                     name: 'attachments',
                                                     plural: !0,
                                                     selections: [
-                                                      (z = {
+                                                      (V = {
                                                         alias: null,
                                                         args: null,
                                                         kind: 'ScalarField',
                                                         name: '__typename',
                                                         storageKey: null,
                                                       }),
-                                                      (ne = {
+                                                      (te = {
                                                         kind: 'InlineFragment',
                                                         selections: [
                                                           {
@@ -6038,10 +6174,10 @@
                                                                 name: 'media_info',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  z,
+                                                                  V,
                                                                   {
                                                                     kind: 'InlineFragment',
-                                                                    selections: (J = [
+                                                                    selections: (X = [
                                                                       (q = {
                                                                         alias: null,
                                                                         args: null,
@@ -6049,9 +6185,9 @@
                                                                         name: 'alt_text',
                                                                         storageKey: null,
                                                                       }),
-                                                                      x,
                                                                       w,
                                                                       T,
+                                                                      E,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -6060,7 +6196,7 @@
                                                                         name: 'salient_rect',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          (G = {
+                                                                          (z = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -6081,7 +6217,7 @@
                                                                             name: 'top',
                                                                             storageKey: null,
                                                                           },
-                                                                          (Y = {
+                                                                          (G = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -6107,7 +6243,7 @@
                                                                             name: 'palette',
                                                                             plural: !0,
                                                                             selections: [
-                                                                              (Q = {
+                                                                              (Y = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -6121,7 +6257,7 @@
                                                                                 kind: 'LinkedField',
                                                                                 name: 'rgb',
                                                                                 plural: !1,
-                                                                                selections: (X = [
+                                                                                selections: (Q = [
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -6159,7 +6295,7 @@
                                                                   {
                                                                     kind: 'InlineFragment',
                                                                     selections: [
-                                                                      (Z = {
+                                                                      (J = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'AspectRatio',
@@ -6198,17 +6334,17 @@
                                                                         name: 'embeddable',
                                                                         storageKey: null,
                                                                       },
-                                                                      ($ = {
+                                                                      (Z = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'ApiImage',
                                                                         kind: 'LinkedField',
                                                                         name: 'preview_image',
                                                                         plural: !1,
-                                                                        selections: J,
+                                                                        selections: X,
                                                                         storageKey: null,
                                                                       }),
-                                                                      (te = {
+                                                                      (ee = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'VideoVariant',
@@ -6230,7 +6366,7 @@
                                                                             name: 'content_type',
                                                                             storageKey: null,
                                                                           },
-                                                                          (ee = {
+                                                                          ($ = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -6253,7 +6389,7 @@
                                                                   },
                                                                   {
                                                                     kind: 'InlineFragment',
-                                                                    selections: [q, Z, $, te],
+                                                                    selections: [q, J, Z, ee],
                                                                     type: 'ApiGif',
                                                                     abstractKey: null,
                                                                   },
@@ -6287,7 +6423,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (ie = {
+                                                                  (re = {
                                                                     alias: null,
                                                                     args: null,
                                                                     concreteType: 'LegacyCardBinding',
@@ -6295,7 +6431,7 @@
                                                                     name: 'binding_values',
                                                                     plural: !0,
                                                                     selections: [
-                                                                      (ae = {
+                                                                      (ne = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -6339,9 +6475,9 @@
                                                                                 name: 'alt',
                                                                                 storageKey: null,
                                                                               },
+                                                                              z,
                                                                               G,
-                                                                              Y,
-                                                                              ee,
+                                                                              $,
                                                                             ],
                                                                             storageKey: null,
                                                                           },
@@ -6362,17 +6498,17 @@
                                                                                 name: 'palette',
                                                                                 plural: !0,
                                                                                 selections: [
-                                                                                  (re = {
+                                                                                  (ae = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: 'ApiMediaEntityColor',
                                                                                     kind: 'LinkedField',
                                                                                     name: 'rgb',
                                                                                     plural: !1,
-                                                                                    selections: X,
+                                                                                    selections: Q,
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  Q,
+                                                                                  Y,
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
@@ -6415,7 +6551,7 @@
                                                                             name: 'user_value',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              F,
+                                                                              x,
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -6432,7 +6568,7 @@
                                                                     ],
                                                                     storageKey: null,
                                                                   }),
-                                                                  (oe = {
+                                                                  (ie = {
                                                                     alias: null,
                                                                     args: null,
                                                                     concreteType: 'ApiCardPlatform',
@@ -6493,7 +6629,7 @@
                                                                     storageKey: null,
                                                                   }),
                                                                   k,
-                                                                  ee,
+                                                                  $,
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -6520,7 +6656,7 @@
                                                                             name: 'label',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              (se = {
+                                                                              (oe = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 concreteType: 'TimelineUrl',
@@ -6535,21 +6671,21 @@
                                                                                     name: 'url_type',
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  ee,
+                                                                                  $,
                                                                                 ],
                                                                                 storageKey: null,
                                                                               }),
-                                                                              (ce = {
+                                                                              (se = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 concreteType: 'BadgeInfo',
                                                                                 kind: 'LinkedField',
                                                                                 name: 'badge',
                                                                                 plural: !1,
-                                                                                selections: [ee],
+                                                                                selections: [$],
                                                                                 storageKey: null,
                                                                               }),
-                                                                              (ue = {
+                                                                              (ce = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -6571,7 +6707,7 @@
                                                                                     name: 'alignment',
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  (pe = {
+                                                                                  (ue = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
@@ -6588,21 +6724,21 @@
                                                                                     name: 'entities',
                                                                                     plural: !0,
                                                                                     selections: [
-                                                                                      (me = {
+                                                                                      (pe = {
                                                                                         alias: 'fromIndex',
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
                                                                                         name: 'from_index',
                                                                                         storageKey: null,
                                                                                       }),
-                                                                                      (fe = {
+                                                                                      (me = {
                                                                                         alias: 'toIndex',
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
                                                                                         name: 'to_index',
                                                                                         storageKey: null,
                                                                                       }),
-                                                                                      (he = {
+                                                                                      (ge = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
@@ -6617,35 +6753,35 @@
                                                                                         name: 'ref',
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                          (ge = {
+                                                                                          (fe = {
                                                                                             alias: 'type',
                                                                                             args: null,
                                                                                             kind: 'ScalarField',
                                                                                             name: '__typename',
                                                                                             storageKey: null,
                                                                                           }),
-                                                                                          (ye = {
+                                                                                          (ve = {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: (ve = [W]),
+                                                                                            selections: (he = [W]),
                                                                                             type: 'TimelineRichTextCashtag',
                                                                                             abstractKey: null,
                                                                                           }),
-                                                                                          (be = {
+                                                                                          (ye = {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: [m, ee],
+                                                                                            selections: [m, $],
                                                                                             type: 'TimelineRichTextList',
                                                                                             abstractKey: null,
                                                                                           }),
                                                                                           (_e = {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: ve,
+                                                                                            selections: he,
                                                                                             type: 'TimelineRichTextHashtag',
                                                                                             abstractKey: null,
                                                                                           }),
-                                                                                          (ke = {
+                                                                                          (be = {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              ee,
+                                                                                              $,
                                                                                               le,
                                                                                               {
                                                                                                 alias:
@@ -6688,7 +6824,7 @@
                                                                                                     name: 'request_params',
                                                                                                     plural: !0,
                                                                                                     selections: [
-                                                                                                      ae,
+                                                                                                      ne,
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -6718,7 +6854,7 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: (Ee = [
+                                                                                                selections: [
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -6727,30 +6863,39 @@
                                                                                                     name: 'result',
                                                                                                     plural: !1,
                                                                                                     selections: [
-                                                                                                      z,
+                                                                                                      V,
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
-                                                                                                          (Se = {
-                                                                                                            alias: null,
-                                                                                                            args: null,
-                                                                                                            concreteType:
-                                                                                                              'ApiUser',
-                                                                                                            kind: 'LinkedField',
-                                                                                                            name: 'legacy',
-                                                                                                            plural: !1,
-                                                                                                            selections:
-                                                                                                              [S],
-                                                                                                            storageKey:
-                                                                                                              null,
-                                                                                                          }),
+                                                                                                          {
+                                                                                                            kind: 'RequiredField',
+                                                                                                            field: (ke =
+                                                                                                              {
+                                                                                                                alias:
+                                                                                                                  null,
+                                                                                                                args: null,
+                                                                                                                concreteType:
+                                                                                                                  'ApiUser',
+                                                                                                                kind: 'LinkedField',
+                                                                                                                name: 'legacy',
+                                                                                                                plural:
+                                                                                                                  !1,
+                                                                                                                selections:
+                                                                                                                  [S],
+                                                                                                                storageKey:
+                                                                                                                  null,
+                                                                                                              }),
+                                                                                                            action:
+                                                                                                              'THROW',
+                                                                                                            path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.affiliates_highlighted_label.label.longDescription.entities.ref.user_results.result.legacy',
+                                                                                                          },
                                                                                                           p,
                                                                                                         ],
                                                                                                         type: 'User',
                                                                                                         abstractKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      (Ce = {
+                                                                                                      (Se = {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
                                                                                                           {
@@ -6778,7 +6923,7 @@
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                ]),
+                                                                                                ],
                                                                                                 storageKey: null,
                                                                                               },
                                                                                             ],
@@ -6798,7 +6943,37 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: Ee,
+                                                                                                selections: [
+                                                                                                  {
+                                                                                                    alias: null,
+                                                                                                    args: null,
+                                                                                                    concreteType: null,
+                                                                                                    kind: 'LinkedField',
+                                                                                                    name: 'result',
+                                                                                                    plural: !1,
+                                                                                                    selections: [
+                                                                                                      V,
+                                                                                                      {
+                                                                                                        kind: 'InlineFragment',
+                                                                                                        selections: [
+                                                                                                          {
+                                                                                                            kind: 'RequiredField',
+                                                                                                            field: ke,
+                                                                                                            action:
+                                                                                                              'THROW',
+                                                                                                            path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.affiliates_highlighted_label.label.longDescription.entities.ref.mention_results.result.legacy',
+                                                                                                          },
+                                                                                                          p,
+                                                                                                        ],
+                                                                                                        type: 'User',
+                                                                                                        abstractKey:
+                                                                                                          null,
+                                                                                                      },
+                                                                                                      Se,
+                                                                                                    ],
+                                                                                                    storageKey: null,
+                                                                                                  },
+                                                                                                ],
                                                                                                 storageKey: null,
                                                                                               },
                                                                                             ],
@@ -6814,7 +6989,7 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
-                                                                              (Te = {
+                                                                              (Ce = {
                                                                                 alias: 'userLabelType',
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -6827,430 +7002,510 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (we = {
+                                                                      (Ee = {
+                                                                        condition: 'withDmMuting',
+                                                                        kind: 'Condition',
+                                                                        passingValue: !0,
+                                                                        selections: [
+                                                                          {
+                                                                            alias: null,
+                                                                            args: null,
+                                                                            kind: 'ScalarField',
+                                                                            name: 'dm_muting',
+                                                                            storageKey: null,
+                                                                          },
+                                                                        ],
+                                                                      }),
+                                                                      (Te = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
                                                                         name: 'has_nft_avatar',
                                                                         storageKey: null,
                                                                       }),
-                                                                      (Ae = {
-                                                                        alias: null,
-                                                                        args: null,
-                                                                        concreteType: 'ApiUser',
-                                                                        kind: 'LinkedField',
-                                                                        name: 'legacy',
-                                                                        plural: !1,
-                                                                        selections: [
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'blocked_by',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'blocking',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'can_dm',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'can_media_tag',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'created_at',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'default_profile',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'default_profile_image',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          ue,
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            concreteType: 'UserEntities',
-                                                                            kind: 'LinkedField',
-                                                                            name: 'entities',
-                                                                            plural: !1,
-                                                                            selections: (Re = [
-                                                                              {
+                                                                      {
+                                                                        kind: 'RequiredField',
+                                                                        field: {
+                                                                          alias: null,
+                                                                          args: null,
+                                                                          concreteType: 'ApiUser',
+                                                                          kind: 'LinkedField',
+                                                                          name: 'legacy',
+                                                                          plural: !1,
+                                                                          selections: [
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (we = {
                                                                                 alias: null,
                                                                                 args: null,
-                                                                                concreteType: 'EntitySet',
-                                                                                kind: 'LinkedField',
-                                                                                name: 'description',
-                                                                                plural: !1,
-                                                                                selections: (xe = [
-                                                                                  {
-                                                                                    alias: null,
-                                                                                    args: null,
-                                                                                    concreteType: 'UrlsEntity',
-                                                                                    kind: 'LinkedField',
-                                                                                    name: 'urls',
-                                                                                    plural: !0,
-                                                                                    selections: [
-                                                                                      {
-                                                                                        alias: null,
-                                                                                        args: null,
-                                                                                        kind: 'ScalarField',
-                                                                                        name: 'display_url',
-                                                                                        storageKey: null,
-                                                                                      },
-                                                                                      {
-                                                                                        alias: null,
-                                                                                        args: null,
-                                                                                        kind: 'ScalarField',
-                                                                                        name: 'expanded_url',
-                                                                                        storageKey: null,
-                                                                                      },
-                                                                                      ee,
-                                                                                      {
-                                                                                        alias: null,
-                                                                                        args: null,
-                                                                                        kind: 'ScalarField',
-                                                                                        name: 'indices',
-                                                                                        storageKey: null,
-                                                                                      },
-                                                                                    ],
-                                                                                    storageKey: null,
-                                                                                  },
-                                                                                ]),
+                                                                                kind: 'ScalarField',
+                                                                                name: 'blocked_by',
                                                                                 storageKey: null,
-                                                                              },
-                                                                              {
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.blocked_by',
+                                                                            },
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Re = {
                                                                                 alias: null,
                                                                                 args: null,
-                                                                                concreteType: 'EntitySet',
-                                                                                kind: 'LinkedField',
-                                                                                name: 'url',
-                                                                                plural: !1,
-                                                                                selections: xe,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'blocking',
                                                                                 storageKey: null,
-                                                                              },
-                                                                            ]),
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'fast_followers_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'favourites_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'follow_request_sent',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'follow_request_received',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'followed_by',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'followers_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'following',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'friends_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'has_custom_timelines',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'is_translator',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'listed_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'location',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'media_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'muting',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          k,
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'needs_phone_verification',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'normal_followers_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'notifications',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'pinned_tweet_ids_str',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            concreteType: 'ApiMediaExtensions',
-                                                                            kind: 'LinkedField',
-                                                                            name: 'profile_banner_extensions',
-                                                                            plural: !1,
-                                                                            selections: (Fe = [
-                                                                              {
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.blocking',
+                                                                            },
+                                                                            (xe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'can_dm',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Fe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'can_media_tag',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Ae = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'created_at',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Ie = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'default_profile',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Oe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'default_profile_image',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            ce,
+                                                                            (De = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              concreteType: 'UserEntities',
+                                                                              kind: 'LinkedField',
+                                                                              name: 'entities',
+                                                                              plural: !1,
+                                                                              selections: (Le = [
+                                                                                {
+                                                                                  alias: null,
+                                                                                  args: null,
+                                                                                  concreteType: 'EntitySet',
+                                                                                  kind: 'LinkedField',
+                                                                                  name: 'description',
+                                                                                  plural: !1,
+                                                                                  selections: (Me = [
+                                                                                    {
+                                                                                      alias: null,
+                                                                                      args: null,
+                                                                                      concreteType: 'UrlsEntity',
+                                                                                      kind: 'LinkedField',
+                                                                                      name: 'urls',
+                                                                                      plural: !0,
+                                                                                      selections: [
+                                                                                        {
+                                                                                          alias: null,
+                                                                                          args: null,
+                                                                                          kind: 'ScalarField',
+                                                                                          name: 'display_url',
+                                                                                          storageKey: null,
+                                                                                        },
+                                                                                        {
+                                                                                          alias: null,
+                                                                                          args: null,
+                                                                                          kind: 'ScalarField',
+                                                                                          name: 'expanded_url',
+                                                                                          storageKey: null,
+                                                                                        },
+                                                                                        $,
+                                                                                        {
+                                                                                          alias: null,
+                                                                                          args: null,
+                                                                                          kind: 'ScalarField',
+                                                                                          name: 'indices',
+                                                                                          storageKey: null,
+                                                                                        },
+                                                                                      ],
+                                                                                      storageKey: null,
+                                                                                    },
+                                                                                  ]),
+                                                                                  storageKey: null,
+                                                                                },
+                                                                                {
+                                                                                  alias: null,
+                                                                                  args: null,
+                                                                                  concreteType: 'EntitySet',
+                                                                                  kind: 'LinkedField',
+                                                                                  name: 'url',
+                                                                                  plural: !1,
+                                                                                  selections: Me,
+                                                                                  storageKey: null,
+                                                                                },
+                                                                              ]),
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Pe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'fast_followers_count',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Ke = {
                                                                                 alias: null,
                                                                                 args: null,
-                                                                                concreteType: 'ApiMediaColorExtension',
-                                                                                kind: 'LinkedField',
-                                                                                name: 'mediaColor',
-                                                                                plural: !1,
-                                                                                selections: [
-                                                                                  {
-                                                                                    alias: null,
-                                                                                    args: null,
-                                                                                    concreteType:
-                                                                                      'ApiMediaColorExtensionR',
-                                                                                    kind: 'LinkedField',
-                                                                                    name: 'r',
-                                                                                    plural: !1,
-                                                                                    selections: [
-                                                                                      {
-                                                                                        alias: null,
-                                                                                        args: null,
-                                                                                        concreteType:
-                                                                                          'ApiMediaEntityColorPalette',
-                                                                                        kind: 'LinkedField',
-                                                                                        name: 'ok',
-                                                                                        plural: !1,
-                                                                                        selections: [
-                                                                                          {
-                                                                                            alias: null,
-                                                                                            args: null,
-                                                                                            concreteType:
-                                                                                              'ApiMediaEntityColorPaletteColor',
-                                                                                            kind: 'LinkedField',
-                                                                                            name: 'palette',
-                                                                                            plural: !0,
-                                                                                            selections: [Q, re],
-                                                                                            storageKey: null,
-                                                                                          },
-                                                                                        ],
-                                                                                        storageKey: null,
-                                                                                      },
-                                                                                    ],
-                                                                                    storageKey: null,
-                                                                                  },
-                                                                                ],
+                                                                                kind: 'ScalarField',
+                                                                                name: 'favourites_count',
                                                                                 storageKey: null,
-                                                                              },
-                                                                            ]),
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'profile_banner_url',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            concreteType: 'ApiMediaExtensions',
-                                                                            kind: 'LinkedField',
-                                                                            name: 'profile_image_extensions',
-                                                                            plural: !1,
-                                                                            selections: Fe,
-                                                                            storageKey: null,
-                                                                          },
-                                                                          A,
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'profile_interstitial_type',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'protected',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          S,
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'statuses_count',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'time_zone',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'translator_type',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          ee,
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'utc_offset',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'verified',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'want_retweets',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'withheld_description',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            concreteType: 'UserEntities',
-                                                                            kind: 'LinkedField',
-                                                                            name: 'withheld_entities',
-                                                                            plural: !1,
-                                                                            selections: Re,
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'withheld_in_countries',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'withheld_scope',
-                                                                            storageKey: null,
-                                                                          },
-                                                                        ],
-                                                                        storageKey: null,
-                                                                      }),
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.favourites_count',
+                                                                            },
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Be = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'follow_request_sent',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.follow_request_sent',
+                                                                            },
+                                                                            (je = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'follow_request_received',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Ue = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'followed_by',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.followed_by',
+                                                                            },
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Ne = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'followers_count',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.followers_count',
+                                                                            },
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (He = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'following',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.following',
+                                                                            },
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (We = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'friends_count',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.friends_count',
+                                                                            },
+                                                                            (Ve = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'has_custom_timelines',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (qe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'is_translator',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (ze = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'listed_count',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Ge = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'location',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (Ye = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'media_count',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.media_count',
+                                                                            },
+                                                                            (Qe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'muting',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            k,
+                                                                            (Xe = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'needs_phone_verification',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Je = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'normal_followers_count',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (Ze = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'notifications',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            ($e = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'pinned_tweet_ids_str',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (tt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              concreteType: 'ApiMediaExtensions',
+                                                                              kind: 'LinkedField',
+                                                                              name: 'profile_banner_extensions',
+                                                                              plural: !1,
+                                                                              selections: (et = [
+                                                                                {
+                                                                                  alias: null,
+                                                                                  args: null,
+                                                                                  concreteType:
+                                                                                    'ApiMediaColorExtension',
+                                                                                  kind: 'LinkedField',
+                                                                                  name: 'mediaColor',
+                                                                                  plural: !1,
+                                                                                  selections: [
+                                                                                    {
+                                                                                      alias: null,
+                                                                                      args: null,
+                                                                                      concreteType:
+                                                                                        'ApiMediaColorExtensionR',
+                                                                                      kind: 'LinkedField',
+                                                                                      name: 'r',
+                                                                                      plural: !1,
+                                                                                      selections: [
+                                                                                        {
+                                                                                          alias: null,
+                                                                                          args: null,
+                                                                                          concreteType:
+                                                                                            'ApiMediaEntityColorPalette',
+                                                                                          kind: 'LinkedField',
+                                                                                          name: 'ok',
+                                                                                          plural: !1,
+                                                                                          selections: [
+                                                                                            {
+                                                                                              alias: null,
+                                                                                              args: null,
+                                                                                              concreteType:
+                                                                                                'ApiMediaEntityColorPaletteColor',
+                                                                                              kind: 'LinkedField',
+                                                                                              name: 'palette',
+                                                                                              plural: !0,
+                                                                                              selections: [Y, ae],
+                                                                                              storageKey: null,
+                                                                                            },
+                                                                                          ],
+                                                                                          storageKey: null,
+                                                                                        },
+                                                                                      ],
+                                                                                      storageKey: null,
+                                                                                    },
+                                                                                  ],
+                                                                                  storageKey: null,
+                                                                                },
+                                                                              ]),
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (nt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'profile_banner_url',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (at = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              concreteType: 'ApiMediaExtensions',
+                                                                              kind: 'LinkedField',
+                                                                              name: 'profile_image_extensions',
+                                                                              plural: !1,
+                                                                              selections: et,
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            F,
+                                                                            (rt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'profile_interstitial_type',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (it = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'protected',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.protected',
+                                                                            },
+                                                                            S,
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (lt = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'statuses_count',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.statuses_count',
+                                                                            },
+                                                                            (ot = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'time_zone',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (st = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'translator_type',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            $,
+                                                                            (ct = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'utc_offset',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            {
+                                                                              kind: 'RequiredField',
+                                                                              field: (dt = {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                kind: 'ScalarField',
+                                                                                name: 'verified',
+                                                                                storageKey: null,
+                                                                              }),
+                                                                              action: 'THROW',
+                                                                              path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.verified',
+                                                                            },
+                                                                            (ut = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'want_retweets',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (pt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'withheld_description',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (mt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              concreteType: 'UserEntities',
+                                                                              kind: 'LinkedField',
+                                                                              name: 'withheld_entities',
+                                                                              plural: !1,
+                                                                              selections: Le,
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (gt = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'withheld_in_countries',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                            (ft = {
+                                                                              alias: null,
+                                                                              args: null,
+                                                                              kind: 'ScalarField',
+                                                                              name: 'withheld_scope',
+                                                                              storageKey: null,
+                                                                            }),
+                                                                          ],
+                                                                          storageKey: null,
+                                                                        },
+                                                                        action: 'THROW',
+                                                                        path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy',
+                                                                      },
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -7260,14 +7515,14 @@
                                                                         plural: !1,
                                                                         selections: [
                                                                           p,
-                                                                          (Ie = {
+                                                                          (ht = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'professional_type',
                                                                             storageKey: null,
                                                                           }),
-                                                                          (Oe = {
+                                                                          (vt = {
                                                                             alias: null,
                                                                             args: null,
                                                                             concreteType: 'BusinessCategory',
@@ -7290,21 +7545,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (Me = {
-                                                                        condition: 'withDmMuting',
-                                                                        kind: 'Condition',
-                                                                        passingValue: !0,
-                                                                        selections: [
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
-                                                                            name: 'dm_muting',
-                                                                            storageKey: null,
-                                                                          },
-                                                                        ],
-                                                                      }),
-                                                                      (Le = {
+                                                                      (yt = {
                                                                         condition: 'withSafetyModeUserFields',
                                                                         kind: 'Condition',
                                                                         passingValue: !0,
@@ -7332,7 +7573,7 @@
                                                                           },
                                                                         ],
                                                                       }),
-                                                                      (De = {
+                                                                      (_t = {
                                                                         condition: 'withSuperFollowsUserFields',
                                                                         kind: 'Condition',
                                                                         passingValue: !0,
@@ -7378,6 +7619,80 @@
                                                   },
                                                 ],
                                               },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: 'UserResults',
+                                                kind: 'LinkedField',
+                                                name: 'recipient_results',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: null,
+                                                    kind: 'LinkedField',
+                                                    name: 'result',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        kind: 'InlineFragment',
+                                                        selections: [
+                                                          m,
+                                                          p,
+                                                          {
+                                                            kind: 'RequiredField',
+                                                            field: C,
+                                                            action: 'THROW',
+                                                            path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.recipient_results.result.legacy',
+                                                          },
+                                                        ],
+                                                        type: 'User',
+                                                        abstractKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: 'UserResults',
+                                                kind: 'LinkedField',
+                                                name: 'sender_results',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: null,
+                                                    kind: 'LinkedField',
+                                                    name: 'result',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        kind: 'InlineFragment',
+                                                        selections: [
+                                                          m,
+                                                          p,
+                                                          {
+                                                            kind: 'RequiredField',
+                                                            field: C,
+                                                            action: 'THROW',
+                                                            path: 'dm_conversation_by_rest_id.legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.sender_results.result.legacy',
+                                                          },
+                                                        ],
+                                                        type: 'User',
+                                                        abstractKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
                                             ],
                                             storageKey: null,
                                           },
@@ -7409,13 +7724,13 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: [a, r, i, o, c, s, l],
+            argumentDefinitions: [a, r, i, l, c, s, o],
             kind: 'Operation',
             name: 'evolutionDmConversationTimelineQuery',
             selections: [
               {
                 alias: null,
-                args: u,
+                args: d,
                 concreteType: 'DMConversation',
                 kind: 'LinkedField',
                 name: 'dm_conversation_by_rest_id',
@@ -7423,13 +7738,13 @@
                 selections: [
                   {
                     alias: null,
-                    args: d,
+                    args: u,
                     concreteType: null,
                     kind: 'LinkedField',
                     name: 'legacy_conversation_slice',
                     plural: !1,
                     selections: [
-                      z,
+                      V,
                       { kind: 'TypeDiscriminator', abstractKey: '__isDMEventSliceResult' },
                       {
                         kind: 'InlineFragment',
@@ -7460,9 +7775,9 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
+                                      g,
                                       f,
                                       h,
-                                      g,
                                       v,
                                       y,
                                       {
@@ -7483,7 +7798,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              b,
+                                              _,
                                               {
                                                 alias: null,
                                                 args: null,
@@ -7492,8 +7807,8 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  b,
                                                   _,
+                                                  b,
                                                   k,
                                                   {
                                                     alias: null,
@@ -7502,7 +7817,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'created_by_user_results',
                                                     plural: !1,
-                                                    selections: (Ke = [
+                                                    selections: (St = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -7511,14 +7826,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          z,
+                                                          V,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
                                                               m,
                                                               p,
                                                               C,
-                                                              (Pe = {
+                                                              (bt = {
                                                                 alias: null,
                                                                 args: null,
                                                                 filters: null,
@@ -7534,10 +7849,19 @@
                                                         ],
                                                         storageKey: null,
                                                       },
+                                                      (kt = {
+                                                        alias: null,
+                                                        args: null,
+                                                        filters: null,
+                                                        handle: 'user',
+                                                        key: '',
+                                                        kind: 'LinkedHandle',
+                                                        name: 'result',
+                                                      }),
                                                     ]),
                                                     storageKey: null,
                                                   },
-                                                  h,
+                                                  f,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -7545,7 +7869,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'admin_user_results',
                                                     plural: !1,
-                                                    selections: Ke,
+                                                    selections: St,
                                                     storageKey: null,
                                                   },
                                                   {
@@ -7564,7 +7888,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'media_info',
                                                         plural: !1,
-                                                        selections: [z, R],
+                                                        selections: [V, R],
                                                         storageKey: null,
                                                       },
                                                     ],
@@ -7597,26 +7921,27 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          z,
+                                                          V,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [m, p, I, Pe],
+                                                            selections: [m, p, A, bt],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
                                                         ],
                                                         storageKey: null,
                                                       },
+                                                      kt,
                                                     ],
                                                     storageKey: null,
                                                   },
+                                                  I,
                                                   O,
                                                   M,
-                                                  L,
                                                 ],
                                                 storageKey: null,
                                               },
-                                              D,
+                                              L,
                                             ],
                                             storageKey: null,
                                           },
@@ -7631,14 +7956,14 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
+                                          D,
                                           P,
                                           K,
                                           B,
                                           j,
-                                          U,
                                           k,
+                                          U,
                                           N,
-                                          H,
                                           {
                                             alias: null,
                                             args: null,
@@ -7646,7 +7971,7 @@
                                             kind: 'LinkedField',
                                             name: 'users_results',
                                             plural: !0,
-                                            selections: Ke,
+                                            selections: St,
                                             storageKey: null,
                                           },
                                           {
@@ -7656,7 +7981,7 @@
                                             kind: 'LinkedField',
                                             name: 'participants_snapshot_results',
                                             plural: !0,
-                                            selections: Ke,
+                                            selections: St,
                                             storageKey: null,
                                           },
                                           {
@@ -7666,7 +7991,7 @@
                                             kind: 'LinkedField',
                                             name: 'initiating_user_results',
                                             plural: !1,
-                                            selections: Ke,
+                                            selections: St,
                                             storageKey: null,
                                           },
                                           {
@@ -7677,29 +8002,9 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              V,
+                                              H,
                                               m,
                                               W,
-                                              {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'UserResults',
-                                                kind: 'LinkedField',
-                                                name: 'recipient_results',
-                                                plural: !1,
-                                                selections: Ke,
-                                                storageKey: null,
-                                              },
-                                              {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'UserResults',
-                                                kind: 'LinkedField',
-                                                name: 'sender_results',
-                                                plural: !1,
-                                                selections: Ke,
-                                                storageKey: null,
-                                              },
                                               {
                                                 condition: 'withAttachments',
                                                 kind: 'Condition',
@@ -7713,8 +8018,8 @@
                                                     name: 'attachments',
                                                     plural: !0,
                                                     selections: [
-                                                      z,
-                                                      ne,
+                                                      V,
+                                                      te,
                                                       {
                                                         kind: 'InlineFragment',
                                                         selections: [
@@ -7735,10 +8040,10 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
+                                                                  re,
                                                                   ie,
-                                                                  oe,
                                                                   k,
-                                                                  ee,
+                                                                  $,
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -7765,9 +8070,9 @@
                                                                             name: 'label',
                                                                             plural: !1,
                                                                             selections: [
+                                                                              oe,
                                                                               se,
                                                                               ce,
-                                                                              ue,
                                                                               {
                                                                                 alias: 'longDescription',
                                                                                 args: null,
@@ -7777,7 +8082,7 @@
                                                                                 plural: !1,
                                                                                 selections: [
                                                                                   de,
-                                                                                  pe,
+                                                                                  ue,
                                                                                   W,
                                                                                   {
                                                                                     alias: null,
@@ -7788,9 +8093,9 @@
                                                                                     name: 'entities',
                                                                                     plural: !0,
                                                                                     selections: [
+                                                                                      pe,
                                                                                       me,
-                                                                                      fe,
-                                                                                      he,
+                                                                                      ge,
                                                                                       {
                                                                                         alias: null,
                                                                                         args: null,
@@ -7799,17 +8104,17 @@
                                                                                         name: 'ref',
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                          z,
+                                                                                          V,
                                                                                           {
                                                                                             kind: 'TypeDiscriminator',
                                                                                             abstractKey:
                                                                                               '__isTimelineReferenceObject',
                                                                                           },
-                                                                                          ge,
+                                                                                          fe,
+                                                                                          ve,
                                                                                           ye,
-                                                                                          be,
                                                                                           _e,
-                                                                                          ke,
+                                                                                          be,
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
@@ -7821,7 +8126,7 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: (Be = [
+                                                                                                selections: (Ct = [
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -7830,12 +8135,12 @@
                                                                                                     name: 'result',
                                                                                                     plural: !1,
                                                                                                     selections: [
-                                                                                                      z,
+                                                                                                      V,
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
-                                                                                                          Se,
-                                                                                                          Pe,
+                                                                                                          ke,
+                                                                                                          bt,
                                                                                                           p,
                                                                                                           m,
                                                                                                         ],
@@ -7843,7 +8148,7 @@
                                                                                                         abstractKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      Ce,
+                                                                                                      Se,
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
@@ -7867,7 +8172,7 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: Be,
+                                                                                                selections: Ct,
                                                                                                 storageKey: null,
                                                                                               },
                                                                                             ],
@@ -7883,16 +8188,73 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
-                                                                              Te,
+                                                                              Ce,
                                                                             ],
                                                                             storageKey: null,
                                                                           },
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      we,
-                                                                      Ae,
-                                                                      Pe,
+                                                                      Ee,
+                                                                      Te,
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: 'ApiUser',
+                                                                        kind: 'LinkedField',
+                                                                        name: 'legacy',
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                          we,
+                                                                          Re,
+                                                                          xe,
+                                                                          Fe,
+                                                                          Ae,
+                                                                          Ie,
+                                                                          Oe,
+                                                                          ce,
+                                                                          De,
+                                                                          Pe,
+                                                                          Ke,
+                                                                          Be,
+                                                                          je,
+                                                                          Ue,
+                                                                          Ne,
+                                                                          He,
+                                                                          We,
+                                                                          Ve,
+                                                                          qe,
+                                                                          ze,
+                                                                          Ge,
+                                                                          Ye,
+                                                                          Qe,
+                                                                          k,
+                                                                          Xe,
+                                                                          Je,
+                                                                          Ze,
+                                                                          $e,
+                                                                          tt,
+                                                                          nt,
+                                                                          at,
+                                                                          F,
+                                                                          rt,
+                                                                          it,
+                                                                          S,
+                                                                          lt,
+                                                                          ot,
+                                                                          st,
+                                                                          $,
+                                                                          ct,
+                                                                          dt,
+                                                                          ut,
+                                                                          pt,
+                                                                          mt,
+                                                                          gt,
+                                                                          ft,
+                                                                        ],
+                                                                        storageKey: null,
+                                                                      },
+                                                                      bt,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -7900,12 +8262,11 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'professional',
                                                                         plural: !1,
-                                                                        selections: [p, Ie, Oe, m],
+                                                                        selections: [p, ht, vt, m],
                                                                         storageKey: null,
                                                                       },
-                                                                      Me,
-                                                                      Le,
-                                                                      De,
+                                                                      yt,
+                                                                      _t,
                                                                     ],
                                                                     storageKey: null,
                                                                   },
@@ -7937,6 +8298,26 @@
                                                   },
                                                 ],
                                               },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: 'UserResults',
+                                                kind: 'LinkedField',
+                                                name: 'recipient_results',
+                                                plural: !1,
+                                                selections: St,
+                                                storageKey: null,
+                                              },
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: 'UserResults',
+                                                kind: 'LinkedField',
+                                                name: 'sender_results',
+                                                plural: !1,
+                                                selections: St,
+                                                storageKey: null,
+                                              },
                                             ],
                                             storageKey: null,
                                           },
@@ -7961,7 +8342,7 @@
                   },
                   {
                     alias: null,
-                    args: d,
+                    args: u,
                     filters: ['next_cursor', 'previous_cursor'],
                     handle: 'slice',
                     key: 'evolutionDmConversationTimelineQuery_legacy_conversation_slice',
@@ -7975,46 +8356,46 @@
             ],
           },
           params: {
-            id: 'fqkg7zO94go0I31RTGxX3g',
+            id: 'QGW9dau2541a04uLw7qycA',
             metadata: { sliceInfoPath: ['dm_conversation_by_rest_id', 'legacy_conversation_slice', 'slice_info'] },
             name: 'evolutionDmConversationTimelineQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(je.hash = 'd07206d5b39d9e3de615f7f59f505da7'), (t.default = je)
+      ;(Et.hash = 'd07206d5b39d9e3de615f7f59f505da7'), (e.exports = Et)
     },
     H4nC: function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
         r = n.n(a),
         i = n('3XMw'),
-        o = n.n(i),
-        l = n('MWbm'),
+        l = n.n(i),
+        o = n('MWbm'),
         s = n('rHpw'),
         c = n('t62R'),
-        u = n('4n2h'),
-        d = s.a.create(function (e) {
+        d = n('4n2h'),
+        u = s.a.create(function (e) {
           return { root: { paddingBottom: e.spaces.space20 } }
         }),
-        p = o.a.d84b485d,
-        m = o.a.be0c83d7
+        p = l.a.d84b485d,
+        m = l.a.be0c83d7
       t.a = function (e) {
         var t = e.entry,
           n = e.isCompact,
           a = e.isSelected,
           i = void 0 !== a && a,
-          o = e.unread,
-          s = void 0 !== o && o,
-          f = 'follow' === t.reason ? p : m,
-          h = Object(u.b)(s),
-          g = Object(u.a)(s, i)
+          l = e.unread,
+          s = void 0 !== l && l,
+          g = 'follow' === t.reason ? p : m,
+          f = Object(d.b)(s),
+          h = Object(d.a)(s, i)
         return n
-          ? r.a.createElement(c.b, { color: g, weight: h }, f)
+          ? r.a.createElement(c.b, { color: h, weight: f }, g)
           : r.a.createElement(
-              l.a,
-              { style: d.root },
-              r.a.createElement(c.b, { align: 'center', color: g, size: 'subtext2', weight: h }, f),
+              o.a,
+              { style: u.root },
+              r.a.createElement(c.b, { align: 'center', color: h, size: 'subtext2', weight: f }, g),
             )
       }
     },
@@ -8026,12 +8407,12 @@
       var a = n('KEM+'),
         r = n.n(a),
         i = n('k49u'),
-        o = n('lRnM'),
-        l = n('LVU8'),
+        l = n('lRnM'),
+        o = n('LVU8'),
         s = function (e) {
           return r()({}, i.a.ClientNotPermitted, {
             customAction: function () {
-              return Object(l.d)('/messages/', { statusCode: 401 }), Object(o.v)(e)
+              return Object(o.d)('/messages/', { statusCode: 401 }), Object(l.v)(e)
             },
           })
         }
@@ -8065,10 +8446,10 @@
           return y
         }),
         n.d(t, 'c', function () {
-          return b
+          return _
         }),
         n.d(t, 'b', function () {
-          return _
+          return b
         }),
         n.d(t, 'f', function () {
           return k
@@ -8080,26 +8461,26 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('t62R'),
-        o = n('dWxr'),
-        l = n.n(o),
+        l = n('dWxr'),
+        o = n.n(l),
         s = n('OiMc'),
         c = n('hHEM'),
-        u = n('rHpw'),
-        d = n('aITJ'),
+        d = n('rHpw'),
+        u = n('aITJ'),
         p = n('IZ3v'),
         m = function (e, t) {
-          for (var n = l()(e.getText()), a = 0; a < n.length; a++)
+          for (var n = o()(e.getText()), a = 0; a < n.length; a++)
             n[a].indices && 2 === n[a].indices.length && t(n[a].indices[0], n[a].indices[1])
         },
-        f = { clipPath: 'circle(0% at center)' },
-        h = function (e, t, n) {
+        g = { clipPath: 'circle(0% at center)' },
+        f = function (e, t, n) {
           e.findEntityRanges(function (e) {
             var t = e.getEntity(),
               a = t ? n.getEntity(t) : null
             return !!a && 'LINK' === a.getType()
           }, t)
         },
-        g = function (e) {
+        h = function (e) {
           return function (t) {
             if (!t.entityKey) return null
             var n = t.children,
@@ -8112,29 +8493,29 @@
           }
         },
         v = function (e) {
-          return { strategy: h, component: g(e) }
+          return { strategy: f, component: h(e) }
         },
         y = {
-          strategy: h,
+          strategy: f,
           component: function (e) {
             return e.entityKey
               ? r.a.createElement(i.b, { link: e.contentState.getEntity(e.entityKey).getData().url }, e.children)
               : null
           },
         },
-        b = {
+        _ = {
           strategy: m,
           component: function (e) {
-            var t = l()(e.decoratedText)[0]
+            var t = o()(e.decoratedText)[0]
             if (!t) return null
             var n = Object(p.b)(t)
             return n ? r.a.createElement(i.b, { link: Object(p.c)(n, e.decoratedText) }, e.children) : null
           },
         },
-        _ = {
+        b = {
           strategy: m,
           component: function (e) {
-            return r.a.createElement('span', { style: { color: u.a.theme.colors.link } }, e.children)
+            return r.a.createElement('span', { style: { color: d.a.theme.colors.link } }, e.children)
           },
         },
         k = {
@@ -8150,11 +8531,11 @@
               n = e.contentState,
               a = e.entityKey,
               i = (a && n.getEntity(a)) || {}
-            return !(d.b.isFirefox() && d.b.firefoxVersion() < 49)
+            return !(u.b.isFirefox() && u.b.firefoxVersion() < 49)
               ? r.a.Children.map(t, function (e) {
                   var t,
                     n = r.a.Children.map(e, function (e) {
-                      return r.a.createElement('span', { style: f }, e)
+                      return r.a.createElement('span', { style: g }, e)
                     })[0]
                   return r.a.cloneElement(
                     r.a.createElement('span', null),
@@ -8193,28 +8574,28 @@
       var a = n('m3Bd'),
         r = n.n(a),
         i = n('VrFO'),
-        o = n.n(i),
-        l = n('Y9Ll'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('Y9Ll'),
+        s = n.n(o),
         c = n('1Pcy'),
-        u = n.n(c),
-        d = n('5Yy7'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('5Yy7'),
+        p = n.n(u),
         m = n('2VqO'),
-        f = n.n(m),
-        h = n('KEM+'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('KEM+'),
+        h = n.n(f),
         v = (n('2G9S'), n('i4UL'), n('+/5o')),
         y = n('ERkP'),
-        b = n.n(y),
-        _ = n('HPNB'),
+        _ = n.n(y),
+        b = n('HPNB'),
         k = n('VAZu'),
         S = n('wiP2'),
         C = n('Es6L'),
         E = n('yiKp'),
         T = n.n(E),
         w = n('rHpw'),
-        x = w.a.create(function (e) {
+        R = w.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
             viewportView: T()(T()({}, w.a.absoluteFillObject), {}, { overflowY: 'auto' }),
@@ -8226,7 +8607,7 @@
             },
           }
         }),
-        R = n('MWbm'),
+        x = n('MWbm'),
         F = n('yw4N'),
         A = n('TnY3'),
         I = n('cHvH'),
@@ -8242,22 +8623,22 @@
         ],
         L = (function (e) {
           p()(n, e)
-          var t = f()(n)
+          var t = g()(n)
           function n() {
             var e
-            o()(this, n)
+            l()(this, n)
             for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              g()(u()(e), '_renderChildren', function () {
+              h()(d()(e), '_renderChildren', function () {
                 var t = e.props.children
                 return e.context.rootDetailPerColumnScroll
-                  ? b.a.createElement(
-                      R.a,
-                      { style: x.fill },
-                      b.a.createElement(
+                  ? _.a.createElement(
+                      x.a,
+                      { style: R.fill },
+                      _.a.createElement(
                         F.a,
-                        { style: x.viewportView },
+                        { style: R.viewportView },
                         e._renderInlineNav({ isTwoColumnLayout: !0 }),
                         t,
                       ),
@@ -8273,9 +8654,9 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return b.a.createElement(I.a, null, function (t) {
+                  return _.a.createElement(I.a, null, function (t) {
                     var n = t.windowWidth
-                    return _.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
+                    return b.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                   })
                 },
               },
@@ -8292,12 +8673,12 @@
                       e.withBottomBorder,
                       e.withDetailOpen,
                       r()(e, M))
-                  return b.a.createElement(
-                    b.a.Fragment,
+                  return _.a.createElement(
+                    _.a.Fragment,
                     null,
                     Object(C.a)()
                       ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                      : b.a.createElement(S.a.Configure, n),
+                      : _.a.createElement(S.a.Configure, n),
                     t,
                   )
                 },
@@ -8306,8 +8687,8 @@
                 key: '_renderForTwoColumnLayout',
                 value: function () {
                   var e = this.context.rootDetailPerColumnScroll
-                  return b.a.createElement(
-                    b.a.Fragment,
+                  return _.a.createElement(
+                    _.a.Fragment,
                     null,
                     !e && this._renderInlineNav({ isTwoColumnLayout: !0 }),
                     this._renderChildren(),
@@ -8322,19 +8703,19 @@
                     a = n.SideNavButton,
                     r = n.TabBar,
                     i = n.TeamsSwitcher,
-                    o = n.backLocation,
-                    l = n.documentTitle,
+                    l = n.backLocation,
+                    o = n.documentTitle,
                     s = n.headerless,
                     c = n.history,
-                    u = n.leftControl,
-                    d = n.middleControl,
+                    d = n.leftControl,
+                    u = n.middleControl,
                     p = n.onBackClick,
                     m = n.rightControl,
-                    f = n.screenType,
-                    h = n.searchBoxOptions,
-                    g = n.secondaryBar,
+                    g = n.screenType,
+                    f = n.searchBoxOptions,
+                    h = n.secondaryBar,
                     y = n.showSubtitleOnRoot,
-                    _ = n.showSubtitleOnWideDetail,
+                    b = n.showSubtitleOnWideDetail,
                     C = n.subtitle,
                     E = n.title,
                     T = n.titleIconCell,
@@ -8342,25 +8723,25 @@
                     F = n.withDetailOpen,
                     A = n.withSearchBox,
                     I = n.withTweetButton,
-                    O = 'root' === f,
-                    M = 'secondaryRoot' === f,
-                    L = 'primaryDetail' === f,
-                    D = (L && _) || (O && y),
+                    O = 'root' === g,
+                    M = 'secondaryRoot' === g,
+                    L = 'primaryDetail' === g,
+                    D = (L && b) || (O && y),
                     P = O || (L && t),
                     K = O ? v.c : L ? v.a : void 0,
-                    B = b.a.createElement(
-                      R.a,
-                      { style: x.appBarContainer },
-                      b.a.createElement(k.a, {
-                        backLocation: o,
+                    B = _.a.createElement(
+                      x.a,
+                      { style: R.appBarContainer },
+                      _.a.createElement(k.a, {
+                        backLocation: l,
                         fixed: !1,
                         hideBackButton: P,
                         history: c,
-                        leftControl: u,
-                        middleControl: d,
+                        leftControl: d,
+                        middleControl: u,
                         onBackClick: p,
                         rightControl: m,
-                        secondaryBar: g,
+                        secondaryBar: h,
                         subtitle: D ? C : void 0,
                         title: E,
                         titleDomId: K,
@@ -8371,31 +8752,31 @@
                     j =
                       O || (M && F)
                         ? null
-                        : b.a.createElement(S.a.Configure, {
+                        : _.a.createElement(S.a.Configure, {
                             SideNavButton: a,
                             TabBar: r,
                             TeamsSwitcher: i,
-                            backLocation: o,
-                            documentTitle: l,
+                            backLocation: l,
+                            documentTitle: o,
                             headerless: s,
-                            middleControl: d,
+                            middleControl: u,
                             onBackClick: p,
                             rightControl: m,
-                            searchBoxOptions: h,
+                            searchBoxOptions: f,
                             subtitle: C,
                             title: E,
                             withSearchBox: A,
                             withTweetButton: I,
                           })
-                  return b.a.createElement(b.a.Fragment, null, j, B)
+                  return _.a.createElement(_.a.Fragment, null, j, B)
                 },
               },
             ]),
             n
           )
-        })(b.a.Component)
-      g()(L, 'contextType', O.a),
-        g()(L, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+        })(_.a.Component)
+      h()(L, 'contextType', O.a),
+        h()(L, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(A.a)(L)
     },
     MLl7: function (e, t, n) {
@@ -8423,29 +8804,29 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('VrFO'),
-        o = n.n(i),
-        l = n('Y9Ll'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('Y9Ll'),
+        s = n.n(o),
         c = n('1Pcy'),
-        u = n.n(c),
-        d = n('5Yy7'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('5Yy7'),
+        p = n.n(u),
         m = n('2VqO'),
-        f = n.n(m),
-        h = n('KEM+'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('KEM+'),
+        h = n.n(f),
         v = (n('7x/C'), n('JtPf'), n('Qavd'), n('z84I'), n('KqXw'), n('MvUL'), n('lTEL'), n('kYxP'), n('ERkP')),
         y = n.n(v),
-        b = n('0JOx'),
-        _ = n('zh9S'),
+        _ = n('0JOx'),
+        b = n('zh9S'),
         k = n('MMRb'),
         S = n('CDB5'),
         C = n('RqPI'),
         E = n('1YZw'),
         T = n('hqKg'),
         w = n('kGix'),
-        x = n('AQOc'),
-        R = n('UhuB'),
+        R = n('AQOc'),
+        x = n('UhuB'),
         F = n('pNZL'),
         A = n('G6rE'),
         I = n('oEGd'),
@@ -8503,32 +8884,32 @@
             return S.l(e, D(0, t))
           },
           L.j,
-          R.n,
+          x.n,
           K,
           L.m,
           function (e, t) {
             var n = D(0, t)
             return k.selectInboxTypeByConversation(e, n)
           },
-          function (e, t, n, a, r, i, o, l, s, c, u, d, p, m, f, h, g, v, y) {
-            var b = e && e.data
+          function (e, t, n, a, r, i, l, o, s, c, d, u, p, m, g, f, h, v, y) {
+            var _ = e && e.data
             return {
-              conversation: (b && Object(x.a)(b, t, o)) || void 0,
-              dataSaverMode: f,
+              conversation: (_ && Object(R.a)(_, t, l)) || void 0,
+              dataSaverMode: g,
               draftText: m,
               dtabBarInfo: v,
-              fetchStatus: l,
+              fetchStatus: o,
               gifMetadata: p,
               inboxType: y,
-              isDmReceiptSettingEnabled: h,
+              isDmReceiptSettingEnabled: f,
               cardUrl: s,
               isNewGroupConversation: n,
               isUploading: c,
-              media: u,
-              mediaUploadProgress: d,
+              media: d,
+              mediaUploadProgress: u,
               newConversationParticipants: r,
               perspective: a,
-              quickReplyOptions: g,
+              quickReplyOptions: h,
               tweetAttachment: i,
             }
           },
@@ -8554,12 +8935,12 @@
             fetchConversationIfNeeded: k.fetchConversationIfNeeded,
             fetchInboxIfNeeded: k.fetchInboxIfNeeded,
             fetchUpdatesIfNeeded: k.fetchUpdatesIfNeeded,
-            googleAnalyticsPageView: _.googleAnalyticsPageView,
+            googleAnalyticsPageView: b.googleAnalyticsPageView,
             leaveConversation: k.leaveConversation,
             removeMedia: Object(O.b)(e.conversationId),
             removeText: S.d,
-            scribeAction: _.scribeAction,
-            scribePageImpression: _.scribePageImpression,
+            scribeAction: b.scribeAction,
+            scribePageImpression: b.scribePageImpression,
             sendMessage: S.m,
             updateConversationReadState: k.updateConversationReadState,
             updateTweetDetailNav: F.b,
@@ -8572,10 +8953,10 @@
         U = n('I2k/'),
         N = n('4AMG'),
         H = n('uB9N'),
-        V = n('htvZ'),
-        W = n('v//M'),
-        z = n('3XMw'),
-        q = n.n(z),
+        W = n('htvZ'),
+        V = n('v//M'),
+        q = n('3XMw'),
+        z = n.n(q),
         G = n('UgB4'),
         Y = n('J2UM'),
         Q = n('07FG'),
@@ -8589,12 +8970,12 @@
         ae = n('LsPn'),
         re = n('sl05'),
         ie = n('GSsg'),
-        oe = n('ddV6'),
-        le = n.n(oe),
+        le = n('ddV6'),
+        oe = n.n(le),
         se = (n('ho0z'), n('v6aA')),
         ce = n('EbOo'),
-        ue = n('rxPX'),
-        de = Object(ue.a)().propsFromActions(function () {
+        de = n('rxPX'),
+        ue = Object(de.a)().propsFromActions(function () {
           return {
             addToast: E.b,
             block: A.e.block,
@@ -8608,23 +8989,23 @@
         }),
         pe = (n('AQ79'), n('u0B7')),
         me = (n('uFXj'), n('97Jx')),
-        fe = n.n(me),
-        he = n('tZH3'),
-        ge = n('/yvb'),
+        ge = n.n(me),
+        fe = n('tZH3'),
+        he = n('/yvb'),
         ve = n('efqG'),
-        ye = q.a.ccf2f24e,
-        be = q.a.ib3fe8a9,
-        _e = function (e) {
+        ye = z.a.ccf2f24e,
+        _e = z.a.ib3fe8a9,
+        be = function (e) {
           var t = e.isGroup,
             n = e.onBlockClick,
             a = e.onReportClick,
             r = e.requestorScreenName,
             i = { type: 'destructiveOutlined' },
-            o = y.a.createElement(ge.a, fe()({}, i, { accessibilityRole: 'button' }), be),
-            l = y.a.createElement(ge.a, fe()({}, i, { onPress: a }), ye),
+            l = y.a.createElement(he.a, ge()({}, i, { accessibilityRole: 'button' }), _e),
+            o = y.a.createElement(he.a, ge()({}, i, { onPress: a }), ye),
             s = y.a.useCallback(
               function (e, t) {
-                return y.a.createElement(he.a, {
+                return y.a.createElement(fe.a, {
                   dismiss: e,
                   flatBorders: 'sheet' === t,
                   onBlockClick: n,
@@ -8636,7 +9017,7 @@
               },
               [n, a, r],
             )
-          return t ? l : y.a.createElement(ve.a, { renderContent: s }, o)
+          return t ? o : y.a.createElement(ve.a, { renderContent: s }, l)
         },
         ke = n('MWbm'),
         Se = n('cHvH'),
@@ -8651,10 +9032,10 @@
             i = function () {
               return e.onBlock()
             },
-            o = function () {
+            l = function () {
               return e.onReport()
             },
-            l = function () {
+            o = function () {
               return e.onLeave()
             }
           return y.a.createElement(Se.a, null, function (t) {
@@ -8664,7 +9045,7 @@
               { style: Te.actionsContainer },
               n &&
                 y.a.createElement(
-                  ge.a,
+                  he.a,
                   {
                     onPress: r,
                     size: 'medium',
@@ -8676,17 +9057,17 @@
               y.a.createElement(
                 ke.a,
                 { style: s ? Te.actionFullWidth : [Te.actionHalfWidth, Te.actionMarginRight] },
-                y.a.createElement(_e, {
+                y.a.createElement(be, {
                   isGroup: e.isGroup,
                   onBlockClick: i,
-                  onReportClick: o,
+                  onReportClick: l,
                   requestorScreenName: Object(O.j)(e.conversation, a).screenName,
                 }),
               ),
               y.a.createElement(
-                ge.a,
+                he.a,
                 {
-                  onPress: l,
+                  onPress: o,
                   size: 'medium',
                   style: s ? [Te.actionFullWidth, Te.actionMarginTop] : [Te.actionHalfWidth, Te.actionMarginLeft],
                   type: 'destructiveOutlined',
@@ -8695,7 +9076,7 @@
               ),
               !n &&
                 y.a.createElement(
-                  ge.a,
+                  he.a,
                   {
                     onPress: r,
                     size: 'medium',
@@ -8719,17 +9100,17 @@
           }
         }),
         we = n('aITJ'),
-        xe = n('t62R'),
-        Re = n('eb3s'),
+        Re = n('t62R'),
+        xe = n('eb3s'),
         Fe = n('vMjK'),
         Ae = n('7JQg'),
         Ie = n('24HD'),
         Oe = n('zCf4'),
-        Me = q.a.da878dcf,
-        Le = q.a.d96cf7cd,
-        De = (q.a.gde6b424, q.a.e308019b, q.a.gf5e9ea6, q.a.hc52446b),
-        Pe = q.a.f7e1ad65,
-        Ke = { headline: q.a.gdf4b79f, text: q.a.bbf83d83, confirmButtonLabel: q.a.bb1d57b6 },
+        Me = z.a.da878dcf,
+        Le = z.a.d96cf7cd,
+        De = (z.a.gde6b424, z.a.e308019b, z.a.gf5e9ea6, z.a.hc52446b),
+        Pe = z.a.f7e1ad65,
+        Ke = { headline: z.a.gdf4b79f, text: z.a.bbf83d83, confirmButtonLabel: z.a.bb1d57b6 },
         Be = Ce.a.create(function (e) {
           return {
             root: {
@@ -8744,22 +9125,22 @@
           }
         }),
         je = Object(Ae.a)({ element: 'untrusted_interstitial' })(
-          de(function (e) {
+          ue(function (e) {
             var t = e.conversation,
               n = e.scribeAction,
               a = e.scribeNamespace,
               i = y.a.useContext(se.a),
-              o = Object(Oe.f)(),
-              l = Object(Oe.g)(),
+              l = Object(Oe.f)(),
+              o = Object(Oe.g)(),
               s = y.a.useState(!1),
-              c = le()(s, 2),
-              u = c[0],
-              d = c[1],
+              c = oe()(s, 2),
+              d = c[0],
+              u = c[1],
               p = y.a.useState(!1),
-              m = le()(p, 2),
-              f = m[0],
-              h = m[1],
-              g = y.a.useCallback(
+              m = oe()(p, 2),
+              g = m[0],
+              f = m[1],
+              h = y.a.useCallback(
                 function () {
                   return {
                     items: [{ conversation_type: t.type === k.CONVERSATION_TYPE.GROUP ? Z.j.GROUP : Z.j.ONE_TO_ONE }],
@@ -8769,9 +9150,9 @@
               ),
               v = y.a.useCallback(
                 function (e, t) {
-                  n(r()(r()({}, a), {}, { action: e }), t || g())
+                  n(r()(r()({}, a), {}, { action: e }), t || h())
                 },
-                [g, n, a],
+                [h, n, a],
               )
             y.a.useEffect(
               function () {
@@ -8779,28 +9160,28 @@
               },
               [v],
             )
-            var b,
-              _,
+            var _,
+              b,
               S,
               C,
               E = function () {
-                d(!0), h(!1)
+                u(!0), f(!1)
               },
               T = function () {
-                d(!1)
+                u(!1)
               },
               w = function () {
-                h(!1)
+                f(!1)
               },
-              x = function () {
+              R = function () {
                 var n,
                   a = e.conversationId,
                   r = e.inboxType,
                   i = e.leaveConversation,
-                  o = t.type === k.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
+                  l = t.type === k.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
                   s = (null == t ? void 0 : t.participants.length) || 0,
-                  c = (null == l || null === (n = l.state) || void 0 === n ? void 0 : n.position) || 0,
-                  u = {
+                  c = (null == o || null === (n = o.state) || void 0 === n ? void 0 : n.position) || 0,
+                  d = {
                     conversation_type:
                       (null == t ? void 0 : t.type) === k.CONVERSATION_TYPE.GROUP ? Z.j.GROUP : Z.j.ONE_TO_ONE,
                     conversation_id: a,
@@ -8809,31 +9190,31 @@
                     inbox_type: Object(O.i)(r),
                     entry_point: Z.c.REQUEST_ACTION_SHEET,
                   }
-                d(!1), i({ conversationId: a }), v(o, u), R()
+                u(!1), i({ conversationId: a }), v(l, d), x()
               },
-              R = function () {
+              x = function () {
                 var t = e.inboxType
-                o.push(Object(O.f)(t))
+                l.push(Object(O.f)(t))
               },
               F = function () {
                 !(function () {
                   var n,
                     a = e.acceptConversation,
                     i = e.conversationId,
-                    o = e.inboxType,
+                    l = e.inboxType,
                     s = e.scribeAction,
                     c = e.scribeNamespace,
-                    u = (null == t ? void 0 : t.participants.length) || 0,
-                    d = (null == l || null === (n = l.state) || void 0 === n ? void 0 : n.position) || 0
+                    d = (null == t ? void 0 : t.participants.length) || 0,
+                    u = (null == o || null === (n = o.state) || void 0 === n ? void 0 : n.position) || 0
                   i &&
                     (a(i),
                     s(r()(r()({}, c), {}, { action: 'accept' }), {
                       conversation_id: i,
                       conversation_type: t.type === k.CONVERSATION_TYPE.GROUP ? Z.j.GROUP : Z.j.ONE_TO_ONE,
-                      conversation_participant_count: u,
+                      conversation_participant_count: d,
                       entry_point: Z.c.REQUEST_ACTION_SHEET,
-                      inbox_type: Object(O.i)(o),
-                      position: d,
+                      inbox_type: Object(O.i)(l),
+                      position: u,
                     }))
                 })()
               },
@@ -8842,7 +9223,7 @@
                   var n = e.addToast,
                     a = e.block,
                     r = e.createLocalApiErrorHandler
-                  h(!1),
+                  f(!1),
                     a(t).then(function () {
                       n({ action: { label: Fe.c, onAction: I(t) }, text: Fe.a })
                     }, r(ce.a)),
@@ -8865,7 +9246,7 @@
                 (function (e) {
                   var n = i.loggedInUserId
                   return y.a.createElement(
-                    xe.b,
+                    Re.b,
                     { style: Be.copy },
                     e ? De : Pe({ senderName: Object(O.j)(t, n).name }),
                   )
@@ -8877,34 +9258,34 @@
                   isGroup: M,
                   onAccept: F,
                   onBlock: function () {
-                    d(!1), h(!0)
+                    u(!1), f(!0)
                   },
                   onLeave: E,
                   onReport: function () {
                     var t = e.conversationId,
                       n = e.inboxType
-                    t && (v('report'), o.push(Object(O.g)(t, window.location.pathname, a, n)))
+                    t && (v('report'), l.push(Object(O.g)(t, window.location.pathname, a, n)))
                   },
                 }),
               ),
               we.b.isKaiOS()
                 ? y.a.createElement(ae.a, { leftText: Le, onLeftClick: E, onRightClick: F, rightText: Me })
                 : null,
-              u
-                ? y.a.createElement(Re.a, {
+              d
+                ? y.a.createElement(xe.a, {
                     confirmButtonLabel: Ke.confirmButtonLabel,
                     confirmButtonType: 'destructiveFilled',
                     headline: Ke.headline,
                     onCancel: T,
-                    onConfirm: x,
+                    onConfirm: R,
                     text: Ke.text,
                   })
                 : null,
-              f
-                ? ((b = i.loggedInUserId),
-                  (_ = Object(O.j)(t, b)),
-                  (S = _.idStr),
-                  (C = _.screenName),
+              g
+                ? ((_ = i.loggedInUserId),
+                  (b = Object(O.j)(t, _)),
+                  (S = b.idStr),
+                  (C = b.screenName),
                   Object(Ie.j)({ confirmation: Object(Ie.f)(C), onClose: w, handleConfirm: A(S) }))
                 : null,
             )
@@ -8913,14 +9294,14 @@
         Ue = n('yw4N'),
         Ne = n('rFBM'),
         He = n('mw9i'),
-        Ve = n('jTgF'),
-        We = n('+d3d'),
-        ze = n('mN6z'),
-        qe = y.a.createElement(G.a, null),
-        Ge = q.a.badb01a0,
-        Ye = q.a.e3275464,
-        Qe = q.a.d6b11d9c,
-        Xe = q.a.i7ca1446,
+        We = n('jTgF'),
+        Ve = n('+d3d'),
+        qe = n('mN6z'),
+        ze = y.a.createElement(G.a, null),
+        Ge = z.a.badb01a0,
+        Ye = z.a.e3275464,
+        Qe = z.a.d6b11d9c,
+        Xe = z.a.i7ca1446,
         Je = function (e) {
           return e && (e.tweet || e.media)
         },
@@ -8943,17 +9324,17 @@
         },
         $e = (function (e) {
           p()(n, e)
-          var t = f()(n)
+          var t = g()(n)
           function n(e, a) {
             var i
             return (
-              o()(this, n),
+              l()(this, n),
               (i = t.call(this, e, a)),
-              g()(u()(i), '_composer', y.a.createRef()),
-              g()(u()(i), '_handleLivePipelineUpdate', function () {
+              h()(d()(i), '_composer', y.a.createRef()),
+              h()(d()(i), '_handleLivePipelineUpdate', function () {
                 i._fetchUpdatesIfNeeded(), i._updatePolling && i._updatePolling.restart()
               }),
-              g()(u()(i), '_fetchUpdatesIfNeeded', function () {
+              h()(d()(i), '_fetchUpdatesIfNeeded', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.createLocalApiErrorHandler
@@ -8961,10 +9342,10 @@
                   e.isDmReceiptSettingEnabled ? { active_conversation_id: t, dm_users: !0 } : {},
                 ).catch(n())
               }),
-              g()(u()(i), '_handleInitialFetch', function () {
+              h()(d()(i), '_handleInitialFetch', function () {
                 i._initialFetch()
               }),
-              g()(u()(i), '_initialFetch', function () {
+              h()(d()(i), '_initialFetch', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.createLocalApiErrorHandler,
@@ -8985,16 +9366,17 @@
                     i._updatePolling && i._updatePolling.start()
                   })
               }),
-              g()(u()(i), '_isUntrustedConversation', function (e) {
+              h()(d()(i), '_isUntrustedConversation', function (e) {
                 var t = i.props.isNewGroupConversation
                 return !((null != e && e.trusted) || t)
               }),
-              g()(u()(i), '_leaveConversation', function (e) {
-                var t = i.props,
-                  n = t.createLocalApiErrorHandler
-                ;(0, t.leaveConversation)(e).catch(n({ showToast: !0 }))
+              h()(d()(i), '_leaveConversation', function () {
+                var e = i.props,
+                  t = e.conversationId,
+                  n = e.createLocalApiErrorHandler
+                ;(0, e.leaveConversation)({ conversationId: t }).catch(n({ showToast: !0 }))
               }),
-              g()(u()(i), '_acceptConversation', function (e) {
+              h()(d()(i), '_acceptConversation', function (e) {
                 var t = i.props,
                   n = t.acceptConversation,
                   a = t.createLocalApiErrorHandler
@@ -9004,7 +9386,7 @@
                   })
                   .catch(a({ showToast: !0 }))
               }),
-              g()(u()(i), '_renderActions', function () {
+              h()(d()(i), '_renderActions', function () {
                 var e = i.props,
                   t = e.conversation,
                   n = e.conversationId,
@@ -9036,56 +9418,56 @@
                         : null,
                     )
               }),
-              g()(u()(i), '_render', function () {
+              h()(d()(i), '_render', function () {
                 var e,
                   t,
                   n,
                   a = i.props,
                   r = a.conversation,
-                  o = a.conversationId,
-                  l = a.drawerHeader,
+                  l = a.conversationId,
+                  o = a.drawerHeader,
                   s = a.inboxType,
                   c = a.isWide,
-                  u = a.location,
-                  d = a.perspective,
+                  d = a.location,
+                  u = a.perspective,
                   p = a.scribeNamespace,
                   m = i.state,
-                  f = m.attachment,
-                  h = m.composerHeight
+                  g = m.attachment,
+                  f = m.composerHeight
                 return y.a.createElement(
-                  V.b,
-                  { key: o },
+                  W.b,
+                  { key: l },
                   y.a.createElement(
                     Ne.a,
-                    { allowDragDrop: !Je(f), onFilesAdded: i._handleDragDrop, style: re.a.dragDrop },
+                    { allowDragDrop: !Je(g), onFilesAdded: i._handleDragDrop, style: re.a.dragDrop },
                     y.a.createElement(
                       Ue.a,
                       {
                         style: [
                           re.a.scrollView,
-                          !Object(ne.a)() && !i._isUntrustedConversation(r) && { paddingBottom: h },
+                          !Object(ne.a)() && !i._isUntrustedConversation(r) && { paddingBottom: f },
                         ],
                       },
-                      d &&
+                      u &&
                         r &&
-                        (null == u ||
-                          null === (e = u.state) ||
+                        (null == d ||
+                          null === (e = d.state) ||
                           void 0 === e ||
                           !e.entryPoint ||
                           i.state.hasLoadedSnapshot)
                         ? y.a.createElement(N.a, {
                             conversation: r,
-                            drawerHeader: l,
+                            drawerHeader: o,
                             inboxType: s,
                             isWide: c,
                             messageSearchEntryId:
-                              null == u || null === (t = u.state) || void 0 === t ? void 0 : t.entryPoint,
+                              null == d || null === (t = d.state) || void 0 === t ? void 0 : t.entryPoint,
                             onForwardRequest: i._handleForwardRequest,
                             onHistoryRequest:
-                              null != u && null !== (n = u.state) && void 0 !== n && n.entryPoint
+                              null != d && null !== (n = d.state) && void 0 !== n && n.entryPoint
                                 ? i._handleRelativeHistoryRequest
                                 : i._handleHistoryRequest,
-                            perspective: d,
+                            perspective: u,
                             scribeNamespace: p,
                             shouldScrollToCenter: i.state.shouldScrollToCenter,
                             style: re.a.activity,
@@ -9096,16 +9478,16 @@
                   ),
                 )
               }),
-              g()(u()(i), '_handleNavHeightChange', function (e) {
+              h()(d()(i), '_handleNavHeightChange', function (e) {
                 i.setState({ composerHeight: ''.concat(e, 'px') })
               }),
-              g()(u()(i), '_handleTyping', function () {
+              h()(d()(i), '_handleTyping', function () {
                 i._throttleSaveDraftText(), i._throttleUpdateTyping()
               }),
-              g()(
-                u()(i),
+              h()(
+                d()(i),
                 '_throttleUpdateTyping',
-                Object(We.a)(
+                Object(Ve.a)(
                   function () {
                     var e = i.props,
                       t = e.conversationId,
@@ -9117,10 +9499,10 @@
                   { trailing: !1 },
                 ),
               ),
-              g()(
-                u()(i),
+              h()(
+                d()(i),
                 '_throttleSaveDraftText',
-                Object(We.a)(
+                Object(Ve.a)(
                   function () {
                     i.props.conversationId && i._handleSaveDraftText()
                   },
@@ -9128,10 +9510,10 @@
                   { leading: !1 },
                 ),
               ),
-              g()(u()(i), '_handleDragDrop', function (e) {
+              h()(d()(i), '_handleDragDrop', function (e) {
                 i._currentComposer && i._currentComposer.handleAddMediaFiles(e)
               }),
-              g()(u()(i), '_handleForwardRequest', function () {
+              h()(d()(i), '_handleForwardRequest', function () {
                 var e = i.props,
                   t = e.conversation,
                   n = e.conversationId,
@@ -9140,37 +9522,37 @@
                 i.setState({ shouldScrollToCenter: !1 }),
                   null != t && t.max_search_entry_id && r({ conversationId: n }).catch(a())
               }),
-              g()(u()(i), '_handleHistoryRequest', function () {
+              h()(d()(i), '_handleHistoryRequest', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.createLocalApiErrorHandler
                 ;(0, e.fetchConversationHistory)({ conversationId: t }).catch(n())
               }),
-              g()(u()(i), '_handleRelativeHistoryRequest', function () {
+              h()(d()(i), '_handleRelativeHistoryRequest', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.createLocalApiErrorHandler,
                   a = e.fetchConversationHistory
                 i.setState({ shouldScrollToCenter: !1 }), a({ conversationId: t, isSearch: !0 }).catch(n())
               }),
-              g()(u()(i), '_handleSendMessage', function (e, t) {
+              h()(d()(i), '_handleSendMessage', function (e, t) {
                 var n,
                   a,
-                  o = i.props,
-                  l = o.addToast,
-                  s = o.cardUrl,
-                  c = o.conversation,
-                  u = o.conversationId,
-                  d = o.createLocalApiErrorHandler,
-                  p = o.gifMetadata,
-                  m = o.history,
-                  f = o.location,
-                  h = o.newConversationParticipants,
-                  g = o.perspective,
-                  v = o.scribeAction,
-                  y = o.scribeNamespace,
-                  b = o.sendMessage,
-                  _ = o.tweetAttachment,
+                  l = i.props,
+                  o = l.addToast,
+                  s = l.cardUrl,
+                  c = l.conversation,
+                  d = l.conversationId,
+                  u = l.createLocalApiErrorHandler,
+                  p = l.gifMetadata,
+                  m = l.history,
+                  g = l.location,
+                  f = l.newConversationParticipants,
+                  h = l.perspective,
+                  v = l.scribeAction,
+                  y = l.scribeNamespace,
+                  _ = l.sendMessage,
+                  b = l.tweetAttachment,
                   S = i.state.attachment,
                   C = S && S.media,
                   E = null != c && c.participants ? c.participants.length : 0,
@@ -9185,32 +9567,32 @@
                 )
                   w = 'gif'
                 else if (s) w = 'card'
-                else if (_) w = 'tweet'
+                else if (b) w = 'tweet'
                 else {
-                  var x,
-                    R = null == S || null === (x = S.media) || void 0 === x ? void 0 : x.mediaFile,
-                    F = null != R && R.isVideo ? 'video' : null != R && R.isGif ? 'gif' : 'photo'
-                  w = R ? F : t ? 'text' : 'unknown'
+                  var R,
+                    x = null == S || null === (R = S.media) || void 0 === R ? void 0 : R.mediaFile,
+                    F = null != x && x.isVideo ? 'video' : null != x && x.isGif ? 'gif' : 'photo'
+                  w = x ? F : t ? 'text' : 'unknown'
                 }
                 return (
-                  u &&
+                  d &&
                     v(r()(r()({}, y), {}, { element: w, action: 'send_dm' }), {
-                      conversation_id: u,
+                      conversation_id: d,
                       conversation_participant_count: E,
                       conversation_type: T ? Z.j.GROUP : Z.j.ONE_TO_ONE,
                     }),
                   i.setState({ isSending: !0 }),
-                  u
+                  d
                     ? (!i.state.attachment ||
                         (null !== (n = i.state.attachment) &&
                           void 0 !== n &&
                           null !== (a = n.media) &&
                           void 0 !== a &&
                           a.uploading) ||
-                        (i.setState({ attachment: null }), m.replace(f.pathname)),
-                      b(
+                        (i.setState({ attachment: null }), m.replace(g.pathname)),
+                      _(
                         r()(
-                          { senderId: g, cardUrl: s, conversationId: u, text: t, tweetAttachment: _ },
+                          { senderId: h, cardUrl: s, conversationId: d, text: t, tweetAttachment: b },
                           e && e.quickReply && { quickReply: e.quickReply },
                         ),
                       )
@@ -9222,48 +9604,48 @@
                             i.setState({ isSending: !1 })
                         })
                         .catch(function (e) {
-                          if ((i.setState({ isSending: !1 }), !Object(Ve.d)(e) || e.code !== X.b.CANCELED))
-                            if (Object(Ve.d)(e)) {
-                              var t = Object(Ve.b)(e, Qe)
-                              t && l(t)
-                            } else d($.b)(e)
+                          if ((i.setState({ isSending: !1 }), !Object(We.d)(e) || e.code !== X.b.CANCELED))
+                            if (Object(We.d)(e)) {
+                              var t = Object(We.b)(e, Qe)
+                              t && o(t)
+                            } else u($.b)(e)
                         }))
-                    : (b({
-                        senderId: g,
+                    : (_({
+                        senderId: h,
                         recipients:
-                          h &&
-                          h.map(function (e) {
+                          f &&
+                          f.map(function (e) {
                             return e.data.id_str
                           }),
                         text: t,
-                        tweetAttachment: _,
+                        tweetAttachment: b,
                       }).then(function (e) {
                         v(r()(r()({}, y), {}, { element: w, action: 'send_dm' }), {
                           conversation_id: e,
-                          conversation_participant_count: h ? h.length + 1 : 0,
+                          conversation_participant_count: f ? f.length + 1 : 0,
                           conversation_type: Z.j.GROUP,
                         }),
                           i.setState({ attachment: null, isSending: !1 }),
                           m.replace('/messages/'.concat(e))
-                      }, d($.b)),
+                      }, u($.b)),
                       Promise.resolve())
                 )
               }),
-              g()(u()(i), '_handlePopOutConvo', function () {
+              h()(d()(i), '_handlePopOutConvo', function () {
                 var e = i.props,
                   t = e.conversationId
                 ;(0, e.popOutConversation)(t)
               }),
-              g()(u()(i), '_handleInfoClick', function () {
+              h()(d()(i), '_handleInfoClick', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.history
                 t && n.push('/messages/'.concat(t, '/info'))
               }),
-              g()(u()(i), '_handleComposeClick', function () {
+              h()(d()(i), '_handleComposeClick', function () {
                 i._currentComposer && i._currentComposer.focus()
               }),
-              g()(u()(i), '_handleSaveDraftText', function () {
+              h()(d()(i), '_handleSaveDraftText', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.saveText
@@ -9290,10 +9672,10 @@
                     a = n.googleAnalyticsPageView,
                     r = n.scribeNamespace,
                     i = n.scribePageImpression,
-                    o = n.updateTweetDetailNav
+                    l = n.updateTweetDetailNav
                   return (
                     i(r),
-                    o(r),
+                    l(r),
                     a(r),
                     this._initializePolling({ interval: 3e3 }),
                     this._initializeLivePipeline(),
@@ -9328,7 +9710,7 @@
                 value: function () {
                   var e = this,
                     t = this.props.conversationId
-                  Object(b.h)().then(function (n) {
+                  Object(_.h)().then(function (n) {
                     var a = n.LivePipeline
                     t &&
                       a.isSupportedAndReady(e.context.featureSwitches) &&
@@ -9371,15 +9753,15 @@
                     a,
                     r,
                     i,
-                    o = this.props,
-                    l = o.conversation,
-                    s = o.conversationId,
-                    c = o.fetchStatus,
-                    u = o.isUploading,
-                    d = o.location,
-                    p = o.quickReplyOptions,
-                    m = o.updateConversationReadState
-                  ;((null == d || null === (n = d.state) || void 0 === n ? void 0 : n.entryPoint) !==
+                    l = this.props,
+                    o = l.conversation,
+                    s = l.conversationId,
+                    c = l.fetchStatus,
+                    d = l.isUploading,
+                    u = l.location,
+                    p = l.quickReplyOptions,
+                    m = l.updateConversationReadState
+                  ;((null == u || null === (n = u.state) || void 0 === n ? void 0 : n.entryPoint) !==
                     (null === (a = e.location) || void 0 === a || null === (r = a.state) || void 0 === r
                       ? void 0
                       : r.entryPoint) &&
@@ -9390,9 +9772,9 @@
                       this._focusComposerIfNeeded(),
                       this._livePipelineSubscription && this._livePipelineSubscription.teardown(),
                       this._initializeLivePipeline())
-                    : ((null == l ? void 0 : l.sort_event_id) !==
+                    : ((null == o ? void 0 : o.sort_event_id) !==
                         (null === (i = e.conversation) || void 0 === i ? void 0 : i.sort_event_id) && m(s),
-                      u || !e.isUploading || p || (this._currentComposer && this._currentComposer.focus()),
+                      d || !e.isUploading || p || (this._currentComposer && this._currentComposer.focus()),
                       e.fetchStatus === w.a.LOADED && c !== w.a.LOADED && s && this._fetchConversation(s))
                 },
               },
@@ -9401,7 +9783,7 @@
                 value: function (e) {
                   var t = this.props.media,
                     n = e.media
-                  Object(ze.a)(t, n) || this.setState({ attachment: Ze(e) })
+                  Object(qe.a)(t, n) || this.setState({ attachment: Ze(e) })
                 },
               },
               {
@@ -9411,7 +9793,7 @@
                   return y.a.createElement(
                     He.a,
                     { style: [re.a.root, we.b.isKaiOS() && re.a.kaiOSFix] },
-                    y.a.createElement(W.a, {
+                    y.a.createElement(V.a, {
                       fetchStatus: e,
                       onRequestRetry: this._handleInitialFetch,
                       render: this._render,
@@ -9428,47 +9810,47 @@
                     a = e.conversation,
                     r = e.conversationId,
                     i = e.dataSaverMode,
-                    o = e.draftText,
-                    l = e.dtabBarInfo,
+                    l = e.draftText,
+                    o = e.dtabBarInfo,
                     s = e.history,
                     c = e.isUploading,
-                    u = e.mediaUploadProgress,
-                    d = e.quickReplyOptions,
+                    d = e.mediaUploadProgress,
+                    u = e.quickReplyOptions,
                     p = e.removeMedia,
                     m = e.richTextInputContext,
-                    f = e.scribeNamespace,
-                    h = e.typeaheadWrapper,
-                    g = this.state,
-                    v = g.attachment,
-                    b = g.isSending,
-                    _ = this.props.prefillText || o
+                    g = e.scribeNamespace,
+                    f = e.typeaheadWrapper,
+                    h = this.state,
+                    v = h.attachment,
+                    _ = h.isSending,
+                    b = this.props.prefillText || l
                   return null != a && a.read_only
                     ? null
                     : y.a.createElement(H.a, {
                         attachment: v,
                         conversationId: r,
                         disabled: c,
-                        dtabBarInfo: l,
+                        dtabBarInfo: o,
                         history: s,
                         isCardPreviewTombstoned: Object(Q.a)(n),
-                        isSending: b,
+                        isSending: _,
                         isUploading: c,
                         key: r,
-                        mediaUploadProgress: u,
+                        mediaUploadProgress: d,
                         onAddMedia: t,
                         onBlur: this._handleSaveDraftText,
                         onHeightChange: this._handleNavHeightChange,
                         onPrimaryAction: this._handleSendMessage,
                         onTyping: i ? this._throttleSaveDraftText : this._handleTyping,
-                        prefillText: 'string' == typeof _ ? _ : void 0,
-                        primaryActionIcon: qe,
+                        prefillText: 'string' == typeof b ? b : void 0,
+                        primaryActionIcon: ze,
                         primaryActionLabel: Ye,
-                        quickReplyOptions: d,
+                        quickReplyOptions: u,
                         ref: this._composer,
                         removeMedia: p,
                         richTextInputContext: m,
-                        scribeNamespace: f,
-                        typeaheadWrapper: h,
+                        scribeNamespace: g,
+                        typeaheadWrapper: f,
                       })
                 },
               },
@@ -9486,13 +9868,13 @@
                     a = this,
                     r = this.props,
                     i = r.createLocalApiErrorHandler,
-                    o = r.fetchConversationHistoricalSnapshot,
-                    l = r.fetchConversationIfNeeded,
+                    l = r.fetchConversationHistoricalSnapshot,
+                    o = r.fetchConversationIfNeeded,
                     s = r.location,
                     c = r.updateConversationReadState
                   return null != s && null !== (t = s.state) && void 0 !== t && t.entryPoint
                     ? (this.setState({ hasLoadedSnapshot: !1 }),
-                      o({
+                      l({
                         conversationId: e,
                         entryId: null == s || null === (n = s.state) || void 0 === n ? void 0 : n.entryPoint,
                       })
@@ -9512,7 +9894,7 @@
                         .catch(function (e) {
                           return a.setState({ hasLoadedSnapshot: !0 }), i(e)
                         }))
-                    : l({ conversationId: e })
+                    : o({ conversationId: e })
                         .then(function () {
                           return c(e)
                         })
@@ -9527,22 +9909,22 @@
                     a = n.addWelcomeMessageToConversation,
                     r = n.conversation,
                     i = n.createLocalApiErrorHandler,
-                    o = n.location,
-                    l = o.query.text,
-                    s = Array.isArray(o.query.welcome_message_id)
-                      ? o.query.welcome_message_id[0]
-                      : o.query.welcome_message_id,
-                    c = !!this.state.attachment || !(!l || s),
-                    u = !r || !r.type || r.type === k.CONVERSATION_TYPE.GROUP,
-                    d = r && (null == r || null === (t = r.participants) || void 0 === t ? void 0 : t.length) <= 1
-                  return c || u || d ? Promise.resolve() : a(e, s).catch(i({ showToast: !1 }))
+                    l = n.location,
+                    o = l.query.text,
+                    s = Array.isArray(l.query.welcome_message_id)
+                      ? l.query.welcome_message_id[0]
+                      : l.query.welcome_message_id,
+                    c = !!this.state.attachment || !(!o || s),
+                    d = !r || !r.type || r.type === k.CONVERSATION_TYPE.GROUP,
+                    u = r && (null == r || null === (t = r.participants) || void 0 === t ? void 0 : t.length) <= 1
+                  return c || d || u ? Promise.resolve() : a(e, s).catch(i({ showToast: !1 }))
                 },
               },
             ]),
             n
           )
         })(y.a.PureComponent)
-      g()($e, 'contextType', se.a), g()($e, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: J.a })
+      h()($e, 'contextType', se.a), h()($e, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: J.a })
       t.a = Object(Ae.a)()(j($e))
     },
     RH6X: function (e, t, n) {
@@ -9550,47 +9932,47 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
-        g = n.n(h),
+        g = n.n(m),
+        f = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
+        h = n.n(f),
         v = n('oEoC'),
         y = n('2dXj'),
-        b = n('4bHO'),
-        _ = n('dzqK'),
+        _ = n('4bHO'),
+        b = n('dzqK'),
         k = n('GZwR'),
         S = n('zpdM'),
         C = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
-              f()(s()(e), '_genericWrapperRef', g.a.createRef()),
-              f()(s()(e), 'render', function () {
+              g()(s()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
+              g()(s()(e), '_genericWrapperRef', h.a.createRef()),
+              g()(s()(e), 'render', function () {
                 var t = e.props,
                   n = t.children,
                   a = t.contextText,
                   r = t.isInline,
                   i = t.isInlineReply,
-                  o = t.onTypeaheadStateChange,
-                  l = t.source,
+                  l = t.onTypeaheadStateChange,
+                  o = t.source,
                   s = e.state,
                   c = s.canShowTypeahead,
-                  u = s.queryContext,
-                  d = c && u ? { word: u.word, resultType: u.resultType } : void 0
-                return g.a.createElement(
+                  d = s.queryContext,
+                  u = c && d ? { word: d.word, resultType: d.resultType } : void 0
+                return h.a.createElement(
                   y.a,
                   {
                     contextText: a,
@@ -9598,61 +9980,61 @@
                     isInlineReply: i,
                     onDismiss: e._handleDismiss,
                     onSelectItem: e._handleSelectItem,
-                    onTypeaheadStateChange: o,
-                    query: d,
+                    onTypeaheadStateChange: l,
+                    query: u,
                     ref: e._genericWrapperRef,
-                    source: l || k.d.Compose,
+                    source: o || k.d.Compose,
                   },
                   n(e._handleInputChange),
                 )
               }),
-              f()(s()(e), '_getCaret', function (e) {
+              g()(s()(e), '_getCaret', function (e) {
                 return e.getSelection().getStartOffset()
               }),
-              f()(s()(e), '_getPlaintextFromCurrentBlock', function (e) {
+              g()(s()(e), '_getPlaintextFromCurrentBlock', function (e) {
                 var t = e.getSelection().anchorKey
                 return e.getCurrentContent().getBlockForKey(t).getText()
               }),
-              f()(s()(e), '_handleSelectItem', function (t) {
+              g()(s()(e), '_handleSelectItem', function (t) {
                 var n = e.props.onTextUpdated,
                   a = e.state.queryContext
                 if (a) {
-                  var r = Object(b.a)(t, a.resultType)
+                  var r = Object(_.a)(t, a.resultType)
                   n(e._replaceToken(r, a))
                 }
                 e._setQueryContext(void 0)
               }),
-              f()(s()(e), '_handleInputChange', function (t) {
-                if (!Object(_.a)(t))
+              g()(s()(e), '_handleInputChange', function (t) {
+                if (!Object(b.a)(t))
                   throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
                 var n = e.state.queryContext,
                   a = n && n.word,
                   r = e._getPlaintextFromCurrentBlock(t),
                   i = v.c(e._getCaret(t), r),
-                  o = i.end,
-                  l = i.start,
+                  l = i.end,
+                  o = i.start,
                   s = i.word,
                   c = v.e(s || '', 'compose')
                 if ((null == c ? void 0 : c.q) !== a)
-                  if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === l))
+                  if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === o))
                     e._setQueryContext(void 0)
                   else if (c) {
-                    var u = c.q,
-                      d = c.result_type
-                    e._setQueryContext({ word: u, resultType: d, editorState: t, startIndex: l, endIndex: o })
+                    var d = c.q,
+                      u = c.result_type
+                    e._setQueryContext({ word: d, resultType: u, editorState: t, startIndex: o, endIndex: l })
                   } else e._setQueryContext(void 0)
               }),
-              f()(s()(e), '_setQueryContext', function (t) {
+              g()(s()(e), '_setQueryContext', function (t) {
                 return e.setState({ queryContext: t, canShowTypeahead: !!t })
               }),
-              f()(s()(e), '_handleDismiss', function () {
+              g()(s()(e), '_handleDismiss', function () {
                 return e.setState({ canShowTypeahead: !1 })
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: '_replaceToken',
                 value: function (e, t) {
@@ -9662,17 +10044,17 @@
                     i = n
                       .getSelection()
                       .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: r, focusOffset: a }),
-                    o = S.Modifier.replaceText(n.getCurrentContent(), i, e),
-                    l = S.EditorState.push(n, o, 'insert-characters'),
+                    l = S.Modifier.replaceText(n.getCurrentContent(), i, e),
+                    o = S.EditorState.push(n, l, 'insert-characters'),
                     s = r + e.length,
-                    c = l.getSelection().merge({ anchorOffset: s, focusOffset: s })
-                  return S.EditorState.forceSelection(l, c)
+                    c = o.getSelection().merge({ anchorOffset: s, focusOffset: s })
+                  return S.EditorState.forceSelection(o, c)
                 },
               },
             ]),
             n
           )
-        })(g.a.Component)
+        })(h.a.Component)
       t.a = C
     },
     RJrc: function (e, t, n) {
@@ -9680,16 +10062,16 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('3XMw'),
-        o = n.n(i),
-        l = n('MWbm'),
+        l = n.n(i),
+        o = n('MWbm'),
         s = n('Qwev'),
         c = n('rHpw'),
-        u = o.a.ffde2fdb,
-        d = c.a.create(function (e) {
+        d = l.a.ffde2fdb,
+        u = c.a.create(function (e) {
           return { spinner: { alignItems: 'center', marginVertical: '30px' } }
         })
       t.a = function () {
-        return r.a.createElement(l.a, { style: d.spinner }, r.a.createElement(s.a, { accessibilityLabel: u }))
+        return r.a.createElement(o.a, { style: u.spinner }, r.a.createElement(s.a, { accessibilityLabel: d }))
       }
     },
     Rk1B: function (e, t, n) {
@@ -9716,8 +10098,8 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('ERkP'),
-        o = n.n(i),
-        l = n('Lsrn'),
+        l = n.n(i),
+        o = n('Lsrn'),
         s = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -9728,14 +10110,14 @@
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [l.a.root, e.style],
+                style: [o.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            o.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              o.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M21.13 11.358L3.614 2.108c-.29-.152-.64-.102-.873.126-.23.226-.293.577-.15.868l4.362 8.92-4.362 8.92c-.143.292-.08.643.15.868.145.14.333.212.523.212.12 0 .24-.028.35-.087l17.517-9.25c.245-.13.4-.386.4-.664s-.155-.532-.4-.662zM4.948 4.51l12.804 6.762H8.255l-3.307-6.76zm3.307 8.26h9.498L4.948 19.535l3.307-6.763z',
               }),
             ),
@@ -9757,29 +10139,29 @@
       var a = n('97Jx'),
         r = n.n(a),
         i = n('m3Bd'),
-        o = n.n(i),
-        l = n('VrFO'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('VrFO'),
+        s = n.n(o),
         c = n('Y9Ll'),
-        u = n.n(c),
-        d = n('5Yy7'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('5Yy7'),
+        p = n.n(u),
         m = n('2VqO'),
-        f = n.n(m),
-        h = n('KEM+'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('KEM+'),
+        h = n.n(f),
         v = (n('2G9S'), n('7xRU'), n('ERkP')),
         y = n.n(v),
-        b = n('3XMw'),
-        _ = n.n(b),
+        _ = n('3XMw'),
+        b = n.n(_),
         k = n('cjZk'),
         S = 'fileInput',
         C = n('sjK1'),
         E = n('/Imo'),
         T = n('rHpw'),
         w = n('9HgX'),
-        x = ['acceptGifs', 'acceptImages', 'acceptVideo', 'customMimeTypes', 'icon', 'style', 'withIcon'],
-        R = _.a.b9960f31,
+        R = ['acceptGifs', 'acceptImages', 'acceptVideo', 'customMimeTypes', 'icon', 'style', 'withIcon'],
+        x = b.a.b9960f31,
         F = { viewType: 'media_picker' },
         A = y.a.createElement(k.a, null),
         I = function (e) {
@@ -9791,12 +10173,12 @@
         },
         O = (function (e) {
           p()(n, e)
-          var t = f()(n)
+          var t = g()(n)
           function n() {
             return s()(this, n), t.apply(this, arguments)
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -9805,17 +10187,17 @@
                     n = e.acceptImages,
                     a = e.acceptVideo,
                     i = e.customMimeTypes,
-                    l = e.icon,
+                    o = e.icon,
                     s = e.style,
                     c = e.withIcon,
-                    u = o()(e, x),
-                    d = I({ acceptGifs: t, acceptImages: n, acceptVideo: a }).concat(i).join(',')
+                    d = l()(e, R),
+                    u = I({ acceptGifs: t, acceptImages: n, acceptVideo: a }).concat(i).join(',')
                   return y.a.createElement(
                     E.a,
-                    r()({}, u, {
-                      accept: d,
+                    r()({}, d, {
+                      accept: u,
                       behavioralEventContext: F,
-                      icon: c ? l : void 0,
+                      icon: c ? o : void 0,
                       style: [M.root, s],
                       testID: S,
                     }),
@@ -9826,12 +10208,12 @@
             n
           )
         })(y.a.PureComponent)
-      g()(O, 'defaultProps', {
+      h()(O, 'defaultProps', {
         acceptGifs: !0,
         acceptImages: !0,
         acceptVideo: !0,
         customMimeTypes: [],
-        accessibilityLabel: R,
+        accessibilityLabel: x,
         icon: A,
         size: 'medium',
         withIcon: !0,
@@ -9850,10 +10232,10 @@
           return c
         }),
         n.d(t, 'm', function () {
-          return u
+          return d
         }),
         n.d(t, 'c', function () {
-          return d
+          return u
         }),
         n.d(t, 'd', function () {
           return p
@@ -9862,13 +10244,13 @@
           return m
         }),
         n.d(t, 'k', function () {
-          return f
+          return g
         }),
         n.d(t, 'l', function () {
-          return h
+          return f
         }),
         n.d(t, 'g', function () {
-          return g
+          return h
         }),
         n.d(t, 'j', function () {
           return v
@@ -9877,10 +10259,10 @@
           return y
         }),
         n.d(t, 'f', function () {
-          return b
+          return _
         }),
         n.d(t, 'a', function () {
-          return _
+          return b
         }),
         n.d(t, 'b', function () {
           return k
@@ -9892,33 +10274,33 @@
       var a = n('CDB5'),
         r = n('Myq3'),
         i = n('XnpN'),
-        o = n('AQ79'),
-        l = n('pHkl'),
+        l = n('AQ79'),
+        o = n('pHkl'),
         s = function (e, t) {
           return t.location && t.location.state && t.location.state.tweetAttachment
         },
         c = function (e, t) {
           return t.location && t.location.state && t.location.state.participants
         },
-        u = function (e, t) {
+        d = function (e, t) {
           return t.location && t.location.state && t.location.state.isNewGroupConversation
         },
-        d = function (e) {
+        u = function (e) {
           var t = e.message_data,
-            n = l.f.UNKNOWN,
+            n = o.f.UNKNOWN,
             a = (t && t.attachment) || {}
           return (
             a.tweet
-              ? (n = l.f.TWEET)
+              ? (n = o.f.TWEET)
               : a.photo
-              ? (n = l.f.PHOTO)
+              ? (n = o.f.PHOTO)
               : a.animated_gif
-              ? (n = l.f.GIF)
+              ? (n = o.f.GIF)
               : a.video
-              ? (n = a.video.audio_only ? l.f.VOICE : l.f.VIDEO)
+              ? (n = a.video.audio_only ? o.f.VOICE : o.f.VIDEO)
               : a.card
-              ? (n = l.f.CARD)
-              : null != t && t.text && (n = l.f.TEXT),
+              ? (n = o.f.CARD)
+              : null != t && t.text && (n = o.f.TEXT),
             n
           )
         }
@@ -9928,15 +10310,15 @@
         })
       }
       function m(e) {
-        return e === o.d.SECONDARY ? l.e.REQUESTS : e === o.d.TERTIARY ? l.e.LOW_QUALITY : l.e.PRIMARY
+        return e === l.d.SECONDARY ? o.e.REQUESTS : e === l.d.TERTIARY ? o.e.LOW_QUALITY : o.e.PRIMARY
       }
-      function f(e) {
+      function g(e) {
         return e.isTrue('dm_voice_rendering_enabled')
       }
-      function h(e, t) {
-        return !!(e && e.video && f(t)) && !!e.video.audio_only
+      function f(e, t) {
+        return !!(e && e.video && g(t)) && !!e.video.audio_only
       }
-      function g(e, t, n, a) {
+      function h(e, t, n, a) {
         return {
           pathname: '/i/report/dm_conversation/'.concat(e),
           state: { clientReferer: t, inboxType: a, scribeNamespace: n },
@@ -9951,20 +10333,20 @@
         return { name: (a && a.name) || '', screenName: (a && a.screen_name) || '', idStr: (a && a.id_str) || '' }
       }
       var y = function (e) {
-          return e === o.d.TERTIARY
+          return e === l.d.TERTIARY
             ? 'low_quality_timeline'
-            : e === o.d.SECONDARY
+            : e === l.d.SECONDARY
             ? 'requests_timeline'
             : 'inbox_timeline'
         },
-        b = function (e) {
-          return e === o.d.TERTIARY
+        _ = function (e) {
+          return e === l.d.TERTIARY
             ? '/messages/requests/additional'
-            : e === o.d.SECONDARY
+            : e === l.d.SECONDARY
             ? '/messages/requests'
             : '/messages'
         },
-        _ = function (e) {
+        b = function (e) {
           return function () {
             return a.b(e)
           }
@@ -9992,47 +10374,47 @@
       var a = n('97Jx'),
         r = n.n(a),
         i = n('m3Bd'),
-        o = n.n(i),
-        l = n('ERkP'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('ERkP'),
+        s = n.n(o),
         c = n('v6aA'),
-        u = n('XOJV'),
-        d = n('eSoz'),
+        d = n('XOJV'),
+        u = n('eSoz'),
         p = n('rxPX'),
         m = n('0KEI'),
-        f = function (e, t) {
+        g = function (e, t) {
           return t.tweetId
         },
-        h = function (e, t) {
+        f = function (e, t) {
           var n = t.tweetId,
-            a = n && u.a.select(e, n)
-          return a ? Object(d.g)(e, a) : void 0
+            a = n && d.a.select(e, n)
+          return a ? Object(u.g)(e, a) : void 0
         },
-        g = Object(p.a)()
+        h = Object(p.a)()
           .propsFromState(function () {
-            return { community: h, hydratedTweet: u.a.createHydratedTweetSelector(f) }
+            return { community: f, hydratedTweet: d.a.createHydratedTweetSelector(g) }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
             }
           }),
         v = n('YeIG'),
         y = n('uCxL'),
-        b = n('x5Pi'),
-        _ = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
-        k = g(function (e) {
+        _ = n('x5Pi'),
+        b = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
+        k = h(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             a = e.fetchCommunityIfNeeded,
             i = e.hydratedTweet,
-            l = (e.tweetId, o()(e, _)),
-            u = s.a.useContext(c.a),
-            d = u.featureSwitches,
-            p = u.loggedInUserId,
+            o = (e.tweetId, l()(e, b)),
+            d = s.a.useContext(c.a),
+            u = d.featureSwitches,
+            p = d.loggedInUserId,
             m = null == i ? void 0 : i.community_id_str
           s.a.useEffect(
             function () {
@@ -10040,16 +10422,16 @@
             },
             [t, m, n, a],
           )
-          var f = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            h = i && Object(b.f)(i, p, t),
-            g = h && Object(b.e)(h),
-            k = d.isTrue('responsive_web_reactions_enabled')
+          var g = u.isTrue('responsive_web_alt_text_badge_enabled'),
+            f = i && Object(_.f)(i, p, t),
+            h = f && Object(_.e)(f),
+            k = u.isTrue('responsive_web_reactions_enabled')
           return s.a.createElement(
             y.a,
-            r()({}, l, {
+            r()({}, o, {
               loggedInUserId: p,
-              shouldShowAltLabelAlways: f,
-              socialContextProps: g,
+              shouldShowAltLabelAlways: g,
+              socialContextProps: h,
               tweet: i,
               withReactions: k,
             }),
@@ -10066,10 +10448,10 @@
           return i
         }),
         n.d(t, 'd', function () {
-          return o
+          return l
         }),
         n.d(t, 'c', function () {
-          return l
+          return o
         }),
         n.d(t, 'a', function () {
           return c
@@ -10082,10 +10464,10 @@
         i = function (e) {
           return e && e.type === a.b.WELCOME_MESSAGE
         },
-        o = function (e) {
+        l = function (e) {
           return e && e.type === a.b.TRUST_CONVERSATION
         },
-        l = function (e) {
+        o = function (e) {
           return e && e.type === a.b.REACTION_CREATE
         },
         s = [
@@ -10104,32 +10486,32 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('1YZw'),
-        o = n('rxPX'),
-        l = Object(o.a)().propsFromActions(function () {
+        l = n('rxPX'),
+        o = Object(l.a)().propsFromActions(function () {
           return { addToast: i.b }
         }),
         s = n('VrFO'),
         c = n.n(s),
-        u = n('Y9Ll'),
-        d = n.n(u),
+        d = n('Y9Ll'),
+        u = n.n(d),
         p = n('1Pcy'),
         m = n.n(p),
-        f = n('5Yy7'),
-        h = n.n(f),
-        g = n('2VqO'),
-        v = n.n(g),
+        g = n('5Yy7'),
+        f = n.n(g),
+        h = n('2VqO'),
+        v = n.n(h),
         y = n('KEM+'),
-        b = n.n(y),
-        _ = (n('ho0z'), n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('k/Ka')),
+        _ = n.n(y),
+        b = (n('ho0z'), n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('k/Ka')),
         k = n('3XMw'),
         S = n.n(k),
         C = n('sgih'),
         E = n('t62R'),
         T = n('/yvb'),
         w = n('rHpw'),
-        x = S.a.cfd2f35d,
-        R = (function (e) {
-          h()(n, e)
+        R = S.a.cfd2f35d,
+        x = (function (e) {
+          f()(n, e)
           var t = v()(n)
           function n() {
             var e
@@ -10137,14 +10519,14 @@
             for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              b()(m()(e), '_handleOnFocus', function (e) {
+              _()(m()(e), '_handleOnFocus', function (e) {
                 e.currentTarget.select()
               }),
               e
             )
           }
           return (
-            d()(n, [
+            u()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -10153,8 +10535,8 @@
                     n = e.description,
                     a = e.headerText,
                     i = e.link,
-                    o = e.onCancel,
-                    l = Object(_.a)('input', {
+                    l = e.onCancel,
+                    o = Object(b.a)('input', {
                       autoFocus: !0,
                       onFocus: this._handleOnFocus,
                       readOnly: !0,
@@ -10163,11 +10545,11 @@
                     })
                   return r.a.createElement(
                     C.a,
-                    { onMaskClick: o, style: F.container, type: 'center', withMask: !0 },
+                    { onMaskClick: l, style: F.container, type: 'center', withMask: !0 },
                     a && r.a.createElement(E.b, { align: 'center', style: F.headerText, weight: 'bold' }, a),
                     n && r.a.createElement(E.b, { align: 'center', color: 'gray700', style: F.labelText }, n),
-                    l,
-                    r.a.createElement(T.a, { onPress: o, size: 'xLarge', style: F.cancelButton, type: 'brandText' }, t),
+                    o,
+                    r.a.createElement(T.a, { onPress: l, size: 'xLarge', style: F.cancelButton, type: 'brandText' }, t),
                   )
                 },
               },
@@ -10175,7 +10557,7 @@
             n
           )
         })(r.a.Component)
-      b()(R, 'defaultProps', { cancelButtonLabel: x })
+      _()(x, 'defaultProps', { cancelButtonLabel: R })
       var F = w.a.create(function (e) {
           return {
             container: {
@@ -10198,7 +10580,7 @@
             cancelButton: { width: '100%' },
           }
         }),
-        A = R,
+        A = x,
         I = n('I/9y'),
         O = n('mjJ+'),
         M = n('cm6r'),
@@ -10213,26 +10595,26 @@
           giphy: 'https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png',
         },
         N = (function (e) {
-          h()(n, e)
+          f()(n, e)
           var t = v()(n)
           function n(e) {
             var a
             return (
               c()(this, n),
               (a = t.call(this, e)),
-              b()(m()(a), '_renderMenu', function (e) {
+              _()(m()(a), '_renderMenu', function (e) {
                 return r.a.createElement(O.a, {
                   items: [{ text: B, Icon: I.a, onClick: a._handleCopyGifLinkButtonClick }],
                   onCloseRequested: e,
                 })
               }),
-              b()(m()(a), '_handleCopyGifLinkButtonClick', function (e) {
+              _()(m()(a), '_handleCopyGifLinkButtonClick', function (e) {
                 var t = a.props,
                   n = t.addToast,
                   r = t.gifUrl
                 L.a.isAvailable() ? (L.a.setString(r), n({ text: j })) : a.setState({ showCopyLinkSheet: !0 }), e && e()
               }),
-              b()(m()(a), '_handleCopyLinkSheetCancel', function () {
+              _()(m()(a), '_handleCopyLinkSheetCancel', function () {
                 a.setState({ showCopyLinkSheet: !1 })
               }),
               (a.state = { showCopyLinkSheet: !1 }),
@@ -10240,7 +10622,7 @@
             )
           }
           return (
-            d()(n, [
+            u()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -10249,9 +10631,9 @@
                     n = t.gifUrl,
                     a = t.provider,
                     i = a.display_name,
-                    o = a.name,
-                    l = U[o]
-                  return l
+                    l = a.name,
+                    o = U[l]
+                  return o
                     ? r.a.createElement(
                         r.a.Fragment,
                         null,
@@ -10269,7 +10651,7 @@
                           r.a.createElement(
                             S.a.I18NFormatMessage,
                             { $i18n: 'e2e6ea0d' },
-                            this._renderAttribution(i, l),
+                            this._renderAttribution(i, o),
                           ),
                         ),
                       )
@@ -10307,14 +10689,14 @@
             root: { marginHorizontal: e.spaces.space12 },
           }
         }),
-        V = N,
-        W = l(function (e) {
+        W = N,
+        V = o(function (e) {
           var t = e.addToast,
             n = e.gifUrl,
             a = e.provider
-          return r.a.createElement(V, { addToast: t, gifUrl: n, provider: a })
+          return r.a.createElement(W, { addToast: t, gifUrl: n, provider: a })
         })
-      t.a = W
+      t.a = V
     },
     cOtO: function (e, t, n) {
       'use strict'
@@ -10325,53 +10707,53 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('KqXw'), n('MvUL'), n('uFXj'), n('ERkP')),
-        g = n.n(h),
+        g = n.n(m),
+        f = (n('KqXw'), n('MvUL'), n('uFXj'), n('ERkP')),
+        h = n.n(f),
         v = n('v6aA'),
         y = (n('WNMA'), n('zh9S')),
-        b = n('MMRb'),
-        _ = n('CDB5'),
+        _ = n('MMRb'),
+        b = n('CDB5'),
         k = n('RqPI'),
         S = n('hqKg'),
         C = n('AQOc'),
         E = n('z2Pn'),
         T = n('pNZL'),
         w = n('G6rE'),
-        x = n('oEGd'),
-        R = n('X/yg'),
+        R = n('oEGd'),
+        x = n('X/yg'),
         F = function (e, t) {
           return t.match.params.conversationId
         },
         A = Object(S.createSelector)(
           function (e, t) {
-            return b.selectConversation(e, F(0, t))
+            return _.selectConversation(e, F(0, t))
           },
-          b.selectEntries,
+          _.selectEntries,
           F,
-          R.m,
+          x.m,
           k.r,
-          R.n,
-          R.o,
+          x.n,
+          x.o,
           w.e.selectAll,
           function (e, t) {
-            return _.j(e, F(0, t))
+            return b.j(e, F(0, t))
           },
           function (e, t) {
-            return _.i(e, F(0, t))
+            return b.i(e, F(0, t))
           },
-          function (e, t, n, a, r, i, o, l, s, c) {
-            var u = e && e.data
+          function (e, t, n, a, r, i, l, o, s, c) {
+            var d = e && e.data
             return {
-              conversation: (u && Object(C.a)(u, t, l)) || void 0,
+              conversation: (d && Object(C.a)(d, t, o)) || void 0,
               conversationId: n,
               isNewGroupConversation: a,
               isUploading: s,
@@ -10381,11 +10763,11 @@
             }
           },
         ),
-        I = Object(x.d)(A, function (e) {
+        I = Object(R.d)(A, function (e) {
           return {
-            cancelUpload: Object(R.a)(e.match.params.conversationId),
+            cancelUpload: Object(x.a)(e.match.params.conversationId),
             googleAnalyticsPageView: y.googleAnalyticsPageView,
-            removeMedia: Object(R.b)(e.match.params.conversationId),
+            removeMedia: Object(x.b)(e.match.params.conversationId),
             scribePageImpression: y.scribePageImpression,
             setLastViewedDmInboxPath: E.h,
             updateTweetDetailNav: T.b,
@@ -10398,32 +10780,32 @@
         P = n('rHpw'),
         K = n('7JQg'),
         B = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n(e, a) {
             var i
             r()(this, n),
               (i = t.call(this, e, a)),
-              f()(s()(i), '_composer', g.a.createRef()),
-              f()(s()(i), '_handleInfoClick', function () {
+              g()(s()(i), '_composer', h.a.createRef()),
+              g()(s()(i), '_handleInfoClick', function () {
                 var e = i.props,
                   t = e.conversationId,
                   n = e.history
                 t && n.push('/messages/'.concat(t, '/info'))
               }),
-              f()(s()(i), '_updateLastViewDmInboxPath', function () {
+              g()(s()(i), '_updateLastViewDmInboxPath', function () {
                 var e = i.props,
                   t = e.location
                 ;(0, e.setLastViewedDmInboxPath)(t.pathname)
               })
-            var o = e.conversationId,
-              l = e.history,
+            var l = e.conversationId,
+              o = e.history,
               c = e.isNewGroupConversation,
-              u = e.location
-            return o || c || u.pathname !== window.location.pathname || l.replace({ pathname: '/messages' }), i
+              d = e.location
+            return l || c || d.pathname !== window.location.pathname || o.replace({ pathname: '/messages' }), i
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -10450,21 +10832,21 @@
                     a = e.history,
                     r = e.location,
                     i = e.newConversationParticipants,
-                    o = e.perspective,
-                    l = e.richTextInputContext,
+                    l = e.perspective,
+                    o = e.richTextInputContext,
                     s = e.typeaheadWrapper,
                     c = 'string' == typeof r.query.text ? r.query.text : void 0,
-                    u = O.a.get('window').width >= P.a.theme.breakpoints.small
-                  return g.a.createElement(
+                    d = O.a.get('window').width >= P.a.theme.breakpoints.small
+                  return h.a.createElement(
                     L.a,
-                    { conversation: t, conversationId: n, newConversationParticipants: i, perspective: o },
-                    g.a.createElement(M.a, {
+                    { conversation: t, conversationId: n, newConversationParticipants: i, perspective: l },
+                    h.a.createElement(M.a, {
                       conversationId: n,
                       history: a,
-                      isWide: u,
+                      isWide: d,
                       location: r,
                       prefillText: c,
-                      richTextInputContext: l,
+                      richTextInputContext: o,
                       typeaheadWrapper: s,
                     }),
                   )
@@ -10473,8 +10855,8 @@
             ]),
             n
           )
-        })(g.a.PureComponent)
-      f()(B, 'contextType', v.a), f()(B, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: D.a })
+        })(h.a.PureComponent)
+      g()(B, 'contextType', v.a), g()(B, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: D.a })
       t.default = Object(K.a)({ page: 'messages', section: 'thread' })(I(B))
     },
     dWxr: function (e, t, n) {
@@ -10483,8 +10865,8 @@
       n('2G9S'),
         Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e, t) {
-          var n = (0, l.default)(e, t)
-            .concat((0, o.default)(e))
+          var n = (0, o.default)(e, t)
+            .concat((0, l.default)(e))
             .concat((0, i.default)(e, { checkUrlOverlap: !1 }))
             .concat((0, r.default)(e))
           if (0 == n.length) return []
@@ -10492,8 +10874,8 @@
         })
       var r = a(n('EW8Q')),
         i = a(n('yyPN')),
-        o = a(n('YXS5')),
-        l = a(n('vwfs')),
+        l = a(n('YXS5')),
+        o = a(n('vwfs')),
         s = a(n('c8jd'))
       e.exports = t.default
     },
@@ -10545,8 +10927,8 @@
               .filter(Boolean),
           )
         },
-        o = n('G6rE'),
-        l = n('oEGd'),
+        l = n('G6rE'),
+        o = n('oEGd'),
         s = function (e, t) {
           return {
             users: i(t).reduce(function (t, n) {
@@ -10555,13 +10937,13 @@
           }
         },
         c = Object(a.createSelector)(
-          o.e.selectAll,
+          l.e.selectAll,
           function (e, t) {
             return t.entry
           },
           s,
         )
-      t.a = Object(l.c)(c)
+      t.a = Object(o.c)(c)
     },
     gbD7: function (e, t, n) {
       'use strict'
@@ -10569,10 +10951,10 @@
         return i
       }),
         n.d(t, 'a', function () {
-          return o
+          return l
         }),
         n.d(t, 'd', function () {
-          return l
+          return o
         }),
         n.d(t, 'c', function () {
           return s
@@ -10590,33 +10972,33 @@
           }
         },
         i = r(a.b.CONVERSATION_PROFILE_INFO_HEADER, 'conversationProfileInfoHeader'),
-        o = 'typingIndicator',
-        l = r(a.b.TYPING_INDICATOR, o),
+        l = 'typingIndicator',
+        o = r(a.b.TYPING_INDICATOR, l),
         s = r(a.b.READ_ONLY_INDICATOR, 'readOnlyIndicator')
     },
     gpVt: function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return V
+        return W
       })
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('z84I'), n('KqXw'), n('3uku'), n('jwue'), n('7x/C'), n('+oxZ'), n('ho0z'), n('ERkP')),
-        g = n.n(h),
+        g = n.n(m),
+        f = (n('z84I'), n('KqXw'), n('3uku'), n('jwue'), n('7x/C'), n('+oxZ'), n('ho0z'), n('ERkP')),
+        h = n.n(f),
         v = n('K1iM'),
         y = n.n(v),
-        b = n('RhWx'),
-        _ = n.n(b),
+        _ = n('RhWx'),
+        b = n.n(_),
         k = (n('wFPu'), n('CDB5')),
         S = n('xVN5'),
         C = n('vjRr'),
@@ -10626,21 +11008,21 @@
           var n,
             a,
             r = t.urls,
-            i = _()(r),
-            o = y()(i.reverse())
+            i = b()(r),
+            l = y()(i.reverse())
           try {
-            for (o.s(); !(a = o.n()).done; ) {
-              var l = a.value
-              if ((n = C.a.select(e, l))) break
+            for (l.s(); !(a = l.n()).done; ) {
+              var o = a.value
+              if ((n = C.a.select(e, o))) break
             }
           } catch (s) {
-            o.e(s)
+            l.e(s)
           } finally {
-            o.f()
+            l.f()
           }
           return n
         },
-        x = Object(E.a)()
+        R = Object(E.a)()
           .propsFromState(function () {
             return { card: w }
           })
@@ -10654,8 +11036,8 @@
               updateTweetComposer: S.w,
             }
           }),
-        R = n('KqB4'),
-        F = n.n(R),
+        x = n('KqB4'),
+        F = n.n(x),
         A = n('aX4+'),
         I = n('3XMw'),
         O = n.n(I),
@@ -10669,22 +11051,22 @@
         U = n('mN6z'),
         N = O.a.f6fec9f6,
         H = /^https?:\/\//i,
-        V = function (e) {
+        W = function (e) {
           var t = F()(e)
           if (t.length)
             return t.map(function (e) {
               return (!H.test(e) && 'http://'.concat(e)) || e
             })
         },
-        W = (function (e) {
-          u()(n, e)
+        V = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n(e, a) {
             var i
             return (
               r()(this, n),
               (i = t.call(this, e, a)),
-              f()(s()(i), '_fetchCardPreviewIfNeeded', function () {
+              g()(s()(i), '_fetchCardPreviewIfNeeded', function () {
                 var e = i.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchCardPreviewIfNeeded
@@ -10692,17 +11074,17 @@
                   n(e).catch(t())
                 })
               }),
-              f()(s()(i), '_handleCardPreviewDismissal', function (e) {
+              g()(s()(i), '_handleCardPreviewDismissal', function (e) {
                 return i._updateSingleComposer({ cardUrl: L.B })
               }),
-              f()(s()(i), '_updateSingleComposer', function (e) {
+              g()(s()(i), '_updateSingleComposer', function (e) {
                 var t = i.props,
                   n = t.conversationId,
                   a = t.index,
                   r = t.updateDMComposer,
-                  o = t.updateTweetComposer,
-                  l = (e || {}).cardUrl
-                i._isDMComposer ? n && r(n, l) : o({ updates: { cardUrl: l }, index: a })
+                  l = t.updateTweetComposer,
+                  o = (e || {}).cardUrl
+                i._isDMComposer ? n && r(n, o) : l({ updates: { cardUrl: o }, index: a })
               }),
               (i._debouncedFetchCardPreview = Object(j.a)(i._fetchCardPreviewIfNeeded, 1e3)),
               (i._isDMComposer = !!e.conversationId),
@@ -10710,7 +11092,7 @@
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -10739,21 +11121,21 @@
                     a = e.style,
                     r = this.context.loggedInUserId
                   return t && !n && r
-                    ? g.a.createElement(
+                    ? h.a.createElement(
                         D.a,
                         { style: a },
-                        g.a.createElement(A.a, {
+                        h.a.createElement(A.a, {
                           card: { name: t.name, url: t.url, binding_values: t.binding_values },
                           cardContext: { tweetUserId: r },
                           isInteractive: !1,
                           preventVideoPlayback: !0,
                         }),
-                        g.a.createElement(K.a, {
+                        h.a.createElement(K.a, {
                           accessibilityLabel: N,
-                          icon: g.a.createElement(M.a, null),
+                          icon: h.a.createElement(M.a, null),
                           onPress: this._handleCardPreviewDismissal,
                           size: 'xSmall',
-                          style: z.closeButton,
+                          style: q.closeButton,
                           type: 'onMediaDominantColorFilled',
                         }),
                       )
@@ -10763,13 +11145,13 @@
             ]),
             n
           )
-        })(g.a.Component)
-      f()(W, 'contextType', P.a)
-      var z = B.a.create(function (e) {
+        })(h.a.Component)
+      g()(V, 'contextType', P.a)
+      var q = B.a.create(function (e) {
           return { closeButton: { position: 'absolute', top: e.spaces.space4, left: e.spaces.space4 } }
         }),
-        q = x(W)
-      t.a = q
+        z = R(V)
+      t.a = z
     },
     hHEM: function (e, t, n) {
       'use strict'
@@ -10777,7 +11159,7 @@
       var a = n('z4Oz'),
         r = n('LQrL'),
         i = n('zpdM'),
-        o = function (e, t) {
+        l = function (e, t) {
           for (var n = 0, a = 0; a < e.length; a++) {
             var r = e[a],
               i = r.getText().length
@@ -10786,38 +11168,38 @@
           }
           return Object.freeze({})
         },
-        l = function (e, t) {
+        o = function (e, t) {
           var n = e.getCurrentContent(),
             a = n.getFirstBlock(),
             r = n.getLastBlock(),
-            o = t.blockKey,
-            l = void 0 === o ? r.key : o,
+            l = t.blockKey,
+            o = void 0 === l ? r.key : l,
             s = t.offset,
             c = void 0 === s ? r.getText().length : s,
-            u = e
+            d = e
               .getSelection()
-              .merge({ anchorKey: a.key, anchorOffset: 0, focusKey: l, focusOffset: c, isBackward: !1 }),
-            d = i.Modifier.removeInlineStyle(e.getCurrentContent(), u, 'overflow')
-          return i.EditorState.push(e, d, 'change-inline-style')
+              .merge({ anchorKey: a.key, anchorOffset: 0, focusKey: o, focusOffset: c, isBackward: !1 }),
+            u = i.Modifier.removeInlineStyle(e.getCurrentContent(), d, 'overflow')
+          return i.EditorState.push(e, u, 'change-inline-style')
         },
         s = function (e, t) {
           var n = t.blockKey,
             a = t.offset,
             r = e.getCurrentContent(),
-            o = r.getLastBlock(),
-            l = c(r, n, a)
+            l = r.getLastBlock(),
+            o = c(r, n, a)
           if (n) {
             var s = e
                 .getSelection()
                 .merge({
                   anchorKey: n,
-                  anchorOffset: l,
-                  focusKey: o.key,
-                  focusOffset: o.getText().length,
+                  anchorOffset: o,
+                  focusKey: l.key,
+                  focusOffset: l.getText().length,
                   isBackward: !1,
                 }),
-              u = i.Modifier.applyInlineStyle(r, s, 'overflow')
-            return i.EditorState.push(e, u, 'change-inline-style')
+              d = i.Modifier.applyInlineStyle(r, s, 'overflow')
+            return i.EditorState.push(e, d, 'change-inline-style')
           }
           return e
         },
@@ -10828,13 +11210,13 @@
           if (r) {
             var i = r.getEntityAt(n)
             if (void 0 !== i) {
-              var o = i && e.getEntity(i),
-                l = o && o.data && o.data.id
-              if (void 0 !== l)
+              var l = i && e.getEntity(i),
+                o = l && l.data && l.data.id
+              if (void 0 !== o)
                 for (var s = n - 1; s >= 0; s--) {
                   var c = r.getEntityAt(s),
-                    u = c && e.getEntity(c)
-                  if (!u || !u.data || u.data.id !== l) {
+                    d = c && e.getEntity(c)
+                  if (!d || !d.data || d.data.id !== o) {
                     a = s + 1
                     break
                   }
@@ -10843,8 +11225,8 @@
             return a
           }
         },
-        u = 'TWEMOJI',
-        d = 'IMMUTABLE'
+        d = 'TWEMOJI',
+        u = 'IMMUTABLE'
       t.a = {
         convertEmojiToEntities: function (e) {
           var t = i.EditorState.set(e, { allowUndo: !1 }),
@@ -10854,9 +11236,9 @@
             n.getBlocksAsArray().forEach(function (e) {
               a.a.getTwemojiEntities(e.getText()).forEach(function (a) {
                 if (2 === (a.indices && a.indices.length)) {
-                  var o = n.createEntity(u, d, { url: a.url || null, id: r })
+                  var l = n.createEntity(d, u, { url: a.url || null, id: r })
                   r += 1
-                  var l = o.getLastCreatedEntityKey(),
+                  var o = l.getLastCreatedEntityKey(),
                     s = e.getKey(),
                     c = t
                       .getSelection()
@@ -10867,14 +11249,14 @@
                         focusOffset: a.indices[1],
                         isBackward: !1,
                       })
-                  n = i.Modifier.applyEntity(o, c, l)
+                  n = i.Modifier.applyEntity(l, c, o)
                 }
               })
             }),
             i.EditorState.set(t, { allowUndo: !0, currentContent: n })
           )
         },
-        getRelativeOffset: o,
+        getRelativeOffset: l,
         initEditorState: function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { decorators: [r.b, r.f, r.a] },
@@ -10891,22 +11273,22 @@
             r = i.Modifier.insertText(n, a, t)
           return i.EditorState.push(e, r, 'insert-characters')
         },
-        TWEMOJI_ENTITY_TYPE: u,
+        TWEMOJI_ENTITY_TYPE: d,
         updateOverflowStyle: function (e, t) {
           var n,
             a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
             r = e.getSelection(),
             c = i.EditorState.set(e, { allowUndo: !1 }),
-            u = e.getCurrentContent().getSelectionBefore(),
-            d = e.getCurrentContent().getSelectionAfter(),
+            d = e.getCurrentContent().getSelectionBefore(),
+            u = e.getCurrentContent().getSelectionAfter(),
             p = e.getCurrentContent(),
             m = p.getBlocksAsArray(),
-            f = 'number' == typeof t && t > -1,
-            h = f ? o(m, t) : Object.freeze({})
-          if ((a && ((c = l(c, h)), (n = !0)), f && ((c = s(c, h)), (n = !0)), n)) {
-            var g = (c = i.EditorState.forceSelection(c, r)).getCurrentContent()
-            ;(g = (g = g.set('selectionBefore', u)).set('selectionAfter', d)),
-              (c = i.EditorState.set(e, { allowUndo: !0, currentContent: g }))
+            g = 'number' == typeof t && t > -1,
+            f = g ? l(m, t) : Object.freeze({})
+          if ((a && ((c = o(c, f)), (n = !0)), g && ((c = s(c, f)), (n = !0)), n)) {
+            var h = (c = i.EditorState.forceSelection(c, r)).getCurrentContent()
+            ;(h = (h = h.set('selectionBefore', d)).set('selectionAfter', u)),
+              (c = i.EditorState.set(e, { allowUndo: !0, currentContent: h }))
           }
           return c
         },
@@ -10917,8 +11299,8 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('ERkP'),
-        o = n.n(i),
-        l = n('Lsrn'),
+        l = n.n(i),
+        o = n('Lsrn'),
         s = n('k/Ka'),
         c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -10929,17 +11311,17 @@
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [l.a.root, e.style],
+                style: [o.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            o.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              o.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M20.746 5.236h-3.75V4.25c0-1.24-1.01-2.25-2.25-2.25h-5.5c-1.24 0-2.25 1.01-2.25 2.25v.986h-3.75c-.414 0-.75.336-.75.75s.336.75.75.75h.368l1.583 13.262c.216 1.193 1.31 2.027 2.658 2.027h8.282c1.35 0 2.442-.834 2.664-2.072l1.577-13.217h.368c.414 0 .75-.336.75-.75s-.335-.75-.75-.75zM8.496 4.25c0-.413.337-.75.75-.75h5.5c.413 0 .75.337.75.75v.986h-7V4.25zm8.822 15.48c-.1.55-.664.795-1.18.795H7.854c-.517 0-1.083-.246-1.175-.75L5.126 6.735h13.74L17.32 19.732z',
               }),
-              o.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M10 17.75c.414 0 .75-.336.75-.75v-7c0-.414-.336-.75-.75-.75s-.75.336-.75.75v7c0 .414.336.75.75.75zm4 0c.414 0 .75-.336.75-.75v-7c0-.414-.336-.75-.75-.75s-.75.336-.75.75v7c0 .414.336.75.75.75z',
               }),
             ),
@@ -10958,42 +11340,42 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('v6aA'),
-        o = n('ddV6'),
-        l = n.n(o),
+        l = n('ddV6'),
+        o = n.n(l),
         s = n('8W85')
       function c() {
         var e = r.a.useContext(S),
-          t = l()(e.activeVoiceMessage, 2),
+          t = o()(e.activeVoiceMessage, 2),
           n = t[0],
           a = t[1],
-          i = l()(e.playerApi, 2)[1],
-          o = l()(e.playerState, 2)[1]
+          i = o()(e.playerApi, 2)[1],
+          l = o()(e.playerState, 2)[1]
         var c = {
-          media: l()(n, 2)[1],
+          media: o()(n, 2)[1],
           onEnded: function () {
             a([null, null]), e.scribeAction && e.scribeAction.complete()
           },
           onPlayerApi: i,
-          onPlayerState: o,
+          onPlayerState: l,
         }
         return r.a.createElement(s.a, c)
       }
-      var u = n('X/yg'),
-        d = n('yiKp'),
-        p = n.n(d),
+      var d = n('X/yg'),
+        u = n('yiKp'),
+        p = n.n(u),
         m = (n('849X'), n('TJCb'), n('89tF')),
-        f = n('k89r')
-      function h(e) {
+        g = n('k89r')
+      function f(e) {
         var t,
           n,
           a,
           i,
-          o,
-          l =
+          l,
+          o =
             ((t = r.a.useState(y.activeVoiceMessage)),
             (n = r.a.useState(y.playerApi)),
             (a = r.a.useState(y.playerState)),
-            (o = Object(f.a)()),
+            (l = Object(g.a)()),
             (i = r.a.useMemo(
               function () {
                 var e = { page: 'messages', section: 'thread', component: 'message', element: 'voice' }
@@ -11007,9 +11389,9 @@
                 var n = function (e, n) {
                   return n
                     ? n.data
-                      ? o.scribe(p()(p()({}, t({ action: e })), {}, { data: n.data }))
-                      : o.scribe(p()({}, t({ action: e, component: v(n) })))
-                    : o.scribe(p()({}, t({ action: e })))
+                      ? l.scribe(p()(p()({}, t({ action: e })), {}, { data: n.data }))
+                      : l.scribe(p()({}, t({ action: e, component: v(n) })))
+                    : l.scribe(p()({}, t({ action: e })))
                 }
                 return {
                   impression: function (e) {
@@ -11029,53 +11411,53 @@
                   },
                 }
               },
-              [o],
+              [l],
             )),
             { activeVoiceMessage: t, playerApi: n, playerState: a, scribeAction: i })
-        return r.a.createElement(b.Provider, { value: l }, e.children)
+        return r.a.createElement(_.Provider, { value: o }, e.children)
       }
-      var g = {
+      var h = {
         Timelines: Object(m.a)({ message: !0, inbox_timeline: !0, low_quality_timeline: !0, requests_timeline: !0 }),
       }
       function v(e) {
         var t = e.isLowQuality
         return e.isTrusted
-          ? g.Timelines.inbox_timeline
+          ? h.Timelines.inbox_timeline
           : t
-          ? g.Timelines.low_quality_timeline
-          : g.Timelines.requests_timeline
+          ? h.Timelines.low_quality_timeline
+          : h.Timelines.requests_timeline
       }
       var y = { activeVoiceMessage: [null, null], playerApi: null, playerState: null, scribeAction: null },
-        b = r.a.createContext({
-          activeVoiceMessage: [y.activeVoiceMessage, _],
-          playerApi: [y.playerApi, _],
-          playerState: [y.playerState, _],
+        _ = r.a.createContext({
+          activeVoiceMessage: [y.activeVoiceMessage, b],
+          playerApi: [y.playerApi, b],
+          playerState: [y.playerState, b],
           scribeAction: null,
         })
-      function _() {
+      function b() {
         throw new Error('DMVoiceContext is not initialized')
       }
       function k(e) {
         var t = r.a.useContext(i.a).featureSwitches
-        return Object(u.k)(t) ? r.a.createElement(h, null, e.children, r.a.createElement(c, null)) : e.children
+        return Object(d.k)(t) ? r.a.createElement(f, null, e.children, r.a.createElement(c, null)) : e.children
       }
-      var S = b
+      var S = _
     },
     jtO7: function (e, t, n) {
       'use strict'
       var a = n('97Jx'),
         r = n.n(a),
         i = n('m3Bd'),
-        o = n.n(i),
-        l = n('ERkP'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('ERkP'),
+        s = n.n(o),
         c = n('t62R'),
-        u = n('I4+6'),
-        d = n('cm6r'),
+        d = n('I4+6'),
+        u = n('cm6r'),
         p = n('rHpw'),
         m = n('MWbm'),
-        f = ['align', 'color', 'label'],
-        h = p.a.create(function (e) {
+        g = ['align', 'color', 'label'],
+        f = p.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -11091,18 +11473,18 @@
           n = void 0 === t ? 'center' : t,
           a = e.color,
           i = e.label,
-          l = o()(e, f),
-          g = u.a.generate({
+          o = l()(e, g),
+          h = d.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[a],
             insetFocusRing: !0,
           })
         return s.a.createElement(
           m.a,
-          { style: h.container },
+          { style: f.container },
           s.a.createElement(
-            d.a,
-            r()({}, l, { interactiveStyles: g, style: h.root }),
+            u.a,
+            r()({}, o, { interactiveStyles: h, style: f.root }),
             s.a.createElement(c.b, { align: n, color: a }, i),
           ),
         )
@@ -11113,17 +11495,17 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = n('97Jx'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('97Jx'),
+        h = n.n(f),
         v =
           (n('2G9S'),
           n('jwue'),
@@ -11138,8 +11520,8 @@
           n('KOtZ'),
           n('SV7d')),
         y = n('rHpw'),
-        b = 'singleline',
-        _ = function (e) {
+        _ = 'singleline',
+        b = function (e) {
           var t = e.placeholderTextColor,
             n = void 0 === t ? y.a.theme.colors.gray700 : t,
             a = y.a.theme.spaces.space2
@@ -11160,11 +11542,11 @@
               ";\n            position: relative;\n            white-space: pre-wrap;\n        }\n\n        /* Only a handful of CSS rules work on br tags and user-select isn't one */\n        div:only-child > .public-DraftStyleDefault-block br::selection {\n            background: transparent;\n        }\n\n        /*\n           Safari doesn't let you change ::selection on br elements,\n           but Chrome needs it here\n        */\n        div:only-child > .public-DraftStyleDefault-block::selection {\n            background: transparent;\n        }\n\n        .public-DraftStyleDefault-ltr {\n            direction: ltr;\n            text-align: left;\n        }\n\n        .public-DraftStyleDefault-rtl {\n            direction: rtl;\n            text-align: right;\n        }\n\n        .",
             )
             .concat(
-              b,
+              _,
               ' .public-DraftStyleDefault-block {\n            overflow-x: auto;\n            scrollbar-width: none;\n            white-space: nowrap;\n            -ms-overflow-style: none;\n        }\n        .',
             )
             .concat(
-              b,
+              _,
               ' .public-DraftStyleDefault-block::-webkit-scrollbar {\n            display: none;\n        }\n    ',
             )
         },
@@ -11174,8 +11556,8 @@
         E = n('PxJJ'),
         T = n('w9LO'),
         w = n('fs1G'),
-        x = n('zpdM'),
-        R = function (e) {
+        R = n('zpdM'),
+        x = function (e) {
           return Object(C.a)('div', e)
         },
         F = !1,
@@ -11184,7 +11566,7 @@
             var n = v.d()
             return S.a.createElement(
               A,
-              g()({}, e, {
+              h()({}, e, {
                 onFocus: function (t) {
                   e.onFocus && e.onFocus(t), n('focus')
                 },
@@ -11193,20 +11575,20 @@
             )
           })),
           (function (e) {
-            u()(n, e)
+            d()(n, e)
             var t = p()(n)
             function n() {
               var e
               r()(this, n)
-              for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+              for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
-                f()(s()(e), '_setSelectionToStart', function () {
+                g()(s()(e), '_setSelectionToStart', function () {
                   var t = e.props.editorState,
                     n = t.getCurrentContent().getFirstBlock().getKey()
-                  return x.EditorState.acceptSelection(
+                  return R.EditorState.acceptSelection(
                     t,
-                    new x.SelectionState({
+                    new R.SelectionState({
                       anchorKey: n,
                       anchorOffset: 0,
                       focusKey: n,
@@ -11215,47 +11597,47 @@
                     }),
                   )
                 }),
-                f()(s()(e), '_setFocusToStart', function () {
+                g()(s()(e), '_setFocusToStart', function () {
                   var t = e._setSelectionToStart()
-                  return x.EditorState.forceSelection(t, t.getSelection())
+                  return R.EditorState.forceSelection(t, t.getSelection())
                 }),
-                f()(s()(e), '_setFocusToEnd', function () {
+                g()(s()(e), '_setFocusToEnd', function () {
                   var t = e.props,
                     n = t.autoFocus,
                     a = t.editorState,
                     r = t.onChange
                   n
-                    ? null == r || r(x.EditorState.moveFocusToEnd(a))
-                    : null == r || r(x.EditorState.moveSelectionToEnd(a))
+                    ? null == r || r(R.EditorState.moveFocusToEnd(a))
+                    : null == r || r(R.EditorState.moveSelectionToEnd(a))
                 }),
-                f()(s()(e), '_setDraftJsStyle', function () {
+                g()(s()(e), '_setDraftJsStyle', function () {
                   var t = e.props.placeholderTextColor,
                     n = document.createElement('style')
-                  n.innerHTML = _({ placeholderTextColor: t })
+                  n.innerHTML = b({ placeholderTextColor: t })
                   var a = document.head
                   a && a.insertBefore(n, a.firstChild)
                 }),
-                f()(s()(e), 'focus', function () {
+                g()(s()(e), 'focus', function () {
                   e._editor && e._editor.focus()
                 }),
-                f()(s()(e), 'blur', function () {
+                g()(s()(e), 'blur', function () {
                   e._editor && e._editor.blur()
                 }),
-                f()(s()(e), 'getValue', function () {
+                g()(s()(e), 'getValue', function () {
                   return e.props.editorState.getCurrentContent().getPlainText()
                 }),
-                f()(s()(e), 'getOffsetHeight', function () {
+                g()(s()(e), 'getOffsetHeight', function () {
                   var t = (e._editor || {}).editor
                   return (t && t.offsetHeight) || 0
                 }),
-                f()(s()(e), 'clear', function () {}),
-                f()(s()(e), '_setEditorRef', function (t) {
+                g()(s()(e), 'clear', function () {}),
+                g()(s()(e), '_setEditorRef', function (t) {
                   e._editor = t
                 }),
-                f()(s()(e), '_handleViewClick', function () {
+                g()(s()(e), '_handleViewClick', function () {
                   return e.focus()
                 }),
-                f()(s()(e), '_onPastedFiles', function (t) {
+                g()(s()(e), '_onPastedFiles', function (t) {
                   var n = e.props.onFilesAdded,
                     a = []
                   return (
@@ -11265,14 +11647,14 @@
                     a.length && (null == n ? void 0 : n(a)) ? 'handled' : 'not-handled'
                   )
                 }),
-                f()(s()(e), '_removeNewLines', function (e, t) {
-                  return x.EditorState.push(
+                g()(s()(e), '_removeNewLines', function (e, t) {
+                  return R.EditorState.push(
                     t,
-                    x.Modifier.replaceText(t.getCurrentContent(), t.getSelection(), e.replace(/[\r\n]+/g, ' ')),
+                    R.Modifier.replaceText(t.getCurrentContent(), t.getSelection(), e.replace(/[\r\n]+/g, ' ')),
                     'insert-characters',
                   )
                 }),
-                f()(s()(e), '_removeInvalidStylesFromContentBlock', function (t) {
+                g()(s()(e), '_removeInvalidStylesFromContentBlock', function (t) {
                   var n = e.props.pastedStylesAllowlist,
                     a = t.getCharacterList().map(function (e) {
                       return e
@@ -11281,68 +11663,68 @@
                           return !(null != n && n.includes(e))
                         })
                         .reduce(function (e, t) {
-                          return x.CharacterMetadata.removeStyle(e, t)
+                          return R.CharacterMetadata.removeStyle(e, t)
                         }, e)
                     })
                   return (null != n && n.includes(t.getType()) ? t : t.set('type', 'unstyled')).set('characterList', a)
                 }),
-                f()(s()(e), '_removeInvalidStyles', function (t, n) {
+                g()(s()(e), '_removeInvalidStyles', function (t, n) {
                   var a = e.props.blockRenderMap,
-                    r = t ? Object(x.convertFromHTML)(t, void 0, a) : void 0
+                    r = t ? Object(R.convertFromHTML)(t, void 0, a) : void 0
                   if (r) {
                     var i,
-                      o =
+                      l =
                         null == r || null === (i = r.contentBlocks) || void 0 === i
                           ? void 0
                           : i.map(e._removeInvalidStylesFromContentBlock)
-                    if (o) {
-                      var l = x.ContentState.createFromBlockArray(o, null == r ? void 0 : r.entityMap)
-                      return x.EditorState.push(
+                    if (l) {
+                      var o = R.ContentState.createFromBlockArray(l, null == r ? void 0 : r.entityMap)
+                      return R.EditorState.push(
                         n,
-                        x.Modifier.replaceWithFragment(n.getCurrentContent(), n.getSelection(), l.getBlockMap()),
+                        R.Modifier.replaceWithFragment(n.getCurrentContent(), n.getSelection(), o.getBlockMap()),
                         'insert-fragment',
                       )
                     }
                   }
                   return null
                 }),
-                f()(s()(e), '_onPastedText', function (t, n, a) {
+                g()(s()(e), '_onPastedText', function (t, n, a) {
                   var r = e.props,
                     i = r.multiline,
-                    o = r.onChange,
-                    l = r.pastedStylesAllowlist
-                  if (o) {
-                    if (!i) return o(e._removeNewLines(t, a)), 'handled'
-                    if (null != l && l.length) {
+                    l = r.onChange,
+                    o = r.pastedStylesAllowlist
+                  if (l) {
+                    if (!i) return l(e._removeNewLines(t, a)), 'handled'
+                    if (null != o && o.length) {
                       var s = e._removeInvalidStyles(n, a)
-                      if (s) return o(s), 'handled'
+                      if (s) return l(s), 'handled'
                     }
                   }
                   return 'not-handled'
                 }),
-                f()(s()(e), '_myKeyBindingFn', function (t) {
+                g()(s()(e), '_myKeyBindingFn', function (t) {
                   var n = e.props,
                     a = n.dismissComposerCommandName,
                     r = n.sendTweetCommandName,
-                    i = x.KeyBindingUtil.hasCommandModifier
-                  return 13 === t.keyCode && i(t) ? r : 27 === t.keyCode ? a : Object(x.getDefaultKeyBinding)(t)
+                    i = R.KeyBindingUtil.hasCommandModifier
+                  return 13 === t.keyCode && i(t) ? r : 27 === t.keyCode ? a : Object(R.getDefaultKeyBinding)(t)
                 }),
-                f()(s()(e), '_onKeyCommand', function (t) {
+                g()(s()(e), '_onKeyCommand', function (t) {
                   var n = e.props.keyCommandHandlers,
                     a = n && n[t]
                   return a ? (a(), 'handled') : 'not-handled'
                 }),
-                f()(s()(e), '_onSingleLineReturn', function (t, n) {
+                g()(s()(e), '_onSingleLineReturn', function (t, n) {
                   var a = e.props.handleReturn
                   return null == a || a(t, n), 'handled'
                 }),
-                f()(s()(e), '_getContainerStyle', function () {
+                g()(s()(e), '_getContainerStyle', function () {
                   var t = e.props,
                     n = t.appTextSize,
                     a = t.maxNumberOfLines,
                     r = t.multiline,
                     i = t.numberOfLines,
-                    o =
+                    l =
                       y.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
@@ -11353,13 +11735,13 @@
                           headline1: 'headline1',
                         }[n]
                       ]
-                  return { minHeight: (r && i ? i : 1) * o, maxHeight: (r && a ? a : 1) * o }
+                  return { minHeight: (r && i ? i : 1) * l, maxHeight: (r && a ? a : 1) * l }
                 }),
                 e
               )
             }
             return (
-              o()(
+              l()(
                 n,
                 [
                   {
@@ -11391,56 +11773,56 @@
                         a = t.ariaAutocomplete,
                         r = t.ariaControls,
                         i = t.ariaLabel,
-                        o = t.blockRenderMap,
-                        l = t.blockRendererFn,
+                        l = t.blockRenderMap,
+                        o = t.blockRendererFn,
                         s = t.editorState,
                         c = t.handleReturn,
-                        u = t.multiline,
-                        d = t.onChange,
+                        d = t.multiline,
+                        u = t.onChange,
                         p = t.onFocus,
                         m = t.onKeyDown,
-                        h = t.onKeyPress,
-                        g = t.onKeyUp,
+                        f = t.onKeyPress,
+                        h = t.onKeyUp,
                         v = t.pastedStylesAllowlist,
-                        _ = t.placeholder,
+                        b = t.placeholder,
                         k = t.spellCheck,
                         C = t.style,
                         E = t.testID
                       return S.a.createElement(
-                        R,
+                        x,
                         {
-                          className: u ? void 0 : b,
+                          className: d ? void 0 : _,
                           onClick: this._handleViewClick,
                           style: [this._getContainerStyle(), C],
                         },
-                        S.a.createElement(x.Editor, {
+                        S.a.createElement(R.Editor, {
                           ariaActiveDescendantID: n,
                           ariaAutoComplete: a,
                           ariaControls: r,
                           ariaLabel: i,
-                          ariaMultiline: u,
-                          blockRenderMap: o,
-                          blockRendererFn: l,
+                          ariaMultiline: d,
+                          blockRenderMap: l,
+                          blockRendererFn: o,
                           customAttrs:
                             ((e = {}),
-                            f()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
-                            f()(e, 'onKeyPress', h),
-                            f()(e, 'onKeyUp', g),
+                            g()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            g()(e, 'onKeyPress', f),
+                            g()(e, 'onKeyUp', h),
                             e),
                           customStyleMap: I(y.a.theme),
                           editorState: s,
                           handleKeyCommand: this._onKeyCommand,
                           handlePastedFiles: this._onPastedFiles,
                           handlePastedText: this._onPastedText,
-                          handleReturn: u ? c : this._onSingleLineReturn,
+                          handleReturn: d ? c : this._onSingleLineReturn,
                           keyBindingFn: this._myKeyBindingFn,
-                          onChange: d,
+                          onChange: u,
                           onFocus: p,
                           onKeyDown: m,
-                          placeholder: _,
+                          placeholder: b,
                           ref: this._setEditorRef,
                           spellCheck: 'false' !== k,
-                          stripPastedStyles: !(u && null != v && v.length),
+                          stripPastedStyles: !(d && null != v && v.length),
                           tabIndex: 0,
                           webDriverTestID: E,
                         }),
@@ -11460,7 +11842,7 @@
               n
             )
           })(S.a.Component))
-      f()(A, 'defaultProps', {
+      g()(A, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},
@@ -11481,28 +11863,28 @@
       var a = n('ddV6'),
         r = n.n(a),
         i = n('ERkP'),
-        o = n.n(i),
-        l = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
+        l = n.n(i),
+        o = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         s = n('RuTB'),
         c = n('3XMw'),
-        u = n.n(c),
-        d = Object(l.a)({
+        d = n.n(c),
+        u = Object(o.a)({
           loader: function () {
-            return u.a.emoji.then(function () {
+            return d.a.emoji.then(function () {
               return Promise.all([n.e(0), n.e(17), n.e(208)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
-            return o.a.createElement(s.a, { hasError: e, onRetry: t })
+            return l.a.createElement(s.a, { hasError: e, onRetry: t })
           },
         }),
         p = n.p + 'twemoji_sprite.6d90d9d5.png',
         m = n.p + 'twemoji_sprite_high_res.0b0faef5.png',
-        f = n('rHpw'),
-        h = n('U+bB'),
-        g = n('kLqS'),
+        g = n('rHpw'),
+        f = n('U+bB'),
+        h = n('kLqS'),
         v = n('MWbm'),
-        y = f.a.create(function (e) {
+        y = g.a.create(function (e) {
           return {
             content: { backgroundColor: e.colors.cellBackground },
             dimensions: {
@@ -11514,49 +11896,49 @@
             hidden: { display: 'none' },
           }
         }),
-        b = function (e) {
+        _ = function (e) {
           var t = e.onSelect,
             n = e.partialRender,
-            a = g.a.get() > 1 ? m : p
-          return o.a.createElement(
-            o.a.Fragment,
+            a = h.a.get() > 1 ? m : p
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
+            l.a.createElement(
               v.a,
               { style: [y.content, y.dimensions] },
-              o.a.createElement(d, { onSelect: t, partialRender: n, rowSize: 9, spriteUrl: a }),
+              l.a.createElement(u, { onSelect: t, partialRender: n, rowSize: 9, spriteUrl: a }),
             ),
-            o.a.createElement(h.a, { source: a, style: y.hidden }),
+            l.a.createElement(f.a, { source: a, style: y.hidden }),
           )
         },
-        _ = n('pNJr'),
+        b = n('pNJr'),
         k = n('2ZFc'),
         S = n('OiMc'),
         C = n('/yvb'),
-        E = u.a.d4a4842d,
-        T = o.a.createElement(_.a, null),
-        w = u.a.fec16c1c,
-        x = { viewType: 'emoji_picker' },
-        R = function (e) {
+        E = d.a.d4a4842d,
+        T = l.a.createElement(b.a, null),
+        w = d.a.fec16c1c,
+        R = { viewType: 'emoji_picker' },
+        x = function (e) {
           var t = e.disabled,
             n = e.onEmojiSelect,
             a = e.onPress,
             i = e.size,
-            l = e.style,
+            o = e.style,
             s = e.textInputRef,
-            c = o.a.useState(!0),
-            u = r()(c, 2),
-            p = u[0],
-            m = u[1]
-          o.a.useEffect(function () {
+            c = l.a.useState(!0),
+            d = r()(c, 2),
+            p = d[0],
+            m = d[1]
+          l.a.useEffect(function () {
             var e = setTimeout(function () {
-              d.preload(), k.a.get('emojiPicker2')
+              u.preload(), k.a.get('emojiPicker2')
             }, 5e3)
             return function () {
               clearTimeout(e)
             }
           }, [])
-          return o.a.createElement(
+          return l.a.createElement(
             S.a,
             {
               enableEnterKeyToggle: !0,
@@ -11572,14 +11954,14 @@
                 })
               },
               renderContent: function () {
-                return o.a.createElement(b, { onSelect: n, partialRender: p })
+                return l.a.createElement(_, { onSelect: n, partialRender: p })
               },
               withArrow: !0,
             },
-            o.a.createElement(C.a, {
+            l.a.createElement(C.a, {
               accessibilityHasPopup: 'menu',
               accessibilityLabel: E,
-              behavioralEventContext: x,
+              behavioralEventContext: R,
               disabled: t,
               hoverLabel: { label: w },
               icon: T,
@@ -11587,13 +11969,13 @@
                 return a && a(e)
               },
               size: i,
-              style: l,
+              style: o,
               type: 'brandText',
             }),
           )
         }
-      R.defaultProps = { disabled: !1, size: 'xSmall' }
-      t.a = R
+      x.defaultProps = { disabled: !1, size: 'xSmall' }
+      t.a = x
     },
     prG5: function (e, t, n) {
       'use strict'
@@ -11603,68 +11985,68 @@
       var a = n('97Jx'),
         r = n.n(a),
         i = n('m3Bd'),
-        o = n.n(i),
-        l = n('VrFO'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('VrFO'),
+        s = n.n(o),
         c = n('Y9Ll'),
-        u = n.n(c),
-        d = n('1Pcy'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('1Pcy'),
+        p = n.n(u),
         m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('2VqO'),
+        h = n.n(f),
         v = n('KEM+'),
         y = n.n(v),
-        b = (n('2G9S'), n('ERkP')),
-        _ = n.n(b),
+        _ = (n('2G9S'), n('ERkP')),
+        b = n.n(_),
         k = n('nT9l'),
         S = n('3XMw'),
         C = n.n(S),
         E = 'image',
         T = n('TIdA'),
         w = n('a6qo'),
-        x = ['accessibilityLabel', 'hideAcceptOverlay', 'shouldShowAltLabel'],
-        R = C.a.f93bb3ee,
+        R = ['accessibilityLabel', 'hideAcceptOverlay', 'shouldShowAltLabel'],
+        x = C.a.f93bb3ee,
         F = (function (e) {
-          f()(n, e)
-          var t = g()(n)
+          g()(n, e)
+          var t = h()(n)
           function n() {
             var e
             s()(this, n)
-            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
+            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               y()(p()(e), '_renderContent', function (t) {
                 var n = t.resourceSelectionHandler,
                   a = t.useMinimumData,
                   i = e.props,
-                  l = i.accessibilityLabel,
+                  o = i.accessibilityLabel,
                   s = (i.hideAcceptOverlay, i.shouldShowAltLabel),
-                  c = o()(i, x)
-                return _.a.createElement(
-                  _.a.Fragment,
+                  c = l()(i, R)
+                return b.a.createElement(
+                  b.a.Fragment,
                   null,
-                  _.a.createElement(
+                  b.a.createElement(
                     T.a,
-                    r()({}, c, { accessibilityLabel: l, onVariantSelection: n, previewMode: a, testID: E }),
+                    r()({}, c, { accessibilityLabel: o, onVariantSelection: n, previewMode: a, testID: E }),
                   ),
-                  s ? _.a.createElement(w.a, { align: 'left', altLabel: l }) : null,
+                  s ? b.a.createElement(w.a, { align: 'left', altLabel: o }) : null,
                 )
               }),
               e
             )
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.hideAcceptOverlay,
                     n = e.image
-                  return _.a.createElement(k.a, {
-                    acceptLabel: R,
+                  return b.a.createElement(k.a, {
+                    acceptLabel: x,
                     hideAcceptOverlay: t,
                     renderContent: this._renderContent,
                     resourceId: 'string' == typeof n ? n : n.url,
@@ -11674,29 +12056,28 @@
             ]),
             n
           )
-        })(_.a.Component)
+        })(b.a.Component)
     },
     q2o4: function (e, t, n) {
       'use strict'
-      n.r(t)
       var a,
         r,
         i,
-        o,
         l,
+        o,
         s,
         c,
-        u,
         d,
+        u,
         p,
         m,
+        g,
         f,
         h,
-        g,
         v,
         y,
-        b,
         _,
+        b,
         k,
         S,
         C = {
@@ -11718,7 +12099,7 @@
                 plural: !1,
                 selections: [
                   (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
-                  (o = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
+                  (l = { alias: null, args: null, kind: 'ScalarField', name: 'rest_id', storageKey: null }),
                   {
                     alias: null,
                     args: null,
@@ -11727,7 +12108,7 @@
                     name: 'legacy',
                     plural: !1,
                     selections: [
-                      (l = { alias: null, args: null, kind: 'ScalarField', name: 'conversation_id', storageKey: null }),
+                      (o = { alias: null, args: null, kind: 'ScalarField', name: 'conversation_id', storageKey: null }),
                       {
                         alias: null,
                         args: null,
@@ -11736,7 +12117,7 @@
                         name: 'metadata',
                         plural: !1,
                         selections: [
-                          l,
+                          o,
                           (s = {
                             alias: null,
                             args: null,
@@ -11752,7 +12133,7 @@
                             kind: 'LinkedField',
                             name: 'created_by_user_results',
                             plural: !1,
-                            selections: (p = [
+                            selections: [
                               {
                                 alias: null,
                                 args: null,
@@ -11765,26 +12146,31 @@
                                     kind: 'InlineFragment',
                                     selections: [
                                       i,
-                                      o,
-                                      (d = {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: 'ApiUser',
-                                        kind: 'LinkedField',
-                                        name: 'legacy',
-                                        plural: !1,
-                                        selections: [
-                                          c,
-                                          (u = {
-                                            alias: null,
-                                            args: null,
-                                            kind: 'ScalarField',
-                                            name: 'screen_name',
-                                            storageKey: null,
-                                          }),
-                                        ],
-                                        storageKey: null,
-                                      }),
+                                      l,
+                                      {
+                                        kind: 'RequiredField',
+                                        field: (u = {
+                                          alias: null,
+                                          args: null,
+                                          concreteType: 'ApiUser',
+                                          kind: 'LinkedField',
+                                          name: 'legacy',
+                                          plural: !1,
+                                          selections: [
+                                            c,
+                                            (d = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'screen_name',
+                                              storageKey: null,
+                                            }),
+                                          ],
+                                          storageKey: null,
+                                        }),
+                                        action: 'THROW',
+                                        path: 'dm_conversation_by_rest_id.legacy.metadata.created_by_user_results.result.legacy',
+                                      },
                                     ],
                                     type: 'User',
                                     abstractKey: null,
@@ -11792,10 +12178,10 @@
                                 ],
                                 storageKey: null,
                               },
-                            ]),
+                            ],
                             storageKey: null,
                           },
-                          (m = {
+                          (p = {
                             alias: null,
                             args: null,
                             kind: 'ScalarField',
@@ -11809,7 +12195,34 @@
                             kind: 'LinkedField',
                             name: 'admin_user_results',
                             plural: !1,
-                            selections: p,
+                            selections: [
+                              {
+                                alias: null,
+                                args: null,
+                                concreteType: null,
+                                kind: 'LinkedField',
+                                name: 'result',
+                                plural: !1,
+                                selections: [
+                                  {
+                                    kind: 'InlineFragment',
+                                    selections: [
+                                      i,
+                                      l,
+                                      {
+                                        kind: 'RequiredField',
+                                        field: u,
+                                        action: 'THROW',
+                                        path: 'dm_conversation_by_rest_id.legacy.metadata.admin_user_results.result.legacy',
+                                      },
+                                    ],
+                                    type: 'User',
+                                    abstractKey: null,
+                                  },
+                                ],
+                                storageKey: null,
+                              },
+                            ],
                             storageKey: null,
                           },
                           {
@@ -11829,7 +12242,7 @@
                                 name: 'media_info',
                                 plural: !1,
                                 selections: [
-                                  (f = {
+                                  (m = {
                                     kind: 'InlineFragment',
                                     selections: [
                                       {
@@ -11894,34 +12307,39 @@
                                     kind: 'InlineFragment',
                                     selections: [
                                       i,
-                                      o,
-                                      (h = {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: 'ApiUser',
-                                        kind: 'LinkedField',
-                                        name: 'legacy',
-                                        plural: !1,
-                                        selections: [
-                                          {
-                                            alias: null,
-                                            args: null,
-                                            kind: 'ScalarField',
-                                            name: 'id_str',
-                                            storageKey: null,
-                                          },
-                                          c,
-                                          u,
-                                          {
-                                            alias: null,
-                                            args: null,
-                                            kind: 'ScalarField',
-                                            name: 'profile_image_url_https',
-                                            storageKey: null,
-                                          },
-                                        ],
-                                        storageKey: null,
-                                      }),
+                                      l,
+                                      {
+                                        kind: 'RequiredField',
+                                        field: (g = {
+                                          alias: null,
+                                          args: null,
+                                          concreteType: 'ApiUser',
+                                          kind: 'LinkedField',
+                                          name: 'legacy',
+                                          plural: !1,
+                                          selections: [
+                                            {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'id_str',
+                                              storageKey: null,
+                                            },
+                                            c,
+                                            d,
+                                            {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'profile_image_url_https',
+                                              storageKey: null,
+                                            },
+                                          ],
+                                          storageKey: null,
+                                        }),
+                                        action: 'THROW',
+                                        path: 'dm_conversation_by_rest_id.legacy.participants_metadata.user_results.result.legacy',
+                                      },
                                     ],
                                     type: 'User',
                                     abstractKey: null,
@@ -11932,21 +12350,21 @@
                             ],
                             storageKey: null,
                           },
-                          (g = {
+                          (f = {
                             alias: null,
                             args: null,
                             kind: 'ScalarField',
                             name: 'last_read_event_id',
                             storageKey: null,
                           }),
-                          (v = {
+                          (h = {
                             alias: null,
                             args: null,
                             kind: 'ScalarField',
                             name: 'join_time_millis',
                             storageKey: null,
                           }),
-                          (y = {
+                          (v = {
                             alias: null,
                             args: null,
                             kind: 'ScalarField',
@@ -11956,7 +12374,7 @@
                         ],
                         storageKey: null,
                       },
-                      (b = {
+                      (y = {
                         alias: null,
                         args: null,
                         concreteType: 'PerspectivalConversationMetadata',
@@ -11964,7 +12382,7 @@
                         name: 'perspectival_conversation_metadata',
                         plural: !1,
                         selections: [
-                          g,
+                          f,
                           { alias: null, args: null, kind: 'ScalarField', name: 'low_quality', storageKey: null },
                           { alias: null, args: null, kind: 'ScalarField', name: 'muted', storageKey: null },
                           {
@@ -12004,7 +12422,7 @@
                 plural: !1,
                 selections: [
                   i,
-                  o,
+                  l,
                   {
                     alias: null,
                     args: null,
@@ -12013,7 +12431,7 @@
                     name: 'legacy',
                     plural: !1,
                     selections: [
-                      l,
+                      o,
                       {
                         alias: null,
                         args: null,
@@ -12022,7 +12440,7 @@
                         name: 'metadata',
                         plural: !1,
                         selections: [
-                          l,
+                          o,
                           s,
                           c,
                           {
@@ -12052,9 +12470,9 @@
                                     kind: 'InlineFragment',
                                     selections: [
                                       i,
-                                      o,
-                                      d,
-                                      (k = {
+                                      l,
+                                      u,
+                                      (b = {
                                         alias: null,
                                         args: null,
                                         filters: null,
@@ -12070,10 +12488,19 @@
                                 ],
                                 storageKey: null,
                               },
+                              (k = {
+                                alias: null,
+                                args: null,
+                                filters: null,
+                                handle: 'user',
+                                key: '',
+                                kind: 'LinkedHandle',
+                                name: 'result',
+                              }),
                             ]),
                             storageKey: null,
                           },
-                          m,
+                          p,
                           {
                             alias: null,
                             args: null,
@@ -12100,7 +12527,7 @@
                                 kind: 'LinkedField',
                                 name: 'media_info',
                                 plural: !1,
-                                selections: [_, f],
+                                selections: [_, m],
                                 storageKey: null,
                               },
                             ],
@@ -12134,20 +12561,21 @@
                                 plural: !1,
                                 selections: [
                                   _,
-                                  { kind: 'InlineFragment', selections: [i, o, h, k], type: 'User', abstractKey: null },
+                                  { kind: 'InlineFragment', selections: [i, l, g, b], type: 'User', abstractKey: null },
                                 ],
                                 storageKey: null,
                               },
+                              k,
                             ],
                             storageKey: null,
                           },
-                          g,
+                          f,
+                          h,
                           v,
-                          y,
                         ],
                         storageKey: null,
                       },
-                      b,
+                      y,
                     ],
                     storageKey: null,
                   },
@@ -12164,36 +12592,36 @@
             text: null,
           },
         }
-      ;(C.hash = '05c5ace285646279f5426d235fdf2b26'), (t.default = C)
+      ;(C.hash = '05c5ace285646279f5426d235fdf2b26'), (e.exports = C)
     },
     qBaR: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return x
+        return R
       })
       n('z84I')
       var a = n('ERkP'),
         r = n.n(a),
         i = n('v6aA'),
-        o = n('+Kfv'),
-        l = n('MMRb'),
+        l = n('+Kfv'),
+        o = n('MMRb'),
         s = n('aA19'),
         c = n('XnpN'),
-        u = n('3XMw'),
-        d = n.n(u),
+        d = n('3XMw'),
+        u = n.n(d),
         p = (n('hBvt'), n('/yvb')),
         m = n('6s7X'),
-        f = d.a.h810143c,
-        h = function (e) {
+        g = u.a.h810143c,
+        f = function (e) {
           var t = e.accessibilityLabel,
             n = e.conversationId,
             a = e.link,
             i = e.style,
-            o = r.a.createElement(m.a, null)
+            l = r.a.createElement(m.a, null)
           return r.a.createElement(p.a, {
-            accessibilityLabel: t || f,
-            hoverLabel: { label: f },
-            icon: o,
+            accessibilityLabel: t || g,
+            hoverLabel: { label: g },
+            icon: l,
             key: n,
             link: a,
             pullRight: !0,
@@ -12201,55 +12629,55 @@
             type: 'primaryText',
           })
         },
-        g = n('M2mT'),
+        h = n('M2mT'),
         v = n('aITJ'),
         y = n('MWbm'),
-        b = n('t62R'),
-        _ = n('rHpw'),
+        _ = n('t62R'),
+        b = n('rHpw'),
         k = n('OhSZ'),
         S = n('zCf4'),
         C = { viewType: 'messages' },
-        E = d.a.d4986f85,
-        T = d.a.e3e58b6d,
-        w = d.a.a9ddbb94
-      function x(e) {
+        E = u.a.d4986f85,
+        T = u.a.e3e58b6d,
+        w = u.a.a9ddbb94
+      function R(e) {
         var t,
           n,
           a,
-          u,
           d,
+          u,
           p,
           m,
-          f = r.a.useContext(i.a),
-          _ = Object(S.f)(),
-          x = Object(S.g)(),
-          F = f.featureSwitches.isTrue('dm_vdl_enabled') && f.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
+          g = r.a.useContext(i.a),
+          b = Object(S.f)(),
+          R = Object(S.g)(),
+          F = g.featureSwitches.isTrue('dm_vdl_enabled') && g.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
           A = e.conversation,
           I = e.conversationId,
           O = e.newConversationParticipants,
           M = e.perspective,
           L = function (e) {
-            null != A && A.trusted ? _.push({ pathname: '/messages', state: x.state }) : e()
+            null != A && A.trusted ? b.push({ pathname: '/messages', state: R.state }) : e()
           },
           D = function () {
             var e,
-              t = (null == A ? void 0 : A.type) === l.CONVERSATION_TYPE.GROUP,
-              n = (null == x || null === (e = x.state) || void 0 === e ? void 0 : e.position) || 0
+              t = (null == A ? void 0 : A.type) === o.CONVERSATION_TYPE.GROUP,
+              n = (null == R || null === (e = R.state) || void 0 === e ? void 0 : e.position) || 0
             return I
               ? r.a.createElement(
                   y.a,
-                  { style: R.rightControlStyles },
-                  r.a.createElement(h, {
+                  { style: x.rightControlStyles },
+                  r.a.createElement(f, {
                     accessibilityLabel: t ? w : T,
                     conversationId: I,
                     link: { pathname: '/messages/'.concat(I, '/info'), state: { position: n } },
-                    style: R.infoButton,
+                    style: x.infoButton,
                   }),
                 )
               : void 0
           }
         return r.a.createElement(
-          g.a,
+          h.a,
           ((t = F ? 'headline2' : void 0),
           (n =
             A && A.participants.length
@@ -12267,13 +12695,13 @@
                   textSize: t,
                   withScreenName: !1,
                 })
-              : r.a.createElement(b.b, { size: t }, E)),
-          (u = F ? 'large' : 'medium'),
-          (d = M ? r.a.createElement(s.a, { conversation: A, perspective: M, size: u }) : void 0),
+              : r.a.createElement(_.b, { size: t }, E)),
+          (d = F ? 'large' : 'medium'),
+          (u = M ? r.a.createElement(s.a, { conversation: A, perspective: M, size: d }) : void 0),
           (p =
             !F &&
             A &&
-            A.type === l.CONVERSATION_TYPE.ONE_TO_ONE &&
+            A.type === o.CONVERSATION_TYPE.ONE_TO_ONE &&
             M &&
             Object(c.a)(A, M).map(function (e) {
               return e.user.screen_name
@@ -12285,17 +12713,17 @@
             documentTitle: n,
             rightControl: D(),
             title: a,
-            titleIconCell: d,
-            titleIconCellSize: u,
+            titleIconCell: u,
+            titleIconCellSize: d,
             subtitle: m,
             screenType: 'primaryDetail',
             withBottomTabBar: !1,
             headerless: v.b.isKaiOS(),
           }),
-          r.a.createElement(o.a, { behavioralEventContext: C }, e.children),
+          r.a.createElement(l.a, { behavioralEventContext: C }, e.children),
         )
       }
-      var R = _.a.create(function (e) {
+      var x = b.a.create(function (e) {
         return { infoButton: { marginRight: e.spaces.space4 }, rightControlStyles: { flexDirection: 'row' } }
       })
     },
@@ -12304,53 +12732,53 @@
       var a = n('VrFO'),
         r = n.n(a),
         i = n('Y9Ll'),
-        o = n.n(i),
-        l = n('1Pcy'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('1Pcy'),
+        s = n.n(o),
         c = n('5Yy7'),
-        u = n.n(c),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('2VqO'),
+        p = n.n(u),
         m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('hCOa'), n('87if'), n('ERkP')),
-        g = n.n(h),
+        g = n.n(m),
+        f = (n('2G9S'), n('hCOa'), n('87if'), n('ERkP')),
+        h = n.n(f),
         v = n('rHpw'),
         y = n('k/Ka'),
-        b = n('MWbm'),
-        _ = function (e) {
+        _ = n('MWbm'),
+        b = function (e) {
           return Object(y.a)('div', e)
         },
         k = (function (e) {
-          u()(n, e)
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), l = 0; l < a; l++) i[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(s()(e), '_dragEnterCount', 0),
-              f()(s()(e), 'state', { active: !1 }),
-              f()(s()(e), '_handleDragDrop', function (t) {
+              g()(s()(e), '_dragEnterCount', 0),
+              g()(s()(e), 'state', { active: !1 }),
+              g()(s()(e), '_handleDragDrop', function (t) {
                 var n = e.props.onFilesAdded
                 t.preventDefault(), n(Array.from(t && t.dataTransfer.files)), e._updateDragCount(0)
               }),
-              f()(s()(e), '_handleDragEnter', function (t) {
+              g()(s()(e), '_handleDragEnter', function (t) {
                 var n = e.props.onDragEnter
                 t.preventDefault(), n && n(), e._updateDragCount(e._dragEnterCount + 1)
               }),
-              f()(s()(e), '_handleDragLeave', function (t) {
+              g()(s()(e), '_handleDragLeave', function (t) {
                 t.preventDefault(), e._updateDragCount(e._dragEnterCount - 1)
               }),
-              f()(s()(e), '_handleDragOver', function (e) {
+              g()(s()(e), '_handleDragOver', function (e) {
                 e.preventDefault()
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -12360,8 +12788,8 @@
                     a = e.style,
                     r = this.state.active,
                     i = t ? S.dragBorderValid : S.dragBorderInvalid
-                  return g.a.createElement(
-                    _,
+                  return h.a.createElement(
+                    b,
                     {
                       onDragEnter: this._handleDragEnter,
                       onDragLeave: this._handleDragLeave,
@@ -12369,7 +12797,7 @@
                       onDrop: this._handleDragDrop,
                       style: [S.root, a, r && i],
                     },
-                    g.a.createElement(b.a, { style: S.inner }, 'function' == typeof n ? n(r) : n),
+                    h.a.createElement(_.a, { style: S.inner }, 'function' == typeof n ? n(r) : n),
                   )
                 },
               },
@@ -12385,8 +12813,8 @@
             ]),
             n
           )
-        })(g.a.Component)
-      f()(k, 'defaultProps', { allowDragDrop: !0 })
+        })(h.a.Component)
+      g()(k, 'defaultProps', { allowDragDrop: !0 })
       var S = v.a.create(function (e) {
         return {
           root: { display: 'flex', flexDirection: 'column' },
@@ -12430,39 +12858,39 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('3XMw'),
-        o = n.n(i),
-        l = n('MWbm'),
+        l = n.n(i),
+        o = n('MWbm'),
         s = n('CKsB'),
         c = n('/yvb'),
-        u = n('rHpw'),
-        d = n('hiGS'),
+        d = n('rHpw'),
+        u = n('hiGS'),
         p = n('pu5c'),
         m = n('zIWA'),
-        f = o.a.fcd4d489,
-        h = o.a.gbed8594,
-        g = o.a.g9074da4,
-        v = o.a.ad63377d,
-        y = o.a.h09b49f7,
-        b = o.a.i6b19b07,
-        _ = o.a.j7bb1a42,
-        k = o.a.ea200ba6,
-        S = o.a.cfd2f35d,
+        g = l.a.fcd4d489,
+        f = l.a.gbed8594,
+        h = l.a.g9074da4,
+        v = l.a.ad63377d,
+        y = l.a.h09b49f7,
+        _ = l.a.i6b19b07,
+        b = l.a.j7bb1a42,
+        k = l.a.ea200ba6,
+        S = l.a.cfd2f35d,
         C = function (e) {
           var t = e.dismiss,
             n = e.flatBorders,
             a = e.isGroup,
             i = e.onBlockClick,
-            o = e.onDeleteClick,
-            u = e.onReportClick,
+            l = e.onDeleteClick,
+            d = e.onReportClick,
             C = e.requestorScreenName,
             T = e.showBlock,
             w = e.showCancel,
-            x = e.showDelete,
-            R = r.a.useCallback(
+            R = e.showDelete,
+            x = r.a.useCallback(
               function () {
-                u && u(), t()
+                d && d(), t()
               },
-              [t, u],
+              [t, d],
             ),
             F = r.a.useCallback(
               function () {
@@ -12472,36 +12900,36 @@
             ),
             A = r.a.useCallback(
               function () {
-                o && o(), t()
+                l && l(), t()
               },
-              [t, o],
+              [t, l],
             )
           return r.a.createElement(
-            l.a,
+            o.a,
             { accessibilityRole: 'dialog', style: n ? E.flatCorners : E.roundCorners },
-            x
+            R
               ? r.a.createElement(s.a, {
-                  Icon: d.a,
+                  Icon: u.a,
                   actionSubText: y,
-                  actionText: a ? g : v,
+                  actionText: a ? h : v,
                   onClick: A,
                   textColor: 'red500',
                 })
               : null,
             T
-              ? r.a.createElement(s.a, { Icon: p.a, actionSubText: h, actionText: f({ screenName: C }), onClick: F })
+              ? r.a.createElement(s.a, { Icon: p.a, actionSubText: f, actionText: g({ screenName: C }), onClick: F })
               : null,
             r.a.createElement(s.a, {
               Icon: m.a,
               actionSubText: k,
-              actionText: a ? b : _({ screenName: C }),
-              onClick: R,
+              actionText: a ? _ : b({ screenName: C }),
+              onClick: x,
             }),
             w ? r.a.createElement(c.a, { onPress: t, style: E.cancelButton, type: 'primaryOutlined' }, S) : null,
           )
         }
       C.defaultProps = { isGroup: !1, flatBorders: !1, showBlock: !1, showCancel: !1, showDelete: !1 }
-      var E = u.a.create(function (e) {
+      var E = d.a.create(function (e) {
         return {
           roundCorners: { borderRadius: e.borderRadii.xLarge },
           flatCorners: { borderRadius: e.borderRadii.none },
@@ -12515,21 +12943,21 @@
       var a = n('yiKp'),
         r = n.n(a),
         i = n('97Jx'),
-        o = n.n(i),
-        l = n('VrFO'),
-        s = n.n(l),
+        l = n.n(i),
+        o = n('VrFO'),
+        s = n.n(o),
         c = n('Y9Ll'),
-        u = n.n(c),
-        d = n('1Pcy'),
-        p = n.n(d),
+        d = n.n(c),
+        u = n('1Pcy'),
+        p = n.n(u),
         m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        g = n.n(h),
+        g = n.n(m),
+        f = n('2VqO'),
+        h = n.n(f),
         v = n('KEM+'),
         y = n.n(v),
-        b = (n('uFXj'), n('z84I'), n('tVqn'), n('ERkP')),
-        _ = n.n(b),
+        _ = (n('uFXj'), n('z84I'), n('tVqn'), n('ERkP')),
+        b = n.n(_),
         k = n('1YZw'),
         S = n('zh9S'),
         C = n('P1r1'),
@@ -12549,8 +12977,8 @@
               preUploadMedia: E.e,
             }
           }),
-        x = n('wpu3'),
-        R = n('cOB2'),
+        R = n('wpu3'),
+        x = n('cOB2'),
         F = n('MWbm'),
         A = n('0FVZ'),
         I = n('Oe3h'),
@@ -12561,23 +12989,23 @@
             a = e.children,
             r = e.onLayout,
             i = e.sideNavPresent,
-            l = e.style,
-            s = _.a.useContext(R.a)
+            o = e.style,
+            s = b.a.useContext(x.a)
           return i
-            ? _.a.createElement(
-                _.a.Fragment,
+            ? b.a.createElement(
+                b.a.Fragment,
                 null,
-                _.a.createElement(F.a, { accessibilityLabel: t, accessibilityRole: n, onLayout: r, style: l }, a),
+                b.a.createElement(F.a, { accessibilityLabel: t, accessibilityRole: n, onLayout: r, style: o }, a),
               )
-            : _.a.createElement(
+            : b.a.createElement(
                 A.a.BottomComposer,
                 null,
-                _.a.createElement(I.a, { id: 'DMComposerWrapper' }, function (e, i) {
-                  return _.a.createElement(
+                b.a.createElement(I.a, { id: 'DMComposerWrapper' }, function (e, i) {
+                  return b.a.createElement(
                     F.a,
-                    o()({ ref: e() }, i({ accessibilityLabel: t, accessibilityRole: n, onLayout: r, style: l })),
+                    l()({ ref: e() }, i({ accessibilityLabel: t, accessibilityRole: n, onLayout: r, style: o })),
                     a,
-                    _.a.createElement(F.a, { style: !1 === s.keyboardVisible && L.offsetBottom }),
+                    b.a.createElement(F.a, { style: !1 === s.keyboardVisible && L.offsetBottom }),
                   )
                 }),
               )
@@ -12589,8 +13017,8 @@
         P = n('htQn'),
         K = n('t62R'),
         B = (function (e) {
-          f()(n, e)
-          var t = g()(n)
+          g()(n, e)
+          var t = h()(n)
           function n() {
             var e
             s()(this, n)
@@ -12607,7 +13035,7 @@
             )
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -12615,22 +13043,22 @@
                     t = e.description,
                     n = e.isWide,
                     a = e.label
-                  return _.a.createElement(
+                  return b.a.createElement(
                     P.a,
                     {
                       accessibilityRole: 'button',
                       onClick: this._handleClick,
                       style: [j.root, n && j.isWide, !n && j.isNarrow],
                     },
-                    _.a.createElement(K.b, { weight: 'bold' }, a),
-                    _.a.createElement(K.b, { color: 'gray700', size: 'subtext2' }, t),
+                    b.a.createElement(K.b, { weight: 'bold' }, a),
+                    b.a.createElement(K.b, { color: 'gray700', size: 'subtext2' }, t),
                   )
                 },
               },
             ]),
             n
           )
-        })(_.a.Component),
+        })(b.a.Component),
         j = O.a.create(function (e) {
           return {
             root: {
@@ -12651,9 +13079,9 @@
         U = B,
         N = n('cHvH'),
         H = n('mw9i'),
-        V = (function (e) {
-          f()(n, e)
-          var t = g()(n)
+        W = (function (e) {
+          g()(n, e)
+          var t = h()(n)
           function n() {
             var e
             s()(this, n)
@@ -12668,20 +13096,20 @@
             )
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this,
                     t = this.props.quickReplyOptions.options,
                     n = 1 === t.length
-                  return _.a.createElement(N.a, null, function (a) {
+                  return b.a.createElement(N.a, null, function (a) {
                     var r = a.windowWidth,
                       i = D.a.isTwoColumnLayout(r),
-                      o = [i && W.isWide, i && n && W.oneButtonOnly, !i && W.isNarrow]
-                    return _.a.createElement(
+                      l = [i && V.isWide, i && n && V.oneButtonOnly, !i && V.isNarrow]
+                    return b.a.createElement(
                       H.a,
-                      { style: o, withGutter: i },
+                      { style: l, withGutter: i },
                       t.map(function (t) {
                         return e.renderOption(t, i)
                       }),
@@ -12692,7 +13120,7 @@
               {
                 key: 'renderOption',
                 value: function (e, t) {
-                  return _.a.createElement(U, {
+                  return b.a.createElement(U, {
                     description: e.description,
                     id: e.id,
                     isWide: t,
@@ -12705,8 +13133,8 @@
             ]),
             n
           )
-        })(_.a.Component),
-        W = O.a.create(function (e) {
+        })(b.a.Component),
+        V = O.a.create(function (e) {
           return {
             oneButtonOnly: { gridTemplateColumns: '1fr' },
             isWide: {
@@ -12720,8 +13148,8 @@
             isNarrow: { maxHeight: '168px', overflow: 'auto' },
           }
         }),
-        z = V,
-        q = n('krmn'),
+        q = W,
+        z = n('krmn'),
         G = n('cIoY'),
         Y = n('w3n3'),
         Q = n('MLl7'),
@@ -12741,8 +13169,8 @@
           { waitMs: 3e3, progress: 0.9 },
         ],
         ie = (function (e) {
-          f()(n, e)
-          var t = g()(n)
+          g()(n, e)
+          var t = h()(n)
           function n() {
             var e
             s()(this, n)
@@ -12750,7 +13178,7 @@
             return (e = t.call.apply(t, [this].concat(r))), y()(p()(e), 'state', { currentStepIndex: -1 }), e
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -12768,7 +13196,7 @@
                 value: function () {
                   var e = this.state.currentStepIndex,
                     t = e >= 0 && e < re.length ? re[e].progress : 0
-                  return _.a.createElement(ae.a, { progress: t })
+                  return b.a.createElement(ae.a, { progress: t })
                 },
               },
               {
@@ -12784,27 +13212,27 @@
             ]),
             n
           )
-        })(_.a.Component)
-      function oe(e) {
+        })(b.a.Component)
+      function le(e) {
         var t = e.isSending,
           n = e.isUploading,
           a = e.progress
-        return t && !n ? _.a.createElement(ie, null) : _.a.createElement(ae.a, { progress: t ? Math.max(a, 0.02) : 0 })
+        return t && !n ? b.a.createElement(ie, null) : b.a.createElement(ae.a, { progress: t ? Math.max(a, 0.02) : 0 })
       }
-      var le = _.a.memo(oe),
+      var oe = b.a.memo(le),
         se = n('Dtul'),
         ce = n('Es6L'),
-        ue = 'dmComposerAttachments',
-        de = 'dmComposerTextInput',
+        de = 'dmComposerAttachments',
+        ue = 'dmComposerTextInput',
         pe = 'dmComposerSendButton',
         me = n('GZwR'),
-        fe = n('aITJ'),
-        he = n('6OUF'),
-        ge = n('9Xij'),
+        ge = n('aITJ'),
+        fe = n('6OUF'),
+        he = n('9Xij'),
         ve = n('/yvb'),
         ye = n('OiMc'),
-        be = n('v6aA'),
-        _e = n('gpVt'),
+        _e = n('v6aA'),
+        be = n('gpVt'),
         ke = n('Lsrn'),
         Se = n('k/Ka'),
         Ce = function () {
@@ -12820,10 +13248,10 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            _.a.createElement(
+            b.a.createElement(
               'g',
               null,
-              _.a.createElement('path', {
+              b.a.createElement('path', {
                 d: 'M19 13.5H5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5h14c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5zm0 6H5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5h14c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5zm0-12H5c-.828 0-1.5-.672-1.5-1.5S4.172 4.5 5 4.5h14c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5z',
               }),
             ),
@@ -12844,10 +13272,10 @@
                 viewBox: '0 0 24 24',
               },
             ),
-            _.a.createElement(
+            b.a.createElement(
               'g',
               null,
-              _.a.createElement('path', {
+              b.a.createElement('path', {
                 d: 'M19 13H5c-.553 0-1-.447-1-1s.447-1 1-1h14c.553 0 1 .447 1 1s-.447 1-1 1zm0 6H5c-.553 0-1-.447-1-1s.447-1 1-1h14c.553 0 1 .447 1 1s-.447 1-1 1zm0-12H5c-.553 0-1-.447-1-1s.447-1 1-1h14c.553 0 1 .447 1 1s-.447 1-1 1z',
               }),
             ),
@@ -12855,8 +13283,8 @@
         }
       Te.metadata = { width: 24, height: 24 }
       var we = Te,
-        xe = n('iySH'),
-        Re = J.a.ee230734,
+        Re = n('iySH'),
+        xe = J.a.ee230734,
         Fe = J.a.ca0ce0e4,
         Ae = J.a.cdcebd22,
         Ie = J.a.ic8c615d,
@@ -12864,12 +13292,12 @@
         Me = function (e) {
           return !(!e || !e.media)
         },
-        Le = Object(x.b)({ maxNumberOfPhotos: 1 }),
+        Le = Object(R.b)({ maxNumberOfPhotos: 1 }),
         De = (function (e) {
-          f()(n, e)
-          var t = g()(n)
+          g()(n, e)
+          var t = h()(n)
           function n(e, a) {
-            var i, l, c
+            var i, o, c
             s()(this, n),
               (c = t.call(this, e, a)),
               y()(p()(c), '_handleLayout', function (e) {
@@ -12886,11 +13314,11 @@
                 var e = c.props.quickReplyOptions,
                   t = c.state.isQuickReplyOpen
                 return e && t
-                  ? _.a.createElement(z, { onOptionChoose: c._handleQROptionSelection, quickReplyOptions: e })
+                  ? b.a.createElement(q, { onOptionChoose: c._handleQROptionSelection, quickReplyOptions: e })
                   : null
               }),
               y()(p()(c), '_renderComposeBox', function () {
-                return _.a.createElement(F.a, { style: Pe.composeBoxContainer }, c._renderMainContent())
+                return b.a.createElement(F.a, { style: Pe.composeBoxContainer }, c._renderMainContent())
               }),
               y()(p()(c), '_renderMainContent', function () {
                 var e = c.props,
@@ -12899,7 +13327,7 @@
                   a = c.state.value,
                   r = n
                 return r
-                  ? _.a.createElement(
+                  ? b.a.createElement(
                       r,
                       {
                         contextText: a,
@@ -12917,22 +13345,22 @@
                   n = t.disabled,
                   a = t.placeholderText,
                   r = t.richTextInputContext,
-                  i = fe.b.isKaiOS() ? Ae : a || Fe,
-                  l = c.state,
-                  s = l.editorState,
-                  u = l.mediaButtonsCollapsible,
-                  d = l.value,
+                  i = ge.b.isKaiOS() ? Ae : a || Fe,
+                  o = c.state,
+                  s = o.editorState,
+                  d = o.mediaButtonsCollapsible,
+                  u = o.value,
                   p = !!r,
                   m = r ? { editorState: s, element: r.element } : void 0,
-                  f = r
+                  g = r
                     ? {
                         onChange: c._getHandleRichTextChange(e),
                         richTextInputContext: { editorState: s, element: r.element },
                       }
                     : { onChange: c._getHandlePlainTextChange(e), richTextInputContext: void 0 }
-                return _.a.createElement(
-                  he.a,
-                  o()(
+                return b.a.createElement(
+                  fe.a,
+                  l()(
                     {
                       contentAbove: c._renderAttachments(),
                       editable: !n,
@@ -12951,11 +13379,11 @@
                       ref: c._setTextInputRef,
                       richTextInputContext: n ? void 0 : m,
                       style: Pe.composeInput,
-                      testID: de,
-                      useCacheForDOMMeasurements: !c._isSendDisabled() && !u,
-                      value: d,
+                      testID: ue,
+                      useCacheForDOMMeasurements: !c._isSendDisabled() && !d,
+                      value: u,
                     },
-                    f,
+                    g,
                   ),
                 )
               }),
@@ -12987,37 +13415,37 @@
                   a = e.isCardPreviewTombstoned,
                   r = e.isShareViaDM,
                   i = e.isUploading,
-                  o = c.state.value,
-                  l =
+                  l = c.state.value,
+                  o =
                     (t &&
                       ((t.media && t.media.mediaFile) || (t.provider && t.media && t.media.externalMediaDetails))) ||
                     {},
-                  s = l.height,
-                  u = l.width,
-                  d = null == t ? void 0 : t.media,
-                  p = null == d ? void 0 : d.mediaMetadata,
+                  s = o.height,
+                  d = o.width,
+                  u = null == t ? void 0 : t.media,
+                  p = null == u ? void 0 : u.mediaMetadata,
                   m = null == p ? void 0 : p.altText,
-                  f = null == p ? void 0 : p.defaultAltText,
-                  h = Object(_e.b)(o)
-                return _.a.createElement(
-                  _.a.Fragment,
+                  g = null == p ? void 0 : p.defaultAltText,
+                  f = Object(be.b)(l)
+                return b.a.createElement(
+                  b.a.Fragment,
                   null,
-                  d
-                    ? _.a.createElement(
+                  u
+                    ? b.a.createElement(
                         F.a,
-                        { style: Pe.attachmentContainer, testID: ue },
-                        _.a.createElement(
-                          ge.a,
-                          { ratio: u / s, style: Pe.aspectContainer },
-                          _.a.createElement(
+                        { style: Pe.attachmentContainer, testID: de },
+                        b.a.createElement(
+                          he.a,
+                          { ratio: d / s, style: Pe.aspectContainer },
+                          b.a.createElement(
                             F.a,
                             { style: Pe.mediaPreviewContainer },
-                            _.a.createElement(ee.a, {
-                              accessibilityLabel: m || f,
-                              mediaItem: d,
+                            b.a.createElement(ee.a, {
+                              accessibilityLabel: m || g,
+                              mediaItem: u,
                               onClick: c._canEditImage ? c._handleClickMediaDetail : void 0,
                               onEdit: c._canEditImage || c._canEditVideo ? c._handleClickMediaDetail : void 0,
-                              onRemove: c._handleRemoveMedia(d.id),
+                              onRemove: c._handleRemoveMedia(u.id),
                               resizeIfNeeded: 'width',
                               style: Pe.mediaPreview,
                               withAltTextLabel: !!m,
@@ -13030,25 +13458,25 @@
                         t &&
                           t.provider &&
                           t.gifUrl &&
-                          _.a.createElement(
+                          b.a.createElement(
                             F.a,
                             { style: Pe.gifAttribution },
-                            _.a.createElement(G.a, { gifUrl: t.gifUrl, provider: t.provider }),
+                            b.a.createElement(G.a, { gifUrl: t.gifUrl, provider: t.provider }),
                           ),
                       )
-                    : h && !r
-                    ? _.a.createElement(_e.a, {
+                    : f && !r
+                    ? b.a.createElement(be.a, {
                         conversationId: n,
                         isCardPreviewTombstoned: a,
                         style: Pe.cardPreviewContainer,
-                        urls: h,
+                        urls: f,
                       })
                     : null,
                 )
               }),
               y()(p()(c), '_renderEmojiPicker', function () {
-                return c.props.withEmojiPicker && fe.b.isDesktopOS()
-                  ? _.a.createElement(q.a, {
+                return c.props.withEmojiPicker && ge.b.isDesktopOS()
+                  ? b.a.createElement(z.a, {
                       disabled: c.props.disabled,
                       onEmojiSelect: c._handleEmojiSelect,
                       onPress: c._handleTextInputFocus,
@@ -13064,7 +13492,7 @@
                   r = t.quickReplyOptions,
                   i = c._hasMessageText()
                 return !r || i || e
-                  ? _.a.createElement(
+                  ? b.a.createElement(
                       ve.a,
                       {
                         accessibilityLabel: a,
@@ -13089,7 +13517,7 @@
                   r = e.shouldShowSecondaryActionFunc
                 if ((r && !r()) || !n) return null
                 var i = !a || a(),
-                  o = _.a.createElement(
+                  l = b.a.createElement(
                     ve.a,
                     {
                       accessibilityLabel: n,
@@ -13101,18 +13529,18 @@
                     c.props.secondaryActionLabel,
                   )
                 return i || !t
-                  ? o
-                  : _.a.createElement(
+                  ? l
+                  : b.a.createElement(
                       ye.a,
                       { enableHover: !0, preferredVerticalOrientation: 'up', renderContent: t, withArrow: !0 },
-                      o,
+                      l,
                     )
               }),
               y()(p()(c), '_renderQRToggleButton', function () {
                 var e = c.state.isQuickReplyOpen
-                return _.a.createElement(ve.a, {
+                return b.a.createElement(ve.a, {
                   accessibilityLabel: Ie,
-                  icon: e ? _.a.createElement(Ee, null) : _.a.createElement(we, null),
+                  icon: e ? b.a.createElement(Ee, null) : b.a.createElement(we, null),
                   onPress: c._handleQuickReplyPickerToggle,
                   size: 'medium',
                   style: Pe.actionButton,
@@ -13125,7 +13553,7 @@
                   n = c._renderComposeBox(),
                   a = c._renderPrimaryActionButton(t),
                   r = c._renderSecondaryActionButton()
-                return _.a.createElement(
+                return b.a.createElement(
                   F.a,
                   { style: [Pe.composer, t && Pe.composerWithAttachment] },
                   t ? null : c._renderMediaButtons(),
@@ -13141,13 +13569,13 @@
                   a = c.state,
                   r = a.mediaButtonsCollapsed,
                   i = a.mediaButtonsCollapsible && r
-                return _.a.createElement(
+                return b.a.createElement(
                   F.a,
                   { style: Pe.uploadButtons },
                   i
-                    ? _.a.createElement(ve.a, {
-                        accessibilityLabel: Re,
-                        icon: _.a.createElement(xe.a, null),
+                    ? b.a.createElement(ve.a, {
+                        accessibilityLabel: xe,
+                        icon: b.a.createElement(Re.a, null),
                         onMouseDown: c._handleShowMediaControlsMouseDown,
                         type: 'brandText',
                       })
@@ -13169,8 +13597,8 @@
                   a = t.key,
                   r = t.metaKey,
                   i = t.shiftKey,
-                  o = 'Enter' === a
-                return !c.state.isTypeaheadActive && o && c._keyboardOrMouseDetected && !(i || r || n)
+                  l = 'Enter' === a
+                return !c.state.isTypeaheadActive && l && c._keyboardOrMouseDetected && !(i || r || n)
                   ? (e.preventDefault(), c._handlePrimaryAction(e), 'handled')
                   : 'not-handled'
               }),
@@ -13191,25 +13619,25 @@
                   a = t.addToast,
                   r = t.dataSaverMode,
                   i = t.onAddMedia,
-                  o = t.preUploadMedia,
-                  l = t.processMultipleMedia,
+                  l = t.preUploadMedia,
+                  o = t.processMultipleMedia,
                   s = t.removeMedia,
-                  u = t.removeMediaUpload
+                  d = t.removeMediaUpload
                 n(e, { location: te.d.Dm }).then(function (e) {
                   var t = e.map(function (e) {
                     return e.id
                   })
                   c._validateMedia(e)
                     ? (i && i(t),
-                      l(e, { onFailure: s }).then(function (e) {
+                      o(e, { onFailure: s }).then(function (e) {
                         r ||
-                          o(
+                          l(
                             e.map(function (e) {
                               return e.id
                             }),
                           )
                       }))
-                    : (a({ text: Oe }), u(t))
+                    : (a({ text: Oe }), d(t))
                 })
               }),
               y()(p()(c), '_handleEmojiSelect', function (e) {
@@ -13248,8 +13676,8 @@
                   a = t.richTextInputContext,
                   r = c.state.value,
                   i = e.getCurrentContent().getPlainText(),
-                  o = a ? a.convertEmojiToEntities(e) : null
-                c.setState({ editorState: o, value: i }), r !== i && (null == n || n())
+                  l = a ? a.convertEmojiToEntities(e) : null
+                c.setState({ editorState: l, value: i }), r !== i && (null == n || n())
               }),
               y()(p()(c), '_handlePlainTextChange', function (e) {
                 var t = c.props.onTyping,
@@ -13298,9 +13726,9 @@
                   a = e.disabled,
                   r = e.isUploading,
                   i = Me(t),
-                  o = c._hasMessageText() || n,
-                  l = !(!t || !t.media) && (t.media.needsProcessing || r)
-                return a || (!o && !i) || l || r
+                  l = c._hasMessageText() || n,
+                  o = !(!t || !t.media) && (t.media.needsProcessing || r)
+                return a || (!l && !i) || o || r
               }),
               y()(p()(c), '_hasMessageText', function () {
                 return !!(c.state.value || '').trim()
@@ -13314,15 +13742,15 @@
               y()(p()(c), '_setTextInputRef', function (e) {
                 c._textInput = e
               })
-            var u = e.prefillText,
-              d = e.richTextInputContext
+            var d = e.prefillText,
+              u = e.richTextInputContext
             return (
               (c.state = {
                 isQuickReplyOpen: !0,
-                value: u,
+                value: d,
                 editorState:
                   null !==
-                    (i = null == d || null === (l = d.initEditorState) || void 0 === l ? void 0 : l.call(d, u)) &&
+                    (i = null == u || null === (o = u.initEditorState) || void 0 === o ? void 0 : o.call(u, d)) &&
                   void 0 !== i
                     ? i
                     : null,
@@ -13334,7 +13762,7 @@
             )
           }
           return (
-            u()(n, [
+            d()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -13376,20 +13804,20 @@
                     a = e.isUploading,
                     r = e.mediaUploadProgress,
                     i = e.placeholderText,
-                    o = e.style,
-                    l = i || Fe,
+                    l = e.style,
+                    o = i || Fe,
                     s = Object(ce.a)(),
                     c = s && t && (t.dtabAll || t.ttsToken) && !t.hide
-                  return _.a.createElement(
+                  return b.a.createElement(
                     M,
                     {
-                      accessibilityLabel: l,
+                      accessibilityLabel: o,
                       accessibilityRole: 'complementary',
                       onLayout: this._handleLayout,
                       sideNavPresent: s,
-                      style: [Pe.root, c && Pe.dtabOffset, o],
+                      style: [Pe.root, c && Pe.dtabOffset, l],
                     },
-                    _.a.createElement(le, { isSending: n, isUploading: a, progress: n ? Math.max(r, 0.02) : 0 }),
+                    b.a.createElement(oe, { isSending: n, isUploading: a, progress: n ? Math.max(r, 0.02) : 0 }),
                     this._renderComposer(),
                     this._renderQuickReplyPicker(),
                   )
@@ -13398,7 +13826,7 @@
               {
                 key: '_renderMediaPicker',
                 value: function () {
-                  return _.a.createElement($.a, {
+                  return b.a.createElement($.a, {
                     onChange: this._handleAddMediaFiles,
                     style: Pe.mediaPicker,
                     type: 'brandText',
@@ -13411,7 +13839,7 @@
                   var e = this.props,
                     t = e.conversationId,
                     n = e.history
-                  return _.a.createElement(Y.a, {
+                  return b.a.createElement(Y.a, {
                     dmConversationId: t,
                     enabled: !0,
                     gifSearchKeySource: Q.a.DMComposition,
@@ -13479,8 +13907,8 @@
             ]),
             n
           )
-        })(_.a.Component)
-      y()(De, 'contextType', be.a),
+        })(b.a.Component)
+      y()(De, 'contextType', _e.a),
         y()(De, 'defaultProps', { prefillText: '', withEmojiPicker: !0, withGifPicker: !0, withMediaPicker: !0 })
       var Pe = O.a.create(function (e) {
         return {
@@ -13517,13 +13945,13 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('/FNr'),
-        o = n('Rk1B'),
-        l = n('RH6X')
+        l = n('Rk1B'),
+        o = n('RH6X')
       function s() {
-        return r.a.createElement(o.default, null, function (e) {
+        return r.a.createElement(l.default, null, function (e) {
           var t = e.richTextInputContext
           e.typeaheadWrapper
-          return r.a.createElement(i.default, { richTextInputContext: t, typeaheadWrapper: l.a })
+          return r.a.createElement(i.default, { richTextInputContext: t, typeaheadWrapper: o.a })
         })
       }
     },
@@ -13532,42 +13960,42 @@
       var a = n('ERkP'),
         r = n.n(a),
         i = n('/yvb'),
-        o = n('3XMw'),
-        l = n.n(o),
+        l = n('3XMw'),
+        o = n.n(l),
         s = n('3rWK'),
         c = n('Irs7'),
-        u = l.a.a4993fa1,
-        d = r.a.createElement(s.a, null),
-        p = l.a.i0db46e6,
+        d = o.a.a4993fa1,
+        u = r.a.createElement(s.a, null),
+        p = o.a.i0db46e6,
         m = { viewType: 'gif_search' }
       t.a = function (e) {
         var t = e.dmConversationId,
           n = e.enabled,
           a = void 0 === n || n,
-          o = e.gifSearchKeySource,
-          l = e.history,
+          l = e.gifSearchKeySource,
+          o = e.history,
           s = e.onPress,
-          f = e.style,
-          h = e.testID,
-          g = Object(c.b)(),
+          g = e.style,
+          f = e.testID,
+          h = Object(c.b)(),
           v = r.a.useCallback(
             function () {
               s && s(),
-                g.scribe({ element: 'found_media_button', action: 'click' }),
-                l.push({ pathname: '/i/foundmedia/search', state: { gifSearchKeySource: o, dmConversationId: t } })
+                h.scribe({ element: 'found_media_button', action: 'click' }),
+                o.push({ pathname: '/i/foundmedia/search', state: { gifSearchKeySource: l, dmConversationId: t } })
             },
-            [t, g, o, l, s],
+            [t, h, l, o, s],
           )
         return r.a.createElement(i.a, {
-          accessibilityLabel: u,
+          accessibilityLabel: d,
           behavioralEventContext: m,
           disabled: !a,
           hoverLabel: { label: p },
-          icon: d,
+          icon: u,
           onPress: v,
           size: 'medium',
-          style: f,
-          testID: h,
+          style: g,
+          testID: f,
           type: 'brandText',
         })
       }
@@ -13575,10 +14003,10 @@
     wpu3: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return f
+        return g
       }),
         n.d(t, 'b', function () {
-          return g
+          return h
         }),
         n.d(t, 'c', function () {
           return v
@@ -13589,8 +14017,8 @@
       var a = n('RhWx'),
         r = n.n(a),
         i = n('KEM+'),
-        o = n.n(i),
-        l =
+        l = n.n(i),
+        o =
           (n('jwue'),
           n('7x/C'),
           n('+oxZ'),
@@ -13610,53 +14038,53 @@
           n('oEoC')),
         s = n('1auM'),
         c = n('kIAd'),
-        u = n('VAyw'),
-        d = n('/Ikv'),
+        d = n('VAyw'),
+        u = n('/Ikv'),
         p = n('s1N3'),
         m = n('lnti'),
-        f = function (e) {
+        g = function (e) {
           var t,
             n = e.excludeReplyUser,
             a = e.inReplyToStatus,
             i = e.loggedInUserId,
-            l = a.retweeted_status,
-            s = l || a,
+            o = a.retweeted_status,
+            s = o || a,
             c = s.entities,
-            d = s.unmentioned_user_ids,
-            f = s.user,
-            g = l ? l.user : {},
-            v = l ? a.user : {},
+            u = s.unmentioned_user_ids,
+            g = s.user,
+            h = o ? o.user : {},
+            v = o ? a.user : {},
             y = (null == c ? void 0 : c.user_mentions) || [],
-            b = u.a.mergeTaggedUsers((null == c ? void 0 : c.media) || []),
-            _ = h(l || a) || {},
-            k = ((t = {}), o()(t, g.id_str, g), o()(t, v.id_str, v), o()(t, f.id_str, f), o()(t, _.id_str, _), t)
+            _ = d.a.mergeTaggedUsers((null == c ? void 0 : c.media) || []),
+            b = f(o || a) || {},
+            k = ((t = {}), l()(t, h.id_str, h), l()(t, v.id_str, v), l()(t, g.id_str, g), l()(t, b.id_str, b), t)
           y.forEach(function (e) {
             k[e.id_str] = e
           }),
-            b.forEach(function (e) {
+            _.forEach(function (e) {
               var t = e.name,
                 n = e.screen_name,
                 a = e.user_id
               k[a] = { id_str: a, name: t, screen_name: n }
             })
           var S = function (e) {
-              var t = null == d ? void 0 : d.includes(e.id_str),
-                n = e.id_str === f.id_str
+              var t = null == u ? void 0 : u.includes(e.id_str),
+                n = e.id_str === g.id_str
               return !t || n ? [e.id_str] : []
             },
             C = Object(p.a)(
               Object(m.a)(
                 [].concat(
-                  r()(S(g)),
+                  r()(S(h)),
                   r()(S(v)),
-                  [f.id_str],
+                  [g.id_str],
                   r()(
                     y.flatMap(function (e) {
                       return S(e)
                     }),
                   ),
                   r()(
-                    b.map(function (e) {
+                    _.map(function (e) {
                       return e.user_id
                     }),
                   ),
@@ -13665,27 +14093,27 @@
             ).filter(function (e) {
               return e !== i
             }),
-            E = i && f.id_str === i ? [i].concat(r()(C)) : C
+            E = i && g.id_str === i ? [i].concat(r()(C)) : C
           return (
             n &&
               (E = E.filter(function (e) {
-                return e !== f.id_str
+                return e !== g.id_str
               })),
             E.map(function (e) {
               return k[e]
             })
           )
         },
-        h = function (e) {
+        f = function (e) {
           var t = e.card,
             n = null
           if (t) {
-            var a = d.a.getBindingValue(t.binding_values, 'site')
+            var a = u.a.getBindingValue(t.binding_values, 'site')
             a && t.users && (n = t.users[a.id_str])
           }
           return n
         },
-        g = function (e) {
+        h = function (e) {
           var t = e.maxNumberOfPhotos
           return function (e) {
             if (0 === e.length) return !0
@@ -13702,20 +14130,20 @@
               })
             if (a || n || r) return 1 === e.length
             var i = e.length <= t,
-              o = e.every(function (e) {
+              l = e.every(function (e) {
                 return e.mediaFile && e.mediaFile.isImage
               })
-            return i && o
+            return i && l
           }
         },
-        v = g({ maxNumberOfPhotos: 4 }),
+        v = h({ maxNumberOfPhotos: 4 }),
         y = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = e.split(c.b.WordBoundary)
           return (
             t && n.pop(),
             !!n.find(function (e) {
-              var t = Object(l.e)(e, 'compose')
+              var t = Object(o.e)(e, 'compose')
               return t && 'users' === t.result_type
             })
           )
@@ -13727,18 +14155,18 @@
         return m
       }),
         n.d(t, 'a', function () {
-          return h
+          return f
         })
       n('z84I'), n('ho0z')
       var a = n('ERkP'),
         r = n.n(a),
         i = n('t62R'),
-        o = n('aWyx'),
-        l = n('3XMw'),
-        s = n.n(l),
+        l = n('aWyx'),
+        o = n('3XMw'),
+        s = n.n(o),
         c = s.a.c1d4ac83,
-        u = s.a.abc7b032,
-        d = s.a.i263b293,
+        d = s.a.abc7b032,
+        u = s.a.i263b293,
         p = function (e) {
           var t = e.children,
             n = e.conversationId
@@ -13753,7 +14181,7 @@
               )
             : r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'b6656850', count: e })
         },
-        f = function (e) {
+        g = function (e) {
           var t = e.entry,
             n = e.users
           return t.participants
@@ -13762,20 +14190,20 @@
                 null,
                 t.participants.map(function (e, t) {
                   var a = e.user_id,
-                    o = n[a]
-                  return o
-                    ? r.a.createElement('span', { key: t }, t > 0 ? ', ' : null, r.a.createElement(i.b, null, o.name))
+                    l = n[a]
+                  return l
+                    ? r.a.createElement('span', { key: t }, t > 0 ? ', ' : null, r.a.createElement(i.b, null, l.name))
                     : null
                 }),
               )
             : null
         },
-        h = function (e, t, n, a) {
-          var l,
+        f = function (e, t, n, a) {
+          var o,
             p = n === e.by_user_id
           switch (t) {
-            case o.b.CONVERSATION_AVATAR_UPDATE:
-              return (l = e.by_user_id && a[e.by_user_id] && a[e.by_user_id].name)
+            case l.b.CONVERSATION_AVATAR_UPDATE:
+              return (o = e.by_user_id && a[e.by_user_id] && a[e.by_user_id].name)
                 ? p
                   ? c
                   : (function (e) {
@@ -13784,11 +14212,11 @@
                         { $i18n: 'bff29c94' },
                         r.a.createElement(i.b, null, e),
                       )
-                    })(l)
-                : u
-            case o.b.CONVERSATION_NAME_UPDATE:
+                    })(o)
+                : d
+            case l.b.CONVERSATION_NAME_UPDATE:
               var m = r.a.createElement(i.b, null, e.conversation_name)
-              return (l = e.by_user_id && a[e.by_user_id] && a[e.by_user_id].name)
+              return (o = e.by_user_id && a[e.by_user_id] && a[e.by_user_id].name)
                 ? p
                   ? (function (e) {
                       return r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'b16e4d45' }, e)
@@ -13800,32 +14228,32 @@
                         r.a.createElement(i.b, null, e),
                         t,
                       )
-                    })(l, m)
+                    })(o, m)
                 : (function (e) {
                     return r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'a72730a0' }, e)
                   })(m)
-            case o.b.JOIN_CONVERSATION:
-              return (l = e.sender_id && a[e.sender_id] && a[e.sender_id].name)
+            case l.b.JOIN_CONVERSATION:
+              return (o = e.sender_id && a[e.sender_id] && a[e.sender_id].name)
                 ? (function (e) {
                     return r.a.createElement(
                       s.a.I18NFormatMessage,
                       { $i18n: 'fa95b019' },
                       r.a.createElement(i.b, null, e),
                     )
-                  })(l)
-                : d
-            case o.b.PARTICIPANTS_LEAVE:
+                  })(o)
+                : u
+            case l.b.PARTICIPANTS_LEAVE:
               return (function (e) {
                 return r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'fc10875e' }, e)
-              })(r.a.createElement(f, { entry: e, users: a }))
-            case o.b.PARTICIPANTS_JOIN:
+              })(r.a.createElement(g, { entry: e, users: a }))
+            case l.b.PARTICIPANTS_JOIN:
               return (function (e, t) {
                 return e
                   ? r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'a4bc88c2' }, r.a.createElement(i.b, null, e), t)
                   : r.a.createElement(s.a.I18NFormatMessage, { $i18n: 'bfdff0c3' }, t)
               })(
-                (l = e.sender_id && a[e.sender_id] && a[e.sender_id].name),
-                r.a.createElement(f, { entry: e, users: a }),
+                (o = e.sender_id && a[e.sender_id] && a[e.sender_id].name),
+                r.a.createElement(g, { entry: e, users: a }),
               )
             default:
               return ''

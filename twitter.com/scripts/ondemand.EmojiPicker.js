@@ -212,12 +212,12 @@
         m = n.n(h),
         v = n('1Pcy'),
         p = n.n(v),
-        g = n('5Yy7'),
-        y = n.n(g),
+        y = n('5Yy7'),
+        g = n.n(y),
         _ = n('2VqO'),
-        w = n.n(_),
-        k = n('KEM+'),
-        S = n.n(k),
+        k = n.n(_),
+        w = n('KEM+'),
+        S = n.n(w),
         j =
           (n('z84I'),
           n('ho0z'),
@@ -239,8 +239,8 @@
         T = n('MWbm'),
         P = E.a.generate({ backgroundColor: 'transparent', color: I.a.theme.colors.primary }),
         D = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             var e
             f()(this, n)
@@ -278,7 +278,7 @@
                       s = t.isPressed
                     return C.a.createElement(
                       T.a,
-                      { style: x.container },
+                      { style: F.container },
                       C.a.createElement(
                         T.a,
                         {
@@ -287,8 +287,8 @@
                           onClick: e._handleClick,
                           onKeyDown: i ? e._handleKeyDown : void 0,
                           style: [
-                            x.iconWrapper,
-                            a || o ? void 0 : x.faded,
+                            F.iconWrapper,
+                            a || o ? void 0 : F.faded,
                             P.transitionStyle,
                             a && P.hoverStyle,
                             s && P.pressedStyle,
@@ -298,7 +298,7 @@
                         n,
                       ),
                       C.a.createElement(T.a, {
-                        style: [x.border, o ? { backgroundColor: I.a.theme.colors.primary } : null],
+                        style: [F.border, o ? { backgroundColor: I.a.theme.colors.primary } : null],
                       }),
                     )
                   })
@@ -308,7 +308,7 @@
             n
           )
         })(C.a.PureComponent),
-        x = I.a.create(function (e) {
+        F = I.a.create(function (e) {
           return {
             container: { flex: 1 },
             iconWrapper: { width: '100%', alignItems: 'center', paddingVertical: e.spaces.space4 },
@@ -316,7 +316,7 @@
             faded: { filter: 'grayscale(100%) contrast(80%)', opacity: 0.5 },
           }
         }),
-        F = D,
+        x = D,
         L = n('a6L8'),
         O = {
           people: '😀',
@@ -330,8 +330,8 @@
           recent: '🕑',
         },
         H = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             return f()(this, n), t.apply(this, arguments)
           }
@@ -358,7 +358,7 @@
                         u = !!n && t.id === n.id
                       return o
                         ? null
-                        : C.a.createElement(F, {
+                        : C.a.createElement(x, {
                             category: t,
                             icon: e._getIcon(s, c),
                             isActive: u,
@@ -384,16 +384,16 @@
         M = I.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between' } }
         }),
-        z = H,
-        A = n('t62R'),
+        A = H,
+        z = n('t62R'),
         B = n('/yvb'),
         U = n('2ZFc'),
         N = n('ddV6'),
         K = n.n(N),
         V = (n('5BYb'), n('uFXj'), n('VbCG')),
         W = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             var e
             f()(this, n)
@@ -499,8 +499,8 @@
         X = n('7nmT'),
         Q = n.n(X),
         $ = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             return f()(this, n), t.apply(this, arguments)
           }
@@ -545,8 +545,8 @@
         se = ['activeSkinTone', 'emoji'],
         ce = ['activeSkinTone', 'emoji', 'onSelect'],
         le = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             var e
             f()(this, n)
@@ -699,8 +699,8 @@
             : C.a.createElement(ve, u()({}, e, { ref: t }))
         }),
         ve = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n(e) {
             var o
             return (
@@ -780,7 +780,7 @@
                         C.a.createElement(
                           te,
                           { style: pe.headerSection, withTopBorder: !0 },
-                          C.a.createElement(A.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
+                          C.a.createElement(z.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
                           n,
                         ),
                       ),
@@ -841,7 +841,7 @@
                     var m = !!h.skin_variations,
                       v = r.spriteSheetColumns,
                       p = r.spriteSheetRows,
-                      g = {
+                      y = {
                         ariaDescendantId: d === i ? o : void 0,
                         emoji: h,
                         onFocus: a,
@@ -854,7 +854,7 @@
                     return C.a.createElement(
                       T.a,
                       { key: h.unified, ref: d === i ? c : void 0, style: pe.rowItem },
-                      m ? C.a.createElement(he, u()({}, g, { activeSkinTone: n })) : C.a.createElement(q, g),
+                      m ? C.a.createElement(he, u()({}, y, { activeSkinTone: n })) : C.a.createElement(q, y),
                     )
                   })
                 },
@@ -877,10 +877,10 @@
             spacer: { alignSelf: 'center', margin: V.c.EmojiGutter, height: V.c.EmojiHeight, width: V.c.EmojiWidth },
           }
         }),
-        ge = n('zrc3'),
-        ye = n('Myq3'),
+        ye = n('zrc3'),
+        ge = n('Myq3'),
         _e = n('EhiH'),
-        we = (function () {
+        ke = (function () {
           function e(t, n, o) {
             f()(this, e), (this._categories = t), (this._rowSize = o), (this._emojis = n)
           }
@@ -889,7 +889,7 @@
               {
                 key: 'getInitialFocus',
                 value: function () {
-                  var e = Object(ge.a)(this._categories, function (e) {
+                  var e = Object(ye.a)(this._categories, function (e) {
                     return e.emojis.length > 0
                   })
                   return this.formatFocusParams(0, 0, this._categories[e])
@@ -898,7 +898,7 @@
               {
                 key: 'getCategoryById',
                 value: function (e) {
-                  var t = Object(ge.a)(this._categories, function (t) {
+                  var t = Object(ye.a)(this._categories, function (t) {
                     return t.id === e
                   })
                   return this._categories[t]
@@ -908,10 +908,10 @@
                 key: 'getPreviousCategory',
                 value: function (e) {
                   if (e !== V.a.Search) {
-                    var t = Object(ge.a)(this._categories, function (t) {
+                    var t = Object(ye.a)(this._categories, function (t) {
                       return t.id === e
                     })
-                    return Object(ye.a)(this._categories.slice(0, t), function (e) {
+                    return Object(ge.a)(this._categories.slice(0, t), function (e) {
                       return e.emojis.length > 0
                     })
                   }
@@ -922,7 +922,7 @@
                 value: function (e) {
                   if (e !== V.a.Search) {
                     var t =
-                      Object(ge.a)(this._categories, function (t) {
+                      Object(ye.a)(this._categories, function (t) {
                         return t.id === e
                       }) + 1
                     return Object(_e.a)(this._categories.slice(t, this._categories.length), function (e) {
@@ -1039,19 +1039,9 @@
             e
           )
         })(),
-        ke = n('xoZN'),
-        Se =
-          (n('KqXw'),
-          n('LJOr'),
-          n('iKE+'),
-          n('1LXv'),
-          n('e/gN'),
-          n('DZ+c'),
-          n('WNMA'),
-          n('Ysgh'),
-          n('tQbP'),
-          n('tn7R')),
-        je = n('s1N3')
+        we = n('xoZN'),
+        Se = (n('KqXw'), n('LJOr'), n('Ysgh'), n('tQbP'), n('s1N3')),
+        je = n('tn7R')
       function Ce(e, t) {
         for (var n = a()(t), o = 0, r = e; o < n.length; ) {
           var i = r.children[n[o]]
@@ -1080,50 +1070,27 @@
         return (
           (function e(t) {
             t.results.length && i.push.apply(i, a()(t.results)),
-              Object(Se.a)(t.children).forEach(function (t) {
+              Object(je.a)(t.children).forEach(function (t) {
                 return e(t)
               })
           })(o),
-          Object(je.a)(i)
+          Object(Se.a)(i)
         )
       }
       var Re = (function () {
           function e(t) {
             f()(this, e),
-              S()(this, '_getRelevantEmojis', function (e, t, n) {
+              S()(this, '_getScoreAndInsertResults', function (e, t, n) {
                 var o = {}
                 for (var r in e) {
-                  var i = e[r]
-                  ;-1 !== i.search.indexOf(t) && (o[r] = i)
+                  var i = e[r],
+                    a = i.search.indexOf(t)
+                  if (-1 !== a) {
+                    var s = a + 1
+                    t === r && (s = 0), be(n, t, i), (o[r] = s)
+                  }
                 }
                 return o
-              }),
-              S()(this, '_getScores', function (e, t) {
-                var n = {},
-                  o = {},
-                  r = 0,
-                  i = new RegExp('\\b'.concat(t, '\\b'))
-                for (var a in e) {
-                  var s = e[a].search,
-                    c = s.match(i),
-                    l = s.split(',')
-                  l.shift()
-                  var u = Object(ge.a)(l, function (e) {
-                      return e === t
-                    }),
-                    d = -1 !== u ? u : s.indexOf(t)
-                  ;(o[a] = d + 1), c && ((n[a] = o[a]), (r = Math.max(r, d)))
-                }
-                for (var f in e) {
-                  var h = e[f].search.match(i)
-                  ;-1 !== o[f] && (t === f ? (n[f] = 0) : h || (n[f] = r + o[f]))
-                }
-                return n
-              }),
-              S()(this, '_insertEmojisToTrie', function (e, t, n) {
-                for (var o in e) {
-                  be(n, t, e[o])
-                }
               }),
               (this._data = t),
               (this._index = { results: [], children: {} }),
@@ -1144,17 +1111,14 @@
                       l = (c = c.slice(0, 2))
                         .map(function (e) {
                           var t = [],
-                            o = Ee(s, e),
-                            r = new RegExp('\\b'.concat(e, '\\b')),
-                            a = n._getRelevantEmojis(i, e, r),
-                            c = n._getScores(a, e)
-                          return (
-                            0 === o.length ? (n._insertEmojisToTrie(a, e, s), (t = Ee(s, e))) : (t = o),
-                            t.sort(function (e, t) {
-                              return c[e.id] - c[t.id]
-                            }),
-                            t
-                          )
+                            o = Ee(s, e)
+                          if (0 === o.length) {
+                            var r = n._getScoreAndInsertResults(i, e, s)
+                            ;(t = Ee(s, e)).sort(function (e, t) {
+                              return r[e.id] - r[t.id]
+                            })
+                          } else t = o
+                          return t
                         })
                         .filter(function (e) {
                           return !!e
@@ -1169,8 +1133,8 @@
           )
         })(),
         Ie = function (e, t) {
-          var n = Object(je.a)(e),
-            o = Object(je.a)(t)
+          var n = Object(Se.a)(e),
+            o = Object(Se.a)(t)
           return n.filter(function (e) {
             return o.indexOf(e) >= 0
           })
@@ -1178,15 +1142,15 @@
         Te = Re,
         Pe = n('6OUF'),
         De = n('VwDm'),
-        xe = n('fs1G'),
-        Fe = n('VY6S'),
+        Fe = n('fs1G'),
+        xe = n('VY6S'),
         Le = C.a.forwardRef(function (e, t) {
           var n = e.autoFocus,
             o = void 0 !== n && n,
             r = e.maxResults,
             i = void 0 === r ? 75 : r,
             a = e.onSearch,
-            s = void 0 === a ? xe.a : a,
+            s = void 0 === a ? Fe.a : a,
             c = e.data,
             l = e.ariaActiveDescendant,
             u = e.categoriesDomId,
@@ -1199,7 +1163,7 @@
             ),
             h = C.a.useMemo(
               function () {
-                return Object(Fe.a)(function (e) {
+                return Object(xe.a)(function (e) {
                   var t = f.search(e, { maxResults: i })
                   s(e, t)
                 }, 100)
@@ -1245,9 +1209,9 @@
         }),
         He = C.a.memo(Le),
         Me = n('IMYl'),
-        ze = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+        Ae = (function (e) {
+          g()(n, e)
+          var t = k()(n)
           function n() {
             var e
             f()(this, n)
@@ -1334,14 +1298,14 @@
                           T.a,
                           {
                             style: [
-                              Ae.root,
+                              ze.root,
                               { backgroundColor: i.color },
                               s.transitionStyle,
                               (l || c) && s.focusedStyle,
-                              (u || r) && Ae.selected,
+                              (u || r) && ze.selected,
                             ],
                           },
-                          r ? C.a.createElement(Me.a, { style: Ae.checkmarkIcon }) : null,
+                          r ? C.a.createElement(Me.a, { style: ze.checkmarkIcon }) : null,
                         ),
                       )
                     },
@@ -1352,7 +1316,7 @@
             n
           )
         })(C.a.Component),
-        Ae = I.a.create(function (e) {
+        ze = I.a.create(function (e) {
           return {
             outer: { paddingLeft: e.spaces.space4 },
             root: {
@@ -1366,10 +1330,10 @@
             checkmarkIcon: { height: '1em', width: '1em', color: e.colors.cellBackground },
           }
         }),
-        Be = ze,
+        Be = Ae,
         Ue = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n() {
             var e
             f()(this, n)
@@ -1382,7 +1346,7 @@
                 return C.a.createElement(
                   T.a,
                   { accessibilityRole: 'radiogroup', style: Ne.palette },
-                  Object(Se.a)(V.e).map(function (n) {
+                  Object(je.a)(V.e).map(function (n) {
                     var o = n === t
                     return C.a.createElement(Be, {
                       accessibilityLabel: n.name,
@@ -1459,8 +1423,8 @@
         qe = [V.a.Search, V.a.Recent],
         Ye = 'emoji_picker_categories_dom_id',
         Ze = (function (e) {
-          y()(n, e)
-          var t = w()(n)
+          g()(n, e)
+          var t = k()(n)
           function n(e) {
             var o
             f()(this, n),
@@ -1475,7 +1439,7 @@
                 var t = o.state,
                   n = t.activeCategory,
                   r = t.query
-                return C.a.createElement(z, {
+                return C.a.createElement(A, {
                   activeCategory: r ? void 0 : n,
                   categories: e,
                   disableAll: !!r,
@@ -1606,7 +1570,7 @@
                 var e = o.state.previewEmoji
                 return e
                   ? C.a.createElement(
-                      A.b,
+                      z.b,
                       {
                         align: 'left',
                         color: 'gray700',
@@ -1677,7 +1641,7 @@
                       return e.unified
                     })
                   : []
-                Object(Se.a)(o._categoryRefs).forEach(function (t) {
+                Object(je.a)(o._categoryRefs).forEach(function (t) {
                   t && 'search' !== t.props.id && t.updateDisplay(!e)
                 }),
                   o.setState({ searchResults: n, query: e }),
@@ -1743,7 +1707,7 @@
               S()(p()(o), '_handleAnchorClick', function (e) {
                 o._shouldUpdateScrollPosition &&
                   ((o._shouldUpdateScrollPosition = !1),
-                  Object(Se.a)(o._categoryRefs).forEach(function (e) {
+                  Object(je.a)(o._categoryRefs).forEach(function (e) {
                     return e.updatePosition()
                   }))
                 var t = o._categoryRefs['category-'.concat(e.id)]
@@ -1777,7 +1741,7 @@
               (o._recentlyUsedCategoryInitialValue = { id: V.a.Recent, name: V.f.recentCategoryName, emojis: [] }),
               (o._defaultPreviewEmoji = o._uncompressedData.emojis[o.props.previewEmojiCodepoint]),
               o._categories.unshift(o._recentlyUsedCategoryInitialValue),
-              (o._focusHelper = new we(o._categories, o._uncompressedData.emojis, e.rowSize)),
+              (o._focusHelper = new ke(o._categories, o._uncompressedData.emojis, e.rowSize)),
               (o.state = {
                 activeCategory: o._categories[1],
                 activeSkinTone: V.e[e.defaultSkinTone],
@@ -1857,7 +1821,7 @@
                     })
                   }
                   ;(t.categories === o && e.rowSize === s) ||
-                    (this._focusHelper = new we(o, this._uncompressedData.emojis, s))
+                    (this._focusHelper = new ke(o, this._uncompressedData.emojis, s))
                 },
               },
               {
@@ -1887,7 +1851,7 @@
                     l = [r, i].concat(s),
                     u = [r, i, s[0]]
                   return C.a.createElement(
-                    ke.a,
+                    we.a,
                     { onKeyDown: this._handleKeyDown, style: Xe.root },
                     C.a.createElement(te, { style: Xe.searchSection }, this._renderSearch()),
                     C.a.createElement(te, { style: Xe.anchorsSection }, this._renderAnchors(l)),

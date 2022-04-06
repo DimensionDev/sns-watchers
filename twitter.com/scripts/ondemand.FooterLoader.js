@@ -1,89 +1,91 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [210],
   {
-    '3Rb8': function (e, t, r) {
+    '3Rb8': function (e, t, n) {
       'use strict'
-      r.r(t)
-      var n = r('ezF+'),
-        a = r('VPAj'),
-        o = r('ERkP'),
-        i = r.n(o),
-        c =
-          (r('yH/f'),
+      n.r(t)
+      var r = n('yiKp'),
+        a = n.n(r),
+        o = n('ezF+'),
+        i = n('VPAj'),
+        c = n('ERkP'),
+        s = n.n(c),
+        l =
+          (n('yH/f'),
           Object.freeze({ Classic: 'Classic', ContextEmphasis: 'ContextEmphasis' }),
           Object.freeze({ Classic: 'Classic', Footnote: 'Footnote', Button: 'Button' })),
-        s = r('caTy'),
-        l = r('ywYn'),
-        u = r('Irs7'),
-        d = r('/yvb'),
-        m = r('rC8y'),
-        b = function (e) {
+        u = n('caTy'),
+        d = n('ywYn'),
+        m = n('Irs7'),
+        p = n('/yvb'),
+        b = n('rC8y'),
+        f = function (e) {
           var t = e.entry,
-            r = (e.feedbackItems, e.isInSidebar),
-            n = (e.module, Object(u.b)())
-          i.a.useEffect(function () {
-            n.scribe({ element: 'footer', action: 'impression' })
+            n = (e.feedbackItems, e.isInSidebar),
+            r = (e.module, Object(m.b)())
+          s.a.useEffect(function () {
+            r.scribe({ element: 'footer', action: 'impression' })
           }, [])
-          var a = i.a.useCallback(
+          var a = s.a.useCallback(
               function () {
-                return n.scribe({ element: 'footer', action: 'click' })
+                return r.scribe({ element: 'footer', action: 'click' })
               },
-              [n],
+              [r],
             ),
             o = t.content,
-            b = o.displayType,
-            f = o.landingUrl,
-            w = o.text,
+            i = o.displayType,
+            c = o.landingUrl,
+            f = o.text,
             h = o.url,
-            v = f || (h && { urlType: l.a.DeepLink, url: h }),
-            y = v && Object(s.b)(v)
-          switch (b) {
-            case c.Button:
-              return i.a.createElement(d.a, {
-                children: w,
-                link: y,
+            y = c || (h && { urlType: d.a.DeepLink, url: h }),
+            v = y && Object(u.b)(y)
+          switch (i) {
+            case l.Button:
+              return s.a.createElement(p.a, {
+                children: f,
+                link: v,
                 onPress: a,
-                style: p.containerStyle,
+                style: w.containerStyle,
                 type: 'brandOutlined',
               })
-            case c.Classic:
-              return i.a.createElement(m.a, { link: y, onPress: a, text: w, withDarkerInteractiveBackground: r })
+            case l.Classic:
+              return s.a.createElement(b.a, { link: v, onPress: a, text: f, withDarkerInteractiveBackground: n })
             default:
               return null
           }
         },
-        p = r('rHpw').a.create(function (e) {
+        w = n('rHpw').a.create(function (e) {
           return { containerStyle: { width: '90%', marginVertical: e.spaces.space12, marginHorizontal: 'auto' } }
         }),
-        f = i.a.memo(b),
-        w = Object(a.a)(!1),
-        h = { viewType: 'module_footer' },
-        v = { element: 'footer' }
+        h = s.a.memo(f),
+        y = Object(i.a)(!1),
+        v = { viewType: 'module_footer' },
+        g = { element: 'footer' }
       t.default = function (e) {
-        return n
+        return o
           .b({
-            shouldDisplayBorder: e.isInSidebar ? w : void 0,
-            component: f,
-            defaultScribeNamespace: v,
-            isFocusable: Object(a.a)(!0),
+            shouldDisplayBorder: e.isInSidebar ? y : void 0,
+            component: h,
+            defaultScribeNamespace: g,
+            isFocusable: Object(i.a)(!0),
             getBehavioralEventContextOverride: function () {
-              return h
+              return v
             },
           })
           .getHandler(function () {
-            return e
+            return a()({}, e)
           })
       }
     },
-    rC8y: function (e, t, r) {
+    rC8y: function (e, t, n) {
       'use strict'
-      r('hBvt')
-      var n = r('SV7d'),
-        a = r('ERkP'),
-        o = r.n(a),
-        i = r('t62R'),
-        c = r('htQn'),
-        s = r('rHpw'),
+      n('hBvt')
+      var r = n('SV7d'),
+        a = n('ERkP'),
+        o = n.n(a),
+        i = n('t62R'),
+        c = n('htQn'),
+        s = n('rHpw'),
         l = { viewType: 'module_footer' }
       var u = s.a.create(function (e) {
         return {
@@ -96,18 +98,18 @@
       })
       t.a = function (e) {
         var t = e.align,
-          r = e.link,
+          n = e.link,
           a = e.onPress,
           s = e.text,
           d = e.weight,
           m = e.withBottomRadius,
-          b = e.withDarkerInteractiveBackground
+          p = e.withDarkerInteractiveBackground
         return o.a.createElement(
-          n.a,
+          r.a,
           { behavioralEventContext: l },
           o.a.createElement(
             c.a,
-            { link: r, onPress: a, style: [u.root, m && u.withBottomRadius], withDarkerInteractiveBackground: b },
+            { link: n, onPress: a, style: [u.root, m && u.withBottomRadius], withDarkerInteractiveBackground: p },
             o.a.createElement(i.b, { align: t, color: 'primary', weight: d }, s),
           ),
         )

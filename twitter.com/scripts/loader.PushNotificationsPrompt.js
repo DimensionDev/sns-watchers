@@ -17,17 +17,17 @@
         h = n('rcen'),
         f = n('k89r'),
         y = ['bodyRichText', 'bodyText', 'onImpression', 'primaryAction', 'titleRichText', 'titleText']
-      function b(e) {
+      function g(e) {
         var t = e.bodyRichText,
           n = e.bodyText,
           o = e.onImpression,
           r = e.primaryAction,
           s = e.titleRichText,
           l = e.titleText,
-          b = c()(e, y),
-          g = Object(f.a)(),
+          g = c()(e, y),
+          b = Object(f.a)(),
           v = function () {
-            g.scribe({ action: 'click' })
+            b.scribe({ action: 'click' })
           },
           C = s
             ? p.a.createElement(h.a, { entities: s.entities, onEntityClick: v, text: s.text })
@@ -52,11 +52,11 @@
           },
           x = p.a.createElement(m.a.Consumer, null, function (e) {
             var t = e.handleNextSlide
-            return p.a.createElement(d.a, i()({}, b, { headline: C, primaryAction: r ? P(t) : void 0, subtext: w }))
+            return p.a.createElement(d.a, i()({}, g, { headline: C, primaryAction: r ? P(t) : void 0, subtext: w }))
           })
         return 'function' == typeof o ? p.a.createElement(u.a, { onImpression: o }, x) : x
       }
-      ;(b.defaultProps = { shouldRenderBorder: !1 }), (t.a = b)
+      ;(g.defaultProps = { shouldRenderBorder: !1 }), (t.a = g)
     },
     PnKw: function (e, t, n) {
       'use strict'
@@ -77,8 +77,8 @@
         h = n.n(m),
         f = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
         y = n.n(f),
-        b = n('TIdA'),
-        g = n('t62R'),
+        g = n('TIdA'),
+        b = n('t62R'),
         v = n('A91F'),
         C = n('/yvb'),
         w = n('rHpw'),
@@ -97,7 +97,7 @@
             return (
               (e = t.call.apply(t, [this].concat(r))),
               h()(c()(e), '_renderImage', function (e, t) {
-                var n = y.a.createElement(b.a, {
+                var n = y.a.createElement(g.a, {
                   accessibilityLabel: '',
                   aspectMode: v.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
@@ -120,13 +120,13 @@
                 var t = e.props.headline
                 return t
                   ? y.a.createElement(
-                      g.b,
+                      b.b,
                       {
                         accessibilityRole: 'heading',
                         align: 'left',
-                        size: 'title4',
+                        size: 'title3',
                         style: _.flexGrow,
-                        weight: 'bold',
+                        weight: 'heavy',
                         withHashflags: !0,
                       },
                       t,
@@ -137,7 +137,7 @@
                 var t = e.props.subtext
                 return t
                   ? y.a.createElement(
-                      g.b,
+                      b.b,
                       { align: 'left', color: 'gray700', style: e.styles.body, withHashflags: !0 },
                       t,
                     )
@@ -299,9 +299,9 @@
         h = n.n(m),
         f = n('ERkP'),
         y = n.n(f),
-        b = n('/yvb'),
-        g = n('3XMw'),
-        v = n.n(g),
+        g = n('/yvb'),
+        b = n('3XMw'),
+        v = n.n(b),
         C = n('hOZg'),
         w = v.a.ia5e7487,
         P = { viewType: 'close_button' }
@@ -319,7 +319,7 @@
           d = e.style,
           u = e.testID,
           m = n || y.a.createElement(C.a, { testID: u })
-        return y.a.createElement(b.a, {
+        return y.a.createElement(g.a, {
           accessibilityLabel: t || w,
           behavioralEventContext: P,
           borderColor: 'transparent',

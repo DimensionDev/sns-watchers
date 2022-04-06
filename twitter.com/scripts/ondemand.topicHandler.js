@@ -33,62 +33,64 @@
     YMZp: function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('ezF+'),
-        o = n('VPAj'),
-        a = n('E3Hq'),
-        c = n('ERkP'),
-        i = n.n(c),
-        s = n('wtjx'),
-        l = n('Zejx'),
-        u = n('rxPX'),
-        d = function (e, t) {
-          return l.a.select(e, t.entry.content.topicId)
+      var r = n('yiKp'),
+        o = n.n(r),
+        a = n('ezF+'),
+        c = n('VPAj'),
+        i = n('E3Hq'),
+        s = n('ERkP'),
+        l = n.n(s),
+        u = n('wtjx'),
+        d = n('Zejx'),
+        p = n('rxPX'),
+        f = function (e, t) {
+          return d.a.select(e, t.entry.content.topicId)
         },
-        p = Object(u.a)()
+        h = Object(p.a)()
           .propsFromState(function () {
-            return { topic: d }
+            return { topic: f }
           })
           .propsFromActions(function () {
-            return { saveAsRecentSearch: s.a }
+            return { saveAsRecentSearch: u.a }
           }),
-        f = n('fRsM'),
-        h = n('XcJG'),
-        m = n('Irs7'),
-        v = function (e) {
-          var t = Object(m.b)(),
+        m = n('fRsM'),
+        v = n('XcJG'),
+        y = n('Irs7'),
+        b = function (e) {
+          var t = Object(y.b)(),
             n = e.entry.content,
             r = e.feedbackItems,
             o = e.saveAsRecentSearch,
-            c = e.shouldStoreTypeaheadItem,
-            s = e.topic
+            a = e.shouldStoreTypeaheadItem,
+            c = e.topic
           if (
-            (i.a.useEffect(function () {
-              s && t.scribeAction('impression')
+            (l.a.useEffect(function () {
+              c && t.scribeAction('impression')
             }, []),
-            !s)
+            !c)
           )
             return null
-          var l = Object(a.a)({ feedbackItems: r, topic: s, topicItemContent: n }),
-            u = n.topicDisplayType === h.a.Basic
-          return i.a.createElement(f.a, {
-            notInterestedOnClick: l,
+          var s = Object(i.a)({ feedbackItems: r, topic: c, topicItemContent: n }),
+            u = n.topicDisplayType === v.a.Basic
+          return l.a.createElement(m.a, {
+            notInterestedOnClick: s,
             saveAsRecentSearch: o,
-            shouldStoreTypeaheadItem: c,
-            topic: s,
+            shouldStoreTypeaheadItem: a,
+            topic: c,
             withIcon: u,
           })
         },
-        y = p(i.a.memo(v))
+        I = h(l.a.memo(b))
       t.default = function (e) {
-        return r
+        return a
           .b({
-            component: y,
-            isFocusable: Object(o.a)(!0),
-            getScribeDataItem: a.b,
-            shouldDisplayBorder: Object(o.a)(!1),
+            component: I,
+            isFocusable: Object(c.a)(!0),
+            getScribeDataItem: i.b,
+            shouldDisplayBorder: Object(c.a)(!1),
           })
           .getHandler(function () {
-            return e
+            return o()({}, e)
           })
       }
     },

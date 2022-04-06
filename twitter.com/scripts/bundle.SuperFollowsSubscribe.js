@@ -12,7 +12,7 @@
         i,
         s = n('ERkP'),
         t = n.n(s),
-        u = (n('enFi'), n('3XMw')),
+        u = (n('YWiL'), n('3XMw')),
         o = n.n(u),
         c = n('rZeG'),
         d = n('L/9f'),
@@ -37,11 +37,11 @@
           )
         },
         b = n('zCf4'),
-        v = n('MWbm'),
-        f = n('cHvH'),
+        f = n('MWbm'),
+        v = n('cHvH'),
         _ = n('rHpw'),
         F = n('/yvb'),
-        S = n('jAXQ'),
+        S = n('CVPS'),
         w = n.n(S),
         K = o.a.d2613122,
         h = void 0 !== a ? a : (a = n('l62v')),
@@ -60,7 +60,7 @@
             subscribeButton: { width: '100%' },
           }
         }),
-        E = function (e) {
+        R = function (e) {
           var l,
             n,
             a,
@@ -74,30 +74,30 @@
             m,
             y,
             S,
-            E = e.screenName,
-            B = e.user,
-            U = e.viewer,
-            R = w()(h, B),
-            C = w()(T, U),
-            A = Object(b.f)(),
+            R = e.screenName,
+            E = e.user,
+            B = e.viewer,
+            U = w()(h, E),
+            C = w()(T, B),
+            H = Object(b.f)(),
             N = function () {
-              A.push('/'.concat(E, '/superfollows'))
+              H.push('/'.concat(R, '/superfollows'))
             },
-            j = null !== (l = null == R ? void 0 : R.legacy.name) && void 0 !== l ? l : void 0,
-            D = null !== (n = null == R ? void 0 : R.legacy.profile_image_url_https) && void 0 !== n ? n : void 0,
-            I = null !== (a = null == R ? void 0 : R.legacy.screen_name) && void 0 !== a ? a : void 0,
+            W = null !== (l = null == U ? void 0 : U.legacy.name) && void 0 !== l ? l : void 0,
+            A = null !== (n = null == U ? void 0 : U.legacy.profile_image_url_https) && void 0 !== n ? n : void 0,
+            O = null !== (a = null == U ? void 0 : U.legacy.screen_name) && void 0 !== a ? a : void 0,
             V =
               null !==
                 (r =
-                  null == R || null === (i = R.super_follow_creator_benefits) || void 0 === i
+                  null == U || null === (i = U.super_follow_creator_benefits) || void 0 === i
                     ? void 0
                     : i.creator_intro) && void 0 !== r
                 ? r
                 : void 0,
-            H = (
+            x = (
               null !==
                 (s =
-                  null == R || null === (u = R.super_follow_creator_benefits) || void 0 === u
+                  null == U || null === (u = U.super_follow_creator_benefits) || void 0 === u
                     ? void 0
                     : u.benefits_data) && void 0 !== s
                 ? s
@@ -105,31 +105,31 @@
             ).find(function (e) {
               return 'ExclusiveContent' === e.benefit_type
             }),
-            Q = null !== (o = null == H ? void 0 : H.description) && void 0 !== o ? o : void 0,
-            z = null !== (c = null == C ? void 0 : C.legacy.profile_image_url_https) && void 0 !== c ? c : void 0,
-            G = null !== (d = null == C ? void 0 : C.legacy.name) && void 0 !== d ? d : void 0,
+            D = null !== (o = null == x ? void 0 : x.description) && void 0 !== o ? o : void 0,
+            I = null !== (c = null == C ? void 0 : C.legacy.profile_image_url_https) && void 0 !== c ? c : void 0,
+            j = null !== (d = null == C ? void 0 : C.legacy.name) && void 0 !== d ? d : void 0,
             P = null !== (m = null == C ? void 0 : C.legacy.screen_name) && void 0 !== m ? m : void 0,
-            W = null !== (y = null == C ? void 0 : C.legacy.protected) && void 0 !== y ? y : void 0,
-            X = null !== (S = null == C ? void 0 : C.legacy.verified) && void 0 !== S ? S : void 0
-          return t.a.createElement(f.a, null, function (e) {
+            q = null !== (y = null == C ? void 0 : C.legacy.protected) && void 0 !== y ? y : void 0,
+            z = null !== (S = null == C ? void 0 : C.legacy.verified) && void 0 !== S ? S : void 0
+          return t.a.createElement(v.a, null, function (e) {
             var l = e.windowWidth > _.a.theme.breakpoints.small
             return t.a.createElement(
               g.b,
-              { backButtonType: 'back', backLocation: '/'.concat(E, '/superfollows'), history: A },
+              { backButtonType: 'back', backLocation: '/'.concat(R, '/superfollows'), history: H },
               t.a.createElement(p.a, {
-                badgeImageUrl: z,
-                badgeName: G,
+                badgeImageUrl: I,
+                badgeName: j,
                 badgeScreenName: P,
-                descriptionValue: Q,
-                imageUrl: D,
+                descriptionValue: D,
+                imageUrl: A,
                 introValue: V,
-                isProtected: W,
-                isVerified: X,
-                name: j,
-                screenName: I,
+                isProtected: q,
+                isVerified: z,
+                name: W,
+                screenName: O,
               }),
               t.a.createElement(
-                v.a,
+                f.a,
                 { style: [L.subscribeButtonContainer, l && L.subscribeButtonContainerWide] },
                 t.a.createElement(k, { style: L.disclaimer }),
                 t.a.createElement(
@@ -148,28 +148,28 @@
             )
           })
         },
-        B = n('1k08'),
-        U = n('IAZG'),
-        R = o.a.g61ed8a4,
+        E = n('1k08'),
+        B = n('IAZG'),
+        U = o.a.g61ed8a4,
         C = o.a.c3d23f10,
-        A = o.a.d338f53e,
+        H = o.a.d338f53e,
         N = void 0 !== i ? i : (i = n('kbWR')),
-        j = { context: 'SuperFollowsSubscription' },
-        D = function () {
+        W = { context: 'SuperFollowsSubscription' },
+        A = function () {
           var e,
             l,
             n,
             a = Object(b.h)().screenName || '',
             r = { screenName: Object(c.a)(a) },
-            i = Object(U.a)(N, r),
+            i = Object(B.a)(N, r),
             s = null == i || null === (e = i.user) || void 0 === e ? void 0 : e.result,
             u =
               null == i || null === (l = i.viewer) || void 0 === l || null === (n = l.user_results) || void 0 === n
                 ? void 0
                 : n.result
-          return t.a.createElement(E, { screenName: a, user: null != s ? s : void 0, viewer: null != u ? u : void 0 })
+          return t.a.createElement(R, { screenName: a, user: null != s ? s : void 0, viewer: null != u ? u : void 0 })
         },
-        I = function () {
+        O = function () {
           var e = t.a.useMemo(function () {
             return {
               type: 'CustomRetry',
@@ -177,27 +177,26 @@
                 return t.a.createElement(
                   t.a.Fragment,
                   null,
-                  t.a.createElement(B.a, { description: C, style: V.errorTitleDescription, title: R }),
-                  t.a.createElement(F.a, { onPress: e, style: V.errorButton, type: 'brandFilled' }, A),
+                  t.a.createElement(E.a, { description: C, style: V.errorTitleDescription, title: U }),
+                  t.a.createElement(F.a, { onPress: e, style: V.errorButton, type: 'brandFilled' }, H),
                 )
               },
             }
           }, [])
           return t.a.createElement(
             d.a,
-            { errorConfig: j, fallback: e },
-            t.a.createElement(m.a, null, t.a.createElement(D, null)),
+            { errorConfig: W, fallback: e },
+            t.a.createElement(m.a, null, t.a.createElement(A, null)),
           )
         },
         V =
-          ((l.default = t.a.memo(I)),
+          ((l.default = t.a.memo(O)),
           _.a.create(function (e) {
             return { errorTitleDescription: { marginTop: 296 }, errorButton: { marginTop: e.spaces.space24 } }
           }))
     },
     E0zt: function (e, l, n) {
       'use strict'
-      n.r(l)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -205,31 +204,45 @@
         name: 'SuperFollowsSubscribeScreen_viewer',
         selections: [
           {
-            alias: null,
-            args: null,
-            concreteType: 'ApiUser',
-            kind: 'LinkedField',
-            name: 'legacy',
-            plural: !1,
-            selections: [
-              { alias: null, args: null, kind: 'ScalarField', name: 'profile_image_url_https', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'protected', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'verified', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
-            ],
-            storageKey: null,
+            kind: 'RequiredField',
+            field: {
+              alias: null,
+              args: null,
+              concreteType: 'ApiUser',
+              kind: 'LinkedField',
+              name: 'legacy',
+              plural: !1,
+              selections: [
+                { alias: null, args: null, kind: 'ScalarField', name: 'profile_image_url_https', storageKey: null },
+                {
+                  kind: 'RequiredField',
+                  field: { alias: null, args: null, kind: 'ScalarField', name: 'protected', storageKey: null },
+                  action: 'THROW',
+                  path: 'legacy.protected',
+                },
+                {
+                  kind: 'RequiredField',
+                  field: { alias: null, args: null, kind: 'ScalarField', name: 'verified', storageKey: null },
+                  action: 'THROW',
+                  path: 'legacy.verified',
+                },
+                { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
+              ],
+              storageKey: null,
+            },
+            action: 'THROW',
+            path: 'legacy',
           },
         ],
         type: 'User',
         abstractKey: null,
         hash: 'b8bb6765b1b8587c879b79e59eb08e0a',
       }
-      l.default = a
+      e.exports = a
     },
     kbWR: function (e, l, n) {
       'use strict'
-      n.r(l)
       var a,
         r,
         i,
@@ -239,7 +252,8 @@
         o,
         c,
         d,
-        m = {
+        m,
+        g = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'screenName' }]),
             kind: 'Fragment',
@@ -418,6 +432,15 @@
                     ],
                     storageKey: null,
                   },
+                  (m = {
+                    alias: null,
+                    args: null,
+                    filters: null,
+                    handle: 'user',
+                    key: '',
+                    kind: 'LinkedHandle',
+                    name: 'result',
+                  }),
                 ],
                 storageKey: null,
               },
@@ -474,6 +497,7 @@
                         ],
                         storageKey: null,
                       },
+                      m,
                     ],
                     storageKey: null,
                   },
@@ -490,11 +514,10 @@
             text: null,
           },
         }
-      ;(m.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (l.default = m)
+      ;(g.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (e.exports = g)
     },
     l62v: function (e, l, n) {
       'use strict'
-      n.r(l)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -502,18 +525,23 @@
         name: 'SuperFollowsSubscribeScreen_user',
         selections: [
           {
-            alias: null,
-            args: null,
-            concreteType: 'ApiUser',
-            kind: 'LinkedField',
-            name: 'legacy',
-            plural: !1,
-            selections: [
-              { alias: null, args: null, kind: 'ScalarField', name: 'profile_image_url_https', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
-              { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
-            ],
-            storageKey: null,
+            kind: 'RequiredField',
+            field: {
+              alias: null,
+              args: null,
+              concreteType: 'ApiUser',
+              kind: 'LinkedField',
+              name: 'legacy',
+              plural: !1,
+              selections: [
+                { alias: null, args: null, kind: 'ScalarField', name: 'profile_image_url_https', storageKey: null },
+                { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
+              ],
+              storageKey: null,
+            },
+            action: 'THROW',
+            path: 'legacy',
           },
           {
             alias: null,
@@ -545,7 +573,7 @@
         abstractKey: null,
         hash: 'f588db2f47fcadc650368f72a5bbc60a',
       }
-      l.default = a
+      e.exports = a
     },
   },
 ])

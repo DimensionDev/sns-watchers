@@ -3,7 +3,6 @@
   {
     '+hxm': function (e, l, n) {
       'use strict'
-      n.r(l)
       var a,
         t,
         r,
@@ -19,9 +18,10 @@
         y,
         k,
         _,
-        b,
         F,
-        f = {
+        b,
+        f,
+        T = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
@@ -199,7 +199,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'tweet',
                                                     plural: !1,
-                                                    selections: (k = [
+                                                    selections: (_ = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -304,6 +304,15 @@
                                                                 ],
                                                                 storageKey: null,
                                                               },
+                                                              (k = {
+                                                                alias: null,
+                                                                args: null,
+                                                                filters: null,
+                                                                handle: 'user',
+                                                                key: '',
+                                                                kind: 'LinkedHandle',
+                                                                name: 'result',
+                                                              }),
                                                             ],
                                                             storageKey: null,
                                                           },
@@ -360,7 +369,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: k,
+                                                selections: _,
                                                 type: 'Tweet',
                                                 abstractKey: null,
                                               },
@@ -394,7 +403,7 @@
                                                                 name: 'rtl',
                                                                 storageKey: null,
                                                               },
-                                                              (_ = {
+                                                              (F = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -445,7 +454,7 @@
                                                                       },
                                                                       {
                                                                         kind: 'InlineFragment',
-                                                                        selections: (b = [_]),
+                                                                        selections: (b = [F]),
                                                                         type: 'TimelineRichTextCashtag',
                                                                         abstractKey: null,
                                                                       },
@@ -453,7 +462,7 @@
                                                                         kind: 'InlineFragment',
                                                                         selections: [
                                                                           y,
-                                                                          (F = {
+                                                                          (f = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -473,7 +482,7 @@
                                                                       {
                                                                         kind: 'InlineFragment',
                                                                         selections: [
-                                                                          F,
+                                                                          f,
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -641,6 +650,7 @@
                                             ],
                                             storageKey: null,
                                           },
+                                          k,
                                         ],
                                         type: 'UserResults',
                                         abstractKey: null,
@@ -659,6 +669,7 @@
                         ],
                         storageKey: null,
                       },
+                      k,
                     ],
                     storageKey: null,
                   },
@@ -675,11 +686,10 @@
             text: null,
           },
         }
-      ;(f.hash = '693703bbfa133fb16b00c3592d68e184'), (l.default = f)
+      ;(T.hash = '693703bbfa133fb16b00c3592d68e184'), (e.exports = T)
     },
     '1zgV': function (e, l, n) {
       'use strict'
-      n.r(l)
       var a,
         t,
         r,
@@ -695,11 +705,12 @@
         y,
         k,
         _,
-        b,
         F,
+        b,
         f,
+        T,
         K,
-        T = {
+        h = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
@@ -995,6 +1006,15 @@
                                                                 ],
                                                                 storageKey: null,
                                                               },
+                                                              (F = {
+                                                                alias: null,
+                                                                args: null,
+                                                                filters: null,
+                                                                handle: 'user',
+                                                                key: '',
+                                                                kind: 'LinkedHandle',
+                                                                name: 'result',
+                                                              }),
                                                             ],
                                                             storageKey: null,
                                                           },
@@ -1085,7 +1105,7 @@
                                                                 name: 'rtl',
                                                                 storageKey: null,
                                                               },
-                                                              (F = {
+                                                              (f = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -1136,7 +1156,7 @@
                                                                       },
                                                                       {
                                                                         kind: 'InlineFragment',
-                                                                        selections: (f = [F]),
+                                                                        selections: (T = [f]),
                                                                         type: 'TimelineRichTextCashtag',
                                                                         abstractKey: null,
                                                                       },
@@ -1157,7 +1177,7 @@
                                                                       },
                                                                       {
                                                                         kind: 'InlineFragment',
-                                                                        selections: f,
+                                                                        selections: T,
                                                                         type: 'TimelineRichTextHashtag',
                                                                         abstractKey: null,
                                                                       },
@@ -1332,6 +1352,7 @@
                                             ],
                                             storageKey: null,
                                           },
+                                          F,
                                         ],
                                         type: 'UserResults',
                                         abstractKey: null,
@@ -1353,6 +1374,7 @@
                         ],
                         storageKey: null,
                       },
+                      F,
                     ],
                     storageKey: null,
                   },
@@ -1369,7 +1391,7 @@
             text: null,
           },
         }
-      ;(T.hash = '6a81c3d8a3d11472a2e5501503a9d6f5'), (l.default = T)
+      ;(h.hash = '6a81c3d8a3d11472a2e5501503a9d6f5'), (e.exports = h)
     },
     '2MR/': function (e, l, n) {
       'use strict'
@@ -1398,13 +1420,13 @@
             y = i.a.useState(!1),
             k = t()(y, 2),
             _ = k[0],
-            b = k[1]
+            F = k[1]
           return u({
             actionText: _ ? a : p,
             children: _ ? l : r,
             lang: s,
             onActionClick: function () {
-              return b(!_)
+              return F(!_)
             },
           })
         }
@@ -1428,17 +1450,17 @@
         y = n.n(p),
         k = n('aITJ'),
         _ = n('MWbm'),
-        b = (n('enFi'), n('jAXQ')),
-        F = n.n(b),
+        F = (n('YWiL'), n('CVPS')),
+        b = n.n(F),
         f = n('7N4s'),
-        K = n('r7g+'),
-        T = n('2MR/'),
+        T = n('r7g+'),
+        K = n('2MR/'),
         h = n('v302'),
         v = n('WLAg'),
         S = n('tLTi'),
         w = n('rHpw'),
         x = y.a.a098fa3c,
-        E = {
+        R = {
           display_text_range: [0, 24],
           favorite_count: 0,
           favorited: !1,
@@ -1480,7 +1502,7 @@
           translator_type: 'none',
           withheld_scope: '',
         },
-        R = function (e) {
+        E = function (e) {
           var l,
             t,
             r,
@@ -1489,27 +1511,27 @@
             u,
             d,
             p = e.tweet_results,
-            y = F()(void 0 !== a ? a : (a = n('Gi4s')), p),
-            b = o.a.useContext(f.b).isModal,
+            y = b()(void 0 !== a ? a : (a = n('Gi4s')), p),
+            F = o.a.useContext(f.b).isModal,
             w = null == y || null === (l = y.result) || void 0 === l ? void 0 : l.__typename,
-            R =
+            E =
               'TweetWithVisibilityResults' === w
                 ? null === (t = y.result) || void 0 === t
                   ? void 0
                   : t.tweet
                 : y.result,
-            C = null == R || null === (r = R.legacy) || void 0 === r ? void 0 : r.full_text,
+            C = null == E || null === (r = E.legacy) || void 0 === r ? void 0 : r.full_text,
             U = k.b.isTwitterApp(),
             D = o.a.useCallback(
               function (e) {
-                return o.a.createElement(K.a.UserAvatar, m()({}, e, { withHoverCard: !U, withLink: !U }))
+                return o.a.createElement(T.a.UserAvatar, m()({}, e, { withHoverCard: !U, withLink: !U }))
               },
               [U],
             ),
-            z = o.a.useCallback(
+            H = o.a.useCallback(
               function () {
                 return o.a.createElement(
-                  T.a,
+                  K.a,
                   {
                     label: x,
                     render: function (e) {
@@ -1521,7 +1543,7 @@
               },
               [C],
             ),
-            B = o.a.useMemo(
+            O = o.a.useMemo(
               function () {
                 if ('TweetTombstone' === w) {
                   var e,
@@ -1542,11 +1564,11 @@
             'TweetTombstone' === w &&
             (null === (u = y.result) || void 0 === u || null === (d = u.tombstone) || void 0 === d ? void 0 : d.text)
           )
-            return B
+            return O
               ? o.a.createElement(
                   v.a,
                   null,
-                  o.a.createElement(S.a, { align: B.rtl ? 'right' : 'left', entities: B.entities, text: B.text }),
+                  o.a.createElement(S.a, { align: O.rtl ? 'right' : 'left', entities: O.entities, text: O.text }),
                 )
               : null
           return (function (e) {
@@ -1563,7 +1585,7 @@
               var a = e.core.user_results.result.legacy,
                 t = {
                   tweet: c()(
-                    c()({}, E),
+                    c()({}, R),
                     {},
                     {
                       id_str: e.legacy.id_str || '',
@@ -1591,17 +1613,17 @@
                 }
               return o.a.createElement(
                 _.a,
-                { style: [I.tweet, b && I.wideScreen] },
+                { style: [I.tweet, F && I.wideScreen] },
                 o.a.createElement(
-                  K.a,
+                  T.a,
                   m()({}, t, {
                     renderActionsBar: function () {
                       return null
                     },
                     renderTimestamp: function (e) {
-                      return o.a.createElement(K.a.Timestamp, m()({}, e, { link: void 0 }))
+                      return o.a.createElement(T.a.Timestamp, m()({}, e, { link: void 0 }))
                     },
-                    renderTombstone: z,
+                    renderTombstone: H,
                     renderUserAvatar: D,
                     staticLinkConfig: null,
                   }),
@@ -1609,9 +1631,9 @@
               )
             }
             return null
-          })(R)
+          })(E)
         },
-        C = o.a.memo(R),
+        C = o.a.memo(E),
         I = w.a.create(function (e) {
           return {
             tweet: {
@@ -1629,7 +1651,7 @@
         D = function (e) {
           var l,
             a = e.userResults,
-            r = F()(void 0 !== t ? t : (t = n('r/Jf')), a),
+            r = b()(void 0 !== t ? t : (t = n('r/Jf')), a),
             i = o.a.useContext(f.b).isModal,
             s = null == r || null === (l = r.result) || void 0 === l ? void 0 : l.legacy,
             u = (null == s ? void 0 : s.idStr) || '',
@@ -1640,7 +1662,7 @@
           return u
             ? o.a.createElement(
                 _.a,
-                { style: [z.userCellContainer, i && z.wideScreen] },
+                { style: [H.userCellContainer, i && H.wideScreen] },
                 o.a.createElement(U.a, {
                   avatarUri: m,
                   description: c,
@@ -1653,7 +1675,7 @@
               )
             : null
         },
-        z = w.a.create(function (e) {
+        H = w.a.create(function (e) {
           return {
             userCellContainer: {
               marginTop: e.spaces.space12,
@@ -1665,9 +1687,9 @@
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        B = function (e) {
+        O = function (e) {
           var l = e.report_entity_results,
-            a = F()(void 0 !== r ? r : (r = n('xYG4')), l)
+            a = b()(void 0 !== r ? r : (r = n('xYG4')), l)
           switch (a.__typename) {
             case 'TweetResults':
               return o.a.createElement(C, { tweet_results: a })
@@ -1677,15 +1699,15 @@
               return null
           }
         },
-        H =
+        z =
           ((l.a = function (e) {
             var l = e.report,
-              a = F()(void 0 !== i ? i : (i = n('6mUz')), l)
+              a = b()(void 0 !== i ? i : (i = n('6mUz')), l)
             return o.a.createElement(
               _.a,
-              { style: H.entityList },
+              { style: z.entityList },
               a.map(function (e, l) {
-                return o.a.createElement(B, { key: l, report_entity_results: e })
+                return o.a.createElement(O, { key: l, report_entity_results: e })
               }),
             )
           }),
@@ -1695,7 +1717,6 @@
     },
     '6mUz': function (e, l, n) {
       'use strict'
-      n.r(l)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -1706,11 +1727,10 @@
         abstractKey: '__isReportEntityResults',
         hash: 'b18415d0f89c2df57f81abcb4600f199',
       }
-      l.default = a
+      e.exports = a
     },
     Gi4s: function (e, l, n) {
       'use strict'
-      n.r(l)
       var a,
         t,
         r,
@@ -1718,7 +1738,12 @@
         s,
         o,
         u,
-        c = {
+        c,
+        d,
+        m,
+        g,
+        p,
+        y = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1745,7 +1770,7 @@
                       name: 'tweet',
                       plural: !1,
                       selections: [
-                        (t = {
+                        {
                           alias: null,
                           args: null,
                           concreteType: 'TweetCore',
@@ -1773,57 +1798,72 @@
                                       kind: 'InlineFragment',
                                       selections: [
                                         {
-                                          alias: null,
-                                          args: null,
-                                          concreteType: 'ApiUser',
-                                          kind: 'LinkedField',
-                                          name: 'legacy',
-                                          plural: !1,
-                                          selections: [
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'description',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'profile_image_url_https',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'protected',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'screen_name',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'name',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
-                                              name: 'verified',
-                                              storageKey: null,
-                                            },
-                                          ],
-                                          storageKey: null,
+                                          kind: 'RequiredField',
+                                          field: {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: 'ApiUser',
+                                            kind: 'LinkedField',
+                                            name: 'legacy',
+                                            plural: !1,
+                                            selections: [
+                                              (t = {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'description',
+                                                storageKey: null,
+                                              }),
+                                              (r = {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'profile_image_url_https',
+                                                storageKey: null,
+                                              }),
+                                              {
+                                                kind: 'RequiredField',
+                                                field: (i = {
+                                                  alias: null,
+                                                  args: null,
+                                                  kind: 'ScalarField',
+                                                  name: 'protected',
+                                                  storageKey: null,
+                                                }),
+                                                action: 'THROW',
+                                                path: 'result.tweet.core.user_results.result.legacy.protected',
+                                              },
+                                              (s = {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'screen_name',
+                                                storageKey: null,
+                                              }),
+                                              (o = {
+                                                alias: null,
+                                                args: null,
+                                                kind: 'ScalarField',
+                                                name: 'name',
+                                                storageKey: null,
+                                              }),
+                                              {
+                                                kind: 'RequiredField',
+                                                field: (u = {
+                                                  alias: null,
+                                                  args: null,
+                                                  kind: 'ScalarField',
+                                                  name: 'verified',
+                                                  storageKey: null,
+                                                }),
+                                                action: 'THROW',
+                                                path: 'result.tweet.core.user_results.result.legacy.verified',
+                                              },
+                                            ],
+                                            storageKey: null,
+                                          },
+                                          action: 'THROW',
+                                          path: 'result.tweet.core.user_results.result.legacy',
                                         },
                                       ],
                                       type: 'User',
@@ -1837,8 +1877,8 @@
                             },
                           ],
                           storageKey: null,
-                        }),
-                        (r = {
+                        },
+                        (c = {
                           alias: null,
                           args: null,
                           concreteType: 'LegacyTweet',
@@ -1859,7 +1899,7 @@
                           ],
                           storageKey: null,
                         }),
-                        (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                        (d = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                       ],
                       storageKey: null,
                     },
@@ -1867,7 +1907,86 @@
                   type: 'TweetWithVisibilityResults',
                   abstractKey: null,
                 },
-                { kind: 'InlineFragment', selections: [t, r], type: 'Tweet', abstractKey: null },
+                {
+                  kind: 'InlineFragment',
+                  selections: [
+                    {
+                      alias: null,
+                      args: null,
+                      concreteType: 'TweetCore',
+                      kind: 'LinkedField',
+                      name: 'core',
+                      plural: !1,
+                      selections: [
+                        {
+                          alias: null,
+                          args: null,
+                          concreteType: 'UserResults',
+                          kind: 'LinkedField',
+                          name: 'user_results',
+                          plural: !1,
+                          selections: [
+                            {
+                              alias: null,
+                              args: null,
+                              concreteType: null,
+                              kind: 'LinkedField',
+                              name: 'result',
+                              plural: !1,
+                              selections: [
+                                {
+                                  kind: 'InlineFragment',
+                                  selections: [
+                                    {
+                                      kind: 'RequiredField',
+                                      field: {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: 'ApiUser',
+                                        kind: 'LinkedField',
+                                        name: 'legacy',
+                                        plural: !1,
+                                        selections: [
+                                          t,
+                                          r,
+                                          {
+                                            kind: 'RequiredField',
+                                            field: i,
+                                            action: 'THROW',
+                                            path: 'result.core.user_results.result.legacy.protected',
+                                          },
+                                          s,
+                                          o,
+                                          {
+                                            kind: 'RequiredField',
+                                            field: u,
+                                            action: 'THROW',
+                                            path: 'result.core.user_results.result.legacy.verified',
+                                          },
+                                        ],
+                                        storageKey: null,
+                                      },
+                                      action: 'THROW',
+                                      path: 'result.core.user_results.result.legacy',
+                                    },
+                                  ],
+                                  type: 'User',
+                                  abstractKey: null,
+                                },
+                              ],
+                              storageKey: null,
+                            },
+                          ],
+                          storageKey: null,
+                        },
+                      ],
+                      storageKey: null,
+                    },
+                    c,
+                  ],
+                  type: 'Tweet',
+                  abstractKey: null,
+                },
                 {
                   kind: 'InlineFragment',
                   selections: [
@@ -1896,7 +2015,7 @@
                                   name: 'formatRichText_timelineRichText',
                                   selections: [
                                     { alias: null, args: null, kind: 'ScalarField', name: 'rtl', storageKey: null },
-                                    (s = {
+                                    (m = {
                                       alias: null,
                                       args: null,
                                       kind: 'ScalarField',
@@ -1951,15 +2070,15 @@
                                                     a,
                                                     {
                                                       kind: 'InlineFragment',
-                                                      selections: (o = [s]),
+                                                      selections: (g = [m]),
                                                       type: 'TimelineRichTextCashtag',
                                                       abstractKey: null,
                                                     },
                                                     {
                                                       kind: 'InlineFragment',
                                                       selections: [
-                                                        i,
-                                                        (u = {
+                                                        d,
+                                                        (p = {
                                                           alias: null,
                                                           args: null,
                                                           kind: 'ScalarField',
@@ -1972,7 +2091,7 @@
                                                     },
                                                     {
                                                       kind: 'InlineFragment',
-                                                      selections: o,
+                                                      selections: g,
                                                       type: 'TimelineRichTextHashtag',
                                                       abstractKey: null,
                                                     },
@@ -1983,7 +2102,7 @@
                                                         {
                                                           kind: 'InlineFragment',
                                                           selections: [
-                                                            u,
+                                                            p,
                                                             {
                                                               alias: null,
                                                               args: null,
@@ -2046,7 +2165,7 @@
                                                                   name: 'timeline_with_context',
                                                                   plural: !1,
                                                                   selections: [
-                                                                    i,
+                                                                    d,
                                                                     {
                                                                       alias: null,
                                                                       args: null,
@@ -2113,7 +2232,7 @@
           type: 'TweetResults',
           abstractKey: null,
         }
-      ;(c.hash = 'f748b4df0285b0469a6fb31d17cb0d5b'), (l.default = c)
+      ;(y.hash = 'f748b4df0285b0469a6fb31d17cb0d5b'), (e.exports = y)
     },
     'IMA+': function (e, l, n) {
       'use strict'
@@ -2132,27 +2251,27 @@
         y = n('KEM+'),
         k = n.n(y),
         _ = (n('yH/f'), n('2G9S'), n('ho0z'), n('hBvt'), n('vrRf'), n('1t7P'), n('jQ/y'), n('SV7d')),
-        b = n('ERkP'),
-        F = n.n(b),
+        F = n('ERkP'),
+        b = n.n(F),
         f = n('TIdA'),
-        K = n('t62R'),
-        T = n('5mJL'),
+        T = n('t62R'),
+        K = n('5mJL'),
         h = n('DNho'),
         v = n('nBUg'),
         S = n('qjak'),
         w = n('ir4X'),
         x = n('htQn'),
-        E = n('e5HP'),
+        R = n('e5HP'),
         L = n('FBXD'),
-        R = n('Nqmc'),
+        E = n('Nqmc'),
         C = n('rHpw'),
         I = n('jhWN'),
         U = n('1I0O'),
         D = n('pBrB'),
-        z = n('jV+4'),
-        B = n('MWbm'),
-        H = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
-        O = Object.freeze({
+        H = n('jV+4'),
+        O = n('MWbm'),
+        z = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
+        B = Object.freeze({
           UserCompact: 'UserCompact',
           UserConcise: 'UserConcise',
           UserDetailed: 'UserDetailed',
@@ -2187,30 +2306,30 @@
                   y = l.screenNameSuffix,
                   k = l.translatorType,
                   _ = l.withFollowsYou,
-                  b = l.withLink,
-                  f = F.a.createElement(z.a, {
+                  F = l.withLink,
+                  f = b.a.createElement(H.a, {
                     badgeContext: n,
                     displayNameLabel: t,
                     isProtected: o,
                     isVerified: u,
                     name: c,
                     onLinkClick: d,
-                    promotedContent: g === H.TWEET ? m : void 0,
+                    promotedContent: g === z.TWEET ? m : void 0,
                     screenName: p,
                     screenNameSuffix: y,
                     translatorType: k,
                     withFollowsYou: _ && s,
-                    withHoverCard: !r && !i && b,
-                    withLink: !i && b,
+                    withHoverCard: !r && !i && F,
+                    withLink: !i && F,
                     withScreenName: !a,
                     withStackedLayout: !0,
                   })
                 return a
-                  ? F.a.createElement(
-                      B.a,
+                  ? b.a.createElement(
+                      O.a,
                       { style: P.disabledMessageContainer },
                       f,
-                      F.a.createElement(K.b, { color: 'gray700' }, a),
+                      b.a.createElement(T.b, { color: 'gray700' }, a),
                     )
                   : f
               }),
@@ -2220,8 +2339,8 @@
                   a = l.displayMode,
                   t = l.socialContext
                 return t
-                  ? F.a.createElement(v.b.UseProps, null, function (e) {
-                      return F.a.createElement(R.a, {
+                  ? b.a.createElement(v.b.UseProps, null, function (e) {
+                      return b.a.createElement(E.a, {
                         avatarSize: n,
                         contextType: t.contextType,
                         iconSize: 'large',
@@ -2229,7 +2348,7 @@
                         style: P.socialContext,
                         text: t.text,
                         weight: 'bold',
-                        withLeftPadding: !e.socialContextRefreshEnabled() && a !== O.ExperimentalUserTypeahead,
+                        withLeftPadding: !e.socialContextRefreshEnabled() && a !== B.ExperimentalUserTypeahead,
                       })
                     })
                   : null
@@ -2242,12 +2361,12 @@
                   a = n.Icon,
                   t = n.text
                 return l
-                  ? F.a.createElement(
-                      B.a,
+                  ? b.a.createElement(
+                      O.a,
                       { style: P.userTypeaheadSocialContext },
-                      F.a.createElement(B.a, { style: P.userTypeaheadSocialContextIcon }, a),
-                      F.a.createElement(
-                        K.b,
+                      b.a.createElement(O.a, { style: P.userTypeaheadSocialContextIcon }, a),
+                      b.a.createElement(
+                        T.b,
                         { color: 'gray700', numberOfLines: 1, style: P.userTypeaheadSocialContextText },
                         t,
                       ),
@@ -2256,11 +2375,11 @@
               }),
               k()(c()(e), '_renderHighlightedUserLabel', function () {
                 var l = e.props.highlightedLabel
-                return l ? F.a.createElement(w.a, { label: l }) : null
+                return l ? b.a.createElement(w.a, { label: l }) : null
               }),
               k()(c()(e), '_isEligibleForBio', function () {
                 var l = e.props.displayMode
-                return -1 !== [O.UserDetailed, O.UserConcise].indexOf(l)
+                return -1 !== [B.UserDetailed, B.UserConcise].indexOf(l)
               }),
               k()(c()(e), '_handleKeyPress', function (l) {
                 l.defaultPrevented || 'Enter' !== l.key || e._handleClick(l)
@@ -2297,23 +2416,23 @@
                     p = e.onScreenNameClick,
                     y = e.presenceIndicator,
                     k = e.promotedContent,
-                    b = e.promotedItemType,
+                    F = e.promotedItemType,
                     f = e.screenName,
-                    K = e.style,
+                    T = e.style,
                     v = e.testID,
                     S = e.userId,
                     w = e.withDarkerInteractiveBackground,
                     L = e.withInteractiveStyling,
-                    R = e.withLink,
+                    E = e.withLink,
                     C = e.withUsernameCenterAligned,
-                    D = R && !c,
-                    z = u === O.UserCompact || C,
-                    M = u === O.ExperimentalUserTypeahead,
-                    A =
-                      k && b === H.USER && 'earned' !== (k.disclosure_type && k.disclosure_type.toLowerCase())
-                        ? F.a.createElement(E.a, { contentAuthorId: S, promotedContent: k, style: P.promotedIndicator })
+                    D = E && !c,
+                    H = u === B.UserCompact || C,
+                    M = u === B.ExperimentalUserTypeahead,
+                    W =
+                      k && F === z.USER && 'earned' !== (k.disclosure_type && k.disclosure_type.toLowerCase())
+                        ? b.a.createElement(R.a, { contentAuthorId: S, promotedContent: k, style: P.promotedIndicator })
                         : null,
-                    N = {
+                    A = {
                       accessibilityHidden: !0,
                       decoration: a,
                       focusable: !1,
@@ -2325,13 +2444,13 @@
                       style: P.avatar,
                       uri: i,
                       withHoverCard: D,
-                      withLink: R,
+                      withLink: E,
                     },
-                    W = F.a.createElement(h.a.Consumer, null, function (e) {
+                    N = b.a.createElement(h.a.Consumer, null, function (e) {
                       var l = e.avatarSize
                       return y
-                        ? F.a.createElement(U.a, t()({}, N, y, { size: l }))
-                        : F.a.createElement(I.a, t()({ size: l }, N))
+                        ? b.a.createElement(U.a, t()({}, A, y, { size: l }))
+                        : b.a.createElement(I.a, t()({ size: l }, A))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== g,
@@ -2339,19 +2458,19 @@
                     J = this._renderUserName(),
                     X = this._renderHighlightedUserLabel(),
                     Y = this._renderBio(),
-                    Z = X || Y || A || s,
-                    $ = F.a.createElement(
-                      F.a.Fragment,
+                    Z = X || Y || W || s,
+                    $ = b.a.createElement(
+                      b.a.Fragment,
                       null,
                       X,
                       Y,
-                      A,
-                      s ? F.a.createElement(B.a, { style: P.bottomControl }, s) : null,
+                      W,
+                      s ? b.a.createElement(O.a, { style: P.bottomControl }, s) : null,
                     )
-                  return F.a.createElement(
+                  return b.a.createElement(
                     _.a,
                     { behavioralEventContext: V },
-                    F.a.createElement(
+                    b.a.createElement(
                       x.a,
                       {
                         accessibilityLabel: l,
@@ -2362,27 +2481,27 @@
                         onClick: this._handleClick,
                         onKeyPress: this._handleKeyPress,
                         pointerEvents: d ? 'none' : void 0,
-                        style: [P.root, K],
+                        style: [P.root, T],
                         testID: v,
                         withDarkerInteractiveBackground: w,
                         withInteractiveStyling: null != L ? L : !!g,
                       },
                       M ? null : this._renderSocialContext(),
-                      F.a.createElement(
-                        T.a,
+                      b.a.createElement(
+                        K.a,
                         {
-                          avatarCell: W,
-                          avatarCellStyle: [P.avatarColumn, z && P.bodyColumnCentered],
+                          avatarCell: N,
+                          avatarCellStyle: [P.avatarColumn, H && P.bodyColumnCentered],
                           avatarSize: M ? 'xxxLarge' : r,
-                          cellStyle: [P.bodyColumn, z && P.bodyColumnCentered],
+                          cellStyle: [P.bodyColumn, H && P.bodyColumnCentered],
                         },
-                        F.a.createElement(B.a, { style: P.body }, J, o),
-                        z ? null : $,
+                        b.a.createElement(O.a, { style: P.body }, J, o),
+                        H ? null : $,
                         M ? this._renderUserTypeaheadSocialContext() : null,
                       ),
-                      Z && z
-                        ? F.a.createElement(
-                            T.a,
+                      Z && H
+                        ? b.a.createElement(
+                            K.a,
                             { avatarCell: null, avatarCellStyle: P.avatarColumn, cellStyle: P.bodyColumn },
                             $,
                           )
@@ -2402,10 +2521,10 @@
                     r = e.withheldDescription,
                     i = e.withheldEntities
                   return a && l && this._isEligibleForBio()
-                    ? F.a.createElement(D.a, {
+                    ? b.a.createElement(D.a, {
                         description: l,
                         entities: a,
-                        isConcise: n === O.UserConcise,
+                        isConcise: n === B.UserConcise,
                         style: P.bio,
                         userId: t,
                         withheldDescription: r,
@@ -2417,7 +2536,7 @@
             ]),
             n
           )
-        })(F.a.PureComponent)
+        })(b.a.PureComponent)
       k()(M, 'defaultProps', { testID: 'UserCell', withLink: !0 })
       var P = C.a.create(function (e) {
         return {
@@ -2450,7 +2569,7 @@
         t = n('ERkP'),
         r = n.n(t),
         i = n('jHSc'),
-        s = (n('enFi'), n('3XMw')),
+        s = (n('YWiL'), n('3XMw')),
         o = n.n(s),
         u = n('lUZE'),
         c = n('Fr3L'),
@@ -2461,19 +2580,19 @@
         y = n('Irs7'),
         k = n('pjBI'),
         _ = n('t62R'),
-        b = n('Wms4'),
-        F = n('7N4s'),
+        F = n('Wms4'),
+        b = n('7N4s'),
         f = n('rHpw'),
-        K = n('lnti'),
-        T = n('0zXz'),
+        T = n('lnti'),
+        K = n('0zXz'),
         h = n('zCf4'),
         v = o.a.ccf2f24e,
         S = o.a.fb35e52a,
         w = 'gray700',
         x = o.a.b7ba7129,
-        E = o.a.d90b8c04,
+        R = o.a.d90b8c04,
         L = void 0 !== a ? a : (a = n('1zgV')),
-        R = function () {
+        E = function () {
           var e,
             l,
             n,
@@ -2499,9 +2618,9 @@
                 : '',
             p = null == c ? void 0 : c.header,
             y = null == c ? void 0 : c.outcome_text,
-            F = null == c ? void 0 : c.report_entities_results,
+            b = null == c ? void 0 : c.report_entities_results,
             f = null == c ? void 0 : c.report_outcome,
-            T = null == c ? void 0 : c.rule_link
+            K = null == c ? void 0 : c.rule_link
           return r.a.createElement(
             r.a.Fragment,
             null,
@@ -2512,11 +2631,11 @@
               r.a.createElement(_.b, { color: w }, g),
             ),
             r.a.createElement(_.b, { size: 'title4', style: C.header, weight: 'heavy' }, p),
-            r.a.createElement(_.b, { link: T }, S),
-            F ? r.a.createElement(d.a, { report: Object(K.a)(F) }) : null,
+            r.a.createElement(_.b, { link: K }, S),
+            b ? r.a.createElement(d.a, { report: Object(T.a)(b) }) : null,
             f
               ? r.a.createElement(
-                  b.a,
+                  F.a,
                   { background: 'primary', style: C.label },
                   r.a.createElement(
                     _.b,
@@ -2524,7 +2643,7 @@
                     (function (e) {
                       switch (e) {
                         case '0':
-                          return E
+                          return R
                         case '1':
                           return x
                         default:
@@ -2540,8 +2659,8 @@
       l.default = Object(y.a)(
         function () {
           var e = Object(h.f)(),
-            l = r.a.useContext(F.b).isModal,
-            n = T.a,
+            l = r.a.useContext(b.b).isModal,
+            n = K.a,
             a = g.b.isTwitterApp(),
             t = r.a.useMemo(
               function () {
@@ -2564,7 +2683,7 @@
               r.a.createElement(
                 p.a,
                 { style: [C.contentBody, l ? C.wideScreen : C.narrowScreen] },
-                r.a.createElement(c.a, { errorConfig: { context: 'REPORT_DETAIL' } }, r.a.createElement(R, null)),
+                r.a.createElement(c.a, { errorConfig: { context: 'REPORT_DETAIL' } }, r.a.createElement(E, null)),
               ),
             ),
           )
@@ -2591,7 +2710,6 @@
     },
     'r/Jf': function (e, l, n) {
       'use strict'
-      n.r(l)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -2611,26 +2729,31 @@
                 kind: 'InlineFragment',
                 selections: [
                   {
-                    alias: null,
-                    args: null,
-                    concreteType: 'ApiUser',
-                    kind: 'LinkedField',
-                    name: 'legacy',
-                    plural: !1,
-                    selections: [
-                      { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                      { alias: 'idStr', args: null, kind: 'ScalarField', name: 'id_str', storageKey: null },
-                      { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
-                      {
-                        alias: null,
-                        args: null,
-                        kind: 'ScalarField',
-                        name: 'profile_image_url_https',
-                        storageKey: null,
-                      },
-                      { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
-                    ],
-                    storageKey: null,
+                    kind: 'RequiredField',
+                    field: {
+                      alias: null,
+                      args: null,
+                      concreteType: 'ApiUser',
+                      kind: 'LinkedField',
+                      name: 'legacy',
+                      plural: !1,
+                      selections: [
+                        { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
+                        { alias: 'idStr', args: null, kind: 'ScalarField', name: 'id_str', storageKey: null },
+                        { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                        {
+                          alias: null,
+                          args: null,
+                          kind: 'ScalarField',
+                          name: 'profile_image_url_https',
+                          storageKey: null,
+                        },
+                        { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
+                      ],
+                      storageKey: null,
+                    },
+                    action: 'THROW',
+                    path: 'result.legacy',
                   },
                 ],
                 type: 'User',
@@ -2644,7 +2767,7 @@
         abstractKey: null,
         hash: 'fd6bd3ce65fc643c13eaf27668e8d085',
       }
-      l.default = a
+      e.exports = a
     },
     sjuR: function (e, l, n) {
       'use strict'
@@ -2654,7 +2777,7 @@
         t = n('ERkP'),
         r = n.n(t),
         i = n('jHSc'),
-        s = (n('enFi'), n('3XMw')),
+        s = (n('YWiL'), n('3XMw')),
         o = n.n(s),
         u = n('Fr3L'),
         c = n.p + 'report-detail-ear.0518acc5.png',
@@ -2665,23 +2788,23 @@
         y = n('Irs7'),
         k = n('pjBI'),
         _ = n('t62R'),
-        b = n('7N4s'),
-        F = n('3rX5'),
+        F = n('7N4s'),
+        b = n('3rX5'),
         f = n('rHpw'),
-        K = n('lnti'),
-        T = n('0zXz'),
+        T = n('lnti'),
+        K = n('0zXz'),
         h = n('zCf4'),
         v = o.a.e37836f8,
         S = o.a.ccf2f24e,
         w = o.a.e238c59f,
         x = 'gray700',
-        E = void 0 !== a ? a : (a = n('+hxm')),
+        R = void 0 !== a ? a : (a = n('+hxm')),
         L = function () {
           var e,
             l,
             n,
             a = Object(h.h)(),
-            t = Object(m.a)(E, { reportId: a.reportId || '' })
+            t = Object(m.a)(R, { reportId: a.reportId || '' })
           if (!t) return null
           var i,
             s,
@@ -2702,7 +2825,7 @@
                 : '',
             p = null == c ? void 0 : c.header,
             y = null == c ? void 0 : c.follow_up_text,
-            b = null == c ? void 0 : c.report_entities_results
+            F = null == c ? void 0 : c.report_entities_results
           return r.a.createElement(
             r.a.Fragment,
             null,
@@ -2713,17 +2836,17 @@
               r.a.createElement(_.b, { color: x }, g),
             ),
             r.a.createElement(_.b, { size: 'title3', weight: 'heavy' }, p),
-            b ? r.a.createElement(d.a, { report: Object(K.a)(b) }) : null,
-            r.a.createElement(_.b, { size: 'headline2', style: R.headline, weight: 'heavy' }, w),
+            F ? r.a.createElement(d.a, { report: Object(T.a)(F) }) : null,
+            r.a.createElement(_.b, { size: 'headline2', style: E.headline, weight: 'heavy' }, w),
             r.a.createElement(_.b, { color: x, size: 'subtext2', weight: 'normal' }, y),
           )
         },
-        R =
+        E =
           ((l.default = Object(y.a)(
             function () {
               var e = Object(h.f)(),
-                l = r.a.useContext(b.b).isModal,
-                n = T.a,
+                l = r.a.useContext(F.b).isModal,
+                n = K.a,
                 a = g.b.isTwitterApp(),
                 t = r.a.useMemo(
                   function () {
@@ -2735,7 +2858,7 @@
                 i.b,
                 {
                   backButtonType: 'close',
-                  containerStyle: R.root,
+                  containerStyle: E.root,
                   documentTitle: v,
                   history: e,
                   renderHeader: t,
@@ -2743,19 +2866,19 @@
                 },
                 r.a.createElement(
                   p.a,
-                  { style: R.parentContainer },
+                  { style: E.parentContainer },
                   r.a.createElement(
                     p.a,
-                    { style: R.contentHeader },
+                    { style: E.contentHeader },
                     r.a.createElement(
                       p.a,
-                      { style: R.imageContainer },
-                      r.a.createElement(F.a, { accessibilityLabel: '', source: c, style: R.image }),
+                      { style: E.imageContainer },
+                      r.a.createElement(b.a, { accessibilityLabel: '', source: c, style: E.image }),
                     ),
                   ),
                   r.a.createElement(
                     p.a,
-                    { style: [R.contentBody, l ? R.wideScreen : R.narrowScreen] },
+                    { style: [E.contentBody, l ? E.wideScreen : E.narrowScreen] },
                     r.a.createElement(u.a, { errorConfig: { context: 'REPORT_DETAIL' } }, r.a.createElement(L, null)),
                   ),
                 ),
@@ -2783,7 +2906,6 @@
     },
     xYG4: function (e, l, n) {
       'use strict'
-      n.r(l)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -2798,7 +2920,7 @@
         abstractKey: '__isReportEntityResults',
         hash: '5341a800b22c6e54bfa4fe619fd32529',
       }
-      l.default = a
+      e.exports = a
     },
   },
 ])

@@ -9,15 +9,15 @@
         r = n.n(o),
         s = n('M2x3'),
         c = 'settingsAppBar',
-        u = n('/yvb'),
-        l = n('rHpw'),
+        l = n('/yvb'),
+        u = n('rHpw'),
         d = r.a.bb081ea1,
         p = { viewType: 'settings_button' },
         f = i.a.memo(function (t) {
           var e = t.onPress,
             n = t.pullRight,
             a = t.to
-          return i.a.createElement(u.a, {
+          return i.a.createElement(l.a, {
             accessibilityLabel: d,
             behavioralEventContext: p,
             hoverLabel: { label: d },
@@ -30,7 +30,7 @@
             type: 'primaryText',
           })
         }),
-        m = l.a.create(function (t) {
+        m = u.a.create(function (t) {
           return { button: { marginVertical: 'calc(-'.concat(t.spaces.space12, ')') } }
         })
       e.a = f
@@ -38,7 +38,7 @@
     QuZr: function (t, e, n) {
       'use strict'
       n.d(e, 'a', function () {
-        return vt
+        return gt
       })
       var a,
         i,
@@ -46,8 +46,8 @@
         r,
         s = n('97Jx'),
         c = n.n(s),
-        u = n('VrFO'),
-        l = n.n(u),
+        l = n('VrFO'),
+        u = n.n(l),
         d = n('Y9Ll'),
         p = n.n(d),
         f = n('1Pcy'),
@@ -55,23 +55,23 @@
         y = n('5Yy7'),
         h = n.n(y),
         b = n('2VqO'),
-        v = n.n(b),
-        g = n('KEM+'),
-        _ = n.n(g),
+        g = n.n(b),
+        v = n('KEM+'),
+        _ = n.n(v),
         T = (n('2G9S'), n('ERkP')),
         w = n.n(T),
         E = (n('5BYb'), n('7x/C'), n('8UdT')),
         M = n('oQhu'),
-        P = n('z2Pn'),
-        S = n('xZGM'),
-        A = n('rxPX'),
-        k = Object(M.a)(function (t, e) {
+        S = n('z2Pn'),
+        P = n('xZGM'),
+        k = n('rxPX'),
+        A = Object(M.a)(function (t, e) {
           return e && e.notificationsModule(t)
         }),
         C = n('FIs5'),
         x = n('yiKp'),
-        I = n.n(x),
-        O = n('ezF+'),
+        O = n.n(x),
+        I = n('ezF+'),
         L = n('QIgh'),
         V = n('AP4B'),
         j =
@@ -86,42 +86,23 @@
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        U = O.e(j),
-        R = n('rHpw'),
+        R = I.e(j),
+        U = n('rHpw'),
         D = n('VrCx'),
         N = n('xWpm'),
         B =
           ((i = {}),
-          _()(i, E.b.Notification, U),
+          _()(i, E.b.Notification, R),
           _()(
             i,
             E.b.Tweet,
-            O.c({
+            I.c({
               selectDisplayType: function (t) {
                 return t.content.displayType
               },
               handlers:
                 ((a = {}),
-                _()(
-                  a,
-                  D.a.Tweet,
-                  Object(N.f)({
-                    allowDownvote: !0,
-                    createAdditionalProps: function (t, e) {
-                      return { isUnread: e.isUnread }
-                    },
-                    selectData: function (t) {
-                      var e = t.entry,
-                        n = t.module
-                      return {
-                        isUnread: function (t) {
-                          return n.selectIsUnread(t, e.entryId)
-                        },
-                      }
-                    },
-                    withMuteConversation: !0,
-                  }),
-                ),
+                _()(a, D.a.Tweet, Object(N.f)({ allowDownvote: !0, withMuteConversation: !0, withUnreadStyles: !0 })),
                 _()(
                   a,
                   D.a.QuotedTweet,
@@ -135,8 +116,8 @@
             }),
           ),
           i),
-        H = I()(I()(I()({}, Object(L.a)({ tweetDismissable: !0, withMuteConversation: !0 })), B), V.a),
-        F = R.a.create(function (t) {
+        H = O()(O()(O()({}, Object(L.a)({ tweetDismissable: !0, withMuteConversation: !0 })), B), V.a),
+        F = U.a.create(function (t) {
           return {
             quotedTweet: {
               marginHorizontal: t.componentDimensions.gutterHorizontal,
@@ -230,8 +211,8 @@
           return it('buttonText', t, e)
         },
         ct = G.a.eb75875d,
-        ut = G.a.e9f1fbcb,
-        lt = G.a.f287bb3a,
+        lt = G.a.e9f1fbcb,
+        ut = G.a.f287bb3a,
         dt = G.a.h994ec4f,
         pt = G.a.c06d4305,
         ft = G.a.bfdb3c12,
@@ -239,10 +220,10 @@
         yt = G.a.ib4510fd,
         ht = (function (t) {
           h()(n, t)
-          var e = v()(n)
+          var e = g()(n)
           function n() {
             var t
-            l()(this, n)
+            u()(this, n)
             for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
             return (
               (t = e.call.apply(e, [this].concat(i))),
@@ -268,13 +249,13 @@
                       ? rt(t._emptyStateVariant, t.props.notificationsType)
                       : e
                       ? dt
-                      : lt
+                      : ut
                 }
               }),
               _()(m()(t), '_getEmptyMessageHeader', function () {
                 return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
                   ? ot(t._emptyStateVariant, t.props.notificationsType)
-                  : ut
+                  : lt
               }),
               _()(m()(t), '_renderEmptyTimeline', function () {
                 if (
@@ -386,20 +367,20 @@
       var bt = function (t) {
           return Object(J.a)(
             (function (t) {
-              return Object(A.a)()
+              return Object(k.a)()
                 .propsFromState(function () {
                   return {
                     shouldShowUnmentionEducation: function (t) {
-                      return Object(S.D)(t, S.o)
+                      return Object(P.D)(t, P.o)
                     },
                     unreadCount: function (e, n) {
                       var a,
                         i = n.ntabData
-                      return null === (a = k(t, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(e)
+                      return null === (a = A(t, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(e)
                     },
                     timelineHasTweets: function (e, n) {
                       var a = n.ntabData,
-                        i = k(t, a),
+                        i = A(t, a),
                         o = null == i ? void 0 : i.selectEntries(e)
                       return !!(null == o
                         ? void 0
@@ -416,7 +397,7 @@
                     r = n.ntabData
                   return {
                     ntabData: null,
-                    notificationsModule: k(t, r),
+                    notificationsModule: A(t, r),
                     notificationsType: t,
                     shouldShowUnmentionEducation: a,
                     timelineHasTweets: i,
@@ -428,11 +409,11 @@
                     a = e.ntabData
                   return {
                     addLeaveThisConversationEducationFlag: function () {
-                      return Object(S.z)(S.o)
+                      return Object(P.z)(P.o)
                     },
-                    markAllAsRead: null === (n = k(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
+                    markAllAsRead: null === (n = A(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
                     updateLastRead: a && a.updateLastSeenCursor,
-                    setNotificationsType: P.j,
+                    setNotificationsType: S.j,
                   }
                 })
                 .withAnalytics({ page: 'ntab', section: t })
@@ -440,7 +421,7 @@
             { ntabData: X.a },
           )
         },
-        vt = function (t) {
+        gt = function (t) {
           var e = t.notificationsType
           return bt(e)
         }
@@ -458,7 +439,7 @@
         r = n('es0u'),
         s = n('G6rE'),
         c = n('rxPX'),
-        u = Object(c.a)()
+        l = Object(c.a)()
           .propsFromState(function () {
             return { loggedInUser: s.e.selectLoggedInUser }
           })
@@ -467,7 +448,7 @@
             return { isLoggedInUserVerified: !!e && e.verified }
           })
           .withAnalytics({ page: 'ntab' }),
-        l = n('pnqf'),
+        u = n('pnqf'),
         d = n('dwig'),
         p = n('0+qk'),
         f = n('3XMw'),
@@ -475,41 +456,41 @@
         y = n('yoO3'),
         h = n('5FtR'),
         b = n('wytG'),
-        v = n('+Bsv'),
-        g = n('VS6U'),
+        g = n('+Bsv'),
+        v = n('VS6U'),
         _ = n('mw9i'),
         T = n('k/OQ'),
         w = n('zCf4'),
         E = m.a.eb75875d,
         M = m.a.f8321d82,
-        P = m.a.cdb53d79,
-        S = m.a.h3290871,
-        A = m.a.a98ba778,
-        k = '/notifications',
+        S = m.a.cdb53d79,
+        P = m.a.h3290871,
+        k = m.a.a98ba778,
+        A = '/notifications',
         C = '/notifications/mentions',
         x = '/notifications/verified',
-        I = i.a.createElement(v.a, { pullRight: !0, to: '/settings/notifications' }),
-        O = m.a.eb75875d,
-        L = Object(l.a)(
+        O = i.a.createElement(g.a, { pullRight: !0, to: '/settings/notifications' }),
+        I = m.a.eb75875d,
+        L = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
-        V = Object(l.a)(
+        V = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
-        j = Object(l.a)(
+        j = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
         ),
-        U = [
-          { to: k, key: M, label: M, retainScrollPosition: !1 },
-          { to: C, key: P, label: P, retainScrollPosition: !1 },
+        R = [
+          { to: A, key: M, label: M, retainScrollPosition: !1 },
+          { to: C, key: S, label: S, retainScrollPosition: !1 },
         ],
-        R = [].concat(U, [{ to: x, key: S, label: S, retainScrollPosition: !1 }]),
+        U = [].concat(R, [{ to: x, key: P, label: P, retainScrollPosition: !1 }]),
         D = function (t) {
           var e,
             n,
@@ -518,34 +499,34 @@
               .featureSwitches.isTrue('responsive_web_ntab_verified_mentions_vit_internal_dogfood'),
             s = t.history,
             c = t.isLoggedInUserVerified,
-            u = t.location,
-            l = c || a,
+            l = t.location,
+            u = c || a,
             f = i.a.createElement(
               w.d,
               null,
-              i.a.createElement(w.b, { component: L, exact: !0, path: k }),
+              i.a.createElement(w.b, { component: L, exact: !0, path: A }),
               i.a.createElement(w.b, { component: V, exact: !0, path: C }),
               i.a.createElement(w.b, { component: j, exact: !0, path: x }),
             )
-          return u.pathname !== x || l
+          return l.pathname !== x || u
             ? i.a.createElement(
                 y.a,
                 null,
-                i.a.createElement(g.a, {
+                i.a.createElement(v.a, {
                   documentTitle: E,
                   history: s,
                   primaryContent:
                     ((n = i.a.createElement(p.a, { history: s })),
                     i.a.createElement(d.a, { component: _.a, fab: n }, f)),
-                  rightControl: I,
-                  secondaryBar: ((e = l ? R : U), i.a.createElement(T.a, { accessibilityLabel: A, links: e })),
+                  rightControl: O,
+                  secondaryBar: ((e = u ? U : R), i.a.createElement(T.a, { accessibilityLabel: k, links: e })),
                   sidebarContent: i.a.createElement(r.a, null),
-                  title: O,
+                  title: I,
                 }),
               )
-            : i.a.createElement(h.a, { to: k })
+            : i.a.createElement(h.a, { to: A })
         }
-      e.default = u(D)
+      e.default = l(D)
     },
     f42t: function (t, e, n) {
       'use strict'
@@ -558,8 +539,8 @@
         r = n.n(o),
         s = n('Y9Ll'),
         c = n.n(s),
-        u = n('1Pcy'),
-        l = n.n(u),
+        l = n('1Pcy'),
+        u = n.n(l),
         d = n('5Yy7'),
         p = n.n(d),
         f = n('2VqO'),
@@ -577,15 +558,15 @@
           n('z84I'),
           n('KOtZ'),
           n('ERkP')),
-        v = n.n(b),
-        g = (function (t) {
+        g = n.n(b),
+        v = (function (t) {
           p()(n, t)
           var e = m()(n)
           function n() {
             var t
             r()(this, n)
             for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
-            return (t = e.call.apply(e, [this].concat(i))), h()(l()(t), 'state', { isLoaded: !1 }), t
+            return (t = e.call.apply(e, [this].concat(i))), h()(u()(t), 'state', { isLoaded: !1 }), t
           }
           return (
             c()(n, [
@@ -634,17 +615,17 @@
                 key: 'render',
                 value: function () {
                   var t = this.state.isLoaded ? this.state.modules : {}
-                  return v.a.Children.only(this.props.children(t || {}))
+                  return g.a.Children.only(this.props.children(t || {}))
                 },
               },
             ]),
             n
           )
-        })(v.a.Component),
+        })(g.a.Component),
         _ = function (t, e) {
           return function (n) {
-            return v.a.createElement(g, { modules: e }, function (e) {
-              return v.a.createElement(t, i()({}, e, n))
+            return g.a.createElement(v, { modules: e }, function (e) {
+              return g.a.createElement(t, i()({}, e, n))
             })
           }
         }
@@ -667,10 +648,10 @@
       'use strict'
       n.r(e),
         n.d(e, 'notificationsModule', function () {
-          return v
+          return g
         }),
         n.d(e, 'updateLastSeenCursor', function () {
-          return g
+          return v
         })
       var a = n('KEM+'),
         i = n.n(a),
@@ -678,8 +659,8 @@
         r = n.n(o),
         s = n('m3Bd'),
         c = n.n(s),
-        u = n('vWJI'),
-        l = n('k49u'),
+        l = n('vWJI'),
+        u = n('k49u'),
         d = n('0KEI'),
         p = n('UtAB'),
         f = n('fs1G'),
@@ -687,7 +668,7 @@
         y = n('ZNT5'),
         h = ['polling'],
         b = 'APP_UPDATE_NOTIFICATION_LAST_READ',
-        v = function () {
+        g = function () {
           var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
           return Object(y.a)({
             timelineId: 'notifications-'.concat(t),
@@ -705,24 +686,24 @@
             staleIntervalMs: 5e3,
           })
         },
-        g = function () {
+        v = function () {
           var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
           return function (e, n, a) {
             var o = a.api,
-              r = v(t),
-              s = r && u.e(r.selectEntries(n()))
+              r = g(t),
+              s = r && l.e(r.selectEntries(n()))
             if (s) {
-              var c = { cursor: u.g(s), type: t },
+              var c = { cursor: l.g(s), type: t },
                 p = e(
                   Object(d.createLocalApiErrorHandlerWithContextFactory)(b)(
-                    i()({}, l.a.AppInReadOnlyMode, { customAction: f.a }),
+                    i()({}, u.a.AppInReadOnlyMode, { customAction: f.a }),
                   ),
                 )
               o.URT.updateNotificationsLastSeenCursor(c).catch(p)
             }
           }
         }
-      e.default = v(m.a.All)
+      e.default = g(m.a.All)
     },
     srGC: function (t, e, n) {
       'use strict'

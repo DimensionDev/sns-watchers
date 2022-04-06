@@ -11632,44 +11632,52 @@
                     t,
                     n,
                     a,
-                    i = this.props,
-                    o = i.errorDialog,
-                    s = i.onNavigate,
-                    l = i.passthroughOcfScreenProps,
-                    c = i.progressIndication,
-                    u = i.subtask,
-                    d = i.subtaskInputs,
-                    p =
-                      null !== (e = null === (t = u.footer) || void 0 === t ? void 0 : t.style) && void 0 !== e
+                    i,
+                    o = this.props,
+                    s = o.errorDialog,
+                    l = o.onNavigate,
+                    c = o.passthroughOcfScreenProps,
+                    u = o.progressIndication,
+                    d = o.subtask,
+                    p = o.subtaskInputs,
+                    h =
+                      null !== (e = null === (t = d.footer) || void 0 === t ? void 0 : t.style) && void 0 !== e
                         ? e
-                        : k.i.Fixed
+                        : k.i.Fixed,
+                    m =
+                      this._passwordlessSsoEnabled &&
+                      (null === (n = d.action_buttons) || void 0 === n ? void 0 : n.length)
                   return y.a.createElement(
                     ye.a,
-                    r()({}, l, { footer: p === k.i.Fixed ? this._renderFooter() : null, progressIndication: c }),
+                    r()({}, c, {
+                      footer: h === k.i.Fixed ? this._renderFooter() : null,
+                      progressIndication: u,
+                      providePadding: !0,
+                    }),
                     y.a.createElement(
                       O.a,
-                      { style: this._hasSSOButtons() ? de.contentAreaCompact : de.contentArea },
+                      { style: m && La.compact },
                       y.a.createElement(ge, {
-                        header: u.header,
-                        onNavigate: s,
-                        primaryTextProp: u.primary_text,
-                        secondaryTextProp: u.secondary_text,
-                        subtaskInputs: d,
+                        header: d.header,
+                        onNavigate: l,
+                        primaryTextProp: d.primary_text,
+                        secondaryTextProp: d.secondary_text,
+                        subtaskInputs: p,
                         userInfo: this._passwordlessSsoEnabled
                           ? y.a.createElement(je, {
                               displayType: k.D.compact,
-                              onNavigate: s,
-                              subtaskInputs: d,
-                              user: null === (n = u.header) || void 0 === n ? void 0 : n.user,
-                              userCaption: null === (a = u.header) || void 0 === a ? void 0 : a.user_caption,
+                              onNavigate: l,
+                              subtaskInputs: p,
+                              user: null === (a = d.header) || void 0 === a ? void 0 : a.user,
+                              userCaption: null === (i = d.header) || void 0 === i ? void 0 : i.user_caption,
                             })
                           : void 0,
                       }),
                       this._renderIdentifier(),
                       this._renderPasswordFields(),
-                      p === k.i.Floating || p === k.i.FloatingLarge ? this._renderFooter() : null,
+                      h === k.i.Floating || h === k.i.FloatingLarge ? this._renderFooter() : null,
                     ),
-                    o,
+                    s,
                   )
                 },
               },
@@ -11679,7 +11687,11 @@
         })(y.a.Component)
       b()(Pa, 'contextType', Ze.a)
       var La = F.a.create(function (e) {
-          return { footnoteText: { marginBottom: e.spaces.space24 }, detailText: { marginBottom: e.spaces.space40 } }
+          return {
+            footnoteText: { marginBottom: e.spaces.space24 },
+            detailText: { marginBottom: e.spaces.space40 },
+            compact: { margin: 'auto', minWidth: j.b + 64, maxWidth: j.b + 64 },
+          }
         }),
         Aa = ya(Pa),
         Oa = new RegExp('^\\+?[0-9\\-\\.\\(\\)\\s]{7,1000}$'),
@@ -14318,7 +14330,7 @@
                     r()({}, o, {
                       footer: f ? void 0 : v,
                       onViewportSet: this._handleViewportSet,
-                      providePadding: !f || !g,
+                      providePadding: !f && !g,
                       scrollPrompt: b,
                     }),
                     y.a.createElement(
@@ -17857,7 +17869,7 @@
                         ? v.a.createElement(
                             L,
                             {
-                              control: v.a.createElement(w.a, { style: [h, u && V.footerShadow] }, d),
+                              control: v.a.createElement(w.a, { style: [o && h, u && V.footerShadow] }, d),
                               onViewportSet: this._handleViewportSet,
                             },
                             v.a.createElement(w.a, { style: o && h }, p),

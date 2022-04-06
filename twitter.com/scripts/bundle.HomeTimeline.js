@@ -3,7 +3,6 @@
   {
     '/n9r': function (e, t, n) {
       'use strict'
-      n.r(t)
       var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
@@ -17,7 +16,7 @@
         abstractKey: null,
         hash: '0572573667f235d11350335060916856',
       }
-      t.default = a
+      e.exports = a
     },
     cOLG: function (e, t, n) {
       'use strict'
@@ -66,10 +65,10 @@
             }
           })
           .withAnalytics({ page: 'home' }),
-        I = n('s14A'),
-        x = n('dwig'),
-        O = n('v//M'),
-        P = n('0+qk'),
+        x = n('s14A'),
+        I = n('dwig'),
+        P = n('v//M'),
+        O = n('0+qk'),
         M = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
         A = n('G6rE'),
         K = Object(w.a)()
@@ -351,10 +350,10 @@
         Se = B.a.j681ac0d,
         Fe = B.a.g8220472,
         Ce = B.a.ccdd3766,
-        Ie = B.a.g2657de3,
-        xe = B.a.d126cb7c,
-        Oe = B.a.c41ecf3c,
-        Pe = B.a.d18aa6d4,
+        xe = B.a.g2657de3,
+        Ie = B.a.d126cb7c,
+        Pe = B.a.c41ecf3c,
+        Oe = B.a.d18aa6d4,
         Me = B.a.c90dcfa2,
         Ae = B.a.bc52b0cd,
         Ke = B.a.j6382fe9,
@@ -381,7 +380,7 @@
             i = e.useLatest,
             l = y.a.useContext(de.a).featureSwitches,
             r = i ? Fe : Ce,
-            s = i ? xe : Ie,
+            s = i ? Ie : xe,
             c = y.a.useCallback(
               function (e) {
                 e(), t()
@@ -398,8 +397,8 @@
               function (e) {
                 var t, n, a
                 l.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
-                  ? ((t = i ? Me : Oe), (n = i ? Ue : ze), (a = i ? Re : je))
-                  : ((t = i ? Pe : Oe), (n = i ? Be : He), (a = i ? Ae : Ke))
+                  ? ((t = i ? Me : Pe), (n = i ? Ue : ze), (a = i ? Re : je))
+                  : ((t = i ? Oe : Pe), (n = i ? Be : He), (a = i ? Ae : Ke))
                 var r = i ? Te : Ee,
                   s = [
                     { text: a, onClick: o, Icon: we.a, subText: n },
@@ -624,13 +623,13 @@
         St = n('7JQg'),
         Ft = n('VS6U'),
         Ct = n('Es6L'),
-        It = n('LsPn'),
-        xt = n('gZV8'),
-        Ot = (n('enFi'), n('Fr3L')),
-        Pt = n('lnL+'),
+        xt = n('LsPn'),
+        It = n('gZV8'),
+        Pt = (n('YWiL'), n('Fr3L')),
+        Ot = n('lnL+'),
         Mt = n('Rp9C'),
         At = n('FGLp'),
-        Kt = n('jAXQ'),
+        Kt = n('CVPS'),
         Ht = n.n(Kt),
         Bt = function (e) {
           var t = Ht()(void 0 !== We ? We : (We = n('/n9r')), e.topic),
@@ -645,7 +644,7 @@
             },
             [e.analytics, i],
           )
-          return y.a.createElement(Pt.a, { link: '/i/topics/'.concat(i), onClick: l, text: a })
+          return y.a.createElement(Ot.a, { link: '/i/topics/'.concat(i), onClick: l, text: a })
         },
         jt = n('Irs7'),
         zt = n('yUQf'),
@@ -712,7 +711,7 @@
               function (e) {
                 var t = e.index,
                   n = e.intersectionRatio
-                t === c.current - 1 && n >= xt.c && o.scribeAction('reached_end')
+                t === c.current - 1 && n >= It.c && o.scribeAction('reached_end')
               },
               [o],
             )
@@ -770,7 +769,7 @@
           }
         }),
         Gt = function () {
-          return y.a.createElement(Ot.a, { errorConfig: Wt }, y.a.createElement(Jt, null))
+          return y.a.createElement(Pt.a, { errorConfig: Wt }, y.a.createElement(Jt, null))
         },
         Yt = n('aITJ'),
         Zt = n('0yYu'),
@@ -872,7 +871,7 @@
                   a = l._pinnedListsEnabled && e !== he.a.HOME && e !== he.a.HOME_LATEST,
                   i = l.context.featureSwitches.isTrue('responsive_web_audio_space_ring_home_timeline')
                 return y.a.createElement(
-                  I.a,
+                  x.a,
                   null,
                   l.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
                     ? y.a.createElement(St.c, { namespace: sn }, y.a.createElement(Gt, null))
@@ -893,7 +892,7 @@
                   n = e.location,
                   a = e.settingsFetchStatus,
                   i = l.context.isRestrictedSession,
-                  r = y.a.createElement(P.a, { history: t })
+                  r = y.a.createElement(O.a, { history: t })
                 return y.a.createElement(
                   y.a.Fragment,
                   null,
@@ -906,12 +905,12 @@
                       )
                     : null,
                   y.a.createElement(
-                    x.a,
+                    I.a,
                     { component: Xt.a, fab: r },
                     Yt.b.isKaiOS()
-                      ? y.a.createElement(It.a, { leftText: en, onLeftClick: l._handleSoftLeftClick })
+                      ? y.a.createElement(xt.a, { leftText: en, onLeftClick: l._handleSoftLeftClick })
                       : null,
-                    y.a.createElement(O.a, { fetchStatus: a, render: l._renderTimeline }),
+                    y.a.createElement(P.a, { fetchStatus: a, render: l._renderTimeline }),
                   ),
                 )
               }),
@@ -1026,7 +1025,6 @@
     },
     yKhE: function (e, t, n) {
       'use strict'
-      n.r(t)
       var a,
         i,
         l,
@@ -1286,6 +1284,15 @@
                         ],
                         storageKey: null,
                       },
+                      {
+                        alias: null,
+                        args: null,
+                        filters: null,
+                        handle: 'user',
+                        key: '',
+                        kind: 'LinkedHandle',
+                        name: 'result',
+                      },
                     ],
                     storageKey: null,
                   },
@@ -1295,7 +1302,7 @@
             ],
           },
           params: {
-            id: '3hVap2vZoYE-XviTGbAiRQ',
+            id: 'eXKaPJUQURao4VLTv4DAdQ',
             metadata: {
               sliceInfoPath: ['viewer', 'user_results', 'result', 'home_topics_navigator_slices', 'slice_info'],
             },
@@ -1304,7 +1311,7 @@
             text: null,
           },
         }
-      ;(o.hash = '00b62fb55ad091187417013cbaa9e6a0'), (t.default = o)
+      ;(o.hash = '00b62fb55ad091187417013cbaa9e6a0'), (e.exports = o)
     },
   },
 ])

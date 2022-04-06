@@ -5470,49 +5470,20 @@
         _ = n('oQhu'),
         w = n('rHpw'),
         C = n('j7Bv'),
-        E = n('3XMw'),
-        S = n.n(E),
-        k = n('shC7'),
-        T = n('MWbm'),
-        I = n('hOZg'),
-        x = n('yiKp'),
-        O = n.n(x),
-        R = n('Lsrn'),
-        P = n('k/Ka'),
-        L = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(P.a)(
-            'svg',
-            O()(
-              O()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [R.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            b.a.createElement(
-              'g',
-              null,
-              b.a.createElement('path', {
-                d: 'M21.938 6.708c-.117-.277-.39-.458-.69-.458h-18.5c-.302 0-.573.18-.69.458-.12.277-.058.598.152.814l9.248 9.53c.14.147.335.23.538.23s.396-.083.538-.23l9.252-9.53c.21-.215.27-.537.152-.814z',
-              }),
-            ),
-          )
-        }
-      L.metadata = { width: 24, height: 24 }
-      var M = L,
-        A = n('nb/L'),
-        D = S.a.af8fa2ad,
-        F = Object.freeze({
+        E = n('MWbm'),
+        S = n('3XMw'),
+        k = n.n(S),
+        T = n('hOZg'),
+        I = n('nb/L'),
+        x = k.a.af8fa2ad,
+        O = Object.freeze({
           primary: { accessibilityLiveRegion: 'polite' },
           exclusive: { accessibilityLiveRegion: 'polite' },
           danger: { accessibilityLiveRegion: 'assertive' },
           success: { accessibilityLiveRegion: 'polite' },
           warning: { accessibilityLiveRegion: 'polite' },
         }),
-        j = (function (e) {
+        R = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -5549,57 +5520,55 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    n = t.arrowPositionStart,
-                    a = t.behavioralEventContext,
-                    r = t.onClose,
-                    i = t.style,
-                    o = t.type,
-                    s = t.withCloseButton,
-                    c = t.withRightArrow,
-                    l = F[o].accessibilityLiveRegion,
-                    u = null !== (e = null == a ? void 0 : a.viewType) && void 0 !== e ? e : 'inline_callout',
-                    d = this._getMemoizedBehavioralEventContext(u)
+                    n = t.behavioralEventContext,
+                    a = t.onClose,
+                    r = t.style,
+                    i = t.type,
+                    o = t.withCloseButton,
+                    s = t.withRightArrow,
+                    c = O[i].accessibilityLiveRegion,
+                    l = null !== (e = null == n ? void 0 : n.viewType) && void 0 !== e ? e : 'inline_callout',
+                    u = this._getMemoizedBehavioralEventContext(l)
                   return b.a.createElement(
                     b.a.Fragment,
                     null,
                     b.a.createElement(
                       f.a,
-                      { behavioralEventContext: d },
+                      { behavioralEventContext: u },
                       b.a.createElement(
-                        T.a,
+                        E.a,
                         {
-                          accessibilityLiveRegion: l,
+                          accessibilityLiveRegion: c,
                           onLayout: this._handleLayout,
                           ref: this._setContentNode,
-                          style: [B.root, N[o], i],
+                          style: [P.root, L[i], r],
                         },
                         b.a.createElement(
-                          T.a,
-                          { style: B.contentContainer },
+                          E.a,
+                          { style: P.contentContainer },
                           this._renderIconOrThumbnail(),
                           b.a.createElement(
-                            T.a,
-                            { style: B.contentTextContainer },
+                            E.a,
+                            { style: P.contentTextContainer },
                             this._renderHeadline(),
                             this._renderSubtext(),
                           ),
                         ),
-                        s && r
+                        o && a
                           ? b.a.createElement(g.a, {
-                              accessibilityLabel: D,
-                              icon: b.a.createElement(I.a, null),
-                              onPress: r,
+                              accessibilityLabel: x,
+                              icon: b.a.createElement(T.a, null),
+                              onPress: a,
                               size: 'smallCompact',
                               type: 'brandText',
                             })
                           : null,
                       ),
-                      n ? b.a.createElement(M, { style: [H[o], this._getArrowStyle()] }) : null,
-                      c
-                        ? b.a.createElement(A.a, {
+                      s
+                        ? b.a.createElement(I.a, {
                             style: [
                               { transform: 'rotate(90deg)', position: 'absolute' },
-                              H[o],
+                              M[i],
                               this._getSideArrowStyle(),
                             ],
                           })
@@ -5623,13 +5592,13 @@
                         Icon: t,
                         color: this._getThumbnailColor(),
                         size: i ? 'large' : 'medium',
-                        style: [B.thumbnail, i && B.thumbnailLargeMargin],
+                        style: [P.thumbnail, i && P.thumbnailLargeMargin],
                       })
                     if (a)
                       return b.a.createElement(
                         y.b,
                         { align: 'center' },
-                        b.a.createElement(t, { style: B.headlineIcon }),
+                        b.a.createElement(t, { style: P.headlineIcon }),
                       )
                   }
                 },
@@ -5640,7 +5609,7 @@
                   var e = this.props,
                     t = e.headline,
                     n = e.text
-                  if (t) return b.a.createElement(y.b, { style: n && B.headlineMarginBottom, weight: 'bold' }, t)
+                  if (t) return b.a.createElement(y.b, { style: n && P.headlineMarginBottom, weight: 'bold' }, t)
                 },
               },
               {
@@ -5671,7 +5640,7 @@
                       link: t.link,
                       onPress: n,
                       size: 'subtext1',
-                      style: B.actionText,
+                      style: P.actionText,
                       weight: 'bold',
                       withInteractiveStyling: !0,
                       withUnderline: !0,
@@ -5694,20 +5663,6 @@
                 },
               },
               {
-                key: '_getArrowStyle',
-                value: function () {
-                  var e = this.props.arrowPositionStart,
-                    t = this.state.contentMidpoint,
-                    n = k.a.getConstants().isRTL,
-                    a = [B.arrow]
-                  if (e && t) {
-                    var r = e - t
-                    a.push({ left: n ? void 0 : r, right: n ? r : void 0 })
-                  }
-                  return a
-                },
-              },
-              {
                 key: '_getSideArrowStyle',
                 value: function () {
                   if (this._contentNode) {
@@ -5725,8 +5680,8 @@
             n
           )
         })(b.a.Component)
-      m()(j, 'defaultProps', { type: 'primary', withCloseButton: !1, withThumbnail: !1 })
-      var B = w.a.create(function (e) {
+      m()(R, 'defaultProps', { type: 'primary', withCloseButton: !1, withThumbnail: !1 })
+      var P = w.a.create(function (e) {
           return {
             root: {
               borderRadius: e.borderRadii.medium,
@@ -5755,7 +5710,7 @@
             headlineIcon: { marginRight: e.spaces.space8 },
           }
         }),
-        N = w.a.create(function (e) {
+        L = w.a.create(function (e) {
           return {
             primary: { backgroundColor: e.colors.primary0 },
             exclusive: { backgroundColor: e.colors.plum0 },
@@ -5764,7 +5719,7 @@
             warning: { backgroundColor: e.colors.orange0 },
           }
         }),
-        H = w.a.create(function (e) {
+        M = w.a.create(function (e) {
           return {
             primary: { color: e.colors.primary0 },
             exclusive: { color: e.colors.plum0 },
@@ -5773,7 +5728,7 @@
             warning: { backgroundColor: e.colors.orange50 },
           }
         })
-      t.a = j
+      t.a = R
     },
     '55jz': function (e, t, n) {
       'use strict'
@@ -24091,7 +24046,7 @@
         x = n('Uchl'),
         O = n('sXY3'),
         R = n('FgXs'),
-        P = ['initialValue', 'numberOfLines'],
+        P = ['getErrorText', 'initialValue', 'numberOfLines'],
         L = T.a.fee0a8bb,
         M = (function (e) {
           y()(n, e)
@@ -24111,20 +24066,24 @@
                     var n = u()(e, 2),
                       r = n[0],
                       i = n[1],
-                      s = (i.initialValue, i.numberOfLines),
-                      l = c()(i, P)
+                      s = i.getErrorText,
+                      l = (i.initialValue, i.numberOfLines),
+                      d = c()(i, P),
+                      p = null == s ? void 0 : s(t[r])
                     return S.a.createElement(
                       I.a,
                       o()(
                         {
+                          errorText: p,
+                          invalid: !!p,
                           key: r,
-                          multiline: !!s && s > 1,
+                          multiline: !!l && l > 1,
                           name: r,
-                          numberOfLines: s,
+                          numberOfLines: l,
                           onChange: a._handleFieldChanged(r),
                           value: t[r] || '',
                         },
-                        l,
+                        d,
                       ),
                     )
                   }),
@@ -24156,8 +24115,16 @@
                       a = n[0],
                       r = n[1]
                     return t[a].validLength && r.length > t[a].validLength
+                  }),
+                  c = i.some(function (e) {
+                    var n,
+                      a,
+                      r = u()(e, 2),
+                      i = r[0],
+                      o = r[1]
+                    return !(null === (n = (a = t[i]).getErrorText) || void 0 === n || !n.call(a, o))
                   })
-                return o && !s && !(n && n(r))
+                return o && !s && !c && !(n && n(r))
               }),
               (a.state = {
                 fieldValues: Object(R.a)(e.fields, function (e) {

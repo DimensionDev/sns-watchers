@@ -2393,7 +2393,7 @@
         l('a7b4eb57', 'Piñata'),
         l('g5080c28', 'ünneplés,parti,piñata,pinata'),
         l('b24a4e42', 'Diszkógömb'),
-        l('fb6bc7fc', 'tánc,diszkó,csillogás,part'),
+        l('fb6bc7fc', 'tánc,diszkó,csillogás,party'),
         l('e35d8087', 'Matrjoska babák'),
         l('b2cc1367', 'baba,összeilleszt,összeilleszthető baba,oroszország'),
         l('f60d002b', 'Japán babák'),
