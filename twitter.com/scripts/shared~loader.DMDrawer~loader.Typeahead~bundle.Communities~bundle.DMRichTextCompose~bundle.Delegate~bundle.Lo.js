@@ -166,11 +166,11 @@
           I = e.titleWeight,
           C = void 0 === I ? 'bold' : I,
           j = e.withParticipantsCount,
-          W = void 0 !== j && j,
-          N = e.withScreenName,
-          R = void 0 === N || N,
-          z = e.withVDLRefresh,
-          P = void 0 !== z && z
+          R = void 0 !== j && j,
+          W = e.withScreenName,
+          z = void 0 === W || W,
+          N = e.withVDLRefresh,
+          P = void 0 !== N && N
         if (t) {
           var k = w ? w() : null
           if (t.type === c.CONVERSATION_TYPE.ONE_TO_ONE) {
@@ -187,7 +187,7 @@
                 screenName: M.screen_name,
                 weight: C,
                 withLink: !1,
-                withScreenName: R,
+                withScreenName: z,
               })
             return (P && !r) || s ? o.a.createElement(p.a, null, S, k) : S
           }
@@ -215,7 +215,7 @@
                 d.a,
                 { style: y.dmGroup },
                 o.a.createElement(p.a, null, B, k),
-                W && o.a.createElement(m.b, { color: 'gray700', numberOfLines: 1, size: O }, g({ peopleCount: A })),
+                R && o.a.createElement(m.b, { color: 'gray700', numberOfLines: 1, size: O }, g({ peopleCount: A })),
               )
             : B
         }
@@ -332,7 +332,7 @@
         l = n('rHpw'),
         d = n('TIdA'),
         f = n('A91F'),
-        p = n('jhWN'),
+        p = n('oSwX'),
         m = n('9Xij'),
         v = n('Znyr'),
         h = n('cm6r'),
@@ -402,7 +402,7 @@
             return a.a.createElement(
               g.a,
               { key: t.id_str, style: y.container },
-              a.a.createElement(p.a, { size: n || 'xxLarge', uri: t.profile_image_url_https }),
+              a.a.createElement(p.default, { size: n || 'xxLarge', uri: t.profile_image_url_https }),
             )
           },
           n = function (e) {
@@ -412,7 +412,7 @@
                 return a.a.createElement(
                   g.a,
                   { key: e.id_str, style: y.container },
-                  a.a.createElement(p.a, {
+                  a.a.createElement(p.default, {
                     aspectRatio: r,
                     shape: 'none',
                     size: 'custom',
@@ -456,7 +456,7 @@
               var r = e.length
               return 0 === r ? null : 1 === r ? t(e[0]) : a.a.createElement(g.a, { style: y.circle }, n(e))
             })(C),
-          W =
+          R =
             c ||
             (function (e, t) {
               if (e)
@@ -466,7 +466,7 @@
                   ? '/'.concat(t[0].screen_name)
                   : void 0
             })(r, I),
-          N = w && null != r && r.participants ? r.participants.length - 1 : 0
+          W = w && null != r && r.participants ? r.participants.length - 1 : 0
         return j
           ? a.a.createElement(
               a.a.Fragment,
@@ -474,9 +474,9 @@
               a.a.createElement(
                 m.a,
                 { ratio: 1 },
-                W ? a.a.createElement(h.a, { interactiveStyles: null, link: W, testID: s.a.conversationAvatar }, j) : j,
+                R ? a.a.createElement(h.a, { interactiveStyles: null, link: R, testID: s.a.conversationAvatar }, j) : j,
               ),
-              N
+              W
                 ? (function (e) {
                     var t = e.badgeCount
                     return a.a.createElement(
@@ -494,7 +494,7 @@
                         withTruncatedCount: !1,
                       }),
                     )
-                  })({ badgeCount: N })
+                  })({ badgeCount: W })
                 : null,
             )
           : null

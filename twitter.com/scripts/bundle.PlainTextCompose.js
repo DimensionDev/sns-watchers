@@ -4883,7 +4883,7 @@
         va = n('tZIO'),
         ya = n('5mJL'),
         ba = n('DNho'),
-        _a = n('jhWN'),
+        _a = n('oSwX'),
         Ca = n('rFBM'),
         wa = n('zfvc'),
         xa = n('Ujvi'),
@@ -5643,7 +5643,7 @@
                           c
                             ? w.a.createElement(ba.a.Consumer, null, function (e) {
                                 var t = e.avatarSize
-                                return w.a.createElement(_a.a, {
+                                return w.a.createElement(_a.default, {
                                   accessibilityLabel: s ? s.name : void 0,
                                   screenName: s ? s.screen_name : void 0,
                                   size: t,

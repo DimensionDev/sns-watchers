@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [49, 11, 233],
+  [49, 12, 232],
   {
     '/FNr': function (e, t, n) {
       'use strict'
@@ -357,7 +357,7 @@
         H = n('mN6z'),
         W = n('MWbm'),
         V = n('t62R'),
-        q = n('jhWN'),
+        q = n('oSwX'),
         z = n('MAI/'),
         G = n('zQEV'),
         Y = function (e) {
@@ -422,7 +422,7 @@
                   A.a,
                   { interactiveStyles: null, link: l, style: X.userAddedYouContainer },
                   i
-                    ? v.a.createElement(q.a, {
+                    ? v.a.createElement(q.default, {
                         accessibilityLabel: i.screen_name,
                         screenName: i.screen_name,
                         size: 'medium',
@@ -1483,7 +1483,7 @@
               },
               [n],
             ),
-            p = v.a.createElement(q.a, { imageLayoutCache: pn, screenName: d, size: 'xxLarge', uri: l }),
+            p = v.a.createElement(q.default, { imageLayoutCache: pn, screenName: d, size: 'xxLarge', uri: l }),
             m = v.a.createElement(qe, { emojiSize: 'title4', emotion: r.reactionKey, focusable: !1 }),
             g = v.a.createElement(I.a, {
               badgeContext: 'content',
@@ -3582,13 +3582,13 @@
             a = void 0 === n ? 'xLarge' : n,
             r = e.user
           return t
-            ? v.a.createElement(q.a, {
+            ? v.a.createElement(q.default, {
                 accessibilityLabel: r.name,
                 link: { pathname: '/'.concat(r.screen_name) },
                 size: a,
                 uri: r.profile_image_url_https,
               })
-            : v.a.createElement(W.a, { style: [jr.avatar, q.a.getSizeStyle(a)] })
+            : v.a.createElement(W.a, { style: [jr.avatar, q.default.getSizeStyle(a)] })
         },
         Nr = n('m3Bd'),
         Hr = n.n(Nr),
@@ -4171,7 +4171,7 @@
                                   : v.a.createElement(
                                       W.a,
                                       { key: e.key, style: [wi.avatar, { transform: a }] },
-                                      v.a.createElement(q.a, {
+                                      v.a.createElement(q.default, {
                                         accessibilityLabel: e.data && e.data.name,
                                         size: 'xLarge',
                                         uri: e.data && e.data.profile_image_url_https,
@@ -8613,6 +8613,7 @@
         I = n('cHvH'),
         O = n('3xLC'),
         M = [
+          'appBarStyle',
           'children',
           'leftControl',
           'screenType',
@@ -8664,7 +8665,7 @@
                 key: '_renderForOneColumnLayout',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
+                    t = (e.appBarStyle, e.children),
                     n =
                       (e.leftControl,
                       e.screenType,
@@ -8703,72 +8704,74 @@
                     a = n.SideNavButton,
                     r = n.TabBar,
                     i = n.TeamsSwitcher,
-                    l = n.backLocation,
-                    o = n.documentTitle,
-                    s = n.headerless,
-                    c = n.history,
-                    d = n.leftControl,
-                    u = n.middleControl,
-                    p = n.onBackClick,
-                    m = n.rightControl,
-                    g = n.screenType,
-                    f = n.searchBoxOptions,
-                    h = n.secondaryBar,
-                    y = n.showSubtitleOnRoot,
-                    b = n.showSubtitleOnWideDetail,
-                    C = n.subtitle,
-                    E = n.title,
-                    T = n.titleIconCell,
-                    w = n.titleIconCellSize,
-                    F = n.withDetailOpen,
-                    A = n.withSearchBox,
-                    I = n.withTweetButton,
-                    O = 'root' === g,
-                    M = 'secondaryRoot' === g,
-                    L = 'primaryDetail' === g,
-                    D = (L && b) || (O && y),
-                    P = O || (L && t),
-                    K = O ? v.c : L ? v.a : void 0,
-                    B = _.a.createElement(
+                    l = n.appBarStyle,
+                    o = n.backLocation,
+                    s = n.documentTitle,
+                    c = n.headerless,
+                    d = n.history,
+                    u = n.leftControl,
+                    p = n.middleControl,
+                    m = n.onBackClick,
+                    g = n.rightControl,
+                    f = n.screenType,
+                    h = n.searchBoxOptions,
+                    y = n.secondaryBar,
+                    b = n.showSubtitleOnRoot,
+                    C = n.showSubtitleOnWideDetail,
+                    E = n.subtitle,
+                    T = n.title,
+                    w = n.titleIconCell,
+                    F = n.titleIconCellSize,
+                    A = n.withDetailOpen,
+                    I = n.withSearchBox,
+                    O = n.withTweetButton,
+                    M = 'root' === f,
+                    L = 'secondaryRoot' === f,
+                    D = 'primaryDetail' === f,
+                    P = (D && C) || (M && b),
+                    K = M || (D && t),
+                    B = M ? v.c : D ? v.a : void 0,
+                    j = _.a.createElement(
                       x.a,
                       { style: R.appBarContainer },
                       _.a.createElement(k.a, {
-                        backLocation: l,
+                        backLocation: o,
                         fixed: !1,
-                        hideBackButton: P,
-                        history: c,
-                        leftControl: d,
-                        middleControl: u,
-                        onBackClick: p,
-                        rightControl: m,
-                        secondaryBar: h,
-                        subtitle: D ? C : void 0,
-                        title: E,
-                        titleDomId: K,
-                        titleIconCell: T,
-                        titleIconCellSize: w,
+                        hideBackButton: K,
+                        history: d,
+                        leftControl: u,
+                        middleControl: p,
+                        onBackClick: m,
+                        rightControl: g,
+                        secondaryBar: y,
+                        style: l,
+                        subtitle: P ? E : void 0,
+                        title: T,
+                        titleDomId: B,
+                        titleIconCell: w,
+                        titleIconCellSize: F,
                       }),
                     ),
-                    j =
-                      O || (M && F)
+                    U =
+                      M || (L && A)
                         ? null
                         : _.a.createElement(S.a.Configure, {
                             SideNavButton: a,
                             TabBar: r,
                             TeamsSwitcher: i,
-                            backLocation: l,
-                            documentTitle: o,
-                            headerless: s,
-                            middleControl: u,
-                            onBackClick: p,
-                            rightControl: m,
-                            searchBoxOptions: f,
-                            subtitle: C,
-                            title: E,
-                            withSearchBox: A,
-                            withTweetButton: I,
+                            backLocation: o,
+                            documentTitle: s,
+                            headerless: c,
+                            middleControl: p,
+                            onBackClick: m,
+                            rightControl: g,
+                            searchBoxOptions: h,
+                            subtitle: E,
+                            title: T,
+                            withSearchBox: I,
+                            withTweetButton: O,
                           })
-                  return _.a.createElement(_.a.Fragment, null, j, B)
+                  return _.a.createElement(_.a.Fragment, null, U, j)
                 },
               },
             ]),
@@ -11724,7 +11727,8 @@
                     a = t.maxNumberOfLines,
                     r = t.multiline,
                     i = t.numberOfLines,
-                    l =
+                    l = t.withMaxHeight,
+                    o =
                       y.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
@@ -11734,8 +11738,9 @@
                           body: 'body',
                           headline1: 'headline1',
                         }[n]
-                      ]
-                  return { minHeight: (r && i ? i : 1) * l, maxHeight: (r && a ? a : 1) * l }
+                      ],
+                    s = (r && i ? i : 1) * o
+                  return l ? { minHeight: s, maxHeight: (r && a ? a : 1) * o } : { minHeight: s }
                 }),
                 e
               )
@@ -11852,6 +11857,7 @@
         onFocus: w.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
+        withMaxHeight: !0,
       }),
         (A.propTypes = {})
       var I = function (e) {
@@ -11871,7 +11877,7 @@
         u = Object(o.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(208)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(207)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {

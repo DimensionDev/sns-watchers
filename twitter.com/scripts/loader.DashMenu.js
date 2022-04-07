@@ -32,8 +32,8 @@
         u = n.n(s),
         d = n('5Yy7'),
         m = n.n(d),
-        h = n('2VqO'),
-        f = n.n(h),
+        f = n('2VqO'),
+        h = n.n(f),
         p = n('KEM+'),
         b = n.n(p),
         g = (n('uFXj'), n('ERkP')),
@@ -54,7 +54,7 @@
         P = _.a.createElement(M.a, null),
         x = (function (e) {
           m()(n, e)
-          var t = f()(n)
+          var t = h()(n)
           function n(e) {
             var a
             return (
@@ -263,8 +263,8 @@
         u = n.n(s),
         d = n('2VqO'),
         m = n.n(d),
-        h = n('KEM+'),
-        f = n.n(h),
+        f = n('KEM+'),
+        h = n.n(f),
         p = (n('2G9S'), n('ho0z'), n('z84I'), n('ERkP')),
         b = n.n(p),
         g = n('H9MA'),
@@ -291,7 +291,7 @@
         M = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         A = Object(M.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(188)]).then(n.bind(null, 'sAnO'))
+            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(187)]).then(n.bind(null, 'sAnO'))
           },
         }),
         S = n('3XMw'),
@@ -301,14 +301,14 @@
         D = n('45lU'),
         P = n('9qNn'),
         x = n('MWbm'),
-        U = n('jhWN'),
+        U = n('oSwX'),
         I = n('/yvb'),
-        N = n('Znyr'),
-        F = n('cm6r'),
+        F = n('Znyr'),
+        N = n('cm6r'),
         H = n('jV+4'),
         W = n('wCd/'),
-        j = n('Ddqr'),
-        V = n('v6aA'),
+        V = n('Ddqr'),
+        j = n('v6aA'),
         R = n('iY63'),
         K = n('ACHU'),
         B = O.a.i5f7b6b8,
@@ -326,7 +326,7 @@
             for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              f()(c()(e), '_renderMenuContent', function (t) {
+              h()(c()(e), '_renderMenuContent', function (t) {
                 var n = t.withPadding,
                   a = e.props,
                   i = a.loggedInUser,
@@ -339,8 +339,8 @@
                   u = i.friends_count,
                   d = i.name,
                   m = i.profile_image_url_https,
-                  h = i.protected,
-                  f = i.screen_name,
+                  f = i.protected,
+                  h = i.screen_name,
                   p = i.translator_type,
                   g = i.verified
                 return Object(L.a)()
@@ -357,9 +357,9 @@
                           b.a.createElement(
                             x.a,
                             { style: D.a.avatarWrapper },
-                            b.a.createElement(U.a, {
+                            b.a.createElement(U.default, {
                               onClick: e._handleProfileClick,
-                              screenName: f,
+                              screenName: h,
                               size: 'xLarge',
                               uri: m,
                               withLink: !0,
@@ -379,7 +379,7 @@
                               type: 'primaryOutlined',
                             }),
                             l
-                              ? b.a.createElement(N.a, { pip: !0, truncatedCountFormatter: G, unreadCountLabel: z })
+                              ? b.a.createElement(F.a, { pip: !0, truncatedCountFormatter: G, unreadCountLabel: z })
                               : null,
                           ),
                         ),
@@ -387,20 +387,20 @@
                           x.a,
                           null,
                           b.a.createElement(
-                            F.a,
+                            N.a,
                             {
                               accessibilityLabel: B,
                               interactiveStyles: null,
-                              link: '/'.concat(f),
+                              link: '/'.concat(h),
                               onClick: e._handleProfileClick,
                               style: [D.a.item, D.a.userNames],
                             },
                             b.a.createElement(H.a, {
                               badgeContext: 'account',
-                              isProtected: h,
+                              isProtected: f,
                               isVerified: g,
                               name: d,
-                              screenName: f,
+                              screenName: h,
                               translatorType: p,
                               withStackedLayout: !0,
                             }),
@@ -411,14 +411,14 @@
                           : b.a.createElement(W.a, {
                               followersCount: s,
                               friendsCount: u,
-                              screenName: f,
+                              screenName: h,
                               style: [D.a.item, D.a.itemProfileStats],
                             }),
                       ),
                       b.a.createElement(v.a, { onClose: o }),
                     )
               }),
-              f()(c()(e), '_renderMultiAccountUsers', function () {
+              h()(c()(e), '_renderMultiAccountUsers', function () {
                 return e.props.multiAccountUsers.map(function (t) {
                   return b.a.createElement(
                     x.a,
@@ -429,14 +429,14 @@
                       onClick: e._handleMultiAccountSwitch(t.user_id, !!t.badgeCount, t.is_protected),
                       style: D.a.multiAccountLink,
                     },
-                    b.a.createElement(U.a, { size: 'large', uri: t.avatar_image_url }),
+                    b.a.createElement(U.default, { size: 'large', uri: t.avatar_image_url }),
                     t.badgeCount
-                      ? b.a.createElement(N.a, { count: t.badgeCount, truncatedCountFormatter: G, unreadCountLabel: z })
+                      ? b.a.createElement(F.a, { count: t.badgeCount, truncatedCountFormatter: G, unreadCountLabel: z })
                       : null,
                   )
                 })
               }),
-              f()(c()(e), '_handleMenuItemClick', function (t) {
+              h()(c()(e), '_handleMenuItemClick', function (t) {
                 return function () {
                   var n = e.props,
                     a = n.analytics,
@@ -444,9 +444,9 @@
                   t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), i && i()
                 }
               }),
-              f()(c()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
-              f()(c()(e), '_handleSimpleClick', e._handleMenuItemClick()),
-              f()(c()(e), '_handleMultiAccountSwitch', function (t, n, a) {
+              h()(c()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
+              h()(c()(e), '_handleSimpleClick', e._handleMenuItemClick()),
+              h()(c()(e), '_handleMultiAccountSwitch', function (t, n, a) {
                 return function () {
                   var i = e.props,
                     r = i.analytics,
@@ -460,7 +460,7 @@
                     l({ user_id: t }).catch(o(T.a))
                 }
               }),
-              f()(c()(e), '_handleSwitcherButton', function () {
+              h()(c()(e), '_handleSwitcherButton', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.onClose
@@ -498,7 +498,7 @@
                         this._renderMenuContent({ withPadding: !1 }),
                       )
                     : b.a.createElement(
-                        j.a,
+                        V.a,
                         { align: t, buttonType: 'primaryText', onDismissed: n, style: D.a.drawer, title: X },
                         this._renderMenuContent({ withPadding: !0 }),
                       )
@@ -508,7 +508,7 @@
             n
           )
         })(b.a.Component)
-      f()(Q, 'contextType', V.a)
+      h()(Q, 'contextType', j.a)
       var J = k(Q)
       t.default = J
     },

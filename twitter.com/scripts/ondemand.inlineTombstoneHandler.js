@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [351, 13],
+  [350, 10],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -1383,7 +1383,7 @@
         }),
         Yt = n('Sksh'),
         Jt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -1432,7 +1432,7 @@
                     h,
                   ),
                 )
-              : y.a.createElement(Zt.a, {
+              : y.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: o,
@@ -1499,7 +1499,7 @@
                       withHoverCard: p,
                       withLink: m,
                     })
-                  : y.a.createElement(Zt.a, {
+                  : y.a.createElement(Zt.default, {
                       avatarRef: o,
                       imageLayoutCache: an,
                       nativeID: i,
@@ -3908,7 +3908,7 @@
         ne = (n('JtPf'), n('zb92')),
         oe = Object(ne.a)({
           loader: function () {
-            return n.e(204).then(n.bind(null, '5Yok'))
+            return n.e(203).then(n.bind(null, '5Yok'))
           },
         }),
         ie = (n('uFXj'), n('IqLm')),
@@ -3961,7 +3961,7 @@
         fe = n('RuTB'),
         be = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(11), n.e(77)]).then(n.bind(null, 'x8Sc'))
+            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(12), n.e(77)]).then(n.bind(null, 'x8Sc'))
           },
           renderPlaceholder: function (e, t) {
             return y.a.createElement(fe.a, { hasError: e, onRetry: t })
@@ -5287,7 +5287,7 @@
         C = n('MWbm'),
         y = n('htQn'),
         T = n('5mJL'),
-        k = n('jhWN'),
+        k = n('oSwX'),
         I = n('/yvb'),
         E = n('t62R'),
         x = n('rHpw'),
@@ -5349,7 +5349,7 @@
                                 C.a,
                                 { style: [L.avatarColumn, !l && L.avatarColumnWithoutLine] },
                                 l ? w.a.createElement(C.a, { style: L.conversationLine }) : null,
-                                w.a.createElement(k.a, { size: 'large', uri: t }),
+                                w.a.createElement(k.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: L.conversationConnector,

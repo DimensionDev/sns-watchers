@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [37, 6, 13, 18, 173],
+  [37, 6, 10, 18, 173],
   {
     '/ZwF': function (e, t, n) {
       'use strict'
@@ -2943,7 +2943,7 @@
         }),
         Zt = n('Sksh'),
         Yt = n('1I0O'),
-        Jt = n('jhWN'),
+        Jt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -2992,7 +2992,7 @@
                     h,
                   ),
                 )
-              : E.a.createElement(Jt.a, {
+              : E.a.createElement(Jt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: a,
@@ -3059,7 +3059,7 @@
                       withHoverCard: p,
                       withLink: m,
                     })
-                  : E.a.createElement(Jt.a, {
+                  : E.a.createElement(Jt.default, {
                       avatarRef: a,
                       imageLayoutCache: rn,
                       nativeID: r,
@@ -4805,7 +4805,7 @@
         A = n('FBXD'),
         L = n('Nqmc'),
         O = n('rHpw'),
-        P = n('jhWN'),
+        P = n('oSwX'),
         B = n('1I0O'),
         R = n('pBrB'),
         D = n('jV+4'),
@@ -4990,7 +4990,7 @@
                       var t = e.avatarSize
                       return f
                         ? w.a.createElement(B.a, r()({}, V, f, { size: t }))
-                        : w.a.createElement(P.a, r()({ size: t }, V))
+                        : w.a.createElement(P.default, r()({ size: t }, V))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== h,
@@ -10254,7 +10254,7 @@
         _ = n('MWbm'),
         E = n('htQn'),
         C = n('5mJL'),
-        T = n('jhWN'),
+        T = n('oSwX'),
         I = n('/yvb'),
         S = n('t62R'),
         x = n('rHpw'),
@@ -10316,7 +10316,7 @@
                                 _.a,
                                 { style: [O.avatarColumn, !l && O.avatarColumnWithoutLine] },
                                 l ? b.a.createElement(_.a, { style: O.conversationLine }) : null,
-                                b.a.createElement(T.a, { size: 'large', uri: t }),
+                                b.a.createElement(T.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: O.conversationConnector,
@@ -12162,7 +12162,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(0), n.e(229)]).then(n.bind(null, 'SdtT'))
+              return Promise.all([n.e(0), n.e(228)]).then(n.bind(null, 'SdtT'))
             },
             loaderKey: 'pivotLabelLoader',
             strategy: n('XBtf').a.Critical,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [109, 9, 12, 100, 173, 176],
+  [109, 9, 13, 100, 173, 176],
   {
     '/uhu': function (e, t, n) {
       'use strict'
@@ -3615,7 +3615,7 @@
         w = n('FBXD'),
         x = n('Nqmc'),
         R = n('rHpw'),
-        M = n('jhWN'),
+        M = n('oSwX'),
         O = n('1I0O'),
         U = n('pBrB'),
         D = n('jV+4'),
@@ -3800,7 +3800,7 @@
                       var t = e.avatarSize
                       return f
                         ? b.a.createElement(O.a, r()({}, z, f, { size: t }))
-                        : b.a.createElement(M.a, r()({ size: t }, z))
+                        : b.a.createElement(M.default, r()({ size: t }, z))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== m,
@@ -7567,7 +7567,7 @@
         u = n('rHpw'),
         d = n('TIdA'),
         p = n('A91F'),
-        m = n('jhWN'),
+        m = n('oSwX'),
         h = n('9Xij'),
         f = n('Znyr'),
         g = n('cm6r'),
@@ -7637,7 +7637,7 @@
             return r.a.createElement(
               v.a,
               { key: t.id_str, style: _.container },
-              r.a.createElement(m.a, { size: n || 'xxLarge', uri: t.profile_image_url_https }),
+              r.a.createElement(m.default, { size: n || 'xxLarge', uri: t.profile_image_url_https }),
             )
           },
           n = function (e) {
@@ -7647,7 +7647,7 @@
                 return r.a.createElement(
                   v.a,
                   { key: e.id_str, style: _.container },
-                  r.a.createElement(m.a, {
+                  r.a.createElement(m.default, {
                     aspectRatio: a,
                     shape: 'none',
                     size: 'custom',

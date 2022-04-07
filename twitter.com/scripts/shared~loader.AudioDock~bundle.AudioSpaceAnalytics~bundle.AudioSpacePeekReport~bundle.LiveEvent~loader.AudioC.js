@@ -3311,7 +3311,7 @@
         x = n('9RkS'),
         I = n('rHpw'),
         P = n('MH+I'),
-        T = n('jhWN'),
+        T = n('oSwX'),
         O = n('jV+4'),
         R = n('MWbm'),
         M = n('kRXa'),
@@ -3340,7 +3340,7 @@
           p.a.createElement(
             R.a,
             { style: V.dockContentRow },
-            p.a.createElement(T.a, {
+            p.a.createElement(T.default, {
               accessibilityHidden: !0,
               focusable: !1,
               onClick: n,
@@ -3416,7 +3416,7 @@
             p.a.createElement(
               R.a,
               { style: [F.wideAvatarContainer, { backgroundColor: i }] },
-              p.a.createElement(T.a, {
+              p.a.createElement(T.default, {
                 accessibilityHidden: !0,
                 focusable: !1,
                 onClick: r,
@@ -4752,7 +4752,7 @@
         v = Object(m.a)({
           loader: function () {
             return f.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(228)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(17), n.e(227)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -4761,7 +4761,7 @@
         }),
         g = n('MWbm'),
         b = n('TIdA'),
-        y = n('jhWN'),
+        y = n('oSwX'),
         S = n('t62R'),
         E = n('jV+4'),
         k = n('rHpw'),
@@ -4782,7 +4782,7 @@
           m = e.profile_image_url_https || '',
           h =
             n ||
-            l.a.createElement(y.a, {
+            l.a.createElement(y.default, {
               imageLayoutCache: C,
               screenName: s,
               shape: p ? 'hex' : 'circle',
@@ -4858,7 +4858,7 @@
       }
       var R = 'xxLarge'
       function M(e) {
-        var t = y.a.getSizeStyle('xxLarge').width || e.spacesPx.space48,
+        var t = y.default.getSizeStyle('xxLarge').width || e.spacesPx.space48,
           n = e.spacesPx.space20,
           a = e.spacesPx.space8,
           r = e.spacesPx.space80 + 2 * a,

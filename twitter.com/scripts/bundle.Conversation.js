@@ -156,7 +156,7 @@
                           handlers: g()(
                             {},
                             D.a.Tweet,
-                            Object(B.f)({
+                            Object(B.e)({
                               createAdditionalProps: function () {
                                 return { withUnhideReply: t }
                               },
@@ -3193,7 +3193,7 @@
         le = (n('JtPf'), n('87if'), n('zb92')),
         se = Object(le.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(188)]).then(n.bind(null, 'uo3S'))
+            return Promise.all([n.e(0), n.e(3), n.e(6), n.e(187)]).then(n.bind(null, 'uo3S'))
           },
           renderPlaceholder: function (e, t) {
             return null

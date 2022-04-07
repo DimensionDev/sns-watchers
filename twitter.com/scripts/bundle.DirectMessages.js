@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [51, 9, 11, 15, 176],
+  [51, 9, 12, 15, 176],
   {
     '+Bsv': function (e, n, a) {
       'use strict'
@@ -1406,7 +1406,7 @@
         H = a('mN6z'),
         V = a('MWbm'),
         W = a('t62R'),
-        q = a('jhWN'),
+        q = a('oSwX'),
         z = a('MAI/'),
         G = a('zQEV'),
         Y = function (e) {
@@ -1471,7 +1471,7 @@
                   x.a,
                   { interactiveStyles: null, link: r, style: X.userAddedYouContainer },
                   i
-                    ? h.a.createElement(q.a, {
+                    ? h.a.createElement(q.default, {
                         accessibilityLabel: i.screen_name,
                         screenName: i.screen_name,
                         size: 'medium',
@@ -2532,7 +2532,7 @@
               },
               [a],
             ),
-            p = h.a.createElement(q.a, { imageLayoutCache: pa, screenName: u, size: 'xxLarge', uri: r }),
+            p = h.a.createElement(q.default, { imageLayoutCache: pa, screenName: u, size: 'xxLarge', uri: r }),
             m = h.a.createElement(qe, { emojiSize: 'title4', emotion: l.reactionKey, focusable: !1 }),
             g = h.a.createElement(w.a, {
               badgeContext: 'content',
@@ -4631,13 +4631,13 @@
             t = void 0 === a ? 'xLarge' : a,
             l = e.user
           return n
-            ? h.a.createElement(q.a, {
+            ? h.a.createElement(q.default, {
                 accessibilityLabel: l.name,
                 link: { pathname: '/'.concat(l.screen_name) },
                 size: t,
                 uri: l.profile_image_url_https,
               })
-            : h.a.createElement(V.a, { style: [Nl.avatar, q.a.getSizeStyle(t)] })
+            : h.a.createElement(V.a, { style: [Nl.avatar, q.default.getSizeStyle(t)] })
         },
         Bl = a('m3Bd'),
         Hl = a.n(Bl),
@@ -5220,7 +5220,7 @@
                                   : h.a.createElement(
                                       V.a,
                                       { key: e.key, style: [Ci.avatar, { transform: t }] },
-                                      h.a.createElement(q.a, {
+                                      h.a.createElement(q.default, {
                                         accessibilityLabel: e.data && e.data.name,
                                         size: 'xLarge',
                                         uri: e.data && e.data.profile_image_url_https,
@@ -5811,7 +5811,9 @@
         $,
         ee,
         ne,
-        ae = {
+        ae,
+        te,
+        le = {
           fragment: {
             argumentDefinitions: [
               (t = { defaultValue: null, kind: 'LocalArgument', name: 'count' }),
@@ -6273,24 +6275,6 @@
                                                 ],
                                                 storageKey: null,
                                               },
-                                              {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'PerspectivalConversationMetadata',
-                                                kind: 'LinkedField',
-                                                name: 'perspectival_conversation_metadata',
-                                                plural: !1,
-                                                selections: [
-                                                  (A = {
-                                                    alias: null,
-                                                    args: null,
-                                                    kind: 'ScalarField',
-                                                    name: 'last_read_event_id',
-                                                    storageKey: null,
-                                                  }),
-                                                ],
-                                                storageKey: null,
-                                              },
                                             ],
                                             storageKey: null,
                                           },
@@ -6340,7 +6324,7 @@
                                                                 name: 'affects_sort',
                                                                 storageKey: null,
                                                               },
-                                                              (O = {
+                                                              (A = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -6405,7 +6389,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'created_by_user_results',
                                                                             plural: !1,
-                                                                            selections: (D = [
+                                                                            selections: (O = [
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -6442,7 +6426,7 @@
                                                                             ]),
                                                                             storageKey: null,
                                                                           },
-                                                                          O,
+                                                                          A,
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -6450,7 +6434,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'admin_user_results',
                                                                             plural: !1,
-                                                                            selections: D,
+                                                                            selections: O,
                                                                             storageKey: null,
                                                                           },
                                                                           {
@@ -6538,7 +6522,13 @@
                                                                             ],
                                                                             storageKey: null,
                                                                           },
-                                                                          A,
+                                                                          (D = {
+                                                                            alias: null,
+                                                                            args: null,
+                                                                            kind: 'ScalarField',
+                                                                            name: 'last_read_event_id',
+                                                                            storageKey: null,
+                                                                          }),
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -6565,7 +6555,7 @@
                                                                         name: 'perspectival_conversation_metadata',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          A,
+                                                                          D,
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -6573,20 +6563,20 @@
                                                                             name: 'low_quality',
                                                                             storageKey: null,
                                                                           },
-                                                                          {
+                                                                          (P = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'muted',
                                                                             storageKey: null,
-                                                                          },
-                                                                          {
+                                                                          }),
+                                                                          (U = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'muted_due_to_muted_user',
                                                                             storageKey: null,
-                                                                          },
+                                                                          }),
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -6686,7 +6676,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'users_results',
                                                                     plural: !0,
-                                                                    selections: D,
+                                                                    selections: O,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -6696,7 +6686,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'participants_snapshot_results',
                                                                     plural: !0,
-                                                                    selections: D,
+                                                                    selections: O,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -6706,7 +6696,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'initiating_user_results',
                                                                     plural: !1,
-                                                                    selections: D,
+                                                                    selections: O,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -6725,7 +6715,7 @@
                                                                         storageKey: null,
                                                                       },
                                                                       v,
-                                                                      (P = {
+                                                                      (N = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -6783,8 +6773,8 @@
                                                                                           h,
                                                                                           {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: (V = [
-                                                                                              (U = {
+                                                                                            selections: (q = [
+                                                                                              (j = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 kind: 'ScalarField',
@@ -6803,7 +6793,7 @@
                                                                                                 name: 'salient_rect',
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                  (N = {
+                                                                                                  (B = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -6824,7 +6814,7 @@
                                                                                                     name: 'top',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  (j = {
+                                                                                                  (H = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -6852,7 +6842,7 @@
                                                                                                     name: 'palette',
                                                                                                     plural: !0,
                                                                                                     selections: [
-                                                                                                      (B = {
+                                                                                                      (V = {
                                                                                                         alias: null,
                                                                                                         args: null,
                                                                                                         kind: 'ScalarField',
@@ -6868,7 +6858,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'rgb',
                                                                                                         plural: !1,
-                                                                                                        selections: (H =
+                                                                                                        selections: (W =
                                                                                                           [
                                                                                                             {
                                                                                                               alias:
@@ -6914,7 +6904,7 @@
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              (W = {
+                                                                                              (z = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -6954,7 +6944,7 @@
                                                                                                 name: 'embeddable',
                                                                                                 storageKey: null,
                                                                                               },
-                                                                                              (q = {
+                                                                                              (G = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -6962,10 +6952,10 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'preview_image',
                                                                                                 plural: !1,
-                                                                                                selections: V,
+                                                                                                selections: q,
                                                                                                 storageKey: null,
                                                                                               }),
-                                                                                              (G = {
+                                                                                              (Q = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -6988,7 +6978,7 @@
                                                                                                     name: 'content_type',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  (z = {
+                                                                                                  (Y = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -7011,7 +7001,7 @@
                                                                                           },
                                                                                           {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: [U, W, q, G],
+                                                                                            selections: [j, z, G, Q],
                                                                                             type: 'ApiGif',
                                                                                             abstractKey: null,
                                                                                           },
@@ -7054,7 +7044,7 @@
                                                                                             name: 'binding_values',
                                                                                             plural: !0,
                                                                                             selections: [
-                                                                                              (Y = {
+                                                                                              (X = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 kind: 'ScalarField',
@@ -7101,9 +7091,9 @@
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      N,
-                                                                                                      j,
-                                                                                                      z,
+                                                                                                      B,
+                                                                                                      H,
+                                                                                                      Y,
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
@@ -7125,7 +7115,7 @@
                                                                                                         name: 'palette',
                                                                                                         plural: !0,
                                                                                                         selections: [
-                                                                                                          (Q = {
+                                                                                                          (Z = {
                                                                                                             alias: null,
                                                                                                             args: null,
                                                                                                             concreteType:
@@ -7134,11 +7124,11 @@
                                                                                                             name: 'rgb',
                                                                                                             plural: !1,
                                                                                                             selections:
-                                                                                                              H,
+                                                                                                              W,
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           }),
-                                                                                                          B,
+                                                                                                          V,
                                                                                                         ],
                                                                                                         storageKey:
                                                                                                           null,
@@ -7268,7 +7258,7 @@
                                                                                             storageKey: null,
                                                                                           },
                                                                                           C,
-                                                                                          z,
+                                                                                          Y,
                                                                                           {
                                                                                             alias: null,
                                                                                             args: null,
@@ -7307,7 +7297,7 @@
                                                                                                         name: 'url',
                                                                                                         plural: !1,
                                                                                                         selections: [
-                                                                                                          (X = {
+                                                                                                          (J = {
                                                                                                             alias:
                                                                                                               'urlType',
                                                                                                             args: null,
@@ -7316,7 +7306,7 @@
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           }),
-                                                                                                          z,
+                                                                                                          Y,
                                                                                                         ],
                                                                                                         storageKey:
                                                                                                           null,
@@ -7329,7 +7319,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'badge',
                                                                                                         plural: !1,
-                                                                                                        selections: [z],
+                                                                                                        selections: [Y],
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
@@ -7360,7 +7350,7 @@
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           },
-                                                                                                          P,
+                                                                                                          N,
                                                                                                           {
                                                                                                             alias: null,
                                                                                                             args: null,
@@ -7428,9 +7418,9 @@
                                                                                                                       {
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
-                                                                                                                          (Z =
+                                                                                                                          ($ =
                                                                                                                             [
-                                                                                                                              P,
+                                                                                                                              N,
                                                                                                                             ]),
                                                                                                                         type: 'TimelineRichTextCashtag',
                                                                                                                         abstractKey:
@@ -7441,7 +7431,7 @@
                                                                                                                         selections:
                                                                                                                           [
                                                                                                                             v,
-                                                                                                                            z,
+                                                                                                                            Y,
                                                                                                                           ],
                                                                                                                         type: 'TimelineRichTextList',
                                                                                                                         abstractKey:
@@ -7450,7 +7440,7 @@
                                                                                                                       {
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
-                                                                                                                          Z,
+                                                                                                                          $,
                                                                                                                         type: 'TimelineRichTextHashtag',
                                                                                                                         abstractKey:
                                                                                                                           null,
@@ -7459,8 +7449,8 @@
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
                                                                                                                           [
-                                                                                                                            z,
-                                                                                                                            X,
+                                                                                                                            Y,
+                                                                                                                            J,
                                                                                                                             {
                                                                                                                               alias:
                                                                                                                                 'urtEndpointOptions',
@@ -7512,7 +7502,7 @@
                                                                                                                                       !0,
                                                                                                                                     selections:
                                                                                                                                       [
-                                                                                                                                        Y,
+                                                                                                                                        X,
                                                                                                                                         {
                                                                                                                                           alias:
                                                                                                                                             null,
@@ -7550,7 +7540,7 @@
                                                                                                                               plural:
                                                                                                                                 !1,
                                                                                                                               selections:
-                                                                                                                                (J =
+                                                                                                                                (ee =
                                                                                                                                   [
                                                                                                                                     {
                                                                                                                                       alias:
@@ -7650,7 +7640,7 @@
                                                                                                                               plural:
                                                                                                                                 !1,
                                                                                                                               selections:
-                                                                                                                                J,
+                                                                                                                                ee,
                                                                                                                               storageKey:
                                                                                                                                 null,
                                                                                                                             },
@@ -7774,7 +7764,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'entities',
                                                                                                     plural: !1,
-                                                                                                    selections: (ee = [
+                                                                                                    selections: (ae = [
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -7783,8 +7773,8 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'description',
                                                                                                         plural: !1,
-                                                                                                        selections: ($ =
-                                                                                                          [
+                                                                                                        selections:
+                                                                                                          (ne = [
                                                                                                             {
                                                                                                               alias:
                                                                                                                 null,
@@ -7815,7 +7805,7 @@
                                                                                                                     storageKey:
                                                                                                                       null,
                                                                                                                   },
-                                                                                                                  z,
+                                                                                                                  Y,
                                                                                                                   {
                                                                                                                     alias:
                                                                                                                       null,
@@ -7841,7 +7831,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'url',
                                                                                                         plural: !1,
-                                                                                                        selections: $,
+                                                                                                        selections: ne,
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
@@ -7983,7 +7973,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'profile_banner_extensions',
                                                                                                     plural: !1,
-                                                                                                    selections: (ne = [
+                                                                                                    selections: (te = [
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -8027,8 +8017,8 @@
                                                                                                                           !0,
                                                                                                                         selections:
                                                                                                                           [
-                                                                                                                            B,
-                                                                                                                            Q,
+                                                                                                                            V,
+                                                                                                                            Z,
                                                                                                                           ],
                                                                                                                         storageKey:
                                                                                                                           null,
@@ -8063,7 +8053,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'profile_image_extensions',
                                                                                                     plural: !1,
-                                                                                                    selections: ne,
+                                                                                                    selections: te,
                                                                                                     storageKey: null,
                                                                                                   },
                                                                                                   x,
@@ -8103,7 +8093,7 @@
                                                                                                     name: 'translator_type',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  z,
+                                                                                                  Y,
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -8140,7 +8130,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'withheld_entities',
                                                                                                     plural: !1,
-                                                                                                    selections: ee,
+                                                                                                    selections: ae,
                                                                                                     storageKey: null,
                                                                                                   },
                                                                                                   {
@@ -8304,7 +8294,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'recipient_results',
                                                                         plural: !1,
-                                                                        selections: D,
+                                                                        selections: O,
                                                                         storageKey: null,
                                                                       },
                                                                       {
@@ -8314,7 +8304,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'sender_results',
                                                                         plural: !1,
-                                                                        selections: D,
+                                                                        selections: O,
                                                                         storageKey: null,
                                                                       },
                                                                     ],
@@ -8337,6 +8327,16 @@
                                                 abstractKey: null,
                                               },
                                             ],
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: 'PerspectivalConversationMetadata',
+                                            kind: 'LinkedField',
+                                            name: 'perspectival_conversation_metadata',
+                                            plural: !1,
+                                            selections: [D, P, U],
                                             storageKey: null,
                                           },
                                         ],
@@ -8436,14 +8436,14 @@
             ],
           },
           params: {
-            id: 'ygy9FwXCLj7Ow03cBVjtzA',
+            id: '72GHaHYWaEAQ2dPSDM7zMw',
             metadata: {},
             name: 'evolutionDMInboxPrimaryQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(ae.hash = '6a49418e414b8abd094e53836de12056'), (e.exports = ae)
+      ;(le.hash = '6a49418e414b8abd094e53836de12056'), (e.exports = le)
     },
     '6s7X': function (e, n, a) {
       'use strict'
@@ -13231,6 +13231,7 @@
         w = a('cHvH'),
         R = a('3xLC'),
         M = [
+          'appBarStyle',
           'children',
           'leftControl',
           'screenType',
@@ -13282,7 +13283,7 @@
                 key: '_renderForOneColumnLayout',
                 value: function () {
                   var e = this.props,
-                    n = e.children,
+                    n = (e.appBarStyle, e.children),
                     a =
                       (e.leftControl,
                       e.screenType,
@@ -13321,72 +13322,74 @@
                     t = a.SideNavButton,
                     l = a.TabBar,
                     i = a.TeamsSwitcher,
-                    r = a.backLocation,
-                    s = a.documentTitle,
-                    o = a.headerless,
-                    c = a.history,
-                    u = a.leftControl,
-                    d = a.middleControl,
-                    p = a.onBackClick,
-                    m = a.rightControl,
-                    g = a.screenType,
-                    y = a.searchBoxOptions,
-                    _ = a.secondaryBar,
-                    f = a.showSubtitleOnRoot,
-                    k = a.showSubtitleOnWideDetail,
-                    S = a.subtitle,
-                    E = a.title,
-                    T = a.titleIconCell,
-                    C = a.titleIconCellSize,
-                    L = a.withDetailOpen,
-                    x = a.withSearchBox,
-                    w = a.withTweetButton,
-                    R = 'root' === g,
-                    M = 'secondaryRoot' === g,
-                    A = 'primaryDetail' === g,
-                    O = (A && k) || (R && f),
-                    D = R || (A && n),
-                    P = R ? h.c : A ? h.a : void 0,
-                    U = v.a.createElement(
+                    r = a.appBarStyle,
+                    s = a.backLocation,
+                    o = a.documentTitle,
+                    c = a.headerless,
+                    u = a.history,
+                    d = a.leftControl,
+                    p = a.middleControl,
+                    m = a.onBackClick,
+                    g = a.rightControl,
+                    y = a.screenType,
+                    _ = a.searchBoxOptions,
+                    f = a.secondaryBar,
+                    k = a.showSubtitleOnRoot,
+                    S = a.showSubtitleOnWideDetail,
+                    E = a.subtitle,
+                    T = a.title,
+                    C = a.titleIconCell,
+                    L = a.titleIconCellSize,
+                    x = a.withDetailOpen,
+                    w = a.withSearchBox,
+                    R = a.withTweetButton,
+                    M = 'root' === y,
+                    A = 'secondaryRoot' === y,
+                    O = 'primaryDetail' === y,
+                    D = (O && S) || (M && k),
+                    P = M || (O && n),
+                    U = M ? h.c : O ? h.a : void 0,
+                    N = v.a.createElement(
                       I.a,
                       { style: K.appBarContainer },
                       v.a.createElement(b.a, {
-                        backLocation: r,
+                        backLocation: s,
                         fixed: !1,
-                        hideBackButton: D,
-                        history: c,
-                        leftControl: u,
-                        middleControl: d,
-                        onBackClick: p,
-                        rightControl: m,
-                        secondaryBar: _,
-                        subtitle: O ? S : void 0,
-                        title: E,
-                        titleDomId: P,
-                        titleIconCell: T,
-                        titleIconCellSize: C,
+                        hideBackButton: P,
+                        history: u,
+                        leftControl: d,
+                        middleControl: p,
+                        onBackClick: m,
+                        rightControl: g,
+                        secondaryBar: f,
+                        style: r,
+                        subtitle: D ? E : void 0,
+                        title: T,
+                        titleDomId: U,
+                        titleIconCell: C,
+                        titleIconCellSize: L,
                       }),
                     ),
-                    N =
-                      R || (M && L)
+                    j =
+                      M || (A && x)
                         ? null
                         : v.a.createElement(F.a.Configure, {
                             SideNavButton: t,
                             TabBar: l,
                             TeamsSwitcher: i,
-                            backLocation: r,
-                            documentTitle: s,
-                            headerless: o,
-                            middleControl: d,
-                            onBackClick: p,
-                            rightControl: m,
-                            searchBoxOptions: y,
-                            subtitle: S,
-                            title: E,
-                            withSearchBox: x,
-                            withTweetButton: w,
+                            backLocation: s,
+                            documentTitle: o,
+                            headerless: c,
+                            middleControl: p,
+                            onBackClick: m,
+                            rightControl: g,
+                            searchBoxOptions: _,
+                            subtitle: E,
+                            title: T,
+                            withSearchBox: w,
+                            withTweetButton: R,
                           })
-                  return v.a.createElement(v.a.Fragment, null, N, U)
+                  return v.a.createElement(v.a.Fragment, null, j, N)
                 },
               },
             ]),
@@ -15137,7 +15140,9 @@
         D,
         P,
         U,
-        N = {
+        N,
+        j,
+        B = {
           argumentDefinitions: [
             { kind: 'RootArgument', name: 'withAttachments' },
             { kind: 'RootArgument', name: 'withDmMuting' },
@@ -15310,24 +15315,6 @@
                   ],
                   storageKey: null,
                 },
-                {
-                  alias: null,
-                  args: null,
-                  concreteType: 'PerspectivalConversationMetadata',
-                  kind: 'LinkedField',
-                  name: 'perspectival_conversation_metadata',
-                  plural: !1,
-                  selections: [
-                    (y = {
-                      alias: null,
-                      args: null,
-                      kind: 'ScalarField',
-                      name: 'last_read_event_id',
-                      storageKey: null,
-                    }),
-                  ],
-                  storageKey: null,
-                },
               ],
               storageKey: null,
             },
@@ -15375,7 +15362,7 @@
                                   name: 'affects_sort',
                                   storageKey: null,
                                 },
-                                (_ = {
+                                (y = {
                                   alias: null,
                                   args: null,
                                   kind: 'ScalarField',
@@ -15438,7 +15425,7 @@
                                                         l,
                                                         {
                                                           kind: 'RequiredField',
-                                                          field: (h = {
+                                                          field: (_ = {
                                                             alias: null,
                                                             args: null,
                                                             concreteType: 'ApiUser',
@@ -15461,7 +15448,7 @@
                                               ],
                                               storageKey: null,
                                             },
-                                            _,
+                                            y,
                                             {
                                               alias: null,
                                               args: null,
@@ -15485,7 +15472,7 @@
                                                         l,
                                                         {
                                                           kind: 'RequiredField',
-                                                          field: h,
+                                                          field: _,
                                                           action: 'THROW',
                                                           path: 'legacy_conversation_slice.items.dm_event.legacy.conversation.legacy.metadata.admin_user_results.result.legacy',
                                                         },
@@ -15585,7 +15572,13 @@
                                               ],
                                               storageKey: null,
                                             },
-                                            y,
+                                            (h = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'last_read_event_id',
+                                              storageKey: null,
+                                            }),
                                             {
                                               alias: null,
                                               args: null,
@@ -15611,7 +15604,7 @@
                                           name: 'perspectival_conversation_metadata',
                                           plural: !1,
                                           selections: [
-                                            y,
+                                            h,
                                             {
                                               alias: null,
                                               args: null,
@@ -15619,20 +15612,20 @@
                                               name: 'low_quality',
                                               storageKey: null,
                                             },
-                                            {
+                                            (f = {
                                               alias: null,
                                               args: null,
                                               kind: 'ScalarField',
                                               name: 'muted',
                                               storageKey: null,
-                                            },
-                                            {
+                                            }),
+                                            (v = {
                                               alias: null,
                                               args: null,
                                               kind: 'ScalarField',
                                               name: 'muted_due_to_muted_user',
                                               storageKey: null,
-                                            },
+                                            }),
                                             {
                                               alias: null,
                                               args: null,
@@ -15748,7 +15741,7 @@
                                                 l,
                                                 {
                                                   kind: 'RequiredField',
-                                                  field: h,
+                                                  field: _,
                                                   action: 'THROW',
                                                   path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.users_results.result.legacy',
                                                 },
@@ -15785,7 +15778,7 @@
                                                 l,
                                                 {
                                                   kind: 'RequiredField',
-                                                  field: h,
+                                                  field: _,
                                                   action: 'THROW',
                                                   path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.participants_snapshot_results.result.legacy',
                                                 },
@@ -15822,7 +15815,7 @@
                                                 l,
                                                 {
                                                   kind: 'RequiredField',
-                                                  field: h,
+                                                  field: _,
                                                   action: 'THROW',
                                                   path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.initiating_user_results.result.legacy',
                                                 },
@@ -15852,7 +15845,7 @@
                                           storageKey: null,
                                         },
                                         t,
-                                        (f = {
+                                        (k = {
                                           alias: null,
                                           args: null,
                                           kind: 'ScalarField',
@@ -15872,7 +15865,7 @@
                                               name: 'attachments',
                                               plural: !0,
                                               selections: [
-                                                (v = {
+                                                (b = {
                                                   alias: null,
                                                   args: null,
                                                   kind: 'ScalarField',
@@ -15913,11 +15906,11 @@
                                                           name: 'media_info',
                                                           plural: !1,
                                                           selections: [
-                                                            v,
+                                                            b,
                                                             {
                                                               kind: 'InlineFragment',
-                                                              selections: (T = [
-                                                                (k = {
+                                                              selections: (K = [
+                                                                (F = {
                                                                   alias: null,
                                                                   args: null,
                                                                   kind: 'ScalarField',
@@ -15935,7 +15928,7 @@
                                                                   name: 'salient_rect',
                                                                   plural: !1,
                                                                   selections: [
-                                                                    (b = {
+                                                                    (S = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
@@ -15956,7 +15949,7 @@
                                                                       name: 'top',
                                                                       storageKey: null,
                                                                     },
-                                                                    (F = {
+                                                                    (E = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
@@ -15982,7 +15975,7 @@
                                                                       name: 'palette',
                                                                       plural: !0,
                                                                       selections: [
-                                                                        (S = {
+                                                                        (T = {
                                                                           alias: null,
                                                                           args: null,
                                                                           kind: 'ScalarField',
@@ -15996,7 +15989,7 @@
                                                                           kind: 'LinkedField',
                                                                           name: 'rgb',
                                                                           plural: !1,
-                                                                          selections: (E = [
+                                                                          selections: (C = [
                                                                             {
                                                                               alias: null,
                                                                               args: null,
@@ -16034,7 +16027,7 @@
                                                             {
                                                               kind: 'InlineFragment',
                                                               selections: [
-                                                                (C = {
+                                                                (I = {
                                                                   alias: null,
                                                                   args: null,
                                                                   concreteType: 'AspectRatio',
@@ -16073,17 +16066,17 @@
                                                                   name: 'embeddable',
                                                                   storageKey: null,
                                                                 },
-                                                                (K = {
+                                                                (L = {
                                                                   alias: null,
                                                                   args: null,
                                                                   concreteType: 'ApiImage',
                                                                   kind: 'LinkedField',
                                                                   name: 'preview_image',
                                                                   plural: !1,
-                                                                  selections: T,
+                                                                  selections: K,
                                                                   storageKey: null,
                                                                 }),
-                                                                (L = {
+                                                                (w = {
                                                                   alias: null,
                                                                   args: null,
                                                                   concreteType: 'VideoVariant',
@@ -16105,7 +16098,7 @@
                                                                       name: 'content_type',
                                                                       storageKey: null,
                                                                     },
-                                                                    (I = {
+                                                                    (x = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
@@ -16128,7 +16121,7 @@
                                                             },
                                                             {
                                                               kind: 'InlineFragment',
-                                                              selections: [k, C, K, L],
+                                                              selections: [F, I, L, w],
                                                               type: 'ApiGif',
                                                               abstractKey: null,
                                                             },
@@ -16170,7 +16163,7 @@
                                                               name: 'binding_values',
                                                               plural: !0,
                                                               selections: [
-                                                                (x = {
+                                                                (R = {
                                                                   alias: null,
                                                                   args: null,
                                                                   kind: 'ScalarField',
@@ -16214,9 +16207,9 @@
                                                                           name: 'alt',
                                                                           storageKey: null,
                                                                         },
-                                                                        b,
-                                                                        F,
-                                                                        I,
+                                                                        S,
+                                                                        E,
+                                                                        x,
                                                                       ],
                                                                       storageKey: null,
                                                                     },
@@ -16237,17 +16230,17 @@
                                                                           name: 'palette',
                                                                           plural: !0,
                                                                           selections: [
-                                                                            (w = {
+                                                                            (M = {
                                                                               alias: null,
                                                                               args: null,
                                                                               concreteType: 'ApiMediaEntityColor',
                                                                               kind: 'LinkedField',
                                                                               name: 'rgb',
                                                                               plural: !1,
-                                                                              selections: E,
+                                                                              selections: C,
                                                                               storageKey: null,
                                                                             }),
-                                                                            S,
+                                                                            T,
                                                                           ],
                                                                           storageKey: null,
                                                                         },
@@ -16368,7 +16361,7 @@
                                                               storageKey: null,
                                                             },
                                                             c,
-                                                            I,
+                                                            x,
                                                             {
                                                               alias: null,
                                                               args: null,
@@ -16403,14 +16396,14 @@
                                                                           name: 'url',
                                                                           plural: !1,
                                                                           selections: [
-                                                                            (R = {
+                                                                            (A = {
                                                                               alias: 'urlType',
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'url_type',
                                                                               storageKey: null,
                                                                             }),
-                                                                            I,
+                                                                            x,
                                                                           ],
                                                                           storageKey: null,
                                                                         },
@@ -16421,7 +16414,7 @@
                                                                           kind: 'LinkedField',
                                                                           name: 'badge',
                                                                           plural: !1,
-                                                                          selections: [I],
+                                                                          selections: [x],
                                                                           storageKey: null,
                                                                         },
                                                                         d,
@@ -16447,7 +16440,7 @@
                                                                               name: 'rtl',
                                                                               storageKey: null,
                                                                             },
-                                                                            f,
+                                                                            k,
                                                                             {
                                                                               alias: null,
                                                                               args: null,
@@ -16494,27 +16487,27 @@
                                                                                     },
                                                                                     {
                                                                                       kind: 'InlineFragment',
-                                                                                      selections: (M = [f]),
+                                                                                      selections: (O = [k]),
                                                                                       type: 'TimelineRichTextCashtag',
                                                                                       abstractKey: null,
                                                                                     },
                                                                                     {
                                                                                       kind: 'InlineFragment',
-                                                                                      selections: [t, I],
+                                                                                      selections: [t, x],
                                                                                       type: 'TimelineRichTextList',
                                                                                       abstractKey: null,
                                                                                     },
                                                                                     {
                                                                                       kind: 'InlineFragment',
-                                                                                      selections: M,
+                                                                                      selections: O,
                                                                                       type: 'TimelineRichTextHashtag',
                                                                                       abstractKey: null,
                                                                                     },
                                                                                     {
                                                                                       kind: 'InlineFragment',
                                                                                       selections: [
-                                                                                        I,
-                                                                                        R,
+                                                                                        x,
+                                                                                        A,
                                                                                         {
                                                                                           alias: 'urtEndpointOptions',
                                                                                           args: null,
@@ -16554,7 +16547,7 @@
                                                                                               name: 'request_params',
                                                                                               plural: !0,
                                                                                               selections: [
-                                                                                                x,
+                                                                                                R,
                                                                                                 {
                                                                                                   alias: null,
                                                                                                   args: null,
@@ -16591,13 +16584,13 @@
                                                                                               name: 'result',
                                                                                               plural: !1,
                                                                                               selections: [
-                                                                                                v,
+                                                                                                b,
                                                                                                 {
                                                                                                   kind: 'InlineFragment',
                                                                                                   selections: [
                                                                                                     {
                                                                                                       kind: 'RequiredField',
-                                                                                                      field: (A = {
+                                                                                                      field: (D = {
                                                                                                         alias: null,
                                                                                                         args: null,
                                                                                                         concreteType:
@@ -16617,7 +16610,7 @@
                                                                                                   type: 'User',
                                                                                                   abstractKey: null,
                                                                                                 },
-                                                                                                (O = {
+                                                                                                (P = {
                                                                                                   kind: 'InlineFragment',
                                                                                                   selections: [
                                                                                                     {
@@ -16668,13 +16661,13 @@
                                                                                               name: 'result',
                                                                                               plural: !1,
                                                                                               selections: [
-                                                                                                v,
+                                                                                                b,
                                                                                                 {
                                                                                                   kind: 'InlineFragment',
                                                                                                   selections: [
                                                                                                     {
                                                                                                       kind: 'RequiredField',
-                                                                                                      field: A,
+                                                                                                      field: D,
                                                                                                       action: 'THROW',
                                                                                                       path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.affiliates_highlighted_label.label.longDescription.entities.ref.mention_results.result.legacy',
                                                                                                     },
@@ -16683,7 +16676,7 @@
                                                                                                   type: 'User',
                                                                                                   abstractKey: null,
                                                                                                 },
-                                                                                                O,
+                                                                                                P,
                                                                                               ],
                                                                                               storageKey: null,
                                                                                             },
@@ -16814,7 +16807,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'entities',
                                                                         plural: !1,
-                                                                        selections: (P = [
+                                                                        selections: (N = [
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -16822,7 +16815,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'description',
                                                                             plural: !1,
-                                                                            selections: (D = [
+                                                                            selections: (U = [
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -16845,7 +16838,7 @@
                                                                                     name: 'expanded_url',
                                                                                     storageKey: null,
                                                                                   },
-                                                                                  I,
+                                                                                  x,
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -16866,7 +16859,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'url',
                                                                             plural: !1,
-                                                                            selections: D,
+                                                                            selections: U,
                                                                             storageKey: null,
                                                                           },
                                                                         ]),
@@ -17041,7 +17034,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'profile_banner_extensions',
                                                                         plural: !1,
-                                                                        selections: (U = [
+                                                                        selections: (j = [
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -17075,7 +17068,7 @@
                                                                                         kind: 'LinkedField',
                                                                                         name: 'palette',
                                                                                         plural: !0,
-                                                                                        selections: [S, w],
+                                                                                        selections: [T, M],
                                                                                         storageKey: null,
                                                                                       },
                                                                                     ],
@@ -17104,7 +17097,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'profile_image_extensions',
                                                                         plural: !1,
-                                                                        selections: U,
+                                                                        selections: j,
                                                                         storageKey: null,
                                                                       },
                                                                       m,
@@ -17154,7 +17147,7 @@
                                                                         name: 'translator_type',
                                                                         storageKey: null,
                                                                       },
-                                                                      I,
+                                                                      x,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -17195,7 +17188,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'withheld_entities',
                                                                         plural: !1,
-                                                                        selections: P,
+                                                                        selections: N,
                                                                         storageKey: null,
                                                                       },
                                                                       {
@@ -17354,7 +17347,7 @@
                                                     l,
                                                     {
                                                       kind: 'RequiredField',
-                                                      field: h,
+                                                      field: _,
                                                       action: 'THROW',
                                                       path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.recipient_results.result.legacy',
                                                     },
@@ -17391,7 +17384,7 @@
                                                     l,
                                                     {
                                                       kind: 'RequiredField',
-                                                      field: h,
+                                                      field: _,
                                                       action: 'THROW',
                                                       path: 'legacy_conversation_slice.items.dm_event.legacy.event_detail.dm.sender_results.result.legacy',
                                                     },
@@ -17427,11 +17420,21 @@
               ],
               storageKey: null,
             },
+            {
+              alias: null,
+              args: null,
+              concreteType: 'PerspectivalConversationMetadata',
+              kind: 'LinkedField',
+              name: 'perspectival_conversation_metadata',
+              plural: !1,
+              selections: [h, f, v],
+              storageKey: null,
+            },
           ],
           type: 'DMConversation',
           abstractKey: null,
         }
-      ;(N.hash = '5311ded31529116554f155bf39c173cc'), (e.exports = N)
+      ;(B.hash = 'f29e85e562e56b7af549faa47e992ff3'), (e.exports = B)
     },
     T8pk: function (e, n, a) {
       'use strict'
@@ -17769,6 +17772,354 @@
             [a, n],
           )
         }
+    },
+    VcIV: function (e, n, a) {
+      'use strict'
+      a.d(n, 'a', function () {
+        return ce
+      })
+      var t = a('ddV6'),
+        l = a.n(t),
+        i = (a('z84I'), a('KqXw'), a('MvUL'), a('0zG9'), a('MMRb')),
+        r = a('ERkP'),
+        s = a.n(r),
+        o = a('RqPI'),
+        c = a('1YZw'),
+        u = a('HPNB'),
+        d = a('v6aA'),
+        p = a('V/6K'),
+        m = a('XnpN'),
+        g = a('3XMw'),
+        y = a.n(g),
+        _ = a('tI3i'),
+        h = a.n(_),
+        f = a('xZGM'),
+        v = a('YemM'),
+        k = a('Irs7'),
+        b = a('0KEI'),
+        F = a('ii+P'),
+        S = a('zCf4'),
+        E = a('MWbm'),
+        T = a('mjJ+'),
+        C = a('eb3s'),
+        K = a('ZToW'),
+        I = a('cHvH'),
+        L = a('kb9v'),
+        x = a('IG7M'),
+        w = a('6u/5'),
+        R = a.n(w),
+        M = a('PJTX'),
+        A = a.n(M),
+        O = a('pHkl'),
+        D = a('X/yg'),
+        P = a('yiKp'),
+        U = a.n(P),
+        N = a('Lsrn'),
+        j = a('k/Ka'),
+        B = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(j.a)(
+            'svg',
+            U()(
+              U()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [N.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            s.a.createElement(
+              'g',
+              null,
+              s.a.createElement('path', {
+                d: 'M17.931 2.508c0 .42-.34.75-.75.75h-8.39l1.38 2.08-.56 5.78-.47.16c-1.5.49-3.1 2.07-3.37 3.31-.07.35-.39.59-.73.59-.05 0-.11 0-.16-.01-.4-.09-.66-.49-.58-.89.39-1.81 2.24-3.52 3.91-4.25l.42-4.3-1.35-2.02c-.26-.38-.29-.87-.07-1.29.24-.41.66-.66 1.11-.66h8.86c.41 0 .75.34.75.75zm3.09 12.76c-.14.17-.46.46-1.05.46h-3.86l-2.64 6.1c-.12.28-.39.45-.69.45s-.57-.17-.69-.45l-1.96-4.53c-.16-.38.01-.82.39-.98.38-.17.82.01.99.39l1.27 2.93 1.69-3.91h-1.61c-.42 0-.75-.33-.75-.75 0-.41.33-.75.75-.75h6.81c-.41-1.06-1.64-2.26-2.91-2.82-.09-.04-.16-.09-.22-.16-.22-.21-.3-.54-.17-.83.17-.38.61-.55.99-.39 1.59.7 3.5 2.43 3.89 4.25.06.25.03.66-.23.99zm.839-12.259L3.2 21.659c-.15.15-.34.22-.53.22s-.39-.07-.53-.22c-.29-.29-.29-.76 0-1.06L20.8 1.939c.29-.29.76-.29 1.06 0 .29.3.29.77 0 1.07z',
+              }),
+            ),
+          )
+        }
+      B.metadata = { width: 24, height: 24 }
+      var H = B,
+        V = a('ShJ/'),
+        W = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(j.a)(
+            'svg',
+            U()(
+              U()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [N.a.root, e.style],
+                viewBox: '0 0 32 32',
+              },
+            ),
+            s.a.createElement(
+              'g',
+              null,
+              s.a.createElement('path', {
+                d: 'M28.05 6.52h-5.42V4.887c0-1.548-1.26-2.808-2.81-2.808h-7.54c-1.548 0-2.807 1.26-2.807 2.808v1.63H4.05c-.414 0-.75.337-.75.75s.336.75.75.75h.753L7 26.435c.27 1.504 1.657 2.554 3.37 2.554h11.36c1.713 0 3.1-1.05 3.376-2.598l2.19-18.37h.753c.413 0 .75-.337.75-.75s-.336-.75-.75-.75zM10.972 4.887c0-.72.586-1.308 1.307-1.308h7.542c.72 0 1.308.587 1.308 1.308v1.63H10.972V4.89zm12.65 21.28c-.163.91-1.068 1.32-1.893 1.32H10.37c-.824 0-1.73-.41-1.887-1.276L6.313 8.02h19.472l-2.162 18.148z',
+              }),
+              s.a.createElement('path', {
+                d: 'M13.312 23.123c.414 0 .75-.336.75-.75v-9.6c0-.414-.336-.75-.75-.75s-.75.336-.75.75v9.6c0 .414.336.75.75.75zm5.486 0c.414 0 .75-.336.75-.75v-9.6c0-.414-.336-.75-.75-.75s-.75.336-.75.75v9.6c0 .414.336.75.75.75z',
+              }),
+            ),
+          )
+        }
+      W.metadata = { width: 32, height: 32 }
+      var q = W,
+        z = a('zIWA'),
+        G = a('5pef'),
+        Y = a('IpT4'),
+        Q = a('fz3c'),
+        X = a('uDfI'),
+        Z = y.a.a30a206d,
+        J = y.a.ib4b1b85,
+        $ = y.a.bd3ca2ee,
+        ee = {
+          confirmButtonLabel: y.a.bb1d57b6,
+          actionTextLeave: y.a.g9074da4,
+          header: y.a.gdf4b79f,
+          text: y.a.h09b49f7,
+        },
+        ne = y.a.ad63377d,
+        ae = y.a.e1c9ec9b,
+        te = y.a.i6b19b07,
+        le = y.a.e3cfff7c,
+        ie = y.a.f398722d,
+        re = y.a.bdd91963,
+        se = y.a.a8ed0eca,
+        oe = y.a.jac4eb1e
+      function ce(e) {
+        var n = e.conversation,
+          a = e.conversationId,
+          t = e.conversationType,
+          r = e.inboxType,
+          g = e.isHovered,
+          y = e.isPinned,
+          _ = e.isSnoozed,
+          w = e.participantCount,
+          M = e.pinConversation,
+          P = e.position,
+          U = e.relayId,
+          N = e.unpinConversation,
+          j = Object(k.b)(),
+          B = Object(b.useCreateLocalApiErrorHandler)('DIRECT_MESSAGES_INBOX_ITEM'),
+          W = Object(X.c)(),
+          ce = A()(),
+          ue = s.a.useContext(d.a).featureSwitches,
+          de = Object(S.f)(),
+          pe = s.a.useContext(p.a).isDrawer,
+          me = Object(X.d)(o.r),
+          ge = ue.getValue('dm_conversation_labels_max_pinned_count'),
+          ye = ue.isTrue('dm_conversation_labels_pinned_education_enabled') && !y && 1 === P,
+          _e = s.a.useState(!1),
+          he = l()(_e, 2),
+          fe = he[0],
+          ve = he[1],
+          ke = s.a.useState(!1),
+          be = l()(ke, 2),
+          Fe = be[0],
+          Se = be[1],
+          Ee = Object(F.a)(f.t),
+          Te = l()(Ee, 2),
+          Ce = Te[0],
+          Ke = Te[1],
+          Ie = s.a.useState(ye && Ce),
+          Le = l()(Ie, 2),
+          xe = Le[0],
+          we = Le[1]
+        s.a.useEffect(
+          function () {
+            if (xe) return Ke
+          },
+          [Ke, xe],
+        )
+        var Re = function () {
+            var e = t === i.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
+              n = {
+                conversation_type: t === i.CONVERSATION_TYPE.GROUP ? O.j.GROUP : O.j.ONE_TO_ONE,
+                conversation_id: a,
+                conversation_participant_count: w,
+                position: P,
+                inbox_type: Object(D.i)(r),
+                entry_point: r === O.e.PRIMARY ? O.c.THREE_DOT_MENU : O.c.CELL_X_BUTTON,
+              }
+            Se(!1),
+              j.scribe({ element: 'thread', action: e, data: n }),
+              y && De(),
+              W(i.leaveConversation({ conversationId: a }))
+                .then(function () {
+                  U &&
+                    R()(ce, function (e) {
+                      e.delete(U)
+                    })
+                })
+                .catch(B({ showToast: !0 })),
+              de.replace(Object(D.f)(r))
+          },
+          Me = function (e) {
+            return function () {
+              e && e(), ve(!1)
+            }
+          },
+          Ae = function (e) {
+            return function () {
+              var l,
+                s,
+                o = Q.a.DMConversation,
+                c =
+                  t === i.CONVERSATION_TYPE.GROUP
+                    ? '0'
+                    : ((l =
+                        n &&
+                        Object(m.a)(n, me).map(function (e) {
+                          return e.user
+                        })),
+                      (s = (l && l[0]) || null) ? s.id_str : '')
+              if ((j.scribeAction('report'), Object(Q.g)(ue, o))) {
+                var u = Object(Q.d)({
+                  clientReferer: window.location.pathname,
+                  isMedia: !1,
+                  isPromoted: !1,
+                  reportType: o,
+                  reportedConversationId: a,
+                  reportedUser: c,
+                  scribeNamespace: j.contextualScribeNamespace,
+                })
+                e.push({
+                  pathname: '/i/safety/report_story_start',
+                  state: { input: { requested_variant: JSON.stringify(u) } },
+                })
+              } else {
+                var d = Object(D.g)(a, window.location.pathname, j.contextualScribeNamespace, r)
+                e.push(d)
+              }
+            }
+          },
+          Oe = function () {
+            if (_)
+              W(i.enableNotifications({ conversationId: a })).then(function () {
+                U &&
+                  R()(ce, function (e) {
+                    var n = e.get(U)
+                    h()(n, 'relayId must be defined')
+                    var a = n.getLinkedRecord('perspectival_conversation_metadata')
+                    h()(a, 'metadataRef must be defined'), a.setValue(!1, 'muted')
+                  }),
+                  W(Object(c.b)({ ariaOnly: !0, text: oe }))
+              })
+            else {
+              var e = {
+                conversation_type: t === i.CONVERSATION_TYPE.GROUP ? O.j.GROUP : O.j.ONE_TO_ONE,
+                conversation_id: a,
+                conversation_participant_count: w,
+                entry_point: O.c.THREE_DOT_MENU,
+              }
+              j.scribe({ element: 'thread', action: 'mute_dm_thread_forever', data: e }),
+                W(i.disableNotifications({ conversationId: a })).then(function () {
+                  U &&
+                    R()(ce, function (e) {
+                      var n = e.get(U)
+                      h()(n, 'relayId must be defined')
+                      var a = n.getLinkedRecord('perspectival_conversation_metadata')
+                      h()(a, 'metadataRef must be defined'), a.setValue(!0, 'muted')
+                    }),
+                    W(Object(c.b)({ ariaOnly: !0, text: ie }))
+                })
+            }
+          },
+          De = function () {
+            var e = y ? 'unpin_dm_conversation' : 'pin_dm_conversation',
+              l = y ? N : M,
+              r = {
+                conversation_type: t === i.CONVERSATION_TYPE.GROUP ? O.j.GROUP : O.j.ONE_TO_ONE,
+                conversation_id: a,
+                conversation_participant_count: w,
+                position: P,
+              }
+            j.scribe({ element: 'thread', action: e, data: r }), n && l && l(a, n)
+          },
+          Pe = function (e) {
+            var n = { Icon: y ? H : V.a, onClick: De, text: y ? re : ae, withBottomBorder: !0 },
+              a = {
+                Icon: q,
+                isEmphasized: !0,
+                onClick: function () {
+                  return Se(!0)
+                },
+                text: ne,
+                withBottomBorder: !0,
+              },
+              t = { Icon: z.a, onClick: Ae(de), text: te, withBottomBorder: !0 },
+              l = { Icon: _ ? G.a : Y.a, onClick: Oe, text: _ ? se : le, withBottomBorder: !0 },
+              i = M && N ? [n, a, t, l] : [a, t, l]
+            return s.a.createElement(T.a, { items: i, onCloseRequested: Me(e), shouldCloseOnClick: !0 })
+          },
+          Ue = !K.a.isEnabled || g || fe || xe
+        return s.a.createElement(
+          s.a.Fragment,
+          null,
+          Fe
+            ? s.a.createElement(C.a, {
+                confirmButtonLabel: ee.confirmButtonLabel,
+                confirmButtonType: 'destructiveFilled',
+                headline: ee.header,
+                onCancel: function () {
+                  return Se(!1)
+                },
+                onConfirm: Re,
+                text: ee.text,
+              })
+            : null,
+          Ue
+            ? s.a.createElement(I.a, null, function (e) {
+                var n = e.windowWidth,
+                  a = u.a.isTwoColumnLayout(n)
+                return s.a.createElement(
+                  E.a,
+                  { style: v.a.menuContainer },
+                  s.a.createElement(
+                    L.a,
+                    {
+                      actionPrimary: {
+                        text: Z,
+                        onClick: function () {
+                          return we(!1)
+                        },
+                      },
+                      headline: J,
+                      onDismiss: function () {
+                        return we(!1)
+                      },
+                      shouldDisplay: xe && !pe,
+                      text: $({ count: ge }),
+                      withMask: !a,
+                    },
+                    a
+                      ? s.a.createElement(x.a, {
+                          onClick: function () {
+                            return ve(!0)
+                          },
+                          renderActionMenu: Pe,
+                          style: Ue ? v.a.menu : v.a.hiddenMenu,
+                        })
+                      : null,
+                  ),
+                  a
+                    ? null
+                    : s.a.createElement(x.a, {
+                        onClick: function () {
+                          return ve(!0)
+                        },
+                        renderActionMenu: Pe,
+                        style: Ue ? v.a.menu : v.a.hiddenMenu,
+                      }),
+                )
+              })
+            : null,
+        )
+      }
     },
     'X/yg': function (e, n, a) {
       'use strict'
@@ -19225,7 +19576,9 @@
         Z,
         J,
         $,
-        ee = {
+        ee,
+        ne,
+        ae = {
           fragment: {
             argumentDefinitions: [
               (t = { defaultValue: null, kind: 'LocalArgument', name: 'count' }),
@@ -19599,24 +19952,6 @@
                                                 ],
                                                 storageKey: null,
                                               },
-                                              {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: 'PerspectivalConversationMetadata',
-                                                kind: 'LinkedField',
-                                                name: 'perspectival_conversation_metadata',
-                                                plural: !1,
-                                                selections: [
-                                                  (R = {
-                                                    alias: null,
-                                                    args: null,
-                                                    kind: 'ScalarField',
-                                                    name: 'last_read_event_id',
-                                                    storageKey: null,
-                                                  }),
-                                                ],
-                                                storageKey: null,
-                                              },
                                             ],
                                             storageKey: null,
                                           },
@@ -19666,7 +20001,7 @@
                                                                 name: 'affects_sort',
                                                                 storageKey: null,
                                                               },
-                                                              (M = {
+                                                              (R = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -19731,7 +20066,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'created_by_user_results',
                                                                             plural: !1,
-                                                                            selections: (A = [
+                                                                            selections: (M = [
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -19768,7 +20103,7 @@
                                                                             ]),
                                                                             storageKey: null,
                                                                           },
-                                                                          M,
+                                                                          R,
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -19776,7 +20111,7 @@
                                                                             kind: 'LinkedField',
                                                                             name: 'admin_user_results',
                                                                             plural: !1,
-                                                                            selections: A,
+                                                                            selections: M,
                                                                             storageKey: null,
                                                                           },
                                                                           {
@@ -19864,7 +20199,13 @@
                                                                             ],
                                                                             storageKey: null,
                                                                           },
-                                                                          R,
+                                                                          (A = {
+                                                                            alias: null,
+                                                                            args: null,
+                                                                            kind: 'ScalarField',
+                                                                            name: 'last_read_event_id',
+                                                                            storageKey: null,
+                                                                          }),
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -19891,7 +20232,7 @@
                                                                         name: 'perspectival_conversation_metadata',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          R,
+                                                                          A,
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -19899,20 +20240,20 @@
                                                                             name: 'low_quality',
                                                                             storageKey: null,
                                                                           },
-                                                                          {
+                                                                          (O = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'muted',
                                                                             storageKey: null,
-                                                                          },
-                                                                          {
+                                                                          }),
+                                                                          (D = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'muted_due_to_muted_user',
                                                                             storageKey: null,
-                                                                          },
+                                                                          }),
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -20012,7 +20353,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'users_results',
                                                                     plural: !0,
-                                                                    selections: A,
+                                                                    selections: M,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -20022,7 +20363,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'participants_snapshot_results',
                                                                     plural: !0,
-                                                                    selections: A,
+                                                                    selections: M,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -20032,7 +20373,7 @@
                                                                     kind: 'LinkedField',
                                                                     name: 'initiating_user_results',
                                                                     plural: !1,
-                                                                    selections: A,
+                                                                    selections: M,
                                                                     storageKey: null,
                                                                   },
                                                                   {
@@ -20051,7 +20392,7 @@
                                                                         storageKey: null,
                                                                       },
                                                                       f,
-                                                                      (O = {
+                                                                      (P = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -20109,8 +20450,8 @@
                                                                                           h,
                                                                                           {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: (B = [
-                                                                                              (D = {
+                                                                                            selections: (V = [
+                                                                                              (U = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 kind: 'ScalarField',
@@ -20129,7 +20470,7 @@
                                                                                                 name: 'salient_rect',
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                  (P = {
+                                                                                                  (N = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -20150,7 +20491,7 @@
                                                                                                     name: 'top',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  (U = {
+                                                                                                  (j = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -20178,7 +20519,7 @@
                                                                                                     name: 'palette',
                                                                                                     plural: !0,
                                                                                                     selections: [
-                                                                                                      (N = {
+                                                                                                      (B = {
                                                                                                         alias: null,
                                                                                                         args: null,
                                                                                                         kind: 'ScalarField',
@@ -20194,7 +20535,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'rgb',
                                                                                                         plural: !1,
-                                                                                                        selections: (j =
+                                                                                                        selections: (H =
                                                                                                           [
                                                                                                             {
                                                                                                               alias:
@@ -20240,7 +20581,7 @@
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              (H = {
+                                                                                              (W = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -20280,7 +20621,7 @@
                                                                                                 name: 'embeddable',
                                                                                                 storageKey: null,
                                                                                               },
-                                                                                              (V = {
+                                                                                              (q = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -20288,10 +20629,10 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'preview_image',
                                                                                                 plural: !1,
-                                                                                                selections: B,
+                                                                                                selections: V,
                                                                                                 storageKey: null,
                                                                                               }),
-                                                                                              (q = {
+                                                                                              (G = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -20314,7 +20655,7 @@
                                                                                                     name: 'content_type',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  (W = {
+                                                                                                  (z = {
                                                                                                     alias: null,
                                                                                                     args: null,
                                                                                                     kind: 'ScalarField',
@@ -20337,7 +20678,7 @@
                                                                                           },
                                                                                           {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: [D, H, V, q],
+                                                                                            selections: [U, W, q, G],
                                                                                             type: 'ApiGif',
                                                                                             abstractKey: null,
                                                                                           },
@@ -20380,7 +20721,7 @@
                                                                                             name: 'binding_values',
                                                                                             plural: !0,
                                                                                             selections: [
-                                                                                              (z = {
+                                                                                              (Y = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 kind: 'ScalarField',
@@ -20427,9 +20768,9 @@
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      P,
-                                                                                                      U,
-                                                                                                      W,
+                                                                                                      N,
+                                                                                                      j,
+                                                                                                      z,
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
@@ -20451,7 +20792,7 @@
                                                                                                         name: 'palette',
                                                                                                         plural: !0,
                                                                                                         selections: [
-                                                                                                          (G = {
+                                                                                                          (Q = {
                                                                                                             alias: null,
                                                                                                             args: null,
                                                                                                             concreteType:
@@ -20460,11 +20801,11 @@
                                                                                                             name: 'rgb',
                                                                                                             plural: !1,
                                                                                                             selections:
-                                                                                                              j,
+                                                                                                              H,
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           }),
-                                                                                                          N,
+                                                                                                          B,
                                                                                                         ],
                                                                                                         storageKey:
                                                                                                           null,
@@ -20594,7 +20935,7 @@
                                                                                             storageKey: null,
                                                                                           },
                                                                                           E,
-                                                                                          W,
+                                                                                          z,
                                                                                           {
                                                                                             alias: null,
                                                                                             args: null,
@@ -20633,7 +20974,7 @@
                                                                                                         name: 'url',
                                                                                                         plural: !1,
                                                                                                         selections: [
-                                                                                                          (Y = {
+                                                                                                          (X = {
                                                                                                             alias:
                                                                                                               'urlType',
                                                                                                             args: null,
@@ -20642,7 +20983,7 @@
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           }),
-                                                                                                          W,
+                                                                                                          z,
                                                                                                         ],
                                                                                                         storageKey:
                                                                                                           null,
@@ -20655,7 +20996,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'badge',
                                                                                                         plural: !1,
-                                                                                                        selections: [W],
+                                                                                                        selections: [z],
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
@@ -20686,7 +21027,7 @@
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           },
-                                                                                                          O,
+                                                                                                          P,
                                                                                                           {
                                                                                                             alias: null,
                                                                                                             args: null,
@@ -20754,9 +21095,9 @@
                                                                                                                       {
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
-                                                                                                                          (Q =
+                                                                                                                          (Z =
                                                                                                                             [
-                                                                                                                              O,
+                                                                                                                              P,
                                                                                                                             ]),
                                                                                                                         type: 'TimelineRichTextCashtag',
                                                                                                                         abstractKey:
@@ -20767,7 +21108,7 @@
                                                                                                                         selections:
                                                                                                                           [
                                                                                                                             f,
-                                                                                                                            W,
+                                                                                                                            z,
                                                                                                                           ],
                                                                                                                         type: 'TimelineRichTextList',
                                                                                                                         abstractKey:
@@ -20776,7 +21117,7 @@
                                                                                                                       {
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
-                                                                                                                          Q,
+                                                                                                                          Z,
                                                                                                                         type: 'TimelineRichTextHashtag',
                                                                                                                         abstractKey:
                                                                                                                           null,
@@ -20785,8 +21126,8 @@
                                                                                                                         kind: 'InlineFragment',
                                                                                                                         selections:
                                                                                                                           [
-                                                                                                                            W,
-                                                                                                                            Y,
+                                                                                                                            z,
+                                                                                                                            X,
                                                                                                                             {
                                                                                                                               alias:
                                                                                                                                 'urtEndpointOptions',
@@ -20838,7 +21179,7 @@
                                                                                                                                       !0,
                                                                                                                                     selections:
                                                                                                                                       [
-                                                                                                                                        z,
+                                                                                                                                        Y,
                                                                                                                                         {
                                                                                                                                           alias:
                                                                                                                                             null,
@@ -20876,7 +21217,7 @@
                                                                                                                               plural:
                                                                                                                                 !1,
                                                                                                                               selections:
-                                                                                                                                (X =
+                                                                                                                                (J =
                                                                                                                                   [
                                                                                                                                     {
                                                                                                                                       alias:
@@ -20976,7 +21317,7 @@
                                                                                                                               plural:
                                                                                                                                 !1,
                                                                                                                               selections:
-                                                                                                                                X,
+                                                                                                                                J,
                                                                                                                               storageKey:
                                                                                                                                 null,
                                                                                                                             },
@@ -21100,7 +21441,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'entities',
                                                                                                     plural: !1,
-                                                                                                    selections: (J = [
+                                                                                                    selections: (ee = [
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -21109,7 +21450,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'description',
                                                                                                         plural: !1,
-                                                                                                        selections: (Z =
+                                                                                                        selections: ($ =
                                                                                                           [
                                                                                                             {
                                                                                                               alias:
@@ -21141,7 +21482,7 @@
                                                                                                                     storageKey:
                                                                                                                       null,
                                                                                                                   },
-                                                                                                                  W,
+                                                                                                                  z,
                                                                                                                   {
                                                                                                                     alias:
                                                                                                                       null,
@@ -21167,7 +21508,7 @@
                                                                                                         kind: 'LinkedField',
                                                                                                         name: 'url',
                                                                                                         plural: !1,
-                                                                                                        selections: Z,
+                                                                                                        selections: $,
                                                                                                         storageKey:
                                                                                                           null,
                                                                                                       },
@@ -21309,7 +21650,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'profile_banner_extensions',
                                                                                                     plural: !1,
-                                                                                                    selections: ($ = [
+                                                                                                    selections: (ne = [
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -21353,8 +21694,8 @@
                                                                                                                           !0,
                                                                                                                         selections:
                                                                                                                           [
-                                                                                                                            N,
-                                                                                                                            G,
+                                                                                                                            B,
+                                                                                                                            Q,
                                                                                                                           ],
                                                                                                                         storageKey:
                                                                                                                           null,
@@ -21389,7 +21730,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'profile_image_extensions',
                                                                                                     plural: !1,
-                                                                                                    selections: $,
+                                                                                                    selections: ne,
                                                                                                     storageKey: null,
                                                                                                   },
                                                                                                   I,
@@ -21429,7 +21770,7 @@
                                                                                                     name: 'translator_type',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  W,
+                                                                                                  z,
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -21466,7 +21807,7 @@
                                                                                                     kind: 'LinkedField',
                                                                                                     name: 'withheld_entities',
                                                                                                     plural: !1,
-                                                                                                    selections: J,
+                                                                                                    selections: ee,
                                                                                                     storageKey: null,
                                                                                                   },
                                                                                                   {
@@ -21630,7 +21971,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'recipient_results',
                                                                         plural: !1,
-                                                                        selections: A,
+                                                                        selections: M,
                                                                         storageKey: null,
                                                                       },
                                                                       {
@@ -21640,7 +21981,7 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'sender_results',
                                                                         plural: !1,
-                                                                        selections: A,
+                                                                        selections: M,
                                                                         storageKey: null,
                                                                       },
                                                                     ],
@@ -21663,6 +22004,16 @@
                                                 abstractKey: null,
                                               },
                                             ],
+                                            storageKey: null,
+                                          },
+                                          {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: 'PerspectivalConversationMetadata',
+                                            kind: 'LinkedField',
+                                            name: 'perspectival_conversation_metadata',
+                                            plural: !1,
+                                            selections: [A, O, D],
                                             storageKey: null,
                                           },
                                         ],
@@ -21702,14 +22053,14 @@
             ],
           },
           params: {
-            id: '9VILJ8naLweguOgi8ozqkg',
+            id: 'rEzh7adL7Rsr50t07pYvSQ',
             metadata: { sliceInfoPath: ['dm_convo_list_slice', 'slice_info'] },
             name: 'EvolutionDMInboxSecondaryQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(ee.hash = '94f58a77229d1b0ff3c7530a22c883c4'), (e.exports = ee)
+      ;(ae.hash = '94f58a77229d1b0ff3c7530a22c883c4'), (e.exports = ae)
     },
     XiYe: function (e, n, a) {
       'use strict'
@@ -22062,7 +22413,7 @@
         u = a('rHpw'),
         d = a('TIdA'),
         p = a('A91F'),
-        m = a('jhWN'),
+        m = a('oSwX'),
         g = a('9Xij'),
         y = a('Znyr'),
         _ = a('cm6r'),
@@ -22132,7 +22483,7 @@
             return l.a.createElement(
               f.a,
               { key: n.id_str, style: k.container },
-              l.a.createElement(m.a, { size: a || 'xxLarge', uri: n.profile_image_url_https }),
+              l.a.createElement(m.default, { size: a || 'xxLarge', uri: n.profile_image_url_https }),
             )
           },
           a = function (e) {
@@ -22142,7 +22493,7 @@
                 return l.a.createElement(
                   f.a,
                   { key: e.id_str, style: k.container },
-                  l.a.createElement(m.a, {
+                  l.a.createElement(m.default, {
                     aspectRatio: t,
                     shape: 'none',
                     size: 'custom',
@@ -25890,7 +26241,9 @@
         W,
         q,
         z,
-        G = {
+        G,
+        Y,
+        Q = {
           fragment: {
             argumentDefinitions: [
               (t = { defaultValue: !1, kind: 'LocalArgument', name: 'withAttachments' }),
@@ -26198,24 +26551,6 @@
                                     ],
                                     storageKey: null,
                                   },
-                                  {
-                                    alias: null,
-                                    args: null,
-                                    concreteType: 'PerspectivalConversationMetadata',
-                                    kind: 'LinkedField',
-                                    name: 'perspectival_conversation_metadata',
-                                    plural: !1,
-                                    selections: [
-                                      (T = {
-                                        alias: null,
-                                        args: null,
-                                        kind: 'ScalarField',
-                                        name: 'last_read_event_id',
-                                        storageKey: null,
-                                      }),
-                                    ],
-                                    storageKey: null,
-                                  },
                                 ],
                                 storageKey: null,
                               },
@@ -26265,7 +26600,7 @@
                                                     name: 'affects_sort',
                                                     storageKey: null,
                                                   },
-                                                  (C = {
+                                                  (T = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -26330,7 +26665,7 @@
                                                                 kind: 'LinkedField',
                                                                 name: 'created_by_user_results',
                                                                 plural: !1,
-                                                                selections: (K = [
+                                                                selections: (C = [
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -26367,7 +26702,7 @@
                                                                 ]),
                                                                 storageKey: null,
                                                               },
-                                                              C,
+                                                              T,
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -26375,7 +26710,7 @@
                                                                 kind: 'LinkedField',
                                                                 name: 'admin_user_results',
                                                                 plural: !1,
-                                                                selections: K,
+                                                                selections: C,
                                                                 storageKey: null,
                                                               },
                                                               {
@@ -26463,7 +26798,13 @@
                                                                 ],
                                                                 storageKey: null,
                                                               },
-                                                              T,
+                                                              (K = {
+                                                                alias: null,
+                                                                args: null,
+                                                                kind: 'ScalarField',
+                                                                name: 'last_read_event_id',
+                                                                storageKey: null,
+                                                              }),
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -26489,7 +26830,7 @@
                                                             name: 'perspectival_conversation_metadata',
                                                             plural: !1,
                                                             selections: [
-                                                              T,
+                                                              K,
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -26497,20 +26838,20 @@
                                                                 name: 'low_quality',
                                                                 storageKey: null,
                                                               },
-                                                              {
+                                                              (I = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'muted',
                                                                 storageKey: null,
-                                                              },
-                                                              {
+                                                              }),
+                                                              (L = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'muted_due_to_muted_user',
                                                                 storageKey: null,
-                                                              },
+                                                              }),
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -26610,7 +26951,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'users_results',
                                                         plural: !0,
-                                                        selections: K,
+                                                        selections: C,
                                                         storageKey: null,
                                                       },
                                                       {
@@ -26620,7 +26961,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'participants_snapshot_results',
                                                         plural: !0,
-                                                        selections: K,
+                                                        selections: C,
                                                         storageKey: null,
                                                       },
                                                       {
@@ -26630,7 +26971,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'initiating_user_results',
                                                         plural: !1,
-                                                        selections: K,
+                                                        selections: C,
                                                         storageKey: null,
                                                       },
                                                       {
@@ -26649,7 +26990,7 @@
                                                             storageKey: null,
                                                           },
                                                           d,
-                                                          (I = {
+                                                          (x = {
                                                             alias: null,
                                                             args: null,
                                                             kind: 'ScalarField',
@@ -26707,8 +27048,8 @@
                                                                               u,
                                                                               {
                                                                                 kind: 'InlineFragment',
-                                                                                selections: (A = [
-                                                                                  (L = {
+                                                                                selections: (D = [
+                                                                                  (w = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
@@ -26726,7 +27067,7 @@
                                                                                     name: 'salient_rect',
                                                                                     plural: !1,
                                                                                     selections: [
-                                                                                      (x = {
+                                                                                      (R = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
@@ -26747,7 +27088,7 @@
                                                                                         name: 'top',
                                                                                         storageKey: null,
                                                                                       },
-                                                                                      (w = {
+                                                                                      (M = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
@@ -26774,7 +27115,7 @@
                                                                                         name: 'palette',
                                                                                         plural: !0,
                                                                                         selections: [
-                                                                                          (R = {
+                                                                                          (A = {
                                                                                             alias: null,
                                                                                             args: null,
                                                                                             kind: 'ScalarField',
@@ -26788,7 +27129,7 @@
                                                                                             kind: 'LinkedField',
                                                                                             name: 'rgb',
                                                                                             plural: !1,
-                                                                                            selections: (M = [
+                                                                                            selections: (O = [
                                                                                               {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -26826,7 +27167,7 @@
                                                                               {
                                                                                 kind: 'InlineFragment',
                                                                                 selections: [
-                                                                                  (O = {
+                                                                                  (P = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: 'AspectRatio',
@@ -26865,17 +27206,17 @@
                                                                                     name: 'embeddable',
                                                                                     storageKey: null,
                                                                                   },
-                                                                                  (D = {
+                                                                                  (U = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: 'ApiImage',
                                                                                     kind: 'LinkedField',
                                                                                     name: 'preview_image',
                                                                                     plural: !1,
-                                                                                    selections: A,
+                                                                                    selections: D,
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  (U = {
+                                                                                  (j = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: 'VideoVariant',
@@ -26897,7 +27238,7 @@
                                                                                         name: 'content_type',
                                                                                         storageKey: null,
                                                                                       },
-                                                                                      (P = {
+                                                                                      (N = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
@@ -26920,7 +27261,7 @@
                                                                               },
                                                                               {
                                                                                 kind: 'InlineFragment',
-                                                                                selections: [L, O, D, U],
+                                                                                selections: [w, P, U, j],
                                                                                 type: 'ApiGif',
                                                                                 abstractKey: null,
                                                                               },
@@ -26962,7 +27303,7 @@
                                                                                 name: 'binding_values',
                                                                                 plural: !0,
                                                                                 selections: [
-                                                                                  (N = {
+                                                                                  (B = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
@@ -27007,9 +27348,9 @@
                                                                                             name: 'alt',
                                                                                             storageKey: null,
                                                                                           },
-                                                                                          x,
-                                                                                          w,
-                                                                                          P,
+                                                                                          R,
+                                                                                          M,
+                                                                                          N,
                                                                                         ],
                                                                                         storageKey: null,
                                                                                       },
@@ -27031,7 +27372,7 @@
                                                                                             name: 'palette',
                                                                                             plural: !0,
                                                                                             selections: [
-                                                                                              (j = {
+                                                                                              (H = {
                                                                                                 alias: null,
                                                                                                 args: null,
                                                                                                 concreteType:
@@ -27039,10 +27380,10 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'rgb',
                                                                                                 plural: !1,
-                                                                                                selections: M,
+                                                                                                selections: O,
                                                                                                 storageKey: null,
                                                                                               }),
-                                                                                              R,
+                                                                                              A,
                                                                                             ],
                                                                                             storageKey: null,
                                                                                           },
@@ -27167,7 +27508,7 @@
                                                                                 storageKey: null,
                                                                               },
                                                                               h,
-                                                                              P,
+                                                                              N,
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -27205,14 +27546,14 @@
                                                                                             name: 'url',
                                                                                             plural: !1,
                                                                                             selections: [
-                                                                                              (B = {
+                                                                                              (V = {
                                                                                                 alias: 'urlType',
                                                                                                 args: null,
                                                                                                 kind: 'ScalarField',
                                                                                                 name: 'url_type',
                                                                                                 storageKey: null,
                                                                                               }),
-                                                                                              P,
+                                                                                              N,
                                                                                             ],
                                                                                             storageKey: null,
                                                                                           },
@@ -27223,7 +27564,7 @@
                                                                                             kind: 'LinkedField',
                                                                                             name: 'badge',
                                                                                             plural: !1,
-                                                                                            selections: [P],
+                                                                                            selections: [N],
                                                                                             storageKey: null,
                                                                                           },
                                                                                           v,
@@ -27250,7 +27591,7 @@
                                                                                                 name: 'rtl',
                                                                                                 storageKey: null,
                                                                                               },
-                                                                                              I,
+                                                                                              x,
                                                                                               {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -27305,8 +27646,8 @@
                                                                                                       },
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
-                                                                                                        selections: (H =
-                                                                                                          [I]),
+                                                                                                        selections: (W =
+                                                                                                          [x]),
                                                                                                         type: 'TimelineRichTextCashtag',
                                                                                                         abstractKey:
                                                                                                           null,
@@ -27315,7 +27656,7 @@
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
                                                                                                           d,
-                                                                                                          P,
+                                                                                                          N,
                                                                                                         ],
                                                                                                         type: 'TimelineRichTextList',
                                                                                                         abstractKey:
@@ -27323,7 +27664,7 @@
                                                                                                       },
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
-                                                                                                        selections: H,
+                                                                                                        selections: W,
                                                                                                         type: 'TimelineRichTextHashtag',
                                                                                                         abstractKey:
                                                                                                           null,
@@ -27331,8 +27672,8 @@
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
-                                                                                                          P,
-                                                                                                          B,
+                                                                                                          N,
+                                                                                                          V,
                                                                                                           {
                                                                                                             alias:
                                                                                                               'urtEndpointOptions',
@@ -27383,7 +27724,7 @@
                                                                                                                     !0,
                                                                                                                   selections:
                                                                                                                     [
-                                                                                                                      N,
+                                                                                                                      B,
                                                                                                                       {
                                                                                                                         alias:
                                                                                                                           null,
@@ -27418,7 +27759,7 @@
                                                                                                             name: 'user_results',
                                                                                                             plural: !1,
                                                                                                             selections:
-                                                                                                              (V = [
+                                                                                                              (q = [
                                                                                                                 {
                                                                                                                   alias:
                                                                                                                     null,
@@ -27515,7 +27856,7 @@
                                                                                                             name: 'user_results',
                                                                                                             plural: !1,
                                                                                                             selections:
-                                                                                                              V,
+                                                                                                              q,
                                                                                                             storageKey:
                                                                                                               null,
                                                                                                           },
@@ -27632,7 +27973,7 @@
                                                                                         kind: 'LinkedField',
                                                                                         name: 'entities',
                                                                                         plural: !1,
-                                                                                        selections: (q = [
+                                                                                        selections: (G = [
                                                                                           {
                                                                                             alias: null,
                                                                                             args: null,
@@ -27640,7 +27981,7 @@
                                                                                             kind: 'LinkedField',
                                                                                             name: 'description',
                                                                                             plural: !1,
-                                                                                            selections: (W = [
+                                                                                            selections: (z = [
                                                                                               {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -27664,7 +28005,7 @@
                                                                                                     name: 'expanded_url',
                                                                                                     storageKey: null,
                                                                                                   },
-                                                                                                  P,
+                                                                                                  N,
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -27685,7 +28026,7 @@
                                                                                             kind: 'LinkedField',
                                                                                             name: 'url',
                                                                                             plural: !1,
-                                                                                            selections: W,
+                                                                                            selections: z,
                                                                                             storageKey: null,
                                                                                           },
                                                                                         ]),
@@ -27826,7 +28167,7 @@
                                                                                         kind: 'LinkedField',
                                                                                         name: 'profile_banner_extensions',
                                                                                         plural: !1,
-                                                                                        selections: (z = [
+                                                                                        selections: (Y = [
                                                                                           {
                                                                                             alias: null,
                                                                                             args: null,
@@ -27863,8 +28204,8 @@
                                                                                                         name: 'palette',
                                                                                                         plural: !0,
                                                                                                         selections: [
-                                                                                                          R,
-                                                                                                          j,
+                                                                                                          A,
+                                                                                                          H,
                                                                                                         ],
                                                                                                         storageKey:
                                                                                                           null,
@@ -27896,7 +28237,7 @@
                                                                                         kind: 'LinkedField',
                                                                                         name: 'profile_image_extensions',
                                                                                         plural: !1,
-                                                                                        selections: z,
+                                                                                        selections: Y,
                                                                                         storageKey: null,
                                                                                       },
                                                                                       b,
@@ -27936,7 +28277,7 @@
                                                                                         name: 'translator_type',
                                                                                         storageKey: null,
                                                                                       },
-                                                                                      P,
+                                                                                      N,
                                                                                       {
                                                                                         alias: null,
                                                                                         args: null,
@@ -27972,7 +28313,7 @@
                                                                                         kind: 'LinkedField',
                                                                                         name: 'withheld_entities',
                                                                                         plural: !1,
-                                                                                        selections: q,
+                                                                                        selections: G,
                                                                                         storageKey: null,
                                                                                       },
                                                                                       {
@@ -28134,7 +28475,7 @@
                                                             kind: 'LinkedField',
                                                             name: 'recipient_results',
                                                             plural: !1,
-                                                            selections: K,
+                                                            selections: C,
                                                             storageKey: null,
                                                           },
                                                           {
@@ -28144,7 +28485,7 @@
                                                             kind: 'LinkedField',
                                                             name: 'sender_results',
                                                             plural: !1,
-                                                            selections: K,
+                                                            selections: C,
                                                             storageKey: null,
                                                           },
                                                         ],
@@ -28167,6 +28508,16 @@
                                     abstractKey: null,
                                   },
                                 ],
+                                storageKey: null,
+                              },
+                              {
+                                alias: null,
+                                args: null,
+                                concreteType: 'PerspectivalConversationMetadata',
+                                kind: 'LinkedField',
+                                name: 'perspectival_conversation_metadata',
+                                plural: !1,
+                                selections: [K, I, L],
                                 storageKey: null,
                               },
                             ],
@@ -28197,14 +28548,14 @@
             ],
           },
           params: {
-            id: 'OfJkt-9jiIrrbD0rmxbhog',
+            id: 'RcuXiEziaEpLl455V2tlxg',
             metadata: { sliceInfoPath: ['labeled_conversation_slice', 'slice_info'] },
             name: 'pinnedInboxSectionQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(G.hash = '0a4b3f1bae1ed87f9060f85932818a27'), (e.exports = G)
+      ;(Q.hash = '0a4b3f1bae1ed87f9060f85932818a27'), (e.exports = Q)
     },
     e5HP: function (e, n, a) {
       'use strict'
@@ -28654,24 +29005,21 @@
           )
         }),
         O = a('uKEd'),
-        D = a('oEGd'),
-        P = function (e, n) {
+        D = function (e, n) {
           return n.senderId ? d.e.select(e, n.senderId) : void 0
         },
-        U = function (e, n) {
+        P = function (e, n) {
           return Object(O.n)(e, n.reactionEntry.message_id)
         },
-        N = function (e, n) {
-          var a = U(e, n)
+        U = function (e, n) {
+          var a = P(e, n)
           return a && a.message_data && d.e.select(e, a.message_data.sender_id)
         },
-        j = Object(D.e)(function () {
-          return Object(c.createSelector)(P, U, N, function (e, n, a) {
-            return { reactedMessageEntry: n, reactingUser: e, messageUser: a }
-          })
-        }, {}),
-        B = a('33Kz'),
-        H = j(function (e) {
+        N = Object(p.a)().propsFromState(function () {
+          return { reactingUser: D, reactedMessageEntry: P, messageUser: U }
+        }),
+        j = a('33Kz'),
+        B = N(function (e) {
           var n,
             a = e.isGroupDM,
             t = e.isSelected,
@@ -28690,7 +29038,7 @@
             k = s && s.screen_name,
             b = o === (u && u.id_str),
             F = u && u.name,
-            S = Object(B.b)(d.reaction_key || '', g),
+            S = Object(j.b)(d.reaction_key || '', g),
             E = Object(_.b)(m),
             C = Object(_.a)(m, r)
           return (
@@ -28904,9 +29252,9 @@
             l.a.createElement(i.b, { color: C, numberOfLines: 1, weight: E }, n)
           )
         }),
-        V = a('H4nC'),
-        W = a('b9JY'),
-        q = T.a.fb3ccb55
+        H = a('H4nC'),
+        V = a('b9JY'),
+        W = T.a.fb3ccb55
       n.a = function (e) {
         var n = e.conversationType,
           a = e.entry,
@@ -28917,9 +29265,9 @@
         if (a.marked_as_spam) {
           var u = Object(_.b)(c),
             d = Object(_.a)(c, s)
-          return l.a.createElement(i.b, { color: d, numberOfLines: 1, weight: u }, q)
+          return l.a.createElement(i.b, { color: d, numberOfLines: 1, weight: u }, W)
         }
-        if (Object(W.b)(a)) {
+        if (Object(V.b)(a)) {
           var p = a.message_data,
             m = (p = void 0 === p ? {} : p).recipient_id,
             g = p.sender_id
@@ -28933,8 +29281,8 @@
             unread: c,
           })
         }
-        return Object(W.c)(a)
-          ? l.a.createElement(H, {
+        return Object(V.c)(a)
+          ? l.a.createElement(B, {
               isGroupDM: n === r.CONVERSATION_TYPE.GROUP,
               isSelected: s,
               perspective: o,
@@ -28942,10 +29290,10 @@
               senderId: a.sender_id,
               unread: c,
             })
-          : Object(W.a)(a)
+          : Object(V.a)(a)
           ? l.a.createElement(h, { entry: a, entryType: a.type, isSelected: s, perspective: o, unread: c })
-          : Object(W.d)(a)
-          ? l.a.createElement(V.a, { entry: a, isCompact: !0, isSelected: s, unread: c })
+          : Object(V.d)(a)
+          ? l.a.createElement(H.a, { entry: a, isCompact: !0, isSelected: s, unread: c })
           : null
       }
     },
@@ -30031,7 +30379,7 @@
         d = Object(s.a)({
           loader: function () {
             return u.a.emoji.then(function () {
-              return Promise.all([a.e(0), a.e(17), a.e(208)]).then(a.bind(null, '5RdJ'))
+              return Promise.all([a.e(0), a.e(17), a.e(207)]).then(a.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, n) {
@@ -30747,184 +31095,214 @@
         Ye = a('aA19'),
         Qe = a('OhSZ'),
         Xe = a('fQBn'),
-        Ze = a('tI3i'),
-        Je = a.n(Ze),
-        $e = a('t0aI'),
-        en = a('NjAB'),
-        nn = a('RqPI'),
-        an = a('YemM'),
-        tn = a('GBcw'),
-        ln = a('htQn'),
-        rn = a('5mJL'),
-        sn = a('6u/5'),
-        on = a.n(sn),
-        cn = (a('YWiL'), a('CVPS')),
-        un = a.n(cn),
-        dn = a('PJTX'),
-        pn = a.n(dn),
-        mn = a('h3MB'),
-        gn = a('uDfI')
-      function yn(e) {
+        Ze = a('IpT4'),
+        Je = a('tI3i'),
+        $e = a.n(Je),
+        en = a('t0aI'),
+        nn = a('VcIV'),
+        an = a('NjAB'),
+        tn = a('RqPI'),
+        ln = a('YemM'),
+        rn = a('GBcw'),
+        sn = a('cm6r'),
+        on = a('htQn'),
+        cn = a('5mJL'),
+        un = a('6u/5'),
+        dn = a.n(un),
+        pn = (a('YWiL'), a('CVPS')),
+        mn = a.n(pn),
+        gn = a('PJTX'),
+        yn = a.n(gn),
+        _n = a('h3MB'),
+        hn = a('uDfI')
+      function fn(e) {
         var n,
           t,
-          l = e.dm_conversation,
-          i = un()(void 0 !== We ? We : (We = a('Sy9O')), l),
-          o = Object(en.b)([i], [mn.a]).entities.conversations[
-            null == i || null === (n = i.legacy) || void 0 === n ? void 0 : n.conversation_id
+          l = e.conversationIds,
+          i = e.inboxType,
+          o = e.isMessageItem,
+          c = e.isPinned,
+          d = Object(H.b)(),
+          p = Object(M.useCreateLocalApiErrorHandler)('DIRECT_MESSAGES_INBOX_ITEM_EVOLUTION'),
+          m = Object(hn.c)(),
+          g = yn()(),
+          y = mn()(void 0 !== We ? We : (We = a('Sy9O')), e.dm_conversation),
+          _ = Object(an.b)([y], [_n.a]).entities.conversations[
+            null == y || null === (n = y.legacy) || void 0 === n ? void 0 : n.conversation_id
           ],
-          c = null == i || null === (t = i.legacy_conversation_slice) || void 0 === t ? void 0 : t.items,
-          d = Object(en.b)(c, [mn.b]).entities.entries,
-          p = []
-        for (var m in d) p.push(d[m])
-        var g = p.find(function (e) {
+          h = null == y || null === (t = y.legacy_conversation_slice) || void 0 === t ? void 0 : t.items,
+          f = Object(an.b)(h, [_n.b]).entities.entries,
+          v = []
+        for (var k in f) v.push(f[k])
+        var b = v.find(function (e) {
             return ve.d.includes(e.type)
           }),
-          y = Object(H.b)(),
-          _ = r.a.useContext(s.a).featureSwitches,
-          h = _.isTrue('dm_vdl_enabled') && _.isTrue('dm_vdl_inbox_p0_enabled'),
-          f = o.conversation_id,
-          v = o.id,
-          k = o.last_read_event_id,
-          b = o.last_readable_event_id,
-          F = o.participants,
-          S = o.type,
-          E = Object(gn.d)(nn.r) || '',
-          T = S === u.CONVERSATION_TYPE.GROUP,
-          C = !b || !(k && Object($e.c)(k, b)),
-          K = h && T,
-          I = Object(M.useCreateLocalApiErrorHandler)('DIRECT_MESSAGES_INBOX_ITEM'),
-          L = Object(gn.c)(),
-          x = pn()()
+          F = r.a.useContext(s.a).featureSwitches,
+          S = F.isTrue('dm_vdl_enabled') && F.isTrue('dm_vdl_inbox_p0_enabled'),
+          E =
+            F.isTrue('dm_conversation_labels_pinned_enabled') &&
+            F.isTrue('direct_messages_incremental_holdback_2022h1'),
+          T = _.conversation_id,
+          C = _.id,
+          K = _.last_read_event_id,
+          I = _.last_readable_event_id,
+          L = _.muted,
+          x = _.participants,
+          R = _.type,
+          A = Object(hn.d)(tn.r) || '',
+          O = R === u.CONVERSATION_TYPE.GROUP,
+          D =
+            l.findIndex(function (e) {
+              return e === C
+            }) + 1,
+          P = Object.keys(x).length,
+          U = !I || !(K && Object(en.c)(K, I)),
+          N = S && O
         r.a.useEffect(
           function () {
-            L(Object(u.updateLastSeenEventIdEvolution)(b, e.inboxType)).catch(I({}))
+            m(Object(u.updateLastSeenEventIdEvolution)(I, e.inboxType)).catch(p({}))
           },
-          [I, L, b, e.inboxType],
+          [p, m, I, e.inboxType],
         )
-        var w,
-          R = function () {
-            var e = Number(null == g ? void 0 : g.time)
+        var j = function () {
+            d.scribe({
+              element: 'thread',
+              action: 'click',
+              data: {
+                event_value: 0,
+                conversation_id: T,
+                conversation_participant_count: P,
+                conversation_type: O ? ve.j.GROUP : ve.j.ONE_TO_ONE,
+                position: D,
+              },
+            }),
+              U &&
+                m(Object(u.updateConversationReadState)(T))
+                  .then(function () {
+                    dn()(g, function (e) {
+                      var n = e.get(C)
+                      $e()(n, 'relayId must be defined')
+                      var a = n.getLinkedRecord('perspectival_conversation_metadata')
+                      $e()(a, 'metadataRef must be defined'), a.setValue(I, 'last_read_event_id')
+                    })
+                  })
+                  .catch(p({}))
+          },
+          B = function () {
+            var e = Number(null == b ? void 0 : b.time),
+              n = [
+                S || o ? ln.a.inlineNotificationsDisabledIcon : ln.a.notificationsDisabledIcon,
+                S && ln.a.inlineNotificationsDisabledIconVDL,
+              ]
             return r.a.createElement(
               ie.a,
-              { style: h && an.a.inlineTimestamp },
-              e ? r.a.createElement(tn.a, { timestamp: e }) : null,
+              { style: S && ln.a.inlineTimestamp },
+              e ? r.a.createElement(rn.a, { timestamp: e }) : null,
+              L ? r.a.createElement(Ze.a, { style: n }) : null,
             )
           },
-          A = [an.a.root, C && !h && an.a.unread]
+          V = [ln.a.root, U && !S && ln.a.unread]
         return r.a.createElement(
           Ge.a,
-          { exact: !1, path: '/messages/'.concat(f) },
-          r.a.createElement(
-            ln.a,
-            {
-              accessibilityRole: 'none',
-              link: { pathname: '/messages/'.concat(f), anchorless: !0 },
-              onPress: function () {
-                var n = e.conversationIds,
-                  a = l.__id,
-                  t =
-                    n.findIndex(function (e) {
-                      return e === a
-                    }) + 1,
-                  i = Object.keys(F).length
-                y.scribe({
-                  element: 'thread',
-                  action: 'click',
-                  data: {
-                    event_value: 0,
-                    conversation_id: f,
-                    conversation_participant_count: i,
-                    conversation_type: T ? ve.j.GROUP : ve.j.ONE_TO_ONE,
-                    position: t,
-                  },
-                }),
-                  C &&
-                    L(Object(u.updateConversationReadState)(f))
-                      .then(function () {
-                        on()(x, function (e) {
-                          var n = e.get(v)
-                          Je()(n, 'relayId must be defined')
-                          var a = n.getLinkedRecord('legacy')
-                          Je()(a, 'legacyRef must be defined')
-                          var t = a.getLinkedRecord('perspectival_conversation_metadata')
-                          Je()(t, 'metadataRef must be defined'), t.setValue(b, 'last_read_event_id')
-                        })
-                      })
-                      .catch(I({}))
-              },
-              style: A,
-            },
-            r.a.createElement(
-              rn.a,
+          { exact: !1, path: '/messages/'.concat(T) },
+          r.a.createElement(sn.a, null, function (e) {
+            var n,
+              a = e.isFocused,
+              t = e.isFocusedWithin,
+              l = e.isHovered
+            return r.a.createElement(
+              on.a,
               {
-                avatarCell: r.a.createElement(Ye.a, { conversation: o, perspective: E, withBadge: K }),
-                avatarSize: 'xxLarge',
+                accessibilityRole: 'none',
+                link: { pathname: '/messages/'.concat(T), anchorless: !0 },
+                onPress: j,
+                style: V,
               },
               r.a.createElement(
-                ie.a,
-                { style: an.a.bodyColumn },
+                cn.a,
+                {
+                  avatarCell: r.a.createElement(Ye.a, { conversation: _, perspective: A, withBadge: N }),
+                  avatarSize: 'xxLarge',
+                },
                 r.a.createElement(
                   ie.a,
-                  { style: an.a.titleContainer },
-                  r.a.createElement(Qe.b, {
-                    conversation: o,
-                    perspective: E,
-                    renderTimestamp: function () {
-                      return R()
-                    },
-                    textColor: 'text',
-                    titleWeight: 'bold',
-                    withScreenName: !0,
-                    withVDLRefresh: h,
-                  }),
+                  { style: ln.a.bodyColumn },
                   r.a.createElement(
                     ie.a,
-                    { style: an.a.snippet },
-                    g
-                      ? r.a.createElement(Xe.a, { conversationType: S, entry: g, perspective: E, unread: h && C })
-                      : null,
+                    { style: ln.a.titleContainer },
+                    r.a.createElement(Qe.b, {
+                      conversation: _,
+                      perspective: A,
+                      renderTimestamp: function () {
+                        return B()
+                      },
+                      textColor: 'text',
+                      titleWeight: 'bold',
+                      withScreenName: !0,
+                      withVDLRefresh: S,
+                    }),
+                    r.a.createElement(
+                      ie.a,
+                      { style: ln.a.snippet },
+                      b
+                        ? r.a.createElement(Xe.a, { conversationType: R, entry: b, perspective: A, unread: S && U })
+                        : null,
+                    ),
                   ),
-                ),
-                r.a.createElement(
-                  ie.a,
-                  { style: an.a.endCell },
-                  ((w = C
-                    ? r.a.createElement(re.a, {
-                        pip: !0,
-                        style: an.a.unreadMessagePip,
-                        truncatedCountFormatter: function () {
-                          return ''
-                        },
-                        unreadCountLabel: function () {
-                          return ''
-                        },
+                  r.a.createElement(
+                    ie.a,
+                    { style: ln.a.endCell },
+                    ((n = U
+                      ? r.a.createElement(re.a, {
+                          pip: !0,
+                          style: ln.a.unreadMessagePip,
+                          truncatedCountFormatter: function () {
+                            return ''
+                          },
+                          unreadCountLabel: function () {
+                            return ''
+                          },
+                        })
+                      : null),
+                    S ? n : B()),
+                  ),
+                  i === w.d.PRIMARY && E
+                    ? r.a.createElement(nn.a, {
+                        conversationId: T,
+                        conversationType: R,
+                        inboxType: i,
+                        isHovered: a || t || l,
+                        isPinned: c,
+                        isSnoozed: L,
+                        participantCount: P,
+                        position: D,
+                        relayId: C,
                       })
-                    : null),
-                  h ? w : R()),
+                    : null,
                 ),
               ),
-            ),
-          ),
+            )
+          }),
         )
       }
-      var _n,
-        hn,
-        fn = a('DbJc'),
-        vn = a('TEoO'),
-        kn = Object(d.a)()
+      var vn,
+        kn,
+        bn = a('DbJc'),
+        Fn = a('TEoO'),
+        Sn = Object(d.a)()
           .propsFromState(function () {
             return { isDmsOpenForAll: K.s, lastSeenEventIds: u.selectLastSeenEventIds }
           })
           .withAnalytics({ page: 'messages', section: 'inbox' }),
-        bn = a('SOvA'),
-        Fn = void 0 !== _n ? _n : (_n = a('8fJk')),
-        Sn = kn(function (e) {
+        En = a('SOvA'),
+        Tn = void 0 !== vn ? vn : (vn = a('8fJk')),
+        Cn = Sn(function (e) {
           var n = e.isDmsOpenForAll,
             a = e.lastSeenEventIds.untrusted_last_seen_event_id,
             t = Object(H.b)(),
-            l = un()(Fn, e.untrustedConversations).filter(function (e) {
+            l = mn()(Tn, e.untrustedConversations).filter(function (e) {
               var n = null == e ? void 0 : e.last_readable_event_id
-              return !n || !(a && Object($e.c)(a, n))
+              return !n || !(a && Object(en.c)(a, n))
             }),
             i = r.a.useContext(s.a).featureSwitches,
             o = i.isTrue('dm_vdl_enabled') && i.isTrue('dm_vdl_inbox_p0_enabled'),
@@ -30956,7 +31334,7 @@
                     ? r.a.createElement(
                         ie.a,
                         { testID: le.a.untrustedThumbnail },
-                        r.a.createElement(ce.a, { Icon: bn.a, color: 'neutral' }),
+                        r.a.createElement(ce.a, { Icon: En.a, color: 'neutral' }),
                         u
                           ? r.a.createElement(re.a, {
                               count: l.length,
@@ -30973,15 +31351,15 @@
               )
             : null
         }),
-        En = a('d9IC'),
-        Tn = a('Fr3L'),
-        Cn = a('DQzJ'),
-        Kn = B.a.e4b3f520,
-        In = B.a.ae4d666a,
-        Ln = void 0 !== hn ? hn : (hn = a('e2V3')),
-        xn = function (e) {
+        Kn = a('d9IC'),
+        In = a('Fr3L'),
+        Ln = a('DQzJ'),
+        xn = B.a.e4b3f520,
+        wn = B.a.ae4d666a,
+        Rn = void 0 !== kn ? kn : (kn = a('e2V3')),
+        Mn = function (e) {
           var n,
-            a = Object(Cn.a)(Ln, {}).data,
+            a = Object(Ln.a)(Rn, {}).data,
             t =
               (null == a || null === (n = a.labeled_conversation_slice) || void 0 === n ? void 0 : n.items_results) ||
               [],
@@ -30997,37 +31375,38 @@
             ? r.a.createElement(
                 r.a.Fragment,
                 null,
-                wn(Kn),
+                An(xn),
                 l.map(function (e, n) {
-                  return r.a.createElement(yn, {
+                  return r.a.createElement(fn, {
                     conversationIds: i,
                     dm_conversation: e,
                     inboxType: w.d.PRIMARY,
+                    isPinned: !0,
                     key: n,
                   })
                 }),
-                e.unpinnedConversations ? wn(In) : null,
+                e.unpinnedConversations ? An(wn) : null,
               )
             : null
         },
-        wn = function (e) {
-          return r.a.createElement(ie.a, null, r.a.createElement(En.a, { headerText: e, isInboxLabelHeader: !0 }))
+        An = function (e) {
+          return r.a.createElement(ie.a, null, r.a.createElement(Kn.a, { headerText: e, isInboxLabelHeader: !0 }))
         },
-        Rn = { context: 'DM_PINNED_INBOX_EVOLUTION_CONTEXT' }
-      function Mn(e) {
-        return r.a.createElement(Tn.a, { errorConfig: Rn }, r.a.createElement(xn, e))
+        On = { context: 'DM_PINNED_INBOX_EVOLUTION_CONTEXT' }
+      function Dn(e) {
+        return r.a.createElement(In.a, { errorConfig: On }, r.a.createElement(Mn, e))
       }
-      var An,
-        On = a('IAZG'),
-        Dn = function (e) {
+      var Pn,
+        Un = a('IAZG'),
+        Nn = function (e) {
           return e.__id
         },
-        Pn = void 0 !== An ? An : (An = a('6bmY')),
-        Un = { context: 'DM_INBOX_PRIMARY_CONTEXT' },
-        Nn = function () {
+        jn = void 0 !== Pn ? Pn : (Pn = a('6bmY')),
+        Bn = { context: 'DM_INBOX_PRIMARY_CONTEXT' },
+        Hn = function () {
           var e,
             n,
-            a = Object(On.a)(Pn, {}),
+            a = Object(Un.a)(jn, {}),
             t = (null == a || null === (e = a.trusted) || void 0 === e ? void 0 : e.items) || [],
             l = Object(ze.a)(
               t.map(function (e) {
@@ -31059,24 +31438,24 @@
               m.isTrue('dm_conversation_labels_pinned_enabled') &&
               m.isTrue('direct_messages_incremental_holdback_2022h1'),
             y = function () {
-              return p.length ? r.a.createElement(Sn, { untrustedConversations: p }) : null
+              return p.length ? r.a.createElement(Cn, { untrustedConversations: p }) : null
             },
             _ = r.a.createElement(
               r.a.Fragment,
               null,
               y(),
-              g ? r.a.createElement(Mn, { unpinnedConversations: Boolean(o.length) }) : null,
+              g ? r.a.createElement(Dn, { unpinnedConversations: Boolean(o.length) }) : null,
             )
           return r.a.createElement(
             Ne,
             null,
-            r.a.createElement(vn.a, {
+            r.a.createElement(Fn.a, {
               accessibilityRole: 'tablist',
               accessibilityTitle: Pe,
-              anchoring: fn.a,
+              anchoring: bn.a,
               cacheKey: Ue,
               header: _,
-              identityFunction: Dn,
+              identityFunction: Nn,
               items: g ? o : l,
               noItemsRenderer:
                 u > 0
@@ -31085,26 +31464,31 @@
                       return r.a.createElement(z, { messageRequestPivot: y() })
                     },
               renderer: function (e) {
-                return r.a.createElement(yn, { conversationIds: g ? c : i, dm_conversation: e, inboxType: w.d.PRIMARY })
+                return r.a.createElement(fn, {
+                  conversationIds: g ? c : i,
+                  dm_conversation: e,
+                  inboxType: w.d.PRIMARY,
+                  isPinned: !1,
+                })
               },
               withoutHeadroom: !0,
             }),
           )
         }
-      function jn() {
-        return r.a.createElement(Tn.a, { errorConfig: Un }, r.a.createElement(Nn, null))
+      function Vn() {
+        return r.a.createElement(In.a, { errorConfig: Bn }, r.a.createElement(Hn, null))
       }
-      var Bn = a('jYSG'),
-        Hn = B.a.bef0039f
-      function Vn(e) {
+      var Wn = a('jYSG'),
+        qn = B.a.bef0039f
+      function zn(e) {
         return r.a.createElement(
           r.a.Fragment,
           null,
-          r.a.createElement(N.a, { header: e.tombstone ? '' : Hn, message: Bn.a, style: Wn.emptyMessage }),
+          r.a.createElement(N.a, { header: e.tombstone ? '' : qn, message: Wn.a, style: Gn.emptyMessage }),
           e.tombstone,
         )
       }
-      var Wn = ae.a.create(function (e) {
+      var Gn = ae.a.create(function (e) {
           return {
             emptyMessage: {
               borderBottomStyle: 'solid',
@@ -31114,7 +31498,7 @@
             },
           }
         }),
-        qn = Object(d.a)()
+        Yn = Object(d.a)()
           .propsFromState(function () {
             return { dmNsfwMediaFilter: K.l }
           })
@@ -31127,13 +31511,13 @@
             }
           })
           .withAnalytics({ page: 'messages', section: 'inbox' }),
-        zn = a('0yYu'),
-        Gn = a('Lz2T'),
-        Yn = B.a.j24c37b2,
-        Qn = B.a.f5dc353c,
-        Xn = B.a.daeda053,
-        Zn = B.a.fe1eaa95,
-        Jn = qn(function (e) {
+        Qn = a('0yYu'),
+        Xn = a('Lz2T'),
+        Zn = B.a.j24c37b2,
+        Jn = B.a.f5dc353c,
+        $n = B.a.daeda053,
+        ea = B.a.fe1eaa95,
+        na = Yn(function (e) {
           var n = e.createLocalApiErrorHandler,
             a = e.dmNsfwMediaFilter,
             t = e.updateDmNsfwMediaFilter,
@@ -31162,30 +31546,30 @@
               ? r.a.createElement(
                   r.a.Fragment,
                   null,
-                  r.a.createElement(Gn.a, {
-                    bodyText: Zn,
+                  r.a.createElement(Xn.a, {
+                    bodyText: ea,
                     primaryAction: {
                       onClick: function () {
                         d.scribe({ component: 'dm_nsfw_prompt', element: 'primary_action', action: 'click' }), p()
                       },
-                      text: Yn,
+                      text: Zn,
                     },
                     secondaryAction: {
                       link: '/settings/direct_messages',
                       onClick: function () {
                         d.scribe({ component: 'dm_nsfw_prompt', element: 'secondary_action', action: 'click' })
                       },
-                      text: Xn,
+                      text: $n,
                     },
-                    titleText: Qn,
+                    titleText: Jn,
                   }),
-                  r.a.createElement(zn.a, null),
+                  r.a.createElement(Qn.a, null),
                 )
               : null
           )
         }),
-        $n = a('5FtR'),
-        ea = Object(d.a)()
+        aa = a('5FtR'),
+        ta = Object(d.a)()
           .propsFromState(function () {
             return {
               isDmsOpenForAll: K.s,
@@ -31198,10 +31582,9 @@
             return { allowLowQualityUntrustedInbox: n && a > 0 }
           })
           .withAnalytics({ page: 'messages', section: 'inbox' }),
-        na = a('cm6r'),
-        aa = B.a.eb7de4a9,
-        ta = B.a.a0e81a2e,
-        la = ae.a.create(function (e) {
+        la = B.a.eb7de4a9,
+        ia = B.a.a0e81a2e,
+        ra = ae.a.create(function (e) {
           return {
             tombstoneContainer: {
               borderTopStyle: 'solid',
@@ -31215,7 +31598,7 @@
             tombstoneDescription: { paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space16 },
           }
         }),
-        ia = ea(function (e) {
+        sa = ta(function (e) {
           var n = e.allowLowQualityUntrustedInbox,
             a = e.isAtEndOfUntrustedInbox,
             t = e.untrustedConversationIds,
@@ -31230,28 +31613,28 @@
             ? r.a.createElement(
                 ie.a,
                 null,
-                t.length > 0 && r.a.createElement(zn.a, null),
+                t.length > 0 && r.a.createElement(Qn.a, null),
                 r.a.createElement(
                   ie.a,
-                  { style: la.tombstoneDescription },
-                  r.a.createElement(oe.b, { color: 'gray700', size: 'subtext2' }, aa),
+                  { style: ra.tombstoneDescription },
+                  r.a.createElement(oe.b, { color: 'gray700', size: 'subtext2' }, la),
                 ),
                 r.a.createElement(
-                  na.a,
+                  sn.a,
                   {
                     link: Object(ne.a)(w.d.TERTIARY),
                     onPress: function () {
                       l.scribe({ element: 'low_quality_pivot', action: 'click' })
                     },
-                    style: la.tombstoneContainer,
+                    style: ra.tombstoneContainer,
                   },
-                  r.a.createElement(oe.b, { align: 'center', color: 'primary', size: 'body' }, ta),
+                  r.a.createElement(oe.b, { align: 'center', color: 'primary', size: 'body' }, ia),
                 ),
               )
             : null
         }),
-        ra = B.a.cf2d1047
-      function sa(e) {
+        oa = B.a.cf2d1047
+      function ca(e) {
         var n = Object(c.f)(),
           a = Object(c.i)()
         return r.a.createElement(
@@ -31263,13 +31646,13 @@
             },
             rightControl: Object(ne.b)('/settings/direct_messages', !0),
             screenType: 'secondaryRoot',
-            title: r.a.createElement(oe.b, { size: 'headline2' }, ra),
+            title: r.a.createElement(oe.b, { size: 'headline2' }, oa),
             withDetailOpen: !a.isExact,
           },
           e.children,
         )
       }
-      var oa = (function (e) {
+      var ua = (function (e) {
         F()(a, e)
         var n = E()(a)
         function a() {
@@ -31288,11 +31671,11 @@
               var n = e.props,
                 a = n.conversationIds,
                 t = n.isAtEndOfUntrustedInbox
-              return r.a.createElement(ia, { isAtEndOfUntrustedInbox: t, untrustedConversationIds: a })
+              return r.a.createElement(sa, { isAtEndOfUntrustedInbox: t, untrustedConversationIds: a })
             }),
             C()(k()(e), '_renderEmptyDMInbox', function () {
               var n = e._renderTombstone()
-              return r.a.createElement(Vn, { tombstone: n })
+              return r.a.createElement(zn, { tombstone: n })
             }),
             e
           )
@@ -31311,11 +31694,11 @@
                   s = n.updateLastSeenEventId
                 return a
                   ? r.a.createElement(
-                      sa,
+                      ca,
                       null,
-                      r.a.createElement(Jn, null),
+                      r.a.createElement(na, null),
                       r.a.createElement(U.a, {
-                        accessibilityTitle: ra,
+                        accessibilityTitle: oa,
                         analytics: t,
                         conversationIds: l,
                         fetchInboxHistory: i,
@@ -31329,30 +31712,30 @@
                         virtualScrollerCacheKey: 'dmUntrustedInbox',
                       }),
                     )
-                  : r.a.createElement($n.a, { to: '/messages' })
+                  : r.a.createElement(aa.a, { to: '/messages' })
               },
             },
           ]),
           a
         )
       })(r.a.Component)
-      C()(oa, 'contextType', Y.a), C()(oa, 'defaultProps', { conversationIds: [] })
-      var ca,
-        ua = Object(G.a)(D({ inbox: w.d.SECONDARY })(oa), { directMessages: P.a }),
-        da = Object(d.a)()
+      C()(ua, 'contextType', Y.a), C()(ua, 'defaultProps', { conversationIds: [] })
+      var da,
+        pa = Object(G.a)(D({ inbox: w.d.SECONDARY })(ua), { directMessages: P.a }),
+        ma = Object(d.a)()
           .propsFromState(function () {
             return { isDmsOpenForAll: K.s }
           })
           .withAnalytics({ page: 'messages', section: 'inbox' }),
-        pa = function (e) {
+        ga = function (e) {
           return e.__id
         },
-        ma = void 0 !== ca ? ca : (ca = a('XZOd')),
-        ga = { context: 'DM_INBOX_SECONDARY_CONTEXT' },
-        ya = function (e) {
+        ya = void 0 !== da ? da : (da = a('XZOd')),
+        _a = { context: 'DM_INBOX_SECONDARY_CONTEXT' },
+        ha = function (e) {
           var n,
             a = e.isDmsOpenForAll,
-            t = Object(Cn.a)(ma, {}),
+            t = Object(Ln.a)(ya, {}),
             l = t.data,
             i = t.hasNext,
             s = (null == l || null === (n = l.dm_convo_list_slice) || void 0 === n ? void 0 : n.items) || [],
@@ -31367,39 +31750,44 @@
             }),
             u = Object(ne.c)(c),
             d = function () {
-              return r.a.createElement(ia, { isAtEndOfUntrustedInbox: !i, untrustedConversationIds: c })
+              return r.a.createElement(sa, { isAtEndOfUntrustedInbox: !i, untrustedConversationIds: c })
             }
           return a
             ? r.a.createElement(
-                sa,
+                ca,
                 null,
-                r.a.createElement(Jn, null),
-                r.a.createElement(vn.a, {
+                r.a.createElement(na, null),
+                r.a.createElement(Fn.a, {
                   accessibilityRole: 'tablist',
-                  accessibilityTitle: ra,
-                  anchoring: fn.a,
+                  accessibilityTitle: oa,
+                  anchoring: bn.a,
                   cacheKey: 'dmUntrustedInbox',
                   footer: d(),
                   header: u,
-                  identityFunction: pa,
+                  identityFunction: ga,
                   items: o,
                   noItemsRenderer: function () {
-                    return r.a.createElement(Vn, { tombstone: d() })
+                    return r.a.createElement(zn, { tombstone: d() })
                   },
                   renderer: function (e) {
-                    return r.a.createElement(yn, { conversationIds: c, dm_conversation: e, inboxType: w.d.SECONDARY })
+                    return r.a.createElement(fn, {
+                      conversationIds: c,
+                      dm_conversation: e,
+                      inboxType: w.d.SECONDARY,
+                      isPinned: !1,
+                    })
                   },
                   withoutHeadroom: !0,
                 }),
               )
-            : r.a.createElement($n.a, { to: '/messages' })
+            : r.a.createElement(aa.a, { to: '/messages' })
         }
-      var _a = da(function (e) {
-          return r.a.createElement(Tn.a, { errorConfig: ga }, r.a.createElement(ya, e))
+      var fa = ma(function (e) {
+          return r.a.createElement(In.a, { errorConfig: _a }, r.a.createElement(ha, e))
         }),
-        ha = (a('KqXw'), a('WNMA'), B.a.e7172d70),
-        fa = B.a.bef0039f,
-        va = (function (e) {
+        va = (a('KqXw'), a('WNMA'), B.a.e7172d70),
+        ka = B.a.bef0039f,
+        ba = (function (e) {
           F()(a, e)
           var n = E()(a)
           function a() {
@@ -31415,7 +31803,7 @@
                 e.context.decrementDmDrawerSuppressorCount()
               }),
               C()(k()(e), '_renderEmptyDMInbox', function () {
-                return r.a.createElement(N.a, { header: fa, message: Bn.a })
+                return r.a.createElement(N.a, { header: ka, message: Wn.a })
               }),
               C()(k()(e), '_handleBackClick', function () {
                 e.props.history.push(Object(ne.a)(w.d.SECONDARY))
@@ -31444,11 +31832,11 @@
                       onBackClick: this._handleBackClick,
                       rightControl: Object(ne.b)('/settings/direct_messages', !0),
                       screenType: 'secondaryRoot',
-                      title: ha,
+                      title: va,
                       withDetailOpen: this._hasDetailOpen(),
                     },
                     r.a.createElement(U.a, {
-                      accessibilityTitle: ha,
+                      accessibilityTitle: va,
                       analytics: a,
                       conversationIds: t,
                       fetchInboxHistory: l,
@@ -31467,30 +31855,30 @@
             a
           )
         })(r.a.Component)
-      C()(va, 'contextType', Y.a)
-      var ka = Object(G.a)(D({ inbox: w.d.TERTIARY })(va), { directMessages: P.a }),
-        ba = ['conversationId', 'inboxType'],
-        Fa = g(function (e) {
+      C()(ba, 'contextType', Y.a)
+      var Fa = Object(G.a)(D({ inbox: w.d.TERTIARY })(ba), { directMessages: P.a }),
+        Sa = ['conversationId', 'inboxType'],
+        Ea = g(function (e) {
           e.conversationId
           var n = e.inboxType,
-            a = l()(e, ba),
+            a = l()(e, Sa),
             t = e.location,
             i = r.a.useContext(s.a).featureSwitches
           return (
             Object(De.a)(),
             n === w.d.TERTIARY || '/messages/requests/additional' === t.pathname
               ? (i.isTrue('dm_evolution_enabled') && i.isTrue('dm_evolution_inbox_tertiary_enabled'),
-                r.a.createElement(ka, a))
+                r.a.createElement(Fa, a))
               : n === w.d.SECONDARY || '/messages/requests' === t.pathname
               ? i.isTrue('dm_evolution_enabled') && i.isTrue('dm_evolution_inbox_secondary_enabled')
-                ? r.a.createElement(_a, null)
-                : r.a.createElement(ua, a)
+                ? r.a.createElement(fa, null)
+                : r.a.createElement(pa, a)
               : i.isTrue('dm_evolution_enabled') && i.isTrue('dm_evolution_inbox_primary_enabled')
-              ? r.a.createElement(jn, null)
+              ? r.a.createElement(Vn, null)
               : r.a.createElement(qe, a)
           )
         })
-      n.default = Fa
+      n.default = Ea
     },
     lBmi: function (e, n, a) {
       'use strict'
@@ -32516,334 +32904,47 @@
         $ = a('Myq3'),
         ee = a('3wZR'),
         ne = a('XnpN'),
-        ae = a('RqPI'),
-        te = a('HPNB'),
-        le = a('V/6K'),
-        ie = a('YemM'),
-        re = a('Irs7'),
-        se = a('ii+P'),
-        oe = a('zCf4'),
-        ce = a('MWbm'),
-        ue = a('mjJ+'),
-        de = a('eb3s'),
-        pe = a('ZToW'),
-        me = a('cHvH'),
-        ge = a('kb9v'),
-        ye = a('IG7M'),
-        _e = a('pHkl'),
-        he = a('X/yg'),
-        fe = a('Lsrn'),
-        ve = a('k/Ka'),
-        ke = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ve.a)(
-            'svg',
-            l()(
-              l()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [fe.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            f.a.createElement(
-              'g',
-              null,
-              f.a.createElement('path', {
-                d: 'M17.931 2.508c0 .42-.34.75-.75.75h-8.39l1.38 2.08-.56 5.78-.47.16c-1.5.49-3.1 2.07-3.37 3.31-.07.35-.39.59-.73.59-.05 0-.11 0-.16-.01-.4-.09-.66-.49-.58-.89.39-1.81 2.24-3.52 3.91-4.25l.42-4.3-1.35-2.02c-.26-.38-.29-.87-.07-1.29.24-.41.66-.66 1.11-.66h8.86c.41 0 .75.34.75.75zm3.09 12.76c-.14.17-.46.46-1.05.46h-3.86l-2.64 6.1c-.12.28-.39.45-.69.45s-.57-.17-.69-.45l-1.96-4.53c-.16-.38.01-.82.39-.98.38-.17.82.01.99.39l1.27 2.93 1.69-3.91h-1.61c-.42 0-.75-.33-.75-.75 0-.41.33-.75.75-.75h6.81c-.41-1.06-1.64-2.26-2.91-2.82-.09-.04-.16-.09-.22-.16-.22-.21-.3-.54-.17-.83.17-.38.61-.55.99-.39 1.59.7 3.5 2.43 3.89 4.25.06.25.03.66-.23.99zm.839-12.259L3.2 21.659c-.15.15-.34.22-.53.22s-.39-.07-.53-.22c-.29-.29-.29-.76 0-1.06L20.8 1.939c.29-.29.76-.29 1.06 0 .29.3.29.77 0 1.07z',
-              }),
-            ),
-          )
-        }
-      ke.metadata = { width: 24, height: 24 }
-      var be = ke,
-        Fe = a('ShJ/'),
-        Se = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ve.a)(
-            'svg',
-            l()(
-              l()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [fe.a.root, e.style],
-                viewBox: '0 0 32 32',
-              },
-            ),
-            f.a.createElement(
-              'g',
-              null,
-              f.a.createElement('path', {
-                d: 'M28.05 6.52h-5.42V4.887c0-1.548-1.26-2.808-2.81-2.808h-7.54c-1.548 0-2.807 1.26-2.807 2.808v1.63H4.05c-.414 0-.75.337-.75.75s.336.75.75.75h.753L7 26.435c.27 1.504 1.657 2.554 3.37 2.554h11.36c1.713 0 3.1-1.05 3.376-2.598l2.19-18.37h.753c.413 0 .75-.337.75-.75s-.336-.75-.75-.75zM10.972 4.887c0-.72.586-1.308 1.307-1.308h7.542c.72 0 1.308.587 1.308 1.308v1.63H10.972V4.89zm12.65 21.28c-.163.91-1.068 1.32-1.893 1.32H10.37c-.824 0-1.73-.41-1.887-1.276L6.313 8.02h19.472l-2.162 18.148z',
-              }),
-              f.a.createElement('path', {
-                d: 'M13.312 23.123c.414 0 .75-.336.75-.75v-9.6c0-.414-.336-.75-.75-.75s-.75.336-.75.75v9.6c0 .414.336.75.75.75zm5.486 0c.414 0 .75-.336.75-.75v-9.6c0-.414-.336-.75-.75-.75s-.75.336-.75.75v9.6c0 .414.336.75.75.75z',
-              }),
-            ),
-          )
-        }
-      Se.metadata = { width: 32, height: 32 }
-      var Ee = Se,
-        Te = a('zIWA'),
-        Ce = a('5pef'),
-        Ke = a('IpT4'),
-        Ie = a('fz3c'),
-        Le = a('uDfI'),
-        xe = I.a.a30a206d,
-        we = I.a.ib4b1b85,
-        Re = I.a.bd3ca2ee,
-        Me = {
-          confirmButtonLabel: I.a.bb1d57b6,
-          actionTextLeave: I.a.g9074da4,
-          header: I.a.gdf4b79f,
-          text: I.a.h09b49f7,
-        },
-        Ae = I.a.ad63377d,
-        Oe = I.a.e1c9ec9b,
-        De = I.a.i6b19b07,
-        Pe = I.a.e3cfff7c,
-        Ue = I.a.f398722d,
-        Ne = I.a.bdd91963,
-        je = I.a.a8ed0eca,
-        Be = I.a.jac4eb1e
-      function He(e) {
-        var n = e.conversation,
-          a = e.conversationId,
-          t = e.conversationType,
-          l = e.inboxType,
-          i = e.isHovered,
-          r = e.isPinned,
-          s = e.isSnoozed,
-          o = e.participantCount,
-          c = e.position,
-          u = Object(re.b)(),
-          d = Object(O.useCreateLocalApiErrorHandler)('DIRECT_MESSAGES_INBOX_ITEM'),
-          p = Object(Le.c)(),
-          m = f.a.useContext(k.a).featureSwitches,
-          g = Object(oe.f)(),
-          y = f.a.useContext(le.a).isDrawer,
-          _ = Object(Le.d)(ae.r),
-          h = m.getValue('dm_conversation_labels_max_pinned_count'),
-          v = m.isTrue('dm_conversation_labels_pinned_education_enabled') && !r && 1 === c,
-          F = f.a.useState(!1),
-          S = U()(F, 2),
-          E = S[0],
-          T = S[1],
-          C = f.a.useState(!1),
-          K = U()(C, 2),
-          I = K[0],
-          L = K[1],
-          x = Object(se.a)(b.t),
-          w = U()(x, 2),
-          R = w[0],
-          A = w[1],
-          D = f.a.useState(v && R),
-          P = U()(D, 2),
-          N = P[0],
-          j = P[1]
-        f.a.useEffect(
-          function () {
-            if (N) return A
-          },
-          [A, N],
-        )
-        var H = function () {
-            var e = t === M.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
-              n = {
-                conversation_type: t === M.CONVERSATION_TYPE.GROUP ? _e.j.GROUP : _e.j.ONE_TO_ONE,
-                conversation_id: a,
-                conversation_participant_count: o,
-                position: c,
-                inbox_type: Object(he.i)(l),
-                entry_point: l === _e.e.PRIMARY ? _e.c.THREE_DOT_MENU : _e.c.CELL_X_BUTTON,
-              }
-            L(!1),
-              u.scribe({ element: 'thread', action: e, data: n }),
-              r && z(),
-              p(M.leaveConversation({ conversationId: a })).catch(d({ showToast: !0 })),
-              g.replace(Object(he.f)(l))
-          },
-          V = function (e) {
-            return function () {
-              e && e(), T(!1)
-            }
-          },
-          W = function (e) {
-            return function () {
-              var i,
-                r,
-                s = Ie.a.DMConversation,
-                o =
-                  t === M.CONVERSATION_TYPE.GROUP
-                    ? '0'
-                    : ((i =
-                        n &&
-                        Object(ne.a)(n, _).map(function (e) {
-                          return e.user
-                        })),
-                      (r = (i && i[0]) || null) ? r.id_str : '')
-              if ((u.scribeAction('report'), Object(Ie.g)(m, s))) {
-                var c = Object(Ie.d)({
-                  clientReferer: window.location.pathname,
-                  isMedia: !1,
-                  isPromoted: !1,
-                  reportType: s,
-                  reportedConversationId: a,
-                  reportedUser: o,
-                  scribeNamespace: u.contextualScribeNamespace,
-                })
-                e.push({
-                  pathname: '/i/safety/report_story_start',
-                  state: { input: { requested_variant: JSON.stringify(c) } },
-                })
-              } else {
-                var d = Object(he.g)(a, window.location.pathname, u.contextualScribeNamespace, l)
-                e.push(d)
-              }
-            }
-          },
-          q = function () {
-            if (s) p(M.enableNotifications({ conversationId: a })).then(p(Object(B.b)({ ariaOnly: !0, text: Be })))
-            else {
-              var e = {
-                conversation_type: t === M.CONVERSATION_TYPE.GROUP ? _e.j.GROUP : _e.j.ONE_TO_ONE,
-                conversation_id: a,
-                conversation_participant_count: o,
-                entry_point: _e.c.THREE_DOT_MENU,
-              }
-              u.scribe({ element: 'thread', action: 'mute_dm_thread_forever', data: e }),
-                p(M.disableNotifications({ conversationId: a })).then(p(Object(B.b)({ ariaOnly: !0, text: Ue })))
-            }
-          },
-          z = function () {
-            var l = e.pinConversation,
-              i = e.unpinConversation,
-              s = r ? 'unpin_dm_conversation' : 'pin_dm_conversation',
-              d = r ? i : l,
-              p = {
-                conversation_type: t === M.CONVERSATION_TYPE.GROUP ? _e.j.GROUP : _e.j.ONE_TO_ONE,
-                conversation_id: a,
-                conversation_participant_count: o,
-                position: c,
-              }
-            u.scribe({ element: 'thread', action: s, data: p }), n && d && d(a, n)
-          },
-          G = function (e) {
-            var n = [
-              { Icon: r ? be : Fe.a, onClick: z, text: r ? Ne : Oe, withBottomBorder: !0 },
-              {
-                Icon: Ee,
-                isEmphasized: !0,
-                onClick: function () {
-                  return L(!0)
-                },
-                text: Ae,
-                withBottomBorder: !0,
-              },
-              { Icon: Te.a, onClick: W(g), text: De, withBottomBorder: !0 },
-              { Icon: s ? Ce.a : Ke.a, onClick: q, text: s ? je : Pe, withBottomBorder: !0 },
-            ]
-            return f.a.createElement(ue.a, { items: n, onCloseRequested: V(e), shouldCloseOnClick: !0 })
-          },
-          Y = !pe.a.isEnabled || i || E || N
-        return f.a.createElement(
-          f.a.Fragment,
-          null,
-          I
-            ? f.a.createElement(de.a, {
-                confirmButtonLabel: Me.confirmButtonLabel,
-                confirmButtonType: 'destructiveFilled',
-                headline: Me.header,
-                onCancel: function () {
-                  return L(!1)
-                },
-                onConfirm: H,
-                text: Me.text,
-              })
-            : null,
-          Y
-            ? f.a.createElement(me.a, null, function (e) {
-                var n = e.windowWidth,
-                  a = te.a.isTwoColumnLayout(n)
-                return f.a.createElement(
-                  ce.a,
-                  { style: ie.a.menuContainer },
-                  f.a.createElement(
-                    ge.a,
-                    {
-                      actionPrimary: {
-                        text: xe,
-                        onClick: function () {
-                          return j(!1)
-                        },
-                      },
-                      headline: we,
-                      onDismiss: function () {
-                        return j(!1)
-                      },
-                      shouldDisplay: N && !y,
-                      text: Re({ count: h }),
-                      withMask: !a,
-                    },
-                    a
-                      ? f.a.createElement(ye.a, {
-                          onClick: function () {
-                            return T(!0)
-                          },
-                          renderActionMenu: G,
-                          style: Y ? ie.a.menu : ie.a.hiddenMenu,
-                        })
-                      : null,
-                  ),
-                  a
-                    ? null
-                    : f.a.createElement(ye.a, {
-                        onClick: function () {
-                          return T(!0)
-                        },
-                        renderActionMenu: G,
-                        style: Y ? ie.a.menu : ie.a.hiddenMenu,
-                      }),
-                )
-              })
-            : null,
-        )
-      }
-      var Ve = a('aWyx'),
-        We = 'conversation',
-        qe = a('u0B7'),
-        ze = a('Znyr'),
-        Ge = a('0PHd'),
-        Ye = a('yrzJ'),
-        Qe = a('Xrkv'),
-        Xe = a('lHOd'),
-        Ze = a('efqG'),
-        Je = a('/yvb'),
-        $e = a('GBcw'),
-        en = a('cm6r'),
-        nn = a('htQn'),
-        an = a('5mJL'),
-        tn = a('vMjK'),
-        ln = a('AQ79'),
-        rn = a('5oT/'),
-        sn = I.a.d88d0790,
-        on = function (e) {
+        ae = a('VcIV'),
+        te = a('aWyx'),
+        le = a('YemM'),
+        ie = 'conversation',
+        re = a('u0B7'),
+        se = a('MWbm'),
+        oe = a('Irs7'),
+        ce = a('Znyr'),
+        ue = a('0PHd'),
+        de = a('yrzJ'),
+        pe = a('Xrkv'),
+        me = a('lHOd'),
+        ge = a('efqG'),
+        ye = a('/yvb'),
+        _e = a('GBcw'),
+        he = a('cm6r'),
+        fe = a('htQn'),
+        ve = a('5mJL'),
+        ke = a('vMjK'),
+        be = a('AQ79'),
+        Fe = a('pHkl'),
+        Se = a('X/yg'),
+        Ee = a('5oT/'),
+        Te = a('IpT4'),
+        Ce = a('fz3c'),
+        Ke = I.a.d88d0790,
+        Ie = function (e) {
           var n
           return Boolean(
             null == e || null === (n = e.labels) || void 0 === n
               ? void 0
               : n.find(function (e) {
-                  return e.label_type === ln.a.PINNED
+                  return e.label_type === be.a.PINNED
                 }),
           )
         },
-        cn = function (e) {
+        Le = function (e) {
           var n = e.children
-          return f.a.createElement(ce.a, { style: ie.a.socialProofContainer }, n)
+          return f.a.createElement(se.a, { style: le.a.socialProofContainer }, n)
         },
-        un = (function (e) {
+        xe = (function (e) {
           p()(a, e)
           var n = g()(a)
           function a() {
@@ -32876,10 +32977,10 @@
                   u = i.position,
                   d = i.unpinConversation
                 if (r && c && d) {
-                  var p = on(r),
+                  var p = Ie(r),
                     m = r.notifications_disabled,
                     g = r.participants.length || 0
-                  return f.a.createElement(He, {
+                  return f.a.createElement(ae.a, {
                     conversation: r,
                     conversationId: s,
                     conversationType: r.type,
@@ -32900,12 +33001,12 @@
                   t = n.isFocusedWithin,
                   l = n.isHovered
                 switch (e.props.inboxType) {
-                  case ln.d.PRIMARY:
+                  case be.d.PRIMARY:
                     return e._isPinnedInboxEnabled
                       ? e._renderMenu({ isFocused: a, isFocusedWithin: t, isHovered: l })
                       : null
-                  case ln.d.SECONDARY:
-                  case ln.d.TERTIARY:
+                  case be.d.SECONDARY:
+                  case be.d.TERTIARY:
                     return e._renderX()
                   default:
                     return null
@@ -32916,9 +33017,9 @@
                   t = a.inboxType,
                   l = a.searchQuery,
                   i = a.unread
-                    ? f.a.createElement(ze.a, {
+                    ? f.a.createElement(ce.a, {
                         pip: !0,
-                        style: ie.a.unreadMessagePip,
+                        style: le.a.unreadMessagePip,
                         truncatedCountFormatter: function () {
                           return ''
                         },
@@ -32928,9 +33029,9 @@
                       })
                     : null
                 switch (t) {
-                  case ln.d.PRIMARY:
+                  case be.d.PRIMARY:
                     return e._isVDLEnabled ? i : l ? null : e._renderTimestamp(n)
-                  case ln.d.SECONDARY:
+                  case be.d.SECONDARY:
                     return e._isVDLEnabled ? i : null
                   default:
                     return null
@@ -32943,7 +33044,7 @@
                 return f.a.createElement(
                   T.b,
                   { color: 'gray700', size: 'subtext2' },
-                  a ? f.a.createElement(a, { style: ie.a.convoLabelIcon }) : null,
+                  a ? f.a.createElement(a, { style: le.a.convoLabelIcon }) : null,
                   n.text,
                 )
               }),
@@ -32952,7 +33053,7 @@
                 if (!a || 0 === a.length) return null
                 var t = a[0]
                 switch (t.proof_type) {
-                  case Ve.d.MUTUAL_FRIENDS:
+                  case te.d.MUTUAL_FRIENDS:
                     if (0 === t.total) return null
                     var l = t.users.map(function (e) {
                         return e.profile_image_url_https
@@ -32961,17 +33062,17 @@
                         return e.name
                       })
                     return f.a.createElement(
-                      cn,
+                      Le,
                       null,
                       f.a.createElement(
                         T.b,
                         { weight: e._isVDLEnabled ? 'medium' : 'normal' },
-                        f.a.createElement(Ge.a, {
+                        f.a.createElement(ue.a, {
                           displayFacepileInline: !0,
                           knownFollowersAvatarUrls: l,
                           knownFollowersCount: t.total,
                           knownFollowersNames: i,
-                          textStyle: e._isVDLEnabled && ie.a.socialProofText,
+                          textStyle: e._isVDLEnabled && le.a.socialProofText,
                           withFacepile: !e._isVDLEnabled,
                         }),
                       ),
@@ -33010,9 +33111,9 @@
                         return e.user
                       }),
                       d = U()(u, 1)[0]
-                    return f.a.createElement(Ye.a, { color: 'gray700', screenName: d.screen_name })
+                    return f.a.createElement(de.a, { color: 'gray700', screenName: d.screen_name })
                   }
-                  var p = Object(Qe.a)(c, !0)
+                  var p = Object(pe.a)(c, !0)
                   return f.a.createElement(T.b, { color: 'gray700', numberOfLines: 2 }, p)
                 }
               }),
@@ -33021,11 +33122,11 @@
                   a = n.conversation,
                   t = n.conversationId,
                   l = e.context.loggedInUserId,
-                  i = Object(he.j)(a, l),
+                  i = Object(Se.j)(a, l),
                   r = (null == a ? void 0 : a.type) === M.CONVERSATION_TYPE.GROUP
-                return f.a.createElement(Xe.a.Consumer, null, function (n) {
+                return f.a.createElement(me.a.Consumer, null, function (n) {
                   return f.a.createElement(
-                    Ze.a,
+                    ge.a,
                     {
                       renderContent: function (a, l) {
                         return f.a.createElement(j.a, {
@@ -33042,11 +33143,11 @@
                         })
                       },
                     },
-                    f.a.createElement(Je.a, {
-                      accessibilityLabel: sn,
-                      icon: f.a.createElement(rn.a, { style: e._isVDLEnabled ? ie.a.xIcon : void 0 }),
+                    f.a.createElement(ye.a, {
+                      accessibilityLabel: Ke,
+                      icon: f.a.createElement(Ee.a, { style: e._isVDLEnabled ? le.a.xIcon : void 0 }),
                       onPress: e._handleXPress,
-                      style: e._isVDLEnabled ? ie.a.vdlXButton : ie.a.xButton,
+                      style: e._isVDLEnabled ? le.a.vdlXButton : le.a.xButton,
                       type: e._isVDLEnabled ? void 0 : 'destructiveText',
                     }),
                   )
@@ -33071,13 +33172,13 @@
                     l = a.conversation,
                     i = a.conversationId,
                     r = a.inboxType,
-                    s = Ie.a.DMConversation,
+                    s = Ce.a.DMConversation,
                     o = e.context.featureSwitches,
                     c =
                       (null == l ? void 0 : l.type) === M.CONVERSATION_TYPE.GROUP ? '0' : e._getUserIdOfOneToOneConvo()
                   if (i)
-                    if ((t.scribeAction('report'), Object(Ie.g)(o, s))) {
-                      var u = Object(Ie.d)({
+                    if ((t.scribeAction('report'), Object(Ce.g)(o, s))) {
+                      var u = Object(Ce.d)({
                         clientReferer: window.location.pathname,
                         isMedia: !1,
                         isPromoted: !1,
@@ -33091,7 +33192,7 @@
                         state: { input: { requested_variant: JSON.stringify(u) } },
                       })
                     } else {
-                      var d = Object(he.g)(i, window.location.pathname, t.contextualScribeNamespace, r)
+                      var d = Object(Se.g)(i, window.location.pathname, t.contextualScribeNamespace, r)
                       n.push(d)
                     }
                 }
@@ -33107,18 +33208,18 @@
                     e.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                     e.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled'),
                   r = [
-                    i || l ? ie.a.inlineNotificationsDisabledIcon : ie.a.notificationsDisabledIcon,
-                    i && ie.a.inlineNotificationsDisabledIconVDL,
+                    i || l ? le.a.inlineNotificationsDisabledIcon : le.a.notificationsDisabledIcon,
+                    i && le.a.inlineNotificationsDisabledIconVDL,
                   ],
                   s = Number(n && l ? (null == n ? void 0 : n.time) : null == t ? void 0 : t.sort_timestamp)
                 return f.a.createElement(
                   f.a.Fragment,
                   null,
                   f.a.createElement(
-                    ce.a,
-                    { style: [l && ie.a.inlineTimestamp, i && ie.a.inlineTimestampVDL] },
-                    t && s ? f.a.createElement($e.a, { timestamp: s }) : null,
-                    null != t && t.notifications_disabled ? f.a.createElement(Ke.a, { style: r }) : null,
+                    se.a,
+                    { style: [l && le.a.inlineTimestamp, i && le.a.inlineTimestampVDL] },
+                    t && s ? f.a.createElement(_e.a, { timestamp: s }) : null,
+                    null != t && t.notifications_disabled ? f.a.createElement(Te.a, { style: r }) : null,
                   ),
                 )
               }),
@@ -33136,16 +33237,16 @@
                     d = l && l.type === M.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
                     p = {
                       conversation_type:
-                        (null == l ? void 0 : l.type) === M.CONVERSATION_TYPE.GROUP ? _e.j.GROUP : _e.j.ONE_TO_ONE,
+                        (null == l ? void 0 : l.type) === M.CONVERSATION_TYPE.GROUP ? Fe.j.GROUP : Fe.j.ONE_TO_ONE,
                       conversation_id: n,
                       conversation_participant_count: u,
                       position: o,
-                      inbox_type: Object(he.i)(r),
-                      entry_point: r === _e.e.PRIMARY ? _e.c.THREE_DOT_MENU : _e.c.CELL_X_BUTTON,
+                      inbox_type: Object(Se.i)(r),
+                      entry_point: r === Fe.e.PRIMARY ? Fe.c.THREE_DOT_MENU : Fe.c.CELL_X_BUTTON,
                     }
                   t.scribe({ element: 'thread', action: d, data: p }),
                     s({ conversationId: n }).catch(i({ showToast: !0 })),
-                    c.replace(Object(he.f)(r))
+                    c.replace(Object(Se.f)(r))
                 }
               }),
               _()(u()(e), '_blockUser', function (n) {
@@ -33156,7 +33257,7 @@
                     i = a.block,
                     r = a.createLocalApiErrorHandler
                   i(n).then(function () {
-                    t({ action: { label: tn.c, onAction: e._createUnblockUserHandler(n) }, text: tn.a })
+                    t({ action: { label: ke.c, onAction: e._createUnblockUserHandler(n) }, text: ke.a })
                   }, r(N.a)),
                     l.scribeAction('block')
                 }
@@ -33166,7 +33267,7 @@
                   var a = e.props,
                     t = a.analytics,
                     l = a.createLocalApiErrorHandler
-                  ;(0, a.unblock)(n).catch(l(qe.a)), t.scribeAction('unblock')
+                  ;(0, a.unblock)(n).catch(l(re.a)), t.scribeAction('unblock')
                 }
               }),
               _()(u()(e), '_handleOnClick', function (n) {
@@ -33188,11 +33289,11 @@
                     data: {
                       conversation_id: r,
                       conversation_participant_count: u,
-                      conversation_type: d ? _e.j.GROUP : _e.j.ONE_TO_ONE,
-                      entry_point: _e.c.ALL,
-                      inbox_type: _e.e.PRIMARY,
-                      dm_search_result_type: _e.a.CONVERSATION,
-                      message_type: _e.f.NOT_APPLICABLE,
+                      conversation_type: d ? Fe.j.GROUP : Fe.j.ONE_TO_ONE,
+                      entry_point: Fe.c.ALL,
+                      inbox_type: Fe.e.PRIMARY,
+                      dm_search_result_type: Fe.a.CONVERSATION,
+                      message_type: Fe.f.NOT_APPLICABLE,
                       position: o,
                     },
                   }),
@@ -33252,9 +33353,9 @@
                           return e.id === s
                         })
                       : Object($.a)(p, function (e) {
-                          return !_e.b.includes(e.type)
+                          return !Fe.b.includes(e.type)
                         }),
-                    g = [ie.a.root, d && !this._isVDLEnabled && ie.a.unread, t && this._isVDLEnabled && ie.a.active],
+                    g = [le.a.root, d && !this._isVDLEnabled && le.a.unread, t && this._isVDLEnabled && le.a.active],
                     y = (null == a ? void 0 : a.type) === M.CONVERSATION_TYPE.GROUP,
                     _ = this._isVDLEnabled && y
                   if (!a) return null
@@ -33269,12 +33370,12 @@
                     this._isVDLEnabled && t && ((F = 'text'), (S = 'medium')),
                     !a || (!u && a.isSearchResultOnly)
                       ? null
-                      : f.a.createElement(en.a, null, function (n) {
+                      : f.a.createElement(he.a, null, function (n) {
                           var s = n.isFocused,
                             p = n.isFocusedWithin,
                             y = n.isHovered
                           return f.a.createElement(
-                            nn.a,
+                            fe.a,
                             {
                               accessibilityRole: 'none',
                               accessibilityState: { selected: t },
@@ -33289,20 +33390,20 @@
                               },
                               onPress: e._handleOnClick,
                               style: g,
-                              testID: We,
+                              testID: ie,
                             },
                             f.a.createElement(
-                              an.a,
+                              ve.a,
                               {
                                 avatarCell: f.a.createElement(X.a, { conversation: a, perspective: o, withBadge: _ }),
                                 avatarSize: 'xxLarge',
                               },
                               f.a.createElement(
-                                ce.a,
-                                { style: ie.a.bodyColumn },
+                                se.a,
+                                { style: le.a.bodyColumn },
                                 f.a.createElement(
-                                  ce.a,
-                                  { style: ie.a.titleContainer },
+                                  se.a,
+                                  { style: le.a.titleContainer },
                                   f.a.createElement(Z.b, {
                                     conversation: a,
                                     isConversationSearchTitle: !!b,
@@ -33317,8 +33418,8 @@
                                     withVDLRefresh: e._isVDLEnabled,
                                   }),
                                   f.a.createElement(
-                                    ce.a,
-                                    { style: [ie.a.snippet, !s && !p && !y && ie.a.snippetPadding] },
+                                    se.a,
+                                    { style: [le.a.snippet, !s && !p && !y && le.a.snippetPadding] },
                                     m && !b
                                       ? f.a.createElement(J.a, {
                                           conversationType: a.type,
@@ -33335,7 +33436,7 @@
                                   h ? e._renderConversationLabel(a) : null,
                                   v ? e._renderSocialProof(a) : null,
                                 ),
-                                k ? f.a.createElement(ce.a, { style: ie.a.endCell }, k) : null,
+                                k ? f.a.createElement(se.a, { style: le.a.endCell }, k) : null,
                                 e._renderConversationActions({ isFocused: s, isFocusedWithin: p, isHovered: y }),
                               ),
                             ),
@@ -33348,8 +33449,8 @@
             a
           )
         })(f.a.Component)
-      _()(un, 'contextType', k.a),
-        _()(un, 'defaultProps', {
+      _()(xe, 'contextType', k.a),
+        _()(xe, 'defaultProps', {
           searchQuery: '',
           inboxType: 'primary',
           isActive: !1,
@@ -33357,28 +33458,24 @@
             return !0
           },
         })
-      var dn = Object(re.a)(Q(un), { page: 'messages', section: 'inbox' }),
-        pn =
-          (a('jwue'),
-          a('+oxZ'),
-          a('JtPf'),
-          a('87if'),
-          Object(F.a)()
-            .propsFromState(function () {
-              return { pinnedConversationIds: M.selectPinnedConversationIds }
-            })
-            .propsFromActions(function () {
-              return {
-                createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)(
-                  'DM_PINNED_INBOX_CONTEXT',
-                ),
-              }
-            })
-            .withAnalytics({ page: 'messages', section: 'inbox' })),
-        mn = a('oUUt'),
-        gn = a('d9IC'),
-        yn = a('h3MB'),
-        _n =
+      var we = Object(oe.a)(Q(xe), { page: 'messages', section: 'inbox' }),
+        Re = (a('jwue'), a('+oxZ'), a('JtPf'), a('87if'), a('eb3s')),
+        Me = Object(F.a)()
+          .propsFromState(function () {
+            return { pinnedConversationIds: M.selectPinnedConversationIds }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)(
+                'DM_PINNED_INBOX_CONTEXT',
+              ),
+            }
+          })
+          .withAnalytics({ page: 'messages', section: 'inbox' }),
+        Ae = a('oUUt'),
+        Oe = a('d9IC'),
+        De = a('h3MB'),
+        Pe =
           (a('LJOr'),
           a('tVqn'),
           a('Qavd'),
@@ -33387,12 +33484,12 @@
           function (e, n) {
             return n.module.selectItems(e)
           }),
-        hn = function (e, n) {
+        Ue = function (e, n) {
           return n.module.selectFetchStatus(e)
         },
-        fn = Object(F.a)()
+        Ne = Object(F.a)()
           .propsFromState(function () {
-            return { fetchStatus: hn, sliceItems: _n }
+            return { fetchStatus: Ue, sliceItems: Pe }
           })
           .adjustStateProps(function (e) {
             var n = e.fetchStatus,
@@ -33464,18 +33561,18 @@
               fetchSearchIfNeeded: n.fetchIfNeeded,
             }
           }),
-        vn = a('MDbM'),
-        kn = a('v//M'),
-        bn = a('0yYu'),
-        Fn = a('rHpw'),
-        Sn = a('lBmi'),
-        En = a('91AQ'),
-        Tn = a('6ZHn'),
-        Cn = I.a.c94ac69d,
-        Kn = I.a.a2f8105f,
-        In = I.a.g2fd3205,
-        Ln = I.a.ffd9cfe6,
-        xn = (function (e) {
+        je = a('MDbM'),
+        Be = a('v//M'),
+        He = a('0yYu'),
+        Ve = a('rHpw'),
+        We = a('lBmi'),
+        qe = a('91AQ'),
+        ze = a('6ZHn'),
+        Ge = I.a.c94ac69d,
+        Ye = I.a.a2f8105f,
+        Qe = I.a.g2fd3205,
+        Xe = I.a.ffd9cfe6,
+        Ze = (function (e) {
           p()(a, e)
           var n = g()(a)
           function a() {
@@ -33514,12 +33611,12 @@
                       f.a.Fragment,
                       null,
                       l.length ? e._renderPeopleSection() : null,
-                      r && !c ? f.a.createElement(bn.a, null) : null,
-                      c ? e._renderDMSearchFooter(In) : null,
+                      r && !c ? f.a.createElement(He.a, null) : null,
+                      c ? e._renderDMSearchFooter(Qe) : null,
                       a.length ? e._renderGroupsSection() : null,
-                      s ? e._renderDMSearchFooter(Cn) : null,
+                      s ? e._renderDMSearchFooter(Ge) : null,
                       t.length ? e._renderMessagesSection() : null,
-                      o ? e._renderDMSearchFooter(Kn) : null,
+                      o ? e._renderDMSearchFooter(Ye) : null,
                     )
                   : i()
               }),
@@ -33531,15 +33628,15 @@
               _()(u()(e), '_renderDMSearchFooter', function (n) {
                 var a = e.props.location
                 return f.a.createElement(
-                  ce.a,
-                  { style: Rn.header },
-                  f.a.createElement(T.b, { link: { pathname: a.pathname, state: { tab: n } } }, Ln),
+                  se.a,
+                  { style: $e.header },
+                  f.a.createElement(T.b, { link: { pathname: a.pathname, state: { tab: n } } }, Xe),
                 )
               }),
               _()(u()(e), '_renderDMHeader', function (e) {
                 var n = e.headerText,
                   a = e.icon
-                return f.a.createElement(gn.a, { headerText: n, icon: a })
+                return f.a.createElement(Oe.a, { headerText: n, icon: a })
               }),
               _()(u()(e), '_renderGroupsSection', function () {
                 var n = e.props,
@@ -33550,7 +33647,7 @@
                 return f.a.createElement(
                   f.a.Fragment,
                   null,
-                  e._renderDMHeader({ icon: Sn.a, headerText: Cn }),
+                  e._renderDMHeader({ icon: We.a, headerText: Ge }),
                   a
                     .map(function (e) {
                       return e ? l({ conversationIds: a, pinConversation: t, unpinConversation: i })(e) : null
@@ -33568,7 +33665,7 @@
                 return f.a.createElement(
                   f.a.Fragment,
                   null,
-                  e._renderDMHeader({ icon: En.a, headerText: Kn }),
+                  e._renderDMHeader({ icon: qe.a, headerText: Ye }),
                   a
                     .map(function (e) {
                       return e
@@ -33595,7 +33692,7 @@
                 return f.a.createElement(
                   f.a.Fragment,
                   null,
-                  e._renderDMHeader({ icon: Tn.a, headerText: In }),
+                  e._renderDMHeader({ icon: ze.a, headerText: Qe }),
                   a
                     .map(function (e) {
                       return e ? l({ conversationIds: a, pinConversation: t, unpinConversation: i })(e) : null
@@ -33614,7 +33711,7 @@
                   var n = this.props,
                     a = n.fetchStatus,
                     t = n.module
-                  e.module !== t && a !== vn.a.FAILED && this._handleFetch()
+                  e.module !== t && a !== je.a.FAILED && this._handleFetch()
                 },
               },
               {
@@ -33629,7 +33726,7 @@
                   var e = this.props,
                     n = e.fetchStatus,
                     a = e.loadingLabel
-                  return f.a.createElement(kn.a, {
+                  return f.a.createElement(Be.a, {
                     accessibilityLabel: a,
                     fetchStatus: n,
                     onRequestRetry: this._handleFetch,
@@ -33641,9 +33738,9 @@
             a
           )
         })(f.a.Component)
-      _()(xn, 'contextType', k.a)
-      var wn,
-        Rn = Fn.a.create(function (e) {
+      _()(Ze, 'contextType', k.a)
+      var Je,
+        $e = Ve.a.create(function (e) {
           return {
             header: {
               backgroundColor: e.colors.cellBackground,
@@ -33661,10 +33758,10 @@
             },
           }
         }),
-        Mn = fn(xn),
-        An = a('wAC9'),
-        On = (a('1IsZ'), a('IAdD'), a('xPna')),
-        Dn = function (e) {
+        en = Ne(Ze),
+        nn = a('wAC9'),
+        an = (a('1IsZ'), a('IAdD'), a('xPna')),
+        tn = function (e) {
           var n = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
             a = {},
             t = {}
@@ -33676,29 +33773,29 @@
               }),
               (t = { conversations: null == e ? void 0 : e.conversations, users: a })),
             null != e && e.entries && (t = l()(l()({}, t), {}, { entries: null == e ? void 0 : e.entries })),
-            Object(On.a)(t)
+            Object(an.a)(t)
           )
         },
-        Pn = function (e) {
-          return Object(An.a)({
+        ln = function (e) {
+          return Object(nn.a)({
             contextSuffix: 'DM_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.DirectMessagesGraphQL.fetchDMAllSearch
             },
-            sliceKey: ''.concat(_e.h, '-').concat(e),
+            sliceKey: ''.concat(Fe.h, '-').concat(e),
             getEndpointParams: function (n) {
               return l()(l()({}, n), {}, { query: e })
             },
-            mapEntitiesToActions: Dn,
+            mapEntitiesToActions: tn,
           })
         },
-        Un = function (e, n) {
+        rn = function (e, n) {
           return n.query
         },
-        Nn = Object(F.a)().propsFromState(function () {
+        sn = Object(F.a)().propsFromState(function () {
           return {
-            sliceModule: Object(H.createSelector)(Un, function (e) {
-              return e ? Pn(e) : void 0
+            sliceModule: Object(H.createSelector)(rn, function (e) {
+              return e ? ln(e) : void 0
             }),
           }
         })(function (e) {
@@ -33711,7 +33808,7 @@
             s = e.sliceModule,
             o = e.unpinConversation
           return s
-            ? f.a.createElement(Mn, {
+            ? f.a.createElement(en, {
                 loadingLabel: n,
                 location: a,
                 module: s,
@@ -33723,26 +33820,26 @@
               })
             : i()
         }),
-        jn = M.selectRecentSearches,
-        Bn = function (e, n) {
+        on = M.selectRecentSearches,
+        cn = function (e, n) {
           return n.query ? M.selectSearchConversations(e, n.query) : []
         },
-        Hn = function (e, n) {
+        un = function (e, n) {
           return n.query ? M.selectSearchFetchStatus(e, n.query) : A.a.LOADED
         },
-        Vn = function (e, n) {
+        dn = function (e, n) {
           return n.conversationIds || []
         },
-        Wn = function (e, n) {
+        pn = function (e, n) {
           return null != e && e.length
             ? n.filter(function (n) {
                 return e.indexOf(n) > -1
               })
             : e
         },
-        qn = Object(F.a)()
+        mn = Object(F.a)()
           .propsFromState(function () {
-            return { conversationIds: Vn, recentSearches: jn, searchFetchStatus: Hn, searchConversationIds: Bn }
+            return { conversationIds: dn, recentSearches: on, searchFetchStatus: un, searchConversationIds: cn }
           })
           .adjustStateProps(function (e) {
             var n = e.conversationIds,
@@ -33752,7 +33849,7 @@
               conversationIds: n,
               recentSearches: a,
               searchFetchStatus: e.searchFetchStatus,
-              searchConversationIds: Wn(t, n),
+              searchConversationIds: pn(t, n),
             }
           })
           .propsFromActions(function () {
@@ -33766,50 +33863,50 @@
               clearRecentSearches: M.clearRecentSearches,
             }
           }),
-        zn = a('VY6S'),
-        Gn = a('s14A'),
-        Yn = function (e) {
-          return Object(An.a)({
+        gn = a('VY6S'),
+        yn = a('s14A'),
+        _n = function (e) {
+          return Object(nn.a)({
             contextSuffix: 'DM_GROUP_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.DirectMessagesGraphQL.fetchDMGroupSearch
             },
-            sliceKey: ''.concat(_e.h, '-groups-').concat(e),
+            sliceKey: ''.concat(Fe.h, '-groups-').concat(e),
             getEndpointParams: function (n) {
               return l()(l()({}, n), {}, { query: e })
             },
-            mapEntitiesToActions: Dn,
+            mapEntitiesToActions: tn,
           })
         },
-        Qn = function (e) {
-          return Object(An.a)({
+        hn = function (e) {
+          return Object(nn.a)({
             contextSuffix: 'DM_PEOPLE_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.DirectMessagesGraphQL.fetchDMPeopleSearch
             },
-            sliceKey: ''.concat(_e.h, '-people-').concat(e),
+            sliceKey: ''.concat(Fe.h, '-people-').concat(e),
             getEndpointParams: function (n) {
               return l()(l()({}, n), {}, { query: e })
             },
-            mapEntitiesToActions: Dn,
+            mapEntitiesToActions: tn,
           })
         },
-        Xn = function (e, n) {
+        fn = function (e, n) {
           return n.query
         },
-        Zn = function (e, n) {
+        vn = function (e, n) {
           return n.tabType
         },
-        Jn = Object(F.a)().propsFromState(function () {
+        kn = Object(F.a)().propsFromState(function () {
           return {
-            sliceModule: Object(H.createSelector)(Zn, Xn, function (e, n) {
-              var a = n && e === _e.i.PEOPLE
-              return n && e === _e.i.GROUPS ? Yn(n) : a ? Qn(n) : void 0
+            sliceModule: Object(H.createSelector)(vn, fn, function (e, n) {
+              var a = n && e === Fe.i.PEOPLE
+              return n && e === Fe.i.GROUPS ? _n(n) : a ? hn(n) : void 0
             }),
           }
         }),
-        $n = a('FS1z'),
-        ea = Jn(function (e) {
+        bn = a('FS1z'),
+        Fn = kn(function (e) {
           var n = e.footer,
             a = e.onScrollEnd,
             t = e.pinConversation,
@@ -33818,7 +33915,7 @@
             r = e.sliceModule,
             s = e.unpinConversation
           return r
-            ? f.a.createElement($n.a, {
+            ? f.a.createElement(bn.a, {
                 footer: n,
                 module: r,
                 noItemsRenderer: l,
@@ -33828,20 +33925,21 @@
               })
             : l()
         }),
-        na = a('VPW4'),
-        aa = (a('YWiL'), a('mN6z')),
-        ta = a('TEoO'),
-        la = a('NjAB'),
-        ia = a('Fr3L'),
-        ra = a('s8G+'),
-        sa = a('DQzJ'),
-        oa = void 0 !== wn ? wn : (wn = a('y59G')),
-        ca = 'DM_MESSAGE_SEARCH',
-        ua = { context: ca },
-        da = function (e) {
+        Sn = a('VPW4'),
+        En = (a('YWiL'), a('mN6z')),
+        Tn = a('TEoO'),
+        Cn = a('NjAB'),
+        Kn = a('Fr3L'),
+        In = a('uDfI'),
+        Ln = a('s8G+'),
+        xn = a('DQzJ'),
+        wn = void 0 !== Je ? Je : (Je = a('y59G')),
+        Rn = 'DM_MESSAGE_SEARCH',
+        Mn = { context: Rn },
+        An = function (e) {
           return e
         },
-        pa = function (e) {
+        On = function (e) {
           var n,
             a,
             t,
@@ -33852,27 +33950,29 @@
             c = e.renderInboxItem,
             u = e.searchTerm,
             d = e.unpinConversation,
-            p = Object(Le.c)(),
-            m = Object(ra.a)('dm_inbox_search_message_attachment_previews_enabled'),
-            g = Object(ra.a)('rito_safety_mode_blocked_profile_enabled'),
-            y = Object(ra.a)('super_follow_user_api_enabled'),
-            _ = Object(sa.a)(oa, {
+            p = Object(In.c)(),
+            m = Object(Ln.a)('dm_inbox_search_message_attachment_previews_enabled'),
+            g = Object(Ln.a)('dm_inbox_search_query_highlighting_message_results_enabled'),
+            y = Object(Ln.a)('rito_safety_mode_blocked_profile_enabled'),
+            _ = Object(Ln.a)('super_follow_user_api_enabled'),
+            h = Object(xn.a)(wn, {
               query: u,
               withAttachments: m,
-              withSafetyModeUserFields: g,
-              withSuperFollowsUserFields: y,
+              withMessageQueryHighlights: g,
+              withSafetyModeUserFields: y,
+              withSuperFollowsUserFields: _,
             }),
-            h = _.data,
-            v = _.fetchNext,
-            k = _.hasNext,
-            b = f.a.useMemo(
+            v = h.data,
+            k = h.fetchNext,
+            b = h.hasNext,
+            F = f.a.useMemo(
               function () {
                 var e,
                   n,
                   a,
                   t =
-                    null == h ||
-                    null === (e = h.dm_message_slice_result) ||
+                    null == v ||
+                    null === (e = v.dm_message_slice_result) ||
                     void 0 === e ||
                     null === (n = e.items) ||
                     void 0 === n
@@ -33887,22 +33987,22 @@
                             ? void 0
                             : a.conversation
                         }),
-                  i = null == h || null === (a = h.dm_message_slice_result) || void 0 === a ? void 0 : a.items,
-                  r = Object(la.b)(t, [yn.a]),
-                  s = Object(la.b)(i, [yn.b])
+                  i = null == v || null === (a = v.dm_message_slice_result) || void 0 === a ? void 0 : a.items,
+                  r = Object(Cn.b)(t, [De.a]),
+                  s = Object(Cn.b)(i, [De.b])
                 return {
                   normalizedConversations: r,
                   normalizedMessages: s,
                   entities: l()(l()({}, null == r ? void 0 : r.entities), null == s ? void 0 : s.entities),
                 }
               },
-              [null == h || null === (n = h.dm_message_slice_result) || void 0 === n ? void 0 : n.items],
+              [null == v || null === (n = v.dm_message_slice_result) || void 0 === n ? void 0 : n.items],
             ),
-            F = b.entities,
-            S = b.normalizedConversations,
-            E = b.normalizedMessages,
-            T =
-              ((a = h),
+            S = F.entities,
+            E = F.normalizedConversations,
+            T = F.normalizedMessages,
+            C =
+              ((a = v),
               (t = f.a.useRef()),
               f.a.useEffect(function () {
                 t.current = a
@@ -33911,22 +34011,22 @@
           return (
             f.a.useEffect(
               function () {
-                Object(aa.a)(h, T) || p(Dn(F, !0))
+                Object(En.a)(v, C) || p(tn(S, !0))
               },
-              [F, h, T, p],
+              [S, v, C, p],
             ),
-            f.a.createElement(ta.a, {
-              cacheKey: ca,
-              footer: k ? null : i,
-              identityFunction: da,
-              items: null == E ? void 0 : E.result,
+            f.a.createElement(Tn.a, {
+              cacheKey: Rn,
+              footer: b ? null : i,
+              identityFunction: An,
+              items: null == T ? void 0 : T.result,
               noItemsRenderer: r,
-              onNearEnd: v,
+              onNearEnd: k,
               onScrollEnd: s,
               renderer: c({
-                conversationIds: null == S ? void 0 : S.result,
+                conversationIds: null == E ? void 0 : E.result,
                 isMessageItem: !0,
-                messageIds: null == E ? void 0 : E.result,
+                messageIds: null == T ? void 0 : T.result,
                 pinConversation: o,
                 unpinConversation: d,
               }),
@@ -33934,25 +34034,25 @@
             })
           )
         },
-        ma = Fn.a.create(function (e) {
+        Dn = Ve.a.create(function (e) {
           return { activityIndicatior: { paddingVertical: 250 } }
         })
-      function ga(e) {
+      function Pn(e) {
         return f.a.createElement(
-          ia.a,
-          { errorConfig: ua },
+          Kn.a,
+          { errorConfig: Mn },
           f.a.createElement(
             f.a.Suspense,
-            { fallback: f.a.createElement(na.a, { style: ma.activityIndicatior }) },
-            f.a.createElement(pa, e),
+            { fallback: f.a.createElement(Sn.a, { style: Dn.activityIndicatior }) },
+            f.a.createElement(On, e),
           ),
         )
       }
-      var ya = a('j7Bv'),
-        _a = a('VwDm'),
-        ha = a('hOZg'),
-        fa = I.a.dbd5d40f,
-        va = (function (e) {
+      var Un = a('j7Bv'),
+        Nn = a('VwDm'),
+        jn = a('hOZg'),
+        Bn = I.a.dbd5d40f,
+        Hn = (function (e) {
           p()(a, e)
           var n = g()(a)
           function a() {
@@ -33967,25 +34067,25 @@
                     n = e.clearRecentSearch,
                     a = e.handleRecentSearchClick,
                     t = e.recentSearch,
-                    l = f.a.createElement(ya.a, { Icon: _a.a, color: 'neutral', size: 'xLarge', style: ka.searchIcon }),
-                    i = [ka.listItemView, ka.bottomBorder]
+                    l = f.a.createElement(Un.a, { Icon: Nn.a, color: 'neutral', size: 'xLarge', style: Vn.searchIcon }),
+                    i = [Vn.listItemView, Vn.bottomBorder]
                   return f.a.createElement(
-                    nn.a,
+                    fe.a,
                     { onPress: a, style: i },
                     f.a.createElement(
-                      ce.a,
+                      se.a,
                       null,
                       f.a.createElement(
-                        an.a,
-                        { avatarCell: l, avatarSize: 'xLarge', cellStyle: ka.avatarColumn },
+                        ve.a,
+                        { avatarCell: l, avatarSize: 'xLarge', cellStyle: Vn.avatarColumn },
                         f.a.createElement(
-                          ce.a,
-                          { style: ka.container },
+                          se.a,
+                          { style: Vn.container },
                           f.a.createElement(T.b, { numberOfLines: 1 }, t),
-                          f.a.createElement(Je.a, {
-                            accessibilityLabel: fa,
+                          f.a.createElement(ye.a, {
+                            accessibilityLabel: Bn,
                             borderColor: 'transparent',
-                            icon: f.a.createElement(ha.a, null),
+                            icon: f.a.createElement(jn.a, null),
                             onPress: n,
                             type: 'brandText',
                           }),
@@ -33999,7 +34099,7 @@
             a
           )
         })(f.a.PureComponent),
-        ka = Fn.a.create(function (e) {
+        Vn = Ve.a.create(function (e) {
           return {
             container: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
             searchIcon: { marginRight: e.spaces.space12, padding: e.spaces.space4 },
@@ -34017,37 +34117,37 @@
             },
           }
         }),
-        ba = va,
-        Fa = a('DbJc'),
-        Sa = a('IG4P'),
-        Ea = a('RJrc'),
-        Ta = a('TnY3'),
-        Ca = a('FIs5'),
-        Ka = a('6OUF'),
-        Ia = a('k/OQ'),
-        La = a('95Se'),
-        xa = 'dmSearchInbox',
-        wa = function (e) {
+        Wn = Hn,
+        qn = a('DbJc'),
+        zn = a('IG4P'),
+        Gn = a('RJrc'),
+        Yn = a('TnY3'),
+        Qn = a('FIs5'),
+        Xn = a('6OUF'),
+        Zn = a('k/OQ'),
+        Jn = a('95Se'),
+        $n = 'dmSearchInbox',
+        ea = function (e) {
           return e
         },
-        Ra = I.a.b08821f3,
-        Ma = I.a.a66ac766,
-        Aa = I.a.fe61929d,
-        Oa = I.a.a846382a,
-        Da = I.a.b9dae4f4,
-        Pa = I.a.e7fb2027,
-        Ua = I.a.b92a21d8,
-        Na = I.a.jdc67c42,
-        ja = I.a.e8581ccd,
-        Ba = I.a.f08940ab,
-        Ha = I.a.gaae1fd5,
-        Va = I.a.i5d7593a,
-        Wa = I.a.f8321d82,
-        qa = I.a.c94ac69d,
-        za = I.a.a2f8105f,
-        Ga = I.a.g2fd3205,
-        Ya = I.a.fb3c8e74,
-        Qa = (function (e) {
+        na = I.a.b08821f3,
+        aa = I.a.a66ac766,
+        ta = I.a.fe61929d,
+        la = I.a.a846382a,
+        ia = I.a.b9dae4f4,
+        ra = I.a.e7fb2027,
+        sa = I.a.b92a21d8,
+        oa = I.a.jdc67c42,
+        ca = I.a.e8581ccd,
+        ua = I.a.f08940ab,
+        da = I.a.gaae1fd5,
+        pa = I.a.i5d7593a,
+        ma = I.a.f8321d82,
+        ga = I.a.c94ac69d,
+        ya = I.a.a2f8105f,
+        _a = I.a.g2fd3205,
+        ha = I.a.fb3c8e74,
+        fa = (function (e) {
           p()(a, e)
           var n = g()(a)
           function a() {
@@ -34078,17 +34178,17 @@
                   l = e.state.debouncedQuery
                 return l && t
                   ? (a.scribe({ component: 'search', element: 'results', action: 'empty' }),
-                    f.a.createElement(Ca.a, {
+                    f.a.createElement(Qn.a, {
                       buttonLink: '/messages/compose',
-                      buttonText: Ba,
-                      header: Ua({ query: l }),
-                      message: e._messageSearchEnabled ? ja : Na,
+                      buttonText: ua,
+                      header: sa({ query: l }),
+                      message: e._messageSearchEnabled ? ca : oa,
                       onButtonPress: e._handleComposeButtonPress,
                     }))
                   : f.a.createElement(
-                      ce.a,
-                      { style: nt.emptyState },
-                      f.a.createElement(T.b, { align: 'center', color: 'gray700' }, e._messageSearchEnabled ? Va : Ha),
+                      se.a,
+                      { style: Ea.emptyState },
+                      f.a.createElement(T.b, { align: 'center', color: 'gray700' }, e._messageSearchEnabled ? pa : da),
                     )
               }),
               _()(u()(e), '_renderRecentSearches', function () {
@@ -34100,14 +34200,14 @@
                   ? f.a.createElement(
                       f.a.Fragment,
                       null,
-                      f.a.createElement(gn.a, {
+                      f.a.createElement(Oe.a, {
                         analytics: a,
                         clearRecentSearches: e._clearRecentSearches,
-                        headerText: Ya,
+                        headerText: ha,
                         withClearButton: !0,
                       }),
                       l.map(function (n) {
-                        return f.a.createElement(ba, {
+                        return f.a.createElement(Wn, {
                           clearRecentSearch: function (a) {
                             return e._handleClearRecentSearch(a, n)
                           },
@@ -34129,8 +34229,8 @@
                   i = n.unpinConversation,
                   r = e.state.debouncedQuery
                 return r
-                  ? f.a.createElement(Nn, {
-                      loadingLabel: Ma,
+                  ? f.a.createElement(sn, {
+                      loadingLabel: aa,
                       location: a,
                       pinConversation: t,
                       query: r,
@@ -34146,14 +34246,14 @@
                   l = a.renderInboxItem,
                   i = a.unpinConversation,
                   r = e.state.debouncedQuery
-                return f.a.createElement(ea, {
+                return f.a.createElement(Fn, {
                   footer: e._renderFooter(),
                   onScrollEnd: e._handleScrollEnd,
                   pinConversation: t,
                   query: r,
                   renderEmptyState: e._renderEmptyDMSearchInbox,
                   renderInboxItem: l,
-                  tabType: n ? _e.i.GROUPS : _e.i.PEOPLE,
+                  tabType: n ? Fe.i.GROUPS : Fe.i.PEOPLE,
                   unpinConversation: i,
                 })
               }),
@@ -34164,7 +34264,7 @@
                   l = n.unpinConversation,
                   i = e.state.debouncedQuery
                 return i
-                  ? f.a.createElement(ga, {
+                  ? f.a.createElement(Pn, {
                       footer: e._renderFooter(),
                       noItemsRenderer: e._renderEmptyDMSearchInbox,
                       onScrollEnd: e._handleScrollEnd,
@@ -34178,11 +34278,11 @@
               _()(u()(e), '_renderTabContent', function () {
                 var n = e.props.location
                 switch (((null == n ? void 0 : n.state) || {}).tab) {
-                  case Ga:
+                  case _a:
                     return e._renderConversationsTab(!1)
-                  case qa:
+                  case ga:
                     return e._renderConversationsTab(!0)
-                  case za:
+                  case ya:
                     return e._renderMessagesTab()
                   default:
                     return e._renderAllDMSearchResultsTab()
@@ -34197,19 +34297,19 @@
                   r = n.unpinConversation,
                   s = e.state.isRefreshing
                 return f.a.createElement(
-                  Gn.a,
+                  yn.a,
                   null,
                   f.a.createElement(
-                    Sa.a,
+                    zn.a,
                     { isRefreshing: s, onRefresh: e._handlePullToRefresh },
-                    f.a.createElement(ta.a, {
+                    f.a.createElement(Tn.a, {
                       accessibilityRole: 'tablist',
                       accessibilityTitle: a,
-                      anchoring: Fa.a,
+                      anchoring: qn.a,
                       assumedItemHeight: 100,
-                      cacheKey: xa,
+                      cacheKey: $n,
                       footer: e._renderFooter(),
-                      identityFunction: wa,
+                      identityFunction: ea,
                       items: i,
                       noItemsRenderer: e._renderRecentSearches,
                       onNearEnd: e._handleNearEnd,
@@ -34222,13 +34322,13 @@
               }),
               _()(u()(e), '_renderFooter', function () {
                 return e.state.isLoadingMore
-                  ? f.a.createElement(Ea.a, null)
+                  ? f.a.createElement(Gn.a, null)
                   : f.a.createElement(
-                      ce.a,
-                      { style: nt.footerContainer },
-                      f.a.createElement(T.b, { align: 'center', size: 'body', weight: 'bold' }, Pa),
+                      se.a,
+                      { style: Ea.footerContainer },
+                      f.a.createElement(T.b, { align: 'center', size: 'body', weight: 'bold' }, ra),
                       f.a.createElement(
-                        en.a,
+                        he.a,
                         { interactiveStyles: null },
                         f.a.createElement(
                           T.b,
@@ -34239,7 +34339,7 @@
                             size: 'subtext2',
                             withInteractiveStyling: !0,
                           },
-                          Da,
+                          ia,
                         ),
                       ),
                     )
@@ -34297,7 +34397,7 @@
                     !e._modularSearchEnabled &&
                     i({ query: n, preserveResults: !1, fetchNextPage: !1 }).catch(t())
               }),
-              _()(u()(e), '_handleSearchChangeDebounced', Object(zn.a)(e._handleSearchChangeInner, 200)),
+              _()(u()(e), '_handleSearchChangeDebounced', Object(gn.a)(e._handleSearchChangeInner, 200)),
               _()(u()(e), '_handleSearchChange', function (n) {
                 var a = n.currentTarget.value,
                   t = e.props.onQueryChange
@@ -34394,56 +34494,56 @@
                         this.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled')) ||
                       (this._modularSearchEnabled && a)
                     ),
-                    r = [nt.searchInput, i ? nt.searchInputBorder : void 0],
+                    r = [Ea.searchInput, i ? Ea.searchInputBorder : void 0],
                     s = ((null == n ? void 0 : n.state) || {}).tab,
-                    o = [Wa, Ga, qa]
-                  this._messageSearchEnabled && o.push(za)
+                    o = [ma, _a, ga]
+                  this._messageSearchEnabled && o.push(ya)
                   var c = o.map(function (e) {
                       return {
                         key: e,
                         label: e,
                         accessibilityLabel: e,
                         isActive: function () {
-                          return s === e || (!s && e === Wa)
+                          return s === e || (!s && e === ma)
                         },
                         to: l()(l()({}, n), {}, { state: l()(l()({}, n.state), {}, { tab: e }) }),
                       }
                     }),
-                    u = s === za && this._messageSearchEnabled
+                    u = s === ya && this._messageSearchEnabled
                   return f.a.createElement(
                     f.a.Fragment,
                     null,
                     f.a.createElement(
-                      ce.a,
+                      se.a,
                       { style: r },
-                      f.a.createElement(Je.a, {
-                        accessibilityLabel: Ra,
-                        icon: f.a.createElement(La.a, null),
+                      f.a.createElement(ye.a, {
+                        accessibilityLabel: na,
+                        icon: f.a.createElement(Jn.a, null),
                         onPress: this._handleHideRecentSearches,
                         pullLeft: !0,
                         type: 'primaryText',
                       }),
-                      f.a.createElement(Ka.a, {
-                        Icon: _a.a,
+                      f.a.createElement(Xn.a, {
+                        Icon: Nn.a,
                         autoComplete: 'off',
                         onChange: this._handleSearchChange,
                         onClear: this._handleSearchClear,
                         onSubmitEditing: this._handleAddRecentSearch,
-                        placeholder: this._messageSearchEnabled ? Oa : Aa,
+                        placeholder: this._messageSearchEnabled ? la : ta,
                         ref: this._setInputRef,
                         value: a,
                         withClearButton: !0,
                       }),
                     ),
-                    this._modularSearchEnabled && (a || s === Ga || s === qa || u)
+                    this._modularSearchEnabled && (a || s === _a || s === ga || u)
                       ? f.a.createElement(
                           f.a.Fragment,
                           null,
-                          f.a.createElement(Ia.a, { links: c }),
+                          f.a.createElement(Zn.a, { links: c }),
                           this._renderTabContent(),
                         )
-                      : f.a.createElement(kn.a, {
-                          accessibilityLabel: Ma,
+                      : f.a.createElement(Be.a, {
+                          accessibilityLabel: aa,
                           fetchStatus: t,
                           onRequestRetry: this._handleRefetchSearch,
                           render: this._renderSearchResults,
@@ -34455,13 +34555,13 @@
             a
           )
         })(f.a.Component)
-      _()(Qa, 'contextType', k.a), _()(Qa, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
-      var Xa,
-        Za,
-        Ja,
-        $a,
-        et,
-        nt = Fn.a.create(function (e) {
+      _()(fa, 'contextType', k.a), _()(fa, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
+      var va,
+        ka,
+        ba,
+        Fa,
+        Sa,
+        Ea = Ve.a.create(function (e) {
           return {
             emptyState: { marginTop: e.spaces.space32 },
             searchInput: {
@@ -34479,47 +34579,47 @@
             footerContainer: { marginVertical: e.spaces.space32 },
           }
         }),
-        at = Object(Ta.a)(qn(Qa)),
-        tt = a('P74S'),
-        lt = a.n(tt),
-        it = a('OIs+'),
-        rt = I.a.cb367657,
-        st = I.a.ie9a7e48,
-        ot = I.a.hd3927c6,
-        ct = I.a.f1ac0968,
-        ut =
-          ((Xa = {}),
-          _()(Xa, it.a.Offline, { toast: { text: st } }),
-          _()(Xa, 'defaultToast', { text: rt }),
-          _()(Xa, 'showToast', !0),
-          Xa),
-        dt =
-          ((Za = {}),
-          _()(Za, it.a.Offline, { toast: { text: ct } }),
-          _()(Za, 'defaultToast', { text: ot }),
-          _()(Za, 'showToast', !0),
-          Za),
-        pt = a('HvW7'),
-        mt = a.n(pt),
-        gt = a('PJTX'),
-        yt = a.n(gt),
-        _t = I.a.e4b3f520,
-        ht = I.a.ae4d666a,
-        ft = function (e) {
+        Ta = Object(Yn.a)(mn(fa)),
+        Ca = a('P74S'),
+        Ka = a.n(Ca),
+        Ia = a('OIs+'),
+        La = I.a.cb367657,
+        xa = I.a.ie9a7e48,
+        wa = I.a.hd3927c6,
+        Ra = I.a.f1ac0968,
+        Ma =
+          ((va = {}),
+          _()(va, Ia.a.Offline, { toast: { text: xa } }),
+          _()(va, 'defaultToast', { text: La }),
+          _()(va, 'showToast', !0),
+          va),
+        Aa =
+          ((ka = {}),
+          _()(ka, Ia.a.Offline, { toast: { text: Ra } }),
+          _()(ka, 'defaultToast', { text: wa }),
+          _()(ka, 'showToast', !0),
+          ka),
+        Oa = a('HvW7'),
+        Da = a.n(Oa),
+        Pa = a('PJTX'),
+        Ua = a.n(Pa),
+        Na = I.a.e4b3f520,
+        ja = I.a.ae4d666a,
+        Ba = function (e) {
           return e
         },
-        vt = I.a.a219e217,
-        kt = I.a.d571e4f8,
-        bt = I.a.a551bf7d,
-        Ft = I.a.d98e066b,
-        St = I.a.j302dba7,
-        Et = void 0 !== Ja ? Ja : (Ja = a('X8um')),
-        Tt = { context: 'DM_PINNED_INBOX' },
-        Ct = function (e) {
+        Ha = I.a.a219e217,
+        Va = I.a.d571e4f8,
+        Wa = I.a.a551bf7d,
+        qa = I.a.d98e066b,
+        za = I.a.j302dba7,
+        Ga = void 0 !== ba ? ba : (ba = a('X8um')),
+        Ya = { context: 'DM_PINNED_INBOX' },
+        Qa = function (e) {
           var n,
             t,
             i,
-            r = Object(Le.c)(),
+            r = Object(In.c)(),
             s = e.accessibilityTitle,
             o = e.analytics,
             c = e.cacheKey,
@@ -34533,8 +34633,8 @@
             v = e.renderInboxItem,
             b = e.showSearchView,
             F = e.withKeyboardShortcuts,
-            S = yt()(),
-            E = Object(sa.a)(Et, { label: ln.a.PINNED }).data,
+            S = Ua()(),
+            E = Object(xn.a)(Ga, { label: be.a.PINNED }).data,
             T = f.a.useMemo(
               function () {
                 var e
@@ -34544,7 +34644,7 @@
               },
               [E],
             ),
-            C = Object(la.b)(T, [yn.a]).entities,
+            C = Object(Cn.b)(T, [De.a]).entities,
             K = f.a.useContext(k.a).featureSwitches.getValue('dm_conversation_labels_max_pinned_count'),
             I = f.a.useState(!1),
             L = U()(I, 2),
@@ -34578,18 +34678,18 @@
                       null === (n = e.labels) || void 0 === n
                         ? void 0
                         : n.filter(function (e) {
-                            return e.label_type !== ln.a.PINNED
+                            return e.label_type !== be.a.PINNED
                           })
-                  r(Dn({ conversations: _()({}, e.rest_id, l()(l()({}, e), {}, { labels: a })) }))
+                  r(tn({ conversations: _()({}, e.rest_id, l()(l()({}, e), {}, { labels: a })) }))
                 }),
-                r(Dn(C, !1))
+                r(tn(C, !1))
             },
             [E],
           )
           var N = f.a.useCallback(
               function () {
                 w(!0)
-                var e = lt()(S, Et, { label: ln.a.PINNED }).toPromise()
+                var e = Ka()(S, Ga, { label: be.a.PINNED }).toPromise()
                 Promise.all([
                   e,
                   function () {
@@ -34605,14 +34705,14 @@
               },
               [d, r, S],
             ),
-            j = mt()(void 0 !== $a ? $a : ($a = a('ZH9U'))),
+            j = Da()(void 0 !== Fa ? Fa : (Fa = a('ZH9U'))),
             H = U()(j, 1)[0],
-            V = mt()(void 0 !== et ? et : (et = a('rQjK'))),
+            V = Da()(void 0 !== Sa ? Sa : (Sa = a('rQjK'))),
             W = U()(V, 1)[0],
             q = f.a.useCallback(
               function (e, n) {
                 H({
-                  variables: { conversation_id: e, label: ln.a.PINNED },
+                  variables: { conversation_id: e, label: be.a.PINNED },
                   onCompleted: function (a) {
                     var t
                     switch (null === (t = a.add_dm_conversation_label_v3) || void 0 === t ? void 0 : t.__typename) {
@@ -34621,7 +34721,7 @@
                           s = i.label_type,
                           c = i.timestamp
                         r(
-                          Dn({
+                          tn({
                             conversations: _()(
                               {},
                               e,
@@ -34629,20 +34729,20 @@
                             ),
                           }),
                         ),
-                          r(Object(B.b)({ ariaOnly: !0, text: Ft }))
+                          r(Object(B.b)({ ariaOnly: !0, text: qa }))
                         break
                       case 'DMConversationLabelUnavailable':
                         var u = a.add_dm_conversation_label_v3.failure_reason
                         o.scribe({
                           element: 'thread',
                           action: 'error_shown',
-                          data: { error_type: _e.g.MAX_PINS_REACHED },
+                          data: { error_type: Fe.g.MAX_PINS_REACHED },
                         }),
                           'ExceededMaxPinnedConversations' === u && D(!0)
                     }
                   },
                   onError: function (e) {
-                    d(ut)(e)
+                    d(Ma)(e)
                   },
                 })
               },
@@ -34651,18 +34751,18 @@
             z = f.a.useCallback(
               function (e, n) {
                 W({
-                  variables: { conversation_id: e, label_type: ln.a.PINNED },
+                  variables: { conversation_id: e, label_type: be.a.PINNED },
                   onCompleted: function (a) {
                     var t,
                       i = n
                         ? null == n || null === (t = n.labels) || void 0 === t
                           ? void 0
                           : t.filter(function (e) {
-                              return e.label_type !== ln.a.PINNED
+                              return e.label_type !== be.a.PINNED
                             })
                         : []
-                    r(Dn({ conversations: _()({}, e, l()(l()({}, n), {}, { labels: i })) })),
-                      r(Object(B.b)({ ariaOnly: !0, text: St }))
+                    r(tn({ conversations: _()({}, e, l()(l()({}, n), {}, { labels: i })) })),
+                      r(Object(B.b)({ ariaOnly: !0, text: za }))
                   },
                   updater: function (n) {
                     var a,
@@ -34678,11 +34778,11 @@
                     if (l && i) {
                       var r = n.get(l),
                         s = n.get(i)
-                      s && r && (Object(mn.b)(s, l), n.delete(l))
+                      s && r && (Object(Ae.b)(s, l), n.delete(l))
                     }
                   },
                   onError: function (e) {
-                    d(dt)(e)
+                    d(Aa)(e)
                   },
                 })
               },
@@ -34703,31 +34803,31 @@
                 ? f.a.createElement(
                     f.a.Fragment,
                     null,
-                    Kt(_t),
+                    Xa(Na),
                     y.map(function (e, n) {
                       return v({ conversationIds: y, pinConversation: q, unpinConversation: z })(e)
                     }),
                   )
                 : null,
-              Y ? Kt(ht) : null,
+              Y ? Xa(ja) : null,
             )
           return null != u && u.length
             ? f.a.createElement(
                 f.a.Fragment,
                 null,
                 O
-                  ? f.a.createElement(de.a, {
-                      confirmButtonLabel: vt,
-                      headline: kt({ count: K }),
+                  ? f.a.createElement(Re.a, {
+                      confirmButtonLabel: Ha,
+                      headline: Va({ count: K }),
                       onConfirm: function () {
                         return D(!1)
                       },
-                      text: bt,
+                      text: Wa,
                       withCancelButton: !1,
                     })
                   : null,
                 b
-                  ? f.a.createElement(at, {
+                  ? f.a.createElement(Ta, {
                       accessibilityTitle: s,
                       analytics: o,
                       conversationIds: u,
@@ -34739,18 +34839,18 @@
                       unpinConversation: z,
                     })
                   : f.a.createElement(
-                      Sa.a,
+                      zn.a,
                       { isRefreshing: x, onRefresh: N },
                       c && null != G && G.length
-                        ? f.a.createElement(ta.a, {
+                        ? f.a.createElement(Tn.a, {
                             accessibilityRole: 'tablist',
                             accessibilityTitle: s,
-                            anchoring: Fa.a,
+                            anchoring: qn.a,
                             assumedItemHeight: 100,
                             cacheKey: c,
                             footer: p,
                             header: Q,
-                            identityFunction: ft,
+                            identityFunction: Ba,
                             items: G,
                             onNearEnd: g,
                             renderer: v({ conversationIds: G, pinConversation: q, unpinConversation: z }),
@@ -34762,48 +34862,48 @@
               )
             : h()
         },
-        Kt = function (e) {
-          return f.a.createElement(ce.a, null, f.a.createElement(gn.a, { headerText: e, isInboxLabelHeader: !0 }))
+        Xa = function (e) {
+          return f.a.createElement(se.a, null, f.a.createElement(Oe.a, { headerText: e, isInboxLabelHeader: !0 }))
         }
-      function It(e) {
-        return f.a.createElement(ia.a, { errorConfig: Tt }, f.a.createElement(Ct, e))
+      function Za(e) {
+        return f.a.createElement(Kn.a, { errorConfig: Ya }, f.a.createElement(Qa, e))
       }
-      var Lt = pn(f.a.memo(It)),
-        xt = a('dwig'),
-        wt = a('QB0K'),
-        Rt = a('Avzu'),
-        Mt = a('FRNI'),
-        At = I.a.h845f281,
-        Ot = I.a.f325afc3
-      function Dt() {
-        return f.a.createElement(wt.a, {
-          accessibilityLabel: At,
+      var Ja = Me(f.a.memo(Za)),
+        $a = a('dwig'),
+        et = a('QB0K'),
+        nt = a('Avzu'),
+        at = a('FRNI'),
+        tt = I.a.h845f281,
+        lt = I.a.f325afc3
+      function it() {
+        return f.a.createElement(et.a, {
+          accessibilityLabel: tt,
           href: '/messages/compose',
-          icon: f.a.createElement(Rt.a, null),
-          label: At,
+          icon: f.a.createElement(nt.a, null),
+          label: tt,
           scribeComponent: 'floating_dm_button',
-          shortLabel: Ot,
-          testID: Mt.a.message,
+          shortLabel: lt,
+          testID: at.a.message,
         })
       }
-      var Pt = f.a.memo(Dt),
-        Ut = a('tI3i'),
-        Nt = a.n(Ut),
-        jt = a('sNn6'),
-        Bt = a('883S'),
-        Ht = a('yoO3'),
-        Vt = a('GSsg'),
-        Wt = a('2g+p'),
-        qt = a('mw9i'),
-        zt = a('BcsE'),
-        Gt = a('+d3d'),
-        Yt = function (e) {
+      var rt = f.a.memo(it),
+        st = a('tI3i'),
+        ot = a.n(st),
+        ct = a('sNn6'),
+        ut = a('883S'),
+        dt = a('yoO3'),
+        pt = a('GSsg'),
+        mt = a('2g+p'),
+        gt = a('mw9i'),
+        yt = a('BcsE'),
+        _t = a('+d3d'),
+        ht = function (e) {
           return e
         },
-        Qt = I.a.a66ac766,
-        Xt = I.a.fe61929d,
-        Zt = I.a.a846382a,
-        Jt = (function (e) {
+        ft = I.a.a66ac766,
+        vt = I.a.fe61929d,
+        kt = I.a.a846382a,
+        bt = (function (e) {
           p()(a, e)
           var n = g()(a)
           function a(e, t) {
@@ -34868,7 +34968,7 @@
                   a = e.analytics,
                   t = e.conversationIds,
                   l = g.state.searchQuery
-                return f.a.createElement(at, {
+                return f.a.createElement(Ta, {
                   accessibilityTitle: n,
                   analytics: a,
                   conversationIds: t,
@@ -34897,18 +34997,18 @@
                     n.searchQuery)
                   ? g._renderFocusedSearch()
                   : f.a.createElement(
-                      Sa.a,
+                      zn.a,
                       { isRefreshing: s, onRefresh: g._handlePullToRefresh },
                       c && l
-                        ? f.a.createElement(ta.a, {
+                        ? f.a.createElement(Tn.a, {
                             accessibilityRole: 'tablist',
                             accessibilityTitle: t,
-                            anchoring: Fa.a,
+                            anchoring: qn.a,
                             assumedItemHeight: 100,
                             cacheKey: c,
                             footer: i,
                             header: g._renderHeader(),
-                            identityFunction: Yt,
+                            identityFunction: ht,
                             items: l,
                             noItemsRenderer: o,
                             onNearEnd: g._handleNearEnd,
@@ -34955,10 +35055,10 @@
                       state: l()(l()({}, null == c ? void 0 : c.state), {}, { entryPoint: null, searchQuery: u }),
                     },
                     h = y && null != n && n.length ? n.indexOf(y) : null,
-                    k = Object(zt.a)(h) ? h + 1 : 0
-                  Nt()(!!o, 'loggedInUserId must be defined'), a && a(!0)
+                    k = Object(yt.a)(h) ? h + 1 : 0
+                  ot()(!!o, 'loggedInUserId must be defined'), a && a(!0)
                   var b = function (e) {
-                    return f.a.createElement(dn, {
+                    return f.a.createElement(we, {
                       conversationId: y,
                       inboxType: g.props.inboxType,
                       isActive: e,
@@ -34975,7 +35075,7 @@
                     })
                   }
                   return g._isVDLEnabled
-                    ? f.a.createElement(jt.a, { exact: !1, path: _.pathname }, b)
+                    ? f.a.createElement(ct.a, { exact: !1, path: _.pathname }, b)
                     : f.a.createElement(v.a, { exact: !1, path: _.pathname }, b)
                 }
               }),
@@ -34991,7 +35091,7 @@
                   o = s.searchQuery,
                   c = s.showSearchView
                 return a.length
-                  ? f.a.createElement(Lt, {
+                  ? f.a.createElement(Ja, {
                       accessibilityTitle: n,
                       cacheKey: r,
                       conversationIds: a,
@@ -35038,7 +35138,7 @@
                     event_value: g.state.searchQuery.length,
                     conversation_id: n,
                     conversation_participant_count: s,
-                    conversation_type: o ? _e.j.GROUP : _e.j.ONE_TO_ONE,
+                    conversation_type: o ? Fe.j.GROUP : Fe.j.ONE_TO_ONE,
                     position: t,
                   },
                 }),
@@ -35053,26 +35153,26 @@
                 ;(0, e.fetchInbox)().then(g._updateLastSeenEventId, n())
               }),
               _()(u()(g), '_updateLastSeenEventIdIfActive', function () {
-                if ('background' !== Wt.a.currentState) return g._updateLastSeenEventId()
+                if ('background' !== mt.a.currentState) return g._updateLastSeenEventId()
               }),
               _()(u()(g), '_renderHeader', function () {
                 var e = g.props,
                   n = e.renderStickyContent,
                   a = e.withDmSearch,
-                  t = [$t.searchInput, g._isVDLEnabled ? void 0 : $t.searchInputBorder]
+                  t = [Ft.searchInput, g._isVDLEnabled ? void 0 : Ft.searchInputBorder]
                 return f.a.createElement(
                   f.a.Fragment,
                   null,
                   a
                     ? f.a.createElement(
-                        ce.a,
+                        se.a,
                         { onClick: g._handleSearchClick, style: t },
-                        f.a.createElement(Ka.a, {
-                          Icon: _a.a,
+                        f.a.createElement(Xn.a, {
+                          Icon: Nn.a,
                           autoComplete: 'off',
                           isCompact: !0,
                           onChange: g._handleSearchChange,
-                          placeholder: g._messageSearchEnabled ? Zt : Xt,
+                          placeholder: g._messageSearchEnabled ? kt : vt,
                           withClearButton: !0,
                         }),
                       )
@@ -35085,7 +35185,7 @@
                   n = e.createLocalApiErrorHandler
                 return (0, e.updateLastSeenEventId)().catch(n())
               }),
-              (g._fab = f.a.createElement(Pt, null)),
+              (g._fab = f.a.createElement(rt, null)),
               g
             )
           }
@@ -35100,13 +35200,13 @@
                     t = n.fetchInboxHistory,
                     l = n.fetchUpdates
                   return (
-                    (this._updatePolling = new Vt.a(
+                    (this._updatePolling = new pt.a(
                       function () {
-                        l().then(e._updateLastSeenEventIdIfActive, a(Bt.a))
+                        l().then(e._updateLastSeenEventIdIfActive, a(ut.a))
                       },
                       { interval: 8e3 },
                     )),
-                    (this._handleHistoryRequest = Object(Gt.a)(function () {
+                    (this._handleHistoryRequest = Object(_t.a)(function () {
                       t.apply(void 0, arguments).catch(a())
                     }, 1e3)),
                     this._handleFetchInitial()
@@ -35123,14 +35223,14 @@
                 key: 'render',
                 value: function () {
                   return f.a.createElement(
-                    Ht.a,
+                    dt.a,
                     null,
                     f.a.createElement(R, null),
                     f.a.createElement(
-                      xt.a,
-                      { component: qt.a, fab: this._fab, style: $t.root },
-                      f.a.createElement(kn.a, {
-                        accessibilityLabel: Qt,
+                      $a.a,
+                      { component: gt.a, fab: this._fab, style: Ft.root },
+                      f.a.createElement(Be.a, {
+                        accessibilityLabel: ft,
                         fetchStatus: this.props.fetchStatus,
                         onRequestRetry: this._handleFetchInitialWrapper,
                         render: this._render,
@@ -35143,15 +35243,15 @@
             a
           )
         })(f.a.Component)
-      _()(Jt, 'contextType', k.a),
-        _()(Jt, 'defaultProps', {
+      _()(bt, 'contextType', k.a),
+        _()(bt, 'defaultProps', {
           conversationIds: [],
-          inboxType: ln.d.PRIMARY,
+          inboxType: be.d.PRIMARY,
           isDrawer: !1,
           withDmSearch: !1,
           withPinnedInbox: !1,
         })
-      var $t = Fn.a.create(function (e) {
+      var Ft = Ve.a.create(function (e) {
         return {
           root: { backgroundColor: e.colors.cellBackground, flexGrow: 1 },
           searchInput: { backgroundColor: e.colors.cellBackground, padding: e.spaces.space12, zIndex: 1 },
@@ -35162,7 +35262,7 @@
           },
         }
       })
-      n.a = Object(Ta.a)(D(Jt))
+      n.a = Object(Yn.a)(D(bt))
     },
     piX5: function (e, n, a) {
       'use strict'
@@ -37775,15 +37875,18 @@
         Sn,
         En,
         Tn,
-        Cn = {
+        Cn,
+        Kn,
+        In = {
           fragment: {
             argumentDefinitions: [
               (t = { defaultValue: null, kind: 'LocalArgument', name: 'cursor' }),
               (l = { defaultValue: null, kind: 'LocalArgument', name: 'query' }),
               (i = { defaultValue: null, kind: 'LocalArgument', name: 'withAttachments' }),
               (r = { defaultValue: !1, kind: 'LocalArgument', name: 'withDmMuting' }),
-              (s = { defaultValue: null, kind: 'LocalArgument', name: 'withSafetyModeUserFields' }),
-              (o = { defaultValue: null, kind: 'LocalArgument', name: 'withSuperFollowsUserFields' }),
+              (s = { defaultValue: null, kind: 'LocalArgument', name: 'withMessageQueryHighlights' }),
+              (o = { defaultValue: null, kind: 'LocalArgument', name: 'withSafetyModeUserFields' }),
+              (c = { defaultValue: null, kind: 'LocalArgument', name: 'withSuperFollowsUserFields' }),
             ],
             kind: 'Fragment',
             metadata: null,
@@ -37792,8 +37895,8 @@
               {
                 alias: 'dm_message_slice_result',
                 args: [
-                  (c = { kind: 'Variable', name: 'query', variableName: 'query' }),
-                  (u = { kind: 'Literal', name: 's', value: 19 }),
+                  (u = { kind: 'Variable', name: 'query', variableName: 'query' }),
+                  (d = { kind: 'Literal', name: 's', value: 19 }),
                 ],
                 concreteType: null,
                 kind: 'LinkedField',
@@ -37822,14 +37925,14 @@
                                 name: 'dm_event',
                                 plural: !1,
                                 selections: [
-                                  (d = {
+                                  (p = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
                                     name: 'rest_id',
                                     storageKey: null,
                                   }),
-                                  (p = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                  (m = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                                   {
                                     alias: null,
                                     args: null,
@@ -37838,35 +37941,35 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      (m = {
+                                      (g = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'affects_sort',
                                         storageKey: null,
                                       }),
-                                      (g = {
+                                      (y = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'created_at_millis',
                                         storageKey: null,
                                       }),
-                                      (y = {
+                                      (_ = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'request_id',
                                         storageKey: null,
                                       }),
-                                      (_ = {
+                                      (h = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'event_id',
                                         storageKey: null,
                                       }),
-                                      (h = {
+                                      (f = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -37881,8 +37984,8 @@
                                         name: 'conversation',
                                         plural: !1,
                                         selections: [
+                                          m,
                                           p,
-                                          d,
                                           {
                                             alias: null,
                                             args: null,
@@ -37891,7 +37994,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              (f = {
+                                              (v = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -37906,15 +38009,15 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  f,
-                                                  (v = {
+                                                  v,
+                                                  (k = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'conversation_type',
                                                     storageKey: null,
                                                   }),
-                                                  (k = {
+                                                  (b = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -37940,11 +38043,11 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              m,
                                                               p,
-                                                              d,
                                                               {
                                                                 kind: 'RequiredField',
-                                                                field: (F = {
+                                                                field: (S = {
                                                                   alias: null,
                                                                   args: null,
                                                                   concreteType: 'ApiUser',
@@ -37952,8 +38055,8 @@
                                                                   name: 'legacy',
                                                                   plural: !1,
                                                                   selections: [
-                                                                    k,
-                                                                    (b = {
+                                                                    b,
+                                                                    (F = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
@@ -37976,7 +38079,7 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  g,
+                                                  y,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -37996,11 +38099,11 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              m,
                                                               p,
-                                                              d,
                                                               {
                                                                 kind: 'RequiredField',
-                                                                field: F,
+                                                                field: S,
                                                                 action: 'THROW',
                                                                 path: 'dm_message_slice_result.items.dm_event.legacy.conversation.legacy.metadata.admin_user_results.result.legacy',
                                                               },
@@ -38022,7 +38125,7 @@
                                                     name: 'avatar',
                                                     plural: !1,
                                                     selections: [
-                                                      p,
+                                                      m,
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -38031,24 +38134,24 @@
                                                         name: 'media_info',
                                                         plural: !1,
                                                         selections: [
-                                                          (C = {
+                                                          (K = {
                                                             kind: 'InlineFragment',
                                                             selections: [
-                                                              (S = {
+                                                              (E = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'original_img_url',
                                                                 storageKey: null,
                                                               }),
-                                                              (E = {
+                                                              (T = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
                                                                 name: 'original_img_width',
                                                                 storageKey: null,
                                                               }),
-                                                              (T = {
+                                                              (C = {
                                                                 alias: null,
                                                                 args: null,
                                                                 kind: 'ScalarField',
@@ -38095,11 +38198,11 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              m,
                                                               p,
-                                                              d,
                                                               {
                                                                 kind: 'RequiredField',
-                                                                field: (L = {
+                                                                field: (x = {
                                                                   alias: null,
                                                                   args: null,
                                                                   concreteType: 'ApiUser',
@@ -38107,16 +38210,16 @@
                                                                   name: 'legacy',
                                                                   plural: !1,
                                                                   selections: [
-                                                                    (K = {
+                                                                    (I = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
                                                                       name: 'id_str',
                                                                       storageKey: null,
                                                                     }),
-                                                                    k,
                                                                     b,
-                                                                    (I = {
+                                                                    F,
+                                                                    (L = {
                                                                       alias: null,
                                                                       args: null,
                                                                       kind: 'ScalarField',
@@ -38139,21 +38242,21 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  (x = {
+                                                  (w = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'last_read_event_id',
                                                     storageKey: null,
                                                   }),
-                                                  (w = {
+                                                  (R = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'join_time_millis',
                                                     storageKey: null,
                                                   }),
-                                                  (R = {
+                                                  (M = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -38163,7 +38266,7 @@
                                                 ],
                                                 storageKey: null,
                                               },
-                                              (M = {
+                                              (A = {
                                                 alias: null,
                                                 args: null,
                                                 concreteType: 'PerspectivalConversationMetadata',
@@ -38171,7 +38274,7 @@
                                                 name: 'perspectival_conversation_metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  x,
+                                                  w,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -38224,7 +38327,7 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
-                                          (A = {
+                                          (O = {
                                             alias: null,
                                             args: null,
                                             concreteType: 'DMInitialLowQualityState',
@@ -38242,43 +38345,43 @@
                                             ],
                                             storageKey: null,
                                           }),
-                                          (O = {
+                                          (D = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_new_one_to_one_convo',
                                             storageKey: null,
                                           }),
-                                          (D = {
+                                          (P = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_spam_hide',
                                             storageKey: null,
                                           }),
-                                          (P = {
+                                          (U = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'marked_as_abuse',
                                             storageKey: null,
                                           }),
-                                          (U = {
+                                          (N = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'message_id',
                                             storageKey: null,
                                           }),
-                                          k,
-                                          (N = {
+                                          b,
+                                          (j = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'possibly_spam',
                                             storageKey: null,
                                           }),
-                                          (j = {
+                                          (B = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -38304,11 +38407,11 @@
                                                   {
                                                     kind: 'InlineFragment',
                                                     selections: [
+                                                      m,
                                                       p,
-                                                      d,
                                                       {
                                                         kind: 'RequiredField',
-                                                        field: F,
+                                                        field: S,
                                                         action: 'THROW',
                                                         path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.users_results.result.legacy',
                                                       },
@@ -38341,11 +38444,11 @@
                                                   {
                                                     kind: 'InlineFragment',
                                                     selections: [
+                                                      m,
                                                       p,
-                                                      d,
                                                       {
                                                         kind: 'RequiredField',
-                                                        field: F,
+                                                        field: S,
                                                         action: 'THROW',
                                                         path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.participants_snapshot_results.result.legacy',
                                                       },
@@ -38378,11 +38481,11 @@
                                                   {
                                                     kind: 'InlineFragment',
                                                     selections: [
+                                                      m,
                                                       p,
-                                                      d,
                                                       {
                                                         kind: 'RequiredField',
-                                                        field: F,
+                                                        field: S,
                                                         action: 'THROW',
                                                         path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.initiating_user_results.result.legacy',
                                                       },
@@ -38404,15 +38507,15 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              (B = {
+                                              (H = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: 'created_at_sec',
                                                 storageKey: null,
                                               }),
-                                              p,
-                                              (H = {
+                                              m,
+                                              (V = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -38432,14 +38535,14 @@
                                                     name: 'attachments',
                                                     plural: !0,
                                                     selections: [
-                                                      (V = {
+                                                      (W = {
                                                         alias: null,
                                                         args: null,
                                                         kind: 'ScalarField',
                                                         name: '__typename',
                                                         storageKey: null,
                                                       }),
-                                                      (ee = {
+                                                      (ne = {
                                                         kind: 'InlineFragment',
                                                         selections: [
                                                           {
@@ -38450,7 +38553,7 @@
                                                             name: 'media',
                                                             plural: !1,
                                                             selections: [
-                                                              p,
+                                                              m,
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -38473,20 +38576,20 @@
                                                                 name: 'media_info',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  V,
+                                                                  W,
                                                                   {
                                                                     kind: 'InlineFragment',
-                                                                    selections: (Q = [
-                                                                      (W = {
+                                                                    selections: (X = [
+                                                                      (q = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
                                                                         name: 'alt_text',
                                                                         storageKey: null,
                                                                       }),
+                                                                      C,
                                                                       T,
                                                                       E,
-                                                                      S,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -38495,7 +38598,7 @@
                                                                         name: 'salient_rect',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          (q = {
+                                                                          (z = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -38516,7 +38619,7 @@
                                                                             name: 'top',
                                                                             storageKey: null,
                                                                           },
-                                                                          (z = {
+                                                                          (G = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -38542,7 +38645,7 @@
                                                                             name: 'palette',
                                                                             plural: !0,
                                                                             selections: [
-                                                                              (G = {
+                                                                              (Y = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -38556,7 +38659,7 @@
                                                                                 kind: 'LinkedField',
                                                                                 name: 'rgb',
                                                                                 plural: !1,
-                                                                                selections: (Y = [
+                                                                                selections: (Q = [
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -38594,7 +38697,7 @@
                                                                   {
                                                                     kind: 'InlineFragment',
                                                                     selections: [
-                                                                      (X = {
+                                                                      (Z = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'AspectRatio',
@@ -38633,17 +38736,17 @@
                                                                         name: 'embeddable',
                                                                         storageKey: null,
                                                                       },
-                                                                      (Z = {
+                                                                      (J = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'ApiImage',
                                                                         kind: 'LinkedField',
                                                                         name: 'preview_image',
                                                                         plural: !1,
-                                                                        selections: Q,
+                                                                        selections: X,
                                                                         storageKey: null,
                                                                       }),
-                                                                      ($ = {
+                                                                      (ee = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: 'VideoVariant',
@@ -38665,7 +38768,7 @@
                                                                             name: 'content_type',
                                                                             storageKey: null,
                                                                           },
-                                                                          (J = {
+                                                                          ($ = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -38688,7 +38791,7 @@
                                                                   },
                                                                   {
                                                                     kind: 'InlineFragment',
-                                                                    selections: [W, X, Z, $],
+                                                                    selections: [q, Z, J, ee],
                                                                     type: 'ApiGif',
                                                                     abstractKey: null,
                                                                   },
@@ -38713,7 +38816,7 @@
                                                             name: 'card',
                                                             plural: !1,
                                                             selections: [
-                                                              d,
+                                                              p,
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -38722,7 +38825,7 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  (te = {
+                                                                  (le = {
                                                                     alias: null,
                                                                     args: null,
                                                                     concreteType: 'LegacyCardBinding',
@@ -38730,7 +38833,7 @@
                                                                     name: 'binding_values',
                                                                     plural: !0,
                                                                     selections: [
-                                                                      (ne = {
+                                                                      (ae = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -38774,9 +38877,9 @@
                                                                                 name: 'alt',
                                                                                 storageKey: null,
                                                                               },
-                                                                              q,
                                                                               z,
-                                                                              J,
+                                                                              G,
+                                                                              $,
                                                                             ],
                                                                             storageKey: null,
                                                                           },
@@ -38797,17 +38900,17 @@
                                                                                 name: 'palette',
                                                                                 plural: !0,
                                                                                 selections: [
-                                                                                  (ae = {
+                                                                                  (te = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: 'ApiMediaEntityColor',
                                                                                     kind: 'LinkedField',
                                                                                     name: 'rgb',
                                                                                     plural: !1,
-                                                                                    selections: Y,
+                                                                                    selections: Q,
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  G,
+                                                                                  Y,
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
@@ -38850,7 +38953,7 @@
                                                                             name: 'user_value',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              K,
+                                                                              I,
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -38867,7 +38970,7 @@
                                                                     ],
                                                                     storageKey: null,
                                                                   }),
-                                                                  (le = {
+                                                                  (ie = {
                                                                     alias: null,
                                                                     args: null,
                                                                     concreteType: 'ApiCardPlatform',
@@ -38898,7 +39001,7 @@
                                                                                 name: 'bucket',
                                                                                 storageKey: null,
                                                                               },
-                                                                              k,
+                                                                              b,
                                                                             ],
                                                                             storageKey: null,
                                                                           },
@@ -38910,7 +39013,7 @@
                                                                             name: 'device',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              k,
+                                                                              b,
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -38927,8 +39030,8 @@
                                                                     ],
                                                                     storageKey: null,
                                                                   }),
-                                                                  k,
-                                                                  J,
+                                                                  b,
+                                                                  $,
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -38937,8 +39040,8 @@
                                                                     name: 'user_refs',
                                                                     plural: !0,
                                                                     selections: [
+                                                                      m,
                                                                       p,
-                                                                      d,
                                                                       {
                                                                         alias: 'affiliates_highlighted_label',
                                                                         args: null,
@@ -38955,7 +39058,7 @@
                                                                             name: 'label',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              (re = {
+                                                                              (se = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 concreteType: 'TimelineUrl',
@@ -38963,28 +39066,28 @@
                                                                                 name: 'url',
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                  (ie = {
+                                                                                  (re = {
                                                                                     alias: 'urlType',
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
                                                                                     name: 'url_type',
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  J,
+                                                                                  $,
                                                                                 ],
                                                                                 storageKey: null,
                                                                               }),
-                                                                              (se = {
+                                                                              (oe = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 concreteType: 'BadgeInfo',
                                                                                 kind: 'LinkedField',
                                                                                 name: 'badge',
                                                                                 plural: !1,
-                                                                                selections: [J],
+                                                                                selections: [$],
                                                                                 storageKey: null,
                                                                               }),
-                                                                              (oe = {
+                                                                              (ce = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -38999,21 +39102,21 @@
                                                                                 name: 'long_description',
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                  (ce = {
+                                                                                  (ue = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
                                                                                     name: 'alignment',
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  (ue = {
+                                                                                  (de = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     kind: 'ScalarField',
                                                                                     name: 'rtl',
                                                                                     storageKey: null,
                                                                                   }),
-                                                                                  H,
+                                                                                  V,
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -39023,21 +39126,21 @@
                                                                                     name: 'entities',
                                                                                     plural: !0,
                                                                                     selections: [
-                                                                                      (de = {
+                                                                                      (pe = {
                                                                                         alias: 'fromIndex',
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
                                                                                         name: 'from_index',
                                                                                         storageKey: null,
                                                                                       }),
-                                                                                      (pe = {
+                                                                                      (me = {
                                                                                         alias: 'toIndex',
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
                                                                                         name: 'to_index',
                                                                                         storageKey: null,
                                                                                       }),
-                                                                                      (me = {
+                                                                                      (ge = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         kind: 'ScalarField',
@@ -39052,36 +39155,36 @@
                                                                                         name: 'ref',
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                          (ge = {
+                                                                                          (ye = {
                                                                                             alias: 'type',
                                                                                             args: null,
                                                                                             kind: 'ScalarField',
                                                                                             name: '__typename',
                                                                                             storageKey: null,
                                                                                           }),
-                                                                                          (_e = {
-                                                                                            kind: 'InlineFragment',
-                                                                                            selections: (ye = [H]),
-                                                                                            type: 'TimelineRichTextCashtag',
-                                                                                            abstractKey: null,
-                                                                                          }),
                                                                                           (he = {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: [p, J],
-                                                                                            type: 'TimelineRichTextList',
+                                                                                            selections: (_e = [V]),
+                                                                                            type: 'TimelineRichTextCashtag',
                                                                                             abstractKey: null,
                                                                                           }),
                                                                                           (fe = {
                                                                                             kind: 'InlineFragment',
-                                                                                            selections: ye,
-                                                                                            type: 'TimelineRichTextHashtag',
+                                                                                            selections: [m, $],
+                                                                                            type: 'TimelineRichTextList',
                                                                                             abstractKey: null,
                                                                                           }),
                                                                                           (ve = {
                                                                                             kind: 'InlineFragment',
+                                                                                            selections: _e,
+                                                                                            type: 'TimelineRichTextHashtag',
+                                                                                            abstractKey: null,
+                                                                                          }),
+                                                                                          (ke = {
+                                                                                            kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              J,
-                                                                                              ie,
+                                                                                              $,
+                                                                                              re,
                                                                                               {
                                                                                                 alias:
                                                                                                   'urtEndpointOptions',
@@ -39123,7 +39226,7 @@
                                                                                                     name: 'request_params',
                                                                                                     plural: !0,
                                                                                                     selections: [
-                                                                                                      ne,
+                                                                                                      ae,
                                                                                                       {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -39162,13 +39265,13 @@
                                                                                                     name: 'result',
                                                                                                     plural: !1,
                                                                                                     selections: [
-                                                                                                      V,
+                                                                                                      W,
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
                                                                                                           {
                                                                                                             kind: 'RequiredField',
-                                                                                                            field: (ke =
+                                                                                                            field: (be =
                                                                                                               {
                                                                                                                 alias:
                                                                                                                   null,
@@ -39180,7 +39283,7 @@
                                                                                                                 plural:
                                                                                                                   !1,
                                                                                                                 selections:
-                                                                                                                  [b],
+                                                                                                                  [F],
                                                                                                                 storageKey:
                                                                                                                   null,
                                                                                                               }),
@@ -39188,13 +39291,13 @@
                                                                                                               'THROW',
                                                                                                             path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.affiliates_highlighted_label.label.longDescription.entities.ref.user_results.result.legacy',
                                                                                                           },
-                                                                                                          d,
+                                                                                                          p,
                                                                                                         ],
                                                                                                         type: 'User',
                                                                                                         abstractKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      (be = {
+                                                                                                      (Fe = {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
                                                                                                           {
@@ -39232,7 +39335,7 @@
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              b,
+                                                                                              F,
                                                                                               {
                                                                                                 alias:
                                                                                                   'mention_results',
@@ -39251,24 +39354,24 @@
                                                                                                     name: 'result',
                                                                                                     plural: !1,
                                                                                                     selections: [
-                                                                                                      V,
+                                                                                                      W,
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
                                                                                                           {
                                                                                                             kind: 'RequiredField',
-                                                                                                            field: ke,
+                                                                                                            field: be,
                                                                                                             action:
                                                                                                               'THROW',
                                                                                                             path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.affiliates_highlighted_label.label.longDescription.entities.ref.mention_results.result.legacy',
                                                                                                           },
-                                                                                                          d,
+                                                                                                          p,
                                                                                                         ],
                                                                                                         type: 'User',
                                                                                                         abstractKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      be,
+                                                                                                      Fe,
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
@@ -39288,7 +39391,7 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
-                                                                              (Fe = {
+                                                                              (Se = {
                                                                                 alias: 'userLabelType',
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39301,7 +39404,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (Se = {
+                                                                      (Ee = {
                                                                         condition: 'withDmMuting',
                                                                         kind: 'Condition',
                                                                         passingValue: !0,
@@ -39315,7 +39418,7 @@
                                                                           },
                                                                         ],
                                                                       }),
-                                                                      (Ee = {
+                                                                      (Te = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -39334,7 +39437,7 @@
                                                                           selections: [
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Te = {
+                                                                              field: (Ce = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39346,7 +39449,7 @@
                                                                             },
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Ce = {
+                                                                              field: (Ke = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39356,50 +39459,50 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.blocking',
                                                                             },
-                                                                            (Ke = {
+                                                                            (Ie = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'can_dm',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Ie = {
+                                                                            (Le = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'can_media_tag',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Le = {
+                                                                            (xe = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'created_at',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (xe = {
+                                                                            (we = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'default_profile',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (we = {
+                                                                            (Re = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'default_profile_image',
                                                                               storageKey: null,
                                                                             }),
-                                                                            oe,
-                                                                            (Ae = {
+                                                                            ce,
+                                                                            (Oe = {
                                                                               alias: null,
                                                                               args: null,
                                                                               concreteType: 'UserEntities',
                                                                               kind: 'LinkedField',
                                                                               name: 'entities',
                                                                               plural: !1,
-                                                                              selections: (Me = [
+                                                                              selections: (Ae = [
                                                                                 {
                                                                                   alias: null,
                                                                                   args: null,
@@ -39407,7 +39510,7 @@
                                                                                   kind: 'LinkedField',
                                                                                   name: 'description',
                                                                                   plural: !1,
-                                                                                  selections: (Re = [
+                                                                                  selections: (Me = [
                                                                                     {
                                                                                       alias: null,
                                                                                       args: null,
@@ -39430,7 +39533,7 @@
                                                                                           name: 'expanded_url',
                                                                                           storageKey: null,
                                                                                         },
-                                                                                        J,
+                                                                                        $,
                                                                                         {
                                                                                           alias: null,
                                                                                           args: null,
@@ -39451,13 +39554,13 @@
                                                                                   kind: 'LinkedField',
                                                                                   name: 'url',
                                                                                   plural: !1,
-                                                                                  selections: Re,
+                                                                                  selections: Me,
                                                                                   storageKey: null,
                                                                                 },
                                                                               ]),
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Oe = {
+                                                                            (De = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39466,7 +39569,7 @@
                                                                             }),
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (De = {
+                                                                              field: (Pe = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39478,7 +39581,7 @@
                                                                             },
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Pe = {
+                                                                              field: (Ue = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39488,7 +39591,7 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.follow_request_sent',
                                                                             },
-                                                                            (Ue = {
+                                                                            (Ne = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39497,7 +39600,7 @@
                                                                             }),
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Ne = {
+                                                                              field: (je = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39509,7 +39612,7 @@
                                                                             },
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (je = {
+                                                                              field: (Be = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39521,7 +39624,7 @@
                                                                             },
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Be = {
+                                                                              field: (He = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39533,7 +39636,7 @@
                                                                             },
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (He = {
+                                                                              field: (Ve = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39543,28 +39646,28 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.friends_count',
                                                                             },
-                                                                            (Ve = {
+                                                                            (We = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'has_custom_timelines',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (We = {
+                                                                            (qe = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'is_translator',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (qe = {
+                                                                            (ze = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'listed_count',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (ze = {
+                                                                            (Ge = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39573,7 +39676,7 @@
                                                                             }),
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (Ge = {
+                                                                              field: (Ye = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39583,50 +39686,50 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.media_count',
                                                                             },
-                                                                            (Ye = {
+                                                                            (Qe = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'muting',
                                                                               storageKey: null,
                                                                             }),
-                                                                            k,
-                                                                            (Qe = {
+                                                                            b,
+                                                                            (Xe = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'needs_phone_verification',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Xe = {
+                                                                            (Ze = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'normal_followers_count',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Ze = {
+                                                                            (Je = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'notifications',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (Je = {
+                                                                            ($e = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'pinned_tweet_ids_str',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (en = {
+                                                                            (nn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               concreteType: 'ApiMediaExtensions',
                                                                               kind: 'LinkedField',
                                                                               name: 'profile_banner_extensions',
                                                                               plural: !1,
-                                                                              selections: ($e = [
+                                                                              selections: (en = [
                                                                                 {
                                                                                   alias: null,
                                                                                   args: null,
@@ -39662,7 +39765,7 @@
                                                                                               kind: 'LinkedField',
                                                                                               name: 'palette',
                                                                                               plural: !0,
-                                                                                              selections: [G, ae],
+                                                                                              selections: [Y, te],
                                                                                               storageKey: null,
                                                                                             },
                                                                                           ],
@@ -39677,25 +39780,25 @@
                                                                               ]),
                                                                               storageKey: null,
                                                                             }),
-                                                                            (nn = {
+                                                                            (an = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'profile_banner_url',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (an = {
+                                                                            (tn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               concreteType: 'ApiMediaExtensions',
                                                                               kind: 'LinkedField',
                                                                               name: 'profile_image_extensions',
                                                                               plural: !1,
-                                                                              selections: $e,
+                                                                              selections: en,
                                                                               storageKey: null,
                                                                             }),
-                                                                            I,
-                                                                            (tn = {
+                                                                            L,
+                                                                            (ln = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39704,7 +39807,7 @@
                                                                             }),
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (ln = {
+                                                                              field: (rn = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39714,10 +39817,10 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.protected',
                                                                             },
-                                                                            b,
+                                                                            F,
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (rn = {
+                                                                              field: (sn = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39727,22 +39830,22 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.statuses_count',
                                                                             },
-                                                                            (sn = {
+                                                                            (on = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'time_zone',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (on = {
+                                                                            (cn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'translator_type',
                                                                               storageKey: null,
                                                                             }),
-                                                                            J,
-                                                                            (cn = {
+                                                                            $,
+                                                                            (un = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39751,7 +39854,7 @@
                                                                             }),
                                                                             {
                                                                               kind: 'RequiredField',
-                                                                              field: (un = {
+                                                                              field: (dn = {
                                                                                 alias: null,
                                                                                 args: null,
                                                                                 kind: 'ScalarField',
@@ -39761,38 +39864,38 @@
                                                                               action: 'THROW',
                                                                               path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.attachments.card.legacy.user_refs.legacy.verified',
                                                                             },
-                                                                            (dn = {
+                                                                            (pn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'want_retweets',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (pn = {
+                                                                            (mn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'withheld_description',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (mn = {
+                                                                            (gn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               concreteType: 'UserEntities',
                                                                               kind: 'LinkedField',
                                                                               name: 'withheld_entities',
                                                                               plural: !1,
-                                                                              selections: Me,
+                                                                              selections: Ae,
                                                                               storageKey: null,
                                                                             }),
-                                                                            (gn = {
+                                                                            (yn = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
                                                                               name: 'withheld_in_countries',
                                                                               storageKey: null,
                                                                             }),
-                                                                            (yn = {
+                                                                            (_n = {
                                                                               alias: null,
                                                                               args: null,
                                                                               kind: 'ScalarField',
@@ -39813,15 +39916,15 @@
                                                                         name: 'professional',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          d,
-                                                                          (_n = {
+                                                                          p,
+                                                                          (hn = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'professional_type',
                                                                             storageKey: null,
                                                                           }),
-                                                                          (hn = {
+                                                                          (fn = {
                                                                             alias: null,
                                                                             args: null,
                                                                             concreteType: 'BusinessCategory',
@@ -39829,8 +39932,8 @@
                                                                             name: 'category',
                                                                             plural: !0,
                                                                             selections: [
-                                                                              p,
-                                                                              k,
+                                                                              m,
+                                                                              b,
                                                                               {
                                                                                 alias: null,
                                                                                 args: null,
@@ -39844,7 +39947,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (fn = {
+                                                                      (vn = {
                                                                         condition: 'withSafetyModeUserFields',
                                                                         kind: 'Condition',
                                                                         passingValue: !0,
@@ -39872,7 +39975,7 @@
                                                                           },
                                                                         ],
                                                                       }),
-                                                                      (vn = {
+                                                                      (kn = {
                                                                         condition: 'withSuperFollowsUserFields',
                                                                         kind: 'Condition',
                                                                         passingValue: !0,
@@ -39937,11 +40040,11 @@
                                                       {
                                                         kind: 'InlineFragment',
                                                         selections: [
+                                                          m,
                                                           p,
-                                                          d,
                                                           {
                                                             kind: 'RequiredField',
-                                                            field: F,
+                                                            field: S,
                                                             action: 'THROW',
                                                             path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.recipient_results.result.legacy',
                                                           },
@@ -39974,11 +40077,11 @@
                                                       {
                                                         kind: 'InlineFragment',
                                                         selections: [
+                                                          m,
                                                           p,
-                                                          d,
                                                           {
                                                             kind: 'RequiredField',
-                                                            field: F,
+                                                            field: S,
                                                             action: 'THROW',
                                                             path: 'dm_message_slice_result.items.dm_event.legacy.event_detail.dm.sender_results.result.legacy',
                                                           },
@@ -40004,6 +40107,31 @@
                                 ],
                                 storageKey: null,
                               },
+                              (bn = {
+                                condition: 'withMessageQueryHighlights',
+                                kind: 'Condition',
+                                passingValue: !0,
+                                selections: [
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'DMHighlighting',
+                                    kind: 'LinkedField',
+                                    name: 'highlighting',
+                                    plural: !1,
+                                    selections: [
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'query_tokens',
+                                        storageKey: null,
+                                      },
+                                    ],
+                                    storageKey: null,
+                                  },
+                                ],
+                              }),
                             ],
                             type: 'DMMessageSearchItem',
                             abstractKey: null,
@@ -40011,7 +40139,7 @@
                         ],
                         storageKey: null,
                       },
-                      (kn = {
+                      (Fn = {
                         alias: null,
                         args: null,
                         concreteType: 'SliceInfo',
@@ -40037,19 +40165,19 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: [t, l, i, o, s, r],
+            argumentDefinitions: [t, l, i, s, c, o, r],
             kind: 'Operation',
             name: 'DMMessageSearchTabQuery',
             selections: [
               {
                 alias: null,
-                args: (bn = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }, c, u]),
+                args: (Sn = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }, u, d]),
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'dm_message_slice_result',
                 plural: !1,
                 selections: [
-                  V,
+                  W,
                   {
                     kind: 'InlineFragment',
                     selections: [
@@ -40061,7 +40189,7 @@
                         name: 'items',
                         plural: !0,
                         selections: [
-                          V,
+                          W,
                           {
                             kind: 'InlineFragment',
                             selections: [
@@ -40073,8 +40201,8 @@
                                 name: 'dm_event',
                                 plural: !1,
                                 selections: [
-                                  d,
                                   p,
+                                  m,
                                   {
                                     alias: null,
                                     args: null,
@@ -40083,11 +40211,11 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      m,
                                       g,
                                       y,
                                       _,
                                       h,
+                                      f,
                                       {
                                         alias: null,
                                         args: null,
@@ -40096,8 +40224,8 @@
                                         name: 'conversation',
                                         plural: !1,
                                         selections: [
+                                          m,
                                           p,
-                                          d,
                                           {
                                             alias: null,
                                             args: null,
@@ -40106,7 +40234,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              f,
+                                              v,
                                               {
                                                 alias: null,
                                                 args: null,
@@ -40115,9 +40243,9 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  f,
                                                   v,
                                                   k,
+                                                  b,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -40125,7 +40253,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'created_by_user_results',
                                                     plural: !1,
-                                                    selections: (En = [
+                                                    selections: (Cn = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -40134,14 +40262,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          V,
+                                                          W,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              m,
                                                               p,
-                                                              d,
-                                                              F,
-                                                              (Fn = {
+                                                              S,
+                                                              (En = {
                                                                 alias: null,
                                                                 args: null,
                                                                 filters: null,
@@ -40157,7 +40285,7 @@
                                                         ],
                                                         storageKey: null,
                                                       },
-                                                      (Sn = {
+                                                      (Tn = {
                                                         alias: null,
                                                         args: null,
                                                         filters: null,
@@ -40169,7 +40297,7 @@
                                                     ]),
                                                     storageKey: null,
                                                   },
-                                                  g,
+                                                  y,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -40177,7 +40305,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'admin_user_results',
                                                     plural: !1,
-                                                    selections: En,
+                                                    selections: Cn,
                                                     storageKey: null,
                                                   },
                                                   {
@@ -40188,7 +40316,7 @@
                                                     name: 'avatar',
                                                     plural: !1,
                                                     selections: [
-                                                      p,
+                                                      m,
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -40196,7 +40324,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'media_info',
                                                         plural: !1,
-                                                        selections: [V, C],
+                                                        selections: [W, K],
                                                         storageKey: null,
                                                       },
                                                     ],
@@ -40229,27 +40357,27 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          V,
+                                                          W,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [p, d, L, Fn],
+                                                            selections: [m, p, x, En],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
                                                         ],
                                                         storageKey: null,
                                                       },
-                                                      Sn,
+                                                      Tn,
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  x,
                                                   w,
                                                   R,
+                                                  M,
                                                 ],
                                                 storageKey: null,
                                               },
-                                              M,
+                                              A,
                                             ],
                                             storageKey: null,
                                           },
@@ -40264,14 +40392,14 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
-                                          A,
                                           O,
                                           D,
                                           P,
                                           U,
-                                          k,
                                           N,
+                                          b,
                                           j,
+                                          B,
                                           {
                                             alias: null,
                                             args: null,
@@ -40279,7 +40407,7 @@
                                             kind: 'LinkedField',
                                             name: 'users_results',
                                             plural: !0,
-                                            selections: En,
+                                            selections: Cn,
                                             storageKey: null,
                                           },
                                           {
@@ -40289,7 +40417,7 @@
                                             kind: 'LinkedField',
                                             name: 'participants_snapshot_results',
                                             plural: !0,
-                                            selections: En,
+                                            selections: Cn,
                                             storageKey: null,
                                           },
                                           {
@@ -40299,7 +40427,7 @@
                                             kind: 'LinkedField',
                                             name: 'initiating_user_results',
                                             plural: !1,
-                                            selections: En,
+                                            selections: Cn,
                                             storageKey: null,
                                           },
                                           {
@@ -40310,9 +40438,9 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              B,
-                                              p,
                                               H,
+                                              m,
+                                              V,
                                               {
                                                 condition: 'withAttachments',
                                                 kind: 'Condition',
@@ -40326,8 +40454,8 @@
                                                     name: 'attachments',
                                                     plural: !0,
                                                     selections: [
-                                                      V,
-                                                      ee,
+                                                      W,
+                                                      ne,
                                                       {
                                                         kind: 'InlineFragment',
                                                         selections: [
@@ -40339,7 +40467,7 @@
                                                             name: 'card',
                                                             plural: !1,
                                                             selections: [
-                                                              d,
+                                                              p,
                                                               {
                                                                 alias: null,
                                                                 args: null,
@@ -40348,10 +40476,10 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  te,
                                                                   le,
-                                                                  k,
-                                                                  J,
+                                                                  ie,
+                                                                  b,
+                                                                  $,
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -40360,8 +40488,8 @@
                                                                     name: 'user_refs',
                                                                     plural: !0,
                                                                     selections: [
+                                                                      m,
                                                                       p,
-                                                                      d,
                                                                       {
                                                                         alias: 'affiliates_highlighted_label',
                                                                         args: null,
@@ -40378,9 +40506,9 @@
                                                                             name: 'label',
                                                                             plural: !1,
                                                                             selections: [
-                                                                              re,
                                                                               se,
                                                                               oe,
+                                                                              ce,
                                                                               {
                                                                                 alias: 'longDescription',
                                                                                 args: null,
@@ -40389,9 +40517,9 @@
                                                                                 name: 'long_description',
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                  ce,
                                                                                   ue,
-                                                                                  H,
+                                                                                  de,
+                                                                                  V,
                                                                                   {
                                                                                     alias: null,
                                                                                     args: null,
@@ -40401,9 +40529,9 @@
                                                                                     name: 'entities',
                                                                                     plural: !0,
                                                                                     selections: [
-                                                                                      de,
                                                                                       pe,
                                                                                       me,
+                                                                                      ge,
                                                                                       {
                                                                                         alias: null,
                                                                                         args: null,
@@ -40412,17 +40540,17 @@
                                                                                         name: 'ref',
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                          V,
+                                                                                          W,
                                                                                           {
                                                                                             kind: 'TypeDiscriminator',
                                                                                             abstractKey:
                                                                                               '__isTimelineReferenceObject',
                                                                                           },
-                                                                                          ge,
-                                                                                          _e,
+                                                                                          ye,
                                                                                           he,
                                                                                           fe,
                                                                                           ve,
+                                                                                          ke,
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
@@ -40434,7 +40562,7 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: (Tn = [
+                                                                                                selections: (Kn = [
                                                                                                   {
                                                                                                     alias: null,
                                                                                                     args: null,
@@ -40443,20 +40571,20 @@
                                                                                                     name: 'result',
                                                                                                     plural: !1,
                                                                                                     selections: [
-                                                                                                      V,
+                                                                                                      W,
                                                                                                       {
                                                                                                         kind: 'InlineFragment',
                                                                                                         selections: [
-                                                                                                          ke,
-                                                                                                          Fn,
-                                                                                                          d,
+                                                                                                          be,
+                                                                                                          En,
                                                                                                           p,
+                                                                                                          m,
                                                                                                         ],
                                                                                                         type: 'User',
                                                                                                         abstractKey:
                                                                                                           null,
                                                                                                       },
-                                                                                                      be,
+                                                                                                      Fe,
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                   },
@@ -40470,7 +40598,7 @@
                                                                                           {
                                                                                             kind: 'InlineFragment',
                                                                                             selections: [
-                                                                                              b,
+                                                                                              F,
                                                                                               {
                                                                                                 alias:
                                                                                                   'mention_results',
@@ -40480,7 +40608,7 @@
                                                                                                 kind: 'LinkedField',
                                                                                                 name: 'user_results',
                                                                                                 plural: !1,
-                                                                                                selections: Tn,
+                                                                                                selections: Kn,
                                                                                                 storageKey: null,
                                                                                               },
                                                                                             ],
@@ -40496,15 +40624,15 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                               },
-                                                                              Fe,
+                                                                              Se,
                                                                             ],
                                                                             storageKey: null,
                                                                           },
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      Se,
                                                                       Ee,
+                                                                      Te,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -40513,15 +40641,14 @@
                                                                         name: 'legacy',
                                                                         plural: !1,
                                                                         selections: [
-                                                                          Te,
                                                                           Ce,
                                                                           Ke,
                                                                           Ie,
                                                                           Le,
                                                                           xe,
                                                                           we,
-                                                                          oe,
-                                                                          Ae,
+                                                                          Re,
+                                                                          ce,
                                                                           Oe,
                                                                           De,
                                                                           Pe,
@@ -40536,33 +40663,34 @@
                                                                           ze,
                                                                           Ge,
                                                                           Ye,
-                                                                          k,
                                                                           Qe,
+                                                                          b,
                                                                           Xe,
                                                                           Ze,
                                                                           Je,
-                                                                          en,
+                                                                          $e,
                                                                           nn,
                                                                           an,
-                                                                          I,
                                                                           tn,
+                                                                          L,
                                                                           ln,
-                                                                          b,
                                                                           rn,
+                                                                          F,
                                                                           sn,
                                                                           on,
-                                                                          J,
                                                                           cn,
+                                                                          $,
                                                                           un,
                                                                           dn,
                                                                           pn,
                                                                           mn,
                                                                           gn,
                                                                           yn,
+                                                                          _n,
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      Fn,
+                                                                      En,
                                                                       {
                                                                         alias: null,
                                                                         args: null,
@@ -40570,11 +40698,11 @@
                                                                         kind: 'LinkedField',
                                                                         name: 'professional',
                                                                         plural: !1,
-                                                                        selections: [d, _n, hn, p],
+                                                                        selections: [p, hn, fn, m],
                                                                         storageKey: null,
                                                                       },
-                                                                      fn,
                                                                       vn,
+                                                                      kn,
                                                                     ],
                                                                     storageKey: null,
                                                                   },
@@ -40593,7 +40721,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                               },
-                                                              p,
+                                                              m,
                                                             ],
                                                             storageKey: null,
                                                           },
@@ -40613,7 +40741,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'recipient_results',
                                                 plural: !1,
-                                                selections: En,
+                                                selections: Cn,
                                                 storageKey: null,
                                               },
                                               {
@@ -40623,7 +40751,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'sender_results',
                                                 plural: !1,
-                                                selections: En,
+                                                selections: Cn,
                                                 storageKey: null,
                                               },
                                             ],
@@ -40638,6 +40766,7 @@
                                 ],
                                 storageKey: null,
                               },
+                              bn,
                             ],
                             type: 'DMMessageSearchItem',
                             abstractKey: null,
@@ -40645,7 +40774,7 @@
                         ],
                         storageKey: null,
                       },
-                      kn,
+                      Fn,
                     ],
                     type: 'DMMessageSlice',
                     abstractKey: null,
@@ -40655,7 +40784,7 @@
               },
               {
                 alias: null,
-                args: bn,
+                args: Sn,
                 filters: ['query', 's'],
                 handle: 'slice',
                 key: 'DMMessageSearchTabQuery_dm_message_slice_result',
@@ -40665,14 +40794,14 @@
             ],
           },
           params: {
-            id: 'dwe8pudI0w7gOinDfFC0fQ',
+            id: 'xBiqai6wRDHzTJWA3o5RnQ',
             metadata: { sliceInfoPath: ['dm_message_slice_result', 'slice_info'] },
             name: 'DMMessageSearchTabQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(Cn.hash = '43f462e52881e76aa030f8d291ff5d5a'), (e.exports = Cn)
+      ;(In.hash = 'ce6fb97d9798378904193bb452a54b1a'), (e.exports = In)
     },
     yV8l: function (e, n, a) {
       'use strict'

@@ -521,7 +521,7 @@
         s = n('MWbm'),
         l = n('cHvH'),
         u = n('rHpw'),
-        d = n('jhWN'),
+        d = n('oSwX'),
         m = n('j7Bv'),
         p = n('6OUF'),
         h = n('yTN1'),
@@ -540,7 +540,7 @@
             s.a,
             { style: [w.root, v] },
             o
-              ? i.a.createElement(d.a, { size: E ? 'xxxLarge' : 'xLarge', uri: o })
+              ? i.a.createElement(d.default, { size: E ? 'xxxLarge' : 'xLarge', uri: o })
               : i.a.createElement(m.a, { Icon: c.a }),
             r
               ? i.a.createElement(
@@ -658,7 +658,7 @@
         c = n('lUZE'),
         s = n('MWbm'),
         l = n('t62R'),
-        u = n('jhWN'),
+        u = n('oSwX'),
         d = n('j7Bv'),
         m = n('rHpw'),
         p = r.a.d2fb334b,
@@ -672,7 +672,7 @@
             { style: [b.signature, a] },
             i.a.createElement(l.b, { color: 'gray700', weight: 'bold' }, h({ screenName: null != n ? n : p })),
             t
-              ? i.a.createElement(u.a, { size: 'medium', uri: t })
+              ? i.a.createElement(u.default, { size: 'medium', uri: t })
               : i.a.createElement(d.a, { Icon: c.a, size: 'medium' }),
           )
         },
@@ -1152,15 +1152,15 @@
           j = e.style,
           O = e.testIDs,
           K = e.withCount && 'number' == typeof r,
-          N = b ? S : k
-        K && (N = b ? T({ count: r }) : R({ count: r }))
-        var U = P({ isLiked: b, likeTransitionAnimation: I })
+          U = b ? S : k
+        K && (U = b ? T({ count: r }) : R({ count: r }))
+        var N = P({ isLiked: b, likeTransitionAnimation: I })
         return u.a.createElement(
           v.a,
-          i()({}, U, {
+          i()({}, N, {
             ActiveIcon: E.a,
             Icon: g.a,
-            accessibilityLabel: N,
+            accessibilityLabel: U,
             actionIconContainerRef: L,
             activeColor: a,
             behavioralEventContext: { viewType: 'like', viewState: { type: 'toggleable', toggledTo: !b } },
@@ -1473,8 +1473,8 @@
         }
       O.metadata = { width: 24, height: 24 }
       var K = O,
-        N = n('IqLm'),
-        U = y.a.d2b2b8e5,
+        U = n('IqLm'),
+        N = y.a.d2b2b8e5,
         V = y.a.hcb3286f,
         J = y.a.cb5dafd3
       function X() {
@@ -1810,8 +1810,8 @@
             j = B[1],
             O = m.a.useState(!1),
             K = r()(O, 2),
-            N = K[0],
-            U = K[1],
+            U = K[0],
+            N = K[1],
             V = m.a.useRef(null),
             J = m.a.useRef()
           Object(Y.b)()
@@ -1846,7 +1846,7 @@
               }),
               t),
             ae = function (e) {
-              U(e === ce.a.longPress), null == b || b(e)
+              N(e === ce.a.longPress), null == b || b(e)
             },
             re = function () {
               j(!0)
@@ -1941,7 +1941,7 @@
               m.a.createElement(
                 se.a,
                 {
-                  anchorRef: N ? x : J,
+                  anchorRef: U ? x : J,
                   animationDuration: 'normal',
                   animationType: 'slide',
                   contentStyle: Be.popoverContainer,
@@ -2023,8 +2023,8 @@
         je = n('HSMM'),
         Oe = n('Wk1j'),
         Ke = n('G41x'),
-        Ne = ['isFromProtectedAccount'],
-        Ue = p.a,
+        Ue = ['isFromProtectedAccount'],
+        Ne = p.a,
         Ve = function (e) {
           var t = e.activeColor,
             n = void 0 === t ? 'orange500' : t,
@@ -2044,7 +2044,7 @@
             x = e.style,
             S = e.testIDs,
             R = e.withCount && 'number' == typeof i,
-            T = d ? J : U,
+            T = d ? J : N,
             P = (function (e) {
               var t = e.downvoteTransitionAnimation,
                 n = e.isDownvoted,
@@ -2073,14 +2073,14 @@
             g.a,
             s()({}, P, {
               ActiveIcon: K,
-              Icon: N.a,
+              Icon: U.a,
               accessibilityLabel: T,
               activeColor: n,
               behavioralEventContext: { viewType: 'downvote', viewState: { type: 'toggleable', toggledTo: !d } },
               color: a,
               count: i,
               enableKeyboardShortcuts: o,
-              hoverLabel: { label: d ? V : U },
+              hoverLabel: { label: d ? V : N },
               iconSize: c,
               isActive: d,
               isDisabled: l,
@@ -2171,9 +2171,9 @@
           j = e.renderShareAction,
           O = void 0 === j ? dt : j,
           K = e.replyCount,
-          N = e.retweetCount,
-          U = e.showDownvoteBeforeLike,
-          V = void 0 !== U && U,
+          U = e.retweetCount,
+          N = e.showDownvoteBeforeLike,
+          V = void 0 !== N && N,
           J = e.style,
           X = e.tweetLink,
           q = e.withAnalytics,
@@ -2207,7 +2207,7 @@
                 return Object(Qe.a)(
                   [
                     K ? e({ replyCount: K }) : null,
-                    N ? t({ retweetCount: N }) : null,
+                    U ? t({ retweetCount: U }) : null,
                     E ? at : null,
                     C && !ee ? n({ likeCount: C }) : null,
                     g && !ee ? et : null,
@@ -2219,7 +2219,7 @@
                 )
               }
             },
-            [v, g, E, C, ue, S, K, N, _, Z, ee],
+            [v, g, E, C, ue, S, K, U, _, Z, ee],
           ),
           me = { color: s, iconSize: n, isDisabled: f },
           pe = function () {
@@ -2257,7 +2257,7 @@
                 {},
                 {
                   activeColor: o,
-                  count: N,
+                  count: U,
                   enableKeyboardShortcuts: p,
                   isFromProtectedAccount: w,
                   isRetweeted: E,
@@ -2323,7 +2323,7 @@
           ie ? m.a.createElement(te.a, { style: ht.swipeInfoBar }, m.a.createElement(Ye.a, { color: s }, it)) : null,
         )
       }
-      ;(pt.ActionAnalytics = Ue),
+      ;(pt.ActionAnalytics = Ne),
         (pt.ActionDownvote = Ve),
         (pt.ActionLike = Je),
         (pt.ActionReaction = Xe),
@@ -2331,7 +2331,7 @@
         (pt.ActionRetweet = function (e) {
           var t = e.isFromProtectedAccount,
             n = void 0 !== t && t,
-            a = u()(e, Ne)
+            a = u()(e, Ue)
           return m.a.createElement(
             Oe.b,
             s()({}, a, {
@@ -2367,7 +2367,7 @@
         l = n('3XMw'),
         u = n.n(l),
         d = (n('ho0z'), n('MWbm')),
-        m = n('jhWN'),
+        m = n('oSwX'),
         p = n('jV+4'),
         h = n('9VO7'),
         f = n('a2Fh'),
@@ -2500,7 +2500,11 @@
                   s.a.createElement(
                     d.a,
                     { style: g.mockFocalTweet },
-                    s.a.createElement(d.a, null, s.a.createElement(m.a, { focusable: !1, size: 'xLarge', uri: t })),
+                    s.a.createElement(
+                      d.a,
+                      null,
+                      s.a.createElement(m.default, { focusable: !1, size: 'xLarge', uri: t }),
+                    ),
                     s.a.createElement(
                       d.a,
                       { style: g.mockFocalTweetContent },

@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(308).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1484,13 +1484,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'People can’t mention you again in this conversation and you won’t receive further notifications.',
           ),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
+          a('e25a0c3a', 'Promoted Tweet'),
           a('ddf0ba7e', 'Collection'),
           a('e63ff1d5', 'Tweets I’ve liked'),
           a('a42f33ba', 'Tweets by account'),
           a('e8177e5d', 'Tweet search'),
           a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
           a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
-          a('e25a0c3a', 'Promoted Tweet'),
           a('de128a2f', 'Turn on Tweet notifications'),
           a('aa6f3ca4', 'Turn off Tweet notifications'),
           a('j87c21f4', 'Notify'),
@@ -1929,13 +1929,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e96677aa', 'Unfortunately, Birdwatch is not available to you at this time.'),
           a('f026d2ee', 'Birdwatch is currently only available in the U.S.'),
           a('f8fc0b47', 'Create a Folder'),
-          a('j45c642d', 'Folders aren’t loading right now'),
           a('adad5408', 'New folder'),
           a('be329aab', 'Bookmark Tweets to save them for later'),
           a(
             'j0a47c9c',
             'Need more time to write a clever response or just want to save a Tweet for later? Bookmark it!',
           ),
+          a('j45c642d', 'Folders aren’t loading right now'),
           a('bcc7e8cf', 'All Bookmarks'),
           a('c8c1fa6d', 'Clear all Bookmarks'),
           a('jf748f4f', 'Clear all Bookmarks?'),

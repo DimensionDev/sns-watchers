@@ -25,8 +25,8 @@
         y = (n('+KXO'), n('7xRU'), n('tQbP'), n('LW0h'), n('7x/C'), n('z84I'), []),
         v = {},
         E = n('O0uF'),
-        C = n('RqPI'),
-        S = n('rxPX'),
+        S = n('RqPI'),
+        C = n('rxPX'),
         w = n('0KEI'),
         L = n('S/HT'),
         _ = [],
@@ -60,9 +60,9 @@
             ? void 0
             : r.flow_status
         },
-        I = Object(S.a)()
+        I = Object(C.a)()
           .propsFromState(function () {
-            return { countryCode: m.i, countryList: k, changeCountryFlowStatus: F, lang: C.p }
+            return { countryCode: m.i, countryList: k, changeCountryFlowStatus: F, lang: S.p }
           })
           .propsFromActions(function () {
             return {
@@ -194,8 +194,8 @@
         y = n.n(m),
         v = (n('lTEL'), n('7x/C'), n('LqLs'), n('87if'), n('kYxP'), n('7xRU'), n('z84I'), n('2G9S'), n('ERkP')),
         E = n.n(v),
-        C = n('t62R'),
-        S = n('piX5'),
+        S = n('t62R'),
+        C = n('piX5'),
         w = n('4r2z'),
         L = n('FG+G'),
         _ = n('rHpw'),
@@ -267,7 +267,7 @@
                     u = e.value,
                     d = e.withEmptyOption,
                     h = this.state.isFocused,
-                    p = C.b.getLanguage(),
+                    p = S.b.getLanguage(),
                     f =
                       'ja' === p
                         ? _.a.theme.fontFamilies.japan
@@ -285,12 +285,12 @@
                       I.a,
                       {
                         style: [
-                          S.a.border,
+                          C.a.border,
                           R.container,
-                          n && S.a.disabled,
-                          h && S.a.focusedBorderValid,
-                          b && S.a.invalidBorderColor,
-                          h && b && S.a.focusedBorderInvalid,
+                          n && C.a.disabled,
+                          h && C.a.focusedBorderValid,
+                          b && C.a.invalidBorderColor,
+                          h && b && C.a.focusedBorderInvalid,
                           c,
                         ],
                       },
@@ -307,7 +307,7 @@
                           onChange: this._handleChange,
                           onFocus: this._handleFocus,
                           ref: this._selectRef,
-                          style: [R.select, { fontFamily: f }, n && S.a.disabled],
+                          style: [R.select, { fontFamily: f }, n && C.a.disabled],
                           testID: s || '',
                           value: u,
                         },
@@ -324,7 +324,7 @@
                         }),
                       ),
                       E.a.createElement(L.a, {
-                        style: [R.dropdownCaret, h && S.a.validColor, (o || r) && S.a.invalidColor],
+                        style: [R.dropdownCaret, h && C.a.validColor, (o || r) && C.a.invalidColor],
                       }),
                     ),
                     i ? this._renderHelperText() : null,
@@ -341,7 +341,7 @@
                     r = e.label,
                     a = this.state.isFocused
                   return E.a.createElement(
-                    C.b,
+                    S.b,
                     {
                       accessibilityRole: 'label',
                       color: n || t ? 'red500' : a ? 'primary' : 'gray700',
@@ -359,7 +359,7 @@
                     I.a,
                     { accessibilityLiveRegion: 'polite' },
                     E.a.createElement(
-                      C.b,
+                      S.b,
                       { color: 'gray700', nativeID: this._helperID, style: R.helperText },
                       this.props.helperText,
                     ),
@@ -373,7 +373,7 @@
                     I.a,
                     { accessibilityLiveRegion: 'polite' },
                     E.a.createElement(
-                      C.b,
+                      S.b,
                       { color: 'red500', nativeID: this._errorID, style: R.helperText },
                       this.props.errorText,
                     ),
@@ -452,7 +452,7 @@
         y = n('G6rE'),
         v = n('rxPX'),
         E = n('0KEI'),
-        C = Object(v.a)()
+        S = Object(v.a)()
           .propsFromState(function () {
             return { fetchStatus: m.n, loggedInUser: y.e.selectLoggedInUser }
           })
@@ -462,7 +462,7 @@
               createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('SETTINGS_LOADER'),
             }
           }),
-        S = n('v//M'),
+        C = n('v//M'),
         w = n('3XMw'),
         L = n.n(w),
         _ = n('M2mT'),
@@ -483,7 +483,7 @@
               (e = t.call.apply(t, [this].concat(o))),
               f()(c()(e), '_renderWithFetchSettings', function () {
                 var t = e.props.fetchStatus
-                return g.a.createElement(S.a, { fetchStatus: t, onRequestRetry: e._handleFetch, render: e._render })
+                return g.a.createElement(C.a, { fetchStatus: t, onRequestRetry: e._handleFetch, render: e._render })
               }),
               f()(c()(e), '_render', function () {
                 var t = e.props,
@@ -593,7 +593,7 @@
           },
         }
       })
-      t.a = C(x)
+      t.a = S(x)
     },
     FDFL: function (e, t, n) {
       'use strict'
@@ -686,8 +686,8 @@
         y = n('ERkP'),
         v = n.n(y),
         E = n('HPNB'),
-        C = n('VAZu'),
-        S = n('wiP2'),
+        S = n('VAZu'),
+        C = n('wiP2'),
         w = n('Es6L'),
         L = n('yiKp'),
         _ = n.n(L),
@@ -710,6 +710,7 @@
         O = n('cHvH'),
         x = n('3xLC'),
         R = [
+          'appBarStyle',
           'children',
           'leftControl',
           'screenType',
@@ -761,7 +762,7 @@
                 key: '_renderForOneColumnLayout',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
+                    t = (e.appBarStyle, e.children),
                     n =
                       (e.leftControl,
                       e.screenType,
@@ -775,7 +776,7 @@
                     null,
                     Object(w.a)()
                       ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                      : v.a.createElement(S.a.Configure, n),
+                      : v.a.createElement(C.a.Configure, n),
                     t,
                   )
                 },
@@ -800,72 +801,74 @@
                     r = n.SideNavButton,
                     a = n.TabBar,
                     o = n.TeamsSwitcher,
-                    i = n.backLocation,
-                    l = n.documentTitle,
-                    c = n.headerless,
-                    s = n.history,
-                    u = n.leftControl,
-                    d = n.middleControl,
-                    h = n.onBackClick,
-                    p = n.rightControl,
-                    f = n.screenType,
-                    b = n.searchBoxOptions,
-                    g = n.secondaryBar,
-                    y = n.showSubtitleOnRoot,
-                    E = n.showSubtitleOnWideDetail,
-                    w = n.subtitle,
-                    L = n.title,
-                    _ = n.titleIconCell,
-                    k = n.titleIconCellSize,
-                    T = n.withDetailOpen,
-                    B = n.withSearchBox,
-                    O = n.withTweetButton,
-                    x = 'root' === f,
-                    R = 'secondaryRoot' === f,
-                    D = 'primaryDetail' === f,
-                    A = (D && E) || (x && y),
-                    N = x || (D && t),
-                    P = x ? m.c : D ? m.a : void 0,
-                    H = v.a.createElement(
+                    i = n.appBarStyle,
+                    l = n.backLocation,
+                    c = n.documentTitle,
+                    s = n.headerless,
+                    u = n.history,
+                    d = n.leftControl,
+                    h = n.middleControl,
+                    p = n.onBackClick,
+                    f = n.rightControl,
+                    b = n.screenType,
+                    g = n.searchBoxOptions,
+                    y = n.secondaryBar,
+                    E = n.showSubtitleOnRoot,
+                    w = n.showSubtitleOnWideDetail,
+                    L = n.subtitle,
+                    _ = n.title,
+                    k = n.titleIconCell,
+                    T = n.titleIconCellSize,
+                    B = n.withDetailOpen,
+                    O = n.withSearchBox,
+                    x = n.withTweetButton,
+                    R = 'root' === b,
+                    D = 'secondaryRoot' === b,
+                    A = 'primaryDetail' === b,
+                    N = (A && w) || (R && E),
+                    P = R || (A && t),
+                    H = R ? m.c : A ? m.a : void 0,
+                    U = v.a.createElement(
                       I.a,
                       { style: F.appBarContainer },
-                      v.a.createElement(C.a, {
-                        backLocation: i,
+                      v.a.createElement(S.a, {
+                        backLocation: l,
                         fixed: !1,
-                        hideBackButton: N,
-                        history: s,
-                        leftControl: u,
-                        middleControl: d,
-                        onBackClick: h,
-                        rightControl: p,
-                        secondaryBar: g,
-                        subtitle: A ? w : void 0,
-                        title: L,
-                        titleDomId: P,
-                        titleIconCell: _,
-                        titleIconCellSize: k,
+                        hideBackButton: P,
+                        history: u,
+                        leftControl: d,
+                        middleControl: h,
+                        onBackClick: p,
+                        rightControl: f,
+                        secondaryBar: y,
+                        style: i,
+                        subtitle: N ? L : void 0,
+                        title: _,
+                        titleDomId: H,
+                        titleIconCell: k,
+                        titleIconCellSize: T,
                       }),
                     ),
-                    U =
-                      x || (R && T)
+                    j =
+                      R || (D && B)
                         ? null
-                        : v.a.createElement(S.a.Configure, {
+                        : v.a.createElement(C.a.Configure, {
                             SideNavButton: r,
                             TabBar: a,
                             TeamsSwitcher: o,
-                            backLocation: i,
-                            documentTitle: l,
-                            headerless: c,
-                            middleControl: d,
-                            onBackClick: h,
-                            rightControl: p,
-                            searchBoxOptions: b,
-                            subtitle: w,
-                            title: L,
-                            withSearchBox: B,
-                            withTweetButton: O,
+                            backLocation: l,
+                            documentTitle: c,
+                            headerless: s,
+                            middleControl: h,
+                            onBackClick: p,
+                            rightControl: f,
+                            searchBoxOptions: g,
+                            subtitle: L,
+                            title: _,
+                            withSearchBox: O,
+                            withTweetButton: x,
                           })
-                  return v.a.createElement(v.a.Fragment, null, U, H)
+                  return v.a.createElement(v.a.Fragment, null, j, U)
                 },
               },
             ]),
@@ -926,97 +929,97 @@
                 (function (e) {
                   switch (e) {
                     case 'ar':
-                      return n.e(253).then(n.t.bind(null, 'heBS', 3))
+                      return n.e(252).then(n.t.bind(null, 'heBS', 3))
                     case 'bg':
-                      return n.e(254).then(n.t.bind(null, '9kpF', 3))
+                      return n.e(253).then(n.t.bind(null, '9kpF', 3))
                     case 'bn':
-                      return n.e(255).then(n.t.bind(null, 'GG9y', 3))
+                      return n.e(254).then(n.t.bind(null, 'GG9y', 3))
                     case 'ca':
-                      return n.e(256).then(n.t.bind(null, 'icrD', 3))
+                      return n.e(255).then(n.t.bind(null, 'icrD', 3))
                     case 'cs':
-                      return n.e(257).then(n.t.bind(null, 'rxOR', 3))
+                      return n.e(256).then(n.t.bind(null, 'rxOR', 3))
                     case 'da':
-                      return n.e(258).then(n.t.bind(null, '6Nxr', 3))
+                      return n.e(257).then(n.t.bind(null, '6Nxr', 3))
                     case 'de':
-                      return n.e(259).then(n.t.bind(null, 'zSOo', 3))
+                      return n.e(258).then(n.t.bind(null, 'zSOo', 3))
                     case 'el':
-                      return n.e(260).then(n.t.bind(null, 'MOmn', 3))
+                      return n.e(259).then(n.t.bind(null, 'MOmn', 3))
                     case 'en-GB':
-                      return n.e(262).then(n.t.bind(null, 'vzeG', 3))
+                      return n.e(261).then(n.t.bind(null, 'vzeG', 3))
                     case 'en':
-                      return n.e(261).then(n.t.bind(null, 'WqZ6', 3))
+                      return n.e(260).then(n.t.bind(null, 'WqZ6', 3))
                     case 'es':
-                      return n.e(263).then(n.t.bind(null, 'v4/g', 3))
+                      return n.e(262).then(n.t.bind(null, 'v4/g', 3))
                     case 'eu':
-                      return n.e(264).then(n.t.bind(null, 'KXIK', 3))
+                      return n.e(263).then(n.t.bind(null, 'KXIK', 3))
                     case 'fa':
-                      return n.e(265).then(n.t.bind(null, 'vzCi', 3))
+                      return n.e(264).then(n.t.bind(null, 'vzCi', 3))
                     case 'fi':
-                      return n.e(266).then(n.t.bind(null, 'YthM', 3))
+                      return n.e(265).then(n.t.bind(null, 'YthM', 3))
                     case 'fil':
-                      return n.e(267).then(n.t.bind(null, 'AcRS', 3))
+                      return n.e(266).then(n.t.bind(null, 'AcRS', 3))
                     case 'fr':
-                      return n.e(268).then(n.t.bind(null, 'PuNY', 3))
+                      return n.e(267).then(n.t.bind(null, 'PuNY', 3))
                     case 'ga':
-                      return n.e(269).then(n.t.bind(null, 'FSy8', 3))
+                      return n.e(268).then(n.t.bind(null, 'FSy8', 3))
                     case 'gl':
-                      return n.e(270).then(n.t.bind(null, 'igcB', 3))
+                      return n.e(269).then(n.t.bind(null, 'igcB', 3))
                     case 'gu':
-                      return n.e(271).then(n.t.bind(null, 'DaQw', 3))
+                      return n.e(270).then(n.t.bind(null, 'DaQw', 3))
                     case 'he':
-                      return n.e(272).then(n.t.bind(null, '8mgg', 3))
+                      return n.e(271).then(n.t.bind(null, '8mgg', 3))
                     case 'hi':
-                      return n.e(273).then(n.t.bind(null, 'w88S', 3))
+                      return n.e(272).then(n.t.bind(null, 'w88S', 3))
                     case 'hr':
-                      return n.e(274).then(n.t.bind(null, 'dvLs', 3))
+                      return n.e(273).then(n.t.bind(null, 'dvLs', 3))
                     case 'hu':
-                      return n.e(275).then(n.t.bind(null, '9fGX', 3))
+                      return n.e(274).then(n.t.bind(null, '9fGX', 3))
                     case 'id':
-                      return n.e(276).then(n.t.bind(null, 'elf3', 3))
+                      return n.e(275).then(n.t.bind(null, 'elf3', 3))
                     case 'it':
-                      return n.e(277).then(n.t.bind(null, 'sxFK', 3))
+                      return n.e(276).then(n.t.bind(null, 'sxFK', 3))
                     case 'ja':
-                      return n.e(278).then(n.t.bind(null, '1/Dg', 3))
+                      return n.e(277).then(n.t.bind(null, '1/Dg', 3))
                     case 'kn':
-                      return n.e(279).then(n.t.bind(null, 'nFOI', 3))
+                      return n.e(278).then(n.t.bind(null, 'nFOI', 3))
                     case 'ko':
-                      return n.e(280).then(n.t.bind(null, 'RRUG', 3))
+                      return n.e(279).then(n.t.bind(null, 'RRUG', 3))
                     case 'mr':
-                      return n.e(281).then(n.t.bind(null, 'EpxJ', 3))
+                      return n.e(280).then(n.t.bind(null, 'EpxJ', 3))
                     case 'ms':
-                      return n.e(282).then(n.t.bind(null, 'cSS2', 3))
+                      return n.e(281).then(n.t.bind(null, 'cSS2', 3))
                     case 'nb':
-                      return n.e(283).then(n.t.bind(null, 'bg3k', 3))
+                      return n.e(282).then(n.t.bind(null, 'bg3k', 3))
                     case 'nl':
-                      return n.e(284).then(n.t.bind(null, 'eXnI', 3))
+                      return n.e(283).then(n.t.bind(null, 'eXnI', 3))
                     case 'pl':
-                      return n.e(285).then(n.t.bind(null, 'ACpo', 3))
+                      return n.e(284).then(n.t.bind(null, 'ACpo', 3))
                     case 'pt':
-                      return n.e(286).then(n.t.bind(null, 'J0At', 3))
+                      return n.e(285).then(n.t.bind(null, 'J0At', 3))
                     case 'ro':
-                      return n.e(287).then(n.t.bind(null, 'hxXa', 3))
+                      return n.e(286).then(n.t.bind(null, 'hxXa', 3))
                     case 'ru':
-                      return n.e(288).then(n.t.bind(null, 'gXfs', 3))
+                      return n.e(287).then(n.t.bind(null, 'gXfs', 3))
                     case 'sk':
-                      return n.e(289).then(n.t.bind(null, 'fy2h', 3))
+                      return n.e(288).then(n.t.bind(null, 'fy2h', 3))
                     case 'sr':
-                      return n.e(290).then(n.t.bind(null, 'FmvU', 3))
+                      return n.e(289).then(n.t.bind(null, 'FmvU', 3))
                     case 'sv':
-                      return n.e(291).then(n.t.bind(null, 'prb2', 3))
+                      return n.e(290).then(n.t.bind(null, 'prb2', 3))
                     case 'ta':
-                      return n.e(292).then(n.t.bind(null, '8KkY', 3))
+                      return n.e(291).then(n.t.bind(null, '8KkY', 3))
                     case 'th':
-                      return n.e(293).then(n.t.bind(null, 'g4c5', 3))
+                      return n.e(292).then(n.t.bind(null, 'g4c5', 3))
                     case 'tr':
-                      return n.e(294).then(n.t.bind(null, 'NngR', 3))
+                      return n.e(293).then(n.t.bind(null, 'NngR', 3))
                     case 'uk':
-                      return n.e(295).then(n.t.bind(null, '62bs', 3))
+                      return n.e(294).then(n.t.bind(null, '62bs', 3))
                     case 'ur':
-                      return n.e(296).then(n.t.bind(null, 'aKQ3', 3))
+                      return n.e(295).then(n.t.bind(null, 'aKQ3', 3))
                     case 'zh-Hant':
-                      return n.e(298).then(n.t.bind(null, 'Wk8C', 3))
+                      return n.e(297).then(n.t.bind(null, 'Wk8C', 3))
                     case 'zh':
-                      return n.e(297).then(n.t.bind(null, 'YXaK', 3))
+                      return n.e(296).then(n.t.bind(null, 'YXaK', 3))
                     default:
                       return Promise.reject(
                         new Error('Tried to import country names for unknown language key: '.concat(e)),
@@ -1084,8 +1087,8 @@
         y = n('7FtF'),
         v = 'languageSelector',
         E = n('MWbm'),
-        C = n('6XNv'),
-        S = n('rHpw'),
+        S = n('6XNv'),
+        C = n('rHpw'),
         w = u.a.a4b69cbb,
         L = u.a.i2209530,
         _ = u.a.f953f53a,
@@ -1134,12 +1137,12 @@
               i.a.createElement(
                 E.a,
                 { style: I.languageSelector, testID: v },
-                i.a.createElement(C.a, { helperText: k, label: w, onChange: h, options: o, value: u }),
+                i.a.createElement(S.a, { helperText: k, label: w, onChange: h, options: o, value: u }),
               ),
             ),
           )
         },
-        I = S.a.create(function (e) {
+        I = C.a.create(function (e) {
           return { languageSelector: { margin: e.spaces.space20 } }
         })
       t.default = g(F)

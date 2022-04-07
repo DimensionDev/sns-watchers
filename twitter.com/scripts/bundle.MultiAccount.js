@@ -84,8 +84,8 @@
         z = a('t62R'),
         O = a('0yYu'),
         V = a('IMA+'),
-        j = a('Znyr'),
-        D = a('rHpw'),
+        D = a('Znyr'),
+        j = a('rHpw'),
         N = a('v6aA'),
         K = M.a.b8e1d524,
         W = M.a.j0a8da6e,
@@ -186,7 +186,7 @@
                   ? f.a.createElement(
                       R.a,
                       null,
-                      f.a.createElement(j.a, {
+                      f.a.createElement(D.a, {
                         count: e,
                         standalone: !0,
                         truncatedCountFormatter: ae,
@@ -270,7 +270,7 @@
           )
         })(f.a.Component)
       p()(ne, 'contextType', N.a)
-      var re = D.a.create(function (e) {
+      var re = j.a.create(function (e) {
           return {
             iconCheckMark: { color: e.colors.primary, fontSize: '1.2em' },
             infoText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 },
@@ -421,7 +421,7 @@
         I = a('FBXD'),
         B = a('Nqmc'),
         M = a('rHpw'),
-        H = a('jhWN'),
+        H = a('oSwX'),
         F = a('1I0O'),
         A = a('pBrB'),
         P = a('jV+4'),
@@ -435,7 +435,7 @@
         }),
         O = C.a.createLayoutCache(),
         V = { viewType: 'user_cell' },
-        j = (function (e) {
+        D = (function (e) {
           m()(a, e)
           var t = p()(a)
           function a() {
@@ -483,7 +483,7 @@
                 return n
                   ? v.a.createElement(
                       R.a,
-                      { style: D.disabledMessageContainer },
+                      { style: j.disabledMessageContainer },
                       C,
                       v.a.createElement(w.b, { color: 'gray700' }, n),
                     )
@@ -501,7 +501,7 @@
                         contextType: r.contextType,
                         iconSize: 'large',
                         link: r.link,
-                        style: D.socialContext,
+                        style: j.socialContext,
                         text: r.text,
                         weight: 'bold',
                         withLeftPadding: !e.socialContextRefreshEnabled() && n !== z.ExperimentalUserTypeahead,
@@ -519,11 +519,11 @@
                 return t
                   ? v.a.createElement(
                       R.a,
-                      { style: D.userTypeaheadSocialContext },
-                      v.a.createElement(R.a, { style: D.userTypeaheadSocialContextIcon }, n),
+                      { style: j.userTypeaheadSocialContext },
+                      v.a.createElement(R.a, { style: j.userTypeaheadSocialContextIcon }, n),
                       v.a.createElement(
                         w.b,
-                        { color: 'gray700', numberOfLines: 1, style: D.userTypeaheadSocialContextText },
+                        { color: 'gray700', numberOfLines: 1, style: j.userTypeaheadSocialContextText },
                         r,
                       ),
                     )
@@ -583,10 +583,10 @@
                     M = e.withUsernameCenterAligned,
                     A = B && !u,
                     P = s === z.UserCompact || M,
-                    j = s === z.ExperimentalUserTypeahead,
+                    D = s === z.ExperimentalUserTypeahead,
                     N =
                       f && b === U.USER && 'earned' !== (f.disclosure_type && f.disclosure_type.toLowerCase())
-                        ? v.a.createElement(T.a, { contentAuthorId: k, promotedContent: f, style: D.promotedIndicator })
+                        ? v.a.createElement(T.a, { contentAuthorId: k, promotedContent: f, style: j.promotedIndicator })
                         : null,
                     K = {
                       accessibilityHidden: !0,
@@ -597,7 +597,7 @@
                       onHoverCardScreenNameClick: p,
                       promotedContent: f,
                       screenName: C,
-                      style: D.avatar,
+                      style: j.avatar,
                       uri: i,
                       withHoverCard: A,
                       withLink: B,
@@ -606,7 +606,7 @@
                       var t = e.avatarSize
                       return y
                         ? v.a.createElement(F.a, r()({}, K, y, { size: t }))
-                        : v.a.createElement(H.a, r()({ size: t }, K))
+                        : v.a.createElement(H.default, r()({ size: t }, K))
                     }),
                     Y = a && 'boolean' == typeof a.checked,
                     q = void 0 !== h,
@@ -621,7 +621,7 @@
                       Q,
                       J,
                       N,
-                      l ? v.a.createElement(R.a, { style: D.bottomControl }, l) : null,
+                      l ? v.a.createElement(R.a, { style: j.bottomControl }, l) : null,
                     )
                   return v.a.createElement(
                     g.a,
@@ -637,28 +637,28 @@
                         onClick: this._handleClick,
                         onKeyPress: this._handleKeyPress,
                         pointerEvents: d ? 'none' : void 0,
-                        style: [D.root, w],
+                        style: [j.root, w],
                         testID: x,
                         withDarkerInteractiveBackground: L,
                         withInteractiveStyling: null != I ? I : !!h,
                       },
-                      j ? null : this._renderSocialContext(),
+                      D ? null : this._renderSocialContext(),
                       v.a.createElement(
                         E.a,
                         {
                           avatarCell: W,
-                          avatarCellStyle: [D.avatarColumn, P && D.bodyColumnCentered],
-                          avatarSize: j ? 'xxxLarge' : o,
-                          cellStyle: [D.bodyColumn, P && D.bodyColumnCentered],
+                          avatarCellStyle: [j.avatarColumn, P && j.bodyColumnCentered],
+                          avatarSize: D ? 'xxxLarge' : o,
+                          cellStyle: [j.bodyColumn, P && j.bodyColumnCentered],
                         },
-                        v.a.createElement(R.a, { style: D.body }, G, c),
+                        v.a.createElement(R.a, { style: j.body }, G, c),
                         P ? null : $,
-                        j ? this._renderUserTypeaheadSocialContext() : null,
+                        D ? this._renderUserTypeaheadSocialContext() : null,
                       ),
                       Z && P
                         ? v.a.createElement(
                             E.a,
-                            { avatarCell: null, avatarCellStyle: D.avatarColumn, cellStyle: D.bodyColumn },
+                            { avatarCell: null, avatarCellStyle: j.avatarColumn, cellStyle: j.bodyColumn },
                             $,
                           )
                         : null,
@@ -681,7 +681,7 @@
                         description: t,
                         entities: n,
                         isConcise: a === z.UserConcise,
-                        style: D.bio,
+                        style: j.bio,
                         userId: r,
                         withheldDescription: o,
                         withheldEntities: i,
@@ -693,8 +693,8 @@
             a
           )
         })(v.a.PureComponent)
-      f()(j, 'defaultProps', { testID: 'UserCell', withLink: !0 })
-      var D = M.a.create(function (e) {
+      f()(D, 'defaultProps', { testID: 'UserCell', withLink: !0 })
+      var j = M.a.create(function (e) {
         return {
           root: {
             paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -715,7 +715,7 @@
           disabledMessageContainer: { flexShrink: 1 },
         }
       })
-      t.a = j
+      t.a = D
     },
     Nqmc: function (e, t, a) {
       'use strict'
@@ -1479,15 +1479,15 @@
         z = d.a.jb767df7,
         O = d.a.bb3323fa,
         V = d.a.db0798ed,
-        j = d.a.dc716ec8,
-        D = function (e) {
+        D = d.a.dc716ec8,
+        j = function (e) {
           return r.a.createElement(o.b, { dir: l.a.getConstants().isRTL ? 'rtl' : 'ltr', withHashflags: !0 }, e)
         },
         N = function (e, t) {
           return t
             ? z
             : (function (e) {
-                var t = D(e)
+                var t = j(e)
                 return r.a.createElement(d.a.I18NFormatMessage, { $i18n: 'h99e9c95' }, t)
               })(e)
         },
@@ -1541,8 +1541,8 @@
               z = r.a.createElement(T.a, { style: o }),
               O = r.a.createElement(I.a, { style: o }),
               V = r.a.createElement(B.a, { style: o }),
-              j = r.a.createElement(H, { style: o }),
-              D = r.a.createElement(F.a, { style: o }),
+              D = r.a.createElement(H, { style: o }),
+              j = r.a.createElement(F.a, { style: o }),
               N = r.a.createElement(A.a, { style: o }),
               Y = r.a.createElement(R, { style: o }),
               q = r.a.createElement(i.a, { borderColor: 'cellBackground', userAvatarSize: t, userAvatarUrls: a }),
@@ -1578,14 +1578,14 @@
               case c.a.Sparkle:
                 return V
               case c.a.SmartBlockExpiration:
-                return j
+                return D
               case c.a.SocialProof:
               case c.a.FollowFollowed:
                 return Y
               case c.a.FollowMutual:
                 return N
               case c.a.FollowFollowing:
-                return D
+                return j
               case c.a.Facepile:
                 return q
               case c.a.Bird:
@@ -1606,13 +1606,13 @@
               accessibilityLabel:
                 'Recommendation' === (null == s ? void 0 : s.functionalityType) ||
                 'RecWithEducation' === (null == s ? void 0 : s.functionalityType)
-                  ? j({ topicName: l })
+                  ? D({ topicName: l })
                   : V({ topicName: l }),
-              text: l ? D(l) : null,
+              text: l ? j(l) : null,
               link: n,
             }
           default:
-            return { Icon: E, text: l ? D(l) : null, link: n }
+            return { Icon: E, text: l ? j(l) : null, link: n }
         }
       }
     },

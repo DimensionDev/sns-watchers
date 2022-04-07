@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [191],
+  [190],
   {
     '0W/e': function (e, t, a) {
       'use strict'
@@ -367,7 +367,7 @@
       }
       var de = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } },
         fe = ue,
-        be = a('jhWN'),
+        be = a('oSwX'),
         he = (function (e) {
           u()(a, e)
           var t = m()(a)
@@ -425,7 +425,7 @@
                     {
                       accessibilityLabel: i,
                       icon: a
-                        ? h.a.createElement(be.a, {
+                        ? h.a.createElement(be.default, {
                             borderColor: 'white',
                             borderWidth: 'small',
                             size: 'medium',
@@ -618,7 +618,7 @@
                         Se,
                         null,
                         i &&
-                          h.a.createElement(be.a, {
+                          h.a.createElement(be.default, {
                             accessibilityHidden: !0,
                             borderColor: 'white',
                             borderWidth: 'small',

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [241],
+  [240],
   {
     FITr: function (e, t, a) {
       'use strict'
@@ -64,13 +64,13 @@
         B = a('FBXD'),
         P = a('Nqmc'),
         z = a('rHpw'),
-        H = a('jhWN'),
+        H = a('oSwX'),
         R = a('1I0O'),
         M = a('pBrB'),
         F = a('jV+4'),
         D = a('MWbm'),
-        N = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
-        U = Object.freeze({
+        U = Object.freeze({ TWEET: 'tweets', USER: 'users' }),
+        N = Object.freeze({
           UserCompact: 'UserCompact',
           UserConcise: 'UserConcise',
           UserDetailed: 'UserDetailed',
@@ -113,7 +113,7 @@
                     isVerified: s,
                     name: d,
                     onLinkClick: u,
-                    promotedContent: h === N.TWEET ? m : void 0,
+                    promotedContent: h === U.TWEET ? m : void 0,
                     screenName: p,
                     screenNameSuffix: y,
                     translatorType: v,
@@ -147,7 +147,7 @@
                         style: V.socialContext,
                         text: r.text,
                         weight: 'bold',
-                        withLeftPadding: !e.socialContextRefreshEnabled() && n !== U.ExperimentalUserTypeahead,
+                        withLeftPadding: !e.socialContextRefreshEnabled() && n !== N.ExperimentalUserTypeahead,
                       })
                     })
                   : null
@@ -178,7 +178,7 @@
               }),
               v()(d()(e), '_isEligibleForBio', function () {
                 var t = e.props.displayMode
-                return -1 !== [U.UserDetailed, U.UserConcise].indexOf(t)
+                return -1 !== [N.UserDetailed, N.UserConcise].indexOf(t)
               }),
               v()(d()(e), '_handleKeyPress', function (t) {
                 t.defaultPrevented || 'Enter' !== t.key || e._handleClick(t)
@@ -225,10 +225,10 @@
                     P = e.withLink,
                     z = e.withUsernameCenterAligned,
                     M = P && !d,
-                    F = s === U.UserCompact || z,
-                    j = s === U.ExperimentalUserTypeahead,
+                    F = s === N.UserCompact || z,
+                    j = s === N.ExperimentalUserTypeahead,
                     K =
-                      v && C === N.USER && 'earned' !== (v.disclosure_type && v.disclosure_type.toLowerCase())
+                      v && C === U.USER && 'earned' !== (v.disclosure_type && v.disclosure_type.toLowerCase())
                         ? g.a.createElement(I.a, { contentAuthorId: S, promotedContent: v, style: V.promotedIndicator })
                         : null,
                     A = {
@@ -249,12 +249,12 @@
                       var t = e.avatarSize
                       return y
                         ? g.a.createElement(R.a, r()({}, A, y, { size: t }))
-                        : g.a.createElement(H.a, r()({ size: t }, A))
+                        : g.a.createElement(H.default, r()({ size: t }, A))
                     }),
                     Y = a && 'boolean' == typeof a.checked,
                     q = void 0 !== h,
-                    G = (Y ? 'radio' : q && 'button') || 'listitem',
-                    X = this._renderUserName(),
+                    X = (Y ? 'radio' : q && 'button') || 'listitem',
+                    G = this._renderUserName(),
                     Q = this._renderHighlightedUserLabel(),
                     J = this._renderBio(),
                     Z = Q || J || K || i,
@@ -273,7 +273,7 @@
                       T.a,
                       {
                         accessibilityLabel: t,
-                        accessibilityRole: G,
+                        accessibilityRole: X,
                         accessibilityState: a,
                         disabled: !!u,
                         focusable: Y || q,
@@ -294,7 +294,7 @@
                           avatarSize: j ? 'xxxLarge' : o,
                           cellStyle: [V.bodyColumn, F && V.bodyColumnCentered],
                         },
-                        g.a.createElement(D.a, { style: V.body }, X, c),
+                        g.a.createElement(D.a, { style: V.body }, G, c),
                         F ? null : $,
                         j ? this._renderUserTypeaheadSocialContext() : null,
                       ),
@@ -323,7 +323,7 @@
                     ? g.a.createElement(M.a, {
                         description: t,
                         entities: n,
-                        isConcise: a === U.UserConcise,
+                        isConcise: a === N.UserConcise,
                         style: V.bio,
                         userId: r,
                         withheldDescription: o,
@@ -911,8 +911,8 @@
         }
       F.metadata = { width: 24, height: 24 }
       var D = F,
-        N = a('lUZE'),
-        U = u.a.jb767df7,
+        U = a('lUZE'),
+        N = u.a.jb767df7,
         _ = u.a.bb3323fa,
         O = u.a.db0798ed,
         j = u.a.dc716ec8,
@@ -921,7 +921,7 @@
         },
         K = function (e, t) {
           return t
-            ? U
+            ? N
             : (function (e) {
                 var t = V(e)
                 return r.a.createElement(u.a.I18NFormatMessage, { $i18n: 'h99e9c95' }, t)
@@ -974,7 +974,7 @@
               E = r.a.createElement(S.a, { style: o }),
               z = r.a.createElement(L.a, { style: o }),
               F = r.a.createElement(T.a, { style: o }),
-              U = r.a.createElement(I.a, { style: o }),
+              N = r.a.createElement(I.a, { style: o }),
               _ = r.a.createElement(B.a, { style: o }),
               O = r.a.createElement(P.a, { style: o }),
               j = r.a.createElement(H, { style: o }),
@@ -982,7 +982,7 @@
               K = r.a.createElement(M.a, { style: o }),
               Y = r.a.createElement(D, { style: o }),
               q = r.a.createElement(l.a, { borderColor: 'cellBackground', userAvatarSize: t, userAvatarUrls: a }),
-              G = r.a.createElement(N.a, { style: o })
+              X = r.a.createElement(U.a, { style: o })
             switch (e) {
               case c.a.Pin:
                 return i
@@ -1008,7 +1008,7 @@
               case c.a.Location:
                 return F
               case c.a.Community:
-                return U
+                return N
               case c.a.Spaces:
                 return _
               case c.a.Sparkle:
@@ -1025,7 +1025,7 @@
               case c.a.Facepile:
                 return q
               case c.a.Bird:
-                return G
+                return X
               case c.a.TextOnly:
               default:
                 return null

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [13],
+  [10],
   {
     '2qZs': function (e, t, n) {
       'use strict'
@@ -1341,7 +1341,7 @@
         }),
         Yt = n('Sksh'),
         Jt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -1390,7 +1390,7 @@
                     m,
                   ),
                 )
-              : C.a.createElement(Zt.a, {
+              : C.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: a,
@@ -1457,7 +1457,7 @@
                       withHoverCard: p,
                       withLink: h,
                     })
-                  : C.a.createElement(Zt.a, {
+                  : C.a.createElement(Zt.default, {
                       avatarRef: a,
                       imageLayoutCache: on,
                       nativeID: o,
@@ -3945,7 +3945,7 @@
         y = n('MWbm'),
         C = n('htQn'),
         T = n('5mJL'),
-        k = n('jhWN'),
+        k = n('oSwX'),
         x = n('/yvb'),
         E = n('t62R'),
         I = n('rHpw'),
@@ -4007,7 +4007,7 @@
                                 y.a,
                                 { style: [O.avatarColumn, !l && O.avatarColumnWithoutLine] },
                                 l ? f.a.createElement(y.a, { style: O.conversationLine }) : null,
-                                f.a.createElement(k.a, { size: 'large', uri: t }),
+                                f.a.createElement(k.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: O.conversationConnector,

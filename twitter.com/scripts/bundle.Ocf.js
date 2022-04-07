@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [75, 7, 13, 176],
+  [75, 7, 10, 176],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -2993,7 +2993,7 @@
         }),
         Qt = n('Sksh'),
         Jt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -3042,7 +3042,7 @@
                     h,
                   ),
                 )
-              : w.a.createElement(Zt.a, {
+              : w.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: a,
@@ -3109,7 +3109,7 @@
                       withHoverCard: p,
                       withLink: m,
                     })
-                  : w.a.createElement(Zt.a, {
+                  : w.a.createElement(Zt.default, {
                       avatarRef: a,
                       imageLayoutCache: rn,
                       nativeID: r,
@@ -4933,7 +4933,7 @@
         P = n('FBXD'),
         L = n('Nqmc'),
         A = n('rHpw'),
-        O = n('jhWN'),
+        O = n('oSwX'),
         D = n('1I0O'),
         F = n('pBrB'),
         R = n('jV+4'),
@@ -5118,7 +5118,7 @@
                       var t = e.avatarSize
                       return f
                         ? g.a.createElement(D.a, r()({}, W, f, { size: t }))
-                        : g.a.createElement(O.a, r()({ size: t }, W))
+                        : g.a.createElement(O.default, r()({ size: t }, W))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     K = void 0 !== h,
@@ -8687,7 +8687,7 @@
           )
         })(y.a.Component),
         Ne = n('ZS3b'),
-        Be = n('jhWN'),
+        Be = n('oSwX'),
         Me = n('jV+4'),
         Ve = n('5mJL'),
         Ue = F.a.create(function (e) {
@@ -8705,7 +8705,7 @@
             i = e.userCaption
           if (!a) return null
           var o = function (e) {
-              return y.a.createElement(Be.a, {
+              return y.a.createElement(Be.default, {
                 accessibilityHidden: !0,
                 focusable: !1,
                 size: 'xxLarge',
@@ -9015,14 +9015,20 @@
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props.fetchStatus
-                  return this.context.loggedInUserId
-                    ? y.a.createElement(Qe.a, {
-                        fetchStatus: e,
-                        onRequestRetry: this._handleFetch,
-                        render: this._render,
-                      })
-                    : this._render()
+                  var e = this.props,
+                    t = e.errorDialog,
+                    n = e.fetchStatus,
+                    a = this.context.loggedInUserId
+                  return (
+                    t ||
+                    (a
+                      ? y.a.createElement(Qe.a, {
+                          fetchStatus: n,
+                          onRequestRetry: this._handleFetch,
+                          render: this._render,
+                        })
+                      : this._render())
+                  )
                 },
               },
             ]),
@@ -13826,7 +13832,7 @@
                     y.a.createElement(Pi.default, {
                       borderRadius: wi.a.INFINITE,
                       currentContent: n
-                        ? y.a.createElement(Be.a, { size: 'custom', uri: n.profile_image_url_https })
+                        ? y.a.createElement(Be.default, { size: 'custom', uri: n.profile_image_url_https })
                         : null,
                       location: Li.d.Avatar,
                       mediaItem: t,
@@ -14010,7 +14016,7 @@
                     t = e.avatarMedia,
                     n = e.loggedInUser,
                     a = (t && t.mediaFile && t.mediaFile.url) || (n && n.profile_image_url_https)
-                  return y.a.createElement(Be.a, {
+                  return y.a.createElement(Be.default, {
                     accessibilityHidden: !0,
                     borderColor: 'white',
                     borderWidth: 'medium',
@@ -14511,7 +14517,7 @@
           }
         }),
         uo = function () {
-          return n.e(356).then(n.t.bind(null, 'OHEV', 7))
+          return n.e(355).then(n.t.bind(null, 'OHEV', 7))
         },
         po = 'ocfShowCodeNextLink',
         ho = 'ocfShowCodeSkipLink'
@@ -15746,8 +15752,8 @@
                         {
                           handlers:
                             ((t = {}),
-                            b()(t, Os.a.Tweet, Object(As.d)({ onClick: a, selectedTweetIds: r })),
-                            b()(t, Os.a.QuotedTweet, Object(As.d)({ onClick: a, selectedTweetIds: r })),
+                            b()(t, Os.a.Tweet, Object(As.c)({ onClick: a, selectedTweetIds: r })),
+                            b()(t, Os.a.QuotedTweet, Object(As.c)({ onClick: a, selectedTweetIds: r })),
                             t),
                         },
                       ),
@@ -17158,7 +17164,15 @@
                   : e.check_logged_in_account
                   ? y.a.createElement(
                       et,
-                      r()({ onNavigate: i._handleNavigate, subtask: e.check_logged_in_account, subtaskId: g }, C),
+                      r()(
+                        {
+                          errorDialog: w,
+                          onNavigate: i._handleNavigate,
+                          subtask: e.check_logged_in_account,
+                          subtaskId: g,
+                        },
+                        C,
+                      ),
                     )
                   : e.tweet_selection_urt
                   ? y.a.createElement(Ns, r()({ errorDialog: w, subtask: e.tweet_selection_urt, subtaskInputs: f }, C))
@@ -17357,7 +17371,7 @@
         k = n('MWbm'),
         w = n('htQn'),
         C = n('5mJL'),
-        E = n('jhWN'),
+        E = n('oSwX'),
         I = n('/yvb'),
         x = n('t62R'),
         S = n('rHpw'),
@@ -17419,7 +17433,7 @@
                                 k.a,
                                 { style: [A.avatarColumn, !s && A.avatarColumnWithoutLine] },
                                 s ? v.a.createElement(k.a, { style: A.conversationLine }) : null,
-                                v.a.createElement(E.a, { size: 'large', uri: t }),
+                                v.a.createElement(E.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: A.conversationConnector,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [212],
+  [211],
   {
     '1Cz6': function (e, t, n) {
       'use strict'
@@ -462,7 +462,7 @@
         b = n('ir4X'),
         g = n('0PHd'),
         _ = n('rHpw'),
-        y = n('jhWN'),
+        y = n('oSwX'),
         E = n('pBrB'),
         C = n('jV+4'),
         k = n('wCd/'),
@@ -531,7 +531,7 @@
                   return f.a.createElement(
                     S.a,
                     { style: N.row },
-                    f.a.createElement(y.a, {
+                    f.a.createElement(y.default, {
                       onClick: n,
                       promotedContent: r,
                       screenName: a,

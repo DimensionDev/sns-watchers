@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [242],
+  [241],
   {
     CdHO: function (e, t, a) {
       'use strict'
@@ -528,7 +528,7 @@
         C = a('IJsT'),
         S = a('a6qo'),
         w = a('rHpw'),
-        E = a('jhWN'),
+        E = a('oSwX'),
         k = a('jV+4'),
         I = a('MWbm'),
         _ = (function (e) {
@@ -568,7 +568,7 @@
                       b.a.createElement(
                         I.a,
                         { style: O.avatarContainer },
-                        b.a.createElement(E.a, {
+                        b.a.createElement(E.default, {
                           accessibilityHidden: !0,
                           focusable: !1,
                           size: 'xLarge',

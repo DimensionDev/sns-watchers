@@ -2265,7 +2265,7 @@
         L = n('FBXD'),
         E = n('Nqmc'),
         C = n('rHpw'),
-        I = n('jhWN'),
+        I = n('oSwX'),
         U = n('1I0O'),
         D = n('pBrB'),
         H = n('jV+4'),
@@ -2450,7 +2450,7 @@
                       var l = e.avatarSize
                       return y
                         ? b.a.createElement(U.a, t()({}, A, y, { size: l }))
-                        : b.a.createElement(I.a, t()({ size: l }, A))
+                        : b.a.createElement(I.default, t()({ size: l }, A))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     G = void 0 !== g,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [357],
+  [356],
   {
     '5aND': function (e, t, n) {
       'use strict'
@@ -120,13 +120,13 @@
     hYIq: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return q
+        return I
       }),
         n.d(t, 'a', function () {
-          return C
+          return O
         }),
         n.d(t, 'b', function () {
-          return O
+          return S
         })
       var r = n('VrFO'),
         i = n.n(r),
@@ -138,18 +138,20 @@
         l = n.n(u),
         p = n('ERkP'),
         g = n.n(p),
-        m = n('u3ZE'),
-        b = n('MWbm'),
-        f = n('t62R'),
-        d = n('rHpw'),
-        h = n('3XMw'),
-        y = n.n(h),
-        v = y.a.je5502ea,
-        k = y.a.bc4628a0,
-        E = function (e) {
-          return g.a.createElement(f.b, { weight: 'bold' }, e)
+        b = n('u3ZE'),
+        m = 'searchSpellingSuggestionLabel',
+        f = 'searchSpellingSuggestionLink',
+        h = n('MWbm'),
+        d = n('t62R'),
+        y = n('rHpw'),
+        v = n('3XMw'),
+        k = n.n(v),
+        E = k.a.je5502ea,
+        q = k.a.bc4628a0,
+        C = function (e) {
+          return g.a.createElement(d.b, { weight: 'bold' }, e)
         },
-        q = (function (e) {
+        I = (function (e) {
           s()(n, e)
           var t = l()(n)
           function n() {
@@ -161,43 +163,11 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.suggestion,
-                    t = { pathname: '/search', query: { q: e, src: m.a.SpellingSuggestionClick } }
+                    t = { pathname: '/search', query: { q: e, src: b.a.SpellingSuggestionClick } }
                   return g.a.createElement(
-                    f.b,
-                    { link: t, style: P.root },
-                    g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, E(e)),
-                  )
-                },
-              },
-            ]),
-            n
-          )
-        })(g.a.PureComponent),
-        C = (function (e) {
-          s()(n, e)
-          var t = l()(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
-          }
-          return (
-            o()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    n = e.original,
-                    r = e.suggestion,
-                    i = { pathname: '/search', query: { q: r, src: m.a.SpellingCorrectionClick } }
-                  return g.a.createElement(
-                    b.a,
-                    { style: P.root },
-                    g.a.createElement(f.b, { weight: 'bold' }, k({ suggestion: r })),
-                    g.a.createElement(
-                      f.b,
-                      { link: i, onClick: t },
-                      g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
-                    ),
+                    d.b,
+                    { link: t, style: D.root },
+                    g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, C(e)),
                   )
                 },
               },
@@ -220,15 +190,15 @@
                     t = e.onClick,
                     n = e.original,
                     r = e.suggestion,
-                    i = { pathname: '/search', query: { q: n, src: m.a.SpellingExpansionRevertClick } }
+                    i = { pathname: '/search', query: { q: r, src: b.a.SpellingCorrectionClick } }
                   return g.a.createElement(
-                    b.a,
-                    { style: P.root },
-                    g.a.createElement(f.b, { weight: 'bold' }, v({ suggestion: r })),
+                    h.a,
+                    { style: D.root },
+                    g.a.createElement(d.b, { weight: 'bold' }, q({ suggestion: r })),
                     g.a.createElement(
-                      f.b,
+                      d.b,
                       { link: i, onClick: t },
-                      g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
+                      g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, C(n)),
                     ),
                   )
                 },
@@ -237,7 +207,39 @@
             n
           )
         })(g.a.PureComponent),
-        P = d.a.create(function (e) {
+        S = (function (e) {
+          s()(n, e)
+          var t = l()(n)
+          function n() {
+            return i()(this, n), t.apply(this, arguments)
+          }
+          return (
+            o()(n, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.onClick,
+                    n = e.original,
+                    r = e.suggestion,
+                    i = { pathname: '/search', query: { q: n, src: b.a.SpellingExpansionRevertClick } }
+                  return g.a.createElement(
+                    h.a,
+                    { style: D.root },
+                    g.a.createElement(d.b, { testID: m, weight: 'bold' }, E({ suggestion: r })),
+                    g.a.createElement(
+                      d.b,
+                      { link: i, onClick: t, testID: f },
+                      g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, C(n)),
+                    ),
+                  )
+                },
+              },
+            ]),
+            n
+          )
+        })(g.a.PureComponent),
+        D = y.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,

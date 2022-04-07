@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [360, 13],
+  [359, 10],
   {
     '+Sp1': function (e, t, n) {
       'use strict'
@@ -1656,7 +1656,7 @@
         }),
         Jt = n('Sksh'),
         Yt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -1705,7 +1705,7 @@
                     h,
                   ),
                 )
-              : y.a.createElement(Zt.a, {
+              : y.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: o,
@@ -1772,7 +1772,7 @@
                       withHoverCard: p,
                       withLink: m,
                     })
-                  : y.a.createElement(Zt.a, {
+                  : y.a.createElement(Zt.default, {
                       avatarRef: o,
                       imageLayoutCache: an,
                       nativeID: i,
@@ -4299,7 +4299,7 @@
         ne = (n('JtPf'), n('zb92')),
         oe = Object(ne.a)({
           loader: function () {
-            return n.e(204).then(n.bind(null, '5Yok'))
+            return n.e(203).then(n.bind(null, '5Yok'))
           },
         }),
         ie = (n('uFXj'), n('IqLm')),
@@ -4352,7 +4352,7 @@
         _e = n('RuTB'),
         be = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(11), n.e(77)]).then(n.bind(null, 'x8Sc'))
+            return Promise.all([n.e(0), n.e(3), n.e(7), n.e(12), n.e(77)]).then(n.bind(null, 'x8Sc'))
           },
           renderPlaceholder: function (e, t) {
             return y.a.createElement(_e.a, { hasError: e, onRetry: t })
@@ -5248,10 +5248,19 @@
           }),
         b = n('Df4Q'),
         g = n('x5Pi'),
-        C = n('pbku'),
-        y = n('kY28'),
-        T = n('Irs7'),
-        k = function (e) {
+        C = n('3XMw'),
+        y = n.n(C),
+        T = n('6vad'),
+        k = n('MWbm'),
+        I = y.a.e25a0c3a,
+        E = function (e) {
+          return u.a.createElement(k.a, null, u.a.createElement(T.b, { text: I }), u.a.createElement(p.a, e))
+        },
+        x = n('pbku'),
+        S = n('VrCx'),
+        A = n('kY28'),
+        P = n('Irs7'),
+        O = function (e) {
           var t,
             n = e.allowDownvote,
             o = void 0 !== n && n,
@@ -5264,175 +5273,181 @@
             f = void 0 !== v && v,
             w = e.displayBlocked,
             _ = e.entry,
-            k = e.feedbackItems,
-            I = e.hideConversationControlsEducationText,
-            E = void 0 !== I && I,
-            x = e.hideExclusivityInfoEducationTextInReplies,
-            S = void 0 !== x && x,
-            A = e.hideTrustedFriendsEducationTextInReplies,
-            P = void 0 !== A && A,
-            O = e.isReaderMode,
+            C = e.feedbackItems,
+            y = e.hideConversationControlsEducationText,
+            T = void 0 !== y && y,
+            k = e.hideExclusivityInfoEducationTextInReplies,
+            I = void 0 !== k && k,
+            O = e.hideTrustedFriendsEducationTextInReplies,
             L = void 0 !== O && O,
-            D = e.isUnread,
-            R = e.saveAsRecentSearch,
-            M = e.shouldSelfThreadIncludeAvatar,
-            F = void 0 !== M && M,
-            U = e.shouldStoreTypeaheadItem,
-            B = e.showWithheldBannerOnMyTweets,
-            H = void 0 !== B && B,
-            N = e.topic,
-            j = e.tweetTextSize,
-            W = e.withActionsDisabled,
-            z = void 0 !== W && W,
-            V = e.withMuteConversation,
+            D = e.isReaderMode,
+            R = void 0 !== D && D,
+            M = e.isUnread,
+            F = e.saveAsRecentSearch,
+            U = e.shouldSelfThreadIncludeAvatar,
+            B = void 0 !== U && U,
+            H = e.shouldStoreTypeaheadItem,
+            N = e.showWithheldBannerOnMyTweets,
+            j = void 0 !== N && N,
+            W = e.topic,
+            z = e.tweetTextSize,
+            V = e.withActionsDisabled,
             q = void 0 !== V && V,
-            K = e.withRemoveFromBookmarks,
+            K = e.withMuteConversation,
             G = void 0 !== K && K,
-            Q = e.withSelfThread,
+            Q = e.withRemoveFromBookmarks,
             X = void 0 !== Q && Q,
-            J = e.withUserPresence,
+            J = e.withSelfThread,
             Y = void 0 !== J && J,
-            Z = e.withUnreadStyles,
+            Z = e.withUserPresence,
             $ = void 0 !== Z && Z,
-            ee = Object(T.b)(),
-            te = _.content,
-            ne = te.conversation_annotation,
-            oe = te.forwardPivot,
-            ie = te.hasModeratedReplies,
-            ae = te.highlights,
-            re = te.id,
-            ce = te.innerForwardPivot,
-            le = te.innerTombstoneInfo,
-            se = te.promotedMetadata,
-            de = te.ruxContext,
-            ue = te.socialContext,
-            pe = te.topicFollowPrompt,
-            he = _.conversationPosition,
-            me = _.conversationTreeMetadata,
-            ve = _.referringContext,
-            fe = !!_.conversationPosition && !_.conversationPosition.isStart,
-            we = u.a.useMemo(
+            ee = e.withUnreadStyles,
+            te = void 0 !== ee && ee,
+            ne = Object(P.b)(),
+            oe = _.content,
+            ie = oe.conversation_annotation,
+            ae = oe.displayType,
+            re = oe.forwardPivot,
+            ce = oe.hasModeratedReplies,
+            le = oe.highlights,
+            se = oe.id,
+            de = oe.innerForwardPivot,
+            ue = oe.innerTombstoneInfo,
+            pe = oe.promotedMetadata,
+            he = oe.ruxContext,
+            me = oe.socialContext,
+            ve = oe.topicFollowPrompt,
+            fe = _.conversationPosition,
+            we = _.conversationTreeMetadata,
+            _e = _.referringContext,
+            be = !!_.conversationPosition && !_.conversationPosition.isStart,
+            ge = u.a.useMemo(
               function () {
-                return Object(g.d)({ socialContext: ue, topic: N })
+                return Object(g.d)({ socialContext: me, topic: W })
               },
-              [ue, N],
+              [me, W],
             )
-          he
-            ? (t = he.showReplyContext && !L ? y.a.ReplyContextTypes.Isolated : y.a.ReplyContextTypes.None)
-            : L && (t = y.a.ReplyContextTypes.None)
-          var _e = null == ve ? void 0 : ve.contextualClientEventInfo,
-            be = null == k ? void 0 : k.length,
-            ge = f && !be,
-            Ce = u.a.useCallback(
+          fe
+            ? (t = fe.showReplyContext && !R ? A.a.ReplyContextTypes.Isolated : A.a.ReplyContextTypes.None)
+            : R && (t = A.a.ReplyContextTypes.None)
+          var Ce = null == _e ? void 0 : _e.contextualClientEventInfo,
+            ye = null == C ? void 0 : C.length,
+            Te = f && !ye,
+            ke = u.a.useCallback(
               function () {
-                a({ entry: _, feedbackKeys: [s.b] }), ee.scribe({ element: s.g(s.a, _), action: 'click' })
+                a({ entry: _, feedbackKeys: [s.b] }), ne.scribe({ element: s.g(s.a, _), action: 'click' })
               },
-              [ee, _, a],
+              [ne, _, a],
             ),
-            ye = u.a.useCallback(
+            Ie = u.a.useCallback(
               function () {
-                return c({ entry: _, triggerName: C.a.ON_LIKE })
+                return c({ entry: _, triggerName: x.a.ON_LIKE })
               },
               [c, _],
             ),
-            Te = u.a.useMemo(
+            Ee = u.a.useMemo(
               function () {
-                return k && !L
+                return C && !R
                   ? {
-                      markNotInterestedTopic: k.find(function (e) {
+                      markNotInterestedTopic: C.find(function (e) {
                         return e.feedbackKey === Object(b.b)(_.entryId)
                       }),
                     }
                   : void 0
               },
-              [k, _.entryId, L],
+              [C, _.entryId, R],
             ),
-            ke = u.a.useMemo(
+            xe = u.a.useMemo(
               function () {
-                var e = ee.contextualScribeNamespace
+                var e = ne.contextualScribeNamespace
                 return i()(
                   i()({}, e),
                   {},
                   {
                     section:
-                      'descendant' === (null == he ? void 0 : he.position)
+                      'descendant' === (null == fe ? void 0 : fe.position)
                         ? 'conversation_descendants'
-                        : 'ancestor' === (null == he ? void 0 : he.position)
+                        : 'ancestor' === (null == fe ? void 0 : fe.position)
                         ? 'conversation_ancestors'
                         : e.section,
-                    component: (null == _e ? void 0 : _e.component) || e.component,
-                    action: (null == _e ? void 0 : _e.action) || e.action,
-                    element: (null == _e ? void 0 : _e.element) || e.element,
+                    component: (null == Ce ? void 0 : Ce.component) || e.component,
+                    action: (null == Ce ? void 0 : Ce.action) || e.action,
+                    element: (null == Ce ? void 0 : Ce.element) || e.element,
                   },
                 )
               },
-              [ee.contextualScribeNamespace, _e, he],
+              [ne.contextualScribeNamespace, Ce, fe],
             ),
-            Ie = {
+            Se = {
               allowDownvote: o,
               bookmarkFolderId: d,
-              contextTweetId: null == ve ? void 0 : ve.contextTweetId,
+              contextTweetId: null == _e ? void 0 : _e.contextTweetId,
               contextualClientEventInfo: _.itemMetadata.clientEventInfo,
-              conversationPosition: he,
-              conversationTreeMetadata: me,
-              conversationAnnotation: ne,
+              conversationPosition: fe,
+              conversationTreeMetadata: we,
+              conversationAnnotation: ie,
               displayBlocked: w,
               displayPromotedContent: !0,
-              feedbackItems: k,
-              focalTweetId: null == ve ? void 0 : ve.focalTweetId,
-              forwardPivotInfo: oe,
-              shouldStoreTypeaheadItem: U,
-              hasModeratedReplies: ie,
-              hideConversationControlsEducationText: E || fe,
-              hideExclusivityInfoEducationTextInReplies: S,
-              hideTrustedFriendsEducationTextInReplies: P,
-              hitHighlights: null == ae ? void 0 : ae.textHighlights,
-              injectedFeedbackItem: Te,
-              innerForwardPivotInfo: ce,
-              isReaderMode: L,
-              isUnread: $ ? D : void 0,
-              onTweetDismiss: ge ? Ce : void 0,
-              onLike: ye,
-              quotedTweetTombstoneInfo: le,
+              feedbackItems: C,
+              focalTweetId: null == _e ? void 0 : _e.focalTweetId,
+              forwardPivotInfo: re,
+              shouldStoreTypeaheadItem: H,
+              hasModeratedReplies: ce,
+              hideConversationControlsEducationText: T || be,
+              hideExclusivityInfoEducationTextInReplies: I,
+              hideTrustedFriendsEducationTextInReplies: L,
+              hitHighlights: null == le ? void 0 : le.textHighlights,
+              injectedFeedbackItem: Ee,
+              innerForwardPivotInfo: de,
+              isReaderMode: R,
+              isUnread: te ? M : void 0,
+              onTweetDismiss: Te ? ke : void 0,
+              onLike: Ie,
+              quotedTweetTombstoneInfo: ue,
               replyContext: t,
-              ruxContext: de,
-              saveAsRecentSearch: R,
-              scribeData: ee.contextualScribeData,
-              scribeNamespace: ke,
-              shouldSelfThreadIncludeAvatar: F,
-              showWithheldBannerOnMyTweets: H,
-              socialContext: we || (null == ve ? void 0 : ve.socialContext),
-              topicFollowPrompt: pe || (null == ve ? void 0 : ve.topicFollowPrompt),
-              tweetId: re,
-              tweetTextSize: j,
-              urtPromotedContent: se,
+              ruxContext: he,
+              saveAsRecentSearch: F,
+              scribeData: ne.contextualScribeData,
+              scribeNamespace: xe,
+              shouldSelfThreadIncludeAvatar: B,
+              showWithheldBannerOnMyTweets: j,
+              socialContext: ge || (null == _e ? void 0 : _e.socialContext),
+              topicFollowPrompt: ve || (null == _e ? void 0 : _e.topicFollowPrompt),
+              tweetId: se,
+              tweetTextSize: z,
+              urtPromotedContent: pe,
               withActions: !0,
-              withActionsDisabled: z,
-              withInlineMedia: !(null != ve && ve.hideMedia) || L,
-              withMuteConversation: q,
-              withRemoveFromBookmarks: G,
-              withSelfThread: X,
+              withActionsDisabled: q,
+              withInlineMedia: !(null != _e && _e.hideMedia) || R,
+              withMuteConversation: G,
+              withRemoveFromBookmarks: X,
+              withSelfThread: Y,
               withSocialContext: !0,
-              withUserPresence: Y,
+              withUserPresence: $,
             },
-            Ee = m(
+            Ae = m(
               _,
-              { isUnread: D, topic: N },
-              { saveAsRecentSearch: R, applyFeedbackAction: a, applyReactionInstructions: c },
+              { isUnread: M, topic: W },
+              { saveAsRecentSearch: F, applyFeedbackAction: a, applyReactionInstructions: c },
             )
-          return u.a.createElement(p.a, l()({}, Ie, Ee))
+          switch (ae) {
+            case S.a.EmphasizedPromotedTweet:
+              return u.a.createElement(E, l()({}, Se, Ae))
+            default:
+              return u.a.createElement(p.a, l()({}, Se, Ae))
+          }
         },
-        I = _(u.a.memo(k)),
-        E = (n('LW0h'), n('Rp9C')),
-        x = { component: 'tweet' },
-        S = { component: 'thread' },
-        A = { type: 'serversideContextKey', serversideContextType: 'tweet' },
-        P = function (e) {
+        L = _(u.a.memo(O)),
+        D = (n('LW0h'), n('Rp9C')),
+        R = { component: 'tweet' },
+        M = { component: 'thread' },
+        F = { type: 'serversideContextKey', serversideContextType: 'tweet' },
+        U = function (e) {
           var t,
             n,
             o,
             a = null !== (t = e.content.retweetedStatusId) && void 0 !== t ? t : e.content.id,
-            r = i()(i()({}, A), {}, { serversideContextId: a })
+            r = i()(i()({}, F), {}, { serversideContextId: a })
           return {
             viewType: e.type,
             token:
@@ -5442,7 +5457,7 @@
             clientEntity: r,
           }
         },
-        O = function () {
+        B = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
           return function (t) {
             var n = t.conversationPosition,
@@ -5460,19 +5475,19 @@
             )
           }
         },
-        L = function (e) {
-          return E.a.getTweetURTEntryItem(e)
+        H = function (e) {
+          return D.a.getTweetURTEntryItem(e)
         }
       t.default = function (e) {
         return a
           .b({
-            component: I,
+            component: L,
             divider: e.divider || {},
-            defaultScribeNamespace: e.isReaderMode ? S : x,
-            getBehavioralEventContextOverride: P,
-            getScribeDataItem: L,
+            defaultScribeNamespace: e.isReaderMode ? M : R,
+            getBehavioralEventContextOverride: U,
+            getScribeDataItem: H,
             isFocusable: Object(r.a)(!0),
-            shouldDisplayBorder: O(e.isReaderMode),
+            shouldDisplayBorder: B(e.isReaderMode),
           })
           .getHandler(function () {
             return i()({}, e)
@@ -6020,7 +6035,7 @@
         C = n('MWbm'),
         y = n('htQn'),
         T = n('5mJL'),
-        k = n('jhWN'),
+        k = n('oSwX'),
         I = n('/yvb'),
         E = n('t62R'),
         x = n('rHpw'),
@@ -6082,7 +6097,7 @@
                                 C.a,
                                 { style: [O.avatarColumn, !c && O.avatarColumnWithoutLine] },
                                 c ? f.a.createElement(C.a, { style: O.conversationLine }) : null,
-                                f.a.createElement(k.a, { size: 'large', uri: t }),
+                                f.a.createElement(k.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: O.conversationConnector,
@@ -6129,27 +6144,6 @@
           enlargeTouchTarget: { paddingVertical: e.spaces.space8 },
         }
       })
-    },
-    i8De: function (e, t, n) {
-      'use strict'
-      n.r(t)
-      var o = n('yiKp'),
-        i = n.n(o),
-        a = n('ERkP'),
-        r = n.n(a),
-        c = n('meql'),
-        l = n('xZXe'),
-        s = n('3XMw'),
-        d = n.n(s),
-        u = n('6vad'),
-        p = n('MWbm'),
-        h = d.a.e25a0c3a,
-        m = function (e) {
-          return r.a.createElement(p.a, null, r.a.createElement(u.b, { text: h }), r.a.createElement(l.a, e))
-        }
-      t.default = function (e) {
-        return Object(c.a)(i()(i()({}, e), {}, { component: m }))
-      }
     },
     j7tW: function (e, t, n) {
       'use strict'

@@ -3,9 +3,12 @@
   {
     '1kbl': function (e, t, n) {
       'use strict'
-      n.r(t)
-      var o = n('ERkP'),
-        r = n.n(o),
+      n.r(t),
+        n.d(t, 'BookmarkFoldersScreen', function () {
+          return $
+        })
+      var r = n('ERkP'),
+        o = n.n(r),
         a = n('3XMw'),
         i = n.n(a),
         l = n('ggE+'),
@@ -32,16 +35,17 @@
             },
           }
         }),
-        b = function () {
-          var e = Object(d.a)()
-          return r.a.createElement(c.a, {
+        b = function (e) {
+          var t = e.onPress,
+            n = Object(d.a)()
+          return o.a.createElement(c.a, {
             key: 'AllBookmarksCell',
             label: m,
             link: '/i/bookmarks/all',
-            onPress: function () {
-              e.scribe({ element: 'bookmarks', action: 'click' })
+            onPress: function (e) {
+              n.scribe({ element: 'bookmarks', action: 'click' }), t(e)
             },
-            thumbnail: r.a.createElement(u.a, { style: p.thumbnail }, r.a.createElement(l.a, { style: p.icon })),
+            thumbnail: o.a.createElement(u.a, { style: p.thumbnail }, o.a.createElement(l.a, { style: p.icon })),
           })
         },
         h = (n('ho0z'), n('Hja3')),
@@ -60,172 +64,185 @@
         _ = g(function (e) {
           var t,
             n,
-            o = e.bookmarkFolder,
-            a = Object(d.a)()
-          return null != o &&
-            null !== (t = o.media) &&
+            r = e.bookmarkFolder,
+            a = e.onPress,
+            i = Object(d.a)()
+          return null != r &&
+            null !== (t = r.media) &&
             void 0 !== t &&
             null !== (n = t.media_info) &&
             void 0 !== n &&
             n.original_img_url
-            ? r.a.createElement(c.a, {
-                key: o.id,
-                label: o.name,
-                link: '/i/bookmarks/'.concat(o.id),
-                onPress: function () {
-                  a.scribe({ element: 'bookmark_folder', action: 'click' })
+            ? o.a.createElement(c.a, {
+                key: r.id,
+                label: r.name,
+                link: '/i/bookmarks/'.concat(r.id),
+                onPress: function (e) {
+                  i.scribe({ element: 'bookmark_folder', action: 'click' }), a(e)
                 },
-                thumbnail: r.a.createElement(v.a, { source: o.media.media_info.original_img_url, style: y.thumbnail }),
+                thumbnail: o.a.createElement(v.a, { source: r.media.media_info.original_img_url, style: y.thumbnail }),
               })
             : null
         }),
-        E = n('es0u'),
-        F = n('48TD'),
-        w = n('hqKg'),
-        I = n('oQhu'),
-        x = n('G6rE'),
-        C = Object(f.a)()
+        E = n('48TD'),
+        F = n('hqKg'),
+        w = n('oQhu'),
+        I = n('G6rE'),
+        x = Object(f.a)()
           .propsFromState(function () {
             return {
-              loggedInUser: x.e.selectLoggedInUser,
+              loggedInUser: I.e.selectLoggedInUser,
               sliceModule:
-                ((e = Object(I.a)(function (e) {
-                  return Object(F.a)(e)
+                ((e = Object(w.a)(function (e) {
+                  return Object(E.a)(e)
                 })),
-                Object(w.createSelector)(x.e.selectLoggedInUser, function (t) {
+                Object(F.createSelector)(I.e.selectLoggedInUser, function (t) {
                   return null != t && t.id_str ? e(t.id_str) : void 0
                 })),
             }
             var e
           })
           .adjustStateProps(function (e) {
-            var t = e.loggedInUser,
-              n = e.sliceModule
-            return { loggedInUserScreenName: null == t ? void 0 : t.screen_name, sliceModule: n, isLoggedInUser: !!t }
+            var t = e.loggedInUser
+            return { sliceModule: e.sliceModule, isLoggedInUser: !!t }
           })
           .withAnalytics({ page: 'bookmark_folders' }),
-        T = n('97Jx'),
-        B = n.n(T),
-        O = n('m3Bd'),
-        L = n.n(O),
-        S = n('ZGdk'),
-        R = n('/yvb'),
-        K = ['history', 'onCreateButtonClick', 'style', 'testID', 'type'],
-        j = s.a.create(function (e) {
+        C = n('FIs5'),
+        B = n('FS1z'),
+        T = i.a.adad5408,
+        O = i.a.be329aab,
+        L = i.a.j0a47c9c,
+        S = i.a.j45c642d,
+        R = x(function (e) {
+          var t = e.analytics,
+            n = e.isLoggedInUser,
+            r = e.onCreateFolderPress,
+            a = e.onFolderPress,
+            i = e.sliceModule
+          i || t.scribeAction('error')
+          var l = o.a.useCallback(
+              function () {
+                return (
+                  t.scribePageImpression({ component: 'empty', action: 'impression' }),
+                  n && r ? o.a.createElement(C.a, { buttonText: T, header: O, message: L, onButtonPress: r }) : null
+                )
+              },
+              [t, r, n],
+            ),
+            c = function (e) {
+              return function (t) {
+                a && (t.preventDefault(), a(e))
+              }
+            }
+          return o.a.createElement(
+            o.a.Fragment,
+            null,
+            o.a.createElement(b, { onPress: c('all') }),
+            i
+              ? o.a.createElement(B.a, {
+                  alwaysFetch: !0,
+                  module: i,
+                  noItemsRenderer: l,
+                  renderer: function (e) {
+                    return o.a.createElement(_, { bookmarkFolderId: e, key: e, onPress: c(e) })
+                  },
+                  retryMessage: S,
+                })
+              : null,
+          )
+        }),
+        K = n('es0u'),
+        j = Object(f.a)()
+          .propsFromState(function () {
+            return { loggedInUser: I.e.selectLoggedInUser }
+          })
+          .adjustStateProps(function (e) {
+            var t = e.loggedInUser
+            return { loggedInUserScreenName: null == t ? void 0 : t.screen_name }
+          })
+          .withAnalytics({ page: 'bookmark_folders' }),
+        M = n('97Jx'),
+        P = n.n(M),
+        A = n('m3Bd'),
+        D = n.n(A),
+        H = n('ZGdk'),
+        z = n('/yvb'),
+        V = ['history', 'onCreateButtonClick', 'style', 'testID', 'type'],
+        U = s.a.create(function (e) {
           return {
             button: { marginRight: e.spaces.space4 },
             icon: { width: s.a.theme.fontSizes.title3, height: s.a.theme.fontSizes.title3 },
           }
         }),
-        M = i.a.f8fc0b47,
-        P = r.a.createElement(S.a, { style: j.icon }),
-        A = function (e) {
+        W = i.a.f8fc0b47,
+        Q = o.a.createElement(H.a, { style: U.icon }),
+        N = function (e) {
           var t = e.history,
             n = e.onCreateButtonClick,
-            o = e.style,
+            r = e.style,
             a = e.testID,
             i = e.type,
-            l = L()(e, K)
-          return r.a.createElement(
-            R.a,
-            B()({ accessibilityLabel: M, hoverLabel: { label: M } }, l, {
-              icon: P,
+            l = D()(e, V)
+          return o.a.createElement(
+            z.a,
+            P()({ accessibilityLabel: W, hoverLabel: { label: W } }, l, {
+              icon: Q,
               onPress: function () {
                 n(), t.push({ pathname: '/i/bookmarks/create_folder' })
               },
               pullRight: !0,
-              style: [j.button, o],
+              style: [U.button, r],
               testID: a,
               type: i || 'primaryText',
             }),
           )
         },
-        D = n('yoO3'),
-        H = n('VS6U'),
-        z = n('FS1z'),
-        V = n('HQ0t'),
-        U = n('FIs5'),
-        W = n('yrzJ'),
-        Q = i.a.i3145aa0,
-        G = i.a.f8fc0b47,
-        N = i.a.j45c642d,
-        q = i.a.adad5408,
-        X = i.a.be329aab,
-        J = i.a.j0a47c9c,
-        Y = C(function (e) {
+        G = n('yoO3'),
+        q = n('VS6U'),
+        X = n('HQ0t'),
+        J = n('yrzJ'),
+        Y = i.a.i3145aa0,
+        Z = i.a.f8fc0b47,
+        $ = function (e) {
           var t = e.analytics,
             n = e.history,
-            o = e.isLoggedInUser,
-            a = e.loggedInUserScreenName,
-            i = e.sliceModule,
-            l = r.a.useCallback(
+            r = e.loggedInUserScreenName,
+            a = o.a.useCallback(
               function () {
                 n.push({ pathname: '/i/bookmarks/create_folder' })
               },
               [n],
             ),
-            c = r.a.useCallback(
-              function () {
-                return (
-                  t.scribePageImpression({ component: 'empty', action: 'impression' }),
-                  o ? r.a.createElement(U.a, { buttonText: q, header: X, message: J, onButtonPress: l }) : null
-                )
-              },
-              [t, l, o],
-            ),
-            s = function (e) {
-              return r.a.createElement(_, { bookmarkFolderId: e, key: e })
-            },
-            d = r.a.useCallback(
-              function () {
-                return (
-                  i || t.scribeAction('error'),
-                  r.a.createElement(
-                    r.a.Fragment,
-                    null,
-                    r.a.createElement(b, null),
-                    i
-                      ? r.a.createElement(z.a, {
-                          alwaysFetch: !0,
-                          module: i,
-                          noItemsRenderer: c,
-                          renderer: s,
-                          retryMessage: N,
-                        })
-                      : null,
-                  )
-                )
-              },
-              [i, c, t],
-            ),
-            u = r.a.createElement(A, {
-              accessibilityLabel: G,
+            i = o.a.createElement(N, {
+              accessibilityLabel: Z,
               history: n,
               onCreateButtonClick: function () {
                 return t.scribe({ element: 'create', action: 'click' })
               },
+              testID: 'createNewBookmarkFolderAppBarButton',
             })
-          return r.a.createElement(
-            D.a,
+          return o.a.createElement(
+            G.a,
             null,
-            r.a.createElement(H.a, {
+            o.a.createElement(q.a, {
               backLocation: '/home',
               history: n,
-              primaryContent: d(),
-              rightControl: u,
-              sidebarContent: r.a.createElement(E.a, null),
-              subtitle: a ? r.a.createElement(W.a, { screenName: a }) : null,
-              title: r.a.createElement(V.a, { text: Q }),
+              primaryContent: o.a.createElement(R, { onCreateFolderPress: a }),
+              rightControl: i,
+              sidebarContent: o.a.createElement(K.a, null),
+              subtitle: r ? o.a.createElement(J.a, { screenName: r }) : null,
+              title: o.a.createElement(X.a, { text: Y }),
               withBackButton: !1,
             }),
           )
-        })
-      t.default = Y
+        },
+        ee = j($)
+      t.default = ee
     },
     '48TD': function (e, t, n) {
       'use strict'
-      var o = n('yiKp'),
-        r = n.n(o),
+      var r = n('yiKp'),
+        o = n.n(r),
         a = n('wAC9')
       t.a = function (e, t) {
         return Object(a.a)({
@@ -234,7 +251,7 @@
             return e.Bookmarks.fetchBookmarkFoldersSlice
           },
           getEndpointParams: function (e) {
-            return r()(r()({}, e), {}, { tweet_id: t })
+            return o()(o()({}, e), {}, { tweet_id: t })
           },
           sliceKey: 'bookmarkFoldersSlice-'.concat(e),
         })
@@ -242,8 +259,8 @@
     },
     '5emT': function (e, t, n) {
       'use strict'
-      var o = n('yiKp'),
-        r = n.n(o),
+      var r = n('yiKp'),
+        o = n.n(r),
         a = n('ERkP'),
         i = n.n(a),
         l = n('Lsrn'),
@@ -252,8 +269,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(c.a)(
             'svg',
-            r()(
-              r()({}, e),
+            o()(
+              o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -286,8 +303,8 @@
         n.d(t, 'd', function () {
           return u
         })
-      var o = n('WpDa'),
-        r = n('oQhu'),
+      var r = n('WpDa'),
+        o = n('oQhu'),
         a = n('eR3e'),
         i = n('ZNT5'),
         l = 'bookmarks',
@@ -301,12 +318,12 @@
               var n = t.cursor
               return { cursor: 'string' == typeof n ? n : void 0, bookmark_collection_id: e }
             },
-            formatResponse: o.a,
+            formatResponse: r.a,
             context: 'FETCH_BOOKMARK_FOLDER_TIMELINE',
             perfKey: 'bookmarkFolderGraphQL',
           })
         },
-        s = Object(r.a)(function (e) {
+        s = Object(o.a)(function (e) {
           return e.isTrue('responsive_web_graphql_bookmarks')
             ? Object(i.a)({
                 timelineId: l,
@@ -318,7 +335,7 @@
                     n = e.cursor
                   return { count: t, cursor: 'string' == typeof n ? n : void 0 }
                 },
-                formatResponse: o.a,
+                formatResponse: r.a,
                 context: 'FETCH_BOOKMARKS_TIMELINE',
                 perfKey: 'bookmarksGraphQL',
               })
@@ -337,14 +354,14 @@
       t.b = s
       var d = function () {
           return function (e, t, n) {
-            var o = n.api,
-              r = n.featureSwitches
+            var r = n.api,
+              o = n.featureSwitches
             return (
-              r.isTrue('responsive_web_graphql_mutation_bookmarks')
-                ? o.Bookmarks.deleteAll
-                : o.Tweets.removeAllBookmarks
+              o.isTrue('responsive_web_graphql_mutation_bookmarks')
+                ? r.Bookmarks.deleteAll
+                : r.Tweets.removeAllBookmarks
             )().then(function () {
-              return e(s(r).deleteTimeline())
+              return e(s(o).deleteTimeline())
             })
           }
         },
@@ -352,8 +369,8 @@
     },
     HQ0t: function (e, t, n) {
       'use strict'
-      var o = n('ERkP'),
-        r = n.n(o),
+      var r = n('ERkP'),
+        o = n.n(r),
         a = n('v6aA'),
         i = n('3XMw'),
         l = n.n(i),
@@ -371,19 +388,19 @@
           }
         })
       t.a = function (e) {
-        var t = r.a.useContext(a.a),
+        var t = o.a.useContext(a.a),
           n = t.featureSwitches,
-          o = t.userClaims,
+          r = t.userClaims,
           i = n.isTrue('subscriptions_blue_premium_labeling_enabled'),
-          l = o.isTwitterBlueSubscriber(),
+          l = r.isTwitterBlueSubscriber(),
           s = e.style,
           m = e.text
         return l && i
-          ? r.a.createElement(
-              r.a.Fragment,
+          ? o.a.createElement(
+              o.a.Fragment,
               null,
               m,
-              r.a.createElement(c.a, { accessibilityLabel: d, style: [u.icon, s] }),
+              o.a.createElement(c.a, { accessibilityLabel: d, style: [u.icon, s] }),
             )
           : m
       }
@@ -399,8 +416,8 @@
         n.d(t, 'd', function () {
           return w
         })
-      var o = n('KEM+'),
-        r = n.n(o),
+      var r = n('KEM+'),
+        o = n.n(r),
         a = n('yiKp'),
         i = n.n(a),
         l = (n('yH/f'), n('ho0z'), n('7x/C'), n('JtPf'), n('PiaM')),
@@ -442,14 +459,14 @@
             reducer: function (e, t) {
               var n = t.meta.entityId
               if (!e.entities[n]) return e
-              var o = Object(f.a)(e.entities, [n])
-              return i()(i()({}, e), {}, { entities: o })
+              var r = Object(f.a)(e.entities, [n])
+              return i()(i()({}, e), {}, { entities: r })
             },
             mapResponseToActions: function (e, t, n) {
               return function (t) {
-                var o = Object(p.r)(n())
-                if (o && e && 'Done' === (null == t ? void 0 : t.bookmark_collection_delete))
-                  return [y(o).removeItems([e])]
+                var r = Object(p.r)(n())
+                if (r && e && 'Done' === (null == t ? void 0 : t.bookmark_collection_delete))
+                  return [y(r).removeItems([e])]
               }
             },
           }),
@@ -470,20 +487,20 @@
             mapResponseToActions: function (e, t, n) {
               return function (t) {
                 if (t) {
-                  var o = null == t ? void 0 : t.bookmark_collection_update,
-                    r = Object(p.r)(n())
-                  if (r && e && o) return [y(r).injectItems([o.id])]
+                  var r = null == t ? void 0 : t.bookmark_collection_update,
+                    o = Object(p.r)(n())
+                  if (o && e && r) return [y(o).injectItems([r.id])]
                 }
               }
             },
             reducer: function (e, t) {
               var n = t.meta,
-                o = n.entityId,
+                r = n.entityId,
                 a = n.name,
-                l = e.entities[o]
+                l = e.entities[r]
               if (!l) return e
               var c = { name: a }
-              return i()(i()({}, e), {}, { entities: i()(i()({}, e.entities), {}, r()({}, l.id, i()(i()({}, l), c))) })
+              return i()(i()({}, e), {}, { entities: i()(i()({}, e.entities), {}, o()({}, l.id, i()(i()({}, l), c))) })
             },
           }),
           removeTweetFromBookmarkFolder: Object(b.c)(v, 'removeTweetFromBookmarkFolder', {
@@ -497,15 +514,15 @@
               return { bookmarkFolderId: e, tweetId: n }
             },
             mapResponseToActions: function (e, t, n) {
-              return function (o) {
-                if (o) {
-                  if ('Done' !== o.bookmark_collection_tweet_delete) return
+              return function (r) {
+                if (r) {
+                  if ('Done' !== r.bookmark_collection_tweet_delete) return
                   if (!t.tweetId || !e) return []
-                  var a = null == o ? void 0 : o.bookmark_collection_tweet_delete,
+                  var a = null == r ? void 0 : r.bookmark_collection_tweet_delete,
                     i = Object(p.r)(n())
                   if (i && e && a) {
                     var l = y(i)
-                    return [Object(d.a)(e).removeTweets(r()({}, t.tweetId, !0)), l.injectItems([e])]
+                    return [Object(d.a)(e).removeTweets(o()({}, t.tweetId, !0)), l.injectItems([e])]
                   }
                 }
               }
@@ -525,13 +542,13 @@
               return { bookmark_collection_id: e, tweet_id: n }
             },
             mapResponseToActions: function (e, t, n) {
-              return function (o) {
-                if (o) {
-                  if ('Done' !== o.bookmark_collection_tweet_put) return
+              return function (r) {
+                if (r) {
+                  if ('Done' !== r.bookmark_collection_tweet_put) return
                   if (!t.tweetId || !e) return []
-                  var r = null == o ? void 0 : o.bookmark_collection_tweet_put,
+                  var o = null == r ? void 0 : r.bookmark_collection_tweet_put,
                     a = Object(p.r)(n())
-                  if (a && e && r) {
+                  if (a && e && o) {
                     var i = y(a)
                     return [
                       Object(d.a)(e).injectEntry(l.k({ id: t.tweetId, sortIndex: t.tweetId })),
@@ -548,8 +565,8 @@
         },
         E = function () {
           return function (e, t, n) {
-            var o = n.api
-            return Object(u.b)(e, { request: o.Bookmarks.fetchBookmarkFoldersSlice, params: {} })(
+            var r = n.api
+            return Object(u.b)(e, { request: r.Bookmarks.fetchBookmarkFoldersSlice, params: {} })(
               { actionTypes: k, context: 'FETCH_BOOKMARK_FOLDERS' },
               function (e) {
                 if (e) {
@@ -561,17 +578,17 @@
           }
         },
         F = function (e) {
-          return function (t, n, o) {
-            var a = o.api
+          return function (t, n, r) {
+            var a = r.api
             return Object(u.b)(t, { request: a.Bookmarks.createBookmarkFolder, params: { name: e } })(
               { actionTypes: g, context: 'CREATE_BOOKMARK_FOLDER' },
               function (e) {
                 if (e) {
                   var t = null == e ? void 0 : e.bookmark_collection_create,
-                    o = Object(p.r)(n())
-                  if (t && o) {
-                    var a = y(o)
-                    return [v.add(r()({}, t.id, t)), a.injectItems([t.id])]
+                    r = Object(p.r)(n())
+                  if (t && r) {
+                    var a = y(r)
+                    return [v.add(o()({}, t.id, t)), a.injectItems([t.id])]
                   }
                 }
               },
@@ -579,9 +596,9 @@
           }
         },
         w = function (e, t, n) {
-          return function (o) {
+          return function (r) {
             var a = y(n)
-            return Promise.resolve(o([Object(d.a)(e).removeTweets(r()({}, t, !0)), a.injectItems([e])]))
+            return Promise.resolve(r([Object(d.a)(e).removeTweets(o()({}, t, !0)), a.injectItems([e])]))
           }
         },
         I = i()(i()(i()({}, v), _), {}, { customActionTypes: Object(b.d)(_) })
@@ -593,8 +610,8 @@
         n.d(t, 'AddToBookmarkFolderModal', function () {
           return ee
         })
-      var o = n('VrFO'),
-        r = n.n(o),
+      var r = n('VrFO'),
+        o = n.n(r),
         a = n('Y9Ll'),
         i = n.n(a),
         l = n('1Pcy'),
@@ -631,15 +648,15 @@
         I = n('U+bB'),
         x = n('Irs7'),
         C = n('htQn'),
-        T = n('t62R'),
-        B = n('rHpw'),
+        B = n('t62R'),
+        T = n('rHpw'),
         O = F.a.e41c9b4f,
         L = F.a.a2e7377e,
         S = _(function (e) {
           var t,
             n,
-            o,
             r,
+            o,
             a = e.addTweetToBookmarkFolder,
             i = e.bookmarkFolder,
             l = e.removeTweetFromBookmarkFolder,
@@ -656,9 +673,9 @@
             return null
           var d = i.name,
             u =
-              null === (o = i.media) || void 0 === o || null === (r = o.media_info) || void 0 === r
+              null === (r = i.media) || void 0 === r || null === (o = r.media_info) || void 0 === o
                 ? void 0
-                : r.original_img_url,
+                : o.original_img_url,
             m = (null == i ? void 0 : i.id) || '',
             p = i.contains_requested_tweet
           if (!m || !c) return null
@@ -693,11 +710,11 @@
               style: [R.root, R.paddingHorizontal, R.contentContainer],
             },
             u ? f.a.createElement(I.a, { source: u, style: R.thumbnailContainer }) : null,
-            f.a.createElement(T.b, { style: R.content }, d),
+            f.a.createElement(B.b, { style: R.content }, d),
             p ? f.a.createElement(w.a, { style: R.icon }) : null,
           )
         }),
-        R = B.a.create(function (e) {
+        R = T.a.create(function (e) {
           return {
             root: {
               justifyContent: 'space-between',
@@ -706,7 +723,7 @@
               borderBottomStyle: 'solid',
               borderBottomColor: e.colors.borderColor,
               minHeight: 'calc('
-                .concat(B.a.theme.lineHeights.headline1, ' + 2 * ')
+                .concat(T.a.theme.lineHeights.headline1, ' + 2 * ')
                 .concat(e.componentDimensions.gutterVertical, ')'),
             },
             contentContainer: { alignItems: 'center', flexDirection: 'row', flexGrow: 1 },
@@ -727,10 +744,10 @@
         j = n('hqKg'),
         M = n('G6rE'),
         P = function (e, t) {
-          var n, o
-          return null === (n = t.location) || void 0 === n || null === (o = n.state) || void 0 === o
+          var n, r
+          return null === (n = t.location) || void 0 === n || null === (r = n.state) || void 0 === r
             ? void 0
-            : o.tweet_id
+            : r.tweet_id
         },
         A = Object(v.a)().propsFromState(function () {
           return {
@@ -747,8 +764,8 @@
         U = n('FIs5'),
         W = n('jtO7'),
         Q = n('cm6r'),
-        G = n('ggE+'),
-        N = F.a.c2453317,
+        N = n('ggE+'),
+        G = F.a.c2453317,
         q = F.a.bcc7e8cf,
         X = F.a.adad5408,
         J = F.a.be329aab,
@@ -760,15 +777,15 @@
           var t = m()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var o = arguments.length, a = new Array(o), i = 0; i < o; i++) a[i] = arguments[i]
+            o()(this, n)
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
               b()(c()(e), '_handleCreateFolderPress', function () {
                 var t = e.props,
                   n = t.history,
-                  o = t.tweetId
-                n.push({ pathname: '/i/bookmarks/create_folder', state: { tweet_id: o } })
+                  r = t.tweetId
+                n.push({ pathname: '/i/bookmarks/create_folder', state: { tweet_id: r } })
               }),
               b()(c()(e), '_handleBackClick', function () {
                 e.props.history.goBack()
@@ -783,9 +800,9 @@
               }),
               b()(c()(e), '_renderBookmarkFolder', function (t) {
                 var n = e.props,
-                  o = n.history,
-                  r = n.tweetId
-                return f.a.createElement(S, { bookmarkFolderId: t, history: o, key: t, tweetId: r })
+                  r = n.history,
+                  o = n.tweetId
+                return f.a.createElement(S, { bookmarkFolderId: t, history: r, key: t, tweetId: o })
               }),
               e
             )
@@ -801,9 +818,9 @@
                         D.b,
                         {
                           backButtonType: 'close',
-                          documentTitle: N,
+                          documentTitle: G,
                           onBackClick: this._handleBackClick,
-                          title: f.a.createElement(z.a, { text: N }),
+                          title: f.a.createElement(z.a, { text: G }),
                         },
                         f.a.createElement(W.a, {
                           align: 'left',
@@ -817,9 +834,9 @@
                           f.a.createElement(
                             V.a,
                             { style: ne.thumbnail },
-                            f.a.createElement(G.a, { style: ne.allBookmarks }),
+                            f.a.createElement(N.a, { style: ne.allBookmarks }),
                           ),
-                          f.a.createElement(T.b, { style: ne.content }, q),
+                          f.a.createElement(B.b, { style: ne.content }, q),
                           f.a.createElement(w.a, { style: ne.checkmark }),
                         ),
                         f.a.createElement(H.a, {
@@ -840,7 +857,7 @@
         te = A(ee),
         ne =
           ((t.default = te),
-          B.a.create(function (e) {
+          T.a.create(function (e) {
             return {
               root: {
                 justifyContent: 'space-between',
@@ -881,8 +898,8 @@
         n.d(t, 'EditOrDeleteBookmarkFolderModalScreen', function () {
           return K
         })
-      var o = n('KEM+'),
-        r = n.n(o),
+      var r = n('KEM+'),
+        o = n.n(r),
         a = n('ddV6'),
         i = n.n(a),
         l = (n('KqXw'), n('WNMA'), n('tVqn'), n('7x/C'), n('JtPf'), n('Qavd'), n('MvUL'), n('ERkP')),
@@ -894,8 +911,8 @@
         p = n('0KEI'),
         b = function (e, t) {
           var n = t.match.params.bookmarkFolderId,
-            o = n ? u.b.select(e, n) : void 0
-          return null == o ? void 0 : o.name
+            r = n ? u.b.select(e, n) : void 0
+          return null == r ? void 0 : r.name
         },
         h = Object(m.a)()
           .propsFromState(function () {
@@ -924,15 +941,15 @@
         I = g.a.i2209530,
         x = g.a.h18f86a4,
         C = g.a.f4ea9679,
-        T = g.a.b670aa62,
-        B = g.a.aece5462,
+        B = g.a.b670aa62,
+        T = g.a.aece5462,
         O = g.a.e3299b93,
         L = g.a.c09ea713,
         S = g.a.gee78815,
         R = { confirmButtonLabel: g.a.d96cf7cd, headline: g.a.h9a5daa1, text: g.a.ga2edf67 },
         K = function (e, t) {
           var n = e.addToast,
-            o = e.analytics,
+            r = e.analytics,
             a = e.bookmarkFolderName,
             l = e.createLocalApiErrorHandler,
             d = e.deleteBookmarkFolder,
@@ -955,8 +972,8 @@
             U = i()(V, 2),
             W = U[0],
             Q = U[1],
-            G = p.params.bookmarkFolderId,
-            N = '/i/bookmarks/'.concat(G),
+            N = p.params.bookmarkFolderId,
+            G = '/i/bookmarks/'.concat(N),
             q = function (e) {
               P(e.message || S)
             }
@@ -964,30 +981,30 @@
             f.b,
             {
               backButtonType: 'close',
-              backLocation: N,
+              backLocation: G,
               documentTitle: F,
               history: m,
               onBackClick: function (e) {
-                o.scribeAction('cancel'), e()
+                r.scribeAction('cancel'), e()
               },
               rightControl: c.a.createElement(
                 v.a,
                 {
                   disabled: H,
                   onPress: function () {
-                    o.scribeAction('save'),
+                    r.scribeAction('save'),
                       z(!0),
-                      u(G, { name: k })
+                      u(N, { name: k })
                         .then(function () {
-                          n({ text: B }), m.goBack()
+                          n({ text: T }), m.goBack()
                         })
                         .catch(function (e) {
                           l(
-                            r()({ defaultToast: { text: O }, showToast: !0 }, s.a.ValidationFailure, {
+                            o()({ defaultToast: { text: O }, showToast: !0 }, s.a.ValidationFailure, {
                               customAction: q,
                             }),
                           )(e),
-                            o.scribe({ element: 'delete', action: 'error', data: e })
+                            r.scribe({ element: 'delete', action: 'error', data: e })
                         })
                         .finally(function () {
                           return z(!1)
@@ -1005,7 +1022,7 @@
               invalid: !!M,
               label: w,
               maxLength: 25,
-              name: T,
+              name: B,
               onChange: function (e) {
                 var t = e.target.value
                 g(t), z('' === t.trim() || t.trim() === a)
@@ -1025,17 +1042,17 @@
                 confirmButtonType: 'destructiveFilled',
                 headline: R.headline,
                 onCancel: function () {
-                  o.scribe({ element: 'delete', action: 'cancel' }), Q(!1)
+                  r.scribe({ element: 'delete', action: 'cancel' }), Q(!1)
                 },
                 onConfirm: function () {
-                  o.scribeAction('delete'),
-                    d(G)
+                  r.scribeAction('delete'),
+                    d(N)
                       .then(function () {
                         Q(!1), n({ text: C }), m.replace('/i/bookmarks')
                       })
                       .catch(function (e) {
                         l({ defaultToast: { text: L }, showToast: !0 })(e),
-                          o.scribe({ element: 'delete', action: 'error', data: e })
+                          r.scribe({ element: 'delete', action: 'error', data: e })
                       })
                 },
                 text: R.text,
@@ -1047,8 +1064,8 @@
     },
     KQzH: function (e, t, n) {
       'use strict'
-      var o = n('97Jx'),
-        r = n.n(o),
+      var r = n('97Jx'),
+        o = n.n(r),
         a = (n('hBvt'), n('ERkP')),
         i = n.n(a),
         l = n('BUB3'),
@@ -1058,14 +1075,14 @@
       t.a = function (e) {
         return i.a.createElement(l.a, { exact: !0, path: e.link }, function (t) {
           var n = c.a.getConstants().isRTL ? 'rtl' : 'ltr'
-          return i.a.createElement(s.a, r()({ isActive: t }, e, { label: i.a.createElement(d.b, { dir: n }, e.label) }))
+          return i.a.createElement(s.a, o()({ isActive: t }, e, { label: i.a.createElement(d.b, { dir: n }, e.label) }))
         })
       }
     },
     Q3sg: function (e, t, n) {
       'use strict'
-      var o = n('yiKp'),
-        r = n.n(o),
+      var r = n('yiKp'),
+        o = n.n(r),
         a = n('ERkP'),
         i = n.n(a),
         l = n('Lsrn'),
@@ -1074,8 +1091,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(c.a)(
             'svg',
-            r()(
-              r()({}, e),
+            o()(
+              o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -1096,8 +1113,8 @@
     },
     ZGdk: function (e, t, n) {
       'use strict'
-      var o = n('yiKp'),
-        r = n.n(o),
+      var r = n('yiKp'),
+        o = n.n(r),
         a = n('ERkP'),
         i = n.n(a),
         l = n('Lsrn'),
@@ -1106,8 +1123,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(c.a)(
             'svg',
-            r()(
-              r()({}, e),
+            o()(
+              o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -1128,8 +1145,8 @@
     },
     'ggE+': function (e, t, n) {
       'use strict'
-      var o = n('yiKp'),
-        r = n.n(o),
+      var r = n('yiKp'),
+        o = n.n(r),
         a = n('ERkP'),
         i = n.n(a),
         l = n('Lsrn'),
@@ -1138,8 +1155,8 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(c.a)(
             'svg',
-            r()(
-              r()({}, e),
+            o()(
+              o()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -1164,8 +1181,8 @@
     },
     jtO7: function (e, t, n) {
       'use strict'
-      var o = n('97Jx'),
-        r = n.n(o),
+      var r = n('97Jx'),
+        o = n.n(r),
         a = n('m3Bd'),
         i = n.n(a),
         l = n('ERkP'),
@@ -1190,12 +1207,12 @@
       t.a = function (e) {
         var t = e.align,
           n = void 0 === t ? 'center' : t,
-          o = e.color,
+          r = e.color,
           a = e.label,
           l = i()(e, b),
           f = d.a.generate({
             backgroundColor: m.a.theme.colors.transparent,
-            color: m.a.theme.colors[o],
+            color: m.a.theme.colors[r],
             insetFocusRing: !0,
           })
         return c.a.createElement(
@@ -1203,8 +1220,8 @@
           { style: h.container },
           c.a.createElement(
             u.a,
-            r()({}, l, { interactiveStyles: f, style: h.root }),
-            c.a.createElement(s.b, { align: n, color: o }, a),
+            o()({}, l, { interactiveStyles: f, style: h.root }),
+            c.a.createElement(s.b, { align: n, color: r }, a),
           ),
         )
       }
@@ -1215,8 +1232,8 @@
         return U
       })
       n('yiKp')
-      var o = n('97Jx'),
-        r = n.n(o),
+      var r = n('97Jx'),
+        o = n.n(r),
         a = n('m3Bd'),
         i = n.n(a),
         l = n('VrFO'),
@@ -1240,8 +1257,8 @@
         I = n('3XMw'),
         x = n.n(I),
         C = n('tI3i'),
-        T = n.n(C),
-        B = n('oQhu'),
+        B = n.n(C),
+        T = n('oQhu'),
         O = n('rHpw'),
         L = n('aITJ'),
         S = n('MWbm'),
@@ -1286,82 +1303,82 @@
           b()(n, e)
           var t = f()(n)
           function n(e) {
-            var o
+            var r
             c()(this, n),
-              (o = t.call(this, e)),
-              g()(m()(o), '_blurOnBackspaceKeyUpForKaiOS', !1),
-              g()(m()(o), '_isLabelLarge', function () {
-                var e = o.state,
+              (r = t.call(this, e)),
+              g()(m()(r), '_blurOnBackspaceKeyUpForKaiOS', !1),
+              g()(m()(r), '_isLabelLarge', function () {
+                var e = r.state,
                   t = e.actualCount,
                   n = e.isFocused
                 return !t && !n
               }),
               g()(
-                m()(o),
+                m()(r),
                 '_getTextInputStyle',
-                Object(B.a)(function (e) {
+                Object(T.a)(function (e) {
                   return [W.root, !e && W.disabled]
                 }),
               ),
-              g()(m()(o), '_getTextInputType', function () {
-                var e = o.props,
+              g()(m()(r), '_getTextInputType', function () {
+                var e = r.props,
                   t = e.showPasswordVisibilityIcon,
                   n = e.type,
-                  r = o.state.isPasswordRevealed
-                return 'password' === n && t ? (r ? 'text' : 'password') : n
+                  o = r.state.isPasswordRevealed
+                return 'password' === n && t ? (o ? 'text' : 'password') : n
               }),
-              g()(m()(o), '_calculateLength', function (e) {
-                return H(e, o.props.calculateLength)
+              g()(m()(r), '_calculateLength', function (e) {
+                return H(e, r.props.calculateLength)
               }),
-              g()(m()(o), '_shouldRenderDisplayCount', function () {
-                var e = o.state.isFocused,
-                  t = o._isFormInvalid()
-                return Boolean((e || t) && o._getMaxDisplayCount())
+              g()(m()(r), '_shouldRenderDisplayCount', function () {
+                var e = r.state.isFocused,
+                  t = r._isFormInvalid()
+                return Boolean((e || t) && r._getMaxDisplayCount())
               }),
-              g()(m()(o), '_isInvalidNumber', function () {
+              g()(m()(r), '_isInvalidNumber', function () {
                 var e,
                   t,
                   n,
-                  r,
+                  o,
                   a,
-                  i = o.props.type,
+                  i = r.props.type,
                   l =
-                    null === (e = o._textInput) || void 0 === e || null === (t = e.textInputNode) || void 0 === t
+                    null === (e = r._textInput) || void 0 === e || null === (t = e.textInputNode) || void 0 === t
                       ? void 0
                       : t.value,
                   c =
-                    null === (n = o._textInput) ||
+                    null === (n = r._textInput) ||
                     void 0 === n ||
-                    null === (r = n.textInputNode) ||
-                    void 0 === r ||
-                    null === (a = r.validity) ||
+                    null === (o = n.textInputNode) ||
+                    void 0 === o ||
+                    null === (a = o.validity) ||
                     void 0 === a
                       ? void 0
                       : a.badInput
                 return 'number' === i && '' === l && !0 === c
               }),
-              g()(m()(o), '_getActualCount', function (e) {
+              g()(m()(r), '_getActualCount', function (e) {
                 var t = e.length
-                return o._isInvalidNumber() && (t = 1), t
+                return r._isInvalidNumber() && (t = 1), t
               }),
-              g()(m()(o), '_handleBlur', function () {
+              g()(m()(r), '_handleBlur', function () {
                 var e,
-                  t = o.props.onBlur,
-                  n = (null === (e = o._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
-                  r = o._calculateLength(n),
-                  a = o._getActualCount(n)
-                o.setState({ isFocused: !1, displayCount: r, actualCount: a }), t && t()
+                  t = r.props.onBlur,
+                  n = (null === (e = r._textInput) || void 0 === e ? void 0 : e.getValue()) || '',
+                  o = r._calculateLength(n),
+                  a = r._getActualCount(n)
+                r.setState({ isFocused: !1, displayCount: o, actualCount: a }), t && t()
               }),
-              g()(m()(o), '_handleChange', function (e) {
-                var t = o.props.onChange,
-                  n = o.state.previousValue,
-                  r = e.currentTarget.value,
-                  a = o._calculateLength(r),
-                  i = o._getActualCount(r),
-                  l = o._getAdjustedMaxLength()
-                void 0 !== l && r.length > l && n.length < r.length
+              g()(m()(r), '_handleChange', function (e) {
+                var t = r.props.onChange,
+                  n = r.state.previousValue,
+                  o = e.currentTarget.value,
+                  a = r._calculateLength(o),
+                  i = r._getActualCount(o),
+                  l = r._getAdjustedMaxLength()
+                void 0 !== l && o.length > l && n.length < o.length
                   ? (e.currentTarget.value = n)
-                  : (o.setState({
+                  : (r.setState({
                       isFocused: !0,
                       displayCount: a,
                       actualCount: i,
@@ -1369,82 +1386,82 @@
                     }),
                     t && t(e))
               }),
-              g()(m()(o), '_handleFocus', function () {
-                var e = o.props.onFocus
-                o.setState({ isFocused: !0 }), e && e()
+              g()(m()(r), '_handleFocus', function () {
+                var e = r.props.onFocus
+                r.setState({ isFocused: !0 }), e && e()
               }),
-              g()(m()(o), '_handleKeyPress', function (e) {
-                var t = o.props,
+              g()(m()(r), '_handleKeyPress', function (e) {
+                var t = r.props,
                   n = t.multiline,
-                  r = t.onKeyPress,
+                  o = t.onKeyPress,
                   a = t.onSubmitEditing
-                r && r(e),
+                o && o(e),
                   e.isDefaultPrevented() || 'Enter' !== e.key || e.shiftKey || n || !a || (e.preventDefault(), a(e))
               }),
-              g()(m()(o), '_handleKeyDown', function (e) {
-                var t = o.props.onKeyDown,
-                  n = 0 === o.state.displayCount
-                L.b.isKaiOS() && 'Backspace' === e.key && n ? (o._blurOnBackspaceKeyUpForKaiOS = n) : t && t(e)
+              g()(m()(r), '_handleKeyDown', function (e) {
+                var t = r.props.onKeyDown,
+                  n = 0 === r.state.displayCount
+                L.b.isKaiOS() && 'Backspace' === e.key && n ? (r._blurOnBackspaceKeyUpForKaiOS = n) : t && t(e)
               }),
-              g()(m()(o), '_handleKeyUp', function (e) {
-                var t = o.props.onKeyUp
+              g()(m()(r), '_handleKeyUp', function (e) {
+                var t = r.props.onKeyUp
                 L.b.isKaiOS() &&
                   'Backspace' === e.key &&
-                  o._blurOnBackspaceKeyUpForKaiOS &&
-                  (e.preventDefault(), o.blur()),
+                  r._blurOnBackspaceKeyUpForKaiOS &&
+                  (e.preventDefault(), r.blur()),
                   t && t(e)
               }),
-              g()(m()(o), '_handlePasswordVisibilityClick', function (e) {
-                o.setState(function (e) {
+              g()(m()(r), '_handlePasswordVisibilityClick', function (e) {
+                r.setState(function (e) {
                   return { isPasswordRevealed: !e.isPasswordRevealed }
                 })
               }),
-              g()(m()(o), '_setTextInputRef', function (e) {
-                o._textInput = e
+              g()(m()(r), '_setTextInputRef', function (e) {
+                r._textInput = e
               }),
-              g()(m()(o), '_checkComponentPropsUsageCorrectness', function (e) {
+              g()(m()(r), '_checkComponentPropsUsageCorrectness', function (e) {
                 var t = e.defaultValue,
                   n = e.maxLength,
-                  o = e.onChange,
-                  r = e.validLength,
-                  a = !!o,
+                  r = e.onChange,
+                  o = e.validLength,
+                  a = !!r,
                   i = 'string' == typeof e.value,
                   l = 'string' == typeof t
-                T()(
+                B()(
                   !(!l && i && !a),
                   'A controlled component, a component with a value prop, must have an onChange handler. The value prop cannot be undefined.',
                 ),
-                  T()(!(n && r && r > n), 'Max length should be equal or greater than valid length.'),
-                  T()(
-                    !((void 0 !== n && n <= 0) || (void 0 !== r && r <= 0)),
+                  B()(!(n && o && o > n), 'Max length should be equal or greater than valid length.'),
+                  B()(
+                    !((void 0 !== n && n <= 0) || (void 0 !== o && o <= 0)),
                     'Set editable to false instead of limiting the valid character count to 0.',
                   )
               }),
-              g()(m()(o), '_exceedsValidLength', function (e) {
-                var t = o._getMaxDisplayCount()
+              g()(m()(r), '_exceedsValidLength', function (e) {
+                var t = r._getMaxDisplayCount()
                 return !!t && e > t
               }),
-              g()(m()(o), '_getMaxDisplayCount', function () {
-                return o.props.validLength || o.props.maxLength
+              g()(m()(r), '_getMaxDisplayCount', function () {
+                return r.props.validLength || r.props.maxLength
               }),
-              g()(m()(o), '_getAdjustedMaxLength', function () {
-                var e = o.props.maxLength,
-                  t = o.getValue(),
-                  n = o._calculateLength(t)
+              g()(m()(r), '_getAdjustedMaxLength', function () {
+                var e = r.props.maxLength,
+                  t = r.getValue(),
+                  n = r._calculateLength(t)
                 return e ? e + t.length - n : void 0
               }),
-              o._checkComponentPropsUsageCorrectness(e)
-            var r = e.defaultValue,
-              a = e.value || r || ''
+              r._checkComponentPropsUsageCorrectness(e)
+            var o = e.defaultValue,
+              a = e.value || o || ''
             return (
-              (o.state = {
-                displayCount: o._calculateLength(a),
+              (r.state = {
+                displayCount: r._calculateLength(a),
                 actualCount: D(a),
                 isFocused: !1,
                 isPasswordRevealed: !1,
                 previousValue: a,
               }),
-              o
+              r
             )
           }
           return (
@@ -1456,14 +1473,14 @@
                   value: function (e) {
                     var t = this.props,
                       n = t.maxLength,
-                      o = t.onChange,
-                      r = t.validLength,
+                      r = t.onChange,
+                      o = t.validLength,
                       a = t.value,
                       i = e.maxLength,
                       l = e.onChange,
                       c = e.validLength,
                       s = e.value
-                    ;(c === r && n === i && !!o === !!l && ('string' == typeof a) === ('string' == typeof s)) ||
+                    ;(c === o && n === i && !!r === !!l && ('string' == typeof a) === ('string' == typeof s)) ||
                       this._checkComponentPropsUsageCorrectness(this.props)
                   },
                 },
@@ -1473,8 +1490,8 @@
                     var e = this.props,
                       t = e.accessibilityLabel,
                       n = e.editable,
-                      o = e.errorText,
-                      r = e.helperText,
+                      r = e.errorText,
+                      o = e.helperText,
                       a = e.style,
                       i = this.state.isFocused,
                       l = this._isFormInvalid()
@@ -1513,8 +1530,8 @@
                         y.a.createElement(
                           S.a,
                           { style: Q.subtextWrapper },
-                          r ? this._renderHelperText() : null,
-                          l && o ? this._renderErrorText() : null,
+                          o ? this._renderHelperText() : null,
+                          l && r ? this._renderErrorText() : null,
                         ),
                       ),
                     )
@@ -1526,16 +1543,16 @@
                     var e = this.props.label,
                       t = this.state.isFocused ? 'primary' : 'gray700',
                       n = this._isFormInvalid() ? 'red500' : t,
-                      o = this._isLabelLarge()
+                      r = this._isLabelLarge()
                     return y.a.createElement(
                       E.b,
                       {
-                        color: o ? 'gray700' : n,
+                        color: r ? 'gray700' : n,
                         numberOfLines: 1,
-                        size: o ? 'headline1' : 'subtext2',
+                        size: r ? 'headline1' : 'subtext2',
                         style: [
                           Q.textInputHeaderItem,
-                          o && Q.placeholderText,
+                          r && Q.placeholderText,
                           !_.a.reducedMotionEnabled && Q.transition,
                         ],
                       },
@@ -1549,7 +1566,7 @@
                     var e = this.props,
                       t = e.Icon,
                       n = (e.accessibilityLabel, e.calculateLength, e.editable),
-                      o =
+                      r =
                         (e.errorText,
                         e.helperText,
                         e.invalid,
@@ -1574,7 +1591,7 @@
                         { size: 'headline1', style: W.wrapper },
                         y.a.createElement(
                           P.a,
-                          r()({}, a, {
+                          o()({}, a, {
                             editable: n,
                             maxLength: this._getAdjustedMaxLength(),
                             onBlur: this._handleBlur,
@@ -1589,7 +1606,7 @@
                           }),
                         ),
                       ),
-                      o && !this._isLabelLarge() ? this._renderValidationIcon() : null,
+                      r && !this._isLabelLarge() ? this._renderValidationIcon() : null,
                       this._renderPasswordVisibilityIcon(),
                     )
                   },
@@ -1600,16 +1617,16 @@
                     var e = this.props,
                       t = e.showPasswordVisibilityIcon,
                       n = e.type,
-                      o = this.state.isPasswordRevealed
+                      r = this.state.isPasswordRevealed
                     return 'password' === n && t
                       ? y.a.createElement(
                           S.a,
                           { style: Q.passwordVisibilityIconContainer },
                           y.a.createElement(F.a, {
-                            accessibilityLabel: o ? V : z,
+                            accessibilityLabel: r ? V : z,
                             focusable: !0,
-                            hoverLabel: { label: o ? V : z },
-                            icon: o ? y.a.createElement(R.a, null) : y.a.createElement(K.a, null),
+                            hoverLabel: { label: r ? V : z },
+                            icon: r ? y.a.createElement(R.a, null) : y.a.createElement(K.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -1652,15 +1669,15 @@
                     var e = this.state.displayCount,
                       t = this._getMaxDisplayCount(),
                       n = this._exceedsValidLength(e),
-                      o = t && x.a.ia24dc8c(t),
-                      r = x.a.ia24dc8c(e)
+                      r = t && x.a.ia24dc8c(t),
+                      o = x.a.ia24dc8c(e)
                     return y.a.createElement(
                       S.a,
                       { accessibilityLiveRegion: 'polite', style: [Q.textInputHeaderItem, Q.displayCount] },
                       y.a.createElement(
                         E.b,
                         { color: n ? 'red500' : 'gray700', size: 'subtext2' },
-                        o ? ''.concat(r, ' / ').concat(o) : '',
+                        r ? ''.concat(o, ' / ').concat(r) : '',
                       ),
                     )
                   },
@@ -1721,10 +1738,10 @@
                   key: 'getDerivedStateFromProps',
                   value: function (e, t) {
                     var n = e.calculateLength,
-                      o = e.value,
-                      r = 'string' == typeof o ? H(o, n) : 0
-                    return 'string' == typeof o && r !== t.displayCount
-                      ? { displayCount: r, actualCount: o.length }
+                      r = e.value,
+                      o = 'string' == typeof r ? H(r, n) : 0
+                    return 'string' == typeof r && o !== t.displayCount
+                      ? { displayCount: o, actualCount: r.length }
                       : null
                   },
                 },
@@ -1805,7 +1822,7 @@
     piX5: function (e, t, n) {
       'use strict'
       n('uFXj'), n('2G9S')
-      var o = n('rHpw').a.create(function (e) {
+      var r = n('rHpw').a.create(function (e) {
         return {
           border: {
             borderRadius: e.borderRadii.small,
@@ -1823,7 +1840,7 @@
           disabled: { cursor: 'default', opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 },
         }
       })
-      t.a = o
+      t.a = r
     },
     sMuS: function (e, t, n) {
       'use strict'
@@ -1831,8 +1848,8 @@
         n.d(t, 'CreateBookmarkFolderModal', function () {
           return O
         })
-      var o = n('KEM+'),
-        r = n.n(o),
+      var r = n('KEM+'),
+        o = n.n(r),
         a = n('ddV6'),
         i = n.n(a),
         l = (n('tVqn'), n('ho0z'), n('ERkP')),
@@ -1843,11 +1860,11 @@
         m = n('rxPX'),
         p = n('0KEI'),
         b = function (e, t) {
-          var n, o
+          var n, r
           return (
-            (null === (n = t.location) || void 0 === n || null === (o = n.state) || void 0 === o
+            (null === (n = t.location) || void 0 === n || null === (r = n.state) || void 0 === r
               ? void 0
-              : o.tweet_id) || ''
+              : r.tweet_id) || ''
           )
         },
         h = Object(m.a)()
@@ -1876,12 +1893,12 @@
         I = g.a.i6e7e298,
         x = g.a.d4e220b3,
         C = g.a.a0ea2fa5,
-        T = g.a.eec37eab,
-        B = g.a.e41c9b4f,
+        B = g.a.eec37eab,
+        T = g.a.e41c9b4f,
         O = function (e) {
           var t = e.addToast,
             n = e.addTweetToBookmarkFolder,
-            o = e.createBookmarkFolder,
+            r = e.createBookmarkFolder,
             a = e.createLocalApiErrorHandler,
             l = e.history,
             d = e.tweetId,
@@ -1895,17 +1912,17 @@
           })
           var k = function (e) {
               h.scribe({ component: 'bookmark_folders_create', element: 'done', action: 'click' })
-              var r = p.trim()
-              r &&
-                (o(r)
+              var o = p.trim()
+              o &&
+                (r(o)
                   .then(function (e) {
                     if (d) {
-                      var o,
-                        r = null == e || null === (o = e.bookmark_collection_create) || void 0 === o ? void 0 : o.id
-                      if (r) {
+                      var r,
+                        o = null == e || null === (r = e.bookmark_collection_create) || void 0 === r ? void 0 : r.id
+                      if (o) {
                         var a
-                        n(r, { tweetId: d })
-                        var i = B({
+                        n(o, { tweetId: d })
+                        var i = T({
                           bookmarkFolderName:
                             (null == e || null === (a = e.bookmark_collection_create) || void 0 === a
                               ? void 0
@@ -1923,7 +1940,7 @@
             g = function (e) {
               var t
               h.scribe({ component: 'bookmark_folders_create', action: 'error' }),
-                a(((t = {}), r()(t, s.a.GenericBadRequest, { toast: { text: T } }), r()(t, 'showToast', !0), t))(e)
+                a(((t = {}), o()(t, s.a.GenericBadRequest, { toast: { text: B } }), o()(t, 'showToast', !0), t))(e)
             }
           return c.a.createElement(
             f.b,

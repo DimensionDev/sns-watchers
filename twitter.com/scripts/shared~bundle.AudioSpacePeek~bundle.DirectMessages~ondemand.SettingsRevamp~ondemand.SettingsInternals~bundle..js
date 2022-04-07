@@ -39,12 +39,12 @@
         k = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('7x/C'), n('ERkP')),
         _ = n.n(k),
         S = n('6rlp'),
-        E = n('zh9S'),
-        w = n('G6rE'),
+        w = n('zh9S'),
+        E = n('G6rE'),
         I = n('rxPX'),
         x = n('0KEI'),
         T = function (e, t) {
-          return w.e.select(e, t.userId)
+          return E.e.select(e, t.userId)
         },
         A = function (e, t) {
           return t.promotedContent
@@ -62,7 +62,7 @@
             return {
               createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
               log: S.a,
-              scribeAction: E.scribeAction,
+              scribeAction: w.scribeAction,
             }
           }),
         L = n('I57f'),
@@ -90,9 +90,9 @@
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
         M = n('uIZp'),
-        j = n('mN6z'),
-        H = n('caTy'),
-        O = n('3IPs'),
+        H = n('mN6z'),
+        O = n('caTy'),
+        j = n('3IPs'),
         z = n('Rp9C'),
         q = n('X04g'),
         V = n('Re5t'),
@@ -101,8 +101,8 @@
         Y = n('v6aA'),
         G = n('7JQg'),
         J = n('nBUg'),
-        Q = n('IMA+'),
-        X = n('cFuS'),
+        X = n('IMA+'),
+        Q = n('cFuS'),
         Z = [
           'avatarDecoration',
           'bottomControl',
@@ -167,7 +167,7 @@
         displayMode: V.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: X.c.USER,
+        promotedItemType: Q.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
@@ -213,7 +213,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(X.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(Q.b.PROFILE_IMAGE_CLICK)
               }),
               f()(p()(e), '_handleCellClick', function () {
                 var t = e.props,
@@ -230,14 +230,14 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(X.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(Q.b.SCREEN_NAME_CLICK)
               }),
               f()(p()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
                   n = t.saveAsRecentSearch,
                   o = t.shouldStoreTypeaheadItem,
                   r = t.userId
-                n && o && o(q.a.ItemType.USER) && n({ user: { id: r, type: O.a.User } })
+                n && o && o(q.a.ItemType.USER) && n({ user: { id: r, type: j.a.User } })
               }),
               f()(p()(e), '_scribeAction', function (t) {
                 var n,
@@ -272,7 +272,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e) {
-                  return !Object(j.a)(this.props, e)
+                  return !Object(H.a)(this.props, e)
                 },
               },
               {
@@ -322,7 +322,7 @@
                           },
                         },
                         _.a.createElement(
-                          Q.a,
+                          X.a,
                           g()({}, s, {
                             avatarDecoration: n,
                             bottomControl: this._renderBottomControl(),
@@ -336,7 +336,7 @@
                               ? {
                                   contextType: a.contextType,
                                   text: a.text,
-                                  link: a.landingUrl ? Object(H.b)(a.landingUrl) : void 0,
+                                  link: a.landingUrl ? Object(O.b)(a.landingUrl) : void 0,
                                 }
                               : void 0,
                             withDarkerInteractiveBackground: i,
@@ -416,7 +416,7 @@
                   var e = this.props,
                     t = e.promotedContent,
                     n = e.promotedItemType
-                  return t && n === X.c.TWEET ? { promotedTweetState: t } : null
+                  return t && n === Q.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
@@ -448,14 +448,14 @@
                     r = e.promotedItemType,
                     i = e.shouldScribeImpression,
                     a = e.userId
-                  if (o && r === X.c.USER) {
+                  if (o && r === Q.c.USER) {
                     var l = o.disclosure_type,
                       s = o.impression_id
                     n({
                       disclosureType: l,
                       itemId: a,
-                      itemType: X.c.USER,
-                      params: { event: X.b.IMPRESSION, impression_id: s },
+                      itemType: Q.c.USER,
+                      params: { event: Q.b.IMPRESSION, impression_id: s },
                     }).catch(t())
                   } else i && this._scribeAction({ action: 'impression' })
                 },
@@ -494,15 +494,15 @@
         k = n('t62R'),
         _ = n('5mJL'),
         S = n('DNho'),
-        E = n('nBUg'),
-        w = n('qjak'),
+        w = n('nBUg'),
+        E = n('qjak'),
         I = n('ir4X'),
         x = n('htQn'),
         T = n('e5HP'),
         A = n('FBXD'),
         B = n('Nqmc'),
         L = n('rHpw'),
-        U = n('jhWN'),
+        U = n('oSwX'),
         R = n('1I0O'),
         D = n('pBrB'),
         P = n('jV+4'),
@@ -514,9 +514,9 @@
           UserDetailed: 'UserDetailed',
           ExperimentalUserTypeahead: 'ExperimentalUserTypeahead',
         }),
-        j = g.a.createLayoutCache(),
-        H = { viewType: 'user_cell' },
-        O = (function (e) {
+        H = g.a.createLayoutCache(),
+        O = { viewType: 'user_cell' },
+        j = (function (e) {
           p()(n, e)
           var t = h()(n)
           function n() {
@@ -576,7 +576,7 @@
                   o = t.displayMode,
                   r = t.socialContext
                 return r
-                  ? b.a.createElement(E.b.UseProps, null, function (e) {
+                  ? b.a.createElement(w.b.UseProps, null, function (e) {
                       return b.a.createElement(B.a, {
                         avatarSize: n,
                         contextType: r.contextType,
@@ -593,7 +593,7 @@
               y()(d()(e), '_renderUserTypeaheadSocialContext', function () {
                 var t = e.props.socialContext,
                   n =
-                    (t && Object(w.a)({ link: t.link, text: t.text, iconSize: 'small', contextType: t.contextType })) ||
+                    (t && Object(E.a)({ link: t.link, text: t.text, iconSize: 'small', contextType: t.contextType })) ||
                     {},
                   o = n.Icon,
                   r = n.text
@@ -656,24 +656,24 @@
                     f = e.promotedItemType,
                     g = e.screenName,
                     k = e.style,
-                    E = e.testID,
-                    w = e.userId,
+                    w = e.testID,
+                    E = e.userId,
                     I = e.withDarkerInteractiveBackground,
                     A = e.withInteractiveStyling,
                     B = e.withLink,
                     L = e.withUsernameCenterAligned,
                     D = B && !d,
                     P = c === M.UserCompact || L,
-                    O = c === M.ExperimentalUserTypeahead,
+                    j = c === M.ExperimentalUserTypeahead,
                     q =
                       y && f === F.USER && 'earned' !== (y.disclosure_type && y.disclosure_type.toLowerCase())
-                        ? b.a.createElement(T.a, { contentAuthorId: w, promotedContent: y, style: z.promotedIndicator })
+                        ? b.a.createElement(T.a, { contentAuthorId: E, promotedContent: y, style: z.promotedIndicator })
                         : null,
                     V = {
                       accessibilityHidden: !0,
                       decoration: o,
                       focusable: !1,
-                      imageLayoutCache: j,
+                      imageLayoutCache: H,
                       onClick: p,
                       onHoverCardScreenNameClick: h,
                       promotedContent: y,
@@ -687,26 +687,26 @@
                       var t = e.avatarSize
                       return C
                         ? b.a.createElement(R.a, r()({}, V, C, { size: t }))
-                        : b.a.createElement(U.a, r()({ size: t }, V))
+                        : b.a.createElement(U.default, r()({ size: t }, V))
                     }),
                     W = n && 'boolean' == typeof n.checked,
                     Y = void 0 !== m,
                     G = (W ? 'radio' : Y && 'button') || 'listitem',
                     J = this._renderUserName(),
-                    Q = this._renderHighlightedUserLabel(),
-                    X = this._renderBio(),
-                    Z = Q || X || q || l,
+                    X = this._renderHighlightedUserLabel(),
+                    Q = this._renderBio(),
+                    Z = X || Q || q || l,
                     $ = b.a.createElement(
                       b.a.Fragment,
                       null,
-                      Q,
                       X,
+                      Q,
                       q,
                       l ? b.a.createElement(N.a, { style: z.bottomControl }, l) : null,
                     )
                   return b.a.createElement(
                     v.a,
-                    { behavioralEventContext: H },
+                    { behavioralEventContext: O },
                     b.a.createElement(
                       x.a,
                       {
@@ -719,22 +719,22 @@
                         onKeyPress: this._handleKeyPress,
                         pointerEvents: u ? 'none' : void 0,
                         style: [z.root, k],
-                        testID: E,
+                        testID: w,
                         withDarkerInteractiveBackground: I,
                         withInteractiveStyling: null != A ? A : !!m,
                       },
-                      O ? null : this._renderSocialContext(),
+                      j ? null : this._renderSocialContext(),
                       b.a.createElement(
                         _.a,
                         {
                           avatarCell: K,
                           avatarCellStyle: [z.avatarColumn, P && z.bodyColumnCentered],
-                          avatarSize: O ? 'xxxLarge' : i,
+                          avatarSize: j ? 'xxxLarge' : i,
                           cellStyle: [z.bodyColumn, P && z.bodyColumnCentered],
                         },
                         b.a.createElement(N.a, { style: z.body }, J, s),
                         P ? null : $,
-                        O ? this._renderUserTypeaheadSocialContext() : null,
+                        j ? this._renderUserTypeaheadSocialContext() : null,
                       ),
                       Z && P
                         ? b.a.createElement(
@@ -774,7 +774,7 @@
             n
           )
         })(b.a.PureComponent)
-      y()(O, 'defaultProps', { testID: 'UserCell', withLink: !0 })
+      y()(j, 'defaultProps', { testID: 'UserCell', withLink: !0 })
       var z = L.a.create(function (e) {
         return {
           root: {
@@ -796,7 +796,7 @@
           disabledMessageContainer: { flexShrink: 1 },
         }
       })
-      t.a = O
+      t.a = j
     },
     hxu0: function (e, t, n) {
       'use strict'

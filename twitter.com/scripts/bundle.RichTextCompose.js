@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [83, 7, 11, 13, 77],
+  [83, 7, 10, 12, 77],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -3878,7 +3878,7 @@
         }),
         Yt = n('Sksh'),
         Jt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -3927,7 +3927,7 @@
                     m,
                   ),
                 )
-              : C.a.createElement(Zt.a, {
+              : C.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: a,
@@ -3994,7 +3994,7 @@
                       withHoverCard: p,
                       withLink: h,
                     })
-                  : C.a.createElement(Zt.a, {
+                  : C.a.createElement(Zt.default, {
                       avatarRef: a,
                       imageLayoutCache: rn,
                       nativeID: r,
@@ -8779,7 +8779,7 @@
         w = n('MWbm'),
         C = n('htQn'),
         E = n('5mJL'),
-        T = n('jhWN'),
+        T = n('oSwX'),
         x = n('/yvb'),
         S = n('t62R'),
         I = n('rHpw'),
@@ -8841,7 +8841,7 @@
                                 w.a,
                                 { style: [P.avatarColumn, !l && P.avatarColumnWithoutLine] },
                                 l ? g.a.createElement(w.a, { style: P.conversationLine }) : null,
-                                g.a.createElement(T.a, { size: 'large', uri: t }),
+                                g.a.createElement(T.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: P.conversationConnector,
@@ -10796,7 +10796,7 @@
         va = n('tZIO'),
         ya = n('5mJL'),
         ba = n('DNho'),
-        _a = n('jhWN'),
+        _a = n('oSwX'),
         wa = n('rFBM'),
         Ca = n('zfvc'),
         Ea = n('Ujvi'),
@@ -11556,7 +11556,7 @@
                           c
                             ? C.a.createElement(ba.a.Consumer, null, function (e) {
                                 var t = e.avatarSize
-                                return C.a.createElement(_a.a, {
+                                return C.a.createElement(_a.default, {
                                   accessibilityLabel: l ? l.name : void 0,
                                   screenName: l ? l.screen_name : void 0,
                                   size: t,
@@ -14870,7 +14870,8 @@
                     a = t.maxNumberOfLines,
                     r = t.multiline,
                     i = t.numberOfLines,
-                    o =
+                    o = t.withMaxHeight,
+                    l =
                       y.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
@@ -14880,8 +14881,9 @@
                           body: 'body',
                           headline1: 'headline1',
                         }[n]
-                      ]
-                  return { minHeight: (r && i ? i : 1) * o, maxHeight: (r && a ? a : 1) * o }
+                      ],
+                    s = (r && i ? i : 1) * l
+                  return o ? { minHeight: s, maxHeight: (r && a ? a : 1) * l } : { minHeight: s }
                 }),
                 e
               )
@@ -14998,6 +15000,7 @@
         onFocus: S.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
+        withMaxHeight: !0,
       }),
         (M.propTypes = {})
       var P = function (e) {
@@ -15017,7 +15020,7 @@
         u = Object(l.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(208)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(207)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {

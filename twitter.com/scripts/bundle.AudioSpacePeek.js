@@ -4242,7 +4242,7 @@
         x = a('9RkS'),
         I = a('rHpw'),
         P = a('MH+I'),
-        T = a('jhWN'),
+        T = a('oSwX'),
         O = a('jV+4'),
         R = a('MWbm'),
         L = a('kRXa'),
@@ -4271,7 +4271,7 @@
           p.a.createElement(
             R.a,
             { style: F.dockContentRow },
-            p.a.createElement(T.a, {
+            p.a.createElement(T.default, {
               accessibilityHidden: !0,
               focusable: !1,
               onClick: a,
@@ -4347,7 +4347,7 @@
             p.a.createElement(
               R.a,
               { style: [V.wideAvatarContainer, { backgroundColor: i }] },
-              p.a.createElement(T.a, {
+              p.a.createElement(T.default, {
                 accessibilityHidden: !0,
                 focusable: !1,
                 onClick: r,
@@ -6000,7 +6000,7 @@
         v = Object(f.a)({
           loader: function () {
             return m.a.emoji.then(function () {
-              return Promise.all([a.e(17), a.e(228)]).then(a.bind(null, '4AX5'))
+              return Promise.all([a.e(17), a.e(227)]).then(a.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -6009,7 +6009,7 @@
         }),
         g = a('MWbm'),
         b = a('TIdA'),
-        y = a('jhWN'),
+        y = a('oSwX'),
         S = a('t62R'),
         E = a('jV+4'),
         w = a('rHpw'),
@@ -6030,7 +6030,7 @@
           f = e.profile_image_url_https || '',
           h =
             a ||
-            l.a.createElement(y.a, {
+            l.a.createElement(y.default, {
               imageLayoutCache: C,
               screenName: s,
               shape: p ? 'hex' : 'circle',
@@ -6106,7 +6106,7 @@
       }
       var R = 'xxLarge'
       function L(e) {
-        var t = y.a.getSizeStyle('xxLarge').width || e.spacesPx.space48,
+        var t = y.default.getSizeStyle('xxLarge').width || e.spacesPx.space48,
           a = e.spacesPx.space20,
           n = e.spacesPx.space8,
           r = e.spacesPx.space80 + 2 * n,

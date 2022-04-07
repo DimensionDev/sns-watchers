@@ -1680,7 +1680,7 @@
         g = 'searchPeople',
         _ = a('4e/K'),
         w = a('MWbm'),
-        I = a('jhWN'),
+        I = a('oSwX'),
         E = a('aV/s'),
         C = a('rHpw'),
         k = a('GZwR'),
@@ -1704,7 +1704,7 @@
                   a = c.props.onRemove.bind(s()(c), e),
                   r =
                     e.type === k.b.User
-                      ? y.a.createElement(I.a, {
+                      ? y.a.createElement(I.default, {
                           accessibilityHidden: !0,
                           focusable: !1,
                           size: 'custom',

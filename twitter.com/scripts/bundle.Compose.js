@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [43, 6, 7, 11, 13],
+  [43, 6, 7, 10, 12],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -4340,7 +4340,7 @@
         }),
         Qt = n('Sksh'),
         Jt = n('1I0O'),
-        Zt = n('jhWN'),
+        Zt = n('oSwX'),
         $t = function (e) {
           var t = e.avatarRef,
             n = e.imageLayoutCache,
@@ -4389,7 +4389,7 @@
                     m,
                   ),
                 )
-              : C.a.createElement(Zt.a, {
+              : C.a.createElement(Zt.default, {
                   avatarRef: t,
                   imageLayoutCache: n,
                   nativeID: a,
@@ -4456,7 +4456,7 @@
                       withHoverCard: p,
                       withLink: h,
                     })
-                  : C.a.createElement(Zt.a, {
+                  : C.a.createElement(Zt.default, {
                       avatarRef: a,
                       imageLayoutCache: rn,
                       nativeID: r,
@@ -7029,7 +7029,7 @@
         R = n('FBXD'),
         L = n('Nqmc'),
         P = n('rHpw'),
-        M = n('jhWN'),
+        M = n('oSwX'),
         D = n('1I0O'),
         A = n('pBrB'),
         O = n('jV+4'),
@@ -7214,7 +7214,7 @@
                       var t = e.avatarSize
                       return f
                         ? b.a.createElement(D.a, r()({}, W, f, { size: t }))
-                        : b.a.createElement(M.a, r()({ size: t }, W))
+                        : b.a.createElement(M.default, r()({ size: t }, W))
                     }),
                     q = n && 'boolean' == typeof n.checked,
                     K = void 0 !== m,
@@ -9431,7 +9431,7 @@
         w = n('MWbm'),
         C = n('htQn'),
         E = n('5mJL'),
-        T = n('jhWN'),
+        T = n('oSwX'),
         x = n('/yvb'),
         S = n('t62R'),
         I = n('rHpw'),
@@ -9493,7 +9493,7 @@
                                 w.a,
                                 { style: [P.avatarColumn, !l && P.avatarColumnWithoutLine] },
                                 l ? v.a.createElement(w.a, { style: P.conversationLine }) : null,
-                                v.a.createElement(T.a, { size: 'large', uri: t }),
+                                v.a.createElement(T.default, { size: 'large', uri: t }),
                               )
                             : null,
                           avatarCellStyle: P.conversationConnector,
@@ -11448,7 +11448,7 @@
         ga = n('tZIO'),
         ya = n('5mJL'),
         ba = n('DNho'),
-        _a = n('jhWN'),
+        _a = n('oSwX'),
         wa = n('rFBM'),
         Ca = n('zfvc'),
         Ea = n('Ujvi'),
@@ -12208,7 +12208,7 @@
                           c
                             ? C.a.createElement(ba.a.Consumer, null, function (e) {
                                 var t = e.avatarSize
-                                return C.a.createElement(_a.a, {
+                                return C.a.createElement(_a.default, {
                                   accessibilityLabel: l ? l.name : void 0,
                                   screenName: l ? l.screen_name : void 0,
                                   size: t,
@@ -15364,7 +15364,7 @@
         u = Object(l.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(208)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(17), n.e(207)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {

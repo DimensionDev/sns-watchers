@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [363],
+  [362],
   {
     '/Hsh': function (t, e, r) {
       var i
@@ -2181,6 +2181,7 @@
                           .catch(function (e) {
                             i.warn(e), i.resetFragmentLoading(t)
                           })
+                          .catch(function () {})
                       }),
                       (D.flushMainBuffer = function (t, e, r) {
                         if ((void 0 === r && (r = null), t - e)) {
@@ -2237,6 +2238,7 @@
                           .catch(function (r) {
                             e.warn(r), e.resetFragmentLoading(t)
                           })
+                          .catch(function () {})
                       }),
                       (D.fragContextChanged = function (t) {
                         var e = this.fragCurrent
@@ -6386,20 +6388,20 @@
                           var D = y.startPTS,
                             R = y.endPTS,
                             k = y.startDTS,
-                            I = y.endDTS
+                            _ = y.endDTS
                           h &&
                             (h.elementaryStreams[c.ElementaryStreamTypes.AUDIO] = {
                               startPTS: D,
                               endPTS: R,
                               startDTS: k,
-                              endDTS: I,
+                              endDTS: _,
                             }),
-                            d.setElementaryStreamInfo(c.ElementaryStreamTypes.AUDIO, D, R, k, I),
+                            d.setElementaryStreamInfo(c.ElementaryStreamTypes.AUDIO, D, R, k, _),
                             this.bufferFragmentData(y, d, h, l)
                         }
                         if (null != p && null !== (e = p.samples) && void 0 !== e && e.length) {
-                          var _ = { frag: d, id: r, samples: p.samples }
-                          s.trigger(a.Events.FRAG_PARSING_METADATA, _)
+                          var I = { frag: d, id: r, samples: p.samples }
+                          s.trigger(a.Events.FRAG_PARSING_METADATA, I)
                         }
                         if (v) {
                           var C = { frag: d, id: r, samples: v.samples }
@@ -7761,8 +7763,8 @@
                           D = this.uint8ArrayToUint32Array_(r),
                           R = D[0],
                           k = D[1],
-                          I = D[2],
-                          _ = D[3],
+                          _ = D[2],
+                          I = D[3],
                           C = new Int32Array(t),
                           O = new Int32Array(C.length),
                           w = this.networkToHostOrderSwap;
@@ -7818,12 +7820,12 @@
                             y[v + 3]),
                           (O[e] = w(i ^ R)),
                           (O[e + 1] = w(a ^ k)),
-                          (O[e + 2] = w(s ^ I)),
-                          (O[e + 3] = w(n ^ _)),
+                          (O[e + 2] = w(s ^ _)),
+                          (O[e + 3] = w(n ^ I)),
                           (R = d),
                           (k = h),
-                          (I = f),
-                          (_ = g),
+                          (_ = f),
+                          (I = g),
                           (e += 4)
                       }
                       return O.buffer
@@ -9286,8 +9288,8 @@
                               '\n        timeOffset: ' +
                               m,
                           )
-                          var I = new s.TransmuxConfig(r, i, e, l, d)
-                          this.configureTransmuxer(I)
+                          var _ = new s.TransmuxConfig(r, i, e, l, d)
+                          this.configureTransmuxer(_)
                         }
                         if (((this.frag = n), (this.part = o), p))
                           p.postMessage(
@@ -9295,12 +9297,12 @@
                             t instanceof ArrayBuffer ? [t] : [],
                           )
                         else if (v) {
-                          var _ = v.push(t, y, c, k)
-                          Object(s.isPromise)(_)
-                            ? _.then(function (t) {
+                          var I = v.push(t, y, c, k)
+                          Object(s.isPromise)(I)
+                            ? I.then(function (t) {
                                 g.handleTransmuxComplete(t)
                               })
-                            : this.handleTransmuxComplete(_)
+                            : this.handleTransmuxComplete(I)
                         }
                       }),
                       (e.flush = function (t) {
@@ -9552,16 +9554,16 @@
                           D = d.videoCodec,
                           R = d.defaultInitPts,
                           k = d.duration,
-                          I = d.initSegmentData
+                          _ = d.initSegmentData
                         if (
-                          ((y || T || L) && this.resetInitSegment(I, A, D, k),
+                          ((y || T || L) && this.resetInitSegment(_, A, D, k),
                           y && this.resetInitialTimestamp(R),
                           m || this.resetContiguity(),
                           this.needsProbing(o, y, T))
                         ) {
                           if (l.dataLength) {
-                            var _ = l.flush()
-                            o = Object(g.appendUint8Array)(_, o)
+                            var I = l.flush()
+                            o = Object(g.appendUint8Array)(I, o)
                           }
                           this.configureTransmuxer(o, d)
                         }
@@ -9887,28 +9889,28 @@
                         ;(R -= (R + k) % 188) < e.byteLength &&
                           !n &&
                           (this.remainderData = new Uint8Array(e.buffer, R, e.buffer.byteLength - R))
-                        for (var I = 0, _ = k; _ < R; _ += 188)
-                          if (71 === e[_]) {
-                            var C = !!(64 & e[_ + 1]),
-                              O = ((31 & e[_ + 1]) << 8) + e[_ + 2],
+                        for (var _ = 0, I = k; I < R; I += 188)
+                          if (71 === e[I]) {
+                            var C = !!(64 & e[I + 1]),
+                              O = ((31 & e[I + 1]) << 8) + e[I + 2],
                               w = void 0
-                            if ((48 & e[_ + 3]) >> 4 > 1) {
-                              if ((w = _ + 5 + e[_ + 4]) === _ + 188) continue
-                            } else w = _ + 4
+                            if ((48 & e[I + 3]) >> 4 > 1) {
+                              if ((w = I + 5 + e[I + 4]) === I + 188) continue
+                            } else w = I + 4
                             switch (O) {
                               case m:
                                 C && (y && (s = v(y)) && this.parseAVCPES(a, p, s, !1), (y = { data: [], size: 0 })),
-                                  y && (y.data.push(e.subarray(w, _ + 188)), (y.size += _ + 188 - w))
+                                  y && (y.data.push(e.subarray(w, I + 188)), (y.size += I + 188 - w))
                                 break
                               case E:
                                 C &&
                                   (S && (s = v(S)) && (d.isAAC ? this.parseAACPES(d, s) : this.parseMPEGPES(d, s)),
                                   (S = { data: [], size: 0 })),
-                                  S && (S.data.push(e.subarray(w, _ + 188)), (S.size += _ + 188 - w))
+                                  S && (S.data.push(e.subarray(w, I + 188)), (S.size += I + 188 - w))
                                 break
                               case T:
                                 C && (b && (s = v(b)) && this.parseID3PES(h, s), (b = { data: [], size: 0 })),
-                                  b && (b.data.push(e.subarray(w, _ + 188)), (b.size += _ + 188 - w))
+                                  b && (b.data.push(e.subarray(w, I + 188)), (b.size += I + 188 - w))
                                 break
                               case 0:
                                 C && (w += e[w] + 1), (D = this._pmtId = f(e, w))
@@ -9919,7 +9921,7 @@
                                 ;(m = x.avc) > 0 && (a.pid = m),
                                   (E = x.audio) > 0 && ((d.pid = E), (d.isAAC = x.isAAC)),
                                   (T = x.id3) > 0 && (h.pid = T),
-                                  L && !A && (u.logger.log('reparse from beginning'), (L = !1), (_ = k - 188)),
+                                  L && !A && (u.logger.log('reparse from beginning'), (L = !1), (I = k - 188)),
                                   (A = this.pmtParsed = !0)
                                 break
                               case 17:
@@ -9928,13 +9930,13 @@
                               default:
                                 L = !0
                             }
-                          } else I++
-                        I > 0 &&
+                          } else _++
+                        _ > 0 &&
                           this.observer.emit(o.Events.ERROR, o.Events.ERROR, {
                             type: c.ErrorTypes.MEDIA_ERROR,
                             details: c.ErrorDetails.FRAG_PARSING_ERROR,
                             fatal: !1,
-                            reason: 'Found ' + I + ' TS packet/s that do not start with 0x47',
+                            reason: 'Found ' + _ + ' TS packet/s that do not start with 0x47',
                           }),
                           (a.pesData = y),
                           (d.pesData = S),
@@ -10528,15 +10530,15 @@
                     E.setStreamController(R), T.setStreamController(R)
                     var k = [A, R]
                     this.networkControllers = k
-                    var I = [S, b, m, y, E, T, L, D]
+                    var _ = [S, b, m, y, E, T, L, D]
                     ;(this.audioTrackController = this.createController(r.audioTrackController, null, k)),
                       this.createController(r.audioStreamController, D, k),
                       (this.subtitleTrackController = this.createController(r.subtitleTrackController, null, k)),
                       this.createController(r.subtitleStreamController, D, k),
-                      this.createController(r.timelineController, null, I),
-                      (this.emeController = this.createController(r.emeController, null, I)),
-                      (this.latencyController = this.createController(o.default, null, I)),
-                      (this.coreComponents = I)
+                      this.createController(r.timelineController, null, _),
+                      (this.emeController = this.createController(r.emeController, null, _)),
+                      (this.latencyController = this.createController(o.default, null, _)),
+                      (this.coreComponents = _)
                   }
                   t.isSupported = function () {
                     return Object(h.isSupported)()
@@ -10663,7 +10665,7 @@
                       {
                         key: 'version',
                         get: function () {
-                          return '1.0.0'
+                          return '1.0.1'
                         },
                       },
                       {
@@ -12047,11 +12049,11 @@
                           D = 0,
                           R = null,
                           k = new s.Fragment(c, e),
-                          I = -1,
-                          _ = !1
+                          _ = -1,
+                          I = !1
                         for (f.lastIndex = 0, y.m3u8 = t; null !== (h = f.exec(t)); ) {
-                          _ &&
-                            ((_ = !1),
+                          I &&
+                            ((I = !1),
                             ((k = new s.Fragment(c, e)).start = A),
                             (k.sn = b),
                             (k.cc = D),
@@ -12077,14 +12079,14 @@
                               (A += k.duration),
                               b++,
                               (L = 0),
-                              (_ = !0))
+                              (I = !0))
                           else if (h[4]) {
                             var w = (' ' + h[4]).slice(1)
                             R ? k.setByteRange(w, R) : k.setByteRange(w)
                           } else if (h[5])
                             (k.rawProgramDateTime = (' ' + h[5]).slice(1)),
                               k.tagList.push(['PROGRAM-DATE-TIME', k.rawProgramDateTime]),
-                              -1 === I && (I = T.length)
+                              -1 === _ && (_ = T.length)
                           else {
                             if (!(h = h[0].match(g))) {
                               u.logger.warn('No matches on slow regex match for level playlist!')
@@ -12181,7 +12183,7 @@
                                   m && (k.levelkey = m),
                                   (k.initSegment = null),
                                   (S = k),
-                                  (_ = !0)
+                                  (I = !0)
                                 break
                               case 'SERVER-CONTROL':
                                 var Q = new l.AttrList(P)
@@ -12254,14 +12256,14 @@
                           y.fragmentHint && (A += y.fragmentHint.duration),
                           (y.totalduration = A),
                           (y.endCC = D),
-                          I > 0 &&
+                          _ > 0 &&
                             (function (t, e) {
                               for (var r = t[e], i = e; i--; ) {
                                 var n = t[i]
                                 if (!n) return
                                 ;(n.programDateTime = r.programDateTime - 1e3 * n.duration), (r = n)
                               }
-                            })(T, I),
+                            })(T, _),
                           y
                         )
                       }),
@@ -13737,18 +13739,18 @@
                                   L +
                                   ' video samples due to a missing keyframe',
                               )
-                              var I = this.getVideoStartPts(e.samples)
+                              var _ = this.getVideoStartPts(e.samples)
                               ;(e.samples = e.samples.slice(k)),
                                 (e.dropped += k),
-                                (T += (e.samples[0].pts - I) / (e.timescale || 9e4))
+                                (T += (e.samples[0].pts - _) / (e.timescale || 9e4))
                             } else
                               -1 === k &&
                                 (l.logger.warn('[mp4-remuxer]: No keyframe found out of ' + L + ' video samples'),
                                 (v = !1))
                           if (this.ISGenerated) {
                             if (A && D) {
-                              var _ = this.getVideoStartPts(e.samples),
-                                C = (p(t.samples[0].pts, _) - _) / e.inputTimeScale
+                              var I = this.getVideoStartPts(e.samples),
+                                C = (p(t.samples[0].pts, I) - I) / e.inputTimeScale
                               ;(E += Math.max(0, C)), (T += Math.max(0, -C))
                             }
                             if (A) {
@@ -13847,12 +13849,12 @@
                           R = 0,
                           k = !1
                         ;(r && null !== b) || (b = e * v - (m[0].pts - p(m[0].dts, m[0].pts)))
-                        for (var I = 0; I < T; I++) {
-                          var _ = m[I]
-                          ;(_.pts = p(_.pts - S, b)),
-                            (_.dts = p(_.dts - S, b)),
-                            _.dts > _.pts && (R = Math.max(Math.min(R, _.pts - _.dts), -18e3)),
-                            _.dts < m[I > 0 ? I - 1 : I].dts && (k = !0)
+                        for (var _ = 0; _ < T; _++) {
+                          var I = m[_]
+                          ;(I.pts = p(I.pts - S, b)),
+                            (I.dts = p(I.dts - S, b)),
+                            I.dts > I.pts && (R = Math.max(Math.min(R, I.pts - I.dts), -18e3)),
+                            I.dts < m[_ > 0 ? _ - 1 : _].dts && (k = !0)
                         }
                         k &&
                           m.sort(function (t, e) {
@@ -14029,23 +14031,23 @@
                             R < T.length;
                             R++
                           ) {
-                            var I = T[R],
-                              _ = I.pts,
-                              C = _ - k,
+                            var _ = T[R],
+                              I = _.pts,
+                              C = I - k,
                               O = Math.abs((1e3 * C) / c)
                             if (C <= -D * g && A)
                               0 === R &&
                                 (l.logger.warn(
                                   'Audio frame @ ' +
-                                    (_ / c).toFixed(3) +
+                                    (I / c).toFixed(3) +
                                     's overlaps nextAudioPts by ' +
                                     Math.round((1e3 * C) / c) +
                                     ' ms.',
                                 ),
-                                (this.nextAudioPts = b = k = _))
+                                (this.nextAudioPts = b = k = I))
                             else if (C >= D * g && O < 1e4 && A) {
                               var w = Math.round(C / g)
-                              ;(k = _ - w * g) < 0 && (w--, (k += g)),
+                              ;(k = I - w * g) < 0 && (w--, (k += g)),
                                 0 === R && (this.nextAudioPts = b = k),
                                 l.logger.warn(
                                   '[mp4-remuxer]: Injecting ' +
@@ -14063,13 +14065,13 @@
                                   (l.logger.log(
                                     '[mp4-remuxer]: Unable to get silent frame for given audio codec; duplicating last frame instead.',
                                   ),
-                                  (F = I.unit.subarray())),
+                                  (F = _.unit.subarray())),
                                   T.splice(R, 0, { unit: F, pts: P }),
                                   (k += g),
                                   R++
                               }
                             }
-                            ;(I.pts = k), (k += g)
+                            ;(_.pts = k), (k += g)
                           }
                         for (var M, N = null, U = null, B = 0, G = T.length; G--; ) B += T[G].unit.byteLength
                         for (var j = 0, K = T.length; j < K; j++) {
@@ -15078,7 +15080,7 @@
                         (this.rows = [])
                       for (var e = 0; e < o; e++) this.rows.push(new y(t))
                       ;(this.logger = t),
-                        (this.currRow = -1),
+                        (this.currRow = 14),
                         (this.nrRollUpRows = null),
                         (this.lastOutputScreen = null),
                         this.reset()
@@ -15087,7 +15089,7 @@
                     return (
                       (e.reset = function () {
                         for (var t = 0; t < o; t++) this.rows[t].clear()
-                        this.currRow = -1
+                        this.currRow = 14
                       }),
                       (e.equals = function (t) {
                         for (var e = !0, r = 0; r < o; r++)
@@ -15115,9 +15117,7 @@
                         this.rows[this.currRow].clearToEndOfRow()
                       }),
                       (e.insertChar = function (t) {
-                        ;-1 !== this.currRow
-                          ? this.rows[this.currRow].insertChar(t)
-                          : this.logger.log(i.INFO, 'No row has been set. Ignoring characters.')
+                        this.rows[this.currRow].insertChar(t)
                       }),
                       (e.setPen = function (t) {
                         this.rows[this.currRow].setPenStyles(t)
@@ -16703,20 +16703,20 @@
                                   L = 0 != (2048 & c),
                                   R = 0,
                                   k = d(a, 4),
-                                  I = 8
-                                f && ((g = d(a, I)), (I += 4)), v && (I += 4)
-                                for (var _ = g + u, C = 0; C < k; C++) {
+                                  _ = 8
+                                f && ((g = d(a, _)), (_ += 4)), v && (_ += 4)
+                                for (var I = g + u, C = 0; C < k; C++) {
                                   if (
-                                    (m ? ((E = d(a, I)), (I += 4)) : (E = p),
-                                    T ? ((S = d(a, I)), (I += 4)) : (S = y),
-                                    b && (I += 4),
-                                    L && ((R = 0 === l ? d(a, I) : h(a, I)), (I += 4)),
+                                    (m ? ((E = d(a, _)), (_ += 4)) : (E = p),
+                                    T ? ((S = d(a, _)), (_ += 4)) : (S = y),
+                                    b && (_ += 4),
+                                    L && ((R = 0 === l ? d(a, _) : h(a, _)), (_ += 4)),
                                     e.type === n.ElementaryStreamTypes.VIDEO)
                                   )
                                     for (var O = 0; O < S; ) {
-                                      var w = d(i, _),
-                                        x = 31 & i[(_ += 4)]
-                                      A(o, x) && D(i.subarray(_, _ + w), t + R / s, r), (_ += w), (O += w + 4)
+                                      var w = d(i, I),
+                                        x = 31 & i[(I += 4)]
+                                      A(o, x) && D(i.subarray(I, I + w), t + R / s, r), (I += w), (O += w + 4)
                                     }
                                   t += E / s
                                 }

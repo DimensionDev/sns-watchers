@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [12],
+  [13],
   {
     '3EFP': function (e, t, n) {
       'use strict'
@@ -560,7 +560,7 @@
         k = n('FBXD'),
         R = n('Nqmc'),
         F = n('rHpw'),
-        L = n('jhWN'),
+        L = n('oSwX'),
         O = n('1I0O'),
         U = n('pBrB'),
         P = n('jV+4'),
@@ -745,7 +745,7 @@
                       var t = e.avatarSize
                       return f
                         ? g.a.createElement(O.a, r()({}, B, f, { size: t }))
-                        : g.a.createElement(L.a, r()({ size: t }, B))
+                        : g.a.createElement(L.default, r()({ size: t }, B))
                     }),
                     K = n && 'boolean' == typeof n.checked,
                     Y = void 0 !== h,

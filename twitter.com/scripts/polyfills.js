@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__.runtime &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [364],
+    [363],
     {
       '+5th': function (t, e, n) {
         var r = n('cLeC')
@@ -2406,10 +2406,10 @@ window.__SCRIPTS_LOADED__.runtime &&
         ;(t.exports = function (t, e) {
           return o[t] || (o[t] = void 0 !== e ? e : {})
         })('versions', []).push({
-          version: '3.21.0',
+          version: '3.21.1',
           mode: r ? 'pure' : 'global',
           copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-          license: 'https://github.com/zloirock/core-js/blob/v3.21.0/LICENSE',
+          license: 'https://github.com/zloirock/core-js/blob/v3.21.1/LICENSE',
           source: 'https://github.com/zloirock/core-js',
         })
       },
@@ -2606,7 +2606,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                 null,
                 e ||
                   function () {
-                    throw 1
+                    return 1
                   },
                 1,
               )

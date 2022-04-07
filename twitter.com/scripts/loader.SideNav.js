@@ -279,7 +279,7 @@
         L = a('FBXD'),
         B = a('Nqmc'),
         A = a('rHpw'),
-        M = a('jhWN'),
+        M = a('oSwX'),
         U = a('1I0O'),
         H = a('pBrB'),
         P = a('jV+4'),
@@ -464,12 +464,12 @@
                       var t = e.avatarSize
                       return y
                         ? b.a.createElement(U.a, r()({}, W, y, { size: t }))
-                        : b.a.createElement(M.a, r()({ size: t }, W))
+                        : b.a.createElement(M.default, r()({ size: t }, W))
                     }),
                     q = a && 'boolean' == typeof a.checked,
                     G = void 0 !== m,
-                    Y = (q ? 'radio' : G && 'button') || 'listitem',
-                    X = this._renderUserName(),
+                    X = (q ? 'radio' : G && 'button') || 'listitem',
+                    Y = this._renderUserName(),
                     Q = this._renderHighlightedUserLabel(),
                     J = this._renderBio(),
                     Z = Q || J || V || c,
@@ -488,7 +488,7 @@
                       _.a,
                       {
                         accessibilityLabel: t,
-                        accessibilityRole: Y,
+                        accessibilityRole: X,
                         accessibilityState: a,
                         disabled: !!d,
                         focusable: q || G,
@@ -509,7 +509,7 @@
                           avatarSize: N ? 'xxxLarge' : o,
                           cellStyle: [j.bodyColumn, P && j.bodyColumnCentered],
                         },
-                        b.a.createElement(F.a, { style: j.body }, X, l),
+                        b.a.createElement(F.a, { style: j.body }, Y, l),
                         P ? null : $,
                         N ? this._renderUserTypeaheadSocialContext() : null,
                       ),
@@ -802,8 +802,8 @@
         })(h.a.Component),
         q = h.a.createElement(N.a, null),
         G = Object(j.a)(K),
-        Y = a('N5qz'),
-        X = 'SideNav_NewTweet_Button',
+        X = a('N5qz'),
+        Y = 'SideNav_NewTweet_Button',
         Q = a('MWbm'),
         J = a('cHvH'),
         Z = a('rHpw'),
@@ -884,12 +884,12 @@
                       style: [
                         ee.button,
                         !r && ee.alignItemsCenter,
-                        'tall' === Y.a.getHeightMode(e) && ee.withTallHeight,
+                        'tall' === X.a.getHeightMode(e) && ee.withTallHeight,
                       ],
                     },
                     a
                       ? h.a.createElement(a, { isExpanded: r })
-                      : h.a.createElement(G, { composeOptions: n, isExpanded: r, testID: X }),
+                      : h.a.createElement(G, { composeOptions: n, isExpanded: r, testID: Y }),
                   )
                 },
               },
@@ -1511,7 +1511,7 @@
               V = r.a.createElement(H.a, { style: o }),
               q = r.a.createElement(F, { style: o }),
               G = r.a.createElement(i.a, { borderColor: 'cellBackground', userAvatarSize: t, userAvatarUrls: a }),
-              Y = r.a.createElement(R.a, { style: o })
+              X = r.a.createElement(R.a, { style: o })
             switch (e) {
               case l.a.Pin:
                 return c
@@ -1554,7 +1554,7 @@
               case l.a.Facepile:
                 return G
               case l.a.Bird:
-                return Y
+                return X
               case l.a.TextOnly:
               default:
                 return null

@@ -2988,8 +2988,8 @@
         s = a('ddV6'),
         l = a.n(s),
         u = a('AS3p'),
-        d = a('KUGV'),
-        h = a('Irs7'),
+        d = a('Irs7'),
+        h = a('aITJ'),
         p = a('MWbm'),
         m = a('t62R'),
         f = a('cHvH'),
@@ -3042,7 +3042,7 @@
         )
       }
       var I = r.a.forwardRef(function (e, t) {
-          var a = Object(h.b)()
+          var a = Object(d.b)()
           r.a.useEffect(
             function () {
               a.scribe(c()(c()({}, w), {}, { action: 'impression' }))
@@ -3054,7 +3054,7 @@
                 t = l()(e, 2),
                 a = t[0],
                 n = t[1],
-                o = Object(h.b)()
+                o = Object(d.b)()
               return {
                 isExpanded: a,
                 expand: function () {
@@ -3065,10 +3065,10 @@
             i = n.expand,
             s = n.isExpanded,
             m = (function () {
-              var e = Object(h.b)(),
+              var e = Object(d.b)(),
                 t = r.a.useContext(o.a).featureSwitches,
                 a = r.a.useState(function () {
-                  return u.e(t) && !Object(d.a)()
+                  return u.e(t) && !h.b.getTwitterAppVersion()
                 }),
                 n = l()(a, 2),
                 i = n[0],
@@ -3766,14 +3766,14 @@
         s = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([a.e(0), a.e(352)]).then(a.bind(null, 'a+ad'))
+            return Promise.all([a.e(0), a.e(351)]).then(a.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: s.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([a.e(0), a.e(354)]).then(a.bind(null, 'hX2d'))
+            return Promise.all([a.e(0), a.e(353)]).then(a.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: s.a.Critical,
@@ -4732,7 +4732,7 @@
         x = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('XBtf')),
         I = {
           loader: function () {
-            return a.e(232).then(a.bind(null, 'sc5C'))
+            return a.e(231).then(a.bind(null, 'sc5C'))
           },
           loaderKey: 'relatedSearchDefaultLoader',
           strategy: x.a.Critical,
@@ -4741,21 +4741,21 @@
         R = (a('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
         O = {
           loader: function () {
-            return a.e(357).then(a.bind(null, '5aND'))
+            return a.e(356).then(a.bind(null, '5aND'))
           },
           loaderKey: 'spellingExpandLoader',
           strategy: x.a.Critical,
         },
         L = {
           loader: function () {
-            return a.e(357).then(a.bind(null, '77Dd'))
+            return a.e(356).then(a.bind(null, '77Dd'))
           },
           loaderKey: 'spellingReplaceLoader',
           strategy: x.a.Critical,
         },
         B = {
           loader: function () {
-            return a.e(357).then(a.bind(null, 'D4Iv'))
+            return a.e(356).then(a.bind(null, 'D4Iv'))
           },
           loaderKey: 'spellingSuggestLoader',
           strategy: x.a.Critical,
@@ -6349,7 +6349,7 @@
           a('kYxP'),
           {
             loader: function () {
-              return Promise.all([a.e(0), a.e(224)]).then(a.bind(null, 'tFiq'))
+              return Promise.all([a.e(0), a.e(223)]).then(a.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: a('XBtf').a.Critical,

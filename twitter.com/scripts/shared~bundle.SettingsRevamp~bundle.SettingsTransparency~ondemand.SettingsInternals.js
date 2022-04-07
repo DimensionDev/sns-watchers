@@ -15,8 +15,8 @@
         p = n.n(d),
         h = n('KEM+'),
         m = n.n(h),
-        g = (n('2G9S'), n('uFXj'), n('ERkP')),
-        y = n.n(g),
+        y = (n('2G9S'), n('uFXj'), n('ERkP')),
+        g = n.n(y),
         f = n('t62R'),
         b = n('rHpw'),
         v = n('MWbm'),
@@ -31,13 +31,13 @@
               (e = t.call.apply(t, [this].concat(o))),
               m()(s()(e), '_renderSubtextAndLink', function () {
                 var t = e.props.subtext
-                return y.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, t, ' ', e._renderLearnMore())
+                return g.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, t, ' ', e._renderLearnMore())
               }),
               m()(s()(e), '_renderLearnMore', function () {
                 var t = e.props,
                   n = t.learnMoreLabel,
                   r = t.learnMoreLink
-                return r && n ? y.a.createElement(f.b, { link: r, size: 'subtext2' }, n) : null
+                return r && n ? g.a.createElement(f.b, { link: r, size: 'subtext2' }, n) : null
               }),
               e
             )
@@ -53,14 +53,14 @@
                     r = e.learnMoreLink,
                     a = e.subtext,
                     o = e.withBottomBorder
-                  return y.a.createElement(
+                  return g.a.createElement(
                     v.a,
                     { style: [x.root, o && x.bottomBorder] },
-                    y.a.createElement(f.b, null, t),
+                    g.a.createElement(f.b, null, t),
                     a
                       ? n && r
                         ? this._renderSubtextAndLink()
-                        : y.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, a)
+                        : g.a.createElement(f.b, { color: 'gray700', size: 'subtext2' }, a)
                       : null,
                   )
                 },
@@ -68,7 +68,7 @@
             ]),
             n
           )
-        })(y.a.Component)
+        })(g.a.Component)
       m()(w, 'defaultProps', { withBottomBorder: !0 })
       var x = b.a.create(function (e) {
         return {
@@ -89,10 +89,10 @@
     '55TG': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return g
+        return y
       }),
         n.d(t, 'b', function () {
-          return y
+          return g
         })
       var r = n('KEM+'),
         a = n.n(r),
@@ -122,10 +122,10 @@
           }
         }),
       )
-      var g = function (e) {
+      var y = function (e) {
           return e.verifyPassword.fetchStatus
         },
-        y = function (e) {
+        g = function (e) {
           return function (t, n, r) {
             var a = r.api
             return Object(u.b)(t, { params: { password: e }, request: a.Settings.verifyPassword })({
@@ -215,8 +215,8 @@
         var t = e.icon,
           n = e.landingUrl,
           r = e.nativeID,
-          g = e.rightControl,
-          y = e.style,
+          y = e.rightControl,
+          g = e.style,
           f = e.subtext,
           b = e.testID,
           v = e.text,
@@ -242,7 +242,7 @@
             interactiveStyles: n ? C : null,
             link: null == n ? void 0 : n.url,
             nativeID: r,
-            style: [m.root, y],
+            style: [m.root, g],
             testID: b,
           },
           a.a.createElement(
@@ -258,7 +258,7 @@
               p.a,
               { style: m.rightControlGroup },
               n ? a.a.createElement(p.a, { style: x }, a.a.createElement(c.a, { style: m.iconArrow })) : null,
-              g ? a.a.createElement(p.a, null, g) : null,
+              y ? a.a.createElement(p.a, null, y) : null,
             ),
           ),
           f
@@ -285,8 +285,8 @@
         p = n.n(d),
         h = n('KEM+'),
         m = n.n(h),
-        g = (n('2G9S'), n('ERkP')),
-        y = n.n(g),
+        y = (n('2G9S'), n('ERkP')),
+        g = n.n(y),
         f = n('P1r1'),
         b = n('G6rE'),
         v = n('rxPX'),
@@ -303,14 +303,14 @@
           }),
         C = n('v//M'),
         _ = n('3XMw'),
-        E = n.n(_),
-        S = n('M2mT'),
+        S = n.n(_),
+        E = n('M2mT'),
         I = 'settingsDetailSave',
         L = n('mw9i'),
         k = n('0yYu'),
         B = n('/yvb'),
         T = n('rHpw'),
-        F = E.a.i2209530,
+        F = S.a.i2209530,
         D = (function (e) {
           u()(n, e)
           var t = p()(n)
@@ -322,7 +322,7 @@
               (e = t.call.apply(t, [this].concat(o))),
               m()(s()(e), '_renderWithFetchSettings', function () {
                 var t = e.props.fetchStatus
-                return y.a.createElement(C.a, { fetchStatus: t, onRequestRetry: e._handleFetch, render: e._render })
+                return g.a.createElement(C.a, { fetchStatus: t, onRequestRetry: e._handleFetch, render: e._render })
               }),
               m()(s()(e), '_render', function () {
                 var t = e.props,
@@ -332,19 +332,19 @@
                   o = t.submitLabel,
                   i = t.submitType,
                   l = t.withMarginBottom
-                return y.a.createElement(
+                return g.a.createElement(
                   L.a,
                   { style: [P.contentRoot, l && P.withMarginBottom] },
                   n,
                   r
-                    ? y.a.createElement(
-                        y.a.Fragment,
+                    ? g.a.createElement(
+                        g.a.Fragment,
                         null,
-                        y.a.createElement(k.a, null),
-                        y.a.createElement(
+                        g.a.createElement(k.a, null),
+                        g.a.createElement(
                           L.a,
                           { style: P.buttonContainer },
-                          y.a.createElement(B.a, { disabled: a, onPress: r, style: P.button, testID: I, type: i }, o),
+                          g.a.createElement(B.a, { disabled: a, onPress: r, style: P.button, testID: I, type: i }, o),
                         ),
                       )
                     : null,
@@ -388,8 +388,8 @@
                     l = e.withBottomBorder,
                     s = this.getBackLocation(),
                     c = t ? '@'.concat(t.screen_name) : void 0
-                  return y.a.createElement(
-                    S.a,
+                  return g.a.createElement(
+                    E.a,
                     {
                       backLocation: s,
                       onBackClick: n,
@@ -408,7 +408,7 @@
             ]),
             n
           )
-        })(y.a.Component)
+        })(g.a.Component)
       m()(D, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
       var P = T.a.create(function (e) {
         return {
@@ -448,8 +448,8 @@
         p = n.n(d),
         h = n('2VqO'),
         m = n.n(h),
-        g = n('KEM+'),
-        y = n.n(g),
+        y = n('KEM+'),
+        g = n.n(y),
         f = (n('2G9S'), n('i4UL'), n('+/5o')),
         b = n('ERkP'),
         v = n.n(b),
@@ -457,13 +457,13 @@
         x = n('VAZu'),
         C = n('wiP2'),
         _ = n('Es6L'),
-        E = n('yiKp'),
-        S = n.n(E),
+        S = n('yiKp'),
+        E = n.n(S),
         I = n('rHpw'),
         L = I.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
-            viewportView: S()(S()({}, I.a.absoluteFillObject), {}, { overflowY: 'auto' }),
+            viewportView: E()(E()({}, I.a.absoluteFillObject), {}, { overflowY: 'auto' }),
             appBarContainer: {
               position: 'sticky',
               top: 0,
@@ -478,6 +478,7 @@
         F = n('cHvH'),
         D = n('3xLC'),
         P = [
+          'appBarStyle',
           'children',
           'leftControl',
           'screenType',
@@ -495,7 +496,7 @@
             for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              y()(u()(e), '_renderChildren', function () {
+              g()(u()(e), '_renderChildren', function () {
                 var t = e.props.children
                 return e.context.rootDetailPerColumnScroll
                   ? v.a.createElement(
@@ -529,7 +530,7 @@
                 key: '_renderForOneColumnLayout',
                 value: function () {
                   var e = this.props,
-                    t = e.children,
+                    t = (e.appBarStyle, e.children),
                     n =
                       (e.leftControl,
                       e.screenType,
@@ -568,80 +569,82 @@
                     r = n.SideNavButton,
                     a = n.TabBar,
                     o = n.TeamsSwitcher,
-                    i = n.backLocation,
-                    l = n.documentTitle,
-                    s = n.headerless,
-                    c = n.history,
-                    u = n.leftControl,
-                    d = n.middleControl,
-                    p = n.onBackClick,
-                    h = n.rightControl,
-                    m = n.screenType,
+                    i = n.appBarStyle,
+                    l = n.backLocation,
+                    s = n.documentTitle,
+                    c = n.headerless,
+                    u = n.history,
+                    d = n.leftControl,
+                    p = n.middleControl,
+                    h = n.onBackClick,
+                    m = n.rightControl,
+                    y = n.screenType,
                     g = n.searchBoxOptions,
-                    y = n.secondaryBar,
-                    b = n.showSubtitleOnRoot,
-                    w = n.showSubtitleOnWideDetail,
-                    _ = n.subtitle,
+                    b = n.secondaryBar,
+                    w = n.showSubtitleOnRoot,
+                    _ = n.showSubtitleOnWideDetail,
+                    S = n.subtitle,
                     E = n.title,
-                    S = n.titleIconCell,
-                    I = n.titleIconCellSize,
-                    B = n.withDetailOpen,
-                    T = n.withSearchBox,
-                    F = n.withTweetButton,
-                    D = 'root' === m,
-                    P = 'secondaryRoot' === m,
-                    V = 'primaryDetail' === m,
-                    O = (V && w) || (D && b),
-                    z = D || (V && t),
-                    H = D ? f.c : V ? f.a : void 0,
-                    R = v.a.createElement(
+                    I = n.titleIconCell,
+                    B = n.titleIconCellSize,
+                    T = n.withDetailOpen,
+                    F = n.withSearchBox,
+                    D = n.withTweetButton,
+                    P = 'root' === y,
+                    V = 'secondaryRoot' === y,
+                    O = 'primaryDetail' === y,
+                    z = (O && _) || (P && w),
+                    H = P || (O && t),
+                    R = P ? f.c : O ? f.a : void 0,
+                    K = v.a.createElement(
                       k.a,
                       { style: L.appBarContainer },
                       v.a.createElement(x.a, {
-                        backLocation: i,
+                        backLocation: l,
                         fixed: !1,
-                        hideBackButton: z,
-                        history: c,
-                        leftControl: u,
-                        middleControl: d,
-                        onBackClick: p,
-                        rightControl: h,
-                        secondaryBar: y,
-                        subtitle: O ? _ : void 0,
+                        hideBackButton: H,
+                        history: u,
+                        leftControl: d,
+                        middleControl: p,
+                        onBackClick: h,
+                        rightControl: m,
+                        secondaryBar: b,
+                        style: i,
+                        subtitle: z ? S : void 0,
                         title: E,
-                        titleDomId: H,
-                        titleIconCell: S,
-                        titleIconCellSize: I,
+                        titleDomId: R,
+                        titleIconCell: I,
+                        titleIconCellSize: B,
                       }),
                     ),
-                    K =
-                      D || (P && B)
+                    M =
+                      P || (V && T)
                         ? null
                         : v.a.createElement(C.a.Configure, {
                             SideNavButton: r,
                             TabBar: a,
                             TeamsSwitcher: o,
-                            backLocation: i,
-                            documentTitle: l,
-                            headerless: s,
-                            middleControl: d,
-                            onBackClick: p,
-                            rightControl: h,
+                            backLocation: l,
+                            documentTitle: s,
+                            headerless: c,
+                            middleControl: p,
+                            onBackClick: h,
+                            rightControl: m,
                             searchBoxOptions: g,
-                            subtitle: _,
+                            subtitle: S,
                             title: E,
-                            withSearchBox: T,
-                            withTweetButton: F,
+                            withSearchBox: F,
+                            withTweetButton: D,
                           })
-                  return v.a.createElement(v.a.Fragment, null, K, R)
+                  return v.a.createElement(v.a.Fragment, null, M, K)
                 },
               },
             ]),
             n
           )
         })(v.a.Component)
-      y()(V, 'contextType', D.a),
-        y()(V, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+      g()(V, 'contextType', D.a),
+        g()(V, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(T.a)(V)
     },
     PK8P: function (e, t, n) {
@@ -658,8 +661,8 @@
         p = n.n(d),
         h = n('KEM+'),
         m = n.n(h),
-        g = (n('2G9S'), n('ERkP')),
-        y = n.n(g),
+        y = (n('2G9S'), n('ERkP')),
+        g = n.n(y),
         f = n('k49u'),
         b = n('hqKg'),
         v = n('0KEI'),
@@ -672,8 +675,8 @@
           verifyPassword: x.b,
           createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('PASSWORD_GATEWAY'),
         },
-        E = Object(w.f)(C, _, null, { pure: !1 }),
-        S = n('kGix'),
+        S = Object(w.f)(C, _, null, { pure: !1 }),
+        E = n('kGix'),
         I = n('v//M'),
         L = n('3XMw'),
         k = n.n(L),
@@ -772,7 +775,7 @@
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
-                  e.fetchStatus === S.a.LOADED && this.props.fetchStatus === S.a.NONE && this._makeFetch()
+                  e.fetchStatus === E.a.LOADED && this.props.fetchStatus === E.a.NONE && this._makeFetch()
                 },
               },
               {
@@ -780,7 +783,7 @@
                 value: function () {
                   var e = this.props.titleHeader,
                     t = this.state.passwordError,
-                    n = y.a.createElement(
+                    n = g.a.createElement(
                       P.b,
                       {
                         link: {
@@ -791,16 +794,16 @@
                       },
                       j,
                     )
-                  return y.a.createElement(
-                    y.a.Fragment,
+                  return g.a.createElement(
+                    g.a.Fragment,
                     null,
-                    e ? y.a.createElement(V.b, { text: e }) : null,
-                    y.a.createElement(
+                    e ? g.a.createElement(V.b, { text: e }) : null,
+                    g.a.createElement(
                       F.a,
                       { style: [T.a.viewItem, T.a.bottomBorder] },
-                      y.a.createElement(P.b, { color: 'gray700', size: 'subtext2' }, W),
+                      g.a.createElement(P.b, { color: 'gray700', size: 'subtext2' }, W),
                     ),
-                    y.a.createElement(O.a, {
+                    g.a.createElement(O.a, {
                       errorText: t,
                       helperText: n,
                       invalid: !!t,
@@ -811,10 +814,10 @@
                       type: 'password',
                       value: this.state.password,
                     }),
-                    y.a.createElement(
+                    g.a.createElement(
                       z.a,
                       { style: Y.buttonContainer },
-                      y.a.createElement(
+                      g.a.createElement(
                         H.a,
                         { disabled: !1, onPress: this._handlePasswordSubmit, style: Y.button, type: 'brandFilled' },
                         G,
@@ -831,27 +834,27 @@
                     n = e.location,
                     r = e.render,
                     a = this.state.verificationRequired,
-                    o = t === S.a.FAILED && a
-                  return y.a.createElement(
-                    y.a.Fragment,
+                    o = t === E.a.FAILED && a
+                  return g.a.createElement(
+                    g.a.Fragment,
                     null,
                     o
                       ? this._passwordlessSsoEnabled
-                        ? y.a.createElement(B.a, {
+                        ? g.a.createElement(B.a, {
                             to: {
                               pathname: '/i/flow/verify_account_ownership',
                               state: { input: { requested_variant: n.pathname } },
                             },
                           })
                         : this._renderPasswordPrompt()
-                      : y.a.createElement(I.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: r }),
+                      : g.a.createElement(I.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: r }),
                   )
                 },
               },
             ]),
             n
           )
-        })(y.a.Component)
+        })(g.a.Component)
       m()(N, 'contextType', K.a), m()(N, 'defaultProps', { titleHeader: M })
       var Y = R.a.create(function (e) {
           return {
@@ -866,7 +869,7 @@
             button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal },
           }
         }),
-        q = E(N)
+        q = S(N)
       t.a = Object(D.a)(q)
     },
     iCwC: function (e, t, n) {
@@ -920,8 +923,8 @@
         p = n.n(d),
         h = n('5Yy7'),
         m = n.n(h),
-        g = n('2VqO'),
-        y = n.n(g),
+        y = n('2VqO'),
+        g = n.n(y),
         f = n('KEM+'),
         b = n.n(f),
         v = (n('2G9S'), n('ERkP')),
@@ -929,9 +932,9 @@
         x = n('38/B'),
         C = n('t62R'),
         _ = n('/yvb'),
-        E = n('piX5'),
-        S = n('3XMw'),
-        I = n.n(S),
+        S = n('piX5'),
+        E = n('3XMw'),
+        I = n.n(E),
         L = n('tI3i'),
         k = n.n(L),
         B = n('oQhu'),
@@ -977,7 +980,7 @@
         W = I.a.b4abfdb3,
         j = (function (e) {
           m()(n, e)
-          var t = y()(n)
+          var t = g()(n)
           function n(e) {
             var r
             s()(this, n),
@@ -1180,12 +1183,12 @@
                           accessibilityLabel: t,
                           accessibilityRole: 'label',
                           style: [
-                            E.a.border,
+                            S.a.border,
                             U.textInputFormStyle,
-                            l && E.a.invalidBorderColor,
-                            i && l && E.a.focusedBorderInvalid,
-                            i && !l && E.a.focusedBorderValid,
-                            !n && E.a.disabled,
+                            l && S.a.invalidBorderColor,
+                            i && l && S.a.focusedBorderInvalid,
+                            i && !l && S.a.focusedBorderValid,
+                            !n && S.a.disabled,
                           ],
                         },
                         w.a.createElement(
@@ -1371,8 +1374,8 @@
                   key: '_renderValidationIcon',
                   value: function () {
                     return this._isFormInvalid()
-                      ? w.a.createElement(O.a, { style: [U.validationIcon, E.a.invalidColor] })
-                      : w.a.createElement(z.a, { style: [U.validationIcon, E.a.validColor] })
+                      ? w.a.createElement(O.a, { style: [U.validationIcon, S.a.invalidColor] })
+                      : w.a.createElement(z.a, { style: [U.validationIcon, S.a.validColor] })
                   },
                 },
                 {

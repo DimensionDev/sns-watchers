@@ -586,8 +586,8 @@
         s = n('ddV6'),
         u = n.n(s),
         l = n('AS3p'),
-        d = n('KUGV'),
-        p = n('Irs7'),
+        d = n('Irs7'),
+        p = n('aITJ'),
         f = n('MWbm'),
         h = n('t62R'),
         m = n('cHvH'),
@@ -640,7 +640,7 @@
         )
       }
       var O = i.a.forwardRef(function (e, t) {
-          var n = Object(p.b)()
+          var n = Object(d.b)()
           i.a.useEffect(
             function () {
               n.scribe(c()(c()({}, w), {}, { action: 'impression' }))
@@ -652,7 +652,7 @@
                 t = u()(e, 2),
                 n = t[0],
                 r = t[1],
-                o = Object(p.b)()
+                o = Object(d.b)()
               return {
                 isExpanded: n,
                 expand: function () {
@@ -663,10 +663,10 @@
             a = r.expand,
             s = r.isExpanded,
             h = (function () {
-              var e = Object(p.b)(),
+              var e = Object(d.b)(),
                 t = i.a.useContext(o.a).featureSwitches,
                 n = i.a.useState(function () {
-                  return l.e(t) && !Object(d.a)()
+                  return l.e(t) && !p.b.getTwitterAppVersion()
                 }),
                 r = u()(n, 2),
                 a = r[0],
@@ -774,8 +774,8 @@
         R = n.n(M),
         B = n('5Yy7'),
         N = n.n(B),
-        U = n('2VqO'),
-        F = n.n(U),
+        F = n('2VqO'),
+        U = n.n(F),
         K = n('KEM+'),
         H = n.n(K),
         z = (n('hBvt'), n('RqPI')),
@@ -793,7 +793,7 @@
         G = g.a.ia5e7487,
         J = (function (e) {
           N()(n, e)
-          var t = F()(n)
+          var t = U()(n)
           function n(e, r) {
             var o
             L()(this, n),
@@ -956,7 +956,7 @@
     'Pc/x': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return U
+        return F
       })
       var r = n('VrFO'),
         i = n.n(r),
@@ -1234,7 +1234,7 @@
         R = new T(),
         B = n('G6rE'),
         N = new Error('[AudioModule] config not initialized'),
-        U = new ((function () {
+        F = new ((function () {
           function e() {
             i()(this, e), (this.proxsee = R)
           }
@@ -1764,10 +1764,10 @@
           return Nt
         }),
         n.d(t, 'SmartLockPrompt', function () {
-          return Ut
+          return Ft
         }),
         n.d(t, 'Seo', function () {
-          return Ft
+          return Ut
         }),
         n.d(t, 'Toast', function () {
           return Kt
@@ -2003,8 +2003,8 @@
         R = n.n(M),
         B = n('2VqO'),
         N = n.n(B),
-        U = (n('2G9S'), n('ERkP')),
-        F = n.n(U),
+        F = (n('2G9S'), n('ERkP')),
+        U = n.n(F),
         K = n('sebV'),
         H = (n('jQ3i'), n('x4t0'), n('rxPX')),
         z = function (e, t) {
@@ -2055,14 +2055,14 @@
                 key: 'render',
                 value: function () {
                   return this.state.showPrompt
-                    ? F.a.createElement(X.a, { onClose: this._handleClose, onlyShowOnce: !0, useBottomBanner: !0 })
+                    ? U.a.createElement(X.a, { onClose: this._handleClose, onlyShowOnce: !0, useBottomBanner: !0 })
                     : null
                 },
               },
             ]),
             n
           )
-        })(F.a.Component)
+        })(U.a.Component)
       p()(G, 'contextType', Y.a)
       var J = Object(q.a)(W(G)),
         Z = n('Pc/x'),
@@ -2177,20 +2177,20 @@
               l()(this, n),
               (i = t.call(this, e, r)),
               p()(D()(i), '_renderButtons', function () {
-                return F.a.createElement(
-                  F.a.Fragment,
+                return U.a.createElement(
+                  U.a.Fragment,
                   null,
-                  F.a.createElement(
+                  U.a.createElement(
                     be.a,
                     { onClick: i._handleInfo, size: 'xSmall', type: 'destructiveFilled' },
                     'Info',
                   ),
-                  F.a.createElement(
+                  U.a.createElement(
                     be.a,
                     { onClick: i._handleClear, size: 'xSmall', type: 'destructiveFilled' },
                     'Clear',
                   ),
-                  F.a.createElement(
+                  U.a.createElement(
                     be.a,
                     { onClick: i._handleClose, size: 'xSmall', type: 'destructiveFilled' },
                     'Hide',
@@ -2251,13 +2251,13 @@
                     t = e.dtabAll,
                     n =
                       e.ttsToken || t
-                        ? F.a.createElement(
+                        ? U.a.createElement(
                             fe.a,
                             { style: ke.root },
-                            F.a.createElement(
+                            U.a.createElement(
                               ye.a,
                               { isLarge: !0, style: ke.container, withGutter: !0 },
-                              F.a.createElement(
+                              U.a.createElement(
                                 ge.b,
                                 { color: 'whiteOnColor', numberOfLines: 1, size: 'subtext2', style: ke.text },
                                 'Staging override is active',
@@ -2272,7 +2272,7 @@
             ]),
             n
           )
-        })(F.a.PureComponent)
+        })(U.a.PureComponent)
       p()(Se, 'defaultProps', { hide: !1 })
       var ke = _e.a.create(function (e) {
           return {
@@ -2361,14 +2361,14 @@
         Be = n.n(Re)
       n('M+/F'), n('KOtZ')
       function Ne(e) {
-        return Object.keys(Ue(e))
+        return Object.keys(Fe(e))
       }
-      function Ue(e) {
+      function Fe(e) {
         return e.reduce(function (e, t) {
           return (e[t] = !0), e
         }, {})
       }
-      var Fe = (function () {
+      var Ue = (function () {
         function e(t) {
           var n = this,
             r = t.callback,
@@ -2397,7 +2397,7 @@
                   a.eventSource.readyState !== a.eventSource.CONNECTING ||
                   ((e = a.topics),
                   (t = n._getTopicsForAutoSubscribe()),
-                  (r = Ue(e)),
+                  (r = Fe(e)),
                   (i = Object.keys(r)),
                   (o = Ne(t)),
                   i.length !== o.length ||
@@ -2473,7 +2473,7 @@
           e
         )
       })()
-      p()(Fe, 'MAX_AUTO_SUBSCRIBE_TOPICS', 20)
+      p()(Ue, 'MAX_AUTO_SUBSCRIBE_TOPICS', 20)
       var Ke = n('+d3d'),
         He = (function () {
           function e(t) {
@@ -2639,7 +2639,7 @@
                     this.eventSourceConnector && this.eventSourceConnector.setTopics(t),
                     n && !this.eventSourceConnector
                       ? (this._closeEventSource(),
-                        (this.eventSourceConnector = new Fe({
+                        (this.eventSourceConnector = new Ue({
                           makeEventSource: this.makeEventSource,
                           callback: this._handleMessage,
                           topics: t,
@@ -2797,7 +2797,7 @@
           Object(st.g)()
           var e,
             t = (Ie.canUseDOM && (e = window.location.href), e ? Object(at.a)(e) : null)
-          return t ? F.a.createElement(ct.a, null, F.a.createElement('link', { href: t, rel: 'canonical' })) : null
+          return t ? U.a.createElement(ct.a, null, U.a.createElement('link', { href: t, rel: 'canonical' })) : null
         },
         lt =
           (n('ho0z'),
@@ -2856,14 +2856,14 @@
                     r = t.password,
                     i = t.userName
                   return this._shouldDisplaySmartLockPrompt()
-                    ? F.a.createElement(
+                    ? U.a.createElement(
                         bt.a,
                         { style: St.hidden },
-                        F.a.createElement(
+                        U.a.createElement(
                           dt.a,
                           { autoSubmit: n, loginReturnPath: e },
-                          F.a.createElement('input', { name: 'session[username_or_email]', type: 'hidden', value: i }),
-                          F.a.createElement('input', { name: 'session[password]', type: 'hidden', value: r }),
+                          U.a.createElement('input', { name: 'session[username_or_email]', type: 'hidden', value: i }),
+                          U.a.createElement('input', { name: 'session[password]', type: 'hidden', value: r }),
                         ),
                       )
                     : null
@@ -2938,7 +2938,7 @@
             ]),
             n
           )
-        })(F.a.Component)
+        })(U.a.Component)
       p()(_t, 'contextType', Y.a), p()(_t, 'defaultProps', { getCookie: yt.d })
       var St = _e.a.create(function (e) {
           return { hidden: { display: 'none' } }
@@ -2964,20 +2964,20 @@
             n = e.toast,
             r = Object(st.g)(),
             i = Object(Ot.b)(r),
-            o = F.a.useMemo(
+            o = U.a.useMemo(
               function () {
                 return { viewType: i }
               },
               [i],
             )
           return n
-            ? F.a.createElement(At.a, null, function (e) {
+            ? U.a.createElement(At.a, null, function (e) {
                 var r = e.windowWidth,
                   i = wt.a.shouldRenderAsModal(r) ? Pt.a.ModalToasts : Pt.a.Toasts
-                return F.a.createElement(
+                return U.a.createElement(
                   Et.a,
                   { behavioralEventContext: o },
-                  F.a.createElement(xt.a, {
+                  U.a.createElement(xt.a, {
                     LayerComponent: i,
                     action: n.action,
                     ariaOnly: n.ariaOnly,
@@ -3000,8 +3000,8 @@
         Rt = Te.a,
         Bt = We,
         Nt = Xe.a,
-        Ut = kt,
-        Ft = ut,
+        Ft = kt,
+        Ut = ut,
         Kt = Lt,
         Ht = a,
         zt = ae,
@@ -3090,8 +3090,8 @@
         R = n('fs1G'),
         B = n('BcsE'),
         N = n('VPAj'),
-        U = C.a.b47e760d,
-        F = C.a.fd2c7b43,
+        F = C.a.b47e760d,
+        U = C.a.fd2c7b43,
         K = new M.a(),
         H = function (e) {
           if (e.target instanceof HTMLInputElement) {
@@ -3251,8 +3251,8 @@
                     ? y.a.createElement(
                         P.a,
                         { accessibilityLevel: 2, accessibilityRole: 'heading', style: L.a.visuallyHidden },
-                        y.a.createElement(j.b, null, U),
-                        y.a.createElement(j.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, F),
+                        y.a.createElement(j.b, null, F),
+                        y.a.createElement(j.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, U),
                       )
                     : null
                 },

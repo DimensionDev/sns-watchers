@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [344],
+  [343],
   {
     Oyt6: function (a, e, i) {
       'use strict'
@@ -305,7 +305,7 @@
         r('b9aac656', 'backhand,body,finger,hand,index,point'),
         r('a97f2e70', 'Avuç içi aşağıda el'),
         r('ce4a8abe', 'kovma,bırakma,yollama'),
-        r('afe692cf', 'Avuç içleri yukarı bakan el'),
+        r('afe692cf', 'Avuç içi yukarı bakan el'),
         r('b0bb595a', 'işaret,yakalama,gel,teklif'),
         r('ee762493', 'Sağı işaret etmek'),
         r('cb636653', 'Yukarıyı işaret etme'),

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [233],
+  [232],
   {
     LQrL: function (e, t, n) {
       'use strict'
@@ -507,8 +507,8 @@
         b = n.n(E),
         x = n('k/Ka'),
         k = n('PxJJ'),
-        T = n('w9LO'),
-        w = n('fs1G'),
+        w = n('w9LO'),
+        T = n('fs1G'),
         _ = n('zpdM'),
         D = function (e) {
           return Object(x.a)('div', e)
@@ -677,7 +677,8 @@
                     r = t.maxNumberOfLines,
                     o = t.multiline,
                     i = t.numberOfLines,
-                    a =
+                    a = t.withMaxHeight,
+                    l =
                       m.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
@@ -687,8 +688,9 @@
                           body: 'body',
                           headline1: 'headline1',
                         }[n]
-                      ]
-                  return { minHeight: (o && i ? i : 1) * a, maxHeight: (o && r ? r : 1) * a }
+                      ],
+                    c = (o && i ? i : 1) * l
+                  return a ? { minHeight: c, maxHeight: (o && r ? r : 1) * l } : { minHeight: c }
                 }),
                 e
               )
@@ -758,7 +760,7 @@
                           blockRendererFn: l,
                           customAttrs:
                             ((e = {}),
-                            h()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            h()(e, w.a.NO_REFOCUS_ATTRIBUTE, 'true'),
                             h()(e, 'onKeyPress', g),
                             h()(e, 'onKeyUp', y),
                             e),
@@ -802,9 +804,10 @@
         maxNumberOfLines: 30,
         multiline: !0,
         numberOfLines: 6,
-        onFocus: w.a,
+        onFocus: T.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
+        withMaxHeight: !0,
       }),
         (F.propTypes = {})
       var K = function (e) {

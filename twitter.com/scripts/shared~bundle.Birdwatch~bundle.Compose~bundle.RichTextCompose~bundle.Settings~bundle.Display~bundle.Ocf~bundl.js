@@ -1616,7 +1616,7 @@
       var o = n('ERkP'),
         a = n.n(o),
         i = n('TIdA'),
-        r = n('jhWN'),
+        r = n('oSwX'),
         c = i.a.createLayoutCache()
       function s(e) {
         var t = e.nativeID,
@@ -1629,7 +1629,7 @@
           d = void 0 === u || u,
           m = e.withLink,
           p = void 0 === m || m
-        return a.a.createElement(r.a, {
+        return a.a.createElement(r.default, {
           imageLayoutCache: c,
           nativeID: t,
           onClick: n,

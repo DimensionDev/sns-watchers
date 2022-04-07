@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [248],
+  [247],
   {
     '+PaE': function (e, l, a) {
       'use strict'
@@ -2630,13 +2630,13 @@
         He = a('k/OQ'),
         xe = a('zCf4'),
         Ie = Object(Ce.a)(function () {
-          return Promise.all([a.e(0), a.e(248)]).then(a.bind(null, '8KtR'))
+          return Promise.all([a.e(0), a.e(247)]).then(a.bind(null, '8KtR'))
         }),
         qe = Object(Ce.a)(function () {
-          return Promise.all([a.e(0), a.e(248)]).then(a.bind(null, 'ivpD'))
+          return Promise.all([a.e(0), a.e(247)]).then(a.bind(null, 'ivpD'))
         }),
         We = Object(Ce.a)(function () {
-          return Promise.all([a.e(0), a.e(248)]).then(a.bind(null, 'ylAD'))
+          return Promise.all([a.e(0), a.e(247)]).then(a.bind(null, 'ylAD'))
         }),
         Ae = 'likes',
         Be = 'media',
@@ -2887,7 +2887,7 @@
         Fl = a('I/ms'),
         bl = a('TIdA'),
         vl = a('cHvH'),
-        Sl = a('jhWN'),
+        Sl = a('oSwX'),
         Kl = bl.a.createLayoutCache(),
         El = void 0 !== p ? p : (p = a('kVSq')),
         wl = function (e) {
@@ -2899,7 +2899,7 @@
             i = t || !r.legacy.profile_image_url_https ? void 0 : r.legacy.profile_image_url_https
           return x.a.createElement(vl.a, null, function (e) {
             var l = e.windowWidth >= ve.a.theme.breakpoints.medium
-            return x.a.createElement(Sl.a, {
+            return x.a.createElement(Sl.default, {
               borderColor: 'cellBackground',
               borderWidth: l ? 'medium' : 'large',
               imageLayoutCache: Kl,
@@ -3473,7 +3473,7 @@
             return x.a.createElement(
               nl.a,
               { accessibilityState: { hidden: !0 }, style: Fl.a.avatar },
-              x.a.createElement(Sl.a, { accessibilityLabel: l, size: 'custom' }),
+              x.a.createElement(Sl.default, { accessibilityLabel: l, size: 'custom' }),
             )
           })
         },

@@ -934,7 +934,7 @@
         dn = n('zb92'),
         un = Object(dn.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(218)]).then(n.bind(null, 'cM6C'))
+            return n.e(217).then(n.bind(null, 'cM6C'))
           },
         }),
         mn = T.a.bb16cc75,

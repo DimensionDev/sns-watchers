@@ -268,8 +268,8 @@
         },
         F = a('n0Rl'),
         z = a('RgK2'),
-        H = a.n(z),
-        A = a('kGix'),
+        A = a.n(z),
+        H = a('kGix'),
         j = (a('YWiL'), a('ddV6')),
         U = a.n(j),
         M = (a('0zG9'), a('UpKB')),
@@ -545,7 +545,7 @@
               c = e.fetchStatus,
               s =
                 (e.retry,
-                c === A.a.LOADED
+                c === H.a.LOADED
                   ? null == i || null === (r = i.logged_out_trends_list) || void 0 === r
                     ? void 0
                     : r.trends
@@ -558,7 +558,7 @@
               ? o.a.createElement(ne, { cookieComplianceFS: t, deviceSize: a, trendResults: s })
               : null
           },
-          variables: H.a,
+          variables: A.a,
         })
       }
     },
@@ -687,8 +687,8 @@
         P = a('rRIm'),
         F = a('Rp9C'),
         z = (a('vrRf'), a('5BYb'), a('+KXO'), a('x4t0'), a('wFPu'), a('vfdX'), a('lnti')),
-        H = a('hqKg'),
-        A = a('3IPs'),
+        A = a('hqKg'),
+        H = a('3IPs'),
         j = a('M0jS'),
         U = a('G6rE'),
         M = a('k49u'),
@@ -705,7 +705,7 @@
         },
         Q = Object(I.a)()
           .propsFromState(function () {
-            var e = Object(H.createSelector)(x.g, U.e.selectFetchStatuses, function (e, t) {
+            var e = Object(A.createSelector)(x.g, U.e.selectFetchStatuses, function (e, t) {
                 var a = Object(z.a)(
                   e.map(function (e) {
                     var a,
@@ -717,12 +717,12 @@
                   return e.fetchStatus
                 })
               }),
-              t = Object(H.createSelector)(e, function (e) {
+              t = Object(A.createSelector)(e, function (e) {
                 return (e[V.a.FAILED] || []).map(function (e) {
                   return e.id
                 })
               }),
-              a = Object(H.createSelector)(e, U.e.selectErrors, function (e, t) {
+              a = Object(A.createSelector)(e, U.e.selectErrors, function (e, t) {
                 return (e[V.a.FAILED] || [])
                   .filter(function (e) {
                     var a = e.id
@@ -732,7 +732,7 @@
                     return e.id
                   })
               }),
-              n = Object(H.createSelector)(e, U.e.selectErrors, function (e, t) {
+              n = Object(A.createSelector)(e, U.e.selectErrors, function (e, t) {
                 var a = (e[V.a.FAILED] || []).filter(function (e) {
                   var a = e.id
                   return !K(t[a] || {})
@@ -745,14 +745,14 @@
                   ? V.a.FAILED
                   : V.a.NONE
               }),
-              o = Object(H.createSelector)(x.g, function (e) {
+              o = Object(A.createSelector)(x.g, function (e) {
                 return e.map(function (e) {
-                  return r()(r()({}, e), {}, { category: A.b.RecentSearch })
+                  return r()(r()({}, e), {}, { category: H.b.RecentSearch })
                 })
               }),
-              i = Object(H.createSelector)(q.d, function (e) {
+              i = Object(A.createSelector)(q.d, function (e) {
                 return e.map(function (e) {
-                  return { keyword: { query: e.query }, savedSearchId: e.id_str, category: A.b.SavedSearch }
+                  return { keyword: { query: e.query }, savedSearchId: e.id_str, category: H.b.SavedSearch }
                 })
               })
             return {
@@ -851,9 +851,9 @@
                     n = e.supportText,
                     r = e.title
                   return {
-                    category: A.b.RecentSearch,
+                    category: H.b.RecentSearch,
                     query: t,
-                    recentSearchType: A.a.Event,
+                    recentSearchType: H.a.Event,
                     queryMetadata: { id: t, image: a, title: r, supportText: n },
                   }
                 },
@@ -920,9 +920,9 @@
                     n = e.name
                   return a
                     ? {
-                        category: A.b.RecentSearch,
+                        category: H.b.RecentSearch,
                         query: a,
-                        recentSearchType: A.a.Topic,
+                        recentSearchType: H.a.Topic,
                         queryMetadata: { id: a, name: n, description: t },
                       }
                     : null
@@ -1022,10 +1022,10 @@
                 get: function () {
                   return this.props.user
                     ? {
-                        category: A.b.RecentSearch,
+                        category: H.b.RecentSearch,
                         link: this.props.user.screen_name,
                         query: this.props.id,
-                        recentSearchType: A.a.User,
+                        recentSearchType: H.a.User,
                       }
                     : null
                 },
@@ -1042,10 +1042,10 @@
         Le = k.a.createElement(ee.a, null),
         Oe = k.a.createElement(Te.a, null),
         De = Object(Re.a)(function (e) {
-          return e === A.b.SavedSearch ? 'destructiveText' : 'brandText'
+          return e === H.b.SavedSearch ? 'destructiveText' : 'brandText'
         }),
         Pe = Object(Re.a)(function (e) {
-          return e === A.b.SavedSearch ? Oe : Le
+          return e === H.b.SavedSearch ? Oe : Le
         }),
         Fe = (function (e) {
           y()(a, e)
@@ -1099,7 +1099,7 @@
                   return {
                     category: t,
                     query: e.query,
-                    recentSearchType: t === A.b.RecentSearch ? A.a.Keyword : void 0,
+                    recentSearchType: t === H.b.RecentSearch ? H.a.Keyword : void 0,
                   }
                 },
               },
@@ -1113,8 +1113,8 @@
             searchIcon: { marginRight: e.spaces.space12, borderWidth: 0, backgroundColor: 'none' },
           }
         }),
-        He = Fe,
-        Ae = a('htQn'),
+        Ae = Fe,
+        He = a('htQn'),
         je = { viewType: 'search_item' },
         Ue = (function (e) {
           y()(a, e)
@@ -1130,7 +1130,7 @@
                   a = e.item,
                   n = e.onItemClick
                 return a.keyword
-                  ? k.a.createElement(He, {
+                  ? k.a.createElement(Ae, {
                       category: a.category,
                       onRemove: r._handleOnRemove,
                       query: a.keyword.query,
@@ -1203,7 +1203,7 @@
                     C.a,
                     { behavioralEventContext: je },
                     k.a.createElement(
-                      Ae.a,
+                      He.a,
                       {
                         accessibilityRole: 'option',
                         accessibilityState: { selected: !!t },
@@ -1416,14 +1416,14 @@
                   n = a.analytics,
                   r = a.removeQuery
                 switch (e.category) {
-                  case A.b.RecentSearch:
+                  case H.b.RecentSearch:
                     var i = { keyword: e.keyword, user: e.user, topic: e.topic, event: e.event }
                     r(i), o._resetFocus()
                     var c = F.a.forRecentSearchResult(i, t),
                       s = o._handleRemoveAction(e)
                     c && n.scribe({ action: s, data: { items: [c] } })
                     break
-                  case A.b.SavedSearch:
+                  case H.b.SavedSearch:
                     o.setState({ shouldShowDeleteSavedSearchConfirmation: !0, savedSearchIdToDelete: e.savedSearchId })
                     break
                   default:
@@ -1504,21 +1504,21 @@
               S()(m()(o), '_scribeClick', function (e, t) {
                 var a = o.props.analytics
                 switch (e.category) {
-                  case A.b.SavedSearch:
+                  case H.b.SavedSearch:
                     var n = F.a.forSavedSearchResult(e.query, t)
                     a.scribe({ element: 'typeahead', action: 'click', data: { targets: [n] } })
                     break
-                  case A.b.RecentSearch:
+                  case H.b.RecentSearch:
                     var i
                     e.recentSearchType &&
                       (i =
-                        e.recentSearchType === A.a.User
-                          ? { user: { type: A.a.User, id: e.query } }
-                          : e.recentSearchType === A.a.Event && e.queryMetadata && e.queryMetadata.title
-                          ? { event: r()(r()({}, e.queryMetadata), {}, { type: A.a.Event, id: e.query }) }
-                          : e.recentSearchType === A.a.Topic && e.queryMetadata && e.queryMetadata.name
-                          ? { topic: r()(r()({}, e.queryMetadata), {}, { type: A.a.Topic, id: e.query }) }
-                          : { keyword: { type: A.a.Keyword, query: e.query } })
+                        e.recentSearchType === H.a.User
+                          ? { user: { type: H.a.User, id: e.query } }
+                          : e.recentSearchType === H.a.Event && e.queryMetadata && e.queryMetadata.title
+                          ? { event: r()(r()({}, e.queryMetadata), {}, { type: H.a.Event, id: e.query }) }
+                          : e.recentSearchType === H.a.Topic && e.queryMetadata && e.queryMetadata.name
+                          ? { topic: r()(r()({}, e.queryMetadata), {}, { type: H.a.Topic, id: e.query }) }
+                          : { keyword: { type: H.a.Keyword, query: e.query } })
                     var c = i && F.a.forRecentSearchResult(i, t)
                     c && a.scribe({ action: 'click', data: { targets: [c] } })
                 }
@@ -1773,17 +1773,17 @@
                   o = e.queryMetadata,
                   i = e.recentSearchType,
                   s = c.props.addQuery
-                t === A.b.SavedSearch
+                t === H.b.SavedSearch
                   ? c._submitQuery({ query: n, shouldAddToRecentSearch: !1, src: D.a.SavedSearchClick })
-                  : i === A.a.Keyword
+                  : i === H.a.Keyword
                   ? c._submitQuery({ query: n, shouldAddToRecentSearch: !0, src: D.a.RecentSearchClick })
-                  : i === A.a.Event
+                  : i === H.a.Event
                   ? (c._routeTransition({ pathname: '/i/events/'.concat(n) }),
-                    o && o.title && s({ event: r()(r()({}, o), {}, { id: n, type: A.a.Event }) }))
-                  : i === A.a.Topic
+                    o && o.title && s({ event: r()(r()({}, o), {}, { id: n, type: H.a.Event }) }))
+                  : i === H.a.Topic
                   ? (c._routeTransition({ pathname: '/i/topics/'.concat(n) }),
-                    o && o.name && s({ topic: r()(r()({}, o), {}, { id: n, type: A.a.Topic }) }))
-                  : a && (c._routeTransition({ pathname: '/'.concat(a) }), s({ user: { id: n, type: A.a.User } }))
+                    o && o.name && s({ topic: r()(r()({}, o), {}, { id: n, type: H.a.Topic }) }))
+                  : a && (c._routeTransition({ pathname: '/'.concat(a) }), s({ user: { id: n, type: H.a.User } }))
               }),
               S()(m()(c), '_handleSearchShortcut', function (e) {
                 var t = c._inputRef
@@ -1850,7 +1850,7 @@
                   n = c.state.query
                 switch (e.type) {
                   case nt.b.User:
-                    if (e.data.id_str) a({ user: { id: e.data.id_str, type: A.a.User } })
+                    if (e.data.id_str) a({ user: { id: e.data.id_str, type: H.a.User } })
                     c._routeTransition({ pathname: '/'.concat(e.data.screen_name) })
                     break
                   case nt.b.Topic:
@@ -1905,8 +1905,8 @@
                   u = i.onSubmit,
                   d = i.searchFilters,
                   h = i.searchRoute
-                ;(u && u(t, o, c.state.lastSubmittedQuery === t), n) && s({ keyword: { query: t, type: A.a.Keyword } })
-                var p = Object(A.g)({ query: t, querySrc: o, mode: l, searchFilters: d })
+                ;(u && u(t, o, c.state.lastSubmittedQuery === t), n) && s({ keyword: { query: t, type: H.a.Keyword } })
+                var p = Object(H.g)({ query: t, querySrc: o, mode: l, searchFilters: d })
                 c._routeTransition({ pathname: h, params: p, src: o }), c.setState({ lastSubmittedQuery: t })
               }),
               S()(m()(c), '_setInputRef', function (e) {
@@ -2153,8 +2153,8 @@
         s = a('ddV6'),
         l = a.n(s),
         u = a('AS3p'),
-        d = a('KUGV'),
-        h = a('Irs7'),
+        d = a('Irs7'),
+        h = a('aITJ'),
         p = a('MWbm'),
         m = a('t62R'),
         f = a('cHvH'),
@@ -2207,7 +2207,7 @@
         )
       }
       var I = r.a.forwardRef(function (e, t) {
-          var a = Object(h.b)()
+          var a = Object(d.b)()
           r.a.useEffect(
             function () {
               a.scribe(c()(c()({}, w), {}, { action: 'impression' }))
@@ -2219,7 +2219,7 @@
                 t = l()(e, 2),
                 a = t[0],
                 n = t[1],
-                o = Object(h.b)()
+                o = Object(d.b)()
               return {
                 isExpanded: a,
                 expand: function () {
@@ -2230,10 +2230,10 @@
             i = n.expand,
             s = n.isExpanded,
             m = (function () {
-              var e = Object(h.b)(),
+              var e = Object(d.b)(),
                 t = r.a.useContext(o.a).featureSwitches,
                 a = r.a.useState(function () {
-                  return u.e(t) && !Object(d.a)()
+                  return u.e(t) && !h.b.getTwitterAppVersion()
                 }),
                 n = l()(a, 2),
                 i = n[0],
@@ -2339,8 +2339,8 @@
         P = a.n(D),
         F = a('1Pcy'),
         z = a.n(F),
-        H = a('5Yy7'),
-        A = a.n(H),
+        A = a('5Yy7'),
+        H = a.n(A),
         j = a('2VqO'),
         U = a.n(j),
         M = a('KEM+'),
@@ -2359,7 +2359,7 @@
           }),
         X = b.a.ia5e7487,
         Y = (function (e) {
-          A()(a, e)
+          H()(a, e)
           var t = U()(a)
           function a(e, n) {
             var o
@@ -2976,8 +2976,8 @@
         P = a.n(D),
         F = a('6oVL'),
         z = a('rJoH'),
-        H = a('yoO3'),
-        A = a('Es6L'),
+        A = a('yoO3'),
+        H = a('Es6L'),
         j = a('JkIr'),
         U = a('MWbm'),
         M = a('0yYu'),
@@ -3234,13 +3234,13 @@
             {
               key: 'componentDidMount',
               value: function () {
-                Object(A.a)() && this.context.setSideNavSupport(!1)
+                Object(H.a)() && this.context.setSideNavSupport(!1)
               },
             },
             {
               key: 'componentWillUnmount',
               value: function () {
-                Object(A.a)() && this.context.setSideNavSupport(!0)
+                Object(H.a)() && this.context.setSideNavSupport(!0)
               },
             },
             {
@@ -3249,7 +3249,7 @@
                 var e = this,
                   t = !!ae.a[this._searchHomePageVariation]
                 return S.a.createElement(
-                  H.a,
+                  A.a,
                   null,
                   S.a.createElement(T.a, { title: me }),
                   S.a.createElement(z.a, {
@@ -3837,7 +3837,7 @@
         z = function (e) {
           return (0, e.render)({ fetchStatus: w.a.LOADING, data: null, error: null, retry: x.a })
         },
-        H = (function (e) {
+        A = (function (e) {
           h()(a, e)
           var t = m()(a)
           function a() {
@@ -3876,7 +3876,7 @@
             a
           )
         })(v.a.Component),
-        A = function (e) {
+        H = function (e) {
           var t = e.query,
             a = e.queryRef,
             n = e.render,
@@ -3915,12 +3915,12 @@
                       v.a.Suspense,
                       { fallback: v.a.createElement(z, { render: i }) },
                       v.a.createElement(
-                        H,
+                        A,
                         { errorHandler: h(t.errorConfig.options || {}), key: u.fetchKey, retry: f },
                         function (t, a) {
                           return t
                             ? i({ fetchStatus: w.a.FAILED, error: t, data: null, retry: a })
-                            : v.a.createElement(A, { query: e, queryRef: u, render: i })
+                            : v.a.createElement(H, { query: e, queryRef: u, render: i })
                         },
                       ),
                     )
@@ -4068,8 +4068,8 @@
         }
       F.metadata = { width: 24, height: 24 }
       var z = F,
-        H = a('lUZE'),
-        A = d.a.jb767df7,
+        A = a('lUZE'),
+        H = d.a.jb767df7,
         j = d.a.bb3323fa,
         U = d.a.db0798ed,
         M = d.a.dc716ec8,
@@ -4078,7 +4078,7 @@
         },
         W = function (e, t) {
           return t
-            ? A
+            ? H
             : (function (e) {
                 var t = N(e)
                 return r.a.createElement(d.a.I18NFormatMessage, { $i18n: 'h99e9c95' }, t)
@@ -4131,7 +4131,7 @@
               w = r.a.createElement(C.a, { style: o }),
               L = r.a.createElement(x.a, { style: o }),
               F = r.a.createElement(I.a, { style: o }),
-              A = r.a.createElement(R.a, { style: o }),
+              H = r.a.createElement(R.a, { style: o }),
               j = r.a.createElement(T.a, { style: o }),
               U = r.a.createElement(B.a, { style: o }),
               M = r.a.createElement(O, { style: o }),
@@ -4139,7 +4139,7 @@
               W = r.a.createElement(P.a, { style: o }),
               K = r.a.createElement(z, { style: o }),
               Q = r.a.createElement(i.a, { borderColor: 'cellBackground', userAvatarSize: t, userAvatarUrls: a }),
-              G = r.a.createElement(H.a, { style: o })
+              G = r.a.createElement(A.a, { style: o })
             switch (e) {
               case s.a.Pin:
                 return c
@@ -4165,7 +4165,7 @@
               case s.a.Location:
                 return F
               case s.a.Community:
-                return A
+                return H
               case s.a.Spaces:
                 return j
               case s.a.Sparkle:
@@ -4287,8 +4287,8 @@
         P = a('v6aA'),
         F = a('uScj'),
         z = a('fs1G'),
-        H = a('BcsE'),
-        A = a('VPAj'),
+        A = a('BcsE'),
+        H = a('VPAj'),
         j = x.a.b47e760d,
         U = x.a.fd2c7b43,
         M = new F.a(),
@@ -4413,7 +4413,7 @@
                 if (!N(t) && 'Backspace' === t.key) {
                   t.preventDefault(), t.stopPropagation()
                   var a = e._backspaceDown,
-                    n = !!Object(H.a)(a) && Date.now() - a < 500,
+                    n = !!Object(A.a)(a) && Date.now() - a < 500,
                     r = Object(R.a)({}, { location: e.props.location })
                   n && r ? e.props.history.goBack() : window.close()
                 }
@@ -4462,7 +4462,7 @@
         })(v.a.Component)
       y()(q, 'contextType', P.a)
       var V = k(q),
-        K = S.canUseDOM ? Object(L.a)(V) : Object(A.a)(null)
+        K = S.canUseDOM ? Object(L.a)(V) : Object(H.a)(null)
       t.a = K
     },
     sYRn: function (e, t, a) {

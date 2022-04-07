@@ -23,7 +23,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(252).then(n.bind(null, 'U0EQ'))
+              return n.e(251).then(n.bind(null, 'U0EQ'))
             },
             loaderKey: 'collectionHeaderLoader',
             strategy: n('XBtf').a.Critical,
