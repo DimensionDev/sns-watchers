@@ -1105,7 +1105,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'if9bcebd',
             'Communities are public, so you can read the Tweets — but only members can interact with them.',
           ),
-          a('eb2aba8e', 'Learn more'),
+          a('a49a2d30', 'Learn more'),
           a('e86cb37f', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
           a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
@@ -7158,10 +7158,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'caf3fb60',
+                key: 'hb779f3a',
                 get: function () {
                   return [
-                    'We try to prevent a Tweet like this that otherwise breaks the Twitter Rules from reaching more people, so we have disabled most of the ways to engage with it. If you want to talk about it, you can still Quote Tweet. ',
+                    'We try to keep Twitter a place for healthy conversation, so we’ve disabled most of the ways to engage with this Tweet. If you want to talk about it, you can still Quote Tweet it. ',
                   ]
                 },
               },

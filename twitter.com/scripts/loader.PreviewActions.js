@@ -64,21 +64,21 @@
               n,
               a,
               i,
-              r = e.previewTweet,
-              o = e.undoTweetSettings,
-              u = null == r ? void 0 : r.timeToSend,
-              s = null == r || null === (t = r.previewData) || void 0 === t ? void 0 : t.communityIdValue,
-              d = null == r || null === (n = r.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
+              r,
+              o = e.previewTweet,
+              u = (e.undoTweetSettings, null == o ? void 0 : o.timeToSend),
+              s = null == o || null === (t = o.previewData) || void 0 === t ? void 0 : t.communityIdValue,
+              d = null == o || null === (n = o.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
               c =
-                null == r ||
-                null === (a = r.previewData.sendData[0]) ||
+                null == o ||
+                null === (a = o.previewData.sendData[0]) ||
                 void 0 === a ||
                 null === (i = a.quotedStatus) ||
                 void 0 === i
                   ? void 0
                   : i.id_str,
-              p = null == r ? void 0 : r.previewData.tweetType,
-              m = o.durationSecs || l.a
+              p = null == o ? void 0 : o.previewData.tweetType,
+              m = null !== (r = null == o ? void 0 : o.undoDurationSecs) && void 0 !== r ? r : l.a
             return {
               timeToSend: u,
               inReplyToStatusId: null == d ? void 0 : d.id_str,
@@ -98,8 +98,8 @@
         w = n('MWbm'),
         f = n('t62R'),
         y = n('aRdY'),
-        b = n('/yvb'),
-        v = n('rHpw'),
+        v = n('/yvb'),
+        b = n('rHpw'),
         S = p.a.bc2ceaf2,
         T = p.a.gf5e9ea6,
         g = p.a.j4c40da3,
@@ -115,15 +115,15 @@
             d = e.timeToSend,
             c = e.tweetType,
             p = e.undoPeriod,
-            v = e.undoTweet,
+            b = e.undoTweet,
             I = o.a.useState(),
             _ = i()(I, 2),
             W = _[0],
             x = _[1],
             C = o.a.useState(!1),
-            R = i()(C, 2),
-            D = R[0],
-            j = R[1],
+            D = i()(C, 2),
+            R = D[0],
+            j = D[1],
             k = o.a.useState(1e3 * parseInt(p, 10)),
             L = i()(k, 1)[0],
             F = o.a.useState(parseInt(d, 10) - L),
@@ -185,9 +185,9 @@
                   w.a,
                   { style: E.buttonWrapper },
                   o.a.createElement(
-                    b.a,
+                    v.a,
                     {
-                      disabled: D,
+                      disabled: R,
                       onClick: function () {
                         l(u),
                           j(!0),
@@ -204,7 +204,7 @@
                     g,
                   ),
                   o.a.createElement(
-                    b.a,
+                    v.a,
                     {
                       onClick: function () {
                         n.scribe({
@@ -212,7 +212,7 @@
                           action: 'undo',
                           data: { subscription_details: { draft_id: u, undo_period: p, tweet_type: c } },
                         }),
-                          v(u),
+                          b(u),
                           t.push({
                             pathname: '/compose/tweet',
                             state: {
@@ -231,7 +231,7 @@
                 ),
               )
         },
-        E = v.a.create(function (e) {
+        E = b.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,

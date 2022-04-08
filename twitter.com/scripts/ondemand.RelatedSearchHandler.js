@@ -1,22 +1,28 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [231],
   {
-    sc5C: function (e, t, n) {
+    sc5C: function (e, n, t) {
       'use strict'
-      n.r(t)
-      var r = n('ezF+'),
-        a = n('ERkP'),
-        c = n.n(a),
-        o = n('VPAj'),
-        i = (n('hBvt'), n('u3ZE')),
-        l = n('htQn'),
-        s = n('t62R')
+      t.r(n)
+      var a = t('ezF+'),
+        r = (t('hBvt'), t('ERkP')),
+        o = t.n(r),
+        i = t('u3ZE'),
+        c = t('htQn'),
+        l = t('t62R')
       function u(e) {
-        var t = e.searchTerm,
-          n = { pathname: '/search', query: { q: t, src: i.a.RelatedQueryClick } }
-        return c.a.createElement(l.a, { link: n, style: p.link }, c.a.createElement(s.b, null, t))
+        var n,
+          t = e.entry,
+          a = null == t || null === (n = t.content) || void 0 === n ? void 0 : n.relatedSearch.text,
+          r = o.a.useMemo(
+            function () {
+              return { pathname: '/search', query: { q: a, src: i.a.RelatedQueryClick } }
+            },
+            [a],
+          )
+        return o.a.createElement(c.a, { link: r, style: s.link }, o.a.createElement(l.b, null, a))
       }
-      var p = n('rHpw').a.create(function (e) {
+      var s = t('rHpw').a.create(function (e) {
           return {
             link: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -24,15 +30,9 @@
             },
           }
         }),
-        m = c.a.memo(u),
-        d = r.g({
-          component: m,
-          selectData: Object(o.a)({}),
-          createProps: function (e) {
-            return { searchTerm: e.entry.content.relatedSearch.text }
-          },
-        })
-      t.default = d
+        d = o.a.memo(u),
+        p = a.b({ component: d }).getHandler()
+      n.default = p
     },
   },
 ])

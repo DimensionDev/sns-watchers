@@ -5016,13 +5016,13 @@
     xVWt: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return nn
+        return an
       }),
         n.d(t, 'b', function () {
-          return cn
+          return sn
         }),
         n.d(t, 'c', function () {
-          return hn
+          return vn
         })
       var a = n('m3Bd'),
         r = n.n(a),
@@ -5120,7 +5120,7 @@
         _ = { sharedBy: S.a.bdfa93eb },
         L = P.a.create(function (e) {
           return {
-            sharedContentContainer: { paddingHorizontal: hn(e).container.paddingHorizontal, width: '100%' },
+            sharedContentContainer: { paddingHorizontal: vn(e).container.paddingHorizontal, width: '100%' },
             carouselChildrenStyles: { scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
             sharedContentBy: { marginTop: e.spaces.space8 },
           }
@@ -5379,16 +5379,18 @@
         }),
         de = n('SNyS'),
         pe = n('S+H3')
-      function fe() {
-        var e = p.k().requestSheetDismissal
+      function fe(e) {
+        var t = p.k().requestSheetDismissal
         return h.a.createElement(
           h.a.Fragment,
           null,
-          h.a.createElement(
-            k.a,
-            { style: me.imageContainer },
-            h.a.createElement(Y.a, { accessibilityLabel: '', aspectMode: $.a.COVER, image: V }),
-          ),
+          e.withPopoverLayout
+            ? null
+            : h.a.createElement(
+                k.a,
+                { style: me.imageContainer },
+                h.a.createElement(Y.a, { accessibilityLabel: '', aspectMode: $.a.COVER, image: V }),
+              ),
           h.a.createElement(
             k.a,
             { style: me.contentContainer },
@@ -5397,7 +5399,13 @@
             he.map(function (e, t) {
               return h.a.createElement(se, s()({ key: t }, e))
             }),
-            h.a.createElement(te.a, { onClick: e, style: me.button, type: 'primaryOutlined' }, ve.gotIt),
+            e.withPopoverLayout
+              ? null
+              : h.a.createElement(
+                  te.a,
+                  { onClick: e.onButtonClick || t, style: me.button, type: 'primaryOutlined' },
+                  ve.gotIt,
+                ),
           ),
         )
       }
@@ -5421,13 +5429,34 @@
         ye = (n('lTEL'), n('87if'), n('kYxP'), n('KrtT'), n('TJCb'), n('DZ+c'), n('yH/f'), n('HmZq')),
         Se = n('Pc/x'),
         Ee = n('hUaP'),
-        ke = n('fs1G'),
-        we = n('AMlz'),
-        Ce = n('zCf4'),
+        ke = n('AMlz'),
+        we = n('zCf4'),
+        Ce = n('efqG'),
         xe = n('sIe2')
-      function Ie(e) {
+      function Ie() {
+        return h.a.createElement(
+          Ce.a,
+          {
+            contentStyle: _e.popoverContentStyles,
+            renderContent: function (e, t) {
+              return h.a.createElement(fe, { onButtonClick: e, withPopoverLayout: 'popover' === t })
+            },
+            withArrow: !0,
+            withFixedPosition: !0,
+            wrapperStyle: _e.helpCircle,
+          },
+          h.a.createElement(te.a, {
+            backgroundColor: 'transparent',
+            borderColor: 'transparent',
+            color: 'text',
+            icon: h.a.createElement(de.a, null),
+            size: 'xSmall',
+          }),
+        )
+      }
+      function Pe(e) {
         var t = e.id3NtpTime,
-          n = Object(we.a)(),
+          n = Object(ke.a)(),
           a = t && Math.floor(t - n.durationSeconds),
           r = []
         return (
@@ -5437,7 +5466,7 @@
             null,
             h.a.createElement(xe.a, {
               accessibilityRole: 'listbox',
-              contentContainerStyle: Me.clipContent,
+              contentContainerStyle: _e.clipContent,
               data: r,
               keyExtractor: function (e) {
                 return e.sequenceId
@@ -5455,11 +5484,11 @@
           )
         )
       }
-      function Pe(e) {
-        var t = Object(Ce.f)(),
+      function Te(e) {
+        var t = Object(we.f)(),
           n = Object(p.k)().requestSheetDismissal,
           a = Object(E.a)(e.audioSpaceId).space,
-          r = Object(we.a)(),
+          r = Object(ke.a)(),
           i = h.a.useCallback(
             function () {
               if (a) {
@@ -5474,10 +5503,10 @@
                   .then(function (e) {
                     if (null != e && e.clip) {
                       n()
-                      var a = new URLSearchParams(be()({}, Te.clipId, e.clip.clip_id))
+                      var a = new URLSearchParams(be()({}, Oe.clipId, e.clip.clip_id))
                       t.push({
                         pathname: '/compose/tweet',
-                        query: { text: Oe(e.clip.broadcast_id, a.toString()) },
+                        query: { text: Re(e.clip.broadcast_id, a.toString()) },
                         state: { positionCursorAtBeginning: !0 },
                       })
                     }
@@ -5486,14 +5515,14 @@
             },
             [a, r.durationMs, n, t, e.currentTimeMs],
           )
-        return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Re.next)
+        return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Me.next)
       }
-      var Te = Object.freeze({ clipId: 'clipID' }),
-        Oe = function (e, t) {
+      var Oe = Object.freeze({ clipId: 'clipID' }),
+        Re = function (e, t) {
           return 'https://twitter.com/i/spaces/'.concat(e, '?').concat(t)
         },
-        Re = { heading: S.a.cc724cb0, cancel: S.a.cfd2f35d, next: S.a.c1df579e },
-        Me = P.a.create(function (e) {
+        Me = { heading: S.a.cc724cb0, cancel: S.a.cfd2f35d, next: S.a.c1df579e },
+        _e = P.a.create(function (e) {
           var t = Object(Ee.b)(e)
           return {
             container: { display: 'flex', justifyContent: 'space-between', height: '100%', padding: e.spaces.space16 },
@@ -5505,19 +5534,20 @@
               paddingHorizontal: t,
             },
             clipContent: { marginBottom: e.spaces.space8 },
-            helpCircle: { position: 'absolute', right: 0 },
             cancelButton: { position: 'absolute', left: 0 },
+            helpCircle: { position: 'absolute', right: 0 },
+            popoverContentStyles: { padding: e.spaces.space8 },
           }
         }),
-        _e = function (e) {
+        Le = function (e) {
           var t = Object(p.k)().requestSheetDismissal,
             n = h.a.useRef(f.a()).current
           return h.a.createElement(
             k.a,
-            { style: Me.container },
+            { style: _e.container },
             h.a.createElement(
               k.a,
-              { style: Me.headingContainer },
+              { style: _e.headingContainer },
               h.a.createElement(
                 te.a,
                 {
@@ -5526,32 +5556,24 @@
                   color: 'text',
                   onClick: t,
                   size: 'xSmall',
-                  style: Me.cancelButton,
+                  style: _e.cancelButton,
                 },
-                Re.cancel,
+                Me.cancel,
               ),
-              h.a.createElement(ee.b, { align: 'center', size: 'headline1', weight: 'bold' }, Re.heading),
-              h.a.createElement(te.a, {
-                backgroundColor: 'transparent',
-                borderColor: 'transparent',
-                color: 'text',
-                icon: h.a.createElement(de.a, null),
-                onClick: ke.a,
-                size: 'xSmall',
-                style: Me.helpCircle,
-              }),
+              h.a.createElement(ee.b, { align: 'center', size: 'headline1', weight: 'bold' }, Me.heading),
+              h.a.createElement(Ie, null),
             ),
-            h.a.createElement(Ie, s()({}, e, { id3NtpTime: null == n ? void 0 : n.id3NtpTime })),
-            h.a.createElement(Pe, s()({}, e, { currentTimeMs: null == n ? void 0 : n.currentTimeMs })),
+            h.a.createElement(Pe, s()({}, e, { id3NtpTime: null == n ? void 0 : n.id3NtpTime })),
+            h.a.createElement(Te, s()({}, e, { currentTimeMs: null == n ? void 0 : n.currentTimeMs })),
           )
         },
-        Le = n('PaZX'),
-        ze = n('lOQR'),
-        je = n('SQlS'),
-        Ae = n('ISLN'),
-        He = n('sTSP'),
-        De = n('Zg3A'),
-        Be = function () {
+        ze = n('PaZX'),
+        je = n('lOQR'),
+        Ae = n('SQlS'),
+        He = n('ISLN'),
+        De = n('sTSP'),
+        Be = n('Zg3A'),
+        Ne = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(ae.a)(
             'svg',
@@ -5573,51 +5595,51 @@
             ),
           )
         }
-      Be.metadata = { width: 24, height: 24 }
-      var Ne = Be,
-        Ve = 'spaces-intro-nux',
-        Fe = { ios: ze.a.getiOSAppStoreLink(Ve), android: ze.a.getAndroidAppStoreLink(Ve) }
-      function Ue() {
+      Ne.metadata = { width: 24, height: 24 }
+      var Ve = Ne,
+        Fe = 'spaces-intro-nux',
+        Ue = { ios: je.a.getiOSAppStoreLink(Fe), android: je.a.getAndroidAppStoreLink(Fe) }
+      function qe() {
         var e = p.k().requestSheetDismissal
         return h.a.createElement(
           k.a,
-          { style: Ge.container },
+          { style: Xe.container },
           h.a.createElement(
             k.a,
-            { style: Ge.headingContainer },
+            { style: Xe.headingContainer },
             h.a.createElement(
               k.a,
-              { style: Ge.headingIconContainer },
-              h.a.createElement(je.a, { style: Ge.headingIcon }),
+              { style: Xe.headingIconContainer },
+              h.a.createElement(Ae.a, { style: Xe.headingIcon }),
             ),
             h.a.createElement(
               k.a,
               null,
-              h.a.createElement(ee.b, { align: 'center', size: 'title4', style: Ge.title, weight: 'bold' }, Ke.title),
-              h.a.createElement(ee.b, { align: 'center', color: 'gray700', size: 'body' }, Ke.subtitle),
+              h.a.createElement(ee.b, { align: 'center', size: 'title4', style: Xe.title, weight: 'bold' }, Ge.title),
+              h.a.createElement(ee.b, { align: 'center', color: 'gray700', size: 'body' }, Ge.subtitle),
             ),
           ),
           h.a.createElement(
             k.a,
-            { style: Ge.sectionsContainer },
-            h.a.createElement(qe, {
-              icon: h.a.createElement(He.a, { style: Ge.sectionIcon }),
+            { style: Xe.sectionsContainer },
+            h.a.createElement(We, {
+              icon: h.a.createElement(De.a, { style: Xe.sectionIcon }),
               subtitle: h.a.createElement(
-                We,
+                Ke,
                 null,
                 h.a.createElement(
                   S.a.I18NFormatMessage,
                   { $i18n: 'fc9fe08e' },
-                  h.a.createElement(ee.b, { link: Fe.ios }, S.a.fd1d03b8),
-                  h.a.createElement(ee.b, { link: Fe.android }, S.a.eb4e17b4),
+                  h.a.createElement(ee.b, { link: Ue.ios }, S.a.fd1d03b8),
+                  h.a.createElement(ee.b, { link: Ue.android }, S.a.eb4e17b4),
                 ),
               ),
-              title: Ke.sections.listenLive.title,
+              title: Ge.sections.listenLive.title,
             }),
-            h.a.createElement(qe, {
-              icon: h.a.createElement(De.a, { style: Ge.sectionIcon }),
+            h.a.createElement(We, {
+              icon: h.a.createElement(Be.a, { style: Xe.sectionIcon }),
               subtitle: h.a.createElement(
-                We,
+                Ke,
                 null,
                 h.a.createElement(
                   S.a.I18NFormatMessage,
@@ -5625,15 +5647,15 @@
                   h.a.createElement(ee.b, { link: F.a.help }, S.a.c220921d),
                 ),
               ),
-              title: Ke.sections.spacesArePublic.title,
+              title: Ge.sections.spacesArePublic.title,
             }),
-            h.a.createElement(qe, {
-              icon: h.a.createElement(Ne, { style: Ge.sectionIcon }),
+            h.a.createElement(We, {
+              icon: h.a.createElement(Ve, { style: Xe.sectionIcon }),
               subtitle: h.a.createElement(
                 h.a.Fragment,
                 null,
                 h.a.createElement(
-                  We,
+                  Ke,
                   null,
                   h.a.createElement(
                     S.a.I18NFormatMessage,
@@ -5642,21 +5664,21 @@
                   ),
                 ),
                 h.a.createElement('br', null),
-                h.a.createElement(We, null, Ke.sections.manageExperience.blockAndReport),
+                h.a.createElement(Ke, null, Ge.sections.manageExperience.blockAndReport),
               ),
-              title: Ke.sections.manageExperience.title,
+              title: Ge.sections.manageExperience.title,
               withMarginBottom: !1,
             }),
           ),
           h.a.createElement(
             k.a,
-            { style: Ge.bottomItems },
+            { style: Xe.bottomItems },
             h.a.createElement(
               k.a,
-              { style: Ge.finePrintContainer },
+              { style: Xe.finePrintContainer },
               h.a.createElement(
                 ee.b,
-                { align: 'center', color: 'gray700', size: 'subtext1', style: Ge.finePrint },
+                { align: 'center', color: 'gray700', size: 'subtext1', style: Xe.finePrint },
                 h.a.createElement(
                   S.a.I18NFormatMessage,
                   { $i18n: 'i6164a47' },
@@ -5666,21 +5688,21 @@
             ),
             h.a.createElement(
               k.a,
-              { style: Ge.ctaContainer },
+              { style: Xe.ctaContainer },
               h.a.createElement(
-                Ae.a,
-                { accessibilityLabel: Ke.gotIt, onPress: e },
+                He.a,
+                { accessibilityLabel: Ge.gotIt, onPress: e },
                 h.a.createElement(
                   ee.b,
                   { align: 'center', color: 'white', numberOfLines: 1, size: 'body', weight: 'bold' },
-                  Ke.gotIt,
+                  Ge.gotIt,
                 ),
               ),
             ),
           ),
         )
       }
-      function qe(e) {
+      function We(e) {
         var t = e.icon,
           n = e.subtitle,
           a = e.title,
@@ -5688,20 +5710,20 @@
           i = void 0 === r || r
         return h.a.createElement(
           k.a,
-          { style: [Ge.sectionContainer, i ? Ge.sectionMarginBottom : null] },
-          h.a.createElement(k.a, { style: Ge.sectionIconContainer }, t),
+          { style: [Xe.sectionContainer, i ? Xe.sectionMarginBottom : null] },
+          h.a.createElement(k.a, { style: Xe.sectionIconContainer }, t),
           h.a.createElement(
             k.a,
-            { style: Ge.sectionContent },
+            { style: Xe.sectionContent },
             h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, a),
             n,
           ),
         )
       }
-      function We(e) {
+      function Ke(e) {
         return h.a.createElement(ee.b, { color: 'gray700', size: 'body' }, e.children)
       }
-      var Ke = {
+      var Ge = {
           title: S.a.a3e6bb1b,
           subtitle: S.a.d82f214f,
           sections: {
@@ -5711,7 +5733,7 @@
           },
           gotIt: S.a.j24c37b2,
         },
-        Ge = P.a.create(function (e) {
+        Xe = P.a.create(function (e) {
           return {
             container: { display: 'flex', justifyContent: 'space-between', height: '100%', padding: e.spaces.space16 },
             headingContainer: { marginBottom: e.spaces.space32 },
@@ -5739,15 +5761,15 @@
             ctaContainer: { paddingHorizontal: e.spaces.space16 },
           }
         }),
-        Xe = n('WrBE'),
-        Je = n('i4Oy')
-      function Ze(e) {
+        Je = n('WrBE'),
+        Ze = n('i4Oy')
+      function Qe(e) {
         var t = Object(p.k)().requestSheetDismissal
-        return h.a.createElement(Xe.a.View, {
+        return h.a.createElement(Je.a.View, {
           onClick: t,
           style: [
-            Ye.dockSheetOverlayBase,
-            e.isSideNavLayout ? $e.dockSheetOverlay : Ye.dockSheetOverlay,
+            $e.dockSheetOverlayBase,
+            e.isSideNavLayout ? et.dockSheetOverlay : $e.dockSheetOverlay,
             {
               opacity: e.animation.animatedPan.interpolate({
                 inputRange: [e.animation.shellHeights.half, e.animation.shellHeights.full],
@@ -5757,15 +5779,15 @@
           ],
         })
       }
-      function Qe(e) {
+      function Ye(e) {
         return h.a.createElement(
           k.a,
-          { style: [e.style, e.hasDismissRequest && Ye.pointerEventsNone] },
+          { style: [e.style, e.hasDismissRequest && $e.pointerEventsNone] },
           h.a.createElement(
-            Xe.a.View,
+            Je.a.View,
             {
               style: [
-                Ye.contentAnimatedContainer,
+                $e.contentAnimatedContainer,
                 {
                   maxHeight: e.maxHeight,
                   transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }],
@@ -5774,13 +5796,13 @@
             },
             h.a.createElement(
               k.a,
-              { style: Ye.contentWrapperContainer },
-              h.a.createElement(k.a, { style: Ye.contentWrapper }, e.children),
+              { style: $e.contentWrapperContainer },
+              h.a.createElement(k.a, { style: $e.contentWrapper }, e.children),
             ),
           ),
         )
       }
-      var Ye = P.a.create(function (e) {
+      var $e = P.a.create(function (e) {
           var t = Object(Ee.b)(e),
             n = t.borderRadius
           return {
@@ -5813,7 +5835,7 @@
             pointerEventsNone: { pointerEvents: 'none' },
           }
         }),
-        $e = P.a.create(function (e) {
+        et = P.a.create(function (e) {
           var t = Object(Ee.b)(e)
           return {
             dockSheetContainer: {
@@ -5835,7 +5857,7 @@
             },
           }
         }),
-        et = function (e) {
+        tt = function (e) {
           var t = e.audioSpaceId,
             n = e.dockAnimation,
             a = e.isSideNavLayout,
@@ -5844,35 +5866,35 @@
             o = r.hasDismissRequest,
             c = r.sheetId,
             s = (function (e) {
-              var t = Je.a.get('window'),
+              var t = Ze.a.get('window'),
                 n = Object(Ee.a)(t.height, e),
-                a = h.a.useRef(new Xe.a.Value(n.full)).current
+                a = h.a.useRef(new Je.a.Value(n.full)).current
               return {
                 animatedPan: a,
                 shellHeights: n,
                 springToOpen: function (e) {
-                  return Xe.a.spring(a, { toValue: 0, bounciness: 2 }).start(e)
+                  return Je.a.spring(a, { toValue: 0, bounciness: 2 }).start(e)
                 },
                 springToClose: function (e) {
-                  return Xe.a.spring(a, { toValue: n.full }).start(e)
+                  return Je.a.spring(a, { toValue: n.full }).start(e)
                 },
               }
             })(a),
             l = n.shellHeights.sheetMaxHeight,
-            u = a ? $e.contentContainer : Ye.contentContainer,
+            u = a ? et.contentContainer : $e.contentContainer,
             d = h.a.useMemo(
               function () {
                 switch (c) {
                   case p.b.report:
-                    return h.a.createElement(Le.b, { audioSpaceId: t })
+                    return h.a.createElement(ze.b, { audioSpaceId: t })
                   case p.b.recordingEducation:
                     return h.a.createElement(ce, null)
                   case p.b.generalNux:
-                    return h.a.createElement(Ue, null)
+                    return h.a.createElement(qe, null)
                   case p.b.clippingEducation:
                     return h.a.createElement(fe, null)
                   case p.b.createClip:
-                    return h.a.createElement(_e, { audioSpaceId: t })
+                    return h.a.createElement(Le, { audioSpaceId: t })
                   default:
                     return null
                 }
@@ -5895,28 +5917,28 @@
             !d)
           )
             return null
-          var f = a ? $e.dockSheetContainer : Ye.dockSheetContainer
+          var f = a ? et.dockSheetContainer : $e.dockSheetContainer
           return h.a.createElement(
-            Xe.a.View,
+            Je.a.View,
             {
               style: [
                 f,
-                o && Ye.pointerEventsNone,
+                o && $e.pointerEventsNone,
                 {
                   height: n.shellHeights.full - n.animatedPan._value,
                   opacity: s.animatedPan.interpolate({ inputRange: [0, s.shellHeights.half], outputRange: [1, 0] }),
                 },
               ],
             },
-            h.a.createElement(Ze, { animation: s, isSideNavLayout: a }),
-            h.a.createElement(Qe, { animation: s, hasDismissRequest: o, maxHeight: l, style: u }, d),
+            h.a.createElement(Qe, { animation: s, isSideNavLayout: a }),
+            h.a.createElement(Ye, { animation: s, hasDismissRequest: o, maxHeight: l, style: u }, d),
           )
         }
-      function tt(e) {
+      function nt(e) {
         var t = e.children
         return p.m() ? null : t
       }
-      var nt = function () {
+      var at = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(ae.a)(
           'svg',
@@ -5938,124 +5960,124 @@
           ),
         )
       }
-      nt.metadata = { width: 17, height: 9.5 }
-      var at = nt
-      function rt(e) {
+      at.metadata = { width: 17, height: 9.5 }
+      var rt = at
+      function it(e) {
         var t = p.m()
         return h.a.createElement(
           te.a,
           { onPress: e.onPress, pullRight: !0, size: 'medium', type: 'destructiveText' },
-          h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, t ? it.close : it.leave),
+          h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, t ? ot.close : ot.leave),
         )
       }
-      var it = { leave: S.a.bb1d57b6, close: S.a.ia5e7487 },
-        ot = n('4EYz'),
-        ct = n('MMRb'),
-        st = n('Pl95'),
-        lt = n('0nhk'),
-        ut = n('pjBI'),
-        dt = n('MH+I'),
-        pt = n('fzjU')
-      function ft(e) {
+      var ot = { leave: S.a.bb1d57b6, close: S.a.ia5e7487 },
+        ct = n('4EYz'),
+        st = n('MMRb'),
+        lt = n('Pl95'),
+        ut = n('0nhk'),
+        dt = n('pjBI'),
+        pt = n('MH+I'),
+        ft = n('fzjU')
+      function mt(e) {
         var t = Object(E.a)(e.audioSpaceId),
           n = t.space,
           a = t.utils,
           r = (n || {}).ended_at,
           i = a.getTunedInCount()
         return h.a.createElement(
-          ut.a,
-          { color: bt.color, style: vt.container },
-          h.a.createElement(mt, { ended_at: r }),
-          h.a.createElement(ht, { count: i }),
+          dt.a,
+          { color: yt.color, style: gt.container },
+          h.a.createElement(ht, { ended_at: r }),
+          h.a.createElement(vt, { count: i }),
         )
       }
-      function mt(e) {
+      function ht(e) {
         var t = e.ended_at
         if (!t) return null
         var n = null,
           a = Date.now() - t
         return (
           (n =
-            a < St
+            a < Et
               ? h.a.createElement(
                   S.a.I18NFormatMessage,
                   { $i18n: 'f0e84608' },
-                  h.a.createElement(dt.a, { short: !0, timeMs: a }),
+                  h.a.createElement(pt.a, { short: !0, timeMs: a }),
                 )
-              : yt(new Date(t))),
-          h.a.createElement(ee.b, bt, n)
+              : St(new Date(t))),
+          h.a.createElement(ee.b, yt, n)
         )
       }
-      function ht(e) {
+      function vt(e) {
         var t = e.count
-        return t ? h.a.createElement(ee.b, bt, gt.tunedIn({ count: pt.a.formatCountShort(t) })) : null
+        return t ? h.a.createElement(ee.b, yt, bt.tunedIn({ count: ft.a.formatCountShort(t) })) : null
       }
-      var vt = P.a.create(function (e) {
+      var gt = P.a.create(function (e) {
           return { container: { marginBottom: e.spaces.space4 } }
         }),
-        gt = { tunedIn: S.a.h140746e },
-        bt = { color: 'text', size: 'subtext2' },
-        yt = S.a.e18e399a,
-        St = 864e5
-      function Et(e) {
+        bt = { tunedIn: S.a.h140746e },
+        yt = { color: 'text', size: 'subtext2' },
+        St = S.a.e18e399a,
+        Et = 864e5
+      function kt(e) {
         return h.a.createElement(
           k.a,
-          { style: Ct.titleLabelRow },
-          h.a.createElement(Et.Replay, e),
-          h.a.createElement(Et.EmployeeOnly, e),
+          { style: xt.titleLabelRow },
+          h.a.createElement(kt.Replay, e),
+          h.a.createElement(kt.EmployeeOnly, e),
         )
       }
-      function kt(e) {
-        return h.a.createElement(k.a, { style: Ct.titleLabelSpacer }, e.children)
+      function wt(e) {
+        return h.a.createElement(k.a, { style: xt.titleLabelSpacer }, e.children)
       }
-      ;(Et.EmployeeOnly = function (e) {
+      ;(kt.EmployeeOnly = function (e) {
         var t = Object(E.a)(e.audioSpaceId).space
         return null != t && t.is_employee_only
           ? h.a.createElement(
-              kt,
+              wt,
               null,
-              h.a.createElement(W.a, { background: 'navigationBackground', bold: !0 }, wt.tweepsOnly),
+              h.a.createElement(W.a, { background: 'navigationBackground', bold: !0 }, Ct.tweepsOnly),
             )
           : null
       }),
-        (Et.Replay = function (e) {
+        (kt.Replay = function (e) {
           var t = Object(E.a)(e.audioSpaceId).utils
           return t.is.recording
             ? h.a.createElement(
-                kt,
+                wt,
                 null,
                 h.a.createElement(G, { audioSpaceId: e.audioSpaceId, withEducationOnClick: !e.isOutsideDock }),
               )
             : t.is.replayable
-            ? h.a.createElement(kt, null, h.a.createElement(ft, { audioSpaceId: e.audioSpaceId }))
+            ? h.a.createElement(wt, null, h.a.createElement(mt, { audioSpaceId: e.audioSpaceId }))
             : null
         })
-      var wt = { tweepsOnly: S.a.a5bf5489 },
-        Ct = P.a.create(function (e) {
+      var Ct = { tweepsOnly: S.a.a5bf5489 },
+        xt = P.a.create(function (e) {
           return {
             titleLabelRow: { flexDirection: 'row', marginBottom: e.spaces.space4 },
             titleLabelSpacer: { paddingRight: e.spacesPx.space4 },
           }
         }),
-        xt = n('VKFJ'),
-        It = n('yUQf'),
-        Pt = n('7ep7'),
-        Tt = n('v6aA'),
-        Ot = n('DlVf'),
-        Rt = n('RqPI'),
-        Mt = n('mjJ+'),
-        _t = n('FXw/'),
-        Lt = n('GCOQ')
-      function zt(e) {
+        It = n('VKFJ'),
+        Pt = n('yUQf'),
+        Tt = n('7ep7'),
+        Ot = n('v6aA'),
+        Rt = n('DlVf'),
+        Mt = n('RqPI'),
+        _t = n('mjJ+'),
+        Lt = n('FXw/'),
+        zt = n('GCOQ')
+      function jt(e) {
         var t = (function (e) {
             var t = Object(E.a)(e).utils,
-              n = Object(It.a)(Rt.n),
+              n = Object(Pt.a)(Mt.n),
               a = p.k().openSheet,
               r = []
             n &&
               r.push({
-                Icon: Lt.a,
-                text: jt.reportThisSpace,
+                Icon: zt.a,
+                text: At.reportThisSpace,
                 isEmphasized: !0,
                 onClick: function () {
                   a(p.b.report), t.scribe(':audiospace::caret:report:click')
@@ -6069,7 +6091,7 @@
           i = a[1]
         if (t.items.length < 1) return null
         var o = r
-          ? h.a.createElement(Mt.a, {
+          ? h.a.createElement(_t.a, {
               isFixed: !0,
               items: t.items,
               onCloseRequested: function () {
@@ -6082,11 +6104,11 @@
           h.a.Fragment,
           null,
           h.a.createElement(te.a, {
-            accessibilityLabel: jt.more,
+            accessibilityLabel: At.more,
             borderColor: 'transparent',
             color: 'text',
-            hoverLabel: { label: jt.more },
-            icon: h.a.createElement(_t.a, null),
+            hoverLabel: { label: At.more },
+            icon: h.a.createElement(Lt.a, null),
             onPress: function () {
               return i(!0)
             },
@@ -6096,21 +6118,21 @@
           o,
         )
       }
-      var jt = { more: S.a.h63a5c3b, reportThisSpace: S.a.b3481ffd },
-        At = n('O07O'),
-        Ht = (n('i4UL'), n('CDzS'))
-      function Dt() {
+      var At = { more: S.a.h63a5c3b, reportThisSpace: S.a.b3481ffd },
+        Ht = n('O07O'),
+        Dt = (n('i4UL'), n('CDzS'))
+      function Bt() {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(ae.a)(
           'svg',
-          o()(o()({}, e), {}, { style: [Bt.root, e.style], viewBox: '0 0 24 24' }),
+          o()(o()({}, e), {}, { style: [Nt.root, e.style], viewBox: '0 0 24 24' }),
           h.a.createElement(
             h.a.Fragment,
             null,
-            h.a.createElement(Ht.a.SVGLinearGradient, null),
+            h.a.createElement(Dt.a.SVGLinearGradient, null),
             h.a.createElement(
               'g',
-              { fill: Ht.a.SVGLinearGradient.fill },
+              { fill: Dt.a.SVGLinearGradient.fill },
               h.a.createElement('path', {
                 d: 'M17.97 7.585c-.552 0-1 .448-1 1v3.417c0 2.588-2.156 4.693-4.806 4.693h-.328c-2.65 0-4.806-2.105-4.806-4.693V8.585c0-.552-.448-1-1-1s-1 .448-1 1v3.417c0 3.416 2.618 6.237 5.983 6.64l-.01 1.858H8.27c-.553 0-1 .448-1 1s.447 1 1 1h7.46c.552 0 1-.448 1-1s-.448-1-1-1h-2.726l.01-1.863c3.35-.413 5.955-3.228 5.955-6.635V8.585c0-.552-.448-1-1-1z',
               }),
@@ -6121,8 +6143,8 @@
           ),
         )
       }
-      Dt.metadata = { width: 24, height: 24 }
-      var Bt = P.a.create(function (e) {
+      Bt.metadata = { width: 24, height: 24 }
+      var Nt = P.a.create(function (e) {
           return {
             root: {
               display: 'inline-block',
@@ -6135,34 +6157,34 @@
             },
           }
         }),
-        Nt = ['isSideNavLayout', 'onLayout']
-      function Vt(e) {
+        Vt = ['isSideNavLayout', 'onLayout']
+      function Ft(e) {
         var t = e.isSideNavLayout,
           n = e.onLayout,
-          a = r()(e, Nt),
-          i = [qt.footer, t && qt.footerWide]
-        return h.a.createElement(k.a, { onLayout: n, style: i }, h.a.createElement(Ft, a))
-      }
-      function Ft(e) {
-        return p.m()
-          ? h.a.createElement(At.a, { audioSpaceId: e.audioSpaceId })
-          : h.a.createElement(Ut, { audioSpaceId: e.audioSpaceId })
+          a = r()(e, Vt),
+          i = [Wt.footer, t && Wt.footerWide]
+        return h.a.createElement(k.a, { onLayout: n, style: i }, h.a.createElement(Ut, a))
       }
       function Ut(e) {
-        var t = h.a.useContext(Tt.a).featureSwitches
+        return p.m()
+          ? h.a.createElement(Ht.a, { audioSpaceId: e.audioSpaceId })
+          : h.a.createElement(qt, { audioSpaceId: e.audioSpaceId })
+      }
+      function qt(e) {
+        var t = h.a.useContext(Ot.a).featureSwitches
         return h.a.createElement(
           h.a.Fragment,
           null,
           h.a.createElement(
             k.a,
-            { style: qt.footerLeft },
+            { style: Wt.footerLeft },
             t.isTrue('voice_rooms_speaking_enabled') &&
               h.a.createElement(te.a, {
                 accessibilityLabel: 'Request to speak',
                 borderColor: 'transparent',
                 color: 'text',
                 hoverLabel: { label: 'Request to speak' },
-                icon: h.a.createElement(Dt, null),
+                icon: h.a.createElement(Bt, null),
                 onPress: function () {},
                 size: 'xLarge',
                 type: 'primaryOutlined',
@@ -6170,19 +6192,19 @@
           ),
           h.a.createElement(
             k.a,
-            { style: qt.footerRight },
-            h.a.createElement(zt, e),
+            { style: Wt.footerRight },
+            h.a.createElement(jt, e),
             t.isTrue('voice_rooms_reactions_enabled') &&
               h.a.createElement(
                 h.a.Fragment,
                 null,
-                h.a.createElement(k.a, { style: qt.footerButtonSpacer }),
+                h.a.createElement(k.a, { style: Wt.footerButtonSpacer }),
                 h.a.createElement(te.a, {
                   accessibilityLabel: 'Reactions',
                   borderColor: 'transparent',
                   color: 'text',
                   hoverLabel: { label: 'Reactions' },
-                  icon: h.a.createElement(Ot.a, null),
+                  icon: h.a.createElement(Rt.a, null),
                   onPress: function () {},
                   size: 'medium',
                   type: 'primaryOutlined',
@@ -6192,13 +6214,13 @@
               h.a.createElement(
                 h.a.Fragment,
                 null,
-                h.a.createElement(k.a, { style: qt.footerButtonSpacer }),
-                h.a.createElement(lt.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon' }),
+                h.a.createElement(k.a, { style: Wt.footerButtonSpacer }),
+                h.a.createElement(ut.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon' }),
               ),
           ),
         )
       }
-      var qt = P.a.create(function (e) {
+      var Wt = P.a.create(function (e) {
           var t = Object(Ee.b)(e),
             n = t.borderRadius,
             a = t.paddingHorizontal
@@ -6219,32 +6241,32 @@
             footerWide: { borderBottomLeftRadius: n, borderBottomRightRadius: n, boxShadow: e.boxShadows.xSmall },
           }
         }),
-        Wt = n('0FVZ'),
-        Kt = n('Oe3h'),
-        Gt = n('cTG8'),
-        Xt = n('U7kY'),
-        Jt = n('n7AW'),
-        Zt = n('yyPN'),
-        Qt = n.n(Zt),
-        Yt = n('GiKA'),
-        $t = n.n(Yt),
-        en = n('p3P5'),
-        tn = ['periscopeUserId']
-      function nn(e) {
-        var t = e.isSideNavLayout ? Wt.a.WideExpandedSpaceDock : Wt.a.NarrowExpandedSpaceDock
-        return h.a.createElement(t, null, h.a.createElement(an, e))
-      }
+        Kt = n('0FVZ'),
+        Gt = n('Oe3h'),
+        Xt = n('cTG8'),
+        Jt = n('U7kY'),
+        Zt = n('n7AW'),
+        Qt = n('yyPN'),
+        Yt = n.n(Qt),
+        $t = n('GiKA'),
+        en = n.n($t),
+        tn = n('p3P5'),
+        nn = ['periscopeUserId']
       function an(e) {
-        var t = Object(It.a)(ct.selectDrawerVisibility),
+        var t = e.isSideNavLayout ? Kt.a.WideExpandedSpaceDock : Kt.a.NarrowExpandedSpaceDock
+        return h.a.createElement(t, null, h.a.createElement(rn, e))
+      }
+      function rn(e) {
+        var t = Object(Pt.a)(st.selectDrawerVisibility),
           n = Object(Ee.b)(P.a.theme),
           a = e.width + n.shadowOffset,
-          r = e.isSideNavLayout ? [bn.root, { width: a }] : null,
+          r = e.isSideNavLayout ? [yn.root, { width: a }] : null,
           i = h.a.useState(),
           o = u()(i, 2),
           c = o[0],
           l = o[1],
           p = h.a.useRef(null),
-          f = Je.a.get('window')
+          f = Ze.a.get('window')
         function m() {
           var e,
             t = null === (e = p.current) || void 0 === e ? void 0 : e.getBoundingClientRect()
@@ -6261,28 +6283,28 @@
             },
             [t],
           ),
-          h.a.createElement(k.a, { ref: p, style: r }, h.a.createElement(sn, s()({}, e, { layout: c })))
-        )
-      }
-      function rn(e) {
-        var t = Object(Ee.b)(P.a.theme),
-          n = e.animation.shellHeights.full - t.shadowOffset
-        return h.a.createElement(
-          Xe.a.View,
-          {
-            style: [
-              vn.expandedShell,
-              { height: n, transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }] },
-            ],
-          },
-          h.a.createElement(on, e),
+          h.a.createElement(k.a, { ref: p, style: r }, h.a.createElement(ln, s()({}, e, { layout: c })))
         )
       }
       function on(e) {
+        var t = Object(Ee.b)(P.a.theme),
+          n = e.animation.shellHeights.full - t.shadowOffset
+        return h.a.createElement(
+          Je.a.View,
+          {
+            style: [
+              gn.expandedShell,
+              { height: n, transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }] },
+            ],
+          },
+          h.a.createElement(cn, e),
+        )
+      }
+      function cn(e) {
         var t = p.n(),
-          n = Object(we.a)(),
+          n = Object(ke.a)(),
           a = e.footerHeight,
-          r = h.a.useRef(new Xe.a.Value(a))
+          r = h.a.useRef(new Je.a.Value(a))
         function i() {
           e.animation.springTo('collapse')
         }
@@ -6292,29 +6314,29 @@
         return (
           h.a.useEffect(
             function () {
-              Xe.a.spring(r.current, { toValue: t ? a + fn : a }).start()
+              Je.a.spring(r.current, { toValue: t ? a + mn : a }).start()
             },
             [t, a],
           ),
-          h.a.createElement(Kt.a, { id: 'SpaceDockExpanded' }, function (t, a) {
+          h.a.createElement(Gt.a, { id: 'SpaceDockExpanded' }, function (t, a) {
             return h.a.createElement(
               k.a,
-              s()({ ref: t() }, a({ style: vn.expandedShellContent })),
+              s()({ ref: t() }, a({ style: gn.expandedShellContent })),
               h.a.createElement(
-                Xe.a.View,
-                s()({}, e.animation.panResponder.panHandlers, { style: vn.expandedShellHeader }),
+                Je.a.View,
+                s()({}, e.animation.panResponder.panHandlers, { style: gn.expandedShellHeader }),
                 h.a.createElement(
                   k.a,
-                  { style: vn.expandedShellHeaderGripContainer },
-                  h.a.createElement(k.a, { style: vn.expandedShellHeaderGrip }),
+                  { style: gn.expandedShellHeaderGripContainer },
+                  h.a.createElement(k.a, { style: gn.expandedShellHeaderGrip }),
                 ),
                 h.a.createElement(
                   k.a,
-                  { style: vn.expandedShellHeaderButtons },
+                  { style: gn.expandedShellHeaderButtons },
                   h.a.createElement(te.a, {
-                    accessibilityLabel: yn.collapse,
-                    hoverLabel: { label: yn.collapse },
-                    icon: h.a.createElement(at, { style: vn.iconChevronDown }),
+                    accessibilityLabel: Sn.collapse,
+                    hoverLabel: { label: Sn.collapse },
+                    icon: h.a.createElement(rt, { style: gn.iconChevronDown }),
                     onPress: i,
                     pullLeft: !0,
                     size: 'medium',
@@ -6322,46 +6344,46 @@
                   }),
                   h.a.createElement(
                     k.a,
-                    { style: vn.expandedShellHeaderRight },
-                    h.a.createElement(tt, null, h.a.createElement(st.a, { audioSpaceId: e.audioSpaceId })),
+                    { style: gn.expandedShellHeaderRight },
+                    h.a.createElement(nt, null, h.a.createElement(lt.a, { audioSpaceId: e.audioSpaceId })),
                     n.isCreationEnabled
-                      ? h.a.createElement(lt.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon-borderless' })
+                      ? h.a.createElement(ut.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon-borderless' })
                       : null,
-                    h.a.createElement(rt, { onPress: o }),
+                    h.a.createElement(it, { onPress: o }),
                   ),
                 ),
                 h.a.createElement(
                   k.a,
-                  { style: vn.expandedShellDescription },
-                  h.a.createElement(cn, { audioSpaceId: e.audioSpaceId }),
+                  { style: gn.expandedShellDescription },
+                  h.a.createElement(sn, { audioSpaceId: e.audioSpaceId }),
                 ),
               ),
               h.a.createElement(
-                Xe.a.View,
+                Je.a.View,
                 {
                   id: 'ParticipantsWrapper',
-                  style: [vn.participantsContainer, { paddingBottom: Xe.a.add(r.current, e.animation.animatedPan) }],
+                  style: [gn.participantsContainer, { paddingBottom: Je.a.add(r.current, e.animation.animatedPan) }],
                 },
-                e.mounted ? h.a.createElement(ln, e) : null,
+                e.mounted ? h.a.createElement(un, e) : null,
               ),
             )
           })
         )
       }
-      function cn(e) {
+      function sn(e) {
         var t = Object(E.a)(e.audioSpaceId).utils.title(),
           n = {
-            hashtags: Qt()(t).map(function (e) {
+            hashtags: Yt()(t).map(function (e) {
               return (e.text = e.hashtag), e
             }),
-            user_mentions: $t()(t),
+            user_mentions: en()(t),
           },
           a = [0, t.length]
         return h.a.createElement(
           h.a.Fragment,
           null,
-          h.a.createElement(Et, { audioSpaceId: e.audioSpaceId, isOutsideDock: e.isOutsideDock }),
-          h.a.createElement(Gt.a, {
+          h.a.createElement(kt, { audioSpaceId: e.audioSpaceId, isOutsideDock: e.isOutsideDock }),
+          h.a.createElement(Xt.a, {
             displayTextRange: a,
             entities: n,
             linkify: !0,
@@ -6372,14 +6394,14 @@
           }),
         )
       }
-      function sn(e) {
+      function ln(e) {
         var t = h.a.useState(!1),
           n = u()(t, 2),
           a = n[0],
           r = n[1],
           i = (function (e, t, n) {
             var a = h.a.useRef({ state: p.a.full, animatedPanOffset: 0 }),
-              r = Je.a.get('window'),
+              r = Ze.a.get('window'),
               i = h.a.useMemo(
                 function () {
                   return Object(Ee.a)(r.height, e.isSideNavLayout, n)
@@ -6404,10 +6426,10 @@
                 },
                 [i],
               ),
-              c = h.a.useRef(new Xe.a.Value(i.full)).current
+              c = h.a.useRef(new Je.a.Value(i.full)).current
             Object(j.a)(function () {
               var e = o(a.current.state)
-              Xe.a.spring(c, { toValue: e }).start(t)
+              Je.a.spring(c, { toValue: e }).start(t)
             })
             var s = e.onRequestClose,
               l = e.onToggleCollapsed,
@@ -6419,7 +6441,7 @@
                       r = null == t ? void 0 : t.vy
                     return new Promise(function (t) {
                       if (e === p.a.exit) return s(), t()
-                      Xe.a.spring(c, { velocity: r, toValue: n }).start(function () {
+                      Je.a.spring(c, { velocity: r, toValue: n }).start(function () {
                         e === p.a.collapse && l(), t()
                       })
                     })
@@ -6436,7 +6458,7 @@
               ),
               {
                 panResponder: h.a.useRef(
-                  Pt.a.create({
+                  Tt.a.create({
                     onMoveShouldSetPanResponder: function (e, t) {
                       return Math.abs(t.dy) > 5
                     },
@@ -6449,7 +6471,7 @@
                     },
                     onPanResponderRelease: function (e, t) {
                       var n = (null == t ? void 0 : t.vy) || 0,
-                        r = Math.abs(n) >= mn
+                        r = Math.abs(n) >= hn
                       c._value > i.collapse || (r && t.dy > 0) ? u(p.a.collapse, t) : u(a.current.state, t)
                     },
                   }),
@@ -6466,12 +6488,12 @@
             },
             e.layout,
           ),
-          c = h.a.useRef(new Xe.a.Value(i.shellHeights.full)).current,
+          c = h.a.useRef(new Je.a.Value(i.shellHeights.full)).current,
           l = o()(o()({}, e), {}, { mounted: a, animation: i })
         h.a.useEffect(
           function () {
             var e = i.shellHeights.full
-            Xe.a.spring(c, { toValue: e }).start()
+            Je.a.spring(c, { toValue: e }).start()
           },
           [i.shellHeights.full],
         )
@@ -6488,29 +6510,29 @@
           )
         return h.a.useMemo(
           function () {
-            var t = e.isSideNavLayout ? bn.container : vn.container,
-              n = e.isSideNavLayout ? bn.expandedShellContainer : vn.expandedShellContainer,
-              a = e.isSideNavLayout ? bn.footerContainer : vn.footerContainer,
+            var t = e.isSideNavLayout ? yn.container : gn.container,
+              n = e.isSideNavLayout ? yn.expandedShellContainer : gn.expandedShellContainer,
+              a = e.isSideNavLayout ? yn.footerContainer : gn.footerContainer,
               r = c,
               o = i.animatedPan.interpolate({
                 inputRange: [i.shellHeights.collapse, i.shellHeights.full],
                 outputRange: [1, 0],
               })
             return h.a.createElement(
-              Xe.a.View,
-              { style: [t, vn.forceGPULayer, { height: r, opacity: o }] },
-              h.a.createElement(k.a, { style: n }, h.a.createElement(rn, s()({}, l, { footerHeight: m }))),
+              Je.a.View,
+              { style: [t, gn.forceGPULayer, { height: r, opacity: o }] },
+              h.a.createElement(k.a, { style: n }, h.a.createElement(on, s()({}, l, { footerHeight: m }))),
               h.a.createElement(
                 k.a,
                 { style: a },
-                h.a.createElement(D, { audioSpaceId: e.audioSpaceId, height: fn }),
-                h.a.createElement(Vt, {
+                h.a.createElement(D, { audioSpaceId: e.audioSpaceId, height: mn }),
+                h.a.createElement(Ft, {
                   audioSpaceId: e.audioSpaceId,
                   isSideNavLayout: e.isSideNavLayout,
                   onLayout: g,
                 }),
               ),
-              h.a.createElement(et, {
+              h.a.createElement(tt, {
                 audioSpaceId: e.audioSpaceId,
                 dockAnimation: i,
                 isSideNavLayout: e.isSideNavLayout,
@@ -6520,14 +6542,14 @@
           [e.audioSpaceId, e.isSideNavLayout, a, e.layout],
         )
       }
-      function ln(e) {
-        var t = Object(xt.b)(e.audioSpaceId),
+      function un(e) {
+        var t = Object(It.b)(e.audioSpaceId),
           n = t.all,
           a = t.otherParticipantsTotal
         v.d()
-        var r = Je.a.get('window'),
-          i = (e.isSideNavLayout ? e.width : r.width) - 2 * hn(P.a.theme).container.paddingHorizontal,
-          c = Object(en.b)(P.a.theme),
+        var r = Ze.a.get('window'),
+          i = (e.isSideNavLayout ? e.width : r.width) - 2 * vn(P.a.theme).container.paddingHorizontal,
+          c = Object(tn.b)(P.a.theme),
           l = c.getHeight(),
           u = c.getWidth(),
           d = Math.min(4, Math.floor(i / u)),
@@ -6535,9 +6557,9 @@
         h.a.useEffect(
           function () {
             return (
-              e.isSideNavLayout || Xt.a.disable(),
+              e.isSideNavLayout || Jt.a.disable(),
               function () {
-                Xt.a.enable()
+                Jt.a.enable()
               }
             )
           },
@@ -6563,15 +6585,15 @@
               getItemLayout: function (e, t) {
                 return { length: l, offset: l * t, index: t }
               },
-              renderItem: un,
+              renderItem: dn,
               ListHeaderComponent: h.a.createElement(T, { audioSpaceId: e.audioSpaceId }),
               ListFooterComponent: h.a.createElement(
-                tt,
+                nt,
                 null,
                 h.a.createElement(
                   k.a,
-                  { style: vn.participantsFooterContainer },
-                  h.a.createElement(ot.a, { audioSpaceId: e.audioSpaceId, count: a, interactive: !0 }),
+                  { style: gn.participantsFooterContainer },
+                  h.a.createElement(ct.a, { audioSpaceId: e.audioSpaceId, count: a, interactive: !0 }),
                 ),
               ),
             }
@@ -6580,9 +6602,9 @@
           [f],
         )
       }
-      function un(e) {
+      function dn(e) {
         var t = e.item
-        return h.a.createElement(dn, {
+        return h.a.createElement(pn, {
           hasNftAvatar: t.user.has_nft_avatar,
           isVerified: t.user.is_verified,
           key: t.key,
@@ -6594,34 +6616,34 @@
           width: t.width,
         })
       }
-      function dn(e) {
-        var t = e.periscopeUserId,
-          n = r()(e, tn),
-          a = xt.b.isParticipantHost(n.kind),
-          i = xt.b.canParticipantSpeak(n.kind) ? h.a.createElement(pn, { isHost: a, periscopeUserId: t }) : null,
-          o = Object.assign({}, { speakingIndicator: i, periscopeUserId: t }, n)
-        return h.a.createElement(en.a, o)
-      }
       function pn(e) {
+        var t = e.periscopeUserId,
+          n = r()(e, nn),
+          a = It.b.isParticipantHost(n.kind),
+          i = It.b.canParticipantSpeak(n.kind) ? h.a.createElement(fn, { isHost: a, periscopeUserId: t }) : null,
+          o = Object.assign({}, { speakingIndicator: i, periscopeUserId: t }, n)
+        return h.a.createElement(tn.a, o)
+      }
+      function fn(e) {
         var t = e.isHost,
           n = e.periscopeUserId,
           a = f.f({ isHost: t, periscopeUserId: n })
         return h.a.createElement(
           k.a,
-          { style: gn.container },
-          h.a.createElement(Jt.a, { audioLevel: a || 0, size: P.a.theme.spacesPx.space16 }),
+          { style: bn.container },
+          h.a.createElement(Zt.a, { audioLevel: a || 0, size: P.a.theme.spacesPx.space16 }),
         )
       }
-      var fn = 100,
-        mn = 0.5
-      function hn(e) {
+      var mn = 100,
+        hn = 0.5
+      function vn(e) {
         return { container: { paddingHorizontal: e.spacesPx.space8 } }
       }
-      var vn = P.a.create(function (e) {
+      var gn = P.a.create(function (e) {
         var t = Object(Ee.b)(e),
           n = t.paddingHorizontal,
           a = t.borderRadius,
-          r = hn(e)
+          r = vn(e)
         return {
           forceGPULayer: { transform: [{ translate3d: '0, 0, 0' }] },
           container: { position: 'fixed', bottom: 0, width: '100%', backgroundColor: e.colors.maskColor },
@@ -6653,7 +6675,7 @@
           footerContainer: { position: 'absolute', bottom: 0, width: '100%' },
         }
       })
-      var gn = P.a.create(function (e) {
+      var bn = P.a.create(function (e) {
           return {
             container: {
               position: 'absolute',
@@ -6666,7 +6688,7 @@
             },
           }
         }),
-        bn = P.a.create(function (e) {
+        yn = P.a.create(function (e) {
           var t = Object(Ee.b)(e)
           return {
             root: {
@@ -6694,7 +6716,7 @@
             },
           }
         }),
-        yn = { collapse: S.a.d227d19e }
+        Sn = { collapse: S.a.d227d19e }
     },
   },
 ])

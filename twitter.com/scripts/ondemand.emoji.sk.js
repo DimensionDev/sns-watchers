@@ -7,7 +7,7 @@
       i('i506b71f', 'Smajlíkovia a ľudia'),
         i('f457f731', 'Zvieratá a príroda'),
         i('ce9bf9a3', 'Jedlá a nápoje'),
-        i('da1e1fd1', 'Aktivita'),
+        i('da1e1fd1', 'Aktivity'),
         i('g280553b', 'Cestovanie a miesta'),
         i('b2f95aa6', 'Objekty'),
         i('ac91750d', 'Symboly'),

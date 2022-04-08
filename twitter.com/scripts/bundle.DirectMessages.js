@@ -30835,6 +30835,7 @@
             'dm_evolution_inbox_primary_enabled',
             'dm_evolution_inbox_secondary_enabled',
             'dm_evolution_inbox_tertiary_enabled',
+            'dm_evolution_conversation_read_enabled',
           ],
           [
             'dm_evolution_enabled',
@@ -30842,6 +30843,7 @@
             'dm_evolution_inbox_secondary_enabled',
             'dm_evolution_inbox_tertiary_enabled',
             'dm_evolution_conversation_read_enabled',
+            'dm_evolution_conversation_write_enabled',
           ],
         ],
         Re = function () {

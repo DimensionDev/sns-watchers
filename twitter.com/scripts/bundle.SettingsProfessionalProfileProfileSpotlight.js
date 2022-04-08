@@ -35,7 +35,7 @@
           y = o(!1),
           k = y[0],
           f = y[1],
-          _ = c(
+          b = c(
             function (l) {
               p.current === n && g.current === e && (m.current.delete(l), r.current && f(m.current.size > 0))
             },
@@ -48,7 +48,7 @@
           },
           [n, r, e],
         )
-        var b = c(
+        var _ = c(
           function (i) {
             var t = l(
               n,
@@ -59,15 +59,15 @@
                   mutation: e,
                   onCompleted: function (e, l) {
                     var n
-                    _(t), null === (n = i.onCompleted) || void 0 === n || n.call(i, e, l)
+                    b(t), null === (n = i.onCompleted) || void 0 === n || n.call(i, e, l)
                   },
                   onError: function (e) {
                     var l
-                    _(t), null === (l = i.onError) || void 0 === l || l.call(i, e)
+                    b(t), null === (l = i.onError) || void 0 === l || l.call(i, e)
                   },
                   onUnsubscribe: function () {
                     var e
-                    _(t), null === (e = i.onUnsubscribe) || void 0 === e || e.call(i)
+                    b(t), null === (e = i.onUnsubscribe) || void 0 === e || e.call(i)
                   },
                   onNext: function () {
                     var e
@@ -78,9 +78,9 @@
             )
             return m.current.add(t), r.current && f(!0), t
           },
-          [_, l, n, r, e],
+          [b, l, n, r, e],
         )
-        return [b, k]
+        return [_, k]
       }
     },
     PiRV: function (e, l, n) {
@@ -245,67 +245,71 @@
       'use strict'
       n.r(l),
         n.d(l, 'editableProfileSpotlightsQuery', function () {
-          return B
+          return A
         }),
         n.d(l, 'ProfileSpotlightScreen', function () {
-          return x
+          return O
         })
       var a,
         i = n('ddV6'),
         t = n.n(i),
-        r = (n('z84I'), n('LW0h'), n('7x/C'), n('jQ3i'), n('x4t0'), n('ERkP')),
-        s = n.n(r),
-        o = n('v6aA'),
-        u = n('jHSc'),
-        d = (n('YWiL'), n('3XMw')),
-        c = n.n(d),
-        p = n('KEM+'),
-        g = n.n(p),
-        m = (n('yH/f'), Object.freeze({ Shop: 'Shop', Newsletter: 'Newsletter', Location: 'About' })),
-        y = g()({}, m.Location, '/settings/professional_profile/profile_spotlight/location'),
-        k = n('9YVX'),
-        f = n('zCf4'),
-        _ = n('IAZG'),
-        b = n('0KEI'),
-        v = n('HvW7'),
-        F = n.n(v),
-        K = void 0 !== a ? a : (a = n('rcBc'))
-      var L,
-        S = n('MWbm'),
-        T = n('vVrK'),
-        h = n('t62R'),
-        R = n('CK8+'),
-        E = n('jtO7'),
-        w = n('FIs5'),
-        M = n('rHpw'),
-        C = c.a.abd845fd,
-        I = c.a.i6e7e298,
-        U = c.a.d4b6a6ef,
-        V = c.a.e2760643,
-        P = c.a.b5aed332,
-        B = void 0 !== L ? L : (L = n('PiRV')),
-        x = function (e) {
+        r = (n('z84I'), n('LW0h'), n('7x/C'), n('jQ3i'), n('x4t0'), n('mC9n')),
+        s = n('ERkP'),
+        o = n.n(s),
+        u = n('v6aA'),
+        d = n('jHSc'),
+        c = (n('YWiL'), n('3XMw')),
+        p = n.n(c),
+        g = n('KEM+'),
+        m = n.n(g),
+        y = (n('yH/f'), Object.freeze({ Shop: 'Shop', Newsletter: 'Newsletter', Location: 'About' })),
+        k = m()({}, y.Location, '/settings/professional_profile/profile_spotlight/location'),
+        f = n('9YVX'),
+        b = n('Irs7'),
+        _ = n('FGLp'),
+        F = n('zCf4'),
+        v = n('IAZG'),
+        K = n('0KEI'),
+        L = n('HvW7'),
+        S = n.n(L),
+        h = void 0 !== a ? a : (a = n('rcBc'))
+      var T,
+        R = n('MWbm'),
+        E = n('vVrK'),
+        w = n('t62R'),
+        M = n('CK8+'),
+        C = n('jtO7'),
+        I = n('FIs5'),
+        U = n('rHpw'),
+        V = p.a.abd845fd,
+        P = p.a.i6e7e298,
+        B = p.a.d4b6a6ef,
+        x = p.a.e2760643,
+        H = p.a.b5aed332,
+        A = void 0 !== T ? T : (T = n('PiRV')),
+        O = function (e) {
           var l,
             n,
             a,
             i,
-            r,
-            d = e.loggedInUserId,
-            c = Object(f.f)(),
-            p = s.a.useContext(o.a).featureSwitches,
-            g = s.a.useMemo(
+            s,
+            c = e.loggedInUserId,
+            p = Object(F.f)(),
+            g = Object(b.b)(),
+            m = o.a.useContext(u.a).featureSwitches,
+            L = o.a.useMemo(
               function () {
                 var e = []
-                return p.isTrue('responsive_web_location_spotlight_v1_config') && e.push(m.Location), e
+                return m.isTrue('responsive_web_location_spotlight_v1_config') && e.push(y.Location), e
               },
-              [p],
+              [m],
             ),
-            v = Object(_.a)(B, { userId: d }, { fetchPolicy: 'network-only' }),
-            L = (function (e) {
-              var l = F()(K),
+            T = Object(v.a)(A, { userId: c }, { fetchPolicy: 'network-only' }),
+            E = (function (e) {
+              var l = S()(h),
                 n = t()(l, 1)[0],
-                a = Object(b.useApiErrorHandler)()
-              return s.a.useCallback(
+                a = Object(K.useApiErrorHandler)()
+              return o.a.useCallback(
                 function (l, i) {
                   var t = [],
                     r = []
@@ -335,128 +339,134 @@
                 },
                 [a, e, n],
               )
-            })(d),
-            T =
-              null == v || null === (l = v.user) || void 0 === l || null === (n = l.result) || void 0 === n
+            })(c),
+            U =
+              null == T || null === (l = T.user) || void 0 === l || null === (n = l.result) || void 0 === n
                 ? void 0
                 : n.editable_profilemodules,
-            M = s.a.useState(
-              (null == T || null === (a = T.modules_for_display) || void 0 === a
+            O = o.a.useState(
+              (null == U || null === (a = U.modules_for_display) || void 0 === a
                 ? void 0
                 : a.map(function (e) {
                     return e.module_id
                   })) || [],
             ),
-            x = t()(M, 2),
-            A = x[0],
-            D = x[1],
-            O = s.a.useMemo(
+            D = t()(O, 2),
+            N = D[0],
+            W = D[1],
+            z = o.a.useMemo(
               function () {
                 var e
-                return null == T || null === (e = T.configurable_modules_v1) || void 0 === e
+                return null == U || null === (e = U.configurable_modules_v1) || void 0 === e
                   ? void 0
                   : e.filter(function (e) {
                       var l
                       return (
-                        g.includes(e.module_type) || !(null === (l = e.module_data) || void 0 === l || !l.module_id)
+                        L.includes(e.module_type) || !(null === (l = e.module_data) || void 0 === l || !l.module_id)
                       )
                     })
               },
-              [g, T],
+              [L, U],
             )
-          if (!d) return c.push('/login'), null
-          var N = function () {
-              c.goBack({ backLocation: '/settings/professional_profile' })
+          if (
+            (Object(_.a)(function () {
+              g.scribe(r.i())
+            }),
+            !c)
+          )
+            return p.push('/login'), null
+          var G = function () {
+              p.goBack({ backLocation: '/settings/professional_profile' })
             },
-            j = function (e, l) {
-              return function (n) {
-                e ? (L(n, e), D(n ? [e] : [])) : l && c.push(l)
+            X = function (e, l, n) {
+              return function (a) {
+                g.scribe(r.j(n, a)), e ? (E(a, e), W(a ? [e] : [])) : l && p.push(l)
               }
             },
-            W = function (e) {
+            Y = function (e, l) {
               return function () {
-                c.push(e)
+                g.scribe(r.h(l)), p.push(e)
               }
             }
           return (
-            (null != v &&
-              null !== (i = v.user) &&
+            (null != T &&
+              null !== (i = T.user) &&
               void 0 !== i &&
-              null !== (r = i.result) &&
-              void 0 !== r &&
-              r.editable_profilemodules) ||
-              N(),
-            s.a.createElement(
-              u.b,
-              { accessibilityHidden: !1, backButtonType: 'back', history: c, onBackClick: N, title: U },
-              s.a.createElement(
-                S.a,
-                { style: H.container },
-                O && O.length > 0
-                  ? s.a.createElement(
-                      s.a.Fragment,
+              null !== (s = i.result) &&
+              void 0 !== s &&
+              s.editable_profilemodules) ||
+              G(),
+            o.a.createElement(
+              d.b,
+              { accessibilityHidden: !1, backButtonType: 'back', history: p, onBackClick: G, title: B },
+              o.a.createElement(
+                R.a,
+                { style: j.container },
+                z && z.length > 0
+                  ? o.a.createElement(
+                      o.a.Fragment,
                       null,
-                      null == O
+                      null == z
                         ? void 0
-                        : O.map(function (e, l) {
+                        : z.map(function (e, l) {
                             return (function (e, l) {
                               var n,
                                 a = null === (n = e.module_data) || void 0 === n ? void 0 : n.module_id,
                                 i = e.title,
                                 t = e.subtitle,
                                 r = !!a,
-                                o = r && A.includes(a),
-                                u = g.includes(e.module_type),
-                                d = u && y[e.module_type]
+                                s = r && N.includes(a),
+                                u = L.includes(e.module_type),
+                                d = u && k[e.module_type]
                               if (u || r)
-                                return s.a.createElement(
-                                  s.a.Fragment,
+                                return o.a.createElement(
+                                  o.a.Fragment,
                                   { key: l },
-                                  s.a.createElement(
-                                    S.a,
-                                    { accessibilityRole: 'label', style: H.row, testID: k.a.spotlightRow },
-                                    s.a.createElement(
-                                      S.a,
-                                      { style: H.title },
-                                      s.a.createElement(h.b, { weight: 'bold' }, i),
-                                      s.a.createElement(R.a, { onValueChange: j(a, d), value: o }),
+                                  o.a.createElement(
+                                    R.a,
+                                    { accessibilityRole: 'label', style: j.row, testID: f.a.spotlightRow },
+                                    o.a.createElement(
+                                      R.a,
+                                      { style: j.title },
+                                      o.a.createElement(w.b, { weight: 'bold' }, i),
+                                      o.a.createElement(M.a, { onValueChange: X(a, d, e.module_type), value: s }),
                                     ),
-                                    s.a.createElement(
-                                      S.a,
-                                      { style: H.descriptionContainer },
-                                      s.a.createElement(h.b, { color: 'gray700', size: 'subtext2' }, t),
+                                    o.a.createElement(
+                                      R.a,
+                                      { style: j.descriptionContainer },
+                                      o.a.createElement(w.b, { color: 'gray700', size: 'subtext2' }, t),
                                     ),
                                   ),
                                   d &&
-                                    s.a.createElement(
-                                      S.a,
-                                      { accessibilityRole: 'label', style: H.editRow, testID: k.a.editSpotlightRow },
-                                      s.a.createElement(
-                                        S.a,
-                                        { style: H.editButtonWrapper },
-                                        s.a.createElement(E.a, {
+                                    o.a.createElement(
+                                      R.a,
+                                      { accessibilityRole: 'label', style: j.editRow, testID: f.a.editSpotlightRow },
+                                      o.a.createElement(
+                                        R.a,
+                                        { style: j.editButtonWrapper },
+                                        o.a.createElement(C.a, {
                                           align: 'left',
                                           color: 'primary',
-                                          label: r ? C : I,
-                                          onPress: W(d),
+                                          label: r ? V : P,
+                                          onPress: Y(d, e.module_type),
                                         }),
                                       ),
                                     ),
                                 )
                             })(e, l)
                           }),
-                      s.a.createElement(
-                        S.a,
-                        { style: H.row },
-                        s.a.createElement(h.b, { color: 'gray700', size: 'subtext1' }, V),
+                      o.a.createElement(
+                        R.a,
+                        { style: j.row },
+                        o.a.createElement(w.b, { color: 'gray700', size: 'subtext1' }, x),
                       ),
                     )
-                  : s.a.createElement(w.a, { header: P, message: V }),
+                  : o.a.createElement(I.a, { header: H, message: x }),
               ),
             )
           )
         },
-        H = M.a.create(function (e) {
+        j = U.a.create(function (e) {
           return {
             container: { paddingBottom: e.spaces.space64 },
             descriptionContainer: { paddingTop: e.spaces.space2 },
@@ -472,7 +482,7 @@
             title: { alignItems: 'center', flexDirection: 'row', flexGrow: 1, justifyContent: 'space-between' },
           }
         })
-      l.default = Object(T.a)(x, { context: 'PROFILE_SPOTLIGHT_SCREEN' })
+      l.default = Object(E.a)(O, { context: 'PROFILE_SPOTLIGHT_SCREEN' })
     },
     XiYe: function (e, l, n) {
       'use strict'

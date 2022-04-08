@@ -13978,6 +13978,12 @@ window.__SCRIPTS_LOADED__.polyfills &&
           return i(a(this), e, t, t > 1 ? arguments[1] : void 0)
         })
       },
+      UMQL: function (e, t, n) {
+        'use strict'
+        Object.defineProperty(t, '__esModule', { value: !0 }), (t.default = void 0)
+        var r = /[\u0600-\u06FF]|[\u0750-\u077F]|[\u0590-\u05FF]|[\uFE70-\uFEFF]/gm
+        ;(t.default = r), (e.exports = t.default)
+      },
       UQWM: function (e, t, n) {
         'use strict'
         var r = 'actor_key',

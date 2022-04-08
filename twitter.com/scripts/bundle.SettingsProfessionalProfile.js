@@ -961,13 +961,13 @@
               })
             },
             M = function () {
-              u.scribe(i.j('personal')), f(!0)
+              u.scribe(i.m('personal')), f(!0)
             },
             A = function () {
-              u.scribe(i.j('creator')), D(!0)
+              u.scribe(i.m('creator')), D(!0)
             },
             O = function () {
-              u.scribe(i.j('business')), E(!0)
+              u.scribe(i.m('business')), E(!0)
             }
           return s.a.createElement(k.a, null, function (e) {
             e.windowHeight
@@ -1189,7 +1189,7 @@
           j = null == c || null === (n = c.category) || void 0 === n ? void 0 : n[0],
           G = null === (l = null == j ? void 0 : j.display) || void 0 === l || l,
           Y = function (e) {
-            e.preventDefault(), _.scribe(i.h()), b(!0)
+            e.preventDefault(), _.scribe(i.k()), b(!0)
           },
           Q = function () {
             _.scribe(i.a())
@@ -1201,12 +1201,12 @@
             b(!1)
           },
           ee = function () {
-            _.scribe(i.i('personal')), F(), b(!1), T()
+            _.scribe(i.l('personal')), F(), b(!1), T()
           },
           pe = function (e) {
             return function () {
               var n = 'Creator' === e ? 'creator' : 'business'
-              _.scribe(i.i(n)), L(e), b(!1)
+              _.scribe(i.l(n)), L(e), b(!1)
             }
           },
           fe = t.isTrue('responsive_web_profile_spotlight_v0_config')

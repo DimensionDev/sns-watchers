@@ -384,8 +384,8 @@
         M = I.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between' } }
         }),
-        A = H,
-        z = n('t62R'),
+        z = H,
+        A = n('t62R'),
         B = n('/yvb'),
         U = n('2ZFc'),
         N = n('ddV6'),
@@ -780,7 +780,7 @@
                         C.a.createElement(
                           te,
                           { style: pe.headerSection, withTopBorder: !0 },
-                          C.a.createElement(z.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
+                          C.a.createElement(A.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
                           n,
                         ),
                       ),
@@ -1080,17 +1080,26 @@
       var Re = (function () {
           function e(t) {
             f()(this, e),
-              S()(this, '_getScoreAndInsertResults', function (e, t, n) {
-                var o = {}
-                for (var r in e) {
-                  var i = e[r],
-                    a = i.search.indexOf(t)
-                  if (-1 !== a) {
-                    var s = a + 1
-                    t === r && (s = 0), be(n, t, i), (o[r] = s)
-                  }
+              S()(this, '_getRelevantEmojis', function (e, t) {
+                var n = {}
+                for (var o in e) {
+                  var r = e[o]
+                  ;-1 !== r.search.indexOf(t) && (n[o] = r)
                 }
-                return o
+                return n
+              }),
+              S()(this, '_getScores', function (e, t) {
+                var n = {}
+                for (var o in e) {
+                  var r = e[o].search.indexOf(t) + 1
+                  t === o && (r = 0), (n[o] = r)
+                }
+                return n
+              }),
+              S()(this, '_insertEmojisToTrie', function (e, t, n) {
+                for (var o in e) {
+                  be(n, t, e[o])
+                }
               }),
               (this._data = t),
               (this._index = { results: [], children: {} }),
@@ -1111,14 +1120,16 @@
                       l = (c = c.slice(0, 2))
                         .map(function (e) {
                           var t = [],
-                            o = Ee(s, e)
-                          if (0 === o.length) {
-                            var r = n._getScoreAndInsertResults(i, e, s)
-                            ;(t = Ee(s, e)).sort(function (e, t) {
-                              return r[e.id] - r[t.id]
-                            })
-                          } else t = o
-                          return t
+                            o = Ee(s, e),
+                            r = n._getRelevantEmojis(i, e),
+                            a = n._getScores(r, e)
+                          return (
+                            0 === o.length ? (n._insertEmojisToTrie(r, e, s), (t = Ee(s, e))) : (t = o),
+                            t.sort(function (e, t) {
+                              return a[e.id] - a[t.id]
+                            }),
+                            t
+                          )
                         })
                         .filter(function (e) {
                           return !!e
@@ -1209,7 +1220,7 @@
         }),
         He = C.a.memo(Le),
         Me = n('IMYl'),
-        Ae = (function (e) {
+        ze = (function (e) {
           g()(n, e)
           var t = k()(n)
           function n() {
@@ -1298,14 +1309,14 @@
                           T.a,
                           {
                             style: [
-                              ze.root,
+                              Ae.root,
                               { backgroundColor: i.color },
                               s.transitionStyle,
                               (l || c) && s.focusedStyle,
-                              (u || r) && ze.selected,
+                              (u || r) && Ae.selected,
                             ],
                           },
-                          r ? C.a.createElement(Me.a, { style: ze.checkmarkIcon }) : null,
+                          r ? C.a.createElement(Me.a, { style: Ae.checkmarkIcon }) : null,
                         ),
                       )
                     },
@@ -1316,7 +1327,7 @@
             n
           )
         })(C.a.Component),
-        ze = I.a.create(function (e) {
+        Ae = I.a.create(function (e) {
           return {
             outer: { paddingLeft: e.spaces.space4 },
             root: {
@@ -1330,7 +1341,7 @@
             checkmarkIcon: { height: '1em', width: '1em', color: e.colors.cellBackground },
           }
         }),
-        Be = Ae,
+        Be = ze,
         Ue = (function (e) {
           g()(n, e)
           var t = k()(n)
@@ -1439,7 +1450,7 @@
                 var t = o.state,
                   n = t.activeCategory,
                   r = t.query
-                return C.a.createElement(A, {
+                return C.a.createElement(z, {
                   activeCategory: r ? void 0 : n,
                   categories: e,
                   disableAll: !!r,
@@ -1570,7 +1581,7 @@
                 var e = o.state.previewEmoji
                 return e
                   ? C.a.createElement(
-                      z.b,
+                      A.b,
                       {
                         align: 'left',
                         color: 'gray700',

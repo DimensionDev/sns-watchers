@@ -65,8 +65,8 @@
               })
             : null
         },
-        F = m.a.memo(D),
-        R = n('kSj6'),
+        R = m.a.memo(D),
+        L = n('kSj6'),
         P = n('Irs7'),
         S = function (e) {
           var t = e.cards,
@@ -106,7 +106,7 @@
             ),
             x = m.a.useMemo(
               function () {
-                return null != t && t.length ? m.a.createElement(F, { card: t[0], withThirdPartyCards: c }) : void 0
+                return null != t && t.length ? m.a.createElement(R, { card: t[0], withThirdPartyCards: c }) : void 0
               },
               [t, c],
             ),
@@ -144,13 +144,13 @@
               },
               [l],
             ),
-            L = m.a.useMemo(
+            H = m.a.useMemo(
               function () {
                 return null != a && a.length ? m.a.createElement(v.a, { feedbackItems: a }) : void 0
               },
               [a],
             )
-          return m.a.createElement(R.a, {
+          return m.a.createElement(L.a, {
             attachment: x,
             description: d,
             domainContext: I,
@@ -164,16 +164,16 @@
             rank: E,
             renderQuoteTweet: S,
             testID: k,
-            trendFeedbackMenu: L,
+            trendFeedbackMenu: H,
             withDarkerInteractiveBackground: s,
           })
         },
-        L = I(m.a.memo(S))
+        H = I(m.a.memo(S))
       t.default = function (e) {
         return c
           .b({
             isFocusable: Object(i.a)(!0),
-            component: L,
+            component: H,
             getScribeDataItem: function (e) {
               var t = e.content,
                 n = t.name,
@@ -297,7 +297,7 @@
     kSj6: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return E
+        return g
       })
       n('KqXw'), n('WNMA'), n('MvUL'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ho0z')
       var r = n('ERkP'),
@@ -309,21 +309,22 @@
         l = n('pjBI'),
         u = n('e5HP'),
         d = n('tg+X'),
-        m = n('rHpw'),
-        p = n('MWbm'),
-        f = /[\u0600-\u06FF]|[\u0750-\u077F]|[\u0590-\u05FF]|[\uFE70-\uFEFF]/gm,
-        b = function (e) {
+        m = n('UMQL'),
+        p = n.n(m),
+        f = n('rHpw'),
+        b = n('MWbm'),
+        E = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
-          return e.replace('#', '').charAt(t).match(f) ? 'rtl' : 'ltr'
+          return e.replace('#', '').charAt(t).match(p.a) ? 'rtl' : 'ltr'
         }
-      function E(e) {
+      function g(e) {
         var t,
           n = e.attachment,
           r = e.description,
           m = e.domainContext,
-          f = e.groupedTrends,
-          E = void 0 === f ? [] : f,
-          h = e.link,
+          p = e.groupedTrends,
+          f = void 0 === p ? [] : p,
+          g = e.link,
           I = e.metaDescription,
           v = e.name,
           y = e.onClick,
@@ -338,34 +339,34 @@
         return a.a.createElement(
           s.a,
           {
-            link: h ? x.withAnchorless(h) : void 0,
+            link: g ? x.withAnchorless(g) : void 0,
             onPress: y,
-            style: g.root,
+            style: h.root,
             testID: M,
             withDarkerInteractiveBackground: _,
           },
           a.a.createElement(
-            p.a,
-            { style: g.content },
+            b.a,
+            { style: h.content },
             a.a.createElement(
               l.a,
               null,
               C ? a.a.createElement(o.b, { accessibilityHidden: !0, color: 'gray700', size: 'subtext2' }, C) : null,
               m ? a.a.createElement(o.b, { color: 'gray700', size: 'subtext2' }, m) : null,
             ),
-            a.a.createElement(o.b, { dir: b(v), style: g.name, weight: 'bold', withHashflags: !0 }, v),
-            r ? a.a.createElement(o.b, { color: 'gray700', style: g.description }, r) : null,
-            k ? a.a.createElement(p.a, { style: g.quoteTweet }, k({ isCondensed: !0 })) : null,
-            n ? a.a.createElement(p.a, { style: g.attachmentWrapper }, n) : null,
-            E.length ? a.a.createElement(d.a, { groupedTrends: E }) : null,
+            a.a.createElement(o.b, { dir: E(v), style: h.name, weight: 'bold', withHashflags: !0 }, v),
+            r ? a.a.createElement(o.b, { color: 'gray700', style: h.description }, r) : null,
+            k ? a.a.createElement(b.a, { style: h.quoteTweet }, k({ isCondensed: !0 })) : null,
+            n ? a.a.createElement(b.a, { style: h.attachmentWrapper }, n) : null,
+            f.length ? a.a.createElement(d.a, { groupedTrends: f }) : null,
             I
               ? a.a.createElement(
                   o.b,
                   {
                     color: 'gray700',
-                    dir: ((t = I), Object(c.a)(t) && t.length ? b(t, t.length - 1) : void 0),
+                    dir: ((t = I), Object(c.a)(t) && t.length ? E(t, t.length - 1) : void 0),
                     size: 'subtext2',
-                    style: g.metaDescription,
+                    style: h.metaDescription,
                   },
                   I,
                 )
@@ -373,15 +374,15 @@
             T
               ? a.a.createElement(
                   o.b,
-                  { color: 'gray700', size: 'subtext2', style: g.promotedIndicatorWrapper },
+                  { color: 'gray700', size: 'subtext2', style: h.promotedIndicatorWrapper },
                   a.a.createElement(u.a, { label: w, promotedContent: T }),
                 )
               : null,
-            A ? a.a.createElement(p.a, { style: g.trendFeedbackMenuWrapper }, A) : null,
+            A ? a.a.createElement(b.a, { style: h.trendFeedbackMenuWrapper }, A) : null,
           ),
         )
       }
-      var g = m.a.create(function (e) {
+      var h = f.a.create(function (e) {
         return {
           root: {
             display: 'flex',

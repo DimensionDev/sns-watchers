@@ -1801,6 +1801,7 @@
                 b.entities
                   ? i.a.createElement(kt.a, {
                       entities: o.highlightedLabel.longDescription.entities,
+                      forceAutoTextDirection: !0,
                       onEntityClick: function () {
                         var e = { items: [{ id: o.id_str, name: o.screen_name, item_type: St.a.ItemType.USER }] }
                         s.scribe(F()(F()({}, r), {}, { element: 'automated_label', action: 'click', data: e }))

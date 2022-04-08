@@ -3836,7 +3836,8 @@
               'Improve your social media experience and beat the trolls with simple, AI based moderation tools.',
           },
         ],
-        b = g.a.create(function (e) {
+        b = 'twitter_toolbox_upsell',
+        _ = g.a.create(function (e) {
           return {
             root: { display: 'flex', paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 },
             headerContainer: { display: 'flex', justifyContent: 'space-between' },
@@ -3871,13 +3872,13 @@
           n = Object(l.b)()
         o.a.useEffect(
           function () {
-            n.scribe({ action: 'show', component: 'TwitterToolboxUpsell' })
+            n.scribe({ action: 'show', component: b })
           },
           [n],
         )
         var r = o.a.useCallback(
             function (e) {
-              n.scribe({ action: 'click', component: 'TwitterToolboxUpsell', element: e })
+              n.scribe({ action: 'click', component: b, element: e })
             },
             [n],
           ),
@@ -3886,12 +3887,12 @@
               return y.map(function (e) {
                 return o.a.createElement(
                   u.a,
-                  { key: e.title, style: b.toolboxItem, withInteractiveStyling: !1 },
-                  o.a.createElement(d.a, { source: { uri: e.avatarURI }, style: b.avatar }),
+                  { key: e.title, style: _.toolboxItem, withInteractiveStyling: !1 },
+                  o.a.createElement(d.a, { source: { uri: e.avatarURI }, style: _.avatar }),
                   o.a.createElement(
                     f.a,
-                    { style: b.toolboxRightContent },
-                    o.a.createElement(p.b, { size: 'body', style: b.toolboxHeader, weight: 'bold' }, e.title),
+                    { style: _.toolboxRightContent },
+                    o.a.createElement(p.b, { size: 'body', style: _.toolboxHeader, weight: 'bold' }, e.title),
                     o.a.createElement(p.b, { size: 'subtext2' }, e.description),
                   ),
                   o.a.createElement(
@@ -3914,21 +3915,29 @@
           a = o.a.useCallback(
             function (e) {
               return o.a.createElement(m.a, {
-                items: [{ Icon: c.a, text: 'Hide this', onClick: t }],
+                items: [
+                  {
+                    Icon: c.a,
+                    text: 'Hide this',
+                    onClick: function () {
+                      n.scribe({ action: 'dismiss', component: b }), t()
+                    },
+                  },
+                ],
                 onCloseRequested: e,
               })
             },
-            [t],
+            [n, t],
           )
         return o.a.createElement(
           f.a,
-          { style: b.root },
+          { style: _.root },
           o.a.createElement(
             f.a,
-            { style: b.headerContainer },
+            { style: _.headerContainer },
             o.a.createElement(
               f.a,
-              { style: b.headerText },
+              { style: _.headerText },
               o.a.createElement(
                 p.b,
                 { size: 'headline1', testID: 'title', weight: 'heavy' },
@@ -3938,7 +3947,7 @@
             ),
             o.a.createElement(
               p.b,
-              { color: 'gray700', size: 'subtext2', style: b.titleSubText, testID: 'subTitle' },
+              { color: 'gray700', size: 'subtext2', style: _.titleSubText, testID: 'subTitle' },
               'The Twitter Toolbox offers more solutions to improve your experience on Twitter.',
             ),
           ),
@@ -3950,7 +3959,7 @@
               onPress: function () {
                 return r('View Twitter Toolbox')
               },
-              style: b.footerLink,
+              style: _.footerLink,
             },
             'View Twitter Toolbox',
           ),
@@ -13692,13 +13701,13 @@
     IZ3v: function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return h
+        return v
       }),
         n.d(t, 'c', function () {
-          return m
+          return g
         }),
         n.d(t, 'a', function () {
-          return g
+          return b
         })
       var r = n('K1iM'),
         o = n.n(r),
@@ -13706,91 +13715,106 @@
         a = n.n(i),
         c = n('ddV6'),
         s = n.n(c),
-        l = (n('yH/f'), n('2G9S'), n('z84I'), n('M+/F'), n('hBpG'), n('7x/C'), n('+KXO'), n('uuwS')),
+        l =
+          (n('yH/f'),
+          n('2G9S'),
+          n('KqXw'),
+          n('WNMA'),
+          n('z84I'),
+          n('M+/F'),
+          n('hBpG'),
+          n('7x/C'),
+          n('+KXO'),
+          n('UMQL')),
         u = n.n(l),
-        d = n('tZIO'),
-        f = Object.freeze({
+        d = n('uuwS'),
+        f = n.n(d),
+        p = n('tZIO'),
+        h = Object.freeze({
           Cashtag: 'cashtag',
           Hashtag: 'hashtag',
           Mention: 'mention',
           Url: 'url',
           List: 'twitterList',
         }),
-        p = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' })
-      function h(e) {
-        return e.screenName ? f.Mention : e.hashtag ? f.Hashtag : e.cashtag ? f.Cashtag : e.url ? f.Url : null
+        m = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' })
+      function v(e) {
+        return e.screenName ? h.Mention : e.hashtag ? h.Hashtag : e.cashtag ? h.Cashtag : e.url ? h.Url : null
       }
-      function m(e, t) {
+      function g(e, t) {
         switch (e) {
-          case f.Cashtag:
+          case h.Cashtag:
             return 'https://twitter.com/search?q='
               .concat(encodeURIComponent(''.concat(t)), '&src=')
-              .concat(p.CashtagClick)
-          case f.Hashtag:
+              .concat(m.CashtagClick)
+          case h.Hashtag:
             return 'https://twitter.com/search?q='
               .concat(encodeURIComponent(''.concat(t)), '&src=')
-              .concat(p.HashtagClick)
-          case f.Mention:
+              .concat(m.HashtagClick)
+          case h.Mention:
             return 'https://twitter.com/'.concat(t)
-          case f.List:
+          case h.List:
             return 'https://twitter.com/i/lists/'.concat(t)
-          case f.Url:
+          case h.Url:
             return t
         }
       }
-      var v = {
+      var y = {
         cashtag: function (e, t) {
           return {
             color: 'link',
-            link: m(f.Cashtag, '$'.concat(t.text)),
+            dir: 'ltr',
+            link: g(h.Cashtag, '$'.concat(t.text)),
             ref: t,
             text: '$'.concat(t.text),
-            type: f.Cashtag,
+            type: h.Cashtag,
           }
         },
         hashtag: function (e, t) {
           return {
             color: 'link',
-            link: m(f.Hashtag, '#'.concat(t.text)),
+            dir: t.text.charAt(0).match(u.a) ? 'rtl' : 'ltr',
+            link: g(h.Hashtag, '#'.concat(t.text)),
             ref: t,
             text: '#'.concat(t.text),
-            type: f.Hashtag,
+            type: h.Hashtag,
           }
         },
         mention: function (e, t) {
           return {
             color: 'link',
-            link: m(f.Mention, t.screenName),
+            dir: 'ltr',
+            link: g(h.Mention, t.screenName),
             ref: t,
             text: '@'.concat(t.screenName),
-            type: f.Mention,
+            type: h.Mention,
           }
         },
         text: function (e, t) {
           return {
             ref: {},
-            text: d.a.replaceCarriageReturns(e),
+            text: p.a.replaceCarriageReturns(e),
             type: 'text',
             weight: 'Strong' === t ? 'bold' : void 0,
           }
         },
         twitterList: function (e, t) {
-          return { color: 'text', link: m(f.List, t.id), ref: t, text: e, type: f.List, weight: 'bold' }
+          return { color: 'text', link: g(h.List, t.id), ref: t, text: e, type: h.List, weight: 'bold' }
         },
         url: function (e, t) {
-          return { color: 'link', link: m(f.Url, t.url), ref: t, text: e, type: f.Url }
+          return { color: 'link', link: g(h.Url, t.url), ref: t, text: e, type: h.Url }
         },
         user: function (e, t) {
           return { ref: t, text: e, type: 'user', weight: 'bold' }
         },
       }
-      function g(e, t) {
+      function b(e, t) {
         var n = []
         if (t.length) {
           var r,
             i = (function (e, t) {
               return e.map(function (e) {
-                var n = u()(t, e.fromIndex, e.toIndex),
+                var n = f()(t, e.fromIndex, e.toIndex),
                   r = s()(n, 2),
                   o = r[0],
                   i = r[1]
@@ -13800,34 +13824,34 @@
             c = 0,
             l = o()(i)
           try {
-            var d = function () {
+            var u = function () {
               var t = r.value,
                 o = t.format,
                 i = t.fromIndex,
                 a = t.ref,
                 s = t.toIndex
-              s !== c && i > c && n.push(v.text(e.slice(c, i)))
+              s !== c && i > c && n.push(y.text(e.slice(c, i)))
               var l = e.slice(i, s)
               if (a) {
                 var u = Object.keys(a).find(function (e) {
                   return null != a[e]
                 })
                 if (u) {
-                  var d = v[u]
-                  d ? n.push(d(l, a[u])) : n.push(v.text(l))
+                  var d = y[u]
+                  d ? n.push(d(l, a[u])) : n.push(y.text(l))
                 }
-              } else n.push(v.text(l, o))
+              } else n.push(y.text(l, o))
               c = s
             }
-            for (l.s(); !(r = l.n()).done; ) d()
+            for (l.s(); !(r = l.n()).done; ) u()
           } catch (p) {
             l.e(p)
           } finally {
             l.f()
           }
-          var f = e.length
-          c < f && n.push(v.text(e.slice(c)))
-        } else n.push(v.text(e))
+          var d = e.length
+          c < d && n.push(y.text(e.slice(c)))
+        } else n.push(y.text(e))
         return n
       }
     },
@@ -32033,66 +32057,95 @@
     },
     mC9n: function (e, t, n) {
       'use strict'
-      function r() {
-        return { section: 'category_label', action: 'impression' }
-      }
-      function o() {
-        return { section: 'category_label', action: 'click' }
-      }
-      function i() {
-        return { component: 'professional_conversion', action: 'click' }
-      }
-      function a() {
-        return { component: 'professional_settings', action: 'click' }
-      }
-      function c() {
-        return { section: 'category_label_switch', action: 'impression' }
-      }
-      function s() {
-        return { section: 'category_label_switch', action: 'click' }
-      }
-      function l() {
-        return { section: 'category', action: 'click' }
-      }
-      function u() {
-        return { section: 'switch_account_type', action: 'click' }
-      }
-      function d(e) {
-        return { section: 'switch_account_type', component: e, action: 'click' }
-      }
-      function f(e) {
-        return { section: 'switch_account_type', component: e, element: 'confirmation', action: 'click' }
-      }
       n.d(t, 'c', function () {
-        return r
+        return o
       }),
         n.d(t, 'b', function () {
-          return o
-        }),
-        n.d(t, 'f', function () {
           return i
         }),
-        n.d(t, 'g', function () {
+        n.d(t, 'f', function () {
           return a
         }),
-        n.d(t, 'e', function () {
+        n.d(t, 'g', function () {
           return c
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'e', function () {
           return s
         }),
-        n.d(t, 'a', function () {
+        n.d(t, 'd', function () {
           return l
         }),
-        n.d(t, 'h', function () {
+        n.d(t, 'a', function () {
           return u
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'k', function () {
           return d
         }),
-        n.d(t, 'i', function () {
+        n.d(t, 'm', function () {
           return f
+        }),
+        n.d(t, 'l', function () {
+          return p
+        }),
+        n.d(t, 'i', function () {
+          return m
+        }),
+        n.d(t, 'j', function () {
+          return v
+        }),
+        n.d(t, 'h', function () {
+          return g
         })
+      n('yH/f')
+      var r = Object.freeze({ Shop: 'Shop', Newsletter: 'Newsletter', Location: 'About' })
+      function o() {
+        return { section: 'category_label', action: 'impression' }
+      }
+      function i() {
+        return { section: 'category_label', action: 'click' }
+      }
+      function a() {
+        return { component: 'professional_conversion', action: 'click' }
+      }
+      function c() {
+        return { component: 'professional_settings', action: 'click' }
+      }
+      function s() {
+        return { section: 'category_label_switch', action: 'impression' }
+      }
+      function l() {
+        return { section: 'category_label_switch', action: 'click' }
+      }
+      function u() {
+        return { section: 'category', action: 'click' }
+      }
+      function d() {
+        return { section: 'switch_account_type', action: 'click' }
+      }
+      function f(e) {
+        return { section: 'switch_account_type', component: e, action: 'click' }
+      }
+      function p(e) {
+        return { section: 'switch_account_type', component: e, element: 'confirmation', action: 'click' }
+      }
+      var h = function (e) {
+        return e === r.Location
+          ? 'about_module'
+          : e === r.Newsletter
+          ? 'revue_module'
+          : e === r.Shop
+          ? 'shop_module'
+          : void 0
+      }
+      function m() {
+        return { section: 'module_overview', action: 'impression' }
+      }
+      function v(e, t) {
+        return { section: 'module_overview', component: h(e), element: 'switch', action: t ? 'enabled' : 'disabled' }
+      }
+      function g(e) {
+        return { section: 'module_overview', component: h(e), element: 'configure', action: 'click' }
+      }
     },
     'mTn+': function (e, t, n) {
       'use strict'
@@ -33983,6 +34036,7 @@
               r = {
                 children: e.text,
                 color: e.color,
+                dir: e.dir,
                 link: e.link,
                 onClick: e.link ? u : void 0,
                 weight: e.weight,
@@ -38885,7 +38939,6 @@
                     k.a.Focal,
                     Object(M.d)({
                       allowDownvote: !0,
-                      hideConversationControlsEducationText: !1,
                       createAdditionalProps: function (e, t, n) {
                         var r = n.applyFeedbackAction,
                           o = e.content,
@@ -38926,7 +38979,6 @@
                       divider: function (e) {
                         return { top: !1, bottom: !1 }
                       },
-                      withMuteConversation: !0,
                     }),
                   ),
                   c()(
