@@ -231,9 +231,9 @@
       'use strict'
       var a = n('ddV6'),
         o = n.n(a),
-        i = n('m3Bd'),
+        i = n('yiKp'),
         r = n.n(i),
-        l = n('yiKp'),
+        l = n('m3Bd'),
         c = n.n(l),
         u = (n('hBpG'), n('7x/C'), n('ERkP')),
         s = n.n(u),
@@ -466,7 +466,7 @@
                     i = (null == o ? void 0 : o.scribeConfig) || (null == a ? void 0 : a.scribeConfig)
                   if (i) {
                     i.entityToken
-                    return r()(i, he)
+                    return c()(i, he)
                   }
                   return n.contextualScribeNamespace
                 }),
@@ -608,9 +608,9 @@
                   a = t.createLocalApiErrorHandler,
                   o = t.fetchInitial,
                   i = t.pageConfiguration,
-                  r = i ? i.scribeConfig : void 0
+                  l = i ? i.scribeConfig : void 0
                 return o().then(function (t) {
-                  t.performed && n.scribe(c()(c()({}, e._getScribeNamespace(r)), {}, { action: 'get_initial' }))
+                  t.performed && n.scribe(r()(r()({}, e._getScribeNamespace(l)), {}, { action: 'get_initial' }))
                 }, a(Ce.a))
               }),
               le()(te()(e), '_render', function () {
@@ -682,8 +682,8 @@
                   var n
                   return (
                     e && (n = e),
-                    t && (n = c()(c()({}, n), t)),
-                    c()(c()({}, n), {}, { element: 'tab', action: 'navigate' })
+                    t && (n = r()(r()({}, n), t)),
+                    r()(r()({}, n), {}, { element: 'tab', action: 'navigate' })
                   )
                 },
               },
@@ -692,7 +692,7 @@
                 value: function (e) {
                   if (e) {
                     e.entityToken
-                    return r()(e, Oe)
+                    return c()(e, Oe)
                   }
                 },
               },
@@ -710,104 +710,106 @@
         Pe = ['entityToken'],
         De = B.a.e9f1fbcb,
         Ae = s.a.createElement(f.a, null),
-        Ne = Object(me.a)(function (e, t) {
-          return c()(c()({}, t), Object(Fe.a)({ isWide: e }))
-        }),
-        Ue = function (e) {
+        Ne = function (e) {
           var t = e.TabBar,
             n = e.backLocation,
             a = e.behavioralEventViewType,
             i = e.documentTitle,
             l = e.entryConfiguration,
-            c = e.fab,
-            u = e.getTabLink,
-            f = e.hasTabNavigation,
-            d = e.history,
-            m = e.initialFetchStatus,
-            b = e.initialPageNamespace,
-            h = e.logoButton,
-            g = e.module,
-            v = e.onBackClick,
-            w = e.pageConfiguration,
-            I = e.prerollDisplayLocation,
-            S = e.renderEmptyState,
-            O = e.renderUnavailable,
-            x = e.rightControl,
-            L = e.searchBoxRef,
-            k = e.selectedTabId,
-            F = e.sidebarContent,
-            B = e.timelinePrefix,
-            H = e.title,
-            M = e.withAppLinks,
-            j = e.withBottomLoginSignupBar,
-            P = e.withDeferredView,
-            D = e.withOpenGraphMeta,
-            A = e.withSearchBox,
-            N = e.withTweetButton,
-            G = s.a.useState(!0),
-            R = o()(G, 2),
-            z = R[0],
-            K = R[1],
-            V = w || {},
-            W = V.header,
-            Q = V.navBar,
-            q = V.subtitle,
-            Y = V.title,
-            X = m === p.a.LOADED ? Y || H : '',
-            $ = (function (e, t, n) {
+            u = e.fab,
+            f = e.getTabLink,
+            d = e.hasTabNavigation,
+            m = e.history,
+            b = e.initialFetchStatus,
+            h = e.initialPageNamespace,
+            g = e.logoButton,
+            v = e.module,
+            w = e.onBackClick,
+            I = e.pageConfiguration,
+            S = e.prerollDisplayLocation,
+            O = e.renderEmptyState,
+            x = e.renderUnavailable,
+            L = e.rightControl,
+            k = e.searchBoxRef,
+            F = e.selectedTabId,
+            B = e.sidebarContent,
+            H = e.timelinePrefix,
+            M = e.title,
+            j = e.withAppLinks,
+            P = e.withBottomLoginSignupBar,
+            D = e.withDeferredView,
+            A = e.withOpenGraphMeta,
+            N = e.withSearchBox,
+            G = e.withTweetButton,
+            R = s.a.useRef(
+              Object(me.a)(function (e, t) {
+                return r()(r()({}, t), Object(Fe.a)({ isWide: e }))
+              }),
+            ).current,
+            z = s.a.useState(!0),
+            K = o()(z, 2),
+            V = K[0],
+            W = K[1],
+            Q = I || {},
+            q = Q.header,
+            Y = Q.navBar,
+            X = Q.subtitle,
+            $ = Q.title,
+            ee = b === p.a.LOADED ? $ || M : '',
+            te = (function (e, t, n) {
               var a = (null == t ? void 0 : t.scribeConfig) || {},
-                o = (a.entityToken, r()(a, je)),
+                o = (a.entityToken, c()(a, je)),
                 i = null == t ? void 0 : t.tabs,
-                l = e || (null == i ? void 0 : i.initialTabId),
-                c =
+                r = e || (null == i ? void 0 : i.initialTabId),
+                l =
                   null == i
                     ? void 0
                     : i.tabs.find(function (e) {
-                        return e.id === l
+                        return e.id === r
                       }),
-                u = (null == c ? void 0 : c.scribeConfig) || {},
-                s = (u.entityToken, r()(u, Pe))
+                u = (null == l ? void 0 : l.scribeConfig) || {},
+                s = (u.entityToken, c()(u, Pe))
               return Object(U.a)({}, n, o, s)
-            })(k, w, b),
-            ee = W ? s.a.createElement(_, { header: W, onHeaderVisible: K }) : null,
-            te = Q
+            })(F, I, h),
+            ne = q ? s.a.createElement(_, { header: q, onHeaderVisible: W }) : null,
+            ae = Y
               ? s.a.createElement(Z, {
-                  isHeaderOffscreen: !z,
-                  navBar: Q,
-                  pageNamespace: $,
-                  withAppLinks: M,
-                  withOpenGraphMeta: D,
+                  isHeaderOffscreen: !V,
+                  navBar: Y,
+                  pageNamespace: te,
+                  withAppLinks: j,
+                  withOpenGraphMeta: A,
                 })
               : null,
-            ne = P ? y.a : s.a.Fragment,
-            ae = s.a.createElement(He.a, null, function (e) {
+            oe = D ? y.a : s.a.Fragment,
+            ie = s.a.createElement(He.a, null, function (e) {
               var t = e.windowWidth >= C.a.theme.breakpoints.medium
               return s.a.createElement(
                 s.a.Fragment,
                 null,
-                ee,
+                ne,
                 s.a.createElement(
-                  ne,
+                  oe,
                   null,
                   s.a.createElement(ge, {
-                    entryConfiguration: Ne(t, l),
-                    initialModule: g,
-                    prerollDisplayLocation: I,
-                    renderEmptyState: S,
-                    renderUnavailable: O,
-                    selectedTabId: k,
-                    timelinePrefix: B,
-                    title: H,
+                    entryConfiguration: R(t, l),
+                    initialModule: v,
+                    prerollDisplayLocation: S,
+                    renderEmptyState: O,
+                    renderUnavailable: x,
+                    selectedTabId: F,
+                    timelinePrefix: H,
+                    title: M,
                     withoutHeadroom: !0,
                   }),
                 ),
               )
             }),
-            oe = c ? s.a.createElement(E.a, { component: Me.a, fab: c }, ae) : ae,
-            ie = u && f ? s.a.createElement(_e, { getTabLink: u, module: g, selectedTabId: k }) : void 0
+            re = u ? s.a.createElement(E.a, { component: Me.a, fab: u }, ie) : ie,
+            le = f && d ? s.a.createElement(_e, { getTabLink: f, module: v, selectedTabId: F }) : void 0
           return s.a.createElement(
             T.c,
-            { namespace: $ },
+            { namespace: te },
             s.a.createElement(
               J.a,
               { behavioralEventViewType: a },
@@ -815,24 +817,24 @@
                 TabBar: t,
                 backLocation: n,
                 documentTitle: i,
-                history: d,
-                logoButton: h,
-                onBackClick: v,
-                primaryContent: oe,
-                rightControl: te || x,
-                searchBoxRef: L,
-                secondaryBar: ie,
-                sidebarContent: F,
-                subtitle: q,
-                title: ee && z ? H : X,
-                withBottomLoginSignupBar: j,
-                withSearchBox: A,
-                withTweetButton: N,
+                history: m,
+                logoButton: g,
+                onBackClick: w,
+                primaryContent: re,
+                rightControl: ae || L,
+                searchBoxRef: k,
+                secondaryBar: le,
+                sidebarContent: B,
+                subtitle: X,
+                title: ne && V ? M : ee,
+                withBottomLoginSignupBar: P,
+                withSearchBox: N,
+                withTweetButton: G,
               }),
             ),
           )
         }
-      Ue.defaultProps = {
+      Ne.defaultProps = {
         entryConfiguration: w.b,
         renderEmptyState: function () {
           return s.a.createElement(Be.a, { header: De })
@@ -842,8 +844,8 @@
         withAppLinks: !1,
         withOpenGraphMeta: !1,
       }
-      var Ge = v(Ue)
-      t.a = Ge
+      var Ue = v(Ne)
+      t.a = Ue
     },
     doI8: function (e, t, n) {
       'use strict'

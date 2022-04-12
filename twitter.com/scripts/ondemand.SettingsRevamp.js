@@ -5163,7 +5163,7 @@
                         r.a.createElement(I.a, {
                           description: j,
                           label: R,
-                          link: 'https://help.twitter.com/using-twitter/twitter-blue-ad-free-articles#publishers',
+                          link: 'https://twitter.com/i/lists/1448014243245150209',
                           onPress: ee,
                         }),
                         r.a.createElement(_.a, {

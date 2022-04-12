@@ -744,7 +744,7 @@
     '2Daw': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return x
+        return R
       })
       var a = n('VrFO'),
         r = n.n(a),
@@ -756,7 +756,7 @@
         u = n.n(c),
         d = n('KEM+'),
         p = n.n(d),
-        m = (n('uFXj'), n('ERkP')),
+        m = (n('1t7P'), n('jQ/y'), n('uFXj'), n('ERkP')),
         h = n.n(m),
         f = n('LCtV'),
         g = n('3XMw'),
@@ -764,16 +764,17 @@
         v = n('VPdC'),
         b = n('pKoL'),
         _ = n('MWbm'),
-        k = n('rFBM'),
-        E = n('/yvb'),
-        I = n('9Xij'),
-        S = n('rHpw'),
-        C = n('hOZg'),
-        L = n('Mbn/'),
-        F = n('T8pk'),
-        T = y.a.b87ca51a,
-        w = y.a.eebff22c,
-        x = (function (e) {
+        k = n('t62R'),
+        E = n('rFBM'),
+        I = n('/yvb'),
+        S = n('9Xij'),
+        C = n('rHpw'),
+        L = n('hOZg'),
+        F = n('Mbn/'),
+        T = n('T8pk'),
+        w = y.a.b87ca51a,
+        x = y.a.eebff22c,
+        R = (function (e) {
           o()(n, e)
           var t = u()(n)
           function n() {
@@ -786,37 +787,50 @@
                 value: function () {
                   var e = this.props,
                     t = e.borderRadius,
-                    n = e.maskStyle,
-                    a = e.mediaItem,
-                    r = e.onAddMediaFiles,
-                    i = e.onCrop,
-                    l = e.onRemove,
-                    s = e.rootStyle,
-                    o = e.withDragDrop,
-                    c = a && !a.uploader,
-                    u = h.a.createElement(
+                    n = e.description,
+                    a = e.innerStyle,
+                    r = e.maskStyle,
+                    i = e.mediaItem,
+                    l = e.onAddMediaFiles,
+                    s = e.onCrop,
+                    o = e.onRemove,
+                    c = e.rootStyle,
+                    u = e.withDragDrop,
+                    d = i && !i.uploader,
+                    p = h.a.createElement(
                       h.a.Fragment,
                       null,
                       this._renderPreview(),
-                      c
+                      d
                         ? null
                         : h.a.createElement(
                             h.a.Fragment,
                             null,
-                            h.a.createElement(_.a, { style: [M.mask, n, R[t]] }),
+                            h.a.createElement(_.a, { style: [O.mask, r, M[t]] }),
                             h.a.createElement(
                               _.a,
-                              { style: M.mediaPicker },
-                              this._renderMediaEdit(),
-                              i ? this._renderMediaCrop() : null,
-                              l ? this._renderMediaRemove() : null,
+                              { style: [O.overlaidContent, a] },
+                              h.a.createElement(
+                                _.a,
+                                { style: O.buttonsContainer },
+                                this._renderMediaEdit(),
+                                s ? this._renderMediaCrop() : null,
+                                o ? this._renderMediaRemove() : null,
+                              ),
+                              n
+                                ? h.a.createElement(
+                                    k.b,
+                                    { color: 'gray700', size: 'subtext1', style: O.description },
+                                    n,
+                                  )
+                                : null,
                             ),
                           ),
                     )
                   return h.a.createElement(
                     _.a,
-                    { style: [M.container, s, R[t]] },
-                    o && r ? h.a.createElement(k.a, { onFilesAdded: r, style: [M.dragDropContainer, R[t]] }, u) : u,
+                    { style: [O.container, c, M[t]] },
+                    u && l ? h.a.createElement(E.a, { onFilesAdded: l, style: [O.dragDropContainer, M[t]] }, p) : p,
                   )
                 },
               },
@@ -824,13 +838,13 @@
                 key: '_renderMediaRemove',
                 value: function () {
                   var e = this.props.onRemove
-                  return h.a.createElement(E.a, {
-                    accessibilityLabel: T,
-                    hoverLabel: { label: T },
-                    icon: h.a.createElement(C.a, null),
+                  return h.a.createElement(I.a, {
+                    accessibilityLabel: w,
+                    hoverLabel: { label: w },
+                    icon: h.a.createElement(L.a, null),
                     onPress: e,
                     size: 'large',
-                    style: M.rightButton,
+                    style: O.buttonLeftPadding,
                     type: 'onMediaDominantColorFilled',
                   })
                 },
@@ -838,15 +852,13 @@
               {
                 key: '_renderMediaCrop',
                 value: function () {
-                  var e = this.props,
-                    t = e.onCrop,
-                    n = e.onRemove
-                  return h.a.createElement(E.a, {
-                    accessibilityLabel: w,
-                    icon: h.a.createElement(L.a, null),
-                    onPress: t,
+                  var e = this.props.onCrop
+                  return h.a.createElement(I.a, {
+                    accessibilityLabel: x,
+                    icon: h.a.createElement(F.a, null),
+                    onPress: e,
                     size: 'large',
-                    style: n ? M.middleButton : M.rightButton,
+                    style: O.buttonLeftPadding,
                     type: 'onMediaDominantColorFilled',
                   })
                 },
@@ -860,7 +872,7 @@
                     a = e.accessibilityLabel,
                     r = e.onAddMediaFiles,
                     i = e.onEdit,
-                    l = h.a.createElement(F.a, null)
+                    l = h.a.createElement(T.a, null)
                   return r
                     ? h.a.createElement(v.a, {
                         acceptGifs: t,
@@ -869,14 +881,14 @@
                         icon: l,
                         onChange: r,
                         size: 'large',
+                        style: O.mediaPicker,
                         type: 'onMediaDominantColorFilled',
                       })
-                    : h.a.createElement(E.a, {
+                    : h.a.createElement(I.a, {
                         accessibilityLabel: a,
                         icon: l,
                         onPress: i,
                         size: 'large',
-                        style: M.edit,
                         type: 'onMediaDominantColorFilled',
                       })
                 },
@@ -891,13 +903,13 @@
                     r = e.mediaItem
                   return r
                     ? h.a.createElement(
-                        I.a,
+                        S.a,
                         { ratio: t },
                         h.a.createElement(b.a, {
                           borderRadius: n,
                           enableGif: !1,
                           mediaItem: r,
-                          style: M.mediaPreview,
+                          style: O.mediaPreview,
                           withCloseButton: !1,
                         }),
                       )
@@ -908,20 +920,19 @@
             n
           )
         })(h.a.Component)
-      p()(x, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: f.a.NONE })
-      var R = S.a.create(function (e) {
+      p()(R, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: f.a.NONE })
+      var M = C.a.create(function (e) {
           return {
             infinite: { borderRadius: e.borderRadii.infinite },
             medium: { borderRadius: e.borderRadii.small },
             none: { borderRadius: e.borderRadii.none },
           }
         }),
-        M = S.a.create(function (e) {
+        O = C.a.create(function (e) {
           return {
             mediaPreview: { height: '100%' },
-            mediaPicker: {
+            overlaidContent: {
               alignItems: 'center',
-              flexDirection: 'row',
               height: '100%',
               justifyContent: 'center',
               opacity: 0.75,
@@ -929,8 +940,8 @@
               top: 0,
               width: '100%',
             },
-            rightButton: { marginLeft: e.spaces.space32 },
-            middleButton: { marginLeft: e.spaces.space32, marginRight: '-'.concat(e.spaces.space12) },
+            buttonsContainer: { alignItems: 'center', flexDirection: 'row', justifyContent: 'center' },
+            buttonLeftPadding: { marginLeft: e.spaces.space20 },
             mask: {
               backgroundColor: e.colors.translucentBlack30,
               height: '100%',
@@ -944,7 +955,8 @@
               borderColor: e.colors.transparent,
               borderStyle: 'solid',
             },
-            edit: { margin: '-'.concat(e.spaces.space12) },
+            mediaPicker: { margin: 0 },
+            description: { marginTop: e.spaces.space16 },
           }
         })
     },
@@ -5121,7 +5133,18 @@
         p = n.n(d),
         m = n('KEM+'),
         h = n.n(m),
-        f = (n('2G9S'), n('hCOa'), n('87if'), n('hBpG'), n('7x/C'), n('jQ3i'), n('x4t0'), n('z84I'), n('ERkP')),
+        f =
+          (n('2G9S'),
+          n('hCOa'),
+          n('87if'),
+          n('hBpG'),
+          n('7x/C'),
+          n('jQ3i'),
+          n('x4t0'),
+          n('z84I'),
+          n('1t7P'),
+          n('jQ/y'),
+          n('ERkP')),
         g = n.n(f),
         y = n('AspN'),
         v = n('rxPX'),
@@ -5182,11 +5205,13 @@
                     r = e.aspectRatio,
                     i = e.borderRadius,
                     l = e.currentContent,
-                    s = e.maskStyle,
-                    o = e.mediaItem,
-                    c = e.onCrop,
-                    u = e.onRemove,
-                    d = e.rootStyle
+                    s = e.description,
+                    o = e.innerStyle,
+                    c = e.maskStyle,
+                    u = e.mediaItem,
+                    d = e.onCrop,
+                    p = e.onRemove,
+                    m = e.rootStyle
                   return g.a.createElement(_.a, {
                     acceptGifs: t,
                     acceptVideo: n,
@@ -5194,12 +5219,14 @@
                     aspectRatio: r,
                     borderRadius: i,
                     currentContent: l,
-                    maskStyle: s,
-                    mediaItem: o,
+                    description: s,
+                    innerStyle: o,
+                    maskStyle: c,
+                    mediaItem: u,
                     onAddMediaFiles: this._handleAddMediaFiles,
-                    onCrop: c,
-                    onRemove: u,
-                    rootStyle: d,
+                    onCrop: d,
+                    onRemove: p,
+                    rootStyle: m,
                     withDragDrop: !0,
                   })
                 },

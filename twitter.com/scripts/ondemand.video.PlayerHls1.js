@@ -10665,7 +10665,7 @@
                       {
                         key: 'version',
                         get: function () {
-                          return '1.0.1'
+                          return '1.0.2'
                         },
                       },
                       {
@@ -15019,8 +15019,8 @@
                         this.pos !== t && (this.pos = t),
                           this.pos < 0
                             ? (this.logger.log(i.DEBUG, 'Negative cursor position ' + this.pos), (this.pos = 0))
-                            : this.pos > l &&
-                              (this.logger.log(i.DEBUG, 'Too large cursor position ' + this.pos), (this.pos = l))
+                            : this.pos >= l &&
+                              (this.logger.log(i.DEBUG, 'Too large cursor position ' + this.pos), (this.pos = 99))
                       }),
                       (e.moveCursor = function (t) {
                         var e = this.pos + t

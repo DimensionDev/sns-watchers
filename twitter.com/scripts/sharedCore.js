@@ -38646,22 +38646,22 @@
               })
           }
         },
-        te = function () {
-          return function (e, t, n) {
-            var r = n.api
-            if (!n.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled')) return Promise.resolve()
-            var o = t().quickPromote.couponsFetchStatus
-            return K.includes(o)
+        te = function (e) {
+          return function (t, n, r) {
+            var o = r.api
+            if (!r.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled')) return Promise.resolve()
+            var i = n().quickPromote.couponsFetchStatus
+            return K.includes(i)
               ? Promise.resolve()
-              : (e(Object(m.C)(a.a.LOADING)),
+              : (t(Object(m.C)(a.a.LOADING)),
                 Object(d.b)(
                   'fetchCoupons',
-                  r.QuickPromote.getCoupons({})
-                    .then(function (t) {
-                      e(Object(m.B)(t)), e(Object(m.C)(a.a.LOADED))
+                  o.QuickPromote.getCoupons({})
+                    .then(function (e) {
+                      t(Object(m.B)(e)), t(Object(m.C)(a.a.LOADED))
                     })
-                    .catch(function (t) {
-                      throw (e(Object(m.C)(a.a.FAILED)), t)
+                    .catch(function (n) {
+                      t(Object(m.B)()), t(Object(m.C)(a.a.LOADED)), Object(L.p)(e)(L.n.fetchCouponFailed(n))
                     }),
                 ))
           }

@@ -723,6 +723,7 @@
             e.quickPromote.budget.availableBudgetsFetchStatus,
             e.quickPromote.targeting.initialTargetedLocationsFetchStatus,
             e.quickPromote.account.accountDataFetchStatus,
+            e.quickPromote.couponsFetchStatus,
           )
         },
         ct = function (e, t) {
@@ -2123,7 +2124,7 @@
                       h.a.createElement(
                         Kn.a,
                         {
-                          disabled: (_ && !y) || !u || H || C.W.includes(f),
+                          disabled: !u || H || C.W.includes(f),
                           onPress: this._handlePromote,
                           size: 'xLarge',
                           testID: ne,
@@ -2923,7 +2924,7 @@
                     ? (tt.a.LOADED === d && g !== Ve.c.Done && m(tt.a.NONE),
                       Object(F.b)(
                         'initial-load',
-                        Promise.all([s(p), i(), r(f), c(), l({ statusId: p })])
+                        Promise.all([s(p), i(), r(f), c(n), l({ statusId: p })])
                           .then(function () {
                             return o()
                           })

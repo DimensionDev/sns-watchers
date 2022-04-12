@@ -281,7 +281,7 @@
     QuZr: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return ze
+        return Be
       })
       var a,
         i,
@@ -316,8 +316,8 @@
         I = n.n(S),
         L = n('ezF+'),
         O = n('QIgh'),
-        V = n('AP4B'),
-        R =
+        R = n('AP4B'),
+        V =
           (n('lTEL'),
           n('JtPf'),
           n('87if'),
@@ -329,10 +329,9 @@
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        j = L.e(R),
-        D = n('rHpw'),
-        B = n('VrCx'),
-        z = n('xWpm'),
+        j = L.e(V),
+        D = n('VrCx'),
+        B = n('xWpm'),
         F =
           ((i = {}),
           E()(i, T.b.Notification, j),
@@ -345,92 +344,76 @@
               },
               handlers:
                 ((a = {}),
-                E()(a, B.a.Tweet, Object(z.e)({ allowDownvote: !0, withMuteConversation: !0, withUnreadStyles: !0 })),
-                E()(
-                  a,
-                  B.a.QuotedTweet,
-                  Object(z.b)({
-                    createAdditionalProps: function (e) {
-                      return { isCondensed: !0, style: U.quotedTweet }
-                    },
-                  }),
-                ),
+                E()(a, D.a.Tweet, Object(B.e)({ allowDownvote: !0, withMuteConversation: !0, withUnreadStyles: !0 })),
+                E()(a, D.a.QuotedTweet, Object(B.b)({ isCondensed: !0 })),
                 a),
             }),
           ),
           i),
-        H = I()(I()(I()({}, Object(O.a)({ tweetDismissable: !0, withMuteConversation: !0 })), F), V.a),
-        U = D.a.create(function (e) {
-          return {
-            quotedTweet: {
-              marginHorizontal: e.componentDimensions.gutterHorizontal,
-              marginTop: 0,
-              marginBottom: e.componentDimensions.gutterVertical,
-            },
-          }
-        }),
-        N = n('3XMw'),
-        G = n.n(N),
-        K = n('f42t'),
-        Q = n('ddV6'),
-        W = n.n(Q),
-        J = (n('uFXj'), n('RoyM')),
-        Y = n('qFUP'),
-        q = n('7JQg'),
-        X = n.p + 'illustration_unmention_1200w.a6d67a65.png',
-        Z = n.p + 'illustration_unmention_1800w.62507075.png',
-        $ = 600,
-        ee = 175,
-        te = {
-          image: { url: Z, width: 1800, height: 525 },
+        z = I()(I()(I()({}, Object(O.a)({ tweetDismissable: !0, withMuteConversation: !0 })), F), R.a),
+        U = n('3XMw'),
+        H = n.n(U),
+        N = n('f42t'),
+        G = n('ddV6'),
+        K = n.n(G),
+        Q = (n('uFXj'), n('RoyM')),
+        W = n('qFUP'),
+        J = n('7JQg'),
+        Y = n.p + 'illustration_unmention_1200w.a6d67a65.png',
+        X = n.p + 'illustration_unmention_1800w.62507075.png',
+        q = 600,
+        Z = 175,
+        $ = {
+          image: { url: X, width: 1800, height: 525 },
           customVariants: [
-            { uri: n.p + 'illustration_unmention_600w.b146e2e5.png', width: $, height: ee },
-            { uri: X, width: 1200, height: 350 },
-            { uri: Z, width: 1800, height: 525 },
+            { uri: n.p + 'illustration_unmention_600w.b146e2e5.png', width: q, height: Z },
+            { uri: Y, width: 1200, height: 350 },
+            { uri: X, width: 1800, height: 525 },
           ],
         },
-        ne = n('Irs7'),
-        ae = n('MWbm'),
-        ie = n('PnKw'),
-        re = n('t62R'),
-        oe = 'leave_this_conversation_inline_education',
-        se = G.a.j24c37b2,
-        ce = G.a.e839db39,
-        le = G.a.eba8b1c8,
-        ue = G.a.i859a9d3,
-        de = G.a.ac1daf50,
-        pe = function (e) {
+        ee = n('Irs7'),
+        te = n('MWbm'),
+        ne = n('PnKw'),
+        ae = n('t62R'),
+        ie = n('rHpw'),
+        re = 'leave_this_conversation_inline_education',
+        oe = H.a.j24c37b2,
+        se = H.a.e839db39,
+        ce = H.a.eba8b1c8,
+        le = H.a.i859a9d3,
+        ue = H.a.ac1daf50,
+        de = function (e) {
           var t = e.onClose
           return _.a.createElement(
-            q.c,
+            J.c,
             { namespace: { element: 'leave_this_conversation_education_sheet' } },
-            _.a.createElement(Y.a, { actionLabel: se, onAction: t, onClose: t }),
+            _.a.createElement(W.a, { actionLabel: oe, onAction: t, onClose: t }),
           )
         },
-        me = D.a.create(function (e) {
+        pe = ie.a.create(function (e) {
           return {
             footerLearnMoreLink: { whiteSpace: 'nowrap' },
             wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small },
           }
         }),
-        fe = function (e) {
+        me = function (e) {
           var t = e.onDismiss,
             n = _.a.useState(!1),
-            a = W()(n, 2),
+            a = K()(n, 2),
             i = a[0],
             r = a[1],
-            o = Object(ne.b)()
+            o = Object(ee.b)()
           _.a.useEffect(
             function () {
-              o.scribe({ element: oe, action: 'impression' })
+              o.scribe({ element: re, action: 'impression' })
             },
             [o],
           )
           var s = [
             {
-              text: ce,
+              text: se,
               onClick: function () {
-                o.scribe({ element: oe, action: 'dismiss' }), t()
+                o.scribe({ element: re, action: 'dismiss' }), t()
               },
             },
           ]
@@ -438,51 +421,51 @@
             _.a.Fragment,
             null,
             i &&
-              _.a.createElement(pe, {
+              _.a.createElement(de, {
                 onClose: function () {
                   r(!1)
                 },
               }),
             _.a.createElement(
-              ae.a,
-              { style: me.wrapper },
-              _.a.createElement(ie.a, {
-                headline: le,
-                image: te.image,
-                imageVariants: te.customVariants,
-                rightControl: _.a.createElement(J.a, { feedbackItems: s, isDisplayedOnMedia: !0 }),
+              te.a,
+              { style: pe.wrapper },
+              _.a.createElement(ne.a, {
+                headline: ce,
+                image: $.image,
+                imageVariants: $.customVariants,
+                rightControl: _.a.createElement(Q.a, { feedbackItems: s, isDisplayedOnMedia: !0 }),
                 subtext: _.a.createElement(
                   _.a.Fragment,
                   null,
-                  de,
+                  ue,
                   ' ',
                   _.a.createElement(
-                    re.b,
+                    ae.b,
                     {
                       color: 'text',
                       onClick: function () {
                         r(!0)
                       },
                       size: 'subtext1',
-                      style: me.footerLearnMoreLink,
+                      style: pe.footerLearnMoreLink,
                       weight: 'bold',
                       withInteractiveStyling: !0,
                       withUnderline: !0,
                     },
-                    ue,
+                    le,
                   ),
                 ),
               }),
             ),
           )
         },
-        he = n('EUHl'),
-        ye = n('5waQ'),
-        be = n('VE3M'),
-        ge = n('yoO3'),
-        ve = n('fTQJ'),
-        Ee = n('v6aA'),
-        we =
+        fe = n('EUHl'),
+        he = n('5waQ'),
+        ye = n('VE3M'),
+        be = n('yoO3'),
+        ge = n('fTQJ'),
+        ve = n('v6aA'),
+        Ee =
           (n('jQ3i'),
           {
             notifications_alt_a: [
@@ -520,46 +503,46 @@
               },
             ],
           }),
-        _e = {
+        we = {
           notifications_alt_a:
             ((r = {}),
-            E()(r, ye.a.All, { headerMessage: G.a.b6a43e77, bodyMessage: G.a.f269c47d, buttonText: G.a.g6871092 }),
-            E()(r, ye.a.Mentions, { headerMessage: G.a.e577e1a1, bodyMessage: G.a.b91e5a3a }),
+            E()(r, he.a.All, { headerMessage: H.a.b6a43e77, bodyMessage: H.a.f269c47d, buttonText: H.a.g6871092 }),
+            E()(r, he.a.Mentions, { headerMessage: H.a.e577e1a1, bodyMessage: H.a.b91e5a3a }),
             r),
           notifications_alt_b:
             ((o = {}),
-            E()(o, ye.a.All, { headerMessage: G.a.g264f125, bodyMessage: G.a.a3420a9b, buttonText: G.a.g6871092 }),
-            E()(o, ye.a.Mentions, { headerMessage: G.a.ef0b8028, bodyMessage: G.a.b91e5a3a }),
+            E()(o, he.a.All, { headerMessage: H.a.g264f125, bodyMessage: H.a.a3420a9b, buttonText: H.a.g6871092 }),
+            E()(o, he.a.Mentions, { headerMessage: H.a.ef0b8028, bodyMessage: H.a.b91e5a3a }),
             o),
         },
-        Te = function (e) {
+        _e = function (e) {
           return ['control', 'notifications_alt_a', 'notifications_alt_b'].includes(e)
         },
-        Ce = function (e) {
-          return we[e]
+        Te = function (e) {
+          return Ee[e]
         },
-        Ae = function (e, t, n) {
+        Ce = function (e, t, n) {
           var a, i
-          return null === (a = _e[t]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[e]
+          return null === (a = we[t]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[e]
+        },
+        Ae = function (e, t) {
+          return Ce('headerMessage', e, t)
         },
         Me = function (e, t) {
-          return Ae('headerMessage', e, t)
+          return Ce('bodyMessage', e, t)
         },
         ke = function (e, t) {
-          return Ae('bodyMessage', e, t)
+          return Ce('buttonText', e, t)
         },
-        xe = function (e, t) {
-          return Ae('buttonText', e, t)
-        },
-        Pe = G.a.eb75875d,
-        Se = G.a.e9f1fbcb,
-        Ie = G.a.f287bb3a,
-        Le = G.a.h994ec4f,
-        Oe = G.a.c06d4305,
-        Ve = G.a.bfdb3c12,
-        Re = G.a.h1d919eb,
-        je = G.a.ib4510fd,
-        De = (function (e) {
+        xe = H.a.eb75875d,
+        Pe = H.a.e9f1fbcb,
+        Se = H.a.f287bb3a,
+        Ie = H.a.h994ec4f,
+        Le = H.a.c06d4305,
+        Oe = H.a.bfdb3c12,
+        Re = H.a.h1d919eb,
+        Ve = H.a.ib4510fd,
+        je = (function (e) {
           y()(n, e)
           var t = g()(n)
           function n() {
@@ -570,8 +553,8 @@
               (e = t.call.apply(t, [this].concat(i))),
               E()(f()(e), '_getNewItemsPillLabel', function () {
                 switch (e.props.notificationsType) {
-                  case ye.a.All:
-                    return je
+                  case he.a.All:
+                    return Ve
                   default:
                     return
                 }
@@ -579,38 +562,38 @@
               E()(f()(e), '_getEmptyMessageBody', function () {
                 var t = e.context.featureSwitches.isTrue('responsive_web_reactions_enabled')
                 switch (e.props.notificationsType) {
-                  case ye.a.Mentions:
-                    return Te(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
-                      ? ke(e._emptyStateVariant, e.props.notificationsType)
-                      : Oe
-                  case ye.a.Verified:
-                    return t ? Re : Ve
+                  case he.a.Mentions:
+                    return _e(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
+                      ? Me(e._emptyStateVariant, e.props.notificationsType)
+                      : Le
+                  case he.a.Verified:
+                    return t ? Re : Oe
                   default:
-                    return Te(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
-                      ? ke(e._emptyStateVariant, e.props.notificationsType)
+                    return _e(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
+                      ? Me(e._emptyStateVariant, e.props.notificationsType)
                       : t
-                      ? Le
-                      : Ie
+                      ? Ie
+                      : Se
                 }
               }),
               E()(f()(e), '_getEmptyMessageHeader', function () {
-                return Te(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
-                  ? Me(e._emptyStateVariant, e.props.notificationsType)
-                  : Se
+                return _e(e._emptyStateVariant) && 'control' !== e._emptyStateVariant
+                  ? Ae(e._emptyStateVariant, e.props.notificationsType)
+                  : Pe
               }),
               E()(f()(e), '_renderEmptyTimeline', function () {
                 if (
                   ((e._emptyStateVariant = e.context.featureSwitches.getStringValue(
                     'responsive_web_notifications_empty_state_redesign_variant',
                   )),
-                  Te(e._emptyStateVariant) && 'control' !== e._emptyStateVariant)
+                  _e(e._emptyStateVariant) && 'control' !== e._emptyStateVariant)
                 ) {
-                  var t = xe(e._emptyStateVariant, e.props.notificationsType)
+                  var t = ke(e._emptyStateVariant, e.props.notificationsType)
                   return _.a.createElement(
                     P.a,
                     c()({}, t && { buttonLink: '/i/connect_people', buttonText: t }, {
                       header: e._getEmptyMessageHeader(),
-                      imageVariants: Ce(e._emptyStateVariant),
+                      imageVariants: Te(e._emptyStateVariant),
                       message: e._getEmptyMessageBody(),
                       onButtonPress: e._handleEmptyTimelineButtonPress,
                       onImpression: e._handleEmptyTimelineImpression,
@@ -639,10 +622,10 @@
                   i = t.shouldShowUnmentionEducation,
                   r = t.timelineHasTweets
                 return i &&
-                  a === ye.a.Mentions &&
+                  a === he.a.Mentions &&
                   r &&
                   e.context.featureSwitches.isTrue('dont_mention_me_mentions_tab_education_enabled')
-                  ? _.a.createElement(fe, { onDismiss: n })
+                  ? _.a.createElement(me, { onDismiss: n })
                   : void 0
               }),
               e
@@ -664,7 +647,7 @@
                   var e = this.props,
                     t = e.markAllAsRead,
                     n = e.notificationsType
-                  this._updateLastReadIfNeeded(), n === ye.a.All && t()
+                  this._updateLastReadIfNeeded(), n === he.a.All && t()
                 },
               },
               {
@@ -673,18 +656,18 @@
                   var e = this.props.notificationsModule
                   return e
                     ? _.a.createElement(
-                        ge.a,
+                        be.a,
                         null,
-                        _.a.createElement(ve.a, {
-                          entryConfiguration: H,
+                        _.a.createElement(ge.a, {
+                          entryConfiguration: z,
                           header: this._renderTimelineHeader(),
                           key: 'notification-timeline',
                           module: e,
                           newTweetsPillLabel: this._getNewItemsPillLabel(),
-                          newTweetsPillMode: he.a.CLIENT,
+                          newTweetsPillMode: fe.a.CLIENT,
                           onAtTop: this._handleAtTop,
                           renderEmptyState: this._renderEmptyTimeline,
-                          title: Pe,
+                          title: xe,
                         }),
                       )
                     : null
@@ -704,9 +687,9 @@
             n
           )
         })(_.a.Component)
-      E()(De, 'contextType', Ee.a)
-      var Be = function (e) {
-          return Object(K.a)(
+      E()(je, 'contextType', ve.a)
+      var De = function (e) {
+          return Object(N.a)(
             (function (e) {
               return Object(k.a)()
                 .propsFromState(function () {
@@ -758,13 +741,13 @@
                   }
                 })
                 .withAnalytics({ page: 'ntab', section: e })
-            })(e)(De),
-            { ntabData: be.a },
+            })(e)(je),
+            { ntabData: ye.a },
           )
         },
-        ze = function (e) {
+        Be = function (e) {
           var t = e.notificationsType
-          return Be(t)
+          return De(t)
         }
     },
     RoyM: function (e, t, n) {
@@ -854,12 +837,12 @@
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
-        V = Object(u.a)(
+        R = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
-        R = Object(u.a)(
+        V = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
@@ -883,8 +866,8 @@
               _.d,
               null,
               i.a.createElement(_.b, { component: O, exact: !0, path: x }),
-              i.a.createElement(_.b, { component: V, exact: !0, path: P }),
-              i.a.createElement(_.b, { component: R, exact: !0, path: S }),
+              i.a.createElement(_.b, { component: R, exact: !0, path: P }),
+              i.a.createElement(_.b, { component: V, exact: !0, path: S }),
             )
           return l.pathname !== S || u
             ? i.a.createElement(

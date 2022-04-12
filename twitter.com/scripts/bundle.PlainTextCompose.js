@@ -7030,9 +7030,10 @@
         cs = E.canUseDOM && document.documentElement && 'scrollBehavior' in document.documentElement.style,
         ds = { element: 'alt_text_prompt' },
         us = { component: 'article_nudge' },
-        ps = { viewType: 'send_tweet' },
-        ms = Object.freeze({ Original: 'original', Reply: 'reply', Quote: 'quote', Thread: 'thread' }),
-        hs = (function (e) {
+        ps = { component: 'soft_nudge_with_quote_tweet' },
+        ms = { viewType: 'send_tweet' },
+        hs = Object.freeze({ Original: 'original', Reply: 'reply', Quote: 'quote', Thread: 'thread' }),
+        fs = (function (e) {
           g()(n, e)
           var t = y()(n)
           function n(e, a) {
@@ -7499,6 +7500,10 @@
               _()(h()(s), '_setActiveParentKey', function () {
                 ;(0, s.props.setActiveParentKey)(s._getParentKey())
               }),
+              _()(h()(s), '_scribeSoftNudgeWithQuoteTweet', function (e, t, n) {
+                'soft_nudge_with_quote_tweet' === (null == e ? void 0 : e.limited_actions) &&
+                  s._scribe(l()(l()({}, ps), {}, { action: t }), n)
+              }),
               _()(h()(s), '_scribeTweetSent', function (e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                   a = n.hasArticleNudge,
@@ -7533,7 +7538,8 @@
                   (s._scribe({ action: ''.concat(h, 'tweet') }, f),
                   o || !e.draftTweetId || e.scheduledTweetId || s._scribe({ action: ''.concat(h, 'draft_tweet') }, f),
                   s.isQuoteTweet &&
-                    (s._scribe({ action: 'retweet_with_comment' }, f),
+                    (s._scribeSoftNudgeWithQuoteTweet(e.quotedStatus, 'retweet_with_comment', f),
+                    s._scribe({ action: 'retweet_with_comment' }, f),
                     r && s._scribe(l()(l()({}, us), {}, { element: 'result', action: 'retweet_with_comment' }), f)),
                   s.isReply && s._scribe({ component: _, action: ''.concat(h, 'reply') }, f),
                   g && s._scribe({ action: ''.concat(h, 'poll_tweet') }, f),
@@ -7584,7 +7590,8 @@
               _()(h()(s), '_scribeRetweet', function (e) {
                 var t = s.props.hasArticleNudge,
                   n = { items: [Fi.a.getTweetItem(e)] }
-                s._scribe({ action: 'retweet' }, n),
+                s._scribeSoftNudgeWithQuoteTweet(e, 'retweet', n),
+                  s._scribe({ action: 'retweet' }, n),
                   t && s._scribe(l()(l()({}, us), {}, { element: 'result', action: 'retweet' }), n)
               }),
               _()(h()(s), '_handleRetweet', function () {
@@ -7762,7 +7769,7 @@
                 var e = s.props,
                   t = e.isSending,
                   n = e.sendingProgress
-                return w.a.createElement(Io.a, { progress: t ? Math.max(n, 0.02) : 0, style: fs.progressBar })
+                return w.a.createElement(Io.a, { progress: t ? Math.max(n, 0.02) : 0, style: gs.progressBar })
               }),
               _()(h()(s), '_updateConvoCardState', function () {
                 var e = s.props,
@@ -8081,12 +8088,12 @@
                     q = null == h || null === (e = h.trusted_friends_info) || void 0 === e ? void 0 : e.screen_name
                   return w.a.createElement(
                     K.a,
-                    { ref: this._setRootRef, style: !_ && fs.root },
+                    { ref: this._setRootRef, style: !_ && gs.root },
                     f ? this._renderProgressBar() : null,
                     M &&
                       w.a.createElement(
                         K.a,
-                        { style: fs.inlineCallout },
+                        { style: gs.inlineCallout },
                         w.a.createElement(Ct.a, {
                           action:
                             null !== (t = M.action) &&
@@ -8105,7 +8112,7 @@
                       K.a,
                       {
                         onFocus: this._handleFocus,
-                        style: [fs.content, _ && fs.contentInlineReply, g && fs.contentModal],
+                        style: [gs.content, _ && gs.contentInlineReply, g && gs.contentModal],
                       },
                       h ? this._renderReplyContext() : null,
                       c,
@@ -8121,11 +8128,11 @@
                                 ? w.a.createElement(
                                     X.a,
                                     {
-                                      behavioralEventContext: ps,
+                                      behavioralEventContext: ms,
                                       disabled: W,
                                       onPress: a.handleTweetOrRetweet,
                                       size: 'medium',
-                                      style: fs.inlineSendButton,
+                                      style: gs.inlineSendButton,
                                       testID: g ? Vi : zi,
                                       type: 'brandFilled',
                                     },
@@ -8222,7 +8229,7 @@
                         : null,
                       P ? this._renderAltTextPrompt() : null,
                       A ? this._renderToxicReplyNudge() : null,
-                      w.a.createElement(K.a, { style: y && fs.mask }),
+                      w.a.createElement(K.a, { style: y && gs.mask }),
                     ),
                   )
                 },
@@ -8370,12 +8377,12 @@
                 key: 'tweetType',
                 get: function () {
                   return this.isQuoteTweet
-                    ? ms.Quote
+                    ? hs.Quote
                     : this.isThread
-                    ? ms.Thread
+                    ? hs.Thread
                     : this.isReply
-                    ? ms.Reply
-                    : ms.Original
+                    ? hs.Reply
+                    : hs.Original
                 },
               },
               {
@@ -8400,7 +8407,7 @@
             n
           )
         })(w.a.Component)
-      _()(hs, 'defaultProps', {
+      _()(fs, 'defaultProps', {
         customizePropsForSingleComposerItem: function (e, t, n) {
           return {}
         },
@@ -8413,12 +8420,12 @@
         setValidity: function () {},
         typeaheadWrapper: Pi.a,
       }),
-        _()(hs, 'contextType', de.a),
-        _()(hs, '_validateMedia', function (e, t) {
+        _()(fs, 'contextType', de.a),
+        _()(fs, '_validateMedia', function (e, t) {
           var n = e.media
           return Object(S.c)(n.concat(t))
         })
-      var fs = B.a.create(function (e) {
+      var gs = B.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space4 },
           content: { paddingVertical: e.spaces.space4, backgroundColor: e.colors.cellBackground },
@@ -8438,7 +8445,7 @@
           hidden: { position: 'absolute', visibility: 'hidden', width: '100%' },
         }
       })
-      t.a = Object(G.a)(Ei(hs))
+      t.a = Object(G.a)(Ei(fs))
     },
     'ii+P': function (e, t, n) {
       'use strict'

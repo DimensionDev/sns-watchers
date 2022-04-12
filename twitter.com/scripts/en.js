@@ -677,11 +677,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jac4eb1e', 'Conversation taken off snooze'),
           a('e4b3f520', 'Pinned conversations'),
           a('ae4d666a', 'All conversations'),
-          a('a219e217', 'OK'),
-          a('d571e4f8', function (e) {
-            return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
-          }),
-          a('a551bf7d', 'You’ll need to unpin one conversation to pin another.'),
           a('d98e066b', 'Conversation pinned.'),
           a('j302dba7', 'Conversation unpinned.'),
           a('b9dae4f4', 'Try a different search term'),
@@ -706,6 +701,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
+          a('a219e217', 'OK'),
+          a('d571e4f8', function (e) {
+            return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
+          }),
+          a('a551bf7d', 'You’ll need to unpin one conversation to pin another.'),
           a('cb367657', 'Conversation failed to pin. Try again.'),
           a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
           a('hd3927c6', 'Conversation failed to unpin. Try again.'),
@@ -3718,6 +3718,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b9c91523',
             'In the future, you won’t receive invites to other delegations. You’ll still be able to access your existing delegations.',
           ),
+          a('c349b957', 'Invite a member'),
           a('d2da668b', 'Delegate members'),
           a(
             'e4d5db41',
@@ -4793,8 +4794,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dceedc83', 'No media found'),
           a('a03bcf5a', 'Choose a photo, video, or GIF from added Tweets to represent your Moment.'),
           a('eb887425', 'Choose a photo, video, or GIF from a Tweet URL to represent your Moment.'),
-          a('g99f7be5', 'Tweet media item'),
-          a('jd2f69a8', 'Paste Tweet URL')
+          a('g99f7be5', 'Tweet media item')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4811,7 +4811,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d2ae33cd', 'Invalid Tweet URL'),
+        a('jd2f69a8', 'Paste Tweet URL'),
+          a('d2ae33cd', 'Invalid Tweet URL'),
           a('ac308436', 'Tweet not found'),
           a('f586b7f9', 'Add a title'),
           a('j7bc6ace', 'Write a short description about this Moment'),
@@ -6035,13 +6036,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
           a('a6ada13d', 'Shop now'),
-          a('e1bddf52', 'Drag to rotate'),
-          a('d0e7b11b', function (e) {
-            return e.date + ' at ' + e.time
-          })
-        a('b4349cbb', function (e) {
-          return '' + e.relativeDay
+          a('e1bddf52', 'Drag to rotate')
+        a('d0e7b11b', function (e) {
+          return e.date + ' at ' + e.time
         }),
+          a('b4349cbb', function (e) {
+            return '' + e.relativeDay
+          }),
           a('fbc2003b', 'Ended'),
           a('b3d828ed', 'Joined'),
           a('ca677073', 'Start listening'),

@@ -118,8 +118,8 @@
         w = a('97Jx'),
         I = a.n(w),
         R = a('m3Bd'),
-        x = a.n(R),
-        L = a('CHgo'),
+        L = a.n(R),
+        x = a('CHgo'),
         B = a('7ep7'),
         D = ['children', 'onPanEnd', 'onPanMove', 'onPinchMove', 'onWheel'],
         T = (function (e) {
@@ -142,8 +142,8 @@
                   r = t.onPinchMove,
                   o = t.onWheel
                 if (e) {
-                  ;(i || a || r) && (n._removeTouchMoveToScrollListener = Object(L.a)(e, n._preventDefaultEvent, !1)),
-                    o && (n._removeScrollToScaleListener = Object(L.b)(e, n._preventDefaultEvent, !1))
+                  ;(i || a || r) && (n._removeTouchMoveToScrollListener = Object(x.a)(e, n._preventDefaultEvent, !1)),
+                    o && (n._removeScrollToScaleListener = Object(x.b)(e, n._preventDefaultEvent, !1))
                   var s = e.getBoundingClientRect()
                   n._centerPosition = { x: s.width / 2 + s.left, y: s.height / 2 + s.top }
                 }
@@ -222,7 +222,7 @@
                 key: 'render',
                 value: function () {
                   var e = this.props,
-                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, x()(e, D))
+                    t = (e.children, e.onPanEnd, e.onPanMove, e.onPinchMove, e.onWheel, L()(e, D))
                   return v.a.createElement(
                     S.a,
                     I()({}, t, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers),
@@ -248,10 +248,10 @@
         F = a('yiKp'),
         U = a.n(F),
         V = a('Lsrn'),
-        N = a('k/Ka'),
-        j = function () {
+        j = a('k/Ka'),
+        N = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(N.a)(
+          return Object(j.a)(
             'svg',
             U()(
               U()({}, e),
@@ -271,11 +271,11 @@
             ),
           )
         }
-      j.metadata = { width: 24, height: 24 }
-      var z = j,
+      N.metadata = { width: 24, height: 24 }
+      var z = N,
         H = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(N.a)(
+          return Object(j.a)(
             'svg',
             U()(
               U()({}, e),
@@ -299,7 +299,7 @@
       var W = H,
         K = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(N.a)(
+          return Object(j.a)(
             'svg',
             U()(
               U()({}, e),
@@ -323,7 +323,7 @@
       var G = K,
         X = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(N.a)(
+          return Object(j.a)(
             'svg',
             U()(
               U()({}, e),
@@ -350,7 +350,7 @@
       var Y = X,
         q = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(N.a)(
+          return Object(j.a)(
             'svg',
             U()(
               U()({}, e),
@@ -375,8 +375,8 @@
         }
       q.metadata = { width: 24, height: 24 }
       var Z = q,
-        J = y.a.d85bc1b8,
-        Q = y.a.f596ace8,
+        Q = y.a.d85bc1b8,
+        J = y.a.f596ace8,
         $ = y.a.df031fca,
         ee = y.a.b40332c5,
         te = y.a.e547b368,
@@ -417,7 +417,7 @@
                             S.a,
                             { style: oe.ratioContainer },
                             v.a.createElement(g.a, {
-                              accessibilityLabel: Q,
+                              accessibilityLabel: J,
                               borderColor: 'transparent',
                               color: i === r ? 'primary' : 'gray700',
                               hoverLabel: { label: te },
@@ -450,7 +450,7 @@
                             S.a,
                             { style: oe.zoomContainer },
                             v.a.createElement(k.a, {
-                              accessibilityLabel: J,
+                              accessibilityLabel: Q,
                               max: n._maxScale,
                               maxIcon: v.a.createElement(Y, { style: oe.icon }),
                               min: 0,
@@ -720,7 +720,7 @@
     '2Daw': function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return L
+        return B
       })
       var n = a('VrFO'),
         i = a.n(n),
@@ -732,7 +732,7 @@
         d = a.n(c),
         u = a('KEM+'),
         p = a.n(u),
-        h = (a('uFXj'), a('ERkP')),
+        h = (a('1t7P'), a('jQ/y'), a('uFXj'), a('ERkP')),
         f = a.n(h),
         m = a('LCtV'),
         v = a('3XMw'),
@@ -740,16 +740,17 @@
         _ = a('VPdC'),
         y = a('pKoL'),
         b = a('MWbm'),
-        C = a('rFBM'),
-        S = a('/yvb'),
-        E = a('9Xij'),
-        M = a('rHpw'),
-        P = a('hOZg'),
-        w = a('Mbn/'),
-        I = a('T8pk'),
-        R = g.a.b87ca51a,
+        C = a('t62R'),
+        S = a('rFBM'),
+        E = a('/yvb'),
+        M = a('9Xij'),
+        P = a('rHpw'),
+        w = a('hOZg'),
+        I = a('Mbn/'),
+        R = a('T8pk'),
+        L = g.a.b87ca51a,
         x = g.a.eebff22c,
-        L = (function (e) {
+        B = (function (e) {
           l()(a, e)
           var t = d()(a)
           function a() {
@@ -762,37 +763,50 @@
                 value: function () {
                   var e = this.props,
                     t = e.borderRadius,
-                    a = e.maskStyle,
-                    n = e.mediaItem,
-                    i = e.onAddMediaFiles,
-                    r = e.onCrop,
-                    o = e.onRemove,
-                    s = e.rootStyle,
-                    l = e.withDragDrop,
-                    c = n && !n.uploader,
-                    d = f.a.createElement(
+                    a = e.description,
+                    n = e.innerStyle,
+                    i = e.maskStyle,
+                    r = e.mediaItem,
+                    o = e.onAddMediaFiles,
+                    s = e.onCrop,
+                    l = e.onRemove,
+                    c = e.rootStyle,
+                    d = e.withDragDrop,
+                    u = r && !r.uploader,
+                    p = f.a.createElement(
                       f.a.Fragment,
                       null,
                       this._renderPreview(),
-                      c
+                      u
                         ? null
                         : f.a.createElement(
                             f.a.Fragment,
                             null,
-                            f.a.createElement(b.a, { style: [D.mask, a, B[t]] }),
+                            f.a.createElement(b.a, { style: [T.mask, i, D[t]] }),
                             f.a.createElement(
                               b.a,
-                              { style: D.mediaPicker },
-                              this._renderMediaEdit(),
-                              r ? this._renderMediaCrop() : null,
-                              o ? this._renderMediaRemove() : null,
+                              { style: [T.overlaidContent, n] },
+                              f.a.createElement(
+                                b.a,
+                                { style: T.buttonsContainer },
+                                this._renderMediaEdit(),
+                                s ? this._renderMediaCrop() : null,
+                                l ? this._renderMediaRemove() : null,
+                              ),
+                              a
+                                ? f.a.createElement(
+                                    C.b,
+                                    { color: 'gray700', size: 'subtext1', style: T.description },
+                                    a,
+                                  )
+                                : null,
                             ),
                           ),
                     )
                   return f.a.createElement(
                     b.a,
-                    { style: [D.container, s, B[t]] },
-                    l && i ? f.a.createElement(C.a, { onFilesAdded: i, style: [D.dragDropContainer, B[t]] }, d) : d,
+                    { style: [T.container, c, D[t]] },
+                    d && o ? f.a.createElement(S.a, { onFilesAdded: o, style: [T.dragDropContainer, D[t]] }, p) : p,
                   )
                 },
               },
@@ -800,13 +814,13 @@
                 key: '_renderMediaRemove',
                 value: function () {
                   var e = this.props.onRemove
-                  return f.a.createElement(S.a, {
-                    accessibilityLabel: R,
-                    hoverLabel: { label: R },
-                    icon: f.a.createElement(P.a, null),
+                  return f.a.createElement(E.a, {
+                    accessibilityLabel: L,
+                    hoverLabel: { label: L },
+                    icon: f.a.createElement(w.a, null),
                     onPress: e,
                     size: 'large',
-                    style: D.rightButton,
+                    style: T.buttonLeftPadding,
                     type: 'onMediaDominantColorFilled',
                   })
                 },
@@ -814,15 +828,13 @@
               {
                 key: '_renderMediaCrop',
                 value: function () {
-                  var e = this.props,
-                    t = e.onCrop,
-                    a = e.onRemove
-                  return f.a.createElement(S.a, {
+                  var e = this.props.onCrop
+                  return f.a.createElement(E.a, {
                     accessibilityLabel: x,
-                    icon: f.a.createElement(w.a, null),
-                    onPress: t,
+                    icon: f.a.createElement(I.a, null),
+                    onPress: e,
                     size: 'large',
-                    style: a ? D.middleButton : D.rightButton,
+                    style: T.buttonLeftPadding,
                     type: 'onMediaDominantColorFilled',
                   })
                 },
@@ -836,7 +848,7 @@
                     n = e.accessibilityLabel,
                     i = e.onAddMediaFiles,
                     r = e.onEdit,
-                    o = f.a.createElement(I.a, null)
+                    o = f.a.createElement(R.a, null)
                   return i
                     ? f.a.createElement(_.a, {
                         acceptGifs: t,
@@ -845,14 +857,14 @@
                         icon: o,
                         onChange: i,
                         size: 'large',
+                        style: T.mediaPicker,
                         type: 'onMediaDominantColorFilled',
                       })
-                    : f.a.createElement(S.a, {
+                    : f.a.createElement(E.a, {
                         accessibilityLabel: n,
                         icon: o,
                         onPress: r,
                         size: 'large',
-                        style: D.edit,
                         type: 'onMediaDominantColorFilled',
                       })
                 },
@@ -867,13 +879,13 @@
                     i = e.mediaItem
                   return i
                     ? f.a.createElement(
-                        E.a,
+                        M.a,
                         { ratio: t },
                         f.a.createElement(y.a, {
                           borderRadius: a,
                           enableGif: !1,
                           mediaItem: i,
-                          style: D.mediaPreview,
+                          style: T.mediaPreview,
                           withCloseButton: !1,
                         }),
                       )
@@ -884,20 +896,19 @@
             a
           )
         })(f.a.Component)
-      p()(L, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: m.a.NONE })
-      var B = M.a.create(function (e) {
+      p()(B, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: m.a.NONE })
+      var D = P.a.create(function (e) {
           return {
             infinite: { borderRadius: e.borderRadii.infinite },
             medium: { borderRadius: e.borderRadii.small },
             none: { borderRadius: e.borderRadii.none },
           }
         }),
-        D = M.a.create(function (e) {
+        T = P.a.create(function (e) {
           return {
             mediaPreview: { height: '100%' },
-            mediaPicker: {
+            overlaidContent: {
               alignItems: 'center',
-              flexDirection: 'row',
               height: '100%',
               justifyContent: 'center',
               opacity: 0.75,
@@ -905,8 +916,8 @@
               top: 0,
               width: '100%',
             },
-            rightButton: { marginLeft: e.spaces.space32 },
-            middleButton: { marginLeft: e.spaces.space32, marginRight: '-'.concat(e.spaces.space12) },
+            buttonsContainer: { alignItems: 'center', flexDirection: 'row', justifyContent: 'center' },
+            buttonLeftPadding: { marginLeft: e.spaces.space20 },
             mask: {
               backgroundColor: e.colors.translucentBlack30,
               height: '100%',
@@ -920,7 +931,8 @@
               borderColor: e.colors.transparent,
               borderStyle: 'solid',
             },
-            edit: { margin: '-'.concat(e.spaces.space12) },
+            mediaPicker: { margin: 0 },
+            description: { marginTop: e.spaces.space16 },
           }
         })
     },
@@ -961,7 +973,7 @@
           return R
         }),
         a.d(t, 'b', function () {
-          return L
+          return x
         }),
         a.d(t, 'e', function () {
           return D
@@ -979,10 +991,10 @@
           return U
         }),
         a.d(t, 'l', function () {
-          return N
+          return j
         }),
         a.d(t, 'm', function () {
-          return j
+          return N
         })
       var n = a('ddV6'),
         i = a.n(n),
@@ -1020,9 +1032,9 @@
         R = function (e) {
           return { meta: { mediaId: e }, type: I }
         },
-        x = 'rweb/settings/profile/ADD_BANNER_MEDIA',
-        L = function (e) {
-          return { meta: { mediaId: e }, type: x }
+        L = 'rweb/settings/profile/ADD_BANNER_MEDIA',
+        x = function (e) {
+          return { meta: { mediaId: e }, type: L }
         },
         B = 'rweb/settings/profile/REMOVE_BANNER_MEDIA',
         D = function (e) {
@@ -1083,10 +1095,10 @@
             }
           }
         },
-        N = V(_, 'ACTION_UPDATE_USER_AVATAR', function (e) {
+        j = V(_, 'ACTION_UPDATE_USER_AVATAR', function (e) {
           return e.Settings.updateProfileAvatar
         }),
-        j = V(y, 'ACTION_UPDATE_USER_BANNER', function (e) {
+        N = V(y, 'ACTION_UPDATE_USER_BANNER', function (e) {
           return e.Settings.updateProfileBanner
         })
       h.a.register(
@@ -1098,7 +1110,7 @@
               return l()(l()({}, e), {}, { avatarMediaId: t.meta.mediaId })
             case I:
               return l()(l()({}, e), {}, { avatarMediaId: null })
-            case x:
+            case L:
               return l()(l()({}, e), {}, { bannerMediaId: t.meta.mediaId })
             case B:
               return l()(l()({}, e), {}, { bannerMediaId: null })
@@ -1306,7 +1318,18 @@
         p = a.n(u),
         h = a('KEM+'),
         f = a.n(h),
-        m = (a('2G9S'), a('hCOa'), a('87if'), a('hBpG'), a('7x/C'), a('jQ3i'), a('x4t0'), a('z84I'), a('ERkP')),
+        m =
+          (a('2G9S'),
+          a('hCOa'),
+          a('87if'),
+          a('hBpG'),
+          a('7x/C'),
+          a('jQ3i'),
+          a('x4t0'),
+          a('z84I'),
+          a('1t7P'),
+          a('jQ/y'),
+          a('ERkP')),
         v = a.n(m),
         g = a('AspN'),
         _ = a('rxPX'),
@@ -1367,11 +1390,13 @@
                     i = e.aspectRatio,
                     r = e.borderRadius,
                     o = e.currentContent,
-                    s = e.maskStyle,
-                    l = e.mediaItem,
-                    c = e.onCrop,
-                    d = e.onRemove,
-                    u = e.rootStyle
+                    s = e.description,
+                    l = e.innerStyle,
+                    c = e.maskStyle,
+                    d = e.mediaItem,
+                    u = e.onCrop,
+                    p = e.onRemove,
+                    h = e.rootStyle
                   return v.a.createElement(b.a, {
                     acceptGifs: t,
                     acceptVideo: a,
@@ -1379,12 +1404,14 @@
                     aspectRatio: i,
                     borderRadius: r,
                     currentContent: o,
-                    maskStyle: s,
-                    mediaItem: l,
+                    description: s,
+                    innerStyle: l,
+                    maskStyle: c,
+                    mediaItem: d,
                     onAddMediaFiles: this._handleAddMediaFiles,
-                    onCrop: c,
-                    onRemove: d,
-                    rootStyle: u,
+                    onCrop: u,
+                    onRemove: p,
+                    rootStyle: h,
                     withDragDrop: !0,
                   })
                 },
@@ -1498,8 +1525,8 @@
         w = a('EeFI'),
         I = 'applyButton',
         R = a('/yvb'),
-        x = a('rHpw'),
-        L = P.a.gd80afba,
+        L = a('rHpw'),
+        x = P.a.gd80afba,
         B = P.a.a753a87f,
         D = (function (e) {
           p()(a, e)
@@ -1574,11 +1601,11 @@
                     {
                       backButtonType: 'back',
                       containerStyle: T.root,
-                      documentTitle: n || L,
+                      documentTitle: n || x,
                       history: a,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: n || L,
+                      title: n || x,
                     },
                     i.a.createElement(w.a, {
                       defaultAspectRatio: t,
@@ -1594,12 +1621,12 @@
             a
           )
         })(i.a.Component),
-        T = x.a.create(function (e) {
+        T = L.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
         k = S(D),
         A = a('X8FW'),
-        O = x.a.create(function (e) {
+        O = L.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
@@ -1650,8 +1677,8 @@
         w = a.n(P),
         I = a('tI3i'),
         R = a.n(I),
-        x = a('oQhu'),
-        L = a('rHpw'),
+        L = a('oQhu'),
+        x = a('rHpw'),
         B = a('aITJ'),
         D = a('MWbm'),
         T = a('n5fo'),
@@ -1685,11 +1712,11 @@
         V = function (e) {
           return e.length
         },
-        N = function (e) {
+        j = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : V
           return t(e)
         },
-        j = w.a.de540c32,
+        N = w.a.de540c32,
         z = w.a.b4abfdb3,
         H = (function (e) {
           f()(a, e)
@@ -1708,7 +1735,7 @@
               _()(
                 p()(n),
                 '_getTextInputStyle',
-                Object(x.a)(function (e) {
+                Object(L.a)(function (e) {
                   return [W.root, !e && W.disabled]
                 }),
               ),
@@ -1720,7 +1747,7 @@
                 return 'password' === a && t ? (i ? 'text' : 'password') : a
               }),
               _()(p()(n), '_calculateLength', function (e) {
-                return N(e, n.props.calculateLength)
+                return j(e, n.props.calculateLength)
               }),
               _()(p()(n), '_shouldRenderDisplayCount', function () {
                 var e = n.state.isFocused,
@@ -2015,9 +2042,9 @@
                           D.a,
                           { style: K.passwordVisibilityIconContainer },
                           b.a.createElement(E.a, {
-                            accessibilityLabel: n ? z : j,
+                            accessibilityLabel: n ? z : N,
                             focusable: !0,
-                            hoverLabel: { label: n ? z : j },
+                            hoverLabel: { label: n ? z : N },
                             icon: n ? b.a.createElement(T.a, null) : b.a.createElement(k.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
@@ -2131,7 +2158,7 @@
                   value: function (e, t) {
                     var a = e.calculateLength,
                       n = e.value,
-                      i = 'string' == typeof n ? N(n, a) : 0
+                      i = 'string' == typeof n ? j(n, a) : 0
                     return 'string' == typeof n && i !== t.displayCount
                       ? { displayCount: i, actualCount: n.length }
                       : null
@@ -2144,7 +2171,7 @@
         })(b.a.Component)
       _()(H, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
         (H.propTypes = {})
-      var W = L.a.create(function (e) {
+      var W = x.a.create(function (e) {
           return {
             container: {
               flexDirection: 'row',
@@ -2172,7 +2199,7 @@
             disabled: { color: e.colors.gray700 },
           }
         }),
-        K = L.a.create(function (e) {
+        K = x.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -2241,7 +2268,7 @@
           return Ve
         }),
         a.d(t, 'stylizedCharHelperText', function () {
-          return je
+          return Ne
         }),
         a.d(t, 'ProfileScreen', function () {
           return ze
@@ -2283,8 +2310,8 @@
         w = a('1YZw'),
         I = a('/NU0'),
         R = a('G6rE'),
-        x = a('rxPX'),
-        L = a('0KEI'),
+        L = a('rxPX'),
+        x = a('0KEI'),
         B = function (e, t) {
           var a,
             n = P.h(e)
@@ -2295,7 +2322,7 @@
             n = P.i(e)
           if (Object(I.a)(n)) return null === (a = M.k(e, n)) || void 0 === a ? void 0 : a[0]
         },
-        T = Object(x.a)()
+        T = Object(L.a)()
           .propsFromState(function () {
             return {
               loggedInUser: R.e.selectLoggedInUser,
@@ -2309,7 +2336,7 @@
               addAvatarMedia: P.a,
               addBannerMedia: P.b,
               addToast: w.b,
-              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_PROFILE_SCREEN',
               ),
               persistProfileSettings: P.c,
@@ -2397,8 +2424,8 @@
           return new RegExp(o, 'g').test(t)
         },
         V = a('06eB'),
-        N = a.n(V),
-        j = a('jHSc'),
+        j = a.n(V),
+        N = a('jHSc'),
         z = a('fS8x'),
         H = a('mN6z'),
         W = a('P68U'),
@@ -2415,8 +2442,8 @@
         }),
         q = a('3XMw'),
         Z = a.n(q),
-        J = a('51jI'),
-        Q = a('WWyu'),
+        Q = a('51jI'),
+        J = a('WWyu'),
         $ = a('MWbm'),
         ee = a('t62R'),
         te = a('21zW'),
@@ -2483,7 +2510,7 @@
                           accessibilityRole: 'button',
                           color: 'link',
                           onPress: e ? this._handleCancelEditPress : this._handleEditPress,
-                          testID: e ? J.a.cancel : J.a.edit,
+                          testID: e ? Q.a.cancel : Q.a.edit,
                           withInteractiveStyling: !0,
                         },
                         e ? oe : re,
@@ -2499,8 +2526,8 @@
                         })
                       : S.a.createElement(
                           ee.b,
-                          { size: 'headline1', testID: o ? J.a.birthdate : J.a.missingBirthdate },
-                          o ? S.a.createElement(Q.a, { birthdate: a }) : se,
+                          { size: 'headline1', testID: o ? Q.a.birthdate : Q.a.missingBirthdate },
+                          o ? S.a.createElement(J.a, { birthdate: a }) : se,
                         ),
                     this._renderConfirmationModal(),
                   )
@@ -2550,8 +2577,8 @@
         we = Z.a.d4e220b3,
         Ie = Z.a.d9d293b8,
         Re = Z.a.a990900c,
-        xe = Z.a.jaaa8984,
-        Le = Z.a.i2209530,
+        Le = Z.a.jaaa8984,
+        xe = Z.a.i2209530,
         Be = Z.a.cb469ff5,
         De = Z.a.g511f467,
         Te = Z.a.ec3a116d,
@@ -2561,7 +2588,7 @@
         Fe = { switchToProfessionalLabel: Z.a.df2c469a, editProfessionalProfileLabel: Z.a.e1f76977 },
         Ue = { headline: Z.a.e554f641, text: Z.a.ic04a6f5, confirmLabel: Z.a.d4ab68e2 },
         Ve = { visibility: ue.a.MUTUAL_FOLLOW, year_visibility: ue.a.SELF },
-        Ne = {
+        je = {
           birthdate: Ve,
           description: void 0,
           location: void 0,
@@ -2569,7 +2596,7 @@
           shouldDeleteBanner: !1,
           url: void 0,
         },
-        je = Z.a.addbe8e7,
+        Ne = Z.a.addbe8e7,
         ze = (function (e) {
           m()(a, e)
           var t = g()(a)
@@ -2645,7 +2672,7 @@
               }),
               y()(h()(i), '_shouldShowDiscardConfirmation', function () {
                 var e = i.state.profileSettings
-                return !N()(e, i._initialProfileSettings)
+                return !j()(e, i._initialProfileSettings)
               }),
               y()(h()(i), '_handleBirthdateModalCancel', function () {
                 i.setState({ showBirthdateConfirmationModal: !1 })
@@ -2738,7 +2765,7 @@
                 }
               }),
               y()(h()(i), '_renderInputHelperText', function () {
-                return i.state.isStylizedUnicodeDisplayName ? je : null
+                return i.state.isStylizedUnicodeDisplayName ? Ne : null
               }),
               y()(h()(i), '_handleChangeDisplayName', function (e) {
                 var t = i.state.profileSettings,
@@ -2765,7 +2792,7 @@
             var o = e.loggedInUser,
               l = e.persistedProfileSettings
             return (
-              (i._initialProfileSettings = (o && i._getInitialProfileSettings(o)) || Ne),
+              (i._initialProfileSettings = (o && i._getInitialProfileSettings(o)) || je),
               (i.state = {
                 displayNameMaxLength: i.context.featureSwitches.getNumberValue('user_display_name_max_limit', 20),
                 profileSettings: l || i._initialProfileSettings,
@@ -2795,7 +2822,7 @@
                   var a = this.props.persistProfileSettings,
                     n = this.state.profileSettings,
                     i = t.profileSettings
-                  N()(i, n) || a(n)
+                  j()(i, n) || a(n)
                 },
               },
               {
@@ -2848,13 +2875,13 @@
                         disabled: C,
                         onPress: this._handleSubmit,
                         size: 'small',
-                        testID: J.a.save,
+                        testID: Q.a.save,
                         type: 'primaryFilled',
                       },
-                      Le,
+                      xe,
                     )
                   return S.a.createElement(
-                    j.b,
+                    N.b,
                     { history: i, onBackClick: this._handleCancel, rightControl: M, title: Pe },
                     S.a.createElement(
                       $.a,
@@ -2902,7 +2929,7 @@
                       }),
                       S.a.createElement(_e.a, {
                         defaultValue: d,
-                        label: xe,
+                        label: Le,
                         maxLength: 30,
                         name: 'location',
                         onChange: this._handleChangeLocation,
@@ -3018,7 +3045,7 @@
                   return S.a.createElement(
                     Z.a.I18NFormatMessage,
                     { $i18n: 'e9dec56e' },
-                    S.a.createElement(Q.a, { birthdate: { day: t, month: a, year: n } }),
+                    S.a.createElement(J.a, { birthdate: { day: t, month: a, year: n } }),
                   )
                 },
               },
@@ -3045,7 +3072,7 @@
                       method: 'push',
                     },
                     onPress: this._handleProfessionalConversionClick,
-                    testID: J.a.switchToProfessional,
+                    testID: Q.a.switchToProfessional,
                   })
                 },
               },
@@ -3057,7 +3084,7 @@
                     label: e,
                     link: '/settings/professional_profile',
                     onPress: this._handleProfessionalSettingsClick,
-                    testID: J.a.editProfessionalProfile,
+                    testID: Q.a.editProfessionalProfile,
                   })
                 },
               },
