@@ -1,20 +1,48 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [251],
   {
-    U0EQ: function (e, n, a) {
+    U0EQ: function (e, n, t) {
       'use strict'
-      a.r(n)
-      a('1t7P'), a('jQ/y'), a('ho0z')
-      var t = a('ezF+'),
-        r = a('ERkP'),
-        c = a.n(r),
-        o = a('3XMw'),
-        s = a.n(o),
-        i = a('MWbm'),
-        p = a('t62R'),
-        l = a('rHpw'),
-        u = s.a.jb0429b1,
-        d = l.a.create(function (e) {
+      t.r(n)
+      var a = t('ezF+'),
+        r = (t('1t7P'), t('jQ/y'), t('ho0z'), t('ERkP')),
+        c = t.n(r),
+        o = t('G6rE'),
+        s = t('rxPX'),
+        i = Object(s.a)().propsFromState(function () {
+          return {
+            author: function (e, n) {
+              var t = n.entry
+              return o.e.select(e, t.content.authorId)
+            },
+          }
+        }),
+        p = t('3XMw'),
+        u = t.n(p),
+        d = t('MWbm'),
+        m = t('t62R'),
+        l = t('rHpw'),
+        b = u.a.jb0429b1,
+        h = function (e) {
+          var n = e.author,
+            t = e.entry.content,
+            a = t.description,
+            r = t.name,
+            o = c.a.useMemo(
+              function () {
+                return n && c.a.createElement(m.b, { color: 'gray700' }, b({ name: n.name, screenName: n.screen_name }))
+              },
+              [n],
+            )
+          return c.a.createElement(
+            d.a,
+            { style: w.header },
+            c.a.createElement(m.b, { accessibilityRole: 'heading', size: 'title4' }, r),
+            o,
+            a ? c.a.createElement(m.b, { style: w.description }, a) : null,
+          )
+        },
+        w = l.a.create(function (e) {
           return {
             header: {
               paddingTop: e.spaces.space12,
@@ -24,41 +52,8 @@
             description: { marginTop: e.spaces.space12 },
           }
         }),
-        m = function (e) {
-          var n = e.collectionName,
-            a = e.description,
-            t = e.userLabel
-          return c.a.createElement(
-            i.a,
-            { style: d.header },
-            c.a.createElement(p.b, { accessibilityRole: 'heading', size: 'title4' }, n),
-            t && c.a.createElement(p.b, { color: 'gray700' }, u({ name: t.name, screenName: t.screenName })),
-            a ? c.a.createElement(p.b, { style: d.description }, a) : null,
-          )
-        },
-        b = a('G6rE'),
-        h = t.g({
-          component: m,
-          selectData: function (e) {
-            var n = e.entry
-            return {
-              author: function (e) {
-                return b.e.select(e, n.content.authorId)
-              },
-            }
-          },
-          createProps: function (e) {
-            var n = e.data.author,
-              a = e.entry.content,
-              t = a.description
-            return {
-              collectionName: a.name,
-              description: t,
-              userLabel: n && { name: n.name, screenName: n.screen_name },
-            }
-          },
-        })
-      n.default = h
+        f = i(c.a.memo(h))
+      n.default = a.b({ component: f }).getHandler()
     },
   },
 ])

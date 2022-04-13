@@ -4493,6 +4493,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' device. You’ll need to manage or cancel your subscription from that platform.'
             )
           }),
+          a(
+            'cc94c001',
+            'Manage your preferences for seeing sensitive media in Tweets. Keep in mind we use technology to help us identify such media, so while we’re always improving, we may not get it right all the time.',
+          ),
+          a('aa4342be', 'Graphic violence'),
+          a('c148481f', 'Hide media marked as graphic violence until you choose to see it.'),
+          a('gf143d21', 'Hide media marked as adult content until you choose to see it.'),
+          a('fe60d5da', 'Hide media marked as sensitive until you choose to see it.'),
+          a('db5f208d', 'Warn before showing'),
+          a('ga197e25', 'Show all'),
+          a('abb4d36d', 'Never show'),
+          a('a7fbeecd', 'graphic violence policy.'),
+          a('b95bcbae', 'adult content policy.'),
+          a('c694628a', 'sensitive media policy.'),
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
@@ -4783,18 +4797,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('def65b1f', 'Don’t select a team'),
           a('hd23f06f', 'Select a team account'),
           a('a14fa168', 'Add cover media'),
-          a('e6a86f6a', 'Cover media'),
-          a('i6bdb85a', 'Remove cover media?'),
-          a('cc88b839', 'You can always add it back later.'),
-          a('ed7ecc52', 'Add from Moment'),
-          a('ae29404c', 'Add from Tweet URL'),
-          a('ha169a02', 'Crop main cover.'),
-          a('h73fbe2f', 'Crop thumbnail.'),
-          a('ec8c1c50', 'Choose a cover'),
-          a('dceedc83', 'No media found'),
-          a('a03bcf5a', 'Choose a photo, video, or GIF from added Tweets to represent your Moment.'),
-          a('eb887425', 'Choose a photo, video, or GIF from a Tweet URL to represent your Moment.'),
-          a('g99f7be5', 'Tweet media item')
+          a('e6a86f6a', 'Cover media')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4811,7 +4814,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('jd2f69a8', 'Paste Tweet URL'),
+        a('i6bdb85a', 'Remove cover media?'),
+          a('cc88b839', 'You can always add it back later.'),
+          a('ed7ecc52', 'Add from Moment'),
+          a('ae29404c', 'Add from Tweet URL'),
+          a('ha169a02', 'Crop main cover.'),
+          a('h73fbe2f', 'Crop thumbnail.'),
+          a('ec8c1c50', 'Choose a cover'),
+          a('dceedc83', 'No media found'),
+          a('a03bcf5a', 'Choose a photo, video, or GIF from added Tweets to represent your Moment.'),
+          a('eb887425', 'Choose a photo, video, or GIF from a Tweet URL to represent your Moment.'),
+          a('g99f7be5', 'Tweet media item'),
+          a('jd2f69a8', 'Paste Tweet URL'),
           a('d2ae33cd', 'Invalid Tweet URL'),
           a('ac308436', 'Tweet not found'),
           a('f586b7f9', 'Add a title'),
@@ -5684,17 +5698,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('caeab0f7', 'Start reading'),
           a('c2059c9f', 'Directions'),
           a('e2acb642', 'Contact'),
-          a('e2a5bd5f', 'Open 24 hours'),
-          a('e41a0dc1', 'Closed'),
-          a('e0d7da6b', 'Closes'),
-          a('i7059f55', 'Opens'),
-          a('a7391347', 'No hours available'),
           a('b44c0204', function (e) {
             return e.day + ' at ' + e.time
           }),
           a('de1123f4', function (e) {
             return 'at ' + e.time
           }),
+          a('e2a5bd5f', 'Open 24 hours'),
+          a('e41a0dc1', 'Closed'),
+          a('e0d7da6b', 'Closes'),
+          a('i7059f55', 'Opens'),
+          a('a7391347', 'No hours available'),
+          a('je822560', 'Twitter Direct Message'),
+          a('i019c8b5', 'Call'),
+          a('d0f4e194', 'Text'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
             'hf06085d',
@@ -6014,8 +6031,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('hdf426f5', function (e) {
             return 'Topic · ' + e.description
-          }),
-          a('a3efd2c3', 'Topic'),
+          })
+        a('a3efd2c3', 'Topic'),
           a('b91c8e53', function (e) {
             return 'Topic card for ' + e.title + '.'
           }),
@@ -6036,10 +6053,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
           a('a6ada13d', 'Shop now'),
-          a('e1bddf52', 'Drag to rotate')
-        a('d0e7b11b', function (e) {
-          return e.date + ' at ' + e.time
-        }),
+          a('e1bddf52', 'Drag to rotate'),
+          a('d0e7b11b', function (e) {
+            return e.date + ' at ' + e.time
+          }),
           a('b4349cbb', function (e) {
             return '' + e.relativeDay
           }),
@@ -8553,6 +8570,30 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'We’ve confirmed your Stripe account. It can take ',
                     ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
+                  ]
+                },
+              },
+              {
+                key: 'a470b642',
+                get: function () {
+                  return [
+                    'This includes any media that depicts death, violence, medical procedures, or serious physical injury in graphic detail. Learn more about our ',
+                  ]
+                },
+              },
+              {
+                key: 'db12fdf1',
+                get: function () {
+                  return [
+                    'This includes consensually produced and distributed media that’s intended to cause sexual arousal. Learn more about our ',
+                  ]
+                },
+              },
+              {
+                key: 'a23e791f',
+                get: function () {
+                  return [
+                    'This includes other media that’s been marked as sensitive, such as hateful imagery. Find more examples in our ',
                   ]
                 },
               },

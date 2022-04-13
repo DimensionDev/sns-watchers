@@ -19,34 +19,34 @@
       var a = n('IGGJ')(n('yiKp')),
         i = n('XiYe'),
         t = n('PJTX'),
-        r = n('ERkP'),
-        s = n('e1/f').commitMutation,
-        o = r.useState,
-        u = r.useEffect,
-        d = r.useRef,
-        c = r.useCallback
+        s = n('ERkP'),
+        r = n('e1/f').commitMutation,
+        u = s.useState,
+        o = s.useEffect,
+        d = s.useRef,
+        c = s.useCallback
       e.exports = function (e) {
-        var l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
+        var l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           n = t(),
-          r = i(),
+          s = i(),
           p = d(n),
           g = d(e),
           m = d(new Set()),
-          y = o(!1),
+          y = u(!1),
           k = y[0],
           f = y[1],
           b = c(
             function (l) {
-              p.current === n && g.current === e && (m.current.delete(l), r.current && f(m.current.size > 0))
+              p.current === n && g.current === e && (m.current.delete(l), s.current && f(m.current.size > 0))
             },
-            [n, r, e],
+            [n, s, e],
           )
-        u(
+        o(
           function () {
             ;(p.current === n && g.current === e) ||
-              ((m.current = new Set()), r.current && f(!1), (p.current = n), (g.current = e))
+              ((m.current = new Set()), s.current && f(!1), (p.current = n), (g.current = e))
           },
-          [n, r, e],
+          [n, s, e],
         )
         var _ = c(
           function (i) {
@@ -76,9 +76,9 @@
                 },
               ),
             )
-            return m.current.add(t), r.current && f(!0), t
+            return m.current.add(t), s.current && f(!0), t
           },
-          [b, l, n, r, e],
+          [b, l, n, s, e],
         )
         return [_, k]
       }
@@ -88,8 +88,8 @@
       var a,
         i,
         t,
-        r,
-        s = {
+        s,
+        r = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'userId' }]),
             kind: 'Fragment',
@@ -118,7 +118,7 @@
                       {
                         kind: 'InlineFragment',
                         selections: [
-                          (r = {
+                          (s = {
                             alias: null,
                             args: null,
                             concreteType: 'UserBusinessEditableModules',
@@ -210,7 +210,7 @@
                       { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
                       {
                         kind: 'InlineFragment',
-                        selections: [r, { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }],
+                        selections: [s, { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }],
                         type: 'User',
                         abstractKey: null,
                       },
@@ -239,13 +239,13 @@
             text: null,
           },
         }
-      ;(s.hash = '554c19aa7c9c8b411fe9be2bb9fe481b'), (e.exports = s)
+      ;(r.hash = '554c19aa7c9c8b411fe9be2bb9fe481b'), (e.exports = r)
     },
     VUaC: function (e, l, n) {
       'use strict'
       n.r(l),
         n.d(l, 'editableProfileSpotlightsQuery', function () {
-          return A
+          return H
         }),
         n.d(l, 'ProfileSpotlightScreen', function () {
           return O
@@ -253,10 +253,10 @@
       var a,
         i = n('ddV6'),
         t = n.n(i),
-        r = (n('z84I'), n('LW0h'), n('7x/C'), n('jQ3i'), n('x4t0'), n('mC9n')),
-        s = n('ERkP'),
-        o = n.n(s),
-        u = n('v6aA'),
+        s = (n('z84I'), n('LW0h'), n('7x/C'), n('jQ3i'), n('x4t0'), n('mC9n')),
+        r = n('ERkP'),
+        u = n.n(r),
+        o = n('v6aA'),
         d = n('jHSc'),
         c = (n('YWiL'), n('3XMw')),
         p = n.n(c),
@@ -268,52 +268,52 @@
         b = n('Irs7'),
         _ = n('FGLp'),
         F = n('zCf4'),
-        v = n('IAZG'),
-        K = n('0KEI'),
+        K = n('IAZG'),
+        v = n('0KEI'),
         L = n('HvW7'),
         S = n.n(L),
-        h = void 0 !== a ? a : (a = n('rcBc'))
-      var T,
+        T = void 0 !== a ? a : (a = n('rcBc'))
+      var h,
         R = n('MWbm'),
         E = n('vVrK'),
         w = n('t62R'),
-        M = n('CK8+'),
-        C = n('jtO7'),
+        C = n('CK8+'),
+        M = n('jtO7'),
         I = n('FIs5'),
         U = n('rHpw'),
         V = p.a.abd845fd,
-        P = p.a.i6e7e298,
-        B = p.a.d4b6a6ef,
+        B = p.a.i6e7e298,
+        P = p.a.d4b6a6ef,
         x = p.a.e2760643,
-        H = p.a.b5aed332,
-        A = void 0 !== T ? T : (T = n('PiRV')),
+        A = p.a.b5aed332,
+        H = void 0 !== h ? h : (h = n('PiRV')),
         O = function (e) {
           var l,
             n,
             a,
             i,
-            s,
+            r,
             c = e.loggedInUserId,
             p = Object(F.f)(),
             g = Object(b.b)(),
-            m = o.a.useContext(u.a).featureSwitches,
-            L = o.a.useMemo(
+            m = u.a.useContext(o.a).featureSwitches,
+            L = u.a.useMemo(
               function () {
                 var e = []
                 return m.isTrue('responsive_web_location_spotlight_v1_config') && e.push(y.Location), e
               },
               [m],
             ),
-            T = Object(v.a)(A, { userId: c }, { fetchPolicy: 'network-only' }),
+            h = Object(K.a)(H, { userId: c }, { fetchPolicy: 'network-only' }),
             E = (function (e) {
-              var l = S()(h),
+              var l = S()(T),
                 n = t()(l, 1)[0],
-                a = Object(K.useApiErrorHandler)()
-              return o.a.useCallback(
+                a = Object(v.useApiErrorHandler)()
+              return u.a.useCallback(
                 function (l, i) {
                   var t = [],
-                    r = []
-                  l && ((t = [{ module_id: i }]), (r = [{ module_id: i, profile_module: { __typename: '' } }])),
+                    s = []
+                  l && ((t = [{ module_id: i }]), (s = [{ module_id: i, profile_module: { __typename: '' } }])),
                     n({
                       variables: { module_id: i, enabled_for_display: l },
                       optimisticResponse: {
@@ -322,7 +322,7 @@
                             result: {
                               __typename: 'User',
                               id: e,
-                              profilemodules: { v1: r },
+                              profilemodules: { v1: s },
                               editable_profilemodules: {
                                 modules_for_display: t,
                                 configurable_modules_v1: [{ module_data: { module_id: i } }],
@@ -341,10 +341,10 @@
               )
             })(c),
             U =
-              null == T || null === (l = T.user) || void 0 === l || null === (n = l.result) || void 0 === n
+              null == h || null === (l = h.user) || void 0 === l || null === (n = l.result) || void 0 === n
                 ? void 0
                 : n.editable_profilemodules,
-            O = o.a.useState(
+            O = u.a.useState(
               (null == U || null === (a = U.modules_for_display) || void 0 === a
                 ? void 0
                 : a.map(function (e) {
@@ -354,7 +354,7 @@
             D = t()(O, 2),
             N = D[0],
             W = D[1],
-            z = o.a.useMemo(
+            z = u.a.useMemo(
               function () {
                 var e
                 return null == U || null === (e = U.configurable_modules_v1) || void 0 === e
@@ -370,7 +370,7 @@
             )
           if (
             (Object(_.a)(function () {
-              g.scribe(r.i())
+              g.scribe(s.i())
             }),
             !c)
           )
@@ -380,31 +380,31 @@
             },
             X = function (e, l, n) {
               return function (a) {
-                g.scribe(r.j(n, a)), e ? (E(a, e), W(a ? [e] : [])) : l && p.push(l)
+                g.scribe(s.j(n, a)), e ? (E(a, e), W(a ? [e] : [])) : l && p.push(l)
               }
             },
-            Y = function (e, l) {
+            Q = function (e, l) {
               return function () {
-                g.scribe(r.h(l)), p.push(e)
+                g.scribe(s.h(l)), p.push(e)
               }
             }
           return (
-            (null != T &&
-              null !== (i = T.user) &&
+            (null != h &&
+              null !== (i = h.user) &&
               void 0 !== i &&
-              null !== (s = i.result) &&
-              void 0 !== s &&
-              s.editable_profilemodules) ||
+              null !== (r = i.result) &&
+              void 0 !== r &&
+              r.editable_profilemodules) ||
               G(),
-            o.a.createElement(
+            u.a.createElement(
               d.b,
-              { accessibilityHidden: !1, backButtonType: 'back', history: p, onBackClick: G, title: B },
-              o.a.createElement(
+              { accessibilityHidden: !1, backButtonType: 'back', history: p, onBackClick: G, title: P },
+              u.a.createElement(
                 R.a,
                 { style: j.container },
                 z && z.length > 0
-                  ? o.a.createElement(
-                      o.a.Fragment,
+                  ? u.a.createElement(
+                      u.a.Fragment,
                       null,
                       null == z
                         ? void 0
@@ -414,54 +414,54 @@
                                 a = null === (n = e.module_data) || void 0 === n ? void 0 : n.module_id,
                                 i = e.title,
                                 t = e.subtitle,
-                                r = !!a,
-                                s = r && N.includes(a),
-                                u = L.includes(e.module_type),
-                                d = u && k[e.module_type]
-                              if (u || r)
-                                return o.a.createElement(
-                                  o.a.Fragment,
+                                s = !!a,
+                                r = s && N.includes(a),
+                                o = L.includes(e.module_type),
+                                d = o && k[e.module_type]
+                              if (o || s)
+                                return u.a.createElement(
+                                  u.a.Fragment,
                                   { key: l },
-                                  o.a.createElement(
+                                  u.a.createElement(
                                     R.a,
                                     { accessibilityRole: 'label', style: j.row, testID: f.a.spotlightRow },
-                                    o.a.createElement(
+                                    u.a.createElement(
                                       R.a,
                                       { style: j.title },
-                                      o.a.createElement(w.b, { weight: 'bold' }, i),
-                                      o.a.createElement(M.a, { onValueChange: X(a, d, e.module_type), value: s }),
+                                      u.a.createElement(w.b, { weight: 'bold' }, i),
+                                      u.a.createElement(C.a, { onValueChange: X(a, d, e.module_type), value: r }),
                                     ),
-                                    o.a.createElement(
+                                    u.a.createElement(
                                       R.a,
                                       { style: j.descriptionContainer },
-                                      o.a.createElement(w.b, { color: 'gray700', size: 'subtext2' }, t),
+                                      u.a.createElement(w.b, { color: 'gray700', size: 'subtext2' }, t),
                                     ),
                                   ),
                                   d &&
-                                    o.a.createElement(
+                                    u.a.createElement(
                                       R.a,
                                       { accessibilityRole: 'label', style: j.editRow, testID: f.a.editSpotlightRow },
-                                      o.a.createElement(
+                                      u.a.createElement(
                                         R.a,
                                         { style: j.editButtonWrapper },
-                                        o.a.createElement(C.a, {
+                                        u.a.createElement(M.a, {
                                           align: 'left',
                                           color: 'primary',
-                                          label: r ? V : P,
-                                          onPress: Y(d, e.module_type),
+                                          label: s ? V : B,
+                                          onPress: Q(d, e.module_type),
                                         }),
                                       ),
                                     ),
                                 )
                             })(e, l)
                           }),
-                      o.a.createElement(
+                      u.a.createElement(
                         R.a,
                         { style: j.row },
-                        o.a.createElement(w.b, { color: 'gray700', size: 'subtext1' }, x),
+                        u.a.createElement(w.b, { color: 'gray700', size: 'subtext1' }, x),
                       ),
                     )
-                  : o.a.createElement(I.a, { header: H, message: x }),
+                  : u.a.createElement(I.a, { header: A, message: x }),
               ),
             )
           )
@@ -509,10 +509,10 @@
       var a = n('97Jx'),
         i = n.n(a),
         t = n('m3Bd'),
-        r = n.n(t),
-        s = n('ERkP'),
-        o = n.n(s),
-        u = n('t62R'),
+        s = n.n(t),
+        r = n('ERkP'),
+        u = n.n(r),
+        o = n('t62R'),
         d = n('I4+6'),
         c = n('cm6r'),
         p = n('rHpw'),
@@ -534,19 +534,19 @@
           n = void 0 === l ? 'center' : l,
           a = e.color,
           t = e.label,
-          s = r()(e, m),
+          r = s()(e, m),
           k = d.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[a],
             insetFocusRing: !0,
           })
-        return o.a.createElement(
+        return u.a.createElement(
           g.a,
           { style: y.container },
-          o.a.createElement(
+          u.a.createElement(
             c.a,
-            i()({}, s, { interactiveStyles: k, style: y.root }),
-            o.a.createElement(u.b, { align: n, color: a }, t),
+            i()({}, r, { interactiveStyles: k, style: y.root }),
+            u.a.createElement(o.b, { align: n, color: a }, t),
           ),
         )
       }
@@ -556,10 +556,10 @@
       var a,
         i,
         t,
-        r,
         s,
-        o,
+        r,
         u,
+        o,
         d,
         c,
         p = {
@@ -619,7 +619,7 @@
                                     name: 'v1',
                                     plural: !0,
                                     selections: [
-                                      (r = {
+                                      (s = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -667,7 +667,7 @@
                                 ],
                                 storageKey: null,
                               },
-                              (o = {
+                              (u = {
                                 alias: null,
                                 args: null,
                                 concreteType: 'UserBusinessEditableModules',
@@ -682,7 +682,7 @@
                                     kind: 'LinkedField',
                                     name: 'modules_for_display',
                                     plural: !0,
-                                    selections: (s = [r]),
+                                    selections: (r = [s]),
                                     storageKey: null,
                                   },
                                   {
@@ -700,7 +700,7 @@
                                         kind: 'LinkedField',
                                         name: 'module_data',
                                         plural: !1,
-                                        selections: s,
+                                        selections: r,
                                         storageKey: null,
                                       },
                                     ],
@@ -756,7 +756,7 @@
                         name: 'result',
                         plural: !1,
                         selections: [
-                          (u = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                          (o = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                           {
                             kind: 'InlineFragment',
                             selections: [
@@ -776,7 +776,7 @@
                                     name: 'v1',
                                     plural: !0,
                                     selections: [
-                                      r,
+                                      s,
                                       {
                                         alias: null,
                                         args: null,
@@ -785,10 +785,49 @@
                                         name: 'profile_module',
                                         plural: !1,
                                         selections: [
-                                          u,
+                                          o,
                                           {
                                             kind: 'InlineFragment',
                                             selections: [
+                                              {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: 'AboutModuleConfig',
+                                                kind: 'LinkedField',
+                                                name: 'config',
+                                                plural: !1,
+                                                selections: [
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'enable_call',
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'enable_dm',
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'enable_email',
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'enable_sms',
+                                                    storageKey: null,
+                                                  },
+                                                ],
+                                                storageKey: null,
+                                              },
                                               {
                                                 alias: null,
                                                 args: null,
@@ -810,6 +849,60 @@
                                                         args: null,
                                                         kind: 'ScalarField',
                                                         name: 'formatted_address',
+                                                        storageKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: 'BusinessContact',
+                                                    kind: 'LinkedField',
+                                                    name: 'contact',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: 'BusinessContactEmail',
+                                                        kind: 'LinkedField',
+                                                        name: 'email',
+                                                        plural: !1,
+                                                        selections: [
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            kind: 'ScalarField',
+                                                            name: 'email_address',
+                                                            storageKey: null,
+                                                          },
+                                                        ],
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: 'BusinessContactPhone',
+                                                        kind: 'LinkedField',
+                                                        name: 'phone',
+                                                        plural: !1,
+                                                        selections: [
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            kind: 'ScalarField',
+                                                            name: 'country_code',
+                                                            storageKey: null,
+                                                          },
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            kind: 'ScalarField',
+                                                            name: 'number',
+                                                            storageKey: null,
+                                                          },
+                                                        ],
                                                         storageKey: null,
                                                       },
                                                     ],
@@ -1115,7 +1208,7 @@
                                 ],
                                 storageKey: null,
                               },
-                              o,
+                              u,
                               { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null },
                             ],
                             type: 'User',
@@ -1142,7 +1235,7 @@
             ],
           },
           params: {
-            id: '48NgHIESYH_d2RnGHHFP-w',
+            id: '1m9QR7V5L-uOKIg0VvL07w',
             metadata: {},
             name: 'UpdateProfileSpotlightVisibilityMutation',
             operationKind: 'mutation',
@@ -1154,25 +1247,25 @@
     vVrK: function (e, l, n) {
       'use strict'
       n.d(l, 'a', function () {
-        return u
+        return o
       })
       n('T0aG'), n('KqXw'), n('Ysgh')
       var a = n('ERkP'),
         i = n.n(a),
         t = n('v6aA'),
-        r = n('5FtR'),
-        s = n('Fr3L')
-      function o(e) {
+        s = n('5FtR'),
+        r = n('Fr3L')
+      function u(e) {
         var l = e.WrappedComponent,
           n = e.errorConfig,
           a = i.a.useContext(t.a).loggedInUserId
         return a
-          ? i.a.createElement(s.a, { errorConfig: n }, i.a.createElement(l, { loggedInUserId: a }))
-          : i.a.createElement(r.a, { to: '/login' })
+          ? i.a.createElement(r.a, { errorConfig: n }, i.a.createElement(l, { loggedInUserId: a }))
+          : i.a.createElement(s.a, { to: '/login' })
       }
-      function u(e, l) {
+      function o(e, l) {
         return function () {
-          return i.a.createElement(o, { WrappedComponent: e, errorConfig: l })
+          return i.a.createElement(u, { WrappedComponent: e, errorConfig: l })
         }
       }
     },

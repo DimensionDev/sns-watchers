@@ -12603,30 +12603,31 @@
     qBaR: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return R
+        return A
       })
-      n('z84I')
+      n('M+/F'), n('z84I')
       var a = n('ERkP'),
         r = n.n(a),
-        i = n('v6aA'),
-        l = n('+Kfv'),
-        o = n('MMRb'),
-        s = n('aA19'),
-        c = n('XnpN'),
-        d = n('3XMw'),
-        u = n.n(d),
-        p = (n('hBvt'), n('/yvb')),
-        m = n('6s7X'),
-        g = u.a.h810143c,
-        f = function (e) {
+        i = n('HPNB'),
+        l = n('v6aA'),
+        o = n('+Kfv'),
+        s = n('MMRb'),
+        c = n('aA19'),
+        d = n('XnpN'),
+        u = n('3XMw'),
+        p = n.n(u),
+        m = (n('hBvt'), n('/yvb')),
+        g = n('6s7X'),
+        f = p.a.h810143c,
+        h = function (e) {
           var t = e.accessibilityLabel,
             n = e.conversationId,
             a = e.link,
             i = e.style,
-            l = r.a.createElement(m.a, null)
-          return r.a.createElement(p.a, {
-            accessibilityLabel: t || g,
-            hoverLabel: { label: g },
+            l = r.a.createElement(g.a, null)
+          return r.a.createElement(m.a, {
+            accessibilityLabel: t || f,
+            hoverLabel: { label: f },
             icon: l,
             key: n,
             link: a,
@@ -12635,102 +12636,125 @@
             type: 'primaryText',
           })
         },
-        h = n('M2mT'),
-        v = n('aITJ'),
-        y = n('MWbm'),
-        _ = n('t62R'),
-        b = n('rHpw'),
-        k = n('OhSZ'),
-        S = n('zCf4'),
-        C = { viewType: 'messages' },
-        E = u.a.d4986f85,
-        T = u.a.e3e58b6d,
-        w = u.a.a9ddbb94
-      function R(e) {
-        var t,
-          n,
-          a,
-          d,
-          u,
-          p,
-          m,
-          g = r.a.useContext(i.a),
-          b = Object(S.f)(),
-          R = Object(S.g)(),
-          F = g.featureSwitches.isTrue('dm_vdl_enabled') && g.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-          A = e.conversation,
-          I = e.conversationId,
-          O = e.newConversationParticipants,
-          M = e.perspective,
-          L = function (e) {
-            null != A && A.trusted ? b.push({ pathname: '/messages', state: R.state }) : e()
+        v = n('M2mT'),
+        y = n('aITJ'),
+        _ = n('MWbm'),
+        b = n('MAI/'),
+        k = n('cHvH'),
+        S = n('t62R'),
+        C = n('rHpw'),
+        E = n('OhSZ'),
+        T = n('zCf4'),
+        w = { viewType: 'messages' },
+        R = p.a.d4986f85,
+        x = p.a.e3e58b6d,
+        F = p.a.a9ddbb94
+      function A(e) {
+        var t = r.a.useContext(l.a),
+          n = Object(T.f)(),
+          a = Object(T.g)(),
+          u = t.featureSwitches.isTrue('dm_vdl_enabled') && t.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
+          p = e.conversation,
+          m = e.conversationId,
+          g = e.newConversationParticipants,
+          f = e.perspective,
+          C = function (e) {
+            null != p && p.trusted ? n.push({ pathname: '/messages', state: a.state }) : e()
           },
-          D = function () {
+          A = function (e, t) {
+            var n = e
+              .map(function (e) {
+                return e.user.profile_image_url_https
+              })
+              .slice(0, t)
+            return r.a.createElement(
+              _.a,
+              { style: I.facePile },
+              r.a.createElement(b.a, { userAvatarSize: 'large', userAvatarUrls: n }),
+            )
+          },
+          O = function () {
             var e,
-              t = (null == A ? void 0 : A.type) === o.CONVERSATION_TYPE.GROUP,
-              n = (null == R || null === (e = R.state) || void 0 === e ? void 0 : e.position) || 0
-            return I
+              t = (null == p ? void 0 : p.type) === s.CONVERSATION_TYPE.GROUP,
+              n = (null == a || null === (e = a.state) || void 0 === e ? void 0 : e.position) || 0
+            return m
               ? r.a.createElement(
-                  y.a,
-                  { style: x.rightControlStyles },
-                  r.a.createElement(f, {
-                    accessibilityLabel: t ? w : T,
-                    conversationId: I,
-                    link: { pathname: '/messages/'.concat(I, '/info'), state: { position: n } },
-                    style: x.infoButton,
+                  _.a,
+                  { style: I.rightControlStyles },
+                  r.a.createElement(h, {
+                    accessibilityLabel: t ? F : x,
+                    conversationId: m,
+                    link: { pathname: '/messages/'.concat(m, '/info'), state: { position: n } },
+                    style: I.infoButton,
                   }),
                 )
               : void 0
           }
         return r.a.createElement(
-          h.a,
-          ((t = F ? 'headline2' : void 0),
-          (n =
-            A && A.participants.length
-              ? Object(k.a)({ conversation: A, perspective: M })
-              : O
-              ? Object(k.a)({ newConversationParticipants: O, perspective: M })
-              : E),
-          (a =
-            A && A.participants.length
-              ? r.a.createElement(k.b, { conversation: A, perspective: M, textSize: t, withScreenName: !1 })
-              : O
-              ? r.a.createElement(k.b, {
-                  newConversationParticipants: O,
-                  perspective: M,
-                  textSize: t,
-                  withScreenName: !1,
+          v.a,
+          (function () {
+            var e = u ? 'headline2' : void 0,
+              t =
+                p && p.participants.length
+                  ? Object(E.a)({ conversation: p, perspective: f })
+                  : g
+                  ? Object(E.a)({ newConversationParticipants: g, perspective: f })
+                  : R,
+              n =
+                p && p.participants.length
+                  ? r.a.createElement(E.b, { conversation: p, perspective: f, textSize: e, withScreenName: !1 })
+                  : g
+                  ? r.a.createElement(E.b, {
+                      newConversationParticipants: g,
+                      perspective: f,
+                      textSize: e,
+                      withScreenName: !1,
+                    })
+                  : r.a.createElement(S.b, { size: e }, R),
+              a = p && f ? Object(d.a)(p, f) : void 0,
+              l = u ? 'large' : 'medium',
+              o = f ? r.a.createElement(c.a, { conversation: p, perspective: f, size: l }) : void 0
+            u &&
+              a &&
+              (null == p ? void 0 : p.type) === s.CONVERSATION_TYPE.GROUP &&
+              void 0 === (null == p ? void 0 : p.avatar) &&
+              ((o = (function (e) {
+                return r.a.createElement(k.a, null, function (t) {
+                  var n = t.windowWidth
+                  return i.a.isTwoColumnLayout(n) ? A(e, 8) : A(e, 3)
                 })
-              : r.a.createElement(_.b, { size: t }, E)),
-          (d = F ? 'large' : 'medium'),
-          (u = M ? r.a.createElement(s.a, { conversation: A, perspective: M, size: d }) : void 0),
-          (p =
-            !F &&
-            A &&
-            A.type === o.CONVERSATION_TYPE.ONE_TO_ONE &&
-            M &&
-            Object(c.a)(A, M).map(function (e) {
-              return e.user.screen_name
-            })),
-          (m = p ? '@'.concat(p[0]) : void 0),
-          {
-            backLocation: '/messages',
-            onBackClick: L,
-            documentTitle: n,
-            rightControl: D(),
-            title: a,
-            titleIconCell: u,
-            titleIconCellSize: d,
-            subtitle: m,
-            screenType: 'primaryDetail',
-            withBottomTabBar: !1,
-            headerless: v.b.isKaiOS(),
-          }),
-          r.a.createElement(l.a, { behavioralEventContext: C }, e.children),
+              })(a)),
+              (l = 'custom'))
+            var m =
+                u || (null == p ? void 0 : p.type) !== s.CONVERSATION_TYPE.ONE_TO_ONE || null == a
+                  ? void 0
+                  : a.map(function (e) {
+                      return e.user.screen_name
+                    }),
+              h = m ? '@'.concat(m[0]) : void 0
+            return {
+              backLocation: '/messages',
+              onBackClick: C,
+              documentTitle: t,
+              rightControl: O(),
+              title: n,
+              titleIconCell: o,
+              titleIconCellSize: l,
+              subtitle: h,
+              screenType: 'primaryDetail',
+              withBottomTabBar: !1,
+              headerless: y.b.isKaiOS(),
+            }
+          })(),
+          r.a.createElement(o.a, { behavioralEventContext: w }, e.children),
         )
       }
-      var x = b.a.create(function (e) {
-        return { infoButton: { marginRight: e.spaces.space4 }, rightControlStyles: { flexDirection: 'row' } }
+      var I = C.a.create(function (e) {
+        return {
+          infoButton: { marginRight: e.spaces.space4 },
+          rightControlStyles: { flexDirection: 'row' },
+          facePile: { display: 'flex', flexDirection: 'row' },
+        }
       })
     },
     rFBM: function (e, t, n) {

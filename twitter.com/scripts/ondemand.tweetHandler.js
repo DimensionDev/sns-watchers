@@ -3674,35 +3674,43 @@
     'Fcw+': function (e, t, n) {
       'use strict'
       n.r(t)
-      n('jQ3i'), n('x4t0')
-      var o = n('ezF+'),
-        i = n('VPAj'),
-        a = n('kY28'),
-        r = n('CUXw')
+      var o = n('yiKp'),
+        i = n.n(o),
+        a = n('ezF+'),
+        r = n('VPAj'),
+        c = (n('jQ3i'), n('x4t0'), n('ERkP')),
+        l = n.n(c),
+        s = n('kY28'),
+        d = n('CUXw'),
+        u = function (e) {
+          var t = e.entry,
+            n = t.content.id,
+            o = t.index,
+            i = e.onClick,
+            a = e.selectedTweetIds,
+            r = e.withSelectIcon
+          return l.a.createElement(d.a, {
+            index: o,
+            isSelected: null == a ? void 0 : a.includes(n),
+            onClick: i,
+            replyContext: s.a.ReplyContextTypes.None,
+            tweetId: n,
+            withActions: !1,
+            withSelectIcon: r,
+          })
+        },
+        p = l.a.memo(u)
       t.default = function (e) {
-        var t = e.onClick,
-          n = e.selectedTweetIds,
-          c = void 0 === n ? [] : n,
-          l = e.withSelectIcon,
-          s = void 0 === l || l
-        return o.g({
-          component: r.a,
-          createProps: function (e) {
-            var n = e.entry
-            return {
-              index: n.index,
-              tweetId: n.content.id,
-              onClick: t,
-              replyContext: a.a.ReplyContextTypes.None,
-              withActions: !1,
-              isSelected: c.includes(n.content.id),
-              withSelectIcon: s,
-            }
-          },
-          isClickable: Object(i.a)(!0),
-          isFocusable: Object(i.a)(!0),
-          shouldDisplayBorder: Object(i.a)(!0),
-        })
+        return a
+          .b({
+            component: p,
+            isClickable: Object(r.a)(!0),
+            isFocusable: Object(r.a)(!0),
+            shouldDisplayBorder: Object(r.a)(!0),
+          })
+          .getHandler(function () {
+            return i()({}, e)
+          })
       }
     },
     JUsM: function (e, t, n) {
