@@ -1,28 +1,28 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [231],
+  [232],
   {
-    sc5C: function (e, n, t) {
+    sc5C: function (e, n, c) {
       'use strict'
-      t.r(n)
-      var a = t('ezF+'),
-        r = (t('hBvt'), t('ERkP')),
-        o = t.n(r),
-        i = t('u3ZE'),
-        c = t('htQn'),
-        l = t('t62R')
-      function u(e) {
+      c.r(n)
+      var i = c('ezF+'),
+        t = (c('hBvt'), c('ERkP')),
+        l = c.n(t),
+        a = c('u3ZE'),
+        r = c('htQn'),
+        o = c('t62R')
+      function s(e) {
         var n,
-          t = e.entry,
-          a = null == t || null === (n = t.content) || void 0 === n ? void 0 : n.relatedSearch.text,
-          r = o.a.useMemo(
+          c = e.entry,
+          i = null == c || null === (n = c.content) || void 0 === n ? void 0 : n.relatedSearch.text,
+          t = l.a.useMemo(
             function () {
-              return { pathname: '/search', query: { q: a, src: i.a.RelatedQueryClick } }
+              return { pathname: '/search', query: { q: i, src: a.a.RelatedQueryClick } }
             },
-            [a],
+            [i],
           )
-        return o.a.createElement(c.a, { link: r, style: s.link }, o.a.createElement(l.b, null, a))
+        return l.a.createElement(r.a, { link: t, style: d.link }, l.a.createElement(o.b, null, i))
       }
-      var s = t('rHpw').a.create(function (e) {
+      var d = c('rHpw').a.create(function (e) {
           return {
             link: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -30,9 +30,31 @@
             },
           }
         }),
-        d = o.a.memo(u),
-        p = a.b({ component: d }).getHandler()
+        k = l.a.memo(s),
+        p = i.b({ component: k }).getHandler()
       n.default = p
+    },
+    u3ZE: function (e, n, c) {
+      'use strict'
+      n.a = {
+        AdvancedSearchPage: 'advanced_search_page',
+        CashtagClick: 'cashtag_click',
+        HashtagClick: 'hashtag_click',
+        PromotedTrendClick: 'promoted_trend_click',
+        RecentSearchClick: 'recent_search_click',
+        SavedSearchClick: 'saved_search_click',
+        RelatedQueryClick: 'related_query_click',
+        SpellingCorrectionClick: 'spelling_correction_click',
+        SpellingCorrectionRevertClick: 'spelling_suggestion_revert_click',
+        SpellingExpansionClick: 'spelling_expansion_click',
+        SpellingExpansionRevertClick: 'spelling_expansion_revert_click',
+        SpellingSuggestionClick: 'spelling_suggestion_click',
+        TrendClick: 'trend_click',
+        TrendView: 'trend_view',
+        TypeaheadClick: 'typeahead_click',
+        Typed: 'typed_query',
+        TweetDetailQuoteTweet: 'tdqt',
+      }
     },
   },
 ])

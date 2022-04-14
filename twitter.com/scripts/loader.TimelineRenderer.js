@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [184],
+  [185],
   {
     VeNJ: function (e, t, n) {
       'use strict'
@@ -1022,9 +1022,10 @@
               value: function (e) {
                 var t = this.props,
                   n = t.activeCover,
-                  r = t.initialFetchStatus === Y.a.LOADED,
-                  i = 0 === e.length
-                return r && i && !n
+                  r = t.hasPendingHandlers,
+                  i = t.initialFetchStatus === Y.a.LOADED,
+                  a = 0 === e.length
+                return i && a && !n && !r
               },
             },
             {

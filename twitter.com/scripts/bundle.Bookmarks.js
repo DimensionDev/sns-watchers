@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [39],
+  [40],
   {
     '/kFL': function (e, t, r) {
       'use strict'
@@ -164,6 +164,9 @@
     },
     '1LtL': function (e, t, r) {
       'use strict'
+      r.d(t, 'b', function () {
+        return v
+      })
       var o = r('ERkP'),
         n = r.n(o),
         a = r('QIgh'),
@@ -209,37 +212,37 @@
         return 'https://abs.twimg.com/sticky/illustrations/empty-states/'.concat(e, '-').concat(t, '.v1.png')
       }
       var h = u.a.cd343e15,
-        E = u.a.f47e39e8
+        E = u.a.f47e39e8,
+        v = function () {
+          return n.a.createElement(k.a, {
+            header: h,
+            imageVariants:
+              ((e = b.BookInBirdCage),
+              [
+                { height: 200, uri: p(e, '400x200'), width: 400 },
+                { height: 400, uri: p(e, '800x400'), width: 800 },
+                { height: 600, uri: p(e, '1200x600'), width: 1200 },
+              ]),
+            message: E,
+          })
+          var e
+        }
       t.a = function (e) {
         var t = e.bookmarkFolderId,
           r = e.history,
           o = e.title,
           l = e.urtModule,
           u = n.a.createElement(c.a, { history: r }),
-          v = Object(m.a)()
+          k = Object(m.a)()
         return n.a.createElement(
           i.a,
           { component: f.a, fab: u },
           n.a.createElement(d.a, {
-            entryConfiguration: Object(a.a)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
+            entryConfiguration: Object(a.createConfiguration)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
             module: l,
             prerollDisplayLocation: s.c.OTHER,
             renderEmptyState: function () {
-              return (
-                v.scribeAction('empty'),
-                n.a.createElement(k.a, {
-                  header: h,
-                  imageVariants:
-                    ((e = b.BookInBirdCage),
-                    [
-                      { height: 200, uri: p(e, '400x200'), width: 400 },
-                      { height: 400, uri: p(e, '800x400'), width: 800 },
-                      { height: 600, uri: p(e, '1200x600'), width: 1200 },
-                    ]),
-                  message: E,
-                })
-              )
-              var e
+              return k.scribeAction('empty'), v()
             },
             title: o,
           }),

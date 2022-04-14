@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [12],
+  [9],
   {
     '07FG': function (e, t, n) {
       'use strict'
@@ -43,9 +43,9 @@
         c = n('1Pcy'),
         s = n.n(c),
         u = n('5Yy7'),
-        l = n.n(u),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(u),
+        l = n('2VqO'),
+        p = n.n(l),
         f = n('KEM+'),
         m = n.n(f),
         v = (n('2G9S'), n('849X'), n('TJCb'), n('M+/F'), n('ERkP')),
@@ -54,9 +54,9 @@
         y = n('2dXj'),
         _ = n('4bHO'),
         b = n('dzqK'),
-        C = n('GZwR'),
-        E = (function (e) {
-          l()(n, e)
+        w = n('GZwR'),
+        C = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
@@ -76,8 +76,8 @@
                   c = t.source,
                   s = e.state,
                   u = s.canShowTypeahead,
-                  l = s.queryContext,
-                  d = u && l ? { word: l.word, resultType: l.resultType } : void 0
+                  d = s.queryContext,
+                  l = u && d ? { word: d.word, resultType: d.resultType } : void 0
                 return h.a.createElement(
                   y.a,
                   {
@@ -87,9 +87,9 @@
                     onDismiss: e._handleDismiss,
                     onSelectItem: e._handleSelectItem,
                     onTypeaheadStateChange: o,
-                    query: d,
+                    query: l,
                     ref: e._genericWrapperRef,
-                    source: c || C.d.Compose,
+                    source: c || w.d.Compose,
                   },
                   n(e._handleInputChange),
                 )
@@ -125,14 +125,14 @@
                   c = o.end,
                   s = o.start,
                   u = o.word,
-                  l = g.e(u || '', 'compose')
-                if ((null == l ? void 0 : l.q) !== a)
+                  d = g.e(u || '', 'compose')
+                if ((null == d ? void 0 : d.q) !== a)
                   if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === s))
                     e._setQueryContext(void 0)
-                  else if (l) {
-                    var d = l.q,
-                      p = l.result_type
-                    e._setQueryContext({ word: d, resultType: p, fullText: n.value, startIndex: s, endIndex: c })
+                  else if (d) {
+                    var l = d.q,
+                      p = d.result_type
+                    e._setQueryContext({ word: l, resultType: p, fullText: n.value, startIndex: s, endIndex: c })
                   } else e._setQueryContext(void 0)
               }),
               m()(s()(e), '_setQueryContext', function (t) {
@@ -160,12 +160,12 @@
             n
           )
         })(h.a.Component)
-      t.a = E
+      t.a = C
     },
     CDB5: function (e, t, n) {
       'use strict'
       n.d(t, 'm', function () {
-        return k
+        return T
       }),
         n.d(t, 'l', function () {
           return P
@@ -183,13 +183,13 @@
           return F
         }),
         n.d(t, 'i', function () {
-          return z
+          return V
         }),
         n.d(t, 'j', function () {
-          return B
+          return z
         }),
         n.d(t, 'k', function () {
-          return H
+          return K
         }),
         n.d(t, 'h', function () {
           return q
@@ -198,7 +198,7 @@
           return G
         }),
         n.d(t, 'b', function () {
-          return W
+          return N
         }),
         n.d(t, 'c', function () {
           return J
@@ -210,9 +210,9 @@
         c = n('m3Bd'),
         s = n.n(c),
         u = n('KEM+'),
-        l = n.n(u),
-        d = n('yiKp'),
-        p = n.n(d),
+        d = n.n(u),
+        l = n('yiKp'),
+        p = n.n(l),
         f =
           (n('TJCb'),
           n('7x/C'),
@@ -232,9 +232,9 @@
         y = n('07FG'),
         _ = n('Ssj5'),
         b = n('fEA7'),
-        C = n.n(b),
-        E = n('uKEd'),
-        w = n('lnti'),
+        w = n.n(b),
+        C = n('uKEd'),
+        E = n('lnti'),
         x = n('/NU0'),
         I = [
           'senderId',
@@ -247,8 +247,8 @@
           'quickReply',
         ],
         S = 'dmComposer',
-        T = {}
-      var O = function (e) {
+        O = {}
+      var k = function (e) {
           var t = e.conversation_id,
             n = e.id,
             r = e.localMediaId,
@@ -258,48 +258,48 @@
             c = e.attachment,
             s = void 0 === c ? {} : c,
             u = e.error,
-            l = Date.now().toString()
+            d = Date.now().toString()
           return {
             conversation_id: t,
             recipient_ids: a,
             error: u,
             id: n,
             is_draft: !0,
-            message_data: { attachment: s, localMediaId: r, sender_id: i, text: o, time: l },
+            message_data: { attachment: s, localMediaId: r, sender_id: i, text: o, time: d },
             type: 'message',
-            time: l,
+            time: d,
           }
         },
-        k = function (e) {
+        T = function (e) {
           return function (t, n, r) {
             var i = r.api,
               c = e || {},
               u = c.senderId,
-              l = c.cardUrl,
-              d = c.conversationId,
+              d = c.cardUrl,
+              l = c.conversationId,
               _ = c.localMediaId,
               b = c.recipients,
               S = void 0 === b ? [] : b,
-              T = c.requestId,
-              k = void 0 === T ? C.a.v1() : T,
+              O = c.requestId,
+              T = void 0 === O ? w.a.v1() : O,
               M = c.tweetAttachment,
               P = c.quickReply,
               D = s()(c, I)
-            t(Z(d))
+            t(Z(l))
             var U = n(),
-              R = _ || V(n(), d),
+              R = _ || B(n(), l),
               A = f.k(U, R),
               L = o()(A, 1)[0] || {},
               F = L.mediaFile,
-              z = L.mediaMetadata,
-              B = S.length > 0 && S.join(','),
-              H = {}
+              V = L.mediaMetadata,
+              z = S.length > 0 && S.join(','),
+              K = {}
             F && F.isGif
-              ? (H.extraInitParams = '&media_category=dm_gif')
-              : F && F.isVideo && (H.extraInitParams = '&media_category=dm_video')
-            var K = f.p(R, H),
-              G = [t(K)],
-              N = (q(U, d) || {}).found_media_origin
+              ? (K.extraInitParams = '&media_category=dm_gif')
+              : F && F.isVideo && (K.extraInitParams = '&media_category=dm_video')
+            var H = f.p(R, K),
+              G = [t(H)],
+              W = (q(U, l) || {}).found_media_origin
             return (
               F && F.isGif && G.push(Object(g.a)(F)),
               Promise.all(G).then(
@@ -307,11 +307,11 @@
                   var r = o()(n, 2),
                     c = o()(r[0], 1)[0],
                     s = r[1],
-                    g = (null == z ? void 0 : z.altText) || (null == z ? void 0 : z.defaultAltText),
+                    g = (null == V ? void 0 : V.altText) || (null == V ? void 0 : V.defaultAltText),
                     _ = !!g
                   return (
-                    c && (N || _)
-                      ? t(f.m(p()({ media_id: c.uploadId, found_media_origin: N }, !!_ && { alt_text: { text: g } })))
+                    c && (W || _)
+                      ? t(f.m(p()({ media_id: c.uploadId, found_media_origin: W }, !!_ && { alt_text: { text: g } })))
                       : Promise.resolve()
                   ).then(
                     function () {
@@ -331,36 +331,36 @@
                           : f.isVideo && (r.video = p()(p()({}, g), {}, { media_url_https: f.url, type: 'video' }))
                       } else M && (r.tweet = { status: n })
                       var _ = (c || {}).uploadId,
-                        b = O({
+                        b = k({
                           attachment: r,
-                          conversation_id: d,
-                          id: k,
-                          recipient_ids: B,
+                          conversation_id: l,
+                          id: T,
+                          recipient_ids: z,
                           sender_id: u,
                           text: e.text,
                         }),
-                        C = p()(
+                        w = p()(
                           p()(
-                            p()(p()({}, D), Object(y.a)(l) && { card_uri: l }),
+                            p()(p()({}, D), Object(y.a)(d) && { card_uri: d }),
                             {},
-                            { conversation_id: d },
+                            { conversation_id: l },
                             !n && { media_id: _ },
                           ),
                           {},
-                          { recipient_ids: B, request_id: k, tweet_id: n },
+                          { recipient_ids: z, request_id: T, tweet_id: n },
                         )
                       P &&
-                        ((C['quick_reply_response[options][id]'] = P.id),
-                        (C['quick_reply_response[options][selected_id]'] = P.selected_id))
-                      var I = Object(w.a)([
-                        ee(d),
+                        ((w['quick_reply_response[options][id]'] = P.id),
+                        (w['quick_reply_response[options][selected_id]'] = P.selected_id))
+                      var I = Object(E.a)([
+                        ee(l),
                         { type: h.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        d && Object(E.b)(d, k, b),
+                        l && Object(C.b)(l, T, b),
                       ])
                       return (
                         t(I),
-                        i.DirectMessages.sendMessage(C).then(
+                        i.DirectMessages.sendMessage(w).then(
                           function (n) {
                             var r = n.entities,
                               i = r.cards,
@@ -368,30 +368,30 @@
                               c = r.tweets,
                               s = r.users,
                               u = n.result.conversations
-                            Object(x.a)(R) && t(J(d, R))
-                            var l = Object(w.a)(
+                            Object(x.a)(R) && t(J(l, R))
+                            var d = Object(E.a)(
                               [{ type: h.c.SUCCESS }].concat(
                                 a()(Object(m.a)({ conversations: u, entries: o, users: s, tweets: c, cards: i })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, d && Object(E.j)(d, k, e), j(d)],
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, l && Object(C.j)(l, T, e), j(l)],
                               ),
                             )
-                            return t(l), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
+                            return t(d), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
                           },
                           function (n) {
-                            var a = O({
+                            var a = k({
                                 attachment: r,
-                                conversation_id: d,
+                                conversation_id: l,
                                 error: !0,
-                                id: k,
+                                id: T,
                                 localMediaId: R,
-                                recipient_ids: B,
+                                recipient_ids: z,
                                 sender_id: u,
                                 text: e.text,
                               }),
-                              i = Object(w.a)([
+                              i = Object(E.a)([
                                 { type: h.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                d && Object(E.b)(d, k, a),
+                                l && Object(C.b)(l, T, a),
                               ])
                             return t(i), Object(v.e)(t, n, 'ACTION_SEND_DM')
                           },
@@ -399,12 +399,12 @@
                       )
                     },
                     function (e) {
-                      return t(ne(d)), (e.type = 'metadata'), Promise.reject(e)
+                      return t(ne(l)), (e.type = 'metadata'), Promise.reject(e)
                     },
                   )
                 },
                 function (e) {
-                  return t(Object(w.a)([Object(x.a)(R) && J(d, R), ne(d)])), Promise.reject(e)
+                  return t(Object(E.a)([Object(x.a)(R) && J(l, R), ne(l)])), Promise.reject(e)
                 },
               )
             )
@@ -433,40 +433,40 @@
         F = function (e, t) {
           return { type: L, conversationId: e, cardUrl: t }
         },
-        V = function (e, t) {
+        B = function (e, t) {
           var n = M(e, t)
           return n ? n.mediaId : null
         },
-        z = function (e, t) {
-          var n = f.k(e, V(e, t))
+        V = function (e, t) {
+          var n = f.k(e, B(e, t))
           return n.length > 0 ? n[0] : null
         },
-        B = function (e, t) {
+        z = function (e, t) {
           var n = M(e, t)
           return !!n && n.isUploading
         },
-        H = function (e, t) {
-          return f.l(e, V(e, t))
+        K = function (e, t) {
+          return f.l(e, B(e, t))
         },
         q = function (e, t) {
           var n = M(e, t)
           return n ? n.gifMetadata : null
         },
-        K = 'rweb/dmComposer/ADD_MEDIA',
+        H = 'rweb/dmComposer/ADD_MEDIA',
         G = function (e, t, n) {
-          return { payload: { isUploading: !1, mediaId: o()(t, 1)[0], gifMetadata: n }, type: K, conversationId: e }
+          return { payload: { isUploading: !1, mediaId: o()(t, 1)[0], gifMetadata: n }, type: H, conversationId: e }
         },
-        N = 'rweb/dmComposer/CANCEL_UPLOAD',
-        W = function (e) {
-          return { type: N, conversationId: e }
+        W = 'rweb/dmComposer/CANCEL_UPLOAD',
+        N = function (e) {
+          return { type: W, conversationId: e }
         },
-        Y = 'rweb/dmComposer/REMOVE_MEDIA',
-        X = function (e) {
-          return { type: Y, conversationId: e }
+        X = 'rweb/dmComposer/REMOVE_MEDIA',
+        Y = function (e) {
+          return { type: X, conversationId: e }
         },
         J = function (e, t) {
           return function (n) {
-            n(f.i(t)), n([W(e), X(e)])
+            n(f.i(t)), n([N(e), Y(e)])
           }
         },
         Q = 'rweb/dmComposer/UPLOAD_REQUEST',
@@ -482,38 +482,38 @@
           return { type: te, conversationId: e }
         }
       _.a.register(
-        l()({}, S, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
+        d()({}, S, function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.conversationId || 'new_group'
           switch (t.type) {
-            case K:
+            case H:
               var r = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, r), t.payload)))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, r), t.payload)))
             case Q:
               var a = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, a), {}, { isUploading: !0 })))
-            case N:
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, a), {}, { isUploading: !0 })))
+            case W:
               var i = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, i), {}, { isUploading: !1 })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, i), {}, { isUploading: !1 })))
             case te:
             case $:
-            case Y:
+            case X:
               var o = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(
                 p()({}, e),
                 {},
-                l()({}, n, p()(p()({}, o), {}, { isUploading: !1, mediaId: null, gifMetadata: void 0 })),
+                d()({}, n, p()(p()({}, o), {}, { isUploading: !1, mediaId: null, gifMetadata: void 0 })),
               )
             case D:
               var c = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, c), {}, { text: t.text })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, c), {}, { text: t.text })))
             case L:
               var s = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, s), {}, { cardUrl: t.cardUrl })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, s), {}, { cardUrl: t.cardUrl })))
             case R:
               var u = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
-              return p()(p()({}, e), {}, l()({}, n, p()(p()({}, u), {}, { text: null })))
+              return p()(p()({}, e), {}, d()({}, n, p()(p()({}, u), {}, { text: null })))
             default:
               return e
           }
@@ -595,9 +595,9 @@
         c = n('VrFO'),
         s = n.n(c),
         u = n('Y9Ll'),
-        l = n.n(u),
-        d = n('5Yy7'),
-        p = n.n(d),
+        d = n.n(u),
+        l = n('5Yy7'),
+        p = n.n(l),
         f = n('2VqO'),
         m = n.n(f),
         v = n('KEM+'),
@@ -606,22 +606,22 @@
         y = n.n(g),
         _ = n('3XMw'),
         b = n.n(_),
-        C = n('cjZk'),
-        E = 'fileInput',
-        w = n('sjK1'),
+        w = n('cjZk'),
+        C = 'fileInput',
+        E = n('sjK1'),
         x = n('/Imo'),
         I = n('rHpw'),
         S = n('9HgX'),
-        T = ['acceptGifs', 'acceptImages', 'acceptVideo', 'customMimeTypes', 'icon', 'style', 'withIcon'],
-        O = b.a.b9960f31,
-        k = { viewType: 'media_picker' },
-        M = y.a.createElement(C.a, null),
+        O = ['acceptGifs', 'acceptImages', 'acceptVideo', 'customMimeTypes', 'icon', 'style', 'withIcon'],
+        k = b.a.b9960f31,
+        T = { viewType: 'media_picker' },
+        M = y.a.createElement(w.a, null),
         P = function (e) {
           var t = e.acceptGifs,
             n = e.acceptImages,
             r = void 0 === n || n,
             a = e.acceptVideo
-          return (r ? S.b : []).concat(t ? [S.a] : []).concat(a ? w.a : [])
+          return (r ? S.b : []).concat(t ? [S.a] : []).concat(a ? E.a : [])
         },
         D = (function (e) {
           p()(n, e)
@@ -630,7 +630,7 @@
             return s()(this, n), t.apply(this, arguments)
           }
           return (
-            l()(n, [
+            d()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -642,16 +642,16 @@
                     c = e.icon,
                     s = e.style,
                     u = e.withIcon,
-                    l = o()(e, T),
-                    d = P({ acceptGifs: t, acceptImages: n, acceptVideo: r }).concat(i).join(',')
+                    d = o()(e, O),
+                    l = P({ acceptGifs: t, acceptImages: n, acceptVideo: r }).concat(i).join(',')
                   return y.a.createElement(
                     x.a,
-                    a()({}, l, {
-                      accept: d,
-                      behavioralEventContext: k,
+                    a()({}, d, {
+                      accept: l,
+                      behavioralEventContext: T,
                       icon: u ? c : void 0,
                       style: [U.root, s],
-                      testID: E,
+                      testID: C,
                     }),
                   )
                 },
@@ -665,7 +665,7 @@
         acceptImages: !0,
         acceptVideo: !0,
         customMimeTypes: [],
-        accessibilityLabel: O,
+        accessibilityLabel: k,
         icon: M,
         size: 'medium',
         withIcon: !0,
@@ -684,8 +684,8 @@
         c = n('ERkP'),
         s = n.n(c),
         u = n('v6aA'),
-        l = n('XOJV'),
-        d = n('eSoz'),
+        d = n('XOJV'),
+        l = n('eSoz'),
         p = n('rxPX'),
         f = n('0KEI'),
         m = function (e, t) {
@@ -693,34 +693,34 @@
         },
         v = function (e, t) {
           var n = t.tweetId,
-            r = n && l.a.select(e, n)
-          return r ? Object(d.g)(e, r) : void 0
+            r = n && d.a.select(e, n)
+          return r ? Object(l.g)(e, r) : void 0
         },
         h = Object(p.a)()
           .propsFromState(function () {
-            return { community: v, hydratedTweet: l.a.createHydratedTweetSelector(m) }
+            return { community: v, hydratedTweet: d.a.createHydratedTweetSelector(m) }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: l.c.fetchOneIfNeeded,
             }
           }),
         g = n('YeIG'),
         y = n('uCxL'),
         _ = n('x5Pi'),
         b = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
-        C = h(function (e) {
+        w = h(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             r = e.fetchCommunityIfNeeded,
             i = e.hydratedTweet,
             c = (e.tweetId, o()(e, b)),
-            l = s.a.useContext(u.a),
-            d = l.featureSwitches,
-            p = l.loggedInUserId,
+            d = s.a.useContext(u.a),
+            l = d.featureSwitches,
+            p = d.loggedInUserId,
             f = null == i ? void 0 : i.community_id_str
           s.a.useEffect(
             function () {
@@ -728,10 +728,10 @@
             },
             [t, f, n, r],
           )
-          var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
+          var m = l.isTrue('responsive_web_alt_text_badge_enabled'),
             v = i && Object(_.f)(i, p, t),
             h = v && Object(_.e)(v),
-            C = d.isTrue('responsive_web_reactions_enabled')
+            w = l.isTrue('responsive_web_reactions_enabled')
           return s.a.createElement(
             y.a,
             a()({}, c, {
@@ -739,11 +739,11 @@
               shouldShowAltLabelAlways: m,
               socialContextProps: h,
               tweet: i,
-              withReactions: C,
+              withReactions: w,
             }),
           )
         })
-      t.a = C
+      t.a = w
     },
     cIoY: function (e, t, n) {
       'use strict'
@@ -756,8 +756,8 @@
         }),
         s = n('VrFO'),
         u = n.n(s),
-        l = n('Y9Ll'),
-        d = n.n(l),
+        d = n('Y9Ll'),
+        l = n.n(d),
         p = n('1Pcy'),
         f = n.n(p),
         m = n('5Yy7'),
@@ -767,14 +767,14 @@
         y = n('KEM+'),
         _ = n.n(y),
         b = (n('ho0z'), n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('k/Ka')),
-        C = n('3XMw'),
-        E = n.n(C),
-        w = n('sgih'),
+        w = n('3XMw'),
+        C = n.n(w),
+        E = n('sgih'),
         x = n('t62R'),
         I = n('/yvb'),
         S = n('rHpw'),
-        T = E.a.cfd2f35d,
-        O = (function (e) {
+        O = C.a.cfd2f35d,
+        k = (function (e) {
           v()(n, e)
           var t = g()(n)
           function n() {
@@ -790,7 +790,7 @@
             )
           }
           return (
-            d()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -804,16 +804,16 @@
                       autoFocus: !0,
                       onFocus: this._handleOnFocus,
                       readOnly: !0,
-                      style: k.linkInput,
+                      style: T.linkInput,
                       value: i,
                     })
                   return a.a.createElement(
-                    w.a,
-                    { onMaskClick: o, style: k.container, type: 'center', withMask: !0 },
-                    r && a.a.createElement(x.b, { align: 'center', style: k.headerText, weight: 'bold' }, r),
-                    n && a.a.createElement(x.b, { align: 'center', color: 'gray700', style: k.labelText }, n),
+                    E.a,
+                    { onMaskClick: o, style: T.container, type: 'center', withMask: !0 },
+                    r && a.a.createElement(x.b, { align: 'center', style: T.headerText, weight: 'bold' }, r),
+                    n && a.a.createElement(x.b, { align: 'center', color: 'gray700', style: T.labelText }, n),
                     c,
-                    a.a.createElement(I.a, { onPress: o, size: 'xLarge', style: k.cancelButton, type: 'brandText' }, t),
+                    a.a.createElement(I.a, { onPress: o, size: 'xLarge', style: T.cancelButton, type: 'brandText' }, t),
                   )
                 },
               },
@@ -821,8 +821,8 @@
             n
           )
         })(a.a.Component)
-      _()(O, 'defaultProps', { cancelButtonLabel: T })
-      var k = S.a.create(function (e) {
+      _()(k, 'defaultProps', { cancelButtonLabel: O })
+      var T = S.a.create(function (e) {
           return {
             container: {
               alignItems: 'center',
@@ -844,21 +844,21 @@
             cancelButton: { width: '100%' },
           }
         }),
-        M = O,
+        M = k,
         P = n('I/9y'),
         D = n('mjJ+'),
         U = n('cm6r'),
         R = n('CaKu'),
         j = n('U+bB'),
-        A = E.a.e05c00b4,
-        L = E.a.eabf2209,
-        F = E.a.a613e72f,
-        V = E.a.f88553c8,
-        z = {
+        A = C.a.e05c00b4,
+        L = C.a.eabf2209,
+        F = C.a.a613e72f,
+        B = C.a.f88553c8,
+        V = {
           riffsy: 'https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png',
           giphy: 'https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png',
         },
-        B = (function (e) {
+        z = (function (e) {
           v()(n, e)
           var t = g()(n)
           function n(e) {
@@ -876,7 +876,7 @@
                 var t = r.props,
                   n = t.addToast,
                   a = t.gifUrl
-                R.a.isAvailable() ? (R.a.setString(a), n({ text: V })) : r.setState({ showCopyLinkSheet: !0 }), e && e()
+                R.a.isAvailable() ? (R.a.setString(a), n({ text: B })) : r.setState({ showCopyLinkSheet: !0 }), e && e()
               }),
               _()(f()(r), '_handleCopyLinkSheetCancel', function () {
                 r.setState({ showCopyLinkSheet: !1 })
@@ -886,7 +886,7 @@
             )
           }
           return (
-            d()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -896,7 +896,7 @@
                     r = t.provider,
                     i = r.display_name,
                     o = r.name,
-                    c = z[o]
+                    c = V[o]
                   return c
                     ? a.a.createElement(
                         a.a.Fragment,
@@ -911,9 +911,9 @@
                           : null,
                         a.a.createElement(
                           x.b,
-                          { align: 'center', color: 'gray700', style: H.root },
+                          { align: 'center', color: 'gray700', style: K.root },
                           a.a.createElement(
-                            E.a.I18NFormatMessage,
+                            C.a.I18NFormatMessage,
                             { $i18n: 'e2e6ea0d' },
                             this._renderAttribution(i, c),
                           ),
@@ -931,7 +931,7 @@
                     a.a.createElement(
                       x.b,
                       { weight: 'bold', withInteractiveStyling: !0 },
-                      a.a.createElement(j.a, { source: { uri: t }, style: H.image }),
+                      a.a.createElement(j.a, { source: { uri: t }, style: K.image }),
                       a.a.createElement(x.b, null, e.toUpperCase()),
                     ),
                   )
@@ -941,7 +941,7 @@
             n
           )
         })(a.a.PureComponent),
-        H = S.a.create(function (e) {
+        K = S.a.create(function (e) {
           return {
             button: { marginLeft: e.spaces.space12 },
             image: {
@@ -953,14 +953,14 @@
             root: { marginHorizontal: e.spaces.space12 },
           }
         }),
-        q = B,
-        K = c(function (e) {
+        q = z,
+        H = c(function (e) {
           var t = e.addToast,
             n = e.gifUrl,
             r = e.provider
           return a.a.createElement(q, { addToast: t, gifUrl: n, provider: r })
         })
-      t.a = K
+      t.a = H
     },
     dzqK: function (e, t, n) {
       'use strict'
@@ -985,9 +985,9 @@
         c = n('1Pcy'),
         s = n.n(c),
         u = n('5Yy7'),
-        l = n.n(u),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(u),
+        l = n('2VqO'),
+        p = n.n(l),
         f = n('KEM+'),
         m = n.n(f),
         v = (n('z84I'), n('KqXw'), n('3uku'), n('jwue'), n('7x/C'), n('+oxZ'), n('ho0z'), n('ERkP')),
@@ -996,9 +996,9 @@
         y = n.n(g),
         _ = n('RhWx'),
         b = n.n(_),
-        C = (n('wFPu'), n('CDB5')),
-        E = n('xVN5'),
-        w = n('vjRr'),
+        w = (n('wFPu'), n('CDB5')),
+        C = n('xVN5'),
+        E = n('vjRr'),
         x = n('rxPX'),
         I = n('0KEI'),
         S = function (e, t) {
@@ -1010,7 +1010,7 @@
           try {
             for (o.s(); !(r = o.n()).done; ) {
               var c = r.value
-              if ((n = w.a.select(e, c))) break
+              if ((n = E.a.select(e, c))) break
             }
           } catch (s) {
             o.e(s)
@@ -1019,7 +1019,7 @@
           }
           return n
         },
-        T = Object(x.a)()
+        O = Object(x.a)()
           .propsFromState(function () {
             return { card: S }
           })
@@ -1028,13 +1028,13 @@
               createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)(
                 'COMPOSER_CARD_PREVIEW',
               ),
-              fetchCardPreviewIfNeeded: w.a.fetchCardPreviewIfNeeded,
-              updateDMComposer: C.e,
-              updateTweetComposer: E.w,
+              fetchCardPreviewIfNeeded: E.a.fetchCardPreviewIfNeeded,
+              updateDMComposer: w.e,
+              updateTweetComposer: C.w,
             }
           }),
-        O = n('KqB4'),
-        k = n.n(O),
+        k = n('KqB4'),
+        T = n.n(k),
         M = n('aX4+'),
         P = n('3XMw'),
         D = n.n(P),
@@ -1044,19 +1044,19 @@
         A = n('v6aA'),
         L = n('/yvb'),
         F = n('rHpw'),
-        V = n('VY6S'),
-        z = n('mN6z'),
-        B = D.a.f6fec9f6,
-        H = /^https?:\/\//i,
+        B = n('VY6S'),
+        V = n('mN6z'),
+        z = D.a.f6fec9f6,
+        K = /^https?:\/\//i,
         q = function (e) {
-          var t = k()(e)
+          var t = T()(e)
           if (t.length)
             return t.map(function (e) {
-              return (!H.test(e) && 'http://'.concat(e)) || e
+              return (!K.test(e) && 'http://'.concat(e)) || e
             })
         },
-        K = (function (e) {
-          l()(n, e)
+        H = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n(e, r) {
             var i
@@ -1083,7 +1083,7 @@
                   c = (e || {}).cardUrl
                 i._isDMComposer ? n && a(n, c) : o({ updates: { cardUrl: c }, index: r })
               }),
-              (i._debouncedFetchCardPreview = Object(V.a)(i._fetchCardPreviewIfNeeded, 1e3)),
+              (i._debouncedFetchCardPreview = Object(B.a)(i._fetchCardPreviewIfNeeded, 1e3)),
               (i._isDMComposer = !!e.conversationId),
               i
             )
@@ -1100,7 +1100,7 @@
                 key: 'componentDidUpdate',
                 value: function (e) {
                   var t = this.props.urls
-                  Object(z.a)(e.urls, t) || this._debouncedFetchCardPreview()
+                  Object(V.a)(e.urls, t) || this._debouncedFetchCardPreview()
                 },
               },
               {
@@ -1128,7 +1128,7 @@
                           preventVideoPlayback: !0,
                         }),
                         h.a.createElement(L.a, {
-                          accessibilityLabel: B,
+                          accessibilityLabel: z,
                           icon: h.a.createElement(U.a, null),
                           onPress: this._handleCardPreviewDismissal,
                           size: 'xSmall',
@@ -1143,12 +1143,12 @@
             n
           )
         })(h.a.Component)
-      m()(K, 'contextType', A.a)
+      m()(H, 'contextType', A.a)
       var G = F.a.create(function (e) {
           return { closeButton: { position: 'absolute', top: e.spaces.space4, left: e.spaces.space4 } }
         }),
-        N = T(K)
-      t.a = N
+        W = O(H)
+      t.a = W
     },
     hiGS: function (e, t, n) {
       'use strict'
@@ -1194,8 +1194,8 @@
         c = n('ERkP'),
         s = n.n(c),
         u = n('t62R'),
-        l = n('I4+6'),
-        d = n('cm6r'),
+        d = n('I4+6'),
+        l = n('cm6r'),
         p = n('rHpw'),
         f = n('MWbm'),
         m = ['align', 'color', 'label'],
@@ -1216,7 +1216,7 @@
           r = e.color,
           i = e.label,
           c = o()(e, m),
-          h = l.a.generate({
+          h = d.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[r],
             insetFocusRing: !0,
@@ -1225,12 +1225,49 @@
           f.a,
           { style: v.container },
           s.a.createElement(
-            d.a,
+            l.a,
             a()({}, c, { interactiveStyles: h, style: v.root }),
             s.a.createElement(u.b, { align: n, color: r }, i),
           ),
         )
       }
+    },
+    kIAd: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return a
+      }),
+        n.d(t, 'b', function () {
+          return i
+        })
+      var r = n('0vv5'),
+        a = 500,
+        i = {
+          scoper: [
+            {
+              type: 'dmUserSearch',
+              regexp: /^[@＠]?(.*)|^$/,
+              srcInputs: ['compose_message'],
+              scope: { result_type: 'users', count: 20 },
+            },
+            {
+              type: 'username',
+              regexp: /^[@＠](\w{1,20})/,
+              srcInputs: ['compose'],
+              scope: { result_type: 'users', count: 20 },
+            },
+            { type: 'hashtag', regexp: n.n(r).a, srcInputs: ['compose'], scope: { result_type: 'topics', count: 20 } },
+            { type: 'topic', regexp: /(.+)/, srcInputs: ['search_box'], scope: { result_type: 'all' } },
+            {
+              type: 'ttt',
+              regexp: /(.+)/,
+              srcInputs: ['welcome_flow'],
+              scope: { count: 10, result_type: 'topics,ttt' },
+            },
+          ],
+          WordBoundary: /[!'%&'()*+,\\\-./:;<=>?[\]^{|}~\s]|$/,
+          WordEnd: /[^!'%&'()*+,\\\-./:;<=>?[\]^{|}~\s]+$/,
+        }
     },
     krmn: function (e, t, n) {
       'use strict'
@@ -1241,11 +1278,11 @@
         c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         s = n('RuTB'),
         u = n('3XMw'),
-        l = n.n(u),
-        d = Object(c.a)({
+        d = n.n(u),
+        l = Object(c.a)({
           loader: function () {
-            return l.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(17), n.e(207)]).then(n.bind(null, '5RdJ'))
+            return d.a.emoji.then(function () {
+              return Promise.all([n.e(0), n.e(16), n.e(208)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -1280,20 +1317,20 @@
             o.a.createElement(
               g.a,
               { style: [y.content, y.dimensions] },
-              o.a.createElement(d, { onSelect: t, partialRender: n, rowSize: 9, spriteUrl: r }),
+              o.a.createElement(l, { onSelect: t, partialRender: n, rowSize: 9, spriteUrl: r }),
             ),
             o.a.createElement(v.a, { source: r, style: y.hidden }),
           )
         },
         b = n('pNJr'),
-        C = n('2ZFc'),
-        E = n('OiMc'),
-        w = n('/yvb'),
-        x = l.a.d4a4842d,
+        w = n('2ZFc'),
+        C = n('OiMc'),
+        E = n('/yvb'),
+        x = d.a.d4a4842d,
         I = o.a.createElement(b.a, null),
-        S = l.a.fec16c1c,
-        T = { viewType: 'emoji_picker' },
-        O = function (e) {
+        S = d.a.fec16c1c,
+        O = { viewType: 'emoji_picker' },
+        k = function (e) {
           var t = e.disabled,
             n = e.onEmojiSelect,
             r = e.onPress,
@@ -1301,19 +1338,19 @@
             c = e.style,
             s = e.textInputRef,
             u = o.a.useState(!0),
-            l = a()(u, 2),
-            p = l[0],
-            f = l[1]
+            d = a()(u, 2),
+            p = d[0],
+            f = d[1]
           o.a.useEffect(function () {
             var e = setTimeout(function () {
-              d.preload(), C.a.get('emojiPicker2')
+              l.preload(), w.a.get('emojiPicker2')
             }, 5e3)
             return function () {
               clearTimeout(e)
             }
           }, [])
           return o.a.createElement(
-            E.a,
+            C.a,
             {
               enableEnterKeyToggle: !0,
               onAnimateComplete: function () {
@@ -1332,10 +1369,10 @@
               },
               withArrow: !0,
             },
-            o.a.createElement(w.a, {
+            o.a.createElement(E.a, {
               accessibilityHasPopup: 'menu',
               accessibilityLabel: x,
-              behavioralEventContext: T,
+              behavioralEventContext: O,
               disabled: t,
               hoverLabel: { label: S },
               icon: I,
@@ -1348,8 +1385,108 @@
             }),
           )
         }
-      O.defaultProps = { disabled: !1, size: 'xSmall' }
-      t.a = O
+      k.defaultProps = { disabled: !1, size: 'xSmall' }
+      t.a = k
+    },
+    oEoC: function (e, t, n) {
+      'use strict'
+      n.d(t, 'e', function () {
+        return d
+      }),
+        n.d(t, 'c', function () {
+          return l
+        }),
+        n.d(t, 'b', function () {
+          return p
+        }),
+        n.d(t, 'g', function () {
+          return f
+        }),
+        n.d(t, 'a', function () {
+          return m
+        }),
+        n.d(t, 'd', function () {
+          return v
+        }),
+        n.d(t, 'f', function () {
+          return g
+        })
+      var r = n('RhWx'),
+        a = n.n(r),
+        i = n('yiKp'),
+        o = n.n(i),
+        c =
+          (n('hBpG'),
+          n('7x/C'),
+          n('vrRf'),
+          n('KqXw'),
+          n('WNMA'),
+          n('M+/F'),
+          n('LJOr'),
+          n('tVqn'),
+          n('jwue'),
+          n('+oxZ'),
+          n('z84I'),
+          n('LW0h'),
+          n('2G9S'),
+          n('oQhu')),
+        s = n('kIAd'),
+        u = n('rHpw')
+      function d(e, t) {
+        var n,
+          r = s.b.scoper.find(function (r) {
+            if (-1 !== r.srcInputs.indexOf(t)) return (n = e.match(r.regexp))
+          }),
+          a = ''
+        return n && (a = n && (1 === n.length ? n[0] : n[1])), r ? o()(o()({}, r.scope), {}, { src: t, q: a }) : null
+      }
+      function l(e, t) {
+        var n = t.slice(0, e),
+          r = t.slice(e, t.length),
+          a = n.search(s.b.WordEnd),
+          i = a >= 0 ? n.slice(a) : '',
+          o = r.search(s.b.WordBoundary),
+          c = i + r.slice(0, o)
+        return c.trim() ? { start: a, end: e + o, word: c } : { start: -1, end: -1, word: '' }
+      }
+      function p() {
+        return 'typeaheadFocus-'.concat(Math.random())
+      }
+      function f(e) {
+        var t = e.altKey,
+          n = e.ctrlKey,
+          r = e.metaKey
+        return !(t || n || r)
+      }
+      function m(e, t) {
+        var n = []
+        e.forEach(function (e) {
+          var r = t.find(function (t) {
+            return t.id === e.id
+          })
+          r && r.data && r.data.result_context ? n.push(r) : n.push(e)
+        })
+        var r = n.map(function (e) {
+            return e.id
+          }),
+          i = t.filter(function (e) {
+            return r.indexOf(e.id) < 0
+          })
+        return [].concat(n, a()(i))
+      }
+      var v = Object(c.a)(function (e) {
+          return {
+            bottom: 0,
+            paddingBottom: 'calc(2.5 * '.concat(u.a.theme.spaces.space64, ')'),
+            position: 'fixed',
+            top: ''.concat(e, 'px'),
+            transform: [{ translate3d: '0,0,0' }],
+          }
+        }),
+        h = 0,
+        g = function () {
+          return 'typeaheadDropdown-'.concat((h += 1))
+        }
     },
     rFBM: function (e, t, n) {
       'use strict'
@@ -1360,9 +1497,9 @@
         c = n('1Pcy'),
         s = n.n(c),
         u = n('5Yy7'),
-        l = n.n(u),
-        d = n('2VqO'),
-        p = n.n(d),
+        d = n.n(u),
+        l = n('2VqO'),
+        p = n.n(l),
         f = n('KEM+'),
         m = n.n(f),
         v = (n('2G9S'), n('hCOa'), n('87if'), n('ERkP')),
@@ -1373,8 +1510,8 @@
         b = function (e) {
           return Object(y.a)('div', e)
         },
-        C = (function (e) {
-          l()(n, e)
+        w = (function (e) {
+          d()(n, e)
           var t = p()(n)
           function n() {
             var e
@@ -1411,7 +1548,7 @@
                     n = e.children,
                     r = e.style,
                     a = this.state.active,
-                    i = t ? E.dragBorderValid : E.dragBorderInvalid
+                    i = t ? C.dragBorderValid : C.dragBorderInvalid
                   return h.a.createElement(
                     b,
                     {
@@ -1419,9 +1556,9 @@
                       onDragLeave: this._handleDragLeave,
                       onDragOver: this._handleDragOver,
                       onDrop: this._handleDragDrop,
-                      style: [E.root, r, a && i],
+                      style: [C.root, r, a && i],
                     },
-                    h.a.createElement(_.a, { style: E.inner }, 'function' == typeof n ? n(a) : n),
+                    h.a.createElement(_.a, { style: C.inner }, 'function' == typeof n ? n(a) : n),
                   )
                 },
               },
@@ -1438,8 +1575,8 @@
             n
           )
         })(h.a.Component)
-      m()(C, 'defaultProps', { allowDragDrop: !0 })
-      var E = g.a.create(function (e) {
+      m()(w, 'defaultProps', { allowDragDrop: !0 })
+      var C = g.a.create(function (e) {
         return {
           root: { display: 'flex', flexDirection: 'column' },
           dragBorderValid: { borderStyle: 'dashed', borderWidth: e.spaces.space2, borderColor: e.colors.primary },
@@ -1447,7 +1584,7 @@
           inner: { flexGrow: 1 },
         }
       })
-      t.a = C
+      t.a = w
     },
     w3n3: function (e, t, n) {
       'use strict'
@@ -1458,8 +1595,8 @@
         c = n.n(o),
         s = n('3rWK'),
         u = n('Irs7'),
-        l = c.a.a4993fa1,
-        d = a.a.createElement(s.a, null),
+        d = c.a.a4993fa1,
+        l = a.a.createElement(s.a, null),
         p = c.a.i0db46e6,
         f = { viewType: 'gif_search' }
       t.a = function (e) {
@@ -1481,11 +1618,11 @@
             [t, h, o, c, s],
           )
         return a.a.createElement(i.a, {
-          accessibilityLabel: l,
+          accessibilityLabel: d,
           behavioralEventContext: f,
           disabled: !r,
           hoverLabel: { label: p },
-          icon: d,
+          icon: l,
           onPress: g,
           size: 'medium',
           style: m,
@@ -1532,8 +1669,8 @@
           n('oEoC')),
         s = n('1auM'),
         u = n('kIAd'),
-        l = n('VAyw'),
-        d = n('/Ikv'),
+        d = n('VAyw'),
+        l = n('/Ikv'),
         p = n('s1N3'),
         f = n('lnti'),
         m = function (e) {
@@ -1544,37 +1681,37 @@
             c = r.retweeted_status,
             s = c || r,
             u = s.entities,
-            d = s.unmentioned_user_ids,
+            l = s.unmentioned_user_ids,
             m = s.user,
             h = c ? c.user : {},
             g = c ? r.user : {},
             y = (null == u ? void 0 : u.user_mentions) || [],
-            _ = l.a.mergeTaggedUsers((null == u ? void 0 : u.media) || []),
+            _ = d.a.mergeTaggedUsers((null == u ? void 0 : u.media) || []),
             b = v(c || r) || {},
-            C = ((t = {}), o()(t, h.id_str, h), o()(t, g.id_str, g), o()(t, m.id_str, m), o()(t, b.id_str, b), t)
+            w = ((t = {}), o()(t, h.id_str, h), o()(t, g.id_str, g), o()(t, m.id_str, m), o()(t, b.id_str, b), t)
           y.forEach(function (e) {
-            C[e.id_str] = e
+            w[e.id_str] = e
           }),
             _.forEach(function (e) {
               var t = e.name,
                 n = e.screen_name,
                 r = e.user_id
-              C[r] = { id_str: r, name: t, screen_name: n }
+              w[r] = { id_str: r, name: t, screen_name: n }
             })
-          var E = function (e) {
-              var t = null == d ? void 0 : d.includes(e.id_str),
+          var C = function (e) {
+              var t = null == l ? void 0 : l.includes(e.id_str),
                 n = e.id_str === m.id_str
               return !t || n ? [e.id_str] : []
             },
-            w = Object(p.a)(
+            E = Object(p.a)(
               Object(f.a)(
                 [].concat(
-                  a()(E(h)),
-                  a()(E(g)),
+                  a()(C(h)),
+                  a()(C(g)),
                   [m.id_str],
                   a()(
                     y.flatMap(function (e) {
-                      return E(e)
+                      return C(e)
                     }),
                   ),
                   a()(
@@ -1587,14 +1724,14 @@
             ).filter(function (e) {
               return e !== i
             }),
-            x = i && m.id_str === i ? [i].concat(a()(w)) : w
+            x = i && m.id_str === i ? [i].concat(a()(E)) : E
           return (
             n &&
               (x = x.filter(function (e) {
                 return e !== m.id_str
               })),
             x.map(function (e) {
-              return C[e]
+              return w[e]
             })
           )
         },
@@ -1602,7 +1739,7 @@
           var t = e.card,
             n = null
           if (t) {
-            var r = d.a.getBindingValue(t.binding_values, 'site')
+            var r = l.a.getBindingValue(t.binding_values, 'site')
             r && t.users && (n = t.users[r.id_str])
           }
           return n

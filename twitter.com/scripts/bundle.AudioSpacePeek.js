@@ -1,1052 +1,1042 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [34, 8],
+  [35],
   {
-    '0nhk': function (e, t, n) {
+    '/x6e': function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return f
-      })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = (n('7xRU'), n('ERkP')),
-        o = n.n(i),
-        c = n('3XMw'),
-        s = n.n(c),
-        l = n('dgjd'),
-        u = n('/yvb'),
-        d = n('rHpw'),
-        p = n('fn9Y'),
-        m = n('I6Uj')
-      function f(e) {
-        var t = e.audioSpaceId,
-          n = e.type,
-          a = Object(l.a)(t),
-          r = a.space,
-          i = a.utils,
-          c = i.hashtags().join(' '),
-          s = h
-        'icon' === n ? (s = v) : 'icon-borderless' === n && (s = g)
-        var u = i.is.replayable ? void 0 : w.dmText,
-          d = Boolean(null == r ? void 0 : r.is_employee_only)
-        return o.a.createElement(
-          m.a.Custom,
-          { ButtonComponent: s, isFixed: e.isFixed, pullRight: e.pullRight, scribeNamespace: y, url: b(t) },
-          d ? null : o.a.createElement(m.a.Action, { scribeNamespace: S.tweet, shareText: c, type: 'tweet' }),
-          o.a.createElement(m.a.Action, { scribeNamespace: S.dm, shareText: u, type: 'dm' }),
-          o.a.createElement(m.a.Action, { scribeNamespace: S.copy, shareText: c, type: 'copy' }),
-          o.a.createElement(m.a.Action, { scribeNamespace: S.via, shareText: c, type: 'via' }),
-        )
+      var i = n('9Ulv'),
+        r = n('BR0S'),
+        a = n('tI3i'),
+        o = n.n(a)
+      function s(t, e) {
+        return (s =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
       }
-      function h(e) {
-        return o.a.createElement(
-          u.a,
-          r()({}, e, { borderColor: 'transparent', style: E.shareButton, type: 'primaryOutlined' }),
-          w.share,
-        )
-      }
-      function v(e) {
-        return o.a.createElement(u.a, r()({}, k, { type: 'primaryOutlined' }, e))
-      }
-      function g(e) {
-        return o.a.createElement(u.a, r()({}, k, e))
-      }
-      var b = function (e) {
-          return 'https://twitter.com/i/spaces/'.concat(e)
-        },
-        y = { page: 'audiospace', component: 'share_sheet' },
-        S = {
-          tweet: { element: 'send_tweet', action: 'click' },
-          dm: { element: 'send_dm', action: 'click' },
-          copy: { element: 'link', action: 'click' },
-          via: { element: void 0, action: 'impression' },
-        },
-        E = d.a.create(function (e) {
-          return { shareButton: { width: '100%' } }
-        }),
-        w = { share: s.a.ifea3114, dmText: s.a.c63dd2cb },
-        k = {
-          accessibilityLabel: w.share,
-          borderColor: 'transparent',
-          color: 'text',
-          hoverLabel: { label: w.share },
-          icon: o.a.createElement(p.a, null),
-          size: 'medium',
-        }
+      var c = 1,
+        u = (function (t) {
+          var e, n
+          function r(e) {
+            var n
+            n = t.call(this) || this
+            var r = e || { x: 0, y: 0 }
+            return (
+              'number' == typeof r.x && 'number' == typeof r.y
+                ? ((n.x = new i.a(r.x)), (n.y = new i.a(r.y)))
+                : (o()(
+                    r.x instanceof i.a && r.y instanceof i.a,
+                    'AnimatedValueXY must be initialized with an object of numbers or AnimatedValues.',
+                  ),
+                  (n.x = r.x),
+                  (n.y = r.y)),
+              (n._listeners = {}),
+              n
+            )
+          }
+          ;(n = t), ((e = r).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), s(e, n)
+          var a = r.prototype
+          return (
+            (a.setValue = function (t) {
+              this.x.setValue(t.x), this.y.setValue(t.y)
+            }),
+            (a.setOffset = function (t) {
+              this.x.setOffset(t.x), this.y.setOffset(t.y)
+            }),
+            (a.flattenOffset = function () {
+              this.x.flattenOffset(), this.y.flattenOffset()
+            }),
+            (a.extractOffset = function () {
+              this.x.extractOffset(), this.y.extractOffset()
+            }),
+            (a.__getValue = function () {
+              return { x: this.x.__getValue(), y: this.y.__getValue() }
+            }),
+            (a.resetAnimation = function (t) {
+              this.x.resetAnimation(), this.y.resetAnimation(), t && t(this.__getValue())
+            }),
+            (a.stopAnimation = function (t) {
+              this.x.stopAnimation(), this.y.stopAnimation(), t && t(this.__getValue())
+            }),
+            (a.addListener = function (t) {
+              var e = this,
+                n = String(c++),
+                i = function (n) {
+                  n.value
+                  t(e.__getValue())
+                }
+              return (this._listeners[n] = { x: this.x.addListener(i), y: this.y.addListener(i) }), n
+            }),
+            (a.removeListener = function (t) {
+              this.x.removeListener(this._listeners[t].x),
+                this.y.removeListener(this._listeners[t].y),
+                delete this._listeners[t]
+            }),
+            (a.removeAllListeners = function () {
+              this.x.removeAllListeners(), this.y.removeAllListeners(), (this._listeners = {})
+            }),
+            (a.getLayout = function () {
+              return { left: this.x, top: this.y }
+            }),
+            (a.getTranslateTransform = function () {
+              return [{ translateX: this.x }, { translateY: this.y }]
+            }),
+            r
+          )
+        })(r.a)
+      e.a = u
     },
-    '2C8o': function (e, t, n) {
+    '0m3q': function (t, e, n) {
       'use strict'
-      n.d(t, 'b', function () {
-        return g
-      }),
-        n.d(t, 'd', function () {
-          return b
-        }),
-        n.d(t, 'e', function () {
-          return y
-        }),
-        n.d(t, 'a', function () {
-          return L
-        }),
-        n.d(t, 'c', function () {
-          return R
-        })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ddV6'),
-        o = n.n(i),
-        c = n('RhWx'),
-        s = n.n(c),
-        l =
-          (n('2G9S'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('LW0h'),
-          n('Ee2X'),
-          n('vfdX'),
-          n('lZm3'),
-          n('z84I'),
-          n('i4UL'),
-          n('3voH'),
-          n('KqXw'),
-          n('MvUL'),
-          n('Q/sS')),
-        u = n('ERkP'),
-        d = n.n(u),
-        p = n('Chkh'),
-        m = n('Xda3'),
-        f = n('ssnq'),
-        h = new f.a({ liveCaptions: [], pastCaptions: [], currentCaptionSequenceId: 0 }),
-        v = h
-      function g() {
-        v.reset()
+      n.d(e, 'a', function () {
+        return p
+      })
+      var i = n('4LIG'),
+        r = n('tI3i'),
+        a = n.n(r)
+      function o(t, e) {
+        return (o =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
       }
-      function b() {
-        var e = l.o()
-        return (
-          d.a.useEffect(
-            function () {
-              if (e === l.c.On) {
-                var t = p.a.subscribe(m.a.ChatCaption, w),
-                  n = p.a.subscribe(m.a.ServerAudioTranscription, k)
-                return function () {
-                  t(), n()
+      var s = (function (t) {
+          var e, n
+          function i(e, n, i, r) {
+            var a
+            return ((a = t.call(this, n) || this).emitter = e), (a.listener = i), (a.context = r), a
+          }
+          return (
+            (n = t),
+            ((e = i).prototype = Object.create(n.prototype)),
+            (e.prototype.constructor = e),
+            o(e, n),
+            (i.prototype.remove = function () {
+              this.emitter.removeSubscription(this)
+            }),
+            i
+          )
+        })(
+          (function () {
+            function t(t) {
+              this.subscriber = t
+            }
+            return (
+              (t.prototype.remove = function () {
+                this.subscriber.removeSubscription(this)
+              }),
+              t
+            )
+          })(),
+        ),
+        c = (function () {
+          function t() {
+            this._subscriptionsForType = {}
+          }
+          var e = t.prototype
+          return (
+            (e.addSubscription = function (t, e) {
+              a()(e.subscriber === this, 'The subscriber of the subscription is incorrectly set.'),
+                this._subscriptionsForType[t] || (this._subscriptionsForType[t] = [])
+              var n = this._subscriptionsForType[t].length
+              return this._subscriptionsForType[t].push(e), (e.eventType = t), (e.key = n), e
+            }),
+            (e.removeAllSubscriptions = function (t) {
+              null == t ? (this._subscriptionsForType = {}) : delete this._subscriptionsForType[t]
+            }),
+            (e.removeSubscription = function (t) {
+              var e = t.eventType,
+                n = t.key,
+                i = this._subscriptionsForType[e]
+              i && delete i[n]
+            }),
+            (e.getSubscriptionsForType = function (t) {
+              return this._subscriptionsForType[t]
+            }),
+            t
+          )
+        })(),
+        u = function () {
+          return !0
+        },
+        l = new ((function () {
+          function t(t) {
+            this._subscriber = t || new c()
+          }
+          var e = t.prototype
+          return (
+            (e.addListener = function (t, e, n) {
+              return this._subscriber.addSubscription(t, new s(this, this._subscriber, e, n))
+            }),
+            (e.removeAllListeners = function (t) {
+              this._subscriber.removeAllSubscriptions(t)
+            }),
+            (e.removeSubscription = function (t) {
+              a()(t.emitter === this, 'Subscription does not belong to this emitter.'),
+                this._subscriber.removeSubscription(t)
+            }),
+            (e.listenerCount = function (t) {
+              var e = this._subscriber.getSubscriptionsForType(t)
+              return e ? e.filter(u).length : 0
+            }),
+            (e.emit = function (t) {
+              var e = this._subscriber.getSubscriptionsForType(t)
+              if (e) {
+                for (var n = arguments.length, i = new Array(n > 1 ? n - 1 : 0), r = 1; r < n; r++)
+                  i[r - 1] = arguments[r]
+                for (var a = 0, o = e.length; a < o; a++) {
+                  var s = e[a]
+                  s && s.listener && s.listener.apply(s.context, i)
                 }
               }
-            },
-            [e],
-          ),
-          h.useSlice(function (e) {
-            return [].concat(s()(e.pastCaptions), s()(e.liveCaptions))
-          })
-        )
-      }
-      function y() {
-        return h.useSlice(function (e) {
-          var t = e.liveCaptions,
-            n = e.pastCaptions
-          return 0 !== t.length || 0 !== n.length
-        })
-      }
-      function S(e) {
-        h.setState(function (t) {
-          e.filter(O).forEach(function (e) {
-            var n = e.body.body,
-              a = e.data.sender.twitter_id,
-              r = T(t, a)
-            ;-1 === r
-              ? C(t, e)
-              : (function (e, t) {
-                  var n = e.length < t.length ? { longer: t, shorter: e } : { longer: e, shorter: t },
-                    a = n.longer,
-                    r = n.shorter
-                  if (0 === a.length) return 1
-                  return (
-                    (a.length -
-                      (function () {
-                        for (
-                          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
-                            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '',
-                            n = Array(t.length + 1)
-                              .fill(null)
-                              .map(function () {
-                                return Array(e.length + 1).fill(null)
-                              }),
-                            a = 0;
-                          a <= e.length;
-                          a += 1
-                        )
-                          n[0][a] = a
-                        for (var r = 0; r <= t.length; r += 1) n[r][0] = r
-                        for (var i = 1; i <= t.length; i += 1)
-                          for (var o = 1; o <= e.length; o += 1) {
-                            var c = e[o - 1] === t[i - 1] ? 0 : 1
-                            n[i][o] = Math.min(n[i][o - 1] + 1, n[i - 1][o] + 1, n[i - 1][o - 1] + c)
-                          }
-                        return n[t.length][e.length]
-                      })(a, r)) /
-                    parseFloat(a.length)
-                  )
-                })(n, t.liveCaptions[r].text) > 0.1
-              ? x(t, e, r)
-              : P(t, e, r)
-          })
-        })
-      }
-      function E(e) {
-        h.setState(function (t) {
-          e.filter(O).forEach(function (e) {
-            var n = e.data.sender.twitter_id,
-              a = T(t, n)
-            e.body.final
-              ? (function (e, t, n) {
-                  var a,
-                    r = t.data.sender.twitter_id
-                  if (n > -1) {
-                    var i = e.liveCaptions.splice(n, 1)
-                    a = o()(i, 1)[0].sequenceId
-                  } else (e.currentCaptionSequenceId += 1), (a = e.currentCaptionSequenceId)
-                  var c = R(t, { final: !0, sequenceId: a })
-                  ;(e.pastCaptions = [].concat(s()(e.pastCaptions), [c])), I(e, r, t.timestamp)
-                })(t, e, a)
-              : -1 === a
-              ? C(t, e)
-              : !(function (e, t, n) {
-                  var a = !1,
-                    r = e.liveCaptions[n].text,
-                    i = t.body.body
-                  if (!t.body.final && i.length > 0 && r.length > 0) {
-                    a = i.length / r.length < 0.2
-                  }
-                  return a
-                })(t, e, a)
-              ? x(t, e, a)
-              : P(t, e, a)
-          })
-        })
-      }
-      function w(e) {
-        return S(e), { clearHeapForMessageType: !0 }
-      }
-      function k(e) {
-        return E(e), { clearHeapForMessageType: !0 }
-      }
-      function C(e, t) {
-        var n = t.data.sender.twitter_id
-        e.currentCaptionSequenceId += 1
-        var a = R(t, { sequenceId: e.currentCaptionSequenceId })
-        return e.liveCaptions.push(a), I(e, n, t.timestamp), a
-      }
-      function x(e, t, n) {
-        var a = e.liveCaptions.splice(n, 1),
-          r = o()(a, 1)[0],
-          i = R(t, { sequenceId: r.sequenceId, timestamp: r.timestamp })
-        return e.liveCaptions.push(i), i
-      }
-      function I(e, t, n) {
-        e.liveCaptions
-          .filter(function (e) {
-            return !(e.speaker.id_str === t) && n - e.timestamp > 250
-          })
-          .forEach(function (t) {
-            var n = e.liveCaptions.findIndex(function (e) {
-                return e.sequenceId === t.sequenceId
-              }),
-              a = e.liveCaptions.splice(n, 1),
-              r = o()(a, 1)[0]
-            e.pastCaptions.push(r)
-          })
-      }
-      function P(e, t, n) {
-        var a = t.data.sender.twitter_id,
-          r = e.liveCaptions.splice(n, 1),
-          i = o()(r, 1)[0]
-        ;(i.final = !0), (e.pastCaptions = [].concat(s()(e.pastCaptions), [i]))
-        var c = C(e, t)
-        return I(e, a, t.timestamp), c
-      }
-      function T(e, t) {
-        return e.liveCaptions.findIndex(function (e) {
-          return e.speaker.id_str === t
-        })
-      }
-      function O(e) {
-        var t = e.body.body
-        return !!t && t.length > 0
-      }
-      function L(e) {
-        var t = e.body.body,
-          n = e.type
-        return m.a.Chat === n && t.startsWith('[cc]')
-      }
-      function R(e, t) {
-        var n = e.body.final,
-          a = e.data,
-          i = a.sender,
-          o = a.sender.twitter_id,
-          c = e.timestamp,
-          s = e.body.body,
-          l = t.sequenceId
-        return (
-          (s = s.replace(/^\[cc\]\s?/, '')),
-          r()(
-            {
-              final: n,
-              sequenceId: l || c,
-              speaker: {
-                id_str: o,
-                name: i.display_name,
-                profile_image_url_https: i.profile_image_url,
-                screen_name: i.username,
-              },
-              text: s,
-              timestamp: c,
-            },
-            t,
-          )
-        )
-      }
-    },
-    '4EYz': function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return C
-      })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = (n('uFXj'), n('ERkP')),
-        s = n.n(c),
-        l = n('tM6R'),
-        u = n('fs1G'),
-        d = n('0nhk'),
-        p = n('MWbm'),
-        m = n('t62R'),
-        f = n('fzjU'),
-        h = n('/yvb'),
-        v = n('efqG'),
-        g = n('cm6r'),
-        b = n('rHpw'),
-        y = n('3XMw'),
-        S = n.n(y),
-        E = n('hOZg'),
-        w = n('7Mjr'),
-        k = ['audioSpaceId', 'dismiss', 'type']
-      function C(e) {
-        if (e.count < 1) return null
-        var t = { count: e.count, labelType: 'otherListeners' }
-        return s.a.createElement(
-          p.a,
-          { style: O.otherParticipantsWrapper },
-          s.a.createElement(
-            I,
-            e,
-            s.a.createElement(
-              p.a,
-              { style: O.otherParticipantsContainer },
-              s.a.createElement(
-                p.a,
-                { style: O.otherParticipantsText },
-                s.a.createElement(
-                  m.b,
-                  { size: T.fontSize, weight: 'bold' },
-                  s.a.createElement(f.a.ParticipantsCount, t),
-                ),
-              ),
-              s.a.createElement(P, e),
-            ),
-          ),
-        )
-      }
-      function x(e) {
-        var t = e.audioSpaceId,
-          n = e.dismiss,
-          a = e.type,
-          r = o()(e, k),
-          i = s.a.createElement(
-            s.a.Fragment,
-            null,
-            s.a.createElement(
-              p.a,
-              { style: O.popoverSheetDescription },
-              s.a.createElement(
-                m.b,
-                { color: 'gray700', size: 'body' },
-                s.a.createElement(
-                  S.a.I18NFormatMessage,
-                  { $i18n: 'b9c4cfcb' },
-                  s.a.createElement(m.b, { color: 'text', link: l.a.help, withUnderline: !0 }, S.a.g646959f),
-                ),
-              ),
-            ),
-            s.a.createElement(m.b, { size: 'body', weight: 'bold' }, L.shareWithPeople),
-            s.a.createElement(
-              p.a,
-              { style: O.popoverShareButtonContainer },
-              s.a.createElement(d.a, { audioSpaceId: t }),
-            ),
-          )
-        return 'popover' === a
-          ? s.a.createElement(
-              s.a.Fragment,
-              null,
-              s.a.createElement(
-                p.a,
-                { style: O.popoverTitle },
-                s.a.createElement(
-                  m.b,
-                  { size: 'title4', weight: 'heavy' },
-                  s.a.createElement(f.a.ParticipantsCount, r),
-                ),
-              ),
-              i,
-            )
-          : s.a.createElement(
-              s.a.Fragment,
-              null,
-              s.a.createElement(
-                p.a,
-                { style: O.popoverSheetTitleContainer },
-                s.a.createElement(
-                  p.a,
-                  { style: O.popoverSheetTitle },
-                  s.a.createElement(
-                    m.b,
-                    { size: 'headline2', weight: 'heavy' },
-                    s.a.createElement(f.a.ParticipantsCount, r),
-                  ),
-                ),
-                s.a.createElement(h.a, {
-                  accessibilityLabel: L.close,
-                  borderColor: 'transparent',
-                  color: 'text',
-                  hoverLabel: { label: L.close },
-                  icon: s.a.createElement(E.a, { style: O.popoverSheetClose }),
-                  onPress: n,
-                  size: 'medium',
-                }),
-              ),
-              i,
-            )
-      }
-      function I(e) {
-        if (!e.interactive) return e.children
-        var t = { count: e.count, labelType: 'otherListeners' }
-        return s.a.createElement(
-          v.a,
-          {
-            renderContent: function (n, a) {
-              return s.a.createElement(x, r()({ audioSpaceId: e.audioSpaceId, dismiss: n, type: a }, t))
-            },
-            withArrow: !0,
-            withDefaultContainer: !0,
-          },
-          s.a.createElement(
-            g.a,
-            { accessibilityLabel: f.a.ParticipantsCount.generateText(t), onPress: u.a },
-            e.children,
-          ),
-        )
-      }
-      function P(e) {
-        return e.interactive
-          ? s.a.createElement(p.a, { style: O.otherParticipantsArrow }, s.a.createElement(w.a, null))
-          : null
-      }
-      var T = { fontSize: 'body' },
-        O = b.a.create(function (e) {
-          var t = e.lineHeightsPx[T.fontSize],
-            n = {
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flex: 1,
-              paddingVertical: e.spacesPx.space12,
-              paddingLeft: e.spacesPx.space24,
-              paddingRight: e.spacesPx.space16,
-              borderWidth: e.borderWidthsPx.small,
-              borderRadius: e.borderRadiiPx.medium,
-              borderColor: e.colors.gray50,
-            },
-            a = { width: t, height: t, color: e.colors.text },
-            r = { marginVertical: e.spacesPx.space12 },
-            i = { color: e.colors.gray300, width: e.spacesPx.space24, height: e.spacesPx.space24 }
-          return {
-            otherParticipantsWrapper: { width: '100%' },
-            otherParticipantsContainer: n,
-            otherParticipantsText: { flex: 1 },
-            otherParticipantsArrow: a,
-            popoverTitle: r,
-            popoverSheetTitleContainer: {
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginVertical: e.spacesPx.space12,
-            },
-            popoverSheetTitle: { flex: 1 },
-            popoverSheetClose: i,
-            popoverSheetDescription: { marginTop: e.spacesPx.space16, marginBottom: e.spacesPx.space12 },
-            popoverShareButtonContainer: { marginVertical: e.spacesPx.space16 },
-          }
-        }),
-        L = { close: S.a.ia5e7487, share: S.a.ifea3114, shareWithPeople: S.a.i7f853ea }
-    },
-    '8A5z': function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
-        l = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            r()(
-              r()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [c.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            o.a.createElement(
-              'g',
-              null,
-              o.a.createElement('path', {
-                d: 'M9.008 15.205c-1.766 0-3.187-1.35-3.187-3.196v-.02c0-1.8 1.388-3.214 3.26-3.214 1.26 0 2.075.53 2.62 1.29L10.494 11c-.306-.42-.798-.695-1.357-.695-.93 0-1.684.754-1.684 1.684s.755 1.684 1.685 1.684c.578 0 1.087-.292 1.39-.735l1.22.87c-.583.802-1.368 1.394-2.737 1.394h-.002zm6.582 0c-1.764 0-3.185-1.35-3.185-3.196v-.02c0-1.8 1.386-3.214 3.258-3.214 1.262 0 2.075.53 2.622 1.29l-1.21.935c-.305-.42-.797-.694-1.356-.694-.93 0-1.685.754-1.685 1.684s.754 1.685 1.684 1.685c.577 0 1.086-.292 1.39-.735l1.22.87c-.584.803-1.37 1.395-2.738 1.395z',
-              }),
-              o.a.createElement('path', {
-                d: 'M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z',
-              }),
-            ),
-          )
-        }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    A7Vd: function (e, t, n) {
-      'use strict'
-      n.d(t, 'd', function () {
-        return o
-      }),
-        n.d(t, 'c', function () {
-          return c
-        }),
-        n.d(t, 'b', function () {
-          return s
-        }),
-        n.d(t, 'f', function () {
-          return l
-        }),
-        n.d(t, 'j', function () {
-          return u
-        }),
-        n.d(t, 'e', function () {
-          return d
-        }),
-        n.d(t, 'a', function () {
-          return p
-        }),
-        n.d(t, 'g', function () {
-          return m
-        }),
-        n.d(t, 'l', function () {
-          return f
-        }),
-        n.d(t, 'm', function () {
-          return h
-        }),
-        n.d(t, 'k', function () {
-          return v
-        }),
-        n.d(t, 'n', function () {
-          return g
-        }),
-        n.d(t, 'h', function () {
-          return b
-        }),
-        n.d(t, 'i', function () {
-          return y
-        })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i =
-          (n('+KXO'),
-          new (n('ssnq').a)({
-            id: null,
-            api: null,
-            state: null,
-            guests: { lookup: {}, signature: '' },
-            chatToken: null,
-          })),
-        o = i
-      function c(e, t, n) {
-        var a,
-          o = 'SPEAKERS',
-          c = { host: { audioLevel: 0 } }
-        if (n) {
-          c.host.audioLevel = S(n.audioLevels.host)
-          for (var s = Object.keys(n.guests), l = 0; l < s.length; l++) {
-            var u = s[l],
-              d = n.guests[u],
-              p = d.UserId,
-              m = S(n.audioLevels.guests[u])
-            ;(c[p] = { guest: d, audioLevel: m }), (o += '-'.concat(p))
-          }
-        }
-        var f = { signature: o, lookup: c },
-          h = (null === (a = t.tracks[t.currentTrackId]) || void 0 === a ? void 0 : a.chatToken) || null
-        i.setState(function (n) {
-          return r()(r()({}, n), {}, { id: e, state: t, guests: f, chatToken: h })
-        })
-      }
-      function s(e, t) {
-        i.setState(function (n) {
-          return r()(r()({}, n), {}, { id: e, api: t })
-        })
-      }
-      function l(e) {
-        return i.useSlice(function (t) {
-          var n = e.isHost ? 'host' : e.periscopeUserId
-          if (!n) return 0
-          var a = t.guests.lookup[n],
-            r = null == a ? void 0 : a.audioLevel
-          return 'number' == typeof r ? r : 0
-        })
-      }
-      function u() {
-        return i.useSlice(function (e) {
-          return e.guests.lookup
-        })
-      }
-      function d() {
-        var e = i.useSlice(
-          function (e) {
-            return e.guests.lookup
-          },
-          {
-            equalityFn: function (e, t, n, a) {
-              return n.guests.signature === a.guests.signature
-            },
-          },
-        )
-        return {
-          get: function (t) {
-            return e[t]
-          },
-        }
-      }
-      function p(e) {
-        var t,
-          n = e
-        return n || (n = i.getState().state), null === (t = n) || void 0 === t ? void 0 : t.tracks[n.currentTrackId]
-      }
-      function m() {
-        return o.useSlice(function (e) {
-          var t = e.state
-          return null == t ? void 0 : t.tracks[null == t ? void 0 : t.currentTrackId]
-        })
-      }
-      function f() {
-        return o.useSlice(function (e) {
-          var t = e.state
-          return Boolean(null == t ? void 0 : t.isSeeking)
-        })
-      }
-      function h() {
-        return o.useSlice(function (e) {
-          var t = e.state
-          return (null == t ? void 0 : t.playbackRate) || 1
-        })
-      }
-      function v() {
-        return o.useSlice(function (e) {
-          var t = e.state
-          return Boolean(null == t ? void 0 : t.isPlaying)
-        })
-      }
-      function g() {
-        return o.useSlice(function (e) {
-          return e.api
-        })
-      }
-      function b() {
-        return o.useSlice(function (e) {
-          var t
-          return null === (t = p(e.state)) || void 0 === t ? void 0 : t.durationMs
-        })
-      }
-      function y() {
-        return o.useSlice(function (e) {
-          var t
-          return null === (t = p(e.state)) || void 0 === t ? void 0 : t.currentTimeMs
-        })
-      }
-      function S(e) {
-        return e / 100
-      }
-    },
-    AMlz: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return c
-      })
-      var a = n('Q/sS'),
-        r = n('ERkP'),
-        i = n.n(r),
-        o = n('v6aA')
-      function c() {
-        var e = a.m(),
-          t = i.a.useContext(o.a).featureSwitches,
-          n = t.getNumberValue('voice_rooms_clip_duration')
-        return {
-          isCreationEnabled: e && t.isTrue('voice_rooms_clipping_enabled'),
-          durationMs: 1e3 * n,
-          durationSeconds: n,
-        }
-      }
-    },
-    BXJq: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return s
-      })
-      var a = n('ddV6'),
-        r = n.n(a),
-        i = (n('7x/C'), n('JtPf'), n('Qavd'), n('ERkP')),
-        o = n.n(i),
-        c = n('dgjd')
-      function s(e) {
-        var t = Object(c.a)(e),
-          n = t.handlers,
-          a = t.space,
-          i = o.a.useState(!1),
-          s = r()(i, 2),
-          l = s[0],
-          u = s[1],
-          d = { hasReminderSet: !1, onClick: void 0, scheduledStart: void 0 }
-        return (
-          (function (e) {
-            return e && e.host && e.scheduled_start && ('NotStarted' === e.state || 'PrePublished' === e.state)
-          })(a) &&
-            ((d.hasReminderSet = Boolean(null == a ? void 0 : a.is_subscribed)),
-            (d.onClick = function () {
-              var e = function () {
-                return u(!1)
-              }
-              u(!0), d.hasReminderSet ? n.unsubscribe().finally(e) : n.subscribe().finally(e)
             }),
-            (d.scheduledStart = null == a ? void 0 : a.scheduled_start)),
-          { props: d, isSubscribing: l }
-        )
-      }
-    },
-    Chkh: function (e, t, n) {
-      'use strict'
-      n.d(t, 'b', function () {
-        return m
-      })
-      var a = n('KEM+'),
-        r = n.n(a),
-        i = n('RhWx'),
-        o = n.n(i),
-        c = n('yiKp'),
-        s = n.n(c),
-        l =
-          (n('Ee2X'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('2G9S'),
-          n('z84I'),
-          n('LW0h'),
-          n('+KXO'),
-          n('6U7i'),
-          n('A7Vd')),
-        u = n('2C8o'),
-        d = n('Xda3'),
-        p = n('ssnq')
-      function m(e, t) {
-        var n,
-          a = 0,
-          r = e.length - 1,
-          i = -1,
-          o = -1
-        if (a > r) return -1
-        for (; a <= r; ) {
-          if (((o = t(e[(i = Math.floor((a + r) / 2))])), void 0 !== n && 0 !== o)) return n
-          o >= 0 ? (a = i + 1) : (r = i - 1), 0 === o && (n = i)
-        }
-        return void 0 !== n || o > 0 ? i : i - 1
-      }
-      t.a = new (function () {
-        var e,
-          t = !1,
-          n = 0,
-          a = 0,
-          i = 0,
-          c = 0,
-          f = {},
-          h = new p.a({})
-        function v() {
-          ;(t = !1), clearTimeout(e)
-        }
-        function g(e, t) {
-          if (Array.isArray(f[e])) {
-            var n = m(f[e], function (e) {
-              return t.ntpTimeInSeconds - e.ntpTimeInSeconds
-            })
-            f[e].splice(n + 1, 0, t)
-          } else f[e] = [t]
-        }
-        function b() {
-          !(function () {
-            function e() {
-              return Object.keys(f)
-                .filter(function (e) {
-                  return f[e] && f[e].length > 0
-                })
-                .map(function (e) {
-                  return Number(e)
-                })
-                .map(function (e) {
-                  return e
-                })
-            }
-            h.setState(function (t) {
-              var l = s()({}, t)
-              return (
-                a === n ? (i = n + (100 * (c += 1)) / 1e3) : ((c = 0), (i = a = n)),
-                e().forEach(function (e) {
-                  var n = f[e]
-                  if (n && 0 !== n.length) {
-                    var a = t[e] || [],
-                      c = m(n, function (e) {
-                        return i - e.ntpTimeInSeconds
-                      })
-                    if (!(c < 0)) {
-                      var u = n.splice(0, c + 1)
-                      l = s()(s()({}, l), {}, r()({}, e, [].concat(o()(a), o()(u))))
-                    }
-                  }
-                }),
-                l
-              )
-            })
-          })(),
-            t && (e = setTimeout(b, 100))
-        }
-        return (
-          l.d.subscribe(
-            function (e) {
-              var t,
-                n = e.state
-              return null == n || null === (t = n.tracks[n.currentTrackId]) || void 0 === t ? void 0 : t.id3NtpTime
-            },
-            function (e) {
-              e && (n = e)
-            },
-          ),
-          {
-            publish: function (e) {
-              setTimeout(function () {
-                !(function (e) {
-                  switch (e.type) {
-                    case d.a.Chat:
-                      Object(u.a)(e) && g(d.a.ChatCaption, e)
-                      break
-                    case d.a.ServerAudioTranscription:
-                    case d.a.Heart:
-                    case d.a.HydraControlMessage:
-                      g(e.type, e)
-                  }
-                })(e)
-              })
-            },
-            reset: function () {
-              for (var e in (v(), f)) delete f[e]
-              ;(n = 0), (a = 0), (i = 0), (c = 0), h.reset()
-            },
-            setCurrentNtpTimeSeconds: function (e) {
-              n = e
-            },
-            stacks: f,
-            start: function () {
-              ;(t = !0), b()
-            },
-            stop: v,
-            store: h,
-            subscribe: function (e, t) {
-              return h.subscribe(
-                function (t) {
-                  return t[e] || []
-                },
-                function (n) {
-                  var a
-                  n &&
-                    n.length > 0 &&
-                    t(n).clearHeapForMessageType &&
-                    ((a = e),
-                    h.setState(function (e) {
-                      return s()(s()({}, e), {}, r()({}, a, []))
-                    }))
-                },
-              )
-            },
+            (e.removeListener = function (t, e) {
+              var n = this._subscriber.getSubscriptionsForType(t)
+              if (n)
+                for (var i = 0, r = n.length; i < r; i++) {
+                  var a = n[i]
+                  a && a.listener === e && a.remove()
+                }
+            }),
+            t
+          )
+        })())(),
+        p = (function () {
+          function t(t) {
+            'ios' === i.a.OS &&
+              (a()(null != t, '`new NativeEventEmitter()` requires a non-null argument.'), (this._nativeModule = t))
           }
+          var e = t.prototype
+          return (
+            (e.addListener = function (t, e, n) {
+              var i,
+                r = this
+              null == (i = this._nativeModule) || i.addListener(t)
+              var a = l.addListener(t, e, n)
+              return {
+                remove: function () {
+                  var t
+                  null != a && (null == (t = r._nativeModule) || t.removeListeners(1), a.remove(), (a = null))
+                },
+              }
+            }),
+            (e.removeListener = function (t, e) {
+              var n
+              null == (n = this._nativeModule) || n.removeListeners(1), l.removeListener(t, e)
+            }),
+            (e.emit = function (t) {
+              for (var e = arguments.length, n = new Array(e > 1 ? e - 1 : 0), i = 1; i < e; i++)
+                n[i - 1] = arguments[i]
+              l.emit.apply(l, [t].concat(n))
+            }),
+            (e.removeAllListeners = function (t) {
+              var e
+              a()(null != t, '`NativeEventEmitter.removeAllListener()` requires a non-null argument.'),
+                null == (e = this._nativeModule) || e.removeListeners(this.listenerCount(t)),
+                l.removeAllListeners(t)
+            }),
+            (e.listenerCount = function (t) {
+              return l.listenerCount(t)
+            }),
+            t
+          )
+        })()
+    },
+    '7zxR': function (t, e, n) {
+      'use strict'
+      var i,
+        r = 0.1,
+        a = 'function' == typeof Float32Array
+      function o(t, e) {
+        return 1 - 3 * e + 3 * t
+      }
+      function s(t, e) {
+        return 3 * e - 6 * t
+      }
+      function c(t) {
+        return 3 * t
+      }
+      function u(t, e, n) {
+        return ((o(e, n) * t + s(e, n)) * t + c(e)) * t
+      }
+      function l(t, e, n) {
+        return 3 * o(e, n) * t * t + 2 * s(e, n) * t + c(e)
+      }
+      function p(t, e, n, i) {
+        if (!(t >= 0 && t <= 1 && n >= 0 && n <= 1)) throw new Error('bezier x values must be in [0, 1] range')
+        var o = a ? new Float32Array(11) : new Array(11)
+        if (t !== e || n !== i) for (var s = 0; s < 11; ++s) o[s] = u(s * r, t, n)
+        function c(e) {
+          for (var i = 0, a = 1; 10 !== a && o[a] <= e; ++a) i += r
+          --a
+          var s = i + ((e - o[a]) / (o[a + 1] - o[a])) * r,
+            c = l(s, t, n)
+          return c >= 0.001
+            ? (function (t, e, n, i) {
+                for (var r = e, a = 0; a < 4; ++a) {
+                  var o = l(r, n, i)
+                  if (0 === o) return r
+                  r -= (u(r, n, i) - t) / o
+                }
+                return r
+              })(e, s, t, n)
+            : 0 === c
+            ? s
+            : (function (t, e, n, i, r) {
+                var a,
+                  o,
+                  s = 0,
+                  c = e,
+                  l = n
+                do {
+                  ;(a = u((o = c + (l - c) / 2), i, r) - t) > 0 ? (l = o) : (c = o)
+                } while (Math.abs(a) > 1e-7 && ++s < 10)
+                return o
+              })(e, i, i + r, t, n)
+        }
+        return function (r) {
+          return t === e && n === i ? r : 0 === r ? 0 : 1 === r ? 1 : u(c(r), e, i)
+        }
+      }
+      var d = (function () {
+        function t() {}
+        return (
+          (t.step0 = function (t) {
+            return t > 0 ? 1 : 0
+          }),
+          (t.step1 = function (t) {
+            return t >= 1 ? 1 : 0
+          }),
+          (t.linear = function (t) {
+            return t
+          }),
+          (t.ease = function (e) {
+            return i || (i = t.bezier(0.42, 0, 1, 1)), i(e)
+          }),
+          (t.quad = function (t) {
+            return t * t
+          }),
+          (t.cubic = function (t) {
+            return t * t * t
+          }),
+          (t.poly = function (t) {
+            return function (e) {
+              return Math.pow(e, t)
+            }
+          }),
+          (t.sin = function (t) {
+            return 1 - Math.cos((t * Math.PI) / 2)
+          }),
+          (t.circle = function (t) {
+            return 1 - Math.sqrt(1 - t * t)
+          }),
+          (t.exp = function (t) {
+            return Math.pow(2, 10 * (t - 1))
+          }),
+          (t.elastic = function (t) {
+            void 0 === t && (t = 1)
+            var e = t * Math.PI
+            return function (t) {
+              return 1 - Math.pow(Math.cos((t * Math.PI) / 2), 3) * Math.cos(t * e)
+            }
+          }),
+          (t.back = function (t) {
+            return (
+              void 0 === t && (t = 1.70158),
+              function (e) {
+                return e * e * ((t + 1) * e - t)
+              }
+            )
+          }),
+          (t.bounce = function (t) {
+            if (t < 1 / 2.75) return 7.5625 * t * t
+            if (t < 2 / 2.75) {
+              var e = t - 1.5 / 2.75
+              return 7.5625 * e * e + 0.75
+            }
+            if (t < 2.5 / 2.75) {
+              var n = t - 2.25 / 2.75
+              return 7.5625 * n * n + 0.9375
+            }
+            var i = t - 2.625 / 2.75
+            return 7.5625 * i * i + 0.984375
+          }),
+          (t.bezier = function (t, e, n, i) {
+            return p(t, e, n, i)
+          }),
+          (t.in = function (t) {
+            return t
+          }),
+          (t.out = function (t) {
+            return function (e) {
+              return 1 - t(1 - e)
+            }
+          }),
+          (t.inOut = function (t) {
+            return function (e) {
+              return e < 0.5 ? t(2 * e) / 2 : 1 - t(2 * (1 - e)) / 2
+            }
+          }),
+          t
         )
       })()
+      e.a = d
     },
-    'Fg/a': function (e, t, n) {
+    '9Ulv': function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return j
+      var i = n('FGdj'),
+        r = n('BR0S'),
+        a = n('M6BN')
+      function o(t, e) {
+        return (o =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var s = n('XJEr').a.API
+      var c = (function (t) {
+        var e, n
+        function r(e) {
+          var n
+          if (((n = t.call(this) || this), 'number' != typeof e))
+            throw new Error('AnimatedValue: Attempting to set value to undefined')
+          return (n._startingValue = n._value = e), (n._offset = 0), (n._animation = null), n
+        }
+        ;(n = t), ((e = r).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), o(e, n)
+        var c = r.prototype
+        return (
+          (c.__detach = function () {
+            var e = this
+            this.__isNative &&
+              s.getValue(this.__getNativeTag(), function (t) {
+                e._value = t
+              }),
+              this.stopAnimation(),
+              t.prototype.__detach.call(this)
+          }),
+          (c.__getValue = function () {
+            return this._value + this._offset
+          }),
+          (c.setValue = function (t) {
+            this._animation && (this._animation.stop(), (this._animation = null)),
+              this._updateValue(t, !this.__isNative),
+              this.__isNative && s.setAnimatedNodeValue(this.__getNativeTag(), t)
+          }),
+          (c.setOffset = function (t) {
+            ;(this._offset = t), this.__isNative && s.setAnimatedNodeOffset(this.__getNativeTag(), t)
+          }),
+          (c.flattenOffset = function () {
+            ;(this._value += this._offset),
+              (this._offset = 0),
+              this.__isNative && s.flattenAnimatedNodeOffset(this.__getNativeTag())
+          }),
+          (c.extractOffset = function () {
+            ;(this._offset += this._value),
+              (this._value = 0),
+              this.__isNative && s.extractAnimatedNodeOffset(this.__getNativeTag())
+          }),
+          (c.stopAnimation = function (t) {
+            this.stopTracking(),
+              this._animation && this._animation.stop(),
+              (this._animation = null),
+              t && t(this.__getValue())
+          }),
+          (c.resetAnimation = function (t) {
+            this.stopAnimation(t), (this._value = this._startingValue)
+          }),
+          (c._onAnimatedValueUpdateReceived = function (t) {
+            this._updateValue(t, !1)
+          }),
+          (c.interpolate = function (t) {
+            return new i.a(this, t)
+          }),
+          (c.animate = function (t, e) {
+            var n = this,
+              i = null
+            t.__isInteraction && (i = a.a.createInteractionHandle())
+            var r = this._animation
+            this._animation && this._animation.stop(),
+              (this._animation = t),
+              t.start(
+                this._value,
+                function (t) {
+                  n._updateValue(t, !0)
+                },
+                function (t) {
+                  ;(n._animation = null), null !== i && a.a.clearInteractionHandle(i), e && e(t)
+                },
+                r,
+                this,
+              )
+          }),
+          (c.stopTracking = function () {
+            this._tracking && this._tracking.__detach(), (this._tracking = null)
+          }),
+          (c.track = function (t) {
+            this.stopTracking(), (this._tracking = t)
+          }),
+          (c._updateValue = function (e, n) {
+            if (void 0 === e) throw new Error('AnimatedValue: Attempting to set value to undefined')
+            var i, r
+            ;(this._value = e),
+              n &&
+                ((i = this),
+                (r = new Set()),
+                (function t(e) {
+                  'function' == typeof e.update ? r.add(e) : e.__getChildren().forEach(t)
+                })(i),
+                r.forEach(function (t) {
+                  return t.update()
+                })),
+              t.prototype.__callListeners.call(this, this.__getValue())
+          }),
+          (c.__getNativeConfig = function () {
+            return { type: 'value', value: this._value, offset: this._offset }
+          }),
+          r
+        )
+      })(r.a)
+      e.a = c
+    },
+    BR0S: function (t, e, n) {
+      'use strict'
+      var i = n('pxHa'),
+        r = n('XJEr')
+      function a(t, e) {
+        var n
+        if ('undefined' == typeof Symbol || null == t[Symbol.iterator]) {
+          if (
+            Array.isArray(t) ||
+            (n = (function (t, e) {
+              if (!t) return
+              if ('string' == typeof t) return o(t, e)
+              var n = Object.prototype.toString.call(t).slice(8, -1)
+              'Object' === n && t.constructor && (n = t.constructor.name)
+              if ('Map' === n || 'Set' === n) return Array.from(t)
+              if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return o(t, e)
+            })(t)) ||
+            (e && t && 'number' == typeof t.length)
+          ) {
+            n && (t = n)
+            var i = 0
+            return function () {
+              return i >= t.length ? { done: !0 } : { done: !1, value: t[i++] }
+            }
+          }
+          throw new TypeError(
+            'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
+          )
+        }
+        return (n = t[Symbol.iterator]()).next.bind(n)
+      }
+      function o(t, e) {
+        ;(null == e || e > t.length) && (e = t.length)
+        for (var n = 0, i = new Array(e); n < e; n++) i[n] = t[n]
+        return i
+      }
+      function s(t, e) {
+        return (s =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var c = (function (t) {
+        var e, n
+        function i() {
+          var e
+          return ((e = t.call(this) || this)._children = []), e
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), s(e, n)
+        var o = i.prototype
+        return (
+          (o.__makeNative = function () {
+            if (!this.__isNative) {
+              this.__isNative = !0
+              for (var e, n = a(this._children); !(e = n()).done; ) {
+                var i = e.value
+                i.__makeNative(), r.a.API.connectAnimatedNodes(this.__getNativeTag(), i.__getNativeTag())
+              }
+            }
+            t.prototype.__makeNative.call(this)
+          }),
+          (o.__addChild = function (t) {
+            0 === this._children.length && this.__attach(),
+              this._children.push(t),
+              this.__isNative &&
+                (t.__makeNative(), r.a.API.connectAnimatedNodes(this.__getNativeTag(), t.__getNativeTag()))
+          }),
+          (o.__removeChild = function (t) {
+            var e = this._children.indexOf(t)
+            ;-1 !== e &&
+              (this.__isNative &&
+                t.__isNative &&
+                r.a.API.disconnectAnimatedNodes(this.__getNativeTag(), t.__getNativeTag()),
+              this._children.splice(e, 1),
+              0 === this._children.length && this.__detach())
+          }),
+          (o.__getChildren = function () {
+            return this._children
+          }),
+          (o.__callListeners = function (e) {
+            if ((t.prototype.__callListeners.call(this, e), !this.__isNative))
+              for (var n, i = a(this._children); !(n = i()).done; ) {
+                var r = n.value
+                r.__getValue && r.__callListeners(r.__getValue())
+              }
+          }),
+          i
+        )
+      })(i.a)
+      e.a = c
+    },
+    BXJq: function (t, e, n) {
+      'use strict'
+      n.d(e, 'a', function () {
+        return c
       })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('1Pcy'),
-        s = n.n(c),
-        l = n('5Yy7'),
-        u = n.n(l),
-        d = n('2VqO'),
-        p = n.n(d),
-        m = n('KEM+'),
-        f = n.n(m),
-        h = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
-        v = n.n(h),
-        g = n('Pc/x'),
-        b = n('6/RC'),
+      var i = n('ddV6'),
+        r = n.n(i),
+        a = (n('7x/C'), n('JtPf'), n('Qavd'), n('ERkP')),
+        o = n.n(a),
+        s = n('dgjd')
+      function c(t) {
+        var e = Object(s.a)(t),
+          n = e.handlers,
+          i = e.space,
+          a = o.a.useState(!1),
+          c = r()(a, 2),
+          u = c[0],
+          l = c[1],
+          p = { hasReminderSet: !1, onClick: void 0, scheduledStart: void 0 }
+        return (
+          (function (t) {
+            return t && t.host && t.scheduled_start && ('NotStarted' === t.state || 'PrePublished' === t.state)
+          })(i) &&
+            ((p.hasReminderSet = Boolean(null == i ? void 0 : i.is_subscribed)),
+            (p.onClick = function () {
+              var t = function () {
+                return l(!1)
+              }
+              l(!0), p.hasReminderSet ? n.unsubscribe().finally(t) : n.subscribe().finally(t)
+            }),
+            (p.scheduledStart = null == i ? void 0 : i.scheduled_start)),
+          { props: p, isSubscribing: u }
+        )
+      }
+    },
+    BtOK: function (t, e, n) {
+      'use strict'
+      ;(function (t) {
+        var i = n('YRNd'),
+          r = n('XJEr')
+        function a(t, e) {
+          return (a =
+            Object.setPrototypeOf ||
+            function (t, e) {
+              return (t.__proto__ = e), t
+            })(t, e)
+        }
+        var o = (function (e) {
+          var n, i
+          function o(t) {
+            var n, i, a, o
+            return (
+              ((o = e.call(this) || this)._deceleration = null !== (n = t.deceleration) && void 0 !== n ? n : 0.998),
+              (o._velocity = t.velocity),
+              (o._useNativeDriver = Object(r.c)(t)),
+              (o.__isInteraction = null !== (i = t.isInteraction) && void 0 !== i ? i : !o._useNativeDriver),
+              (o.__iterations = null !== (a = t.iterations) && void 0 !== a ? a : 1),
+              o
+            )
+          }
+          ;(i = e), ((n = o).prototype = Object.create(i.prototype)), (n.prototype.constructor = n), a(n, i)
+          var s = o.prototype
+          return (
+            (s.__getNativeAnimationConfig = function () {
+              return {
+                type: 'decay',
+                deceleration: this._deceleration,
+                velocity: this._velocity,
+                iterations: this.__iterations,
+              }
+            }),
+            (s.start = function (t, e, n, i, r) {
+              ;(this.__active = !0),
+                (this._lastValue = t),
+                (this._fromValue = t),
+                (this._onUpdate = e),
+                (this.__onEnd = n),
+                (this._startTime = Date.now()),
+                this._useNativeDriver
+                  ? this.__startNativeAnimation(r)
+                  : (this._animationFrame = requestAnimationFrame(this.onUpdate.bind(this)))
+            }),
+            (s.onUpdate = function () {
+              var t = Date.now(),
+                e =
+                  this._fromValue +
+                  (this._velocity / (1 - this._deceleration)) *
+                    (1 - Math.exp(-(1 - this._deceleration) * (t - this._startTime)))
+              this._onUpdate(e),
+                Math.abs(this._lastValue - e) < 0.1
+                  ? this.__debouncedOnEnd({ finished: !0 })
+                  : ((this._lastValue = e),
+                    this.__active && (this._animationFrame = requestAnimationFrame(this.onUpdate.bind(this))))
+            }),
+            (s.stop = function () {
+              e.prototype.stop.call(this),
+                (this.__active = !1),
+                t.cancelAnimationFrame(this._animationFrame),
+                this.__debouncedOnEnd({ finished: !1 })
+            }),
+            o
+          )
+        })(i.a)
+        e.a = o
+      }.call(this, n('fRV1')))
+    },
+    FGdj: function (t, e, n) {
+      'use strict'
+      var i = n('BR0S'),
+        r = n('XJEr'),
+        a = n('tI3i'),
+        o = n.n(a),
+        s = n('q2a+'),
+        c = n.n(s)
+      function u(t, e) {
+        return (u =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      function l(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function p(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? l(Object(n), !0).forEach(function (e) {
+                d(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : l(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function d(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      var f = function (t) {
+        return t
+      }
+      function h(t) {
+        if (t.outputRange && 'string' == typeof t.outputRange[0])
+          return (function (t) {
+            var e = t.outputRange
+            o()(e.length >= 2, 'Bad output range'),
+              (function (t) {
+                for (var e = t[0].replace(v, ''), n = 1; n < t.length; ++n)
+                  o()(e === t[n].replace(v, ''), 'invalid pattern ' + t[0] + ' and ' + t[n])
+              })((e = e.map(_)))
+            var n = e[0].match(v).map(function () {
+              return []
+            })
+            e.forEach(function (t) {
+              t.match(v).forEach(function (t, e) {
+                n[e].push(+t)
+              })
+            })
+            var i = e[0].match(v).map(function (e, i) {
+                return h(p(p({}, t), {}, { outputRange: n[i] }))
+              }),
+              r = ((a = e[0]), 'string' == typeof a && a.startsWith('rgb'))
+            var a
+            return function (t) {
+              var n = 0
+              return e[0].replace(v, function () {
+                var e = +i[n++](t)
+                return r && (e = n < 4 ? Math.round(e) : Math.round(1e3 * e) / 1e3), String(e)
+              })
+            }
+          })(t)
+        var e = t.outputRange
+        m('outputRange', e)
+        var n = t.inputRange
+        m('inputRange', n),
+          (function (t) {
+            o()(t.length >= 2, 'inputRange must have at least 2 elements')
+            for (var e = 1; e < t.length; ++e)
+              o()(t[e] >= t[e - 1], 'inputRange must be monotonically non-decreasing ' + t)
+          })(n),
+          o()(
+            n.length === e.length,
+            'inputRange (' + n.length + ') and outputRange (' + e.length + ') must have the same length',
+          )
+        var i = t.easing || f,
+          r = 'extend'
+        void 0 !== t.extrapolateLeft ? (r = t.extrapolateLeft) : void 0 !== t.extrapolate && (r = t.extrapolate)
+        var a = 'extend'
+        return (
+          void 0 !== t.extrapolateRight ? (a = t.extrapolateRight) : void 0 !== t.extrapolate && (a = t.extrapolate),
+          function (t) {
+            o()('number' == typeof t, 'Cannot interpolation an input which is not a number')
+            var s = (function (t, e) {
+              var n
+              for (n = 1; n < e.length - 1 && !(e[n] >= t); ++n);
+              return n - 1
+            })(t, n)
+            return (function (t, e, n, i, r, a, o, s) {
+              var c = t
+              if (c < e) {
+                if ('identity' === o) return c
+                'clamp' === o && (c = e)
+              }
+              if (c > n) {
+                if ('identity' === s) return c
+                'clamp' === s && (c = n)
+              }
+              if (i === r) return i
+              if (e === n) return t <= e ? i : r
+              e === -1 / 0 ? (c = -c) : n === 1 / 0 ? (c -= e) : (c = (c - e) / (n - e))
+              ;(c = a(c)), i === -1 / 0 ? (c = -c) : r === 1 / 0 ? (c += i) : (c = c * (r - i) + i)
+              return c
+            })(t, n[s], n[s + 1], e[s], e[s + 1], i, r, a)
+          }
+        )
+      }
+      function _(t) {
+        var e = c()(t)
+        return null === e || 'number' != typeof e
+          ? t
+          : 'rgba(' +
+              ((4278190080 & (e = e || 0)) >>> 24) +
+              ', ' +
+              ((16711680 & e) >>> 16) +
+              ', ' +
+              ((65280 & e) >>> 8) +
+              ', ' +
+              (255 & e) / 255 +
+              ')'
+      }
+      var v = /[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g
+      function m(t, e) {
+        o()(e.length >= 2, t + ' must have at least 2 elements'),
+          o()(2 !== e.length || e[0] !== -1 / 0 || e[1] !== 1 / 0, t + 'cannot be ]-infinity;+infinity[ ' + e)
+      }
+      var g = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return ((i = t.call(this) || this)._parent = e), (i._config = n), (i._interpolation = h(n)), i
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), u(e, n)
+        var a = i.prototype
+        return (
+          (a.__makeNative = function () {
+            this._parent.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (a.__getValue = function () {
+            var t = this._parent.__getValue()
+            return (
+              o()('number' == typeof t, 'Cannot interpolate an input which is not a number.'), this._interpolation(t)
+            )
+          }),
+          (a.interpolate = function (t) {
+            return new i(this, t)
+          }),
+          (a.__attach = function () {
+            this._parent.__addChild(this)
+          }),
+          (a.__detach = function () {
+            this._parent.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (a.__transformDataType = function (t) {
+            return t.map(r.a.transformDataType)
+          }),
+          (a.__getNativeConfig = function () {
+            return {
+              inputRange: this._config.inputRange,
+              outputRange: this.__transformDataType(this._config.outputRange),
+              extrapolateLeft: this._config.extrapolateLeft || this._config.extrapolate || 'extend',
+              extrapolateRight: this._config.extrapolateRight || this._config.extrapolate || 'extend',
+              type: 'interpolation',
+            }
+          }),
+          i
+        )
+      })(i.a)
+      ;(g.__createInterpolation = h), (e.a = g)
+    },
+    'Fg/a': function (t, e, n) {
+      'use strict'
+      n.d(e, 'a', function () {
+        return L
+      })
+      var i = n('VrFO'),
+        r = n.n(i),
+        a = n('Y9Ll'),
+        o = n.n(a),
+        s = n('1Pcy'),
+        c = n.n(s),
+        u = n('5Yy7'),
+        l = n.n(u),
+        p = n('2VqO'),
+        d = n.n(p),
+        f = n('KEM+'),
+        h = n.n(f),
+        _ = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
+        v = n.n(_),
+        m = n('Pc/x'),
+        g = n('6/RC'),
         y = (n('KqXw'), n('WNMA'), n('Z5jE')),
-        S = n('rxPX'),
-        E = function (e, t) {
-          return Object(y.a)(t.match)
+        b = n('rxPX'),
+        O = function (t, e) {
+          return Object(y.a)(e.match)
         },
-        w = function (e) {
-          return function (t, n, a) {
-            return a.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
+        w = function (t) {
+          return function (e, n, i) {
+            return i.api.AudioSpaces.byId(t, { isMetatagsQuery: !0 })
           }
         },
-        k = Object(S.a)()
+        N = Object(b.a)()
           .propsFromState(function () {
-            return { broadcastId: E }
+            return { broadcastId: O }
           })
           .propsFromActions(function () {
             return { fetchAudioSpace: w }
           }),
-        C = (n('1t7P'), n('jQ/y'), n('3XMw')),
-        x = n.n(C),
-        I = n('rJoH'),
-        P = n('fzjU'),
-        T = n('Tg44')
-      function O(e) {
-        var t = e.space
-        if (!t) return null
-        var n = (function (e) {
-          var t = (function (e) {
-              var t,
+        E = (n('1t7P'), n('jQ/y'), n('3XMw')),
+        S = n.n(E),
+        P = n('rJoH'),
+        C = n('fzjU'),
+        j = n('Tg44')
+      function A(t) {
+        var e = t.space
+        if (!e) return null
+        var n = (function (t) {
+          var e = (function (t) {
+              var e,
                 n,
-                a,
+                i,
                 r,
-                i = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
-                o = i ? L.hostSpace({ name: i }) : L.hostSpaceFallback,
-                c = e.title || o,
-                s = L.descriptionGeneric,
-                l = (null == e ? void 0 : e.participants.total) || 0,
-                u = P.a.formatCountShort(l),
-                d = L.descriptionListening({ count: u })
-              if (e.state === T.a.SpaceState.Running)
-                (n = L.titleRunning({ spaceTitle: c })),
-                  (a = L.descriptionFormatRunning({ hostSpace: o, descriptionListening: d, descriptionGeneric: s })),
-                  (r = R.ttl.Frequent)
-              else if (e.state === T.a.SpaceState.NotStarted || e.state === T.a.SpaceState.PrePublished) {
-                var p = L.scheduledSpaceGeneric
-                ;(n = L.titleScheduled({ date: p, spaceTitle: c })),
-                  (a = L.descriptionFormatScheduled({ hostSpace: o, descriptionGeneric: s })),
-                  (r = R.ttl.Frequent)
+                a = null == t || null === (e = t.host) || void 0 === e ? void 0 : e.display_name,
+                o = a ? V.hostSpace({ name: a }) : V.hostSpaceFallback,
+                s = t.title || o,
+                c = V.descriptionGeneric,
+                u = (null == t ? void 0 : t.participants.total) || 0,
+                l = C.a.formatCountShort(u),
+                p = V.descriptionListening({ count: l })
+              if (t.state === j.a.SpaceState.Running)
+                (n = V.titleRunning({ spaceTitle: s })),
+                  (i = V.descriptionFormatRunning({ hostSpace: o, descriptionListening: p, descriptionGeneric: c })),
+                  (r = I.ttl.Frequent)
+              else if (t.state === j.a.SpaceState.NotStarted || t.state === j.a.SpaceState.PrePublished) {
+                var d = V.scheduledSpaceGeneric
+                ;(n = V.titleScheduled({ date: d, spaceTitle: s })),
+                  (i = V.descriptionFormatScheduled({ hostSpace: o, descriptionGeneric: c })),
+                  (r = I.ttl.Frequent)
               } else
-                (e.state !== T.a.SpaceState.Ended && e.state !== T.a.SpaceState.TimedOut) ||
-                !e.is_space_available_for_replay
-                  ? ((n = L.titleEnded({ spaceTitle: c })),
-                    (a = L.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
-                    (r = R.ttl.LongLivedCache))
-                  : ((n = L.titleRecording({ spaceTitle: c })),
-                    (a = L.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
-                    (r = R.ttl.LongLivedCache))
-              var m = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
-              return { title: n, canonical: m, description: a, ttl: r }
-            })(e),
-            n = t.canonical,
-            a = t.description,
-            r = t.title,
-            i = t.ttl
+                (t.state !== j.a.SpaceState.Ended && t.state !== j.a.SpaceState.TimedOut) ||
+                !t.is_space_available_for_replay
+                  ? ((n = V.titleEnded({ spaceTitle: s })),
+                    (i = V.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: c })),
+                    (r = I.ttl.LongLivedCache))
+                  : ((n = V.titleRecording({ spaceTitle: s })),
+                    (i = V.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: c })),
+                    (r = I.ttl.LongLivedCache))
+              var f = 'https://twitter.com/i/spaces/'.concat(t.rest_id)
+              return { title: n, canonical: f, description: i, ttl: r }
+            })(t),
+            n = e.canonical,
+            i = e.description,
+            r = e.title,
+            a = e.ttl
           return {
             type: 'website',
             canonical: n,
             title: r,
-            description: a,
-            image: R.image.url,
-            imageType: R.image.type,
-            imageW: R.image.width,
-            imageH: R.image.height,
-            imageAlt: R.image.alt,
-            ttl: i,
+            description: i,
+            image: I.image.url,
+            imageType: I.image.type,
+            imageW: I.image.width,
+            imageH: I.image.height,
+            imageAlt: I.image.alt,
+            ttl: a,
           }
-        })(t)
-        return v.a.createElement(I.a, n)
+        })(e)
+        return v.a.createElement(P.a, n)
       }
-      var L = {
-          twitterSpaces: x.a.gaa01f2c,
-          hostSpace: x.a.b6d3e0ee,
-          hostSpaceFallback: x.a.ab4fc8bb,
-          descriptionGeneric: x.a.fec3c1ef,
-          descriptionListeners: x.a.ce447fcb,
-          descriptionListening: x.a.ef7da97e,
-          scheduledSpaceGeneric: x.a.f8464691,
-          titleRunning: x.a.a065e7e7,
-          titleScheduled: x.a.hd5e7b20,
-          titleEnded: x.a.f826f7ee,
-          titleRecording: x.a.i8478ae7,
-          descriptionFormatRunning: x.a.b2a94e92,
-          descriptionFormatScheduled: x.a.f6432ce5,
-          descriptionFormatEnded: x.a.f6432ce5,
+      var V = {
+          twitterSpaces: S.a.gaa01f2c,
+          hostSpace: S.a.b6d3e0ee,
+          hostSpaceFallback: S.a.ab4fc8bb,
+          descriptionGeneric: S.a.fec3c1ef,
+          descriptionListeners: S.a.ce447fcb,
+          descriptionListening: S.a.ef7da97e,
+          scheduledSpaceGeneric: S.a.f8464691,
+          titleRunning: S.a.a065e7e7,
+          titleScheduled: S.a.hd5e7b20,
+          titleEnded: S.a.f826f7ee,
+          titleRecording: S.a.i8478ae7,
+          descriptionFormatRunning: S.a.b2a94e92,
+          descriptionFormatScheduled: S.a.f6432ce5,
+          descriptionFormatEnded: S.a.f6432ce5,
         },
-        R = {
+        I = {
           ttl: { Frequent: 300, LongLivedCache: 86400 },
           image: {
             type: 'image/jpeg',
             url: 'https://abs.twimg.com/sticky/cards/TwitterSpacesCardImage.2.jpg',
             width: 1200,
             height: 630,
-            alt: L.twitterSpaces,
+            alt: V.twitterSpaces,
           },
         },
-        _ = n('G8HL'),
-        M = (function (e) {
-          u()(n, e)
-          var t = p()(n)
+        k = n('G8HL'),
+        T = (function (t) {
+          l()(n, t)
+          var e = d()(n)
           function n() {
-            var e
+            var t
             r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
-            return (e = t.call.apply(t, [this].concat(i))), f()(s()(e), 'state', { space: null }), e
+            for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o]
+            return (t = e.call.apply(e, [this].concat(a))), h()(c()(t), 'state', { space: null }), t
           }
           return (
             o()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
-                  var e = this
+                  var t = this
                   this.props
                     .fetchAudioSpace(this.props.broadcastId)
                     .catch(function () {
                       return null
                     })
-                    .then(function (t) {
-                      !t || t instanceof Error || e.setState({ space: t })
+                    .then(function (e) {
+                      !e || e instanceof Error || t.setState({ space: e })
                     })
                 },
               },
@@ -1056,8 +1046,8 @@
                   return v.a.createElement(
                     v.a.Fragment,
                     null,
-                    v.a.createElement(z, this.props),
-                    v.a.createElement(O, { space: this.state.space }),
+                    v.a.createElement(x, this.props),
+                    v.a.createElement(A, { space: this.state.space }),
                   )
                 },
               },
@@ -1065,2054 +1055,148 @@
             n
           )
         })(v.a.Component)
-      function z(e) {
+      function x(t) {
         return (
           v.a.useEffect(function () {
-            b.canUseDOM && g.a.proxsee.login()
+            g.canUseDOM && m.a.proxsee.login()
           }, []),
-          e.children
+          t.children
         )
       }
-      var j = k(Object(_.a)(M))
+      var L = N(Object(k.a)(T))
     },
-    'G/+M': function (e, t, n) {
+    H5wF: function (t, e, n) {
       'use strict'
-      n.d(t, 'b', function () {
-        return d
-      }),
-        n.d(t, 'c', function () {
-          return p
-        }),
-        n.d(t, 'a', function () {
-          return m
-        }),
-        n.d(t, 'd', function () {
-          return f
-        })
-      var a = n('K1iM'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('v6aA'),
-        s = n('Chkh'),
-        l = n('Xda3'),
-        u = new (n('ssnq').a)({}),
-        d = u
-      function p(e) {
-        return u.useSlice(function (t) {
-          return e ? t[e] : null
-        })
-      }
-      function m(e) {
-        u.setState(function (t) {
-          var n
-          null === (n = t[e.participantId]) || void 0 === n || n.shift()
-        })
-      }
-      function f() {
-        var e = o.a.useContext(c.a).featureSwitches.isTrue('voice_rooms_expanded_dock_reactions')
-        o.a.useEffect(
-          function () {
-            if (e) {
-              var t = s.a.subscribe(l.a.Heart, h)
-              return function () {
-                t()
-              }
-            }
-          },
-          [e],
-        )
-      }
-      function h(e) {
-        return (
-          u.setState(function (t) {
-            var n,
-              a = r()(e)
-            try {
-              for (a.s(); !(n = a.n()).done; ) {
-                var i,
-                  o = v(n.value),
-                  c = o.reaction,
-                  s = o.sender
-                t[s.participantId] || (t[s.participantId] = []),
-                  null === (i = t[s.participantId]) || void 0 === i || i.push(c)
-              }
-            } catch (l) {
-              a.e(l)
-            } finally {
-              a.f()
-            }
-          }),
-          { clearHeapForMessageType: !0 }
-        )
-      }
-      function v(e) {
-        var t = e.data.sender.user_id
-        return {
-          reaction: { emoji: e.body.body, type: e.body.type, id: e.body.uuid, participantId: t },
-          sender: { participantId: t, twitterId: e.data.sender.twitter_id },
-        }
-      }
-    },
-    HmZq: function (e, t, n) {
-      'use strict'
-      n.r(t),
-        n.d(t, 'reset', function () {
-          return p
-        }),
-        n.d(t, 'getTranscript', function () {
-          return m
-        }),
-        n.d(t, 'insert', function () {
-          return f
-        }),
-        n.d(t, 'onCompleteHistory', function () {
-          return h
-        }),
-        n.d(t, 'seek', function () {
-          return v
-        }),
-        n.d(t, 'publishToQueue', function () {
-          return g
-        })
-      n('z84I'), n('LW0h'), n('7x/C'), n('jwue'), n('+oxZ'), n('Ee2X'), n('M+/F')
-      var a = n('2C8o'),
-        r = n('Q/sS'),
-        i = n('A7Vd'),
-        o = n('G/+M'),
-        c = n('b2fv'),
-        s = n('VY6S'),
-        l = n('Chkh'),
-        u = n('Xda3'),
-        d = []
-      function p() {
-        d = []
-      }
-      function m(e, t) {
-        return d
-          .filter(function (n) {
-            return (
-              n.type === u.a.ServerAudioTranscription &&
-              n.body.final &&
-              n.body.ntpTimeInSeconds >= e &&
-              n.body.ntpTimeInSeconds <= t &&
-              Boolean(n.body.body)
-            )
-          })
-          .map(function (e) {
-            return a.c(e, {})
-          })
-      }
-      function f() {
-        for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
-        t.forEach(function (e) {
-          var t = Object(l.b)(d, function (t) {
-            return e.ntpTimeInSeconds - t.ntpTimeInSeconds
-          })
-          d.splice(t + 1, 0, e)
-        })
-      }
-      function h() {
-        var e,
-          t = null === (e = i.a()) || void 0 === e ? void 0 : e.id3NtpTime
-        t && g(t)
-      }
-      var v = Object(s.a)(function (e) {
-        var t = r.i.getState().startTimeMs
-        if (t) {
-          var n = t + e
-          g(Object(c.a)(n))
-        }
-      }, 100)
-      function g(e) {
-        l.a.reset(), a.b(), o.b.reset()
-        var t = Object(l.b)(d, function (t) {
-          return e - t.ntpTimeInSeconds
-        })
-        d.slice(t).forEach(function (e) {
-          return l.a.publish(e)
-        }),
-          l.a.start()
-      }
-    },
-    ISLN: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return s
+      n.d(e, 'a', function () {
+        return i
       })
-      n('uFXj')
-      var a = n('ERkP'),
-        r = n.n(a),
-        i = n('cm6r'),
-        o = n('CDzS'),
-        c = n('rHpw')
-      function s(e) {
-        var t = e.accessibilityLabel,
-          n = e.children,
-          a = e.onPress,
-          c = e.style
-        return r.a.createElement(
-          i.a,
-          { accessibilityLabel: t, onPress: a, style: [l.button, c] },
-          r.a.createElement(o.a.Default, { style: l.gradient }, n),
-        )
-      }
-      s.getHeightPx = function (e) {
-        return e.spacesPx.space48
-      }
-      var l = c.a.create(function (e) {
-        return {
-          button: {
-            overflow: 'hidden',
-            width: '100%',
-            boxShadow: e.boxShadows.small,
-            height: s.getHeightPx(e),
-            borderRadius: e.spacesPx.space48,
-          },
-          gradient: { height: '100%', justifyContent: 'center', paddingHorizontal: e.spaces.space24 },
-        }
-      })
-    },
-    LxAE: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return ae
-      })
-      var a = {}
-      n.r(a),
-        n.d(a, 'buildPlayerProps', function () {
-          return G
-        }),
-        n.d(a, 'buildDockConfig', function () {
-          return X
-        })
-      var r = {}
-      n.r(r),
-        n.d(r, 'buildPlayerProps', function () {
-          return $
-        }),
-        n.d(r, 'buildDockConfig', function () {
-          return ee
-        })
-      var i = n('yiKp'),
-        o = n.n(i),
-        c = n('ddV6'),
-        s = n.n(c),
-        l = (n('849X'), n('TJCb'), n('Nsgw')),
-        u = n('OoQt'),
-        d = n('Xda3'),
-        p = n('ERkP'),
-        m = n.n(p),
-        f = n('QEWO'),
-        h = n('v6aA'),
-        v = n('HmZq'),
-        g = n('Q/sS'),
-        b = n('A7Vd'),
-        y = (n('jwue'), n('7x/C'), n('+oxZ'), n('VKFJ')),
-        S = n('MWbm'),
-        E = n('n7AW'),
-        w = n('rHpw'),
-        k = n('t62R')
-      function C(e) {
-        var t = (function (e) {
-          var t = m.a.useRef({ lastActive: { displayName: '', audioLevel: 0 } }),
-            n = Object(y.b)(e).speakers,
-            a = b.j(),
-            r = { displayName: '', audioLevel: 0 }
-          if (
-            (n.forEach(function (e) {
-              var t = y.b.isParticipantHost(e.kind) || !e.periscopeUserId ? 'host' : e.periscopeUserId,
-                n = a[t]
-              n &&
-                n.audioLevel > r.audioLevel &&
-                e.user.display_name &&
-                ((r.displayName = e.user.display_name), (r.audioLevel = n.audioLevel))
-            }),
-            r.audioLevel > 0)
-          )
-            return (t.current.lastActive = r), t.current.lastActive
-          if (t.current.lastActive.displayName) return o()(o()({}, t.current.lastActive), {}, { audioLevel: 0 })
-          var i = s()(n, 1)[0]
-          return o()(o()({}, r), {}, { displayName: i.user.display_name || '' })
-        })(e.audioSpaceId)
-        return m.a.createElement(x, t)
-      }
-      function x(e) {
-        var t = [I.activeSpeakerIndicatorName, 0 === e.audioLevel && I.activeSpeakerIndicatorNameInactive]
-        return m.a.createElement(
-          S.a,
-          { style: I.activeSpeakerIndicatorContainer },
-          m.a.createElement(E.a, {
-            audioLevel: e.audioLevel,
-            size: w.a.theme.spacesPx.space16,
-            withPersistZeroLevel: !0,
-          }),
-          m.a.createElement(k.b, { style: t }, e.displayName),
-        )
-      }
-      var I = w.a.create(function (e) {
-          return {
-            activeSpeakerIndicatorContainer: { flexDirection: 'row', alignItems: 'center', width: '100%' },
-            activeSpeakerIndicatorName: {
-              color: e.colors.purple500,
-              marginLeft: e.spacesPx.space4,
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-            },
-            activeSpeakerIndicatorNameInactive: { opacity: 0.6 },
-          }
-        }),
-        P = n('K1iM'),
-        T = n.n(P),
-        O = (n('KqXw'), n('3uku'), n('jQ3i'), n('x4t0'), n('1YZw')),
-        L = n('Chkh'),
-        R = n('3XMw'),
-        _ = n.n(R),
-        M = n('zCf4'),
-        z = n('dgjd'),
-        j = n('xZGM'),
-        H = n('uDfI')
-      function A(e) {
-        var t,
-          n,
-          a,
-          r = e.audioSpaceId,
-          i = e.isSideNavLayout
-        return (
-          (function (e) {
-            var t = Object(z.a)(e).utils,
-              n = g.p()
-            m.a.useEffect(
-              function () {
-                g.i.getState().isReplay || t.is.Running || n('exit')
-              },
-              [n, t.is.Running],
-            )
-          })(r),
-          (function (e) {
-            var t = Object(z.a)(e),
-              n = t.space,
-              a = t.utils,
-              r = b.h(),
-              i = b.n(),
-              o = null == n ? void 0 : n.replay_start_time,
-              c = (i || {}).scrubToFraction,
-              s = g.m()
-            m.a.useEffect(
-              function () {
-                return b.d.subscribe(
-                  function (e) {
-                    var t = e.state
-                    return null == t ? void 0 : t.isPlaying
-                  },
-                  function (e) {
-                    e ? L.a.start() : L.a.stop()
-                  },
-                )
-              },
-              [s],
-            ),
-              m.a.useEffect(
-                function () {
-                  a.is.replayable && a.is.joined && c && r && o && c((1e3 * o) / r)
-                },
-                [c, a.is.replayable, a.is.joined, o, r],
-              )
-          })(r),
-          (function (e) {
-            var t = g.q(),
-              n = g.p(),
-              a = Object(M.g)(),
-              r = a.key,
-              i = a.pathname,
-              o = m.a.useRef({ key: r, pathname: i })
-            m.a.useEffect(
-              function () {
-                if (!e) {
-                  if (o.current.key !== r) B.spaceUrl.test(o.current.pathname) || 'collapse' === t || n('collapse')
-                  ;(o.current.key = r), (o.current.pathname = i)
-                }
-              },
-              [r, i, e, n, t],
-            )
-          })(i),
-          (t = m.a.useContext(h.a).loggedInUserId),
-          (n = g.p()),
-          (a = Object(H.c)()),
-          m.a.useEffect(
-            function () {
-              function e(e) {
-                var r,
-                  i = T()(e)
-                try {
-                  for (i.s(); !(r = i.n()).done; ) {
-                    var o = r.value
-                    switch (o.body.guestBroadcastingEvent) {
-                      case d.b.RemoveParticipant:
-                        var c
-                        ;((null === (c = o.body) || void 0 === c ? void 0 : c.twitter_participant_ids) || []).includes(
-                          t,
-                        ) && (n('exit'), a(Object(O.b)({ text: N.removedFromSpace })))
-                    }
-                  }
-                } catch (s) {
-                  i.e(s)
-                } finally {
-                  i.f()
-                }
-                return { clearHeapForMessageType: !0 }
-              }
-              if (t) return L.a.subscribe(d.a.HydraControlMessage, e)
-            },
-            [t, n, a],
-          ),
-          (function () {
-            var e = Object(H.c)(),
-              t = g.k().openSheet,
-              n = g.q() === g.a.full,
-              a = Object(H.d)(D)
-            m.a.useEffect(
-              function () {
-                var r
-                return (
-                  n &&
-                    a &&
-                    (r = setTimeout(function () {
-                      t(g.b.generalNux), e(Object(j.z)(j.v))
-                    }, 2e3)),
-                  function () {
-                    return clearTimeout(r)
-                  }
-                )
-              },
-              [n, a],
-            )
-          })(),
-          null
-        )
-      }
-      var D = function (e) {
-        return Object(j.D)(e, j.v)
-      }
-      var B = { spaceUrl: /i\/spaces\/.+/ },
-        N = { removedFromSpace: _.a.jd859c9c },
-        F = n('fzjU'),
-        V = n('xVWt')
-      function U(e) {
-        var t = e.audioSpaceId,
-          n = Object(z.a)(t),
-          a = n.space,
-          r = n.utils,
-          i = r.title(),
-          o = (null == a ? void 0 : a.participants.total) || 0
-        return m.a.createElement(F.a, {
-          activeSpeakers: m.a.createElement(C, { audioSpaceId: t }),
-          isWide: e.isSideNavLayout,
-          onDockPress: function () {
-            e.onToggleCollapsed(), r.scribe(':audiospace::dock::click')
-          },
-          onRequestClose: function () {
-            e.onRequestClose(), r.scribe(':audiospace::dock:close:click')
-          },
-          title: i,
-          totalParticipants: o,
-          wideDockMaxWidth: e.width,
-        })
-      }
-      function W(e) {
-        var t = m.a.useContext(h.a).featureSwitches,
-          n = m.a.useState(!1),
-          a = s()(n, 2),
-          r = a[0],
-          i = a[1]
-        var c = o()(
-            o()({}, e),
-            {},
-            {
-              onToggleCollapsed: function () {
-                r || g.d(), i(q)
-              },
-            },
-          ),
-          l = t.isTrue('voice_rooms_expanded_dock') && !r
-        return m.a.createElement(
-          m.a.Fragment,
-          null,
-          m.a.createElement(U, c),
-          l ? m.a.createElement(V.a, c) : null,
-          m.a.createElement(A, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout }),
-        )
-      }
-      function q(e) {
-        return !e
-      }
-      function K(e) {
-        var t = s()(e.activeItem, 1)[0]
-        return t ? { activeItem: t } : null
-      }
-      function G(e) {
-        e.commonApi
-        var t = K(e.context)
-        if (!t) return { media: null }
-        var n = t.activeItem
-        return {
-          broadcastId: n.id,
-          disablePlaybackCoordination: !0,
-          mediaKey: n.mediaKey,
-          isLive: n.isLive,
-          onPlayerApi: function (e) {
-            b.b(n.id, e)
-          },
-          onPlayerState: function (e, t) {
-            b.c(n.id, e, t)
-          },
-        }
-      }
-      function X(e) {
-        var t = e.audioDockProps,
-          n = e.commonApi,
-          a = e.context,
-          r = (e.history, K(a))
-        if (!r) return null
-        var i = r.activeItem
-        return m.a.createElement(
-          W,
-          o()(
-            {
-              key: i.id,
-              audioSpaceId: i.id,
-              onRequestClose: function () {
-                n.clear(), v.reset(), g.i.reset()
-              },
-            },
-            t,
-          ),
-        )
-      }
-      n('tVqn'), n('MvUL')
-      var J = n('zrc3'),
-        Z = n('abiO'),
-        Y = n('pupE')
-      function Q(e) {
-        var t,
-          n = s()(e.activeItem, 1)[0],
-          a = e.hydrateVoiceTweetTrack(n.conversationId),
-          r = Object(J.a)(a.tweets, function (e) {
-            return e.id_str === n.id
-          }),
-          i = a.tweets[r]
-        if (!i) return null
-        var o = (null === (t = i.extended_entities) || void 0 === t ? void 0 : t.media) || [],
-          c = s()(o, 1)[0],
-          l = 'photo' !== (null == c ? void 0 : c.type) ? c : null
-        return { activeItem: n, track: a, media: l, activeIndex: r, activeTweet: i }
-      }
-      function $(e) {
-        var t = e.commonApi,
-          n = Q(e.context)
-        if (!n) return { media: null }
-        var a = n.activeIndex,
-          r = n.activeItem,
-          i = n.media,
-          o = n.track.tweets[a + 1]
-        return {
-          media: i,
-          requestedTimecode: r.startTimeMs,
-          onEnded: function () {
-            o && t.load.voiceTweet(o)
-          },
-        }
-      }
-      function ee(e) {
-        var t = e.audioDockProps,
-          n = e.commonApi,
-          a = e.context,
-          r = e.history,
-          i = s()(a.playerApi, 1)[0],
-          o = s()(a.playerState, 1)[0],
-          c = n.currentTrack
-        if (!o || !i || !c) return null
-        var l = Q(a)
-        if (!l) return null
-        var u = l.activeIndex,
-          d = l.activeTweet,
-          p = l.media,
-          f = l.track,
-          h = o.isMuted,
-          v = o.isPlaying,
-          g = o.isSeeking,
-          b = o.volume,
-          y = 0,
-          S = 0
-        te(f.tweets, function (e) {
-          var t = e.endMs
-          e.i === u - 1 && (S = t), (y = t)
-        })
-        var E = (p && p.id_str === c.contentId && c.currentTimeMs) || 0,
-          w = S + E,
-          k = null == p ? void 0 : p.url,
-          C = d.full_text,
-          x = k && C ? C.replace(k, '').trim() : C,
-          I = d.user
-        return m.a.createElement(Z.a, {
-          isWide: t.isSideNavLayout,
-          width: t.width,
-          isMuted: h,
-          isPlaying: v,
-          isSeeking: g,
-          progressMs: w,
-          durationMs: y,
-          volume: 100 * b,
-          title: x,
-          user: I,
-          onRequestClose: n.clear,
-          onTogglePlayback: n.togglePlayback,
-          onDockPress: function () {
-            return r.push(d.permalink)
-          },
-          onMuteToggle: n.toggleMute,
-          onVolumeChange: n.setVolume,
-          onSeek: function (e) {
-            te(f.tweets, function (t) {
-              var a = t.durationMs,
-                r = t.endMs,
-                o = t.i,
-                c = t.startMs,
-                s = t.tweet
-              if (e >= c && e <= r) {
-                var l = e - c
-                if (o === u) {
-                  var d = l / a
-                  i.scrubToFraction(d)
-                } else n.load.voiceTweet(s, l)
-                return !0
-              }
-            })
-          },
-        })
-      }
-      function te(e, t) {
-        for (var n = 0, a = 0; a < e.length; a++) {
-          var r = e[a],
-            i = Y.a.getVoiceTweetDuration(r),
-            o = n + i
-          if (t({ i: a, tweet: r, startMs: n, endMs: o, durationMs: i })) break
-          n = o
-        }
-      }
-      var ne = { default: { buildDockConfig: n('0zXz').a }, space: a, voiceTweet: r }
-      function ae() {
-        var e = m.a.useRef({}),
-          t = m.a.useContext(h.a).history,
-          n = m.a.useContext(u.a),
-          a = s()(n.activeItem, 2),
-          r = a[0],
-          i = a[1],
-          c = s()(n.playerApi, 2),
-          p = c[0],
-          v = c[1],
-          g = s()(n.playerState, 2),
-          b = g[0],
-          y = g[1],
-          S = s()(n.guestsState, 2),
-          E = S[0],
-          w = S[1],
-          k = re(b)
-        ;(e.current.playerApi = p), (e.current.playerState = b)
-        var C = m.a.useMemo(
-            function () {
-              return function () {
-                d.c(), i(null)
-              }
-            },
-            [i],
-          ),
-          x = m.a.useMemo(function () {
-            return function () {
-              var t = e.current,
-                n = t.playerApi,
-                a = t.playerState
-              n && a && (a.isPlaying ? n.pause : n.play)()
-            }
-          }, []),
-          I = m.a.useMemo(function () {
-            return function () {
-              var t = e.current,
-                n = t.playerApi,
-                a = t.playerState
-              n && a && (a.isMuted ? n.unmute : n.mute)()
-            }
-          }, []),
-          P = {
-            space: function (e, t, n) {
-              i({ type: f.a.space, id: e, mediaKey: t, isLive: n })
-            },
-            voiceTweet: function (e, t) {
-              i({ type: f.a.voiceTweet, id: e.id_str, conversationId: l.a(e), startTimeMs: t })
-            },
-          },
-          T = {
-            load: P,
-            clear: C,
-            currentTrack: k,
-            toggleMute: I,
-            togglePlayback: x,
-            setVolume: m.a.useMemo(function () {
-              return function (t) {
-                var n = e.current.playerApi
-                n && n.setVolume(t / 100)
-              }
-            }, []),
-          }
-        return {
-          activeItem: r,
-          load: P,
-          clear: C,
-          player: { api: p, state: b, guests: E, currentTrack: k, toggleMute: I, togglePlayback: x },
-          config: {
-            dock: function (e) {
-              if (!r) return ne.default.buildDockConfig()
-              switch (r.type) {
-                case f.a.space:
-                  return ne.space.buildDockConfig({ history: t, context: n, commonApi: T, audioDockProps: e })
-                case f.a.voiceTweet:
-                  return ne.voiceTweet.buildDockConfig({ history: t, context: n, commonApi: T, audioDockProps: e })
-                default:
-                  return ne.default.buildDockConfig()
-              }
-            },
-            player: function () {
-              var e,
-                t = {
-                  media: null,
-                  onPlayerApi: function (e) {
-                    v(e)
-                  },
-                  onPlayerState: function (e, t) {
-                    y(e), t && w(t)
-                  },
-                }
-              if (!r) return t
-              switch (r.type) {
-                case f.a.space:
-                  e = ne.space.buildPlayerProps({ context: n, commonApi: T })
-                  break
-                case f.a.voiceTweet:
-                  e = ne.voiceTweet.buildPlayerProps({ context: n, commonApi: T })
-                  break
-                default:
-                  throw new Error('[AudioContext:Player] unhandled active item type ['.concat(r.type, ']'))
-              }
-              return o()(o()({}, t), e)
-            },
-          },
-          audioSpaces: { cache: n.audioSpaceCache },
-        }
-      }
-      var re = function (e) {
-        return e && e.tracks[e.currentTrackId]
+      n('tI3i')
+      function i(t) {
+        return null
       }
     },
-    O07O: function (e, t, n) {
+    MQi0: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return N
-      })
-      var a = n('HmZq'),
-        r = n('Q/sS'),
-        i = n('A7Vd'),
-        o = n('ERkP'),
-        c = n.n(o),
-        s = n('tI3i'),
-        l = n.n(s),
-        u = n('fs1G'),
-        d = n('/yvb'),
-        p = n('rHpw')
-      function m(e) {
-        return (
-          l()(e.accessibilityLabel, 'ControlButton must have an accessibilityLabel'),
-          c.a.createElement(d.a, {
-            accessibilityLabel: e.accessibilityLabel,
-            backgroundColor: 'transparent',
-            borderColor: 'transparent',
-            color: 'text',
-            disabled: e.disabled,
-            hoverLabel: { label: e.accessibilityLabel },
-            icon: e.icon,
-            onPress: e.onPress || u.a,
-            renderMenu: e.renderMenu,
-            size: e.size || 'medium',
-            style: f.button,
-          })
-        )
+      function i(t) {
+        return 3.62 * (t - 30) + 194
       }
-      var f = p.a.create(function (e) {
-          return { button: { height: '100%' } }
-        }),
-        h = n('3XMw'),
-        v = n.n(h),
-        g = (n('z84I'), n('akpX')),
-        b = n('dgjd'),
-        y = n('MWbm'),
-        S = n('mjJ+'),
-        E = n('t62R')
-      function w(e) {
-        var t = Object(b.a)(e.audioSpaceId).utils,
-          n = i.m(),
-          a = x.map(function (e) {
-            var a = e.rate
-            return {
-              text: e.text,
-              disabled: n === a,
-              onClick: function () {
-                t.scribe(':audiospace:replay:recording:speed:click')
-                var e = i.d.getState().api
-                e && e.setPlaybackRate(a)
-              },
-            }
-          })
-        return c.a.createElement(m, {
-          accessibilityLabel: C.accessibility({ rate: ''.concat(n) }),
-          icon: c.a.createElement(w.Icon, { playbackRate: n }),
-          renderMenu: function (e) {
-            return c.a.createElement(S.a, { isFixed: !0, items: a, onCloseRequested: e, shouldCloseOnClick: !0 })
-          },
-        })
+      function r(t) {
+        return 3 * (t - 8) + 25
       }
-      w.Icon = function (e) {
-        var t = e.playbackRate
-        return c.a.createElement(
-          y.a,
-          { style: k.playbackRateIcon },
-          c.a.createElement(E.b, { style: k.playbackRateIconText, weight: 'normal' }, t),
-          c.a.createElement(g.a, { style: k.playbackRateIconSvg }),
-        )
-      }
-      var k = p.a.create(function (e) {
-          return {
-            playbackRateIcon: { flexDirection: 'row', alignItems: 'center' },
-            playbackRateIconText: { marginRight: e.spaces.space2 },
-            playbackRateIconSvg: { height: e.spaces.space8 },
-          }
-        }),
-        C = { accessibility: v.a.e07f6e7d },
-        x = [
-          { text: v.a.jd04fc65, rate: 0.5 },
-          { text: v.a.f03848b8, rate: 1 },
-          { text: v.a.j0e5c2cd, rate: 1.5 },
-          { text: v.a.b3f2318d, rate: 2 },
-        ],
-        I = n('Pl95'),
-        P = n('0nhk'),
-        T = n('AMlz'),
-        O = n('5Ixf'),
-        L = n('AtEG'),
-        R = n('yiKp'),
-        _ = n.n(R),
-        M = n('Lsrn'),
-        z = n('k/Ka'),
-        j = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
-            'svg',
-            _()(
-              _()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [M.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            c.a.createElement(
-              'g',
-              null,
-              c.a.createElement('path', {
-                d: 'M19.837 19.076C17.928 21.639 14.978 23 11.979 23c-2.009 0-4.029-.616-5.768-1.887-2.099-1.53-3.469-3.785-3.849-6.338-.39-2.553.25-5.096 1.79-7.172 1.79-2.404 4.589-3.824 7.548-3.914l-1.43-1.41c-.29-.298-.29-.765 0-1.063.29-.288.77-.288 1.06 0l2.779 2.762c.14.139.22.328.22.526 0 .199-.08.388-.22.527L11.54 7.574c-.14.149-.33.219-.53.219-.19 0-.38-.069-.53-.219-.29-.288-.29-.765 0-1.053l1.36-1.351C9.3 5.219 6.9 6.431 5.361 8.487c-1.31 1.758-1.849 3.914-1.52 6.069.33 2.155 1.48 4.063 3.259 5.354 3.659 2.682 8.828 1.907 11.527-1.719 1.869-2.503 2.139-5.781.72-8.553-.19-.368-.04-.825.33-1.003.37-.189.82-.04 1.01.328 1.679 3.279 1.349 7.153-.85 10.113z',
-              }),
-              c.a.createElement('path', {
-                d: 'M15.928 14.368c0 .417-.09.794-.27 1.112-.17.328-.43.576-.76.755-.33.179-.71.268-1.15.268-.57 0-1.05-.129-1.43-.397-.38-.258-.62-.626-.71-1.083l-.02-.099 1.14-.228.02.099c.05.228.16.407.33.536.18.139.41.199.69.199.32 0 .56-.089.74-.288.18-.199.27-.477.27-.834 0-.368-.09-.676-.27-.884-.17-.209-.41-.308-.74-.308-.52 0-.84.239-.99.725l-.02.08-1.06-.099.36-3.447h3.579v.973h-2.689l-.14 1.262c.1-.099.22-.189.36-.259.24-.119.53-.179.85-.179.59 0 1.06.189 1.4.566.34.377.51.894.51 1.53zm-5.459-3.894v5.91H9.31v-4.162c-.08.05-.17.099-.28.129-.2.07-.4.099-.59.099h-.38v-1.053h.28c.28 0 .53-.08.73-.219.19-.139.33-.358.41-.636l.02-.069h.969zm4.311-2.681c-.192 0-.385-.073-.531-.219-.292-.292-.291-.763.001-1.054l2.037-2.018-2.249-2.228c-.293-.291-.294-.762-.001-1.054.292-.29.767-.292 1.061-.001l2.781 2.755c.141.14.22.33.22.528s-.079.388-.22.528L15.31 7.576c-.147.145-.338.217-.53.217z',
-              }),
-            ),
-          )
-        }
-      j.metadata = { width: 24, height: 24 }
-      var H = j,
-        A = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(z.a)(
-            'svg',
-            _()(
-              _()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [M.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            c.a.createElement(
-              'g',
-              null,
-              c.a.createElement('path', {
-                d: 'M23.284 16.22c-.062-.063-.134-.114-.213-.15l-9.183-4.32 9.182-4.32c.374-.176.535-.622.36-.997-.037-.08-.088-.15-.15-.213l-.9-.9c-1.107-1.1-2.777-1.403-4.2-.764l-6.565 2.98c-.943.43-1.564 1.353-1.607 2.39l-2.133-1c1.475-1.45 1.494-3.822.044-5.297-1.45-1.476-3.822-1.495-5.297-.045-1.475 1.45-1.494 3.82-.044 5.296.703.717 1.666 1.12 2.67 1.12.354-.005.704-.06 1.042-.166L10 11.58v.34l-3.708 1.746c-.338-.105-.688-.16-1.042-.166-2.078-.007-3.767 1.672-3.774 3.75-.007 2.078 1.672 3.767 3.75 3.774 2.078.007 3.767-1.672 3.774-3.75.003-1.013-.402-1.985-1.125-2.695l2.133-1c.043 1.035.664 1.96 1.607 2.39l6.568 2.976c.484.22 1.01.333 1.54.332.997 0 1.953-.396 2.66-1.1l.9-.9c.292-.292.293-.766 0-1.06zM5.25 8.5C4.007 8.5 3 7.493 3 6.25 3.002 5.008 4.008 4.002 5.25 4 6.493 4 7.5 5.007 7.5 6.25S6.493 8.5 5.25 8.5zm0 11C4.007 19.5 3 18.493 3 17.25S4.007 15 5.25 15c1.242.002 2.248 1.008 2.25 2.25 0 1.243-1.007 2.25-2.25 2.25zm6.25-9.46c0-.49.287-.937.734-1.14L18.8 5.924c.29-.132.605-.2.924-.2.6-.002 1.175.234 1.6.657l.144.145-9.968 4.69V10.04zm9.82 7.077c-.663.658-1.664.84-2.518.458L12.234 14.6c-.447-.203-.734-.65-.734-1.14v-.587l.625-.294 9.34 4.394-.144.143z',
-              }),
-            ),
-          )
-        }
-      A.metadata = { width: 24, height: 24 }
-      var D = A,
-        B = n('abiO')
-      function N(e) {
-        var t = Object(T.a)()
-        return c.a.createElement(
-          y.a,
-          { style: U.controlsContainer },
-          c.a.createElement(N.SeekSlider, null),
-          c.a.createElement(
-            y.a,
-            { style: U.buttonsContainer },
-            c.a.createElement(N.Captions, { audioSpaceId: e.audioSpaceId }),
-            c.a.createElement(w, { audioSpaceId: e.audioSpaceId }),
-            c.a.createElement(N.Play, null),
-            c.a.createElement(N.SkipAhead, null),
-            t.isCreationEnabled
-              ? c.a.createElement(N.Clip, { audioSpaceId: e.audioSpaceId })
-              : c.a.createElement(P.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon-borderless' }),
-          ),
-        )
-      }
-      function F() {
-        var e = i.a()
-        e && null != e && e.currentTimeMs && V(e.currentTimeMs + q)
-      }
-      function V(e) {
-        var t = i.d.getState().api,
-          n = i.a()
-        if (null != n && n.durationMs && null != t && t.scrubToFraction) {
-          a.seek(e)
-          var r = e / n.durationMs
-          t.scrubToFraction(r)
-        }
-      }
-      ;(N.SeekSlider = function () {
-        var e = N.useSeekSliderProps(),
-          t = e.currentTimeMs,
-          n = e.durationMs,
-          a = e.externalSeeking,
-          r = e.onSeek
-        return c.a.createElement(B.a.SeekSlider, {
-          durationMs: n,
-          externalSeeking: a,
-          onSeek: r,
-          progressMs: t,
-          withTimes: !0,
-        })
-      }),
-        (N.useSeekSliderProps = function () {
-          var e = i.l(),
-            t = i.h()
-          return { currentTimeMs: i.i() || 0, durationMs: t || 1, externalSeeking: e, onSeek: V }
-        }),
-        (N.Captions = function (e) {
-          var t = e.audioSpaceId,
-            n = I.a.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
-            a = n.disabled,
-            r = n.icon,
-            i = n.label,
-            o = n.onPress
-          return c.a.createElement(m, { accessibilityLabel: i, disabled: a, icon: r, onPress: o })
-        }),
-        (N.Play = function () {
-          var e = N.usePlayButtonProps(),
-            t = e.isPlaying,
-            n = e.togglePlayback
-          return c.a.createElement(m, {
-            accessibilityLabel: t ? W.pause : W.play,
-            icon: t ? c.a.createElement(O.a, null) : c.a.createElement(L.a, null),
-            onPress: n,
-            size: 'xLarge',
-          })
-        }),
-        (N.usePlayButtonProps = function () {
-          var e = i.k(),
-            t = i.n()
-          return {
-            isPlaying: e,
-            togglePlayback: function () {
-              t && t.play && t.pause && (e ? t.pause() : t.play())
-            },
-          }
-        }),
-        (N.SkipAhead = function () {
-          return c.a.createElement(m, {
-            accessibilityLabel: W.skipForward,
-            icon: c.a.createElement(H, null),
-            onPress: F,
-          })
-        }),
-        (N.Clip = function (e) {
-          e.audioSpaceId
-          var t = r.k().openSheet,
-            n = i.g(),
-            a = Object(T.a)(),
-            o = n && n.currentTimeMs < a.durationMs
-          return c.a.createElement(m, {
-            accessibilityLabel: W.createClip,
-            disabled: o,
-            icon: c.a.createElement(D, null),
-            onPress: function () {
-              t(r.b.createClip)
-            },
-          })
-        })
-      var U = p.a.create(function (e) {
-          return {
-            controlsContainer: { width: '100%', alignSelf: 'start', marginVertical: e.spaces.space8 },
-            buttonsContainer: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-          }
-        }),
-        W = { skipForward: v.a.jf9f3e53, play: v.a.ic1e826e, pause: v.a.b89c5a5f, createClip: v.a.f91f00b9 },
-        q = 15e3
-    },
-    PaZX: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return g
-      }),
-        n.d(t, 'c', function () {
-          return b
-        })
-      n('1t7P'), n('jQ/y'), n('z84I'), n('+KXO')
-      var a = n('ERkP'),
-        r = n.n(a),
-        i = n('1YZw'),
-        o = n('hUaP'),
-        c = n('3XMw'),
-        s = n.n(c),
-        l = n('uDfI'),
-        u = n('Q/sS'),
-        d = n('dgjd'),
-        p = n('MWbm'),
-        m = n('t62R'),
-        f = n('CKsB'),
-        h = n('/yvb'),
-        v = n('rHpw')
-      function g(e) {
-        var t = Object(u.k)().requestSheetDismissal,
-          n = g.useReportingItems({ audioSpaceId: e.audioSpaceId })
-        return r.a.createElement(
-          p.a,
-          { style: y.container },
-          r.a.createElement(
-            p.a,
-            { style: y.menu },
-            r.a.createElement(
-              m.b,
-              { align: 'center', size: 'headline1', style: y.description, weight: 'bold' },
-              b.reportThisSpace,
-            ),
-            r.a.createElement(m.b, { align: 'center', style: y.description }, b.describeTheIssue),
-            null == n
-              ? void 0
-              : n.map(function (e) {
-                  return r.a.createElement(f.a, {
-                    actionText: e.label,
-                    key: e.label,
-                    onClick: function () {
-                      e.onClick(), t()
-                    },
-                    textColor: 'red500',
-                  })
-                }),
-          ),
-          r.a.createElement(h.a, { onClick: t, type: 'primaryOutlined' }, b.cancel),
-        )
-      }
-      g.useReportingItems = function (e) {
-        var t = e.audioSpaceId,
-          n = Object(l.c)(),
-          a = Object(d.a)(t).handlers.report
-        return r.a.useMemo(
-          function () {
-            return Object.keys(a).map(function (e) {
-              return {
-                label: b[e],
-                onClick: function () {
-                  a && a[e](), n(Object(i.b)({ text: b.spaceReported }))
-                },
-              }
-            })
-          },
-          [a, n],
-        )
-      }
-      var b = {
-          reportThisSpace: s.a.b3481ffd,
-          describeTheIssue: s.a.d0aebc27,
-          SelfHarm: s.a.g971a4e8,
-          Violence: s.a.b96e6682,
-          SexualContent: s.a.e5bf9b39,
-          ChildSafety: s.a.d2a34320,
-          PrivateInformation: s.a.a9ba3e27,
-          AbusiveBehavior: s.a.d5519f4a,
-          cancel: s.a.cfd2f35d,
-          spaceReported: s.a.eb55363b,
+      e.a = {
+        fromOrigamiTensionAndFriction: function (t, e) {
+          return { stiffness: i(t), damping: r(e) }
         },
-        y = v.a.create(function (e) {
-          var t = Object(o.b)(e)
-          return {
-            container: { display: 'flex', justifyContent: 'space-between', height: '100%', padding: e.spaces.space16 },
-            menu: { marginBottom: e.spaces.space20 },
-            description: { marginTop: e.spaces.space4, marginBottom: e.spaces.space16, paddingHorizontal: t },
+        fromBouncinessAndSpeed: function (t, e) {
+          function n(t, e, n) {
+            return (t - e) / (n - e)
           }
-        })
-      t.b = g
-    },
-    'Pc/x': function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return B
-      })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = (n('849X'), n('TJCb'), n('7x/C'), n('JtPf'), n('KqXw'), n('LJOr'), n('yiKp')),
-        s = n.n(c),
-        l = n('KEM+'),
-        u = n.n(l),
-        d = (n('IAdD'), n('0zG9'), n('yH/f'), n('5Yy7')),
-        p = n.n(d),
-        m = n('2VqO'),
-        f = n.n(m),
-        h = n('mAxt'),
-        v = n.n(h),
-        g = (n('2G9S'), n('CEs6')),
-        b = (function (e) {
-          p()(n, e)
-          var t = f()(n)
-          function n(e, a, i) {
-            var o
-            return (
-              r()(this, n),
-              ((o = t.call(
-                this,
-                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(a, ' message: ').concat(i),
-              )).url = e),
-              (o.status = a),
-              o
-            )
+          function a(t, e, n) {
+            return e + t * (n - e)
           }
-          return o()(n)
-        })(v()(Error))
-      u()(b, 'displayName', 'ProxseeApiError')
-      var y,
-        S,
-        E = n('epkG'),
-        w = n('SrIh'),
-        k = n('RqPI'),
-        C = 0,
-        x = (function () {
-          function e() {
-            var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _
-            r()(this, e),
-              u()(this, 'reportSpaceFor', {
-                SelfHarm: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.SelfHarm }, e))
-                },
-                Violence: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.Violence }, e))
-                },
-                SexualContent: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.SexualContent }, e))
-                },
-                ChildSafety: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.ChildSafety }, e))
-                },
-                PrivateInformation: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.PrivateInformation }, e))
-                },
-                AbusiveBehavior: function (e) {
-                  return t._reportSpace(s()({ abuse_type: j.AbusiveBehavior }, e))
-                },
-              })
-            var a = n.httpConfig
-            ;(this.client = new E.a(s()(s()({}, M), a))), (this._authToken = void 0), (this._authPromise = null)
-          }
-          return (
-            o()(e, [
-              {
-                key: 'init',
-                value: function (e) {
-                  S = e
-                },
-              },
-              {
-                key: 'initialized',
-                value: function () {
-                  return !!S
-                },
-              },
-              {
-                key: 'isLoggedIn',
-                value: function () {
-                  return !!this._authToken
-                },
-              },
-              {
-                key: 'isTwitterAuthenticated',
-                value: function () {
-                  if (!this.initialized()) return !1
-                  var e = S.store.getState()
-                  return Object(k.n)(e)
-                },
-              },
-              {
-                key: 'authToken',
-                value: function () {
-                  return this._authToken
-                },
-              },
-              {
-                key: 'dispatch',
-                value: function (e) {
-                  return this.initialized()
-                    ? this.client.dispatch(e).then(g.a)
-                    : Promise.reject(new Error('[ProxseeApi] config not initialized'))
-                },
-              },
-              {
-                key: 'post',
-                value: function (e, t) {
-                  var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                    a = n.params,
-                    r = Object.assign(L(), n.headers),
-                    i = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
-                    o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
-                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: a, data: i })
-                },
-              },
-              {
-                key: 'login',
-                value: function () {
-                  var e = this
-                  return this._authPromise
-                    ? this._authPromise
-                    : this.initialized()
-                    ? this.isTwitterAuthenticated()
-                      ? this.isLoggedIn()
-                        ? Promise.resolve()
-                        : ((this._authPromise = S.api.Auth.authenticatePeriscope()
-                            .then(function (t) {
-                              return e.loginTwitterToken(t.token)
-                            })
-                            .then(function (t) {
-                              if (!t) throw new Error('[ProxseeApi] invalid loginTwitterToken response')
-                              ;(e._authToken = t.cookie), (e._authUserType = t.type)
-                            })
-                            .catch(function (e) {
-                              var t = { err: e }
-                              Object(w.a)('[ProxseeApi] failed to login', { extra: t })
-                            })
-                            .then(function () {
-                              e._authPromise = null
-                            })),
-                          this._authPromise)
-                      : Promise.resolve()
-                    : Promise.reject(new Error('[ProxseeApi] config not initialized'))
-                },
-              },
-              {
-                key: 'loginTwitterToken',
-                value: function (e) {
-                  var t = { jwt: e, vendor_id: R, create_user: !1, direct: !0 }
-                  return this.post('loginTwitterToken', t)
-                },
-              },
-              {
-                key: 'publicPath',
-                value: function (e) {
-                  return this.isLoggedIn() ? e : ''.concat(e, 'Public')
-                },
-              },
-              {
-                key: 'accessChat',
-                value: function (e) {
-                  var t = this
-                  return this.login().then(function () {
-                    return t.post(t.publicPath('accessChat'), { chat_token: e })
-                  })
-                },
-              },
-              {
-                key: 'getChatHistory',
-                value: function (e) {
-                  var t = this,
-                    n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-                  return this.login().then(function () {
-                    var a = n.params,
-                      r = Object.assign(L(), n.headers),
-                      i = JSON.stringify({
-                        access_token: e.access_token,
-                        cursor: e.cursor,
-                        limit: 1e3,
-                        since: null,
-                        quick_get: !0,
-                      })
-                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: a, data: i })
-                  })
-                },
-              },
-              {
-                key: 'trackAudiospaceClientEvent',
-                value: function (e) {
-                  var t = this
-                  return e.length
-                    ? this.login().then(function () {
-                        return t
-                          .post(t.publicPath('trackAudiospaceClientEvent'), { time: Date.now(), log: e })
-                          .catch(function (e) {
-                            Object(w.a)('[ProxseeApi] failed to scribe events', { extra: { err: e } })
-                          })
-                      })
-                    : Promise.resolve()
-                },
-              },
-              {
-                key: 'createClip',
-                value: function (e) {
-                  var t = this
-                  return this.login().then(function () {
-                    return t.post('createClip', e).catch(function (e) {
-                      Object(w.a)('[ProxseeApi] failed to create clip', { extra: { err: e } })
-                    })
-                  })
-                },
-              },
-              {
-                key: '_reportSpace',
-                value: function (e) {
-                  var t = this
-                  return this.login().then(function () {
-                    return t.post('markAbuse', e).catch(function (e) {
-                      Object(w.a)('[ProxseeApi] failed to report space', { extra: { err: e } })
-                    })
-                  })
-                },
-              },
-            ]),
-            e
-          )
-        })(),
-        I = 'X-Idempotence',
-        P = 'X-Periscope-User-Agent',
-        T = 'X-Attempt',
-        O = ((y = {}), u()(y, P, 'Twitter/m5'), u()(y, T, 1), y)
-      function L() {
-        var e,
-          t = Date.now()
-        return (
-          (C = t <= C ? C + 1 : t),
-          Object.assign({}, O, ((e = {}), u()(e, I, C), u()(e, 'content-type', 'application/json'), e))
-        )
-      }
-      var R = 'm5-proxsee-login-a2011357b73e',
-        _ = {},
-        M = {
-          host: 'https://proxsee.pscp.tv',
-          errorFilter: function (e, t) {
-            return t(e).then(function (t) {
-              return t.status && ((n = t.status) < 200 || n > 399)
-                ? Promise.reject(
-                    (function (e, t) {
-                      var n = e.uri,
-                        a = t.status,
-                        r = Object(g.a)(t)
-                      return new b(n, a, r.msg)
-                    })(e, t),
-                  )
-                : t
-              var n
-            })
-          },
-        }
-      var z,
-        j = Object.freeze({
-          SelfHarm: 'SELF_HARM',
-          Violence: 'VIOLENCE',
-          SexualContent: 'SEXUAL_CONTENT',
-          ChildSafety: 'CSE',
-          PrivateInformation: 'PRIVATE_INFO',
-          AbusiveBehavior: 'HARASSMENT',
-        }),
-        H = new x(),
-        A = n('G6rE'),
-        D = new Error('[AudioModule] config not initialized'),
-        B = new ((function () {
-          function e() {
-            r()(this, e), (this.proxsee = H)
-          }
-          return (
-            o()(e, [
-              {
-                key: 'init',
-                value: function (e) {
-                  ;(z = e), H.init(z)
-                },
-              },
-              {
-                key: 'initialized',
-                value: function () {
-                  return !!z
-                },
-              },
-              {
-                key: 'loggedInUser',
-                value: function () {
-                  if (this.initialized()) {
-                    var e = z.store.getState()
-                    return A.e.selectLoggedInUser(e)
-                  }
-                },
-              },
-              {
-                key: 'audioSpace',
-                value: function (e) {
-                  return z ? z.api.AudioSpaces.byId(e) : Promise.reject(D)
-                },
-              },
-              {
-                key: 'subscribeToScheduledSpace',
-                value: function (e) {
-                  return z ? z.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(D)
-                },
-              },
-              {
-                key: 'unsubscribeFromScheduledSpace',
-                value: function (e) {
-                  return z ? z.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(D)
-                },
-              },
-              {
-                key: 'searchAudioSpace',
-                value: function (e, t) {
-                  return z ? z.api.AudioSpaces.search(e, t) : Promise.reject(D)
-                },
-              },
-            ]),
-            e
-          )
-        })())()
-    },
-    Pl95: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return f
-      })
-      var a = n('Q/sS'),
-        r = n('ERkP'),
-        i = n.n(r),
-        o = n('3XMw'),
-        c = n.n(o),
-        s = n('dgjd'),
-        l = n('/yvb'),
-        u = n('rHpw'),
-        d = n('pHub'),
-        p = n('8A5z'),
-        m = n('d5IS')
-      function f(e) {
-        var t = e.audioSpaceId,
-          n = f.useSpaceCaptionsToggleProps({ audioSpaceId: t }),
-          a = n.disabled,
-          r = n.icon,
-          o = n.label,
-          c = n.onPress
-        return i.a.createElement(l.a, {
-          accessibilityLabel: o,
-          disabled: a,
-          hoverLabel: { label: o },
-          icon: r,
-          onPress: c,
-          size: 'medium',
-          style: v.icon,
-          type: 'primaryText',
-        })
-      }
-      function h(e) {
-        switch (e.captionsState) {
-          case a.c.On:
-            return i.a.createElement(d.a, { style: v.icon })
-          case a.c.Off:
-            return i.a.createElement(p.a, { style: v.icon })
-          case a.c.Unavailable:
-          default:
-            return i.a.createElement(m.a, { style: v.icon })
-        }
-      }
-      f.useSpaceCaptionsToggleProps = function (e) {
-        var t = e.audioSpaceId,
-          n = a.o(),
-          r = i.a.createElement(h, { captionsState: n })
-        return {
-          disabled: !(n !== a.c.Unavailable),
-          icon: r,
-          label: (function (e) {
-            switch (e) {
-              case a.c.On:
-                return g.hideCaptions
-              case a.c.Off:
-                return g.showCaptions
-              case a.c.Unavailable:
-              default:
-                return g.captionsUnavailable
-            }
-          })(n),
-          onPress: (function (e) {
-            var t = e.audioSpaceId,
-              n = Object(s.a)(t).utils
-            return function () {
-              a.j(), n.scribe(':audiospace::caret:view_transcriptions:click')
-            }
-          })({ audioSpaceId: t }),
-        }
-      }
-      var v = u.a.create(function (e) {
-          return { icon: { fill: e.colors.text } }
-        }),
-        g = { showCaptions: c.a.e674c120, hideCaptions: c.a.f45bace3, captionsUnavailable: c.a.ce96f1db }
-    },
-    'Q/sS': function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return o
-      }),
-        n.d(t, 'c', function () {
-          return c
-        }),
-        n.d(t, 'b', function () {
-          return s
-        }),
-        n.d(t, 'i', function () {
-          return d
-        }),
-        n.d(t, 'd', function () {
-          return p
-        }),
-        n.d(t, 'k', function () {
-          return m
-        }),
-        n.d(t, 'l', function () {
-          return f
-        }),
-        n.d(t, 'p', function () {
-          return h
-        }),
-        n.d(t, 'q', function () {
-          return v
-        }),
-        n.d(t, 'h', function () {
-          return g
-        }),
-        n.d(t, 'g', function () {
-          return b
-        }),
-        n.d(t, 'f', function () {
-          return y
-        }),
-        n.d(t, 'e', function () {
-          return S
-        }),
-        n.d(t, 'm', function () {
-          return E
-        }),
-        n.d(t, 'o', function () {
-          return x
-        }),
-        n.d(t, 'j', function () {
-          return I
-        }),
-        n.d(t, 'n', function () {
-          return P
-        })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = (n('7x/C'), n('JtPf'), n('2C8o')),
-        o = (n('yH/f'), Object.freeze({ full: 'full', collapse: 'collapse', exit: 'exit' })),
-        c = Object.freeze({ On: 'on', Off: 'off', Unavailable: 'unavailable' }),
-        s = Object.freeze({
-          generalNux: 'general-nux',
-          clippingEducation: 'clipping-education',
-          recordingEducation: 'recording-education',
-          report: 'report',
-          createClip: 'create-clip',
-        }),
-        l = n('ssnq'),
-        u = {
-          isReplay: !1,
-          startTimeMs: -1,
-          springTo: function () {
-            return Promise.resolve()
-          },
-          springToState: null,
-          sheet: { id: null, hasDismissRequest: !1 },
-          captionsState: c.On,
+          var o = n(t / 1.7, 0, 20)
+          o = a(o, 0, 0.8)
+          var s,
+            c,
+            u,
+            l,
+            p = a(n(e / 1.7, 0, 20), 0.5, 200),
+            d =
+              ((s = o),
+              (c =
+                (u = p) <= 18
+                  ? ((l = u), 7e-4 * Math.pow(l, 3) - 0.031 * Math.pow(l, 2) + 0.64 * l + 1.28)
+                  : u > 18 && u <= 44
+                  ? (function (t) {
+                      return 44e-6 * Math.pow(t, 3) - 0.006 * Math.pow(t, 2) + 0.36 * t + 2
+                    })(u)
+                  : (function (t) {
+                      return 45e-8 * Math.pow(t, 3) - 332e-6 * Math.pow(t, 2) + 0.1078 * t + 5.84
+                    })(u)),
+              (function (t, e, n) {
+                return t * n + (1 - t) * e
+              })(2 * s - s * s, c, 0.01))
+          return { stiffness: i(p), damping: r(d) }
         },
-        d = new l.a(u)
-      function p() {
-        var e = d.getState().isReplay
-        d.reset(),
-          e &&
-            d.setState(function (t) {
-              t.isReplay = e
-            })
-      }
-      function m() {
-        return {
-          sheetId: d.useSlice(function (e) {
-            return e.sheet.id
-          }),
-          openSheet: w,
-          requestSheetDismissal: C,
-        }
-      }
-      function f() {
-        var e = d.useSlice(function (e) {
-            return e.sheet
-          }),
-          t = e.hasDismissRequest
-        return { sheetId: e.id, hasDismissRequest: t, clearSheet: k }
-      }
-      function h() {
-        return d.useSlice(function (e) {
-          return e.springTo
-        })
-      }
-      function v() {
-        return d.useSlice(function (e) {
-          return e.springToState
-        })
-      }
-      function g(e) {
-        d.setState(function (t) {
-          return r()(r()({}, t), {}, { springToState: e })
-        })
-      }
-      function b(e) {
-        d.setState(function (t) {
-          return r()(r()({}, t), {}, { springTo: e })
-        })
-      }
-      function y(e) {
-        d.setState(function (t) {
-          ;(t.isReplay = !0), (t.startTimeMs = e)
-        })
-      }
-      function S() {
-        d.getState().isReplay &&
-          d.setState(function (e) {
-            ;(e.isReplay = u.isReplay), (e.startTimeMs = u.startTimeMs)
-          })
-      }
-      function E() {
-        return d.useSlice(function (e) {
-          return e.isReplay
-        })
-      }
-      function w(e) {
-        d.getState().sheet.hasDismissRequest ||
-          d.setState(function (t) {
-            return r()(r()({}, t), {}, { sheet: { id: e, hasDismissRequest: !1 } })
-          })
-      }
-      function k() {
-        d.getState().sheet.id &&
-          d.setState(function (e) {
-            return r()(r()({}, e), {}, { sheet: { id: null, hasDismissRequest: !1 } })
-          })
-      }
-      function C() {
-        var e = d.getState().sheet
-        e.id &&
-          d.setState(function (t) {
-            return r()(r()({}, t), {}, { sheet: r()(r()({}, e), {}, { hasDismissRequest: !0 }) })
-          })
-      }
-      function x() {
-        return d.useSlice(function (e) {
-          return e.captionsState
-        })
-      }
-      function I() {
-        var e = d.getState().captionsState
-        e === c.On
-          ? d.setState(function (e) {
-              return r()(r()({}, e), {}, { captionsState: c.Off })
-            })
-          : e === c.Off &&
-            d.setState(function (e) {
-              return r()(r()({}, e), {}, { captionsState: c.On })
-            })
-      }
-      function P() {
-        var e = i.e(),
-          t = x()
-        return e && t === c.On
       }
     },
-    QEWO: function (e, t, n) {
+    UUFr: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return r
-      })
-      n('ERkP')
-      var a = n('89tF'),
-        r = Object(a.a)({ space: !0, voiceTweet: !0, voiceMessage: !0 })
-    },
-    'S+H3': function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
-        l = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            r()(
-              r()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [c.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            o.a.createElement(
-              'g',
-              null,
-              o.a.createElement('path', {
-                d: 'M15.09 9.07c-.25-1.83-1.43-2.98-3.1-2.98-1.66 0-2.85 1.15-3.09 2.98-.18 1.32 0 2.26.55 2.89.66.76 1.66.86 2.54.86.89 0 1.88-.1 2.54-.86.56-.63.74-1.57.56-2.89zm-1.68 1.9c-.21.24-.65.35-1.42.35-.76 0-1.2-.11-1.41-.35-.24-.28-.31-.86-.2-1.7.1-.76.47-1.68 1.61-1.68.58 0 .95.23 1.2.56.24.32.36.74.41 1.12.12.84.05 1.42-.19 1.7zm2.67 4.09c-.99-.99-2.4-1.52-4.07-1.52h-.03c-1.62 0-3.06.55-4.06 1.55-.87.87-1.34 2.02-1.34 3.25 0 .79.64 1.44 1.44 1.44h7.95c.79 0 1.44-.65 1.44-1.44 0-1.26-.47-2.43-1.33-3.28zm-7.44 3.276c-.318.002-.562-.288-.502-.6.116-.595.406-1.14.842-1.576.72-.72 1.78-1.12 3.01-1.12H12c1.27 0 2.32.37 3.02 1.08.432.432.715.962.83 1.564.06.308-.178.598-.492.6l-6.72.052zM21.75 6.97c-.22-1.7-1.32-2.75-2.86-2.75-1.53 0-2.64 1.05-2.87 2.75-.16 1.2.02 2.07.52 2.65.62.71 1.53.81 2.35.81.81 0 1.73-.1 2.34-.8.39-.45.59-1.07.59-1.85 0-.22-.02-.47-.07-.81zm-4.22.2c.13-.95.59-1.43 1.36-1.43.43 0 .77.15 1 .46.23.29.32.69.35.97.03.22.05.43.05.61 0 .4-.07.69-.21.84-.16.2-.54.28-1.19.28-.66 0-1.04-.08-1.2-.28-.2-.22-.25-.73-.16-1.45zm6.3 8.37c0 .74-.62 1.34-1.37 1.34h-3.75c-.41 0-.76-.34-.76-.76 0-.43.34-.76.76-.76h3.24c.1 0 .2-.05.26-.13.07-.09.1-.2.07-.3-.12-.53-.37-.99-.74-1.36-.61-.62-1.53-.94-2.64-.94-.73 0-1.39.15-1.93.44l-.5.32c-.36.21-.83.1-1.04-.25-.23-.36-.12-.82.24-1.05l.54-.34c.78-.42 1.71-.64 2.66-.64h.03c1.52 0 2.81.47 3.72 1.38.79.8 1.22 1.88 1.21 3.05zM2.18 7.78c0 .78.2 1.4.59 1.85.61.7 1.53.8 2.34.8.82 0 1.73-.1 2.35-.81.5-.58.68-1.45.52-2.65-.23-1.7-1.34-2.75-2.87-2.75-1.54 0-2.64 1.05-2.86 2.75-.05.34-.07.59-.07.81zm4.13.84c-.16.2-.54.28-1.2.28-.65 0-1.03-.08-1.19-.28-.14-.15-.21-.44-.21-.84 0-.18.02-.39.05-.61.03-.28.12-.68.35-.97.23-.31.57-.46 1-.46.77 0 1.23.48 1.36 1.43.09.72.04 1.23-.16 1.45zM.17 15.54c0 .74.62 1.34 1.37 1.34h3.75c.41 0 .76-.34.76-.76 0-.43-.34-.76-.76-.76H2.05c-.1 0-.2-.05-.26-.13-.07-.09-.1-.2-.07-.3.12-.53.37-.99.74-1.36.61-.62 1.53-.94 2.64-.94.73 0 1.39.15 1.93.44l.5.32c.36.21.83.1 1.04-.25.23-.36.12-.82-.24-1.05l-.54-.34c-.78-.42-1.71-.64-2.66-.64H5.1c-1.52 0-2.81.47-3.72 1.38-.79.8-1.22 1.88-1.21 3.05z',
-              }),
-            ),
-          )
-        }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    SNyS: function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
-        l = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            r()(
-              r()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [c.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            o.a.createElement(
-              'g',
-              null,
-              o.a.createElement('path', {
-                d: 'M12.025 22.75c-5.928 0-10.75-4.822-10.75-10.75S6.098 1.25 12.025 1.25 22.775 6.072 22.775 12s-4.822 10.75-10.75 10.75zm0-20c-5.1 0-9.25 4.15-9.25 9.25s4.15 9.25 9.25 9.25 9.25-4.15 9.25-9.25-4.15-9.25-9.25-9.25z',
-              }),
-              o.a.createElement('path', {
-                d: 'M13.064 17.47c0-.616-.498-1.114-1.114-1.114-.616 0-1.114.498-1.114 1.114 0 .615.498 1.114 1.114 1.114.616 0 1.114-.5 1.114-1.114zm3.081-7.528c0-2.312-1.882-4.194-4.194-4.194-2.312 0-4.194 1.882-4.194 4.194 0 .414.336.75.75.75s.75-.336.75-.75c0-1.485 1.21-2.694 2.695-2.694 1.486 0 2.695 1.21 2.695 2.694 0 1.486-1.21 2.695-2.694 2.695-.413 0-.75.336-.75.75v1.137c0 .414.337.75.75.75s.75-.336.75-.75v-.463c1.955-.354 3.445-2.06 3.445-4.118z',
-              }),
-            ),
-          )
-        }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    SQlS: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return u
-      })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = (n('i4UL'), n('ERkP')),
-        o = n.n(i),
-        c = n('CDzS'),
-        s = n('rHpw'),
-        l = n('k/Ka')
-      function u(e) {
-        return Object(l.a)(
-          'svg',
-          r()(r()({}, e), {}, { style: [d.root, e.style], viewBox: '0 0 24 24' }),
-          o.a.createElement(
-            o.a.Fragment,
-            null,
-            o.a.createElement(c.a.SVGLinearGradient, null),
-            o.a.createElement(
-              'g',
-              { fill: c.a.SVGLinearGradient.fill },
-              o.a.createElement('path', {
-                d: 'M19.073 10.384c.9-.896 2.358-.896 3.258 0 .894.89.894 2.34-.006 3.237-.893.89-2.35.89-3.244 0-.9-.895-.9-2.347-.007-3.236zm-17.403.001c.9-.896 2.356-.896 3.256 0 .893.89.893 2.34-.007 3.236-.894.89-2.35.89-3.244 0-.9-.895-.9-2.346-.007-3.235zM11.058 2.4c.536-.534 1.41-.534 1.95.006.537.534.537 1.403 0 1.937-.535.534-1.414.54-1.95.005-.54-.54-.536-1.414 0-1.948zm-.064 17.254c.536-.533 1.41-.533 1.95.006.536.533.536 1.402 0 1.936-.54.54-1.414.54-1.95.006-.542-.54-.542-1.41 0-1.948zm4.07-13.294c.72-.718 1.886-.718 2.606 0 .714.71.714 1.87-.006 2.588-.714.71-1.88.71-2.595 0-.72-.717-.72-1.878-.006-2.59zm-8.736 8.697c.72-.717 1.886-.717 2.606 0 .714.71.714 1.872-.006 2.59-.714.71-1.88.71-2.594 0-.72-.718-.72-1.88-.006-2.59zm.034-8.665c.72-.717 1.886-.717 2.606 0 .714.71.714 1.872-.006 2.59-.714.71-1.88.71-2.594 0-.72-.718-.72-1.878-.006-2.59zm8.67 8.632c.72-.717 1.886-.717 2.606 0 .714.71.714 1.872-.006 2.59-.714.71-1.88.71-2.594 0-.72-.718-.72-1.878-.006-2.59zm-4.662-4.639c.9-.896 2.358-.896 3.258 0 .893.89.893 2.34-.007 3.236-.892.89-2.35.89-3.242 0-.9-.895-.9-2.346-.007-3.235z',
-              }),
-            ),
-          ),
-        )
-      }
-      u.metadata = { width: 24, height: 24 }
-      var d = s.a.create(function (e) {
-        return {
-          root: {
-            display: 'inline-block',
-            fill: 'currentcolor',
-            height: '1.25em',
-            maxWidth: '100%',
-            position: 'relative',
-            userSelect: 'none',
-            textAlignVertical: 'text-bottom',
-          },
-        }
-      })
-    },
-    TCYy: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return d
-      })
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ddV6'),
-        o = n.n(i),
-        c = (n('z84I'), n('i4UL'), n('2G9S'), n('uFXj'), n('yH/f'), n('ERkP')),
-        s = n.n(c),
-        l = n('rHpw'),
-        u = n('MWbm')
-      function d(e) {
-        var t,
-          n = e.count,
-          a = e.max,
-          r = e.selectedIndex,
-          i = 2 * f((t = l.a.theme)).px + t.borderWidthsPx.small,
-          c = s.a.useRef({ left: 0, right: a - 1 }),
-          d = s.a.useRef(0),
-          v = s.a.useState(m(c.current, n, i)),
-          g = o()(v, 2),
-          b = g[0],
-          y = g[1]
-        s.a.useEffect(
-          function () {
-            for (
-              ;
-              (e = void 0),
-                (t = void 0),
-                (a = void 0),
-                (o = void 0),
-                (s = void 0),
-                (l = void 0),
-                (e = n - 1),
-                (t = c.current),
-                (a = t.left),
-                (o = t.right),
-                (l = r + 1 - a <= 2 && 0 !== a),
-                ((s = o - r + 1 <= 2 && o !== e) || l) &&
-                  (s
-                    ? ((c.current.left = a + 1), (c.current.right = o + 1))
-                    : l && ((c.current.left = a - 1), (c.current.right = o - 1)),
-                  1);
-
-            );
-            var e, t, a, o, s, l
-            y(m(c.current, n, i)), (d.current = r)
-          },
-          [r, n, a, i],
-        )
-        var S = new Array(n).fill(1).map(function (e, t) {
-          var i = t === r
-          if (n <= a) return s.a.createElement(p, { key: t, selected: i })
-          var o = b[t]
-          return s.a.createElement(p, { continuation: Boolean(o), continuationType: o, key: t, selected: i })
+      n.r(e),
+        n.d(e, 'default', function () {
+          return Ht
         })
-        return s.a.createElement(
-          u.a,
-          {
-            style: [
-              h.indicatorWindowContainer,
-              { width: 'calc('.concat(a, ' * ').concat(i, 'px)'), height: ''.concat(i, 'px') },
-            ],
-          },
-          s.a.createElement(
-            u.a,
-            {
-              style: [
-                h.indicatorsContainer,
-                { height: ''.concat(i, 'px'), width: 'calc('.concat(i, 'px * ').concat(n, ')') },
-                b.style,
-              ],
-            },
-            S,
-          ),
-        )
-      }
-      function p(e) {
-        var t = h.indicator
-        if (e.selected) t = h.indicatorSelected
-        else if (e.continuation)
-          switch (e.continuationType) {
-            case v.small:
-              t = h.indicatorContinuationSmall
-              break
-            case v.medium:
-              t = h.indicatorContinuationMedium
-          }
-        return s.a.createElement(u.a, { style: t })
-      }
-      function m(e, t, n) {
-        var a = e.left,
-          r = e.right,
-          i = { style: { transform: [{ translateX: -1 * n * a }] } }
-        return (
-          (i[a - 1] = v.small),
-          (i[a] = v.small),
-          (i[a + 1] = v.medium),
-          (i[r - 1] = v.medium),
-          (i[r] = v.small),
-          (i[r + 1] = v.small),
-          0 === a ? (delete i[0], delete i[1]) : r > t - 2 && (delete i[t - 1], delete i[t - 2]),
-          i
-        )
-      }
-      function f(e) {
-        return { style: e.spaces.space8, px: e.spacesPx.space8 }
-      }
-      var h = l.a.create(function (e) {
-          var t = f(e).style,
-            n = { transition: 'transform 200ms' },
-            a = r()(
-              r()({}, n),
-              {},
-              {
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderRadius: e.borderRadii.infinite,
-                marginHorizontal: e.spaces.space4,
-                width: t,
-                height: t,
-                transform: [{ scale: 0.5 }],
-              },
-            ),
-            i = r()(r()({}, a), {}, { backgroundColor: e.colors.gray300 })
-          return {
-            indicatorWindowContainer: { marginVertical: e.spaces.space12, overflow: 'hidden', margin: 'auto' },
-            indicatorsContainer: r()(
-              r()({}, n),
-              {},
-              { display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 'auto' },
-            ),
-            indicatorSelected: r()(
-              r()({}, a),
-              {},
-              {
-                borderWidth: e.borderWidths.small,
-                borderColor: e.colors.gray300,
-                borderStyle: 'solid',
-                backgroundColor: e.colors.white,
-                transform: [{ scale: 1 }],
-              },
-            ),
-            indicator: r()(r()({}, a), {}, { backgroundColor: e.colors.gray300 }),
-            indicatorContinuationSmall: r()(r()({}, i), {}, { transform: [{ scale: 0.3 }] }),
-            indicatorContinuationMedium: r()(r()({}, i), {}, { transform: [{ scale: 0.4 }] }),
-          }
-        }),
-        v = Object.freeze({ small: 'small', medium: 'medium' })
-    },
-    UUFr: function (e, t, n) {
-      'use strict'
-      n.r(t),
-        n.d(t, 'default', function () {
-          return Fe
-        })
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = (n('KqXw'), n('WNMA'), n('ERkP')),
-        o = n.n(i),
-        c = n('Fg/a'),
-        s = n('Z5jE'),
-        l = n('yiKp'),
-        u = n.n(l),
-        d = (n('7xRU'), n('3XMw')),
-        p = n.n(d),
-        m = n('t62R'),
-        f = n('rHpw')
-      function h(e) {
+      var i = n('97Jx'),
+        r = n.n(i),
+        a = (n('KqXw'), n('WNMA'), n('ERkP')),
+        o = n.n(a),
+        s = n('Fg/a'),
+        c = n('Z5jE'),
+        u = n('yiKp'),
+        l = n.n(u),
+        p = (n('7xRU'), n('3XMw')),
+        d = n.n(p),
+        f = n('t62R'),
+        h = n('rHpw')
+      function _(t) {
         return o.a.createElement(
-          m.b,
-          { numberOfLines: 1, size: 'headline1', style: g.container, weight: 'bold' },
+          f.b,
+          { numberOfLines: 1, size: 'headline1', style: m.container, weight: 'bold' },
           v.connecting,
         )
       }
-      var v = { connecting: p.a.e4e811fb },
-        g = f.a.create(function (e) {
-          return { container: { paddingBottom: e.spaces.space48 } }
+      var v = { connecting: d.a.e4e811fb },
+        m = h.a.create(function (t) {
+          return { container: { paddingBottom: t.spaces.space48 } }
         }),
-        b = n('Pc/x'),
+        g = n('Pc/x'),
         y = (n('z84I'), n('p3P5')),
-        S = n('m3Bd'),
-        E = n.n(S),
+        b = n('m3Bd'),
+        O = n.n(b),
         w = n('ddV6'),
-        k = n.n(w),
-        C = n('hOZg'),
-        x = n('RqPI')
-      var I = n('zCf4'),
-        P = n('uDfI'),
-        T = n('dgjd'),
-        O = n('mjJ+'),
-        L = n('/yvb'),
-        R = n('FXw/'),
-        _ = n('GCOQ')
-      function M(e) {
-        var t = (function (e) {
-            var t = Object(I.f)(),
-              n = Object(T.a)(e).utils,
-              a = Object(P.d)(x.n),
+        N = n.n(w),
+        E = n('hOZg'),
+        S = n('RqPI')
+      var P = n('zCf4'),
+        C = n('uDfI'),
+        j = n('dgjd'),
+        A = n('mjJ+'),
+        V = n('/yvb'),
+        I = n('FXw/'),
+        k = n('GCOQ')
+      function T(t) {
+        var e = (function (t) {
+            var e = Object(P.f)(),
+              n = Object(j.a)(t).utils,
+              i = Object(C.d)(S.n),
               r = [],
-              i = {
-                Icon: _.a,
+              a = {
+                Icon: k.a,
                 isEmphasized: !0,
                 onClick: function () {
                   n.scribe(':audiospace::caret:report:click'),
-                    t.push(
-                      (function (e) {
-                        return '/i/spaces/'.concat(e, '/peek/report')
-                      })(e),
+                    e.push(
+                      (function (t) {
+                        return '/i/spaces/'.concat(t, '/peek/report')
+                      })(t),
                     )
                 },
-                text: z.reportThisSpace,
+                text: x.reportThisSpace,
               }
-            a && r.push(i)
+            i && r.push(a)
             return { items: r }
-          })(e.audioSpaceId),
+          })(t.audioSpaceId),
           n = o.a.useState(!1),
-          a = k()(n, 2),
-          r = a[0],
-          i = a[1]
-        if (t.items.length < 1) return null
-        var c = r
-          ? o.a.createElement(O.a, {
+          i = N()(n, 2),
+          r = i[0],
+          a = i[1]
+        if (e.items.length < 1) return null
+        var s = r
+          ? o.a.createElement(A.a, {
               isFixed: !0,
-              items: t.items,
+              items: e.items,
               onCloseRequested: function () {
-                return i(!1)
+                return a(!1)
               },
               shouldCloseOnClick: !0,
             })
@@ -3120,572 +1204,572 @@
         return o.a.createElement(
           o.a.Fragment,
           null,
-          o.a.createElement(L.a, {
-            accessibilityLabel: z.more,
+          o.a.createElement(V.a, {
+            accessibilityLabel: x.more,
             borderColor: 'transparent',
             color: 'text',
-            hoverLabel: { label: z.more },
-            icon: o.a.createElement(R.a, null),
+            hoverLabel: { label: x.more },
+            icon: o.a.createElement(I.a, null),
             onPress: function () {
-              return i(!0)
+              return a(!0)
             },
-            pullRight: e.pullRight,
+            pullRight: t.pullRight,
             size: 'medium',
           }),
-          c,
+          s,
         )
       }
-      var z = { more: p.a.h63a5c3b, reportThisSpace: p.a.b3481ffd },
-        j = n('0nhk'),
-        H = n('xVWt')
-      var A = n('MWbm'),
-        D = n('sgih'),
-        B = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
-        N = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
-      function F(e) {
-        var t,
+      var x = { more: d.a.h63a5c3b, reportThisSpace: d.a.b3481ffd },
+        L = n('0nhk'),
+        R = n('xVWt')
+      var D = n('MWbm'),
+        F = n('sgih'),
+        U = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
+        M = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
+      function H(t) {
+        var e,
           n,
-          a,
           i,
-          c,
-          s = {
+          a,
+          s,
+          c = {
             type: 'bottom',
             accessibilityRole: 'menu',
-            onMaskClick: e.onClose,
+            onMaskClick: t.onClose,
             allowBackNavigation: !0,
             withKeyboardNavigation: !0,
             withMask: !0,
           },
-          l =
-            ((t = o.a.useState(null)),
-            (n = k()(t, 2)),
-            (a = n[0]),
-            (i = n[1]),
-            (c = o.a.useMemo(
+          u =
+            ((e = o.a.useState(null)),
+            (n = N()(e, 2)),
+            (i = n[0]),
+            (a = n[1]),
+            (s = o.a.useMemo(
               function () {
-                if (!a)
-                  return function (e) {
-                    var t = e.nativeEvent.layout
-                    t && i(t)
+                if (!i)
+                  return function (t) {
+                    var e = t.nativeEvent.layout
+                    e && a(e)
                   }
               },
-              [a],
+              [i],
             )),
-            [a, c]),
-          u = k()(l, 2),
-          d = u[0],
-          p = u[1],
-          m = [K.sheetContainer, e.withoutPadding && K.withoutPadding]
+            [i, s]),
+          l = N()(u, 2),
+          p = l[0],
+          d = l[1],
+          f = [G.sheetContainer, t.withoutPadding && G.withoutPadding]
         return o.a.createElement(
-          D.a,
-          s,
+          F.a,
+          c,
           o.a.createElement(
-            A.a,
-            { onLayout: p, style: m },
-            o.a.createElement(A.a, { style: K.sheetSpacerTop }),
-            o.a.createElement(V, e),
-            o.a.createElement(U, e),
-            o.a.createElement(W, r()({}, e, { shellLayout: d })),
+            D.a,
+            { onLayout: d, style: f },
+            o.a.createElement(D.a, { style: G.sheetSpacerTop }),
+            o.a.createElement(B, t),
+            o.a.createElement(z, t),
+            o.a.createElement(q, r()({}, t, { shellLayout: p })),
           ),
         )
       }
-      function V(e) {
-        e.Content, e.CustomHeader, e.withoutDescription, e.withoutPadding
-        var t = E()(e, B),
+      function B(t) {
+        t.Content, t.CustomHeader, t.withoutDescription, t.withoutPadding
+        var e = O()(t, U),
           n = o.a.createElement(
-            L.a,
+            V.a,
             r()(
               {
-                accessibilityLabel: X.close,
-                icon: o.a.createElement(C.a, { style: K.closeIcon }),
-                onPress: e.onClose,
+                accessibilityLabel: J.close,
+                icon: o.a.createElement(E.a, { style: G.closeIcon }),
+                onPress: t.onClose,
                 pullLeft: !0,
               },
-              G,
+              X,
             ),
           )
-        if (e.CustomHeader) return o.a.createElement(e.CustomHeader, r()({}, t, { closeButton: n }))
-        var a = e.space.rest_id
+        if (t.CustomHeader) return o.a.createElement(t.CustomHeader, r()({}, e, { closeButton: n }))
+        var i = t.space.rest_id
         return o.a.createElement(
-          A.a,
-          { style: K.header },
-          o.a.createElement(A.a, { style: K.headerLeft }, n),
+          D.a,
+          { style: G.header },
+          o.a.createElement(D.a, { style: G.headerLeft }, n),
           o.a.createElement(
-            A.a,
-            { style: K.headerRight },
+            D.a,
+            { style: G.headerRight },
             o.a.createElement(
-              A.a,
-              { style: K.headerRightItem },
-              o.a.createElement(j.a, { audioSpaceId: a, type: 'icon-borderless' }),
+              D.a,
+              { style: G.headerRightItem },
+              o.a.createElement(L.a, { audioSpaceId: i, type: 'icon-borderless' }),
             ),
             o.a.createElement(
-              A.a,
-              { style: K.headerRightItem },
-              o.a.createElement(M, { audioSpaceId: a, pullRight: !0 }),
+              D.a,
+              { style: G.headerRightItem },
+              o.a.createElement(T, { audioSpaceId: i, pullRight: !0 }),
             ),
           ),
         )
       }
-      function U(e) {
-        return e.withoutDescription
+      function z(t) {
+        return t.withoutDescription
           ? null
           : o.a.createElement(
-              A.a,
-              { style: K.descriptionContainer },
-              o.a.createElement(H.b, { audioSpaceId: e.space.rest_id, isOutsideDock: !0 }),
+              D.a,
+              { style: G.descriptionContainer },
+              o.a.createElement(R.b, { audioSpaceId: t.space.rest_id, isOutsideDock: !0 }),
             )
       }
-      function W(e) {
-        if (!e.Content) return null
-        e.Content, e.CustomHeader
-        var t = e.shellLayout,
-          n = (e.withoutDescription, e.withoutPadding, E()(e, N))
+      function q(t) {
+        if (!t.Content) return null
+        t.Content, t.CustomHeader
+        var e = t.shellLayout,
+          n = (t.withoutDescription, t.withoutPadding, O()(t, M))
         return o.a.createElement(
-          A.a,
-          { style: [K.content, e.withoutPadding && K.withoutPadding] },
-          o.a.createElement(e.Content, r()({}, n, { onClose: e.onClose, shellLayout: t })),
+          D.a,
+          { style: [G.content, t.withoutPadding && G.withoutPadding] },
+          o.a.createElement(t.Content, r()({}, n, { onClose: t.onClose, shellLayout: e })),
         )
       }
-      function q(e) {
-        return { sheetContainer: { paddingHorizontal: e.spacesPx.space16 } }
+      function W(t) {
+        return { sheetContainer: { paddingHorizontal: t.spacesPx.space16 } }
       }
-      var K = f.a.create(function (e) {
-          var t = q(e),
-            n = { height: e.spacesPx.space24 },
-            a = u()({ flex: 1 }, t.sheetContainer),
-            r = { flex: 1, paddingVertical: e.spacesPx.space20 },
-            i = { marginLeft: e.spaces.space8 },
-            o = { paddingVertical: e.spacesPx.space16 },
-            c = e.spacesPx.space24
+      var G = h.a.create(function (t) {
+          var e = W(t),
+            n = { height: t.spacesPx.space24 },
+            i = l()({ flex: 1 }, e.sheetContainer),
+            r = { flex: 1, paddingVertical: t.spacesPx.space20 },
+            a = { marginLeft: t.spaces.space8 },
+            o = { paddingVertical: t.spacesPx.space16 },
+            s = t.spacesPx.space24
           return {
             sheetSpacerTop: n,
-            sheetContainer: a,
+            sheetContainer: i,
             withoutPadding: { paddingHorizontal: 0, paddingVertical: 0 },
             content: r,
             header: { flexDirection: 'row' },
             headerLeft: { flex: 1, alignItems: 'flex-start' },
             headerRight: { flexDirection: 'row' },
-            headerRightItem: i,
+            headerRightItem: a,
             descriptionContainer: o,
-            closeIcon: { width: c, height: c },
+            closeIcon: { width: s, height: s },
           }
         }),
-        G = { borderColor: 'transparent', color: 'text', size: 'medium' },
-        X = { close: p.a.ia5e7487 }
-      function J(e, t) {
+        X = { borderColor: 'transparent', color: 'text', size: 'medium' },
+        J = { close: d.a.ia5e7487 }
+      function Y(t, e) {
         var n,
-          a,
-          r = t.width,
-          i = t.height,
+          i,
+          r = e.width,
+          a = e.height,
           o =
-            ((n = f.a.theme),
-            (a = q(n)),
+            ((n = h.a.theme),
+            (i = W(n)),
             {
-              getHorizontal: function (e) {
-                return e - 2 * a.sheetContainer.paddingHorizontal
+              getHorizontal: function (t) {
+                return t - 2 * i.sheetContainer.paddingHorizontal
               },
             }),
-          c = Object(y.b)(f.a.theme),
-          s = f.a.theme.spacesPx.space40,
-          l = i * Q - s - e.height,
-          u = r > f.a.theme.breakpoints.medium ? Math.min(Z, r * Y) : r,
-          d = o.getHorizontal(u),
-          p = c.getHeight(),
-          m = c.getWidth(),
-          h = Math.min(4, Math.floor(l / p)),
-          v = 4 === h ? 3 : 4,
-          g = Math.min(v, Math.floor(d / m))
-        return { maxDisplayParticipantCount: g * h, dynamicParticipantWidth: d / g }
+          s = Object(y.b)(h.a.theme),
+          c = h.a.theme.spacesPx.space40,
+          u = a * Q - c - t.height,
+          l = r > h.a.theme.breakpoints.medium ? Math.min(K, r * Z) : r,
+          p = o.getHorizontal(l),
+          d = s.getHeight(),
+          f = s.getWidth(),
+          _ = Math.min(4, Math.floor(u / d)),
+          v = 4 === _ ? 3 : 4,
+          m = Math.min(v, Math.floor(p / f))
+        return { maxDisplayParticipantCount: m * _, dynamicParticipantWidth: p / m }
       }
-      var Z = 600,
-        Y = 0.8,
+      var K = 600,
+        Z = 0.8,
         Q = 1,
         $ = n('4EYz'),
-        ee = n('s1N3'),
-        te = n('i4Oy'),
-        ne = n('VKFJ')
-      function ae(e) {
-        var t = e.shellLayout
-        if (!t) return null
-        var n = ie(te.a.get('window')),
-          a = J(ie(t), n),
-          r = e.cohosts,
-          i = e.host,
-          c = e.participants,
-          s = []
-        i && s.push({ user: i, kind: ne.a.host })
+        tt = n('s1N3'),
+        et = n('i4Oy'),
+        nt = n('VKFJ')
+      function it(t) {
+        var e = t.shellLayout
+        if (!e) return null
+        var n = at(et.a.get('window')),
+          i = Y(at(e), n),
+          r = t.cohosts,
+          a = t.host,
+          s = t.participants,
+          c = []
+        a && c.push({ user: a, kind: nt.a.host })
         for (
-          var l = Object(ee.a)(r, function (e) {
-              return e.twitter_screen_name
-            }).map(function (e) {
-              return { user: e, kind: ne.a.cohost }
+          var u = Object(tt.a)(r, function (t) {
+              return t.twitter_screen_name
+            }).map(function (t) {
+              return { user: t, kind: nt.a.cohost }
             }),
-            u = 0;
-          u < l.length && !(s.length >= a.maxDisplayParticipantCount);
-          u++
+            l = 0;
+          l < u.length && !(c.length >= i.maxDisplayParticipantCount);
+          l++
         )
-          s.push(l[u])
+          c.push(u[l])
         for (
-          var d = Object(ee.a)(c.speakers, function (e) {
-              return e.twitter_screen_name
-            }).map(function (e) {
-              return { user: e, kind: ne.a.speaker }
+          var p = Object(tt.a)(s.speakers, function (t) {
+              return t.twitter_screen_name
+            }).map(function (t) {
+              return { user: t, kind: nt.a.speaker }
             }),
-            p = 0;
-          p < d.length && !(s.length >= a.maxDisplayParticipantCount);
-          p++
+            d = 0;
+          d < p.length && !(c.length >= i.maxDisplayParticipantCount);
+          d++
         )
-          s.push(d[p])
-        for (var m = 0; m < c.listeners.length && !(s.length >= a.maxDisplayParticipantCount); m++) {
-          var f = c.listeners[m]
-          f && e._temp_omitByScreenName !== f.twitter_screen_name && s.push({ user: f, kind: ne.a.listener })
+          c.push(p[d])
+        for (var f = 0; f < s.listeners.length && !(c.length >= i.maxDisplayParticipantCount); f++) {
+          var h = s.listeners[f]
+          h && t._temp_omitByScreenName !== h.twitter_screen_name && c.push({ user: h, kind: nt.a.listener })
         }
-        var h = c.total || l.length + d.length,
-          v = Math.max(0, h - s.length)
+        var _ = s.total || u.length + p.length,
+          v = Math.max(0, _ - c.length)
         return o.a.createElement(
           o.a.Fragment,
           null,
           o.a.createElement(
-            A.a,
-            { style: re.participantsGridContainer },
+            D.a,
+            { style: rt.participantsGridContainer },
             o.a.createElement(
-              A.a,
-              { style: re.participantsGridContent },
-              s.map(function (e, t) {
+              D.a,
+              { style: rt.participantsGridContent },
+              c.map(function (t, e) {
                 return o.a.createElement(y.a, {
-                  hasNftAvatar: e.user.has_nft_avatar,
-                  isVerified: e.user.is_verified,
-                  key: e.user.twitter_screen_name,
-                  kind: e.kind,
-                  name: e.user.display_name,
-                  profile_image_url_https: e.user.avatar_url,
-                  screenName: e.user.twitter_screen_name,
-                  width: a.dynamicParticipantWidth,
+                  hasNftAvatar: t.user.has_nft_avatar,
+                  isVerified: t.user.is_verified,
+                  key: t.user.twitter_screen_name,
+                  kind: t.kind,
+                  name: t.user.display_name,
+                  profile_image_url_https: t.user.avatar_url,
+                  screenName: t.user.twitter_screen_name,
+                  width: i.dynamicParticipantWidth,
                 })
               }),
             ),
           ),
-          o.a.createElement($.a, { audioSpaceId: e.audioSpaceId, count: v, interactive: !1 }),
+          o.a.createElement($.a, { audioSpaceId: t.audioSpaceId, count: v, interactive: !1 }),
         )
       }
-      var re = f.a.create(function (e) {
+      var rt = h.a.create(function (t) {
         return {
           participantsGridContainer: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' },
           participantsGridContent: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' },
         }
       })
-      function ie(e) {
-        var t = e.height
-        return { width: e.width, height: t }
+      function at(t) {
+        var e = t.height
+        return { width: t.width, height: e }
       }
-      var oe = n('ISLN')
-      function ce(e) {
-        var t = e.space
-        if (!t) return null
-        var n = b.a.loggedInUser(),
-          a = n && n.screen_name
+      var ot = n('ISLN')
+      function st(t) {
+        var e = t.space
+        if (!e) return null
+        var n = g.a.loggedInUser(),
+          i = n && n.screen_name
         return o.a.createElement(
           o.a.Fragment,
           null,
-          o.a.createElement(ae, {
-            _temp_omitByScreenName: a,
-            audioSpaceId: t.rest_id,
-            cohosts: t.cohosts,
-            host: t.host,
-            participants: t.participants,
-            shellLayout: e.shellLayout,
+          o.a.createElement(it, {
+            _temp_omitByScreenName: i,
+            audioSpaceId: e.rest_id,
+            cohosts: e.cohosts,
+            host: e.host,
+            participants: e.participants,
+            shellLayout: t.shellLayout,
           }),
           o.a.createElement(
-            A.a,
-            { style: le.joinSubtitleContainer },
+            D.a,
+            { style: ut.joinSubtitleContainer },
             o.a.createElement(
-              m.b,
-              { align: 'center', numberOfLines: 1, size: 'subtext2', style: le.joinSubtitle },
-              se.spaceJoinSubtitle,
+              f.b,
+              { align: 'center', numberOfLines: 1, size: 'subtext2', style: ut.joinSubtitle },
+              ct.spaceJoinSubtitle,
             ),
           ),
           o.a.createElement(
-            A.a,
-            { style: le.joinButtonContainer },
+            D.a,
+            { style: ut.joinButtonContainer },
             o.a.createElement(
-              oe.a,
+              ot.a,
               {
-                accessibilityLabel: se.spaceJoin,
+                accessibilityLabel: ct.spaceJoin,
                 onPress: function () {
-                  e.onJoin(), e.onClose()
+                  t.onJoin(), t.onClose()
                 },
               },
               o.a.createElement(
-                m.b,
+                f.b,
                 { align: 'center', color: 'white', numberOfLines: 1, size: 'headline1', weight: 'bold' },
-                se.spaceJoin,
+                ct.spaceJoin,
               ),
             ),
           ),
         )
       }
-      var se = { spaceJoin: p.a.cc8f82bb, spaceJoinSubtitle: p.a.e51df2e6 },
-        le = f.a.create(function (e) {
+      var ct = { spaceJoin: d.a.cc8f82bb, spaceJoinSubtitle: d.a.e51df2e6 },
+        ut = h.a.create(function (t) {
           return {
-            joinSubtitleContainer: { width: '100%', marginTop: e.spacesPx.space20 },
-            joinSubtitle: { lineHeight: e.lineHeightsPx.subtext2 },
+            joinSubtitleContainer: { width: '100%', marginTop: t.spacesPx.space20 },
+            joinSubtitle: { lineHeight: t.lineHeightsPx.subtext2 },
             joinButtonContainer: {
               width: '100%',
-              paddingHorizontal: e.spaces.space20,
-              paddingVertical: e.spacesPx.space16,
+              paddingHorizontal: t.spaces.space20,
+              paddingVertical: t.spacesPx.space16,
             },
           }
         }),
-        ue = n('BXJq'),
-        de = n('VRZ4'),
-        pe = n('CDzS'),
-        me = n('Tg44')
-      function fe(e) {
-        var t = Object(ue.a)(e.broadcastId)
+        lt = n('BXJq'),
+        pt = n('VRZ4'),
+        dt = n('CDzS'),
+        ft = n('Tg44')
+      function ht(t) {
+        var e = Object(lt.a)(t.broadcastId)
         return o.a.createElement(
-          A.a,
-          { style: he.container },
+          D.a,
+          { style: _t.container },
           o.a.createElement(
-            A.a,
-            { style: he.cardContainer },
-            o.a.createElement(de.a, { audioSpaceId: e.broadcastId, withoutButton: !0 }),
+            D.a,
+            { style: _t.cardContainer },
+            o.a.createElement(pt.a, { audioSpaceId: t.broadcastId, withoutButton: !0 }),
           ),
           o.a.createElement(
-            pe.a.Default,
-            { style: he.ctaButton },
-            o.a.createElement(me.a.Button, {
+            dt.a.Default,
+            { style: _t.ctaButton },
+            o.a.createElement(ft.a.Button, {
               disablePassiveBackgroundColor: !0,
-              hasReminderSet: t.props.hasReminderSet,
+              hasReminderSet: e.props.hasReminderSet,
               isJoined: !1,
               isSmall: !1,
-              onClick: t.props.onClick,
-              scheduledStart: t.props.scheduledStart,
+              onClick: e.props.onClick,
+              scheduledStart: e.props.scheduledStart,
               state: 'NotStarted',
             }),
           ),
           o.a.createElement(
-            A.a,
-            { style: he.shareButtonContainer },
-            o.a.createElement(j.a, { audioSpaceId: e.broadcastId }),
+            D.a,
+            { style: _t.shareButtonContainer },
+            o.a.createElement(L.a, { audioSpaceId: t.broadcastId }),
           ),
         )
       }
-      var he = f.a.create(function (e) {
-        var t = { width: '100%', paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space48 }
+      var _t = h.a.create(function (t) {
+        var e = { width: '100%', paddingHorizontal: t.spaces.space8, paddingBottom: t.spaces.space48 }
         return {
-          cardContainer: { paddingBottom: e.spaces.space32 },
-          container: t,
-          ctaButton: { width: '100%', marginTop: e.spaces.space32, borderRadius: e.borderRadii.infinite },
-          shareButtonContainer: { marginTop: e.spaces.space8 },
+          cardContainer: { paddingBottom: t.spaces.space32 },
+          container: e,
+          ctaButton: { width: '100%', marginTop: t.spaces.space32, borderRadius: t.borderRadii.infinite },
+          shareButtonContainer: { marginTop: t.spaces.space8 },
         }
       })
-      function ve(e) {
-        return o.a.createElement(m.b, { size: 'headline1', style: be.container, weight: 'bold' }, ge.message)
+      function vt(t) {
+        return o.a.createElement(f.b, { size: 'headline1', style: gt.container, weight: 'bold' }, mt.message)
       }
-      var ge = { message: p.a.h87bdd64 },
-        be = f.a.create(function (e) {
-          return { container: { paddingBottom: e.spaces.space48 } }
+      var mt = { message: d.a.h87bdd64 },
+        gt = h.a.create(function (t) {
+          return { container: { paddingBottom: t.spaces.space48 } }
         }),
-        ye = (n('LW0h'), n('7x/C'), n('cFuS'))
-      function Se(e) {
+        yt = (n('LW0h'), n('7x/C'), n('cFuS'))
+      function bt(t) {
         return o.a.createElement(
-          A.a,
-          { style: we.endedContainer },
+          D.a,
+          { style: wt.endedContainer },
           o.a.createElement(
-            m.b,
-            { align: 'center', style: we.endedTitle },
+            f.b,
+            { align: 'center', style: wt.endedTitle },
             o.a.createElement('span', { role: 'img' }, '🙉'),
           ),
-          o.a.createElement(m.b, { align: 'center', numberOfLines: 1, size: 'title4', weight: 'bold' }, Ee.spaceEnded),
+          o.a.createElement(f.b, { align: 'center', numberOfLines: 1, size: 'title4', weight: 'bold' }, Ot.spaceEnded),
           o.a.createElement(
-            m.b,
+            f.b,
             {
               align: 'center',
               color: 'gray700',
               numberOfLines: 1,
               size: 'body',
-              style: we.endedSubtitle,
+              style: wt.endedSubtitle,
               weight: 'bold',
             },
-            Ee.spaceEndedSubtitle,
+            Ot.spaceEndedSubtitle,
           ),
         )
       }
-      var Ee = { spaceEnded: p.a.cc5ab041, spaceEndedSubtitle: p.a.eadd5677 },
-        we = f.a.create(function (e) {
+      var Ot = { spaceEnded: d.a.cc5ab041, spaceEndedSubtitle: d.a.eadd5677 },
+        wt = h.a.create(function (t) {
           return {
-            endedContainer: { paddingBottom: e.spaces.space48 },
+            endedContainer: { paddingBottom: t.spaces.space48 },
             endedTitle: {
-              paddingBottom: e.spaces.space32,
-              fontSize: e.spaces.space64,
-              lineHeight: ''.concat(f.a.theme.spacesPx.space64 + f.a.theme.spacesPx.space20, 'px'),
+              paddingBottom: t.spaces.space32,
+              fontSize: t.spaces.space64,
+              lineHeight: ''.concat(h.a.theme.spacesPx.space64 + h.a.theme.spacesPx.space20, 'px'),
             },
-            endedSubtitle: { paddingTop: e.spaces.space12 },
+            endedSubtitle: { paddingTop: t.spaces.space12 },
           }
         }),
-        ke = n('hqDb'),
-        Ce = n('cHvH'),
-        xe = n('88ay'),
-        Ie = ['windowWidth']
-      function Pe(e, t) {
-        return o.a.createElement(xe.b, {
-          decoration: xe.e,
+        Nt = n('hqDb'),
+        Et = n('cHvH'),
+        St = n('88ay'),
+        Pt = ['windowWidth']
+      function Ct(t, e) {
+        return o.a.createElement(St.b, {
+          decoration: St.e,
           displayMode: 'UserCompact',
-          key: t,
-          promotedItemType: ye.c.USER,
-          style: e ? ze.userCellWide : ze.userCell,
-          userId: t,
+          key: e,
+          promotedItemType: yt.c.USER,
+          style: t ? xt.userCellWide : xt.userCell,
+          userId: e,
           withFollowsYou: !0,
         })
       }
-      function Te(e) {
-        return Pe(!1, e)
+      function jt(t) {
+        return Ct(!1, t)
       }
-      function Oe(e) {
-        return Pe(!0, e)
+      function At(t) {
+        return Ct(!0, t)
       }
-      function Le(e) {
-        var t = e.isWide,
-          n = e.label,
-          a = e.style,
-          r = e.users
+      function Vt(t) {
+        var e = t.isWide,
+          n = t.label,
+          i = t.style,
+          r = t.users
         return 0 === r.length
           ? null
           : o.a.createElement(
-              A.a,
-              { style: a },
+              D.a,
+              { style: i },
               o.a.createElement(
-                m.b,
+                f.b,
                 {
                   numberOfLines: 1,
                   size: 'headline2',
-                  style: t ? ze.endedSubtitleWide : ze.endedSubtitle,
+                  style: e ? xt.endedSubtitleWide : xt.endedSubtitle,
                   weight: 'bold',
                 },
                 n,
               ),
-              o.a.createElement(ke.a, { displayMode: 'UserCompact', renderUserCell: t ? Oe : Te, userIds: r }),
+              o.a.createElement(Nt.a, { displayMode: 'UserCompact', renderUserCell: e ? At : jt, userIds: r }),
             )
       }
-      function Re(e) {
-        var t,
+      function It(t) {
+        var e,
           n,
-          a = e.windowWidth,
-          r = E()(e, Ie),
-          i = r.space
-        if (!i) return o.a.createElement(Se, r)
-        var c = function (e) {
-            return Object(ee.a)(
-              (null == e
+          i = t.windowWidth,
+          r = O()(t, Pt),
+          a = r.space
+        if (!a) return o.a.createElement(bt, r)
+        var s = function (t) {
+            return Object(tt.a)(
+              (null == t
                 ? void 0
-                : e
-                    .map(function (e) {
-                      var t
-                      return null === (t = e.user) || void 0 === t ? void 0 : t.rest_id
+                : t
+                    .map(function (t) {
+                      var e
+                      return null === (e = t.user) || void 0 === e ? void 0 : e.rest_id
                     })
                     .filter(Boolean)) || [],
             )
           },
-          s = null === (t = i.host) || void 0 === t || null === (n = t.user) || void 0 === n ? void 0 : n.rest_id,
-          l = c(i.cohosts),
-          u = c(i.participants.speakers),
-          d = a > f.a.theme.breakpoints.medium
+          c = null === (e = a.host) || void 0 === e || null === (n = e.user) || void 0 === n ? void 0 : n.rest_id,
+          u = s(a.cohosts),
+          l = s(a.participants.speakers),
+          p = i > h.a.theme.breakpoints.medium
         return o.a.createElement(
-          A.a,
-          { style: d ? ze.endedContainerWide : ze.endedContainer },
+          D.a,
+          { style: p ? xt.endedContainerWide : xt.endedContainer },
           o.a.createElement(
-            A.a,
-            { style: ze.overflow },
-            o.a.createElement(Le, { isWide: d, label: Me.host, users: s ? [s] : [] }),
-            o.a.createElement(Le, {
-              isWide: d,
-              label: Me.cohosts({ hostCount: l.length }),
-              style: ze.userSectionPadding,
-              users: l,
-            }),
-            o.a.createElement(Le, {
-              isWide: d,
-              label: Me.speakers({ speakerCount: u.length }),
-              style: ze.userSectionPadding,
+            D.a,
+            { style: xt.overflow },
+            o.a.createElement(Vt, { isWide: p, label: Tt.host, users: c ? [c] : [] }),
+            o.a.createElement(Vt, {
+              isWide: p,
+              label: Tt.cohosts({ hostCount: u.length }),
+              style: xt.userSectionPadding,
               users: u,
+            }),
+            o.a.createElement(Vt, {
+              isWide: p,
+              label: Tt.speakers({ speakerCount: l.length }),
+              style: xt.userSectionPadding,
+              users: l,
             }),
           ),
         )
       }
-      function _e(e) {
-        return o.a.createElement(Ce.a, null, function (t) {
-          var n = t.windowWidth
-          return o.a.createElement(Re, r()({ windowWidth: n }, e))
+      function kt(t) {
+        return o.a.createElement(Et.a, null, function (e) {
+          var n = e.windowWidth
+          return o.a.createElement(It, r()({ windowWidth: n }, t))
         })
       }
-      var Me = { spaceEnded: p.a.ba55e824, host: p.a.cededf29, cohosts: p.a.aadbc746, speakers: p.a.hbd6035f },
-        ze = f.a.create(function (e) {
-          var t = { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 },
+      var Tt = { spaceEnded: d.a.ba55e824, host: d.a.cededf29, cohosts: d.a.aadbc746, speakers: d.a.hbd6035f },
+        xt = h.a.create(function (t) {
+          var e = { paddingTop: t.spaces.space12, paddingBottom: t.spaces.space4 },
             n = { width: '100%', maxHeight: 550, overflow: 'auto' }
           return {
             endedContainer: n,
-            endedContainerWide: u()(u()({}, n), {}, { paddingBottom: e.componentDimensions.gutterHorizontalPx }),
-            endedSubtitle: u()(u()({}, t), {}, { paddingHorizontal: e.componentDimensions.gutterHorizontalPx }),
-            endedSubtitleWide: u()(u()({}, t), {}, { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx }),
-            userCell: { paddingHorizontal: e.componentDimensions.gutterHorizontalPx },
-            userCellWide: { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx },
+            endedContainerWide: l()(l()({}, n), {}, { paddingBottom: t.componentDimensions.gutterHorizontalPx }),
+            endedSubtitle: l()(l()({}, e), {}, { paddingHorizontal: t.componentDimensions.gutterHorizontalPx }),
+            endedSubtitleWide: l()(l()({}, e), {}, { paddingHorizontal: 2 * t.componentDimensions.gutterHorizontalPx }),
+            userCell: { paddingHorizontal: t.componentDimensions.gutterHorizontalPx },
+            userCellWide: { paddingHorizontal: 2 * t.componentDimensions.gutterHorizontalPx },
             overflow: { overflow: 'visible' },
-            userSectionPadding: { paddingTop: e.spacesPx.space16 },
+            userSectionPadding: { paddingTop: t.spacesPx.space16 },
           }
         }),
-        je = n('21zW'),
-        He = n('MH+I')
-      function Ae(e) {
-        var t,
+        Lt = n('21zW'),
+        Rt = n('MH+I')
+      function Dt(t) {
+        var e,
           n,
-          a = null === (t = e.space) || void 0 === t ? void 0 : t.ended_at,
-          r = null === (n = e.space) || void 0 === n ? void 0 : n.started_at,
-          i = 0
+          i = null === (e = t.space) || void 0 === e ? void 0 : e.ended_at,
+          r = null === (n = t.space) || void 0 === n ? void 0 : n.started_at,
+          a = 0
         return (
-          null != a && null != r && (i = a - r),
-          o.a.createElement(Ce.a, null, function (t) {
+          null != i && null != r && (a = i - r),
+          o.a.createElement(Et.a, null, function (e) {
             var n,
-              a = t.windowWidth
+              i = e.windowWidth
             return o.a.createElement(
-              A.a,
-              { style: a > f.a.theme.breakpoints.medium ? Be.endedHeaderWide : Be.endedHeader },
+              D.a,
+              { style: i > h.a.theme.breakpoints.medium ? Ut.endedHeaderWide : Ut.endedHeader },
               o.a.createElement(
-                A.a,
+                D.a,
                 null,
-                o.a.createElement(A.a, { style: Be.closeButton }, e.closeButton),
+                o.a.createElement(D.a, { style: Ut.closeButton }, t.closeButton),
                 o.a.createElement(
-                  A.a,
-                  { style: Be.row },
+                  D.a,
+                  { style: Ut.row },
                   o.a.createElement(
-                    m.b,
-                    { color: 'gray700', size: 'subtext1', style: [Be.endedLabel, Be.upper], weight: 'bold' },
-                    De.ended,
+                    f.b,
+                    { color: 'gray700', size: 'subtext1', style: [Ut.endedLabel, Ut.upper], weight: 'bold' },
+                    Ft.ended,
                     ' ',
-                    o.a.createElement(je.a, null),
+                    o.a.createElement(Lt.a, null),
                   ),
-                  o.a.createElement(He.a, {
+                  o.a.createElement(Rt.a, {
                     color: 'gray700',
                     short: !0,
                     size: 'subtext1',
-                    style: Be.endedLabel,
-                    timeMs: i,
+                    style: Ut.endedLabel,
+                    timeMs: a,
                   }),
                 ),
               ),
               o.a.createElement(
-                m.b,
+                f.b,
                 { size: 'title2', weight: 'bold' },
-                null === (n = e.space) || void 0 === n ? void 0 : n.title,
+                null === (n = t.space) || void 0 === n ? void 0 : n.title,
               ),
             )
           })
         )
       }
-      var De = { ended: p.a.ba55e824 },
-        Be = f.a.create(function (e) {
+      var Ft = { ended: d.a.ba55e824 },
+        Ut = h.a.create(function (t) {
           return {
-            endedHeader: { paddingHorizontal: e.componentDimensions.gutterHorizontalPx },
-            endedHeaderWide: { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx },
+            endedHeader: { paddingHorizontal: t.componentDimensions.gutterHorizontalPx },
+            endedHeaderWide: { paddingHorizontal: 2 * t.componentDimensions.gutterHorizontalPx },
             endedLabel: { lineHeight: 38 },
             row: { flexDirection: 'row' },
             spaceBetween: { justifyContent: 'space-between' },
@@ -3693,1905 +1777,2691 @@
             closeButton: { alignItems: 'flex-start' },
           }
         })
-      function Ne(e) {
-        var t,
+      function Mt(t) {
+        var e,
           n,
-          a = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
-          i = Object(T.a)(e.broadcastId || '')
+          i = null === (e = t.location.state) || void 0 === e ? void 0 : e.origin,
+          a = Object(j.a)(t.broadcastId || '')
         o.a.useEffect(function () {
-          var e
+          var t
           return (
-            i.utils.is.joined && (e = setTimeout(s, 1e3)),
-            i.utils.scribe(':audiospace:preview:::impression', { origin: a }),
+            a.utils.is.joined && (t = setTimeout(c, 1e3)),
+            a.utils.scribe(':audiospace:preview:::impression', { origin: i }),
             function () {
-              clearTimeout(e)
+              clearTimeout(t)
             }
           )
         }, [])
-        var c = i.space
-        if (!c) return null
-        function s() {
-          e.history.goBackThroughModals()
+        var s = a.space
+        if (!s) return null
+        function c() {
+          t.history.goBackThroughModals()
         }
-        var l = u()(
-          u()({}, e),
+        var u = l()(
+          l()({}, t),
           {},
           {
-            space: c,
-            onClose: s,
+            space: s,
+            onClose: c,
             onJoin: function () {
-              return i.handlers.join(a)
+              return a.handlers.join(i)
             },
           },
         )
-        return null !== (n = i.space) && void 0 !== n && n.ticket_group_id
-          ? o.a.createElement(F, r()({}, l, { Content: ve }))
-          : i.utils.is.joined
-          ? o.a.createElement(F, r()({}, l, { Content: h }))
-          : i.utils.is.Running
-          ? o.a.createElement(F, r()({}, l, { Content: ce }))
-          : i.utils.is.NotStarted || i.utils.is.PrePublished
-          ? o.a.createElement(F, r()({}, l, { Content: fe, withoutDescription: !0 }))
-          : i.utils.is.loaded
+        return null !== (n = a.space) && void 0 !== n && n.ticket_group_id
+          ? o.a.createElement(H, r()({}, u, { Content: vt }))
+          : a.utils.is.joined
+          ? o.a.createElement(H, r()({}, u, { Content: _ }))
+          : a.utils.is.Running
+          ? o.a.createElement(H, r()({}, u, { Content: st }))
+          : a.utils.is.NotStarted || a.utils.is.PrePublished
+          ? o.a.createElement(H, r()({}, u, { Content: ht, withoutDescription: !0 }))
+          : a.utils.is.loaded
           ? o.a.createElement(
-              F,
-              r()({}, l, { Content: _e, CustomHeader: Ae, withoutDescription: !0, withoutPadding: !0 }),
+              H,
+              r()({}, u, { Content: kt, CustomHeader: Dt, withoutDescription: !0, withoutPadding: !0 }),
             )
-          : o.a.createElement(F, r()({}, l, { Content: h }))
+          : o.a.createElement(H, r()({}, u, { Content: _ }))
       }
-      function Fe(e) {
-        return o.a.createElement(c.a, e, o.a.createElement(Ve, e))
+      function Ht(t) {
+        return o.a.createElement(s.a, t, o.a.createElement(Bt, t))
       }
-      function Ve(e) {
-        var t = Object(s.a)(e.match)
-        return o.a.createElement(Ne, r()({}, e, { broadcastId: t }))
+      function Bt(t) {
+        var e = Object(c.a)(t.match)
+        return o.a.createElement(Mt, r()({}, t, { broadcastId: e }))
       }
     },
-    VKFJ: function (e, t, n) {
+    WrBE: function (t, e, n) {
       'use strict'
-      n.d(t, 'b', function () {
-        return p
-      }),
-        n.d(t, 'a', function () {
-          return m
-        })
-      var a,
-        r = n('KEM+'),
-        i = n.n(r),
-        o = n('RhWx'),
-        c = n.n(o),
-        s = (n('lTEL'), n('m9LP'), n('7x/C'), n('87if'), n('kYxP'), n('2G9S'), n('yH/f'), n('A7Vd')),
-        l = n('ERkP'),
-        u = n.n(l),
-        d = n('dgjd')
-      function p(e) {
-        var t = Object(d.a)(e),
-          n = t.space,
-          a = t.utils,
-          r = s.e()
-        return u.a.useMemo(
-          function () {
-            var e = new Map(),
-              t = [],
-              i = []
-            function o() {
-              var e = [].concat(t, i),
-                a = (null == n ? void 0 : n.participants.total) || 0,
-                r = Math.max(0, a - e.length)
-              return { all: e, speakers: t, listeners: i, otherParticipantsTotal: r }
-            }
-            function s(n, a, r) {
-              var o = a.twitter_screen_name
-              if (o && !e.has(o)) {
-                e.set(o, !0)
-                var c = { key: o, user: a, kind: n, periscopeUserId: r }
-                p.canParticipantSpeak(n) ? t.push(c) : i.push(c)
-              }
-            }
-            if (!n) return o()
-            n.host && s(m.host, n.host, n.host.periscope_user_id)
-            var l = [].concat(c()(n.cohosts), c()(n.participants.speakers))
-            a.is.replayable || l.push.apply(l, c()(n.participants.listeners))
-            for (var u = 0; u < l.length; u++) {
-              var d = l[u],
-                f = d.periscope_user_id
-              if (f)
-                r.get(f)
-                  ? u < n.cohosts.length
-                    ? s(m.cohost, d, f)
-                    : s(m.speaker, d, f)
-                  : a.is.replayable || s(m.listener, d, f)
-            }
-            return o()
-          },
-          [n, r, a.is.replayable],
-        )
-      }
-      ;(p.canParticipantSpeak = function (e) {
-        return Boolean(e && f[e])
-      }),
-        (p.isParticipantHost = function (e) {
-          return e === m.host
-        })
-      var m = Object.freeze({ host: 'host', cohost: 'cohost', speaker: 'speaker', listener: 'listener' }),
-        f = ((a = {}), i()(a, m.host, !0), i()(a, m.cohost, !0), i()(a, m.speaker, !0), a)
-    },
-    Xda3: function (e, t, n) {
-      'use strict'
-      n.d(t, 'c', function () {
-        return L
-      }),
-        n.d(t, 'a', function () {
-          return B
-        }),
-        n.d(t, 'b', function () {
-          return N
-        })
-      var a = n('1Pcy'),
-        r = n.n(a),
-        i = n('5Yy7'),
-        o = n.n(i),
-        c = n('2VqO'),
-        s = n.n(c),
-        l = n('RhWx'),
-        u = n.n(l),
-        d = n('VrFO'),
-        p = n.n(d),
-        m = n('Y9Ll'),
-        f = n.n(m),
-        h = n('KEM+'),
-        v = n.n(h),
-        g =
-          (n('7x/C'),
-          n('JtPf'),
-          n('TJCb'),
-          n('DZ+c'),
-          n('jwue'),
-          n('+oxZ'),
-          n('0zG9'),
-          n('lZm3'),
-          n('yH/f'),
-          n('KqXw'),
-          n('MvUL'),
-          n('2C8o')),
-        b = n('HmZq'),
-        y = n('Q/sS'),
-        S = n('A7Vd'),
-        E = n('Pc/x'),
-        w = n('Chkh'),
-        k = n('b2fv'),
-        C = n('SrIh'),
-        x = n('fEA7'),
-        I = n.n(x),
-        P = '/chatapi/v1/chatnow',
-        T = '/chatapi/v1/history',
-        O = null
-      function L() {
-        var e
-        null === (e = O) || void 0 === e || e.disconnect(), (O = null), w.a.reset(), g.b()
-      }
-      S.d.subscribe(
-        function (e) {
-          return e.chatToken
-        },
-        function (e) {
-          e &&
-            (function (e) {
-              L(),
-                new R(e).connect().then(function (e) {
-                  w.a.start(), (O = e)
-                })
-            })(e)
-        },
-      )
-      var R = (function () {
-          function e(t) {
-            var n = this
-            p()(this, e),
-              v()(this, 'session', null),
-              v()(this, 'socket', null),
-              v()(this, 'socketState', H.Uninitialized),
-              v()(this, 'handleOnOpen', function () {
-                n.authAndJoinRoom(), (n.socketState = H.Connected)
-              }),
-              v()(this, 'handleOnMessage', function (e) {
-                if ('string' == typeof e.data) {
-                  var t = JSON.parse(e.data)
-                  if (t.kind === A.Chat) {
-                    var n = t.payload,
-                      a = t.signature,
-                      r = new j(n, { signature: a })
-                    w.a.publish(r)
-                  }
-                }
-              }),
-              (this.chatToken = t)
-          }
-          return (
-            f()(e, [
-              {
-                key: 'connect',
-                value: function () {
-                  var e = this
-                  return new Promise(function (t, n) {
-                    E.a.proxsee
-                      .accessChat(e.chatToken)
-                      .then(
-                        function (n) {
-                          return (e.session = n), y.i.getState().isReplay ? e.loadChatHistory() : e.openSocket(), t(e)
-                        },
-                        function (e) {
-                          return n(e)
-                        },
-                      )
-                      .catch(function (e) {
-                        Object(C.a)(e)
-                      })
-                  })
-                },
-              },
-              {
-                key: 'disconnect',
-                value: function () {
-                  this.closeSocket(), (this.session = null)
-                },
-              },
-              {
-                key: 'openSocket',
-                value: function () {
-                  if (this.session) {
-                    var e = this.session.endpoint.replace('https://', 'wss://') + P
-                    this.closeSocket()
-                    try {
-                      ;(this.socketState = H.Opening),
-                        (this.socket = new WebSocket(e)),
-                        (this.socket.onopen = this.handleOnOpen),
-                        (this.socket.onmessage = this.handleOnMessage)
-                    } catch (t) {
-                      Object(C.a)(t), (this.socketState = H.Error)
-                    }
-                  }
-                },
-              },
-              {
-                key: 'closeSocket',
-                value: function () {
-                  this.socket &&
-                    ((this.socket.onopen = function () {}),
-                    (this.socket.onmessage = function () {}),
-                    (this.socket.onclose = function () {}),
-                    this.socket.close()),
-                    (this.socket = null),
-                    (this.socketState = H.Closed)
-                },
-              },
-              {
-                key: 'authAndJoinRoom',
-                value: function () {
-                  if (this.session) {
-                    var e,
-                      t,
-                      n = this.session,
-                      a = n.access_token,
-                      r = n.room_id
-                    null === (e = this.socket) || void 0 === e || e.send(z.build(a).toString()),
-                      null === (t = this.socket) || void 0 === t || t.send(M.buildJoin(r).toString())
-                  }
-                },
-              },
-              {
-                key: 'loadChatHistory',
-                value: function () {
-                  var e = this,
-                    t = this.session || {},
-                    n = t.access_token,
-                    a = t.endpoint
-                  if (!n || !a) return Promise.resolve([])
-                  try {
-                    return new Promise(function (t, r) {
-                      var i = [],
-                        o = ''
-                      !(function r(c) {
-                        if (c) {
-                          var s = c.cursor,
-                            l = c.messages
-                          if (!s) return b.onCompleteHistory(), t(i)
-                          ;(o = s), e.handleHistoryMessages(l), i.push.apply(i, u()(l))
-                        }
-                        E.a.proxsee.getChatHistory({ access_token: n, host: a, path: T, cursor: o }).then(r)
-                      })()
-                    })
-                  } catch (r) {
-                    Object(C.a)(r)
-                  }
-                },
-              },
-              {
-                key: 'handleHistoryMessages',
-                value: function (e) {
-                  var t = []
-                  e.forEach(function (e) {
-                    if (e.kind === A.Chat) {
-                      var n = e.payload,
-                        a = e.signature
-                      t.push(new j(n, { signature: a }))
-                    }
-                  }),
-                    b.insert.apply(b, t)
-                },
-              },
-            ]),
-            e
-          )
-        })(),
-        _ = (function () {
-          function e(t, n) {
-            p()(this, e), (this.payload = t), (this.kind = n)
-          }
-          return (
-            f()(e, [
-              {
-                key: 'toString',
-                value: function () {
-                  var e = this.payload,
-                    t = this.kind
-                  return JSON.stringify({ payload: e, kind: t })
-                },
-              },
-            ]),
-            e
-          )
-        })(),
-        M = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            var a
-            return p()(this, n), (a = t.call(this, e, A.Control)), v()(r()(a), 'data', {}), (a.data = JSON.parse(e)), a
-          }
-          return (
-            f()(n, null, [
-              {
-                key: 'buildJoin',
-                value: function (e) {
-                  return new n(JSON.stringify({ body: JSON.stringify({ room: e }), kind: D.Join }))
-                },
-              },
-            ]),
-            n
-          )
-        })(_),
-        z = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            return p()(this, n), t.call(this, e, A.Auth)
-          }
-          return (
-            f()(n, null, [
-              {
-                key: 'build',
-                value: function (e) {
-                  return new n(JSON.stringify({ access_token: e }))
-                },
-              },
-            ]),
-            n
-          )
-        })(_),
-        j = (function (e) {
-          o()(n, e)
-          var t = s()(n)
-          function n(e) {
-            var a,
-              i,
-              o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-            p()(this, n), (i = t.call(this, e, A.Chat)), v()(r()(i), 'data', {}), v()(r()(i), 'body', {})
-            var c = o.currentNtpTimeInSeconds,
-              s = o.isReplay,
-              l = o.signature
-            return (
-              (i.data = JSON.parse(e)),
-              (i.body = ((null === (a = i.data) || void 0 === a ? void 0 : a.body) && JSON.parse(i.data.body)) || {}),
-              i.setUuid(l),
-              i.setTime(c, s),
-              (i.type = i.body.type),
-              (i.ntpTimeInSeconds = i.body.ntpTimeInSeconds),
-              (i.timestamp = i.body.timestamp),
-              i
-            )
-          }
-          return (
-            f()(n, [
-              {
-                key: 'setUuid',
-                value: function (e) {
-                  this.body.uuid = e || this.body.uuid || I.a.v4()
-                },
-              },
-              {
-                key: 'setTime',
-                value: function () {
-                  var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
-                    t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = t && !!this.body.ntpForBroadcasterFrame,
-                    a = n ? this.body.ntpForBroadcasterFrame : this.body.ntpForLiveFrame || e,
-                    r = parseFloat(a / 4294967296)
-                  ;(this.body.ntpTimeInSeconds = r), (this.body.timestamp = Object(k.b)(r).getTime())
-                },
-              },
-              {
-                key: 'isEqual',
-                value: function (e) {
-                  return !(!this.body.uuid || !e.body.uuid) && this.body.uuid === e.body.uuid
-                },
-              },
-            ]),
-            n
-          )
-        })(_),
-        H = Object.freeze({
-          Uninitialized: 'UNINITIALIZED',
-          Opening: 'OPENING',
-          Connected: 'CONNECTED',
-          Error: 'ERROR',
-          Closed: 'CLOSED',
-        }),
-        A = Object.freeze({ Chat: 1, Control: 2, Auth: 3 }),
-        D = Object.freeze({ Join: 1, Leave: 2, Roster: 3, Presence: 4, Ban: 8 }),
-        B = Object.freeze({
-          Unknown: 0,
-          Chat: 1,
-          Heart: 2,
-          Join: 3,
-          Location: 4,
-          BroadcastEnded: 5,
-          InviteFollowers: 6,
-          BroadcastStartedLocally: 7,
-          BroadcasterUploadedReplay: 8,
-          Timestamp: 9,
-          LocalPromptToFollowBroadcaster: 10,
-          LocalPromptToShareBroadcast: 11,
-          BroadcasterBlockedViewer: 12,
-          SubscriberSharedOnTwitter: 13,
-          SubscriberBlockedViewer: 14,
-          SubscriberSharedOnFacebook: 15,
-          Screenshot: 16,
-          Sentence: 29,
-          Sparkle: 36,
-          FirstSparkle: 37,
-          CommentMuted: 39,
-          HydraControlMessage: 40,
-          CommentMutedByModerator: 41,
-          CommentUnmutedByModerator: 42,
-          LocalShouldReportGuestUser: 43,
-          UserIsTyping: 44,
-          ServerAudioTranscription: 45,
-          ChatCaption: 201,
-        }),
-        N = Object.freeze({ RemoveParticipant: 15 })
-    },
-    Z5jE: function (e, t, n) {
-      'use strict'
-      function a(e) {
-        return e.params.broadcastId || ''
-      }
-      n.d(t, 'a', function () {
-        return a
-      })
-    },
-    Zg3A: function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
-        l = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
-            'svg',
-            r()(
-              r()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [c.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            o.a.createElement(
-              'g',
-              null,
-              o.a.createElement('path', {
-                d: 'M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm8.472 9.442c-.242.19-.472.368-.63.486-.68-1.265-1.002-1.78-1.256-2.007-.163-.145-.37-.223-.78-.375-.367-.136-1.482-.55-1.65-.85-.087-.153.136-.602.23-.793.088-.177.164-.33.196-.497.123-.646-.33-1.146-.728-1.59-.066-.072-.153-.17-.23-.26.335-.12.862-.26 1.42-.384 1.95 1.448 3.26 3.704 3.428 6.272zm-9.788-7.83c.076.25.145.5.182.678-.255.15-.663.363-.96.52-.262.136-.522.273-.738.392-.247.137-.442.234-.6.313-.347.174-.598.3-.833.553-.068.073-.26.278-1.02 1.886l-1.79-.656c1.293-1.94 3.362-3.31 5.76-3.685zM12 20.5c-4.687 0-8.5-3.813-8.5-8.5 0-1.197.25-2.335.7-3.37.47.182 1.713.66 2.75 1.035-.107.336-.245.854-.26 1.333-.03.855.502 1.7.562 1.792.053.08.12.15.2.207.303.21.687.5.827.616.063.343.166 1.26.23 1.833.144 1.266.175 1.48.24 1.65.005.012.514 1.188 1.315 1.188.576-.003.673-.206 1.855-2.688.244-.512.45-.95.513-1.058.1-.144.597-.61.87-.83.55-.442.76-1.82.413-2.682-.335-.83-1.92-2.08-2.5-2.195-.17-.033-.43-.04-.953-.053-.497-.01-1.25-.028-1.536-.09-.098-.024-.314-.094-.605-.196.32-.668.627-1.28.71-1.4.05-.052.168-.112.408-.234.17-.086.383-.192.653-.34.208-.116.458-.247.71-.38 1.168-.612 1.484-.8 1.658-1.082.11-.177.263-.44-.04-1.544 1.042.027 2.038.24 2.955.61-.89.32-1.024.595-1.106.77-.367.784.256 1.475.667 1.93.096.107.24.268.32.38l-.017.036c-.234.472-.67 1.35-.196 2.194.406.72 1.384 1.13 2.437 1.52.134.05.25.092.33.126.16.208.496.79 1 1.735l.154.285c.078.14.33.505.842.505.167 0 .363-.04.59-.137.032-.013.083-.035.18-.094C19.72 17.405 16.22 20.5 12 20.5zm-3.812-9.45c.01-.285.102-.646.184-.907l.027.006c.397.09 1.037.11 1.83.13.32.006.59.008.615 0 .326.143 1.355 1 1.483 1.31.113.28.05.812-.034 1.01-.233.197-.845.735-1.085 1.078-.093.13-.212.373-.64 1.274-.133.276-.313.654-.488 1.013-.026-.225-.054-.472-.08-.686-.225-2.003-.273-2.22-.42-2.445-.05-.078-.202-.31-1.135-.973-.117-.213-.268-.564-.26-.813z',
-              }),
-            ),
-          )
-        }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-    },
-    abiO: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return D
-      })
-      var a = n('KEM+'),
-        r = n.n(a),
-        i = n('yiKp'),
-        o = n.n(i),
-        c = n('ddV6'),
-        s = n.n(c),
-        l = n('97Jx'),
-        u = n.n(l),
-        d = (n('ho0z'), n('2G9S'), n('ERkP')),
-        p = n.n(d),
-        m = n('t62R'),
-        f = n('/yvb'),
-        h = n('n4Eu'),
-        v = n('3XMw'),
-        g = n.n(v),
-        b = n('cm6r'),
-        y = n('/NU0'),
-        S = n('wD1h'),
-        E = n('Oe3h'),
-        w = n('0FVZ'),
-        k = n('pjBI'),
-        C = n('FBXD'),
-        x = n('9RkS'),
-        I = n('rHpw'),
-        P = n('MH+I'),
-        T = n('oSwX'),
-        O = n('jV+4'),
-        L = n('MWbm'),
-        R = n('kRXa'),
-        _ = n('5Ixf'),
-        M = n('AtEG'),
-        z = n('hOZg')
-      function j(e) {
-        var t = U(e.onDockPress),
-          n = U(e.onUserPress),
-          a = U(e.onRequestClose),
-          r = U(e.onTogglePlayback)
-        return p.a.createElement(
-          p.a.Fragment,
-          null,
-          p.a.createElement(
-            L.a,
-            { style: F.sliderContainer },
-            p.a.createElement(D.SeekSlider, {
-              durationMs: e.durationMs,
-              externalSeeking: e.isSeeking,
-              onSeek: e.onSeek,
-              onSliderActive: e.onSliderActive,
-              progressMs: e.progressMs,
-            }),
-          ),
-          p.a.createElement(
-            L.a,
-            { style: F.dockContentRow },
-            p.a.createElement(T.default, {
-              accessibilityHidden: !0,
-              focusable: !1,
-              onClick: n,
-              screenName: e.user.screen_name,
-              size: 'large',
-              uri: e.user.profile_image_url_https,
-              withLink: !0,
-            }),
-            p.a.createElement(
-              L.a,
-              { style: F.dockContentTitle },
-              p.a.createElement(
-                k.a,
-                { size: 'subtext2' },
-                p.a.createElement(O.a, {
-                  isVerified: e.user.verified,
-                  name: e.user.name,
-                  nameSize: 'subtext2',
-                  onLinkClick: n,
-                  screenName: e.user.screen_name,
-                  screenNameSize: 'subtext2',
-                  weight: 'normal',
-                  withLink: !0,
-                }),
-                p.a.createElement(P.a, { size: 'subtext2', timeMs: e.durationMs }),
-              ),
-              p.a.createElement(m.b, { numberOfLines: 1, onPress: t, size: 'subtext2', weight: 'bold' }, e.title),
-            ),
-            p.a.createElement(
-              f.a,
-              u()(
-                {
-                  accessibilityLabel: e.isPlaying ? B.pause : B.play,
-                  icon: e.isPlaying ? p.a.createElement(_.a, null) : p.a.createElement(M.a, null),
-                  onPress: r,
-                  testID: 'togglePlayback',
-                },
-                N,
-              ),
-            ),
-            p.a.createElement(L.a, { style: F.dockContentButtonSpacer }),
-            p.a.createElement(
-              f.a,
-              u()({ accessibilityLabel: B.close, icon: p.a.createElement(z.a, null), onPress: a, testID: 'close' }, N),
-            ),
-          ),
-        )
-      }
-      function H(e) {
-        var t = U(e.onDockPress),
-          n = U(e.onRequestClose),
-          a = U(e.onTogglePlayback),
-          r = U(e.onUserPress),
-          i = p.a.useMemo(
-            function () {
-              var t,
-                n = null === (t = e.user.profile_image_extensions_media_color) || void 0 === t ? void 0 : t.palette
-              if (n) {
-                var a = h.a.get(n)
-                if (a) return W(a.rgb)
-              }
-              return I.a.theme.colors.primary
-            },
-            [e.user],
-          ),
-          o = e.isMuted ? B.unmute : B.mute
-        return p.a.createElement(
-          L.a,
-          { style: [V.wideContainer, V.wideContainerBorderRadius] },
-          p.a.createElement(
-            L.a,
-            { style: V.mainContentContainer },
-            p.a.createElement(
-              L.a,
-              { style: [V.wideAvatarContainer, { backgroundColor: i }] },
-              p.a.createElement(T.default, {
-                accessibilityHidden: !0,
-                focusable: !1,
-                onClick: r,
-                screenName: e.user.screen_name,
-                size: 'xLarge',
-                uri: e.user.profile_image_url_https,
-                withLink: !0,
-              }),
-            ),
-            p.a.createElement(
-              L.a,
-              { style: V.mainContent },
-              p.a.createElement(O.a, {
-                isVerified: e.user.verified,
-                name: e.user.name,
-                nameSize: 'subtext2',
-                onLinkClick: r,
-                screenName: e.user.screen_name,
-                screenNameSize: 'subtext2',
-                weight: 'normal',
-                withLink: !0,
-                withScreenName: !0,
-              }),
-              p.a.createElement(m.b, { numberOfLines: 2, onPress: t, size: 'subtext2', weight: 'bold' }, e.title),
-            ),
-          ),
-          p.a.createElement(
-            L.a,
-            { style: V.belowMainContent },
-            p.a.createElement(
-              L.a,
-              { style: V.slider },
-              p.a.createElement(D.SeekSlider, {
-                durationMs: e.durationMs,
-                externalSeeking: e.isSeeking,
-                onSeek: e.onSeek,
-                onSliderActive: e.onSliderActive,
-                progressMs: e.progressMs,
-                withTimes: !0,
-              }),
-            ),
-            p.a.createElement(
-              L.a,
-              { style: V.iconRow },
-              p.a.createElement(
-                R.a,
-                u()(
-                  {
-                    accessibilityLabelIcon: o,
-                    accessibilityLabelSlider: B.volumeSlider,
-                    isMuted: e.isMuted,
-                    onMuteToggle: e.onMuteToggle,
-                    onSliderChange: e.onVolumeChange,
-                    sliderColor: 'purple500',
-                    type: void 0,
-                    volumePercent: e.volume,
-                    withGraySliderTrack: !0,
-                    withNavigationSliderBackground: !0,
-                  },
-                  N,
-                ),
-              ),
-              p.a.createElement(
-                f.a,
-                u()(
-                  {
-                    accessibilityLabel: e.isPlaying ? B.pause : B.play,
-                    icon: e.isPlaying ? p.a.createElement(_.a, null) : p.a.createElement(M.a, null),
-                    onPress: a,
-                    testID: 'togglePlayback',
-                  },
-                  N,
-                ),
-              ),
-            ),
-          ),
-          p.a.createElement(
-            f.a,
-            u()(
-              {
-                accessibilityLabel: B.close,
-                icon: p.a.createElement(z.a, null),
-                onPress: n,
-                style: V.closeIcon,
-                testID: 'close',
-              },
-              N,
-            ),
-          ),
-        )
-      }
-      function A(e) {
-        var t,
-          n = p.a.useRef({}),
-          a = p.a.useRef(null),
-          i = e.isWide && V.wideContainerBorderRadius,
-          c = U(function () {
-            n.current.isSliderActive || e.onDockPress()
-          }),
-          s = p.a.useMemo(function () {
-            return function () {
-              a.current && a.current.focus()
-            }
-          }, [])
-        p.a.useEffect(
-          function () {
-            var t = (function (e) {
-              return function (t) {
-                switch (t.code) {
-                  case 'Space':
-                    return (
-                      (function (e) {
-                        e.preventDefault(), e.stopPropagation()
-                      })(t),
-                      e.onTogglePlayback()
-                    )
-                }
-              }
-            })(e)
-            return (
-              a.current && a.current.addEventListener('keydown', t),
-              function () {
-                a.current && a.current.removeEventListener('keydown', t)
-              }
-            )
-          },
-          [a.current, e.onTogglePlayback],
+      var i = n('4LIG'),
+        r = n('ERkP'),
+        a = n('sIe2'),
+        o = n('9Ulv'),
+        s = n('XJEr'),
+        c = n('Xo28'),
+        u = n('tI3i'),
+        l = n.n(u)
+      function p(t, e, n) {
+        var i = []
+        l()(
+          n[0] && n[0].nativeEvent,
+          'Native driven events only support animated values contained inside `nativeEvent`.',
         ),
-          p.a.useEffect(function () {
-            return function () {
-              clearTimeout(n.current.onSliderActiveTimeout)
-            }
-          }, [])
-        var l = e.title || B.untitled,
-          u = o()(
-            o()({}, e),
-            {},
-            {
-              title: l,
-              onSliderActive: function (e) {
-                clearTimeout(n.current.onSliderActiveTimeout),
-                  e
-                    ? (n.current.isSliderActive = e)
-                    : (n.current.onSliderActiveTimeout = setTimeout(function () {
-                        n.current.isSliderActive = e
-                      }, q))
-              },
-            },
-          )
-        return p.a.createElement(
-          S.a,
+          (function t(e, n) {
+            if (e instanceof o.a) e.__makeNative(), i.push({ nativeEventPath: n, animatedValueTag: e.__getNativeTag() })
+            else if ('object' == typeof e) for (var r in e) t(e[r], n.concat(r))
+          })(n[0].nativeEvent, [])
+        var r = Object(c.a)(t)
+        return (
+          null != r &&
+            i.forEach(function (t) {
+              s.a.API.addAnimatedEventToView(r, e, t)
+            }),
           {
-            enabled: !0,
-            handlers:
-              ((t = {}), r()(t, S.a.shortcuts.audio.dock, s), r()(t, S.a.shortcuts.audio.play, e.onTogglePlayback), t),
-          },
-          p.a.createElement(
-            b.a,
-            {
-              accessibilityLabel: B.voiceDock,
-              onPress: c,
-              ref: function (e) {
-                a.current = e
-              },
-              style: [F.container, i],
+            detach: function () {
+              null != r &&
+                i.forEach(function (t) {
+                  s.a.API.removeAnimatedEventFromView(r, e, t.animatedValueTag)
+                })
             },
-            p.a.createElement(
-              L.a,
-              { style: [F.innerContainer, i] },
-              e.isWide ? p.a.createElement(H, u) : p.a.createElement(j, u),
-            ),
-          ),
+          }
         )
       }
-      function D(e) {
-        var t = e.isWide ? w.a.DesktopVoiceTweetDock : w.a.MobileVoiceTweetDock,
-          n = [e.isWide ? [V.root, { maxWidth: e.width }] : F.root]
-        return p.a.createElement(
-          t,
-          null,
-          p.a.createElement(E.a, { id: 'VoiceTweetDock' }, function (t, a) {
-            return p.a.createElement(L.a, u()({ ref: t() }, a({ style: n })), p.a.createElement(A, e))
-          }),
-        )
-      }
-      D.SeekSlider = function (e) {
-        var t,
-          n = p.a.useRef({ isSliderActive: !1, lastSeekMs: -1 }),
-          a = p.a.useState(!1),
-          r = s()(a, 2),
-          i = r[0],
-          o = r[1],
-          c = p.a.useState(e.progressMs),
-          l = s()(c, 2),
-          u = l[0],
-          d = l[1]
-        function m(e) {
-          ;(n.current.lastSeekMs = e), d(e)
-        }
-        p.a.useEffect(
-          function () {
-            e.externalSeeking || (n.current.lastSeekMs = -1)
-          },
-          [e.externalSeeking],
-        ),
-          (t =
-            e.externalSeeking && u !== n.current.lastSeekMs ? e.progressMs : e.externalSeeking || i ? u : e.progressMs)
-        var f = p.a.createElement(x.a, {
-          accessibilityLabel: B.seekSlider,
-          color: 'purple500',
-          keepLTR: !0,
-          keyboardStep: 5e3,
-          max: e.durationMs,
-          min: 0,
-          onActive: function (t) {
-            e.onSliderActive && e.onSliderActive(t),
-              (n.current.isSliderActive = t),
-              t ? m(e.progressMs) : e.onSeek(u),
-              o(t)
-          },
-          onChange: function (t) {
-            n.current.isSliderActive ? m(t) : e.onSeek(t)
-          },
-          step: 'any',
-          value: t,
-          withGrayBackground: !0,
-          withHidingThumb: !0,
-        })
-        if (!e.withTimes) return f
-        var h = e.durationMs - t
-        return p.a.createElement(
-          L.a,
-          null,
-          p.a.createElement(L.a, { style: V.sliderRow }, p.a.createElement(L.a, { style: V.slider }, f)),
-          p.a.createElement(
-            L.a,
-            { style: V.sliderTimes },
-            p.a.createElement(P.a, { size: 'subtext2', timeMs: Object(y.a)(t) ? t : 0 }),
-            p.a.createElement(P.a, {
-              countdown: !0,
-              size: 'subtext2',
-              timeMs: Object(y.a)(h) ? h : 0,
-              withCountdownSymbol: !0,
-            }),
-          ),
-        )
-      }
-      var B = {
-          untitled: g.a.gfaaead7,
-          close: g.a.af8fa2ad,
-          pause: g.a.fb236727,
-          play: g.a.f17dfdb5,
-          voiceDock: g.a.cfd13f46,
-          unmute: g.a.b8b6344a,
-          mute: g.a.ec8ab8b4,
-          volumeSlider: g.a.c9a642f9,
-          seekSlider: g.a.hea01797,
-        },
-        N = { borderColor: 'transparent', color: 'text', size: 'medium' },
-        F = I.a.create(function (e) {
-          return {
-            root: {},
-            container: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall },
-            innerContainer: { backgroundColor: e.colors.navigationBackground },
-            sliderContainer: {
-              position: 'absolute',
-              zIndex: 1,
-              top: 0,
-              left: 0,
-              right: 0,
-              marginTop: -1 * e.spacesPx.space20,
-              transform: [{ translateY: e.spacesPx.space20 / 2 }],
-            },
-            dockContentRow: {
-              padding: e.spaces.space4,
-              flexDirection: 'row',
-              justifyContent: 'center',
-              alignItems: 'center',
-            },
-            dockContentTitle: {
-              marginHorizontal: e.spaces.space12,
-              marginVertical: e.spaces.space4,
-              flexDirection: 'column',
-              flex: 1,
-            },
-            dockContentButtonSpacer: { width: e.spaces.space12 },
+      var d = (function () {
+          function t(t, e) {
+            ;(this._listeners = []),
+              (this._argMapping = t),
+              null == e && (e = { useNativeDriver: !1 }),
+              e.listener && this.__addListener(e.listener),
+              (this._callListeners = this._callListeners.bind(this)),
+              (this._attachedEvent = null),
+              (this.__isNative = Object(s.c)(e))
           }
-        }),
-        V = I.a.create(function (e) {
-          var t = e.spaces.space16,
-            n = e.borderRadii.xLarge,
-            a = e.spaces.space4
-          return {
-            root: {
-              alignSelf: 'flex-end',
-              width: '100%',
-              marginVertical: e.spaces.space20,
-              marginRight: e.spaces.space20,
-            },
-            wideContainerBorderRadius: { borderRadius: n },
-            wideContainer: { padding: t, paddingRight: a },
-            wideAvatarContainer: { borderRadius: e.borderRadii.medium, padding: e.spaces.space12 },
-            mainContentContainer: { flexDirection: 'row' },
-            mainContent: {
-              marginLeft: e.spaces.space12,
-              marginRight: e.spaces.space40,
-              flex: 1,
-              flexDirection: 'column',
-            },
-            username: { color: e.colors.gray700 },
-            closeIcon: { position: 'absolute', top: a, right: a },
-            belowMainContent: { marginTop: e.spaces.space12, flexDirection: 'row' },
-            sliderRow: { flexDirection: 'row' },
-            slider: { flex: 1 },
-            sliderTimes: { flexDirection: 'row', justifyContent: 'space-between' },
-            iconRow: { marginLeft: e.spaces.space12, flexDirection: 'row', justifyContent: 'center' },
-          }
-        })
-      function U(e) {
-        return Object(C.a)(function (t) {
-          'function' == typeof e && e()
-        })
-      }
-      var W = function (e) {
-          var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1
-          return 'rgba('.concat(e.red, ', ').concat(e.green, ', ').concat(e.blue, ', ').concat(t, ')')
-        },
-        q = 200
-    },
-    b2fv: function (e, t, n) {
-      'use strict'
-      n.d(t, 'b', function () {
-        return i
-      }),
-        n.d(t, 'a', function () {
-          return o
-        })
-      var a = new Date('Jan 01 1900 GMT').getTime(),
-        r = new Date('Jan 01 1970 GMT').getTime() - a,
-        i = function (e) {
-          return new Date(1e3 * e - r)
-        },
-        o = function (e) {
-          return (e + r) / 1e3
-        }
-    },
-    dgjd: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return M
-      })
-      var a = n('ddV6'),
-        r = n.n(a),
-        i =
-          (n('tVqn'),
-          n('z84I'),
-          n('jwue'),
-          n('7x/C'),
-          n('+oxZ'),
-          n('+KXO'),
-          n('JtPf'),
-          n('IAdD'),
-          n('849X'),
-          n('TJCb'),
-          n('Q/sS')),
-        o = n('A7Vd'),
-        c = n('ERkP'),
-        s = n.n(c),
-        l = n('RqPI'),
-        u = n('QEWO'),
-        d = n('Pc/x'),
-        p = n('yiKp'),
-        m = n.n(p),
-        f = n('VrFO'),
-        h = n.n(f),
-        v = n('Y9Ll'),
-        g = n.n(v),
-        b = n('KEM+'),
-        y = n.n(b),
-        S = (n('KqXw'), n('Ysgh'), n('KOtZ'), n('2G9S'), n('cnVF')),
-        E = n('X04g'),
-        w = new ((function () {
-          function e() {
-            h()(this, e), y()(this, 'events', [])
-          }
+          var e = t.prototype
           return (
-            g()(e, [
-              {
-                key: 'createScribeFunction',
-                value: function (e) {
-                  var t = this
-                  return function (n, a) {
-                    var i = e.analytics.contextualScribeNamespace,
-                      o = m()(m()({}, e.details), {}, { scribe_context_namespace: i }, a),
-                      c = n.split(':'),
-                      s = r()(c, 6),
-                      l = { page: s[1], section: s[2], component: s[3], element: s[4], action: s[5] },
-                      u = Object.keys(l).reduce(function (e, t) {
-                        var n = l[t]
-                        return '*' === n || (e[t] = n || void 0), e
-                      }, {}),
-                      d = m()(
-                        m()({}, u),
-                        {},
-                        {
-                          action: u.action,
-                          data: { items: [{ item_type: E.a.ItemType.AUDIO_SPACE, audio_space_details: o }] },
-                        },
-                      )
-                    e.analytics.scribe(d),
-                      t.events.push({ event_name: ''.concat(S.w).concat(n), ts: Date.now(), audio_space_details: o }),
-                      t.timerId || t._scheduleNextPublish()
-                  }
-                },
-              },
-              {
-                key: '_publish',
-                value: function () {
-                  var e = this
-                  return d.a.proxsee.trackAudiospaceClientEvent(this.events).then(function () {
-                    ;(e.events = []), e._scheduleNextPublish()
-                  })
-                },
-              },
-              {
-                key: '_scheduleNextPublish',
-                value: function () {
-                  var e = this
-                  clearTimeout(this.timerId),
-                    (this.timerId = setTimeout(function () {
-                      return e._publish()
-                    }, 5e3))
-                },
-              },
-            ]),
-            e
+            (e.__addListener = function (t) {
+              this._listeners.push(t)
+            }),
+            (e.__removeListener = function (t) {
+              this._listeners = this._listeners.filter(function (e) {
+                return e !== t
+              })
+            }),
+            (e.__attach = function (t, e) {
+              l()(this.__isNative, 'Only native driven events need to be attached.'),
+                (this._attachedEvent = p(t, e, this._argMapping))
+            }),
+            (e.__detach = function (t, e) {
+              l()(this.__isNative, 'Only native driven events need to be detached.'),
+                this._attachedEvent && this._attachedEvent.detach()
+            }),
+            (e.__getHandler = function () {
+              var t = this
+              if (this.__isNative) return this._callListeners
+              return function () {
+                for (var e = arguments.length, n = new Array(e), i = 0; i < e; i++) n[i] = arguments[i]
+                var r = function t(e, n, i) {
+                  if (e instanceof o.a) 'number' == typeof n && e.setValue(n)
+                  else if ('object' == typeof e) for (var r in e) t(e[r], n[r], r)
+                }
+                t._argMapping.forEach(function (t, e) {
+                  r(t, n[e], 'arg' + e)
+                }),
+                  t._callListeners.apply(t, n)
+              }
+            }),
+            (e._callListeners = function () {
+              for (var t = arguments.length, e = new Array(t), n = 0; n < t; n++) e[n] = arguments[n]
+              this._listeners.forEach(function (t) {
+                return t.apply(void 0, e)
+              })
+            }),
+            t
           )
-        })())(),
-        k = n('nmVb'),
-        C = n.n(k),
-        x = n('kGix'),
-        I = n('3XMw'),
-        P = n.n(I),
-        T = n('b2fv'),
-        O = n('Tg44'),
-        L = n('Irs7'),
-        R = n('LxAE'),
-        _ = n('yUQf')
-      function M(e) {
-        var t,
-          n,
-          a,
-          c,
-          p,
-          m = Object(L.b)(),
-          f = Object(_.a)(l.n),
-          h = (function (e) {
-            var t = (function () {
-                var e = Object(R.a)(),
-                  t = r()(e.audioSpaces.cache, 2),
-                  n = t[0],
-                  a = t[1]
-                return {
-                  getAudioSpace: i,
-                  fetchAudioSpace: s,
-                  subscribeToScheduledSpace: o,
-                  unsubscribeFromScheduledSpace: c,
-                  reportSpaceFor: d.a.proxsee.reportSpaceFor,
-                  audioContext: e,
+        })(),
+        f = n('pxHa'),
+        h = n('BR0S')
+      function _(t, e) {
+        return (_ =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var v = (function (t) {
+          var e, n
+          function i(e) {
+            var n
+            return ((n = t.call(this) || this)._transforms = e), n
+          }
+          ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), _(e, n)
+          var r = i.prototype
+          return (
+            (r.__makeNative = function () {
+              this._transforms.forEach(function (t) {
+                for (var e in t) {
+                  var n = t[e]
+                  n instanceof f.a && n.__makeNative()
                 }
-                function i(e) {
-                  var t = n[e]
-                  return t || z(x.a.NONE)
+              }),
+                t.prototype.__makeNative.call(this)
+            }),
+            (r.__getValue = function () {
+              return this._transforms.map(function (t) {
+                var e = {}
+                for (var n in t) {
+                  var i = t[n]
+                  i instanceof f.a ? (e[n] = i.__getValue()) : (e[n] = i)
                 }
-                function o(e) {
-                  return d.a.subscribeToScheduledSpace(e).then(function () {
-                    return s(e)
-                  })
+                return e
+              })
+            }),
+            (r.__getAnimatedValue = function () {
+              return this._transforms.map(function (t) {
+                var e = {}
+                for (var n in t) {
+                  var i = t[n]
+                  i instanceof f.a ? (e[n] = i.__getAnimatedValue()) : (e[n] = i)
                 }
-                function c(e) {
-                  return d.a.unsubscribeFromScheduledSpace(e).then(function () {
-                    return s(e)
-                  })
+                return e
+              })
+            }),
+            (r.__attach = function () {
+              var t = this
+              this._transforms.forEach(function (e) {
+                for (var n in e) {
+                  var i = e[n]
+                  i instanceof f.a && i.__addChild(t)
                 }
-                function s(e, t) {
-                  var n,
-                    r = i(e)
-                  if ('number' == typeof t && r.status !== x.a.NONE && !((Date.now() - r.time) / 1e3 > t))
-                    return Promise.resolve(r)
-                  if (0 === e.trim().length) return Promise.resolve(r)
-                  function o(t) {
-                    var n = z(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
-                    a(function (t) {
-                      var a = Object.assign({}, t[e], n)
-                      return (t[e] = a), Object.assign({}, t)
-                    })
-                  }
-                  return d.a.initialized()
-                    ? (o(x.a.LOADING),
-                      d.a
-                        .audioSpace(e)
-                        .catch(function (e) {
-                          n = e
-                        })
-                        .then(function (e) {
-                          e ? o(x.a.LOADED, { data: e, error: void 0 }) : n && o(x.a.FAILED, { error: n })
-                        }))
-                    : Promise.reject(new Error('[useAudioSpaceMetadata] AudioModule not initialized'))
+              })
+            }),
+            (r.__detach = function () {
+              var e = this
+              this._transforms.forEach(function (t) {
+                for (var n in t) {
+                  var i = t[n]
+                  i instanceof f.a && i.__removeChild(e)
                 }
-              })(),
-              n = t.audioContext,
-              a = t.fetchAudioSpace,
-              i = t.getAudioSpace,
-              c = t.reportSpaceFor,
-              s = t.subscribeToScheduledSpace,
-              l = t.unsubscribeFromScheduledSpace
-            function u(t) {
-              return a(e, t)
-            }
-            function p() {
-              return i(e)
-            }
-            function m() {
-              return s(e)
-            }
-            function f() {
-              return l(e)
-            }
-            function h() {
-              var t = {}
+              }),
+                t.prototype.__detach.call(this)
+            }),
+            (r.__getNativeConfig = function () {
+              var t = []
               return (
-                Object.keys(c).forEach(function (n) {
-                  t[n] = function () {
-                    var t,
-                      a = o.a(),
-                      r = null === (t = p().data) || void 0 === t ? void 0 : t.started_at,
-                      i = { broadcast_id: e, ntp_timestamp: void 0, timecode: void 0 }
-                    if (a && a.id3NtpTime && r) {
-                      var s = Math.floor(a.id3NtpTime)
-                      ;(i.ntp_timestamp = s), (i.timecode = Math.floor((Object(T.b)(s) - r) / 1e3))
-                    }
-                    return c[n](i)
+                this._transforms.forEach(function (e) {
+                  for (var n in e) {
+                    var i = e[n]
+                    i instanceof f.a
+                      ? t.push({ type: 'animated', property: n, nodeTag: i.__getNativeTag() })
+                      : t.push({ type: 'static', property: n, value: s.a.transformDataType(i) })
                   }
                 }),
-                t
+                s.a.validateTransform(t),
+                { type: 'transform', transforms: t }
               )
-            }
-            return { fetch: u, get: p, subscribe: m, unsubscribe: f, audioContext: n, report: h() }
-          })(e),
-          v = h.audioContext,
-          g = h.report,
-          b = h.subscribe,
-          y = h.unsubscribe,
-          S = h.get(),
-          E = S.data,
-          k = null == E ? void 0 : E.state,
-          I = {
-            NotStarted: k === O.a.SpaceState.NotStarted,
-            PrePublished: k === O.a.SpaceState.PrePublished,
-            Running: k === O.a.SpaceState.Running,
-            TimedOut: k === O.a.SpaceState.TimedOut,
-            Ended: k === O.a.SpaceState.Ended,
-            Canceled: k === O.a.SpaceState.Canceled,
-            loaded: !!E || S.status === x.a.FAILED,
-            loading: S.status === x.a.LOADING,
-            error: S.status === x.a.FAILED && S.error,
-            joined:
-              (null === (t = v.activeItem) || void 0 === t ? void 0 : t.type) === u.a.space &&
-              (null === (n = v.activeItem) || void 0 === n ? void 0 : n.id) === e,
-            recording: !1,
-            replayable: !1,
-          }
-        function P() {
-          var e,
-            t,
-            n = null == E || null === (e = E.title) || void 0 === e ? void 0 : e.trim(),
-            a = null == E || null === (t = E.host) || void 0 === t ? void 0 : t.display_name
-          return n || (a ? H.title({ name: a }) : H.titleFallback)
-        }
-        null != E &&
-          E.is_space_available_for_replay &&
-          (I.Running ? (I.recording = !0) : (I.Ended || I.TimedOut) && (I.replayable = !0))
-        var M = 'live_not_recording'
-        null != E && E.is_space_available_for_replay && (M = I.Running ? 'live_recording' : 'replay')
-        var A = w.createScribeFunction({
-          analytics: m,
-          details: {
-            broadcast_id: e,
-            host_id:
-              null == E || null === (a = E.host) || void 0 === a || null === (c = a.user) || void 0 === c
-                ? void 0
-                : c.rest_id,
-            host_periscope_id: null == E || null === (p = E.host) || void 0 === p ? void 0 : p.periscope_user_id,
-            audio_space_start_type: null != E && E.scheduled_start ? 'scheduled' : 'adhoc',
-            audio_space_recording_type: M,
-            state: k,
-            is_logged_in: f,
-          },
-        })
-        var D = {
-            is: I,
-            title: P,
-            hashtags: function () {
-              return C()(P()).map(function (e) {
-                return '#'.concat(e)
-              })
-            },
-            scribe: A,
-            state: function () {
-              var e,
-                t = O.a.StateEnum
-              return (
-                I.loaded && I.error
-                  ? (e = t.unavailable)
-                  : I.replayable
-                  ? (e = t.replay)
-                  : I.Ended || I.TimedOut
-                  ? (e = t.ended)
-                  : I.Running
-                  ? (e = t.live)
-                  : I.NotStarted || I.PrePublished
-                  ? (e = t.scheduled)
-                  : I.Canceled && (e = t.canceled),
-                e
-              )
-            },
-            getTunedInCount: function () {
-              var e = E || {},
-                t = e.total_live_listeners,
-                n = e.total_replay_watched
-              return (null != t ? t : 0) + (null != n ? n : 0)
-            },
-          },
-          B = d.a.initialized(),
-          N = s.a.useRef({})
-        ;(N.current.utils = D),
-          (N.current.audioSpaceMetadata = h),
-          s.a.useEffect(
-            function () {
-              var e,
-                t = j
-              return (
-                B &&
-                  (function n() {
-                    var a = N.current.utils.is.loaded,
-                      r = N.current.utils.is.Running
-                    ;(a && !r) || (N.current.audioSpaceMetadata.fetch(t), (e = setTimeout(n, 1e3 * t)))
-                  })(),
-                function () {
-                  clearTimeout(e)
-                }
-              )
-            },
-            [B, e, k],
+            }),
+            i
           )
-        var F = {
-          subscribe: b,
-          unsubscribe: y,
-          report: g,
-          join: function (t) {
-            var n = E
-            n &&
-              d.a.proxsee.login().then(function () {
-                var a = D.is.Running || D.is.replayable,
-                  r = n.media_key
-                r &&
-                  a &&
-                  (D.is.replayable
-                    ? (i.f(n.started_at), D.scribe(':audiospace:replay:recording:play:click', { origin: t }))
-                    : i.e(),
-                  v.load.space(e, r, D.is.Running),
-                  D.scribe(':audiospace:event:join:listener:success', { origin: t }))
-              })
-          },
+        })(h.a),
+        m = n('YTr2')
+      function g(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
         }
-        return { space: E, audioContext: v, utils: D, handlers: F }
+        return n
       }
-      function z(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-          n = { status: e, time: Date.now() }
-        return t.data && (n.data = t.data), t.error && (n.error = t.error), n
+      function y(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? g(Object(n), !0).forEach(function (e) {
+                b(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : g(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
       }
-      var j = 15,
-        H = { title: P.a.b6d3e0ee, titleFallback: P.a.ab4fc8bb }
-    },
-    e5HP: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return M
-      })
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('5Yy7'),
-        s = n.n(c),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('KEM+'),
-        p = n.n(d),
-        m = n('ERkP'),
-        f = n.n(m),
-        h = n('t62R'),
-        v = n('3XMw'),
-        g = n.n(v),
-        b = n('rHpw'),
-        y = n('MWbm'),
-        S = n('yiKp'),
-        E = n.n(S),
-        w = n('Lsrn'),
-        k = n('k/Ka'),
-        C = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(k.a)(
-            'svg',
-            E()(
-              E()({}, e),
+      function b(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      function O(t, e) {
+        return (O =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var w = (function (t) {
+        var e, n
+        function i(e) {
+          var n
+          return (
+            (n = t.call(this) || this),
+            (e = Object(m.a)(e) || {}).transform && (e = y(y({}, e), {}, { transform: new v(e.transform) })),
+            (n._style = e),
+            n
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), O(e, n)
+        var r = i.prototype
+        return (
+          (r._walkStyleAndGetValues = function (t) {
+            var e = {}
+            for (var n in t) {
+              var i = t[n]
+              i instanceof f.a
+                ? i.__isNative || (e[n] = i.__getValue())
+                : i && !Array.isArray(i) && 'object' == typeof i
+                ? (e[n] = this._walkStyleAndGetValues(i))
+                : (e[n] = i)
+            }
+            return e
+          }),
+          (r.__getValue = function () {
+            return this._walkStyleAndGetValues(this._style)
+          }),
+          (r._walkStyleAndGetAnimatedValues = function (t) {
+            var e = {}
+            for (var n in t) {
+              var i = t[n]
+              i instanceof f.a
+                ? (e[n] = i.__getAnimatedValue())
+                : i && !Array.isArray(i) && 'object' == typeof i && (e[n] = this._walkStyleAndGetAnimatedValues(i))
+            }
+            return e
+          }),
+          (r.__getAnimatedValue = function () {
+            return this._walkStyleAndGetAnimatedValues(this._style)
+          }),
+          (r.__attach = function () {
+            for (var t in this._style) {
+              var e = this._style[t]
+              e instanceof f.a && e.__addChild(this)
+            }
+          }),
+          (r.__detach = function () {
+            for (var e in this._style) {
+              var n = this._style[e]
+              n instanceof f.a && n.__removeChild(this)
+            }
+            t.prototype.__detach.call(this)
+          }),
+          (r.__makeNative = function () {
+            for (var e in this._style) {
+              var n = this._style[e]
+              n instanceof f.a && n.__makeNative()
+            }
+            t.prototype.__makeNative.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            var t = {}
+            for (var e in this._style)
+              if (this._style[e] instanceof f.a) {
+                var n = this._style[e]
+                n.__makeNative(), (t[e] = n.__getNativeTag())
+              }
+            return s.a.validateStyles(t), { type: 'style', style: t }
+          }),
+          i
+        )
+      })(h.a)
+      function N(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function E(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? N(Object(n), !0).forEach(function (e) {
+                S(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : N(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function S(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      function P(t, e) {
+        return (P =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var C = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return (
+            (i = t.call(this) || this),
+            e.style && (e = E(E({}, e), {}, { style: new w(e.style) })),
+            (i._props = e),
+            (i._callback = n),
+            i.__attach(),
+            i
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), P(e, n)
+        var r = i.prototype
+        return (
+          (r.__getValue = function () {
+            var t = {}
+            for (var e in this._props) {
+              var n = this._props[e]
+              n instanceof f.a
+                ? (!n.__isNative || n instanceof w) && (t[e] = n.__getValue())
+                : (t[e] = n instanceof d ? n.__getHandler() : n)
+            }
+            return t
+          }),
+          (r.__getAnimatedValue = function () {
+            var t = {}
+            for (var e in this._props) {
+              var n = this._props[e]
+              n instanceof f.a && (t[e] = n.__getAnimatedValue())
+            }
+            return t
+          }),
+          (r.__attach = function () {
+            for (var t in this._props) {
+              var e = this._props[t]
+              e instanceof f.a && e.__addChild(this)
+            }
+          }),
+          (r.__detach = function () {
+            for (var e in (this.__isNative && this._animatedView && this.__disconnectAnimatedView(), this._props)) {
+              var n = this._props[e]
+              n instanceof f.a && n.__removeChild(this)
+            }
+            t.prototype.__detach.call(this)
+          }),
+          (r.update = function () {
+            this._callback()
+          }),
+          (r.__makeNative = function () {
+            if (!this.__isNative) {
+              for (var t in ((this.__isNative = !0), this._props)) {
+                var e = this._props[t]
+                e instanceof f.a && e.__makeNative()
+              }
+              this._animatedView && this.__connectAnimatedView()
+            }
+          }),
+          (r.setNativeView = function (t) {
+            this._animatedView !== t && ((this._animatedView = t), this.__isNative && this.__connectAnimatedView())
+          }),
+          (r.__connectAnimatedView = function () {
+            l()(this.__isNative, 'Expected node to be marked as "native"')
+            var t = Object(c.a)(this._animatedView)
+            l()(null != t, 'Unable to locate attached view in the native tree'),
+              s.a.API.connectAnimatedNodeToView(this.__getNativeTag(), t)
+          }),
+          (r.__disconnectAnimatedView = function () {
+            l()(this.__isNative, 'Expected node to be marked as "native"')
+            var t = Object(c.a)(this._animatedView)
+            l()(null != t, 'Unable to locate attached view in the native tree'),
+              s.a.API.disconnectAnimatedNodeFromView(this.__getNativeTag(), t)
+          }),
+          (r.__restoreDefaultValues = function () {
+            this.__isNative && s.a.API.restoreDefaultValues(this.__getNativeTag())
+          }),
+          (r.__getNativeConfig = function () {
+            var t = {}
+            for (var e in this._props) {
+              var n = this._props[e]
+              n instanceof f.a && (n.__makeNative(), (t[e] = n.__getNativeTag()))
+            }
+            return { type: 'props', props: t }
+          }),
+          i
+        )
+      })(f.a)
+      var j = function (t) {
+        var e = t.getForwardedRef,
+          n = t.setLocalRef
+        return function (t) {
+          var i = e()
+          n(t), 'function' == typeof i ? i(t) : 'object' == typeof i && null != i && (i.current = t)
+        }
+      }
+      function A() {
+        return (A =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      function V(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function I(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? V(Object(n), !0).forEach(function (e) {
+                k(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : V(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function k(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      function T(t, e) {
+        if (null == t) return {}
+        var n,
+          i,
+          r = {},
+          a = Object.keys(t)
+        for (i = 0; i < a.length; i++) (n = a[i]), e.indexOf(n) >= 0 || (r[n] = t[n])
+        return r
+      }
+      function x(t, e) {
+        return (x =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var L = 1
+      var R = function (t, e) {
+        l()(
+          'function' != typeof t || (t.prototype && t.prototype.isReactComponent),
+          '`createAnimatedComponent` does not support stateless functional components; use a class component instead.',
+        )
+        var n = (function (n) {
+          var i, a
+          function o() {
+            for (var t, e = arguments.length, i = new Array(e), r = 0; r < e; r++) i[r] = arguments[r]
+            return (
+              ((t = n.call.apply(n, [this].concat(i)) || this)._invokeAnimatedPropsCallbackOnMount = !1),
+              (t._eventDetachers = []),
+              (t._animatedComponentId = L++ + ':animatedComponent'),
+              (t._isFabric = function () {
+                var e, n, i, r, a, o
+                return (
+                  null != t._component &&
+                  (null !=
+                    (null == (e = t._component._internalInstanceHandle) || null == (n = e.stateNode)
+                      ? void 0
+                      : n.canonical) ||
+                    (null != t._component.getNativeScrollRef &&
+                      null != t._component.getNativeScrollRef() &&
+                      null !=
+                        (null == (i = t._component.getNativeScrollRef()._internalInstanceHandle) ||
+                        null == (r = i.stateNode)
+                          ? void 0
+                          : r.canonical)) ||
+                    (null != t._component.getScrollResponder &&
+                      null != t._component.getScrollResponder() &&
+                      null != t._component.getScrollResponder().getNativeScrollRef &&
+                      null != t._component.getScrollResponder().getNativeScrollRef() &&
+                      null !=
+                        (null == (a = t._component.getScrollResponder().getNativeScrollRef()._internalInstanceHandle) ||
+                        null == (o = a.stateNode)
+                          ? void 0
+                          : o.canonical)))
+                )
+              }),
+              (t._waitForUpdate = function () {
+                t._isFabric() && s.a.API.setWaitingForIdentifier(t._animatedComponentId)
+              }),
+              (t._markUpdateComplete = function () {
+                t._isFabric() && s.a.API.unsetWaitingForIdentifier(t._animatedComponentId)
+              }),
+              (t._animatedPropsCallback = function () {
+                if (null == t._component) t._invokeAnimatedPropsCallbackOnMount = !0
+                else if ('function' != typeof t._component.setNativeProps || t._isFabric()) t.forceUpdate()
+                else {
+                  if (t._propsAnimated.__isNative)
+                    throw new Error(
+                      'Attempting to run JS driven animation on animated node that has been moved to "native" earlier by starting an animation with `useNativeDriver: true`',
+                    )
+                  t._component.setNativeProps(t._propsAnimated.__getAnimatedValue())
+                }
+              }),
+              (t._setComponentRef = j({
+                getForwardedRef: function () {
+                  return t.props.forwardedRef
+                },
+                setLocalRef: function (e) {
+                  ;(t._prevComponent = t._component),
+                    (t._component = e),
+                    null != e &&
+                      null == e.getNode &&
+                      (e.getNode = function () {
+                        return e
+                      })
+                },
+              })),
+              t
+            )
+          }
+          ;(a = n), ((i = o).prototype = Object.create(a.prototype)), (i.prototype.constructor = i), x(i, a)
+          var c = o.prototype
+          return (
+            (c._attachNativeEvents = function () {
+              var t,
+                e = this,
+                n =
+                  null != (t = this._component) && t.getScrollableNode
+                    ? this._component.getScrollableNode()
+                    : this._component,
+                i = function (t) {
+                  var i = e.props[t]
+                  i instanceof d &&
+                    i.__isNative &&
+                    (i.__attach(n, t),
+                    e._eventDetachers.push(function () {
+                      return i.__detach(n, t)
+                    }))
+                }
+              for (var r in this.props) i(r)
+            }),
+            (c._detachNativeEvents = function () {
+              this._eventDetachers.forEach(function (t) {
+                return t()
+              }),
+                (this._eventDetachers = [])
+            }),
+            (c._attachProps = function (t) {
+              var e = this._propsAnimated
+              t !== e &&
+                ((this._propsAnimated = new C(t, this._animatedPropsCallback)),
+                e && (e.__restoreDefaultValues(), e.__detach()))
+            }),
+            (c.render = function () {
+              var n,
+                i,
+                a = this._propsAnimated.__getValue() || {},
+                o = a.style,
+                s = void 0 === o ? {} : o,
+                c = T(a, ['style']),
+                u = this.props.passthroughAnimatedPropExplicitValues || {},
+                l = u.style,
+                p = void 0 === l ? {} : l,
+                d = T(u, ['style']),
+                f = I(I({}, s), p),
+                h =
+                  (null == this._component && (!1 === (null == e ? void 0 : e.collapsable) || !0 !== c.collapsable)) ||
+                  this._isFabric(),
+                _ = (
+                  null !== (n = c.collapsable) && void 0 !== n
+                    ? n
+                    : this._propsAnimated.__isNative || h || !1 === (null == e ? void 0 : e.collapsable)
+                )
+                  ? { nativeID: null !== (i = c.nativeID) && void 0 !== i ? i : 'animatedComponent', collapsable: !1 }
+                  : {}
+              return r.createElement(t, A({}, c, d, _, { style: f, ref: this._setComponentRef }))
+            }),
+            (c.UNSAFE_componentWillMount = function () {
+              this._waitForUpdate(), this._attachProps(this.props)
+            }),
+            (c.componentDidMount = function () {
+              this._invokeAnimatedPropsCallbackOnMount &&
+                ((this._invokeAnimatedPropsCallbackOnMount = !1), this._animatedPropsCallback()),
+                this._propsAnimated.setNativeView(this._component),
+                this._attachNativeEvents(),
+                this._markUpdateComplete()
+            }),
+            (c.UNSAFE_componentWillReceiveProps = function (t) {
+              this._waitForUpdate(), this._attachProps(t)
+            }),
+            (c.componentDidUpdate = function (t) {
+              this._component !== this._prevComponent && this._propsAnimated.setNativeView(this._component),
+                (this._component === this._prevComponent && t === this.props) ||
+                  (this._detachNativeEvents(), this._attachNativeEvents()),
+                this._markUpdateComplete()
+            }),
+            (c.componentWillUnmount = function () {
+              this._propsAnimated && this._propsAnimated.__detach(),
+                this._detachNativeEvents(),
+                this._markUpdateComplete(),
+                (this._component = null),
+                (this._prevComponent = null)
+            }),
+            o
+          )
+        })(r.Component)
+        return r.forwardRef(function (t, e) {
+          return r.createElement(n, A({}, t, null == e ? null : { forwardedRef: e }))
+        })
+      }
+      function D() {
+        return (D =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      var F = R(
+          r.forwardRef(function (t, e) {
+            return r.createElement(a.a, D({ scrollEventThrottle: 1e-4 }, t, { ref: e }))
+          }),
+        ),
+        U = R(n('U+bB').a, { collapsable: !1 }),
+        M = n('Iok7')
+      function H() {
+        return (H =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      var B = R(
+          r.forwardRef(function (t, e) {
+            return r.createElement(M.a, H({ scrollEventThrottle: 1e-4 }, t, { ref: e }))
+          }),
+          { collapsable: !1 },
+        ),
+        z = n('MWbm'),
+        q = n('8cgI')
+      function W() {
+        return (W =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      function G(t, e) {
+        var n
+        if ('undefined' == typeof Symbol || null == t[Symbol.iterator]) {
+          if (
+            Array.isArray(t) ||
+            (n = (function (t, e) {
+              if (!t) return
+              if ('string' == typeof t) return X(t, e)
+              var n = Object.prototype.toString.call(t).slice(8, -1)
+              'Object' === n && t.constructor && (n = t.constructor.name)
+              if ('Map' === n || 'Set' === n) return Array.from(t)
+              if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return X(t, e)
+            })(t)) ||
+            (e && t && 'number' == typeof t.length)
+          ) {
+            n && (t = n)
+            var i = 0
+            return function () {
+              return i >= t.length ? { done: !0 } : { done: !1, value: t[i++] }
+            }
+          }
+          throw new TypeError(
+            'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
+          )
+        }
+        return (n = t[Symbol.iterator]()).next.bind(n)
+      }
+      function X(t, e) {
+        ;(null == e || e > t.length) && (e = t.length)
+        for (var n = 0, i = new Array(e); n < e; n++) i[n] = t[n]
+        return i
+      }
+      function J(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function Y(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? J(Object(n), !0).forEach(function (e) {
+                K(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : J(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function K(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      function Z(t) {
+        if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+        return t
+      }
+      function Q(t, e) {
+        ;(t.prototype = Object.create(e.prototype)), (t.prototype.constructor = t), $(t, e)
+      }
+      function $(t, e) {
+        return ($ =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var tt = (function (t) {
+        function e() {
+          for (var e, n = arguments.length, i = new Array(n), a = 0; a < n; a++) i[a] = arguments[a]
+          return (
+            ((e = t.call.apply(t, [this].concat(i)) || this)._getItem = function (t, e, n) {
+              if (!e) return null
+              for (var i = n - 1, r = 0; r < e.length; r++) {
+                var a = e[r],
+                  o = a.data,
+                  s = t.getItemCount(o)
+                if (-1 === i || i === s) return a
+                if (i < s) return t.getItem(o, i)
+                i -= s + 2
+              }
+              return null
+            }),
+            (e._keyExtractor = function (t, n) {
+              var i = e._subExtractor(n)
+              return (i && i.key) || String(n)
+            }),
+            (e._convertViewable = function (t) {
+              l()(null != t.index, 'Received a broken ViewToken')
+              var n = e._subExtractor(t.index)
+              if (!n) return null
+              var i = n.section.keyExtractor || e.props.keyExtractor
+              return Y(Y({}, t), {}, { index: n.index, key: i(t.item, n.index), section: n.section })
+            }),
+            (e._onViewableItemsChanged = function (t) {
+              var n = t.viewableItems,
+                i = t.changed,
+                r = e.props.onViewableItemsChanged
+              null != r &&
+                r({
+                  viewableItems: n.map(e._convertViewable, Z(e)).filter(Boolean),
+                  changed: i.map(e._convertViewable, Z(e)).filter(Boolean),
+                })
+            }),
+            (e._renderItem = function (t) {
+              return function (n) {
+                var i = n.item,
+                  a = n.index,
+                  o = e._subExtractor(a)
+                if (!o) return null
+                var s = o.index
+                if (null == s) {
+                  var c = o.section
+                  if (!0 === o.header) {
+                    var u = e.props.renderSectionHeader
+                    return u ? u({ section: c }) : null
+                  }
+                  var p = e.props.renderSectionFooter
+                  return p ? p({ section: c }) : null
+                }
+                var d = o.section.renderItem || e.props.renderItem,
+                  f = e._getSeparatorComponent(a, o, t)
+                return (
+                  l()(d, 'no renderItem!'),
+                  r.createElement(et, {
+                    SeparatorComponent: f,
+                    LeadingSeparatorComponent: 0 === s ? e.props.SectionSeparatorComponent : void 0,
+                    cellKey: o.key,
+                    index: s,
+                    item: i,
+                    leadingItem: o.leadingItem,
+                    leadingSection: o.leadingSection,
+                    onUpdateSeparator: e._onUpdateSeparator,
+                    prevCellKey: (e._subExtractor(a - 1) || {}).key,
+                    ref: function (t) {
+                      e._cellRefs[o.key] = t
+                    },
+                    renderItem: d,
+                    section: o.section,
+                    trailingItem: o.trailingItem,
+                    trailingSection: o.trailingSection,
+                    inverted: !!e.props.inverted,
+                  })
+                )
+              }
+            }),
+            (e._onUpdateSeparator = function (t, n) {
+              var i = e._cellRefs[t]
+              i && i.updateSeparatorProps(n)
+            }),
+            (e._cellRefs = {}),
+            (e._captureRef = function (t) {
+              e._listRef = t
+            }),
+            e
+          )
+        }
+        Q(e, t)
+        var n = e.prototype
+        return (
+          (n.scrollToLocation = function (t) {
+            for (var e = t.itemIndex, n = 0; n < t.sectionIndex; n++)
+              e += this.props.getItemCount(this.props.sections[n].data) + 2
+            var i = t.viewOffset || 0
+            if (null != this._listRef) {
+              if (t.itemIndex > 0 && this.props.stickySectionHeadersEnabled)
+                i += this._listRef._getFrameMetricsApprox(e - t.itemIndex).length
+              var r = Y(Y({}, t), {}, { viewOffset: i, index: e })
+              this._listRef.scrollToIndex(r)
+            }
+          }),
+          (n.getListRef = function () {
+            return this._listRef
+          }),
+          (n.render = function () {
+            for (
+              var t,
+                e = this,
+                n = this.props,
+                i =
+                  (n.ItemSeparatorComponent,
+                  n.SectionSeparatorComponent,
+                  n.renderItem,
+                  n.renderSectionFooter,
+                  n.renderSectionHeader,
+                  n.sections,
+                  n.stickySectionHeadersEnabled,
+                  (function (t, e) {
+                    if (null == t) return {}
+                    var n,
+                      i,
+                      r = {},
+                      a = Object.keys(t)
+                    for (i = 0; i < a.length; i++) (n = a[i]), e.indexOf(n) >= 0 || (r[n] = t[n])
+                    return r
+                  })(n, [
+                    'ItemSeparatorComponent',
+                    'SectionSeparatorComponent',
+                    'renderItem',
+                    'renderSectionFooter',
+                    'renderSectionHeader',
+                    'sections',
+                    'stickySectionHeadersEnabled',
+                  ])),
+                a = this.props.ListHeaderComponent ? 1 : 0,
+                o = this.props.stickySectionHeadersEnabled ? [] : void 0,
+                s = 0,
+                c = G(this.props.sections);
+              !(t = c()).done;
+
+            ) {
+              var u = t.value
+              null != o && o.push(s + a), (s += 2), (s += this.props.getItemCount(u.data))
+            }
+            var l = this._renderItem(s)
+            return r.createElement(
+              q.a,
+              W({}, i, {
+                keyExtractor: this._keyExtractor,
+                stickyHeaderIndices: o,
+                renderItem: l,
+                data: this.props.sections,
+                getItem: function (t, n) {
+                  return e._getItem(e.props, t, n)
+                },
+                getItemCount: function () {
+                  return s
+                },
+                onViewableItemsChanged: this.props.onViewableItemsChanged ? this._onViewableItemsChanged : void 0,
+                ref: this._captureRef,
+              }),
+            )
+          }),
+          (n._subExtractor = function (t) {
+            for (
+              var e = t, n = this.props, i = n.getItem, r = n.getItemCount, a = n.keyExtractor, o = n.sections, s = 0;
+              s < o.length;
+              s++
+            ) {
+              var c = o[s],
+                u = c.data,
+                l = c.key || String(s)
+              if (!((e -= 1) >= r(u) + 1))
+                return -1 === e
+                  ? { section: c, key: l + ':header', index: null, header: !0, trailingSection: o[s + 1] }
+                  : e === r(u)
+                  ? { section: c, key: l + ':footer', index: null, header: !1, trailingSection: o[s + 1] }
+                  : {
+                      section: c,
+                      key: l + ':' + (c.keyExtractor || a)(i(u, e), e),
+                      index: e,
+                      leadingItem: i(u, e - 1),
+                      leadingSection: o[s - 1],
+                      trailingItem: i(u, e + 1),
+                      trailingSection: o[s + 1],
+                    }
+              e -= r(u) + 1
+            }
+          }),
+          (n._getSeparatorComponent = function (t, e, n) {
+            if (!(e = e || this._subExtractor(t))) return null
+            var i = e.section.ItemSeparatorComponent || this.props.ItemSeparatorComponent,
+              r = this.props.SectionSeparatorComponent,
+              a = t === n - 1,
+              o = e.index === this.props.getItemCount(e.section.data) - 1
+            return r && o ? r : !i || o || a ? null : i
+          }),
+          e
+        )
+      })(r.PureComponent)
+      tt.defaultProps = Y(Y({}, q.a.defaultProps), {}, { data: [] })
+      var et = (function (t) {
+          function e() {
+            for (var e, n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
+            return (
+              ((e = t.call.apply(t, [this].concat(i)) || this).state = {
+                separatorProps: {
+                  highlighted: !1,
+                  leadingItem: e.props.item,
+                  leadingSection: e.props.leadingSection,
+                  section: e.props.section,
+                  trailingItem: e.props.trailingItem,
+                  trailingSection: e.props.trailingSection,
+                },
+                leadingSeparatorProps: {
+                  highlighted: !1,
+                  leadingItem: e.props.leadingItem,
+                  leadingSection: e.props.leadingSection,
+                  section: e.props.section,
+                  trailingItem: e.props.item,
+                  trailingSection: e.props.trailingSection,
+                },
+              }),
+              (e._separators = {
+                highlight: function () {
+                  ;['leading', 'trailing'].forEach(function (t) {
+                    return e._separators.updateProps(t, { highlighted: !0 })
+                  })
+                },
+                unhighlight: function () {
+                  ;['leading', 'trailing'].forEach(function (t) {
+                    return e._separators.updateProps(t, { highlighted: !1 })
+                  })
+                },
+                updateProps: function (t, n) {
+                  var i = e.props,
+                    r = i.LeadingSeparatorComponent,
+                    a = i.cellKey,
+                    o = i.prevCellKey
+                  'leading' === t && null != r
+                    ? e.setState(function (t) {
+                        return { leadingSeparatorProps: Y(Y({}, t.leadingSeparatorProps), n) }
+                      })
+                    : e.props.onUpdateSeparator(('leading' === t && o) || a, n)
+                },
+              }),
+              e
+            )
+          }
+          Q(e, t),
+            (e.getDerivedStateFromProps = function (t, e) {
+              return {
+                separatorProps: Y(
+                  Y({}, e.separatorProps),
+                  {},
+                  {
+                    leadingItem: t.item,
+                    leadingSection: t.leadingSection,
+                    section: t.section,
+                    trailingItem: t.trailingItem,
+                    trailingSection: t.trailingSection,
+                  },
+                ),
+                leadingSeparatorProps: Y(
+                  Y({}, e.leadingSeparatorProps),
+                  {},
+                  {
+                    leadingItem: t.leadingItem,
+                    leadingSection: t.leadingSection,
+                    section: t.section,
+                    trailingItem: t.item,
+                    trailingSection: t.trailingSection,
+                  },
+                ),
+              }
+            })
+          var n = e.prototype
+          return (
+            (n.updateSeparatorProps = function (t) {
+              this.setState(function (e) {
+                return { separatorProps: Y(Y({}, e.separatorProps), t) }
+              })
+            }),
+            (n.render = function () {
+              var t = this.props,
+                e = t.LeadingSeparatorComponent,
+                n = t.SeparatorComponent,
+                i = t.item,
+                a = t.index,
+                o = t.section,
+                s = t.inverted,
+                c = this.props.renderItem({ item: i, index: a, section: o, separators: this._separators }),
+                u = null != e && r.createElement(e, this.state.leadingSeparatorProps),
+                l = null != n && r.createElement(n, this.state.separatorProps)
+              return u || l ? r.createElement(z.a, null, !1 === s ? u : l, c, !1 === s ? l : u) : c
+            }),
+            e
+          )
+        })(r.Component),
+        nt = tt
+      function it() {
+        return (it =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      function rt(t, e) {
+        return (rt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      function at(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function ot(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? at(Object(n), !0).forEach(function (e) {
+                st(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : at(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function st(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      var ct = ot(ot({}, nt.defaultProps), {}, { stickySectionHeadersEnabled: 'ios' === i.a.OS }),
+        ut = (function (t) {
+          var e, n
+          function i() {
+            for (var e, n = arguments.length, i = new Array(n), r = 0; r < n; r++) i[r] = arguments[r]
+            return (
+              ((e = t.call.apply(t, [this].concat(i)) || this)._captureRef = function (t) {
+                e._wrapperListRef = t
+              }),
+              e
+            )
+          }
+          ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), rt(e, n)
+          var a = i.prototype
+          return (
+            (a.scrollToLocation = function (t) {
+              null != this._wrapperListRef && this._wrapperListRef.scrollToLocation(t)
+            }),
+            (a.recordInteraction = function () {
+              var t = this._wrapperListRef && this._wrapperListRef.getListRef()
+              t && t.recordInteraction()
+            }),
+            (a.flashScrollIndicators = function () {
+              var t = this._wrapperListRef && this._wrapperListRef.getListRef()
+              t && t.flashScrollIndicators()
+            }),
+            (a.getScrollResponder = function () {
+              var t = this._wrapperListRef && this._wrapperListRef.getListRef()
+              if (t) return t.getScrollResponder()
+            }),
+            (a.getScrollableNode = function () {
+              var t = this._wrapperListRef && this._wrapperListRef.getListRef()
+              if (t) return t.getScrollableNode()
+            }),
+            (a.setNativeProps = function (t) {
+              var e = this._wrapperListRef && this._wrapperListRef.getListRef()
+              e && e.setNativeProps(t)
+            }),
+            (a.render = function () {
+              return r.createElement(
+                nt,
+                it({}, this.props, {
+                  ref: this._captureRef,
+                  getItemCount: function (t) {
+                    return t.length
+                  },
+                  getItem: function (t, e) {
+                    return t[e]
+                  },
+                }),
+              )
+            }),
+            i
+          )
+        })(r.PureComponent)
+      ut.defaultProps = ct
+      var lt = ut
+      function pt() {
+        return (pt =
+          Object.assign ||
+          function (t) {
+            for (var e = 1; e < arguments.length; e++) {
+              var n = arguments[e]
+              for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
+            }
+            return t
+          }).apply(this, arguments)
+      }
+      var dt = R(
+          r.forwardRef(function (t, e) {
+            return r.createElement(lt, pt({ scrollEventThrottle: 1e-4 }, t, { ref: e }))
+          }),
+        ),
+        ft = R(n('+/1j').a, { collapsable: !1 }),
+        ht = R(z.a, { collapsable: !0 }),
+        _t = n('FGdj')
+      function vt(t, e) {
+        return (vt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var mt = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return (
+            ((i = t.call(this) || this)._a = 'number' == typeof e ? new o.a(e) : e),
+            (i._b = 'number' == typeof n ? new o.a(n) : n),
+            i
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), vt(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), this._b.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.__getValue = function () {
+            return this._a.__getValue() + this._b.__getValue()
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this), this._b.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), this._b.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'addition', input: [this._a.__getNativeTag(), this._b.__getNativeTag()] }
+          }),
+          i
+        )
+      })(h.a)
+      function gt(t, e) {
+        return (gt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var yt = (function (t) {
+        var e, n
+        function i(e, n, i) {
+          var r
+          return (
+            ((r = t.call(this) || this)._a = e),
+            (r._min = n),
+            (r._max = i),
+            (r._value = r._lastValue = r._a.__getValue()),
+            r
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), gt(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__getValue = function () {
+            var t = this._a.__getValue(),
+              e = t - this._lastValue
+            return (
+              (this._lastValue = t),
+              (this._value = Math.min(Math.max(this._value + e, this._min), this._max)),
+              this._value
+            )
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'diffclamp', input: this._a.__getNativeTag(), min: this._min, max: this._max }
+          }),
+          i
+        )
+      })(h.a)
+      function bt(t, e) {
+        return (bt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var Ot = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return (
+            ((i = t.call(this) || this)._warnedAboutDivideByZero = !1),
+            0 === n || (n instanceof f.a && n.__getValue()),
+            (i._a = 'number' == typeof e ? new o.a(e) : e),
+            (i._b = 'number' == typeof n ? new o.a(n) : n),
+            i
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), bt(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), this._b.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.__getValue = function () {
+            var t = this._a.__getValue(),
+              e = this._b.__getValue()
+            return 0 === e
+              ? (this._warnedAboutDivideByZero || (this._warnedAboutDivideByZero = !0), 0)
+              : ((this._warnedAboutDivideByZero = !1), t / e)
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this), this._b.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), this._b.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'division', input: [this._a.__getNativeTag(), this._b.__getNativeTag()] }
+          }),
+          i
+        )
+      })(h.a)
+      function wt(t, e) {
+        return (wt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var Nt = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return ((i = t.call(this) || this)._a = e), (i._modulus = n), i
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), wt(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.__getValue = function () {
+            return ((this._a.__getValue() % this._modulus) + this._modulus) % this._modulus
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'modulus', input: this._a.__getNativeTag(), modulus: this._modulus }
+          }),
+          i
+        )
+      })(h.a)
+      function Et(t, e) {
+        return (Et =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var St = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return (
+            ((i = t.call(this) || this)._a = 'number' == typeof e ? new o.a(e) : e),
+            (i._b = 'number' == typeof n ? new o.a(n) : n),
+            i
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), Et(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), this._b.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.__getValue = function () {
+            return this._a.__getValue() * this._b.__getValue()
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this), this._b.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), this._b.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'multiplication', input: [this._a.__getNativeTag(), this._b.__getNativeTag()] }
+          }),
+          i
+        )
+      })(h.a)
+      function Pt(t, e) {
+        return (Pt =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var Ct = (function (t) {
+        var e, n
+        function i(e, n) {
+          var i
+          return (
+            ((i = t.call(this) || this)._a = 'number' == typeof e ? new o.a(e) : e),
+            (i._b = 'number' == typeof n ? new o.a(n) : n),
+            i
+          )
+        }
+        ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), Pt(e, n)
+        var r = i.prototype
+        return (
+          (r.__makeNative = function () {
+            this._a.__makeNative(), this._b.__makeNative(), t.prototype.__makeNative.call(this)
+          }),
+          (r.__getValue = function () {
+            return this._a.__getValue() - this._b.__getValue()
+          }),
+          (r.interpolate = function (t) {
+            return new _t.a(this, t)
+          }),
+          (r.__attach = function () {
+            this._a.__addChild(this), this._b.__addChild(this)
+          }),
+          (r.__detach = function () {
+            this._a.__removeChild(this), this._b.__removeChild(this), t.prototype.__detach.call(this)
+          }),
+          (r.__getNativeConfig = function () {
+            return { type: 'subtraction', input: [this._a.__getNativeTag(), this._b.__getNativeTag()] }
+          }),
+          i
+        )
+      })(h.a)
+      function jt(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function At(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? jt(Object(n), !0).forEach(function (e) {
+                Vt(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : jt(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function Vt(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      function It(t, e) {
+        return (It =
+          Object.setPrototypeOf ||
+          function (t, e) {
+            return (t.__proto__ = e), t
+          })(t, e)
+      }
+      var kt = (function (t) {
+          var e, n
+          function i(e, n, i, r, a) {
+            var o
+            return (
+              ((o = t.call(this) || this)._value = e),
+              (o._parent = n),
+              (o._animationClass = i),
+              (o._animationConfig = r),
+              (o._useNativeDriver = Object(s.c)(r)),
+              (o._callback = a),
+              o.__attach(),
+              o
+            )
+          }
+          ;(n = t), ((e = i).prototype = Object.create(n.prototype)), (e.prototype.constructor = e), It(e, n)
+          var r = i.prototype
+          return (
+            (r.__makeNative = function () {
+              ;(this.__isNative = !0),
+                this._parent.__makeNative(),
+                t.prototype.__makeNative.call(this),
+                this._value.__makeNative()
+            }),
+            (r.__getValue = function () {
+              return this._parent.__getValue()
+            }),
+            (r.__attach = function () {
+              this._parent.__addChild(this), this._useNativeDriver && this.__makeNative()
+            }),
+            (r.__detach = function () {
+              this._parent.__removeChild(this), t.prototype.__detach.call(this)
+            }),
+            (r.update = function () {
+              this._value.animate(
+                new this._animationClass(
+                  At(At({}, this._animationConfig), {}, { toValue: this._animationConfig.toValue.__getValue() }),
+                ),
+                this._callback,
+              )
+            }),
+            (r.__getNativeConfig = function () {
+              var t = new this._animationClass(
+                At(At({}, this._animationConfig), {}, { toValue: void 0 }),
+              ).__getNativeAnimationConfig()
+              return {
+                type: 'tracking',
+                animationId: Object(s.b)(),
+                animationConfig: t,
+                toValue: this._parent.__getNativeTag(),
+                value: this._value.__getNativeTag(),
+              }
+            }),
+            i
+          )
+        })(f.a),
+        Tt = n('/x6e'),
+        xt = n('BtOK'),
+        Lt = n('jydp'),
+        Rt = n('e6X4')
+      function Dt(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function Ft(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? Dt(Object(n), !0).forEach(function (e) {
+                Ut(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : Dt(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function Ut(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      var Mt = function (t, e) {
+          return t && e.onComplete
+            ? function () {
+                e.onComplete && e.onComplete.apply(e, arguments), t && t.apply(void 0, arguments)
+              }
+            : t || e.onComplete
+        },
+        Ht = function (t, e, n) {
+          if (t instanceof Tt.a) {
+            var i = Ft({}, e),
+              r = Ft({}, e)
+            for (var a in e) {
+              var o = e[a],
+                s = o.x,
+                c = o.y
+              void 0 !== s && void 0 !== c && ((i[a] = s), (r[a] = c))
+            }
+            var u = n(t.x, i),
+              l = n(t.y, r)
+            return qt([u, l], { stopTogether: !1 })
+          }
+          return null
+        },
+        Bt = function t(e, n) {
+          var i = function (t, e, n) {
+            n = Mt(n, e)
+            var i = t,
+              r = e
+            i.stopTracking(),
+              e.toValue instanceof f.a ? i.track(new kt(i, e.toValue, Rt.a, r, n)) : i.animate(new Rt.a(r), n)
+          }
+          return (
+            Ht(e, n, t) || {
+              start: function (t) {
+                i(e, n, t)
+              },
+              stop: function () {
+                e.stopAnimation()
+              },
+              reset: function () {
+                e.resetAnimation()
+              },
+              _startNativeLoop: function (t) {
+                var r = Ft(Ft({}, n), {}, { iterations: t })
+                i(e, r)
+              },
+              _isUsingNativeDriver: function () {
+                return n.useNativeDriver || !1
+              },
+            }
+          )
+        },
+        zt = function (t) {
+          var e = 0
+          return {
+            start: function (n) {
+              0 === t.length
+                ? n && n({ finished: !0 })
+                : t[e].start(function i(r) {
+                    r.finished && ++e !== t.length ? t[e].start(i) : n && n(r)
+                  })
+            },
+            stop: function () {
+              e < t.length && t[e].stop()
+            },
+            reset: function () {
+              t.forEach(function (t, n) {
+                n <= e && t.reset()
+              }),
+                (e = 0)
+            },
+            _startNativeLoop: function () {
+              throw new Error('Loops run using the native driver cannot contain Animated.sequence animations')
+            },
+            _isUsingNativeDriver: function () {
+              return !1
+            },
+          }
+        },
+        qt = function (t, e) {
+          var n = 0,
+            i = {},
+            r = !(e && !1 === e.stopTogether),
+            a = {
+              start: function (e) {
+                n !== t.length
+                  ? t.forEach(function (o, s) {
+                      var c = function (o) {
+                        if (((i[s] = !0), ++n === t.length)) return (n = 0), void (e && e(o))
+                        !o.finished && r && a.stop()
+                      }
+                      o ? o.start(c) : c({ finished: !0 })
+                    })
+                  : e && e({ finished: !0 })
+              },
+              stop: function () {
+                t.forEach(function (t, e) {
+                  !i[e] && t.stop(), (i[e] = !0)
+                })
+              },
+              reset: function () {
+                t.forEach(function (t, e) {
+                  t.reset(), (i[e] = !1), (n = 0)
+                })
+              },
+              _startNativeLoop: function () {
+                throw new Error('Loops run using the native driver cannot contain Animated.parallel animations')
+              },
+              _isUsingNativeDriver: function () {
+                return !1
+              },
+            }
+          return a
+        },
+        Wt = function (t) {
+          return Bt(new o.a(0), { toValue: 0, delay: t, duration: 0, useNativeDriver: !1 })
+        }
+      var Gt = {
+        Value: o.a,
+        ValueXY: Tt.a,
+        Interpolation: _t.a,
+        Node: f.a,
+        decay: function t(e, n) {
+          var i = function (t, e, n) {
+            n = Mt(n, e)
+            var i = t,
+              r = e
+            i.stopTracking(), i.animate(new xt.a(r), n)
+          }
+          return (
+            Ht(e, n, t) || {
+              start: function (t) {
+                i(e, n, t)
+              },
+              stop: function () {
+                e.stopAnimation()
+              },
+              reset: function () {
+                e.resetAnimation()
+              },
+              _startNativeLoop: function (t) {
+                var r = Ft(Ft({}, n), {}, { iterations: t })
+                i(e, r)
+              },
+              _isUsingNativeDriver: function () {
+                return n.useNativeDriver || !1
+              },
+            }
+          )
+        },
+        timing: Bt,
+        spring: function t(e, n) {
+          var i = function (t, e, n) {
+            n = Mt(n, e)
+            var i = t,
+              r = e
+            i.stopTracking(),
+              e.toValue instanceof f.a ? i.track(new kt(i, e.toValue, Lt.a, r, n)) : i.animate(new Lt.a(r), n)
+          }
+          return (
+            Ht(e, n, t) || {
+              start: function (t) {
+                i(e, n, t)
+              },
+              stop: function () {
+                e.stopAnimation()
+              },
+              reset: function () {
+                e.resetAnimation()
+              },
+              _startNativeLoop: function (t) {
+                var r = Ft(Ft({}, n), {}, { iterations: t })
+                i(e, r)
+              },
+              _isUsingNativeDriver: function () {
+                return n.useNativeDriver || !1
+              },
+            }
+          )
+        },
+        add: function (t, e) {
+          return new mt(t, e)
+        },
+        subtract: function (t, e) {
+          return new Ct(t, e)
+        },
+        divide: function (t, e) {
+          return new Ot(t, e)
+        },
+        multiply: function (t, e) {
+          return new St(t, e)
+        },
+        modulo: function (t, e) {
+          return new Nt(t, e)
+        },
+        diffClamp: function (t, e, n) {
+          return new yt(t, e, n)
+        },
+        delay: Wt,
+        sequence: zt,
+        parallel: qt,
+        stagger: function (t, e) {
+          return qt(
+            e.map(function (e, n) {
+              return zt([Wt(t * n), e])
+            }),
+          )
+        },
+        loop: function (t, e) {
+          var n = void 0 === e ? {} : e,
+            i = n.iterations,
+            r = void 0 === i ? -1 : i,
+            a = n.resetBeforeIteration,
+            o = void 0 === a || a,
+            s = !1,
+            c = 0
+          return {
+            start: function (e) {
+              t && 0 !== r
+                ? t._isUsingNativeDriver()
+                  ? t._startNativeLoop(r)
+                  : (function n(i) {
+                      void 0 === i && (i = { finished: !0 }),
+                        s || c === r || !1 === i.finished ? e && e(i) : (c++, o && t.reset(), t.start(n))
+                    })()
+                : e && e({ finished: !0 })
+            },
+            stop: function () {
+              ;(s = !0), t.stop()
+            },
+            reset: function () {
+              ;(c = 0), (s = !1), t.reset()
+            },
+            _startNativeLoop: function () {
+              throw new Error('Loops run using the native driver cannot contain Animated.loop animations')
+            },
+            _isUsingNativeDriver: function () {
+              return t._isUsingNativeDriver()
+            },
+          }
+        },
+        event: function (t, e) {
+          var n = new d(t, e)
+          return n.__isNative ? n : n.__getHandler()
+        },
+        createAnimatedComponent: R,
+        attachNativeEvent: p,
+        forkEvent: function (t, e) {
+          return t
+            ? t instanceof d
+              ? (t.__addListener(e), t)
+              : function () {
+                  'function' == typeof t && t.apply(void 0, arguments), e.apply(void 0, arguments)
+                }
+            : e
+        },
+        unforkEvent: function (t, e) {
+          t && t instanceof d && t.__removeListener(e)
+        },
+        Event: d,
+        __PropsOnlyForTests: C,
+      }
+      function Xt(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function Jt(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? Xt(Object(n), !0).forEach(function (e) {
+                Yt(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : Xt(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function Yt(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      var Kt = {
+          start: function () {},
+          stop: function () {},
+          reset: function () {},
+          _startNativeLoop: function () {},
+          _isUsingNativeDriver: function () {
+            return !1
+          },
+        },
+        Zt = {
+          Value: o.a,
+          ValueXY: Tt.a,
+          Interpolation: _t.a,
+          Node: f.a,
+          decay: function (t, e) {
+            return Kt
+          },
+          timing: function (t, e) {
+            var n = t
+            return Jt(
+              Jt({}, Kt),
               {},
               {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [w.a.root, e.style],
+                start: function (t) {
+                  n.setValue(e.toValue), t && t({ finished: !0 })
+                },
+              },
+            )
+          },
+          spring: function (t, e) {
+            var n = t
+            return Jt(
+              Jt({}, Kt),
+              {},
+              {
+                start: function (t) {
+                  n.setValue(e.toValue), t && t({ finished: !0 })
+                },
+              },
+            )
+          },
+          add: Gt.add,
+          subtract: Gt.subtract,
+          divide: Gt.divide,
+          multiply: Gt.multiply,
+          modulo: Gt.modulo,
+          diffClamp: Gt.diffClamp,
+          delay: function (t) {
+            return Kt
+          },
+          sequence: function (t) {
+            return Kt
+          },
+          parallel: function (t, e) {
+            return Kt
+          },
+          stagger: function (t, e) {
+            return Kt
+          },
+          loop: function (t, e) {
+            ;(void 0 === e ? {} : e).iterations
+            return Kt
+          },
+          event: function (t, e) {
+            return null
+          },
+          createAnimatedComponent: R,
+          attachNativeEvent: p,
+          forkEvent: Gt.forkEvent,
+          unforkEvent: Gt.unforkEvent,
+          Event: d,
+          __PropsOnlyForTests: C,
+        }
+      function Qt(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(t)
+          e &&
+            (i = i.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, i)
+        }
+        return n
+      }
+      function $t(t, e, n) {
+        return (
+          e in t
+            ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 })
+            : (t[e] = n),
+          t
+        )
+      }
+      var te = (function (t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? Qt(Object(n), !0).forEach(function (e) {
+                $t(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : Qt(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      })({ FlatList: F, Image: U, ScrollView: B, SectionList: dt, Text: ft, View: ht }, i.a.isTesting ? Zt : Gt)
+      e.a = te
+    },
+    XJEr: function (t, e, n) {
+      'use strict'
+      ;(function (t) {
+        n.d(e, 'b', function () {
+          return b
+        }),
+          n.d(e, 'c', function () {
+            return w
+          })
+        var i,
+          r = n('vG6z'),
+          a = n('mbB1'),
+          o = n('0m3q'),
+          s = n('4LIG'),
+          c = n('tI3i'),
+          u = n.n(c),
+          l = 'ios' === s.a.OS && t.RN$Bridgeless ? a.a : r.a,
+          p = 1,
+          d = 1,
+          f = new Set(),
+          h = !1,
+          _ = [],
+          v = {
+            getValue: function (t, e) {
+              u()(l, 'Native animated module is not available'), l.getValue && l.getValue(t, e)
+            },
+            setWaitingForIdentifier: function (t) {
+              f.add(t), (h = !0)
+            },
+            unsetWaitingForIdentifier: function (t) {
+              f.delete(t), 0 === f.size && ((h = !1), v.disableQueue())
+            },
+            disableQueue: function () {
+              u()(l, 'Native animated module is not available'), 'android' === s.a.OS && l.startOperationBatch()
+              for (var t = 0, e = _.length; t < e; t++) _[t]()
+              ;(_.length = 0), 'android' === s.a.OS && l.finishOperationBatch()
+            },
+            queueOperation: function (t) {
+              h ? _.push(t) : t()
+            },
+            createAnimatedNode: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.createAnimatedNode(t, e)
+                })
+            },
+            startListeningToAnimatedNodeValue: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.startListeningToAnimatedNodeValue(t)
+                })
+            },
+            stopListeningToAnimatedNodeValue: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.stopListeningToAnimatedNodeValue(t)
+                })
+            },
+            connectAnimatedNodes: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.connectAnimatedNodes(t, e)
+                })
+            },
+            disconnectAnimatedNodes: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.disconnectAnimatedNodes(t, e)
+                })
+            },
+            startAnimatingNode: function (t, e, n, i) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.startAnimatingNode(t, e, n, i)
+                })
+            },
+            stopAnimation: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.stopAnimation(t)
+                })
+            },
+            setAnimatedNodeValue: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.setAnimatedNodeValue(t, e)
+                })
+            },
+            setAnimatedNodeOffset: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.setAnimatedNodeOffset(t, e)
+                })
+            },
+            flattenAnimatedNodeOffset: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.flattenAnimatedNodeOffset(t)
+                })
+            },
+            extractAnimatedNodeOffset: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.extractAnimatedNodeOffset(t)
+                })
+            },
+            connectAnimatedNodeToView: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.connectAnimatedNodeToView(t, e)
+                })
+            },
+            disconnectAnimatedNodeFromView: function (t, e) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.disconnectAnimatedNodeFromView(t, e)
+                })
+            },
+            restoreDefaultValues: function (t) {
+              u()(l, 'Native animated module is not available'),
+                null != l.restoreDefaultValues &&
+                  v.queueOperation(function () {
+                    return l.restoreDefaultValues(t)
+                  })
+            },
+            dropAnimatedNode: function (t) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.dropAnimatedNode(t)
+                })
+            },
+            addAnimatedEventToView: function (t, e, n) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.addAnimatedEventToView(t, e, n)
+                })
+            },
+            removeAnimatedEventFromView: function (t, e, n) {
+              u()(l, 'Native animated module is not available'),
+                v.queueOperation(function () {
+                  return l.removeAnimatedEventFromView(t, e, n)
+                })
+            },
+          },
+          m = {
+            opacity: !0,
+            transform: !0,
+            borderRadius: !0,
+            borderBottomEndRadius: !0,
+            borderBottomLeftRadius: !0,
+            borderBottomRightRadius: !0,
+            borderBottomStartRadius: !0,
+            borderTopEndRadius: !0,
+            borderTopLeftRadius: !0,
+            borderTopRightRadius: !0,
+            borderTopStartRadius: !0,
+            elevation: !0,
+            zIndex: !0,
+            shadowOpacity: !0,
+            shadowRadius: !0,
+            scaleX: !0,
+            scaleY: !0,
+            translateX: !0,
+            translateY: !0,
+          },
+          g = {
+            translateX: !0,
+            translateY: !0,
+            scale: !0,
+            scaleX: !0,
+            scaleY: !0,
+            rotate: !0,
+            rotateX: !0,
+            rotateY: !0,
+            rotateZ: !0,
+            perspective: !0,
+          },
+          y = { inputRange: !0, outputRange: !0, extrapolate: !0, extrapolateRight: !0, extrapolateLeft: !0 }
+        function b() {
+          return d++
+        }
+        var O = !1
+        function w(t) {
+          return t.useNativeDriver, !0 !== t.useNativeDriver || l ? t.useNativeDriver || !1 : (O || (O = !0), !1)
+        }
+        e.a = {
+          API: v,
+          addWhitelistedStyleProp: function (t) {
+            m[t] = !0
+          },
+          addWhitelistedTransformProp: function (t) {
+            g[t] = !0
+          },
+          addWhitelistedInterpolationParam: function (t) {
+            y[t] = !0
+          },
+          validateStyles: function (t) {
+            for (var e in t)
+              if (!m.hasOwnProperty(e))
+                throw new Error("Style property '" + e + "' is not supported by native animated module")
+          },
+          validateTransform: function (t) {
+            t.forEach(function (t) {
+              if (!g.hasOwnProperty(t.property))
+                throw new Error("Property '" + t.property + "' is not supported by native animated module")
+            })
+          },
+          validateInterpolation: function (t) {
+            for (var e in t)
+              if (!y.hasOwnProperty(e))
+                throw new Error("Interpolation property '" + e + "' is not supported by native animated module")
+          },
+          generateNewNodeTag: function () {
+            return p++
+          },
+          generateNewAnimationId: b,
+          assertNativeAnimatedModule: function () {
+            u()(l, 'Native animated module is not available')
+          },
+          shouldUseNativeDriver: w,
+          transformDataType: function (t) {
+            return 'string' != typeof t ? t : /deg$/.test(t) ? ((parseFloat(t) || 0) * Math.PI) / 180 : t
+          },
+          get nativeEventEmitter() {
+            return i || (i = new o.a(l)), i
+          },
+        }
+      }.call(this, n('fRV1')))
+    },
+    YRNd: function (t, e, n) {
+      'use strict'
+      var i = n('XJEr'),
+        r = 1,
+        a = (function () {
+          function t() {}
+          var e = t.prototype
+          return (
+            (e.start = function (t, e, n, i, r) {}),
+            (e.stop = function () {
+              this.__nativeId && i.a.API.stopAnimation(this.__nativeId)
+            }),
+            (e.__getNativeAnimationConfig = function () {
+              throw new Error('This animation type cannot be offloaded to native')
+            }),
+            (e.__debouncedOnEnd = function (t) {
+              var e = this.__onEnd
+              ;(this.__onEnd = null), e && e(t)
+            }),
+            (e.__startNativeAnimation = function (t) {
+              var e = r + ':startAnimation'
+              ;(r += 1), i.a.API.setWaitingForIdentifier(e)
+              try {
+                t.__makeNative(),
+                  (this.__nativeId = i.a.generateNewAnimationId()),
+                  i.a.API.startAnimatingNode(
+                    this.__nativeId,
+                    t.__getNativeTag(),
+                    this.__getNativeAnimationConfig(),
+                    this.__debouncedOnEnd.bind(this),
+                  )
+              } catch (n) {
+                throw n
+              } finally {
+                i.a.API.unsetWaitingForIdentifier(e)
+              }
+            }),
+            t
+          )
+        })()
+      e.a = a
+    },
+    Z5jE: function (t, e, n) {
+      'use strict'
+      function i(t) {
+        return t.params.broadcastId || ''
+      }
+      n.d(e, 'a', function () {
+        return i
+      })
+    },
+    e5HP: function (t, e, n) {
+      'use strict'
+      n.d(e, 'a', function () {
+        return T
+      })
+      var i = n('VrFO'),
+        r = n.n(i),
+        a = n('Y9Ll'),
+        o = n.n(a),
+        s = n('5Yy7'),
+        c = n.n(s),
+        u = n('2VqO'),
+        l = n.n(u),
+        p = n('KEM+'),
+        d = n.n(p),
+        f = n('ERkP'),
+        h = n.n(f),
+        _ = n('t62R'),
+        v = n('3XMw'),
+        m = n.n(v),
+        g = n('rHpw'),
+        y = n('MWbm'),
+        b = n('yiKp'),
+        O = n.n(b),
+        w = n('Lsrn'),
+        N = n('k/Ka'),
+        E = function () {
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(N.a)(
+            'svg',
+            O()(
+              O()({}, t),
+              {},
+              {
+                accessibilityHidden: void 0 === t.accessibilityLabel,
+                style: [w.a.root, t.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            f.a.createElement(
+            h.a.createElement(
               'g',
               null,
-              f.a.createElement('path', {
+              h.a.createElement('path', {
                 d: 'M12 1C5.92 1 1 5.92 1 12s4.92 11 11 11 11-4.92 11-11S18.08 1 12 1zm5.05 12.48c0 .48-.39.87-.88.87-.477 0-.87-.393-.87-.87V9.94l-6.85 6.85c-.163.166-.387.26-.62.26-.233 0-.457-.094-.62-.26-.338-.341-.338-.899 0-1.24l6.85-6.85h-3.54c-.477 0-.87-.393-.87-.87 0-.49.39-.88.87-.88h5.65c.11 0 .23.03.33.07.11.04.2.1.29.19.09.09.15.18.19.29.04.1.07.22.07.33v5.65z',
               }),
             ),
           )
         }
-      C.metadata = { width: 24, height: 24 }
-      var x = C,
-        I = n('uFYP'),
-        P = g.a.f1a1b790,
-        T = g.a.if2bf8b3,
-        O = g.a.f3624b5c,
-        L = g.a.b4b3b113,
-        R = g.a.be22205f,
-        _ = g.a.hcbbe447,
-        M = (function (e) {
-          s()(n, e)
-          var t = u()(n)
+      E.metadata = { width: 24, height: 24 }
+      var S = E,
+        P = n('uFYP'),
+        C = m.a.f1a1b790,
+        j = m.a.if2bf8b3,
+        A = m.a.f3624b5c,
+        V = m.a.b4b3b113,
+        I = m.a.be22205f,
+        k = m.a.hcbbe447,
+        T = (function (t) {
+          c()(n, t)
+          var e = l()(n)
           function n() {
-            return r()(this, n), t.apply(this, arguments)
+            return r()(this, n), e.apply(this, arguments)
           }
           return (
             o()(n, [
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.color,
-                    n = e.nativeID,
-                    a = e.style,
-                    r = e.withCircleIcon ? x : I.a
-                  return f.a.createElement(
+                  var t = this.props,
+                    e = t.color,
+                    n = t.nativeID,
+                    i = t.style,
+                    r = t.withCircleIcon ? S : P.a
+                  return h.a.createElement(
                     y.a,
-                    { style: [z.root, a] },
-                    f.a.createElement(r, { style: [z.icon, t && z[t]] }),
-                    f.a.createElement(h.b, { color: t, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
+                    { style: [x.root, i] },
+                    h.a.createElement(r, { style: [x.icon, e && x[e]] }),
+                    h.a.createElement(_.b, { color: e, nativeID: n, size: 'subtext2' }, this._getPromotedLabel()),
                   )
                 },
               },
               {
                 key: '_getPromotedLabel',
                 value: function () {
-                  var e = this.props,
-                    t = e.contentAuthorId,
-                    n = e.label,
-                    a = e.promotedContent,
-                    r = a.adMetadataContainer,
-                    i = a.advertiser,
-                    o = a.advertiser_name,
-                    c = a.disclosure_type,
-                    s = t && i && t === i.id_str,
-                    l = 'string' == typeof c && 'political' === c.toLowerCase(),
-                    u = 'string' == typeof c && 'issue' === c.toLowerCase(),
-                    d = !(!r || 'POLITICAL' !== r.disclaimerType) || l,
-                    p = !(!r || 'ISSUE' !== r.disclaimerType) || u,
-                    m = (r || {}).removePromotedAttributionForPreroll
+                  var t = this.props,
+                    e = t.contentAuthorId,
+                    n = t.label,
+                    i = t.promotedContent,
+                    r = i.adMetadataContainer,
+                    a = i.advertiser,
+                    o = i.advertiser_name,
+                    s = i.disclosure_type,
+                    c = e && a && e === a.id_str,
+                    u = 'string' == typeof s && 'political' === s.toLowerCase(),
+                    l = 'string' == typeof s && 'issue' === s.toLowerCase(),
+                    p = !(!r || 'POLITICAL' !== r.disclaimerType) || u,
+                    d = !(!r || 'ISSUE' !== r.disclaimerType) || l,
+                    f = (r || {}).removePromotedAttributionForPreroll
                   return (
                     n ||
-                    (!o || s || m
-                      ? d
-                        ? O
-                        : p
-                        ? R
-                        : T
-                      : d
-                      ? L({ fullName: o })
+                    (!o || c || f
+                      ? p
+                        ? A
+                        : d
+                        ? I
+                        : j
                       : p
-                      ? _({ fullName: o })
-                      : P({ fullName: o }))
+                      ? V({ fullName: o })
+                      : d
+                      ? k({ fullName: o })
+                      : C({ fullName: o }))
                   )
                 },
               },
             ]),
             n
           )
-        })(f.a.Component)
-      p()(M, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
-      var z = b.a.create(function (e) {
+        })(h.a.Component)
+      d()(T, 'defaultProps', { color: 'gray700', withCircleIcon: !1 })
+      var x = g.a.create(function (t) {
         return {
           root: { alignItems: 'center', flexDirection: 'row' },
-          icon: { color: e.colors.gray700, height: '1em', marginRight: e.spaces.space4, flexShrink: 0 },
-          gray700: { color: e.colors.gray700 },
-          white: { color: e.colors.white },
+          icon: { color: t.colors.gray700, height: '1em', marginRight: t.spaces.space4, flexShrink: 0 },
+          gray700: { color: t.colors.gray700 },
+          white: { color: t.colors.white },
         }
       })
     },
-    hUaP: function (e, t, n) {
+    e6X4: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return l
-      }),
-        n.d(t, 'b', function () {
-          return u
-        })
-      var a = n('rHpw'),
-        r = 0.85,
-        i = 0.7635,
-        o = 0.5,
-        c = 812,
-        s = 300
-      function l(e, t, n) {
-        var l = e
-        if (t) {
-          l = Math.min(c, e)
-          var d = n || {},
-            p = d.height,
-            m = d.top + p
-          if (m - l < 0) {
-            var f = m - u(a.a.theme).marginVerticalPx
-            f > s && (l = f)
-          }
+      ;(function (t) {
+        var i,
+          r = n('YRNd'),
+          a = n('XJEr'),
+          o = n('7zxR')
+        function s(t, e) {
+          return (s =
+            Object.setPrototypeOf ||
+            function (t, e) {
+              return (t.__proto__ = e), t
+            })(t, e)
         }
-        return { collapse: l * o, half: l * i, sheetMaxHeight: l * r, full: l }
-      }
-      function u(e) {
-        var t = e.borderRadiiPx.large,
-          n = e.spaces.space16,
-          a = e.spacesPx.space8
-        return {
-          borderRadius: t,
-          paddingHorizontal: n,
-          marginVertical: e.spaces.space20,
-          marginVerticalPx: e.spacesPx.space20,
-          shadowOffset: a,
-        }
-      }
-    },
-    hhqq: function (e, t, n) {
-      'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('ERkP'),
-        s = n.n(c),
-        l = (n('ho0z'), n('21zW')),
-        u = n('rHpw'),
-        d = n('MH+I'),
-        p = n('jV+4'),
-        m = n('MWbm')
-      function f(e) {
-        var t = e.speaker,
-          n = e.speakerAvatarSize,
-          a = void 0 === n ? 'small' : n,
-          r = e.speakerNameSize,
-          i = void 0 === r ? 'subtext2' : r,
-          o = e.speakerScreenNameSize,
-          c = void 0 === o ? 'subtext2' : o,
-          l = e.timestamp,
-          u = e.withSpeakerAvatar,
-          d = void 0 === u || u,
-          f = e.withSpeakerScreenName,
-          h = void 0 === f || f,
-          b = e.withTimestamp,
-          y = void 0 !== b && b,
-          S = Date.now() - l
-        return s.a.createElement(
-          m.a,
-          { style: g.root },
-          s.a.createElement(p.a, {
-            avatarSize: a,
-            name: t.name,
-            nameSize: i,
-            profileImageUrl: d ? t.profile_image_url_https : '',
-            screenName: t.screen_name,
-            screenNameSize: c,
-            style: g.userName,
-            withScreenName: h,
-          }),
-          y ? s.a.createElement(v, { size: i, timeMs: S }) : null,
-        )
-      }
-      function h(e, t) {
-        return e && t && e.id_str && t.id_str
-          ? e.id_str === t.id_str
-          : !!(e && t && e.screen_name && t.screen_name) && e.screen_name === t.screen_name
-      }
-      function v(e) {
-        var t = e.size,
-          n = void 0 === t ? 'small' : t,
-          a = e.timeMs
-        return s.a.createElement(
-          s.a.Fragment,
-          null,
-          s.a.createElement(l.a, { size: n }),
-          s.a.createElement(d.a, { color: 'gray700', humanReadable: !0, size: n, timeMs: a }),
-        )
-      }
-      var g = u.a.create(function (e) {
-          return {
-            root: { flexDirection: 'row', flexShrink: 1, marginTop: '0.25em' },
-            userName: { marginBottom: e.spaces.space4, paddingRight: e.spaces.space4 },
-          }
-        }),
-        b = n('t62R'),
-        y = ['caption', 'captionTextSize', 'withSpeaker']
-      function S(e) {
-        var t = e.caption,
-          n = e.captionTextSize,
-          a = e.withSpeaker,
-          i = void 0 === a || a,
-          c = o()(e, y),
-          l = t.speaker
-        return s.a.createElement(
-          m.a,
-          { style: [E.root, !i && E.missingSpeakerSpacer] },
-          i ? s.a.createElement(f, r()({}, c, { speaker: l, timestamp: t.timestamp })) : null,
-          s.a.createElement(b.b, { lang: t.lang, size: n, style: E.captionText }, t.text),
-        )
-      }
-      var E = u.a.create(function (e) {
-          return {
-            root: { paddingBottom: '0.25em', flex: 1 },
-            missingSpeakerSpacer: { paddingTop: '0.1em' },
-            captionText: {
-              lineHeight: '1.5em',
-              paddingVertical: '0.1em',
-              fontWeight: e.highContrastEnabled ? e.fontWeights.heavy : e.fontWeights.regular,
-            },
-          }
-        }),
-        w = n('yiKp'),
-        k = n.n(w),
-        C =
-          (n('z84I'),
-          n('i4UL'),
-          function (e) {
-            return { width: e, height: e }
-          })
-      function x(e) {
-        var t = e.size,
-          n = Math.floor(t / 4.5)
-        return s.a.createElement(m.a, { style: [O.root, P(t)] }, s.a.createElement(I, { width: n }))
-      }
-      function I(e) {
-        var t = e.width
-        return s.a.createElement(
-          s.a.Fragment,
-          null,
-          Array(3)
-            .fill(0)
-            .map(function (e, n) {
-              return s.a.createElement(m.a, { key: n, style: [O.dot, T(n, t)] })
-            }),
-        )
-      }
-      function P(e) {
-        return k()({}, C(e))
-      }
-      function T(e, t) {
-        return k()({ animationDelay: ''.concat(0.5 * e, 's'), borderRadius: '100%' }, C(t))
-      }
-      var O = u.a.create(function (e) {
-          return {
-            root: { alignItems: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'center' },
-            dot: {
-              position: 'relative',
-              backgroundColor: e.colors.purple500,
-              display: 'inline-block',
-              margin: 'auto',
-              pointerEvents: 'none',
-              willChange: 'transform',
-              animationKeyframes: [
-                {
-                  '0%': { backgroundColor: e.colors.purple500 },
-                  '50%': { backgroundColor: e.colors.purple200 },
-                  '100%': { backgroundColor: e.colors.purple200 },
-                },
-              ],
-              animationDirection: 'alternate',
-              animationDuration: '1s',
-              animationIterationCount: 'infinite',
-              animationTimingFunction: 'linear',
-            },
-          }
-        }),
-        L = n('sIe2'),
-        R = [
-          'captions',
-          'footerHeight',
-          'headerHeight',
-          'scrollContainerStyle',
-          'unintelligible',
-          'withFrequentSpeakerAnnouncement',
-        ]
-      function _(e) {
-        var t = e.captions,
-          n = e.footerHeight,
-          a = void 0 === n ? 28 : n,
-          i = e.headerHeight,
-          c = void 0 === i ? 28 : i,
-          l = e.scrollContainerStyle,
-          u = e.unintelligible,
-          d = void 0 !== u && u,
-          p = e.withFrequentSpeakerAnnouncement,
-          f = void 0 !== p && p,
-          v = o()(e, R),
-          g = s.a.useRef(null),
-          b = s.a.useRef(null),
-          y = s.a.useRef({ containerHeight: void 0, hasUserScrolledUp: !1 })
-        function E() {
-          var e, t
-          ;(null !== (e = y.current) && void 0 !== e && e.hasUserScrolledUp) ||
-            null === (t = b.current) ||
-            void 0 === t ||
-            t.scrollToEnd({ animated: !0 })
-        }
-        return (
-          s.a.useEffect(function () {
-            var e
-            y.current.containerHeight =
-              null == g || null === (e = g.current) || void 0 === e ? void 0 : e.getBoundingClientRect().height
-          }, []),
-          s.a.useEffect(function () {
-            var e = null
+        var c = (function (e) {
+          var n, r
+          function c(t) {
+            var n, r, s, c, u, l
             return (
-              (function t() {
-                E(), (e = setTimeout(t, 1500))
-              })(),
-              function () {
-                clearTimeout(e)
-              }
+              ((l = e.call(this) || this)._toValue = t.toValue),
+              (l._easing = null !== (n = t.easing) && void 0 !== n ? n : (i || (i = o.a.inOut(o.a.ease)), i)),
+              (l._duration = null !== (r = t.duration) && void 0 !== r ? r : 500),
+              (l._delay = null !== (s = t.delay) && void 0 !== s ? s : 0),
+              (l.__iterations = null !== (c = t.iterations) && void 0 !== c ? c : 1),
+              (l._useNativeDriver = Object(a.c)(t)),
+              (l.__isInteraction = null !== (u = t.isInteraction) && void 0 !== u ? u : !l._useNativeDriver),
+              l
             )
-          }, []),
-          s.a.createElement(
-            m.a,
-            { ref: g, style: j.root },
-            s.a.createElement(L.a, {
-              ListFooterComponent: s.a.createElement(z, { footerHeight: a, unintelligible: d }),
-              ListHeaderComponent: s.a.createElement(M, { headerHeight: c }),
-              accessibilityRole: 'listbox',
-              contentContainerStyle: { marginBottom: 0 },
-              data: t,
-              keyExtractor: function (e) {
-                return e.sequenceId
-              },
-              maintainVisibleContentPosition: { minIndexForVisible: 0 },
-              onEndReached: function () {
-                E()
-              },
-              onScroll: function (e) {
-                var t = e.nativeEvent,
-                  n = t.contentOffset,
-                  r = t.contentSize,
-                  i = t.layoutMeasurement,
-                  o = 2 * (y.current.containerHeight || 0) + a,
-                  c = r.height - i.height - n.y - o > 0
-                y.current.hasUserScrolledUp = c
-              },
-              ref: b,
-              renderItem: function (e) {
-                var n,
-                  a = e.index,
-                  i = e.item,
-                  o = !0
-                return (
-                  f || (o = !h(i.speaker, null === (n = t[a - 1]) || void 0 === n ? void 0 : n.speaker)),
-                  s.a.createElement(S, r()({}, v, { caption: i, key: i.sequenceId, withSpeaker: o }))
-                )
-              },
-              scrollEventThrottle: 100,
-              style: [j.captionsContainer, l],
+          }
+          ;(r = e), ((n = c).prototype = Object.create(r.prototype)), (n.prototype.constructor = n), s(n, r)
+          var u = c.prototype
+          return (
+            (u.__getNativeAnimationConfig = function () {
+              for (var t = [], e = Math.round(this._duration / (1e3 / 60)), n = 0; n < e; n++)
+                t.push(this._easing(n / e))
+              return (
+                t.push(this._easing(1)),
+                { type: 'frames', frames: t, toValue: this._toValue, iterations: this.__iterations }
+              )
             }),
+            (u.start = function (t, e, n, i, r) {
+              var a = this
+              ;(this.__active = !0), (this._fromValue = t), (this._onUpdate = e), (this.__onEnd = n)
+              var o = function () {
+                0 !== a._duration || a._useNativeDriver
+                  ? ((a._startTime = Date.now()),
+                    a._useNativeDriver
+                      ? a.__startNativeAnimation(r)
+                      : (a._animationFrame = requestAnimationFrame(a.onUpdate.bind(a))))
+                  : (a._onUpdate(a._toValue), a.__debouncedOnEnd({ finished: !0 }))
+              }
+              this._delay ? (this._timeout = setTimeout(o, this._delay)) : o()
+            }),
+            (u.onUpdate = function () {
+              var t = Date.now()
+              if (t >= this._startTime + this._duration)
+                return (
+                  0 === this._duration
+                    ? this._onUpdate(this._toValue)
+                    : this._onUpdate(this._fromValue + this._easing(1) * (this._toValue - this._fromValue)),
+                  void this.__debouncedOnEnd({ finished: !0 })
+                )
+              this._onUpdate(
+                this._fromValue +
+                  this._easing((t - this._startTime) / this._duration) * (this._toValue - this._fromValue),
+              ),
+                this.__active && (this._animationFrame = requestAnimationFrame(this.onUpdate.bind(this)))
+            }),
+            (u.stop = function () {
+              e.prototype.stop.call(this),
+                (this.__active = !1),
+                clearTimeout(this._timeout),
+                t.cancelAnimationFrame(this._animationFrame),
+                this.__debouncedOnEnd({ finished: !1 })
+            }),
+            c
           )
-        )
-      }
-      function M(e) {
-        var t = e.headerHeight
-        return s.a.createElement(m.a, { style: { height: t } })
-      }
-      function z(e) {
-        var t = e.footerHeight,
-          n = e.unintelligible
-        return s.a.createElement(
-          s.a.Fragment,
-          null,
-          n ? s.a.createElement(x, { size: 20 }) : null,
-          s.a.createElement(m.a, { style: { height: t } }),
-        )
-      }
-      var j = u.a.create(function (e) {
-        return {
-          root: { height: '100%', width: '100%', flex: 1 },
-          captionsContainer: { maxHeight: '100%', height: '100%' },
-        }
-      })
-      ;(_.Caption = S), (_.areSpeakersIdentical = h)
-      t.a = _
+        })(r.a)
+        e.a = c
+      }.call(this, n('fRV1')))
     },
-    hqDb: function (e, t, n) {
+    hqDb: function (t, e, n) {
       'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('VrFO'),
-        s = n.n(c),
-        l = n('Y9Ll'),
-        u = n.n(l),
-        d = n('1Pcy'),
-        p = n.n(d),
-        m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        v = n.n(h),
-        g = n('KEM+'),
-        b = n.n(g),
+      var i = n('97Jx'),
+        r = n.n(i),
+        a = n('m3Bd'),
+        o = n.n(a),
+        s = n('VrFO'),
+        c = n.n(s),
+        u = n('Y9Ll'),
+        l = n.n(u),
+        p = n('1Pcy'),
+        d = n.n(p),
+        f = n('5Yy7'),
+        h = n.n(f),
+        _ = n('2VqO'),
+        v = n.n(_),
+        m = n('KEM+'),
+        g = n.n(m),
         y = (n('2G9S'), n('ERkP')),
-        S = n.n(y),
-        E = n('k49u'),
+        b = n.n(y),
+        O = n('k49u'),
         w = (n('LW0h'), n('7x/C'), n('KOtZ'), n('vrRf'), n('6xIQ')),
-        k = n('kGix'),
-        C = n('G6rE'),
-        x = n('rxPX'),
-        I = n('0KEI'),
-        P = function (e, t) {
-          return t.userIds
+        N = n('kGix'),
+        E = n('G6rE'),
+        S = n('rxPX'),
+        P = n('0KEI'),
+        C = function (t, e) {
+          return e.userIds
         },
-        T = function (e, t) {
-          return t.userIds.filter(function (t) {
-            return !!C.e.select(e, t)
+        j = function (t, e) {
+          return e.userIds.filter(function (e) {
+            return !!E.e.select(t, e)
           })
         },
-        O = function (e, t) {
-          return t.userIds.reduce(function (t, n) {
-            var a = C.e.selectFetchStatus(e, n)
-            return (t[n] = a === k.a.NONE ? k.a.LOADING : a), t
+        A = function (t, e) {
+          return e.userIds.reduce(function (e, n) {
+            var i = E.e.selectFetchStatus(t, n)
+            return (e[n] = i === N.a.NONE ? N.a.LOADING : i), e
           }, {})
         },
-        L = Object(x.a)()
+        V = Object(S.a)()
           .propsFromState(function () {
             return {
-              availableUserIds: Object(w.a)(T, function (e) {
-                return e
+              availableUserIds: Object(w.a)(j, function (t) {
+                return t
               }),
-              fetchStatus: Object(w.a)(T, O, P, function (e, t, n) {
-                for (var a = k.a.LOADED, r = 0; r < n.length; r++) {
-                  var i = n[r]
-                  if (-1 === e.indexOf(i)) {
-                    var o = t[i] || k.a.LOADING
-                    a = a === k.a.LOADED ? o : a
+              fetchStatus: Object(w.a)(j, A, C, function (t, e, n) {
+                for (var i = N.a.LOADED, r = 0; r < n.length; r++) {
+                  var a = n[r]
+                  if (-1 === t.indexOf(a)) {
+                    var o = e[a] || N.a.LOADING
+                    i = i === N.a.LOADED ? o : i
                   }
-                  if (a === k.a.LOADED) break
+                  if (i === N.a.LOADED) break
                 }
-                return a
+                return i
               }),
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(P.createLocalApiErrorHandlerWithContextFactory)(
                 'USERS_LIST_CONTAINER',
               ),
-              fetchUsersIfNeeded: C.e.fetchManyIfNeeded,
+              fetchUsersIfNeeded: E.e.fetchManyIfNeeded,
             }
           }),
-        R = n('v//M'),
-        _ = n('3XMw'),
-        M = n.n(_),
-        z = n('pQ3Z'),
-        j = n.n(z),
-        H = (n('z84I'), n('cFuS')),
-        A = n('Re5t'),
-        D = n('MWbm'),
-        B = n('88ay'),
-        N = function (e) {
-          var t = e.displayMode,
-            n = e.renderUserCell,
-            a = e.userIds
-          e.withFinalItemBorder, e.withItemBorder
-          return S.a.createElement(
-            D.a,
+        I = n('v//M'),
+        k = n('3XMw'),
+        T = n.n(k),
+        x = n('pQ3Z'),
+        L = n.n(x),
+        R = (n('z84I'), n('cFuS')),
+        D = n('Re5t'),
+        F = n('MWbm'),
+        U = n('88ay'),
+        M = function (t) {
+          var e = t.displayMode,
+            n = t.renderUserCell,
+            i = t.userIds
+          t.withFinalItemBorder, t.withItemBorder
+          return b.a.createElement(
+            F.a,
             null,
-            a.map(function (e, a) {
+            i.map(function (t, i) {
               return n
-                ? n(e)
-                : S.a.createElement(B.b, {
-                    decoration: B.e,
-                    displayMode: t,
-                    key: e,
-                    promotedItemType: H.c.USER,
-                    userId: e,
+                ? n(t)
+                : b.a.createElement(U.b, {
+                    decoration: U.e,
+                    displayMode: e,
+                    key: t,
+                    promotedItemType: R.c.USER,
+                    userId: t,
                     withFollowsYou: !0,
                   })
             }),
           )
         }
-      N.defaultProps = { displayMode: A.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
-      var F = N,
-        V = ['availableUserIds', 'createLocalApiErrorHandler', 'fetchStatus', 'fetchUsersIfNeeded', 'userIds'],
-        U = M.a.f5b426c2,
-        W = { viewType: 'user_list' },
-        q = L(
-          (function (e) {
-            f()(n, e)
-            var t = v()(n)
+      M.defaultProps = { displayMode: D.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
+      var H = M,
+        B = ['availableUserIds', 'createLocalApiErrorHandler', 'fetchStatus', 'fetchUsersIfNeeded', 'userIds'],
+        z = T.a.f5b426c2,
+        q = { viewType: 'user_list' },
+        W = V(
+          (function (t) {
+            h()(n, t)
+            var e = v()(n)
             function n() {
-              var e
-              s()(this, n)
-              for (var a = arguments.length, i = new Array(a), c = 0; c < a; c++) i[c] = arguments[c]
+              var t
+              c()(this, n)
+              for (var i = arguments.length, a = new Array(i), s = 0; s < i; s++) a[s] = arguments[s]
               return (
-                (e = t.call.apply(t, [this].concat(i))),
-                b()(p()(e), 'state', { allUsersUnavailable: !1 }),
-                b()(p()(e), '_renderContent', function () {
-                  var t = e.props,
-                    n = t.availableUserIds,
-                    a = (t.createLocalApiErrorHandler, t.fetchStatus, t.fetchUsersIfNeeded, t.userIds, o()(t, V))
-                  return S.a.createElement(F, r()({}, a, { userIds: n }))
+                (t = e.call.apply(e, [this].concat(a))),
+                g()(d()(t), 'state', { allUsersUnavailable: !1 }),
+                g()(d()(t), '_renderContent', function () {
+                  var e = t.props,
+                    n = e.availableUserIds,
+                    i = (e.createLocalApiErrorHandler, e.fetchStatus, e.fetchUsersIfNeeded, e.userIds, o()(e, B))
+                  return b.a.createElement(H, r()({}, i, { userIds: n }))
                 }),
-                b()(p()(e), '_handleFetch', function () {
-                  e._fetchUsersIfNeeded()
+                g()(d()(t), '_handleFetch', function () {
+                  t._fetchUsersIfNeeded()
                 }),
-                e
+                t
               )
             }
             return (
-              u()(n, [
+              l()(n, [
                 {
                   key: 'componentDidMount',
                   value: function () {
@@ -5600,17 +4470,17 @@
                 },
                 {
                   key: 'componentDidUpdate',
-                  value: function (e) {
-                    j()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
+                  value: function (t) {
+                    L()(t.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
                   },
                 },
                 {
                   key: 'render',
                   value: function () {
-                    return S.a.createElement(R.a, {
-                      accessibilityLabel: U,
-                      behavioralEventContext: W,
-                      fetchStatus: this.state.allUsersUnavailable ? k.a.LOADED : this.props.fetchStatus,
+                    return b.a.createElement(I.a, {
+                      accessibilityLabel: z,
+                      behavioralEventContext: q,
+                      fetchStatus: this.state.allUsersUnavailable ? N.a.LOADED : this.props.fetchStatus,
                       onRequestRetry: this._handleFetch,
                       render: this._renderContent,
                       retryable: !1,
@@ -5620,28 +4490,28 @@
                 {
                   key: '_fetchUsersIfNeeded',
                   value: function () {
-                    var e,
-                      t = this,
+                    var t,
+                      e = this,
                       n = this.props,
-                      a = n.availableUserIds,
+                      i = n.availableUserIds,
                       r = n.createLocalApiErrorHandler
                     ;(0, n.fetchUsersIfNeeded)(n.userIds).then(
                       function () {
-                        t.setState({ allUsersUnavailable: !1 })
+                        e.setState({ allUsersUnavailable: !1 })
                       },
                       r(
-                        ((e = {}),
-                        b()(e, E.a.AddressBookLookupNotFound, {
+                        ((t = {}),
+                        g()(t, O.a.AddressBookLookupNotFound, {
                           customAction: function () {
-                            0 === a.length && t.setState({ allUsersUnavailable: !0 })
+                            0 === i.length && e.setState({ allUsersUnavailable: !0 })
                           },
                         }),
-                        b()(e, E.a.OtherUserSuspended, {
+                        g()(t, O.a.OtherUserSuspended, {
                           customAction: function () {
-                            0 === a.length && t.setState({ allUsersUnavailable: !0 })
+                            0 === i.length && e.setState({ allUsersUnavailable: !0 })
                           },
                         }),
-                        e),
+                        t),
                       ),
                     )
                   },
@@ -5649,636 +4519,307 @@
               ]),
               n
             )
-          })(S.a.Component),
+          })(b.a.Component),
         )
-      t.a = q
+      e.a = W
     },
-    kRXa: function (e, t, n) {
+    jydp: function (t, e, n) {
       'use strict'
-      var a = n('97Jx'),
-        r = n.n(a),
-        i = n('m3Bd'),
-        o = n.n(i),
-        c = n('VrFO'),
-        s = n.n(c),
-        l = n('Y9Ll'),
-        u = n.n(l),
-        d = n('1Pcy'),
-        p = n.n(d),
-        m = n('5Yy7'),
-        f = n.n(m),
-        h = n('2VqO'),
-        v = n.n(h),
-        g = n('KEM+'),
-        b = n.n(g),
-        y = (n('2G9S'), n('ERkP')),
-        S = n.n(y),
-        E = n('/yvb'),
-        w = n('3XMw'),
-        k = n.n(w),
-        C = n('py1r'),
-        x = n('oLZl'),
-        I = n('9RkS'),
-        P = n('rHpw'),
-        T = n('A53h'),
-        O = n('sTSP'),
-        L = n('MWbm'),
-        R = [
-          'accessibilityLabelIcon',
-          'accessibilityLabelSlider',
-          'containerHeight',
-          'isMuted',
-          'onHideSlider',
-          'onMuteToggle',
-          'onShowSlider',
-          'onSliderChange',
-          'pullRight',
-          'sliderColor',
-          'volumePercent',
-          'withGraySliderTrack',
-          'withNavigationSliderBackground',
-        ],
-        _ = k.a.b3160a69,
-        M = (function (e) {
-          f()(n, e)
-          var t = v()(n)
-          function n() {
-            var e
-            s()(this, n)
-            for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
-            return (
-              (e = t.call.apply(t, [this].concat(r))),
-              b()(p()(e), 'state', { showSlider: !1, isSliderActive: !1 }),
-              b()(p()(e), '_handleButtonLayoutChange', function (t) {
-                var n = e.props.containerHeight,
-                  a = e.state.sliderMaxHeight,
-                  r = t.nativeEvent.layout.height
-                if (n) {
-                  var i = ''.concat(n - r - P.a.theme.spacesPx.space20, 'px')
-                  i !== a && e.setState({ sliderMaxHeight: i })
-                }
-              }),
-              b()(p()(e), '_handleSliderActive', function (t) {
-                return e.setState({ isSliderActive: t })
-              }),
-              b()(p()(e), '_showSlider', function () {
-                return e.setState({ showSlider: !0 })
-              }),
-              b()(p()(e), '_hideSlider', function () {
-                return e.setState({ showSlider: !1 })
-              }),
-              b()(p()(e), '_shouldShowSlider', function (e) {
-                return e.showSlider || e.isSliderActive
-              }),
-              b()(p()(e), '_normalizeValue', function (e) {
-                return Math.max(0, Math.min(e, 100))
-              }),
-              b()(p()(e), '_getSliderMarginStyles', function (e) {
-                var t = null != e ? e : 'medium'
-                return j['large' === t ? 'xLarge' : t]
-              }),
-              b()(p()(e), '_handleKeyDown', function (t) {
-                var n = e.props,
-                  a = n.onSliderChange,
-                  r = n.volumePercent,
-                  i = t.altKey,
-                  o = t.ctrlKey,
-                  c = t.metaKey
-                if (!(i || o || c)) {
-                  var s = t.key === x.a.ArrowUp || t.key === x.a.ArrowRight,
-                    l = t.key === x.a.ArrowDown || t.key === x.a.ArrowLeft
-                  if (s || l) {
-                    var u = e._normalizeValue(r + 10 * (s ? 1 : -1))
-                    a && a(u), t.preventDefault()
-                  }
-                }
-              }),
-              e
+      ;(function (t) {
+        var i = n('YRNd'),
+          r = n('MQi0'),
+          a = n('tI3i'),
+          o = n.n(a),
+          s = n('XJEr')
+        function c(t, e) {
+          return (c =
+            Object.setPrototypeOf ||
+            function (t, e) {
+              return (t.__proto__ = e), t
+            })(t, e)
+        }
+        var u = (function (e) {
+          var n, i
+          function a(t) {
+            var n, i, a, c, u, l, p, d, f, h, _, v
+            if (
+              (((f = e.call(this) || this)._overshootClamping =
+                null !== (n = t.overshootClamping) && void 0 !== n && n),
+              (f._restDisplacementThreshold = null !== (i = t.restDisplacementThreshold) && void 0 !== i ? i : 0.001),
+              (f._restSpeedThreshold = null !== (a = t.restSpeedThreshold) && void 0 !== a ? a : 0.001),
+              (f._initialVelocity = null !== (c = t.velocity) && void 0 !== c ? c : 0),
+              (f._lastVelocity = null !== (u = t.velocity) && void 0 !== u ? u : 0),
+              (f._toValue = t.toValue),
+              (f._delay = null !== (l = t.delay) && void 0 !== l ? l : 0),
+              (f._useNativeDriver = Object(s.c)(t)),
+              (f.__isInteraction = null !== (p = t.isInteraction) && void 0 !== p ? p : !f._useNativeDriver),
+              (f.__iterations = null !== (d = t.iterations) && void 0 !== d ? d : 1),
+              void 0 !== t.stiffness || void 0 !== t.damping || void 0 !== t.mass)
             )
-          }
-          return (
-            u()(n, [
-              {
-                key: 'componentDidUpdate',
-                value: function (e, t) {
-                  var n = this.props,
-                    a = n.onHideSlider,
-                    r = n.onShowSlider
-                  if (n.onSliderChange) {
-                    var i = this._shouldShowSlider(t),
-                      o = this._shouldShowSlider(this.state)
-                    !i && o && r && r(), i && !o && a && a()
-                  }
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this,
-                    t = this.props,
-                    n = t.accessibilityLabelIcon,
-                    a = t.accessibilityLabelSlider,
-                    i = t.containerHeight,
-                    c = t.isMuted,
-                    s = t.onHideSlider,
-                    l = t.onMuteToggle,
-                    u = t.onShowSlider,
-                    d = t.onSliderChange,
-                    p = t.pullRight,
-                    m = t.sliderColor,
-                    f = t.volumePercent,
-                    h = t.withGraySliderTrack,
-                    v = t.withNavigationSliderBackground,
-                    g = o()(t, R),
-                    b = c ? S.a.createElement(T.a, null) : S.a.createElement(O.a, null),
-                    y = v ? z.sliderWithNavigationBackground : z.sliderWithDefaultBackground
-                  return S.a.createElement(
-                    C.a,
-                    {
-                      disabled: !d,
-                      onFocusRingGained: d ? this._showSlider : void 0,
-                      onFocusRingLost: d ? this._hideSlider : void 0,
-                      onHoverIn: d ? this._showSlider : void 0,
-                      onHoverOut: d ? this._hideSlider : void 0,
-                    },
-                    S.a.createElement(
-                      L.a,
-                      { onKeyDown: d ? this._handleKeyDown : void 0 },
-                      S.a.createElement(
-                        E.a,
-                        r()(
-                          {
-                            accessibilityLabel: n,
-                            icon: b,
-                            onLayout: this._handleButtonLayoutChange,
-                            onPress: l,
-                            pullRight: p,
-                            type: 'onMediaText',
-                          },
-                          g,
-                        ),
-                      ),
-                      d &&
-                        S.a.createElement(C.a, { onFocusRingGained: u, onFocusRingLost: s }, function (t) {
-                          var n = t.isFocusedWithin
-                          return S.a.createElement(
-                            L.a,
-                            {
-                              style: [
-                                z.sliderBackground,
-                                y,
-                                e._getSliderMarginStyles(g.size),
-                                n || e._shouldShowSlider(e.state) ? null : P.a.visuallyHidden,
-                                i && { maxHeight: e.state.sliderMaxHeight },
-                              ],
-                            },
-                            S.a.createElement(I.a, {
-                              accessibilityLabel: a,
-                              accessibilityLabelValueText: _({ volumePercent: f }),
-                              color: m || 'white',
-                              isVertical: !0,
-                              keyboardStep: 10,
-                              max: 100,
-                              min: 0,
-                              onActive: e._handleSliderActive,
-                              onChange: d,
-                              step: 1,
-                              value: c ? 0 : f || 0,
-                              withGrayBackground: h,
-                            }),
-                          )
-                        }),
-                    ),
-                  )
-                },
-              },
-            ]),
-            n
-          )
-        })(S.a.PureComponent)
-      b()(M, 'defaultProps', { pullRight: !1 })
-      var z = P.a.create(function (e) {
-          return {
-            sliderBackground: {
-              bottom: 0,
-              borderRadius: e.borderRadii.xLarge,
-              height: 'calc('.concat(e.spaces.space64, '*2)'),
-              left: e.spaces.space4,
-              position: 'absolute',
-              padding: e.spaces.space12,
-              paddingVertical: e.spaces.space16,
-              right: e.spaces.space4,
-            },
-            sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 },
-            sliderWithNavigationBackground: {
-              backgroundColor: e.colors.navigationBackground,
-              boxShadow: e.boxShadows.xSmall,
-            },
-          }
-        }),
-        j = P.a.create(function (e) {
-          var t = e.spaces,
-            n = e.spacesPx,
-            a = ''.concat(n.space16 + n.space4 + n.space2, 'px'),
-            r = ''.concat(n.space20 + n.space24, 'px'),
-            i = ''.concat(n.space12 + n.space40, 'px')
-          return {
-            xSmall: { marginBottom: t.space24 },
-            small: { marginBottom: t.space32 },
-            medium: { marginBottom: t.space36 },
-            large: { marginBottom: r },
-            xLarge: { marginBotom: i },
-            smallCompact: { marginBottom: a },
-            DEPRECATED_normalCompact: { marginBottom: t.space32 },
-            DEPRECATED_normal: { marginBottom: t.space40 },
-          }
-        })
-      t.a = M
-    },
-    lOQR: function (e, t, n) {
-      'use strict'
-      n('hBpG'), n('7x/C')
-      var a = n('6/RC'),
-        r = n.n(a),
-        i = n('aITJ'),
-        o = {
-          setLocation: function (e) {
-            document.location = e
-          },
-          getAppStoreURLs: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 'rwoiah',
-              t = c(e),
-              n = [t.android, t.ios, t.windows],
-              a = n.find(function (e) {
-                return e.matches()
-              })
-            return a ? [a] : n
-          },
-          getiOSAppStoreLink: function (e) {
-            var t = c(e)
-            return t.ios.matches() ? t.ios.url : t.ios.webUrl
-          },
-          getAndroidAppStoreLink: function (e) {
-            var t = c(e)
-            return t.android.matches() ? t.android.url : t.android.webUrl
-          },
-          goToAppStore: function () {
-            var e = this.getAppStoreURLs()
-            e[0] && o.setLocation(e[0].url)
-          },
-          openApp: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 'twitter://timeline'
-            r.a.canUseDOM && o.setLocation(e)
-          },
-        },
-        c = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 'rwoiah'
-          return {
-            android: {
-              platform: 'android',
-              matches: function () {
-                return i.b.isAndroid()
-              },
-              url: 'market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D'.concat(e),
-              webUrl:
-                'https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D'.concat(
-                  e,
-                ),
-            },
-            ios: {
-              platform: 'ios',
-              matches: function () {
-                return i.b.isIOS()
-              },
-              url: 'itmss://itunes.apple.com/us/app/twitter/id333903271?mt=8&uo='.concat(e),
-              webUrl: 'https://itunes.apple.com/us/app/twitter/id333903271?mt=8&uo='.concat(e),
-            },
-            windows: {
-              platform: 'windows',
-              matches: function () {
-                return i.b.isWindowsPhone()
-              },
-              url: 'ms-windows-store://pdp/?ProductId=9wzdncrfj140',
-              webUrl: 'https://www.microsoft.com/p/twitter/9wzdncrfj140',
-            },
-          }
-        }
-      t.a = o
-    },
-    nmVb: function (e, t, n) {
-      'use strict'
-      var a = n('IGGJ')
-      Object.defineProperty(t, '__esModule', { value: !0 }),
-        (t.default = function (e) {
-          for (var t = [], n = (0, r.default)(e), a = 0; a < n.length; a++) t.push(n[a].hashtag)
-          return t
-        })
-      var r = a(n('yyPN'))
-      e.exports = t.default
-    },
-    p3P5: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return x
-      }),
-        n.d(t, 'b', function () {
-          return O
-        })
-      var a,
-        r = n('yiKp'),
-        i = n.n(r),
-        o = n('KEM+'),
-        c = n.n(o),
-        s = (n('ho0z'), n('z84I'), n('ERkP')),
-        l = n.n(s),
-        u = n('G/+M'),
-        d = n('v6aA'),
-        p = n('3XMw'),
-        m = n.n(p),
-        f = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
-        h = n('RuTB'),
-        v = Object(f.a)({
-          loader: function () {
-            return m.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(227)]).then(n.bind(null, '4AX5'))
-            })
-          },
-          renderPlaceholder: function (e, t) {
-            return l.a.createElement(h.a, { hasError: e, onRetry: t })
-          },
-        }),
-        g = n('MWbm'),
-        b = n('TIdA'),
-        y = n('oSwX'),
-        S = n('t62R'),
-        E = n('jV+4'),
-        w = n('rHpw'),
-        k = n('VKFJ'),
-        C = b.a.createLayoutCache()
-      function x(e) {
-        var t = l.a.useContext(d.a).featureSwitches,
-          n = e.children,
-          a = e.hasNftAvatar,
-          r = e.isVerified,
-          i = e.kind,
-          o = e.name,
-          c = e.periscopeUserId,
-          s = e.screenName,
-          u = e.width,
-          p = a && t.isTrue('responsive_web_nft_avatar'),
-          m = i ? P[i] : null,
-          f = e.profile_image_url_https || '',
-          h =
-            n ||
-            l.a.createElement(y.default, {
-              imageLayoutCache: C,
-              screenName: s,
-              shape: p ? 'hex' : 'circle',
-              size: L,
-              style: T.participantAvatarSize,
-              uri: f,
-              withHoverCard: !0,
-              withLink: !0,
-            })
-        return l.a.createElement(
-          g.a,
-          { style: [{ width: u }, T.participantCell] },
-          l.a.createElement(g.a, { style: T.participantAvatarSize }, h, l.a.createElement(I, { periscopeUserId: c })),
-          l.a.createElement(
-            S.b,
-            { numberOfLines: 1, size: 'subtext2', style: T.participantCellUsername, weight: 'bold' },
-            l.a.createElement(E.a, { isVerified: r, name: o }),
-          ),
-          l.a.createElement(
-            g.a,
-            { style: T.participantCellKindContainer },
-            e.speakingIndicator,
-            l.a.createElement(
-              S.b,
-              { color: 'gray700', numberOfLines: 1, size: 'subtext2', style: T.participantCellKind },
-              m || l.a.createElement('span', null, ' '),
-            ),
-          ),
-        )
-      }
-      function I(e) {
-        var t = e.periscopeUserId,
-          n = R(w.a.theme).avatar.size,
-          a = u.c(t)
-        return l.a.createElement(
-          l.a.Fragment,
-          null,
-          null == a
-            ? void 0
-            : a.map(function (e) {
-                return l.a.createElement(v, { key: e.id, reaction: e, size: n })
-              }),
-        )
-      }
-      var P =
-          ((a = {}),
-          c()(a, k.a.host, m.a.cededf29),
-          c()(a, k.a.cohost, m.a.f77997bf),
-          c()(a, k.a.speaker, m.a.i48f4ed8),
-          c()(a, k.a.listener, m.a.a77c8e02),
-          a),
-        T = w.a.create(function (e) {
-          var t = R(e),
-            n = { width: t.avatar.size, height: t.avatar.size }
-          return {
-            participantCell: i()({ justifyContent: 'center', alignItems: 'center' }, t.participantCell),
-            participantCellUsername: t.participantCellUsername,
-            participantCellKindContainer: { position: 'relative', justifyContent: 'center' },
-            participantCellKind: { lineHeight: t.kind.lineHeight },
-            participantAvatarSize: n,
-          }
-        })
-      function O(e) {
-        var t = R(e)
-        return {
-          getWidth: function () {
-            return t.participantCell.minWidth + 2 * t.participantCell.paddingHorizontal
-          },
-          getHeight: function () {
-            return t.participantCell.height + t.participantCell.marginBottom
-          },
-        }
-      }
-      var L = 'xxLarge'
-      function R(e) {
-        var t = y.default.getSizeStyle('xxLarge').width || e.spacesPx.space48,
-          n = e.spacesPx.space20,
-          a = e.spacesPx.space8,
-          r = e.spacesPx.space80 + 2 * a,
-          i = e.spacesPx.space4,
-          o = e.lineHeightsPx.headline2,
-          c = e.lineHeightsPx.headline2
-        return {
-          participantCell: { marginBottom: n, paddingHorizontal: a, minWidth: r, height: t + i + o + c + n },
-          avatar: { size: t },
-          participantCellUsername: { lineHeight: o, paddingTop: i },
-          kind: { lineHeight: c },
-        }
-      }
-    },
-    ssnq: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return m
-      })
-      var a = n('ddV6'),
-        r = n.n(a),
-        i = n('T0aG'),
-        o = n.n(i),
-        c =
-          (n('lTEL'),
-          n('7x/C'),
-          n('LqLs'),
-          n('87if'),
-          n('kYxP'),
-          n('jwue'),
-          n('+oxZ'),
-          n('M+/F'),
-          n('+KXO'),
-          n('ERkP')),
-        s = n.n(c),
-        l = (n('z84I'), n('FgXs'))
-      function u(e) {
-        return 'object' !== o()(e) || null === e
-          ? e
-          : Array.isArray(e)
-          ? e.map(u)
-          : Object(l.a)(e, function (e) {
-              return u(e)
-            })
-      }
-      var d = n('fs1G'),
-        p = n('9EWH')
-      function m(e) {
-        var t = u(e || {}),
-          n = u(t),
-          a = new Set()
-        function i(e) {
-          return (
-            a.add(e),
-            function () {
-              a.delete(e)
+              o()(
+                void 0 === t.bounciness && void 0 === t.speed && void 0 === t.tension && void 0 === t.friction,
+                'You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one',
+              ),
+                (f._stiffness = null !== (h = t.stiffness) && void 0 !== h ? h : 100),
+                (f._damping = null !== (_ = t.damping) && void 0 !== _ ? _ : 10),
+                (f._mass = null !== (v = t.mass) && void 0 !== v ? v : 1)
+            else if (void 0 !== t.bounciness || void 0 !== t.speed) {
+              var m, g
+              o()(
+                void 0 === t.tension &&
+                  void 0 === t.friction &&
+                  void 0 === t.stiffness &&
+                  void 0 === t.damping &&
+                  void 0 === t.mass,
+                'You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one',
+              )
+              var y = r.a.fromBouncinessAndSpeed(
+                null !== (m = t.bounciness) && void 0 !== m ? m : 8,
+                null !== (g = t.speed) && void 0 !== g ? g : 12,
+              )
+              ;(f._stiffness = y.stiffness), (f._damping = y.damping), (f._mass = 1)
+            } else {
+              var b,
+                O,
+                w = r.a.fromOrigamiTensionAndFriction(
+                  null !== (b = t.tension) && void 0 !== b ? b : 40,
+                  null !== (O = t.friction) && void 0 !== O ? O : 7,
+                )
+              ;(f._stiffness = w.stiffness), (f._damping = w.damping), (f._mass = 1)
             }
-          )
-        }
-        function c() {
-          a.forEach(function (e) {
-            e(n)
-          })
-        }
-        function l(e) {
-          return function (t) {
-            var n = e.current.slice,
-              a = e.current.state,
-              r = e.current.selector(t)
-            e.current.equality(r, n, t, a) ||
-              ((e.current.slice = r), (e.current.state = t), e.current.onUpdate(e.current.slice))
-          }
-        }
-        return {
-          getState: function () {
-            return n
-          },
-          setState: function (e) {
-            ;(n = Object(p.a)(n, function (t) {
-              var n,
-                a,
-                r,
-                i = e(t)
-              i &&
-                'object' === o()(i) &&
-                ((n = t),
-                (a = i),
-                (r = {}),
-                Object.keys(a).forEach(function (e) {
-                  ;(r[e] = !0), (n[e] = a[e])
-                }),
-                Object.keys(n).forEach(function (e) {
-                  r[e] || delete n[e]
-                }))
-            })),
-              c()
-          },
-          reset: function () {
-            ;(n = u(t)), c()
-          },
-          useSlice: function (e, t) {
-            var a = (null == t ? void 0 : t.equalityFn) || f.equality,
-              o = d.a,
-              c = s.a.useRef({ state: n, slice: e(n), selector: e, equality: a, onUpdate: o })
-            ;(c.current.selector = e), (c.current.equality = a)
-            var u = s.a.useState(function () {
-                return c.current.slice
-              }),
-              p = r()(u, 2),
-              m = p[0],
-              h = p[1]
             return (
-              s.a.useEffect(function () {
-                var e = !0
-                c.current.onUpdate = function (e) {
-                  return h(function () {
-                    return e
-                  })
-                }
-                var t = l(c)
-                function a(n) {
-                  e && t(n)
-                }
-                a(n)
-                var r = i(a)
-                return function () {
-                  ;(e = !1), r()
-                }
-              }, []),
-              m
+              o()(f._stiffness > 0, 'Stiffness value must be greater than 0'),
+              o()(f._damping > 0, 'Damping value must be greater than 0'),
+              o()(f._mass > 0, 'Mass value must be greater than 0'),
+              f
             )
-          },
-          subscribe: function (e, t, a) {
-            var r = (null == a ? void 0 : a.equalityFn) || f.equality,
-              o = { current: { state: n, slice: e(n), selector: e, equality: r, onUpdate: t } },
-              c = i(l(o))
-            return o.current.onUpdate(o.current.slice), c
-          },
-        }
-      }
-      Object(p.b)()
-      var f = {
-        equality: function (e, t, n, a) {
-          return e === t
-        },
-      }
+          }
+          ;(i = e), ((n = a).prototype = Object.create(i.prototype)), (n.prototype.constructor = n), c(n, i)
+          var u = a.prototype
+          return (
+            (u.__getNativeAnimationConfig = function () {
+              var t
+              return {
+                type: 'spring',
+                overshootClamping: this._overshootClamping,
+                restDisplacementThreshold: this._restDisplacementThreshold,
+                restSpeedThreshold: this._restSpeedThreshold,
+                stiffness: this._stiffness,
+                damping: this._damping,
+                mass: this._mass,
+                initialVelocity: null !== (t = this._initialVelocity) && void 0 !== t ? t : this._lastVelocity,
+                toValue: this._toValue,
+                iterations: this.__iterations,
+              }
+            }),
+            (u.start = function (t, e, n, i, r) {
+              var o = this
+              if (
+                ((this.__active = !0),
+                (this._startPosition = t),
+                (this._lastPosition = this._startPosition),
+                (this._onUpdate = e),
+                (this.__onEnd = n),
+                (this._lastTime = Date.now()),
+                (this._frameTime = 0),
+                i instanceof a)
+              ) {
+                var s = i.getInternalState()
+                ;(this._lastPosition = s.lastPosition),
+                  (this._lastVelocity = s.lastVelocity),
+                  (this._initialVelocity = this._lastVelocity),
+                  (this._lastTime = s.lastTime)
+              }
+              var c = function () {
+                o._useNativeDriver ? o.__startNativeAnimation(r) : o.onUpdate()
+              }
+              this._delay ? (this._timeout = setTimeout(c, this._delay)) : c()
+            }),
+            (u.getInternalState = function () {
+              return { lastPosition: this._lastPosition, lastVelocity: this._lastVelocity, lastTime: this._lastTime }
+            }),
+            (u.onUpdate = function () {
+              var t = Date.now()
+              t > this._lastTime + 64 && (t = this._lastTime + 64)
+              var e = (t - this._lastTime) / 1e3
+              this._frameTime += e
+              var n = this._damping,
+                i = this._mass,
+                r = this._stiffness,
+                a = -this._initialVelocity,
+                o = n / (2 * Math.sqrt(r * i)),
+                s = Math.sqrt(r / i),
+                c = s * Math.sqrt(1 - o * o),
+                u = this._toValue - this._startPosition,
+                l = 0,
+                p = 0,
+                d = this._frameTime
+              if (o < 1) {
+                var f = Math.exp(-o * s * d)
+                ;(l = this._toValue - f * (((a + o * s * u) / c) * Math.sin(c * d) + u * Math.cos(c * d))),
+                  (p =
+                    o * s * f * ((Math.sin(c * d) * (a + o * s * u)) / c + u * Math.cos(c * d)) -
+                    f * (Math.cos(c * d) * (a + o * s * u) - c * u * Math.sin(c * d)))
+              } else {
+                var h = Math.exp(-s * d)
+                ;(l = this._toValue - h * (u + (a + s * u) * d)), (p = h * (a * (d * s - 1) + d * u * (s * s)))
+              }
+              if (
+                ((this._lastTime = t),
+                (this._lastPosition = l),
+                (this._lastVelocity = p),
+                this._onUpdate(l),
+                this.__active)
+              ) {
+                var _ = !1
+                this._overshootClamping &&
+                  0 !== this._stiffness &&
+                  (_ = this._startPosition < this._toValue ? l > this._toValue : l < this._toValue)
+                var v = Math.abs(p) <= this._restSpeedThreshold,
+                  m = !0
+                if (
+                  (0 !== this._stiffness && (m = Math.abs(this._toValue - l) <= this._restDisplacementThreshold),
+                  _ || (v && m))
+                )
+                  return (
+                    0 !== this._stiffness &&
+                      ((this._lastPosition = this._toValue), (this._lastVelocity = 0), this._onUpdate(this._toValue)),
+                    void this.__debouncedOnEnd({ finished: !0 })
+                  )
+                this._animationFrame = requestAnimationFrame(this.onUpdate.bind(this))
+              }
+            }),
+            (u.stop = function () {
+              e.prototype.stop.call(this),
+                (this.__active = !1),
+                clearTimeout(this._timeout),
+                t.cancelAnimationFrame(this._animationFrame),
+                this.__debouncedOnEnd({ finished: !1 })
+            }),
+            a
+          )
+        })(i.a)
+        e.a = u
+      }.call(this, n('fRV1')))
     },
-    tM6R: function (e, t, n) {
+    mbB1: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
-      })
-      var a = { help: 'https://help.twitter.com/using-twitter/spaces', settings: 'https://twitter.com/settings/spaces' }
+      var i = n('H5wF')
+      e.a = i.a('NativeAnimatedTurboModule')
     },
-    uFYP: function (e, t, n) {
+    pxHa: function (t, e, n) {
       'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        i = n('ERkP'),
-        o = n.n(i),
-        c = n('Lsrn'),
-        s = n('k/Ka'),
-        l = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(s.a)(
+      var i = n('XJEr'),
+        r = n('tI3i'),
+        a = n.n(r),
+        o = i.a.API,
+        s = 1,
+        c = (function () {
+          var t = e.prototype
+          function e() {
+            this._listeners = {}
+          }
+          return (
+            (t.__attach = function () {}),
+            (t.__detach = function () {
+              this.__isNative &&
+                null != this.__nativeTag &&
+                (i.a.API.dropAnimatedNode(this.__nativeTag), (this.__nativeTag = void 0))
+            }),
+            (t.__getValue = function () {}),
+            (t.__getAnimatedValue = function () {
+              return this.__getValue()
+            }),
+            (t.__addChild = function (t) {}),
+            (t.__removeChild = function (t) {}),
+            (t.__getChildren = function () {
+              return []
+            }),
+            (t.__makeNative = function () {
+              if (!this.__isNative) throw new Error('This node cannot be made a "native" animated node')
+              this.hasListeners() && this._startListeningToNativeValueUpdates()
+            }),
+            (t.addListener = function (t) {
+              var e = String(s++)
+              return (this._listeners[e] = t), this.__isNative && this._startListeningToNativeValueUpdates(), e
+            }),
+            (t.removeListener = function (t) {
+              delete this._listeners[t],
+                this.__isNative && !this.hasListeners() && this._stopListeningForNativeValueUpdates()
+            }),
+            (t.removeAllListeners = function () {
+              ;(this._listeners = {}), this.__isNative && this._stopListeningForNativeValueUpdates()
+            }),
+            (t.hasListeners = function () {
+              return !!Object.keys(this._listeners).length
+            }),
+            (t._startListeningToNativeValueUpdates = function () {
+              var t = this
+              ;(this.__nativeAnimatedValueListener && !this.__shouldUpdateListenersForNewNativeTag) ||
+                (this.__shouldUpdateListenersForNewNativeTag &&
+                  ((this.__shouldUpdateListenersForNewNativeTag = !1), this._stopListeningForNativeValueUpdates()),
+                o.startListeningToAnimatedNodeValue(this.__getNativeTag()),
+                (this.__nativeAnimatedValueListener = i.a.nativeEventEmitter.addListener(
+                  'onAnimatedValueUpdate',
+                  function (e) {
+                    e.tag === t.__getNativeTag() && t._onAnimatedValueUpdateReceived(e.value)
+                  },
+                )))
+            }),
+            (t._onAnimatedValueUpdateReceived = function (t) {
+              this.__callListeners(t)
+            }),
+            (t.__callListeners = function (t) {
+              for (var e in this._listeners) this._listeners[e]({ value: t })
+            }),
+            (t._stopListeningForNativeValueUpdates = function () {
+              this.__nativeAnimatedValueListener &&
+                (this.__nativeAnimatedValueListener.remove(),
+                (this.__nativeAnimatedValueListener = null),
+                o.stopListeningToAnimatedNodeValue(this.__getNativeTag()))
+            }),
+            (t.__getNativeTag = function () {
+              var t
+              i.a.assertNativeAnimatedModule(),
+                a()(this.__isNative, 'Attempt to get native tag from node not marked as "native"')
+              var e = null !== (t = this.__nativeTag) && void 0 !== t ? t : i.a.generateNewNodeTag()
+              return (
+                null == this.__nativeTag &&
+                  ((this.__nativeTag = e),
+                  i.a.API.createAnimatedNode(e, this.__getNativeConfig()),
+                  (this.__shouldUpdateListenersForNewNativeTag = !0)),
+                e
+              )
+            }),
+            (t.__getNativeConfig = function () {
+              throw new Error('This JS animated node type cannot be used as native animated node')
+            }),
+            (t.toJSON = function () {
+              return this.__getValue()
+            }),
+            e
+          )
+        })()
+      e.a = c
+    },
+    uFYP: function (t, e, n) {
+      'use strict'
+      var i = n('yiKp'),
+        r = n.n(i),
+        a = n('ERkP'),
+        o = n.n(a),
+        s = n('Lsrn'),
+        c = n('k/Ka'),
+        u = function () {
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(c.a)(
             'svg',
             r()(
-              r()({}, e),
+              r()({}, t),
               {},
               {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [c.a.root, e.style],
+                accessibilityHidden: void 0 === t.accessibilityLabel,
+                style: [s.a.root, t.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -6291,1712 +4832,12 @@
             ),
           )
         }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
+      ;(u.metadata = { width: 24, height: 24 }), (e.a = u)
     },
-    xVWt: function (e, t, n) {
+    vG6z: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return an
-      }),
-        n.d(t, 'b', function () {
-          return sn
-        }),
-        n.d(t, 'c', function () {
-          return vn
-        })
-      var a = n('m3Bd'),
-        r = n.n(a),
-        i = n('yiKp'),
-        o = n.n(i),
-        c = n('97Jx'),
-        s = n.n(c),
-        l = n('ddV6'),
-        u = n.n(l),
-        d = (n('7x/C'), n('JtPf'), n('z84I'), n('IAdD'), n('cFyg')),
-        p = n('Q/sS'),
-        m = n('A7Vd'),
-        f = n('ERkP'),
-        h = n.n(f),
-        v = n('G/+M'),
-        g = n('RhWx'),
-        b = n.n(g),
-        y = (n('LW0h'), n('wFPu'), n('vfdX'), n('ho0z'), n('KOtZ'), n('2G9S'), n('3XMw')),
-        S = n.n(y),
-        E = n('dgjd'),
-        w = n('MWbm'),
-        k = n('6iuV'),
-        C = n('TCYy'),
-        x = n('uCxL'),
-        I = n('jV+4'),
-        P = n('rHpw')
-      function T(e) {
-        var t = Object(E.a)(e.audioSpaceId).space
-        if (!t) return null
-        var n = t.sharings,
-          a = b()(n)
-            .reverse()
-            .filter(function (e) {
-              return e && e.tweet && e.user
-            })
-        return a.length ? h.a.createElement(O, { items: a }) : null
-      }
-      function O(e) {
-        var t = e.items,
-          n = t.reduce(function (e, t) {
-            return t.tweet ? (e.length ? ''.concat(e, '.').concat(t.id) : t.id) : e
-          }, ''),
-          a = h.a.useState(),
-          r = u()(a, 2),
-          i = r[0],
-          o = r[1],
-          c = Math.max(
-            0,
-            t.findIndex(function (e) {
-              return e.id === i
-            }),
-          )
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          h.a.createElement(
-            k.a,
-            {
-              childrenStyle: M.carouselChildrenStyles,
-              key: n,
-              onVisibleRangeChange: function (e) {
-                var n = e.index
-                1 === e.intersectionRatio && o(t[n].id)
-              },
-              updateObserverWithChildren: !0,
-              visibleItemIndex: c,
-            },
-            t.map(function (e, t) {
-              return h.a.createElement(L, { item: e, key: e.id || t })
-            }),
-          ),
-          h.a.createElement(C.a, { count: t.length, key: ''.concat(n, '-indicators'), max: R, selectedIndex: c }),
-        )
-      }
-      function L(e) {
-        if (!e.item) return null
-        var t = e.item,
-          n = t.tweet,
-          a = t.user
-        return h.a.createElement(
-          w.a,
-          { key: n.id_str, style: M.sharedContentContainer },
-          h.a.createElement(x.a, { isCondensed: !0, tweet: n }),
-          h.a.createElement(I.a, {
-            avatarSize: 'small',
-            name: _.sharedBy({ name: null == a ? void 0 : a.name }),
-            nameSize: 'subtext2',
-            profileImageUrl: null == a ? void 0 : a.profile_image_url_https,
-            style: M.sharedContentBy,
-            weight: 'normal',
-          }),
-        )
-      }
-      var R = 8,
-        _ = { sharedBy: S.a.bdfa93eb },
-        M = P.a.create(function (e) {
-          return {
-            sharedContentContainer: { paddingHorizontal: vn(e).container.paddingHorizontal, width: '100%' },
-            carouselChildrenStyles: { scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
-            sharedContentBy: { marginTop: e.spaces.space8 },
-          }
-        }),
-        z = n('2C8o'),
-        j = n('FGLp'),
-        H = n('hhqq'),
-        A = n('vbJ7')
-      function D(e) {
-        var t = e.audioSpaceId,
-          n = e.height,
-          a = z.d()
-        return p.n()
-          ? h.a.createElement(
-              w.a,
-              { style: [N.container, { height: n }] },
-              h.a.createElement(w.a, { style: N.fadeIn }),
-              h.a.createElement(B, { audioSpaceId: t, captions: a }),
-              h.a.createElement(w.a, { style: N.fadeOut }),
-            )
-          : null
-      }
-      function B(e) {
-        var t = e.audioSpaceId,
-          n = e.captions,
-          a = Object(E.a)(t).utils
-        return (
-          Object(j.a)(function () {
-            a.scribe(':audiospace:::transcription:impression')
-          }),
-          h.a.createElement(H.a, {
-            captionTextSize: 'body',
-            captions: n,
-            footerHeight: 28,
-            headerHeight: 28,
-            scrollContainerStyle: N.scrollContainerStyle,
-            withSpeakerAvatar: !0,
-            withSpeakerScreenName: !0,
-          })
-        )
-      }
-      var N = P.a.create(function (e) {
-          var t = A.a.hexToCss(e.colors.navigationBackground, 0),
-            n = A.a.hexToCss(e.colors.navigationBackground, 0.8)
-          return {
-            container: {
-              width: '100%',
-              paddingTop: e.spaces.space2,
-              paddingHorizontal: e.spaces.space8,
-              backgroundColor: e.colors.navigationBackground,
-              boxShadow: '0 0 '.concat(e.spacesPx.space4, 'px 0 ').concat(e.colors.gray50),
-              position: 'relative',
-            },
-            scrollContainerStyle: { paddingHorizontal: e.spaces.space8 },
-            fadeIn: {
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: e.spaces.space16,
-              backgroundImage: e.highContrastEnabled
-                ? void 0
-                : 'linear-gradient(to top, '.concat(t, ', ').concat(n, ')'),
-              pointerEvents: 'none',
-              zIndex: 1,
-            },
-            fadeOut: {
-              position: 'absolute',
-              bottom: 0,
-              left: 0,
-              width: '100%',
-              height: e.spaces.space8,
-              backgroundImage: e.highContrastEnabled
-                ? void 0
-                : 'linear-gradient(to bottom, '.concat(t, ', ').concat(n, ')'),
-              pointerEvents: 'none',
-              zIndex: 1,
-            },
-          }
-        }),
-        F = n.p + 'spaces_clipping_banner.1bf85ac5.png',
-        V = n('tM6R'),
-        U = n.p + 'bird_spaces_transparent.4a7e7195.png',
-        W = (n('1Iuc'), n('cm6r')),
-        q = n('Wms4'),
-        K = n('+/1j')
-      function G(e) {
-        return e.withEducationOnClick && e.audioSpaceId
-          ? h.a.createElement(X, { audioSpaceId: e.audioSpaceId })
-          : h.a.createElement(J, e)
-      }
-      function X(e) {
-        var t = Object(E.a)(e.audioSpaceId).utils,
-          n = p.k().openSheet
-        return h.a.createElement(
-          W.a,
-          {
-            accessibilityLabel: Y.recordingActive,
-            onPress: function () {
-              n(p.b.recordingEducation), t.scribe(':audiospace::recording:icon:click')
-            },
-          },
-          h.a.createElement(J, { audioSpaceId: e.audioSpaceId }),
-        )
-      }
-      function J(e) {
-        return h.a.createElement(
-          w.a,
-          { style: Z.indicatorWrapper },
-          h.a.createElement(
-            q.a,
-            { background: 'navigationBackground' },
-            h.a.createElement(
-              w.a,
-              { style: Z.indicatorContainer },
-              h.a.createElement(w.a, { style: [Z.indicatorDot, e.withoutPulse ? null : Z.indicatorDotAnimation] }),
-              h.a.createElement(
-                K.a,
-                { accessibilityRole: 'presentation', selectable: !1, style: Z.recordingIndicatorText },
-                Y.REC,
-              ),
-            ),
-          ),
-        )
-      }
-      var Z = P.a.create(function (e) {
-          return {
-            indicatorWrapper: { width: 'fit-content' },
-            recordingIndicatorText: { color: e.colors.text, fontWeight: e.fontWeights.bold },
-            indicatorContainer: { flexDirection: 'row', alignItems: 'center' },
-            indicatorDot: {
-              width: e.spaces.space8,
-              height: e.spaces.space8,
-              borderRadius: e.borderRadii.infinite,
-              marginRight: e.spaces.space4,
-              backgroundColor: '#E0245E',
-            },
-            indicatorDotAnimation: {
-              opacity: 0.2,
-              animationDuration: '1s',
-              animationKeyframes: [{ '0%': { opacity: 0.2 }, '50%': { opacity: 1 }, '100%': { opacity: 0.2 } }],
-              animationTimingFunction: 'cubic-bezier(0.44, 0.01, 0.48, 0.96)',
-              animationIterationCount: 'infinite',
-            },
-          }
-        }),
-        Y = { REC: 'REC', recordingActive: S.a.b4f91a89 },
-        Q = n('TIdA'),
-        $ = n('A91F'),
-        ee = n('t62R'),
-        te = n('/yvb'),
-        ne = n('Lsrn'),
-        ae = n('k/Ka'),
-        re = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ae.a)(
-            'svg',
-            o()(
-              o()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ne.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            h.a.createElement(
-              'g',
-              null,
-              h.a.createElement('path', {
-                d: 'M17.97 8.24c-.414 0-.75.336-.75.75v3.012c0 2.726-2.268 4.943-5.056 4.943h-.328c-2.788 0-5.056-2.217-5.056-4.943V8.99c0-.414-.336-.75-.75-.75s-.75.336-.75.75v3.012c0 3.363 2.636 6.128 5.984 6.414l-.01 2.334H8.268c-.415 0-.75.336-.75.75s.335.75.75.75h7.46c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-2.977l.01-2.335c3.335-.3 5.956-3.06 5.956-6.413V8.99c0-.415-.336-.75-.75-.75z',
-              }),
-              h.a.createElement('path', {
-                d: 'M12 15.42c2.077 0 3.766-1.688 3.766-3.765v-6.14c0-2.076-1.69-3.765-3.766-3.765S8.234 3.44 8.234 5.516v6.14c0 2.075 1.69 3.765 3.766 3.765zM9.734 5.517c0-1.25 1.016-2.266 2.266-2.266s2.266 1.017 2.266 2.266v6.14c0 1.25-1.017 2.265-2.266 2.265s-2.266-1.016-2.266-2.265v-6.14z',
-              }),
-            ),
-          )
-        }
-      re.metadata = { width: 24, height: 24 }
-      var ie = re,
-        oe = n('RUwF')
-      function ce() {
-        var e = p.k().requestSheetDismissal
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          h.a.createElement(
-            w.a,
-            { style: ue.imageContainer },
-            h.a.createElement(Q.a, { accessibilityLabel: '', aspectMode: $.a.COVER, image: U }),
-          ),
-          h.a.createElement(
-            w.a,
-            { style: ue.contentContainer },
-            h.a.createElement(G, { withoutPulse: !0 }),
-            h.a.createElement(ee.b, { size: 'title3', style: ue.title, weight: 'bold' }, le.title),
-            h.a.createElement(ee.b, { color: 'gray700' }, le.subtitle),
-            h.a.createElement(se, {
-              icon: h.a.createElement(ie, { style: ue.icon }),
-              subtitle: le.sections.onlySpeakersRecorded.subtitle,
-              title: le.sections.onlySpeakersRecorded.title,
-            }),
-            h.a.createElement(se, {
-              icon: h.a.createElement(oe.a, { style: ue.icon }),
-              subtitle: le.sections.replayOrShare.subtitle,
-              title: le.sections.replayOrShare.title,
-              withOnlyMarginBottom: !0,
-            }),
-            h.a.createElement(
-              ee.b,
-              { color: 'gray700', size: 'body', style: ue.disclaimer },
-              h.a.createElement(
-                S.a.I18NFormatMessage,
-                { $i18n: 'aab35604' },
-                h.a.createElement(ee.b, { color: 'text', link: V.a.help, withUnderline: !0 }, S.a.ce0104de),
-              ),
-            ),
-            h.a.createElement(te.a, { onClick: e, type: 'primaryOutlined' }, le.gotIt),
-          ),
-        )
-      }
-      function se(e) {
-        return h.a.createElement(
-          w.a,
-          { style: [ue.sectionContainer, e.withOnlyMarginBottom ? ue.sectionMarginBottom : ue.sectionMarginVertical] },
-          e.icon,
-          h.a.createElement(
-            w.a,
-            { style: ue.sectionContent },
-            h.a.createElement(ee.b, { weight: 'bold' }, e.title),
-            h.a.createElement(ee.b, { color: 'gray700' }, e.subtitle),
-          ),
-        )
-      }
-      var le = {
-          title: S.a.g1c6f16d,
-          subtitle: S.a.e5609214,
-          gotIt: S.a.j24c37b2,
-          sections: {
-            onlySpeakersRecorded: { title: S.a.g665514b, subtitle: S.a.ja196c59 },
-            replayOrShare: { title: S.a.dd317ed6, subtitle: S.a.hd2dfb72 },
-          },
-        },
-        ue = P.a.create(function (e) {
-          return {
-            imageContainer: { height: '128px', width: '100%' },
-            contentContainer: { padding: e.spaces.space32 },
-            title: { marginTop: e.spaces.space4, marginBottom: e.spaces.space8 },
-            disclaimer: { marginVertical: e.spaces.space16 },
-            icon: { marginRight: e.spaces.space12, fill: e.colors.purple500, fontSize: e.fontSizes.title3 },
-            sectionContent: { flexShrink: 1 },
-            sectionContainer: { flexFlow: 'row nowrap' },
-            sectionMarginVertical: { marginVertical: e.spaces.space12 },
-            sectionMarginBottom: { marginBottom: e.spaces.space12 },
-          }
-        }),
-        de = n('SNyS'),
-        pe = n('S+H3')
-      function me(e) {
-        var t = p.k().requestSheetDismissal
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          e.withPopoverLayout
-            ? null
-            : h.a.createElement(
-                w.a,
-                { style: fe.imageContainer },
-                h.a.createElement(Q.a, { accessibilityLabel: '', aspectMode: $.a.COVER, image: F }),
-              ),
-          h.a.createElement(
-            w.a,
-            { style: fe.contentContainer },
-            h.a.createElement(ee.b, { size: 'title3', style: fe.title, weight: 'bold' }, ve.title),
-            h.a.createElement(ee.b, { color: 'gray700' }, ve.subtitle),
-            he.map(function (e, t) {
-              return h.a.createElement(se, s()({ key: t }, e))
-            }),
-            e.withPopoverLayout
-              ? null
-              : h.a.createElement(
-                  te.a,
-                  { onClick: e.onButtonClick || t, style: fe.button, type: 'primaryOutlined' },
-                  ve.gotIt,
-                ),
-          ),
-        )
-      }
-      var fe = P.a.create(function (e) {
-          return {
-            imageContainer: { height: '180px', width: '100%', marginTop: e.spaces.space12 },
-            button: { marginTop: e.spaces.space24 },
-            contentContainer: { padding: e.spaces.space32 },
-            title: { marginBottom: e.spaces.space8 },
-            icon: { marginRight: e.spaces.space12, fill: e.colors.purple500, fontSize: e.fontSizes.title2 },
-          }
-        }),
-        he = [
-          { icon: h.a.createElement(de.a, { style: fe.icon }), title: S.a.f7c8617a, subtitle: S.a.ecc7d2eb },
-          { icon: h.a.createElement(pe.a, { style: fe.icon }), title: S.a.d575ee02, subtitle: S.a.bb1e43e3 },
-          { icon: h.a.createElement(ie, { style: fe.icon }), title: S.a.ed1d1ccf, subtitle: S.a.e5d193c7 },
-        ],
-        ve = { title: S.a.e1547ec0, subtitle: S.a.i154245e, gotIt: S.a.j24c37b2 },
-        ge = n('KEM+'),
-        be = n.n(ge),
-        ye = (n('lTEL'), n('87if'), n('kYxP'), n('KrtT'), n('TJCb'), n('DZ+c'), n('yH/f'), n('HmZq')),
-        Se = n('Pc/x'),
-        Ee = n('hUaP'),
-        we = n('AMlz'),
-        ke = n('zCf4'),
-        Ce = n('efqG'),
-        xe = n('sIe2')
-      function Ie() {
-        return h.a.createElement(
-          Ce.a,
-          {
-            contentStyle: _e.popoverContentStyles,
-            renderContent: function (e, t) {
-              return h.a.createElement(me, { onButtonClick: e, withPopoverLayout: 'popover' === t })
-            },
-            withArrow: !0,
-            withFixedPosition: !0,
-            wrapperStyle: _e.helpCircle,
-          },
-          h.a.createElement(te.a, {
-            backgroundColor: 'transparent',
-            borderColor: 'transparent',
-            color: 'text',
-            icon: h.a.createElement(de.a, null),
-            size: 'xSmall',
-          }),
-        )
-      }
-      function Pe(e) {
-        var t = e.id3NtpTime,
-          n = Object(we.a)(),
-          a = t && Math.floor(t - n.durationSeconds),
-          r = []
-        return (
-          a && t && (r = ye.getTranscript(a, t)),
-          h.a.createElement(
-            w.a,
-            null,
-            h.a.createElement(xe.a, {
-              accessibilityRole: 'listbox',
-              contentContainerStyle: _e.clipContent,
-              data: r,
-              keyExtractor: function (e) {
-                return e.sequenceId
-              },
-              renderItem: function (e) {
-                var t,
-                  n = e.index,
-                  a = e.item,
-                  i = null === (t = r[n - 1]) || void 0 === t ? void 0 : t.speaker,
-                  o = !H.a.areSpeakersIdentical(a.speaker, i)
-                return h.a.createElement(H.a.Caption, { caption: a, key: a.sequenceId, withSpeaker: o })
-              },
-              scrollEventThrottle: 100,
-            }),
-          )
-        )
-      }
-      function Te(e) {
-        var t = Object(ke.f)(),
-          n = Object(p.k)().requestSheetDismissal,
-          a = Object(E.a)(e.audioSpaceId).space,
-          r = Object(we.a)(),
-          i = h.a.useCallback(
-            function () {
-              if (a) {
-                var i = e.currentTimeMs
-                if (!i || i < r.durationMs) return
-                Se.a.proxsee
-                  .createClip({
-                    broadcast_id: a.rest_id,
-                    start_timecode_millis: Math.floor(i - r.durationMs),
-                    end_timecode_millis: Math.floor(i),
-                  })
-                  .then(function (e) {
-                    if (null != e && e.clip) {
-                      n()
-                      var a = new URLSearchParams(be()({}, Oe.clipId, e.clip.clip_id))
-                      t.push({
-                        pathname: '/compose/tweet',
-                        query: { text: Le(e.clip.broadcast_id, a.toString()) },
-                        state: { positionCursorAtBeginning: !0 },
-                      })
-                    }
-                  })
-              }
-            },
-            [a, r.durationMs, n, t, e.currentTimeMs],
-          )
-        return h.a.createElement(te.a, { onClick: i, type: 'primaryFilled' }, Re.next)
-      }
-      var Oe = Object.freeze({ clipId: 'clipID' }),
-        Le = function (e, t) {
-          return 'https://twitter.com/i/spaces/'.concat(e, '?').concat(t)
-        },
-        Re = { heading: S.a.cc724cb0, cancel: S.a.cfd2f35d, next: S.a.c1df579e },
-        _e = P.a.create(function (e) {
-          var t = Object(Ee.b)(e)
-          return {
-            container: { display: 'flex', justifyContent: 'space-between', height: '100%', padding: e.spaces.space16 },
-            headingContainer: {
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginTop: e.spaces.space4,
-              marginBottom: e.spaces.space20,
-              paddingHorizontal: t,
-            },
-            clipContent: { marginBottom: e.spaces.space8 },
-            cancelButton: { position: 'absolute', left: 0 },
-            helpCircle: { position: 'absolute', right: 0 },
-            popoverContentStyles: { padding: e.spaces.space8 },
-          }
-        }),
-        Me = function (e) {
-          var t = Object(p.k)().requestSheetDismissal,
-            n = h.a.useRef(m.a()).current
-          return h.a.createElement(
-            w.a,
-            { style: _e.container },
-            h.a.createElement(
-              w.a,
-              { style: _e.headingContainer },
-              h.a.createElement(
-                te.a,
-                {
-                  backgroundColor: 'transparent',
-                  borderColor: 'transparent',
-                  color: 'text',
-                  onClick: t,
-                  size: 'xSmall',
-                  style: _e.cancelButton,
-                },
-                Re.cancel,
-              ),
-              h.a.createElement(ee.b, { align: 'center', size: 'headline1', weight: 'bold' }, Re.heading),
-              h.a.createElement(Ie, null),
-            ),
-            h.a.createElement(Pe, s()({}, e, { id3NtpTime: null == n ? void 0 : n.id3NtpTime })),
-            h.a.createElement(Te, s()({}, e, { currentTimeMs: null == n ? void 0 : n.currentTimeMs })),
-          )
-        },
-        ze = n('PaZX'),
-        je = n('lOQR'),
-        He = n('SQlS'),
-        Ae = n('ISLN'),
-        De = n('sTSP'),
-        Be = n('Zg3A'),
-        Ne = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(ae.a)(
-            'svg',
-            o()(
-              o()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [ne.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            h.a.createElement(
-              'g',
-              null,
-              h.a.createElement('path', {
-                d: 'M22.498 6.008c-.02-.718-.537-1.326-1.24-1.447-4.102-.626-8.048-3.065-8.468-3.328-.44-.293-1.074-.324-1.572 0-.04.02-4.19 2.672-8.497 3.33-.683.12-1.2.728-1.22 1.467 0 .495.03 12.174 9.933 16.85.195.08.39.12.566.12.243 0 .458-.07.595-.132 10.118-4.776 9.913-16.79 9.903-16.86zm-11.23 15.1C2.984 16.634 2.964 6.484 2.944 6.058c3.516-.535 6.876-2.286 8.32-3.106v18.156h.002zm1.464 0V2.952c1.465.84 4.815 2.58 8.302 3.117 0 .1.214 10.453-8.302 15.038z',
-              }),
-            ),
-          )
-        }
-      Ne.metadata = { width: 24, height: 24 }
-      var Fe = Ne,
-        Ve = 'spaces-intro-nux',
-        Ue = { ios: je.a.getiOSAppStoreLink(Ve), android: je.a.getAndroidAppStoreLink(Ve) }
-      function We() {
-        var e = p.k().requestSheetDismissal
-        return h.a.createElement(
-          w.a,
-          { style: Xe.container },
-          h.a.createElement(
-            w.a,
-            { style: Xe.headingContainer },
-            h.a.createElement(
-              w.a,
-              { style: Xe.headingIconContainer },
-              h.a.createElement(He.a, { style: Xe.headingIcon }),
-            ),
-            h.a.createElement(
-              w.a,
-              null,
-              h.a.createElement(ee.b, { align: 'center', size: 'title4', style: Xe.title, weight: 'bold' }, Ge.title),
-              h.a.createElement(ee.b, { align: 'center', color: 'gray700', size: 'body' }, Ge.subtitle),
-            ),
-          ),
-          h.a.createElement(
-            w.a,
-            { style: Xe.sectionsContainer },
-            h.a.createElement(qe, {
-              icon: h.a.createElement(De.a, { style: Xe.sectionIcon }),
-              subtitle: h.a.createElement(
-                Ke,
-                null,
-                h.a.createElement(
-                  S.a.I18NFormatMessage,
-                  { $i18n: 'fc9fe08e' },
-                  h.a.createElement(ee.b, { link: Ue.ios }, S.a.fd1d03b8),
-                  h.a.createElement(ee.b, { link: Ue.android }, S.a.eb4e17b4),
-                ),
-              ),
-              title: Ge.sections.listenLive.title,
-            }),
-            h.a.createElement(qe, {
-              icon: h.a.createElement(Be.a, { style: Xe.sectionIcon }),
-              subtitle: h.a.createElement(
-                Ke,
-                null,
-                h.a.createElement(
-                  S.a.I18NFormatMessage,
-                  { $i18n: 'a8170308' },
-                  h.a.createElement(ee.b, { link: V.a.help }, S.a.c220921d),
-                ),
-              ),
-              title: Ge.sections.spacesArePublic.title,
-            }),
-            h.a.createElement(qe, {
-              icon: h.a.createElement(Fe, { style: Xe.sectionIcon }),
-              subtitle: h.a.createElement(
-                h.a.Fragment,
-                null,
-                h.a.createElement(
-                  Ke,
-                  null,
-                  h.a.createElement(
-                    S.a.I18NFormatMessage,
-                    { $i18n: 'ib602fd8' },
-                    h.a.createElement(ee.b, { link: V.a.settings }, S.a.j5485ede),
-                  ),
-                ),
-                h.a.createElement('br', null),
-                h.a.createElement(Ke, null, Ge.sections.manageExperience.blockAndReport),
-              ),
-              title: Ge.sections.manageExperience.title,
-              withMarginBottom: !1,
-            }),
-          ),
-          h.a.createElement(
-            w.a,
-            { style: Xe.bottomItems },
-            h.a.createElement(
-              w.a,
-              { style: Xe.finePrintContainer },
-              h.a.createElement(
-                ee.b,
-                { align: 'center', color: 'gray700', size: 'subtext1', style: Xe.finePrint },
-                h.a.createElement(
-                  S.a.I18NFormatMessage,
-                  { $i18n: 'i6164a47' },
-                  h.a.createElement(ee.b, { link: V.a.help }, S.a.cdffdeb1),
-                ),
-              ),
-            ),
-            h.a.createElement(
-              w.a,
-              { style: Xe.ctaContainer },
-              h.a.createElement(
-                Ae.a,
-                { accessibilityLabel: Ge.gotIt, onPress: e },
-                h.a.createElement(
-                  ee.b,
-                  { align: 'center', color: 'white', numberOfLines: 1, size: 'body', weight: 'bold' },
-                  Ge.gotIt,
-                ),
-              ),
-            ),
-          ),
-        )
-      }
-      function qe(e) {
-        var t = e.icon,
-          n = e.subtitle,
-          a = e.title,
-          r = e.withMarginBottom,
-          i = void 0 === r || r
-        return h.a.createElement(
-          w.a,
-          { style: [Xe.sectionContainer, i ? Xe.sectionMarginBottom : null] },
-          h.a.createElement(w.a, { style: Xe.sectionIconContainer }, t),
-          h.a.createElement(
-            w.a,
-            { style: Xe.sectionContent },
-            h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, a),
-            n,
-          ),
-        )
-      }
-      function Ke(e) {
-        return h.a.createElement(ee.b, { color: 'gray700', size: 'body' }, e.children)
-      }
-      var Ge = {
-          title: S.a.a3e6bb1b,
-          subtitle: S.a.d82f214f,
-          sections: {
-            listenLive: { title: S.a.gf029868 },
-            spacesArePublic: { title: S.a.icc1ba70 },
-            manageExperience: { title: S.a.bcf241be, blockAndReport: S.a.b0bc833f },
-          },
-          gotIt: S.a.j24c37b2,
-        },
-        Xe = P.a.create(function (e) {
-          return {
-            container: { display: 'flex', justifyContent: 'space-between', height: '100%', padding: e.spaces.space16 },
-            headingContainer: { marginBottom: e.spaces.space32 },
-            headingIconContainer: { paddingVertical: e.spaces.space28 },
-            headingIcon: { height: e.spaces.space40 },
-            title: { marginBottom: e.spaces.space1 },
-            sectionsContainer: { marginBottom: e.spaces.space48 },
-            sectionContainer: {
-              flexDirection: 'row',
-              flexWrap: 'nowrap',
-              width: '100%',
-              paddingHorizontal: e.spaces.space12,
-            },
-            sectionContent: { flexShrink: 1 },
-            sectionMarginBottom: { marginBottom: e.spaces.space24 },
-            sectionIconContainer: {
-              width: e.fontSizes.title3,
-              height: e.fontSizes.title3,
-              marginRight: e.spaces.space16,
-            },
-            sectionIcon: { fill: e.colors.purple500, width: '100%', height: '100%' },
-            bottomItems: { paddingBottom: e.spaces.space16 },
-            finePrintContainer: { paddingHorizontal: e.spaces.space4 },
-            finePrint: { marginBottom: e.spaces.space16 },
-            ctaContainer: { paddingHorizontal: e.spaces.space16 },
-          }
-        }),
-        Je = n('WrBE'),
-        Ze = n('i4Oy')
-      function Ye(e) {
-        var t = Object(p.k)().requestSheetDismissal
-        return h.a.createElement(Je.a.View, {
-          onClick: t,
-          style: [
-            $e.dockSheetOverlayBase,
-            e.isSideNavLayout ? et.dockSheetOverlay : $e.dockSheetOverlay,
-            {
-              opacity: e.animation.animatedPan.interpolate({
-                inputRange: [e.animation.shellHeights.half, e.animation.shellHeights.full],
-                outputRange: [1, 0],
-              }),
-            },
-          ],
-        })
-      }
-      function Qe(e) {
-        return h.a.createElement(
-          w.a,
-          { style: [e.style, e.hasDismissRequest && $e.pointerEventsNone] },
-          h.a.createElement(
-            Je.a.View,
-            {
-              style: [
-                $e.contentAnimatedContainer,
-                {
-                  maxHeight: e.maxHeight,
-                  transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }],
-                },
-              ],
-            },
-            h.a.createElement(
-              w.a,
-              { style: $e.contentWrapperContainer },
-              h.a.createElement(w.a, { style: $e.contentWrapper }, e.children),
-            ),
-          ),
-        )
-      }
-      var $e = P.a.create(function (e) {
-          var t = Object(Ee.b)(e),
-            n = t.borderRadius
-          return {
-            dockSheetContainer: {
-              position: 'absolute',
-              left: 0,
-              bottom: 0,
-              width: '100%',
-              borderRadius: t.borderRadius,
-            },
-            contentAnimatedContainer: { overflowY: 'auto', width: '100%', height: '100%', borderRadius: 'inherit' },
-            contentContainer: {
-              position: 'fixed',
-              width: '100%',
-              bottom: '0',
-              margin: 0,
-              padding: 0,
-              borderTopRightRadius: n,
-              borderTopLeftRadius: n,
-            },
-            contentWrapperContainer: {
-              height: '100%',
-              width: '100%',
-              borderRadius: 'inherit',
-              backgroundColor: e.colors.navigationBackground,
-            },
-            contentWrapper: { height: '100%' },
-            dockSheetOverlayBase: { backgroundColor: e.colors.maskColor, width: '100%' },
-            dockSheetOverlay: { height: '100vh', position: 'fixed', top: '0' },
-            pointerEventsNone: { pointerEvents: 'none' },
-          }
-        }),
-        et = P.a.create(function (e) {
-          var t = Object(Ee.b)(e)
-          return {
-            dockSheetContainer: {
-              position: 'absolute',
-              left: t.shadowOffset,
-              bottom: (-1 * t.shadowOffset) / 2,
-              width: 'calc(100% - '.concat(t.shadowOffset, 'px)'),
-              borderRadius: t.borderRadius,
-            },
-            dockSheetOverlay: { borderRadius: 'inherit', height: '100%', position: 'absolute', left: '0' },
-            contentContainer: {
-              boxShadow: e.boxShadows.xSmall,
-              position: 'absolute',
-              left: 0,
-              bottom: 0,
-              width: '100%',
-              borderRadius: t.borderRadius,
-              overflow: 'hidden',
-            },
-          }
-        }),
-        tt = function (e) {
-          var t = e.audioSpaceId,
-            n = e.dockAnimation,
-            a = e.isSideNavLayout,
-            r = Object(p.l)(),
-            i = r.clearSheet,
-            o = r.hasDismissRequest,
-            c = r.sheetId,
-            s = (function (e) {
-              var t = Ze.a.get('window'),
-                n = Object(Ee.a)(t.height, e),
-                a = h.a.useRef(new Je.a.Value(n.full)).current
-              return {
-                animatedPan: a,
-                shellHeights: n,
-                springToOpen: function (e) {
-                  return Je.a.spring(a, { toValue: 0, bounciness: 2 }).start(e)
-                },
-                springToClose: function (e) {
-                  return Je.a.spring(a, { toValue: n.full }).start(e)
-                },
-              }
-            })(a),
-            l = n.shellHeights.sheetMaxHeight,
-            u = a ? et.contentContainer : $e.contentContainer,
-            d = h.a.useMemo(
-              function () {
-                switch (c) {
-                  case p.b.report:
-                    return h.a.createElement(ze.b, { audioSpaceId: t })
-                  case p.b.recordingEducation:
-                    return h.a.createElement(ce, null)
-                  case p.b.generalNux:
-                    return h.a.createElement(We, null)
-                  case p.b.clippingEducation:
-                    return h.a.createElement(me, null)
-                  case p.b.createClip:
-                    return h.a.createElement(Me, { audioSpaceId: t })
-                  default:
-                    return null
-                }
-              },
-              [c, t],
-            )
-          if (
-            (h.a.useEffect(
-              function () {
-                d && s.springToOpen()
-              },
-              [d, s],
-            ),
-            h.a.useEffect(
-              function () {
-                o && s.springToClose(i)
-              },
-              [s, i, o],
-            ),
-            !d)
-          )
-            return null
-          var m = a ? et.dockSheetContainer : $e.dockSheetContainer
-          return h.a.createElement(
-            Je.a.View,
-            {
-              style: [
-                m,
-                o && $e.pointerEventsNone,
-                {
-                  height: n.shellHeights.full - n.animatedPan._value,
-                  opacity: s.animatedPan.interpolate({ inputRange: [0, s.shellHeights.half], outputRange: [1, 0] }),
-                },
-              ],
-            },
-            h.a.createElement(Ye, { animation: s, isSideNavLayout: a }),
-            h.a.createElement(Qe, { animation: s, hasDismissRequest: o, maxHeight: l, style: u }, d),
-          )
-        }
-      function nt(e) {
-        var t = e.children
-        return p.m() ? null : t
-      }
-      var at = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(ae.a)(
-          'svg',
-          o()(
-            o()({}, e),
-            {},
-            {
-              accessibilityHidden: void 0 === e.accessibilityLabel,
-              style: [ne.a.root, e.style],
-              viewBox: '0 0 17 9.5',
-            },
-          ),
-          h.a.createElement(
-            'g',
-            null,
-            h.a.createElement('path', {
-              d: 'M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z',
-            }),
-          ),
-        )
-      }
-      at.metadata = { width: 17, height: 9.5 }
-      var rt = at
-      function it(e) {
-        var t = p.m()
-        return h.a.createElement(
-          te.a,
-          { onPress: e.onPress, pullRight: !0, size: 'medium', type: 'destructiveText' },
-          h.a.createElement(ee.b, { size: 'body', weight: 'bold' }, t ? ot.close : ot.leave),
-        )
-      }
-      var ot = { leave: S.a.bb1d57b6, close: S.a.ia5e7487 },
-        ct = n('4EYz'),
-        st = n('MMRb'),
-        lt = n('Pl95'),
-        ut = n('0nhk'),
-        dt = n('pjBI'),
-        pt = n('MH+I'),
-        mt = n('fzjU')
-      function ft(e) {
-        var t = Object(E.a)(e.audioSpaceId),
-          n = t.space,
-          a = t.utils,
-          r = (n || {}).ended_at,
-          i = a.getTunedInCount()
-        return h.a.createElement(
-          dt.a,
-          { color: yt.color, style: gt.container },
-          h.a.createElement(ht, { ended_at: r }),
-          h.a.createElement(vt, { count: i }),
-        )
-      }
-      function ht(e) {
-        var t = e.ended_at
-        if (!t) return null
-        var n = null,
-          a = Date.now() - t
-        return (
-          (n =
-            a < Et
-              ? h.a.createElement(
-                  S.a.I18NFormatMessage,
-                  { $i18n: 'f0e84608' },
-                  h.a.createElement(pt.a, { short: !0, timeMs: a }),
-                )
-              : St(new Date(t))),
-          h.a.createElement(ee.b, yt, n)
-        )
-      }
-      function vt(e) {
-        var t = e.count
-        return t ? h.a.createElement(ee.b, yt, bt.tunedIn({ count: mt.a.formatCountShort(t) })) : null
-      }
-      var gt = P.a.create(function (e) {
-          return { container: { marginBottom: e.spaces.space4 } }
-        }),
-        bt = { tunedIn: S.a.h140746e },
-        yt = { color: 'text', size: 'subtext2' },
-        St = S.a.e18e399a,
-        Et = 864e5
-      function wt(e) {
-        return h.a.createElement(
-          w.a,
-          { style: xt.titleLabelRow },
-          h.a.createElement(wt.Replay, e),
-          h.a.createElement(wt.EmployeeOnly, e),
-        )
-      }
-      function kt(e) {
-        return h.a.createElement(w.a, { style: xt.titleLabelSpacer }, e.children)
-      }
-      ;(wt.EmployeeOnly = function (e) {
-        var t = Object(E.a)(e.audioSpaceId).space
-        return null != t && t.is_employee_only
-          ? h.a.createElement(
-              kt,
-              null,
-              h.a.createElement(q.a, { background: 'navigationBackground', bold: !0 }, Ct.tweepsOnly),
-            )
-          : null
-      }),
-        (wt.Replay = function (e) {
-          var t = Object(E.a)(e.audioSpaceId).utils
-          return t.is.recording
-            ? h.a.createElement(
-                kt,
-                null,
-                h.a.createElement(G, { audioSpaceId: e.audioSpaceId, withEducationOnClick: !e.isOutsideDock }),
-              )
-            : t.is.replayable
-            ? h.a.createElement(kt, null, h.a.createElement(ft, { audioSpaceId: e.audioSpaceId }))
-            : null
-        })
-      var Ct = { tweepsOnly: S.a.a5bf5489 },
-        xt = P.a.create(function (e) {
-          return {
-            titleLabelRow: { flexDirection: 'row', marginBottom: e.spaces.space4 },
-            titleLabelSpacer: { paddingRight: e.spacesPx.space4 },
-          }
-        }),
-        It = n('VKFJ'),
-        Pt = n('yUQf'),
-        Tt = n('7ep7'),
-        Ot = n('v6aA'),
-        Lt = n('DlVf'),
-        Rt = n('RqPI'),
-        _t = n('mjJ+'),
-        Mt = n('FXw/'),
-        zt = n('GCOQ')
-      function jt(e) {
-        var t = (function (e) {
-            var t = Object(E.a)(e).utils,
-              n = Object(Pt.a)(Rt.n),
-              a = p.k().openSheet,
-              r = []
-            n &&
-              r.push({
-                Icon: zt.a,
-                text: Ht.reportThisSpace,
-                isEmphasized: !0,
-                onClick: function () {
-                  a(p.b.report), t.scribe(':audiospace::caret:report:click')
-                },
-              })
-            return { items: r }
-          })(e.audioSpaceId),
-          n = h.a.useState(!1),
-          a = u()(n, 2),
-          r = a[0],
-          i = a[1]
-        if (t.items.length < 1) return null
-        var o = r
-          ? h.a.createElement(_t.a, {
-              isFixed: !0,
-              items: t.items,
-              onCloseRequested: function () {
-                return i(!1)
-              },
-              shouldCloseOnClick: !0,
-            })
-          : null
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          h.a.createElement(te.a, {
-            accessibilityLabel: Ht.more,
-            borderColor: 'transparent',
-            color: 'text',
-            hoverLabel: { label: Ht.more },
-            icon: h.a.createElement(Mt.a, null),
-            onPress: function () {
-              return i(!0)
-            },
-            size: 'medium',
-            type: 'primaryOutlined',
-          }),
-          o,
-        )
-      }
-      var Ht = { more: S.a.h63a5c3b, reportThisSpace: S.a.b3481ffd },
-        At = n('O07O'),
-        Dt = (n('i4UL'), n('CDzS'))
-      function Bt() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(ae.a)(
-          'svg',
-          o()(o()({}, e), {}, { style: [Nt.root, e.style], viewBox: '0 0 24 24' }),
-          h.a.createElement(
-            h.a.Fragment,
-            null,
-            h.a.createElement(Dt.a.SVGLinearGradient, null),
-            h.a.createElement(
-              'g',
-              { fill: Dt.a.SVGLinearGradient.fill },
-              h.a.createElement('path', {
-                d: 'M17.97 7.585c-.552 0-1 .448-1 1v3.417c0 2.588-2.156 4.693-4.806 4.693h-.328c-2.65 0-4.806-2.105-4.806-4.693V8.585c0-.552-.448-1-1-1s-1 .448-1 1v3.417c0 3.416 2.618 6.237 5.983 6.64l-.01 1.858H8.27c-.553 0-1 .448-1 1s.447 1 1 1h7.46c.552 0 1-.448 1-1s-.448-1-1-1h-2.726l.01-1.863c3.35-.413 5.955-3.228 5.955-6.635V8.585c0-.552-.448-1-1-1z',
-              }),
-              h.a.createElement('path', {
-                d: 'M12 15.42c2.077 0 3.766-1.688 3.766-3.765v-6.14c0-2.076-1.69-3.765-3.766-3.765S8.234 3.44 8.234 5.516v6.14c0 2.075 1.69 3.765 3.766 3.765z',
-              }),
-            ),
-          ),
-        )
-      }
-      Bt.metadata = { width: 24, height: 24 }
-      var Nt = P.a.create(function (e) {
-          return {
-            root: {
-              display: 'inline-block',
-              fill: 'currentcolor',
-              height: '1.25em',
-              maxWidth: '100%',
-              position: 'relative',
-              userSelect: 'none',
-              textAlignVertical: 'text-bottom',
-            },
-          }
-        }),
-        Ft = ['isSideNavLayout', 'onLayout']
-      function Vt(e) {
-        var t = e.isSideNavLayout,
-          n = e.onLayout,
-          a = r()(e, Ft),
-          i = [qt.footer, t && qt.footerWide]
-        return h.a.createElement(w.a, { onLayout: n, style: i }, h.a.createElement(Ut, a))
-      }
-      function Ut(e) {
-        return p.m()
-          ? h.a.createElement(At.a, { audioSpaceId: e.audioSpaceId })
-          : h.a.createElement(Wt, { audioSpaceId: e.audioSpaceId })
-      }
-      function Wt(e) {
-        var t = h.a.useContext(Ot.a).featureSwitches
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          h.a.createElement(
-            w.a,
-            { style: qt.footerLeft },
-            t.isTrue('voice_rooms_speaking_enabled') &&
-              h.a.createElement(te.a, {
-                accessibilityLabel: 'Request to speak',
-                borderColor: 'transparent',
-                color: 'text',
-                hoverLabel: { label: 'Request to speak' },
-                icon: h.a.createElement(Bt, null),
-                onPress: function () {},
-                size: 'xLarge',
-                type: 'primaryOutlined',
-              }),
-          ),
-          h.a.createElement(
-            w.a,
-            { style: qt.footerRight },
-            h.a.createElement(jt, e),
-            t.isTrue('voice_rooms_reactions_enabled') &&
-              h.a.createElement(
-                h.a.Fragment,
-                null,
-                h.a.createElement(w.a, { style: qt.footerButtonSpacer }),
-                h.a.createElement(te.a, {
-                  accessibilityLabel: 'Reactions',
-                  borderColor: 'transparent',
-                  color: 'text',
-                  hoverLabel: { label: 'Reactions' },
-                  icon: h.a.createElement(Lt.a, null),
-                  onPress: function () {},
-                  size: 'medium',
-                  type: 'primaryOutlined',
-                }),
-              ),
-            t.isTrue('voice_rooms_share_dock_enabled') &&
-              h.a.createElement(
-                h.a.Fragment,
-                null,
-                h.a.createElement(w.a, { style: qt.footerButtonSpacer }),
-                h.a.createElement(ut.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon' }),
-              ),
-          ),
-        )
-      }
-      var qt = P.a.create(function (e) {
-          var t = Object(Ee.b)(e),
-            n = t.borderRadius,
-            a = t.paddingHorizontal
-          return {
-            footerButtonSpacer: { width: e.spaces.space16 },
-            footerLeft: { flexDirection: 'row' },
-            footerRight: { flexDirection: 'row' },
-            footer: {
-              paddingHorizontal: a,
-              width: '100%',
-              height: 'calc('.concat(100, 'px + ').concat(P.a.iPhoneOffsetBottom, ')'),
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              boxShadow: '0px -1px 0px '.concat(e.colors.gray50),
-              backgroundColor: e.colors.navigationBackground,
-            },
-            footerWide: { borderBottomLeftRadius: n, borderBottomRightRadius: n, boxShadow: e.boxShadows.xSmall },
-          }
-        }),
-        Kt = n('0FVZ'),
-        Gt = n('Oe3h'),
-        Xt = n('cTG8'),
-        Jt = n('U7kY'),
-        Zt = n('n7AW'),
-        Yt = n('yyPN'),
-        Qt = n.n(Yt),
-        $t = n('GiKA'),
-        en = n.n($t),
-        tn = n('p3P5'),
-        nn = ['periscopeUserId']
-      function an(e) {
-        var t = e.isSideNavLayout ? Kt.a.WideExpandedSpaceDock : Kt.a.NarrowExpandedSpaceDock
-        return h.a.createElement(t, null, h.a.createElement(rn, e))
-      }
-      function rn(e) {
-        var t = Object(Pt.a)(st.selectDrawerVisibility),
-          n = Object(Ee.b)(P.a.theme),
-          a = e.width + n.shadowOffset,
-          r = e.isSideNavLayout ? [yn.root, { width: a }] : null,
-          i = h.a.useState(),
-          o = u()(i, 2),
-          c = o[0],
-          l = o[1],
-          p = h.a.useRef(null),
-          m = Ze.a.get('window')
-        function f() {
-          var e,
-            t = null === (e = p.current) || void 0 === e ? void 0 : e.getBoundingClientRect()
-          t && l(t)
-        }
-        return (
-          h.a.useLayoutEffect(f, [m.height]),
-          h.a.useLayoutEffect(
-            function () {
-              var e = setTimeout(f, d.a.durationMs + 250)
-              return function () {
-                return clearTimeout(e)
-              }
-            },
-            [t],
-          ),
-          h.a.createElement(w.a, { ref: p, style: r }, h.a.createElement(ln, s()({}, e, { layout: c })))
-        )
-      }
-      function on(e) {
-        var t = Object(Ee.b)(P.a.theme),
-          n = e.animation.shellHeights.full - t.shadowOffset
-        return h.a.createElement(
-          Je.a.View,
-          {
-            style: [
-              gn.expandedShell,
-              { height: n, transform: [{ translate3d: '0, 0, 0' }, { translateY: e.animation.animatedPan }] },
-            ],
-          },
-          h.a.createElement(cn, e),
-        )
-      }
-      function cn(e) {
-        var t = p.n(),
-          n = Object(we.a)(),
-          a = e.footerHeight,
-          r = h.a.useRef(new Je.a.Value(a))
-        function i() {
-          e.animation.springTo('collapse')
-        }
-        function o() {
-          e.animation.springTo('exit')
-        }
-        return (
-          h.a.useEffect(
-            function () {
-              Je.a.spring(r.current, { toValue: t ? a + fn : a }).start()
-            },
-            [t, a],
-          ),
-          h.a.createElement(Gt.a, { id: 'SpaceDockExpanded' }, function (t, a) {
-            return h.a.createElement(
-              w.a,
-              s()({ ref: t() }, a({ style: gn.expandedShellContent })),
-              h.a.createElement(
-                Je.a.View,
-                s()({}, e.animation.panResponder.panHandlers, { style: gn.expandedShellHeader }),
-                h.a.createElement(
-                  w.a,
-                  { style: gn.expandedShellHeaderGripContainer },
-                  h.a.createElement(w.a, { style: gn.expandedShellHeaderGrip }),
-                ),
-                h.a.createElement(
-                  w.a,
-                  { style: gn.expandedShellHeaderButtons },
-                  h.a.createElement(te.a, {
-                    accessibilityLabel: Sn.collapse,
-                    hoverLabel: { label: Sn.collapse },
-                    icon: h.a.createElement(rt, { style: gn.iconChevronDown }),
-                    onPress: i,
-                    pullLeft: !0,
-                    size: 'medium',
-                    type: 'primaryText',
-                  }),
-                  h.a.createElement(
-                    w.a,
-                    { style: gn.expandedShellHeaderRight },
-                    h.a.createElement(nt, null, h.a.createElement(lt.a, { audioSpaceId: e.audioSpaceId })),
-                    n.isCreationEnabled
-                      ? h.a.createElement(ut.a, { audioSpaceId: e.audioSpaceId, isFixed: !0, type: 'icon-borderless' })
-                      : null,
-                    h.a.createElement(it, { onPress: o }),
-                  ),
-                ),
-                h.a.createElement(
-                  w.a,
-                  { style: gn.expandedShellDescription },
-                  h.a.createElement(sn, { audioSpaceId: e.audioSpaceId }),
-                ),
-              ),
-              h.a.createElement(
-                Je.a.View,
-                {
-                  id: 'ParticipantsWrapper',
-                  style: [gn.participantsContainer, { paddingBottom: Je.a.add(r.current, e.animation.animatedPan) }],
-                },
-                e.mounted ? h.a.createElement(un, e) : null,
-              ),
-            )
-          })
-        )
-      }
-      function sn(e) {
-        var t = Object(E.a)(e.audioSpaceId).utils.title(),
-          n = {
-            hashtags: Qt()(t).map(function (e) {
-              return (e.text = e.hashtag), e
-            }),
-            user_mentions: en()(t),
-          },
-          a = [0, t.length]
-        return h.a.createElement(
-          h.a.Fragment,
-          null,
-          h.a.createElement(wt, { audioSpaceId: e.audioSpaceId, isOutsideDock: e.isOutsideDock }),
-          h.a.createElement(Xt.a, {
-            displayTextRange: a,
-            entities: n,
-            linkify: !0,
-            numberOfLines: 3,
-            size: 'headline1',
-            text: t,
-            weight: 'heavy',
-          }),
-        )
-      }
-      function ln(e) {
-        var t = h.a.useState(!1),
-          n = u()(t, 2),
-          a = n[0],
-          r = n[1],
-          i = (function (e, t, n) {
-            var a = h.a.useRef({ state: p.a.full, animatedPanOffset: 0 }),
-              r = Ze.a.get('window'),
-              i = h.a.useMemo(
-                function () {
-                  return Object(Ee.a)(r.height, e.isSideNavLayout, n)
-                },
-                [r.height, e.isSideNavLayout, n],
-              ),
-              o = h.a.useMemo(
-                function () {
-                  return function (e) {
-                    var t
-                    switch (e) {
-                      case p.a.exit:
-                      case p.a.collapse:
-                        t = 0
-                        break
-                      case p.a.full:
-                      default:
-                        t = i.full
-                    }
-                    return i.full - t
-                  }
-                },
-                [i],
-              ),
-              c = h.a.useRef(new Je.a.Value(i.full)).current
-            Object(j.a)(function () {
-              var e = o(a.current.state)
-              Je.a.spring(c, { toValue: e }).start(t)
-            })
-            var s = e.onRequestClose,
-              l = e.onToggleCollapsed,
-              u = h.a.useMemo(
-                function () {
-                  return function (e, t) {
-                    ;(a.current.state = e), p.h(e)
-                    var n = o(a.current.state),
-                      r = null == t ? void 0 : t.vy
-                    return new Promise(function (t) {
-                      if (e === p.a.exit) return s(), t()
-                      Je.a.spring(c, { velocity: r, toValue: n }).start(function () {
-                        e === p.a.collapse && l(), t()
-                      })
-                    })
-                  }
-                },
-                [c, o, l, s],
-              )
-            return (
-              h.a.useEffect(
-                function () {
-                  p.g(u)
-                },
-                [u],
-              ),
-              {
-                panResponder: h.a.useRef(
-                  Tt.a.create({
-                    onMoveShouldSetPanResponder: function (e, t) {
-                      return Math.abs(t.dy) > 5
-                    },
-                    onPanResponderGrant: function (e, t) {
-                      a.current.animatedPanOffset = c._value
-                    },
-                    onPanResponderMove: function (e, t) {
-                      var n = a.current.animatedPanOffset + t.dy
-                      n >= 0 && c.setValue(n)
-                    },
-                    onPanResponderRelease: function (e, t) {
-                      var n = (null == t ? void 0 : t.vy) || 0,
-                        r = Math.abs(n) >= hn
-                      c._value > i.collapse || (r && t.dy > 0) ? u(p.a.collapse, t) : u(a.current.state, t)
-                    },
-                  }),
-                ).current,
-                animatedPan: c,
-                shellHeights: i,
-                springTo: u,
-              }
-            )
-          })(
-            e,
-            function () {
-              r(!0), p.h(p.a.full)
-            },
-            e.layout,
-          ),
-          c = h.a.useRef(new Je.a.Value(i.shellHeights.full)).current,
-          l = o()(o()({}, e), {}, { mounted: a, animation: i })
-        h.a.useEffect(
-          function () {
-            var e = i.shellHeights.full
-            Je.a.spring(c, { toValue: e }).start()
-          },
-          [i.shellHeights.full],
-        )
-        var d = h.a.useState(100),
-          m = u()(d, 2),
-          f = m[0],
-          v = m[1],
-          g = h.a.useCallback(
-            function (e) {
-              var t = e.nativeEvent.layout.height
-              v(t)
-            },
-            [v],
-          )
-        return h.a.useMemo(
-          function () {
-            var t = e.isSideNavLayout ? yn.container : gn.container,
-              n = e.isSideNavLayout ? yn.expandedShellContainer : gn.expandedShellContainer,
-              a = e.isSideNavLayout ? yn.footerContainer : gn.footerContainer,
-              r = c,
-              o = i.animatedPan.interpolate({
-                inputRange: [i.shellHeights.collapse, i.shellHeights.full],
-                outputRange: [1, 0],
-              })
-            return h.a.createElement(
-              Je.a.View,
-              { style: [t, gn.forceGPULayer, { height: r, opacity: o }] },
-              h.a.createElement(w.a, { style: n }, h.a.createElement(on, s()({}, l, { footerHeight: f }))),
-              h.a.createElement(
-                w.a,
-                { style: a },
-                h.a.createElement(D, { audioSpaceId: e.audioSpaceId, height: fn }),
-                h.a.createElement(Vt, {
-                  audioSpaceId: e.audioSpaceId,
-                  isSideNavLayout: e.isSideNavLayout,
-                  onLayout: g,
-                }),
-              ),
-              h.a.createElement(tt, {
-                audioSpaceId: e.audioSpaceId,
-                dockAnimation: i,
-                isSideNavLayout: e.isSideNavLayout,
-              }),
-            )
-          },
-          [e.audioSpaceId, e.isSideNavLayout, a, e.layout],
-        )
-      }
-      function un(e) {
-        var t = Object(It.b)(e.audioSpaceId),
-          n = t.all,
-          a = t.otherParticipantsTotal
-        v.d()
-        var r = Ze.a.get('window'),
-          i = (e.isSideNavLayout ? e.width : r.width) - 2 * vn(P.a.theme).container.paddingHorizontal,
-          c = Object(tn.b)(P.a.theme),
-          l = c.getHeight(),
-          u = c.getWidth(),
-          d = Math.min(4, Math.floor(i / u)),
-          p = i / d
-        h.a.useEffect(
-          function () {
-            return (
-              e.isSideNavLayout || Jt.a.disable(),
-              function () {
-                Jt.a.enable()
-              }
-            )
-          },
-          [e.isSideNavLayout],
-        )
-        var m = h.a.useMemo(
-          function () {
-            var e = p
-            return n.map(function (t) {
-              return o()(o()({}, t), {}, { width: e })
-            })
-          },
-          [n, p],
-        )
-        return h.a.useMemo(
-          function () {
-            var t = {
-              data: m,
-              numColumns: d,
-              keyExtractor: function (e) {
-                return e.key
-              },
-              getItemLayout: function (e, t) {
-                return { length: l, offset: l * t, index: t }
-              },
-              renderItem: dn,
-              ListHeaderComponent: h.a.createElement(T, { audioSpaceId: e.audioSpaceId }),
-              ListFooterComponent: h.a.createElement(
-                nt,
-                null,
-                h.a.createElement(
-                  w.a,
-                  { style: gn.participantsFooterContainer },
-                  h.a.createElement(ct.a, { audioSpaceId: e.audioSpaceId, count: a, interactive: !0 }),
-                ),
-              ),
-            }
-            return h.a.createElement(xe.a, s()({ key: d }, t))
-          },
-          [m],
-        )
-      }
-      function dn(e) {
-        var t = e.item
-        return h.a.createElement(pn, {
-          hasNftAvatar: t.user.has_nft_avatar,
-          isVerified: t.user.is_verified,
-          key: t.key,
-          kind: t.kind,
-          name: t.user.display_name,
-          periscopeUserId: t.periscopeUserId,
-          profile_image_url_https: t.user.avatar_url,
-          screenName: t.user.twitter_screen_name,
-          width: t.width,
-        })
-      }
-      function pn(e) {
-        var t = e.periscopeUserId,
-          n = r()(e, nn),
-          a = It.b.isParticipantHost(n.kind),
-          i = It.b.canParticipantSpeak(n.kind) ? h.a.createElement(mn, { isHost: a, periscopeUserId: t }) : null,
-          o = Object.assign({}, { speakingIndicator: i, periscopeUserId: t }, n)
-        return h.a.createElement(tn.a, o)
-      }
-      function mn(e) {
-        var t = e.isHost,
-          n = e.periscopeUserId,
-          a = m.f({ isHost: t, periscopeUserId: n })
-        return h.a.createElement(
-          w.a,
-          { style: bn.container },
-          h.a.createElement(Zt.a, { audioLevel: a || 0, size: P.a.theme.spacesPx.space16 }),
-        )
-      }
-      var fn = 100,
-        hn = 0.5
-      function vn(e) {
-        return { container: { paddingHorizontal: e.spacesPx.space8 } }
-      }
-      var gn = P.a.create(function (e) {
-        var t = Object(Ee.b)(e),
-          n = t.paddingHorizontal,
-          a = t.borderRadius,
-          r = vn(e)
-        return {
-          forceGPULayer: { transform: [{ translate3d: '0, 0, 0' }] },
-          container: { position: 'fixed', bottom: 0, width: '100%', backgroundColor: e.colors.maskColor },
-          expandedShellContainer: { width: '100%', borderRadius: a },
-          expandedShell: { boxShadow: e.boxShadows.xSmall, width: '100%', height: '100%', borderRadius: 'inherit' },
-          expandedShellHeader: { userSelect: 'none', borderRadius: 'inherit' },
-          expandedShellHeaderGripContainer: { paddingVertical: 5, justifyContent: 'center', alignItems: 'center' },
-          expandedShellHeaderGrip: {
-            height: 5,
-            width: e.spaces.space36,
-            backgroundColor: e.colors.gray200,
-            borderRadius: e.borderRadiiPx.xLarge,
-          },
-          expandedShellHeaderButtons: { flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: n },
-          iconChevronDown: { color: e.colors.text, width: e.spaces.space16 },
-          expandedShellHeaderRight: { flexDirection: 'row' },
-          expandedShellContent: {
-            borderRadius: 'inherit',
-            height: '100%',
-            backgroundColor: e.colors.navigationBackground,
-          },
-          expandedShellDescription: {
-            marginTop: e.spaces.space4,
-            marginBottom: e.spaces.space16,
-            paddingHorizontal: n,
-          },
-          participantsContainer: o()(o()({}, r.container), {}, { flex: 1 }),
-          participantsFooterContainer: { paddingVertical: e.spaces.space16 },
-          footerContainer: { position: 'absolute', bottom: 0, width: '100%' },
-        }
-      })
-      var bn = P.a.create(function (e) {
-          return {
-            container: {
-              position: 'absolute',
-              left:
-                -1 *
-                ((function (e) {
-                  return { size: e.spacesPx.space16 }
-                })(e).size +
-                  e.spacesPx.space4),
-            },
-          }
-        }),
-        yn = P.a.create(function (e) {
-          var t = Object(Ee.b)(e)
-          return {
-            root: {
-              alignItems: 'center',
-              alignSelf: 'flex-end',
-              width: '100%',
-              marginVertical: t.marginVertical,
-              marginRight: e.spacesPx.space20,
-            },
-            container: { width: '100%' },
-            expandedShellContainer: {
-              width: '100%',
-              borderRadius: t.borderRadius,
-              overflow: 'hidden',
-              paddingTop: t.shadowOffset / 2,
-              paddingHorizontal: t.shadowOffset / 2,
-              marginLeft: t.shadowOffset / 2,
-            },
-            footerContainer: {
-              position: 'absolute',
-              bottom: 0,
-              left: t.shadowOffset / 2,
-              paddingHorizontal: t.shadowOffset / 2,
-              width: '100%',
-            },
-          }
-        }),
-        Sn = { collapse: S.a.d227d19e }
+      var i = n('H5wF')
+      e.a = i.a('NativeAnimatedModule')
     },
   },
 ])

@@ -1,112 +1,112 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [356],
+  [357],
   {
     '5aND': function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('yiKp'),
-        i = n.n(r),
-        a = n('ezF+'),
-        o = (n('ERkP'), n('VPAj')),
-        c = n('zh9S'),
-        s = n('hYIq'),
-        u = n('ONGZ'),
-        l = a.g({
+      var i = n('yiKp'),
+        r = n.n(i),
+        c = n('ezF+'),
+        a = (n('ERkP'), n('VPAj')),
+        o = n('zh9S'),
+        l = n('hYIq'),
+        s = n('ONGZ'),
+        u = c.g({
           bindActions: function () {
-            return { scribe: c.scribeAction }
+            return { scribe: o.scribeAction }
           },
-          component: s.b,
+          component: l.b,
           divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(u.b)('expansion'),
-          selectData: Object(o.a)({}),
+          getScribeDataItem: Object(s.b)('expansion'),
+          selectData: Object(a.a)({}),
           createProps: function (e) {
             var t = e.actions.scribe,
               n = e.entry,
-              r = e.scribeNamespace,
-              a = n.content
+              i = e.scribeNamespace,
+              c = n.content
             return {
               onClick: function () {
-                return t(i()(i()({}, r), {}, { element: 'expansion_revert', action: 'search' }), Object(u.a)(n))
+                return t(r()(r()({}, i), {}, { element: 'expansion_revert', action: 'search' }), Object(s.a)(n))
               },
-              original: a.originalQuery,
-              suggestion: a.spellingResult.text,
+              original: c.originalQuery,
+              suggestion: c.spellingResult.text,
             }
           },
         })
-      t.default = l
+      t.default = u
     },
     '77Dd': function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('yiKp'),
-        i = n.n(r),
-        a = n('ezF+'),
-        o = (n('ERkP'), n('VPAj')),
-        c = n('zh9S'),
-        s = n('hYIq'),
-        u = n('ONGZ'),
-        l = a.g({
+      var i = n('yiKp'),
+        r = n.n(i),
+        c = n('ezF+'),
+        a = (n('ERkP'), n('VPAj')),
+        o = n('zh9S'),
+        l = n('hYIq'),
+        s = n('ONGZ'),
+        u = c.g({
           bindActions: function () {
-            return { scribe: c.scribeAction }
+            return { scribe: o.scribeAction }
           },
-          component: s.a,
+          component: l.a,
           divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(u.b)('replacement'),
-          selectData: Object(o.a)({}),
+          getScribeDataItem: Object(s.b)('replacement'),
+          selectData: Object(a.a)({}),
           createProps: function (e) {
             var t = e.actions.scribe,
               n = e.entry,
-              r = e.scribeNamespace,
-              a = n.content
+              i = e.scribeNamespace,
+              c = n.content
             return {
               onClick: function () {
-                return t(i()(i()({}, r), {}, { element: 'replacement_revert', action: 'search' }), Object(u.a)(n))
+                return t(r()(r()({}, i), {}, { element: 'replacement_revert', action: 'search' }), Object(s.a)(n))
               },
-              original: a.originalQuery,
-              suggestion: a.spellingResult.text,
+              original: c.originalQuery,
+              suggestion: c.spellingResult.text,
             }
           },
         })
-      t.default = l
+      t.default = u
     },
     D4Iv: function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('ezF+'),
-        i = (n('ERkP'), n('VPAj')),
-        a = n('ONGZ'),
-        o = n('hYIq'),
-        c = r.g({
-          component: o.c,
+      var i = n('ezF+'),
+        r = (n('ERkP'), n('VPAj')),
+        c = n('ONGZ'),
+        a = n('hYIq'),
+        o = i.g({
+          component: a.c,
           divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(a.b)('suggestion'),
-          selectData: Object(i.a)({}),
+          getScribeDataItem: Object(c.b)('suggestion'),
+          selectData: Object(r.a)({}),
           createProps: function (e) {
             return { suggestion: e.entry.content.spellingResult.text }
           },
         })
-      t.default = c
+      t.default = o
     },
     ONGZ: function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return i
+        return r
       }),
         n.d(t, 'a', function () {
-          return a
+          return c
         })
-      var r = n('X04g'),
-        i = function (e) {
+      var i = n('X04g'),
+        r = function (e) {
           return function (t) {
             return {
-              item_type: r.a.ItemType.SEARCH,
+              item_type: i.a.ItemType.SEARCH,
               name: 'spelling_'.concat(e),
               description: t.content.spellingResult.text,
               position: 0,
             }
           }
         },
-        a = function (e) {
+        c = function (e) {
           return {
             items: [
               {
@@ -120,85 +120,85 @@
     hYIq: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return I
+        return E
       }),
         n.d(t, 'a', function () {
-          return O
+          return q
         }),
         n.d(t, 'b', function () {
-          return S
+          return R
         })
-      var r = n('VrFO'),
-        i = n.n(r),
-        a = n('Y9Ll'),
-        o = n.n(a),
-        c = n('5Yy7'),
-        s = n.n(c),
-        u = n('2VqO'),
-        l = n.n(u),
-        p = n('ERkP'),
-        g = n.n(p),
-        b = n('u3ZE'),
-        m = 'searchSpellingSuggestionLabel',
-        f = 'searchSpellingSuggestionLink',
+      var i = n('VrFO'),
+        r = n.n(i),
+        c = n('Y9Ll'),
+        a = n.n(c),
+        o = n('5Yy7'),
+        l = n.n(o),
+        s = n('2VqO'),
+        u = n.n(s),
+        g = n('ERkP'),
+        p = n.n(g),
+        d = n('u3ZE'),
+        k = 'searchSpellingSuggestionLabel',
+        m = 'searchSpellingSuggestionLink',
         h = n('MWbm'),
-        d = n('t62R'),
-        y = n('rHpw'),
-        v = n('3XMw'),
-        k = n.n(v),
-        E = k.a.je5502ea,
-        q = k.a.bc4628a0,
-        C = function (e) {
-          return g.a.createElement(d.b, { weight: 'bold' }, e)
+        b = n('t62R'),
+        f = n('rHpw'),
+        _ = n('3XMw'),
+        y = n.n(_),
+        v = y.a.je5502ea,
+        C = y.a.bc4628a0,
+        S = function (e) {
+          return p.a.createElement(b.b, { weight: 'bold' }, e)
         },
-        I = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        E = (function (e) {
+          l()(n, e)
+          var t = u()(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return r()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            a()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.suggestion,
-                    t = { pathname: '/search', query: { q: e, src: b.a.SpellingSuggestionClick } }
-                  return g.a.createElement(
-                    d.b,
-                    { link: t, style: D.root },
-                    g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, C(e)),
+                    t = { pathname: '/search', query: { q: e, src: d.a.SpellingSuggestionClick } }
+                  return p.a.createElement(
+                    b.b,
+                    { link: t, style: w.root },
+                    p.a.createElement(y.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, S(e)),
                   )
                 },
               },
             ]),
             n
           )
-        })(g.a.PureComponent),
-        O = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        })(p.a.PureComponent),
+        q = (function (e) {
+          l()(n, e)
+          var t = u()(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return r()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            a()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.onClick,
                     n = e.original,
-                    r = e.suggestion,
-                    i = { pathname: '/search', query: { q: r, src: b.a.SpellingCorrectionClick } }
-                  return g.a.createElement(
+                    i = e.suggestion,
+                    r = { pathname: '/search', query: { q: i, src: d.a.SpellingCorrectionClick } }
+                  return p.a.createElement(
                     h.a,
-                    { style: D.root },
-                    g.a.createElement(d.b, { weight: 'bold' }, q({ suggestion: r })),
-                    g.a.createElement(
-                      d.b,
-                      { link: i, onClick: t },
-                      g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, C(n)),
+                    { style: w.root },
+                    p.a.createElement(b.b, { weight: 'bold' }, C({ suggestion: i })),
+                    p.a.createElement(
+                      b.b,
+                      { link: r, onClick: t },
+                      p.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, S(n)),
                     ),
                   )
                 },
@@ -206,31 +206,31 @@
             ]),
             n
           )
-        })(g.a.PureComponent),
-        S = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        })(p.a.PureComponent),
+        R = (function (e) {
+          l()(n, e)
+          var t = u()(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return r()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            a()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.onClick,
                     n = e.original,
-                    r = e.suggestion,
-                    i = { pathname: '/search', query: { q: n, src: b.a.SpellingExpansionRevertClick } }
-                  return g.a.createElement(
+                    i = e.suggestion,
+                    r = { pathname: '/search', query: { q: n, src: d.a.SpellingExpansionRevertClick } }
+                  return p.a.createElement(
                     h.a,
-                    { style: D.root },
-                    g.a.createElement(d.b, { testID: m, weight: 'bold' }, E({ suggestion: r })),
-                    g.a.createElement(
-                      d.b,
-                      { link: i, onClick: t, testID: f },
-                      g.a.createElement(k.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, C(n)),
+                    { style: w.root },
+                    p.a.createElement(b.b, { testID: k, weight: 'bold' }, v({ suggestion: i })),
+                    p.a.createElement(
+                      b.b,
+                      { link: r, onClick: t, testID: m },
+                      p.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, S(n)),
                     ),
                   )
                 },
@@ -238,8 +238,8 @@
             ]),
             n
           )
-        })(g.a.PureComponent),
-        D = y.a.create(function (e) {
+        })(p.a.PureComponent),
+        w = f.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -247,6 +247,28 @@
             },
           }
         })
+    },
+    u3ZE: function (e, t, n) {
+      'use strict'
+      t.a = {
+        AdvancedSearchPage: 'advanced_search_page',
+        CashtagClick: 'cashtag_click',
+        HashtagClick: 'hashtag_click',
+        PromotedTrendClick: 'promoted_trend_click',
+        RecentSearchClick: 'recent_search_click',
+        SavedSearchClick: 'saved_search_click',
+        RelatedQueryClick: 'related_query_click',
+        SpellingCorrectionClick: 'spelling_correction_click',
+        SpellingCorrectionRevertClick: 'spelling_suggestion_revert_click',
+        SpellingExpansionClick: 'spelling_expansion_click',
+        SpellingExpansionRevertClick: 'spelling_expansion_revert_click',
+        SpellingSuggestionClick: 'spelling_suggestion_click',
+        TrendClick: 'trend_click',
+        TrendView: 'trend_view',
+        TypeaheadClick: 'typeahead_click',
+        Typed: 'typed_query',
+        TweetDetailQuoteTweet: 'tdqt',
+      }
     },
   },
 ])

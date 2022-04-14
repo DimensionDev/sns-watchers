@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [81],
+  [82],
   {
     '07FG': function (e, t, n) {
       'use strict'
@@ -38,16 +38,16 @@
           return q
         }),
         n.d(t, 'k', function () {
-          return B
+          return G
         }),
         n.d(t, 'h', function () {
-          return G
+          return B
         }),
         n.d(t, 'a', function () {
           return V
         }),
         n.d(t, 'b', function () {
-          return Y
+          return Q
         }),
         n.d(t, 'c', function () {
           return z
@@ -82,10 +82,10 @@
         y = n('Ssj5'),
         g = n('fEA7'),
         w = n.n(g),
-        E = n('uKEd'),
+        C = n('uKEd'),
         T = n('lnti'),
-        C = n('/NU0'),
-        A = [
+        E = n('/NU0'),
+        I = [
           'senderId',
           'cardUrl',
           'conversationId',
@@ -95,7 +95,7 @@
           'tweetAttachment',
           'quickReply',
         ],
-        I = 'dmComposer',
+        A = 'dmComposer',
         U = {}
       var k = function (e) {
           var t = e.conversation_id,
@@ -128,12 +128,12 @@
               l = c.conversationId,
               y = c.localMediaId,
               g = c.recipients,
-              I = void 0 === g ? [] : g,
+              A = void 0 === g ? [] : g,
               U = c.requestId,
               M = void 0 === U ? w.a.v1() : U,
               R = c.tweetAttachment,
               D = c.quickReply,
-              S = s()(c, A)
+              S = s()(c, I)
             t(Z(l))
             var O = n(),
               x = y || H(n(), l),
@@ -141,14 +141,14 @@
               N = i()(L, 1)[0] || {},
               F = N.mediaFile,
               P = N.mediaMetadata,
-              q = I.length > 0 && I.join(','),
-              B = {}
+              q = A.length > 0 && A.join(','),
+              G = {}
             F && F.isGif
-              ? (B.extraInitParams = '&media_category=dm_gif')
-              : F && F.isVideo && (B.extraInitParams = '&media_category=dm_video')
-            var W = m.p(x, B),
+              ? (G.extraInitParams = '&media_category=dm_gif')
+              : F && F.isVideo && (G.extraInitParams = '&media_category=dm_video')
+            var W = m.p(x, G),
               V = [t(W)],
-              X = (G(O, l) || {}).found_media_origin
+              X = (B(O, l) || {}).found_media_origin
             return (
               F && F.isGif && V.push(Object(b.a)(F)),
               Promise.all(V).then(
@@ -201,14 +201,14 @@
                       D &&
                         ((w['quick_reply_response[options][id]'] = D.id),
                         (w['quick_reply_response[options][selected_id]'] = D.selected_id))
-                      var A = Object(T.a)([
+                      var I = Object(T.a)([
                         ee(l),
                         { type: v.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        l && Object(E.b)(l, M, g),
+                        l && Object(C.b)(l, M, g),
                       ])
                       return (
-                        t(A),
+                        t(I),
                         a.DirectMessages.sendMessage(w).then(
                           function (n) {
                             var r = n.entities,
@@ -217,11 +217,11 @@
                               c = r.tweets,
                               s = r.users,
                               u = n.result.conversations
-                            Object(C.a)(x) && t(z(l, x))
+                            Object(E.a)(x) && t(z(l, x))
                             var d = Object(T.a)(
                               [{ type: v.c.SUCCESS }].concat(
                                 o()(Object(f.a)({ conversations: u, entries: i, users: s, tweets: c, cards: a })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, l && Object(E.j)(l, M, e), j(l)],
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, l && Object(C.j)(l, M, e), j(l)],
                               ),
                             )
                             return t(d), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
@@ -240,7 +240,7 @@
                               a = Object(T.a)([
                                 { type: v.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                l && Object(E.b)(l, M, o),
+                                l && Object(C.b)(l, M, o),
                               ])
                             return t(a), Object(_.e)(t, n, 'ACTION_SEND_DM')
                           },
@@ -253,7 +253,7 @@
                   )
                 },
                 function (e) {
-                  return t(Object(T.a)([Object(C.a)(x) && z(l, x), ne(l)])), Promise.reject(e)
+                  return t(Object(T.a)([Object(E.a)(x) && z(l, x), ne(l)])), Promise.reject(e)
                 },
               )
             )
@@ -294,10 +294,10 @@
           var n = R(e, t)
           return !!n && n.isUploading
         },
-        B = function (e, t) {
+        G = function (e, t) {
           return m.l(e, H(e, t))
         },
-        G = function (e, t) {
+        B = function (e, t) {
           var n = R(e, t)
           return n ? n.gifMetadata : null
         },
@@ -306,16 +306,16 @@
           return { payload: { isUploading: !1, mediaId: i()(t, 1)[0], gifMetadata: n }, type: W, conversationId: e }
         },
         X = 'rweb/dmComposer/CANCEL_UPLOAD',
-        Y = function (e) {
+        Q = function (e) {
           return { type: X, conversationId: e }
         },
-        Q = 'rweb/dmComposer/REMOVE_MEDIA',
+        Y = 'rweb/dmComposer/REMOVE_MEDIA',
         K = function (e) {
-          return { type: Q, conversationId: e }
+          return { type: Y, conversationId: e }
         },
         z = function (e, t) {
           return function (n) {
-            n(m.i(t)), n([Y(e), K(e)])
+            n(m.i(t)), n([Q(e), K(e)])
           }
         },
         J = 'rweb/dmComposer/UPLOAD_REQUEST',
@@ -331,7 +331,7 @@
           return { type: te, conversationId: e }
         }
       y.a.register(
-        d()({}, I, function () {
+        d()({}, A, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.conversationId || 'new_group'
@@ -347,7 +347,7 @@
               return p()(p()({}, e), {}, d()({}, n, p()(p()({}, a), {}, { isUploading: !1 })))
             case te:
             case $:
-            case Q:
+            case Y:
               var i = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(
                 p()({}, e),
@@ -373,7 +373,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ReportScreen', function () {
-          return Me
+          return Re
         })
       var r = n('yiKp'),
         o = n.n(r),
@@ -404,11 +404,11 @@
         y = n('EbOo'),
         g = (n('WNMA'), n('RqPI')),
         w = n('1YZw'),
-        E = n('aWyx'),
+        C = n('aWyx'),
         T = n('Hw0q'),
-        C = n('MMRb'),
-        A = n('kHBp'),
-        I = n('lPpt'),
+        E = n('MMRb'),
+        I = n('kHBp'),
+        A = n('lPpt'),
         U = n('Fg8X'),
         k = n('0pUJ'),
         M = n('Fmkq'),
@@ -432,10 +432,10 @@
         q = function (e, t) {
           return !!(t.location && t.location.state && t.location.state.isMedia) || !1
         },
-        B = function (e, t) {
+        G = function (e, t) {
           return t.location && t.location.state && t.location.state.promotedContent
         },
-        G = function (e, t) {
+        B = function (e, t) {
           return t.location && t.location.state && t.location.state.conversationSection
         },
         W = function (e, t) {
@@ -447,12 +447,12 @@
         X = function (e, t) {
           return t.match.params.reportType
         },
-        Y = function (e, t) {
+        Q = function (e, t) {
           return t.match.params.reportedId
         },
-        Q = function (e, t) {
+        Y = function (e, t) {
           var n = X(e, t),
-            r = Y(0, t)
+            r = Q(0, t)
           switch (n) {
             case N.a.Tweet:
             case N.a.AppealTweetWarning:
@@ -463,7 +463,7 @@
           }
         },
         K = function (e, t) {
-          var n = X(e, t) === N.a.User ? Y(0, t) : void 0
+          var n = X(e, t) === N.a.User ? Q(0, t) : void 0
           return n ? x.e.select(e, n) : void 0
         },
         z = function (e, t) {
@@ -471,7 +471,7 @@
             r = X(e, t)
           if (
             ((r !== N.a.DMConversation && r !== N.a.DMMessage) ||
-              (n = r === N.a.DMConversation ? Y(0, t) : t.location.state ? t.location.state.conversationId : void 0),
+              (n = r === N.a.DMConversation ? Q(0, t) : t.location.state ? t.location.state.conversationId : void 0),
             n)
           ) {
             var o = Object(D.a)(e, n),
@@ -486,7 +486,7 @@
           if (e && e.data)
             return (
               (n =
-                e.data.type === E.a.GROUP
+                e.data.type === C.a.GROUP
                   ? '0'
                   : e.data.participants.filter(function (e) {
                       return e.user_id !== t
@@ -495,15 +495,15 @@
             )
         },
         Z = function (e, t) {
-          return X(e, t) === N.a.Moment ? U.a.select(e, Y(0, t)) : void 0
+          return X(e, t) === N.a.Moment ? U.a.select(e, Q(0, t)) : void 0
         },
         $ = function (e, t) {
-          var n = X(e, t) === N.a.List ? Y(0, t) : void 0
-          return n ? A.a.select(e, n) : void 0
+          var n = X(e, t) === N.a.List ? Q(0, t) : void 0
+          return n ? I.a.select(e, n) : void 0
         },
         ee = function (e, t) {
-          var n = X(e, t) === N.a.Moment ? Y(0, t) : void 0
-          return n ? I.a.select(e, n) : void 0
+          var n = X(e, t) === N.a.Moment ? Q(0, t) : void 0
+          return n ? A.a.select(e, n) : void 0
         },
         te = Object(j.a)()
           .propsFromState(function () {
@@ -512,19 +512,19 @@
               clientReferer: F,
               communityId: W,
               dmConversation: z,
-              reportedId: Y,
+              reportedId: Q,
               inboxType: H,
               isMedia: q,
               lang: g.p,
               liveEvent: ee,
               moment: Z,
               list: $,
-              promotedContent: B,
-              conversationSection: G,
+              promotedContent: G,
+              conversationSection: B,
               reportType: X,
               reportSource: V,
               scribeNamespace: P,
-              tweet: Q,
+              tweet: Y,
               user: K,
             }
           })
@@ -533,7 +533,7 @@
               addToast: w.b,
               block: x.e.block,
               createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
-              fetchUpdates: C.fetchUpdates,
+              fetchUpdates: E.fetchUpdates,
               mute: k.a,
               markTweetAsReported: S.a.markAsReported,
               markTweetsAsRemovedFromCommunity: S.a.markTweetsAsRemovedFromCommunity,
@@ -576,14 +576,15 @@
         ye = n('bPFD'),
         ge = n('rHpw'),
         we = n('P2xQ'),
-        Ee = ie.a.f1824804,
+        Ce = ie.a.f1824804,
         Te = ie.a.h030c24b,
-        Ce = ie.a.c3e6226a,
+        Ee = ie.a.c3e6226a,
+        Ie = ie.a.f20b040d,
         Ae = ie.a.a9fd20be,
-        Ie = ie.a.i2b9632d,
-        Ue = ie.a.b772cd65,
-        ke = 'https://twitter.com',
-        Me = (function (e) {
+        Ue = ie.a.i2b9632d,
+        ke = ie.a.b772cd65,
+        Me = 'https://twitter.com',
+        Re = (function (e) {
           p()(n, e)
           var t = f()(n)
           function n(e, r) {
@@ -593,7 +594,7 @@
               (o = t.call(this, e, r)),
               v()(d()(o), '_renderDoneButton', function () {
                 return o.state.isDone
-                  ? h.a.createElement(he.a, { onPress: o._handleDone, size: 'xSmall', type: 'primaryFilled' }, Ue)
+                  ? h.a.createElement(he.a, { onPress: o._handleDone, size: 'xSmall', type: 'primaryFilled' }, ke)
                   : void 0
               }),
               v()(d()(o), '_handleDone', function () {
@@ -630,7 +631,7 @@
                     r = t.createLocalApiErrorHandler,
                     a = t.promotedContent
                   ;(0, t.unblock)(e, { promotedContent: a }).then(function () {
-                    n({ text: Ie })
+                    n({ text: Ue })
                   }, r(pe.a))
                 }
               }),
@@ -647,9 +648,11 @@
               v()(d()(o), '_getReportTitle', function () {
                 switch (o.props.reportType) {
                   case N.a.AppealTweetWarning:
-                    return Ee
-                  case N.a.RemoveCommunityMember:
                     return Ce
+                  case N.a.RemoveCommunityMember:
+                    return Ee
+                  case N.a.HideCommunityTweet:
+                    return Ie
                   default:
                     return Te
                 }
@@ -786,7 +789,7 @@
                       return ''.concat(encodeURIComponent(e), '=').concat(encodeURIComponent(y[e]))
                     })
                     .join('&')
-                return ''.concat(ke, '/i/safety/report_story?').concat(g)
+                return ''.concat(Me, '/i/safety/report_story?').concat(g)
               }),
               v()(d()(o), '_messageHandler', function (e) {
                 var t = o.props,
@@ -795,7 +798,7 @@
                   a = t.markTweetsAsRemovedFromCommunity,
                   i = t.markUserAsRemovedFromCommunity,
                   c = t.reportSource
-                if (e.origin === ke && 'ReportAction' === e.data.type) {
+                if (e.origin === Me && 'ReportAction' === e.data.type) {
                   var s = o.props,
                     u = s.block,
                     d = s.createLocalApiErrorHandler,
@@ -993,7 +996,7 @@
             n
           )
         })(h.a.Component)
-      v()(Me, 'defaultProps', {
+      v()(Re, 'defaultProps', {
         addMessageListener: function (e) {
           return window.addEventListener('message', e)
         },
@@ -1002,9 +1005,9 @@
           return window.removeEventListener('message', e)
         },
       }),
-        v()(Me, 'contextType', be.a)
-      var Re = te(Me)
-      t.default = Re
+        v()(Re, 'contextType', be.a)
+      var De = te(Re)
+      t.default = De
     },
     LqVV: function (e, t, n) {
       'use strict'
@@ -1054,11 +1057,11 @@
         y = n.n(h),
         g = n('rHpw'),
         w = n('u0B7'),
-        E = n('1bnC'),
+        C = n('1bnC'),
         T = n('FGLp'),
-        C = n('MWbm'),
-        A = n('P2xQ'),
-        I = n('fs1G'),
+        E = n('MWbm'),
+        I = n('P2xQ'),
+        A = n('fs1G'),
         U = n('0zXz'),
         k = y.a.a9fd20be,
         M = y.a.i2b9632d
@@ -1080,7 +1083,7 @@
                       var t, r
                       n({
                         action: {
-                          label: E.a,
+                          label: C.a,
                           onAction:
                             ((t = d),
                             (r = u),
@@ -1088,11 +1091,11 @@
                               var n = e.addToast,
                                 o = e.createLocalApiErrorHandler
                               ;(0, e.unmute)(t).then(function () {
-                                n({ text: Object(A.d)(r) })
+                                n({ text: Object(I.d)(r) })
                               }, o({ showToast: !0 }))
                             }),
                         },
-                        text: Object(A.b)(u),
+                        text: Object(I.b)(u),
                       })
                     }, i({ showToast: !0 }))
                   : d &&
@@ -1101,7 +1104,7 @@
                       var t
                       n({
                         action: {
-                          label: E.a,
+                          label: C.a,
                           onAction:
                             ((t = d),
                             function () {
@@ -1119,9 +1122,9 @@
               : c.push('/')
           }),
           o.a.createElement(
-            C.a,
+            E.a,
             { style: D.root },
-            o.a.createElement(b.a, { fetchStatus: v.a.LOADING, onRequestRetry: I.a, render: U.a, retryable: !1 }),
+            o.a.createElement(b.a, { fetchStatus: v.a.LOADING, onRequestRetry: A.a, render: U.a, retryable: !1 }),
           )
         )
       }
@@ -1186,7 +1189,7 @@
           return w
         }),
         n.d(t, 'e', function () {
-          return E
+          return C
         })
       n('vfdX'), n('z84I'), n('ho0z')
       var r = n('CDB5'),
@@ -1228,7 +1231,7 @@
         })
       }
       function m(e) {
-        return e === i.d.SECONDARY ? c.e.REQUESTS : e === i.d.TERTIARY ? c.e.LOW_QUALITY : c.e.PRIMARY
+        return e === i.d.SECONDARY ? c.e.REQUEST : e === i.d.TERTIARY ? c.e.LOW_QUALITY : c.e.PRIMARY
       }
       function f(e) {
         return e.isTrue('dm_voice_rendering_enabled')
@@ -1274,7 +1277,7 @@
             return r.c(e, t)
           }
         },
-        E = function (e, t) {
+        C = function (e, t) {
           var n = Object(o.a)(e, function (e) {
             return !!e.message_data && e.message_data && e.message_data.recipient_id === t
           })
@@ -1286,6 +1289,73 @@
             ? n.message_data.quick_reply
             : void 0
         }
+    },
+    XnpN: function (e, t, n) {
+      'use strict'
+      var r = n('RhWx'),
+        o = n.n(r),
+        a = n('ddV6'),
+        i = n.n(a),
+        c = (n('2G9S'), n('tQbP'), n('aWyx')),
+        s = (n('6U7i'), n('LW0h'), n('7x/C'), n('z84I'), n('t0aI')),
+        u = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0
+          return new Date(Number(e))
+        },
+        d = function (e, t) {
+          return u(e.join_time) - u(t.join_time)
+        },
+        l = function (e, t) {
+          var n = e.user,
+            r = t.user
+          return Object(s.a)(n.id_str, r.id_str)
+        },
+        p = function (e) {
+          return (function () {
+            for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
+            return function (e, n) {
+              return (
+                t
+                  .map(function (t) {
+                    return t(e, n)
+                  })
+                  .filter(function (e) {
+                    return !!e
+                  })[0] || 0
+              )
+            }
+          })(
+            (function (e) {
+              return function (t, n) {
+                var r = t.user,
+                  o = n.user
+                switch (e) {
+                  case r.id_str:
+                    return -1
+                  case o.id_str:
+                    return 1
+                  default:
+                    return 0
+                }
+              }
+            })(e),
+            d,
+            l,
+          )
+        },
+        m = n('VIKJ')
+      t.a = function (e, t) {
+        var n = e.created_by_user_id,
+          r = e.participants,
+          a = e.type,
+          s = Object(m.a)(r, function (e) {
+            return e.user.id_str === t
+          }),
+          u = i()(s, 2),
+          d = u[0],
+          l = u[1]
+        return l.length ? (a === c.a.GROUP && 1 === l.length ? [].concat(o()(d), o()(l)) : n ? l.sort(p(n)) : l) : d
+      }
     },
   },
 ])

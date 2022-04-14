@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [108],
+  [109],
   {
     e5HP: function (e, o, t) {
       'use strict'
@@ -231,7 +231,11 @@
         G = function (e) {
           var o = e.withFollowerActionMenu,
             t = void 0 !== o && o
-          return K()(K()({}, Object(j.a)({})), {}, p()({}, g.b.User, Object(U.a)({ decoration: t ? R.f : void 0 })))
+          return K()(
+            K()({}, Object(j.createConfiguration)({})),
+            {},
+            p()({}, g.b.User, Object(U.a)({ decoration: t ? R.f : void 0 })),
+          )
         },
         A = t('7wqI'),
         x = t('GOQE'),

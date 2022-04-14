@@ -1,240 +1,160 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [234],
+  [235],
   {
-    QPD4: function (e, a, t) {
+    QPD4: function (e, t, a) {
       'use strict'
-      t.r(a)
-      var n = t('yiKp'),
-        r = t.n(n),
-        o = (t('Blm6'), t('ezF+')),
-        i = t('VPAj'),
-        c = t('VrFO'),
-        l = t.n(c),
-        s = t('Y9Ll'),
-        m = t.n(s),
-        u = t('1Pcy'),
-        d = t.n(u),
-        p = t('5Yy7'),
-        g = t.n(p),
-        f = t('2VqO'),
-        b = t.n(f),
-        h = t('KEM+'),
-        v = t.n(h),
-        w = (t('2G9S'), t('z84I'), t('uFXj'), t('ERkP')),
-        y = t.n(w),
-        E = (t('hBpG'), t('7x/C'), t('ajvb')),
-        S = t('3XMw'),
-        C = t.n(S),
-        I = t('qB1G'),
-        k = t('pjBI'),
-        P = t('t62R'),
-        x = C.a.ccc45ee6
-      var T = function (e) {
-          var a,
-            t,
-            n = e.eventState,
-            r = e.gameClockPeriod,
-            o = e.participants,
-            i = e.winnerId,
-            c = n === I.a.Completed,
-            l = n === I.a.InProgress,
-            s =
-              ((a =
-                o &&
-                o.find(function (e) {
-                  return e.id === i
-                })),
-              (t = null == a ? void 0 : a.shortName),
-              c && t ? x({ team: t }) : l && r ? r : null)
-          return y.a.createElement(
-            k.a,
+      a.r(t)
+      var n = a('yiKp'),
+        r = a.n(n),
+        o = a('ezF+'),
+        c = a('VPAj'),
+        l = a('Rp9C'),
+        i = a('X04g'),
+        s = (a('Blm6'), a('ERkP')),
+        m = a.n(s),
+        u = (a('uFXj'), a('hBpG'), a('7x/C'), a('ajvb')),
+        d = a('3XMw'),
+        g = a.n(d),
+        p = a('qB1G'),
+        f = a('pjBI'),
+        b = a('t62R'),
+        w = g.a.ccc45ee6,
+        E = function (e) {
+          var t = e.eventState,
+            a = e.gameClockPeriod,
+            n = e.participants,
+            r = e.winnerId,
+            o = t === p.a.Completed,
+            c = t === p.a.InProgress,
+            l = m.a.useMemo(
+              function () {
+                var e =
+                    n &&
+                    n.find(function (e) {
+                      return e.id === r
+                    }),
+                  t = null == e ? void 0 : e.shortName
+                return o && t ? w({ team: t }) : c && a ? a : null
+              },
+              [a, o, c, n, r],
+            )
+          return m.a.createElement(
+            f.a,
             null,
-            y.a.createElement(
-              P.b,
-              { color: l ? 'magenta500' : 'gray700', size: 'subtext2', weight: 'bold' },
-              Object(E.a)(n),
+            m.a.createElement(
+              b.b,
+              { color: c ? 'magenta500' : 'gray700', size: 'subtext2', weight: 'bold' },
+              Object(u.a)(t),
             ),
-            s ? y.a.createElement(P.b, { color: 'gray700', size: 'subtext2', weight: 'normal' }, s) : null,
+            l ? m.a.createElement(b.b, { color: 'gray700', size: 'subtext2', weight: 'normal' }, l) : null,
           )
         },
-        z = 864e5,
-        M = C.a.f81a95d7,
-        _ = C.a.ccaa970e
-      var D = function (e) {
-          var a,
-            t,
-            n,
-            r = e.date,
-            o = (function (e) {
-              var a = new Date().setHours(0, 0, 0, 0),
-                t = a + z
-              return e >= a && e < t ? 0 : e >= t && e < a + 1728e5 ? 1 : -1
-            })(r),
-            i = (0, C.a.d725a288)(r)
-          return -1 === o
-            ? ((n = _(r)),
-              y.a.createElement(
-                k.a,
+        v = m.a.memo(E),
+        y = 864e5,
+        h = g.a.f81a95d7,
+        C = g.a.ccaa970e,
+        S = function (e) {
+          var t = e.date,
+            a = (function (e) {
+              var t = new Date().setHours(0, 0, 0, 0),
+                a = t + y
+              return e >= t && e < a ? 0 : e >= a && e < t + 1728e5 ? 1 : -1
+            })(t),
+            n = (0, g.a.d725a288)(t),
+            r = C(t),
+            o = m.a.createElement(b.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }),
+            c = m.a.createElement(b.b, { color: 'gray700', size: 'subtext2' })
+          switch (a) {
+            case 0:
+              return m.a.createElement(
+                g.a.I18NFormatMessage,
+                { $i18n: 'h0d6f2c5' },
+                m.a.cloneElement(o, null, g.a.ed4bea2e),
+                m.a.cloneElement(c, null, g.a.j3e0ae78({ formattedTime: n })),
+              )
+            case 1:
+              return m.a.createElement(
+                g.a.I18NFormatMessage,
+                { $i18n: 'a492659f' },
+                m.a.cloneElement(o, null, g.a.cabfdd05),
+                m.a.cloneElement(c, null, g.a.abd0f804({ formattedTime: n })),
+              )
+            default:
+              return m.a.createElement(
+                f.a,
                 null,
-                y.a.createElement(P.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, M({ date: n })),
-                y.a.createElement(P.b, { color: 'gray700', size: 'subtext2', weight: 'normal' }, i),
-              ))
-            : ((a = y.a.createElement(P.b, { color: 'gray700', size: 'subtext2', weight: 'bold' })),
-              (t = y.a.createElement(P.b, { color: 'gray700', size: 'subtext2' })),
-              0 === o
-                ? y.a.createElement(
-                    C.a.I18NFormatMessage,
-                    { $i18n: 'h0d6f2c5' },
-                    y.a.cloneElement(a, null, C.a.ed4bea2e),
-                    y.a.cloneElement(t, null, C.a.j3e0ae78({ formattedTime: i })),
-                  )
-                : y.a.createElement(
-                    C.a.I18NFormatMessage,
-                    { $i18n: 'a492659f' },
-                    y.a.cloneElement(a, null, C.a.cabfdd05),
-                    y.a.cloneElement(t, null, C.a.abd0f804({ formattedTime: i })),
-                  ))
+                m.a.createElement(b.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, h({ date: r })),
+                m.a.createElement(b.b, { color: 'gray700', size: 'subtext2', weight: 'normal' }, n),
+              )
+          }
         },
-        j = t('MWbm'),
-        R = t('rHpw')
-      var A = R.a.create(function (e) {
+        I = m.a.memo(S),
+        k = a('MWbm'),
+        P = a('rHpw'),
+        x = function (e) {
+          var t = e.category,
+            a = e.eventState,
+            n = e.gameClockPeriod,
+            r = e.participants,
+            o = e.startTimeMillis,
+            c = e.winnerId,
+            l = a === p.a.Scheduled,
+            i = o && new Date(o)
+          return m.a.createElement(
+            k.a,
+            { style: z.row },
+            m.a.createElement(b.b, { align: 'left', size: 'subtext2', style: z.rowElem, weight: 'bold' }, t),
+            m.a.createElement(
+              k.a,
+              { style: z.eventStateContainer },
+              l && i
+                ? m.a.createElement(I, { date: i })
+                : m.a.createElement(v, { eventState: a, gameClockPeriod: n, participants: r, winnerId: c }),
+            ),
+          )
+        },
+        z = P.a.create(function (e) {
           return {
             eventStateContainer: { alignSelf: 'flex-end', flexDirection: 'row' },
             row: { flexDirection: 'row', marginVertical: e.spaces.space4 },
             rowElem: { flexGrow: 1, alignSelf: 'center' },
           }
         }),
-        B = function (e) {
-          var a = e.category,
-            t = e.eventState,
-            n = e.gameClockPeriod,
-            r = e.participants,
-            o = e.startTimeMillis,
-            i = e.winnerId,
-            c = t === I.a.Scheduled,
-            l = o && new Date(o)
-          return y.a.createElement(
-            j.a,
-            { style: A.row },
-            y.a.createElement(P.b, { align: 'left', size: 'subtext2', style: A.rowElem, weight: 'bold' }, a),
-            y.a.createElement(
-              j.a,
-              { style: A.eventStateContainer },
-              c && l
-                ? y.a.createElement(D, { date: l })
-                : y.a.createElement(T, { eventState: t, gameClockPeriod: n, participants: r, winnerId: i }),
+        T = m.a.memo(x),
+        M = (a('z84I'), a('2G9S'), a('ddV6')),
+        j = a.n(M),
+        B = a('A91F'),
+        D = a('TIdA'),
+        H = function (e) {
+          var t = e.team,
+            a = t.imageUrl,
+            n = t.logo,
+            r = m.a.useState(!1),
+            o = j()(r, 2),
+            c = o[0],
+            l = o[1],
+            i = (!n && !a) || c ? R.translucent : {},
+            s = n ? B.a.exact(n.width / n.height) : B.a.SQUARE
+          return m.a.createElement(
+            k.a,
+            { style: R.teamLogoContainer },
+            m.a.createElement(
+              k.a,
+              { style: [n ? R.logoContainer : R.imageContainer, i] },
+              m.a.createElement(D.a, {
+                accessibilityLabel: '',
+                aspectMode: s,
+                image: n || a || '',
+                onError: function () {
+                  return l(!0)
+                },
+                rounded: !n,
+              }),
             ),
           )
         },
-        O = t('A91F'),
-        F = t('TIdA'),
-        G = (function (e) {
-          g()(t, e)
-          var a = b()(t)
-          function t() {
-            var e
-            l()(this, t)
-            for (var n = arguments.length, r = new Array(n), o = 0; o < n; o++) r[o] = arguments[o]
-            return (
-              (e = a.call.apply(a, [this].concat(r))),
-              v()(d()(e), 'state', { imageError: !1 }),
-              v()(d()(e), '_renderImage', function () {
-                var a = e.props.team,
-                  t = a.imageUrl,
-                  n = a.logo,
-                  r = e.state.imageError,
-                  o = (!n && !t) || r ? H.translucent : {},
-                  i = n ? O.a.exact(n.width / n.height) : O.a.SQUARE
-                return y.a.createElement(
-                  j.a,
-                  { style: H.teamLogoContainer },
-                  y.a.createElement(
-                    j.a,
-                    { style: [n ? H.logoContainer : H.imageContainer, o] },
-                    y.a.createElement(F.a, {
-                      accessibilityLabel: '',
-                      aspectMode: i,
-                      image: n || t || '',
-                      onError: e._handleImageError,
-                      rounded: !n,
-                    }),
-                  ),
-                )
-              }),
-              v()(d()(e), '_handleImageError', function () {
-                e.setState({ imageError: !0 })
-              }),
-              e
-            )
-          }
-          return (
-            m()(t, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    a = e.fallbackColor,
-                    t = e.team,
-                    n = t.color,
-                    r = t.fullName,
-                    o = {
-                      backgroundColor:
-                        (n && 'rgb('.concat(n.red, ', ').concat(n.green, ', ').concat(n.blue, ')')) ||
-                        R.a.theme.colors[a],
-                    }
-                  return y.a.createElement(
-                    j.a,
-                    { style: [H.root, o] },
-                    this._renderImage(),
-                    y.a.createElement(
-                      P.b,
-                      { align: 'left', color: 'white', numberOfLines: 1, style: H.rowElem, weight: 'heavy' },
-                      r,
-                    ),
-                    this._renderScore(),
-                  )
-                },
-              },
-              {
-                key: '_renderScore',
-                value: function () {
-                  var e = this.props,
-                    a = e.eventState,
-                    t = e.team,
-                    n = e.winnerId,
-                    r = t.id,
-                    o = t.score,
-                    i = t.secondaryScore,
-                    c = r === n,
-                    l = !n,
-                    s = a === I.a.Completed && !c && !l
-                  return a === I.a.Completed || a === I.a.InProgress
-                    ? y.a.createElement(
-                        j.a,
-                        { style: [H.teamScore, s && H.losingTeam] },
-                        y.a.createElement(
-                          P.b,
-                          { color: 'white', numberOfLines: 1, size: i ? 'headline1' : 'title4', weight: 'heavy' },
-                          o,
-                        ),
-                        i
-                          ? y.a.createElement(
-                              P.b,
-                              { color: 'white', numberOfLines: 1, style: H.specialTeamScoreSecondary, weight: 'bold' },
-                              i,
-                            )
-                          : null,
-                      )
-                    : null
-                },
-              },
-            ]),
-            t
-          )
-        })(y.a.Component),
-        H = R.a.create(function (e) {
+        R = P.a.create(function (e) {
           return {
-            root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { width: e.spaces.space32 },
             logoContainer: { width: e.spaces.space40 },
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
@@ -244,100 +164,142 @@
               height: e.spaces.space32,
               width: e.spaces.space40,
             },
+          }
+        }),
+        A = m.a.memo(H),
+        F = function (e) {
+          var t = e.eventState,
+            a = e.team,
+            n = e.winnerId,
+            r = a.id,
+            o = a.score,
+            c = a.secondaryScore,
+            l = r === n,
+            i = !n,
+            s = t === p.a.Completed && !l && !i
+          return t === p.a.Completed || t === p.a.InProgress
+            ? m.a.createElement(
+                k.a,
+                { style: [G.teamScore, s && G.losingTeam] },
+                m.a.createElement(
+                  b.b,
+                  { color: 'white', numberOfLines: 1, size: c ? 'headline1' : 'title4', weight: 'heavy' },
+                  o,
+                ),
+                c
+                  ? m.a.createElement(
+                      b.b,
+                      { color: 'white', numberOfLines: 1, style: G.specialTeamScoreSecondary, weight: 'bold' },
+                      c,
+                    )
+                  : null,
+              )
+            : null
+        },
+        G = P.a.create(function (e) {
+          return {
             teamScore: { alignSelf: 'center', marginHorizontal: e.spaces.space12 },
-            specialTeamScoreMain: { alignSelf: 'center', flexDirection: 'column', display: 'flex' },
             specialTeamScoreSecondary: { alignSelf: 'flex-end' },
-            rowElem: { flexGrow: 1, alignSelf: 'center', marginHorizontal: e.spaces.space12 },
             losingTeam: { opacity: 0.5 },
           }
         }),
-        L = G,
-        N = t('htQn'),
-        U = (function (e) {
-          g()(t, e)
-          var a = b()(t)
-          function t() {
-            var e
-            l()(this, t)
-            for (var n = arguments.length, r = new Array(n), o = 0; o < n; o++) r[o] = arguments[o]
-            return (
-              (e = a.call.apply(a, [this].concat(r))),
-              v()(d()(e), '_renderTeamRow', function (a, t) {
-                var n = e.props,
-                  r = n.eventState,
-                  o = n.winnerId,
-                  i = a.id
-                return y.a.createElement(L, {
-                  eventState: r,
-                  fallbackColor: t % 2 == 0 ? 'gray300' : 'gray700',
-                  key: i,
-                  team: a,
-                  winnerId: o,
-                })
-              }),
-              e
-            )
+        O = m.a.memo(F),
+        L = P.a.create(function (e) {
+          return {
+            root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
+            rowElem: { flexGrow: 1, alignSelf: 'center', marginHorizontal: e.spaces.space12 },
           }
-          return (
-            m()(t, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  var e = this.props.onImpression
-                  e && e()
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    a = e.onClick,
-                    t = e.participants,
-                    n = e.url,
-                    r = t && t.map(this._renderTeamRow)
-                  return t && null != n && n.url
-                    ? y.a.createElement(
-                        N.a,
-                        { link: n.url, onClick: a },
-                        y.a.createElement(
-                          j.a,
-                          { style: V.container },
-                          this._renderDetails(),
-                          y.a.createElement(j.a, { style: V.teamsBorder }, r),
-                        ),
-                      )
-                    : null
-                },
-              },
-              {
-                key: '_renderDetails',
-                value: function () {
-                  var e = this.props,
-                    a = e.category,
-                    t = e.eventState,
-                    n = e.gameClock,
-                    r = e.gameClockPeriod,
-                    o = e.participants,
-                    i = e.startTimeMillis,
-                    c = e.summary,
-                    l = e.winnerId
-                  return y.a.createElement(B, {
-                    category: a,
-                    eventState: t,
-                    gameClock: n,
-                    gameClockPeriod: r,
-                    participants: o,
-                    startTimeMillis: i,
-                    summary: c,
-                    winnerId: l,
-                  })
-                },
-              },
-            ]),
-            t
+        }),
+        U = function (e) {
+          var t = e.eventState,
+            a = e.fallbackColor,
+            n = e.team,
+            r = e.winnerId,
+            o = n.color,
+            c = n.fullName,
+            l = {
+              backgroundColor:
+                (o && 'rgb('.concat(o.red, ', ').concat(o.green, ', ').concat(o.blue, ')')) || P.a.theme.colors[a],
+            }
+          return m.a.createElement(
+            k.a,
+            { style: [L.root, l] },
+            m.a.createElement(A, { team: n }),
+            m.a.createElement(
+              b.b,
+              { align: 'left', color: 'white', numberOfLines: 1, style: L.rowElem, weight: 'heavy' },
+              c,
+            ),
+            m.a.createElement(O, { eventState: t, team: n, winnerId: r }),
           )
-        })(y.a.Component),
-        V = R.a.create(function (e) {
+        },
+        N = function (e) {
+          var t = e.eventState,
+            a = e.participants,
+            n = e.winnerId
+          return m.a.createElement(
+            m.a.Fragment,
+            null,
+            a.map(function (e, a) {
+              return m.a.createElement(U, {
+                eventState: t,
+                fallbackColor: a % 2 == 0 ? 'gray300' : 'gray700',
+                key: e.id,
+                team: e,
+                winnerId: n,
+              })
+            }),
+          )
+        },
+        _ = m.a.memo(N),
+        V = a('htQn'),
+        X = function (e) {
+          var t = e.category,
+            a = e.eventState,
+            n = e.gameClock,
+            r = e.gameClockPeriod,
+            o = e.onClick,
+            c = e.onImpression,
+            l = e.participants,
+            i = e.startTimeMillis,
+            s = e.summary,
+            u = e.url,
+            d = e.winnerId
+          return (
+            m.a.useEffect(
+              function () {
+                c()
+              },
+              [c],
+            ),
+            l && null != u && u.url
+              ? m.a.createElement(
+                  V.a,
+                  { link: u.url, onClick: o },
+                  m.a.createElement(
+                    k.a,
+                    { style: q.container },
+                    m.a.createElement(T, {
+                      category: t,
+                      eventState: a,
+                      gameClock: n,
+                      gameClockPeriod: r,
+                      participants: l,
+                      startTimeMillis: i,
+                      summary: s,
+                      winnerId: d,
+                    }),
+                    m.a.createElement(
+                      k.a,
+                      { style: q.teamsBorder },
+                      m.a.createElement(_, { eventState: a, participants: l, winnerId: d }),
+                    ),
+                  ),
+                )
+              : null
+          )
+        },
+        q = P.a.create(function (e) {
           return {
             container: {
               flexDirection: 'column',
@@ -348,77 +310,81 @@
             teamsBorder: { borderRadius: e.borderRadii.small, overflow: 'hidden' },
           }
         }),
-        q = t('zh9S'),
-        X = t('Rp9C'),
-        Q = t('X04g'),
-        J = Object(i.a)({ scribe: q.scribeAction }),
-        K = o.g({
-          component: U,
-          isFocusable: Object(i.a)(!0),
-          bindActions: J,
-          createProps: function (e) {
-            var a = e.actions.scribe,
-              t = e.entry,
-              n = e.scribeData,
-              o = e.scribeNamespace
-            if (t.content.scoreEvent.eventState) {
-              var i = t.content.scoreEvent,
-                c = i.category,
-                l = i.eventState,
-                s = i.gameClock,
-                m = i.gameClockPeriod,
-                u = i.participants,
-                d = i.startTimeMillis,
-                p = i.summary,
-                g = i.url,
-                f = i.winnerId
-              return {
-                eventState: l,
-                participants: u,
-                category: c,
-                summary: p,
-                startTimeMillis: parseInt(d, 10),
-                gameClock: s,
-                gameClockPeriod: m,
-                winnerId: f,
-                url: g,
-                onClick: function (e) {
-                  a(r()(r()({}, o), {}, { action: 'click' }), n)
-                },
-                onImpression: function () {
-                  a(r()(r()({}, o), {}, { action: 'impression' }), n)
-                },
-              }
-            }
-            return null
-          },
-          getScribeDataItem: function (e) {
-            var a = e.content.scoreEvent.id,
-              t = e.itemMetadata.clientEventInfo,
-              n = X.a.getAllSurfaceDetails(t)
-            if (n) return r()({ item_type: Q.a.ItemType.EVENT, event_details: { event_id: a } }, n)
-          },
-        })
-      a.default = K
+        Q = m.a.memo(X),
+        J = a('Irs7'),
+        $ = function (e) {
+          var t = e.entry,
+            a = Object(J.b)(),
+            n = m.a.useCallback(
+              function () {
+                a.scribeAction('click')
+              },
+              [a],
+            ),
+            r = m.a.useCallback(
+              function () {
+                a.scribeAction('impression')
+              },
+              [a],
+            )
+          if (!t.content.scoreEvent.eventState) return null
+          var o = t.content.scoreEvent,
+            c = o.category,
+            l = o.eventState,
+            i = o.gameClock,
+            s = o.gameClockPeriod,
+            u = o.participants,
+            d = o.startTimeMillis,
+            g = o.summary,
+            p = o.url,
+            f = o.winnerId
+          return m.a.createElement(Q, {
+            category: c,
+            eventState: l,
+            gameClock: i,
+            gameClockPeriod: s,
+            onClick: n,
+            onImpression: r,
+            participants: u,
+            startTimeMillis: parseInt(d, 10),
+            summary: g,
+            url: p,
+            winnerId: f,
+          })
+        },
+        K = m.a.memo($),
+        W = o
+          .b({
+            component: K,
+            isFocusable: Object(c.a)(!0),
+            getScribeDataItem: function (e) {
+              var t = e.content.scoreEvent.id,
+                a = e.itemMetadata.clientEventInfo,
+                n = l.a.getAllSurfaceDetails(a)
+              if (n) return r()({ item_type: i.a.ItemType.EVENT, event_details: { event_id: t } }, n)
+            },
+          })
+          .getHandler()
+      t.default = W
     },
-    ajvb: function (e, a, t) {
+    ajvb: function (e, t, a) {
       'use strict'
-      var n = t('3XMw'),
-        r = t.n(n),
-        o = t('qB1G'),
-        i = r.a.f178e38c,
-        c = r.a.b6da6b01,
-        l = r.a.i9f615c8,
+      var n = a('3XMw'),
+        r = a.n(n),
+        o = a('qB1G'),
+        c = r.a.f178e38c,
+        l = r.a.b6da6b01,
+        i = r.a.i9f615c8,
         s = r.a.f897267a,
         m = r.a.f93c4b69
-      a.a = function (e) {
+      t.a = function (e) {
         switch (e) {
           case o.a.Scheduled:
-            return i
-          case o.a.InProgress:
             return c
-          case o.a.Completed:
+          case o.a.InProgress:
             return l
+          case o.a.Completed:
+            return i
           case o.a.Postponed:
             return s
           case o.a.Cancelled:
@@ -428,12 +394,12 @@
         }
       }
     },
-    qB1G: function (e, a, t) {
+    qB1G: function (e, t, a) {
       'use strict'
-      t.d(a, 'a', function () {
+      a.d(t, 'a', function () {
         return n
       })
-      t('yH/f')
+      a('yH/f')
       var n = Object.freeze({
         Scheduled: 'Scheduled',
         InProgress: 'InProgress',

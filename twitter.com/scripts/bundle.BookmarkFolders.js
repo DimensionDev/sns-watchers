@@ -1,12 +1,238 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [38],
+  [39],
   {
     '1kbl': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'BookmarkFoldersScreen', function () {
-          return $
+          return O
         })
+      var r = n('ERkP'),
+        o = n.n(r),
+        a = n('Eeja'),
+        i = n('es0u'),
+        l = n('G6rE'),
+        c = n('rxPX'),
+        s = Object(c.a)()
+          .propsFromState(function () {
+            return { loggedInUser: l.e.selectLoggedInUser }
+          })
+          .adjustStateProps(function (e) {
+            var t = e.loggedInUser
+            return { loggedInUserScreenName: null == t ? void 0 : t.screen_name }
+          })
+          .withAnalytics({ page: 'bookmark_folders' }),
+        d = n('97Jx'),
+        u = n.n(d),
+        m = n('m3Bd'),
+        p = n.n(m),
+        b = n('3XMw'),
+        h = n.n(b),
+        f = n('ZGdk'),
+        k = n('rHpw'),
+        g = n('/yvb'),
+        v = ['history', 'onCreateButtonClick', 'style', 'testID', 'type'],
+        y = k.a.create(function (e) {
+          return {
+            button: { marginRight: e.spaces.space4 },
+            icon: { width: k.a.theme.fontSizes.title3, height: k.a.theme.fontSizes.title3 },
+          }
+        }),
+        _ = h.a.f8fc0b47,
+        E = o.a.createElement(f.a, { style: y.icon }),
+        F = function (e) {
+          var t = e.history,
+            n = e.onCreateButtonClick,
+            r = e.style,
+            a = e.testID,
+            i = e.type,
+            l = p()(e, v)
+          return o.a.createElement(
+            g.a,
+            u()({ accessibilityLabel: _, hoverLabel: { label: _ } }, l, {
+              icon: E,
+              onPress: function () {
+                n(), t.push({ pathname: '/i/bookmarks/create_folder' })
+              },
+              pullRight: !0,
+              style: [y.button, r],
+              testID: a,
+              type: i || 'primaryText',
+            }),
+          )
+        },
+        w = n('yoO3'),
+        I = n('VS6U'),
+        x = n('HQ0t'),
+        C = n('yrzJ'),
+        B = h.a.i3145aa0,
+        T = h.a.f8fc0b47,
+        O = function (e) {
+          var t = e.analytics,
+            n = e.history,
+            r = e.loggedInUserScreenName,
+            l = o.a.useCallback(
+              function () {
+                n.push({ pathname: '/i/bookmarks/create_folder' })
+              },
+              [n],
+            ),
+            c = o.a.createElement(F, {
+              accessibilityLabel: T,
+              history: n,
+              onCreateButtonClick: function () {
+                return t.scribe({ element: 'create', action: 'click' })
+              },
+              testID: 'createNewBookmarkFolderAppBarButton',
+            })
+          return o.a.createElement(
+            w.a,
+            null,
+            o.a.createElement(I.a, {
+              backLocation: '/home',
+              history: n,
+              primaryContent: o.a.createElement(a.a, { onCreateFolderPress: l }),
+              rightControl: c,
+              sidebarContent: o.a.createElement(i.a, null),
+              subtitle: r ? o.a.createElement(C.a, { screenName: r }) : null,
+              title: o.a.createElement(x.a, { text: B }),
+              withBackButton: !1,
+            }),
+          )
+        },
+        L = s(O)
+      t.default = L
+    },
+    '48TD': function (e, t, n) {
+      'use strict'
+      var r = n('yiKp'),
+        o = n.n(r),
+        a = n('wAC9')
+      t.a = function (e, t) {
+        return Object(a.a)({
+          contextSuffix: 'BOOKMARK_FOLDERS_SLICE',
+          getFetchApiEndpoint: function (e) {
+            return e.Bookmarks.fetchBookmarkFoldersSlice
+          },
+          getEndpointParams: function (e) {
+            return o()(o()({}, e), {}, { tweet_id: t })
+          },
+          sliceKey: 'bookmarkFoldersSlice-'.concat(e),
+        })
+      }
+    },
+    '5emT': function (e, t, n) {
+      'use strict'
+      var r = n('yiKp'),
+        o = n.n(r),
+        a = n('ERkP'),
+        i = n.n(a),
+        l = n('Lsrn'),
+        c = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(c.a)(
+            'svg',
+            o()(
+              o()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [l.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            i.a.createElement(
+              'g',
+              null,
+              i.a.createElement('path', {
+                d: 'M14.548 11.634c-1.207 0-2.188-.98-2.188-2.188 0-.664.302-1.25.77-1.653-.363-.097-.736-.165-1.13-.165-2.416 0-4.375 1.96-4.375 4.376S9.585 16.38 12 16.38c2.418 0 4.377-1.96 4.377-4.376 0-.4-.07-.78-.17-1.146-.402.47-.992.776-1.66.776z',
+              }),
+              i.a.createElement('path', {
+                d: 'M12 19.79c-7.228 0-10.12-6.724-10.24-7.01-.254-.466-.254-1.105.035-1.642C1.88 10.923 4.772 4.2 12 4.2s10.12 6.723 10.24 7.01c.254.465.254 1.104-.035 1.64-.085.216-2.977 6.94-10.205 6.94zm0-14c-6.154 0-8.668 5.787-8.772 6.033-.068.135-.068.208-.033.273.137.316 2.65 6.104 8.805 6.104 6.18 0 8.747-5.973 8.772-6.033.07-.136.07-.21.034-.274-.138-.316-2.652-6.103-8.806-6.103z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+    },
+    BQZD: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return c
+      }),
+        n.d(t, 'c', function () {
+          return d
+        }),
+        n.d(t, 'd', function () {
+          return u
+        })
+      var r = n('WpDa'),
+        o = n('oQhu'),
+        a = n('eR3e'),
+        i = n('ZNT5'),
+        l = 'bookmarks',
+        c = function (e) {
+          return Object(i.a)({
+            timelineId: 'bookmarkFolder-'.concat(e),
+            getEndpoint: function (e) {
+              return e.Bookmarks.fetchBookmarkFolderTimeline
+            },
+            getEndpointParams: function (t) {
+              var n = t.cursor
+              return { cursor: 'string' == typeof n ? n : void 0, bookmark_collection_id: e }
+            },
+            formatResponse: r.a,
+            context: 'FETCH_BOOKMARK_FOLDER_TIMELINE',
+            perfKey: 'bookmarkFolderGraphQL',
+          })
+        },
+        s = Object(o.a)(function (e) {
+          return e.isTrue('responsive_web_graphql_bookmarks')
+            ? Object(i.a)({
+                timelineId: l,
+                getEndpoint: function (e) {
+                  return e.Bookmarks.fetchBookmarksTimeline
+                },
+                getEndpointParams: function (e) {
+                  var t = e.count,
+                    n = e.cursor
+                  return { count: t, cursor: 'string' == typeof n ? n : void 0 }
+                },
+                formatResponse: r.a,
+                context: 'FETCH_BOOKMARKS_TIMELINE',
+                perfKey: 'bookmarksGraphQL',
+              })
+            : Object(i.a)({
+                timelineId: l,
+                getEndpoint: function (e) {
+                  return e.URT.fetchBookmarks
+                },
+                getEndpointParams: function (e) {
+                  return e
+                },
+                context: 'FETCH_BOOKMARKS_TIMELINE',
+                perfKey: 'bookmarks',
+              })
+        })
+      t.b = s
+      var d = function () {
+          return function (e, t, n) {
+            var r = n.api,
+              o = n.featureSwitches
+            return (
+              o.isTrue('responsive_web_graphql_mutation_bookmarks')
+                ? r.Bookmarks.deleteAll
+                : r.Tweets.removeAllBookmarks
+            )().then(function () {
+              return e(s(o).deleteTimeline())
+            })
+          }
+        },
+        u = a.q.bind(null, l)
+    },
+    Eeja: function (e, t, n) {
+      'use strict'
       var r = n('ERkP'),
         o = n.n(r),
         a = n('3XMw'),
@@ -150,222 +376,8 @@
                 })
               : null,
           )
-        }),
-        K = n('es0u'),
-        j = Object(f.a)()
-          .propsFromState(function () {
-            return { loggedInUser: I.e.selectLoggedInUser }
-          })
-          .adjustStateProps(function (e) {
-            var t = e.loggedInUser
-            return { loggedInUserScreenName: null == t ? void 0 : t.screen_name }
-          })
-          .withAnalytics({ page: 'bookmark_folders' }),
-        M = n('97Jx'),
-        P = n.n(M),
-        A = n('m3Bd'),
-        D = n.n(A),
-        H = n('ZGdk'),
-        z = n('/yvb'),
-        V = ['history', 'onCreateButtonClick', 'style', 'testID', 'type'],
-        U = s.a.create(function (e) {
-          return {
-            button: { marginRight: e.spaces.space4 },
-            icon: { width: s.a.theme.fontSizes.title3, height: s.a.theme.fontSizes.title3 },
-          }
-        }),
-        W = i.a.f8fc0b47,
-        Q = o.a.createElement(H.a, { style: U.icon }),
-        N = function (e) {
-          var t = e.history,
-            n = e.onCreateButtonClick,
-            r = e.style,
-            a = e.testID,
-            i = e.type,
-            l = D()(e, V)
-          return o.a.createElement(
-            z.a,
-            P()({ accessibilityLabel: W, hoverLabel: { label: W } }, l, {
-              icon: Q,
-              onPress: function () {
-                n(), t.push({ pathname: '/i/bookmarks/create_folder' })
-              },
-              pullRight: !0,
-              style: [U.button, r],
-              testID: a,
-              type: i || 'primaryText',
-            }),
-          )
-        },
-        G = n('yoO3'),
-        q = n('VS6U'),
-        X = n('HQ0t'),
-        J = n('yrzJ'),
-        Y = i.a.i3145aa0,
-        Z = i.a.f8fc0b47,
-        $ = function (e) {
-          var t = e.analytics,
-            n = e.history,
-            r = e.loggedInUserScreenName,
-            a = o.a.useCallback(
-              function () {
-                n.push({ pathname: '/i/bookmarks/create_folder' })
-              },
-              [n],
-            ),
-            i = o.a.createElement(N, {
-              accessibilityLabel: Z,
-              history: n,
-              onCreateButtonClick: function () {
-                return t.scribe({ element: 'create', action: 'click' })
-              },
-              testID: 'createNewBookmarkFolderAppBarButton',
-            })
-          return o.a.createElement(
-            G.a,
-            null,
-            o.a.createElement(q.a, {
-              backLocation: '/home',
-              history: n,
-              primaryContent: o.a.createElement(R, { onCreateFolderPress: a }),
-              rightControl: i,
-              sidebarContent: o.a.createElement(K.a, null),
-              subtitle: r ? o.a.createElement(J.a, { screenName: r }) : null,
-              title: o.a.createElement(X.a, { text: Y }),
-              withBackButton: !1,
-            }),
-          )
-        },
-        ee = j($)
-      t.default = ee
-    },
-    '48TD': function (e, t, n) {
-      'use strict'
-      var r = n('yiKp'),
-        o = n.n(r),
-        a = n('wAC9')
-      t.a = function (e, t) {
-        return Object(a.a)({
-          contextSuffix: 'BOOKMARK_FOLDERS_SLICE',
-          getFetchApiEndpoint: function (e) {
-            return e.Bookmarks.fetchBookmarkFoldersSlice
-          },
-          getEndpointParams: function (e) {
-            return o()(o()({}, e), {}, { tweet_id: t })
-          },
-          sliceKey: 'bookmarkFoldersSlice-'.concat(e),
         })
-      }
-    },
-    '5emT': function (e, t, n) {
-      'use strict'
-      var r = n('yiKp'),
-        o = n.n(r),
-        a = n('ERkP'),
-        i = n.n(a),
-        l = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
-            'svg',
-            o()(
-              o()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [l.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            i.a.createElement(
-              'g',
-              null,
-              i.a.createElement('path', {
-                d: 'M14.548 11.634c-1.207 0-2.188-.98-2.188-2.188 0-.664.302-1.25.77-1.653-.363-.097-.736-.165-1.13-.165-2.416 0-4.375 1.96-4.375 4.376S9.585 16.38 12 16.38c2.418 0 4.377-1.96 4.377-4.376 0-.4-.07-.78-.17-1.146-.402.47-.992.776-1.66.776z',
-              }),
-              i.a.createElement('path', {
-                d: 'M12 19.79c-7.228 0-10.12-6.724-10.24-7.01-.254-.466-.254-1.105.035-1.642C1.88 10.923 4.772 4.2 12 4.2s10.12 6.723 10.24 7.01c.254.465.254 1.104-.035 1.64-.085.216-2.977 6.94-10.205 6.94zm0-14c-6.154 0-8.668 5.787-8.772 6.033-.068.135-.068.208-.033.273.137.316 2.65 6.104 8.805 6.104 6.18 0 8.747-5.973 8.772-6.033.07-.136.07-.21.034-.274-.138-.316-2.652-6.103-8.806-6.103z',
-              }),
-            ),
-          )
-        }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
-    },
-    BQZD: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return c
-      }),
-        n.d(t, 'c', function () {
-          return d
-        }),
-        n.d(t, 'd', function () {
-          return u
-        })
-      var r = n('WpDa'),
-        o = n('oQhu'),
-        a = n('eR3e'),
-        i = n('ZNT5'),
-        l = 'bookmarks',
-        c = function (e) {
-          return Object(i.a)({
-            timelineId: 'bookmarkFolder-'.concat(e),
-            getEndpoint: function (e) {
-              return e.Bookmarks.fetchBookmarkFolderTimeline
-            },
-            getEndpointParams: function (t) {
-              var n = t.cursor
-              return { cursor: 'string' == typeof n ? n : void 0, bookmark_collection_id: e }
-            },
-            formatResponse: r.a,
-            context: 'FETCH_BOOKMARK_FOLDER_TIMELINE',
-            perfKey: 'bookmarkFolderGraphQL',
-          })
-        },
-        s = Object(o.a)(function (e) {
-          return e.isTrue('responsive_web_graphql_bookmarks')
-            ? Object(i.a)({
-                timelineId: l,
-                getEndpoint: function (e) {
-                  return e.Bookmarks.fetchBookmarksTimeline
-                },
-                getEndpointParams: function (e) {
-                  var t = e.count,
-                    n = e.cursor
-                  return { count: t, cursor: 'string' == typeof n ? n : void 0 }
-                },
-                formatResponse: r.a,
-                context: 'FETCH_BOOKMARKS_TIMELINE',
-                perfKey: 'bookmarksGraphQL',
-              })
-            : Object(i.a)({
-                timelineId: l,
-                getEndpoint: function (e) {
-                  return e.URT.fetchBookmarks
-                },
-                getEndpointParams: function (e) {
-                  return e
-                },
-                context: 'FETCH_BOOKMARKS_TIMELINE',
-                perfKey: 'bookmarks',
-              })
-        })
-      t.b = s
-      var d = function () {
-          return function (e, t, n) {
-            var r = n.api,
-              o = n.featureSwitches
-            return (
-              o.isTrue('responsive_web_graphql_mutation_bookmarks')
-                ? r.Bookmarks.deleteAll
-                : r.Tweets.removeAllBookmarks
-            )().then(function () {
-              return e(s(o).deleteTimeline())
-            })
-          }
-        },
-        u = a.q.bind(null, l)
+      t.a = R
     },
     HQ0t: function (e, t, n) {
       'use strict'
@@ -764,8 +776,8 @@
         U = n('FIs5'),
         W = n('jtO7'),
         Q = n('cm6r'),
-        N = n('ggE+'),
-        G = F.a.c2453317,
+        G = n('ggE+'),
+        N = F.a.c2453317,
         q = F.a.bcc7e8cf,
         X = F.a.adad5408,
         J = F.a.be329aab,
@@ -818,9 +830,9 @@
                         D.b,
                         {
                           backButtonType: 'close',
-                          documentTitle: G,
+                          documentTitle: N,
                           onBackClick: this._handleBackClick,
-                          title: f.a.createElement(z.a, { text: G }),
+                          title: f.a.createElement(z.a, { text: N }),
                         },
                         f.a.createElement(W.a, {
                           align: 'left',
@@ -834,7 +846,7 @@
                           f.a.createElement(
                             V.a,
                             { style: ne.thumbnail },
-                            f.a.createElement(N.a, { style: ne.allBookmarks }),
+                            f.a.createElement(G.a, { style: ne.allBookmarks }),
                           ),
                           f.a.createElement(B.b, { style: ne.content }, q),
                           f.a.createElement(w.a, { style: ne.checkmark }),
@@ -972,8 +984,8 @@
             U = i()(V, 2),
             W = U[0],
             Q = U[1],
-            N = p.params.bookmarkFolderId,
-            G = '/i/bookmarks/'.concat(N),
+            G = p.params.bookmarkFolderId,
+            N = '/i/bookmarks/'.concat(G),
             q = function (e) {
               P(e.message || S)
             }
@@ -981,7 +993,7 @@
             f.b,
             {
               backButtonType: 'close',
-              backLocation: G,
+              backLocation: N,
               documentTitle: F,
               history: m,
               onBackClick: function (e) {
@@ -994,7 +1006,7 @@
                   onPress: function () {
                     r.scribeAction('save'),
                       z(!0),
-                      u(N, { name: k })
+                      u(G, { name: k })
                         .then(function () {
                           n({ text: T }), m.goBack()
                         })
@@ -1046,7 +1058,7 @@
                 },
                 onConfirm: function () {
                   r.scribeAction('delete'),
-                    d(N)
+                    d(G)
                       .then(function () {
                         Q(!1), n({ text: C }), m.replace('/i/bookmarks')
                       })

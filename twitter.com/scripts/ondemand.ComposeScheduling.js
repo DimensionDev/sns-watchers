@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [199],
+  [200],
   {
     '+/sI': function (e, t, a) {
       'use strict'
@@ -650,7 +650,7 @@
                   return w.a.createElement(
                     S.a,
                     { accessibilityLiveRegion: 'assertive' },
-                    w.a.createElement(T.b, { color: 'magenta500', style: j.subtext }, e),
+                    w.a.createElement(T.b, { color: 'red500', style: j.subtext }, e),
                   )
                 },
               },

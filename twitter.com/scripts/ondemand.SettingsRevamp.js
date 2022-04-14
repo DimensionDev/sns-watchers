@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [237],
+  [238],
   {
     '1Uii': function (e, t, n) {
       'use strict'
@@ -529,68 +529,66 @@
     },
     '6qBT': function (e, t, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'default', function () {
-          return C
-        })
-      var a = n('ddV6'),
+      n.r(t)
+      var a = n('ERkP'),
         r = n.n(a),
-        i = n('ERkP'),
-        c = n.n(i),
-        o = n('v6aA'),
-        s = n('3XMw'),
-        l = n.n(s),
-        u = n('yoO3'),
-        d = n('7JQg'),
-        f = n('7FtF'),
-        m = n('2V3d'),
-        p = n('MWbm'),
+        i = n('v6aA'),
+        c = n('rxPX'),
+        o = n('2gv2'),
+        s = Object(c.a)()
+          .propsFromState(function () {
+            return { isToolboxShown: o.b }
+          })
+          .propsFromActions(function () {
+            return { setToolboxSettingsUpsellDismissedEpochMillis: o.d }
+          }),
+        l = n('3XMw'),
+        u = n.n(l),
+        d = n('yoO3'),
+        f = n('7JQg'),
+        m = n('7FtF'),
+        p = n('2V3d'),
         b = n('RKmr'),
         h = n('csss'),
-        E = l.a.cbd449af,
-        g = l.a.ab125232,
-        v = l.a.a5f32aa2,
-        y = l.a.daef29b7,
-        S = l.a.i0dd9b9d,
-        _ = l.a.aaafffd9,
+        E = u.a.cbd449af,
+        g = u.a.ab125232,
+        v = u.a.a5f32aa2,
+        y = u.a.daef29b7,
+        S = u.a.i0dd9b9d,
+        _ = u.a.aaafffd9,
         w = { page: 'settings', section: 'mute_and_block' }
-      function C(e) {
-        var t = c.a.useContext(o.a).featureSwitches,
-          n = e.location,
-          a = t.isTrue('responsive_web_drew_mute_and_block_enabled'),
-          i = c.a.useState(a),
-          s = r()(i, 2),
-          l = s[0],
-          C = s[1]
-        return c.a.createElement(
-          d.c,
+      var C = s(function (e) {
+        var t = r.a.useContext(i.a).featureSwitches,
+          n = e.isToolboxShown,
+          a = e.location,
+          c = e.setToolboxSettingsUpsellDismissedEpochMillis,
+          o = t.isTrue('responsive_web_drew_mute_and_block_enabled'),
+          s = r.a.useCallback(
+            function () {
+              c()
+            },
+            [c],
+          )
+        return r.a.createElement(
+          f.c,
           { namespace: w },
-          c.a.createElement(
-            u.a,
+          r.a.createElement(
+            d.a,
             null,
-            c.a.createElement(
-              f.a,
-              { location: n, screenType: 'secondaryDetail', title: E },
-              c.a.createElement(
-                p.a,
-                null,
-                c.a.createElement(b.a, { description: g }),
-                c.a.createElement(h.a, { label: v, link: '/settings/blocked/all' }),
-                c.a.createElement(h.a, { label: y, link: '/settings/muted/all' }),
-                c.a.createElement(h.a, { label: S, link: '/settings/muted_keywords' }),
-                c.a.createElement(h.a, { label: _, link: '/settings/notifications/advanced_filters' }),
-                l
-                  ? c.a.createElement(m.a, {
-                      onDismiss: function () {
-                        C(!1)
-                      },
-                    })
-                  : null,
-              ),
+            r.a.createElement(
+              m.a,
+              { location: a, screenType: 'secondaryDetail', title: E },
+              r.a.createElement(b.a, { description: g }),
+              r.a.createElement(h.a, { label: v, link: '/settings/blocked/all' }),
+              r.a.createElement(h.a, { label: y, link: '/settings/muted/all' }),
+              r.a.createElement(h.a, { label: S, link: '/settings/muted_keywords' }),
+              r.a.createElement(h.a, { label: _, link: '/settings/notifications/advanced_filters' }),
+              o && n ? r.a.createElement(p.a, { onDismiss: s }) : null,
             ),
           ),
         )
-      }
+      })
+      t.default = C
     },
     '6vad': function (e, t, n) {
       'use strict'
@@ -1011,7 +1009,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'UndoTweetScreen', function () {
-          return U
+          return D
         })
       var a = n('KEM+'),
         r = n.n(a),
@@ -1050,39 +1048,41 @@
         A = E.a.jdceda6f,
         P = E.a.j45978a8,
         F = E.a.be077e8b,
-        R = E.a.i9028824,
-        M = E.a.j905e6fe,
-        x = E.a.e2c39a4c
-      function U(e) {
+        R = E.a.f3429f2b,
+        M = E.a.i9028824,
+        x = E.a.j905e6fe,
+        U = E.a.e2c39a4c
+      function D(e) {
         var t = e.analytics,
           n = e.undoTweetSettings,
           a = e.updateSettings,
           i = e.userClaimsFetchStatus,
           o = n.durationSecs,
           u = n.original,
-          d = n.quote,
-          f = n.reply,
-          m = n.thread,
-          h = Object(_.a)(),
-          O = h.history,
-          U = h.location,
-          H = h.match,
-          j = s.a.useContext(l.a),
-          N = j.featureSwitches,
-          z = j.userClaims,
-          B = (o || p.a).toString(),
-          K = Object(S.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
-          V = z.isTrueAndEnabled('subscriptions_feature_1003'),
-          G = N.isTrue('subscriptions_product_feature_list_api_enabled'),
-          X = E.a.i3b7a017,
-          Q = [5, 10, 20, 30, 60].map(function (e) {
-            return { label: X(e), value: e.toString() }
+          d = n.poll,
+          f = n.quote,
+          m = n.reply,
+          h = n.thread,
+          O = Object(_.a)(),
+          D = O.history,
+          j = O.location,
+          N = O.match,
+          z = s.a.useContext(l.a),
+          B = z.featureSwitches,
+          K = z.userClaims,
+          V = (o || p.a).toString(),
+          G = Object(S.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
+          X = K.isTrueAndEnabled('subscriptions_feature_1003'),
+          Q = B.isTrue('subscriptions_product_feature_list_api_enabled'),
+          W = E.a.i3b7a017,
+          q = [5, 10, 20, 30, 60].map(function (e) {
+            return { label: W(e), value: e.toString() }
           })
-        function W(e, n) {
+        function Y(e, n) {
           var r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]
           if (null != e && e.undoPreview) {
             var i = e.undoPreview
-            G
+            Q
               ? a({ undoPreview: i })
                   .then(function () {
                     t.scribe({
@@ -1095,12 +1095,12 @@
                       action: 'product_feature_settings_update',
                       data: { subscription_details: c()(c()({}, n), {}, { success: !1 }) },
                     }),
-                      r && K({})(e)
+                      r && G({})(e)
                   })
               : a({ undoPreview: i })
           }
         }
-        function q(e, a) {
+        function J(e, a) {
           var i = {
             product_feature_id: 'undoTweet',
             product_feature_settings_element: e,
@@ -1109,7 +1109,7 @@
           if ('period' === e) {
             var o = Number(a)
             return (
-              W({ undoPreview: c()(c()({}, n), {}, { durationSecs: o }) }, i),
+              Y({ undoPreview: c()(c()({}, n), {}, { durationSecs: o }) }, i),
               void t.scribe({
                 component: 'undo_send',
                 element: 'undo_period',
@@ -1118,39 +1118,40 @@
               })
             )
           }
-          W({ undoPreview: c()(c()({}, n), {}, r()({}, e, !n[e])) }, i)
+          Y({ undoPreview: c()(c()({}, n), {}, r()({}, e, !n[e])) }, i)
         }
         return s.a.createElement(b.a, {
-          accessibilityLabel: R,
+          accessibilityLabel: M,
           fetchStatus: i,
           render: function () {
-            return V
+            return X
               ? s.a.createElement(
                   v.a,
                   null,
                   s.a.createElement(
                     y.a,
-                    { location: U, title: L },
-                    s.a.createElement(C.a, { description: x }),
-                    s.a.createElement(k.a, { checked: void 0 === u || u, label: I, name: 'original', onChange: q }),
-                    s.a.createElement(k.a, { checked: void 0 === f || f, label: A, name: 'reply', onChange: q }),
-                    s.a.createElement(k.a, { checked: void 0 === d || d, label: P, name: 'quote', onChange: q }),
-                    s.a.createElement(k.a, { checked: void 0 === m || m, label: F, name: 'thread', onChange: q }),
+                    { location: j, title: L },
+                    s.a.createElement(C.a, { description: U }),
+                    s.a.createElement(k.a, { checked: void 0 === u || u, label: I, name: 'original', onChange: J }),
+                    s.a.createElement(k.a, { checked: void 0 === m || m, label: A, name: 'reply', onChange: J }),
+                    s.a.createElement(k.a, { checked: void 0 === d || d, label: R, name: 'poll', onChange: J }),
+                    s.a.createElement(k.a, { checked: void 0 === f || f, label: P, name: 'quote', onChange: J }),
+                    s.a.createElement(k.a, { checked: void 0 === h || h, label: F, name: 'thread', onChange: J }),
                     s.a.createElement(
                       w.a,
-                      { style: D.radioGroup },
-                      s.a.createElement(T.a, { label: M, name: 'period', onChange: q, options: Q, value: B }),
+                      { style: H.radioGroup },
+                      s.a.createElement(T.a, { label: x, name: 'period', onChange: J, options: q, value: V }),
                     ),
                   ),
                 )
-              : s.a.createElement(g.b, { history: O, location: U, match: H })
+              : s.a.createElement(g.b, { history: D, location: j, match: N })
           },
         })
       }
-      var D = O.a.create(function (e) {
+      var H = O.a.create(function (e) {
         return { radioGroup: { padding: e.spaces.space16 } }
       })
-      t.default = m(U)
+      t.default = m(D)
     },
     CiSv: function (e, t, n) {
       'use strict'
@@ -2702,97 +2703,97 @@
                 (function (e) {
                   switch (e) {
                     case 'ar':
-                      return n.e(252).then(n.t.bind(null, 'heBS', 3))
+                      return n.e(253).then(n.t.bind(null, 'heBS', 3))
                     case 'bg':
-                      return n.e(253).then(n.t.bind(null, '9kpF', 3))
+                      return n.e(254).then(n.t.bind(null, '9kpF', 3))
                     case 'bn':
-                      return n.e(254).then(n.t.bind(null, 'GG9y', 3))
+                      return n.e(255).then(n.t.bind(null, 'GG9y', 3))
                     case 'ca':
-                      return n.e(255).then(n.t.bind(null, 'icrD', 3))
+                      return n.e(256).then(n.t.bind(null, 'icrD', 3))
                     case 'cs':
-                      return n.e(256).then(n.t.bind(null, 'rxOR', 3))
+                      return n.e(257).then(n.t.bind(null, 'rxOR', 3))
                     case 'da':
-                      return n.e(257).then(n.t.bind(null, '6Nxr', 3))
+                      return n.e(258).then(n.t.bind(null, '6Nxr', 3))
                     case 'de':
-                      return n.e(258).then(n.t.bind(null, 'zSOo', 3))
+                      return n.e(259).then(n.t.bind(null, 'zSOo', 3))
                     case 'el':
-                      return n.e(259).then(n.t.bind(null, 'MOmn', 3))
+                      return n.e(260).then(n.t.bind(null, 'MOmn', 3))
                     case 'en-GB':
-                      return n.e(261).then(n.t.bind(null, 'vzeG', 3))
+                      return n.e(262).then(n.t.bind(null, 'vzeG', 3))
                     case 'en':
-                      return n.e(260).then(n.t.bind(null, 'WqZ6', 3))
+                      return n.e(261).then(n.t.bind(null, 'WqZ6', 3))
                     case 'es':
-                      return n.e(262).then(n.t.bind(null, 'v4/g', 3))
+                      return n.e(263).then(n.t.bind(null, 'v4/g', 3))
                     case 'eu':
-                      return n.e(263).then(n.t.bind(null, 'KXIK', 3))
+                      return n.e(264).then(n.t.bind(null, 'KXIK', 3))
                     case 'fa':
-                      return n.e(264).then(n.t.bind(null, 'vzCi', 3))
+                      return n.e(265).then(n.t.bind(null, 'vzCi', 3))
                     case 'fi':
-                      return n.e(265).then(n.t.bind(null, 'YthM', 3))
+                      return n.e(266).then(n.t.bind(null, 'YthM', 3))
                     case 'fil':
-                      return n.e(266).then(n.t.bind(null, 'AcRS', 3))
+                      return n.e(267).then(n.t.bind(null, 'AcRS', 3))
                     case 'fr':
-                      return n.e(267).then(n.t.bind(null, 'PuNY', 3))
+                      return n.e(268).then(n.t.bind(null, 'PuNY', 3))
                     case 'ga':
-                      return n.e(268).then(n.t.bind(null, 'FSy8', 3))
+                      return n.e(269).then(n.t.bind(null, 'FSy8', 3))
                     case 'gl':
-                      return n.e(269).then(n.t.bind(null, 'igcB', 3))
+                      return n.e(270).then(n.t.bind(null, 'igcB', 3))
                     case 'gu':
-                      return n.e(270).then(n.t.bind(null, 'DaQw', 3))
+                      return n.e(271).then(n.t.bind(null, 'DaQw', 3))
                     case 'he':
-                      return n.e(271).then(n.t.bind(null, '8mgg', 3))
+                      return n.e(272).then(n.t.bind(null, '8mgg', 3))
                     case 'hi':
-                      return n.e(272).then(n.t.bind(null, 'w88S', 3))
+                      return n.e(273).then(n.t.bind(null, 'w88S', 3))
                     case 'hr':
-                      return n.e(273).then(n.t.bind(null, 'dvLs', 3))
+                      return n.e(274).then(n.t.bind(null, 'dvLs', 3))
                     case 'hu':
-                      return n.e(274).then(n.t.bind(null, '9fGX', 3))
+                      return n.e(275).then(n.t.bind(null, '9fGX', 3))
                     case 'id':
-                      return n.e(275).then(n.t.bind(null, 'elf3', 3))
+                      return n.e(276).then(n.t.bind(null, 'elf3', 3))
                     case 'it':
-                      return n.e(276).then(n.t.bind(null, 'sxFK', 3))
+                      return n.e(277).then(n.t.bind(null, 'sxFK', 3))
                     case 'ja':
-                      return n.e(277).then(n.t.bind(null, '1/Dg', 3))
+                      return n.e(278).then(n.t.bind(null, '1/Dg', 3))
                     case 'kn':
-                      return n.e(278).then(n.t.bind(null, 'nFOI', 3))
+                      return n.e(279).then(n.t.bind(null, 'nFOI', 3))
                     case 'ko':
-                      return n.e(279).then(n.t.bind(null, 'RRUG', 3))
+                      return n.e(280).then(n.t.bind(null, 'RRUG', 3))
                     case 'mr':
-                      return n.e(280).then(n.t.bind(null, 'EpxJ', 3))
+                      return n.e(281).then(n.t.bind(null, 'EpxJ', 3))
                     case 'ms':
-                      return n.e(281).then(n.t.bind(null, 'cSS2', 3))
+                      return n.e(282).then(n.t.bind(null, 'cSS2', 3))
                     case 'nb':
-                      return n.e(282).then(n.t.bind(null, 'bg3k', 3))
+                      return n.e(283).then(n.t.bind(null, 'bg3k', 3))
                     case 'nl':
-                      return n.e(283).then(n.t.bind(null, 'eXnI', 3))
+                      return n.e(284).then(n.t.bind(null, 'eXnI', 3))
                     case 'pl':
-                      return n.e(284).then(n.t.bind(null, 'ACpo', 3))
+                      return n.e(285).then(n.t.bind(null, 'ACpo', 3))
                     case 'pt':
-                      return n.e(285).then(n.t.bind(null, 'J0At', 3))
+                      return n.e(286).then(n.t.bind(null, 'J0At', 3))
                     case 'ro':
-                      return n.e(286).then(n.t.bind(null, 'hxXa', 3))
+                      return n.e(287).then(n.t.bind(null, 'hxXa', 3))
                     case 'ru':
-                      return n.e(287).then(n.t.bind(null, 'gXfs', 3))
+                      return n.e(288).then(n.t.bind(null, 'gXfs', 3))
                     case 'sk':
-                      return n.e(288).then(n.t.bind(null, 'fy2h', 3))
+                      return n.e(289).then(n.t.bind(null, 'fy2h', 3))
                     case 'sr':
-                      return n.e(289).then(n.t.bind(null, 'FmvU', 3))
+                      return n.e(290).then(n.t.bind(null, 'FmvU', 3))
                     case 'sv':
-                      return n.e(290).then(n.t.bind(null, 'prb2', 3))
+                      return n.e(291).then(n.t.bind(null, 'prb2', 3))
                     case 'ta':
-                      return n.e(291).then(n.t.bind(null, '8KkY', 3))
+                      return n.e(292).then(n.t.bind(null, '8KkY', 3))
                     case 'th':
-                      return n.e(292).then(n.t.bind(null, 'g4c5', 3))
+                      return n.e(293).then(n.t.bind(null, 'g4c5', 3))
                     case 'tr':
-                      return n.e(293).then(n.t.bind(null, 'NngR', 3))
+                      return n.e(294).then(n.t.bind(null, 'NngR', 3))
                     case 'uk':
-                      return n.e(294).then(n.t.bind(null, '62bs', 3))
+                      return n.e(295).then(n.t.bind(null, '62bs', 3))
                     case 'ur':
-                      return n.e(295).then(n.t.bind(null, 'aKQ3', 3))
+                      return n.e(296).then(n.t.bind(null, 'aKQ3', 3))
                     case 'zh-Hant':
-                      return n.e(297).then(n.t.bind(null, 'Wk8C', 3))
+                      return n.e(298).then(n.t.bind(null, 'Wk8C', 3))
                     case 'zh':
-                      return n.e(296).then(n.t.bind(null, 'YXaK', 3))
+                      return n.e(297).then(n.t.bind(null, 'YXaK', 3))
                     default:
                       return Promise.reject(
                         new Error('Tried to import country names for unknown language key: '.concat(e)),
@@ -3543,7 +3544,7 @@
         p = n('88ay'),
         b = n('Ka9G'),
         h = u()(
-          u()({}, d.b),
+          u()({}, d.default),
           {},
           ((a = {}),
           s()(a, f.b.Tweet, Object(m.a)({ displayBlocked: !0 })),
@@ -6266,7 +6267,7 @@
         m = n('8UdT'),
         p = n('88ay'),
         b = n('Ka9G'),
-        h = d()(d()({}, f.b), {}, l()({}, m.b.User, Object(b.a)({ decoration: p.d }))),
+        h = d()(d()({}, f.default), {}, l()({}, m.b.User, Object(b.a)({ decoration: p.d }))),
         E = n('jHSc'),
         g = n('fTQJ'),
         v = n('118N'),

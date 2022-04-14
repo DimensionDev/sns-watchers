@@ -1,33 +1,135 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [354],
+  [355],
   {
     '3ukl': function (e, t, n) {
       'use strict'
       n.r(t)
-      var a = n('yiKp'),
-        r = n.n(a),
-        o = n('ezF+'),
-        i = n('EIk2'),
-        c = (n('uFXj'), n('ERkP')),
-        s = n.n(c),
-        l = n('IMYl'),
-        p = n('hOZg'),
-        u = function (e) {
+      var a = n('ezF+'),
+        r = n('yiKp'),
+        o = n.n(r),
+        i = (n('uFXj'), n('ERkP')),
+        c = n.n(i),
+        l = n('EIk2'),
+        s = n('rxPX'),
+        p = n('0KEI'),
+        u = Object(s.a)().propsFromActions(function (e) {
+          var t = e.module
+          return {
+            applyReactionInstructions: t.applyReactionInstructions,
+            createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
+            processCallback: l.a,
+            updateEntry: t.updateEntry,
+          }
+        }),
+        d = n('IMYl'),
+        m = n('hOZg'),
+        y = function (e) {
           return 'IconCheckmark' === e
-            ? s.a.createElement(l.a, null)
+            ? c.a.createElement(d.a, null)
             : 'IconClose' === e
-            ? s.a.createElement(p.a, null)
+            ? c.a.createElement(m.a, null)
             : void 0
         },
-        d =
+        g =
           (n('yH/f'),
           Object.freeze({ Compact: 'Compact', Normal: 'Normal', Large: 'Large', ThumbsUpAndDown: 'ThumbsUpAndDown' })),
-        m = n('Irs7'),
-        y = n('MWbm'),
-        g = n('PbQQ'),
-        f = n('/yvb'),
-        b = n('t62R'),
-        h = n('rHpw').a.create(function (e) {
+        f = n('pbku'),
+        b = n('Irs7'),
+        h = n('MWbm'),
+        C = n('PbQQ'),
+        E = n('/yvb'),
+        I = n('t62R'),
+        x = n('rHpw'),
+        v = function (e, t) {
+          if (e && e === g.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
+        },
+        k = function (e) {
+          var t = e.applyReactionInstructions,
+            n = e.createLocalApiErrorHandler,
+            a = e.entry,
+            r = e.processCallback,
+            i = e.updateEntry,
+            l = a.content.relevancePrompt && a.content.relevancePrompt,
+            s = l || {},
+            p = s.confirmation,
+            u = s.displayType,
+            d = s.isRelevantCallback,
+            m = s.isRelevantText,
+            x = s.notRelevantCallback,
+            k = s.notRelevantText,
+            R = s.showConfirmation,
+            T = s.title,
+            L = Object(b.b)(),
+            A = v(u, !0),
+            H = v(u, !1),
+            P = u === g.ThumbsUpAndDown,
+            D = P,
+            O = C.b.useOpaqueIdentifier()
+          c.a.useEffect(function () {
+            L.scribe({ element: 'relevance_prompt', action: 'impression' })
+          }, [])
+          var _ = c.a.useCallback(
+              function (e) {
+                l && i(a.entryId, { relevancePrompt: o()(o()({}, l), {}, { showConfirmation: !0 }) }), r(e).catch(n())
+              },
+              [n, a.entryId, r, l, i],
+            ),
+            M = c.a.useCallback(
+              function () {
+                L.scribe({ element: 'is_relevant', action: 'click' }),
+                  _(d),
+                  t({ entry: a, triggerName: f.a.ON_IS_RELEVANT })
+              },
+              [L, t, a, d, _],
+            ),
+            G = c.a.useCallback(
+              function () {
+                L.scribe({ element: 'not_relevant', action: 'click' }), _(x)
+              },
+              [L, x, _],
+            ),
+            j = function (e, t, n) {
+              return c.a.createElement(
+                E.a,
+                {
+                  accessibilityLabel: t,
+                  icon: n ? y(n) : void 0,
+                  onPress: e,
+                  size: n ? 'medium' : 'xSmall',
+                  style: n ? w.icon : w.button,
+                  type: P ? 'primaryOutlined' : 'brandFilled',
+                },
+                n ? null : t,
+              )
+            }
+          return c.a.createElement(
+            h.a,
+            { accessibilityLabelledBy: O, accessibilityRole: 'group', style: w.promptContainer },
+            R
+              ? c.a.createElement(
+                  h.a,
+                  { accessibilityRole: 'alert' },
+                  c.a.createElement(I.b, { style: P && w.survey }, p),
+                )
+              : c.a.createElement(
+                  h.a,
+                  { style: [w.root, P && w.survey] },
+                  c.a.createElement(h.a, { style: w.firstHalf }, c.a.createElement(I.b, { nativeID: O }, T)),
+                  c.a.createElement(
+                    h.a,
+                    { style: w.secondHalf },
+                    c.a.createElement(
+                      h.a,
+                      { style: w.buttonContainer },
+                      D
+                        ? c.a.createElement(c.a.Fragment, null, j(M, m, A), j(G, k, H))
+                        : c.a.createElement(c.a.Fragment, null, j(G, k, H), j(M, m, A)),
+                    ),
+                  ),
+                ),
+          )
+        },
+        w = x.a.create(function (e) {
           return {
             button: { margin: '1ex' },
             buttonContainer: { display: 'grid', gridTemplateColumns: 'repeat(2,1fr)' },
@@ -52,131 +154,17 @@
             icon: { marginLeft: e.spaces.space12 },
           }
         }),
-        C = function (e) {
-          var t = e.confirmation,
-            n = e.displayType,
-            a = e.isRelevantIcon,
-            r = e.isRelevantOnClick,
-            o = e.isRelevantText,
-            i = e.notRelevantIcon,
-            c = e.notRelevantOnClick,
-            l = e.notRelevantText,
-            p = e.onIsRelevant,
-            C = e.showConfirmation,
-            v = e.title,
-            E = Object(m.b)(),
-            I = n === d.ThumbsUpAndDown,
-            x = I,
-            k = g.b.useOpaqueIdentifier(),
-            R = function () {
-              E.scribe({ element: 'is_relevant', action: 'click' }), p && p(), r()
+        R = u(c.a.memo(k)),
+        T = n('Rp9C'),
+        L = a
+          .b({
+            component: R,
+            getScribeDataItem: function (e) {
+              return T.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
             },
-            w = function () {
-              E.scribe({ element: 'not_relevant', action: 'click' }), c()
-            },
-            T = function (e, t, n) {
-              return s.a.createElement(
-                f.a,
-                {
-                  accessibilityLabel: t,
-                  icon: n ? u(n) : void 0,
-                  onPress: e,
-                  size: n ? 'medium' : 'xSmall',
-                  style: n ? h.icon : h.button,
-                  type: I ? 'primaryOutlined' : 'brandFilled',
-                },
-                n ? null : t,
-              )
-            }
-          return s.a.createElement(
-            y.a,
-            { accessibilityLabelledBy: k, accessibilityRole: 'group', style: h.promptContainer },
-            C
-              ? s.a.createElement(
-                  y.a,
-                  { accessibilityRole: 'alert' },
-                  s.a.createElement(b.b, { style: I && h.survey }, t),
-                )
-              : s.a.createElement(
-                  y.a,
-                  { style: [h.root, I && h.survey] },
-                  s.a.createElement(y.a, { style: h.firstHalf }, s.a.createElement(b.b, { nativeID: k }, v)),
-                  s.a.createElement(
-                    y.a,
-                    { style: h.secondHalf },
-                    s.a.createElement(
-                      y.a,
-                      { style: h.buttonContainer },
-                      x
-                        ? s.a.createElement(s.a.Fragment, null, T(R, o, a), T(w, l, i))
-                        : s.a.createElement(s.a.Fragment, null, T(w, l, i), T(R, o, a)),
-                    ),
-                  ),
-                ),
-          )
-        },
-        v = n('zh9S'),
-        E = n('Rp9C'),
-        I = n('pbku'),
-        x = n('0KEI'),
-        k = function (e, t) {
-          if (e && e === d.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
-        },
-        R = o.g({
-          component: C,
-          bindActions: function (e) {
-            var t = e.module
-            return {
-              createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
-              scribe: v.scribeAction,
-              processCallback: i.a,
-              applyReactionInstructions: t.applyReactionInstructions,
-              updateEntry: t.updateEntry,
-            }
-          },
-          createProps: function (e) {
-            var t = e.actions,
-              n = t.applyReactionInstructions,
-              a = t.createLocalApiErrorHandler,
-              o = t.processCallback,
-              i = (t.scribe, t.updateEntry),
-              c = e.entry,
-              s = c.content,
-              l = null != s && s.relevancePrompt ? s.relevancePrompt : null
-            if (!l) return null
-            return {
-              onIsRelevant: function () {
-                n({ entry: c, triggerName: I.a.ON_IS_RELEVANT })
-              },
-              title: l.title,
-              confirmation: l.confirmation,
-              isRelevantText: l.isRelevantText,
-              notRelevantText: l.notRelevantText,
-              isRelevantIcon: k(l.displayType, !0),
-              notRelevantIcon: k(l.displayType, !1),
-              isRelevantOnClick: function () {
-                i(c.entryId, { relevancePrompt: r()(r()({}, l), {}, { showConfirmation: !0 }) }),
-                  o(l.isRelevantCallback).catch(a())
-              },
-              notRelevantOnClick: function () {
-                i(c.entryId, { relevancePrompt: r()(r()({}, l), {}, { showConfirmation: !0 }) }),
-                  o(l.notRelevantCallback).catch(a())
-              },
-              displayType: l.displayType,
-              showConfirmation: l.showConfirmation,
-            }
-          },
-          getScribeDataItem: function (e) {
-            return E.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
-          },
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              n = e.scribeData,
-              a = e.scribeNamespace
-            t(r()(r()({}, a), {}, { element: 'relevance_prompt', action: 'impression' }), n)
-          },
-        })
-      t.default = R
+          })
+          .getHandler()
+      t.default = L
     },
     EycW: function (e, t, n) {
       'use strict'
@@ -186,17 +174,17 @@
         o = n('t62R'),
         i = n('uCrx'),
         c = n('PnKw'),
-        s = n('rHpw'),
-        l = 'onboardingLikesGuide-emptyHeart',
+        l = n('rHpw'),
+        s = 'onboardingLikesGuide-emptyHeart',
         p = 'onboardingLikesGuide-filledHeart',
         u = n('MWbm'),
         d = r.a.memo(function () {
-          return r.a.createElement(i.a, { style: y.emptyHeart, testID: l })
+          return r.a.createElement(i.a, { style: y.emptyHeart, testID: s })
         }),
         m = r.a.memo(function () {
           return r.a.createElement(i.a, { style: y.filledHeart, testID: p })
         }),
-        y = s.a.create(function (e) {
+        y = l.a.create(function (e) {
           return {
             actionContext: { marginLeft: e.spaces.space8, display: 'inline' },
             actionGuide: {
@@ -239,8 +227,8 @@
           var t = e.bodyText,
             n = e.currentLikeCount,
             a = e.headerIconUrl,
-            s = e.headerText,
-            l = e.likeContext,
+            l = e.headerText,
+            s = e.likeContext,
             p = e.rightControl,
             g = e.totalLikeCount,
             f = [],
@@ -253,7 +241,7 @@
           u.a,
           { style: y.container },
           r.a.createElement(c.a, {
-            headline: s,
+            headline: l,
             image: a ? { url: a, width: 68, height: 68, isCentered: !0 } : void 0,
             isCompact: !0,
             rightControl: p,
@@ -264,7 +252,7 @@
             { style: y.actionGuide },
             r.a.createElement(
               u.a,
-              { accessibilityLabel: l, style: y.actionGuideLeft },
+              { accessibilityLabel: s, style: y.actionGuideLeft },
               r.a.createElement(
                 u.a,
                 { style: y.actionContextIconContainer },
@@ -277,12 +265,12 @@
               r.a.createElement(
                 u.a,
                 { style: y.actionContext },
-                r.a.createElement(o.b, { size: 'subtext2', weight: 'bold' }, l),
+                r.a.createElement(o.b, { size: 'subtext2', weight: 'bold' }, s),
               ),
             ),
             r.a.createElement(
               u.a,
-              { accessibilityLabel: l, accessibilityLiveRegion: 'polite', style: y.actionGuideRight },
+              { accessibilityLabel: s, accessibilityLiveRegion: 'polite', style: y.actionGuideRight },
               f.map(function (e, t) {
                 return r.a.createElement(u.a, { key: 'action-icon-'.concat(t), style: y.actionIcon }, e)
               }),
@@ -301,9 +289,9 @@
         o = n('Y9Ll'),
         i = n.n(o),
         c = n('1Pcy'),
-        s = n.n(c),
-        l = n('5Yy7'),
-        p = n.n(l),
+        l = n.n(c),
+        s = n('5Yy7'),
+        p = n.n(s),
         u = n('2VqO'),
         d = n.n(u),
         m = n('KEM+'),
@@ -313,13 +301,13 @@
         b = n('TIdA'),
         h = n('t62R'),
         C = n('A91F'),
-        v = n('/yvb'),
-        E = n('rHpw'),
-        I = 'inlinePrompt',
-        x = 'inlinePrompt-primaryAction',
+        E = n('/yvb'),
+        I = n('rHpw'),
+        x = 'inlinePrompt',
+        v = 'inlinePrompt-primaryAction',
         k = 'inlinePrompt-secondaryAction',
-        R = 'inlinePrompt-centeredImageContainer',
-        w = n('MWbm'),
+        w = 'inlinePrompt-centeredImageContainer',
+        R = n('MWbm'),
         T = (function (e) {
           p()(n, e)
           var t = d()(n)
@@ -329,7 +317,7 @@
             for (var a = arguments.length, o = new Array(a), i = 0; i < a; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              y()(s()(e), '_renderImage', function (e, t) {
+              y()(l()(e), '_renderImage', function (e, t) {
                 var n = f.a.createElement(b.a, {
                   accessibilityLabel: '',
                   aspectMode: C.a.exact(e.width / e.height),
@@ -339,17 +327,17 @@
                 })
                 return e.isCentered
                   ? f.a.createElement(
-                      w.a,
-                      { style: L.centeredImage, testID: R },
+                      R.a,
+                      { style: L.centeredImage, testID: w },
                       f.a.createElement(
-                        w.a,
+                        R.a,
                         { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
                         n,
                       ),
                     )
                   : n
               }),
-              y()(s()(e), '_renderTitle', function () {
+              y()(l()(e), '_renderTitle', function () {
                 var t = e.props.headline
                 return t
                   ? f.a.createElement(
@@ -366,7 +354,7 @@
                     )
                   : null
               }),
-              y()(s()(e), '_renderBodyText', function () {
+              y()(l()(e), '_renderBodyText', function () {
                 var t = e.props.subtext
                 return t
                   ? f.a.createElement(
@@ -376,22 +364,22 @@
                     )
                   : null
               }),
-              y()(s()(e), '_renderAction', function (t) {
+              y()(l()(e), '_renderAction', function (t) {
                 var n = t.action,
                   a = t.buttonSize,
                   r = t.buttonType,
                   o = t.style,
                   i = t.testID,
                   c = e.props.secondaryAction,
-                  s = n.link,
-                  l = n.onClick,
+                  l = n.link,
+                  s = n.onClick,
                   p = n.text
                 return f.a.createElement(
-                  w.a,
+                  R.a,
                   { style: [e.styles.actionContainer, o, { justifyContent: 'flex-start' }], testID: i },
                   f.a.createElement(
-                    v.a,
-                    { link: s, onPress: l, size: a, style: { width: c ? '100%' : 'auto' }, type: r },
+                    E.a,
+                    { link: l, onPress: s, size: a, style: { width: c ? '100%' : 'auto' }, type: r },
                     p,
                   ),
                 )
@@ -412,15 +400,15 @@
                     o = e.secondaryAction,
                     i = e.shouldRenderBorder
                   return f.a.createElement(
-                    w.a,
+                    R.a,
                     { style: i ? [A.root, A.rootMargin] : L.root },
                     f.a.createElement(
                       f.a.Fragment,
                       null,
                       t ? this._renderImage(t, n) : null,
                       f.a.createElement(
-                        w.a,
-                        { style: this.styles.rootPadding, testID: I },
+                        R.a,
+                        { style: this.styles.rootPadding, testID: x },
                         this._renderTitle(),
                         this._renderBodyText(),
                         a
@@ -429,7 +417,7 @@
                               buttonType: 'primaryFilled',
                               style: this.styles.primaryAction,
                               buttonSize: 'large',
-                              testID: x,
+                              testID: v,
                             })
                           : null,
                         o
@@ -443,14 +431,14 @@
                           : null,
                       ),
                     ),
-                    r ? f.a.createElement(w.a, { style: L.rightControl }, r) : null,
+                    r ? f.a.createElement(R.a, { style: L.rightControl }, r) : null,
                   )
                 },
               },
               {
                 key: 'styles',
                 get: function () {
-                  return this.props.isCompact ? D : P
+                  return this.props.isCompact ? P : H
                 },
               },
             ]),
@@ -458,7 +446,7 @@
           )
         })(f.a.Component)
       y()(T, 'defaultProps', { shouldRenderBorder: !1 })
-      var L = E.a.create(function (e) {
+      var L = I.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground },
             flexGrow: { flexGrow: 1 },
@@ -472,7 +460,7 @@
             },
           }
         }),
-        A = E.a.create(function (e) {
+        A = I.a.create(function (e) {
           return {
             root: {
               borderColor: e.colors.nestedBorderColor,
@@ -483,7 +471,7 @@
             rootMargin: { marginLeft: e.spaces.space16, marginRight: e.spaces.space16 },
           }
         }),
-        P = E.a.create(function (e) {
+        H = I.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space32 },
             body: { marginTop: e.spaces.space8 },
@@ -492,7 +480,7 @@
             secondaryAction: { marginTop: e.spaces.space16 },
           }
         }),
-        D = E.a.create(function (e) {
+        P = I.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space16 },
             body: { marginTop: e.spaces.space2 },
@@ -509,14 +497,14 @@
         o = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         i = Object(o.a)({
           loader: function () {
-            return n.e(173).then(n.bind(null, 'ACNv'))
+            return n.e(174).then(n.bind(null, 'ACNv'))
           },
         }),
         c = n('4bW+'),
-        s = n('IG7M'),
-        l = n('rHpw'),
+        l = n('IG7M'),
+        s = n('rHpw'),
         p = n('Irs7'),
-        u = l.a.create(function (e) {
+        u = s.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
       t.a = Object(p.a)(function (e) {
@@ -524,7 +512,7 @@
           n = e.feedbackItems,
           a = e.isDisplayedOnMedia
         if (n && n.length > 0) {
-          return r.a.createElement(s.a, {
+          return r.a.createElement(l.a, {
             onClick: function () {
               return t.scribe({ element: 'caret', action: 'click' })
             },
@@ -542,60 +530,57 @@
     YIsX: function (e, t, n) {
       'use strict'
       n.r(t)
-      var a = n('yiKp'),
-        r = n.n(a),
-        o = n('ezF+'),
-        i = n('ERkP'),
-        c = n.n(i),
-        s = n('RoyM'),
-        l = n('3XMw'),
-        p = n.n(l),
-        u = n('EycW'),
-        d = n('zh9S'),
-        m = n('G6rE'),
-        y = p.a.a682906d,
-        g = o.g({
-          component: u.a,
-          bindActions: function (e) {
-            e.module
-            return { scribe: d.scribeAction }
-          },
-          selectData: function () {
-            return {
-              loggedInUser: function (e) {
-                return m.e.selectLoggedInUser(e)
+      var a = n('ezF+'),
+        r = n('ERkP'),
+        o = n.n(r),
+        i = n('G6rE'),
+        c = n('rxPX'),
+        l = function (e, t) {
+          return i.e.selectLoggedInUser(e)
+        },
+        s = Object(c.a)().propsFromState(function () {
+          return { loggedInUser: l }
+        }),
+        p = n('RoyM'),
+        u = n('3XMw'),
+        d = n.n(u),
+        m = n('EycW'),
+        y = n('Irs7'),
+        g = d.a.a682906d,
+        f = function (e) {
+          var t,
+            n,
+            a = e.entry,
+            r = e.feedbackItems,
+            i = e.loggedInUser,
+            c = Object(y.b)(),
+            l = a.content.onboardingLikesStartPrompt || void 0,
+            s = (null == i ? void 0 : i.favourites_count) || 0,
+            u = (null == l ? void 0 : l.likesNeededToCompleteOnboarding) || 0,
+            d = Math.max(0, u - s),
+            f = o.a.useMemo(
+              function () {
+                return null != r && r.length ? o.a.createElement(p.a, { feedbackItems: r }) : void 0
               },
-            }
-          },
-          createProps: function (e) {
-            var t,
-              n,
-              a = e.data.loggedInUser,
-              r = e.entry,
-              o = e.feedbackItems,
-              i = r.content,
-              l = null != i && i.onboardingLikesStartPrompt ? (null == i ? void 0 : i.onboardingLikesStartPrompt) : null
-            if (!l) return null
-            var p = (null == a ? void 0 : a.favourites_count) || 0,
-              u = l.likesNeededToCompleteOnboarding,
-              d = Math.max(0, u - p)
-            return {
-              bodyText: null === (t = l.bodyRichText) || void 0 === t ? void 0 : t.text,
-              currentLikeCount: p,
-              headerIconUrl: l.headerIconUrl,
-              headerText: null === (n = l.headerRichText) || void 0 === n ? void 0 : n.text,
-              likeContext: y({ count: d }),
-              rightControl: o.length ? c.a.createElement(s.a, { feedbackItems: o }) : void 0,
+              [r],
+            )
+          return (
+            o.a.useEffect(function () {
+              c.scribeAction('impression')
+            }, []),
+            o.a.createElement(m.a, {
+              bodyText: null == l || null === (t = l.bodyRichText) || void 0 === t ? void 0 : t.text,
+              currentLikeCount: s,
+              headerIconUrl: null == l ? void 0 : l.headerIconUrl,
+              headerText: null == l || null === (n = l.headerRichText) || void 0 === n ? void 0 : n.text,
+              likeContext: g({ count: d }),
+              rightControl: f,
               totalLikeCount: u,
-            }
-          },
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              n = e.scribeNamespace
-            t(r()(r()({}, n), {}, { action: 'impression' }))
-          },
-        })
-      t.default = g
+            })
+          )
+        },
+        b = (s(f), a.b({ component: f }).getHandler())
+      t.default = b
     },
     pbku: function (e, t, n) {
       'use strict'
