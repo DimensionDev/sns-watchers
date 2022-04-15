@@ -466,7 +466,7 @@
         me = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         he = Object(me.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         we = n('m3Bd'),
@@ -1730,6 +1730,9 @@
                     },
                     trustedFriendsEnabled: function () {
                       return i.isTrue('trusted_friends_consumption_enabled')
+                    },
+                    trustedFriendsCreationEnabled: function () {
+                      return i.isTrue('trusted_friends_tweet_creation_enabled')
                     },
                   },
                   d = e._getWithTopLine(),

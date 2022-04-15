@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [304],
+  [305],
   {
     cdvp: function (a, e, r) {
       'use strict'
@@ -352,7 +352,7 @@
         d('cd215e00', 'Boca'),
         d('fd05205c', 'body,lips,mouth'),
         d('db01fda6', 'Llavi mossegat'),
-        d('de291855', 'ansiós,por,coqueteig,nerviós,incòmode,preocupat'),
+        d('de291855', 'ansietat,por,coqueteig,nerviosisme,incomoditat,preocupació'),
         d('bf8894ee', 'Tooth'),
         d('d68f746d', 'body,teeth,dentist'),
         d('e9055041', 'Llengua'),

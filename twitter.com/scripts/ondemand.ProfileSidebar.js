@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [230],
+  [231],
   {
     hIbf: function (e, t, n) {
       'use strict'
@@ -33,11 +33,11 @@
         S = n('P1r1'),
         _ = n('wrlS'),
         O = n('XOJV'),
-        x = n('YjVx'),
-        E = n('FLCi'),
+        E = n('YjVx'),
+        x = n('FLCi'),
         L = n('zrOZ'),
         A = function (e, t) {
-          return Object(x.a)(e, t)
+          return Object(E.a)(e, t)
         },
         k = [],
         F = Object(g.createSelector)(
@@ -47,13 +47,14 @@
           O.a.createHydratedSelector,
           S.k,
           function (e, t, n) {
-            return Object(E.a)(e, function (e) {
+            return Object(x.a)(e, function (e) {
               var i,
-                r = e.type === M.b.Tweet && t(e.content.id),
-                a =
-                  null != r && null !== (i = r.extended_entities) && void 0 !== i && i.media
+                r,
+                a = e.type === M.b.Tweet && t(e.content.id),
+                o =
+                  null != a && null !== (i = a.extended_entities) && void 0 !== i && i.media
                     ? Object(L.a)(
-                        r.extended_entities.media
+                        a.extended_entities.media
                           .map(function (e) {
                             var t = e.sensitive_media_warning
                             return t
@@ -65,15 +66,17 @@
                           .flat(),
                       )
                     : void 0
-              return !r ||
-                r.tombstoneInfo ||
-                r.isDeleted ||
-                (r.possibly_sensitive && !n) ||
-                (null != a && a.size) ||
-                !r.extended_entities ||
-                !r.extended_entities.media
+              return !a ||
+                a.tombstoneInfo ||
+                a.isDeleted ||
+                (a.possibly_sensitive && !n) ||
+                (null != o && o.size) ||
+                null === (r = a.extended_entities) ||
+                void 0 === r ||
+                !r.media ||
+                a.latestTweetId !== a.id_str
                 ? k
-                : r.extended_entities.media.map(function (t) {
+                : a.extended_entities.media.map(function (t) {
                     return { mediaItem: t, entry: e }
                   })
             })
@@ -88,16 +91,16 @@
         D = function (e, t) {
           return F(e, t.userId)
         },
-        U = function (e, t) {
+        T = function (e, t) {
           return t.hideMediaModule
             ? j.a.LOADED
             : (function (e, t) {
                 return A(Object(_.d)(e), t).selectInitialFetchStatus(e)
               })(e, t.userId) || j.a.LOADING
         },
-        N = Object(C.a)()
+        U = Object(C.a)()
           .propsFromState(function () {
-            return { mediaItemsWithEntry: D, mediaFetchStatus: U }
+            return { mediaItemsWithEntry: D, mediaFetchStatus: T }
           })
           .adjustStateProps(function (e) {
             var t = e.mediaFetchStatus,
@@ -116,7 +119,7 @@
               fetchRecentMediaIfNeeded: R,
             }
           }),
-        T = n('kGix'),
+        N = n('kGix'),
         K = n('3XMw'),
         W = n.n(K),
         G = n('fs1G'),
@@ -166,7 +169,7 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.mediaFetchStatus
-                  return e && e !== T.a.LOADING
+                  return e && e !== N.a.LOADING
                     ? this._renderSidebar()
                     : I.a.createElement(V.a, { accessibilityLabel: 'Loading profile sidebar' })
                 },
@@ -236,7 +239,7 @@
       var Q = function (e) {
           return e.replace('https://twitter.com', '')
         },
-        Z = N(Y)
+        Z = U(Y)
       t.default = Z
     },
   },

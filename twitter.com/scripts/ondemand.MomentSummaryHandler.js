@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [225, 174],
+  [226, 175],
   {
     '0mK8': function (e, t, n) {
       'use strict'
@@ -122,9 +122,9 @@
         g = n.n(v),
         y = n('oQhu'),
         C = n('mjJ+'),
-        _ = n('eb3s'),
-        w = g.a.cfd2f35d,
-        k = (function (e) {
+        E = n('eb3s'),
+        M = g.a.cfd2f35d,
+        w = (function (e) {
           d()(n, e)
           var t = m()(n)
           function n() {
@@ -158,7 +158,7 @@
                   return t
                     ? this._renderConfirmation(t)
                     : f.a.createElement(C.a, {
-                        cancelButtonLabel: w,
+                        cancelButtonLabel: M,
                         items: this._getProcessedActionItems(),
                         onCloseRequested: e,
                       })
@@ -174,7 +174,7 @@
                     a = t.label,
                     r = t.text,
                     o = t.withCancelButton
-                  return f.a.createElement(_.a, {
+                  return f.a.createElement(E.a, {
                     confirmButtonLabel: a,
                     confirmButtonType: n,
                     headline: i,
@@ -192,14 +192,14 @@
                     t = e.actionItems,
                     n = e.dividerIndices,
                     i = e.onClose
-                  return E(t, n, i, this._handleConfirm)
+                  return k(t, n, i, this._handleConfirm)
                 },
               },
             ]),
             n
           )
         })(f.a.Component),
-        E = Object(y.a)(function (e, t, n, i) {
+        k = Object(y.a)(function (e, t, n, i) {
           return e.reduce(function (e, a, r) {
             var o = a.Icon,
               c = a.behavioralEventContext,
@@ -246,7 +246,7 @@
             return e
           }, [])
         })
-      t.default = k
+      t.default = w
     },
     MREw: function (e, t, n) {
       'use strict'
@@ -268,8 +268,8 @@
         g = n.n(v),
         y = (n('hBvt'), n('/yvb')),
         C = n('3XMw'),
-        _ = n.n(C).a.abd845fd,
-        w = g.a.forwardRef(function (e, t) {
+        E = n.n(C).a.abd845fd,
+        M = g.a.forwardRef(function (e, t) {
           var n = e.icon,
             i = e.link,
             a = e.onPress,
@@ -277,8 +277,8 @@
             o = e.style,
             c = e.type
           return g.a.createElement(y.a, {
-            accessibilityLabel: _,
-            hoverLabel: { label: _ },
+            accessibilityLabel: E,
+            hoverLabel: { label: E },
             icon: n,
             link: i,
             onPress: a,
@@ -289,14 +289,14 @@
             type: c || 'primaryText',
           })
         }),
-        k = n('TW8A'),
-        E = n('hACr'),
+        w = n('TW8A'),
+        k = n('hACr'),
         I = n('Vgm9'),
-        M = n('ObVQ'),
+        _ = n('ObVQ'),
         x = n('Rp9C'),
-        A = n('MWbm'),
-        O = n('Irs7'),
-        P = n('rHpw'),
+        O = n('MWbm'),
+        P = n('Irs7'),
+        A = n('rHpw'),
         S = (function (e) {
           m()(n, e)
           var t = p()(n)
@@ -324,7 +324,7 @@
               }),
               f()(d()(e), '_getEditIcon', function () {
                 var t = e.props.withGrayIcons && T.colorDeepGray
-                return g.a.createElement(k.a, { style: t })
+                return g.a.createElement(w.a, { style: t })
               }),
               f()(d()(e), '_getScribeMomentItem', function () {
                 var t = e.props,
@@ -353,12 +353,12 @@
                     s = e.withLinkAction,
                     l = this._getEditIcon()
                   return g.a.createElement(
-                    A.a,
+                    O.a,
                     { style: T.buttonContainer },
                     g.a.createElement(
-                      E.a,
-                      { handlers: f()({}, M.b.rightEditingPreviewPanel, this._focusOnEditButton) },
-                      g.a.createElement(w, {
+                      k.a,
+                      { handlers: f()({}, _.b.rightEditingPreviewPanel, this._focusOnEditButton) },
+                      g.a.createElement(M, {
                         icon: l,
                         link: '/i/moment_maker/edit/'.concat(n),
                         onPress: this._handleClickEdit,
@@ -389,7 +389,7 @@
             n
           )
         })(g.a.Component),
-        T = P.a.create(function (e) {
+        T = A.a.create(function (e) {
           return {
             buttonContainer: { flexDirection: 'row' },
             button: { marginRight: e.spaces.space4 },
@@ -397,7 +397,7 @@
             colorDeepGray: { color: e.colors.gray700 },
           }
         })
-      t.a = Object(O.a)(S)
+      t.a = Object(P.a)(S)
     },
     ObVQ: function (e, t, n) {
       'use strict'
@@ -449,273 +449,68 @@
         s = (n('Blm6'), n('1t7P'), n('jQ/y'), n('ezF+')),
         l = n('VPAj'),
         d = n('Fg8X'),
-        u = n('VrFO'),
+        u = n('97Jx'),
         m = n.n(u),
-        h = n('Y9Ll'),
+        h = n('m3Bd'),
         p = n.n(h),
-        b = n('1Pcy'),
+        b = n('ERkP'),
         f = n.n(b),
-        v = n('5Yy7'),
+        v = n('KEM+'),
         g = n.n(v),
-        y = n('2VqO'),
-        C = n.n(y),
-        _ = n('KEM+'),
-        w = n.n(_),
-        k = (n('2G9S'), n('0mK8')),
-        E = n('ERkP'),
-        I = n.n(E),
-        M = n('BUB3'),
-        x = n('3XMw'),
-        A = n.n(x),
-        O = n('MREw'),
-        P = n('MWbm'),
-        S = n('htQn'),
-        T = n('pjBI'),
-        L = n('t62R'),
-        z = n('GBcw'),
-        B = n('3dad'),
-        R = n('TIdA'),
-        D = n('A91F'),
-        V = n('9Xij'),
-        j = n('Wms4'),
-        N = n('rHpw'),
-        H = n('29/U'),
-        K = n('TnY3'),
-        F = { page: 'moment_maker', section: 'landing', component: 'moment_summary' },
-        G = A.a.a1d5303c,
-        W = A.a.cc8f8a8f,
-        U = A.a.c33a97d6,
-        Y = A.a.i7e9ecf2,
-        X = A.a.jceadc3e,
-        q =
-          ((i = {}),
-          w()(i, H.d.private, 'magenta500'),
-          w()(i, H.d.public, 'green500'),
-          w()(i, H.d.unlisted, 'gray700'),
-          i),
-        Q = ((a = {}), w()(a, H.d.private, G), w()(a, H.d.public, U), w()(a, H.d.unlisted, W), a),
-        J =
-          ((r = {}),
-          w()(r, H.b.CurationStudio, 'Curation Studio'),
-          w()(r, H.b.MomentMakerPro, 'Moment Maker Pro'),
-          w()(r, H.b.MomentMakerLite, void 0),
-          w()(r, H.b.MomentMakerMobile, void 0),
-          r),
-        Z = (function (e) {
-          g()(n, e)
-          var t = C()(n)
-          function n() {
-            var e
-            m()(this, n)
-            for (var i = arguments.length, a = new Array(i), r = 0; r < i; r++) a[r] = arguments[r]
-            return (
-              (e = t.call.apply(t, [this].concat(a))),
-              w()(f()(e), '_renderAuthorMomentSummary', function () {
-                var t = e.props.onClick,
-                  n = e._getLinkToPreview(),
-                  i = { pathname: n, anchorless: !0 }
-                return I.a.createElement(M.a, { exact: !1, path: n }, function (n) {
-                  return I.a.createElement(
-                    S.a,
-                    {
-                      accessibilityRole: 'tab',
-                      accessibilityState: { selected: n },
-                      link: i,
-                      onClick: t,
-                      style: ne.root,
-                    },
-                    I.a.createElement(
-                      P.a,
-                      { style: ne.leftContainer },
-                      e._renderTitle(),
-                      e._renderDescription(),
-                      I.a.createElement(
-                        P.a,
-                        { style: ne.topMargin },
-                        I.a.createElement(T.a, null, e._renderVisibilityLabel(), e._renderCreationSource()),
-                      ),
-                      e._renderLastModifiedTime(),
-                    ),
-                    I.a.createElement(P.a, { style: ne.rightContainer }, e._renderCoverImage(), e._renderButtons()),
-                  )
+        y = n('BUB3'),
+        C = n('3XMw'),
+        E = n.n(C),
+        M = n('29/U'),
+        w = n('rHpw'),
+        k = n('0mK8'),
+        I = n('MWbm'),
+        _ = n('3dad'),
+        x = n('TIdA'),
+        O = n('A91F'),
+        P = n('9Xij'),
+        A = function (e) {
+          var t = e.coverMedia,
+            n = t && _.a.getOriginalImage(t)
+          return f.a.createElement(
+            I.a,
+            { style: B.coverContainer },
+            n && t
+              ? f.a.createElement(x.a, {
+                  accessibilityLabel: '',
+                  aspectMode: O.a.SQUARE,
+                  backgroundColor: _.a.getBackgroundColor(t),
+                  cropCandidates: _.a.getCropCandidates(t),
+                  image: n,
                 })
-              }),
-              w()(f()(e), '_renderViewerMomentSummary', function () {
-                var t = e.props.onClick
-                return I.a.createElement(
-                  S.a,
-                  { link: e._getLinkToMoment(), onClick: t, style: ne.root },
-                  I.a.createElement(
-                    P.a,
-                    { style: ne.leftContainer },
-                    e._renderAuthorCategory(),
-                    e._renderTitle(),
-                    I.a.createElement(P.a, { style: ne.topMarginSmall }, e._renderVisibilityLabel()),
-                  ),
-                  e._renderCoverImage(),
-                )
-              }),
-              w()(f()(e), '_renderAuthorCategory', function () {
-                var t = e.props,
-                  n = t.author,
-                  i = t.category,
-                  a = t.isTOO,
-                  r = t.lastPublishedTime,
-                  o = a
-                    ? i
-                      ? I.a.createElement(L.b, { color: 'gray700', size: 'subtext2' }, i)
-                      : null
-                    : n
-                    ? I.a.createElement(k.a, { author: n, size: 'subtext2' })
-                    : null
-                return I.a.createElement(
+              : f.a.createElement(
                   P.a,
-                  { style: ne.authorCategoryContainer },
-                  I.a.createElement(
-                    T.a,
-                    { style: ne.horizontalContainer },
-                    o,
-                    r ? I.a.createElement(L.b, { size: 'subtext2' }, I.a.createElement(z.a, { timestamp: r })) : null,
-                  ),
-                )
-              }),
-              w()(f()(e), '_renderTitle', function () {
-                var t = e.props,
-                  n = t.title,
-                  i = t.withAuthorControls,
-                  a = n || X
-                return i
-                  ? I.a.createElement(
-                      L.b,
-                      { numberOfLines: 2, size: 'headline1', weight: 'heavy', withHashflags: !0 },
-                      a,
-                    )
-                  : I.a.createElement(L.b, { weight: 'bold', withHashflags: !0 }, a)
-              }),
-              w()(f()(e), '_renderDescription', function () {
-                var t = e.props.description
-                return t
-                  ? I.a.createElement(
-                      P.a,
-                      { style: ne.topMargin },
-                      I.a.createElement(
-                        L.b,
-                        { color: 'gray700', numberOfLines: 3, size: 'body', withHashflags: !0 },
-                        t,
-                      ),
-                    )
-                  : null
-              }),
-              w()(f()(e), '_renderCoverImage', function () {
-                var t = e.props.coverMedia,
-                  n = t && B.a.getOriginalImage(t)
-                return I.a.createElement(
-                  P.a,
-                  { style: ne.coverContainer },
-                  n && t
-                    ? I.a.createElement(R.a, {
-                        accessibilityLabel: '',
-                        aspectMode: D.a.SQUARE,
-                        backgroundColor: B.a.getBackgroundColor(t),
-                        cropCandidates: B.a.getCropCandidates(t),
-                        image: n,
-                      })
-                    : I.a.createElement(V.a, { ratio: 1 }, I.a.createElement(k.c, { icon: 'lightning' })),
-                  t ? I.a.createElement(k.b, { style: ne.lightningBadge }) : null,
-                )
-              }),
-              w()(f()(e), '_renderButtons', function () {
-                var t = e.props,
-                  n = t.author,
-                  i = t.isCurationStudioMoment,
-                  a = t.isTOO,
-                  r = t.lastPublishedTime,
-                  o = t.location.pathname,
-                  c = t.momentId,
-                  s = t.title,
-                  l = t.visibilityMode,
-                  d = o === e._getLinkToPreview()
-                return I.a.createElement(
-                  P.a,
-                  { style: ne.buttonContainer },
-                  I.a.createElement(O.a, {
-                    author: n,
-                    isTOO: a,
-                    lastPublishedTime: r,
-                    momentId: c,
-                    redirectOnDelete: d ? '/i/moment_maker' : void 0,
-                    scribeNamespace: F,
-                    size: 'xSmall',
-                    title: s,
-                    visibilityMode: l,
-                    withGrayIcons: !0,
-                    withLinkAction: !i,
-                  }),
-                )
-              }),
-              w()(f()(e), '_renderVisibilityLabel', function () {
-                var t = e.props,
-                  n = t.visibilityMode
-                if (t.withAuthorControls || n !== H.d.public) {
-                  var i = q[n],
-                    a = Q[n]
-                  return i && a ? I.a.createElement(L.b, { color: i, weight: 'bold' }, a) : null
-                }
-              }),
-              w()(f()(e), '_renderCreationSource', function () {
-                var t = e.props.creationSource,
-                  n = t && J[t]
-                return n ? I.a.createElement(L.b, { color: 'gray700' }, n) : null
-              }),
-              w()(f()(e), '_renderLastModifiedTime', function () {
-                var t = e.props,
-                  n = t.hasUnpublishedChanges,
-                  i = t.lastModifiedTime,
-                  a = t.visibilityMode
-                return i
-                  ? I.a.createElement(
-                      P.a,
-                      { style: ne.horizontalContainer },
-                      n && a !== H.d.private
-                        ? I.a.createElement(j.a, { background: 'orange500', style: ne.pendingChangesLabel }, Y)
-                        : null,
-                      I.a.createElement(
-                        L.b,
-                        { color: 'gray700', size: 'subtext2' },
-                        I.a.createElement(z.a, { humanReadable: !0, timestamp: i }),
-                      ),
-                    )
-                  : null
-              }),
-              w()(f()(e), '_getLinkToMoment', function () {
-                var t = e.props.momentId
-                return '/i/events/'.concat(t)
-              }),
-              w()(f()(e), '_getLinkToPreview', function () {
-                var t = e.props.momentId
-                return '/i/moment_maker/preview/'.concat(t)
-              }),
-              e
-            )
-          }
-          return (
-            p()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  return this.props.withAuthorControls
-                    ? this._renderAuthorMomentSummary()
-                    : this._renderViewerMomentSummary()
-                },
-              },
-            ]),
-            n
+                  { ratio: w.a.theme.aspectRatios.square },
+                  f.a.createElement(k.c, { icon: 'lightning' }),
+                ),
+            t ? f.a.createElement(k.b, { style: B.lightningBadge }) : null,
           )
-        })(I.a.Component),
-        $ = '15%',
-        ee = '100px',
-        te = '70px',
-        ne = N.a.create(function (e) {
+        },
+        S = '15%',
+        T = '100px',
+        z = '70px',
+        B = w.a.create(function (e) {
+          return {
+            coverContainer: {
+              backgroundColor: e.colors.gray200,
+              borderRadius: e.borderRadii.xLarge,
+              height: S,
+              maxHeight: T,
+              maxWidth: T,
+              minHeight: z,
+              minWidth: z,
+              overflow: 'hidden',
+              width: S,
+            },
+            lightningBadge: { bottom: e.spaces.space12, left: e.spaces.space12 },
+          }
+        }),
+        L = f.a.memo(A),
+        R = w.a.create(function (e) {
           return {
             root: {
               flexDirection: 'row',
@@ -723,43 +518,280 @@
               paddingVertical: e.componentDimensions.gutterVertical,
               justifyContent: 'space-between',
             },
+            horizontalContainer: { alignItems: 'center', flexDirection: 'row' },
             leftContainer: {
               justifyContent: 'flex-start',
-              maxWidth: 'calc(100% - '.concat(te, ')'),
-              minWidth: 'calc(100% - '.concat(ee, ')'),
+              maxWidth: 'calc(100% - '.concat(z, ')'),
+              minWidth: 'calc(100% - '.concat(T, ')'),
               paddingRight: e.spaces.space16,
-              width: 'calc(100% - '.concat($, ')'),
+              width: 'calc(100% - '.concat(S, ')'),
             },
-            rightContainer: { alignItems: 'center', justifyContent: 'space-between' },
-            horizontalContainer: { alignItems: 'center', flexDirection: 'row' },
-            authorCategoryContainer: { marginBottom: e.spaces.space2 },
             topMargin: { marginTop: e.spaces.space8 },
-            topMarginSmall: { marginTop: e.spaces.space2 },
-            pendingChangesLabel: { marginRight: e.spaces.space8 },
-            coverContainer: {
-              backgroundColor: e.colors.gray200,
-              borderRadius: e.borderRadii.xLarge,
-              height: $,
-              maxHeight: ee,
-              maxWidth: ee,
-              minHeight: te,
-              minWidth: te,
-              overflow: 'hidden',
-              width: $,
-            },
-            lightningBadge: { bottom: e.spaces.space12, left: e.spaces.space12 },
+          }
+        }),
+        j = n('Wms4'),
+        D = n('t62R'),
+        N = n('GBcw'),
+        V = E.a.i7e9ecf2,
+        H = function (e) {
+          var t = e.hasUnpublishedChanges,
+            n = e.lastModifiedTime,
+            i = e.visibilityMode
+          return n
+            ? f.a.createElement(
+                I.a,
+                { style: R.horizontalContainer },
+                t && i !== M.d.private
+                  ? f.a.createElement(j.a, { background: 'orange500', style: U.pendingChangesLabel }, V)
+                  : null,
+                f.a.createElement(
+                  D.b,
+                  { color: 'gray700', size: 'subtext2' },
+                  f.a.createElement(N.a, { humanReadable: !0, timestamp: n }),
+                ),
+              )
+            : null
+        },
+        U = w.a.create(function (e) {
+          return { pendingChangesLabel: { marginRight: e.spaces.space8 } }
+        }),
+        K = f.a.memo(H),
+        W = function (e) {
+          var t = e.description
+          return t
+            ? f.a.createElement(
+                D.b,
+                { color: 'gray700', numberOfLines: 3, size: 'body', style: R.topMargin, withHashflags: !0 },
+                t,
+              )
+            : null
+        },
+        F = f.a.memo(W),
+        G = n('MREw'),
+        X = E.a.a1d5303c,
+        q = E.a.cc8f8a8f,
+        Q = E.a.c33a97d6,
+        Y =
+          ((i = {}),
+          g()(i, M.d.private, 'magenta500'),
+          g()(i, M.d.public, 'green500'),
+          g()(i, M.d.unlisted, 'gray700'),
+          i),
+        J = ((a = {}), g()(a, M.d.private, X), g()(a, M.d.public, Q), g()(a, M.d.unlisted, q), a),
+        Z = function (e) {
+          var t = e.visibilityMode
+          if (e.withAuthorControls || t !== M.d.public) {
+            var n = Y[t],
+              i = J[t]
+            return n && i ? f.a.createElement(D.b, { color: n, weight: 'bold' }, i) : null
+          }
+          return null
+        },
+        $ = f.a.memo(Z),
+        ee = n('htQn'),
+        te = n('pjBI'),
+        ne =
+          ((r = {}),
+          g()(r, M.b.CurationStudio, 'Curation Studio'),
+          g()(r, M.b.MomentMakerPro, 'Moment Maker Pro'),
+          g()(r, M.b.MomentMakerLite, void 0),
+          g()(r, M.b.MomentMakerMobile, void 0),
+          r),
+        ie = { page: 'moment_maker', section: 'landing', component: 'moment_summary' },
+        ae = function (e) {
+          var t = e.author,
+            n = e.coverMedia,
+            i = e.creationSource,
+            a = e.description,
+            r = e.hasUnpublishedChanges,
+            o = e.isCurationStudioMoment,
+            c = e.isTOO,
+            s = e.lastModifiedTime,
+            l = e.lastPublishedTime,
+            d = e.location,
+            u = e.momentId,
+            m = e.onClick,
+            h = e.title,
+            p = e.visibilityMode,
+            b = '/i/moment_maker/preview/'.concat(u),
+            v = f.a.useMemo(
+              function () {
+                return { pathname: b, anchorless: !0 }
+              },
+              [b],
+            ),
+            g = i && ne[i],
+            C = f.a.useMemo(
+              function () {
+                var e = d.pathname === b
+                return f.a.createElement(
+                  I.a,
+                  { style: re.buttonContainer },
+                  f.a.createElement(G.a, {
+                    author: t,
+                    isTOO: c,
+                    lastPublishedTime: l,
+                    momentId: u,
+                    redirectOnDelete: e ? '/i/moment_maker' : void 0,
+                    scribeNamespace: ie,
+                    size: 'xSmall',
+                    title: h,
+                    visibilityMode: p,
+                    withGrayIcons: !0,
+                    withLinkAction: !o,
+                  }),
+                )
+              },
+              [t, o, c, l, d.pathname, u, b, h, p],
+            )
+          return f.a.createElement(y.a, { exact: !1, path: b }, function (e) {
+            return f.a.createElement(
+              ee.a,
+              { accessibilityRole: 'tab', accessibilityState: { selected: e }, link: v, onClick: m, style: R.root },
+              f.a.createElement(
+                I.a,
+                { style: R.leftContainer },
+                f.a.createElement(D.b, { numberOfLines: 2, size: 'headline1', weight: 'heavy', withHashflags: !0 }, h),
+                f.a.createElement(F, { description: a }),
+                f.a.createElement(
+                  I.a,
+                  { style: R.topMargin },
+                  f.a.createElement(
+                    te.a,
+                    null,
+                    f.a.createElement($, { visibilityMode: p, withAuthorControls: !0 }),
+                    g ? f.a.createElement(D.b, { color: 'gray700' }, g) : null,
+                  ),
+                ),
+                f.a.createElement(K, { hasUnpublishedChanges: r, lastModifiedTime: s, visibilityMode: p }),
+              ),
+              f.a.createElement(I.a, { style: re.rightContainer }, f.a.createElement(L, { coverMedia: n }), C),
+            )
+          })
+        },
+        re = w.a.create(function (e) {
+          return {
+            rightContainer: { alignItems: 'center', justifyContent: 'space-between' },
             buttonContainer: { marginTop: e.spaces.space16, width: '100%' },
           }
         }),
-        ie = Object(K.a)(Z),
-        ae = n('zh9S'),
-        re = n('Rp9C'),
-        oe = n('RqPI'),
+        oe = f.a.memo(ae),
         ce = function (e) {
-          e.errorContext
-          return Object(l.a)({ scribe: ae.scribeAction })
+          var t = e.author,
+            n = e.category,
+            i = e.isTOO,
+            a = e.lastPublishedTime,
+            r = f.a.useMemo(
+              function () {
+                return i
+                  ? n
+                    ? f.a.createElement(D.b, { color: 'gray700', size: 'subtext2' }, n)
+                    : null
+                  : t
+                  ? f.a.createElement(k.a, { author: t, size: 'subtext2' })
+                  : null
+              },
+              [t, n, i],
+            )
+          return f.a.createElement(
+            I.a,
+            { style: se.authorCategoryContainer },
+            f.a.createElement(
+              te.a,
+              { style: R.horizontalContainer },
+              r,
+              a ? f.a.createElement(D.b, { size: 'subtext2' }, f.a.createElement(N.a, { timestamp: a })) : null,
+            ),
+          )
         },
-        se = function (e) {
+        se = w.a.create(function (e) {
+          return { authorCategoryContainer: { marginBottom: e.spaces.space2 } }
+        }),
+        le = f.a.memo(ce),
+        de = function (e) {
+          var t = e.author,
+            n = e.category,
+            i = e.coverMedia,
+            a = e.isTOO,
+            r = e.lastPublishedTime,
+            o = e.momentId,
+            c = e.onClick,
+            s = e.title,
+            l = e.visibilityMode,
+            d = '/i/events/'.concat(o)
+          return f.a.createElement(
+            ee.a,
+            { link: d, onClick: c, style: R.root },
+            f.a.createElement(
+              I.a,
+              { style: R.leftContainer },
+              f.a.createElement(le, { author: t, category: n, isTOO: a, lastPublishedTime: r }),
+              f.a.createElement(D.b, { weight: 'bold', withHashflags: !0 }, s),
+              f.a.createElement(
+                I.a,
+                { style: ue.topMarginSmall },
+                f.a.createElement($, { visibilityMode: l, withAuthorControls: !1 }),
+              ),
+            ),
+            f.a.createElement(L, { coverMedia: i }),
+          )
+        },
+        ue = w.a.create(function (e) {
+          return { topMarginSmall: { marginTop: e.spaces.space2 } }
+        }),
+        me = f.a.memo(de),
+        he = n('TnY3'),
+        pe = [
+          'category',
+          'creationSource',
+          'description',
+          'hasUnpublishedChanges',
+          'history',
+          'isCurationStudioMoment',
+          'lastModifiedTime',
+          'location',
+          'title',
+          'withAuthorControls',
+        ],
+        be = E.a.jceadc3e,
+        fe = function (e) {
+          var t = e.category,
+            n = e.creationSource,
+            i = e.description,
+            a = e.hasUnpublishedChanges,
+            r = e.history,
+            o = e.isCurationStudioMoment,
+            c = e.lastModifiedTime,
+            s = e.location,
+            l = e.title,
+            d = e.withAuthorControls,
+            u = p()(e, pe),
+            h = l || be
+          return d
+            ? f.a.createElement(
+                oe,
+                m()({}, u, {
+                  creationSource: n,
+                  description: i,
+                  hasUnpublishedChanges: a,
+                  history: r,
+                  isCurationStudioMoment: o,
+                  lastModifiedTime: c,
+                  location: s,
+                  title: h,
+                }),
+              )
+            : f.a.createElement(me, m()({}, u, { category: t, title: h }))
+        },
+        ve = Object(he.a)(f.a.memo(fe)),
+        ge = n('zh9S'),
+        ye = n('Rp9C'),
+        Ce = n('RqPI'),
+        Ee = function (e) {
+          e.errorContext
+          return Object(l.a)({ scribe: ge.scribeAction })
+        },
+        Me = function (e) {
           var t = e.entry
           return {
             author: function (e) {
@@ -771,7 +803,7 @@
             isCurationStudioMoment: function (e) {
               return d.a.selectIsCurationStudioMoment(e, t.content.momentId)
             },
-            isLoggedIn: oe.n,
+            isLoggedIn: Ce.n,
             isTOO: function (e) {
               return d.a.selectIsTOO(e, t.content.momentId)
             },
@@ -783,7 +815,7 @@
             },
           }
         },
-        le = function (e) {
+        we = function (e) {
           var t = e.withAuthorControls
           return function (e) {
             var n = e.actions.scribe,
@@ -801,8 +833,8 @@
               var t = e.entry,
                 n = e.moment,
                 i = c()(
-                  c()({}, re.a.getMomentItem(n.id, n.visibility_mode, n.last_publish_time, !n.author)),
-                  re.a.getAllSurfaceDetails(t.itemMetadata.clientEventInfo),
+                  c()({}, ye.a.getMomentItem(n.id, n.visibility_mode, n.last_publish_time, !n.author)),
+                  ye.a.getAllSurfaceDetails(t.itemMetadata.clientEventInfo),
                 ),
                 a =
                   t.itemMetadata &&
@@ -852,10 +884,10 @@
           n = e.withAuthorControls
         return s.g({
           isFocusable: Object(l.a)(!0),
-          component: ie,
-          bindActions: ce({ errorContext: t }),
-          selectData: se,
-          createProps: le({ withAuthorControls: n }),
+          component: ve,
+          bindActions: Ee({ errorContext: t }),
+          selectData: Me,
+          createProps: we({ withAuthorControls: n }),
         })
       }
     },
@@ -914,54 +946,54 @@
         g = n.n(v),
         y = n('yiKp'),
         C = n.n(y),
-        _ = n('1YZw'),
-        w = n('Fg8X'),
-        k = n('n4jD'),
-        E = n('RqPI'),
+        E = n('1YZw'),
+        M = n('Fg8X'),
+        w = n('n4jD'),
+        k = n('RqPI'),
         I = n('iUle'),
-        M = function (e) {
+        _ = function (e) {
           return function (t, n, i) {
             var a = i.api,
               r = n(),
-              o = Object(E.r)(r) || '',
-              c = Object(k.c)(r),
+              o = Object(k.r)(r) || '',
+              c = Object(w.c)(r),
               s = Object(I.a)(o),
               l = { moment_id: e, teamUserId: c }
             return a.Moments.delete(l).then(function () {
-              t([w.a.deleteOne(e), s.removeEntry('moment-'.concat(e))])
+              t([M.a.deleteOne(e), s.removeEntry('moment-'.concat(e))])
             })
           }
         },
         x = n('rxPX'),
-        A = Object(x.a)()
+        O = Object(x.a)()
           .propsFromState(function () {
-            return { activeTeamId: k.c }
+            return { activeTeamId: w.c }
           })
           .propsFromActions(function () {
-            return { addToast: _.b, deleteMoment: M }
+            return { addToast: E.b, deleteMoment: _ }
           })
           .withAnalytics({ component: 'action_sheet' }),
-        O = n('ACNv'),
-        P = n('3XMw'),
-        S = n.n(P),
+        P = n('ACNv'),
+        A = n('3XMw'),
+        S = n.n(A),
         T = n('Rp9C'),
-        L = n('TnY3'),
-        z = n('v6aA'),
-        B = n('hiGS'),
+        z = n('TnY3'),
+        B = n('v6aA'),
+        L = n('hiGS'),
         R = n('I/9y'),
-        D = n('TW8A'),
-        V = n('xrkw'),
-        j = n('zIWA'),
-        N = S.a.e8dff578,
+        j = n('TW8A'),
+        D = n('xrkw'),
+        N = n('zIWA'),
+        V = S.a.e8dff578,
         H = S.a.fcc64f01,
-        K = S.a.ea193d66,
-        F = S.a.e5227fe0,
-        G = S.a.d0df844c,
-        W = S.a.fd61ab81,
-        U = S.a.aaae5e7f,
-        Y = S.a.d96cf7cd,
-        X = S.a.e7718461,
-        q = (function (e) {
+        U = S.a.ea193d66,
+        K = S.a.e5227fe0,
+        W = S.a.d0df844c,
+        F = S.a.fd61ab81,
+        G = S.a.aaae5e7f,
+        X = S.a.d96cf7cd,
+        q = S.a.e7718461,
+        Q = (function (e) {
           d()(n, e)
           var t = m()(n)
           function n() {
@@ -980,21 +1012,21 @@
                 return (
                   e._isOwner()
                     ? (o.push({
-                        confirmation: { label: Y, headline: W, text: U, confirmButtonType: 'destructiveFilled' },
+                        confirmation: { label: X, headline: F, text: G, confirmButtonType: 'destructiveFilled' },
                         isEmphasized: !0,
                         onClick: e._handleDeleteConfirm,
-                        text: K,
-                        Icon: B.a,
+                        text: U,
+                        Icon: L.a,
                       }),
-                      r && o.push({ link: '/i/events/'.concat(i), onClick: e._handleClickLink, text: F, Icon: R.a }),
-                      a && o.push({ link: '/i/moment_maker/edit/'.concat(i), text: N, Icon: D.a }),
+                      r && o.push({ link: '/i/events/'.concat(i), onClick: e._handleClickLink, text: K, Icon: R.a }),
+                      a && o.push({ link: '/i/moment_maker/edit/'.concat(i), text: V, Icon: j.a }),
                       o.push({
                         link: '/i/moments/'.concat(i, '/analytics'),
                         onClick: e._handleNavigateAnalytics,
-                        text: G,
-                        Icon: V.a,
+                        text: W,
+                        Icon: D.a,
                       }))
-                    : n && o.push({ onClick: e._handleReport, text: H, Icon: j.a }),
+                    : n && o.push({ onClick: e._handleReport, text: H, Icon: N.a }),
                   o
                 )
               }),
@@ -1025,7 +1057,7 @@
                   o = t.redirectOnDelete
                 i(r).then(function () {
                   e._scribeAction('delete'),
-                    n({ text: X }),
+                    n({ text: q }),
                     o && a.goBack({ backLocation: o, shouldReplaceOnFallback: !0 })
                 })
               }),
@@ -1065,7 +1097,7 @@
                 key: 'render',
                 value: function () {
                   return this.context.loggedInUserId
-                    ? f.a.createElement(O.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
+                    ? f.a.createElement(P.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
                     : null
                 },
               },
@@ -1073,9 +1105,9 @@
             n
           )
         })(f.a.Component)
-      p()(q, 'contextType', z.a)
-      var Q = A(q),
-        J = Object(L.a)(Q),
+      p()(Q, 'contextType', B.a)
+      var Y = O(Q),
+        J = Object(z.a)(Y),
         Z = n('2G3J'),
         $ = (function (e) {
           d()(n, e)

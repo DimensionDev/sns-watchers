@@ -8147,63 +8147,61 @@
         C = y.a.cf4898a0,
         F = [E.a.CommunityMembers]
       function S(e) {
-        var n = u.a.useContext(m.a).featureSwitches,
-          a = n.isTrue('c9s_members_list_search_enabled'),
-          t = n.isTrue('c9s_remove_member_list_enabled'),
-          r = e.community,
-          o = e.communityId,
-          c = e.onIsSearchingChange,
-          d = null == r ? void 0 : r.role,
-          y = u.a.useState(!1),
-          g = s()(y, 2),
-          p = g[0],
-          f = g[1],
-          b = u.a.useState(''),
-          h = s()(b, 2),
-          S = h[0],
-          w = h[1],
-          K = u.a.useState({}),
-          T = s()(K, 2),
-          R = T[0],
-          L = T[1],
-          x = u.a.useCallback(
+        var n = u.a.useContext(m.a).featureSwitches.isTrue('c9s_members_list_search_enabled'),
+          a = e.community,
+          t = e.communityId,
+          r = e.onIsSearchingChange,
+          o = null == a ? void 0 : a.role,
+          c = u.a.useState(!1),
+          d = s()(c, 2),
+          y = d[0],
+          g = d[1],
+          p = u.a.useState(''),
+          f = s()(p, 2),
+          b = f[0],
+          h = f[1],
+          S = u.a.useState({}),
+          w = s()(S, 2),
+          K = w[0],
+          T = w[1],
+          R = u.a.useCallback(
             function (e, n) {
-              L(function (a) {
+              T(function (a) {
                 return i()(i()({}, a), {}, l()({}, e, n))
               })
             },
-            [L],
+            [T],
+          ),
+          L = u.a.useCallback(
+            function () {
+              g(!0), r(!0)
+            },
+            [r],
+          ),
+          x = u.a.useCallback(
+            function (e) {
+              h(e)
+              var n = !!e
+              r(n), g(n)
+            },
+            [r],
           ),
           M = u.a.useCallback(
             function () {
-              f(!0), c(!0)
+              b || (r(!1), g(!1))
             },
-            [c],
-          ),
-          O = u.a.useCallback(
-            function (e) {
-              w(e)
-              var n = !!e
-              c(n), f(n)
-            },
-            [c],
-          ),
-          A = u.a.useCallback(
-            function () {
-              S || (c(!1), f(!1))
-            },
-            [c, S],
+            [r, b],
           )
-        if (!o) return null
-        return a && (d === k.a.Admin || (t && d === k.a.Moderator))
+        if (!t) return null
+        return n && Object(k.c)(o)
           ? u.a.createElement(v.default, {
-              alwaysOpen: p,
-              communityId: o,
+              alwaysOpen: y,
+              communityId: t,
               filter: F,
               getItemIsDisabled: function (e) {
                 if ('user' === e.type) {
                   var n = e.data.id_str,
-                    a = R[n]
+                    a = K[n]
                   return !Object(k.g)(null == a ? void 0 : a.role)
                 }
                 return !1
@@ -8211,20 +8209,20 @@
               getUserDisplayNameLabel: function (e) {
                 if ('user' === e.type) {
                   var n = e.data.id_str,
-                    a = R[n]
+                    a = K[n]
                   if (a) return Object(k.d)(a.role)
                 }
               },
               inputStyle: I.textInput,
               isModal: !0,
-              onDismiss: A,
-              onFocus: M,
-              onQueryChange: O,
+              onDismiss: M,
+              onFocus: L,
+              onQueryChange: x,
               placeholder: C,
               renderUserDecoration: function (e) {
                 var n = e.userId
-                return d
-                  ? u.a.createElement(_, { communityId: o, onCommunityRoleChange: x, userId: n, viewerRole: d })
+                return o
+                  ? u.a.createElement(_, { communityId: t, onCommunityRoleChange: R, userId: n, viewerRole: o })
                   : null
               },
               rounded: !0,
@@ -10505,46 +10503,43 @@
           var n = e.communityId,
             l = e.userResult,
             r = e.viewerRole,
-            i = o.a.useContext(y.a),
-            s = i.featureSwitches,
-            c = i.loggedInUserId,
-            u = s.isTrue('c9s_remove_member_list_enabled'),
-            m = _()(void 0 !== t ? t : (t = a('tgdH')), l).result
-          if (!m || 'User' !== m.__typename || !m.legacy) return null
-          var d = m.community_role,
-            h = m.id,
-            v = m.legacy,
-            k = v.id_str,
-            E = v.name,
-            C = void 0 === E ? '' : E,
-            F = v.profile_image_url_https,
-            S = v.protected,
-            I = v.screen_name,
-            w = v.verified
-          if (!I || !F || !C) return null
-          var K = Object(b.d)(d),
-            T = r === b.a.Admin || (u && r === b.a.Moderator)
+            i = o.a.useContext(y.a).loggedInUserId,
+            s = _()(void 0 !== t ? t : (t = a('tgdH')), l).result
+          if (!s || 'User' !== s.__typename || !s.legacy) return null
+          var c = s.community_role,
+            u = s.id,
+            m = s.legacy,
+            d = m.id_str,
+            h = m.name,
+            v = void 0 === h ? '' : h,
+            k = m.profile_image_url_https,
+            E = m.protected,
+            C = m.screen_name,
+            F = m.verified
+          if (!C || !k || !v) return null
+          var S = Object(b.d)(c),
+            I = Object(b.c)(r)
           return o.a.createElement(f.a, {
-            avatarUri: F,
-            decoration: T
+            avatarUri: k,
+            decoration: I
               ? o.a.createElement(g.a, {
                   communityId: n,
-                  communityRole: d,
-                  recordId: h,
-                  screenName: I,
-                  userId: k,
+                  communityRole: c,
+                  recordId: u,
+                  screenName: C,
+                  userId: d,
                   viewerRole: r,
                 })
-              : c !== k
-              ? o.a.createElement(p.a, { user: m })
+              : i !== d
+              ? o.a.createElement(p.a, { user: s })
               : null,
             displayMode: 'UserCompact',
-            displayNameLabel: K,
-            isProtected: S,
-            isVerified: w,
-            name: C,
-            screenName: I,
-            userId: k,
+            displayNameLabel: S,
+            isProtected: E,
+            isVerified: F,
+            name: v,
+            screenName: C,
+            userId: d,
           })
         },
         k = a('DQzJ'),
@@ -14221,7 +14216,7 @@
         _ = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('zb92')),
         v = Object(_.a)({
           loader: function () {
-            return Promise.all([a.e(0), a.e(3), a.e(6), a.e(9), a.e(177)]).then(a.bind(null, 'P68U'))
+            return Promise.all([a.e(0), a.e(3), a.e(6), a.e(9), a.e(178)]).then(a.bind(null, 'P68U'))
           },
         }),
         k = a('eyty'),

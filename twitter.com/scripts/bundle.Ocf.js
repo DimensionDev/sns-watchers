@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [76, 7, 18, 177],
+  [76, 7, 18, 178],
   {
     '12XZ': function (e, t, n) {
       'use strict'
@@ -1968,7 +1968,7 @@
         he = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         me = Object(he.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         fe = n('m3Bd'),
@@ -3232,6 +3232,9 @@
                     },
                     trustedFriendsEnabled: function () {
                       return o.isTrue('trusted_friends_consumption_enabled')
+                    },
+                    trustedFriendsCreationEnabled: function () {
+                      return o.isTrue('trusted_friends_tweet_creation_enabled')
                     },
                   },
                   u = e._getWithTopLine(),
@@ -14296,7 +14299,7 @@
           }
         }),
         uo = function () {
-          return n.e(356).then(n.t.bind(null, 'OHEV', 7))
+          return n.e(357).then(n.t.bind(null, 'OHEV', 7))
         },
         po = 'ocfShowCodeNextLink',
         ho = 'ocfShowCodeSkipLink'

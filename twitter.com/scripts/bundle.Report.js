@@ -20,7 +20,7 @@
           return D
         }),
         n.d(t, 'f', function () {
-          return O
+          return x
         }),
         n.d(t, 'd', function () {
           return j
@@ -135,9 +135,9 @@
               D = c.quickReply,
               S = s()(c, I)
             t(Z(l))
-            var O = n(),
-              x = y || H(n(), l),
-              L = m.k(O, x),
+            var x = n(),
+              O = y || H(n(), l),
+              L = m.k(x, O),
               N = i()(L, 1)[0] || {},
               F = N.mediaFile,
               P = N.mediaMetadata,
@@ -146,9 +146,9 @@
             F && F.isGif
               ? (G.extraInitParams = '&media_category=dm_gif')
               : F && F.isVideo && (G.extraInitParams = '&media_category=dm_video')
-            var W = m.p(x, G),
+            var W = m.p(O, G),
               V = [t(W)],
-              X = (B(O, l) || {}).found_media_origin
+              X = (B(x, l) || {}).found_media_origin
             return (
               F && F.isGif && V.push(Object(b.a)(F)),
               Promise.all(V).then(
@@ -217,7 +217,7 @@
                               c = r.tweets,
                               s = r.users,
                               u = n.result.conversations
-                            Object(E.a)(x) && t(z(l, x))
+                            Object(E.a)(O) && t(z(l, O))
                             var d = Object(T.a)(
                               [{ type: v.c.SUCCESS }].concat(
                                 o()(Object(f.a)({ conversations: u, entries: i, users: s, tweets: c, cards: a })),
@@ -232,7 +232,7 @@
                                 conversation_id: l,
                                 error: !0,
                                 id: M,
-                                localMediaId: x,
+                                localMediaId: O,
                                 recipient_ids: q,
                                 sender_id: u,
                                 text: e.text,
@@ -253,7 +253,7 @@
                   )
                 },
                 function (e) {
-                  return t(Object(T.a)([Object(E.a)(x) && z(l, x), ne(l)])), Promise.reject(e)
+                  return t(Object(T.a)([Object(E.a)(O) && z(l, O), ne(l)])), Promise.reject(e)
                 },
               )
             )
@@ -267,12 +267,12 @@
           return n ? n.text : null
         },
         S = 'rweb/dmComposer/SAVE_TEXT',
-        O = function (e, t) {
+        x = function (e, t) {
           return { type: S, conversationId: e, text: t }
         },
-        x = 'rweb/dmComposer/REMOVE_TEXT',
+        O = 'rweb/dmComposer/REMOVE_TEXT',
         j = function (e) {
-          return { type: x, conversationId: e }
+          return { type: O, conversationId: e }
         },
         L = function (e, t) {
           var n = R(e, t)
@@ -360,7 +360,7 @@
             case N:
               var s = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(p()({}, e), {}, d()({}, n, p()(p()({}, s), {}, { cardUrl: t.cardUrl })))
-            case x:
+            case O:
               var u = e[n] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return p()(p()({}, e), {}, d()({}, n, p()(p()({}, u), {}, { text: null })))
             default:
@@ -415,8 +415,8 @@
         R = n('QK5w'),
         D = n('V5Qi'),
         S = n('XOJV'),
-        O = n('CxAY'),
-        x = n('G6rE'),
+        x = n('CxAY'),
+        O = n('G6rE'),
         j = n('rxPX'),
         L = n('0KEI'),
         N = n('fz3c'),
@@ -464,7 +464,7 @@
         },
         K = function (e, t) {
           var n = X(e, t) === N.a.User ? Q(0, t) : void 0
-          return n ? x.e.select(e, n) : void 0
+          return n ? O.e.select(e, n) : void 0
         },
         z = function (e, t) {
           var n,
@@ -531,17 +531,17 @@
           .propsFromActions(function () {
             return {
               addToast: w.b,
-              block: x.e.block,
+              block: O.e.block,
               createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
               fetchUpdates: E.fetchUpdates,
               mute: k.a,
               markTweetAsReported: S.a.markAsReported,
               markTweetsAsRemovedFromCommunity: S.a.markTweetsAsRemovedFromCommunity,
-              markUserAsRemovedFromCommunity: O.b.markUserAsRemovedFromCommunity,
+              markUserAsRemovedFromCommunity: x.b.markUserAsRemovedFromCommunity,
               richScribeAction: M.richScribeAction,
-              unblock: x.e.unblock,
-              unfollow: x.e.unfollow,
-              unmute: x.e.unmute,
+              unblock: O.e.unblock,
+              unfollow: O.e.unfollow,
+              unmute: O.e.unmute,
             }
           }),
         ne = n('jHSc'),
@@ -1146,106 +1146,119 @@
     },
     'X/yg': function (e, t, n) {
       'use strict'
-      n.d(t, 'o', function () {
-        return s
+      n.d(t, 'p', function () {
+        return d
       }),
-        n.d(t, 'n', function () {
-          return u
-        }),
-        n.d(t, 'm', function () {
-          return d
-        }),
-        n.d(t, 'c', function () {
+        n.d(t, 'o', function () {
           return l
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'n', function () {
           return p
         }),
-        n.d(t, 'i', function () {
+        n.d(t, 'g', function () {
           return m
         }),
-        n.d(t, 'k', function () {
+        n.d(t, 'c', function () {
           return f
         }),
-        n.d(t, 'l', function () {
+        n.d(t, 'd', function () {
           return _
         }),
-        n.d(t, 'g', function () {
+        n.d(t, 'j', function () {
           return v
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'l', function () {
           return b
         }),
-        n.d(t, 'h', function () {
+        n.d(t, 'm', function () {
           return h
         }),
-        n.d(t, 'f', function () {
+        n.d(t, 'h', function () {
           return y
         }),
-        n.d(t, 'a', function () {
+        n.d(t, 'k', function () {
           return g
         }),
-        n.d(t, 'b', function () {
+        n.d(t, 'i', function () {
           return w
         }),
-        n.d(t, 'e', function () {
+        n.d(t, 'f', function () {
           return C
+        }),
+        n.d(t, 'a', function () {
+          return T
+        }),
+        n.d(t, 'b', function () {
+          return E
+        }),
+        n.d(t, 'e', function () {
+          return I
         })
-      n('vfdX'), n('z84I'), n('ho0z')
+      n('vrRf'), n('vfdX'), n('z84I'), n('ho0z')
       var r = n('CDB5'),
         o = n('Myq3'),
         a = n('XnpN'),
-        i = n('AQ79'),
-        c = n('pHkl'),
-        s = function (e, t) {
+        i = n('gaV8'),
+        c = n.n(i),
+        s = n('AQ79'),
+        u = n('pHkl'),
+        d = function (e, t) {
           return t.location && t.location.state && t.location.state.tweetAttachment
         },
-        u = function (e, t) {
+        l = function (e, t) {
           return t.location && t.location.state && t.location.state.participants
         },
-        d = function (e, t) {
+        p = function (e, t) {
           return t.location && t.location.state && t.location.state.isNewGroupConversation
         },
-        l = function (e) {
+        m = function (e, t) {
+          if (e && t) {
+            var n = c()(e),
+              r = t.toLowerCase().indexOf(e.toLowerCase())
+            return { startIndex: r, endIndex: r + n }
+          }
+          return { startIndex: -1, endIndex: -1 }
+        },
+        f = function (e) {
           var t = e.message_data,
-            n = c.f.UNKNOWN,
+            n = u.f.UNKNOWN,
             r = (t && t.attachment) || {}
           return (
             r.tweet
-              ? (n = c.f.TWEET)
+              ? (n = u.f.TWEET)
               : r.photo
-              ? (n = c.f.PHOTO)
+              ? (n = u.f.PHOTO)
               : r.animated_gif
-              ? (n = c.f.GIF)
+              ? (n = u.f.GIF)
               : r.video
-              ? (n = r.video.audio_only ? c.f.VOICE : c.f.VIDEO)
+              ? (n = r.video.audio_only ? u.f.VOICE : u.f.VIDEO)
               : r.card
-              ? (n = c.f.CARD)
-              : null != t && t.text && (n = c.f.TEXT),
+              ? (n = u.f.CARD)
+              : null != t && t.text && (n = u.f.TEXT),
             n
           )
         }
-      function p(e, t) {
+      function _(e, t) {
         return e.findIndex(function (e) {
           return e.id === t
         })
       }
-      function m(e) {
-        return e === i.d.SECONDARY ? c.e.REQUEST : e === i.d.TERTIARY ? c.e.LOW_QUALITY : c.e.PRIMARY
+      function v(e) {
+        return e === s.d.SECONDARY ? u.e.REQUEST : e === s.d.TERTIARY ? u.e.LOW_QUALITY : u.e.PRIMARY
       }
-      function f(e) {
+      function b(e) {
         return e.isTrue('dm_voice_rendering_enabled')
       }
-      function _(e, t) {
-        return !!(e && e.video && f(t)) && !!e.video.audio_only
+      function h(e, t) {
+        return !!(e && e.video && b(t)) && !!e.video.audio_only
       }
-      function v(e, t, n, r) {
+      function y(e, t, n, r) {
         return {
           pathname: '/i/report/dm_conversation/'.concat(e),
           state: { clientReferer: t, inboxType: r, scribeNamespace: n },
         }
       }
-      function b(e, t) {
+      function g(e, t) {
         if (!e) return { name: '', screenName: '', idStr: '' }
         var n = Object(a.a)(e, t).map(function (e) {
             return e.user
@@ -1253,31 +1266,31 @@
           r = n && n[0]
         return { name: (r && r.name) || '', screenName: (r && r.screen_name) || '', idStr: (r && r.id_str) || '' }
       }
-      var h = function (e) {
-          return e === i.d.TERTIARY
+      var w = function (e) {
+          return e === s.d.TERTIARY
             ? 'low_quality_timeline'
-            : e === i.d.SECONDARY
+            : e === s.d.SECONDARY
             ? 'requests_timeline'
             : 'inbox_timeline'
         },
-        y = function (e) {
-          return e === i.d.TERTIARY
+        C = function (e) {
+          return e === s.d.TERTIARY
             ? '/messages/requests/additional'
-            : e === i.d.SECONDARY
+            : e === s.d.SECONDARY
             ? '/messages/requests'
             : '/messages'
         },
-        g = function (e) {
+        T = function (e) {
           return function () {
             return r.b(e)
           }
         },
-        w = function (e) {
+        E = function (e) {
           return function (t) {
             return r.c(e, t)
           }
         },
-        C = function (e, t) {
+        I = function (e, t) {
           var n = Object(o.a)(e, function (e) {
             return !!e.message_data && e.message_data && e.message_data.recipient_id === t
           })

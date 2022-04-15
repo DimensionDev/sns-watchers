@@ -609,6 +609,7 @@
           'entities',
           'entityBaseUrl',
           'excludeCardUrl',
+          'highlightType',
           'hitHighlights',
           'lang',
           'linkColor',
@@ -645,58 +646,60 @@
                   i = a.enrichments,
                   o = a.entities,
                   l = a.entityBaseUrl,
-                  c = a.hitHighlights,
-                  u = a.linkify,
-                  h = a.quotedTweetPermalink,
-                  p = a.text,
-                  m = a.unmentionedUserIds,
-                  y = a.withQuoteLinks,
-                  g = a.withUnicodeEmojis,
-                  v = p,
-                  f = o,
-                  w = o && o.urls && o.urls.length
-                if (h && !w && y && ((v = ''.concat(p, ' ').concat(u ? h.url : h.display)), u)) {
-                  var b = d()(p).length + 1
-                  f = s()(
+                  c = a.highlightType,
+                  u = a.hitHighlights,
+                  h = a.linkify,
+                  p = a.quotedTweetPermalink,
+                  m = a.text,
+                  y = a.unmentionedUserIds,
+                  g = a.withQuoteLinks,
+                  v = a.withUnicodeEmojis,
+                  f = m,
+                  w = o,
+                  b = o && o.urls && o.urls.length
+                if (p && !b && g && ((f = ''.concat(m, ' ').concat(h ? p.url : p.display)), h)) {
+                  var C = d()(m).length + 1
+                  w = s()(
                     s()({ media: [] }, o),
                     {},
                     {
                       urls: [
                         {
-                          display_url: h.display,
-                          expanded_url: h.expanded,
-                          url: h.url,
-                          indices: [b, b + h.url.length],
+                          display_url: p.display,
+                          expanded_url: p.expanded,
+                          url: p.url,
+                          indices: [C, C + p.url.length],
                         },
                       ],
                     },
                   )
                 }
-                var C = [0, v.length],
-                  k = [(r || C)[0], v.length],
-                  x = c || []
+                var k = [0, f.length],
+                  x = [(r || k)[0], f.length],
+                  T = u || []
                 return (
-                  null !== (t = f) &&
+                  null !== (t = w) &&
                     void 0 !== t &&
                     null !== (n = t.user_mentions) &&
                     void 0 !== n &&
                     n.length &&
-                    null != m &&
-                    m.length &&
-                    (f = s()(
-                      s()({}, f),
+                    null != y &&
+                    y.length &&
+                    (w = s()(
+                      s()({}, w),
                       {},
                       {
-                        user_mentions: f.user_mentions.filter(function (e) {
-                          return !m.includes(e.id_str)
+                        user_mentions: w.user_mentions.filter(function (e) {
+                          return !y.includes(e.id_str)
                         }),
                       },
                     )),
-                  S.a.tweetTextParts(v, k, f, i, {
+                  S.a.tweetTextParts(f, x, w, i, {
                     useHashtagUrl: !0,
-                    hitHighlights: x,
+                    hitHighlights: T,
                     baseUrl: l,
-                    renderUnicodeEmojis: g,
+                    renderUnicodeEmojis: v,
+                    highlightType: c,
                   })
                 )
               }),
@@ -711,7 +714,7 @@
                   var e = this.props,
                     t = e.displayTextRange,
                     n = (e.enrichments, e.entities, e.entityBaseUrl, e.excludeCardUrl),
-                    a = (e.hitHighlights, e.lang),
+                    a = (e.highlightType, e.hitHighlights, e.lang),
                     i = e.linkColor,
                     l = e.linkify,
                     c = e.nativeID,
@@ -785,6 +788,7 @@
           )
         })(T.a.Component)
       k()(L, 'defaultProps', {
+        highlightType: 'bold',
         linkColor: 'link',
         linkify: I.a.linkify,
         underlineLinks: !1,

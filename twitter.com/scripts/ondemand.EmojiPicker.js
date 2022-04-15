@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [208],
+  [209],
   {
     '5RdJ': function (e, t, n) {
       'use strict'
@@ -1088,14 +1088,6 @@
                 }
                 return n
               }),
-              S()(this, '_getScores', function (e, t) {
-                var n = {}
-                for (var o in e) {
-                  var r = e[o].search.indexOf(t) + 1
-                  t === o && (r = 0), (n[o] = r)
-                }
-                return n
-              }),
               S()(this, '_insertEmojisToTrie', function (e, t, n) {
                 for (var o in e) {
                   be(n, t, e[o])
@@ -1122,7 +1114,21 @@
                           var t = [],
                             o = Ee(s, e),
                             r = n._getRelevantEmojis(i, e),
-                            a = n._getScores(r, e)
+                            a = (function (e, t) {
+                              var n = {}
+                              for (var o in e)
+                                if (t === o) n[o] = 0
+                                else {
+                                  var r = e[o].search,
+                                    i = r.split(','),
+                                    a = Object(ye.a)(i, function (e) {
+                                      return e === t
+                                    }),
+                                    s = -1 !== a ? a : r.indexOf(t) + 1
+                                  ;-1 !== s && (n[o] = s + 1)
+                                }
+                              return n
+                            })(r, e)
                           return (
                             0 === o.length ? (n._insertEmojisToTrie(r, e, s), (t = Ee(s, e))) : (t = o),
                             t.sort(function (e, t) {

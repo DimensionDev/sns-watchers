@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [50, 233],
+  [50, 234],
   {
     '/FNr': function (e, t, n) {
       'use strict'
@@ -1118,7 +1118,7 @@
                     conversation_type: o ? Ge.j.GROUP : Ge.j.ONE_TO_ONE,
                     conversation_participant_count: s,
                     message_type: c,
-                    inbox_type: Object(_.i)(l),
+                    inbox_type: Object(_.j)(l),
                   },
                 }),
                   a({ conversationId: r.conversation_id, id: r.id }).catch(n(Me))
@@ -2838,7 +2838,7 @@
                   else if (g.animated_gif)
                     (t = g.animated_gif), (n = f.a.createElement(Ka, { media: t, messageId: r.id }))
                   else if (g.video) {
-                    if (((t = g.video), Object(_.l)(g, e.context.featureSwitches)))
+                    if (((t = g.video), Object(_.m)(g, e.context.featureSwitches)))
                       throw new Error('DMMediaMessage should not be used to render voice messages')
                     n = f.a.createElement(Ka, { media: t, messageId: r.id })
                   }
@@ -3470,7 +3470,7 @@
                     g = gt(n)
                   e = o.sticker ? f.a.createElement(dr, { sticker: o.sticker }) : this._renderDMMessage(u, d, m)
                   var h = s ? f.a.createElement(ir, { conversationId: n.conversation_id, dmId: n.id }, e) : e,
-                    v = c && !g && !Object(_.l)(null == l ? void 0 : l.attachment, this.context.featureSwitches),
+                    v = c && !g && !Object(_.m)(null == l ? void 0 : l.attachment, this.context.featureSwitches),
                     y = [
                       a ? jr.isSent : jr.isReceived,
                       d && jr.withCta,
@@ -3541,7 +3541,7 @@
                         ),
                       )
                     if (v.photo || v.animated_gif || v.video)
-                      return v.video && Object(_.l)(v, this.context.featureSwitches)
+                      return v.video && Object(_.m)(v, this.context.featureSwitches)
                         ? f.a.createElement(Ar, {
                             isLowQuality: c,
                             isSent: !!u,
@@ -3705,7 +3705,7 @@
               }),
               g()(s()(e), '_isDMVoiceMessage', function () {
                 var t
-                return Object(_.l)(
+                return Object(_.m)(
                   null === (t = e.props.entry.message_data) || void 0 === t ? void 0 : t.attachment,
                   e.context.featureSwitches,
                 )
@@ -4765,7 +4765,7 @@
       var a = n('zb92')
       t.a = Object(a.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(24), n.e(170)])
+          return Promise.all([n.e(0), n.e(24), n.e(171)])
             .then(n.bind(null, 'u2Vg'))
             .then(function (e) {
               return { default: e.__DANGEROUS_IMPORT__ }
@@ -8563,10 +8563,10 @@
             return k.selectConversation(e, D(0, t))
           },
           k.selectEntries,
-          O.m,
-          E.r,
           O.n,
+          E.r,
           O.o,
+          O.p,
           A.e.selectAll,
           P,
           function (e, t) {
@@ -8765,7 +8765,7 @@
                   isGroup: e.isGroup,
                   onBlockClick: i,
                   onReportClick: l,
-                  requestorScreenName: Object(O.j)(e.conversation, a).screenName,
+                  requestorScreenName: Object(O.k)(e.conversation, a).screenName,
                 }),
               ),
               y.a.createElement(
@@ -8891,7 +8891,7 @@
                     conversation_id: a,
                     conversation_participant_count: s,
                     position: c,
-                    inbox_type: Object(O.i)(r),
+                    inbox_type: Object(O.j)(r),
                     entry_point: Z.c.REQUEST_ACTION_SHEET,
                   }
                 u(!1), i({ conversationId: a }), f(l, d), x()
@@ -8917,7 +8917,7 @@
                       conversation_type: t.type === k.CONVERSATION_TYPE.GROUP ? Z.j.GROUP : Z.j.ONE_TO_ONE,
                       conversation_participant_count: d,
                       entry_point: Z.c.REQUEST_ACTION_SHEET,
-                      inbox_type: Object(O.i)(l),
+                      inbox_type: Object(O.j)(l),
                       position: u,
                     }))
                 })()
@@ -8952,7 +8952,7 @@
                   return y.a.createElement(
                     we.b,
                     { style: Be.copy },
-                    e ? De : Pe({ senderName: Object(O.j)(t, n).name }),
+                    e ? De : Pe({ senderName: Object(O.k)(t, n).name }),
                   )
                 })(L),
                 y.a.createElement(Ce, {
@@ -8968,7 +8968,7 @@
                   onReport: function () {
                     var t = e.conversationId,
                       n = e.inboxType
-                    t && (f('report'), l.push(Object(O.g)(t, window.location.pathname, a, n)))
+                    t && (f('report'), l.push(Object(O.h)(t, window.location.pathname, a, n)))
                   },
                 }),
               ),
@@ -8987,7 +8987,7 @@
                 : null,
               g
                 ? ((_ = i.loggedInUserId),
-                  (b = Object(O.j)(t, _)),
+                  (b = Object(O.k)(t, _)),
                   (S = b.idStr),
                   (E = b.screenName),
                   Object(Ie.j)({ confirmation: Object(Ie.f)(E), onClose: R, handleConfirm: A(S) }))
@@ -9805,106 +9805,119 @@
     },
     'X/yg': function (e, t, n) {
       'use strict'
-      n.d(t, 'o', function () {
-        return s
+      n.d(t, 'p', function () {
+        return d
       }),
-        n.d(t, 'n', function () {
-          return c
-        }),
-        n.d(t, 'm', function () {
-          return d
-        }),
-        n.d(t, 'c', function () {
+        n.d(t, 'o', function () {
           return u
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'n', function () {
           return p
         }),
-        n.d(t, 'i', function () {
+        n.d(t, 'g', function () {
           return m
         }),
-        n.d(t, 'k', function () {
+        n.d(t, 'c', function () {
           return g
         }),
-        n.d(t, 'l', function () {
+        n.d(t, 'd', function () {
           return h
         }),
-        n.d(t, 'g', function () {
+        n.d(t, 'j', function () {
           return v
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'l', function () {
           return f
         }),
-        n.d(t, 'h', function () {
+        n.d(t, 'm', function () {
           return y
         }),
-        n.d(t, 'f', function () {
+        n.d(t, 'h', function () {
           return _
         }),
-        n.d(t, 'a', function () {
+        n.d(t, 'k', function () {
           return b
         }),
-        n.d(t, 'b', function () {
+        n.d(t, 'i', function () {
           return k
         }),
-        n.d(t, 'e', function () {
+        n.d(t, 'f', function () {
           return S
+        }),
+        n.d(t, 'a', function () {
+          return E
+        }),
+        n.d(t, 'b', function () {
+          return C
+        }),
+        n.d(t, 'e', function () {
+          return T
         })
-      n('vfdX'), n('z84I'), n('ho0z')
+      n('vrRf'), n('vfdX'), n('z84I'), n('ho0z')
       var a = n('CDB5'),
         r = n('Myq3'),
         i = n('XnpN'),
-        l = n('AQ79'),
-        o = n('pHkl'),
-        s = function (e, t) {
+        l = n('gaV8'),
+        o = n.n(l),
+        s = n('AQ79'),
+        c = n('pHkl'),
+        d = function (e, t) {
           return t.location && t.location.state && t.location.state.tweetAttachment
         },
-        c = function (e, t) {
+        u = function (e, t) {
           return t.location && t.location.state && t.location.state.participants
         },
-        d = function (e, t) {
+        p = function (e, t) {
           return t.location && t.location.state && t.location.state.isNewGroupConversation
         },
-        u = function (e) {
+        m = function (e, t) {
+          if (e && t) {
+            var n = o()(e),
+              a = t.toLowerCase().indexOf(e.toLowerCase())
+            return { startIndex: a, endIndex: a + n }
+          }
+          return { startIndex: -1, endIndex: -1 }
+        },
+        g = function (e) {
           var t = e.message_data,
-            n = o.f.UNKNOWN,
+            n = c.f.UNKNOWN,
             a = (t && t.attachment) || {}
           return (
             a.tweet
-              ? (n = o.f.TWEET)
+              ? (n = c.f.TWEET)
               : a.photo
-              ? (n = o.f.PHOTO)
+              ? (n = c.f.PHOTO)
               : a.animated_gif
-              ? (n = o.f.GIF)
+              ? (n = c.f.GIF)
               : a.video
-              ? (n = a.video.audio_only ? o.f.VOICE : o.f.VIDEO)
+              ? (n = a.video.audio_only ? c.f.VOICE : c.f.VIDEO)
               : a.card
-              ? (n = o.f.CARD)
-              : null != t && t.text && (n = o.f.TEXT),
+              ? (n = c.f.CARD)
+              : null != t && t.text && (n = c.f.TEXT),
             n
           )
         }
-      function p(e, t) {
+      function h(e, t) {
         return e.findIndex(function (e) {
           return e.id === t
         })
       }
-      function m(e) {
-        return e === l.d.SECONDARY ? o.e.REQUEST : e === l.d.TERTIARY ? o.e.LOW_QUALITY : o.e.PRIMARY
+      function v(e) {
+        return e === s.d.SECONDARY ? c.e.REQUEST : e === s.d.TERTIARY ? c.e.LOW_QUALITY : c.e.PRIMARY
       }
-      function g(e) {
+      function f(e) {
         return e.isTrue('dm_voice_rendering_enabled')
       }
-      function h(e, t) {
-        return !!(e && e.video && g(t)) && !!e.video.audio_only
+      function y(e, t) {
+        return !!(e && e.video && f(t)) && !!e.video.audio_only
       }
-      function v(e, t, n, a) {
+      function _(e, t, n, a) {
         return {
           pathname: '/i/report/dm_conversation/'.concat(e),
           state: { clientReferer: t, inboxType: a, scribeNamespace: n },
         }
       }
-      function f(e, t) {
+      function b(e, t) {
         if (!e) return { name: '', screenName: '', idStr: '' }
         var n = Object(i.a)(e, t).map(function (e) {
             return e.user
@@ -9912,31 +9925,31 @@
           a = n && n[0]
         return { name: (a && a.name) || '', screenName: (a && a.screen_name) || '', idStr: (a && a.id_str) || '' }
       }
-      var y = function (e) {
-          return e === l.d.TERTIARY
+      var k = function (e) {
+          return e === s.d.TERTIARY
             ? 'low_quality_timeline'
-            : e === l.d.SECONDARY
+            : e === s.d.SECONDARY
             ? 'requests_timeline'
             : 'inbox_timeline'
         },
-        _ = function (e) {
-          return e === l.d.TERTIARY
+        S = function (e) {
+          return e === s.d.TERTIARY
             ? '/messages/requests/additional'
-            : e === l.d.SECONDARY
+            : e === s.d.SECONDARY
             ? '/messages/requests'
             : '/messages'
         },
-        b = function (e) {
+        E = function (e) {
           return function () {
             return a.b(e)
           }
         },
-        k = function (e) {
+        C = function (e) {
           return function (t) {
             return a.c(e, t)
           }
         },
-        S = function (e, t) {
+        T = function (e, t) {
           var n = Object(r.a)(e, function (e) {
             return !!e.message_data && e.message_data && e.message_data.recipient_id === t
           })
@@ -10317,10 +10330,10 @@
           },
           _.selectEntries,
           F,
-          x.m,
-          k.r,
           x.n,
+          k.r,
           x.o,
+          x.p,
           R.e.selectAll,
           function (e, t) {
             return b.j(e, F(0, t))
@@ -10794,7 +10807,7 @@
       }
       function k(e) {
         var t = r.a.useContext(i.a).featureSwitches
-        return Object(d.k)(t) ? r.a.createElement(h, null, e.children, r.a.createElement(c, null)) : e.children
+        return Object(d.l)(t) ? r.a.createElement(h, null, e.children, r.a.createElement(c, null)) : e.children
       }
       var S = _
     },

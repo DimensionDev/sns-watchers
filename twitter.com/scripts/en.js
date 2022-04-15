@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [124],
+    [125],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -716,6 +716,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
           a('bef0039f', 'You don’t have any message requests'),
+          a('e7172d70', 'Additional messages'),
           a('e51be7c0', 'Learn more'),
           a('f37a6f73', 'Learn more'),
           a('e0870f25', 'Sign up with Google'),
@@ -1159,14 +1160,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('af293dc2', 'People you follow'),
           a('h1053f7e', 'Only people you mention'),
           a('bf994ab2', 'Only you'),
-          a('cf7f7e39', 'Only people you mentioned'),
-          a('dd211107', 'Delete Tweet?')
-        a(
-          'c55d72d0',
-          'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
-        ),
+          a('cf7f7e39', 'Only people you mentioned')
+        a('dd211107', 'Delete Tweet?'),
+          a(
+            'c55d72d0',
+            'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
+          ),
           a('a1aa840e', 'Your Tweet was deleted'),
           a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
+          a('ea41975b', 'Edit Tweet'),
           a('e6c84638', 'Embed Tweet'),
           a('c66afdc2', function (e) {
             return 'Follow @' + e.screenName
@@ -1423,6 +1425,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
+          a('f70a36d0', 'Tweet all'),
+          a('h3701ffd', 'Update'),
           a('e070024a', 'Edit photo'),
           a('i7d24b36', 'Next image'),
           a('f96a38a2', 'Previous image'),
@@ -1482,7 +1486,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('bea869b3', 'Tweet'),
           a('d3145da8', 'Thanks for letting us know.'),
-          a('f70a36d0', 'Tweet all'),
           a(
             'haebcf51',
             'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -2313,13 +2316,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i22835dd', 'Approve'),
           a('cb59a0fd', 'Deny'),
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
-          a('dffb0774', 'Nothing to review right now'),
-          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
+          a('dffb0774', 'Nothing to review right now')
+        a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('fa524057', 'Keep'),
-          a('f0306107', 'Report Tweet to Twitter')
-        a('ff0f7429', function (e) {
-          return e.formattedCount + ' member' + n(e.count, '', 's')
-        }),
+          a('f0306107', 'Report Tweet to Twitter'),
+          a('ff0f7429', function (e) {
+            return e.formattedCount + ' member' + n(e.count, '', 's')
+          }),
           a('ad10c66d', 'You hid this Tweet'),
           a('c6caed9c', 'You kept this Tweet'),
           a('jf99d610', 'Community Feedback'),
@@ -2352,7 +2355,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
           a('e4e4e50a', 'Scheduled Tweets'),
-          a('h3701ffd', 'Update'),
           a('c5dd0190', 'Time'),
           a('edeff231', 'Date'),
           a('c2b358ce', 'AM/PM'),
@@ -3543,10 +3545,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f2fb9746',
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-          ),
-          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-          a('fe1fc83e', 'These are the age ranges associated with you.')
-        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+          )
+        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
+          a('fe1fc83e', 'These are the age ranges associated with you.'),
+          a('bf9c74d0', 'Do not use these age ranges for personalization.'),
           a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
           a('jc0b4d1c', 'Learn more'),
           a('d9cbe351', function (e) {
@@ -4577,7 +4579,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
           ),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
-          a('e7172d70', 'Additional messages'),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
           a('a7013cb6', 'Send Tweet separately'),
@@ -4811,10 +4812,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b2f', 'Update your phone number'),
-          a('a3fad4f2', 'Log out of Twitter?'),
-          a('f12b4db4', function (e) {
-            return 'Log out of @' + e.screenName + '?'
-          })
+          a('a3fad4f2', 'Log out of Twitter?')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4831,10 +4829,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'ia5ff8b6',
-          'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
-        ),
+        a('f12b4db4', function (e) {
+          return 'Log out of @' + e.screenName + '?'
+        }),
+          a(
+            'ia5ff8b6',
+            'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
+          ),
           a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
           a('gc6866f7', 'Logging out'),
           a('c20aaf3d', 'Error'),
@@ -5141,6 +5142,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e37836f8', 'Report Detail'),
           a('e238c59f', 'What’s next'),
           a('a098fa3c', 'Tweet content hidden'),
+          a('a23e724a', 'This account is unavailable.'),
           a('fb35e52a', 'View Rule'),
           a('b7ba7129', 'Violation found'),
           a('d90b8c04', 'No Violation Found'),
@@ -6016,10 +6018,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3fcbdba', 'Dismiss'),
           a('jc0b3a8b', 'Image description'),
           a('bed2945c', 'read image description'),
-          a('j836de8a', 'Protected account'),
-          a('f936caa6', 'Translator account'),
-          a('ac72ee4d', 'Verified account')
-        a('f49e0aac', 'Provides details about verified accounts.'),
+          a('j836de8a', 'Protected account')
+        a('f936caa6', 'Translator account'),
+          a('ac72ee4d', 'Verified account'),
+          a('f49e0aac', 'Provides details about verified accounts.'),
           a('efb17190', 'Follows you'),
           a('a7c3a6ef', 'Super Follows you'),
           a('a3df6df8', 'Super Follower'),
@@ -6591,6 +6593,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('dc63da15', 'Share'),
           a('jc9298a8', 'Share Tweet'),
+          a('b7ea93b1', 'Edit Twitter Circle'),
+          a('c33d3a84', 'What happens in the Circle stays in the Circle'),
+          a('b3004abc', 'Learn more'),
           a('b09adb0c', 'See conversation'),
           a('c2637ef5', 'Got it'),
           a('e8d6014e', function (e) {
@@ -9159,6 +9164,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c3190d39',
                 get: function () {
                   return ['<FormatMessage />: ']
+                },
+              },
+              {
+                key: 'dd7a993b',
+                get: function () {
+                  return [
+                    'Only you and people in your Twitter Circle can see this Tweet. Retweeting, Quote Tweeting, and sharing aren’t available. ',
+                  ]
                 },
               },
               {
