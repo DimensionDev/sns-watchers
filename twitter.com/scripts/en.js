@@ -2039,7 +2039,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc683fb9', 'About Community'),
           a('af7c11a9', 'Community Info'),
           a('db1b9462', 'Only members can Tweet, like, or reply.'),
-          a('ea49402d', 'Everyone can view Tweets within any Community on Twitter.'),
           a('fcef2921', 'Anyone can join this Community.'),
           a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
           a('gedb877c', 'All Communities are publicly visible.'),
@@ -2199,11 +2198,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a753a87f', 'Apply'),
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
-          a('d0784408', 'Everyone can discover, join, and Tweet in your Community.'),
-          a(
-            'ccfafe8c',
-            'Everyone can discover your Community. To join, people must be invited by a member or moderator.',
-          ),
           a('c5d1634d', 'Okay, I understand'),
           a('b983f9e0', 'Heads up'),
           a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
@@ -2316,13 +2310,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i22835dd', 'Approve'),
           a('cb59a0fd', 'Deny'),
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
-          a('dffb0774', 'Nothing to review right now')
-        a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
+          a('dffb0774', 'Nothing to review right now'),
+          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('fa524057', 'Keep'),
-          a('f0306107', 'Report Tweet to Twitter'),
-          a('ff0f7429', function (e) {
-            return e.formattedCount + ' member' + n(e.count, '', 's')
-          }),
+          a('f0306107', 'Report Tweet to Twitter')
+        a('ff0f7429', function (e) {
+          return e.formattedCount + ' member' + n(e.count, '', 's')
+        }),
           a('ad10c66d', 'You hid this Tweet'),
           a('c6caed9c', 'You kept this Tweet'),
           a('jf99d610', 'Community Feedback'),
@@ -3545,11 +3539,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f2fb9746',
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-          )
-        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
+          ),
+          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
           a('fe1fc83e', 'These are the age ranges associated with you.'),
-          a('bf9c74d0', 'Do not use these age ranges for personalization.'),
-          a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
+          a('bf9c74d0', 'Do not use these age ranges for personalization.')
+        a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
           a('jc0b4d1c', 'Learn more'),
           a('d9cbe351', function (e) {
             return e.count + ' login event' + n(e.count, '', 's')
@@ -4812,7 +4806,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b2f', 'Update your phone number'),
-          a('a3fad4f2', 'Log out of Twitter?')
+          a('a3fad4f2', 'Log out of Twitter?'),
+          a('f12b4db4', function (e) {
+            return 'Log out of @' + e.screenName + '?'
+          }),
+          a(
+            'ia5ff8b6',
+            'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
+          ),
+          a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4829,15 +4831,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f12b4db4', function (e) {
-          return 'Log out of @' + e.screenName + '?'
-        }),
-          a(
-            'ia5ff8b6',
-            'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
-          ),
-          a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
-          a('gc6866f7', 'Logging out'),
+        a('gc6866f7', 'Logging out'),
           a('c20aaf3d', 'Error'),
           a('i783ca9b', 'Choose an existing Moment, or create a new one.'),
           a('ef90c7ae', 'Create new'),
@@ -6018,11 +6012,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3fcbdba', 'Dismiss'),
           a('jc0b3a8b', 'Image description'),
           a('bed2945c', 'read image description'),
-          a('j836de8a', 'Protected account')
-        a('f936caa6', 'Translator account'),
+          a('j836de8a', 'Protected account'),
+          a('f936caa6', 'Translator account'),
           a('ac72ee4d', 'Verified account'),
-          a('f49e0aac', 'Provides details about verified accounts.'),
-          a('efb17190', 'Follows you'),
+          a('f49e0aac', 'Provides details about verified accounts.')
+        a('efb17190', 'Follows you'),
           a('a7c3a6ef', 'Super Follows you'),
           a('a3df6df8', 'Super Follower'),
           a('b74bf8b7', 'Image'),
