@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [125],
+    [126],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(311).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1521,6 +1521,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e950f6ef', 'No articles have been shared in your network.'),
           a('f42e882a', 'Friends of friends'),
           a('a0f01bca', 'Click to change time frame'),
+          a(
+            'd4298fc1',
+            'New! Friends of friends shows the most shared articles from your friends plus the people they follow.',
+          ),
           a('e7dcfb8f', 'more accounts'),
           a('g4782c0a', 'with Twitter Blue'),
           a('g7e3d2a4', 'Space Analytics'),
@@ -2312,11 +2316,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-          a('fa524057', 'Keep'),
-          a('f0306107', 'Report Tweet to Twitter')
-        a('ff0f7429', function (e) {
-          return e.formattedCount + ' member' + n(e.count, '', 's')
-        }),
+          a('fa524057', 'Keep')
+        a('f0306107', 'Report Tweet to Twitter'),
+          a('ff0f7429', function (e) {
+            return e.formattedCount + ' member' + n(e.count, '', 's')
+          }),
           a('ad10c66d', 'You hid this Tweet'),
           a('c6caed9c', 'You kept this Tweet'),
           a('jf99d610', 'Community Feedback'),
@@ -3541,9 +3545,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
           ),
           a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-          a('fe1fc83e', 'These are the age ranges associated with you.'),
-          a('bf9c74d0', 'Do not use these age ranges for personalization.')
-        a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
+          a('fe1fc83e', 'These are the age ranges associated with you.')
+        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+          a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
           a('jc0b4d1c', 'Learn more'),
           a('d9cbe351', function (e) {
             return e.count + ' login event' + n(e.count, '', 's')
@@ -4813,8 +4817,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ia5ff8b6',
             'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
-          ),
-          a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4831,7 +4834,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('gc6866f7', 'Logging out'),
+        a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
+          a('gc6866f7', 'Logging out'),
           a('c20aaf3d', 'Error'),
           a('i783ca9b', 'Choose an existing Moment, or create a new one.'),
           a('ef90c7ae', 'Create new'),
@@ -6014,9 +6018,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bed2945c', 'read image description'),
           a('j836de8a', 'Protected account'),
           a('f936caa6', 'Translator account'),
-          a('ac72ee4d', 'Verified account'),
-          a('f49e0aac', 'Provides details about verified accounts.')
-        a('efb17190', 'Follows you'),
+          a('ac72ee4d', 'Verified account')
+        a('f49e0aac', 'Provides details about verified accounts.'),
+          a('efb17190', 'Follows you'),
           a('a7c3a6ef', 'Super Follows you'),
           a('a3df6df8', 'Super Follower'),
           a('b74bf8b7', 'Image'),
@@ -6617,6 +6621,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d9fd5570', 'Hidden replies'),
           a('c566d3a5', 'Hide'),
+          a('hc052e5c', 'Edited'),
+          a('d0d51086', 'There’s a new version of this Tweet'),
           a('e9c24489', function (e) {
             return '' + e.date
           }),
