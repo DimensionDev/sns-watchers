@@ -700,10 +700,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2fd3205', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
-          a('i9028824', 'Loading'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
+          a('i9028824', 'Loading'),
           a('a219e217', 'OK'),
           a('d571e4f8', function (e) {
             return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
@@ -2056,9 +2056,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
           }),
+          a('fc2a5c92', 'Something went wrong'),
+          a('c966ac63', 'Unable to request to join Community. Please try again later.'),
           a('hafa07f2', 'Participation is limited'),
           a('c15bee31', 'You’ve been removed from this Community'),
-          a('fc2a5c92', 'Something went wrong'),
           a('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
           a('h27d695f', 'You can’t leave just yet'),
           a('b02360f5', 'The last admin or moderator can’t leave unless the Community is empty.'),
@@ -2070,8 +2071,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b139b549', 'Invite members'),
           a('bec3b8f9', 'Share Community'),
           a('hb9400db', 'See More'),
-          a('c18e3a3e', 'There aren’t any Tweets in this Community'),
-          a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
+          a('c99ab746', 'There aren’t any Tweets in this Community yet'),
+          a('b32c4fb0', 'Once there are, you’ll see them here.'),
           a('h5245afa', 'Community'),
           a('f05dbeff', 'Loading Tweets'),
           a('bf359e0d', 'About your new Community'),
@@ -2123,12 +2124,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a5808125', function (e) {
             return 'We can’t remove @' + e.screenName + ' from the mod team right now. Please try again later.'
           }),
-          a('b6e22e15', 'Adding Moderators'),
-          a(
-            'd17c10d9',
-            'You will be able to add moderators here in the near future. In the meantime, you can DM @HiCommunities with your Community Name and which members you want to make moderators, and we’ll do it for you.',
-          ),
-          a('a1ecaf33', 'DM us now'),
           a('cdd87523', 'No one’s here yet'),
           a('cca5191f', 'When people join this Community, you’ll see them here.'),
           a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
@@ -2316,12 +2311,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-          a('fa524057', 'Keep')
-        a('f0306107', 'Report Tweet to Twitter'),
+          a('fa524057', 'Keep'),
+          a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
             return e.formattedCount + ' member' + n(e.count, '', 's')
-          }),
-          a('ad10c66d', 'You hid this Tweet'),
+          })
+        a('ad10c66d', 'You hid this Tweet'),
           a('c6caed9c', 'You kept this Tweet'),
           a('jf99d610', 'Community Feedback'),
           a('j643a234', 'This Tweet was hidden by a moderator for breaking Community rules'),
@@ -3350,17 +3345,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cf67f6d5', 'Autoblocked'),
           a('eb233865', 'Imported'),
           a(
-            'b90c89c3',
-            'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
+            'd23b0404',
+            'When you block someone, they won’t be able to follow or message you, and you won’t see notifications from them.',
           ),
-          a('f587e41e', 'You aren’t blocking anyone'),
+          a('e0a7e9bc', 'Block unwanted accounts'),
           a('ef731b13', 'Loading blocked accounts'),
           a('e554ba82', 'Learn more'),
           a('i2b9632d', 'Successfully unblocked.'),
           a('if594962', 'Blocked'),
-          a('hd7cb7cf', 'When we autoblock an account, it’ll show up here.'),
-          a('i3889a1f', 'Find out how you can import a block list.'),
-          a('iefef10b', 'You haven’t imported a list of accounts to block'),
+          a('da814a9f', 'When you activate Safety Mode, accounts that Twitter automatically blocks will show up here.'),
+          a('c0786021', 'Autoblocked accounts'),
+          a(
+            'f53382c3',
+            'When you block someone, they won’t be able to follow or message you, and you won’t see notifications from them. You can import a list of accounts you want to block on Twitter.',
+          ),
           a(
             'ic2937a1',
             'You’re about to start the process of deactivating your Twitter account. Your display name, @username, and public profile will no longer be viewable on Twitter.com, Twitter for iOS, or Twitter for Android.',
@@ -3493,8 +3491,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fcad1e2d', 'Daily'),
           a('h9e0dfde', 'Weekly'),
           a('e26d98ab', 'Periodically'),
-          a('e6b2d3de', 'You aren’t getting push notifications when anyone Tweets'),
-          a('fd6f8a70', 'When you turn on Tweet notifications, you’ll know when specific accounts you follow Tweet.'),
+          a('h0c94842', 'Be in the know'),
+          a(
+            'c0bf0dc8',
+            'When you turn on Tweet notifications for an account, you’ll know when they Tweet, go Live, and host a Space.',
+          ),
           a('a820d092', 'Loading Following'),
           a('i2775c58', 'Tweet Notifications'),
           a('ce8450f1', 'Control how Twitter personalizes content and collects and shares certain data.'),
@@ -3545,10 +3546,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
           ),
           a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-          a('fe1fc83e', 'These are the age ranges associated with you.')
-        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
-          a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
-          a('jc0b4d1c', 'Learn more'),
+          a('fe1fc83e', 'These are the age ranges associated with you.'),
+          a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+          a('cf0daa24', 'It may take a while to gather this information. Try again later.')
+        a('jc0b4d1c', 'Learn more'),
           a('d9cbe351', function (e) {
             return e.count + ' login event' + n(e.count, '', 's')
           }),
@@ -3694,7 +3695,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is a pretty common word, and shows up in lots of Tweets, but you can mute it if you want.',
           ),
           a('e456bd5f', 'Learn more'),
-          a('cab9274e', 'You aren’t muting any words'),
+          a('aa09e528', 'Add muted words'),
           a('e506aa92', 'Add muted word or phrase'),
           a('cbd04965', function (e) {
             return 'Unmuted "' + e.keyword + '"'
@@ -3702,12 +3703,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('eb4e810a', 'Expired'),
           a('cabeb6c1', 'Forever'),
           a('f9bce916', 'Mute words'),
-          a('f12c13b5', 'Learn more'),
+          a('hada0e6e', 'Learn more'),
           a('ba4aaa9d', 'Unmute phrase?'),
           a('f837ed7d', 'This phrase will now be allowed in your notifications and Home timeline.'),
           a('a6194d10', 'Loading muted accounts'),
-          a('ga3ef87d', 'You aren’t muting anyone'),
-          a('cd9701d3', 'When you mute accounts, you won’t see their Tweets in your timeline.'),
+          a(
+            'b460ae2d',
+            'Tweets from muted accounts won’t show up in your Home timeline. Mute accounts directly from their profile or Tweets.',
+          ),
           a(
             'b8e49590',
             'When you mute accounts, their messages will be filtered and sent to the bottom of your message request list.',
@@ -3954,14 +3957,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jc02ae67', 'Connected apps'),
           a('dd823129', 'Sessions'),
           a('e5e8a899', 'Loading apps'),
-          a('ge06310e', 'You don’t have any connected apps'),
+          a('hfa9a2c7', 'Manage connected apps in a flash'),
           a('dd1b86f9', function (e) {
             return 'by ' + e.name
           }),
-          a(
-            'ee4b16f8',
-            'When you connect a third-party app to your Twitter account, you are granting that app access to use your account.',
-          ),
+          a('c85d3443', 'Third-party apps you allow to access your Twitter account will show up here.'),
           a('b63b0b1c', 'Learn more'),
           a('c2cb5560', 'Current active session'),
           a('bca43fd0', 'Log out of other sessions'),
@@ -3991,6 +3991,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ed5ab169', 'Active now'),
           a('i23e2807', 'Apps'),
           a('hb12114e', 'Log out all other sessions'),
+          a('ge06310e', 'You don’t have any connected apps'),
+          a(
+            'ee4b16f8',
+            'When you connect a third-party app to your Twitter account, you are granting that app access to use your account.',
+          ),
           a('gf673efb', function (e) {
             return (
               'This will end ' + e.num + ' of your other active Twitter sessions. It won’t affect your current session.'
@@ -4135,7 +4140,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
           ),
           a('fabe1397', 'Autoblocks'),
-          a('c0786021', 'Autoblocked accounts'),
           a('db89884f', 'What’s Safety Mode?'),
           a(
             'a37e9b09',
@@ -4723,6 +4727,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d18909d4', 'Set reminder'),
           a('eaaca5db', 'Score'),
           a('b0b38773', 'Header media'),
+          a('jcdc32ff', 'Start listening'),
+          a('if420852', 'Play recording'),
           a('a7a119ec', 'Undock'),
           a('e8dff578', 'Edit this'),
           a('fcc64f01', 'Report this'),
@@ -4837,7 +4843,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
           a('gc6866f7', 'Logging out'),
           a('c20aaf3d', 'Error'),
-          a('i783ca9b', 'Choose an existing Moment, or create a new one.'),
+          a('ef70ab8b', 'Seize the Moment'),
+          a('ba977302', 'Choose an existing Moment or create a new one.'),
           a('ef90c7ae', 'Create new'),
           a('da0ea383', 'Creating Moment'),
           a('ha4a78a5', 'Publishing not available'),
@@ -4943,12 +4950,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fea74b66', function (e) {
             return '@' + e.screenName + '’s Moments'
           }),
-          a('e14206c3', 'You haven’t created any Moments'),
-          a('d1e5e327', 'When you do, it’ll show up here.'),
-          a('ee75768c', function (e) {
-            return '@' + e.screenName + ' hasn’t created any Moments'
+          a('ge3948d4', 'Waiting on a Moment'),
+          a('e2c8da06', 'Moments are curated stories about what’s happening—powered by Tweets.'),
+          a('df372b15', function (e) {
+            return '@' + e.screenName + '’s Moments will show up here.'
           }),
-          a('f5978663', 'When they do, they’ll show up here.'),
           a('a357d876', 'This account’s Moments are unavailable.'),
           a('i7e9ecf2', 'Pending changes'),
           a('e2e35f0d', 'The number of times your Moment was viewed'),
@@ -5529,6 +5535,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('jeb4436c', 'No reactions found'),
           a('db29b5a9', 'When someone reacts to this Tweet, it’ll show up here'),
+          a('f345dcda', 'Edit History'),
           a('a7fedd05', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
@@ -5599,8 +5606,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b081cdf6', function (e) {
             return '@' + e.screenName + ' hasn’t created any Lists'
           }),
+          a('f5978663', 'When they do, they’ll show up here.'),
           a('d2826908', 'Create a new List'),
           a('c80cb4e3', 'New List'),
+          a('d1e5e327', 'When you do, it’ll show up here.'),
           a('c09609d7', 'Create a List'),
           a('h243711c', 'You haven’t created any Lists yet'),
           a('b69e2f71', function (e) {
@@ -5877,26 +5886,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i099d32d', 'Followers you know'),
           a('ed51baba', 'You don’t have any Super Followers yet'),
           a('g65f4bab', 'You don’t have any followers yet'),
-          a('f9b11c03', 'You aren’t following anyone yet'),
+          a('c36cfddc', 'Looking for followers?'),
           a('a1f9e34c', 'You will find a list of everyone who Super Follows you here.'),
           a('j029a4db', 'When someone follows you, you’ll see them here.'),
-          a('fdf1390e', 'When you do, they’ll be listed here and you’ll see their Tweets in your timeline.'),
-          a('j759a7c2', function (e) {
-            return '@' + e.screenName + ' doesn’t have any Super Followers yet'
-          }),
+          a(
+            'a1c28c86',
+            'When someone follows this account, they’ll show up here. Tweeting and interacting with others helps boost followers.',
+          ),
+          a(
+            'cb1a15c7',
+            'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
+          ),
           a('d74ee2e2', function (e) {
             return '@' + e.screenName + ' doesn’t have any followers you know yet'
-          }),
-          a('f69e85ed', function (e) {
-            return '@' + e.screenName + ' doesn’t have any followers'
           }),
           a('ae5749c6', function (e) {
             return '@' + e.screenName + ' isn’t following anyone'
           }),
-          a('b2f3c46a', 'When someone Super Follows them, they’ll be listed here.'),
           a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
-          a('c0455f4a', 'When someone follows them, they’ll be listed here.'),
-          a('i8bd07a9', 'When they do, they’ll be listed here.'),
+          a('f8af4f48', 'Once they follow accounts, they’ll show up here.'),
           a('ce281ddf', 'You don’t have any follower requests'),
           a('d441fe05', 'When someone requests to follow you, it’ll show up here.'),
           a('j85d8d9f', 'No follow request pending for that user.'),
@@ -6252,6 +6260,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c9a642f9', 'Volume slider'),
           a('c27e60bf', 'Full screen'),
           a('d2969f1f', 'Exit full screen'),
+          a('a8a9cadb', 'this form'),
           a('c1658fc6', 'The media could not be played.'),
           a('ce871584', 'This broadcast has ended.'),
           a('c101eb95', 'This broadcast is not available.'),
@@ -8488,10 +8497,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'f02520a9',
+                key: 'a10d1459',
                 get: function () {
                   return [
-                    'When you mute words, you won’t get any new notifications for Tweets that include them or see Tweets with those words in your timeline. ',
+                    'When you mute words, you won’t get any new notifications for Tweets that include them or see Tweets with those words in your Home timeline. ',
                   ]
                 },
               },
@@ -9044,6 +9053,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c2588611',
                 get: function () {
                   return ['', ' at ' + this.props.time]
+                },
+              },
+              {
+                key: 'e570a97a',
+                get: function () {
+                  return [
+                    'This media has been disabled due to a copyright claim by ' +
+                      this.props.copyrightHolder +
+                      '. To dispute, please use ',
+                    '.',
+                  ]
                 },
               },
               {
