@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(311).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -628,12 +628,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64c1883', 'Compose new Message'),
           a('j7d0e835', 'Expand'),
           a('b08821f3', 'Back'),
-          a('b8aa3744', 'Send a message, get a message'),
-          a(
-            'j06309e1',
-            'Direct Messages are private conversations between you and other people on Twitter. Share Tweets, media, and more!',
-          ),
-          a('gee5150a', 'Start a conversation'),
           a('cf2d1047', 'Message requests'),
           a('da2f9224', function (e) {
             return e.count + ' unread messages'
@@ -646,6 +640,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a846382a', 'Search Direct Messages'),
           a('fd6150fc', 'Keeping you safer in Direct Messages'),
           a('d42d239f', 'Privacy Policy'),
+          a('ga086a54', 'Image attachment'),
           a('dedfd265', 'Sent a voice message'),
           a('h7033cac', 'You sent a voice message'),
           a('j7d81019', 'You sent a video'),
@@ -684,13 +679,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j302dba7', 'Conversation unpinned.'),
           a('b9dae4f4', 'Try a different search term'),
           a('e7fb2027', 'No more results'),
-          a('b92a21d8', function (e) {
-            return 'No results for ' + e.query
+          a('ae111c99', function (e) {
+            return 'No results for "' + e.query + '"'
           }),
-          a(
-            'jdc67c42',
-            'The term you entered did not bring up any results. Currently only people and groups are searchable.',
-          ),
+          a('efb6c153', 'Only people and groups are searchable.'),
           a('e8581ccd', 'The term you entered did not bring up any results'),
           a('f08940ab', 'Start new message'),
           a('gaae1fd5', 'Try searching for people or groups'),
@@ -715,7 +707,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
-          a('bef0039f', 'You don’t have any message requests'),
+          a('bece84b3', 'Your message requests are empty'),
           a('e7172d70', 'Additional messages'),
           a('e51be7c0', 'Learn more'),
           a('f37a6f73', 'Learn more'),
@@ -1160,13 +1152,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('af293dc2', 'People you follow'),
           a('h1053f7e', 'Only people you mention'),
           a('bf994ab2', 'Only you'),
-          a('cf7f7e39', 'Only people you mentioned')
-        a('dd211107', 'Delete Tweet?'),
+          a('cf7f7e39', 'Only people you mentioned'),
+          a('dd211107', 'Delete Tweet?'),
           a(
             'c55d72d0',
             'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
-          ),
-          a('a1aa840e', 'Your Tweet was deleted'),
+          )
+        a('a1aa840e', 'Your Tweet was deleted'),
           a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
           a('ea41975b', 'Edit Tweet'),
           a('e6c84638', 'Embed Tweet'),
@@ -2004,9 +1996,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'By ' + e.name + ' @' + e.screenName
           }),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
-          a('ae111c99', function (e) {
-            return 'No results for "' + e.query + '"'
-          }),
           a('fbf01e51', 'Search Communities'),
           a('a226497c', 'Create a new Community'),
           a('d7346631', 'You haven’t joined any Communities yet'),
@@ -2282,6 +2271,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ja1387a7',
             'Search results will include only your followers and people who allow Direct Messages from everyone.',
           ),
+          a('b92a21d8', function (e) {
+            return 'No results for ' + e.query
+          }),
           a(
             'ae85768c',
             'Search results include only your followers and people who allow Direct Messages from everyone.',
@@ -2315,10 +2307,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
             return e.formattedCount + ' member' + n(e.count, '', 's')
-          })
-        a('ad10c66d', 'You hid this Tweet'),
-          a('c6caed9c', 'You kept this Tweet'),
-          a('jf99d610', 'Community Feedback'),
+          }),
+          a('ad10c66d', 'You hid this Tweet'),
+          a('c6caed9c', 'You kept this Tweet')
+        a('jf99d610', 'Community Feedback'),
           a('j643a234', 'This Tweet was hidden by a moderator for breaking Community rules'),
           a('c730a21c', 'Here’s the rule it broke:'),
           a('a5baa7d1', 'Take a minute to review the rules. They help keep conversations safe and on track'),
@@ -2404,8 +2396,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b211849e', function (e) {
             return e.distance + ' m'
           }),
-          a('b25fe02d', 'You don’t have a message selected'),
-          a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
+          a('dbc85147', 'Select a message'),
+          a('a073658b', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
           a('hc73f03f', 'Your Account'),
           a('f15bfdb3', 'Account information'),
           a('a3841918', 'Email'),
@@ -2824,6 +2816,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ff1d68f7', 'Upload a photo of your ID'),
           a('bdada5a5', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
+          a('def5015c', function (e) {
+            return 'Back' + e.back_of_document
+          }),
           a('b09aade5', 'Upload back of ID'),
           a('b40ed190', 'Document'),
           a('c6650b55', 'Upload document'),
@@ -3548,11 +3543,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
           a('fe1fc83e', 'These are the age ranges associated with you.'),
           a('bf9c74d0', 'Do not use these age ranges for personalization.'),
-          a('cf0daa24', 'It may take a while to gather this information. Try again later.')
-        a('jc0b4d1c', 'Learn more'),
-          a('d9cbe351', function (e) {
-            return e.count + ' login event' + n(e.count, '', 's')
-          }),
+          a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
+          a('jc0b4d1c', 'Learn more')
+        a('d9cbe351', function (e) {
+          return e.count + ' login event' + n(e.count, '', 's')
+        }),
           a('de90b049', 'Places you’ve been'),
           a('cbd2ef58', function (e) {
             return e.count + ' location' + n(e.count, '', 's')
@@ -4562,6 +4557,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
+          a('a676a875', 'Welcome to your inbox!'),
+          a(
+            'j2611eab',
+            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
+          ),
+          a('efe8fda0', 'Write a message'),
           a('f041be05', function (e) {
             return e.stringCount + ' pending request' + n(e.count, '', 's')
           }),
@@ -4581,6 +4582,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
           ),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
+          a(
+            'ee8c0c8a',
+            'Incoming messages or group messages from people you don’t follow will show up here, and you’ll be able to accept or delete them.',
+          ),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
           a('a7013cb6', 'Send Tweet separately'),
@@ -4669,8 +4674,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j7fc4f9b', 'Auto-play GIFs'),
           a('a66b7760', 'Unlabeled GIF'),
-          a('b719e223', 'No results'),
-          a('aed71818', 'No GIFs came up for that search.'),
+          a('a723aefa', 'No GIFs found'),
+          a('a6ecfa0a', 'Try searching for something else instead.'),
           a('f5ff0d6f', function (e) {
             return e.category + ' — GIF Search'
           }),
@@ -4815,15 +4820,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
           }),
           a('j4824c52', 'Standard SMS fees may apply.'),
-          a('fca32b2f', 'Update your phone number'),
-          a('a3fad4f2', 'Log out of Twitter?'),
-          a('f12b4db4', function (e) {
-            return 'Log out of @' + e.screenName + '?'
-          }),
-          a(
-            'ia5ff8b6',
-            'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
-          )
+          a('fca32b2f', 'Update your phone number')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4840,7 +4837,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
+        a('a3fad4f2', 'Log out of Twitter?'),
+          a('f12b4db4', function (e) {
+            return 'Log out of @' + e.screenName + '?'
+          }),
+          a(
+            'ia5ff8b6',
+            'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
+          ),
+          a('ea3750c3', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
           a('gc6866f7', 'Logging out'),
           a('c20aaf3d', 'Error'),
           a('ef70ab8b', 'Seize the Moment'),
@@ -5090,7 +5095,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
           a('f4a654a3', 'View on Foursquare'),
           a('c09de2d4', 'Search timeline'),
-          a('d2918e88', 'Search settings'),
+          a('ba17c5ea', 'Search settings'),
           a('je5502ea', function (e) {
             return 'Including results for "' + e.suggestion + '"'
           }),
@@ -5282,6 +5287,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
           a('dab58e31', 'When you add people, they’ll show up here.'),
           a('fe3a4dcb', 'Learn more'),
+          a('b2fa5179', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
+          a(
+            'fd6c37eb',
+            'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.',
+          ),
+          a('ac3fd6e2', 'You don’t have any recommendations — yet'),
+          a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
           a('ea831526', 'Tweet with replies'),
           a('a90e1e67', function (e) {
             return 'Tweet' + e.noun
@@ -5536,6 +5548,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jeb4436c', 'No reactions found'),
           a('db29b5a9', 'When someone reacts to this Tweet, it’ll show up here'),
           a('f345dcda', 'Edit History'),
+          a('a7da0adb', function (e) {
+            return e.count + ' word' + n(e.count, '', 's')
+          }),
           a('a7fedd05', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
@@ -6018,16 +6033,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie2215a9', 'Magenta'),
           a('f106ce43', 'Orange'),
           a('acddd4d4', 'Red'),
-          a('cef9b061', 'Teal'),
-          a('d9daefc9', 'Dark Gray'),
+          a('cef9b061', 'Teal')
+        a('d9daefc9', 'Dark Gray'),
           a('j190bf19', 'LIVE'),
           a('e3fcbdba', 'Dismiss'),
           a('jc0b3a8b', 'Image description'),
           a('bed2945c', 'read image description'),
           a('j836de8a', 'Protected account'),
           a('f936caa6', 'Translator account'),
-          a('ac72ee4d', 'Verified account')
-        a('f49e0aac', 'Provides details about verified accounts.'),
+          a('ac72ee4d', 'Verified account'),
+          a('f49e0aac', 'Provides details about verified accounts.'),
           a('efb17190', 'Follows you'),
           a('a7c3a6ef', 'Super Follows you'),
           a('a3df6df8', 'Super Follower'),
@@ -8776,11 +8791,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'f0089e9c',
+                key: 'e7e44baa',
                 get: function () {
                   return [
-                    'The term you entered did not bring up any results. You may have mistyped your term or your ',
-                    ' could be protecting you from some potentially sensitive content.',
+                    'Try searching for something else, or check your ',
+                    ' to see if they’re protecting you from potentially sensitive content.',
                   ]
                 },
               },
