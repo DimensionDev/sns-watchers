@@ -2351,9 +2351,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
           a('i26eed05', 'Your selected unsent Tweets were deleted.'),
           a('db99d355', 'Loading unsent Tweets'),
-          a('cd0ae176', 'You don’t have any unsent Tweets'),
-          a('g29f1100', 'You don’t have any scheduled Tweets'),
-          a('f26ece11', 'When you do, you’ll find them here.'),
+          a('i63bfbff', 'Hold that thought'),
+          a('g32f19e3', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
           a('g700c084', 'Deleting unsent Tweets'),
           a('d4ebc798', 'Drafts'),
           a('e8bd47f1', 'Select all'),
@@ -3544,11 +3543,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe1fc83e', 'These are the age ranges associated with you.'),
           a('bf9c74d0', 'Do not use these age ranges for personalization.'),
           a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
-          a('jc0b4d1c', 'Learn more')
-        a('d9cbe351', function (e) {
-          return e.count + ' login event' + n(e.count, '', 's')
-        }),
-          a('de90b049', 'Places you’ve been'),
+          a('jc0b4d1c', 'Learn more'),
+          a('d9cbe351', function (e) {
+            return e.count + ' login event' + n(e.count, '', 's')
+          })
+        a('de90b049', 'Places you’ve been'),
           a('cbd2ef58', function (e) {
             return e.count + ' location' + n(e.count, '', 's')
           }),
@@ -4820,7 +4819,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
           }),
           a('j4824c52', 'Standard SMS fees may apply.'),
-          a('fca32b2f', 'Update your phone number')
+          a('fca32b2f', 'Update your phone number'),
+          a('a3fad4f2', 'Log out of Twitter?')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4837,10 +4837,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('a3fad4f2', 'Log out of Twitter?'),
-          a('f12b4db4', function (e) {
-            return 'Log out of @' + e.screenName + '?'
-          }),
+        a('f12b4db4', function (e) {
+          return 'Log out of @' + e.screenName + '?'
+        }),
           a(
             'ia5ff8b6',
             'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
@@ -5811,10 +5810,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
-          a('a9efb44c', 'You haven’t Tweeted yet'),
-          a('e47d867b', 'You haven’t posted any Super Follows Tweets'),
-          a('e63db400', 'When you post a Tweet, it’ll show up here.'),
-          a('f575c9e3', 'When you post a Super Follows Tweet, it’ll show up here.'),
+          a('g784d3c5', 'Send a Tweet'),
+          a('ib53965c', 'Don’t keep your Super Followers waiting'),
+          a(
+            'cb1915b0',
+            'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
+          ),
           a('dc1f8991', function (e) {
             return '@' + e.screenName + ' hasn’t Tweeted'
           }),
@@ -5872,13 +5873,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ia61ef0d', function (e) {
             return 'Loading Photos by @' + e.screenName
           }),
-          a('f7044029', function (e) {
-            return '@' + e.screenName + ' hasn’t Tweeted any photos or videos'
+          a('d7b9138b', function (e) {
+            return '@' + e.screenName + ' hasn’t Tweeted media'
           }),
-          a('a3d5456f', 'When they do, their media will show up here.'),
-          a('dfb3ead3', 'You haven’t Tweeted any photos or videos yet'),
+          a('c62ebbab', 'Once they do, those Tweets will show up here.'),
+          a('d1614227', 'Lights, camera … attachments!'),
           a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.'),
-          a('ae2be9ff', 'Tweet a photo or video'),
           a('d55be465', function (e) {
             return e.fullName + '’s Photos'
           }),
@@ -5961,8 +5961,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ia423ebb', 'Medium dark'),
           a('a2cf0941', 'Dark'),
           a('j824dc05', 'Search emojis'),
-          a('e39c4391', 'No results'),
-          a('f2625275', 'No emojis came up for that search.'),
+          a('fffb3383', 'No Emojis found'),
+          a('j3d20752', 'Try searching for something else instead.'),
           a('d67ad795', 'Choose your default skin tone'),
           a('e6388bfa', 'Clear all'),
           a('j7c67ec9', 'Recent'),
@@ -6033,11 +6033,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie2215a9', 'Magenta'),
           a('f106ce43', 'Orange'),
           a('acddd4d4', 'Red'),
-          a('cef9b061', 'Teal')
-        a('d9daefc9', 'Dark Gray'),
+          a('cef9b061', 'Teal'),
+          a('d9daefc9', 'Dark Gray'),
           a('j190bf19', 'LIVE'),
-          a('e3fcbdba', 'Dismiss'),
-          a('jc0b3a8b', 'Image description'),
+          a('e3fcbdba', 'Dismiss')
+        a('jc0b3a8b', 'Image description'),
           a('bed2945c', 'read image description'),
           a('j836de8a', 'Protected account'),
           a('f936caa6', 'Translator account'),
