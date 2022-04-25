@@ -1391,28 +1391,28 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             )
           }),
           a('de5071ba', 'Super Followers'),
-          a('b9f0a3f7', function (e) {
+          a('e39e136f', function (e) {
             return '' + e.userName
           }),
-          a('ca43a0c6', function (e) {
-            return e.replyUserName + ' and ' + e.otherUserName
+          a('bf470395', function (e) {
+            return e.userOneName + ' and ' + e.userTwoName
           }),
-          a('g2257dd2', function (e) {
-            return e.replyUserName + '`s'
+          a('j5156dfc', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
           }),
-          a('d339d100', function (e) {
+          a('i17c4d36', function (e) {
             return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
           }),
-          a('aeaba5d4', function (e) {
-            return e.userOneName + '`s'
+          a('bfa3b3d1', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
           }),
-          a('f48a8367', function (e) {
+          a('b951f725', function (e) {
             return (
               e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
             )
           }),
-          a('e9861a9c', function (e) {
-            return e.userOneName + '`s'
+          a('hf6163ec', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
           }),
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
@@ -6347,18 +6347,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12383', 'Heads up'),
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
-          a('fe0c6436', function (e) {
-            return 'Only @' + e.screenName + '’s Twitter Circle can see this Tweet'
-          }),
-          a('h7a1a9de', function (e) {
-            return (
-              'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
-            )
-          }),
-          a('d7e50a66', 'Learn more'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
+          a('d7e50a66', 'Learn more'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
           }),
@@ -7398,28 +7390,30 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'db690c7e',
+                key: 'b392dda9',
                 get: function () {
                   return [
                     'Replying to ',
-                    '. ' + this.props.userName + '`s Twitter Circle will also be able to see your reply.',
+                    '. ' +
+                      this.props.trustedFriendsTweetOwner +
+                      '’s Twitter Circle will also be able to see your reply.',
                   ]
                 },
               },
               {
-                key: 'gb7cb27c',
+                key: 'c1378cba',
                 get: function () {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
-                key: 'e9288772',
+                key: 'g390bde1',
                 get: function () {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
-                key: 'h0589b50',
+                key: 'd1b80c9c',
                 get: function () {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
