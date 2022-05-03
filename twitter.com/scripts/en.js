@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [125],
+    [126],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -373,6 +373,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d6b11d9c', 'Your direct message failed to send because some media didn’t upload.'),
           a('i7ca1446', 'Info'),
           a('i8ecae5b', 'You can no longer send messages to this person.'),
+          a('e535cae8', function (e) {
+            return e.count + ' Follower' + n(e.count, '', 's')
+          }),
           a('cf249088', function (e) {
             return 'Joined ' + e.joinDate
           }),
@@ -1136,6 +1139,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2414184', function (e) {
             return 'Quote Tweet' + n(e.count, '', 's')
           }),
+          a('aaad27c8', 'Author'),
           a('d172116a', 'Discover more'),
           a('iac074c3', 'More Tweets'),
           a('g11ebd34', 'More suggestions'),
@@ -1152,13 +1156,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h1053f7e', 'Only people you mention'),
           a('bf994ab2', 'Only you'),
           a('cf7f7e39', 'Only people you mentioned'),
-          a('dd211107', 'Delete Tweet?'),
-          a(
-            'c55d72d0',
-            'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
-          ),
-          a('a1aa840e', 'Your Tweet was deleted')
-        a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
+          a('dd211107', 'Delete Tweet?')
+        a(
+          'c55d72d0',
+          'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
+        ),
+          a('a1aa840e', 'Your Tweet was deleted'),
+          a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
           a('ea41975b', 'Edit Tweet'),
           a('e6c84638', 'Embed Tweet'),
           a('c66afdc2', function (e) {
@@ -2305,12 +2309,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cb59a0fd', 'Deny'),
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
           a('dffb0774', 'Nothing to review right now'),
-          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-          a('fa524057', 'Keep'),
-          a('f0306107', 'Report Tweet to Twitter')
-        a('ff0f7429', function (e) {
-          return e.formattedCount + ' member' + n(e.count, '', 's')
-        }),
+          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.')
+        a('fa524057', 'Keep'),
+          a('f0306107', 'Report Tweet to Twitter'),
+          a('ff0f7429', function (e) {
+            return e.formattedCount + ' member' + n(e.count, '', 's')
+          }),
           a('ad10c66d', 'You hid this Tweet'),
           a('c6caed9c', 'You kept this Tweet'),
           a('jf99d610', 'Community Feedback'),
@@ -3542,10 +3546,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f2fb9746',
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
           ),
-          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-          a('fe1fc83e', 'These are the age ranges associated with you.'),
-          a('bf9c74d0', 'Do not use these age ranges for personalization.')
-        a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
+          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.')
+        a('fe1fc83e', 'These are the age ranges associated with you.'),
+          a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+          a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
           a('jc0b4d1c', 'Learn more'),
           a('d9cbe351', function (e) {
             return e.count + ' login event' + n(e.count, '', 's')
@@ -4814,12 +4818,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d98c140e', 'Continue to Twitter'),
           a('e55188f0', 'You’re logged in to this account with this browser'),
           a('d55d8fe1', 'Do you want to continue with this account?'),
-          a('g806008e', 'Log in with a different account'),
-          a(
-            'b60eba9e',
-            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-          ),
-          a('ba939777', 'Are you a robot?')
+          a('g806008e', 'Log in with a different account')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,7 +4835,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f0816dee', 'Loading login page'),
+        a(
+          'b60eba9e',
+          'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+        ),
+          a('ba939777', 'Are you a robot?'),
+          a('f0816dee', 'Loading login page'),
           a('f9c558ae', function (e) {
             return 'Want to login with your phone, @' + e.userScreenName + '?'
           }),
@@ -5144,6 +5148,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j1e1cd3f', 'Discard your changes?'),
           a('if69307c', 'If you leave, your changes won’t be saved.'),
           a('c16c9568', 'Address'),
+          a('b5348efb', 'No hours'),
           a('c7a4adbf', 'Add address'),
           a('j163df8e', 'Invalid address'),
           a('e859201f', 'Add ZIP code'),
@@ -5152,6 +5157,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g114bddd', 'ZIP code'),
           a('i373e021', 'Enter email'),
           a('g33c0563', 'Invalid Email'),
+          a('ga71fbf3', 'Business hours'),
+          a('d7b7dbc9', 'No hours will be shown on your profile'),
+          a('db285564', 'Always open'),
+          a('a460e770', 'e.g. parks, beaches, online shopping'),
+          a('g7993eee', 'Custom hours'),
+          a('ddc88bff', 'Set business hours for each day'),
           a('b926e649', 'Enter website'),
           a('af9c8a3d', 'Open app'),
           a('c299a6cf', 'Thread'),
@@ -6009,10 +6020,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcd54327', 'grouped'),
           a('dec1d7ef', function (e) {
             return e.label + ', ' + e.group + ', ' + e.value
-          }),
-          a('f765bead', function (e) {
-            return 'unlabelled data, ' + e.group + ', ' + e.value
-          }),
+          })
+        a('f765bead', function (e) {
+          return 'unlabelled data, ' + e.group + ', ' + e.value
+        }),
           a('idea1817', function (e) {
             return e.label + ', ' + e.value
           }),
@@ -6028,10 +6039,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('hf4ffd4d', function (e) {
             return 'Play live ' + e.locVideoType
-          })
-        a('f6e90cd6', function (e) {
-          return e.hoursWord + ' ' + e.minutesWord + ' ' + e.secondsWord + ' long'
-        }),
+          }),
+          a('f6e90cd6', function (e) {
+            return e.hoursWord + ' ' + e.minutesWord + ' ' + e.secondsWord + ' long'
+          }),
           a('e7d191ec', function (e) {
             return 'Starting at ' + e.hoursWord + ' ' + e.minutesWord + ' ' + e.secondsWord
           }),
