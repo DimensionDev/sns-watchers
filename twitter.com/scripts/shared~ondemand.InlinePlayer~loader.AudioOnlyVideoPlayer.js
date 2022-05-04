@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [24],
+  [22],
   {
     '+/OB': function (t, e, i) {
       var n = i('ax0f'),

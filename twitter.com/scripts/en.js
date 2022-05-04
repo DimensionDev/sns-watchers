@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [126],
+    [124],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(307).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -645,20 +645,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd6150fc', 'Keeping you safer in Direct Messages'),
           a('d42d239f', 'Privacy Policy'),
           a('ga086a54', 'Image attachment'),
-          a('dedfd265', 'Sent a voice message'),
-          a('h7033cac', 'You sent a voice message'),
-          a('j7d81019', 'You sent a video'),
-          a('a876e58b', 'Sent a video'),
-          a('f80629ba', 'You sent a photo'),
-          a('bf584cd1', 'Sent a photo'),
-          a('eb3d722e', 'You sent a GIF'),
           a('a9cc8cfd', 'Sent a GIF'),
-          a('d5b762c8', 'You shared a Tweet'),
-          a('e20b65b0', 'Sent a sticker'),
-          a('d30c2d4f', 'You sent a sticker'),
+          a('eb3d722e', 'You sent a GIF'),
           a('e5bfe07d', 'Sent a link'),
           a('db53c017', 'You sent a link'),
+          a('bf584cd1', 'Sent a photo'),
+          a('f80629ba', 'You sent a photo'),
+          a('e20b65b0', 'Sent a sticker'),
+          a('d30c2d4f', 'You sent a sticker'),
+          a('a876e58b', 'Sent a video'),
+          a('j7d81019', 'You sent a video'),
+          a('dedfd265', 'Sent a voice message'),
+          a('h7033cac', 'You sent a voice message'),
           a('b1a614fe', 'Shared a Tweet'),
+          a('d5b762c8', 'You shared a Tweet'),
           a('a30a206d', 'Got it!'),
           a('ib4b1b85', 'Introducing pinned conversations'),
           a('bd3ca2ee', function (e) {
@@ -2296,6 +2296,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a340df66', function (e) {
             return '@' + e.screenName + ' was denied and can’t join your Community'
           }),
+          a('jd8aae9d', function (e) {
+            return 'Looks like we can’t approve @' + e.screenName + ' right now. Please try again later.'
+          }),
+          a('i580e148', function (e) {
+            return 'Looks like we can’t deny @' + e.screenName + ' right now. Please try again later.'
+          }),
           a(
             'g8907fde',
             'You’ve blocked this person. If their membership is approved, you’ll need to unblock them to see their Tweets.',
@@ -2307,10 +2313,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7f1e58a', 'Follows you'),
           a('i22835dd', 'Approve'),
           a('cb59a0fd', 'Deny'),
-          a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
-          a('dffb0774', 'Nothing to review right now'),
-          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.')
-        a('fa524057', 'Keep'),
+          a('dffb0774', 'Nothing to review right now')
+        a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
+          a('fa524057', 'Keep'),
           a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
             return e.formattedCount + ' member' + n(e.count, '', 's')
@@ -3545,9 +3550,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f2fb9746',
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-          ),
-          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.')
-        a('fe1fc83e', 'These are the age ranges associated with you.'),
+          )
+        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
+          a('fe1fc83e', 'These are the age ranges associated with you.'),
           a('bf9c74d0', 'Do not use these age ranges for personalization.'),
           a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
           a('jc0b4d1c', 'Learn more'),
@@ -4817,8 +4822,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('d98c140e', 'Continue to Twitter'),
           a('e55188f0', 'You’re logged in to this account with this browser'),
-          a('d55d8fe1', 'Do you want to continue with this account?'),
-          a('g806008e', 'Log in with a different account')
+          a('d55d8fe1', 'Do you want to continue with this account?')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4835,10 +4839,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'b60eba9e',
-          'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-        ),
+        a('g806008e', 'Log in with a different account'),
+          a(
+            'b60eba9e',
+            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+          ),
           a('ba939777', 'Are you a robot?'),
           a('f0816dee', 'Loading login page'),
           a('f9c558ae', function (e) {
@@ -5405,6 +5410,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jede3014', 'Your promotion is under review'),
           a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
+          a('hb52cc49', 'Please try again later.'),
+          a('fc6cbba1', 'Nothing to see here - yet'),
+          a('b80a53c7', 'Once more data is collected, you’ll see that information here.'),
           a('ge538875', 'Metrics for the video you shared'),
           a('dcc05a7d', 'Views'),
           a('ca7e10d7', 'Unique views'),
@@ -5816,8 +5824,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i7059f55', 'Opens'),
           a('a7391347', 'No hours available'),
           a('je822560', 'Twitter Direct Message'),
-          a('i019c8b5', 'Call'),
-          a('d0f4e194', 'Text'),
+          a('ha9b8035', function (e) {
+            return 'Call ' + e.phoneCode + ' ' + e.phoneNumber
+          }),
+          a('g2244521', function (e) {
+            return 'Text ' + e.phoneCode + ' ' + e.phoneNumber
+          }),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
             'hf06085d',
@@ -6004,26 +6016,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j7c67ec9', 'Recent'),
           a('da539d38', 'Search results'),
           a('d95eb227', 'Back'),
-          a('af8fa2ad', 'Close'),
-          a('e0bdea76', function (e) {
-            return (
-              e.title +
-              '. A vertical ' +
-              e.chartType +
-              ' bar chart with data values spanning from ' +
-              e.minValue +
-              ' to ' +
-              e.maxValue
-            )
-          }),
+          a('af8fa2ad', 'Close')
+        a('e0bdea76', function (e) {
+          return (
+            e.title +
+            '. A vertical ' +
+            e.chartType +
+            ' bar chart with data values spanning from ' +
+            e.minValue +
+            ' to ' +
+            e.maxValue
+          )
+        }),
           a('f7b30767', 'stacked'),
           a('hcd54327', 'grouped'),
           a('dec1d7ef', function (e) {
             return e.label + ', ' + e.group + ', ' + e.value
-          })
-        a('f765bead', function (e) {
-          return 'unlabelled data, ' + e.group + ', ' + e.value
-        }),
+          }),
+          a('f765bead', function (e) {
+            return 'unlabelled data, ' + e.group + ', ' + e.value
+          }),
           a('idea1817', function (e) {
             return e.label + ', ' + e.value
           }),
@@ -6449,6 +6461,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Unblock @' + e.screenName + '?'
           }),
           a('a4c5be9b', 'They will be able to follow you and view your Tweets.'),
+          a('cda66545', function (e) {
+            return 'Click to ' + e.followType + ' ' + e.screenName
+          }),
+          a('a8d77a25', function (e) {
+            return 'Click to leave ' + e.screenName
+          }),
           a('d0f4f3d9', function (e) {
             return e.followType + ' ' + e.screenName
           }),
@@ -6576,6 +6594,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fc8a13c5', 'Cheer'),
           a('e557ad8d', 'Active'),
           a('e3a58c27', 'Expand'),
+          a('f8b21225', 'Join'),
           a('db355331', function (e) {
             return e.team + ' won'
           }),
@@ -6703,8 +6722,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -6968,54 +6987,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'b3a2b11c',
-                get: function () {
-                  return ['', ':']
-                },
-              },
-              {
-                key: 'be5a9616',
-                get: function () {
-                  return ['', ' sent a voice message']
-                },
-              },
-              {
-                key: 'eee2f120',
-                get: function () {
-                  return ['', ' sent a video']
-                },
-              },
-              {
-                key: 'c1e1f848',
-                get: function () {
-                  return ['', ' sent a photo']
-                },
-              },
-              {
-                key: 'dc4b75a1',
-                get: function () {
-                  return ['', ' sent a GIF']
-                },
-              },
-              {
-                key: 'dfd2b3b9',
-                get: function () {
-                  return ['', ' shared a Tweet']
-                },
-              },
-              {
-                key: 'c7e2464e',
-                get: function () {
-                  return ['', ' sent a sticker']
-                },
-              },
-              {
-                key: 'hcbbbb34',
-                get: function () {
-                  return ['', ' sent a link']
-                },
-              },
-              {
                 key: 'i005f1fd',
                 get: function () {
                   return ['You responded to ', '’s Fleet: ']
@@ -7025,6 +6996,54 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'b35cee40',
                 get: function () {
                   return ['Responded to your Fleet: ']
+                },
+              },
+              {
+                key: 'dc4b75a1',
+                get: function () {
+                  return ['', ' sent a GIF']
+                },
+              },
+              {
+                key: 'hcbbbb34',
+                get: function () {
+                  return ['', ' sent a link']
+                },
+              },
+              {
+                key: 'c1e1f848',
+                get: function () {
+                  return ['', ' sent a photo']
+                },
+              },
+              {
+                key: 'c7e2464e',
+                get: function () {
+                  return ['', ' sent a sticker']
+                },
+              },
+              {
+                key: 'eee2f120',
+                get: function () {
+                  return ['', ' sent a video']
+                },
+              },
+              {
+                key: 'be5a9616',
+                get: function () {
+                  return ['', ' sent a voice message']
+                },
+              },
+              {
+                key: 'dfd2b3b9',
+                get: function () {
+                  return ['', ' shared a Tweet']
+                },
+              },
+              {
+                key: 'b3a2b11c',
+                get: function () {
+                  return ['', ':']
                 },
               },
               {
@@ -9271,7 +9290,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
