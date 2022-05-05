@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(307).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(308).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1198,6 +1198,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('afac3b9d', 'Pin Tweet to profile?'),
           a('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
           a('aaef1b48', 'Your Tweet was pinned to your profile.'),
+          a('ee793c74', 'Pin to Community Timeline'),
+          a('daeb6e92', 'Pin this Tweet'),
+          a('i70e903c', 'This will appear at the top of the Community feed and replace any previously pinned Tweets.'),
           a('f5cdcc2b', 'Not interested in this ad'),
           a('b99364a5', function (e) {
             return 'Remove @' + e.screenName + ' from Community'
@@ -1214,6 +1217,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j1b8c867', 'Unpin Tweet from profile?'),
           a('eb2d59f3', 'This will no longer appear automatically at the top of your profile.'),
           a('i0086d6b', 'Your Tweet was unpinned from your profile'),
+          a('c011d3e5', 'Unpin from Community Timeline'),
+          a('a59bf5a4', 'Unpin this Tweet'),
+          a('d8ff2470', 'This tweet will no longer show up at the top of the Community timeline.'),
           a('f9478972', 'View hidden replies'),
           a('bb16cc75', 'Leave this conversation'),
           a('de21174c', 'You’ve left this conversation'),
@@ -1612,6 +1618,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4e811fb', 'Connecting...'),
           a('cc8f82bb', 'Join this space'),
           a('e51df2e6', 'Your mic will be off to start'),
+          a('d2790650', 'Super Following has its perks'),
+          a('a8c751ae', function (e) {
+            return (
+              'One of the perks of being a Super Follower is exclusive access to Spaces like this one. Only @' +
+              e.screenName +
+              '’s Super Followers can join this Space.'
+            )
+          }),
           a('h87bdd64', 'Ticketed Spaces are currently only available on iOS and Android'),
           a('ba55e824', 'Ended'),
           a('aadbc746', function (e) {
@@ -2295,10 +2309,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a340df66', function (e) {
             return '@' + e.screenName + ' was denied and can’t join your Community'
-          }),
-          a('jd8aae9d', function (e) {
-            return 'Looks like we can’t approve @' + e.screenName + ' right now. Please try again later.'
-          }),
+          })
+        a('jd8aae9d', function (e) {
+          return 'Looks like we can’t approve @' + e.screenName + ' right now. Please try again later.'
+        }),
           a('i580e148', function (e) {
             return 'Looks like we can’t deny @' + e.screenName + ' right now. Please try again later.'
           }),
@@ -2313,8 +2327,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7f1e58a', 'Follows you'),
           a('i22835dd', 'Approve'),
           a('cb59a0fd', 'Deny'),
-          a('dffb0774', 'Nothing to review right now')
-        a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
+          a('dffb0774', 'Nothing to review right now'),
+          a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('fa524057', 'Keep'),
           a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
@@ -3530,11 +3544,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f748b0fc',
             'Twitter will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, Twitter may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to Twitter or email addresses and phone numbers similar to those linked to your Twitter account.',
           ),
-          a('aa023546', 'Personalize based on the places you’ve been'),
-          a(
-            'cb2ed998',
-            'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-          ),
+          a('aa023546', 'Personalize based on the places you’ve been')
+        a(
+          'cb2ed998',
+          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
+        ),
           a('b85127bc', 'Allow use of where you see Twitter content across the web'),
           a(
             'b276596b',
@@ -3550,8 +3564,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f2fb9746',
             'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-          )
-        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
+          ),
+          a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
           a('fe1fc83e', 'These are the age ranges associated with you.'),
           a('bf9c74d0', 'Do not use these age ranges for personalization.'),
           a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
@@ -4808,21 +4822,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'caac124e',
             'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
-          ),
-          a(
-            'ab77e0b8',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
-          ),
-          a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
-          a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
-          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
-          a(
-            'g4b108ee',
-            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
-          ),
-          a('d98c140e', 'Continue to Twitter'),
-          a('e55188f0', 'You’re logged in to this account with this browser'),
-          a('d55d8fe1', 'Do you want to continue with this account?')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4839,7 +4839,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('g806008e', 'Log in with a different account'),
+        a(
+          'ab77e0b8',
+          'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+        ),
+          a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
+          a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
+          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
+          a(
+            'g4b108ee',
+            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
+          ),
+          a('d98c140e', 'Continue to Twitter'),
+          a('e55188f0', 'You’re logged in to this account with this browser'),
+          a('d55d8fe1', 'Do you want to continue with this account?'),
+          a('g806008e', 'Log in with a different account'),
           a(
             'b60eba9e',
             'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
@@ -6008,26 +6022,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7d4ee85', 'Medium'),
           a('ia423ebb', 'Medium dark'),
           a('a2cf0941', 'Dark'),
-          a('j824dc05', 'Search emojis'),
-          a('fffb3383', 'No Emojis found'),
+          a('j824dc05', 'Search emojis')
+        a('fffb3383', 'No Emojis found'),
           a('j3d20752', 'Try searching for something else instead.'),
           a('d67ad795', 'Choose your default skin tone'),
           a('e6388bfa', 'Clear all'),
           a('j7c67ec9', 'Recent'),
           a('da539d38', 'Search results'),
           a('d95eb227', 'Back'),
-          a('af8fa2ad', 'Close')
-        a('e0bdea76', function (e) {
-          return (
-            e.title +
-            '. A vertical ' +
-            e.chartType +
-            ' bar chart with data values spanning from ' +
-            e.minValue +
-            ' to ' +
-            e.maxValue
-          )
-        }),
+          a('af8fa2ad', 'Close'),
+          a('e0bdea76', function (e) {
+            return (
+              e.title +
+              '. A vertical ' +
+              e.chartType +
+              ' bar chart with data values spanning from ' +
+              e.minValue +
+              ' to ' +
+              e.maxValue
+            )
+          }),
           a('f7b30767', 'stacked'),
           a('hcd54327', 'grouped'),
           a('dec1d7ef', function (e) {
