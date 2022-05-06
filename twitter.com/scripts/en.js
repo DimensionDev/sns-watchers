@@ -632,6 +632,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64c1883', 'Compose new Message'),
           a('j7d0e835', 'Expand'),
           a('b08821f3', 'Back'),
+          a('a676a875', 'Welcome to your inbox!'),
+          a(
+            'j2611eab',
+            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
+          ),
+          a('efe8fda0', 'Write a message'),
           a('cf2d1047', 'Message requests'),
           a('da2f9224', function (e) {
             return e.count + ' unread messages'
@@ -1153,14 +1159,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2d04222', 'Choose who can reply to this Tweet. Anyone mentioned can always reply.'),
           a('baffe39a', 'Everyone'),
           a('af293dc2', 'People you follow'),
-          a('h1053f7e', 'Only people you mention'),
-          a('bf994ab2', 'Only you'),
+          a('h1053f7e', 'Only people you mention')
+        a('bf994ab2', 'Only you'),
           a('cf7f7e39', 'Only people you mentioned'),
-          a('dd211107', 'Delete Tweet?')
-        a(
-          'c55d72d0',
-          'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
-        ),
+          a('dd211107', 'Delete Tweet?'),
+          a(
+            'c55d72d0',
+            'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
+          ),
           a('a1aa840e', 'Your Tweet was deleted'),
           a('c189f2dd', 'Something went wrong. Try deleting your Tweet again in a minute.'),
           a('ea41975b', 'Edit Tweet'),
@@ -2302,17 +2308,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cd133485', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
-          a('addbb11e', 'No new membership requests'),
-          a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
+          a('addbb11e', 'No new membership requests')
+        a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
           a('d7f13fb8', function (e) {
             return '@' + e.screenName + ' was approved and is now a member of your Community'
           }),
           a('a340df66', function (e) {
             return '@' + e.screenName + ' was denied and can’t join your Community'
-          })
-        a('jd8aae9d', function (e) {
-          return 'Looks like we can’t approve @' + e.screenName + ' right now. Please try again later.'
-        }),
+          }),
+          a('jd8aae9d', function (e) {
+            return 'Looks like we can’t approve @' + e.screenName + ' right now. Please try again later.'
+          }),
           a('i580e148', function (e) {
             return 'Looks like we can’t deny @' + e.screenName + ' right now. Please try again later.'
           }),
@@ -3538,17 +3544,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'b0b3ed8e',
             'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
-          ),
-          a('f6c8ccc7', 'Personalize based on your inferred identity'),
+          )
+        a('f6c8ccc7', 'Personalize based on your inferred identity'),
           a(
             'f748b0fc',
             'Twitter will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, Twitter may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to Twitter or email addresses and phone numbers similar to those linked to your Twitter account.',
           ),
-          a('aa023546', 'Personalize based on the places you’ve been')
-        a(
-          'cb2ed998',
-          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-        ),
+          a('aa023546', 'Personalize based on the places you’ve been'),
+          a(
+            'cb2ed998',
+            'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
+          ),
           a('b85127bc', 'Allow use of where you see Twitter content across the web'),
           a(
             'b276596b',
@@ -4559,7 +4565,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
           a('h7693c0d', 'You can upload and Tweet videos that are up to 10-minutes long.'),
           a('cac1046d', '1080p video uploads'),
-          a('j813bbee', 'Upload 1080p videos from your desktop.'),
+          a('ea761737', 'Share your favorite moments with 1080p (Full HD) video.'),
           a('baf97715', 'Your features will be available for the remainder of your billing period.'),
           a('fff413dc', 'Manage payment and subscription info'),
           a('h80834de', 'other'),
@@ -4587,12 +4593,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
-          a('a676a875', 'Welcome to your inbox!'),
-          a(
-            'j2611eab',
-            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
-          ),
-          a('efe8fda0', 'Write a message'),
           a('f041be05', function (e) {
             return e.stringCount + ' pending request' + n(e.count, '', 's')
           }),
@@ -5141,6 +5141,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f386777a', 'Switch account type'),
           a('d4b6a6ef', 'Profile Spotlight'),
           a('d834aec4', 'Newsletter'),
+          a('jb38600c', 'None'),
           a('ia492079', 'Yes, switch'),
           a('a9b5e3a9', 'No, cancel'),
           a('cb55eccd', 'Switch to Personal account'),
@@ -5159,6 +5160,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c701200b', 'Switched to Business account'),
           a('acd8da09', 'Switched to Creator account'),
           a('e2760643', 'Currently not all modules are supported on all Twitter clients'),
+          a('ce4185bc', 'More Spotlights coming soon'),
           a('b5aed332', 'No spotlights available'),
           a('fc7b0980', 'This will be visible to the public.'),
           a('ie85a7a8', 'Delete your business info?'),
@@ -6020,10 +6022,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b554fcf3', 'Light'),
           a('j590b148', 'Medium light'),
           a('e7d4ee85', 'Medium'),
-          a('ia423ebb', 'Medium dark'),
-          a('a2cf0941', 'Dark'),
-          a('j824dc05', 'Search emojis')
-        a('fffb3383', 'No Emojis found'),
+          a('ia423ebb', 'Medium dark')
+        a('a2cf0941', 'Dark'),
+          a('j824dc05', 'Search emojis'),
+          a('fffb3383', 'No Emojis found'),
           a('j3d20752', 'Try searching for something else instead.'),
           a('d67ad795', 'Choose your default skin tone'),
           a('e6388bfa', 'Clear all'),
