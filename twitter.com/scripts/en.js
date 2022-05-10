@@ -5621,6 +5621,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f92e3842', 'When someone (even you) reacts to this Tweet, it’ll show up here.'),
           a('f345dcda', 'Edit History'),
           a('h2fcc531', 'Loading history'),
+          a('ced3c859', 'Edited'),
           a('a7da0adb', function (e) {
             return e.count + ' word' + n(e.count, '', 's')
           }),
@@ -6015,12 +6016,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'g9c2dec7',
             'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
+          )
+        a('a138aeb2', 'JavaScript is not available.'),
+          a(
+            'ddf1d67b',
+            'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
           ),
-          a('a138aeb2', 'JavaScript is not available.')
-        a(
-          'ddf1d67b',
-          'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
-        ),
           a(
             'f1a9e3a1',
             'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
@@ -8952,6 +8953,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c9927418',
                 get: function () {
                   return ['This Tweet doesn’t have any hidden replies, but Protected Tweets might be filtered out. ']
+                },
+              },
+              {
+                key: 'a20c0721',
+                get: function () {
+                  return ['Last edited: ']
                 },
               },
               {
