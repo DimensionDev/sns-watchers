@@ -26550,7 +26550,9 @@ window.__SCRIPTS_LOADED__.polyfills &&
                     }
                   })(e),
                 ),
-              )
+              ).then(function () {
+                t.language = e
+              })
             }),
             function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o

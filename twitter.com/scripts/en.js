@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [124],
+    [126],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -21,9 +21,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
       },
       oTxr: function (e, t, o) {
         'use strict'
-        var a = o('3XMw')._register('en', {
+        var a = o('qqsb')._register('en', {
           get emoji() {
-            return o.e(308).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(310).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -2063,7 +2063,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
           a('gedb877c', 'All Communities are publicly visible.'),
           a('a0e3ece4', 'Community Detail'),
-          a('d601fc2f', 'Latest'),
           a('e6057013', 'Ask to join'),
           a('b533478f', 'Pending'),
           a('aa7ae3f6', 'Joined'),
@@ -2091,6 +2090,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b32c4fb0', 'Once there are, you’ll see them here.'),
           a('h5245afa', 'Community'),
           a('f05dbeff', 'Loading Tweets'),
+          a('ae7a45a1', 'For You'),
+          a('jd83e5a5', 'Recommnended Tweets first'),
+          a('d601fc2f', 'Latest'),
+          a('b2aef4d7', 'Newest Tweets first'),
           a('bf359e0d', 'About your new Community'),
           a(
             'e8fcdd3a',
@@ -2305,11 +2308,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ae85768c',
             'Search results include only your followers and people who allow Direct Messages from everyone.',
           ),
-          a('cd133485', 'Invite'),
-          a('hb1e378e', 'Invited'),
+          a('cd133485', 'Invite')
+        a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
-          a('addbb11e', 'No new membership requests')
-        a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
+          a('addbb11e', 'No new membership requests'),
+          a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
           a('d7f13fb8', function (e) {
             return '@' + e.screenName + ' was approved and is now a member of your Community'
           }),
@@ -3535,8 +3538,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e8313b32',
             'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
           ),
-          a('f1d46fd5', 'Yes, I’m sure'),
-          a('ib3357a5', 'Personalized ads'),
+          a('f1d46fd5', 'Yes, I’m sure')
+        a('ib3357a5', 'Personalized ads'),
           a(
             'c4ca418c',
             'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
@@ -3544,8 +3547,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'b0b3ed8e',
             'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
-          )
-        a('f6c8ccc7', 'Personalize based on your inferred identity'),
+          ),
+          a('f6c8ccc7', 'Personalize based on your inferred identity'),
           a(
             'f748b0fc',
             'Twitter will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, Twitter may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to Twitter or email addresses and phone numbers similar to those linked to your Twitter account.',
@@ -4810,19 +4813,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j0310b9b', 'Browse Topics'),
           a('i0560231', 'See more Topics'),
           a('g2b8acd4', 'Log in to Twitter'),
-          a('bdc9d8a2', 'Login on Twitter'),
-          a(
-            'c2ab20ab',
-            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
-          ),
-          a(
-            'id312f0a',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
-          ),
-          a(
-            'caac124e',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
-          )
+          a('bdc9d8a2', 'Login on Twitter')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4840,9 +4831,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             })(e, t)
         }
         a(
-          'ab77e0b8',
-          'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+          'c2ab20ab',
+          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
         ),
+          a(
+            'id312f0a',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
+          ),
+          a(
+            'caac124e',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
+          ),
+          a(
+            'ab77e0b8',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+          ),
           a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
           a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
           a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
@@ -5168,8 +5171,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d3a097a2', 'Yes, discard'),
           a('j1e1cd3f', 'Discard your changes?'),
           a('if69307c', 'If you leave, your changes won’t be saved.'),
-          a('c16c9568', 'Address'),
           a('b5348efb', 'No hours'),
+          a('db285564', 'Always open'),
+          a('g7993eee', 'Custom hours'),
+          a('c16c9568', 'Address'),
           a('c7a4adbf', 'Add address'),
           a('j163df8e', 'Invalid address'),
           a('e859201f', 'Add ZIP code'),
@@ -5179,11 +5184,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i373e021', 'Enter email'),
           a('g33c0563', 'Invalid Email'),
           a('ga71fbf3', 'Business hours'),
+          a('ca2ba204', 'Edit custom hours'),
           a('d7b7dbc9', 'No hours will be shown on your profile'),
-          a('db285564', 'Always open'),
           a('a460e770', 'e.g. parks, beaches, online shopping'),
-          a('g7993eee', 'Custom hours'),
           a('ddc88bff', 'Set business hours for each day'),
+          a('e9cf3af8', 'Monday'),
+          a('d5868a7d', 'Tuesday'),
+          a('b5dfdb46', 'Wednesday'),
+          a('ab8095a1', 'Thursday'),
+          a('e298e6f2', 'Friday'),
+          a('ef519654', 'Saturday'),
+          a('e9f55db7', 'Sunday'),
+          a('f9f911f4', 'Search time zone'),
+          a('c02e7e3b', 'Loading...'),
+          a('d21a4252', 'Add more hours'),
+          a('ac6ce1cf', 'From'),
+          a('c647aac8', 'To'),
           a('b926e649', 'Enter website'),
           a('af9c8a3d', 'Open app'),
           a('c299a6cf', 'Thread'),
@@ -5265,8 +5281,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e0dded5d', 'Engagement'),
           a('a097f7ba', 'Dates'),
           a('c03f15ca', 'Any language'),
-          a('c647aac8', 'To'),
-          a('ac6ce1cf', 'From'),
           a('cb334136', 'Links'),
           a('e8f38622', 'Include Tweets with links'),
           a('ie23eef9', 'Only show Tweets with links'),
@@ -6002,11 +6016,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'g9c2dec7',
             'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
           ),
-          a('a138aeb2', 'JavaScript is not available.'),
-          a(
-            'ddf1d67b',
-            'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
-          ),
+          a('a138aeb2', 'JavaScript is not available.')
+        a(
+          'ddf1d67b',
+          'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
+        ),
           a(
             'f1a9e3a1',
             'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
@@ -6022,8 +6036,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b554fcf3', 'Light'),
           a('j590b148', 'Medium light'),
           a('e7d4ee85', 'Medium'),
-          a('ia423ebb', 'Medium dark')
-        a('a2cf0941', 'Dark'),
+          a('ia423ebb', 'Medium dark'),
+          a('a2cf0941', 'Dark'),
           a('j824dc05', 'Search emojis'),
           a('fffb3383', 'No Emojis found'),
           a('j3d20752', 'Try searching for something else instead.'),
@@ -6089,6 +6103,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1574a4a', function (e) {
             return e.listItem1 + ', and ' + e.listItem2
           }),
+          a('d6885d3d', 'View Community'),
           a('eba26609', 'Blue'),
           a('hc196b78', 'Plum'),
           a('c8bc49d2', 'Purple'),
@@ -6188,6 +6203,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a6ada13d', 'Shop now'),
           a('e1bddf52', 'Drag to rotate'),
+          a('b8b6344a', 'Unmute'),
+          a('ec8ab8b4', 'Mute'),
+          a('c9a642f9', 'Volume slider'),
+          a('gaeb997d', 'More'),
+          a('f8b21225', 'Join'),
+          a('b3d828ed', 'Joined'),
+          a('fb236727', 'Pause'),
+          a('b05a39b2', 'View'),
           a('d0e7b11b', function (e) {
             return e.date + ' at ' + e.time
           }),
@@ -6195,7 +6218,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.relativeDay
           }),
           a('fbc2003b', 'Ended'),
-          a('b3d828ed', 'Joined'),
           a('ca677073', 'Start listening'),
           a('j1ee4dad', 'Space'),
           a('cc1f75ab', 'Spaces'),
@@ -6271,7 +6293,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '+' + e.count + ' other' + n(e.count, '', 's')
           }),
           a('b03e1629', 'Listen live'),
-          a('fb236727', 'Pause'),
           a('fc45ccc5', 'Embedded video'),
           a('a9edea48', 'Reload'),
           a('f1ad0df1', function (e) {
@@ -6335,9 +6356,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.volumePercent + ' percent'
           }),
           a('e9bd453e', 'Replay'),
-          a('ec8ab8b4', 'Mute'),
-          a('b8b6344a', 'Unmute'),
-          a('c9a642f9', 'Volume slider'),
           a('c27e60bf', 'Full screen'),
           a('d2969f1f', 'Exit full screen'),
           a('a8a9cadb', 'this form'),
@@ -6530,7 +6548,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e6e16811', 'Square'),
           a('a35a5b10', 'Followers you know'),
           a('fc8cd112', 'Not followed by anyone you’re following'),
-          a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -6588,7 +6605,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Recommended Topic: ' + e.topicName
           }),
           a('j2eea179', 'The following media includes potentially sensitive content.'),
-          a('b05a39b2', 'View'),
           a('f34e6516', 'and'),
           a('ff31714c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
@@ -6610,7 +6626,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fc8a13c5', 'Cheer'),
           a('e557ad8d', 'Active'),
           a('e3a58c27', 'Expand'),
-          a('f8b21225', 'Join'),
           a('db355331', function (e) {
             return e.team + ' won'
           }),
@@ -6738,8 +6753,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          u = {}
-        function d(e) {
+          d = {}
+        function u(e) {
           return e
         }
         var f = (function (e) {
@@ -9306,7 +9321,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[u[e]] || d)
+                    o = ((e = this.props.$i18n), s[d[e]] || u)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
@@ -11918,6 +11933,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j16ccfa2', l.a1608008627),
           a('c93cb976', l.a1321204873),
           a('c32b252a', l.a1653031457)
+      },
+      qqsb: function (e, t, o) {
+        e.exports = o('k/n2')
       },
       rwV7: function (e, t) {
         e.exports = !1
