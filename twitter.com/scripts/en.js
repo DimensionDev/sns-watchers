@@ -3010,6 +3010,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Provide a link that references your account as the official Twitter account of the professional sports figure related to this request. The reference must come from the official website of a Verified entity.',
           ),
           a('a6278dcb', 'Twitter handle'),
+          a('acd5ca13', 'Try again. Usernames don’t include special characters like @, $, or #.'),
           a('ec6801cb', 'Your request has been sent!'),
           a('i6ef95ec', 'survey'),
           a(
@@ -3534,12 +3535,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b934e0ea', 'Disable personalization and data?'),
           a('bf917ce9', 'This may make the Tweets and ads you see less relevant.'),
           a('a148acb9', 'Disable'),
-          a(
-            'e8313b32',
-            'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
-          ),
-          a('f1d46fd5', 'Yes, I’m sure')
-        a('ib3357a5', 'Personalized ads'),
+          a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.')
+        a('f1d46fd5', 'Yes, I’m sure'),
+          a('ib3357a5', 'Personalized ads'),
           a(
             'c4ca418c',
             'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
@@ -4810,10 +4808,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
           ),
           a('a399ed2f', 'Let’s go'),
-          a('j0310b9b', 'Browse Topics'),
-          a('i0560231', 'See more Topics'),
           a('g2b8acd4', 'Log in to Twitter'),
-          a('bdc9d8a2', 'Login on Twitter')
+          a('bdc9d8a2', 'Login on Twitter'),
+          a(
+            'c2ab20ab',
+            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4831,13 +4831,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             })(e, t)
         }
         a(
-          'c2ab20ab',
-          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          'id312f0a',
+          'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
         ),
-          a(
-            'id312f0a',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
-          ),
           a(
             'caac124e',
             'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
@@ -5595,6 +5591,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ee5cb3ef',
             'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.',
           ),
+          a('i29ecb47', 'No Tweet Likes yet'),
+          a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
           a('b13974f0', 'Loading users who liked this Tweet'),
           a('hfb8fd58', 'Loading users who retweeted this Tweet'),
           a('d25289b4', 'Retweeted by'),
@@ -6012,12 +6010,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d822ae43', 'Twitter Purchaser Terms'),
           a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
-          a('h85446cd', 'This browser is no longer supported.'),
-          a(
-            'g9c2dec7',
-            'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
-          )
-        a('a138aeb2', 'JavaScript is not available.'),
+          a('h85446cd', 'This browser is no longer supported.')
+        a(
+          'g9c2dec7',
+          'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
+        ),
+          a('a138aeb2', 'JavaScript is not available.'),
           a(
             'ddf1d67b',
             'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
