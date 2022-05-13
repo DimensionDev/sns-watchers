@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [127],
+    [128],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('qqsb')._register('en', {
           get emoji() {
-            return o.e(311).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(312).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1022,6 +1022,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c14cdb18', 'Promote'),
           a('e8adeec8', 'Promote again'),
+          a('i093db9b', 'See the latest'),
           a('bc2ceaf2', 'Sending Tweet...'),
           a('j4c40da3', 'Send now'),
           a('b23688c7', 'Undo timer'),
@@ -1158,9 +1159,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g6185a9e', 'Who can reply?'),
           a('g2d04222', 'Choose who can reply to this Tweet. Anyone mentioned can always reply.'),
           a('baffe39a', 'Everyone'),
-          a('af293dc2', 'People you follow'),
-          a('h1053f7e', 'Only people you mention')
-        a('bf994ab2', 'Only you'),
+          a('af293dc2', 'People you follow')
+        a('h1053f7e', 'Only people you mention'),
+          a('bf994ab2', 'Only you'),
           a('cf7f7e39', 'Only people you mentioned'),
           a('dd211107', 'Delete Tweet?'),
           a(
@@ -2307,9 +2308,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ae85768c',
             'Search results include only your followers and people who allow Direct Messages from everyone.',
-          ),
-          a('cd133485', 'Invite')
-        a('hb1e378e', 'Invited'),
+          )
+        a('cd133485', 'Invite'),
+          a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
           a('addbb11e', 'No new membership requests'),
           a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
@@ -3537,15 +3538,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
           ),
           a('f1d46fd5', 'Yes, I’m sure'),
-          a('ib3357a5', 'Personalized ads'),
-          a(
-            'c4ca418c',
-            'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-          )
+          a('ib3357a5', 'Personalized ads')
         a(
-          'b0b3ed8e',
-          'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
+          'c4ca418c',
+          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
         ),
+          a(
+            'b0b3ed8e',
+            'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
+          ),
           a('f6c8ccc7', 'Personalize based on your inferred identity'),
           a(
             'f748b0fc',
@@ -4757,7 +4758,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g66c8347', 'REPLAY'),
           a('h400d7c1', 'JOIN SPACE'),
-          a('c9ecde38', 'REPLAY SPACE'),
           a('be6ef5b3', 'COMING UP'),
           a('i3f7ff0f', 'Media thumbnail'),
           a('j1d352d7', 'Reminder set'),
@@ -4766,6 +4766,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b0b38773', 'Header media'),
           a('jcdc32ff', 'Start listening'),
           a('if420852', 'Play recording'),
+          a('cfadb00e', 'Listening'),
           a('db4620aa', 'LIVE SPACE'),
           a('c958e691', 'RECORDED SPACE'),
           a('a7a119ec', 'Undock'),
@@ -4821,10 +4822,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'caac124e',
             'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
-          ),
-          a(
-            'ab77e0b8',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
           )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
@@ -4842,7 +4839,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
+        a(
+          'ab77e0b8',
+          'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+        ),
+          a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
           a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
           a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
           a(
@@ -5197,6 +5198,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ac6ce1cf', 'From'),
           a('c647aac8', 'To'),
           a('b926e649', 'Enter website'),
+          a('i019c8b5', 'Call'),
+          a('eabc6905', 'SMS'),
+          a('h24d868b', 'Call & SMS'),
+          a('fa64f1fb', 'Select a country code'),
+          a('c7d36299', 'Phone number'),
+          a(
+            'jee18d3a',
+            'How should your customers reach you? Keep in mind, this phone number will be publicly available for customers to contact you. You can remove it at any time.',
+          ),
+          a('f7ff19eb', 'Add country code'),
+          a('bb7f1779', 'Invalid Phone Number'),
           a('af9c8a3d', 'Open app'),
           a('c299a6cf', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5825,6 +5837,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a270100c', 'Opens NFT details'),
           a('gd7acb84', 'Set up profile'),
           a('b7636014', 'Message'),
+          a('i662c535', 'Super Follow'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e77', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
@@ -5996,10 +6009,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('d74ee2e2', function (e) {
             return '@' + e.screenName + ' doesn’t have any followers you know yet'
-          }),
-          a('ae5749c6', function (e) {
-            return '@' + e.screenName + ' isn’t following anyone'
-          }),
+          })
+        a('ae5749c6', function (e) {
+          return '@' + e.screenName + ' isn’t following anyone'
+        }),
           a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
           a('f8af4f48', 'Once they follow accounts, they’ll show up here.'),
           a('g6b54ff5', 'You’re up to date'),
@@ -6013,8 +6026,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2613122', function (e) {
             return 'Subscribe - ' + e.price + '/mo'
           }),
-          a('d822ae43', 'Twitter Purchaser Terms')
-        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
+          a('d822ae43', 'Twitter Purchaser Terms'),
+          a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446cd', 'This browser is no longer supported.'),
           a(
             'g9c2dec7',
@@ -6051,19 +6064,32 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('da539d38', 'Search results'),
           a('d95eb227', 'Back'),
           a('af8fa2ad', 'Close'),
-          a('e0bdea76', function (e) {
-            return (
-              e.title +
-              '. A vertical ' +
-              e.chartType +
-              ' bar chart with data values spanning from ' +
-              e.minValue +
-              ' to ' +
-              e.maxValue
-            )
-          }),
+          a('ef8b2f53', 'Read the chart'),
+          a('d567ceda', 'vertical'),
           a('f7b30767', 'stacked'),
           a('hcd54327', 'grouped'),
+          a('ha20397c', 'Accessibility features'),
+          a('baf7a43b', 'Accessibility'),
+          a('a6b92afa', function (e) {
+            return (
+              'This is a ' +
+              e.chartType +
+              ' bar chart. The title of the chart is ' +
+              e.chartTitle +
+              '. There are in total ' +
+              e.noOfCategories +
+              ' categories. The minimum value is ' +
+              e.minValue +
+              ' and the maximum value is ' +
+              e.maxValue +
+              '.'
+            )
+          }),
+          a('d969327c', 'Play audio version'),
+          a(
+            'd8cbbcd4',
+            'Play audio chart. Press to play audio version of the chart or press key "A" on each data point for their audio version',
+          ),
           a('dec1d7ef', function (e) {
             return e.label + ', ' + e.group + ', ' + e.value
           }),
@@ -6474,6 +6500,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec72e2f8', 'Follow'),
           a('c3befdbd', 'Following'),
           a('d3029dbc', 'Unfollow'),
+          a('i5da771f', 'Super Follow'),
           a('fb8c0efc', 'Super Following'),
           a('a7667261', 'Manage subscription'),
           a('jd50570f', 'Autoblocked'),
@@ -6712,6 +6739,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jc9298a8', 'Share Tweet'),
           a('hc052e5c', 'Edited'),
           a('d0d51086', 'There’s a new version of this Tweet'),
+          a('c657893f', 'There’s a new version of this Tweet.'),
           a('b7ea93b1', 'Edit Twitter Circle'),
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abc', 'Learn more'),
@@ -9165,6 +9193,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'j7247852',
+                get: function () {
+                  return ['', ' by Author']
+                },
+              },
+              {
                 key: 'c2588611',
                 get: function () {
                   return ['', ' at ' + this.props.time]
@@ -9376,7 +9410,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           p = (l._validateParameterTypeDate, l._dateToPartsFormat, l._dateToPartsFormatterFn),
           w = (l._dateFormat, l._dateFormatterFn),
           g = l._relativeTimeFormatterFn,
-          T = l._unitFormatterFn
+          v = l._unitFormatterFn
         ;(l.a527220190 = h(
           [
             '',
@@ -11751,7 +11785,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'relative-type-0': 'today',
             'relative-type-1': 'tomorrow',
           })),
-          (l.a2110709659 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a2110709659 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'seconds',
@@ -11760,7 +11794,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per second',
             },
           })),
-          (l.a223746363 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a223746363 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'minutes',
@@ -11769,7 +11803,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per minute',
             },
           })),
-          (l.b2116965749 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b2116965749 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'hours',
@@ -11778,43 +11812,43 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per hour',
             },
           })),
-          (l.b1436183524 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b1436183524 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
           })),
-          (l.b1554153647 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b1554153647 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'secs', one: '{0} sec', other: '{0} sec', perUnitPattern: '{0}/s' },
           })),
-          (l.a1963255228 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a1963255228 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'min', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/min' },
           })),
-          (l.a79526321 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a79526321 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'mins', one: '{0} min', other: '{0} min', perUnitPattern: '{0}/min' },
           })),
-          (l.b1193188596 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b1193188596 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hour', one: '{0}h', other: '{0}h', perUnitPattern: '{0}/h' },
           })),
-          (l.a531894881 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a531894881 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hours', one: '{0} hr', other: '{0} hr', perUnitPattern: '{0}/h' },
           })),
-          (l.b1132522088 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b1132522088 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'day', one: '{0}d', other: '{0}d', perUnitPattern: '{0}/d' },
           })),
-          (l.b1844277225 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b1844277225 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: { displayName: 'days', one: '{0} day', other: '{0} days', perUnitPattern: '{0} per day' },
           })),
-          (l.b2134163460 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b2134163460 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'month', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/m' },
           })),
-          (l.a1064174459 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a1064174459 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'months',
@@ -11823,11 +11857,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per month',
             },
           })),
-          (l.a211373797 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.a211373797 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'yr', one: '{0}y', other: '{0}y', perUnitPattern: '{0}/y' },
           })),
-          (l.b636176220 = T(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
+          (l.b636176220 = v(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'years',
@@ -11836,7 +11870,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per year',
             },
           })),
-          (l.a1379198057 = T(
+          (l.a1379198057 = v(
             l('en').numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: 'truncate' }),
             l('en').pluralGenerator({}),
             {
