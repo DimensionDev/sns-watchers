@@ -1548,6 +1548,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jb088200', 'Recording replays'),
           a('j245c654', 'Speakers'),
           a('if653289', 'Tuned in'),
+          a('a1a0e6d8', 'Follow host'),
+          a('a3c4e396', 'Unfollow host'),
+          a('j58e7b00', 'View profile'),
+          a('eca4e329', 'View details'),
           a('gaa01f2c', 'Twitter Spaces'),
           a('fec3c1ef', 'Where live audio conversations happen'),
           a('ce447fcb', function (e) {
@@ -1874,7 +1878,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d24b99ed', 'Inflammatory language'),
           a('df587b98', 'Note ID'),
           a('h201bdc8', 'Note Author'),
-          a('j58e7b00', 'View profile'),
           a('h74b96bf', 'Note submitted'),
           a('ge258489', 'Current Status'),
           a('fe4fd310', 'Helpful'),
@@ -2043,6 +2046,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a94092a1', 'You now have access to moderation tools'),
           a('i1fda797', 'As a Community mod, you can add and remove members. Use your power wisely.'),
+          a('b4f877be', 'Community not found'),
           a('e3f04700', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's') + ' to review'
           }),
@@ -2087,6 +2091,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b139b549', 'Invite members'),
           a('bec3b8f9', 'Share Community'),
           a('hb9400db', 'See More'),
+          a('he8db880', 'Doesn’t look like this Community exists'),
+          a('cc684fbb', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
           a('c99ab746', 'There aren’t any Tweets in this Community yet'),
           a('b32c4fb0', 'Once there are, you’ll see them here.'),
           a('h5245afa', 'Community'),
@@ -2292,8 +2298,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h252ede6', 'You’ve already used all your invites'),
           a('a5cd93f9', function (e) {
             return '@' + e.screen_name + ' can’t be invited right now'
-          }),
-          a('ba5a88e3', 'Suggested'),
+          })
+        a('ba5a88e3', 'Suggested'),
           a('i6568549', function (e) {
             return 'You have ' + e.remaining_invite_count + ' invite' + n(e.remaining_invite_count, '', 's') + ' left'
           }),
@@ -2308,8 +2314,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ae85768c',
             'Search results include only your followers and people who allow Direct Messages from everyone.',
-          )
-        a('cd133485', 'Invite'),
+          ),
+          a('cd133485', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
           a('addbb11e', 'No new membership requests'),
@@ -3529,8 +3535,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ce8450f1', 'Control how Twitter personalizes content and collects and shares certain data.'),
           a('bd73f7e5', 'This will enable or disable all of the settings on this page.'),
           a('ddbc3287', 'Data'),
-          a('i7b329e0', 'See your Twitter data'),
-          a('b934e0ea', 'Disable personalization and data?'),
+          a('i7b329e0', 'See your Twitter data')
+        a('b934e0ea', 'Disable personalization and data?'),
           a('bf917ce9', 'This may make the Tweets and ads you see less relevant.'),
           a('a148acb9', 'Disable'),
           a(
@@ -3538,11 +3544,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
           ),
           a('f1d46fd5', 'Yes, I’m sure'),
-          a('ib3357a5', 'Personalized ads')
-        a(
-          'c4ca418c',
-          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-        ),
+          a('ib3357a5', 'Personalized ads'),
+          a(
+            'c4ca418c',
+            'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
+          ),
           a(
             'b0b3ed8e',
             'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
@@ -4807,21 +4813,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f3f4c67b',
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
-          ),
-          a('a399ed2f', 'Let’s go'),
-          a('g2b8acd4', 'Log in to Twitter'),
-          a('bdc9d8a2', 'Login on Twitter'),
-          a(
-            'c2ab20ab',
-            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
-          ),
-          a(
-            'id312f0a',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
-          ),
-          a(
-            'caac124e',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
           )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
@@ -4839,10 +4830,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'ab77e0b8',
-          'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
-        ),
+        a('a399ed2f', 'Let’s go'),
+          a('g2b8acd4', 'Log in to Twitter'),
+          a('bdc9d8a2', 'Login on Twitter'),
+          a(
+            'c2ab20ab',
+            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          ),
+          a(
+            'id312f0a',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
+          ),
+          a(
+            'caac124e',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
+          ),
+          a(
+            'ab77e0b8',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+          ),
           a('f8ad0091', 'We’re sorry, there was an error. Please try logging in again.'),
           a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
           a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
@@ -5632,6 +5638,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f345dcda', 'Edit History'),
           a('h2fcc531', 'Loading history'),
           a('ced3c859', 'Edited'),
+          a('baaed9e2', 'This is a Note'),
+          a('dda9b6ff', 'Learn about Notes'),
           a('a7da0adb', function (e) {
             return e.count + ' word' + n(e.count, '', 's')
           }),
@@ -5993,8 +6001,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ha979be5', function (e) {
             return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
-          a('i099d32d', 'Followers you know'),
-          a('ed51baba', 'You don’t have any Super Followers yet'),
+          a('i099d32d', 'Followers you know')
+        a('ed51baba', 'You don’t have any Super Followers yet'),
           a('g65f4bab', 'You don’t have any followers yet'),
           a('c36cfddc', 'Looking for followers?'),
           a('a1f9e34c', 'You will find a list of everyone who Super Follows you here.'),
@@ -6009,10 +6017,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('d74ee2e2', function (e) {
             return '@' + e.screenName + ' doesn’t have any followers you know yet'
-          })
-        a('ae5749c6', function (e) {
-          return '@' + e.screenName + ' isn’t following anyone'
-        }),
+          }),
+          a('ae5749c6', function (e) {
+            return '@' + e.screenName + ' isn’t following anyone'
+          }),
           a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
           a('f8af4f48', 'Once they follow accounts, they’ll show up here.'),
           a('g6b54ff5', 'You’re up to date'),
@@ -7555,6 +7563,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'dc3a6d2c',
+                get: function () {
+                  return ['Followed @' + this.props.screenName + '. ', '.']
+                },
+              },
+              {
                 key: 'h0d6f2c5',
                 get: function () {
                   return ['', '']
@@ -8991,6 +9005,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c9927418',
                 get: function () {
                   return ['This Tweet doesn’t have any hidden replies, but Protected Tweets might be filtered out. ']
+                },
+              },
+              {
+                key: 'd1b55876',
+                get: function () {
+                  return ['', ' and read more from this writer and dozens of others.']
                 },
               },
               {
