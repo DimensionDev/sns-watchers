@@ -26520,30 +26520,32 @@ window.__SCRIPTS_LOADED__.polyfills &&
           n('1IsZ'),
           n('vrRf'),
           n('MvUL')
+        n('rwV7'), n('065x').ActualI18NFormatMessageKey
         var o,
           a,
           u,
-          s,
-          l,
-          c = n('rwV7'),
-          f = n('065x').ActualI18NFormatMessageKey,
-          d = c && !1,
-          p = {},
-          h = '992bba08-8399-4bde-ab97-c1305e64876 SSR-I18N f2c6ac64-eb07-4bf8-bb18-52a36cf153b7',
-          v = new RegExp('~~~~~~~~~~ ([a-j][a-f0-9]{7}) '.concat(h, ' \\1 ~~~~~~~~~~'), 'g'),
-          g = function (e, t) {
+          s = {}
+        var l,
+          c,
+          f,
+          d = function (e, t) {
+            ;(a = s[(o = e in s ? e : 'en')]), (u = t || u)
+          },
+          p = '992bba08-8399-4bde-ab97-c1305e64876 SSR-I18N f2c6ac64-eb07-4bf8-bb18-52a36cf153b7',
+          h = new RegExp('~~~~~~~~~~ ([a-j][a-f0-9]{7}) '.concat(p, ' \\1 ~~~~~~~~~~'), 'g'),
+          v = function (e, t) {
             return a[t]
           },
+          g = {},
           m = {},
-          y = {},
-          b = function (e) {
-            return y[e.toLowerCase()] || y[e.split('-')[0]]
+          y = function (e) {
+            return m[e.toLowerCase()] || m[e.split('-')[0]] || 'en'
           },
-          _ = [],
-          w =
-            ((u = function (e) {
+          b = [],
+          _ =
+            ((l = function (e) {
               return Promise.all(
-                _.map(
+                b.map(
                   (function (e) {
                     return function (t) {
                       return t(e)
@@ -26551,18 +26553,18 @@ window.__SCRIPTS_LOADED__.polyfills &&
                   })(e),
                 ),
               ).then(function () {
-                t.language = e
+                d(e, 'cold')
               })
             }),
             function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o
-              return e === s ? l : ((o = b((s = e))), (l = u(o)))
+              return e === c ? f : ((o = y((c = e))), (f = l(o)))
             })
-        ;(w.registerChunkLoader = function (e, t) {
-          if (0 === Object.keys(y).length)
+        ;(_.registerChunkLoader = function (e, t) {
+          if (0 === Object.keys(m).length)
             Object.assign.apply(
               Object,
-              [y].concat(
+              [m].concat(
                 i(
                   t.map(function (e) {
                     return r({}, e.toLowerCase(), e)
@@ -26570,18 +26572,15 @@ window.__SCRIPTS_LOADED__.polyfills &&
                 ),
               ),
             )
-          else for (var n in y) t.includes(y[n]) || delete y[n]
-          _.push(e)
+          else for (var n in m) t.includes(m[n]) || delete m[n]
+          b.push(e)
         }),
           Object.defineProperties(t, {
             _register: {
               value: function (e, t) {
                 var n = this
                 if (
-                  ((p[e] = p[e] || {}),
-                  (this.language = e),
-                  (y[this.language.toLowerCase()] = this.language),
-                  void 0 !== t)
+                  ((s[e] = s[e] || {}), d(e, 'cold'), (m[this.language.toLowerCase()] = this.language), void 0 !== t)
                 ) {
                   var r = Object.getOwnPropertyNames(t)[0],
                     i = Object.getOwnPropertyDescriptor(t, r)
@@ -26594,24 +26593,14 @@ window.__SCRIPTS_LOADED__.polyfills &&
                       })
                 }
                 return function (t, r) {
-                  ;(p[e][t] = r),
+                  ;(s[e][t] = r),
                     t in n ||
-                      (d && t !== f
-                        ? (n[t] =
-                            'string' == typeof r
-                              ? (function (e) {
-                                  return '~~~~~~~~~~ '.concat(e, ' ').concat(h, ' ').concat(e, ' ~~~~~~~~~~')
-                                })(t)
-                              : function () {
-                                  var e
-                                  return (e = a)[t].apply(e, arguments)
-                                })
-                        : Object.defineProperty(n, t, {
-                            get: function () {
-                              return a[t]
-                            },
-                            enumerable: !0,
-                          }))
+                      Object.defineProperty(n, t, {
+                        get: function () {
+                          return a[t]
+                        },
+                        enumerable: !0,
+                      })
                 }
               },
             },
@@ -26620,22 +26609,28 @@ window.__SCRIPTS_LOADED__.polyfills &&
                 return o
               },
               set: function (e) {
-                a = p[(o = e in p ? e : 'en')]
+                d(e, 'hot')
               },
             },
-            loadLanguage: { value: w },
+            Provider: {
+              value: function (e) {
+                var t = e.children,
+                  n = e.lang
+                return d(n, 'hot'), t || null
+              },
+            },
+            loadLanguage: { value: _ },
             knownLanguages: {
               get: function () {
-                return Object.values(y)
+                return Object.values(m)
               },
             },
             getInterpolator: {
               value: function (e) {
-                var t = this
                 return (
-                  m[e] ||
-                  (m[e] = function (n) {
-                    return -1 !== n.indexOf(h) ? ((t.language = e), n.replace(v, g)) : n
+                  g[e] ||
+                  (g[e] = function (t) {
+                    return -1 !== t.indexOf(p) ? (d(e, 'cold'), t.replace(h, v)) : t
                   })
                 )
               },

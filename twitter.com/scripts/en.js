@@ -125,6 +125,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i1db7d13', function (e) {
             return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
           }),
+          a('baac0ed7', function (e) {
+            return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
+          }),
           a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
           a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
           a('db6001e7', function (e) {
@@ -628,10 +631,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1f2f8bd', function (e) {
             return 'Remove @' + e.screenName + ' from Flagged accounts list?'
           }),
-          a('a2f81050', 'Messages'),
+          a('b08821f4', 'Back'),
           a('c64c1884', 'Compose new Message'),
           a('j7d0e836', 'Expand'),
-          a('b08821f4', 'Back'),
+          a('a2f81050', 'Messages'),
           a('a676a876', 'Welcome to your inbox!'),
           a(
             'j2611eac',
@@ -1146,21 +1149,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2414185', function (e) {
             return 'Quote Tweet' + n(e.count, '', 's')
           }),
-          a('aaad27c8', 'Author'),
           a('d172116a', 'Discover more'),
           a('iac074c4', 'More Tweets'),
           a('g11ebd34', 'More suggestions'),
           a('g4a6901a', 'Browse'),
           a('b1abb17e', 'Browse Tweets'),
+          a('aaad27c8', 'Author'),
           a('e2dc4394', 'Write a Birdwatch note'),
           a('bae0cbc0', 'Change who can reply'),
           a('f8393bda', 'Only Super Followers can reply'),
           a('ae0c5fbe', 'Error changing who can reply'),
           a('g6185a9e', 'Who can reply?'),
           a('g2d04222', 'Choose who can reply to this Tweet. Anyone mentioned can always reply.'),
-          a('baffe39a', 'Everyone'),
-          a('af293dc2', 'People you follow')
-        a('h1053f7e', 'Only people you mention'),
+          a('baffe39a', 'Everyone')
+        a('af293dc2', 'People you follow'),
+          a('h1053f7e', 'Only people you mention'),
           a('bf994ab2', 'Only you'),
           a('cf7f7e3a', 'Only people you mentioned'),
           a('dd211108', 'Delete Tweet?'),
@@ -1207,6 +1210,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aaef1b48', 'Your Tweet was pinned to your profile.'),
           a('ee793c74', 'Pin to Community Timeline'),
           a('daeb6e92', 'Pin this Tweet'),
+          a('a978b2ae', 'This will appear at the top of the Community feed.'),
           a('i70e903c', 'This will appear at the top of the Community feed and replace any previously pinned Tweets.'),
           a('f5cdcc2c', 'Not interested in this ad'),
           a('b99364a5', function (e) {
@@ -1226,7 +1230,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i0086d6c', 'Your Tweet was unpinned from your profile'),
           a('c011d3e6', 'Unpin from Community Timeline'),
           a('a59bf5a4', 'Unpin this Tweet'),
-          a('d8ff2470', 'This tweet will no longer show up at the top of the Community timeline.'),
+          a('b4e03e7c', 'This Tweet will no longer show up at the top of the Community timeline.'),
           a('f9478972', 'View hidden replies'),
           a('bb16cc76', 'Leave this conversation'),
           a('de21174c', 'You’ve left this conversation'),
@@ -2034,6 +2038,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a226497c', 'Create a new Community'),
           a('d7346632', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
+          a('c8d33380', 'New items'),
           a('f0fc827e', 'Welcome to Twitter Communities'),
           a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
           a('fc5c6914', 'Meet others with your interests'),
@@ -2289,15 +2294,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fbb0ed92', 'Delete this rule'),
           a('hed35472', 'Deleting a rule is permanent and can’t be undone.'),
           a('c8677446', 'Delete rule'),
-          a('c3a0d44e', 'Cancel and edit rule instead'),
-          a('dfddd842', 'Sent via Direct Message'),
+          a('c3a0d44e', 'Cancel and edit rule instead')
+        a('dfddd842', 'Sent via Direct Message'),
           a('a3b3939b', function (e) {
             return '@' + e.screen_name + ' has already been invited'
           }),
           a('db4f0cc9', function (e) {
             return '@' + e.screen_name + ' is already in this Community'
-          })
-        a('h252ede6', 'You’ve already used all your invites'),
+          }),
+          a('h252ede6', 'You’ve already used all your invites'),
           a('a5cd93f9', function (e) {
             return '@' + e.screen_name + ' can’t be invited right now'
           }),
@@ -3532,11 +3537,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c0bf0dc8',
             'When you turn on Tweet notifications for an account, you’ll know when they Tweet, go Live, and host a Space.',
           ),
-          a('a820d092', 'Loading Following'),
-          a('i2775c58', 'Tweet Notifications'),
+          a('a820d092', 'Loading Following')
+        a('i2775c58', 'Tweet Notifications'),
           a('ce8450f2', 'Control how Twitter personalizes content and collects and shares certain data.'),
-          a('bd73f7e6', 'This will enable or disable all of the settings on this page.')
-        a('ddbc3288', 'Data'),
+          a('bd73f7e6', 'This will enable or disable all of the settings on this page.'),
+          a('ddbc3288', 'Data'),
           a('i7b329e0', 'See your Twitter data'),
           a('b934e0ea', 'Disable personalization and data?'),
           a('bf917cea', 'This may make the Tweets and ads you see less relevant.'),
@@ -4256,6 +4261,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b3f834c8', 'Application waitlisted'),
           a('i724fb4a', 'Get help'),
           a('g92a2344', 'Complete profile'),
+          a('a0c67dd4', 'Confirm your age to apply'),
+          a(
+            'ad4a61ae',
+            'You must be at least 18 years old to apply for Super Follows. Confirm you’re 18 or older to continue.',
+          ),
           a('i84c5de8', 'Creator applications coming soon'),
           a('d9c11740', 'Check back soon to be able to apply to join the Super Follows program.'),
           a('feb54b40', 'Be one of the first to apply'),
@@ -4589,6 +4599,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'cc94c002',
             'Manage your preferences for seeing sensitive media in Tweets. Keep in mind we use technology to help us identify such media, so while we’re always improving, we may not get it right all the time.',
           ),
+          a('ha7323ea', 'People under 18 years old are unable to see adult content.'),
           a('aa4342be', 'Graphic violence'),
           a('c1484810', 'Hide media marked as graphic violence until you choose to see it.'),
           a('gf143d22', 'Hide media marked as adult content until you choose to see it.'),
@@ -4801,16 +4812,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4acfd12', 'You’ll see top Tweets first.'),
           a('f0c7628a', 'Pin your Latest timeline'),
           a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
-          a('eeab441a', 'Unpin your Latest timeline'),
-          a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
-          a('f089620c', 'Your Home Timeline'),
-          a('d2c66f10', 'Welcome to Twitter!'),
-          a(
-            'c3fbf1da',
-            'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
-          ),
-          a('bf17deda', 'Let’s go!'),
-          a('d4d57850', 'Welcome to your timeline!')
+          a('eeab441a', 'Unpin your Latest timeline')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4827,10 +4829,19 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'f3f4c67c',
-          'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
-        ),
+        a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
+          a('f089620c', 'Your Home Timeline'),
+          a('d2c66f10', 'Welcome to Twitter!'),
+          a(
+            'c3fbf1da',
+            'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
+          ),
+          a('bf17deda', 'Let’s go!'),
+          a('d4d57850', 'Welcome to your timeline!'),
+          a(
+            'f3f4c67c',
+            'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
+          ),
           a('a399ed20', 'Let’s go'),
           a('g2b8acd4', 'Log in to Twitter'),
           a('bdc9d8a2', 'Login on Twitter'),
@@ -5244,6 +5255,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('f7ff19ec', 'Add country code'),
           a('bb7f177a', 'Invalid Phone Number'),
+          a('b91d1394', 'Add App'),
+          a('aab2fae0', 'iOS App'),
+          a('f7d1a8e0', 'Android App'),
           a('af9c8a3e', 'Open app'),
           a('c299a6c0', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5486,6 +5500,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
+          a('efb9a9e0', 'Nothing to see here'),
+          a('b4c01934', 'Analytics aren’t available for Twitter Circle Tweets.'),
           a('ge538876', 'Metrics for the video you shared'),
           a('dcc05a7e', 'Views'),
           a('ca7e10d8', 'Unique views'),
@@ -5620,7 +5636,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef939f4b', function (e) {
             return 'Replies hidden by @' + e.screenName
           }),
-          a('efb9a9e0', 'Nothing to see here'),
           a('b20c41ff', 'Learn more'),
           a('b98764b2', 'There are no tagged users in this Tweet.'),
           a('cb2054fa', 'Loading users'),
@@ -5971,10 +5986,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('aab9faa7', function (e) {
             return 'Loading reactions by @' + e.screenName
-          }),
-          a('ia716753', function (e) {
-            return '@' + e.screenName + ' hasn’t reacted to any Tweets'
-          }),
+          })
+        a('ia716753', function (e) {
+          return '@' + e.screenName + ' hasn’t reacted to any Tweets'
+        }),
           a('hb296ad8', 'You don’t have any reactions yet'),
           a('e1473b38', 'Tap the heart on any Tweet to react. When you do, it’ll show up here.'),
           a('dc62b219', function (e) {
@@ -5991,10 +6006,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c62ebbac', 'Once they do, those Tweets will show up here.'),
           a('d1614228', 'Lights, camera … attachments!'),
-          a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.')
-        a('d55be465', function (e) {
-          return e.fullName + '’s Photos'
-        }),
+          a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.'),
+          a('d55be465', function (e) {
+            return e.fullName + '’s Photos'
+          }),
           a('h1658542', 'Suspended user'),
           a('b5447710', 'User not found'),
           a('fe9d3afa', 'Loading Followers'),
