@@ -328,6 +328,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e68b09b4', 'Remove'),
           a('add55c98', 'Media'),
           a('gff1f69e', 'Loading image'),
+          a('e3275464', 'Send'),
           a('f6fec9f6', 'Remove card preview'),
           a('g61ed8a4', 'Something went wrong.'),
           a('a747892a', 'You are over the daily limit for sending Tweets.'),
@@ -372,7 +373,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d3ac405c', 'Load video'),
           a('g97a046c', 'Play this video'),
           a('badb01a0', 'Compose'),
-          a('e3275464', 'Send'),
           a('d6b11d9c', 'Your direct message failed to send because some media didn’t upload.'),
           a('i7ca1446', 'Info'),
           a('i8ecae5c', 'You can no longer send messages to this person.'),
@@ -1642,8 +1642,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a526aa66', 'Who to follow'),
           a('ef625010', 'You might like'),
           a('f5b426c2', 'Loading Users'),
-          a('gab492ea', 'Skip to recommended content'),
-          a('a51c1570', 'Skip to secondary content'),
+          a('cb80300e', 'Skip to home timeline'),
+          a('ea5cd098', 'Skip to trending'),
+          a('c67e3fc2', 'Home timeline'),
+          a('edf7bc2e', 'Trending'),
           a('e4e811fc', 'Connecting...'),
           a('cc8f82bc', 'Join this space'),
           a('e51df2e6', 'Your mic will be off to start'),
@@ -2297,13 +2299,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d45ae5e0', 'Don’t forget to tell the Community'),
           a('c1631260', 'Keeping everyone updated about rule changes helps build trust.'),
           a('d3190bde', 'Save rule'),
-          a('ifd6e91c', 'Cancel and edit rule'),
-          a('h99020e0', 'Edit rule'),
+          a('ifd6e91c', 'Cancel and edit rule')
+        a('h99020e0', 'Edit rule'),
           a(
             'f74a5adc',
             'Communities need at least one rule. You can edit what you have, or add another rule and then delete this one.',
-          )
-        a('fbb0ed92', 'Delete this rule'),
+          ),
+          a('fbb0ed92', 'Delete this rule'),
           a('hed35472', 'Deleting a rule is permanent and can’t be undone.'),
           a('c8677446', 'Delete rule'),
           a('c3a0d44e', 'Cancel and edit rule instead'),
@@ -3540,10 +3542,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f296795c', 'Participation in Twitter research surveys'),
           a('ddfe3776', 'Suggestions for recommended accounts'),
           a('d17ba8c2', 'Suggestions based on your recent follows'),
-          a('jf51b93c', 'Tips on Twitter business products'),
-          a('fcad1e2e', 'Daily'),
-          a('h9e0dfde', 'Weekly')
-        a('e26d98ac', 'Periodically'),
+          a('jf51b93c', 'Tips on Twitter business products')
+        a('fcad1e2e', 'Daily'),
+          a('h9e0dfde', 'Weekly'),
+          a('e26d98ac', 'Periodically'),
           a('h0c94842', 'Be in the know'),
           a(
             'c0bf0dc8',
@@ -3724,7 +3726,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('da8c0440', 'Mute from'),
           a('defb4aaa', 'From anyone'),
           a('e7d47b00', 'From people you don’t follow'),
-          a('c67e3fc2', 'Home timeline'),
           a('gfa5008e', 'Extend mute time'),
           a('c5595dfe', 'Change mute time'),
           a('he6804e0', 'Until you unmute the word'),
@@ -4811,8 +4812,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bc52b0ce', 'Go back Home'),
           a('j6382fea', 'See latest Tweets instead'),
           a('f89f6786', 'You’ll see Tweets show up as they happen.'),
-          a('e4acfd12', 'You’ll see top Tweets first.'),
-          a('f0c7628a', 'Pin your Latest timeline')
+          a('e4acfd12', 'You’ll see top Tweets first.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4829,7 +4829,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
+        a('f0c7628a', 'Pin your Latest timeline'),
+          a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
           a('eeab441a', 'Unpin your Latest timeline'),
           a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
           a('f089620c', 'Your Home Timeline'),
@@ -5273,11 +5274,35 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ba5256b2', 'Text Size'),
           a('e37836f8', 'Report Detail'),
           a('e238c590', 'What’s next'),
-          a('a098fa3c', 'Tweet content hidden'),
+          a(
+            'if218e60',
+            'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
+          ),
+          a('b6dc1984', 'What’s our process?'),
+          a(
+            'b0a16894',
+            'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+          ),
+          a('d4716820', 'Does the reported content target people because of their identity?'),
+          a('e899a534', 'How severe is this violation?'),
+          a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
+          a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
+          a('c9853de0', 'Content hidden'),
           a('a23e724a', 'This account is unavailable.'),
           a('fb35e52a', 'View Rule'),
           a('b7ba712a', 'Violation found'),
           a('d90b8c04', 'No Violation Found'),
+          a('c2d0494a', 'Our safety recommendations'),
+          a('be46e000', 'Report duplicates'),
+          a(
+            'ea9f6514',
+            'Even if the content is deleted, someone might have made a copy or taken screenshots. If you see it on Twitter, please report it so we can remove it. ',
+          ),
+          a('e3647d08', 'Reach out to law enforcement'),
+          a(
+            'gad89c4a',
+            'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our guidelines for law enforcement if they have follow-up questions. ',
+          ),
           a('h030c24c', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c34', 'Follow your interests.'),
@@ -5955,8 +5980,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5aaa25b', function (e) {
             return '@' + e.screenName + ' hasn’t posted any Super Follows Tweets yet'
           }),
-          a('e4f9514c', 'When they do, their Tweets will show up here.'),
-          a('b8a9719a', 'Super Follows Tweets will appear here when posted.'),
+          a('e4f9514c', 'When they do, their Tweets will show up here.')
+        a('b8a9719a', 'Super Follows Tweets will appear here when posted.'),
           a('j0a37206', 'Tweet now'),
           a('cc01c9b5', function (e) {
             return e.fullName + '’s Tweets'
@@ -5982,10 +6007,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g15d5e9c', 'When they do, those Tweets will show up here.'),
           a('bb0e41bc', 'You don’t have any likes yet'),
-          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.')
-        a('f11f6625', function (e) {
-          return e.fullName + '’s liked Tweets'
-        }),
+          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
+          a('f11f6625', function (e) {
+            return e.fullName + '’s liked Tweets'
+          }),
           a('f0ae1f0d', function (e) {
             return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
