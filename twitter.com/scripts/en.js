@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [127],
+    [128],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('qqsb')._register('en', {
           get emoji() {
-            return o.e(311).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(312).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1219,10 +1219,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('afac3b9e', 'Pin Tweet to profile?'),
           a('e2d44cea', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
           a('aaef1b48', 'Your Tweet was pinned to your profile.'),
-          a('ee793c74', 'Pin to Community Timeline'),
-          a('daeb6e92', 'Pin this Tweet'),
-          a('a978b2ae', 'This will appear at the top of the Community feed.'),
-          a('i70e903c', 'This will appear at the top of the Community feed and replace any previously pinned Tweets.'),
+          a('d1c1e2c2', 'Pin in Community'),
+          a('j832cc34', 'This will appear at the top of your Community.'),
+          a('g2eb57c4', 'This will appear at the top of your Community and replace any previously pinned Tweet.'),
+          a('d8725596', 'Pinned by Community mods'),
           a('f5cdcc2c', 'Not interested in this ad'),
           a('b99364a5', function (e) {
             return 'Remove @' + e.screenName + ' from Community'
@@ -1239,9 +1239,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j1b8c868', 'Unpin Tweet from profile?'),
           a('eb2d59f4', 'This will no longer appear automatically at the top of your profile.'),
           a('i0086d6c', 'Your Tweet was unpinned from your profile'),
-          a('c011d3e6', 'Unpin from Community Timeline'),
-          a('a59bf5a4', 'Unpin this Tweet'),
-          a('b4e03e7c', 'This Tweet will no longer show up at the top of the Community timeline.'),
+          a('b5bb710e', 'Remove Pinned Tweet'),
+          a('f36de35a', 'This Tweet will no longer appear at the top of the Community feed.'),
           a('f9478972', 'View hidden replies'),
           a('ea41975c', 'Edit Tweet'),
           a('bb16cc76', 'Leave this conversation'),
@@ -2299,12 +2298,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d45ae5e0', 'Don’t forget to tell the Community'),
           a('c1631260', 'Keeping everyone updated about rule changes helps build trust.'),
           a('d3190bde', 'Save rule'),
-          a('ifd6e91c', 'Cancel and edit rule')
-        a('h99020e0', 'Edit rule'),
-          a(
-            'f74a5adc',
-            'Communities need at least one rule. You can edit what you have, or add another rule and then delete this one.',
-          ),
+          a('ifd6e91c', 'Cancel and edit rule'),
+          a('h99020e0', 'Edit rule')
+        a(
+          'f74a5adc',
+          'Communities need at least one rule. You can edit what you have, or add another rule and then delete this one.',
+        ),
           a('fbb0ed92', 'Delete this rule'),
           a('hed35472', 'Deleting a rule is permanent and can’t be undone.'),
           a('c8677446', 'Delete rule'),
@@ -3542,9 +3541,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f296795c', 'Participation in Twitter research surveys'),
           a('ddfe3776', 'Suggestions for recommended accounts'),
           a('d17ba8c2', 'Suggestions based on your recent follows'),
-          a('jf51b93c', 'Tips on Twitter business products')
-        a('fcad1e2e', 'Daily'),
-          a('h9e0dfde', 'Weekly'),
+          a('jf51b93c', 'Tips on Twitter business products'),
+          a('fcad1e2e', 'Daily')
+        a('h9e0dfde', 'Weekly'),
           a('e26d98ac', 'Periodically'),
           a('h0c94842', 'Be in the know'),
           a(
@@ -4461,8 +4460,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'de67bc6e',
             'During this test period, you can’t change the price point you chose during setup. In the future, you’ll be able to update your subscription price.',
           ),
-          a('a46cead6', 'Connect with other creators'),
-          a('idd8ae44', 'Join our Super Follows community on Discord to connect with fellow creators.'),
+          a('f5be83b2', 'Join the Community'),
+          a(
+            'i1fd31c6',
+            'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
+          ),
           a('b28a1b48', 'Get content tips and ideas'),
           a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
           a('f3ce76c0', 'Need more help?'),
@@ -4473,7 +4475,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
           ),
           a('ca5ca5ee', 'See preview'),
-          a('d14c7bbc', 'Join creator community'),
           a('g867481e', 'View creator guide'),
           a('e58e85d2', 'Continue to deactivation'),
           a('j5c45e80', 'Deactivate Super Follows?'),
@@ -4812,7 +4813,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bc52b0ce', 'Go back Home'),
           a('j6382fea', 'See latest Tweets instead'),
           a('f89f6786', 'You’ll see Tweets show up as they happen.'),
-          a('e4acfd12', 'You’ll see top Tweets first.')
+          a('e4acfd12', 'You’ll see top Tweets first.'),
+          a('f0c7628a', 'Pin your Latest timeline'),
+          a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4829,9 +4832,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f0c7628a', 'Pin your Latest timeline'),
-          a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
-          a('eeab441a', 'Unpin your Latest timeline'),
+        a('eeab441a', 'Unpin your Latest timeline'),
           a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
           a('f089620c', 'Your Home Timeline'),
           a('d2c66f10', 'Welcome to Twitter!'),
@@ -5183,7 +5184,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2760644', 'Currently not all modules are supported on all Twitter clients'),
           a('ce4185bc', 'More Spotlights coming soon'),
           a('b5aed332', 'No spotlights available'),
-          a('fc7b0980', 'This will be visible to the public.'),
+          a(
+            'j224a074',
+            'All location information provided will be publicly accessible when Location Spotlight is on. Phone and email can be accessed via the Contact button.',
+          ),
           a('ie85a7a8', 'Delete your business info?'),
           a('g419ecf4', 'Stay on page'),
           a('d3a097a2', 'Yes, discard'),
@@ -5213,21 +5217,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2244521', function (e) {
             return 'Text ' + e.phoneCode + ' ' + e.phoneNumber
           }),
+          a(
+            'e0d47030',
+            'Where can your customers reach you? Keep in mind, this information will be publicly available to allow your customers to find you. You can remove it at any time.',
+          ),
+          a('c7a4adb0', 'Add address'),
+          a('g114bdde', 'ZIP code'),
+          a('e8592010', 'Add ZIP code'),
           a('c6c16a52', 'City'),
           a('aa8015be', 'Add city'),
-          a('ffc5590e', 'Invalid city'),
-          a('a8fd64d8', 'Search for countries'),
           a('b688f53a', 'State / Province / Region'),
           a('a67f5bbc', 'Add state / province / region'),
+          a('if92b1b4', 'Add country'),
+          a('ffc5590e', 'Invalid city'),
+          a('a8fd64d8', 'Search for countries'),
           a('a0abe108', 'Invalid state / province / region'),
-          a('c7a4adb0', 'Add address'),
           a('j163df8e', 'Invalid address'),
-          a('e8592010', 'Add ZIP code'),
           a('i35b9a88', 'Invalid ZIP code'),
           a('d085eaec', 'ZIP Code'),
-          a('g114bdde', 'ZIP code'),
-          a('if92b1b4', 'Add country'),
           a('i373e022', 'Enter email'),
+          a('f91751f8', 'This will be visible to the public'),
           a('g33c0564', 'Invalid Email'),
           a('ga71fbf4', 'Business hours'),
           a('ca2ba204', 'Edit custom hours'),
@@ -5252,15 +5261,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h24d868c', 'Call & SMS'),
           a('fa64f1fc', 'Select a country code'),
           a('c7d3629a', 'Phone number'),
+          a('ce48a958', 'How would you like to be reached?'),
           a(
-            'jee18d3a',
-            'How should your customers reach you? Keep in mind, this phone number will be publicly available for customers to contact you. You can remove it at any time.',
+            'b97705ce',
+            'Keep in mind, this phone number will be publicly available for customers to contact you. You can remove it at any time.',
           ),
           a('f7ff19ec', 'Add country code'),
           a('bb7f177a', 'Invalid Phone Number'),
           a('b91d1394', 'Add App'),
           a('aab2fae0', 'iOS App'),
+          a('d3cd1160', 'Add iOS App'),
+          a('f2124008', 'App Store URL'),
           a('f7d1a8e0', 'Android App'),
+          a('dc0d9d6a', 'Add Android App'),
+          a('dd1605f0', 'Play Store URL'),
+          a('g4098f78', 'Where can I find this?'),
+          a('b949cdc6', 'Remove app'),
           a('af9c8a3e', 'Open app'),
           a('c299a6c0', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5671,6 +5687,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aac3fad2', 'People in this conversation'),
           a('d132269c', 'Loading Tweet'),
           a('dd657212', 'View Tweet'),
+          a('h59700fa', 'ImmersiveMediaViewer'),
           a('bd7c0390', 'Quote Tweets'),
           a('ebcf1374', 'No Quote Tweets yet'),
           a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
@@ -5963,8 +5980,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d808b42a', 'Tweets daily'),
           a('da819e94', 'Tweets infrequently'),
           a('j0a7ff70', 'Tweets monthly'),
-          a('ae2bc2e6', 'Never tweets'),
-          a('h676cfe2', 'Tweets weekly'),
+          a('ae2bc2e6', 'Never tweets')
+        a('h676cfe2', 'Tweets weekly'),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
@@ -5980,8 +5997,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5aaa25b', function (e) {
             return '@' + e.screenName + ' hasn’t posted any Super Follows Tweets yet'
           }),
-          a('e4f9514c', 'When they do, their Tweets will show up here.')
-        a('b8a9719a', 'Super Follows Tweets will appear here when posted.'),
+          a('e4f9514c', 'When they do, their Tweets will show up here.'),
+          a('b8a9719a', 'Super Follows Tweets will appear here when posted.'),
           a('j0a37206', 'Tweet now'),
           a('cc01c9b5', function (e) {
             return e.fullName + '’s Tweets'
