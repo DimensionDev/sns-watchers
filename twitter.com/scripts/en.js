@@ -765,6 +765,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ab38b896', 'Twitter Ads'),
           a('c9d41314', 'Twitter for Professionals'),
           a('ab0decc0', 'Subscribe'),
+          a('cdf89b84', 'Branded Likes Preview'),
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('cdc1bff7', function (e) {
             return 'Profile menu ' + e.loggedInUserName
@@ -1159,9 +1160,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e2414185', function (e) {
             return 'Quote Tweet' + n(e.count, '', 's')
-          }),
-          a('d172116a', 'Discover more')
-        a('iac074c4', 'More Tweets'),
+          })
+        a('d172116a', 'Discover more'),
+          a('iac074c4', 'More Tweets'),
           a('g11ebd34', 'More suggestions'),
           a('g4a6901a', 'Browse'),
           a('b1abb17e', 'Browse Tweets'),
@@ -2030,6 +2031,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i6e7e298', 'Create'),
           a('a0ea2fa6', 'Name field cannot be empty'),
           a('eec37eac', 'Bookmark Folder with that name already exists'),
+          a(
+            'fce0c59e',
+            'Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again.',
+          ),
+          a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
+          a('ae58026a', 'Open a Branded Like .json file to preview'),
           a('e39b368e', 'Broadcast'),
           a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
@@ -2274,8 +2281,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          ),
-          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          )
+        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
@@ -2284,8 +2291,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.maxRuleCount +
               ' rules. To add a new one, you’ll need to delete a rule you already have.'
             )
-          })
-        a('c66769a4', 'Rule'),
+          }),
+          a('c66769a4', 'Rule'),
           a('ef02695b', function (e) {
             return 'Rule names must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
           }),
@@ -3412,17 +3419,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
           a('bdada5a6', 'Front'),
-          a('edfed0f6', 'Upload front of ID'),
-          a('def5015d', function (e) {
-            return 'Back' + e.back_of_document
-          }),
+          a('edfed0f6', 'Upload front of ID')
+        a('def5015d', function (e) {
+          return 'Back' + e.back_of_document
+        }),
           a('b09aade6', 'Upload back of ID'),
           a('b40ed190', 'Document'),
-          a('c6650b56', 'Upload document')
-        a(
-          'd171ed16',
-          'We rely on trusted third parties to help us. These parties verify the authenticity of your ID and provide us with limited information and a platform, allowing us to confirm your eligibility for verified account status.',
-        ),
+          a('c6650b56', 'Upload document'),
+          a(
+            'd171ed16',
+            'We rely on trusted third parties to help us. These parties verify the authenticity of your ID and provide us with limited information and a platform, allowing us to confirm your eligibility for verified account status.',
+          ),
           a('f645cc77', 'Learn more'),
           a('b8deb156', 'Privacy Policy'),
           a('i79902b4', 'Select authenticity method'),
@@ -4791,14 +4798,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
           ),
           a('d98c140e', 'Continue to Twitter'),
-          a('e55188f0', 'You’re logged in to this account with this browser'),
-          a('d55d8fe2', 'Do you want to continue with this account?'),
-          a('g806008e', 'Log in with a different account'),
-          a(
-            'b60eba9e',
-            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-          ),
-          a('ba939778', 'Are you a robot?')
+          a('e55188f0', 'You’re logged in to this account with this browser')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4815,7 +4815,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f0816dee', 'Loading login page'),
+        a('d55d8fe2', 'Do you want to continue with this account?'),
+          a('g806008e', 'Log in with a different account'),
+          a(
+            'b60eba9e',
+            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+          ),
+          a('ba939778', 'Are you a robot?'),
+          a('f0816dee', 'Loading login page'),
           a('f9c558af', function (e) {
             return 'Want to login with your phone, @' + e.userScreenName + '?'
           }),
@@ -5958,10 +5965,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g15d5e9c', 'When they do, those Tweets will show up here.'),
           a('bb0e41bc', 'You don’t have any likes yet'),
-          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
-          a('f11f6625', function (e) {
-            return e.fullName + '’s liked Tweets'
-          }),
+          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.')
+        a('f11f6625', function (e) {
+          return e.fullName + '’s liked Tweets'
+        }),
           a('f0ae1f0d', function (e) {
             return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -5970,8 +5977,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ia716753', function (e) {
             return '@' + e.screenName + ' hasn’t reacted to any Tweets'
-          })
-        a('hb296ad8', 'You don’t have any reactions yet'),
+          }),
+          a('hb296ad8', 'You don’t have any reactions yet'),
           a('e1473b38', 'Tap the heart on any Tweet to react. When you do, it’ll show up here.'),
           a('dc62b219', function (e) {
             return e.fullName + '’s reactions'
@@ -6768,6 +6775,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c2637ef6', 'Got it'),
           a('dc63da16', 'Share'),
           a('jc9298a8', 'Share Tweet'),
+          a('f543c4c8', 'Latest Edit'),
+          a('ccb9c41a', 'Stale Edit'),
           a('hc052e5c', 'Edited'),
           a('d0d51086', 'There’s a new version of this Tweet'),
           a('c6578930', 'There’s a new version of this Tweet.'),
