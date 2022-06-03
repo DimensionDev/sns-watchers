@@ -618,8 +618,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64c1884', 'Compose new Message'),
           a('j7d0e836', 'Expand'),
           a('a2f81050', 'Messages'),
-          a('d98e066c', 'Conversation pinned.'),
-          a('j302dba8', 'Conversation unpinned.'),
+          a('a676a876', 'Welcome to your inbox!'),
+          a(
+            'j2611eac',
+            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
+          ),
+          a('efe8fda0', 'Write a message'),
+          a('a66ac766', 'Loading Direct Messages'),
+          a('fe61929e', 'Search for people and groups'),
+          a('a846382a', 'Search Direct Messages'),
+          a('fd6150fc', 'Keeping you safer in Direct Messages'),
+          a('ac25e02e', 'Privacy Policy'),
           a('ga086a54', 'Image attachment'),
           a('a9cc8cfe', 'Sent a GIF'),
           a('eb3d722e', 'You sent a GIF'),
@@ -652,19 +661,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bdd91964', 'Unpin conversation'),
           a('a8ed0eca', 'Take conversation off snooze'),
           a('jac4eb1e', 'Conversation taken off snooze'),
-          a('a219e218', 'OK'),
-          a('d571e4f9', function (e) {
-            return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
-          }),
-          a('a551bf7e', 'You’ll need to unpin one conversation to pin another.'),
           a('d88d0790', 'Options menu'),
-          a('cb367658', 'Conversation failed to pin. Try again.'),
-          a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
-          a('hd3927c6', 'Conversation failed to unpin. Try again.'),
-          a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
-          a('a66ac766', 'Loading Direct Messages'),
-          a('fe61929e', 'Search for people and groups'),
-          a('a846382a', 'Search Direct Messages'),
+          a('e4b3f520', 'Pinned conversations'),
+          a('ae4d666a', 'All conversations'),
+          a('d98e066c', 'Conversation pinned.'),
+          a('j302dba8', 'Conversation unpinned.'),
           a('b9dae4f4', 'Try a different search term'),
           a('e7fb2028', 'No more results'),
           a('ae111c99', function (e) {
@@ -683,15 +684,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
-          a('i9028824', 'Loading'),
-          a('a676a876', 'Welcome to your inbox!'),
-          a(
-            'j2611eac',
-            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
-          ),
-          a('efe8fda0', 'Write a message'),
-          a('e4b3f520', 'Pinned conversations'),
-          a('ae4d666a', 'All conversations'),
+          a('a219e218', 'OK'),
+          a('d571e4f9', function (e) {
+            return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
+          }),
+          a('a551bf7e', 'You’ll need to unpin one conversation to pin another.'),
+          a('cb367658', 'Conversation failed to pin. Try again.'),
+          a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
+          a('hd3927c6', 'Conversation failed to unpin. Try again.'),
+          a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
+          a('h845f282', 'Direct Message'),
+          a('f325afc4', 'Compose a DM'),
+          a('cf2d1048', 'Message requests'),
+          a('da2f9225', function (e) {
+            return e.count + ' unread messages'
+          }),
+          a('bece84b4', 'Your message requests are empty'),
+          a('e7172d70', 'Additional messages'),
+          a('e51be7c1', 'Learn more'),
+          a('bd394d47', 'Learn more'),
           a('f041be05', function (e) {
             return e.stringCount + ' pending request' + n(e.count, '', 's')
           }),
@@ -707,20 +718,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h6beb5fb', function (e) {
             return e.count + '+'
           }),
-          a('bece84b4', 'Your message requests are empty'),
-          a('e7172d70', 'Additional messages'),
-          a('e51be7c1', 'Learn more'),
-          a('bd394d47', 'Learn more'),
           a('a74e7c77', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
-          }),
-          a('fd6150fc', 'Keeping you safer in Direct Messages'),
-          a('ac25e02e', 'Privacy Policy'),
-          a('h845f282', 'Direct Message'),
-          a('f325afc4', 'Compose a DM'),
-          a('cf2d1048', 'Message requests'),
-          a('da2f9225', function (e) {
-            return e.count + ' unread messages'
           }),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
@@ -818,6 +817,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f2f787a0', 'Terms of Service'),
           a('e1099fd6', 'Privacy Policy'),
           a('c1df1ae0', 'Cookie Use.'),
+          a('i9028824', 'Loading'),
           a('fb4ee11c', 'Why this ad?'),
           a('fcbb540a', 'Rate limit exceeded'),
           a('b6bd6ae4', 'Current account'),
@@ -1869,18 +1869,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aa520d32', 'Spam, harassment, or abuse'),
           a('e25e5ed2', 'Hard to understand'),
           a('i26425d8', 'Somewhat'),
+          a('c6e683d0', 'Submit & Agree'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
-          a('d2ae3d42', 'About Birdwatch ratings'),
-          a('c4e0c730', 'I understand'),
-          a('b1ea3366', 'Thank you — here’s what else you need to know'),
-          a(
-            'h1a9d37a',
-            'By rating, you’re helping ensure that notes shown on Tweets are useful to people with varying points of view.',
-          ),
           a('ac7f9746', 'What was helpful about it?'),
           a('c7751804', 'What was unhelpful about it?'),
-          a('iedb2fc9', 'Ratings are anonymized and made publicly available for transparency — '),
-          a('cd24d5f6', 'available to the public'),
+          a('ec25095a', 'available to the public'),
           a('d39720d3', 'Helpful'),
           a('i7d91dc9', 'Somewhat Helpful'),
           a('c75b7fb4', 'Not Helpful'),
@@ -2281,8 +2274,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          )
-        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          ),
+          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
@@ -2291,8 +2284,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.maxRuleCount +
               ' rules. To add a new one, you’ll need to delete a rule you already have.'
             )
-          }),
-          a('c66769a4', 'Rule'),
+          })
+        a('c66769a4', 'Rule'),
           a('ef02695b', function (e) {
             return 'Rule names must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
           }),
@@ -3419,17 +3412,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
           a('bdada5a6', 'Front'),
-          a('edfed0f6', 'Upload front of ID')
-        a('def5015d', function (e) {
-          return 'Back' + e.back_of_document
-        }),
+          a('edfed0f6', 'Upload front of ID'),
+          a('def5015d', function (e) {
+            return 'Back' + e.back_of_document
+          }),
           a('b09aade6', 'Upload back of ID'),
           a('b40ed190', 'Document'),
-          a('c6650b56', 'Upload document'),
-          a(
-            'd171ed16',
-            'We rely on trusted third parties to help us. These parties verify the authenticity of your ID and provide us with limited information and a platform, allowing us to confirm your eligibility for verified account status.',
-          ),
+          a('c6650b56', 'Upload document')
+        a(
+          'd171ed16',
+          'We rely on trusted third parties to help us. These parties verify the authenticity of your ID and provide us with limited information and a platform, allowing us to confirm your eligibility for verified account status.',
+        ),
           a('f645cc77', 'Learn more'),
           a('b8deb156', 'Privacy Policy'),
           a('i79902b4', 'Select authenticity method'),
@@ -4335,23 +4328,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j043aa31', function (e) {
             return e.count + ' mobile device' + n(e.count, '', 's')
           }),
-          a('f2aa6e96', 'This feature is off'),
-          a('i4d7deee', 'Go to your personalization and data settings to turn it on'),
           a('ae415fd2', 'This setting is off.'),
           a('a90be7b4', 'Email addresses'),
-          a(
-            'e7989d0c',
-            'These are browsers, devices, and information Twitter uses to help operate and personalize your experience.',
-          ),
           a('b1d602d7', 'Learn more'),
           a('d1597ccb', 'Learn more'),
           a('aa1515eb', 'Learn more'),
-          a('ce0436b5', 'Learn more'),
           a('e440acdb', 'Off-Twitter activity'),
           a('a8045fcb', 'Off-Twitter activity'),
-          a('j291883c', 'Personalization and data settings'),
           a('h66398d1', 'Off-Twitter activity'),
-          a('c4144efa', 'Personalization and data settings'),
           a('b056d9dc', 'This is your account’s primary language setting.'),
           a('h68bc23c', 'These additional languages are used to personalize your experience.'),
           a(
@@ -4374,8 +4358,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e27e4fce', 'Unknown location'),
           a('ib55eb6b', 'Connected apps'),
           a('e5a4a539', 'Learn more'),
-          a('icbb92d0', 'Apps page'),
-          a('a9bec4e1', 'Learn more'),
           a('gc8f2e14', 'You can opt out of interest-based advertising in your personalization and data settings.'),
           a('e50b5b45', 'Learn more'),
           a('d3310e49', function (e) {
@@ -4798,24 +4780,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
           ),
           a('d98c140e', 'Continue to Twitter'),
-          a('e55188f0', 'You’re logged in to this account with this browser')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('d55d8fe2', 'Do you want to continue with this account?'),
+          a('e55188f0', 'You’re logged in to this account with this browser'),
+          a('d55d8fe2', 'Do you want to continue with this account?'),
           a('g806008e', 'Log in with a different account'),
           a(
             'b60eba9e',
@@ -4833,10 +4799,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b20', 'Update your phone number'),
-          a('a3fad4f2', 'Log out of Twitter?'),
-          a('f12b4db5', function (e) {
-            return 'Log out of @' + e.screenName + '?'
-          }),
+          a('a3fad4f2', 'Log out of Twitter?')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('f12b4db5', function (e) {
+          return 'Log out of @' + e.screenName + '?'
+        }),
           a(
             'ia5ff8b6',
             'You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.',
@@ -5965,10 +5947,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g15d5e9c', 'When they do, those Tweets will show up here.'),
           a('bb0e41bc', 'You don’t have any likes yet'),
-          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.')
-        a('f11f6625', function (e) {
-          return e.fullName + '’s liked Tweets'
-        }),
+          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
+          a('f11f6625', function (e) {
+            return e.fullName + '’s liked Tweets'
+          }),
           a('f0ae1f0d', function (e) {
             return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -5993,8 +5975,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '@' + e.screenName + ' hasn’t Tweeted media'
           }),
           a('c62ebbac', 'Once they do, those Tweets will show up here.'),
-          a('d1614228', 'Lights, camera … attachments!'),
-          a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.'),
+          a('d1614228', 'Lights, camera … attachments!')
+        a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.'),
           a('d55be465', function (e) {
             return e.fullName + '’s Photos'
           }),
@@ -7090,6 +7072,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'iac7f92b',
+                get: function () {
+                  return [
+                    'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
+                    ' for more details.',
+                  ]
+                },
+              },
+              {
                 key: 'i005f1fd',
                 get: function () {
                   return ['You responded to ', '’s Fleet: ']
@@ -7318,15 +7309,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'This is where you’ll see message requests from people you don’t follow. To reply to their messages, you need to accept the request. ',
-                  ]
-                },
-              },
-              {
-                key: 'iac7f92b',
-                get: function () {
-                  return [
-                    'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
-                    ' for more details.',
                   ]
                 },
               },
@@ -7675,9 +7657,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ab4d390f',
+                key: 'd204b80f',
                 get: function () {
-                  return ['', 'even if your account is protected. Find out how Birdwatch makes data ', '.']
+                  return [
+                    'Ratings are anonymized and made publicly available for transparency. Find out how Birdwatch makes data ',
+                    '.',
+                  ]
                 },
               },
               {
@@ -8741,14 +8726,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'h185b86b',
-                get: function () {
-                  return [
-                    'These are browsers, devices, and information Twitter uses to help operate and personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers similar to those linked to your Twitter account. ',
-                  ]
-                },
-              },
-              {
                 key: 'e1d684b1',
                 get: function () {
                   return [
@@ -8767,29 +8744,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'j7454249',
-                get: function () {
-                  return [
-                    'You can remove this information by disabling the "Personalize based on your inferred identity" setting in your ',
-                    '.',
-                  ]
-                },
-              },
-              {
                 key: 'ad5f7017',
                 get: function () {
                   return [
                     'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling “Personalize based on your inferred identity” in your ',
                     ' settings.',
-                  ]
-                },
-              },
-              {
-                key: 'e49dd295',
-                get: function () {
-                  return [
-                    'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling the "Personalize based on your inferred identity" setting in your ',
-                    '.',
                   ]
                 },
               },
@@ -8804,15 +8763,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'If you see any suspicious activity from an app, go to ',
-                    ' to revoke its access. In some cases the IP location may differ from your physical location. ',
-                  ]
-                },
-              },
-              {
-                key: 'da2603ab',
-                get: function () {
-                  return [
-                    'If you see any suspicious activity from an app, go to the ',
                     ' to revoke its access. In some cases the IP location may differ from your physical location. ',
                   ]
                 },
