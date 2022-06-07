@@ -472,26 +472,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hbc99b03', function (e) {
             return 'Go to @' + e.screenName
           }),
-          a('hbe4feb5', function (e) {
-            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
-          }),
-          a('df4c86b0', 'Please update your profile first'),
-          a('bba40ffa', 'You can’t follow this account'),
-          a(
-            'f558829e',
-            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
-          ),
-          a('a6941096', 'This account can’t be followed from your country.'),
-          a('if8cd2a4', 'You’re not old enough to follow this account.'),
-          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
-          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
-          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
-          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
-          a('j4292c24', 'You have been blocked from following this user at their request.'),
-          a('a0ba5842', 'You are unable to follow more people at this time.'),
-          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
-          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
-          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
           a('ee295fbe', 'Try searching for people, topics, or keywords'),
           a('f45c4250', 'Clear all recent searches?'),
           a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
@@ -532,6 +512,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('gdf4b790', 'Leave conversation?'),
           a('bbf83d84', 'This can’t be undone and the conversation history will be deleted from your inbox.'),
+          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
+          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
           a('ccf2f24e', 'Report'),
           a('ib3fe8aa', 'Block or report'),
           a('fcd4d489', function (e) {
@@ -790,6 +772,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd5208c6', 'Go to settings'),
           a('gdb8bdcc', 'See new Tweets'),
           a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
+          a('hbe4feb5', function (e) {
+            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
+          }),
+          a('df4c86b0', 'Please update your profile first'),
+          a('bba40ffa', 'You can’t follow this account'),
+          a(
+            'f558829e',
+            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
+          ),
+          a('a6941096', 'This account can’t be followed from your country.'),
+          a('if8cd2a4', 'You’re not old enough to follow this account.'),
+          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
+          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
+          a('j4292c24', 'You have been blocked from following this user at their request.'),
+          a('a0ba5842', 'You are unable to follow more people at this time.'),
+          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
+          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
+          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
           a('j0a8da6e', 'Add an existing account'),
           a('c6f2bf00', 'Manage accounts'),
           a('b7dc3885', function (e) {
@@ -1946,9 +1946,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.count
           }),
           a('i18e27a8', 'Unhelpful'),
-          a('ee160790', 'Deleted notes'),
-          a('efb9a9e0', 'Nothing to see here'),
-          a('ee43790f', 'Learn more'),
           a('ff3e0be2', 'Join Birdwatch'),
           a('i1781e26', 'No Birdwatch notes yet'),
           a('db08295e', 'Want to join?'),
@@ -2281,17 +2278,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          )
-        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          ),
+          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
-          a('a67445d6', 'You’re maxed out'),
-          a('fcbe0993', function (e) {
-            return (
-              'Communities can have up to ' +
-              e.maxRuleCount +
-              ' rules. To add a new one, you’ll need to delete a rule you already have.'
-            )
-          }),
+          a('a67445d6', 'You’re maxed out')
+        a('fcbe0993', function (e) {
+          return (
+            'Communities can have up to ' +
+            e.maxRuleCount +
+            ' rules. To add a new one, you’ll need to delete a rule you already have.'
+          )
+        }),
           a('c66769a4', 'Rule'),
           a('ef02695b', function (e) {
             return 'Rule names must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
@@ -3421,11 +3418,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'We rely on trusted third parties to help us. These parties verify the authenticity of your ID and provide us with limited information and a platform, allowing us to confirm your eligibility for verified account status.',
           ),
           a('f645cc77', 'Learn more'),
-          a('b8deb156', 'Privacy Policy')
-        a('i79902b4', 'Select authenticity method'),
+          a('b8deb156', 'Privacy Policy'),
+          a('i79902b4', 'Select authenticity method'),
           a('fb2fcb5c', 'This step helps us verify your identity. Choose the method that works best for you.'),
-          a('cb7c2e2e', 'A photo of your government issued ID.'),
-          a('g253cdd0', 'An official email with a domain relevant to the category you chose.'),
+          a('cb7c2e2e', 'A photo of your government issued ID.')
+        a('g253cdd0', 'An official email with a domain relevant to the category you chose.'),
           a('ca5fb0d4', 'An official website that directly references your Twitter account.'),
           a('g40cd2c0', 'Verified reference'),
           a(
@@ -4800,7 +4797,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ea3750c4', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
           a('gc6866f8', 'Logging out'),
-          a('c20aaf3e', 'Error')
+          a('c20aaf3e', 'Error'),
+          a('ef70ab8c', 'Seize the Moment'),
+          a('ba977302', 'Choose an existing Moment or create a new one.'),
+          a('ef90c7ae', 'Create new')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4817,10 +4817,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ef70ab8c', 'Seize the Moment'),
-          a('ba977302', 'Choose an existing Moment or create a new one.'),
-          a('ef90c7ae', 'Create new'),
-          a('da0ea384', 'Creating Moment'),
+        a('da0ea384', 'Creating Moment'),
           a('ha4a78a6', 'Publishing not available'),
           a(
             'e1c6a886',
@@ -5462,6 +5459,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
+          a('efb9a9e0', 'Nothing to see here'),
           a('b4c01934', 'Analytics aren’t available for Twitter Circle Tweets.'),
           a('ge538876', 'Metrics for the video you shared'),
           a('dcc05a7e', 'Views'),
@@ -5979,14 +5977,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('h1658542', 'Suspended user'),
           a('b5447710', 'User not found'),
-          a('fe9d3afa', 'Loading Followers')
-        a('fbce8dbe', 'Find people to follow'),
+          a('fe9d3afa', 'Loading Followers'),
+          a('fbce8dbe', 'Find people to follow'),
           a('ab7fc3ef', function (e) {
             return 'People super following ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
-          a('j0d17377', function (e) {
-            return 'People you know following ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
+          })
+        a('j0d17377', function (e) {
+          return 'People you know following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
           a('fa9e827f', function (e) {
             return 'People following ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -6081,7 +6079,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcd54328', 'grouped'),
           a('ha20397c', 'Accessibility features'),
           a('baf7a43c', 'Accessibility'),
-          a('e8f674ab', function (e) {
+          a('a6b92afb', function (e) {
             return (
               'This is a ' +
               e.chartType +
@@ -6093,7 +6091,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.minValue +
               ' and the maximum value is ' +
               e.maxValue +
-              '. Explore the chart using navigation controls.'
+              '.'
             )
           }),
           a('d969327c', 'Play audio version'),
@@ -6255,6 +6253,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1bddf52', 'Drag to rotate'),
           a('b8b6344a', 'Unmute'),
           a('ec8ab8b4', 'Mute'),
+          a('c9a642fa', 'Volume slider'),
           a('gaeb997e', 'More'),
           a('f8b21226', 'Join'),
           a('b3d828ee', 'Joined'),
@@ -6405,7 +6404,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.volumePercent + ' percent'
           }),
           a('e9bd453e', 'Replay'),
-          a('c9a642fa', 'Volume slider'),
           a('c27e60b0', 'Full screen'),
           a('d2969f10', 'Exit full screen'),
           a('a15adf2c', 'this form'),
@@ -6621,7 +6619,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.otherUsersCount + ' others',
             )
           }),
-          a('h30a19bb', function (e) {
+          a('e1b4a7f5', function (e) {
             return (
               'This is a pie chart. The title of the chart is ' +
               e.chartTitle +
@@ -6631,9 +6629,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.minValue +
               ' and the maximum value is ' +
               e.maxValue +
-              '. Explore the chart using navigation controls.'
+              '.'
             )
           }),
+          a('b82cca2e', 'Explore the chart using navigation controls.'),
           a('f1a1b791', function (e) {
             return 'Promoted by ' + e.fullName
           }),
@@ -7723,20 +7722,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c6726127',
                 get: function () {
                   return ['', ' ']
-                },
-              },
-              {
-                key: 'f52f0cbd',
-                get: function () {
-                  return [this.props.num + ' deleted notes']
-                },
-              },
-              {
-                key: 'j6d27aa3',
-                get: function () {
-                  return [
-                    'Birdwatch keeps deleted notes’ status to accurately assign reputation to the note author and raters. ',
-                  ]
                 },
               },
               {
