@@ -472,26 +472,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hbc99b03', function (e) {
             return 'Go to @' + e.screenName
           }),
-          a('hbe4feb5', function (e) {
-            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
-          }),
-          a('df4c86b0', 'Please update your profile first'),
-          a('bba40ffa', 'You can’t follow this account'),
-          a(
-            'f558829e',
-            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
-          ),
-          a('a6941096', 'This account can’t be followed from your country.'),
-          a('if8cd2a4', 'You’re not old enough to follow this account.'),
-          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
-          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
-          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
-          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
-          a('j4292c24', 'You have been blocked from following this user at their request.'),
-          a('a0ba5842', 'You are unable to follow more people at this time.'),
-          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
-          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
-          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
           a('ee295fbe', 'Try searching for people, topics, or keywords'),
           a('f45c4250', 'Clear all recent searches?'),
           a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
@@ -532,6 +512,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('gdf4b790', 'Leave conversation?'),
           a('bbf83d84', 'This can’t be undone and the conversation history will be deleted from your inbox.'),
+          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
+          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
           a('ccf2f24e', 'Report'),
           a('ib3fe8aa', 'Block or report'),
           a('fcd4d489', function (e) {
@@ -636,12 +618,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64c1884', 'Compose new Message'),
           a('j7d0e836', 'Expand'),
           a('a2f81050', 'Messages'),
-          a('a74e7c77', function (e) {
-            return e.count + ' unread request' + n(e.count, '', 's')
-          }),
-          a('h6beb5fb', function (e) {
-            return e.count + '+'
-          }),
+          a('a676a876', 'Welcome to your inbox!'),
+          a(
+            'j2611eac',
+            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
+          ),
+          a('efe8fda0', 'Write a message'),
           a('a66ac766', 'Loading Direct Messages'),
           a('fe61929e', 'Search for people and groups'),
           a('a846382a', 'Search Direct Messages'),
@@ -713,12 +695,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
           a('h845f282', 'Direct Message'),
           a('f325afc4', 'Compose a DM'),
-          a('a676a876', 'Welcome to your inbox!'),
-          a(
-            'j2611eac',
-            'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
-          ),
-          a('efe8fda0', 'Write a message'),
           a('cf2d1048', 'Message requests'),
           a('da2f9225', function (e) {
             return e.count + ' unread messages'
@@ -738,6 +714,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('fac945ad', function (e) {
             return e.stringCount + ' new request' + n(e.count, '', 's')
+          }),
+          a('h6beb5fb', function (e) {
+            return e.count + '+'
+          }),
+          a('a74e7c77', function (e) {
+            return e.count + ' unread request' + n(e.count, '', 's')
           }),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
@@ -790,6 +772,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd5208c6', 'Go to settings'),
           a('gdb8bdcc', 'See new Tweets'),
           a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
+          a('hbe4feb5', function (e) {
+            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
+          }),
+          a('df4c86b0', 'Please update your profile first'),
+          a('bba40ffa', 'You can’t follow this account'),
+          a(
+            'f558829e',
+            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
+          ),
+          a('a6941096', 'This account can’t be followed from your country.'),
+          a('if8cd2a4', 'You’re not old enough to follow this account.'),
+          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
+          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
+          a('j4292c24', 'You have been blocked from following this user at their request.'),
+          a('a0ba5842', 'You are unable to follow more people at this time.'),
+          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
+          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
+          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
           a('j0a8da6e', 'Add an existing account'),
           a('c6f2bf00', 'Manage accounts'),
           a('b7dc3885', function (e) {
@@ -1946,9 +1946,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.count
           }),
           a('i18e27a8', 'Unhelpful'),
-          a('ee160790', 'Deleted notes'),
-          a('efb9a9e0', 'Nothing to see here'),
-          a('ee43790f', 'Learn more'),
           a('ff3e0be2', 'Join Birdwatch'),
           a('i1781e26', 'No Birdwatch notes yet'),
           a('db08295e', 'Want to join?'),
@@ -2240,7 +2237,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5f01116', 'Purpose'),
           a('c3c04b70', 'Color theme'),
           a('f4a98e9e', 'Community information'),
-          a('ab1069de', 'Delete Community'),
           a('a49f884e', 'Community Banner'),
           a('ea965b82', 'Edit Community Banner'),
           a('gea6cc1a', 'Are you sure?'),
@@ -2278,21 +2274,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'h5482c7a',
             'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
-          )
-        a(
-          'd5033a7a',
-          'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-        ),
+          ),
+          a(
+            'd5033a7a',
+            'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
+          ),
           a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
-          a('a67445d6', 'You’re maxed out'),
-          a('fcbe0993', function (e) {
-            return (
-              'Communities can have up to ' +
-              e.maxRuleCount +
-              ' rules. To add a new one, you’ll need to delete a rule you already have.'
-            )
-          }),
+          a('a67445d6', 'You’re maxed out')
+        a('fcbe0993', function (e) {
+          return (
+            'Communities can have up to ' +
+            e.maxRuleCount +
+            ' rules. To add a new one, you’ll need to delete a rule you already have.'
+          )
+        }),
           a('c66769a4', 'Rule'),
           a('ef02695b', function (e) {
             return 'Rule names must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
@@ -2651,26 +2647,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b255df58', 'Application submitted · Waiting for review'),
           a('b3f834c8', 'Application waitlisted'),
           a('i724fb4a', 'Get help'),
-          a('jbbe5dde', 'First things first'),
-          a(
-            'hdcafbba',
-            'To begin the application process, you’ll need to provide some basic information and complete your profile.',
-          ),
-          a('jd067188', 'Add an email address'),
-          a('f89eb478', 'We’ll use it to contact you about your application status and other important information.'),
-          a('f3f66252', 'Add email address'),
-          a('h9ab7046', 'Make sure you have a bio and location listed'),
-          a(
-            'eb5a4792',
-            'Having a complete bio and location helps build trust in your profile and get more subscribers.',
-          ),
-          a('i79ba1e8', 'Update profile'),
-          a('i623bc7a', 'Secure your account with two-factor authentication'),
-          a(
-            'd1c14674',
-            'Adding two-factor authentication will make it harder for other people to gain access to your account.',
-          ),
-          a('hd3a6588', 'Set up two-factor authentication'),
+          a('g92a2344', 'Complete profile'),
           a('a0c67dd4', 'Confirm your age to apply'),
           a(
             'ad4a61ae',
@@ -2830,8 +2807,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b08bbeb4',
             'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
           ),
-          a('cbc8ce28', 'Get bonus content when you subscribe'),
           a('a953a0a6', 'Only Super Followers can see this Tweet'),
+          a('cbc8ce28', 'Get bonus content when you subscribe'),
           a('a329ce88', 'Add a description...'),
           a('f0c99eff', function (e) {
             return '- @' + e.screenName
@@ -3425,8 +3402,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d9bd3823', 'Learn more'),
           a('a67f27bd', 'Learn more'),
           a('b8be7adb', 'Learn more'),
-          a('gd663f41', 'Learn more')
-        a('b436b101', 'Learn more'),
+          a('gd663f41', 'Learn more'),
+          a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
           a('bdada5a6', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
@@ -3444,8 +3421,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b8deb156', 'Privacy Policy'),
           a('i79902b4', 'Select authenticity method'),
           a('fb2fcb5c', 'This step helps us verify your identity. Choose the method that works best for you.'),
-          a('cb7c2e2e', 'A photo of your government issued ID.'),
-          a('g253cdd0', 'An official email with a domain relevant to the category you chose.'),
+          a('cb7c2e2e', 'A photo of your government issued ID.')
+        a('g253cdd0', 'An official email with a domain relevant to the category you chose.'),
           a('ca5fb0d4', 'An official website that directly references your Twitter account.'),
           a('g40cd2c0', 'Verified reference'),
           a(
@@ -3922,6 +3899,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ebeeac1a', 'Change email'),
           a('dc013356', 'Current'),
           a('ea28c7ce', 'Loading email settings'),
+          a('f3f66252', 'Add email address'),
           a('i5107de4', 'Update email address'),
           a('d19fd42a', 'Resend confirmation email'),
           a('g4da3246', 'Email sent. Please check your inbox shortly for a confirmation link.'),
@@ -4802,24 +4780,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f9c558af', function (e) {
             return 'Want to login with your phone, @' + e.userScreenName + '?'
           }),
-          a('haa104f0', 'Send code')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('h25bc384', 'Use your password instead'),
+          a('haa104f0', 'Send code'),
+          a('h25bc384', 'Use your password instead'),
           a('ecde12c1', function (e) {
             return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
           }),
@@ -4838,8 +4800,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c20aaf3e', 'Error'),
           a('ef70ab8c', 'Seize the Moment'),
           a('ba977302', 'Choose an existing Moment or create a new one.'),
-          a('ef90c7ae', 'Create new'),
-          a('da0ea384', 'Creating Moment'),
+          a('ef90c7ae', 'Create new')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('da0ea384', 'Creating Moment'),
           a('ha4a78a6', 'Publishing not available'),
           a(
             'e1c6a886',
@@ -5256,11 +5234,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'gad89c4a',
             'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our guidelines for law enforcement if they have follow-up questions. ',
           ),
-          a('h7fa9240', 'United States:'),
-          a('h5ee35ec', 'National Suicide Prevention Lifeline at 1-800-273-TALK (8255).'),
-          a('bb57e8c0', 'Other countries and regions:'),
-          a('b9ce59ba', 'Thanks again for bringing this to our attention.'),
-          a('d42899ad', 'International Association for Suicide Prevention.'),
           a('h030c24c', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c34', 'Follow your interests.'),
@@ -5486,6 +5459,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
+          a('efb9a9e0', 'Nothing to see here'),
           a('b4c01934', 'Analytics aren’t available for Twitter Circle Tweets.'),
           a('ge538876', 'Metrics for the video you shared'),
           a('dcc05a7e', 'Views'),
@@ -5974,10 +5948,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f0ae1f0d', function (e) {
             return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
-          })
-        a('aab9faa7', function (e) {
-          return 'Loading reactions by @' + e.screenName
-        }),
+          }),
+          a('aab9faa7', function (e) {
+            return 'Loading reactions by @' + e.screenName
+          }),
           a('ia716753', function (e) {
             return '@' + e.screenName + ' hasn’t reacted to any Tweets'
           }),
@@ -6007,10 +5981,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fbce8dbe', 'Find people to follow'),
           a('ab7fc3ef', function (e) {
             return 'People super following ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
-          a('j0d17377', function (e) {
-            return 'People you know following ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
+          })
+        a('j0d17377', function (e) {
+          return 'People you know following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
           a('fa9e827f', function (e) {
             return 'People following ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -6105,7 +6079,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcd54328', 'grouped'),
           a('ha20397c', 'Accessibility features'),
           a('baf7a43c', 'Accessibility'),
-          a('e8f674ab', function (e) {
+          a('a6b92afb', function (e) {
             return (
               'This is a ' +
               e.chartType +
@@ -6117,7 +6091,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.minValue +
               ' and the maximum value is ' +
               e.maxValue +
-              '. Explore the chart using navigation controls.'
+              '.'
             )
           }),
           a('d969327c', 'Play audio version'),
@@ -6279,6 +6253,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1bddf52', 'Drag to rotate'),
           a('b8b6344a', 'Unmute'),
           a('ec8ab8b4', 'Mute'),
+          a('c9a642fa', 'Volume slider'),
           a('gaeb997e', 'More'),
           a('f8b21226', 'Join'),
           a('b3d828ee', 'Joined'),
@@ -6429,7 +6404,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.volumePercent + ' percent'
           }),
           a('e9bd453e', 'Replay'),
-          a('c9a642fa', 'Volume slider'),
           a('c27e60b0', 'Full screen'),
           a('d2969f10', 'Exit full screen'),
           a('a15adf2c', 'this form'),
@@ -6645,7 +6619,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.otherUsersCount + ' others',
             )
           }),
-          a('h30a19bb', function (e) {
+          a('e1b4a7f5', function (e) {
             return (
               'This is a pie chart. The title of the chart is ' +
               e.chartTitle +
@@ -6655,9 +6629,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.minValue +
               ' and the maximum value is ' +
               e.maxValue +
-              '. Explore the chart using navigation controls.'
+              '.'
             )
           }),
+          a('b82cca2e', 'Explore the chart using navigation controls.'),
           a('f1a1b791', function (e) {
             return 'Promoted by ' + e.fullName
           }),
@@ -7747,20 +7722,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c6726127',
                 get: function () {
                   return ['', ' ']
-                },
-              },
-              {
-                key: 'f52f0cbd',
-                get: function () {
-                  return [this.props.num + ' deleted notes']
-                },
-              },
-              {
-                key: 'j6d27aa3',
-                get: function () {
-                  return [
-                    'Birdwatch keeps deleted notes’ status to accurately assign reputation to the note author and raters. ',
-                  ]
                 },
               },
               {
@@ -8981,12 +8942,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'hce48b8b',
                 get: function () {
                   return ['Did you mean "', '"?']
-                },
-              },
-              {
-                key: 'ef72b01b',
-                get: function () {
-                  return ['To find a crisis center near you, visit ']
                 },
               },
               {
