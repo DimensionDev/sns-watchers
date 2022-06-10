@@ -5189,6 +5189,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e9f55db8', 'Sunday'),
           a('f9f911f4', 'Search time zone'),
           a('c02e7e3c', 'Loading...'),
+          a('j11df0ca', 'Overlapping hours'),
           a('d21a4252', 'Add more hours'),
           a('ac6ce1c0', 'From'),
           a('c647aac8', 'To'),
@@ -5971,13 +5972,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
           a('f11f6625', function (e) {
             return e.fullName + '’s liked Tweets'
-          }),
-          a('f0ae1f0d', function (e) {
-            return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
           })
-        a('aab9faa7', function (e) {
-          return 'Loading reactions by @' + e.screenName
+        a('f0ae1f0d', function (e) {
+          return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
+          a('aab9faa7', function (e) {
+            return 'Loading reactions by @' + e.screenName
+          }),
           a('ia716753', function (e) {
             return '@' + e.screenName + ' hasn’t reacted to any Tweets'
           }),
