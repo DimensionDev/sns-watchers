@@ -1990,8 +1990,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b8a27fe2', 'in our guide'),
           a('j1c99e00', 'Notes data'),
           a('i6f69314', 'Ratings data'),
+          a('b7e4c114', 'Note status history data'),
           a('h786cd7a', 'Notes data isn’t available yet'),
           a('d0fe8052', 'Ratings data isn’t available yet'),
+          a('c0427f94', 'Note status history data isn’t available yet'),
           a('g0cacb75', 'Twitter Developer Agreement and Policy'),
           a('e9f1fbcc', 'Nothing to see here — yet'),
           a('d69b2d90', 'You’re not interested in this Topic.'),
@@ -2273,16 +2275,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
           a('j560c8ea', 'Add rule'),
-          a('ab8089ea', 'Reorder'),
-          a('a9ba79c0', 'Good rules make good Communities'),
+          a('ab8089ea', 'Reorder')
+        a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
             'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
-          )
-        a(
-          'd5033a7a',
-          'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-        ),
+          ),
+          a(
+            'd5033a7a',
+            'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
+          ),
           a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
@@ -3423,10 +3425,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
           a('d9bd3823', 'Learn more'),
-          a('a67f27bd', 'Learn more'),
-          a('b8be7adb', 'Learn more'),
-          a('gd663f41', 'Learn more')
-        a('b436b101', 'Learn more'),
+          a('a67f27bd', 'Learn more')
+        a('b8be7adb', 'Learn more'),
+          a('gd663f41', 'Learn more'),
+          a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
           a('bdada5a6', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
@@ -4765,7 +4767,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('a399ed20', 'Let’s go'),
           a('g2b8acd4', 'Log in to Twitter'),
-          a('bdc9d8a2', 'Login on Twitter'),
+          a(
+            'jd7ca8ee',
+            'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+          ),
           a(
             'c2ab20ac',
             'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
@@ -4798,11 +4803,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
           ),
           a('ba939778', 'Are you a robot?'),
-          a('f0816dee', 'Loading login page'),
-          a('f9c558af', function (e) {
-            return 'Want to login with your phone, @' + e.userScreenName + '?'
-          }),
-          a('haa104f0', 'Send code')
+          a('f0816dee', 'Loading login page')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4819,7 +4820,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('h25bc384', 'Use your password instead'),
+        a('f9c558af', function (e) {
+          return 'Want to login with your phone, @' + e.userScreenName + '?'
+        }),
+          a('haa104f0', 'Send code'),
+          a('h25bc384', 'Use your password instead'),
           a('ecde12c1', function (e) {
             return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
           }),
@@ -5227,6 +5232,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('daa0da04', 'Small Text'),
           a('ba5256b2', 'Text Size'),
           a('e37836f8', 'Report Detail'),
+          a('fb35e52a', 'View Rule'),
           a('e238c590', 'What’s next'),
           a(
             'if218e60',
@@ -5241,9 +5247,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e899a534', 'How severe is this violation?'),
           a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
           a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
-          a('c9853de0', 'Content hidden'),
-          a('a23e724a', 'This account is unavailable.'),
-          a('fb35e52a', 'View Rule'),
           a('b7ba712a', 'Violation found'),
           a('d90b8c04', 'No Violation Found'),
           a('c2d0494a', 'Our safety recommendations'),
@@ -5262,6 +5265,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb57e8c0', 'Other countries and regions:'),
           a('b9ce59ba', 'Thanks again for bringing this to our attention.'),
           a('d42899ad', 'International Association for Suicide Prevention.'),
+          a('c9853de0', 'Content hidden'),
+          a('a23e724a', 'This account is unavailable.'),
           a('h030c24c', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c34', 'Follow your interests.'),
@@ -5968,14 +5973,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '@' + e.screenName + ' hasn’t liked any Tweets'
           }),
           a('g15d5e9c', 'When they do, those Tweets will show up here.'),
-          a('bb0e41bc', 'You don’t have any likes yet'),
-          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
+          a('bb0e41bc', 'You don’t have any likes yet')
+        a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
           a('f11f6625', function (e) {
             return e.fullName + '’s liked Tweets'
-          })
-        a('f0ae1f0d', function (e) {
-          return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
+          }),
+          a('f0ae1f0d', function (e) {
+            return 'Reactions by ' + e.fullName + ' (@' + e.screenName + ')'
+          }),
           a('aab9faa7', function (e) {
             return 'Loading reactions by @' + e.screenName
           }),
@@ -6697,6 +6702,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc716ec9', function (e) {
             return 'Recommended Topic: ' + e.topicName
           }),
+          a('f543c4c8', 'Latest Edit'),
+          a('ccb9c41a', 'Stale Edit'),
+          a('hc052e5c', 'Edited'),
+          a('d0d51086', 'There’s a new version of this Tweet'),
+          a('c6578930', 'There’s a new version of this Tweet.'),
           a('j2eea17a', 'The following media includes potentially sensitive content.'),
           a('caddb529', 'and'),
           a('ff31714c', function (e) {
@@ -6794,11 +6804,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('dc63da16', 'Share'),
           a('jc9298a8', 'Share Tweet'),
-          a('f543c4c8', 'Latest Edit'),
-          a('ccb9c41a', 'Stale Edit'),
-          a('hc052e5c', 'Edited'),
-          a('d0d51086', 'There’s a new version of this Tweet'),
-          a('c6578930', 'There’s a new version of this Tweet.'),
           a('b7ea93b2', 'Edit Twitter Circle'),
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
