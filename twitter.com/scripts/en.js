@@ -752,6 +752,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b8533bac', 'Topics'),
           a('h02a6fe6', 'Communities'),
           a('ded416b0', 'Spaces'),
+          a('dc931afc', 'Communities (New items)'),
           a('d86bbf0f', function (e) {
             return e.count + ' unread items'
           }),
@@ -1158,13 +1159,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c42234da', function (e) {
             return 'Retweet' + n(e.count, '', 's')
-          }),
-          a('f6e12707', function (e) {
-            return '' + e.displayCount
           })
-        a('e2414185', function (e) {
-          return 'Quote Tweet' + n(e.count, '', 's')
+        a('f6e12707', function (e) {
+          return '' + e.displayCount
         }),
+          a('e2414185', function (e) {
+            return 'Quote Tweet' + n(e.count, '', 's')
+          }),
           a('d172116a', 'Discover more'),
           a('iac074c4', 'More Tweets'),
           a('g11ebd34', 'More suggestions'),
@@ -2274,9 +2275,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
-          a('j560c8ea', 'Add rule'),
-          a('ab8089ea', 'Reorder')
-        a('a9ba79c0', 'Good rules make good Communities'),
+          a('j560c8ea', 'Add rule')
+        a('ab8089ea', 'Reorder'),
+          a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
             'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
@@ -3424,9 +3425,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe7420f5', 'Learn more'),
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
-          a('d9bd3823', 'Learn more'),
-          a('a67f27bd', 'Learn more')
-        a('b8be7adb', 'Learn more'),
+          a('d9bd3823', 'Learn more')
+        a('a67f27bd', 'Learn more'),
+          a('b8be7adb', 'Learn more'),
           a('gd663f41', 'Learn more'),
           a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
@@ -4802,8 +4803,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b60eba9e',
             'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
           ),
-          a('ba939778', 'Are you a robot?'),
-          a('f0816dee', 'Loading login page')
+          a('ba939778', 'Are you a robot?')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4820,9 +4820,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f9c558af', function (e) {
-          return 'Want to login with your phone, @' + e.userScreenName + '?'
-        }),
+        a('f0816dee', 'Loading login page'),
+          a('f9c558af', function (e) {
+            return 'Want to login with your phone, @' + e.userScreenName + '?'
+          }),
           a('haa104f0', 'Send code'),
           a('h25bc384', 'Use your password instead'),
           a('ecde12c1', function (e) {
@@ -5680,8 +5681,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aea1d455', function (e) {
             return e.count + ' minute' + n(e.count, '', 's')
           }),
+          a(
+            'h880e4b8',
+            'Wait! This Note can’t be read right now. The writer may have unpublished it, or Notes might not be available in your location. You can try reloading the page, visiting the writer’s profile page and clicking to the Notes tab, or try again when Notes are available in your location.',
+          ),
           a('fcaf3ce6', 'Share via Tweet...'),
           a('a4079efa', 'Learn more about Notes'),
+          a(
+            'c9e3df02',
+            'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Twitter Blue subscription.',
+          ),
+          a('dad69faa', 'Update your payment method'),
           a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af450', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
@@ -5965,16 +5975,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e21082be', 'Profile Tweets'),
           a('d7c03c5d', function (e) {
             return 'Tweets liked by ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
-          a('a64da953', function (e) {
-            return 'Loading Likes by @' + e.screenName
-          }),
+          })
+        a('a64da953', function (e) {
+          return 'Loading Likes by @' + e.screenName
+        }),
           a('a2f22d2d', function (e) {
             return '@' + e.screenName + ' hasn’t liked any Tweets'
           }),
           a('g15d5e9c', 'When they do, those Tweets will show up here.'),
-          a('bb0e41bc', 'You don’t have any likes yet')
-        a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
+          a('bb0e41bc', 'You don’t have any likes yet'),
+          a('bf15f5b6', 'Tap the heart on any Tweet to show it some love. When you do, it’ll show up here.'),
           a('f11f6625', function (e) {
             return e.fullName + '’s liked Tweets'
           }),
@@ -6632,6 +6642,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e6e16812', 'Square'),
           a('a35a5b10', 'Followers you know'),
           a('fc8cd112', 'Not followed by anyone you’re following'),
+          a('jcf3e7a2', 'Frame progress for Lottie Animation'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -6689,6 +6700,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c9d7235e', 'Quote Tweet'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
+          a('ge06d0bc', 'Video preview poster'),
           a('ccd32094', 'Now'),
           a('abfcce0d', function (e) {
             return e.amountOfTime + ' ago'
@@ -6702,11 +6714,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc716ec9', function (e) {
             return 'Recommended Topic: ' + e.topicName
           }),
-          a('f543c4c8', 'Latest Edit'),
-          a('ccb9c41a', 'Stale Edit'),
-          a('hc052e5c', 'Edited'),
-          a('d0d51086', 'There’s a new version of this Tweet'),
-          a('c6578930', 'There’s a new version of this Tweet.'),
           a('j2eea17a', 'The following media includes potentially sensitive content.'),
           a('caddb529', 'and'),
           a('ff31714c', function (e) {
@@ -6804,6 +6811,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('dc63da16', 'Share'),
           a('jc9298a8', 'Share Tweet'),
+          a('f543c4c8', 'Latest Edit'),
+          a('ccb9c41a', 'Stale Edit'),
+          a('hc052e5c', 'Edited'),
+          a('d0d51086', 'There’s a new version of this Tweet'),
+          a('c6578930', 'There’s a new version of this Tweet.'),
           a('b7ea93b2', 'Edit Twitter Circle'),
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
