@@ -1279,16 +1279,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec909a55', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
           }),
-          a('jd53409e', 'Don’t forget to add descriptions'),
-          a('edae65de', 'Your image doesn’t have a description.'),
-          a('a859846a', 'Your images don’t have descriptions.'),
-          a('e90118f6', 'One of your images doesn’t have a description.'),
-          a('c211dcb2', 'Some of your images don’t have descriptions.'),
-          a('d7c26bfc', 'Describe what’s in the image and why it’s important here.'),
-          a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
-          a('dcb7e3a0', 'Write out text, summarize longer text, and try to keep it short.'),
-          a('c1bf53b1', function (e) {
-            return 'Add ' + n(e.numOfDescriptions, 'a description', 'descriptions')
+          a('c7152355', function (e) {
+            return 'Don’t forget to make your image' + n(e.numberOfImages, '', 's') + ' accessible'
+          }),
+          a(
+            'ffa5562a',
+            'Good image descriptions are concise yet detailed. Be sure to summarize or write out any text in the image itself.',
+          ),
+          a('dd4a14a1', function (e) {
+            return (
+              'Your description' +
+              n(e.numberOfImages, ' makes', 's make') +
+              ' Twitter accessible to people with disabilities, and everyone who wants more context.'
+            )
+          }),
+          a('j499fbcb', function (e) {
+            return 'Add description' + n(e.numberOfImages, '', 's')
           }),
           a('bb8170da', 'Not this time'),
           a('dad5a4b8', 'Your Tweet was sent.'),
@@ -1319,9 +1325,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec10ee02', 'Poll'),
           a('h735a98e', 'Schedule'),
           a('c4ccfbe2', 'Tag Location'),
-          a('j499fbcb', function (e) {
-            return 'Add description' + n(e.numberOfImages, '', 's')
-          }),
           a('b7d8e3f1', function (e) {
             return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
           }),
@@ -1338,7 +1341,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0748dae', 'Twitter Circle'),
           a('c33a97d6', 'Public'),
           a('a68885de', 'All Followers'),
-          a('c64974fc', 'Followers'),
           a('c63602d4', 'My Communities'),
           a('a5f7b700', function (e) {
             return '' + e.formattedCount
@@ -2244,6 +2246,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c3c04b70', 'Color theme'),
           a('f4a98e9e', 'Community information'),
           a('ab1069de', 'Delete Community'),
+          a(
+            'b55f0be8',
+            'Once you delete the Community it cannot be undone. All Tweets will also be removed and cannot be found.',
+          ),
+          a('i27eb0b7', function (e) {
+            return '' + e.communityName
+          }),
           a('a49f884e', 'Community Banner'),
           a('ea965b82', 'Edit Community Banner'),
           a('gea6cc1a', 'Are you sure?'),
@@ -2275,8 +2284,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
-          a('j560c8ea', 'Add rule')
-        a('ab8089ea', 'Reorder'),
+          a('j560c8ea', 'Add rule'),
+          a('ab8089ea', 'Reorder'),
           a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
@@ -2286,8 +2295,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
           ),
-          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
-          a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
+          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.')
+        a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
             return (
@@ -3069,8 +3078,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ae41b002',
             'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
           ),
-          a('e82b294e', 'Prompt me to add image descriptions'),
-          a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
+          a('h9d1cfae', 'Receive image description reminder'),
+          a('i8dd9d42', 'Enables a reminder to add image descriptions before a Tweet can be sent.'),
           a('bd15d030', 'Learn more about accessibility at Twitter'),
           a('a2dfde68', 'Accessibility at Twitter'),
           a('g1888dc2', 'Never'),
@@ -3425,13 +3434,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe7420f5', 'Learn more'),
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
-          a('d9bd3823', 'Learn more')
-        a('a67f27bd', 'Learn more'),
+          a('d9bd3823', 'Learn more'),
+          a('a67f27bd', 'Learn more'),
           a('b8be7adb', 'Learn more'),
           a('gd663f41', 'Learn more'),
           a('b436b101', 'Learn more'),
-          a('ff1d68f8', 'Upload a photo of your ID'),
-          a('bdada5a6', 'Front'),
+          a('ff1d68f8', 'Upload a photo of your ID')
+        a('bdada5a6', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
           a('def5015d', function (e) {
             return 'Back' + e.back_of_document
@@ -4803,7 +4812,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b60eba9e',
             'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
           ),
-          a('ba939778', 'Are you a robot?')
+          a('ba939778', 'Are you a robot?'),
+          a('f0816dee', 'Loading login page'),
+          a('f9c558af', function (e) {
+            return 'Want to login with your phone, @' + e.userScreenName + '?'
+          }),
+          a('haa104f0', 'Send code'),
+          a('h25bc384', 'Use your password instead'),
+          a('ecde12c1', function (e) {
+            return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
+          })
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4820,16 +4838,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f0816dee', 'Loading login page'),
-          a('f9c558af', function (e) {
-            return 'Want to login with your phone, @' + e.userScreenName + '?'
-          }),
-          a('haa104f0', 'Send code'),
-          a('h25bc384', 'Use your password instead'),
-          a('ecde12c1', function (e) {
-            return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
-          }),
-          a('j4824c52', 'Standard SMS fees may apply.'),
+        a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b20', 'Update your phone number'),
           a('a3fad4f2', 'Log out of Twitter?'),
           a('f12b4db5', function (e) {
@@ -5358,14 +5367,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
           a('i6e5440e', 'Minimum Retweets'),
           a('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
+          a(
+            'c3d23f10',
+            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
+          ),
           a('ge046208', 'Manage subscription'),
-          a('c451b37c', 'Subscription cancellation'),
-          a('df823d52', 'To cancel or manage your subscription, go to your Apple App Store account on an iOS device.'),
+          a('f5b352ec', 'Cancel subscription'),
           a('b942f94c', 'Already canceled your subscription?'),
           a(
-            'adc2c34a',
-            'If you have already canceled your subscription, your benefits will automatically expire at the end of the billing cycle.',
+            'e9069f26',
+            'If you’ve already canceled, there’s nothing more to do. Your subscription will automatically expire at the end of the billing cycle.',
           ),
+          a('f04110c0', 'Want to cancel your subscription?'),
+          a('cb9cfdf8', 'If you cancel, your subscription will automatically expire at the end of the billing cycle.'),
+          a(
+            'c5d9c77a',
+            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again.',
+          ),
+          a('ee9efbc8', 'Continue to cancellation'),
+          a('gaa70ac8', 'this will navigate you away from Twitter'),
+          a('ha6a73ee', 'You can cancel your subscription through the Apple App Store.'),
+          a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
           a('g931a6e5', function (e) {
             return 'You’re following ' + e.topic
           }),
@@ -5490,6 +5512,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jede3014', 'Your promotion is under review'),
           a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
+          a('b069d89c', 'Audience'),
+          a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
+          a('c61c6624', 'Promoted'),
+          a('d267afa2', 'Under 20'),
+          a('db81cab0', '20-29'),
+          a('f173716e', '30-39'),
+          a('ada329e6', '40-49'),
+          a('j2950694', 'Above 50'),
+          a('a3c544e8', 'Top countries'),
+          a('h3525cb8', 'Not specified'),
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
@@ -5556,6 +5588,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b07cc9f2', 'Region'),
           a('ce309bee', 'Metro'),
           a('cc49d030', 'Postcode'),
+          a('c64974fc', 'Followers'),
           a('i638f89c', 'Website visits'),
           a('e1bca506', 'Your promoted Tweet is under review'),
           a('e4a4c608', 'Check back soon.'),
@@ -5593,7 +5626,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
           a('a96f811e', 'Promotion goal'),
-          a('b069d89c', 'Audience'),
           a('fbd44e96', 'Your budget'),
           a('e36bce64', 'Payment method'),
           a('c602f5b8', 'Total'),
@@ -5946,11 +5978,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
           a('g784d3c6', 'Send a Tweet'),
-          a('ib53965c', 'Don’t keep your Super Followers waiting'),
-          a(
-            'cb1915b0',
-            'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
-          ),
+          a('ib53965c', 'Don’t keep your Super Followers waiting')
+        a(
+          'cb1915b0',
+          'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
+        ),
           a('dc1f8991', function (e) {
             return '@' + e.screenName + ' hasn’t Tweeted'
           }),
@@ -5975,10 +6007,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e21082be', 'Profile Tweets'),
           a('d7c03c5d', function (e) {
             return 'Tweets liked by ' + e.fullName + ' (@' + e.screenName + ')'
-          })
-        a('a64da953', function (e) {
-          return 'Loading Likes by @' + e.screenName
-        }),
+          }),
+          a('a64da953', function (e) {
+            return 'Loading Likes by @' + e.screenName
+          }),
           a('a2f22d2d', function (e) {
             return '@' + e.screenName + ' hasn’t liked any Tweets'
           }),
@@ -6059,10 +6091,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
           a('j85d8d90', 'No follow request pending for that user.'),
           a('ec2d8342', 'Decline'),
-          a(
-            'c3d23f10',
-            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
-          ),
           a('d2613123', function (e) {
             return 'Subscribe - ' + e.price + '/mo'
           }),
@@ -6367,6 +6395,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c51b9955', function (e) {
             return e.count + ' joined'
+          }),
+          a('c2718f5f', function (e) {
+            return e.count + ' tuned in'
           }),
           a('jbc5f47a', 'Spaces dock'),
           a('gfe2830f', function (e) {
@@ -6675,6 +6706,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               '. Explore the chart using navigation controls.'
             )
           }),
+          a('h39fbf33', function (e) {
+            return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
+          }),
+          a('ac6d902c', 'Data represented as progress bar'),
           a('f1a1b791', function (e) {
             return 'Promoted by ' + e.fullName
           }),
@@ -7845,6 +7880,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c3a1f2bf',
                 get: function () {
                   return ['Are you sure you want to remove ', ' as a moderator?']
+                },
+              },
+              {
+                key: 'c2696cdf',
+                get: function () {
+                  return ['Enter ', ' to proceed']
                 },
               },
               {
