@@ -5974,15 +5974,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j0a7ff70', 'Tweets monthly'),
           a('ae2bc2e6', 'Never tweets'),
           a('h676cfe2', 'Tweets weekly'),
+          a('abb13fc9', function (e) {
+            return 'About @' + e.screenName
+          }),
+          a('e9b67105', function (e) {
+            return 'Loading @' + e.screenName + ' about tab details'
+          }),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
-          }),
-          a('g784d3c6', 'Send a Tweet'),
-          a('ib53965c', 'Don’t keep your Super Followers waiting')
-        a(
-          'cb1915b0',
-          'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
-        ),
+          })
+        a('g784d3c6', 'Send a Tweet'),
+          a('ib53965c', 'Don’t keep your Super Followers waiting'),
+          a(
+            'cb1915b0',
+            'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
+          ),
           a('dc1f8991', function (e) {
             return '@' + e.screenName + ' hasn’t Tweeted'
           }),
@@ -6673,7 +6679,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e6e16812', 'Square'),
           a('a35a5b10', 'Followers you know'),
           a('fc8cd112', 'Not followed by anyone you’re following'),
-          a('jcf3e7a2', 'Frame progress for Lottie Animation'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -6693,23 +6698,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.otherUsersCount + ' others',
             )
           }),
-          a('h30a19bb', function (e) {
-            return (
-              'This is a pie chart. The title of the chart is ' +
-              e.chartTitle +
-              '. There are in total ' +
-              e.noOfCategories +
-              ' categories. The minimum value is ' +
-              e.minValue +
-              ' and the maximum value is ' +
-              e.maxValue +
-              '. Explore the chart using navigation controls.'
-            )
-          }),
-          a('h39fbf33', function (e) {
-            return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
-          }),
-          a('ac6d902c', 'Data represented as progress bar'),
+          a('j2eea17a', 'The following media includes potentially sensitive content.'),
           a('f1a1b791', function (e) {
             return 'Promoted by ' + e.fullName
           }),
@@ -6722,20 +6711,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcbbe447', function (e) {
             return 'Promoted (issue) by ' + e.fullName
           }),
-          a('hdd29d51', function (e) {
-            return '' + e.sponsorshipOrganization
-          }),
-          a('b97f7079', function (e) {
-            return '' + e.sponsorshipOrganization
-          }),
-          a('b02627a9', function (e) {
-            return '' + e.sponsorshipOrganization
-          }),
-          a('gdd51574', 'Pull to refresh'),
-          a('c9d7235e', 'Quote Tweet'),
-          a('a8b58cf4', 'Show this thread'),
-          a('i5f742fe', 'Show this poll'),
-          a('ge06d0bc', 'Video preview poster'),
           a('ccd32094', 'Now'),
           a('abfcce0d', function (e) {
             return e.amountOfTime + ' ago'
@@ -6749,46 +6724,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc716ec9', function (e) {
             return 'Recommended Topic: ' + e.topicName
           }),
-          a('j2eea17a', 'The following media includes potentially sensitive content.'),
-          a('caddb529', 'and'),
-          a('ff31714c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('e06c99b7', 'and'),
-          a('i4e2f96c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('ga629a8c', 'View people in conversation'),
-          a('h13ffc88', 'Voice'),
-          a('f5d461f8', 'Voice Tweet'),
-          a('de8c5eb2', 'Play audio'),
-          a('ec286028', 'Pause audio'),
-          a('ad77feb6', 'Captions unavailable'),
-          a('d636ebc6', 'Like'),
-          a('bd83592a', 'Haha'),
-          a('f84f0fa8', 'Hmm'),
-          a('g47ce0e4', 'Sad'),
-          a('fc8a13c6', 'Cheer'),
-          a('e557ad8e', 'Active'),
-          a('e3a58c28', 'Expand'),
-          a('db355331', function (e) {
-            return e.team + ' won'
-          }),
-          a('a8428d5e', 'Upcoming'),
-          a('a7aad8ba', 'Live'),
-          a('e431f1aa', 'Final'),
-          a('a7391708', 'Postponed'),
-          a('d2dbfa92', 'Cancelled'),
-          a('cd734f66', 'Today'),
-          a('c8891d06', 'Tomorrow'),
-          a('d6b930d4', 'Try again'),
-          a('aafa48c2', 'Something went wrong.'),
-          a('eb124f96', 'AM/PM'),
-          a('i7a6f114', 'Hour'),
-          a('ccc99ff2', 'Minute'),
-          a('g5662c95', function (e) {
-            return 'Level ' + e.conversationTreeDepth + ':'
-          }),
+          a('jcf3e7a2', 'Frame progress for Lottie Animation'),
           a('a0af935c', 'Liked'),
           a('fbaa28e0', 'Reacted'),
           a('f9be84f0', 'Downvoted'),
@@ -6811,6 +6747,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2b2b8e6', 'Downvote'),
           a('hcb32860', 'Undo downvote'),
           a('cb5dafd4', 'Downvote, selected'),
+          a('d636ebc6', 'Like'),
           a('eb3a8b0c', 'Unlike'),
           a('a4ae22fa', 'Like this Tweet'),
           a('dac92b0d', function (e) {
@@ -6828,6 +6765,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cff26b89', function (e) {
             return e.count + ' Reaction' + n(e.count, '', 's') + '. Unreact'
           }),
+          a('bd83592a', 'Haha'),
+          a('f84f0fa8', 'Hmm'),
+          a('g47ce0e4', 'Sad'),
+          a('fc8a13c6', 'Cheer'),
           a('hdf7226a', 'Reply'),
           a('c9940955', function (e) {
             return e.count + ' Repl' + n(e.count, 'y', 'ies') + '. Reply'
@@ -6844,6 +6785,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e589d9d7', function (e) {
             return 'Only @' + e.username + ' and their Twitter Circle can see these Tweets.'
           }),
+          a('c9d7235e', 'Quote Tweet'),
           a('dc63da16', 'Share'),
           a('jc9298a8', 'Share Tweet'),
           a('f543c4c8', 'Latest Edit'),
@@ -6874,6 +6816,70 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Super Follower' + n(e.count, '', 's')
           }),
           a('ef633578', 'Account suspended'),
+          a('caddb529', 'and'),
+          a('ff31714c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          }),
+          a('e06c99b7', 'and'),
+          a('i4e2f96c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          }),
+          a('ga629a8c', 'View people in conversation'),
+          a('a8b58cf4', 'Show this thread'),
+          a('i5f742fe', 'Show this poll'),
+          a('ge06d0bc', 'Video preview poster'),
+          a('h13ffc88', 'Voice'),
+          a('f5d461f8', 'Voice Tweet'),
+          a('de8c5eb2', 'Play audio'),
+          a('ec286028', 'Pause audio'),
+          a('ad77feb6', 'Captions unavailable'),
+          a('h30a19bb', function (e) {
+            return (
+              'This is a pie chart. The title of the chart is ' +
+              e.chartTitle +
+              '. There are in total ' +
+              e.noOfCategories +
+              ' categories. The minimum value is ' +
+              e.minValue +
+              ' and the maximum value is ' +
+              e.maxValue +
+              '. Explore the chart using navigation controls.'
+            )
+          }),
+          a('h39fbf33', function (e) {
+            return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
+          }),
+          a('ac6d902c', 'Data represented as progress bar'),
+          a('hdd29d51', function (e) {
+            return '' + e.sponsorshipOrganization
+          }),
+          a('b97f7079', function (e) {
+            return '' + e.sponsorshipOrganization
+          }),
+          a('b02627a9', function (e) {
+            return '' + e.sponsorshipOrganization
+          }),
+          a('gdd51574', 'Pull to refresh'),
+          a('e557ad8e', 'Active'),
+          a('e3a58c28', 'Expand'),
+          a('db355331', function (e) {
+            return e.team + ' won'
+          }),
+          a('a8428d5e', 'Upcoming'),
+          a('a7aad8ba', 'Live'),
+          a('e431f1aa', 'Final'),
+          a('a7391708', 'Postponed'),
+          a('d2dbfa92', 'Cancelled'),
+          a('cd734f66', 'Today'),
+          a('c8891d06', 'Tomorrow'),
+          a('d6b930d4', 'Try again'),
+          a('aafa48c2', 'Something went wrong.'),
+          a('eb124f96', 'AM/PM'),
+          a('i7a6f114', 'Hour'),
+          a('ccc99ff2', 'Minute'),
+          a('g5662c95', function (e) {
+            return 'Level ' + e.conversationTreeDepth + ':'
+          }),
           a('b4cb0be2', 'This user is currently in an active Space, Click to join'),
           a('g6520ddf', function (e) {
             return '@' + e.screenName + ' is currently in an active Space, Click to join'
@@ -9395,27 +9401,35 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'e1e348dd',
-                get: function () {
-                  return ['Paid for by ']
-                },
-              },
-              {
-                key: 'c7dea0d1',
-                get: function () {
-                  return ['Paid for by ', ' and not authorized by any candidate or candidate’s committee.']
-                },
-              },
-              {
-                key: 'b5c2371b',
-                get: function () {
-                  return ['Paid for by ', ' · Authorized by ' + this.props.sponsorshipCandidate]
-                },
-              },
-              {
                 key: 'h99e9c95',
                 get: function () {
                   return ['', ' Retweeted']
+                },
+              },
+              {
+                key: 'dd7a993b',
+                get: function () {
+                  return [
+                    'Only you and people in your Twitter Circle can see this Tweet. Retweeting, Quote Tweeting, and sharing aren’t available. ',
+                  ]
+                },
+              },
+              {
+                key: 'g3ed1dd5',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'i06724fb',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'ic871e6f',
+                get: function () {
+                  return ['', ' ']
                 },
               },
               {
@@ -9449,6 +9463,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'e1e348dd',
+                get: function () {
+                  return ['Paid for by ']
+                },
+              },
+              {
+                key: 'c7dea0d1',
+                get: function () {
+                  return ['Paid for by ', ' and not authorized by any candidate or candidate’s committee.']
+                },
+              },
+              {
+                key: 'b5c2371b',
+                get: function () {
+                  return ['Paid for by ', ' · Authorized by ' + this.props.sponsorshipCandidate]
+                },
+              },
+              {
                 key: 'fe7c309b',
                 get: function () {
                   return ['Trending with ']
@@ -9464,32 +9496,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c3190d39',
                 get: function () {
                   return ['<FormatMessage />: ']
-                },
-              },
-              {
-                key: 'dd7a993b',
-                get: function () {
-                  return [
-                    'Only you and people in your Twitter Circle can see this Tweet. Retweeting, Quote Tweeting, and sharing aren’t available. ',
-                  ]
-                },
-              },
-              {
-                key: 'g3ed1dd5',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'i06724fb',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'ic871e6f',
-                get: function () {
-                  return ['', ' ']
                 },
               },
               {
@@ -12043,8 +12049,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j86b0d8d', f.a531894881),
           a('g08cbabb', f.b1729690817),
           a('i2785009', f.b1982794438),
-          a('e8d93005', f.a1259667653),
-          a('c778d80b', f.b1653028677),
           a('ga8d18c9', f.b1132522088),
           a('a91e7d49', f.b1844277225),
           a('id952a69', f.b2134163460),
@@ -12052,6 +12056,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c83b901d', f.a211373797),
           a('a55b9fed', f.b636176220),
           a('jade381b', f.a816076018),
+          a('e8d93005', f.a1259667653),
+          a('c778d80b', f.b1653028677),
           a('d46781af', f.a1379198057),
           a('ba316f05', f.a258143208),
           a('c0bdd345', f.b810332058),
