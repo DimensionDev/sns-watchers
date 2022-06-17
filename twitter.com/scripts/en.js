@@ -784,6 +784,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c9d41314', 'Twitter for Professionals'),
           a('ab0decc0', 'Subscribe'),
           a('cdf89b84', 'Branded Likes Preview'),
+          a('d0748dae', 'Twitter Circle'),
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('cdc1bff7', function (e) {
             return 'Profile menu ' + e.loggedInUserName
@@ -1156,13 +1157,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d71de0c1', function (e) {
             return '' + e.displayCount
-          }),
-          a('c42234da', function (e) {
-            return 'Retweet' + n(e.count, '', 's')
           })
-        a('f6e12707', function (e) {
-          return '' + e.displayCount
+        a('c42234da', function (e) {
+          return 'Retweet' + n(e.count, '', 's')
         }),
+          a('f6e12707', function (e) {
+            return '' + e.displayCount
+          }),
           a('e2414185', function (e) {
             return 'Quote Tweet' + n(e.count, '', 's')
           }),
@@ -1338,7 +1339,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f7364fa2', 'Ask a question...'),
           a('e815fc34', 'Choose audience'),
           a('aa4209e8', 'Super Followers'),
-          a('d0748dae', 'Twitter Circle'),
           a('c33a97d6', 'Public'),
           a('a68885de', 'All Followers'),
           a('c63602d4', 'My Communities'),
@@ -1531,6 +1531,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8177e5e', 'Tweet search'),
           a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
           a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
+          a('d876b2bd', function (e) {
+            return 'You can only attach up to ' + e.count + ' Tweets to this report.'
+          }),
           a('c837fcaa', 'Show more replies'),
           a('d228a9a0', 'Show more'),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
@@ -2294,9 +2297,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          ),
-          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.')
-        a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
+          )
+        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
             return (
@@ -3438,9 +3441,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a67f27bd', 'Learn more'),
           a('b8be7adb', 'Learn more'),
           a('gd663f41', 'Learn more'),
-          a('b436b101', 'Learn more'),
-          a('ff1d68f8', 'Upload a photo of your ID')
-        a('bdada5a6', 'Front'),
+          a('b436b101', 'Learn more')
+        a('ff1d68f8', 'Upload a photo of your ID'),
+          a('bdada5a6', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
           a('def5015d', function (e) {
             return 'Back' + e.back_of_document
@@ -4818,10 +4821,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Want to login with your phone, @' + e.userScreenName + '?'
           }),
           a('haa104f0', 'Send code'),
-          a('h25bc384', 'Use your password instead'),
-          a('ecde12c1', function (e) {
-            return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
-          })
+          a('h25bc384', 'Use your password instead')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4838,7 +4838,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('j4824c52', 'Standard SMS fees may apply.'),
+        a('ecde12c1', function (e) {
+          return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
+        }),
+          a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b20', 'Update your phone number'),
           a('a3fad4f2', 'Log out of Twitter?'),
           a('f12b4db5', function (e) {
@@ -5149,7 +5152,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db285564', 'Always open'),
           a('g7993eee', 'Custom hours'),
           a('c16c9568', 'Address'),
-          a('c2059c90', 'Directions'),
+          a('dc12a126', 'Get directions'),
           a('e2acb642', 'Contact'),
           a('b44c0205', function (e) {
             return e.day + ' at ' + e.time
@@ -5174,8 +5177,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Where can your customers reach you? Keep in mind, this information will be publicly available to allow your customers to find you. You can remove it at any time.',
           ),
           a('c7a4adb0', 'Add address'),
-          a('g114bdde', 'ZIP code'),
-          a('e8592010', 'Add ZIP code'),
+          a('cd39daf6', 'ZIP code / postal code'),
+          a('gc0df5a6', 'Add ZIP code / postal code'),
           a('c6c16a52', 'City'),
           a('aa8015be', 'Add city'),
           a('b688f53a', 'State / Province / Region'),
@@ -5185,8 +5188,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a8fd64d8', 'Search for countries'),
           a('a0abe108', 'Invalid state / province / region'),
           a('j163df8e', 'Invalid address'),
-          a('i35b9a88', 'Invalid ZIP code'),
-          a('d085eaec', 'ZIP Code'),
+          a('af9b9b78', 'Invalid ZIP code / postal code'),
           a('i373e022', 'Enter email'),
           a('f91751f8', 'This will be visible to the public'),
           a('g33c0564', 'Invalid Email'),
@@ -6828,6 +6830,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
           a('ge06d0bc', 'Video preview poster'),
+          a('d4bd7902', 'Collaborative Tweet'),
+          a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
           a('f5d461f8', 'Voice Tweet'),
           a('de8c5eb2', 'Play audio'),
@@ -6894,8 +6898,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ce97544c', 'Tweet unavailable'),
           a('ffeb2fc6', 'Up next'),
-          a('d4bd7902', 'Collaborative Tweet'),
-          a('e078b15d', ' & '),
           a('af2a65d9', function (e) {
             return e.timestamp + ' selected'
           }),
@@ -9463,6 +9465,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'ef529b2f',
+                get: function () {
+                  return ['', ' ', ' ']
+                },
+              },
+              {
                 key: 'e1e348dd',
                 get: function () {
                   return ['Paid for by ']
@@ -9502,12 +9510,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'ba64a3b3',
                 get: function () {
                   return ['', ' from ']
-                },
-              },
-              {
-                key: 'ef529b2f',
-                get: function () {
-                  return ['', ' ', ' ']
                 },
               },
               {
