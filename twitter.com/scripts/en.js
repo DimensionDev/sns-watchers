@@ -225,7 +225,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g665514c', 'Only speakers are recorded'),
           a('ja196c5a', 'Guests who speak will be recorded. The recording is public, so anyone can replay it.'),
           a('dd317ed6', 'Replay or share it with anyone'),
-          a('hd2dfb72', 'Listen to the recording before it expires after 30 days. You can also share it with a Tweet.'),
+          a('de4a571c', 'Listen to the recording anytime. You can also share it with a Tweet.'),
           a('ffc53fbd', 'Learn more'),
           a('b4f91a8a', 'Recording active'),
           a('cc724cb0', 'Create Clip'),
@@ -790,6 +790,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Profile menu ' + e.loggedInUserName
           }),
           a('fd5208c6', 'Go to settings'),
+          a('eb022176', 'Create account'),
+          a('gcfef7b6', 'Create account with phone or email'),
+          a('e5b0e544', 'Sign in'),
+          a('aa95ddc0', 'Sign up with phone or email'),
+          a('f2f787a0', 'Terms of Service'),
+          a('e1099fd6', 'Privacy Policy'),
+          a('c1df1ae0', 'Cookie Use.'),
           a('gdb8bdcc', 'See new Tweets'),
           a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
           a('j0a8da6e', 'Add an existing account'),
@@ -816,9 +823,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e0870f26', 'Sign up with Google'),
           a('gfeffd6a', 'Sign in with Google'),
-          a('f2f787a0', 'Terms of Service'),
-          a('e1099fd6', 'Privacy Policy'),
-          a('c1df1ae0', 'Cookie Use.'),
           a('i9028824', 'Loading'),
           a('fb4ee11c', 'Why this ad?'),
           a('fcbb540a', 'Rate limit exceeded'),
@@ -1145,10 +1149,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd80ffb0', 'View Quote Tweets'),
           a('d2100fb5', function (e) {
             return '' + e.displayCountAll
-          }),
-          a('g692ffe2', function (e) {
-            return 'Reaction' + n(e.count, '', 's')
-          }),
+          })
+        a('g692ffe2', function (e) {
+          return 'Reaction' + n(e.count, '', 's')
+        }),
           a('e8866a55', function (e) {
             return '' + e.displayCount
           }),
@@ -1157,10 +1161,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d71de0c1', function (e) {
             return '' + e.displayCount
-          })
-        a('c42234da', function (e) {
-          return 'Retweet' + n(e.count, '', 's')
-        }),
+          }),
+          a('c42234da', function (e) {
+            return 'Retweet' + n(e.count, '', 's')
+          }),
           a('f6e12707', function (e) {
             return '' + e.displayCount
           }),
@@ -1644,7 +1648,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b97cd51c', 'Twitter for Business'),
           a('c6f58084', 'Developers'),
           a('d83f18d2', 'Directory'),
-          a('aa95ddc0', 'Sign up with phone or email'),
           a('b50ea616', 'New to Twitter?'),
           a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
           a('ib65b1c6', 'Sign up with Apple'),
@@ -2288,8 +2291,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
           a('j560c8ea', 'Add rule'),
-          a('ab8089ea', 'Reorder'),
-          a('a9ba79c0', 'Good rules make good Communities'),
+          a('ab8089ea', 'Reorder')
+        a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
             'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
@@ -2297,8 +2300,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          )
-        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          ),
+          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
@@ -3438,11 +3441,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
           a('d9bd3823', 'Learn more'),
-          a('a67f27bd', 'Learn more'),
-          a('b8be7adb', 'Learn more'),
+          a('a67f27bd', 'Learn more')
+        a('b8be7adb', 'Learn more'),
           a('gd663f41', 'Learn more'),
-          a('b436b101', 'Learn more')
-        a('ff1d68f8', 'Upload a photo of your ID'),
+          a('b436b101', 'Learn more'),
+          a('ff1d68f8', 'Upload a photo of your ID'),
           a('bdada5a6', 'Front'),
           a('edfed0f6', 'Upload front of ID'),
           a('def5015d', function (e) {
@@ -4816,12 +4819,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
           ),
           a('ba939778', 'Are you a robot?'),
-          a('f0816dee', 'Loading login page'),
-          a('f9c558af', function (e) {
-            return 'Want to login with your phone, @' + e.userScreenName + '?'
-          }),
-          a('haa104f0', 'Send code'),
-          a('h25bc384', 'Use your password instead')
+          a('f0816dee', 'Loading login page')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4838,9 +4836,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ecde12c1', function (e) {
-          return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
+        a('f9c558af', function (e) {
+          return 'Want to login with your phone, @' + e.userScreenName + '?'
         }),
+          a('haa104f0', 'Send code'),
+          a('h25bc384', 'Use your password instead'),
+          a('ecde12c1', function (e) {
+            return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
+          }),
           a('j4824c52', 'Standard SMS fees may apply.'),
           a('fca32b20', 'Update your phone number'),
           a('a3fad4f2', 'Log out of Twitter?'),
@@ -5287,7 +5290,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d9e109ae', 'Join Twitter today.'),
           a('eba1b198', 'Happening now'),
           a('fa811c30', 'Already have an account?'),
-          a('e5b0e544', 'Sign in'),
           a('h0ff39da', 'Twitter. It’s what’s happening'),
           a(
             'j3f49ff6',
@@ -5978,14 +5980,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h676cfe2', 'Tweets weekly'),
           a('abb13fc9', function (e) {
             return 'About @' + e.screenName
-          }),
-          a('e9b67105', function (e) {
-            return 'Loading @' + e.screenName + ' about tab details'
-          }),
+          })
+        a('e9b67105', function (e) {
+          return 'Loading @' + e.screenName + ' about tab details'
+        }),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
-          })
-        a('g784d3c6', 'Send a Tweet'),
+          }),
+          a('g784d3c6', 'Send a Tweet'),
           a('ib53965c', 'Don’t keep your Super Followers waiting'),
           a(
             'cb1915b0',
@@ -6057,8 +6059,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d55be465', function (e) {
             return e.fullName + '’s Photos'
           }),
-          a('h1658542', 'Suspended user'),
-          a('b5447710', 'User not found'),
           a('fe9d3afa', 'Loading Followers'),
           a('fbce8dbe', 'Find people to follow'),
           a('ab7fc3ef', function (e) {
