@@ -2452,6 +2452,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f842d5d4', 'Discard unsent Tweet'),
           a('b3a7362e', 'This can’t be undone and you’ll lose your draft Tweet.'),
           a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
+          a('c91f83ae', 'Edit video'),
+          a('icbec4ae', 'Upload captions'),
+          a('e7048e74', 'Trim media'),
+          a(
+            'j435467e',
+            'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
+          ),
+          a('a6b267fa', 'Remove captions'),
           a('e7c766ee', 'Location services are disabled'),
           a('ab68727a', 'You can turn them on in your device’s settings.'),
           a('ae4057a2', 'Unable to determine location'),
@@ -3436,13 +3444,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f22a6d0d', 'Learn more'),
           a('i78c9fd5', 'Learn more'),
           a('f3e333a9', 'Learn more'),
-          a('i5fee6d3', 'Learn more'),
-          a('fe7420f5', 'Learn more'),
+          a('i5fee6d3', 'Learn more')
+        a('fe7420f5', 'Learn more'),
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
           a('d9bd3823', 'Learn more'),
-          a('a67f27bd', 'Learn more')
-        a('b8be7adb', 'Learn more'),
+          a('a67f27bd', 'Learn more'),
+          a('b8be7adb', 'Learn more'),
           a('gd663f41', 'Learn more'),
           a('b436b101', 'Learn more'),
           a('ff1d68f8', 'Upload a photo of your ID'),
@@ -4811,15 +4819,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
           ),
           a('d98c140e', 'Continue to Twitter'),
-          a('e55188f0', 'You’re logged in to this account with this browser'),
-          a('d55d8fe2', 'Do you want to continue with this account?'),
-          a('g806008e', 'Log in with a different account'),
-          a(
-            'b60eba9e',
-            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-          ),
-          a('ba939778', 'Are you a robot?'),
-          a('f0816dee', 'Loading login page')
+          a('e55188f0', 'You’re logged in to this account with this browser')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,9 +4836,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f9c558af', function (e) {
-          return 'Want to login with your phone, @' + e.userScreenName + '?'
-        }),
+        a('d55d8fe2', 'Do you want to continue with this account?'),
+          a('g806008e', 'Log in with a different account'),
+          a(
+            'b60eba9e',
+            'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+          ),
+          a('ba939778', 'Are you a robot?'),
+          a('f0816dee', 'Loading login page'),
+          a('f9c558af', function (e) {
+            return 'Want to login with your phone, @' + e.userScreenName + '?'
+          }),
           a('haa104f0', 'Send code'),
           a('h25bc384', 'Use your password instead'),
           a('ecde12c1', function (e) {
@@ -5235,6 +5243,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dd1605f0', 'Play Store URL'),
           a('g4098f78', 'Where can I find this?'),
           a('b949cdc6', 'Remove app'),
+          a('j2a44408', 'Launch Pad'),
+          a('f53adc36', 'Drive real world outcomes'),
+          a('hc4981d6', 'Profile Spotlights'),
+          a('fbce8dbe', 'Find people to follow'),
+          a('ib07b6ca', 'Grow your audience'),
+          a('e0cb3344', 'Promote an existing tweet'),
+          a('i294caa6', 'Promotions'),
+          a('i016a2f4', 'Earn money on Twitter'),
+          a('d47aad80', 'Monetisation'),
+          a('f49a9076', 'Learn how to use Twitter'),
+          a('a35d9c9a', 'Resources'),
+          a('c46cdabc', 'Advanced Tools'),
           a('af9c8a3e', 'Open app'),
           a('c299a6c0', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5709,8 +5729,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f345dcda', 'Edit History'),
           a('h2fcc532', 'Loading history'),
           a('ced3c85a', 'Edited'),
-          a('f7e2b802', 'This is a Note. Cool, right?'),
-          a('ba8b46fd', 'Keep reading'),
+          a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+          a('edf9101f', 'Keep reading'),
           a('a7da0adb', function (e) {
             return e.count + ' word' + n(e.count, '', 's')
           }),
@@ -5952,8 +5972,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'hf06085e',
             'You’re seeing this warning because there has been some unusual activity from this account. Do you still want to view it?',
-          ),
-          a('aa959f36', 'Caution: This account is temporarily restricted'),
+          )
+        a('aa959f36', 'Caution: This account is temporarily restricted'),
           a('jf604336', 'Caution: This profile may include potentially sensitive content'),
           a(
             'c9bfda48',
@@ -5980,10 +6000,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h676cfe2', 'Tweets weekly'),
           a('abb13fc9', function (e) {
             return 'About @' + e.screenName
-          })
-        a('e9b67105', function (e) {
-          return 'Loading @' + e.screenName + ' about tab details'
-        }),
+          }),
+          a('e9b67105', function (e) {
+            return 'Loading @' + e.screenName + ' about tab details'
+          }),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
@@ -6060,7 +6080,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.fullName + '’s Photos'
           }),
           a('fe9d3afa', 'Loading Followers'),
-          a('fbce8dbe', 'Find people to follow'),
           a('ab7fc3ef', function (e) {
             return 'People super following ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -6559,13 +6578,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12384', 'Heads up'),
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
-          a('ee159454', 'This is a Note. Cool, right?'),
+          a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
-          a('ee040dc1', 'Keep reading'),
-          a('fcbdee03', 'This is a Note. Cool, right?'),
-          a('fa80aac7', 'Keep reading'),
+          a('ffb3fe6f', 'Keep reading'),
+          a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+          a('b5231e3f', 'Keep reading'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
           }),
@@ -6829,7 +6848,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ga629a8c', 'View people in conversation'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
-          a('ge06d0bc', 'Video preview poster'),
           a('d4bd7902', 'Collaborative Tweet'),
           a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
@@ -9115,9 +9133,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'af3fa081',
+                key: 'a9ce2dd5',
                 get: function () {
-                  return ['', ' to learn more.']
+                  return ['', ' for help and how-to’s.']
                 },
               },
               {
@@ -9343,13 +9361,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'gcfe5b1f',
+                key: 'babaae9b',
                 get: function () {
-                  return ['', ' to learn more.']
+                  return ['', ' for help and how-to’s.']
                 },
               },
               {
-                key: 'g0589117',
+                key: 'f7225b41',
                 get: function () {
                   return ['', ' ', ' to learn more.']
                 },
