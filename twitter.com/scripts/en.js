@@ -422,6 +422,129 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e762ce30', function (e) {
             return e.othersCount + ' other' + n(e.othersCount, '', 's')
           }),
+          a('de128a20', 'Turn on Tweet notifications'),
+          a('aa6f3ca4', 'Turn off Tweet notifications'),
+          a('j87c21f4', 'Notify'),
+          a('iebc30ca', 'Turn off notifications'),
+          a(
+            'c260930a',
+            'You will see Tweet notifications from this account in the Notifications timeline. You can also enable push notifications on your device to never miss a Tweet.',
+          ),
+          a('hee41732', 'Push notifications'),
+          a('b813e4dc', 'Never miss what’s happening on Twitter by enabling push notifications'),
+          a('e71e09ec', 'Turn on notifications'),
+          a('g4850f44', 'Push notifications enabled'),
+          a('dc397182', 'Customize'),
+          a('hbe4feb5', function (e) {
+            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
+          }),
+          a('df4c86b0', 'Please update your profile first'),
+          a('bba40ffa', 'You can’t follow this account'),
+          a(
+            'f558829e',
+            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
+          ),
+          a('a6941096', 'This account can’t be followed from your country.'),
+          a('if8cd2a4', 'You’re not old enough to follow this account.'),
+          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
+          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
+          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
+          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
+          a('j4292c24', 'You have been blocked from following this user at their request.'),
+          a('a0ba5842', 'You are unable to follow more people at this time.'),
+          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
+          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
+          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
+          a('a9fd20be', 'Successfully blocked.'),
+          a('e133be4e', 'Unblock'),
+          a('b3e6e1e7', function (e) {
+            return 'Retweets from ' + e.name + ' will no longer appear in your timeline'
+          }),
+          a('e6b88abb', function (e) {
+            return 'Retweets from ' + e.name + ' will appear in your timeline'
+          }),
+          a('c6ea308b', function (e) {
+            return e.fullName + ' (@' + e.screenName + ')'
+          }),
+          a('c1eb0fe5', function (e) {
+            return 'Check out ' + e.fullName + ' on Twitter.\n' + e.bio
+          }),
+          a('c32a3d03', function (e) {
+            return '@' + e.screenName + ' is no longer following you'
+          }),
+          a('badf3f35', function (e) {
+            return 'You removed @' + e.screenName + ' from flagged accounts'
+          }),
+          a('j7bb1a43', function (e) {
+            return 'Report @' + e.screenName
+          }),
+          a('hef5960c', 'Share profile via...'),
+          a('hb568af4', 'Mute'),
+          a('bb1cbeb6', 'Unmute'),
+          a('h2f62206', 'Muting user'),
+          a('e67b2d65', function (e) {
+            return 'Mute @' + e.screenName
+          }),
+          a('f05597b3', function (e) {
+            return 'Unmute @' + e.screenName
+          }),
+          a('h59f52ee', 'Successfully muted.'),
+          a('eea0cbee', 'Successfully unmuted.'),
+          a('i29533b3', function (e) {
+            return '@' + e.screenName + ' has been muted.'
+          }),
+          a('h129c3c3', function (e) {
+            return '@' + e.screenName + ' has been unmuted.'
+          }),
+          a('b3036480', 'Remove this follower'),
+          a('ia9103ed', function (e) {
+            return (
+              '@' +
+              e.screenName +
+              ' will be removed from your followers and won’t be notified by Twitter. They can follow you again in the future.'
+            )
+          }),
+          a('ibd0b842', 'Copy link to profile'),
+          a('c645618c', 'View Moments'),
+          a('b9c26480', 'View Topics'),
+          a('b2e20eac', 'Turn on Retweets'),
+          a('b62e432e', 'Turn off Retweets'),
+          a('h5ef9bc8', 'View Lists'),
+          a('jcba15d2', 'Remove autoblock'),
+          a('d78131b9', function (e) {
+            return 'Add/remove @' + e.screenName + ' from Lists'
+          }),
+          a('f9e45cfb', function (e) {
+            return 'Block @' + e.screenName + '?'
+          }),
+          a('fcd4d489', function (e) {
+            return 'Block @' + e.screenName
+          }),
+          a('a6450e84', 'Block'),
+          a('hb279a11', function (e) {
+            return (
+              'They will not be able to follow you or view your Tweets, and you will not see Tweets or notifications from @' +
+              e.screenName +
+              '.'
+            )
+          }),
+          a('j546fb79', function (e) {
+            return 'Unblock @' + e.screenName + '?'
+          }),
+          a('c9623eeb', function (e) {
+            return 'Unblock @' + e.screenName
+          }),
+          a('h7f25e2c', 'They will be able to follow you and view your Tweets.'),
+          a('ae3e9c81', function (e) {
+            return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+          }),
+          a('db2f1008', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
+          a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
+          a('f2f4d0e8', 'Remove from flagged accounts'),
+          a('e1f2f8bd', function (e) {
+            return 'Remove @' + e.screenName + ' from Flagged accounts list?'
+          }),
+          a('f5b426c2', 'Loading Users'),
           a('f7204380', 'This Fleet has expired'),
           a('d9de7b58', 'This media is hidden because it’s from someone you don’t follow.'),
           a('f2879f4e', 'This message might include graphic media.'),
@@ -472,26 +595,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hbc99b03', function (e) {
             return 'Go to @' + e.screenName
           }),
-          a('hbe4feb5', function (e) {
-            return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
-          }),
-          a('df4c86b0', 'Please update your profile first'),
-          a('bba40ffa', 'You can’t follow this account'),
-          a(
-            'f558829e',
-            'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
-          ),
-          a('a6941096', 'This account can’t be followed from your country.'),
-          a('if8cd2a4', 'You’re not old enough to follow this account.'),
-          a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
-          a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
-          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
-          a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
-          a('j4292c24', 'You have been blocked from following this user at their request.'),
-          a('a0ba5842', 'You are unable to follow more people at this time.'),
-          a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
-          a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
-          a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
           a('ee295fbe', 'Try searching for people, topics, or keywords'),
           a('f45c4250', 'Clear all recent searches?'),
           a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
@@ -534,9 +637,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bbf83d84', 'This can’t be undone and the conversation history will be deleted from your inbox.'),
           a('ccf2f24e', 'Report'),
           a('ib3fe8aa', 'Block or report'),
-          a('fcd4d489', function (e) {
-            return 'Block @' + e.screenName
-          }),
           a('gbed8594', 'Blocking will prevent this person from sending you message requests in the future.'),
           a('g9074da4', 'Leave conversation'),
           a('ad63377e', 'Delete conversation'),
@@ -545,93 +645,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This conversation will be deleted from your inbox. Other people in the conversation will still be able to see it.',
           ),
           a('i6b19b08', 'Report conversation'),
-          a('j7bb1a43', function (e) {
-            return 'Report @' + e.screenName
-          }),
           a('ea200ba6', 'Let Twitter know about spam or abuse so we can help protect others from accounts like this.'),
-          a('a9fd20be', 'Successfully blocked.'),
-          a('e133be4e', 'Unblock'),
-          a('b3e6e1e7', function (e) {
-            return 'Retweets from ' + e.name + ' will no longer appear in your timeline'
-          }),
-          a('e6b88abb', function (e) {
-            return 'Retweets from ' + e.name + ' will appear in your timeline'
-          }),
-          a('c6ea308b', function (e) {
-            return e.fullName + ' (@' + e.screenName + ')'
-          }),
-          a('c1eb0fe5', function (e) {
-            return 'Check out ' + e.fullName + ' on Twitter.\n' + e.bio
-          }),
-          a('c32a3d03', function (e) {
-            return '@' + e.screenName + ' is no longer following you'
-          }),
-          a('badf3f35', function (e) {
-            return 'You removed @' + e.screenName + ' from flagged accounts'
-          }),
-          a('hef5960c', 'Share profile via...'),
-          a('hb568af4', 'Mute'),
-          a('bb1cbeb6', 'Unmute'),
-          a('h2f62206', 'Muting user'),
-          a('e67b2d65', function (e) {
-            return 'Mute @' + e.screenName
-          }),
-          a('f05597b3', function (e) {
-            return 'Unmute @' + e.screenName
-          }),
-          a('h59f52ee', 'Successfully muted.'),
-          a('eea0cbee', 'Successfully unmuted.'),
-          a('i29533b3', function (e) {
-            return '@' + e.screenName + ' has been muted.'
-          }),
-          a('h129c3c3', function (e) {
-            return '@' + e.screenName + ' has been unmuted.'
-          }),
-          a('b3036480', 'Remove this follower'),
-          a('ia9103ed', function (e) {
-            return (
-              '@' +
-              e.screenName +
-              ' will be removed from your followers and won’t be notified by Twitter. They can follow you again in the future.'
-            )
-          }),
-          a('ibd0b842', 'Copy link to profile'),
-          a('c645618c', 'View Moments'),
-          a('b9c26480', 'View Topics'),
-          a('b2e20eac', 'Turn on Retweets'),
-          a('b62e432e', 'Turn off Retweets'),
-          a('h5ef9bc8', 'View Lists'),
-          a('jcba15d2', 'Remove autoblock'),
-          a('d78131b9', function (e) {
-            return 'Add/remove @' + e.screenName + ' from Lists'
-          }),
-          a('f9e45cfb', function (e) {
-            return 'Block @' + e.screenName + '?'
-          }),
-          a('a6450e84', 'Block'),
-          a('hb279a11', function (e) {
-            return (
-              'They will not be able to follow you or view your Tweets, and you will not see Tweets or notifications from @' +
-              e.screenName +
-              '.'
-            )
-          }),
-          a('j546fb79', function (e) {
-            return 'Unblock @' + e.screenName + '?'
-          }),
-          a('c9623eeb', function (e) {
-            return 'Unblock @' + e.screenName
-          }),
-          a('h7f25e2c', 'They will be able to follow you and view your Tweets.'),
-          a('ae3e9c81', function (e) {
-            return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-          }),
-          a('db2f1008', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
-          a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
-          a('f2f4d0e8', 'Remove from flagged accounts'),
-          a('e1f2f8bd', function (e) {
-            return 'Remove @' + e.screenName + ' from Flagged accounts list?'
-          }),
           a('b08821f4', 'Back'),
           a('c64c1884', 'Compose new Message'),
           a('j7d0e836', 'Expand'),
@@ -1136,8 +1150,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'if9bcebe',
             'Communities are public, so you can read the Tweets — but only members can interact with them.',
           ),
-          a('h8a62e2b', 'Learn more'),
-          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
+          a('h8a62e2b', 'Learn more')
+        a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
           a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
@@ -1149,10 +1163,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd80ffb0', 'View Quote Tweets'),
           a('d2100fb5', function (e) {
             return '' + e.displayCountAll
-          })
-        a('g692ffe2', function (e) {
-          return 'Reaction' + n(e.count, '', 's')
-        }),
+          }),
+          a('g692ffe2', function (e) {
+            return 'Reaction' + n(e.count, '', 's')
+          }),
           a('e8866a55', function (e) {
             return '' + e.displayCount
           }),
@@ -1541,19 +1555,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c837fcaa', 'Show more replies'),
           a('d228a9a0', 'Show more'),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
-          a('de128a20', 'Turn on Tweet notifications'),
-          a('aa6f3ca4', 'Turn off Tweet notifications'),
-          a('j87c21f4', 'Notify'),
-          a('iebc30ca', 'Turn off notifications'),
-          a(
-            'c260930a',
-            'You will see Tweet notifications from this account in the Notifications timeline. You can also enable push notifications on your device to never miss a Tweet.',
-          ),
-          a('hee41732', 'Push notifications'),
-          a('b813e4dc', 'Never miss what’s happening on Twitter by enabling push notifications'),
-          a('e71e09ec', 'Turn on notifications'),
-          a('g4850f44', 'Push notifications enabled'),
-          a('dc397182', 'Customize'),
           a('je808a17', function (e) {
             return e.topicName + ' Topic'
           }),
@@ -1652,10 +1653,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
           a('ib65b1c6', 'Sign up with Apple'),
           a('f55cebb8', 'Sign in with Apple'),
+          a('dcc304d6', 'Continue with Apple'),
           a('fd6473fa', 'Loading recommendations for users to follow'),
           a('a526aa66', 'Who to follow'),
           a('ef625010', 'You might like'),
-          a('f5b426c2', 'Loading Users'),
           a('cb80300e', 'Skip to home timeline'),
           a('ea5cd098', 'Skip to trending'),
           a('c67e3fc2', 'Home timeline'),
@@ -2290,9 +2291,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
-          a('j560c8ea', 'Add rule'),
-          a('ab8089ea', 'Reorder')
-        a('a9ba79c0', 'Good rules make good Communities'),
+          a('j560c8ea', 'Add rule')
+        a('ab8089ea', 'Reorder'),
+          a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
             'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
@@ -2407,6 +2408,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'A moderator removed you from ' + e.communityName + ' for violating this Community rule:'
           }),
           a('cb6adb10', 'Discover Communities'),
+          a('b7218496', 'No hashtags ... yet'),
+          a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
+          a('hd436778', 'Loading Community Hashtag Tweets'),
+          a('feeaae18', 'Community Hashtag Tweets'),
           a('c2117be6', 'See that stuff in the nav? 👀'),
           a('c2c4dad4', 'Pick something and it’ll show up here. Go ahead. We’ll wait.'),
           a('b8f0483e', 'Compose new Tweet'),
@@ -3439,13 +3444,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e9b71903', 'Learn more'),
           a('g961011f', 'Learn more'),
           a('d5dedb7b', 'Learn more'),
-          a('gd396551', 'Learn more'),
-          a('dccc08bf', 'Learn more'),
+          a('gd396551', 'Learn more')
+        a('dccc08bf', 'Learn more'),
           a('f22a6d0d', 'Learn more'),
           a('i78c9fd5', 'Learn more'),
           a('f3e333a9', 'Learn more'),
-          a('i5fee6d3', 'Learn more')
-        a('fe7420f5', 'Learn more'),
+          a('i5fee6d3', 'Learn more'),
+          a('fe7420f5', 'Learn more'),
           a('fcfad60d', 'Learn more'),
           a('cc35a6b9', 'Learn more'),
           a('d9bd3823', 'Learn more'),
@@ -4811,15 +4816,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ab77e0b8',
             'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
           ),
-          a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.'),
-          a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
-          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
-          a(
-            'g4b108ee',
-            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
-          ),
-          a('d98c140e', 'Continue to Twitter'),
-          a('e55188f0', 'You’re logged in to this account with this browser')
+          a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,7 +4833,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d55d8fe2', 'Do you want to continue with this account?'),
+        a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
+          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
+          a(
+            'g4b108ee',
+            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
+          ),
+          a('d98c140e', 'Continue to Twitter'),
+          a('e55188f0', 'You’re logged in to this account with this browser'),
+          a('d55d8fe2', 'Do you want to continue with this account?'),
           a('g806008e', 'Log in with a different account'),
           a(
             'b60eba9e',
@@ -5917,6 +5922,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ha62da97', function (e) {
             return '@' + e.screenName + ' is autoblocked'
           }),
+          a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
+          a('ieef7656', 'Take a look'),
           a('ica87fde', 'You’re blocked'),
           a('g8475f82', 'Account suspended'),
           a('c9a1cb5e', 'This account doesn’t exist'),
@@ -5949,8 +5956,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('g9b60a79', 'Learn more'),
-          a('f30795d0', 'Opens profile photo'),
-          a('a270100c', 'Opens NFT details'),
           a('gd7acb84', 'Set up profile'),
           a('b7636014', 'Message'),
           a('i662c536', 'Super Follow'),
@@ -5961,19 +5966,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cef4e8cf', function (e) {
             return 'Unmute @' + e.screenName + '?'
           }),
-          a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
-          a('df422dfe', 'You have muted Tweets from this account.'),
+          a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.')
+        a('df422dfe', 'You have muted Tweets from this account.'),
           a(
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
           ),
           a('caeab0f8', 'Start reading'),
+          a('f30795d0', 'Opens profile photo'),
+          a('a270100c', 'Opens NFT details'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
             'hf06085e',
             'You’re seeing this warning because there has been some unusual activity from this account. Do you still want to view it?',
-          )
-        a('aa959f36', 'Caution: This account is temporarily restricted'),
+          ),
+          a('aa959f36', 'Caution: This account is temporarily restricted'),
           a('jf604336', 'Caution: This profile may include potentially sensitive content'),
           a(
             'c9bfda48',
