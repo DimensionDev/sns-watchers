@@ -779,10 +779,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b20a3894', 'The account you are trying to switch to has been deleted.'),
           a('c818c60c', 'Analytics'),
           a('b5711f0a', 'Birdwatch'),
+          a('cdf89b84', 'Branded Likes Preview'),
+          a('bb07870e', 'Creator Studio'),
           a('a57a341c', 'Data saver'),
+          a('c4881c66', 'Display'),
           a('i83d4f14', 'Follower requests'),
           a('f66d24be', 'Help Center'),
-          a('c4881c66', 'Display'),
           a('h54e6138', 'Keyboard shortcuts'),
           a('ae1bbb26', 'Log out'),
           a('a58e0e51', function (e) {
@@ -790,15 +792,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('deaf7e0a', 'Media Studio'),
           a('b4af8c6a', 'Moments'),
+          a('d0a51fb2', 'Newsletters'),
+          a('ec1ed0cc', 'Professional Tools'),
+          a('fd442790', 'Settings and privacy'),
+          a('f1e3a258', 'Settings and Support'),
+          a('ab0decc0', 'Subscribe'),
+          a('d13d697c', 'New'),
+          a('ab38b896', 'Twitter Ads'),
+          a('d0748dae', 'Twitter Circle'),
           a('ed21f886', 'Twitter Blue'),
           a('i1d35d74', 'TweetDeck'),
-          a('d0a51fb2', 'Newsletters'),
-          a('fd442790', 'Settings and privacy'),
-          a('ab38b896', 'Twitter Ads'),
           a('c9d41314', 'Twitter for Professionals'),
-          a('ab0decc0', 'Subscribe'),
-          a('cdf89b84', 'Branded Likes Preview'),
-          a('d0748dae', 'Twitter Circle'),
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('cdc1bff7', function (e) {
             return 'Profile menu ' + e.loggedInUserName
@@ -1025,13 +1029,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c150ba68', 'Welcome!'),
           a('f8e2163e', 'Want to log in first?'),
           a('f9f9210c', 'No, thanks'),
-          a('af5cd00e', 'Find out more'),
           a('a36d354e', 'Now you can Follow them.'),
           a('eb5f060c', 'Follow'),
           a('feccfd6e', 'You’ll need to log in before you can Follow anyone.'),
           a('bb823968', 'Now you can Like that Tweet.'),
           a('a3c87902', 'Do you want to like this Tweet?'),
           a('j8eff20a', 'Help keep Twitter a place for reliable info. Find out more before liking this Tweet.'),
+          a('af5cd00e', 'Find out more'),
           a('i171a982', 'You’ll need to log in before you can Like that Tweet.'),
           a('bdbebf64', 'You’ll need to log in before you can reply to this Tweet.'),
           a('fa067de6', 'Now you can Retweet that.'),
@@ -1070,6 +1074,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i73a7d48', 'Translated by Google'),
           a('eeadb767', function (e) {
             return 'Translated from ' + e.originLanguage + ' by Google'
+          }),
+          a('dc445f82', 'Translated by Papago'),
+          a('he9803d3', function (e) {
+            return 'Translated from ' + e.originLanguage + ' by Papago'
           }),
           a('j2862695', function (e) {
             return 'Translated from ' + e.originLanguage + ' by'
@@ -1135,8 +1143,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ae2c8a1e', 'Why can’t you reply to this?'),
           a('adf4892e', 'Why can’t you downvote this?'),
           a('afe7ba26', 'Why can’t you Like this?'),
-          a('ddb7acf0', 'Why can’t you react to this?'),
-          a('jead3bc2', 'Why can’t you share this?'),
+          a('ddb7acf0', 'Why can’t you react to this?')
+        a('jead3bc2', 'Why can’t you share this?'),
           a('bf02eab6', 'Why can’t you view Tweet analytics?'),
           a(
             'c8b72f50',
@@ -1150,8 +1158,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'if9bcebe',
             'Communities are public, so you can read the Tweets — but only members can interact with them.',
           ),
-          a('h8a62e2b', 'Learn more')
-        a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
+          a('h8a62e2b', 'Learn more'),
+          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
           a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
@@ -2280,8 +2288,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('h3c0f1a2', 'Edit Community name'),
           a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
-          a('a8955490', 'Edit purpose'),
-          a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
+          a('a8955490', 'Edit purpose')
+        a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
           a('hcf35d0d', function (e) {
             return 'Save theme as ' + e.themeName
@@ -2291,8 +2299,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
-          a('j560c8ea', 'Add rule')
-        a('ab8089ea', 'Reorder'),
+          a('j560c8ea', 'Add rule'),
+          a('ab8089ea', 'Reorder'),
           a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
@@ -3438,14 +3446,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e745e6f1', 'Learn more'),
           a('de1b28ad', 'Learn more'),
           a('h04c272d', 'Learn more'),
-          a('j331c659', 'Learn more'),
-          a('h02fe64f', 'Learn more'),
+          a('j331c659', 'Learn more')
+        a('h02fe64f', 'Learn more'),
           a('a7df4b85', 'Learn more'),
           a('e9b71903', 'Learn more'),
           a('g961011f', 'Learn more'),
           a('d5dedb7b', 'Learn more'),
-          a('gd396551', 'Learn more')
-        a('dccc08bf', 'Learn more'),
+          a('gd396551', 'Learn more'),
+          a('dccc08bf', 'Learn more'),
           a('f22a6d0d', 'Learn more'),
           a('i78c9fd5', 'Learn more'),
           a('f3e333a9', 'Learn more'),
@@ -4795,28 +4803,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
           ),
           a('a399ed20', 'Let’s go'),
-          a('g2b8acd4', 'Log in to Twitter'),
-          a(
-            'jd7ca8ee',
-            'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
-          ),
-          a(
-            'c2ab20ac',
-            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
-          ),
-          a(
-            'id312f0a',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
-          ),
-          a(
-            'caac124e',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
-          ),
-          a(
-            'ab77e0b8',
-            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
-          ),
-          a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.')
+          a('g2b8acd4', 'Log in to Twitter')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4833,7 +4820,28 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
+        a(
+          'jd7ca8ee',
+          'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+        ),
+          a(
+            'c2ab20ac',
+            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          ),
+          a(
+            'id312f0a',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
+          ),
+          a(
+            'caac124e',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
+          ),
+          a(
+            'ab77e0b8',
+            'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
+          ),
+          a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.'),
+          a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
           a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
           a(
             'g4b108ee',
@@ -5181,6 +5189,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e0d7da6c', 'Closes'),
           a('i7059f56', 'Opens'),
           a('a7391348', 'No hours available'),
+          a('c9eba532', 'Updated hours'),
           a('je822560', 'Twitter Direct Message'),
           a('ha9b8035', function (e) {
             return 'Call ' + e.phoneCode + ' ' + e.phoneNumber
@@ -5957,8 +5966,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f3b1bdc3', 'Twitter Rules'),
           a('g9b60a79', 'Learn more'),
           a('gd7acb84', 'Set up profile'),
-          a('b7636014', 'Message'),
-          a('i662c536', 'Super Follow'),
+          a('b7636014', 'Message')
+        a('i662c536', 'Super Follow'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e78', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
@@ -5966,8 +5975,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cef4e8cf', function (e) {
             return 'Unmute @' + e.screenName + '?'
           }),
-          a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.')
-        a('df422dfe', 'You have muted Tweets from this account.'),
+          a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
+          a('df422dfe', 'You have muted Tweets from this account.'),
           a(
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
@@ -6000,11 +6009,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('d808b42a', 'Tweets daily'),
-          a('da819e94', 'Tweets infrequently'),
-          a('j0a7ff70', 'Tweets monthly'),
-          a('ae2bc2e6', 'Never tweets'),
-          a('h676cfe2', 'Tweets weekly'),
           a('abb13fc9', function (e) {
             return 'About @' + e.screenName
           }),
@@ -6260,6 +6264,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j190bf1a', 'LIVE'),
           a('e3fcbdba', 'Dismiss'),
           a('jc0b3a8c', 'Image description'),
+          a('ia1d2e58', 'Liked By Author'),
           a('bed2945c', 'read image description'),
           a('j836de8a', 'Protected account'),
           a('f936caa6', 'Translator account'),
@@ -6352,6 +6357,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c9aa7c7c', 'Newsletter'),
           a('if1b6f15', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
+          }),
+          a('c9bb65db', function (e) {
+            return 'Collection of ' + e.slidesLength + ' images. ' + e.heroVanityContent + '. ' + e.heroTitleContent
           }),
           a('a6ada13e', 'Shop now'),
           a('e1bddf52', 'Drag to rotate'),
@@ -9300,6 +9308,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'b4b477d3',
+                get: function () {
+                  return [
+                    ' · ' + this.props.frequencyCount + ' Tweet' + n(this.props.frequencyCount, '', 's') + ' per month',
+                  ]
+                },
+              },
+              {
                 key: 'ce1aaf8f',
                 get: function () {
                   return [this.props.formattedCount + ' Reaction' + n(this.props.count, '', 's')]
@@ -9345,9 +9361,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'j7247853',
+                key: 'b9ad7ff5',
                 get: function () {
-                  return ['', ' by Author']
+                  return ['', ' by author']
                 },
               },
               {
