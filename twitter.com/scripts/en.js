@@ -2146,7 +2146,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h5245afa', 'Community'),
           a('f05dbef0', 'Loading Tweets'),
           a('ae7a45a2', 'For You'),
-          a('jd83e5a6', 'Recommnended Tweets first'),
+          a('cc1c2602', 'Recommended Tweets first'),
           a('d601fc20', 'Latest'),
           a('b2aef4d8', 'Newest Tweets first'),
           a('bf359e0e', 'About your new Community'),
@@ -5096,8 +5096,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
           a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           a('hc72e1fc', 'Please enter a valid email.'),
-          a('fa69a1ca', 'Reveal password'),
-          a('aacf5086', 'Hide password'),
           a('c52be452', 'Yes, remove'),
           a(
             'i769e50a',
@@ -5257,6 +5255,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dd1605f0', 'Play Store URL'),
           a('g4098f78', 'Where can I find this?'),
           a('b949cdc6', 'Remove app'),
+          a('a0b4541c', 'Something went wrong - but don’t fret, it’s not your fault'),
           a('j2a44408', 'Launch Pad'),
           a('f53adc36', 'Drive real world outcomes'),
           a('hc4981d6', 'Profile Spotlights'),
@@ -5742,6 +5741,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f92e3842', 'When someone (even you) reacts to this Tweet, it’ll show up here.'),
           a('f345dcda', 'Edit History'),
           a('h2fcc532', 'Loading history'),
+          a('ce374ee0', '@TwitterWrite'),
+          a('fe430958', 'Help Center'),
           a('ced3c85a', 'Edited'),
           a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('edf9101f', 'Keep reading'),
@@ -5965,9 +5966,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('g9b60a79', 'Learn more'),
-          a('gd7acb84', 'Set up profile'),
-          a('b7636014', 'Message')
-        a('i662c536', 'Super Follow'),
+          a('gd7acb84', 'Set up profile')
+        a('b7636014', 'Message'),
+          a('i662c536', 'Super Follow'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e78', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
@@ -6136,7 +6137,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jcb7383f', function (e) {
             return 'You are now Super Following @' + e.screenName
           }),
-          a('a0b4541c', 'Something went wrong - but don’t fret, it’s not your fault'),
           a(
             'ca4cb930',
             'There was an issue with processing the Super Follow. Please dismiss this prompt and try again.',
@@ -7412,6 +7412,30 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'a2706f9b',
                 get: function () {
                   return ['', ' reacted with ', ': ']
+                },
+              },
+              {
+                key: 'ff973a65',
+                get: function () {
+                  return ['You reacted to @', '’s voice message with ']
+                },
+              },
+              {
+                key: 'ec2cede5',
+                get: function () {
+                  return ['', ' reacted to @', '’s voice message with ']
+                },
+              },
+              {
+                key: 'i1d08199',
+                get: function () {
+                  return ['You reacted to a voice message with ']
+                },
+              },
+              {
+                key: 'd424b45f',
+                get: function () {
+                  return ['', ' reacted to a voice message with ']
                 },
               },
               {
@@ -9145,6 +9169,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c9927419',
                 get: function () {
                   return ['This Tweet doesn’t have any hidden replies, but Protected Tweets might be filtered out. ']
+                },
+              },
+              {
+                key: 'h9fba3eb',
+                get: function () {
+                  return [
+                    'Notes aren’t available to read in your region yet. Follow ',
+                    ' for announcements and updates about Notes, or read more in our ',
+                    '.',
+                  ]
                 },
               },
               {
