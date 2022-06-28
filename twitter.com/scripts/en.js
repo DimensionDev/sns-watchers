@@ -201,10 +201,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ab4fc8bc', 'Space'),
           a('jd859c9c', 'You have been removed from this Space.'),
-          a('d227d19e', 'Collapse'),
-          a('bdfa93eb', function (e) {
-            return 'Shared by ' + e.name
-          }),
           a('f7c8617a', 'What are clips?'),
           a(
             'ecc7d2ec',
@@ -228,6 +224,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('de4a571c', 'Listen to the recording anytime. You can also share it with a Tweet.'),
           a('ffc53fbd', 'Learn more'),
           a('b4f91a8a', 'Recording active'),
+          a('a3e6bb1c', 'Twitter Spaces for the Web'),
+          a('d82f2140', 'Tune into live audio conversations'),
+          a('gf029868', 'Listen live'),
+          a('icc1ba70', 'Spaces are public'),
+          a('bcf241be', 'Manage your experience'),
+          a('b0bc8330', 'You can also block and report people in a Space.'),
+          a('ae6c101d', 'iOS'),
+          a('f6a61e67', 'Android'),
+          a('gba36459', 'Learn more'),
+          a('d4ccb940', 'Adjust settings'),
+          a('cdffdeb3', 'Learn more'),
+          a('d227d19e', 'Collapse'),
+          a('bdfa93eb', function (e) {
+            return 'Shared by ' + e.name
+          }),
           a('cc724cb0', 'Create Clip'),
           a('cfd2f35e', 'Cancel'),
           a('c1df579e', 'Next'),
@@ -240,17 +251,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a9ba3e28', 'Private Information'),
           a('d5519f4a', 'Abusive Behavior'),
           a('eb55363c', 'This Space has been reported'),
-          a('a3e6bb1c', 'Twitter Spaces for the Web'),
-          a('d82f2140', 'Tune into live audio conversations'),
-          a('gf029868', 'Listen live'),
-          a('icc1ba70', 'Spaces are public'),
-          a('bcf241be', 'Manage your experience'),
-          a('b0bc8330', 'You can also block and report people in a Space.'),
-          a('ae6c101d', 'iOS'),
-          a('f6a61e67', 'Android'),
-          a('gba36459', 'Learn more'),
-          a('d4ccb940', 'Adjust settings'),
-          a('cdffdeb3', 'Learn more'),
           a('bb1d57b6', 'Leave'),
           a('ifea3114', 'Share'),
           a('i7f853ea', 'Share with people outside of Twitter'),
@@ -650,6 +650,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64c1884', 'Compose new Message'),
           a('j7d0e836', 'Expand'),
           a('a2f81050', 'Messages'),
+          a('fd6150fc', 'Keeping you safer in Direct Messages'),
+          a('ac25e02e', 'Privacy Policy'),
           a('a74e7c77', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
@@ -659,8 +661,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a66ac766', 'Loading Direct Messages'),
           a('fe61929e', 'Search for people and groups'),
           a('a846382a', 'Search Direct Messages'),
-          a('fd6150fc', 'Keeping you safer in Direct Messages'),
-          a('ac25e02e', 'Privacy Policy'),
           a('ga086a54', 'Image attachment'),
           a('a9cc8cfe', 'Sent a GIF'),
           a('eb3d722e', 'You sent a GIF'),
@@ -2560,514 +2560,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8f57e08', 'Personalization and data'),
           a('gbde3534', 'Interests and ads data'),
           a('a54826c6', 'Inferred interests from partners'),
-          a('cce24bf4', 'Get insights into the type of information stored for your account.'),
-          a('d6eb9b9a', 'Twitter data'),
-          a(
-            'b708417c',
-            'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
-          ),
-          a('jbf5843e', 'Periscope data'),
-          a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
-          a('cdcc2ad4', 'Download failed'),
-          a('dbeff87a', 'Request archive'),
-          a('ce5d2c46', 'Temporarily unavailable'),
-          a('b2ed92c4', 'Requesting archive'),
-          a('gee8110e', 'Download archive'),
-          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
-          a(
-            'c2254084',
-            'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
-          ),
-          a(
-            'f62d1d9e',
-            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
-          ),
-          a('b221ca4c', 'We’ll let you know when your data is ready to download'),
-          a('ccb37011', 'complete this form'),
-          a('g1aced04', 'Apps, devices & information'),
-          a('ffeb836a', 'Settings are unavailable'),
-          a(
-            'f2fb9746',
-            'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-          ),
-          a('eafcc76a', 'Things this App can view...'),
-          a('j3998a16', 'Things this App can do...'),
-          a('a6845663', function (e) {
-            return 'You approved these app permissions on ' + e.date
-          }),
-          a('b2347f7c', 'Loading application data'),
-          a('e1fda16e', 'You don’t have this app connected'),
-          a(
-            'da1201c6',
-            'When you connect a third-party application to your Twitter account, you are granting that application access to use your account.',
-          ),
-          a('gb8d09ba', 'Has access to your email address'),
-          a('g6dc09a0', 'Permissions'),
-          a('a6e6e898', 'Read-only'),
-          a('cde3b9ae', 'Read and write'),
-          a('g0d7813a', 'Read, write, and direct messages'),
-          a('c9b35b9e', 'Read your advertising data'),
-          a('e0191264', 'Read, create, and manage your advertising data'),
-          a('b73e1e8a', 'Learn how to revoke access'),
-          a('da6cdba8', 'Revoke app permissions'),
-          a('ef1d3dcc', 'Report application'),
-          a('c174e46e', 'Show less'),
-          a('a39075ff', function (e) {
-            return e.n + ' more'
-          }),
-          a('ed5ab16a', 'Active now'),
-          a('d64e29c6', 'Log out the device shown'),
-          a('idfa01cc', 'Log out of the device shown?'),
-          a(
-            'd4cca0f8',
-            'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
-          ),
-          a('e04ba39c', 'Date and time'),
-          a('jaaa8984', 'Location'),
-          a('h667fc02', 'You’ve ended your active Twitter session.'),
-          a('ddcd3d26', 'Loading session data'),
-          a('d2f0f3fe', 'We can not find this session'),
-          a('ga05517a', 'You haven’t created any reports'),
-          a('ea1715c0', 'When you do, they’ll show up here.'),
-          a('f154bd64', 'Autoblocked Tweets'),
-          a('de9b6642', 'If we autoblock an account, it’ll show up here.'),
-          a('cd702bc4', 'Report account'),
-          a('hc676c4b', function (e) {
-            return 'You blocked @' + e.screenName
-          }),
-          a('ca95bd23', function (e) {
-            return 'You removed @' + e.screenName + ' from autoblocked accounts'
-          }),
-          a('bbe47126', 'They’ll be able to see your Tweets, follow you, and send you Direct Messages.'),
-          a('f2351b98', 'Flagged accounts'),
-          a(
-            'da2c4a73',
-            'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
-          ),
-          a('bd0a88c2', 'View blocked accounts'),
-          a('hae5825e', 'Flagged Tweets'),
-          a('g0cba830', 'Here’s what happens when Safety Mode is on'),
-          a('b92fa3be', 'Twitter does the work, so you don’t have to'),
-          a(
-            'd45866f4',
-            'When we detect potentially abusive or spammy replies, mentions, or Quote Tweets, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
-          ),
-          a('e83ecbf6', 'You get a break'),
-          a(
-            'ha597018',
-            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or message you. If they view your profile, we let them know Twitter autoblocked them, and not you.',
-          ),
-          a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
-          a(
-            'bff84f2a',
-            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-          ),
-          a('fabe1398', 'Autoblocks'),
-          a('c0786022', 'Autoblocked accounts'),
-          a('h58f67dc', 'What’s Safety Mode?'),
-          a(
-            'a37e9b0a',
-            'Autoblock accounts for a week that might be acting abusive or spammy. Accounts you follow or message with aren’t autoblocked.',
-          ),
-          a('ccafffde', '1 day'),
-          a('j2e184d8', '3 days'),
-          a('fc638aa2', '7 days'),
-          a('d94b2246', 'Ends within 1 hour'),
-          a('bfea13ac', 'Can’t update Safety Mode settings.'),
-          a('ee95bb8d', function (e) {
-            return 'Ends on ' + e.date
-          }),
-          a('fe37f854', 'Manage who can see your Spaces listening activity'),
-          a('j3d2cfc4', 'Allow followers to see which Spaces you’re listening to'),
-          a(
-            'd9588ae6',
-            'Keep in mind that even with this setting turned off you will be visible to everyone when you’re in a Space. Your followers can always see what Spaces you’re hosting, co-hosting or speaking in.',
-          ),
-          a('h93824cc', 'Monetization options'),
-          a('c1b71878', 'Accepting subscribers'),
-          a('e939cc54', 'Application accepted · Build your subscription'),
-          a('ibb5e1c8', 'Application declined'),
-          a('b255df58', 'Application submitted · Waiting for review'),
-          a('b3f834c8', 'Application waitlisted'),
-          a('i724fb4a', 'Get help'),
-          a('jbbe5dde', 'First things first'),
-          a(
-            'hdcafbba',
-            'To begin the application process, you’ll need to provide some basic information and complete your profile.',
-          ),
-          a('jd067188', 'Add an email address'),
-          a('f89eb478', 'We’ll use it to contact you about your application status and other important information.'),
-          a('f3f66252', 'Add email address'),
-          a('h9ab7046', 'Make sure you have a bio and location listed'),
-          a(
-            'eb5a4792',
-            'Having a complete bio and location helps build trust in your profile and get more subscribers.',
-          ),
-          a('i79ba1e8', 'Update profile'),
-          a('i623bc7a', 'Secure your account with two-factor authentication'),
-          a(
-            'd1c14674',
-            'Adding two-factor authentication will make it harder for other people to gain access to your account.',
-          ),
-          a('hd3a6588', 'Set up two-factor authentication'),
-          a('a0c67dd4', 'Confirm your age to apply'),
-          a(
-            'ad4a61ae',
-            'You must be at least 18 years old to apply for Super Follows. Confirm you’re 18 or older to continue.',
-          ),
-          a('i84c5de8', 'Creator applications coming soon'),
-          a('d9c11740', 'Check back soon to be able to apply to join the Super Follows program.'),
-          a('feb54b40', 'Be one of the first to apply'),
-          a('bac156a6', 'Your account meets our minimum application requirements for Super Follows.'),
-          a('a3a20a10', 'Check back later'),
-          a('b26ae508', 'Here are the minimum application requirements for Super Follows.'),
-          a('fdd95737', function (e) {
-            return e.minFollowersCount + ' followers'
-          }),
-          a('a0dcad87', function (e) {
-            return e.minTweetsCount + ' Tweets in the past 30 days'
-          }),
-          a('c27f57ac', 'Be at least 18 years old'),
-          a('adc8a241', 'Super Follows Terms'),
-          a('j5dc36d8', 'Paid subscriptions for your most engaged followers.'),
-          a(
-            'cedb182a',
-            'Offer your favorite followers a little something extra and earn money each month. They’ll get access to a more personal experience with bonus content, and you can get paid for what you create. It’s a win-win.',
-          ),
-          a('cd5cae16', 'Super Follows perks'),
-          a('c767c93c', 'Your Tweet game is strong. We think that’s worth something.'),
-          a('e6abad0e', 'How much money can you make with Super Follows?'),
-          a('g8cdf708', 'Are you in?'),
-          a(
-            'bff8472e',
-            'We’re looking for a small group of people to try Super Follows. Check your eligibility to get started.',
-          ),
-          a('e533715e', 'Check eligibility'),
-          a('ad6579be', 'Conversion rate'),
-          a('bbb89925', function (e) {
-            return e.percent + '% of followers'
-          }),
-          a('e86cf68b', function (e) {
-            return '' + e.earnings
-          }),
-          a('d64c12b7', '*'),
-          a('e263c38f', '*'),
-          a('d31c5998', 'Badges'),
-          a(
-            'hda1e780',
-            'Give your Super Followers special recognition with labels that make it easier to chat and connect.',
-          ),
-          a('d08d0bb2', 'Bonus content'),
-          a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
-          a('acfa84f2', 'More features coming soon'),
-          a('e1ec5f40', 'Stay tuned for more ways to create and share content with your subscribers.'),
-          a('aa7e35ee', 'Your account was not selected'),
-          a(
-            'f67e69b0',
-            'Our Super Follows test group filled up fast, and your account was not selected this time. Stay tuned for future opportunities to participate.',
-          ),
-          a('f7997b16', 'Content categories'),
-          a('fc00ab5c', 'What kind of content do you create?'),
-          a('c2491670', 'Tell us about your content.'),
-          a('b1f2e8ce', 'Activist'),
-          a('jfec3aa0', 'Adult content'),
-          a('e08a6e60', 'Animals'),
-          a('b743702c', 'Art'),
-          a('h2401e36', 'Astrology'),
-          a('ed7e6676', 'B2B'),
-          a('fecc3792', 'Beauty'),
-          a('d80b0f12', 'Comedy'),
-          a('b29a93b2', 'Events'),
-          a('c5d190c0', 'Fashion'),
-          a('i6dfc494', 'Film and television'),
-          a('ff2b68ca', 'Finance'),
-          a('e404203c', 'Gaming'),
-          a('ab389322', 'Health and fitness'),
-          a('a46fdec4', 'Lifestyle'),
-          a('f28d8b06', 'Music'),
-          a('c8ee31da', 'News'),
-          a('e0234d02', 'Non-profit'),
-          a('h9d38a08', 'Opinion'),
-          a('fe6841be', 'Photography'),
-          a('e031e06a', 'Podcast'),
-          a('i5cade16', 'Reality TV'),
-          a('e084f2a0', 'Skincare'),
-          a('a9db15b2', 'Small and medium business'),
-          a('d27beb9e', 'Sports'),
-          a('a92db4aa', 'Tech'),
-          a('fc64990e', 'Video'),
-          a('hb5f1d64', 'Writing'),
-          a('bd44a8a8', 'Tell us more'),
-          a('d94a9a18', 'Ethnicity'),
-          a('ad956630', 'Indigenous/Aboriginal peoples'),
-          a('e375c2d0', 'Black'),
-          a('gf30371a', 'Hispanic/Latinx'),
-          a('a45caf18', 'Middle Eastern/North African'),
-          a('f58ee9a4', 'Central Asian'),
-          a('e5f515b8', 'South Asian'),
-          a('j7893a06', 'East Asian and/or South East Asian'),
-          a('a4ee9394', 'White'),
-          a('jafe3706', 'My ethnicity/race isn’t on this list'),
-          a('c1ac7d68', 'I don’t wish to disclose'),
-          a('b00fb4e4', 'Woman'),
-          a('dca20e16', 'Man'),
-          a('j908f14a', 'Nonbinary'),
-          a('h1cc7092', 'Gender non-conforming'),
-          a('hca2782a', 'Genderqueer or genderfluid'),
-          a('b3af7344', 'Transgender'),
-          a('c3c16abc', 'My gender identity isn’t on this list'),
-          a('da8ea7da', 'Content platforms'),
-          a('d7081f92', 'What platforms do you use?'),
-          a('j3495480', 'Tell us about the platforms you use to share your content.'),
-          a('a3021318', 'Facebook'),
-          a('f6965e34', 'Instagram'),
-          a('b98d0edc', 'Etsy'),
-          a('d4d74bb4', 'Patreon'),
-          a('ca07aa46', 'YouTube'),
-          a('c6d71a04', 'TikTok'),
-          a('c2680406', 'Snapchat'),
-          a('d8552c1a', 'Twitch'),
-          a('e873f0ae', 'Apply for Super Follows'),
-          a(
-            'f095a24a',
-            'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-          ),
-          a('d1f6d336', 'Username'),
-          a('c144fa52', 'What kind of content do you create? Select all that apply.'),
-          a('f1bf337e', 'Select categories'),
-          a('d4062c9a', 'Where do you share content? Select all that apply.'),
-          a('e963d588', 'Select platforms'),
-          a('ede0ac3e', 'Planned usage'),
-          a('ffb6cb88', 'How do you plan to use Super Follows?'),
-          a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-          a('feacb49e', 'About you'),
-          a(
-            'je17c988',
-            'If you provide us with this optional demographic information, we’ll only use it to analyze the diversity of Super Follows participants.',
-          ),
-          a('gfc80842', 'Submit application'),
-          a('f4f4dd60', 'Required'),
-          a('f448cbcc', 'Optional'),
-          a('d3d6c52c', 'Your application has been submitted'),
-          a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
-          a('j274e6aa', 'You’re on the waitlist'),
-          a(
-            'd7f65128',
-            'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
-          ),
-          a('af4d0a80', 'Discard edits?'),
-          a('c701e5cc', 'Any changes you made won’t be saved.'),
-          a('a649778c', 'Continue editing'),
-          a('hf6f2914', 'Preview'),
-          a('iba08a94', 'How does everything look?'),
-          a(
-            'ef354e84',
-            'This is what prospective subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
-          ),
-          a('b600eb88', 'Find your people and get recognized'),
-          a(
-            'b08bbeb4',
-            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
-          ),
-          a('cbc8ce28', 'Get bonus content when you subscribe'),
-          a('a953a0a6', 'Only Super Followers can see this Tweet'),
-          a('a329ce88', 'Add a description...'),
-          a('f0c99eff', function (e) {
-            return '- @' + e.screenName
-          }),
-          a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
-          a('a4ed9072', 'Add an introduction...'),
-          a('gf32cca2', 'Describe the perks you’ll offer'),
-          a(
-            'j8ba99b4',
-            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
-          ),
-          a('c0348964', 'Introduction'),
-          a('j325331a', 'Take a minute to say hello'),
-          a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('a384fda0', 'Subscription overview'),
-          a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
-          a('ic624ab2', 'Subscriber perks'),
-          a('ifc9b70a', 'Super Follower badge'),
-          a('ia9c37c4', 'Pricing'),
-          a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
-          a('be54a313', function (e) {
-            return e.price + '/mo'
-          }),
-          a('cca48546', 'This price can’t be changed'),
-          a(
-            'de67bc6e',
-            'During this test period, you can’t change the price point you chose during setup. In the future, you’ll be able to update your subscription price.',
-          ),
-          a('f5be83b2', 'Join the Community'),
-          a(
-            'i1fd31c6',
-            'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
-          ),
-          a('b28a1b48', 'Get content tips and ideas'),
-          a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
-          a('f3ce76c0', 'Need more help?'),
-          a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
-          a('dba12b52', 'Deactivate Super Follows'),
-          a(
-            'ffaae232',
-            'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
-          ),
-          a('ca5ca5ee', 'See preview'),
-          a('g867481e', 'View creator guide'),
-          a('g5925628', 'Contact us'),
-          a('e58e85d2', 'Continue to deactivation'),
-          a('j5c45e80', 'Deactivate Super Follows?'),
-          a(
-            'h92e1b74',
-            'Deactivating Super Follows is permanent. You’ll be removed from the Super Follows program. To return to the program, you’ll need to reapply.',
-          ),
-          a('bee26fa8', 'Yes, deactivate'),
-          a('cd659e6e', 'Super Follows is now deactivated'),
-          a('be103b84', 'Active'),
-          a('b422cb62', 'Get started with Super Follows'),
-          a(
-            'f08705e0',
-            'You’ve been selected for our test group! Set up your subscription details now and we’ll let you know when Super Follows is live.',
-          ),
-          a('e2cd7000', 'Almost there...'),
-          a('fbfd7398', 'You’re so close! Finish setting up your Super Follows subscription.'),
-          a('d8637c96', 'Describe your Super Follows perks'),
-          a('b92892dc', 'Set a subscription price'),
-          a('b123a502', 'Verify your payout details'),
-          a('ad4a92a2', 'Badge'),
-          a('cda6bb6e', 'Give your Super Followers badges'),
-          a(
-            'a15b98ec',
-            'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
-          ),
-          a('e18b7a72', 'Review'),
-          a('be76dc34', 'Add description'),
-          a('ef5406e4', 'Add introduction'),
-          a('ea8a3d2e', 'Pricing setup'),
-          a('f77bb179', function (e) {
-            return 'Confirm your ' + e.price + ' selection'
-          }),
-          a(
-            'cd75a5d4',
-            'Double-check and confirm your subscription price. You won’t be able to change this during the Super Follows test period.',
-          ),
-          a('ic9124b0', 'Choose what your Super Followers pay'),
-          a('g5923869', function (e) {
-            return e.price + ' per month'
-          }),
-          a('f025ab3a', 'Build a bigger, broader base'),
-          a('c5602dfe', 'Infrequent posting and interacting with subscribers'),
-          a('ib075804', 'Expand your base and maximize revenue'),
-          a('j8a72f06', 'Moderate posting and interacting with subscribers'),
-          a('c246656e', 'Build an intimate base'),
-          a('a92ab16c', 'Regular posting and interacting with subscribers'),
-          a('e1453e45', 'Learn more'),
-          a('f1cb36b8', 'Payout setup'),
-          a('e20f6662', 'You’re all set!'),
-          a('d7d4da8a', '1–3 weeks'),
-          a('g88e146c', 'Your account is pending'),
-          a(
-            'dfe973a6',
-            'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
-          ),
-          a('ja884230', 'Set up your payout details'),
-          a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
-          a('fe339750', 'Create Stripe account'),
-          a('j912510a', 'Link Stripe account'),
-          a('ebfb897c', 'Examples'),
-          a('dc4feb1a', 'Not sure what to say?'),
-          a(
-            'c183d272',
-            'The kind of content you offer Super Followers is entirely up to you. Here are some examples to help get you started.',
-          ),
-          a(
-            'ic130fd6',
-            'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
-          ),
-          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
-          a(
-            'h580543e',
-            'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
-          ),
-          a(
-            'a0bb2076',
-            'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
-          ),
-          a(
-            'ace46d40',
-            'Hi and welcome to my Super Follows page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
-          ),
-          a(
-            'h2c45110',
-            'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
-          ),
-          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
-          a('fb278c82', 'What’s this preview?'),
-          a(
-            'e6b60e94',
-            'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
-          ),
-          a('je84dece', 'Feature Settings'),
-          a('i65802d0', 'Ad-free Articles'),
-          a('a21b8ad2', 'Ad-free Sites'),
-          a('hd885ae0', 'See your impact'),
-          a('je4ccd3a', 'Ad-free Articles Help Center'),
-          a('e5fff0c8', 'Your subscription is active.'),
-          a(
-            'bbbd8ea8',
-            'Check out which sites are on our growing network of Twitter Blue Publishers. Availability varies based on location. Doesn’t include paywall access right now.',
-          ),
-          a('jc8487c2', 'You’re supporting journalism each time you read ad-free with Twitter Blue.'),
-          a('ad45e9b2', 'View your subscription details or cancel.'),
-          a('db529452', 'Subscription'),
-          a('d248d75e', 'Get Support'),
-          a('b6ab9962', 'Original Tweets'),
-          a('jdceda60', 'Replies'),
-          a('j45978a8', 'Quotes'),
-          a('be077e8c', 'Threads'),
-          a('f3429f2c', 'Polls'),
-          a('j905e6fe', 'Tweet Undo period'),
-          a(
-            'e2c39a4c',
-            'Select which types of Tweets you want to undo before they’re public, plus how long your undo period is.',
-          ),
-          a(
-            'db8346ee',
-            'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
-          ),
-          a('a99d8e60', 'Upload longer videos'),
-          a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
-          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
-          a('cac1046e', '1080p video uploads'),
-          a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
-          a('baf97716', 'Your features will be available for the remainder of your billing period.'),
-          a('fff413dc', 'Manage payment and subscription info'),
-          a('h201c4c2', 'iOS'),
-          a('i8385a2c', 'Android'),
-          a('h80834de', 'other'),
-          a('ib8ebf3b', function (e) {
-            return (
-              'Looks like you bought this subscription on an ' +
-              e.mobilePlatform +
-              ' device. You’ll need to manage or cancel your subscription from that platform.'
-            )
-          }),
-          a(
-            'cc94c002',
-            'Manage your preferences for seeing sensitive media in Tweets. Keep in mind we use technology to help us identify such media, so while we’re always improving, we may not get it right all the time.',
-          ),
-          a('ha7323ea', 'People under 18 years old are unable to see adult content.'),
-          a('aa4342be', 'Graphic violence'),
-          a('c1484810', 'Hide media marked as graphic violence until you choose to see it.'),
-          a('gf143d22', 'Hide media marked as adult content until you choose to see it.'),
-          a('fe60d5da', 'Hide media marked as sensitive until you choose to see it.'),
-          a('db5f208e', 'Warn before showing'),
-          a('ga197e26', 'Show all'),
-          a('abb4d36e', 'Never show'),
-          a('ea650d62', 'graphic violence policy.'),
-          a('b95bcbae', 'adult content policy.'),
-          a('c694628a', 'sensitive media policy.'),
           a('e95b9448', 'General'),
           a('f458a3b2', 'Privacy'),
           a(
@@ -3118,11 +2610,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('idca4742', 'See your account information like your phone number and email address.'),
           a('b6ded35e', 'Change your password at any time.'),
+          a('cce24bf4', 'Get insights into the type of information stored for your account.'),
           a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
           a('i203df96', 'Find out how you can deactivate your account.'),
           a('j0b9ec86', 'TweetDeck Teams moved'),
           a('eaf134de', 'We moved the Teams feature to Twitter Delegate in your security and account access settings.'),
           a('iacafa08', 'Go to security settings'),
+          a('d1f6d336', 'Username'),
           a('f70cd5ee', 'Phone'),
           a('ib6f1694', 'Account creation'),
           a('de323650', 'Female'),
@@ -3236,7 +2730,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ff2ee0c2', 'Activism'),
           a('j0e2cfa8', 'Business'),
           a('hc61adfc', 'Entertainment'),
+          a('e404203c', 'Gaming'),
           a('d2042392', 'Government'),
+          a('c8ee31da', 'News'),
+          a('d27beb9e', 'Sports'),
           a('cc4b66b6', 'Select a category'),
           a('b37461a4', 'Select an account type'),
           a('b27325f6', 'Content creator'),
@@ -3446,8 +2943,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e745e6f1', 'Learn more'),
           a('de1b28ad', 'Learn more'),
           a('h04c272d', 'Learn more'),
-          a('j331c659', 'Learn more')
-        a('h02fe64f', 'Learn more'),
+          a('j331c659', 'Learn more'),
+          a('h02fe64f', 'Learn more'),
           a('a7df4b85', 'Learn more'),
           a('e9b71903', 'Learn more'),
           a('g961011f', 'Learn more'),
@@ -3731,6 +3228,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e186a3d6', function (e) {
             return '' + e.learnMoreLabel
           }),
+          a('ed5ab16a', 'Active now'),
           a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
           a('a244ed50', 'Your Twitter activity'),
           a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
@@ -3740,6 +3238,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dcc5aa06', 'Manage autoblocks and preferences.'),
           a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
           a('cc950d94', 'Manage who can message you directly.'),
+          a('fe37f854', 'Manage who can see your Spaces listening activity'),
           a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
           a('d3d319d6', 'Data sharing and off-Twitter activity'),
           a('f9ff2202', 'Manage your ads experience on Twitter.'),
@@ -3751,6 +3250,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
           a('cdcef7b6', 'Learn more about privacy on Twitter'),
           a('a607862a', 'Privacy policy'),
+          a('g5925628', 'Contact us'),
           a('dd6012f8', 'Privacy center'),
           a(
             'e860ff84',
@@ -3899,6 +3399,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Don’t allow Twitter to use cookies to gather additional data for tailored ads and communications.',
           ),
           a('d88102c0', 'If selected, Twitter will use less network data.'),
+          a('b2ed92c4', 'Requesting archive'),
+          a('ce5d2c46', 'Temporarily unavailable'),
           a('dd9ec810', 'Your Twitter data link is expired'),
           a('c7227886', 'Go to My Twitter Data'),
           a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
@@ -3914,6 +3416,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fbc92b61', function (e) {
             return 'Twitter data (' + e.currentIndex + ' of ' + e.count + ')'
           }),
+          a('gee8110e', 'Download archive'),
           a('c326f156', 'Archive downloaded'),
           a('c9fe9b56', 'Your archive is about to download'),
           a('j54b679b', function (e) {
@@ -3961,6 +3464,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ebeeac1a', 'Change email'),
           a('dc013356', 'Current'),
           a('ea28c7ce', 'Loading email settings'),
+          a('f3f66252', 'Add email address'),
           a('i5107de4', 'Update email address'),
           a('d19fd42a', 'Resend confirmation email'),
           a('g4da3246', 'Email sent. Please check your inbox shortly for a confirmation link.'),
@@ -4078,8 +3582,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f2c3c31c', 'Copy code'),
           a('e8016b64', 'Loading backup code'),
           a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-          a('f20ff69f', 'Learn more'),
-          a('j2327f80', 'Temporary Password'),
+          a('f20ff69f', 'Learn more')
+        a('j2327f80', 'Temporary Password'),
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
           a('g247dc1c', 'Loading temporary password'),
@@ -4145,6 +3649,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c5f4befa', 'Trends'),
           a('e2f16650', 'Show content in this location'),
           a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
+          a('jaaa8984', 'Location'),
           a('i4d54b0e', 'Trends for you'),
           a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
           a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
@@ -4171,6 +3676,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i2b9632e', 'Successfully unblocked.'),
           a('if594962', 'Blocked'),
           a('da814a90', 'When you activate Safety Mode, accounts that Twitter automatically blocks will show up here.'),
+          a('c0786022', 'Autoblocked accounts'),
           a(
             'f53382c4',
             'When you block someone, they won’t be able to follow or message you, and you won’t see notifications from them. You can import a list of accounts you want to block on Twitter.',
@@ -4320,6 +3826,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a148acba', 'Disable'),
           a('aa023546', 'Personalize based on the places you’ve been'),
           a('b85127bc', 'Allow use of where you see Twitter content across the web'),
+          a('ffeb836a', 'Settings are unavailable'),
+          a(
+            'f2fb9746',
+            'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
+          ),
           a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
           a('fe1fc83e', 'These are the age ranges associated with you.'),
           a('bf9c74d0', 'Do not use these age ranges for personalization.'),
@@ -4436,6 +3947,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c5595dfe', 'Change mute time'),
           a('he6804e0', 'Until you unmute the word'),
           a('a268406c', '24 hours'),
+          a('fc638aa2', '7 days'),
           a(
             'cc7bedfc',
             'You can change the amount of time this is muted. If you previously selected “Forever,” your changed time will start immediately.',
@@ -4480,6 +3992,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cb9bb630', 'Select which languages you want recommended Tweets, people, and trends to include.'),
           a('hfc86556', 'Muted'),
           a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
+          a('i8385a2c', 'Android'),
+          a('h201c4c2', 'iOS'),
           a('d383acfc', 'Windows Phone'),
           a('d623aecc', 'Share an account with people who have delegated roles.'),
           a('f3029d5c', 'When this setting is on, people can invite you to share their account.'),
@@ -4610,6 +4124,492 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c8e90dc8',
             'View member roles and invite contributors to the account. Members can send Direct Messages, publish Tweets, and create Lists – as well as view them.',
           ),
+          a('d6eb9b9a', 'Twitter data'),
+          a(
+            'b708417c',
+            'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
+          ),
+          a('jbf5843e', 'Periscope data'),
+          a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
+          a('cdcc2ad4', 'Download failed'),
+          a('dbeff87a', 'Request archive'),
+          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
+          a(
+            'c2254084',
+            'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
+          ),
+          a(
+            'f62d1d9e',
+            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
+          ),
+          a('b221ca4c', 'We’ll let you know when your data is ready to download'),
+          a('ccb37011', 'complete this form'),
+          a('g1aced04', 'Apps, devices & information'),
+          a('eafcc76a', 'Things this App can view...'),
+          a('j3998a16', 'Things this App can do...'),
+          a('a6845663', function (e) {
+            return 'You approved these app permissions on ' + e.date
+          }),
+          a('b2347f7c', 'Loading application data'),
+          a('e1fda16e', 'You don’t have this app connected'),
+          a(
+            'da1201c6',
+            'When you connect a third-party application to your Twitter account, you are granting that application access to use your account.',
+          ),
+          a('gb8d09ba', 'Has access to your email address'),
+          a('g6dc09a0', 'Permissions'),
+          a('a6e6e898', 'Read-only'),
+          a('cde3b9ae', 'Read and write'),
+          a('g0d7813a', 'Read, write, and direct messages'),
+          a('c9b35b9e', 'Read your advertising data'),
+          a('e0191264', 'Read, create, and manage your advertising data'),
+          a('b73e1e8a', 'Learn how to revoke access'),
+          a('da6cdba8', 'Revoke app permissions'),
+          a('ef1d3dcc', 'Report application'),
+          a('c174e46e', 'Show less'),
+          a('a39075ff', function (e) {
+            return e.n + ' more'
+          }),
+          a('d64e29c6', 'Log out the device shown'),
+          a('idfa01cc', 'Log out of the device shown?'),
+          a(
+            'd4cca0f8',
+            'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
+          ),
+          a('e04ba39c', 'Date and time'),
+          a('h667fc02', 'You’ve ended your active Twitter session.'),
+          a('ddcd3d26', 'Loading session data'),
+          a('d2f0f3fe', 'We can not find this session'),
+          a('ga05517a', 'You haven’t created any reports'),
+          a('ea1715c0', 'When you do, they’ll show up here.'),
+          a('f154bd64', 'Autoblocked Tweets'),
+          a('de9b6642', 'If we autoblock an account, it’ll show up here.'),
+          a('cd702bc4', 'Report account'),
+          a('hc676c4b', function (e) {
+            return 'You blocked @' + e.screenName
+          }),
+          a('ca95bd23', function (e) {
+            return 'You removed @' + e.screenName + ' from autoblocked accounts'
+          }),
+          a('bbe47126', 'They’ll be able to see your Tweets, follow you, and send you Direct Messages.'),
+          a('f2351b98', 'Flagged accounts'),
+          a(
+            'da2c4a73',
+            'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
+          ),
+          a('bd0a88c2', 'View blocked accounts'),
+          a('hae5825e', 'Flagged Tweets'),
+          a('g0cba830', 'Here’s what happens when Safety Mode is on'),
+          a('b92fa3be', 'Twitter does the work, so you don’t have to'),
+          a(
+            'd45866f4',
+            'When we detect potentially abusive or spammy replies, mentions, or Quote Tweets, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
+          ),
+          a('e83ecbf6', 'You get a break'),
+          a(
+            'ha597018',
+            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or message you. If they view your profile, we let them know Twitter autoblocked them, and not you.',
+          ),
+          a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
+          a(
+            'bff84f2a',
+            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
+          ),
+          a('fabe1398', 'Autoblocks'),
+          a('h58f67dc', 'What’s Safety Mode?'),
+          a(
+            'a37e9b0a',
+            'Autoblock accounts for a week that might be acting abusive or spammy. Accounts you follow or message with aren’t autoblocked.',
+          ),
+          a('ccafffde', '1 day'),
+          a('j2e184d8', '3 days'),
+          a('d94b2246', 'Ends within 1 hour'),
+          a('bfea13ac', 'Can’t update Safety Mode settings.'),
+          a('ee95bb8d', function (e) {
+            return 'Ends on ' + e.date
+          }),
+          a('j3d2cfc4', 'Allow followers to see which Spaces you’re listening to'),
+          a(
+            'd9588ae6',
+            'Keep in mind that even with this setting turned off you will be visible to everyone when you’re in a Space. Your followers can always see what Spaces you’re hosting, co-hosting or speaking in.',
+          ),
+          a('h93824cc', 'Monetization options'),
+          a('c1b71878', 'Accepting subscribers'),
+          a('e939cc54', 'Application accepted · Build your subscription'),
+          a('ibb5e1c8', 'Application declined'),
+          a('b255df58', 'Application submitted · Waiting for review'),
+          a('b3f834c8', 'Application waitlisted'),
+          a('i724fb4a', 'Get help'),
+          a('jbbe5dde', 'First things first'),
+          a(
+            'hdcafbba',
+            'To begin the application process, you’ll need to provide some basic information and complete your profile.',
+          ),
+          a('jd067188', 'Add an email address'),
+          a('f89eb478', 'We’ll use it to contact you about your application status and other important information.'),
+          a('h9ab7046', 'Make sure you have a bio and location listed'),
+          a(
+            'eb5a4792',
+            'Having a complete bio and location helps build trust in your profile and get more subscribers.',
+          ),
+          a('i79ba1e8', 'Update profile'),
+          a('i623bc7a', 'Secure your account with two-factor authentication'),
+          a(
+            'd1c14674',
+            'Adding two-factor authentication will make it harder for other people to gain access to your account.',
+          ),
+          a('hd3a6588', 'Set up two-factor authentication'),
+          a('a0c67dd4', 'Confirm your age to apply'),
+          a(
+            'ad4a61ae',
+            'You must be at least 18 years old to apply for Super Follows. Confirm you’re 18 or older to continue.',
+          ),
+          a('i84c5de8', 'Creator applications coming soon'),
+          a('d9c11740', 'Check back soon to be able to apply to join the Super Follows program.'),
+          a('feb54b40', 'Be one of the first to apply'),
+          a('bac156a6', 'Your account meets our minimum application requirements for Super Follows.'),
+          a('a3a20a10', 'Check back later'),
+          a('b26ae508', 'Here are the minimum application requirements for Super Follows.'),
+          a('fdd95737', function (e) {
+            return e.minFollowersCount + ' followers'
+          }),
+          a('a0dcad87', function (e) {
+            return e.minTweetsCount + ' Tweets in the past 30 days'
+          }),
+          a('c27f57ac', 'Be at least 18 years old'),
+          a('adc8a241', 'Super Follows Terms'),
+          a('j5dc36d8', 'Paid subscriptions for your most engaged followers.'),
+          a(
+            'cedb182a',
+            'Offer your favorite followers a little something extra and earn money each month. They’ll get access to a more personal experience with bonus content, and you can get paid for what you create. It’s a win-win.',
+          ),
+          a('cd5cae16', 'Super Follows perks'),
+          a('c767c93c', 'Your Tweet game is strong. We think that’s worth something.'),
+          a('e6abad0e', 'How much money can you make with Super Follows?'),
+          a('g8cdf708', 'Are you in?'),
+          a(
+            'bff8472e',
+            'We’re looking for a small group of people to try Super Follows. Check your eligibility to get started.',
+          ),
+          a('e533715e', 'Check eligibility'),
+          a('ad6579be', 'Conversion rate'),
+          a('bbb89925', function (e) {
+            return e.percent + '% of followers'
+          }),
+          a('e86cf68b', function (e) {
+            return '' + e.earnings
+          }),
+          a('d64c12b7', '*'),
+          a('e263c38f', '*'),
+          a('d31c5998', 'Badges'),
+          a(
+            'hda1e780',
+            'Give your Super Followers special recognition with labels that make it easier to chat and connect.',
+          ),
+          a('d08d0bb2', 'Bonus content'),
+          a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
+          a('acfa84f2', 'More features coming soon'),
+          a('e1ec5f40', 'Stay tuned for more ways to create and share content with your subscribers.'),
+          a('aa7e35ee', 'Your account was not selected'),
+          a(
+            'f67e69b0',
+            'Our Super Follows test group filled up fast, and your account was not selected this time. Stay tuned for future opportunities to participate.',
+          ),
+          a('f7997b16', 'Content categories'),
+          a('fc00ab5c', 'What kind of content do you create?'),
+          a('c2491670', 'Tell us about your content.'),
+          a('b1f2e8ce', 'Activist'),
+          a('jfec3aa0', 'Adult content'),
+          a('e08a6e60', 'Animals'),
+          a('b743702c', 'Art'),
+          a('h2401e36', 'Astrology'),
+          a('ed7e6676', 'B2B'),
+          a('fecc3792', 'Beauty'),
+          a('d80b0f12', 'Comedy'),
+          a('b29a93b2', 'Events'),
+          a('c5d190c0', 'Fashion'),
+          a('i6dfc494', 'Film and television'),
+          a('ff2b68ca', 'Finance'),
+          a('ab389322', 'Health and fitness'),
+          a('a46fdec4', 'Lifestyle'),
+          a('f28d8b06', 'Music'),
+          a('e0234d02', 'Non-profit'),
+          a('h9d38a08', 'Opinion'),
+          a('fe6841be', 'Photography'),
+          a('e031e06a', 'Podcast'),
+          a('i5cade16', 'Reality TV'),
+          a('e084f2a0', 'Skincare'),
+          a('a9db15b2', 'Small and medium business'),
+          a('a92db4aa', 'Tech'),
+          a('fc64990e', 'Video'),
+          a('hb5f1d64', 'Writing'),
+          a('bd44a8a8', 'Tell us more'),
+          a('d94a9a18', 'Ethnicity'),
+          a('ad956630', 'Indigenous/Aboriginal peoples'),
+          a('e375c2d0', 'Black'),
+          a('gf30371a', 'Hispanic/Latinx'),
+          a('a45caf18', 'Middle Eastern/North African'),
+          a('f58ee9a4', 'Central Asian'),
+          a('e5f515b8', 'South Asian'),
+          a('j7893a06', 'East Asian and/or South East Asian'),
+          a('a4ee9394', 'White'),
+          a('jafe3706', 'My ethnicity/race isn’t on this list'),
+          a('c1ac7d68', 'I don’t wish to disclose'),
+          a('b00fb4e4', 'Woman'),
+          a('dca20e16', 'Man'),
+          a('j908f14a', 'Nonbinary'),
+          a('h1cc7092', 'Gender non-conforming'),
+          a('hca2782a', 'Genderqueer or genderfluid'),
+          a('b3af7344', 'Transgender'),
+          a('c3c16abc', 'My gender identity isn’t on this list'),
+          a('da8ea7da', 'Content platforms'),
+          a('d7081f92', 'What platforms do you use?'),
+          a('j3495480', 'Tell us about the platforms you use to share your content.'),
+          a('a3021318', 'Facebook'),
+          a('f6965e34', 'Instagram'),
+          a('b98d0edc', 'Etsy'),
+          a('d4d74bb4', 'Patreon'),
+          a('ca07aa46', 'YouTube'),
+          a('c6d71a04', 'TikTok'),
+          a('c2680406', 'Snapchat'),
+          a('d8552c1a', 'Twitch'),
+          a('e873f0ae', 'Apply for Super Follows'),
+          a(
+            'f095a24a',
+            'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
+          ),
+          a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+          a('f1bf337e', 'Select categories'),
+          a('d4062c9a', 'Where do you share content? Select all that apply.'),
+          a('e963d588', 'Select platforms'),
+          a('ede0ac3e', 'Planned usage'),
+          a('ffb6cb88', 'How do you plan to use Super Follows?'),
+          a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
+          a('feacb49e', 'About you'),
+          a(
+            'je17c988',
+            'If you provide us with this optional demographic information, we’ll only use it to analyze the diversity of Super Follows participants.',
+          ),
+          a('gfc80842', 'Submit application'),
+          a('f4f4dd60', 'Required'),
+          a('f448cbcc', 'Optional'),
+          a('d3d6c52c', 'Your application has been submitted'),
+          a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
+          a('j274e6aa', 'You’re on the waitlist'),
+          a(
+            'd7f65128',
+            'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
+          ),
+          a('af4d0a80', 'Discard edits?'),
+          a('c701e5cc', 'Any changes you made won’t be saved.'),
+          a('a649778c', 'Continue editing'),
+          a('hf6f2914', 'Preview'),
+          a('iba08a94', 'How does everything look?'),
+          a(
+            'ef354e84',
+            'This is what prospective subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
+          ),
+          a('b600eb88', 'Find your people and get recognized'),
+          a(
+            'b08bbeb4',
+            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
+          ),
+          a('cbc8ce28', 'Get bonus content when you subscribe'),
+          a('a953a0a6', 'Only Super Followers can see this Tweet'),
+          a('a329ce88', 'Add a description...'),
+          a('f0c99eff', function (e) {
+            return '- @' + e.screenName
+          }),
+          a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
+          a('a4ed9072', 'Add an introduction...'),
+          a('gf32cca2', 'Describe the perks you’ll offer'),
+          a(
+            'j8ba99b4',
+            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
+          ),
+          a('c0348964', 'Introduction'),
+          a('j325331a', 'Take a minute to say hello'),
+          a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
+          a('a384fda0', 'Subscription overview'),
+          a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
+          a('ic624ab2', 'Subscriber perks'),
+          a('ifc9b70a', 'Super Follower badge'),
+          a('ia9c37c4', 'Pricing'),
+          a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
+          a('be54a313', function (e) {
+            return e.price + '/mo'
+          }),
+          a('cca48546', 'This price can’t be changed'),
+          a(
+            'de67bc6e',
+            'During this test period, you can’t change the price point you chose during setup. In the future, you’ll be able to update your subscription price.',
+          ),
+          a('f5be83b2', 'Join the Community'),
+          a(
+            'i1fd31c6',
+            'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
+          ),
+          a('b28a1b48', 'Get content tips and ideas'),
+          a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
+          a('f3ce76c0', 'Need more help?'),
+          a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
+          a('dba12b52', 'Deactivate Super Follows'),
+          a(
+            'ffaae232',
+            'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
+          ),
+          a('ca5ca5ee', 'See preview'),
+          a('g867481e', 'View creator guide'),
+          a('e58e85d2', 'Continue to deactivation'),
+          a('j5c45e80', 'Deactivate Super Follows?'),
+          a(
+            'h92e1b74',
+            'Deactivating Super Follows is permanent. You’ll be removed from the Super Follows program. To return to the program, you’ll need to reapply.',
+          ),
+          a('bee26fa8', 'Yes, deactivate'),
+          a('cd659e6e', 'Super Follows is now deactivated'),
+          a('be103b84', 'Active'),
+          a('b422cb62', 'Get started with Super Follows'),
+          a(
+            'f08705e0',
+            'You’ve been selected for our test group! Set up your subscription details now and we’ll let you know when Super Follows is live.',
+          ),
+          a('e2cd7000', 'Almost there...'),
+          a('fbfd7398', 'You’re so close! Finish setting up your Super Follows subscription.'),
+          a('d8637c96', 'Describe your Super Follows perks'),
+          a('b92892dc', 'Set a subscription price'),
+          a('b123a502', 'Verify your payout details'),
+          a('ad4a92a2', 'Badge'),
+          a('cda6bb6e', 'Give your Super Followers badges'),
+          a(
+            'a15b98ec',
+            'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
+          ),
+          a('e18b7a72', 'Review'),
+          a('be76dc34', 'Add description'),
+          a('ef5406e4', 'Add introduction'),
+          a('ea8a3d2e', 'Pricing setup'),
+          a('f77bb179', function (e) {
+            return 'Confirm your ' + e.price + ' selection'
+          }),
+          a(
+            'cd75a5d4',
+            'Double-check and confirm your subscription price. You won’t be able to change this during the Super Follows test period.',
+          ),
+          a('ic9124b0', 'Choose what your Super Followers pay'),
+          a('g5923869', function (e) {
+            return e.price + ' per month'
+          }),
+          a('f025ab3a', 'Build a bigger, broader base'),
+          a('c5602dfe', 'Infrequent posting and interacting with subscribers'),
+          a('ib075804', 'Expand your base and maximize revenue'),
+          a('j8a72f06', 'Moderate posting and interacting with subscribers'),
+          a('c246656e', 'Build an intimate base'),
+          a('a92ab16c', 'Regular posting and interacting with subscribers'),
+          a('e1453e45', 'Learn more'),
+          a('f1cb36b8', 'Payout setup'),
+          a('e20f6662', 'You’re all set!'),
+          a('d7d4da8a', '1–3 weeks'),
+          a('g88e146c', 'Your account is pending'),
+          a(
+            'dfe973a6',
+            'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
+          ),
+          a('ja884230', 'Set up your payout details'),
+          a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
+          a('fe339750', 'Create Stripe account'),
+          a('j912510a', 'Link Stripe account'),
+          a('ebfb897c', 'Examples'),
+          a('dc4feb1a', 'Not sure what to say?'),
+          a(
+            'c183d272',
+            'The kind of content you offer Super Followers is entirely up to you. Here are some examples to help get you started.',
+          ),
+          a(
+            'ic130fd6',
+            'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
+          ),
+          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
+          a(
+            'h580543e',
+            'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
+          ),
+          a(
+            'a0bb2076',
+            'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
+          ),
+          a(
+            'ace46d40',
+            'Hi and welcome to my Super Follows page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
+          ),
+          a(
+            'h2c45110',
+            'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
+          ),
+          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
+          a('fb278c82', 'What’s this preview?'),
+          a(
+            'e6b60e94',
+            'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
+          ),
+          a('je84dece', 'Feature Settings'),
+          a('i65802d0', 'Ad-free Articles'),
+          a('a21b8ad2', 'Ad-free Sites'),
+          a('hd885ae0', 'See your impact'),
+          a('je4ccd3a', 'Ad-free Articles Help Center'),
+          a('e5fff0c8', 'Your subscription is active.'),
+          a(
+            'bbbd8ea8',
+            'Check out which sites are on our growing network of Twitter Blue Publishers. Availability varies based on location. Doesn’t include paywall access right now.',
+          ),
+          a('jc8487c2', 'You’re supporting journalism each time you read ad-free with Twitter Blue.'),
+          a('ad45e9b2', 'View your subscription details or cancel.'),
+          a('db529452', 'Subscription'),
+          a('d248d75e', 'Get Support'),
+          a('b6ab9962', 'Original Tweets'),
+          a('jdceda60', 'Replies'),
+          a('j45978a8', 'Quotes'),
+          a('be077e8c', 'Threads'),
+          a('f3429f2c', 'Polls'),
+          a('j905e6fe', 'Tweet Undo period'),
+          a(
+            'e2c39a4c',
+            'Select which types of Tweets you want to undo before they’re public, plus how long your undo period is.',
+          ),
+          a(
+            'db8346ee',
+            'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
+          ),
+          a('a99d8e60', 'Upload longer videos'),
+          a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
+          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
+          a('cac1046e', '1080p video uploads'),
+          a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
+          a('baf97716', 'Your features will be available for the remainder of your billing period.'),
+          a('fff413dc', 'Manage payment and subscription info'),
+          a('h80834de', 'other'),
+          a('ib8ebf3b', function (e) {
+            return (
+              'Looks like you bought this subscription on an ' +
+              e.mobilePlatform +
+              ' device. You’ll need to manage or cancel your subscription from that platform.'
+            )
+          }),
+          a(
+            'cc94c002',
+            'Manage your preferences for seeing sensitive media in Tweets. Keep in mind we use technology to help us identify such media, so while we’re always improving, we may not get it right all the time.',
+          ),
+          a('ha7323ea', 'People under 18 years old are unable to see adult content.'),
+          a('aa4342be', 'Graphic violence'),
+          a('c1484810', 'Hide media marked as graphic violence until you choose to see it.'),
+          a('gf143d22', 'Hide media marked as adult content until you choose to see it.'),
+          a('fe60d5da', 'Hide media marked as sensitive until you choose to see it.'),
+          a('db5f208e', 'Warn before showing'),
+          a('ga197e26', 'Show all'),
+          a('abb4d36e', 'Never show'),
+          a('ea650d62', 'graphic violence policy.'),
+          a('b95bcbae', 'adult content policy.'),
+          a('c694628a', 'sensitive media policy.'),
           a('dbc85148', 'Select a message'),
           a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
           a('ff599112', 'Create a group'),
@@ -4768,7 +4768,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fcc64f02', 'Report this'),
           a('ea193d66', 'Delete this'),
           a('e5227fe0', 'View on Twitter'),
-          a('d0df844c', 'View Analytics'),
           a('fd61ab82', 'Delete Moment?'),
           a('aaae5e70', 'This can’t be undone and you’ll lose your Moment.'),
           a('e7718462', 'Your Moment was deleted.'),
@@ -4803,7 +4802,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
           ),
           a('a399ed20', 'Let’s go'),
-          a('g2b8acd4', 'Log in to Twitter')
+          a('g2b8acd4', 'Log in to Twitter'),
+          a(
+            'jd7ca8ee',
+            'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4821,13 +4824,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             })(e, t)
         }
         a(
-          'jd7ca8ee',
-          'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+          'c2ab20ac',
+          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
         ),
-          a(
-            'c2ab20ac',
-            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
-          ),
           a(
             'id312f0a',
             'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
@@ -4992,35 +4991,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a357d876', 'This account’s Moments are unavailable.'),
           a('i7e9ecf2', 'Pending changes'),
-          a('e2e35f0e', 'The number of times your Moment was viewed'),
-          a('icfe5fe4', 'The number of unique users who viewed your Moment'),
-          a('a52a1fba', 'The number of times your Moment was shared from Tweet button'),
-          a('if221232', 'The percentage of unique users that reached the end of your Moment'),
-          a('ab0f5140', 'Moment Activity'),
-          a('e6694374', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('cbbac64e', function (e) {
-            return 'Open' + n(e.count, '', 's')
-          }),
-          a('ca8bb782', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('edfb3064', function (e) {
-            return 'Unique Open' + n(e.count, '', 's')
-          }),
-          a('cb22dca4', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('a30d7c4f', function (e) {
-            return 'Share' + n(e.count, '', 's')
-          }),
-          a('g73eff2f', function (e) {
-            return e.formattedCount + '%'
-          }),
-          a('ee1b81c4', function (e) {
-            return 'Completion Rate'
-          }),
           a('i31dcd22', 'Article'),
           a('e217e03c', 'Start a newsletter for free'),
           a('fadf0f86', 'Compose and schedule newsletters'),
@@ -5161,15 +5131,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2760644', 'Currently not all modules are supported on all Twitter clients'),
           a('ce4185bc', 'More Spotlights coming soon'),
           a('b5aed332', 'No spotlights available'),
+          a('g419ecf4', 'Stay on page'),
+          a('d3a097a2', 'Yes, discard'),
+          a('j1e1cd30', 'Discard your changes?'),
+          a('if69307c', 'If you leave, your changes won’t be saved.'),
           a(
             'j224a074',
             'All location information provided will be publicly accessible when Location Spotlight is on. Phone and email can be accessed via the Contact button.',
           ),
           a('ie85a7a8', 'Delete your business info?'),
-          a('g419ecf4', 'Stay on page'),
-          a('d3a097a2', 'Yes, discard'),
-          a('j1e1cd30', 'Discard your changes?'),
-          a('if69307c', 'If you leave, your changes won’t be saved.'),
           a('b5348efc', 'No hours'),
           a('db285564', 'Always open'),
           a('g7993eee', 'Custom hours'),
@@ -5941,7 +5911,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
           a('i144ee20', 'View autoblocked Tweets'),
-          a('d834ab9c', 'Yes, view profile'),
           a('g6645d94', function (e) {
             return '@' + e.screenName
           }),
@@ -5966,8 +5935,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('g9b60a79', 'Learn more'),
-          a('gd7acb84', 'Set up profile')
-        a('b7636014', 'Message'),
+          a('gd7acb84', 'Set up profile'),
+          a('b7636014', 'Message'),
           a('i662c536', 'Super Follow'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e78', 'Today is their birthday!'),
@@ -5985,6 +5954,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('caeab0f8', 'Start reading'),
           a('f30795d0', 'Opens profile photo'),
           a('a270100c', 'Opens NFT details'),
+          a('ebf5ec26', 'Coming soon'),
+          a('c405ac8e', 'Introducing NFT profile pictures')
+        a('gc65c0aa', 'So what does this mean?'),
+          a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
+          a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
+          a('d8af538f', 'Learn more'),
+          a('d834ab9c', 'Yes, view profile'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
             'hf06085e',
@@ -6004,12 +5980,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'i622ef86',
             'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
           ),
-          a('ebf5ec26', 'Coming soon'),
-          a('c405ac8e', 'Introducing NFT profile pictures'),
-          a('gc65c0aa', 'So what does this mean?'),
-          a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
-          a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
-          a('d8af538f', 'Learn more'),
           a('abb13fc9', function (e) {
             return 'About @' + e.screenName
           }),
@@ -7978,110 +7948,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ba13ef23',
-                get: function () {
-                  return [
-                    'Something went wrong and your Twitter data couldn’t be sent. To request your data, please ',
-                    '.',
-                  ]
-                },
-              },
-              {
-                key: 'd724f427',
-                get: function () {
-                  return ['']
-                },
-              },
-              {
-                key: 'h3d97f03',
-                get: function () {
-                  return ['']
-                },
-              },
-              {
-                key: 'b8437d65',
-                get: function () {
-                  return ['Manage settings that help limit unwelcome interactions. ']
-                },
-              },
-              {
-                key: 'a4ad5ebb',
-                get: function () {
-                  return ['By tapping below to apply, you agree to be bound by the ']
-                },
-              },
-              {
-                key: 'fb01c6d9',
-                get: function () {
-                  return ['Do what you love', 'and earn money doing it']
-                },
-              },
-              {
-                key: 'j8018f0f',
-                get: function () {
-                  return ['', ' per month']
-                },
-              },
-              {
-                key: 'caf67b9b',
-                get: function () {
-                  return ['', 'Assuming a ' + this.props.price + '/month Super Follows offering']
-                },
-              },
-              {
-                key: 'gc242227',
-                get: function () {
-                  return ['']
-                },
-              },
-              {
-                key: 'f402ebd1',
-                get: function () {
-                  return ['Super Follow', '' + this.props.name]
-                },
-              },
-              {
-                key: 'geee69df',
-                get: function () {
-                  return [
-                    'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
-                  ]
-                },
-              },
-              {
-                key: 'cf780193',
-                get: function () {
-                  return [
-                    'We’ve confirmed your Stripe account. It can take ',
-                    ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
-                  ]
-                },
-              },
-              {
-                key: 'a470b643',
-                get: function () {
-                  return [
-                    'This includes any media that depicts death, violence, medical procedures, or serious physical injury in graphic detail. Learn more about our ',
-                  ]
-                },
-              },
-              {
-                key: 'db12fdf1',
-                get: function () {
-                  return [
-                    'This includes consensually produced and distributed media that’s intended to cause sexual arousal. Learn more about our ',
-                  ]
-                },
-              },
-              {
-                key: 'a23e791f',
-                get: function () {
-                  return [
-                    'This includes other media that’s been marked as sensitive, such as hateful imagery. Find more examples in our ',
-                  ]
-                },
-              },
-              {
                 key: 'f1a3d63d',
                 get: function () {
                   return ['Add your date of birth to your ', '.']
@@ -8970,6 +8836,110 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'ba13ef23',
+                get: function () {
+                  return [
+                    'Something went wrong and your Twitter data couldn’t be sent. To request your data, please ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'd724f427',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
+                key: 'h3d97f03',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
+                key: 'b8437d65',
+                get: function () {
+                  return ['Manage settings that help limit unwelcome interactions. ']
+                },
+              },
+              {
+                key: 'a4ad5ebb',
+                get: function () {
+                  return ['By tapping below to apply, you agree to be bound by the ']
+                },
+              },
+              {
+                key: 'fb01c6d9',
+                get: function () {
+                  return ['Do what you love', 'and earn money doing it']
+                },
+              },
+              {
+                key: 'j8018f0f',
+                get: function () {
+                  return ['', ' per month']
+                },
+              },
+              {
+                key: 'caf67b9b',
+                get: function () {
+                  return ['', 'Assuming a ' + this.props.price + '/month Super Follows offering']
+                },
+              },
+              {
+                key: 'gc242227',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
+                key: 'f402ebd1',
+                get: function () {
+                  return ['Super Follow', '' + this.props.name]
+                },
+              },
+              {
+                key: 'geee69df',
+                get: function () {
+                  return [
+                    'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
+                  ]
+                },
+              },
+              {
+                key: 'cf780193',
+                get: function () {
+                  return [
+                    'We’ve confirmed your Stripe account. It can take ',
+                    ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
+                  ]
+                },
+              },
+              {
+                key: 'a470b643',
+                get: function () {
+                  return [
+                    'This includes any media that depicts death, violence, medical procedures, or serious physical injury in graphic detail. Learn more about our ',
+                  ]
+                },
+              },
+              {
+                key: 'db12fdf1',
+                get: function () {
+                  return [
+                    'This includes consensually produced and distributed media that’s intended to cause sexual arousal. Learn more about our ',
+                  ]
+                },
+              },
+              {
+                key: 'a23e791f',
+                get: function () {
+                  return [
+                    'This includes other media that’s been marked as sensitive, such as hateful imagery. Find more examples in our ',
+                  ]
+                },
+              },
+              {
                 key: 'a5d9d071',
                 get: function () {
                   return ['GIF via ']
@@ -9006,30 +8976,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                     'When you start the challenge, Google may collect and use information about you, your device, and browser. View Google’s ',
                     '.',
                   ]
-                },
-              },
-              {
-                key: 'gfc363c5',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'e79f5451',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'fcbb0929',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'afba3ebb',
-                get: function () {
-                  return ['', ' ']
                 },
               },
               {
@@ -11836,48 +11782,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (f.b2072821078 = p(
-            { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
-            {
-              pattern: "EEEE, MMMM d, y 'at' h:mm:ss a zzzz",
-              timeSeparator: ':',
-              days: {
-                E: {
-                  4: {
-                    sun: 'Sunday',
-                    mon: 'Monday',
-                    tue: 'Tuesday',
-                    wed: 'Wednesday',
-                    thu: 'Thursday',
-                    fri: 'Friday',
-                    sat: 'Saturday',
-                  },
-                },
-              },
-              months: {
-                M: {
-                  4: {
-                    1: 'January',
-                    2: 'February',
-                    3: 'March',
-                    4: 'April',
-                    5: 'May',
-                    6: 'June',
-                    7: 'July',
-                    8: 'August',
-                    9: 'September',
-                    10: 'October',
-                    11: 'November',
-                    12: 'December',
-                  },
-                },
-              },
-              dayPeriods: { am: 'AM', pm: 'PM' },
-              gmtFormat: 'GMT{0}',
-              gmtZeroFormat: 'GMT',
-              hourFormat: '+HH:mm;-HH:mm',
-            },
-          )),
           (f.a481468996 = p(
             { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
             {
@@ -11959,6 +11863,48 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             { pattern: 'M/d/yy', timeSeparator: ':' },
           )),
           (f.b696469024 = p({ 1: f('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
+          (f.b2072821078 = p(
+            { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
+            {
+              pattern: "EEEE, MMMM d, y 'at' h:mm:ss a zzzz",
+              timeSeparator: ':',
+              days: {
+                E: {
+                  4: {
+                    sun: 'Sunday',
+                    mon: 'Monday',
+                    tue: 'Tuesday',
+                    wed: 'Wednesday',
+                    thu: 'Thursday',
+                    fri: 'Friday',
+                    sat: 'Saturday',
+                  },
+                },
+              },
+              months: {
+                M: {
+                  4: {
+                    1: 'January',
+                    2: 'February',
+                    3: 'March',
+                    4: 'April',
+                    5: 'May',
+                    6: 'June',
+                    7: 'July',
+                    8: 'August',
+                    9: 'September',
+                    10: 'October',
+                    11: 'November',
+                    12: 'December',
+                  },
+                },
+              },
+              dayPeriods: { am: 'AM', pm: 'PM' },
+              gmtFormat: 'GMT{0}',
+              gmtZeroFormat: 'GMT',
+              hourFormat: '+HH:mm;-HH:mm',
+            },
+          )),
           (f.a2122364151 = p(
             { 1: f('en').numberFormatter({ raw: '0' }) },
             {
@@ -11994,12 +11940,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           (f.a815390825 = w(f('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
           (f.b867606024 = w(f('en').dateToPartsFormatter({ skeleton: 'Ehm' }))),
           (f.b1665844787 = w(f('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
-          (f.a1830739137 = w(f('en').dateToPartsFormatter({ datetime: 'full' }))),
           (f.b1998581093 = w(f('en').dateToPartsFormatter({ datetime: 'medium' }))),
           (f.a1441832606 = w(f('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
           (f.a218160295 = w(f('en').dateToPartsFormatter({ date: 'long' }))),
           (f.b93641787 = w(f('en').dateToPartsFormatter({ date: 'short' }))),
           (f.a1493315369 = w(f('en').dateToPartsFormatter({ skeleton: 'y' }))),
+          (f.a1830739137 = w(f('en').dateToPartsFormatter({ datetime: 'full' }))),
           (f.a1286203598 = w(f('en').dateToPartsFormatter({ date: 'medium' }))),
           (f.b687161418 = g(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             'relativeTime-type-future': {
@@ -12208,12 +12154,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g727ddcf', f.a815390825),
           a('h0e4cdf5', f.b867606024),
           a('bfbc051d', f.b1665844787),
-          a('g8d1b99b', f.a1830739137),
           a('d0a77c9b', f.b1998581093),
           a('da44942d', f.a1441832606),
           a('ba2e82a1', f.a218160295),
           a('a9f397f3', f.b93641787),
           a('d7d71245', f.a1493315369),
+          a('g8d1b99b', f.a1830739137),
           a('h3629783', f.a1286203598),
           a('ja781451', f.a71710728),
           a('cfa1a7b9', f.a605057387),
