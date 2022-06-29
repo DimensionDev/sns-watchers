@@ -6833,7 +6833,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ga629a8c', 'View people in conversation'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
-          a('d4bd7902', 'Collaborative Tweet'),
           a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
           a('f5d461f8', 'Voice Tweet'),
