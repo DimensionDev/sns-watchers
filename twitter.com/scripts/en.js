@@ -1083,13 +1083,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Translated from ' + e.originLanguage + ' by'
           }),
           a('b7cb4fab', 'Translated by'),
-          a('de2d83d6', 'Bookmark to Folder'),
-          a('b6f822ba', 'Copy link to Tweet'),
-          a('f14df406', 'Copy link to ad'),
-          a('d9837138', 'Remove Tweet from Bookmarks'),
           a('jf9c38d0', 'React button'),
-          a('ff9348b8', 'Share ad via …'),
-          a('ebad846c', 'Share Tweet via …'),
           a('h438b015', function (e) {
             return 'Tweet from ' + e.fullName + ' (@' + e.screenName + ')'
           }),
@@ -1098,7 +1092,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b59d8d10', 'Tweet added to your Bookmarks'),
           a('h5d6c720', 'Tweet removed from your Bookmarks'),
-          a('f1fcb2ec', 'Remove Tweet from Folder'),
           a('a2e7377f', function (e) {
             return 'Removed from ' + e.bookmarkFolderName
           }),
@@ -1143,8 +1136,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ae2c8a1e', 'Why can’t you reply to this?'),
           a('adf4892e', 'Why can’t you downvote this?'),
           a('afe7ba26', 'Why can’t you Like this?'),
-          a('ddb7acf0', 'Why can’t you react to this?')
-        a('jead3bc2', 'Why can’t you share this?'),
+          a('ddb7acf0', 'Why can’t you react to this?'),
+          a('jead3bc2', 'Why can’t you share this?'),
           a('bf02eab6', 'Why can’t you view Tweet analytics?'),
           a(
             'c8b72f50',
@@ -1159,8 +1152,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Communities are public, so you can read the Tweets — but only members can interact with them.',
           ),
           a('h8a62e2b', 'Learn more'),
-          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
-          a('f1824804', 'Appeal this warning'),
+          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.')
+        a('f1824804', 'Appeal this warning'),
+          a('de2d83d6', 'Bookmark to Folder'),
+          a('f14df406', 'Copy link to ad'),
+          a('b6f822ba', 'Copy link to Tweet'),
+          a('ff9348b8', 'Share ad via …'),
+          a('ebad846c', 'Share Tweet via …'),
+          a('d9837138', 'Remove Tweet from Bookmarks'),
+          a('f1fcb2ec', 'Remove Tweet from Folder'),
           a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
@@ -5675,6 +5675,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d132269c', 'Loading Tweet'),
           a('dd657212', 'View Tweet'),
           a('h59700fa', 'ImmersiveMediaViewer'),
+          a('f26a4cb2', 'Swipe up for more'),
           a('bd7c0390', 'Quote Tweets'),
           a('ebcf1374', 'No Quote Tweets yet'),
           a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
@@ -5938,6 +5939,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gd7acb84', 'Set up profile'),
           a('b7636014', 'Message'),
           a('i662c536', 'Super Follow'),
+          a(
+            'b74bd6c6',
+            'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
+          ),
+          a('caeab0f8', 'Start reading'),
+          a('f30795d0', 'Opens profile photo'),
+          a('a270100c', 'Opens NFT details'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e78', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
@@ -5947,16 +5955,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
-          a(
-            'b74bd6c6',
-            'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
-          ),
-          a('caeab0f8', 'Start reading'),
-          a('f30795d0', 'Opens profile photo'),
-          a('a270100c', 'Opens NFT details'),
-          a('ebf5ec26', 'Coming soon'),
-          a('c405ac8e', 'Introducing NFT profile pictures')
-        a('gc65c0aa', 'So what does this mean?'),
+          a('ebf5ec26', 'Coming soon')
+        a('c405ac8e', 'Introducing NFT profile pictures'),
+          a('gc65c0aa', 'So what does this mean?'),
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
