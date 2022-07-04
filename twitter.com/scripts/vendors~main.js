@@ -19584,11 +19584,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
               return '[object ' + i(this) + ']'
             }
       },
-      V78V: function (e, t, n) {
-        'use strict'
-        n('ERkP').useRef, n('/2Cm')
-        e.exports = function (e, t) {}
-      },
       V8Kl: function (e, t, n) {
         'use strict'
         function r(e) {
@@ -29177,24 +29172,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
           )
         })(i.a)
         t.a = S
-      },
-      jAXQ: function (e, t, n) {
-        'use strict'
-        var r = n('gTuT'),
-          i = n('aQQo').useTrackLoadQueryInRender,
-          o = n('Vt13'),
-          a = n('V78V'),
-          u = (n('ERkP').useDebugValue, n('K1lQ').getFragment)
-        e.exports = function (e, t) {
-          var n = r.get()
-          return n
-            ? n.useFragment(e, t)
-            : (function (e, t) {
-                i()
-                var n = u(e)
-                return a(n, 'first argument of useFragment()'), o(n, t, 'useFragment()').data
-              })(e, t)
-        }
       },
       jAji: function (e, t, n) {
         'use strict'

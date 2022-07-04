@@ -270,7 +270,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ce96f1dc', 'Captions unavailable'),
           a('a5bf548a', 'Tweeps only'),
           a('c3afb4d8', 'Super Followers only'),
-          a('h140746f', function (e) {
+          a('e111f531', function (e) {
             return e.count + ' tuned in'
           }),
           a('h63a5c3c', 'More'),
@@ -330,6 +330,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f10f1cfc', 'The content of your Tweet is invalid.'),
           a('ac4c73d8', 'Embedded video'),
           a('c8b4bca0', 'Shop'),
+          a('f5ea07ec', 'Shop now'),
           a('b62956aa', 'Book'),
           a('b5298d92', 'Connect'),
           a('i3ea806a', 'Order'),
@@ -713,9 +714,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2fd3206', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
-          a('e5b0063d', function (e) {
-            return 'Timeline: ' + e.title
-          }),
           a('a219e218', 'OK'),
           a('d571e4f9', function (e) {
             return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
@@ -725,6 +723,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
           a('hd3927c6', 'Conversation failed to unpin. Try again.'),
           a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
+          a('e5b0063d', function (e) {
+            return 'Timeline: ' + e.title
+          }),
           a('h845f282', 'Direct Message'),
           a('f325afc4', 'Compose a DM'),
           a('a676a876', 'Welcome to your inbox!'),
@@ -803,6 +804,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ed21f886', 'Twitter Blue'),
           a('i1d35d74', 'TweetDeck'),
           a('c9d41314', 'Twitter for Professionals'),
+          a('d9ef2842', 'Unread items'),
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('cdc1bff7', function (e) {
             return 'Profile menu ' + e.loggedInUserName
@@ -1147,13 +1149,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'fa94c9da',
             'Communities are public, so you can read the Tweets — but right now, participation is invite-only.',
           ),
-          a(
-            'if9bcebe',
-            'Communities are public, so you can read the Tweets — but only members can interact with them.',
-          ),
-          a('h8a62e2b', 'Learn more'),
-          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.')
-        a('f1824804', 'Appeal this warning'),
+          a('if9bcebe', 'Communities are public, so you can read the Tweets — but only members can interact with them.')
+        a('h8a62e2b', 'Learn more'),
+          a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
+          a('f1824804', 'Appeal this warning'),
           a('de2d83d6', 'Bookmark to Folder'),
           a('f14df406', 'Copy link to ad'),
           a('b6f822ba', 'Copy link to Tweet'),
@@ -2262,8 +2261,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f4a98e9e', 'Community information'),
           a('ab1069de', 'Delete Community'),
           a(
-            'b55f0be8',
-            'Once you delete the Community it cannot be undone. All Tweets will also be removed and cannot be found.',
+            'c2630ec2',
+            'This can’t be undone. Tweet authors can still see their own Tweets, but all Tweets will be excluded from Search results.',
           ),
           a('i27eb0b7', function (e) {
             return '' + e.communityName
@@ -2286,10 +2285,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
           ),
-          a('h3c0f1a2', 'Edit Community name'),
-          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
-          a('a8955490', 'Edit purpose')
-        a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
+          a('h3c0f1a2', 'Edit Community name')
+        a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
+          a('a8955490', 'Edit purpose'),
+          a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
           a('hcf35d0d', function (e) {
             return 'Save theme as ' + e.themeName
@@ -3580,10 +3579,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i3bb3f78', 'Backup Code'),
           a('ec6a76e0', 'Generate a new code'),
           a('f2c3c31c', 'Copy code'),
-          a('e8016b64', 'Loading backup code'),
-          a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-          a('f20ff69f', 'Learn more')
-        a('j2327f80', 'Temporary Password'),
+          a('e8016b64', 'Loading backup code')
+        a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
+          a('f20ff69f', 'Learn more'),
+          a('j2327f80', 'Temporary Password'),
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
           a('g247dc1c', 'Loading temporary password'),
@@ -3994,7 +3993,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
           a('i8385a2c', 'Android'),
           a('h201c4c2', 'iOS'),
-          a('d383acfc', 'Windows Phone'),
+          a('f155a762', 'Windows'),
           a('d623aecc', 'Share an account with people who have delegated roles.'),
           a('f3029d5c', 'When this setting is on, people can invite you to share their account.'),
           a('cd1305e8', 'Allow others to invite you to their account'),
@@ -4801,12 +4800,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f3f4c67c',
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
           ),
-          a('a399ed20', 'Let’s go'),
-          a('g2b8acd4', 'Log in to Twitter'),
-          a(
-            'jd7ca8ee',
-            'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
-          )
+          a('a399ed20', 'Let’s go')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4823,10 +4817,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'c2ab20ac',
-          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
-        ),
+        a('g2b8acd4', 'Log in to Twitter'),
+          a(
+            'jd7ca8ee',
+            'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+          ),
+          a(
+            'c2ab20ac',
+            'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          ),
           a(
             'id312f0a',
             'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
@@ -5528,7 +5527,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ada329e6', '40-49'),
           a('j2950694', 'Above 50'),
           a('a3c544e8', 'Top countries'),
-          a('h3525cb8', 'Not specified'),
+          a('f05f1838', 'Other / Not specified'),
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
@@ -5870,15 +5869,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hb7d1bb4', 'More on Opensea'),
           a('c6000492', 'Owner'),
           a('eadbd438', 'Properties'),
-          a('a2811f96', 'Profile timelines'),
           a('d67658c1', function (e) {
             return e.fullName + ' (@' + e.screenName + ') on Twitter'
           }),
           a('ccc9153f', function (e) {
             return 'Loading Tweets by @' + e.screenName
           }),
-          a('a52b03a6', 'Tweets & replies'),
-          a('cc3c698a', 'Super Follows Tweets'),
           a('c4af3562', 'Autoblocked by Twitter'),
           a('dbcaaab6', 'This autoblock ends in a few hours.'),
           a('hf162fb7', function (e) {
@@ -5903,12 +5899,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ha62da97', function (e) {
             return '@' + e.screenName + ' is autoblocked'
           }),
-          a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
-          a('ieef7656', 'Take a look'),
-          a('ica87fde', 'You’re blocked'),
           a('g8475f82', 'Account suspended'),
-          a('c9a1cb5e', 'This account doesn’t exist'),
-          a('e7b201de', 'Try searching for another.'),
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
           a('i144ee20', 'View autoblocked Tweets'),
@@ -5918,7 +5909,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g08eceae', function (e) {
             return '@' + e.screenName
           }),
-          a('db763e75', 'Learn more'),
           a('he8516e0', function (e) {
             return '@' + e.screenName
           }),
@@ -5936,9 +5926,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('g9b60a79', 'Learn more'),
-          a('gd7acb84', 'Set up profile'),
-          a('b7636014', 'Message'),
-          a('i662c536', 'Super Follow'),
           a(
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
@@ -5946,6 +5933,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('caeab0f8', 'Start reading'),
           a('f30795d0', 'Opens profile photo'),
           a('a270100c', 'Opens NFT details'),
+          a('gd7acb84', 'Set up profile'),
+          a('b7636014', 'Message'),
+          a('i662c536', 'Super Follow'),
           a('a1ea2f12', 'Happy Birthday!'),
           a('g8191e78', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
@@ -5955,32 +5945,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
-          a('ebf5ec26', 'Coming soon')
-        a('c405ac8e', 'Introducing NFT profile pictures'),
+          a('ebf5ec26', 'Coming soon'),
+          a('c405ac8e', 'Introducing NFT profile pictures'),
           a('gc65c0aa', 'So what does this mean?'),
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('d834ab9c', 'Yes, view profile'),
-          a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
-          a(
-            'hf06085e',
-            'You’re seeing this warning because there has been some unusual activity from this account. Do you still want to view it?',
-          ),
-          a('aa959f36', 'Caution: This account is temporarily restricted'),
-          a('jf604336', 'Caution: This profile may include potentially sensitive content'),
-          a(
-            'c9bfda48',
-            'Caution: This profile may include potentially sensitive content. You’re seeing this warning because they use potentially sensitive images or language. Do you still want to view it?',
-          ),
-          a(
-            'b9a9cbdc',
-            'You’re seeing this warning because they Tweet potentially sensitive images or language. Do you still want to view it?',
-          ),
-          a(
-            'i622ef86',
-            'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
-          ),
+          a('c9a1cb5e', 'This account doesn’t exist'),
+          a('e7b201de', 'Try searching for another.')
+        a('ica87fde', 'You’re blocked'),
+          a('db763e75', 'Learn more'),
+          a('a2811f96', 'Profile timelines'),
+          a('a52b03a6', 'Tweets & replies'),
+          a('cc3c698a', 'Super Follows Tweets'),
+          a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
+          a('ieef7656', 'Take a look'),
           a('abb13fc9', function (e) {
             return 'About @' + e.screenName
           }),
@@ -6062,6 +6041,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d55be465', function (e) {
             return e.fullName + '’s Photos'
           }),
+          a('d834ab9c', 'Yes, view profile'),
+          a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
+          a(
+            'hf06085e',
+            'You’re seeing this warning because there has been some unusual activity from this account. Do you still want to view it?',
+          ),
+          a('aa959f36', 'Caution: This account is temporarily restricted'),
+          a('jf604336', 'Caution: This profile may include potentially sensitive content'),
+          a(
+            'c9bfda48',
+            'Caution: This profile may include potentially sensitive content. You’re seeing this warning because they use potentially sensitive images or language. Do you still want to view it?',
+          ),
+          a(
+            'b9a9cbdc',
+            'You’re seeing this warning because they Tweet potentially sensitive images or language. Do you still want to view it?',
+          ),
+          a(
+            'i622ef86',
+            'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
+          ),
           a('fe9d3afa', 'Loading Followers'),
           a('ab7fc3ef', function (e) {
             return 'People super following ' + e.fullName + ' (@' + e.screenName + ')'
@@ -6403,13 +6402,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('haf582e7', function (e) {
             return e.speaker + ' is speaking + ' + e.count + ' listening'
           }),
-          a('eebc7287', function (e) {
+          a('df006f4f', function (e) {
             return e.count + ' interested'
           }),
-          a('c51b9955', function (e) {
+          a('c889af33', function (e) {
             return e.count + ' joined'
           }),
-          a('c2718f5f', function (e) {
+          a('d6f2056f', function (e) {
             return e.count + ' tuned in'
           }),
           a('jbc5f47a', 'Spaces dock'),
@@ -9189,12 +9188,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ccade2e7',
-                get: function () {
-                  return ['You can’t follow or see @' + this.props.screenName + '’s Tweets. ']
-                },
-              },
-              {
                 key: 'a496f1c9',
                 get: function () {
                   return [
@@ -9285,6 +9278,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
                   ]
+                },
+              },
+              {
+                key: 'ccade2e7',
+                get: function () {
+                  return ['You can’t follow or see @' + this.props.screenName + '’s Tweets. ']
                 },
               },
               {
@@ -12084,6 +12083,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d46781af', f.a1379198057),
           a('ba316f05', f.a258143208),
           a('c0bdd345', f.b810332058),
+          a('e18e399b', f.a837317001),
+          a('aa2aa1a1', f.b498196529),
+          a('fc209bb7', f.b1883516954),
+          a('g727ddcf', f.a815390825),
+          a('h0e4cdf5', f.b867606024),
+          a('bfbc051d', f.b1665844787),
+          a('d0a77c9b', f.b1998581093),
+          a('da44942d', f.a1441832606),
+          a('ba2e82a1', f.a218160295),
+          a('a9f397f3', f.b93641787),
+          a('d7d71245', f.a1493315369),
+          a('g8d1b99b', f.a1830739137),
           a('d857e44d', f.b1259832358),
           a('cb87e3db', f.a886759321),
           a('a9d5ffd1', f.a2117218168),
@@ -12148,18 +12159,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2a99e97', f.a377044846),
           a('f7ce19ab', f.a506513743),
           a('b2a0213f', f.b1585198218),
-          a('e18e399b', f.a837317001),
-          a('aa2aa1a1', f.b498196529),
-          a('fc209bb7', f.b1883516954),
-          a('g727ddcf', f.a815390825),
-          a('h0e4cdf5', f.b867606024),
-          a('bfbc051d', f.b1665844787),
-          a('d0a77c9b', f.b1998581093),
-          a('da44942d', f.a1441832606),
-          a('ba2e82a1', f.a218160295),
-          a('a9f397f3', f.b93641787),
-          a('d7d71245', f.a1493315369),
-          a('g8d1b99b', f.a1830739137),
           a('h3629783', f.a1286203598),
           a('ja781451', f.a71710728),
           a('cfa1a7b9', f.a605057387),
