@@ -5226,6 +5226,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b949cdc6', 'Remove app'),
           a('a0b4541c', 'Something went wrong - but don’t fret, it’s not your fault'),
           a('j2a44408', 'Launch Pad'),
+          a('e5fe61e0', 'Impressions'),
+          a('daba8ae2', 'Times your Tweets was seen on Twitter'),
+          a('e623137c', 'Engagement rate'),
+          a('g384dd98', 'Tweets engagements divided by impressions.'),
+          a('aeee0182', 'Profile visits'),
+          a('f47a3800', 'Number of profile views from your Tweets'),
+          a('d5f1e554', 'Link clicks'),
+          a('b0d1ff08', 'Number of clicks on any URL in your Tweets'),
+          a('g01559c6', 'Metrics shown for the last 7 days'),
           a('f53adc36', 'Drive real world outcomes'),
           a('hc4981d6', 'Profile Spotlights'),
           a('fbce8dbe', 'Find people to follow'),
@@ -5449,7 +5458,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g9079b94', 'You may only view analytics about your own Tweets.'),
           a('a57daeb2', 'Tweet Analytics'),
           a('i976aff4', 'Update daily budget info to match your billing currency.'),
-          a('e5fe61e0', 'Impressions'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353e', 'Engagements'),
           a(
@@ -5458,11 +5466,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('d8abdaa4', 'New followers'),
           a('de0de3a8', 'Follows gained directly from this Tweet'),
-          a('aeee0182', 'Profile visits'),
           a('ccab7c76', 'Number of profile views from this Tweet'),
           a('b1b4d57e', 'Video views'),
           a('i680442e', 'Number of clicks on any video in this Tweet'),
-          a('d5f1e554', 'Link clicks'),
           a('d24b7812', 'Number of clicks on any URL in this Tweet'),
           a('b40d33e4', 'Detail expands'),
           a('ee547382', 'Times people viewed the details about this Tweet'),
@@ -5876,39 +5882,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Loading Tweets by @' + e.screenName
           }),
           a('c4af3562', 'Autoblocked by Twitter'),
-          a('dbcaaab6', 'This autoblock ends in a few hours.'),
-          a('hf162fb7', function (e) {
-            return (
-              'This autoblock ends in ' +
-              e.dayCount +
-              ' day' +
-              n(e.dayCount, '', 's') +
-              ', ' +
-              e.hourCount +
-              ' hour' +
-              n(e.hourCount, '', 's') +
-              '.'
-            )
-          }),
-          a('ad7b2b39', function (e) {
-            return 'This autoblock ends in ' + e.dayCount + ' day' + n(e.dayCount, '', 's') + '.'
-          }),
-          a('f19b4073', function (e) {
-            return 'This autoblock ends in ' + e.hourCount + ' hour' + n(e.hourCount, '', 's') + '.'
-          }),
-          a('ha62da97', function (e) {
-            return '@' + e.screenName + ' is autoblocked'
-          }),
           a('g8475f82', 'Account suspended'),
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
-          a('i144ee20', 'View autoblocked Tweets'),
-          a('g6645d94', function (e) {
-            return '@' + e.screenName
-          }),
-          a('g08eceae', function (e) {
-            return '@' + e.screenName
-          }),
           a('he8516e0', function (e) {
             return '@' + e.screenName
           }),
@@ -5952,10 +5928,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
           a('c9a1cb5e', 'This account doesn’t exist'),
-          a('e7b201de', 'Try searching for another.')
-        a('ica87fde', 'You’re blocked'),
-          a('db763e75', 'Learn more'),
-          a('a2811f96', 'Profile timelines'),
+          a('e7b201de', 'Try searching for another.'),
+          a('ica87fde', 'You’re blocked'),
+          a('db763e75', 'Learn more')
+        a('a2811f96', 'Profile timelines'),
           a('a52b03a6', 'Tweets & replies'),
           a('cc3c698a', 'Super Follows Tweets'),
           a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
@@ -6061,6 +6037,36 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'i622ef86',
             'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
           ),
+          a('i144ee20', 'View autoblocked Tweets'),
+          a('dbcaaab6', 'This autoblock ends in a few hours.'),
+          a('hf162fb7', function (e) {
+            return (
+              'This autoblock ends in ' +
+              e.dayCount +
+              ' day' +
+              n(e.dayCount, '', 's') +
+              ', ' +
+              e.hourCount +
+              ' hour' +
+              n(e.hourCount, '', 's') +
+              '.'
+            )
+          }),
+          a('ad7b2b39', function (e) {
+            return 'This autoblock ends in ' + e.dayCount + ' day' + n(e.dayCount, '', 's') + '.'
+          }),
+          a('f19b4073', function (e) {
+            return 'This autoblock ends in ' + e.hourCount + ' hour' + n(e.hourCount, '', 's') + '.'
+          }),
+          a('ha62da97', function (e) {
+            return '@' + e.screenName + ' is autoblocked'
+          }),
+          a('g6645d94', function (e) {
+            return '@' + e.screenName
+          }),
+          a('g08eceae', function (e) {
+            return '@' + e.screenName
+          }),
           a('fe9d3afa', 'Loading Followers'),
           a('ab7fc3ef', function (e) {
             return 'People super following ' + e.fullName + ' (@' + e.screenName + ')'
@@ -9170,24 +9176,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'dd7d4939',
-                get: function () {
-                  return [
-                    'You turned on Safety Mode, so we autoblocked ',
-                    ' for a week. ' + this.props.smartBlockEndTimeSentence,
-                  ]
-                },
-              },
-              {
-                key: 'ef0a76ab',
-                get: function () {
-                  return [
-                    'You can view their profile to learn more about them, or go to their autoblocked Tweets to see why we autoblocked them. Neither one of these actions will remove the autoblock from ',
-                    '.',
-                  ]
-                },
-              },
-              {
                 key: 'a496f1c9',
                 get: function () {
                   return [
@@ -9316,6 +9304,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fdc023d7',
                 get: function () {
                   return [this.props.formattedCount + ' Tweet' + n(this.props.count, '', 's')]
+                },
+              },
+              {
+                key: 'dd7d4939',
+                get: function () {
+                  return [
+                    'You turned on Safety Mode, so we autoblocked ',
+                    ' for a week. ' + this.props.smartBlockEndTimeSentence,
+                  ]
+                },
+              },
+              {
+                key: 'ef0a76ab',
+                get: function () {
+                  return [
+                    'You can view their profile to learn more about them, or go to their autoblocked Tweets to see why we autoblocked them. Neither one of these actions will remove the autoblock from ',
+                    '.',
+                  ]
                 },
               },
               {
