@@ -797,11 +797,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec1ed0cc', 'Professional Tools'),
           a('fd442790', 'Settings and privacy'),
           a('f1e3a258', 'Settings and Support'),
-          a('ab0decc0', 'Subscribe'),
           a('d13d697c', 'New'),
           a('ab38b896', 'Twitter Ads'),
           a('d0748dae', 'Twitter Circle'),
           a('ed21f886', 'Twitter Blue'),
+          a('bcd81cac', 'Preferences'),
           a('i1d35d74', 'TweetDeck'),
           a('c9d41314', 'Twitter for Professionals'),
           a('d9ef2842', 'Unread items'),
@@ -1319,6 +1319,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' Twitter accessible to people with disabilities, and everyone who wants more context.'
             )
           }),
+          a('cc6d0a48', 'You can turn off this reminder in Accessibility Settings.'),
           a('j499fbcb', function (e) {
             return 'Add description' + n(e.numberOfImages, '', 's')
           }),
@@ -2284,9 +2285,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
-          ),
-          a('h3c0f1a2', 'Edit Community name')
-        a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
+          )
+        a('h3c0f1a2', 'Edit Community name'),
+          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
           a('a8955490', 'Edit purpose'),
           a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
@@ -2547,7 +2548,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('eb029cac', 'Add location information to your Tweets'),
           a('h9f2da68', 'Sensitive media'),
           a('gaac710a', 'Report Center'),
-          a('bcd81cac', 'Preferences'),
           a('i647fb04', 'Filters'),
           a('e75f25a8', 'Email notifications'),
           a('cf9b166a', 'Accessibility, display, and languages'),
@@ -4595,20 +4595,30 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             )
           }),
           a(
-            'cc94c002',
-            'Manage your preferences for seeing sensitive media in Tweets. Keep in mind we use technology to help us identify such media, so while we’re always improving, we may not get it right all the time.',
+            'b70a2cde',
+            'We use technology to help us identify sensitive media, so while we’re always improving, we may not get it right every time.',
           ),
-          a('ha7323ea', 'People under 18 years old are unable to see adult content.'),
+          a('cc682803', 'sensitive media policy'),
           a('aa4342be', 'Graphic violence'),
-          a('c1484810', 'Hide media marked as graphic violence until you choose to see it.'),
-          a('gf143d22', 'Hide media marked as adult content until you choose to see it.'),
-          a('fe60d5da', 'Hide media marked as sensitive until you choose to see it.'),
+          a(
+            'a236198a',
+            'Hide media marked as graphic violence until you choose to see it. On Twitter for iOS, this media won’t be shown at all.',
+          ),
+          a(
+            'c93836ee',
+            'Hide media marked as adult content until you choose to see it. On Twitter for iOS, this media won’t be shown at all.',
+          ),
+          a(
+            'c6d0fa86',
+            'Hide media marked as sensitive until you choose to see it. On Twitter for iOS, this media won’t be shown at all.',
+          ),
           a('db5f208e', 'Warn before showing'),
           a('ga197e26', 'Show all'),
           a('abb4d36e', 'Never show'),
-          a('ea650d62', 'graphic violence policy.'),
-          a('b95bcbae', 'adult content policy.'),
-          a('c694628a', 'sensitive media policy.'),
+          a('de6ebb52', 'sensitive media policy.'),
+          a('d19a383e', 'sensitive media policy.'),
+          a('hd6f411f', 'media settings'),
+          a('c7176072', 'sensitive media policy.'),
           a('dbc85148', 'Select a message'),
           a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
           a('ff599112', 'Create a group'),
@@ -4799,8 +4809,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'f3f4c67c',
             'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
-          ),
-          a('a399ed20', 'Let’s go')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4817,7 +4826,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('g2b8acd4', 'Log in to Twitter'),
+        a('a399ed20', 'Let’s go'),
+          a('g2b8acd4', 'Log in to Twitter'),
           a(
             'jd7ca8ee',
             'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
@@ -5010,6 +5020,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('fcd1fdda', 'Read a sample issue'),
           a('a976a91e', 'Start reading on Revue'),
+          a('ab0decc0', 'Subscribe'),
           a('h3281cea', 'You’re in the loop!'),
           a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
           a('b78d4030', 'Thank you for subscribing'),
@@ -5225,6 +5236,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g4098f78', 'Where can I find this?'),
           a('b949cdc6', 'Remove app'),
           a('a0b4541c', 'Something went wrong - but don’t fret, it’s not your fault'),
+          a('c46cdabc', 'Advanced Tools'),
+          a('f6a2233a', 'Manage permissions across accounts'),
+          a('b0b439c8', 'Twitter Business Settings'),
+          a('b0ef3100', 'Create rich ad campaigns'),
           a('j2a44408', 'Launch Pad'),
           a('e5fe61e0', 'Impressions'),
           a('daba8ae2', 'Times your Tweets was seen on Twitter'),
@@ -5245,7 +5260,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d47aad80', 'Monetisation'),
           a('f49a9076', 'Learn how to use Twitter'),
           a('a35d9c9a', 'Resources'),
-          a('c46cdabc', 'Advanced Tools'),
           a('af9c8a3e', 'Open app'),
           a('c299a6c0', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5883,7 +5897,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c4af3562', 'Autoblocked by Twitter'),
           a('g8475f82', 'Account suspended'),
-          a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
           a('he8516e0', function (e) {
             return '@' + e.screenName
@@ -5901,11 +5914,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
-          a('g9b60a79', 'Learn more'),
-          a(
-            'b74bd6c6',
-            'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
-          ),
           a('caeab0f8', 'Start reading'),
           a('f30795d0', 'Opens profile photo'),
           a('a270100c', 'Opens NFT details'),
@@ -5921,17 +5929,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
+          a(
+            'b74bd6c6',
+            'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
+          ),
           a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('gc65c0aa', 'So what does this mean?'),
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('c9a1cb5e', 'This account doesn’t exist'),
-          a('e7b201de', 'Try searching for another.'),
+          a('c9a1cb5e', 'This account doesn’t exist')
+        a('e7b201de', 'Try searching for another.'),
           a('ica87fde', 'You’re blocked'),
-          a('db763e75', 'Learn more')
-        a('a2811f96', 'Profile timelines'),
+          a('db763e75', 'Learn more'),
+          a('a2811f96', 'Profile timelines'),
           a('a52b03a6', 'Tweets & replies'),
           a('cc3c698a', 'Super Follows Tweets'),
           a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
@@ -6037,6 +6049,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'i622ef86',
             'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
           ),
+          a('d09e12c4', 'These Tweets are protected'),
+          a('g9b60a79', 'Learn more'),
           a('i144ee20', 'View autoblocked Tweets'),
           a('dbcaaab6', 'This autoblock ends in a few hours.'),
           a('hf162fb7', function (e) {
@@ -8921,26 +8935,33 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'a470b643',
+                key: 'h0c66785',
+                get: function () {
+                  return ['Manage your preferences for seeing sensitive media on Twitter. Learn more about our ', '.']
+                },
+              },
+              {
+                key: 'ff1d6575',
                 get: function () {
                   return [
-                    'This includes any media that depicts death, violence, medical procedures, or serious physical injury in graphic detail. Learn more about our ',
+                    'This includes any media that shows death, violence, serious physical harm, or medical procedures in graphic detail. Learn more about our ',
                   ]
                 },
               },
               {
-                key: 'db12fdf1',
+                key: 'c878ab0d',
                 get: function () {
                   return [
-                    'This includes consensually produced and distributed media that’s intended to cause sexual arousal. Learn more about our ',
+                    'This includes consensually made and shared media that’s pornographic or meant to cause sexual arousal. Learn more about our ',
                   ]
                 },
               },
               {
-                key: 'a23e791f',
+                key: 'cb2858a7',
                 get: function () {
                   return [
-                    'This includes other media that’s been marked as sensitive, such as hateful imagery. Find more examples in our ',
+                    'This includes other media that’s been marked as sensitive, such as media from accounts that have marked their ',
+                    ' as sensitive. Learn more about our ',
                   ]
                 },
               },
@@ -9245,16 +9266,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'c97724c3',
-                get: function () {
-                  return [
-                    'Only approved followers can see @' +
-                      this.props.screenName +
-                      '’s Tweets. To request access, click Follow. ',
-                  ]
-                },
-              },
-              {
                 key: 'ee512b37',
                 get: function () {
                   return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
@@ -9304,6 +9315,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fdc023d7',
                 get: function () {
                   return [this.props.formattedCount + ' Tweet' + n(this.props.count, '', 's')]
+                },
+              },
+              {
+                key: 'c97724c3',
+                get: function () {
+                  return [
+                    'Only approved followers can see @' +
+                      this.props.screenName +
+                      '’s Tweets. To request access, click Follow. ',
+                  ]
                 },
               },
               {
