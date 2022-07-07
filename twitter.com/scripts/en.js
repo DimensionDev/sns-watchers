@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [76],
+    [79],
     {
       oTxr: function (e, t, o) {
         'use strict'
@@ -5098,6 +5098,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e854ad27', function (e) {
             return 'Topic - ' + e.title
           }),
+          a('j231d352', 'Follow all'),
           a('b5474bd2', 'Hmmm... something went wrong.'),
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
           a(
@@ -5472,6 +5473,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g9079b94', 'You may only view analytics about your own Tweets.'),
           a('a57daeb2', 'Tweet Analytics'),
           a('i976aff4', 'Update daily budget info to match your billing currency.'),
+          a('b069d89c', 'Audience'),
+          a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
+          a('c61c6624', 'Promoted'),
+          a('d267afa2', 'Under 20'),
+          a('db81cab0', '20-29'),
+          a('f173716e', '30-39'),
+          a('ada329e6', '40-49'),
+          a('j2950694', 'Above 50'),
+          a('a3c544e8', 'Top countries'),
+          a('f05f1838', 'Other / Not specified'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353e', 'Engagements'),
           a(
@@ -5481,8 +5492,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d8abdaa4', 'New followers'),
           a('de0de3a8', 'Follows gained directly from this Tweet'),
           a('ccab7c76', 'Number of profile views from this Tweet'),
-          a('b1b4d57e', 'Video views'),
-          a('i680442e', 'Number of clicks on any video in this Tweet'),
           a('d24b7812', 'Number of clicks on any URL in this Tweet'),
           a('b40d33e4', 'Detail expands'),
           a('ee547382', 'Times people viewed the details about this Tweet'),
@@ -5493,6 +5502,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.percentage + ' from non followers'
           }),
           a('de4def4e', '% from all promotions to date'),
+          a('hb52cc4a', 'Please try again later.'),
+          a('fc6cbba2', 'Nothing to see here - yet'),
+          a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
+          a('b4c01934', 'Analytics aren’t available for Twitter Circle Tweets.'),
           a('ib1f8491', function (e) {
             return e.likeCount + ' like' + n(e.likeCount, '', 's')
           }),
@@ -5503,6 +5516,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
           a('db6efeb8', 'Your promotion is running'),
+          a('ff429ac4', 'Your Tweet is being boosted'),
           a('j6daea86', 'Your promotion is paused'),
           a('hf9ed10f', function (e) {
             return e.endTimeString + ' · ' + e.endDateString
@@ -5511,6 +5525,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.spentBudget + ' of ' + e.totalBudget + ' spent'
           }),
           a('a63a89fe', 'Your promotion is complete'),
+          a('b6da2126', 'Your boosted Tweet package has ended.'),
           a('j401e4bd', function (e) {
             return (
               'This Tweet has earned ' +
@@ -5523,7 +5538,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               n(e.engagements, '', 's')
             )
           }),
+          a('fbb5c37e', 'Boost again'),
           a('dcfb0332', 'Promote your Tweet'),
+          a('c5c0b3bc', 'Boost your Tweet'),
           a('g6bf2fdb', function (e) {
             return (
               'Your Tweet has earned ' +
@@ -5535,23 +5552,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
           a('e9891f7c', 'Promote this Tweet'),
+          a('df2ed8c2', 'Boost this Tweet'),
           a('jede3014', 'Your promotion is under review'),
           a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
-          a('b069d89c', 'Audience'),
-          a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
-          a('c61c6624', 'Promoted'),
-          a('d267afa2', 'Under 20'),
-          a('db81cab0', '20-29'),
-          a('f173716e', '30-39'),
-          a('ada329e6', '40-49'),
-          a('j2950694', 'Above 50'),
-          a('a3c544e8', 'Top countries'),
-          a('f05f1838', 'Other / Not specified'),
-          a('hb52cc4a', 'Please try again later.'),
-          a('fc6cbba2', 'Nothing to see here - yet'),
-          a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
-          a('b4c01934', 'Analytics aren’t available for Twitter Circle Tweets.'),
           a('ge538876', 'Metrics for the video you shared'),
           a('dcc05a7e', 'Views'),
           a('ca7e10d8', 'Unique views'),
@@ -5895,24 +5899,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ccc9153f', function (e) {
             return 'Loading Tweets by @' + e.screenName
           }),
-          a('c4af3562', 'Autoblocked by Twitter'),
           a('g8475f82', 'Account suspended'),
           a('gbf342a4', 'Account Withheld'),
-          a('he8516e0', function (e) {
-            return '@' + e.screenName
-          }),
-          a(
-            'ff050533',
-            'We know we don’t get autoblocks right all the time, so we’re working to improve our detection.',
-          ),
-          a('e0da6d02', 'What’s Safety Mode?'),
-          a('ia457a1a', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
-          a('f5531a44', 'Remember the human'),
-          a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
-          a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
-          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.'),
-          a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
-          a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('caeab0f8', 'Start reading'),
           a('f30795d0', 'Opens profile photo'),
@@ -5939,8 +5927,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('c9a1cb5e', 'This account doesn’t exist')
-        a('e7b201de', 'Try searching for another.'),
+          a('c9a1cb5e', 'This account doesn’t exist'),
+          a('e7b201de', 'Try searching for another.'),
+          a('c4af3562', 'Autoblocked by Twitter'),
+          a('he8516e0', function (e) {
+            return '@' + e.screenName
+          }),
+          a(
+            'ff050533',
+            'We know we don’t get autoblocks right all the time, so we’re working to improve our detection.',
+          ),
+          a('e0da6d02', 'What’s Safety Mode?'),
+          a('ia457a1a', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
+          a('f5531a44', 'Remember the human')
+        a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
+          a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
+          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.'),
+          a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
+          a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('ica87fde', 'You’re blocked'),
           a('db763e75', 'Learn more'),
           a('a2811f96', 'Profile timelines'),
@@ -9197,6 +9201,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'f6fa2033',
+                get: function () {
+                  return ['Twitter suspends accounts which violate the ']
+                },
+              },
+              {
+                key: 'ee512b37',
+                get: function () {
+                  return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
+                },
+              },
+              {
+                key: 'fa13e739',
+                get: function () {
+                  return [
+                    'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
+                  ]
+                },
+              },
+              {
                 key: 'a496f1c9',
                 get: function () {
                   return [
@@ -9257,26 +9281,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'f0dc3227',
                 get: function () {
                   return ['']
-                },
-              },
-              {
-                key: 'f6fa2033',
-                get: function () {
-                  return ['Twitter suspends accounts which violate the ']
-                },
-              },
-              {
-                key: 'ee512b37',
-                get: function () {
-                  return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
-                },
-              },
-              {
-                key: 'fa13e739',
-                get: function () {
-                  return [
-                    'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
-                  ]
                 },
               },
               {
