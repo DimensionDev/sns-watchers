@@ -1980,6 +1980,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('c87f3cf8', 'Note'),
           a('a5b19492', 'This note does not exist'),
+          a('cf30af22', 'Did you know?'),
+          a(
+            'c21d1b2a',
+            'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
+          ),
           a(
             'df4bead0',
             'Birdwatch is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
@@ -2280,13 +2285,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
           a('c5d1634e', 'Okay, I understand'),
-          a('b983f9e0', 'Heads up'),
-          a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
+          a('b983f9e0', 'Heads up')
+        a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a(
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
-          )
-        a('h3c0f1a2', 'Edit Community name'),
+          ),
+          a('h3c0f1a2', 'Edit Community name'),
           a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
           a('a8955490', 'Edit purpose'),
           a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
@@ -3577,10 +3582,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Date added: ' + e.securityKeyAddedDate
           }),
           a('i3bb3f78', 'Backup Code'),
-          a('ec6a76e0', 'Generate a new code'),
-          a('f2c3c31c', 'Copy code'),
-          a('e8016b64', 'Loading backup code')
-        a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
+          a('ec6a76e0', 'Generate a new code')
+        a('f2c3c31c', 'Copy code'),
+          a('e8016b64', 'Loading backup code'),
+          a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
           a('f20ff69f', 'Learn more'),
           a('j2327f80', 'Temporary Password'),
           a('fbfeaf8e', 'Generate a new password'),
@@ -4772,6 +4777,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfadb00e', 'Listening'),
           a('db4620aa', 'LIVE SPACE'),
           a('c958e692', 'RECORDED SPACE'),
+          a('i2c2bfb7', function (e) {
+            return e.count + ' listening'
+          }),
           a('a7a119ec', 'Undock'),
           a('e8dff578', 'Edit this'),
           a('fcc64f02', 'Report this'),
@@ -4803,12 +4811,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c3fbf1da',
             'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
-          ),
-          a('bf17deda', 'Let’s go!'),
-          a('d4d57850', 'Welcome to your timeline!'),
-          a(
-            'f3f4c67c',
-            'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
           )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
@@ -4826,7 +4828,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('a399ed20', 'Let’s go'),
+        a('bf17deda', 'Let’s go!'),
+          a('d4d57850', 'Welcome to your timeline!'),
+          a(
+            'f3f4c67c',
+            'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
+          ),
+          a('a399ed20', 'Let’s go'),
           a('g2b8acd4', 'Log in to Twitter'),
           a(
             'jd7ca8ee',
@@ -5072,6 +5080,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb347bbc', 'help center'),
           a('eeee7736', 'To use this App you have to be logged in to Twitter.'),
           a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
+          a('dcf8f19f', function (e) {
+            return e.percentageCompleteInt + '%'
+          }),
+          a('f6cff37c', '%complete'),
           a('cea71014', 'We’re loading your contacts...'),
           a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
           a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
@@ -5098,6 +5110,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e854ad27', function (e) {
             return 'Topic - ' + e.title
           }),
+          a('db59f196', 'Sweet, we’ll show you more like this. Keep going!'),
+          a('h87ca6ac', 'Timeline strength'),
           a('j231d352', 'Follow all'),
           a('b5474bd2', 'Hmmm... something went wrong.'),
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
@@ -5900,7 +5914,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Loading Tweets by @' + e.screenName
           }),
           a('g8475f82', 'Account suspended'),
-          a('gbf342a4', 'Account Withheld'),
           a('f3b1bdc3', 'Twitter Rules'),
           a('caeab0f8', 'Start reading'),
           a('f30795d0', 'Opens profile photo'),
@@ -5921,14 +5934,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
           ),
+          a('gbf342a4', 'Account Withheld'),
           a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('gc65c0aa', 'So what does this mean?'),
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('c9a1cb5e', 'This account doesn’t exist'),
-          a('e7b201de', 'Try searching for another.'),
+          a('c9a1cb5e', 'This account doesn’t exist')
+        a('e7b201de', 'Try searching for another.'),
           a('c4af3562', 'Autoblocked by Twitter'),
           a('he8516e0', function (e) {
             return '@' + e.screenName
@@ -5939,8 +5953,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e0da6d02', 'What’s Safety Mode?'),
           a('ia457a1a', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
-          a('f5531a44', 'Remember the human')
-        a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
+          a('f5531a44', 'Remember the human'),
+          a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
           a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
           a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.'),
           a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
@@ -6417,13 +6431,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Space ' + e.title + ' hosted by ' + e.host + ' has ended'
           }),
           a('i1a29920', 'Space has ended'),
-          a('j2d460c1', function (e) {
+          a('db467ffe', 'Join a Space'),
+          a('i8dc3993', function (e) {
+            return 'Hosted by ' + e.host
+          }),
+          a('eb0b05b9', function (e) {
+            return 'with ' + e.count + ' others'
+          }),
+          a('bb5f91a3', function (e) {
             return e.count + ' in this Space'
           }),
-          a('g3902aad', function (e) {
+          a('c83eea99', function (e) {
             return e.participant + ' + ' + e.count + ' listening'
           }),
-          a('haf582e7', function (e) {
+          a('cdff6cd3', function (e) {
             return e.speaker + ' is speaking + ' + e.count + ' listening'
           }),
           a('df006f4f', function (e) {
@@ -6441,9 +6462,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f70a6835', function (e) {
             return '+' + e.count + ' other listener' + n(e.count, '', 's')
-          }),
-          a('bfb44f89', function (e) {
-            return e.count + ' here'
           }),
           a('dc718e53', function (e) {
             return '+' + e.count + ' other' + n(e.count, '', 's')
