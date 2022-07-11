@@ -3894,12 +3894,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ae415fd2', 'This setting is off.'),
           a('a90be7b4', 'Email addresses'),
-          a('b1d602d7', 'Learn more'),
-          a('d1597ccb', 'Learn more'),
-          a('aa1515eb', 'Learn more'),
           a('e440acdb', 'Off-Twitter activity'),
           a('a8045fcb', 'Off-Twitter activity'),
           a('h66398d1', 'Off-Twitter activity'),
+          a('b1d602d7', 'Learn more'),
+          a('d1597ccb', 'Learn more'),
+          a('aa1515eb', 'Learn more'),
           a('b056d9dc', 'This is your account’s primary language setting.'),
           a('h68bc23c', 'These additional languages are used to personalize your experience.'),
           a(
@@ -8787,26 +8787,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'f870a95b',
-                get: function () {
-                  return ['These are devices Twitter uses to improve and measure your experience on this browser. ']
-                },
-              },
-              {
-                key: 'e21b623d',
-                get: function () {
-                  return ['These are browsers and devices associated with you. ']
-                },
-              },
-              {
-                key: 'b6baf555',
-                get: function () {
-                  return [
-                    'These are browsers, devices, and information Twitter uses to personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers like those linked to your Twitter account. ',
-                  ]
-                },
-              },
-              {
                 key: 'e1d684b1',
                 get: function () {
                   return [
@@ -8830,6 +8810,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling “Personalize based on your inferred identity” in your ',
                     ' settings.',
+                  ]
+                },
+              },
+              {
+                key: 'f870a95b',
+                get: function () {
+                  return ['These are devices Twitter uses to improve and measure your experience on this browser. ']
+                },
+              },
+              {
+                key: 'e21b623d',
+                get: function () {
+                  return ['These are browsers and devices associated with you. ']
+                },
+              },
+              {
+                key: 'b6baf555',
+                get: function () {
+                  return [
+                    'These are browsers, devices, and information Twitter uses to personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers like those linked to your Twitter account. ',
                   ]
                 },
               },
