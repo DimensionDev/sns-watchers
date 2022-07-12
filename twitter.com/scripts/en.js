@@ -1,12 +1,29 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [79],
+    [131],
     {
+      '9lJ4': function (e, t, o) {
+        'use strict'
+        o.r(t)
+        o('oTxr')
+      },
+      fRV1: function (e, t) {
+        var o
+        o = (function () {
+          return this
+        })()
+        try {
+          o = o || new Function('return this')()
+        } catch (a) {
+          'object' == typeof window && (o = window)
+        }
+        e.exports = o
+      },
       oTxr: function (e, t, o) {
         'use strict'
         var a = o('qqsb')._register('en', {
           get emoji() {
-            return o.e(18).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(321).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -2085,6 +2102,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d7346632', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
           a('c8d33380', 'New items'),
+          a('df362964', 'Find Communities'),
+          a('fd499133', function (e) {
+            return e.newTweets + ' new Tweet' + n(e.newTweets, '', 's')
+          }),
+          a('ha4bb8a9', function (e) {
+            return e.reportedTweets + ' report' + n(e.reportedTweets, '', 's')
+          }),
+          a('caf003b3', function (e) {
+            return e.memberRequests + ' request' + n(e.memberRequests, '', 's')
+          }),
           a('f0fc827e', 'Welcome to Twitter Communities'),
           a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
           a('fc5c6914', 'Meet others with your interests'),
@@ -2281,12 +2308,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e405ec22', 'Looks like we’re having trouble saving your banner image. Please try again later.'),
           a('b7fb6bda', 'Crop Image'),
           a('e71cdf4e', 'Crop Thumbnail'),
-          a('a753a870', 'Apply'),
-          a('b87ca51a', 'Remove photo'),
+          a('a753a870', 'Apply')
+        a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
           a('c5d1634e', 'Okay, I understand'),
-          a('b983f9e0', 'Heads up')
-        a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
+          a('b983f9e0', 'Heads up'),
+          a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a(
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
@@ -3576,14 +3603,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a8ef2b64', 'Unnamed Security Key'),
           a('g6d0f0b6', 'Manage security key'),
           a('b894f68a', 'Loading security key data'),
-          a('g2601bb6', 'Rename key'),
-          a('b464b726', 'Delete key'),
+          a('g2601bb6', 'Rename key')
+        a('b464b726', 'Delete key'),
           a('a4101e1b', function (e) {
             return 'Date added: ' + e.securityKeyAddedDate
           }),
           a('i3bb3f78', 'Backup Code'),
-          a('ec6a76e0', 'Generate a new code')
-        a('f2c3c31c', 'Copy code'),
+          a('ec6a76e0', 'Generate a new code'),
+          a('f2c3c31c', 'Copy code'),
           a('e8016b64', 'Loading backup code'),
           a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
           a('f20ff69f', 'Learn more'),
@@ -4804,14 +4831,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4acfd12', 'You’ll see top Tweets first.'),
           a('f0c7628a', 'Pin your Latest timeline'),
           a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
-          a('eeab441a', 'Unpin your Latest timeline'),
-          a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
-          a('f089620c', 'Your Home Timeline'),
-          a('d2c66f10', 'Welcome to Twitter!'),
-          a(
-            'c3fbf1da',
-            'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
-          )
+          a('eeab441a', 'Unpin your Latest timeline')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4828,7 +4848,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('bf17deda', 'Let’s go!'),
+        a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
+          a('f089620c', 'Your Home Timeline'),
+          a('d2c66f10', 'Welcome to Twitter!'),
+          a(
+            'c3fbf1da',
+            'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
+          ),
+          a('bf17deda', 'Let’s go!'),
           a('d4d57850', 'Welcome to your timeline!'),
           a(
             'f3f4c67c',
@@ -5937,12 +5964,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gbf342a4', 'Account Withheld'),
           a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
-          a('gc65c0aa', 'So what does this mean?'),
-          a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
+          a('gc65c0aa', 'So what does this mean?')
+        a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('c9a1cb5e', 'This account doesn’t exist')
-        a('e7b201de', 'Try searching for another.'),
+          a('c9a1cb5e', 'This account doesn’t exist'),
+          a('e7b201de', 'Try searching for another.'),
           a('c4af3562', 'Autoblocked by Twitter'),
           a('he8516e0', function (e) {
             return '@' + e.screenName
@@ -6836,9 +6863,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c9d7235e', 'Quote Tweet'),
           a('dc63da16', 'Share'),
           a('jc9298a8', 'Share Tweet'),
-          a('f543c4c8', 'Latest Edit'),
-          a('ccb9c41a', 'Stale Edit'),
-          a('hc052e5c', 'Edited'),
+          a('e1b95ab0', 'Last edited'),
+          a('g219b922', 'This is the latest version of this Tweet.'),
           a('d0d51086', 'There’s a new version of this Tweet'),
           a('c6578930', 'There’s a new version of this Tweet.'),
           a('b7ea93b2', 'Edit Twitter Circle'),
@@ -7917,6 +7943,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c43d1679',
                 get: function () {
                   return ['See more at ']
+                },
+              },
+              {
+                key: 'b3a3ce8d',
+                get: function () {
+                  return ['Active ', ' ago']
                 },
               },
               {
@@ -9597,7 +9629,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             Object.defineProperty(a, 'prototype', { writable: !1 }),
             b
           )
-        })(o('3XMw')._ActualI18NFormatMessage || c.Component)
+        })(o('qqsb')._ActualI18NFormatMessage || c.Component)
         a('_ActualI18NFormatMessage', l),
           a('I18NFormatMessage', function (e) {
             return c.createElement(l, e)
@@ -9612,7 +9644,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           p = (f._validateParameterTypeDate, f._dateToPartsFormat, f._dateToPartsFormatterFn),
           w = (f._dateFormat, f._dateFormatterFn),
           g = f._relativeTimeFormatterFn,
-          v = f._unitFormatterFn
+          T = f._unitFormatterFn
         ;(f.a527220190 = h(
           [
             '',
@@ -12008,7 +12040,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'relative-type-0': 'today',
             'relative-type-1': 'tomorrow',
           })),
-          (f.a2110709659 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a2110709659 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'seconds',
@@ -12017,7 +12049,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per second',
             },
           })),
-          (f.a223746363 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a223746363 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'minutes',
@@ -12026,7 +12058,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per minute',
             },
           })),
-          (f.b2116965749 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b2116965749 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'hours',
@@ -12035,43 +12067,43 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per hour',
             },
           })),
-          (f.b1436183524 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1436183524 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
           })),
-          (f.b1554153647 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1554153647 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'secs', one: '{0} sec', other: '{0} sec', perUnitPattern: '{0}/s' },
           })),
-          (f.a1963255228 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a1963255228 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'min', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/min' },
           })),
-          (f.a79526321 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a79526321 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'mins', one: '{0} min', other: '{0} min', perUnitPattern: '{0}/min' },
           })),
-          (f.b1193188596 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1193188596 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hour', one: '{0}h', other: '{0}h', perUnitPattern: '{0}/h' },
           })),
-          (f.a531894881 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a531894881 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hours', one: '{0} hr', other: '{0} hr', perUnitPattern: '{0}/h' },
           })),
-          (f.b1132522088 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1132522088 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'day', one: '{0}d', other: '{0}d', perUnitPattern: '{0}/d' },
           })),
-          (f.b1844277225 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1844277225 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: { displayName: 'days', one: '{0} day', other: '{0} days', perUnitPattern: '{0} per day' },
           })),
-          (f.b2134163460 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b2134163460 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'month', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/m' },
           })),
-          (f.a1064174459 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a1064174459 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'months',
@@ -12080,11 +12112,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per month',
             },
           })),
-          (f.a211373797 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a211373797 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'yr', one: '{0}y', other: '{0}y', perUnitPattern: '{0}/y' },
           })),
-          (f.b636176220 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b636176220 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'years',
@@ -12093,7 +12125,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               perUnitPattern: '{0} per year',
             },
           })),
-          (f.a1379198057 = v(
+          (f.a1379198057 = T(
             f('en').numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: 'truncate' }),
             f('en').pluralGenerator({}),
             {
@@ -12221,7 +12253,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c93cb977', f.a1321204873),
           a('c32b252b', f.a1653031457)
       },
+      qqsb: function (e, t, o) {
+        e.exports = o('k/n2')
+      },
+      rwV7: function (e, t) {
+        e.exports = !1
+      },
     },
+    [['9lJ4', 1, 2]],
   ]),
   (window.__SCRIPTS_LOADED__.i18n = !0))
 //# sourceMappingURL=WIPED
