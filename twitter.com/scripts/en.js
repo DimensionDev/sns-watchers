@@ -145,7 +145,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hd50e064', 'Not now'),
           a('a565833e', 'Sign up'),
           a('e919c3bc', 'Log in'),
-          a('h7a9e4e2', 'NFT profile picture'),
           a('c8f593e0', 'Twitter is better on the app'),
           a('c5de6fd4', 'Never miss a Tweet. Open this in the Twitter app to get the full experience.'),
           a('b6a43e78', 'Be the first to know'),
@@ -161,6 +160,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g78650fe', 'Follow a Topic to discover great Tweets'),
           a('ea88ce2e', 'Don’t miss what’s happening'),
           a('ge9eaa86', 'People on Twitter are the first to know.'),
+          a('h7a9e4e2', 'NFT profile picture'),
           a('d8817e36', 'Accept all cookies'),
           a('b9288ee6', 'Refuse non-essential cookies'),
           a('i1390ec2', 'Did someone say … cookies?'),
@@ -1081,6 +1081,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c14cdb18', 'Promote'),
           a('e8adeec8', 'Promote again'),
           a('i093db9c', 'See the latest'),
+          a('a8569d48', 'Opens the new version of this Tweet'),
           a('bc2ceaf2', 'Sending Tweet...'),
           a('j4c40da4', 'Send now'),
           a('b23688c8', 'Undo timer'),
@@ -1165,9 +1166,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'fa94c9da',
             'Communities are public, so you can read the Tweets — but right now, participation is invite-only.',
-          ),
-          a('if9bcebe', 'Communities are public, so you can read the Tweets — but only members can interact with them.')
-        a('h8a62e2b', 'Learn more'),
+          )
+        a('if9bcebe', 'Communities are public, so you can read the Tweets — but only members can interact with them.'),
+          a('h8a62e2b', 'Learn more'),
           a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
           a('de2d83d6', 'Bookmark to Folder'),
@@ -2307,9 +2308,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1e8fb22', 'Your banner will be removed and replaced with the default banner.'),
           a('e405ec22', 'Looks like we’re having trouble saving your banner image. Please try again later.'),
           a('b7fb6bda', 'Crop Image'),
-          a('e71cdf4e', 'Crop Thumbnail'),
-          a('a753a870', 'Apply')
-        a('b87ca51a', 'Remove photo'),
+          a('e71cdf4e', 'Crop Thumbnail')
+        a('a753a870', 'Apply'),
+          a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
           a('c5d1634e', 'Okay, I understand'),
           a('b983f9e0', 'Heads up'),
@@ -3602,9 +3603,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i5896ba2', 'Add another key'),
           a('a8ef2b64', 'Unnamed Security Key'),
           a('g6d0f0b6', 'Manage security key'),
-          a('b894f68a', 'Loading security key data'),
-          a('g2601bb6', 'Rename key')
-        a('b464b726', 'Delete key'),
+          a('b894f68a', 'Loading security key data')
+        a('g2601bb6', 'Rename key'),
+          a('b464b726', 'Delete key'),
           a('a4101e1b', function (e) {
             return 'Date added: ' + e.securityKeyAddedDate
           }),
@@ -4830,8 +4831,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f89f6786', 'You’ll see Tweets show up as they happen.'),
           a('e4acfd12', 'You’ll see top Tweets first.'),
           a('f0c7628a', 'Pin your Latest timeline'),
-          a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
-          a('eeab441a', 'Unpin your Latest timeline')
+          a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4848,7 +4848,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
+        a('eeab441a', 'Unpin your Latest timeline'),
+          a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
           a('f089620c', 'Your Home Timeline'),
           a('d2c66f10', 'Welcome to Twitter!'),
           a(
@@ -5963,9 +5964,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('gbf342a4', 'Account Withheld'),
           a('ebf5ec26', 'Coming soon'),
-          a('c405ac8e', 'Introducing NFT profile pictures'),
-          a('gc65c0aa', 'So what does this mean?')
-        a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
+          a('c405ac8e', 'Introducing NFT profile pictures')
+        a('gc65c0aa', 'So what does this mean?'),
+          a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
           a('c9a1cb5e', 'This account doesn’t exist'),
@@ -6960,6 +6961,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d9fd5570', 'Hidden replies'),
           a('c566d3a6', 'Hide'),
+          a('a897c4d6', 'Opens edit history'),
           a('e62214cc', function (e) {
             return '' + e.date
           }),
