@@ -29425,8 +29425,8 @@ window.__SCRIPTS_LOADED__.polyfills &&
           s,
           l,
           c = n('rwV7'),
-          f = n('065x').ActualI18NFormatMessageKey,
-          d = n('5g7O'),
+          f = n('5g7O'),
+          d = n('065x').ActualI18NFormatMessageKey,
           p = c && !1,
           h = {},
           v = function (e, t) {
@@ -29494,10 +29494,10 @@ window.__SCRIPTS_LOADED__.polyfills &&
                 return function (t, r) {
                   ;(h[e][t] = r),
                     t in n ||
-                      (p && t !== f
+                      (p && t !== d
                         ? (n[t] =
                             'string' == typeof r
-                              ? d.getPlaceholder(t)
+                              ? f.getPlaceholder(t)
                               : function () {
                                   var e
                                   return (e = a)[t].apply(e, arguments)
@@ -29531,7 +29531,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
                 return (
                   g[e] ||
                   (g[e] = function (n) {
-                    return -1 !== n.indexOf(d.sentinel) ? ((t.language = e), n.replace(d.placeholderPattern, v)) : n
+                    return -1 !== n.indexOf(f.sentinel) ? ((t.language = e), n.replace(f.placeholderPattern, v)) : n
                   })
                 )
               },
