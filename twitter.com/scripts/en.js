@@ -5773,7 +5773,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aea1d455', function (e) {
             return e.count + ' minute' + n(e.count, '', 's')
           }),
-          a('fcaf3ce6', 'Share via Tweet...'),
+          a('ce1d02b4', 'Share via Tweet…'),
           a('a4079efa', 'Learn more about Notes'),
           a(
             'h880e4b8',
@@ -6271,6 +6271,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1574a4b', function (e) {
             return e.listItem1 + ', and ' + e.listItem2
           }),
+          a('ec72e2f8', 'Follow'),
           a('j190bf1a', 'LIVE'),
           a('e3fcbdba', 'Dismiss'),
           a('jc0b3a8c', 'Image description'),
@@ -6654,7 +6655,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gd769996', 'Something went wrong. Try reloading.'),
           a('i5450bec', 'Media'),
           a('f7432494', 'Add photo'),
-          a('ec72e2f8', 'Follow'),
           a('c3befdbe', 'Following'),
           a('d3029dbc', 'Unfollow'),
           a('i5da7710', 'Super Follow'),
