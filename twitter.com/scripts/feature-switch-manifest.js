@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'e1c04563cd0fb7895dcd0df6df030c22a70392ce',
+  feature_set_token: 'ce1a060b112101994514c0d84d676ff62ea3070c',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -631,6 +631,7 @@ var manifest = {
     responsive_web_original_tweet_nudge_show_nudge: { value: !1 },
     responsive_web_original_tweet_nudge_supported_languages: { value: ['en'] },
     responsive_web_passwordless_sso_enabled: { value: !1 },
+    responsive_web_pinned_replies_enabled: { value: !1 },
     responsive_web_placeholder_siwg_button_enabled: { value: !1 },
     responsive_web_prerolls_fullscreen_disabled_on_ios: { value: !1 },
     responsive_web_professional_journeys_holdback_enabled: { value: !1 },
@@ -644,7 +645,6 @@ var manifest = {
     responsive_web_qp_graphql_accounts_enabled: { value: !0 },
     responsive_web_qp_intro_experiment_enabled: { value: !1 },
     responsive_web_qp_payment_select_enabled: { value: !0 },
-    responsive_web_qp_welcome_coupon_enabled: { value: !1 },
     responsive_web_reactions_api_test: { value: !1 },
     responsive_web_reactions_enabled: { value: !1 },
     responsive_web_reactions_fruit_basket_threshold: { value: 20 },
@@ -715,6 +715,7 @@ var manifest = {
     rweb_reply_downvote_nux_inline_days: { value: 7 },
     rweb_share_icon_update: { value: !1 },
     rweb_video_tagging_enabled: { value: !1 },
+    sc_r4_enabled: { value: !1 },
     scribe_api_error_sample_size: { value: 0 },
     scribe_api_sample_size: { value: 100 },
     scribe_cdn_host_list: {
@@ -5233,6 +5234,13 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_pinned_replies_enabled: {
+      name: 'responsive_web_pinned_replies_enabled',
+      description: 'Enables the UI elements for Pinned Replies. Created on May 17, 2022.\n',
+      owner: 'jpollman@twitter.com',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     responsive_web_placeholder_siwg_button_enabled: {
       name: 'responsive_web_placeholder_siwg_button_enabled',
       description:
@@ -5324,19 +5332,6 @@ var manifest = {
       owner: 'mschwiebert@twitter.com',
       type: 'boolean',
       defaultValue: !0,
-    },
-    responsive_web_qp_welcome_coupon_enabled: {
-      name: 'responsive_web_qp_welcome_coupon_enabled',
-      description: 'FS for coupons feature within QP\n',
-      owner: 'qp-roster-team@twitter.com',
-      type: 'boolean',
-      defaultValue: !1,
-    },
-    responsive_web_qp_welcome_coupon_id: {
-      name: 'responsive_web_qp_welcome_coupon_id',
-      description: 'FS for coupons feature within QP\n',
-      owner: 'qp-roster-team@twitter.com',
-      type: 'string',
     },
     responsive_web_reactions_api_test: {
       name: 'responsive_web_reactions_api_test',
@@ -5901,6 +5896,13 @@ var manifest = {
       name: 'sat_with_ads_treatment_ios_14613',
       type: 'experiment',
       enumeration_values: ['control', 'sat_2sec', 'sat_2sec_pad1', 'sat_2sec_pad2', 'sat_2sec_pad3', 'sat_2sec_space4'],
+    },
+    sc_r4_enabled: {
+      name: 'sc_r4_enabled',
+      description: 'Safety Center Release 4\n',
+      owner: 'actor-reporter-experiences-eng@twitter.com',
+      type: 'boolean',
+      defaultValue: !1,
     },
     scribe_url: {
       name: 'scribe_url',
@@ -8332,6 +8334,11 @@ var manifest = {
         'DEPRECATED: Please use mobile/features/spaces for all new features\nhttps://sourcegraph.twitter.biz/config-git.twitter.biz/config/-/blob/mobile/features/spaces/README.md\n\nLegacy feature Switches for Spaces (http://go/spaces)\nPlease verify your changes using the commands below\n  featureswitches validate mobile/features/voice_rooms.yml\n  featureswitches test mobile/features/voice_rooms.yml\n',
       owner: 'kldscp@twitter.com',
       type: 'string',
+    },
+    web_immersive_media_viewer_14812: {
+      name: 'web_immersive_media_viewer_14812',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
     },
     web_immersive_media_viewer_aa_test_14827: {
       name: 'web_immersive_media_viewer_aa_test_14827',

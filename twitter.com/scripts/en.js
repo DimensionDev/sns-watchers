@@ -922,6 +922,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cf6b3e22', 'Show this List in Home'),
           a('b7fbb4c0', 'Top Tweets from this List may show up in your Home timeline.'),
           a('d90efe06', 'Top Tweets from this List may now show up in Home.'),
+          a('ae9488dc', 'Pin reply to your Tweet?'),
+          a('i24ed0de', 'Pin reply'),
+          a('c02d5236', 'It will appear at the top of your Tweet’s replies. You can replace it or unpin it anytime.'),
+          a('e96a5962', 'Unpin this reply?'),
+          a('ec04e6fc', 'Unpin reply'),
+          a('e374d7b4', 'It will no longer appear at the top of this Tweet’s replies.'),
+          a('j9aedfdc', 'Pin Reply'),
+          a('c034211a', 'Unpin Reply'),
+          a('a842ef4e', 'Reply pinned to tweet'),
+          a('e7c58566', 'Reply unpinned from tweet'),
           a('a2a3824a', 'Topic'),
           a('i79ab12a', 'Follow Topic'),
           a('c0f56044', 'Unfollow'),
@@ -971,12 +981,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ee8c6c62', 'Show more Tweets'),
           a('i8005e74', 'Loading more Tweets'),
-          a('c5d23126', 'Pin'),
-          a('j44ec610', 'Unpin'),
-          a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
-          a('fa816a0a', 'Reorder List'),
-          a('ac832ae4', 'Pin List'),
-          a('cdb33880', 'Unpin List'),
           a('j681933e', 'Private List'),
           a('ca5d0a82', 'Edit List'),
           a('ec08efe4', function (e) {
@@ -994,6 +998,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('add55942', 'Something went wrong. Try subscribing again in a minute.'),
           a('ib8f5f3c', 'Something went wrong. Try unsubscribing again in a minute.'),
           a('e20fc756', 'You aren’t allowed to add this member to this List.'),
+          a('c5d23126', 'Pin'),
+          a('j44ec610', 'Unpin'),
+          a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
+          a('fa816a0a', 'Reorder List'),
+          a('ac832ae4', 'Pin List'),
+          a('cdb33880', 'Unpin List'),
           a('a3484d22', 'tie'),
           a('aab2efa9', function (e) {
             return 'winner ' + e.winner
@@ -1032,7 +1042,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('c14cdb18', 'Promote'),
           a('e8adeec8', 'Promote again'),
-          a('i093db9c', 'See the latest'),
+          a('e1c8af7c', 'See the latest Tweet'),
           a('a8569d48', 'Opens the new version of this Tweet'),
           a('b8f3500a', 'View thread in Reader'),
           a('b4947556', 'Translate Tweet'),
@@ -1139,8 +1149,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Communities are public, so you can read the Tweets — but only members can interact with them.',
           ),
           a('h8a62e2b', 'Learn more'),
-          a('de2d83d6', 'Bookmark to Folder'),
-          a('f14df406', 'Copy link to ad'),
+          a('de2d83d6', 'Bookmark to Folder')
+        a('f14df406', 'Copy link to ad'),
           a('b6f822ba', 'Copy link to Tweet'),
           a('ff9348b8', 'Share ad via …'),
           a('ebad846c', 'Share Tweet via …'),
@@ -1155,10 +1165,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('e8866a55', function (e) {
             return '' + e.displayCount
-          })
-        a('eb3abe45', function (e) {
-          return 'Like' + n(e.count, '', 's')
-        }),
+          }),
+          a('eb3abe45', function (e) {
+            return 'Like' + n(e.count, '', 's')
+          }),
           a('d71de0c1', function (e) {
             return '' + e.displayCount
           }),
@@ -2312,8 +2322,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          ),
-          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          )
+        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
@@ -2334,8 +2344,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f8fa00c7', function (e) {
             return 'Descriptions can’t exceed ' + e.maxCharacterCount + ' characters'
           }),
-          a('d45ae5e0', 'Don’t forget to tell the Community')
-        a('c1631260', 'Keeping everyone updated about rule changes helps build trust.'),
+          a('d45ae5e0', 'Don’t forget to tell the Community'),
+          a('c1631260', 'Keeping everyone updated about rule changes helps build trust.'),
           a('d3190bde', 'Save rule'),
           a('ifd6e91c', 'Cancel and edit rule'),
           a('h99020e0', 'Edit rule'),
@@ -3599,8 +3609,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'c81b9708',
             'This prevents Tweets with potentially sensitive content from displaying in your search results.',
           ),
-          a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.'),
-          a('bc7fd990', 'Loading trends settings'),
+          a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.')
+        a('bc7fd990', 'Loading trends settings'),
           a('c5f4befa', 'Trends'),
           a('e2f16650', 'Show content in this location'),
           a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
@@ -3609,8 +3619,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
           a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
           a('a55db872', 'Personalization'),
-          a('h0b5152e', 'Change location')
-        a('dfeada5e', 'Explore locations'),
+          a('h0b5152e', 'Change location'),
+          a('dfeada5e', 'Explore locations'),
           a('ac854308', 'Policy'),
           a('d429c942', 'Trends U.S. Election Policy'),
           a('ede134f2', 'Select whether videos and GIFs should play automatically on this device.'),
@@ -4806,17 +4816,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ab0decc0', 'Subscribe'),
           a('h3281cea', 'You’re in the loop!'),
           a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
-          a('b78d4030', 'Thank you for subscribing'),
-          a('d1bc4330', 'Subscribe through Revue'),
-          a('b6f9f574', 'Subscribe to newsletter'),
-          a('c335e528', 'go here'),
-          a('ea02e698', 'Terms of Service'),
-          a('g3287f64', 'Privacy Policy'),
-          a('ha6bb228', 'Terms of Service'),
-          a('be446e5e', 'Privacy Policy'),
-          a('e217e03c', 'Start a newsletter for free'),
-          a('fadf0f86', 'Compose and schedule newsletters'),
-          a('f8df10ba', 'Embed Tweets')
+          a('b78d4030', 'Thank you for subscribing')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,7 +4836,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('hb47d72c', 'Import email lists'),
+        a('d1bc4330', 'Subscribe through Revue'),
+          a('b6f9f574', 'Subscribe to newsletter'),
+          a('c335e528', 'go here'),
+          a('ea02e698', 'Terms of Service'),
+          a('g3287f64', 'Privacy Policy'),
+          a('ha6bb228', 'Terms of Service'),
+          a('be446e5e', 'Privacy Policy'),
+          a('e217e03c', 'Start a newsletter for free'),
+          a('fadf0f86', 'Compose and schedule newsletters'),
+          a('f8df10ba', 'Embed Tweets'),
+          a('hb47d72c', 'Import email lists'),
           a('dcbba9e8', 'Analyze engagement'),
           a('bf916530', 'Earn money from paid subscribers'),
           a('h8041a4b', '@Revue'),
@@ -4885,9 +4895,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
           a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
           a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-          a('dcf8f19f', function (e) {
-            return e.percentageCompleteInt + '%'
-          }),
           a('hdf040dd', function (e) {
             return e.percentage + '% complete'
           }),
@@ -5973,8 +5980,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f5531a44', 'Remember the human'),
           a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
           a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
-          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.'),
-          a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
+          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.')
+        a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('ica87fde', 'You’re blocked'),
           a('db763e75', 'Learn more'),
@@ -5982,10 +5989,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a52b03a6', 'Tweets & replies'),
           a('cc3c698a', 'Super Follows Tweets'),
           a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
-          a('ieef7656', 'Take a look')
-        a('abb13fc9', function (e) {
-          return 'About @' + e.screenName
-        }),
+          a('ieef7656', 'Take a look'),
+          a('abb13fc9', function (e) {
+            return 'About @' + e.screenName
+          }),
           a('e9b67105', function (e) {
             return 'Loading @' + e.screenName + ' about tab details'
           }),
@@ -9680,7 +9687,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           p = (f._validateParameterTypeDate, f._dateToPartsFormat, f._dateToPartsFormatterFn),
           w = (f._dateFormat, f._dateFormatterFn),
           g = f._relativeTimeFormatterFn,
-          v = f._unitFormatterFn
+          T = f._unitFormatterFn
         ;(f.a527220190 = b(
           [
             '',
@@ -12076,7 +12083,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             'relative-type-0': 'today',
             'relative-type-1': 'tomorrow',
           })),
-          (f.a2110709659 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a2110709659 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'seconds',
@@ -12085,7 +12092,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per second',
             },
           })),
-          (f.a223746363 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a223746363 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'minutes',
@@ -12094,7 +12101,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per minute',
             },
           })),
-          (f.b2116965749 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b2116965749 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'hours',
@@ -12103,43 +12110,43 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per hour',
             },
           })),
-          (f.b1436183524 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1436183524 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
           })),
-          (f.b1554153647 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1554153647 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'secs', one: '{0} sec', other: '{0} sec', perUnitPattern: '{0}/s' },
           })),
-          (f.a1963255228 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a1963255228 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'min', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/min' },
           })),
-          (f.a79526321 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a79526321 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'mins', one: '{0} min', other: '{0} min', perUnitPattern: '{0}/min' },
           })),
-          (f.b1193188596 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1193188596 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hour', one: '{0}h', other: '{0}h', perUnitPattern: '{0}/h' },
           })),
-          (f.a531894881 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a531894881 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hours', one: '{0} hr', other: '{0} hr', perUnitPattern: '{0}/h' },
           })),
-          (f.b1132522088 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1132522088 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'day', one: '{0}d', other: '{0}d', perUnitPattern: '{0}/d' },
           })),
-          (f.b1844277225 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b1844277225 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: { displayName: 'days', one: '{0} day', other: '{0} days', perUnitPattern: '{0} per day' },
           })),
-          (f.b2134163460 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b2134163460 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'month', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/m' },
           })),
-          (f.a1064174459 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a1064174459 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'months',
@@ -12148,11 +12155,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per month',
             },
           })),
-          (f.a211373797 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.a211373797 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'yr', one: '{0}y', other: '{0}y', perUnitPattern: '{0}/y' },
           })),
-          (f.b636176220 = v(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
+          (f.b636176220 = T(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'years',
@@ -12161,7 +12168,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per year',
             },
           })),
-          (f.a1379198057 = v(
+          (f.a1379198057 = T(
             f('en').numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: 'truncate' }),
             f('en').pluralGenerator({}),
             {
