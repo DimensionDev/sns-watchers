@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'ce1a060b112101994514c0d84d676ff62ea3070c',
+  feature_set_token: '197be6934fa3a62e2cd93fee10ce06cac5323152',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -364,7 +364,7 @@ var manifest = {
     home_timeline_tweet_auto_inline_reply_enabled: { value: !1 },
     identity_verification_debadging_notification_enabled: { value: !0 },
     identity_verification_educational_prompt_enabled: { value: !0 },
-    identity_verification_intake_enabled: { value: !1 },
+    identity_verification_intake_enabled: { value: !0 },
     identity_verification_notable_demo_survey: { value: !1 },
     interactive_text_enabled: { value: !0 },
     live_event_docking_enabled: { value: !0 },
@@ -410,7 +410,7 @@ var manifest = {
     profile_foundations_tweet_stats_tweet_count: { value: !1 },
     profile_foundations_tweet_stats_tweet_frequency: { value: !1 },
     profile_foundations_tweet_stats_tweet_topics: { value: !1 },
-    remove_hashflags_global_from_hweb_enabled: { value: !1 },
+    remove_hashflags_global_from_hweb_enabled: { value: !0 },
     report_center_mvp_r1_enabled: { value: !0 },
     report_center_mvp_r2_enabled: { value: !1 },
     responsive_web_3rd_party_category_branch: { value: 3 },
@@ -668,7 +668,7 @@ var manifest = {
     responsive_web_settings_timeline_polling_enabled: { value: !1 },
     responsive_web_settings_timeline_polling_interval_ms: { value: 0 },
     responsive_web_settings_timeline_refresh_background_interval: { value: 0 },
-    responsive_web_share_action_order_desktop: { value: 'default' },
+    responsive_web_share_action_order_desktop: { value: 'copy_link_first_bookmark_last' },
     responsive_web_share_action_order_mobile: { value: 'default' },
     responsive_web_share_only_tweet_url_omit_title_and_text: { value: !0 },
     responsive_web_sidebar_ttf_enabled: { value: !1 },
@@ -755,6 +755,9 @@ var manifest = {
     smbo_legacy_pac_is_in_follow_position_test: { value: !1 },
     smbo_legacy_pac_is_social_context_enabled_test: { value: !1 },
     social_context_and_topic_context_refresh_alignment_enabled: { value: !1 },
+    spaces_2022_h2_clipping: { value: !1 },
+    spaces_2022_h2_clipping_consumption: { value: !1 },
+    spaces_2022_h2_clipping_duration_seconds: { value: 30 },
     spaces_2022_h2_follow_host: { value: !0 },
     standardized_nudges_misinfo: { value: !0 },
     stateful_login_enabled: { value: !0 },
@@ -893,17 +896,15 @@ var manifest = {
     },
     tweet_limited_actions_config_soft_nudge_with_quote_tweet: { value: ['show_retweet_action_menu'] },
     tweet_translation_timeline_enabled: { value: !1 },
+    tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled: { value: !1 },
     tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: !1 },
     tweet_with_visibility_results_prefer_gql_tombstones_enabled: { value: !1 },
     user_display_name_max_limit: { value: 50 },
-    vibe_api_enabled: { value: !1 },
+    vibe_api_enabled: { value: !0 },
     vibe_tweet_context_enabled: { value: !1 },
     vod_attribution_tweet_detail_pivot_enabled: { value: !1 },
     voice_consumption_enabled: { value: !0 },
     voice_rooms_card_version: { value: 2 },
-    voice_rooms_clip_duration: { value: 30 },
-    voice_rooms_clipping_consumption_enabled: { value: !1 },
-    voice_rooms_clipping_enabled: { value: !1 },
     voice_rooms_discovery_page_enabled: { value: !1 },
     voice_rooms_end_screen_participants: { value: !0 },
     voice_rooms_expanded_dock: { value: !0 },
@@ -961,11 +962,6 @@ var manifest = {
       description: 'Arkose security challenge feature created on May 11, 2022 4:14 PM\n',
       owner: 'shanshann@twitter.com',
       type: 'string',
-    },
-    about_tab_m2_14615: {
-      name: 'about_tab_m2_14615',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment_1', 'treatment_2'],
     },
     accessibility_alt_text_prompt_launch_14426: {
       name: 'accessibility_alt_text_prompt_launch_14426',
@@ -1562,12 +1558,6 @@ var manifest = {
       owner: 'communities-eng@twitter.com',
       type: 'string',
     },
-    c9s_memberships_sorting_enabled: {
-      name: 'c9s_memberships_sorting_enabled',
-      description: 'Communities params; See http://go/communities-params for details.',
-      owner: 'communities-eng@twitter.com',
-      type: 'string',
-    },
     c9s_max_rule_count: {
       name: 'c9s_max_rule_count',
       description: 'Communities params; See http://go/communities-params for details.',
@@ -1844,16 +1834,6 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'experiment'],
     },
-    clipping_consumption_13982: {
-      name: 'clipping_consumption_13982',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
-    clipping_creation_14164: {
-      name: 'clipping_creation_14164',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
     communities_hashtags_carousel_14924: {
       name: 'communities_hashtags_carousel_14924',
       type: 'experiment',
@@ -1943,6 +1923,11 @@ var manifest = {
       name: 'current_stack_follow_card_android_14711',
       type: 'experiment',
       enumeration_values: ['control', 'follow_button', 'no_profile_media'],
+    },
+    current_stack_follow_experiment_ios_14713: {
+      name: 'current_stack_follow_experiment_ios_14713',
+      type: 'experiment',
+      enumeration_values: ['control', 'tweet_media'],
     },
     customer_journey_loggedin_incremental_holdback_2022h1_12420: {
       name: 'customer_journey_loggedin_incremental_holdback_2022h1_12420',
@@ -2492,6 +2477,12 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    explore_relaunch_peek_bounce_onboarding_max_loop_count: {
+      name: 'explore_relaunch_peek_bounce_onboarding_max_loop_count',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
     explore_relaunch_enable_immersive_web: {
       name: 'explore_relaunch_enable_immersive_web',
       description: 'Client feature switches for Explore relaunch',
@@ -2530,6 +2521,12 @@ var manifest = {
       owner: 'explore-clients@twitter.com',
       type: 'string',
     },
+    explore_relaunch_single_tap_to_show_hide_chrome: {
+      name: 'explore_relaunch_single_tap_to_show_hide_chrome',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
     explore_relaunch_show_personalization_options_bar: {
       name: 'explore_relaunch_show_personalization_options_bar',
       description: 'Client feature switches for Explore relaunch',
@@ -2548,6 +2545,12 @@ var manifest = {
       owner: 'explore-clients@twitter.com',
       type: 'string',
     },
+    explore_relaunch_peek_bounce_onboarding_trigger_threshold: {
+      name: 'explore_relaunch_peek_bounce_onboarding_trigger_threshold',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
     explore_relaunch_open_on_trending_tab: {
       name: 'explore_relaunch_open_on_trending_tab',
       description: 'Client feature switches for Explore relaunch',
@@ -2561,6 +2564,12 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    explore_relaunch_peek_bounce_onboarding_enabled: {
+      name: 'explore_relaunch_peek_bounce_onboarding_enabled',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
     explore_relaunch_auto_refresh_timeout_minutes: {
       name: 'explore_relaunch_auto_refresh_timeout_minutes',
       description: 'Client feature switches for Explore relaunch',
@@ -2573,6 +2582,12 @@ var manifest = {
       owner: 'explore-clients@twitter.com',
       type: 'string',
     },
+    explore_relaunch_peek_bounce_onboarding_min_watch_time_sec: {
+      name: 'explore_relaunch_peek_bounce_onboarding_min_watch_time_sec',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
     explore_relaunch_inline_comments_enabled: {
       name: 'explore_relaunch_inline_comments_enabled',
       description: 'Client feature switches for Explore relaunch',
@@ -2581,6 +2596,12 @@ var manifest = {
     },
     explore_relaunch_enable_immersive_player_across_twitter: {
       name: 'explore_relaunch_enable_immersive_player_across_twitter',
+      description: 'Client feature switches for Explore relaunch',
+      owner: 'explore-clients@twitter.com',
+      type: 'string',
+    },
+    explore_relaunch_peek_bounce_onboarding_loop_delay: {
+      name: 'explore_relaunch_peek_bounce_onboarding_loop_delay',
       description: 'Client feature switches for Explore relaunch',
       owner: 'explore-clients@twitter.com',
       type: 'string',
@@ -2624,8 +2645,15 @@ var manifest = {
       type: 'number',
       defaultValue: 0,
     },
-    follow_nudge_focal_enabled: {
-      name: 'follow_nudge_focal_enabled',
+    follow_nudge_search_enabled: {
+      name: 'follow_nudge_search_enabled',
+      description: 'Feature switches for Follow Nudge experiment\n',
+      owner: 'relationships@twitter.com',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    follow_nudge_replies_enabled: {
+      name: 'follow_nudge_replies_enabled',
       description: 'Feature switches for Follow Nudge experiment\n',
       owner: 'relationships@twitter.com',
       type: 'string',
@@ -2636,18 +2664,17 @@ var manifest = {
       owner: 'relationships@twitter.com',
       type: 'string',
     },
-    follow_nudge_replies_enabled: {
-      name: 'follow_nudge_replies_enabled',
+    follow_nudge_conversation_enabled: {
+      name: 'follow_nudge_conversation_enabled',
       description: 'Feature switches for Follow Nudge experiment\n',
       owner: 'relationships@twitter.com',
       type: 'string',
     },
-    follow_nudge_search_enabled: {
-      name: 'follow_nudge_search_enabled',
+    follow_nudge_focal_enabled: {
+      name: 'follow_nudge_focal_enabled',
       description: 'Feature switches for Follow Nudge experiment\n',
       owner: 'relationships@twitter.com',
-      type: 'boolean',
-      defaultValue: !1,
+      type: 'string',
     },
     follow_nudge_search_14518: {
       name: 'follow_nudge_search_14518',
@@ -3142,7 +3169,7 @@ var manifest = {
       description: 'Allows access to Identity Verification features on RWeb, Android, and iOS (go/consumer-identity)\n',
       owner: 'consumer-identity-team@twitter.com',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     identity_verification_educational_prompt_enabled: {
       name: 'identity_verification_educational_prompt_enabled',
@@ -3814,7 +3841,7 @@ var manifest = {
         'Currently we pass branded hashtag (hashflag) data to horizon web via a singleton global. The problem with this is in the case that the api response from `hashflags.json` takes longer than browser rendering, or a user gets a refresh of the payload while browsing twitter.com (refreshes every 30 min) that has a new branded hashtag, the branded hashtag will not render properly. We should move this to a context that has a callback value similar to how we hand NFT avatars. Gating the removal of the hashflags global in hweb to prevent regressions\n',
       owner: 'trumans@twitter.com',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     reply_downvote_ranking_13468: {
       name: 'reply_downvote_ranking_13468',
@@ -5522,7 +5549,7 @@ var manifest = {
       description: 'Feature switch for changing the order share action items.\n',
       owner: 'asalani@twitter.com',
       type: 'string',
-      defaultValue: 'default',
+      defaultValue: 'copy_link_first_bookmark_last',
     },
     responsive_web_share_action_order_mobile: {
       name: 'responsive_web_share_action_order_mobile',
@@ -6145,16 +6172,6 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'share_icon_arrow'],
     },
-    share_ordering_rweb_desktop_14307: {
-      name: 'share_ordering_rweb_desktop_14307',
-      type: 'experiment',
-      enumeration_values: ['control', 'copy_link_first_bookmark_last'],
-    },
-    share_ordering_rweb_mobile_14306: {
-      name: 'share_ordering_rweb_mobile_14306',
-      type: 'experiment',
-      enumeration_values: ['control', 'copy_link_first_bookmark_last', 'share_via_first_bookmark_last'],
-    },
     single_sign_on_rweb_12529: {
       name: 'single_sign_on_rweb_12529',
       type: 'experiment',
@@ -6192,6 +6209,33 @@ var manifest = {
       owner: 'interests-client-eng@twitter.com',
       type: 'boolean',
       defaultValue: !1,
+    },
+    spaces_2022_h2_clipping: {
+      name: 'spaces_2022_h2_clipping',
+      description: 'Feature Switches for Spaces Clipping\nhttp://go/spaces-clipping-tdd\n',
+      owner: 'audio@twitter.com',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    spaces_2022_h2_clipping_consumption: {
+      name: 'spaces_2022_h2_clipping_consumption',
+      description: 'Feature Switches for Spaces Clipping\nhttp://go/spaces-clipping-tdd\n',
+      owner: 'audio@twitter.com',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    spaces_2022_h2_clipping_duration_seconds: {
+      name: 'spaces_2022_h2_clipping_duration_seconds',
+      description: 'Feature Switches for Spaces Clipping\nhttp://go/spaces-clipping-tdd\n',
+      owner: 'audio@twitter.com',
+      type: 'number',
+      defaultValue: 30,
+    },
+    spaces_2022_h2_clipping_holdback_canary: {
+      name: 'spaces_2022_h2_clipping_holdback_canary',
+      description: 'Feature Switches for Spaces Clipping\nhttp://go/spaces-clipping-tdd\n',
+      owner: 'audio@twitter.com',
+      type: 'string',
     },
     spaces_2022_h2_follow_host: {
       name: 'spaces_2022_h2_follow_host',
@@ -7417,7 +7461,8 @@ var manifest = {
       description:
         'These feature switches control client parsing and modeling of the graphql TweetResult schema. Specifically, the TweetWithVisibilityResult arm of the union. https://docs.google.com/document/d/1L9dAmXMV7qJfzc3YBCH_Nne_-edW_wSj7B_-bg7azGE/edit#heading=h.jnctmosgoo9r\n',
       owner: 'dgilk@twitter.com',
-      type: 'string',
+      type: 'boolean',
+      defaultValue: !1,
     },
     tweet_with_visibility_results_prefer_gql_tweet_interstitials_enabled: {
       name: 'tweet_with_visibility_results_prefer_gql_tweet_interstitials_enabled',
@@ -7448,7 +7493,7 @@ var manifest = {
       description: 'Vibe (aka Status) feature switches #status-team\n',
       owner: 'tweets-composition@twitter.com',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     vibe_composer_enabled: {
       name: 'vibe_composer_enabled',
@@ -7923,8 +7968,7 @@ var manifest = {
       description:
         'DEPRECATED: Please use mobile/features/spaces for all new features\nhttps://sourcegraph.twitter.biz/config-git.twitter.biz/config/-/blob/mobile/features/spaces/README.md\n\nLegacy feature Switches for Spaces (http://go/spaces)\nPlease verify your changes using the commands below\n  featureswitches validate mobile/features/voice_rooms.yml\n  featureswitches test mobile/features/voice_rooms.yml\n',
       owner: 'kldscp@twitter.com',
-      type: 'boolean',
-      defaultValue: !1,
+      type: 'string',
     },
     voice_rooms_survey_minimum_time_spent_non_host: {
       name: 'voice_rooms_survey_minimum_time_spent_non_host',
@@ -7971,6 +8015,13 @@ var manifest = {
       owner: 'kldscp@twitter.com',
       type: 'boolean',
       defaultValue: !0,
+    },
+    voice_rooms_podcast_following_enabled: {
+      name: 'voice_rooms_podcast_following_enabled',
+      description:
+        'DEPRECATED: Please use mobile/features/spaces for all new features\nhttps://sourcegraph.twitter.biz/config-git.twitter.biz/config/-/blob/mobile/features/spaces/README.md\n\nLegacy feature Switches for Spaces (http://go/spaces)\nPlease verify your changes using the commands below\n  featureswitches validate mobile/features/voice_rooms.yml\n  featureswitches test mobile/features/voice_rooms.yml\n',
+      owner: 'kldscp@twitter.com',
+      type: 'string',
     },
     voice_rooms_is_trending_space_enabled: {
       name: 'voice_rooms_is_trending_space_enabled',
@@ -8084,8 +8135,7 @@ var manifest = {
       description:
         'DEPRECATED: Please use mobile/features/spaces for all new features\nhttps://sourcegraph.twitter.biz/config-git.twitter.biz/config/-/blob/mobile/features/spaces/README.md\n\nLegacy feature Switches for Spaces (http://go/spaces)\nPlease verify your changes using the commands below\n  featureswitches validate mobile/features/voice_rooms.yml\n  featureswitches test mobile/features/voice_rooms.yml\n',
       owner: 'kldscp@twitter.com',
-      type: 'boolean',
-      defaultValue: !1,
+      type: 'string',
     },
     voice_rooms_soundboard_enabled: {
       name: 'voice_rooms_soundboard_enabled',
@@ -8170,8 +8220,7 @@ var manifest = {
       description:
         'DEPRECATED: Please use mobile/features/spaces for all new features\nhttps://sourcegraph.twitter.biz/config-git.twitter.biz/config/-/blob/mobile/features/spaces/README.md\n\nLegacy feature Switches for Spaces (http://go/spaces)\nPlease verify your changes using the commands below\n  featureswitches validate mobile/features/voice_rooms.yml\n  featureswitches test mobile/features/voice_rooms.yml\n',
       owner: 'kldscp@twitter.com',
-      type: 'number',
-      defaultValue: 30,
+      type: 'string',
     },
     voice_rooms_mute_everyone_enabled: {
       name: 'voice_rooms_mute_everyone_enabled',
@@ -8393,11 +8442,6 @@ var manifest = {
       owner: 'cchao@twitter.com',
       type: 'string',
       defaultValue: '',
-    },
-    web_video_hlsjs_9265: {
-      name: 'web_video_hlsjs_9265',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     web_video_playback_rate_enabled: {
       name: 'web_video_playback_rate_enabled',
