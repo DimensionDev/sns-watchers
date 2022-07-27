@@ -1341,9 +1341,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bf9b89e4', 'Your draft was saved.'),
           a('gb1ac3be', 'Your time to edit ran out'),
           a('e5ace470', 'You can no longer edit your tweet.'),
-          a('d0547e90', 'Update Tweet?'),
-          a('a5895b90', 'This is your last edit for this Tweet.'),
-          a('h3701ffe', 'Update'),
           a('b551cd23', function (e) {
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
           }),
@@ -1554,6 +1551,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bea869b4', 'Tweet'),
           a('d3145da8', 'Thanks for letting us know.'),
           a('f70a36d0', 'Tweet all'),
+          a('h3701ffe', 'Update'),
           a('cf433586', 'Introducing'),
           a('a603e958', 'Reply downvotes'),
           a('e6d9027e', 'Select to downvote'),
@@ -1785,34 +1783,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'e473f876',
             'Contributors whose 5 most recent notes with a status of Helpful or Not Helpful include 3 Not Helpful notes have their ability to write temporarily locked.',
           ),
-          a('a7bc3192', 'Cites high-quality sources'),
-          a('a26f8dc2', 'Easy to understand'),
-          a('d89cfe9e', 'Directly addresses the Tweet’s claim'),
-          a('faa5f9e8', 'Provides important context'),
-          a('c365dcc6', 'Other'),
-          a('gf3b38f4', 'Neutral or unbiased language'),
-          a('ef490ae8', 'Sources not included or unreliable'),
-          a('bf3dc462', 'Sources do not support note'),
-          a('heb35e12', 'Incorrect information'),
-          a('ib117532', 'Harassment or abuse'),
-          a('h7c59ea2', 'Opinion or speculation'),
-          a('d60c0064', 'Typos or unclear language'),
-          a('e06416ca', 'Misses key points or irrelevant'),
-          a('cff1aa8c', 'Argumentative or biased language'),
-          a('cc443e26', 'Note not needed on this Tweet'),
-          a('c34e0b2c', 'Misses key points'),
-          a('d24b99ee', 'Inflammatory language'),
-          a('dfa44dde', 'Clear and/or well-written'),
-          a('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
-          a('f3e6f0aa', 'Informative'),
-          a('c5d55592', 'Offers unique information or context'),
-          a('bbe8b4ac', 'Opinion, speculation, or bias'),
-          a('a8027090', 'Sources missing or unreliable'),
-          a('dd1f17ea', 'Off topic'),
-          a('if966b54', 'Outdated information'),
-          a('d0ba7db4', 'Argumentative or inflammatory'),
-          a('aa520d32', 'Spam, harassment, or abuse'),
-          a('e25e5ed2', 'Hard to understand'),
           a('c8a7eeea', 'Given current evidence, I believe this Tweet is: '),
           a('d4e419f6', 'Potentially misleading'),
           a('ha9655c2', 'Not misleading'),
@@ -1823,6 +1793,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g21a0ef4', 'It is a misrepresentation or missing important context'),
           a('daf354de', 'It presents an unverified claim as a fact'),
           a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
+          a('c365dcc6', 'Other'),
           a('ce5fa5d4', 'If this Tweet were widely spread, its message would likely be believed by:'),
           a('d617b1ba', 'Few'),
           a('c5be638c', 'Many'),
@@ -1925,6 +1896,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hec80c97', 'agreed'),
           a('bfa5f566', 'unhelpful'),
           a('eb1cc800', 'disagreed'),
+          a('dfa44dde', 'Clear and/or well-written'),
+          a('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
+          a('a7bc3192', 'Cites high-quality sources'),
+          a('f3e6f0aa', 'Informative'),
+          a('c5d55592', 'Offers unique information or context'),
+          a('bbe8b4ac', 'Opinion, speculation, or bias'),
+          a('heb35e12', 'Incorrect information'),
+          a('c34e0b2c', 'Misses key points'),
+          a('a8027090', 'Sources missing or unreliable'),
+          a('dd1f17ea', 'Off topic'),
+          a('if966b54', 'Outdated information'),
+          a('d0ba7db4', 'Argumentative or inflammatory'),
+          a('aa520d32', 'Spam, harassment, or abuse'),
+          a('e25e5ed2', 'Hard to understand'),
           a('i26425d8', 'Somewhat'),
           a('c6e683d0', 'Submit & Agree'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
@@ -1934,6 +1919,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d39720d3', 'Helpful'),
           a('i7d91dc9', 'Somewhat Helpful'),
           a('c75b7fb4', 'Not Helpful'),
+          a('a26f8dc2', 'Easy to understand'),
+          a('d89cfe9e', 'Directly addresses the Tweet’s claim'),
+          a('faa5f9e8', 'Provides important context'),
+          a('gf3b38f4', 'Neutral or unbiased language'),
+          a('ef490ae8', 'Sources not included or unreliable'),
+          a('bf3dc462', 'Sources do not support note'),
+          a('ib117532', 'Harassment or abuse'),
+          a('h7c59ea2', 'Opinion or speculation'),
+          a('d60c0064', 'Typos or unclear language'),
+          a('e06416ca', 'Misses key points or irrelevant'),
+          a('cff1aa8c', 'Argumentative or biased language'),
+          a('cc443e26', 'Note not needed on this Tweet'),
+          a('d24b99ee', 'Inflammatory language'),
           a('df587b98', 'Note ID'),
           a('h201bdc8', 'Note Author'),
           a('h74b96b0', 'Note submitted'),
@@ -2316,16 +2314,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('j560c8ea', 'Add rule'),
           a('ab8089ea', 'Reorder'),
-          a('a9ba79c0', 'Good rules make good Communities')
-        a(
-          'h5482c7a',
-          'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
-        ),
+          a('a9ba79c0', 'Good rules make good Communities'),
+          a(
+            'h5482c7a',
+            'Give some serious thought to your Community rules. They set the tone and let your members know what’s expected of them.',
+          ),
           a(
             'd5033a7a',
             'For example, do you want conversations to stay strictly on topic? Is self-promotion allowed? What about swearing?',
-          ),
-          a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
+          )
+        a('ee8c43a0', 'The clearer you are up front, the less moderation you’ll have to do later.'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d6', 'You’re maxed out'),
           a('fcbe0993', function (e) {
@@ -3606,13 +3604,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a90af44e', 'Hide sensitive content'),
           a('a25e2ec6', 'Remove blocked and muted accounts'),
           a('b827a058', 'Safe search settings updated.'),
-          a('b27c9852', 'Something went wrong updating your safe search settings.')
-        a(
-          'c81b9708',
-          'This prevents Tweets with potentially sensitive content from displaying in your search results.',
-        ),
-          a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.'),
-          a('bc7fd990', 'Loading trends settings'),
+          a('b27c9852', 'Something went wrong updating your safe search settings.'),
+          a(
+            'c81b9708',
+            'This prevents Tweets with potentially sensitive content from displaying in your search results.',
+          ),
+          a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.')
+        a('bc7fd990', 'Loading trends settings'),
           a('c5f4befa', 'Trends'),
           a('e2f16650', 'Show content in this location'),
           a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
@@ -4151,7 +4149,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.minTweetsCount + ' Tweets in the past 30 days'
           }),
           a('c27f57ac', 'Be at least 18 years old'),
-          a('fbd73859', 'Super Follows Terms'),
+          a('adc8a241', 'Super Follows Terms'),
           a('j5dc36d8', 'Paid subscriptions for your most engaged followers.'),
           a(
             'cedb182a',
@@ -4816,7 +4814,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fcd1fdda', 'Read a sample issue'),
           a('a976a91e', 'Start reading on Revue'),
           a('ab0decc0', 'Subscribe'),
-          a('h3281cea', 'You’re in the loop!')
+          a('h3281cea', 'You’re in the loop!'),
+          a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
+          a('b78d4030', 'Thank you for subscribing')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,9 +4836,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
-          a('b78d4030', 'Thank you for subscribing'),
-          a('d1bc4330', 'Subscribe through Revue'),
+        a('d1bc4330', 'Subscribe through Revue'),
           a('b6f9f574', 'Subscribe to newsletter'),
           a('c335e528', 'go here'),
           a('ea02e698', 'Terms of Service'),
@@ -5980,10 +5978,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e0da6d02', 'What’s Safety Mode?'),
           a('ia457a1a', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
           a('f5531a44', 'Remember the human'),
-          a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.')
-        a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
-          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.'),
-          a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
+          a('bfe4a866', 'There’s a person on the other end of your Tweet with feelings.'),
+          a('aa5fe8ec', 'Avoid repetitive, uninvited replies'),
+          a('d5d82dd5', 'They can overwhelm people, even if the content is innocent.')
+        a('afa1bbda', 'Skip the insults, name-calling, and harmful remarks'),
           a('h4a40ee9', 'Even if they seem playful to you, others might find them hurtful.'),
           a('ica87fde', 'You’re blocked'),
           a('db763e75', 'Learn more'),
@@ -6153,31 +6151,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('d8af538f', 'Learn more'),
-          a('h69d2f17', function (e) {
-            return 'Follow ' + e.fullName + '’s (@' + e.screenName + ') latest Tweets'
-          }),
-          a('febf12b0', 'Verified.'),
-          a('a63937b9', function (e) {
-            return 'Bio: ' + e.bio + '.'
-          }),
-          a('eb8fa9b9', function (e) {
-            return 'Joined ' + e.joinDate + '.'
-          }),
-          a('jeaca9dd', function (e) {
-            return e.location + '.'
-          }),
-          a('b33c429d', function (e) {
-            return e.followerCount + ' follower' + n(e.followerCount, '', 's') + '.'
-          }),
-          a('e74e9bb7', function (e) {
-            return e.tweetCount + ' Tweet' + n(e.tweetCount, '', 's') + '.'
-          }),
-          a('j7b9e3db', function (e) {
-            return 'Latest Tweet on ' + e.latestTweetDate + '.'
-          }),
-          a('c5ee4da3', function (e) {
-            return e.firstTweetDate + ': "' + e.tweetText + '". @' + e.screenName + '.'
-          }),
           a('g6b54ff6', 'You’re up to date'),
           a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
           a('ec2d8342', 'Decline'),
@@ -8908,9 +8881,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'ab551561',
+                key: 'a4ad5ebb',
                 get: function () {
-                  return ['By tapping below, you agree to be bound by the ']
+                  return ['By tapping below to apply, you agree to be bound by the ']
                 },
               },
               {
@@ -10299,20 +10272,20 @@ window.__SCRIPTS_LOADED__.vendor &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (f.a1428071083 = b([
+          (f.b1045914229 = b([
             "'COP' ",
             ,
             1,
-            2,
-            2,
-            ,
-            ,
             0,
+            0,
+            ,
+            ,
+            ,
             3,
             ,
             '',
-            "'COP' #,##0.00",
-            "-'COP' 'COP' #,##0.00",
+            "'COP' #,##0",
+            "-'COP' 'COP' #,##0",
             "-'COP' ",
             '',
             h(),
@@ -10551,20 +10524,20 @@ window.__SCRIPTS_LOADED__.vendor &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (f.b2049451944 = b([
+          (f.a769789694 = b([
             "'IDR' ",
             ,
             1,
-            2,
-            2,
-            ,
-            ,
             0,
+            0,
+            ,
+            ,
+            ,
             3,
             ,
             '',
-            "'IDR' #,##0.00",
-            "-'IDR' 'IDR' #,##0.00",
+            "'IDR' #,##0",
+            "-'IDR' 'IDR' #,##0",
             "-'IDR' ",
             '',
             h(),
@@ -10929,20 +10902,20 @@ window.__SCRIPTS_LOADED__.vendor &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (f.a634704184 = b([
+          (f.b380452322 = b([
             "'PKR' ",
             ,
             1,
-            2,
-            2,
-            ,
-            ,
             0,
+            0,
+            ,
+            ,
+            ,
             3,
             ,
             '',
-            "'PKR' #,##0.00",
-            "-'PKR' 'PKR' #,##0.00",
+            "'PKR' #,##0",
+            "-'PKR' 'PKR' #,##0",
             "-'PKR' ",
             '',
             h(),
@@ -11202,20 +11175,20 @@ window.__SCRIPTS_LOADED__.vendor &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (f.b774550494 = b([
+          (f.b1414774924 = b([
             "'TZS' ",
             ,
             1,
-            2,
-            2,
-            ,
-            ,
             0,
+            0,
+            ,
+            ,
+            ,
             3,
             ,
             '',
-            "'TZS' #,##0.00",
-            "-'TZS' 'TZS' #,##0.00",
+            "'TZS' #,##0",
+            "-'TZS' 'TZS' #,##0",
             "-'TZS' ",
             '',
             h(),
@@ -11658,46 +11631,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (f.a50324716 = b(
-            [
-              '',
-              ,
-              1,
-              0,
-              1,
-              ,
-              ,
-              ,
-              3,
-              ,
-              '',
-              '#,##0.###',
-              '-#,##0.###',
-              '-',
-              '',
-              h(),
-              '∞',
-              'NaN',
-              { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-              ,
-              {
-                3: { one: '0K', other: '0K' },
-                4: { one: '00K', other: '00K' },
-                5: { one: '000K', other: '000K' },
-                6: { one: '0M', other: '0M' },
-                7: { one: '00M', other: '00M' },
-                8: { one: '000M', other: '000M' },
-                9: { one: '0B', other: '0B' },
-                10: { one: '00B', other: '00B' },
-                11: { one: '000B', other: '000B' },
-                12: { one: '0T', other: '0T' },
-                13: { one: '00T', other: '00T' },
-                14: { one: '000T', other: '000T' },
-                maxExponent: 14,
-              },
-            ],
-            f('en').pluralGenerator({}),
-          )),
           (f.a1662346136 = m(function (e) {
             var t = !String(e).split('.')[1]
             return 1 == e && t ? 'one' : 'other'
@@ -11715,7 +11648,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           (f.a650590361 = y(f('en').numberFormatter({ raw: "'CHF' #,##0.00" }))),
           (f.a191929299 = y(f('en').numberFormatter({ raw: "'CLP' #,##0" }))),
           (f.b2070368276 = y(f('en').numberFormatter({ raw: "'CN¥'#,##0.00" }))),
-          (f.b1440526954 = y(f('en').numberFormatter({ raw: "'COP' #,##0.00" }))),
+          (f.b1440526954 = y(f('en').numberFormatter({ raw: "'COP' #,##0" }))),
           (f.b411066810 = y(f('en').numberFormatter({ raw: "'CZK' #,##0.00" }))),
           (f.a904090198 = y(f('en').numberFormatter({ raw: "'DKK' #,##0.00" }))),
           (f.a1131339468 = y(f('en').numberFormatter({ raw: "'DZD' #,##0.00" }))),
@@ -11727,7 +11660,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           (f.b915007111 = y(f('en').numberFormatter({ raw: "'HK$'#,##0.00" }))),
           (f.a1202955417 = y(f('en').numberFormatter({ raw: "'HRK' #,##0.00" }))),
           (f.b572646591 = y(f('en').numberFormatter({ raw: "'HUF' #,##0.00" }))),
-          (f.b688947133 = y(f('en').numberFormatter({ raw: "'IDR' #,##0.00" }))),
+          (f.b688947133 = y(f('en').numberFormatter({ raw: "'IDR' #,##0" }))),
           (f.a2144744170 = y(f('en').numberFormatter({ raw: "'₪'#,##0.00" }))),
           (f.b403844915 = y(f('en').numberFormatter({ raw: "'₹'#,##0.00" }))),
           (f.a1857858014 = y(f('en').numberFormatter({ raw: "'IQD' #,##0" }))),
@@ -11745,7 +11678,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           (f.a1379573634 = y(f('en').numberFormatter({ raw: "'NZ$'#,##0.00" }))),
           (f.b601189599 = y(f('en').numberFormatter({ raw: "'PEN' #,##0.00" }))),
           (f.a2118579746 = y(f('en').numberFormatter({ raw: "'PHP' #,##0.00" }))),
-          (f.a543381795 = y(f('en').numberFormatter({ raw: "'PKR' #,##0.00" }))),
+          (f.a543381795 = y(f('en').numberFormatter({ raw: "'PKR' #,##0" }))),
           (f.a1316368872 = y(f('en').numberFormatter({ raw: "'PLN' #,##0.00" }))),
           (f.a2001089912 = y(f('en').numberFormatter({ raw: "'QAR' #,##0.00" }))),
           (f.b1125434007 = y(f('en').numberFormatter({ raw: "'RON' #,##0.00" }))),
@@ -11758,7 +11691,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           (f.a1186391472 = y(f('en').numberFormatter({ raw: "'TND' #,##0.000" }))),
           (f.a1042651071 = y(f('en').numberFormatter({ raw: "'TRY' #,##0.00" }))),
           (f.a583990009 = y(f('en').numberFormatter({ raw: "'NT$'#,##0.00" }))),
-          (f.b619028979 = y(f('en').numberFormatter({ raw: "'TZS' #,##0.00" }))),
+          (f.b619028979 = y(f('en').numberFormatter({ raw: "'TZS' #,##0" }))),
           (f.a96105150 = y(f('en').numberFormatter({ raw: "'UAH' #,##0.00" }))),
           (f.a1584226356 = y(f('en').numberFormatter({ raw: "'UGX' #,##0" }))),
           (f.b1223214380 = y(f('en').numberFormatter({ raw: "'$'#,##0.00" }))),
@@ -12122,31 +12055,6 @@ window.__SCRIPTS_LOADED__.vendor &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (f.a1989241728 = p(
-            { 1: f('en').numberFormatter({ raw: '0' }) },
-            {
-              pattern: 'MMMM d, y',
-              timeSeparator: ':',
-              months: {
-                M: {
-                  4: {
-                    1: 'January',
-                    2: 'February',
-                    3: 'March',
-                    4: 'April',
-                    5: 'May',
-                    6: 'June',
-                    7: 'July',
-                    8: 'August',
-                    9: 'September',
-                    10: 'October',
-                    11: 'November',
-                    12: 'December',
-                  },
-                },
-              },
-            },
-          )),
           (f.b965415715 = w(f('en').dateToPartsFormatter({ skeleton: 'hm' }))),
           (f.a1434444438 = w(f('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
           (f.a878419275 = w(f('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
@@ -12164,7 +12072,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           (f.a1830739137 = w(f('en').dateToPartsFormatter({ datetime: 'full' }))),
           (f.a1286203598 = w(f('en').dateToPartsFormatter({ date: 'medium' }))),
           (f.b1998581093 = w(f('en').dateToPartsFormatter({ datetime: 'medium' }))),
-          (f.b490808361 = w(f('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
           (f.b687161418 = g(f('en').numberFormatter({}), f('en').pluralGenerator({}), {
             'relativeTime-type-future': {
               'relativeTimePattern-count-one': 'in {0} day',
@@ -12389,9 +12296,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gbf0e6c7', f.a1646145572),
           a('j16ccfa3', f.a1608008627),
           a('c93cb977', f.a1321204873),
-          a('c32b252b', f.a1653031457),
-          a('a1061083', f.b490808361),
-          a('f9e9679f', f.a50324716)
+          a('c32b252b', f.a1653031457)
       },
       88357: (e, t, o) => {
         e.exports = o(7821)
