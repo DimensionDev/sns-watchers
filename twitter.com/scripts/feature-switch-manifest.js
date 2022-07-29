@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'befc51e23f6047e4aad493ee2f1e64f596dea86a',
+  feature_set_token: '3fdb7288e8aa6c0bc87297d47a53281df2e3c0de',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -902,7 +902,7 @@ var manifest = {
     user_display_name_max_limit: { value: 50 },
     vibe_api_enabled: { value: !0 },
     vibe_tweet_context_enabled: { value: !0 },
-    vod_attribution_tweet_detail_pivot_enabled: { value: !1 },
+    vod_attribution_tweet_detail_pivot_enabled: { value: !0 },
     voice_consumption_enabled: { value: !0 },
     voice_rooms_card_version: { value: 2 },
     voice_rooms_discovery_page_enabled: { value: !1 },
@@ -2356,6 +2356,11 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
+    mixed_media_rweb_14953: {
+      name: 'mixed_media_rweb_14953',
+      type: 'experiment',
+      enumeration_values: ['control', 'consumption_only'],
+    },
     moment_annotations_enabled: { name: 'moment_annotations_enabled', type: 'boolean', defaultValue: !0 },
     moments_new_share_experiment_variants_13919: {
       name: 'moments_new_share_experiment_variants_13919',
@@ -2970,21 +2975,25 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    responsive_web_dtime_fccts_enabled: {
-      name: 'responsive_web_dtime_fccts_enabled',
-      type: 'boolean',
-      defaultValue: !1,
-    },
     responsive_web_dtime_show_new_tweets_enabled: {
       name: 'responsive_web_dtime_show_new_tweets_enabled',
       type: 'boolean',
       defaultValue: !0,
     },
+    responsive_web_dtime_fccts_enabled: {
+      name: 'responsive_web_dtime_fccts_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    responsive_web_dtime_timelines_preview_enabled: {
+      name: 'responsive_web_dtime_timelines_preview_enabled',
+      type: 'string',
+    },
+    responsive_web_dtime_tpat_enabled: { name: 'responsive_web_dtime_tpat_enabled', type: 'boolean', defaultValue: !0 },
     responsive_web_dtime_timelines_directory_enabled: {
       name: 'responsive_web_dtime_timelines_directory_enabled',
       type: 'string',
     },
-    responsive_web_dtime_tpat_enabled: { name: 'responsive_web_dtime_tpat_enabled', type: 'boolean', defaultValue: !0 },
     responsive_web_edge_to_edge_m2_14094: {
       name: 'responsive_web_edge_to_edge_m2_14094',
       type: 'experiment',
@@ -4152,6 +4161,7 @@ var manifest = {
       name: 'super_follow_exclusive_tweet_notifications_enabled',
       type: 'string',
     },
+    super_follow_inline_badge_enabled: { name: 'super_follow_inline_badge_enabled', type: 'string' },
     super_follow_web_debug_enabled: { name: 'super_follow_web_debug_enabled', type: 'boolean', defaultValue: !1 },
     super_follow_web_deactivate_enabled: {
       name: 'super_follow_web_deactivate_enabled',
@@ -4569,7 +4579,7 @@ var manifest = {
     vod_attribution_tweet_detail_pivot_enabled: {
       name: 'vod_attribution_tweet_detail_pivot_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     voice_tab_pills_enabled: { name: 'voice_tab_pills_enabled', type: 'string' },
     voice_replies_enabled: { name: 'voice_replies_enabled', type: 'string' },
