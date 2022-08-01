@@ -264,11 +264,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a9ba3e28', 'Private Information'),
           a('d5519f4a', 'Abusive Behavior'),
           a('eb55363c', 'This Space has been reported'),
+          a('f91f00ba', 'Create clip'),
           a('h63a5c3c', 'More'),
           a('jf9f3e54', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
           a('b89c5a50', 'Pause'),
-          a('f91f00ba', 'Create clip'),
           a('e674c120', 'Show captions'),
           a('f45bace4', 'Hide captions'),
           a('ce96f1dc', 'Captions unavailable'),
@@ -1039,6 +1039,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e25a0c3a', 'Promoted Tweet'),
           a('e4c6c30a', 'This Tweet is unavailable.'),
           a('da59404c', 'You’re currently viewing the latest version.'),
+          a('a2411360', 'See a reply you like?'),
+          a(
+            'caee9368',
+            'Now you can pin a reply to your Tweet using the actions menu — those three little dots on a Tweet (...).',
+          ),
+          a('d41305a8', 'Message bubble with pushpin'),
           a('ee79367b', function (e) {
             return 'Level ' + e.conversationTreeDepth + ':'
           }),
@@ -1137,17 +1143,17 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
           a('jead3bc2', 'Why can’t you share this?'),
-          a('bf02eab6', 'Why can’t you view Tweet analytics?'),
-          a(
-            'c8b72f50',
-            'Only the Tweet author and Community moderation team can see it, and engagements are disabled.',
-          ),
+          a('bf02eab6', 'Why can’t you view Tweet analytics?')
+        a('c8b72f50', 'Only the Tweet author and Community moderation team can see it, and engagements are disabled.'),
           a(
             'fa94c9da',
             'Communities are public, so you can read the Tweets — but right now, participation is invite-only.',
           ),
-          a('if9bcebe', 'Communities are public, so you can read the Tweets — but only members can interact with them.')
-        a('h8a62e2b', 'Learn more'),
+          a(
+            'if9bcebe',
+            'Communities are public, so you can read the Tweets — but only members can interact with them.',
+          ),
+          a('h8a62e2b', 'Learn more'),
           a('de2d83d6', 'Bookmark to Folder'),
           a('f14df406', 'Copy link to ad'),
           a('b6f822ba', 'Copy link to Tweet'),
@@ -1329,6 +1335,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('bb8170da', 'Not this time'),
           a('dad5a4b8', 'Your Tweet was sent.'),
+          a('d06ab6c2', 'Your tweet has been edited.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
@@ -1967,6 +1974,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b8b34f54', 'Ratings received'),
           a('j44125ee', 'This contributor hasn’t written any notes yet.'),
           a('da55067c', 'Check this space later!'),
+          a(
+            'h0bddf9c',
+            'If 3 of your 5 recent notes with a status of Helpful or Not Helpful are deemed Not Helpful, your ability to write notes will be temporarily locked.',
+          ),
+          a(
+            'i4014342',
+            'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
+          ),
+          a('j9897a7c', 'Get note writing tips'),
           a('j1a30559', 'Learn more'),
           a('i470ee22', function (e) {
             return '' + e.count
@@ -2301,8 +2317,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
           ),
           a('h3c0f1a2', 'Edit Community name'),
-          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
-          a('a8955490', 'Edit purpose'),
+          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.')
+        a('a8955490', 'Edit purpose'),
           a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
           a('hcf35d0d', function (e) {
@@ -2313,8 +2329,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
-          a('j560c8ea', 'Add rule')
-        a('ab8089ea', 'Reorder'),
+          a('j560c8ea', 'Add rule'),
+          a('ab8089ea', 'Reorder'),
           a('a9ba79c0', 'Good rules make good Communities'),
           a(
             'h5482c7a',
@@ -3593,8 +3609,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f4d69920', 'Remove all location information attached to your Tweets?'),
           a('g00413fb', 'Learn more'),
           a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
-          a('d13e165c', 'TweetDeck Teams'),
-          a('cf24a082', 'Turn on TweetDeck Teams'),
+          a('d13e165c', 'TweetDeck Teams')
+        a('cf24a082', 'Turn on TweetDeck Teams'),
           a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
           a('a2ffab26', 'Allow anyone to add you to their team'),
           a('h69bd4ee', 'Only allow people you follow to add you to their team'),
@@ -3603,8 +3619,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'When this setting is on, you can invite anyone to Tweet from this account using TweetDeck Teams.',
           ),
           a('a90af44e', 'Hide sensitive content'),
-          a('a25e2ec6', 'Remove blocked and muted accounts')
-        a('b827a058', 'Safe search settings updated.'),
+          a('a25e2ec6', 'Remove blocked and muted accounts'),
+          a('b827a058', 'Safe search settings updated.'),
           a('b27c9852', 'Something went wrong updating your safe search settings.'),
           a(
             'c81b9708',
@@ -4800,20 +4816,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gb18f220', 'Original'),
           a('c63d84a4', 'Search for Twitter account'),
           a('b367953c', 'Tweets by'),
-          a('f12858d4', 'Liked by'),
-          a('i31dcd22', 'Article'),
-          a('jdfb861a', 'Confirm your subscription'),
-          a(
-            'b6e3edd8',
-            'An email was sent to you with a link to confirm your subscription. Click the link to finish subscribing to this newsletter.',
-          ),
-          a('cd9a90aa', 'Let’s get you set up'),
-          a(
-            'g30241f6',
-            'Twitter couldn’t find an email address linked to your profile. Subscribe through Revue, Twitter’s newsletter service.',
-          ),
-          a('fcd1fdda', 'Read a sample issue'),
-          a('a976a91e', 'Start reading on Revue')
+          a('f12858d4', 'Liked by')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4833,7 +4836,20 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('ab0decc0', 'Subscribe'),
+        a('i31dcd22', 'Article'),
+          a('jdfb861a', 'Confirm your subscription'),
+          a(
+            'b6e3edd8',
+            'An email was sent to you with a link to confirm your subscription. Click the link to finish subscribing to this newsletter.',
+          ),
+          a('cd9a90aa', 'Let’s get you set up'),
+          a(
+            'g30241f6',
+            'Twitter couldn’t find an email address linked to your profile. Subscribe through Revue, Twitter’s newsletter service.',
+          ),
+          a('fcd1fdda', 'Read a sample issue'),
+          a('a976a91e', 'Start reading on Revue'),
+          a('ab0decc0', 'Subscribe'),
           a('h3281cea', 'You’re in the loop!'),
           a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
           a('b78d4030', 'Thank you for subscribing'),
@@ -5075,7 +5091,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b0ef3100', 'Create rich ad campaigns'),
           a('ff1c5e1a', 'Professional Home'),
           a('e5fe61e0', 'Impressions'),
-          a('daba8ae2', 'Times your Tweets was seen on Twitter'),
+          a('ca5f7162', 'Times your Tweets were seen on Twitter'),
           a('e623137c', 'Engagement rate'),
           a('g384dd98', 'Tweets engagements divided by impressions.'),
           a('aeee0182', 'Profile visits'),
@@ -5586,6 +5602,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f0c37ddb', function (e) {
             return e.fullName + ' on Twitter: "' + e.tweetText + '"'
           }),
+          a('cfe877ca', 'Choose who to follow'),
+          a('e06b864c', 'It looks like you’re enjoying this conversation'),
+          a(
+            'a078ff70',
+            'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
+          ),
           a('j88f27d8', 'Relevant people'),
           a('g9079b94', 'You may only view analytics about your own Tweets.'),
           a('a57daeb2', 'Tweet Analytics'),
@@ -5956,8 +5978,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b69e2f71', function (e) {
             return '@' + e.screenName + ' hasn’t been added to any Lists'
           }),
-          a('e05568cc', 'When they’re added to a List, it’ll show up here.'),
-          a('b86a098a', 'You haven’t been added to any Lists yet'),
+          a('e05568cc', 'When they’re added to a List, it’ll show up here.')
+        a('b86a098a', 'You haven’t been added to any Lists yet'),
           a('h06e09a2', 'When someone adds you to a List, it’ll show up here.'),
           a('gbaa5489', function (e) {
             return 'List memberships for @' + e.screenName
@@ -5974,8 +5996,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c4af3562', 'Autoblocked by Twitter'),
           a('he8516e0', function (e) {
             return '@' + e.screenName
-          })
-        a('ff050533', 'We know we don’t get autoblocks right all the time, so we’re working to improve our detection.'),
+          }),
+          a(
+            'ff050533',
+            'We know we don’t get autoblocks right all the time, so we’re working to improve our detection.',
+          ),
           a('e0da6d02', 'What’s Safety Mode?'),
           a('ia457a1a', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
           a('f5531a44', 'Remember the human'),

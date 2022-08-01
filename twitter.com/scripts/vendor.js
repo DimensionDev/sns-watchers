@@ -127,15 +127,8 @@ window.__SCRIPTS_LOADED__.polyfills &&
                             'string' == typeof n
                               ? d.getPlaceholder(t)
                               : function () {
-                                  for (var e = arguments.length, r = new Array(e), n = 0; n < e; n++)
-                                    r[n] = arguments[n]
-                                  try {
-                                    var i
-                                    return (i = a)[t].apply(i, r)
-                                  } catch (u) {
-                                    var o
-                                    return (o = h.en)[t].apply(o, r)
-                                  }
+                                  var e
+                                  return (e = a)[t].apply(e, arguments)
                                 })
                         : Object.defineProperty(r, t, {
                             get: function () {

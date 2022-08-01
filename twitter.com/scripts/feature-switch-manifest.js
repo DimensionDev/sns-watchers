@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '3fdb7288e8aa6c0bc87297d47a53281df2e3c0de',
+  feature_set_token: '86ba82084d0e67a195d25a531f4d3616af19ae69',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -341,6 +341,7 @@ var manifest = {
     explore_relaunch_enabled: { value: !1 },
     explore_relaunch_onboarding_bar_show_count: { value: 3 },
     focused_timeline_actions_onboarding_likes: { value: 0 },
+    follow_nudge_conversation_enabled: { value: !1 },
     follow_nudge_search_enabled: { value: !1 },
     followers_management_remove_follower_from_followers_list: { value: !0 },
     followers_management_remove_follower_from_profile_screen: { value: !0 },
@@ -470,7 +471,7 @@ var manifest = {
     responsive_web_carousel_v2_cards_safari_variant: { value: 'control' },
     responsive_web_carousel_v2_media_detail_enabled: { value: !1 },
     responsive_web_cleanup_macaw_swift_indexed_db: { value: !0 },
-    responsive_web_collection_ads_enabled: { value: !0 },
+    responsive_web_collection_ads_enabled: { value: !1 },
     responsive_web_communities_slices_enabled: { value: !0 },
     responsive_web_composer_configurable_video_player_enabled: { value: !1 },
     responsive_web_continue_as_always_enabled: { value: !1 },
@@ -495,6 +496,7 @@ var manifest = {
     responsive_web_drew_timeline_block_enabled: { value: !1 },
     responsive_web_dtime_fccts_enabled: { value: !1 },
     responsive_web_dtime_show_new_tweets_enabled: { value: !0 },
+    responsive_web_dtime_timelines_directory_enabled: { value: !1 },
     responsive_web_dtime_tpat_enabled: { value: !0 },
     responsive_web_edit_tweet_api_enabled: { value: !1 },
     responsive_web_edit_tweet_composition_enabled: { value: !1 },
@@ -588,6 +590,7 @@ var manifest = {
     responsive_web_logged_out_gating_13622_ddg: { value: '' },
     responsive_web_logged_out_gating_14123_ddg: { value: '' },
     responsive_web_logged_out_gating_14788_ddg: { value: '' },
+    responsive_web_logged_out_gating_14992_ddg: { value: '' },
     responsive_web_logged_out_gating_non_holdback_ddgs: { value: '' },
     responsive_web_login_input_type_email_enabled: { value: !1 },
     responsive_web_login_signup_sheet_app_install_cta_enabled: { value: !0 },
@@ -690,7 +693,7 @@ var manifest = {
     responsive_web_twitter_article_tweet_own_notes_enabled: { value: !1 },
     responsive_web_twitter_article_view_enabled: { value: !0 },
     responsive_web_typeahead_reverse_bolding_enabled: { value: !0 },
-    responsive_web_uc_gql_enabled: { value: !1 },
+    responsive_web_uc_gql_enabled: { value: !0 },
     responsive_web_unsupported_entry_tombstone: { value: !1 },
     responsive_web_use_app_prompt_copy_variant: { value: '' },
     responsive_web_use_app_prompt_enabled: { value: !1 },
@@ -900,6 +903,7 @@ var manifest = {
     tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: !1 },
     tweet_with_visibility_results_prefer_gql_tombstones_enabled: { value: !1 },
     user_display_name_max_limit: { value: 50 },
+    verified_phone_label_enabled: { value: !1 },
     vibe_api_enabled: { value: !0 },
     vibe_tweet_context_enabled: { value: !0 },
     vod_attribution_tweet_detail_pivot_enabled: { value: !0 },
@@ -914,7 +918,6 @@ var manifest = {
     voice_rooms_recent_search_audiospace_ring_enabled: { value: !0 },
     voice_rooms_replay_consumption: { value: !0 },
     voice_rooms_search_results_page_audiospace_ring_enabled: { value: !1 },
-    voice_rooms_share_dock_enabled: { value: !0 },
     voice_rooms_sharing_listening_data_with_followers_setting_enabled: { value: !0 },
     voice_rooms_speaking_enabled: { value: !1 },
     voice_rooms_typeahead_audiospace_ring_enabled: { value: !0 },
@@ -1383,6 +1386,7 @@ var manifest = {
     c9s_edit_community_theme_enabled: { name: 'c9s_edit_community_theme_enabled', type: 'string' },
     c9s_rule_removal_enabled: { name: 'c9s_rule_removal_enabled', type: 'string' },
     c9s_members_list_search_enabled: { name: 'c9s_members_list_search_enabled', type: 'boolean', defaultValue: !0 },
+    c9s_tweet_anatomy_moderator_badge_enabled: { name: 'c9s_tweet_anatomy_moderator_badge_enabled', type: 'string' },
     c9s_tweet_anatomy_conversation_enabled: { name: 'c9s_tweet_anatomy_conversation_enabled', type: 'string' },
     c9s_edit_community_membership_settings_enabled: {
       name: 'c9s_edit_community_membership_settings_enabled',
@@ -1747,10 +1751,6 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    explore_relaunch_peek_bounce_onboarding_max_loop_count: {
-      name: 'explore_relaunch_peek_bounce_onboarding_max_loop_count',
-      type: 'string',
-    },
     explore_relaunch_enable_immersive_web: {
       name: 'explore_relaunch_enable_immersive_web',
       type: 'boolean',
@@ -1765,6 +1765,10 @@ var manifest = {
     explore_relaunch_onboarding_show_never: { name: 'explore_relaunch_onboarding_show_never', type: 'string' },
     explore_relaunch_show_onboarding_card_always: {
       name: 'explore_relaunch_show_onboarding_card_always',
+      type: 'string',
+    },
+    explore_relaunch_peek_bounce_onboarding_delay: {
+      name: 'explore_relaunch_peek_bounce_onboarding_delay',
       type: 'string',
     },
     explore_relaunch_negative_feedback_button_enabled: {
@@ -1797,12 +1801,20 @@ var manifest = {
       name: 'explore_relaunch_peek_bounce_onboarding_enabled',
       type: 'string',
     },
+    explore_relaunch_peek_bounce_onboarding_loop_count: {
+      name: 'explore_relaunch_peek_bounce_onboarding_loop_count',
+      type: 'string',
+    },
     explore_relaunch_auto_refresh_timeout_minutes: {
       name: 'explore_relaunch_auto_refresh_timeout_minutes',
       type: 'string',
     },
     explore_relaunch_items_left_fetch_threshold: {
       name: 'explore_relaunch_items_left_fetch_threshold',
+      type: 'string',
+    },
+    explore_relaunch_peek_bounce_onboarding_per_video_show_count: {
+      name: 'explore_relaunch_peek_bounce_onboarding_per_video_show_count',
       type: 'string',
     },
     explore_relaunch_peek_bounce_onboarding_min_watch_time_sec: {
@@ -1812,10 +1824,6 @@ var manifest = {
     explore_relaunch_inline_comments_enabled: { name: 'explore_relaunch_inline_comments_enabled', type: 'string' },
     explore_relaunch_enable_immersive_player_across_twitter: {
       name: 'explore_relaunch_enable_immersive_player_across_twitter',
-      type: 'string',
-    },
-    explore_relaunch_peek_bounce_onboarding_loop_delay: {
-      name: 'explore_relaunch_peek_bounce_onboarding_loop_delay',
       type: 'string',
     },
     explore_relaunch_onboarding_show_once: { name: 'explore_relaunch_onboarding_show_once', type: 'string' },
@@ -1853,7 +1861,7 @@ var manifest = {
     follow_nudge_search_enabled: { name: 'follow_nudge_search_enabled', type: 'boolean', defaultValue: !1 },
     follow_nudge_replies_enabled: { name: 'follow_nudge_replies_enabled', type: 'string' },
     follow_nudge_media_expansion_enabled: { name: 'follow_nudge_media_expansion_enabled', type: 'string' },
-    follow_nudge_conversation_enabled: { name: 'follow_nudge_conversation_enabled', type: 'string' },
+    follow_nudge_conversation_enabled: { name: 'follow_nudge_conversation_enabled', type: 'boolean', defaultValue: !1 },
     follow_nudge_focal_enabled: { name: 'follow_nudge_focal_enabled', type: 'string' },
     follow_nudge_search_14518: {
       name: 'follow_nudge_search_14518',
@@ -2192,11 +2200,6 @@ var manifest = {
     },
     interests_incremental_holdback_2022_h1_12424: {
       name: 'interests_incremental_holdback_2022_h1_12424',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
-    ios_edge_to_edge_cta_button_13645: {
-      name: 'ios_edge_to_edge_cta_button_13645',
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
@@ -2866,11 +2869,7 @@ var manifest = {
     responsive_web_collection_ads_enabled: {
       name: 'responsive_web_collection_ads_enabled',
       type: 'boolean',
-      defaultValue: !0,
-    },
-    responsive_web_collection_ads_interaction_type: {
-      name: 'responsive_web_collection_ads_interaction_type',
-      type: 'string',
+      defaultValue: !1,
     },
     responsive_web_communities_slices_enabled: {
       name: 'responsive_web_communities_slices_enabled',
@@ -2992,7 +2991,8 @@ var manifest = {
     responsive_web_dtime_tpat_enabled: { name: 'responsive_web_dtime_tpat_enabled', type: 'boolean', defaultValue: !0 },
     responsive_web_dtime_timelines_directory_enabled: {
       name: 'responsive_web_dtime_timelines_directory_enabled',
-      type: 'string',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_edge_to_edge_m2_14094: {
       name: 'responsive_web_edge_to_edge_m2_14094',
@@ -3270,7 +3270,11 @@ var manifest = {
       type: 'string',
       defaultValue: '',
     },
-    responsive_web_logged_out_gating_14992_ddg: { name: 'responsive_web_logged_out_gating_14992_ddg', type: 'string' },
+    responsive_web_logged_out_gating_14992_ddg: {
+      name: 'responsive_web_logged_out_gating_14992_ddg',
+      type: 'string',
+      defaultValue: '',
+    },
     responsive_web_logged_out_gating_13622_ddg: {
       name: 'responsive_web_logged_out_gating_13622_ddg',
       type: 'string',
@@ -3795,7 +3799,7 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
-    responsive_web_uc_gql_enabled: { name: 'responsive_web_uc_gql_enabled', type: 'boolean', defaultValue: !1 },
+    responsive_web_uc_gql_enabled: { name: 'responsive_web_uc_gql_enabled', type: 'boolean', defaultValue: !0 },
     responsive_web_uc_gql_14309: {
       name: 'responsive_web_uc_gql_14309',
       type: 'experiment',
@@ -4065,6 +4069,16 @@ var manifest = {
     standardized_nudges_misinfo: { name: 'standardized_nudges_misinfo', type: 'boolean', defaultValue: !0 },
     stateful_login_enabled: { name: 'stateful_login_enabled', type: 'boolean', defaultValue: !0 },
     stateful_login_ocf_background_enabled: { name: 'stateful_login_ocf_background_enabled', type: 'string' },
+    status_consumption_15032: {
+      name: 'status_consumption_15032',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
+    status_experiment_14463: {
+      name: 'status_experiment_14463',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
     subscriptions_sign_up_force_billing_path: { name: 'subscriptions_sign_up_force_billing_path', type: 'string' },
     subscriptions_feature_1005: { name: 'subscriptions_feature_1005', type: 'boolean', defaultValue: !0 },
     subscriptions_feature_1011: { name: 'subscriptions_feature_1011', type: 'boolean', defaultValue: !0 },
@@ -4534,6 +4548,11 @@ var manifest = {
       type: 'object',
       defaultValue: ['autoplay'],
     },
+    tweet_stats_frequency_14329: {
+      name: 'tweet_stats_frequency_14329',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
     tweet_translation_timeline_enabled: {
       name: 'tweet_translation_timeline_enabled',
       type: 'boolean',
@@ -4573,6 +4592,7 @@ var manifest = {
       enumeration_values: ['control', 'treatment_stp', 'treatment_realgraph', 'treatment_mutuals_recency'],
     },
     user_display_name_max_limit: { name: 'user_display_name_max_limit', type: 'number', defaultValue: 50 },
+    verified_phone_label_enabled: { name: 'verified_phone_label_enabled', type: 'boolean', defaultValue: !1 },
     vibe_api_enabled: { name: 'vibe_api_enabled', type: 'boolean', defaultValue: !0 },
     vibe_composer_enabled: { name: 'vibe_composer_enabled', type: 'string' },
     vibe_tweet_context_enabled: { name: 'vibe_tweet_context_enabled', type: 'boolean', defaultValue: !0 },
@@ -4727,7 +4747,7 @@ var manifest = {
     },
     voice_rooms_participants_endpoint_enabled: { name: 'voice_rooms_participants_endpoint_enabled', type: 'string' },
     voice_rooms_replay_consumption: { name: 'voice_rooms_replay_consumption', type: 'boolean', defaultValue: !0 },
-    voice_rooms_share_dock_enabled: { name: 'voice_rooms_share_dock_enabled', type: 'boolean', defaultValue: !0 },
+    voice_rooms_share_dock_enabled: { name: 'voice_rooms_share_dock_enabled', type: 'string' },
     voice_rooms_voice_detection_enabled: { name: 'voice_rooms_voice_detection_enabled', type: 'string' },
     voice_rooms_ga_listener_nux_enabled: { name: 'voice_rooms_ga_listener_nux_enabled', type: 'string' },
     voice_rooms_ended_follow_cta_enabled: { name: 'voice_rooms_ended_follow_cta_enabled', type: 'string' },
