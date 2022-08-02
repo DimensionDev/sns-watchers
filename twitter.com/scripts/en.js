@@ -354,6 +354,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bcd81cac', 'Preferences'),
           a('i1d35d74', 'TweetDeck'),
           a('c9d41314', 'Twitter for Professionals'),
+          a('ff1c5e1a', 'Professional Home'),
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('d9ef2842', 'Unread items'),
           a('dc931afc', 'Communities (New items)'),
@@ -898,6 +899,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('afb7e8f8', 'Read Article'),
           a('d6e2f9be', 'Loading timeline'),
           a('afb4c24a', 'No items'),
+          a('ib65b1c6', 'Sign up with Apple'),
+          a('f55cebb8', 'Sign in with Apple'),
+          a('dcc304d6', 'Continue with Apple'),
           a('e43138c5', function (e) {
             return 'Follow ' + e.name
           }),
@@ -1139,12 +1143,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ba352986', 'You can’t reply … yet'),
           a('cb18be32', 'You can’t do that … yet'),
           a('ae2c8a1e', 'Why can’t you reply to this?'),
-          a('adf4892e', 'Why can’t you downvote this?'),
-          a('afe7ba26', 'Why can’t you Like this?'),
+          a('adf4892e', 'Why can’t you downvote this?')
+        a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
           a('jead3bc2', 'Why can’t you share this?'),
-          a('bf02eab6', 'Why can’t you view Tweet analytics?')
-        a('c8b72f50', 'Only the Tweet author and Community moderation team can see it, and engagements are disabled.'),
+          a('bf02eab6', 'Why can’t you view Tweet analytics?'),
+          a(
+            'c8b72f50',
+            'Only the Tweet author and Community moderation team can see it, and engagements are disabled.',
+          ),
           a(
             'fa94c9da',
             'Communities are public, so you can read the Tweets — but right now, participation is invite-only.',
@@ -1335,7 +1342,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('bb8170da', 'Not this time'),
           a('dad5a4b8', 'Your Tweet was sent.'),
-          a('d06ab6c2', 'Your tweet has been edited.'),
+          a('fd7c845c', 'Your Tweet has been edited.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
@@ -1649,9 +1656,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('b50ea616', 'New to Twitter?'),
           a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
-          a('ib65b1c6', 'Sign up with Apple'),
-          a('f55cebb8', 'Sign in with Apple'),
-          a('dcc304d6', 'Continue with Apple'),
           a('fd6473fa', 'Loading recommendations for users to follow'),
           a('a526aa66', 'Who to follow'),
           a('ef625010', 'You might like'),
@@ -2316,9 +2320,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
           ),
-          a('h3c0f1a2', 'Edit Community name'),
-          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.')
-        a('a8955490', 'Edit purpose'),
+          a('h3c0f1a2', 'Edit Community name')
+        a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
+          a('a8955490', 'Edit purpose'),
           a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
           a('hcf35d0d', function (e) {
@@ -3608,9 +3612,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h83e5c06', 'Remove all location information attached to your Tweets'),
           a('f4d69920', 'Remove all location information attached to your Tweets?'),
           a('g00413fb', 'Learn more'),
-          a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
-          a('d13e165c', 'TweetDeck Teams')
-        a('cf24a082', 'Turn on TweetDeck Teams'),
+          a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.')
+        a('d13e165c', 'TweetDeck Teams'),
+          a('cf24a082', 'Turn on TweetDeck Teams'),
           a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
           a('a2ffab26', 'Allow anyone to add you to their team'),
           a('h69bd4ee', 'Only allow people you follow to add you to their team'),
@@ -4815,8 +4819,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d497b854', 'Retweets'),
           a('gb18f220', 'Original'),
           a('c63d84a4', 'Search for Twitter account'),
-          a('b367953c', 'Tweets by'),
-          a('f12858d4', 'Liked by')
+          a('b367953c', 'Tweets by')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4836,7 +4839,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('i31dcd22', 'Article'),
+        a('f12858d4', 'Liked by'),
+          a('i31dcd22', 'Article'),
           a('jdfb861a', 'Confirm your subscription'),
           a(
             'b6e3edd8',
@@ -5089,7 +5093,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f6a2233a', 'Manage permissions across accounts'),
           a('b0b439c8', 'Twitter Business Settings'),
           a('b0ef3100', 'Create rich ad campaigns'),
-          a('ff1c5e1a', 'Professional Home'),
           a('e5fe61e0', 'Impressions'),
           a('ca5f7162', 'Times your Tweets were seen on Twitter'),
           a('e623137c', 'Engagement rate'),

@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '86ba82084d0e67a195d25a531f4d3616af19ae69',
+  feature_set_token: '552d543406019bade7be2c60f90369d12a0b1013',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -497,6 +497,7 @@ var manifest = {
     responsive_web_dtime_fccts_enabled: { value: !1 },
     responsive_web_dtime_show_new_tweets_enabled: { value: !0 },
     responsive_web_dtime_timelines_directory_enabled: { value: !1 },
+    responsive_web_dtime_timelines_preview_enabled: { value: !1 },
     responsive_web_dtime_tpat_enabled: { value: !0 },
     responsive_web_edit_tweet_api_enabled: { value: !1 },
     responsive_web_edit_tweet_composition_enabled: { value: !1 },
@@ -763,6 +764,7 @@ var manifest = {
     spaces_2022_h2_clipping_consumption: { value: !1 },
     spaces_2022_h2_clipping_duration_seconds: { value: 30 },
     spaces_2022_h2_follow_host: { value: !0 },
+    spaces_2022_h2_spacebar_web_use_topnavbar: { value: !1 },
     standardized_nudges_misinfo: { value: !0 },
     stateful_login_enabled: { value: !0 },
     subscriptions_blue_premium_labeling_enabled: { value: !0 },
@@ -1679,6 +1681,7 @@ var manifest = {
       name: 'dm_share_sheet_updated_more_options_enabled',
       type: 'string',
     },
+    dm_vdl_android_tweet_quickshare_enabled: { name: 'dm_vdl_android_tweet_quickshare_enabled', type: 'string' },
     dm_vdl_chat_p0_enabled: { name: 'dm_vdl_chat_p0_enabled', type: 'boolean', defaultValue: !1 },
     dm_vdl_enabled: { name: 'dm_vdl_enabled', type: 'boolean', defaultValue: !0 },
     dm_vdl_inbox_p0_enabled: { name: 'dm_vdl_inbox_p0_enabled', type: 'boolean', defaultValue: !0 },
@@ -1847,6 +1850,11 @@ var manifest = {
       name: 'explore_relaunch_immersive_heavy_ranker_v0_13715',
       type: 'experiment',
       enumeration_values: ['control', 'heavy_ranker', 'random'],
+    },
+    explore_video_carousel_14918: {
+      name: 'explore_video_carousel_14918',
+      type: 'experiment',
+      enumeration_values: ['control', 'video_carousel_onboarding_3', 'video_carousel_onboarding_2k'],
     },
     first_impressions_on_rweb_14729: {
       name: 'first_impressions_on_rweb_14729',
@@ -2986,7 +2994,8 @@ var manifest = {
     },
     responsive_web_dtime_timelines_preview_enabled: {
       name: 'responsive_web_dtime_timelines_preview_enabled',
-      type: 'string',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_dtime_tpat_enabled: { name: 'responsive_web_dtime_tpat_enabled', type: 'boolean', defaultValue: !0 },
     responsive_web_dtime_timelines_directory_enabled: {
@@ -4060,6 +4069,14 @@ var manifest = {
       name: 'spaces_2022_h2_holdback_13972',
       type: 'experiment',
       enumeration_values: ['control', 'spaces_2022_h2_holdback'],
+    },
+    spaces_2022_h2_spacebar_holdback_canary: { name: 'spaces_2022_h2_spacebar_holdback_canary', type: 'string' },
+    spaces_2022_h2_spacebar: { name: 'spaces_2022_h2_spacebar', type: 'string' },
+    spaces_2022_h2_spacebar_use_mock_data: { name: 'spaces_2022_h2_spacebar_use_mock_data', type: 'string' },
+    spaces_2022_h2_spacebar_web_use_topnavbar: {
+      name: 'spaces_2022_h2_spacebar_web_use_topnavbar',
+      type: 'boolean',
+      defaultValue: !1,
     },
     spaces_host_analytics_holdback_14239: {
       name: 'spaces_host_analytics_holdback_14239',
