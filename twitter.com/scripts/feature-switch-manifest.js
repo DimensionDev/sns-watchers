@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '552d543406019bade7be2c60f90369d12a0b1013',
+  feature_set_token: '062dc701b7ba8795aa683d69b0f92ba81da9e8fd',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -256,7 +256,7 @@ var manifest = {
     arkose_challenge_signup_web: { value: 'DF58DD3B-DFCC-4502-91FA-EDC0DC385CFF' },
     author_moderated_replies_urt_container_enabled: { value: !1 },
     branded_like_preview_enabled: { value: !1 },
-    c9s_auto_collapse_community_detail_header_enabled: { value: !1 },
+    c9s_auto_collapse_community_detail_header_enabled: { value: !0 },
     c9s_communities_search_enabled: { value: !0 },
     c9s_community_composer_hashtag_suggestions_enabled: { value: !1 },
     c9s_community_creation_enabled: { value: !0 },
@@ -760,8 +760,8 @@ var manifest = {
     smbo_legacy_pac_is_in_follow_position_test: { value: !1 },
     smbo_legacy_pac_is_social_context_enabled_test: { value: !1 },
     social_context_and_topic_context_refresh_alignment_enabled: { value: !1 },
-    spaces_2022_h2_clipping: { value: !1 },
-    spaces_2022_h2_clipping_consumption: { value: !1 },
+    spaces_2022_h2_clipping: { value: !0 },
+    spaces_2022_h2_clipping_consumption: { value: !0 },
     spaces_2022_h2_clipping_duration_seconds: { value: 30 },
     spaces_2022_h2_follow_host: { value: !0 },
     spaces_2022_h2_spacebar_web_use_topnavbar: { value: !1 },
@@ -932,7 +932,6 @@ var manifest = {
     web_video_playback_rate_enabled: { value: !1 },
     web_video_player_size_cap_disabled: { value: !1 },
     web_video_prefetch_playlist_autoplay_disabled: { value: !1 },
-    web_video_smart_buffering_enabled: { value: !1 },
     web_video_transcribed_captions_enabled: { value: !1 },
   },
   debug: {
@@ -1324,7 +1323,7 @@ var manifest = {
     c9s_auto_collapse_community_detail_header_enabled: {
       name: 'c9s_auto_collapse_community_detail_header_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     c9s_unread_indicator_global_enabled: {
       name: 'c9s_unread_indicator_global_enabled',
@@ -1774,6 +1773,10 @@ var manifest = {
       name: 'explore_relaunch_peek_bounce_onboarding_delay',
       type: 'string',
     },
+    explore_relaunch_teach_after_view_onboarding_show_count: {
+      name: 'explore_relaunch_teach_after_view_onboarding_show_count',
+      type: 'string',
+    },
     explore_relaunch_negative_feedback_button_enabled: {
       name: 'explore_relaunch_negative_feedback_button_enabled',
       type: 'string',
@@ -1829,6 +1832,10 @@ var manifest = {
       name: 'explore_relaunch_enable_immersive_player_across_twitter',
       type: 'string',
     },
+    explore_relaunch_teach_after_view_onboarding_enabled: {
+      name: 'explore_relaunch_teach_after_view_onboarding_enabled',
+      type: 'string',
+    },
     explore_relaunch_onboarding_show_once: { name: 'explore_relaunch_onboarding_show_once', type: 'string' },
     explore_relaunch_basenji_14269: {
       name: 'explore_relaunch_basenji_14269',
@@ -1845,6 +1852,11 @@ var manifest = {
         'engage_linger_features_ranking',
         'engage_features',
       ],
+    },
+    explore_relaunch_chihuahua_14922: {
+      name: 'explore_relaunch_chihuahua_14922',
+      type: 'experiment',
+      enumeration_values: ['control', 'hourly', 'daily'],
     },
     explore_relaunch_immersive_heavy_ranker_v0_13715: {
       name: 'explore_relaunch_immersive_heavy_ranker_v0_13715',
@@ -3773,6 +3785,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_twitter_article_gif_picker_enabled: {
+      name: 'responsive_web_twitter_article_gif_picker_enabled',
+      type: 'string',
+    },
     responsive_web_twitter_article_geo_gated: {
       name: 'responsive_web_twitter_article_geo_gated',
       type: 'boolean',
@@ -3809,11 +3825,6 @@ var manifest = {
       defaultValue: !0,
     },
     responsive_web_uc_gql_enabled: { name: 'responsive_web_uc_gql_enabled', type: 'boolean', defaultValue: !0 },
-    responsive_web_uc_gql_14309: {
-      name: 'responsive_web_uc_gql_14309',
-      type: 'experiment',
-      enumeration_values: ['control', 'enabled'],
-    },
     responsive_web_unsupported_entry_tombstone: {
       name: 'responsive_web_unsupported_entry_tombstone',
       type: 'boolean',
@@ -4051,11 +4062,11 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    spaces_2022_h2_clipping: { name: 'spaces_2022_h2_clipping', type: 'boolean', defaultValue: !1 },
+    spaces_2022_h2_clipping: { name: 'spaces_2022_h2_clipping', type: 'boolean', defaultValue: !0 },
     spaces_2022_h2_clipping_consumption: {
       name: 'spaces_2022_h2_clipping_consumption',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     spaces_2022_h2_clipping_duration_seconds: {
       name: 'spaces_2022_h2_clipping_duration_seconds',
@@ -4192,7 +4203,6 @@ var manifest = {
       name: 'super_follow_exclusive_tweet_notifications_enabled',
       type: 'string',
     },
-    super_follow_inline_badge_enabled: { name: 'super_follow_inline_badge_enabled', type: 'string' },
     super_follow_web_debug_enabled: { name: 'super_follow_web_debug_enabled', type: 'boolean', defaultValue: !1 },
     super_follow_web_deactivate_enabled: {
       name: 'super_follow_web_deactivate_enabled',
@@ -4417,11 +4427,6 @@ var manifest = {
       name: 'trusted_friends_m2_composer_changes_ios_14589',
       type: 'experiment',
       enumeration_values: ['control', 'change_copy', 'remove_popup_and_change_copy', 'remove_popup'],
-    },
-    turkish_toxic_reply_nudge_14571: {
-      name: 'turkish_toxic_reply_nudge_14571',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     tweet_limited_actions_config_dpa_enabled: { name: 'tweet_limited_actions_config_dpa_enabled', type: 'string' },
     tweet_limited_actions_config_community_tweet_member: {
@@ -4885,7 +4890,6 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    web_video_smart_buffering_enabled: { name: 'web_video_smart_buffering_enabled', type: 'boolean', defaultValue: !1 },
     web_video_transcribed_captions_enabled: {
       name: 'web_video_transcribed_captions_enabled',
       type: 'boolean',

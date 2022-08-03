@@ -337,6 +337,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i83d4f14', 'Follower requests'),
           a('f66d24be', 'Help Center'),
           a('h54e6138', 'Keyboard shortcuts'),
+          a('hc899e1a', 'Timelines'),
           a('ae1bbb26', 'Log out'),
           a('a58e0e51', function (e) {
             return 'Log out @' + e.screenName
@@ -1142,9 +1143,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d0270ae2', 'This Tweet is hidden'),
           a('ba352986', 'You can’t reply … yet'),
           a('cb18be32', 'You can’t do that … yet'),
-          a('ae2c8a1e', 'Why can’t you reply to this?'),
-          a('adf4892e', 'Why can’t you downvote this?')
-        a('afe7ba26', 'Why can’t you Like this?'),
+          a('ae2c8a1e', 'Why can’t you reply to this?')
+        a('adf4892e', 'Why can’t you downvote this?'),
+          a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
           a('jead3bc2', 'Why can’t you share this?'),
           a('bf02eab6', 'Why can’t you view Tweet analytics?'),
@@ -1343,6 +1344,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bb8170da', 'Not this time'),
           a('dad5a4b8', 'Your Tweet was sent.'),
           a('fd7c845c', 'Your Tweet has been edited.'),
+          a('jd894d9a', 'Your Tweet was sent. You can edit it for the next 30 minutes.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
@@ -1987,6 +1989,14 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
           ),
           a('j9897a7c', 'Get note writing tips'),
+          a('ee7b8050', 'You are temporarily locked out from writing new notes.'),
+          a(
+            'j2ef72c2',
+            'Because 3 of your 5 recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
+          ),
+          a('f6c8613e', 'Feedback from contributors on your notes:'),
+          a('c23e67ea', 'Unlock your ability to write'),
+          a('ac71a5a0', 'Rate notes that need help'),
           a('j1a30559', 'Learn more'),
           a('i470ee22', function (e) {
             return '' + e.count
@@ -2000,6 +2010,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return '' + e.count
           }),
           a('i18e27a8', 'Unhelpful'),
+          a('c0d12652', 'send us feedback'),
           a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
           a(
             'e8c599f0',
@@ -2052,12 +2063,45 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('d004c768', 'Notes that need more ratings'),
           a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
+          a('b2ec74fe', 'close'),
           a('d68a370c', 'Last update: '),
           a('g97a2d6c', 'Learn More'),
           a('cf30af22', 'Did you know?'),
           a(
             'd145b0fa',
             'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
+          ),
+          a('b9793c9a', 'You haven’t written any notes yet'),
+          a('bed66f92', 'Here’s how to start:'),
+          a('a3ca686a', 'See tips for writing helpful notes'),
+          a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+          a(
+            'b6203a2e',
+            'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
+          ),
+          a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
+          a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
+          a(
+            'f61e8cb4',
+            'Birdwatch doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
+          ),
+          a('a0c552ee', 'Your impact will be shown here'),
+          a('a4e5ea3c', 'You haven’t rated any notes yet'),
+          a('g9a28bde', 'Browse notes that need help'),
+          a('c76cd3da', 'Browse the Birdwatch home'),
+          a(
+            'fecae168',
+            'There, you’ll find notes that need more ratings, and where your rating specifically can help.',
+          ),
+          a('h525e29e', 'Help find notes that could be helpful to many people'),
+          a(
+            'e03146c0',
+            'The best Birdwatch notes directly address the Tweet’s claim, are written in helpful and clear language, and add sources that a wide range of people would find reliable.',
+          ),
+          a('f636b582', 'Help find notes that aren’t helpful'),
+          a(
+            'fbb8bb34',
+            'Rating low quality notes improves Birdwatch by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
           ),
           a('ff3e0be2', 'Join Birdwatch'),
           a('i1781e26', 'No Birdwatch notes yet'),
@@ -2284,8 +2328,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'e538848c',
             'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
-          ),
-          a('j49e6aa2', 'Yes, I want to leave'),
+          )
+        a('j49e6aa2', 'Yes, I want to leave'),
           a('gfccba44', 'Member requests'),
           a('dde5f323', function (e) {
             return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
@@ -2320,8 +2364,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
           ),
-          a('h3c0f1a2', 'Edit Community name')
-        a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
+          a('h3c0f1a2', 'Edit Community name'),
+          a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
           a('a8955490', 'Edit purpose'),
           a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a('dbda7bec', 'Change theme'),
@@ -3569,8 +3613,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
           a('d70fceac', 'This password will expire in one hour.'),
           a('c21037d0', 'Country'),
-          a('j924d222', 'Change country'),
-          a('j01f061b', 'Learn more'),
+          a('j924d222', 'Change country')
+        a('j01f061b', 'Learn more'),
           a('f953f53a', 'Change display language'),
           a(
             'b67e1fc0',
@@ -3612,8 +3656,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h83e5c06', 'Remove all location information attached to your Tweets'),
           a('f4d69920', 'Remove all location information attached to your Tweets?'),
           a('g00413fb', 'Learn more'),
-          a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.')
-        a('d13e165c', 'TweetDeck Teams'),
+          a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
+          a('d13e165c', 'TweetDeck Teams'),
           a('cf24a082', 'Turn on TweetDeck Teams'),
           a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
           a('a2ffab26', 'Allow anyone to add you to their team'),
@@ -4782,8 +4826,27 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'd6352bf8',
             'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
-          ),
-          a('b81437d2', 'Select visibility mode'),
+          )
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (
+            (i =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+            i(e, t)
+          )
+        }
+        a('b81437d2', 'Select visibility mode'),
           a('i693139c', 'Contains sensitive content'),
           a('b198b980', 'Your Moment’s visibility settings were updated.'),
           a('f6326a46', 'Publish Moment to see added Tweets'),
@@ -4819,27 +4882,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d497b854', 'Retweets'),
           a('gb18f220', 'Original'),
           a('c63d84a4', 'Search for Twitter account'),
-          a('b367953c', 'Tweets by')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (
-            (i =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            i(e, t)
-          )
-        }
-        a('f12858d4', 'Liked by'),
+          a('b367953c', 'Tweets by'),
+          a('f12858d4', 'Liked by'),
           a('i31dcd22', 'Article'),
           a('jdfb861a', 'Confirm your subscription'),
           a(
@@ -5943,8 +5987,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eb7b54be', 'Loading Lists'),
           a('a9ca06d2', 'Information'),
           a('b689c7e0', 'You’re seeing top Tweets first'),
-          a('f9bef354', 'See latest Tweets'),
-          a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
+          a('f9bef354', 'See latest Tweets')
+        a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
           a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
           a('c7294984', 'Report List'),
@@ -5981,8 +6025,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b69e2f71', function (e) {
             return '@' + e.screenName + ' hasn’t been added to any Lists'
           }),
-          a('e05568cc', 'When they’re added to a List, it’ll show up here.')
-        a('b86a098a', 'You haven’t been added to any Lists yet'),
+          a('e05568cc', 'When they’re added to a List, it’ll show up here.'),
+          a('b86a098a', 'You haven’t been added to any Lists yet'),
           a('h06e09a2', 'When someone adds you to a List, it’ll show up here.'),
           a('gbaa5489', function (e) {
             return 'List memberships for @' + e.screenName
@@ -8001,6 +8045,24 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'c6726127',
                 get: function () {
                   return ['', ' ']
+                },
+              },
+              {
+                key: 'd828b9eb',
+                get: function () {
+                  return ['This feature is new to Birdwatch, feel free to ']
+                },
+              },
+              {
+                key: 'a94c6db7',
+                get: function () {
+                  return [
+                    'Increase your Rating Impact to ' +
+                      this.props.requiredRatingImpact +
+                      ', from your current score of ' +
+                      this.props.currentRatingImpact +
+                      '.',
+                  ]
                 },
               },
               {
