@@ -512,6 +512,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c4fdbd16', 'You cannot send messages to users that you have blocked.'),
           a('hf3e7e38', 'Your message could not be sent.'),
           a('i8ecae5c', 'You can no longer send messages to this person.'),
+          a('dd8272fd', function (e) {
+            return e.count + ' new message' + n(e.count, '', 's')
+          }),
           a('c1d4ac84', 'You changed the group photo'),
           a('abc7b032', 'The group photo was changed'),
           a('i263b294', 'You joined the conversation'),
@@ -1142,9 +1145,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f755f710', 'Got It'),
           a('d0270ae2', 'This Tweet is hidden'),
           a('ba352986', 'You can’t reply … yet'),
-          a('cb18be32', 'You can’t do that … yet'),
-          a('ae2c8a1e', 'Why can’t you reply to this?')
-        a('adf4892e', 'Why can’t you downvote this?'),
+          a('cb18be32', 'You can’t do that … yet')
+        a('ae2c8a1e', 'Why can’t you reply to this?'),
+          a('adf4892e', 'Why can’t you downvote this?'),
           a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
           a('jead3bc2', 'Why can’t you share this?'),
@@ -2324,12 +2327,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gc00d212', 'Support and resources'),
           a('a997eca0', 'Help when you need it'),
           a('c6ea29a2', 'Leave moderation team'),
-          a('a6e13fac', 'Are you sure you want to leave the mod team?'),
-          a(
-            'e538848c',
-            'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
-          )
-        a('j49e6aa2', 'Yes, I want to leave'),
+          a('a6e13fac', 'Are you sure you want to leave the mod team?')
+        a(
+          'e538848c',
+          'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
+        ),
+          a('j49e6aa2', 'Yes, I want to leave'),
           a('gfccba44', 'Member requests'),
           a('dde5f323', function (e) {
             return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
@@ -2649,6 +2652,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b211849f', function (e) {
             return e.distance + ' m'
           }),
+          a('cfe877ca', 'Choose who to follow'),
+          a('j231d352', 'Follow all'),
           a('a1b7d300', 'user'),
           a('dbc85148', 'Select a message'),
           a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
@@ -3610,11 +3615,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
           a('g247dc1c', 'Loading temporary password'),
-          a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
-          a('d70fceac', 'This password will expire in one hour.'),
+          a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.')
+        a('d70fceac', 'This password will expire in one hour.'),
           a('c21037d0', 'Country'),
-          a('j924d222', 'Change country')
-        a('j01f061b', 'Learn more'),
+          a('j924d222', 'Change country'),
+          a('j01f061b', 'Learn more'),
           a('f953f53a', 'Change display language'),
           a(
             'b67e1fc0',
@@ -4204,9 +4209,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i84c5de8', 'Creator applications coming soon'),
           a('d9c11740', 'Check back soon to be able to apply to join the Super Follows program.'),
           a('feb54b40', 'Be one of the first to apply'),
-          a('bac156a6', 'Your account meets our minimum application requirements for Super Follows.'),
+          a('c9d65788', 'Good news — you meet our eligibility requirements for Super Follows. Ready to apply?'),
           a('a3a20a10', 'Check back later'),
-          a('b26ae508', 'Here are the minimum application requirements for Super Follows.'),
+          a('g4198668', 'Unfortunately, you don’t meet our eligibility requirements for Super Follows at this time.'),
+          a('d92c1d0a', 'Continue to application'),
           a('fdd95737', function (e) {
             return e.minFollowersCount + ' followers'
           }),
@@ -4214,7 +4220,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.minTweetsCount + ' Tweets in the past 30 days'
           }),
           a('c27f57ac', 'Be at least 18 years old'),
-          a('fbd73859', 'Super Follows Terms'),
+          a('acad7c8f', 'Super Follows Terms'),
           a('j5dc36d8', 'Paid subscriptions for your most engaged followers.'),
           a(
             'cedb182a',
@@ -4388,10 +4394,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             'You’ve been selected for our test group! Set up your subscription details now and we’ll let you know when Super Follows is live.',
           ),
           a('e2cd7000', 'Almost there...'),
-          a('fbfd7398', 'You’re so close! Finish setting up your Super Follows subscription.'),
+          a('a9006878', 'Just a few more steps to finish setting up your Super Follows subscription.'),
+          a('f4619a62', 'Accept and continue'),
           a('d8637c96', 'Describe your Super Follows perks'),
           a('b92892dc', 'Set a subscription price'),
-          a('b123a502', 'Verify your payout details'),
+          a('aaf68c58', 'Confirm your payout details'),
+          a('c663b33d', 'Super Follows Terms'),
           a('ad4a92a2', 'Badge'),
           a('cda6bb6e', 'Give your Super Followers badges'),
           a(
@@ -4817,16 +4825,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a58e18a2', 'Your Moment is now published. Tweet it to let people discover it.'),
           a('d7725ee2', 'Your Moment was published.'),
           a('h7eceed0', 'Your Moment was updated.'),
-          a('bf615cfa', 'Go to Moment'),
-          a('d8438442', 'Visibility settings'),
-          a('a1d5303c', 'Private'),
-          a('a787e494', 'Only owners can see this Moment.'),
-          a('effa6f12', 'Everyone can discover this Moment.'),
-          a('cc8f8a80', 'Unlisted'),
-          a(
-            'd6352bf8',
-            'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
-          )
+          a('bf615cfa', 'Go to Moment')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4846,7 +4845,16 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('b81437d2', 'Select visibility mode'),
+        a('d8438442', 'Visibility settings'),
+          a('a1d5303c', 'Private'),
+          a('a787e494', 'Only owners can see this Moment.'),
+          a('effa6f12', 'Everyone can discover this Moment.'),
+          a('cc8f8a80', 'Unlisted'),
+          a(
+            'd6352bf8',
+            'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
+          ),
+          a('b81437d2', 'Select visibility mode'),
           a('i693139c', 'Contains sensitive content'),
           a('b198b980', 'Your Moment’s visibility settings were updated.'),
           a('f6326a46', 'Publish Moment to see added Tweets'),
@@ -4990,7 +4998,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Topic - ' + e.title
           }),
           a('db59f196', 'Sweet, we’ll show you more like this. Keep going!'),
-          a('j231d352', 'Follow all'),
           a('h87ca6ac', 'Timeline strength'),
           a('b5474bd2', 'Hmmm... something went wrong.'),
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
@@ -5649,7 +5656,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f0c37ddb', function (e) {
             return e.fullName + ' on Twitter: "' + e.tweetText + '"'
           }),
-          a('cfe877ca', 'Choose who to follow'),
           a('e06b864c', 'It looks like you’re enjoying this conversation'),
           a(
             'a078ff70',
@@ -5983,12 +5989,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h421e74c', 'Suggested Lists'),
           a('aa62dea8', 'We’re on the lookout'),
           a('e5e4d3aa', 'Check back later to see suggested Lists.'),
-          a('fa884026', 'List'),
-          a('eb7b54be', 'Loading Lists'),
+          a('fa884026', 'List')
+        a('eb7b54be', 'Loading Lists'),
           a('a9ca06d2', 'Information'),
           a('b689c7e0', 'You’re seeing top Tweets first'),
-          a('f9bef354', 'See latest Tweets')
-        a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
+          a('f9bef354', 'See latest Tweets'),
+          a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
           a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
           a('c7294984', 'Report List'),
@@ -8997,9 +9003,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'ab551561',
+                key: 'acb31cd3',
                 get: function () {
-                  return ['By tapping below, you agree to be bound by the ']
+                  return ['By applying, you agree to be bound by the ']
                 },
               },
               {
@@ -9030,6 +9036,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'f402ebd1',
                 get: function () {
                   return ['Super Follow', '' + this.props.name]
+                },
+              },
+              {
+                key: 'fcad94b9',
+                get: function () {
+                  return ['By selecting to accept and continue, you agree to be bound by the ']
                 },
               },
               {

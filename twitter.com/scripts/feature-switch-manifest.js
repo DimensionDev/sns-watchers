@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '062dc701b7ba8795aa683d69b0f92ba81da9e8fd',
+  feature_set_token: '0513283af6063bb3e54e104913cec71b7077cc21',
   config: {
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
@@ -489,6 +489,7 @@ var manifest = {
     responsive_web_deamplification_replies_dropdown_selector_enabled: { value: !1 },
     responsive_web_deamplification_transparent_cursors_enabled: { value: !1 },
     responsive_web_delegate_enabled: { value: !1 },
+    responsive_web_device_follow_without_user_follow_enabled: { value: !1 },
     responsive_web_disconnect_third_party_sso_enabled: { value: !0 },
     responsive_web_dockable_autoplay_policy_enabled: { value: !0 },
     responsive_web_drew_mute_and_block_enabled: { value: !1 },
@@ -554,7 +555,7 @@ var manifest = {
     responsive_web_graphql_conversations_enabled: { value: !0 },
     responsive_web_graphql_dark_reads_probability: { value: 0 },
     responsive_web_graphql_feedback: { value: !0 },
-    responsive_web_graphql_home_enabled: { value: !1 },
+    responsive_web_graphql_home_enabled: { value: !0 },
     responsive_web_graphql_home_latest_enabled: { value: !0 },
     responsive_web_graphql_likes_timeline: { value: !0 },
     responsive_web_graphql_media_timeline: { value: !0 },
@@ -659,6 +660,7 @@ var manifest = {
     responsive_web_recent_searches_events_enabled: { value: !0 },
     responsive_web_recent_searches_topics_enabled: { value: !0 },
     responsive_web_recent_searches_users_enabled: { value: !0 },
+    responsive_web_repeat_profile_visits_notifications_enabled: { value: !1 },
     responsive_web_reply_nudge_copy_version: { value: 0 },
     responsive_web_reply_nudge_enabled: { value: !1 },
     responsive_web_reply_nudge_show_nudge: { value: !0 },
@@ -1427,6 +1429,11 @@ var manifest = {
       name: 'communities_hashtags_carousel_14924',
       type: 'experiment',
       enumeration_values: ['control', 'experiment'],
+    },
+    communities_navigation_15017: {
+      name: 'communities_navigation_15017',
+      type: 'experiment',
+      enumeration_values: ['control', 'carousel_badge', 'list_no_badge', 'list_badge'],
     },
     community_timeline_ranking_14308: {
       name: 'community_timeline_ranking_14308',
@@ -2969,6 +2976,11 @@ var manifest = {
       defaultValue: !1,
     },
     responsive_web_delegate_enabled: { name: 'responsive_web_delegate_enabled', type: 'boolean', defaultValue: !1 },
+    responsive_web_device_follow_without_user_follow_enabled: {
+      name: 'responsive_web_device_follow_without_user_follow_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     responsive_web_disconnect_third_party_sso_enabled: {
       name: 'responsive_web_disconnect_third_party_sso_enabled',
       type: 'boolean',
@@ -3110,7 +3122,7 @@ var manifest = {
     responsive_web_graphql_home_enabled: {
       name: 'responsive_web_graphql_home_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_graphql_home_latest_enabled: {
       name: 'responsive_web_graphql_home_latest_enabled',
@@ -3641,6 +3653,11 @@ var manifest = {
       name: 'responsive_web_recent_searches_events_enabled',
       type: 'boolean',
       defaultValue: !0,
+    },
+    responsive_web_repeat_profile_visits_notifications_enabled: {
+      name: 'responsive_web_repeat_profile_visits_notifications_enabled',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_reply_nudge_testing_keyword: {
       name: 'responsive_web_reply_nudge_testing_keyword',
