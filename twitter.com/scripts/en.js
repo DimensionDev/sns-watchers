@@ -1980,7 +1980,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cb1adfa0', 'Download data'),
           a('ab28945c', 'Contributor profile'),
           a('jaf0d42c', 'Your notes'),
-          a('b8b34f54', 'Ratings received'),
           a('j44125ee', 'This contributor hasn’t written any notes yet.'),
           a('da55067c', 'Check this space later!'),
           a(
@@ -2001,18 +2000,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c23e67ea', 'Unlock your ability to write'),
           a('ac71a5a0', 'Rate notes that need help'),
           a('j1a30559', 'Learn more'),
-          a('i470ee22', function (e) {
-            return '' + e.count
-          }),
-          a('b417f40b', 'Helpful'),
-          a('i1f57cc4', function (e) {
-            return '' + e.count
-          }),
-          a('e8907cdb', 'Somewhat helpful'),
-          a('d43275d4', function (e) {
-            return '' + e.count
-          }),
-          a('i18e27a8', 'Unhelpful'),
           a('c0d12652', 'send us feedback'),
           a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
           a(
@@ -2327,11 +2314,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gc00d212', 'Support and resources'),
           a('a997eca0', 'Help when you need it'),
           a('c6ea29a2', 'Leave moderation team'),
-          a('a6e13fac', 'Are you sure you want to leave the mod team?')
-        a(
-          'e538848c',
-          'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
-        ),
+          a('a6e13fac', 'Are you sure you want to leave the mod team?'),
+          a(
+            'e538848c',
+            'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
+          ),
           a('j49e6aa2', 'Yes, I want to leave'),
           a('gfccba44', 'Member requests'),
           a('dde5f323', function (e) {
@@ -2339,8 +2326,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('j8af8eaa', 'Membership type'),
           a('d5f01116', 'Purpose'),
-          a('c3c04b70', 'Color theme'),
-          a('f4a98e9e', 'Community information'),
+          a('c3c04b70', 'Color theme')
+        a('f4a98e9e', 'Community information'),
           a('ab1069de', 'Delete Community'),
           a(
             'c2630ec2',
@@ -3615,8 +3602,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
           a('g247dc1c', 'Loading temporary password'),
-          a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.')
-        a('d70fceac', 'This password will expire in one hour.'),
+          a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
+          a('d70fceac', 'This password will expire in one hour.'),
           a('c21037d0', 'Country'),
           a('j924d222', 'Change country'),
           a('j01f061b', 'Learn more'),
@@ -3627,8 +3614,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('cef33711', function (e) {
             return e.languageName + ' (beta)'
-          }),
-          a('b033248c', 'Discoverability'),
+          })
+        a('b033248c', 'Discoverability'),
           a(
             'a904e0ee',
             'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
@@ -4825,7 +4812,17 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a58e18a2', 'Your Moment is now published. Tweet it to let people discover it.'),
           a('d7725ee2', 'Your Moment was published.'),
           a('h7eceed0', 'Your Moment was updated.'),
-          a('bf615cfa', 'Go to Moment')
+          a('bf615cfa', 'Go to Moment'),
+          a('d8438442', 'Visibility settings'),
+          a('a1d5303c', 'Private'),
+          a('a787e494', 'Only owners can see this Moment.'),
+          a('effa6f12', 'Everyone can discover this Moment.'),
+          a('cc8f8a80', 'Unlisted'),
+          a(
+            'd6352bf8',
+            'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
+          ),
+          a('b81437d2', 'Select visibility mode')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4845,17 +4842,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('d8438442', 'Visibility settings'),
-          a('a1d5303c', 'Private'),
-          a('a787e494', 'Only owners can see this Moment.'),
-          a('effa6f12', 'Everyone can discover this Moment.'),
-          a('cc8f8a80', 'Unlisted'),
-          a(
-            'd6352bf8',
-            'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
-          ),
-          a('b81437d2', 'Select visibility mode'),
-          a('i693139c', 'Contains sensitive content'),
+        a('i693139c', 'Contains sensitive content'),
           a('b198b980', 'Your Moment’s visibility settings were updated.'),
           a('f6326a46', 'Publish Moment to see added Tweets'),
           a('gce85232', 'Update Moment to see pending changes'),
@@ -5774,6 +5761,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d9f6e3ce', 'Daily budget slider'),
           a('b3954eca', 'Duration in days slider'),
           a('e1b48db4', 'Estimated reach is approximate. Actual reach for this promotion can’t be guaranteed.'),
+          a('gdb4ffae', 'Your first Quick Promote ad is on us!'),
           a('c4d0434b', function (e) {
             return e.dailyBudget + ' per day for ' + e.durationLabel
           }),
@@ -5806,6 +5794,16 @@ window.__SCRIPTS_LOADED__.vendor &&
               e.newlinePlaceholder +
               'Gender: ' +
               e.gender
+            )
+          }),
+          a('g9ba7b61', function (e) {
+            return (
+              'Spend ' +
+              e.spendAmount +
+              ' and get ' +
+              e.couponAmount +
+              ' in ad credits on your first promotion before ' +
+              e.date
             )
           }),
           a('cb51c854', 'Any Gender'),
@@ -5865,6 +5863,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('be2dc078', 'Sign up and add payment details'),
           a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
           a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
+          a('a9d139c2', 'Don’t miss out on the coupon'),
+          a('gc12404f', function (e) {
+            return 'You are ' + e.amount + ' away from getting a coupon.'
+          }),
           a('da2805d2', 'A campaign for this tweet has already been created.'),
           a('a4db098c', 'It looks like we couldn’t create your promotion. Please try again later.'),
           a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
@@ -5989,11 +5991,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h421e74c', 'Suggested Lists'),
           a('aa62dea8', 'We’re on the lookout'),
           a('e5e4d3aa', 'Check back later to see suggested Lists.'),
-          a('fa884026', 'List')
-        a('eb7b54be', 'Loading Lists'),
+          a('fa884026', 'List'),
+          a('eb7b54be', 'Loading Lists'),
           a('a9ca06d2', 'Information'),
-          a('b689c7e0', 'You’re seeing top Tweets first'),
-          a('f9bef354', 'See latest Tweets'),
+          a('b689c7e0', 'You’re seeing top Tweets first')
+        a('f9bef354', 'See latest Tweets'),
           a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
           a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
@@ -6223,6 +6225,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('g8475f82', 'Account suspended'),
           a('f3b1bdc3', 'Twitter Rules'),
+          a('d11934ec', 'Get notified'),
+          a('a2cd2b0a', 'Follow and get notified'),
+          a('de4b354d', function (e) {
+            return 'Now you can get notified every time ' + e.fullName + ' Tweets.'
+          }),
+          a('gc11d63d', function (e) {
+            return 'Now you can follow ' + e.fullName + ' and get notified every time they Tweet.'
+          }),
+          a('e46409b7', function (e) {
+            return 'You’re following ' + e.fullName + ' and will be notified when they Tweet.'
+          }),
+          a('eaa65473', function (e) {
+            return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
+          }),
           a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('eb023c94', 'What is an NFT?'),
@@ -6628,6 +6644,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.formattedCount + ' vote' + n(e.count, '', 's')
           }),
           a('e86732e4', 'Selected'),
+          a('a35a5b10', 'Followers you know'),
+          a('fc8cd112', 'Not followed by anyone you’re following'),
           a('hdf426f5', function (e) {
             return 'Topic · ' + e.description
           }),
@@ -6900,8 +6918,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e547b368', 'Original'),
           a('f7571204', 'Wide'),
           a('e6e16812', 'Square'),
-          a('a35a5b10', 'Followers you know'),
-          a('fc8cd112', 'Not followed by anyone you’re following'),
           a('f1a1b791', function (e) {
             return 'Promoted by ' + e.fullName
           }),
@@ -8036,24 +8052,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'g6ea1d55',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'b93058db',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'c6726127',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
                 key: 'd828b9eb',
                 get: function () {
                   return ['This feature is new to Birdwatch, feel free to ']
@@ -8075,6 +8073,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'f52f0cbd',
                 get: function () {
                   return [this.props.num + ' deleted notes']
+                },
+              },
+              {
+                key: 'ccdfbd75',
+                get: function () {
+                  return ['To unlock your ability to write, increase this score to ' + this.props.requiredRatingImpact]
                 },
               },
               {
@@ -9612,6 +9616,30 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'c9e6167d',
+                get: function () {
+                  return ['Followed by ']
+                },
+              },
+              {
+                key: 'ha91d1eb',
+                get: function () {
+                  return ['Followed by ', ' and ']
+                },
+              },
+              {
+                key: 'f1069f9b',
+                get: function () {
+                  return ['Followed by ', ', ', ', and ']
+                },
+              },
+              {
+                key: 'e8404c1f',
+                get: function () {
+                  return ['Followed by ', ', ', ', and ', ' others you follow']
+                },
+              },
+              {
                 key: 'e570a97b',
                 get: function () {
                   return [
@@ -9638,30 +9666,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'bb2cd6d3',
                 get: function () {
                   return ['', ' and ', ' others are Trending in this Topic']
-                },
-              },
-              {
-                key: 'c9e6167d',
-                get: function () {
-                  return ['Followed by ']
-                },
-              },
-              {
-                key: 'ha91d1eb',
-                get: function () {
-                  return ['Followed by ', ' and ']
-                },
-              },
-              {
-                key: 'f1069f9b',
-                get: function () {
-                  return ['Followed by ', ', ', ', and ']
-                },
-              },
-              {
-                key: 'e8404c1f',
-                get: function () {
-                  return ['Followed by ', ', ', ', and ', ' others you follow']
                 },
               },
               {

@@ -1,6 +1,7 @@
 var manifest = {
-  feature_set_token: '0513283af6063bb3e54e104913cec71b7077cc21',
+  feature_set_token: 'b482c46b9ff10e2bbdd6c5dac42aa850daf9ce23',
   config: {
+    '2fa_temporary_password_enabled': { value: !0 },
     Arkose_rweb_hosted_page: { value: !0 },
     Arkose_use_invisible_challenge_key: { value: !1 },
     account_2fa_standalone_security_key_enabled: { value: !0 },
@@ -447,6 +448,7 @@ var manifest = {
     responsive_web_birdwatch_appeals_enabled: { value: !0 },
     responsive_web_birdwatch_consumption_enabled: { value: !1 },
     responsive_web_birdwatch_contribution_enabled: { value: !1 },
+    responsive_web_birdwatch_country_allowed: { value: !1 },
     responsive_web_birdwatch_deleted_notes_enabled: { value: !0 },
     responsive_web_birdwatch_earn_out_enabled: { value: !1 },
     responsive_web_birdwatch_hcomp_user: { value: !1 },
@@ -720,7 +722,6 @@ var manifest = {
     rweb_reply_downvote_inline_education: { value: 60 },
     rweb_reply_downvote_inline_survey: { value: 0 },
     rweb_reply_downvote_nux_inline_days: { value: 7 },
-    rweb_share_icon_update: { value: !1 },
     rweb_video_tagging_enabled: { value: !1 },
     sc_r4_enabled: { value: !1 },
     scribe_api_error_sample_size: { value: 0 },
@@ -937,6 +938,7 @@ var manifest = {
     web_video_transcribed_captions_enabled: { value: !1 },
   },
   debug: {
+    '2fa_temporary_password_enabled': { name: '2fa_temporary_password_enabled', type: 'boolean', defaultValue: !0 },
     Arkose_public_key_mobile: { name: 'Arkose_public_key_mobile', type: 'string' },
     Arkose_rweb_hosted_page: { name: 'Arkose_rweb_hosted_page', type: 'boolean', defaultValue: !0 },
     Arkose_use_invisible_challenge_key: {
@@ -1256,6 +1258,7 @@ var manifest = {
       type: 'string',
       defaultValue: '560C66A3-C8EB-4D11-BE53-A8232734AA62',
     },
+    arkose_challenge_signup_mobile_prod: { name: 'arkose_challenge_signup_mobile_prod', type: 'string' },
     arkose_challenge_signup_web: {
       name: 'arkose_challenge_signup_web',
       type: 'string',
@@ -1266,12 +1269,15 @@ var manifest = {
       type: 'string',
       defaultValue: '6E8D3D6E-30D4-45F1-9838-BA3D9651AAA1',
     },
+    arkose_challenge_signup_web_dev: { name: 'arkose_challenge_signup_web_dev', type: 'string' },
     arkose_challenge_lo_web_notification_dev: { name: 'arkose_challenge_lo_web_notification_dev', type: 'string' },
+    arkose_challenge_signup_mobile_dev: { name: 'arkose_challenge_signup_mobile_dev', type: 'string' },
     arkose_challenge_signup_mobile: {
       name: 'arkose_challenge_signup_mobile',
       type: 'string',
       defaultValue: '006B5E87-7497-403E-9E0C-8FFBAAC6FA67',
     },
+    arkose_challenge_signup_web_prod: { name: 'arkose_challenge_signup_web_prod', type: 'string' },
     author_moderated_replies_author_enabled: { name: 'author_moderated_replies_author_enabled', type: 'string' },
     author_moderated_replies_consumer_enabled: { name: 'author_moderated_replies_consumer_enabled', type: 'string' },
     author_moderated_replies_hidden_replies_timeline_limit: {
@@ -2830,6 +2836,11 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_birdwatch_country_allowed: {
+      name: 'responsive_web_birdwatch_country_allowed',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     responsive_web_birdwatch_site_enabled: {
       name: 'responsive_web_birdwatch_site_enabled',
       type: 'boolean',
@@ -3950,7 +3961,6 @@ var manifest = {
       type: 'number',
       defaultValue: 7,
     },
-    rweb_share_icon_update: { name: 'rweb_share_icon_update', type: 'boolean', defaultValue: !1 },
     rweb_video_tagging_enabled: { name: 'rweb_video_tagging_enabled', type: 'boolean', defaultValue: !1 },
     sat_with_ads_treatment_ios_14613: {
       name: 'sat_with_ads_treatment_ios_14613',
@@ -4045,11 +4055,6 @@ var manifest = {
       name: 'share_holdback_2022_fy2022_14031',
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
-    },
-    share_icon_update_web_14473: {
-      name: 'share_icon_update_web_14473',
-      type: 'experiment',
-      enumeration_values: ['control', 'share_icon_arrow'],
     },
     single_sign_on_rweb_12529: {
       name: 'single_sign_on_rweb_12529',
@@ -4264,11 +4269,6 @@ var manifest = {
     super_follow_tweet_api_enabled: { name: 'super_follow_tweet_api_enabled', type: 'boolean', defaultValue: !0 },
     super_follow_upsell_sticky_button_enabled: { name: 'super_follow_upsell_sticky_button_enabled', type: 'string' },
     targeted_project_friday_enabled: { name: 'targeted_project_friday_enabled', type: 'boolean', defaultValue: !1 },
-    targeted_project_friday_14037: {
-      name: 'targeted_project_friday_14037',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
     topic_landing_page_share_enabled: { name: 'topic_landing_page_share_enabled', type: 'boolean', defaultValue: !0 },
     topic_landing_page_cta_text: { name: 'topic_landing_page_cta_text', type: 'string', defaultValue: 'control' },
     topic_landing_page_ulp_migration_enabled: { name: 'topic_landing_page_ulp_migration_enabled', type: 'string' },
