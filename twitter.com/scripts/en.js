@@ -137,6 +137,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bd45d44e', 'React to a Tweet to share the love.'),
           a('a6a267da', 'Sign up so you never miss their Tweets.'),
           a('g78650fe', 'Follow a Topic to discover great Tweets'),
+          a('ic848090', 'Log in first'),
+          a('f9ebe066', 'You can join the conversation in Communities — right after you log in.'),
           a('ea88ce2e', 'Don’t miss what’s happening'),
           a('ge9eaa86', 'People on Twitter are the first to know.'),
           a('d8817e36', 'Accept all cookies'),
@@ -694,6 +696,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cf249089', function (e) {
             return 'Joined ' + e.joinDate
           }),
+          a('h52ca4c4', 'New messages'),
           a('ffde2fdc', 'Loading conversation'),
           a('da878dc0', 'Accept'),
           a('gde6b425', function (e) {
@@ -1142,11 +1145,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
           a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
-          a('f755f710', 'Got It'),
-          a('d0270ae2', 'This Tweet is hidden'),
+          a('f755f710', 'Got It')
+        a('d0270ae2', 'This Tweet is hidden'),
           a('ba352986', 'You can’t reply … yet'),
-          a('cb18be32', 'You can’t do that … yet')
-        a('ae2c8a1e', 'Why can’t you reply to this?'),
+          a('cb18be32', 'You can’t do that … yet'),
+          a('ae2c8a1e', 'Why can’t you reply to this?'),
           a('adf4892e', 'Why can’t you downvote this?'),
           a('afe7ba26', 'Why can’t you Like this?'),
           a('ddb7acf0', 'Why can’t you react to this?'),
@@ -1415,11 +1418,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f510c8b2', 'Community Rules'),
           a('g3631342', 'Twitter’s rules'),
           a('g46f363e', 'Check the Community rules before joining the conversation'),
-          a('bea21405', function (e) {
-            return 'Everyone in @' + e.screenName + '`s Twitter Circle can view and reply'
+          a('b939aa61', function (e) {
+            return 'Everyone in @' + e.screenName + '`s Twitter Circle who follows you can reply'
           }),
-          a('c0857cce', 'Only your Twitter Circle can view and reply'),
-          a('d3922d78', 'Everyone in the tweet author`s Twitter Circle can view and reply'),
+          a('d5751711', function (e) {
+            return 'Everyone in @' + e.screenName + '`s Twitter Circle can reply'
+          }),
+          a('h420b366', 'Only your Twitter Circle who follows you can reply'),
+          a('b7bd6cbc', 'Only your Twitter Circle can reply'),
+          a('c2e19f94', 'Everyone in the Tweet author`s Twitter Circle who follows you can reply'),
+          a('d472f63c', 'Everyone in the Tweet author`s Twitter Circle can reply'),
           a('i8ea6d4e', 'Everyone can reply'),
           a('ec5a4a26', 'People you follow can reply'),
           a('b454300a', 'Only people you mention can reply'),
@@ -1490,8 +1498,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }),
           a('de5071ba', 'Super Followers'),
+          a('a828b60a', function (e) {
+            return '' + e.userName
+          }),
           a('e39e1360', function (e) {
             return '' + e.userName
+          }),
+          a('fb912eb3', function (e) {
+            return e.userOneName + ' and ' + e.userTwoName
+          }),
+          a('d1fdfe03', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
           }),
           a('b1bf4831', function (e) {
             return e.userOneName + ' and ' + e.userTwoName
@@ -1499,10 +1516,24 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ba60bdab', function (e) {
             return e.trustedFriendsTweetOwner + '’s'
           }),
+          a('ec689bfc', function (e) {
+            return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+          }),
+          a('he146533', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
+          }),
           a('i17c4d36', function (e) {
             return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
           }),
           a('bfa3b3d3', function (e) {
+            return e.trustedFriendsTweetOwner + '’s'
+          }),
+          a('b64448c5', function (e) {
+            return (
+              e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+            )
+          }),
+          a('ged962b7', function (e) {
             return e.trustedFriendsTweetOwner + '’s'
           }),
           a('e4625c2b', function (e) {
@@ -2308,8 +2339,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('efc26607', function (e) {
             return e.memberCount + ' member' + n(e.memberCount, '', 's')
           }),
-          a('adfcc3ce', 'Add, delete, or edit rules'),
-          a('d0330d9c', 'View rules'),
+          a('adfcc3ce', 'Add, delete, or edit rules')
+        a('d0330d9c', 'View rules'),
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('gc00d212', 'Support and resources'),
           a('a997eca0', 'Help when you need it'),
@@ -2326,8 +2357,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('j8af8eaa', 'Membership type'),
           a('d5f01116', 'Purpose'),
-          a('c3c04b70', 'Color theme')
-        a('f4a98e9e', 'Community information'),
+          a('c3c04b70', 'Color theme'),
+          a('f4a98e9e', 'Community information'),
           a('ab1069de', 'Delete Community'),
           a(
             'c2630ec2',
@@ -3596,8 +3627,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ec6a76e0', 'Generate a new code'),
           a('f2c3c31c', 'Copy code'),
           a('e8016b64', 'Loading backup code'),
-          a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-          a('f20ff69f', 'Learn more'),
+          a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.')
+        a('f20ff69f', 'Learn more'),
           a('j2327f80', 'Temporary Password'),
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
@@ -3614,8 +3645,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('cef33711', function (e) {
             return e.languageName + ' (beta)'
-          })
-        a('b033248c', 'Discoverability'),
+          }),
+          a('b033248c', 'Discoverability'),
           a(
             'a904e0ee',
             'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
@@ -4121,12 +4152,18 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d299431c', 'Monetization'),
           a('h93824cc', 'Monetization options'),
           a('a6777c1c', 'Super Follows'),
+          a('i724fb4a', 'Get help'),
           a('c1b71878', 'Accepting subscribers'),
           a('e939cc54', 'Application accepted · Build your subscription'),
           a('ibb5e1c8', 'Application declined'),
           a('b255df58', 'Application submitted · Waiting for review'),
           a('b3f834c8', 'Application waitlisted'),
-          a('i724fb4a', 'Get help'),
+          a('i14be2c6', 'Estimated earned revenue'),
+          a('f8f60c7e', 'Paid subscription for your most engaged followers'),
+          a('f139168e', 'Earnings dashboard'),
+          a('ee0510c2', 'Payout history'),
+          a('df29646e', 'Payout threshold'),
+          a('b6843d1a', 'Payouts occurs up to 90 days after payment is received on purchase for iOS and Android.'),
           a('f2351b98', 'Flagged accounts'),
           a(
             'da2c4a73',
@@ -4800,8 +4837,27 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b0bf5f58', 'Toggle promoted'),
           a('j8c97c9f', function (e) {
             return 'Limit reached (' + e.maxPromotedTweets + ')'
-          }),
-          a('b04dfefa', 'Delete annotation?'),
+          })
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (
+            (i =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+            i(e, t)
+          )
+        }
+        a('b04dfefa', 'Delete annotation?'),
           a('f201a032', 'Delete annotation'),
           a('c6036adc', 'Make your Moment'),
           a('f7b31980', 'Start by adding Tweets using the import tools or entering a Tweet URL.'),
@@ -4822,27 +4878,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd6352bf8',
             'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
           ),
-          a('b81437d2', 'Select visibility mode')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (
-            (i =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            i(e, t)
-          )
-        }
-        a('i693139c', 'Contains sensitive content'),
+          a('b81437d2', 'Select visibility mode'),
+          a('i693139c', 'Contains sensitive content'),
           a('b198b980', 'Your Moment’s visibility settings were updated.'),
           a('f6326a46', 'Publish Moment to see added Tweets'),
           a('gce85232', 'Update Moment to see pending changes'),
@@ -5343,6 +5380,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('idca4742', 'See your account information like your phone number and email address.'),
           a('b6ded35e', 'Change your password at any time.'),
           a('cce24bf4', 'Get insights into the type of information stored for your account.'),
+          a('e6afdb48', 'TweetDeck version'),
+          a('e8bada1e', 'Switch back to the previous version of TweetDeck.'),
           a('i203df96', 'Find out how you can deactivate your account.'),
           a('j0b9ec86', 'TweetDeck Teams moved'),
           a('eaf134de', 'We moved the Teams feature to Twitter Delegate in your security and account access settings.'),
@@ -5590,7 +5629,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ef8f5d90', 'Recommended'),
           a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
           a('dab58e32', 'When you add people, they’ll show up here.'),
-          a('fe3a4dcd', 'Learn more'),
+          a('c308119e', 'How it works'),
           a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
           a(
             'fd6c37ec',
@@ -5971,8 +6010,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h8885a22', 'List names cannot exceed 25 characters'),
           a('f8132984', 'When you make a List private, only you can see it.'),
           a('c4d7650c', 'Manage members'),
-          a('h7f2418c', 'Loading List information'),
-          a('b18e5cd2', 'Something went wrong. Try deleting your List again in a minute.'),
+          a('h7f2418c', 'Loading List information')
+        a('b18e5cd2', 'Something went wrong. Try deleting your List again in a minute.'),
           a('cdd73e9c', 'Delete List'),
           a('def8ff62', 'Delete List?'),
           a('j8b9cde8', 'This can’t be undone and you’ll lose your List.'),
@@ -5994,8 +6033,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fa884026', 'List'),
           a('eb7b54be', 'Loading Lists'),
           a('a9ca06d2', 'Information'),
-          a('b689c7e0', 'You’re seeing top Tweets first')
-        a('f9bef354', 'See latest Tweets'),
+          a('b689c7e0', 'You’re seeing top Tweets first'),
+          a('f9bef354', 'See latest Tweets'),
           a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
           a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
@@ -7894,6 +7933,17 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'fc276cb7',
+                get: function () {
+                  return [
+                    'Replying to ',
+                    '. ' +
+                      this.props.trustedFriendsTweetOwner +
+                      '’s Twitter Circle who follow you will also be able to see your reply.',
+                  ]
+                },
+              },
+              {
                 key: 'b392dda9',
                 get: function () {
                   return [
@@ -7905,15 +7955,33 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'j316b6e3',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
+                },
+              },
+              {
                 key: 'c1378cbb',
                 get: function () {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
+                key: 'g7b81721',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
+                },
+              },
+              {
                 key: 'g390bde1',
                 get: function () {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                },
+              },
+              {
+                key: 'ad5b8753',
+                get: function () {
+                  return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
                 },
               },
               {
@@ -9353,9 +9421,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'hfbff3d1',
+                key: 'aa7f488f',
                 get: function () {
-                  return ['People won’t be notified when you make changes to your Twitter Circle. ', '.']
+                  return [
+                    'People won’t be notified when you edit your Twitter Circle. Anyone you add will be able to see your previous Twitter Circle Tweets. ',
+                  ]
                 },
               },
               {
