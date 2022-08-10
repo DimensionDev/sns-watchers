@@ -365,6 +365,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gcfef7b6', 'Create account with phone or email'),
           a('e5b0e544', 'Sign in'),
           a('aa95ddc0', 'Sign up with phone or email'),
+          a('gd93944e', 'Use app'),
           a('f2f787a0', 'Terms of Service'),
           a('e1099fd6', 'Privacy Policy'),
           a('c1df1ae0', 'Cookie Use.'),
@@ -1144,9 +1145,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
           a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
-          a('f1824804', 'Appeal this warning'),
-          a('f755f710', 'Got It')
-        a('d0270ae2', 'This Tweet is hidden'),
+          a('f1824804', 'Appeal this warning')
+        a('f755f710', 'Got It'),
+          a('d0270ae2', 'This Tweet is hidden'),
           a('ba352986', 'You can’t reply … yet'),
           a('cb18be32', 'You can’t do that … yet'),
           a('ae2c8a1e', 'Why can’t you reply to this?'),
@@ -1936,7 +1937,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b9f18eec', 'Currently rated helpful'),
           a('g2edfc1a', 'Shown on Twitter'),
           a('d6db34cc', 'Needs more ratings'),
-          a('j2c3f3c0', 'Currently not rated helpful'),
+          a('j33f6520', 'Currently rated not helpful'),
           a('ac39da02', 'This note claims the Tweet isn’t misleading, so it isn’t shown on Twitter.'),
           a('d1dd62ac', 'About Birdwatch appeals'),
           a('b664c554', 'Request additional contributor review'),
@@ -2264,9 +2265,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hb01fe46', 'When you do, you’ll see them here.'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('fbf01e52', 'Search Communities'),
-          a('c00c234f', function (e) {
-            return e.communityName + ' Rules'
-          }),
           a('h5245afa', 'Community'),
           a('dc6ce7b4', 'Members'),
           a('ga2aa43c', 'Moderators'),
@@ -2343,7 +2341,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         a('d0330d9c', 'View rules'),
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('gc00d212', 'Support and resources'),
-          a('a997eca0', 'Help when you need it'),
+          a('g0cbfc50', 'Useful guide for Community moderation'),
           a('c6ea29a2', 'Leave moderation team'),
           a('a6e13fac', 'Are you sure you want to leave the mod team?'),
           a(
@@ -2473,6 +2471,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cd133486', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0e', 'Member'),
+          a('c00c234f', function (e) {
+            return e.communityName + ' Rules'
+          }),
           a('addbb11e', 'No new membership requests'),
           a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
           a('d7f13fb9', function (e) {
@@ -2514,11 +2515,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('icc32e3d', function (e) {
             return 'A moderator removed you from ' + e.communityName + ' for violating this Community rule:'
           }),
-          a('b7218496', 'No hashtags ... yet'),
-          a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
-          a('hd436778', 'Loading Community Hashtag Tweets'),
-          a('feeaae18', 'Community Hashtag Tweets'),
-          a('d601fc20', 'Latest'),
           a('c2117be6', 'See that stuff in the nav? 👀'),
           a('c2c4dad4', 'Pick something and it’ll show up here. Go ahead. We’ll wait.'),
           a('a7c2e06d', function (e) {
@@ -2535,6 +2531,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c8c6c4ea', 'Learn more about Communities'),
           a('ae7a45a2', 'For You'),
           a('cc1c2602', 'Recommended Tweets first'),
+          a('d601fc20', 'Latest'),
           a('b2aef4d8', 'Newest Tweets first'),
           a('he8db880', 'Doesn’t look like this Community exists'),
           a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
@@ -2598,6 +2595,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c22e8902', 'Try it out'),
           a('a3466e1c', 'Track conversations with hashtags'),
           a('a524bb7e', 'Hashtags make it easy to create, find, and join themed conversations in the Community.'),
+          a('b7218496', 'No hashtags ... yet'),
+          a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
+          a('hd436778', 'Loading Community Hashtag Tweets'),
+          a('feeaae18', 'Community Hashtag Tweets'),
           a('b8f0483e', 'Compose new Tweet'),
           a('a133d13e', 'Unsent Tweets'),
           a('a1183238', 'Tweeting within a Community'),
@@ -3626,9 +3627,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i3bb3f78', 'Backup Code'),
           a('ec6a76e0', 'Generate a new code'),
           a('f2c3c31c', 'Copy code'),
-          a('e8016b64', 'Loading backup code'),
-          a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.')
-        a('f20ff69f', 'Learn more'),
+          a('e8016b64', 'Loading backup code')
+        a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
+          a('f20ff69f', 'Learn more'),
           a('j2327f80', 'Temporary Password'),
           a('fbfeaf8e', 'Generate a new password'),
           a('h4a8bd12', 'Copy password'),
@@ -4834,10 +4835,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g0d8c8d4', 'Body'),
           a('bdbc0062', 'Add Tweet URL'),
           a('ac78ac54', 'Tweet already added to this Moment'),
-          a('b0bf5f58', 'Toggle promoted'),
-          a('j8c97c9f', function (e) {
-            return 'Limit reached (' + e.maxPromotedTweets + ')'
-          })
+          a('b0bf5f58', 'Toggle promoted')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4857,7 +4855,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             i(e, t)
           )
         }
-        a('b04dfefa', 'Delete annotation?'),
+        a('j8c97c9f', function (e) {
+          return 'Limit reached (' + e.maxPromotedTweets + ')'
+        }),
+          a('b04dfefa', 'Delete annotation?'),
           a('f201a032', 'Delete annotation'),
           a('c6036adc', 'Make your Moment'),
           a('f7b31980', 'Start by adding Tweets using the import tools or entering a Tweet URL.'),
@@ -5184,7 +5185,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e0cb3344', 'Promote an existing tweet'),
           a('i294caa6', 'Promotions'),
           a('i016a2f4', 'Earn money on Twitter'),
-          a('d47aad80', 'Monetisation'),
           a('f49a9076', 'Learn how to use Twitter'),
           a('a35d9c9a', 'Resources'),
           a('e93fcaea', 'Select a Tweet to promote'),
