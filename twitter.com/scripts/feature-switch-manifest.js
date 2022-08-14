@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'e5da011ed4392f721a99d3522848eee53e512d78',
+  feature_set_token: '106685f53d873316454eab2258e14d380bacbac7',
   config: {
     '2fa_temporary_password_enabled': { value: !0 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -395,7 +395,7 @@ var manifest = {
     moment_annotations_enabled: { value: !0 },
     moments_new_share_variant_floating_action_button: { value: !1 },
     network_layer_503_backoff_mode: { value: 'host' },
-    ocf_2fa_enrollment_bouncer_enabled: { value: !1 },
+    ocf_2fa_enrollment_bouncer_enabled: { value: !0 },
     ocf_2fa_enrollment_enabled: { value: !0 },
     ocf_2fa_unenrollment_enabled: { value: !0 },
     onboarding_connect_tab_urt_graphql_enabled: { value: !1 },
@@ -594,9 +594,9 @@ var manifest = {
     responsive_web_like_by_author_enabled: { value: !1 },
     responsive_web_live_commerce_enabled: { value: !1 },
     responsive_web_live_video_parity_periscope_auth_enabled: { value: !1 },
-    responsive_web_location_spotlight_display_map: { value: !1 },
-    responsive_web_location_spotlight_v1_config: { value: !1 },
-    responsive_web_location_spotlight_v1_display: { value: !1 },
+    responsive_web_location_spotlight_display_map: { value: !0 },
+    responsive_web_location_spotlight_v1_config: { value: !0 },
+    responsive_web_location_spotlight_v1_display: { value: !0 },
     responsive_web_logged_out_gating_13501_ddg: { value: '' },
     responsive_web_logged_out_gating_13622_ddg: { value: '' },
     responsive_web_logged_out_gating_14123_ddg: { value: '' },
@@ -1599,7 +1599,7 @@ var manifest = {
     current_stack_follow_card_android_14711: {
       name: 'current_stack_follow_card_android_14711',
       type: 'experiment',
-      enumeration_values: ['control', 'follow_button', 'no_profile_media'],
+      enumeration_values: [],
     },
     current_stack_follow_experiment_ios_14713: {
       name: 'current_stack_follow_experiment_ios_14713',
@@ -2611,7 +2611,7 @@ var manifest = {
     ocf_2fa_enrollment_bouncer_enabled: {
       name: 'ocf_2fa_enrollment_bouncer_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     ocf_2fa_enrollment_enabled: { name: 'ocf_2fa_enrollment_enabled', type: 'boolean', defaultValue: !0 },
     ocf_2fa_enrollment_native_security_key_flow_enabled: {
@@ -3265,7 +3265,12 @@ var manifest = {
     responsive_web_edge_to_edge_m2_14094: {
       name: 'responsive_web_edge_to_edge_m2_14094',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment_desktop', 'control_mobile', 'treatment_mobile'],
+      enumeration_values: ['control', 'treatment'],
+    },
+    responsive_web_edge_to_edge_m2_mobile_15161: {
+      name: 'responsive_web_edge_to_edge_m2_mobile_15161',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
     },
     responsive_web_edit_tweet_api_enabled: {
       name: 'responsive_web_edit_tweet_api_enabled',
@@ -3531,17 +3536,17 @@ var manifest = {
     responsive_web_location_spotlight_display_map: {
       name: 'responsive_web_location_spotlight_display_map',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_location_spotlight_v1_config: {
       name: 'responsive_web_location_spotlight_v1_config',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_location_spotlight_v1_display: {
       name: 'responsive_web_location_spotlight_v1_display',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_logged_out_gating_14788_ddg: {
       name: 'responsive_web_logged_out_gating_14788_ddg',
@@ -4390,6 +4395,11 @@ var manifest = {
     },
     share_holdback_2022_fy2022_14031: {
       name: 'share_holdback_2022_fy2022_14031',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
+    share_learning_holdback_h2_2022_15147: {
+      name: 'share_learning_holdback_h2_2022_15147',
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
