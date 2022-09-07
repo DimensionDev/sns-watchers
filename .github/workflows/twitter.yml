@@ -31,16 +31,16 @@ jobs:
         run: |
           yarn fetch:twitter
 
-      - name: Git Diff
-        id: git-diff
+      - name: Git Status
+        id: git-status
         if: success()
         run: |
-          echo "GIT_DIFF<<EOF" >> $GITHUB_ENV
-          git diff | head -n 200 >> $GITHUB_ENV
+          echo "GIT_STATUS<<EOF" >> $GITHUB_ENV
+          git status --short >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
 
       - name: Commit changes
-        if: ${{ env.GIT_DIFF != '' }}
+        if: ${{ env.GIT_STATUS != '' }}
         run: |
           git add .
           git config --local user.email "bot@mask.io"

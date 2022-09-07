@@ -1,3 +1,4 @@
+const fs = require('fs')
 const path = require('path')
 const cheerio = require('cheerio')
 const del = require('del')
@@ -101,6 +102,9 @@ function getAllScriptUrls(html) {
 async function start() {
   const html = await download(url, null)
   await del(['twitter.com/scripts/*.js'])
+  try {
+    fs.mkdirSync('twitter.com/scripts')
+  } catch {}
 
   const scriptUrls = getAllScriptUrls(html)
   /** @type {string[]} */
