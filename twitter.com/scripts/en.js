@@ -348,6 +348,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c4881c66', 'Display'),
           a('i83d4f14', 'Follower requests'),
           a('f66d24be', 'Help Center'),
+          a('aeede01a', 'Imprint'),
           a('h54e6138', 'Keyboard shortcuts'),
           a('hc899e1a', 'Timelines'),
           a('ae1bbb26', 'Log out'),
@@ -362,6 +363,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f1e3a258', 'Settings and Support'),
           a('d13d697c', 'New'),
           a('ab38b896', 'Twitter Ads'),
+          a('da137d9a', 'MStV Transparenzangaben'),
           a('d0748dae', 'Twitter Circle'),
           a('ed21f886', 'Twitter Blue'),
           a('bcd81cac', 'Preferences'),
@@ -1150,10 +1152,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c730cd08', 'You have been blocked from Retweeting this user’s Tweets at their request.'),
           a('f1d600ac', 'Something went wrong. Try Retweet again in a minute.'),
           a('d80d33c6', 'Retweet is not permissible for this Tweet.'),
-          a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow'),
-          a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
-          a('j10ec2a0', 'Try unliking your Tweet again in a minute.')
-        a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
+          a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow')
+        a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
+          a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
+          a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
           a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
           a('f1824804', 'Appeal this warning'),
@@ -1687,7 +1689,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hdabc3fc', 'Terms of Service'),
           a('bc6efc72', 'Privacy Policy'),
           a('h3161192', 'Cookie Policy'),
-          a('aeede01a', 'Imprint'),
           a('e3719c16', 'Accessibility'),
           a('a7de64de', 'Ads info'),
           a('jb0a4c36', 'Blog'),
@@ -2330,9 +2331,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a226497c', 'Create a new Community'),
           a('d7346632', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
-          a('f0fc827e', 'Welcome to Twitter Communities'),
-          a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.')
-        a('fc5c6914', 'Meet others with your interests'),
+          a('f0fc827e', 'Welcome to Twitter Communities')
+        a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
+          a('fc5c6914', 'Meet others with your interests'),
           a('ad211086', 'Talk to people who care about the same things you do.'),
           a('gf803ba2', 'Tweet directly to a Community'),
           a('e92fe01c', 'Your Tweets are shared with other Community members — not your followers.'),
@@ -3612,9 +3613,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h021352f', function (e) {
             return '' + e.resendConfirmationLabel
           }),
-          a('ab1f7ee0', 'Change your password'),
-          a('d241169c', 'Current password')
-        a('a9bc3044', 'New password'),
+          a('ab1f7ee0', 'Change your password')
+        a('d241169c', 'Current password'),
+          a('a9bc3044', 'New password'),
           a('b8c03cfc', 'Confirm password'),
           a('b731d32c', 'Your password has been successfully updated.'),
           a('d555d7e0', 'New password cannot be the same as your existing password.'),
@@ -4867,11 +4868,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ba939778', 'Are you a robot?'),
           a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.'),
           a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
-          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
-          a(
-            'g4b108ee',
-            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
-          )
+          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4891,7 +4888,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('d98c140e', 'Continue to Twitter'),
+        a(
+          'g4b108ee',
+          'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
+        ),
+          a('d98c140e', 'Continue to Twitter'),
           a('e55188f0', 'You’re logged in to this account with this browser'),
           a('d55d8fe2', 'Do you want to continue with this account?'),
           a('g806008e', 'Log in with a different account'),
@@ -6088,9 +6089,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cdae1af0', 'Add tax information'),
           a('ed8bb5a0', 'Add payment details'),
           a('fc640c20', 'Add payment details to claim your coupon'),
-          a('be2dc078', 'Sign up and add payment details'),
-          a('iaefd4de', 'Sign up and add payment details to claim your coupon')
-        a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
+          a('be2dc078', 'Sign up and add payment details')
+        a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
+          a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
           a('da2805d2', 'A campaign for this tweet has already been created.'),
           a('a4db098c', 'It looks like we couldn’t create your promotion. Please try again later.'),
           a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
