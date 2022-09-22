@@ -1253,11 +1253,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h1053f7e', 'Only people you mention'),
           a('bf994ab2', 'Only you'),
           a('cf7f7e3a', 'Only people you mentioned'),
-          a('hd7d278c', 'No thanks'),
-          a('c444d438', 'Join Twitter Blue to get early access to Edit Tweet'),
+          a('h3032750', 'Get more info'),
+          a('f5b3dc1e', 'Maybe later'),
+          a('ad4d29c6', 'Get early access to Edit Tweet with Twitter Blue'),
           a(
-            'g71fb7b6',
-            'Get early access to Edit Tweet, plus other features like Top Articles, Reader, Bookmark Folders, and more.',
+            'e96fe588',
+            'Twitter Blue subscribers get early access to features like Edit Tweet, which lets you update a Tweet up to 5 times within the first 30 minutes after it’s published.',
           ),
           a('ae0c5fbe', 'Error changing who can reply'),
           a('bae0cbc0', 'Change who can reply'),
@@ -1379,14 +1380,22 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fd7c845c', 'Your Tweet has been edited.'),
           a('jd894d9a', 'Your Tweet was sent. You can edit it for the next 30 minutes.'),
           a('e65aed64', 'Your Tweets were sent.'),
+          a('f548d684', 'Sending Tweet ... once it’s published, you’ll have 30 minutes to make any edits.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
+          a('af4d0a80', 'Discard edits?'),
           a('bb01231c', 'This can’t be undone and you’ll lose your draft.'),
+          a('if69307c', 'If you leave, your changes won’t be saved.'),
           a('d4ab68e2', 'Discard'),
           a('d8af8a4c', 'Save Tweet?'),
           a('d09d4c06', 'You can save this to send later from your unsent Tweets.'),
           a('i2209530', 'Save'),
           a('bf9b89e4', 'Your draft was saved.'),
+          a('b983f9e0', 'Heads up'),
+          a(
+            'f1449818',
+            'Because Edit Tweet is only currently available to Twitter Blue subscribers in select markets, using this feature could reveal which country you’re in and that you subscribe to Twitter Blue.',
+          ),
           a('gb1ac3be', 'Your time to edit ran out'),
           a('e5ace470', 'You can no longer edit your tweet.'),
           a('d0547e90', 'Update Tweet?'),
@@ -1433,7 +1442,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f0598964', 'Want to share with a smaller crowd?'),
           a('ceec051c', 'Twitter Circle lets you send Tweets to only the people you choose.'),
           a('fc5bfd96', 'Get started'),
-          a('f5b3dc1e', 'Maybe later'),
           a('e76b4486', 'How Twitter Circle Works'),
           a('bb55e8ee', 'Add your people'),
           a('h3fad86e', 'You can choose up to 150 of them to include in your Twitter Circle.'),
@@ -1876,6 +1884,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g9677c6e', 'Confirm'),
           a('e4a6e006', 'Something went wrong. Please try again.'),
           a('f83d0446', 'Your alias has been saved.'),
+          a('ed0e6b2e', 'Start rating notes'),
+          a('a0fb1616', 'Welcome to Birdwatch!'),
+          a('g880a78a', 'Start by rating notes'),
+          a(
+            'jf0b0f56',
+            'Birdwatch relies on contributors like you to help identify helpful notes to show to everyone.',
+          ),
+          a('af9f2b78', 'Track your Rating Impact'),
+          a('af68afc8', 'Your Impact goes up every time you help a note get the status of Helpful or Not Helpful.'),
+          a('fb5c5d42', 'Unlock the ability to write notes'),
+          a(
+            'ga1b2b3e',
+            'Once your Rating Impact reaches 5 or higher, you’ll unlock the ability to write your own Birdwatch notes.',
+          ),
           a('j5f112b4', 'Two of your recent notes currently have the status of Not Helpful.'),
           a(
             'ac34c5e8',
@@ -1915,8 +1937,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d0ba7db4', 'Argumentative or inflammatory'),
           a('aa520d32', 'Spam, harassment, or abuse'),
           a('e25e5ed2', 'Hard to understand'),
+          a('fdc2060a', 'You need a higher Impact Score score in order to write notes.'),
+          a('edd80858', 'See your profile and score'),
+          a('eec24ff6', 'Start rating'),
+          a(
+            'c0b8321e',
+            'Contributors like you collectively help identify Helpful notes to be shown as context on Twitter and keep people informed.',
+          ),
+          a('f2f61788', 'Unlock the ability to write'),
+          a(
+            'e9649eae',
+            'Once your successful rating score reaches 5 or higher, you’ll unlock the ability to write Birdwatch notes.',
+          ),
           a('e7beb100', 'See your profile and feedback'),
-          a('ed0e6b2e', 'Start rating notes'),
           a('ee7b8050', 'You are temporarily locked out from writing new notes.'),
           a(
             'f37faf22',
@@ -2199,14 +2232,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ee160790', 'Deleted notes'),
           a('efb9a9e0', 'Nothing to see here'),
           a('ee43790f', 'Learn more'),
-          a('g880a78a', 'Start by rating notes'),
-          a(
-            'c0b8321e',
-            'Contributors like you collectively help identify Helpful notes to be shown as context on Twitter and keep people informed.',
-          ),
-          a('af9f2b78', 'Track your Rating Impact'),
-          a('af68afc8', 'Your Impact goes up every time you help a note get the status of Helpful or Not Helpful.'),
-          a('fb5c5d42', 'Unlock the ability to write notes'),
           a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
           a('e86c87a0', 'Rate more notes'),
           a('ad98f836', 'Your Rating Impact went negative. Don’t worry!'),
@@ -2216,10 +2241,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'eda73c9c',
             'Your ratings will, sometimes, disagree with the status on a note. That’s not a problem! If more contributors agree with you, the status can be overturned, and your impact will change.',
-          ),
-          a(
-            'ga1b2b3e',
-            'Once your Rating Impact reaches 5 or higher, you’ll unlock the ability to write your own Birdwatch notes.',
           ),
           a('e2499d2e', 'You can now write Birdwatch notes!'),
           a('ff3e0be2', 'Join Birdwatch'),
@@ -2315,8 +2336,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
           a('ae58026a', 'Open a Branded Like .json file to preview'),
-          a('e39b368e', 'Broadcast'),
-          a('f2382014', 'LIVE'),
+          a('e39b368e', 'Broadcast')
+        a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
           a('hd0bc1eb', function (e) {
             return e.name + ' is live'
@@ -2331,8 +2352,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a226497c', 'Create a new Community'),
           a('d7346632', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
-          a('f0fc827e', 'Welcome to Twitter Communities')
-        a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
+          a('f0fc827e', 'Welcome to Twitter Communities'),
+          a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
           a('fc5c6914', 'Meet others with your interests'),
           a('ad211086', 'Talk to people who care about the same things you do.'),
           a('gf803ba2', 'Tweet directly to a Community'),
@@ -2466,7 +2487,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
           a('c5d1634e', 'Okay, I understand'),
-          a('b983f9e0', 'Heads up'),
           a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a(
             'daedd9fa',
@@ -2697,6 +2717,21 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('ed33a3b6', 'Hello, wordsmiths.'),
           a('d5bda8b4', 'We now have a newsletter tool.'),
+          a('c03c4a09', function (e) {
+            return (
+              e.minutes +
+              ' minute' +
+              n(e.minutes, '', 's') +
+              ' and ' +
+              e.seconds +
+              ' second' +
+              n(e.seconds, '', 's') +
+              ' remaining to edit Tweet'
+            )
+          }),
+          a('c1cb2965', function (e) {
+            return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
+          }),
           a('c55eed72', 'Replying to'),
           a('caca3102', 'Others in this conversation'),
           a('c6a6dc2f', function (e) {
@@ -3592,14 +3627,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fee1cd64', 'Pink'),
           a('cbed7fb2', 'Purple'),
           a('g697ec02', 'Orange'),
-          a('a7c2204a', 'Green'),
-          a('ea1c87a5', function (e) {
-            return (
-              'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
-              e.mention +
-              '.'
-            )
-          }),
+          a('a7c2204a', 'Green')
+        a('ea1c87a5', function (e) {
+          return (
+            'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
+            e.mention +
+            '.'
+          )
+        }),
           a('je506a60', 'Change username'),
           a('d1f6d336', 'Username'),
           a('de65c756', 'Suggestions'),
@@ -3613,8 +3648,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h021352f', function (e) {
             return '' + e.resendConfirmationLabel
           }),
-          a('ab1f7ee0', 'Change your password')
-        a('d241169c', 'Current password'),
+          a('ab1f7ee0', 'Change your password'),
+          a('d241169c', 'Current password'),
           a('a9bc3044', 'New password'),
           a('b8c03cfc', 'Confirm password'),
           a('b731d32c', 'Your password has been successfully updated.'),
@@ -4247,6 +4282,41 @@ window.__SCRIPTS_LOADED__.vendor &&
               ' device. You’ll need to manage or cancel your subscription from that platform.'
             )
           }),
+          a('cb165528', 'News features and settings'),
+          a('b16486e8', 'A better reading experience on and off Twitter.'),
+          a('b62d6e4c', 'Reader'),
+          a(
+            'f1401e62',
+            'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting "View thread in Reader" from within any Tweet in a thread.',
+          ),
+          a('i65802d0', 'Ad-free Articles'),
+          a(
+            'd674b3f2',
+            'We partner with US-based publishers so you Don’t see ads on their sites when coming from Twitter.',
+          ),
+          a(
+            'bce24a7c',
+            'If a Twitter Blue Publisher charges readers for content, you’ll need to subscribe directly to their publication to read stories behind their paywall.',
+          ),
+          a('hd885ae0', 'See your impact'),
+          a(
+            'bd3be83a',
+            'Every time you read ad-free with Twitter Blue, a portion of your membership fee goes directly to the partner sites you read.',
+          ),
+          a('je4ccd3a', 'Ad-free Articles Help Center'),
+          a('g7eb2d40', 'Early Access'),
+          a('ce5d8470', 'Twitter Blue Labs gives members early access to some of Twitter’s newest features.'),
+          a(
+            'aca286f8',
+            'Edit Tweets up to 5 times within 30 minutes of Tweeting. Your edit history is visible to anyone who wants to see the evolution of a Tweet.',
+          ),
+          a('de5a60d8', '1080p video'),
+          a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
+          a('a99d8e60', 'Upload longer videos'),
+          a('b0f0b3aa', 'Upload and Tweet videos that are up to 10 minutes long.'),
+          a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
+          a('f2977d80', 'Bookmark folders'),
+          a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
           a('d299431c', 'Monetization'),
           a('h93824cc', 'Monetization options'),
           a('a6777c1c', 'Super Follows'),
@@ -4450,7 +4520,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd7f65128',
             'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
           ),
-          a('af4d0a80', 'Discard edits?'),
           a('c701e5cc', 'Any changes you made won’t be saved.'),
           a('a649778c', 'Continue editing'),
           a('hf6f2914', 'Preview'),
@@ -4605,20 +4674,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             'db8346ee',
             'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
           ),
-          a('a99d8e60', 'Upload longer videos'),
           a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
           a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
-          a(
-            'aca286f8',
-            'Edit Tweets up to 5 times within 30 minutes of Tweeting. Your edit history is visible to anyone who wants to see the evolution of a Tweet.',
-          ),
           a('cac1046e', '1080p video uploads'),
-          a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
           a('je84dece', 'Feature Settings'),
-          a('i65802d0', 'Ad-free Articles'),
           a('a21b8ad2', 'Ad-free Sites'),
-          a('hd885ae0', 'See your impact'),
-          a('je4ccd3a', 'Ad-free Articles Help Center'),
           a(
             'bbbd8ea8',
             'Check out which sites are on our growing network of Twitter Blue Publishers. Availability varies based on location. Doesn’t include paywall access right now.',
@@ -4627,6 +4687,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ad45e9b2', 'View your subscription details or cancel.'),
           a('db529452', 'Subscription'),
           a('d248d75e', 'Get Support'),
+          a('fbefd86c', 'New!'),
+          a('a1f3dbf2', 'Early access to edit your Tweets. Now you can fix those typos.'),
+          a('d551ca66', 'See your member benefits and manage your settings'),
+          a('eca82e08', 'A better news reading experience'),
+          a(
+            'aab8f504',
+            'Discover relevant news, enjoy articles without ads, and support the journalism you like to read.',
+          ),
+          a('ia0beb56', 'Early access to select new features'),
+          a('h44313c4', 'Explore select new Twitter features included in Twitter Blue Labs.'),
           a('b6ab9962', 'Original Tweets'),
           a('j45978a8', 'Quotes'),
           a('be077e8c', 'Threads'),
@@ -4802,12 +4872,31 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
           a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
           a('j681ac0e', 'View content preferences'),
-          a('cde432fe', 'Add Custom Timelines'),
+          a('a9efe22c', 'Add custom Timelines'),
           a('g8220472', 'Top Tweets off'),
           a('ccdd3766', 'Top Tweets on'),
           a('g2657de4', 'Top Tweets'),
-          a('c41ecf3c', 'Home shows you top Tweets first'),
-          a('d18aa6d4', 'Latest Tweets show up as they happen'),
+          a('c41ecf3c', 'Home shows you top Tweets first')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function c(e, t) {
+          return (
+            (c =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+            c(e, t)
+          )
+        }
+        a('d18aa6d4', 'Latest Tweets show up as they happen'),
           a('c90dcfa2', 'Home and Latest, one tab away'),
           a('bc52b0ce', 'Go back Home'),
           a('j6382fea', 'See latest Tweets instead'),
@@ -4868,30 +4957,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ba939778', 'Are you a robot?'),
           a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.'),
           a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
-          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.')
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function c(e, t) {
-          return (
-            (c =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            c(e, t)
-          )
-        }
-        a(
-          'g4b108ee',
-          'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
-        ),
+          a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
+          a(
+            'g4b108ee',
+            'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
+          ),
           a('d98c140e', 'Continue to Twitter'),
           a('e55188f0', 'You’re logged in to this account with this browser'),
           a('d55d8fe2', 'Do you want to continue with this account?'),
@@ -5166,7 +5236,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g419ecf4', 'Stay on page'),
           a('d3a097a2', 'Yes, discard'),
           a('j1e1cd30', 'Discard your changes?'),
-          a('if69307c', 'If you leave, your changes won’t be saved.'),
           a('ie85a7a8', 'Delete your business info?'),
           a('b5348efc', 'No hours'),
           a('db285564', 'Always open'),
@@ -6054,8 +6123,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
-          a('d80964aa', 'Increase engagement'),
-          a('d4f57cce', 'Grow your followers'),
+          a('d80964aa', 'Increase engagement')
+        a('d4f57cce', 'Grow your followers'),
           a('g06d6bf8', 'More link clicks'),
           a('c1a1817c', 'Your Tweet includes media'),
           a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
@@ -6089,8 +6158,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cdae1af0', 'Add tax information'),
           a('ed8bb5a0', 'Add payment details'),
           a('fc640c20', 'Add payment details to claim your coupon'),
-          a('be2dc078', 'Sign up and add payment details')
-        a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
+          a('be2dc078', 'Sign up and add payment details'),
+          a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
           a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
           a('da2805d2', 'A campaign for this tweet has already been created.'),
           a('a4db098c', 'It looks like we couldn’t create your promotion. Please try again later.'),
@@ -6164,11 +6233,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Read ad-free on popular US-based publisher sites. Availability varies based on location. No paywall access.',
           ),
           a('a29aa266', 'A shortcut to the most-shared articles by people you follow'),
-          a('b62d6e4c', 'Reader'),
           a('e48717d8', 'Read long threads minus the distractions.'),
           a('cd2b9648', 'Customize your Twitter experience'),
           a('hdc87500', 'Bookmark Folders'),
-          a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
           a('i9223e60', 'Custom navigation'),
           a('c1935a34', 'Set your most used pages right on your tab bar.'),
           a('gc8d916e', 'App icons'),
@@ -6176,6 +6243,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f39aef7c', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee956', 'Get early access'),
+          a('f769af72', 'Not all features are available on all devices.'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
             'gc7637d4',
