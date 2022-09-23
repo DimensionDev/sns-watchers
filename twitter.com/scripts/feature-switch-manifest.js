@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'e489263a868ffcb1246ce47bf1e43221891a79e2',
+  feature_set_token: 'aa7858c57d0b9dd612159a33aac80773d607d878',
   config: {
     '2fa_temporary_password_enabled': { value: !0 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -252,6 +252,8 @@ var manifest = {
     account_taxonomy_automation_opt_in_enabled: { value: !1 },
     ads_spacing_client_fallback_minimum_spacing: { value: 3 },
     arkose_challenge_lo_web_notification_dev: { value: 'BF5FA6C8-9668-4AF9-AFA2-E362F56E5B71' },
+    arkose_challenge_lo_web_notification_mobile_prod: { value: '6A2FD110-7C1A-47CD-82EE-D01FFB4810D7' },
+    arkose_challenge_lo_web_notification_prod: { value: '50706BFE-942C-4EEC-B9AD-03F7CD268FB1' },
     arkose_challenge_open_app_dev: { value: '560C66A3-C8EB-4D11-BE53-A8232734AA62' },
     arkose_challenge_open_app_prod: { value: '6E8D3D6E-30D4-45F1-9838-BA3D9651AAA1' },
     arkose_challenge_signup_mobile_dev: { value: '006B5E87-7497-403E-9E0C-8FFBAAC6FA67' },
@@ -1390,10 +1392,15 @@ var manifest = {
       type: 'string',
       defaultValue: 'DF58DD3B-DFCC-4502-91FA-EDC0DC385CFF',
     },
-    arkose_challenge_lo_web_notification_prod: { name: 'arkose_challenge_lo_web_notification_prod', type: 'string' },
+    arkose_challenge_lo_web_notification_prod: {
+      name: 'arkose_challenge_lo_web_notification_prod',
+      type: 'string',
+      defaultValue: '50706BFE-942C-4EEC-B9AD-03F7CD268FB1',
+    },
     arkose_challenge_lo_web_notification_mobile_prod: {
       name: 'arkose_challenge_lo_web_notification_mobile_prod',
       type: 'string',
+      defaultValue: '6A2FD110-7C1A-47CD-82EE-D01FFB4810D7',
     },
     arkose_challenge_lo_web_notification_dev: {
       name: 'arkose_challenge_lo_web_notification_dev',
@@ -3784,7 +3791,7 @@ var manifest = {
     responsive_web_media_upload_md5_hashing_10141: {
       name: 'responsive_web_media_upload_md5_hashing_10141',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
+      enumeration_values: [],
     },
     responsive_web_media_upload_metrics_enabled: {
       name: 'responsive_web_media_upload_metrics_enabled',
