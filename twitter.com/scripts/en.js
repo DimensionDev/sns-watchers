@@ -123,86 +123,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d5568440', 'Please enter a stronger password.'),
           a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
           a('cd24fe60', 'Please enter a valid phone number.'),
-          a('h7a9e4e2', 'NFT profile picture'),
-          a('j49fd4e8', 'Switch to the app'),
-          a('hd50e064', 'Not now'),
-          a('a565833e', 'Sign up'),
-          a('e919c3bc', 'Log in'),
-          a('c8f593e0', 'Twitter is better on the app'),
-          a('c5de6fd4', 'Never miss a Tweet. Open this in the Twitter app to get the full experience.'),
-          a('b6a43e78', 'Be the first to know'),
-          a(
-            'b469e406',
-            'Keep up-to-date with what matters most to you. Switch to the app for push notifications about people, topics and events you follow.',
-          ),
-          a('b8505290', 'Reply to join the conversation.'),
-          a('cea760d4', 'Retweet to spread the word.'),
-          a('b698f800', 'Like a Tweet to share the love.'),
-          a('bd45d44e', 'React to a Tweet to share the love.'),
-          a('a6a267da', 'Sign up so you never miss their Tweets.'),
-          a('g78650fe', 'Follow a Topic to discover great Tweets'),
-          a('ic848090', 'Log in first'),
-          a('f9ebe066', 'You can join the conversation in Communities — right after you log in.'),
-          a('ea88ce2e', 'Don’t miss what’s happening'),
-          a('ge9eaa86', 'People on Twitter are the first to know.'),
-          a('d8817e36', 'Accept all cookies'),
-          a('b9288ee6', 'Refuse non-essential cookies'),
-          a('i1390ec2', 'Did someone say … cookies?'),
-          a('id7ef731', 'help center'),
-          a('gfb2ba01', 'Show more about your choices.'),
-          a('ia5e7488', 'Close'),
-          a('a8a8d769', 'Cookies Use'),
-          a('b47e760e', 'To view keyboard shortcuts, press question mark'),
-          a('fd2c7b44', 'View keyboard shortcuts'),
-          a('d5696fcc', 'Shortcut help'),
-          a('e722b9d0', 'Next Tweet'),
-          a('a86b5194', 'Previous Tweet'),
-          a('a690c4d0', 'Page down'),
-          a('ed90d9ac', 'Load new Tweets'),
-          a('ha8209bc', 'Home'),
-          a('fcf3e54c', 'Explore'),
-          a('eb75875e', 'Notifications'),
-          a('cdb53d7a', 'Mentions'),
-          a('fa98627a', 'Profile'),
-          a('d7b8ebaa', 'Likes'),
-          a('b0041756', 'Lists'),
-          a('d4986f86', 'Direct Messages'),
-          a('c106055a', 'Moment Maker'),
-          a('bb081ea2', 'Settings'),
-          a('i3145aa0', 'Bookmarks'),
-          a('eee2ed92', 'Go to user…'),
-          a('ee5ccf3e', 'Display settings'),
-          a('ib0cb828', 'React with Hmm'),
-          a('h03c8a84', 'React with Sad'),
-          a('j055356c', 'React with Haha'),
-          a('a849ef88', 'React with Cheer'),
-          a('d442e6e0', 'React with Like'),
-          a('b1547096', 'New Tweet'),
-          a('j9e025aa', 'Send Tweet'),
-          a('e736990a', 'New Direct Message'),
-          a('a9ae1e78', 'Search'),
-          a('fe731016', 'Like'),
-          a('d17df548', 'Reply'),
-          a('bac8f4c2', 'Retweet'),
-          a('h7755862', 'Share Tweet'),
-          a('gb303814', 'Bookmark'),
-          a('c03b1126', 'Mute account'),
-          a('ebd2abb2', 'Block account'),
-          a('db1e4288', 'Open Tweet details'),
-          a('eebdef38', 'Expand photo'),
-          a('b488758c', 'Open/Close Messages dock'),
-          a('c82314e0', 'Pause/Play selected Video'),
-          a('b881560e', 'Mute selected Video'),
-          a('a94f7302', 'Go to Audio Dock'),
-          a('a7e604c6', 'Play/Pause Audio Dock'),
-          a('f978c4fc', 'Mute/Unmute Audio Dock'),
-          a(
-            'j991cb30',
-            'Never miss out on what’s happening by enabling Twitter notifications. Twitter will receive your device country and language to personalize your notifications.',
-          ),
-          a('e71e09ec', 'Turn on notifications'),
-          a('g4850f44', 'Push notifications enabled'),
           a('d2fb334c', 'Twitter'),
+          a('h7a9e4e2', 'NFT profile picture'),
           a('cfbea177', function (e) {
             return e.name + '’s Space'
           }),
@@ -254,6 +176,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gb5851d7', function (e) {
             return e.prefix + ' ' + e.url
           }),
+          a('ia5e7488', 'Close'),
           a('i7f853ea', 'Share with people outside of Twitter'),
           a('g6469591', 'Learn more'),
           a('cededf2a', 'Host'),
@@ -298,18 +221,26 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.count + ' tuned in'
           }),
           a('a2f81050', 'Messages'),
+          a('d4986f86', 'Direct Messages'),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
           }),
+          a('i3145aa0', 'Bookmarks'),
+          a('bb081ea2', 'Settings'),
+          a('ha8209bc', 'Home'),
           a('b489517e', 'Home (New unread Tweets)'),
+          a('eb75875e', 'Notifications'),
           a('e1249849', function (e) {
             return 'Notifications (' + e.count + ' unread notification' + n(e.count, '', 's') + ')'
           }),
+          a('fcf3e54c', 'Explore'),
           a('c0b786ee', 'Search and explore'),
           a('e2eac0c4', 'Primary'),
+          a('fa98627a', 'Profile'),
           a('i5aa4ce0', 'More menu items'),
           a('b5298d92', 'Connect'),
           a('b8533bac', 'Topics'),
+          a('b0041756', 'Lists'),
           a('h02a6fe6', 'Communities'),
           a('ded416b0', 'Spaces'),
           a('d86bbf0f', function (e) {
@@ -373,9 +304,28 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           a('d9ef2842', 'Unread items'),
           a('dc931afc', 'Communities (New items)'),
+          a('c8f593e0', 'Twitter is better on the app'),
+          a('c5de6fd4', 'Never miss a Tweet. Open this in the Twitter app to get the full experience.'),
+          a('b6a43e78', 'Be the first to know'),
+          a(
+            'b469e406',
+            'Keep up-to-date with what matters most to you. Switch to the app for push notifications about people, topics and events you follow.',
+          ),
+          a('b8505290', 'Reply to join the conversation.'),
+          a('cea760d4', 'Retweet to spread the word.'),
+          a('b698f800', 'Like a Tweet to share the love.'),
+          a('bd45d44e', 'React to a Tweet to share the love.'),
+          a('a6a267da', 'Sign up so you never miss their Tweets.'),
+          a('g78650fe', 'Follow a Topic to discover great Tweets'),
+          a('ic848090', 'Log in first'),
+          a('f9ebe066', 'You can join the conversation in Communities — right after you log in.'),
+          a('ea88ce2e', 'Don’t miss what’s happening'),
+          a('ge9eaa86', 'People on Twitter are the first to know.'),
           a('eb022176', 'Create account'),
           a('gcfef7b6', 'Create account with phone or email'),
+          a('e919c3bc', 'Log in'),
           a('e5b0e544', 'Sign in'),
+          a('a565833e', 'Sign up'),
           a('aa95ddc0', 'Sign up with phone or email'),
           a('gd93944e', 'Use app'),
           a('f2f787a0', 'Terms of Service'),
@@ -396,6 +346,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a6941096', 'This account can’t be followed from your country.'),
           a('if8cd2a4', 'You’re not old enough to follow this account.'),
           a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
+          a('j49fd4e8', 'Switch to the app'),
+          a('hd50e064', 'Not now'),
           a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
           a('j4292c24', 'You have been blocked from following this user at their request.'),
           a('a0ba5842', 'You are unable to follow more people at this time.'),
@@ -415,6 +367,54 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g34f2c63', function (e) {
             return 'Tweet' + e.verb
           }),
+          a('d8817e36', 'Accept all cookies'),
+          a('b9288ee6', 'Refuse non-essential cookies'),
+          a('i1390ec2', 'Did someone say … cookies?'),
+          a('id7ef731', 'help center'),
+          a('gfb2ba01', 'Show more about your choices.'),
+          a('a8a8d769', 'Cookies Use'),
+          a('b47e760e', 'To view keyboard shortcuts, press question mark'),
+          a('fd2c7b44', 'View keyboard shortcuts'),
+          a('d5696fcc', 'Shortcut help'),
+          a('e722b9d0', 'Next Tweet'),
+          a('a86b5194', 'Previous Tweet'),
+          a('a690c4d0', 'Page down'),
+          a('ed90d9ac', 'Load new Tweets'),
+          a('cdb53d7a', 'Mentions'),
+          a('d7b8ebaa', 'Likes'),
+          a('c106055a', 'Moment Maker'),
+          a('eee2ed92', 'Go to user…'),
+          a('ee5ccf3e', 'Display settings'),
+          a('ib0cb828', 'React with Hmm'),
+          a('h03c8a84', 'React with Sad'),
+          a('j055356c', 'React with Haha'),
+          a('a849ef88', 'React with Cheer'),
+          a('d442e6e0', 'React with Like'),
+          a('b1547096', 'New Tweet'),
+          a('j9e025aa', 'Send Tweet'),
+          a('e736990a', 'New Direct Message'),
+          a('a9ae1e78', 'Search'),
+          a('fe731016', 'Like'),
+          a('d17df548', 'Reply'),
+          a('bac8f4c2', 'Retweet'),
+          a('h7755862', 'Share Tweet'),
+          a('gb303814', 'Bookmark'),
+          a('c03b1126', 'Mute account'),
+          a('ebd2abb2', 'Block account'),
+          a('db1e4288', 'Open Tweet details'),
+          a('eebdef38', 'Expand photo'),
+          a('b488758c', 'Open/Close Messages dock'),
+          a('c82314e0', 'Pause/Play selected Video'),
+          a('b881560e', 'Mute selected Video'),
+          a('a94f7302', 'Go to Audio Dock'),
+          a('a7e604c6', 'Play/Pause Audio Dock'),
+          a('f978c4fc', 'Mute/Unmute Audio Dock'),
+          a(
+            'j991cb30',
+            'Never miss out on what’s happening by enabling Twitter notifications. Twitter will receive your device country and language to personalize your notifications.',
+          ),
+          a('e71e09ec', 'Turn on notifications'),
+          a('g4850f44', 'Push notifications enabled'),
           a('cdc1bff7', function (e) {
             return 'Profile menu ' + e.loggedInUserName
           }),
@@ -746,7 +746,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j7d0e836', 'Expand'),
           a('cdcebd22', 'New message'),
           a('h845f282', 'Direct Message'),
-          a('f325afc4', 'Compose a DM'),
           a('fd6150fc', 'Keeping you safer in Direct Messages'),
           a('ac25e02e', 'Privacy Policy'),
           a('a74e7c77', function (e) {
@@ -845,6 +844,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fac945ad', function (e) {
             return e.stringCount + ' new request' + n(e.count, '', 's')
           }),
+          a('f325afc4', 'Compose a DM'),
           a('f5dc353c', 'Now filtering graphic media'),
           a('daeda054', 'Go to Settings'),
           a(
@@ -1077,6 +1077,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a8569d48', 'Opens the new version of this Tweet'),
           a('a407814e', 'Last edited'),
           a('d91a6826', 'This is the latest version of this Tweet.'),
+          a('h51f85b8', 'Reply filter is on'),
           a('b8f3500a', 'View thread in Reader'),
           a('b4947556', 'Translate Tweet'),
           a('he9c9634', 'Unable to fetch translation'),
@@ -1151,9 +1152,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f03dab2a', 'You have been blocked from reacting to this user’s Tweets at their request.'),
           a('c730cd08', 'You have been blocked from Retweeting this user’s Tweets at their request.'),
           a('f1d600ac', 'Something went wrong. Try Retweet again in a minute.'),
-          a('d80d33c6', 'Retweet is not permissible for this Tweet.'),
-          a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow')
-        a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
+          a('d80d33c6', 'Retweet is not permissible for this Tweet.')
+        a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow'),
+          a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
@@ -1396,10 +1397,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'f1449818',
             'Because Edit Tweet is only currently available to Twitter Blue subscribers in select markets, using this feature could reveal which country you’re in and that you subscribe to Twitter Blue.',
           ),
-          a('gb1ac3be', 'Your time to edit ran out'),
-          a('e5ace470', 'You can no longer edit your tweet.'),
-          a('d0547e90', 'Update Tweet?'),
-          a('a5895b90', 'This is your last edit for this Tweet.'),
+          a('abc4afcc', 'Your edit time expired'),
+          a('aa15f5aa', 'Tweets can only be edited within the first 30 minutes after they’re published.'),
+          a('g4bcc5f4', 'This is your last edit'),
+          a('c5b474de', 'Your Tweet can’t be updated again.'),
           a('h3701ffe', 'Update'),
           a('b551cd23', function (e) {
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
@@ -1798,6 +1799,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hbd6035f', function (e) {
             return 'Speaker' + n(e.speakerCount, '', 's')
           }),
+          a('h5245afa', 'Community'),
           a('cc5ab042', 'This space has ended'),
           a('eadd5678', 'It looks like this space has been closed.'),
           a('cc8f82bc', 'Join this space'),
@@ -2334,10 +2336,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'fce0c59e',
             'Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again.',
           ),
-          a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
-          a('ae58026a', 'Open a Branded Like .json file to preview'),
-          a('e39b368e', 'Broadcast')
-        a('f2382014', 'LIVE'),
+          a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.')
+        a('ae58026a', 'Open a Branded Like .json file to preview'),
+          a('e39b368e', 'Broadcast'),
+          a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
           a('hd0bc1eb', function (e) {
             return e.name + ' is live'
@@ -2375,7 +2377,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hb01fe46', 'When you do, you’ll see them here.'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('fbf01e52', 'Search Communities'),
-          a('h5245afa', 'Community'),
           a('dc6ce7b4', 'Members'),
           a('ga2aa43c', 'Moderators'),
           a('b139b54a', 'Invite members'),
@@ -3626,15 +3627,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d818cdd6', 'Yellow'),
           a('fee1cd64', 'Pink'),
           a('cbed7fb2', 'Purple'),
-          a('g697ec02', 'Orange'),
-          a('a7c2204a', 'Green')
-        a('ea1c87a5', function (e) {
-          return (
-            'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
-            e.mention +
-            '.'
-          )
-        }),
+          a('g697ec02', 'Orange')
+        a('a7c2204a', 'Green'),
+          a('ea1c87a5', function (e) {
+            return (
+              'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
+              e.mention +
+              '.'
+            )
+          }),
           a('je506a60', 'Change username'),
           a('d1f6d336', 'Username'),
           a('de65c756', 'Suggestions'),
@@ -4335,12 +4336,23 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ff9ed474', 'Total earnings'),
           a('d59dbf8a', 'Overview'),
           a('c76972f0', 'Since last payout'),
+          a('g652fc4c', 'You have no payout history this month.'),
+          a('d55e017a', 'This month'),
+          a('jb13b840', 'All-time'),
+          a('f883322d', function (e) {
+            return 'Transaction ID ' + e.transactionId
+          }),
           a('ja73ebac', 'Revenue'),
           a('ed9404c8', 'New subscriptions'),
+          a('g0a17d4c', 'You have no new subscriptions at this time.'),
           a('h7a41c02', 'Renewals'),
+          a('eedf2eaa', 'You have no renewals at this time.'),
           a('d93308d8', 'See all transactions'),
           a('h810143c', 'Details'),
           a('bf364d62', 'All transactions'),
+          a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
+          a('g1b8020c', 'Last 30 days'),
+          a('b5f9ec14', 'You have no renewals in the last 30 days.'),
           a('f2351b98', 'Flagged accounts'),
           a(
             'da2c4a73',
@@ -4778,6 +4790,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ac85c6b2', 'An error occurred loading this image'),
           a('b5b0afa4', 'Customize your view'),
+          a('a8620342', 'These settings affect all the Twitter accounts on this browser.'),
           a('babfa32c', 'Quickly customize your view'),
           a('a2a2f98e', 'See what’s new'),
           a(
@@ -4859,24 +4872,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eadb5a46', 'Be the first to join'),
           a('ia3c0ab7', function (e) {
             return e.hostName + '’s Space'
-          }),
-          a('hd552761', function (e) {
-            return 'Hosted by ' + e.hostName
-          }),
-          a('c3ea19a5', function (e) {
-            return e.index + ' of ' + e.total
-          }),
-          a('a5235305', function (e) {
-            return e.listOfPeople + ' joined'
-          }),
-          a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
-          a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
-          a('j681ac0e', 'View content preferences'),
-          a('a9efe22c', 'Add custom Timelines'),
-          a('g8220472', 'Top Tweets off'),
-          a('ccdd3766', 'Top Tweets on'),
-          a('g2657de4', 'Top Tweets'),
-          a('c41ecf3c', 'Home shows you top Tweets first')
+          })
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4896,7 +4892,24 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('d18aa6d4', 'Latest Tweets show up as they happen'),
+        a('hd552761', function (e) {
+          return 'Hosted by ' + e.hostName
+        }),
+          a('c3ea19a5', function (e) {
+            return e.index + ' of ' + e.total
+          }),
+          a('a5235305', function (e) {
+            return e.listOfPeople + ' joined'
+          }),
+          a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
+          a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
+          a('j681ac0e', 'View content preferences'),
+          a('a9efe22c', 'Add custom Timelines'),
+          a('g8220472', 'Top Tweets off'),
+          a('ccdd3766', 'Top Tweets on'),
+          a('g2657de4', 'Top Tweets'),
+          a('c41ecf3c', 'Home shows you top Tweets first'),
+          a('d18aa6d4', 'Latest Tweets show up as they happen'),
           a('c90dcfa2', 'Home and Latest, one tab away'),
           a('bc52b0ce', 'Go back Home'),
           a('j6382fea', 'See latest Tweets instead'),
@@ -5625,6 +5638,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'c4c53b86',
             'Keep in mind we use technology to help us identify such replies, so while we’re always improving, we may not get it right all the time.',
           ),
+          a('dca3d2ee', 'Turn off reply filter?'),
+          a('d75ce93e', 'Filtered replies will not be restored to your Tweets.'),
           a('g0ec0bec', 'Deactivated'),
           a('g89f4614', 'Your account is deactivated'),
           a('ce8450f2', 'Control how Twitter personalizes content and collects and shares certain data.'),
@@ -6110,8 +6125,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               ' in ad credits to your ads account.'
             )
           }),
-          a('cb51c854', 'Any Gender'),
-          a('bb7b39e2', 'Men'),
+          a('cb51c854', 'Any Gender')
+        a('bb7b39e2', 'Men'),
           a('eb9466d0', 'Women'),
           a('b07cc9f2', 'Region'),
           a('ce309bee', 'Metro'),
@@ -6123,8 +6138,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
-          a('d80964aa', 'Increase engagement')
-        a('d4f57cce', 'Grow your followers'),
+          a('d80964aa', 'Increase engagement'),
+          a('d4f57cce', 'Grow your followers'),
           a('g06d6bf8', 'More link clicks'),
           a('c1a1817c', 'Your Tweet includes media'),
           a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
@@ -6198,6 +6213,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('ced3c85a', 'Edited'),
           a('edf9101f', 'Keep reading'),
+          a('a3dcd5b2', 'Copy link to Note'),
           a('a7da0adb', function (e) {
             return e.count + ' word' + n(e.count, '', 's')
           }),
@@ -6362,6 +6378,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a2811f96', 'Profile timelines'),
           a('a52b03a6', 'Tweets & replies'),
           a('cc3c698a', 'Super Follows Tweets'),
+          a('b3221ef5', function (e) {
+            return 'Notes' + e.longform_notes
+          }),
           a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
           a('ieef7656', 'Take a look'),
           a('abb13fc9', function (e) {
@@ -6927,6 +6946,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('if1b6f15', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
+          a('a6a6ced4', 'Read Note'),
+          a('ccd32094', 'Now'),
+          a('abfcce0d', function (e) {
+            return e.amountOfTime + ' ago'
+          }),
           a('d6885d3e', 'View Community'),
           a('eba2660a', 'Blue'),
           a('hc196b78', 'Plum'),
@@ -7232,10 +7256,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hcbbe447', function (e) {
             return 'Promoted (issue) by ' + e.fullName
           }),
-          a('ccd32094', 'Now'),
-          a('abfcce0d', function (e) {
-            return e.amountOfTime + ' ago'
-          }),
           a('jb767df8', 'You Retweeted'),
           a('bb3323fa', 'Pinned Tweet'),
           a('habf9678', 'Pinned by Author'),
@@ -7461,6 +7481,55 @@ window.__SCRIPTS_LOADED__.vendor &&
             (a = h),
             (r = [
               {
+                key: 'aab35605',
+                get: function () {
+                  return ['Twitter always keeps a copy of a Space for review. ', '.']
+                },
+              },
+              {
+                key: 'fc9fe08f',
+                get: function () {
+                  return [
+                    'Spaces on web are listen-only. For the full experience, download the Twitter app for ',
+                    ' or ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'a8170309',
+                get: function () {
+                  return ['Anyone can listen, including people not logged in to Twitter. ']
+                },
+              },
+              {
+                key: 'ib602fd9',
+                get: function () {
+                  return ['You can control how your followers see the Spaces you’re listening to. ']
+                },
+              },
+              {
+                key: 'i6164a47',
+                get: function () {
+                  return ['Twitter will keep a recording of Spaces for at least 30 days to review reports. ']
+                },
+              },
+              {
+                key: 'b9c4cfcb',
+                get: function () {
+                  return [
+                    'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to Twitter. ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'f0e84609',
+                get: function () {
+                  return ['', ' ago']
+                },
+              },
+              {
                 key: 'ib299459',
                 get: function () {
                   return ['Once you join Twitter, you can respond to ', '’s Tweet.']
@@ -7518,6 +7587,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'c4d3d079',
+                get: function () {
+                  return ['By signing up, you agree to the ', ' and ', ', including ']
+                },
+              },
+              {
                 key: 'ad048ab9',
                 get: function () {
                   return [
@@ -7541,61 +7616,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                     'By using Twitter’s services you agree to our ',
                     '. We and our partners operate globally and use cookies, including for analytics, personalisation, and ads.',
                   ]
-                },
-              },
-              {
-                key: 'aab35605',
-                get: function () {
-                  return ['Twitter always keeps a copy of a Space for review. ', '.']
-                },
-              },
-              {
-                key: 'fc9fe08f',
-                get: function () {
-                  return [
-                    'Spaces on web are listen-only. For the full experience, download the Twitter app for ',
-                    ' or ',
-                    '.',
-                  ]
-                },
-              },
-              {
-                key: 'a8170309',
-                get: function () {
-                  return ['Anyone can listen, including people not logged in to Twitter. ']
-                },
-              },
-              {
-                key: 'ib602fd9',
-                get: function () {
-                  return ['You can control how your followers see the Spaces you’re listening to. ']
-                },
-              },
-              {
-                key: 'i6164a47',
-                get: function () {
-                  return ['Twitter will keep a recording of Spaces for at least 30 days to review reports. ']
-                },
-              },
-              {
-                key: 'b9c4cfcb',
-                get: function () {
-                  return [
-                    'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to Twitter. ',
-                    '.',
-                  ]
-                },
-              },
-              {
-                key: 'f0e84609',
-                get: function () {
-                  return ['', ' ago']
-                },
-              },
-              {
-                key: 'c4d3d079',
-                get: function () {
-                  return ['By signing up, you agree to the ', ' and ', ', including ']
                 },
               },
               {
@@ -10002,6 +10022,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'c2588611',
                 get: function () {
                   return ['', ' at ' + this.props.time]
+                },
+              },
+              {
+                key: 'dfde726b',
+                get: function () {
+                  return ['', ' read']
                 },
               },
               {
@@ -12794,9 +12820,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ba705e27', h.a79526321),
           a('i3d087db', h.b1193188596),
           a('j86b0d8d', h.a531894881),
-          a('f668e929', h.b385502835),
-          a('i2785009', h.b1982794438),
-          a('c778d80b', h.b1653028677),
           a('ga8d18c9', h.b1132522088),
           a('a91e7d49', h.b1844277225),
           a('id952a69', h.b2134163460),
@@ -12804,6 +12827,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c83b901d', h.a211373797),
           a('a55b9fed', h.b636176220),
           a('jade381b', h.a816076018),
+          a('f668e929', h.b385502835),
+          a('i2785009', h.b1982794438),
+          a('c778d80b', h.b1653028677),
           a('e8d93005', h.a1259667653),
           a('d46781af', h.a1379198057),
           a('ba316f05', h.a258143208),

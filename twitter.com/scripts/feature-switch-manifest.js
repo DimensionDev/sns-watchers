@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'aa7858c57d0b9dd612159a33aac80773d607d878',
+  feature_set_token: 'aef943b825be65b4fae10039473c700f94fab565',
   config: {
     '2fa_temporary_password_enabled': { value: !0 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -808,6 +808,8 @@ var manifest = {
     spaces_2022_h2_follow_host: { value: !0 },
     spaces_2022_h2_spacebar: { value: !1 },
     spaces_2022_h2_spacebar_use_mock_data: { value: !1 },
+    spaces_2022_h2_spacebar_web_sidebar: { value: !1 },
+    spaces_2022_h2_spacebar_web_topnavbar: { value: 'disabled' },
     spaces_2022_h2_spacebar_web_use_topnavbar: { value: !0 },
     spaces_2022_h2_spaces_communities: { value: !1 },
     standardized_nudges_misinfo: { value: !0 },
@@ -852,6 +854,7 @@ var manifest = {
     topics_context_controls_implicit_variation: { value: 'see_more' },
     topics_context_controls_inline_prompt_enabled: { value: !1 },
     topics_discovery_page_enabled: { value: !1 },
+    toxic_reply_filter_inline_callout_enabled: { value: !1 },
     toxic_reply_filter_settings_enabled: { value: !1 },
     traffic_rewrite_map: { value: [] },
     trusted_friends_audience_control_exp_variant: { value: 'control' },
@@ -1378,6 +1381,8 @@ var manifest = {
       type: 'string',
       defaultValue: '867D55F2-24FD-4C56-AB6D-589EDAF5E7C5',
     },
+    arkose_challenge_login_web_prod: { name: 'arkose_challenge_login_web_prod', type: 'string' },
+    arkose_challenge_login_web_devel: { name: 'arkose_challenge_login_web_devel', type: 'string' },
     arkose_challenge_lo_web_notification_mobile_dev: {
       name: 'arkose_challenge_lo_web_notification_mobile_dev',
       type: 'string',
@@ -3106,6 +3111,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
+    responsive_web_behavioral_events_session_id_enabled: {
+      name: 'responsive_web_behavioral_events_session_id_enabled',
+      type: 'string',
+    },
     responsive_web_birdwatch_note_writing_enabled: {
       name: 'responsive_web_birdwatch_note_writing_enabled',
       type: 'boolean',
@@ -4108,6 +4117,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled: {
+      name: 'responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled',
+      type: 'string',
+    },
     responsive_web_reply_nudge_testing_keyword: {
       name: 'responsive_web_reply_nudge_testing_keyword',
       type: 'boolean',
@@ -4672,6 +4685,21 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    spacebar_holdback_14769: {
+      name: 'spacebar_holdback_14769',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
+    spacebar_web_sidebar_15424: {
+      name: 'spacebar_web_sidebar_15424',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
+    },
+    spacebar_web_topnavbar_15425: {
+      name: 'spacebar_web_topnavbar_15425',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment_purple', 'treatment_white'],
+    },
     spaces_2022_h2_clipping: { name: 'spaces_2022_h2_clipping', type: 'boolean', defaultValue: !0 },
     spaces_2022_h2_clipping_consumption: {
       name: 'spaces_2022_h2_clipping_consumption',
@@ -4691,8 +4719,6 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'spaces_2022_h2_holdback'],
     },
-    spaces_2022_h2_spacebar_holdback_canary: { name: 'spaces_2022_h2_spacebar_holdback_canary', type: 'string' },
-    spaces_2022_h2_spacebar: { name: 'spaces_2022_h2_spacebar', type: 'boolean', defaultValue: !1 },
     spaces_2022_h2_spacebar_use_mock_data: {
       name: 'spaces_2022_h2_spacebar_use_mock_data',
       type: 'boolean',
@@ -4703,6 +4729,18 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
+    spaces_2022_h2_spacebar_holdback_canary: { name: 'spaces_2022_h2_spacebar_holdback_canary', type: 'string' },
+    spaces_2022_h2_spacebar_web_topnavbar: {
+      name: 'spaces_2022_h2_spacebar_web_topnavbar',
+      type: 'string',
+      defaultValue: 'disabled',
+    },
+    spaces_2022_h2_spacebar_web_sidebar: {
+      name: 'spaces_2022_h2_spacebar_web_sidebar',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    spaces_2022_h2_spacebar: { name: 'spaces_2022_h2_spacebar', type: 'boolean', defaultValue: !1 },
     spaces_2022_h2_spaces_communities: { name: 'spaces_2022_h2_spaces_communities', type: 'boolean', defaultValue: !1 },
     spaces_2022_h2_spaces_communities_creation_enabled: {
       name: 'spaces_2022_h2_spaces_communities_creation_enabled',
@@ -4961,7 +4999,11 @@ var manifest = {
     },
     topics_discovery_page_enabled: { name: 'topics_discovery_page_enabled', type: 'boolean', defaultValue: !1 },
     topics_discovery_topic_picker_page_enabled: { name: 'topics_discovery_topic_picker_page_enabled', type: 'string' },
-    toxic_reply_filter_inline_callout_enabled: { name: 'toxic_reply_filter_inline_callout_enabled', type: 'string' },
+    toxic_reply_filter_inline_callout_enabled: {
+      name: 'toxic_reply_filter_inline_callout_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     toxic_reply_filter_settings_enabled: {
       name: 'toxic_reply_filter_settings_enabled',
       type: 'boolean',
