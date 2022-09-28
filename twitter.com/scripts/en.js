@@ -110,6 +110,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('baac0ed7', function (e) {
             return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
           }),
+          a('a22385bb', function (e) {
+            return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
+          }),
+          a('be0440bf', function (e) {
+            return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
+          }),
           a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
           a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
           a('db6001e7', function (e) {
@@ -201,6 +207,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eb55363c', 'This Space has been reported'),
           a('f91f00ba', 'Create clip'),
           a('h63a5c3c', 'More'),
+          a('c0098d4a', 'Reactions'),
           a('jf9f3e54', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
           a('b89c5a50', 'Pause'),
@@ -290,6 +297,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b4af8c6a', 'Moments'),
           a('d0a51fb2', 'Newsletters'),
           a('ec1ed0cc', 'Professional Tools'),
+          a('f4422d78', 'Reports'),
           a('fd442790', 'Settings and privacy'),
           a('f1e3a258', 'Settings and Support'),
           a('d13d697c', 'New'),
@@ -381,6 +389,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a690c4d0', 'Page down'),
           a('ed90d9ac', 'Load new Tweets'),
           a('cdb53d7a', 'Mentions'),
+          a('d4ebc798', 'Drafts'),
+          a('e4e4e50a', 'Scheduled Tweets'),
           a('d7b8ebaa', 'Likes'),
           a('c106055a', 'Moment Maker'),
           a('eee2ed92', 'Go to user…'),
@@ -583,7 +593,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
           }),
           a('b772cd66', 'Done'),
-          a('c0098d4a', 'Reactions'),
           a('j85999ec', 'User Reactions List'),
           a('gf5e9ea6', 'Undo'),
           a('a2d48779', function (e) {
@@ -1147,13 +1156,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b141cbf0', 'You have been blocked from liking this user’s Tweets at their request.'),
           a('e902fd9e', 'Something went wrong. Try liking your Tweet again in a minute.'),
           a('bbbfc828', 'Can’t like Tweets of protected users you aren’t following.'),
-          a('ja03b44e', 'Something went wrong. Try reacting to the Tweet again in a minute.'),
-          a('da5c4380', 'Can’t react to Tweets of protected users you aren’t following.'),
+          a('ja03b44e', 'Something went wrong. Try reacting to the Tweet again in a minute.')
+        a('da5c4380', 'Can’t react to Tweets of protected users you aren’t following.'),
           a('f03dab2a', 'You have been blocked from reacting to this user’s Tweets at their request.'),
           a('c730cd08', 'You have been blocked from Retweeting this user’s Tweets at their request.'),
           a('f1d600ac', 'Something went wrong. Try Retweet again in a minute.'),
-          a('d80d33c6', 'Retweet is not permissible for this Tweet.')
-        a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow'),
+          a('d80d33c6', 'Retweet is not permissible for this Tweet.'),
+          a('j3403c06', 'Sorry! You have exceeded your Tweet limit. Try Retweet again tomorrow'),
           a('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           a('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
@@ -2328,16 +2337,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
           a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
           a('h9a5daa2', 'Delete Folder?'),
-          a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
-          a('i6e7e298', 'Create'),
+          a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder')
+        a('i6e7e298', 'Create'),
           a('a0ea2fa6', 'Name field cannot be empty'),
           a('eec37eac', 'Bookmark Folder with that name already exists'),
           a(
             'fce0c59e',
             'Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again.',
           ),
-          a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.')
-        a('ae58026a', 'Open a Branded Like .json file to preview'),
+          a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
+          a('ae58026a', 'Open a Branded Like .json file to preview'),
           a('e39b368e', 'Broadcast'),
           a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
@@ -2743,7 +2752,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return '@' + e.screenName + ' can’t be tagged in photos'
           }),
           a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
-          a('e4e4e50a', 'Scheduled Tweets'),
           a('c5dd0190', 'Time'),
           a('edeff232', 'Date'),
           a('fddf24b4', 'Time zone'),
@@ -2755,7 +2763,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i63bfbf0', 'Hold that thought'),
           a('g32f19e4', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
           a('g700c084', 'Deleting unsent Tweets'),
-          a('d4ebc798', 'Drafts'),
           a('e8bd47f2', 'Select all'),
           a('j2b145d4', 'Deselect all'),
           a('df9f719a', 'Discard unsent Tweets'),
@@ -3549,6 +3556,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'b2a77838',
             'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
           ),
+          a('j1a2af34', 'App and Tweet languages'),
+          a('d4372cf4', 'English (US), 中文(简体), Español'),
           a(
             'a45d71b8',
             'These are the social accounts you connected to your Twitter account to log in. You can disable access here.',
@@ -3622,13 +3631,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d3d48f3a', 'Light'),
           a('i76f67ee', 'Dim'),
           a('c8f85960', 'Lights out'),
-          a('aefc5b20', 'Color options'),
-          a('a52d0fde', 'Blue'),
+          a('aefc5b20', 'Color options')
+        a('a52d0fde', 'Blue'),
           a('d818cdd6', 'Yellow'),
           a('fee1cd64', 'Pink'),
           a('cbed7fb2', 'Purple'),
-          a('g697ec02', 'Orange')
-        a('a7c2204a', 'Green'),
+          a('g697ec02', 'Orange'),
+          a('a7c2204a', 'Green'),
           a('ea1c87a5', function (e) {
             return (
               'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
@@ -4865,36 +4874,17 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('i3f7ff00', 'Media thumbnail'),
           a('h400d7c2', 'JOIN SPACE'),
-          a('be6ef5b4', 'COMING UP'),
-          a('d126cb7c', 'Latest Tweets'),
+          a('be6ef5b4', 'COMING UP')
+        a('d126cb7c', 'Latest Tweets'),
           a('a78ad3f6', 'Tweeps only Space'),
           a('d08666ba', 'Private Space'),
           a('eadb5a46', 'Be the first to join'),
           a('ia3c0ab7', function (e) {
             return e.hostName + '’s Space'
-          })
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function c(e, t) {
-          return (
-            (c =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            c(e, t)
-          )
-        }
-        a('hd552761', function (e) {
-          return 'Hosted by ' + e.hostName
-        }),
+          }),
+          a('hd552761', function (e) {
+            return 'Hosted by ' + e.hostName
+          }),
           a('c3ea19a5', function (e) {
             return e.index + ' of ' + e.total
           }),
@@ -5359,7 +5349,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f53adc36', 'Drive real world outcomes'),
           a('hc4981d6', 'Profile Spotlights'),
           a('fbce8dbe', 'Find people to follow'),
-          a('ib07b6ca', 'Grow your audience'),
+          a('ae76c624', 'Make more connections'),
           a('e0cb3344', 'Promote an existing tweet'),
           a('i294caa6', 'Promotions'),
           a('i016a2f4', 'Earn money on Twitter'),
@@ -5416,7 +5406,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c9853de0', 'Content hidden'),
           a('a23e724a', 'This account is unavailable.'),
           a('c197728e', 'Resolved'),
-          a('f4422d78', 'Reports'),
           a('i07c24fa', 'You don’t have any open reports'),
           a('h542c98a', 'See details'),
           a('e1f59494', 'Received'),
@@ -5782,40 +5771,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b221ca4c', 'We’ll let you know when your data is ready to download'),
           a('ccb37011', 'complete this form'),
           a('g1aced04', 'Apps, devices & information'),
-          a(
-            'c3d23f10',
-            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
-          ),
-          a('ge046208', 'Manage subscription'),
-          a('j3c44935', function (e) {
-            return 'Allow anyone to see your Super Follower badge when you reply to @' + e.screenName + '’s Tweets'
-          }),
-          a('j10f8277', function (e) {
-            return (
-              'When you turn this off, @' +
-              e.screenName +
-              ' and their Super Followers will still see your badge when you reply to @' +
-              e.screenName +
-              '’s Super Follower-only Tweets. @' +
-              e.screenName +
-              ' will always see your badge.'
-            )
-          }),
-          a('f5b352ec', 'Cancel subscription'),
-          a('b942f94c', 'Already canceled your subscription?'),
-          a(
-            'e9069f26',
-            'If you’ve already canceled, there’s nothing more to do. Your subscription will automatically expire at the end of the billing cycle.',
-          ),
-          a('f04110c0', 'Want to cancel your subscription?'),
-          a('cb9cfdf8', 'If you cancel, your subscription will automatically expire at the end of the billing cycle.'),
-          a('ee9efbc8', 'Continue to cancellation'),
-          a(
-            'c5d9c77a',
-            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again.',
-          ),
-          a('ha6a73ee', 'You can cancel your subscription through the Apple App Store.'),
-          a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
           a('g931a6e5', function (e) {
             return 'You’re following ' + e.topic
           }),
@@ -5984,6 +5939,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b71059c3', function (e) {
             return e.percentage + ' from non followers'
           }),
+          a('e3390c1e', 'First 48 hours'),
           a('de4def4e', '% from all promotions to date'),
           a('ib1f8491', function (e) {
             return e.likeCount + ' like' + n(e.likeCount, '', 's')
@@ -6125,16 +6081,35 @@ window.__SCRIPTS_LOADED__.vendor &&
               ' in ad credits to your ads account.'
             )
           }),
-          a('cb51c854', 'Any Gender')
-        a('bb7b39e2', 'Men'),
+          a('cb51c854', 'Any Gender'),
+          a('bb7b39e2', 'Men'),
           a('eb9466d0', 'Women'),
           a('b07cc9f2', 'Region'),
           a('ce309bee', 'Metro'),
           a('cc49d030', 'Postcode'),
           a('c64974fc', 'Followers'),
           a('i638f89c', 'Website visits'),
-          a('e1bca506', 'Your promoted Tweet is under review'),
-          a('e4a4c608', 'Check back soon.'),
+          a('e1bca506', 'Your promoted Tweet is under review')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function c(e, t) {
+          return (
+            (c =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+            c(e, t)
+          )
+        }
+        a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
@@ -6205,6 +6180,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d132269c', 'Loading Tweet'),
           a('dd657212', 'View Tweet'),
           a('h59700fa', 'ImmersiveMediaViewer'),
+          a('i86c2940', 'Scrubber'),
           a('f26a4cb2', 'Swipe up for more'),
           a('f345dcda', 'Edit History'),
           a('h2fcc532', 'Loading history'),
@@ -6460,7 +6436,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('c62ebbac', 'Once they do, those Tweets will show up here.'),
           a('d1614228', 'Lights, camera … attachments!'),
-          a('ca6c276c', 'When you send Tweets with photos or videos in them, it will show up here.'),
+          a('a1fbf7ac', 'When you send Tweets with photos or videos in them, they will show up here.'),
           a('d55be465', function (e) {
             return e.fullName + '’s Photos'
           }),
@@ -6594,6 +6570,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
           a('ec2d8342', 'Decline'),
           a('j85d8d90', 'No follow request pending for that user.'),
+          a(
+            'c3d23f10',
+            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
+          ),
           a('d2613123', function (e) {
             return 'Subscribe - ' + e.price + '/mo'
           }),
@@ -6659,10 +6639,37 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hb7d1bb4', 'More on Opensea'),
           a('c6000492', 'Owner'),
           a('eadbd438', 'Properties'),
-          a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
-          a('a6de58db', function (e) {
-            return 'Load image' + n(e.count, '', 's')
+          a('ge046208', 'Manage subscription'),
+          a('j3c44935', function (e) {
+            return 'Allow anyone to see your Super Follower badge when you reply to @' + e.screenName + '’s Tweets'
           }),
+          a('j10f8277', function (e) {
+            return (
+              'When you turn this off, @' +
+              e.screenName +
+              ' and their Super Followers will still see your badge when you reply to @' +
+              e.screenName +
+              '’s Super Follower-only Tweets. @' +
+              e.screenName +
+              ' will always see your badge.'
+            )
+          }),
+          a('f5b352ec', 'Cancel subscription'),
+          a('b942f94c', 'Already canceled your subscription?'),
+          a(
+            'e9069f26',
+            'If you’ve already canceled, there’s nothing more to do. Your subscription will automatically expire at the end of the billing cycle.',
+          ),
+          a('f04110c0', 'Want to cancel your subscription?'),
+          a('cb9cfdf8', 'If you cancel, your subscription will automatically expire at the end of the billing cycle.'),
+          a('ee9efbc8', 'Continue to cancellation'),
+          a(
+            'c5d9c77a',
+            'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again.',
+          ),
+          a('ha6a73ee', 'You can cancel your subscription through the Apple App Store.'),
+          a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
+          a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446ce', 'This browser is no longer supported.'),
           a(
             'g9c2dec8',
@@ -6684,7 +6691,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e9e2064c', 'Something went wrong, but don’t fret — it’s not your fault.'),
           a('d7060c80', 'Refresh'),
           a('a0493514', 'Retry'),
-          a('d25af146', 'Ad-free'),
+          a('a04c1bc0', 'Twitter Blue Publisher'),
           a('ff3dd27c', 'Default'),
           a('b554fcf4', 'Light'),
           a('j590b148', 'Medium light'),
@@ -7451,10 +7458,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('j3d49e93', function (e) {
             return e.timestamp + 'm'
-          }),
-          a('a394f905', function (e) {
-            return e.seconds + ' seconds'
-          }),
+          })
+        a('a394f905', function (e) {
+          return e.seconds + ' seconds'
+        }),
           a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection'),
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
@@ -10004,12 +10011,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'fbe06ae1',
                 get: function () {
                   return ['', ' by ']
-                },
-              },
-              {
-                key: 'f9336af5',
-                get: function () {
-                  return ['', ' with Twitter Blue']
                 },
               },
               {
