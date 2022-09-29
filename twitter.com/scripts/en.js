@@ -224,6 +224,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bb1d57b6', 'Leave'),
           a('a5bf548a', 'Tweeps only'),
           a('c3afb4d8', 'Super Followers only'),
+          a('ddeb0a3c', 'Here’s the Community. Like the people? Take a look.'),
           a('e111f531', function (e) {
             return e.count + ' tuned in'
           }),
@@ -295,6 +296,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('deaf7e0a', 'Media Studio'),
           a('b4af8c6a', 'Moments'),
+          a('d299431c', 'Monetization'),
           a('d0a51fb2', 'Newsletters'),
           a('ec1ed0cc', 'Professional Tools'),
           a('f4422d78', 'Reports'),
@@ -523,8 +525,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'GIF provided by ' + e.providerName
           }),
           a('a613e720', 'Copy link to GIF'),
-          a('e3275464', 'Send'),
-          a('ca0ce0e4', 'Start a new message'),
           a('c3752568', 'Something went wrong. Try sending your message again in a minute.'),
           a('f78aa3ea', 'Some of your messages couldn’t be sent at this time. Please try again later.'),
           a('f9690dc0', 'Sorry! You cannot message this account.'),
@@ -536,6 +536,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hf383be4', 'The account you are trying to messsage has been deleted.'),
           a('c4fdbd16', 'You cannot send messages to users that you have blocked.'),
           a('hf3e7e38', 'Your message could not be sent.'),
+          a('e3275464', 'Send'),
+          a('ca0ce0e4', 'Start a new message'),
           a('i8ecae5c', 'You can no longer send messages to this person.'),
           a('dd8272fd', function (e) {
             return e.count + ' new message' + n(e.count, '', 's')
@@ -1154,10 +1156,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h5634a0c', 'Tweet is already in your Bookmarks'),
           a('b657101c', 'Something went wrong. Try bookmarking that Tweet again in a minute.'),
           a('b141cbf0', 'You have been blocked from liking this user’s Tweets at their request.'),
-          a('e902fd9e', 'Something went wrong. Try liking your Tweet again in a minute.'),
-          a('bbbfc828', 'Can’t like Tweets of protected users you aren’t following.'),
-          a('ja03b44e', 'Something went wrong. Try reacting to the Tweet again in a minute.')
-        a('da5c4380', 'Can’t react to Tweets of protected users you aren’t following.'),
+          a('e902fd9e', 'Something went wrong. Try liking your Tweet again in a minute.')
+        a('bbbfc828', 'Can’t like Tweets of protected users you aren’t following.'),
+          a('ja03b44e', 'Something went wrong. Try reacting to the Tweet again in a minute.'),
+          a('da5c4380', 'Can’t react to Tweets of protected users you aren’t following.'),
           a('f03dab2a', 'You have been blocked from reacting to this user’s Tweets at their request.'),
           a('c730cd08', 'You have been blocked from Retweeting this user’s Tweets at their request.'),
           a('f1d600ac', 'Something went wrong. Try Retweet again in a minute.'),
@@ -1388,7 +1390,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bb8170da', 'Not this time'),
           a('dad5a4b8', 'Your Tweet was sent.'),
           a('fd7c845c', 'Your Tweet has been edited.'),
-          a('jd894d9a', 'Your Tweet was sent. You can edit it for the next 30 minutes.'),
+          a('g6fc48fa', 'Your Tweet was sent. You have 30 minutes to make any edits.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('f548d684', 'Sending Tweet ... once it’s published, you’ll have 30 minutes to make any edits.'),
           a('d8222374', 'Discard Tweet?'),
@@ -1672,6 +1674,74 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c837fcaa', 'Show more replies'),
           a('d228a9a0', 'Show more'),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
+          a('jb0429b1', function (e) {
+            return 'By ' + e.name + ' @' + e.screenName
+          }),
+          a('e6057014', 'Ask to join'),
+          a('b5334780', 'Pending'),
+          a('b171d7c4', 'Join'),
+          a('aa7ae3f6', 'Joined'),
+          a('h4fbfa58', 'Agree and join'),
+          a('ea8cfb1e', 'Agree and ask to join'),
+          a('dc1b14a1', function (e) {
+            return 'Review and agree to ' + e.communityName + ' Rules'
+          }),
+          a('fc2a5c92', 'Something went wrong'),
+          a('c966ac64', 'Unable to request to join Community. Please try again later.'),
+          a('c00c234f', function (e) {
+            return e.communityName + ' Rules'
+          }),
+          a('hafa07f2', 'Participation is limited'),
+          a('c15bee32', 'You’ve been removed from this Community'),
+          a('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
+          a('h27d6950', 'You can’t leave just yet'),
+          a('b02360f6', 'The last admin or moderator can’t leave unless the Community is empty.'),
+          a('d90022d6', 'make your Tweets public'),
+          a('fad95334', 'Your Tweets in the Community will be hidden, and you won’t be able to join again.'),
+          a('a0e0a52c', function (e) {
+            return '' + e.offendingRule
+          }),
+          a('jceadc3e', 'Untitled'),
+          a('e8dff578', 'Edit this'),
+          a('fcc64f02', 'Report this'),
+          a('ea193d66', 'Delete this'),
+          a('e5227fe0', 'View on Twitter'),
+          a('fd61ab82', 'Delete Moment?'),
+          a('aaae5e70', 'This can’t be undone and you’ll lose your Moment.'),
+          a('e7718462', 'Your Moment was deleted.'),
+          a('e814ed10', 'Next Tweet in editing pane'),
+          a('c1250b42', 'Previous Tweet in editing pane'),
+          a('ddd4bf24', 'Next Tweet in center pane'),
+          a('ia2742fa', 'Previous Tweet in center pane'),
+          a('a8b6f61a', 'Drag and drop Tweet'),
+          a('dfe59ab8', 'Cancel drag-and-drop'),
+          a('c602967e', 'Focus editing or preview pane'),
+          a('g42208cc', 'Focus navigation menu pane'),
+          a('gf73b336', 'Focus Tweet or Moments pane'),
+          a('a1d5303c', 'Private'),
+          a('cc8f8a80', 'Unlisted'),
+          a('i7e9ecf2', 'Pending changes'),
+          a('ccc45ee7', function (e) {
+            return e.team + ' won'
+          }),
+          a('f81a95d7', function (e) {
+            return '' + e.date
+          }),
+          a('ed4bea2e', 'Today'),
+          a('j3e0ae78', function (e) {
+            return '・' + e.formattedTime
+          }),
+          a('cabfdd06', 'Tomorrow'),
+          a('abd0f804', function (e) {
+            return '・' + e.formattedTime
+          }),
+          a('d69b2d90', 'You’re not interested in this Topic.'),
+          a('je5502eb', function (e) {
+            return 'Including results for "' + e.suggestion + '"'
+          }),
+          a('bc4628a1', function (e) {
+            return 'Showing results for "' + e.suggestion + '"'
+          }),
           a('e15e5637', function (e) {
             return 'Last ' + n(e.count, 'hour', e.count + ' hours')
           }),
@@ -1718,50 +1788,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b97cd51c', 'Twitter for Business'),
           a('c6f58084', 'Developers'),
           a('d83f18d2', 'Directory'),
-          a('jb0429b1', function (e) {
-            return 'By ' + e.name + ' @' + e.screenName
-          }),
-          a('jceadc3e', 'Untitled'),
-          a('e8dff578', 'Edit this'),
-          a('fcc64f02', 'Report this'),
-          a('ea193d66', 'Delete this'),
-          a('e5227fe0', 'View on Twitter'),
-          a('fd61ab82', 'Delete Moment?'),
-          a('aaae5e70', 'This can’t be undone and you’ll lose your Moment.'),
-          a('e7718462', 'Your Moment was deleted.'),
-          a('e814ed10', 'Next Tweet in editing pane'),
-          a('c1250b42', 'Previous Tweet in editing pane'),
-          a('ddd4bf24', 'Next Tweet in center pane'),
-          a('ia2742fa', 'Previous Tweet in center pane'),
-          a('a8b6f61a', 'Drag and drop Tweet'),
-          a('dfe59ab8', 'Cancel drag-and-drop'),
-          a('c602967e', 'Focus editing or preview pane'),
-          a('g42208cc', 'Focus navigation menu pane'),
-          a('gf73b336', 'Focus Tweet or Moments pane'),
-          a('a1d5303c', 'Private'),
-          a('cc8f8a80', 'Unlisted'),
-          a('i7e9ecf2', 'Pending changes'),
-          a('ccc45ee7', function (e) {
-            return e.team + ' won'
-          }),
-          a('f81a95d7', function (e) {
-            return '' + e.date
-          }),
-          a('ed4bea2e', 'Today'),
-          a('j3e0ae78', function (e) {
-            return '・' + e.formattedTime
-          }),
-          a('cabfdd06', 'Tomorrow'),
-          a('abd0f804', function (e) {
-            return '・' + e.formattedTime
-          }),
-          a('d69b2d90', 'You’re not interested in this Topic.'),
-          a('je5502eb', function (e) {
-            return 'Including results for "' + e.suggestion + '"'
-          }),
-          a('bc4628a1', function (e) {
-            return 'Showing results for "' + e.suggestion + '"'
-          }),
           a('b8e930fe', 'Trending now'),
           a('ae05f268', 'Trends are unavailable.'),
           a('b50ea616', 'New to Twitter?'),
@@ -1821,7 +1847,6 @@ window.__SCRIPTS_LOADED__.vendor &&
               '’s Super Followers can join this Space.'
             )
           }),
-          a('h87bdd64', 'Ticketed Spaces are currently only available on iOS and Android'),
           a('f5774e3a', 'Spaces Discovery'),
           a('fc962610', 'Search for the name of a Space or Host'),
           a('e5b5f091', function (e) {
@@ -2122,7 +2147,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a7b0393c', 'Writing Impact'),
           a('de962616', 'Want to join Birdwatch?'),
           a('cbfa448c', 'Help people stay better informed on Twitter.'),
-          a('b171d7c4', 'Join'),
           a('ab23a972', 'Follow the conversation'),
           a('c68f3bc0', 'Learn more about our values'),
           a('dfb1f498', 'Feedback'),
@@ -2172,7 +2196,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
           ),
           a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
-          a('b5334780', 'Pending'),
           a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
           a('fc664dee', 'Ratings made after a status was reached'),
           a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
@@ -2318,8 +2341,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j45c642e', 'Folders aren’t loading right now'),
           a('bcc7e8c0', 'All Bookmarks'),
           a('c8c1fa6e', 'Clear all Bookmarks'),
-          a('jf748f40', 'Clear all Bookmarks?'),
-          a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
+          a('jf748f40', 'Clear all Bookmarks?')
+        a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
           a('cd343e16', 'Save Tweets for later'),
           a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
           a('ee8589ae', 'Compose a Tweet'),
@@ -2337,8 +2360,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
           a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
           a('h9a5daa2', 'Delete Folder?'),
-          a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder')
-        a('i6e7e298', 'Create'),
+          a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
+          a('i6e7e298', 'Create'),
           a('a0ea2fa6', 'Name field cannot be empty'),
           a('eec37eac', 'Bookmark Folder with that name already exists'),
           a(
@@ -2412,7 +2435,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cdd87524', 'No one’s here yet'),
           a('cca51910', 'When people join this Community, you’ll see them here.'),
           a('c9d56b72', 'Tell us a little about your Community. You can always change these details later.'),
-          a('fc2a5c92', 'Something went wrong'),
           a('c1ad5a12', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
           a('f713fbd2', 'Membership'),
           a('a0a16d38', 'Anyone can join and/or be invited to the Community.'),
@@ -2590,9 +2612,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cd133486', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0e', 'Member'),
-          a('c00c234f', function (e) {
-            return e.communityName + ' Rules'
-          }),
           a('addbb11e', 'No new membership requests'),
           a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
           a('d7f13fb9', function (e) {
@@ -2679,24 +2698,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('acae4034', 'Settings can be changed in Admin Tools'),
           a('e2186ee2', 'Not feeling your settings? No problem. It’s easy enough to change.'),
           a('a0e3ece4', 'Community Detail'),
-          a('e6057014', 'Ask to join'),
-          a('aa7ae3f6', 'Joined'),
-          a('h4fbfa58', 'Agree and join'),
-          a('ea8cfb1e', 'Agree and ask to join'),
-          a('dc1b14a1', function (e) {
-            return 'Review and agree to ' + e.communityName + ' Rules'
-          }),
-          a('c966ac64', 'Unable to request to join Community. Please try again later.'),
-          a('hafa07f2', 'Participation is limited'),
-          a('c15bee32', 'You’ve been removed from this Community'),
-          a('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
-          a('h27d6950', 'You can’t leave just yet'),
-          a('b02360f6', 'The last admin or moderator can’t leave unless the Community is empty.'),
-          a('d90022d6', 'make your Tweets public'),
-          a('fad95334', 'Your Tweets in the Community will be hidden, and you won’t be able to join again.'),
-          a('a0e0a52c', function (e) {
-            return '' + e.offendingRule
-          }),
           a('hb9400dc', 'See More'),
           a('bec3b8fa', 'Share Community'),
           a('c66b37fa', 'Community checklist'),
@@ -3630,9 +3631,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ce8a8116', 'Background options'),
           a('d3d48f3a', 'Light'),
           a('i76f67ee', 'Dim'),
-          a('c8f85960', 'Lights out'),
-          a('aefc5b20', 'Color options')
-        a('a52d0fde', 'Blue'),
+          a('c8f85960', 'Lights out')
+        a('aefc5b20', 'Color options'),
+          a('a52d0fde', 'Blue'),
           a('d818cdd6', 'Yellow'),
           a('fee1cd64', 'Pink'),
           a('cbed7fb2', 'Purple'),
@@ -4271,9 +4272,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             'c6d0fa86',
             'Hide media marked as sensitive until you choose to see it. On Twitter for iOS, this media won’t be shown at all.',
           ),
-          a('db5f208e', 'Warn before showing'),
+          a('d0a5a1c0', 'Warn'),
           a('ga197e26', 'Show all'),
-          a('abb4d36e', 'Never show'),
+          a('eb723386', 'Never show this'),
           a('de6ebb52', 'sensitive media policy.'),
           a('d19a383e', 'sensitive media policy.'),
           a('hd6f411f', 'media settings'),
@@ -4327,7 +4328,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
           a('f2977d80', 'Bookmark folders'),
           a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
-          a('d299431c', 'Monetization'),
           a('h93824cc', 'Monetization options'),
           a('a6777c1c', 'Super Follows'),
           a('i724fb4a', 'Get help'),
@@ -4345,6 +4345,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ff9ed474', 'Total earnings'),
           a('d59dbf8a', 'Overview'),
           a('c76972f0', 'Since last payout'),
+          a('c219a552', 'All time'),
           a('g652fc4c', 'You have no payout history this month.'),
           a('d55e017a', 'This month'),
           a('jb13b840', 'All-time'),
@@ -4357,6 +4358,73 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h7a41c02', 'Renewals'),
           a('eedf2eaa', 'You have no renewals at this time.'),
           a('d93308d8', 'See all transactions'),
+          a('a384fda0', 'Subscription overview'),
+          a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
+          a('c0348964', 'Introduction'),
+          a('ic624ab2', 'Subscriber perks'),
+          a('ifc9b70a', 'Super Follower badge'),
+          a(
+            'b08bbeb4',
+            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
+          ),
+          a('ia9c37c4', 'Pricing'),
+          a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
+          a('be54a313', function (e) {
+            return e.price + '/mo'
+          }),
+          a('cca48546', 'This price can’t be changed'),
+          a('f1a160c6', 'You can’t make changes to the price point you chose during setup.'),
+          a('f5be83b2', 'Join the Community'),
+          a(
+            'i1fd31c6',
+            'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
+          ),
+          a('b28a1b48', 'Get content tips and ideas'),
+          a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
+          a('f3ce76c0', 'Need more help?'),
+          a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
+          a('dba12b52', 'Deactivate Super Follows'),
+          a(
+            'ffaae232',
+            'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
+          ),
+          a('ca5ca5ee', 'See preview'),
+          a('g867481e', 'View creator guide'),
+          a('e58e85d2', 'Continue to deactivation'),
+          a('a329ce88', 'Add a description...'),
+          a('f0c99eff', function (e) {
+            return '- @' + e.screenName
+          }),
+          a('j5c45e80', 'Deactivate Super Follows?'),
+          a(
+            'h92e1b74',
+            'Deactivating Super Follows is permanent. You’ll be removed from the Super Follows program. To return to the program, you’ll need to reapply.',
+          ),
+          a('bee26fa8', 'Yes, deactivate'),
+          a('cd659e6e', 'Super Follows is now deactivated'),
+          a('be103b84', 'Active'),
+          a('c701e5cc', 'Any changes you made won’t be saved.'),
+          a('a649778c', 'Continue editing'),
+          a('hf6f2914', 'Preview'),
+          a('b90f3f82', 'About Super Follows creators'),
+          a('iba08a94', 'How does everything look?'),
+          a(
+            'ef354e84',
+            'This is what prospective subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
+          ),
+          a('b600eb88', 'Find your people and get recognized'),
+          a('cbc8ce28', 'Get bonus content when you subscribe'),
+          a('a953a0a6', 'Only Super Followers can see this Tweet'),
+          a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
+          a('a4ed9072', 'Add an introduction...'),
+          a('cd5cae16', 'Super Follows perks'),
+          a('gf32cca2', 'Describe the perks you’ll offer'),
+          a(
+            'j8ba99b4',
+            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
+          ),
+          a('j325331a', 'Take a minute to say hello'),
+          a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
           a('h810143c', 'Details'),
           a('bf364d62', 'All transactions'),
           a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
@@ -4448,7 +4516,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'cedb182a',
             'Offer your favorite followers a little something extra and earn money each month. They’ll get access to a more personal experience with bonus content, and you can get paid for what you create. It’s a win-win.',
           ),
-          a('cd5cae16', 'Super Follows perks'),
           a('c767c93c', 'Your Tweet game is strong. We think that’s worth something.'),
           a('e6abad0e', 'How much money can you make with Super Follows?'),
           a('g8cdf708', 'Are you in?'),
@@ -4541,71 +4608,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd7f65128',
             'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
           ),
-          a('c701e5cc', 'Any changes you made won’t be saved.'),
-          a('a649778c', 'Continue editing'),
-          a('hf6f2914', 'Preview'),
-          a('iba08a94', 'How does everything look?'),
-          a(
-            'ef354e84',
-            'This is what prospective subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
-          ),
-          a('b600eb88', 'Find your people and get recognized'),
-          a(
-            'b08bbeb4',
-            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
-          ),
-          a('cbc8ce28', 'Get bonus content when you subscribe'),
-          a('a953a0a6', 'Only Super Followers can see this Tweet'),
-          a('a329ce88', 'Add a description...'),
-          a('f0c99eff', function (e) {
-            return '- @' + e.screenName
-          }),
-          a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
-          a('a4ed9072', 'Add an introduction...'),
-          a('gf32cca2', 'Describe the perks you’ll offer'),
-          a(
-            'j8ba99b4',
-            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
-          ),
-          a('c0348964', 'Introduction'),
-          a('j325331a', 'Take a minute to say hello'),
-          a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('a384fda0', 'Subscription overview'),
-          a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
-          a('ic624ab2', 'Subscriber perks'),
-          a('ifc9b70a', 'Super Follower badge'),
-          a('ia9c37c4', 'Pricing'),
-          a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
-          a('be54a313', function (e) {
-            return e.price + '/mo'
-          }),
-          a('cca48546', 'This price can’t be changed'),
-          a('f1a160c6', 'You can’t make changes to the price point you chose during setup.'),
-          a('f5be83b2', 'Join the Community'),
-          a(
-            'i1fd31c6',
-            'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
-          ),
-          a('b28a1b48', 'Get content tips and ideas'),
-          a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
-          a('f3ce76c0', 'Need more help?'),
-          a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
-          a('dba12b52', 'Deactivate Super Follows'),
-          a(
-            'ffaae232',
-            'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
-          ),
-          a('ca5ca5ee', 'See preview'),
-          a('g867481e', 'View creator guide'),
-          a('e58e85d2', 'Continue to deactivation'),
-          a('j5c45e80', 'Deactivate Super Follows?'),
-          a(
-            'h92e1b74',
-            'Deactivating Super Follows is permanent. You’ll be removed from the Super Follows program. To return to the program, you’ll need to reapply.',
-          ),
-          a('bee26fa8', 'Yes, deactivate'),
-          a('cd659e6e', 'Super Follows is now deactivated'),
-          a('be103b84', 'Active'),
           a('b422cb62', 'Get started with Super Follows'),
           a(
             'f08705e0',
@@ -4872,10 +4874,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i2c2bfb7', function (e) {
             return e.count + ' listening'
           }),
-          a('i3f7ff00', 'Media thumbnail'),
-          a('h400d7c2', 'JOIN SPACE'),
-          a('be6ef5b4', 'COMING UP')
-        a('d126cb7c', 'Latest Tweets'),
+          a('i3f7ff00', 'Media thumbnail')
+        a('h400d7c2', 'JOIN SPACE'),
+          a('be6ef5b4', 'COMING UP'),
+          a('d126cb7c', 'Latest Tweets'),
           a('a78ad3f6', 'Tweeps only Space'),
           a('d08666ba', 'Private Space'),
           a('eadb5a46', 'Be the first to join'),
@@ -5197,7 +5199,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e854ad27', function (e) {
             return 'Topic - ' + e.title
           }),
-          a('h87ca6ac', 'Timeline strength'),
           a('b5474bd2', 'Hmmm... something went wrong.'),
           a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
           a(
@@ -6088,8 +6089,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ce309bee', 'Metro'),
           a('cc49d030', 'Postcode'),
           a('c64974fc', 'Followers'),
-          a('i638f89c', 'Website visits'),
-          a('e1bca506', 'Your promoted Tweet is under review')
+          a('i638f89c', 'Website visits')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6109,7 +6109,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('e4a4c608', 'Check back soon.'),
+        a('e1bca506', 'Your promoted Tweet is under review'),
+          a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
@@ -6442,9 +6443,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('caeab0f8', 'Start reading'),
           a('b5fea270', 'Product carousel'),
-          a('bd973f02', 'Go to the Android or iOS app to tell us about an issue with this product.'),
           a('h10bb33c', 'Report product?'),
           a('dda5d96a', 'Report product'),
+          a('fca46f40', 'Help Center'),
           a('c71a053b', 'click here'),
           a('f30795d0', 'Opens profile photo'),
           a('a270100c', 'Opens NFT details'),
@@ -7455,13 +7456,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ffeb2fc6', 'Up next'),
           a('af2a65d9', function (e) {
             return e.timestamp + ' selected'
-          }),
-          a('j3d49e93', function (e) {
-            return e.timestamp + 'm'
           })
-        a('a394f905', function (e) {
-          return e.seconds + ' seconds'
+        a('j3d49e93', function (e) {
+          return e.timestamp + 'm'
         }),
+          a('a394f905', function (e) {
+            return e.seconds + ' seconds'
+          }),
           a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection'),
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
@@ -8284,15 +8285,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'd9cb9d0b',
+                key: 'd8d8fcbb',
                 get: function () {
-                  return ['Try following ', ' to get the most out of Top Articles.']
+                  return [
+                    'Communities are public, so protected accounts can’t join right now. You can read the Tweets, but to participate, ',
+                    '.',
+                  ]
                 },
               },
               {
-                key: 'dc3a6d2d',
+                key: 'jb124a07',
                 get: function () {
-                  return ['Followed @' + this.props.screenName + '. ', '.']
+                  return ['A moderator removed you for violating this Community rule: ']
                 },
               },
               {
@@ -8335,6 +8339,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'hce48b8b',
                 get: function () {
                   return ['Did you mean "', '"?']
+                },
+              },
+              {
+                key: 'd9cb9d0b',
+                get: function () {
+                  return ['Try following ', ' to get the most out of Top Articles.']
+                },
+              },
+              {
+                key: 'dc3a6d2d',
+                get: function () {
+                  return ['Followed @' + this.props.screenName + '. ', '.']
                 },
               },
               {
@@ -8575,21 +8591,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'a346641b',
                 get: function () {
                   return ['Created ' + this.props.date + ' by ']
-                },
-              },
-              {
-                key: 'd8d8fcbb',
-                get: function () {
-                  return [
-                    'Communities are public, so protected accounts can’t join right now. You can read the Tweets, but to participate, ',
-                    '.',
-                  ]
-                },
-              },
-              {
-                key: 'jb124a07',
-                get: function () {
-                  return ['A moderator removed you for violating this Community rule: ']
                 },
               },
               {
@@ -9396,6 +9397,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'gc242227',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
+                key: 'f402ebd1',
+                get: function () {
+                  return ['Super Follow', '' + this.props.name]
+                },
+              },
+              {
                 key: 'd724f427',
                 get: function () {
                   return ['']
@@ -9435,18 +9448,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'caf67b9b',
                 get: function () {
                   return ['', 'Assuming a ' + this.props.price + '/month Super Follows offering']
-                },
-              },
-              {
-                key: 'gc242227',
-                get: function () {
-                  return ['']
-                },
-              },
-              {
-                key: 'f402ebd1',
-                get: function () {
-                  return ['Super Follow', '' + this.props.name]
                 },
               },
               {
@@ -9942,6 +9943,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'ee512b37',
                 get: function () {
                   return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
+                },
+              },
+              {
+                key: 'i8197603',
+                get: function () {
+                  return [
+                    'To report an intellectual property issue, please visit the ',
+                    '. To report any other issues with this product, please go to the iOS or Android app.',
+                  ]
                 },
               },
               {
