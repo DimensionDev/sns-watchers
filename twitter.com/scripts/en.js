@@ -1570,6 +1570,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d073b644', 'Hours'),
           a('a2f0728e', 'Minutes'),
           a('i3a8d60a', 'make your Tweets public'),
+          a('bea869b4', 'Tweet'),
           a('f3a7a80c', 'Want to review this before Tweeting?'),
           a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
           a('d1a92642', 'Most Tweeters don’t post replies like this'),
@@ -1588,10 +1589,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd5ca11f0',
             'We’re asking people to review Tweets with potentially harmful or offensive language. Want to take another look before Tweeting?',
           ),
-          a('h11e5910', 'Did we get this wrong?'),
-          a('bea869b4', 'Tweet'),
-          a('d3145da8', 'Thanks for letting us know.'),
-          a('cb7c0988', 'Why did you get this?'),
           a(
             'de3bcf28',
             'We want to keep Twitter a place for meaningful conversations. So when we detect potentially harmful or offensive language in a reply — like insults, strong language, or hateful remarks — we might ask people if they want to review it before sending.',
@@ -1601,6 +1598,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             'We’re working to better understand and predict when people might want to review their replies. Your feedback helps with this.',
           ),
           a('b7ec04f4', 'Yes'),
+          a('cb7c0988', 'Why did you get this?'),
+          a('h11e5910', 'Did we get this wrong?'),
+          a('d3145da8', 'Thanks for letting us know.'),
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
@@ -2051,8 +2051,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g1428d70', 'Your note is submitted!'),
           a('a4ec7004', 'Here’s what happens now:'),
           a('cb67d37a', 'About Birdwatch notes after submission'),
-          a('h8335712', 'Your note'),
-          a('fe27c1e2', 'Notes'),
+          a('fcca2338', 'Notes suggesting context to be shown with the Tweet'),
+          a('acb7ecae', 'Notes explaining why added context isn’t needed'),
           a('c59107c4', 'Tweet with notes'),
           a('ib73f868', 'No notes on this Tweet'),
           a('efd14e7a', 'Loading notes'),
@@ -2080,10 +2080,28 @@ window.__SCRIPTS_LOADED__.vendor &&
             'b95dc58a',
             'Join Birdwatch and gain access to note writing and other features to help create a better-informed world',
           ),
+          a(
+            'b793116a',
+            'These notes are added by Birdwatch contributors who believe the Tweet is potentially misleading, and would benefit from additional context.',
+          ),
+          a('a533d08e', 'Notes are only visible in Birdwatch, until they are rated Helpful by enough contributors.'),
+          a(
+            'f3e7f392',
+            'If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the Tweet as added context.',
+          ),
+          a(
+            'f1fac934',
+            'These notes are added by contributors who believe the Tweet isn’t misleading and does not need additional context.',
+          ),
+          a(
+            'f568e056',
+            'These are only visible in Birdwatch as additional information to raters, and are not shown as context with the Tweet, even if they earn the status of Helpful.',
+          ),
           a('e272836c', 'Delete note?'),
           a('e457970a', 'Note Details'),
           a('fa0d3ee4', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
           a('df321fc4', 'See all notes on this Tweet'),
+          a('h8335712', 'Your note'),
           a('b9f18eec', 'Currently rated helpful'),
           a('g2edfc1a', 'Shown on Twitter'),
           a('d6db34cc', 'Needs more ratings'),
@@ -2125,6 +2143,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i26425d8', 'Somewhat'),
           a('c6e683d0', 'Submit & Agree'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
+          a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
           a('ac7f9746', 'What was helpful about it?'),
           a('c7751804', 'What was unhelpful about it?'),
           a('ec25095a', 'available to the public'),
@@ -2161,6 +2180,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cb1adfa0', 'Download data'),
           a('ab28945c', 'Contributor profile'),
           a('jaf0d42c', 'Your notes'),
+          a('fe27c1e2', 'Notes'),
           a(
             'fa9a644a',
             'If 3 of your 5 most recent notes with a status of Helpful or Not Helpful are deemed Not Helpful, your ability to write notes will be temporarily locked.',
@@ -2282,6 +2302,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Your ratings will, sometimes, disagree with the status on a note. That’s not a problem! If more contributors agree with you, the status can be overturned, and your impact will change.',
           ),
           a('e2499d2e', 'You can now write Birdwatch notes!'),
+          a('j44125ee', 'This contributor hasn’t written any notes yet.'),
+          a('da55067c', 'Check this space later!'),
           a('ff3e0be2', 'Join Birdwatch'),
           a('i1781e26', 'No Birdwatch notes yet'),
           a('db08295e', 'Want to join?'),
@@ -2331,8 +2353,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h786cd7a', 'Notes data isn’t available yet'),
           a('d0fe8052', 'Ratings data isn’t available yet'),
           a('c0427f94', 'Note status history data isn’t available yet'),
-          a('g0cacb75', 'Twitter Developer Agreement and Policy'),
-          a('e9f1fbcc', 'Nothing to see here — yet'),
+          a('g0cacb75', 'Twitter Developer Agreement and Policy')
+        a('e9f1fbcc', 'Nothing to see here — yet'),
           a('ed88e742', 'Copy link to Topic'),
           a('e96677aa', 'Unfortunately, Birdwatch is not available to you at this time.'),
           a('f026d2ee', 'Birdwatch is currently only available in the U.S.'),
@@ -2344,8 +2366,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Need more time to write a clever response or just want to save a Tweet for later? Bookmark it!',
           ),
           a('j45c642e', 'Folders aren’t loading right now'),
-          a('bcc7e8c0', 'All Bookmarks')
-        a('c8c1fa6e', 'Clear all Bookmarks'),
+          a('bcc7e8c0', 'All Bookmarks'),
+          a('c8c1fa6e', 'Clear all Bookmarks'),
           a('jf748f40', 'Clear all Bookmarks?'),
           a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
           a('cd343e16', 'Save Tweets for later'),
@@ -3624,8 +3646,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bcd9b0ed', function (e) {
             return e.size + ' MB'
           }),
-          a('ce494bb4', 'Font size'),
-          a('c783d45e', 'Color'),
+          a('ce494bb4', 'Font size')
+        a('c783d45e', 'Color'),
           a('h306a358', 'Background'),
           a('d8680056', 'Extra small'),
           a('eed02406', 'Small'),
@@ -3634,8 +3656,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c7044880', 'Extra large'),
           a('e46dffa0', 'Text size'),
           a('ce8a8116', 'Background options'),
-          a('d3d48f3a', 'Light')
-        a('i76f67ee', 'Dim'),
+          a('d3d48f3a', 'Light'),
+          a('i76f67ee', 'Dim'),
           a('c8f85960', 'Lights out'),
           a('aefc5b20', 'Color options'),
           a('a52d0fde', 'Blue'),
@@ -4865,8 +4887,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hbae0a4f', function (e) {
             return '⚡️ “' + e.title + '” by @' + e.author
           }),
-          a('j51ab634', 'Share Moment'),
-          a('g66c8348', 'REPLAY'),
+          a('j51ab634', 'Share Moment')
+        a('g66c8348', 'REPLAY'),
           a('j1d352d8', 'Reminder set'),
           a('d18909d4', 'Set reminder'),
           a('b0b38774', 'Header media'),
@@ -4875,10 +4897,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('if420852', 'Play recording'),
           a('cfadb00e', 'Listening'),
           a('db4620aa', 'LIVE SPACE'),
-          a('c958e692', 'RECORDED SPACE')
-        a('i2c2bfb7', function (e) {
-          return e.count + ' listening'
-        }),
+          a('c958e692', 'RECORDED SPACE'),
+          a('i2c2bfb7', function (e) {
+            return e.count + ' listening'
+          }),
           a('i3f7ff00', 'Media thumbnail'),
           a('h400d7c2', 'JOIN SPACE'),
           a('be6ef5b4', 'COMING UP'),
@@ -6056,10 +6078,29 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('g4bf9cb7', function (e) {
             return e.durationDays + ' day' + n(e.durationDays, '', 's')
-          }),
-          a('gc3ce5d9', function (e) {
-            return 'Estimated reach of ' + e.audienceLow + ' - ' + e.audienceHigh + ' people per day'
-          }),
+          })
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function s(e, t) {
+          return (
+            (s =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+            s(e, t)
+          )
+        }
+        a('gc3ce5d9', function (e) {
+          return 'Estimated reach of ' + e.audienceLow + ' - ' + e.audienceHigh + ' people per day'
+        }),
           a('c1778029', function (e) {
             return (
               e.locationsHeading +
@@ -6092,27 +6133,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eb9466d0', 'Women'),
           a('b07cc9f2', 'Region'),
           a('ce309bee', 'Metro'),
-          a('cc49d030', 'Postcode')
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function c(e, t) {
-          return (
-            (c =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            c(e, t)
-          )
-        }
-        a('c64974fc', 'Followers'),
+          a('cc49d030', 'Postcode'),
+          a('c64974fc', 'Followers'),
           a('i638f89c', 'Website visits'),
           a('e1bca506', 'Your promoted Tweet is under review'),
           a('e4a4c608', 'Check back soon.'),
@@ -7394,14 +7416,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c20f7e9f', function (e) {
             return n(
               e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
+              c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
           a('he26f627', function (e) {
             return n(
               e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
+              c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
@@ -7443,8 +7465,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cd734f66', 'Today'),
           a('c8891d06', 'Tomorrow'),
           a('d6b930d4', 'Try again'),
-          a('aafa48c2', 'Something went wrong.'),
-          a('eb124f96', 'AM/PM'),
+          a('aafa48c2', 'Something went wrong.')
+        a('eb124f96', 'AM/PM'),
           a('i7a6f114', 'Hour'),
           a('ccc99ff2', 'Minute'),
           a('g5662c95', function (e) {
@@ -7457,8 +7479,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d9fd5570', 'Hidden replies'),
           a('c566d3a6', 'Hide'),
           a('a897c4d6', 'Opens edit history'),
-          a('ce97544c', 'Tweet unavailable')
-        a('aed03d34', 'People'),
+          a('ce97544c', 'Tweet unavailable'),
+          a('aed03d34', 'People'),
           a('ffeb2fc6', 'Up next'),
           a('af2a65d9', function (e) {
             return e.timestamp + ' selected'
@@ -7473,7 +7495,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
           a('cfd13f46', 'Voice Dock')
-        var s = o(2784),
+        var c = o(2784),
           u = [],
           d = {}
         function l(e) {
@@ -7488,9 +7510,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             (o = e),
             ((t = h).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            c(t, o),
+            s(t, o),
             (h.prototype.render = function () {
-              return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
+              return c.createElement.apply(c, this[this.props.$i18n].reduce(this.templateReducer, [c.Fragment, null]))
             }),
             (a = h),
             (r = [
@@ -10238,7 +10260,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'templateReducer',
                 get: function () {
                   var e,
-                    t = s.Children.toArray(this.props.children),
+                    t = c.Children.toArray(this.props.children),
                     o = ((e = this.props.$i18n), u[d[e]] || l)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
@@ -10250,10 +10272,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             Object.defineProperty(a, 'prototype', { writable: !1 }),
             h
           )
-        })(o(88357)._ActualI18NFormatMessage || s.Component)
+        })(o(88357)._ActualI18NFormatMessage || c.Component)
         a('_ActualI18NFormatMessage', f),
           a('I18NFormatMessage', function (e) {
-            return s.createElement(f, e)
+            return c.createElement(f, e)
           })
         var h = o(95075)
         o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
