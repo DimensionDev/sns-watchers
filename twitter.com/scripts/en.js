@@ -4,7 +4,7 @@ window.__SCRIPTS_LOADED__.vendor &&
     {
       17346: (e, t, o) => {
         'use strict'
-        var a = o(88357)._register('en', {
+        var a = o(84519)._register('en', {
           get emoji() {
             return o.e('ondemand.emoji.en').then(o.t.bind(o, 20747, 23))
           },
@@ -1492,10 +1492,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
           }),
           a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
-          a(
-            'da4c64f6',
-            'Your edits weren’t saved. You can discard this edit and start over or retry saving your last edits.',
-          ),
+          a('c091760c', 'This edit wasn’t saved. You can try your update again, or discard it and start over.'),
           a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
           a('f0afcc0e', 'Add poll'),
           a('ha5e2e7a', 'Schedule Tweet'),
@@ -5436,10 +5433,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c197728e', 'Resolved'),
           a('i07c24fa', 'You don’t have any open reports'),
           a('h542c98a', 'See details'),
-          a('e1f59494', 'Received'),
-          a('gfc31de4', 'Violation Found'),
-          a('gf62c116', 'Support'),
-          a('h8718c50', 'Full Context Needed'),
           a('e6e11d12', 'You don’t have any resolved reports'),
           a('ibf33bae', 'Report duplicates so they can be removed'),
           a('a288ca36', 'guidelines for law enforcement'),
@@ -5878,9 +5871,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Tweet' + e.noun
           }),
           a('c2ed3314', 'Community Tweet'),
-          a('ad666301', function (e) {
-            return e.fullName + ' on Twitter'
-          }),
           a('e06b864c', 'It looks like you’re enjoying this conversation'),
           a(
             'a078ff70',
@@ -5933,6 +5923,30 @@ window.__SCRIPTS_LOADED__.vendor &&
               n(e.replyCount, 'y', 'ies') +
               '.'
             )
+          }),
+          a('ad666301', function (e) {
+            return e.fullName + ' on Twitter'
+          }),
+          a('g132f681', function (e) {
+            return '@' + e.screenName + ' Tweeted...'
+          }),
+          a('bc6bb295', function (e) {
+            return '@' + e.screenName + ' on Twitter'
+          }),
+          a('hf327f6b', function (e) {
+            return 'Follow @' + e.screenName + ' on Twitter'
+          }),
+          a('f522ae65', function (e) {
+            return 'Check out @' + e.screenName + ' on Twitter'
+          }),
+          a('d58c1576', 'Watch this video on Twitter'),
+          a('bdc49424', 'See what people are saying about this on Twitter.'),
+          a('e38c0975', function (e) {
+            return 'Join the conversation for more from @' + e.screenName + '.'
+          }),
+          a('ie816cb4', 'Watch this video and so much more on Twitter.'),
+          a('e3521fcd', function (e) {
+            return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
           }),
           a('g9079b94', 'You may only view analytics about your own Tweets.'),
           a('a57daeb2', 'Tweet Analytics'),
@@ -6063,10 +6077,29 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('c4d0434b', function (e) {
             return e.dailyBudget + ' per day for ' + e.durationLabel
-          }),
-          a('dc4a9413', function (e) {
-            return e.totalBudget + ' over ' + e.durationLabel
-          }),
+          })
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function c(e, t) {
+          return (
+            (c = Object.setPrototypeOf
+              ? Object.setPrototypeOf.bind()
+              : function (e, t) {
+                  return (e.__proto__ = t), e
+                }),
+            c(e, t)
+          )
+        }
+        a('dc4a9413', function (e) {
+          return e.totalBudget + ' over ' + e.durationLabel
+        }),
           a('bad70c09', function (e) {
             return 'Location' + n(e.numLocations, '', 's')
           }),
@@ -6078,29 +6111,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('g4bf9cb7', function (e) {
             return e.durationDays + ' day' + n(e.durationDays, '', 's')
-          })
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function s(e, t) {
-          return (
-            (s =
-              Object.setPrototypeOf ||
-              function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-            s(e, t)
-          )
-        }
-        a('gc3ce5d9', function (e) {
-          return 'Estimated reach of ' + e.audienceLow + ' - ' + e.audienceHigh + ' people per day'
-        }),
+          }),
+          a('gc3ce5d9', function (e) {
+            return 'Estimated reach of ' + e.audienceLow + ' - ' + e.audienceHigh + ' people per day'
+          }),
           a('c1778029', function (e) {
             return (
               e.locationsHeading +
@@ -6485,6 +6499,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g8191e78', 'Today is their birthday!'),
           a('c1b819ba', 'Birthday balloons are shown here today'),
           a('ad7a451e', 'Translate bio'),
+          a('f543dbf6', 'Verified phone number'),
           a('cef4e8cf', function (e) {
             return 'Unmute @' + e.screenName + '?'
           }),
@@ -7416,14 +7431,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c20f7e9f', function (e) {
             return n(
               e.otherUsersCount,
-              c.createElement(c.Fragment, null, '', e.secondName),
+              s.createElement(s.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
           a('he26f627', function (e) {
             return n(
               e.otherUsersCount,
-              c.createElement(c.Fragment, null, '', e.secondName),
+              s.createElement(s.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
@@ -7459,14 +7474,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('a8428d5e', 'Upcoming'),
           a('a7aad8ba', 'Live'),
-          a('e431f1aa', 'Final'),
-          a('a7391708', 'Postponed'),
+          a('e431f1aa', 'Final')
+        a('a7391708', 'Postponed'),
           a('d2dbfa92', 'Cancelled'),
           a('cd734f66', 'Today'),
           a('c8891d06', 'Tomorrow'),
           a('d6b930d4', 'Try again'),
-          a('aafa48c2', 'Something went wrong.')
-        a('eb124f96', 'AM/PM'),
+          a('aafa48c2', 'Something went wrong.'),
+          a('eb124f96', 'AM/PM'),
           a('i7a6f114', 'Hour'),
           a('ccc99ff2', 'Minute'),
           a('g5662c95', function (e) {
@@ -7495,7 +7510,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
           a('cfd13f46', 'Voice Dock')
-        var c = o(2784),
+        var s = o(2784),
           u = [],
           d = {}
         function l(e) {
@@ -7510,9 +7525,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             (o = e),
             ((t = h).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            s(t, o),
+            c(t, o),
             (h.prototype.render = function () {
-              return c.createElement.apply(c, this[this.props.$i18n].reduce(this.templateReducer, [c.Fragment, null]))
+              return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
             }),
             (a = h),
             (r = [
@@ -10260,7 +10275,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'templateReducer',
                 get: function () {
                   var e,
-                    t = c.Children.toArray(this.props.children),
+                    t = s.Children.toArray(this.props.children),
                     o = ((e = this.props.$i18n), u[d[e]] || l)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
@@ -10272,10 +10287,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             Object.defineProperty(a, 'prototype', { writable: !1 }),
             h
           )
-        })(o(88357)._ActualI18NFormatMessage || c.Component)
+        })(o(84519)._ActualI18NFormatMessage || s.Component)
         a('_ActualI18NFormatMessage', f),
           a('I18NFormatMessage', function (e) {
-            return c.createElement(f, e)
+            return s.createElement(f, e)
           })
         var h = o(95075)
         o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
@@ -12964,20 +12979,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c32b252b', h.a1653031457),
           a('a1061083', h.b490808361)
       },
-      88357: (e, t, o) => {
-        e.exports = o(7821)
-      },
-      31392: (e, t, o) => {
-        'use strict'
-        o(17346)
+      84519: (e, t, o) => {
+        e.exports = o(79862)
       },
       73957: (e) => {
         e.exports = !1
       },
+      22847: (e, t, o) => {
+        'use strict'
+        o(17346)
+      },
     },
     (e) => {
       e.O(0, ['vendor'], () => {
-        return (t = 31392), e((e.s = t))
+        return (t = 22847), e((e.s = t))
         var t
       })
       e.O()
