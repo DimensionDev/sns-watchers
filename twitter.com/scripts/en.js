@@ -196,7 +196,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cfd2f35e', 'Cancel'),
           a('c1df579e', 'Next'),
           a('e3146662', 'Captions couldn’t be made for this clip.'),
-          a('b3481ffe', 'Report this space'),
+          a('f123fea8', 'Report this Space'),
           a('d0aebc28', 'Describe the issue'),
           a('g971a4e8', 'Self-Harm'),
           a('b96e6682', 'Violence'),
@@ -980,110 +980,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e7c58566', 'Reply unpinned from tweet'),
           a('a1d60e26', 'Unable to pin reply to tweet'),
           a('e38fc3ac', 'Unable to unpin reply from tweet'),
-          a('a2a3824a', 'Topic'),
-          a('i79ab12a', 'Follow Topic'),
-          a('c0f56044', 'Unfollow'),
-          a('fcf51fe6', 'Star'),
-          a('e9a90d72', 'Starred'),
-          a('bf403716', 'Unstar'),
-          a('c9f08e29', function (e) {
-            return 'Unstar ' + e.title + '?'
-          }),
-          a(
-            'abc600f4',
-            'Even if you unstar this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-          ),
-          a('cd876e02', 'Favorite'),
-          a('f2816e02', 'Favorited'),
-          a('f5b04fbc', 'Unfavorite'),
-          a('c481ae3f', function (e) {
-            return 'Unfavorite ' + e.title + '?'
-          }),
-          a(
-            'aa3ba124',
-            'Even if you unfavorite this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-          ),
-          a('e0e730b0', 'Interested'),
-          a('b1850062', 'Not interested'),
-          a('gd3f996f', function (e) {
-            return 'Not interested in ' + e.title + '?'
-          }),
-          a(
-            'i36c403c',
-            'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-          ),
-          a('d9b417c4', 'Set as not interested'),
-          a('c29d6806', 'Stop recommending'),
-          a('e839db3a', 'Dismiss'),
-          a('ge8f3043', function (e) {
-            return 'Follow ' + e.topicName + ' Topic'
-          }),
-          a('aa576cbf', function (e) {
-            return 'Unfollow ' + e.topicName + ' Topic'
-          }),
-          a('i77347d1', function (e) {
-            return 'Dismiss ' + e.topicName + ' Topic'
-          }),
-          a('je808a17', function (e) {
-            return e.topicName + ' Topic'
-          }),
-          a('ee8c6c62', 'Show more Tweets'),
-          a('i8005e74', 'Loading more Tweets'),
-          a('j681933e', 'Private List'),
-          a('ca5d0a82', 'Edit List'),
-          a('ec08efe4', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('h9f711f0', function (e) {
-            return 'Follower' + n(e.count, '', 's')
+          a('aaf2c6ea', 'Thanks. Twitter will use this to make your timeline better.'),
+          a('jb0429b1', function (e) {
+            return 'By ' + e.name + ' @' + e.screenName
           }),
           a('ibd0106e', function (e) {
             return '' + e.formattedCount
           }),
           a('cface2d1', function (e) {
             return 'Member' + n(e.count, '', 's')
-          }),
-          a('add55942', 'Something went wrong. Try subscribing again in a minute.'),
-          a('ib8f5f3c', 'Something went wrong. Try unsubscribing again in a minute.'),
-          a('e20fc756', 'You aren’t allowed to add this member to this List.'),
-          a('c5d23126', 'Pin'),
-          a('j44ec610', 'Unpin'),
-          a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
-          a('fa816a0a', 'Reorder List'),
-          a('ac832ae4', 'Pin List'),
-          a('cdb33880', 'Unpin List'),
-          a('a3484d22', 'tie'),
-          a('aab2efa9', function (e) {
-            return 'winner ' + e.winner
-          }),
-          a('ba21c289', function (e) {
-            return (
-              'Score card, ' +
-              e.gameCategory +
-              ', ' +
-              e.gameState +
-              ', ' +
-              e.accessibleGameClockPeriod +
-              ', ' +
-              e.teamOneLabel +
-              ', ' +
-              e.teamTwoLabel
-            )
-          }),
-          a('f178e38c', 'Upcoming'),
-          a('b6da6b02', 'Live'),
-          a('i9f615c8', 'Final'),
-          a('f897267a', 'Postponed'),
-          a('f93c4b6a', 'Cancelled'),
-          a('d6917e0d', function (e) {
-            return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
-          }),
-          a('a682906d', function (e) {
-            return e.count + ' like' + n(e.count, '', 's') + ' to go'
-          }),
-          a('aaf2c6ea', 'Thanks. Twitter will use this to make your timeline better.'),
-          a('jb0429b1', function (e) {
-            return 'By ' + e.name + ' @' + e.screenName
           }),
           a('e6057014', 'Ask to join'),
           a('b5334780', 'Pending'),
@@ -1115,6 +1020,60 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a0e0a52c', function (e) {
             return '' + e.offendingRule
           }),
+          a('a3484d22', 'tie'),
+          a('aab2efa9', function (e) {
+            return 'winner ' + e.winner
+          }),
+          a('ba21c289', function (e) {
+            return (
+              'Score card, ' +
+              e.gameCategory +
+              ', ' +
+              e.gameState +
+              ', ' +
+              e.accessibleGameClockPeriod +
+              ', ' +
+              e.teamOneLabel +
+              ', ' +
+              e.teamTwoLabel
+            )
+          }),
+          a('f178e38c', 'Upcoming'),
+          a('b6da6b02', 'Live'),
+          a('i9f615c8', 'Final'),
+          a('f897267a', 'Postponed'),
+          a('f93c4b6a', 'Cancelled'),
+          a('i79ab12a', 'Follow Topic'),
+          a('c0f56044', 'Unfollow'),
+          a('fcf51fe6', 'Star'),
+          a('e9a90d72', 'Starred'),
+          a('bf403716', 'Unstar'),
+          a('c9f08e29', function (e) {
+            return 'Unstar ' + e.title + '?'
+          }),
+          a(
+            'abc600f4',
+            'Even if you unstar this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
+          a('cd876e02', 'Favorite'),
+          a('f2816e02', 'Favorited'),
+          a('f5b04fbc', 'Unfavorite'),
+          a('c481ae3f', function (e) {
+            return 'Unfavorite ' + e.title + '?'
+          }),
+          a(
+            'aa3ba124',
+            'Even if you unfavorite this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
+          a('e0e730b0', 'Interested'),
+          a('b1850062', 'Not interested'),
+          a('gd3f996f', function (e) {
+            return 'Not interested in ' + e.title + '?'
+          }),
+          a(
+            'i36c403c',
+            'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
           a('jceadc3e', 'Untitled'),
           a('e8dff578', 'Edit this'),
           a('fcc64f02', 'Report this'),
@@ -1152,14 +1111,55 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('abd0f804', function (e) {
             return '・' + e.formattedTime
           }),
+          a('a2a3824a', 'Topic'),
+          a('d9b417c4', 'Set as not interested'),
+          a('c29d6806', 'Stop recommending'),
+          a('e839db3a', 'Dismiss'),
+          a('ge8f3043', function (e) {
+            return 'Follow ' + e.topicName + ' Topic'
+          }),
+          a('aa576cbf', function (e) {
+            return 'Unfollow ' + e.topicName + ' Topic'
+          }),
+          a('i77347d1', function (e) {
+            return 'Dismiss ' + e.topicName + ' Topic'
+          }),
           a('d69b2d90', 'You’re not interested in this Topic.'),
+          a('je808a17', function (e) {
+            return e.topicName + ' Topic'
+          }),
           a('e3a24e4c', 'Add another Tweet'),
           a('i569ff3e', 'Show this thread'),
           a('je5502eb', function (e) {
             return 'Including results for "' + e.suggestion + '"'
+          }),
+          a('bc4628a1', function (e) {
+            return 'Showing results for "' + e.suggestion + '"'
+          }),
+          a('ee8c6c62', 'Show more Tweets'),
+          a('i8005e74', 'Loading more Tweets'),
+          a('j681933e', 'Private List'),
+          a('ca5d0a82', 'Edit List'),
+          a('ec08efe4', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('h9f711f0', function (e) {
+            return 'Follower' + n(e.count, '', 's')
+          }),
+          a('add55942', 'Something went wrong. Try subscribing again in a minute.'),
+          a('ib8f5f3c', 'Something went wrong. Try unsubscribing again in a minute.'),
+          a('e20fc756', 'You aren’t allowed to add this member to this List.'),
+          a('c5d23126', 'Pin'),
+          a('j44ec610', 'Unpin'),
+          a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
+          a('fa816a0a', 'Reorder List'),
+          a('ac832ae4', 'Pin List'),
+          a('cdb33880', 'Unpin List'),
+          a('d6917e0d', function (e) {
+            return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
           })
-        a('bc4628a1', function (e) {
-          return 'Showing results for "' + e.suggestion + '"'
+        a('a682906d', function (e) {
+          return e.count + ' like' + n(e.count, '', 's') + ' to go'
         }),
           a('c837fcaa', 'Show more replies'),
           a('d228a9a0', 'Show more'),
@@ -1825,8 +1825,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hd5e7b21', function (e) {
             return e.date + ': ' + e.spaceTitle
           }),
-          a('f826f7ef', function (e) {
-            return 'This space has ended: ' + e.spaceTitle
+          a('f651e375', function (e) {
+            return 'This Space has ended: ' + e.spaceTitle
           }),
           a('i8478ae7', function (e) {
             return 'Play recording: ' + e.spaceTitle
@@ -1846,9 +1846,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Speaker' + n(e.speakerCount, '', 's')
           }),
           a('h5245afa', 'Community'),
-          a('cc5ab042', 'This space has ended'),
-          a('eadd5678', 'It looks like this space has been closed.'),
-          a('cc8f82bc', 'Join this space'),
+          a('f7dc3b1c', 'This Space has ended'),
+          a('c1d15dc0', 'It looks like this Space has been closed.'),
+          a('e7c45f34', 'Join this Space'),
           a('e51df2e6', 'Your mic will be off to start'),
           a('d2790650', 'Super Following has its perks'),
           a('a8c751af', function (e) {
@@ -4483,6 +4483,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j325331a', 'Take a minute to say hello'),
           a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
           a('h810143c', 'Details'),
+          a('ga57b610', 'Purchase date'),
+          a('h3b68828', 'Purchase type'),
+          a('cc2aa67a', 'Purchase platform'),
+          a('b313bb24', 'Payment'),
+          a('e5188502', 'All sales are final'),
+          a('g263221c', 'Stripe'),
           a('bf364d62', 'All transactions'),
           a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
           a('g1b8020c', 'Last 30 days'),
@@ -4879,14 +4885,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a6ecfa0a', 'Try searching for something else instead.'),
           a('f5ff0d6f', function (e) {
             return e.category + ' — GIF Search'
-          }),
-          a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
+          })
+        a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
           a('aefd89c8', 'Navigation'),
           a('cafdefb2', 'Actions'),
           a('e95b9448', 'General'),
           a('c08e7936', 'Event Tweets'),
-          a('j32d345e', 'The following may contain sensitive material')
-        a('a01d5a7c', 'This is not available because it was created by someone you blocked'),
+          a('j32d345e', 'The following may contain sensitive material'),
+          a('a01d5a7c', 'This is not available because it was created by someone you blocked'),
           a('b2311b70', 'This is not available to you'),
           a('cab51f93', function (e) {
             return 'You cannot view this because @' + e.screenName + ' blocked you.'
@@ -6074,13 +6080,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'ad9d9204',
             'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
-          ),
-          a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
-          a('e5b7dd84', 'Start'),
-          a('de2d89a2', 'Watched 25%'),
-          a('i92754c2', 'Watched 50%'),
-          a('be8ddcc2', 'Watched 75%'),
-          a('b01410d6', 'Watched 100%')
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6100,9 +6100,15 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('gfb3d8af', function (e) {
-          return 'Watched until ' + e.timeLabel
-        }),
+        a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
+          a('e5b7dd84', 'Start'),
+          a('de2d89a2', 'Watched 25%'),
+          a('i92754c2', 'Watched 50%'),
+          a('be8ddcc2', 'Watched 75%'),
+          a('b01410d6', 'Watched 100%'),
+          a('gfb3d8af', function (e) {
+            return 'Watched until ' + e.timeLabel
+          }),
           a('hb52cc4a', 'Please try again later.'),
           a('fc6cbba2', 'Nothing to see here - yet'),
           a('b80a53c8', 'Once more data is collected, you’ll see that information here.'),
@@ -7453,22 +7459,22 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e06c99b7', 'and'),
           a('i4e2f96c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('ga629a8c', 'View people in conversation'),
+          })
+        a('ga629a8c', 'View people in conversation'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
           a('f8e8e32e', 'You'),
-          a('df6703d3', 'You')
-        a('c20f7e9f', function (e) {
-          return n(
-            e.otherUsersCount,
-            s.createElement(s.Fragment, null, '', e.secondName),
-            e.otherUsersCount + ' others',
-          )
-        }),
+          a('df6703d3', 'You'),
+          a('c20f7e9f', function (e) {
+            return n(
+              e.otherUsersCount,
+              s.createElement(s.Fragment, null, '', e.secondName),
+              e.otherUsersCount + ' others',
+            )
+          }),
           a('he26f627', function (e) {
             return n(
               e.otherUsersCount,
@@ -8116,12 +8122,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'd2924acb',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
                 key: 'b38e130b',
                 get: function () {
                   return ['', ' ']
@@ -8188,6 +8188,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'hce48b8b',
                 get: function () {
                   return ['Did you mean "', '"?']
+                },
+              },
+              {
+                key: 'd2924acb',
+                get: function () {
+                  return ['', ' ']
                 },
               },
               {
