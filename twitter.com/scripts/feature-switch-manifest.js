@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'c586767a55c137ce147a66580e1f77b4fc02a158',
+  feature_set_token: '6e18345cbc8b713ab66ebc6f0b6c11b1208bcf89',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -381,7 +381,6 @@ var manifest = {
     guest_broadcasting_timeline_decorations_enabled: { value: !1 },
     hashflags_animation_like_button_enabled: { value: !0 },
     home_timeline_extended_reactivity_tweet_clicks_enabled: { value: !1 },
-    home_timeline_extended_reactivity_tweet_clicks_fatigue: { value: 5 },
     home_timeline_extended_reactivity_tweet_clicks_trigger_seconds: { value: 120 },
     home_timeline_latest_timeline_switch_enabled: { value: !0 },
     home_timeline_like_reactivity_enabled: { value: !0 },
@@ -532,7 +531,7 @@ var manifest = {
     responsive_web_drew_profile_block_enabled: { value: !1 },
     responsive_web_drew_timeline_block_enabled: { value: !1 },
     responsive_web_dtime_fccts_enabled: { value: !1 },
-    responsive_web_dtime_featured_timelines_modal_enabled: { value: !0 },
+    responsive_web_dtime_featured_timelines_modal_enabled: { value: !1 },
     responsive_web_dtime_show_new_tweets_enabled: { value: !0 },
     responsive_web_dtime_sparkle_menu_featured_timelines_enabled: { value: !1 },
     responsive_web_dtime_timelines_directory_enabled: { value: !1 },
@@ -540,8 +539,7 @@ var manifest = {
     responsive_web_dtime_tpat_enabled: { value: !0 },
     responsive_web_dynamic_product_ads_enabled: { value: !1 },
     responsive_web_edit_tweet_api_enabled: { value: !0 },
-    responsive_web_edit_tweet_composition_enabled: { value: !0 },
-    responsive_web_edit_tweet_perspective_enabled: { value: !1 },
+    responsive_web_edit_tweet_composition_enabled: { value: !1 },
     responsive_web_edit_tweet_upsell_enabled: { value: !0 },
     responsive_web_element_size_impression_scribe_enabled: { value: !0 },
     responsive_web_enhance_cards_enabled: { value: !0 },
@@ -755,7 +753,7 @@ var manifest = {
     responsive_web_typeahead_reverse_bolding_enabled: { value: !0 },
     responsive_web_uc_gql_enabled: { value: !0 },
     responsive_web_unsupported_entry_tombstone: { value: !1 },
-    responsive_web_use_app_button_variations: { value: 'treatment_1' },
+    responsive_web_use_app_button_variations: { value: 'control' },
     responsive_web_use_app_prompt_copy_variant: { value: '' },
     responsive_web_use_app_prompt_enabled: { value: !1 },
     responsive_web_use_badge_counts_for_ntab: { value: !1 },
@@ -1115,8 +1113,6 @@ var manifest = {
         'copy_link',
       ],
     },
-    tweet_limited_actions_config_skip_tweet_detail: { value: ['reply'] },
-    tweet_limited_actions_config_skip_tweet_detail_enabled: { value: !0 },
     tweet_limited_actions_config_soft_nudge_with_quote_tweet: { value: ['show_retweet_action_menu'] },
     tweet_translation_timeline_enabled: { value: !1 },
     tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled: { value: !1 },
@@ -1451,7 +1447,7 @@ var manifest = {
     ad_spacing_post_hydration_14587: {
       name: 'ad_spacing_post_hydration_14587',
       type: 'experiment',
-      enumeration_values: [],
+      enumeration_values: ['control', 'post_hydration_only', 'post_hydration_plus'],
     },
     ads_spacing_client_fallback_minimum_spacing: {
       name: 'ads_spacing_client_fallback_minimum_spacing',
@@ -2281,16 +2277,6 @@ var manifest = {
       enumeration_values: ['control', 'dismiss_x_close', 'detail_text_hyperlink', 'drop_gate_peek'],
     },
     global_mention_settings_enabled: { name: 'global_mention_settings_enabled', type: 'boolean', defaultValue: !1 },
-    good_click_reactivity_all_users_15540: {
-      name: 'good_click_reactivity_all_users_15540',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment1', 'treatment2', 'treatment3', 'treatment4'],
-    },
-    good_click_reactivity_light_users_15539: {
-      name: 'good_click_reactivity_light_users_15539',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment1', 'treatment2', 'treatment3', 'treatment4'],
-    },
     graphql_composer_and_dm_card_previews_enabled: {
       name: 'graphql_composer_and_dm_card_previews_enabled',
       type: 'boolean',
@@ -2407,8 +2393,7 @@ var manifest = {
     },
     home_timeline_extended_reactivity_tweet_clicks_fatigue: {
       name: 'home_timeline_extended_reactivity_tweet_clicks_fatigue',
-      type: 'number',
-      defaultValue: 5,
+      type: 'string',
     },
     home_timeline_extended_reactivity_tweet_clicks_trigger_seconds: {
       name: 'home_timeline_extended_reactivity_tweet_clicks_trigger_seconds',
@@ -2647,10 +2632,10 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
-    immersive_media_viewer_new_user_feature_holdback_15625: {
-      name: 'immersive_media_viewer_new_user_feature_holdback_15625',
+    immersive_media_viewer_feature_holdback_15625: {
+      name: 'immersive_media_viewer_feature_holdback_15625',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
+      enumeration_values: [],
     },
     inline_player_scroller_removal_13362: {
       name: 'inline_player_scroller_removal_13362',
@@ -2791,11 +2776,6 @@ var manifest = {
       name: 'livepipeline_tweetengagement_enabled',
       type: 'boolean',
       defaultValue: !0,
-    },
-    logged_out_gating_switch_to_app_holdback_15377: {
-      name: 'logged_out_gating_switch_to_app_holdback_15377',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     logged_out_search_homepage_13401: {
       name: 'logged_out_search_homepage_13401',
@@ -2972,6 +2952,11 @@ var manifest = {
       name: 'papago_tweet_translation_to_korean_sources',
       type: 'object',
       defaultValue: ['en', 'ja'],
+    },
+    persistent_use_app_affordance_mobile_rweb_header_15083: {
+      name: 'persistent_use_app_affordance_mobile_rweb_header_15083',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment_1', 'treatment_2'],
     },
     personalization_holdback_2022_13469: {
       name: 'personalization_holdback_2022_13469',
@@ -3588,7 +3573,7 @@ var manifest = {
     responsive_web_dtime_featured_timelines_modal_enabled: {
       name: 'responsive_web_dtime_featured_timelines_modal_enabled',
       type: 'boolean',
-      defaultValue: !0,
+      defaultValue: !1,
     },
     responsive_web_dtime_sparkle_menu_featured_timelines_enabled: {
       name: 'responsive_web_dtime_sparkle_menu_featured_timelines_enabled',
@@ -3623,11 +3608,6 @@ var manifest = {
     },
     responsive_web_edit_tweet_composition_enabled: {
       name: 'responsive_web_edit_tweet_composition_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
-    responsive_web_edit_tweet_perspective_enabled: {
-      name: 'responsive_web_edit_tweet_perspective_enabled',
       type: 'boolean',
       defaultValue: !1,
     },
@@ -4565,7 +4545,7 @@ var manifest = {
     responsive_web_use_app_button_variations: {
       name: 'responsive_web_use_app_button_variations',
       type: 'string',
-      defaultValue: 'treatment_1',
+      defaultValue: 'control',
     },
     responsive_web_use_app_prompt_enabled: {
       name: 'responsive_web_use_app_prompt_enabled',
@@ -4852,15 +4832,15 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    share_animation_after_like_15145: {
-      name: 'share_animation_after_like_15145',
-      type: 'experiment',
-      enumeration_values: ['control', 'share_animation_enabled'],
-    },
     share_holdback_2022_fy2022_14031: {
       name: 'share_holdback_2022_fy2022_14031',
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
+    },
+    share_icon_animation_on_like_15145: {
+      name: 'share_icon_animation_on_like_15145',
+      type: 'experiment',
+      enumeration_values: [],
     },
     share_learning_holdback_h2_2022_15147: {
       name: 'share_learning_holdback_h2_2022_15147',
@@ -5452,8 +5432,7 @@ var manifest = {
     },
     tweet_limited_actions_config_skip_tweet_detail_enabled: {
       name: 'tweet_limited_actions_config_skip_tweet_detail_enabled',
-      type: 'boolean',
-      defaultValue: !0,
+      type: 'string',
     },
     tweet_limited_actions_config_dynamic_product_ad: {
       name: 'tweet_limited_actions_config_dynamic_product_ad',
@@ -5547,8 +5526,7 @@ var manifest = {
     },
     tweet_limited_actions_config_skip_tweet_detail: {
       name: 'tweet_limited_actions_config_skip_tweet_detail',
-      type: 'object',
-      defaultValue: ['reply'],
+      type: 'string',
     },
     tweet_limited_actions_config_non_compliant: {
       name: 'tweet_limited_actions_config_non_compliant',
@@ -6002,11 +5980,6 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'control2'],
     },
-    web_repeat_profile_visit_notifications_15195: {
-      name: 'web_repeat_profile_visit_notifications_15195',
-      type: 'experiment',
-      enumeration_values: ['control', 'prompt_with_df_only', 'prompt_with_follow_and_df'],
-    },
     web_video_bitrate_persistence_enabled: {
       name: 'web_video_bitrate_persistence_enabled',
       type: 'boolean',
@@ -6042,7 +6015,7 @@ var manifest = {
     web_video_playback_speed_14588: {
       name: 'web_video_playback_speed_14588',
       type: 'experiment',
-      enumeration_values: [],
+      enumeration_values: ['control', 'treatment'],
     },
     web_video_player_size_cap_disabled: {
       name: 'web_video_player_size_cap_disabled',

@@ -374,13 +374,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c6f2bf00', 'Manage accounts'),
           a('b8e1d524', 'Accounts'),
           a('gef27c4c', 'Account menu'),
-          a('daffabde', 'acting as...'),
-          a('eccbfa26', 'Delegate accounts'),
-          a('a1b7a904', 'Act as'),
           a('c61eea74', 'Personal accounts'),
           a('b7dc3885', function (e) {
             return 'Switch to @' + e.screenName
           }),
+          a('daffabde', 'acting as...'),
+          a('eccbfa26', 'Delegate accounts'),
+          a('a1b7a904', 'Act as'),
           a('g34f2c63', function (e) {
             return 'Tweet' + e.verb
           }),
@@ -4410,7 +4410,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Transaction ID ' + e.transactionId
           }),
           a('ja73ebac', 'Revenue'),
-          a('h16eeb42', 'Manage'),
           a('ed9404c8', 'New subscriptions'),
           a('g0a17d4c', 'You have no new subscriptions at this time.'),
           a('h7a41c02', 'Renewals'),
@@ -4883,11 +4882,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j7fc4f9c', 'Auto-play GIFs'),
           a('a66b7760', 'Unlabeled GIF'),
           a('a723aefa', 'No GIFs found'),
-          a('a6ecfa0a', 'Try searching for something else instead.')
-        a('f5ff0d6f', function (e) {
-          return e.category + ' — GIF Search'
-        }),
-          a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
+          a('a6ecfa0a', 'Try searching for something else instead.'),
+          a('f5ff0d6f', function (e) {
+            return e.category + ' — GIF Search'
+          })
+        a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
           a('aefd89c8', 'Navigation'),
           a('cafdefb2', 'Actions'),
           a('e95b9448', 'General'),
@@ -6077,7 +6076,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ca7e10d8', 'Unique views'),
           a('bd174250', 'Total number of times this video was viewed across all Tweets'),
           a('a69cd868', 'Number of unique views for this video'),
-          a('f894a688', 'Audience retention')
+          a('f894a688', 'Audience retention'),
+          a(
+            'ad9d9204',
+            'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6097,11 +6100,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a(
-          'ad9d9204',
-          'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
-        ),
-          a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
+        a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
           a('e5b7dd84', 'Start'),
           a('de2d89a2', 'Watched 25%'),
           a('i92754c2', 'Watched 50%'),
@@ -7036,7 +7035,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('if1b6f15', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
-          a('j3de54a8', 'NOTE'),
           a('a6a6ced4', 'Read Note'),
           a('dbc0c2f4', 'Bookmark'),
           a('ccd32094', 'Now'),
@@ -7435,6 +7433,36 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
           a('b09adb0c', 'See conversation'),
+          a('e4f1e6e4', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('daf8a75f', function (e) {
+            return 'Following'
+          }),
+          a('ef1f4fc6', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('ad9b5988', function (e) {
+            return 'Follower' + n(e.count, '', 's')
+          }),
+          a('b3ec34f8', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('jc5b267b', function (e) {
+            return 'Super Follower' + n(e.count, '', 's')
+          }),
+          a('ef633578', 'Account suspended'),
+          a('caddb529', 'and'),
+          a('ff31714c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          }),
+          a('e06c99b7', 'and'),
+          a('i4e2f96c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          })
+        a('ga629a8c', 'View people in conversation'),
+          a('a8b58cf4', 'Show this thread'),
+          a('i5f742fe', 'Show this poll'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -7455,36 +7483,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }),
           a('j2eea17a', 'The following media includes potentially sensitive content.'),
-          a('e4f1e6e4', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('daf8a75f', function (e) {
-            return 'Following'
-          }),
-          a('ef1f4fc6', function (e) {
-            return '' + e.formattedCount
-          })
-        a('ad9b5988', function (e) {
-          return 'Follower' + n(e.count, '', 's')
-        }),
-          a('b3ec34f8', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('jc5b267b', function (e) {
-            return 'Super Follower' + n(e.count, '', 's')
-          }),
-          a('ef633578', 'Account suspended'),
-          a('caddb529', 'and'),
-          a('ff31714c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('e06c99b7', 'and'),
-          a('i4e2f96c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('ga629a8c', 'View people in conversation'),
-          a('a8b58cf4', 'Show this thread'),
-          a('i5f742fe', 'Show this poll'),
           a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
           a('f5d461f8', 'Voice Tweet'),
@@ -7507,6 +7505,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h39fbf33', function (e) {
             return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
           }),
+          a('ac6d902c', 'Data represented as progress bar'),
           a('gdd51574', 'Pull to refresh'),
           a('e557ad8e', 'Active'),
           a('e3a58c28', 'Expand'),
@@ -10217,24 +10216,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'dbf19261',
-                get: function () {
-                  return ['From ']
-                },
-              },
-              {
-                key: 'd7b2c271',
-                get: function () {
-                  return ['', ' and ']
-                },
-              },
-              {
-                key: 'b035fe73',
-                get: function () {
-                  return ['', ' and ']
-                },
-              },
-              {
                 key: 'g3ed1dd5',
                 get: function () {
                   return ['', ' ']
@@ -10280,6 +10261,24 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'g4eb2847',
                 get: function () {
                   return ['Replying to ', ' ', ' ']
+                },
+              },
+              {
+                key: 'dbf19261',
+                get: function () {
+                  return ['From ']
+                },
+              },
+              {
+                key: 'd7b2c271',
+                get: function () {
+                  return ['', ' and ']
+                },
+              },
+              {
+                key: 'b035fe73',
+                get: function () {
+                  return ['', ' and ']
                 },
               },
               {
