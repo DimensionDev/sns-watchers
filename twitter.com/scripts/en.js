@@ -7435,36 +7435,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
           a('b09adb0c', 'See conversation'),
-          a('e4f1e6e4', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('daf8a75f', function (e) {
-            return 'Following'
-          }),
-          a('ef1f4fc6', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('ad9b5988', function (e) {
-            return 'Follower' + n(e.count, '', 's')
-          }),
-          a('b3ec34f8', function (e) {
-            return '' + e.formattedCount
-          }),
-          a('jc5b267b', function (e) {
-            return 'Super Follower' + n(e.count, '', 's')
-          }),
-          a('ef633578', 'Account suspended'),
-          a('caddb529', 'and'),
-          a('ff31714c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          })
-        a('e06c99b7', 'and'),
-          a('i4e2f96c', function (e) {
-            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('ga629a8c', 'View people in conversation'),
-          a('a8b58cf4', 'Show this thread'),
-          a('i5f742fe', 'Show this poll'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -7485,6 +7455,36 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }),
           a('j2eea17a', 'The following media includes potentially sensitive content.'),
+          a('e4f1e6e4', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('daf8a75f', function (e) {
+            return 'Following'
+          }),
+          a('ef1f4fc6', function (e) {
+            return '' + e.formattedCount
+          })
+        a('ad9b5988', function (e) {
+          return 'Follower' + n(e.count, '', 's')
+        }),
+          a('b3ec34f8', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('jc5b267b', function (e) {
+            return 'Super Follower' + n(e.count, '', 's')
+          }),
+          a('ef633578', 'Account suspended'),
+          a('caddb529', 'and'),
+          a('ff31714c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          }),
+          a('e06c99b7', 'and'),
+          a('i4e2f96c', function (e) {
+            return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+          }),
+          a('ga629a8c', 'View people in conversation'),
+          a('a8b58cf4', 'Show this thread'),
+          a('i5f742fe', 'Show this poll'),
           a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
           a('f5d461f8', 'Voice Tweet'),
@@ -7507,7 +7507,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h39fbf33', function (e) {
             return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
           }),
-          a('ac6d902c', 'Data represented as progress bar'),
           a('gdd51574', 'Pull to refresh'),
           a('e557ad8e', 'Active'),
           a('e3a58c28', 'Expand'),
@@ -10218,6 +10217,24 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'dbf19261',
+                get: function () {
+                  return ['From ']
+                },
+              },
+              {
+                key: 'd7b2c271',
+                get: function () {
+                  return ['', ' and ']
+                },
+              },
+              {
+                key: 'b035fe73',
+                get: function () {
+                  return ['', ' and ']
+                },
+              },
+              {
                 key: 'g3ed1dd5',
                 get: function () {
                   return ['', ' ']
@@ -10263,24 +10280,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'g4eb2847',
                 get: function () {
                   return ['Replying to ', ' ', ' ']
-                },
-              },
-              {
-                key: 'dbf19261',
-                get: function () {
-                  return ['From ']
-                },
-              },
-              {
-                key: 'd7b2c271',
-                get: function () {
-                  return ['', ' and ']
-                },
-              },
-              {
-                key: 'b035fe73',
-                get: function () {
-                  return ['', ' and ']
                 },
               },
               {
