@@ -4410,6 +4410,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Transaction ID ' + e.transactionId
           }),
           a('ja73ebac', 'Revenue'),
+          a('h16eeb42', 'Manage'),
           a('ed9404c8', 'New subscriptions'),
           a('g0a17d4c', 'You have no new subscriptions at this time.'),
           a('h7a41c02', 'Renewals'),
@@ -4882,11 +4883,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j7fc4f9c', 'Auto-play GIFs'),
           a('a66b7760', 'Unlabeled GIF'),
           a('a723aefa', 'No GIFs found'),
-          a('a6ecfa0a', 'Try searching for something else instead.'),
-          a('f5ff0d6f', function (e) {
-            return e.category + ' — GIF Search'
-          })
-        a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
+          a('a6ecfa0a', 'Try searching for something else instead.')
+        a('f5ff0d6f', function (e) {
+          return e.category + ' — GIF Search'
+        }),
+          a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
           a('aefd89c8', 'Navigation'),
           a('cafdefb2', 'Actions'),
           a('e95b9448', 'General'),
@@ -6076,11 +6077,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ca7e10d8', 'Unique views'),
           a('bd174250', 'Total number of times this video was viewed across all Tweets'),
           a('a69cd868', 'Number of unique views for this video'),
-          a('f894a688', 'Audience retention'),
-          a(
-            'ad9d9204',
-            'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
-          )
+          a('f894a688', 'Audience retention')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6100,7 +6097,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
+        a(
+          'ad9d9204',
+          'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
+        ),
+          a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
           a('e5b7dd84', 'Start'),
           a('de2d89a2', 'Watched 25%'),
           a('i92754c2', 'Watched 50%'),
@@ -7035,6 +7036,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('if1b6f15', function (e) {
             return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
           }),
+          a('j3de54a8', 'NOTE'),
           a('a6a6ced4', 'Read Note'),
           a('dbc0c2f4', 'Bookmark'),
           a('ccd32094', 'Now'),
@@ -7455,12 +7457,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('caddb529', 'and'),
           a('ff31714c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          }),
-          a('e06c99b7', 'and'),
+          })
+        a('e06c99b7', 'and'),
           a('i4e2f96c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          })
-        a('ga629a8c', 'View people in conversation'),
+          }),
+          a('ga629a8c', 'View people in conversation'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
           a('f4393d0f', function (e) {
