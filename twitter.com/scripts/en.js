@@ -374,13 +374,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c6f2bf00', 'Manage accounts'),
           a('b8e1d524', 'Accounts'),
           a('gef27c4c', 'Account menu'),
+          a('daffabde', 'acting as...'),
+          a('eccbfa26', 'Delegate accounts'),
+          a('a1b7a904', 'Act as'),
           a('c61eea74', 'Personal accounts'),
           a('b7dc3885', function (e) {
             return 'Switch to @' + e.screenName
           }),
-          a('daffabde', 'acting as...'),
-          a('eccbfa26', 'Delegate accounts'),
-          a('a1b7a904', 'Act as'),
           a('g34f2c63', function (e) {
             return 'Tweet' + e.verb
           }),
@@ -1185,7 +1185,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a8569d48', 'Opens the new version of this Tweet'),
           a('a407814e', 'Last edited'),
           a('d91a6826', 'This is the latest version of this Tweet.'),
-          a('h51f85b8', 'Reply filter is on'),
+          a('ffe16626', 'Reply filter is on.'),
           a('b8f3500a', 'View thread in Reader'),
           a('b4947556', 'Translate Tweet'),
           a('he9c9634', 'Unable to fetch translation'),
@@ -1576,6 +1576,18 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d073b644', 'Hours'),
           a('a2f0728e', 'Minutes'),
           a('i3a8d60a', 'make your Tweets public'),
+          a('ed9f214f', function (e) {
+            return 'You’re Tweeting for @' + e.screenName + '.'
+          }),
+          a('ga8627cd', function (e) {
+            return 'You’re replying for @' + e.screenName + '.'
+          }),
+          a('e6d2573f', function (e) {
+            return 'You’re messaging for @' + e.screenName + '.'
+          }),
+          a('d37a3e15', function (e) {
+            return 'You’re creating this List for @' + e.screenName + '.'
+          }),
           a('bea869b4', 'Tweet'),
           a('f3a7a80c', 'Want to review this before Tweeting?'),
           a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
@@ -2340,21 +2352,21 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'f4d67928',
             'Looks like you’re not a part of the Birdwatch pilot program. Join now to help people stay better informed on Twitter.',
-          ),
-          a(
-            'a2fd6b54',
-            'To create a note, select the Birdwatch icon in any Tweet’s menu. Notes you create will show up here.',
-          ),
+          )
+        a(
+          'a2fd6b54',
+          'To create a note, select the Birdwatch icon in any Tweet’s menu. Notes you create will show up here.',
+        ),
           a('c87f3cf8', 'Note'),
           a('a5b19492', 'This note does not exist'),
           a(
             'c21d1b2a',
             'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
-          )
-        a(
-          'df4bead0',
-          'Birdwatch is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-        ),
+          ),
+          a(
+            'df4bead0',
+            'Birdwatch is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+          ),
           a('jdb52860', 'Contributors write and rate notes'),
           a(
             'b468ea24',
@@ -3636,12 +3648,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e91c15f6', 'Disconnect your managing account?'),
           a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
           a('bd12cf34', 'Yes, disconnect'),
-          a('f79acef3', 'Learn more'),
-          a('d88102c0', 'If selected, Twitter will use less network data.'),
+          a('f79acef3', 'Learn more')
+        a('d88102c0', 'If selected, Twitter will use less network data.'),
           a('a776eed8', 'Autoplay'),
           a('g1888dc2', 'Never'),
-          a('f724d1aa', 'Only on Wi-Fi')
-        a('cf6472c2', 'On cellular or Wi-Fi'),
+          a('f724d1aa', 'Only on Wi-Fi'),
+          a('cf6472c2', 'On cellular or Wi-Fi'),
           a('f56af9cc', 'Download an archive of your data'),
           a('b2ed92c4', 'Requesting archive'),
           a('ce5d2c46', 'Temporarily unavailable'),
@@ -4793,6 +4805,19 @@ window.__SCRIPTS_LOADED__.vendor &&
             'e2c39a4c',
             'Select which types of Tweets you want to undo before they’re public, plus how long your undo period is.',
           ),
+          a('bcf3a9e6', 'Manage settings that help limit unwelcome replies.'),
+          a('id6a8e1a', 'Reply filter'),
+          a('c048fd3a', 'Filter potentially unwelcome replies'),
+          a(
+            'eb935b6e',
+            'Replies to your Tweets that contain potentially harmful or offensive language will be filtered and appear here. Others can still see these replies.',
+          ),
+          a(
+            'c4c53b86',
+            'Keep in mind we use technology to help us identify such replies, so while we’re always improving, we may not get it right all the time.',
+          ),
+          a('dca3d2ee', 'Turn off reply filter?'),
+          a('d75ce93e', 'Filtered replies will not be restored to your Tweets.'),
           a('ff599112', 'Create a group'),
           a('c602600a', 'Add people'),
           a('a7013cb6', 'Send Tweet separately'),
@@ -4867,11 +4892,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b5b0afa4', 'Customize your view'),
           a('a8620342', 'These settings affect all the Twitter accounts on this browser.'),
           a('babfa32c', 'Quickly customize your view'),
-          a('a2a2f98e', 'See what’s new'),
-          a(
-            'b4a361c0',
-            'You can personalize your color and the size of your text, as well as control your dark mode selection, right now. These settings are only visible to you.',
-          ),
+          a('a2a2f98e', 'See what’s new')
+        a(
+          'b4a361c0',
+          'You can personalize your color and the size of your text, as well as control your dark mode selection, right now. These settings are only visible to you.',
+        ),
           a('ead349a8', 'The latest stories on Twitter - as told by Tweets.'),
           a('a19ce060', 'Explore is unavailable.'),
           a('a6d5b010', 'Timeline'),
@@ -4883,10 +4908,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j7fc4f9c', 'Auto-play GIFs'),
           a('a66b7760', 'Unlabeled GIF'),
           a('a723aefa', 'No GIFs found'),
-          a('a6ecfa0a', 'Try searching for something else instead.')
-        a('f5ff0d6f', function (e) {
-          return e.category + ' — GIF Search'
-        }),
+          a('a6ecfa0a', 'Try searching for something else instead.'),
+          a('f5ff0d6f', function (e) {
+            return e.category + ' — GIF Search'
+          }),
           a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
           a('aefd89c8', 'Navigation'),
           a('cafdefb2', 'Actions'),
@@ -5576,7 +5601,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a8d0108e', 'Gender'),
           a('abedd45c', 'Request your data'),
           a('b7fde2b8', 'Your Twitter data'),
-          a('id6a8e1a', 'Reply filter'),
           a('fc35f762', 'Filtered replies'),
           a('cf9b166a', 'Accessibility, display, and languages'),
           a('afcad7f2', 'Download the app'),
@@ -5678,18 +5702,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd9c51610',
             'Don’t allow Twitter to use cookies to gather additional data for tailored ads and communications.',
           ),
-          a('bcf3a9e6', 'Manage settings that help limit unwelcome replies.'),
-          a('c048fd3a', 'Filter potentially unwelcome replies'),
-          a(
-            'eb935b6e',
-            'Replies to your Tweets that contain potentially harmful or offensive language will be filtered and appear here. Others can still see these replies.',
-          ),
-          a(
-            'c4c53b86',
-            'Keep in mind we use technology to help us identify such replies, so while we’re always improving, we may not get it right all the time.',
-          ),
-          a('dca3d2ee', 'Turn off reply filter?'),
-          a('d75ce93e', 'Filtered replies will not be restored to your Tweets.'),
           a('g0ec0bec', 'Deactivated'),
           a('g89f4614', 'Your account is deactivated'),
           a('ce8450f2', 'Control how Twitter personalizes content and collects and shares certain data.'),
@@ -6073,11 +6085,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
           a('ge538876', 'Metrics for the video you shared'),
-          a('dcc05a7e', 'Views'),
-          a('ca7e10d8', 'Unique views'),
-          a('bd174250', 'Total number of times this video was viewed across all Tweets'),
-          a('a69cd868', 'Number of unique views for this video'),
-          a('f894a688', 'Audience retention')
+          a('dcc05a7e', 'Views')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6097,10 +6105,14 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a(
-          'ad9d9204',
-          'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
-        ),
+        a('ca7e10d8', 'Unique views'),
+          a('bd174250', 'Total number of times this video was viewed across all Tweets'),
+          a('a69cd868', 'Number of unique views for this video'),
+          a('f894a688', 'Audience retention'),
+          a(
+            'ad9d9204',
+            'Percentage of time viewers have watched a video they watch before they leave it, and how much of the video they’ve watched.',
+          ),
           a('da4b7a70', 'Percentage of viewers that have watched a video up to a given time'),
           a('e5b7dd84', 'Start'),
           a('de2d89a2', 'Watched 25%'),
@@ -6239,12 +6251,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eb44cb19', 'Twitter Terms and Advertising Guidelines'),
           a('fc0d6d0d', 'Twitter Coupon Terms'),
           a('ca5cd8c7', 'Twitter Terms and Advertising Guidelines'),
-          a('hba1d106', 'Customize your audience'),
-          a('cba0133e', 'Choose the best audience for this Tweet.'),
+          a('c672105a', 'Who do you want to reach?'),
           a('e1efbeae', 'Age range'),
           a('c6ff7c10', 'Age range minimum'),
           a('b555fb46', 'Age range maximum'),
           a('j2c03e12', '55+'),
+          a('df8d4fa0', 'Select a Gender'),
           a('cc642518', 'Search Locations'),
           a('i0e8c3c6', 'Location results'),
           a('f69ad048', 'Choose a location'),
@@ -7435,6 +7447,26 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
           a('b09adb0c', 'See conversation'),
+          a('f4393d0f', function (e) {
+            return 'Attributed to ' + e.name
+          }),
+          a('f8e8e32e', 'You'),
+          a('df6703d3', 'You'),
+          a('c20f7e9f', function (e) {
+            return n(
+              e.otherUsersCount,
+              s.createElement(s.Fragment, null, '', e.secondName),
+              e.otherUsersCount + ' others',
+            )
+          }),
+          a('he26f627', function (e) {
+            return n(
+              e.otherUsersCount,
+              s.createElement(s.Fragment, null, '', e.secondName),
+              e.otherUsersCount + ' others',
+            )
+          })
+        a('j2eea17a', 'The following media includes potentially sensitive content.'),
           a('e4f1e6e4', function (e) {
             return '' + e.formattedCount
           }),
@@ -7457,34 +7489,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('caddb529', 'and'),
           a('ff31714c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-          })
-        a('e06c99b7', 'and'),
+          }),
+          a('e06c99b7', 'and'),
           a('i4e2f96c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
           }),
           a('ga629a8c', 'View people in conversation'),
           a('a8b58cf4', 'Show this thread'),
           a('i5f742fe', 'Show this poll'),
-          a('f4393d0f', function (e) {
-            return 'Attributed to ' + e.name
-          }),
-          a('f8e8e32e', 'You'),
-          a('df6703d3', 'You'),
-          a('c20f7e9f', function (e) {
-            return n(
-              e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
-              e.otherUsersCount + ' others',
-            )
-          }),
-          a('he26f627', function (e) {
-            return n(
-              e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
-              e.otherUsersCount + ' others',
-            )
-          }),
-          a('j2eea17a', 'The following media includes potentially sensitive content.'),
           a('e078b15d', ' & '),
           a('h13ffc88', 'Voice'),
           a('f5d461f8', 'Voice Tweet'),
@@ -7507,7 +7519,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h39fbf33', function (e) {
             return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
           }),
-          a('ac6d902c', 'Data represented as progress bar'),
           a('gdd51574', 'Pull to refresh'),
           a('e557ad8e', 'Active'),
           a('e3a58c28', 'Expand'),
@@ -10218,6 +10229,24 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'dbf19261',
+                get: function () {
+                  return ['From ']
+                },
+              },
+              {
+                key: 'd7b2c271',
+                get: function () {
+                  return ['', ' and ']
+                },
+              },
+              {
+                key: 'b035fe73',
+                get: function () {
+                  return ['', ' and ']
+                },
+              },
+              {
                 key: 'g3ed1dd5',
                 get: function () {
                   return ['', ' ']
@@ -10263,24 +10292,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'g4eb2847',
                 get: function () {
                   return ['Replying to ', ' ', ' ']
-                },
-              },
-              {
-                key: 'dbf19261',
-                get: function () {
-                  return ['From ']
-                },
-              },
-              {
-                key: 'd7b2c271',
-                get: function () {
-                  return ['', ' and ']
-                },
-              },
-              {
-                key: 'b035fe73',
-                get: function () {
-                  return ['', ' and ']
                 },
               },
               {
