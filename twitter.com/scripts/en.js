@@ -448,9 +448,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j652293d', function (e) {
             return e.listOfParticipants + ' and ' + e.count + ' more'
           }),
-          a('cfd94063', function (e) {
-            return e.peopleCount + ' people'
-          }),
           a('b93ba92d', function (e) {
             return e.peopleCount + ' pe' + n(e.peopleCount, 'rson', 'ople')
           }),
@@ -1157,9 +1154,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a682906d', function (e) {
             return e.count + ' like' + n(e.count, '', 's') + ' to go'
           }),
-          a('c837fcaa', 'Show more replies')
-        a('d228a9a0', 'Show more'),
-          a('e4c6c30a', 'This Tweet is unavailable.'),
+          a('c837fcaa', 'Show more replies'),
+          a('d228a9a0', 'Show more')
+        a('e4c6c30a', 'This Tweet is unavailable.'),
           a('da59404c', 'You’re currently viewing the latest version.'),
           a('e267df68', 'Reply hidden'),
           a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
@@ -2363,9 +2360,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b7e4c114', 'Note status history data'),
           a('h786cd7a', 'Notes data isn’t available yet'),
           a('d0fe8052', 'Ratings data isn’t available yet'),
-          a('c0427f94', 'Note status history data isn’t available yet')
-        a('g0cacb75', 'Twitter Developer Agreement and Policy'),
-          a('e9f1fbcc', 'Nothing to see here — yet'),
+          a('c0427f94', 'Note status history data isn’t available yet'),
+          a('g0cacb75', 'Twitter Developer Agreement and Policy')
+        a('e9f1fbcc', 'Nothing to see here — yet'),
           a('ed88e742', 'Copy link to Topic'),
           a('e96677aa', 'Unfortunately, Birdwatch is not available to you at this time.'),
           a('f026d2ee', 'Birdwatch is currently only available in the U.S.'),
@@ -2420,6 +2417,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ad16f482', 'Event'),
           a('h0786686', 'Moment'),
           a('i0ed3f4e', 'Event image'),
+          a('cbae35fa', 'Report Broadcast'),
           a('f8cafdc2', 'Collection Tweets'),
           a('a226497c', 'Create a new Community'),
           a('d7346632', 'You haven’t joined any Communities yet'),
@@ -2522,6 +2520,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('gc00d212', 'Support and resources'),
           a('g0cbfc50', 'Useful guide for Community moderation'),
+          a('h6ebcfca', 'Show this Community on your profile'),
+          a('c0fa0634', 'Spotlight your Community'),
+          a('h41224f8', 'Spotlight your Community on your profile'),
+          a('ad0ac550', 'A professional account allows you to show your Community on your profile and more.'),
           a('c6ea29a2', 'Leave moderation team'),
           a('a6e13fac', 'Are you sure you want to leave the mod team?'),
           a(
@@ -3642,12 +3644,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d12d42dc', 'Automation'),
           a('ad31b476', 'Manage your automated account.'),
           a('a2981062', 'Managing account'),
-          a('aff4540e', 'Change managing account'),
-          a('b8b9d100', 'Set up account automation'),
+          a('aff4540e', 'Change managing account')
+        a('b8b9d100', 'Set up account automation'),
           a('e0bc51f6', 'Turn off account automation'),
           a('b92190c2', 'Managing account connected'),
-          a('fb03b39a', 'Managing account disconnected')
-        a('bd51ddfa', 'We are unable to disconnect your managing account at this time. Please try again later.'),
+          a('fb03b39a', 'Managing account disconnected'),
+          a('bd51ddfa', 'We are unable to disconnect your managing account at this time. Please try again later.'),
           a('e91c15f6', 'Disconnect your managing account?'),
           a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
           a('bd12cf34', 'Yes, disconnect'),
@@ -4888,16 +4890,16 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'You’ve put ' + e.name + ' on snooze for 8 hours'
           }),
           a('bd54fad2', 'Muted for 8 hours'),
-          a('cb5bf56e', '1 week'),
-          a('gb7a130b', function (e) {
-            return 'You’ve put ' + e.name + ' on snooze for 1 week'
-          }),
+          a('cb5bf56e', '1 week')
+        a('gb7a130b', function (e) {
+          return 'You’ve put ' + e.name + ' on snooze for 1 week'
+        }),
           a('f6fce0fe', 'Muted for 1 week'),
           a('i78153dd', function (e) {
             return 'You’ve put ' + e.name + ' on snooze forever'
           }),
-          a('ac85c6b2', 'An error occurred loading this image')
-        a('b5b0afa4', 'Customize your view'),
+          a('ac85c6b2', 'An error occurred loading this image'),
+          a('b5b0afa4', 'Customize your view'),
           a('a8620342', 'These settings affect all the Twitter accounts on this browser.'),
           a('babfa32c', 'Quickly customize your view'),
           a('a2a2f98e', 'See what’s new'),
@@ -6085,11 +6087,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               n(e.impressions, '', 's') +
               ' so far. Switch to a professional account to broaden your reach.'
             )
-          }),
-          a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
-          a('e9891f7c', 'Promote this Tweet'),
-          a('df2ed8c2', 'Boost this Tweet'),
-          a('jede3014', 'Your promotion is under review')
+          })
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6109,7 +6107,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
+        a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
+          a('e9891f7c', 'Promote this Tweet'),
+          a('df2ed8c2', 'Boost this Tweet'),
+          a('jede3014', 'Your promotion is under review'),
+          a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
           a('ge538876', 'Metrics for the video you shared'),
           a('dcc05a7e', 'Views'),
@@ -7451,14 +7453,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g219b922', 'This is the latest version of this Tweet.'),
           a('d0d51086', 'There’s a new version of this Tweet'),
           a('c6578930', 'There’s a new version of this Tweet.'),
-          a('b7ea93b2', 'Edit Twitter Circle'),
-          a('c33d3a84', 'What happens in the Circle stays in the Circle'),
+          a('b7ea93b2', 'Edit Twitter Circle')
+        a('c33d3a84', 'What happens in the Circle stays in the Circle'),
           a('b3004abd', 'Learn more'),
           a('b09adb0c', 'See conversation'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
-          })
-        a('f8e8e32e', 'You'),
+          }),
+          a('f8e8e32e', 'You'),
           a('df6703d3', 'You'),
           a('c20f7e9f', function (e) {
             return n(
