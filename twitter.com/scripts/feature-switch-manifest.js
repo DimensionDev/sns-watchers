@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '01e94897b727df9862271ad36ec4678e795a13d8',
+  feature_set_token: '406a75a46d8a1aa4f98d7d6152d6b053df3cc45f',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -327,7 +327,7 @@ var manifest = {
     dm_evolution_inbox_primary_enabled: { value: !1 },
     dm_evolution_inbox_secondary_enabled: { value: !1 },
     dm_evolution_inbox_tertiary_enabled: { value: !1 },
-    dm_evolution_message_creation_enabled: { value: !1 },
+    dm_evolution_message_creation_enabled: { value: !0 },
     dm_evolution_messaging_interactions_ct_enabled: { value: !1 },
     dm_evolution_reaction_write_enabled: { value: !0 },
     dm_evolution_responsive_web_early_bird_only_switch: { value: !1 },
@@ -933,7 +933,7 @@ var manifest = {
     subscriptions_long_video_rweb_new_copy_enabled: { value: !0 },
     subscriptions_long_video_upload: { value: !0 },
     subscriptions_management_enabled: { value: !0 },
-    subscriptions_marketing_page_refresh_enabled: { value: !1 },
+    subscriptions_marketing_page_refresh_enabled: { value: !0 },
     subscriptions_settings_item_enabled: { value: !0 },
     subscriptions_sign_up_enabled: { value: !1 },
     subscriptions_stripe_testing: { value: !1 },
@@ -1826,12 +1826,12 @@ var manifest = {
     current_stack_follow_experiment_ios_14713: {
       name: 'current_stack_follow_experiment_ios_14713',
       type: 'experiment',
-      enumeration_values: ['control', 'tweet_media'],
+      enumeration_values: [],
     },
     current_stack_follow_rweb_14712: {
       name: 'current_stack_follow_rweb_14712',
       type: 'experiment',
-      enumeration_values: ['control', 'follow_button'],
+      enumeration_values: [],
     },
     customer_journey_loggedin_incremental_holdback_2022h1_12420: {
       name: 'customer_journey_loggedin_incremental_holdback_2022h1_12420',
@@ -1996,7 +1996,7 @@ var manifest = {
     dm_evolution_message_creation_enabled: {
       name: 'dm_evolution_message_creation_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     dm_evolution_conversation_timeline_enabled: { name: 'dm_evolution_conversation_timeline_enabled', type: 'string' },
     dm_evolution_responsive_web_early_bird_only_switch: {
@@ -5250,7 +5250,7 @@ var manifest = {
     subscriptions_marketing_page_refresh_enabled: {
       name: 'subscriptions_marketing_page_refresh_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     subscriptions_marketing_page_edit_card_enabled: {
       name: 'subscriptions_marketing_page_edit_card_enabled',
