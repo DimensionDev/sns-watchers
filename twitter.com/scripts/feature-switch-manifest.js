@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '406a75a46d8a1aa4f98d7d6152d6b053df3cc45f',
+  feature_set_token: '3ca8755858a4877f8ca86a68f0a9b9fe1a6b718c',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -298,6 +298,7 @@ var manifest = {
     c9s_rule_management_enabled: { value: !0 },
     c9s_spotlight_consumption_enabled: { value: !1 },
     c9s_spotlight_creation_enabled: { value: !1 },
+    c9s_ssr_enabled: { value: !1 },
     c9s_tab_visibility: { value: 'members_only' },
     c9s_timelines_default_selection: { value: 'ranked' },
     c9s_timelines_ranking_enabled: { value: !1 },
@@ -329,9 +330,7 @@ var manifest = {
     dm_evolution_inbox_tertiary_enabled: { value: !1 },
     dm_evolution_message_creation_enabled: { value: !0 },
     dm_evolution_messaging_interactions_ct_enabled: { value: !1 },
-    dm_evolution_reaction_write_enabled: { value: !0 },
     dm_evolution_responsive_web_early_bird_only_switch: { value: !1 },
-    dm_evolution_typing_indicator_enabled: { value: !0 },
     dm_inbox_search_groups_bucket_size: { value: 5 },
     dm_inbox_search_max_recent_searches_stored: { value: 5 },
     dm_inbox_search_message_attachment_previews_enabled: { value: !0 },
@@ -629,6 +628,7 @@ var manifest = {
     responsive_web_list_tweet_integration_enabled: { value: !1 },
     responsive_web_live_commerce_enabled: { value: !1 },
     responsive_web_live_video_parity_periscope_auth_enabled: { value: !1 },
+    responsive_web_lo_gating_prominent_sta_button_paths: { value: 'switch-to-app-footer' },
     responsive_web_location_spotlight_display_map: { value: !0 },
     responsive_web_location_spotlight_v1_config: { value: !0 },
     responsive_web_location_spotlight_v1_display: { value: !0 },
@@ -672,7 +672,7 @@ var manifest = {
     responsive_web_ocf_reportflow_appeals_enabled: { value: !1 },
     responsive_web_ocf_reportflow_dms_enabled: { value: !1 },
     responsive_web_ocf_reportflow_lists_enabled: { value: !0 },
-    responsive_web_ocf_reportflow_profiles_enabled: { value: !1 },
+    responsive_web_ocf_reportflow_profiles_enabled: { value: !0 },
     responsive_web_ocf_reportflow_spaces_enabled: { value: !1 },
     responsive_web_ocf_reportflow_suspension_appeals_enabled: { value: !1 },
     responsive_web_ocf_reportflow_testers: { value: !1 },
@@ -948,7 +948,7 @@ var manifest = {
     super_follow_web_deactivate_enabled: { value: !0 },
     super_follow_web_debug_enabled: { value: !1 },
     super_follow_web_edit_perks_enabled: { value: !0 },
-    super_follow_web_monetization_dashboard_enabled: { value: !0 },
+    super_follow_web_monetization_dashboard_enabled: { value: !1 },
     super_follow_web_onboarding_enabled: { value: !0 },
     targeted_project_friday_enabled: { value: !1 },
     topic_landing_page_clearer_controls_enabled: { value: !0 },
@@ -1598,7 +1598,7 @@ var manifest = {
     },
     branded_like_preview_enabled: { name: 'branded_like_preview_enabled', type: 'boolean', defaultValue: !1 },
     branded_likes_10896: { name: 'branded_likes_10896', type: 'experiment', enumeration_values: [] },
-    c9s_ssr_enabled: { name: 'c9s_ssr_enabled', type: 'string' },
+    c9s_ssr_enabled: { name: 'c9s_ssr_enabled', type: 'boolean', defaultValue: !1 },
     c9s_communities_search_enabled: { name: 'c9s_communities_search_enabled', type: 'boolean', defaultValue: !0 },
     c9s_tweet_sharing_enabled: { name: 'c9s_tweet_sharing_enabled', type: 'string' },
     c9s_share_community_enabled: { name: 'c9s_share_community_enabled', type: 'string' },
@@ -1953,21 +1953,13 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
-    dm_evolution_typing_indicator_enabled: {
-      name: 'dm_evolution_typing_indicator_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
+    dm_evolution_typing_indicator_enabled: { name: 'dm_evolution_typing_indicator_enabled', type: 'string' },
     dm_evolution_add_participants_enabled: {
       name: 'dm_evolution_add_participants_enabled',
       type: 'boolean',
       defaultValue: !0,
     },
-    dm_evolution_reaction_write_enabled: {
-      name: 'dm_evolution_reaction_write_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
+    dm_evolution_reaction_write_enabled: { name: 'dm_evolution_reaction_write_enabled', type: 'string' },
     dm_evolution_group_conversation_management_ct_enabled: {
       name: 'dm_evolution_group_conversation_management_ct_enabled',
       type: 'string',
@@ -3025,6 +3017,10 @@ var manifest = {
       enumeration_values: ['control', 'treatment'],
     },
     professional_launchpad_m1_enabled: { name: 'professional_launchpad_m1_enabled', type: 'boolean', defaultValue: !1 },
+    professional_launchpad_mobile_promotable_timeline: {
+      name: 'professional_launchpad_mobile_promotable_timeline',
+      type: 'string',
+    },
     professional_launchpad_upload_address_book: {
       name: 'professional_launchpad_upload_address_book',
       type: 'boolean',
@@ -3940,6 +3936,11 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_lo_gating_prominent_sta_button_paths: {
+      name: 'responsive_web_lo_gating_prominent_sta_button_paths',
+      type: 'string',
+      defaultValue: 'switch-to-app-footer',
+    },
     responsive_web_location_spotlight_display_map: {
       name: 'responsive_web_location_spotlight_display_map',
       type: 'boolean',
@@ -4164,7 +4165,7 @@ var manifest = {
     responsive_web_ocf_reportflow_profiles_enabled: {
       name: 'responsive_web_ocf_reportflow_profiles_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_ocf_reportflow_lists_enabled: {
       name: 'responsive_web_ocf_reportflow_lists_enabled',
@@ -5293,7 +5294,7 @@ var manifest = {
     super_follow_web_monetization_dashboard_enabled: {
       name: 'super_follow_web_monetization_dashboard_enabled',
       type: 'boolean',
-      defaultValue: !0,
+      defaultValue: !1,
     },
     super_follow_web_edit_perks_enabled: {
       name: 'super_follow_web_edit_perks_enabled',
@@ -6207,11 +6208,6 @@ var manifest = {
     },
     zazu_report_flow_13359: {
       name: 'zazu_report_flow_13359',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
-    zazu_report_flow_profiles_14321: {
-      name: 'zazu_report_flow_profiles_14321',
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
