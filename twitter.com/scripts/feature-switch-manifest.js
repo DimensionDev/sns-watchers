@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '3ca8755858a4877f8ca86a68f0a9b9fe1a6b718c',
+  feature_set_token: '450a07c9c79ae76bb1d680b649497242af096ab8',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -288,15 +288,15 @@ var manifest = {
     c9s_members_list_search_enabled: { value: !0 },
     c9s_moderation_enabled: { value: !0 },
     c9s_nav_list_activity_details_enabled: { value: !1 },
-    c9s_notification_settings_enabled: { value: !1 },
-    c9s_notification_settings_pinned_tweet_enabled: { value: !1 },
+    c9s_notification_settings_enabled: { value: !0 },
+    c9s_notification_settings_pinned_tweet_enabled: { value: !0 },
     c9s_participation_enabled: { value: !0 },
     c9s_poll_creation_enabled: { value: !0 },
     c9s_remove_member_enabled: { value: !0 },
     c9s_remove_member_list_enabled: { value: !0 },
     c9s_report_community_enabled: { value: !1 },
     c9s_rule_management_enabled: { value: !0 },
-    c9s_spotlight_consumption_enabled: { value: !1 },
+    c9s_spotlight_consumption_enabled: { value: !0 },
     c9s_spotlight_creation_enabled: { value: !1 },
     c9s_ssr_enabled: { value: !1 },
     c9s_tab_visibility: { value: 'members_only' },
@@ -322,7 +322,6 @@ var manifest = {
     dm_conversation_labels_pinned_enabled: { value: !0 },
     dm_conversations_nsfw_media_filter_enabled: { value: !1 },
     dm_education_flags_prompt: { value: !1 },
-    dm_evolution_add_participants_enabled: { value: !0 },
     dm_evolution_conversation_read_enabled: { value: !1 },
     dm_evolution_enabled: { value: !0 },
     dm_evolution_inbox_primary_enabled: { value: !1 },
@@ -379,6 +378,7 @@ var manifest = {
     graphql_timeline_v2_user_media_timeline: { value: !0 },
     graphql_timeline_v2_user_profile_timeline: { value: !0 },
     graphql_timeline_v2_user_profile_with_replies_timeline: { value: !0 },
+    gryphon_hide_quick_promote: { value: !1 },
     gryphon_optout_in_settings: { value: !1 },
     guest_broadcasting_timeline_decorations_enabled: { value: !1 },
     hashflags_animation_like_button_enabled: { value: !0 },
@@ -432,8 +432,8 @@ var manifest = {
     papago_tweet_translation_from_korean_entity_unprotected_destinations: { value: ['id', 'es', 'th'] },
     papago_tweet_translation_to_korean: { value: !1 },
     papago_tweet_translation_to_korean_sources: { value: ['en', 'ja'] },
-    professional_launchpad_m1_enabled: { value: !1 },
-    professional_launchpad_upload_address_book: { value: !1 },
+    professional_launchpad_m1_enabled: { value: !0 },
+    professional_launchpad_upload_address_book: { value: !0 },
     profile_foundations_about_tab_enabled: { value: !1 },
     profile_foundations_about_tab_tooltip_enabled: { value: !1 },
     profile_foundations_header_fields_hidden: { value: !1 },
@@ -747,9 +747,9 @@ var manifest = {
     responsive_web_tweet_analytics_m2_enabled: { value: !1 },
     responsive_web_tweet_analytics_m3_enabled: { value: !1 },
     responsive_web_tweet_analytics_promoted_audience_demographics_enabled: { value: !1 },
-    responsive_web_tweet_analytics_video_metrics_v2_enabled: { value: !1 },
+    responsive_web_tweet_analytics_video_metrics_v2_enabled: { value: !0 },
     responsive_web_twitter_article_compose_enabled: { value: !1 },
-    responsive_web_twitter_article_cover_aspect_ratio_5_2: { value: !1 },
+    responsive_web_twitter_article_cover_aspect_ratio_5_2: { value: !0 },
     responsive_web_twitter_article_data_v2_enabled: { value: !1 },
     responsive_web_twitter_article_geo_gated: { value: !1 },
     responsive_web_twitter_article_max_times_show_tweet_banner: { value: 3 },
@@ -948,7 +948,6 @@ var manifest = {
     super_follow_web_deactivate_enabled: { value: !0 },
     super_follow_web_debug_enabled: { value: !1 },
     super_follow_web_edit_perks_enabled: { value: !0 },
-    super_follow_web_monetization_dashboard_enabled: { value: !1 },
     super_follow_web_onboarding_enabled: { value: !0 },
     targeted_project_friday_enabled: { value: !1 },
     topic_landing_page_clearer_controls_enabled: { value: !0 },
@@ -1613,7 +1612,7 @@ var manifest = {
       defaultValue: !1,
     },
     c9s_members_list_v2_enabled: { name: 'c9s_members_list_v2_enabled', type: 'string' },
-    c9s_spotlight_consumption_enabled: { name: 'c9s_spotlight_consumption_enabled', type: 'boolean', defaultValue: !1 },
+    c9s_spotlight_consumption_enabled: { name: 'c9s_spotlight_consumption_enabled', type: 'boolean', defaultValue: !0 },
     c9s_timelines_cache_enabled: { name: 'c9s_timelines_cache_enabled', type: 'string' },
     c9s_edit_community_description_enabled: { name: 'c9s_edit_community_description_enabled', type: 'string' },
     c9s_share_tweet_to_community_enabled: { name: 'c9s_share_tweet_to_community_enabled', type: 'string' },
@@ -1724,7 +1723,7 @@ var manifest = {
     c9s_notification_settings_pinned_tweet_enabled: {
       name: 'c9s_notification_settings_pinned_tweet_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     c9s_participation_enabled: { name: 'c9s_participation_enabled', type: 'boolean', defaultValue: !0 },
     c9s_community_tweet_search_enabled: { name: 'c9s_community_tweet_search_enabled', type: 'string' },
@@ -1739,7 +1738,7 @@ var manifest = {
       type: 'number',
       defaultValue: 160,
     },
-    c9s_notification_settings_enabled: { name: 'c9s_notification_settings_enabled', type: 'boolean', defaultValue: !1 },
+    c9s_notification_settings_enabled: { name: 'c9s_notification_settings_enabled', type: 'boolean', defaultValue: !0 },
     card_compose_preview_retry_timeout_ms: { name: 'card_compose_preview_retry_timeout_ms', type: 'string' },
     card_compose_preview_tombstone_if_not_displayed: {
       name: 'card_compose_preview_tombstone_if_not_displayed',
@@ -1758,6 +1757,11 @@ var manifest = {
       name: 'communities_hashtags_carousel_14924',
       type: 'experiment',
       enumeration_values: ['control', 'experiment'],
+    },
+    communities_on_profile_producer_15765: {
+      name: 'communities_on_profile_producer_15765',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
     },
     community_timeline_ranking_14308: {
       name: 'community_timeline_ranking_14308',
@@ -1954,11 +1958,7 @@ var manifest = {
       defaultValue: !1,
     },
     dm_evolution_typing_indicator_enabled: { name: 'dm_evolution_typing_indicator_enabled', type: 'string' },
-    dm_evolution_add_participants_enabled: {
-      name: 'dm_evolution_add_participants_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
+    dm_evolution_add_participants_enabled: { name: 'dm_evolution_add_participants_enabled', type: 'string' },
     dm_evolution_reaction_write_enabled: { name: 'dm_evolution_reaction_write_enabled', type: 'string' },
     dm_evolution_group_conversation_management_ct_enabled: {
       name: 'dm_evolution_group_conversation_management_ct_enabled',
@@ -2374,6 +2374,7 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
+    gryphon_hide_quick_promote: { name: 'gryphon_hide_quick_promote', type: 'boolean', defaultValue: !1 },
     gryphon_optout_in_settings: { name: 'gryphon_optout_in_settings', type: 'boolean', defaultValue: !1 },
     gryphon_optout_hidden_in_navbar: { name: 'gryphon_optout_hidden_in_navbar', type: 'string' },
     guest_broadcasting_call_in_enabled: { name: 'guest_broadcasting_call_in_enabled', type: 'string' },
@@ -3011,12 +3012,7 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
-    professional_home_m1_15184: {
-      name: 'professional_home_m1_15184',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
-    professional_launchpad_m1_enabled: { name: 'professional_launchpad_m1_enabled', type: 'boolean', defaultValue: !1 },
+    professional_launchpad_m1_enabled: { name: 'professional_launchpad_m1_enabled', type: 'boolean', defaultValue: !0 },
     professional_launchpad_mobile_promotable_timeline: {
       name: 'professional_launchpad_mobile_promotable_timeline',
       type: 'string',
@@ -3024,7 +3020,7 @@ var manifest = {
     professional_launchpad_upload_address_book: {
       name: 'professional_launchpad_upload_address_book',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     professional_viewer_holdback_13026: {
       name: 'professional_viewer_holdback_13026',
@@ -4142,6 +4138,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_notifications_overrides_max_notification_slots: {
+      name: 'responsive_web_notifications_overrides_max_notification_slots',
+      type: 'string',
+    },
     responsive_web_ntab_verified_mentions_vit_internal_dogfood: {
       name: 'responsive_web_ntab_verified_mentions_vit_internal_dogfood',
       type: 'boolean',
@@ -4556,7 +4556,7 @@ var manifest = {
     responsive_web_tweet_analytics_video_metrics_v2_enabled: {
       name: 'responsive_web_tweet_analytics_video_metrics_v2_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_twitter_article_geo_gated: {
       name: 'responsive_web_twitter_article_geo_gated',
@@ -4600,7 +4600,7 @@ var manifest = {
     responsive_web_twitter_article_cover_aspect_ratio_5_2: {
       name: 'responsive_web_twitter_article_cover_aspect_ratio_5_2',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_twitter_blue_home_redesign_enabled: {
       name: 'responsive_web_twitter_blue_home_redesign_enabled',
@@ -5293,8 +5293,7 @@ var manifest = {
     super_follow_user_api_enabled: { name: 'super_follow_user_api_enabled', type: 'boolean', defaultValue: !0 },
     super_follow_web_monetization_dashboard_enabled: {
       name: 'super_follow_web_monetization_dashboard_enabled',
-      type: 'boolean',
-      defaultValue: !1,
+      type: 'string',
     },
     super_follow_web_edit_perks_enabled: {
       name: 'super_follow_web_edit_perks_enabled',

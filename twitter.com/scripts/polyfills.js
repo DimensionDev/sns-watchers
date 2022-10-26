@@ -2,7 +2,7 @@ window.__SCRIPTS_LOADED__.runtime &&
   ((self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ['polyfills'],
     {
-      62524: (t, r, e) => {
+      38080: (t, r, e) => {
         e(22144),
           e(74083),
           (function () {
@@ -25,9 +25,9 @@ window.__SCRIPTS_LOADED__.runtime &&
           e(43105),
           e(96708),
           e(44112),
-          e(81320)
+          e(1771)
       },
-      81320: () => {},
+      1771: () => {},
       77111: (t, r, e) => {
         var n = e(26733),
           o = e(59821),
@@ -3331,7 +3331,7 @@ window.__SCRIPTS_LOADED__.runtime &&
     },
     (t) => {
       var r
-      ;(r = 62524), t((t.s = r))
+      ;(r = 38080), t((t.s = r))
     },
   ]),
   (window.__SCRIPTS_LOADED__.polyfills = !0))

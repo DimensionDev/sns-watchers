@@ -3,7 +3,7 @@
   ['i18n/en'],
   {
     17346: (e, t, o) => {
-      var a = o(84519)._register('en', {
+      var a = o(79404)._register('en', {
         get emoji() {
           return o.e('i18n/emoji-en').then(o.t.bind(o, 20747, 23))
         },
@@ -2743,9 +2743,9 @@
         a('b4a6faca', 'Review your rules'),
         a('a01e1a7c', 'Personalize your Community'),
         a('j538604e', 'Tweet your Community'),
+        a('f05dbef0', 'Loading Tweets'),
         a('c99ab746', 'There aren’t any Tweets in this Community yet'),
         a('b32c4fb0', 'Once there are, you’ll see them here.'),
-        a('f05dbef0', 'Loading Tweets'),
         a('c22e8902', 'Try it out'),
         a('a3466e1c', 'Track conversations with hashtags'),
         a('a524bb7e', 'Hashtags make it easy to create, find, and join themed conversations in the Community.'),
@@ -4384,20 +4384,17 @@
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
-        a('h93824cc', 'Monetization options'),
         a('a6777c1c', 'Super Follows'),
-        a('i724fb4a', 'Get help'),
-        a('c1b71878', 'Accepting subscribers'),
-        a('e939cc54', 'Application accepted · Build your subscription'),
-        a('ibb5e1c8', 'Application declined'),
-        a('b255df58', 'Application submitted · Waiting for review'),
-        a('b3f834c8', 'Application waitlisted'),
-        a('i14be2c6', 'Estimated earned revenue'),
         a('f8f60c7e', 'Paid subscription for your most engaged followers'),
         a('df29646e', 'Payout threshold'),
         a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
         a('f139168e', 'Earnings dashboard'),
         a('ee0510c2', 'Payout history'),
+        a('i14be2c6', 'Estimated earned revenue'),
+        a('e939cc54', 'Application accepted · Build your subscription'),
+        a('ibb5e1c8', 'Application declined'),
+        a('b255df58', 'Application submitted · Waiting for review'),
+        a('b3f834c8', 'Application waitlisted'),
         a('ff9ed474', 'Total earnings'),
         a('d59dbf8a', 'Overview'),
         a('c76972f0', 'Since last payout'),
@@ -4808,13 +4805,10 @@
         a('e3e58b6e', 'Conversation info'),
         a('a9ddbb94', 'Group info'),
         a('e62d3c10', 'There’s no account with that name. Please try again.'),
-        a('f17f716a', 'You can’t send this to a person who’s not following you.'),
-        a('e3fc3548', 'This has been reported as spam.'),
-        a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('h8403fb6', 'You can’t add them to this conversation right now.'),
         a('ja522ed4', 'You can’t add some of those people to this conversation right now.'),
-        a('d87bff5a', 'Your conversation info is loading.')
-      a('cabb453e', 'Group name'),
+        a('d87bff5a', 'Your conversation info is loading.'),
+        a('cabb453e', 'Group name'),
         a('eb1bb5a2', 'View all people'),
         a('a7f20223', function (e) {
           return 'Snooze notifications from ' + e.name
@@ -4825,8 +4819,8 @@
         a('i453fedf', function (e) {
           return 'Snoozed until ' + e.expiration
         }),
-        a('b3dfd51a', 'Snooze mentions'),
-        a('cc7c8ce6', 'Disable notifications when people mention you in this conversation.'),
+        a('b3dfd51a', 'Snooze mentions')
+      a('cc7c8ce6', 'Disable notifications when people mention you in this conversation.'),
         a('hab58674', 'Mentions disabled'),
         a('e3c6e080', 'Mentions enabled'),
         a('a30e1677', function (e) {
@@ -5029,6 +5023,7 @@
         a('j4824c52', 'Standard SMS fees may apply.'),
         a('fca32b20', 'Update your phone number'),
         a('c20aaf3e', 'Error'),
+        a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('ef70ab8c', 'Seize the Moment'),
         a('ba977302', 'Choose an existing Moment or create a new one.'),
         a('ef90c7ae', 'Create new'),
@@ -5411,8 +5406,10 @@
         a('hc4981d6', 'Profile Spotlights'),
         a('fbce8dbe', 'Find people to follow'),
         a('ae76c624', 'Make more connections'),
-        a('e0cb3344', 'Promote an existing tweet'),
-        a('i294caa6', 'Promotions'),
+        a('ae0383d4', 'Increase engagement and reach more people'),
+        a('a1dbe746', 'Boost engagement and reach more people'),
+        a('a900c284', 'Boost a Tweet'),
+        a('e52f3f56', 'Promote a Tweet'),
         a('f49a9076', 'Learn how to use Twitter'),
         a('a35d9c9a', 'Resources'),
         a('e93fcaea', 'Select a Tweet to promote'),
@@ -5982,7 +5979,10 @@
         a(
           'e044b630',
           'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        )
+        ),
+        a('d8abdaa4', 'New followers'),
+        a('de0de3a8', 'Follows gained directly from this Tweet'),
+        a('ccab7c76', 'Number of profile views from this Tweet')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6002,10 +6002,7 @@
           c(e, t)
         )
       }
-      a('d8abdaa4', 'New followers'),
-        a('de0de3a8', 'Follows gained directly from this Tweet'),
-        a('ccab7c76', 'Number of profile views from this Tweet'),
-        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
+      a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
         a('ee547382', 'Times people viewed the details about this Tweet'),
         a('g33fd6b1', function (e) {
@@ -6215,6 +6212,7 @@
         a('c6ff7c10', 'Age range minimum'),
         a('b555fb46', 'Age range maximum'),
         a('j2c03e12', '55+'),
+        a('b1f8ee00', 'Housing, Lending, and Employment Opportunities Ads policy'),
         a('df8d4fa0', 'Select a Gender'),
         a('cc642518', 'Search Locations'),
         a('i0e8c3c6', 'Location results'),
@@ -7379,10 +7377,10 @@
         }),
         a('f2849136', 'Analytics'),
         a('ee9a81b6', 'View Tweet analytics'),
-        a('d2b2b8e6', 'Downvote')
-      a('hcb32860', 'Undo downvote'),
-        a('cb5dafd4', 'Downvote, selected'),
-        a('d636ebc6', 'Like'),
+        a('d2b2b8e6', 'Downvote'),
+        a('hcb32860', 'Undo downvote'),
+        a('cb5dafd4', 'Downvote, selected')
+      a('d636ebc6', 'Like'),
         a('eb3a8b0c', 'Unlike'),
         a('a4ae22fa', 'Like this Tweet'),
         a('dac92b0d', function (e) {
@@ -9856,6 +9854,15 @@
               },
             },
             {
+              key: 'a063fb4b',
+              get: function () {
+                return [
+                  'Some targeting options aren’t available for this ads account, in accordance with Twitter’s ',
+                  '.',
+                ]
+              },
+            },
+            {
               key: 'c9927419',
               get: function () {
                 return ['This Tweet doesn’t have any hidden replies, but Protected Tweets might be filtered out. ']
@@ -10297,7 +10304,7 @@
           Object.defineProperty(a, 'prototype', { writable: !1 }),
           h
         )
-      })(o(84103)._ActualI18NFormatMessage || s.Component)
+      })(o(73228)._ActualI18NFormatMessage || s.Component)
       a('_ActualI18NFormatMessage', f),
         a('I18NFormatMessage', function (e) {
           return s.createElement(f, e)
