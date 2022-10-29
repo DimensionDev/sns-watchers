@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'f617768c3a45c62c6f000286bf7bec05ad918353',
+  feature_set_token: '19717c59791f72898fa831c4d7d8b2a23f5f726a',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -636,6 +636,7 @@ var manifest = {
     responsive_web_location_spotlight_v1_config: { value: !0 },
     responsive_web_location_spotlight_v1_display: { value: !0 },
     responsive_web_logged_out_explore_enabled: { value: !1 },
+    responsive_web_logged_out_explore_home_path_enabled: { value: !1 },
     responsive_web_logged_out_gating_13622_ddg: { value: '' },
     responsive_web_logged_out_gating_14788_ddg: { value: '' },
     responsive_web_logged_out_gating_14992_ddg: { value: '' },
@@ -2924,7 +2925,7 @@ var manifest = {
     mr_logged_out_web_notifs_15050: {
       name: 'mr_logged_out_web_notifs_15050',
       type: 'experiment',
-      enumeration_values: ['control', 'prompt_all', 'prompt_except_home'],
+      enumeration_values: ['control', 'prompt_except_home'],
     },
     mte_reply_navigation_fix_15362: {
       name: 'mte_reply_navigation_fix_15362',
@@ -3631,6 +3632,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    responsive_web_dtime_sparkle_menu_announcement_overlay_enabled: {
+      name: 'responsive_web_dtime_sparkle_menu_announcement_overlay_enabled',
+      type: 'string',
+    },
     responsive_web_dtime_timelines_preview_enabled: {
       name: 'responsive_web_dtime_timelines_preview_enabled',
       type: 'boolean',
@@ -3969,6 +3974,11 @@ var manifest = {
     },
     responsive_web_logged_out_explore_enabled: {
       name: 'responsive_web_logged_out_explore_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    responsive_web_logged_out_explore_home_path_enabled: {
+      name: 'responsive_web_logged_out_explore_home_path_enabled',
       type: 'boolean',
       defaultValue: !1,
     },
@@ -5212,7 +5222,9 @@ var manifest = {
       type: 'string',
     },
     subscriptions_undo_thread_tweets_enabled: { name: 'subscriptions_undo_thread_tweets_enabled', type: 'string' },
+    subscriptions_feature_labs_1006_b: { name: 'subscriptions_feature_labs_1006_b', type: 'string' },
     subscriptions_feature_1006: { name: 'subscriptions_feature_1006', type: 'boolean', defaultValue: !0 },
+    subscriptions_feature_labs_1006: { name: 'subscriptions_feature_labs_1006', type: 'string' },
     subscriptions_feature_1012: { name: 'subscriptions_feature_1012', type: 'string' },
     subscriptions_long_video_rweb_new_copy_enabled: {
       name: 'subscriptions_long_video_rweb_new_copy_enabled',
@@ -5249,6 +5261,7 @@ var manifest = {
     subscriptions_feature_1008: { name: 'subscriptions_feature_1008', type: 'string' },
     subscriptions_management_enabled: { name: 'subscriptions_management_enabled', type: 'boolean', defaultValue: !0 },
     subscriptions_enabled: { name: 'subscriptions_enabled', type: 'boolean', defaultValue: !0 },
+    subscriptions_feature_labs_1006_a: { name: 'subscriptions_feature_labs_1006_a', type: 'string' },
     subscriptions_stripe_testing: { name: 'subscriptions_stripe_testing', type: 'boolean', defaultValue: !1 },
     subscriptions_sign_up_enabled: { name: 'subscriptions_sign_up_enabled', type: 'boolean', defaultValue: !1 },
     subscriptions_feature_1003: { name: 'subscriptions_feature_1003', type: 'boolean', defaultValue: !0 },
