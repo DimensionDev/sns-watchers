@@ -4408,8 +4408,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b16486e8', 'A better reading experience on and off Twitter.'),
           a('b62d6e4c', 'Reader'),
           a(
-            'f1401e62',
-            'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting "View thread in Reader" from within any Tweet in a thread.',
+            'g88d2040',
+            'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting the book button from within any Tweet in a thread.',
           ),
           a('i65802d0', 'Ad-free Articles'),
           a(
@@ -4551,7 +4551,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('b600eb88', 'Find your people and get recognized'),
           a('cbc8ce28', 'Get bonus content when you subscribe'),
-          a('g5ec35ae', 'Get bonus content when you Subscribe'),
+          a('da48ebf6', 'Get bonus content when you sign up'),
           a('a953a0a6', 'Only Super Followers can see this Tweet'),
           a('bf76e2a7', 'Only Subscribers can see this Tweet'),
           a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
@@ -5351,10 +5351,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h994ec40', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
           a('c06d4306', 'When someone mentions you, you’ll find it here.'),
           a(
-            'f755c4d8',
-            'Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here.',
-          ),
-          a(
             'bfdb3c12',
             'Likes, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
           ),
@@ -5363,6 +5359,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Reactions, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
           ),
           a('ib4510fe', 'See new Notifications'),
+          a('b0648adb', 'Learn more'),
           a('eba8b1c8', 'Control which conversations you’re mentioned in'),
           a(
             'ac1daf50',
@@ -6784,10 +6781,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
-          a(
-            'ab2f5f70',
-            'This account is notable in government, news, entertainment, or another designated category, or is subscribed to Twitter Blue.',
-          ),
+          a('d8ed0aae', 'This account is verified because it’s subscribed to Twitter Blue.'),
           a('g776ca50', 'Verified account'),
           a(
             'b74bd6c6',
@@ -9924,6 +9918,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                   return [
                     'Looking for other ways to reach your audience? Ready to get paid for your work? It’s time to try out ',
                     ' - Twitter’s newsletter tool for writers and publishers',
+                  ]
+                },
+              },
+              {
+                key: 'a1300021',
+                get: function () {
+                  return [
+                    'Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here. ',
                   ]
                 },
               },
