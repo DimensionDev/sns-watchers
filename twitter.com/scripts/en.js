@@ -2764,6 +2764,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a0e3ece4', 'Community Detail'),
           a('hb9400dc', 'See More'),
           a('h656d9a0', 'Super Follows Community'),
+          a('b71a08a0', 'Subscriber Community'),
           a('d0574662', 'Set notifications'),
           a('fc16f13a', 'Which notifications do you want?'),
           a('be341c46', 'Community Spaces (audio chats)'),
@@ -3654,12 +3655,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
           a('cab61d58', 'Select additional languages'),
           a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
-          a('bca1de4a', 'Additional languages you speak'),
-          a('c3aa76c4', 'Languages you may know')
-        a(
-          'b2a77838',
-          'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
-        ),
+          a('bca1de4a', 'Additional languages you speak')
+        a('c3aa76c4', 'Languages you may know'),
+          a(
+            'b2a77838',
+            'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
+          ),
           a('j1a2af34', 'App and Tweet languages'),
           a('d4372cf4', 'English (US), 中文(简体), Español'),
           a(
@@ -4440,13 +4441,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
           a('a6777c1c', 'Super Follows'),
           a('d7b51c68', 'Subscriptions'),
-          a('f8f60c7e', 'Paid subscription for your most engaged followers'),
+          a('ef606fca', 'Paid subscriptions for your most engaged followers'),
+          a('i8132774', 'Bonus content for your most engaged followers'),
           a('df29646e', 'Payout threshold'),
           a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
           a('f139168e', 'Earnings dashboard'),
           a('ee0510c2', 'Payout history'),
           a('i14be2c6', 'Estimated earned revenue'),
           a('e939cc54', 'Application accepted · Build your subscription'),
+          a('c9b82b4c', 'Application accepted · Build your Subscription'),
           a('ibb5e1c8', 'Application declined'),
           a('b255df58', 'Application submitted · Waiting for review'),
           a('b3f834c8', 'Application waitlisted'),
@@ -4463,7 +4466,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ja73ebac', 'Revenue'),
           a('h16eeb42', 'Manage'),
           a('ed9404c8', 'New subscriptions'),
+          a('d978f43e', 'New Subscriptions'),
           a('g0a17d4c', 'You have no new subscriptions at this time.'),
+          a('d113fc10', 'You have no new Subscriptions at this time.'),
           a('h7a41c02', 'Renewals'),
           a('eedf2eaa', 'You have no renewals at this time.'),
           a('d93308d8', 'See all transactions'),
@@ -4472,12 +4477,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c0348964', 'Introduction'),
           a('ic624ab2', 'Subscriber perks'),
           a('ifc9b70a', 'Super Follower badge'),
+          a('b0b7e6a2', 'Subscriber badge'),
           a(
             'b08bbeb4',
             'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
           ),
+          a('ed7e07b6', 'You’ll get a public Subscriber badge that makes it easier to get noticed, chat, and connect.'),
           a('ia9c37c4', 'Pricing'),
           a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
+          a('a4c6e458', 'You’ve set your monthly Subscription fee at:'),
           a('be54a313', function (e) {
             return e.price + '/mo'
           }),
@@ -4488,14 +4496,23 @@ window.__SCRIPTS_LOADED__.vendor &&
             'i1fd31c6',
             'Share ideas, get inspiration, and connect with other creators in the Super Follows Community.',
           ),
+          a(
+            'e4ee8c6a',
+            'Share ideas, get inspiration, and connect with other creators in the Subscriptions Creators Feedback Community.',
+          ),
           a('b28a1b48', 'Get content tips and ideas'),
           a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
           a('f3ce76c0', 'Need more help?'),
           a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
           a('dba12b52', 'Deactivate Super Follows'),
+          a('i3a90dee', 'Deactivate Subscriptions'),
           a(
             'ffaae232',
             'By deactivating, you’ll be removed from the Super Follows program and lose all of your Super Followers.',
+          ),
+          a(
+            'e261e6e6',
+            'By deactivating, you’ll be removed from the Subscriptions program and lose all of your Subscribers.',
           ),
           a('ca5ca5ee', 'See preview'),
           a('g867481e', 'View creator guide'),
@@ -4522,17 +4539,25 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a649778c', 'Continue editing'),
           a('hf6f2914', 'Preview'),
           a('b90f3f82', 'About Super Follows creators'),
+          a('d1a683b8', 'About Subscriptions creators'),
           a('iba08a94', 'How does everything look?'),
           a(
             'ef354e84',
             'This is what prospective subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
           ),
+          a(
+            'a5f55bfa',
+            'This is what prospective Subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
+          ),
           a('b600eb88', 'Find your people and get recognized'),
           a('cbc8ce28', 'Get bonus content when you subscribe'),
+          a('g5ec35ae', 'Get bonus content when you Subscribe'),
           a('a953a0a6', 'Only Super Followers can see this Tweet'),
+          a('bf76e2a7', 'Only Subscribers can see this Tweet'),
           a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
           a('a4ed9072', 'Add an introduction...'),
           a('cd5cae16', 'Super Follows perks'),
+          a('af5b098e', 'Subscriptions perks'),
           a('gf32cca2', 'Describe the perks you’ll offer'),
           a(
             'j8ba99b4',
@@ -4540,6 +4565,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('j325331a', 'Take a minute to say hello'),
           a('h1e80994', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
+          a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
           a('h810143c', 'Details'),
           a('ga57b610', 'Purchase date'),
           a('h3b68828', 'Purchase type'),
@@ -4549,6 +4575,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g263221c', 'Stripe'),
           a('bf364d62', 'All transactions'),
           a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
+          a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
           a('g1b8020c', 'Last 30 days'),
           a('b5f9ec14', 'You have no renewals in the last 30 days.'),
           a('f2351b98', 'Flagged accounts'),
@@ -4605,6 +4632,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'eb5a4792',
             'Having a complete bio and location helps build trust in your profile and get more subscribers.',
           ),
+          a(
+            'c8e8b4b4',
+            'Having a complete bio and location helps build trust in your profile and get more Subscribers.',
+          ),
           a('i79ba1e8', 'Update profile'),
           a('i623bc7a', 'Secure your account with two-factor authentication'),
           a(
@@ -4617,12 +4648,19 @@ window.__SCRIPTS_LOADED__.vendor &&
             'ad4a61ae',
             'You must be at least 18 years old to apply for Super Follows. Confirm you’re 18 or older to continue.',
           ),
+          a(
+            'd8e12a44',
+            'You must be at least 18 years old to apply for Subscriptions. Confirm you’re 18 or older to continue.',
+          ),
           a('i84c5de8', 'Creator applications coming soon'),
           a('d9c11740', 'Check back soon to be able to apply to join the Super Follows program.'),
+          a('b8922f7e', 'Check back soon to be able to apply to join the Subscriptions program.'),
           a('feb54b40', 'Be one of the first to apply'),
           a('c9d65788', 'Good news — you meet our eligibility requirements for Super Follows. Ready to apply?'),
+          a('f6443bd2', 'Good news — you meet our eligibility requirements for Subscriptions. Ready to apply?'),
           a('a3a20a10', 'Check back later'),
           a('g4198668', 'Unfortunately, you don’t meet our eligibility requirements for Super Follows at this time.'),
+          a('b8d29e4a', 'Unfortunately, you don’t meet our eligibility requirements for Subscriptions at this time.'),
           a('d92c1d0a', 'Continue to application'),
           a('fdd95737', function (e) {
             return e.minFollowersCount + ' followers'
@@ -4631,6 +4669,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e.minTweetsCount + ' Tweets in the past 30 days'
           }),
           a('c27f57ac', 'Be at least 18 years old'),
+          a('fde27650', 'Subscriptions Terms'),
           a('acad7c8f', 'Super Follows Terms'),
           a('j5dc36d8', 'Paid subscriptions for your most engaged followers.'),
           a(
@@ -4639,10 +4678,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('c767c93c', 'Your Tweet game is strong. We think that’s worth something.'),
           a('e6abad0e', 'How much money can you make with Super Follows?'),
+          a('a72aba02', 'How much money can you make with Subscriptions?'),
           a('g8cdf708', 'Are you in?'),
           a(
             'bff8472e',
             'We’re looking for a small group of people to try Super Follows. Check your eligibility to get started.',
+          ),
+          a(
+            'c8acf760',
+            'We’re looking for a small group of people to try Subscriptions. Check your eligibility to get started.',
           ),
           a('e533715e', 'Check eligibility'),
           a('ad6579be', 'Conversion rate'),
@@ -4653,6 +4697,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return '' + e.earnings
           }),
           a('d64c12b7', '*'),
+          a('i8acf161', '*'),
           a('e263c38f', '*'),
           a('d31c5998', 'Badges'),
           a(
@@ -4663,6 +4708,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
           a('acfa84f2', 'More features coming soon'),
           a('e1ec5f40', 'Stay tuned for more ways to create and share content with your subscribers.'),
+          a(
+            'f2917e9a',
+            'Give your Subscribers special recognition with labels that make it easier to chat and connect.',
+          ),
+          a('e28f2116', 'Stay tuned for more ways to create and share content with your Subscribers.'),
           a('aa7e35ee', 'Your account was not selected'),
           a('c984cc62', 'Your account wasn’t selected this time. Stay tuned for future opportunities to participate.'),
           a('f7997b16', 'Content categories'),
@@ -4705,6 +4755,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c2680406', 'Snapchat'),
           a('d8552c1a', 'Twitch'),
           a('e873f0ae', 'Apply for Super Follows'),
+          a('gd115e64', 'Apply for Subscriptions'),
           a(
             'f095a24a',
             'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
@@ -4715,7 +4766,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e963d588', 'Select platforms'),
           a('ede0ac3e', 'Planned usage'),
           a('ffb6cb88', 'How do you plan to use Super Follows?'),
+          a('ab21629a', 'How do you plan to use Subscriptions?'),
           a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
+          a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
           a('gfc80842', 'Submit application'),
           a('f4f4dd60', 'Required'),
           a('f448cbcc', 'Optional'),
@@ -4726,6 +4779,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd7f65128',
             'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
           ),
+          a(
+            'j006be54',
+            'Our Subscriptions test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
+          ),
           a('b422cb62', 'Get started with Super Follows'),
           a('d5cb1114', 'Get started with Subscriptions'),
           a(
@@ -4733,8 +4790,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'You’ve been selected for our test group! Set up your subscription details now and we’ll let you know when Super Follows is live.',
           ),
           a(
-            'f9830f24',
-            'You’ve been selected for our test group! Set up your subscription details now and we’ll let you know when Subscriptions is live.',
+            'j2f622ec',
+            'You’ve been selected for our test group! Set up your Subscription details now and we’ll let you know when it’s live.',
           ),
           a('e2cd7000', 'Almost there...'),
           a('a9006878', 'Just a few more steps to finish setting up your Super Follows subscription.'),
@@ -4743,14 +4800,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d8637c96', 'Describe your Super Follows perks'),
           a('c5625f84', 'Describe your Subscription perks'),
           a('b92892dc', 'Set a subscription price'),
+          a('c7289544', 'Set a Subscription price'),
           a('aaf68c58', 'Confirm your payout details'),
+          a('b8a69fa0', 'Subscriptions Terms'),
           a('c663b33d', 'Super Follows Terms'),
-          a('af5b098e', 'Subscriptions perks'),
           a('ad4a92a2', 'Badge'),
           a('cda6bb6e', 'Give your Super Followers badges'),
           a(
             'a15b98ec',
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
+          ),
+          a('d5aa8de0', 'Give your Subscribers badges'),
+          a(
+            'j0bbda92',
+            'Nothing to change or edit here. All of your Subscribers will automatically get a public badge when they Subscribe.',
           ),
           a('e18b7a72', 'Review'),
           a('be76dc34', 'Add description'),
@@ -4762,6 +4825,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'hc97e770',
             'Double-check and confirm your subscription price. You won’t be able to come back and change the price after you set it.',
+          ),
+          a(
+            'g2a6f160',
+            'Double-check and confirm your Subscription price. You won’t be able to come back and change the price after you set it.',
           ),
           a('ic9124b0', 'Choose what your Super Followers pay'),
           a('df057690', 'Choose what your Subscribers pay'),
@@ -4809,6 +4876,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
           ),
           a(
+            'b737ee66',
+            'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.',
+          ),
+          a(
             'a0bb2076',
             'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
           ),
@@ -4843,8 +4914,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
           ),
           a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
-          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
-          a('cac1046e', '1080p video uploads'),
+          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.')
+        a('cac1046e', '1080p video uploads'),
           a('je84dece', 'Feature Settings'),
           a('a21b8ad2', 'Ad-free Sites'),
           a(
@@ -4857,6 +4928,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d248d75e', 'Get Support'),
           a('fbefd86c', 'New!'),
           a('a1f3dbf2', 'Early access to edit your Tweets. Now you can fix those typos.'),
+          a('jbd2a6de', 'Blue looks good on you. Enjoy your verified account and blue checkmark.'),
           a('d551ca66', 'See your member benefits and manage your settings'),
           a('eca82e08', 'A better news reading experience'),
           a(
@@ -4898,8 +4970,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             return '@' + e.screenName + ' can’t be messaged'
           }),
           a('f7289cd6', 'You have a group conversation selected'),
-          a('e6cced4e', 'Only 1 on 1 conversations can be "sent to group". You can still send your message separately.')
-        a('e3e58b6e', 'Conversation info'),
+          a(
+            'e6cced4e',
+            'Only 1 on 1 conversations can be "sent to group". You can still send your message separately.',
+          ),
+          a('e3e58b6e', 'Conversation info'),
           a('a9ddbb94', 'Group info'),
           a('e62d3c10', 'There’s no account with that name. Please try again.'),
           a('h8403fb6', 'You can’t add them to this conversation right now.'),
@@ -4962,6 +5037,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('ead349a8', 'The latest stories on Twitter - as told by Tweets.'),
           a('a19ce060', 'Explore is unavailable.'),
+          a('g49741e8', 'Download'),
+          a('f7d1a8e0', 'Android App'),
+          a('aab2fae0', 'iOS App'),
+          a('eedfd35c', 'Company'),
+          a('cedbb01c', 'Legal'),
+          a('a35d9c9a', 'Resources'),
           a('a6d5b010', 'Timeline'),
           a('a50ba822', 'Search for GIFs'),
           a('c6f5ac52', 'Categories — GIF Search'),
@@ -5270,6 +5351,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h994ec40', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
           a('c06d4306', 'When someone mentions you, you’ll find it here.'),
           a(
+            'f755c4d8',
+            'Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here.',
+          ),
+          a(
             'bfdb3c12',
             'Likes, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
           ),
@@ -5472,10 +5557,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f7ff19ec', 'Add country code'),
           a('bb7f177a', 'Invalid Phone Number'),
           a('b91d1394', 'Add App'),
-          a('aab2fae0', 'iOS App'),
           a('d3cd1160', 'Add iOS App'),
           a('f2124008', 'App Store URL'),
-          a('f7d1a8e0', 'Android App'),
           a('dc0d9d6a', 'Add Android App'),
           a('dd1605f0', 'Play Store URL'),
           a('g4098f78', 'Where can I find this?'),
@@ -5509,7 +5592,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a900c284', 'Boost a Tweet'),
           a('e52f3f56', 'Promote a Tweet'),
           a('f49a9076', 'Learn how to use Twitter'),
-          a('a35d9c9a', 'Resources'),
           a('e93fcaea', 'Select a Tweet to promote'),
           a('af9c8a3e', 'Open app'),
           a('c299a6c0', 'Thread'),
@@ -5577,9 +5659,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'j3f49ff6',
             'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
           ),
-          a('g49741e8', 'Download'),
-          a('eedfd35c', 'Company'),
-          a('cedbb01c', 'Legal'),
           a('g0ff1ca8', 'Join the conversation on Twitter'),
           a('g3aa4a8a', 'Log in to see what’s happening'),
           a('jae84f3a', 'Currently Trending in your location'),
@@ -5959,8 +6038,27 @@ window.__SCRIPTS_LOADED__.vendor &&
             'ee5cb3e0',
             'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.',
           ),
-          a('i29ecb48', 'No Tweet Likes yet'),
-          a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
+          a('i29ecb48', 'No Tweet Likes yet')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function c(e, t) {
+          return (
+            (c = Object.setPrototypeOf
+              ? Object.setPrototypeOf.bind()
+              : function (e, t) {
+                  return (e.__proto__ = t), e
+                }),
+            c(e, t)
+          )
+        }
+        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
           a('b13974f0', 'Loading users who liked this Tweet'),
           a('hfb8fd58', 'Loading users who retweeted this Tweet'),
           a('d25289b4', 'Retweeted by'),
@@ -6084,27 +6182,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ie816cb4', 'Watch this video and so much more on Twitter.'),
           a('e3521fcd', function (e) {
             return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-          })
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function s(e, t) {
-          return (
-            (s = Object.setPrototypeOf
-              ? Object.setPrototypeOf.bind()
-              : function (e, t) {
-                  return (e.__proto__ = t), e
-                }),
-            s(e, t)
-          )
-        }
-        a('g9079b94', 'You may only view analytics about your own Tweets.'),
+          }),
+          a('g9079b94', 'You may only view analytics about your own Tweets.'),
           a('a57daeb2', 'Tweet Analytics'),
           a('i976aff4', 'Update daily budget info to match your billing currency.'),
           a('b069d89c', 'Audience'),
@@ -6687,6 +6766,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('gd7acb84', 'Set up profile'),
           a('b7636014', 'Message'),
           a('i662c536', 'Super Follow'),
+          a('b63c46ed', function (e) {
+            return 'Subscribe to @' + e.screenName
+          }),
           a('i58d4653', function (e) {
             return 'Unsubscribe from @' + e.screenName
           }),
@@ -6702,6 +6784,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
+          a(
+            'ab2f5f70',
+            'This account is notable in government, news, entertainment, or another designated category, or is subscribed to Twitter Blue.',
+          ),
+          a('g776ca50', 'Verified account'),
           a(
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
@@ -6864,7 +6951,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c6000492', 'Owner'),
           a('eadbd438', 'Properties'),
           a('ge046208', 'Manage subscription'),
-          a('b0b7e6a2', 'Subscriber badge'),
           a('j3c44935', function (e) {
             return 'Allow anyone to see your Super Follower badge when you reply to @' + e.screenName + '’s Tweets'
           }),
@@ -6894,13 +6980,21 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }),
           a('f5b352ec', 'Cancel subscription'),
+          a('c8a513f6', 'Cancel Subscription'),
           a('b942f94c', 'Already canceled your subscription?'),
+          a('ea000ec8', 'Already canceled your Subscription?'),
           a(
             'e9069f26',
             'If you’ve already canceled, there’s nothing more to do. Your subscription will automatically expire at the end of the billing cycle.',
           ),
+          a(
+            'd7b8387e',
+            'If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle.',
+          ),
           a('f04110c0', 'Want to cancel your subscription?'),
+          a('f4166d9a', 'Want to cancel your Subscription?'),
           a('cb9cfdf8', 'If you cancel, your subscription will automatically expire at the end of the billing cycle.'),
+          a('b74ff5fc', 'If you cancel, your Subscription will automatically expire at the end of the billing cycle.'),
           a('ee9efbc8', 'Continue to cancellation'),
           a(
             'c5d9c77a',
@@ -6908,6 +7002,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('ha6a73ee', 'You can cancel your subscription through the Apple App Store.'),
           a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
+          a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
+          a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
           a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446ce', 'This browser is no longer supported.'),
           a(
@@ -7039,6 +7135,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f49e0aac', 'Provides details about verified accounts.'),
           a('d7e50a66', 'Learn more'),
           a('b0063ac6', 'Learn more about Super Follows'),
+          a('fc065ee4', 'Learn more about Subscriptions'),
           a('ca80fe70', 'What’s a Super Follow?'),
           a(
             'c4183c30',
@@ -7046,9 +7143,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('g7099a02', 'Tell me more'),
           a('c2637ef6', 'Got it'),
+          a('e453f536', 'What’s Subscriptions'),
+          a(
+            'dea63fc4',
+            'When you Subscribe to your favorite Twitter creators, you get bonus content — and they earn a little money.',
+          ),
           a('efb17190', 'Follows you'),
           a('a7c3a6e0', 'Super Follows you'),
           a('a3df6df8', 'Super Follower'),
+          a('g57b5f6c', 'Your Subscriber'),
+          a('e589ffa8', 'Subscriber'),
           a('bd08d1b2', 'Details not available'),
           a('c6000450', 'Reminder set'),
           a('db44ff5c', 'Set reminder'),
@@ -7400,8 +7504,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f1db106c', 'July'),
           a('i4e80b7a', 'August'),
           a('efa6cc1e', 'September'),
-          a('f40a0cbe', 'October'),
-          a('ac74a31c', 'November'),
+          a('f40a0cbe', 'October')
+        a('ac74a31c', 'November'),
           a('i6c1e4b2', 'December'),
           a('de540c32', 'Reveal password'),
           a('b4abfdb4', 'Hide password'),
@@ -7412,9 +7516,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f7432494', 'Add photo'),
           a('c3befdbe', 'Following'),
           a('d3029dbc', 'Unfollow'),
-          a('i5da7710', 'Super Follow'),
-          a('fb8c0efc', 'Super Following'),
-          a('a7667262', 'Manage subscription'),
+          a('a77a27c0', 'Subscribed'),
+          a('i00ab5ba', 'Manage Subscription'),
           a('jd505700', 'Autoblocked'),
           a('e024ee92', 'Remove autoblock'),
           a('hfc90ee9', function (e) {
@@ -7445,11 +7548,17 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cda66545', function (e) {
             return 'Click to ' + e.followType + ' ' + e.screenName
           }),
+          a('ee05e96b', function (e) {
+            return 'Click to ' + e.followType + ' to ' + e.screenName
+          }),
           a('a8d77a25', function (e) {
             return 'Click to leave ' + e.screenName
           }),
           a('d0f4f3d9', function (e) {
             return e.followType + ' ' + e.screenName
+          }),
+          a('f238ba1d', function (e) {
+            return e.followType + ' to ' + e.screenName
           }),
           a('j6161cab', function (e) {
             return 'Unfollow @' + e.screenName + '?'
@@ -7491,8 +7600,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('df031fca', 'Aspect ratio: wide'),
           a('b40332c6', 'Aspect ratio: square'),
           a('e547b368', 'Original'),
-          a('f7571204', 'Wide')
-        a('e6e16812', 'Square'),
+          a('f7571204', 'Wide'),
+          a('e6e16812', 'Square'),
           a('hdd29d51', function (e) {
             return '' + e.sponsorshipOrganization
           }),
@@ -7599,14 +7708,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c20f7e9f', function (e) {
             return n(
               e.otherUsersCount,
-              c.createElement(c.Fragment, null, '', e.secondName),
+              s.createElement(s.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
           a('he26f627', function (e) {
             return n(
               e.otherUsersCount,
-              c.createElement(c.Fragment, null, '', e.secondName),
+              s.createElement(s.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
@@ -7707,7 +7816,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
           a('cfd13f46', 'Voice Dock')
-        var c = o(2784),
+        var s = o(2784),
           u = [],
           d = {}
         function l(e) {
@@ -7722,9 +7831,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             (o = e),
             ((t = h).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            s(t, o),
+            c(t, o),
             (h.prototype.render = function () {
-              return c.createElement.apply(c, this[this.props.$i18n].reduce(this.templateReducer, [c.Fragment, null]))
+              return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
             }),
             (a = h),
             (r = [
@@ -9646,6 +9755,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'b6bf7ca7',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
+                key: 'g7970bc7',
+                get: function () {
+                  return ['Subscribe to', '' + this.props.name]
+                },
+              },
+              {
                 key: 'f402ebd1',
                 get: function () {
                   return ['Super Follow', '' + this.props.name]
@@ -9670,6 +9791,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'a9c053c7',
+                get: function () {
+                  return ['By applying, you agree to be bound by the ']
+                },
+              },
+              {
                 key: 'acb31cd3',
                 get: function () {
                   return ['By applying, you agree to be bound by the ']
@@ -9688,9 +9815,21 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
+                key: 'f5c51127',
+                get: function () {
+                  return ['', 'Assuming a ' + this.props.price + '/month Subscriptions offering']
+                },
+              },
+              {
                 key: 'caf67b9b',
                 get: function () {
                   return ['', 'Assuming a ' + this.props.price + '/month Super Follows offering']
+                },
+              },
+              {
+                key: 'fdf28443',
+                get: function () {
+                  return ['By selecting to accept and continue, you agree to be bound by the ']
                 },
               },
               {
@@ -10502,7 +10641,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'templateReducer',
                 get: function () {
                   var e,
-                    t = c.Children.toArray(this.props.children),
+                    t = s.Children.toArray(this.props.children),
                     o = ((e = this.props.$i18n), u[d[e]] || l)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
@@ -10514,10 +10653,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             Object.defineProperty(a, 'prototype', { writable: !1 }),
             h
           )
-        })(o(79404)._ActualI18NFormatMessage || c.Component)
+        })(o(79404)._ActualI18NFormatMessage || s.Component)
         a('_ActualI18NFormatMessage', f),
           a('I18NFormatMessage', function (e) {
-            return c.createElement(f, e)
+            return s.createElement(f, e)
           })
         var h = o(95075)
         o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
