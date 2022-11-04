@@ -4390,6 +4390,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'This includes consensually made and shared media that’s pornographic or meant to cause sexual arousal.',
           ),
           a('h7e0672b', 'media settings'),
+          a('a5760c62', 'Upgrade available'),
+          a('e4067c94', 'Get a verified account.'),
           a('ib35705e', 'Manage Subscription'),
           a('e5fff0c8', 'Your subscription is active.'),
           a('baf97716', 'Your features will be available for the remainder of your billing period.'),
@@ -4912,10 +4914,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'db8346ee',
             'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
-          ),
-          a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
-          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.')
-        a('cac1046e', '1080p video uploads'),
+          )
+        a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
+          a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
+          a('cac1046e', '1080p video uploads'),
           a('je84dece', 'Feature Settings'),
           a('a21b8ad2', 'Ad-free Sites'),
           a(
@@ -6030,12 +6032,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bd7c0390', 'Quote Tweets'),
           a('ebcf1374', 'No Quote Tweets yet'),
           a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
-          a('bea0e410', 'Amplify Tweets you like'),
-          a(
-            'ee5cb3e0',
-            'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.',
-          ),
-          a('i29ecb48', 'No Tweet Likes yet')
+          a('bea0e410', 'Amplify Tweets you like')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6055,7 +6052,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             c(e, t)
           )
         }
-        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
+        a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
+          a('i29ecb48', 'No Tweet Likes yet'),
+          a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
           a('b13974f0', 'Loading users who liked this Tweet'),
           a('hfb8fd58', 'Loading users who retweeted this Tweet'),
           a('d25289b4', 'Retweeted by'),
@@ -6471,6 +6470,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b9238e89', function (e) {
             return 'Subscribe for ' + e.price + '/mo'
           }),
+          a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
           a('j5bb28eb', 'Terms & Conditions'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af450', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
@@ -7495,11 +7495,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b1a0f1ec', 'April'),
           a('daf779c8', 'May'),
           a('c6ad074e', 'June'),
-          a('f1db106c', 'July'),
-          a('i4e80b7a', 'August'),
+          a('f1db106c', 'July')
+        a('i4e80b7a', 'August'),
           a('efa6cc1e', 'September'),
-          a('f40a0cbe', 'October')
-        a('ac74a31c', 'November'),
+          a('f40a0cbe', 'October'),
+          a('ac74a31c', 'November'),
           a('i6c1e4b2', 'December'),
           a('de540c32', 'Reveal password'),
           a('b4abfdb4', 'Hide password'),

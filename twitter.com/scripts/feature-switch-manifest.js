@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '08f44a9e622c9822422c4ecccb8afc3278e06a3d',
+  feature_set_token: '3573d062f1d9d88d6b1cb333b24718811733ffad',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -768,11 +768,11 @@ var manifest = {
     responsive_web_twitter_blue_growth_primary_nav_enabled: { value: !1 },
     responsive_web_twitter_blue_home_redesign_enabled: { value: !0 },
     responsive_web_twitter_blue_signup_nux_enabled: { value: !0 },
+    responsive_web_twitter_blue_subscriptions_disabled: { value: !1 },
     responsive_web_twitter_blue_verified_badge_is_enabled: { value: !1 },
     responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled: { value: !1 },
     responsive_web_twitter_blue_verified_badge_ntab_verified_as_first_tab: { value: !1 },
     responsive_web_twitter_blue_verified_badge_settings_blue_verified_features_enabled: { value: !1 },
-    responsive_web_twitter_blue_verified_badge_updated_news_settings_copy_enabled: { value: !1 },
     responsive_web_typeahead_reverse_bolding_enabled: { value: !0 },
     responsive_web_uc_gql_enabled: { value: !0 },
     responsive_web_unsupported_entry_tombstone: { value: !1 },
@@ -4686,6 +4686,11 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
+    responsive_web_twitter_blue_subscriptions_disabled: {
+      name: 'responsive_web_twitter_blue_subscriptions_disabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     responsive_web_twitter_blue_verified_badge_is_enabled: {
       name: 'responsive_web_twitter_blue_verified_badge_is_enabled',
       type: 'boolean',
@@ -4714,8 +4719,7 @@ var manifest = {
     },
     responsive_web_twitter_blue_verified_badge_updated_news_settings_copy_enabled: {
       name: 'responsive_web_twitter_blue_verified_badge_updated_news_settings_copy_enabled',
-      type: 'boolean',
-      defaultValue: !1,
+      type: 'string',
     },
     responsive_web_twitter_blue_verified_badge_ntab_verified_as_first_tab: {
       name: 'responsive_web_twitter_blue_verified_badge_ntab_verified_as_first_tab',
@@ -5377,6 +5381,10 @@ var manifest = {
     },
     subscriptions_blue_premium_labeling_htl_logo_replacement_enabled: {
       name: 'subscriptions_blue_premium_labeling_htl_logo_replacement_enabled',
+      type: 'string',
+    },
+    subscriptions_marketing_page_disable_new_subscriptions: {
+      name: 'subscriptions_marketing_page_disable_new_subscriptions',
       type: 'string',
     },
     subscriptions_marketing_page_refresh_enabled: {
