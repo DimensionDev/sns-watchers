@@ -6496,7 +6496,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee956', 'Get early access'),
           a('f769af72', 'Not all features are available on all devices.'),
-          a('ebf5ec26', 'Coming soon'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
             'gc7637d4',
@@ -6856,6 +6855,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eaa65473', function (e) {
             return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
           }),
+          a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('eb023c94', 'What is an NFT?'),
           a('gc65c0aa', 'So what does this mean?'),
