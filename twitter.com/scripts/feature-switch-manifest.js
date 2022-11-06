@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '3573d062f1d9d88d6b1cb333b24718811733ffad',
+  feature_set_token: 'ab34ef83490c4f251f25aaea6cbc78b9798dab3b',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -394,7 +394,7 @@ var manifest = {
     home_timeline_tweet_auto_inline_reply_enabled: { value: !1 },
     identity_verification_debadging_notification_enabled: { value: !0 },
     identity_verification_educational_prompt_enabled: { value: !0 },
-    identity_verification_intake_enabled: { value: !0 },
+    identity_verification_intake_enabled: { value: !1 },
     identity_verification_notable_demo_survey: { value: !1 },
     interactive_text_enabled: { value: !0 },
     linked_search_experiment: { value: !1 },
@@ -2698,7 +2698,7 @@ var manifest = {
     identity_verification_intake_enabled: {
       name: 'identity_verification_intake_enabled',
       type: 'boolean',
-      defaultValue: !0,
+      defaultValue: !1,
     },
     identity_verification_educational_prompt_enabled: {
       name: 'identity_verification_educational_prompt_enabled',
