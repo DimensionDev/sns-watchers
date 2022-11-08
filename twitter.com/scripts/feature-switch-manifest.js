@@ -1213,12 +1213,12 @@ var manifest = {
     account_access_language_home_signup_module_14829: {
       name: 'account_access_language_home_signup_module_14829',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment_1', 'treatment_2', 'treatment_3', 'treatment_4'],
+      enumeration_values: [],
     },
     account_access_language_top_bottom_banners_14828: {
       name: 'account_access_language_top_bottom_banners_14828',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment_1', 'treatment_2', 'treatment_3'],
+      enumeration_values: [],
     },
     account_country_setting_enabled: { name: 'account_country_setting_enabled', type: 'string' },
     account_country_setting_countries_whitelist: {
@@ -6350,7 +6350,7 @@ var manifest = {
     web_video_transcribed_captions_14830: {
       name: 'web_video_transcribed_captions_14830',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
+      enumeration_values: [],
     },
     zazu_report_flow_13359: {
       name: 'zazu_report_flow_13359',

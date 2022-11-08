@@ -4933,10 +4933,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('jbd2a6de', 'Blue looks good on you. Enjoy your verified account and blue checkmark.'),
           a('d551ca66', 'See your member benefits and manage your settings'),
           a('eca82e08', 'A better news reading experience'),
-          a(
-            'aab8f504',
-            'Discover relevant news, enjoy articles without ads, and support the journalism you like to read.',
-          ),
+          a('de06833a', 'Discover relevant news, and get a cleaner thread reading experience.'),
           a('ia0beb56', 'Early access to select new features'),
           a('h44313c4', 'Explore select new Twitter features included in Twitter Blue Labs.'),
           a('b6ab9962', 'Original Tweets'),
