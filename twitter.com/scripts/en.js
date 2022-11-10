@@ -229,7 +229,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b3f2318e', '2x speed'),
           a('bb1d57b6', 'Leave'),
           a('a5bf548a', 'Tweeps only'),
-          a('c3afb4d8', 'Super Followers only'),
+          a('c855ab8e', 'Subscribers only'),
           a('ddeb0a3c', 'Here’s the Community. Like the people? Take a look.'),
           a('e111f531', function (e) {
             return e.count + ' tuned in'
@@ -287,7 +287,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ef2fa90c', 'The text of your Tweet exceeds the maximum allowed limit.'),
           a('f10f1cfc', 'The content of your Tweet is invalid.'),
           a('c818c60c', 'Analytics'),
-          a('b5711f0a', 'Birdwatch'),
+          a('a15648a4', 'Community Notes'),
           a('cdf89b84', 'Branded Likes Preview'),
           a('bb07870e', 'Creator Studio'),
           a('a57a341c', 'Data saver'),
@@ -1234,6 +1234,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('fd961b0c', 'Downvotes are private'),
           a('d964e8ec', 'Your votes aren’t public and won’t be shared with the Tweet author or anyone else.'),
           a('jc4cb6c4', 'Only Super Followers can see this Retweet'),
+          a('f225e16e', 'Only Subscribers can see this Retweet'),
           a('b5b36724', 'Reply instead?'),
           a('g449dfaa', 'Retweet instead?'),
           a('cf7a1b48', 'Your drafted Tweet will be discarded before you reply.'),
@@ -1360,8 +1361,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('ae0c5fbe', 'Error changing who can reply'),
           a('bae0cbc0', 'Change who can reply'),
-          a('e2dc4394', 'Write a Birdwatch note'),
-          a('f8393bda', 'Only Super Followers can reply'),
+          a('ef1042f8', 'Write a Community Note'),
+          a('feb7560a', 'Only Subscribers can reply'),
           a('dd211108', 'Delete Tweet?'),
           a(
             'c55d72d0',
@@ -1529,6 +1530,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f7364fa2', 'Ask a question...'),
           a('e815fc34', 'Choose audience'),
           a('aa4209e8', 'Super Followers'),
+          a('d52a1caa', 'Subscribers'),
           a('a68885de', 'All Followers'),
           a('c63602d4', 'My Communities'),
           a('a5f7b700', function (e) {
@@ -1643,24 +1645,24 @@ window.__SCRIPTS_LOADED__.vendor &&
               e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
             )
           }),
-          a('c7f99090', function (e) {
+          a('ab67a7ac', function (e) {
             return '' + e.userName
           }),
-          a('b977ae10', 'Super Followers'),
-          a('g7d5e986', function (e) {
+          a('g571ef41', 'Subscribers'),
+          a('d48d6476', function (e) {
             return e.replyUserName + ' and ' + e.otherUserName
           }),
-          a('af82725c', 'Super Followers'),
-          a('af4c2858', function (e) {
+          a('i9451241', 'Subscribers'),
+          a('hdf48104', function (e) {
             return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
           }),
-          a('h2949686', 'Super Followers'),
-          a('bc9dd515', function (e) {
+          a('dcbb6a0b', 'Subscribers'),
+          a('ba74e38b', function (e) {
             return (
               e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
             )
           }),
-          a('de5071ba', 'Super Followers'),
+          a('c65916af', 'Subscribers'),
           a('a828b60a', function (e) {
             return '' + e.userName
           }),
@@ -1859,11 +1861,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e7c45f34', 'Join this Space'),
           a('e51df2e6', 'Your mic will be off to start'),
           a('d2790650', 'Super Following has its perks'),
-          a('a8c751af', function (e) {
+          a('e483a6cb', function (e) {
             return (
-              'One of the perks of being a Super Follower is exclusive access to Spaces like this one. Only @' +
+              'One of the perks of being a Subscriber is exclusive access to Spaces like this one. Only @' +
               e.screenName +
-              '’s Super Followers can join this Space.'
+              '’s Subscribers can join this Space.'
             )
           }),
           a('f5774e3a', 'Spaces Discovery'),
@@ -1881,23 +1883,23 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d39e8b30', 'Add a note'),
           a('a91bb144', 'Submit'),
           a(
-            'hb2bf968',
-            'Your note will be publicly available in the Birdwatch site and may be shown to other participants on Twitter.',
+            'bc27bc8c',
+            'Your note will be publicly available in the Community Notes site and may be shown to other participants on Twitter.',
           ),
           a('dc7a6625', function (e) {
             return 'Writing as ' + e.displayAlias
           }),
           a(
-            'af778d9e',
-            'Your note will be published using your Birdwatch alias, without connections to your Twitter profile.',
+            'a17e8acc',
+            'Your note will be published using your Community Notes alias, without connections to your Twitter profile.',
           ),
           a(
             'e3b3aba4',
             'Write a note with context that you believe should be shown with the Tweet to keep others informed.',
           ),
           a(
-            'b4715c18',
-            'Write a note to help other Birdwatch contributors understand why this tweet is not misleading or doesn’t need added context.',
+            'f1780682',
+            'Write a note to help other Community Notes contributors understand why this tweet is not misleading or doesn’t need added context.',
           ),
           a('j679dcda', 'See examples'),
           a('b7476596', 'Be precise — providing links to outside sources is encouraged.'),
@@ -1918,10 +1920,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
           a('gb67e44c', 'Submit without explanation'),
           a('d6b758a2', 'Submit without source'),
-          a('f084f1ce', 'About Birdwatch aliases'),
+          a('eb5b4a12', 'About Community Notes aliases'),
           a('ja0ee360', 'Choose your alias'),
-          a('j761c248', 'Choose a Birdwatch alias to stay private'),
-          a('h66bd30a', 'Why is Birdwatch using aliases?'),
+          a('f7b7c250', 'Choose a Community Notes alias to stay private'),
+          a('c6382384', 'Why is Community Notes using aliases?'),
           a('j48ab594', 'Contribute privately'),
           a('e17c80bc', 'Write and rate notes without sharing your Twitter identity.'),
           a('d939cf16', 'Focus on the content'),
@@ -1931,27 +1933,27 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('d17c59e4', 'Everyone remains accountable'),
           a('i719f8e2', 'You can see contributors’ histories, and everyone is accountable through ratings they earn.'),
-          a('d0e190ce', 'Choose your Birdwatch alias'),
+          a('a96bb564', 'Choose your Community Notes alias'),
           a(
-            'e74a2cd6',
-            'This alias will be your identity when writing and rating Birdwatch notes. It’s not associated with your Twitter profile.',
+            'fd78fb60',
+            'This alias will be your identity when writing and rating Community Notes. It’s not associated with your Twitter profile.',
           ),
           a('g9677c6e', 'Confirm'),
           a('e4a6e006', 'Something went wrong. Please try again.'),
           a('f83d0446', 'Your alias has been saved.'),
           a('ed0e6b2e', 'Start rating notes'),
-          a('a0fb1616', 'Welcome to Birdwatch!'),
+          a('if4c5e06', 'Welcome to Community Notes!'),
           a('g880a78a', 'Start by rating notes'),
           a(
-            'jf0b0f56',
-            'Birdwatch relies on contributors like you to help identify helpful notes to show to everyone.',
+            'd1be2236',
+            'Community Notes relies on contributors like you to help identify helpful notes to show to everyone.',
           ),
           a('af9f2b78', 'Track your Rating Impact'),
           a('af68afc8', 'Your Impact goes up every time you help a note get the status of Helpful or Not Helpful.'),
           a('fb5c5d42', 'Unlock the ability to write notes'),
           a(
-            'ga1b2b3e',
-            'Once your Rating Impact reaches 5 or higher, you’ll unlock the ability to write your own Birdwatch notes.',
+            'a1e58cdc',
+            'Once your Rating Impact reaches 5 or higher, you’ll unlock the ability to write your own Community Notes.',
           ),
           a('j5f112b4', 'Two of your recent notes currently have the status of Not Helpful.'),
           a(
@@ -2001,8 +2003,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('f2f61788', 'Unlock the ability to write'),
           a(
-            'e9649eae',
-            'Once your successful rating score reaches 5 or higher, you’ll unlock the ability to write Birdwatch notes.',
+            'ca7e11e6',
+            'Once your successful rating score reaches 5 or higher, you’ll unlock the ability to write Community Notes.',
           ),
           a('e7beb100', 'See your profile and feedback'),
           a('ee7b8050', 'You are temporarily locked out from writing new notes.'),
@@ -2013,26 +2015,26 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f6c8613e', 'Feedback from contributors on your notes:'),
           a('fd5c2282', 'Get more note writing tips'),
           a('c23e67ea', 'Unlock your ability to write'),
-          a('f30bf03e', 'Birdwatch accounts must have verified phone numbers'),
+          a('dc1fa12c', 'Community Notes accounts must have verified phone numbers'),
           a(
-            'c6311d32',
-            'To continue contributing to Birdwatch from this Twitter account, you’ll need to verify your phone number.',
+            'g54cfd16',
+            'To continue contributing to Community Notes from this Twitter account, you’ll need to verify your phone number.',
           ),
           a(
-            'i3764ace',
-            'In addition to verified, your number must be from a trusted US-based carrier, and not associated with another Birdwatch account.',
+            'j2aafbac',
+            'In addition to verified, your number must be from a trusted US-based carrier, and not associated with another Community Notes account.',
           ),
           a('dff9b6bc', 'Verify your phone'),
-          a('i3a157aa', 'Birdwatch contributors must have unique phone numbers'),
+          a('f051e434', 'Community Notes contributors must have unique phone numbers'),
           a(
-            'a1e02b5c',
-            'It looks like there are multiple Birdwatch contributors whose Twitter accounts are associated with this phone number.',
+            'a71aca8c',
+            'It looks like there are multiple Community Notes contributors whose Twitter accounts are associated with this phone number.',
           ),
           a(
             'cc94e7b2',
             'In order to continue contributing from this account, you’ll need to remove this phone number from other Twitter accounts.',
           ),
-          a('b544c58a', 'Birdwatch accounts must have verified phone numbers from a trusted US-based carrier'),
+          a('f6a279b2', 'Community Notes accounts must have verified phone numbers from a trusted US-based carrier'),
           a(
             'c388c3aa',
             'To reduce the use of artificially created or virtual phone numbers, phone numbers must be from a trusted US-based carrier.',
@@ -2053,13 +2055,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hf607a0a', 'It is clearly satirical/joking'),
           a('j6ac7742', 'It expresses a personal opinion'),
           a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
-          a('gfa725ae', 'Birdwatch values'),
+          a('j6e19c58', 'Community Notes values'),
           a('c3d89aca', 'Continue'),
-          a('h7ad677c', 'A quick reminder of the Birdwatch values:'),
+          a('ea580ee2', 'A quick reminder of the Community Notes values:'),
           a('eac7b6ac', 'Contribute to build understanding'),
           a('b0381cfc', 'Act in good faith'),
           a('f0addddc', 'Be helpful, even to those who disagree'),
-          a('cc42580e', 'Birdwatch contributors can now see your note'),
+          a('a9f4ca9c', 'Community Notes contributors can now see your note'),
           a('eb8f7c0c', 'Other contributors can now rate your note'),
           a('h87c6bd6', 'Other contributors can now see your note'),
           a('gc1a5bce', 'They’ll rate it for helpfulness'),
@@ -2079,7 +2081,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b25b64d6', 'Your note was submitted!'),
           a('g1428d70', 'Your note is submitted!'),
           a('a4ec7004', 'Here’s what happens now:'),
-          a('cb67d37a', 'About Birdwatch notes after submission'),
+          a('c4093274', 'About Community Notes after submission'),
           a('fcca2338', 'Notes suggesting context to be shown with the Tweet'),
           a('acb7ecae', 'Notes explaining why added context isn’t needed'),
           a('c59107c4', 'Tweet with notes'),
@@ -2091,29 +2093,32 @@ window.__SCRIPTS_LOADED__.vendor &&
             'By rating, you’re helping ensure that notes shown on Tweets are helpful to people with varying points of view.',
           ),
           a('f10aaf3c', 'Note rating tips'),
-          a('d4f03f72', 'We’re just starting to test Birdwatch out'),
+          a('b87fa894', 'We’re just starting to test Community Notes out'),
           a(
-            'h98222f4',
-            'Birdwatch is a pilot program that lets people on Twitter collaboratively add context to Tweets to help keep people better informed. Notes can be rated by contributors and need to have the rating “currently rated helpful” in order to be public on Twitter.',
+            'd6421c80',
+            'Community Notes is a pilot program that lets people on Twitter collaboratively add context to Tweets to help keep people better informed. Notes can be rated by contributors and need to have the rating “currently rated helpful” in order to be public on Twitter.',
           ),
-          a('d5c203a6', 'People have proposed Birdwatch notes about this Tweet'),
+          a('d1b02da2', 'People have proposed Community Notes about this Tweet'),
           a(
-            'bd3f064c',
-            'Birdwatch is a pilot program where volunteer contributors add context (called “notes”) to Tweets they believe could be misleading. Notes below can be rated by contributors, and if they become currently rated helpful, they will be visible on Twitter. If a note is currently rated helpful, and you disagree, you can request additional review — meaning more contributors will review the note, and its rating could change. ',
+            'd73c8034',
+            'Community Notes is a pilot program where volunteer contributors add context (called “notes”) to Tweets they believe could be misleading. Notes below can be rated by contributors, and if they become currently rated helpful, they will be visible on Twitter. If a note is currently rated helpful, and you disagree, you can request additional review — meaning more contributors will review the note, and its rating could change. ',
           ),
           a('c21313ba', 'Notes currently rated not helpful'),
           a('c2c40120', 'Show all notes'),
           a('ia596d40', 'See anything you’d like to improve?'),
           a('deff0bde', 'Write a note'),
           a(
-            'b95dc58a',
-            'Join Birdwatch and gain access to note writing and other features to help create a better-informed world',
+            'i8e85ef8',
+            'Join Community Notes and gain access to note writing and other features to help create a better-informed world',
           ),
           a(
-            'b793116a',
-            'These notes are added by Birdwatch contributors who believe the Tweet is potentially misleading, and would benefit from additional context.',
+            'bba79d6e',
+            'These notes are added by Community Notes contributors who believe the Tweet is potentially misleading, and would benefit from additional context.',
           ),
-          a('a533d08e', 'Notes are only visible in Birdwatch, until they are rated Helpful by enough contributors.'),
+          a(
+            'cf8a40a6',
+            'Notes are only visible in Community Notes, until they are rated Helpful by enough contributors.',
+          ),
           a(
             'f3e7f392',
             'If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the Tweet as added context.',
@@ -2123,12 +2128,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             'These notes are added by contributors who believe the Tweet isn’t misleading and does not need additional context.',
           ),
           a(
-            'f568e056',
-            'These are only visible in Birdwatch as additional information to raters, and are not shown as context with the Tweet, even if they earn the status of Helpful.',
+            'j065ce6e',
+            'These are only visible in Community Notes as additional information to raters, and are not shown as context with the Tweet, even if they earn the status of Helpful.',
           ),
           a('e272836c', 'Delete note?'),
           a('e457970a', 'Note Details'),
-          a('fa0d3ee4', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
+          a('da5a5d8c', 'Once you delete this note, it will be permanently removed from Community Notes.'),
           a('df321fc4', 'See all notes on this Tweet'),
           a('h8335712', 'Your note'),
           a('b9f18eec', 'Currently rated helpful'),
@@ -2136,10 +2141,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d6db34cc', 'Needs more ratings'),
           a('j33f6520', 'Currently rated not helpful'),
           a('ac39da02', 'This note claims the Tweet isn’t misleading, so it isn’t shown on Twitter.'),
-          a('d1dd62ac', 'About Birdwatch appeals'),
+          a('i606fc4c', 'About Community Notes appeals'),
           a('b664c554', 'Request additional contributor review'),
           a('ab66e1f2', 'Here’s how it works:'),
-          a('b2792b8c', 'More Birdwatch contributors will receive a request to review and rate this note.'),
+          a('e36d807c', 'More Community Notes contributors will receive a request to review and rate this note.'),
           a(
             'b74df918',
             'If contributors’ ratings change the status of the note so that it’s no longer currently rated helpful, the note will not be displayed on the Tweet.',
@@ -2175,7 +2180,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
           a('ac7f9746', 'What was helpful about it?'),
           a('c7751804', 'What was unhelpful about it?'),
-          a('ec25095a', 'available to the public'),
+          a('af198630', 'available to the public'),
           a('d39720d3', 'Helpful'),
           a('i7d91dc9', 'Somewhat Helpful'),
           a('c75b7fb4', 'Not Helpful'),
@@ -2191,25 +2196,22 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
           a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
-          a(
-            'caf7aebe',
-            'Notes are currently only visible to a small test group of people on Twitter. As Birdwatch expands, contributors can expect view counts to increase significantly.',
-          ),
+          a('f748051a', 'Notes are currently visible to people on Twitter in the US.'),
           a('fc6e4594', 'Top tags selected by raters'),
           a('b3de4a42', 'Rating Impact'),
           a('a7b0393c', 'Writing Impact'),
-          a('de962616', 'Want to join Birdwatch?'),
+          a('c2a6ec00', 'Want to join Community Notes?'),
           a('cbfa448c', 'Help people stay better informed on Twitter.'),
           a('ab23a972', 'Follow the conversation'),
           a('c68f3bc0', 'Learn more about our values'),
           a('dfb1f498', 'Feedback'),
-          a('b8a36129', 'Send us a DM @birdwatch'),
-          a('d5b2da0a', 'Birdwatch Tab Bar'),
+          a('a584cfa7', 'Send us a DM @CommunityNotes'),
+          a('ca6ae344', 'Community Notes Tab Bar'),
+          a('fe27c1e2', 'Notes'),
           a('ff692d64', 'Your profile'),
           a('cb1adfa0', 'Download data'),
           a('ab28945c', 'Contributor profile'),
           a('jaf0d42c', 'Your notes'),
-          a('fe27c1e2', 'Notes'),
           a(
             'fa9a644a',
             'If 3 of your 5 most recent notes with a status of Helpful or Not Helpful are deemed Not Helpful, your ability to write notes will be temporarily locked.',
@@ -2224,8 +2226,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
           ),
           a('ac71a5a0', 'Rate notes that need help'),
-          a('j1a30559', 'Learn more'),
-          a('c0d12652', 'send us feedback'),
+          a('a490bc51', 'Learn more'),
+          a('c94ad3e8', 'send us feedback'),
           a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
           a(
             'e8c599f0',
@@ -2241,8 +2243,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful'),
           a(
-            'd27429e6',
-            'These ratings improve Birdwatch by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+            'd46b6bc8',
+            'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
           ),
           a('b976d0ae', 'Contrasting ratings'),
           a(
@@ -2290,26 +2292,26 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
           a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
           a(
-            'f61e8cb4',
-            'Birdwatch doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
+            'ife4baaa',
+            'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
           ),
           a('a0c552ee', 'Your impact will be shown here'),
           a('a4e5ea3c', 'You haven’t rated any notes yet'),
           a('g9a28bde', 'Browse notes that need help'),
-          a('c76cd3da', 'Browse the Birdwatch home'),
+          a('dc0046e2', 'Browse the Community Notes home'),
           a(
             'fecae168',
             'There, you’ll find notes that need more ratings, and where your rating specifically can help.',
           ),
           a('h525e29e', 'Help find notes that could be helpful to many people'),
           a(
-            'e03146c0',
-            'The best Birdwatch notes directly address the Tweet’s claim, are written in helpful and clear language, and add sources that a wide range of people would find reliable.',
+            'j148d18e',
+            'The best Community Notes directly address the Tweet’s claim, are written in helpful and clear language, and add sources that a wide range of people would find reliable.',
           ),
           a('f636b582', 'Help find notes that aren’t helpful'),
           a(
-            'fbb8bb34',
-            'Rating low quality notes improves Birdwatch by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+            'f58f4f62',
+            'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
           ),
           a('g97a2d6c', 'Learn More'),
           a('cf30af22', 'Did you know?'),
@@ -2319,30 +2321,30 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('ee160790', 'Deleted notes'),
           a('efb9a9e0', 'Nothing to see here'),
-          a('ee43790f', 'Learn more'),
+          a('a1529ce7', 'Learn more'),
           a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
           a('e86c87a0', 'Rate more notes'),
           a('ad98f836', 'Your Rating Impact went negative. Don’t worry!'),
           a('e2d7c914', 'Continue rating notes'),
-          a('eeccda98', 'Browse the Birdwatch home to find notes that need ratings from more contributors.'),
+          a('a5427624', 'Browse the Community Notes home to find notes that need ratings from more contributors.'),
           a('e227a7fa', 'Note statuses can always change'),
           a(
             'eda73c9c',
             'Your ratings will, sometimes, disagree with the status on a note. That’s not a problem! If more contributors agree with you, the status can be overturned, and your impact will change.',
           ),
-          a('e2499d2e', 'You can now write Birdwatch notes!'),
+          a('cfa3b664', 'You can now write Community Notes!'),
           a('j44125ee', 'This contributor hasn’t written any notes yet.'),
           a('da55067c', 'Check this space later!'),
-          a('ff3e0be2', 'Join Birdwatch'),
-          a('i1781e26', 'No Birdwatch notes yet'),
+          a('f893c3b8', 'Join Community Notes'),
+          a('a701795c', 'No Community Notes yet'),
           a('db08295e', 'Want to join?'),
           a(
-            'f4d67928',
-            'Looks like you’re not a part of the Birdwatch pilot program. Join now to help people stay better informed on Twitter.',
+            'e804a3d8',
+            'Looks like you’re not a part of the Community Notes pilot program. Join now to help people stay better informed on Twitter.',
           ),
           a(
-            'a2fd6b54',
-            'To create a note, select the Birdwatch icon in any Tweet’s menu. Notes you create will show up here.',
+            'b9fc9e2e',
+            'To create a note, select the Community Notes icon in any Tweet’s menu. Notes you create will show up here.',
           ),
           a('c87f3cf8', 'Note'),
           a('a5b19492', 'This note does not exist'),
@@ -2351,8 +2353,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
           ),
           a(
-            'df4bead0',
-            'Birdwatch is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+            'j9f071e6',
+            'Community Notes is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
           ),
           a('jdb52860', 'Contributors write and rate notes'),
           a(
@@ -2369,14 +2371,14 @@ window.__SCRIPTS_LOADED__.vendor &&
             'g98ea6c0',
             'Twitter doesn’t write, rate or moderate notes (unless they break the Twitter rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed.',
           ),
-          a('e72533f6', 'Birdwatch is built on data transparency'),
+          a('cc720e6a', 'Community Notes is built on data transparency'),
           a(
-            'g652cada',
-            'All Birdwatch contributions are published here daily, so our community has free access to analyze data, identify problems, and spot opportunities to make Birdwatch better. We can’t wait to learn with you.',
-          ),
-          a('g4d71b5e', 'Learn how to use and analyze Birdwatch data '),
-          a('b8a27fe2', 'in our guide')
-        a('j1c99e00', 'Notes data'),
+            'd4a6b322',
+            'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
+          )
+        a('c359263a', 'Learn how to use and analyze Community Notes data '),
+          a('b8a27fe2', 'in our guide'),
+          a('j1c99e00', 'Notes data'),
           a('i6f69314', 'Ratings data'),
           a('b7e4c114', 'Note status history data'),
           a('h786cd7a', 'Notes data isn’t available yet'),
@@ -2384,8 +2386,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c0427f94', 'Note status history data isn’t available yet'),
           a('g0cacb75', 'Twitter Developer Agreement and Policy'),
           a('ed88e742', 'Copy link to Topic'),
-          a('e96677aa', 'Unfortunately, Birdwatch is not available to you at this time.'),
-          a('f026d2ee', 'Birdwatch is currently only available in the U.S.'),
+          a('h92fe1be', 'Unfortunately, Community Notes is not available to you at this time.'),
+          a('f0dc1434', 'Community Notes is currently only available in the U.S.'),
           a('f8fc0b48', 'Create a Folder'),
           a('adad5408', 'New folder'),
           a('be329aac', 'Bookmark Tweets to save them for later'),
@@ -3653,10 +3655,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('a4b69cbc', 'Display language'),
           a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
-          a('cab61d58', 'Select additional languages'),
-          a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
-          a('bca1de4a', 'Additional languages you speak')
-        a('c3aa76c4', 'Languages you may know'),
+          a('cab61d58', 'Select additional languages')
+        a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
+          a('bca1de4a', 'Additional languages you speak'),
+          a('c3aa76c4', 'Languages you may know'),
           a(
             'b2a77838',
             'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
@@ -4906,16 +4908,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'e6b60e94',
             'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
-          ),
-          a(
-            'j6cab6ec',
-            'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
-          ),
+          )
+        a(
+          'j6cab6ec',
+          'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
+        ),
           a(
             'db8346ee',
             'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
-          )
-        a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
+          ),
+          a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
           a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
           a('cac1046e', '1080p video uploads'),
           a('je84dece', 'Feature Settings'),
@@ -6027,9 +6029,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ac3fd6e2', 'You don’t have any recommendations — yet'),
           a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
           a('bd7c0390', 'Quote Tweets'),
-          a('ebcf1374', 'No Quote Tweets yet'),
-          a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
-          a('bea0e410', 'Amplify Tweets you like')
+          a('ebcf1374', 'No Quote Tweets yet')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6039,17 +6039,22 @@ window.__SCRIPTS_LOADED__.vendor &&
               Object.defineProperty(e, a.key, a)
           }
         }
-        function c(e, t) {
+        function s(e, t) {
           return (
-            (c = Object.setPrototypeOf
+            (s = Object.setPrototypeOf
               ? Object.setPrototypeOf.bind()
               : function (e, t) {
                   return (e.__proto__ = t), e
                 }),
-            c(e, t)
+            s(e, t)
           )
         }
-        a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
+        a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
+          a('bea0e410', 'Amplify Tweets you like'),
+          a(
+            'ee5cb3e0',
+            'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.',
+          ),
           a('i29ecb48', 'No Tweet Likes yet'),
           a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
           a('b13974f0', 'Loading users who liked this Tweet'),
@@ -6611,6 +6616,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a2811f96', 'Profile timelines'),
           a('a52b03a6', 'Tweets & replies'),
           a('cc3c698a', 'Super Follows Tweets'),
+          a('de578b82', 'Subscription Tweets'),
           a('b3221ef5', function (e) {
             return 'Notes' + e.longform_notes
           }),
@@ -6625,11 +6631,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
+          a('d77ea487', function (e) {
+            return 'Loading Subscription Tweets by @' + e.screenName
+          }),
           a('g784d3c6', 'Send a Tweet'),
           a('ib53965c', 'Don’t keep your Super Followers waiting'),
+          a('ce659062', 'Don’t keep your Subscribers waiting'),
           a(
             'cb1915b0',
             'Go on — start Tweeting that exclusive content. All of your Super Follows Tweets will show up here.',
+          ),
+          a(
+            'bb3406a6',
+            'Go on — start Tweeting that exclusive content. All of your Subscription Tweets will show up here.',
           ),
           a('dc1f8991', function (e) {
             return '@' + e.screenName + ' hasn’t Tweeted'
@@ -6637,8 +6651,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d5aaa25b', function (e) {
             return '@' + e.screenName + ' hasn’t posted any Super Follows Tweets yet'
           }),
+          a('ba145149', function (e) {
+            return '@' + e.screenName + ' hasn’t posted any Subscription Tweets yet'
+          }),
           a('e4f9514c', 'When they do, their Tweets will show up here.'),
           a('b8a9719a', 'Super Follows Tweets will appear here when posted.'),
+          a('cb59ea14', 'Subscription Tweets will appear here when posted.'),
           a('j0a37206', 'Tweet now'),
           a('cc01c9b5', function (e) {
             return e.fullName + '’s Tweets'
@@ -6646,11 +6664,17 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('je57c395', function (e) {
             return e.fullName + '’s Super Follows Tweets'
           }),
+          a('c137eff1', function (e) {
+            return e.fullName + '’s Subscription Tweets'
+          }),
           a('e021c003', function (e) {
             return 'Tweets with replies by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
           a('e9089a9b', function (e) {
             return 'Super Follows Tweets by ' + e.fullName + ' (@' + e.screenName + ')'
+          }),
+          a('ee210f41', function (e) {
+            return 'Subscription Tweets by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
           a('e21082be', 'Profile Tweets'),
           a('e788bafd', function (e) {
@@ -6902,10 +6926,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
           a('i099d32e', 'Followers you know'),
-          a('ed51baba', 'You don’t have any Super Followers yet'),
+          a('g0a2fbbe', 'You don’t have any Subscribers yet'),
           a('g65f4bac', 'You don’t have any followers yet'),
           a('c36cfddc', 'Looking for followers?'),
-          a('a1f9e34c', 'You will find a list of everyone who Super Follows you here.'),
+          a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
           a('j029a4dc', 'When someone follows you, you’ll see them here.'),
           a(
             'a1c28c86',
@@ -7250,7 +7274,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }),
           a('f89a5d60', 'Host'),
-          a('hd9f6912', 'Super Followers only'),
+          a('ce2cfb36', 'Subscribers only'),
           a('df06241c', 'Community'),
           a('b03e162a', 'Listen live'),
           a('b3d828ee', 'Joined'),
@@ -7453,16 +7477,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f956070a', 'It was hidden by the mods for breaking Community rules.'),
           a('jd773100', 'When members are removed, their Tweets are hidden from the rest of the Community.'),
           a('dbf97380', 'Who can see this Tweet?'),
-          a('d95d8f24', 'You and your Super Followers can see this Tweet'),
-          a('ff6895e3', function (e) {
-            return '@' + e.screenName + ' and their Super Followers can see your Tweet'
+          a('j9db991a', 'You and your Subscribers can see this Tweet'),
+          a('aabc5339', function (e) {
+            return '@' + e.screenName + ' and their Subscribers can see your Tweet'
           }),
-          a('f1140912', 'You’re seeing Super Follows content'),
-          a('j1a5fd03', function (e) {
-            return 'You can see this and reply because you Super Follow @' + e.screenName
+          a('g1c6a77e', 'You’re seeing Subscriptions content'),
+          a('d3b143d7', function (e) {
+            return 'You can see this and reply because you’re Subscribed to @' + e.screenName
           }),
-          a('aaeb399b', function (e) {
-            return 'You can see this Tweet because you Super Follow @' + e.screenName
+          a('b756eaeb', function (e) {
+            return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
           }),
           a('b140e3b2', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
@@ -7482,8 +7506,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c5a9f921', function (e) {
             return 'Up by ' + e.trendValuePositivePercent
           }),
-          a('jf83d092', 'Day'),
-          a('af4abf20', 'Month'),
+          a('jf83d092', 'Day')
+        a('af4abf20', 'Month'),
           a('b871f280', 'Year'),
           a('hac89ab0', 'January'),
           a('ef30b30a', 'February'),
@@ -7492,8 +7516,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('daf779c8', 'May'),
           a('c6ad074e', 'June'),
           a('f1db106c', 'July'),
-          a('i4e80b7a', 'August')
-        a('efa6cc1e', 'September'),
+          a('i4e80b7a', 'August'),
+          a('efa6cc1e', 'September'),
           a('f40a0cbe', 'October'),
           a('ac74a31c', 'November'),
           a('i6c1e4b2', 'December'),
@@ -7698,14 +7722,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c20f7e9f', function (e) {
             return n(
               e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
+              c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
           a('he26f627', function (e) {
             return n(
               e.otherUsersCount,
-              s.createElement(s.Fragment, null, '', e.secondName),
+              c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
           }),
@@ -7722,11 +7746,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ad9b5988', function (e) {
             return 'Follower' + n(e.count, '', 's')
           }),
-          a('b3ec34f8', function (e) {
+          a('a9980948', function (e) {
             return '' + e.formattedCount
           }),
-          a('jc5b267b', function (e) {
-            return 'Super Follower' + n(e.count, '', 's')
+          a('ce44a35c', function (e) {
+            return 'Subscriber' + n(e.count, '', 's')
           }),
           a('ef633578', 'Account suspended'),
           a('caddb529', 'and'),
@@ -7812,7 +7836,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead8', 'Untitled'),
           a('cfd13f46', 'Voice Dock')
-        var s = o(2784),
+        var c = o(2784),
           u = [],
           d = {}
         function l(e) {
@@ -7820,18 +7844,18 @@ window.__SCRIPTS_LOADED__.vendor &&
         }
         var f = (function (e) {
           var t, o, a, r, f
-          function h() {
+          function b() {
             return e.apply(this, arguments) || this
           }
           return (
             (o = e),
-            ((t = h).prototype = Object.create(o.prototype)),
+            ((t = b).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            c(t, o),
-            (h.prototype.render = function () {
-              return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
+            s(t, o),
+            (b.prototype.render = function () {
+              return c.createElement.apply(c, this[this.props.$i18n].reduce(this.templateReducer, [c.Fragment, null]))
             }),
-            (a = h),
+            (a = b),
             (r = [
               {
                 key: 'aab35605',
@@ -8594,25 +8618,25 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'a4e11011',
+                key: 'fe06c9f5',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
-                key: 'cf1b3321',
+                key: 'f7e12e15',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
-                key: 'c83d647f',
+                key: 'eade6035',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
-                key: 'fec57cab',
+                key: 'da018b37',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
@@ -8790,10 +8814,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'd204b80f',
+                key: 'i8fa1313',
                 get: function () {
                   return [
-                    'Ratings are anonymized and made publicly available for transparency. Find out how Birdwatch makes data ',
+                    'Ratings are anonymized and made publicly available for transparency. Find out how Community Notes makes data ',
                     '.',
                   ]
                 },
@@ -8817,21 +8841,21 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'fdd69021',
+                key: 'b936a16b',
                 get: function () {
-                  return ['Ideas or suggestions to improve Birdwatch? ']
+                  return ['Ideas or suggestions to improve Community Notes? ']
                 },
               },
               {
-                key: 'bc62b131',
+                key: 'if0d6dd7',
                 get: function () {
-                  return ['Birdwatch contributors use aliases · ']
+                  return ['Community Notes contributors use aliases · ']
                 },
               },
               {
-                key: 'd828b9eb',
+                key: 'f49cbf83',
                 get: function () {
-                  return ['This feature is new to Birdwatch, feel free to ']
+                  return ['This feature is new to Community Notes, feel free to ']
                 },
               },
               {
@@ -8869,10 +8893,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'j6d27aa3',
+                key: 'd458f69d',
                 get: function () {
                   return [
-                    'Birdwatch keeps deleted notes’ status to accurately assign reputation to the note author and raters. ',
+                    'Community Notes keeps deleted notes’ status to accurately assign reputation to the note author and raters. ',
                   ]
                 },
               },
@@ -10576,7 +10600,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               },
               {
-                key: 'ic871e6f',
+                key: 'eb0084f3',
                 get: function () {
                   return ['', ' ']
                 },
@@ -10645,7 +10669,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 key: 'templateReducer',
                 get: function () {
                   var e,
-                    t = s.Children.toArray(this.props.children),
+                    t = c.Children.toArray(this.props.children),
                     o = ((e = this.props.$i18n), u[d[e]] || l)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
@@ -10655,25 +10679,25 @@ window.__SCRIPTS_LOADED__.vendor &&
             ]) && i(a.prototype, r),
             f && i(a, f),
             Object.defineProperty(a, 'prototype', { writable: !1 }),
-            h
+            b
           )
-        })(o(79404)._ActualI18NFormatMessage || s.Component)
+        })(o(79404)._ActualI18NFormatMessage || c.Component)
         a('_ActualI18NFormatMessage', f),
           a('I18NFormatMessage', function (e) {
-            return s.createElement(f, e)
+            return c.createElement(f, e)
           })
-        var h = o(95075)
+        var b = o(95075)
         o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
-        h._validateParameterTypeNumber, h._validateParameterPresence
-        var b = h._numberRound,
-          m = (h._numberFormat, h._numberFormatterFn),
-          y = h._pluralGeneratorFn,
-          p = (h._currencyNameFormat, h._currencyFormatterFn),
-          w = (h._validateParameterTypeDate, h._dateToPartsFormat, h._dateToPartsFormatterFn),
-          g = (h._dateFormat, h._dateFormatterFn),
-          T = h._relativeTimeFormatterFn,
-          v = h._unitFormatterFn
-        ;(h.a527220190 = m(
+        b._validateParameterTypeNumber, b._validateParameterPresence
+        var h = b._numberRound,
+          m = (b._numberFormat, b._numberFormatterFn),
+          y = b._pluralGeneratorFn,
+          p = (b._currencyNameFormat, b._currencyFormatterFn),
+          w = (b._validateParameterTypeDate, b._dateToPartsFormat, b._dateToPartsFormatterFn),
+          g = (b._dateFormat, b._dateFormatterFn),
+          T = b._relativeTimeFormatterFn,
+          v = b._unitFormatterFn
+        ;(b.a527220190 = m(
           [
             '',
             ,
@@ -10690,7 +10714,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b('truncate'),
+            h('truncate'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -10711,9 +10735,9 @@ window.__SCRIPTS_LOADED__.vendor &&
               maxExponent: 14,
             },
           ],
-          h('en').pluralGenerator({}),
+          b('en').pluralGenerator({}),
         )),
-          (h.b468386326 = m([
+          (b.b468386326 = m([
             '',
             ,
             1,
@@ -10729,12 +10753,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a694716112 = m([
+          (b.a694716112 = m([
             '',
             ,
             1,
@@ -10750,12 +10774,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b('round'),
+            h('round'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1378886668 = m([
+          (b.a1378886668 = m([
             '',
             ,
             1,
@@ -10771,12 +10795,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-0',
             '-',
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b203855544 = m([
+          (b.b203855544 = m([
             '',
             ,
             2,
@@ -10792,12 +10816,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-00',
             '-',
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1729690817 = m(
+          (b.b1729690817 = m(
             [
               '',
               ,
@@ -10814,7 +10838,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b('truncate'),
+              h('truncate'),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -10835,9 +10859,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.b385502835 = m([
+          (b.b385502835 = m([
             '',
             ,
             1,
@@ -10853,12 +10877,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0%%',
             '-',
             '%',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1982794438 = m([
+          (b.b1982794438 = m([
             '',
             ,
             1,
@@ -10874,12 +10898,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0%%',
             '-',
             '%',
-            b('round'),
+            h('round'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1653028677 = m([
+          (b.b1653028677 = m([
             '',
             ,
             1,
@@ -10895,12 +10919,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0%%',
             '-',
             '%',
-            b('round'),
+            h('round'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1259667653 = m(
+          (b.a1259667653 = m(
             [
               '',
               ,
@@ -10917,7 +10941,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b('truncate'),
+              h('truncate'),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -10938,9 +10962,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.a258143208 = m([
+          (b.a258143208 = m([
             '',
             ,
             1,
@@ -10956,12 +10980,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b('truncate'),
+            h('truncate'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b810332058 = m([
+          (b.b810332058 = m([
             '',
             ,
             1,
@@ -10977,12 +11001,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b('truncate'),
+            h('truncate'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2030259439 = m([
+          (b.a2030259439 = m([
             "'AED' ",
             ,
             1,
@@ -10998,12 +11022,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'AED' 'AED' #,##0.00",
             "-'AED' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2046481768 = m([
+          (b.a2046481768 = m([
             "'ALL' ",
             ,
             1,
@@ -11019,12 +11043,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'ALL' 'ALL' #,##0",
             "-'ALL' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1160151693 = m([
+          (b.a1160151693 = m([
             "'ARS' ",
             ,
             1,
@@ -11040,12 +11064,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'ARS' 'ARS' #,##0.00",
             "-'ARS' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2062592196 = m([
+          (b.a2062592196 = m([
             "'A$'",
             ,
             1,
@@ -11061,12 +11085,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'A$''A$'#,##0.00",
             "-'A$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b470575007 = m([
+          (b.b470575007 = m([
             "'BAM' ",
             ,
             1,
@@ -11082,12 +11106,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'BAM' 'BAM' #,##0.00",
             "-'BAM' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b520757370 = m([
+          (b.b520757370 = m([
             "'BGN' ",
             ,
             1,
@@ -11103,12 +11127,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'BGN' 'BGN' #,##0.00",
             "-'BGN' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1664428957 = m([
+          (b.b1664428957 = m([
             "'BHD' ",
             ,
             1,
@@ -11124,12 +11148,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'BHD' 'BHD' #,##0.000",
             "-'BHD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2058030163 = m([
+          (b.a2058030163 = m([
             "'R$'",
             ,
             1,
@@ -11145,12 +11169,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'R$''R$'#,##0.00",
             "-'R$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1239380546 = m([
+          (b.a1239380546 = m([
             "'BYR' ",
             ,
             1,
@@ -11166,12 +11190,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'BYR' 'BYR' #,##0",
             "-'BYR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b88352691 = m([
+          (b.b88352691 = m([
             "'CA$'",
             ,
             1,
@@ -11187,12 +11211,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CA$''CA$'#,##0.00",
             "-'CA$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a225761966 = m([
+          (b.a225761966 = m([
             "'CHF' ",
             ,
             1,
@@ -11208,12 +11232,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CHF' 'CHF' #,##0.00",
             "-'CHF' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1433162386 = m([
+          (b.b1433162386 = m([
             "'CLP' ",
             ,
             1,
@@ -11229,12 +11253,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CLP' 'CLP' #,##0",
             "-'CLP' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1559929759 = m([
+          (b.b1559929759 = m([
             "'CN¥'",
             ,
             1,
@@ -11250,12 +11274,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CN¥''CN¥'#,##0.00",
             "-'CN¥'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1045914229 = m([
+          (b.b1045914229 = m([
             "'COP' ",
             ,
             1,
@@ -11271,12 +11295,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'COP' 'COP' #,##0",
             "-'COP' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b935902373 = m([
+          (b.b935902373 = m([
             "'CZK' ",
             ,
             1,
@@ -11292,12 +11316,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CZK' 'CZK' #,##0.00",
             "-'CZK' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1710090091 = m([
+          (b.a1710090091 = m([
             "'DKK' ",
             ,
             1,
@@ -11313,12 +11337,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'DKK' 'DKK' #,##0.00",
             "-'DKK' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2092473825 = m([
+          (b.a2092473825 = m([
             "'DZD' ",
             ,
             1,
@@ -11334,12 +11358,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'DZD' 'DZD' #,##0.00",
             "-'DZD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1231490145 = m([
+          (b.a1231490145 = m([
             "'EGP' ",
             ,
             1,
@@ -11355,12 +11379,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'EGP' 'EGP' #,##0.00",
             "-'EGP' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b581200589 = m([
+          (b.b581200589 = m([
             "'€'",
             ,
             1,
@@ -11376,12 +11400,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'€''€'#,##0.00",
             "-'€'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a435174058 = m([
+          (b.a435174058 = m([
             "'£'",
             ,
             1,
@@ -11397,12 +11421,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'£''£'#,##0.00",
             "-'£'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a201297725 = m([
+          (b.a201297725 = m([
             "'GHS' ",
             ,
             1,
@@ -11418,12 +11442,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'GHS' 'GHS' #,##0.00",
             "-'GHS' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a2123167499 = m([
+          (b.a2123167499 = m([
             "'GTQ' ",
             ,
             1,
@@ -11439,12 +11463,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'GTQ' 'GTQ' #,##0.00",
             "-'GTQ' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1901147192 = m([
+          (b.b1901147192 = m([
             "'HK$'",
             ,
             1,
@@ -11460,12 +11484,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'HK$''HK$'#,##0.00",
             "-'HK$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1630881454 = m([
+          (b.a1630881454 = m([
             "'HRK' ",
             ,
             1,
@@ -11481,12 +11505,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'HRK' 'HRK' #,##0.00",
             "-'HRK' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a91395414 = m([
+          (b.a91395414 = m([
             "'HUF' ",
             ,
             1,
@@ -11502,12 +11526,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'HUF' 'HUF' #,##0.00",
             "-'HUF' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a769789694 = m([
+          (b.a769789694 = m([
             "'IDR' ",
             ,
             1,
@@ -11523,12 +11547,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'IDR' 'IDR' #,##0",
             "-'IDR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a5605425 = m([
+          (b.a5605425 = m([
             "'₪'",
             ,
             1,
@@ -11544,12 +11568,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'₪''₪'#,##0.00",
             "-'₪'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b100472384 = m([
+          (b.b100472384 = m([
             "'₹'",
             ,
             1,
@@ -11565,12 +11589,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'₹''₹'#,##0.00",
             "-'₹'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1835380291 = m([
+          (b.a1835380291 = m([
             "'IQD' ",
             ,
             1,
@@ -11586,12 +11610,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'IQD' 'IQD' #,##0",
             "-'IQD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a595984426 = m([
+          (b.a595984426 = m([
             "'¥'",
             ,
             1,
@@ -11607,12 +11631,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'¥''¥'#,##0",
             "-'¥'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b2068527114 = m([
+          (b.b2068527114 = m([
             "'KES' ",
             ,
             1,
@@ -11628,12 +11652,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'KES' 'KES' #,##0.00",
             "-'KES' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a584033446 = m([
+          (b.a584033446 = m([
             "'₩'",
             ,
             1,
@@ -11649,12 +11673,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'₩''₩'#,##0",
             "-'₩'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1437621635 = m([
+          (b.b1437621635 = m([
             "'KWD' ",
             ,
             1,
@@ -11670,12 +11694,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'KWD' 'KWD' #,##0.000",
             "-'KWD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1069649343 = m([
+          (b.b1069649343 = m([
             "'LBP' ",
             ,
             1,
@@ -11691,12 +11715,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'LBP' 'LBP' #,##0",
             "-'LBP' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1536423329 = m([
+          (b.b1536423329 = m([
             "'MAD' ",
             ,
             1,
@@ -11712,12 +11736,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'MAD' 'MAD' #,##0.00",
             "-'MAD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a654192873 = m([
+          (b.a654192873 = m([
             "'MKD' ",
             ,
             1,
@@ -11733,12 +11757,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'MKD' 'MKD' #,##0.00",
             "-'MKD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b935650272 = m([
+          (b.b935650272 = m([
             "'MX$'",
             ,
             1,
@@ -11754,12 +11778,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'MX$''MX$'#,##0.00",
             "-'MX$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1797195561 = m([
+          (b.a1797195561 = m([
             "'MYR' ",
             ,
             1,
@@ -11775,12 +11799,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'MYR' 'MYR' #,##0.00",
             "-'MYR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1942767098 = m([
+          (b.a1942767098 = m([
             "'NGN' ",
             ,
             1,
@@ -11796,12 +11820,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'NGN' 'NGN' #,##0.00",
             "-'NGN' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1660011739 = m([
+          (b.b1660011739 = m([
             "'NOK' ",
             ,
             1,
@@ -11817,12 +11841,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'NOK' 'NOK' #,##0.00",
             "-'NOK' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b439215713 = m([
+          (b.b439215713 = m([
             "'NZ$'",
             ,
             1,
@@ -11838,12 +11862,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'NZ$''NZ$'#,##0.00",
             "-'NZ$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b2093404874 = m([
+          (b.b2093404874 = m([
             "'PEN' ",
             ,
             1,
@@ -11859,12 +11883,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'PEN' 'PEN' #,##0.00",
             "-'PEN' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1418133303 = m([
+          (b.a1418133303 = m([
             "'PHP' ",
             ,
             1,
@@ -11880,12 +11904,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'PHP' 'PHP' #,##0.00",
             "-'PHP' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b380452322 = m([
+          (b.b380452322 = m([
             "'PKR' ",
             ,
             1,
@@ -11901,12 +11925,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'PKR' 'PKR' #,##0",
             "-'PKR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b130476803 = m([
+          (b.b130476803 = m([
             "'PLN' ",
             ,
             1,
@@ -11922,12 +11946,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'PLN' 'PLN' #,##0.00",
             "-'PLN' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b2066446195 = m([
+          (b.b2066446195 = m([
             "'QAR' ",
             ,
             1,
@@ -11943,12 +11967,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'QAR' 'QAR' #,##0.00",
             "-'QAR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b923857026 = m([
+          (b.b923857026 = m([
             "'RON' ",
             ,
             1,
@@ -11964,12 +11988,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'RON' 'RON' #,##0.00",
             "-'RON' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b547081334 = m([
+          (b.b547081334 = m([
             "'RSD' ",
             ,
             1,
@@ -11985,12 +12009,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'RSD' 'RSD' #,##0",
             "-'RSD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1303255440 = m([
+          (b.a1303255440 = m([
             "'RUB' ",
             ,
             1,
@@ -12006,12 +12030,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'RUB' 'RUB' #,##0.00",
             "-'RUB' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1207452747 = m([
+          (b.a1207452747 = m([
             "'SAR' ",
             ,
             1,
@@ -12027,12 +12051,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'SAR' 'SAR' #,##0.00",
             "-'SAR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b2108331530 = m([
+          (b.b2108331530 = m([
             "'SEK' ",
             ,
             1,
@@ -12048,12 +12072,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'SEK' 'SEK' #,##0.00",
             "-'SEK' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a150715167 = m([
+          (b.a150715167 = m([
             "'SGD' ",
             ,
             1,
@@ -12069,12 +12093,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'SGD' 'SGD' #,##0.00",
             "-'SGD' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b2136117247 = m([
+          (b.b2136117247 = m([
             "'THB' ",
             ,
             1,
@@ -12090,12 +12114,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'THB' 'THB' #,##0.00",
             "-'THB' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1842895953 = m([
+          (b.b1842895953 = m([
             "'TND' ",
             ,
             1,
@@ -12111,12 +12135,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'TND' 'TND' #,##0.000",
             "-'TND' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1311552468 = m([
+          (b.a1311552468 = m([
             "'TRY' ",
             ,
             1,
@@ -12132,12 +12156,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'TRY' 'TRY' #,##0.00",
             "-'TRY' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1700831259 = m([
+          (b.b1700831259 = m([
             "'NT$'",
             ,
             1,
@@ -12153,12 +12177,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'NT$''NT$'#,##0.00",
             "-'NT$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1414774924 = m([
+          (b.b1414774924 = m([
             "'TZS' ",
             ,
             1,
@@ -12174,12 +12198,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'TZS' 'TZS' #,##0",
             "-'TZS' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a947003347 = m([
+          (b.a947003347 = m([
             "'UAH' ",
             ,
             1,
@@ -12195,12 +12219,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'UAH' 'UAH' #,##0.00",
             "-'UAH' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b260604499 = m([
+          (b.b260604499 = m([
             "'UGX' ",
             ,
             1,
@@ -12216,12 +12240,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'UGX' 'UGX' #,##0",
             "-'UGX' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b957349717 = m([
+          (b.b957349717 = m([
             "'$'",
             ,
             1,
@@ -12237,12 +12261,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'$''$'#,##0.00",
             "-'$'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1112140936 = m([
+          (b.b1112140936 = m([
             "'VEF' ",
             ,
             1,
@@ -12258,12 +12282,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'VEF' 'VEF' #,##0.00",
             "-'VEF' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a191006436 = m([
+          (b.a191006436 = m([
             "'₫'",
             ,
             1,
@@ -12279,12 +12303,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'₫''₫'#,##0",
             "-'₫'",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1928680804 = m([
+          (b.a1928680804 = m([
             "'ZAR' ",
             ,
             1,
@@ -12300,12 +12324,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'ZAR' 'ZAR' #,##0.00",
             "-'ZAR' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a311640203 = m([
+          (b.a311640203 = m([
             "'ZMW' ",
             ,
             1,
@@ -12321,12 +12345,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'ZMW' 'ZMW' #,##0.00",
             "-'ZMW' ",
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a71710728 = m([
+          (b.a71710728 = m([
             '',
             ,
             1,
@@ -12342,12 +12366,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b(),
+            h(),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a605057387 = m(
+          (b.a605057387 = m(
             [
               '',
               ,
@@ -12364,7 +12388,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b(),
+              h(),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -12385,9 +12409,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.a50324716 = m(
+          (b.a50324716 = m(
             [
               '',
               ,
@@ -12404,7 +12428,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b(),
+              h(),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -12425,9 +12449,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.a50325677 = m(
+          (b.a50325677 = m(
             [
               '',
               ,
@@ -12444,7 +12468,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b(),
+              h(),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -12465,9 +12489,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.b1911307442 = m([
+          (b.b1911307442 = m([
             '',
             ,
             1,
@@ -12483,12 +12507,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             '-#,##0.###',
             '-',
             '',
-            b('round'),
+            h('round'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b1158699306 = m(
+          (b.b1158699306 = m(
             [
               '',
               ,
@@ -12505,7 +12529,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               '-#,##0.###',
               '-',
               '',
-              b(),
+              h(),
               '∞',
               'NaN',
               { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
@@ -12526,9 +12550,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 maxExponent: 14,
               },
             ],
-            h('en').pluralGenerator({}),
+            b('en').pluralGenerator({}),
           )),
-          (h.b886154446 = m([
+          (b.b886154446 = m([
             "'$'",
             ,
             1,
@@ -12544,12 +12568,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'$''$'#,##0.00",
             "-'$'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b510005318 = m([
+          (b.b510005318 = m([
             "'€'",
             ,
             1,
@@ -12565,12 +12589,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'€''€'#,##0.00",
             "-'€'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a506369329 = m([
+          (b.a506369329 = m([
             "'£'",
             ,
             1,
@@ -12586,12 +12610,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'£''£'#,##0.00",
             "-'£'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b389173996 = m([
+          (b.b389173996 = m([
             "'CA$'",
             ,
             1,
@@ -12607,12 +12631,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'CA$''CA$'#,##0.00",
             "-'CA$'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b25321699 = m([
+          (b.b25321699 = m([
             "'A$'",
             ,
             1,
@@ -12628,12 +12652,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'A$''A$'#,##0.00",
             "-'A$'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.b740037018 = m([
+          (b.b740037018 = m([
             "'NZ$'",
             ,
             1,
@@ -12649,91 +12673,91 @@ window.__SCRIPTS_LOADED__.vendor &&
             "-'NZ$''NZ$'#,##0.00",
             "-'NZ$'",
             '',
-            b('ceil'),
+            h('ceil'),
             '∞',
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
-          (h.a1662346136 = y(function (e) {
+          (b.a1662346136 = y(function (e) {
             var t = !String(e).split('.')[1]
             return 1 == e && t ? 'one' : 'other'
           })),
-          (h.b1259832358 = p(h('en').numberFormatter({ raw: "'AED' #,##0.00" }))),
-          (h.a886759321 = p(h('en').numberFormatter({ raw: "'ALL' #,##0" }))),
-          (h.a2117218168 = p(h('en').numberFormatter({ raw: "'ARS' #,##0.00" }))),
-          (h.a55324650 = p(h('en').numberFormatter({ raw: "'A$'#,##0.00" }))),
-          (h.a1485592908 = p(h('en').numberFormatter({ raw: "'BAM' #,##0.00" }))),
-          (h.b1750690447 = p(h('en').numberFormatter({ raw: "'BGN' #,##0.00" }))),
-          (h.b1149478276 = p(h('en').numberFormatter({ raw: "'BHD' #,##0.000" }))),
-          (h.b635342850 = p(h('en').numberFormatter({ raw: "'R$'#,##0.00" }))),
-          (h.a1453990527 = p(h('en').numberFormatter({ raw: "'BYR' #,##0" }))),
-          (h.b1324226412 = p(h('en').numberFormatter({ raw: "'CA$'#,##0.00" }))),
-          (h.a650590361 = p(h('en').numberFormatter({ raw: "'CHF' #,##0.00" }))),
-          (h.a191929299 = p(h('en').numberFormatter({ raw: "'CLP' #,##0" }))),
-          (h.b2070368276 = p(h('en').numberFormatter({ raw: "'CN¥'#,##0.00" }))),
-          (h.b1440526954 = p(h('en').numberFormatter({ raw: "'COP' #,##0" }))),
-          (h.b411066810 = p(h('en').numberFormatter({ raw: "'CZK' #,##0.00" }))),
-          (h.a904090198 = p(h('en').numberFormatter({ raw: "'DKK' #,##0.00" }))),
-          (h.a1131339468 = p(h('en').numberFormatter({ raw: "'DZD' #,##0.00" }))),
-          (h.b759968436 = p(h('en').numberFormatter({ raw: "'EGP' #,##0.00" }))),
-          (h.b1162560488 = p(h('en').numberFormatter({ raw: "'€'#,##0.00" }))),
-          (h.b1711866171 = p(h('en').numberFormatter({ raw: "'£'#,##0.00" }))),
-          (h.b595923928 = p(h('en').numberFormatter({ raw: "'GHS' #,##0.00" }))),
-          (h.a1406927350 = p(h('en').numberFormatter({ raw: "'GTQ' #,##0.00" }))),
-          (h.b915007111 = p(h('en').numberFormatter({ raw: "'HK$'#,##0.00" }))),
-          (h.a1202955417 = p(h('en').numberFormatter({ raw: "'HRK' #,##0.00" }))),
-          (h.b572646591 = p(h('en').numberFormatter({ raw: "'HUF' #,##0.00" }))),
-          (h.b688947133 = p(h('en').numberFormatter({ raw: "'IDR' #,##0" }))),
-          (h.a2144744170 = p(h('en').numberFormatter({ raw: "'₪'#,##0.00" }))),
-          (h.b403844915 = p(h('en').numberFormatter({ raw: "'₹'#,##0.00" }))),
-          (h.a1857858014 = p(h('en').numberFormatter({ raw: "'IQD' #,##0" }))),
-          (h.b980590457 = p(h('en').numberFormatter({ raw: "'¥'#,##0" }))),
-          (h.b582160927 = p(h('en').numberFormatter({ raw: "'KES' #,##0.00" }))),
-          (h.b1814998358 = p(h('en').numberFormatter({ raw: "'₩'#,##0" }))),
-          (h.a2078566178 = p(h('en').numberFormatter({ raw: "'KWD' #,##0.000" }))),
-          (h.b1587749088 = p(h('en').numberFormatter({ raw: "'LBP' #,##0" }))),
-          (h.b1075992246 = p(h('en').numberFormatter({ raw: "'MAD' #,##0.00" }))),
-          (h.b790890028 = p(h('en').numberFormatter({ raw: "'MKD' #,##0.00" }))),
-          (h.b1851952553 = p(h('en').numberFormatter({ raw: "'MX$'#,##0.00" }))),
-          (h.b849932268 = p(h('en').numberFormatter({ raw: "'MYR' #,##0.00" }))),
-          (h.a1983164389 = p(h('en').numberFormatter({ raw: "'NGN' #,##0.00" }))),
-          (h.a407371792 = p(h('en').numberFormatter({ raw: "'NOK' #,##0.00" }))),
-          (h.a1379573634 = p(h('en').numberFormatter({ raw: "'NZ$'#,##0.00" }))),
-          (h.b601189599 = p(h('en').numberFormatter({ raw: "'PEN' #,##0.00" }))),
-          (h.a2118579746 = p(h('en').numberFormatter({ raw: "'PHP' #,##0.00" }))),
-          (h.a543381795 = p(h('en').numberFormatter({ raw: "'PKR' #,##0" }))),
-          (h.a1316368872 = p(h('en').numberFormatter({ raw: "'PLN' #,##0.00" }))),
-          (h.a2001089912 = p(h('en').numberFormatter({ raw: "'QAR' #,##0.00" }))),
-          (h.b1125434007 = p(h('en').numberFormatter({ raw: "'RON' #,##0.00" }))),
-          (h.a2138289207 = p(h('en').numberFormatter({ raw: "'RSD' #,##0" }))),
-          (h.b438929029 = p(h('en').numberFormatter({ raw: "'RUB' #,##0.00" }))),
-          (h.a1191743286 = p(h('en').numberFormatter({ raw: "'SAR' #,##0.00" }))),
-          (h.a246386657 = p(h('en').numberFormatter({ raw: "'SEK' #,##0.00" }))),
-          (h.a1820989962 = p(h('en').numberFormatter({ raw: "'SGD' #,##0.00" }))),
-          (h.a99078380 = p(h('en').numberFormatter({ raw: "'THB' #,##0.00" }))),
-          (h.a1186391472 = p(h('en').numberFormatter({ raw: "'TND' #,##0.000" }))),
-          (h.a1042651071 = p(h('en').numberFormatter({ raw: "'TRY' #,##0.00" }))),
-          (h.a583990009 = p(h('en').numberFormatter({ raw: "'NT$'#,##0.00" }))),
-          (h.b619028979 = p(h('en').numberFormatter({ raw: "'TZS' #,##0" }))),
-          (h.a96105150 = p(h('en').numberFormatter({ raw: "'UAH' #,##0.00" }))),
-          (h.a1584226356 = p(h('en').numberFormatter({ raw: "'UGX' #,##0" }))),
-          (h.b1223214380 = p(h('en').numberFormatter({ raw: "'$'#,##0.00" }))),
-          (h.a1036704611 = p(h('en').numberFormatter({ raw: "'VEF' #,##0.00" }))),
-          (h.a377044846 = p(h('en').numberFormatter({ raw: "'₫'#,##0" }))),
-          (h.a506513743 = p(h('en').numberFormatter({ raw: "'ZAR' #,##0.00" }))),
-          (h.b1585198218 = p(h('en').numberFormatter({ raw: "'ZMW' #,##0.00" }))),
-          (h.b1207917069 = p(h('en').numberFormatter({ round: 'ceil', raw: "'$'#,##0.00" }))),
-          (h.a330342455 = p(h('en').numberFormatter({ round: 'ceil', raw: "'€'#,##0.00" }))),
-          (h.a1646145572 = p(h('en').numberFormatter({ round: 'ceil', raw: "'£'#,##0.00" }))),
-          (h.a1608008627 = p(h('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
-          (h.a1321204873 = p(h('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
-          (h.a1653031457 = p(h('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
-          (h.b129255162 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.b1259832358 = p(b('en').numberFormatter({ raw: "'AED' #,##0.00" }))),
+          (b.a886759321 = p(b('en').numberFormatter({ raw: "'ALL' #,##0" }))),
+          (b.a2117218168 = p(b('en').numberFormatter({ raw: "'ARS' #,##0.00" }))),
+          (b.a55324650 = p(b('en').numberFormatter({ raw: "'A$'#,##0.00" }))),
+          (b.a1485592908 = p(b('en').numberFormatter({ raw: "'BAM' #,##0.00" }))),
+          (b.b1750690447 = p(b('en').numberFormatter({ raw: "'BGN' #,##0.00" }))),
+          (b.b1149478276 = p(b('en').numberFormatter({ raw: "'BHD' #,##0.000" }))),
+          (b.b635342850 = p(b('en').numberFormatter({ raw: "'R$'#,##0.00" }))),
+          (b.a1453990527 = p(b('en').numberFormatter({ raw: "'BYR' #,##0" }))),
+          (b.b1324226412 = p(b('en').numberFormatter({ raw: "'CA$'#,##0.00" }))),
+          (b.a650590361 = p(b('en').numberFormatter({ raw: "'CHF' #,##0.00" }))),
+          (b.a191929299 = p(b('en').numberFormatter({ raw: "'CLP' #,##0" }))),
+          (b.b2070368276 = p(b('en').numberFormatter({ raw: "'CN¥'#,##0.00" }))),
+          (b.b1440526954 = p(b('en').numberFormatter({ raw: "'COP' #,##0" }))),
+          (b.b411066810 = p(b('en').numberFormatter({ raw: "'CZK' #,##0.00" }))),
+          (b.a904090198 = p(b('en').numberFormatter({ raw: "'DKK' #,##0.00" }))),
+          (b.a1131339468 = p(b('en').numberFormatter({ raw: "'DZD' #,##0.00" }))),
+          (b.b759968436 = p(b('en').numberFormatter({ raw: "'EGP' #,##0.00" }))),
+          (b.b1162560488 = p(b('en').numberFormatter({ raw: "'€'#,##0.00" }))),
+          (b.b1711866171 = p(b('en').numberFormatter({ raw: "'£'#,##0.00" }))),
+          (b.b595923928 = p(b('en').numberFormatter({ raw: "'GHS' #,##0.00" }))),
+          (b.a1406927350 = p(b('en').numberFormatter({ raw: "'GTQ' #,##0.00" }))),
+          (b.b915007111 = p(b('en').numberFormatter({ raw: "'HK$'#,##0.00" }))),
+          (b.a1202955417 = p(b('en').numberFormatter({ raw: "'HRK' #,##0.00" }))),
+          (b.b572646591 = p(b('en').numberFormatter({ raw: "'HUF' #,##0.00" }))),
+          (b.b688947133 = p(b('en').numberFormatter({ raw: "'IDR' #,##0" }))),
+          (b.a2144744170 = p(b('en').numberFormatter({ raw: "'₪'#,##0.00" }))),
+          (b.b403844915 = p(b('en').numberFormatter({ raw: "'₹'#,##0.00" }))),
+          (b.a1857858014 = p(b('en').numberFormatter({ raw: "'IQD' #,##0" }))),
+          (b.b980590457 = p(b('en').numberFormatter({ raw: "'¥'#,##0" }))),
+          (b.b582160927 = p(b('en').numberFormatter({ raw: "'KES' #,##0.00" }))),
+          (b.b1814998358 = p(b('en').numberFormatter({ raw: "'₩'#,##0" }))),
+          (b.a2078566178 = p(b('en').numberFormatter({ raw: "'KWD' #,##0.000" }))),
+          (b.b1587749088 = p(b('en').numberFormatter({ raw: "'LBP' #,##0" }))),
+          (b.b1075992246 = p(b('en').numberFormatter({ raw: "'MAD' #,##0.00" }))),
+          (b.b790890028 = p(b('en').numberFormatter({ raw: "'MKD' #,##0.00" }))),
+          (b.b1851952553 = p(b('en').numberFormatter({ raw: "'MX$'#,##0.00" }))),
+          (b.b849932268 = p(b('en').numberFormatter({ raw: "'MYR' #,##0.00" }))),
+          (b.a1983164389 = p(b('en').numberFormatter({ raw: "'NGN' #,##0.00" }))),
+          (b.a407371792 = p(b('en').numberFormatter({ raw: "'NOK' #,##0.00" }))),
+          (b.a1379573634 = p(b('en').numberFormatter({ raw: "'NZ$'#,##0.00" }))),
+          (b.b601189599 = p(b('en').numberFormatter({ raw: "'PEN' #,##0.00" }))),
+          (b.a2118579746 = p(b('en').numberFormatter({ raw: "'PHP' #,##0.00" }))),
+          (b.a543381795 = p(b('en').numberFormatter({ raw: "'PKR' #,##0" }))),
+          (b.a1316368872 = p(b('en').numberFormatter({ raw: "'PLN' #,##0.00" }))),
+          (b.a2001089912 = p(b('en').numberFormatter({ raw: "'QAR' #,##0.00" }))),
+          (b.b1125434007 = p(b('en').numberFormatter({ raw: "'RON' #,##0.00" }))),
+          (b.a2138289207 = p(b('en').numberFormatter({ raw: "'RSD' #,##0" }))),
+          (b.b438929029 = p(b('en').numberFormatter({ raw: "'RUB' #,##0.00" }))),
+          (b.a1191743286 = p(b('en').numberFormatter({ raw: "'SAR' #,##0.00" }))),
+          (b.a246386657 = p(b('en').numberFormatter({ raw: "'SEK' #,##0.00" }))),
+          (b.a1820989962 = p(b('en').numberFormatter({ raw: "'SGD' #,##0.00" }))),
+          (b.a99078380 = p(b('en').numberFormatter({ raw: "'THB' #,##0.00" }))),
+          (b.a1186391472 = p(b('en').numberFormatter({ raw: "'TND' #,##0.000" }))),
+          (b.a1042651071 = p(b('en').numberFormatter({ raw: "'TRY' #,##0.00" }))),
+          (b.a583990009 = p(b('en').numberFormatter({ raw: "'NT$'#,##0.00" }))),
+          (b.b619028979 = p(b('en').numberFormatter({ raw: "'TZS' #,##0" }))),
+          (b.a96105150 = p(b('en').numberFormatter({ raw: "'UAH' #,##0.00" }))),
+          (b.a1584226356 = p(b('en').numberFormatter({ raw: "'UGX' #,##0" }))),
+          (b.b1223214380 = p(b('en').numberFormatter({ raw: "'$'#,##0.00" }))),
+          (b.a1036704611 = p(b('en').numberFormatter({ raw: "'VEF' #,##0.00" }))),
+          (b.a377044846 = p(b('en').numberFormatter({ raw: "'₫'#,##0" }))),
+          (b.a506513743 = p(b('en').numberFormatter({ raw: "'ZAR' #,##0.00" }))),
+          (b.b1585198218 = p(b('en').numberFormatter({ raw: "'ZMW' #,##0.00" }))),
+          (b.b1207917069 = p(b('en').numberFormatter({ round: 'ceil', raw: "'$'#,##0.00" }))),
+          (b.a330342455 = p(b('en').numberFormatter({ round: 'ceil', raw: "'€'#,##0.00" }))),
+          (b.a1646145572 = p(b('en').numberFormatter({ round: 'ceil', raw: "'£'#,##0.00" }))),
+          (b.a1608008627 = p(b('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
+          (b.a1321204873 = p(b('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
+          (b.a1653031457 = p(b('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
+          (b.b129255162 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
           )),
-          (h.a683162061 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a683162061 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'E, MMM d',
               timeSeparator: ':',
@@ -12760,8 +12784,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a1269826356 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a1269826356 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMM d',
               timeSeparator: ':',
@@ -12785,8 +12809,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a64793641 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a64793641 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMM d, y',
               timeSeparator: ':',
@@ -12810,12 +12834,12 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a86034624 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.a86034624 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             { pattern: 'MM/dd/y', timeSeparator: ':' },
           )),
-          (h.a1981853560 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a1981853560 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'E, MMM d, y',
               timeSeparator: ':',
@@ -12842,8 +12866,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a596533135 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.a596533135 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             {
               pattern: 'MMM d, h:mm a',
               timeSeparator: ':',
@@ -12868,8 +12892,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (h.b716432657 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.b716432657 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             {
               pattern: 'E h:mm a',
               timeSeparator: ':',
@@ -12879,8 +12903,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (h.b2093703356 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.b2093703356 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             {
               pattern: 'MMM d, y, h:mm a',
               timeSeparator: ':',
@@ -12905,8 +12929,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (h.a64108448 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a64108448 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMMM y',
               timeSeparator: ':',
@@ -12930,8 +12954,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a690550229 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a690550229 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMMM d',
               timeSeparator: ':',
@@ -12955,8 +12979,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.b683761904 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.b683761904 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMMM d, y',
               timeSeparator: ':',
@@ -12980,13 +13004,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a2011541116 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.a2011541116 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             { pattern: 'M/d/yy', timeSeparator: ':' },
           )),
-          (h.b696469024 = w({ 1: h('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
-          (h.b2072821078 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.b696469024 = w({ 1: b('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
+          (b.b2072821078 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             {
               pattern: "EEEE, MMMM d, y 'at' h:mm:ss a zzzz",
               timeSeparator: ':',
@@ -13027,8 +13051,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               hourFormat: '+HH:mm;-HH:mm',
             },
           )),
-          (h.a2122364151 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a2122364151 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMM d, y',
               timeSeparator: ':',
@@ -13052,8 +13076,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.a481468996 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }), 2: h('en').numberFormatter({ raw: '00' }) },
+          (b.a481468996 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
             {
               pattern: 'MMM d, y, h:mm:ss a',
               timeSeparator: ':',
@@ -13078,8 +13102,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               dayPeriods: { am: 'AM', pm: 'PM' },
             },
           )),
-          (h.a1989241728 = w(
-            { 1: h('en').numberFormatter({ raw: '0' }) },
+          (b.a1989241728 = w(
+            { 1: b('en').numberFormatter({ raw: '0' }) },
             {
               pattern: 'MMMM d, y',
               timeSeparator: ':',
@@ -13103,25 +13127,25 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             },
           )),
-          (h.b965415715 = g(h('en').dateToPartsFormatter({ skeleton: 'hm' }))),
-          (h.a1434444438 = g(h('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
-          (h.a878419275 = g(h('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
-          (h.a816076018 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMMd' }))),
-          (h.a837317001 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMdd' }))),
-          (h.b498196529 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
-          (h.b1883516954 = g(h('en').dateToPartsFormatter({ skeleton: 'MMMdhm' }))),
-          (h.b867606024 = g(h('en').dateToPartsFormatter({ skeleton: 'Ehm' }))),
-          (h.b1665844787 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
-          (h.a815390825 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
-          (h.a1441832606 = g(h('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
-          (h.a218160295 = g(h('en').dateToPartsFormatter({ date: 'long' }))),
-          (h.b93641787 = g(h('en').dateToPartsFormatter({ date: 'short' }))),
-          (h.a1493315369 = g(h('en').dateToPartsFormatter({ skeleton: 'y' }))),
-          (h.a1830739137 = g(h('en').dateToPartsFormatter({ datetime: 'full' }))),
-          (h.a1286203598 = g(h('en').dateToPartsFormatter({ date: 'medium' }))),
-          (h.b1998581093 = g(h('en').dateToPartsFormatter({ datetime: 'medium' }))),
-          (h.b490808361 = g(h('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
-          (h.b687161418 = T(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b965415715 = g(b('en').dateToPartsFormatter({ skeleton: 'hm' }))),
+          (b.a1434444438 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
+          (b.a878419275 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
+          (b.a816076018 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMd' }))),
+          (b.a837317001 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMdd' }))),
+          (b.b498196529 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
+          (b.b1883516954 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMdhm' }))),
+          (b.b867606024 = g(b('en').dateToPartsFormatter({ skeleton: 'Ehm' }))),
+          (b.b1665844787 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
+          (b.a815390825 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
+          (b.a1441832606 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
+          (b.a218160295 = g(b('en').dateToPartsFormatter({ date: 'long' }))),
+          (b.b93641787 = g(b('en').dateToPartsFormatter({ date: 'short' }))),
+          (b.a1493315369 = g(b('en').dateToPartsFormatter({ skeleton: 'y' }))),
+          (b.a1830739137 = g(b('en').dateToPartsFormatter({ datetime: 'full' }))),
+          (b.a1286203598 = g(b('en').dateToPartsFormatter({ date: 'medium' }))),
+          (b.b1998581093 = g(b('en').dateToPartsFormatter({ datetime: 'medium' }))),
+          (b.b490808361 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
+          (b.b687161418 = T(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             'relativeTime-type-future': {
               'relativeTimePattern-count-one': 'in {0} day',
               'relativeTimePattern-count-other': 'in {0} days',
@@ -13134,7 +13158,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             'relative-type-0': 'today',
             'relative-type-1': 'tomorrow',
           })),
-          (h.a2110709659 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a2110709659 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'seconds',
@@ -13143,7 +13167,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per second',
             },
           })),
-          (h.a223746363 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a223746363 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'minutes',
@@ -13152,7 +13176,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per minute',
             },
           })),
-          (h.b2116965749 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b2116965749 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'hours',
@@ -13161,43 +13185,43 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per hour',
             },
           })),
-          (h.b1436183524 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b1436183524 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
           })),
-          (h.b1554153647 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b1554153647 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'secs', one: '{0} sec', other: '{0} sec', perUnitPattern: '{0}/s' },
           })),
-          (h.a1963255228 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a1963255228 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'min', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/min' },
           })),
-          (h.a79526321 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a79526321 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'mins', one: '{0} min', other: '{0} min', perUnitPattern: '{0}/min' },
           })),
-          (h.b1193188596 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b1193188596 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hour', one: '{0}h', other: '{0}h', perUnitPattern: '{0}/h' },
           })),
-          (h.a531894881 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a531894881 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'hours', one: '{0} hr', other: '{0} hr', perUnitPattern: '{0}/h' },
           })),
-          (h.b1132522088 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b1132522088 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'day', one: '{0}d', other: '{0}d', perUnitPattern: '{0}/d' },
           })),
-          (h.b1844277225 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b1844277225 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: { displayName: 'days', one: '{0} day', other: '{0} days', perUnitPattern: '{0} per day' },
           })),
-          (h.b2134163460 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b2134163460 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'month', one: '{0}m', other: '{0}m', perUnitPattern: '{0}/m' },
           })),
-          (h.a1064174459 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a1064174459 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'months',
@@ -13206,11 +13230,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per month',
             },
           })),
-          (h.a211373797 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.a211373797 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0}/{1}',
             unitProperties: { displayName: 'yr', one: '{0}y', other: '{0}y', perUnitPattern: '{0}/y' },
           })),
-          (h.b636176220 = v(h('en').numberFormatter({}), h('en').pluralGenerator({}), {
+          (b.b636176220 = v(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
             compoundUnitPattern: '{0} per {1}',
             unitProperties: {
               displayName: 'years',
@@ -13219,135 +13243,135 @@ window.__SCRIPTS_LOADED__.vendor &&
               perUnitPattern: '{0} per year',
             },
           })),
-          (h.a1379198057 = v(
-            h('en').numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: 'truncate' }),
-            h('en').pluralGenerator({}),
+          (b.a1379198057 = v(
+            b('en').numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: 'truncate' }),
+            b('en').pluralGenerator({}),
             {
               compoundUnitPattern: '{0}/{1}',
               unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
             },
           )),
-          a('d58baa7f', h.a527220190),
-          a('ia24dc8d', h.b468386326),
-          a('iab73d4b', h.a694716112),
-          a('i3b7a017', h.a2110709659),
-          a('ie5d110f', h.a223746363),
-          a('df5f11b3', h.b2116965749),
-          a('c333da63', h.b687161418),
-          a('d725a289', h.b965415715),
-          a('h8054d91', h.a1434444438),
-          a('ccaa970f', h.a878419275),
-          a('g08cbabb', h.b1729690817),
-          a('e8733ed9', h.b1436183524),
-          a('i61fef37', h.b1554153647),
-          a('be59d8c3', h.a1963255228),
-          a('ba705e27', h.a79526321),
-          a('i3d087db', h.b1193188596),
-          a('j86b0d8d', h.a531894881),
-          a('ga8d18c9', h.b1132522088),
-          a('a91e7d49', h.b1844277225),
-          a('id952a69', h.b2134163460),
-          a('ga09ab65', h.a1064174459),
-          a('c83b901d', h.a211373797),
-          a('a55b9fed', h.b636176220),
-          a('jade381b', h.a816076018),
-          a('f668e929', h.b385502835),
-          a('i2785009', h.b1982794438),
-          a('c778d80b', h.b1653028677),
-          a('e8d93005', h.a1259667653),
-          a('d46781af', h.a1379198057),
-          a('ba316f05', h.a258143208),
-          a('c0bdd345', h.b810332058),
-          a('e18e399b', h.a837317001),
-          a('aa2aa1a1', h.b498196529),
-          a('fc209bb7', h.b1883516954),
-          a('h0e4cdf5', h.b867606024),
-          a('bfbc051d', h.b1665844787),
-          a('g727ddcf', h.a815390825),
-          a('da44942d', h.a1441832606),
-          a('ba2e82a1', h.a218160295),
-          a('a9f397f3', h.b93641787),
-          a('d7d71245', h.a1493315369),
-          a('g8d1b99b', h.a1830739137),
-          a('d857e44d', h.b1259832358),
-          a('cb87e3db', h.a886759321),
-          a('a9d5ffd1', h.a2117218168),
-          a('a0e8371d', h.a55324650),
-          a('gcc50dc9', h.a1485592908),
-          a('a0cc8f2d', h.b1750690447),
-          a('i31c32c5', h.b1149478276),
-          a('i7dc69e9', h.b635342850),
-          a('c14a6c03', h.a1453990527),
-          a('jaa3d537', h.b1324226412),
-          a('a824080b', h.a650590361),
-          a('d9c0bedb', h.a191929299),
-          a('bf8c0613', h.b2070368276),
-          a('i8163625', h.b1440526954),
-          a('adb53ba1', h.b411066810),
-          a('iabf697d', h.a904090198),
-          a('a1a0555b', h.a1131339468),
-          a('f266f3d9', h.b759968436),
-          a('a9a8652b', h.b1162560488),
-          a('dbf40761', h.b1711866171),
-          a('b0d993d9', h.b595923928),
-          a('ac1308e1', h.a1406927350),
-          a('a7889ab3', h.b915007111),
-          a('c614f5cd', h.a1202955417),
-          a('i55d57e3', h.b572646591),
-          a('e4b6002b', h.b688947133),
-          a('d28e983b', h.a2144744170),
-          a('e8c9232d', h.b403844915),
-          a('c8994ae1', h.a1857858014),
-          a('j348b9c9', h.b980590457),
-          a('i6f93b9b', h.b582160927),
-          a('c6150bd5', h.b1814998358),
-          a('i8921e09', h.a2078566178),
-          a('hecdb149', h.b1587749088),
-          a('fdd039b7', h.b1075992246),
-          a('f30c2c37', h.b790890028),
-          a('d9ea7bff', h.b1851952553),
-          a('ea3df4b7', h.b849932268),
-          a('jaac21bb', h.a1983164389),
-          a('hb435ced', h.a407371792),
-          a('ce699d81', h.a1379573634),
-          a('bc56d3d7', h.b601189599),
-          a('f8561913', h.a2118579746),
-          a('g6485d53', h.a543381795),
-          a('ff561cc1', h.a1316368872),
-          a('b42011d3', h.a2001089912),
-          a('a6660bcd', h.b1125434007),
-          a('f9b80449', h.a2138289207),
-          a('gdee4d5d', h.b438929029),
-          a('h36f2103', h.a1191743286),
-          a('a19ad037', h.a246386657),
-          a('g713f699', h.a1820989962),
-          a('ff2e39af', h.a99078380),
-          a('be34316d', h.a1186391472),
-          a('aef81b75', h.a1042651071),
-          a('fcce70a5', h.a583990009),
-          a('jc9d352f', h.b619028979),
-          a('be1cb8c5', h.a96105150),
-          a('j9371501', h.a1584226356),
-          a('j7d4397d', h.b1223214380),
-          a('d61441dd', h.a1036704611),
-          a('e2a99e97', h.a377044846),
-          a('f7ce19ab', h.a506513743),
-          a('b2a0213f', h.b1585198218),
-          a('h3629783', h.a1286203598),
-          a('ja781451', h.a71710728),
-          a('cfa1a7b9', h.a605057387),
-          a('d0a77c9b', h.b1998581093),
-          a('f9e9679f', h.a50324716),
-          a('eefcd267', h.a50325677),
-          a('fa8afc43', h.b1911307442),
-          a('cf8abf59', h.b1158699306),
-          a('d0783e71', h.b1207917069),
-          a('e8c823d3', h.a330342455),
-          a('gbf0e6c7', h.a1646145572),
-          a('j16ccfa3', h.a1608008627),
-          a('c93cb977', h.a1321204873),
-          a('c32b252b', h.a1653031457),
-          a('a1061083', h.b490808361)
+          a('d58baa7f', b.a527220190),
+          a('ia24dc8d', b.b468386326),
+          a('iab73d4b', b.a694716112),
+          a('i3b7a017', b.a2110709659),
+          a('ie5d110f', b.a223746363),
+          a('df5f11b3', b.b2116965749),
+          a('c333da63', b.b687161418),
+          a('d725a289', b.b965415715),
+          a('h8054d91', b.a1434444438),
+          a('ccaa970f', b.a878419275),
+          a('g08cbabb', b.b1729690817),
+          a('e8733ed9', b.b1436183524),
+          a('i61fef37', b.b1554153647),
+          a('be59d8c3', b.a1963255228),
+          a('ba705e27', b.a79526321),
+          a('i3d087db', b.b1193188596),
+          a('j86b0d8d', b.a531894881),
+          a('ga8d18c9', b.b1132522088),
+          a('a91e7d49', b.b1844277225),
+          a('id952a69', b.b2134163460),
+          a('ga09ab65', b.a1064174459),
+          a('c83b901d', b.a211373797),
+          a('a55b9fed', b.b636176220),
+          a('jade381b', b.a816076018),
+          a('f668e929', b.b385502835),
+          a('i2785009', b.b1982794438),
+          a('c778d80b', b.b1653028677),
+          a('e8d93005', b.a1259667653),
+          a('d46781af', b.a1379198057),
+          a('ba316f05', b.a258143208),
+          a('c0bdd345', b.b810332058),
+          a('e18e399b', b.a837317001),
+          a('aa2aa1a1', b.b498196529),
+          a('fc209bb7', b.b1883516954),
+          a('h0e4cdf5', b.b867606024),
+          a('bfbc051d', b.b1665844787),
+          a('g727ddcf', b.a815390825),
+          a('da44942d', b.a1441832606),
+          a('ba2e82a1', b.a218160295),
+          a('a9f397f3', b.b93641787),
+          a('d7d71245', b.a1493315369),
+          a('g8d1b99b', b.a1830739137),
+          a('d857e44d', b.b1259832358),
+          a('cb87e3db', b.a886759321),
+          a('a9d5ffd1', b.a2117218168),
+          a('a0e8371d', b.a55324650),
+          a('gcc50dc9', b.a1485592908),
+          a('a0cc8f2d', b.b1750690447),
+          a('i31c32c5', b.b1149478276),
+          a('i7dc69e9', b.b635342850),
+          a('c14a6c03', b.a1453990527),
+          a('jaa3d537', b.b1324226412),
+          a('a824080b', b.a650590361),
+          a('d9c0bedb', b.a191929299),
+          a('bf8c0613', b.b2070368276),
+          a('i8163625', b.b1440526954),
+          a('adb53ba1', b.b411066810),
+          a('iabf697d', b.a904090198),
+          a('a1a0555b', b.a1131339468),
+          a('f266f3d9', b.b759968436),
+          a('a9a8652b', b.b1162560488),
+          a('dbf40761', b.b1711866171),
+          a('b0d993d9', b.b595923928),
+          a('ac1308e1', b.a1406927350),
+          a('a7889ab3', b.b915007111),
+          a('c614f5cd', b.a1202955417),
+          a('i55d57e3', b.b572646591),
+          a('e4b6002b', b.b688947133),
+          a('d28e983b', b.a2144744170),
+          a('e8c9232d', b.b403844915),
+          a('c8994ae1', b.a1857858014),
+          a('j348b9c9', b.b980590457),
+          a('i6f93b9b', b.b582160927),
+          a('c6150bd5', b.b1814998358),
+          a('i8921e09', b.a2078566178),
+          a('hecdb149', b.b1587749088),
+          a('fdd039b7', b.b1075992246),
+          a('f30c2c37', b.b790890028),
+          a('d9ea7bff', b.b1851952553),
+          a('ea3df4b7', b.b849932268),
+          a('jaac21bb', b.a1983164389),
+          a('hb435ced', b.a407371792),
+          a('ce699d81', b.a1379573634),
+          a('bc56d3d7', b.b601189599),
+          a('f8561913', b.a2118579746),
+          a('g6485d53', b.a543381795),
+          a('ff561cc1', b.a1316368872),
+          a('b42011d3', b.a2001089912),
+          a('a6660bcd', b.b1125434007),
+          a('f9b80449', b.a2138289207),
+          a('gdee4d5d', b.b438929029),
+          a('h36f2103', b.a1191743286),
+          a('a19ad037', b.a246386657),
+          a('g713f699', b.a1820989962),
+          a('ff2e39af', b.a99078380),
+          a('be34316d', b.a1186391472),
+          a('aef81b75', b.a1042651071),
+          a('fcce70a5', b.a583990009),
+          a('jc9d352f', b.b619028979),
+          a('be1cb8c5', b.a96105150),
+          a('j9371501', b.a1584226356),
+          a('j7d4397d', b.b1223214380),
+          a('d61441dd', b.a1036704611),
+          a('e2a99e97', b.a377044846),
+          a('f7ce19ab', b.a506513743),
+          a('b2a0213f', b.b1585198218),
+          a('h3629783', b.a1286203598),
+          a('ja781451', b.a71710728),
+          a('cfa1a7b9', b.a605057387),
+          a('d0a77c9b', b.b1998581093),
+          a('f9e9679f', b.a50324716),
+          a('eefcd267', b.a50325677),
+          a('fa8afc43', b.b1911307442),
+          a('cf8abf59', b.b1158699306),
+          a('d0783e71', b.b1207917069),
+          a('e8c823d3', b.a330342455),
+          a('gbf0e6c7', b.a1646145572),
+          a('j16ccfa3', b.a1608008627),
+          a('c93cb977', b.a1321204873),
+          a('c32b252b', b.a1653031457),
+          a('a1061083', b.b490808361)
       },
       79404: (e, t, o) => {
         e.exports = o(61174)
