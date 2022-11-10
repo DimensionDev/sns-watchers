@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'a93a6e7ea6ab6658b167f4187bfb9c22c714ee04',
+  feature_set_token: '28b59d910ffb7a09a977cc67f35679ed5764b9f7',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -770,6 +770,7 @@ var manifest = {
     responsive_web_twitter_blue_signup_nux_enabled: { value: !0 },
     responsive_web_twitter_blue_subscriptions_disabled: { value: !0 },
     responsive_web_twitter_blue_verified_badge_is_enabled: { value: !1 },
+    responsive_web_twitter_blue_verified_badge_ntab_all_badge_is_enabled: { value: !1 },
     responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled: { value: !1 },
     responsive_web_twitter_blue_verified_badge_ntab_verified_tab_index: { value: 0 },
     responsive_web_twitter_blue_verified_badge_settings_blue_verified_features_enabled: { value: !1 },
@@ -2170,11 +2171,6 @@ var manifest = {
       name: 'edge_to_edge_m2_android_12939',
       type: 'experiment',
       enumeration_values: [],
-    },
-    edit_tweet_m1_15491: {
-      name: 'edit_tweet_m1_15491',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     employee_role: { name: 'employee_role', type: 'boolean', defaultValue: !1 },
     enable_label_appealing_misinfo_enabled: {
@@ -4708,6 +4704,11 @@ var manifest = {
     responsive_web_twitter_blue_verified_badge_educational_prompt_enabled: {
       name: 'responsive_web_twitter_blue_verified_badge_educational_prompt_enabled',
       type: 'string',
+    },
+    responsive_web_twitter_blue_verified_badge_ntab_all_badge_is_enabled: {
+      name: 'responsive_web_twitter_blue_verified_badge_ntab_all_badge_is_enabled',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_twitter_blue_verified_badge_ntab_verified_tab_enabled: {
       name: 'responsive_web_twitter_blue_verified_badge_ntab_verified_tab_enabled',

@@ -6492,7 +6492,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f39aef7c', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee956', 'Get early access'),
-          a('f769af72', 'Not all features are available on all devices.'),
           a('ebf5ec26', 'Coming soon'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
@@ -7492,9 +7491,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b1a0f1ec', 'April'),
           a('daf779c8', 'May'),
           a('c6ad074e', 'June'),
-          a('f1db106c', 'July')
-        a('i4e80b7a', 'August'),
-          a('efa6cc1e', 'September'),
+          a('f1db106c', 'July'),
+          a('i4e80b7a', 'August')
+        a('efa6cc1e', 'September'),
           a('f40a0cbe', 'October'),
           a('ac74a31c', 'November'),
           a('i6c1e4b2', 'December'),
@@ -7776,6 +7775,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d2dbfa92', 'Cancelled'),
           a('cd734f66', 'Today'),
           a('c8891d06', 'Tomorrow'),
+          a('d2414d31', function (e) {
+            return e.count + ' unread items'
+          }),
+          a('fb9f6f39', function (e) {
+            return e.count + '+'
+          }),
           a('d6b930d4', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
           a('eb124f96', 'AM/PM'),
