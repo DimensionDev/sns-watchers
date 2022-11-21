@@ -1920,6 +1920,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
           a('gb67e44c', 'Submit without explanation'),
           a('d6b758a2', 'Submit without source'),
+          a('ddc74d14', 'Birdwatch is now Community Notes!'),
+          a(
+            'aa7d4534',
+            'The new name helps ensure everyone on Twitter understands the value of collaboratively keeping each other informed.',
+          ),
           a('eb5b4a12', 'About Community Notes aliases'),
           a('ja0ee360', 'Choose your alias'),
           a('f7b7c250', 'Choose a Community Notes alias to stay private'),
@@ -2370,13 +2375,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'g98ea6c0',
             'Twitter doesn’t write, rate or moderate notes (unless they break the Twitter rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed.',
-          ),
-          a('cc720e6a', 'Community Notes is built on data transparency'),
+          )
+        a('cc720e6a', 'Community Notes is built on data transparency'),
           a(
             'd4a6b322',
             'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
-          )
-        a('c359263a', 'Learn how to use and analyze Community Notes data '),
+          ),
+          a('c359263a', 'Learn how to use and analyze Community Notes data '),
           a('b8a27fe2', 'in our guide'),
           a('j1c99e00', 'Notes data'),
           a('i6f69314', 'Ratings data'),
@@ -3653,10 +3658,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd76fe4fc',
             'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
           ),
-          a('a4b69cbc', 'Display language'),
-          a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
-          a('cab61d58', 'Select additional languages')
-        a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
+          a('a4b69cbc', 'Display language')
+        a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
+          a('cab61d58', 'Select additional languages'),
+          a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
           a('bca1de4a', 'Additional languages you speak'),
           a('c3aa76c4', 'Languages you may know'),
           a(
@@ -4903,16 +4908,16 @@ window.__SCRIPTS_LOADED__.vendor &&
             'g7f66daa',
             'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
           ),
-          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
-          a('fb278c82', 'What’s this preview?'),
+          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)')
+        a('fb278c82', 'What’s this preview?'),
           a(
             'e6b60e94',
             'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
-          )
-        a(
-          'j6cab6ec',
-          'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
-        ),
+          ),
+          a(
+            'j6cab6ec',
+            'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
+          ),
           a(
             'db8346ee',
             'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
@@ -6027,9 +6032,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.',
           ),
           a('ac3fd6e2', 'You don’t have any recommendations — yet'),
-          a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
-          a('bd7c0390', 'Quote Tweets'),
-          a('ebcf1374', 'No Quote Tweets yet')
+          a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6049,7 +6052,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
+        a('bd7c0390', 'Quote Tweets'),
+          a('ebcf1374', 'No Quote Tweets yet'),
+          a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
           a('bea0e410', 'Amplify Tweets you like'),
           a(
             'ee5cb3e0',
@@ -6192,8 +6197,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f173716e', '30-39'),
           a('ada329e6', '40-49'),
           a('j2950694', 'Above 50'),
+          a('a5c91a8e', '18-24'),
+          a('cf30cdfa', '25-34'),
+          a('gf672f7c', '35-44'),
+          a('jf28b41c', '45-54'),
+          a('ja78da94', '55-64'),
+          a('bcd9cf68', 'Above 65'),
           a('a3c544e8', 'Top countries'),
           a('f05f1838', 'Other / Not specified'),
+          a('fa5be588', 'Organic'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353e', 'Engagements'),
           a(
@@ -6304,7 +6316,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e7eb3684', 'Daily budget'),
           a('d9f6e3ce', 'Daily budget slider'),
           a('b3954eca', 'Duration in days slider'),
-          a('e1b48db4', 'Estimated reach is approximate. Actual reach for this promotion can’t be guaranteed.'),
+          a('ce665a60', 'Estimated reach is approximate. Actual reach can’t be guaranteed.'),
           a('i0c3b95c', 'The next round is on us!'),
           a('e8702feb', function (e) {
             return 'Get ' + e.couponAmount + ' on us!'
@@ -6367,30 +6379,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b07cc9f2', 'Region'),
           a('ce309bee', 'Metro'),
           a('cc49d030', 'Postcode'),
-          a('c64974fc', 'Followers'),
-          a('i638f89c', 'Website visits'),
+          a('c3fca124', 'Boost engagement'),
+          a('d4f57cce', 'Grow your followers'),
+          a('c6daa762', 'Get more link clicks'),
           a('e1bca506', 'Your promoted Tweet is under review'),
           a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
-          a('d80964aa', 'Increase engagement'),
-          a('d4f57cce', 'Grow your followers'),
-          a('g06d6bf8', 'More link clicks'),
           a('c1a1817c', 'Your Tweet includes media'),
           a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
-          a('h277a2e8', 'Add a link to your Tweet'),
-          a('gd429fea', 'Make sure your Tweet includes a link.'),
-          a('icb22cde', 'Help me choose the right goal.'),
-          a(
-            'e974b2d4',
-            'Choose this if you want to focus on getting more clicks, Retweets, comments etc., on a particular Tweet.',
-          ),
-          a('b9c9b214', 'Choose this if you want to focus on reaching those who don’t currently follow you.'),
-          a('i0e569b0', 'Choose this if your focus is getting people to follow a link you’ve included in your Tweet.'),
-          a('d7d55f3c', '#PromotionGoals'),
-          a('b25fd3d6', 'What results are you looking for from this promotion?'),
-          a('bf214f48', 'Okay'),
+          a('c9a73b7c', 'Get more likes, Retweets, etc.'),
+          a('b0583654', 'Reach a new audience'),
+          a('a2d37164', 'Get more visitors to your site'),
           a('de43b660', 'Payment Methods'),
           a('hb4773a0', 'Add new payment method'),
           a('aa2a3dd4', 'Delete Card'),
@@ -6563,6 +6564,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d2004da3', function (e) {
             return 'You aren’t following @' + e.screenName
           }),
+          a('a64512a4', 'Lists timeline'),
           a('i0bcc456', 'When you do, you’ll be able to see their Lists.'),
           a('d8315ca0', 'Lists you’re on'),
           a('e74be9ac', 'Lists they’re on'),
@@ -6926,6 +6928,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
           }),
           a('i099d32e', 'Followers you know'),
+          a('c64974fc', 'Followers'),
           a('g0a2fbbe', 'You don’t have any Subscribers yet'),
           a('g65f4bac', 'You don’t have any followers yet'),
           a('c36cfddc', 'Looking for followers?'),
@@ -7501,13 +7504,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b5231e3f', 'Keep reading'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
-          }),
-          a('ac73eb5a', 'No change'),
+          })
+        a('ac73eb5a', 'No change'),
           a('c5a9f921', function (e) {
             return 'Up by ' + e.trendValuePositivePercent
           }),
-          a('jf83d092', 'Day')
-        a('af4abf20', 'Month'),
+          a('jf83d092', 'Day'),
+          a('af4abf20', 'Month'),
           a('b871f280', 'Year'),
           a('hac89ab0', 'January'),
           a('ef30b30a', 'February'),
