@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'df4cb2f235c23623d7142fdc9df579ad77f76c2c',
+  feature_set_token: '2c9f5c7c9e6cd6494a36afb6e38507a0000c95a9',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -965,7 +965,7 @@ var manifest = {
     super_follow_web_debug_enabled: { value: !1 },
     super_follow_web_edit_perks_enabled: { value: !0 },
     super_follow_web_onboarding_enabled: { value: !0 },
-    super_follow_web_rename_enabled: { value: !1 },
+    super_follow_web_rename_enabled: { value: !0 },
     targeted_project_friday_enabled: { value: !1 },
     topic_landing_page_clearer_controls_enabled: { value: !0 },
     topic_landing_page_cta_text: { value: 'control' },
@@ -2674,6 +2674,10 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
+    identity_verification_intake_for_blue_subscribers_enabled: {
+      name: 'identity_verification_intake_for_blue_subscribers_enabled',
+      type: 'string',
+    },
     identity_verification_landing_page_enabled: { name: 'identity_verification_landing_page_enabled', type: 'string' },
     identity_verification_badging_enabled: { name: 'identity_verification_badging_enabled', type: 'string' },
     identity_verification_intake_enabled: {
@@ -3455,6 +3459,10 @@ var manifest = {
       name: 'responsive_web_birdwatch_ratings_v2_enabled',
       type: 'boolean',
       defaultValue: !0,
+    },
+    responsive_web_birdwatch_download_user_enrollment_enabled: {
+      name: 'responsive_web_birdwatch_download_user_enrollment_enabled',
+      type: 'string',
     },
     responsive_web_branch_cpid_enabled: {
       name: 'responsive_web_branch_cpid_enabled',
@@ -5386,7 +5394,7 @@ var manifest = {
       name: 'super_follow_exclusive_tweet_notifications_enabled',
       type: 'string',
     },
-    super_follow_web_rename_enabled: { name: 'super_follow_web_rename_enabled', type: 'boolean', defaultValue: !1 },
+    super_follow_web_rename_enabled: { name: 'super_follow_web_rename_enabled', type: 'boolean', defaultValue: !0 },
     super_follow_inline_badge_enabled: { name: 'super_follow_inline_badge_enabled', type: 'string' },
     super_follow_web_debug_enabled: { name: 'super_follow_web_debug_enabled', type: 'boolean', defaultValue: !1 },
     super_follow_web_deactivate_enabled: {
