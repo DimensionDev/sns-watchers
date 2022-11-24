@@ -2386,9 +2386,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('j1c99e00', 'Notes data'),
           a('i6f69314', 'Ratings data'),
           a('b7e4c114', 'Note status history data'),
+          a('d7f19114', 'User enrollment status data'),
           a('h786cd7a', 'Notes data isn’t available yet'),
           a('d0fe8052', 'Ratings data isn’t available yet'),
           a('c0427f94', 'Note status history data isn’t available yet'),
+          a('g880d8c0', 'User enrollment status data isn’t available yet'),
           a('g0cacb75', 'Twitter Developer Agreement and Policy'),
           a('ed88e742', 'Copy link to Topic'),
           a('h92fe1be', 'Unfortunately, Community Notes is not available to you at this time.'),
@@ -3653,13 +3655,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('d495680e', 'Languages'),
           a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
-          a('eafe3288', 'Data usage'),
-          a(
-            'd76fe4fc',
-            'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
-          ),
-          a('a4b69cbc', 'Display language')
-        a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
+          a('eafe3288', 'Data usage')
+        a(
+          'd76fe4fc',
+          'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
+        ),
+          a('a4b69cbc', 'Display language'),
+          a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
           a('cab61d58', 'Select additional languages'),
           a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
           a('bca1de4a', 'Additional languages you speak'),
@@ -4903,13 +4905,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'h2c45110',
             'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
-          ),
-          a(
-            'g7f66daa',
-            'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
-          ),
-          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)')
-        a('fb278c82', 'What’s this preview?'),
+          )
+        a(
+          'g7f66daa',
+          'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
+        ),
+          a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
+          a('fb278c82', 'What’s this preview?'),
           a(
             'e6b60e94',
             'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
@@ -6027,12 +6029,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('dab58e32', 'When you add people, they’ll show up here.'),
           a('c308119e', 'How it works'),
           a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
-          a(
-            'fd6c37ec',
-            'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.',
-          ),
-          a('ac3fd6e2', 'You don’t have any recommendations — yet'),
-          a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.')
+          a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6052,7 +6049,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('bd7c0390', 'Quote Tweets'),
+        a('ac3fd6e2', 'You don’t have any recommendations — yet'),
+          a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
+          a('bd7c0390', 'Quote Tweets'),
           a('ebcf1374', 'No Quote Tweets yet'),
           a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
           a('bea0e410', 'Amplify Tweets you like'),
@@ -6804,12 +6803,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
           a('df422dfe', 'You have muted Tweets from this account.'),
-          a('d8ed0aae', 'This account is verified because it’s subscribed to Twitter Blue.'),
-          a('g776ca50', 'Verified account'),
           a(
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
           ),
+          a('d8ed0aae', 'This account is verified because it’s subscribed to Twitter Blue.'),
+          a('g776ca50', 'Verified account'),
           a('d834ab9c', 'Yes, view profile'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
@@ -7500,12 +7499,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
           a('ffb3fe6f', 'Keep reading'),
-          a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
-          a('b5231e3f', 'Keep reading'),
+          a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.')
+        a('b5231e3f', 'Keep reading'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
-          })
-        a('ac73eb5a', 'No change'),
+          }),
+          a('ac73eb5a', 'No change'),
           a('c5a9f921', function (e) {
             return 'Up by ' + e.trendValuePositivePercent
           }),

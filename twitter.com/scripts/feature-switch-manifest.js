@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '2c9f5c7c9e6cd6494a36afb6e38507a0000c95a9',
+  feature_set_token: '64b84df954664a1a938380e0fd0008da6028e7ac',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -380,6 +380,10 @@ var manifest = {
     gryphon_hide_quick_promote: { value: !1 },
     gryphon_optout_in_settings: { value: !1 },
     guest_broadcasting_timeline_decorations_enabled: { value: !1 },
+    hashfetti_all_hashflags: { value: !1 },
+    hashfetti_duration_ms: { value: 4e3 },
+    hashfetti_enabled: { value: !0 },
+    hashfetti_particle_count: { value: 30 },
     hashflags_animation_like_button_enabled: { value: !0 },
     home_timeline_extended_reactivity_tweet_clicks_enabled: { value: !1 },
     home_timeline_extended_reactivity_tweet_clicks_fatigue: { value: 5 },
@@ -483,7 +487,6 @@ var manifest = {
     responsive_web_birdwatch_consumption_enabled: { value: !1 },
     responsive_web_birdwatch_contribution_enabled: { value: !1 },
     responsive_web_birdwatch_country_allowed: { value: !1 },
-    responsive_web_birdwatch_deleted_notes_enabled: { value: !0 },
     responsive_web_birdwatch_earn_in_enabled: { value: !0 },
     responsive_web_birdwatch_earn_out_enabled: { value: !0 },
     responsive_web_birdwatch_hcomp_user: { value: !1 },
@@ -644,7 +647,7 @@ var manifest = {
     responsive_web_logged_out_gating_14992_ddg: { value: '' },
     responsive_web_logged_out_gating_15377_ddg: { value: '' },
     responsive_web_logged_out_gating_non_holdback_ddgs: { value: '' },
-    responsive_web_logged_out_notifications_enabled: { value: !1 },
+    responsive_web_logged_out_notifications_enabled: { value: !0 },
     responsive_web_logged_out_notifications_including_home: { value: !1 },
     responsive_web_login_input_type_email_enabled: { value: !1 },
     responsive_web_login_signup_sheet_app_install_cta_enabled: { value: !0 },
@@ -766,6 +769,7 @@ var manifest = {
     responsive_web_twitter_article_view_enabled: { value: !0 },
     responsive_web_twitter_blue_growth_primary_nav_enabled: { value: !1 },
     responsive_web_twitter_blue_home_redesign_enabled: { value: !0 },
+    responsive_web_twitter_blue_new_verification_copy_is_enabled: { value: !1 },
     responsive_web_twitter_blue_signup_nux_enabled: { value: !0 },
     responsive_web_twitter_blue_subscriptions_disabled: { value: !0 },
     responsive_web_twitter_blue_verified_badge_is_enabled: { value: !0 },
@@ -944,6 +948,7 @@ var manifest = {
     subscriptions_feature_1007: { value: !0 },
     subscriptions_feature_1009: { value: !0 },
     subscriptions_feature_1011: { value: !0 },
+    subscriptions_feature_1013: { value: !1 },
     subscriptions_feature_labs_1001: { value: !0 },
     subscriptions_feature_labs_1004: { value: !0 },
     subscriptions_long_video_rweb_new_copy_enabled: { value: !0 },
@@ -2395,6 +2400,10 @@ var manifest = {
       defaultValue: !1,
     },
     guest_broadcasting_by_default_enabled: { name: 'guest_broadcasting_by_default_enabled', type: 'string' },
+    hashfetti_enabled: { name: 'hashfetti_enabled', type: 'boolean', defaultValue: !0 },
+    hashfetti_all_hashflags: { name: 'hashfetti_all_hashflags', type: 'boolean', defaultValue: !1 },
+    hashfetti_duration_ms: { name: 'hashfetti_duration_ms', type: 'number', defaultValue: 4e3 },
+    hashfetti_particle_count: { name: 'hashfetti_particle_count', type: 'number', defaultValue: 30 },
     hashflags_animation_like_button_enabled: {
       name: 'hashflags_animation_like_button_enabled',
       type: 'boolean',
@@ -3382,8 +3391,7 @@ var manifest = {
     },
     responsive_web_birdwatch_deleted_notes_enabled: {
       name: 'responsive_web_birdwatch_deleted_notes_enabled',
-      type: 'boolean',
-      defaultValue: !0,
+      type: 'string',
     },
     responsive_web_birdwatch_ratings_m2_tags_enabled: {
       name: 'responsive_web_birdwatch_ratings_m2_tags_enabled',
@@ -4038,7 +4046,7 @@ var manifest = {
     responsive_web_logged_out_notifications_enabled: {
       name: 'responsive_web_logged_out_notifications_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_logged_out_notifications_including_home: {
       name: 'responsive_web_logged_out_notifications_including_home',
@@ -4672,6 +4680,11 @@ var manifest = {
       name: 'responsive_web_twitter_blue_home_redesign_enabled',
       type: 'boolean',
       defaultValue: !0,
+    },
+    responsive_web_twitter_blue_new_verification_copy_is_enabled: {
+      name: 'responsive_web_twitter_blue_new_verification_copy_is_enabled',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_twitter_blue_signup_nux_enabled: {
       name: 'responsive_web_twitter_blue_signup_nux_enabled',
@@ -5322,7 +5335,7 @@ var manifest = {
       defaultValue: !0,
     },
     subscriptions_feature_1008: { name: 'subscriptions_feature_1008', type: 'string' },
-    subscriptions_feature_1013: { name: 'subscriptions_feature_1013', type: 'string' },
+    subscriptions_feature_1013: { name: 'subscriptions_feature_1013', type: 'boolean', defaultValue: !1 },
     subscriptions_management_enabled: { name: 'subscriptions_management_enabled', type: 'boolean', defaultValue: !0 },
     subscriptions_enabled: { name: 'subscriptions_enabled', type: 'boolean', defaultValue: !0 },
     subscriptions_feature_labs_1006_a: { name: 'subscriptions_feature_labs_1006_a', type: 'string' },
@@ -5333,6 +5346,10 @@ var manifest = {
     subscriptions_stripe_testing: { name: 'subscriptions_stripe_testing', type: 'boolean', defaultValue: !1 },
     subscriptions_sign_up_enabled: { name: 'subscriptions_sign_up_enabled', type: 'boolean', defaultValue: !1 },
     subscriptions_feature_1003: { name: 'subscriptions_feature_1003', type: 'boolean', defaultValue: !0 },
+    subscriptions_is_blue_verified_upgrade_enabled: {
+      name: 'subscriptions_is_blue_verified_upgrade_enabled',
+      type: 'string',
+    },
     subscriptions_enforce_client_side_own_verified_badge_visibility_enabled: {
       name: 'subscriptions_enforce_client_side_own_verified_badge_visibility_enabled',
       type: 'string',
