@@ -131,6 +131,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cd24fe60', 'Please enter a valid phone number.'),
           a('d2fb334c', 'Twitter'),
           a('h7a9e4e2', 'NFT profile picture'),
+          a('i6fcb1d8', 'Business profile picture'),
           a('cfbea177', function (e) {
             return e.name + '’s Space'
           }),
@@ -1156,13 +1157,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
           a('fa816a0a', 'Reorder List'),
           a('ac832ae4', 'Pin List'),
-          a('cdb33880', 'Unpin List'),
-          a('d6917e0d', function (e) {
-            return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
-          })
-        a('a682906d', function (e) {
-          return e.count + ' like' + n(e.count, '', 's') + ' to go'
+          a('cdb33880', 'Unpin List')
+        a('d6917e0d', function (e) {
+          return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
         }),
+          a('a682906d', function (e) {
+            return e.count + ' like' + n(e.count, '', 's') + ' to go'
+          }),
           a('c837fcaa', 'Show more replies'),
           a('d228a9a0', 'Show more'),
           a('e4c6c30a', 'This Tweet is unavailable.'),
@@ -1188,6 +1189,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a407814e', 'Last edited'),
           a('d91a6826', 'This is the latest version of this Tweet.'),
           a('ffe16626', 'Reply filter is on.'),
+          a('f1c59d2e', 'Notify me'),
+          a('d54612a4', 'Notifying me'),
           a('b8f3500a', 'View thread in Reader'),
           a('b4947556', 'Translate Tweet'),
           a('he9c9634', 'Unable to fetch translation'),
@@ -2366,17 +2369,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             'b468ea24',
             'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
           ),
-          a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet'),
-          a(
-            'f6d04270',
-            'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
-          ),
+          a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet')
+        a(
+          'f6d04270',
+          'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
+        ),
           a('c8c2c892', 'Twitter doesn’t choose what shows up, the people do'),
           a(
             'g98ea6c0',
             'Twitter doesn’t write, rate or moderate notes (unless they break the Twitter rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed.',
-          )
-        a('cc720e6a', 'Community Notes is built on data transparency'),
+          ),
+          a('cc720e6a', 'Community Notes is built on data transparency'),
           a(
             'd4a6b322',
             'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
@@ -3652,14 +3655,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'a5ce82a4',
             'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
-          ),
-          a('d495680e', 'Languages'),
+          )
+        a('d495680e', 'Languages'),
           a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
-          a('eafe3288', 'Data usage')
-        a(
-          'd76fe4fc',
-          'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
-        ),
+          a('eafe3288', 'Data usage'),
+          a(
+            'd76fe4fc',
+            'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
+          ),
           a('a4b69cbc', 'Display language'),
           a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
           a('cab61d58', 'Select additional languages'),
@@ -4023,6 +4026,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d9d293b8', 'Website'),
           a('a990900c', 'Bio'),
           a('cb469ff6', 'Name can’t be blank'),
+          a(
+            'ja2274ee',
+            'Your blue checkmark will be hidden for a period of time after you edit your display name or profile photo.',
+          ),
           a('g511f468', 'Your avatar failed to update because some media didn’t upload'),
           a('ec3a116e', 'Your banner failed to update because some media didn’t upload.'),
           a('j94599ec', 'Add avatar photo'),
@@ -4886,14 +4893,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             'h580543e',
             'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
           ),
-          a(
-            'b737ee66',
-            'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.',
-          ),
-          a(
-            'a0bb2076',
-            'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
-          ),
+          a('b737ee66', 'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.')
+        a(
+          'a0bb2076',
+          'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
+        ),
           a(
             'ace46d40',
             'Hi and welcome to my Super Follows page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
@@ -4905,11 +4909,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'h2c45110',
             'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
-          )
-        a(
-          'g7f66daa',
-          'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
-        ),
+          ),
+          a(
+            'g7f66daa',
+            'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
+          ),
           a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
           a('fb278c82', 'What’s this preview?'),
           a(
@@ -6025,11 +6029,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('ad964e30', 'Edit your Twitter Circle'),
           a('ef8f5d90', 'Recommended'),
-          a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
-          a('dab58e32', 'When you add people, they’ll show up here.'),
-          a('c308119e', 'How it works'),
-          a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
-          a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.')
+          a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6049,7 +6049,14 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('ac3fd6e2', 'You don’t have any recommendations — yet'),
+        a('dab58e32', 'When you add people, they’ll show up here.'),
+          a('c308119e', 'How it works'),
+          a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
+          a(
+            'fd6c37ec',
+            'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.',
+          ),
+          a('ac3fd6e2', 'You don’t have any recommendations — yet'),
           a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
           a('bd7c0390', 'Quote Tweets'),
           a('ebcf1374', 'No Quote Tweets yet'),
@@ -6497,7 +6504,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f39aef7c', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee956', 'Get early access'),
-          a('ebf5ec26', 'Coming soon'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
             'gc7637d4',
@@ -6877,6 +6883,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('eaa65473', function (e) {
             return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
           }),
+          a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('eb023c94', 'What is an NFT?'),
           a('gc65c0aa', 'So what does this mean?'),
@@ -7493,14 +7500,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b140e3b2', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12384', 'Heads up'),
-          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
-          a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.')
+        a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
           a('ffb3fe6f', 'Keep reading'),
-          a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.')
-        a('b5231e3f', 'Keep reading'),
+          a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+          a('b5231e3f', 'Keep reading'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
           }),

@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '64b84df954664a1a938380e0fd0008da6028e7ac',
+  feature_set_token: 'c66d74d46600909b9cc83878cc75d74b8c9e0af9',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -266,6 +266,8 @@ var manifest = {
     arkose_challenge_transparent_signup_dev: { value: '6627C16B-DA60-47A5-85F7-CFF23BD2BE69' },
     arkose_challenge_transparent_signup_prod: { value: '4CB8C8B0-40FF-439C-9D0D-9A389ADA18CB' },
     author_moderated_replies_urt_container_enabled: { value: !1 },
+    blue_business_square_avatar_consumption_ui_enabled: { value: !1 },
+    blue_longer_video_enabled: { value: !1 },
     branded_like_preview_enabled: { value: !1 },
     c9s_auto_collapse_community_detail_header_enabled: { value: !0 },
     c9s_communities_search_enabled: { value: !0 },
@@ -603,7 +605,6 @@ var manifest = {
     responsive_web_framerate_tracking_home_enabled: { value: !1 },
     responsive_web_gaggle_site_enabled: { value: !1 },
     responsive_web_graphql_conversations_enabled: { value: !0 },
-    responsive_web_graphql_dark_reads_probability: { value: 0 },
     responsive_web_graphql_feedback: { value: !0 },
     responsive_web_graphql_home_enabled: { value: !0 },
     responsive_web_graphql_likes_timeline: { value: !0 },
@@ -677,6 +678,7 @@ var manifest = {
     responsive_web_nft_avatar_help_link: { value: 'https://help.twitter.com/en/using-twitter/twitter-blue-labs#nft' },
     responsive_web_notifications_empty_state_redesign_variant: { value: 'control' },
     responsive_web_notifications_overrides_desktop_enabled: { value: !1 },
+    responsive_web_notifications_overrides_max_notification_slots: { value: 3 },
     responsive_web_notifications_overrides_mobile_enabled: { value: !1 },
     responsive_web_ntab_verified_mentions_vit_internal_dogfood: { value: !0 },
     responsive_web_nux_web_to_app_drop_gate_enabled: { value: !1 },
@@ -940,6 +942,7 @@ var manifest = {
     stateful_login_intent_enabled: { value: !0 },
     stateful_login_smart_lock_enabled: { value: !1 },
     subscriptions_blue_premium_labeling_enabled: { value: !0 },
+    subscriptions_blue_verified_edit_profile_enabled: { value: !1 },
     subscriptions_enabled: { value: !0 },
     subscriptions_feature_1002: { value: !0 },
     subscriptions_feature_1003: { value: !0 },
@@ -1506,11 +1509,6 @@ var manifest = {
       type: 'number',
       defaultValue: 3,
     },
-    android_immersive_viewer_m0_fast_follow_15286: {
-      name: 'android_immersive_viewer_m0_fast_follow_15286',
-      type: 'experiment',
-      enumeration_values: ['control', 'bucket1', 'bucket2'],
-    },
     arabic_toxic_reply_nudge_14746: {
       name: 'arabic_toxic_reply_nudge_14746',
       type: 'experiment',
@@ -1611,6 +1609,14 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'crowd'],
     },
+    blue_business_consumption_api_enabled: { name: 'blue_business_consumption_api_enabled', type: 'string' },
+    blue_business_grey_checkmark_enabled: { name: 'blue_business_grey_checkmark_enabled', type: 'string' },
+    blue_business_square_avatar_consumption_ui_enabled: {
+      name: 'blue_business_square_avatar_consumption_ui_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    blue_longer_video_enabled: { name: 'blue_longer_video_enabled', type: 'boolean', defaultValue: !1 },
     branded_like_preview_enabled: { name: 'branded_like_preview_enabled', type: 'boolean', defaultValue: !1 },
     branded_likes_10896: { name: 'branded_likes_10896', type: 'experiment', enumeration_values: [] },
     c9s_ssr_enabled: { name: 'c9s_ssr_enabled', type: 'boolean', defaultValue: !1 },
@@ -1917,7 +1923,7 @@ var manifest = {
       type: 'experiment',
       enumeration_values: [],
     },
-    dm_chat_v2_15546: { name: 'dm_chat_v2_15546', type: 'experiment', enumeration_values: ['control', 'treatment'] },
+    dm_chat_v2_15546: { name: 'dm_chat_v2_15546', type: 'experiment', enumeration_values: [] },
     dm_conversation_labels_max_pinned_count: {
       name: 'dm_conversation_labels_max_pinned_count',
       type: 'number',
@@ -2178,6 +2184,11 @@ var manifest = {
       name: 'enable_label_appealing_sensitive_content_enabled',
       type: 'boolean',
       defaultValue: !1,
+    },
+    explore_immersive_viewer_launch_non_english_users_15806: {
+      name: 'explore_immersive_viewer_launch_non_english_users_15806',
+      type: 'experiment',
+      enumeration_values: ['control', 'imv_non_english_filter', 'imv_non_english_no_filter'],
     },
     explore_incremental_holdback_2022h1_12406: {
       name: 'explore_incremental_holdback_2022h1_12406',
@@ -2843,11 +2854,6 @@ var manifest = {
       name: 'livepipeline_tweetengagement_enabled',
       type: 'boolean',
       defaultValue: !0,
-    },
-    logged_out_gating_switch_to_app_holdback_15377: {
-      name: 'logged_out_gating_switch_to_app_holdback_15377',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     logged_out_search_homepage_13401: {
       name: 'logged_out_search_homepage_13401',
@@ -3806,11 +3812,6 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
-    responsive_web_graphql_dark_reads_probability: {
-      name: 'responsive_web_graphql_dark_reads_probability',
-      type: 'number',
-      defaultValue: 0,
-    },
     responsive_web_graphql_feedback: { name: 'responsive_web_graphql_feedback', type: 'boolean', defaultValue: !0 },
     responsive_web_graphql_home_enabled: {
       name: 'responsive_web_graphql_home_enabled',
@@ -4214,7 +4215,8 @@ var manifest = {
     },
     responsive_web_notifications_overrides_max_notification_slots: {
       name: 'responsive_web_notifications_overrides_max_notification_slots',
-      type: 'string',
+      type: 'number',
+      defaultValue: 3,
     },
     responsive_web_ntab_verified_mentions_vit_internal_dogfood: {
       name: 'responsive_web_ntab_verified_mentions_vit_internal_dogfood',
@@ -4564,7 +4566,7 @@ var manifest = {
     responsive_web_suppress_app_button_14988: {
       name: 'responsive_web_suppress_app_button_14988',
       type: 'experiment',
-      enumeration_values: ['control', 'suppress_switch_to_app_banner'],
+      enumeration_values: [],
     },
     responsive_web_text_conversations_enabled: {
       name: 'responsive_web_text_conversations_enabled',
@@ -5013,7 +5015,7 @@ var manifest = {
     search_entry_points_ios_13337: {
       name: 'search_entry_points_ios_13337',
       type: 'experiment',
-      enumeration_values: [],
+      enumeration_values: ['control', 'search_box'],
     },
     sensitive_media_settings_enabled: { name: 'sensitive_media_settings_enabled', type: 'boolean', defaultValue: !1 },
     sensitive_tweet_warnings_enabled: { name: 'sensitive_tweet_warnings_enabled', type: 'boolean', defaultValue: !0 },
@@ -5302,6 +5304,11 @@ var manifest = {
     subscriptions_feature_1006: { name: 'subscriptions_feature_1006', type: 'boolean', defaultValue: !1 },
     subscriptions_feature_labs_1006: { name: 'subscriptions_feature_labs_1006', type: 'string' },
     subscriptions_feature_1012: { name: 'subscriptions_feature_1012', type: 'string' },
+    subscriptions_blue_verified_edit_profile_enabled: {
+      name: 'subscriptions_blue_verified_edit_profile_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
     subscriptions_long_video_rweb_new_copy_enabled: {
       name: 'subscriptions_long_video_rweb_new_copy_enabled',
       type: 'boolean',
@@ -6017,11 +6024,6 @@ var manifest = {
     },
     user_display_name_max_limit: { name: 'user_display_name_max_limit', type: 'number', defaultValue: 50 },
     verified_phone_label_enabled: { name: 'verified_phone_label_enabled', type: 'boolean', defaultValue: !1 },
-    verified_phone_labels_15886: {
-      name: 'verified_phone_labels_15886',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
     vibe_api_enabled: { name: 'vibe_api_enabled', type: 'boolean', defaultValue: !0 },
     vibe_composer_enabled: { name: 'vibe_composer_enabled', type: 'string' },
     vibe_tweet_context_enabled: { name: 'vibe_tweet_context_enabled', type: 'boolean', defaultValue: !0 },
