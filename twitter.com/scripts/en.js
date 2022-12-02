@@ -2,7 +2,7 @@ window.__SCRIPTS_LOADED__.vendor &&
   ((self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ['i18n/en'],
     {
-      17346: (e, t, o) => {
+      17346: function _(e, t, o) {
         'use strict'
         var a = o(79404)._register('en', {
           get emoji() {
@@ -4039,6 +4039,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e1f76978', 'Edit professional profile'),
           a('e554f642', 'Discard changes?'),
           a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
+          a('d57c69c6', 'Save changes?'),
+          a(
+            'd490fc36',
+            'As a Blue subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo.',
+          ),
           a(
             'addbe8e8',
             'Consider using a name without special characters so it’s accessible to even more people, including people who are blind or have low vision.',
@@ -4888,16 +4893,16 @@ window.__SCRIPTS_LOADED__.vendor &&
             'ic130fd6',
             'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
           ),
-          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
+          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.')
+        a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
           a(
-            'h580543e',
-            'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
+            'b737ee66',
+            'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.',
           ),
-          a('b737ee66', 'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.')
-        a(
-          'a0bb2076',
-          'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
-        ),
+          a(
+            'a0bb2076',
+            'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
+          ),
           a(
             'ace46d40',
             'Hi and welcome to my Super Follows page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
@@ -6027,9 +6032,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ' on Twitter.'
             )
           }),
-          a('ad964e30', 'Edit your Twitter Circle'),
-          a('ef8f5d90', 'Recommended'),
-          a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet')
+          a('ad964e30', 'Edit your Twitter Circle')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6049,7 +6052,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('dab58e32', 'When you add people, they’ll show up here.'),
+        a('ef8f5d90', 'Recommended'),
+          a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
+          a('dab58e32', 'When you add people, they’ll show up here.'),
           a('c308119e', 'How it works'),
           a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
           a(
@@ -6394,7 +6399,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('hc67be9e', 'Get Started'),
           a('fcc839b6', 'What’s your goal?'),
           a('c1a1817c', 'Your Tweet includes media'),
-          a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
           a('c9a73b7c', 'Get more likes, Retweets, etc.'),
           a('b0583654', 'Reach a new audience'),
           a('a2d37164', 'Get more visitors to your site'),
@@ -7499,9 +7503,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('b140e3b2', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
-          a('g4d12384', 'Heads up'),
-          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.')
-        a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+          a('g4d12384', 'Heads up')
+        a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
+          a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
@@ -7868,13 +7872,13 @@ window.__SCRIPTS_LOADED__.vendor &&
             (r = [
               {
                 key: 'aab35605',
-                get: function () {
+                get: function get() {
                   return ['Twitter always keeps a copy of a Space for review. ', '.']
                 },
               },
               {
                 key: 'fc9fe08f',
-                get: function () {
+                get: function get() {
                   return [
                     'Spaces on web are listen-only. For the full experience, download the Twitter app for ',
                     ' or ',
@@ -7884,25 +7888,25 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a8170309',
-                get: function () {
+                get: function get() {
                   return ['Anyone can listen, including people not logged in to Twitter. ']
                 },
               },
               {
                 key: 'ib602fd9',
-                get: function () {
+                get: function get() {
                   return ['You can control how your followers see the Spaces you’re listening to. ']
                 },
               },
               {
                 key: 'i6164a47',
-                get: function () {
+                get: function get() {
                   return ['Twitter will keep a recording of Spaces for at least 30 days to review reports. ']
                 },
               },
               {
                 key: 'b9c4cfcb',
-                get: function () {
+                get: function get() {
                   return [
                     'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to Twitter. ',
                     '.',
@@ -7911,61 +7915,61 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f0e84609',
-                get: function () {
+                get: function get() {
                   return ['', ' ago']
                 },
               },
               {
                 key: 'ib299459',
-                get: function () {
+                get: function get() {
                   return ['Once you join Twitter, you can respond to ', '’s Tweet.']
                 },
               },
               {
                 key: 'ef1fd74f',
-                get: function () {
+                get: function get() {
                   return ['When you join Twitter, you can share ', '’s Tweet with your followers.']
                 },
               },
               {
                 key: 'ced7d5f7',
-                get: function () {
+                get: function get() {
                   return ['Join Twitter now to let ', ' know you like their Tweet.']
                 },
               },
               {
                 key: 'e1853869',
-                get: function () {
+                get: function get() {
                   return ['Join Twitter now to let ', ' know you reacted to their Tweet.']
                 },
               },
               {
                 key: 'b484f9b9',
-                get: function () {
+                get: function get() {
                   return ['Follow ', ' to see what they share on Twitter.']
                 },
               },
               {
                 key: 'd1781a33',
-                get: function () {
+                get: function get() {
                   return ['Join Twitter now so you can share ', '’s Tweet privately.']
                 },
               },
               {
                 key: 'i55152d3',
-                get: function () {
+                get: function get() {
                   return ['Follow ', ' for curated Tweets']
                 },
               },
               {
                 key: 'i8773385',
-                get: function () {
+                get: function get() {
                   return ['Join Twitter now to see a stream of Tweets from people curated by ', '.']
                 },
               },
               {
                 key: 'c2de5d7b',
-                get: function () {
+                get: function get() {
                   return [
                     'Join Twitter now to discover new and interesting conversations about the things that matter most to you, like ',
                     '.',
@@ -7974,13 +7978,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c4d3d079',
-                get: function () {
+                get: function get() {
                   return ['By signing up, you agree to the ', ' and ', ', including ']
                 },
               },
               {
                 key: 'ad048ab9',
-                get: function () {
+                get: function get() {
                   return [
                     'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. If you click "Accept all cookies," you also allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests. If you click “Refuse non-essential cookies,” we won’t use cookies to gather additional data for tailored ads and communications. To learn more, including how to change your choice, visit the cookie page of our ',
                     '.',
@@ -7989,7 +7993,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'bc8736af',
-                get: function () {
+                get: function get() {
                   return [
                     'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. ',
                   ]
@@ -7997,7 +8001,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'i3c34583',
-                get: function () {
+                get: function get() {
                   return [
                     'By using Twitter’s services you agree to our ',
                     '. We and our partners operate globally and use cookies, including for analytics, personalisation, and ads.',
@@ -8006,73 +8010,73 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd6d818a1',
-                get: function () {
+                get: function get() {
                   return [this.props.viewerCount + ' views']
                 },
               },
               {
                 key: 'e2e6ea0d',
-                get: function () {
+                get: function get() {
                   return ['via ']
                 },
               },
               {
                 key: 'bff29c95',
-                get: function () {
+                get: function get() {
                   return ['', ' changed the group photo']
                 },
               },
               {
                 key: 'b16e4d45',
-                get: function () {
+                get: function get() {
                   return ['You changed the group name to ']
                 },
               },
               {
                 key: 'c5760699',
-                get: function () {
+                get: function get() {
                   return ['', ' changed the group name to ']
                 },
               },
               {
                 key: 'a72730a1',
-                get: function () {
+                get: function get() {
                   return ['The group name was changed to ']
                 },
               },
               {
                 key: 'a4bc88c3',
-                get: function () {
+                get: function get() {
                   return ['', ' added ']
                 },
               },
               {
                 key: 'bfdff0c3',
-                get: function () {
+                get: function get() {
                   return ['', ' added']
                 },
               },
               {
                 key: 'fc10875f',
-                get: function () {
+                get: function get() {
                   return ['', ' left']
                 },
               },
               {
                 key: 'fa95b019',
-                get: function () {
+                get: function get() {
                   return ['', ' added you']
                 },
               },
               {
                 key: 'e3534477',
-                get: function () {
+                get: function get() {
                   return ['There are ', ' in this group']
                 },
               },
               {
                 key: 'b6656851',
-                get: function () {
+                get: function get() {
                   return [
                     'There ' +
                       n(this.props.count, 'is', 'are') +
@@ -8086,25 +8090,25 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'dd5806bb',
-                get: function () {
+                get: function get() {
                   return ['The following media includes potentially sensitive content. ']
                 },
               },
               {
                 key: 'j3c7dd33',
-                get: function () {
+                get: function get() {
                   return ['This Tweet might include sensitive content. ']
                 },
               },
               {
                 key: 'c8b914d5',
-                get: function () {
+                get: function get() {
                   return ['', ' ·']
                 },
               },
               {
                 key: 'iac7f92b',
-                get: function () {
+                get: function get() {
                   return [
                     'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
                     ' for more details.',
@@ -8113,247 +8117,247 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'i005f1fd',
-                get: function () {
+                get: function get() {
                   return ['You responded to ', '’s Fleet: ']
                 },
               },
               {
                 key: 'b35cee41',
-                get: function () {
+                get: function get() {
                   return ['Responded to your Fleet: ']
                 },
               },
               {
                 key: 'dc4b75a1',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a GIF']
                 },
               },
               {
                 key: 'hcbbbb35',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a link']
                 },
               },
               {
                 key: 'c1e1f849',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a photo']
                 },
               },
               {
                 key: 'c7e2464f',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a sticker']
                 },
               },
               {
                 key: 'eee2f121',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a video']
                 },
               },
               {
                 key: 'be5a9617',
-                get: function () {
+                get: function get() {
                   return ['', ' sent a voice message']
                 },
               },
               {
                 key: 'dfd2b3b9',
-                get: function () {
+                get: function get() {
                   return ['', ' shared a Tweet']
                 },
               },
               {
                 key: 'b3a2b11d',
-                get: function () {
+                get: function get() {
                   return ['', ':']
                 },
               },
               {
                 key: 'd1f8bdd9',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s video with ']
                 },
               },
               {
                 key: 'd764af97',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s video with ']
                 },
               },
               {
                 key: 'ab1cdfe3',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a video with ']
                 },
               },
               {
                 key: 'f0cf1699',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a video with ']
                 },
               },
               {
                 key: 'hec0fd4d',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s photo with ']
                 },
               },
               {
                 key: 'j55320df',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s photo with ']
                 },
               },
               {
                 key: 'jf27606b',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a photo with ']
                 },
               },
               {
                 key: 'cd110359',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a photo with ']
                 },
               },
               {
                 key: 'e70dcc35',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s GIF with ']
                 },
               },
               {
                 key: 'g1bf440b',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s GIF with ']
                 },
               },
               {
                 key: 'b2da1bf9',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a GIF with ']
                 },
               },
               {
                 key: 'g84c0421',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a GIF with ']
                 },
               },
               {
                 key: 'c4202785',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s Tweet with ']
                 },
               },
               {
                 key: 'b493a891',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s Tweet with ']
                 },
               },
               {
                 key: 'ca684bf5',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a Tweet with ']
                 },
               },
               {
                 key: 'h5797be5',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a Tweet with ']
                 },
               },
               {
                 key: 'cd2e7c19',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s link with ']
                 },
               },
               {
                 key: 'aee9e7fb',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s link with ']
                 },
               },
               {
                 key: 'f9fb1cf7',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a link with ']
                 },
               },
               {
                 key: 'f2bf910f',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a link with ']
                 },
               },
               {
                 key: 'i6cec545',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s message with ', ': ']
                 },
               },
               {
                 key: 'd6998bab',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s message with ', ': ']
                 },
               },
               {
                 key: 'cec676f3',
-                get: function () {
+                get: function get() {
                   return ['You reacted with ', ': ']
                 },
               },
               {
                 key: 'a2706f9b',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted with ', ': ']
                 },
               },
               {
                 key: 'ff973a65',
-                get: function () {
+                get: function get() {
                   return ['You reacted to @', '’s voice message with ']
                 },
               },
               {
                 key: 'ec2cede5',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to @', '’s voice message with ']
                 },
               },
               {
                 key: 'i1d08199',
-                get: function () {
+                get: function get() {
                   return ['You reacted to a voice message with ']
                 },
               },
               {
                 key: 'd424b45f',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted to a voice message with ']
                 },
               },
               {
                 key: 'd6b15bbf',
-                get: function () {
+                get: function get() {
                   return ['You reacted with ']
                 },
               },
               {
                 key: 'ac0d4bc7',
-                get: function () {
+                get: function get() {
                   return ['', ' reacted with ']
                 },
               },
               {
                 key: 'a66142ad',
-                get: function () {
+                get: function get() {
                   return [
                     'Message requests from people you don’t follow live here. To reply to their messages, you need to accept the request. ',
                   ]
@@ -8361,7 +8365,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'j1958651',
-                get: function () {
+                get: function get() {
                   return [
                     'We need to know if the Twitter account ',
                     ' is yours. If it isn’t, we’ll go ahead and remove ',
@@ -8371,7 +8375,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c1567ae1',
-                get: function () {
+                get: function get() {
                   return [
                     'If the Twitter account ',
                     ' is yours, and you want to unsubscribe from future email notifications, go to ',
@@ -8380,7 +8384,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'hf714443',
-                get: function () {
+                get: function get() {
                   return [
                     'We’ve removed your email address ',
                     ' from the Twitter account ',
@@ -8390,13 +8394,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a1c4702f',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'g9aa2a63',
-                get: function () {
+                get: function get() {
                   return [
                     'Someone might have inadvertently entered your email address when signing up for their Twitter account. Or, they might be using it to engage in abuse. You can report the account to help identify and remove spam from Twitter. ',
                   ]
@@ -8404,19 +8408,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b38e130b',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'i5ba24f5',
-                get: function () {
+                get: function get() {
                   return ['These are set and enforced by Community admins and are in addition to ', '.']
                 },
               },
               {
                 key: 'd8d8fcbb',
-                get: function () {
+                get: function get() {
                   return [
                     'Communities are public, so protected accounts can’t join right now. You can read the Tweets, but to participate, ',
                     '.',
@@ -8425,85 +8429,85 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jb124a07',
-                get: function () {
+                get: function get() {
                   return ['A moderator removed you for violating this Community rule: ']
                 },
               },
               {
                 key: 'a5d9d071',
-                get: function () {
+                get: function get() {
                   return ['GIF via ']
                 },
               },
               {
                 key: 'i9606e33',
-                get: function () {
+                get: function get() {
                   return ['Video via ']
                 },
               },
               {
                 key: 'i1a64d47',
-                get: function () {
+                get: function get() {
                   return ['Photo via ']
                 },
               },
               {
                 key: 'h0d6f2c5',
-                get: function () {
+                get: function get() {
                   return ['', '']
                 },
               },
               {
                 key: 'a492659f',
-                get: function () {
+                get: function get() {
                   return ['', '']
                 },
               },
               {
                 key: 'h36fe5c9',
-                get: function () {
+                get: function get() {
                   return ['Search instead for "', '"']
                 },
               },
               {
                 key: 'hce48b8b',
-                get: function () {
+                get: function get() {
                   return ['Did you mean "', '"?']
                 },
               },
               {
                 key: 'd2924acb',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'be5322c7',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'c5f6ee1d',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'ad2ab555',
-                get: function () {
+                get: function get() {
                   return ['You can also hover over ', ' to pick a reaction']
                 },
               },
               {
                 key: 'g6a7d833',
-                get: function () {
+                get: function get() {
                   return ['You can also press and hold ', ' to pick a reaction']
                 },
               },
               {
                 key: 'hb779f3b',
-                get: function () {
+                get: function get() {
                   return [
                     'We try to keep Twitter a place for healthy conversation, so we’ve disabled most of the ways to engage with this Tweet. If you want to talk about it, you can still Quote Tweet it. ',
                   ]
@@ -8511,43 +8515,43 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g8b28775',
-                get: function () {
+                get: function get() {
                   return ['Only @' + this.props.username + ' and their Twitter Circle can see these Tweets.']
                 },
               },
               {
                 key: 'd01be6d9',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'e4eeeeff',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'b07c7c03',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'f0259953',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'f8ea2809',
-                get: function () {
+                get: function get() {
                   return [this.props.selection + ' can reply now']
                 },
               },
               {
                 key: 'i5fe3801',
-                get: function () {
+                get: function get() {
                   return [
                     'Edit functionality is limited to original Tweets and doesn’t include things like replies or threads. ',
                     ' about what you can edit.',
@@ -8556,13 +8560,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g8ffaf17',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'c97dfde5',
-                get: function () {
+                get: function get() {
                   return [
                     'Want to edit your Twitter Circle? Go for it. People won`t be notified if you remove them. ',
                     '.',
@@ -8571,7 +8575,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a02c8d75',
-                get: function () {
+                get: function get() {
                   return [
                     'Communities are public, so protected accounts can’t join the conversation. You can read and like the Tweets, but to do more, you’ll need to ',
                     '.',
@@ -8580,79 +8584,79 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e34022a7',
-                get: function () {
+                get: function get() {
                   return ['Replying to ']
                 },
               },
               {
                 key: 'bfd9c99b',
-                get: function () {
+                get: function get() {
                   return ['Replying to ']
                 },
               },
               {
                 key: 'g7a1000f',
-                get: function () {
+                get: function get() {
                   return ['Replying to ']
                 },
               },
               {
                 key: 'i558c201',
-                get: function () {
+                get: function get() {
                   return ['Replying to ']
                 },
               },
               {
                 key: 'j935bcdf',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' in ' + this.props.communityName]
                 },
               },
               {
                 key: 'i7bd9c8f',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' in ' + this.props.communityName]
                 },
               },
               {
                 key: 'cfa0049d',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' in ' + this.props.communityName]
                 },
               },
               {
                 key: 'jfc8e4b5',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' in ' + this.props.communityName]
                 },
               },
               {
                 key: 'fe06c9f5',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
                 key: 'f7e12e15',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
                 key: 'eade6035',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
                 key: 'da018b37',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
                 },
               },
               {
                 key: 'fc276cb7',
-                get: function () {
+                get: function get() {
                   return [
                     'Replying to ',
                     '. ' +
@@ -8663,7 +8667,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b392dda9',
-                get: function () {
+                get: function get() {
                   return [
                     'Replying to ',
                     '. ' +
@@ -8674,85 +8678,85 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'j316b6e3',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
                 },
               },
               {
                 key: 'c1378cbb',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
                 key: 'g7b81721',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
                 },
               },
               {
                 key: 'g390bde1',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
                 key: 'ad5b8753',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
                 },
               },
               {
                 key: 'd1b80c9d',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
                 },
               },
               {
                 key: 'id9ba4fb',
-                get: function () {
+                get: function get() {
                   return ['Select ', ' to help us improve your experience.']
                 },
               },
               {
                 key: 'd9cb9d0b',
-                get: function () {
+                get: function get() {
                   return ['Try following ', ' to get the most out of Top Articles.']
                 },
               },
               {
                 key: 'dc3a6d2d',
-                get: function () {
+                get: function get() {
                   return ['Followed @' + this.props.screenName + '. ', '.']
                 },
               },
               {
                 key: 'd80a7547',
-                get: function () {
+                get: function get() {
                   return ['', ' is hosting']
                 },
               },
               {
                 key: 'j7293d6b',
-                get: function () {
+                get: function get() {
                   return ['', ' is co-hosting']
                 },
               },
               {
                 key: 'df79977f',
-                get: function () {
+                get: function get() {
                   return ['', ' is speaking']
                 },
               },
               {
                 key: 'ad960f39',
-                get: function () {
+                get: function get() {
                   return ['', ' is listening']
                 },
               },
               {
                 key: 'b1e1d521',
-                get: function () {
+                get: function get() {
                   return [
                     'Increase your Rating Impact to ' +
                       this.props.ratingImpactToEarnIn +
@@ -8764,67 +8768,67 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd9f77781',
-                get: function () {
+                get: function get() {
                   return [this.props.impressions + '+ views']
                 },
               },
               {
                 key: 'c5c4d001',
-                get: function () {
+                get: function get() {
                   return ['As the Tweet author, you can ']
                 },
               },
               {
                 key: 'if77e237',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', '.']
                 },
               },
               {
                 key: 'c312ca7d',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', '.']
                 },
               },
               {
                 key: 'j575fa79',
-                get: function () {
+                get: function get() {
                   return ['You ', ' with its conclusion.']
                 },
               },
               {
                 key: 'h61f9ad3',
-                get: function () {
+                get: function get() {
                   return ['You ', ' with its conclusion.']
                 },
               },
               {
                 key: 'd570f1d9',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', ' and ', ' with its conclusion.']
                 },
               },
               {
                 key: 'c6cb9513',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', ' and ', ' with its conclusion.']
                 },
               },
               {
                 key: 'fe957a43',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', ' and ', ' with its conclusion.']
                 },
               },
               {
                 key: 'gbfec7fd',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', ' and ', ' with its conclusion.']
                 },
               },
               {
                 key: 'i8fa1313',
-                get: function () {
+                get: function get() {
                   return [
                     'Ratings are anonymized and made publicly available for transparency. Find out how Community Notes makes data ',
                     '.',
@@ -8833,43 +8837,43 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'had203a9',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', '.']
                 },
               },
               {
                 key: 'h42a21df',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', '.']
                 },
               },
               {
                 key: 'c3d1a1b1',
-                get: function () {
+                get: function get() {
                   return ['You rated this note as ', '.']
                 },
               },
               {
                 key: 'b936a16b',
-                get: function () {
+                get: function get() {
                   return ['Ideas or suggestions to improve Community Notes? ']
                 },
               },
               {
                 key: 'if0d6dd7',
-                get: function () {
+                get: function get() {
                   return ['Community Notes contributors use aliases · ']
                 },
               },
               {
                 key: 'f49cbf83',
-                get: function () {
+                get: function get() {
                   return ['This feature is new to Community Notes, feel free to ']
                 },
               },
               {
                 key: 'a94c6db7',
-                get: function () {
+                get: function get() {
                   return [
                     'Increase your Rating Impact to ' +
                       this.props.requiredRatingImpact +
@@ -8881,19 +8885,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f52f0cbd',
-                get: function () {
+                get: function get() {
                   return [this.props.num + ' deleted notes']
                 },
               },
               {
                 key: 'ccdfbd75',
-                get: function () {
+                get: function get() {
                   return ['To unlock your ability to write, increase this score to ' + this.props.requiredRatingImpact]
                 },
               },
               {
                 key: 'a32c38ad',
-                get: function () {
+                get: function get() {
                   return [
                     'Want to start writing notes? Raise your Rating Impact to ' +
                       this.props.requiredRatingImpact +
@@ -8903,7 +8907,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd458f69d',
-                get: function () {
+                get: function get() {
                   return [
                     'Community Notes keeps deleted notes’ status to accurately assign reputation to the note author and raters. ',
                   ]
@@ -8911,7 +8915,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ec38eaf7',
-                get: function () {
+                get: function get() {
                   return [
                     'Your use of the datasets is governed by the Twitter Developer Agreement and Policy. By clicking on the Download icon, you agree to the ',
                     '.',
@@ -8920,85 +8924,85 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g19fcc5b',
-                get: function () {
+                get: function get() {
                   return ['File no. ' + this.props.fileIndex + ' of ' + this.props.totalFiles]
                 },
               },
               {
                 key: 'g812cfc3',
-                get: function () {
+                get: function get() {
                   return ['Data includes contributions up until ' + this.props.date]
                 },
               },
               {
                 key: 'c43d1679',
-                get: function () {
+                get: function get() {
                   return ['See more at ']
                 },
               },
               {
                 key: 'b3a3ce8d',
-                get: function () {
+                get: function get() {
                   return ['Active ', ' ago']
                 },
               },
               {
                 key: 'd46c6e8f',
-                get: function () {
+                get: function get() {
                   return ['Are you sure you want to make ', ' a moderator?']
                 },
               },
               {
                 key: 'c3a1f2bf',
-                get: function () {
+                get: function get() {
                   return ['Are you sure you want to remove ', ' as a moderator?']
                 },
               },
               {
                 key: 'c2696cdf',
-                get: function () {
+                get: function get() {
                   return ['Enter ', ' to proceed']
                 },
               },
               {
                 key: 'je0779b7',
-                get: function () {
+                get: function get() {
                   return ['Reported by ']
                 },
               },
               {
                 key: 'dfd5760b',
-                get: function () {
+                get: function get() {
                   return ['You hid @', '’s Tweet']
                 },
               },
               {
                 key: 'a6d33441',
-                get: function () {
+                get: function get() {
                   return ['You kept @', '’s Tweet']
                 },
               },
               {
                 key: 'he99cc29',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'a346641b',
-                get: function () {
+                get: function get() {
                   return ['Created ' + this.props.date + ' by ']
                 },
               },
               {
                 key: 'i6d68e99',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'j23c6259',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about you in qualifying news publications that have been published within the last six months. ',
                   ]
@@ -9006,7 +9010,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'gee7fae9',
-                get: function () {
+                get: function get() {
                   return [
                     'You’ll need to meet specific requirements depending on the type of Twitter account you have. ',
                   ]
@@ -9014,13 +9018,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd454b49f',
-                get: function () {
+                get: function get() {
                   return ['Pick the option that best describes your account. ']
                 },
               },
               {
                 key: 'hd977dd9',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as an activist or organizer.',
                   ]
@@ -9028,7 +9032,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e3432573',
-                get: function () {
+                get: function get() {
                   return [
                     'You have not met the minimum follower or mention threshold for your region that is required to be verified as an activist. ',
                   ]
@@ -9036,7 +9040,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'efd8f6e7',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about you. ',
                   ]
@@ -9044,7 +9048,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fe54dcfd',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about you. It must contain at least three external references. ',
                   ]
@@ -9052,7 +9056,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ie26d72d',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link that references you in a leadership position for a Verified advocacy organization. The reference must come from the official site of a Verified organization. ',
                   ]
@@ -9060,7 +9064,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'af3fe861',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as an influential individual. ',
                   ]
@@ -9068,7 +9072,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a08d6af3',
-                get: function () {
+                get: function get() {
                   return [
                     'You have not met the minimum follower or mention threshold for your region that is required to be verified as a content creator or influential individual. ',
                   ]
@@ -9076,7 +9080,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f774e39d',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a prominent company, brand, or organization. ',
                   ]
@@ -9084,7 +9088,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd8510869',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about your company, brand, or organization. ',
                   ]
@@ -9092,7 +9096,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'h75e3641',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about your company, brand, or organization that contains at least three external references. ',
                   ]
@@ -9100,7 +9104,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'de6d69a1',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link showing evidence of that your company, brand, or organization is listed on a public stock exchange. ',
                   ]
@@ -9108,7 +9112,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'be0e8fdb',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about your company in verified news publications in the last six months. ',
                   ]
@@ -9116,7 +9120,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'baed7213',
-                get: function () {
+                get: function get() {
                   return [
                     'You must hold a senior leadership position at a verified organization to be eligible for verification in this category. Add your organization’s account to confirm eligibility. ',
                   ]
@@ -9124,7 +9128,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c5d688cf',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a senior leader of a prominent organization. ',
                   ]
@@ -9132,7 +9136,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fce3e22d',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to least three articles published by verified news organizations within the last six months that reference you as a senior leader or executive at your organization. ',
                   ]
@@ -9140,7 +9144,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f1b276f1',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link that references you as a senior leader at your organization. The reference must come from the official site of a verified company, brand, or organization. ',
                   ]
@@ -9148,7 +9152,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e2465097',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about your production. ',
                   ]
@@ -9156,7 +9160,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g83bcecd',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about your production in qualifying news publications in the last six months. ',
                   ]
@@ -9164,7 +9168,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f3016c6f',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for Verification as the official account of a major production. ',
                   ]
@@ -9172,7 +9176,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'h74144bd',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link showing evidence that your production organization is listed on a public stock exchange. ',
                   ]
@@ -9180,7 +9184,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jef5dfc5',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about your production that contains at least three external references. ',
                   ]
@@ -9188,7 +9192,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'gf5a4309',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a prominent entertainment company. ',
                   ]
@@ -9196,7 +9200,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g2e175b1',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about your entertainment company. ',
                   ]
@@ -9204,7 +9208,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'efc369c3',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about your company in qualifying news publications in the last six months. ',
                   ]
@@ -9212,7 +9216,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ff03f07d',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link showing evidence that your entertainment company is listed on a public stock exchange. ',
                   ]
@@ -9220,7 +9224,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a3e9dde3',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about your entertainment company that contains at least three external references. ',
                   ]
@@ -9228,7 +9232,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c2b8fb3d',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as an influential digital content creator. ',
                   ]
@@ -9236,7 +9240,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'da6e5b19',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to your content creator profile. Your creator profile can be on any digital platform but it must reference your Twitter handle. ',
                   ]
@@ -9244,7 +9248,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'bb47d2b9',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about you that contains at least three external references. ',
                   ]
@@ -9252,7 +9256,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'db930fb3',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as an individual in entertainment. ',
                   ]
@@ -9260,13 +9264,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'dc263ec1',
-                get: function () {
+                get: function get() {
                   return ['Provide a link to your IMDB profile that includes at least 50 production credits. ']
                 },
               },
               {
                 key: 'd8b21ebb',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link that references you as an individual in entertainment and your Twitter account. The reference must come from the official website of a Verified entity. ',
                   ]
@@ -9274,13 +9278,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'i3b4217b',
-                get: function () {
+                get: function get() {
                   return ['Pick the category which best describes your government account. ']
                 },
               },
               {
                 key: 'ja62479f',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to least five articles published by verified news organizations within the last six months that reference you as a qualifying candidate for office. ',
                   ]
@@ -9288,7 +9292,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f28bbbb1',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to least five articles published by verified news organizations within the last six months that reference you as a qualifying government office. ',
                   ]
@@ -9296,7 +9300,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b229f4b9',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to least five articles published by verified news organizations within the last six months that reference you as a qualifying government official. ',
                   ]
@@ -9304,7 +9308,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ec71430d',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to your official campaign website referencing you as a candidate for government office at the state- or national-level and your Twitter account. ',
                   ]
@@ -9312,7 +9316,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f9e2b0f3',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to an official government website that references your government office or public service and your Twitter account. ',
                   ]
@@ -9320,7 +9324,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a394654f',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link that references you as a qualifying government official or affiliate. The reference must come from the official site of a verified government organization. ',
                   ]
@@ -9328,7 +9332,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'dcb0da53',
-                get: function () {
+                get: function get() {
                   return [
                     'Journalists must be employed by a verified news organization or publication to be verified. Provide a link to your employer’s account. ',
                   ]
@@ -9336,7 +9340,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd82a96af',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a notable journalist. ',
                   ]
@@ -9344,7 +9348,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd47b4101',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link that references you as a journalist for your employer. The reference must come from the official site of a verified news organization. ',
                   ]
@@ -9352,7 +9356,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a3540593',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide at least three bylines and/or credits in qualifying publications published within the last six months. ',
                   ]
@@ -9360,7 +9364,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'edb782e7',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a prominent news organization. ',
                   ]
@@ -9368,7 +9372,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'cc16af2d',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about your news organization. ',
                   ]
@@ -9376,7 +9380,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b42b7001',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about your news organization that contains at least three external references. ',
                   ]
@@ -9384,7 +9388,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fd2c6f63',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link showing evidence that your news organization is listed on a public stock exchange. ',
                   ]
@@ -9392,7 +9396,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ec7027cd',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about your news organization in verified news publications in the last six months. ',
                   ]
@@ -9400,7 +9404,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a0a9f835',
-                get: function () {
+                get: function get() {
                   return [
                     'Individuals in professional sports must compete in verified sports leagues and events to be verified. Provide a link to the verified team, league, event, or organization relevant to your account.',
                   ]
@@ -9408,7 +9412,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'iba551d5',
-                get: function () {
+                get: function get() {
                   return [
                     'You have not met the minimum follower threshold for your region that is required to be verified as an individual in gaming. ',
                   ]
@@ -9416,7 +9420,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'h515e869',
-                get: function () {
+                get: function get() {
                   return [
                     'Individuals in gaming must compete in verified esports leagues and events to be verified. Provide a link to the verified team, league, event, or organization relevant to your account.',
                   ]
@@ -9424,7 +9428,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd2cd7f89',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a prominent sports league, team, or global competition. ',
                   ]
@@ -9432,7 +9436,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c68614a3',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Google Trends profile with evidence of recent search activity about your professional sports organization. ',
                   ]
@@ -9440,7 +9444,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b4ea622f',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to a Wikipedia page about your professional sports organization that contains at least three external references. ',
                   ]
@@ -9448,7 +9452,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'acab99f7',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link showing evidence of that your professional sports organization is listed on a public stock exchange. ',
                   ]
@@ -9456,7 +9460,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'df0b2577',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to the official website of a global competition or professional sports organization that references you as a league, team, or competition. ',
                   ]
@@ -9464,7 +9468,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jfda4c29',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide links to at least three articles about your organization in verified news publications in the last six months. ',
                   ]
@@ -9472,7 +9476,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g3299df1',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as a professional athlete. ',
                   ]
@@ -9480,7 +9484,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'id6bbc01',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a method to show that your account qualifies for verification as an individual in gaming. ',
                   ]
@@ -9488,7 +9492,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fbe119c5',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to the official website of a global competition or professional sports organization that references you as a professional athlete, manager, or coach. ',
                   ]
@@ -9496,7 +9500,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'da0e7f33',
-                get: function () {
+                get: function get() {
                   return [
                     'Provide a link to the official website of a verified esports league or event that references you as a rostered team member, coach, or manager. ',
                   ]
@@ -9504,7 +9508,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ca20e39f',
-                get: function () {
+                get: function get() {
                   return [
                     'Unfortunately, we’re currently not able to process any new verification requests. Check back later and give it another try. ',
                   ]
@@ -9512,7 +9516,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jf9308af',
-                get: function () {
+                get: function get() {
                   return [
                     'In order to verify your identity via email, you must have a previously verified address. To do this, navigate to ',
                     '.',
@@ -9521,7 +9525,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e9976a41',
-                get: function () {
+                get: function get() {
                   return [
                     'In order to verify your identity via email, you need a verified email address that meets our eligibility requirements. To do this, navigate to ',
                     '.',
@@ -9530,7 +9534,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e5b4cc43',
-                get: function () {
+                get: function get() {
                   return [
                     'Verification is for notable people or groups within a specific category. If that sounds like you, start a verification request. ',
                   ]
@@ -9538,7 +9542,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b8f15ec5',
-                get: function () {
+                get: function get() {
                   return [
                     'Make sure your face and the text on your ID are clearly visible and legible. If not, you might have to resubmit. Twitter will not receive or store a copy of your ID. ',
                   ]
@@ -9546,7 +9550,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd65a41c3',
-                get: function () {
+                get: function get() {
                   return [
                     'For information about how you can access or correct any data submitted, please visit our ',
                     '.',
@@ -9555,7 +9559,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a1c39f5b',
-                get: function () {
+                get: function get() {
                   return [
                     'You’ll be contacted as soon as a decision has been made. This could take up to ' +
                       this.props.days +
@@ -9567,13 +9571,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ja826537',
-                get: function () {
+                get: function get() {
                   return ['Help us improve with a brief ', '.']
                 },
               },
               {
                 key: 'b7be91bf',
-                get: function () {
+                get: function get() {
                   return [
                     'Your last request was denied on ' +
                       this.props.date +
@@ -9583,7 +9587,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jcb00a95',
-                get: function () {
+                get: function get() {
                   return [
                     'Your last request was made on ' +
                       this.props.date +
@@ -9593,7 +9597,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'j92ea4b9',
-                get: function () {
+                get: function get() {
                   return [
                     'Your last request was made on ' +
                       this.props.date +
@@ -9603,13 +9607,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'jcd067dd',
-                get: function () {
+                get: function get() {
                   return ['Have fun and remember to follow the ', '.']
                 },
               },
               {
                 key: 'hcecd237',
-                get: function () {
+                get: function get() {
                   return [
                     'These are the apps which you connected to your account. You can see the information these apps have access to and revoke access. ',
                   ]
@@ -9617,13 +9621,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'i34eeb37',
-                get: function () {
+                get: function get() {
                   return [this.props.infoText + ' ']
                 },
               },
               {
                 key: 'd79b6b7b',
-                get: function () {
+                get: function get() {
                   return [
                     'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account. ',
                   ]
@@ -9631,13 +9635,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f3c4e2c5',
-                get: function () {
+                get: function get() {
                   return ['Your new email ' + this.props.unverifiedEmail + ' has not been confirmed. ']
                 },
               },
               {
                 key: 'hc585ff1',
-                get: function () {
+                get: function get() {
                   return [
                     'Changing your password will log you out of all your active Twitter sessions except the one you’re using at this time. The ',
                     ' with access to your account won’t be affected. ',
@@ -9646,7 +9650,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a4455c05',
-                get: function () {
+                get: function get() {
                   return [
                     'Write it down, or take a screenshot, and keep it some place safe. This code can only be used once. ',
                   ]
@@ -9654,7 +9658,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e12a6841',
-                get: function () {
+                get: function get() {
                   return [
                     'This is the primary country associated with your account. Your country helps us to customize your Twitter experience. ',
                   ]
@@ -9662,7 +9666,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ec152667',
-                get: function () {
+                get: function get() {
                   return [
                     'These are the contacts that you have imported from your mobile devices. This information is used to personalize your experience on Twitter, such as suggesting accounts to follow. You can remove any contacts you’ve previously uploaded and turn off syncing with Twitter on all devices. Please be aware that this takes a little time. ',
                   ]
@@ -9670,13 +9674,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ia4557bf',
-                get: function () {
+                get: function get() {
                   return ['If enabled, you will be able to attach location information to your Tweets. ']
                 },
               },
               {
                 key: 'ab3bf5a7',
-                get: function () {
+                get: function get() {
                   return [
                     'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them. ',
                   ]
@@ -9684,13 +9688,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g124fce9',
-                get: function () {
+                get: function get() {
                   return ['Some account information may still be available in search engines, such as Google or Bing. ']
                 },
               },
               {
                 key: 'd9ef8fbb',
-                get: function () {
+                get: function get() {
                   return [
                     'If you just want to change your @username, you don’t need to deactivate your account — edit it in your ',
                     '.',
@@ -9699,7 +9703,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'g4dcd62b',
-                get: function () {
+                get: function get() {
                   return [
                     'To use your current @username or email address with a different Twitter account, ',
                     ' before you deactivate this account.',
@@ -9708,7 +9712,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b44893f9',
-                get: function () {
+                get: function get() {
                   return [
                     'If you want to download ',
                     ', you’ll need to complete both the request and download process before deactivating your account. Links to download your data cannot be sent to deactivated accounts.',
@@ -9717,13 +9721,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e9dec56f',
-                get: function () {
+                get: function get() {
                   return ['You are confirming that ', ', is accurate. If it’s not, your account may be affected.']
                 },
               },
               {
                 key: 'd9ebec8d',
-                get: function () {
+                get: function get() {
                   return [
                     'Twitter uses your age to customize your experience, including ads, as explained in our ',
                     '.',
@@ -9732,25 +9736,25 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fad15501',
-                get: function () {
+                get: function get() {
                   return ['You can control who sees your birthday on Twitter. ']
                 },
               },
               {
                 key: 'eb96a831',
-                get: function () {
+                get: function get() {
                   return ['These filters won’t affect notifications from people you follow. ']
                 },
               },
               {
                 key: 'aba5a349',
-                get: function () {
+                get: function get() {
                   return ['You can mute one word, phrase, @username, or hashtag at a time. ']
                 },
               },
               {
                 key: 'a10d1459',
-                get: function () {
+                get: function get() {
                   return [
                     'When you mute words, you won’t get any new notifications for Tweets that include them or see Tweets with those words in your Home timeline. ',
                   ]
@@ -9758,19 +9762,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b0b13519',
-                get: function () {
+                get: function get() {
                   return ['Here’s everyone you muted. You can add or remove them from this list. ']
                 },
               },
               {
                 key: 'h0c66785',
-                get: function () {
+                get: function get() {
                   return ['Manage your preferences for seeing sensitive media on Twitter. Learn more about our ', '.']
                 },
               },
               {
                 key: 'cbc4f32d',
-                get: function () {
+                get: function get() {
                   return [
                     'This includes other media that’s been marked as sensitive, such as media from accounts that have marked their ',
                     ' as sensitive.',
@@ -9779,97 +9783,97 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'gc242227',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'b6bf7ca7',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'g7970bc7',
-                get: function () {
+                get: function get() {
                   return ['Subscribe to', '' + this.props.name]
                 },
               },
               {
                 key: 'f402ebd1',
-                get: function () {
+                get: function get() {
                   return ['Super Follow', '' + this.props.name]
                 },
               },
               {
                 key: 'd724f427',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'h3d97f03',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'b8437d65',
-                get: function () {
+                get: function get() {
                   return ['Manage settings that help limit unwelcome interactions. ']
                 },
               },
               {
                 key: 'a9c053c7',
-                get: function () {
+                get: function get() {
                   return ['By applying, you agree to be bound by the ']
                 },
               },
               {
                 key: 'acb31cd3',
-                get: function () {
+                get: function get() {
                   return ['By applying, you agree to be bound by the ']
                 },
               },
               {
                 key: 'fb01c6d9',
-                get: function () {
+                get: function get() {
                   return ['Do what you love', 'and earn money doing it']
                 },
               },
               {
                 key: 'j8018f0f',
-                get: function () {
+                get: function get() {
                   return ['', ' per month']
                 },
               },
               {
                 key: 'f5c51127',
-                get: function () {
+                get: function get() {
                   return ['', 'Assuming a ' + this.props.price + '/month Subscriptions offering']
                 },
               },
               {
                 key: 'caf67b9b',
-                get: function () {
+                get: function get() {
                   return ['', 'Assuming a ' + this.props.price + '/month Super Follows offering']
                 },
               },
               {
                 key: 'fdf28443',
-                get: function () {
+                get: function get() {
                   return ['By selecting to accept and continue, you agree to be bound by the ']
                 },
               },
               {
                 key: 'fcad94b9',
-                get: function () {
+                get: function get() {
                   return ['By selecting to accept and continue, you agree to be bound by the ']
                 },
               },
               {
                 key: 'geee69df',
-                get: function () {
+                get: function get() {
                   return [
                     'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
                   ]
@@ -9877,7 +9881,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'iab65111',
-                get: function () {
+                get: function get() {
                   return [
                     'We’ve confirmed your Stripe account. It can take ',
                     ' for your Subscription to be activated. We’ll send you a notification as soon as it’s live.',
@@ -9886,7 +9890,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'cf780193',
-                get: function () {
+                get: function get() {
                   return [
                     'We’ve confirmed your Stripe account. It can take ',
                     ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
@@ -9895,19 +9899,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ha49b9b7',
-                get: function () {
+                get: function get() {
                   return ['Viewing Tweets won’t unblock @' + this.props.screenName + '. ']
                 },
               },
               {
                 key: 'd6c6deaf',
-                get: function () {
+                get: function get() {
                   return ['Preorder for ']
                 },
               },
               {
                 key: 'hc37d3bb',
-                get: function () {
+                get: function get() {
                   return [
                     'When you start the challenge, Google may collect and use information about you, your device, and browser. View Google’s ',
                     '.',
@@ -9916,7 +9920,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'bc543cd9',
-                get: function () {
+                get: function get() {
                   return [
                     '',
                     ' will receive the email associated with your Twitter account, ',
@@ -9926,13 +9930,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'gd686e7f',
-                get: function () {
+                get: function get() {
                   return ['Your email is ', '. To use a different email, ', '.']
                 },
               },
               {
                 key: 'b9c12eef',
-                get: function () {
+                get: function get() {
                   return [
                     'By subscribing you agree to Revue’s ',
                     ' and ',
@@ -9943,13 +9947,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'efdeb337',
-                get: function () {
+                get: function get() {
                   return ['By subscribing you agree to Revue’s ', ' and ', '.']
                 },
               },
               {
                 key: 'j28cabeb',
-                get: function () {
+                get: function get() {
                   return [
                     'Looking for other ways to reach your audience? Ready to get paid for your work? It’s time to try out ',
                     ' - Twitter’s newsletter tool for writers and publishers',
@@ -9958,7 +9962,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a1300021',
-                get: function () {
+                get: function get() {
                   return [
                     'Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here. ',
                   ]
@@ -9966,19 +9970,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b004e8bf',
-                get: function () {
+                get: function get() {
                   return ['Learn more about 3rd party app access in the ', '.']
                 },
               },
               {
                 key: 'afd52f45',
-                get: function () {
+                get: function get() {
                   return ['Made by ', '. Read ' + this.props.orgName + '’s ', ' and ', '.']
                 },
               },
               {
                 key: 'e7e44bab',
-                get: function () {
+                get: function get() {
                   return [
                     'Try searching for something else, or check your ',
                     ' to see if they’re protecting you from potentially sensitive content.',
@@ -9987,13 +9991,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ee512b37',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
                 },
               },
               {
                 key: 'i8197603',
-                get: function () {
+                get: function get() {
                   return [
                     'To report an intellectual property issue, please visit the ',
                     '. To report any other issues with this product, please go to the iOS or Android app.',
@@ -10002,19 +10006,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a21f2f79',
-                get: function () {
+                get: function get() {
                   return ['For more information on product violations, ', '.']
                 },
               },
               {
                 key: 'eeb5fb11',
-                get: function () {
+                get: function get() {
                   return ['Address info is shared with Google. See ', ' and ', ' to learn more.']
                 },
               },
               {
                 key: 'f9b1387f',
-                get: function () {
+                get: function get() {
                   return [
                     'Only admins and moderators of Communities can Spotlight them on their profiles. Want to ',
                     ' of your own?',
@@ -10023,13 +10027,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ef72b01b',
-                get: function () {
+                get: function get() {
                   return ['To find a crisis center near you, visit ']
                 },
               },
               {
                 key: 'e6c21d5b',
-                get: function () {
+                get: function get() {
                   return [
                     'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our ',
                     ' if they have follow-up questions.',
@@ -10038,61 +10042,61 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'i89d7b71',
-                get: function () {
+                get: function get() {
                   return ['Don’t have an account? ']
                 },
               },
               {
                 key: 'c83ef3f5',
-                get: function () {
+                get: function get() {
                   return ['Already have an account? ']
                 },
               },
               {
                 key: 'f81ca1f5',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'j449c95b',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'f1a3d63d',
-                get: function () {
+                get: function get() {
                   return ['Add your date of birth to your ', '.']
                 },
               },
               {
                 key: 'f2df3f23',
-                get: function () {
+                get: function get() {
                   return ['Control how Twitter customizes your experience in ']
                 },
               },
               {
                 key: 'j31f2f97',
-                get: function () {
+                get: function get() {
                   return ['Yes, all automated accounts need to be labeled. This is required under our ', '.']
                 },
               },
               {
                 key: 'ed8f77d3',
-                get: function () {
+                get: function get() {
                   return ['Learn more on the ', ' page.']
                 },
               },
               {
                 key: 'if2bb997',
-                get: function () {
+                get: function get() {
                   return ['Sorry to see you go. #GoodBye']
                 },
               },
               {
                 key: 'bf82b0a7',
-                get: function () {
+                get: function get() {
                   return [
                     'If you haven’t provided a date of birth, we’ve provided an age range based on your Twitter profile and activity. Age information is used to personalize your experience. ',
                   ]
@@ -10100,7 +10104,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a97ef88f',
-                get: function () {
+                get: function get() {
                   return [
                     'Tailored audiences are often built from email lists or browsing behaviors. They help advertisers reach prospective customers or people who have already expressed interest in their business. ',
                   ]
@@ -10108,13 +10112,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f451c521',
-                get: function () {
+                get: function get() {
                   return ['You are currently a part of ', ' from ']
                 },
               },
               {
                 key: 'e1d684b1',
-                get: function () {
+                get: function get() {
                   return [
                     'To enable this, go to your ',
                     ' settings and turn on “Personalize based on your inferred identity”.',
@@ -10123,7 +10127,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'h0085c59',
-                get: function () {
+                get: function get() {
                   return [
                     'To enable this, go to your ',
                     ' settings and turn on “Personalize based on your inferred identity”.',
@@ -10132,7 +10136,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'b78e30fd',
-                get: function () {
+                get: function get() {
                   return [
                     'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
                     ' settings.',
@@ -10141,7 +10145,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'h7173353',
-                get: function () {
+                get: function get() {
                   return [
                     'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
                     ' settings.',
@@ -10150,7 +10154,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ad5f7017',
-                get: function () {
+                get: function get() {
                   return [
                     'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling “Personalize based on your inferred identity” in your ',
                     ' settings.',
@@ -10159,19 +10163,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f870a95b',
-                get: function () {
+                get: function get() {
                   return ['These are devices Twitter uses to improve and measure your experience on this browser. ']
                 },
               },
               {
                 key: 'e21b623d',
-                get: function () {
+                get: function get() {
                   return ['These are browsers and devices associated with you. ']
                 },
               },
               {
                 key: 'b6baf555',
-                get: function () {
+                get: function get() {
                   return [
                     'These are browsers, devices, and information Twitter uses to personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers like those linked to your Twitter account. ',
                   ]
@@ -10179,13 +10183,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a1fdeb45',
-                get: function () {
+                get: function get() {
                   return ['Go to your ', ' to turn it on.']
                 },
               },
               {
                 key: 'hcb3ad67',
-                get: function () {
+                get: function get() {
                   return [
                     'If you see any suspicious activity from an app, go to ',
                     ' to revoke its access. In some cases the IP location may differ from your physical location. ',
@@ -10194,7 +10198,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c2a54dcb',
-                get: function () {
+                get: function get() {
                   return [
                     'Twitter’s partners build audiences around shopping decisions, lifestyle, and other online and offline behaviors. ',
                   ]
@@ -10202,7 +10206,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ba13ef23',
-                get: function () {
+                get: function get() {
                   return [
                     'Something went wrong and your Twitter data couldn’t be sent. To request your data, please ',
                     '.',
@@ -10211,13 +10215,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'e1d95725',
-                get: function () {
+                get: function get() {
                   return ['You can always unfollow from ', '.']
                 },
               },
               {
                 key: 'aa7f488f',
-                get: function () {
+                get: function get() {
                   return [
                     'People won’t be notified when you edit your Twitter Circle. Anyone you add will be able to see your previous Twitter Circle Tweets. ',
                   ]
@@ -10225,7 +10229,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'cace9785',
-                get: function () {
+                get: function get() {
                   return [
                     'By clicking Create Promotion, you’re indicating that you have read and agree to the ',
                     ' and ',
@@ -10235,13 +10239,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c99d7101',
-                get: function () {
+                get: function get() {
                   return ['By clicking Create Promotion, you’re indicating that you have read and agree to the ', '.']
                 },
               },
               {
                 key: 'a063fb4b',
-                get: function () {
+                get: function get() {
                   return [
                     'Some targeting options aren’t available for this ads account, in accordance with Twitter’s ',
                     '.',
@@ -10250,13 +10254,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'c9927419',
-                get: function () {
+                get: function get() {
                   return ['This Tweet doesn’t have any hidden replies, but Protected Tweets might be filtered out. ']
                 },
               },
               {
                 key: 'h9fba3eb',
-                get: function () {
+                get: function get() {
                   return [
                     'Notes aren’t available to read in your region yet. Follow ',
                     ' for announcements and updates about Notes, or read more in our ',
@@ -10266,19 +10270,19 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'a20c0721',
-                get: function () {
+                get: function get() {
                   return ['Last edited: ']
                 },
               },
               {
                 key: 'a9ce2dd5',
-                get: function () {
+                get: function get() {
                   return ['', ' for help and how-to’s.']
                 },
               },
               {
                 key: 'a66ed615',
-                get: function () {
+                get: function get() {
                   return [
                     'By clicking Subscribe you agree to the ',
                     '. Your subscription auto-renews monthly until you cancel, as described in the Terms.',
@@ -10287,13 +10291,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'aa4026bf',
-                get: function () {
+                get: function get() {
                   return ['This prevents ', ' from including you in any of their Lists, including this one.']
                 },
               },
               {
                 key: 'e645092b',
-                get: function () {
+                get: function get() {
                   return [
                     'Are you sure you want to view these Tweets? Viewing Tweets won’t unblock @' +
                       this.props.screenName +
@@ -10303,31 +10307,31 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ce1aaf8f',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Reaction' + n(this.props.count, '', 's')]
                 },
               },
               {
                 key: 'eea0a14f',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Like' + n(this.props.count, '', 's')]
                 },
               },
               {
                 key: 'ba6a357f',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Photos & videos']
                 },
               },
               {
                 key: 'fdc023d7',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Tweet' + n(this.props.count, '', 's')]
                 },
               },
               {
                 key: 'a496f1c9',
-                get: function () {
+                get: function get() {
                   return [
                     'You’re temporarily autoblocked from viewing and interacting with ',
                     '’s Tweets. This happened when they were in Safety Mode, and we flagged your interactions as potentially abusive or spammy.',
@@ -10336,67 +10340,67 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd0271e51',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'ed219b4b',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'h9bd2805',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'cc487b37',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'hafa5309',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'hd184fd7',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'bae036f9',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'aec2e703',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'f0dc3227',
-                get: function () {
+                get: function get() {
                   return ['']
                 },
               },
               {
                 key: 'ccade2e7',
-                get: function () {
+                get: function get() {
                   return ['You can’t follow or see @' + this.props.screenName + '’s Tweets. ']
                 },
               },
               {
                 key: 'bed14929',
-                get: function () {
+                get: function get() {
                   return [
                     ' · ' +
                       this.props.formattedFrequencyCount +
@@ -10408,13 +10412,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'd7f30b65',
-                get: function () {
+                get: function get() {
                   return ['Categories are self-selected and not assigned, verified, or endorsed by Twitter. ']
                 },
               },
               {
                 key: 'c97724c3',
-                get: function () {
+                get: function get() {
                   return [
                     'Only approved followers can see @' +
                       this.props.screenName +
@@ -10424,7 +10428,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'dd7d4939',
-                get: function () {
+                get: function get() {
                   return [
                     'You turned on Safety Mode, so we autoblocked ',
                     ' for a week. ' + this.props.smartBlockEndTimeSentence,
@@ -10433,7 +10437,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'ef0a76ab',
-                get: function () {
+                get: function get() {
                   return [
                     'You can view their profile to learn more about them, or go to their autoblocked Tweets to see why we autoblocked them. Neither one of these actions will remove the autoblock from ',
                     '.',
@@ -10442,13 +10446,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f6fa2033',
-                get: function () {
+                get: function get() {
                   return ['Twitter suspends accounts which violate the ']
                 },
               },
               {
                 key: 'fa13e739',
-                get: function () {
+                get: function get() {
                   return [
                     'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
                   ]
@@ -10456,7 +10460,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fce78785',
-                get: function () {
+                get: function get() {
                   return [
                     'By clicking below to make this purchase, you agree to be bound by the ',
                     '. Cancel anytime. Auto-renews monthly.',
@@ -10465,61 +10469,61 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'fbe06ae1',
-                get: function () {
+                get: function get() {
                   return ['', ' by ']
                 },
               },
               {
                 key: 'b9ad7ff5',
-                get: function () {
+                get: function get() {
                   return ['', ' by author']
                 },
               },
               {
                 key: 'c2588611',
-                get: function () {
+                get: function get() {
                   return ['', ' at ' + this.props.time]
                 },
               },
               {
                 key: 'dfde726b',
-                get: function () {
+                get: function get() {
                   return ['', ' read']
                 },
               },
               {
                 key: 'd6b02329',
-                get: function () {
+                get: function get() {
                   return [this.props.formattedCount + ' Member' + n(this.props.count, '', 's')]
                 },
               },
               {
                 key: 'c9e6167d',
-                get: function () {
+                get: function get() {
                   return ['Followed by ']
                 },
               },
               {
                 key: 'ha91d1eb',
-                get: function () {
+                get: function get() {
                   return ['Followed by ', ' and ']
                 },
               },
               {
                 key: 'f1069f9b',
-                get: function () {
+                get: function get() {
                   return ['Followed by ', ', ', ', and ']
                 },
               },
               {
                 key: 'e8404c1f',
-                get: function () {
+                get: function get() {
                   return ['Followed by ', ', ', ', and ', ' others you follow']
                 },
               },
               {
                 key: 'e570a97b',
-                get: function () {
+                get: function get() {
                   return [
                     'This media has been disabled due to a copyright claim by ' +
                       this.props.copyrightHolder +
@@ -10530,49 +10534,49 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'babaae9b',
-                get: function () {
+                get: function get() {
                   return ['', ' for help and how-to’s.']
                 },
               },
               {
                 key: 'f7225b41',
-                get: function () {
+                get: function get() {
                   return ['', ' ', ' to learn more.']
                 },
               },
               {
                 key: 'bb2cd6d3',
-                get: function () {
+                get: function get() {
                   return ['', ' and ', ' others are Trending in this Topic']
                 },
               },
               {
                 key: 'e1e348dd',
-                get: function () {
+                get: function get() {
                   return ['Paid for by ']
                 },
               },
               {
                 key: 'c7dea0d1',
-                get: function () {
+                get: function get() {
                   return ['Paid for by ', ' and not authorized by any candidate or candidate’s committee.']
                 },
               },
               {
                 key: 'b5c2371b',
-                get: function () {
+                get: function get() {
                   return ['Paid for by ', ' · Authorized by ' + this.props.sponsorshipCandidate]
                 },
               },
               {
                 key: 'h99e9c95',
-                get: function () {
+                get: function get() {
                   return ['', ' Retweeted']
                 },
               },
               {
                 key: 'dd7a993b',
-                get: function () {
+                get: function get() {
                   return [
                     'Only you and people in your Twitter Circle can see this Tweet. Retweeting, Quote Tweeting, and sharing aren’t available. ',
                   ]
@@ -10580,103 +10584,103 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'dbf19261',
-                get: function () {
+                get: function get() {
                   return ['From ']
                 },
               },
               {
                 key: 'd7b2c271',
-                get: function () {
+                get: function get() {
                   return ['', ' and ']
                 },
               },
               {
                 key: 'b035fe73',
-                get: function () {
+                get: function get() {
                   return ['', ' and ']
                 },
               },
               {
                 key: 'g3ed1dd5',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'i06724fb',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'eb0084f3',
-                get: function () {
+                get: function get() {
                   return ['', ' ']
                 },
               },
               {
                 key: 'h5970807',
-                get: function () {
+                get: function get() {
                   return ['Replying to ']
                 },
               },
               {
                 key: 'ge01e6a3',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' ', ' ']
                 },
               },
               {
                 key: 'f5a069ab',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' ']
                 },
               },
               {
                 key: 'hd7dd197',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' ', ' ', ' ']
                 },
               },
               {
                 key: 'g4eb2847',
-                get: function () {
+                get: function get() {
                   return ['Replying to ', ' ', ' ']
                 },
               },
               {
                 key: 'ef529b2f',
-                get: function () {
+                get: function get() {
                   return ['', ' ', ' ']
                 },
               },
               {
                 key: 'fe7c309b',
-                get: function () {
+                get: function get() {
                   return ['Trending with ']
                 },
               },
               {
                 key: 'ea753bf5',
-                get: function () {
+                get: function get() {
                   return ['Trending with ', ', ']
                 },
               },
               {
                 key: 'c3190d39',
-                get: function () {
+                get: function get() {
                   return ['<FormatMessage />: ']
                 },
               },
               {
                 key: 'ge9aefd5',
-                get: function () {
+                get: function get() {
                   return ['', ' from ']
                 },
               },
               {
                 key: 'templateReducer',
-                get: function () {
+                get: function get() {
                   var e,
                     t = c.Children.toArray(this.props.children),
                     o = ((e = this.props.$i18n), u[d[e]] || l)
@@ -13382,19 +13386,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c32b252b', b.a1653031457),
           a('a1061083', b.b490808361)
       },
-      79404: (e, t, o) => {
+      79404: function _(e, t, o) {
         e.exports = o(61174)
       },
-      73957: (e) => {
+      73957: function _(e) {
         e.exports = !1
       },
-      85389: (e, t, o) => {
+      85389: function _(e, t, o) {
         'use strict'
         o(17346)
       },
     },
-    (e) => {
-      e.O(0, ['vendor'], () => {
+    function (e) {
+      e.O(0, ['vendor'], function () {
         return (t = 85389), e((e.s = t))
         var t
       })
@@ -13402,4 +13406,5 @@ window.__SCRIPTS_LOADED__.vendor &&
     },
   ]),
   (window.__SCRIPTS_LOADED__.i18n = !0))
+
 //# sourceMappingURL=WIPED
