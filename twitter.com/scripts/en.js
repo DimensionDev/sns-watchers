@@ -4471,6 +4471,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f139168e', 'Earnings dashboard'),
           a('ee0510c2', 'Payout history'),
           a('i14be2c6', 'Estimated earned revenue'),
+          a('e6f83b1a', 'Tips'),
           a('e939cc54', 'Application accepted · Build your subscription'),
           a('c9b82b4c', 'Application accepted · Build your Subscription'),
           a('ibb5e1c8', 'Application declined'),
@@ -4601,6 +4602,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
           a('g1b8020c', 'Last 30 days'),
           a('b5f9ec14', 'You have no renewals in the last 30 days.'),
+          a('j087774e', 'Coins'),
           a('f2351b98', 'Flagged accounts'),
           a(
             'da2c4a73',
@@ -4888,13 +4890,16 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'h9b9d486',
             'The kind of content you offer Subscribers is entirely up to you. Here are some examples to help get you started.',
-          ),
+          )
+        a(
+          'ic130fd6',
+          'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
+        ),
+          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
           a(
-            'ic130fd6',
-            'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
+            'h580543e',
+            'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
           ),
-          a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.')
-        a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
           a(
             'b737ee66',
             'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.',
@@ -6022,17 +6027,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'd848d612',
             'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
-          ),
-          a('j70f0f35', function (e) {
-            return (
-              'Follow the ' +
-              e.topicName +
-              ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
-              e.topicName +
-              ' on Twitter.'
-            )
-          }),
-          a('ad964e30', 'Edit your Twitter Circle')
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6052,7 +6047,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('ef8f5d90', 'Recommended'),
+        a('j70f0f35', function (e) {
+          return (
+            'Follow the ' +
+            e.topicName +
+            ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+            e.topicName +
+            ' on Twitter.'
+          )
+        }),
+          a('ad964e30', 'Edit your Twitter Circle'),
+          a('ef8f5d90', 'Recommended'),
           a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
           a('dab58e32', 'When you add people, they’ll show up here.'),
           a('c308119e', 'How it works'),
@@ -7501,10 +7506,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b756eaeb', function (e) {
             return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
           }),
-          a('b140e3b2', 'Some conversations can get heavy'),
-          a('icbb05dc', 'Don’t forget the human behind the screen.'),
-          a('g4d12384', 'Heads up')
-        a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
+          a('b140e3b2', 'Some conversations can get heavy')
+        a('icbb05dc', 'Don’t forget the human behind the screen.'),
+          a('g4d12384', 'Heads up'),
+          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'

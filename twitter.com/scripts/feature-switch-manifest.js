@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '8dc187edf8cda67ca13446f6a3b667ad33a1ddad',
+  feature_set_token: '4c4e59d0be3af006ac356ad23b646b7b8c1b8fdf',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -314,6 +314,8 @@ var manifest = {
     conversation_controls_limited_replies_creation_enabled: { value: !0 },
     conversation_controls_persistence_enabled: { value: !0 },
     conversational_safety_heads_up_treatment_A_enabled: { value: '' },
+    creator_monetization_web_tips_dashboard_enabled: { value: !1 },
+    creator_monetization_web_tips_onboarding_enabled: { value: !1 },
     dash_region_specific_de_and_tr_media_transparency_items_enabled: { value: !1 },
     dash_region_specific_de_media_transparency_items_enabled: { value: !1 },
     direct_messages_incremental_holdback_2022h1: { value: !0 },
@@ -705,7 +707,6 @@ var manifest = {
     responsive_web_professional_journeys_holdback_enabled: { value: !1 },
     responsive_web_profile_spotlight_v0_config: { value: !0 },
     responsive_web_profile_spotlight_v0_display: { value: !0 },
-    responsive_web_promoted_account_card_enabled: { value: !0 },
     responsive_web_promoted_badge_below_header: { value: !1 },
     responsive_web_promoted_badge_use_circle_icon: { value: !1 },
     responsive_web_qp_intro_experiment_enabled: { value: !1 },
@@ -1164,16 +1165,18 @@ var manifest = {
     twitter_chat_communities_chat_enabled: { value: !1 },
     twitter_delegate_enabled: { value: !1 },
     ucpd_enabled: { value: !0 },
-    unified_cards_ad_metadata_container_dynamic_card_content_query_enabled: { value: !0 },
     unified_cards_collection_ads_convert_to_image_website_card: { value: !1 },
     unified_cards_dpa_cta_button_enabled: { value: !0 },
     unified_cards_dpa_metadata_enabled: { value: !0 },
     unified_cards_dpa_placeholder_media_key: { value: ['3_1485707239990054912'] },
-    unified_cards_follow_card_consumption_enabled: { value: !0 },
     user_display_name_max_limit: { value: 50 },
     verified_phone_label_enabled: { value: !1 },
     vibe_api_enabled: { value: !0 },
     vibe_tweet_context_enabled: { value: !0 },
+    view_counts_author_visibility_enabled: { value: !1 },
+    view_counts_everywhere_api_enabled: { value: !1 },
+    view_counts_public_visibility_enabled: { value: !1 },
+    view_counts_share_at_end_enabled: { value: !1 },
     vod_attribution_tweet_detail_pivot_enabled: { value: !0 },
     voice_consumption_enabled: { value: !0 },
     voice_rooms_card_version: { value: 2 },
@@ -1824,6 +1827,131 @@ var manifest = {
       defaultValue: '',
     },
     cotweets_m1_14657: { name: 'cotweets_m1_14657', type: 'experiment', enumeration_values: [] },
+    creator_monetization_web_tips_onboarding_enabled: {
+      name: 'creator_monetization_web_tips_onboarding_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    creator_monetization_web_tips_dashboard_enabled: {
+      name: 'creator_monetization_web_tips_dashboard_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    creator_monetization_profile_pass_enabled: { name: 'creator_monetization_profile_pass_enabled', type: 'string' },
+    creator_monetization_ticket_spaces_creation_enabled: {
+      name: 'creator_monetization_ticket_spaces_creation_enabled',
+      type: 'string',
+    },
+    creator_monetization_ticket_spaces_application_enabled: {
+      name: 'creator_monetization_ticket_spaces_application_enabled',
+      type: 'string',
+    },
+    creator_unsupported_nft_file_extensions: { name: 'creator_unsupported_nft_file_extensions', type: 'string' },
+    creator_android_nft_avatar_gql_include_enabled: {
+      name: 'creator_android_nft_avatar_gql_include_enabled',
+      type: 'string',
+    },
+    creator_purchases_dashboard_enabled: { name: 'creator_purchases_dashboard_enabled', type: 'string' },
+    creator_is_new_monetization_dashboard_flow_enabled: {
+      name: 'creator_is_new_monetization_dashboard_flow_enabled',
+      type: 'string',
+    },
+    creator_nft_avatar_landing_page_help_link: { name: 'creator_nft_avatar_landing_page_help_link', type: 'string' },
+    creator_monetization_dashboard_enabled: { name: 'creator_monetization_dashboard_enabled', type: 'string' },
+    creator_android_nft_avatar_tab_enabled: { name: 'creator_android_nft_avatar_tab_enabled', type: 'string' },
+    creator_monetization_ticket_spaces_enabled: { name: 'creator_monetization_ticket_spaces_enabled', type: 'string' },
+    creator_monetization_super_follows_onboarding_enabled: {
+      name: 'creator_monetization_super_follows_onboarding_enabled',
+      type: 'string',
+    },
+    creator_nft_allowed_wallets: { name: 'creator_nft_allowed_wallets', type: 'string' },
+    creator_image_preserve_circle_rounding_strategy: {
+      name: 'creator_image_preserve_circle_rounding_strategy',
+      type: 'string',
+    },
+    creator_nft_is_wallet_connect_with_metamask_enabled: {
+      name: 'creator_nft_is_wallet_connect_with_metamask_enabled',
+      type: 'string',
+    },
+    creator_monetization_ticket_spaces_consumption_enabled: {
+      name: 'creator_monetization_ticket_spaces_consumption_enabled',
+      type: 'string',
+    },
+    creator_is_nft_verification_with_twitter_blue_enabled: {
+      name: 'creator_is_nft_verification_with_twitter_blue_enabled',
+      type: 'string',
+    },
+    creator_nft_allowed_wallets_android: { name: 'creator_nft_allowed_wallets_android', type: 'string' },
+    creator_nft_picker_nfts_per_collection_page_size: {
+      name: 'creator_nft_picker_nfts_per_collection_page_size',
+      type: 'string',
+    },
+    creator_tip_jar_exchange_rates_refresh_interval: {
+      name: 'creator_tip_jar_exchange_rates_refresh_interval',
+      type: 'string',
+    },
+    creator_nft_is_owners_metadata_enabled: { name: 'creator_nft_is_owners_metadata_enabled', type: 'string' },
+    creator_is_nft_verification_ga_enabled: { name: 'creator_is_nft_verification_ga_enabled', type: 'string' },
+    creator_nft_avatar_help_link: { name: 'creator_nft_avatar_help_link', type: 'string' },
+    creator_coinbase_deeplink_url_template: { name: 'creator_coinbase_deeplink_url_template', type: 'string' },
+    creator_tip_jar_v1_enabled: { name: 'creator_tip_jar_v1_enabled', type: 'string' },
+    creator_ticketed_spaces_is_new_creation_flow_enabled: {
+      name: 'creator_ticketed_spaces_is_new_creation_flow_enabled',
+      type: 'string',
+    },
+    creator_is_nft_avatar_tutorial_enabled: { name: 'creator_is_nft_avatar_tutorial_enabled', type: 'string' },
+    creator_android_nft_avatar_consumption_enabled: {
+      name: 'creator_android_nft_avatar_consumption_enabled',
+      type: 'string',
+    },
+    creator_nft_avatar_nux_help_link: { name: 'creator_nft_avatar_nux_help_link', type: 'string' },
+    creator_monetization_query_application_status_enabled: {
+      name: 'creator_monetization_query_application_status_enabled',
+      type: 'string',
+    },
+    creator_is_nft_avatar_preview_enabled: { name: 'creator_is_nft_avatar_preview_enabled', type: 'string' },
+    creator_android_nft_avatar_http_include_enabled: {
+      name: 'creator_android_nft_avatar_http_include_enabled',
+      type: 'string',
+    },
+    creator_monetization_dashboard_giveaway_supported: {
+      name: 'creator_monetization_dashboard_giveaway_supported',
+      type: 'string',
+    },
+    creator_nft_verified_avatar_treatment_enabled: {
+      name: 'creator_nft_verified_avatar_treatment_enabled',
+      type: 'string',
+    },
+    creator_metamask_deeplink_url_template: { name: 'creator_metamask_deeplink_url_template', type: 'string' },
+    creator_nft_picker_nft_collections_page_size: {
+      name: 'creator_nft_picker_nft_collections_page_size',
+      type: 'string',
+    },
+    creator_nft_picker_nfts_page_size: { name: 'creator_nft_picker_nfts_page_size', type: 'string' },
+    creator_monetization_super_follows_enabled: { name: 'creator_monetization_super_follows_enabled', type: 'string' },
+    creator_monetization_super_follows_management_enabled: {
+      name: 'creator_monetization_super_follows_management_enabled',
+      type: 'string',
+    },
+    creator_awards_is_status_inline_awards_button_enabled: {
+      name: 'creator_awards_is_status_inline_awards_button_enabled',
+      type: 'string',
+    },
+    creator_valid_stripe_connect_hosts: { name: 'creator_valid_stripe_connect_hosts', type: 'string' },
+    creator_wallet_connect_url: { name: 'creator_wallet_connect_url', type: 'string' },
+    creator_android_nft_avatar_creation_enabled: {
+      name: 'creator_android_nft_avatar_creation_enabled',
+      type: 'string',
+    },
+    creator_wallet_connect_client_url_template: { name: 'creator_wallet_connect_client_url_template', type: 'string' },
+    creator_is_wallet_connect_qr_navigation_item_enabled: {
+      name: 'creator_is_wallet_connect_qr_navigation_item_enabled',
+      type: 'string',
+    },
+    creator_android_nft_avatar_consumption_nux_enabled: {
+      name: 'creator_android_nft_avatar_consumption_nux_enabled',
+      type: 'string',
+    },
     current_stack_follow_card_android_14711: {
       name: 'current_stack_follow_card_android_14711',
       type: 'experiment',
@@ -2113,11 +2241,7 @@ var manifest = {
     dm_voice_turkey_education_modal_enabled: { name: 'dm_voice_turkey_education_modal_enabled', type: 'string' },
     dm_voice_nigeria_education_modal_enabled: { name: 'dm_voice_nigeria_education_modal_enabled', type: 'string' },
     dm_voice_argentina_education_modal_enabled: { name: 'dm_voice_argentina_education_modal_enabled', type: 'string' },
-    dm_voice_messages_11154: {
-      name: 'dm_voice_messages_11154',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
+    dm_voice_messages_11154: { name: 'dm_voice_messages_11154', type: 'experiment', enumeration_values: [] },
     dont_mention_me_enabled: { name: 'dont_mention_me_enabled', type: 'boolean', defaultValue: !0 },
     dont_mention_me_mentions_tab_education_enabled: {
       name: 'dont_mention_me_mentions_tab_education_enabled',
@@ -2719,7 +2843,7 @@ var manifest = {
     ios_vod_attribution_destination_8641: {
       name: 'ios_vod_attribution_destination_8641',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
+      enumeration_values: [],
     },
     like_tweet_reactivity_all_users_15346: {
       name: 'like_tweet_reactivity_all_users_15346',
@@ -3107,11 +3231,6 @@ var manifest = {
       name: 'project_jiminy_article_web_11673',
       type: 'experiment',
       enumeration_values: [],
-    },
-    promoted_account_unified_card_migration_android_15494: {
-      name: 'promoted_account_unified_card_migration_android_15494',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     q4_misinformation_label_redesign_13232: {
       name: 'q4_misinformation_label_redesign_13232',
@@ -4337,11 +4456,6 @@ var manifest = {
       type: 'boolean',
       defaultValue: !0,
     },
-    responsive_web_promoted_account_card_enabled: {
-      name: 'responsive_web_promoted_account_card_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
     responsive_web_promoted_badge_below_header: {
       name: 'responsive_web_promoted_badge_below_header',
       type: 'boolean',
@@ -4791,11 +4905,6 @@ var manifest = {
       name: 'retweet_graphql_only_experiment_12688',
       type: 'experiment',
       enumeration_values: [],
-    },
-    revenue_opportunities_follower_campaigns_holdback_2022_15422: {
-      name: 'revenue_opportunities_follower_campaigns_holdback_2022_15422',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
     },
     rito_safety_mode_blocked_profile_enabled: {
       name: 'rito_safety_mode_blocked_profile_enabled',
@@ -5401,6 +5510,10 @@ var manifest = {
       name: 'subscriptions_marketing_page_disable_new_subscriptions_explanation',
       type: 'string',
     },
+    subscriptions_marketing_page_disable_new_subscriptions_dynamic_content_enabled: {
+      name: 'subscriptions_marketing_page_disable_new_subscriptions_dynamic_content_enabled',
+      type: 'string',
+    },
     super_follow_tweet_api_enabled: { name: 'super_follow_tweet_api_enabled', type: 'boolean', defaultValue: !0 },
     super_follow_user_api_enabled: { name: 'super_follow_user_api_enabled', type: 'boolean', defaultValue: !0 },
     super_follow_exclusive_tweet_creation_api_enabled: {
@@ -5922,11 +6035,6 @@ var manifest = {
     twitter_chat_community_spacebar_enabled: { name: 'twitter_chat_community_spacebar_enabled', type: 'string' },
     twitter_delegate_enabled: { name: 'twitter_delegate_enabled', type: 'boolean', defaultValue: !1 },
     ucpd_enabled: { name: 'ucpd_enabled', type: 'boolean', defaultValue: !0 },
-    unified_cards_ad_metadata_container_dynamic_card_content_query_enabled: {
-      name: 'unified_cards_ad_metadata_container_dynamic_card_content_query_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
     unified_cards_collection_ads_convert_to_image_website_card: {
       name: 'unified_cards_collection_ads_convert_to_image_website_card',
       type: 'boolean',
@@ -5960,15 +6068,6 @@ var manifest = {
       name: 'unified_cards_dpa_metadata_enabled',
       type: 'boolean',
       defaultValue: !0,
-    },
-    unified_cards_follow_card_consumption_enabled: {
-      name: 'unified_cards_follow_card_consumption_enabled',
-      type: 'boolean',
-      defaultValue: !0,
-    },
-    unified_cards_follow_card_media_link_enabled: {
-      name: 'unified_cards_follow_card_media_link_enabled',
-      type: 'string',
     },
     unified_cards_image_collection_website_android_15244: {
       name: 'unified_cards_image_collection_website_android_15244',
@@ -6027,6 +6126,30 @@ var manifest = {
       enumeration_values: ['control', 'treatment'],
     },
     video_tagging_13525: { name: 'video_tagging_13525', type: 'experiment', enumeration_values: [] },
+    view_counts_search_api_enabled: { name: 'view_counts_search_api_enabled', type: 'string' },
+    view_counts_home_api_enabled: { name: 'view_counts_home_api_enabled', type: 'string' },
+    view_counts_tweet_details_api_enabled: { name: 'view_counts_tweet_details_api_enabled', type: 'string' },
+    view_counts_profile_api_enabled: { name: 'view_counts_profile_api_enabled', type: 'string' },
+    view_counts_share_at_end_enabled: { name: 'view_counts_share_at_end_enabled', type: 'boolean', defaultValue: !1 },
+    view_counts_public_visibility_enabled: {
+      name: 'view_counts_public_visibility_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    view_counts_everywhere_api_enabled: {
+      name: 'view_counts_everywhere_api_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    view_counts_author_visibility_enabled: {
+      name: 'view_counts_author_visibility_enabled',
+      type: 'boolean',
+      defaultValue: !1,
+    },
+    view_counts_author_blue_verified_visibility_enabled: {
+      name: 'view_counts_author_blue_verified_visibility_enabled',
+      type: 'string',
+    },
     vod_attribution_tweet_detail_pivot_enabled: {
       name: 'vod_attribution_tweet_detail_pivot_enabled',
       type: 'boolean',
@@ -6261,20 +6384,15 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
-    web_immersive_media_viewer_fast_follow_15457: {
-      name: 'web_immersive_media_viewer_fast_follow_15457',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment', 'treatment_with_tap_to_hide'],
-    },
-    web_immersive_viewer_logged_out_15521: {
-      name: 'web_immersive_viewer_logged_out_15521',
-      type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
-    },
     web_immersive_viewer_logged_out_aa_test_15366: {
       name: 'web_immersive_viewer_logged_out_aa_test_15366',
       type: 'experiment',
       enumeration_values: ['control', 'control2'],
+    },
+    web_logged_out_immersive_viewer_holdback_2023h1_15944: {
+      name: 'web_logged_out_immersive_viewer_holdback_2023h1_15944',
+      type: 'experiment',
+      enumeration_values: ['control', 'treatment'],
     },
     web_repeat_profile_visit_notifications_15195: {
       name: 'web_repeat_profile_visit_notifications_15195',
