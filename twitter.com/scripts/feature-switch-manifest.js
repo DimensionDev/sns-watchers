@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '4c4e59d0be3af006ac356ad23b646b7b8c1b8fdf',
+  feature_set_token: '4732705c916330203fa402548af4e782fc5f073f',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -420,6 +420,14 @@ var manifest = {
     longform_top_articles_time_window_enabled: { value: !0 },
     machine_translation_holdback_logged_in: { value: !1 },
     machine_translation_holdback_logged_out: { value: !1 },
+    media_async_upload_amplify_duration_threshold: { value: 600 },
+    media_async_upload_longer_video_max_video_duration: { value: 600 },
+    media_async_upload_longer_video_max_video_size: { value: 1024 },
+    media_async_upload_max_avatar_gif_size: { value: 5 },
+    media_async_upload_max_gif_size: { value: 15 },
+    media_async_upload_max_image_size: { value: 5 },
+    media_async_upload_max_video_duration: { value: 140 },
+    media_async_upload_max_video_size: { value: 512 },
     media_edge_to_edge_content_enabled: { value: !1 },
     media_infra_play_icon_version_number: { value: 'playicon_v0' },
     moment_annotations_enabled: { value: !0 },
@@ -766,6 +774,7 @@ var manifest = {
     responsive_web_twitter_article_tweet_other_notes_enabled: { value: !0 },
     responsive_web_twitter_article_tweet_own_notes_enabled: { value: !1 },
     responsive_web_twitter_article_view_enabled: { value: !0 },
+    responsive_web_twitter_blue_eligibility_flow_enabled: { value: !1 },
     responsive_web_twitter_blue_growth_primary_nav_enabled: { value: !1 },
     responsive_web_twitter_blue_home_redesign_enabled: { value: !0 },
     responsive_web_twitter_blue_new_verification_copy_is_enabled: { value: !1 },
@@ -3011,6 +3020,57 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    media_async_upload_max_video_duration: {
+      name: 'media_async_upload_max_video_duration',
+      type: 'number',
+      defaultValue: 140,
+    },
+    media_async_upload_longer_video_max_video_duration: {
+      name: 'media_async_upload_longer_video_max_video_duration',
+      type: 'number',
+      defaultValue: 600,
+    },
+    media_async_upload_amplify_duration_threshold: {
+      name: 'media_async_upload_amplify_duration_threshold',
+      type: 'number',
+      defaultValue: 600,
+    },
+    media_async_upload_max_video_size: { name: 'media_async_upload_max_video_size', type: 'number', defaultValue: 512 },
+    media_async_upload_longer_video_max_video_size: {
+      name: 'media_async_upload_longer_video_max_video_size',
+      type: 'number',
+      defaultValue: 1024,
+    },
+    media_async_upload_max_image_size: { name: 'media_async_upload_max_image_size', type: 'number', defaultValue: 5 },
+    media_async_upload_max_gif_size: { name: 'media_async_upload_max_gif_size', type: 'number', defaultValue: 15 },
+    media_async_upload_max_avatar_gif_size: {
+      name: 'media_async_upload_max_avatar_gif_size',
+      type: 'number',
+      defaultValue: 5,
+    },
+    media_async_upload_longer_video_upsale_trim_enabled: {
+      name: 'media_async_upload_longer_video_upsale_trim_enabled',
+      type: 'string',
+    },
+    media_async_upload_number_of_http_requests_to_pack: {
+      name: 'media_async_upload_number_of_http_requests_to_pack',
+      type: 'string',
+    },
+    media_async_upload_send_total_bytes_in_finalize: {
+      name: 'media_async_upload_send_total_bytes_in_finalize',
+      type: 'string',
+    },
+    media_async_upload_longer_video_default_max_clip_length: {
+      name: 'media_async_upload_longer_video_default_max_clip_length',
+      type: 'string',
+    },
+    media_async_upload_gif_enabled: { name: 'media_async_upload_gif_enabled', type: 'string' },
+    media_async_upload_video_enabled: { name: 'media_async_upload_video_enabled', type: 'string' },
+    media_async_upload_default_max_clip_length: { name: 'media_async_upload_default_max_clip_length', type: 'string' },
+    media_async_upload_longer_video_desktop_prompt_duration: {
+      name: 'media_async_upload_longer_video_desktop_prompt_duration',
+      type: 'string',
+    },
     media_edge_to_edge_android_increased_list_margin: {
       name: 'media_edge_to_edge_android_increased_list_margin',
       type: 'string',
@@ -4755,6 +4815,11 @@ var manifest = {
       name: 'responsive_web_twitter_article_cover_aspect_ratio_5_2',
       type: 'boolean',
       defaultValue: !0,
+    },
+    responsive_web_twitter_blue_eligibility_flow_enabled: {
+      name: 'responsive_web_twitter_blue_eligibility_flow_enabled',
+      type: 'boolean',
+      defaultValue: !1,
     },
     responsive_web_twitter_blue_growth_primary_nav_enabled: {
       name: 'responsive_web_twitter_blue_growth_primary_nav_enabled',

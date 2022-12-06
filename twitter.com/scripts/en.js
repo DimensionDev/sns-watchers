@@ -1191,6 +1191,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ffe16626', 'Reply filter is on.'),
           a('f1c59d2e', 'Notify me'),
           a('d54612a4', 'Notifying me'),
+          a('eaa65473', function (e) {
+            return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
+          }),
           a('b8f3500a', 'View thread in Reader'),
           a('b4947556', 'Translate Tweet'),
           a('he9c9634', 'Unable to fetch translation'),
@@ -2368,12 +2371,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'b468ea24',
             'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
+          )
+        a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet'),
+          a(
+            'f6d04270',
+            'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
           ),
-          a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet')
-        a(
-          'f6d04270',
-          'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
-        ),
           a('c8c2c892', 'Twitter doesn’t choose what shows up, the people do'),
           a(
             'g98ea6c0',
@@ -3651,12 +3654,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d9138166', 'See places you’ve been'),
           a('f2b23062', 'Accessibility, display and languages'),
           a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
-          a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
-          a(
-            'a5ce82a4',
-            'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
-          )
-        a('d495680e', 'Languages'),
+          a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.')
+        a(
+          'a5ce82a4',
+          'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
+        ),
+          a('d495680e', 'Languages'),
           a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
           a('eafe3288', 'Data usage'),
           a(
@@ -4411,8 +4414,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             'This includes consensually made and shared media that’s pornographic or meant to cause sexual arousal.',
           ),
           a('h7e0672b', 'media settings'),
-          a('a5760c62', 'Upgrade available'),
-          a('e4067c94', 'Get a verified account.'),
+          a('bffb7ed4', 'NEW'),
           a('ib35705e', 'Manage Subscription'),
           a('e5fff0c8', 'Your subscription is active.'),
           a('baf97716', 'Your features will be available for the remainder of your billing period.'),
@@ -4427,6 +4429,9 @@ window.__SCRIPTS_LOADED__.vendor &&
               ' device. You’ll need to manage or cancel your subscription from that platform.'
             )
           }),
+          a('f6d0d8c2', 'Upgrade Twitter Blue'),
+          a('a5760c62', 'Upgrade available'),
+          a('a7d868c2', 'Get a verified account and blue checkmark.'),
           a('cb165528', 'News features and settings'),
           a('b16486e8', 'A better reading experience on and off Twitter.'),
           a('b62d6e4c', 'Reader'),
@@ -4881,8 +4886,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
           a('fe339750', 'Create Stripe account'),
           a('j912510a', 'Link Stripe account'),
-          a('ebfb897c', 'Examples'),
-          a('dc4feb1a', 'Not sure what to say?'),
+          a('ebfb897c', 'Examples')
+        a('dc4feb1a', 'Not sure what to say?'),
           a(
             'c183d272',
             'The kind of content you offer Super Followers is entirely up to you. Here are some examples to help get you started.',
@@ -4890,11 +4895,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'h9b9d486',
             'The kind of content you offer Subscribers is entirely up to you. Here are some examples to help get you started.',
-          )
-        a(
-          'ic130fd6',
-          'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
-        ),
+          ),
+          a(
+            'ic130fd6',
+            'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
+          ),
           a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
           a(
             'h580543e',
@@ -5097,7 +5102,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b1037710', 'Share your thoughts'),
           a('bb980db0', 'Event Timeline'),
           a('dfd7bba0', 'Check back later to see Tweets about this.'),
-          a('bffb7ed4', 'NEW'),
           a('c9b302f8', 'Check back later to see the latest products.'),
           a('cfe836d1', function (e) {
             return e.percent + '% off'
@@ -6020,14 +6024,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f8bc75e2', 'your Topics'),
           a('ed827af6', 'Topic is unavailable.'),
           a('d094c720', 'All Topics'),
-          a('f68f0fc8', 'Twitter Topics'),
-          a('ieb6f5c1', function (e) {
-            return e.topicName + ' | Twitter Topics'
-          }),
-          a(
-            'd848d612',
-            'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
-          )
+          a('f68f0fc8', 'Twitter Topics')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6047,15 +6044,22 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('j70f0f35', function (e) {
-          return (
-            'Follow the ' +
-            e.topicName +
-            ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
-            e.topicName +
-            ' on Twitter.'
-          )
+        a('ieb6f5c1', function (e) {
+          return e.topicName + ' | Twitter Topics'
         }),
+          a(
+            'd848d612',
+            'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
+          ),
+          a('j70f0f35', function (e) {
+            return (
+              'Follow the ' +
+              e.topicName +
+              ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+              e.topicName +
+              ' on Twitter.'
+            )
+          }),
           a('ad964e30', 'Edit your Twitter Circle'),
           a('ef8f5d90', 'Recommended'),
           a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
@@ -6889,9 +6893,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e46409b7', function (e) {
             return 'You’re following ' + e.fullName + ' and will be notified when they Tweet.'
           }),
-          a('eaa65473', function (e) {
-            return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
-          }),
           a('ebf5ec26', 'Coming soon'),
           a('c405ac8e', 'Introducing NFT profile pictures'),
           a('eb023c94', 'What is an NFT?'),
@@ -7505,9 +7506,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('b756eaeb', function (e) {
             return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
-          }),
-          a('b140e3b2', 'Some conversations can get heavy')
-        a('icbb05dc', 'Don’t forget the human behind the screen.'),
+          })
+        a('b140e3b2', 'Some conversations can get heavy'),
+          a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12384', 'Heads up'),
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
