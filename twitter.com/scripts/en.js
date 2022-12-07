@@ -4948,6 +4948,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('cac1046e', '1080p video uploads'),
           a('je84dece', 'Feature Settings'),
           a('a21b8ad2', 'Ad-free Sites'),
+          a('j3404888', 'We are reviewing your account.'),
           a(
             'bbbd8ea8',
             'Check out which sites are on our growing network of Twitter Blue Publishers. Availability varies based on location. Doesn’t include paywall access right now.',
@@ -6023,8 +6024,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e241095e', 'Your Topics'),
           a('f8bc75e2', 'your Topics'),
           a('ed827af6', 'Topic is unavailable.'),
-          a('d094c720', 'All Topics'),
-          a('f68f0fc8', 'Twitter Topics')
+          a('d094c720', 'All Topics')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6044,9 +6044,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('ieb6f5c1', function (e) {
-          return e.topicName + ' | Twitter Topics'
-        }),
+        a('f68f0fc8', 'Twitter Topics'),
+          a('ieb6f5c1', function (e) {
+            return e.topicName + ' | Twitter Topics'
+          }),
           a(
             'd848d612',
             'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
@@ -7503,11 +7504,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g1c6a77e', 'You’re seeing Subscriptions content'),
           a('d3b143d7', function (e) {
             return 'You can see this and reply because you’re Subscribed to @' + e.screenName
-          }),
-          a('b756eaeb', function (e) {
-            return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
           })
-        a('b140e3b2', 'Some conversations can get heavy'),
+        a('b756eaeb', function (e) {
+          return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
+        }),
+          a('b140e3b2', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12384', 'Heads up'),
           a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
