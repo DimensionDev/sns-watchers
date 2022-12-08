@@ -2363,6 +2363,18 @@ window.__SCRIPTS_LOADED__.vendor &&
             'c21d1b2a',
             'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
           ),
+          a('c7b59cde', 'Community Notes settings'),
+          a('e1288bdc', 'Alerts when a note needs help'),
+          a('ca14eab4', 'Receive notifications when a Community Note needs your rating.')
+        a('gb2bc3d0', 'I’m all in 🔥'),
+          a('c35ebcd2', 'As many as I can help with – up to a few per day'),
+          a('ba165b3c', 'Often'),
+          a('g72e2a58', 'A few alerts per week'),
+          a('idd249e0', 'Sometimes'),
+          a('if2e01ee', 'A few alerts per month'),
+          a('g1888dc2', 'Never'),
+          a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+          a('fa54a75e', 'Your notification settings have been saved.'),
           a(
             'j9f071e6',
             'Community Notes is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
@@ -2371,8 +2383,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'b468ea24',
             'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
-          )
-        a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet'),
+          ),
+          a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet'),
           a(
             'f6d04270',
             'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
@@ -3630,11 +3642,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             'b276596c',
             'This setting lets Twitter keep track of your visits to other websites that integrate Twitter content, such as embedded timelines. That information makes Twitter better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
           ),
-          a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
-          a(
-            'e8313b32',
-            'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
-          ),
+          a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.')
+        a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.'),
           a('f1d46fd6', 'Yes, I’m sure'),
           a('f6c8ccc8', 'Personalize based on your inferred identity'),
           a(
@@ -3654,11 +3663,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('d9138166', 'See places you’ve been'),
           a('f2b23062', 'Accessibility, display and languages'),
           a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
-          a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.')
-        a(
-          'a5ce82a4',
-          'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
-        ),
+          a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
+          a(
+            'a5ce82a4',
+            'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
+          ),
           a('d495680e', 'Languages'),
           a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
           a('eafe3288', 'Data usage'),
@@ -3701,7 +3710,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('f79acef3', 'Learn more'),
           a('d88102c0', 'If selected, Twitter will use less network data.'),
           a('a776eed8', 'Autoplay'),
-          a('g1888dc2', 'Never'),
           a('f724d1aa', 'Only on Wi-Fi'),
           a('cf6472c2', 'On cellular or Wi-Fi'),
           a('f56af9cc', 'Download an archive of your data'),
@@ -4872,8 +4880,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c246656e', 'Build an intimate base'),
           a('h0c5405c', 'Regular posting and interacting with Subscribers'),
           a('e1453e45', 'Learn more'),
-          a('f1cb36b8', 'Payout setup'),
-          a('e20f6662', 'You’re all set!'),
+          a('f1cb36b8', 'Payout setup')
+        a('e20f6662', 'You’re all set!'),
           a('i9b8ec68', '1–3 weeks'),
           a('d7d4da8a', '1–3 weeks'),
           a('g88e146c', 'Your account is pending'),
@@ -4886,8 +4894,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
           a('fe339750', 'Create Stripe account'),
           a('j912510a', 'Link Stripe account'),
-          a('ebfb897c', 'Examples')
-        a('dc4feb1a', 'Not sure what to say?'),
+          a('ebfb897c', 'Examples'),
+          a('dc4feb1a', 'Not sure what to say?'),
           a(
             'c183d272',
             'The kind of content you offer Super Followers is entirely up to you. Here are some examples to help get you started.',
@@ -6002,29 +6010,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
           a('cdcc2ad4', 'Download failed'),
           a('dbeff87a', 'Request archive'),
-          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
-          a(
-            'c2254084',
-            'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
-          ),
-          a(
-            'f62d1d9e',
-            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
-          ),
-          a('b221ca4c', 'We’ll let you know when your data is ready to download'),
-          a('ccb37011', 'complete this form'),
-          a('g1aced04', 'Apps, devices & information'),
-          a('g931a6e5', function (e) {
-            return 'You’re following ' + e.topic
-          }),
-          a(
-            'c5bb3cd2',
-            'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
-          ),
-          a('e241095e', 'Your Topics'),
-          a('f8bc75e2', 'your Topics'),
-          a('ed827af6', 'Topic is unavailable.'),
-          a('d094c720', 'All Topics')
+          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6044,7 +6030,29 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('f68f0fc8', 'Twitter Topics'),
+        a(
+          'c2254084',
+          'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
+        ),
+          a(
+            'f62d1d9e',
+            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
+          ),
+          a('b221ca4c', 'We’ll let you know when your data is ready to download'),
+          a('ccb37011', 'complete this form'),
+          a('g1aced04', 'Apps, devices & information'),
+          a('g931a6e5', function (e) {
+            return 'You’re following ' + e.topic
+          }),
+          a(
+            'c5bb3cd2',
+            'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
+          ),
+          a('e241095e', 'Your Topics'),
+          a('f8bc75e2', 'your Topics'),
+          a('ed827af6', 'Topic is unavailable.'),
+          a('d094c720', 'All Topics'),
+          a('f68f0fc8', 'Twitter Topics'),
           a('ieb6f5c1', function (e) {
             return e.topicName + ' | Twitter Topics'
           }),
@@ -6492,6 +6500,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
           a('b9238e89', function (e) {
             return 'Subscribe for ' + e.price + '/mo'
+          }),
+          a('i2d77fdb', function (e) {
+            return 'Subscribe for ' + e.price + '/year'
           }),
           a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
           a('j5bb28eb', 'Terms & Conditions'),
@@ -7484,8 +7495,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('h15b020d', function (e) {
             return 'People following or mentioned by @' + e.screenName + ' can reply'
           }),
-          a('e5dc76d0', 'You can reply to this conversation'),
-          a('ab105904', 'Who can reply?'),
+          a('e5dc76d0', 'You can reply to this conversation')
+        a('ab105904', 'Who can reply?'),
           a('fd1cda7a', 'You cannot reply to this conversation'),
           a('j86de6d1', function (e) {
             return 'People @' + e.screenName + ' follows or mentioned can reply'
@@ -7504,10 +7515,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('g1c6a77e', 'You’re seeing Subscriptions content'),
           a('d3b143d7', function (e) {
             return 'You can see this and reply because you’re Subscribed to @' + e.screenName
-          })
-        a('b756eaeb', function (e) {
-          return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
-        }),
+          }),
+          a('b756eaeb', function (e) {
+            return 'You can see this Tweet because you’re Subscribed to @' + e.screenName
+          }),
           a('b140e3b2', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
           a('g4d12384', 'Heads up'),

@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '96c6505d10997a2243f8ce10deb9aacaff6e3d4e',
+  feature_set_token: '75a1ed704813ed278b9c8a4d30735e4af4ed23e0',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -670,7 +670,7 @@ var manifest = {
     responsive_web_mobile_app_spotlight_v1_config: { value: !1 },
     responsive_web_mobile_app_spotlight_v1_display: { value: !1 },
     responsive_web_moment_maker_annotations_enabled: { value: !1 },
-    responsive_web_moment_maker_enabled: { value: !0 },
+    responsive_web_moment_maker_enabled: { value: !1 },
     responsive_web_moment_maker_promoted_tweets_enabled: { value: !1 },
     responsive_web_multiple_account_limit: { value: 5 },
     responsive_web_new_copy_security_key_2fa_enabled: { value: !0 },
@@ -4265,7 +4265,7 @@ var manifest = {
     responsive_web_moment_maker_enabled: {
       name: 'responsive_web_moment_maker_enabled',
       type: 'boolean',
-      defaultValue: !0,
+      defaultValue: !1,
     },
     responsive_web_moment_maker_annotations_enabled: {
       name: 'responsive_web_moment_maker_annotations_enabled',
