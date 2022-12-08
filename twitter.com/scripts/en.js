@@ -1321,6 +1321,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e2414185', function (e) {
             return 'Quote Tweet' + n(e.count, '', 's')
           }),
+          a('f396c105', function (e) {
+            return '' + e.displayCount
+          }),
+          a('aa037e65', function (e) {
+            return 'View' + n(e.count, '', 's')
+          }),
           a('bc2ceaf2', 'Sending Tweet...'),
           a('j4c40da4', 'Send now'),
           a('b23688c8', 'Undo timer'),
@@ -2363,10 +2369,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             'c21d1b2a',
             'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
           ),
-          a('c7b59cde', 'Community Notes settings'),
-          a('e1288bdc', 'Alerts when a note needs help'),
-          a('ca14eab4', 'Receive notifications when a Community Note needs your rating.')
-        a('gb2bc3d0', 'I’m all in 🔥'),
+          a('c7b59cde', 'Community Notes settings')
+        a('e1288bdc', 'Alerts when a note needs help'),
+          a('ca14eab4', 'Receive notifications when a Community Note needs your rating.'),
+          a('gb2bc3d0', 'I’m all in 🔥'),
           a('c35ebcd2', 'As many as I can help with – up to a few per day'),
           a('ba165b3c', 'Often'),
           a('g72e2a58', 'A few alerts per week'),
@@ -3637,13 +3643,16 @@ window.__SCRIPTS_LOADED__.vendor &&
             'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
           ),
           a('da202f9a', 'Your advertiser list'),
-          a('f80a33a0', 'Allow use of where you see Twitter content across the Web'),
+          a('f80a33a0', 'Allow use of where you see Twitter content across the Web')
+        a(
+          'b276596c',
+          'This setting lets Twitter keep track of your visits to other websites that integrate Twitter content, such as embedded timelines. That information makes Twitter better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
+        ),
+          a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
           a(
-            'b276596c',
-            'This setting lets Twitter keep track of your visits to other websites that integrate Twitter content, such as embedded timelines. That information makes Twitter better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
+            'e8313b32',
+            'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.',
           ),
-          a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.')
-        a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.'),
           a('f1d46fd6', 'Yes, I’m sure'),
           a('f6c8ccc8', 'Personalize based on your inferred identity'),
           a(
@@ -4878,10 +4887,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ib075804', 'Expand your base and maximize revenue'),
           a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
           a('c246656e', 'Build an intimate base'),
-          a('h0c5405c', 'Regular posting and interacting with Subscribers'),
-          a('e1453e45', 'Learn more'),
-          a('f1cb36b8', 'Payout setup')
-        a('e20f6662', 'You’re all set!'),
+          a('h0c5405c', 'Regular posting and interacting with Subscribers')
+        a('e1453e45', 'Learn more'),
+          a('f1cb36b8', 'Payout setup'),
+          a('e20f6662', 'You’re all set!'),
           a('i9b8ec68', '1–3 weeks'),
           a('d7d4da8a', '1–3 weeks'),
           a('g88e146c', 'Your account is pending'),
@@ -6008,9 +6017,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('jbf5843e', 'Periscope data'),
           a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
-          a('cdcc2ad4', 'Download failed'),
-          a('dbeff87a', 'Request archive'),
-          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.')
+          a('cdcc2ad4', 'Download failed')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6030,10 +6037,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a(
-          'c2254084',
-          'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
-        ),
+        a('dbeff87a', 'Request archive'),
+          a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
+          a(
+            'c2254084',
+            'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
+          ),
           a(
             'f62d1d9e',
             'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
@@ -7491,12 +7500,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('db11b27f', function (e) {
             return e.count + ' character' + n(e.count, '', 's') + ' remaining'
           }),
-          a('bb7b821a', 'You can reply'),
-          a('h15b020d', function (e) {
-            return 'People following or mentioned by @' + e.screenName + ' can reply'
-          }),
-          a('e5dc76d0', 'You can reply to this conversation')
-        a('ab105904', 'Who can reply?'),
+          a('bb7b821a', 'You can reply')
+        a('h15b020d', function (e) {
+          return 'People following or mentioned by @' + e.screenName + ' can reply'
+        }),
+          a('e5dc76d0', 'You can reply to this conversation'),
+          a('ab105904', 'Who can reply?'),
           a('fd1cda7a', 'You cannot reply to this conversation'),
           a('j86de6d1', function (e) {
             return 'People @' + e.screenName + ' follows or mentioned can reply'
@@ -7697,6 +7706,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           a('f2849136', 'Analytics'),
           a('ee9a81b6', 'View Tweet analytics'),
+          a('a385da25', function (e) {
+            return e.count + ' View' + n(e.count, '', 's') + '. View Tweet analytics'
+          }),
           a('d2b2b8e6', 'Downvote'),
           a('hcb32860', 'Undo downvote'),
           a('cb5dafd4', 'Downvote, selected'),
@@ -8557,6 +8569,12 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               {
                 key: 'f0259953',
+                get: function get() {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'c1976bcf',
                 get: function get() {
                   return ['', ' ']
                 },

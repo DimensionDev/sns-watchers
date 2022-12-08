@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '75a1ed704813ed278b9c8a4d30735e4af4ed23e0',
+  feature_set_token: 'f3c2e45fce733b42ffaae1b171c65161da148dce',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -414,6 +414,7 @@ var manifest = {
     livepipeline_client_enabled: { value: !0 },
     livepipeline_tweetengagement_enabled: { value: !0 },
     longform_ad_free_articles_badging_enabled: { value: !1 },
+    longform_notetweets_max_tweet_per_thread: { value: 25 },
     longform_reader_mode_view_in_reader_mode_entry_button_enabled: { value: !1 },
     longform_top_articles_friends_of_friends_enabled: { value: !0 },
     longform_top_articles_time_window_enabled: { value: !0 },
@@ -769,7 +770,7 @@ var manifest = {
     responsive_web_twitter_article_cover_aspect_ratio_5_2: { value: !0 },
     responsive_web_twitter_article_data_v2_enabled: { value: !1 },
     responsive_web_twitter_article_geo_gated: { value: !1 },
-    responsive_web_twitter_article_max_times_show_tweet_banner: { value: 3 },
+    responsive_web_twitter_article_max_times_show_tweet_banner: { value: 0 },
     responsive_web_twitter_article_tweet_other_notes_enabled: { value: !0 },
     responsive_web_twitter_article_tweet_own_notes_enabled: { value: !1 },
     responsive_web_twitter_article_view_enabled: { value: !0 },
@@ -2970,6 +2971,16 @@ var manifest = {
       type: 'boolean',
       defaultValue: !1,
     },
+    longform_notetweets_consumption_enabled: { name: 'longform_notetweets_consumption_enabled', type: 'string' },
+    longform_notetweets_max_weighted_character_length: {
+      name: 'longform_notetweets_max_weighted_character_length',
+      type: 'string',
+    },
+    longform_notetweets_max_tweet_per_thread: {
+      name: 'longform_notetweets_max_tweet_per_thread',
+      type: 'number',
+      defaultValue: 25,
+    },
     longform_reader_mode_view_in_reader_mode_entry_button_enabled: {
       name: 'longform_reader_mode_view_in_reader_mode_entry_button_enabled',
       type: 'boolean',
@@ -4772,7 +4783,7 @@ var manifest = {
     responsive_web_twitter_article_max_times_show_tweet_banner: {
       name: 'responsive_web_twitter_article_max_times_show_tweet_banner',
       type: 'number',
-      defaultValue: 3,
+      defaultValue: 0,
     },
     responsive_web_twitter_article_tweet_other_notes_enabled: {
       name: 'responsive_web_twitter_article_tweet_other_notes_enabled',
@@ -4797,6 +4808,10 @@ var manifest = {
       name: 'responsive_web_twitter_article_cover_aspect_ratio_5_2',
       type: 'boolean',
       defaultValue: !0,
+    },
+    responsive_web_twitter_article_notes_tab_enabled: {
+      name: 'responsive_web_twitter_article_notes_tab_enabled',
+      type: 'string',
     },
     responsive_web_twitter_blue_eligibility_flow_enabled: {
       name: 'responsive_web_twitter_blue_eligibility_flow_enabled',
@@ -5528,6 +5543,10 @@ var manifest = {
       type: 'string',
     },
     subscriptions_feature_1014: { name: 'subscriptions_feature_1014', type: 'string' },
+    subscriptions_product_category_blue_verified_enabled: {
+      name: 'subscriptions_product_category_blue_verified_enabled',
+      type: 'string',
+    },
     subscriptions_blue_premium_labeling_enabled: {
       name: 'subscriptions_blue_premium_labeling_enabled',
       type: 'boolean',
