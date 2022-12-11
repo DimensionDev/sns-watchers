@@ -2093,17 +2093,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
           }, {})
         }
       },
-      417: function _(e, t, r) {
-        'use strict'
-        r.d(t, {
-          Z: function Z() {
-            return n
-          },
-        })
-        var n = function n(e) {
-          return Array.isArray(e) ? e[0] : void 0
-        }
-      },
       33988: function _(e, t, r) {
         'use strict'
         r.d(t, {
