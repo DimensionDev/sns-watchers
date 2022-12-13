@@ -93,39 +93,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             return 'Search for "' + e.query + '"'
           }),
           a('jded6c98', 'Tweet reply hidden'),
-          a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
-          a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
-          a('b36f4170', 'File is empty.'),
-          a('hab3781e', 'One or more provided files are not images.'),
-          a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
-          a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
-          a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
-          a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
-          a('b28d44f7', function (e) {
-            return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
-          }),
-          a('i1db7d13', function (e) {
-            return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
-          }),
-          a('baac0ed7', function (e) {
-            return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
-          }),
-          a('a22385bb', function (e) {
-            return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
-          }),
-          a('be0440bf', function (e) {
-            return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
-          }),
-          a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
-          a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
-          a('db6001e7', function (e) {
-            return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
-          }),
-          a('eb96d952', 'Your image file lacks height and width'),
-          a('b3880588', 'The upload session has timed out.'),
-          a('ca058b68', 'Some of your media failed to load.'),
-          a('id24379c', 'Some of your media failed to upload.'),
-          a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
           a('d5568440', 'Please enter a stronger password.'),
           a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
           a('cd24fe60', 'Please enter a valid phone number.'),
@@ -287,6 +254,39 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           a('ef2fa90c', 'The text of your Tweet exceeds the maximum allowed limit.'),
           a('f10f1cfc', 'The content of your Tweet is invalid.'),
+          a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
+          a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
+          a('b36f4170', 'File is empty.'),
+          a('hab3781e', 'One or more provided files are not images.'),
+          a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
+          a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
+          a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
+          a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
+          a('b28d44f7', function (e) {
+            return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
+          }),
+          a('i1db7d13', function (e) {
+            return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
+          }),
+          a('baac0ed7', function (e) {
+            return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
+          }),
+          a('a22385bb', function (e) {
+            return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
+          }),
+          a('be0440bf', function (e) {
+            return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
+          }),
+          a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
+          a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
+          a('db6001e7', function (e) {
+            return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
+          }),
+          a('eb96d952', 'Your image file lacks height and width'),
+          a('b3880588', 'The upload session has timed out.'),
+          a('ca058b68', 'Some of your media failed to load.'),
+          a('id24379c', 'Some of your media failed to upload.'),
+          a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
           a('c818c60c', 'Analytics'),
           a('a15648a4', 'Community Notes'),
           a('cdf89b84', 'Branded Likes Preview'),
@@ -1908,11 +1908,6 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
           a('gb67e44c', 'Submit without explanation'),
           a('d6b758a2', 'Submit without source'),
-          a('ddc74d14', 'Birdwatch is now Community Notes!'),
-          a(
-            'aa7d4534',
-            'The new name helps ensure everyone on Twitter understands the value of collaboratively keeping each other informed.',
-          ),
           a('eb5b4a12', 'About Community Notes aliases'),
           a('ja0ee360', 'Choose your alias'),
           a('f7b7c250', 'Choose a Community Notes alias to stay private'),
@@ -2221,6 +2216,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('ac71a5a0', 'Rate notes that need help'),
           a('a490bc51', 'Learn more'),
           a('c94ad3e8', 'send us feedback'),
+          a('ee160790', 'Deleted notes'),
           a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
           a(
             'e8c599f0',
@@ -2312,7 +2308,6 @@ window.__SCRIPTS_LOADED__.vendor &&
             'd145b0fa',
             'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
           ),
-          a('ee160790', 'Deleted notes'),
           a('efb9a9e0', 'Nothing to see here'),
           a('a1529ce7', 'Learn more'),
           a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
@@ -2384,10 +2379,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('c359263a', 'Learn how to use and analyze Community Notes data '),
           a('b8a27fe2', 'in our guide'),
           a('j1c99e00', 'Notes data'),
-          a('i6f69314', 'Ratings data')
-        a('b7e4c114', 'Note status history data'),
-          a('d7f19114', 'User enrollment status data'),
-          a('h786cd7a', 'Notes data isn’t available yet'),
+          a('i6f69314', 'Ratings data'),
+          a('b7e4c114', 'Note status history data'),
+          a('d7f19114', 'User enrollment status data')
+        a('h786cd7a', 'Notes data isn’t available yet'),
           a('d0fe8052', 'Ratings data isn’t available yet'),
           a('c0427f94', 'Note status history data isn’t available yet'),
           a('g880d8c0', 'User enrollment status data isn’t available yet'),
@@ -3664,13 +3659,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('a4b69cbc', 'Display language'),
           a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
           a('cab61d58', 'Select additional languages'),
-          a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.')
-        a('bca1de4a', 'Additional languages you speak'),
-          a('c3aa76c4', 'Languages you may know'),
-          a(
-            'b2a77838',
-            'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
-          ),
+          a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
+          a('bca1de4a', 'Additional languages you speak'),
+          a('c3aa76c4', 'Languages you may know')
+        a(
+          'b2a77838',
+          'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
+        ),
           a('j1a2af34', 'App and Tweet languages'),
           a('d4372cf4', 'English (US), 中文(简体), Español'),
           a(
@@ -4911,19 +4906,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           a(
             'ace46d40',
             'Hi and welcome to my Super Follows page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
-          )
-        a(
-          'fe076612',
-          'Hi and welcome to my Subscriptions page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
-        ),
+          ),
+          a(
+            'fe076612',
+            'Hi and welcome to my Subscriptions page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
+          ),
           a(
             'h2c45110',
             'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
-          ),
-          a(
-            'g7f66daa',
-            'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
-          ),
+          )
+        a(
+          'g7f66daa',
+          'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
+        ),
           a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
           a('fb278c82', 'What’s this preview?'),
           a(
@@ -6125,7 +6120,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           a('jf28b41c', '45-54'),
           a('ja78da94', '55-64'),
           a('bcd9cf68', 'Above 65'),
-          a('a3c544e8', 'Top countries')
+          a('a3c544e8', 'Top countries'),
+          a('f05f1838', 'Other / Not specified'),
+          a('fa5be588', 'Organic')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -6145,9 +6142,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             s(e, t)
           )
         }
-        a('f05f1838', 'Other / Not specified'),
-          a('fa5be588', 'Organic'),
-          a('f6162a32', 'Times this Tweet was seen on Twitter'),
+        a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353e', 'Engagements'),
           a(
             'e044b630',
@@ -7550,12 +7545,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           ),
           a('f305840e', 'Pending'),
           a('fe04d89a', 'Discard'),
-          a('i036327c', 'Discard follow request?')
-        a('j95e3097', function (e) {
-          return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        }),
-          a('e9f1af3a', 'Find out more'),
-          a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
+          a('i036327c', 'Discard follow request?'),
+          a('j95e3097', function (e) {
+            return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
+          }),
+          a('e9f1af3a', 'Find out more')
+        a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
           a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
           a('da5e3194', 'Twitter is legally required to provide this notice.'),
           a('e461d0ee', 'Get the latest'),
