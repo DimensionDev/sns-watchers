@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: 'e949febab8a189dd1d72a85f453cbdd95192b364',
+  feature_set_token: '43d7eab5179af58fc52e52dab3d92fc9b70f530d',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -261,6 +261,7 @@ var manifest = {
     arkose_challenge_signup_web_prod: { value: '2CB16598-CB82-4CF7-B332-5990DB66F3AB' },
     arkose_challenge_transparent_signup_dev: { value: '6627C16B-DA60-47A5-85F7-CFF23BD2BE69' },
     arkose_challenge_transparent_signup_prod: { value: '4CB8C8B0-40FF-439C-9D0D-9A389ADA18CB' },
+    blue_business_affiliate_badge_consumption_ui_enabled: { value: !1 },
     blue_business_consumption_api_enabled: { value: !0 },
     blue_business_grey_checkmark_enabled: { value: !1 },
     blue_business_square_avatar_consumption_ui_enabled: { value: !1 },
@@ -779,7 +780,7 @@ var manifest = {
     responsive_web_twitter_article_tweet_own_notes_enabled: { value: !1 },
     responsive_web_twitter_article_view_enabled: { value: !0 },
     responsive_web_twitter_blue_eligibility_flow_enabled: { value: !0 },
-    responsive_web_twitter_blue_growth_primary_nav_enabled: { value: !1 },
+    responsive_web_twitter_blue_growth_primary_nav_enabled: { value: !0 },
     responsive_web_twitter_blue_home_redesign_enabled: { value: !0 },
     responsive_web_twitter_blue_new_verification_copy_is_enabled: { value: !0 },
     responsive_web_twitter_blue_signup_nux_enabled: { value: !0 },
@@ -1601,7 +1602,8 @@ var manifest = {
     },
     blue_business_affiliate_badge_consumption_ui_enabled: {
       name: 'blue_business_affiliate_badge_consumption_ui_enabled',
-      type: 'string',
+      type: 'boolean',
+      defaultValue: !1,
     },
     blue_longer_video_enabled: { name: 'blue_longer_video_enabled', type: 'boolean', defaultValue: !1 },
     branded_like_preview_enabled: { name: 'branded_like_preview_enabled', type: 'boolean', defaultValue: !1 },
@@ -2264,11 +2266,6 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'edge_to_edge_media_reduced'],
     },
-    e2e_parsability_android_13345: {
-      name: 'e2e_parsability_android_13345',
-      type: 'experiment',
-      enumeration_values: [],
-    },
     e2e_profile_tap_target_change_14088: {
       name: 'e2e_profile_tap_target_change_14088',
       type: 'experiment',
@@ -2276,11 +2273,6 @@ var manifest = {
     },
     e2e_separator_heights_14607: { name: 'e2e_separator_heights_14607', type: 'experiment', enumeration_values: [] },
     ecd_dispute_form_link_enabled: { name: 'ecd_dispute_form_link_enabled', type: 'boolean', defaultValue: !0 },
-    edge_to_edge_m2_android_12939: {
-      name: 'edge_to_edge_m2_android_12939',
-      type: 'experiment',
-      enumeration_values: [],
-    },
     employee_role: { name: 'employee_role', type: 'boolean', defaultValue: !1 },
     enable_label_appealing_misinfo_enabled: {
       name: 'enable_label_appealing_misinfo_enabled',
@@ -3868,7 +3860,7 @@ var manifest = {
     responsive_web_edge_to_edge_m2_mobile_15161: {
       name: 'responsive_web_edge_to_edge_m2_mobile_15161',
       type: 'experiment',
-      enumeration_values: ['control', 'treatment'],
+      enumeration_values: [],
     },
     responsive_web_edit_tweet_enabled: { name: 'responsive_web_edit_tweet_enabled', type: 'boolean', defaultValue: !1 },
     responsive_web_edit_tweet_api_enabled: {
@@ -4850,7 +4842,7 @@ var manifest = {
     responsive_web_twitter_blue_growth_primary_nav_enabled: {
       name: 'responsive_web_twitter_blue_growth_primary_nav_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     responsive_web_twitter_blue_home_redesign_enabled: {
       name: 'responsive_web_twitter_blue_home_redesign_enabled',
@@ -6231,7 +6223,6 @@ var manifest = {
     view_counts_home_api_enabled: { name: 'view_counts_home_api_enabled', type: 'string' },
     view_counts_tweet_details_api_enabled: { name: 'view_counts_tweet_details_api_enabled', type: 'string' },
     view_counts_profile_api_enabled: { name: 'view_counts_profile_api_enabled', type: 'string' },
-    view_counts_share_at_end_enabled: { name: 'view_counts_share_at_end_enabled', type: 'string' },
     view_counts_public_visibility_enabled: {
       name: 'view_counts_public_visibility_enabled',
       type: 'boolean',
