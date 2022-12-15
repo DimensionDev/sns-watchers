@@ -2317,6 +2317,7 @@
           'c21d1b2a',
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
         ),
+        a('bc2da5c6', 'Manage alert options'),
         a('c7b59cde', 'Community Notes settings'),
         a('e1288bdc', 'Alerts when a note needs help'),
         a('ca14eab4', 'Receive notifications when a Community Note needs your rating.'),
@@ -2357,9 +2358,9 @@
         a('b8a27fe2', 'in our guide'),
         a('j1c99e00', 'Notes data'),
         a('i6f69314', 'Ratings data'),
-        a('b7e4c114', 'Note status history data'),
-        a('d7f19114', 'User enrollment status data')
-      a('h786cd7a', 'Notes data isn’t available yet'),
+        a('b7e4c114', 'Note status history data')
+      a('d7f19114', 'User enrollment status data'),
+        a('h786cd7a', 'Notes data isn’t available yet'),
         a('d0fe8052', 'Ratings data isn’t available yet'),
         a('c0427f94', 'Note status history data isn’t available yet'),
         a('g880d8c0', 'User enrollment status data isn’t available yet'),
@@ -3619,12 +3620,12 @@
         a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
         a('cab61d58', 'Select additional languages'),
         a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
-        a('bca1de4a', 'Additional languages you speak'),
-        a('c3aa76c4', 'Languages you may know')
-      a(
-        'b2a77838',
-        'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
-      ),
+        a('bca1de4a', 'Additional languages you speak')
+      a('c3aa76c4', 'Languages you may know'),
+        a(
+          'b2a77838',
+          'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
+        ),
         a('j1a2af34', 'App and Tweet languages'),
         a('d4372cf4', 'English (US), 中文(简体), Español'),
         a(
@@ -3689,12 +3690,12 @@
         a('ce494bb4', 'Font size'),
         a('c783d45e', 'Color'),
         a('h306a358', 'Background'),
+        a('e46dffa0', 'Text size'),
         a('d8680056', 'Extra small'),
         a('eed02406', 'Small'),
         a('j59f0b94', 'Default'),
         a('b81aaad8', 'Large'),
         a('c7044880', 'Extra large'),
-        a('e46dffa0', 'Text size'),
         a('ce8a8116', 'Background options'),
         a('d3d48f3a', 'Light'),
         a('i76f67ee', 'Dim'),
@@ -4845,15 +4846,15 @@
         a(
           'fe076612',
           'Hi and welcome to my Subscriptions page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
-        ),
-        a(
-          'h2c45110',
-          'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
         )
       a(
-        'g7f66daa',
-        'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
+        'h2c45110',
+        'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
       ),
+        a(
+          'g7f66daa',
+          'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
+        ),
         a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
         a('fb278c82', 'What’s this preview?'),
         a(
@@ -6045,8 +6046,7 @@
         a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
-        a('f05f1838', 'Other / Not specified'),
-        a('fa5be588', 'Organic')
+        a('f05f1838', 'Other / Not specified')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6066,7 +6066,8 @@
           s(e, t)
         )
       }
-      a('f6162a32', 'Times this Tweet was seen on Twitter'),
+      a('fa5be588', 'Organic'),
+        a('f6162a32', 'Times this Tweet was seen on Twitter'),
         a('dbe9353e', 'Engagements'),
         a(
           'e044b630',
@@ -7463,9 +7464,9 @@
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        }),
-        a('e9f1af3a', 'Find out more')
-      a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
+        })
+      a('e9f1af3a', 'Find out more'),
+        a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
         a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
         a('e461d0ee', 'Get the latest'),

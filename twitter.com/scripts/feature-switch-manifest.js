@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '43d7eab5179af58fc52e52dab3d92fc9b70f530d',
+  feature_set_token: '99a36c38ff332e3420ff3b8bef3e9a6acf01efaf',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -383,7 +383,7 @@ var manifest = {
     guest_broadcasting_timeline_decorations_enabled: { value: !1 },
     hashfetti_all_hashflags: { value: !1 },
     hashfetti_duration_ms: { value: 4e3 },
-    hashfetti_enabled: { value: !1 },
+    hashfetti_enabled: { value: !0 },
     hashfetti_particle_count: { value: 30 },
     hashflags_animation_like_button_enabled: { value: !0 },
     home_timeline_extended_reactivity_tweet_clicks_enabled: { value: !1 },
@@ -2518,7 +2518,7 @@ var manifest = {
       defaultValue: !1,
     },
     guest_broadcasting_by_default_enabled: { name: 'guest_broadcasting_by_default_enabled', type: 'string' },
-    hashfetti_enabled: { name: 'hashfetti_enabled', type: 'boolean', defaultValue: !1 },
+    hashfetti_enabled: { name: 'hashfetti_enabled', type: 'boolean', defaultValue: !0 },
     hashfetti_all_hashflags: { name: 'hashfetti_all_hashflags', type: 'boolean', defaultValue: !1 },
     hashfetti_duration_ms: { name: 'hashfetti_duration_ms', type: 'number', defaultValue: 4e3 },
     hashfetti_particle_count: { name: 'hashfetti_particle_count', type: 'number', defaultValue: 30 },
@@ -5566,6 +5566,18 @@ var manifest = {
     subscriptions_feature_1014: { name: 'subscriptions_feature_1014', type: 'string' },
     subscriptions_product_category_blue_verified_enabled: {
       name: 'subscriptions_product_category_blue_verified_enabled',
+      type: 'string',
+    },
+    subscriptions_eligibility_account_age_requirement_enabled: {
+      name: 'subscriptions_eligibility_account_age_requirement_enabled',
+      type: 'string',
+    },
+    subscriptions_eligibility_account_dormancy_requirement_enabled: {
+      name: 'subscriptions_eligibility_account_dormancy_requirement_enabled',
+      type: 'string',
+    },
+    subscriptions_eligibility_profile_update_requirement_enabled: {
+      name: 'subscriptions_eligibility_profile_update_requirement_enabled',
       type: 'string',
     },
     subscriptions_blue_premium_labeling_enabled: {
