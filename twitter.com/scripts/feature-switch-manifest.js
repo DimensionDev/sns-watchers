@@ -1,5 +1,5 @@
 var manifest = {
-  feature_set_token: '99a36c38ff332e3420ff3b8bef3e9a6acf01efaf',
+  feature_set_token: '9938002913e67d07838cf6467c159f20b8ef768f',
   config: {
     '2fa_temporary_password_enabled': { value: !1 },
     Arkose_rweb_hosted_page: { value: !0 },
@@ -365,6 +365,7 @@ var manifest = {
     focused_timeline_actions_onboarding_likes: { value: 3 },
     follow_nudge_conversation_enabled: { value: !1 },
     global_mention_settings_enabled: { value: !1 },
+    graduated_access_invisible_treatment_enabled: { value: !1 },
     graduated_access_user_prompt_enabled: { value: !1 },
     graphql_composer_and_dm_card_previews_enabled: { value: !1 },
     graphql_is_translatable_rweb_tweet_is_translatable_enabled: { value: !0 },
@@ -392,7 +393,7 @@ var manifest = {
     home_timeline_latest_timeline_switch_enabled: { value: !0 },
     home_timeline_like_reactivity_enabled: { value: !0 },
     home_timeline_like_reactivity_fatigue: { value: 10 },
-    home_timeline_scribing_section_change_enabled: { value: !1 },
+    home_timeline_scribing_section_change_enabled: { value: !0 },
     home_timeline_spheres_detail_page_muting_enabled: { value: !0 },
     home_timeline_spheres_max_user_owned_or_subscribed_lists_count: { value: 5 },
     home_timeline_spheres_ranking_mode_control_enabled: { value: !0 },
@@ -550,7 +551,7 @@ var manifest = {
     responsive_web_drew_profile_block_enabled: { value: !1 },
     responsive_web_drew_timeline_block_enabled: { value: !1 },
     responsive_web_dtime_fccts_enabled: { value: !1 },
-    responsive_web_dtime_featured_timelines_modal_enabled: { value: !0 },
+    responsive_web_dtime_featured_timelines_modal_enabled: { value: !1 },
     responsive_web_dtime_show_new_tweets_enabled: { value: !0 },
     responsive_web_dtime_sparkle_menu_featured_timelines_enabled: { value: !1 },
     responsive_web_dtime_timelines_directory_enabled: { value: !1 },
@@ -2436,7 +2437,8 @@ var manifest = {
     },
     graduated_access_invisible_treatment_enabled: {
       name: 'graduated_access_invisible_treatment_enabled',
-      type: 'string',
+      type: 'boolean',
+      defaultValue: !1,
     },
     graduated_access_15903: {
       name: 'graduated_access_15903',
@@ -2643,7 +2645,7 @@ var manifest = {
     home_timeline_scribing_section_change_enabled: {
       name: 'home_timeline_scribing_section_change_enabled',
       type: 'boolean',
-      defaultValue: !1,
+      defaultValue: !0,
     },
     home_timeline_spheres_fetch_list_metadata_enabled: {
       name: 'home_timeline_spheres_fetch_list_metadata_enabled',
@@ -3834,7 +3836,7 @@ var manifest = {
     responsive_web_dtime_featured_timelines_modal_enabled: {
       name: 'responsive_web_dtime_featured_timelines_modal_enabled',
       type: 'boolean',
-      defaultValue: !0,
+      defaultValue: !1,
     },
     responsive_web_dtime_sparkle_menu_featured_timelines_enabled: {
       name: 'responsive_web_dtime_sparkle_menu_featured_timelines_enabled',
@@ -5839,6 +5841,14 @@ var manifest = {
     traffic_passive_measurement_rewrite_list: { name: 'traffic_passive_measurement_rewrite_list', type: 'string' },
     traffic_passive_measurement_hosts: { name: 'traffic_passive_measurement_hosts', type: 'string' },
     traffic_passive_measurement_sampling_rate: { name: 'traffic_passive_measurement_sampling_rate', type: 'string' },
+    traffic_should_persist_validated_trafficmap: {
+      name: 'traffic_should_persist_validated_trafficmap',
+      type: 'string',
+    },
+    traffic_should_skip_validation_from_persist: {
+      name: 'traffic_should_skip_validation_from_persist',
+      type: 'string',
+    },
     trusted_friends_dash_discovery_enabled: {
       name: 'trusted_friends_dash_discovery_enabled',
       type: 'boolean',
@@ -6484,10 +6494,10 @@ var manifest = {
       type: 'experiment',
       enumeration_values: ['control', 'treatment'],
     },
-    web_immersive_viewer_logged_out_aa_test_15366: {
-      name: 'web_immersive_viewer_logged_out_aa_test_15366',
+    web_immersive_viewer_non_english_15960: {
+      name: 'web_immersive_viewer_non_english_15960',
       type: 'experiment',
-      enumeration_values: ['control', 'control2'],
+      enumeration_values: ['control', 'treatment'],
     },
     web_logged_out_immersive_viewer_holdback_2023h1_15944: {
       name: 'web_logged_out_immersive_viewer_holdback_2023h1_15944',

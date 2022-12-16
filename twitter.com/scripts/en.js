@@ -95,6 +95,9 @@
         a('d2fb334c', 'Twitter'),
         a('h7a9e4e2', 'NFT profile picture'),
         a('i6fcb1d8', 'Business profile picture'),
+        a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
+        a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
+        a('f5718548', 'You reported this Tweet.'),
         a('cfbea177', function (e) {
           return e.name + '’s Space'
         }),
@@ -171,9 +174,6 @@
         a('eb55363c', 'This Space has been reported'),
         a('f91f00ba', 'Create clip'),
         a('h63a5c3c', 'More'),
-        a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
-        a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
-        a('f5718548', 'You reported this Tweet.'),
         a('c0098d4a', 'Reactions'),
         a('fc0e94b7', function (e) {
           return 'React with ' + e.emoji
