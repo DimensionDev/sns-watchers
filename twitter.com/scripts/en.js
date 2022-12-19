@@ -2029,6 +2029,8 @@
         a('eac7b6ac', 'Contribute to build understanding'),
         a('b0381cfc', 'Act in good faith'),
         a('f0addddc', 'Be helpful, even to those who disagree'),
+        a('h7c7b204', 'Help rate existing notes before writing a new one'),
+        a('i8cae552', 'By rating you’ll help keep quality in Community Notes high.'),
         a('a9f4ca9c', 'Community Notes contributors can now see your note'),
         a('eb8f7c0c', 'Other contributors can now rate your note'),
         a('h87c6bd6', 'Other contributors can now see your note'),
@@ -2055,7 +2057,7 @@
         a('c59107c4', 'Tweet with notes'),
         a('ib73f868', 'No notes on this Tweet'),
         a('efd14e7a', 'Loading notes'),
-        a('d06b723c', 'These notes need you'),
+        a('cd6b927c', 'Help rate notes on this Tweet'),
         a(
           'f84bcd3e',
           'By rating, you’re helping ensure that notes shown on Tweets are helpful to people with varying points of view.',
@@ -2109,6 +2111,9 @@
         a('d6db34cc', 'Needs more ratings'),
         a('j33f6520', 'Currently rated not helpful'),
         a('ac39da02', 'This note claims the Tweet isn’t misleading, so it isn’t shown on Twitter.'),
+        a('a804a8f4', 'More notes need your help'),
+        a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
+        a('bf08be2e', 'Rate more notes now'),
         a('i606fc4c', 'About Community Notes appeals'),
         a('b664c554', 'Request additional contributor review'),
         a('ab66e1f2', 'Here’s how it works:'),
@@ -2353,13 +2358,13 @@
         a(
           'd4a6b322',
           'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
-        ),
-        a('c359263a', 'Learn how to use and analyze Community Notes data '),
+        )
+      a('c359263a', 'Learn how to use and analyze Community Notes data '),
         a('b8a27fe2', 'in our guide'),
         a('j1c99e00', 'Notes data'),
         a('i6f69314', 'Ratings data'),
-        a('b7e4c114', 'Note status history data')
-      a('d7f19114', 'User enrollment status data'),
+        a('b7e4c114', 'Note status history data'),
+        a('d7f19114', 'User enrollment status data'),
         a('h786cd7a', 'Notes data isn’t available yet'),
         a('d0fe8052', 'Ratings data isn’t available yet'),
         a('c0427f94', 'Note status history data isn’t available yet'),
@@ -3615,13 +3620,13 @@
         a(
           'd76fe4fc',
           'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
-        ),
-        a('a4b69cbc', 'Display language'),
+        )
+      a('a4b69cbc', 'Display language'),
         a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
         a('cab61d58', 'Select additional languages'),
         a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
-        a('bca1de4a', 'Additional languages you speak')
-      a('c3aa76c4', 'Languages you may know'),
+        a('bca1de4a', 'Additional languages you speak'),
+        a('c3aa76c4', 'Languages you may know'),
         a(
           'b2a77838',
           'Manage the languages Twitter inferred based on your activity, such as the accounts you follow and the Tweets you engage with.',
@@ -4832,8 +4837,8 @@
           'ic130fd6',
           'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
         ),
-        a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
-        a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
+        a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.')
+      a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
         a('b737ee66', 'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.'),
         a(
           'a0bb2076',
@@ -4846,11 +4851,11 @@
         a(
           'fe076612',
           'Hi and welcome to my Subscriptions page! I’m so glad you’re here. Thanks for making it possible for me to do what I love.',
-        )
-      a(
-        'h2c45110',
-        'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
-      ),
+        ),
+        a(
+          'h2c45110',
+          'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
+        ),
         a(
           'g7f66daa',
           'What’s up everyone? Thanks for checking out my Subscription. I think you’ll like what I have in store for you.',
@@ -6041,12 +6046,7 @@
         a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54'),
-        a('ja78da94', '55-64'),
-        a('bcd9cf68', 'Above 65'),
-        a('a3c544e8', 'Top countries'),
-        a('f05f1838', 'Other / Not specified')
+        a('gf672f7c', '35-44')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6066,7 +6066,12 @@
           s(e, t)
         )
       }
-      a('fa5be588', 'Organic'),
+      a('jf28b41c', '45-54'),
+        a('ja78da94', '55-64'),
+        a('bcd9cf68', 'Above 65'),
+        a('a3c544e8', 'Top countries'),
+        a('f05f1838', 'Other / Not specified'),
+        a('fa5be588', 'Organic'),
         a('f6162a32', 'Times this Tweet was seen on Twitter'),
         a('dbe9353e', 'Engagements'),
         a(
@@ -7454,18 +7459,18 @@
         ),
         a('ddac1f1d', function (e) {
           return 'Are you sure you want to leave ' + e.communityName + '?'
-        }),
-        a(
-          'aaac4f56',
-          'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
-        ),
+        })
+      a(
+        'aaac4f56',
+        'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
+      ),
         a('f305840e', 'Pending'),
         a('fe04d89a', 'Discard'),
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        })
-      a('e9f1af3a', 'Find out more'),
+        }),
+        a('e9f1af3a', 'Find out more'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
         a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
