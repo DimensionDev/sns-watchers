@@ -1472,6 +1472,12 @@
         a('d09d4c06', 'You can save this to send later from your unsent Tweets.'),
         a('i2209530', 'Save'),
         a('bf9b89e4', 'Your draft was saved.'),
+        a('i63bfbf0', 'Hold that thought'),
+        a(
+          'e30dda9a',
+          'We are still uploading your video. Are you sure you want to discard your Tweet? Your draft and attachments will be lost.',
+        ),
+        a('c3d89aca', 'Continue'),
         a('b983f9e0', 'Heads up'),
         a('ed5c4342', 'A couple things to keep in mind ...'),
         a(
@@ -1554,6 +1560,20 @@
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
         }),
+        a('c20aaf3e', 'Error'),
+        a('e4472565', function (e) {
+          return 'Uploaded (' + e.percent + '%)'
+        }),
+        a('a06fa8fd', function (e) {
+          return 'Processing (' + e.percent + '%)'
+        }),
+        a('h7f340e5', function (e) {
+          return 'Uploading (' + e.percent + '%)'
+        }),
+        a(
+          'ee016dd6',
+          'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
+        ),
         a('acf3ecf4', 'Add media'),
         a('bdbcdd94', 'Add photos'),
         a('g589c2e2', 'Choice 1'),
@@ -2024,7 +2044,6 @@
         a('j6ac7742', 'It expresses a personal opinion'),
         a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
         a('j6e19c58', 'Community Notes values'),
-        a('c3d89aca', 'Continue'),
         a('ea580ee2', 'A quick reminder of the Community Notes values:'),
         a('eac7b6ac', 'Contribute to build understanding'),
         a('b0381cfc', 'Act in good faith'),
@@ -2065,13 +2084,13 @@
         a('f10aaf3c', 'Note rating tips'),
         a('b87fa894', 'We’re just starting to test Community Notes out'),
         a(
-          'd6421c80',
-          'Community Notes is a pilot program that lets people on Twitter collaboratively add context to Tweets to help keep people better informed. Notes can be rated by contributors and need to have the rating “currently rated helpful” in order to be public on Twitter.',
+          'c03d6a06',
+          'Community Notes is a program that lets people on Twitter collaboratively add context to Tweets to help keep people better informed. Notes can be rated by contributors and need to have the rating “currently rated helpful” in order to be public on Twitter.',
         ),
         a('d1b02da2', 'People have proposed Community Notes about this Tweet'),
         a(
-          'd73c8034',
-          'Community Notes is a pilot program where volunteer contributors add context (called “notes”) to Tweets they believe could be misleading. Notes below can be rated by contributors, and if they become currently rated helpful, they will be visible on Twitter. If a note is currently rated helpful, and you disagree, you can request additional review — meaning more contributors will review the note, and its rating could change. ',
+          'cc1f228e',
+          'Community Notes is a program where volunteer contributors add context (called “notes”) to Tweets they believe could be misleading. Notes below can be rated by contributors, and if they become currently rated helpful, they will be visible on Twitter. If a note is currently rated helpful, and you disagree, you can request additional review — meaning more contributors will review the note, and its rating could change. ',
         ),
         a('c21313ba', 'Notes currently rated not helpful'),
         a('c2c40120', 'Show all notes'),
@@ -2169,7 +2188,6 @@
         ),
         a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
-        a('f748051a', 'Notes are currently visible to people on Twitter in the US.'),
         a('fc6e4594', 'Top tags selected by raters'),
         a('b3de4a42', 'Rating Impact'),
         a('a7b0393c', 'Writing Impact'),
@@ -2199,6 +2217,8 @@
           'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
         ),
         a('ac71a5a0', 'Rate notes that need help'),
+        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
+        a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
@@ -2336,10 +2356,10 @@
         a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
         a('fa54a75e', 'Your notification settings have been saved.'),
         a(
-          'j9f071e6',
-          'Community Notes is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-        ),
-        a('jdb52860', 'Contributors write and rate notes'),
+          'd4945e44',
+          'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+        )
+      a('jdb52860', 'Contributors write and rate notes'),
         a(
           'b468ea24',
           'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
@@ -2358,8 +2378,8 @@
         a(
           'd4a6b322',
           'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
-        )
-      a('c359263a', 'Learn how to use and analyze Community Notes data '),
+        ),
+        a('c359263a', 'Learn how to use and analyze Community Notes data '),
         a('b8a27fe2', 'in our guide'),
         a('j1c99e00', 'Notes data'),
         a('i6f69314', 'Ratings data'),
@@ -2814,7 +2834,6 @@
         a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
         a('i26eed06', 'Your selected unsent Tweets were deleted.'),
         a('db99d356', 'Loading unsent Tweets'),
-        a('i63bfbf0', 'Hold that thought'),
         a('g32f19e4', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
         a('g700c084', 'Deleting unsent Tweets'),
         a('e8bd47f2', 'Select all'),
@@ -3607,8 +3626,8 @@
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
         ),
         a('d9138166', 'See places you’ve been'),
-        a('f2b23062', 'Accessibility, display and languages'),
-        a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
+        a('f2b23062', 'Accessibility, display and languages')
+      a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
           'a5ce82a4',
@@ -3620,8 +3639,8 @@
         a(
           'd76fe4fc',
           'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
-        )
-      a('a4b69cbc', 'Display language'),
+        ),
+        a('a4b69cbc', 'Display language'),
         a('da3b2588', 'Select your preferred language for headlines, buttons, and other text from Twitter.'),
         a('cab61d58', 'Select additional languages'),
         a('f0853ba6', 'Select additional languages for the content you want to see on Twitter.'),
@@ -4553,7 +4572,6 @@
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('g1b8020c', 'Last 30 days'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
-        a('j087774e', 'Coins'),
         a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
@@ -4822,8 +4840,8 @@
         a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
         a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
         a('fe339750', 'Create Stripe account'),
-        a('j912510a', 'Link Stripe account'),
-        a('ebfb897c', 'Examples'),
+        a('j912510a', 'Link Stripe account')
+      a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
           'c183d272',
@@ -4837,8 +4855,8 @@
           'ic130fd6',
           'You’ll get some cool behind-the-scenes content, early peeks at my books and other projects, and monthly AMAs.',
         ),
-        a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.')
-      a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
+        a('dd913e24', 'You’re in for my hot takes, unscripted thoughts, and extra content from yours truly.'),
+        a('h580543e', 'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.'),
         a('b737ee66', 'Get ready for a VIP experience. Think: Subscriber-only content like polls, videos, and deals.'),
         a(
           'a0bb2076',
@@ -5191,7 +5209,6 @@
         }),
         a('j4824c52', 'Standard SMS fees may apply.'),
         a('fca32b20', 'Update your phone number'),
-        a('c20aaf3e', 'Error'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('i31dcd22', 'Article'),
         a('jdfb861a', 'Confirm your subscription'),
@@ -6041,12 +6058,7 @@
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
-        a('f173716e', '30-39'),
-        a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44')
+        a('f173716e', '30-39')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6066,7 +6078,12 @@
           s(e, t)
         )
       }
-      a('jf28b41c', '45-54'),
+      a('ada329e6', '40-49'),
+        a('j2950694', 'Above 50'),
+        a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44'),
+        a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
@@ -7442,10 +7459,10 @@
         }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
-        }),
-        a('j6161cab', function (e) {
-          return 'Unfollow @' + e.screenName + '?'
-        }),
+        })
+      a('j6161cab', function (e) {
+        return 'Unfollow @' + e.screenName + '?'
+      }),
         a('i4bb9ef7', function (e) {
           return 'Unfollow ' + e.title + '?'
         }),
@@ -7459,11 +7476,11 @@
         ),
         a('ddac1f1d', function (e) {
           return 'Are you sure you want to leave ' + e.communityName + '?'
-        })
-      a(
-        'aaac4f56',
-        'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
-      ),
+        }),
+        a(
+          'aaac4f56',
+          'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
+        ),
         a('f305840e', 'Pending'),
         a('fe04d89a', 'Discard'),
         a('i036327c', 'Discard follow request?'),

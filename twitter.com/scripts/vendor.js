@@ -7994,16 +7994,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
           ;(T.prototype = E), (E.constructor = T), u(i, b, T, { constructor: !0 })
         }
       },
-      14586: function _(e, t, r) {
-        r(23103)(
-          { target: 'Number', stat: !0 },
-          {
-            isNaN: function isNaN(e) {
-              return e != e
-            },
-          },
-        )
-      },
       58143: function _(e, t, r) {
         r(23103)(
           { target: 'Number', stat: !0, nonConfigurable: !0, nonWritable: !0 },
