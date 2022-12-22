@@ -4386,7 +4386,8 @@
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
-        a('fff413dc', 'Manage payment and subscription info'),
+        a('de9f111a', 'Manage your current subscription'),
+        a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
@@ -4400,6 +4401,7 @@
         a('f6d0d8c2', 'Upgrade Twitter Blue'),
         a('a5760c62', 'Upgrade available'),
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
+        a('be103b84', 'Active'),
         a('cb165528', 'News features and settings'),
         a('b16486e8', 'A better reading experience on and off Twitter.'),
         a('b62d6e4c', 'Reader'),
@@ -4528,7 +4530,6 @@
         a('bee26fa8', 'Yes, deactivate'),
         a('cd659e6e', 'Super Follows is now deactivated'),
         a('f82a23ec', 'Subscriptions is now deactivated'),
-        a('be103b84', 'Active'),
         a('c701e5cc', 'Any changes you made won’t be saved.'),
         a('a649778c', 'Continue editing'),
         a('hf6f2914', 'Preview'),
@@ -4839,9 +4840,9 @@
         a('ja884230', 'Set up your payout details'),
         a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
         a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
-        a('fe339750', 'Create Stripe account'),
-        a('j912510a', 'Link Stripe account')
-      a('ebfb897c', 'Examples'),
+        a('fe339750', 'Create Stripe account')
+      a('j912510a', 'Link Stripe account'),
+        a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
           'c183d272',
@@ -6052,13 +6053,12 @@
         }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
-        a('i976aff4', 'Update daily budget info to match your billing currency.'),
-        a('b069d89c', 'Audience'),
-        a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
-        a('c61c6624', 'Promoted'),
-        a('d267afa2', 'Under 20'),
-        a('db81cab0', '20-29'),
-        a('f173716e', '30-39')
+        a('dcc05a7e', 'Views'),
+        a('eac51332', 'Times this Tweet was seen.'),
+        a('deed2c38', 'Times this Tweet was seen. It can take a few minutes for the view count to appear.'),
+        a('c380ad56', 'View counts are not available for this Tweet.'),
+        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+        a('i976aff4', 'Update daily budget info to match your billing currency.')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,7 +6078,13 @@
           s(e, t)
         )
       }
-      a('ada329e6', '40-49'),
+      a('b069d89c', 'Audience'),
+        a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
+        a('c61c6624', 'Promoted'),
+        a('d267afa2', 'Under 20'),
+        a('db81cab0', '20-29'),
+        a('f173716e', '30-39'),
+        a('ada329e6', '40-49'),
         a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
@@ -6168,7 +6174,6 @@
         a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
         a('f638d3e0', 'Review Twitter’s Ads Policy'),
         a('ge538876', 'Metrics for the video you shared'),
-        a('dcc05a7e', 'Views'),
         a('ca7e10d8', 'Unique views'),
         a('bd174250', 'Total number of times this video was viewed across all Tweets'),
         a('a69cd868', 'Number of unique views for this video'),
@@ -7444,10 +7449,10 @@
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
         }),
-        a('a4c5be9c', 'They will be able to follow you and view your Tweets.'),
-        a('cda66545', function (e) {
-          return 'Click to ' + e.followType + ' ' + e.screenName
-        }),
+        a('a4c5be9c', 'They will be able to follow you and view your Tweets.')
+      a('cda66545', function (e) {
+        return 'Click to ' + e.followType + ' ' + e.screenName
+      }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
         }),
@@ -7459,10 +7464,10 @@
         }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
-        })
-      a('j6161cab', function (e) {
-        return 'Unfollow @' + e.screenName + '?'
-      }),
+        }),
+        a('j6161cab', function (e) {
+          return 'Unfollow @' + e.screenName + '?'
+        }),
         a('i4bb9ef7', function (e) {
           return 'Unfollow ' + e.title + '?'
         }),
