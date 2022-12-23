@@ -1257,6 +1257,8 @@
         a('ddb7acf0', 'Why can’t you react to this?'),
         a('jead3bc2', 'Why can’t you share this?'),
         a('bf02eab6', 'Why can’t you view Tweet analytics?'),
+        a('dcc05a7e', 'Views'),
+        a('c380ad56', 'View counts are not available for this Tweet.'),
         a('c8b72f50', 'Only the Tweet author and Community moderation team can see it, and engagements are disabled.'),
         a('if9bcebe', 'Communities are public, so you can read the Tweets — but only members can interact with them.'),
         a('h8a62e2b', 'Learn more'),
@@ -2353,13 +2355,13 @@
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
         a('g1888dc2', 'Never'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
-        a('fa54a75e', 'Your notification settings have been saved.'),
+        a('ac52a8de', 'There was an error saving your notification settings, please try again.')
+      a('fa54a75e', 'Your notification settings have been saved.'),
         a(
           'd4945e44',
           'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-        )
-      a('jdb52860', 'Contributors write and rate notes'),
+        ),
+        a('jdb52860', 'Contributors write and rate notes'),
         a(
           'b468ea24',
           'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
@@ -3624,10 +3626,10 @@
         a(
           'cb2ed998',
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-        ),
-        a('d9138166', 'See places you’ve been'),
-        a('f2b23062', 'Accessibility, display and languages')
-      a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
+        )
+      a('d9138166', 'See places you’ve been'),
+        a('f2b23062', 'Accessibility, display and languages'),
+        a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
           'a5ce82a4',
@@ -4838,10 +4840,10 @@
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
         ),
         a('ja884230', 'Set up your payout details'),
-        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
-        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
-        a('fe339750', 'Create Stripe account')
-      a('j912510a', 'Link Stripe account'),
+        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.')
+      a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
+        a('fe339750', 'Create Stripe account'),
+        a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
@@ -6053,10 +6055,8 @@
         }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
-        a('dcc05a7e', 'Views'),
         a('eac51332', 'Times this Tweet was seen.'),
         a('deed2c38', 'Times this Tweet was seen. It can take a few minutes for the view count to appear.'),
-        a('c380ad56', 'View counts are not available for this Tweet.'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
         a('i976aff4', 'Update daily budget info to match your billing currency.')
       function i(e, t) {
