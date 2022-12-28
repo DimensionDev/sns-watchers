@@ -368,7 +368,6 @@
         a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
         a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
         a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
-        a('a0b7f128', 'No new Tweets available'),
         a('j0a8da6e', 'Add an existing account'),
         a('c6f2bf00', 'Manage accounts'),
         a('b8e1d524', 'Accounts'),
@@ -1162,9 +1161,9 @@
         a('e8adeec8', 'Promote again'),
         a('e1c8af7c', 'See the latest Tweet'),
         a('a8569d48', 'Opens the new version of this Tweet'),
-        a('a407814e', 'Last edited')
-      a('d91a6826', 'This is the latest version of this Tweet.'),
-        a('ffe16626', 'Reply filter is on.'),
+        a('a407814e', 'Last edited'),
+        a('d91a6826', 'This is the latest version of this Tweet.')
+      a('ffe16626', 'Reply filter is on.'),
         a('f1c59d2e', 'Notify me'),
         a('d54612a4', 'Notifying me'),
         a('eaa65473', function (e) {
@@ -2355,12 +2354,12 @@
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
         a('g1888dc2', 'Never'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.')
-      a('fa54a75e', 'Your notification settings have been saved.'),
-        a(
-          'd4945e44',
-          'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-        ),
+        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+        a('fa54a75e', 'Your notification settings have been saved.')
+      a(
+        'd4945e44',
+        'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+      ),
         a('jdb52860', 'Contributors write and rate notes'),
         a(
           'b468ea24',
@@ -3626,9 +3625,9 @@
         a(
           'cb2ed998',
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-        )
-      a('d9138166', 'See places you’ve been'),
-        a('f2b23062', 'Accessibility, display and languages'),
+        ),
+        a('d9138166', 'See places you’ve been')
+      a('f2b23062', 'Accessibility, display and languages'),
         a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
@@ -4840,9 +4839,9 @@
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
         ),
         a('ja884230', 'Set up your payout details'),
-        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.')
-      a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
-        a('fe339750', 'Create Stripe account'),
+        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
+        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.')
+      a('fe339750', 'Create Stripe account'),
         a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
@@ -6058,7 +6057,8 @@
         a('eac51332', 'Times this Tweet was seen.'),
         a('deed2c38', 'Times this Tweet was seen. It can take a few minutes for the view count to appear.'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
-        a('i976aff4', 'Update daily budget info to match your billing currency.')
+        a('i976aff4', 'Update daily budget info to match your billing currency.'),
+        a('b069d89c', 'Audience')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,8 +6078,7 @@
           s(e, t)
         )
       }
-      a('b069d89c', 'Audience'),
-        a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
+      a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
@@ -7449,13 +7448,13 @@
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
         }),
-        a('a4c5be9c', 'They will be able to follow you and view your Tweets.')
-      a('cda66545', function (e) {
-        return 'Click to ' + e.followType + ' ' + e.screenName
+        a('a4c5be9c', 'They will be able to follow you and view your Tweets.'),
+        a('cda66545', function (e) {
+          return 'Click to ' + e.followType + ' ' + e.screenName
+        })
+      a('ee05e96b', function (e) {
+        return 'Click to ' + e.followType + ' to ' + e.screenName
       }),
-        a('ee05e96b', function (e) {
-          return 'Click to ' + e.followType + ' to ' + e.screenName
-        }),
         a('a8d77a25', function (e) {
           return 'Click to leave ' + e.screenName
         }),
