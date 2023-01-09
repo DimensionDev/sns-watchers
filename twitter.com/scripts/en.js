@@ -69,6 +69,10 @@
         a('bbcaab10', 'Some actions on this Tweet have been disabled by Twitter.'),
         a('bb558892', 'This user already has a verified phone number.'),
         a('hae1c934', 'Something went wrong, but don’t fret — it’s not your fault.'),
+        a(
+          'e784846c',
+          'Your profile is under review. No new changes are allowed to name and profile photo during the review period.',
+        ),
         a('h1cbdd30', 'Please refresh the page and try again.'),
         a('a5077d3e', 'Refresh'),
         a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
@@ -309,6 +313,7 @@
         a('ab38b896', 'Twitter Ads'),
         a('da137d9a', 'MStV Transparenzangaben'),
         a('d0748dae', 'Twitter Circle'),
+        a('j087774e', 'Coins'),
         a('bcd81cac', 'Preferences'),
         a('i1d35d74', 'TweetDeck'),
         a('c9d41314', 'Twitter for Professionals'),
@@ -344,31 +349,7 @@
         a('e1099fd6', 'Privacy Policy'),
         a('c1df1ae0', 'Cookie Use.'),
         a('gdb8bdcc', 'See new Tweets'),
-        a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
-        a('aa6e3300', 'Looks like you lost your connection. Please check it and try again.'),
-        a('hbe4feb5', function (e) {
-          return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
-        }),
-        a('df4c86b0', 'Please update your profile first'),
-        a('bba40ffa', 'You can’t follow this account'),
-        a(
-          'f558829e',
-          'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
-        ),
-        a('a6941096', 'This account can’t be followed from your country.'),
-        a('if8cd2a4', 'You’re not old enough to follow this account.'),
-        a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
-        a('j49fd4e8', 'Switch to the app'),
-        a('hd50e064', 'Not now'),
-        a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
-        a('j4292c24', 'You have been blocked from following this user at their request.'),
-        a('a0ba5842', 'You are unable to follow more people at this time.'),
-        a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
-        a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
-        a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
-        a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
-        a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
-        a('a0b7f128', 'No new Tweets available'),
+        a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
         a('j0a8da6e', 'Add an existing account'),
         a('c6f2bf00', 'Manage accounts'),
         a('b8e1d524', 'Accounts'),
@@ -383,6 +364,8 @@
         a('g34f2c63', function (e) {
           return 'Tweet' + e.verb
         }),
+        a('j49fd4e8', 'Switch to the app'),
+        a('hd50e064', 'Not now'),
         a('d8817e36', 'Accept all cookies'),
         a('b9288ee6', 'Refuse non-essential cookies'),
         a('i1390ec2', 'Did someone say … cookies?'),
@@ -472,10 +455,31 @@
         a('a8d68f62', 'Recent'),
         a('c6530778', 'Saved searches'),
         a('e047b8fa', 'Clear all'),
+        a('aa6e3300', 'Looks like you lost your connection. Please check it and try again.'),
         a('e68b09b4', 'Remove'),
         a('hffea05c', 'Delete saved search?'),
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('d96cf7ce', 'Delete'),
+        a('hbe4feb5', function (e) {
+          return 'A follow request has been sent to @' + e.screenName + ' and is pending their approval.'
+        }),
+        a('df4c86b0', 'Please update your profile first'),
+        a('bba40ffa', 'You can’t follow this account'),
+        a(
+          'f558829e',
+          'To follow this account, you’ll need to include your birth date on your profile, ensuring you meet minimum age requirements.',
+        ),
+        a('a6941096', 'This account can’t be followed from your country.'),
+        a('if8cd2a4', 'You’re not old enough to follow this account.'),
+        a('b5972260', 'Something went wrong. Try canceling your follow request for that user again in a minute.'),
+        a('b6878b0a', 'Something went wrong. Try blocking that user again in a minute.'),
+        a('j4292c24', 'You have been blocked from following this user at their request.'),
+        a('a0ba5842', 'You are unable to follow more people at this time.'),
+        a('a5202b82', 'Something went wrong. Try following that user again in a minute.'),
+        a('f8cbf714', 'You’re trying to follow a user that doesn’t exist.'),
+        a('f2e66452', 'Your account is suspended and is not permitted to follow users.'),
+        a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
+        a('e1a0aaca', 'Something went wrong. Try unfollowing that user again in a minute.'),
         a('fd5208c6', 'Go to settings'),
         a('e0870f26', 'Sign up with Google'),
         a('gfeffd6a', 'Sign in with Google'),
@@ -1161,10 +1165,16 @@
         a('c14cdb18', 'Promote'),
         a('e8adeec8', 'Promote again'),
         a('e1c8af7c', 'See the latest Tweet'),
-        a('a8569d48', 'Opens the new version of this Tweet'),
-        a('a407814e', 'Last edited')
-      a('d91a6826', 'This is the latest version of this Tweet.'),
+        a('a8569d48', 'Opens the new version of this Tweet')
+      a('a407814e', 'Last edited'),
+        a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
+        a('f396c105', function (e) {
+          return '' + e.displayCount
+        }),
+        a('aa037e65', function (e) {
+          return 'View' + n(e.count, '', 's')
+        }),
         a('f1c59d2e', 'Notify me'),
         a('d54612a4', 'Notifying me'),
         a('eaa65473', function (e) {
@@ -1292,12 +1302,6 @@
         }),
         a('e2414185', function (e) {
           return 'Quote Tweet' + n(e.count, '', 's')
-        }),
-        a('f396c105', function (e) {
-          return '' + e.displayCount
-        }),
-        a('aa037e65', function (e) {
-          return 'View' + n(e.count, '', 's')
         }),
         a('bc2ceaf2', 'Sending Tweet...'),
         a('j4c40da4', 'Send now'),
@@ -2354,9 +2358,9 @@
         a('g72e2a58', 'A few alerts per week'),
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
-        a('g1888dc2', 'Never'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.')
-      a('fa54a75e', 'Your notification settings have been saved.'),
+        a('g1888dc2', 'Never')
+      a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+        a('fa54a75e', 'Your notification settings have been saved.'),
         a(
           'd4945e44',
           'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
@@ -3622,12 +3626,12 @@
           'jdaf84e4',
           'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
         ),
-        a('dc20d918', 'Personalize based on places you’ve been'),
-        a(
-          'cb2ed998',
-          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-        )
-      a('d9138166', 'See places you’ve been'),
+        a('dc20d918', 'Personalize based on places you’ve been')
+      a(
+        'cb2ed998',
+        'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
+      ),
+        a('d9138166', 'See places you’ve been'),
         a('f2b23062', 'Accessibility, display and languages'),
         a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
@@ -4005,8 +4009,12 @@
         a('a990900c', 'Bio'),
         a('cb469ff6', 'Name can’t be blank'),
         a(
-          'ja2274ee',
-          'Your blue checkmark will be hidden for a period of time after you edit your display name or profile photo.',
+          'cabba586',
+          'Your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
+        ),
+        a(
+          'je58d6aa',
+          'Your profile is under review. After a short grace period, no new changes are allowed to name and profile photo until the review is completed.',
         ),
         a('g511f468', 'Your avatar failed to update because some media didn’t upload'),
         a('ec3a116e', 'Your banner failed to update because some media didn’t upload.'),
@@ -4019,8 +4027,8 @@
         a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
         a('d57c69c6', 'Save changes?'),
         a(
-          'd490fc36',
-          'As a Blue subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo.',
+          'f28690ae',
+          'As a Blue subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
         ),
         a(
           'addbe8e8',
@@ -4435,7 +4443,10 @@
         a('de5a60d8', '1080p video'),
         a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
-        a('b0f0b3aa', 'Upload and Tweet videos that are up to 10 minutes long.'),
+        a(
+          'b7f8b78c',
+          'Upload and Tweet videos that are up to 60 minutes long (1080p) on twitter.com and up to 10 minutes long on iOS and Android.',
+        ),
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
@@ -4443,24 +4454,32 @@
         a('d7b51c68', 'Subscriptions'),
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a('i8132774', 'Bonus content for your most engaged followers'),
+        a('ac08a218', 'Awards'),
+        a('df837dac', 'Estimated earned revenue / Payout threshold'),
         a('df29646e', 'Payout threshold'),
         a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
         a('f139168e', 'Earnings dashboard'),
         a('ee0510c2', 'Payout history'),
-        a('i14be2c6', 'Estimated earned revenue'),
-        a('e6f83b1a', 'Tips'),
         a('e939cc54', 'Application accepted · Build your subscription'),
         a('c9b82b4c', 'Application accepted · Build your Subscription'),
         a('ibb5e1c8', 'Application declined'),
         a('b255df58', 'Application submitted · Waiting for review'),
         a('b3f834c8', 'Application waitlisted'),
-        a('ff9ed474', 'Total earnings'),
-        a('d59dbf8a', 'Overview'),
+        a('i14be2c6', 'Estimated earned revenue'),
+        a('bc43a32e', 'Recent activity'),
+        a('jd1318d6', 'You have no new awards at this time.'),
+        a('d93308d8', 'See all transactions'),
+        a('dd657212', 'View Tweet'),
         a('c76972f0', 'Since last payout'),
         a('c219a552', 'All time'),
+        a('bf364d62', 'All transactions'),
+        a('g1b8020c', 'Last 30 days'),
+        a('jb13b840', 'All-time'),
+        a('ab52c942', 'You have no new awards in the last 30 days.'),
+        a('ff9ed474', 'Total earnings'),
+        a('d59dbf8a', 'Overview'),
         a('g652fc4c', 'You have no payout history this month.'),
         a('d55e017a', 'This month'),
-        a('jb13b840', 'All-time'),
         a('f883322d', function (e) {
           return 'Transaction ID ' + e.transactionId
         }),
@@ -4472,7 +4491,7 @@
         a('d113fc10', 'You have no new Subscriptions at this time.'),
         a('h7a41c02', 'Renewals'),
         a('eedf2eaa', 'You have no renewals at this time.'),
-        a('d93308d8', 'See all transactions'),
+        a('a23e724a', 'This account is unavailable.'),
         a('a384fda0', 'Subscription overview'),
         a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
         a('c0348964', 'Introduction'),
@@ -4570,10 +4589,8 @@
         a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
         a('g263221c', 'Stripe'),
-        a('bf364d62', 'All transactions'),
         a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
-        a('g1b8020c', 'Last 30 days'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
         a('f2351b98', 'Flagged accounts'),
         a(
@@ -4829,8 +4846,8 @@
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
         a('h0c5405c', 'Regular posting and interacting with Subscribers'),
-        a('e1453e45', 'Learn more'),
-        a('f1cb36b8', 'Payout setup'),
+        a('e1453e45', 'Learn more')
+      a('f1cb36b8', 'Payout setup'),
         a('e20f6662', 'You’re all set!'),
         a('i9b8ec68', '1–3 weeks'),
         a('d7d4da8a', '1–3 weeks'),
@@ -4840,8 +4857,8 @@
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
         ),
         a('ja884230', 'Set up your payout details'),
-        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.')
-      a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
+        a('af1b808e', 'Add a verified Stripe account before getting started with Super Follows.'),
+        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
         a('fe339750', 'Create Stripe account'),
         a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
@@ -4898,27 +4915,24 @@
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
-        a('je84dece', 'Feature Settings'),
         a('a21b8ad2', 'Ad-free Sites'),
-        a(
-          'bbbd8ea8',
-          'Check out which sites are on our growing network of Twitter Blue Publishers. Availability varies based on location. Doesn’t include paywall access right now.',
-        ),
-        a('jc8487c2', 'You’re supporting journalism each time you read ad-free with Twitter Blue.'),
         a('ad45e9b2', 'View your subscription details or cancel.'),
         a('db529452', 'Subscription'),
         a('d248d75e', 'Get Support'),
-        a('fbefd86c', 'New!'),
-        a('a1f3dbf2', 'Early access to edit your Tweets. Now you can fix those typos.'),
         a(
           'i85091ac',
           'Blue looks good on you. Enjoy your verified account and blue checkmark once you’ve been approved.',
         ),
-        a('d551ca66', 'See your member benefits and manage your settings'),
+        a('fa08daa8', 'See what’s included in Blue and manage your settings'),
         a('eca82e08', 'A better news reading experience'),
-        a('de06833a', 'Discover relevant news, and get a cleaner thread reading experience.'),
+        a(
+          'aab8f504',
+          'Discover relevant news, enjoy articles without ads, and support the journalism you like to read.',
+        ),
         a('ia0beb56', 'Early access to select new features'),
         a('h44313c4', 'Explore select new Twitter features included in Twitter Blue Labs.'),
+        a('f5338950', 'Extras'),
+        a('i5cb232e', 'Choose custom app icons and add quick access to your favorite destinations.'),
         a('b6ab9962', 'Original Tweets'),
         a('j45978a8', 'Quotes'),
         a('be077e8c', 'Threads'),
@@ -5121,7 +5135,6 @@
         a('i3f7ff00', 'Media thumbnail'),
         a('h400d7c2', 'JOIN SPACE'),
         a('be6ef5b4', 'COMING UP'),
-        a('d126cb7c', 'Latest Tweets'),
         a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
         a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
         a('j681ac0e', 'View content preferences'),
@@ -5129,6 +5142,7 @@
         a('g8220472', 'Top Tweets off'),
         a('ccdd3766', 'Top Tweets on'),
         a('g2657de4', 'Top Tweets'),
+        a('d126cb7c', 'Latest Tweets'),
         a('bfefe530', 'Custom Timelines'),
         a('c41ecf3c', 'Home shows you top Tweets first'),
         a('d18aa6d4', 'Latest Tweets show up as they happen'),
@@ -5142,6 +5156,7 @@
         a('eeab441a', 'Unpin your Latest timeline'),
         a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
         a('f089620c', 'Your Home Timeline'),
+        a('de0f5d66', 'For you'),
         a('d2c66f10', 'Welcome to Twitter!'),
         a(
           'c3fbf1da',
@@ -5537,7 +5552,6 @@
         a('b9ce59ba', 'Thanks again for bringing this to our attention.'),
         a('d42899ad', 'International Association for Suicide Prevention.'),
         a('c9853de0', 'Content hidden'),
-        a('a23e724a', 'This account is unavailable.'),
         a('c197728e', 'Resolved'),
         a('i07c24fa', 'You don’t have any open reports'),
         a('h542c98a', 'See details'),
@@ -6053,12 +6067,7 @@
         a('e3521fcd', function (e) {
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
         }),
-        a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics'),
-        a('eac51332', 'Times this Tweet was seen.'),
-        a('deed2c38', 'Times this Tweet was seen. It can take a few minutes for the view count to appear.'),
-        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
-        a('i976aff4', 'Update daily budget info to match your billing currency.')
+        a('g9079b94', 'You may only view analytics about your own Tweets.')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,7 +6087,13 @@
           s(e, t)
         )
       }
-      a('b069d89c', 'Audience'),
+      a('a57daeb2', 'Tweet Analytics'),
+        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+        a('ccccbc74', 'Help Center'),
+        a('dabb313e', 'Help Center'),
+        a('e00644ca', 'Help Center'),
+        a('i976aff4', 'Update daily budget info to match your billing currency.'),
+        a('b069d89c', 'Audience'),
         a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
@@ -6327,7 +6342,6 @@
         a('cdd4aafe', 'Loading people in conversation'),
         a('aac3fad2', 'People in this conversation'),
         a('d132269c', 'Loading Tweet'),
-        a('dd657212', 'View Tweet'),
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
         a('f26a4cb2', 'Swipe up for more'),
@@ -6393,6 +6407,14 @@
         ),
         a('f0e32de6', 'Welcome to Twitter Blue'),
         a('gc6e8c18', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
+        a(
+          'dda7478c',
+          'Coins allow you to support creators who Tweet great content. Unused coins are kept in your balance.',
+        ),
+        a('e5461d10', 'Buy coins'),
+        a('e5fc32fa', 'Learn more.'),
+        a('bc42db1c', 'Cancel anytime. Auto-renews monthly.'),
+        a('f971aa1c', 'Twitter Purchaser Terms'),
         a('a25a2e76', 'Edit order'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
@@ -6793,7 +6815,6 @@
         a('c4640fc0', 'Share Subscriptions profile'),
         a('e98c64ca', 'Copy link to Super Follows profile'),
         a('a72064a8', 'Copy link to Subscriptions profile'),
-        a('d822ae44', 'Twitter Purchaser Terms'),
         a('jcb7383f', function (e) {
           return 'You are now Super Following @' + e.screenName
         }),
@@ -7414,6 +7435,18 @@
         a('i6c1e4b2', 'December'),
         a('de540c32', 'Reveal password'),
         a('b4abfdb4', 'Hide password'),
+        a('f35e2d5f', function (e) {
+          return (
+            e.standardTweetCount +
+            ' character' +
+            n(e.standardTweetCount, '', 's') +
+            ' remaining for a standard tweet, ' +
+            e.totalCount +
+            ' character' +
+            n(e.totalCount, '', 's') +
+            ' remaining total'
+          )
+        }),
         a('fee0a8bc', 'Save'),
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
@@ -7427,10 +7460,10 @@
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
-        }),
-        a('e5630cdd', function (e) {
-          return 'Block @' + e.screenName + '?'
-        }),
+        })
+      a('e5630cdd', function (e) {
+        return 'Block @' + e.screenName + '?'
+      }),
         a('a9d050cc', 'Block'),
         a('da82a3e7', function (e) {
           return (
@@ -7449,10 +7482,10 @@
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
         }),
-        a('a4c5be9c', 'They will be able to follow you and view your Tweets.')
-      a('cda66545', function (e) {
-        return 'Click to ' + e.followType + ' ' + e.screenName
-      }),
+        a('a4c5be9c', 'They will be able to follow you and view your Tweets.'),
+        a('cda66545', function (e) {
+          return 'Click to ' + e.followType + ' ' + e.screenName
+        }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
         }),
@@ -7715,7 +7748,6 @@
         a('c566d3a6', 'Hide'),
         a('a897c4d6', 'Opens edit history'),
         a('ce97544c', 'Tweet unavailable'),
-        a('aed03d34', 'People'),
         a('ffeb2fc6', 'Up next'),
         a('af2a65d9', function (e) {
           return e.timestamp + ' selected'
@@ -8363,6 +8395,12 @@
               },
             },
             {
+              key: 'c1976bcf',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
               key: 'be5322c7',
               get: function get() {
                 return ['', ' ']
@@ -8420,12 +8458,6 @@
             },
             {
               key: 'f0259953',
-              get: function get() {
-                return ['', ' ']
-              },
-            },
-            {
-              key: 'c1976bcf',
               get: function get() {
                 return ['', ' ']
               },
@@ -10104,6 +10136,27 @@
               },
             },
             {
+              key: 'c5517273',
+              get: function get() {
+                return ['Times this Tweet was seen. To learn more, visit the ', '.']
+              },
+            },
+            {
+              key: 'c770501b',
+              get: function get() {
+                return [
+                  'Times this Tweet was seen. It can take a few minutes for the view count to appear. To learn more, visit the ',
+                  '.',
+                ]
+              },
+            },
+            {
+              key: 'jaea7625',
+              get: function get() {
+                return ['View counts are not available for this Tweet. To learn more, visit the ', '.']
+              },
+            },
+            {
               key: 'cace9785',
               get: function get() {
                 return [
@@ -10154,6 +10207,12 @@
               key: 'a9ce2dd5',
               get: function get() {
                 return ['', ' for help and how-to’s.']
+              },
+            },
+            {
+              key: 'fe10842f',
+              get: function get() {
+                return ['By clicking below to make this purchase, you agree to be bound by the ', '.']
               },
             },
             {
@@ -10322,15 +10381,6 @@
               get: function get() {
                 return [
                   'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
-                ]
-              },
-            },
-            {
-              key: 'fce78785',
-              get: function get() {
-                return [
-                  'By clicking below to make this purchase, you agree to be bound by the ',
-                  '. Cancel anytime. Auto-renews monthly.',
                 ]
               },
             },
@@ -12558,6 +12608,27 @@
           'NaN',
           { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
         ])),
+        (b.b432665853 = m([
+          "'¥'",
+          ,
+          1,
+          0,
+          0,
+          ,
+          ,
+          ,
+          3,
+          ,
+          '',
+          "'¥'#,##0",
+          "-'¥''¥'#,##0",
+          "-'¥'",
+          '',
+          h('ceil'),
+          '∞',
+          'NaN',
+          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+        ])),
         (b.a1662346136 = y(function (e) {
           var t = !String(e).split('.')[1]
           return 1 == e && t ? 'one' : 'other'
@@ -12632,6 +12703,7 @@
         (b.a1608008627 = p(b('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
         (b.a1321204873 = p(b('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
         (b.a1653031457 = p(b('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
+        (b.b893561242 = p(b('en').numberFormatter({ round: 'ceil', raw: "'¥'#,##0" }))),
         (b.b129255162 = w(
           { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
           { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
@@ -13235,6 +13307,7 @@
         a('j16ccfa3', b.a1608008627),
         a('c93cb977', b.a1321204873),
         a('c32b252b', b.a1653031457),
+        a('j6a2940f', b.b893561242),
         a('a1061083', b.b490808361)
     },
   },
