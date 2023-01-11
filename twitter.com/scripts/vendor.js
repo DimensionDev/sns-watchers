@@ -7643,9 +7643,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
       74279: function _(e, t, r) {
         r(23103)({ target: 'Math', stat: !0 }, { sign: r(57235) })
       },
-      31969: function _(e, t, r) {
-        r(23103)({ target: 'Math', stat: !0 }, { trunc: r(50917) })
-      },
       71245: function _(e, t, r) {
         'use strict'
         var n = r(7400),

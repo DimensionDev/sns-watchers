@@ -1566,6 +1566,7 @@
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
         }),
+        a('h958a940', 'The first 280 characters will be visible by default'),
         a('c20aaf3e', 'Error'),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
@@ -2357,9 +2358,9 @@
         a('ba165b3c', 'Often'),
         a('g72e2a58', 'A few alerts per week'),
         a('idd249e0', 'Sometimes'),
-        a('if2e01ee', 'A few alerts per month'),
-        a('g1888dc2', 'Never')
-      a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+        a('if2e01ee', 'A few alerts per month')
+      a('g1888dc2', 'Never'),
+        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
         a('fa54a75e', 'Your notification settings have been saved.'),
         a(
           'd4945e44',
@@ -3625,12 +3626,12 @@
         a(
           'jdaf84e4',
           'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
+        )
+      a('dc20d918', 'Personalize based on places you’ve been'),
+        a(
+          'cb2ed998',
+          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
         ),
-        a('dc20d918', 'Personalize based on places you’ve been')
-      a(
-        'cb2ed998',
-        'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-      ),
         a('d9138166', 'See places you’ve been'),
         a('f2b23062', 'Accessibility, display and languages'),
         a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
@@ -4845,9 +4846,9 @@
         a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
-        a('h0c5405c', 'Regular posting and interacting with Subscribers'),
-        a('e1453e45', 'Learn more')
-      a('f1cb36b8', 'Payout setup'),
+        a('h0c5405c', 'Regular posting and interacting with Subscribers')
+      a('e1453e45', 'Learn more'),
+        a('f1cb36b8', 'Payout setup'),
         a('e20f6662', 'You’re all set!'),
         a('i9b8ec68', '1–3 weeks'),
         a('d7d4da8a', '1–3 weeks'),
@@ -6066,8 +6067,7 @@
         a('ie816cb4', 'Watch this video and so much more on Twitter.'),
         a('e3521fcd', function (e) {
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-        }),
-        a('g9079b94', 'You may only view analytics about your own Tweets.')
+        })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6087,7 +6087,8 @@
           s(e, t)
         )
       }
-      a('a57daeb2', 'Tweet Analytics'),
+      a('g9079b94', 'You may only view analytics about your own Tweets.'),
+        a('a57daeb2', 'Tweet Analytics'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
         a('ccccbc74', 'Help Center'),
         a('dabb313e', 'Help Center'),
@@ -6376,6 +6377,11 @@
         a('dad69faa', 'Update your payment method'),
         a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
         a('aa0d60aa', 'month'),
+        a('a3a4e8f8', 'Monthly'),
+        a('b9a4d8c6', 'Annual'),
+        a('b47d123d', function (e) {
+          return 'SAVE ' + e.percentage + '%'
+        }),
         a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
         a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
         a('h73af450', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
@@ -7454,16 +7460,16 @@
         a('f7432494', 'Add photo'),
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
-        a('a77a27c0', 'Subscribed'),
-        a('i00ab5ba', 'Manage Subscription'),
+        a('a77a27c0', 'Subscribed')
+      a('i00ab5ba', 'Manage Subscription'),
         a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
-        })
-      a('e5630cdd', function (e) {
-        return 'Block @' + e.screenName + '?'
-      }),
+        }),
+        a('e5630cdd', function (e) {
+          return 'Block @' + e.screenName + '?'
+        }),
         a('a9d050cc', 'Block'),
         a('da82a3e7', function (e) {
           return (
