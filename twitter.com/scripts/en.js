@@ -6377,10 +6377,19 @@
         a('dad69faa', 'Update your payment method'),
         a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
         a('aa0d60aa', 'month'),
-        a('a3a4e8f8', 'Monthly'),
-        a('b9a4d8c6', 'Annual'),
+        a('i8386756', 'Monthly Plan'),
+        a('ac163d10', 'Annual Plan'),
+        a('i2c32253', function (e) {
+          return e.price + ' / month'
+        }),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
+        }),
+        a('j617750f', function (e) {
+          return e.price + ' per year billed annually'
+        }),
+        a('j6a5b9ff', function (e) {
+          return e.price + ' per year billed monthly'
         }),
         a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
         a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
@@ -7457,11 +7466,11 @@
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
-        a('f7432494', 'Add photo'),
-        a('c3befdbe', 'Following'),
+        a('f7432494', 'Add photo')
+      a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
-        a('a77a27c0', 'Subscribed')
-      a('i00ab5ba', 'Manage Subscription'),
+        a('a77a27c0', 'Subscribed'),
+        a('i00ab5ba', 'Manage Subscription'),
         a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
