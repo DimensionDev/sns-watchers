@@ -5136,6 +5136,9 @@
         a('i3f7ff00', 'Media thumbnail'),
         a('h400d7c2', 'JOIN SPACE'),
         a('be6ef5b4', 'COMING UP'),
+        a('dafd69e9', function (e) {
+          return 'Following' + e.noun
+        }),
         a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
         a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
         a('j681ac0e', 'View content preferences'),
@@ -5157,7 +5160,9 @@
         a('eeab441a', 'Unpin your Latest timeline'),
         a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
         a('f089620c', 'Your Home Timeline'),
-        a('de0f5d66', 'For you'),
+        a('d1e0a75f', function (e) {
+          return 'For you' + e.noun
+        }),
         a('d2c66f10', 'Welcome to Twitter!'),
         a(
           'c3fbf1da',
@@ -6064,10 +6069,7 @@
         a('e38c0975', function (e) {
           return 'Join the conversation for more from @' + e.screenName + '.'
         }),
-        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
-        a('e3521fcd', function (e) {
-          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-        })
+        a('ie816cb4', 'Watch this video and so much more on Twitter.')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6087,7 +6089,10 @@
           s(e, t)
         )
       }
-      a('g9079b94', 'You may only view analytics about your own Tweets.'),
+      a('e3521fcd', function (e) {
+        return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+      }),
+        a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
         a('ccccbc74', 'Help Center'),
@@ -7465,9 +7470,9 @@
         a('fee0a8bc', 'Save'),
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
-        a('i5450bec', 'Media'),
-        a('f7432494', 'Add photo')
-      a('c3befdbe', 'Following'),
+        a('i5450bec', 'Media')
+      a('f7432494', 'Add photo'),
+        a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('a77a27c0', 'Subscribed'),
         a('i00ab5ba', 'Manage Subscription'),
