@@ -304,7 +304,6 @@
         }),
         a('deaf7e0a', 'Media Studio'),
         a('d299431c', 'Monetization'),
-        a('d0a51fb2', 'Newsletters'),
         a('ec1ed0cc', 'Professional Tools'),
         a('f4422d78', 'Reports'),
         a('fd442790', 'Settings and privacy'),
@@ -1165,9 +1164,9 @@
         a('c14cdb18', 'Promote'),
         a('e8adeec8', 'Promote again'),
         a('e1c8af7c', 'See the latest Tweet'),
-        a('a8569d48', 'Opens the new version of this Tweet')
-      a('a407814e', 'Last edited'),
-        a('d91a6826', 'This is the latest version of this Tweet.'),
+        a('a8569d48', 'Opens the new version of this Tweet'),
+        a('a407814e', 'Last edited')
+      a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
         a('f396c105', function (e) {
           return '' + e.displayCount
@@ -2358,9 +2357,9 @@
         a('ba165b3c', 'Often'),
         a('g72e2a58', 'A few alerts per week'),
         a('idd249e0', 'Sometimes'),
-        a('if2e01ee', 'A few alerts per month')
-      a('g1888dc2', 'Never'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+        a('if2e01ee', 'A few alerts per month'),
+        a('g1888dc2', 'Never')
+      a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
         a('fa54a75e', 'Your notification settings have been saved.'),
         a(
           'd4945e44',
@@ -2806,8 +2805,6 @@
           'da2663f6',
           'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
         ),
-        a('ed33a3b6', 'Hello, wordsmiths.'),
-        a('d5bda8b4', 'We now have a newsletter tool.'),
         a('c03c4a09', function (e) {
           return (
             e.minutes +
@@ -3626,14 +3623,14 @@
         a(
           'jdaf84e4',
           'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
-        )
-      a('dc20d918', 'Personalize based on places you’ve been'),
+        ),
+        a('dc20d918', 'Personalize based on places you’ve been'),
         a(
           'cb2ed998',
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
         ),
-        a('d9138166', 'See places you’ve been'),
-        a('f2b23062', 'Accessibility, display and languages'),
+        a('d9138166', 'See places you’ve been')
+      a('f2b23062', 'Accessibility, display and languages'),
         a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
@@ -4456,6 +4453,7 @@
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('ac08a218', 'Awards'),
+        a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
         a('df29646e', 'Payout threshold'),
         a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
@@ -4846,10 +4844,10 @@
         a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
-        a('h0c5405c', 'Regular posting and interacting with Subscribers')
-      a('e1453e45', 'Learn more'),
-        a('f1cb36b8', 'Payout setup'),
-        a('e20f6662', 'You’re all set!'),
+        a('h0c5405c', 'Regular posting and interacting with Subscribers'),
+        a('e1453e45', 'Learn more'),
+        a('f1cb36b8', 'Payout setup')
+      a('e20f6662', 'You’re all set!'),
         a('i9b8ec68', '1–3 weeks'),
         a('d7d4da8a', '1–3 weeks'),
         a('g88e146c', 'Your account is pending'),
@@ -5235,36 +5233,6 @@
         a('fca32b20', 'Update your phone number'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('i31dcd22', 'Article'),
-        a('jdfb861a', 'Confirm your subscription'),
-        a(
-          'b6e3edd8',
-          'An email was sent to you with a link to confirm your subscription. Click the link to finish subscribing to this newsletter.',
-        ),
-        a('cd9a90aa', 'Let’s get you set up'),
-        a(
-          'g30241f6',
-          'Twitter couldn’t find an email address linked to your profile. Subscribe through Revue, Twitter’s newsletter service.',
-        ),
-        a('fcd1fdda', 'Read a sample issue'),
-        a('a976a91e', 'Start reading on Revue'),
-        a('ab0decc0', 'Subscribe'),
-        a('h3281cea', 'You’re in the loop!'),
-        a('f05df264', 'Check your inbox for the latest issues or read on Revue'),
-        a('b78d4030', 'Thank you for subscribing'),
-        a('d1bc4330', 'Subscribe through Revue'),
-        a('b6f9f574', 'Subscribe to newsletter'),
-        a('c335e528', 'go here'),
-        a('ea02e698', 'Terms of Service'),
-        a('g3287f64', 'Privacy Policy'),
-        a('ha6bb228', 'Terms of Service'),
-        a('be446e5e', 'Privacy Policy'),
-        a('e217e03c', 'Start a newsletter for free'),
-        a('fadf0f86', 'Compose and schedule newsletters'),
-        a('f8df10ba', 'Embed Tweets'),
-        a('hb47d72c', 'Import email lists'),
-        a('dcbba9e8', 'Analyze engagement'),
-        a('bf916530', 'Earn money from paid subscribers'),
-        a('h8041a4b', '@Revue'),
         a('h3290872', 'Verified'),
         a('a98ba778', 'Notifications timelines'),
         a('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
@@ -5355,7 +5323,6 @@
         a('eb551aea', 'Show category on profile'),
         a('f386777a', 'Switch account type'),
         a('d4b6a6e0', 'Profile Spotlight'),
-        a('d834aec4', 'Newsletter'),
         a('jb38600c', 'None'),
         a('db483090', 'Switched to Personal account'),
         a('c701200c', 'Switched to Business account'),
@@ -5404,7 +5371,6 @@
         a('i7059f56', 'Opens'),
         a('a7391348', 'No hours available'),
         a('c9eba532', 'Updated hours'),
-        a('caeab0f8', 'Start reading'),
         a('b5fea270', 'Product carousel'),
         a('h10bb33c', 'Report product?'),
         a('dda5d96a', 'Report product'),
@@ -6069,29 +6035,10 @@
         a('e38c0975', function (e) {
           return 'Join the conversation for more from @' + e.screenName + '.'
         }),
-        a('ie816cb4', 'Watch this video and so much more on Twitter.')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function s(e, t) {
-        return (
-          (s = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          s(e, t)
-        )
-      }
-      a('e3521fcd', function (e) {
-        return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-      }),
+        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
+        a('e3521fcd', function (e) {
+          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+        }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
@@ -6121,8 +6068,27 @@
         a(
           'e044b630',
           'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        ),
-        a('d8abdaa4', 'New followers'),
+        )
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function s(e, t) {
+        return (
+          (s = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          s(e, t)
+        )
+      }
+      a('d8abdaa4', 'New followers'),
         a('de0de3a8', 'Follows gained directly from this Tweet'),
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
@@ -6381,6 +6347,7 @@
         ),
         a('dad69faa', 'Update your payment method'),
         a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
+        a('ab0decc0', 'Subscribe'),
         a('aa0d60aa', 'month'),
         a('i8386756', 'Monthly Plan'),
         a('ac163d10', 'Annual Plan'),
@@ -7064,17 +7031,6 @@
         a('ia1d2e58', 'Liked By Author'),
         a('bed2945c', 'read image description'),
         a('f17dfdb6', 'Play'),
-        a('b74bf8b8', 'Image'),
-        a('df8cd2af', function (e) {
-          return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel. ' + e.type + '. ' + e.altText
-        }),
-        a('d70740da', 'Next slide'),
-        a('c4d53ba2', 'Previous slide'),
-        a('h6405c17', function (e) {
-          return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel'
-        }),
-        a('gea7aa3c', 'Next'),
-        a('b6462b32', 'Previous'),
         a('j836de8a', 'Protected account'),
         a('f936caa6', 'Translator account'),
         a('ac72ee4e', 'Verified account'),
@@ -7231,17 +7187,6 @@
           return 'Join a space with ' + e.count + ' others'
         }),
         a('f5b51d6a', 'Now playing'),
-        a('aeb6f0a0', 'Subscribe'),
-        a('bf162f1e', 'Subscribe to this newsletter'),
-        a('gd42cccb', function (e) {
-          return 'Issue ' + e.issueNumber
-        }),
-        a('e68a6c62', 'Read the latest'),
-        a('fae82d22', 'Read the latest issue of this newsletter. Opens in a new window'),
-        a('c9aa7c7c', 'Newsletter'),
-        a('if1b6f15', function (e) {
-          return e.formattedCount + ' Subscriber' + n(e.count, '', 's')
-        }),
         a('j3de54a8', 'NOTE'),
         a('a6a6ced4', 'Read Note'),
         a('dbc0c2f4', 'Bookmark'),
@@ -7270,6 +7215,17 @@
         a('e86732e4', 'Selected'),
         a('a35a5b10', 'Followers you know'),
         a('fc8cd112', 'Not followed by anyone you’re following'),
+        a('b74bf8b8', 'Image'),
+        a('df8cd2af', function (e) {
+          return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel. ' + e.type + '. ' + e.altText
+        }),
+        a('d70740da', 'Next slide'),
+        a('c4d53ba2', 'Previous slide'),
+        a('h6405c17', function (e) {
+          return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel'
+        }),
+        a('gea7aa3c', 'Next'),
+        a('b6462b32', 'Previous'),
         a('hdf426f5', function (e) {
           return 'Topic · ' + e.description
         }),
@@ -7470,10 +7426,11 @@
         a('fee0a8bc', 'Save'),
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
-        a('i5450bec', 'Media')
-      a('f7432494', 'Add photo'),
+        a('i5450bec', 'Media'),
+        a('f7432494', 'Add photo'),
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
+        a('aeb6f0a0', 'Subscribe'),
         a('a77a27c0', 'Subscribed'),
         a('i00ab5ba', 'Manage Subscription'),
         a('jd505700', 'Autoblocked'),
@@ -7544,8 +7501,8 @@
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        }),
-        a('e9f1af3a', 'Find out more'),
+        })
+      a('e9f1af3a', 'Find out more'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
         a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
@@ -7711,6 +7668,7 @@
         a('ga629a8c', 'View people in conversation'),
         a('a8b58cf4', 'Show this thread'),
         a('i5f742fe', 'Show this poll'),
+        a('hf3f8e3a', 'Show more'),
         a('e078b15d', ' & '),
         a('h13ffc88', 'Voice'),
         a('f5d461f8', 'Voice Tweet'),
@@ -9847,48 +9805,6 @@
               },
             },
             {
-              key: 'bc543cd9',
-              get: function get() {
-                return [
-                  '',
-                  ' will receive the email associated with your Twitter account, ',
-                  ', through Revue Service.',
-                ]
-              },
-            },
-            {
-              key: 'gd686e7f',
-              get: function get() {
-                return ['Your email is ', '. To use a different email, ', '.']
-              },
-            },
-            {
-              key: 'b9c12eef',
-              get: function get() {
-                return [
-                  'By subscribing you agree to Revue’s ',
-                  ' and ',
-                  ' and that ',
-                  ' will receive your email address.',
-                ]
-              },
-            },
-            {
-              key: 'efdeb337',
-              get: function get() {
-                return ['By subscribing you agree to Revue’s ', ' and ', '.']
-              },
-            },
-            {
-              key: 'j28cabeb',
-              get: function get() {
-                return [
-                  'Looking for other ways to reach your audience? Ready to get paid for your work? It’s time to try out ',
-                  ' - Twitter’s newsletter tool for writers and publishers',
-                ]
-              },
-            },
-            {
               key: 'a1300021',
               get: function get() {
                 return [
@@ -9915,12 +9831,6 @@
                   'Try searching for something else, or check your ',
                   ' to see if they’re protecting you from potentially sensitive content.',
                 ]
-              },
-            },
-            {
-              key: 'ee512b37',
-              get: function get() {
-                return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
               },
             },
             {
