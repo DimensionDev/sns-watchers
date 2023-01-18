@@ -16,7 +16,8 @@
         return 'one' == ((a = e), (n = !String(a).split('.')[1]), 1 == a && n ? 'one' : 'other') ? t : o
         var a, n
       }
-      a('hd8c22d2', 'Mod'),
+      a('jded6c98', 'Tweet reply hidden'),
+        a('hd8c22d2', 'Mod'),
         a('c3153100', 'Admin'),
         a('ac0d27be', 'Sorry, this account has been suspended.'),
         a('bcee7444', 'Account update failed.'),
@@ -92,7 +93,6 @@
         a('fa9adac1', function (e) {
           return 'Search for "' + e.query + '"'
         }),
-        a('jded6c98', 'Tweet reply hidden'),
         a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
@@ -6917,6 +6917,8 @@
         a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
+        a('ce948dfa', 'Verified for Organizations'),
+        a('c0d13570', 'Affiliates'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7497,12 +7499,12 @@
           'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
         ),
         a('f305840e', 'Pending'),
-        a('fe04d89a', 'Discard'),
-        a('i036327c', 'Discard follow request?'),
+        a('fe04d89a', 'Discard')
+      a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        })
-      a('e9f1af3a', 'Find out more'),
+        }),
+        a('e9f1af3a', 'Find out more'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
         a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
