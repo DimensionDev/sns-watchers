@@ -7588,14 +7588,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
           },
         )
       },
-      19610: function _(e, t, r) {
-        var n = r(23103),
-          i = r(53816)
-        n({ global: !0, constructor: !0, forced: !r(9772) }, { DataView: i.DataView })
-      },
-      95206: function _(e, t, r) {
-        r(19610)
-      },
       85713: function _(e, t, r) {
         var n = r(23103),
           i = r(26966)
@@ -7805,30 +7797,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
       },
       79321: function _(e, t, r) {
         r(19294)
-      },
-      36348: function _(e, t, r) {
-        var n = r(23103),
-          i = r(24229),
-          a = Math.imul
-        n(
-          {
-            target: 'Math',
-            stat: !0,
-            forced: i(function () {
-              return -5 != a(4294967295, 5) || 2 != a.length
-            }),
-          },
-          {
-            imul: function imul(e, t) {
-              var r = 65535,
-                n = +e,
-                i = +t,
-                a = r & n,
-                o = r & i
-              return 0 | (a * o + ((((r & (n >>> 16)) * o + a * (r & (i >>> 16))) << 16) >>> 0))
-            },
-          },
-        )
       },
       71245: function _(e, t, r) {
         'use strict'

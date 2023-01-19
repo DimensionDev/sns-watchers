@@ -5137,26 +5137,6 @@
         a('dafd69e9', function (e) {
           return 'Following' + e.noun
         }),
-        a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
-        a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
-        a('j681ac0e', 'View content preferences'),
-        a('a9efe22c', 'Add custom Timelines'),
-        a('g8220472', 'Top Tweets off'),
-        a('ccdd3766', 'Top Tweets on'),
-        a('g2657de4', 'Top Tweets'),
-        a('d126cb7c', 'Latest Tweets'),
-        a('bfefe530', 'Custom Timelines'),
-        a('c41ecf3c', 'Home shows you top Tweets first'),
-        a('d18aa6d4', 'Latest Tweets show up as they happen'),
-        a('c90dcfa2', 'Home and Latest, one tab away'),
-        a('bc52b0ce', 'Go back Home'),
-        a('j6382fea', 'See latest Tweets instead'),
-        a('f89f6786', 'You’ll see Tweets show up as they happen.'),
-        a('e4acfd12', 'You’ll see top Tweets first.'),
-        a('f0c7628a', 'Pin your Latest timeline'),
-        a('j7d0cac6', 'The latest Tweets from people you follow will be one tab away from Home.'),
-        a('eeab441a', 'Unpin your Latest timeline'),
-        a('cae804fa', 'You’ll still see Home, where Top Tweets show up first.'),
         a('f089620c', 'Your Home Timeline'),
         a('d1e0a75f', function (e) {
           return 'For you' + e.noun
@@ -6068,27 +6048,8 @@
         a(
           'e044b630',
           'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        )
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function s(e, t) {
-        return (
-          (s = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          s(e, t)
-        )
-      }
-      a('d8abdaa4', 'New followers'),
+        ),
+        a('d8abdaa4', 'New followers'),
         a('de0de3a8', 'Follows gained directly from this Tweet'),
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
@@ -6127,8 +6088,27 @@
         }),
         a('f42a198d', function (e) {
           return e.spentBudget + ' of ' + e.totalBudget + ' spent'
-        }),
-        a('a63a89fe', 'Your promotion is complete'),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function s(e, t) {
+        return (
+          (s = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          s(e, t)
+        )
+      }
+      a('a63a89fe', 'Your promotion is complete'),
         a('b6da2126', 'Your boosted Tweet package has ended.'),
         a('j401e4bd', function (e) {
           return (
@@ -6438,6 +6418,7 @@
         a('fa884026', 'List'),
         a('eb7b54be', 'Loading Lists'),
         a('a9ca06d2', 'Information'),
+        a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
         a('b689c7e0', 'You’re seeing top Tweets first'),
         a('f9bef354', 'See latest Tweets'),
         a('f22b6ad6', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
@@ -6917,8 +6898,17 @@
         a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
-        a('ce948dfa', 'Verified for Organizations'),
+        a('c18444ea', 'Verification for Organizations'),
         a('c0d13570', 'Affiliates'),
+        a('cdcd1d2c', 'Add affiliations to your organization'),
+        a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
+        a('d1a35ec6', 'Add accounts'),
+        a('g7f85e24', 'Bulk import'),
+        a('a3463ed3', function (e) {
+          return 'Employees (' + e.number + ')'
+        }),
+        a('d178d7f0', 'Error!'),
+        a('g5c2f132', 'There were errors with the following accounts. Please check they are accurate and try again:'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7499,8 +7489,8 @@
           'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
         ),
         a('f305840e', 'Pending'),
-        a('fe04d89a', 'Discard')
-      a('i036327c', 'Discard follow request?'),
+        a('fe04d89a', 'Discard'),
+        a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
         }),
@@ -7513,8 +7503,8 @@
         a('ecda5f9e', 'Misleading'),
         a('a423473c', 'Legally Required Notice'),
         a('d85bc1b8', 'Zoom in or out on your image.'),
-        a('f596ace8', 'Aspect ratio: original'),
-        a('df031fca', 'Aspect ratio: wide'),
+        a('f596ace8', 'Aspect ratio: original')
+      a('df031fca', 'Aspect ratio: wide'),
         a('b40332c6', 'Aspect ratio: square'),
         a('e547b368', 'Original'),
         a('f7571204', 'Wide'),
