@@ -342,7 +342,6 @@
         a('e919c3bc', 'Log in'),
         a('e5b0e544', 'Sign in'),
         a('a565833e', 'Sign up'),
-        a('aa95ddc0', 'Sign up with phone or email'),
         a('gd93944e', 'Use app'),
         a('f2f787a0', 'Terms of Service'),
         a('e1099fd6', 'Privacy Policy'),
@@ -1165,9 +1164,9 @@
         a('e8adeec8', 'Promote again'),
         a('e1c8af7c', 'See the latest Tweet'),
         a('a8569d48', 'Opens the new version of this Tweet'),
-        a('a407814e', 'Last edited')
-      a('d91a6826', 'This is the latest version of this Tweet.'),
-        a('ffe16626', 'Reply filter is on.'),
+        a('a407814e', 'Last edited'),
+        a('d91a6826', 'This is the latest version of this Tweet.')
+      a('ffe16626', 'Reply filter is on.'),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -2358,9 +2357,9 @@
         a('g72e2a58', 'A few alerts per week'),
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
-        a('g1888dc2', 'Never')
-      a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
-        a('fa54a75e', 'Your notification settings have been saved.'),
+        a('g1888dc2', 'Never'),
+        a('ac52a8de', 'There was an error saving your notification settings, please try again.')
+      a('fa54a75e', 'Your notification settings have been saved.'),
         a(
           'd4945e44',
           'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
@@ -3629,9 +3628,9 @@
           'cb2ed998',
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
         ),
-        a('d9138166', 'See places you’ve been')
-      a('f2b23062', 'Accessibility, display and languages'),
-        a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
+        a('d9138166', 'See places you’ve been'),
+        a('f2b23062', 'Accessibility, display and languages')
+      a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
           'a5ce82a4',
@@ -4434,6 +4433,10 @@
         a('je4ccd3a', 'Ad-free Articles Help Center'),
         a('g7eb2d40', 'Early Access'),
         a('ce5d8470', 'Twitter Blue Labs gives members early access to some of Twitter’s newest features.'),
+        a('daa05768', 'Longer Tweets'),
+        a('f1e443e3', function (e) {
+          return 'Create Tweets, replies and Quotes up to ' + e.count + ' characters long.'
+        }),
         a(
           'aca286f8',
           'Edit Tweets up to 5 times within 30 minutes of Tweeting. Your edit history is visible to anyone who wants to see the evolution of a Tweet.',
@@ -4465,12 +4468,26 @@
         a('b255df58', 'Application submitted · Waiting for review'),
         a('b3f834c8', 'Application waitlisted'),
         a('i14be2c6', 'Estimated earned revenue'),
+        a('ja73ebac', 'Revenue'),
+        a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
         a('jd1318d6', 'You have no new awards at this time.'),
         a('d93308d8', 'See all transactions'),
         a('dd657212', 'View Tweet'),
         a('c76972f0', 'Since last payout'),
         a('c219a552', 'All time'),
+        a('f3ce76c0', 'Need more help?'),
+        a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
+        a('e46563d6', 'Deactivate Awards'),
+        a(
+          'je490992',
+          'By deactivating, you’ll be removed from the Awards program and no longer be eligible to receive awards.',
+        ),
+        a('e58e85d2', 'Continue to deactivation'),
+        a('a62c84f6', 'Deactivate Awards?'),
+        a('b6653778', 'Deactivating Awards is permanent. You’ll be removed from the Awards program.'),
+        a('bee26fa8', 'Yes, deactivate'),
+        a('ia6443a2', 'Awards is now deactivated'),
         a('bf364d62', 'All transactions'),
         a('g1b8020c', 'Last 30 days'),
         a('jb13b840', 'All-time'),
@@ -4482,8 +4499,6 @@
         a('f883322d', function (e) {
           return 'Transaction ID ' + e.transactionId
         }),
-        a('ja73ebac', 'Revenue'),
-        a('h16eeb42', 'Manage'),
         a('ed9404c8', 'New subscriptions'),
         a('d978f43e', 'New Subscriptions'),
         a('g0a17d4c', 'You have no new subscriptions at this time.'),
@@ -4518,8 +4533,6 @@
         ),
         a('b28a1b48', 'Get content tips and ideas'),
         a('f2df375c', 'Check out our creator guide for tips, content ideas, and more.'),
-        a('f3ce76c0', 'Need more help?'),
-        a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
         a('dba12b52', 'Deactivate Super Follows'),
         a('i3a90dee', 'Deactivate Subscriptions'),
         a(
@@ -4532,7 +4545,6 @@
         ),
         a('ca5ca5ee', 'See preview'),
         a('g867481e', 'View creator guide'),
-        a('e58e85d2', 'Continue to deactivation'),
         a('a329ce88', 'Add a description...'),
         a('f0c99eff', function (e) {
           return '- @' + e.screenName
@@ -4547,7 +4559,6 @@
           'c6c27fc8',
           'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
         ),
-        a('bee26fa8', 'Yes, deactivate'),
         a('cd659e6e', 'Super Follows is now deactivated'),
         a('f82a23ec', 'Subscriptions is now deactivated'),
         a('c701e5cc', 'Any changes you made won’t be saved.'),
@@ -4840,14 +4851,14 @@
           return e.price + ' per month'
         }),
         a('f025ab3a', 'Build a bigger, broader base'),
-        a('c962df0e', 'Infrequent posting and interacting with Subscribers'),
-        a('ib075804', 'Expand your base and maximize revenue'),
+        a('c962df0e', 'Infrequent posting and interacting with Subscribers')
+      a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
         a('h0c5405c', 'Regular posting and interacting with Subscribers'),
         a('e1453e45', 'Learn more'),
-        a('f1cb36b8', 'Payout setup')
-      a('e20f6662', 'You’re all set!'),
+        a('f1cb36b8', 'Payout setup'),
+        a('e20f6662', 'You’re all set!'),
         a('i9b8ec68', '1–3 weeks'),
         a('d7d4da8a', '1–3 weeks'),
         a('g88e146c', 'Your account is pending'),
@@ -4907,6 +4918,9 @@
           'j6cab6ec',
           'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
         ),
+        a('h3eba2fe', 'You have been successfully enrolled into the Awards program.'),
+        a('db3f0bbe', 'Helping creators earn money from their content.'),
+        a('g18de606', 'Enable Awards'),
         a(
           'db8346ee',
           'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
@@ -6063,8 +6077,27 @@
         }),
         a('b32334a0', 'Accounts Reached'),
         a('cef4880c', 'Number of unique views for this Tweet'),
-        a('de4def4e', '% from all promotions to date'),
-        a('e3390c1e', 'First 48 hours'),
+        a('de4def4e', '% from all promotions to date')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function s(e, t) {
+        return (
+          (s = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          s(e, t)
+        )
+      }
+      a('e3390c1e', 'First 48 hours'),
         a('ec90c77d', function (e) {
           return (
             'This tracks the number of times this Tweet has been read over the first 48 hours since it was posted. Maximum value is ' +
@@ -6088,27 +6121,8 @@
         }),
         a('f42a198d', function (e) {
           return e.spentBudget + ' of ' + e.totalBudget + ' spent'
-        })
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function s(e, t) {
-        return (
-          (s = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          s(e, t)
-        )
-      }
-      a('a63a89fe', 'Your promotion is complete'),
+        }),
+        a('a63a89fe', 'Your promotion is complete'),
         a('b6da2126', 'Your boosted Tweet package has ended.'),
         a('j401e4bd', function (e) {
           return (
@@ -6378,6 +6392,9 @@
           'dda7478c',
           'Coins allow you to support creators who Tweet great content. Unused coins are kept in your balance.',
         ),
+        a('fe7af53a', 'bonus'),
+        a('f89dfa74', 'Best Value'),
+        a('e2beba5e', 'Most Popular'),
         a('e5461d10', 'Buy coins'),
         a('e5fc32fa', 'Learn more.'),
         a('bc42db1c', 'Cancel anytime. Auto-renews monthly.'),
@@ -6909,6 +6926,8 @@
         }),
         a('d178d7f0', 'Error!'),
         a('g5c2f132', 'There were errors with the following accounts. Please check they are accurate and try again:'),
+        a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
+        a('f23a997e', 'twitter.com'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7487,8 +7506,8 @@
         a(
           'aaac4f56',
           'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
-        ),
-        a('f305840e', 'Pending'),
+        )
+      a('f305840e', 'Pending'),
         a('fe04d89a', 'Discard'),
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
@@ -7503,8 +7522,8 @@
         a('ecda5f9e', 'Misleading'),
         a('a423473c', 'Legally Required Notice'),
         a('d85bc1b8', 'Zoom in or out on your image.'),
-        a('f596ace8', 'Aspect ratio: original')
-      a('df031fca', 'Aspect ratio: wide'),
+        a('f596ace8', 'Aspect ratio: original'),
+        a('df031fca', 'Aspect ratio: wide'),
         a('b40332c6', 'Aspect ratio: square'),
         a('e547b368', 'Original'),
         a('f7571204', 'Wide'),
@@ -10310,6 +10329,12 @@
               key: 'fbe06ae1',
               get: function get() {
                 return ['', ' by ']
+              },
+            },
+            {
+              key: 'c84e286d',
+              get: function get() {
+                return ['To change your username or password, go to account settings at ', '.']
               },
             },
             {
