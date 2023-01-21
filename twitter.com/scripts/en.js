@@ -297,7 +297,6 @@
         a('f66d24be', 'Help Center'),
         a('aeede01a', 'Imprint'),
         a('h54e6138', 'Keyboard shortcuts'),
-        a('hc899e1a', 'Timelines'),
         a('ae1bbb26', 'Log out'),
         a('a58e0e51', function (e) {
           return 'Log out @' + e.screenName
@@ -1165,11 +1164,11 @@
         a('e1c8af7c', 'See the latest Tweet'),
         a('a8569d48', 'Opens the new version of this Tweet'),
         a('a407814e', 'Last edited'),
-        a('d91a6826', 'This is the latest version of this Tweet.')
-      a('ffe16626', 'Reply filter is on.'),
-        a('f396c105', function (e) {
-          return '' + e.displayCount
-        }),
+        a('d91a6826', 'This is the latest version of this Tweet.'),
+        a('ffe16626', 'Reply filter is on.')
+      a('f396c105', function (e) {
+        return '' + e.displayCount
+      }),
         a('aa037e65', function (e) {
           return 'View' + n(e.count, '', 's')
         }),
@@ -1564,7 +1563,9 @@
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
         }),
-        a('h958a940', 'The first 280 characters will be visible by default'),
+        a('hb36f723', function (e) {
+          return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
+        }),
         a('c20aaf3e', 'Error'),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
@@ -2358,12 +2359,12 @@
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
         a('g1888dc2', 'Never'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.')
-      a('fa54a75e', 'Your notification settings have been saved.'),
-        a(
-          'd4945e44',
-          'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-        ),
+        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
+        a('fa54a75e', 'Your notification settings have been saved.')
+      a(
+        'd4945e44',
+        'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+      ),
         a('jdb52860', 'Contributors write and rate notes'),
         a(
           'b468ea24',
@@ -2907,6 +2908,7 @@
         }),
         a('cfe877ca', 'Choose who to follow'),
         a('j231d352', 'Follow all'),
+        a('hc899e1a', 'Timelines'),
         a('a1b7d300', 'user'),
         a('dbc85148', 'Select a message'),
         a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
@@ -4921,6 +4923,14 @@
         a('h3eba2fe', 'You have been successfully enrolled into the Awards program.'),
         a('db3f0bbe', 'Helping creators earn money from their content.'),
         a('g18de606', 'Enable Awards'),
+        a('eb96776d', 'Awards Terms'),
+        a('ad2c51a4', 'Receive Awards'),
+        a('a77b884c', 'Creators can receive and showcase awards on their Tweets.'),
+        a('g313e6e6', 'Make money from Tweets'),
+        a(
+          'ea93e870',
+          'Creators can earn money for awards they receive, and cash out earnings after hitting their monthly threshold.',
+        ),
         a(
           'db8346ee',
           'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
@@ -6068,16 +6078,7 @@
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
-        a('ee547382', 'Times people viewed the details about this Tweet'),
-        a('g33fd6b1', function (e) {
-          return e.percentage + ' from promotion'
-        }),
-        a('b71059c3', function (e) {
-          return e.percentage + ' from non followers'
-        }),
-        a('b32334a0', 'Accounts Reached'),
-        a('cef4880c', 'Number of unique views for this Tweet'),
-        a('de4def4e', '% from all promotions to date')
+        a('ee547382', 'Times people viewed the details about this Tweet')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6097,7 +6098,16 @@
           s(e, t)
         )
       }
-      a('e3390c1e', 'First 48 hours'),
+      a('g33fd6b1', function (e) {
+        return e.percentage + ' from promotion'
+      }),
+        a('b71059c3', function (e) {
+          return e.percentage + ' from non followers'
+        }),
+        a('b32334a0', 'Accounts Reached'),
+        a('cef4880c', 'Number of unique views for this Tweet'),
+        a('de4def4e', '% from all promotions to date'),
+        a('e3390c1e', 'First 48 hours'),
         a('ec90c77d', function (e) {
           return (
             'This tracks the number of times this Tweet has been read over the first 48 hours since it was posted. Maximum value is ' +
@@ -6928,6 +6938,13 @@
         a('g5c2f132', 'There were errors with the following accounts. Please check they are accurate and try again:'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
+        a('e49b97e2', 'Search accounts'),
+        a('f002f1d6', 'Send Invite'),
+        a('g7452534', 'Add Twitter accounts'),
+        a(
+          'eed17f3e',
+          'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
+        ),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7422,12 +7439,12 @@
         a('i6c1e4b2', 'December'),
         a('de540c32', 'Reveal password'),
         a('b4abfdb4', 'Hide password'),
-        a('f35e2d5f', function (e) {
+        a('b919a9ff', function (e) {
           return (
             e.standardTweetCount +
             ' character' +
             n(e.standardTweetCount, '', 's') +
-            ' remaining for a standard tweet, ' +
+            ' remaining for a standard Tweet, ' +
             e.totalCount +
             ' character' +
             n(e.totalCount, '', 's') +
@@ -7476,10 +7493,10 @@
         }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
-        }),
-        a('a8d77a25', function (e) {
-          return 'Click to leave ' + e.screenName
-        }),
+        })
+      a('a8d77a25', function (e) {
+        return 'Click to leave ' + e.screenName
+      }),
         a('d0f4f3d9', function (e) {
           return e.followType + ' ' + e.screenName
         }),
@@ -7506,8 +7523,8 @@
         a(
           'aaac4f56',
           'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
-        )
-      a('f305840e', 'Pending'),
+        ),
+        a('f305840e', 'Pending'),
         a('fe04d89a', 'Discard'),
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
@@ -9792,6 +9809,12 @@
                   'We’ve confirmed your Stripe account. It can take ',
                   ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
                 ]
+              },
+            },
+            {
+              key: 'a304da8f',
+              get: function get() {
+                return ['By enabling, you agree to be bound by the ', '.']
               },
             },
             {
