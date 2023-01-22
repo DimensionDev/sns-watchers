@@ -6930,9 +6930,8 @@
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
         a('d1a35ec6', 'Add accounts'),
-        a('g7f85e24', 'Bulk import'),
-        a('a3463ed3', function (e) {
-          return 'Employees (' + e.number + ')'
+        a('df9b374f', function (e) {
+          return 'Accounts (' + e.number + ')'
         }),
         a('d178d7f0', 'Error!'),
         a('g5c2f132', 'There were errors with the following accounts. Please check they are accurate and try again:'),
@@ -7493,13 +7492,13 @@
         }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
-        })
-      a('a8d77a25', function (e) {
-        return 'Click to leave ' + e.screenName
-      }),
-        a('d0f4f3d9', function (e) {
-          return e.followType + ' ' + e.screenName
         }),
+        a('a8d77a25', function (e) {
+          return 'Click to leave ' + e.screenName
+        })
+      a('d0f4f3d9', function (e) {
+        return e.followType + ' ' + e.screenName
+      }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
