@@ -4397,6 +4397,11 @@
         a('j3404888', 'We are reviewing your account.'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
+        a('fecbf034', 'Blue for Business Subscriber'),
+        a(
+          'gd910038',
+          'You are receiving Twitter Blue because your company is a participant in Blue for Business. Contact your company for more details.',
+        ),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
@@ -4851,10 +4856,10 @@
         a('df057690', 'Choose what your Subscribers pay'),
         a('g5923869', function (e) {
           return e.price + ' per month'
-        }),
-        a('f025ab3a', 'Build a bigger, broader base'),
-        a('c962df0e', 'Infrequent posting and interacting with Subscribers')
-      a('ib075804', 'Expand your base and maximize revenue'),
+        })
+      a('f025ab3a', 'Build a bigger, broader base'),
+        a('c962df0e', 'Infrequent posting and interacting with Subscribers'),
+        a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
         a('h0c5405c', 'Regular posting and interacting with Subscribers'),
@@ -4940,6 +4945,7 @@
         a('cac1046e', '1080p video uploads'),
         a('a21b8ad2', 'Ad-free Sites'),
         a('ad45e9b2', 'View your subscription details or cancel.'),
+        a('bdd3e652', 'View your subscription details.'),
         a('db529452', 'Subscription'),
         a('d248d75e', 'Get Support'),
         a(
@@ -6075,10 +6081,7 @@
         ),
         a('d8abdaa4', 'New followers'),
         a('de0de3a8', 'Follows gained directly from this Tweet'),
-        a('ccab7c76', 'Number of profile views from this Tweet'),
-        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
-        a('b40d33e4', 'Detail expands'),
-        a('ee547382', 'Times people viewed the details about this Tweet')
+        a('ccab7c76', 'Number of profile views from this Tweet')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6098,9 +6101,12 @@
           s(e, t)
         )
       }
-      a('g33fd6b1', function (e) {
-        return e.percentage + ' from promotion'
-      }),
+      a('d24b7812', 'Number of clicks on any URL in this Tweet'),
+        a('b40d33e4', 'Detail expands'),
+        a('ee547382', 'Times people viewed the details about this Tweet'),
+        a('g33fd6b1', function (e) {
+          return e.percentage + ' from promotion'
+        }),
         a('b71059c3', function (e) {
           return e.percentage + ' from non followers'
         }),
@@ -6933,8 +6939,6 @@
         a('df9b374f', function (e) {
           return 'Accounts (' + e.number + ')'
         }),
-        a('d178d7f0', 'Error!'),
-        a('g5c2f132', 'There were errors with the following accounts. Please check they are accurate and try again:'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
         a('e49b97e2', 'Search accounts'),
@@ -7492,13 +7496,13 @@
         }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
-        }),
-        a('a8d77a25', function (e) {
-          return 'Click to leave ' + e.screenName
         })
-      a('d0f4f3d9', function (e) {
-        return e.followType + ' ' + e.screenName
+      a('a8d77a25', function (e) {
+        return 'Click to leave ' + e.screenName
       }),
+        a('d0f4f3d9', function (e) {
+          return e.followType + ' ' + e.screenName
+        }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
