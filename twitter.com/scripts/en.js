@@ -5180,13 +5180,13 @@
         a('i3f7ff00', 'Media thumbnail'),
         a('h400d7c2', 'JOIN SPACE'),
         a('be6ef5b4', 'COMING UP'),
+        a('d1e0a75f', function (e) {
+          return 'For you' + e.noun
+        }),
         a('dafd69e9', function (e) {
           return 'Following' + e.noun
         }),
         a('f089620c', 'Your Home Timeline'),
-        a('d1e0a75f', function (e) {
-          return 'For you' + e.noun
-        }),
         a('d2c66f10', 'Welcome to Twitter!'),
         a(
           'c3fbf1da',
@@ -6949,12 +6949,9 @@
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
         a('c18444ea', 'Verification for Organizations'),
         a('c0d13570', 'Affiliates'),
+        a('d1a35ec6', 'Add accounts'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
-        a('d1a35ec6', 'Add accounts'),
-        a('df9b374f', function (e) {
-          return 'Accounts (' + e.number + ')'
-        }),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
         a('e49b97e2', 'Search accounts'),
@@ -7478,9 +7475,9 @@
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
-        a('a77a27c0', 'Subscribed')
-      a('i00ab5ba', 'Manage Subscription'),
-        a('jd505700', 'Autoblocked'),
+        a('a77a27c0', 'Subscribed'),
+        a('i00ab5ba', 'Manage Subscription')
+      a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
