@@ -371,6 +371,21 @@
         a('a8a8d769', 'Cookies Use'),
         a('b47e760e', 'To view keyboard shortcuts, press question mark'),
         a('fd2c7b44', 'View keyboard shortcuts'),
+        a('g7e2adf2', 'Make a new deck'),
+        a('a6ba09e8', 'Duplicate column'),
+        a('f5c9ccca', 'Edit current Deck'),
+        a('bf42c578', 'Focus on reorder button'),
+        a('j6fa64a6', 'Go to final column'),
+        a('b5545202', 'Go to final pinned deck'),
+        a('e0497acc', 'Go to Manage All Decks'),
+        a('beef7b14', 'Go to next column'),
+        a('a5cb005e', 'Go to Nth column'),
+        a('f65391bc', 'Go to Nth pinned Deck'),
+        a('h0bfdd20', 'Add column'),
+        a('h770f6d4', 'Go to previous column'),
+        a('b8b2b70c', 'Delete column'),
+        a('a3e2df76', 'Undo delete column'),
+        a('g850aec4', 'Open / Close column settings'),
         a('d5696fcc', 'Shortcut help'),
         a('e722b9d0', 'Next Tweet'),
         a('a86b5194', 'Previous Tweet'),
@@ -1145,8 +1160,8 @@
         a('d228a9a0', 'Show more'),
         a('e4c6c30a', 'This Tweet is unavailable.'),
         a('da59404c', 'You’re currently viewing the latest version.'),
-        a('e267df68', 'Reply hidden'),
-        a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
+        a('e267df68', 'Reply hidden')
+      a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
         a('he50a6dc', 'Tweet feedback'),
         a('d43fbd36', 'Tweet hidden'),
         a('a6d4c768', 'You’ll see fewer Tweets like this. Any other feedback?'),
@@ -1165,10 +1180,10 @@
         a('a8569d48', 'Opens the new version of this Tweet'),
         a('a407814e', 'Last edited'),
         a('d91a6826', 'This is the latest version of this Tweet.'),
-        a('ffe16626', 'Reply filter is on.')
-      a('f396c105', function (e) {
-        return '' + e.displayCount
-      }),
+        a('ffe16626', 'Reply filter is on.'),
+        a('f396c105', function (e) {
+          return '' + e.displayCount
+        }),
         a('aa037e65', function (e) {
           return 'View' + n(e.count, '', 's')
         }),
@@ -2342,8 +2357,8 @@
           'b9fc9e2e',
           'To create a note, select the Community Notes icon in any Tweet’s menu. Notes you create will show up here.',
         ),
-        a('c87f3cf8', 'Note'),
-        a('a5b19492', 'This note does not exist'),
+        a('c87f3cf8', 'Note')
+      a('a5b19492', 'This note does not exist'),
         a(
           'c21d1b2a',
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
@@ -2360,11 +2375,11 @@
         a('if2e01ee', 'A few alerts per month'),
         a('g1888dc2', 'Never'),
         a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
-        a('fa54a75e', 'Your notification settings have been saved.')
-      a(
-        'd4945e44',
-        'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
-      ),
+        a('fa54a75e', 'Your notification settings have been saved.'),
+        a(
+          'd4945e44',
+          'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
+        ),
         a('jdb52860', 'Contributors write and rate notes'),
         a(
           'b468ea24',
@@ -3601,11 +3616,11 @@
         a(
           'c4ca418c',
           'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-        ),
-        a(
-          'b0b3ed8e',
-          'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
-        ),
+        )
+      a(
+        'b0b3ed8e',
+        'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
+      ),
         a('da202f9a', 'Your advertiser list'),
         a('f80a33a0', 'Allow use of where you see Twitter content across the Web'),
         a(
@@ -3631,8 +3646,8 @@
           'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
         ),
         a('d9138166', 'See places you’ve been'),
-        a('f2b23062', 'Accessibility, display and languages')
-      a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
+        a('f2b23062', 'Accessibility, display and languages'),
+        a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
         a(
           'a5ce82a4',
@@ -4825,8 +4840,8 @@
         a('c7289544', 'Set a Subscription price'),
         a('aaf68c58', 'Confirm your payout details'),
         a('b8a69fa0', 'Subscriptions Terms'),
-        a('c663b33d', 'Super Follows Terms'),
-        a('ad4a92a2', 'Badge'),
+        a('c663b33d', 'Super Follows Terms')
+      a('ad4a92a2', 'Badge'),
         a('cda6bb6e', 'Give your Super Followers badges'),
         a(
           'a15b98ec',
@@ -4856,8 +4871,8 @@
         a('df057690', 'Choose what your Subscribers pay'),
         a('g5923869', function (e) {
           return e.price + ' per month'
-        })
-      a('f025ab3a', 'Build a bigger, broader base'),
+        }),
+        a('f025ab3a', 'Build a bigger, broader base'),
         a('c962df0e', 'Infrequent posting and interacting with Subscribers'),
         a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
@@ -5098,6 +5113,7 @@
         a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
+        a('dda42cf2', 'Columns & Decks'),
         a('e95b9448', 'General'),
         a('e814ed10', 'Next Tweet in editing pane'),
         a('c1250b42', 'Previous Tweet in editing pane'),
@@ -6062,26 +6078,7 @@
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
         a('f173716e', '30-39'),
-        a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54'),
-        a('ja78da94', '55-64'),
-        a('bcd9cf68', 'Above 65'),
-        a('a3c544e8', 'Top countries'),
-        a('f05f1838', 'Other / Not specified'),
-        a('fa5be588', 'Organic'),
-        a('f6162a32', 'Times this Tweet was seen on Twitter'),
-        a('dbe9353e', 'Engagements'),
-        a(
-          'e044b630',
-          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        ),
-        a('d8abdaa4', 'New followers'),
-        a('de0de3a8', 'Follows gained directly from this Tweet'),
-        a('ccab7c76', 'Number of profile views from this Tweet')
+        a('ada329e6', '40-49')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6101,7 +6098,26 @@
           s(e, t)
         )
       }
-      a('d24b7812', 'Number of clicks on any URL in this Tweet'),
+      a('j2950694', 'Above 50'),
+        a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44'),
+        a('jf28b41c', '45-54'),
+        a('ja78da94', '55-64'),
+        a('bcd9cf68', 'Above 65'),
+        a('a3c544e8', 'Top countries'),
+        a('f05f1838', 'Other / Not specified'),
+        a('fa5be588', 'Organic'),
+        a('f6162a32', 'Times this Tweet was seen on Twitter'),
+        a('dbe9353e', 'Engagements'),
+        a(
+          'e044b630',
+          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
+        ),
+        a('d8abdaa4', 'New followers'),
+        a('de0de3a8', 'Follows gained directly from this Tweet'),
+        a('ccab7c76', 'Number of profile views from this Tweet'),
+        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
         a('ee547382', 'Times people viewed the details about this Tweet'),
         a('g33fd6b1', function (e) {
@@ -7462,8 +7478,8 @@
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
-        a('a77a27c0', 'Subscribed'),
-        a('i00ab5ba', 'Manage Subscription'),
+        a('a77a27c0', 'Subscribed')
+      a('i00ab5ba', 'Manage Subscription'),
         a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
@@ -7496,10 +7512,10 @@
         }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
-        })
-      a('a8d77a25', function (e) {
-        return 'Click to leave ' + e.screenName
-      }),
+        }),
+        a('a8d77a25', function (e) {
+          return 'Click to leave ' + e.screenName
+        }),
         a('d0f4f3d9', function (e) {
           return e.followType + ' ' + e.screenName
         }),
