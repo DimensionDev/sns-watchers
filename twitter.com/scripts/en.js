@@ -2,10 +2,10 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   ['i18n/en'],
   {
-    17346: function _(e, t, o) {
-      var a = o(79404)._register('en', {
+    417346: function _(e, t, o) {
+      var a = o(379404)._register('en', {
         get emoji() {
-          return o.e('i18n/emoji-en').then(o.t.bind(o, 20747, 23))
+          return o.e('i18n/emoji-en').then(o.t.bind(o, 920747, 23))
         },
       })
       function n(e, t, o) {
@@ -6088,14 +6088,14 @@
             Object.defineProperty(e, a.key, a)
         }
       }
-      function s(e, t) {
+      function c(e, t) {
         return (
-          (s = Object.setPrototypeOf
+          (c = Object.setPrototypeOf
             ? Object.setPrototypeOf.bind()
             : function (e, t) {
                 return (e.__proto__ = t), e
               }),
-          s(e, t)
+          c(e, t)
         )
       }
       a('j2950694', 'Above 50'),
@@ -6372,7 +6372,6 @@
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Twitter Blue subscription.',
         ),
         a('dad69faa', 'Update your payment method'),
-        a('a7fedd06', 'Get more out of Twitter. Access exclusive features when you subscribe to Twitter Blue today.'),
         a('ab0decc0', 'Subscribe'),
         a('aa0d60aa', 'month'),
         a('i8386756', 'Monthly Plan'),
@@ -6390,29 +6389,6 @@
           return e.price + ' per year billed monthly'
         }),
         a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
-        a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
-        a('h73af450', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
-        a('c4debbd0', 'Upgrade your content'),
-        a(
-          'g52ab674',
-          'Typo? Forgot to tag someone? Give yourself time to preview and make changes to your Tweet before it goes live.',
-        ),
-        a('j9b7ae04', 'Read without the noise'),
-        a(
-          'c4c93b9e',
-          'Read ad-free on popular US-based publisher sites. Availability varies based on location. No paywall access.',
-        ),
-        a('a29aa266', 'A shortcut to the most-shared articles by people you follow'),
-        a('e48717d8', 'Read long threads minus the distractions.'),
-        a('cd2b9648', 'Customize your Twitter experience'),
-        a('hdc87500', 'Bookmark Folders'),
-        a('i9223e60', 'Custom navigation'),
-        a('c1935a34', 'Set your most used pages right on your tab bar.'),
-        a('gc8d916e', 'App icons'),
-        a('a353aeee', 'Get access to exclusive app icons for your device.'),
-        a('f39aef7c', 'App Theme'),
-        a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
-        a('h52ee956', 'Get early access'),
         a('fce91ab4', 'Hmmm - that didn’t work.'),
         a(
           'gc7637d4',
@@ -6557,6 +6533,7 @@
         a('b3221ef5', function (e) {
           return 'Notes' + e.longform_notes
         }),
+        a('c0d13570', 'Affiliates'),
         a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
         a('ieef7656', 'Take a look'),
         a('abb13fc9', function (e) {
@@ -6715,6 +6692,12 @@
         a('a1fbf7ac', 'When you send Tweets with photos or videos in them, they will show up here.'),
         a('d55be465', function (e) {
           return e.fullName + '’s Photos'
+        }),
+        a('je5311d3', function (e) {
+          return 'Affiliates of ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('fd0772eb', function (e) {
+          return 'Loading Affiliates of @' + e.screenName
         }),
         a('f30795d0', 'Opens profile photo'),
         a('a270100c', 'Opens NFT details'),
@@ -6947,8 +6930,7 @@
         a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
-        a('c18444ea', 'Verification for Organizations'),
-        a('c0d13570', 'Affiliates'),
+        a('g2c0144a', 'Verified Organizations'),
         a('d1a35ec6', 'Add accounts'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
@@ -7476,8 +7458,8 @@
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('a77a27c0', 'Subscribed'),
-        a('i00ab5ba', 'Manage Subscription')
-      a('jd505700', 'Autoblocked'),
+        a('i00ab5ba', 'Manage Subscription'),
+        a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
@@ -7512,10 +7494,10 @@
         }),
         a('a8d77a25', function (e) {
           return 'Click to leave ' + e.screenName
-        }),
-        a('d0f4f3d9', function (e) {
-          return e.followType + ' ' + e.screenName
-        }),
+        })
+      a('d0f4f3d9', function (e) {
+        return e.followType + ' ' + e.screenName
+      }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
@@ -7670,14 +7652,14 @@
         a('c20f7e9f', function (e) {
           return n(
             e.otherUsersCount,
-            c.createElement(c.Fragment, null, '', e.secondName),
+            s.createElement(s.Fragment, null, '', e.secondName),
             e.otherUsersCount + ' others',
           )
         }),
         a('he26f627', function (e) {
           return n(
             e.otherUsersCount,
-            c.createElement(c.Fragment, null, '', e.secondName),
+            s.createElement(s.Fragment, null, '', e.secondName),
             e.otherUsersCount + ' others',
           )
         }),
@@ -7784,7 +7766,7 @@
         a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
         a('gfaaead8', 'Untitled'),
         a('cfd13f46', 'Voice Dock')
-      var c = o(2784),
+      var s = o(202784),
         u = [],
         d = {}
       function l(e) {
@@ -7799,9 +7781,9 @@
           (o = e),
           ((t = b).prototype = Object.create(o.prototype)),
           (t.prototype.constructor = t),
-          s(t, o),
+          c(t, o),
           (b.prototype.render = function () {
-            return c.createElement.apply(c, this[this.props.$i18n].reduce(this.templateReducer, [c.Fragment, null]))
+            return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
           }),
           (a = b),
           (r = [
@@ -10585,7 +10567,7 @@
               key: 'templateReducer',
               get: function get() {
                 var e,
-                  t = c.Children.toArray(this.props.children),
+                  t = s.Children.toArray(this.props.children),
                   o = ((e = this.props.$i18n), u[d[e]] || l)
                 return function (e, a, n) {
                   return e.concat(a, t[o(n)])
@@ -10597,13 +10579,13 @@
           Object.defineProperty(a, 'prototype', { writable: !1 }),
           b
         )
-      })(o(73228)._ActualI18NFormatMessage || c.Component)
+      })(o(473228)._ActualI18NFormatMessage || s.Component)
       a('_ActualI18NFormatMessage', f),
         a('I18NFormatMessage', function (e) {
-          return c.createElement(f, e)
+          return s.createElement(f, e)
         })
-      var b = o(95075)
-      o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
+      var b = o(495075)
+      o(800694), o(556829), o(530152), o(658610), o(492344), o(663823)
       b._validateParameterTypeNumber, b._validateParameterPresence
       var h = b._numberRound,
         m = (b._numberFormat, b._numberFormatterFn),
