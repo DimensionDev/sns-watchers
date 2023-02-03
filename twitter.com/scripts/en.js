@@ -7578,6 +7578,7 @@
         a('fbaa28e0', 'Reacted'),
         a('f9be84f0', 'Downvoted'),
         a('g23ce6f0', 'Retweeted'),
+        a('c7a989ce', 'Bookmarked'),
         a('b75196a4', 'Slide finger to pick a reaction'),
         a('b03835c7', function (e) {
           return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
@@ -7596,6 +7597,7 @@
         a('a385da25', function (e) {
           return e.count + ' View' + n(e.count, '', 's') + '. View Tweet analytics'
         }),
+        a('j377cdca', 'Remove Tweet from Bookmarks'),
         a('d2b2b8e6', 'Downvote'),
         a('hcb32860', 'Undo downvote'),
         a('cb5dafd4', 'Downvote, selected'),

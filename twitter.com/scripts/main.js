@@ -2770,8 +2770,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                   I = e.community_relationship,
                   B = e.community_results,
                   x = e.core,
-                  L = e.downvotePerspective,
-                  N = e.edit_control,
+                  N = e.downvotePerspective,
+                  L = e.edit_control,
                   O = e.edit_perspective,
                   F = e.enrichments,
                   U = e.exclusivityInfo,
@@ -2808,7 +2808,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     (0, r.Z)({}, he),
                     {},
                     {
-                      edit_control: N,
+                      edit_control: L,
                       edit_perspective: O,
                       is_translatable: j,
                       has_birdwatch_notes: H,
@@ -2843,9 +2843,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   var we = ge.tweet
                   Ae.retweeted_status = we
                 } else Ae.retweeted_status = void 0
-                if (N) {
-                  var Me = N.edit_control_initial,
-                    ye = (0, o.Z)(N, S)
+                if (L) {
+                  var Me = L.edit_control_initial,
+                    ye = (0, o.Z)(L, S)
                   Ae.edit_control = (0, r.Z)((0, r.Z)({}, ye), Me)
                   var Ce = Ae.edit_control.edit_tweet_ids
                   Ce && (Ce.length > 1 || !Ce.includes(X)) && (Ae.isEdited = !0),
@@ -2941,7 +2941,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     'non_compliant' !== Ae.limited_actions &&
                     (Ae.reaction_count = K.reactionTypeMap),
                   null != Y && Y.reactionType && (Ae.reacted = Y.reactionType),
-                  (Ae.isDownvoted = null == L ? void 0 : L.isDownvoted),
+                  (Ae.isDownvoted = null == N ? void 0 : N.isDownvoted),
                   Ae.in_reply_to_screen_name &&
                     Ae.in_reply_to_user_id_str &&
                     !Ae.in_reply_to_user &&
@@ -2978,10 +2978,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                   void 0 !== P &&
                   P.length
                 ) {
-                  var Le = re.hydrate.unmentioned_users_results.map(function (e) {
+                  var Ne = re.hydrate.unmentioned_users_results.map(function (e) {
                     return e.rest_id
                   })
-                  null != Le && Le.length && (Ae.unmentioned_user_ids = Le)
+                  null != Ne && Ne.length && (Ae.unmentioned_user_ids = Ne)
                 }
                 if (
                   ('Community' === (null == B || null === (E = B.result) || void 0 === E ? void 0 : E.__typename) &&
@@ -2989,10 +2989,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                   I && (Ae.community_relationship = I),
                   R)
                 ) {
-                  var Ne = (0, c.$)(),
+                  var Le = (0, c.$)(),
                     Oe = (0, r.Z)({}, R)
-                  R.footer && (Oe.footer = (0, u.Z)(Ne, R.footer)),
-                    R.subtitle && (Oe.subtitle = (0, u.Z)(Ne, R.subtitle)),
+                  R.footer && (Oe.footer = (0, u.Z)(Le, R.footer)),
+                    R.subtitle && (Oe.subtitle = (0, u.Z)(Le, R.subtitle)),
                     (Ae.birdwatch_pivot = Oe)
                 }
                 if (F) {
@@ -4025,19 +4025,19 @@ window.__SCRIPTS_LOADED__.vendor &&
                 R.__typename
                 var B,
                   x,
-                  L,
-                  N = R.tweet,
+                  N,
+                  L = R.tweet,
                   O = (0, t.Z)(R, w)
-                ;(s = (0, v.Z)(O, N, e)),
+                ;(s = (0, v.Z)(O, L, e)),
                   (u = (0, l.y9)(
-                    N,
+                    L,
                     'NonCompliant' ===
                       (null === (B = s) || void 0 === B || null === (x = B.tombstoneInfo) || void 0 === x
                         ? void 0
                         : x.displayType)
                       ? s.tombstoneInfo
                       : void 0,
-                    null === (L = s) || void 0 === L ? void 0 : L.limitedActionResults,
+                    null === (N = s) || void 0 === N ? void 0 : N.limitedActionResults,
                   ))
                 break
               default:
@@ -4462,15 +4462,15 @@ window.__SCRIPTS_LOADED__.vendor &&
           }
         }
         var x = d(603174),
-          L = (d(743108), d(334769), d(943026)),
-          N = ['type']
+          N = (d(743108), d(334769), d(943026)),
+          L = ['type']
         var O = function O(e) {
           if (e)
             return Object.keys(e).reduce(function (n, d) {
               var t = e[d],
                 r = t.execution,
                 o = r.type,
-                i = (0, a.Z)(r, N),
+                i = (0, a.Z)(r, L),
                 l = t.maxExecutionCount
               return (
                 'TimelineImmediateTimelineReaction' === o && i.key
@@ -4479,7 +4479,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i.requestParams &&
                     (n[d] = {
                       execution: {
-                        remote: { requestParams: (0, L.Z)(i.requestParams), timeoutInSeconds: i.timeoutInSeconds },
+                        remote: { requestParams: (0, N.Z)(i.requestParams), timeoutInSeconds: i.timeoutInSeconds },
                       },
                       maxExecutionCount: l,
                     }),
@@ -4638,11 +4638,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                   return I && (0, t.Z)((0, t.Z)({ type: 'tombstone' }, d), {}, { content: I })
                 }
-                var L = (0, o.oS)(C, d.entryId),
-                  N = d.itemMetadata.feedbackInfo,
-                  O = N
+                var N = (0, o.oS)(C, d.entryId),
+                  L = d.itemMetadata.feedbackInfo,
+                  O = L
                 return (
-                  L && ((0, i.as)(L, n), (O = (0, i.u0)(L, N))),
+                  N && ((0, i.as)(N, n), (O = (0, i.u0)(N, L))),
                   (0, t.Z)(
                     (0, t.Z)({ type: 'tweet' }, d),
                     {},
@@ -5296,8 +5296,8 @@ window.__SCRIPTS_LOADED__.vendor &&
         }
         d(743108)
         var x = d(649461),
-          L = d(943026),
-          N = d(111098),
+          N = d(943026),
+          L = d(111098),
           O = d(210406),
           F = ['icon', 'richBehavior'],
           U = ['__typename'],
@@ -5307,7 +5307,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             if ('TimelineRichFeedbackBehaviorReportList' === n.type) {
               var d,
                 t,
-                a = (0, N.H)(e, n.list)
+                a = (0, L.H)(e, n.list)
               if ('User' === (null === (d = n.user_results.result) || void 0 === d ? void 0 : d.__typename)) {
                 var o = n.user_results.result,
                   i = (o.__typename, (0, r.Z)(o, U))
@@ -5316,7 +5316,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return a && t ? { reportList: { listId: a, userId: t } } : void 0
             }
             if ('TimelineRichFeedbackBehaviorToggleMuteList' === n.type) {
-              var l = (0, N.H)(e, n.list)
+              var l = (0, L.H)(e, n.list)
               return l ? { toggleMuteList: { listId: l } } : void 0
             }
             if ('TimelineRichFeedbackBehaviorBlockUser' === n.type) {
@@ -5343,7 +5343,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               var d = A(),
                 o = A()
               if (n.feedbackActions) {
-                var i = (0, L.Z)(n.feedbackActions.filter(Boolean))
+                var i = (0, N.Z)(n.feedbackActions.filter(Boolean))
                 d = (0, x.Z)(i, function (n) {
                   var d = n.icon,
                     t = n.richBehavior,
@@ -5732,8 +5732,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             I,
             B,
             x = (0, u.Z)(e, n, d),
-            L = x.created_at,
-            N = x.ext_collab_control,
+            N = x.created_at,
+            L = x.ext_collab_control,
             O = x.ext_edit_control,
             F = x.ext_has_birdwatch_notes,
             U = x.ext_limited_action_results,
@@ -5808,7 +5808,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     }, [])),
                 },
               )),
-            L && (K.created_at = (0, s.Z)(L) || '')
+            N && (K.created_at = (0, s.Z)(N) || '')
           var re = String(K.source).match(/<a href="(.*?)" rel="nofollow">(.*?)<\/a>/)
           re && ((K.source_name = re[2]), (K.source_url = re[1])),
             G && !K.retweeted_status && (K.retweeted_status = G),
@@ -5977,8 +5977,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
             Te.length > 0 && (K.enrichments = { interactive_text_enrichment: { interactive_texts: Te } })
           }
-          ;((0, o.Z)(J) && delete K.ext, void 0 === K.tombstoneInfo && delete K.tombstoneInfo, N) &&
-            (K.collaborators = null === (we = N.collab_tweet) || void 0 === we ? void 0 : we.collaborator_users)
+          ;((0, o.Z)(J) && delete K.ext, void 0 === K.tombstoneInfo && delete K.tombstoneInfo, L) &&
+            (K.collaborators = null === (we = L.collab_tweet) || void 0 === we ? void 0 : we.collaborator_users)
           return K
         }
       },
@@ -6108,15 +6108,15 @@ window.__SCRIPTS_LOADED__.vendor &&
             x && (k.profile_image_extensions_media_color = x)
           }
           y && (k.birthdate = y.birthdate)
-          var L =
+          var N =
             null == v || null === (p = v.superFollowMetadata) || void 0 === p || null === (m = p.r) || void 0 === m
               ? void 0
               : m.ok
           return (
-            L &&
-              ((k.super_follow_eligible = !!L.superFollowEligible),
-              (k.super_followed_by = !!L.superFollowedBy),
-              (k.super_following = !!L.superFollowing)),
+            N &&
+              ((k.super_follow_eligible = !!N.superFollowEligible),
+              (k.super_followed_by = !!N.superFollowedBy),
+              (k.super_following = !!N.superFollowing)),
             k
           )
         }
@@ -6808,10 +6808,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             (null === (t = document.documentElement) || void 0 === t ? void 0 : t.getAttribute('lang')) || 'en',
           )
           .then(function () {
-            return Promise.resolve().then(d.bind(d, 978395))
+            return Promise.resolve().then(d.bind(d, 80949))
           })
       },
-      978395: function _(e, n, d) {
+      80949: function _(e, n, d) {
         'use strict'
         d.r(n)
         var t = d(86522)
@@ -7553,8 +7553,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             })())
         var B = I
         var x = d(196234),
-          L = (d(368995), 6e5)
-        function N(e) {
+          N = (d(368995), 6e5)
+        function L(e) {
           return !isNaN(e) && e >= 0
         }
         function O(e) {
@@ -7574,13 +7574,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                     u = parseInt(l, 10)
                   switch (i.toLowerCase()) {
                     case 'backoff':
-                      N(u) && (n = Math.min(u, 1e4))
+                      L(u) && (n = Math.min(u, 1e4))
                       break
                     case 'serial-duration':
-                      N(u) && (d = Math.min(u, L))
+                      L(u) && (d = Math.min(u, N))
                       break
                     case 'serial-delay':
-                      N(u) && (t = Math.min(u, 3e3))
+                      L(u) && (t = Math.min(u, 3e3))
                       break
                     case 'no-retry':
                       'true' === l && (a = !0)
@@ -8082,28 +8082,28 @@ window.__SCRIPTS_LOADED__.vendor &&
           callback: ye({ entryName: 'scripts-blocking', entryType: Be, spanName: 'scripts-blocking' }),
           type: Be,
         }
-        var Le = {
+        var Ne = {
           callback: ye({
             entryName: ''.concat(_e.T9, '-initial-request'),
             spanName: 'home-timeline-api-time-to-first-request',
           }),
           type: 'mark',
         }
-        var Ne = 'measure'
+        var Le = 'measure'
         var Oe = {
           callback: ye({
             entryName: {
               FAILED: ''.concat(_e.T9, '-initial-response-failed'),
               SUCCEEDED: ''.concat(_e.T9, '-initial-response-succeeded'),
             },
-            entryType: Ne,
+            entryType: Le,
             spanName: 'home-timeline-api-operation',
           }),
-          type: Ne,
+          type: Le,
         }
         var Fe = { callback: ye({ entryName: 'home-entries-rendered', spanName: 'home-timeline-ttft' }), type: 'mark' }
         var Ue = [xe],
-          He = [Te, Le, Oe, Ie, Pe, Re, Fe]
+          He = [Te, Ne, Oe, Ie, Pe, Re, Fe]
         function je(e) {
           var n = e.callback,
             d = e.entryTypes,
@@ -8428,7 +8428,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           Bn = (d(334115), d(200634), d(33988)),
           xn = d(936325)
         d(332501), d(335883)
-        var Ln = function Ln(e) {
+        var Nn = function Nn(e) {
           return {
             url: e.url,
             urlType: e.urlType,
@@ -8449,7 +8449,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               : void 0,
           }
         }
-        var Nn = ['ref'],
+        var Ln = ['ref'],
           On = ['ref'],
           Fn = function Fn(e, n) {
             if (e.cashtag) return { type: 'TimelineRichTextCashtag', text: e.cashtag.text }
@@ -8470,7 +8470,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return a ? { type: 'TimelineRichTextUser', user_results: Gn(a, n) } : void 0
             }
             return e.url
-              ? (0, f.Z)({ type: 'TimelineUrl' }, Ln(e.url))
+              ? (0, f.Z)({ type: 'TimelineUrl' }, Nn(e.url))
               : e.twitterList
               ? { type: 'TimelineRichTextList', id: e.twitterList.id, url: e.twitterList.url }
               : void 0
@@ -8515,7 +8515,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 : void 0
             }
             return e.url
-              ? (0, f.Z)({ type: 'TimelineUrl' }, Ln(e.url))
+              ? (0, f.Z)({ type: 'TimelineUrl' }, Nn(e.url))
               : e.twitterList
               ? { type: 'TimelineRichTextList', id: e.twitterList.id, url: e.twitterList.url }
               : void 0
@@ -8527,7 +8527,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             text: e.text,
             entities: e.entities.map(function (e) {
               var d = e.ref,
-                t = (0, un.Z)(e, Nn)
+                t = (0, un.Z)(e, Ln)
               return (0, f.Z)((0, f.Z)({}, t), {}, { ref: d ? Fn(d, n) : void 0 })
             }),
           }
@@ -8612,7 +8612,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     badge: e.badge,
                     description: e.description,
                     longDescription: e.longDescription ? Un(e.longDescription, n) : void 0,
-                    url: (0, En.Z)(e.url, Ln),
+                    url: (0, En.Z)(e.url, Nn),
                     userLabelType: e.userLabelType,
                   }
                 }),
@@ -8689,7 +8689,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               type: 'TimelineGeneralContext',
               contextType: e.generalContext.contextType,
               contextImageUrls: e.generalContext.contextImageUrls,
-              landingUrl: e.generalContext.landingUrl ? Ln(e.generalContext.landingUrl) : void 0,
+              landingUrl: e.generalContext.landingUrl ? Nn(e.generalContext.landingUrl) : void 0,
               text: e.generalContext.text,
               url: e.generalContext.url,
             }
@@ -8759,7 +8759,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               footer: e.content.footer
                 ? {
                     displayType: e.content.footer.displayType,
-                    landingUrl: e.content.footer.landingUrl ? Ln(e.content.footer.landingUrl) : void 0,
+                    landingUrl: e.content.footer.landingUrl ? Nn(e.content.footer.landingUrl) : void 0,
                     text: e.content.footer.text,
                     url: e.content.footer.url,
                   }
@@ -8796,7 +8796,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   text: e.content.text,
                   subtext: e.content.subtext,
                   disclosure_indicator: e.content.disclosureIndicator,
-                  url: e.content.url ? Ln(e.content.url) : void 0,
+                  url: e.content.url ? Nn(e.content.url) : void 0,
                   display_type: e.content.displayType,
                 }
               case 'message':
@@ -9184,13 +9184,13 @@ window.__SCRIPTS_LOADED__.vendor &&
         var Id = d(980319),
           Bd = d(924433)
         var xd = { featureSwitch: Id.ZP, session: P.ZP, settings: Bd.ZP }
-        var Ld = d(74958),
-          Nd = d(957604),
+        var Nd = d(74958),
+          Ld = d(957604),
           Od = 'partner_id_sync_pixel',
           Fd = 'rweb.dcm.local_id'
         function Ud(e, n, d, t) {
           return e.isTrue('responsive_web_dcm_2_enabled') &&
-            !(0, Nd.L)('responsive_web_3rd_party_category_double_click', e)
+            !(0, Ld.L)('responsive_web_3rd_party_category_double_click', e)
             ? n
                 .get(Fd)
                 .then(function (e) {
@@ -9516,14 +9516,14 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
           },
         })
-        var Lt = d(819313),
-          Nt = d(954793),
+        var Nt = d(819313),
+          Lt = d(954793),
           Ot = d(76687),
           Ft = d(392160)
         var Ut = (0, Ft.Z)().propsFromState(function () {
             return { loggedInUserId: P.o1 }
           }),
-          Ht = (0, Ot.ZP)(Ut(Nt.Z))
+          Ht = (0, Ot.ZP)(Ut(Lt.Z))
         var jt = d(158721),
           zt = d(185114),
           Vt = d(520593)
@@ -9871,7 +9871,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d
             )
           })(gt.PureComponent)
-        ;(0, Z.Z)($t, 'contextType', Lt.rC)
+        ;(0, Z.Z)($t, 'contextType', Nt.rC)
         var ea = Tt.Z.create(function (e) {
             return {
               root: { minHeight: '100%', width: '100%', zIndex: Qt.ZP.appRootZIndex },
@@ -9988,7 +9988,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d
             )
           })(gt.Component)
-        ;(0, Z.Z)(pa, 'contextType', Lt.rC)
+        ;(0, Z.Z)(pa, 'contextType', Nt.rC)
         var ma = ua(pa)
         var ha = (0, Ot.ZP)(function (e) {
           var n = e.children,
@@ -10112,7 +10112,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d
             )
           })(gt.PureComponent)
-        ;(0, Z.Z)(Da, 'contextType', Lt.rC),
+        ;(0, Z.Z)(Da, 'contextType', Nt.rC),
           (0, Z.Z)(Da, 'childContextTypes', {
             featureSwitches: wt.any,
             history: wt.any,
@@ -10211,7 +10211,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 898603))
             }),
           ),
-          La = (0, Ba.cI)(
+          Na = (0, Ba.cI)(
             (0, Ea.p)(function () {
               return Promise.all([
                 d.e(
@@ -10263,7 +10263,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 887589))
             }),
           ),
-          Na = (0, Ba.cI)(
+          La = (0, Ba.cI)(
             (0, Ea.p)(function () {
               return Promise.all([
                 d.e(
@@ -10507,7 +10507,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d
             )
           })(gt.Component)
-        ;(0, Z.Z)(Xa, 'contextType', Lt.rC)
+        ;(0, Z.Z)(Xa, 'contextType', Nt.rC)
         var Ja = function Ja(e) {
             return function (n) {
               return gt.createElement(Xa, (0, Pt.Z)({}, n, { component: e }))
@@ -12657,7 +12657,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               (0, Pt.Z)({}, e, { component: Br, featureSwitchName: 'branded_like_preview_enabled' }),
             )
           }
-        var Lr = (0, Ea.p)(function () {
+        var Nr = (0, Ea.p)(function () {
           return Promise.all([
             d.e(
               'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.DMDrawer~bundle.Account~bundle',
@@ -12757,12 +12757,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             d.e('bundle.LiveEvent'),
           ]).then(d.bind(d, 419064))
         })
-        var Nr = function Nr() {
+        var Lr = function Lr() {
             return gt.createElement(gt.Fragment, null, 'Root detail screen')
           },
           Or = (0, Ba.cI)(
             function () {
-              return gt.createElement(Nr, null)
+              return gt.createElement(Lr, null)
             },
             {
               getReplacePath: function getReplacePath() {
@@ -16072,10 +16072,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           xo = function xo(e) {
             return gt.createElement(Co, (0, Pt.Z)({}, e, { component: ao }))
           },
-          Lo = function Lo(e) {
+          No = function No(e) {
             return gt.createElement(Co, (0, Pt.Z)({}, e, { component: ro }))
           },
-          No = function No(e) {
+          Lo = function Lo(e) {
             return gt.createElement(Co, (0, Pt.Z)({}, e, { component: oo }))
           },
           Oo = function Oo(e) {
@@ -18128,7 +18128,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 529413))
             }),
           ),
-          Li = (0, Ba.cI)(
+          Ni = (0, Ba.cI)(
             (0, Ea.p)(function () {
               return Promise.all([
                 d.e(
@@ -18260,7 +18260,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 799089))
             }),
           ),
-          Ni = (0, Ba.cI)(
+          Li = (0, Ba.cI)(
             (0, Ea.p)(function () {
               return Promise.all([
                 d.e(
@@ -19736,10 +19736,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             return gt.createElement(Pi, { untrusted: 0 === e.location.pathname.indexOf('/messages/requests') })
           },
           Gi = function Gi(e) {
-            return gt.createElement(zo, (0, Pt.Z)({}, e, { desktopComponent: xi, mobileComponent: Ni }))
+            return gt.createElement(zo, (0, Pt.Z)({}, e, { desktopComponent: xi, mobileComponent: Li }))
           },
           qi = function qi(e) {
-            return gt.createElement(zo, (0, Pt.Z)({}, e, { desktopComponent: Li, mobileComponent: Oi }))
+            return gt.createElement(zo, (0, Pt.Z)({}, e, { desktopComponent: Ni, mobileComponent: Oi }))
           },
           Qi = function Qi(e) {
             return gt.createElement(
@@ -20251,7 +20251,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         )
         var ul = function ul(e, n) {
           return function (d) {
-            return gt.createElement(Nt.Z.Configure, e, gt.createElement(n, d))
+            return gt.createElement(Lt.Z.Configure, e, gt.createElement(n, d))
           }
         }
         var sl = d(946273),
@@ -21311,7 +21311,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 927228))
             }),
           ),
-          Ll = ul(
+          Nl = ul(
             { headerless: !0 },
             (0, Ea.p)(function () {
               return Promise.all([
@@ -21447,7 +21447,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 130593))
             }),
           ),
-          Nl = ul(
+          Ll = ul(
             { headerless: !0 },
             (0, Ea.p)(function () {
               return Promise.all([
@@ -22915,17 +22915,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             return gt.createElement(Ta.Z, { to: '/explore' })
           },
           Ru = function Ru(e) {
-            return gt.useContext(Lt.rC).loggedInUserId
+            return gt.useContext(Nt.rC).loggedInUserId
               ? gt.createElement(ku, e)
               : gt.createElement(Cu, (0, Pt.Z)({ component: Eu }, e))
           },
           Zu = function Zu(e) {
-            return gt.useContext(Lt.rC).loggedInUserId
+            return gt.useContext(Nt.rC).loggedInUserId
               ? gt.createElement(ku, e)
               : gt.createElement(Cu, (0, Pt.Z)({ component: _u }, e))
           },
           Iu = function Iu(e) {
-            return gt.useContext(Lt.rC).featureSwitches.isTrue('responsive_web_logged_out_explore_home_path_enabled')
+            return gt.useContext(Nt.rC).featureSwitches.isTrue('responsive_web_logged_out_explore_home_path_enabled')
               ? gt.createElement(
                   Ya.Z,
                   (0, Pt.Z)({}, e, {
@@ -23088,7 +23088,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d.e('bundle.Search'),
             ]).then(d.bind(d, 831176))
           }),
-          Lu = (0, Ea.p)(function () {
+          Nu = (0, Ea.p)(function () {
             return Promise.all([
               d.e(
                 'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.DMDrawer~bundle.Account~bundle',
@@ -23202,7 +23202,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d.e('bundle.Search'),
             ]).then(d.bind(d, 96450))
           }),
-          Nu = (0, Ea.p)(function () {
+          Lu = (0, Ea.p)(function () {
             return Promise.all([
               d.e(
                 'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.DMDrawer~bundle.Account~bundle',
@@ -24729,7 +24729,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }),
           ),
           Es = function Es(e) {
-            var n = gt.useContext(Lt.rC).featureSwitches.isTrue('subscriptions_sign_up_enabled')
+            var n = gt.useContext(Nt.rC).featureSwitches.isTrue('subscriptions_sign_up_enabled')
             return gt.createElement(
               Ha.Z,
               (0, Pt.Z)({}, e, {
@@ -24785,7 +24785,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }),
           ]
         }
-        var Ls = (0, Ba.cI)(
+        var Ns = (0, Ba.cI)(
             (0, Ea.p)(function () {
               return Promise.all([
                 d.e(
@@ -24795,11 +24795,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 675402))
             }),
           ),
-          Ns = function Ns(e) {
+          Ls = function Ls(e) {
             return gt.createElement(
               Ya.Z,
               (0, Pt.Z)({}, e, {
-                component: Ls,
+                component: Ns,
                 fallbackComponent: function fallbackComponent() {
                   return gt.createElement(Ta.Z, { to: '/home' })
                 },
@@ -24811,7 +24811,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           var e = '/i/twitter_blue_sign_up/welcome'
           return [
             gt.createElement(Ra.Z, {
-              component: Ns,
+              component: Ls,
               exact: !0,
               key: e,
               modalSize: 'dynamic',
@@ -27233,12 +27233,12 @@ window.__SCRIPTS_LOADED__.vendor &&
               ? gt.createElement(_a.Z, { to: '/'.concat(e.match.params.screenName, '/lists/memberships') })
               : gt.createElement(va.Z, e)
           },
-          Lc = function Lc(e) {
+          Nc = function Nc(e) {
             return e.match.params.screenName
               ? gt.createElement(_a.Z, { to: '/'.concat(e.match.params.screenName, '/likes') })
               : gt.createElement(va.Z, e)
           },
-          Nc = function Nc(e) {
+          Lc = function Lc(e) {
             return e.match.params.screenName
               ? gt.createElement(_a.Z, { to: '/'.concat(e.match.params.screenName, '/following') })
               : gt.createElement(va.Z, e)
@@ -27297,1485 +27297,26 @@ window.__SCRIPTS_LOADED__.vendor &&
               return (n += '?input_flow_data='.concat(a)), gt.createElement(Ta.Z, { to: n })
             }
             return gt.createElement(_a.Z, { from: '/signup', to: n })
-          },
-          qc = function qc() {
-            return gt.createElement(
-              ft.rs,
-              null,
-              [
-                gt.createElement(_a.Z, {
-                  from: '/your_twitter_data',
-                  key: 'your_twitter_data_redirect_1',
-                  to: '/settings/your_twitter_data',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/webview/your_twitter_data',
-                  key: 'your_twitter_data_redirect_2',
-                  to: '/settings/your_twitter_data',
-                }),
-                gt.createElement(_a.Z, {
-                  from: '/webview/your_twitter_data/*',
-                  key: 'your_twitter_data_redirect_3',
-                  to: '/settings/your_twitter_data/*',
-                }),
-                gt.createElement(_a.Z, {
-                  from: '/webview/applications',
-                  key: 'settings_applications_redirect',
-                  to: '/settings/applications',
-                }),
-                gt.createElement(_a.Z, {
-                  from: '/personalization',
-                  key: 'personalization_redirect',
-                  to: '/settings/account/personalization',
-                }),
-                gt.createElement(_a.Z, { from: '/welcome', key: 'welcome_redirect', to: '/i/flow/post_signup' }),
-                gt.createElement(_a.Z, { from: '/download', key: 'download_redirect', to: '/settings/download' }),
-                gt.createElement(_a.Z, { from: '/i/connect', key: 'connect_redirect', to: '/notifications' }),
-                gt.createElement(_a.Z, { from: '/mentions', key: 'mentions_redirect', to: '/notifications/mentions' }),
-                gt.createElement(_a.Z, { from: '/i/discover', key: 'discover_redirect', to: '/explore' }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/i/notifications',
-                  key: 'notifications_redirect',
-                  to: '/notifications',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/account/deactivated',
-                  key: 'settings_deactivated_redirect',
-                  to: '/settings/deactivated',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/accounts/confirm_deactivation',
-                  key: 'settings_confirm_deactivation_redirect',
-                  to: '/settings/deactivate',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/add_phone',
-                  key: 'settings_add_phone_redirect',
-                  to: '/settings/phone',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/blocked',
-                  key: 'settings_blocked_redirect',
-                  to: '/settings/blocked/all',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/connections',
-                  key: 'settings_connections_redirect',
-                  to: '/settings/applications',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/design',
-                  key: 'settings_design_redirect',
-                  to: '/settings/profile',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/devices',
-                  key: 'settings_devices_redirect',
-                  to: '/settings/phone',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/imported_blocked',
-                  key: 'settings_imported_blocked_redirect',
-                  to: '/settings/blocked/imported',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/muted',
-                  key: 'settings_muted_redirect',
-                  to: '/settings/muted/all',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/muted_following',
-                  key: 'settings_muted_following_redirect',
-                  to: '/settings/muted/following',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/notifications_timeline',
-                  key: 'settings_notifications_timelines_redirect',
-                  to: '/settings/notifications/advanced_filters',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/personalization',
-                  key: 'settings_personalization_redirect',
-                  to: '/settings/account/personalization',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/web_notifications',
-                  key: 'settings_web_notifications_redirect',
-                  to: '/settings/push_notifications',
-                }),
-                gt.createElement(_a.Z, {
-                  exact: !0,
-                  from: '/settings/your_twitter_data/logins',
-                  key: 'settings_your_twitter_data_logins_redirect',
-                  to: '/settings/your_twitter_data/login_history',
-                }),
-                gt.createElement(ft.AW, { key: '/@*', path: '/@*', render: Ic }),
-                gt.createElement(ft.AW, { exact: !0, key: '/signup', path: '/signup', render: Gc }),
-                gt.createElement(ft.AW, { exact: !0, key: '/share', path: '/share', render: jc }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/favorites',
-                  path: '/'.concat(Za.qX, '/favorites'),
-                  render: Lc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/followings',
-                  path: '/'.concat(Za.qX, '/followings'),
-                  render: Nc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/media/grid',
-                  path: '/'.concat(Za.qX, '/media/grid'),
-                  render: Oc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/status/:statusId/photo',
-                  path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/photo'),
-                  render: Fc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/status/:statusId/photos',
-                  path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/photos'),
-                  render: Fc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/statuses/:statusId',
-                  path: '/'.concat(Za.qX, '/statuses/').concat(Za.i_),
-                  render: Fc,
-                }),
-                gt.createElement(ft.AW, {
-                  key: '/:screenName}/statuses/:statusId/:unsafeOther',
-                  path: '/'.concat(Za.qX, '/statuses/').concat(Za.i_, '/').concat(Za.wx),
-                  render: Uc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/tweets',
-                  path: '/'.concat(Za.qX, '/tweets'),
-                  render: zc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/memberships',
-                  path: '/'.concat(Za.qX, '/memberships'),
-                  render: xc,
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/:screenName/subscriptions',
-                  path: '/'.concat(Za.qX, '/subscriptions'),
-                  render: Bc,
-                }),
-                gt.createElement(_a.Z, {
-                  from: '/account/settings',
-                  key: 'account_settings_redirect',
-                  to: '/settings/account',
-                }),
-                gt.createElement(ft.AW, {
-                  exact: !0,
-                  key: '/direct_messages/create/:screenName',
-                  path: '/direct_messages/create/'.concat(Za.qX),
-                  render: Vc,
-                }),
-                gt.createElement(_a.Z, { exact: !0, from: '/session/new', key: 'session_new_redirect', to: '/login' }),
-                gt.createElement(_a.Z, { exact: !0, from: '/i/moments', key: 'i_moments_redirect', to: '/explore' }),
-                gt.createElement(_a.Z, { exact: !0, from: '/search-home', key: 'search_home_redirect', to: '/search' }),
-                gt.createElement(ft.AW, {
-                  key: '/i/tfb/v1/quick_promote/:platform/:statusId',
-                  path: '/i/tfb/v1/quick_promote/'.concat(Za.Jv, '/').concat(Za.i_),
-                  render: Wc,
-                }),
-                gt.createElement(ft.AW, { component: ya, exact: !0, key: '/i/redirect', path: '/i/redirect' }),
-                gt.createElement(ft.AW, { exact: !0, key: '/i/view', path: '/i/view', render: Hc }),
-                gt.createElement(_a.Z, { exact: !0, from: '/i/reader_mode', key: 'reader_mode_redirect', to: '/home' }),
-              ],
-              gt.createElement(
-                ft.AW,
-                null,
-                gt.createElement(
-                  Sa,
-                  null,
-                  gt.createElement(Ca.Z, null, [
-                    gt.createElement(ft.AW, {
-                      component: ui,
-                      exact: !0,
-                      key: '/i/connect_people',
-                      path: '/i/connect_people',
-                    }),
-                    gt.Children.toArray([
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: pl,
-                        exact: !0,
-                        key: '/login',
-                        path: '/login',
-                        shouldRenderAsModal: function shouldRenderAsModal() {
-                          return !0
-                        },
-                      }),
-                      gt.createElement(ft.AW, { component: bl, exact: !0, key: '/login/error', path: '/login/error' }),
-                      gt.createElement(ft.AW, { component: pl, exact: !0, key: '/login/check', path: '/login/check' }),
-                      gt.createElement(ft.AW, { component: ml, exact: !0, key: '/i/sms_login', path: '/i/sms_login' }),
-                      gt.createElement(ft.AW, { component: cl, exact: !0, key: '/logout', path: '/logout' }),
-                      gt.createElement(ft.AW, {
-                        component: hl,
-                        exact: !0,
-                        key: '/logout/error',
-                        path: '/logout/error',
-                      }),
-                    ]),
-                    gt.createElement(ft.AW, { component: Iu, exact: !0, key: '/', path: '/' }),
-                    null,
-                    gt.createElement(Ra.Z, {
-                      component: Ia,
-                      exact: !0,
-                      key: '/i/about-this-add/:impressionId',
-                      path: '/i/about-this-ad/'.concat(Za.$F, '/'),
-                    }),
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: La,
-                        exact: !0,
-                        key: 'account_switcher',
-                        path: '/account/switch',
-                      }),
-                      gt.createElement(Ra.Z, { component: Na, exact: !0, key: 'account_add', path: '/account/add' }),
-                      gt.createElement(Ra.Z, {
-                        component: Oa,
-                        defaultBackgroundPath: '/i/ocf_background',
-                        exact: !0,
-                        key: 'not-my-account',
-                        path: '/account/not_my_account/'.concat(Za.qX, '/').concat(Za.HO),
-                      }),
-                      gt.createElement(ft.AW, { component: xa, exact: !0, key: 'dash', path: '/account' }),
-                    ],
-                    gt.createElement(ft.AW, {
-                      component: qa,
-                      key: 'articles',
-                      path: ['/i/articles/'.concat(Za.fW), '/i/articles'],
-                    }),
-                    [
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: cr,
-                        exact: !0,
-                        key: 'birdwatch',
-                        modalSize: Ka.Cg.dynamic,
-                        path: [
-                          '/i/birdwatch/contribute_form/'.concat(Za.A2),
-                          '/i/communitynotes/contribute_form/'.concat(Za.A2),
-                        ],
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: pr,
-                        exact: !0,
-                        key: 'birdwatch_start',
-                        modalSize: Ka.Cg.fitChildren,
-                        path: ['/i/birdwatch/contribute/'.concat(Za.A2), '/i/communitynotes/contribute/'.concat(Za.A2)],
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: br,
-                        exact: !0,
-                        key: 'birdwatch_complete',
-                        modalSize: Ka.Cg.fitChildren,
-                        path: [
-                          '/i/birdwatch/'.concat(Za.A2, '/contribute_complete'),
-                          '/i/birdwatch/'.concat(Za.A2, '/contribute_complete/').concat(Za.fP),
-                          '/i/communitynotes/'.concat(Za.A2, '/contribute_complete'),
-                          '/i/communitynotes/'.concat(Za.A2, '/contribute_complete/').concat(Za.fP),
-                        ],
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: Dr,
-                        exact: !0,
-                        key: '/i/birdwatch/n/:noteId',
-                        modalSize: Ka.Cg.dynamic,
-                        path: ['/i/birdwatch/n/'.concat(Za.Do), '/i/communitynotes/n/'.concat(Za.Do)],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Sr,
-                        exact: !0,
-                        key: '/i/communitynotes/notification_settings',
-                        path: '/i/communitynotes/notification_settings',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: sr,
-                        exact: !0,
-                        key: '/i/birdwatch/country-unavailable',
-                        path: ['/i/birdwatch/country-unavailable', '/i/communitynotes/country-unavailable'],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: mr,
-                        exact: !0,
-                        key: '/i/birdwatch/t/:id',
-                        path: ['/i/birdwatch/t/'.concat(Za.A2), '/i/communitynotes/t/'.concat(Za.A2)],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Ar,
-                        exact: !0,
-                        key: '/i/birdwatch/u/me',
-                        path: ['/i/birdwatch/u/me', '/i/communitynotes/u/me'],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: hr,
-                        exact: !0,
-                        key: '/i/birdwatch/u/:alias',
-                        path: ['/i/birdwatch/u/'.concat(Za.bm), '/i/communitynotes/u/'.concat(Za.bm)],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: ir,
-                        exact: !0,
-                        key: '/i/birdwatch/about',
-                        path: ['/i/birdwatch/about', '/i/communitynotes/about'],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: gr,
-                        exact: !0,
-                        key: '/i/birdwatch/download-data',
-                        path: ['/i/birdwatch/download-data', '/i/communitynotes/download-data'],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: vr,
-                        exact: !0,
-                        key: '/i/birdwatch',
-                        path: [
-                          '/i/birdwatch',
-                          '/i/birdwatch/'.concat(Za.fW),
-                          '/i/communitynotes',
-                          '/i/communitynotes/'.concat(Za.fW),
-                        ],
-                      }),
-                    ],
-                    gt.createElement(Ra.Z, {
-                      component: Yi,
-                      exact: !0,
-                      key: 'display',
-                      modalSize: 'dynamic',
-                      path: '/i/display',
-                    }),
-                    [
-                      gt.createElement(ft.AW, { component: kr, exact: !0, key: '/i/bookmarks', path: '/i/bookmarks' }),
-                      gt.createElement(ft.AW, {
-                        component: Er,
-                        exact: !0,
-                        key: '/i/bookmarks/all',
-                        path: '/i/bookmarks/all',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Rr,
-                        exact: !0,
-                        key: '/i/bookmarks/FolderId',
-                        path: '/i/bookmarks/'.concat(Za.aD),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Zr,
-                        key: 'bookmark_edit',
-                        modalSize: 'dynamic',
-                        path: '/i/bookmarks/'.concat(Za.aD, '/edit'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Pr,
-                        exact: !0,
-                        key: 'bookmark_add',
-                        modalSize: 'fixed',
-                        path: '/i/bookmarks/add',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ir,
-                        exact: !0,
-                        key: 'bookmark_folder_create',
-                        modalSize: 'dynamic',
-                        path: '/i/bookmarks/create_folder',
-                      }),
-                    ],
-                    gt.createElement(ft.AW, {
-                      component: xr,
-                      exact: !0,
-                      key: '/i/branded_likes_preview',
-                      path: '/i/branded_likes_preview',
-                    }),
-                    gt.createElement(ft.AW, {
-                      component: Lr,
-                      exact: !0,
-                      key: '/i/broadcasts/:broadcastId',
-                      path: '/i/broadcasts/'.concat(Za.cD),
-                    }),
-                    [
-                      gt.createElement(ft.AW, {
-                        component: Qr,
-                        exact: !0,
-                        key: '/:screenName/timelines/:collectionId',
-                        path: '/'.concat(Za.qX, '/timelines/').concat(Za.I2),
-                      }),
-                      gt.createElement(ft.AW, {
-                        exact: !0,
-                        key: '/:screenName/carousels/:collectionId',
-                        path: '/'.concat(Za.qX, '/carousels/').concat(Za.I2),
-                        render: Kr,
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: Fo,
-                        defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
-                        exact: !0,
-                        key: '/i/communities/'.concat(Za.Q7, '/tools/rules/add'),
-                        path: '/i/communities/'.concat(Za.Q7, '/tools/rules/add'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Uo,
-                        defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
-                        exact: !0,
-                        key: '/i/communities/'.concat(Za.Q7, '/tools/rules/').concat(Za.Cy, '/edit'),
-                        path: '/i/communities/'.concat(Za.Q7, '/tools/rules/').concat(Za.Cy, '/edit'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Lo,
-                        defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
-                        exact: !0,
-                        key: '/i/communities/'.concat(Za.Q7, '/tools/settings/theme'),
-                        modalSize: 'fitChildren',
-                        path: '/i/communities/'.concat(Za.Q7, '/tools/settings/theme'),
-                      }),
-                      gt.createElement(
-                        ft.AW,
-                        {
-                          key: '/i/communities/'.concat(Za.Q7, '/tools'),
-                          path: '/i/communities/'.concat(Za.Q7, '/tools'),
-                        },
-                        gt.createElement(
-                          Ua.Z,
-                          { rootComponent: Bo, rootDetailContent: mo },
-                          gt.createElement(ft.AW, {
-                            component: xo,
-                            key: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
-                            path: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: No,
-                            key: '/i/communities/'.concat(Za.Q7, '/tools/(members|moderators)'),
-                            path: '/i/communities/'.concat(Za.Q7, '/tools/(members|moderators)'),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: Oo,
-                            key: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
-                            path: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
-                          }),
-                        ),
-                      ),
-                      gt.createElement(ft.AW, {
-                        component: Ro,
-                        key: '/i/communities/'.concat(Za.Q7, '/(members|moderators)'),
-                        path: '/i/communities/'.concat(Za.Q7, '/(members|moderators)'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: so,
-                        exact: !0,
-                        key: '/i/communities/'.concat(Za.Q7, '/invite'),
-                        path: '/i/communities/'.concat(Za.Q7, '/invite'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: ko,
-                        key: '/i/communities/'.concat(Za.Q7, '/rules'),
-                        path: '/i/communities/'.concat(Za.Q7, '/rules'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Zo,
-                        key: '/i/communities/'.concat(Za.Q7, '/moderation'),
-                        path: '/i/communities/'.concat(Za.Q7, '/moderation'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Io,
-                        key: '/'.concat(Za.xS, '/status/').concat(Za.A2, '/community_feedback'),
-                        path: '/'.concat(Za.xS, '/status/').concat(Za.A2, '/community_feedback'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Io,
-                        key: '/'.concat(Za.xS, '/communities/').concat(Za.Q7, '/community_feedback'),
-                        path: '/'.concat(Za.xS, '/communities/').concat(Za.Q7, '/community_feedback'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: _o,
-                        key: '/i/communities/create',
-                        path: '/i/communities/create',
-                      }),
-                      gt.createElement(
-                        ft.AW,
-                        { exact: !0, key: '/i/communities', path: '/i/communities' },
-                        gt.createElement(Jr, null),
-                      ),
-                      gt.createElement(ft.AW, {
-                        component: Po,
-                        exact: !0,
-                        key: '/:screenName/communities',
-                        path: '/'.concat(Za.qX, '/communities/'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Eo,
-                        exact: !0,
-                        key: 'i/communities/suggested',
-                        path: '/i/communities/suggested',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Po,
-                        exact: !0,
-                        key: '/:screenName/communities/memberships',
-                        path: '/'.concat(Za.qX, '/communities/memberships'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Ho,
-                        exact: !0,
-                        key: '/i/communities/'.concat(Za.Q7, '/hashtag/:unsafeHashtagQuery'),
-                        path: '/i/communities/'.concat(Za.Q7, '/hashtag/').concat(Za.hv),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: To,
-                        key: '/i/communities/'.concat(Za.Q7),
-                        path: '/i/communities/'.concat(Za.Q7),
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: qo,
-                        exact: !0,
-                        key: ei,
-                        modalSize: 'dynamic',
-                        path: ei,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Qo,
-                        exact: !0,
-                        key: di,
-                        modalSize: 'dynamic',
-                        path: di,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Jo,
-                        exact: !0,
-                        key: ai,
-                        modalSize: 'verticallyMaximized',
-                        path: ai,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Go,
-                        exact: !0,
-                        key: ni,
-                        modalSize: 'dynamic',
-                        path: ni,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, { component: Ko, exact: !0, key: ti, path: ti, topOfScreen: !0 }),
-                      gt.createElement(Ra.Z, {
-                        component: Yo,
-                        exact: !0,
-                        key: ri,
-                        modalSize: 'dynamic',
-                        path: ri,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Xo,
-                        exact: !0,
-                        key: oi,
-                        modalSize: 'dynamic',
-                        path: oi,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Xo,
-                        exact: !0,
-                        key: ii,
-                        modalSize: 'dynamic',
-                        path: ii,
-                        topOfScreen: !0,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: $o,
-                        exact: !0,
-                        key: li,
-                        modalSize: 'dynamic',
-                        path: li,
-                        topOfScreen: !0,
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: Ki,
-                        exact: !0,
-                        key: '/messages/report/${userId}',
-                        path: '/messages/report/'.concat(Za.xS),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ii,
-                        exact: !0,
-                        key: '/messages/compose',
-                        path: '/messages/compose',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ii,
-                        exact: !0,
-                        key: '/messages/compose/group',
-                        path: '/messages/compose/group',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Bi,
-                        exact: !0,
-                        key: '/messages/compose/media',
-                        modalSize: Ka.Cg.verticallyMaximized,
-                        path: '/messages/compose/media',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Fi,
-                        exact: !0,
-                        key: '/messages/${dmConversationId}/add',
-                        path: '/messages/'.concat(Za.UE, '/add'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: ji,
-                        exact: !0,
-                        key: '/messages/${dmConversationId}/media/${dmEntryId}',
-                        modalSize: Ka.Cg.full,
-                        path: ['/messages/'.concat(Za.UE, '/media/').concat(Za.hU), '/messages/media/'.concat(Za.hU)],
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ui,
-                        exact: !0,
-                        key: '/messages/${dmConversationId}/group-info',
-                        modalSize: Ka.Cg.dynamic,
-                        path: '/messages/'.concat(Za.UE, '/group-info'),
-                      }),
-                      gt.createElement(
-                        ft.AW,
-                        { key: '/messages(/requests)?(/additional)?', path: '/messages(/requests)?(/additional)?' },
-                        gt.createElement(
-                          Ua.Z,
-                          { perColumnScroll: !0, rootComponent: Ri, rootDetailContent: Wi },
-                          gt.createElement(ft.AW, {
-                            component: Zi,
-                            exact: !0,
-                            key: '/messages/create/${screenName}',
-                            path: '/messages/create/'.concat(Za.qX),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: Gi,
-                            exact: !0,
-                            key: '/messages/group',
-                            path: '/messages/group',
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: Qi,
-                            exact: !0,
-                            key: '/messages/${dmConversationId}',
-                            path: '/messages/'.concat(Za.UE),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: Hi,
-                            exact: !0,
-                            key: '/messages/${dmConversationId}/info',
-                            path: '/messages/'.concat(Za.UE, '/info'),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: zi,
-                            exact: !0,
-                            key: '/messages/${dmConversationId}/participants',
-                            path: '/messages/'.concat(Za.UE, '/participants'),
-                          }),
-                          gt.createElement(ft.AW, {
-                            component: Ei.pZ,
-                            exact: !0,
-                            key: '/messages/settings',
-                            path: '/messages/settings',
-                          }),
-                          gt.createElement(ft.l_, {
-                            from: '/messages/requests/'.concat(Za.UE),
-                            key: 'old-untrusted-route',
-                            to: '/messages',
-                          }),
-                          gt.createElement(ft.l_, {
-                            from: '/messages/requests/additional/'.concat(Za.UE),
-                            key: 'old-lq-route',
-                            to: '/messages',
-                          }),
-                        ),
-                      ),
-                    ],
-                    gt.createElement(ft.AW, {
-                      component: $i,
-                      exact: !0,
-                      key: '/explore/tabs/:tabId?',
-                      path: ['/explore', '/explore/tabs/'.concat(Za.fW)],
-                    }),
-                    gt.createElement(ft.AW, { component: nl, key: '/i/timeline', path: '/i/timeline' }),
-                    gt.createElement(Ra.Z, {
-                      component: dl,
-                      key: '/i/foundmedia',
-                      path: '/i/foundmedia',
-                      topOfScreen: !0,
-                    }),
-                    gt.createElement(Ra.Z, {
-                      component: al,
-                      exact: !0,
-                      key: 'graduatedAccess',
-                      modalSize: 'fitChildren',
-                      path: '/i/graduated-access',
-                    }),
-                    [
-                      gt.createElement(ft.AW, {
-                        component: ol,
-                        exact: !0,
-                        key: '/i/events/',
-                        path: '/i/events/'.concat(Za.sA),
-                      }),
-                      gt.createElement(ft.AW, {
-                        exact: !0,
-                        key: '/i/live/',
-                        path: '/i/live/'.concat(Za.sA),
-                        render: il,
-                      }),
-                    ],
-                    gt.createElement(ft.AW, { component: ll, exact: !0, key: '/home', path: '/home' }),
-                    gt.createElement(ft.AW, {
-                      exact: !0,
-                      key: 'moment',
-                      path: '/i/moments/'.concat(Za.wi),
-                      render: Al,
-                    }),
-                    (0, ys.ZP)(),
-                    ((g = '/twitterblue/error'),
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: ks,
-                        exact: !0,
-                        key: g,
-                        modalSize: 'dynamic',
-                        path: g,
-                        topOfScreen: !0,
-                      }),
-                    ]),
-                    Rs(),
-                    Os(),
-                    xs(),
-                    gt.createElement(ft.AW, {
-                      component: Sl,
-                      exact: !0,
-                      key: '/i/news/:tcoHash',
-                      path: '/i/news/'.concat(Za.Qw),
-                    }),
-                    [
-                      gt.createElement(ft.AW, {
-                        component: Tl,
-                        exact: !0,
-                        key: 'notifications',
-                        path: '/notifications/(mentions|verified|all)?',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: wl,
-                        exact: !0,
-                        key: 'twitterversary',
-                        modalSize: 'dynamic',
-                        path: '/i/notifications/anniversary',
-                      }),
-                      gt.createElement(Ra.Z, { component: Ml, key: 'safety-report', path: '/i/notifications/safety' }),
-                      gt.createElement(Ra.Z, {
-                        component: yl,
-                        defaultBackgroundPath: '/notifications',
-                        exact: !0,
-                        key: 'badge-violations-notification',
-                        modalSize: 'dynamic',
-                        path: '/i/badge_violations',
-                      }),
-                    ],
-                    gt.createElement(ft.AW, { component: Pl, exact: !0, key: _l, path: _l }),
-                    [
-                      gt.createElement(ft.AW, { component: Ec, exact: !0, key: '/i/verified', path: '/i/verified' }),
-                      gt.createElement(ft.AW, {
-                        component: Rc,
-                        exact: !0,
-                        key: '/i/verified/settings',
-                        path: '/i/verified/settings',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Zc,
-                        exact: !0,
-                        key: '/i/verified/invite',
-                        path: '/i/verified/invite',
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, { component: Wl, exact: !0, key: Xl, path: Xl }),
-                      gt.createElement(Ra.Z, { component: au, exact: !0, key: Jl, path: Jl }),
-                      gt.createElement(Ra.Z, { component: ru, exact: !0, key: $l, modalSize: Ka.Cg.dynamic, path: $l }),
-                      gt.createElement(Ra.Z, { component: ou, exact: !0, key: eu, modalSize: Ka.Cg.dynamic, path: eu }),
-                      gt.createElement(Ra.Z, { component: iu, exact: !0, key: du, modalSize: Ka.Cg.dynamic, path: du }),
-                      gt.createElement(_a.Z, { from: nu, key: nu, to: Jl }),
-                      gt.createElement(ft.AW, { component: uu, key: '/i/professionals', path: '/i/professionals' }),
-                    ],
-                    (0, su.Z)(),
-                    gt.createElement(ft.AW, {
-                      component: pu,
-                      exact: !0,
-                      key: 'reader_mode',
-                      path: '/'.concat(Za.qX, '/thread/').concat(Za.A2),
-                    }),
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: mu,
-                        exact: !0,
-                        key: 'ReportScreen',
-                        path: '/i/report/'.concat(Za.oQ, '/').concat(Za.nM),
-                        restoreFocusInFocusTrapView: !1,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: hu,
-                        exact: !0,
-                        key: 'ReportFlowComplete',
-                        path: '/i/safety/report_story_complete',
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: fu,
-                        exact: !0,
-                        key: 'report_detail',
-                        modalSize: 'dynamic',
-                        path: '/i/reports/'.concat(Za.Cq),
-                      }),
-                      gt.createElement(_a.Z, {
-                        exact: !0,
-                        from: '/i/safety_center',
-                        key: 'safety_center_report_redirect',
-                        to: '/i/safety_center/reports/open',
-                      }),
-                      gt.createElement(
-                        ft.AW,
-                        { key: '/i/safety_center', path: '/i/safety_center' },
-                        gt.createElement(
-                          Au.ZP,
-                          null,
-                          gt.createElement(
-                            Ua.Z,
-                            {
-                              perColumnScroll: !0,
-                              renderRootWhenNarrow: function renderRootWhenNarrow(e) {
-                                return ['/i/safety_center/reports/open', '/i/safety_center/reports/resolved'].includes(
-                                  e.pathname,
-                                )
-                              },
-                              rootComponent: Mu,
-                              rootDetailContent: wu,
-                            },
-                            gt.createElement(ft.AW, {
-                              component: wu,
-                              exact: !0,
-                              key: 'safety_center_report_detail',
-                              path: '/i/safety_center/reports/'.concat(Za.Cq),
-                            }),
-                          ),
-                        ),
-                      ),
-                    ],
-                    gt.createElement(Ra.Z, {
-                      component: Bu,
-                      exact: !0,
-                      key: 'safety-mode-modal',
-                      path: '/i/safety_mode',
-                    }),
-                    [
-                      gt.createElement(ft.AW, {
-                        exact: !0,
-                        key: '/search/:searchQuery',
-                        path: '/search/'.concat(Za.uO),
-                        render: Ou,
-                      }),
-                      gt.createElement(ft.AW, { component: xu, key: '/search', path: '/search' }),
-                      gt.createElement(ft.AW, {
-                        component: xu,
-                        key: '/hashtag/:unsafeHashtagQuery',
-                        path: '/hashtag/'.concat(Za.hv),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Lu,
-                        defaultBackgroundPath: '/explore',
-                        key: '/i/search_filters',
-                        modalSize: 'dynamic',
-                        path: '/i/search_filters',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Nu,
-                        defaultBackgroundPath: '/explore',
-                        exact: !0,
-                        key: '/search-advanced',
-                        path: '/search-advanced',
-                      }),
-                    ],
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: Ei.BQ,
-                        exact: !0,
-                        key: 'profile',
-                        path: '/settings/profile',
-                      }),
-                      gt.createElement(Ra.Z, { component: Ei.Lo, exact: !0, key: 'search', path: '/settings/search' }),
-                      gt.createElement(Ra.Z, {
-                        component: Hu,
-                        exact: !0,
-                        key: 'safety-mode-about',
-                        path: '/settings/safety_mode/about',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Fu,
-                        exact: !0,
-                        key: 'safety-mode-flagged-accounts',
-                        path: '/i/safety_mode/flagged_accounts',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Uu,
-                        exact: !0,
-                        key: 'safety-mode-flagged-tweets',
-                        path: '/i/safety_mode/flagged_tweets/'.concat(Za.xS),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ei.C1,
-                        defaultBackgroundPath: '/explore',
-                        exact: !0,
-                        key: 'explore-settings',
-                        path: '/settings/explore',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ei.KR,
-                        defaultBackgroundPath: '/explore',
-                        exact: !0,
-                        key: 'explore-location',
-                        path: '/settings/explore/location',
-                      }),
-                      gt.createElement(Ra.Z, { component: Ei.C1, exact: !0, key: 'trends', path: '/settings/trends' }),
-                      gt.createElement(Ra.Z, {
-                        component: Ei.KR,
-                        exact: !0,
-                        key: 'trends-location',
-                        path: '/settings/trends/location',
-                      }),
-                      gt.createElement(_a.Z, {
-                        from: '/settings/applications',
-                        key: 'apps-to-apps-and-sessions',
-                        to: '/settings/apps_and_sessions',
-                      }),
-                      gt.createElement(_a.Z, {
-                        from: '/settings/safety',
-                        key: 'safety-to-privacy-and-safety',
-                        to: '/settings/privacy_and_safety',
-                      }),
-                      gt.createElement(_a.Z, {
-                        from: '/settings/mute',
-                        key: 'mute-to-mute-and-block',
-                        to: '/settings/mute_and_block',
-                      }),
-                      gt.createElement(ft.AW, { key: 'settings', path: '/settings' }, gt.createElement(ju, null)),
-                    ],
-                    (0, a.fH)('prod') ? null : d(518283)._(),
-                    [
-                      gt.createElement(ft.AW, {
-                        component: va.Z,
-                        exact: !0,
-                        key: '/i/topics/discover',
-                        path: ['/i/topics/discover', '/i/topics/discover/'.concat(Za.fW)],
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: qu,
-                        exact: !0,
-                        key: '/i/topics/picker',
-                        path: ['/i/topics/picker', '/i/topics/picker/'.concat(Za.fW)],
-                      }),
-                      gt.createElement(Ra.Z, {
-                        defaultBackgroundPath: '/home',
-                        exact: !0,
-                        key: '/i/topics/education',
-                        modalSize: 'dynamic',
-                        path: '/i/topics/education',
-                        render: zu,
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Ku,
-                        exact: !0,
-                        key: '/i/topics/:topicId/noteworthy_accounts',
-                        path: '/i/topics/'.concat(Za.jp, '/noteworthy_accounts'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        key: '/i/topics/tweet/:statusId',
-                        path: '/i/topics/tweet/'.concat(Za.i_),
-                        render: Yu,
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Vu,
-                        exact: !0,
-                        key: '/i/topics/:taxonomy/:topicId',
-                        path: '/i/topics/'.concat(Za.Sj, '/').concat(Za.jp),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Qu,
-                        exact: !0,
-                        key: '/i/topics/:topicId',
-                        path: '/i/topics/'.concat(Za.jp),
-                      }),
-                      gt.createElement(ft.AW, {
-                        exact: !0,
-                        key: '/:screenName/topics',
-                        path: ['/'.concat(Za.qX, '/topics'), '/'.concat(Za.qX, '/topics/').concat(Za.fW)],
-                        render: Gu,
-                      }),
-                    ],
-                    gt.createElement(ft.AW, { component: Xu, exact: !0, key: '/i/trends', path: '/i/trends' }),
-                    ds(),
-                    [gt.createElement(Ra.Z, { component: Hs, exact: !0, key: '/i/coins', path: '/i/coins' })],
-                    [
-                      gt.createElement(ft.AW, {
-                        component: ss,
-                        exact: !0,
-                        key: 'permalink1',
-                        path: '/i/web/status/'.concat(Za.i_),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: ss,
-                        exact: !0,
-                        key: 'permalink2',
-                        path: '/i/thread/'.concat(Za.i_),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: ss,
-                        exact: !0,
-                        key: 'permalink3',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: cs,
-                        exact: !0,
-                        key: 'analytics',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/analytics'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: bs,
-                        exact: !0,
-                        key: 'quickPromote',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.pn, '/').concat(Za.rj),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: bs,
-                        exact: !0,
-                        key: 'quickPromoteRweb',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.mT, '/').concat(Za.rj),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: ps,
-                        exact: !0,
-                        key: 'hiddenReplies',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/hidden'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: ms,
-                        exact: !0,
-                        key: 'mediatags',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/media_tags'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: hs,
-                        exact: !0,
-                        key: 'participants',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/people'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: ls,
-                        exact: !0,
-                        key: 'activitytype',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.ru),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ss,
-                        exact: !0,
-                        key: 'TweetActivityReactionsScreen',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/reactions'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: ws,
-                        exact: !0,
-                        key: 'mediadetail',
-                        modalSize: Ka.Cg.full,
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za._Q, '/').concat(Za.u0),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ms,
-                        exact: !0,
-                        key: 'immersiveMediaViewer',
-                        modalSize: Ka.Cg.full,
-                        path: (0, ts.PK)('/'.concat(Za.qX, '/status/').concat(Za.i_)),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: fs,
-                        exact: !0,
-                        key: 'like_intent',
-                        path: '/intent/(like|favorite)',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: fs,
-                        exact: !0,
-                        key: 'retweet_intent',
-                        path: '/intent/retweet',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: is,
-                        exact: !0,
-                        key: 'quote_tweet',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/retweets/with_comments'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: gs,
-                        exact: !0,
-                        key: 'TweetEditHistoryScreen',
-                        path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/history'),
-                      }),
-                    ],
-                    ((u = '/i/oauth_landing'),
-                    (s = '/i/flow/'),
-                    (c = '/i/bounce/'),
-                    (b = '/i/onboarding/verify'),
-                    (p = '/i/ocf_background'),
-                    (m = '/i/ocf_arkose_challenge'),
-                    (h = '/i/safety/report_story_start'),
-                    (A = '/i/flow/signup'),
-                    (D = '/i/flow/login'),
-                    (S = '/i/flow/convert_to_professional'),
-                    (v = '/i/flow/make_more_connections'),
-                    [
-                      gt.createElement(ft.AW, { component: El, exact: !0, key: p, path: p }),
-                      gt.createElement(ft.AW, { component: jl, exact: !0, key: m, path: m }),
-                      gt.createElement(Ra.Z, { clickMaskToClose: !1, component: Bl, exact: !0, key: u, path: u }),
-                      gt.createElement(Ra.Z, { clickMaskToClose: !1, component: Il, exact: !0, key: b, path: b }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: Ll,
-                        defaultBackgroundPath: p,
-                        exact: !0,
-                        key: A,
-                        path: A,
-                        restoreBackgroundFromPreviousPath: !1,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: Nl,
-                        defaultBackgroundPath: p,
-                        exact: !0,
-                        key: D,
-                        path: D,
-                      }),
-                      gt.createElement(Ra.Z, { component: xl, defaultBackgroundPath: p, exact: !0, key: h, path: h }),
-                      gt.createElement(Ra.Z, { component: Ol, defaultBackgroundPath: p, exact: !0, key: S, path: S }),
-                      gt.createElement(Ra.Z, { component: Fl, defaultBackgroundPath: p, exact: !0, key: v, path: v }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: Rl,
-                        defaultBackgroundPath: p,
-                        exact: !1,
-                        key: s,
-                        path: s,
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: Hl,
-                        defaultBackgroundPath: p,
-                        exact: !1,
-                        key: c,
-                        path: c,
-                      }),
-                    ]),
-                    [
-                      gt.createElement(
-                        ft.AW,
-                        { key: '/i/collaborate', path: '/i/collaborate' },
-                        gt.createElement(
-                          ft.rs,
-                          null,
-                          gt.createElement(ft.AW, { component: Ur, exact: !0, path: '/i/collaborate/home' }),
-                          gt.createElement(ft.AW, {
-                            component: qr,
-                            path: Gr.map(function (e) {
-                              return e.path
-                            }),
-                          }),
-                        ),
-                      ),
-                    ],
-                    gt.createElement(ft.AW, {
-                      component: zl,
-                      exact: !0,
-                      key: '/places/:placeId',
-                      path: '/places/'.concat(Za.DY),
-                    }),
-                    gt.createElement(Ra.Z, {
-                      component: rl,
-                      key: '/i/keyboard_shortcuts',
-                      modalSize: 'dynamic',
-                      path: '/i/keyboard_shortcuts',
-                    }),
-                    (0, Qa.ZP)(),
-                    [
-                      gt.createElement(ft.AW, { component: Di, exact: !0, key: hi, path: [hi] }),
-                      gt.createElement(Ra.Z, {
-                        component: Si,
-                        defaultBackgroundPath: '/home',
-                        exact: !0,
-                        key: Ai,
-                        modalSize: 'dynamic',
-                        path: [Ai],
-                      }),
-                    ],
-                    gt.createElement(Ra.Z, {
-                      component: gi,
-                      exact: !0,
-                      key: '/i/delegate/delegations',
-                      path: '/i/delegate/delegations',
-                    }),
-                    gt.createElement(ft.AW, { component: va.Z, exact: !0, key: '/404', path: '/404' }),
-                    gt.createElement(ft.AW, {
-                      component: el,
-                      exact: !0,
-                      key: '/:screenName/unfollow_sms',
-                      path: '/'.concat(Za.qX, '/unfollow_sms'),
-                    }),
-                    gt.createElement(ft.AW, {
-                      component: Js,
-                      exact: !0,
-                      key: '/:screenName/moments',
-                      path: '/'.concat(Za.qX, '/moments'),
-                    }),
-                    ((e = '/i/lists/'.concat(Za.Tk)),
-                    (n = '/i/lists/'.concat(Za.Tk, '/info')),
-                    (t = '/i/lists/'.concat(Za.Tk, '/subscribers')),
-                    (r = '/i/lists/'.concat(Za.Tk, '/followers')),
-                    (o = '/'.concat(Za.qX, '/lists/').concat(Za.oF)),
-                    (i = '/'.concat(Za.qX, '/lists/').concat(Za.oF, '/').concat(Za.fH)),
-                    (l = '/'.concat(Za.qX, '/lists/pinned/edit')),
-                    [
-                      gt.createElement(Ra.Z, { component: js, exact: !0, key: l, path: l }),
-                      gt.createElement(_a.Z, {
-                        exact: !0,
-                        from: '/lists/add_member',
-                        key: '/lists/add_member',
-                        to: '/i/lists/add_member',
-                      }),
-                      gt.createElement(_a.Z, {
-                        exact: !0,
-                        from: '/lists/create',
-                        key: '/lists/create',
-                        to: '/i/lists/create',
-                      }),
-                      gt.createElement(_a.Z, { exact: !0, from: t, key: t, to: r }),
-                      gt.createElement(Ra.Z, {
-                        component: zs,
-                        exact: !0,
-                        key: '/i/lists/add_member',
-                        path: '/i/lists/add_member',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Vs,
-                        exact: !0,
-                        key: '/i/lists/create',
-                        path: '/i/lists/create',
-                      }),
-                      gt.createElement(Ra.Z, { component: Ws, exact: !0, key: n, path: n }),
-                      gt.createElement(Ra.Z, {
-                        component: qs,
-                        exact: !0,
-                        key: '/i/lists/'.concat(Za.Tk, '/members/:type'),
-                        path: '/i/lists/'.concat(Za.Tk, '/members/(suggested)?'),
-                      }),
-                      gt.createElement(Ra.Z, { component: Gs, exact: !0, key: r, path: r }),
-                      gt.createElement(ft.AW, { component: Ks, key: e, path: e }),
-                      gt.createElement(ft.AW, {
-                        component: Ys,
-                        exact: !0,
-                        key: '/:screenName/lists/:type',
-                        path: '/'.concat(Za.qX, '/lists/(memberships)?'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Qs,
-                        exact: !0,
-                        key: '/i/lists/suggested',
-                        path: '/i/lists/suggested',
-                      }),
-                      gt.createElement(ft.AW, { component: Xs, key: i, path: i }),
-                      gt.createElement(ft.AW, { component: Xs, exact: !0, key: o, path: o }),
-                    ]),
-                    [
-                      gt.createElement(ft.AW, {
-                        component: pc,
-                        exact: !0,
-                        key: 'user_redirect',
-                        path: '/i/user/'.concat(Za.xS),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: nc,
-                        exact: !0,
-                        key: 'legacy_redirects',
-                        path: '/(favorites|followers|following|who_to_follow)',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: tc,
-                        exact: !0,
-                        key: 'follower_requests',
-                        path: '/follower_requests',
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: sc,
-                        exact: !0,
-                        key: 'photo',
-                        modalSize: Ka.Cg.full,
-                        path: '/'.concat(Za.qX, '/photo'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: Ac,
-                        exact: !0,
-                        key: 'nft',
-                        modalSize: Ka.Cg.full,
-                        path: '/'.concat(Za.qX, '/nft'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        component: bc,
-                        exact: !0,
-                        key: 'header_photo',
-                        modalSize: Ka.Cg.full,
-                        path: '/'.concat(Za.qX, '/header_photo'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: lc,
-                        exact: !0,
-                        key: 'followers',
-                        path: '/'.concat(Za.qX, '/').concat(Za._N),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: uc,
-                        exact: !0,
-                        key: '(likes|media|reactions)',
-                        path: '/'.concat(Za.qX, '/(likes|media|reactions)'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: hc,
-                        exact: !0,
-                        key: 'follow_intent',
-                        path: '/intent/(user|follow)',
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: dc,
-                        exact: !0,
-                        key: 'profile',
-                        path: '/'.concat(Za.qX, '/(with_replies|superfollows|notes)?'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Dc,
-                        exact: !0,
-                        key: 'about',
-                        path: '/'.concat(Za.qX, '/about'),
-                      }),
-                      gt.createElement(ft.AW, {
-                        component: Sc,
-                        exact: !0,
-                        key: 'affiliates',
-                        path: '/'.concat(Za.qX, '/affiliates'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: rc,
-                        defaultBackgroundPath: '/'.concat(Za.qX),
-                        exact: !0,
-                        key: 'superfollows/subscribe',
-                        path: '/'.concat(Za.qX, '/superfollows/subscribe'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: mc,
-                        defaultBackgroundPath: '/'.concat(Za.qX),
-                        exact: !0,
-                        key: 'superfollows/subscribe/manage',
-                        modalSize: Ka.Cg.fitChildren,
-                        path: '/'.concat(Za.qX, '/superfollows/manage'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: oc,
-                        defaultBackgroundPath: '/'.concat(Za.qX),
-                        exact: !0,
-                        key: 'superfollows/subscribe/success',
-                        path: '/'.concat(Za.qX, '/superfollows/subscribe/success'),
-                      }),
-                      gt.createElement(Ra.Z, {
-                        clickMaskToClose: !1,
-                        component: ic,
-                        defaultBackgroundPath: '/'.concat(Za.qX),
-                        exact: !0,
-                        key: 'superfollows/subscribe/failure',
-                        path: '/'.concat(Za.qX, '/superfollows/subscribe/failure'),
-                      }),
-                      gt.createElement(ft.AW, { component: ac, exact: !0, key: 'own_profile', path: '/i/profile' }),
-                    ],
-                    ds(),
-                    [
-                      gt.createElement(Ra.Z, {
-                        component: ci,
-                        exact: !0,
-                        key: '/'.concat(Za.qX.toLowerCase(), '/status/').concat(Za.i_, '/follow_in_thread'),
-                        modalSize: 'dynamic',
-                        path: '/'.concat(Za.qX.toLowerCase(), '/status/').concat(Za.i_, '/follow_in_thread'),
-                      }),
-                    ],
-                    gt.createElement(ft.AW, { component: va.Z, key: 'not_found' }),
-                  ]),
-                ),
-              ),
-            )
-            var e, n, t, r, o, i, l, u, s, c, b, p, m, h, A, D, S, v, g
           }
-        var Qc = function Qc() {
+        var qc = function qc() {
           return Promise.resolve().then(d.bind(d, 730535))
         }
-        var Kc = d(959975)
-        var Yc = d(229591)
-        var Xc = d(906844),
-          Jc = d(258314)
-        var $c = function $c(e) {
+        var Qc = d(959975)
+        var Kc = d(229591)
+        var Yc = d(906844),
+          Xc = d(258314)
+        var Jc = function Jc(e) {
           var n = e.api,
             d = e.behavioralEventAllowlist,
             t = e.featureSwitches,
-            a = (0, Jc.Z)(),
+            a = (0, Xc.Z)(),
             r = a.clientAppId,
             o = a.clientName,
             i = n.getHttpClient(),
             l = t.isTrue('responsive_web_behavioral_events_htl_breadcrumbs'),
             u = t.isTrue('responsive_web_behavioral_events_session_id_enabled'),
             s = t.isTrue('responsive_web_behavioral_events_target_view_v2_enabled')
-          return (0, Xc.ZP)({
+          return (0, Yc.ZP)({
             apiDispatcher: function apiDispatcher(e) {
               return i.dispatch(e)
             },
@@ -28792,13 +27333,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           })
         }
         d(99805)
-        var eb = d(22699),
-          nb = d(539466)
-        function db(e) {
+        var $c = d(22699),
+          eb = d(539466)
+        function nb(e) {
           return { debug: !0, log: JSON.stringify(e) }
         }
-        var tb = ['client', 'page', 'section', 'component', 'element', 'action'],
-          ab = (function () {
+        var db = ['client', 'page', 'section', 'component', 'element', 'action'],
+          tb = (function () {
             function e(n) {
               ;(0, c.Z)(this, e), (this._namespace = n)
             }
@@ -28821,7 +27362,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   value: function value(n) {
                     var d = n instanceof e ? n.toObject() : n
                     return new e(
-                      tb.reduce(function (e, n) {
+                      db.reduce(function (e, n) {
                         return d[n] && (e[n] = d[n]), e
                       }, this.toObject()),
                     )
@@ -28837,7 +27378,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   key: 'toString',
                   value: function value() {
                     var e = this
-                    return tb
+                    return db
                       .map(function (n) {
                         return e._namespace[n]
                       })
@@ -28854,7 +27395,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          rb = (function () {
+          ab = (function () {
             function e(n) {
               ;(0, c.Z)(this, e), (this._sequenceStartTimestamp = n), (this._sequenceNumber = 0)
             }
@@ -28874,11 +27415,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          ob = ['client_event', 'live_video_heartbeat_event'],
-          ib = function ib(e) {
-            return ob.indexOf(e) > -1
+          rb = ['client_event', 'live_video_heartbeat_event'],
+          ob = function ob(e) {
+            return rb.indexOf(e) > -1
           },
-          lb = (function (e) {
+          ib = (function (e) {
             ;(0, m.Z)(d, e)
             var n = (0, h.Z)(d)
             function d(e) {
@@ -28910,7 +27451,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 (t._logBuffer = []),
                 null === l
                   ? ((t.flush = Ke.Z), (t.log = Ke.Z), (t.emit = Ke.Z))
-                  : (t.flush = i ? (0, nb.Z)(t.flushImmediate, 3e3, { trailing: !0 }) : t.flushImmediate),
+                  : (t.flush = i ? (0, eb.Z)(t.flushImmediate, 3e3, { trailing: !0 }) : t.flushImmediate),
                 t
               )
             }
@@ -28922,9 +27463,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                     var t = Date.now(),
                       a = (0, f.Z)({ _category_: n, format_version: 2, triggered_on: t }, d)
                     if (
-                      (e && ib(n) && (a = (0, f.Z)((0, f.Z)({}, a), {}, { event_namespace: e })), 'client_event' === n)
+                      (e && ob(n) && (a = (0, f.Z)((0, f.Z)({}, a), {}, { event_namespace: e })), 'client_event' === n)
                     ) {
-                      this._clientEventSequenceManager || (this._clientEventSequenceManager = new rb(t))
+                      this._clientEventSequenceManager || (this._clientEventSequenceManager = new ab(t))
                       var r = this._clientEventSequenceManager.getSequenceNumber(),
                         o = r.sequenceNumber,
                         i = r.sequenceStartTimestamp
@@ -28940,7 +27481,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 {
                   key: 'createPayload',
                   value: function value(e) {
-                    return db(e)
+                    return nb(e)
                   },
                 },
                 {
@@ -28959,7 +27500,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       t = e,
                       a = (n && n._category_) || this.category
                     try {
-                      ;(t = ib(a) && e ? this._prepareNamespace(e) : null),
+                      ;(t = ob(a) && e ? this._prepareNamespace(e) : null),
                         (d = this.createEventObject(t, a, n)),
                         this.eventTransformer && (d = this.eventTransformer(d))
                     } catch (r) {
@@ -28994,7 +27535,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 {
                   key: '_prepareNamespace',
                   value: function value(e) {
-                    var n = e instanceof ab ? e : new ab(e)
+                    var n = e instanceof tb ? e : new tb(e)
                     if (n.client) {
                       if (n.client !== this.clientName)
                         throw new Error(
@@ -29008,10 +27549,10 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]),
               d
             )
-          })(eb.EventEmitter)
-        var ub = lb
-        var sb = function sb(e) {
-          var n = new ub((0, f.Z)({ category: 'client_event', shouldBuffer: !0 }, e))
+          })($c.EventEmitter)
+        var lb = ib
+        var ub = function ub(e) {
+          var n = new lb((0, f.Z)({ category: 'client_event', shouldBuffer: !0 }, e))
           return (
             window.addEventListener('pagehide', function () {
               n.flushOnExit()
@@ -29025,22 +27566,22 @@ window.__SCRIPTS_LOADED__.vendor &&
             n
           )
         }
-        var cb = function cb(e) {
+        var sb = function sb(e) {
             return function (n) {
-              return e.Jot.clientEvent(db(n))
+              return e.Jot.clientEvent(nb(n))
+            }
+          },
+          cb = function cb(e) {
+            return function (n) {
+              return e.Jot.clientEvent(nb(n), !0)
             }
           },
           bb = function bb(e) {
             return function (n) {
-              return e.Jot.clientEvent(db(n), !0)
-            }
-          },
-          pb = function pb(e) {
-            return function (n) {
               return (0, f.Z)((0, f.Z)({}, n), {}, { client_app_id: n.client_app_id || e })
             }
           }
-        var mb = Object.freeze({
+        var pb = Object.freeze({
           appReloader: 'appReloader',
           badgeTimers: 'badgeTimers',
           userPresence: 'userPresence',
@@ -29056,61 +27597,61 @@ window.__SCRIPTS_LOADED__.vendor &&
         })
         Object.freeze(
           (0, f.Z)(
-            (0, f.Z)({}, mb),
+            (0, f.Z)({}, pb),
             {},
             { ColumnFromPath: 'ColumnFromPath', ColumnTimelineAdapter: 'ColumnTimelineAdapter' },
           ),
         )
-        function hb() {
-          return mb
+        function mb() {
+          return pb
         }
-        var Ab = hb()
-        function Db(e, n, d) {
+        var hb = mb()
+        function Ab(e, n, d) {
           var t = d.api,
             a = d.featureSwitches,
             r = d.scribe,
             o = d.store,
             i = d.trafficRewriter
           switch (e) {
-            case Ab.appReloader:
+            case hb.appReloader:
               return void n.appReloader.init(o, a)
-            case Ab.badgeTimers:
+            case hb.badgeTimers:
               return void n.badgeTimers(o)
-            case Ab.userPresence:
+            case hb.userPresence:
               return void n.userPresence.init(o)
-            case Ab.inputDetect:
+            case hb.inputDetect:
               return void n.inputDetect.initialize()
-            case Ab.scribeExternalReferer:
+            case hb.scribeExternalReferer:
               return void n.scribeExternalReferer(t, a, r, o)
-            case Ab.LivePipeline:
+            case hb.LivePipeline:
               return void (n.LivePipeline.isSupported(a) && n.LivePipeline.create(a, t, i))
-            case Ab.multiAccountListFetcher:
+            case hb.multiAccountListFetcher:
               return void (d.hasMultiAccountCookie && n.multiAccountListFetcher(d.store))
-            case Ab.ie11Reflower:
+            case hb.ie11Reflower:
               return void n.ie11Reflower.init(document)
-            case Ab.redirectEmailUser:
+            case hb.redirectEmailUser:
               return void n.redirectEmailUser(a, o.getState())
-            case Ab.altSvc:
+            case hb.altSvc:
               return void n.altSvc(a, t, o.dispatch)
-            case Ab.initGeoLocation:
+            case hb.initGeoLocation:
               return void n.initGeoLocation(o)
-            case Ab.AudioModule:
+            case hb.AudioModule:
               return void n.AudioModule.init(d)
-            case Ab.ColumnFromPath:
+            case hb.ColumnFromPath:
               return void n.ColumnFromPath.init(o)
-            case Ab.ColumnTimelineAdapter:
+            case hb.ColumnTimelineAdapter:
               return void n.ColumnTimelineAdapter.init(o)
             default:
               ;(0, G.ZP)('[initAppModules] Unexpected app module ['.concat(e, ']'))
           }
         }
-        var Sb = d(151742)
-        var vb = function vb() {
+        var Db = d(151742)
+        var Sb = function Sb() {
           return d.e('loader.LoggedOutNotifications').then(d.bind(d, 305780))
         }
-        var gb = d(404265)
-        var fb = d(569165)
-        var wb = function wb(e) {
+        var vb = d(404265)
+        var gb = d(569165)
+        var fb = function fb(e) {
           'serviceWorker' in window.navigator &&
             ((window.navigator.serviceWorker.onmessage = (function (e) {
               return function (n) {
@@ -29139,82 +27680,26 @@ window.__SCRIPTS_LOADED__.vendor &&
               BroadcastChannel &&
               new BroadcastChannel('ACTION_READY').postMessage(!0))
         }
-        var Mb = d(641268)
-        var yb = d(871570),
-          Cb = d(917341),
-          Tb = d(361577)
-        var _b = ['failedScript']
-        var kb = function kb() {
+        var wb = d(641268)
+        var Mb = d(871570),
+          yb = d(917341),
+          Cb = d(361577)
+        var Tb = ['failedScript']
+        var _b = function _b() {
           if (i.ZP) {
             var e = i.ZP.location.query
             if (e.failedScript) {
               e.failedScript
-              var n = (0, un.Z)(e, _b)
+              var n = (0, un.Z)(e, Tb)
               i.ZP.replace((0, f.Z)((0, f.Z)({}, i.ZP.location), {}, { query: n || {}, search: '' }))
             }
           }
         }
-        var Pb = d(289129),
-          Eb = d(177953),
-          Rb = d(490434),
-          Zb = d.n(Rb),
-          Ib = d(620616),
-          Bb = (function () {
-            function e() {
-              ;(0, c.Z)(this, e)
-            }
-            return (
-              (0, b.Z)(e, [
-                {
-                  key: 'shouldProceed',
-                  value: function value(e, n) {
-                    return (e.state = (0, f.Z)((0, f.Z)({}, e.state), {}, { isGryphon: !0 })), !0
-                  },
-                },
-              ]),
-              e
-            )
-          })()
-        var xb = function xb() {
-          var e = gt.useState(!1),
-            n = (0, x.Z)(e, 2),
-            d = (n[0], n[1])
-          gt.useCallback(function () {
-            d(!0)
-          }, [])
-          return (
-            gt.useEffect(function () {
-              i.ZP.replace(
-                (0, f.Z)(
-                  (0, f.Z)({}, i.ZP.location),
-                  {},
-                  { state: (0, f.Z)((0, f.Z)({}, i.ZP.location.state), {}, { isGryphon: !0 }) },
-                ),
-              ),
-                i.ZP.addInterceptor(new Bb())
-            }, []),
-            null
-          )
-        }
-        Tt.Z.create(function (e) {
-          return {
-            root: {
-              alignItems: 'center',
-              backgroundColor: e.colors.primary0,
-              end: 0,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              opacity: 0.85,
-              padding: e.spaces.space8,
-              position: 'fixed',
-              start: 0,
-              top: 0,
-            },
-          }
-        })
-        var Lb = 'gryphonLayout'
-        gt.Component
-        var Nb = (function (e) {
+        var kb = d(289129),
+          Pb = d(177953),
+          Eb = d(490434),
+          Rb = d.n(Eb),
+          Zb = (function (e) {
             ;(0, m.Z)(d, e)
             var n = (0, h.Z)(d)
             function d() {
@@ -29244,12 +27729,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                       r = e.store,
                       o = this.state.isMounted ? gt.createElement(ft.F0, (0, Pt.Z)({ history: d }, a)) : null
                     return gt.createElement(
-                      Eb.zt,
+                      Pb.zt,
                       { store: r },
                       gt.createElement(
-                        Zb(),
+                        Rb(),
                         { environment: t },
-                        gt.createElement(Lt.ZP, (0, Pt.Z)({ children: o, history: d }, n)),
+                        gt.createElement(Nt.ZP, (0, Pt.Z)({ children: o, history: d }, n)),
                       ),
                     )
                   },
@@ -29257,38 +27742,41 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]),
               d
             )
-          })(gt.Component),
-          Ob = Nb
-        var Fb = Ob
-        Pb.Z.registerComponent('App', function () {
-          return Fb
+          })(gt.Component)
+        var Ib = function Ib(e) {
+          e.history
+          return gt.createElement(Zb, e)
+        }
+        kb.Z.registerComponent('App', function () {
+          return Ib
         })
-        var Ub = d(350983),
-          Hb = d.n(Ub),
-          jb = d(241487),
-          zb = d(865478)
-        var Vb = function Vb() {
-          var e = gt.useContext(zb.Z)
+        var Bb = d(350983),
+          xb = d.n(Bb),
+          Nb = d(241487),
+          Lb = d(620616),
+          Ob = d(865478)
+        var Fb = function Fb() {
+          var e = gt.useContext(Ob.Z)
           return gt.useCallback(
             function (n, d) {
               ;('click' === n && d && d.currentTarget !== document.activeElement) ||
-                (Xc.E6 && Xc.E6.log({ contextData: e, actionLiteral: n }))
+                (Yc.E6 && Yc.E6.log({ contextData: e, actionLiteral: n }))
             },
             [e],
           )
         }
-        var Wb = d(436934),
-          Gb = d(877934),
-          qb = d(326671),
-          Qb = d(909933),
-          Kb = d(971575),
-          Yb = d(191062),
-          Xb = d(868011),
-          Jb = d(275297),
-          $b = d(36746),
-          ep = d(496204),
-          np = kt().b41ba996,
-          dp = (function (e) {
+        var Ub = d(436934),
+          Hb = d(877934),
+          jb = d(326671),
+          zb = d(909933),
+          Vb = d(971575),
+          Wb = d(191062),
+          Gb = d(868011),
+          qb = d(275297),
+          Qb = d(36746),
+          Kb = d(496204),
+          Yb = kt().b41ba996,
+          Xb = (function (e) {
             ;(0, m.Z)(d, e)
             var n = (0, h.Z)(d)
             function d() {
@@ -29302,11 +27790,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 (0, Z.Z)((0, p.Z)(e), '_renderContent', function () {
                   return gt.createElement(
                     Et.Z,
-                    { style: tp.root },
-                    gt.createElement(ep.Z, {
+                    { style: Jb.root },
+                    gt.createElement(Kb.Z, {
                       showRelationshipChangeConfirmation: !1,
                       topicId: e.props.topicId,
-                      topicLandingContext: np,
+                      topicLandingContext: Yb,
                       withDivider: !1,
                     }),
                   )
@@ -29322,45 +27810,45 @@ window.__SCRIPTS_LOADED__.vendor &&
                     var e = this.props,
                       n = e.children,
                       d = e.wrapperStyle
-                    return gt.createElement($b.Z, { renderContent: this._renderContent, wrapperStyle: d }, n)
+                    return gt.createElement(Qb.Z, { renderContent: this._renderContent, wrapperStyle: d }, n)
                   },
                 },
               ]),
               d
             )
           })(gt.PureComponent),
-          tp = Tt.Z.create(function (e) {
+          Jb = Tt.Z.create(function (e) {
             return { root: { minHeight: 130, width: qt.Z.cardWidth.normal } }
           })
-        var ap = dp
-        var rp = d(488809),
-          op = d(312599),
-          ip = d(165815),
-          lp = d(845855),
-          up = d(808716),
-          sp = (0, dn.Z)(function (e) {
+        var $b = Xb
+        var ep = d(488809),
+          np = d(312599),
+          dp = d(165815),
+          tp = d(845855),
+          ap = d(808716),
+          rp = (0, dn.Z)(function (e) {
             var n = e.getState()
             ra.Z.setReducedMotion((0, Bd.DM)(n)),
               oa.Z.set((0, Bd.IX)(n)),
-              Wb.ZP.setLanguage((0, P.VT)(n) || 'en'),
-              qb.Z.set(G.ZP)
-            Xb.Z.set(function (e) {
-              return gt.createElement(rp.Z, e)
+              Ub.ZP.setLanguage((0, P.VT)(n) || 'en'),
+              jb.Z.set(G.ZP)
+            Gb.Z.set(function (e) {
+              return gt.createElement(ep.Z, e)
             })
-            Yb.Z.set(function (e) {
-              return gt.createElement(ap, e)
+            Wb.Z.set(function (e) {
+              return gt.createElement($b, e)
             }),
-              Gb.ZP.set({ provider: op.Z, loggerHook: Vb, viewImpressor: ip.Z }),
-              Qb.Z.set(Jb.Z),
-              Kb.Z.set({ provider: lp.nO, analyticsHook: up.Z }),
+              Hb.ZP.set({ provider: np.Z, loggerHook: Fb, viewImpressor: dp.Z }),
+              zb.Z.set(qb.Z),
+              Vb.Z.set({ provider: tp.nO, analyticsHook: ap.Z }),
               e.subscribe(function () {
                 oa.Z.set((0, Bd.IX)(n))
               })
           })
-        var cp = sp
-        var bp,
-          pp,
-          mp = function mp(e) {
+        var op = rp
+        var ip,
+          lp,
+          up = function up(e) {
             var n = document.documentElement,
               d = document.body,
               t = document.querySelector('meta[name="theme-color"]'),
@@ -29375,7 +27863,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               o = Tt.Z.theme.colors.gray0
             d && (d.style.scrollbarColor = ''.concat(r, ' ').concat(o))
           }
-        function hp(e) {
+        function sp(e) {
           var n = e.featureSwitches,
             d = e.isRTL,
             t = e.node,
@@ -29385,22 +27873,22 @@ window.__SCRIPTS_LOADED__.vendor &&
             l = e.themePaletteName,
             u = e.userClaims
           return (
-            jb.Z.setPreferredLanguageRTL(d),
-            Hb().setGlobalDir(d ? 'RTL' : 'LTR'),
+            Nb.Z.setPreferredLanguageRTL(d),
+            xb().setGlobalDir(d ? 'RTL' : 'LTR'),
             (function (e, n) {
               var d = document.documentElement,
                 t = document.body
               Tt.Z.setTheme(n),
                 t &&
-                  (mp(e),
+                  (up(e),
                   Tt.Z.onThemeChange(function () {
-                    return mp(e)
+                    return up(e)
                   })),
                 d && (d.style.fontSize = ''.concat(Tt.Z.theme.baseFontSize, 'px'))
             })(n, l),
-            cp(o),
+            op(o),
             new Promise(function (e) {
-              Pb.Z.runApplication('App', {
+              kb.Z.runApplication('App', {
                 callback: e,
                 hydrate: !1,
                 rootTag: t,
@@ -29408,7 +27896,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   history: i.ZP,
                   contextProviderProps: { featureSwitches: n, userClaims: u },
                   relayEnvironment: a,
-                  routerProps: { children: gt.createElement(Ib.ZP, { children: r, identifier: 'app' }) },
+                  routerProps: { children: gt.createElement(Lb.ZP, { children: r, identifier: 'app' }) },
                   store: o,
                 },
               })
@@ -29416,68 +27904,68 @@ window.__SCRIPTS_LOADED__.vendor &&
           )
         }
         ;(0, r.GP)(), (0, r.Fl)(!1), Ed.Z.register(xd)
-        var Ap = ve.i(window.__INITIAL_STATE__ || {}, en.AK)
+        var cp = ve.i(window.__INITIAL_STATE__ || {}, en.AK)
         delete window.__INITIAL_STATE__
-        var Dp = document.getElementById('react-root'),
-          Sp =
+        var bp = document.getElementById('react-root'),
+          pp =
             'rtl' ===
-            (null === (bp = document) || void 0 === bp || null === (pp = bp.documentElement) || void 0 === pp
+            (null === (ip = document) || void 0 === ip || null === (lp = ip.documentElement) || void 0 === lp
               ? void 0
-              : pp.getAttribute('dir')),
-          vp = (0, ee.s)(),
-          gp = vp.countryCode,
-          fp = vp.hasMultiAccountCookie,
-          wp = vp.isLoggedIn,
-          Mp = vp.unsupportedEngine
-        ge.cY(i.ZP.location, i.ZP.listen, { country: gp }),
+              : lp.getAttribute('dir')),
+          mp = (0, ee.s)(),
+          hp = mp.countryCode,
+          Ap = mp.hasMultiAccountCookie,
+          Dp = mp.isLoggedIn,
+          Sp = mp.unsupportedEngine
+        ge.cY(i.ZP.location, i.ZP.listen, { country: hp }),
           o.Z.addEventListener('change', function (e) {
             ge.QO(), ge.gr()
           })
-        var yp = new We.Z(ne.Yh),
-          Cp = Ap && Ap.session && Ap.session.user_id
-        var Tp,
-          _p,
-          kp = Zd(Ap, {
+        var vp = new We.Z(ne.Yh),
+          gp = cp && cp.session && cp.session.user_id
+        var fp,
+          wp,
+          Mp = Zd(cp, {
             get api() {
-              return Jp
+              return bm
             },
             get featureSwitches() {
-              return jp
+              return dm
             },
             get userClaims() {
-              return zp
+              return tm
             },
             get scribe() {
-              return $p
+              return pm
             },
             get relayEnvironment() {
-              return Xp
+              return cm
             },
-            userPersistence: new We.Z(ne.Yh, Cp || null),
-            devicePersistence: yp,
+            userPersistence: new We.Z(ne.Yh, gp || null),
+            devicePersistence: vp,
             sentry:
-              ((Tp = window.Sentry),
-              (_p = function _p() {
-                void 0 !== Tp &&
-                  Tp.configureScope(function (e) {
+              ((fp = window.Sentry),
+              (wp = function wp() {
+                void 0 !== fp &&
+                  fp.configureScope(function (e) {
                     e.setTags(Qe)
                   })
               }),
               {
                 addFeatureSwitch: function addFeatureSwitch(e, n) {
                   var d = 'fs_'.concat(e.replace('responsive_web', 'rweb')).substring(0, 32)
-                  ;(Qe[d] = n), _p()
+                  ;(Qe[d] = n), wp()
                 },
                 addTag: function addTag(e, n) {
                   var d = e.substring(0, 32)
-                  ;(Qe[d] = n), _p()
+                  ;(Qe[d] = n), wp()
                 },
-                init: _p,
+                init: wp,
               }),
           }),
-          Pp = Promise.resolve()
-        Ap.featureSwitch ||
-          ((Pp = (Pp = window.__FEATURE_SWITCH_MANIFEST__
+          yp = Promise.resolve()
+        cp.featureSwitch ||
+          ((yp = (yp = window.__FEATURE_SWITCH_MANIFEST__
             ? Promise.resolve(window.__FEATURE_SWITCH_MANIFEST__)
             : new Promise(function (e) {
                 window.__FEATURE_SWITCH_MANIFEST__ = e
@@ -29487,57 +27975,76 @@ window.__SCRIPTS_LOADED__.vendor &&
               d = e.debug,
               r = e.feature_set_token
             delete window.__FEATURE_SWITCH_MANIFEST__,
-              'string' == typeof r && kp.dispatch((0, Id.Dw)(r)),
-              'object' === (0, t.Z)(n) && kp.dispatch((0, Id.mn)(n)),
-              'prod' !== a.OB && 'object' === (0, t.Z)(d) && kp.dispatch((0, Id.ew)(d))
+              'string' == typeof r && Mp.dispatch((0, Id.Dw)(r)),
+              'object' === (0, t.Z)(n) && Mp.dispatch((0, Id.mn)(n)),
+              'prod' !== a.OB && 'object' === (0, t.Z)(d) && Mp.dispatch((0, Id.ew)(d))
           })),
-          (Pp = (Pp = Promise.race([
-            Pp,
+          (yp = (yp = Promise.race([
+            yp,
             new Promise(function (e) {
               return setTimeout(e, 7e3)
             }),
           ]))
             .then(function () {
-              return kp.dispatch((0, Id.vR)({}))
+              return Mp.dispatch((0, Id.vR)({}))
             })
             ['catch'](function () {
-              return kp.dispatch((0, Id.vR)({}))
+              return Mp.dispatch((0, Id.vR)({}))
             })
             ['catch'](function () {})))
-        var Ep,
+        var Cp,
+          Tp,
+          _p,
+          kp,
+          Pp,
+          Ep,
           Rp,
           Zp,
           Ip,
           Bp,
           xp,
-          Lp,
           Np,
+          Lp,
           Op,
           Fp,
           Up,
           Hp,
-          jp = (0, ue.BH)(kp),
-          zp = ln(kp, jp),
-          Vp = (0, ue.ad)(kp),
-          Wp = function Wp() {
+          jp,
+          zp,
+          Vp,
+          Wp,
+          Gp,
+          qp,
+          Qp,
+          Kp,
+          Yp,
+          Xp,
+          Jp,
+          $p,
+          em,
+          nm,
+          dm = (0, ue.BH)(Mp),
+          tm = ln(Mp, dm),
+          am = (0, ue.ad)(Mp),
+          rm = function rm() {
             return (
-              Ep ||
-                (Ep = new Q(function () {
-                  return Jp.Auth.requestGuestToken().then(function (e) {
+              Cp ||
+                (Cp = new Q(function () {
+                  return bm.Auth.requestGuestToken().then(function (e) {
                     return e.guest_token
                   })
-                }, jp)),
-              Ep
+                }, dm)),
+              Cp
             )
           },
-          Gp = new B(),
-          qp = (0, M.Oj)(),
-          Qp = window.location.host,
-          Kp =
-            ((Rp = function Rp() {
-              return jp.getArrayValue('traffic_rewrite_map')
+          om = new B(),
+          im = (0, M.Oj)(),
+          lm = window.location.host,
+          um =
+            ((Tp = function Tp() {
+              return dm.getArrayValue('traffic_rewrite_map')
             }),
-            (Zp = (0, dn.Z)(an)),
+            (_p = (0, dn.Z)(an)),
             {
               getReplacementHost: function getReplacementHost(e) {
                 return (function (e, n) {
@@ -29552,10 +28059,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                     )
                       return t.replacementHost
                   }
-                })(e, Zp(Rp()))
+                })(e, _p(Tp()))
               },
             }),
-          Yp = new g.ZP(jp, {
+          sm = new g.ZP(dm, {
             dispatcher: l.e2,
             retryFilter: (function (e) {
               return function (n, d) {
@@ -29571,9 +28078,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   throw n
                 })
               }
-            })(Wp),
+            })(rm),
             filters: [
-              ((Hp = {}),
+              ((Np = {}),
               function (e, n) {
                 return (function (e, n, d) {
                   var t = (0, C.stringify)(e.params),
@@ -29593,7 +28100,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                             return delete d[i], Promise.reject(e)
                           }))
                     : n(e)
-                })(e, n, Hp)
+                })(e, n, Np)
               }),
               (function (e, n, d, t) {
                 return function (a, r) {
@@ -29609,27 +28116,27 @@ window.__SCRIPTS_LOADED__.vendor &&
                     })
                   )
                 }
-              })(qp, !!wp, null, Wp),
-              ((Up = function Up() {
-                return kp
+              })(im, !!Dp, null, rm),
+              ((xp = function xp() {
+                return Mp
               }),
               function (e, n) {
                 if (e.host === g.F$ || e.host === E.cardsHost) {
-                  var d = Up(),
+                  var d = xp(),
                     t = (0, P.F5)(d.getState())
                   t && (e.headers['x-twitter-client-language'] = (0, k.o)(t))
                 }
                 return n(e)
               }),
-              W(Cp),
-              ((Op = function Op() {
-                return jp.isTrue('responsive_web_zipkin_api_requests_enabled')
+              W(gp),
+              ((Ip = function Ip() {
+                return dm.isTrue('responsive_web_zipkin_api_requests_enabled')
               }),
-              (Fp = function Fp() {
-                return jp.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
+              (Bp = function Bp() {
+                return dm.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
               }),
               function (e, n) {
-                if (e.host === g.F$ && Op() && Fp().includes(e.path)) {
+                if (e.host === g.F$ && Ip() && Bp().includes(e.path)) {
                   var d = (0, f.Z)((0, f.Z)({}, e.headers), {}, { 'x-b3-flags': '1' })
                   return n((0, f.Z)((0, f.Z)({}, e), {}, { headers: d }))
                 }
@@ -29654,12 +28161,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                 return n(e)
               },
-              Gp.filter,
-              ((Np = function Np() {
-                return 'host' === jp.getStringValue('network_layer_503_backoff_mode')
+              om.filter,
+              ((Zp = function Zp() {
+                return 'host' === dm.getStringValue('network_layer_503_backoff_mode')
               }),
               function (e, n) {
-                if (!Np()) return n(e)
+                if (!Zp()) return n(e)
                 if ('text/event-stream' === e.headers.accept) return n(e)
                 var d = new URL(e.uri)
                 if (d.host === H && '/1.1/help/settings.json' === d.pathname) return n(e)
@@ -29686,25 +28193,25 @@ window.__SCRIPTS_LOADED__.vendor &&
                     r = a + n.path
                   return d((0, f.Z)((0, f.Z)({}, n), {}, { host: a, uri: r }))
                 }
-              })(Kp),
-              ((Ip = {
+              })(um),
+              ((kp = {
                 isApiTransitionEnabled: function isApiTransitionEnabled() {
-                  return jp.isTrue('responsive_web_api_transition_enabled')
+                  return dm.isTrue('responsive_web_api_transition_enabled')
                 },
                 getWindowLocationHost: function getWindowLocationHost() {
-                  return Qp
+                  return lm
                 },
                 isLocalDevelopment: function isLocalDevelopment() {
-                  return Qp.indexOf('localhost') > -1
+                  return lm.indexOf('localhost') > -1
                 },
               }),
-              (Bp = Ip.getWindowLocationHost),
-              (xp = Ip.isApiTransitionEnabled),
-              (Lp = Ip.isLocalDevelopment),
+              (Pp = kp.getWindowLocationHost),
+              (Ep = kp.isApiTransitionEnabled),
+              (Rp = kp.isLocalDevelopment),
               function (e, n) {
                 if (
-                  !xp() ||
-                  Lp() ||
+                  !Ep() ||
+                  Rp() ||
                   !window.document.cookie.split(';').some(function (e) {
                     return e.startsWith('gt=') || e.startsWith('ct0=')
                   }) ||
@@ -29717,7 +28224,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 )
                   return n(e)
                 var d,
-                  t = 'https://'.concat(Bp()),
+                  t = 'https://'.concat(Pp()),
                   a = '/i/api'.concat(e.path),
                   r = t + a
                 return n((0, f.Z)((0, f.Z)({}, e), {}, { host: t, path: a, uri: r }))
@@ -29745,41 +28252,1476 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                   return d((0, f.Z)((0, f.Z)({}, n), {}, { headers: (0, f.Z)((0, f.Z)({}, n.headers), t) }))
                 }
-              })(jp),
+              })(dm),
             ],
           }),
-          Xp = vt(Yp, kp),
-          Jp = new v(Yp, Xp),
-          $p = (function (e) {
+          cm = vt(sm, Mp),
+          bm = new v(sm, cm),
+          pm = (function (e) {
             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-              d = (0, Jc.Z)(),
+              d = (0, Xc.Z)(),
               t = d.clientAppId,
               a = d.clientName
-            return sb((0, f.Z)({ clientName: a, eventTransformer: pb(t), transport: cb(e), unloadTransport: bb(e) }, n))
-          })(Jp),
-          em = qc()
-        Pp.then(function () {
-          $c({ api: Jp, behavioralEventAllowlist: Vp, featureSwitches: jp }),
-            fe.S1(Jp),
+            return ub((0, f.Z)({ clientName: a, eventTransformer: bb(t), transport: sb(e), unloadTransport: cb(e) }, n))
+          })(bm),
+          mm = gt.createElement(
+            ft.rs,
+            null,
+            [
+              gt.createElement(_a.Z, {
+                from: '/your_twitter_data',
+                key: 'your_twitter_data_redirect_1',
+                to: '/settings/your_twitter_data',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/webview/your_twitter_data',
+                key: 'your_twitter_data_redirect_2',
+                to: '/settings/your_twitter_data',
+              }),
+              gt.createElement(_a.Z, {
+                from: '/webview/your_twitter_data/*',
+                key: 'your_twitter_data_redirect_3',
+                to: '/settings/your_twitter_data/*',
+              }),
+              gt.createElement(_a.Z, {
+                from: '/webview/applications',
+                key: 'settings_applications_redirect',
+                to: '/settings/applications',
+              }),
+              gt.createElement(_a.Z, {
+                from: '/personalization',
+                key: 'personalization_redirect',
+                to: '/settings/account/personalization',
+              }),
+              gt.createElement(_a.Z, { from: '/welcome', key: 'welcome_redirect', to: '/i/flow/post_signup' }),
+              gt.createElement(_a.Z, { from: '/download', key: 'download_redirect', to: '/settings/download' }),
+              gt.createElement(_a.Z, { from: '/i/connect', key: 'connect_redirect', to: '/notifications' }),
+              gt.createElement(_a.Z, { from: '/mentions', key: 'mentions_redirect', to: '/notifications/mentions' }),
+              gt.createElement(_a.Z, { from: '/i/discover', key: 'discover_redirect', to: '/explore' }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/i/notifications',
+                key: 'notifications_redirect',
+                to: '/notifications',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/account/deactivated',
+                key: 'settings_deactivated_redirect',
+                to: '/settings/deactivated',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/accounts/confirm_deactivation',
+                key: 'settings_confirm_deactivation_redirect',
+                to: '/settings/deactivate',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/add_phone',
+                key: 'settings_add_phone_redirect',
+                to: '/settings/phone',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/blocked',
+                key: 'settings_blocked_redirect',
+                to: '/settings/blocked/all',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/connections',
+                key: 'settings_connections_redirect',
+                to: '/settings/applications',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/design',
+                key: 'settings_design_redirect',
+                to: '/settings/profile',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/devices',
+                key: 'settings_devices_redirect',
+                to: '/settings/phone',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/imported_blocked',
+                key: 'settings_imported_blocked_redirect',
+                to: '/settings/blocked/imported',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/muted',
+                key: 'settings_muted_redirect',
+                to: '/settings/muted/all',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/muted_following',
+                key: 'settings_muted_following_redirect',
+                to: '/settings/muted/following',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/notifications_timeline',
+                key: 'settings_notifications_timelines_redirect',
+                to: '/settings/notifications/advanced_filters',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/personalization',
+                key: 'settings_personalization_redirect',
+                to: '/settings/account/personalization',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/web_notifications',
+                key: 'settings_web_notifications_redirect',
+                to: '/settings/push_notifications',
+              }),
+              gt.createElement(_a.Z, {
+                exact: !0,
+                from: '/settings/your_twitter_data/logins',
+                key: 'settings_your_twitter_data_logins_redirect',
+                to: '/settings/your_twitter_data/login_history',
+              }),
+              gt.createElement(ft.AW, { key: '/@*', path: '/@*', render: Ic }),
+              gt.createElement(ft.AW, { exact: !0, key: '/signup', path: '/signup', render: Gc }),
+              gt.createElement(ft.AW, { exact: !0, key: '/share', path: '/share', render: jc }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/favorites',
+                path: '/'.concat(Za.qX, '/favorites'),
+                render: Nc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/followings',
+                path: '/'.concat(Za.qX, '/followings'),
+                render: Lc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/media/grid',
+                path: '/'.concat(Za.qX, '/media/grid'),
+                render: Oc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/status/:statusId/photo',
+                path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/photo'),
+                render: Fc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/status/:statusId/photos',
+                path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/photos'),
+                render: Fc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/statuses/:statusId',
+                path: '/'.concat(Za.qX, '/statuses/').concat(Za.i_),
+                render: Fc,
+              }),
+              gt.createElement(ft.AW, {
+                key: '/:screenName}/statuses/:statusId/:unsafeOther',
+                path: '/'.concat(Za.qX, '/statuses/').concat(Za.i_, '/').concat(Za.wx),
+                render: Uc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/tweets',
+                path: '/'.concat(Za.qX, '/tweets'),
+                render: zc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/memberships',
+                path: '/'.concat(Za.qX, '/memberships'),
+                render: xc,
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/:screenName/subscriptions',
+                path: '/'.concat(Za.qX, '/subscriptions'),
+                render: Bc,
+              }),
+              gt.createElement(_a.Z, {
+                from: '/account/settings',
+                key: 'account_settings_redirect',
+                to: '/settings/account',
+              }),
+              gt.createElement(ft.AW, {
+                exact: !0,
+                key: '/direct_messages/create/:screenName',
+                path: '/direct_messages/create/'.concat(Za.qX),
+                render: Vc,
+              }),
+              gt.createElement(_a.Z, { exact: !0, from: '/session/new', key: 'session_new_redirect', to: '/login' }),
+              gt.createElement(_a.Z, { exact: !0, from: '/i/moments', key: 'i_moments_redirect', to: '/explore' }),
+              gt.createElement(_a.Z, { exact: !0, from: '/search-home', key: 'search_home_redirect', to: '/search' }),
+              gt.createElement(ft.AW, {
+                key: '/i/tfb/v1/quick_promote/:platform/:statusId',
+                path: '/i/tfb/v1/quick_promote/'.concat(Za.Jv, '/').concat(Za.i_),
+                render: Wc,
+              }),
+              gt.createElement(ft.AW, { component: ya, exact: !0, key: '/i/redirect', path: '/i/redirect' }),
+              gt.createElement(ft.AW, { exact: !0, key: '/i/view', path: '/i/view', render: Hc }),
+              gt.createElement(_a.Z, { exact: !0, from: '/i/reader_mode', key: 'reader_mode_redirect', to: '/home' }),
+            ],
+            gt.createElement(
+              ft.AW,
+              null,
+              gt.createElement(
+                Sa,
+                null,
+                gt.createElement(Ca.Z, null, [
+                  gt.createElement(ft.AW, {
+                    component: ui,
+                    exact: !0,
+                    key: '/i/connect_people',
+                    path: '/i/connect_people',
+                  }),
+                  gt.Children.toArray([
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: pl,
+                      exact: !0,
+                      key: '/login',
+                      path: '/login',
+                      shouldRenderAsModal: function shouldRenderAsModal() {
+                        return !0
+                      },
+                    }),
+                    gt.createElement(ft.AW, { component: bl, exact: !0, key: '/login/error', path: '/login/error' }),
+                    gt.createElement(ft.AW, { component: pl, exact: !0, key: '/login/check', path: '/login/check' }),
+                    gt.createElement(ft.AW, { component: ml, exact: !0, key: '/i/sms_login', path: '/i/sms_login' }),
+                    gt.createElement(ft.AW, { component: cl, exact: !0, key: '/logout', path: '/logout' }),
+                    gt.createElement(ft.AW, { component: hl, exact: !0, key: '/logout/error', path: '/logout/error' }),
+                  ]),
+                  gt.createElement(ft.AW, { component: Iu, exact: !0, key: '/', path: '/' }),
+                  null,
+                  gt.createElement(Ra.Z, {
+                    component: Ia,
+                    exact: !0,
+                    key: '/i/about-this-add/:impressionId',
+                    path: '/i/about-this-ad/'.concat(Za.$F, '/'),
+                  }),
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: Na,
+                      exact: !0,
+                      key: 'account_switcher',
+                      path: '/account/switch',
+                    }),
+                    gt.createElement(Ra.Z, { component: La, exact: !0, key: 'account_add', path: '/account/add' }),
+                    gt.createElement(Ra.Z, {
+                      component: Oa,
+                      defaultBackgroundPath: '/i/ocf_background',
+                      exact: !0,
+                      key: 'not-my-account',
+                      path: '/account/not_my_account/'.concat(Za.qX, '/').concat(Za.HO),
+                    }),
+                    gt.createElement(ft.AW, { component: xa, exact: !0, key: 'dash', path: '/account' }),
+                  ],
+                  gt.createElement(ft.AW, {
+                    component: qa,
+                    key: 'articles',
+                    path: ['/i/articles/'.concat(Za.fW), '/i/articles'],
+                  }),
+                  [
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: cr,
+                      exact: !0,
+                      key: 'birdwatch',
+                      modalSize: Ka.Cg.dynamic,
+                      path: [
+                        '/i/birdwatch/contribute_form/'.concat(Za.A2),
+                        '/i/communitynotes/contribute_form/'.concat(Za.A2),
+                      ],
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: pr,
+                      exact: !0,
+                      key: 'birdwatch_start',
+                      modalSize: Ka.Cg.fitChildren,
+                      path: ['/i/birdwatch/contribute/'.concat(Za.A2), '/i/communitynotes/contribute/'.concat(Za.A2)],
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: br,
+                      exact: !0,
+                      key: 'birdwatch_complete',
+                      modalSize: Ka.Cg.fitChildren,
+                      path: [
+                        '/i/birdwatch/'.concat(Za.A2, '/contribute_complete'),
+                        '/i/birdwatch/'.concat(Za.A2, '/contribute_complete/').concat(Za.fP),
+                        '/i/communitynotes/'.concat(Za.A2, '/contribute_complete'),
+                        '/i/communitynotes/'.concat(Za.A2, '/contribute_complete/').concat(Za.fP),
+                      ],
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: Dr,
+                      exact: !0,
+                      key: '/i/birdwatch/n/:noteId',
+                      modalSize: Ka.Cg.dynamic,
+                      path: ['/i/birdwatch/n/'.concat(Za.Do), '/i/communitynotes/n/'.concat(Za.Do)],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Sr,
+                      exact: !0,
+                      key: '/i/communitynotes/notification_settings',
+                      path: '/i/communitynotes/notification_settings',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: sr,
+                      exact: !0,
+                      key: '/i/birdwatch/country-unavailable',
+                      path: ['/i/birdwatch/country-unavailable', '/i/communitynotes/country-unavailable'],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: mr,
+                      exact: !0,
+                      key: '/i/birdwatch/t/:id',
+                      path: ['/i/birdwatch/t/'.concat(Za.A2), '/i/communitynotes/t/'.concat(Za.A2)],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Ar,
+                      exact: !0,
+                      key: '/i/birdwatch/u/me',
+                      path: ['/i/birdwatch/u/me', '/i/communitynotes/u/me'],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: hr,
+                      exact: !0,
+                      key: '/i/birdwatch/u/:alias',
+                      path: ['/i/birdwatch/u/'.concat(Za.bm), '/i/communitynotes/u/'.concat(Za.bm)],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: ir,
+                      exact: !0,
+                      key: '/i/birdwatch/about',
+                      path: ['/i/birdwatch/about', '/i/communitynotes/about'],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: gr,
+                      exact: !0,
+                      key: '/i/birdwatch/download-data',
+                      path: ['/i/birdwatch/download-data', '/i/communitynotes/download-data'],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: vr,
+                      exact: !0,
+                      key: '/i/birdwatch',
+                      path: [
+                        '/i/birdwatch',
+                        '/i/birdwatch/'.concat(Za.fW),
+                        '/i/communitynotes',
+                        '/i/communitynotes/'.concat(Za.fW),
+                      ],
+                    }),
+                  ],
+                  gt.createElement(Ra.Z, {
+                    component: Yi,
+                    exact: !0,
+                    key: 'display',
+                    modalSize: 'dynamic',
+                    path: '/i/display',
+                  }),
+                  [
+                    gt.createElement(ft.AW, { component: kr, exact: !0, key: '/i/bookmarks', path: '/i/bookmarks' }),
+                    gt.createElement(ft.AW, {
+                      component: Er,
+                      exact: !0,
+                      key: '/i/bookmarks/all',
+                      path: '/i/bookmarks/all',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Rr,
+                      exact: !0,
+                      key: '/i/bookmarks/FolderId',
+                      path: '/i/bookmarks/'.concat(Za.aD),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Zr,
+                      key: 'bookmark_edit',
+                      modalSize: 'dynamic',
+                      path: '/i/bookmarks/'.concat(Za.aD, '/edit'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Pr,
+                      exact: !0,
+                      key: 'bookmark_add',
+                      modalSize: 'fixed',
+                      path: '/i/bookmarks/add',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ir,
+                      exact: !0,
+                      key: 'bookmark_folder_create',
+                      modalSize: 'dynamic',
+                      path: '/i/bookmarks/create_folder',
+                    }),
+                  ],
+                  gt.createElement(ft.AW, {
+                    component: xr,
+                    exact: !0,
+                    key: '/i/branded_likes_preview',
+                    path: '/i/branded_likes_preview',
+                  }),
+                  gt.createElement(ft.AW, {
+                    component: Nr,
+                    exact: !0,
+                    key: '/i/broadcasts/:broadcastId',
+                    path: '/i/broadcasts/'.concat(Za.cD),
+                  }),
+                  [
+                    gt.createElement(ft.AW, {
+                      component: Qr,
+                      exact: !0,
+                      key: '/:screenName/timelines/:collectionId',
+                      path: '/'.concat(Za.qX, '/timelines/').concat(Za.I2),
+                    }),
+                    gt.createElement(ft.AW, {
+                      exact: !0,
+                      key: '/:screenName/carousels/:collectionId',
+                      path: '/'.concat(Za.qX, '/carousels/').concat(Za.I2),
+                      render: Kr,
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: Fo,
+                      defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
+                      exact: !0,
+                      key: '/i/communities/'.concat(Za.Q7, '/tools/rules/add'),
+                      path: '/i/communities/'.concat(Za.Q7, '/tools/rules/add'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Uo,
+                      defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
+                      exact: !0,
+                      key: '/i/communities/'.concat(Za.Q7, '/tools/rules/').concat(Za.Cy, '/edit'),
+                      path: '/i/communities/'.concat(Za.Q7, '/tools/rules/').concat(Za.Cy, '/edit'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: No,
+                      defaultBackgroundPath: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
+                      exact: !0,
+                      key: '/i/communities/'.concat(Za.Q7, '/tools/settings/theme'),
+                      modalSize: 'fitChildren',
+                      path: '/i/communities/'.concat(Za.Q7, '/tools/settings/theme'),
+                    }),
+                    gt.createElement(
+                      ft.AW,
+                      {
+                        key: '/i/communities/'.concat(Za.Q7, '/tools'),
+                        path: '/i/communities/'.concat(Za.Q7, '/tools'),
+                      },
+                      gt.createElement(
+                        Ua.Z,
+                        { rootComponent: Bo, rootDetailContent: mo },
+                        gt.createElement(ft.AW, {
+                          component: xo,
+                          key: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
+                          path: '/i/communities/'.concat(Za.Q7, '/tools/settings'),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Lo,
+                          key: '/i/communities/'.concat(Za.Q7, '/tools/(members|moderators)'),
+                          path: '/i/communities/'.concat(Za.Q7, '/tools/(members|moderators)'),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Oo,
+                          key: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
+                          path: '/i/communities/'.concat(Za.Q7, '/tools/rules'),
+                        }),
+                      ),
+                    ),
+                    gt.createElement(ft.AW, {
+                      component: Ro,
+                      key: '/i/communities/'.concat(Za.Q7, '/(members|moderators)'),
+                      path: '/i/communities/'.concat(Za.Q7, '/(members|moderators)'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: so,
+                      exact: !0,
+                      key: '/i/communities/'.concat(Za.Q7, '/invite'),
+                      path: '/i/communities/'.concat(Za.Q7, '/invite'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: ko,
+                      key: '/i/communities/'.concat(Za.Q7, '/rules'),
+                      path: '/i/communities/'.concat(Za.Q7, '/rules'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Zo,
+                      key: '/i/communities/'.concat(Za.Q7, '/moderation'),
+                      path: '/i/communities/'.concat(Za.Q7, '/moderation'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Io,
+                      key: '/'.concat(Za.xS, '/status/').concat(Za.A2, '/community_feedback'),
+                      path: '/'.concat(Za.xS, '/status/').concat(Za.A2, '/community_feedback'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Io,
+                      key: '/'.concat(Za.xS, '/communities/').concat(Za.Q7, '/community_feedback'),
+                      path: '/'.concat(Za.xS, '/communities/').concat(Za.Q7, '/community_feedback'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: _o,
+                      key: '/i/communities/create',
+                      path: '/i/communities/create',
+                    }),
+                    gt.createElement(
+                      ft.AW,
+                      { exact: !0, key: '/i/communities', path: '/i/communities' },
+                      gt.createElement(Jr, null),
+                    ),
+                    gt.createElement(ft.AW, {
+                      component: Po,
+                      exact: !0,
+                      key: '/:screenName/communities',
+                      path: '/'.concat(Za.qX, '/communities/'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Eo,
+                      exact: !0,
+                      key: 'i/communities/suggested',
+                      path: '/i/communities/suggested',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Po,
+                      exact: !0,
+                      key: '/:screenName/communities/memberships',
+                      path: '/'.concat(Za.qX, '/communities/memberships'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Ho,
+                      exact: !0,
+                      key: '/i/communities/'.concat(Za.Q7, '/hashtag/:unsafeHashtagQuery'),
+                      path: '/i/communities/'.concat(Za.Q7, '/hashtag/').concat(Za.hv),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: To,
+                      key: '/i/communities/'.concat(Za.Q7),
+                      path: '/i/communities/'.concat(Za.Q7),
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: qo,
+                      exact: !0,
+                      key: ei,
+                      modalSize: 'dynamic',
+                      path: ei,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Qo,
+                      exact: !0,
+                      key: di,
+                      modalSize: 'dynamic',
+                      path: di,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Jo,
+                      exact: !0,
+                      key: ai,
+                      modalSize: 'verticallyMaximized',
+                      path: ai,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Go,
+                      exact: !0,
+                      key: ni,
+                      modalSize: 'dynamic',
+                      path: ni,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, { component: Ko, exact: !0, key: ti, path: ti, topOfScreen: !0 }),
+                    gt.createElement(Ra.Z, {
+                      component: Yo,
+                      exact: !0,
+                      key: ri,
+                      modalSize: 'dynamic',
+                      path: ri,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Xo,
+                      exact: !0,
+                      key: oi,
+                      modalSize: 'dynamic',
+                      path: oi,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Xo,
+                      exact: !0,
+                      key: ii,
+                      modalSize: 'dynamic',
+                      path: ii,
+                      topOfScreen: !0,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: $o,
+                      exact: !0,
+                      key: li,
+                      modalSize: 'dynamic',
+                      path: li,
+                      topOfScreen: !0,
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: Ki,
+                      exact: !0,
+                      key: '/messages/report/${userId}',
+                      path: '/messages/report/'.concat(Za.xS),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ii,
+                      exact: !0,
+                      key: '/messages/compose',
+                      path: '/messages/compose',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ii,
+                      exact: !0,
+                      key: '/messages/compose/group',
+                      path: '/messages/compose/group',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Bi,
+                      exact: !0,
+                      key: '/messages/compose/media',
+                      modalSize: Ka.Cg.verticallyMaximized,
+                      path: '/messages/compose/media',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Fi,
+                      exact: !0,
+                      key: '/messages/${dmConversationId}/add',
+                      path: '/messages/'.concat(Za.UE, '/add'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: ji,
+                      exact: !0,
+                      key: '/messages/${dmConversationId}/media/${dmEntryId}',
+                      modalSize: Ka.Cg.full,
+                      path: ['/messages/'.concat(Za.UE, '/media/').concat(Za.hU), '/messages/media/'.concat(Za.hU)],
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ui,
+                      exact: !0,
+                      key: '/messages/${dmConversationId}/group-info',
+                      modalSize: Ka.Cg.dynamic,
+                      path: '/messages/'.concat(Za.UE, '/group-info'),
+                    }),
+                    gt.createElement(
+                      ft.AW,
+                      { key: '/messages(/requests)?(/additional)?', path: '/messages(/requests)?(/additional)?' },
+                      gt.createElement(
+                        Ua.Z,
+                        { perColumnScroll: !0, rootComponent: Ri, rootDetailContent: Wi },
+                        gt.createElement(ft.AW, {
+                          component: Zi,
+                          exact: !0,
+                          key: '/messages/create/${screenName}',
+                          path: '/messages/create/'.concat(Za.qX),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Gi,
+                          exact: !0,
+                          key: '/messages/group',
+                          path: '/messages/group',
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Qi,
+                          exact: !0,
+                          key: '/messages/${dmConversationId}',
+                          path: '/messages/'.concat(Za.UE),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Hi,
+                          exact: !0,
+                          key: '/messages/${dmConversationId}/info',
+                          path: '/messages/'.concat(Za.UE, '/info'),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: zi,
+                          exact: !0,
+                          key: '/messages/${dmConversationId}/participants',
+                          path: '/messages/'.concat(Za.UE, '/participants'),
+                        }),
+                        gt.createElement(ft.AW, {
+                          component: Ei.pZ,
+                          exact: !0,
+                          key: '/messages/settings',
+                          path: '/messages/settings',
+                        }),
+                        gt.createElement(ft.l_, {
+                          from: '/messages/requests/'.concat(Za.UE),
+                          key: 'old-untrusted-route',
+                          to: '/messages',
+                        }),
+                        gt.createElement(ft.l_, {
+                          from: '/messages/requests/additional/'.concat(Za.UE),
+                          key: 'old-lq-route',
+                          to: '/messages',
+                        }),
+                      ),
+                    ),
+                  ],
+                  gt.createElement(ft.AW, {
+                    component: $i,
+                    exact: !0,
+                    key: '/explore/tabs/:tabId?',
+                    path: ['/explore', '/explore/tabs/'.concat(Za.fW)],
+                  }),
+                  gt.createElement(ft.AW, { component: nl, key: '/i/timeline', path: '/i/timeline' }),
+                  gt.createElement(Ra.Z, {
+                    component: dl,
+                    key: '/i/foundmedia',
+                    path: '/i/foundmedia',
+                    topOfScreen: !0,
+                  }),
+                  gt.createElement(Ra.Z, {
+                    component: al,
+                    exact: !0,
+                    key: 'graduatedAccess',
+                    modalSize: 'fitChildren',
+                    path: '/i/graduated-access',
+                  }),
+                  [
+                    gt.createElement(ft.AW, {
+                      component: ol,
+                      exact: !0,
+                      key: '/i/events/',
+                      path: '/i/events/'.concat(Za.sA),
+                    }),
+                    gt.createElement(ft.AW, { exact: !0, key: '/i/live/', path: '/i/live/'.concat(Za.sA), render: il }),
+                  ],
+                  gt.createElement(ft.AW, { component: ll, exact: !0, key: '/home', path: '/home' }),
+                  gt.createElement(ft.AW, { exact: !0, key: 'moment', path: '/i/moments/'.concat(Za.wi), render: Al }),
+                  (0, ys.ZP)(),
+                  ((nm = '/twitterblue/error'),
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: ks,
+                      exact: !0,
+                      key: nm,
+                      modalSize: 'dynamic',
+                      path: nm,
+                      topOfScreen: !0,
+                    }),
+                  ]),
+                  Rs(),
+                  Os(),
+                  xs(),
+                  gt.createElement(ft.AW, {
+                    component: Sl,
+                    exact: !0,
+                    key: '/i/news/:tcoHash',
+                    path: '/i/news/'.concat(Za.Qw),
+                  }),
+                  [
+                    gt.createElement(ft.AW, {
+                      component: Tl,
+                      exact: !0,
+                      key: 'notifications',
+                      path: '/notifications/(mentions|verified|all)?',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: wl,
+                      exact: !0,
+                      key: 'twitterversary',
+                      modalSize: 'dynamic',
+                      path: '/i/notifications/anniversary',
+                    }),
+                    gt.createElement(Ra.Z, { component: Ml, key: 'safety-report', path: '/i/notifications/safety' }),
+                    gt.createElement(Ra.Z, {
+                      component: yl,
+                      defaultBackgroundPath: '/notifications',
+                      exact: !0,
+                      key: 'badge-violations-notification',
+                      modalSize: 'dynamic',
+                      path: '/i/badge_violations',
+                    }),
+                  ],
+                  gt.createElement(ft.AW, { component: Pl, exact: !0, key: _l, path: _l }),
+                  [
+                    gt.createElement(ft.AW, { component: Ec, exact: !0, key: '/i/verified', path: '/i/verified' }),
+                    gt.createElement(ft.AW, {
+                      component: Rc,
+                      exact: !0,
+                      key: '/i/verified/settings',
+                      path: '/i/verified/settings',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Zc,
+                      exact: !0,
+                      key: '/i/verified/invite',
+                      path: '/i/verified/invite',
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, { component: Wl, exact: !0, key: Xl, path: Xl }),
+                    gt.createElement(Ra.Z, { component: au, exact: !0, key: Jl, path: Jl }),
+                    gt.createElement(Ra.Z, { component: ru, exact: !0, key: $l, modalSize: Ka.Cg.dynamic, path: $l }),
+                    gt.createElement(Ra.Z, { component: ou, exact: !0, key: eu, modalSize: Ka.Cg.dynamic, path: eu }),
+                    gt.createElement(Ra.Z, { component: iu, exact: !0, key: du, modalSize: Ka.Cg.dynamic, path: du }),
+                    gt.createElement(_a.Z, { from: nu, key: nu, to: Jl }),
+                    gt.createElement(ft.AW, { component: uu, key: '/i/professionals', path: '/i/professionals' }),
+                  ],
+                  (0, su.Z)(),
+                  gt.createElement(ft.AW, {
+                    component: pu,
+                    exact: !0,
+                    key: 'reader_mode',
+                    path: '/'.concat(Za.qX, '/thread/').concat(Za.A2),
+                  }),
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: mu,
+                      exact: !0,
+                      key: 'ReportScreen',
+                      path: '/i/report/'.concat(Za.oQ, '/').concat(Za.nM),
+                      restoreFocusInFocusTrapView: !1,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: hu,
+                      exact: !0,
+                      key: 'ReportFlowComplete',
+                      path: '/i/safety/report_story_complete',
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: fu,
+                      exact: !0,
+                      key: 'report_detail',
+                      modalSize: 'dynamic',
+                      path: '/i/reports/'.concat(Za.Cq),
+                    }),
+                    gt.createElement(_a.Z, {
+                      exact: !0,
+                      from: '/i/safety_center',
+                      key: 'safety_center_report_redirect',
+                      to: '/i/safety_center/reports/open',
+                    }),
+                    gt.createElement(
+                      ft.AW,
+                      { key: '/i/safety_center', path: '/i/safety_center' },
+                      gt.createElement(
+                        Au.ZP,
+                        null,
+                        gt.createElement(
+                          Ua.Z,
+                          {
+                            perColumnScroll: !0,
+                            renderRootWhenNarrow: function renderRootWhenNarrow(e) {
+                              return ['/i/safety_center/reports/open', '/i/safety_center/reports/resolved'].includes(
+                                e.pathname,
+                              )
+                            },
+                            rootComponent: Mu,
+                            rootDetailContent: wu,
+                          },
+                          gt.createElement(ft.AW, {
+                            component: wu,
+                            exact: !0,
+                            key: 'safety_center_report_detail',
+                            path: '/i/safety_center/reports/'.concat(Za.Cq),
+                          }),
+                        ),
+                      ),
+                    ),
+                  ],
+                  gt.createElement(Ra.Z, {
+                    component: Bu,
+                    exact: !0,
+                    key: 'safety-mode-modal',
+                    path: '/i/safety_mode',
+                  }),
+                  [
+                    gt.createElement(ft.AW, {
+                      exact: !0,
+                      key: '/search/:searchQuery',
+                      path: '/search/'.concat(Za.uO),
+                      render: Ou,
+                    }),
+                    gt.createElement(ft.AW, { component: xu, key: '/search', path: '/search' }),
+                    gt.createElement(ft.AW, {
+                      component: xu,
+                      key: '/hashtag/:unsafeHashtagQuery',
+                      path: '/hashtag/'.concat(Za.hv),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Nu,
+                      defaultBackgroundPath: '/explore',
+                      key: '/i/search_filters',
+                      modalSize: 'dynamic',
+                      path: '/i/search_filters',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Lu,
+                      defaultBackgroundPath: '/explore',
+                      exact: !0,
+                      key: '/search-advanced',
+                      path: '/search-advanced',
+                    }),
+                  ],
+                  [
+                    gt.createElement(Ra.Z, { component: Ei.BQ, exact: !0, key: 'profile', path: '/settings/profile' }),
+                    gt.createElement(Ra.Z, { component: Ei.Lo, exact: !0, key: 'search', path: '/settings/search' }),
+                    gt.createElement(Ra.Z, {
+                      component: Hu,
+                      exact: !0,
+                      key: 'safety-mode-about',
+                      path: '/settings/safety_mode/about',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Fu,
+                      exact: !0,
+                      key: 'safety-mode-flagged-accounts',
+                      path: '/i/safety_mode/flagged_accounts',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Uu,
+                      exact: !0,
+                      key: 'safety-mode-flagged-tweets',
+                      path: '/i/safety_mode/flagged_tweets/'.concat(Za.xS),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ei.C1,
+                      defaultBackgroundPath: '/explore',
+                      exact: !0,
+                      key: 'explore-settings',
+                      path: '/settings/explore',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ei.KR,
+                      defaultBackgroundPath: '/explore',
+                      exact: !0,
+                      key: 'explore-location',
+                      path: '/settings/explore/location',
+                    }),
+                    gt.createElement(Ra.Z, { component: Ei.C1, exact: !0, key: 'trends', path: '/settings/trends' }),
+                    gt.createElement(Ra.Z, {
+                      component: Ei.KR,
+                      exact: !0,
+                      key: 'trends-location',
+                      path: '/settings/trends/location',
+                    }),
+                    gt.createElement(_a.Z, {
+                      from: '/settings/applications',
+                      key: 'apps-to-apps-and-sessions',
+                      to: '/settings/apps_and_sessions',
+                    }),
+                    gt.createElement(_a.Z, {
+                      from: '/settings/safety',
+                      key: 'safety-to-privacy-and-safety',
+                      to: '/settings/privacy_and_safety',
+                    }),
+                    gt.createElement(_a.Z, {
+                      from: '/settings/mute',
+                      key: 'mute-to-mute-and-block',
+                      to: '/settings/mute_and_block',
+                    }),
+                    gt.createElement(ft.AW, { key: 'settings', path: '/settings' }, gt.createElement(ju, null)),
+                  ],
+                  (0, a.fH)('prod') ? null : d(518283)._(),
+                  [
+                    gt.createElement(ft.AW, {
+                      component: va.Z,
+                      exact: !0,
+                      key: '/i/topics/discover',
+                      path: ['/i/topics/discover', '/i/topics/discover/'.concat(Za.fW)],
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: qu,
+                      exact: !0,
+                      key: '/i/topics/picker',
+                      path: ['/i/topics/picker', '/i/topics/picker/'.concat(Za.fW)],
+                    }),
+                    gt.createElement(Ra.Z, {
+                      defaultBackgroundPath: '/home',
+                      exact: !0,
+                      key: '/i/topics/education',
+                      modalSize: 'dynamic',
+                      path: '/i/topics/education',
+                      render: zu,
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Ku,
+                      exact: !0,
+                      key: '/i/topics/:topicId/noteworthy_accounts',
+                      path: '/i/topics/'.concat(Za.jp, '/noteworthy_accounts'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      key: '/i/topics/tweet/:statusId',
+                      path: '/i/topics/tweet/'.concat(Za.i_),
+                      render: Yu,
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Vu,
+                      exact: !0,
+                      key: '/i/topics/:taxonomy/:topicId',
+                      path: '/i/topics/'.concat(Za.Sj, '/').concat(Za.jp),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Qu,
+                      exact: !0,
+                      key: '/i/topics/:topicId',
+                      path: '/i/topics/'.concat(Za.jp),
+                    }),
+                    gt.createElement(ft.AW, {
+                      exact: !0,
+                      key: '/:screenName/topics',
+                      path: ['/'.concat(Za.qX, '/topics'), '/'.concat(Za.qX, '/topics/').concat(Za.fW)],
+                      render: Gu,
+                    }),
+                  ],
+                  gt.createElement(ft.AW, { component: Xu, exact: !0, key: '/i/trends', path: '/i/trends' }),
+                  ds(),
+                  [gt.createElement(Ra.Z, { component: Hs, exact: !0, key: '/i/coins', path: '/i/coins' })],
+                  [
+                    gt.createElement(ft.AW, {
+                      component: ss,
+                      exact: !0,
+                      key: 'permalink1',
+                      path: '/i/web/status/'.concat(Za.i_),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: ss,
+                      exact: !0,
+                      key: 'permalink2',
+                      path: '/i/thread/'.concat(Za.i_),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: ss,
+                      exact: !0,
+                      key: 'permalink3',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: cs,
+                      exact: !0,
+                      key: 'analytics',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/analytics'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: bs,
+                      exact: !0,
+                      key: 'quickPromote',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.pn, '/').concat(Za.rj),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: bs,
+                      exact: !0,
+                      key: 'quickPromoteRweb',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.mT, '/').concat(Za.rj),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: ps,
+                      exact: !0,
+                      key: 'hiddenReplies',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/hidden'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: ms,
+                      exact: !0,
+                      key: 'mediatags',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/media_tags'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: hs,
+                      exact: !0,
+                      key: 'participants',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/people'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: ls,
+                      exact: !0,
+                      key: 'activitytype',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za.ru),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ss,
+                      exact: !0,
+                      key: 'TweetActivityReactionsScreen',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/reactions'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: ws,
+                      exact: !0,
+                      key: 'mediadetail',
+                      modalSize: Ka.Cg.full,
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/').concat(Za._Q, '/').concat(Za.u0),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ms,
+                      exact: !0,
+                      key: 'immersiveMediaViewer',
+                      modalSize: Ka.Cg.full,
+                      path: (0, ts.PK)('/'.concat(Za.qX, '/status/').concat(Za.i_)),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: fs,
+                      exact: !0,
+                      key: 'like_intent',
+                      path: '/intent/(like|favorite)',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: fs,
+                      exact: !0,
+                      key: 'retweet_intent',
+                      path: '/intent/retweet',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: is,
+                      exact: !0,
+                      key: 'quote_tweet',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/retweets/with_comments'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: gs,
+                      exact: !0,
+                      key: 'TweetEditHistoryScreen',
+                      path: '/'.concat(Za.qX, '/status/').concat(Za.i_, '/history'),
+                    }),
+                  ],
+                  ((Vp = '/i/oauth_landing'),
+                  (Wp = '/i/flow/'),
+                  (Gp = '/i/bounce/'),
+                  (qp = '/i/onboarding/verify'),
+                  (Qp = '/i/ocf_background'),
+                  (Kp = '/i/ocf_arkose_challenge'),
+                  (Yp = '/i/safety/report_story_start'),
+                  (Xp = '/i/flow/signup'),
+                  (Jp = '/i/flow/login'),
+                  ($p = '/i/flow/convert_to_professional'),
+                  (em = '/i/flow/make_more_connections'),
+                  [
+                    gt.createElement(ft.AW, { component: El, exact: !0, key: Qp, path: Qp }),
+                    gt.createElement(ft.AW, { component: jl, exact: !0, key: Kp, path: Kp }),
+                    gt.createElement(Ra.Z, { clickMaskToClose: !1, component: Bl, exact: !0, key: Vp, path: Vp }),
+                    gt.createElement(Ra.Z, { clickMaskToClose: !1, component: Il, exact: !0, key: qp, path: qp }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: Nl,
+                      defaultBackgroundPath: Qp,
+                      exact: !0,
+                      key: Xp,
+                      path: Xp,
+                      restoreBackgroundFromPreviousPath: !1,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: Ll,
+                      defaultBackgroundPath: Qp,
+                      exact: !0,
+                      key: Jp,
+                      path: Jp,
+                    }),
+                    gt.createElement(Ra.Z, { component: xl, defaultBackgroundPath: Qp, exact: !0, key: Yp, path: Yp }),
+                    gt.createElement(Ra.Z, { component: Ol, defaultBackgroundPath: Qp, exact: !0, key: $p, path: $p }),
+                    gt.createElement(Ra.Z, { component: Fl, defaultBackgroundPath: Qp, exact: !0, key: em, path: em }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: Rl,
+                      defaultBackgroundPath: Qp,
+                      exact: !1,
+                      key: Wp,
+                      path: Wp,
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: Hl,
+                      defaultBackgroundPath: Qp,
+                      exact: !1,
+                      key: Gp,
+                      path: Gp,
+                    }),
+                  ]),
+                  [
+                    gt.createElement(
+                      ft.AW,
+                      { key: '/i/collaborate', path: '/i/collaborate' },
+                      gt.createElement(
+                        ft.rs,
+                        null,
+                        gt.createElement(ft.AW, { component: Ur, exact: !0, path: '/i/collaborate/home' }),
+                        gt.createElement(ft.AW, {
+                          component: qr,
+                          path: Gr.map(function (e) {
+                            return e.path
+                          }),
+                        }),
+                      ),
+                    ),
+                  ],
+                  gt.createElement(ft.AW, {
+                    component: zl,
+                    exact: !0,
+                    key: '/places/:placeId',
+                    path: '/places/'.concat(Za.DY),
+                  }),
+                  gt.createElement(Ra.Z, {
+                    component: rl,
+                    key: '/i/keyboard_shortcuts',
+                    modalSize: 'dynamic',
+                    path: '/i/keyboard_shortcuts',
+                  }),
+                  (0, Qa.ZP)(),
+                  [
+                    gt.createElement(ft.AW, { component: Di, exact: !0, key: hi, path: [hi] }),
+                    gt.createElement(Ra.Z, {
+                      component: Si,
+                      defaultBackgroundPath: '/home',
+                      exact: !0,
+                      key: Ai,
+                      modalSize: 'dynamic',
+                      path: [Ai],
+                    }),
+                  ],
+                  gt.createElement(Ra.Z, {
+                    component: gi,
+                    exact: !0,
+                    key: '/i/delegate/delegations',
+                    path: '/i/delegate/delegations',
+                  }),
+                  gt.createElement(ft.AW, { component: va.Z, exact: !0, key: '/404', path: '/404' }),
+                  gt.createElement(ft.AW, {
+                    component: el,
+                    exact: !0,
+                    key: '/:screenName/unfollow_sms',
+                    path: '/'.concat(Za.qX, '/unfollow_sms'),
+                  }),
+                  gt.createElement(ft.AW, {
+                    component: Js,
+                    exact: !0,
+                    key: '/:screenName/moments',
+                    path: '/'.concat(Za.qX, '/moments'),
+                  }),
+                  ((Lp = '/i/lists/'.concat(Za.Tk)),
+                  (Op = '/i/lists/'.concat(Za.Tk, '/info')),
+                  (Fp = '/i/lists/'.concat(Za.Tk, '/subscribers')),
+                  (Up = '/i/lists/'.concat(Za.Tk, '/followers')),
+                  (Hp = '/'.concat(Za.qX, '/lists/').concat(Za.oF)),
+                  (jp = '/'.concat(Za.qX, '/lists/').concat(Za.oF, '/').concat(Za.fH)),
+                  (zp = '/'.concat(Za.qX, '/lists/pinned/edit')),
+                  [
+                    gt.createElement(Ra.Z, { component: js, exact: !0, key: zp, path: zp }),
+                    gt.createElement(_a.Z, {
+                      exact: !0,
+                      from: '/lists/add_member',
+                      key: '/lists/add_member',
+                      to: '/i/lists/add_member',
+                    }),
+                    gt.createElement(_a.Z, {
+                      exact: !0,
+                      from: '/lists/create',
+                      key: '/lists/create',
+                      to: '/i/lists/create',
+                    }),
+                    gt.createElement(_a.Z, { exact: !0, from: Fp, key: Fp, to: Up }),
+                    gt.createElement(Ra.Z, {
+                      component: zs,
+                      exact: !0,
+                      key: '/i/lists/add_member',
+                      path: '/i/lists/add_member',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Vs,
+                      exact: !0,
+                      key: '/i/lists/create',
+                      path: '/i/lists/create',
+                    }),
+                    gt.createElement(Ra.Z, { component: Ws, exact: !0, key: Op, path: Op }),
+                    gt.createElement(Ra.Z, {
+                      component: qs,
+                      exact: !0,
+                      key: '/i/lists/'.concat(Za.Tk, '/members/:type'),
+                      path: '/i/lists/'.concat(Za.Tk, '/members/(suggested)?'),
+                    }),
+                    gt.createElement(Ra.Z, { component: Gs, exact: !0, key: Up, path: Up }),
+                    gt.createElement(ft.AW, { component: Ks, key: Lp, path: Lp }),
+                    gt.createElement(ft.AW, {
+                      component: Ys,
+                      exact: !0,
+                      key: '/:screenName/lists/:type',
+                      path: '/'.concat(Za.qX, '/lists/(memberships)?'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Qs,
+                      exact: !0,
+                      key: '/i/lists/suggested',
+                      path: '/i/lists/suggested',
+                    }),
+                    gt.createElement(ft.AW, { component: Xs, key: jp, path: jp }),
+                    gt.createElement(ft.AW, { component: Xs, exact: !0, key: Hp, path: Hp }),
+                  ]),
+                  [
+                    gt.createElement(ft.AW, {
+                      component: pc,
+                      exact: !0,
+                      key: 'user_redirect',
+                      path: '/i/user/'.concat(Za.xS),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: nc,
+                      exact: !0,
+                      key: 'legacy_redirects',
+                      path: '/(favorites|followers|following|who_to_follow)',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: tc,
+                      exact: !0,
+                      key: 'follower_requests',
+                      path: '/follower_requests',
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: sc,
+                      exact: !0,
+                      key: 'photo',
+                      modalSize: Ka.Cg.full,
+                      path: '/'.concat(Za.qX, '/photo'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: Ac,
+                      exact: !0,
+                      key: 'nft',
+                      modalSize: Ka.Cg.full,
+                      path: '/'.concat(Za.qX, '/nft'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      component: bc,
+                      exact: !0,
+                      key: 'header_photo',
+                      modalSize: Ka.Cg.full,
+                      path: '/'.concat(Za.qX, '/header_photo'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: lc,
+                      exact: !0,
+                      key: 'followers',
+                      path: '/'.concat(Za.qX, '/').concat(Za._N),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: uc,
+                      exact: !0,
+                      key: '(likes|media|reactions)',
+                      path: '/'.concat(Za.qX, '/(likes|media|reactions)'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: hc,
+                      exact: !0,
+                      key: 'follow_intent',
+                      path: '/intent/(user|follow)',
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: dc,
+                      exact: !0,
+                      key: 'profile',
+                      path: '/'.concat(Za.qX, '/(with_replies|superfollows|notes)?'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Dc,
+                      exact: !0,
+                      key: 'about',
+                      path: '/'.concat(Za.qX, '/about'),
+                    }),
+                    gt.createElement(ft.AW, {
+                      component: Sc,
+                      exact: !0,
+                      key: 'affiliates',
+                      path: '/'.concat(Za.qX, '/affiliates'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: rc,
+                      defaultBackgroundPath: '/'.concat(Za.qX),
+                      exact: !0,
+                      key: 'superfollows/subscribe',
+                      path: '/'.concat(Za.qX, '/superfollows/subscribe'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: mc,
+                      defaultBackgroundPath: '/'.concat(Za.qX),
+                      exact: !0,
+                      key: 'superfollows/subscribe/manage',
+                      modalSize: Ka.Cg.fitChildren,
+                      path: '/'.concat(Za.qX, '/superfollows/manage'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: oc,
+                      defaultBackgroundPath: '/'.concat(Za.qX),
+                      exact: !0,
+                      key: 'superfollows/subscribe/success',
+                      path: '/'.concat(Za.qX, '/superfollows/subscribe/success'),
+                    }),
+                    gt.createElement(Ra.Z, {
+                      clickMaskToClose: !1,
+                      component: ic,
+                      defaultBackgroundPath: '/'.concat(Za.qX),
+                      exact: !0,
+                      key: 'superfollows/subscribe/failure',
+                      path: '/'.concat(Za.qX, '/superfollows/subscribe/failure'),
+                    }),
+                    gt.createElement(ft.AW, { component: ac, exact: !0, key: 'own_profile', path: '/i/profile' }),
+                  ],
+                  ds(),
+                  [
+                    gt.createElement(Ra.Z, {
+                      component: ci,
+                      exact: !0,
+                      key: '/'.concat(Za.qX.toLowerCase(), '/status/').concat(Za.i_, '/follow_in_thread'),
+                      modalSize: 'dynamic',
+                      path: '/'.concat(Za.qX.toLowerCase(), '/status/').concat(Za.i_, '/follow_in_thread'),
+                    }),
+                  ],
+                  gt.createElement(ft.AW, { component: va.Z, key: 'not_found' }),
+                ]),
+              ),
+            ),
+          )
+        yp.then(function () {
+          Jc({ api: bm, behavioralEventAllowlist: am, featureSwitches: dm }),
+            fe.S1(bm),
             (0, we.u)({
-              httpClient: Jp.apiClient.client,
-              globalTraceSampleRate: Number(jp.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
+              httpClient: bm.apiClient.client,
+              globalTraceSampleRate: Number(dm.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
             }),
             ze(),
-            kp.dispatch((0, Ld.ri)()).then(function () {
-              Cp &&
+            Mp.dispatch((0, Nd.ri)()).then(function () {
+              gp &&
                 (function (e, n) {
                   if (
                     ('/' === window.location.pathname || '/home' === window.location.pathname) &&
-                    e.getStringValue('rweb_home_perf_client_prefetch_mode', Ld.AM.NONE) === Ld.AM.CLIENT
+                    e.getStringValue('rweb_home_perf_client_prefetch_mode', Nd.AM.NONE) === Nd.AM.CLIENT
                   ) {
-                    var d = (0, Ld.Sl)(n.getState())
+                    var d = (0, Nd.Sl)(n.getState())
                     n.dispatch((0, _e.ZP)({ useLatest: d }).fetchInitial())
                   }
-                })(jp, kp)
+                })(dm, Mp)
             })
-          var e = new pe(Jp, 3e5)
-          jp.isTrue('responsive_web_send_cookies_metadata_enabled') &&
+          var e = new pe(bm, 3e5)
+          dm.isTrue('responsive_web_send_cookies_metadata_enabled') &&
             (function (e) {
               var n = (0, M.$t)(),
                 d = (0, ee.s)().cookies.fetchedTime
@@ -29789,9 +29731,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   { description: ''.concat(n, ':cookiesMetadata:load'), product: n, event_value: Date.now() - d },
                 ]),
               })['catch'](function () {})
-            })(Jp)
+            })(bm)
           var n
-          ;(n = kp.dispatch),
+          ;(n = Mp.dispatch),
             window.apkInterface &&
               ((window.openApkDeeplink = function (e) {
                 var n = fa.ZP.parseInternalUrl(e)
@@ -29805,7 +29747,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   return window.apkInterface.share(d, n, t), Promise.resolve()
                 }),
               window.apkInterface.getApkPushParams &&
-                ((0, Kc.Bx)(Kc.HQ.APK_PUSH),
+                ((0, Qc.Bx)(Qc.HQ.APK_PUSH),
                 (window.openApkPushNotification = function (e) {
                   var d = e.impression_id,
                     t = e.scribe_target,
@@ -29821,12 +29763,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 })),
               window.apkInterface.isOsAdsTrackingOn &&
                 !window.apkInterface.isOsAdsTrackingOn() &&
-                Qc().then(function (e) {
+                qc().then(function (e) {
                   return n(e.updateSettings({ allowPersonalization: !1 }))
                 })),
             (function (e, n, d) {
               var t = d.isTrue('responsive_web_install_banner_show_immediate')
-              gb.Z.bindHandlers(function (e) {
+              vb.Z.bindHandlers(function (e) {
                 var d = function d(e) {
                   n.log({ page: 'app', section: 'permissions', component: 'install_banner', action: e })
                 }
@@ -29840,21 +29782,21 @@ window.__SCRIPTS_LOADED__.vendor &&
                     },
                   )
               }, t)
-            })(0, $p, jp),
-            Cp && Ge.m.initialize(ne.Yh, Cp)
+            })(0, pm, dm),
+            gp && Ge.m.initialize(ne.Yh, gp)
           var t,
             r = [
               !1,
-              oe(kp),
-              (0, ie.ZP)(jp),
+              oe(Mp),
+              (0, ie.ZP)(dm),
               de(e),
-              void 0 === Mp &&
+              void 0 === Sp &&
                 le({
                   splunkLogger: new $e({
                     env: a.OB,
                     sha: a.MK,
                     splunkIndexPrefix: (0, M.SG)(),
-                    transport: Je(Jp),
+                    transport: Je(bm),
                     sourceExtras: function sourceExtras() {
                       var e = window.navigator.userAgent || '',
                         n = (function (e) {
@@ -29871,24 +29813,24 @@ window.__SCRIPTS_LOADED__.vendor &&
               t(e.reason, { extra: { unhandledPromiseRejection: !0 }, tags: { unhandledPromiseRejection: !0 } })
             })
           var o =
-            Se.U2(jp) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? Se.rY.dark : Se.rY['default'])
+            Se.U2(dm) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? Se.rY.dark : Se.rY['default'])
           ;(function (e) {
             var n = fe.P_()
             return Promise.resolve().then(function () {
-              e.dispatch(yb.MJ()), e.dispatch((0, Tb.EC)())
-              var d = [e.dispatch(Cb.Wm())]
+              e.dispatch(Mb.MJ()), e.dispatch((0, Cb.EC)())
+              var d = [e.dispatch(yb.Wm())]
               return Promise.all(d).then(function () {
                 fe.IM('init:storePrepare', n.end())
               })
             })
-          })(kp)
+          })(Mp)
             ['catch'](function (e) {
               return (0, G.ZP)(e, { tags: { clientInit: 'prepareStore' } }), Promise.resolve()
             })
             .then(function () {
               return (
-                De(kp),
-                kp.dispatch(
+                De(Mp),
+                Mp.dispatch(
                   (function (e) {
                     return function (n, d, t) {
                       var a = t.featureSwitches,
@@ -29915,18 +29857,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                             })
                         : Promise.resolve(null)
                     }
-                  })(Jp),
+                  })(bm),
                 ),
-                Dp
-                  ? hp({
-                      node: Dp,
-                      isRTL: Sp,
-                      featureSwitches: jp,
-                      userClaims: zp,
-                      store: kp,
-                      relayEnvironment: Xp,
+                bp
+                  ? sp({
+                      node: bp,
+                      isRTL: pp,
+                      featureSwitches: dm,
+                      userClaims: tm,
+                      store: Mp,
+                      relayEnvironment: cm,
                       themePaletteName: o,
-                      routes: em,
+                      routes: mm,
                     })
                   : null
               )
@@ -29937,25 +29879,25 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ge.SJ(),
                   (function () {
                     if ($.Z.isStandaloneApp()) {
-                      var e = P.o1(kp.getState()),
-                        n = kp.dispatch((0, K.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
-                      wp &&
+                      var e = P.o1(Mp.getState()),
+                        n = Mp.dispatch((0, K.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
+                      Dp &&
                         e &&
-                        Jp.Ocf.setUserPwaLaunched({ userId: e })
+                        bm.Ocf.setUserPwaLaunched({ userId: e })
                           ['catch'](function (e) {
-                            return (0, zd.Vm)(kp.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
+                            return (0, zd.Vm)(Mp.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
                           })
                           ['catch'](n)
                       var d = te.DEPRECATED_scribeAction({ page: 'app', action: 'launch' })
-                      kp.dispatch(d)
+                      Mp.dispatch(d)
                     }
                   })(),
                   (function (e) {
                     var n = e.featureSwitches,
                       d = e.isLoggedIn,
                       t = e.store,
-                      a = Kc.Gb(),
-                      r = 'denied' === Kc.qO(),
+                      a = Qc.Gb(),
+                      r = 'denied' === Qc.qO(),
                       o = a && !d && !r
                     if (a && r) {
                       var i = te.DEPRECATED_scribeAction({
@@ -29968,53 +29910,53 @@ window.__SCRIPTS_LOADED__.vendor &&
                       t.dispatch(i)
                     }
                     o &&
-                      vb().then(function (e) {
+                      Sb().then(function (e) {
                         window.navigator.serviceWorker.ready.then(function (n) {
                           t.dispatch(e.loadLoggedOutNotificationData())
                         })
                       }),
                       a &&
                         d &&
-                        (0, Sb.Z)().then(function (e) {
+                        (0, Db.Z)().then(function (e) {
                           t.dispatch(e.loadPushPromptSettingsIfNeeded()),
                             t.dispatch(e.pushCheckinIfNeeded()),
                             n.isTrue('responsive_web_spud_enabled') &&
                               t.dispatch(e.updatePushNotificationsPermissionState()),
                             $.Z.isTwitterLite() && $.Z.isFirstLaunch() && t.dispatch(e.pushSubscribe())
                         })
-                  })({ featureSwitches: jp, store: kp, isLoggedIn: wp }),
-                  (e = jp.getNumberValue('scribe_api_error_sample_size') / 1e4),
-                  (n = jp.getNumberValue('scribe_api_sample_size') / 1e4),
-                  (t = jp.getNumberValue('scribe_cdn_sample_size') / 1e4),
-                  (a = jp.getNumberValue('scribe_web_nav_sample_size') / 1e4),
-                  (r = jp.getArrayValue('scribe_cdn_host_list')),
+                  })({ featureSwitches: dm, store: Mp, isLoggedIn: Dp }),
+                  (e = dm.getNumberValue('scribe_api_error_sample_size') / 1e4),
+                  (n = dm.getNumberValue('scribe_api_sample_size') / 1e4),
+                  (t = dm.getNumberValue('scribe_cdn_sample_size') / 1e4),
+                  (a = dm.getNumberValue('scribe_web_nav_sample_size') / 1e4),
+                  (r = dm.getArrayValue('scribe_cdn_host_list')),
                   d
                     .e('bundle.NetworkInstrument')
                     .then(d.bind(d, 188170))
                     .then(function (d) {
-                      var o = new (0, d['default'])($p, {
+                      var o = new (0, d['default'])(pm, {
                         apiErrorSampleSize: e,
                         apiSampleSize: n,
                         cdnSampleSize: t,
                         navSampleSize: a,
                         cdnHostList: r,
                       })
-                      Gp.addHandler(o.scribeRequest)
+                      om.addHandler(o.scribeRequest)
                     }),
                   (o = {
-                    store: kp,
-                    api: Jp,
-                    featureSwitches: jp,
-                    hasMultiAccountCookie: fp,
-                    scribe: $p,
-                    trafficRewriter: Kp,
+                    store: Mp,
+                    api: bm,
+                    featureSwitches: dm,
+                    hasMultiAccountCookie: Ap,
+                    scribe: pm,
+                    trafficRewriter: um,
                   }),
                   (0, Vt.ZP)().then(function (e) {
-                    for (var n = 0, d = Object.keys(hb()); n < d.length; n++) {
-                      Db(d[n], e, o)
+                    for (var n = 0, d = Object.keys(mb()); n < d.length; n++) {
+                      Ab(d[n], e, o)
                     }
                   }),
-                  kb(),
+                  _b(),
                   (function (e, n) {
                     var d = u.ZP.isChrome() && (u.ZP.chromeVersion() <= 50 || 66 === u.ZP.chromeVersion()),
                       t = e.isTrue('responsive_web_notifications_overrides_desktop_enabled'),
@@ -30022,14 +29964,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                       r = e.getNumberValue('responsive_web_notifications_overrides_max_notification_slots'),
                       o = e.getNumberValue('responsive_web_notifications_overrides_relevancy_half_life', 48)
                     d
-                      ? Mb.Z.deregisterServiceWorker(Ke.Z)
+                      ? wb.Z.deregisterServiceWorker(Ke.Z)
                       : ('serviceWorker' in window.navigator &&
                           window.navigator.serviceWorker.register(M.Ch)['catch'](function (e) {
                             ;(e instanceof Error && ('NotSupportedError' === e.name || 'SecurityError' === e.name)) ||
                               (0, G.ZP)(e)
                           }),
-                        wb(n),
-                        Mb.Z.setFeatureSwitches({
+                        fb(n),
+                        wb.Z.setFeatureSwitches({
                           responsive_web_notifications_overrides_desktop_enabled: t,
                           responsive_web_notifications_overrides_mobile_enabled: a,
                           responsive_web_notifications_overrides_max_notification_slots: r,
@@ -30038,14 +29980,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                             'rweb_home_perf_client_prefetch_bypass_sw',
                           ),
                         }))
-                  })(jp, Jp),
+                  })(dm, bm),
                   (function (e, n, d) {
                     setTimeout(function () {
-                      ;(0, Yc.Z)().then(function (t) {
+                      ;(0, Kc.Z)().then(function (t) {
                         t.initBranchSdk(e, n, d)
                       })
                     }, 0)
-                  })(jp, Jp, kp),
+                  })(dm, bm, Mp),
                   setTimeout(function () {
                     kt().emoji.then(function () {
                       return d
@@ -30065,13 +30007,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                                 })),
                               (d[e] = n[e].a)
                           }),
-                            (0, fb.Xx)(d)
+                            (0, gb.Xx)(d)
                         })
                     })
                   }, 5e3),
-                  kp.dispatch(P.K6()),
-                  kp.dispatch(P.KT()),
-                  kp.dispatch((0, Bd.wv)())
+                  Mp.dispatch(P.K6()),
+                  Mp.dispatch(P.KT()),
+                  Mp.dispatch((0, Bd.wv)())
               },
               function (e) {
                 return (0, G.ZP)(e, { tags: { clientInit: 'render' } }), Promise.resolve()
@@ -30989,7 +30931,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return H
           },
           fC: function fC() {
-            return N
+            return L
           },
           ZM: function ZM() {
             return t
@@ -31231,12 +31173,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           B = d(41425)
         function x() {
           var e = y()
-          return r.createElement(E.Z, { style: [{ height: e }, L.container] })
+          return r.createElement(E.Z, { style: [{ height: e }, N.container] })
         }
-        var L = l.Z.create(function (e) {
+        var N = l.Z.create(function (e) {
           return { container: { pointerEvents: 'none', opacity: 0 } }
         })
-        function N(e) {
+        function L(e) {
           var n = w(),
             d = [F.animatedView]
           return (
@@ -31333,8 +31275,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = d(440271),
           B = d(446493),
           x = d(833330),
-          L = d(528674),
-          N = d(238656),
+          N = d(528674),
+          L = d(238656),
           O = d(193067),
           F = d(882998),
           U = d(240811),
@@ -31438,8 +31380,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           Ie = 'twitter_blue_tab'
         var Be = d(392160),
           xe = d(660420),
-          Le = d(944529),
-          Ne = d(321700),
+          Ne = d(944529),
+          Le = d(321700),
           Oe = d(74958),
           Fe = d(726401),
           Ue = d(467935),
@@ -31449,7 +31391,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             .propsFromState(function () {
               return {
                 communitiesActions: Ue.yK,
-                hasCommunityMemberships: Le.fn,
+                hasCommunityMemberships: Ne.fn,
                 homeHasUnread: Oe.t5,
                 messageUnreadCount: xe.QA,
                 notificationsUnreadCount: xe.pm,
@@ -31481,7 +31423,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               }
             })
             .propsFromActions(function () {
-              return { fetchPendingFollowersIfNeeded: Ne.GE }
+              return { fetchPendingFollowersIfNeeded: Le.GE }
             })
             .withAnalytics(),
           Ve = 'AppTabBar_DirectMessage_Link',
@@ -31724,7 +31666,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                             layout: r,
                             onClick: this._handleTabClickFactory('messages', o),
                             path: b ? d : '/messages',
-                            renderIcon: (0, J.iI)(L['default'], x['default']),
+                            renderIcon: (0, J.iI)(N['default'], x['default']),
                             testID: Ve,
                             viewType: Me,
                             withLabel: m,
@@ -31839,7 +31781,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                             accessibilityLabel: sn,
                             label: cn,
                             layout: r,
-                            renderIcon: (0, J.iI)(N['default']),
+                            renderIcon: (0, J.iI)(L['default']),
                             renderMenu: this._renderDash,
                             testID: qe,
                             viewType: Pe,
@@ -31919,8 +31861,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           In = d(312599),
           Bn = d(354987),
           xn = d(745132),
-          Ln = d(378705),
-          Nn = d(431165),
+          Nn = d(378705),
+          Ln = d(431165),
           On = d(903188),
           Fn = d(379866),
           Un = d(411839),
@@ -32051,14 +31993,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                       A = e.withSearchBox,
                       D = a
                         ? d || o
-                          ? s.createElement(Nn.Z, { backButtonType: n, onClick: this._handleBackClick })
+                          ? s.createElement(Ln.Z, { backButtonType: n, onClick: this._handleBackClick })
                           : s.createElement(Kn, null)
                         : null,
                       S = A || r
                     return s.createElement(
                       h.Z,
                       { style: Jn.root },
-                      s.createElement(Ln.Z, {
+                      s.createElement(Nn.Z, {
                         centeredLogo: t,
                         leftControl: D,
                         middleControl: A ? this._renderSearchBox() : r,
@@ -32149,7 +32091,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               { style: ld.buttonContainer },
               (!(l = (0, ed.q)({}, { location: r })) && '/' === d) || (!l && !d)
                 ? s.createElement(nd.ZP, null)
-                : s.createElement(Nn.Z, {
+                : s.createElement(Ln.Z, {
                     backButtonType: n,
                     onClick: function onClick() {
                       a.goBack({ backLocation: d })
@@ -32178,7 +32120,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           return s.createElement(
             h.Z,
             { style: m, testID: 'twitter-logged-out-nav' },
-            s.createElement(Ln.Z, { leftControl: c, middleControl: b, rightControl: p, withBackground: !1 }),
+            s.createElement(Nn.Z, { leftControl: c, middleControl: b, rightControl: p, withBackground: !1 }),
             i
               ? s.createElement(h.Z, { style: ld.loginSignupContainer }, s.createElement(Mn.Z, { scribeNamespace: id }))
               : null,
@@ -33048,8 +32990,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               )
             return s.createElement(B.H.Provider, { value: a }, d)
           })
-        var L = x
-        var N = d(196234),
+        var N = x
+        var L = d(196234),
           O = d(133028),
           F = d(841361),
           U = (d(779321), d(334769), d(477950), d(74069), d(527218)),
@@ -33158,7 +33100,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         function X(e) {
           if (!e) return null
           var n = e.match($.profileImageUrlMediaId)
-          return n ? (0, N.Z)(n, 2)[1] : null
+          return n ? (0, L.Z)(n, 2)[1] : null
         }
         var J,
           $ = { profileImageUrlMediaId: /profile_images\/(\d+)\// },
@@ -33471,7 +33413,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                                         s.createElement(
                                           m.V,
                                           { brandedHashtags: this.props.hashflags },
-                                          s.createElement(L, null, s.createElement(M.nr, null, a)),
+                                          s.createElement(N, null, s.createElement(M.nr, null, a)),
                                         ),
                                       ),
                                     ),
@@ -34049,13 +33991,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               : void 0
           },
           x = i().g78650fe,
-          L = function L(e) {
+          N = function N(e) {
             var n = e.customText
             return n
               ? t.createElement(i().I18NFormatMessage, { $i18n: 'c2de5d7b' }, t.createElement(a.ZP, null, n))
               : void 0
           },
-          N = i().ic848090,
+          L = i().ic848090,
           O = i().f9ebe066,
           F = i().ea88ce2e,
           U = i().ge9eaa86,
@@ -34088,9 +34030,9 @@ window.__SCRIPTS_LOADED__.vendor &&
               case H.subscribe:
                 return { icon: b['default'], text: I, subtext: B, iconStyle: W.iconOther }
               case H.topic:
-                return { icon: A['default'], text: x, subtext: L, iconStyle: W.iconTopics }
+                return { icon: A['default'], text: x, subtext: N, iconStyle: W.iconTopics }
               case H.community:
-                return { icon: l['default'], text: N, subtext: O, iconStyle: W.iconOther }
+                return { icon: l['default'], text: L, subtext: O, iconStyle: W.iconOther }
               default:
                 return { icon: D['default'], text: F, subtext: U, iconStyle: W.iconTwitter }
             }
@@ -36630,8 +36572,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = p().e0cbf77a,
           B = p().dec5a5ce,
           x = p().d67f9456,
-          L = p().e0ece1b6,
-          N = p().b09f1ab4,
+          N = p().e0ece1b6,
+          L = p().b09f1ab4,
           O = p().a4039fd2,
           F = p().g75fec74,
           U = p().abb8b6e0,
@@ -36816,7 +36758,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 return d || (0, f.fz)({ text: Y })
               }),
               (0, r.Z)(t, S.ZP.InvalidRequestUrlForbidden, function () {
-                return (0, f.fz)({ text: L })
+                return (0, f.fz)({ text: N })
               }),
               (0, r.Z)(t, S.ZP.MobileSettingsNoDevicesFound, function () {
                 return d || Se()
@@ -36867,7 +36809,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 return ve()
               }),
               (0, r.Z)(t, S.ZP.TieredActionFollowCreeper, function () {
-                return De(N)
+                return De(L)
               }),
               (0, r.Z)(t, S.ZP.TieredActionFollowSpammer, function () {
                 return ve()
@@ -39167,7 +39109,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             var Z
             try {
               Z = window.atob(g)
-            } catch (L) {
+            } catch (N) {
               Z = 'invalid'
             }
             var I = [
@@ -39621,8 +39563,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = c().db6001e7({ limit: 5 }),
           B = c().eb96d952,
           x = c().i859a9d4,
-          L = c().b3880588,
-          N = c().ca058b68,
+          N = c().b3880588,
+          L = c().ca058b68,
           O = c().id24379c,
           F = c().h4d7cbcc,
           U = function U(e) {
@@ -39640,7 +39582,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             (0, u.Z)(t, b.Y7.CANNOT_BE_PROCESSED, U(D)),
             (0, u.Z)(t, b.Y7.FILE_IS_NOT_AN_IMAGE, U(v)),
             t),
-          V = ((a = {}), (0, u.Z)(a, m.d.ZERO_FILE_LENGTH, U(S)), (0, u.Z)(a, m.d.TIMEOUT, U(L)), a),
+          V = ((a = {}), (0, u.Z)(a, m.d.ZERO_FILE_LENGTH, U(S)), (0, u.Z)(a, m.d.TIMEOUT, U(N)), a),
           W = (0, l.Z)(
             (0, l.Z)({}, V),
             {},
@@ -39716,7 +39658,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           if (d) return J(d) || U(n)
         }
         function ne(e) {
-          var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N
+          var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : L
           return e.type === p.gK.type && e.code === p.gK.NO_DIMENSIONS
             ? U(B)
             : e.type === A.hb.type && e.code === A.hb.NO_DIMENSIONS
@@ -40110,7 +40052,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           $T: function $T() {
-            return L
+            return N
           },
           $b: function $b() {
             return q
@@ -40209,7 +40151,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return f
           },
           qJ: function qJ() {
-            return N
+            return L
           },
           vY: function vY() {
             return H
@@ -40376,8 +40318,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             (Object.freeze({ Small: 'Small', Normal: 'Normal', Large: 'Large', XLarge: 'XLarge', Jumbo: 'Jumbo' }),
             Object.freeze({ Qr: 'qr', Text: 'text' })),
           x = Object.freeze({ Avatar: 'avatar', Banner: 'banner' }),
-          L = Object.freeze({ Success: 'success', NotFound: 'not_found', Error: 'error' }),
-          N = Object.freeze({ Favorite: 'favorite', Follow: 'follow', Reply: 'reply', Retweet: 'retweet' }),
+          N = Object.freeze({ Success: 'success', NotFound: 'not_found', Error: 'error' }),
+          L = Object.freeze({ Favorite: 'favorite', Follow: 'follow', Reply: 'reply', Retweet: 'retweet' }),
           O = Object.freeze({ Checkbox: 'checkbox', Follow: 'follow' }),
           F = Object.freeze({ Tile: 'tile', List: 'list', TileFollowButton: 'tile_follow_btn' }),
           U =
@@ -40814,7 +40756,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           R = function R(e) {
             if ((Z(), a)) return a
-            var n = N('ttft', p)
+            var n = L('ttft', p)
             return (
               (a = n),
               n
@@ -40826,18 +40768,18 @@ window.__SCRIPTS_LOADED__.vendor &&
             A && ((A = !1), C('ttft'))
           },
           I = function I(e, n) {
-            return B(e, n), r || ((r = N('ttfmc', m)) ? (f('ttfmc'), y(r, 'ttfmc:'.concat(e), n)) : null)
+            return B(e, n), r || ((r = L('ttfmc', m)) ? (f('ttfmc'), y(r, 'ttfmc:'.concat(e), n)) : null)
           },
           B = function B(e, n) {
             D && ((D = !1), C('ttfmc:'.concat(e), n))
           },
           x = function x(e, n) {
-            return L(e, n), o || ((o = N('ttfl', h)) ? (f('ttfl'), y(o, 'ttfl:'.concat(e), n)) : null)
-          },
-          L = function L(e, n) {
-            S && ((S = !1), C('ttfl:'.concat(e), n))
+            return N(e, n), o || ((o = L('ttfl', h)) ? (f('ttfl'), y(o, 'ttfl:'.concat(e), n)) : null)
           },
           N = function N(e, n) {
+            S && ((S = !1), C('ttfl:'.concat(e), n))
+          },
+          L = function L(e, n) {
             var d,
               t = g(n)
             if (null === t) return null
@@ -41948,10 +41890,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e, n) {
             return (0, o.Z)({ item_type: M.Z.ItemType.USER, id: e }, le(n))
           },
-          L = function L(e) {
+          N = function N(e) {
             return { item_type: M.Z.ItemType.LIST, id: e }
           },
-          N = function N(e) {
+          L = function L(e) {
             return (0, o.Z)({ item_type: M.Z.ItemType.RELEVANCE_PROMPT }, le(e))
           },
           O = function O(e) {
@@ -42136,14 +42078,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                 {},
               B = I.forward_pivot_details,
               x = I.quoted_forward_pivot_details,
-              L = (null == r ? void 0 : r.forward_pivot_details) || B
-            L && w.id && (w.forward_pivot_details = (0, o.Z)((0, o.Z)({}, L), {}, { associated_tweet_id: w.id }))
-            var N = (null == r ? void 0 : r.quoted_forward_pivot_details) || x
+              N = (null == r ? void 0 : r.forward_pivot_details) || B
+            N && w.id && (w.forward_pivot_details = (0, o.Z)((0, o.Z)({}, N), {}, { associated_tweet_id: w.id }))
+            var L = (null == r ? void 0 : r.quoted_forward_pivot_details) || x
             if (
-              (N &&
+              (L &&
                 w.quoted_tweet_id &&
                 (w.quoted_forward_pivot_details = (0, o.Z)(
-                  (0, o.Z)({}, N),
+                  (0, o.Z)({}, L),
                   {},
                   { associated_tweet_id: w.quoted_tweet_id },
                 )),
@@ -42553,9 +42495,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           forTombstone: B,
           forTweet: Z,
           forUser: x,
-          forList: L,
+          forList: N,
           forMessage: O,
-          forRelevancePrompt: N,
+          forRelevancePrompt: L,
           forRecentSearchResult: j,
           forSavedSearchResult: z,
           forTypeaheadResult: U,
@@ -47375,14 +47317,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           })('push'),
           B = Object.freeze({ DEFAULT: 'default', DENIED: 'denied', GRANTED: 'granted' }),
           x = Object.freeze({ ON: 'On', OFF: 'Off', UNDETERMINED: 'Undetermined' }),
-          L = Object.freeze(
+          N = Object.freeze(
             ((C = {}),
             (0, t.Z)(C, B.DEFAULT, x.UNDETERMINED),
             (0, t.Z)(C, B.DENIED, x.OFF),
             (0, t.Z)(C, B.GRANTED, x.ON),
             C),
           ),
-          N = Object.freeze({
+          L = Object.freeze({
             REQUEST: 'rweb/devices/REMOVE_PUSH_DESTINATION_REQUEST',
             SUCCESS: 'rweb/devices/REMOVE_PUSH_DESTINATION_SUCCESS',
             FAILURE: 'rweb/devices/REMOVE_PUSH_DESTINATION_FAILURE',
@@ -47505,7 +47447,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     ._O(e, {
                       params: (0, l.Z)({}, d ? { subscription: d } : {}),
                       request: a.NotificationSettings.removePushDevices,
-                    })({ actionTypes: N, context: 'ACTION_REMOVE_PUSH_DEVICE' })
+                    })({ actionTypes: L, context: 'ACTION_REMOVE_PUSH_DEVICE' })
                     .then(function () {
                       return n ? e(re()) : Promise.resolve()
                     })
@@ -47577,7 +47519,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   clientVersion: ''.concat(u.ZP.getBrowserTagVersion(h)),
                   osVersion: A,
                   timestampInMs: Date.now(),
-                  systemPermissionState: L[p],
+                  systemPermissionState: N[p],
                   inAppPermissionState: 'Off',
                   metadata: {},
                 }
@@ -47899,7 +47841,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return _
           },
           QV: function QV() {
-            return L
+            return N
           },
           Re: function Re() {
             return H
@@ -47917,7 +47859,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return S
           },
           ZF: function ZF() {
-            return N
+            return L
           },
           d7: function d7() {
             return z
@@ -48007,8 +47949,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = 'PinnedRepliesEducation',
           B = 'TrustedFriendsEducationFlag',
           x = 'TopArticlesFriendsOfFriendsNUX',
-          L = 'LeaveThisConversationInline',
-          N = 'ProfileAboutTabEducation',
+          N = 'LeaveThisConversationInline',
+          L = 'ProfileAboutTabEducation',
           O = 'NotesReadingViewEducation',
           F = 'CommunitiesHashtagsEducation',
           U = 'BirdwatchEarnOutAtRiskNotice',
@@ -48032,7 +47974,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             E,
             z,
             c,
-            L,
+            N,
             b,
             p,
             j,
@@ -48040,7 +47982,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             M,
             Z,
             I,
-            N,
+            L,
             f,
             y,
             C,
@@ -48135,7 +48077,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return E
           },
           ZP: function ZP() {
-            return L
+            return N
           },
         })
         var t = d(86522),
@@ -48359,7 +48301,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }
         }
-        var L = function L(e) {
+        var N = function N(e) {
           var n = e.namespace,
             d = e.entityIsComplete,
             u = void 0 === d ? M : d,
@@ -48730,7 +48672,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return w
           },
           ew: function ew() {
-            return N
+            return L
           },
           mn: function mn() {
             return x
@@ -48851,7 +48793,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               var k = n.payload
               if (k) return (0, o.Z)((0, o.Z)({}, e), {}, { defaultConfig: k })
               break
-            case L:
+            case N:
               var R = n.payload
               if (R) return (0, o.Z)((0, o.Z)({}, e), {}, { debug: R })
               break
@@ -48927,9 +48869,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e) {
             return { payload: e, type: B }
           },
-          L = 'rweb/featureSwitch/SET_DEBUG',
-          N = function N(e) {
-            return { payload: e, type: L }
+          N = 'rweb/featureSwitch/SET_DEBUG',
+          L = function L(e) {
+            return { payload: e, type: N }
           },
           O = 'rweb/featureSwitch/SET_BEHAVIORAL_EVENT_ALLOWLIST',
           F = (0, b.ZP)(function (e, n, d) {
@@ -49744,7 +49686,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return Se
           },
           o6: function o6() {
-            return Le
+            return Ne
           },
           _B: function _B() {
             return Ie
@@ -49811,8 +49753,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = (d(416781), d(468811)),
           B = d.n(I),
           x = d(456992),
-          L = d(51276),
-          N = d(990867),
+          N = d(51276),
+          L = d(990867),
           O = d(300482),
           F = Object.freeze({ LocalFile: 'local_file', Remote: 'remote' }),
           U = Object.freeze({
@@ -49832,7 +49774,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return e ? z(e) : void 0
           },
           z = function z(e) {
-            return (0, L.Z)(e)
+            return (0, N.Z)(e)
               .filter(function (e) {
                 var n = (0, a.Z)(e, 2)
                 n[0]
@@ -49849,7 +49791,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               .join(';')
           },
           V = function V(e) {
-            return (0, N.Z)(e)
+            return (0, L.Z)(e)
               .filter(function (e) {
                 return void 0 !== e
               })
@@ -50416,14 +50358,14 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           Be = 'SEND_METADATA',
           xe = ae.dg(ce, Be),
-          Le = function Le(e) {
+          Ne = function Ne(e) {
             return function (n, d, t) {
               var a = t.api
               return ae._O(n, { params: e, request: a.Media.metadataCreate })({ actionTypes: xe, context: Be })
             }
           },
-          Ne = 'ATTACH_SUBTITLES',
-          Oe = ae.dg(ce, Ne)
+          Le = 'ATTACH_SUBTITLES',
+          Oe = ae.dg(ce, Le)
         function Fe(e) {
           return function (n, d, t) {
             var a = e.subtitlesDisplayName,
@@ -50443,7 +50385,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 subtitlesDisplayName: a,
               },
               request: l.Media.attachSubtitles,
-            })({ actionTypes: Oe, context: Ne })
+            })({ actionTypes: Oe, context: Le })
           }
         }
         var Ue = function Ue(e) {
@@ -50720,7 +50662,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return C
           },
           Xy: function Xy() {
-            return L
+            return N
           },
           YN: function YN() {
             return g
@@ -50853,7 +50795,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return e({ type: D })
             }
           },
-          L = function L(e) {
+          N = function N(e) {
             return M(e)
               .slice(1)
               .map(function (e) {
@@ -50960,7 +50902,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return be
           },
           B7: function B7() {
-            return N
+            return L
           },
           Du: function Du() {
             return X
@@ -51005,7 +50947,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return q
           },
           cu: function cu() {
-            return L
+            return N
           },
           d7: function d7() {
             return pe
@@ -51194,10 +51136,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                 var g,
                   E,
                   R = null === (g = t.payload) || void 0 === g ? void 0 : g.errors[0].code,
-                  L = null === (E = t.payload) || void 0 === E ? void 0 : E.errors[0].message,
-                  N = R !== l.Z.Offline,
-                  O = x(R) ? L : void 0
-                return (0, o.Z)((0, o.Z)({}, d), {}, { fetchStatus: h.ZP.FAILED, failureMessage: O, shouldAbort: N })
+                  N = null === (E = t.payload) || void 0 === E ? void 0 : E.errors[0].message,
+                  L = R !== l.Z.Offline,
+                  O = x(R) ? N : void 0
+                return (0, o.Z)((0, o.Z)({}, d), {}, { fetchStatus: h.ZP.FAILED, failureMessage: O, shouldAbort: L })
               case f.FAILURE:
                 var F,
                   U,
@@ -51249,10 +51191,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
           }),
         )
-        var L = function L(e) {
+        var N = function N(e) {
             return e.ocf.flowToken
           },
-          N = function N(e) {
+          L = function L(e) {
             return e.ocf.subtasks
           },
           O = function O(e) {
@@ -51301,7 +51243,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           X = function X(e) {
             var n = K(e),
-              d = N(e)
+              d = L(e)
             return n
               .slice(0, -1)
               .reverse()
@@ -51359,8 +51301,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                     var l = i.api,
                       u = i.userPersistence,
                       s = t(),
-                      c = L(s),
-                      b = N(s),
+                      c = N(s),
+                      b = L(s),
                       p = G(s),
                       h = de(b, p),
                       A = (0, o.Z)((0, o.Z)({}, r), {}, { flow_token: c, subtask_inputs: h })
@@ -51470,7 +51412,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return function (n, d, t) {
               var a = t.api
               if (d().ocf.sendPinCode || void 0 !== e.arkose_access_token) {
-                var r = L(d()),
+                var r = N(d()),
                   i = (0, o.Z)((0, o.Z)({}, e), {}, { flow_token: r })
                 return (0, m._O)(n, { params: i, request: a.Ocf.verifyUserIdentifier })({
                   actionTypes: k,
@@ -51602,10 +51544,10 @@ window.__SCRIPTS_LOADED__.vendor &&
               return H
             },
             selectGender: function selectGender() {
-              return N
+              return L
             },
             selectHasExactAge: function selectHasExactAge() {
-              return L
+              return N
             },
             selectLanguage: function selectLanguage() {
               return O
@@ -51859,10 +51801,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e) {
             return e.personalization.data.data.birth_date ? e.personalization.data.data.birth_date : ''
           },
-          L = function L(e) {
+          N = function N(e) {
             return !!e.personalization.data.data.has_exact_age
           },
-          N = function N(e) {
+          L = function L(e) {
             var n = E(e),
               d = P(e),
               t = d.gender_preferences && d.gender_preferences.gender_override
@@ -52233,19 +52175,19 @@ window.__SCRIPTS_LOADED__.vendor &&
             return xe
           },
           jN: function jN() {
-            return Le
+            return Ne
           },
           KT: function KT() {
             return Oe
           },
           CA: function CA() {
-            return Ne
+            return Le
           },
           yK: function yK() {
             return j
           },
           BP: function BP() {
-            return L
+            return N
           },
           $q: function $q() {
             return U
@@ -52254,7 +52196,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return H
           },
           CO: function CO() {
-            return N
+            return L
           },
           OW: function OW() {
             return O
@@ -52489,10 +52431,10 @@ window.__SCRIPTS_LOADED__.vendor &&
         var x = function x(e) {
             return e.session
           },
-          L = function L(e) {
+          N = function N(e) {
             return x(e).delegateAccountCount
           },
-          N = function N(e) {
+          L = function L(e) {
             return x(e).flashMessage
           },
           O = function O(e) {
@@ -52708,7 +52650,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   })
             }
           },
-          Le = function Le() {
+          Ne = function Ne() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return function (n, d, t) {
               var a = t.api
@@ -52718,7 +52660,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
             }
           },
-          Ne = function Ne(e) {
+          Le = function Le(e) {
             return function (n, d, t) {
               var a = t.api
               return (0, p._O)(n, { request: a.Auth.requestSsoInitToken, params: { provider: e } })({
@@ -53404,7 +53346,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           An: function An() {
-            return N
+            return L
           },
           DN: function DN() {
             return R
@@ -53464,7 +53406,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return B
           },
           js: function js() {
-            return L
+            return N
           },
           n: function n() {
             return H
@@ -53611,10 +53553,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e) {
             return w(e).trend_location
           },
-          L = function L(e) {
+          N = function N(e) {
             return 'enabled' === w(e).universal_quality_filtering_enabled
           },
-          N = function N(e) {
+          L = function L(e) {
             var n, d
             return null === (n = w(e)) || void 0 === n || null === (d = n.ext) || void 0 === d
               ? void 0
@@ -54637,7 +54579,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           return (0, r.Z)((0, r.Z)({}, n), {}, { id: u })
         }
         var x,
-          L =
+          N =
             ((x = 'retweeted'),
             function (e, n, d) {
               var t,
@@ -54647,7 +54589,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ? r
                 : r || !(null == a || null === (t = a.edit_perspective) || void 0 === t || !t[x])
             }),
-          N = d(841361)
+          L = d(841361)
         function O(e) {
           return function (n, d) {
             var t
@@ -54657,7 +54599,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               i = E(a)
             if (!i.length) return n
             var l,
-              u = (0, N.Z)(i)
+              u = (0, L.Z)(i)
             try {
               for (u.s(); !(l = u.n()).done; ) {
                 var s = l.value,
@@ -54942,7 +54884,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_RETWEET',
               canPerformAction: function canPerformAction() {
-                return !L.apply(void 0, arguments)
+                return !N.apply(void 0, arguments)
               },
               succeedIfError: u.ZP.AlreadyRetweeted,
             },
@@ -54965,7 +54907,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 return e.Tweets.unretweet
               },
               context: 'ACTION_UNRETWEET',
-              canPerformAction: L,
+              canPerformAction: N,
             },
             bookmark: {
               reducer: function reducer(e, n) {
@@ -55591,7 +55533,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return E
           },
           zP: function zP() {
-            return L
+            return N
           },
           kX: function kX() {
             return Z
@@ -55769,7 +55711,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
           },
           x = 'rweb/typeaheadUsers/INIT_FROM_CACHE',
-          L = function L(e) {
+          N = function N(e) {
             return function (n, d, t) {
               var a = t.userPersistence,
                 r = d(),
@@ -56047,10 +55989,10 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = (d(22144), Object.freeze({ LAUNCH: 'launch' })),
           B = d(838203),
           x = d(851670)
-        function L(e) {
+        function N(e) {
           return [(0, x.dP)(e)]
         }
-        var N = d(687150),
+        var L = d(687150),
           O = d(17500),
           F = function F(e, n) {
             var d, t
@@ -56202,7 +56144,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             i = e.formatResponse,
             h = void 0 === i ? B.Z : i,
             D = e.ingestGlobalObjects,
-            S = void 0 === D ? L : D,
+            S = void 0 === D ? N : D,
             v = e.initialFetchCount,
             C = void 0 === v ? 20 : v,
             x = e.isUserRefreshable,
@@ -56254,7 +56196,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 },
               ],
               function (e, n, d, t) {
-                var r = (0, N.k)(
+                var r = (0, L.k)(
                   (function (e, n) {
                     return e.map(function (e) {
                       if (e.type === _.ZP.TimelineModule) {
@@ -56434,20 +56376,20 @@ window.__SCRIPTS_LOADED__.vendor &&
                       })
               return null != t && t.length ? t.length : 0
             },
-            Le = function Le(e) {
+            Ne = function Ne(e) {
               var n = Be(e.timeline.instructions),
                 d = n && n.parameters.entries
               if (!d) return 0
               var t = 0
               return (
-                (0, N.sj)(d, function (e) {
+                (0, L.sj)(d, function (e) {
                   var n = e.entry
                   return 'tweet' === n.type && (t += 1), n
                 }),
                 t
               )
             },
-            Ne = function Ne(e) {
+            Le = function Le(e) {
               var t = e.cursorType,
                 o = e.cursorValue,
                 i = e.options,
@@ -56580,7 +56522,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       empty: 0 === n.timeline.instructions.length,
                       cursorType: t,
                       newEntries: xe(n),
-                      newTweets: Le(n),
+                      newTweets: Ne(n),
                     }
                   )
                 })
@@ -56592,7 +56534,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 var t = d()
                 return Se(t)
                   ? n(
-                      Ne({
+                      Le({
                         sourceEntryId: null,
                         cursorValue: null,
                         options: (0, a.Z)((0, a.Z)({}, e), {}, { count: C, requestContext: I.LAUNCH }),
@@ -56615,7 +56557,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 var r, o
                 return e && T.mX(e)
                   ? d(
-                      Ne({
+                      Le({
                         sourceEntryId: e.entryId,
                         cursorValue: T.NA(e),
                         options: (0, a.Z)(
@@ -57372,7 +57314,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return Y
           },
           LA: function LA() {
-            return Le
+            return Ne
           },
           qf: function qf() {
             return Oe
@@ -57646,9 +57588,9 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
           })
         }
-        var L = d(254249)
-        var N = function N(e, n) {
-            return (0, L.Z)(e, function (e, d) {
+        var N = d(254249)
+        var L = function L(e, n) {
+            return (0, N.Z)(e, function (e, d) {
               if (e.entryId === n) return { index: d, indexWithinModule: -1 }
               if (e.type === p.ZP.TimelineModule) {
                 var t = (0, P.Z)(e.content.items, function (e) {
@@ -57750,7 +57692,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   var d = n.entries,
                     t = e.entry,
                     a = e.entryIdToReplace,
-                    o = N(d, a),
+                    o = L(d, a),
                     i = d
                   if (o) {
                     var l = o.index,
@@ -57851,18 +57793,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                   R = n.payload,
                   Z = R.pageConfiguration,
                   B = R.timeline,
-                  L = Ve(b, T),
-                  N = L && w,
+                  N = Ve(b, T),
+                  L = N && w,
                   O = ze({
                     state: e,
                     sourceEntryId: T,
                     instructions: B.instructions,
                     minimumItemsBetweenAds: M,
-                    saveInstructionsForNewTweetsBar: N,
+                    saveInstructionsForNewTweetsBar: L,
                   }),
                   F = We(A, B.responseObjects),
                   U = ee(p, v, s.Z.LOADED),
-                  H = (L || v === u.eT) && k ? k : h,
+                  H = (N || v === u.eT) && k ? k : h,
                   j = Ge({ newState: O, prevInjections: m, prevTimelineModuleInjections: D })
                 if (g && C)
                   null === (P = performance) ||
@@ -57969,19 +57911,19 @@ window.__SCRIPTS_LOADED__.vendor &&
                   Ze = e.injections,
                   Ie = e.pinnedEntry,
                   Be = e.timelineModuleInjections,
-                  Le = n.meta.shouldShowEmptyModule,
+                  Ne = n.meta.shouldShowEmptyModule,
                   Oe = (0, o.Z)([n.payload]),
                   Ue = {}
                 return (
                   Object.keys(Be).forEach(function (e) {
-                    Ue[e] = x(Be[e], Oe, Le)
+                    Ue[e] = x(Be[e], Oe, Ne)
                   }),
                   (0, r.Z)(
                     (0, r.Z)({}, e),
                     {},
                     {
-                      entries: x(Re, Oe, Le),
-                      injections: x(Ze, Oe, Le),
+                      entries: x(Re, Oe, Ne),
+                      injections: x(Ze, Oe, Ne),
                       timelineModuleInjections: Ue,
                       pinnedEntry: Ie && Ie.entryId === n.payload ? null : Ie,
                     },
@@ -58106,7 +58048,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     ),
                   },
                 )
-              case Ne:
+              case Le:
                 var kn = n.payload,
                   Pn = kn.entryId,
                   En = kn.triggerName,
@@ -58216,17 +58158,17 @@ window.__SCRIPTS_LOADED__.vendor &&
             return { type: Ie, meta: { timelineId: e }, payload: { injections: n, timelineModuleInjections: d } }
           },
           xe = 'rweb/urt/IMPRESS_ENTRY',
-          Le = function Le(e) {
+          Ne = function Ne(e) {
             var n = e.entryId,
               d = e.timelineId
             return { type: xe, meta: { timelineId: d }, payload: { entryId: n } }
           },
-          Ne = 'rweb/urt/INCREMENT_TRIGGER_EXECUTION_COUNT',
+          Le = 'rweb/urt/INCREMENT_TRIGGER_EXECUTION_COUNT',
           Oe = function Oe(e) {
             var n = e.entryId,
               d = e.timelineId,
               t = e.triggerName
-            return { type: Ne, meta: { timelineId: d }, payload: { entryId: n, triggerName: t } }
+            return { type: Le, meta: { timelineId: d }, payload: { entryId: n, triggerName: t } }
           },
           Fe = 'rweb/urt/APPLY_IMMEDIATE_REACTION_INSTRUCTIONS',
           Ue = function Ue(e) {
@@ -58830,8 +58772,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e, n, d) {
             return { sourceUserId: (0, g.o1)(d) }
           },
-          L = (0, S.ZP)({ namespace: 'users', entityIsComplete: _ }),
-          N = (0, S.tb)(L, {
+          N = (0, S.ZP)({ namespace: 'users', entityIsComplete: _ }),
+          L = (0, S.tb)(N, {
             context: 'FETCH_USER',
             endpoint: function endpoint(e) {
               return e.UsersGraphQL.fetchOneUser
@@ -58840,7 +58782,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return (0, a.Z)({ user_id: e[0] }, n)
             },
           }),
-          O = (0, S.Nr)(L, {
+          O = (0, S.Nr)(N, {
             context: 'FETCH_USERS',
             endpoint: function endpoint(e) {
               return e.UsersGraphQL.fetchUsers
@@ -58849,7 +58791,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return (0, a.Z)({ user_id: e.join(',') }, n)
             },
           }),
-          F = (0, S.Tx)(L, '_unprotectedFollow', {
+          F = (0, S.Tx)(N, '_unprotectedFollow', {
             getParams: function getParams(e) {
               var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                 d = n.promotedContent
@@ -58907,7 +58849,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               }
             },
           }),
-          U = (0, S.Tx)(L, '_protectedFollow', {
+          U = (0, S.Tx)(N, '_protectedFollow', {
             getParams: function getParams(e, n) {
               return (0, a.Z)({ id_str: e }, n)
             },
@@ -58975,7 +58917,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           },
           z = {
-            removeFollower: (0, S.Tx)(L, 'removeFollower', {
+            removeFollower: (0, S.Tx)(N, 'removeFollower', {
               getParams: function getParams(e) {
                 var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                 return (0, a.Z)({ target_user_id: e }, n)
@@ -58999,7 +58941,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               relayStoreUpdater: H,
             }),
-            block: (0, S.Tx)(L, 'block', {
+            block: (0, S.Tx)(N, 'block', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59045,7 +58987,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 }
               },
             }),
-            unblock: (0, S.Tx)(L, 'unblock', {
+            unblock: (0, S.Tx)(N, 'unblock', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59065,7 +59007,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_UNBLOCK',
             }),
-            unfollow: (0, S.Tx)(L, 'unfollow', {
+            unfollow: (0, S.Tx)(N, 'unfollow', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59093,7 +59035,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 }
               },
             }),
-            cancelPendingFollow: (0, S.Tx)(L, 'cancelPendingFollow', {
+            cancelPendingFollow: (0, S.Tx)(N, 'cancelPendingFollow', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59113,7 +59055,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               context: 'ACTION_CANCEL_FOLLOW_REQUEST',
               succeedIfError: s.ZP.NoFollowRequest,
             }),
-            mute: (0, S.Tx)(L, 'mute', {
+            mute: (0, S.Tx)(N, 'mute', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59127,7 +59069,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_MUTE',
             }),
-            unmute: (0, S.Tx)(L, 'unmute', {
+            unmute: (0, S.Tx)(N, 'unmute', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id_str: e }, n)
               },
@@ -59141,7 +59083,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_UNMUTE',
             }),
-            disableRetweets: (0, S.Tx)(L, 'disableRetweets', {
+            disableRetweets: (0, S.Tx)(N, 'disableRetweets', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id: e, retweets: !1 }, n)
               },
@@ -59155,7 +59097,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_DISABLE_USER_RETWEETS',
             }),
-            enableRetweets: (0, S.Tx)(L, 'enableRetweets', {
+            enableRetweets: (0, S.Tx)(N, 'enableRetweets', {
               getParams: function getParams(e, n) {
                 return (0, a.Z)({ id: e, retweets: !0 }, n)
               },
@@ -59169,7 +59111,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
               context: 'ACTION_ENABLE_USER_RETWEETS',
             }),
-            updateDeviceFollowing: (0, S.Tx)(L, 'updateDeviceFollowing', {
+            updateDeviceFollowing: (0, S.Tx)(N, 'updateDeviceFollowing', {
               getMeta: function getMeta(e, n, d) {
                 return { notifications: n && n.device }
               },
@@ -59269,7 +59211,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           q = {
             selectIdByScreenName: (0, o.P1)(
-              L.selectAll,
+              N.selectAll,
               function (e, n) {
                 return (0, w.Z)(n)
               },
@@ -59324,7 +59266,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               return n ? Q.select(e, n) : void 0
             },
           },
-          Q = (0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)({}, L), N), O), G), q), z)
+          Q = (0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)((0, a.Z)({}, N), L), O), G), q), z)
         var K = v.Z.register(Q)
       },
       264282: function _(e, n, d) {
@@ -61231,7 +61173,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return re
           },
           Bc: function Bc() {
-            return L
+            return N
           },
           C1: function C1() {
             return $
@@ -61363,13 +61305,13 @@ window.__SCRIPTS_LOADED__.vendor &&
             return c
           },
           bA: function bA() {
-            return N
+            return L
           },
           bk: function bk() {
             return Ee
           },
           cx: function cx() {
-            return Ne
+            return Le
           },
           dH: function dH() {
             return Ae
@@ -61387,7 +61329,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return T
           },
           gL: function gL() {
-            return Le
+            return Ne
           },
           iV: function iV() {
             return V
@@ -65159,7 +65101,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 957458))
             }),
           ),
-          L = (0, l.cI)(
+          N = (0, l.cI)(
             (0, r.p)(function () {
               return Promise.all([
                 d.e(
@@ -65304,7 +65246,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 173947))
             }),
           ),
-          N = (0, l.cI)(
+          L = (0, l.cI)(
             (0, r.p)(function () {
               return Promise.all([
                 d.e(
@@ -71930,7 +71872,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 738692))
             }),
           ),
-          Le = (0, l.cI)(
+          Ne = (0, l.cI)(
             (0, r.p)(function () {
               return Promise.all([
                 d.e(
@@ -72027,7 +71969,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ]).then(d.bind(d, 209405))
             }),
           ),
-          Ne = (0, l.cI)(
+          Le = (0, l.cI)(
             (0, r.p)(function () {
               return Promise.all([
                 d.e(
@@ -73821,13 +73763,13 @@ window.__SCRIPTS_LOADED__.vendor &&
               }),
             )
           },
-          L = function L(e) {
+          N = function N(e) {
             return a.createElement(
               m.Z,
               (0, t.Z)({}, e, { component: v, featureSwitchName: 'responsive_web_twitter_article_compose_enabled' }),
             )
           },
-          N = function N(e) {
+          L = function L(e) {
             return a.createElement(
               m.Z,
               (0, t.Z)({}, e, { component: w, featureSwitchName: 'responsive_web_twitter_article_compose_enabled' }),
@@ -73836,7 +73778,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         function O() {
           return [
             a.createElement(h.Z, {
-              component: N,
+              component: L,
               exact: !0,
               key: 'note_tabbed_media_edit',
               modalSize: 'verticallyMaximized',
@@ -73844,7 +73786,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               topOfScreen: !0,
             }),
             a.createElement(r.AW, {
-              component: L,
+              component: N,
               exact: !0,
               key: 'note_focus_mode',
               path: '/i/notes/focus/'.concat(D.FJ),
@@ -73885,7 +73827,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return D
           },
           DY: function DY() {
-            return L
+            return N
           },
           Do: function Do() {
             return I
@@ -73912,7 +73854,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return c
           },
           Jv: function Jv() {
-            return N
+            return L
           },
           KY: function KY() {
             return x
@@ -74108,8 +74050,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           I = l('noteId', i.id),
           B = l('noteClassificationType', i.noteClassificationType),
           x = l('orgId', i.base64),
-          L = l('placeId', i.placeId),
-          N = l('platform', i.platform),
+          N = l('placeId', i.placeId),
+          L = l('platform', i.platform),
           O = l('quickPromotePlatform', i.quickPromotePlatformRweb),
           F = l('quickPromotePlatform', i.quickPromotePlatformWebview),
           U = l('quickPromoteScreenName', i.quickPromoteScreenName),
@@ -74718,10 +74660,10 @@ window.__SCRIPTS_LOADED__.vendor &&
               return A
             },
             enrollCouponFail: function enrollCouponFail() {
-              return N
+              return L
             },
             enrollCouponSuccess: function enrollCouponSuccess() {
-              return L
+              return N
             },
             fetchCouponFailed: function fetchCouponFailed() {
               return x
@@ -74971,7 +74913,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         function x(e) {
           return { component: 'intro', element: 'fetch_coupon', action: 'fail', data: { context: e, event_info: e } }
         }
-        function L(e) {
+        function N(e) {
           return {
             component: 'review',
             element: 'enroll_coupon',
@@ -74979,7 +74921,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             data: { context: JSON.stringify(e), event_info: JSON.stringify(e) },
           }
         }
-        function N(e) {
+        function L(e) {
           return { component: 'review', element: 'enroll_coupon', action: 'fail', data: { context: e, event_info: e } }
         }
         function O() {
@@ -75562,7 +75504,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           })()
         ;(0, s.Z)(x, 'SINGLE_WILDCARD', '*'), (0, s.Z)(x, 'DOUBLE_WILDCARD', '**')
-        var L = (function () {
+        var N = (function () {
             function e(n) {
               ;(0, r.Z)(this, e), (this._sequenceStartTimestampMs = n), (this._sequenceNumber = 0)
             }
@@ -75582,8 +75524,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          N = d(198022),
-          O = d.n(N),
+          L = d(198022),
+          O = d.n(L),
           F = (function () {
             function e() {
               ;(0, r.Z)(this, e), (0, s.Z)(this, '_sessionTtl', 30), this._generateNewSessionId()
@@ -75687,7 +75629,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               {
                 key: '_getThriftEvent',
                 value: function value(e, n) {
-                  this._sequenceManager || (this._sequenceManager = new L(Date.now()))
+                  this._sequenceManager || (this._sequenceManager = new N(Date.now()))
                   var d = this._sessionIdEnabled ? this._sessionManager.getSessionId() : void 0
                   return (0, _.ZP)(
                     e,
@@ -77496,8 +77438,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             I = void 0 !== Z && Z,
             B = [h.sideControl, h.leftControl, !!n && h.sideControlWithCenteredLogo],
             x = [h.sideControl, h.rightControl, !!n && h.sideControlWithCenteredLogo],
-            L = !!T,
-            N = function N(e) {
+            N = !!T,
+            L = function L(e) {
               return t.createElement(
                 a.Z,
                 { style: m.title },
@@ -77538,7 +77480,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     t.createElement(
                       a.Z,
                       { onClick: v, style: [m.middleContainer, !!n && m.middleContainerWithCenteredLogo] },
-                      L
+                      N
                         ? t.createElement(
                             i.Z,
                             {
@@ -77547,9 +77489,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                               avatarSize: _,
                               cellStyle: m.verticalAlignMiddle,
                             },
-                            N(d),
+                            L(d),
                           )
-                        : N(d),
+                        : L(d),
                       S || null,
                       n || null,
                     ),
@@ -77889,12 +77831,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                         w && B[w],
                         n && { color: g.Z.theme.colors[n] },
                         j && x[j],
-                        z && L[z],
+                        z && N[z],
                         E,
                       ],
                       G = h || D || c || void 0,
                       q = G ? Z.withActiveInteractiveStyling : Z.withInactiveInteractiveStyling,
-                      Q = N(R || (G && 'heavy'))
+                      Q = L(R || (G && 'heavy'))
                     return b.createElement(
                       T,
                       (0, t.Z)(
@@ -77982,7 +77924,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               title1: { fontSize: e.fontSizes.title1, lineHeight: e.lineHeights.title1 },
             }
           }),
-          L = g.Z.create(function (e) {
+          N = g.Z.create(function (e) {
             return {
               normal: { fontWeight: e.fontWeights.regular },
               medium: { fontWeight: e.fontWeights.medium },
@@ -77990,7 +77932,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               heavy: { fontWeight: e.fontWeights.heavy },
             }
           })
-        function N(e) {
+        function L(e) {
           return [O.root, O['weight:'.concat(e || 'normal')]]
         }
         var O = g.Z.create(function (e) {
@@ -78610,10 +78552,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                       I = n.onPress,
                       B = (n.pullLeft, n.pullRight, n.renderMenu),
                       x = n.size,
-                      L = n.style,
-                      N = n.type,
+                      N = n.style,
+                      L = n.type,
                       O = (0, a.Z)(n, g),
-                      F = N ? f[N] : {},
+                      F = L ? f[L] : {},
                       U = F.color || s,
                       H = F.borderColor || l,
                       j = F.backgroundColor || o,
@@ -78622,7 +78564,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                         b &&
                         (function (e) {
                           return 'onMediaDominantColorFilled' === e
-                        })(N)
+                        })(L)
                           ? b
                           : v.Z.theme.colors[j],
                       W = 1 !== z ? (0, A.Du)(V, z) : V,
@@ -78636,7 +78578,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       K = F.backdropFilter ? { backdropFilter: F.backdropFilter } : null,
                       Y = [
                         C.root,
-                        L,
+                        N,
                         G,
                         H && 'text' !== H && { borderColor: v.Z.theme.colors[H] },
                         R[x],
@@ -78651,7 +78593,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       de = [{ color: v.Z.theme.colors[U] }, $, J, ne],
                       te = y ? c.cloneElement(c.Children.only(y), { style: de }) : null,
                       ae =
-                        'primaryText' === N
+                        'primaryText' === L
                           ? {
                               borderBottom: ''
                                 .concat(v.Z.theme.borderWidthsPx.medium, 'px solid ')
@@ -79040,7 +78982,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return P
           },
           JP: function JP() {
-            return L
+            return N
           },
           Jo: function Jo() {
             return k
@@ -79422,7 +79364,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           x = function x(e) {
             return !!e && e.includes('audiospace')
           }
-        function L(e) {
+        function N(e) {
           switch (e) {
             case 'on_media':
               return 'onMediaWhiteFilled'
@@ -81695,8 +81637,8 @@ window.__SCRIPTS_LOADED__.vendor &&
               I = e.onClick,
               B = e.onFocusIn,
               x = e.onFocusOut,
-              L = e.onFocusRingGained,
-              N = e.onFocusRingLost,
+              N = e.onFocusRingGained,
+              L = e.onFocusRingLost,
               O = e.onHoverIn,
               F = e.onHoverOut,
               U = e.onPress,
@@ -81751,8 +81693,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                 disabled: w || !_,
                 onFocusIn: B,
                 onFocusOut: x,
-                onFocusRingGained: L,
-                onFocusRingLost: N,
+                onFocusRingGained: N,
+                onFocusRingLost: L,
                 onHoverIn: O,
                 onHoverOut: F,
                 onPressIn: H,
@@ -81932,6 +81874,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               retweet: 't',
               share: 's',
               downvote: 'd',
+              bookmark: 'b',
               reactUndo: 'q 0',
               reactHmm: 'q 1',
               reactSad: 'q 2',
@@ -85030,7 +84973,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               }),
             )
           },
-          L = function L(e, n) {
+          N = function N(e, n) {
             e.displayUrl || (e.displayUrl = e.expandedUrl)
             var d = (function (e) {
               var n = e.displayUrl,
@@ -85092,7 +85035,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 : null,
             )
           },
-          N = function N(e) {
+          L = function L(e) {
             var n,
               d,
               t = e.entity,
@@ -85188,7 +85131,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                             withUnderline: s && c,
                             withoutTwemojiAndHashflags: !0,
                           },
-                          L(D, S),
+                          N(D, S),
                         )
                       return H(v, 'link', h, i)
                     })
@@ -85214,7 +85157,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                           withUnderline: r && i,
                           withoutTwemojiAndHashflags: !0,
                         },
-                        L(n),
+                        N(n),
                       )
                     })
                   })(i, e.part, l, a.hostname)
@@ -85260,7 +85203,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       m = n.url,
                       h = null,
                       A = t(c)
-                    A && (h = N({ entity: A, isHashFlag: !0 }))
+                    A && (h = L({ entity: A, isHashFlag: !0 }))
                     var D = B(u, c),
                       S = D.map(function (e, n) {
                         var t = 0 === n ? s : '',
@@ -85331,7 +85274,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     return H(S, 'user_mention', s, t)
                   })(i, e.part, s, d)
                 case T.Z.EMOJI:
-                  return (n = e.part), N({ entity: n })
+                  return (n = e.part), L({ entity: n })
                 case T.Z.TEXT:
                   return x(e.part)
                 default:
@@ -85402,7 +85345,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return F
           },
           Jg: function Jg() {
-            return N
+            return L
           },
           hr: function hr() {
             return O
@@ -85778,7 +85721,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return [].concat((0, t.Z)(e), [(0, r.Z)((0, r.Z)({}, d), {}, { type: n })])
           }, [])
         }
-        var L = function L(e, n, d) {
+        var N = function N(e, n, d) {
             return x(
               Array.isArray(e)
                 ? e.map(function (e) {
@@ -85789,7 +85732,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               n,
             )
           },
-          N = function N(e) {
+          L = function L(e) {
             var n = A.Z.getTwemojiEntities(e)
             return I(e, [0, e.length], n)
           },
@@ -85825,7 +85768,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
             return I(e, [0, e.length], t, d)
           },
-          emojiOnlyTextParts: N,
+          emojiOnlyTextParts: L,
           plainTextParts: O,
           tweetTextParts: function tweetTextParts(e, n, d, a, r, o) {
             var i = []
@@ -85837,7 +85780,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i,
                     (0, t.Z)(
                       (function (e, n) {
-                        return L(e, D.Z.MEDIA, n)
+                        return N(e, D.Z.MEDIA, n)
                       })(d.media, e),
                     ),
                   ),
@@ -85846,7 +85789,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i,
                     (0, t.Z)(
                       (function (e, n) {
-                        return L(e, D.Z.URL, n)
+                        return N(e, D.Z.URL, n)
                       })(d.urls, e),
                     ),
                   ),
@@ -85855,7 +85798,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i,
                     (0, t.Z)(
                       (function (e, n) {
-                        return L(e, D.Z.HASHTAG, n)
+                        return N(e, D.Z.HASHTAG, n)
                       })(d.hashtags, e),
                     ),
                   ),
@@ -85864,7 +85807,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i,
                     (0, t.Z)(
                       (function (e, n) {
-                        return L(e, D.Z.CASHTAG, n)
+                        return N(e, D.Z.CASHTAG, n)
                       })(d.symbols, e),
                     ),
                   ),
@@ -85873,7 +85816,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     i,
                     (0, t.Z)(
                       (function (e, n) {
-                        return L(e, D.Z.MENTION, n)
+                        return N(e, D.Z.MENTION, n)
                       })(d.user_mentions, e),
                     ),
                   )),
@@ -86492,10 +86435,10 @@ window.__SCRIPTS_LOADED__.vendor &&
               backgroundColor: A.Z.theme.colors.translucentBlack15,
               color: A.Z.theme.colors.translucentBlack15,
             })
-          return c.createElement(h.Z, { interactiveStyles: t ? a : null, interactivityState: n, style: L.root })
+          return c.createElement(h.Z, { interactiveStyles: t ? a : null, interactivityState: n, style: N.root })
         }
         x.defaultProps = y.DefaultProps
-        var L = A.Z.create(function (e) {
+        var N = A.Z.create(function (e) {
             return {
               root: {
                 width: '100%',
@@ -86504,7 +86447,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               },
             }
           }),
-          N = d(630525),
+          L = d(630525),
           O = d(781682),
           F = ['interactivityState'],
           U = ['children']
@@ -86515,7 +86458,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             r = (0, k.Z)(d, U),
             o = y.fromProps.getLink(r),
             i = o ? { link: o, onPress: d.onClick } : { accessibilityRole: 'none' },
-            l = (0, O.rb)((0, N.$n)({ color: (0, O.xO)(A.Z.theme.colors.primary), coefficient: 0.5 })),
+            l = (0, O.rb)((0, L.$n)({ color: (0, O.xO)(A.Z.theme.colors.primary), coefficient: 0.5 })),
             u = I.Z.generate({
               backgroundColor: A.Z.theme.colors.transparent,
               customHoverBackgroundColor: A.Z.theme.colors.transparent,
@@ -86625,7 +86568,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             E = ne(C),
             I = ne(C + p),
             B = ne(C + p + h),
-            L = 'rtl' === (0, Z.Z)().direction ? ee.absoluteCenterRTL : ee.absoluteCenter
+            N = 'rtl' === (0, Z.Z)().direction ? ee.absoluteCenterRTL : ee.absoluteCenter
           return c.createElement(
             R.Z,
             {
@@ -86636,7 +86579,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             },
             c.createElement(
               R.Z,
-              { ratio: 1, style: [ee.fill, L, ee.overflowVisible] },
+              { ratio: 1, style: [ee.fill, N, ee.overflowVisible] },
               c.createElement(
                 v.Z,
                 { shape: u, style: [ee.interactiveContainer, T] },
@@ -86645,17 +86588,17 @@ window.__SCRIPTS_LOADED__.vendor &&
                   (0, t.Z)({ interactivityState: n }, a, { style: ee.fill }),
                   c.createElement(
                     v.Z,
-                    { shape: u, style: [ee.nonInteractive, L, E] },
+                    { shape: u, style: [ee.nonInteractive, N, E] },
                     c.createElement(w, { style: [ee.fill, { backgroundColor: s }] }),
                   ),
                   c.createElement(
                     v.Z,
-                    { shape: u, style: [ee.nonInteractive, L, I], svgProps: S },
+                    { shape: u, style: [ee.nonInteractive, N, I], svgProps: S },
                     c.createElement(P.Z, { style: [ee.fill, ee.gapColor] }),
                   ),
                   c.createElement(
                     v.Z,
-                    { shape: u, style: [ee.nonInteractive, L, M.backgroundColor, B], svgProps: D },
+                    { shape: u, style: [ee.nonInteractive, N, M.backgroundColor, B], svgProps: D },
                     c.createElement(
                       q,
                       (0, t.Z)({}, a, {
@@ -86667,7 +86610,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   ),
                   c.createElement(
                     v.Z,
-                    { shape: u, style: [L, B], svgProps: D },
+                    { shape: u, style: [N, B], svgProps: D },
                     c.createElement(x, (0, t.Z)({ interactivityState: n }, a)),
                   ),
                 ),
@@ -87121,8 +87064,8 @@ window.__SCRIPTS_LOADED__.vendor &&
           }
           return (0, T.Z)(n, '.gif') ? a(Z) : a(I)
         }
-        var L = 'https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png',
-          N = (0, C.Z)({}, L, x({ url: L }))
+        var N = 'https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png',
+          L = (0, C.Z)({}, N, x({ url: N }))
         var O
         function F() {
           return (
@@ -87214,7 +87157,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               semantic_core_img: z,
               sticky: function sticky(e) {
                 var n = e.url
-                return N[n] || [{ uri: n, width: 48, height: 48 }]
+                return L[n] || [{ uri: n, width: 48, height: 48 }]
               },
               topics: _,
               tweet_video_thumb: z,
@@ -88199,15 +88142,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                       I = r && (!o || (o && !b.Z.isEnabled)),
                       B = l || !e,
                       x = i && !b.Z.isEnabled,
-                      L = E || R
-                    f === g.J.forceVisible ? (L = !0) : f === g.J.forceHidden && (L = !1)
-                    var N = B && (L || Z) && !S(),
+                      N = E || R
+                    f === g.J.forceVisible ? (N = !0) : f === g.J.forceHidden && (N = !1)
+                    var L = B && (N || Z) && !S(),
                       O =
                         'function' == typeof a
                           ? a({
                               dismissPopover: this._handleDismiss,
                               forceOpen: this._handleForceOpen,
-                              isPopoverShown: L,
+                              isPopoverShown: N,
                             })
                           : a
                     return u.createElement(
@@ -88222,7 +88165,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                           style: k,
                         },
                         x ? u.createElement(D, { onLongPress: this._handleLongPress }, O) : O,
-                        N
+                        L
                           ? u.createElement(
                               v,
                               {
@@ -88235,7 +88178,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                                 onHoverCardUnmount: s,
                                 preferredHorizontalOrientation: m,
                                 preferredVerticalOrientation: h,
-                                show: L,
+                                show: N,
                                 withArrow: w,
                                 withContentOverflow: M,
                                 withFixedPosition: y,
@@ -94506,7 +94449,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         function x(e, n, d, t, r) {
           return (n = +n), (d >>>= 0), r || B(e, 0, d, 4), a.write(e, n, d, t, 23, 4), d + 4
         }
-        function L(e, n, d, t, r) {
+        function N(e, n, d, t, r) {
           return (n = +n), (d >>>= 0), r || B(e, 0, d, 8), a.write(e, n, d, t, 52, 8), d + 8
         }
         ;(l.prototype.slice = function (e, n) {
@@ -94774,10 +94717,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             return x(this, e, n, !1, d)
           }),
           (l.prototype.writeDoubleLE = function (e, n, d) {
-            return L(this, e, n, !0, d)
+            return N(this, e, n, !0, d)
           }),
           (l.prototype.writeDoubleBE = function (e, n, d) {
-            return L(this, e, n, !1, d)
+            return N(this, e, n, !1, d)
           }),
           (l.prototype.copy = function (e, n, d, t) {
             if (!l.isBuffer(e)) throw new TypeError('argument should be a Buffer')
@@ -94835,7 +94778,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
             return this
           })
-        var N = /[^+/0-9A-Za-z-_]/g
+        var L = /[^+/0-9A-Za-z-_]/g
         function O(e, n) {
           var d
           n = n || 1 / 0
@@ -94879,7 +94822,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         function F(e) {
           return t.toByteArray(
             (function (e) {
-              if ((e = (e = e.split('=')[0]).trim().replace(N, '')).length < 2) return ''
+              if ((e = (e = e.split('=')[0]).trim().replace(L, '')).length < 2) return ''
               for (; e.length % 4 != 0; ) {
                 e += '='
               }
@@ -95619,17 +95562,17 @@ window.__SCRIPTS_LOADED__.vendor &&
                       var t = x.indexOf(e.key)
                       ;-1 === t && (t = 0)
                       var a = d - t
-                      a && ((Z = !0), N(a))
+                      a && ((Z = !0), L(a))
                     })(e)
               })
             }
           }
           var B = T(f()),
             x = [B.key]
-          function L(e) {
+          function N(e) {
             return C + p(e)
           }
-          function N(e) {
+          function L(e) {
             d.go(e)
           }
           var O = 0
@@ -95643,13 +95586,13 @@ window.__SCRIPTS_LOADED__.vendor &&
             length: d.length,
             action: 'POP',
             location: B,
-            createHref: L,
+            createHref: N,
             push: function push(e, n) {
               var t = 'PUSH',
                 r = m(e, n, _(), H.location)
               k.confirmTransitionTo(r, t, w, function (e) {
                 if (e) {
-                  var n = L(r),
+                  var n = N(r),
                     o = r.key,
                     i = r.state
                   if (a) {
@@ -95668,7 +95611,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 r = m(e, n, _(), H.location)
               k.confirmTransitionTo(r, t, w, function (e) {
                 if (e) {
-                  var n = L(r),
+                  var n = N(r),
                     o = r.key,
                     i = r.state
                   if (a) {
@@ -95681,12 +95624,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                 }
               })
             },
-            go: N,
+            go: L,
             goBack: function goBack() {
-              N(-1)
+              L(-1)
             },
             goForward: function goForward() {
-              N(1)
+              L(1)
             },
             block: function block(e) {
               void 0 === e && (e = !1)
@@ -96157,7 +96100,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             : v('ES5').J(n, d)
           return (d ? d.A : f()).p.push(t), t
         }
-        function L(e) {
+        function N(e) {
           return (
             a(e) || t(22, e),
             (function e(n) {
@@ -96167,8 +96110,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                 a = i(n)
               if (t) {
                 if (!t.P && (t.i < 4 || !v('ES5').K(t))) return t.t
-                ;(t.I = !0), (d = N(n, a)), (t.I = !1)
-              } else d = N(n, a)
+                ;(t.I = !0), (d = L(n, a)), (t.I = !1)
+              } else d = L(n, a)
               return (
                 o(d, function (n, a) {
                   ;(t && u(t.t, n) === a) || s(d, n, e(a))
@@ -96178,7 +96121,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             })(e)
           )
         }
-        function N(e, n) {
+        function L(e, n) {
           switch (n) {
             case 2:
               return new Map(e)
@@ -96887,7 +96830,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             var n = e.prototype
             return (
               (n.createDraft = function (e) {
-                r(e) || t(8), a(e) && (e = L(e))
+                r(e) || t(8), a(e) && (e = N(e))
                 var n = C(this),
                   d = x(this, e, void 0)
                 return (d[q].C = !0), y(n), d
@@ -98513,7 +98456,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             ;(k = null), (P = r), (E = !1)
           }
         }
-        var L = r
+        var N = r
         ;(n.unstable_IdlePriority = 5),
           (n.unstable_ImmediatePriority = 1),
           (n.unstable_LowPriority = 4),
@@ -98551,7 +98494,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
           }),
           (n.unstable_pauseExecution = function () {}),
-          (n.unstable_requestPaint = L),
+          (n.unstable_requestPaint = N),
           (n.unstable_runWithPriority = function (e, n) {
             switch (e) {
               case 1:
