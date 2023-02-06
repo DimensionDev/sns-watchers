@@ -1497,7 +1497,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
                 return a
               },
               set: function set(e) {
-                o = h[(a = e in h ? e : 'en')]
+                ;(a = e in h ? e : y(e)), (o = h[a])
               },
             },
             loadLanguage: { value: _ },

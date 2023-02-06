@@ -6407,6 +6407,11 @@
         a('e5fc32fa', 'Learn more.'),
         a('bc42db1c', 'Cancel anytime. Auto-renews monthly.'),
         a('f971aa1c', 'Twitter Purchaser Terms'),
+        a('fe93ed4a', 'Purchase successful'),
+        a('d50fc21f', function (e) {
+          return 'Your new coin balance is ' + e.balance + '.'
+        }),
+        a('ia2eb0c0', 'Purchase failed!'),
         a('a25a2e76', 'Edit order'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
@@ -6934,8 +6939,17 @@
         a('d1a35ec6', 'Add accounts'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
+        a('d30ea6f3', function (e) {
+          return 'Are you sure you want to remove @' + e.name + '?'
+        }),
+        a('c2dfbb86', 'Yes, do it'),
+        a(
+          'ba047f76',
+          'Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month.',
+        ),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
+        a('c4b9664e', 'Affiliated'),
         a('e49b97e2', 'Search accounts'),
         a('f002f1d6', 'Send Invite'),
         a('g7452534', 'Add Twitter accounts'),
@@ -7479,8 +7493,8 @@
           return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
         }),
         a('h517e8d8', 'Remove'),
-        a('ce215de2', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
-        a('i8cfb6e6', 'Blocked'),
+        a('ce215de2', 'They will be able to see your Tweets, follow you, and send you Direct Messages.')
+      a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
@@ -7494,10 +7508,10 @@
         }),
         a('a8d77a25', function (e) {
           return 'Click to leave ' + e.screenName
-        })
-      a('d0f4f3d9', function (e) {
-        return e.followType + ' ' + e.screenName
-      }),
+        }),
+        a('d0f4f3d9', function (e) {
+          return e.followType + ' ' + e.screenName
+        }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
