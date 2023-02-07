@@ -96,12 +96,12 @@
         a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
-        a('d2fb334c', 'Twitter'),
         a('h7a9e4e2', 'NFT profile picture'),
         a('i6fcb1d8', 'Business profile picture'),
         a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
         a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
         a('f5718548', 'You reported this Tweet.'),
+        a('d2fb334c', 'Twitter'),
         a('cfbea177', function (e) {
           return e.name + '’s Space'
         }),
@@ -515,6 +515,7 @@
         a('a1979464', 'Loading video'),
         a('c75bf00e', 'Load GIF'),
         a('d3ac405c', 'Load video'),
+        a('f3bb10a6', 'Playing video'),
         a('g97a046c', 'Play this video'),
         a('cc37768d', function (e) {
           return e.mediaFileSize + ' KB'
@@ -1159,9 +1160,9 @@
         a('c837fcaa', 'Show more replies'),
         a('d228a9a0', 'Show more'),
         a('e4c6c30a', 'This Tweet is unavailable.'),
-        a('da59404c', 'You’re currently viewing the latest version.'),
-        a('e267df68', 'Reply hidden')
-      a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
+        a('da59404c', 'You’re currently viewing the latest version.')
+      a('e267df68', 'Reply hidden'),
+        a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
         a('he50a6dc', 'Tweet feedback'),
         a('d43fbd36', 'Tweet hidden'),
         a('a6d4c768', 'You’ll see fewer Tweets like this. Any other feedback?'),
@@ -2356,9 +2357,9 @@
         a(
           'b9fc9e2e',
           'To create a note, select the Community Notes icon in any Tweet’s menu. Notes you create will show up here.',
-        ),
-        a('c87f3cf8', 'Note')
-      a('a5b19492', 'This note does not exist'),
+        )
+      a('c87f3cf8', 'Note'),
+        a('a5b19492', 'This note does not exist'),
         a(
           'c21d1b2a',
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
@@ -3612,15 +3613,15 @@
           'bd557506',
           'Let people you’re messaging with know when you’ve seen their messages. Read receipts are not shown on message requests.',
         ),
-        a('ib3357a6', 'Personalized ads'),
-        a(
-          'c4ca418c',
-          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-        )
+        a('ib3357a6', 'Personalized ads')
       a(
-        'b0b3ed8e',
-        'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
+        'c4ca418c',
+        'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
       ),
+        a(
+          'b0b3ed8e',
+          'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
+        ),
         a('da202f9a', 'Your advertiser list'),
         a('f80a33a0', 'Allow use of where you see Twitter content across the Web'),
         a(
@@ -4839,9 +4840,9 @@
         a('b92892dc', 'Set a subscription price'),
         a('c7289544', 'Set a Subscription price'),
         a('aaf68c58', 'Confirm your payout details'),
-        a('b8a69fa0', 'Subscriptions Terms'),
-        a('c663b33d', 'Super Follows Terms')
-      a('ad4a92a2', 'Badge'),
+        a('b8a69fa0', 'Subscriptions Terms')
+      a('c663b33d', 'Super Follows Terms'),
+        a('ad4a92a2', 'Badge'),
         a('cda6bb6e', 'Give your Super Followers badges'),
         a(
           'a15b98ec',
@@ -6077,8 +6078,7 @@
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
-        a('f173716e', '30-39'),
-        a('ada329e6', '40-49')
+        a('f173716e', '30-39')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6098,7 +6098,8 @@
           c(e, t)
         )
       }
-      a('j2950694', 'Above 50'),
+      a('ada329e6', '40-49'),
+        a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
@@ -6950,6 +6951,7 @@
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
         a('c4b9664e', 'Affiliated'),
+        a('g0eadcf6', 'Affiliated with another organization'),
         a('e49b97e2', 'Search accounts'),
         a('f002f1d6', 'Send Invite'),
         a('g7452534', 'Add Twitter accounts'),
@@ -6957,6 +6959,395 @@
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
+        a('eb0d4fe2', 'Make a column'),
+        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
+        a('e8203d1e', 'Searches'),
+        a('d82fd532', 'DMs'),
+        a('c87babee', 'And more...'),
+        a('f1990aa4', 'Organize your columns with Decks'),
+        a(
+          'jf333640',
+          'Imagine having multiple desktops on TweetDeck. Tune out the noise and only focus on the topics and tools you need when you need them.',
+        ),
+        a('fb5ac13e', 'Move a column'),
+        a('bd545b7e', 'Click on these dots to drag and drop a column anywhere on your Deck.'),
+        a('a98513b6', 'Customize columns'),
+        a('c8759e44', 'Rollover the top of a column for options like:'),
+        a('if0ce720', 'Order Tweets by top or latest'),
+        a('df300378', 'Change column size'),
+        a('aa263910', 'Use advanced search tools'),
+        a('ab3915aa', 'Tips and settings'),
+        a('ia03837a', 'Go here to:'),
+        a('f0bd595c', 'Manage Decks'),
+        a('a74e9464', 'Change display settings'),
+        a('h254eb92', 'Discover keyboard shortcuts'),
+        a('j6e669a0', 'Take the tour again'),
+        a('dce65822', 'TweetDeck is not currently optimized for mobile devices or small browser windows'),
+        a('i0e56bcc', 'Auto refresh'),
+        a('fa7b7eec', 'Manual refresh'),
+        a('b1afa50a', 'Top Tweets First'),
+        a('ade3c688', 'Latest Tweets First'),
+        a('bd4ad3ea', 'Wide'),
+        a('ca1180a0', 'Medium'),
+        a('c86ff1b0', 'Narrow'),
+        a('cffb04d6', 'Standard'),
+        a('e2462db4', 'Most shared in your network · Last 24 hours'),
+        a('j5ec9765', function (e) {
+          return e.handle + ' • Bookmark Folder'
+        }),
+        a('ce5deee7', function (e) {
+          return e.handle + ' • Messages'
+        }),
+        a('hbea78a8', 'New column'),
+        a('e1066d88', 'My Profile'),
+        a('aa68dafc', 'Notification details'),
+        a('jf00ebf6', 'Column unavailable'),
+        a('i0115624', 'Sending Tweets...'),
+        a('e5506950', 'Decks'),
+        a('b1bd9a8a', 'New Deck'),
+        a('cf1a138f', function (e) {
+          return 'Changed to deck - ' + e.title
+        }),
+        a('g9c2da24', 'Opens dialog to create a new deck'),
+        a('hcef6b72', 'Opens dialog to manage your decks'),
+        a('a77dbc7a', 'Edit Deck'),
+        a('a154a293', function (e) {
+          return 'Selected Deck ' + e.deckName
+        }),
+        a('a77bbe9d', function (e) {
+          return 'Unselected Deck ' + e.deckName
+        }),
+        a('ha2aae72', 'Opens dialog to manage the selected deck'),
+        a('hf59ffc8', 'Nav bar'),
+        a('d69fc67a', 'Add a new column'),
+        a('aac99f18', 'Compose Tweet'),
+        a('c44f5114', 'Messages settings'),
+        a('c71066fe', 'Take the tour'),
+        a('b8ed89e4', 'Leave TweetDeck Preview'),
+        a('b452e6c2', 'How have you been getting on?'),
+        a('ac1551ae', 'Thank you for using TweetDeck Preview, we’d love to hear how you have been finding it so far.'),
+        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
+        a('fce3c5ce', 'Give feedback'),
+        a('hd7d278c', 'No thanks'),
+        a('ha39df38', 'Personal'),
+        a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
+        a('b2b3db04', 'A powerful, real-time tool for people who live on Twitter.'),
+        a(
+          'je0526a0',
+          'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
+        ),
+        a('f4e03c55', 'Go to legacy TweetDeck'),
+        a('bf50d0cc', 'TweetDeck Preview Terms'),
+        a('cb82860a', 'Column not found'),
+        a('icbecd02', 'Add Column'),
+        a('fdf1a2c6', 'Add Deck'),
+        a('d25acc28', 'What’s in it?'),
+        a('ad5df1d7', function (e) {
+          return 'Changed to column - ' + e.title
+        }),
+        a('g0175ca2', 'Column Picker'),
+        a('a800727c', 'Return to Column Picker'),
+        a('dd703fbd', function (e) {
+          return 'Delete column - ' + e.title
+        }),
+        a('d9d11fc6', 'Delete public Column?'),
+        a('h17ada6c', 'Deleting a public Column will cause any followers to irreversibly lose access to the Column.'),
+        a('hb388fe8', 'Delete Column'),
+        a('f318bc40', 'Create new Folder'),
+        a('e300a9f0', 'Create Bookmark Folder'),
+        a('j341c67c', 'Folders must have a name.'),
+        a('d00586a6', 'This column can’t be loaded. Try make a new column.'),
+        a('d0d8277e', 'The Column owner has deleted or made the Column private.'),
+        a('i176bfd2', 'Discover lists'),
+        a('a57c3292', 'Discover new lists'),
+        a('f59f87dc', 'Find other people’s lists'),
+        a('a5d70676', 'Lists that you’re on'),
+        a('e377790a', 'Return to Lists'),
+        a('e952b8c3', function (e) {
+          return '@' + e.userScreenName + '’s lists'
+        }),
+        a('bc24f834', 'Return to Find other people’s lists'),
+        a('ee11d084', 'Search Profiles'),
+        a('c300f3bc', 'Add some columns'),
+        a('bd744e9a', 'Populate with a search'),
+        a('i10d4124', 'Start from scratch'),
+        a('jbff8606', 'Submit query'),
+        a('g2657de4', 'Top Tweets'),
+        a('bec686d8', 'Verified Tweets'),
+        a('c8da0c42', 'Photos and videos'),
+        a('b627a9e4', 'Twitter Blue partners'),
+        a('jb743d10', 'Some draft Tweets could not be deleted.'),
+        a('d7be0508', 'Your selected draft Tweets were deleted.'),
+        a('f7596afa', 'Loading draft Tweets'),
+        a('a04b7268', 'You don’t have any draft Tweets'),
+        a('f26ece12', 'When you do, you’ll find them here.'),
+        a('c66ba334', 'Deleting draft Tweets'),
+        a('ca5f4db4', 'Discard Draft Tweets'),
+        a('i4d4f782', 'This can’t be undone and you’ll lose your draft Tweets.'),
+        a('fbaa8dc2', 'Some scheduled Tweets could not be deleted.'),
+        a('jb4a1300', 'Your selected scheduled Tweets were deleted.'),
+        a('gb4a3fdc', 'Loading scheduled Tweets'),
+        a('g29f1100', 'You don’t have any scheduled Tweets'),
+        a('ieea255a', 'Deleting scheduled Tweets'),
+        a('bac23c92', 'Discard scheduled Tweets'),
+        a('f450083c', 'This can’t be undone and you’ll lose your scheduled Tweets.'),
+        a('d9a75e16', 'Choose one'),
+        a('e43d95f2', 'See recommended Tweets first.'),
+        a('c0d2d4aa', 'Home Timeline'),
+        a('ecbbbb90', 'View your own or other people’s lists.'),
+        a('a2d1df82', 'Find what you’re looking for.'),
+        a('d5387d8a', 'Stay up to date with your messages.'),
+        a('fb3c79ac', 'Check what’s trending on Twitter.'),
+        a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
+        a('aa0525d0', 'Profiles'),
+        a('cb7844a6', 'Keep up with your notifications and mentions.'),
+        a('fe54751e', 'View your scheduled Tweets.'),
+        a('h82c3ee8', 'View your draft Tweets.'),
+        a('ce3074c2', 'Draft Tweets'),
+        a('bcf970ea', 'See bookmarked Tweets.'),
+        a('d44bf1ca', 'Bookmarked Tweets'),
+        a('c4ec8620', 'Include'),
+        a('d5f29cd4', 'Exclude'),
+        a('d01a62f8', 'Time and location'),
+        a('df7c4428', 'Likes, Replies & Retweets'),
+        a('ede73826', 'Tweet content'),
+        a('a589add2', 'Any of these words (OR)'),
+        a('h28b59ee', 'Tweets from someone'),
+        a('e37201ec', 'Replying to someone'),
+        a('e035e056', 'Mentioning someone'),
+        a('ef2d4092', 'Exclude words'),
+        a('d59f395e', 'Your display language'),
+        a('g67cd3f2', 'Choose languages'),
+        a('c85f9b9c', 'Change languages'),
+        a('b5148188', 'More than'),
+        a('hf369320', 'Less than'),
+        a('d497b854', 'Retweets'),
+        a('f4dce7b6', 'How many'),
+        a('ddafa9a2', 'View Options'),
+        a('c6be8432', 'Level of engagement'),
+        a('c8e6a1c8', 'Show original Tweets'),
+        a('icc8568a', 'Show Retweets'),
+        a('e95e42b2', 'Show Quote Tweets'),
+        a('g9580526', 'Show Replies'),
+        a('i73cbb5c', 'You can only add one List to a search. Only the first List will apply to this search.'),
+        a('c765315d', function (e) {
+          return 'Enter ' + e.listHandleListNameFormat + ' or List ID'
+        }),
+        a('a153fbf2', 'How to use a List in a search'),
+        a('bf0d5a7c', 'You can add one List per search.'),
+        a('c6e8759a', 'To add a List follow this format:'),
+        a('dd9daca8', 'Replace periods with - in the List name.'),
+        a('cd71b264', 'Learn about Lists.'),
+        a('ca23d726', 'Images and videos'),
+        a('a911623c', 'Images'),
+        a('f1fa97a8', 'Broadcasts'),
+        a('e187f906', 'GIFs'),
+        a('e305a3bc', 'Only show Tweets with media'),
+        a('g9512656', 'Only show verified people'),
+        a('b967e296', 'Only show people you follow'),
+        a('gc51a2ac', 'At any time'),
+        a('d42a4916', 'Recently'),
+        a('a2229a06', 'Within a time frame'),
+        a('c1fe6156', 'Start time'),
+        a('cbc02622', 'End time'),
+        a('b666573c', 'Search location'),
+        a('c7d1adf0', 'Tweets in'),
+        a('j5805302', 'Radius'),
+        a('e592ab3c', 'For better results include location and state or country in your search.'),
+        a('e8843b5d', function (e) {
+          return e.meters + 'm'
+        }),
+        a('g9e6a4e5', function (e) {
+          return e.kilometers + 'km'
+        }),
+        a('gb19f215', function (e) {
+          return 'Column - ' + e.title
+        }),
+        a('g7751b34', 'Close stack'),
+        a('b94fa48c', 'Clear stack'),
+        a('dd3dc3cc', 'Go back in stack'),
+        a('cc4ff736', 'Sharing column'),
+        a('bc7acfd0', 'Shared column'),
+        a('a6587d95', function (e) {
+          return 'Reorder column - ' + e.title
+        }),
+        a('fb071dea', 'Move column'),
+        a('c77a6327', function (e) {
+          return 'Open column options - ' + e.title
+        }),
+        a('h53c41f0', 'Column options'),
+        a('f7bbbb6d', function (e) {
+          return 'Close column options - ' + e.title
+        }),
+        a('eee9f83e', 'Close column options'),
+        a('hb70ef30', 'Create a Deck from this search'),
+        a('ad86db50', 'Make a Deck'),
+        a('e1307bdf', function (e) {
+          return 'Refresh column - ' + e.title
+        }),
+        a('ce091d36', 'Search Tweets'),
+        a('a443bbc0', 'Close Search'),
+        a('e7a12d72', 'Converted to search column'),
+        a('f29424f0', 'Change back'),
+        a('e1cdd9c4', 'Before you switch to top Tweets...'),
+        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
+        a('h232a104', 'Switch and show all Tweets'),
+        a('d21c79f7', function (e) {
+          return 'Set Column Tweet Order - ' + e.title
+        }),
+        a('e1ace846', 'Tweet Order'),
+        a('d126cb7c', 'Latest Tweets'),
+        a('c8b12c8f', function (e) {
+          return 'Set Column Content - ' + e.title
+        }),
+        a('fe048090', 'Show overview'),
+        a('e57560b4', 'Hide overview'),
+        a('fb087db0', 'Create separate column'),
+        a('aa128cd8', 'Add as new column'),
+        a('ic61c5fc', 'Scroll to top'),
+        a('dd7840ee', 'See new notifications'),
+        a(
+          'cae1b8a2',
+          'New notifications are available. Push period to go to the beginning of your timeline and view them',
+        ),
+        a('fa2dc98e', 'Jumping to new notifications soon'),
+        a('i99e98ce', 'New notifications are available. Automatically jumping to new notifications soon'),
+        a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
+        a('hd494156', 'Jumping to new Tweets soon'),
+        a('hd0b4a3a', 'New Tweets are available. Automatically jumping to new Tweets soon'),
+        a('a6bbdc1c', 'View only'),
+        a('ba7bd92e', 'Column settings'),
+        a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
+        a('e6df688c', 'Options'),
+        a('e52e4c82', 'Change location and personalisation options.'),
+        a('g8b6d450', 'Notification options'),
+        a('c1343ad6', 'Convert this to a search column.'),
+        a('h5ff85a2', 'Share column'),
+        a('d32058ba', 'Make column public to enable share.'),
+        a('c926a6ca', 'Changes you make will appear to anyone following the Column.'),
+        a('e3f2b93a', 'Show or hide info about this column.'),
+        a('db257758', 'Media preview size'),
+        a('if2fbab8', 'Replies media preview size'),
+        a('he517d52', 'Rename column'),
+        a('f6eb2cfe', 'Column name'),
+        a('d6d39c84', 'Columns must have a name.'),
+        a('e5c06aee', 'Column width'),
+        a('af6a4368', 'Rename this conversation and see who’s in it.'),
+        a('cdeac5ee', 'Direct Message settings'),
+        a('fda7ee26', 'Manage who can message you.'),
+        a('ec688a09', function (e) {
+          return 'This prevents @' + e.screenName + ' from including you in any of their Lists, including this one.'
+        }),
+        a('iad54d54', 'Clear Bookmarks'),
+        a('g4d581a2', 'Empty this, and all Bookmark Folders'),
+        a('fb14aebe', 'Empty Bookmarks'),
+        a('d0be24d0', 'Clear Tweets'),
+        a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
+        a('a2c59056', 'Before you clear column...'),
+        a('a7dcfed2', 'Switch to latest Tweets'),
+        a('e98b5ae5', 'latest Tweets'),
+        a('g33b8c04', 'Make a copy'),
+        a('de2c3008', 'Make a duplicate of the column.'),
+        a('a7c01ce0', 'Change name or delete Folder'),
+        a('c9b39e70', 'Move'),
+        a('b9ea5f7c', 'Move column to another Deck.'),
+        a('ec66fc4e', 'Tweet order'),
+        a('cc1866ae', 'Tweet feed'),
+        a('cf79c1fe', 'Show latest Tweets'),
+        a('e2ba3828', 'Show top Tweets'),
+        a('j52bb410', 'Column added. Showing top Tweets first'),
+        a('ca329454', 'Column added. Showing latest Tweets first'),
+        a('aa4f00c6', 'Share Deck'),
+        a('fdf97052', 'Go to Deck options'),
+        a('ed427868', 'Make Deck public?'),
+        a('gecc71a2', 'To share a Deck, first make it public.'),
+        a('f0653866', 'Sharing deck'),
+        a('b158400a', 'Skip this step'),
+        a('h15afbce', 'Let’s get you setup'),
+        a(
+          'f7b714bc',
+          'Customize your TweetDeck experience: choose the column width, color, text and media size that is right for you.',
+        ),
+        a('e28eb008', 'Open display settings'),
+        a('dc8b86e0', 'Now let’s add your columns'),
+        a('ee28603e', 'Import your columns'),
+        a(
+          'dad15d22',
+          'Save time by importing your existing Search, List and Profile columns. You won’t be able to copy these over later.',
+        ),
+        a('j85b4522', 'Or start from scratch'),
+        a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
+        a('i8912d28', 'Lets add some columns...'),
+        a('ce0c0f34', 'Now let’s have a look around'),
+        a('h36d2aa2', 'Learn some handy tips to get you started.'),
+        a('fbaf9442', 'Add a starter Deck'),
+        a('b354ea52', 'Adding starter Deck...'),
+        a('if195eb8', 'Adding columns...'),
+        a('ea07517c', 'Column deleted.'),
+        a('habced9e', 'to restore column.'),
+        a('g4fcb4f8', 'Column restored.'),
+        a('g2c6e34a', 'Manage content size, color and background.'),
+        a('bf2890a6', 'Visual scale'),
+        a('h098a550', 'Default column width'),
+        a('ab248726', 'Default media preview'),
+        a('e1cab6e8', 'Apply changes to existing columns?'),
+        a(
+          'ce2e487c',
+          'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
+        ),
+        a('fdbd90a6', 'Yes, change all columns'),
+        a('h8affe68', 'No, only new columns'),
+        a('f06885b6', 'Column media size options'),
+        a('e4bab2d0', 'Column width options'),
+        a('g9df1984', 'Add a Deck'),
+        a('df77af70', 'Choose an emoji for your Deck'),
+        a('ee7765ba', 'Pick Emoji'),
+        a('e0127c83', function (e) {
+          return 'Change Emoji ' + e.emoji
+        }),
+        a(
+          'hb8b6254',
+          'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
+        ),
+        a('gfbaf4e8', 'This Deck can’t be made public now'),
+        a(
+          'cb848a36',
+          'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
+        ),
+        a('d606207a', 'Delete Deck'),
+        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
+        a(
+          'f50c9834',
+          'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
+        ),
+        a('cb861826', 'Reorder Deck'),
+        a('i5896b2b', function (e) {
+          return 'Edit Deck "' + e.title + '"'
+        }),
+        a('ef602cab', function (e) {
+          return 'Delete Deck "' + e.title + '"'
+        }),
+        a('b44b9d83', function (e) {
+          return 'Unpin Deck "' + e.title + '"'
+        }),
+        a('je4a847f', function (e) {
+          return 'Pin Deck "' + e.title + '"'
+        })
+      a('fe5df266', 'Make Column private?'),
+        a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
+        a('c65d210c', 'Make Column private'),
+        a('ad41be88', 'Move column to Deck'),
+        a('a79ba0aa', 'Leave the new TweetDeck?'),
+        a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
+        a('c09eafdc', 'Yes, exit'),
+        a('dcd40a08', 'Cancel and stay'),
+        a('e5988702', 'Exit and opt-out of the new TweetDeck'),
+        a('d62779e6', 'Your data associated with the new TweetDeck will be deleted.'),
+        a('f9d3586e', 'This won’t impact your Twitter profile and previous TweetDeck data.'),
+        a('i6fae1b4', 'Exit and delete'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7493,8 +7884,8 @@
           return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
         }),
         a('h517e8d8', 'Remove'),
-        a('ce215de2', 'They will be able to see your Tweets, follow you, and send you Direct Messages.')
-      a('i8cfb6e6', 'Blocked'),
+        a('ce215de2', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
+        a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
@@ -10372,6 +10763,30 @@
               key: 'c84e286d',
               get: function get() {
                 return ['To change your username or password, go to account settings at ', '.']
+              },
+            },
+            {
+              key: 'bd77a54d',
+              get: function get() {
+                return ['', ' Preview']
+              },
+            },
+            {
+              key: 'f365eebb',
+              get: function get() {
+                return ['Looking for the legacy version of TweetDeck? ']
+              },
+            },
+            {
+              key: 'ifee99e7',
+              get: function get() {
+                return ['Enter the List owners handle and the List name in the following format: ', '.']
+              },
+            },
+            {
+              key: 'eeec491f',
+              get: function get() {
+                return ['This column can only be cleared if you switch to ', '.']
               },
             },
             {
