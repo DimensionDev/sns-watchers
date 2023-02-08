@@ -101,11 +101,108 @@
         a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
         a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
         a('f5718548', 'You reported this Tweet.'),
+        a('b772cd66', 'Done'),
+        a('i0e56bcc', 'Auto refresh'),
+        a('fa7b7eec', 'Manual refresh'),
+        a('b1afa50a', 'Top Tweets First'),
+        a('ade3c688', 'Latest Tweets First'),
+        a('bd4ad3ea', 'Wide'),
+        a('ca1180a0', 'Medium'),
+        a('c86ff1b0', 'Narrow'),
+        a('eed02406', 'Small'),
+        a('cffb04d6', 'Standard'),
+        a('e2462db4', 'Most shared in your network · Last 24 hours'),
+        a('ad16f482', 'Event'),
+        a('c20aaf3e', 'Error'),
+        a('fa884026', 'List'),
+        a('fa98627a', 'Profile'),
+        a('a9ae1e78', 'Search'),
+        a('a2a3824a', 'Topic'),
+        a('j5ec9765', function (e) {
+          return e.handle + ' • Bookmark Folder'
+        }),
+        a('ce5deee7', function (e) {
+          return e.handle + ' • Messages'
+        }),
+        a('d80c77dc', 'You hid these replies'),
+        a('ef939f4b', function (e) {
+          return 'Replies hidden by @' + e.screenName
+        }),
+        a('bcc7e8c0', 'All Bookmarks'),
+        a('i3145aa0', 'Bookmarks'),
+        a('e39b368e', 'Broadcast'),
+        a('hbea78a8', 'New column'),
+        a('b5298d92', 'Connect'),
+        a('d35d74e4', 'Conversation'),
+        a('d4ebc798', 'Drafts'),
+        a('fcf3e54c', 'Explore'),
+        a('d806aa1a', 'Hidden replies'),
+        a('ha8209bc', 'Home'),
+        a('a2f81050', 'Messages'),
+        a('cf2d1048', 'Message requests'),
+        a('e7172d70', 'Additional messages'),
+        a('e1066d88', 'My Profile'),
+        a('eb75875e', 'Notifications'),
+        a('bd7c0390', 'Quote Tweets'),
+        a('e4e4e50a', 'Scheduled Tweets'),
+        a('ab4fc8bc', 'Space'),
+        a('aa4209e8', 'Super Followers'),
+        a('c5f4befa', 'Trends'),
+        a('bea869b4', 'Tweet'),
+        a('ddf0ba7e', 'Collection'),
+        a('c64974fc', 'Followers'),
+        a('i099d32e', 'Followers you know'),
+        a('d960b55c', 'Following'),
+        a('b4af8c6a', 'Moments'),
+        a('aa68dafc', 'Notification details'),
+        a('b8533bac', 'Topics'),
+        a('jf00ebf6', 'Column unavailable'),
+        a('jaaa8984', 'Location'),
+        a('b5b7fb94', 'Group'),
+        a('g755fcde', 'You'),
+        a('f6b1ff81', function (e) {
+          return e.name + ' and You'
+        }),
+        a('j652293d', function (e) {
+          return e.listOfParticipants + ' and ' + e.count + ' more'
+        }),
+        a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
+        a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
+        a('b36f4170', 'File is empty.'),
+        a('hab3781e', 'One or more provided files are not images.'),
+        a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
+        a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
+        a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
+        a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
+        a('b28d44f7', function (e) {
+          return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
+        }),
+        a('i1db7d13', function (e) {
+          return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
+        }),
+        a('baac0ed7', function (e) {
+          return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
+        }),
+        a('a22385bb', function (e) {
+          return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
+        }),
+        a('be0440bf', function (e) {
+          return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
+        }),
+        a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
+        a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
+        a('db6001e7', function (e) {
+          return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
+        }),
+        a('eb96d952', 'Your image file lacks height and width'),
+        a('b3880588', 'The upload session has timed out.'),
+        a('ca058b68', 'Some of your media failed to load.'),
+        a('id24379c', 'Some of your media failed to upload.'),
+        a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
         a('d2fb334c', 'Twitter'),
         a('cfbea177', function (e) {
           return e.name + '’s Space'
         }),
-        a('ab4fc8bc', 'Space'),
         a('jd859c9c', 'You have been removed from this Space.'),
         a('f7c8617a', 'What are clips?'),
         a(
@@ -202,26 +299,18 @@
         a('e111f531', function (e) {
           return e.count + ' tuned in'
         }),
-        a('a2f81050', 'Messages'),
         a('d4986f86', 'Direct Messages'),
         a('ga169e1b', function (e) {
           return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
         }),
-        a('i3145aa0', 'Bookmarks'),
         a('bb081ea2', 'Settings'),
-        a('ha8209bc', 'Home'),
         a('b489517e', 'Home (New unread Tweets)'),
-        a('eb75875e', 'Notifications'),
         a('e1249849', function (e) {
           return 'Notifications (' + e.count + ' unread notification' + n(e.count, '', 's') + ')'
         }),
-        a('fcf3e54c', 'Explore'),
         a('c0b786ee', 'Search and explore'),
         a('e2eac0c4', 'Primary'),
-        a('fa98627a', 'Profile'),
         a('i5aa4ce0', 'More menu items'),
-        a('b5298d92', 'Connect'),
-        a('b8533bac', 'Topics'),
         a('b0041756', 'Lists'),
         a('h02a6fe6', 'Communities'),
         a('ded416b0', 'Spaces'),
@@ -254,39 +343,6 @@
         a('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
         a('ef2fa90c', 'The text of your Tweet exceeds the maximum allowed limit.'),
         a('f10f1cfc', 'The content of your Tweet is invalid.'),
-        a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
-        a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
-        a('b36f4170', 'File is empty.'),
-        a('hab3781e', 'One or more provided files are not images.'),
-        a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
-        a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
-        a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
-        a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
-        a('b28d44f7', function (e) {
-          return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
-        }),
-        a('i1db7d13', function (e) {
-          return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
-        }),
-        a('baac0ed7', function (e) {
-          return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
-        }),
-        a('a22385bb', function (e) {
-          return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
-        }),
-        a('be0440bf', function (e) {
-          return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
-        }),
-        a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
-        a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
-        a('db6001e7', function (e) {
-          return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
-        }),
-        a('eb96d952', 'Your image file lacks height and width'),
-        a('b3880588', 'The upload session has timed out.'),
-        a('ca058b68', 'Some of your media failed to load.'),
-        a('id24379c', 'Some of your media failed to upload.'),
-        a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
         a('c818c60c', 'Analytics'),
         a('a15648a4', 'Community Notes'),
         a('cdf89b84', 'Branded Likes Preview'),
@@ -392,8 +448,6 @@
         a('a690c4d0', 'Page down'),
         a('ed90d9ac', 'Load new Tweets'),
         a('cdb53d7a', 'Mentions'),
-        a('d4ebc798', 'Drafts'),
-        a('e4e4e50a', 'Scheduled Tweets'),
         a('d7b8ebaa', 'Likes'),
         a('c106055a', 'Moment Maker'),
         a('eee2ed92', 'Go to user…'),
@@ -406,7 +460,6 @@
         a('b1547096', 'New Tweet'),
         a('j9e025aa', 'Send Tweet'),
         a('e736990a', 'New Direct Message'),
-        a('a9ae1e78', 'Search'),
         a('fe731016', 'Like'),
         a('d17df548', 'Reply'),
         a('bac8f4c2', 'Retweet'),
@@ -434,19 +487,10 @@
         a('fd48249b', function (e) {
           return e.count + ' people'
         }),
-        a('b5b7fb94', 'Group'),
-        a('g755fcde', 'You'),
-        a('f6b1ff81', function (e) {
-          return e.name + ' and You'
-        }),
-        a('j652293d', function (e) {
-          return e.listOfParticipants + ' and ' + e.count + ' more'
-        }),
         a('b93ba92d', function (e) {
           return e.peopleCount + ' pe' + n(e.peopleCount, 'rson', 'ople')
         }),
         a('ae2205d2', 'You follow each other'),
-        a('d960b55c', 'Following'),
         a('fd06b02f', function (e) {
           return '@' + e.screenName + ' is currently in an active Space, Click to join via their Profile'
         }),
@@ -515,8 +559,8 @@
         a('a1979464', 'Loading video'),
         a('c75bf00e', 'Load GIF'),
         a('d3ac405c', 'Load video'),
-        a('f3bb10a6', 'Playing video'),
         a('g97a046c', 'Play this video'),
+        a('f3bb10a6', 'Playing video'),
         a('cc37768d', function (e) {
           return e.mediaFileSize + ' KB'
         }),
@@ -628,7 +672,6 @@
         a('h95f9e77', function (e) {
           return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
         }),
-        a('b772cd66', 'Done'),
         a('j85999ec', 'User Reactions List'),
         a('gf5e9ea6', 'Undo'),
         a('a2d48779', function (e) {
@@ -866,9 +909,7 @@
           'Drop a line, share Tweets and more with private conversations between you and others on Twitter. ',
         ),
         a('efe8fda0', 'Write a message'),
-        a('cf2d1048', 'Message requests'),
         a('bece84b4', 'Your message requests are empty'),
-        a('e7172d70', 'Additional messages'),
         a('e51be7c1', 'Learn more'),
         a('f041be05', function (e) {
           return e.stringCount + ' pending request' + n(e.count, '', 's')
@@ -951,7 +992,6 @@
         a('ee54f477', 'Learn more'),
         a('b360ac7c', 'Section navigation'),
         a('adc81042', 'Section details'),
-        a('d35d74e4', 'Conversation'),
         a('f88e624e', 'Conversation updated'),
         a('afb7e8f8', 'Read Article'),
         a('d6e2f9be', 'Loading timeline'),
@@ -1106,9 +1146,8 @@
         a('cabfdd06', 'Tomorrow'),
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
-        }),
-        a('a2a3824a', 'Topic'),
-        a('d9b417c4', 'Set as not interested'),
+        })
+      a('d9b417c4', 'Set as not interested'),
         a('c29d6806', 'Stop recommending'),
         a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
@@ -1160,8 +1199,8 @@
         a('c837fcaa', 'Show more replies'),
         a('d228a9a0', 'Show more'),
         a('e4c6c30a', 'This Tweet is unavailable.'),
-        a('da59404c', 'You’re currently viewing the latest version.')
-      a('e267df68', 'Reply hidden'),
+        a('da59404c', 'You’re currently viewing the latest version.'),
+        a('e267df68', 'Reply hidden'),
         a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
         a('he50a6dc', 'Tweet feedback'),
         a('d43fbd36', 'Tweet hidden'),
@@ -1538,7 +1577,6 @@
         a('d2c7a41c', 'Tweet your reply'),
         a('f7364fa2', 'Ask a question...'),
         a('e815fc34', 'Choose audience'),
-        a('aa4209e8', 'Super Followers'),
         a('d52a1caa', 'Subscribers'),
         a('a68885de', 'All Followers'),
         a('c63602d4', 'My Communities'),
@@ -1582,7 +1620,6 @@
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
         }),
-        a('c20aaf3e', 'Error'),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
         }),
@@ -1609,7 +1646,6 @@
         a('d073b644', 'Hours'),
         a('a2f0728e', 'Minutes'),
         a('i3a8d60a', 'make your Tweets public'),
-        a('bea869b4', 'Tweet'),
         a('f3a7a80c', 'Want to review this before Tweeting?'),
         a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
         a('d1a92642', 'Most Tweeters don’t post replies like this'),
@@ -2149,6 +2185,7 @@
         a('h8335712', 'Your note'),
         a('b9f18eec', 'Currently rated helpful'),
         a('g2edfc1a', 'Shown on Twitter'),
+        a('j5a00a2a', 'Not shown on Twitter'),
         a('d6db34cc', 'Needs more ratings'),
         a('j33f6520', 'Currently rated not helpful'),
         a('ac39da02', 'This note claims the Tweet isn’t misleading, so it isn’t shown on Twitter.'),
@@ -2305,8 +2342,8 @@
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
         ),
-        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
-        a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
+        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note')
+      a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
           'ife4baaa',
           'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -2357,13 +2394,14 @@
         a(
           'b9fc9e2e',
           'To create a note, select the Community Notes icon in any Tweet’s menu. Notes you create will show up here.',
-        )
-      a('c87f3cf8', 'Note'),
+        ),
+        a('c87f3cf8', 'Note'),
         a('a5b19492', 'This note does not exist'),
         a(
           'c21d1b2a',
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
         ),
+        a('g5eb5a16', 'Learn more about Community Notes'),
         a('bc2da5c6', 'Manage alert options'),
         a('c7b59cde', 'Community Notes settings'),
         a('e1288bdc', 'Alerts when a note needs help'),
@@ -2420,7 +2458,6 @@
         a('be329aac', 'Bookmark Tweets to save them for later'),
         a('j0a47c9c', 'Need more time to write a clever response or just want to save a Tweet for later? Bookmark it!'),
         a('j45c642e', 'Folders aren’t loading right now'),
-        a('bcc7e8c0', 'All Bookmarks'),
         a('c8c1fa6e', 'Clear all Bookmarks'),
         a('jf748f40', 'Clear all Bookmarks?'),
         a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
@@ -2451,7 +2488,6 @@
         ),
         a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
         a('ae58026a', 'Open a Branded Like .json file to preview'),
-        a('e39b368e', 'Broadcast'),
         a('f2382014', 'LIVE'),
         a('e3aac82a', 'Loading Broadcast'),
         a('hd0bc1eb', function (e) {
@@ -2460,12 +2496,10 @@
         a('bea1f26b', function (e) {
           return e.name + ' was live'
         }),
-        a('ad16f482', 'Event'),
         a('h0786686', 'Moment'),
         a('i0ed3f4e', 'Event image'),
         a('cbae35fa', 'Report Broadcast'),
         a('f8cafdc2', 'Collection Tweets'),
-        a('ddf0ba7e', 'Collection'),
         a('a226497c', 'Create a new Community'),
         a('d7346632', 'You haven’t joined any Communities yet'),
         a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
@@ -3561,8 +3595,8 @@
         a('f527b322', 'Protect my account'),
         a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
-        a('ea339390', 'Only people you follow can tag you'),
-        a('e3a761ee', 'Off'),
+        a('ea339390', 'Only people you follow can tag you')
+      a('e3a761ee', 'Off'),
         a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
         a(
           'ea28ca64',
@@ -3613,11 +3647,11 @@
           'bd557506',
           'Let people you’re messaging with know when you’ve seen their messages. Read receipts are not shown on message requests.',
         ),
-        a('ib3357a6', 'Personalized ads')
-      a(
-        'c4ca418c',
-        'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-      ),
+        a('ib3357a6', 'Personalized ads'),
+        a(
+          'c4ca418c',
+          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
+        ),
         a(
           'b0b3ed8e',
           'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
@@ -3737,7 +3771,6 @@
         a('h306a358', 'Background'),
         a('e46dffa0', 'Text size'),
         a('d8680056', 'Extra small'),
-        a('eed02406', 'Small'),
         a('j59f0b94', 'Default'),
         a('b81aaad8', 'Large'),
         a('c7044880', 'Extra large'),
@@ -3956,10 +3989,8 @@
         ),
         a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.'),
         a('bc7fd990', 'Loading trends settings'),
-        a('c5f4befa', 'Trends'),
         a('e2f16650', 'Show content in this location'),
         a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
-        a('jaaa8984', 'Location'),
         a('i4d54b0e', 'Trends for you'),
         a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
         a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
@@ -4803,8 +4834,8 @@
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
-        a('ffb6cb88', 'How do you plan to use Super Follows?'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('ffb6cb88', 'How do you plan to use Super Follows?')
+      a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('gfc80842', 'Submit application'),
@@ -4840,8 +4871,8 @@
         a('b92892dc', 'Set a subscription price'),
         a('c7289544', 'Set a Subscription price'),
         a('aaf68c58', 'Confirm your payout details'),
-        a('b8a69fa0', 'Subscriptions Terms')
-      a('c663b33d', 'Super Follows Terms'),
+        a('b8a69fa0', 'Subscriptions Terms'),
+        a('c663b33d', 'Super Follows Terms'),
         a('ad4a92a2', 'Badge'),
         a('cda6bb6e', 'Give your Super Followers badges'),
         a(
@@ -5934,7 +5965,6 @@
         a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
         a('ac3fd6e2', 'You don’t have any recommendations — yet'),
         a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
-        a('bd7c0390', 'Quote Tweets'),
         a('ebcf1374', 'No Quote Tweets yet'),
         a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
         a('bea0e410', 'Amplify Tweets you like'),
@@ -6023,25 +6053,44 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        }),
-        a('cd869707', function (e) {
-          return (
-            e.date +
-            ': ' +
-            e.likeCount +
-            ' like' +
-            n(e.likeCount, '', 's') +
-            '. ' +
-            e.retweetCount +
-            ' retweet' +
-            n(e.retweetCount, '', 's') +
-            '. ' +
-            e.replyCount +
-            ' repl' +
-            n(e.replyCount, 'y', 'ies') +
-            '.'
-          )
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('cd869707', function (e) {
+        return (
+          e.date +
+          ': ' +
+          e.likeCount +
+          ' like' +
+          n(e.likeCount, '', 's') +
+          '. ' +
+          e.retweetCount +
+          ' retweet' +
+          n(e.retweetCount, '', 's') +
+          '. ' +
+          e.replyCount +
+          ' repl' +
+          n(e.replyCount, 'y', 'ies') +
+          '.'
+        )
+      }),
         a('ad666301', function (e) {
           return e.fullName + ' on Twitter'
         }),
@@ -6078,27 +6127,8 @@
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
-        a('f173716e', '30-39')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('ada329e6', '40-49'),
+        a('f173716e', '30-39'),
+        a('ada329e6', '40-49'),
         a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
@@ -6329,11 +6359,6 @@
         a('cc642518', 'Search Locations'),
         a('i0e8c3c6', 'Location results'),
         a('f69ad048', 'Choose a location'),
-        a('d806aa1a', 'Hidden replies'),
-        a('d80c77dc', 'You hid these replies'),
-        a('ef939f4b', function (e) {
-          return 'Replies hidden by @' + e.screenName
-        }),
         a('b20c41ff', 'Learn more'),
         a('b98764b2', 'There are no tagged users in this Tweet.'),
         a('cb2054fa', 'Loading users'),
@@ -6446,7 +6471,6 @@
         a('h421e74c', 'Suggested Lists'),
         a('aa62dea8', 'We’re on the lookout'),
         a('e5e4d3aa', 'Check back later to see suggested Lists.'),
-        a('fa884026', 'List'),
         a('eb7b54be', 'Loading Lists'),
         a('a9ca06d2', 'Information'),
         a('bffa2da8', 'You’re seeing latest Tweets as they happen'),
@@ -6496,7 +6520,6 @@
         a('gbaa5489', function (e) {
           return 'List memberships for @' + e.screenName
         }),
-        a('b4af8c6a', 'Moments'),
         a('a0cc15fc', 'Create new Moment'),
         a('ja49bfd6', 'New Moment'),
         a('fea74b67', function (e) {
@@ -6842,8 +6865,6 @@
         a('ha979be5', function (e) {
           return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
-        a('i099d32e', 'Followers you know'),
-        a('c64974fc', 'Followers'),
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
@@ -6983,25 +7004,6 @@
         a('h254eb92', 'Discover keyboard shortcuts'),
         a('j6e669a0', 'Take the tour again'),
         a('dce65822', 'TweetDeck is not currently optimized for mobile devices or small browser windows'),
-        a('i0e56bcc', 'Auto refresh'),
-        a('fa7b7eec', 'Manual refresh'),
-        a('b1afa50a', 'Top Tweets First'),
-        a('ade3c688', 'Latest Tweets First'),
-        a('bd4ad3ea', 'Wide'),
-        a('ca1180a0', 'Medium'),
-        a('c86ff1b0', 'Narrow'),
-        a('cffb04d6', 'Standard'),
-        a('e2462db4', 'Most shared in your network · Last 24 hours'),
-        a('j5ec9765', function (e) {
-          return e.handle + ' • Bookmark Folder'
-        }),
-        a('ce5deee7', function (e) {
-          return e.handle + ' • Messages'
-        }),
-        a('hbea78a8', 'New column'),
-        a('e1066d88', 'My Profile'),
-        a('aa68dafc', 'Notification details'),
-        a('jf00ebf6', 'Column unavailable'),
         a('i0115624', 'Sending Tweets...'),
         a('e5506950', 'Decks'),
         a('b1bd9a8a', 'New Deck'),
@@ -7329,14 +7331,14 @@
         }),
         a('ef602cab', function (e) {
           return 'Delete Deck "' + e.title + '"'
-        }),
-        a('b44b9d83', function (e) {
-          return 'Unpin Deck "' + e.title + '"'
-        }),
+        })
+      a('b44b9d83', function (e) {
+        return 'Unpin Deck "' + e.title + '"'
+      }),
         a('je4a847f', function (e) {
           return 'Pin Deck "' + e.title + '"'
-        })
-      a('fe5df266', 'Make Column private?'),
+        }),
+        a('fe5df266', 'Make Column private?'),
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
