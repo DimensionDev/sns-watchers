@@ -27235,7 +27235,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e('shared~ondemand.SettingsMonetization~bundle.UserProfile~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsMonetization~ondemand.Verified'),
                   d.e('ondemand.Verified'),
-                ]).then(d.bind(d, 699126))
+                ]).then(d.bind(d, 134170))
               }),
             ),
           ),
@@ -30019,27 +30019,16 @@ window.__SCRIPTS_LOADED__.vendor &&
                     }
                   }),
                   Bb(),
-                  (function (e, n) {
-                    var d = u.ZP.isChrome() && (u.ZP.chromeVersion() <= 50 || 66 === u.ZP.chromeVersion()),
-                      t = e.isTrue('responsive_web_notifications_overrides_desktop_enabled'),
-                      a = e.isTrue('responsive_web_notifications_overrides_mobile_enabled'),
-                      r = e.getNumberValue('responsive_web_notifications_overrides_max_notification_slots'),
-                      o = e.getNumberValue('responsive_web_notifications_overrides_relevancy_half_life', 48)
-                    d
+                  (function (e) {
+                    u.ZP.isChrome() && (u.ZP.chromeVersion() <= 50 || 66 === u.ZP.chromeVersion())
                       ? Pb.Z.deregisterServiceWorker(Xe.Z)
                       : ('serviceWorker' in window.navigator &&
                           window.navigator.serviceWorker.register(C.Ch)['catch'](function (e) {
                             ;(e instanceof Error && ('NotSupportedError' === e.name || 'SecurityError' === e.name)) ||
                               (0, K.ZP)(e)
                           }),
-                        kb(n),
-                        Pb.Z.setFeatureSwitches({
-                          responsive_web_notifications_overrides_desktop_enabled: t,
-                          responsive_web_notifications_overrides_mobile_enabled: a,
-                          responsive_web_notifications_overrides_max_notification_slots: r,
-                          responsive_web_notifications_overrides_relevancy_half_life: o,
-                        }))
-                  })(up, vp),
+                        kb(e))
+                  })(vp),
                   (function (e, n, d) {
                     setTimeout(function () {
                       ;(0, db.Z)().then(function (t) {
@@ -32712,103 +32701,100 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           $t: function $t() {
-            return B
+            return I
           },
           A: function A() {
-            return v
+            return S
           },
           AF: function AF() {
-            return D
+            return A
           },
           B0: function B0() {
-            return c
+            return s
           },
           Bm: function Bm() {
-            return M
+            return w
           },
           Ch: function Ch() {
-            return g
+            return f
           },
           HD: function HD() {
             return a
           },
           Hz: function Hz() {
-            return Z
+            return R
           },
           Ip: function Ip() {
-            return A
+            return h
           },
           K4: function K4() {
-            return p
-          },
-          Oj: function Oj() {
-            return I
-          },
-          Qg: function Qg() {
-            return T
-          },
-          R2: function R2() {
             return m
           },
+          Oj: function Oj() {
+            return Z
+          },
+          Qg: function Qg() {
+            return C
+          },
+          R2: function R2() {
+            return b
+          },
           SG: function SG() {
-            return x
+            return B
           },
           Vu: function Vu() {
-            return S
+            return D
           },
           Z5: function Z5() {
             return t
           },
           b7: function b7() {
-            return _
+            return T
           },
           bG: function bG() {
-            return E
-          },
-          d4: function d4() {
-            return u
-          },
-          f4: function f4() {
-            return b
-          },
-          fO: function fO() {
-            return R
-          },
-          i5: function i5() {
-            return o
-          },
-          iH: function iH() {
             return P
           },
-          kS: function kS() {
-            return r
-          },
-          nm: function nm() {
-            return C
-          },
-          p9: function p9() {
-            return i
-          },
-          p_: function p_() {
-            return y
-          },
-          qj: function qj() {
+          d4: function d4() {
             return l
           },
-          sT: function sT() {
+          f4: function f4() {
+            return c
+          },
+          fO: function fO() {
+            return E
+          },
+          i5: function i5() {
+            return r
+          },
+          iH: function iH() {
             return k
           },
+          nm: function nm() {
+            return y
+          },
+          p9: function p9() {
+            return o
+          },
+          p_: function p_() {
+            return M
+          },
+          qj: function qj() {
+            return i
+          },
+          sT: function sT() {
+            return _
+          },
           ui: function ui() {
-            return f
+            return v
           },
           xE: function xE() {
-            return h
+            return p
           },
           xp: function xp() {
-            return w
+            return g
           },
           yG: function yG() {
-            return s
+            return u
           },
         })
         d(22144),
@@ -32844,45 +32830,44 @@ window.__SCRIPTS_LOADED__.vendor &&
           d(729224)
         var t = 'ACTION_FLUSH',
           a = 'ACTION_REFRESH',
-          r = 'ACTION_SET_FS',
-          o = 'Web-12',
-          i = 'd_prefs',
-          l = 'ct0',
-          u = 'x-csrf-token',
-          s = 'dtab_local',
-          c = 'eu_cn',
-          b = 'ab_decider',
-          m = 'ab_decider_2',
-          p = '2',
-          h = 'fm',
-          A = 'gt',
-          D = '333903271',
-          S = '_mb_tk',
-          v = 'night_mode',
-          f = 'perftown',
-          g = '/sw.js',
-          w = '_sl',
-          M = Object.freeze({ Apple: 'apple', Google: 'google' }),
-          y = 'tombstone://card',
-          C = 'twid',
-          T = 'TwitterAndroidLite',
-          _ = 'personalization_id',
-          k = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9NaXFDSEljZnlscDdBbg==',
-          P = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9NdmVaeXJTTGo2ZktCeA==',
-          E = 'prod_MiqCHIcfylp7An',
-          R = 'prod_MveZyrSLj6fKBx',
-          Z = new Uint8Array([
+          r = 'Web-12',
+          o = 'd_prefs',
+          i = 'ct0',
+          l = 'x-csrf-token',
+          u = 'dtab_local',
+          s = 'eu_cn',
+          c = 'ab_decider',
+          b = 'ab_decider_2',
+          m = '2',
+          p = 'fm',
+          h = 'gt',
+          A = '333903271',
+          D = '_mb_tk',
+          S = 'night_mode',
+          v = 'perftown',
+          f = '/sw.js',
+          g = '_sl',
+          w = Object.freeze({ Apple: 'apple', Google: 'google' }),
+          M = 'tombstone://card',
+          y = 'twid',
+          C = 'TwitterAndroidLite',
+          T = 'personalization_id',
+          _ = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9NaXFDSEljZnlscDdBbg==',
+          k = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9NdmVaeXJTTGo2ZktCeA==',
+          P = 'prod_MiqCHIcfylp7An',
+          E = 'prod_MveZyrSLj6fKBx',
+          R = new Uint8Array([
             4, 94, 104, 18, 141, 49, 13, 74, 96, 202, 82, 131, 78, 91, 29, 242, 150, 102, 197, 0, 53, 149, 230, 8, 54,
             38, 62, 173, 43, 28, 89, 130, 191, 222, 213, 128, 147, 62, 21, 49, 187, 95, 212, 194, 196, 253, 140, 157,
             234, 34, 8, 234, 143, 158, 221, 15, 83, 8, 222, 111, 100, 204, 213, 48, 75,
           ]),
-          I = function I() {
+          Z = function Z() {
             return 'AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA'
           },
-          B = function B() {
+          I = function I() {
             return 'rweb'
           },
-          x = function x() {
+          B = function B() {
             return 'responsive_web'
           }
       },
@@ -43451,12 +43436,12 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           Z: function Z() {
-            return r
+            return a
           },
         })
-        var t = d(133028),
-          a = (d(315735), d(358188), d(73439), d(428673), d(906886), d(543450), d(963752))
-        var r = {
+        d(315735), d(358188), d(73439), d(428673), d(906886), d(543450)
+        var t = d(963752)
+        var a = {
           deregisterServiceWorker: function deregisterServiceWorker(e) {
             'serviceWorker' in window.navigator && window.navigator.serviceWorker.getRegistrations
               ? window.navigator.serviceWorker.getRegistrations().then(function (n) {
@@ -43471,17 +43456,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           flushHTMLCache: function flushHTMLCache() {
             'serviceWorker' in window.navigator &&
               window.navigator.serviceWorker.controller &&
-              window.navigator.serviceWorker.controller.postMessage({ type: a.Z5 })
+              window.navigator.serviceWorker.controller.postMessage({ type: t.Z5 })
           },
           refreshHTMLCache: function refreshHTMLCache() {
             'serviceWorker' in window.navigator &&
               window.navigator.serviceWorker.controller &&
-              window.navigator.serviceWorker.controller.postMessage({ type: a.HD })
-          },
-          setFeatureSwitches: function setFeatureSwitches(e) {
-            'serviceWorker' in window.navigator &&
-              window.navigator.serviceWorker.controller &&
-              window.navigator.serviceWorker.controller.postMessage((0, t.Z)((0, t.Z)({}, e), {}, { type: a.kS }))
+              window.navigator.serviceWorker.controller.postMessage({ type: t.HD })
           },
         }
       },

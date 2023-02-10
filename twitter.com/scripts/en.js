@@ -6959,6 +6959,13 @@
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
         a('g2c0144a', 'Verified Organizations'),
         a('d1a35ec6', 'Add accounts'),
+        a('f1f6c88b', function (e) {
+          return 'Accounts (' + e.count + ')'
+        }),
+        a('b02156b8', 'Invitations'),
+        a('gd67d29b', function (e) {
+          return 'Invitations (' + e.count + ')'
+        }),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
         a('d30ea6f3', function (e) {
@@ -6980,6 +6987,7 @@
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
+        a('c15531af', 'Learn more'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7320,21 +7328,21 @@
           'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
         ),
         a('d606207a', 'Delete Deck'),
-        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
-        a(
-          'f50c9834',
-          'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
-        ),
+        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.')
+      a(
+        'f50c9834',
+        'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
+      ),
         a('cb861826', 'Reorder Deck'),
         a('i5896b2b', function (e) {
           return 'Edit Deck "' + e.title + '"'
         }),
         a('ef602cab', function (e) {
           return 'Delete Deck "' + e.title + '"'
-        })
-      a('b44b9d83', function (e) {
-        return 'Unpin Deck "' + e.title + '"'
-      }),
+        }),
+        a('b44b9d83', function (e) {
+          return 'Unpin Deck "' + e.title + '"'
+        }),
         a('je4a847f', function (e) {
           return 'Pin Deck "' + e.title + '"'
         }),
@@ -10765,6 +10773,14 @@
               key: 'c84e286d',
               get: function get() {
                 return ['To change your username or password, go to account settings at ', '.']
+              },
+            },
+            {
+              key: 'd08f9ef3',
+              get: function get() {
+                return [
+                  'Verified Organizations is $1,000 per month. Each additional affiliated account is $50 per handle per month. ',
+                ]
               },
             },
             {
