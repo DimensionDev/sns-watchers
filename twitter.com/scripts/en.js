@@ -1221,6 +1221,7 @@
         a('a407814e', 'Last edited'),
         a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
+        a('f1824804', 'Appeal this warning'),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -1307,7 +1308,6 @@
         a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
         a('e639775e', 'Try undoing your Retweet again in a minute.'),
         a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
-        a('f1824804', 'Appeal this warning'),
         a('f755f710', 'Got It'),
         a('d0270ae2', 'This Tweet is hidden'),
         a('ba352986', 'You can’t reply … yet'),
@@ -4509,7 +4509,6 @@
         a('d7b51c68', 'Subscriptions'),
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a('i8132774', 'Bonus content for your most engaged followers'),
-        a('ac08a218', 'Awards'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
         a('df29646e', 'Payout threshold'),
@@ -4525,27 +4524,27 @@
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
-        a('jd1318d6', 'You have no new awards at this time.'),
-        a('d93308d8', 'See all transactions'),
+        a('b2528e4a', 'You have no new coins at this time.'),
+        a('ca516a66', 'See all activity'),
         a('dd657212', 'View Tweet'),
+        a('e70a07b2', 'Anonymous'),
         a('c76972f0', 'Since last payout'),
         a('c219a552', 'All time'),
         a('f3ce76c0', 'Need more help?'),
         a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
-        a('e46563d6', 'Deactivate Awards'),
+        a('fbbfe8aa', 'Deactivate Coins'),
         a(
-          'je490992',
-          'By deactivating, you’ll be removed from the Awards program and no longer be eligible to receive awards.',
+          'i886e71e',
+          'By deactivating, you’ll be removed from the Coins program and no longer be eligible to receive coins.',
         ),
         a('e58e85d2', 'Continue to deactivation'),
-        a('a62c84f6', 'Deactivate Awards?'),
-        a('b6653778', 'Deactivating Awards is permanent. You’ll be removed from the Awards program.'),
+        a('be8e87b4', 'Deactivate Coins?'),
         a('bee26fa8', 'Yes, deactivate'),
-        a('ia6443a2', 'Awards is now deactivated'),
+        a('f0145c9a', 'Coins is now deactivated'),
         a('bf364d62', 'All transactions'),
         a('g1b8020c', 'Last 30 days'),
         a('jb13b840', 'All-time'),
-        a('ab52c942', 'You have no new awards in the last 30 days.'),
+        a('d2a9529a', 'You have no new coins in the last 30 days.'),
         a('ff9ed474', 'Total earnings'),
         a('d59dbf8a', 'Overview'),
         a('g652fc4c', 'You have no payout history this month.'),
@@ -4559,6 +4558,7 @@
         a('d113fc10', 'You have no new Subscriptions at this time.'),
         a('h7a41c02', 'Renewals'),
         a('eedf2eaa', 'You have no renewals at this time.'),
+        a('d93308d8', 'See all transactions'),
         a('a23e724a', 'This account is unavailable.'),
         a('a384fda0', 'Subscription overview'),
         a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
@@ -4972,16 +4972,24 @@
           'j6cab6ec',
           'This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right.',
         ),
-        a('h3eba2fe', 'You have been successfully enrolled into the Awards program.'),
+        a('ecdbece0', 'You have been successfully enrolled into the Coins program.'),
         a('db3f0bbe', 'Helping creators earn money from their content.'),
-        a('g18de606', 'Enable Awards'),
-        a('eb96776d', 'Awards Terms'),
-        a('ad2c51a4', 'Receive Awards'),
-        a('a77b884c', 'Creators can receive and showcase awards on their Tweets.'),
-        a('g313e6e6', 'Make money from Tweets'),
+        a('a1f40cf8', 'Agree'),
+        a('hee52a6c', 'General Coins Policy'),
+        a('b70396b8', 'Receive coins'),
         a(
-          'ea93e870',
-          'Creators can earn money for awards they receive, and cash out earnings after hitting their monthly threshold.',
+          'gcc11082',
+          'Coins are virtual goods that can be received on eligible Tweets. As you receive coins they accumulate into Diamonds, which can be cashed out.',
+        ),
+        a('d27f5ac6', 'Passive income'),
+        a(
+          'i5226a36',
+          'Earn money simply by posting great content on Twitter. Your followers can now reward you by giving you coins.',
+        ),
+        a('f85fb0a2', 'Connect with your audience'),
+        a(
+          'd1433e24',
+          'Coins are a fun way for fans to reward you for making the content they enjoy the most. It’s an opportunity for you to get better connected to your followers and fans.',
         ),
         a(
           'db8346ee',
@@ -4999,6 +5007,7 @@
           'i85091ac',
           'Blue looks good on you. Enjoy your verified account and blue checkmark once you’ve been approved.',
         ),
+        a('jbd2a6de', 'Blue looks good on you. Enjoy your verified account and blue checkmark.'),
         a('fa08daa8', 'See what’s included in Blue and manage your settings'),
         a('eca82e08', 'A better news reading experience'),
         a(
@@ -6027,10 +6036,29 @@
         }),
         a('aba12f5d', function (e) {
           return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-        }),
-        a('b9184ae3', function (e) {
-          return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('b9184ae3', function (e) {
+        return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+      }),
         a('e44c7ea1', function (e) {
           return e.date + ' - See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6053,44 +6081,25 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        })
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('cd869707', function (e) {
-        return (
-          e.date +
-          ': ' +
-          e.likeCount +
-          ' like' +
-          n(e.likeCount, '', 's') +
-          '. ' +
-          e.retweetCount +
-          ' retweet' +
-          n(e.retweetCount, '', 's') +
-          '. ' +
-          e.replyCount +
-          ' repl' +
-          n(e.replyCount, 'y', 'ies') +
-          '.'
-        )
-      }),
+        }),
+        a('cd869707', function (e) {
+          return (
+            e.date +
+            ': ' +
+            e.likeCount +
+            ' like' +
+            n(e.likeCount, '', 's') +
+            '. ' +
+            e.retweetCount +
+            ' retweet' +
+            n(e.retweetCount, '', 's') +
+            '. ' +
+            e.replyCount +
+            ' repl' +
+            n(e.replyCount, 'y', 'ies') +
+            '.'
+          )
+        }),
         a('ad666301', function (e) {
           return e.fullName + ' on Twitter'
         }),
@@ -6426,11 +6435,10 @@
           'dda7478c',
           'Coins allow you to support creators who Tweet great content. Unused coins are kept in your balance.',
         ),
-        a('fe7af53a', 'bonus'),
+        a('ca673486', 'bonus coins'),
         a('f89dfa74', 'Best Value'),
         a('e2beba5e', 'Most Popular'),
         a('e5461d10', 'Buy coins'),
-        a('e5fc32fa', 'Learn more.'),
         a('bc42db1c', 'Cancel anytime. Auto-renews monthly.'),
         a('f971aa1c', 'Twitter Purchaser Terms'),
         a('fe93ed4a', 'Purchase successful'),
@@ -7326,13 +7334,13 @@
         a(
           'cb848a36',
           'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
+        )
+      a('d606207a', 'Delete Deck'),
+        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
+        a(
+          'f50c9834',
+          'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
         ),
-        a('d606207a', 'Delete Deck'),
-        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.')
-      a(
-        'f50c9834',
-        'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
-      ),
         a('cb861826', 'Reorder Deck'),
         a('i5896b2b', function (e) {
           return 'Edit Deck "' + e.title + '"'
@@ -10227,9 +10235,9 @@
               },
             },
             {
-              key: 'a304da8f',
+              key: 'gd031163',
               get: function get() {
-                return ['By enabling, you agree to be bound by the ', '.']
+                return ['By tapping below, you agree to the ', '.']
               },
             },
             {
