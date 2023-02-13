@@ -26907,9 +26907,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                     'shared~loader.AudioDock~loader.AppModules~loader.DMDrawer~bundle.AboutThisAd~bundle.NotMyAccount~bundle.Multi',
                   ),
                   d.e(
-                    'shared~loader.Typeahead~loader.DMDrawer~bundle.MultiAccount~bundle.Articles~bundle.AudioSpaceDetail~bundle.Au',
-                  ),
-                  d.e(
                     'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.AppModules~loader.DMDrawer~bun',
                   ),
                   d.e(
@@ -26996,9 +26993,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                   ),
                   d.e(
                     'shared~loader.AudioDock~loader.AppModules~loader.DMDrawer~bundle.AboutThisAd~bundle.NotMyAccount~bundle.Multi',
-                  ),
-                  d.e(
-                    'shared~loader.Typeahead~loader.DMDrawer~bundle.MultiAccount~bundle.Articles~bundle.AudioSpaceDetail~bundle.Au',
                   ),
                   d.e(
                     'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.AppModules~loader.DMDrawer~bun',
@@ -27089,9 +27083,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                     'shared~loader.AudioDock~loader.AppModules~loader.DMDrawer~bundle.AboutThisAd~bundle.NotMyAccount~bundle.Multi',
                   ),
                   d.e(
-                    'shared~loader.Typeahead~loader.DMDrawer~bundle.MultiAccount~bundle.Articles~bundle.AudioSpaceDetail~bundle.Au',
-                  ),
-                  d.e(
                     'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.AppModules~loader.DMDrawer~bun',
                   ),
                   d.e(
@@ -27178,9 +27169,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                   ),
                   d.e(
                     'shared~loader.AudioDock~loader.AppModules~loader.DMDrawer~bundle.AboutThisAd~bundle.NotMyAccount~bundle.Multi',
-                  ),
-                  d.e(
-                    'shared~loader.Typeahead~loader.DMDrawer~bundle.MultiAccount~bundle.Articles~bundle.AudioSpaceDetail~bundle.Au',
                   ),
                   d.e(
                     'shared~loader.AudioDock~loader.DashMenu~loader.SideNav~loader.Typeahead~loader.AppModules~loader.DMDrawer~bun',
@@ -27972,59 +27960,58 @@ window.__SCRIPTS_LOADED__.vendor &&
               ? void 0
               : hm.getAttribute('dir')),
           gm = (0, de.s)(),
-          wm = gm.countryCode,
-          Mm = gm.hasMultiAccountCookie,
-          ym = gm.isLoggedIn,
-          Cm = gm.unsupportedEngine
-        we.cY(i.ZP.location, i.ZP.listen, { country: wm }),
+          wm = gm.hasMultiAccountCookie,
+          Mm = gm.isLoggedIn,
+          ym = gm.unsupportedEngine
+        we.cY(i.ZP.location, i.ZP.listen, { country: R.GG(Sm) }),
           o.Z.addEventListener('change', function (e) {
             we.QO(), we.gr()
           })
-        var Tm = new Ge.Z(te.Yh),
-          _m = Sm && Sm.session && Sm.session.user_id
-        var km,
-          Pm,
-          Em = Id(Sm, {
+        var Cm = new Ge.Z(te.Yh),
+          Tm = Sm && Sm.session && Sm.session.user_id
+        var _m,
+          km,
+          Pm = Id(Sm, {
             get api() {
-              return vp
-            },
-            get featureSwitches() {
-              return up
-            },
-            get userClaims() {
-              return sp
-            },
-            get scribe() {
-              return fp
-            },
-            get relayEnvironment() {
               return Sp
             },
-            userPersistence: new Ge.Z(te.Yh, _m || null),
-            devicePersistence: Tm,
+            get featureSwitches() {
+              return lp
+            },
+            get userClaims() {
+              return up
+            },
+            get scribe() {
+              return vp
+            },
+            get relayEnvironment() {
+              return Dp
+            },
+            userPersistence: new Ge.Z(te.Yh, Tm || null),
+            devicePersistence: Cm,
             sentry:
-              ((km = window.Sentry),
-              (Pm = function Pm() {
-                void 0 !== km &&
-                  km.configureScope(function (e) {
+              ((_m = window.Sentry),
+              (km = function km() {
+                void 0 !== _m &&
+                  _m.configureScope(function (e) {
                     e.setTags(Ye)
                   })
               }),
               {
                 addFeatureSwitch: function addFeatureSwitch(e, n) {
                   var d = 'fs_'.concat(e.replace('responsive_web', 'rweb')).substring(0, 32)
-                  ;(Ye[d] = n), Pm()
+                  ;(Ye[d] = n), km()
                 },
                 addTag: function addTag(e, n) {
                   var d = e.substring(0, 32)
-                  ;(Ye[d] = n), Pm()
+                  ;(Ye[d] = n), km()
                 },
-                init: Pm,
+                init: km,
               }),
           }),
-          Rm = Promise.resolve()
+          Em = Promise.resolve()
         Sm.featureSwitch ||
-          ((Rm = (Rm = window.__FEATURE_SWITCH_MANIFEST__
+          ((Em = (Em = window.__FEATURE_SWITCH_MANIFEST__
             ? Promise.resolve(window.__FEATURE_SWITCH_MANIFEST__)
             : new Promise(function (e) {
                 window.__FEATURE_SWITCH_MANIFEST__ = e
@@ -28034,24 +28021,25 @@ window.__SCRIPTS_LOADED__.vendor &&
               d = e.debug,
               r = e.feature_set_token
             delete window.__FEATURE_SWITCH_MANIFEST__,
-              'string' == typeof r && Em.dispatch((0, Bd.Dw)(r)),
-              'object' === (0, t.Z)(n) && Em.dispatch((0, Bd.mn)(n)),
-              'prod' !== a.OB && 'object' === (0, t.Z)(d) && Em.dispatch((0, Bd.ew)(d))
+              'string' == typeof r && Pm.dispatch((0, Bd.Dw)(r)),
+              'object' === (0, t.Z)(n) && Pm.dispatch((0, Bd.mn)(n)),
+              'prod' !== a.OB && 'object' === (0, t.Z)(d) && Pm.dispatch((0, Bd.ew)(d))
           })),
-          (Rm = (Rm = Promise.race([
-            Rm,
+          (Em = (Em = Promise.race([
+            Em,
             new Promise(function (e) {
               return setTimeout(e, 7e3)
             }),
           ]))
             .then(function () {
-              return Em.dispatch((0, Bd.vR)({}))
+              return Pm.dispatch((0, Bd.vR)({}))
             })
             ['catch'](function () {
-              return Em.dispatch((0, Bd.vR)({}))
+              return Pm.dispatch((0, Bd.vR)({}))
             })
             ['catch'](function () {})))
-        var Zm,
+        var Rm,
+          Zm,
           Im,
           Bm,
           xm,
@@ -28081,29 +28069,28 @@ window.__SCRIPTS_LOADED__.vendor &&
           rp,
           op,
           ip,
-          lp,
-          up = (0, ce.BH)(Em),
-          sp = sn(Em, up),
-          cp = (0, ce.ad)(Em),
-          bp = function bp() {
+          lp = (0, ce.BH)(Pm),
+          up = sn(Pm, lp),
+          sp = (0, ce.ad)(Pm),
+          cp = function cp() {
             return (
-              Zm ||
-                (Zm = new Y(function () {
-                  return vp.Auth.requestGuestToken().then(function (e) {
+              Rm ||
+                (Rm = new Y(function () {
+                  return Sp.Auth.requestGuestToken().then(function (e) {
                     return e.guest_token
                   })
-                }, up)),
-              Zm
+                }, lp)),
+              Rm
             )
           },
-          mp = new N(),
-          pp = (0, C.Oj)(),
-          hp = window.location.host,
-          Ap =
-            ((Im = function Im() {
-              return up.getArrayValue('traffic_rewrite_map')
+          bp = new N(),
+          mp = (0, C.Oj)(),
+          pp = window.location.host,
+          hp =
+            ((Zm = function Zm() {
+              return lp.getArrayValue('traffic_rewrite_map')
             }),
-            (Bm = (0, an.Z)(on)),
+            (Im = (0, an.Z)(on)),
             {
               getReplacementHost: function getReplacementHost(e) {
                 return (function (e, n) {
@@ -28118,10 +28105,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                     )
                       return t.replacementHost
                   }
-                })(e, Bm(Im()))
+                })(e, Im(Zm()))
               },
             }),
-          Dp = new w.ZP(up, {
+          Ap = new w.ZP(lp, {
             dispatcher: l.e2,
             retryFilter: (function (e) {
               return function (n, d) {
@@ -28137,9 +28124,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   throw n
                 })
               }
-            })(bp),
+            })(cp),
             filters: [
-              ((zm = {}),
+              ((jm = {}),
               function (e, n) {
                 return (function (e, n, d) {
                   var t = (0, _.stringify)(e.params),
@@ -28159,7 +28146,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                             return delete d[i], Promise.reject(e)
                           }))
                     : n(e)
-                })(e, n, zm)
+                })(e, n, jm)
               }),
               (function (e, n, d, t) {
                 return function (a, r) {
@@ -28175,27 +28162,27 @@ window.__SCRIPTS_LOADED__.vendor &&
                     })
                   )
                 }
-              })(pp, !!ym, null, bp),
-              ((jm = function jm() {
-                return Em
+              })(mp, !!Mm, null, cp),
+              ((Hm = function Hm() {
+                return Pm
               }),
               function (e, n) {
                 if (e.host === w.F$ || e.host === Z.cardsHost) {
-                  var d = jm(),
+                  var d = Hm(),
                     t = (0, R.F5)(d.getState())
                   t && (e.headers['x-twitter-client-language'] = (0, E.o)(t))
                 }
                 return n(e)
               }),
-              G(_m),
-              ((Um = function Um() {
-                return up.isTrue('responsive_web_zipkin_api_requests_enabled')
+              G(Tm),
+              ((Fm = function Fm() {
+                return lp.isTrue('responsive_web_zipkin_api_requests_enabled')
               }),
-              (Hm = function Hm() {
-                return up.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
+              (Um = function Um() {
+                return lp.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
               }),
               function (e, n) {
-                if (e.host === w.F$ && Um() && Hm().includes(e.path)) {
+                if (e.host === w.F$ && Fm() && Um().includes(e.path)) {
                   var d = (0, M.Z)((0, M.Z)({}, e.headers), {}, { 'x-b3-flags': '1' })
                   return n((0, M.Z)((0, M.Z)({}, e), {}, { headers: d }))
                 }
@@ -28220,12 +28207,12 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                 return n(e)
               },
-              mp.filter,
-              ((Fm = function Fm() {
-                return 'host' === up.getStringValue('network_layer_503_backoff_mode')
+              bp.filter,
+              ((Om = function Om() {
+                return 'host' === lp.getStringValue('network_layer_503_backoff_mode')
               }),
               function (e, n) {
-                if (!Fm()) return n(e)
+                if (!Om()) return n(e)
                 if ('text/event-stream' === e.headers.accept) return n(e)
                 var d = new URL(e.uri)
                 if (d.host === z && '/1.1/help/settings.json' === d.pathname) return n(e)
@@ -28252,25 +28239,25 @@ window.__SCRIPTS_LOADED__.vendor &&
                     r = a + n.path
                   return d((0, M.Z)((0, M.Z)({}, n), {}, { host: a, uri: r }))
                 }
-              })(Ap),
-              ((xm = {
+              })(hp),
+              ((Bm = {
                 isApiTransitionEnabled: function isApiTransitionEnabled() {
-                  return up.isTrue('responsive_web_api_transition_enabled')
+                  return lp.isTrue('responsive_web_api_transition_enabled')
                 },
                 getWindowLocationHost: function getWindowLocationHost() {
-                  return hp
+                  return pp
                 },
                 isLocalDevelopment: function isLocalDevelopment() {
-                  return hp.indexOf('localhost') > -1
+                  return pp.indexOf('localhost') > -1
                 },
               }),
-              (Nm = xm.getWindowLocationHost),
-              (Lm = xm.isApiTransitionEnabled),
-              (Om = xm.isLocalDevelopment),
+              (xm = Bm.getWindowLocationHost),
+              (Nm = Bm.isApiTransitionEnabled),
+              (Lm = Bm.isLocalDevelopment),
               function (e, n) {
                 if (
-                  !Lm() ||
-                  Om() ||
+                  !Nm() ||
+                  Lm() ||
                   !window.document.cookie.split(';').some(function (e) {
                     return e.startsWith('gt=') || e.startsWith('ct0=')
                   }) ||
@@ -28283,7 +28270,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 )
                   return n(e)
                 var d,
-                  t = 'https://'.concat(Nm()),
+                  t = 'https://'.concat(xm()),
                   a = '/i/api'.concat(e.path),
                   r = t + a
                 return n((0, M.Z)((0, M.Z)({}, e), {}, { host: t, path: a, uri: r }))
@@ -28311,19 +28298,19 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                   return d((0, M.Z)((0, M.Z)({}, n), {}, { headers: (0, M.Z)((0, M.Z)({}, n.headers), t) }))
                 }
-              })(up),
+              })(lp),
             ],
           }),
-          Sp = ft(Dp, Em),
-          vp = new g(Dp, Sp),
-          fp = (function (e) {
+          Dp = ft(Ap, Pm),
+          Sp = new g(Ap, Dp),
+          vp = (function (e) {
             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               d = (0, ab.Z)(),
               t = d.clientAppId,
               a = d.clientName
             return Ab((0, M.Z)({ clientName: a, eventTransformer: vb(t), transport: Db(e), unloadTransport: Sb(e) }, n))
-          })(vp),
-          gp = gt.createElement(
+          })(Sp),
+          fp = gt.createElement(
             wt.rs,
             null,
             [
@@ -29075,14 +29062,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                   gt.createElement(wt.AW, { component: ul, exact: !0, key: '/home', path: '/home' }),
                   gt.createElement(wt.AW, { exact: !0, key: 'moment', path: '/i/moments/'.concat(Ia.wi), render: Dl }),
                   (0, Cs.ZP)(),
-                  ((lp = '/twitterblue/error'),
+                  ((ip = '/twitterblue/error'),
                   [
                     gt.createElement(Za.Z, {
                       component: Ps,
                       exact: !0,
-                      key: lp,
+                      key: ip,
                       modalSize: 'dynamic',
-                      path: lp,
+                      path: ip,
                       topOfScreen: !0,
                     }),
                   ]),
@@ -29482,57 +29469,57 @@ window.__SCRIPTS_LOADED__.vendor &&
                       path: '/'.concat(Ia.qX, '/status/').concat(Ia.i_, '/history'),
                     }),
                   ],
-                  ((Xm = '/i/oauth_landing'),
-                  (Jm = '/i/flow/'),
-                  ($m = '/i/bounce/'),
-                  (ep = '/i/onboarding/verify'),
-                  (np = '/i/ocf_background'),
-                  (dp = '/i/ocf_arkose_challenge'),
-                  (tp = '/i/safety/report_story_start'),
-                  (ap = '/i/flow/signup'),
-                  (rp = '/i/flow/login'),
-                  (op = '/i/flow/convert_to_professional'),
-                  (ip = '/i/flow/make_more_connections'),
+                  ((Ym = '/i/oauth_landing'),
+                  (Xm = '/i/flow/'),
+                  (Jm = '/i/bounce/'),
+                  ($m = '/i/onboarding/verify'),
+                  (ep = '/i/ocf_background'),
+                  (np = '/i/ocf_arkose_challenge'),
+                  (dp = '/i/safety/report_story_start'),
+                  (tp = '/i/flow/signup'),
+                  (ap = '/i/flow/login'),
+                  (rp = '/i/flow/convert_to_professional'),
+                  (op = '/i/flow/make_more_connections'),
                   [
-                    gt.createElement(wt.AW, { component: Rl, exact: !0, key: np, path: np }),
-                    gt.createElement(wt.AW, { component: zl, exact: !0, key: dp, path: dp }),
-                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: xl, exact: !0, key: Xm, path: Xm }),
-                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: Bl, exact: !0, key: ep, path: ep }),
+                    gt.createElement(wt.AW, { component: Rl, exact: !0, key: ep, path: ep }),
+                    gt.createElement(wt.AW, { component: zl, exact: !0, key: np, path: np }),
+                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: xl, exact: !0, key: Ym, path: Ym }),
+                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: Bl, exact: !0, key: $m, path: $m }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: Ll,
-                      defaultBackgroundPath: np,
+                      defaultBackgroundPath: ep,
                       exact: !0,
-                      key: ap,
-                      path: ap,
+                      key: tp,
+                      path: tp,
                       restoreBackgroundFromPreviousPath: !1,
                     }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: Ol,
-                      defaultBackgroundPath: np,
+                      defaultBackgroundPath: ep,
                       exact: !0,
-                      key: rp,
-                      path: rp,
+                      key: ap,
+                      path: ap,
                     }),
-                    gt.createElement(Za.Z, { component: Nl, defaultBackgroundPath: np, exact: !0, key: tp, path: tp }),
-                    gt.createElement(Za.Z, { component: Fl, defaultBackgroundPath: np, exact: !0, key: op, path: op }),
-                    gt.createElement(Za.Z, { component: Ul, defaultBackgroundPath: np, exact: !0, key: ip, path: ip }),
+                    gt.createElement(Za.Z, { component: Nl, defaultBackgroundPath: ep, exact: !0, key: dp, path: dp }),
+                    gt.createElement(Za.Z, { component: Fl, defaultBackgroundPath: ep, exact: !0, key: rp, path: rp }),
+                    gt.createElement(Za.Z, { component: Ul, defaultBackgroundPath: ep, exact: !0, key: op, path: op }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: Zl,
-                      defaultBackgroundPath: np,
+                      defaultBackgroundPath: ep,
                       exact: !1,
-                      key: Jm,
-                      path: Jm,
+                      key: Xm,
+                      path: Xm,
                     }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: jl,
-                      defaultBackgroundPath: np,
+                      defaultBackgroundPath: ep,
                       exact: !1,
-                      key: $m,
-                      path: $m,
+                      key: Jm,
+                      path: Jm,
                     }),
                   ]),
                   [
@@ -29595,15 +29582,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                     key: '/:screenName/moments',
                     path: '/'.concat(Ia.qX, '/moments'),
                   }),
-                  ((Vm = '/i/lists/'.concat(Ia.Tk)),
-                  (Wm = '/i/lists/'.concat(Ia.Tk, '/info')),
-                  (qm = '/i/lists/'.concat(Ia.Tk, '/subscribers')),
-                  (Gm = '/i/lists/'.concat(Ia.Tk, '/followers')),
-                  (Km = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF)),
-                  (Qm = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF, '/').concat(Ia.fH)),
-                  (Ym = '/'.concat(Ia.qX, '/lists/pinned/edit')),
+                  ((zm = '/i/lists/'.concat(Ia.Tk)),
+                  (Vm = '/i/lists/'.concat(Ia.Tk, '/info')),
+                  (Wm = '/i/lists/'.concat(Ia.Tk, '/subscribers')),
+                  (qm = '/i/lists/'.concat(Ia.Tk, '/followers')),
+                  (Gm = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF)),
+                  (Km = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF, '/').concat(Ia.fH)),
+                  (Qm = '/'.concat(Ia.qX, '/lists/pinned/edit')),
                   [
-                    gt.createElement(Za.Z, { component: Gs, exact: !0, key: Ym, path: Ym }),
+                    gt.createElement(Za.Z, { component: Gs, exact: !0, key: Qm, path: Qm }),
                     gt.createElement(ka.Z, {
                       exact: !0,
                       from: '/lists/add_member',
@@ -29616,7 +29603,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/lists/create',
                       to: '/i/lists/create',
                     }),
-                    gt.createElement(ka.Z, { exact: !0, from: qm, key: qm, to: Gm }),
+                    gt.createElement(ka.Z, { exact: !0, from: Wm, key: Wm, to: qm }),
                     gt.createElement(Za.Z, {
                       component: Ks,
                       exact: !0,
@@ -29629,15 +29616,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/i/lists/create',
                       path: '/i/lists/create',
                     }),
-                    gt.createElement(Za.Z, { component: Ys, exact: !0, key: Wm, path: Wm }),
+                    gt.createElement(Za.Z, { component: Ys, exact: !0, key: Vm, path: Vm }),
                     gt.createElement(Za.Z, {
                       component: Js,
                       exact: !0,
                       key: '/i/lists/'.concat(Ia.Tk, '/members/:type'),
                       path: '/i/lists/'.concat(Ia.Tk, '/members/(suggested)?'),
                     }),
-                    gt.createElement(Za.Z, { component: Xs, exact: !0, key: Gm, path: Gm }),
-                    gt.createElement(wt.AW, { component: ec, key: Vm, path: Vm }),
+                    gt.createElement(Za.Z, { component: Xs, exact: !0, key: qm, path: qm }),
+                    gt.createElement(wt.AW, { component: ec, key: zm, path: zm }),
                     gt.createElement(wt.AW, {
                       component: nc,
                       exact: !0,
@@ -29650,8 +29637,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/i/lists/suggested',
                       path: '/i/lists/suggested',
                     }),
-                    gt.createElement(wt.AW, { component: dc, key: Qm, path: Qm }),
-                    gt.createElement(wt.AW, { component: dc, exact: !0, key: Km, path: Km }),
+                    gt.createElement(wt.AW, { component: dc, key: Km, path: Km }),
+                    gt.createElement(wt.AW, { component: dc, exact: !0, key: Gm, path: Gm }),
                   ]),
                   [
                     gt.createElement(wt.AW, {
@@ -29779,16 +29766,16 @@ window.__SCRIPTS_LOADED__.vendor &&
               ),
             ),
           )
-        Rm.then(function () {
-          rb({ api: vp, behavioralEventAllowlist: cp, featureSwitches: up }),
-            Me.S1(vp),
+        Em.then(function () {
+          rb({ api: Sp, behavioralEventAllowlist: sp, featureSwitches: lp }),
+            Me.S1(Sp),
             (0, ye.u)({
-              httpClient: vp.apiClient.client,
-              globalTraceSampleRate: Number(up.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
+              httpClient: Sp.apiClient.client,
+              globalTraceSampleRate: Number(lp.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
             }),
             We(),
-            Em.dispatch((0, Ld.ri)()).then(function () {
-              _m &&
+            Pm.dispatch((0, Ld.ri)()).then(function () {
+              Tm &&
                 (function (e, n) {
                   if (
                     ('/' === window.location.pathname || '/home' === window.location.pathname) &&
@@ -29797,10 +29784,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                     var d = (0, Ld.Sl)(n.getState())
                     n.dispatch((0, Pe.ZP)({ useLatest: d }).fetchInitial())
                   }
-                })(up, Em)
+                })(lp, Pm)
             })
-          var e = new he(vp, 3e5)
-          up.isTrue('responsive_web_send_cookies_metadata_enabled') &&
+          var e = new he(Sp, 3e5)
+          lp.isTrue('responsive_web_send_cookies_metadata_enabled') &&
             (function (e) {
               var n = (0, C.$t)(),
                 d = (0, de.s)().cookies.fetchedTime
@@ -29810,9 +29797,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   { description: ''.concat(n, ':cookiesMetadata:load'), product: n, event_value: Date.now() - d },
                 ]),
               })['catch'](function () {})
-            })(vp)
+            })(Sp)
           var n
-          ;(n = Em.dispatch),
+          ;(n = Pm.dispatch),
             window.apkInterface &&
               ((window.openApkDeeplink = function (e) {
                 var n = wa.ZP.parseInternalUrl(e)
@@ -29861,21 +29848,21 @@ window.__SCRIPTS_LOADED__.vendor &&
                     },
                   )
               }, t)
-            })(0, fp, up),
-            _m && Ke.m.initialize(te.Yh, _m)
+            })(0, vp, lp),
+            Tm && Ke.m.initialize(te.Yh, Tm)
           var t,
             r = [
               !1,
-              le(Em),
-              (0, ue.ZP)(up),
+              le(Pm),
+              (0, ue.ZP)(lp),
               ae(e),
-              void 0 === Cm &&
+              void 0 === ym &&
                 se({
                   splunkLogger: new nn({
                     env: a.OB,
                     sha: a.MK,
                     splunkIndexPrefix: (0, C.SG)(),
-                    transport: en(vp),
+                    transport: en(Sp),
                     sourceExtras: function sourceExtras() {
                       var e = window.navigator.userAgent || '',
                         n = (function (e) {
@@ -29892,7 +29879,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               t(e.reason, { extra: { unhandledPromiseRejection: !0 }, tags: { unhandledPromiseRejection: !0 } })
             })
           var o =
-            fe.U2(up) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? fe.rY.dark : fe.rY['default'])
+            fe.U2(lp) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? fe.rY.dark : fe.rY['default'])
           ;(function (e) {
             var n = Me.P_()
             return Promise.resolve().then(function () {
@@ -29902,14 +29889,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                 Me.IM('init:storePrepare', n.end())
               })
             })
-          })(Em)
+          })(Pm)
             ['catch'](function (e) {
               return (0, K.ZP)(e, { tags: { clientInit: 'prepareStore' } }), Promise.resolve()
             })
             .then(function () {
               return (
-                ve(Em),
-                Em.dispatch(
+                ve(Pm),
+                Pm.dispatch(
                   (function (e) {
                     return function (n, d, t) {
                       var a = t.featureSwitches,
@@ -29936,18 +29923,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                             })
                         : Promise.resolve(null)
                     }
-                  })(vp),
+                  })(Sp),
                 ),
                 vm
                   ? Dm({
                       node: vm,
                       isRTL: fm,
-                      featureSwitches: up,
-                      userClaims: sp,
-                      store: Em,
-                      relayEnvironment: Sp,
+                      featureSwitches: lp,
+                      userClaims: up,
+                      store: Pm,
+                      relayEnvironment: Dp,
                       themePaletteName: o,
-                      routes: gp,
+                      routes: fp,
                     })
                   : null
               )
@@ -29958,17 +29945,17 @@ window.__SCRIPTS_LOADED__.vendor &&
                 we.SJ(),
                   (function () {
                     if (ne.Z.isStandaloneApp()) {
-                      var e = R.o1(Em.getState()),
-                        n = Em.dispatch((0, X.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
-                      ym &&
+                      var e = R.o1(Pm.getState()),
+                        n = Pm.dispatch((0, X.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
+                      Mm &&
                         e &&
-                        vp.Ocf.setUserPwaLaunched({ userId: e })
+                        Sp.Ocf.setUserPwaLaunched({ userId: e })
                           ['catch'](function (e) {
-                            return (0, Vd.Vm)(Em.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
+                            return (0, Vd.Vm)(Pm.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
                           })
                           ['catch'](n)
                       var d = re.DEPRECATED_scribeAction({ page: 'app', action: 'launch' })
-                      Em.dispatch(d)
+                      Pm.dispatch(d)
                     }
                   })(),
                   (function (e) {
@@ -30003,32 +29990,32 @@ window.__SCRIPTS_LOADED__.vendor &&
                               t.dispatch(e.updatePushNotificationsPermissionState()),
                             ne.Z.isTwitterLite() && ne.Z.isFirstLaunch() && t.dispatch(e.pushSubscribe())
                         })
-                  })({ featureSwitches: up, store: Em, isLoggedIn: ym }),
-                  (e = up.getNumberValue('scribe_api_error_sample_size') / 1e4),
-                  (n = up.getNumberValue('scribe_api_sample_size') / 1e4),
-                  (t = up.getNumberValue('scribe_cdn_sample_size') / 1e4),
-                  (a = up.getNumberValue('scribe_web_nav_sample_size') / 1e4),
-                  (r = up.getArrayValue('scribe_cdn_host_list')),
+                  })({ featureSwitches: lp, store: Pm, isLoggedIn: Mm }),
+                  (e = lp.getNumberValue('scribe_api_error_sample_size') / 1e4),
+                  (n = lp.getNumberValue('scribe_api_sample_size') / 1e4),
+                  (t = lp.getNumberValue('scribe_cdn_sample_size') / 1e4),
+                  (a = lp.getNumberValue('scribe_web_nav_sample_size') / 1e4),
+                  (r = lp.getArrayValue('scribe_cdn_host_list')),
                   d
                     .e('bundle.NetworkInstrument')
                     .then(d.bind(d, 188170))
                     .then(function (d) {
-                      var o = new (0, d['default'])(fp, {
+                      var o = new (0, d['default'])(vp, {
                         apiErrorSampleSize: e,
                         apiSampleSize: n,
                         cdnSampleSize: t,
                         navSampleSize: a,
                         cdnHostList: r,
                       })
-                      mp.addHandler(o.scribeRequest)
+                      bp.addHandler(o.scribeRequest)
                     }),
                   (o = {
-                    store: Em,
-                    api: vp,
-                    featureSwitches: up,
-                    hasMultiAccountCookie: Mm,
-                    scribe: fp,
-                    trafficRewriter: Ap,
+                    store: Pm,
+                    api: Sp,
+                    featureSwitches: lp,
+                    hasMultiAccountCookie: wm,
+                    scribe: vp,
+                    trafficRewriter: hp,
                   }),
                   (0, Wt.ZP)().then(function (e) {
                     for (var n = 0, d = Object.keys(gb()); n < d.length; n++) {
@@ -30045,14 +30032,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                               (0, K.ZP)(e)
                           }),
                         kb(e))
-                  })(vp),
+                  })(Sp),
                   (function (e, n, d) {
                     setTimeout(function () {
                       ;(0, db.Z)().then(function (t) {
                         t.initBranchSdk(e, n, d)
                       })
                     }, 0)
-                  })(up, vp, Em),
+                  })(lp, Sp, Pm),
                   setTimeout(function () {
                     Pt().emoji.then(function () {
                       return d
@@ -30076,9 +30063,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                         })
                     })
                   }, 5e3),
-                  Em.dispatch(R.K6()),
-                  Em.dispatch(R.KT()),
-                  Em.dispatch((0, xd.wv)())
+                  Pm.dispatch(R.K6()),
+                  Pm.dispatch(R.KT()),
+                  Pm.dispatch((0, xd.wv)())
               },
               function (e) {
                 return (0, K.ZP)(e, { tags: { clientInit: 'render' } }), Promise.resolve()
@@ -32720,7 +32707,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           $t: function $t() {
-            return I
+            return x
           },
           A: function A() {
             return S
@@ -32741,7 +32728,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return a
           },
           Hz: function Hz() {
-            return R
+            return I
           },
           Ip: function Ip() {
             return h
@@ -32749,8 +32736,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           K4: function K4() {
             return m
           },
+          MR: function MR() {
+            return R
+          },
           Oj: function Oj() {
-            return Z
+            return B
           },
           Qg: function Qg() {
             return C
@@ -32759,7 +32749,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return b
           },
           SG: function SG() {
-            return B
+            return N
           },
           Vu: function Vu() {
             return D
@@ -32787,6 +32777,9 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           iH: function iH() {
             return k
+          },
+          l9: function l9() {
+            return Z
           },
           nm: function nm() {
             return y
@@ -32875,18 +32868,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           k = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9NdmVaeXJTTGo2ZktCeA==',
           P = 'prod_MiqCHIcfylp7An',
           E = 'prod_MveZyrSLj6fKBx',
-          R = new Uint8Array([
+          R = 'verified-organizations-test-1',
+          Z = 'verified-organizations-prod-1',
+          I = new Uint8Array([
             4, 94, 104, 18, 141, 49, 13, 74, 96, 202, 82, 131, 78, 91, 29, 242, 150, 102, 197, 0, 53, 149, 230, 8, 54,
             38, 62, 173, 43, 28, 89, 130, 191, 222, 213, 128, 147, 62, 21, 49, 187, 95, 212, 194, 196, 253, 140, 157,
             234, 34, 8, 234, 143, 158, 221, 15, 83, 8, 222, 111, 100, 204, 213, 48, 75,
           ]),
-          Z = function Z() {
+          B = function B() {
             return 'AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA'
           },
-          I = function I() {
+          x = function x() {
             return 'rweb'
           },
-          B = function B() {
+          N = function N() {
             return 'responsive_web'
           }
       },
@@ -39897,21 +39892,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           i = new Date()
         var l = (0, a.Z)(function (e) {
             var n = e && 'object' === (0, t.Z)(e) ? r.i(e || {}, o.AK) : {},
-              d = n.countryCode,
-              a = Array.isArray(n.uaParserTags)
+              d = Array.isArray(n.uaParserTags)
                 ? n.uaParserTags.filter(function (e) {
                     return 'string' == typeof e
                   })
                 : [],
-              l = 'boolean' == typeof n.isLoggedIn && n.isLoggedIn,
-              u = ('number' == typeof n.serverDate ? new Date(n.serverDate) : i) - i
+              a = 'boolean' == typeof n.isLoggedIn && n.isLoggedIn,
+              l = ('number' == typeof n.serverDate ? new Date(n.serverDate) : i) - i
             return {
-              countryCode: d,
               hasMultiAccountCookie: 'boolean' == typeof n.hasMultiAccountCookie && n.hasMultiAccountCookie,
-              isLoggedIn: l,
-              serverAndLocalDateOffset: u,
+              isLoggedIn: a,
+              serverAndLocalDateOffset: l,
               unsupportedEngine: n.unsupportedEngine,
-              uaParserTags: a,
+              uaParserTags: d,
               cookies: n.cookies,
             }
           }),
