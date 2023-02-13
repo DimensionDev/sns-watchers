@@ -26850,7 +26850,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             return gt.createElement(
               Xa.Z,
               (0, Et.Z)({}, e, {
-                component: ic,
+                component: pc,
                 featureSwitchName: 'blue_business_affiliates_list_consumption_ui_enabled',
               }),
             )
