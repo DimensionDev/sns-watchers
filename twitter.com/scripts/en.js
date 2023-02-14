@@ -4526,6 +4526,11 @@
         a('bc43a32e', 'Recent activity'),
         a('b2528e4a', 'You have no new coins at this time.'),
         a('ca516a66', 'See all activity'),
+        a('ee9ea930', 'Diamonds'),
+        a(
+          'ef805bb8',
+          'Diamonds are accumulated by receiving coins on eligible Tweets. Money earned from Diamonds gets added to your estimated earnings.',
+        ),
         a('dd657212', 'View Tweet'),
         a('e70a07b2', 'Anonymous'),
         a('c76972f0', 'Since last payout'),
@@ -4541,7 +4546,7 @@
         a('be8e87b4', 'Deactivate Coins?'),
         a('bee26fa8', 'Yes, deactivate'),
         a('f0145c9a', 'Coins is now deactivated'),
-        a('bf364d62', 'All transactions'),
+        a('a22f6808', 'All activity'),
         a('g1b8020c', 'Last 30 days'),
         a('jb13b840', 'All-time'),
         a('d2a9529a', 'You have no new coins in the last 30 days.'),
@@ -4653,6 +4658,7 @@
         a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
         a('g263221c', 'Stripe'),
+        a('bf364d62', 'All transactions'),
         a('ef1a63c0', 'You have no new subscriptions in the last 30 days.'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
@@ -4831,11 +4837,11 @@
         ),
         a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
-        a('d4062c9a', 'Where do you share content? Select all that apply.'),
-        a('e963d588', 'Select platforms'),
+        a('d4062c9a', 'Where do you share content? Select all that apply.')
+      a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
-        a('ffb6cb88', 'How do you plan to use Super Follows?')
-      a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('ffb6cb88', 'How do you plan to use Super Follows?'),
+        a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('gfc80842', 'Submit application'),
@@ -6027,15 +6033,6 @@
         }),
         a('d0681155', function (e) {
           return e.fullName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('be59fddf', function (e) {
-          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('aba12f5d', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6056,9 +6053,18 @@
           c(e, t)
         )
       }
-      a('b9184ae3', function (e) {
-        return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+      a('be59fddf', function (e) {
+        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
       }),
+        a('b357b2ad', function (e) {
+          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('aba12f5d', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+        }),
+        a('b9184ae3', function (e) {
+          return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+        }),
         a('e44c7ea1', function (e) {
           return e.date + ' - See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6988,6 +6994,7 @@
         a('f23a997e', 'twitter.com'),
         a('c4b9664e', 'Affiliated'),
         a('g0eadcf6', 'Affiliated with another organization'),
+        a('a8c81f88', 'Organization Account'),
         a('e49b97e2', 'Search accounts'),
         a('f002f1d6', 'Send Invite'),
         a('g7452534', 'Add Twitter accounts'),
@@ -7322,10 +7329,10 @@
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
-        a('ee7765ba', 'Pick Emoji'),
-        a('e0127c83', function (e) {
-          return 'Change Emoji ' + e.emoji
-        }),
+        a('ee7765ba', 'Pick Emoji')
+      a('e0127c83', function (e) {
+        return 'Change Emoji ' + e.emoji
+      }),
         a(
           'hb8b6254',
           'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
@@ -7334,8 +7341,8 @@
         a(
           'cb848a36',
           'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
-        )
-      a('d606207a', 'Delete Deck'),
+        ),
+        a('d606207a', 'Delete Deck'),
         a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
         a(
           'f50c9834',
