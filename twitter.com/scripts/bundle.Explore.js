@@ -473,7 +473,7 @@
         g = n(440082),
         Z = n(460673),
         v = n(78772)
-      var y = (0, n(615410).Z)({
+      var y = (0, n(962104).Z)({
         timelineId: 'forYouExploreGraphQL',
         network: {
           getEndpoint: function getEndpoint(e) {
