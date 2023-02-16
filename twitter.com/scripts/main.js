@@ -27842,19 +27842,19 @@ window.__SCRIPTS_LOADED__.vendor &&
           gm,
           wm = Id(cm, {
             get api() {
-              return cp
+              return up
             },
             get featureSwitches() {
-              return np
+              return $m
             },
             get userClaims() {
-              return dp
+              return ep
             },
             get scribe() {
-              return bp
+              return sp
             },
             get relayEnvironment() {
-              return sp
+              return lp
             },
             userPersistence: new qe.Z(te.Yh, vm || null),
             devicePersistence: Sm,
@@ -27936,28 +27936,25 @@ window.__SCRIPTS_LOADED__.vendor &&
           Ym,
           Xm,
           Jm,
-          $m,
-          ep,
-          np = (0, ce.BH)(wm),
-          dp = sn(wm, np),
-          tp = (0, ce.ad)(wm),
-          ap = function ap() {
+          $m = (0, ce.BH)(wm),
+          ep = sn(wm, $m),
+          np = (0, ce.ad)(wm),
+          dp = function dp() {
             return (
               ym ||
                 (ym = new Y(function () {
-                  return cp.Auth.requestGuestToken().then(function (e) {
+                  return up.Auth.requestGuestToken().then(function (e) {
                     return e.guest_token
                   })
-                }, np)),
+                }, $m)),
               ym
             )
           },
-          rp = new N(),
-          op = (0, C.Oj)(),
-          ip = window.location.host,
-          lp =
+          tp = new N(),
+          ap = window.location.host,
+          rp =
             ((Cm = function Cm() {
-              return np.getArrayValue('traffic_rewrite_map')
+              return $m.getArrayValue('traffic_rewrite_map')
             }),
             (Tm = (0, an.Z)(on)),
             {
@@ -27977,7 +27974,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                 })(e, Tm(Cm()))
               },
             }),
-          up = new w.ZP(np, {
+          op = function op() {
+            return wm
+          },
+          ip = new w.ZP($m, {
             dispatcher: l.e2,
             retryFilter: (function (e) {
               return function (n, d) {
@@ -27993,9 +27993,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   throw n
                 })
               }
-            })(ap),
+            })(dp),
             filters: [
-              ((xm = {}),
+              ((Im = {}),
               function (e, n) {
                 return (function (e, n, d) {
                   var t = (0, _.stringify)(e.params),
@@ -28015,43 +28015,39 @@ window.__SCRIPTS_LOADED__.vendor &&
                             return delete d[i], Promise.reject(e)
                           }))
                     : n(e)
-                })(e, n, xm)
+                })(e, n, Im)
               }),
-              (function (e, n, d, t) {
-                return function (a, r) {
-                  var o = (0, M.Z)((0, M.Z)({}, a.headers), {}, { authorization: 'Bearer '.concat(e) }),
-                    i = Promise.resolve()
+              (function (e, n, d) {
+                return function (t, a) {
+                  var r = (0, M.Z)((0, M.Z)({}, t.headers), {}, { authorization: 'Bearer '.concat((0, C.Oj)()) }),
+                    o = Promise.resolve()
                   return (
-                    n
-                      ? ((o['x-twitter-auth-type'] = 'OAuth2Session'),
-                        d && ((o['x-csrf-token'] = d.cookies[C.qj]), (o.cookie = d.headers.cookie)))
-                      : (i = t().addGuestTokenHeaderIfNeeded(a, o)),
-                    i.then(function () {
-                      return r((0, M.Z)((0, M.Z)({}, a), {}, { headers: o }))
+                    R.Qb(e().getState())
+                      ? ((r['x-twitter-auth-type'] = 'OAuth2Session'),
+                        d && ((r['x-csrf-token'] = d.cookies[C.qj]), (r.cookie = d.headers.cookie)))
+                      : (o = n().addGuestTokenHeaderIfNeeded(t, r)),
+                    o.then(function () {
+                      return a((0, M.Z)((0, M.Z)({}, t), {}, { headers: r }))
                     })
                   )
                 }
-              })(op, !!Am, null, ap),
-              ((Bm = function Bm() {
-                return wm
-              }),
-              function (e, n) {
-                if (e.host === w.F$ || e.host === Z.cardsHost) {
-                  var d = Bm(),
-                    t = (0, R.F5)(d.getState())
-                  t && (e.headers['x-twitter-client-language'] = (0, E.o)(t))
+              })(op, dp),
+              (function (e) {
+                return function (n, d) {
+                  if (n.host === w.F$ || n.host === Z.cardsHost) {
+                    var t = e(),
+                      a = (0, R.F5)(t.getState())
+                    a && (n.headers['x-twitter-client-language'] = (0, E.o)(a))
+                  }
+                  return d(n)
                 }
-                return n(e)
-              }),
+              })(op),
               q(vm),
               ((Zm = function Zm() {
-                return np.isTrue('responsive_web_zipkin_api_requests_enabled')
-              }),
-              (Im = function Im() {
-                return np.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
+                return $m.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
               }),
               function (e, n) {
-                if (e.host === w.F$ && Zm() && Im().includes(e.path)) {
+                if (e.host === w.F$ && Zm().includes(e.path)) {
                   var d = (0, M.Z)((0, M.Z)({}, e.headers), {}, { 'x-b3-flags': '1' })
                   return n((0, M.Z)((0, M.Z)({}, e), {}, { headers: d }))
                 }
@@ -28076,9 +28072,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                 return n(e)
               },
-              rp.filter,
+              tp.filter,
               ((Rm = function Rm() {
-                return 'host' === np.getStringValue('network_layer_503_backoff_mode')
+                return 'host' === $m.getStringValue('network_layer_503_backoff_mode')
               }),
               function (e, n) {
                 if (!Rm()) return n(e)
@@ -28108,16 +28104,16 @@ window.__SCRIPTS_LOADED__.vendor &&
                     r = a + n.path
                   return d((0, M.Z)((0, M.Z)({}, n), {}, { host: a, uri: r }))
                 }
-              })(lp),
+              })(rp),
               ((_m = {
                 isApiTransitionEnabled: function isApiTransitionEnabled() {
-                  return np.isTrue('responsive_web_api_transition_enabled')
+                  return $m.isTrue('responsive_web_api_transition_enabled')
                 },
                 getWindowLocationHost: function getWindowLocationHost() {
-                  return ip
+                  return ap
                 },
                 isLocalDevelopment: function isLocalDevelopment() {
-                  return ip.indexOf('localhost') > -1
+                  return ap.indexOf('localhost') > -1
                 },
               }),
               (km = _m.getWindowLocationHost),
@@ -28167,19 +28163,19 @@ window.__SCRIPTS_LOADED__.vendor &&
                   }
                   return d((0, M.Z)((0, M.Z)({}, n), {}, { headers: (0, M.Z)((0, M.Z)({}, n.headers), t) }))
                 }
-              })(np),
+              })($m),
             ],
           }),
-          sp = ft(up, wm),
-          cp = new g(up, sp),
-          bp = (function (e) {
+          lp = ft(ip, wm),
+          up = new g(ip, lp),
+          sp = (function (e) {
             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               d = (0, Xc.Z)(),
               t = d.clientAppId,
               a = d.clientName
             return ub((0, M.Z)({ clientName: a, eventTransformer: bb(t), transport: sb(e), unloadTransport: cb(e) }, n))
-          })(cp),
-          mp = gt.createElement(
+          })(up),
+          cp = gt.createElement(
             wt.rs,
             null,
             [
@@ -28931,14 +28927,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                   gt.createElement(wt.AW, { component: dl, exact: !0, key: '/home', path: '/home' }),
                   gt.createElement(wt.AW, { exact: !0, key: 'moment', path: '/i/moments/'.concat(Ia.wi), render: sl }),
                   (0, Ss.ZP)(),
-                  ((ep = '/twitterblue/error'),
+                  ((Jm = '/twitterblue/error'),
                   [
                     gt.createElement(Za.Z, {
                       component: ws,
                       exact: !0,
-                      key: ep,
+                      key: Jm,
                       modalSize: 'dynamic',
-                      path: ep,
+                      path: Jm,
                       topOfScreen: !0,
                     }),
                   ]),
@@ -29338,57 +29334,57 @@ window.__SCRIPTS_LOADED__.vendor &&
                       path: '/'.concat(Ia.qX, '/status/').concat(Ia.i_, '/history'),
                     }),
                   ],
-                  ((zm = '/i/oauth_landing'),
-                  (Vm = '/i/flow/'),
-                  (Wm = '/i/bounce/'),
-                  (Gm = '/i/onboarding/verify'),
-                  (qm = '/i/ocf_background'),
-                  (Km = '/i/ocf_arkose_challenge'),
-                  (Qm = '/i/safety/report_story_start'),
-                  (Ym = '/i/flow/signup'),
-                  (Xm = '/i/flow/login'),
-                  (Jm = '/i/flow/convert_to_professional'),
-                  ($m = '/i/flow/make_more_connections'),
+                  ((Hm = '/i/oauth_landing'),
+                  (jm = '/i/flow/'),
+                  (zm = '/i/bounce/'),
+                  (Vm = '/i/onboarding/verify'),
+                  (Wm = '/i/ocf_background'),
+                  (Gm = '/i/ocf_arkose_challenge'),
+                  (qm = '/i/safety/report_story_start'),
+                  (Km = '/i/flow/signup'),
+                  (Qm = '/i/flow/login'),
+                  (Ym = '/i/flow/convert_to_professional'),
+                  (Xm = '/i/flow/make_more_connections'),
                   [
-                    gt.createElement(wt.AW, { component: yl, exact: !0, key: qm, path: qm }),
-                    gt.createElement(wt.AW, { component: Nl, exact: !0, key: Km, path: Km }),
-                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: kl, exact: !0, key: zm, path: zm }),
-                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: _l, exact: !0, key: Gm, path: Gm }),
+                    gt.createElement(wt.AW, { component: yl, exact: !0, key: Wm, path: Wm }),
+                    gt.createElement(wt.AW, { component: Nl, exact: !0, key: Gm, path: Gm }),
+                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: kl, exact: !0, key: Hm, path: Hm }),
+                    gt.createElement(Za.Z, { clickMaskToClose: !1, component: _l, exact: !0, key: Vm, path: Vm }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: El,
-                      defaultBackgroundPath: qm,
+                      defaultBackgroundPath: Wm,
                       exact: !0,
-                      key: Ym,
-                      path: Ym,
+                      key: Km,
+                      path: Km,
                       restoreBackgroundFromPreviousPath: !1,
                     }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: Rl,
-                      defaultBackgroundPath: qm,
+                      defaultBackgroundPath: Wm,
                       exact: !0,
-                      key: Xm,
-                      path: Xm,
+                      key: Qm,
+                      path: Qm,
                     }),
-                    gt.createElement(Za.Z, { component: Pl, defaultBackgroundPath: qm, exact: !0, key: Qm, path: Qm }),
-                    gt.createElement(Za.Z, { component: Zl, defaultBackgroundPath: qm, exact: !0, key: Jm, path: Jm }),
-                    gt.createElement(Za.Z, { component: Il, defaultBackgroundPath: qm, exact: !0, key: $m, path: $m }),
+                    gt.createElement(Za.Z, { component: Pl, defaultBackgroundPath: Wm, exact: !0, key: qm, path: qm }),
+                    gt.createElement(Za.Z, { component: Zl, defaultBackgroundPath: Wm, exact: !0, key: Ym, path: Ym }),
+                    gt.createElement(Za.Z, { component: Il, defaultBackgroundPath: Wm, exact: !0, key: Xm, path: Xm }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: Cl,
-                      defaultBackgroundPath: qm,
+                      defaultBackgroundPath: Wm,
                       exact: !1,
-                      key: Vm,
-                      path: Vm,
+                      key: jm,
+                      path: jm,
                     }),
                     gt.createElement(Za.Z, {
                       clickMaskToClose: !1,
                       component: xl,
-                      defaultBackgroundPath: qm,
+                      defaultBackgroundPath: Wm,
                       exact: !1,
-                      key: Wm,
-                      path: Wm,
+                      key: zm,
+                      path: zm,
                     }),
                   ]),
                   [
@@ -29440,15 +29436,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                     key: '/:screenName/moments',
                     path: '/'.concat(Ia.qX, '/moments'),
                   }),
-                  ((Nm = '/i/lists/'.concat(Ia.Tk)),
-                  (Om = '/i/lists/'.concat(Ia.Tk, '/info')),
-                  (Lm = '/i/lists/'.concat(Ia.Tk, '/subscribers')),
-                  (Fm = '/i/lists/'.concat(Ia.Tk, '/followers')),
-                  (Um = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF)),
-                  (Hm = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF, '/').concat(Ia.fH)),
-                  (jm = '/'.concat(Ia.qX, '/lists/pinned/edit')),
+                  ((Bm = '/i/lists/'.concat(Ia.Tk)),
+                  (xm = '/i/lists/'.concat(Ia.Tk, '/info')),
+                  (Nm = '/i/lists/'.concat(Ia.Tk, '/subscribers')),
+                  (Om = '/i/lists/'.concat(Ia.Tk, '/followers')),
+                  (Lm = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF)),
+                  (Fm = '/'.concat(Ia.qX, '/lists/').concat(Ia.oF, '/').concat(Ia.fH)),
+                  (Um = '/'.concat(Ia.qX, '/lists/pinned/edit')),
                   [
-                    gt.createElement(Za.Z, { component: Us, exact: !0, key: jm, path: jm }),
+                    gt.createElement(Za.Z, { component: Us, exact: !0, key: Um, path: Um }),
                     gt.createElement(ka.Z, {
                       exact: !0,
                       from: '/lists/add_member',
@@ -29461,7 +29457,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/lists/create',
                       to: '/i/lists/create',
                     }),
-                    gt.createElement(ka.Z, { exact: !0, from: Lm, key: Lm, to: Fm }),
+                    gt.createElement(ka.Z, { exact: !0, from: Nm, key: Nm, to: Om }),
                     gt.createElement(Za.Z, {
                       component: Hs,
                       exact: !0,
@@ -29474,15 +29470,15 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/i/lists/create',
                       path: '/i/lists/create',
                     }),
-                    gt.createElement(Za.Z, { component: zs, exact: !0, key: Om, path: Om }),
+                    gt.createElement(Za.Z, { component: zs, exact: !0, key: xm, path: xm }),
                     gt.createElement(Za.Z, {
                       component: Ws,
                       exact: !0,
                       key: '/i/lists/'.concat(Ia.Tk, '/members/:type'),
                       path: '/i/lists/'.concat(Ia.Tk, '/members/(suggested)?'),
                     }),
-                    gt.createElement(Za.Z, { component: Vs, exact: !0, key: Fm, path: Fm }),
-                    gt.createElement(wt.AW, { component: qs, key: Nm, path: Nm }),
+                    gt.createElement(Za.Z, { component: Vs, exact: !0, key: Om, path: Om }),
+                    gt.createElement(wt.AW, { component: qs, key: Bm, path: Bm }),
                     gt.createElement(wt.AW, {
                       component: Ks,
                       exact: !0,
@@ -29495,8 +29491,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                       key: '/i/lists/suggested',
                       path: '/i/lists/suggested',
                     }),
-                    gt.createElement(wt.AW, { component: Qs, key: Hm, path: Hm }),
-                    gt.createElement(wt.AW, { component: Qs, exact: !0, key: Um, path: Um }),
+                    gt.createElement(wt.AW, { component: Qs, key: Fm, path: Fm }),
+                    gt.createElement(wt.AW, { component: Qs, exact: !0, key: Lm, path: Lm }),
                   ]),
                   [
                     gt.createElement(wt.AW, {
@@ -29625,11 +29621,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             ),
           )
         Mm.then(function () {
-          Jc({ api: cp, behavioralEventAllowlist: tp, featureSwitches: np }),
-            Me.S1(cp),
+          Jc({ api: up, behavioralEventAllowlist: np, featureSwitches: $m }),
+            Me.S1(up),
             (0, ye.u)({
-              httpClient: cp.apiClient.client,
-              globalTraceSampleRate: Number(np.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
+              httpClient: up.apiClient.client,
+              globalTraceSampleRate: Number($m.getValue('responsive_web_tracer_global_trace_sample_rate', 0)) || 0,
             }),
             We(),
             wm.dispatch((0, Od.ri)()).then(function () {
@@ -29642,10 +29638,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                     var d = (0, Od.Sl)(n.getState())
                     n.dispatch((0, Pe.ZP)({ useLatest: d }).fetchInitial())
                   }
-                })(np, wm)
+                })($m, wm)
             })
-          var e = new he(cp, 3e5)
-          np.isTrue('responsive_web_send_cookies_metadata_enabled') &&
+          var e = new he(up, 3e5)
+          $m.isTrue('responsive_web_send_cookies_metadata_enabled') &&
             (function (e) {
               var n = (0, C.$t)(),
                 d = (0, de.s)().cookies.fetchedTime
@@ -29655,7 +29651,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   { description: ''.concat(n, ':cookiesMetadata:load'), product: n, event_value: Date.now() - d },
                 ]),
               })['catch'](function () {})
-            })(cp)
+            })(up)
           var n
           ;(n = wm.dispatch),
             window.apkInterface &&
@@ -29706,13 +29702,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                     },
                   )
               }, t)
-            })(0, bp, np),
+            })(0, sp, $m),
             vm && Ke.m.initialize(te.Yh, vm)
           var t,
             r = [
               !1,
               le(wm),
-              (0, ue.ZP)(np),
+              (0, ue.ZP)($m),
               ae(e),
               void 0 === Dm &&
                 se({
@@ -29720,7 +29716,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                     env: a.OB,
                     sha: a.MK,
                     splunkIndexPrefix: (0, C.SG)(),
-                    transport: en(cp),
+                    transport: en(up),
                     sourceExtras: function sourceExtras() {
                       var e = window.navigator.userAgent || '',
                         n = (function (e) {
@@ -29737,7 +29733,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               t(e.reason, { extra: { unhandledPromiseRejection: !0 }, tags: { unhandledPromiseRejection: !0 } })
             })
           var o =
-            fe.U2(np) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? fe.rY.dark : fe.rY['default'])
+            fe.U2($m) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? fe.rY.dark : fe.rY['default'])
           ;(function (e) {
             var n = Me.P_()
             return Promise.resolve().then(function () {
@@ -29781,18 +29777,18 @@ window.__SCRIPTS_LOADED__.vendor &&
                             })
                         : Promise.resolve(null)
                     }
-                  })(cp),
+                  })(up),
                 ),
                 bm
                   ? sm({
                       node: bm,
                       isRTL: mm,
-                      featureSwitches: np,
-                      userClaims: dp,
+                      featureSwitches: $m,
+                      userClaims: ep,
                       store: wm,
-                      relayEnvironment: sp,
+                      relayEnvironment: lp,
                       themePaletteName: o,
-                      routes: mp,
+                      routes: cp,
                     })
                   : null
               )
@@ -29807,7 +29803,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                         n = wm.dispatch((0, X.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
                       Am &&
                         e &&
-                        cp.Ocf.setUserPwaLaunched({ userId: e })
+                        up.Ocf.setUserPwaLaunched({ userId: e })
                           ['catch'](function (e) {
                             return (0, Vd.Vm)(wm.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
                           })
@@ -29848,32 +29844,32 @@ window.__SCRIPTS_LOADED__.vendor &&
                               t.dispatch(e.updatePushNotificationsPermissionState()),
                             ne.Z.isTwitterLite() && ne.Z.isFirstLaunch() && t.dispatch(e.pushSubscribe())
                         })
-                  })({ featureSwitches: np, store: wm, isLoggedIn: Am }),
-                  (e = np.getNumberValue('scribe_api_error_sample_size') / 1e4),
-                  (n = np.getNumberValue('scribe_api_sample_size') / 1e4),
-                  (t = np.getNumberValue('scribe_cdn_sample_size') / 1e4),
-                  (a = np.getNumberValue('scribe_web_nav_sample_size') / 1e4),
-                  (r = np.getArrayValue('scribe_cdn_host_list')),
+                  })({ featureSwitches: $m, store: wm, isLoggedIn: Am }),
+                  (e = $m.getNumberValue('scribe_api_error_sample_size') / 1e4),
+                  (n = $m.getNumberValue('scribe_api_sample_size') / 1e4),
+                  (t = $m.getNumberValue('scribe_cdn_sample_size') / 1e4),
+                  (a = $m.getNumberValue('scribe_web_nav_sample_size') / 1e4),
+                  (r = $m.getArrayValue('scribe_cdn_host_list')),
                   d
                     .e('bundle.NetworkInstrument')
                     .then(d.bind(d, 188170))
                     .then(function (d) {
-                      var o = new (0, d['default'])(bp, {
+                      var o = new (0, d['default'])(sp, {
                         apiErrorSampleSize: e,
                         apiSampleSize: n,
                         cdnSampleSize: t,
                         navSampleSize: a,
                         cdnHostList: r,
                       })
-                      rp.addHandler(o.scribeRequest)
+                      tp.addHandler(o.scribeRequest)
                     }),
                   (o = {
                     store: wm,
-                    api: cp,
-                    featureSwitches: np,
+                    api: up,
+                    featureSwitches: $m,
                     hasMultiAccountCookie: hm,
-                    scribe: bp,
-                    trafficRewriter: lp,
+                    scribe: sp,
+                    trafficRewriter: rp,
                   }),
                   (0, Wt.ZP)().then(function (e) {
                     for (var n = 0, d = Object.keys(pb()); n < d.length; n++) {
@@ -29890,14 +29886,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                               (0, K.ZP)(e)
                           }),
                         gb(e))
-                  })(cp),
+                  })(up),
                   (function (e, n, d) {
                     setTimeout(function () {
                       ;(0, Qc.Z)().then(function (t) {
                         t.initBranchSdk(e, n, d)
                       })
                     }, 0)
-                  })(np, cp, wm),
+                  })($m, up, wm),
                   setTimeout(function () {
                     Pt().emoji.then(function () {
                       return d
@@ -39029,23 +39025,32 @@ window.__SCRIPTS_LOADED__.vendor &&
       512500: function _(e, n, d) {
         'use strict'
         d.d(n, {
-          f: function f() {
-            return r
+          fr: function fr() {
+            return l
           },
-          y: function y() {
-            return o
+          oO: function oO() {
+            return u
+          },
+          yu: function yu() {
+            return s
           },
         })
         var t,
           a = d(256666),
-          r = (d(22144), Object.freeze({ HOME: 'home', HOME_LATEST: 'home_latest', LIST: 'list' })),
-          o = Object.freeze(
-            ((t = {}),
-            (0, a.Z)(t, r.HOME, 'home'),
-            (0, a.Z)(t, r.HOME_LATEST, 'latest'),
-            (0, a.Z)(t, r.LIST, 'pinned_list'),
-            t),
-          )
+          r = d(133028),
+          o = (d(22144), Object.freeze({ HOME: 'home', HOME_LATEST: 'home_latest' })),
+          i = Object.freeze({ LIST: 'list' }),
+          l = Object.freeze((0, r.Z)((0, r.Z)({}, o), i)),
+          u = Object.freeze({ type: l.HOME }),
+          s =
+            (Object.freeze({ type: l.HOME_LATEST }),
+            Object.freeze(
+              ((t = {}),
+              (0, a.Z)(t, l.HOME, 'home'),
+              (0, a.Z)(t, l.HOME_LATEST, 'latest'),
+              (0, a.Z)(t, l.LIST, 'pinned_list'),
+              t),
+            ))
       },
       247984: function _(e, n, d) {
         'use strict'
@@ -49347,7 +49352,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         var t = d(256666),
           a = d(133028),
           r = (d(22144), d(512500)),
-          o = { type: r.f.HOME },
+          o = { type: r.fr.HOME },
           i = 'rweb.homeTimelineBehavior',
           l = Object.freeze({ selectedTimeline: o, useLatest: !1 })
         var u = d(526853),
@@ -49366,7 +49371,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           D = function D(e) {
             var n = S(e)
-            return (0, c.ZP)({ useLatest: n === r.f.HOME_LATEST }).selectTopUnreadCount(e) > 0
+            return (0, c.ZP)({ useLatest: n === r.fr.HOME_LATEST }).selectTopUnreadCount(e) > 0
           },
           S = function S(e) {
             return e.homeTimeline.selectedTimeline
@@ -49419,7 +49424,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 n({ payload: e, type: b.SET_SETTINGS }),
                 (function (e, n) {
                   return e.set(i, n)
-                })(l, { selectedTimeline: s.type === r.f.LIST ? { type: r.f.HOME } : s, useLatest: c })
+                })(l, { selectedTimeline: s.type === r.fr.LIST ? r.oO : s, useLatest: c })
               )
             }
           }
@@ -57091,7 +57096,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
         })
         var t = d(968079),
-          a = (d(443430), d(818178), d(995342), d(358188), d(136728), d(743108), d(715729)),
+          a = (d(443430), d(818178), d(995342), d(358188), d(136728), d(743108), d(467321), d(715729)),
           r = d(211469),
           o = d(85586),
           i = d(142938),
@@ -57219,10 +57224,14 @@ window.__SCRIPTS_LOADED__.vendor &&
             return n
               ? e.filter(function (e) {
                   if (e.type === s.ZP.TimelineCursor) return e
-                  if (e.type === s.ZP.Tweet) {
-                    var d = e.content
-                    if (!n.has(d.id)) return e
-                  }
+                  if (e.type === s.ZP.Tweet && !n.has(e.content.id)) return e
+                  if (
+                    e.type === s.ZP.TimelineModule &&
+                    !e.content.items.some(function (e) {
+                      return e.type === s.ZP.Tweet && n.has(e.content.id)
+                    })
+                  )
+                    return e
                 })
               : e
           },
@@ -80362,6 +80371,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   dpaCtaEnabled: !1,
                   dpaPlaceholderMediaKeys: !1,
                   explorerAdsEnabled: !1,
+                  fosnrSoftInterventionsEnabled: !1,
                   withEditCallout: !1,
                   withEdgeToEdgeContent: !1,
                   withEdgeToEdgeTweetAnatomy: !1,

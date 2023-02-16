@@ -2246,7 +2246,7 @@
         a('c75b7fb4', 'Not Helpful'),
         a('df587b98', 'Note ID'),
         a('h201bdc8', 'Note Author'),
-        a('h74b96b0', 'Note submitted'),
+        a('h74b96b0', 'Note submitted '),
         a('ge25848a', 'Current Status'),
         a('fe4fd310', 'Helpful'),
         a('ce8b505e', 'Not helpful'),
@@ -2444,6 +2444,7 @@
           'Twitter doesn’t write, rate or moderate notes (unless they break the Twitter rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed.',
         ),
         a('cc720e6a', 'Community Notes is built on data transparency'),
+        a('j2fcd33a', 'Data includes contributions up until'),
         a(
           'd4a6b322',
           'All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you.',
@@ -3595,12 +3596,12 @@
         ),
         a('j8bf07ac', 'Protect your Tweets?'),
         a('ca8034b4', 'This will make them visible only to your Twitter followers.'),
-        a('c5d4192a', 'Protect'),
-        a(
-          'j7fc0afc',
-          'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-        )
-      a('f527b322', 'Protect my account'),
+        a('c5d4192a', 'Protect')
+      a(
+        'j7fc0afc',
+        'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
+      ),
+        a('f527b322', 'Protect my account'),
         a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
         a('ea339390', 'Only people you follow can tag you'),
@@ -4837,9 +4838,12 @@
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
-        a('e873f0ae', 'Apply for Super Follows'),
-        a('gd115e64', 'Apply for Subscriptions')
-      a('f095a24a', 'Tell us more about who you are, what you love, and why your followers keep coming back for more.'),
+        a('e873f0ae', 'Apply for Super Follows')
+      a('gd115e64', 'Apply for Subscriptions'),
+        a(
+          'f095a24a',
+          'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
+        ),
         a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
@@ -6025,10 +6029,7 @@
           'a078ff70',
           'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
         ),
-        a('j88f27d8', 'Relevant people'),
-        a('f0c37ddb', function (e) {
-          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
-        })
+        a('j88f27d8', 'Relevant people')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6048,9 +6049,12 @@
           c(e, t)
         )
       }
-      a('a98f3d0f', function (e) {
-        return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+      a('f0c37ddb', function (e) {
+        return e.fullName + ' on Twitter: "' + e.tweetText + '"'
       }),
+        a('a98f3d0f', function (e) {
+          return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+        }),
         a('j3da85c1', function (e) {
           return 'View @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
         }),
@@ -6994,6 +6998,7 @@
           'ba047f76',
           'Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month.',
         ),
+        a('i4dccc18', 'Billing'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
         a('cd30afed', 'click here'),
@@ -7328,10 +7333,10 @@
           'ce2e487c',
           'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
         ),
-        a('fdbd90a6', 'Yes, change all columns'),
-        a('h8affe68', 'No, only new columns'),
-        a('f06885b6', 'Column media size options')
-      a('e4bab2d0', 'Column width options'),
+        a('fdbd90a6', 'Yes, change all columns')
+      a('h8affe68', 'No, only new columns'),
+        a('f06885b6', 'Column media size options'),
+        a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
         a('ee7765ba', 'Pick Emoji'),
@@ -9291,12 +9296,6 @@
               key: 'g19fcc5b',
               get: function get() {
                 return ['File no. ' + this.props.fileIndex + ' of ' + this.props.totalFiles]
-              },
-            },
-            {
-              key: 'g812cfc3',
-              get: function get() {
-                return ['Data includes contributions up until ' + this.props.date]
               },
             },
             {
