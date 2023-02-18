@@ -1221,7 +1221,6 @@
         a('a407814e', 'Last edited'),
         a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
-        a('f1824804', 'Appeal this warning'),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -1308,6 +1307,7 @@
         a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
         a('e639775e', 'Try undoing your Retweet again in a minute.'),
         a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
+        a('f1824804', 'Appeal this warning'),
         a('f755f710', 'Got It'),
         a('d0270ae2', 'This Tweet is hidden'),
         a('ba352986', 'You can’t reply … yet'),
@@ -2424,6 +2424,7 @@
         a('g1888dc2', 'Never'),
         a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
         a('fa54a75e', 'Your notification settings have been saved.'),
+        a('dc11636c', 'Languages you speak'),
         a(
           'd4945e44',
           'Community Notes is a program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
@@ -3595,12 +3596,12 @@
           'When selected, your Tweets and other account information are only visible to people who follow you.',
         ),
         a('j8bf07ac', 'Protect your Tweets?'),
-        a('ca8034b4', 'This will make them visible only to your Twitter followers.'),
-        a('c5d4192a', 'Protect')
-      a(
-        'j7fc0afc',
-        'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-      ),
+        a('ca8034b4', 'This will make them visible only to your Twitter followers.')
+      a('c5d4192a', 'Protect'),
+        a(
+          'j7fc0afc',
+          'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
+        ),
         a('f527b322', 'Protect my account'),
         a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
@@ -4541,6 +4542,9 @@
           'Diamonds are accumulated by receiving coins on eligible Tweets. Money earned from Diamonds gets added to your estimated earnings.',
         ),
         a('dd657212', 'View Tweet'),
+        a('jfd93b71', function (e) {
+          return e.count + ' coin' + n(e.count, '', 's')
+        }),
         a('e70a07b2', 'Anonymous'),
         a('c76972f0', 'Since last payout'),
         a('c219a552', 'All time'),
@@ -4836,10 +4840,10 @@
         a('d4d74bb4', 'Patreon'),
         a('ca07aa46', 'YouTube'),
         a('c6d71a04', 'TikTok'),
-        a('c2680406', 'Snapchat'),
-        a('d8552c1a', 'Twitch'),
-        a('e873f0ae', 'Apply for Super Follows')
-      a('gd115e64', 'Apply for Subscriptions'),
+        a('c2680406', 'Snapchat')
+      a('d8552c1a', 'Twitch'),
+        a('e873f0ae', 'Apply for Super Follows'),
+        a('gd115e64', 'Apply for Subscriptions'),
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
@@ -4914,8 +4918,10 @@
           'g2a6f160',
           'Double-check and confirm your Subscription price. You won’t be able to come back and change the price after you set it.',
         ),
+        a('i68a1507', 'Note: you won’t be able to change it after'),
         a('ic9124b0', 'Choose what your Super Followers pay'),
         a('df057690', 'Choose what your Subscribers pay'),
+        a('d5737f0e', 'Monthly Subscription'),
         a('g5923869', function (e) {
           return e.price + ' per month'
         }),
@@ -4925,6 +4931,9 @@
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
         a('h0c5405c', 'Regular posting and interacting with Subscribers'),
+        a('f2d2153d', function (e) {
+          return 'Most creators charge ' + e.price + ' but you can choose any price you want'
+        }),
         a('e1453e45', 'Learn more'),
         a('f1cb36b8', 'Payout setup'),
         a('e20f6662', 'You’re all set!'),
@@ -6019,17 +6028,7 @@
         }),
         a('ace6e600', 'No Tweet reactions yet'),
         a('f92e3842', 'When someone (even you) reacts to this Tweet, it’ll show up here.'),
-        a('ea831526', 'Tweet with replies'),
-        a('a90e1e67', function (e) {
-          return 'Tweet' + e.noun
-        }),
-        a('c2ed3314', 'Community Tweet'),
-        a('e06b864c', 'It looks like you’re enjoying this conversation'),
-        a(
-          'a078ff70',
-          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
-        ),
-        a('j88f27d8', 'Relevant people')
+        a('h1c5d6aa', 'Sent by you')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6049,9 +6048,24 @@
           c(e, t)
         )
       }
-      a('f0c37ddb', function (e) {
-        return e.fullName + ' on Twitter: "' + e.tweetText + '"'
-      }),
+      a('h6d45054', 'Sent by all'),
+        a('jdc3a3cb', function (e) {
+          return e.count + ' coin' + n(e.count, '', 's') + ' (only visible to you)'
+        }),
+        a('ea831526', 'Tweet with replies'),
+        a('a90e1e67', function (e) {
+          return 'Tweet' + e.noun
+        }),
+        a('c2ed3314', 'Community Tweet'),
+        a('e06b864c', 'It looks like you’re enjoying this conversation'),
+        a(
+          'a078ff70',
+          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
+        ),
+        a('j88f27d8', 'Relevant people'),
+        a('f0c37ddb', function (e) {
+          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
+        }),
         a('a98f3d0f', function (e) {
           return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
         }),
@@ -6449,7 +6463,9 @@
           'dda7478c',
           'Coins allow you to support creators who Tweet great content. Unused coins are kept in your balance.',
         ),
-        a('ca673486', 'bonus coins'),
+        a('aff3c33f', function (e) {
+          return e.count + ' bonus coin' + n(e.count, '', 's') + ' included.'
+        }),
         a('f89dfa74', 'Best Value'),
         a('e2beba5e', 'Most Popular'),
         a('e5461d10', 'Buy coins'),
@@ -7012,7 +7028,7 @@
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
-        a('c15531af', 'Learn more'),
+        a('f1dd3ac3', 'Learn more'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7322,8 +7338,8 @@
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
-        a('habced9e', 'to restore column.'),
-        a('g4fcb4f8', 'Column restored.'),
+        a('habced9e', 'to restore column.')
+      a('g4fcb4f8', 'Column restored.'),
         a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
         a('h098a550', 'Default column width'),
@@ -7333,8 +7349,8 @@
           'ce2e487c',
           'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
         ),
-        a('fdbd90a6', 'Yes, change all columns')
-      a('h8affe68', 'No, only new columns'),
+        a('fdbd90a6', 'Yes, change all columns'),
+        a('h8affe68', 'No, only new columns'),
         a('f06885b6', 'Column media size options'),
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
@@ -10227,6 +10243,15 @@
               },
             },
             {
+              key: 'c5381f09',
+              get: function get() {
+                return [
+                  'Double-check and confirm your Subscription price. ',
+                  ' while Subscriptions is in testing period.',
+                ]
+              },
+            },
+            {
               key: 'geee69df',
               get: function get() {
                 return [
@@ -10808,10 +10833,11 @@
               },
             },
             {
-              key: 'd08f9ef3',
+              key: 'g5ecd34b',
               get: function get() {
                 return [
-                  'Verified Organizations is $1,000 per month. Each additional affiliated account is $50 per handle per month. ',
+                  'Verified Organizations is ',
+                  ' per month. Each additional affiliated account is $50 per handle per month. ',
                 ]
               },
             },
