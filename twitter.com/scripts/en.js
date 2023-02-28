@@ -77,7 +77,6 @@
         a('h1cbdd30', 'Please refresh the page and try again.'),
         a('a5077d3e', 'Refresh'),
         a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
-        a('afcb89e4', 'There was an error logging you out. Please try again in a few moments.'),
         a('fa9adac1', function (e) {
           return 'Search for "' + e.query + '"'
         }),
@@ -372,6 +371,7 @@
         a('i1d35d74', 'TweetDeck'),
         a('c9d41314', 'Twitter for Professionals'),
         a('ff1c5e1a', 'Professional Home'),
+        a('if853d5a', 'Verified Organization'),
         a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
         a('d9ef2842', 'Unread items'),
         a('dc931afc', 'Communities (New items)'),
@@ -449,7 +449,6 @@
         a('ed90d9ac', 'Load new Tweets'),
         a('cdb53d7a', 'Mentions'),
         a('d7b8ebaa', 'Likes'),
-        a('c106055a', 'Moment Maker'),
         a('eee2ed92', 'Go to user…'),
         a('ee5ccf3e', 'Display settings'),
         a('ib0cb828', 'React with Hmm'),
@@ -1146,9 +1145,9 @@
         a('cabfdd06', 'Tomorrow'),
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
-        })
-      a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending'),
+        }),
+        a('d9b417c4', 'Set as not interested')
+      a('c29d6806', 'Stop recommending'),
         a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
@@ -1221,6 +1220,7 @@
         a('a407814e', 'Last edited'),
         a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
+        a('af5cd00e', 'Find out more'),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -1291,7 +1291,6 @@
         a('gc45a90a', 'Expand this prompt'),
         a('j8eff20a', 'Help keep Twitter a place for reliable info. Find out more before liking this Tweet.'),
         a('ce6df39e', 'Help keep Twitter a place for reliable info. Find out more before sharing this Tweet.'),
-        a('af5cd00e', 'Find out more'),
         a('e29c651e', 'Thanks for learning more'),
         a('b141cbf0', 'You have been blocked from liking this user’s Tweets at their request.'),
         a('e902fd9e', 'Something went wrong. Try liking your Tweet again in a minute.'),
@@ -2343,9 +2342,9 @@
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
-        a('b9793c9a', 'You haven’t written any notes yet')
-      a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('b9793c9a', 'You haven’t written any notes yet'),
+        a('bed66f92', 'Here’s how to start:')
+      a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
@@ -3596,12 +3595,12 @@
           'When selected, your Tweets and other account information are only visible to people who follow you.',
         ),
         a('j8bf07ac', 'Protect your Tweets?'),
-        a('ca8034b4', 'This will make them visible only to your Twitter followers.')
-      a('c5d4192a', 'Protect'),
-        a(
-          'j7fc0afc',
-          'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-        ),
+        a('ca8034b4', 'This will make them visible only to your Twitter followers.'),
+        a('c5d4192a', 'Protect')
+      a(
+        'j7fc0afc',
+        'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
+      ),
         a('f527b322', 'Protect my account'),
         a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
@@ -4454,10 +4453,10 @@
         a('j3404888', 'We are reviewing your account.'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
-        a('fecbf034', 'Blue for Business Subscriber'),
+        a('fdc10b7e', 'Verified Organizations Subscriber'),
         a(
-          'gd910038',
-          'You are receiving Twitter Blue because your company is a participant in Blue for Business. Contact your company for more details.',
+          'cad64506',
+          'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
@@ -4473,6 +4472,7 @@
         a('a5760c62', 'Upgrade available'),
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('be103b84', 'Active'),
+        a('ace43720', 'Expiring soon'),
         a('cb165528', 'News features and settings'),
         a('b16486e8', 'A better reading experience on and off Twitter.'),
         a('b62d6e4c', 'Reader'),
@@ -4480,21 +4480,6 @@
           'g88d2040',
           'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting the book button from within any Tweet in a thread.',
         ),
-        a('i65802d0', 'Ad-free Articles'),
-        a(
-          'd674b3f2',
-          'We partner with US-based publishers so you Don’t see ads on their sites when coming from Twitter.',
-        ),
-        a(
-          'bce24a7c',
-          'If a Twitter Blue Publisher charges readers for content, you’ll need to subscribe directly to their publication to read stories behind their paywall.',
-        ),
-        a('hd885ae0', 'See your impact'),
-        a(
-          'bd3be83a',
-          'Every time you read ad-free with Twitter Blue, a portion of your membership fee goes directly to the partner sites you read.',
-        ),
-        a('je4ccd3a', 'Ad-free Articles Help Center'),
         a('g7eb2d40', 'Early Access'),
         a('ce5d8470', 'Twitter Blue Labs gives members early access to some of Twitter’s newest features.'),
         a('daa05768', 'Longer Tweets'),
@@ -4534,16 +4519,16 @@
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
-        a('b2528e4a', 'You have no new coins at this time.'),
+        a('i4c3b046', 'You have no new Coins at this time.'),
         a('ca516a66', 'See all activity'),
         a('ee9ea930', 'Diamonds'),
         a(
-          'ef805bb8',
-          'Diamonds are accumulated by receiving coins on eligible Tweets. Money earned from Diamonds gets added to your estimated earnings.',
+          'f0451248',
+          'Diamonds are accumulated by receiving Coins on eligible Tweets. Money earned from Diamonds gets added to your estimated earnings.',
         ),
         a('dd657212', 'View Tweet'),
-        a('jfd93b71', function (e) {
-          return e.count + ' coin' + n(e.count, '', 's')
+        a('fbb7764b', function (e) {
+          return e.count + ' Coin' + n(e.count, '', 's')
         }),
         a('e70a07b2', 'Anonymous'),
         a('c76972f0', 'Since last payout'),
@@ -4552,8 +4537,8 @@
         a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
         a('fbbfe8aa', 'Deactivate Coins'),
         a(
-          'i886e71e',
-          'By deactivating, you’ll be removed from the Coins program and no longer be eligible to receive coins.',
+          'e4f29140',
+          'By deactivating, you’ll be removed from the Coins program and no longer be eligible to receive Coins.',
         ),
         a('e58e85d2', 'Continue to deactivation'),
         a('be8e87b4', 'Deactivate Coins?'),
@@ -4562,7 +4547,7 @@
         a('a22f6808', 'All activity'),
         a('g1b8020c', 'Last 30 days'),
         a('jb13b840', 'All-time'),
-        a('d2a9529a', 'You have no new coins in the last 30 days.'),
+        a('b4f24360', 'You have no new Coins in the last 30 days.'),
         a('ff9ed474', 'Total earnings'),
         a('d59dbf8a', 'Overview'),
         a('g652fc4c', 'You have no payout history this month.'),
@@ -4840,8 +4825,8 @@
         a('d4d74bb4', 'Patreon'),
         a('ca07aa46', 'YouTube'),
         a('c6d71a04', 'TikTok'),
-        a('c2680406', 'Snapchat')
-      a('d8552c1a', 'Twitch'),
+        a('c2680406', 'Snapchat'),
+        a('d8552c1a', 'Twitch'),
         a('e873f0ae', 'Apply for Super Follows'),
         a('gd115e64', 'Apply for Subscriptions'),
         a(
@@ -4849,8 +4834,8 @@
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
         ),
         a('c144fa52', 'What kind of content do you create? Select all that apply.'),
-        a('f1bf337e', 'Select categories'),
-        a('d4062c9a', 'Where do you share content? Select all that apply.'),
+        a('f1bf337e', 'Select categories')
+      a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
@@ -4999,16 +4984,16 @@
         a('ecdbece0', 'You have been successfully enrolled into the Coins program.'),
         a('db3f0bbe', 'Helping creators earn money from their content.'),
         a('a1f40cf8', 'Agree'),
-        a('hee52a6c', 'General Coins Policy'),
-        a('b70396b8', 'Receive coins'),
+        a('d604fb32', 'Creator Terms'),
+        a('d520d188', 'Receive Coins'),
         a(
-          'gcc11082',
-          'Coins are virtual goods that can be received on eligible Tweets. As you receive coins they accumulate into Diamonds, which can be cashed out.',
+          'e92c089c',
+          'Coins are virtual goods that can be received on eligible Tweets. As you receive Coins they accumulate into Diamonds, which can be cashed out.',
         ),
         a('d27f5ac6', 'Passive income'),
         a(
-          'i5226a36',
-          'Earn money simply by posting great content on Twitter. Your followers can now reward you by giving you coins.',
+          'ea949b62',
+          'Earn money simply by posting great content on Twitter. Your followers can now reward you by giving you Coins.',
         ),
         a('f85fb0a2', 'Connect with your audience'),
         a(
@@ -5022,7 +5007,8 @@
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
-        a('a21b8ad2', 'Ad-free Sites'),
+        a('hd885ae0', 'See your impact'),
+        a('je4ccd3a', 'Ad-free Articles Help Center'),
         a('ad45e9b2', 'View your subscription details or cancel.'),
         a('bdd3e652', 'View your subscription details.'),
         a('db529452', 'Subscription'),
@@ -5179,16 +5165,6 @@
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
         a('dda42cf2', 'Columns & Decks'),
-        a('e95b9448', 'General'),
-        a('e814ed10', 'Next Tweet in editing pane'),
-        a('c1250b42', 'Previous Tweet in editing pane'),
-        a('ddd4bf24', 'Next Tweet in center pane'),
-        a('ia2742fa', 'Previous Tweet in center pane'),
-        a('a8b6f61a', 'Drag and drop Tweet'),
-        a('dfe59ab8', 'Cancel drag-and-drop'),
-        a('c602967e', 'Focus editing or preview pane'),
-        a('g42208cc', 'Focus navigation menu pane'),
-        a('gf73b336', 'Focus Tweet or Moments pane'),
         a('c08e7936', 'Event Tweets'),
         a('j32d345e', 'The following may contain sensitive material'),
         a('a01d5a7c', 'This is not available because it was created by someone you blocked'),
@@ -5196,7 +5172,6 @@
         a('cab51f93', function (e) {
           return 'You cannot view this because @' + e.screenName + ' blocked you.'
         }),
-        a('e8dff578', 'Edit this'),
         a('fcc64f02', 'Report this'),
         a('ea193d66', 'Delete this'),
         a('e5227fe0', 'View on Twitter'),
@@ -5723,6 +5698,7 @@
         a('afcad7f2', 'Download the app'),
         a('gbde3534', 'Interests and ads data'),
         a('a54826c6', 'Inferred interests from partners'),
+        a('e95b9448', 'General'),
         a('f458a3b2', 'Privacy'),
         a(
           'ja94f34e',
@@ -6028,29 +6004,10 @@
         }),
         a('ace6e600', 'No Tweet reactions yet'),
         a('f92e3842', 'When someone (even you) reacts to this Tweet, it’ll show up here.'),
-        a('h1c5d6aa', 'Sent by you')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('h6d45054', 'Sent by all'),
-        a('jdc3a3cb', function (e) {
-          return e.count + ' coin' + n(e.count, '', 's') + ' (only visible to you)'
+        a('h1c5d6aa', 'Sent by you'),
+        a('h6d45054', 'Sent by all'),
+        a('da68fff1', function (e) {
+          return e.count + ' Coin' + n(e.count, '', 's') + ' (only visible to you)'
         }),
         a('ea831526', 'Tweet with replies'),
         a('a90e1e67', function (e) {
@@ -6083,10 +6040,29 @@
         }),
         a('aba12f5d', function (e) {
           return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-        }),
-        a('b9184ae3', function (e) {
-          return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('b9184ae3', function (e) {
+        return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+      }),
         a('e44c7ea1', function (e) {
           return e.date + ' - See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6457,23 +6433,21 @@
           'gc7637d4',
           'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
         ),
-        a('f0e32de6', 'Welcome to Twitter Blue'),
-        a('gc6e8c18', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
         a(
-          'dda7478c',
-          'Coins allow you to support creators who Tweet great content. Unused coins are kept in your balance.',
+          'ada69f98',
+          'Coins allow you to support creators who Tweet great content. Unused Coins are kept in your balance.',
         ),
-        a('aff3c33f', function (e) {
-          return e.count + ' bonus coin' + n(e.count, '', 's') + ' included.'
+        a('ea7ce65f', function (e) {
+          return e.count + ' bonus Coin' + n(e.count, '', 's') + ' included.'
         }),
         a('f89dfa74', 'Best Value'),
         a('e2beba5e', 'Most Popular'),
-        a('e5461d10', 'Buy coins'),
+        a('gafeeb96', 'Buy Coins'),
         a('bc42db1c', 'Cancel anytime. Auto-renews monthly.'),
         a('f971aa1c', 'Twitter Purchaser Terms'),
         a('fe93ed4a', 'Purchase successful'),
-        a('d50fc21f', function (e) {
-          return 'Your new coin balance is ' + e.balance + '.'
+        a('bcb90375', function (e) {
+          return 'Your new Coin balance is ' + e.balance + '.'
         }),
         a('ia2eb0c0', 'Purchase failed!'),
         a('a25a2e76', 'Edit order'),
@@ -6558,8 +6532,6 @@
         a('gbaa5489', function (e) {
           return 'List memberships for @' + e.screenName
         }),
-        a('a0cc15fc', 'Create new Moment'),
-        a('ja49bfd6', 'New Moment'),
         a('fea74b67', function (e) {
           return '@' + e.screenName + '’s Moments'
         }),
@@ -7014,8 +6986,39 @@
           'ba047f76',
           'Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month.',
         ),
+        a('j26dee0e', 'Remove affiliate'),
+        a('f323d314', 'Resend'),
+        a('ac645cde', 'You can always add them again.'),
+        a('d12af2dd', function (e) {
+          return 'Are you sure you want to remove this invitation to @' + e.screenName + '?'
+        }),
+        a('ib60b2d5', function (e) {
+          return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
+        }),
         a('i4dccc18', 'Billing'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
+        a('ff0edac0', 'Are you sure you want to cancel your subscription?'),
+        a(
+          'b39996b8',
+          'Canceling Verified Organizations will result in your organization immediately losing its gold checkmark.',
+        ),
+        a(
+          'jb98eb48',
+          'In addition, all affiliated accounts will be immediately canceledand lose their gold or blue checkmarks and affiliate badges.',
+        ),
+        a('dbf9667e', 'I’m sure'),
+        a('h2ac0348', 'No, take me back'),
+        a('ac7ab794', 'We’re sorry to see you go.'),
+        a(
+          'c9e8d770',
+          'You will not be refunded the remaining days left on your subscription before your next billing cycle. You will not be billed after that.',
+        ),
+        a('c9c3464c', 'Subscription cancellation in progress'),
+        a('dd3a293c', 'Your Verified Organization subscription has ended.'),
+        a('faa0f956', 'Something went wrong while cancelling your subscription.'),
+        a('b28289ea', 'Thanks'),
+        a('a452ab68', 'This may take a few seconds.'),
+        a('b36f74ae', 'You will no longer have access to the portal unless you sign up and activate again.'),
         a('f23a997e', 'twitter.com'),
         a('cd30afed', 'click here'),
         a('c4b9664e', 'Affiliated'),
@@ -7028,7 +7031,15 @@
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
+        a('ia5a6a40', 'In order to get started, you’ll need to add your payment details.'),
+        a('c4a5f614', 'Add Payment Details'),
+        a('i7b2f08e', 'Welcome to Verified Organizations'),
         a('f1dd3ac3', 'Learn more'),
+        a('d7eebb60', 'Setting up your subscription'),
+        a(
+          'f45d02e8',
+          'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
+        ),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7334,12 +7345,12 @@
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
-        a('fbaf9442', 'Add a starter Deck'),
-        a('b354ea52', 'Adding starter Deck...'),
+        a('fbaf9442', 'Add a starter Deck')
+      a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
-        a('habced9e', 'to restore column.')
-      a('g4fcb4f8', 'Column restored.'),
+        a('habced9e', 'to restore column.'),
+        a('g4fcb4f8', 'Column restored.'),
         a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
         a('h098a550', 'Default column width'),
@@ -7421,7 +7432,6 @@
         a('e9e2064c', 'Something went wrong, but don’t fret — it’s not your fault.'),
         a('d7060c80', 'Refresh'),
         a('a0493514', 'Retry'),
-        a('a04c1bc0', 'Twitter Blue Publisher'),
         a('ff3dd27c', 'Default'),
         a('b554fcf4', 'Light'),
         a('j590b148', 'Medium light'),
@@ -7985,7 +7995,6 @@
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
         }),
         a('e9f1af3a', 'Find out more'),
-        a('g15f6870', 'Learn More'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
         a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
@@ -7993,6 +8002,7 @@
         a('d1386940', 'Stay informed'),
         a('ecda5f9e', 'Misleading'),
         a('a423473c', 'Legally Required Notice'),
+        a('b3296688', 'Visibility Limited'),
         a('d85bc1b8', 'Zoom in or out on your image.'),
         a('f596ace8', 'Aspect ratio: original'),
         a('df031fca', 'Aspect ratio: wide'),
@@ -10278,7 +10288,7 @@
               },
             },
             {
-              key: 'gd031163',
+              key: 'd4b0b963',
               get: function get() {
                 return ['By tapping below, you agree to the ', '.']
               },
@@ -12957,237 +12967,6 @@
           ],
           b('en').pluralGenerator({}),
         )),
-        (b.b25321699 = m([
-          "'A$'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'A$'#,##0.00",
-          "-'A$''A$'#,##0.00",
-          "-'A$'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b29883732 = m([
-          "'R$'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'R$'#,##0.00",
-          "-'R$''R$'#,##0.00",
-          "-'R$'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b389173996 = m([
-          "'CA$'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'CA$'#,##0.00",
-          "-'CA$''CA$'#,##0.00",
-          "-'CA$'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b510005318 = m([
-          "'€'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'€'#,##0.00",
-          "-'€''€'#,##0.00",
-          "-'€'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.a506369329 = m([
-          "'£'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'£'#,##0.00",
-          "-'£''£'#,##0.00",
-          "-'£'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.a840984965 = m([
-          "'IDR' ",
-          ,
-          1,
-          0,
-          0,
-          ,
-          ,
-          ,
-          3,
-          ,
-          '',
-          "'IDR' #,##0",
-          "-'IDR' 'IDR' #,##0",
-          "-'IDR' ",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b29277113 = m([
-          "'₹'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'₹'#,##0.00",
-          "-'₹''₹'#,##0.00",
-          "-'₹'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b432665853 = m([
-          "'¥'",
-          ,
-          1,
-          0,
-          0,
-          ,
-          ,
-          ,
-          3,
-          ,
-          '',
-          "'¥'#,##0",
-          "-'¥''¥'#,##0",
-          "-'¥'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b740037018 = m([
-          "'NZ$'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'NZ$'#,##0.00",
-          "-'NZ$''NZ$'#,##0.00",
-          "-'NZ$'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.a471926884 = m([
-          "'SAR' ",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'SAR' #,##0.00",
-          "-'SAR' 'SAR' #,##0.00",
-          "-'SAR' ",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b886154446 = m([
-          "'$'",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'$'#,##0.00",
-          "-'$''$'#,##0.00",
-          "-'$'",
-          '',
-          h('ceil'),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
         (b.a1662346136 = y(function (e) {
           var t = !String(e).split('.')[1]
           return 1 == e && t ? 'one' : 'other'
@@ -13256,17 +13035,6 @@
         (b.a377044846 = p(b('en').numberFormatter({ raw: "'₫'#,##0" }))),
         (b.a506513743 = p(b('en').numberFormatter({ raw: "'ZAR' #,##0.00" }))),
         (b.b1585198218 = p(b('en').numberFormatter({ raw: "'ZMW' #,##0.00" }))),
-        (b.a1321204873 = p(b('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
-        (b.b326530659 = p(b('en').numberFormatter({ round: 'ceil', raw: "'R$'#,##0.00" }))),
-        (b.a1608008627 = p(b('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
-        (b.a330342455 = p(b('en').numberFormatter({ round: 'ceil', raw: "'€'#,##0.00" }))),
-        (b.a1646145572 = p(b('en').numberFormatter({ round: 'ceil', raw: "'£'#,##0.00" }))),
-        (b.a1470053666 = p(b('en').numberFormatter({ round: 'ceil', raw: "'IDR' #,##0" }))),
-        (b.b711404500 = p(b('en').numberFormatter({ round: 'ceil', raw: "'₹'#,##0.00" }))),
-        (b.b893561242 = p(b('en').numberFormatter({ round: 'ceil', raw: "'¥'#,##0" }))),
-        (b.a1653031457 = p(b('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
-        (b.a1930274517 = p(b('en').numberFormatter({ round: 'ceil', raw: "'SAR' #,##0.00" }))),
-        (b.b1207917069 = p(b('en').numberFormatter({ round: 'ceil', raw: "'$'#,##0.00" }))),
         (b.b129255162 = w(
           { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
           { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
@@ -13864,17 +13632,6 @@
         a('eefcd267', b.a50325677),
         a('fa8afc43', b.b1911307442),
         a('cf8abf59', b.b1158699306),
-        a('c93cb977', b.a1321204873),
-        a('de459011', b.b326530659),
-        a('j16ccfa3', b.a1608008627),
-        a('e8c823d3', b.a330342455),
-        a('gbf0e6c7', b.a1646145572),
-        a('abaf4eb5', b.a1470053666),
-        a('caa88471', b.b711404500),
-        a('j6a2940f', b.b893561242),
-        a('c32b252b', b.a1653031457),
-        a('gf09a0eb', b.a1930274517),
-        a('d0783e71', b.b1207917069),
         a('a1061083', b.b490808361)
     },
   },
