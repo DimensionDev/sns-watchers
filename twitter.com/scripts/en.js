@@ -362,7 +362,9 @@
         a('f4422d78', 'Reports'),
         a('fd442790', 'Settings and privacy'),
         a('f1e3a258', 'Settings and Support'),
-        a('d13d697c', 'New'),
+        a('a17c3755', function (e) {
+          return 'New' + e.ttc_dashmenu_item
+        }),
         a('ab38b896', 'Twitter Ads'),
         a('da137d9a', 'MStV Transparenzangaben'),
         a('d0748dae', 'Twitter Circle'),
@@ -371,7 +373,7 @@
         a('i1d35d74', 'TweetDeck'),
         a('c9d41314', 'Twitter for Professionals'),
         a('ff1c5e1a', 'Professional Home'),
-        a('if853d5a', 'Verified Organization'),
+        a('g2c0144a', 'Verified Organizations'),
         a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
         a('d9ef2842', 'Unread items'),
         a('dc931afc', 'Communities (New items)'),
@@ -424,7 +426,6 @@
         a('i1390ec2', 'Did someone say … cookies?'),
         a('id7ef731', 'help center'),
         a('gfb2ba01', 'Show more about your choices.'),
-        a('a8a8d769', 'Cookies Use'),
         a('b47e760e', 'To view keyboard shortcuts, press question mark'),
         a('fd2c7b44', 'View keyboard shortcuts'),
         a('g7e2adf2', 'Make a new deck'),
@@ -1146,9 +1147,9 @@
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
         }),
-        a('d9b417c4', 'Set as not interested')
-      a('c29d6806', 'Stop recommending'),
-        a('e839db3a', 'Dismiss'),
+        a('d9b417c4', 'Set as not interested'),
+        a('c29d6806', 'Stop recommending')
+      a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
         }),
@@ -2343,9 +2344,9 @@
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:')
-      a('a3ca686a', 'See tips for writing helpful notes'),
-        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a('bed66f92', 'Here’s how to start:'),
+        a('a3ca686a', 'See tips for writing helpful notes')
+      a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
@@ -2613,6 +2614,9 @@
         a('g0cbfc50', 'Useful guide for Community moderation'),
         a('h6ebcfca', 'Show this Community on your profile'),
         a('c0fa0634', 'Spotlight your Community'),
+        a('da035fd5', function (e) {
+          return 'New' + e.ttc_c9s_spotlight_header
+        }),
         a('h41224f8', 'Spotlight your Community on your profile'),
         a(
           'b18e94b2',
@@ -4446,7 +4450,9 @@
           'This includes consensually made and shared media that’s pornographic or meant to cause sexual arousal.',
         ),
         a('h7e0672b', 'media settings'),
-        a('bffb7ed4', 'NEW'),
+        a('ga952ac9', function (e) {
+          return 'NEW' + e.ttc_blue_subscription
+        }),
         a('ib35705e', 'Manage Subscription'),
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
@@ -5013,6 +5019,9 @@
         a('bdd3e652', 'View your subscription details.'),
         a('db529452', 'Subscription'),
         a('d248d75e', 'Get Support'),
+        a('f352de53', function (e) {
+          return 'New' + e.ttc_blue_headline
+        }),
         a(
           'i85091ac',
           'Blue looks good on you. Enjoy your verified account and blue checkmark once you’ve been approved.',
@@ -5186,6 +5195,9 @@
         a('b1037710', 'Share your thoughts'),
         a('bb980db0', 'Event Timeline'),
         a('dfd7bba0', 'Check back later to see Tweets about this.'),
+        a('ffd929c1', function (e) {
+          return 'NEW' + e.ttc_live_event
+        }),
         a('c9b302f8', 'Check back later to see the latest products.'),
         a('cfe836d1', function (e) {
           return e.percent + '% off'
@@ -6034,12 +6046,6 @@
         }),
         a('be59fddf', function (e) {
           return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('aba12f5d', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6060,9 +6066,15 @@
           c(e, t)
         )
       }
-      a('b9184ae3', function (e) {
-        return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+      a('b357b2ad', function (e) {
+        return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
       }),
+        a('aba12f5d', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+        }),
+        a('b9184ae3', function (e) {
+          return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
+        }),
         a('e44c7ea1', function (e) {
           return e.date + ' - See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6967,7 +6979,6 @@
         a('a25a0a20', 'You can cancel your subscription through the Google Play Store.'),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
-        a('g2c0144a', 'Verified Organizations'),
         a('d1a35ec6', 'Add accounts'),
         a('f1f6c88b', function (e) {
           return 'Accounts (' + e.count + ')'
@@ -6987,6 +6998,8 @@
           'Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month.',
         ),
         a('j26dee0e', 'Remove affiliate'),
+        a('j3115ce8', 'Individual'),
+        a('d8bb1d84', 'Organization'),
         a('f323d314', 'Resend'),
         a('ac645cde', 'You can always add them again.'),
         a('d12af2dd', function (e) {
@@ -7342,11 +7355,11 @@
         a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
         a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
-        a('i8912d28', 'Lets add some columns...'),
-        a('ce0c0f34', 'Now let’s have a look around'),
+        a('i8912d28', 'Lets add some columns...')
+      a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
-        a('fbaf9442', 'Add a starter Deck')
-      a('b354ea52', 'Adding starter Deck...'),
+        a('fbaf9442', 'Add a starter Deck'),
+        a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
         a('habced9e', 'to restore column.'),
@@ -8382,15 +8395,6 @@
               get: function get() {
                 return [
                   'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. ',
-                ]
-              },
-            },
-            {
-              key: 'i3c34583',
-              get: function get() {
-                return [
-                  'By using Twitter’s services you agree to our ',
-                  '. We and our partners operate globally and use cookies, including for analytics, personalisation, and ads.',
                 ]
               },
             },
