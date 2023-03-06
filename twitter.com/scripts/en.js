@@ -7031,6 +7031,7 @@
         a('b36f74ae', 'You will no longer have access to the portal unless you sign up and activate again.'),
         a('f23a997e', 'twitter.com'),
         a('cd30afed', 'click here'),
+        a('f30cfcff', 'verified-premium-support@twitter.com'),
         a('c4b9664e', 'Affiliated'),
         a('g0eadcf6', 'Affiliated with another organization'),
         a('a8c81f88', 'Organization Account'),
@@ -7351,9 +7352,9 @@
         ),
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
-        a('dc6c806e', 'Your columns couldn’t be imported')
-      a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.')
+      a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
@@ -10843,6 +10844,14 @@
               key: 'c6481077',
               get: function get() {
                 return ['To cancel your subscription, ', '.']
+              },
+            },
+            {
+              key: 'f05a94e5',
+              get: function get() {
+                return [
+                  'If you have questions, bug reports, feedback or wish to cancel your subscription please contact us here: ',
+                ]
               },
             },
             {
