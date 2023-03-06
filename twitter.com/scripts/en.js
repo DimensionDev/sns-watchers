@@ -16,10 +16,7 @@
         return 'one' == ((a = e), (n = !String(a).split('.')[1]), 1 == a && n ? 'one' : 'other') ? t : o
         var a, n
       }
-      a('jded6c98', 'Tweet reply hidden'),
-        a('hd8c22d2', 'Mod'),
-        a('c3153100', 'Admin'),
-        a('ac0d27be', 'Sorry, this account has been suspended.'),
+      a('ac0d27be', 'Sorry, this account has been suspended.'),
         a('bcee7444', 'Account update failed.'),
         a('e0cbf77a', 'Add phone'),
         a('dec5a5ce', 'Twitter is over capacity. Please wait a few moments then try again.'),
@@ -74,123 +71,25 @@
           'e784846c',
           'Your profile is under review. No new changes are allowed to name and profile photo during the review period.',
         ),
-        a('h1cbdd30', 'Please refresh the page and try again.'),
-        a('a5077d3e', 'Refresh'),
-        a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
+        a('hd8c22d2', 'Mod'),
+        a('c3153100', 'Admin'),
         a('fa9adac1', function (e) {
           return 'Search for "' + e.query + '"'
         }),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
+        a('h1cbdd30', 'Please refresh the page and try again.'),
+        a('a5077d3e', 'Refresh'),
+        a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
+        a('jded6c98', 'Tweet reply hidden'),
         a('h7a9e4e2', 'NFT profile picture'),
         a('i6fcb1d8', 'Business profile picture'),
         a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
         a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
         a('f5718548', 'You reported this Tweet.'),
-        a('b772cd66', 'Done'),
-        a('i0e56bcc', 'Auto refresh'),
-        a('fa7b7eec', 'Manual refresh'),
-        a('b1afa50a', 'Top Tweets First'),
-        a('ade3c688', 'Latest Tweets First'),
-        a('bd4ad3ea', 'Wide'),
-        a('ca1180a0', 'Medium'),
-        a('c86ff1b0', 'Narrow'),
-        a('eed02406', 'Small'),
-        a('cffb04d6', 'Standard'),
-        a('e2462db4', 'Most shared in your network · Last 24 hours'),
-        a('ad16f482', 'Event'),
-        a('c20aaf3e', 'Error'),
-        a('fa884026', 'List'),
-        a('fa98627a', 'Profile'),
-        a('a9ae1e78', 'Search'),
-        a('a2a3824a', 'Topic'),
-        a('j5ec9765', function (e) {
-          return e.handle + ' • Bookmark Folder'
-        }),
-        a('ce5deee7', function (e) {
-          return e.handle + ' • Messages'
-        }),
-        a('d80c77dc', 'You hid these replies'),
-        a('ef939f4b', function (e) {
-          return 'Replies hidden by @' + e.screenName
-        }),
-        a('b7fa0cfe', 'Top Articles'),
-        a('bcc7e8c0', 'All Bookmarks'),
-        a('i3145aa0', 'Bookmarks'),
-        a('e39b368e', 'Broadcast'),
-        a('hbea78a8', 'New column'),
-        a('b5298d92', 'Connect'),
-        a('d35d74e4', 'Conversation'),
-        a('d4ebc798', 'Drafts'),
-        a('fcf3e54c', 'Explore'),
-        a('d806aa1a', 'Hidden replies'),
-        a('ha8209bc', 'Home'),
-        a('a2f81050', 'Messages'),
-        a('cf2d1048', 'Message requests'),
-        a('e7172d70', 'Additional messages'),
-        a('e1066d88', 'My Profile'),
-        a('eb75875e', 'Notifications'),
-        a('bd7c0390', 'Quote Tweets'),
-        a('e4e4e50a', 'Scheduled Tweets'),
-        a('ab4fc8bc', 'Space'),
-        a('aa4209e8', 'Super Followers'),
-        a('c5f4befa', 'Trends'),
-        a('bea869b4', 'Tweet'),
-        a('ddf0ba7e', 'Collection'),
-        a('c64974fc', 'Followers'),
-        a('i099d32e', 'Followers you know'),
-        a('d960b55c', 'Following'),
-        a('b4af8c6a', 'Moments'),
-        a('aa68dafc', 'Notification details'),
-        a('b8533bac', 'Topics'),
-        a('jf00ebf6', 'Column unavailable'),
-        a('jaaa8984', 'Location'),
-        a('b5b7fb94', 'Group'),
-        a('g755fcde', 'You'),
-        a('f6b1ff81', function (e) {
-          return e.name + ' and You'
-        }),
-        a('j652293d', function (e) {
-          return e.listOfParticipants + ' and ' + e.count + ' more'
-        }),
-        a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
-        a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
-        a('b36f4170', 'File is empty.'),
-        a('hab3781e', 'One or more provided files are not images.'),
-        a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
-        a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
-        a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
-        a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
-        a('b28d44f7', function (e) {
-          return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
-        }),
-        a('i1db7d13', function (e) {
-          return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
-        }),
-        a('baac0ed7', function (e) {
-          return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
-        }),
-        a('a22385bb', function (e) {
-          return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
-        }),
-        a('be0440bf', function (e) {
-          return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
-        }),
-        a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
-        a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
-        a('db6001e7', function (e) {
-          return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
-        }),
-        a('eb96d952', 'Your image file lacks height and width'),
-        a('b3880588', 'The upload session has timed out.'),
-        a('ca058b68', 'Some of your media failed to load.'),
-        a('id24379c', 'Some of your media failed to upload.'),
-        a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
         a('d2fb334c', 'Twitter'),
         a('cfbea177', function (e) {
           return e.name + '’s Space'
         }),
+        a('ab4fc8bc', 'Space'),
         a('jd859c9c', 'You have been removed from this Space.'),
         a('f7c8617a', 'What are clips?'),
         a(
@@ -287,21 +186,31 @@
         a('e111f531', function (e) {
           return e.count + ' tuned in'
         }),
+        a('a2f81050', 'Messages'),
         a('d4986f86', 'Direct Messages'),
         a('ga169e1b', function (e) {
           return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
         }),
+        a('i3145aa0', 'Bookmarks'),
+        a('a15648a4', 'Community Notes'),
         a('bb081ea2', 'Settings'),
+        a('ha8209bc', 'Home'),
         a('b489517e', 'Home (New unread Tweets)'),
+        a('eb75875e', 'Notifications'),
         a('e1249849', function (e) {
           return 'Notifications (' + e.count + ' unread notification' + n(e.count, '', 's') + ')'
         }),
+        a('fcf3e54c', 'Explore'),
         a('c0b786ee', 'Search and explore'),
         a('e2eac0c4', 'Primary'),
+        a('fa98627a', 'Profile'),
         a('i5aa4ce0', 'More menu items'),
+        a('b5298d92', 'Connect'),
+        a('b8533bac', 'Topics'),
         a('b0041756', 'Lists'),
         a('h02a6fe6', 'Communities'),
         a('ded416b0', 'Spaces'),
+        a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
@@ -331,6 +240,39 @@
         a('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
         a('ef2fa90c', 'The text of your Tweet exceeds the maximum allowed limit.'),
         a('f10f1cfc', 'The content of your Tweet is invalid.'),
+        a('g40ff2b4', 'Your media failed to resize and is too large to upload.'),
+        a('b8098028', 'One or more images exceed the size limit and cannot be resized.'),
+        a('b36f4170', 'File is empty.'),
+        a('hab3781e', 'One or more provided files are not images.'),
+        a('f6c4fb02', 'Your GIF file could not be processed. Please see tips for uploading GIFs.'),
+        a('g0af3dd2', 'Your GIF file is not compatible. Please see tips for uploading GIFs.'),
+        a('b8c8b0be', 'Your video file could not be processed. Please see tips for uploading videos.'),
+        a('ica6d718', 'Your video file is not compatible. Please see tips for uploading videos.'),
+        a('b28d44f7', function (e) {
+          return 'Your GIF file is too large. GIFs should be less than ' + e.limit + ' MB'
+        }),
+        a('i1db7d13', function (e) {
+          return 'Your video file is too large. Videos should be less than ' + e.limit + ' MB'
+        }),
+        a('baac0ed7', function (e) {
+          return 'Your video file is too large. Videos should be less than ' + e.limit + ' GB'
+        }),
+        a('a22385bb', function (e) {
+          return 'Your video is too long. Try to keep it ' + e.limit + ' seconds or less.'
+        }),
+        a('be0440bf', function (e) {
+          return 'Your video is too long. Try to keep it ' + e.limit + ' minutes or less.'
+        }),
+        a('feeba512', 'Your image file could not be processed. Please see tips for uploading images.'),
+        a('db123c02', 'Your image file is not compatible. Please see tips for uploading images.'),
+        a('db6001e7', function (e) {
+          return 'Your image file is too large. Images should be less than ' + e.limit + ' MB'
+        }),
+        a('eb96d952', 'Your image file lacks height and width'),
+        a('b3880588', 'The upload session has timed out.'),
+        a('ca058b68', 'Some of your media failed to load.'),
+        a('id24379c', 'Some of your media failed to upload.'),
+        a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
         a('de43eaf2', 'Undo Tweet'),
         a('f6e88162', 'Labs'),
         a(
@@ -343,7 +285,6 @@
           'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
         ),
         a('c818c60c', 'Analytics'),
-        a('a15648a4', 'Community Notes'),
         a('cdf89b84', 'Branded Likes Preview'),
         a('bb07870e', 'Creator Studio'),
         a('a57a341c', 'Data saver'),
@@ -418,6 +359,62 @@
         }),
         a('g34f2c63', function (e) {
           return 'Tweet' + e.verb
+        }),
+        a('b772cd66', 'Done'),
+        a('i0e56bcc', 'Auto refresh'),
+        a('fa7b7eec', 'Manual refresh'),
+        a('b1afa50a', 'Top Tweets First'),
+        a('ade3c688', 'Latest Tweets First'),
+        a('bd4ad3ea', 'Wide'),
+        a('ca1180a0', 'Medium'),
+        a('c86ff1b0', 'Narrow'),
+        a('eed02406', 'Small'),
+        a('cffb04d6', 'Standard'),
+        a('e2462db4', 'Most shared in your network · Last 24 hours'),
+        a('ad16f482', 'Event'),
+        a('c20aaf3e', 'Error'),
+        a('fa884026', 'List'),
+        a('a9ae1e78', 'Search'),
+        a('a2a3824a', 'Topic'),
+        a('j5ec9765', function (e) {
+          return e.handle + ' • Bookmark Folder'
+        }),
+        a('ce5deee7', function (e) {
+          return e.handle + ' • Messages'
+        }),
+        a('d80c77dc', 'You hid these replies'),
+        a('ef939f4b', function (e) {
+          return 'Replies hidden by @' + e.screenName
+        }),
+        a('bcc7e8c0', 'All Bookmarks'),
+        a('e39b368e', 'Broadcast'),
+        a('hbea78a8', 'New column'),
+        a('d35d74e4', 'Conversation'),
+        a('d4ebc798', 'Drafts'),
+        a('d806aa1a', 'Hidden replies'),
+        a('cf2d1048', 'Message requests'),
+        a('e7172d70', 'Additional messages'),
+        a('e1066d88', 'My Profile'),
+        a('bd7c0390', 'Quote Tweets'),
+        a('e4e4e50a', 'Scheduled Tweets'),
+        a('aa4209e8', 'Super Followers'),
+        a('c5f4befa', 'Trends'),
+        a('bea869b4', 'Tweet'),
+        a('ddf0ba7e', 'Collection'),
+        a('c64974fc', 'Followers'),
+        a('i099d32e', 'Followers you know'),
+        a('d960b55c', 'Following'),
+        a('b4af8c6a', 'Moments'),
+        a('aa68dafc', 'Notification details'),
+        a('jf00ebf6', 'Column unavailable'),
+        a('jaaa8984', 'Location'),
+        a('b5b7fb94', 'Group'),
+        a('g755fcde', 'You'),
+        a('f6b1ff81', function (e) {
+          return e.name + ' and You'
+        }),
+        a('j652293d', function (e) {
+          return e.listOfParticipants + ' and ' + e.count + ' more'
         }),
         a('j49fd4e8', 'Switch to the app'),
         a('hd50e064', 'Not now'),
@@ -1148,17 +1145,17 @@
           return '・' + e.formattedTime
         }),
         a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending')
-      a('e839db3a', 'Dismiss'),
+        a('c29d6806', 'Stop recommending'),
+        a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
         }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
-        }),
-        a('i77347d1', function (e) {
-          return 'Dismiss ' + e.topicName + ' Topic'
-        }),
+        })
+      a('i77347d1', function (e) {
+        return 'Dismiss ' + e.topicName + ' Topic'
+      }),
         a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
@@ -2076,8 +2073,8 @@
           'To continue contributing to Community Notes from this Twitter account, you’ll need to verify your phone number.',
         ),
         a(
-          'j2aafbac',
-          'In addition to verified, your number must be from a trusted US-based carrier, and not associated with another Community Notes account.',
+          'hef02710',
+          'In addition to verified, your number must be from a trusted phone carrier, and not associated with another Community Notes account.',
         ),
         a('dff9b6bc', 'Verify your phone'),
         a('f051e434', 'Community Notes contributors must have unique phone numbers'),
@@ -2089,10 +2086,10 @@
           'cc94e7b2',
           'In order to continue contributing from this account, you’ll need to remove this phone number from other Twitter accounts.',
         ),
-        a('f6a279b2', 'Community Notes accounts must have verified phone numbers from a trusted US-based carrier'),
+        a('a7c9a176', 'Community Notes accounts must have verified phone numbers from a trusted carrier'),
         a(
-          'c388c3aa',
-          'To reduce the use of artificially created or virtual phone numbers, phone numbers must be from a trusted US-based carrier.',
+          'ec853dfa',
+          'To reduce the use of artificially created or virtual phone numbers, phone numbers must be from a trusted carrier.',
         ),
         a('j2d66822', 'Given current evidence, I believe this Tweet is likely... '),
         a('b1b2d004', 'Potentially misleading and would benefit from added context'),
@@ -2345,14 +2342,14 @@
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes')
-      a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
         ),
-        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
-        a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
+        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note')
+      a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
           'ife4baaa',
           'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -3600,14 +3597,14 @@
         ),
         a('j8bf07ac', 'Protect your Tweets?'),
         a('ca8034b4', 'This will make them visible only to your Twitter followers.'),
-        a('c5d4192a', 'Protect')
-      a(
-        'j7fc0afc',
-        'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-      ),
+        a('c5d4192a', 'Protect'),
+        a(
+          'j7fc0afc',
+          'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
+        ),
         a('f527b322', 'Protect my account'),
-        a('f56d108e', 'Photo tagging'),
-        a('d165c992', 'Anyone can tag you'),
+        a('f56d108e', 'Photo tagging')
+      a('d165c992', 'Anyone can tag you'),
         a('ea339390', 'Only people you follow can tag you'),
         a('e3a761ee', 'Off'),
         a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
@@ -3806,6 +3803,7 @@
           )
         }),
         a('je506a60', 'Change username'),
+        a('d53382f2', 'Changing your username will result in your checkmark and/or affiliation badge being removed.'),
         a('d1f6d336', 'Username'),
         a('de65c756', 'Suggestions'),
         a('ebeeac1a', 'Change email'),
@@ -4464,6 +4462,8 @@
           'cad64506',
           'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
+        a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
+        a('g5567e86', 'Existing Twitter Blue subscription'),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
@@ -5245,12 +5245,6 @@
           'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
         ),
         a('bf17deda', 'Let’s go!'),
-        a('d4d57850', 'Welcome to your timeline!'),
-        a(
-          'f3f4c67c',
-          'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
-        ),
-        a('a399ed20', 'Let’s go'),
         a('a3fad4f2', 'Log out of Twitter?'),
         a('f12b4db5', function (e) {
           return 'Log out of @' + e.screenName + '?'
@@ -5370,10 +5364,12 @@
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
         a('deaf5b16', 'Retry'),
+        a('d5568440', 'Please enter a stronger password.'),
         a('a3841918', 'Email'),
         a('f70cd5ee', 'Phone'),
         a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
+        a('cd24fe60', 'Please enter a valid phone number.'),
         a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
@@ -5386,6 +5382,7 @@
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
         }),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('b5474bd2', 'Hmmm... something went wrong.'),
         a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
         a(
@@ -6452,6 +6449,7 @@
         a('ea7ce65f', function (e) {
           return e.count + ' bonus Coin' + n(e.count, '', 's') + ' included.'
         }),
+        a('e557f9d2', 'You have reached your Coin balance limit.'),
         a('f89dfa74', 'Best Value'),
         a('e2beba5e', 'Most Popular'),
         a('gafeeb96', 'Buy Coins'),
@@ -6578,7 +6576,6 @@
         a('ica87fde', 'You’re blocked'),
         a('db763e75', 'Learn more'),
         a('a2811f96', 'Profile timelines'),
-        a('a52b03a6', 'Tweets & replies'),
         a('cc3c698a', 'Super Follows Tweets'),
         a('de578b82', 'Subscription Tweets'),
         a('b3221ef5', function (e) {
@@ -7016,8 +7013,8 @@
           'Canceling Verified Organizations will result in your organization immediately losing its gold checkmark.',
         ),
         a(
-          'jb98eb48',
-          'In addition, all affiliated accounts will be immediately canceledand lose their gold or blue checkmarks and affiliate badges.',
+          'b0ae7088',
+          'In addition, all affiliated accounts will be immediately canceled and lose their gold or blue checkmarks and affiliate badges.',
         ),
         a('dbf9667e', 'I’m sure'),
         a('h2ac0348', 'No, take me back'),
@@ -7045,8 +7042,11 @@
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
         a('ia5a6a40', 'In order to get started, you’ll need to add your payment details.'),
+        a('d40d1cc0', 'To continue you need to pay via Stripe.'),
         a('c4a5f614', 'Add Payment Details'),
         a('i7b2f08e', 'Welcome to Verified Organizations'),
+        a('g4e18b84', 'You’ve hit your affiliate limit'),
+        a('hd7d278c', 'No thanks'),
         a('f1dd3ac3', 'Learn more'),
         a('d7eebb60', 'Setting up your subscription'),
         a(
@@ -7103,7 +7103,6 @@
         a('ac1551ae', 'Thank you for using TweetDeck Preview, we’d love to hear how you have been finding it so far.'),
         a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
         a('fce3c5ce', 'Give feedback'),
-        a('hd7d278c', 'No thanks'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
         a('b2b3db04', 'A powerful, real-time tool for people who live on Twitter.'),
@@ -7353,10 +7352,10 @@
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
         a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
-        a('dc6c806e', 'Your columns couldn’t be imported'),
-        a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
-        a('i8912d28', 'Lets add some columns...')
-      a('ce0c0f34', 'Now let’s have a look around'),
+        a('dc6c806e', 'Your columns couldn’t be imported')
+      a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
+        a('i8912d28', 'Lets add some columns...'),
+        a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
         a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),

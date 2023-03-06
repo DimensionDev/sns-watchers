@@ -22812,6 +22812,53 @@ object-assign
           })()
         v.isAvailable = n.canUseDOM && document[d]
       },
+      576648: function _(e, t, r) {
+        'use strict'
+        var n
+        r.d(t, {
+          Z: function Z() {
+            return i
+          },
+        })
+        var i = (function () {
+          function e() {}
+          return (
+            (e.isAvailable = function () {
+              return (
+                void 0 === n &&
+                  (n = 'function' == typeof document.queryCommandSupported && document.queryCommandSupported('copy')),
+                n
+              )
+            }),
+            (e.getString = function () {
+              return Promise.resolve('')
+            }),
+            (e.setString = function (e) {
+              var t = !1,
+                r = document.body
+              if (r) {
+                var n = document.createElement('span')
+                ;(n.textContent = e),
+                  (n.style.opacity = '0'),
+                  (n.style.position = 'absolute'),
+                  (n.style.whiteSpace = 'pre-wrap'),
+                  (n.style.userSelect = 'auto'),
+                  r.appendChild(n)
+                var i = window.getSelection()
+                i.removeAllRanges()
+                var a = document.createRange()
+                a.selectNodeContents(n), i.addRange(a)
+                try {
+                  document.execCommand('copy'), (t = !0)
+                } catch (o) {}
+                i.removeAllRanges(), r.removeChild(n)
+              }
+              return t
+            }),
+            e
+          )
+        })()
+      },
       878052: function _(e, t, r) {
         'use strict'
         r.d(t, {
