@@ -5,7 +5,7 @@
     24101: function _(e, t, n) {
       n.d(t, {
         Z: function Z() {
-          return d
+          return p
         },
       })
       var o = n(202784),
@@ -16,14 +16,12 @@
         c = n(351212)
       var s = 'settingsAppBar'
       var u = l().bb081ea2,
-        p = { viewType: 'settings_button' },
         f = o.memo(function (e) {
           var t = e.onPress,
             n = e.pullRight,
             a = e.to
           return o.createElement(i.ZP, {
             accessibilityLabel: u,
-            behavioralEventContext: p,
             hoverLabel: { label: u },
             icon: o.createElement(c['default'], null),
             link: a,
@@ -37,7 +35,7 @@
         m = a.Z.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
-      var d = f
+      var p = f
     },
     753331: function _(e, t, n) {
       n.d(t, {
@@ -81,9 +79,9 @@
         c = n(256666),
         s = (n(22144), n(818178), n(326936), n(136728), n(202784)),
         u = n(914767),
-        p = n(473228),
-        f = n.n(p),
-        m = n(497317),
+        f = n(473228),
+        m = n.n(f),
+        p = n(497317),
         d = n(76687),
         h = n(663143),
         w = n(266298),
@@ -100,27 +98,27 @@
         })
         .withAnalytics()
       var b = n(882426),
-        _ = Object.freeze({ follow: f().i79ab12a, following: f().d960b55c, unfollow: f().c0f56044 }),
+        _ = Object.freeze({ follow: m().i79ab12a, following: m().d960b55c, unfollow: m().c0f56044 }),
         E = Object.freeze({
-          follow: f().fcf51fe6,
-          following: f().e9a90d72,
-          unfollow: f().bf403716,
-          confirmationHeadline: f().c9f08e29,
-          confirmationSheetText: f().abc600f4,
+          follow: m().fcf51fe6,
+          following: m().e9a90d72,
+          unfollow: m().bf403716,
+          confirmationHeadline: m().c9f08e29,
+          confirmationSheetText: m().abc600f4,
         }),
         S = Object.freeze({
-          follow: f().cd876e02,
-          following: f().f2816e02,
-          unfollow: f().f5b04fbc,
-          confirmationHeadline: f().c481ae3f,
-          confirmationSheetText: f().aa3ba124,
+          follow: m().cd876e02,
+          following: m().f2816e02,
+          unfollow: m().f5b04fbc,
+          confirmationHeadline: m().c481ae3f,
+          confirmationSheetText: m().aa3ba124,
         }),
         x = Object.freeze({
-          follow: f().e0e730b0,
-          following: f().e0e730b0,
-          unfollow: f().b1850062,
-          confirmationHeadline: f().gd3f996f,
-          confirmationSheetText: f().i36c403c,
+          follow: m().e0e730b0,
+          following: m().e0e730b0,
+          unfollow: m().b1850062,
+          confirmationHeadline: m().gd3f996f,
+          confirmationSheetText: m().i36c403c,
         }),
         T = (function (e) {
           ;(0, r.Z)(n, e)
@@ -141,7 +139,7 @@
                   case b.q.Favorite:
                   case b.q.Star:
                   case b.q.Interested:
-                    return s.createElement(m['default'], null)
+                    return s.createElement(p['default'], null)
                   case b.q.FollowTopic:
                   case b.q.Default:
                   default:
@@ -219,10 +217,10 @@
                     r = t.size,
                     l = t.style,
                     c = t.textMode,
-                    p = t.topic,
-                    f = p.following,
-                    m = p.name
-                  return s.createElement(w.Z, { customText: m, displayMode: h.BH.topic }, function (t) {
+                    f = t.topic,
+                    m = f.following,
+                    p = f.name
+                  return s.createElement(w.Z, { customText: p, displayMode: h.BH.topic }, function (t) {
                     return s.createElement(u.Z, {
                       accessibilityDescribedBy: n,
                       buttonIcons: {
@@ -231,9 +229,9 @@
                       },
                       buttonText: e._getButtonText(c),
                       displayMode: e._getDisplayMode(c),
-                      isFollowing: f,
+                      isFollowing: m,
                       isTransparent: o,
-                      name: m,
+                      name: p,
                       nativeID: i,
                       onFollow: t(e._handleOnFollow),
                       onUnfollow: t(e._handleOnUnfollow),
@@ -241,7 +239,7 @@
                       size: r,
                       style: l,
                       type: 'topic',
-                      withConfirmationSheetText: f,
+                      withConfirmationSheetText: m,
                     })
                   })
                 },
@@ -292,9 +290,9 @@
         c = n(256666),
         s = (n(818178), n(202784)),
         u = n(108352),
-        p = n(473228),
-        f = n.n(p),
-        m = n(24101),
+        f = n(473228),
+        m = n.n(f),
+        p = n(24101),
         d = n(790876),
         h = n(753331),
         w = n(1778),
@@ -344,9 +342,9 @@
       var k = n(133028),
         B = n(44895)
       var H = (0, k.Z)({}, (0, B.G)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' }))
-      var P = f().fcf3e54c,
-        L = f().ead349a8,
-        I = f().a19ce060,
+      var P = m().fcf3e54c,
+        L = m().ead349a8,
+        I = m().a19ce060,
         A = function A() {
           return s.createElement(v.Z, null)
         },
@@ -397,9 +395,9 @@
                     l = this.context.featureSwitches.isTrue('responsive_web_trends_setting_new_endpoints')
                       ? '/settings/explore'
                       : '/settings/trends',
-                    c = s.createElement(m.Z, { onPress: this._handleSettingsClick, pullRight: !0, to: l }),
+                    c = s.createElement(p.Z, { onPress: this._handleSettingsClick, pullRight: !0, to: l }),
                     u = i.state && i.state.searchFocused,
-                    p = s.createElement(d.Z, { withSearchBox: !1, withTrends: !1 })
+                    f = s.createElement(d.Z, { withSearchBox: !1, withTrends: !1 })
                   return s.createElement(
                     s.Fragment,
                     null,
@@ -414,7 +412,6 @@
                       type: 'article',
                     }),
                     s.createElement(y.Z, {
-                      behavioralEventViewType: 'guide',
                       entryConfiguration: H,
                       fab: r,
                       getTabLink: this._getTabLink,
@@ -428,7 +425,7 @@
                       rightControl: c,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: a,
-                      sidebarContent: p,
+                      sidebarContent: f,
                       timelinePrefix: _.uI,
                       title: P,
                       withBottomLoginSignupBar: !0,
@@ -464,12 +461,12 @@
         c = n(24101),
         s = n(790876),
         u = n(612969),
-        p = n(509082),
-        f = n(1778),
-        m = n(543467),
+        f = n(509082),
+        m = n(1778),
+        p = n(543467),
         d = n(819313),
         h = n(107765),
-        w = n(346253),
+        w = n(963705),
         g = n(440082),
         Z = n(460673),
         v = n(78772)
@@ -523,8 +520,8 @@
             null,
             i.createElement(
               w.Z,
-              { behavioralEventViewType: 'guide' },
-              i.createElement(f.Z, {
+              null,
+              i.createElement(m.Z, {
                 canonical: 'https://twitter.com/explore',
                 description: _,
                 image: T,
@@ -533,11 +530,11 @@
                 title: b,
                 type: 'article',
               }),
-              i.createElement(m.Z, {
+              i.createElement(p.Z, {
                 history: n,
                 onBackClick: v ? k : void 0,
                 primaryContent: i.createElement(
-                  p.Z,
+                  f.Z,
                   { component: a.Z, fab: B },
                   i.createElement(u.Z, null, i.createElement(g.Z, { module: y, title: b })),
                 ),
@@ -571,9 +568,9 @@
         c = n(486906),
         s = n(256666),
         u = (n(22144), n(818178), n(202784)),
-        p = n(890601),
-        f = n(368737),
-        m = n(325686),
+        f = n(890601),
+        m = n(368737),
+        p = n(325686),
         d = Object.freeze({ normal: 100, long: 250, longer: 500 }),
         h = Object.freeze({ animate: 'animate', static: 'static', prep: 'prep' }),
         w = { height: 'auto', opacity: 1 },
@@ -693,25 +690,25 @@
                       l = o.type,
                       c = e.renderChildren,
                       s = n === h['static'],
-                      f = n === h.animate,
+                      m = n === h.animate,
                       w = 'fade' === l
                     if (s && !a) return null
                     var g = [
                       !s && { willChange: 'opacity, height' },
-                      f && v.transitionStyles,
-                      f && { transitionDuration: ''.concat(d[i], 'ms') },
-                      f && !w && v.overflowHidden,
+                      m && v.transitionStyles,
+                      m && { transitionDuration: ''.concat(d[i], 'ms') },
+                      m && !w && v.overflowHidden,
                       !s && t,
                     ]
-                    return (0, p.Z)('div', {
+                    return (0, f.Z)('div', {
                       'data-testid': r,
                       onTransitionEnd: this._handleTransitionEnd,
                       ref: this._setAnimationNode,
                       style: g,
                       children: u.createElement(
-                        m.Z,
+                        p.Z,
                         { ref: this._setMeasurementNode },
-                        'function' == typeof c ? c({ isAnimating: f }) : c,
+                        'function' == typeof c ? c({ isAnimating: m }) : c,
                       ),
                     })
                   },
@@ -738,7 +735,7 @@
           )
         })(u.Component)
       ;(0, s.Z)(Z, 'defaultProps', { duration: 'normal', type: 'slide' })
-      var v = f.Z.create({
+      var v = m.Z.create({
         transitionStyles: { transitionProperty: 'opacity, height', transitionTimingFunction: 'ease' },
         overflowHidden: { overflow: 'hidden' },
       })

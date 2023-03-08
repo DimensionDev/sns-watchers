@@ -3621,22 +3621,6 @@
         a('a5f32aa2', 'Blocked accounts'),
         a('daef29b8', 'Muted accounts'),
         a('i0dd9b9e', 'Muted words'),
-        a('bcd75df0', 'Hide this'),
-        a('efe1f70c', 'Visit Twitter Toolbox'),
-        a('bc20c736', 'Discover more blocking tools'),
-        a('ib41f912', 'The Twitter Toolbox offers more solutions to improve your experience on Twitter.'),
-        a(
-          'd49c7178',
-          'Reclaim your mentions from the trolls with block lists, automatic muting, and community support.',
-        ),
-        a(
-          'd1050ace',
-          'Your personal smart moderator that protects your mentions in real-time, automatically, and for free.',
-        ),
-        a(
-          'd1ea5780',
-          'Improve your social media experience and beat the trolls with simple, AI-based moderation tools.',
-        ),
         a('b4006390', 'Allow message requests from everyone'),
         a(
           'f7da127c',
@@ -4840,15 +4824,15 @@
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
         ),
         a('c144fa52', 'What kind of content do you create? Select all that apply.'),
-        a('f1bf337e', 'Select categories')
-      a('d4062c9a', 'Where do you share content? Select all that apply.'),
+        a('f1bf337e', 'Select categories'),
+        a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
-        a('gfc80842', 'Submit application'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.')
+      a('gfc80842', 'Submit application'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
@@ -6043,29 +6027,10 @@
         }),
         a('be59fddf', function (e) {
           return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        })
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('b357b2ad', function (e) {
-        return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-      }),
+        }),
+        a('b357b2ad', function (e) {
+          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
         a('aba12f5d', function (e) {
           return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
         }),
@@ -6115,10 +6080,29 @@
         }),
         a('ad666301', function (e) {
           return e.fullName + ' on Twitter'
-        }),
-        a('g132f681', function (e) {
-          return '@' + e.screenName + ' Tweeted...'
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('g132f681', function (e) {
+        return '@' + e.screenName + ' Tweeted...'
+      }),
         a('bc6bb295', function (e) {
           return '@' + e.screenName + ' on Twitter'
         }),
@@ -7352,15 +7336,15 @@
         ),
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.')
-      a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
         a('fbaf9442', 'Add a starter Deck'),
-        a('b354ea52', 'Adding starter Deck...'),
-        a('if195eb8', 'Adding columns...'),
+        a('b354ea52', 'Adding starter Deck...')
+      a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
         a('habced9e', 'to restore column.'),
         a('g4fcb4f8', 'Column restored.'),
