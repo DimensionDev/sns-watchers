@@ -348,6 +348,10 @@
         a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
         a('j0a8da6e', 'Add an existing account'),
         a('c6f2bf00', 'Manage accounts'),
+        a('j62f43a6', 'View delegate accounts'),
+        a('d4c52015', function (e) {
+          return e.count + ' pending delegate account invitation' + n(e.count, '', 's')
+        }),
         a('b8e1d524', 'Accounts'),
         a('gef27c4c', 'Account menu'),
         a('daffabde', 'acting as...'),
@@ -1146,16 +1150,16 @@
         }),
         a('d9b417c4', 'Set as not interested'),
         a('c29d6806', 'Stop recommending'),
-        a('e839db3a', 'Dismiss'),
-        a('ge8f3043', function (e) {
-          return 'Follow ' + e.topicName + ' Topic'
-        }),
+        a('e839db3a', 'Dismiss')
+      a('ge8f3043', function (e) {
+        return 'Follow ' + e.topicName + ' Topic'
+      }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
-        })
-      a('i77347d1', function (e) {
-        return 'Dismiss ' + e.topicName + ' Topic'
-      }),
+        }),
+        a('i77347d1', function (e) {
+          return 'Dismiss ' + e.topicName + ' Topic'
+        }),
         a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
@@ -2343,13 +2347,13 @@
         a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
-        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
-        a(
-          'b6203a2e',
-          'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
-        ),
-        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note')
-      a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note')
+      a(
+        'b6203a2e',
+        'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
+      ),
+        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
+        a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
           'ife4baaa',
           'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -3601,10 +3605,10 @@
         a(
           'j7fc0afc',
           'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-        ),
-        a('f527b322', 'Protect my account'),
-        a('f56d108e', 'Photo tagging')
-      a('d165c992', 'Anyone can tag you'),
+        )
+      a('f527b322', 'Protect my account'),
+        a('f56d108e', 'Photo tagging'),
+        a('d165c992', 'Anyone can tag you'),
         a('ea339390', 'Only people you follow can tag you'),
         a('e3a761ee', 'Off'),
         a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
@@ -4829,10 +4833,10 @@
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
-        a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.')
-      a('gfc80842', 'Submit application'),
+        a('ab21629a', 'How do you plan to use Subscriptions?')
+      a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
+        a('gfc80842', 'Submit application'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
@@ -6059,27 +6063,6 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        }),
-        a('cd869707', function (e) {
-          return (
-            e.date +
-            ': ' +
-            e.likeCount +
-            ' like' +
-            n(e.likeCount, '', 's') +
-            '. ' +
-            e.retweetCount +
-            ' retweet' +
-            n(e.retweetCount, '', 's') +
-            '. ' +
-            e.replyCount +
-            ' repl' +
-            n(e.replyCount, 'y', 'ies') +
-            '.'
-          )
-        }),
-        a('ad666301', function (e) {
-          return e.fullName + ' on Twitter'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6100,9 +6083,30 @@
           c(e, t)
         )
       }
-      a('g132f681', function (e) {
-        return '@' + e.screenName + ' Tweeted...'
+      a('cd869707', function (e) {
+        return (
+          e.date +
+          ': ' +
+          e.likeCount +
+          ' like' +
+          n(e.likeCount, '', 's') +
+          '. ' +
+          e.retweetCount +
+          ' retweet' +
+          n(e.retweetCount, '', 's') +
+          '. ' +
+          e.replyCount +
+          ' repl' +
+          n(e.replyCount, 'y', 'ies') +
+          '.'
+        )
       }),
+        a('ad666301', function (e) {
+          return e.fullName + ' on Twitter'
+        }),
+        a('g132f681', function (e) {
+          return '@' + e.screenName + ' Tweeted...'
+        }),
         a('bc6bb295', function (e) {
           return '@' + e.screenName + ' on Twitter'
         }),
@@ -7341,10 +7345,10 @@
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
-        a('h36d2aa2', 'Learn some handy tips to get you started.'),
-        a('fbaf9442', 'Add a starter Deck'),
-        a('b354ea52', 'Adding starter Deck...')
-      a('if195eb8', 'Adding columns...'),
+        a('h36d2aa2', 'Learn some handy tips to get you started.')
+      a('fbaf9442', 'Add a starter Deck'),
+        a('b354ea52', 'Adding starter Deck...'),
+        a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
         a('habced9e', 'to restore column.'),
         a('g4fcb4f8', 'Column restored.'),
