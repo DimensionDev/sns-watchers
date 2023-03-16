@@ -1333,12 +1333,6 @@
         a('ebad846c', 'Share Tweet via …'),
         a('f1fcb2ec', 'Remove Tweet from Folder'),
         a('fd80ffb0', 'View Quote Tweets'),
-        a('d2100fb5', function (e) {
-          return '' + e.displayCountAll
-        }),
-        a('g692ffe2', function (e) {
-          return 'Reaction' + n(e.count, '', 's')
-        }),
         a('e8866a55', function (e) {
           return '' + e.displayCount
         }),
@@ -2344,10 +2338,10 @@
         a('d004c768', 'Notes that need more ratings'),
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
-        a('d68a370c', 'Last update: ')
-      a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('d68a370c', 'Last update: '),
+        a('b9793c9a', 'You haven’t written any notes yet'),
+        a('bed66f92', 'Here’s how to start:')
+      a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
@@ -3610,13 +3604,13 @@
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
-        )
-      a('h3909cd0', 'Inferred identity'),
+        ),
+        a('h3909cd0', 'Inferred identity'),
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        ),
-        a('h14ba864', 'Data sharing with business partners'),
+        )
+      a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
@@ -4830,13 +4824,13 @@
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
-        a('e873f0ae', 'Apply for Super Follows')
-      a('gd115e64', 'Apply for Subscriptions'),
+        a('e873f0ae', 'Apply for Super Follows'),
+        a('gd115e64', 'Apply for Subscriptions'),
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-        ),
-        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        )
+      a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
@@ -6034,6 +6028,12 @@
         }),
         a('d0681155', function (e) {
           return e.fullName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('be59fddf', function (e) {
+          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('b357b2ad', function (e) {
+          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6054,15 +6054,9 @@
           c(e, t)
         )
       }
-      a('be59fddf', function (e) {
-        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+      a('aba12f5d', function (e) {
+        return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
       }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('aba12f5d', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-        }),
         a('b9184ae3', function (e) {
           return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -7345,10 +7339,10 @@
           'dad15d22',
           'Save time by importing your existing Search, List and Profile columns. You won’t be able to copy these over later.',
         ),
-        a('j85b4522', 'Or start from scratch')
-      a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
-        a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('j85b4522', 'Or start from scratch'),
+        a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.')
+      a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
@@ -8907,12 +8901,6 @@
               key: 'g8b28775',
               get: function get() {
                 return ['Only @' + this.props.username + ' and their Twitter Circle can see these Tweets.']
-              },
-            },
-            {
-              key: 'd01be6d9',
-              get: function get() {
-                return ['', ' ']
               },
             },
             {
