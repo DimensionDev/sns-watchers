@@ -27,12 +27,12 @@
             link: a,
             onPress: t,
             pullRight: n,
-            style: m.button,
+            style: d.button,
             testID: s,
             type: 'primaryText',
           })
         }),
-        m = a.Z.create(function (e) {
+        d = a.Z.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
       var p = f
@@ -80,9 +80,9 @@
         s = (n(22144), n(818178), n(326936), n(136728), n(202784)),
         u = n(914767),
         f = n(473228),
-        m = n.n(f),
+        d = n.n(f),
         p = n(497317),
-        d = n(76687),
+        m = n(76687),
         h = n(663143),
         w = n(266298),
         g = n(923335),
@@ -98,29 +98,29 @@
         })
         .withAnalytics()
       var b = n(882426),
-        _ = Object.freeze({ follow: m().i79ab12a, following: m().d960b55c, unfollow: m().c0f56044 }),
-        E = Object.freeze({
-          follow: m().fcf51fe6,
-          following: m().e9a90d72,
-          unfollow: m().bf403716,
-          confirmationHeadline: m().c9f08e29,
-          confirmationSheetText: m().abc600f4,
-        }),
+        _ = Object.freeze({ follow: d().i79ab12a, following: d().d960b55c, unfollow: d().c0f56044 }),
         S = Object.freeze({
-          follow: m().cd876e02,
-          following: m().f2816e02,
-          unfollow: m().f5b04fbc,
-          confirmationHeadline: m().c481ae3f,
-          confirmationSheetText: m().aa3ba124,
+          follow: d().fcf51fe6,
+          following: d().e9a90d72,
+          unfollow: d().bf403716,
+          confirmationHeadline: d().c9f08e29,
+          confirmationSheetText: d().abc600f4,
         }),
-        x = Object.freeze({
-          follow: m().e0e730b0,
-          following: m().e0e730b0,
-          unfollow: m().b1850062,
-          confirmationHeadline: m().gd3f996f,
-          confirmationSheetText: m().i36c403c,
+        T = Object.freeze({
+          follow: d().cd876e02,
+          following: d().f2816e02,
+          unfollow: d().f5b04fbc,
+          confirmationHeadline: d().c481ae3f,
+          confirmationSheetText: d().aa3ba124,
         }),
-        T = (function (e) {
+        E = Object.freeze({
+          follow: d().e0e730b0,
+          following: d().e0e730b0,
+          unfollow: d().b1850062,
+          confirmationHeadline: d().gd3f996f,
+          confirmationSheetText: d().i36c403c,
+        }),
+        x = (function (e) {
           ;(0, r.Z)(n, e)
           var t = (0, l.Z)(n)
           function n() {
@@ -156,27 +156,27 @@
                     return { follow: _.follow, unfollow: _.unfollow, following: _.following }
                   case b.q.Favorite:
                     return {
+                      follow: T.follow,
+                      unfollow: T.unfollow,
+                      following: T.following,
+                      confirmationHeadline: T.confirmationHeadline && T.confirmationHeadline({ title: n.name }),
+                      confirmationSheetText: T.confirmationSheetText,
+                    }
+                  case b.q.Star:
+                    return {
                       follow: S.follow,
                       unfollow: S.unfollow,
                       following: S.following,
                       confirmationHeadline: S.confirmationHeadline && S.confirmationHeadline({ title: n.name }),
                       confirmationSheetText: S.confirmationSheetText,
                     }
-                  case b.q.Star:
+                  case b.q.Interested:
                     return {
                       follow: E.follow,
                       unfollow: E.unfollow,
                       following: E.following,
                       confirmationHeadline: E.confirmationHeadline && E.confirmationHeadline({ title: n.name }),
                       confirmationSheetText: E.confirmationSheetText,
-                    }
-                  case b.q.Interested:
-                    return {
-                      follow: x.follow,
-                      unfollow: x.unfollow,
-                      following: x.following,
-                      confirmationHeadline: x.confirmationHeadline && x.confirmationHeadline({ title: n.name }),
-                      confirmationSheetText: x.confirmationSheetText,
                     }
                   case b.q.Default:
                   default:
@@ -218,7 +218,7 @@
                     l = t.style,
                     c = t.textMode,
                     f = t.topic,
-                    m = f.following,
+                    d = f.following,
                     p = f.name
                   return s.createElement(w.Z, { customText: p, displayMode: h.BH.topic }, function (t) {
                     return s.createElement(u.Z, {
@@ -229,7 +229,7 @@
                       },
                       buttonText: e._getButtonText(c),
                       displayMode: e._getDisplayMode(c),
-                      isFollowing: m,
+                      isFollowing: d,
                       isTransparent: o,
                       name: p,
                       nativeID: i,
@@ -239,7 +239,7 @@
                       size: r,
                       style: l,
                       type: 'topic',
-                      withConfirmationSheetText: m,
+                      withConfirmationSheetText: d,
                     })
                   })
                 },
@@ -254,8 +254,8 @@
             n
           )
         })(s.Component)
-      ;(0, c.Z)(T, 'defaultProps', { size: 'small', textMode: b.q.Default })
-      var C = (0, d.ZP)(y(T))
+      ;(0, c.Z)(x, 'defaultProps', { size: 'small', textMode: b.q.Default })
+      var C = (0, m.ZP)(y(x))
     },
     882426: function _(e, t, n) {
       n.d(t, {
@@ -276,10 +276,10 @@
       n.r(t),
         n.d(t, {
           ExploreScreen: function ExploreScreen() {
-            return D
+            return N
           },
           default: function _default() {
-            return N
+            return R
           },
         })
       var o = n(709249),
@@ -291,9 +291,9 @@
         s = (n(818178), n(202784)),
         u = n(108352),
         f = n(473228),
-        m = n.n(f),
+        d = n.n(f),
         p = n(24101),
-        d = n(790876),
+        m = n(790876),
         h = n(753331),
         w = n(1778),
         g = n(819313),
@@ -302,10 +302,10 @@
         y = n(517847),
         b = n(129022),
         _ = n(920579),
-        E = (n(477950), n(74069), n(24949)),
-        S = n(16587),
-        x = n(624630),
-        T = n(392160),
+        S = (n(477950), n(74069), n(24949)),
+        T = n(16587),
+        E = n(624630),
+        x = n(392160),
         C = function C(e, t) {
           var n, o
           return (
@@ -313,21 +313,21 @@
             void 0
           )
         }
-      var F = (0, T.Z)()
+      var H = (0, x.Z)()
         .propsFromState(function () {
           return {
             initialTabModule:
-              ((e = (0, S.Z)(function (e) {
+              ((e = (0, T.Z)(function (e) {
                 return (0, _.fy)(e)
               })),
-              (t = (0, S.Z)(function (e, t) {
+              (t = (0, T.Z)(function (e, t) {
                 return (0, _.fy)(e, t)
               })),
-              (0, E.P1)(
-                x.qP,
+              (0, S.P1)(
+                E.qP,
                 C,
                 function (t) {
-                  return e((0, x.qP)(t)).selectPageConfiguration(t)
+                  return e((0, E.qP)(t)).selectPageConfiguration(t)
                 },
                 function (e, n, o) {
                   var i
@@ -339,22 +339,22 @@
           var e, t
         })
         .withAnalytics({ page: 'guide', section: 'main' })
-      var k = n(133028),
-        B = n(44895)
-      var H = (0, k.Z)({}, (0, B.G)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' }))
-      var P = m().fcf3e54c,
-        L = m().ead349a8,
-        I = m().a19ce060,
-        A = function A() {
+      var F = n(133028),
+        P = n(44895)
+      var k = (0, F.Z)({}, (0, P.G)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' }))
+      var B = d().fcf3e54c,
+        A = d().ead349a8,
+        I = d().a19ce060,
+        L = function L() {
           return s.createElement(v.Z, null)
         },
-        O = function O() {
+        M = function M() {
           return s.createElement(u.Z, { message: I })
         },
-        R = 600,
-        M = 315,
-        q = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
-        D = (function (e) {
+        q = 600,
+        O = 315,
+        D = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
+        N = (function (e) {
           ;(0, r.Z)(n, e)
           var t = (0, l.Z)(n)
           function n() {
@@ -397,22 +397,22 @@
                       : '/settings/trends',
                     c = s.createElement(p.Z, { onPress: this._handleSettingsClick, pullRight: !0, to: l }),
                     u = i.state && i.state.searchFocused,
-                    f = s.createElement(d.Z, { withSearchBox: !1, withTrends: !1 })
+                    f = s.createElement(m.Z, { withSearchBox: !1, withTrends: !1 })
                   return s.createElement(
                     s.Fragment,
                     null,
-                    s.createElement(h.Z, { description: L, includeOpenGraphMeta: !1, title: P }),
+                    s.createElement(h.Z, { description: A, includeOpenGraphMeta: !1, title: B }),
                     s.createElement(w.Z, {
                       canonical: 'https://twitter.com/explore',
-                      description: L,
-                      image: q,
-                      imageH: M,
-                      imageW: R,
-                      title: P,
+                      description: A,
+                      image: D,
+                      imageH: O,
+                      imageW: q,
+                      title: B,
                       type: 'article',
                     }),
                     s.createElement(y.Z, {
-                      entryConfiguration: H,
+                      entryConfiguration: k,
                       fab: r,
                       getTabLink: this._getTabLink,
                       history: n,
@@ -420,14 +420,14 @@
                       module: o,
                       onBackClick: u ? this._handleBackClick : void 0,
                       prerollDisplayLocation: b.Nw.OTHER,
-                      renderEmptyState: A,
-                      renderUnavailable: O,
+                      renderEmptyState: L,
+                      renderUnavailable: M,
                       rightControl: c,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: a,
                       sidebarContent: f,
                       timelinePrefix: _.uI,
-                      title: P,
+                      title: B,
                       withBottomLoginSignupBar: !0,
                       withDeferredView: !0,
                       withSearchBox: !0,
@@ -440,119 +440,8 @@
             n
           )
         })(s.Component)
-      ;(0, c.Z)(D, 'contextType', g.rC)
-      var N = F(D)
-    },
-    707251: function _(e, t, n) {
-      n.r(t),
-        n.d(t, {
-          ExploreRevampScreen: function ExploreRevampScreen() {
-            return C
-          },
-          default: function _default() {
-            return F
-          },
-        })
-      var o = n(133028),
-        i = n(202784),
-        a = n(241441),
-        r = n(473228),
-        l = n.n(r),
-        c = n(24101),
-        s = n(790876),
-        u = n(612969),
-        f = n(509082),
-        m = n(1778),
-        p = n(543467),
-        d = n(819313),
-        h = n(107765),
-        w = n(963705),
-        g = n(440082),
-        Z = n(460673),
-        v = n(78772)
-      var y = (0, n(836843).Z)({
-        timelineId: 'forYouExploreGraphQL',
-        network: {
-          getEndpoint: function getEndpoint(e) {
-            return e.Explore.fetchForYouExplore
-          },
-          getEndpointParams: function getEndpointParams(e) {
-            var t = e.count,
-              n = e.cursor
-            return { count: t, cursor: 'string' == typeof n ? n : void 0 }
-          },
-        },
-        context: 'FETCH_FOR_YOU_EXPLORE',
-        perfKey: 'forYouExploreGraphQL',
-        formatResponse: v.Z,
-      })
-      var b = l().fcf3e54c,
-        _ = l().ead349a8,
-        E = { page: 'guide', section: 'main' },
-        S = 600,
-        x = 315,
-        T = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
-        C = function C(e) {
-          var t = e.analytics,
-            n = e.history,
-            r = e.location,
-            l = i.useContext(d.rC).featureSwitches,
-            Z = i.useRef(null),
-            v = r.state && r.state.searchFocused,
-            C = l.isTrue('responsive_web_trends_setting_new_endpoints') ? '/settings/explore' : '/settings/trends',
-            F = i.useCallback(
-              function (e) {
-                t.scribe((0, o.Z)((0, o.Z)({}, E), {}, { element: 'settings_button', action: 'click' }))
-              },
-              [t],
-            ),
-            k = i.useCallback(
-              function () {
-                n.goBack({ backLocation: '/' })
-              },
-              [n],
-            ),
-            B = i.createElement(h.Z, { history: n }),
-            H = i.createElement(c.Z, { onPress: F, pullRight: !0, to: C }),
-            P = i.createElement(s.Z, { withSearchBox: !1, withTrends: !1 })
-          return i.createElement(
-            i.Fragment,
-            null,
-            i.createElement(
-              w.Z,
-              null,
-              i.createElement(m.Z, {
-                canonical: 'https://twitter.com/explore',
-                description: _,
-                image: T,
-                imageH: x,
-                imageW: S,
-                title: b,
-                type: 'article',
-              }),
-              i.createElement(p.Z, {
-                history: n,
-                onBackClick: v ? k : void 0,
-                primaryContent: i.createElement(
-                  f.Z,
-                  { component: a.Z, fab: B },
-                  i.createElement(u.Z, null, i.createElement(g.Z, { module: y, title: b })),
-                ),
-                rightControl: H,
-                searchBoxRef: function searchBoxRef(e) {
-                  Z.current = e
-                },
-                secondaryBar: null,
-                sidebarContent: P,
-                title: b,
-                withBottomLoginSignupBar: !0,
-                withSearchBox: !0,
-              }),
-            ),
-            !1,
-          )
-        }
-      var F = (0, Z.Z)(C)
+      ;(0, c.Z)(N, 'contextType', g.rC)
+      var R = H(N)
     },
     611731: function _(e, t, n) {
       n.d(t, {
@@ -569,9 +458,9 @@
         s = n(256666),
         u = (n(22144), n(818178), n(202784)),
         f = n(890601),
-        m = n(368737),
+        d = n(368737),
         p = n(325686),
-        d = Object.freeze({ normal: 100, long: 250, longer: 500 }),
+        m = Object.freeze({ normal: 100, long: 250, longer: 500 }),
         h = Object.freeze({ animate: 'animate', static: 'static', prep: 'prep' }),
         w = { height: 'auto', opacity: 1 },
         g = { height: 0, opacity: 0 },
@@ -690,14 +579,14 @@
                       l = o.type,
                       c = e.renderChildren,
                       s = n === h['static'],
-                      m = n === h.animate,
+                      d = n === h.animate,
                       w = 'fade' === l
                     if (s && !a) return null
                     var g = [
                       !s && { willChange: 'opacity, height' },
-                      m && v.transitionStyles,
-                      m && { transitionDuration: ''.concat(d[i], 'ms') },
-                      m && !w && v.overflowHidden,
+                      d && v.transitionStyles,
+                      d && { transitionDuration: ''.concat(m[i], 'ms') },
+                      d && !w && v.overflowHidden,
                       !s && t,
                     ]
                     return (0, f.Z)('div', {
@@ -708,7 +597,7 @@
                       children: u.createElement(
                         p.Z,
                         { ref: this._setMeasurementNode },
-                        'function' == typeof c ? c({ isAnimating: m }) : c,
+                        'function' == typeof c ? c({ isAnimating: d }) : c,
                       ),
                     })
                   },
@@ -735,7 +624,7 @@
           )
         })(u.Component)
       ;(0, s.Z)(Z, 'defaultProps', { duration: 'normal', type: 'slide' })
-      var v = m.Z.create({
+      var v = d.Z.create({
         transitionStyles: { transitionProperty: 'opacity, height', transitionTimingFunction: 'ease' },
         overflowHidden: { overflow: 'hidden' },
       })
