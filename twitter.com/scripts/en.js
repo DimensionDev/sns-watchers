@@ -212,7 +212,6 @@
         a('ded416b0', 'Spaces'),
         a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
-        a('e2eef3c2', 'Verified Orgs'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
         }),
@@ -1150,11 +1149,11 @@
           return '・' + e.formattedTime
         }),
         a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending')
-      a('e839db3a', 'Dismiss'),
-        a('ge8f3043', function (e) {
-          return 'Follow ' + e.topicName + ' Topic'
-        }),
+        a('c29d6806', 'Stop recommending'),
+        a('e839db3a', 'Dismiss')
+      a('ge8f3043', function (e) {
+        return 'Follow ' + e.topicName + ' Topic'
+      }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
         }),
@@ -1223,6 +1222,7 @@
         a('a407814e', 'Last edited'),
         a('d91a6826', 'This is the latest version of this Tweet.'),
         a('ffe16626', 'Reply filter is on.'),
+        a('af5cd00e', 'Find out more'),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -1293,7 +1293,6 @@
         a('gc45a90a', 'Expand this prompt'),
         a('j8eff20a', 'Help keep Twitter a place for reliable info. Find out more before liking this Tweet.'),
         a('ce6df39e', 'Help keep Twitter a place for reliable info. Find out more before sharing this Tweet.'),
-        a('af5cd00e', 'Find out more'),
         a('e29c651e', 'Thanks for learning more'),
         a('b141cbf0', 'You have been blocked from liking this user’s Tweets at their request.'),
         a('e902fd9e', 'Something went wrong. Try liking your Tweet again in a minute.'),
@@ -1333,6 +1332,12 @@
         a('ebad846c', 'Share Tweet via …'),
         a('f1fcb2ec', 'Remove Tweet from Folder'),
         a('fd80ffb0', 'View Quote Tweets'),
+        a('d2100fb5', function (e) {
+          return '' + e.displayCountAll
+        }),
+        a('g692ffe2', function (e) {
+          return 'Reaction' + n(e.count, '', 's')
+        }),
         a('e8866a55', function (e) {
           return '' + e.displayCount
         }),
@@ -1345,11 +1350,11 @@
         a('c42234da', function (e) {
           return 'Retweet' + n(e.count, '', 's')
         }),
-        a('eff958fb', function (e) {
+        a('f6e12707', function (e) {
           return '' + e.displayCount
         }),
-        a('i5a8c515', function (e) {
-          return 'Quote' + n(e.count, '', 's')
+        a('e2414185', function (e) {
+          return 'Quote Tweet' + n(e.count, '', 's')
         }),
         a('bc2ceaf2', 'Sending Tweet...'),
         a('j4c40da4', 'Send now'),
@@ -1766,9 +1771,6 @@
         a('b6c63977', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
         a('f70a36d0', 'Tweet all'),
         a('cf433586', 'Introducing'),
         a('a603e958', 'Reply downvotes'),
@@ -1936,6 +1938,10 @@
         a('g88e2a2a', 'Coming Up'),
         a('d39e8b30', 'Add a note'),
         a('a91bb144', 'Submit'),
+        a(
+          'bc27bc8c',
+          'Your note will be publicly available in the Community Notes site and may be shown to other participants on Twitter.',
+        ),
         a('dc7a6625', function (e) {
           return 'Writing as ' + e.displayAlias
         }),
@@ -2245,7 +2251,6 @@
         a('ge25848a', 'Current Status'),
         a('fe4fd310', 'Helpful'),
         a('ce8b505e', 'Not helpful'),
-        a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
           'j21902fc',
           'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the Tweet.',
@@ -2253,6 +2258,8 @@
         a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
         a('fc6e4594', 'Top tags selected by raters'),
+        a('b3de4a42', 'Rating Impact'),
+        a('a7b0393c', 'Writing Impact'),
         a('c2a6ec00', 'Want to join Community Notes?'),
         a('cbfa448c', 'Help people stay better informed on Twitter.'),
         a('ab23a972', 'Follow the conversation'),
@@ -2284,8 +2291,6 @@
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
-        a('b3de4a42', 'Rating Impact'),
-        a('a7b0393c', 'Writing Impact'),
         a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'e8c599f0',
@@ -2340,13 +2345,13 @@
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:')
-      a('a3ca686a', 'See tips for writing helpful notes'),
-        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
-        a(
-          'b6203a2e',
-          'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
-        ),
+        a('bed66f92', 'Here’s how to start:'),
+        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note')
+      a(
+        'b6203a2e',
+        'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
+      ),
         a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
         a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
@@ -2968,45 +2973,7 @@
         }),
         a('cfe877ca', 'Choose who to follow'),
         a('j231d352', 'Follow all'),
-        a('j7f4bf18', 'Go to Twitter Delegate Settings'),
-        a('b9226ec1', 'Signed in as '),
-        a('f47b48f6', 'user'),
-        a('i95202f6', 'Accounts delegated to you'),
-        a('a44c6034', 'Pending invites'),
-        a(
-          'd70a0f26',
-          'As a member, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. Admins can also invite or remove contributors to the account and view account analytics.',
-        ),
-        a('h0d3bddc', 'Admin access'),
-        a('c54aafb0', 'Contributor access'),
-        a('idc35f32', 'You haven’t been delegated to any accounts'),
-        a('cb04a824', 'Contributor'),
-        a('fab787b4', 'Leave account'),
-        a('bfbe9620', 'View members'),
-        a('ee3c78fd', function (e) {
-          return 'You’ll no longer be an ' + e.role + ' on this account.'
-        }),
-        a('f02b1347', function (e) {
-          return 'You’ll no longer be a ' + e.role + ' on this account.'
-        }),
-        a('cd00ea21', function (e) {
-          return 'Leave @' + e.screenName + '?'
-        }),
-        a('efa88ab1', function (e) {
-          return 'Left @' + e.screenName
-        }),
-        a('c6dae164', 'Accept invitation'),
-        a('f8376170', 'Reject invitation'),
-        a('a68c45e4', 'Reject'),
-        a('aa35b48d', function (e) {
-          return 'Reject invite from @' + e.screenName + '?'
-        }),
-        a('ed2a4b05', function (e) {
-          return 'Rejected member invite to @' + e.screenName
-        }),
-        a('e73f9635', function (e) {
-          return 'Accepted member invite to @' + e.screenName
-        }),
+        a('a1b7d300', 'user'),
         a('dbc85148', 'Select a message'),
         a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
         a('d4f88600', 'Verify contact'),
@@ -3609,8 +3576,8 @@
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        )
-      a('h14ba864', 'Data sharing with business partners'),
+        ),
+        a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
@@ -3638,8 +3605,8 @@
         a(
           'j7fc0afc',
           'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
-        ),
-        a('f527b322', 'Protect my account'),
+        )
+      a('f527b322', 'Protect my account'),
         a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
         a('ea339390', 'Only people you follow can tag you'),
@@ -3688,12 +3655,6 @@
           'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
         ),
         a('da202f9a', 'Your advertiser list'),
-        a('b5fe50fc', 'Ads Categories'),
-        a(
-          'c31a2ea6',
-          'Enabling these settings make you eligible to see ads in these categories. Choose to see fewer ads about these categories by opting out.',
-        ),
-        a('if996630', 'Gambling'),
         a('f80a33a0', 'Allow use of where you see Twitter content across the Web'),
         a(
           'b276596c',
@@ -4270,6 +4231,7 @@
         a('cd1305e8', 'Allow others to invite you to their account'),
         a('j339ef22', 'Allow anyone to invite you'),
         a('g4b0c2dc', 'Only allow people you follow to invite you'),
+        a('i95202f6', 'Accounts delegated to you'),
         a('cb8ebf5c', 'Members you’ve delegated'),
         a('d9aef256', 'Your delegations'),
         a('afb3ccf6', 'Don’t allow'),
@@ -4292,6 +4254,7 @@
         a('b7aa7642', 'Invite sent'),
         a('edbca224', 'Send invite'),
         a('f4834ca6', 'Invite another member'),
+        a('cb04a824', 'Contributor'),
         a(
           'c4088a8c',
           'Contributors can send Direct Messages, publish Tweets, and create Lists. Contributors can also view the account’s Direct Messages, Tweets, and Lists.',
@@ -4347,6 +4310,40 @@
         }),
         a('h5951997', function (e) {
           return '@' + e.screenName + ' uninvited'
+        }),
+        a('a44c6034', 'Pending invites'),
+        a(
+          'd70a0f26',
+          'As a member, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. Admins can also invite or remove contributors to the account and view account analytics.',
+        ),
+        a('h0d3bddc', 'Admin access'),
+        a('c54aafb0', 'Contributor access'),
+        a('idc35f32', 'You haven’t been delegated to any accounts'),
+        a('fab787b4', 'Leave account'),
+        a('bfbe9620', 'View members'),
+        a('ee3c78fd', function (e) {
+          return 'You’ll no longer be an ' + e.role + ' on this account.'
+        }),
+        a('f02b1347', function (e) {
+          return 'You’ll no longer be a ' + e.role + ' on this account.'
+        }),
+        a('cd00ea21', function (e) {
+          return 'Leave @' + e.screenName + '?'
+        }),
+        a('efa88ab1', function (e) {
+          return 'Left @' + e.screenName
+        }),
+        a('c6dae164', 'Accept invitation'),
+        a('f8376170', 'Reject invitation'),
+        a('a68c45e4', 'Reject'),
+        a('aa35b48d', function (e) {
+          return 'Reject invite from @' + e.screenName + '?'
+        }),
+        a('ed2a4b05', function (e) {
+          return 'Rejected member invite to @' + e.screenName
+        }),
+        a('e73f9635', function (e) {
+          return 'Accepted member invite to @' + e.screenName
         }),
         a('d2da668c', 'Delegate members'),
         a('ddf27b8e', 'Invite a contributor'),
@@ -4829,15 +4826,15 @@
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-        )
-      a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        ),
+        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
-        a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
+        a('ab21629a', 'How do you plan to use Subscriptions?')
+      a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('gfc80842', 'Submit application'),
         a('f4f4dd60', 'Required'),
@@ -4900,7 +4897,7 @@
           'g2a6f160',
           'Double-check and confirm your Subscription price. You won’t be able to come back and change the price after you set it.',
         ),
-        a('g767d1c9', 'Note: you won’t be able to change it'),
+        a('i68a1507', 'Note: you won’t be able to change it after'),
         a('ic9124b0', 'Choose what your Super Followers pay'),
         a('df057690', 'Choose what your Subscribers pay'),
         a('d5737f0e', 'Monthly Subscription'),
@@ -5355,10 +5352,12 @@
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
         a('deaf5b16', 'Retry'),
+        a('d5568440', 'Please enter a stronger password.'),
         a('a3841918', 'Email'),
         a('f70cd5ee', 'Phone'),
         a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
+        a('cd24fe60', 'Please enter a valid phone number.'),
         a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
@@ -5371,6 +5370,7 @@
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
         }),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('b5474bd2', 'Hmmm... something went wrong.'),
         a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
         a(
@@ -6034,29 +6034,10 @@
         }),
         a('b357b2ad', function (e) {
           return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        })
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('aba12f5d', function (e) {
-        return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-      }),
+        }),
+        a('aba12f5d', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+        }),
         a('b9184ae3', function (e) {
           return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6082,25 +6063,44 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        }),
-        a('cd869707', function (e) {
-          return (
-            e.date +
-            ': ' +
-            e.likeCount +
-            ' like' +
-            n(e.likeCount, '', 's') +
-            '. ' +
-            e.retweetCount +
-            ' retweet' +
-            n(e.retweetCount, '', 's') +
-            '. ' +
-            e.replyCount +
-            ' repl' +
-            n(e.replyCount, 'y', 'ies') +
-            '.'
-          )
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('cd869707', function (e) {
+        return (
+          e.date +
+          ': ' +
+          e.likeCount +
+          ' like' +
+          n(e.likeCount, '', 's') +
+          '. ' +
+          e.retweetCount +
+          ' retweet' +
+          n(e.retweetCount, '', 's') +
+          '. ' +
+          e.replyCount +
+          ' repl' +
+          n(e.replyCount, 'y', 'ies') +
+          '.'
+        )
+      }),
         a('ad666301', function (e) {
           return e.fullName + ' on Twitter'
         }),
@@ -6409,6 +6409,7 @@
         ),
         a('dad69faa', 'Update your payment method'),
         a('ab0decc0', 'Subscribe'),
+        a('aa0d60aa', 'month'),
         a('i8386756', 'Monthly Plan'),
         a('ac163d10', 'Annual Plan'),
         a('i2c32253', function (e) {
@@ -6971,7 +6972,6 @@
         a('gd67d29b', function (e) {
           return 'Invitations (' + e.count + ')'
         }),
-        a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
         a('d30ea6f3', function (e) {
@@ -7036,13 +7036,12 @@
         a('i7b2f08e', 'Welcome to Verified Organizations'),
         a('g4e18b84', 'You’ve hit your affiliate limit'),
         a('hd7d278c', 'No thanks'),
-        a('e2c452cf', 'Learn more'),
+        a('f1dd3ac3', 'Learn more'),
         a('d7eebb60', 'Setting up your subscription'),
         a(
           'f45d02e8',
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
-        a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7341,13 +7340,13 @@
         ),
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.')
-      a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
-        a('h36d2aa2', 'Learn some handy tips to get you started.'),
-        a('fbaf9442', 'Add a starter Deck'),
+        a('h36d2aa2', 'Learn some handy tips to get you started.')
+      a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
@@ -8166,6 +8165,7 @@
         a('a8b58cf4', 'Show this thread'),
         a('i5f742fe', 'Show this poll'),
         a('hf3f8e3a', 'Show more'),
+        a('e078b15d', ' & '),
         a('h13ffc88', 'Voice'),
         a('f5d461f8', 'Voice Tweet'),
         a('de8c5eb2', 'Play audio'),
@@ -8904,6 +8904,12 @@
               },
             },
             {
+              key: 'd01be6d9',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
               key: 'e4eeeeff',
               get: function get() {
                 return ['', ' ']
@@ -8916,7 +8922,7 @@
               },
             },
             {
-              key: 'c9174f1f',
+              key: 'f0259953',
               get: function get() {
                 return ['', ' ']
               },
@@ -9236,18 +9242,6 @@
               },
             },
             {
-              key: 'e837f62f',
-              get: function get() {
-                return [this.props.impactDisplayNumber + ' Rating Impact']
-              },
-            },
-            {
-              key: 'f2bad803',
-              get: function get() {
-                return [this.props.impactDisplayNumber + ' Writing Impact']
-              },
-            },
-            {
               key: 'b936a16b',
               get: function get() {
                 return ['Ideas or suggestions to improve Community Notes? ']
@@ -9383,7 +9377,7 @@
               },
             },
             {
-              key: 'a9ec3729',
+              key: 'i6d68e99',
               get: function get() {
                 return ['', ' ']
               },
@@ -10251,7 +10245,7 @@
               },
             },
             {
-              key: 'f43d68d7',
+              key: 'c5381f09',
               get: function get() {
                 return [
                   'Double-check and confirm your Subscription price. ',
@@ -10849,12 +10843,11 @@
               },
             },
             {
-              key: 'je12b285',
+              key: 'g5ecd34b',
               get: function get() {
                 return [
                   'Verified Organizations is ',
-                  ' per month (plus any applicable tax). Each additional affiliated account is ',
-                  ' per handle per month (plus any applicable tax). ',
+                  ' per month. Each additional affiliated account is $50 per handle per month. ',
                 ]
               },
             },
@@ -11055,6 +11048,12 @@
               key: 'g4eb2847',
               get: function get() {
                 return ['Replying to ', ' ', ' ']
+              },
+            },
+            {
+              key: 'ef529b2f',
+              get: function get() {
+                return ['', ' ', ' ']
               },
             },
             {
@@ -11521,27 +11520,6 @@
           "'BAM' #,##0.00",
           "-'BAM' 'BAM' #,##0.00",
           "-'BAM' ",
-          '',
-          h(),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.a513170045 = m([
-          "'BDT' ",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'BDT' #,##0.00",
-          "-'BDT' 'BDT' #,##0.00",
-          "-'BDT' ",
           '',
           h(),
           '∞',
@@ -12130,27 +12108,6 @@
           "'KWD' #,##0.000",
           "-'KWD' 'KWD' #,##0.000",
           "-'KWD' ",
-          '',
-          h(),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-        (b.b980268822 = m([
-          "'KZT' ",
-          ,
-          1,
-          2,
-          2,
-          ,
-          ,
-          0,
-          3,
-          ,
-          '',
-          "'KZT' #,##0.00",
-          "-'KZT' 'KZT' #,##0.00",
-          "-'KZT' ",
           '',
           h(),
           '∞',
@@ -13019,7 +12976,6 @@
         (b.a2117218168 = p(b('en').numberFormatter({ raw: "'ARS' #,##0.00" }))),
         (b.a55324650 = p(b('en').numberFormatter({ raw: "'A$'#,##0.00" }))),
         (b.a1485592908 = p(b('en').numberFormatter({ raw: "'BAM' #,##0.00" }))),
-        (b.a53540712 = p(b('en').numberFormatter({ raw: "'BDT' #,##0.00" }))),
         (b.b1750690447 = p(b('en').numberFormatter({ raw: "'BGN' #,##0.00" }))),
         (b.b1149478276 = p(b('en').numberFormatter({ raw: "'BHD' #,##0.000" }))),
         (b.b635342850 = p(b('en').numberFormatter({ raw: "'R$'#,##0.00" }))),
@@ -13048,7 +13004,6 @@
         (b.b582160927 = p(b('en').numberFormatter({ raw: "'KES' #,##0.00" }))),
         (b.b1814998358 = p(b('en').numberFormatter({ raw: "'₩'#,##0" }))),
         (b.a2078566178 = p(b('en').numberFormatter({ raw: "'KWD' #,##0.000" }))),
-        (b.a904176341 = p(b('en').numberFormatter({ raw: "'KZT' #,##0.00" }))),
         (b.b1587749088 = p(b('en').numberFormatter({ raw: "'LBP' #,##0" }))),
         (b.b1075992246 = p(b('en').numberFormatter({ raw: "'MAD' #,##0.00" }))),
         (b.b790890028 = p(b('en').numberFormatter({ raw: "'MKD' #,##0.00" }))),
@@ -13610,7 +13565,6 @@
         a('a9d5ffd1', b.a2117218168),
         a('a0e8371d', b.a55324650),
         a('gcc50dc9', b.a1485592908),
-        a('a6a43585', b.a53540712),
         a('a0cc8f2d', b.b1750690447),
         a('i31c32c5', b.b1149478276),
         a('i7dc69e9', b.b635342850),
@@ -13639,7 +13593,6 @@
         a('i6f93b9b', b.b582160927),
         a('c6150bd5', b.b1814998358),
         a('i8921e09', b.a2078566178),
-        a('ef239279', b.a904176341),
         a('hecdb149', b.b1587749088),
         a('fdd039b7', b.b1075992246),
         a('f30c2c37', b.b790890028),
