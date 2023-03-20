@@ -16935,6 +16935,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
               ),
               d.e(
+                'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+              ),
+              d.e(
                 'shared~loader.DMDrawer~bundle.Articles~bundle.Compose~bundle.RichTextCompose~bundle.DirectMessages~bundle.Use',
               ),
               d.e(
@@ -17071,6 +17074,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
               ),
               d.e(
+                'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+              ),
+              d.e(
                 'shared~loader.DMDrawer~bundle.Articles~bundle.Compose~bundle.RichTextCompose~bundle.DirectMessages~bundle.Use',
               ),
               d.e(
@@ -17081,9 +17087,6 @@ window.__SCRIPTS_LOADED__.vendor &&
               ),
               d.e(
                 'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~loader.CommunityHandler',
-              ),
-              d.e(
-                'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
               ),
               d.e(
                 'shared~bundle.Compose~bundle.RichTextCompose~bundle.TrustedFriendsRedirect~bundle.UserLists~bundle.PlainTextC',
@@ -17228,6 +17231,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
+                ),
+                d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Articles~bundle.Compose~bundle.RichTextCompose~bundle.DirectMessages~bundle.Use',
@@ -17657,6 +17663,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
+                ),
+                d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Articles~bundle.Compose~bundle.RichTextCompose~bundle.DirectMessages~bundle.Use',
@@ -18632,6 +18641,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.TweetMediaDetail~bundle.UserAvat',
                 ),
                 d.e(
@@ -18642,9 +18654,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Communities~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.LiveEvent~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e('shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText'),
                 d.e('shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.UserProfile'),
@@ -18757,6 +18766,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~loader.DMDrawer~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.DirectMessages~b',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.TweetMediaDetail~bundle.UserAvat',
                 ),
                 d.e(
@@ -18767,9 +18779,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~loader.DMDrawer~bundle.Communities~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.LiveEvent~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e('shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText'),
                 d.e('shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~bundle.UserProfile'),
@@ -26788,6 +26797,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
               ),
               d.e(
+                'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+              ),
+              d.e(
                 'shared~loader.DMDrawer~bundle.Articles~bundle.Compose~bundle.RichTextCompose~bundle.DirectMessages~bundle.Use',
               ),
               d.e(
@@ -26804,9 +26816,6 @@ window.__SCRIPTS_LOADED__.vendor &&
               ),
               d.e(
                 'shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight',
-              ),
-              d.e(
-                'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
               ),
               d.e(
                 'shared~loader.DMDrawer~bundle.DirectMessages~bundle.LiveEvent~bundle.UserProfile~loader.TimelineRenderer',
@@ -72645,6 +72654,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~bundle.TwitterArticles~',
                 ),
                 d.e(
@@ -72655,9 +72667,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~bundle.ComposeMedia~bundle.TwitterArticles~loaders.video.PlayerBase~loader.MediaPreviewVideoPlayer~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e(
                   'shared~bundle.Communities~bundle.SettingsProfile~bundle.Ocf~bundle.TwitterArticles~bundle.UserLists',
@@ -72814,6 +72823,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~bundle.TwitterArticles~',
                 ),
                 d.e(
@@ -72824,9 +72836,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~bundle.ComposeMedia~bundle.TwitterArticles~loaders.video.PlayerBase~loader.MediaPreviewVideoPlayer~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e(
                   'shared~bundle.Communities~bundle.SettingsProfile~bundle.Ocf~bundle.TwitterArticles~bundle.UserLists',
@@ -72983,6 +72992,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~bundle.TwitterArticles~',
                 ),
                 d.e(
@@ -72993,9 +73005,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~bundle.ComposeMedia~bundle.TwitterArticles~loaders.video.PlayerBase~loader.MediaPreviewVideoPlayer~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e(
                   'shared~bundle.Communities~bundle.SettingsProfile~bundle.Ocf~bundle.TwitterArticles~bundle.UserLists',
@@ -73152,6 +73161,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
                 ),
                 d.e(
+                  'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+                ),
+                d.e(
                   'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~bundle.TwitterArticles~',
                 ),
                 d.e(
@@ -73162,9 +73174,6 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e(
                   'shared~bundle.ComposeMedia~bundle.TwitterArticles~loaders.video.PlayerBase~loader.MediaPreviewVideoPlayer~loa',
-                ),
-                d.e(
-                  'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
                 ),
                 d.e(
                   'shared~bundle.Communities~bundle.SettingsProfile~bundle.Ocf~bundle.TwitterArticles~bundle.UserLists',
@@ -73335,6 +73344,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                 'shared~bundle.TwitterArticles~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video',
               ),
               d.e(
+                'shared~bundle.Compose~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichTex',
+              ),
+              d.e(
                 'shared~bundle.AudioSpacePeek~bundle.Communities~bundle.Compose~bundle.RichTextCompose~bundle.TwitterArticles~',
               ),
               d.e(
@@ -73345,9 +73357,6 @@ window.__SCRIPTS_LOADED__.vendor &&
               ),
               d.e(
                 'shared~bundle.ComposeMedia~bundle.TwitterArticles~loaders.video.PlayerBase~loader.MediaPreviewVideoPlayer~loa',
-              ),
-              d.e(
-                'shared~bundle.RichTextCompose~bundle.DMRichTextCompose~bundle.TwitterArticles~ondemand.RichText~bundle.UserPr',
               ),
               d.e(
                 'shared~bundle.Communities~bundle.SettingsProfile~bundle.Ocf~bundle.TwitterArticles~bundle.UserLists',
