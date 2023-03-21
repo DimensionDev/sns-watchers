@@ -2,10 +2,10 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   ['i18n/en'],
   {
-    417346: function _(e, t, o) {
-      var a = o(379404)._register('en', {
+    17346: function _(e, t, o) {
+      var a = o(79404)._register('en', {
         get emoji() {
-          return o.e('i18n/emoji-en').then(o.t.bind(o, 920747, 23))
+          return o.e('i18n/emoji-en').then(o.t.bind(o, 20747, 23))
         },
       })
       function n(e, t, o) {
@@ -596,6 +596,8 @@
           return 'GIF provided by ' + e.providerName
         }),
         a('a613e720', 'Copy link to GIF'),
+        a('e3275464', 'Send'),
+        a('ca0ce0e4', 'Start a new message'),
         a('c3752568', 'Something went wrong. Try sending your message again in a minute.'),
         a('f78aa3ea', 'Some of your messages couldn’t be sent at this time. Please try again later.'),
         a('f9690dc0', 'Sorry! You cannot message this account.'),
@@ -607,8 +609,6 @@
         a('hf383be4', 'The account you are trying to messsage has been deleted.'),
         a('c4fdbd16', 'You cannot send messages to users that you have blocked.'),
         a('hf3e7e38', 'Your message could not be sent.'),
-        a('e3275464', 'Send'),
-        a('ca0ce0e4', 'Start a new message'),
         a('i8ecae5c', 'You can no longer send messages to this person.'),
         a('dd8272fd', function (e) {
           return e.count + ' new message' + n(e.count, '', 's')
@@ -831,18 +831,13 @@
         a('c64c1884', 'Compose new Message'),
         a('j7d0e836', 'Expand'),
         a('cdcebd22', 'New message'),
-        a('h845f282', 'Direct Message'),
-        a('fd6150fc', 'Keeping you safer in Direct Messages'),
-        a('ac25e02e', 'Privacy Policy'),
-        a('a74e7c77', function (e) {
-          return e.count + ' unread request' + n(e.count, '', 's')
-        }),
         a('a66ac766', 'Loading Direct Messages'),
         a('fe61929e', 'Search for people and groups'),
         a('a846382a', 'Search Direct Messages'),
         a('e5b0063d', function (e) {
           return 'Timeline: ' + e.title
         }),
+        a('h845f282', 'Direct Message'),
         a('ga086a54', 'Image attachment'),
         a('a9cc8cfe', 'Sent a GIF'),
         a('eb3d722e', 'You sent a GIF'),
@@ -904,6 +899,8 @@
         a('g2fd3206', 'People'),
         a('fb3c8e74', 'Recent searches'),
         a('ffd9cfe6', 'See more'),
+        a('fd6150fc', 'Keeping you safer in Direct Messages'),
+        a('ac25e02e', 'Privacy Policy'),
         a('a676a876', 'Welcome to your inbox!'),
         a(
           'j2611eac',
@@ -924,19 +921,6 @@
         a('fac945ad', function (e) {
           return e.stringCount + ' new request' + n(e.count, '', 's')
         }),
-        a('f325afc4', 'Compose a DM'),
-        a('f5dc353c', 'Now filtering graphic media'),
-        a('daeda054', 'Go to Settings'),
-        a(
-          'fe1eaa96',
-          'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
-        ),
-        a('eb7de4aa', 'Show additional messages, including those that may contain offensive content.'),
-        a('a0e81a2e', 'Show'),
-        a(
-          'ee8c0c8a',
-          'Incoming messages or group messages from people you don’t follow will show up here, and you’ll be able to accept or delete them.',
-        ),
         a('ba929da8', 'Page not found'),
         a('d203e242', 'Not found'),
         a('e49537c2', 'Hmm...this page doesn’t exist. Try searching for something else.'),
@@ -1150,8 +1134,8 @@
           return '・' + e.formattedTime
         }),
         a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending')
-      a('e839db3a', 'Dismiss'),
+        a('c29d6806', 'Stop recommending'),
+        a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
         }),
@@ -1166,10 +1150,10 @@
           return e.topicName + ' Topic'
         }),
         a('e3a24e4c', 'Add another Tweet'),
-        a('i569ff3e', 'Show this thread'),
-        a('je5502eb', function (e) {
-          return 'Including results for "' + e.suggestion + '"'
-        }),
+        a('i569ff3e', 'Show this thread')
+      a('je5502eb', function (e) {
+        return 'Including results for "' + e.suggestion + '"'
+      }),
         a('bc4628a1', function (e) {
           return 'Showing results for "' + e.suggestion + '"'
         }),
@@ -1333,23 +1317,29 @@
         a('ebad846c', 'Share Tweet via …'),
         a('f1fcb2ec', 'Remove Tweet from Folder'),
         a('fd80ffb0', 'View Quote Tweets'),
+        a('bb192c6b', function (e) {
+          return '' + e.displayCount
+        }),
+        a('f23d99b0', function (e) {
+          return 'Bookmark' + n(e.count, '', 's')
+        }),
         a('e8866a55', function (e) {
           return '' + e.displayCount
         }),
         a('eb3abe45', function (e) {
           return 'Like' + n(e.count, '', 's')
         }),
-        a('d71de0c1', function (e) {
-          return '' + e.displayCount
-        }),
-        a('c42234da', function (e) {
-          return 'Retweet' + n(e.count, '', 's')
-        }),
         a('eff958fb', function (e) {
           return '' + e.displayCount
         }),
         a('i5a8c515', function (e) {
           return 'Quote' + n(e.count, '', 's')
+        }),
+        a('d71de0c1', function (e) {
+          return '' + e.displayCount
+        }),
+        a('c42234da', function (e) {
+          return 'Retweet' + n(e.count, '', 's')
         }),
         a('bc2ceaf2', 'Sending Tweet...'),
         a('j4c40da4', 'Send now'),
@@ -2340,8 +2330,8 @@
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:')
-      a('a3ca686a', 'See tips for writing helpful notes'),
+        a('bed66f92', 'Here’s how to start:'),
+        a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
@@ -2352,8 +2342,8 @@
         a(
           'ife4baaa',
           'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
-        ),
-        a('a0c552ee', 'Your impact will be shown here'),
+        )
+      a('a0c552ee', 'Your impact will be shown here'),
         a('a4e5ea3c', 'You haven’t rated any notes yet'),
         a('g9a28bde', 'Browse notes that need help'),
         a('dc0046e2', 'Browse the Community Notes home'),
@@ -2937,6 +2927,7 @@
           return 'Content warning: ' + e.formattedWarningList
         }),
         a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
+        a('a0e81a2e', 'Show'),
         a('c91f83ae', 'Edit video'),
         a('icbec4ae', 'Upload captions'),
         a('e7048e74', 'Trim media'),
@@ -3609,13 +3600,13 @@
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        )
-      a('h14ba864', 'Data sharing with business partners'),
+        ),
+        a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
-        a('cdcef7b6', 'Learn more about privacy on Twitter'),
-        a('a607862a', 'Privacy policy'),
+        a('cdcef7b6', 'Learn more about privacy on Twitter')
+      a('a607862a', 'Privacy policy'),
         a('g5925628', 'Contact us'),
         a('dd6012f8', 'Privacy center'),
         a('jdceda60', 'Replies'),
@@ -4829,13 +4820,13 @@
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-        )
-      a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        ),
+        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
-        a('ede0ac3e', 'Planned usage'),
-        a('ffb6cb88', 'How do you plan to use Super Follows?'),
+        a('ede0ac3e', 'Planned usage')
+      a('ffb6cb88', 'How do you plan to use Super Follows?'),
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
@@ -5050,6 +5041,21 @@
         ),
         a('dca3d2ee', 'Turn off reply filter?'),
         a('d75ce93e', 'Filtered replies will not be restored to your Tweets.'),
+        a('a74e7c77', function (e) {
+          return e.count + ' unread request' + n(e.count, '', 's')
+        }),
+        a('f325afc4', 'Compose a DM'),
+        a('f5dc353c', 'Now filtering graphic media'),
+        a('daeda054', 'Go to Settings'),
+        a(
+          'fe1eaa96',
+          'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
+        ),
+        a('eb7de4aa', 'Show additional messages, including those that may contain offensive content.'),
+        a(
+          'ee8c0c8a',
+          'Incoming messages or group messages from people you don’t follow will show up here, and you’ll be able to accept or delete them.',
+        ),
         a('ff599112', 'Create a group'),
         a('c602600a', 'Add people'),
         a('a7013cb6', 'Send Tweet separately'),
@@ -6028,12 +6034,6 @@
         }),
         a('d0681155', function (e) {
           return e.fullName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('be59fddf', function (e) {
-          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6054,9 +6054,15 @@
           c(e, t)
         )
       }
-      a('aba12f5d', function (e) {
-        return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+      a('be59fddf', function (e) {
+        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
       }),
+        a('b357b2ad', function (e) {
+          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('aba12f5d', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+        }),
         a('b9184ae3', function (e) {
           return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6413,6 +6419,9 @@
         a('ac163d10', 'Annual Plan'),
         a('i2c32253', function (e) {
           return e.price + ' / month'
+        }),
+        a('c41e1023', function (e) {
+          return e.price + ' / year'
         }),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
@@ -6828,13 +6837,6 @@
         a('e46409b7', function (e) {
           return 'You’re following ' + e.fullName + ' and will be notified when they Tweet.'
         }),
-        a('ebf5ec26', 'Coming soon'),
-        a('c405ac8e', 'Introducing NFT profile pictures'),
-        a('eb023c94', 'What is an NFT?'),
-        a('gc65c0aa', 'So what does this mean?'),
-        a('d17e8aa4', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
-        a('ff9c6944', 'NFT profile pictures are displayed in a special hexagonal shape'),
-        a('d8af538f', 'Learn more'),
         a('g6b54ff6', 'You’re up to date'),
         a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
         a('ec2d8342', 'Decline'),
@@ -6902,6 +6904,7 @@
         a('accae48c', 'Token ID'),
         a('h8fe11ac', 'Token Standard'),
         a('e6aa52aa', 'Creator'),
+        a('eb023c94', 'What is an NFT?'),
         a(
           'ad5dfe80',
           'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible.',
@@ -7341,11 +7344,11 @@
         ),
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.')
-      a('dc6c806e', 'Your columns couldn’t be imported'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
-        a('i8912d28', 'Lets add some columns...'),
-        a('ce0c0f34', 'Now let’s have a look around'),
+        a('i8912d28', 'Lets add some columns...')
+      a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
         a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),
@@ -8236,7 +8239,7 @@
         a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
         a('gfaaead8', 'Untitled'),
         a('cfd13f46', 'Voice Dock')
-      var s = o(202784),
+      var s = o(2784),
         u = [],
         d = {}
       function l(e) {
@@ -8485,15 +8488,6 @@
               },
             },
             {
-              key: 'iac7f92b',
-              get: function get() {
-                return [
-                  'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
-                  ' for more details.',
-                ]
-              },
-            },
-            {
               key: 'i005f1fd',
               get: function get() {
                 return ['You responded to ', '’s Fleet: ']
@@ -8734,6 +8728,15 @@
               },
             },
             {
+              key: 'iac7f92b',
+              get: function get() {
+                return [
+                  'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
+                  ' for more details.',
+                ]
+              },
+            },
+            {
               key: 'a66142ad',
               get: function get() {
                 return [
@@ -8904,19 +8907,25 @@
               },
             },
             {
+              key: 'ef5d531f',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
               key: 'e4eeeeff',
               get: function get() {
                 return ['', ' ']
               },
             },
             {
-              key: 'b07c7c03',
+              key: 'c9174f1f',
               get: function get() {
                 return ['', ' ']
               },
             },
             {
-              key: 'c9174f1f',
+              key: 'b07c7c03',
               get: function get() {
                 return ['', ' ']
               },
@@ -10815,14 +10824,6 @@
               },
             },
             {
-              key: 'fa13e739',
-              get: function get() {
-                return [
-                  'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
-                ]
-              },
-            },
-            {
               key: 'fbe06ae1',
               get: function get() {
                 return ['', ' by ']
@@ -11097,13 +11098,13 @@
           Object.defineProperty(a, 'prototype', { writable: !1 }),
           b
         )
-      })(o(473228)._ActualI18NFormatMessage || s.Component)
+      })(o(73228)._ActualI18NFormatMessage || s.Component)
       a('_ActualI18NFormatMessage', f),
         a('I18NFormatMessage', function (e) {
           return s.createElement(f, e)
         })
-      var b = o(495075)
-      o(800694), o(556829), o(530152), o(658610), o(492344), o(663823)
+      var b = o(95075)
+      o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
       b._validateParameterTypeNumber, b._validateParameterPresence
       var h = b._numberRound,
         m = (b._numberFormat, b._numberFormatterFn),
