@@ -592,6 +592,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           './TweetStats.js': 77421,
           './Tweets': 87233,
           './Tweets.js': 87233,
+          './TweetsApi/BatchModeType': 58803,
+          './TweetsApi/BatchModeType.js': 58803,
+          './TweetsApi/postDefaults': 80365,
+          './TweetsApi/postDefaults.js': 80365,
+          './TweetsApi/sendTweet': 51419,
+          './TweetsApi/sendTweet.js': 51419,
           './TwitterArticles': 11896,
           './TwitterArticles.js': 11896,
           './Typeahead': 43524,
@@ -788,6 +794,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           './TweetStats.js': [77421, 'vendor', 'endpoints.TweetStats'],
           './Tweets': [87233, 'vendor', 'endpoints.Tweets'],
           './Tweets.js': [87233, 'vendor', 'endpoints.Tweets'],
+          './TweetsApi/BatchModeType': [58803, 'endpoints.TweetsApi-BatchModeType'],
+          './TweetsApi/BatchModeType.js': [58803, 'endpoints.TweetsApi-BatchModeType'],
+          './TweetsApi/postDefaults': [80365, 'endpoints.TweetsApi-postDefaults'],
+          './TweetsApi/postDefaults.js': [80365, 'endpoints.TweetsApi-postDefaults'],
+          './TweetsApi/sendTweet': [51419, 'vendor', 'endpoints.TweetsApi-sendTweet'],
+          './TweetsApi/sendTweet.js': [51419, 'vendor', 'endpoints.TweetsApi-sendTweet'],
           './TwitterArticles': [11896, 'endpoints.TwitterArticles'],
           './TwitterArticles.js': [11896, 'endpoints.TwitterArticles'],
           './Typeahead': [43524, 'endpoints.Typeahead'],
@@ -1849,6 +1861,256 @@ window.__SCRIPTS_LOADED__.vendor &&
             },
           }
         ;(a.hash = 'e2eb287ffb9816aad514b1cd1f721fad'), (e.exports = a)
+      },
+      35503: function _(e) {
+        'use strict'
+        var n,
+          d,
+          t,
+          a,
+          r,
+          o,
+          i,
+          l,
+          u,
+          s = {
+            fragment: {
+              argumentDefinitions: [],
+              kind: 'Fragment',
+              metadata: null,
+              name: 'useRelayDelegateDataQuery',
+              selections: [
+                {
+                  alias: 'viewer',
+                  args: (n = [{ kind: 'Literal', name: 's', value: '84b0' }]),
+                  concreteType: 'Viewer',
+                  kind: 'LinkedField',
+                  name: 'viewer_v2',
+                  plural: !1,
+                  selections: [
+                    {
+                      alias: null,
+                      args: (d = [{ kind: 'Literal', name: 'status', value: 'Accepted' }]),
+                      concreteType: 'DelegationGroup',
+                      kind: 'LinkedField',
+                      name: 'list_delegation_groups',
+                      plural: !0,
+                      selections: [
+                        {
+                          alias: 'handle',
+                          args: null,
+                          concreteType: 'UserResults',
+                          kind: 'LinkedField',
+                          name: 'handle_results',
+                          plural: !1,
+                          selections: [
+                            {
+                              alias: null,
+                              args: null,
+                              concreteType: null,
+                              kind: 'LinkedField',
+                              name: 'result',
+                              plural: !1,
+                              selections: [
+                                (t = {
+                                  alias: null,
+                                  args: null,
+                                  kind: 'ScalarField',
+                                  name: '__typename',
+                                  storageKey: null,
+                                }),
+                                {
+                                  kind: 'InlineFragment',
+                                  selections: [
+                                    (a = {
+                                      alias: null,
+                                      args: null,
+                                      kind: 'ScalarField',
+                                      name: 'rest_id',
+                                      storageKey: null,
+                                    }),
+                                    {
+                                      kind: 'RequiredField',
+                                      field: {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: 'ApiUser',
+                                        kind: 'LinkedField',
+                                        name: 'legacy',
+                                        plural: !1,
+                                        selections: [
+                                          {
+                                            kind: 'RequiredField',
+                                            field: (r = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'profile_image_url_https',
+                                              storageKey: null,
+                                            }),
+                                            action: 'THROW',
+                                            path: 'viewer.list_delegation_groups.handle.result.legacy.profile_image_url_https',
+                                          },
+                                          {
+                                            kind: 'RequiredField',
+                                            field: (o = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'name',
+                                              storageKey: null,
+                                            }),
+                                            action: 'THROW',
+                                            path: 'viewer.list_delegation_groups.handle.result.legacy.name',
+                                          },
+                                          {
+                                            kind: 'RequiredField',
+                                            field: (i = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'screen_name',
+                                              storageKey: null,
+                                            }),
+                                            action: 'THROW',
+                                            path: 'viewer.list_delegation_groups.handle.result.legacy.screen_name',
+                                          },
+                                          {
+                                            kind: 'RequiredField',
+                                            field: (l = {
+                                              alias: null,
+                                              args: null,
+                                              kind: 'ScalarField',
+                                              name: 'id_str',
+                                              storageKey: null,
+                                            }),
+                                            action: 'THROW',
+                                            path: 'viewer.list_delegation_groups.handle.result.legacy.id_str',
+                                          },
+                                        ],
+                                        storageKey: null,
+                                      },
+                                      action: 'THROW',
+                                      path: 'viewer.list_delegation_groups.handle.result.legacy',
+                                    },
+                                  ],
+                                  type: 'User',
+                                  abstractKey: null,
+                                },
+                              ],
+                              storageKey: null,
+                            },
+                          ],
+                          storageKey: null,
+                        },
+                      ],
+                      storageKey: 'list_delegation_groups(status:"Accepted")',
+                    },
+                  ],
+                  storageKey: 'viewer_v2(s:"84b0")',
+                },
+              ],
+              type: 'Query',
+              abstractKey: null,
+            },
+            kind: 'Request',
+            operation: {
+              argumentDefinitions: [],
+              kind: 'Operation',
+              name: 'useRelayDelegateDataQuery',
+              selections: [
+                {
+                  alias: 'viewer',
+                  args: n,
+                  concreteType: 'Viewer',
+                  kind: 'LinkedField',
+                  name: 'viewer_v2',
+                  plural: !1,
+                  selections: [
+                    {
+                      alias: null,
+                      args: d,
+                      concreteType: 'DelegationGroup',
+                      kind: 'LinkedField',
+                      name: 'list_delegation_groups',
+                      plural: !0,
+                      selections: [
+                        {
+                          alias: 'handle',
+                          args: null,
+                          concreteType: 'UserResults',
+                          kind: 'LinkedField',
+                          name: 'handle_results',
+                          plural: !1,
+                          selections: [
+                            {
+                              alias: null,
+                              args: null,
+                              concreteType: null,
+                              kind: 'LinkedField',
+                              name: 'result',
+                              plural: !1,
+                              selections: [
+                                t,
+                                {
+                                  kind: 'InlineFragment',
+                                  selections: [
+                                    a,
+                                    {
+                                      alias: null,
+                                      args: null,
+                                      concreteType: 'ApiUser',
+                                      kind: 'LinkedField',
+                                      name: 'legacy',
+                                      plural: !1,
+                                      selections: [r, o, i, l],
+                                      storageKey: null,
+                                    },
+                                    {
+                                      alias: null,
+                                      args: null,
+                                      filters: null,
+                                      handle: 'defaultScalars',
+                                      key: '',
+                                      kind: 'LinkedHandle',
+                                      name: 'legacy',
+                                    },
+                                    (u = {
+                                      alias: null,
+                                      args: null,
+                                      kind: 'ScalarField',
+                                      name: 'id',
+                                      storageKey: null,
+                                    }),
+                                  ],
+                                  type: 'User',
+                                  abstractKey: null,
+                                },
+                              ],
+                              storageKey: null,
+                            },
+                            u,
+                          ],
+                          storageKey: null,
+                        },
+                        u,
+                      ],
+                      storageKey: 'list_delegation_groups(status:"Accepted")',
+                    },
+                  ],
+                  storageKey: 'viewer_v2(s:"84b0")',
+                },
+              ],
+            },
+            params: {
+              id: 'W0icJh-3l51CDwxm73DHfw',
+              metadata: {},
+              name: 'useRelayDelegateDataQuery',
+              operationKind: 'query',
+              text: null,
+            },
+          }
+        ;(s.hash = '563ccebf81bec6595ccc70222d4d4e6a'), (e.exports = s)
       },
       10986: function _(e) {
         'use strict'
@@ -7879,7 +8141,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          F = window,
+          F = (d(4173), window),
           U = (null == F || null === (I = F.__META_DATA__) || void 0 === I ? void 0 : I.tags) || {}
         var H = d(16587),
           j =
@@ -7913,7 +8175,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                   return t.hasSubscription('verified_organizations') || t.hasSubscription('verified_organizations_gov')
                 }),
                 (0, A.Z)(this, 'isVerifiedOrgAffiliate', function () {
-                  return t.hasSubscription('verified_organizations_affiliate')
+                  return (
+                    t.hasSubscription('verified_organizations_affiliate') ||
+                    t.hasSubscription('verified_organizations_gov_affiliate')
+                  )
                 }),
                 (0, A.Z)(this, 'hasSubscription', function (e) {
                   return 'true' === t.getValue(e, 'subscriptions')
@@ -33407,6 +33672,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                           'responsive_web_business_government_verified_new_icons_enabled',
                         )
                       },
+                      webImageLargeWebpVariants: function webImageLargeWebpVariants() {
+                        return a.props.featureSwitches.isTrue('web_image_large_webp_variants')
+                      },
                     }
                   }),
                 ),
@@ -33567,6 +33835,249 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           })(s.Component),
         )
+      },
+      4206: function _(e, n, d) {
+        'use strict'
+        d.d(n, {
+          p: function p() {
+            return E
+          },
+        })
+        d(58188), d(73439), d(49228), d(43450), d(26936), d(39529)
+        var t = d(2784),
+          a = d(77953),
+          r = d(90434),
+          o = d.n(r),
+          i = d(7267),
+          l = d(72218),
+          u = d(62622),
+          s = d(33541),
+          c = d(99241),
+          b = d(67935),
+          m = t.createContext({})
+        var p = d(33028)
+        d(44112), d(31235)
+        function h(e, n) {
+          var d = {
+            dispatch: function dispatch(t) {
+              if ('function' != typeof t && null != t && t.type && 'string' == typeof t.type) {
+                if (t.type.startsWith('gryphon')) return e.dispatch(t)
+              } else if ('function' == typeof t)
+                return n.dispatch(function (e, n, a) {
+                  return t(d.dispatch, d.getState, a)
+                })
+              return n.dispatch(t)
+            },
+            getState: function getState() {
+              if (window.Proxy) {
+                var d = e.getState(),
+                  t = n.getState()
+                return new Proxy(t, {
+                  get: function get(e, n) {
+                    return S.includes(n) ? d[n] : t[n]
+                  },
+                })
+              }
+              return (0, p.Z)(
+                (0, p.Z)({}, e.getState()),
+                (0, l.Z)(n.getState(), function (e, n) {
+                  return !S.includes(n)
+                }),
+              )
+            },
+            subscribe: function subscribe(d) {
+              var t = n.subscribe(d),
+                a = e.subscribe(d)
+              return function () {
+                t(), a()
+              }
+            },
+            replaceReducer: n.replaceReducer,
+            originalStore: e,
+          }
+          return d
+        }
+        var A,
+          S = ['columns'],
+          D = d(10622),
+          v = d.n(D),
+          f = (d(85488), d(12696)),
+          g = d.n(f),
+          w = d(37429),
+          M = d.n(w),
+          y = d(51600)
+        function C() {
+          var e,
+            n,
+            d = (0, a.v9)(b.dY)
+          return (
+            (e = { shouldPrefetch: !d }.shouldPrefetch),
+            (n = M()()),
+            t.useEffect(
+              function () {
+                e &&
+                  v()(n, k, {}, { fetchPolicy: 'store-or-network' })
+                    .toPromise()
+                    ['catch'](function () {})
+              },
+              [n, e],
+            ),
+            d ? { DelegateDataWrapper: void 0 } : { DelegateDataWrapper: _ }
+          )
+        }
+        function T(e) {
+          var n = e.children,
+            d = e.onDelegateData,
+            a = g()(k, {})
+          return (
+            t.useLayoutEffect(
+              function () {
+                d(a)
+              },
+              [a, d],
+            ),
+            n
+          )
+        }
+        var _ = t.memo(function (e) {
+          var n = e.children,
+            d = e.onDelegateData
+          return t.createElement(y.H, { errorConfig: P }, t.createElement(T, { onDelegateData: d }, n))
+        })
+        var k = void 0 !== A ? A : (A = d(35503)),
+          P = { context: 'DELEGATE_PROVIDER_USE_RELAY_DELEGATE_DATA' }
+        function E(e) {
+          var n = e.children,
+            d = e.fallbackToCurrentSelectedDelegate,
+            a = e.location
+          return t.createElement(
+            t.Suspense,
+            { fallback: null },
+            t.createElement(R, { fallbackToCurrentSelectedDelegate: d, location: a }, n),
+          )
+        }
+        function R(e) {
+          var n,
+            d,
+            r = e.children,
+            o = e.fallbackToCurrentSelectedDelegate,
+            p = e.location,
+            A = (function (e) {
+              var n
+              return null !== (n = e.originalStore) && void 0 !== n ? n : e
+            })((0, a.oR)()),
+            S = (0, i.k6)(),
+            D = (0, c.h)('twitter_delegate_enabled'),
+            v = (0, a.v9)(b.sy),
+            f = (function () {
+              var e = t.useContext(m)
+              return {
+                customDispatcher: null == e ? void 0 : e.customDispatcher,
+                customPersistence: null == e ? void 0 : e.customPersistence,
+                customRelayEnvironmentFactory: null == e ? void 0 : e.customRelayEnvironmentFactory,
+              }
+            })(),
+            g = f.customDispatcher,
+            w = f.customPersistence,
+            M = f.customRelayEnvironmentFactory,
+            y =
+              null !==
+                (n = null === (d = (null != p ? p : S.location).state) || void 0 === d ? void 0 : d.actAsUserId) &&
+              void 0 !== n
+                ? n
+                : o
+                ? null == v
+                  ? void 0
+                  : v.userId
+                : void 0,
+            T = (0, a.v9)(b.o1),
+            _ = C().DelegateDataWrapper
+          if (D && y && T) {
+            var k = (function (e) {
+              var n = e.actAsUserId,
+                d = e.customDispatcher,
+                t = e.customPersistence,
+                a = e.customRelayEnvironmentFactory,
+                r = e.loggedInUserId,
+                o = e.originalStore
+              if (I[n]) return I[n]
+              var i = (0, s.T)({
+                  loggedInUserId: r,
+                  actAsUserId: n,
+                  initialState: (0, l.Z)(o.getState(), function (e, n) {
+                    return B.includes(n)
+                  }),
+                  customDispatcher: d,
+                  customPersistence: t,
+                  customRelayEnvironmentFactory: a,
+                }),
+                c = i.relayEnvironment,
+                m = i.store
+              m.dispatch((0, b.WD)(n))
+              var p = (0, u.G)(m)
+              return (
+                (I[n] = p.then(function () {
+                  I[n] = { store: h(o, m), relayEnvironment: c }
+                })),
+                I[n]
+              )
+            })({
+              loggedInUserId: T,
+              actAsUserId: y,
+              originalStore: A,
+              customDispatcher: g,
+              customPersistence: w,
+              customRelayEnvironmentFactory: M,
+            })
+            if (k instanceof Promise) throw k
+            var P = k.relayEnvironment,
+              E = { DelegateDataWrapper: _, delegateStore: k.store, relayEnvironment: P, children: r, actAsUserId: y }
+            return t.createElement(Z, E)
+          }
+          return r
+        }
+        function Z(e) {
+          var n = e.DelegateDataWrapper,
+            d = e.actAsUserId,
+            r = e.children,
+            i = e.delegateStore,
+            l = e.relayEnvironment,
+            u = t.useCallback(
+              function (e) {
+                var n,
+                  t,
+                  a =
+                    null === (n = e.viewer) || void 0 === n || null === (t = n.list_delegation_groups) || void 0 === t
+                      ? void 0
+                      : t
+                          .map(function (e) {
+                            var n = (e.handle || {}).result
+                            if (
+                              'User' === (null == n ? void 0 : n.__typename) &&
+                              (null == n ? void 0 : n.rest_id) === d
+                            ) {
+                              var t = n.legacy,
+                                a = t.id_str,
+                                r = t.name,
+                                o = t.profile_image_url_https
+                              return { userId: a, userName: r, userScreenName: t.screen_name, userAvatarImageUrl: o }
+                            }
+                          })
+                          .find(Boolean)
+                a && i.dispatch((0, b.vU)(a))
+              },
+              [d, i],
+            )
+          return n
+            ? t.createElement(
+                n,
+                { onDelegateData: u },
+                t.createElement(a.zt, { store: i }, t.createElement(o(), { environment: l }, r)),
+              )
+            : t.createElement(a.zt, { store: i }, t.createElement(o(), { environment: l }, r))
+        }
+        var I = {}
+        var B = ['session']
       },
       96958: function _(e, n, d) {
         'use strict'
@@ -47431,7 +47942,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           DO: function DO() {
-            return P
+            return k
           },
           DW: function DW() {
             return m
@@ -47439,107 +47950,104 @@ window.__SCRIPTS_LOADED__.vendor &&
           EM: function EM() {
             return b
           },
-          Ef: function Ef() {
-            return g
-          },
           F2: function F2() {
-            return J
+            return X
           },
           FX: function FX() {
             return S
           },
           Fk: function Fk() {
-            return w
+            return g
           },
           Fs: function Fs() {
             return u
           },
           Hw: function Hw() {
-            return R
+            return E
           },
           JT: function JT() {
-            return L
-          },
-          O7: function O7() {
-            return q
-          },
-          OS: function OS() {
             return O
           },
+          O7: function O7() {
+            return G
+          },
+          OS: function OS() {
+            return N
+          },
           Oe: function Oe() {
-            return M
+            return w
           },
           PG: function PG() {
-            return _
+            return T
           },
           QV: function QV() {
-            return x
+            return B
           },
           Re: function Re() {
-            return U
+            return F
           },
           UN: function UN() {
-            return C
+            return y
           },
           Uq: function Uq() {
-            return H
+            return U
           },
           Ur: function Ur() {
-            return y
+            return M
           },
           Us: function Us() {
             return D
           },
           ZF: function ZF() {
-            return N
+            return x
           },
           d7: function d7() {
-            return j
+            return H
           },
           f8: function f8() {
             return c
           },
           gQ: function gQ() {
-            return F
+            return L
           },
           hV: function hV() {
-            return E
+            return P
           },
           iM: function iM() {
             return f
           },
           jv: function jv() {
-            return T
+            return C
           },
           kr: function kr() {
-            return I
+            return Z
           },
           nS: function nS() {
-            return W
+            return V
           },
           pJ: function pJ() {
             return p
           },
           pj: function pj() {
-            return Y
+            return Q
           },
           q4: function q4() {
-            return B
+            return I
           },
           qF: function qF() {
             return A
           },
           qj: function qj() {
-            return k
+            return _
           },
           t5: function t5() {
-            return G
+            return W
           },
           uz: function uz() {
             return h
           },
           vA: function vA() {
-            return Z
+            return R
           },
           xH: function xH() {
             return v
@@ -47566,96 +48074,94 @@ window.__SCRIPTS_LOADED__.vendor &&
           D = 'CommunitiesEducationComposerControls',
           v = 'CommunitiesEducationComposerAudience',
           f = 'CommunitiesEducationToolsRulesAdvice',
-          g = 'SignalsReactionsEducation',
-          w = 'CommunitiesEducationWelcome',
-          M = 'PersistentConversationControlsEducation',
-          y = 'SpacesClippingEducation',
-          C = 'SpacesGeneralEducation',
-          T = 'SpacesRecordingEducation',
-          _ = 'CommunitiesEducationRuleManagementInform',
-          k = 'DownvoteFullscreen',
-          P = 'DownvoteInline',
-          E = 'BirdwatchRatingFormDataPrivacyNotice',
-          R = 'PinnedConversationsEducation',
-          Z = 'PinnedRepliesEducation',
-          I = 'TrustedFriendsEducationFlag',
-          B = 'TopArticlesFriendsOfFriendsNUX',
-          x = 'LeaveThisConversationInline',
-          N = 'ProfileAboutTabEducation',
-          O = 'NotesReadingViewEducation',
-          L = 'CommunitiesHashtagsEducation',
-          F = 'BirdwatchEarnOutAtRiskNotice',
-          U = 'CommunitiesSpotlightEducation',
-          H = 'NewUserPromptEducation',
-          j = 'GraduatedUserPromptEducation',
-          z = [
+          g = 'CommunitiesEducationWelcome',
+          w = 'PersistentConversationControlsEducation',
+          M = 'SpacesClippingEducation',
+          y = 'SpacesGeneralEducation',
+          C = 'SpacesRecordingEducation',
+          T = 'CommunitiesEducationRuleManagementInform',
+          _ = 'DownvoteFullscreen',
+          k = 'DownvoteInline',
+          P = 'BirdwatchRatingFormDataPrivacyNotice',
+          E = 'PinnedConversationsEducation',
+          R = 'PinnedRepliesEducation',
+          Z = 'TrustedFriendsEducationFlag',
+          I = 'TopArticlesFriendsOfFriendsNUX',
+          B = 'LeaveThisConversationInline',
+          x = 'ProfileAboutTabEducation',
+          N = 'NotesReadingViewEducation',
+          O = 'CommunitiesHashtagsEducation',
+          L = 'BirdwatchEarnOutAtRiskNotice',
+          F = 'CommunitiesSpotlightEducation',
+          U = 'NewUserPromptEducation',
+          H = 'GraduatedUserPromptEducation',
+          j = [
             u,
             s,
-            F,
-            E,
+            L,
+            P,
             S,
             v,
             D,
             A,
-            _,
-            w,
+            T,
+            g,
             f,
             h,
+            _,
             k,
-            P,
-            j,
+            H,
             c,
-            x,
+            B,
             b,
             m,
-            H,
-            O,
-            M,
-            R,
-            Z,
+            U,
             N,
-            g,
+            w,
+            E,
+            R,
+            x,
+            M,
             y,
             C,
-            T,
-            B,
             I,
+            Z,
             p,
             'VerifiedAvatarEducation',
-            L,
-            U,
+            O,
+            F,
             'TweetdeckEducationDisplaySettings',
             'TweetdeckEducationTour',
             'TweetdeckEducationWelcome',
           ],
-          V = Object.freeze({})
-        var W = function W(e) {
+          z = Object.freeze({})
+        var V = function V(e) {
             return e.educationFlags
           },
-          G = function G(e, n) {
+          W = function W(e, n) {
             return !e.educationFlags[n]
           },
-          q = function q(e, n) {
+          G = function G(e, n) {
             var d = e.educationFlags[n]
             return d ? Math.floor((Date.now() - d) / 864e5) : null
           },
-          K = 'rweb/educationFlags/ADD_FLAG',
-          Q = function Q(e, n) {
-            return { payload: { flagName: e, timestamp: n }, type: K }
+          q = 'rweb/educationFlags/ADD_FLAG',
+          K = function K(e, n) {
+            return { payload: { flagName: e, timestamp: n }, type: q }
           },
-          Y = function Y(e) {
+          Q = function Q(e) {
             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { updateTimestamp: !1 }
             return function (d, t, a) {
               a.api, a.devicePersistence, a.featureSwitches
               var r = t()
-              ;(G(r, e) || n.updateTimestamp) && (d(Q(e, Date.now())), d(X(e)))
+              ;(W(r, e) || n.updateTimestamp) && (d(K(e, Date.now())), d(Y(e)))
             }
           },
-          X = function X(e) {
+          Y = function Y(e) {
             return function (n, d, t) {
               var a = t.api
               t.featureSwitches
-              return z.includes(e)
+              return j.includes(e)
                 ? (0, i.Vg)(n, { params: { flag: e }, request: a.ClientEducationFlags.putClientEducationFlag })(
                     'ADD_CLIENT_EDUCATION_FLAG',
                   )['catch'](function (e) {
@@ -47664,20 +48170,20 @@ window.__SCRIPTS_LOADED__.vendor &&
                 : Promise.resolve()
             }
           },
-          J = function J(e) {
+          X = function X(e) {
             return function (n, d) {
               e.forEach(function (e) {
-                n(Q(e.flag, e.timestamp))
+                n(K(e.flag, e.timestamp))
               })
             }
           }
         o.Z.register(
           (0, t.Z)({}, l, function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
               n = arguments.length > 1 ? arguments[1] : void 0
             if (!n) return e
             var d = (0, a.Z)({}, e)
-            return n.type === K ? (n.payload && (d[n.payload.flagName] = n.payload.timestamp), d) : e
+            return n.type === q ? (n.payload && (d[n.payload.flagName] = n.payload.timestamp), d) : e
           }),
           function () {
             return function (e, n, d) {
@@ -51691,28 +52197,31 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           YJ: function YJ() {
-            return se
+            return ce
           },
           ZP: function ZP() {
             return I
           },
           K6: function K6() {
-            return Ue
+            return ze
           },
           jN: function jN() {
-            return He
+            return Ve
           },
           CA: function CA() {
-            return je
+            return We
           },
           J2: function J2() {
-            return ce
+            return be
           },
           VX: function VX() {
             return O
           },
+          dY: function dY() {
+            return L
+          },
           yK: function yK() {
-            return z
+            return V
           },
           BP: function BP() {
             return x
@@ -51721,82 +52230,85 @@ window.__SCRIPTS_LOADED__.vendor &&
             return N
           },
           $q: function $q() {
-            return H
-          },
-          zS: function zS() {
             return j
           },
-          CO: function CO() {
-            return L
+          zS: function zS() {
+            return z
           },
-          OW: function OW() {
+          CO: function CO() {
             return F
           },
-          Ph: function Ph() {
+          OW: function OW() {
             return U
           },
-          tb: function tb() {
-            return V
+          Ph: function Ph() {
+            return H
           },
-          WM: function WM() {
+          tb: function tb() {
             return W
           },
-          YT: function YT() {
+          WM: function WM() {
             return G
           },
-          Qb: function Qb() {
+          YT: function YT() {
             return q
           },
-          _S: function _S() {
+          Qb: function Qb() {
             return K
           },
-          VT: function VT() {
-            return Y
-          },
-          TP: function TP() {
-            return J
-          },
-          o1: function o1() {
-            return X
-          },
-          V_: function V_() {
-            return $
-          },
-          F5: function F5() {
+          _S: function _S() {
             return Q
           },
-          OU: function OU() {
-            return ae
+          VT: function VT() {
+            return X
           },
-          ln: function ln() {
-            return re
+          TP: function TP() {
+            return $
           },
-          Jv: function Jv() {
+          o1: function o1() {
+            return J
+          },
+          V_: function V_() {
             return ee
           },
-          yl: function yl() {
+          F5: function F5() {
+            return Y
+          },
+          OU: function OU() {
+            return re
+          },
+          ln: function ln() {
+            return oe
+          },
+          Jv: function Jv() {
             return ne
           },
-          cl: function cl() {
+          yl: function yl() {
             return de
           },
-          GG: function GG() {
+          cl: function cl() {
             return te
           },
+          GG: function GG() {
+            return ae
+          },
+          WD: function WD() {
+            return pe
+          },
           po: function po() {
-            return me
+            return Ae
           },
           vU: function vU() {
-            return ue
+            return se
           },
           m0: function m0() {
-            return Se
+            return fe
           },
           Jm: function Jm() {
-            return ve
+            return we
           },
           TK: function TK() {
-            return Le
+            return He
           },
         })
         var t = d(56666),
@@ -51862,6 +52374,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             csrfToken: void 0,
             delegateAccountCount: void 0,
             delegateUser: void 0,
+            actAsUserId: void 0,
             emailLiteLoginUserId: void 0,
             isActiveCreator: !1,
             isRestrictedSession: !1,
@@ -51885,43 +52398,45 @@ window.__SCRIPTS_LOADED__.vendor &&
             n = arguments.length > 1 ? arguments[1] : void 0
           if (!n) return e
           switch (n.type) {
-            case oe:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { csrfToken: n.payload })
-            case be:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { delegateAccountCount: n.payload })
             case ie:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { delegateUser: n.payload })
-            case Ce:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { emailLiteLoginUserId: n.payload })
-            case Ze:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { communitiesActions: n.payload })
-            case Ee:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { hasCommunityMemberships: n.payload })
-            case Te:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { isActiveCreator: !!n.payload })
-            case ke:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { isRestrictedSession: n.payload })
-            case Ie:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { emailUserId: n.payload })
-            case pe:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { flashMessage: n.payload })
+              return (0, a.Z)((0, a.Z)({}, e), {}, { csrfToken: n.payload })
             case he:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { guestId: n.payload })
-            case Ae:
-              return n.payload ? (0, a.Z)((0, a.Z)({}, e), {}, { language: n.payload }) : e
-            case De:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { loginReturnPath: n.payload })
-            case Be:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { superFollowersCount: n.payload })
+              return (0, a.Z)((0, a.Z)({}, e), {}, { delegateAccountCount: n.payload })
+            case le:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { delegateUser: n.payload })
+            case me:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { actAsUserId: n.payload })
+            case ke:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { emailLiteLoginUserId: n.payload })
+            case xe:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { communitiesActions: n.payload })
+            case Ie:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { hasCommunityMemberships: n.payload })
+            case Pe:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { isActiveCreator: !!n.payload })
+            case Re:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { isRestrictedSession: n.payload })
             case Ne:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { superFollowsApplicationStatus: n.payload })
-            case fe:
-              return (0, a.Z)((0, a.Z)({}, e), {}, { country: n.payload })
+              return (0, a.Z)((0, a.Z)({}, e), {}, { emailUserId: n.payload })
+            case Se:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { flashMessage: n.payload })
+            case De:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { guestId: n.payload })
+            case ve:
+              return n.payload ? (0, a.Z)((0, a.Z)({}, e), {}, { language: n.payload }) : e
             case ge:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { loginReturnPath: n.payload })
+            case Oe:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { superFollowersCount: n.payload })
+            case Fe:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { superFollowsApplicationStatus: n.payload })
+            case Me:
+              return (0, a.Z)((0, a.Z)({}, e), {}, { country: n.payload })
+            case ye:
               return e.user_id && e.user_id !== n.payload
                 ? ((0, u.ZP)('Unexpected attempt to change user id.'), e)
                 : (c.Z.refreshHTMLCache(), (0, a.Z)((0, a.Z)({}, e), {}, { user_id: n.payload }))
-            case Me:
+            case Te:
               return (0, a.Z)((0, a.Z)({}, e), {}, { userFeatures: n.payload })
             case k.FAILURE:
               return (0, a.Z)((0, a.Z)({}, e), {}, { user_id: void 0 })
@@ -51966,94 +52481,86 @@ window.__SCRIPTS_LOADED__.vendor &&
             return B(e).delegateUser
           },
           L = function L(e) {
-            return B(e).flashMessage
+            return B(e).actAsUserId
           },
           F = function F(e) {
-            return B(e).guestId
+            return B(e).flashMessage
           },
           U = function U(e) {
-            return B(e).guestSegment
+            return B(e).guestId
           },
           H = function H(e) {
-            return B(e).emailLiteLoginUserId
+            return B(e).guestSegment
           },
           j = function j(e) {
-            return B(e).emailUserId
+            return B(e).emailLiteLoginUserId
           },
           z = function z(e) {
-            return B(e).communitiesActions
+            return B(e).emailUserId
           },
           V = function V(e) {
-            return B(e).hasCommunityMemberships
+            return B(e).communitiesActions
           },
           W = function W(e) {
-            return !!B(e).isActiveCreator
+            return B(e).hasCommunityMemberships
           },
           G = function G(e) {
-            return 'Approved' === B(e).superFollowsApplicationStatus
+            return !!B(e).isActiveCreator
           },
           q = function q(e) {
-            return !!B(e).user_id
+            return 'Approved' === B(e).superFollowsApplicationStatus
           },
           K = function K(e) {
-            return B(e).isRestrictedSession
+            return !!B(e).user_id
           },
           Q = function Q(e) {
-            return B(e).language
+            return B(e).isRestrictedSession
           },
           Y = function Y(e) {
+            return B(e).language
+          },
+          X = function X(e) {
             var n
             return (null === (n = B(e)) || void 0 === n ? void 0 : n.language) || o.al
           },
-          X = function X(e) {
+          J = function J(e) {
             return B(e).user_id
           },
-          J = function J(e) {
+          $ = function $(e) {
             return B(e).userFeatures
           },
-          $ = function $(e) {
+          ee = function ee(e) {
             return B(e).loginReturnPath
           },
-          ee = function ee(e) {
+          ne = function ne(e) {
             return e.session.sessionToken
           },
-          ne = function ne(e) {
+          de = function de(e) {
             return e.session.ssoInitTokens
           },
-          de = function de(e) {
+          te = function te(e) {
             return B(e).superFollowersCount
           },
-          te = function te(e) {
+          ae = function ae(e) {
             return B(e).country
           },
-          ae = function ae(e) {
+          re = function re(e) {
             return B(e).oneFactorLoginEligibility.data
           },
-          re = function re(e) {
+          oe = function oe(e) {
             return B(e).oneFactorLoginEligibility.fetchStatus
           },
-          oe = 'rweb/session/SET_CSRF_TOKEN',
-          ie = 'rweb/session/SET_DELEGATE_USER',
-          le = function le(e) {
-            return { payload: e, type: ie }
-          },
+          ie = 'rweb/session/SET_CSRF_TOKEN',
+          le = 'rweb/session/SET_DELEGATE_USER',
           ue = function ue(e) {
+            return { payload: e, type: le }
+          },
+          se = function se(e) {
             return function (n, d, t) {
               var a = t.userPersistence
               return (
-                n(le(e)),
+                n(ue(e)),
                 a.set(_, e)['catch'](function () {
-                  return Promise.resolve()
-                })
-              )
-            }
-          },
-          se = function se() {
-            return function (e, n, d) {
-              var t = d.userPersistence
-              return (
-                e(le()),
-                t['delete'](_)['catch'](function () {
                   return Promise.resolve()
                 })
               )
@@ -52061,13 +52568,24 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
           ce = function ce() {
             return function (e, n, d) {
+              var t = d.userPersistence
+              return (
+                e(ue()),
+                t['delete'](_)['catch'](function () {
+                  return Promise.resolve()
+                })
+              )
+            }
+          },
+          be = function be() {
+            return function (e, n, d) {
               var t = d.featureSwitches,
                 a = d.userPersistence
               return t.isTrue('twitter_delegate_enabled')
                 ? a
                     .get(_)
                     .then(function (n) {
-                      return e(le(null != n ? n : void 0))
+                      return e(ue(null != n ? n : void 0))
                     })
                     ['catch'](function () {
                       return Promise.resolve()
@@ -52075,60 +52593,64 @@ window.__SCRIPTS_LOADED__.vendor &&
                 : Promise.resolve()
             }
           },
-          be = 'rweb/session/SET_DELEGATE_ACCOUNT_COUNT',
-          me = function me(e) {
-            return { payload: e, type: be }
+          me = 'rweb/session/SET_ACT_AS_USER_ID',
+          pe = function pe(e) {
+            return { payload: e, type: me }
           },
-          pe = 'rweb/session/SET_FLASH_MESSAGE',
-          he = 'rweb/session/SET_GUEST_ID',
-          Ae = 'rweb/session/SET_LANGUAGE',
-          Se = function Se(e) {
-            return { payload: e, type: Ae }
+          he = 'rweb/session/SET_DELEGATE_ACCOUNT_COUNT',
+          Ae = function Ae(e) {
+            return { payload: e, type: he }
           },
-          De = 'rweb/session/SET_LOGIN_RETURN_PATH',
-          ve = function ve(e) {
-            return { payload: e, type: De }
+          Se = 'rweb/session/SET_FLASH_MESSAGE',
+          De = 'rweb/session/SET_GUEST_ID',
+          ve = 'rweb/session/SET_LANGUAGE',
+          fe = function fe(e) {
+            return { payload: e, type: ve }
           },
-          fe = 'rweb/session/SET_USER_COUNTRY',
-          ge = 'rweb/session/SET_USER_ID',
+          ge = 'rweb/session/SET_LOGIN_RETURN_PATH',
           we = function we(e) {
             return { payload: e, type: ge }
           },
-          Me = 'rweb/session/SET_USER_FEATURES',
-          ye = function ye(e) {
-            return { payload: e, type: Me }
+          Me = 'rweb/session/SET_USER_COUNTRY',
+          ye = 'rweb/session/SET_USER_ID',
+          Ce = function Ce(e) {
+            return { payload: e, type: ye }
           },
-          Ce = 'rweb/session/SET_EMAIL_LITE_LOGIN_USER_ID',
-          Te = 'rweb/session/SET_IS_ACTIVE_CREATOR',
+          Te = 'rweb/session/SET_USER_FEATURES',
           _e = function _e(e) {
             return { payload: e, type: Te }
           },
-          ke = 'rweb/session/SET_IS_RESTRICTED_SESSION',
-          Pe = function Pe(e) {
-            return { payload: e, type: ke }
+          ke = 'rweb/session/SET_EMAIL_LITE_LOGIN_USER_ID',
+          Pe = 'rweb/session/SET_IS_ACTIVE_CREATOR',
+          Ee = function Ee(e) {
+            return { payload: e, type: Pe }
           },
-          Ee = 'rweb/session/SET_HAS_COMMUNITY_MEMBERSHIPS',
-          Re = function Re(e) {
-            return { payload: e, type: Ee }
+          Re = 'rweb/session/SET_IS_RESTRICTED_SESSION',
+          Ze = function Ze(e) {
+            return { payload: e, type: Re }
           },
-          Ze = 'rweb/session/SET_COMMUNITIES_ACTIONS',
-          Ie = 'rweb/session/SET_EMAIL_USER_ID',
-          Be = 'rweb/session/SET_SUPER_FOLLOWERS_COUNT',
-          xe = function xe(e) {
-            return { payload: e, type: Be }
+          Ie = 'rweb/session/SET_HAS_COMMUNITY_MEMBERSHIPS',
+          Be = function Be(e) {
+            return { payload: e, type: Ie }
           },
-          Ne = 'rweb/session/SET_SUPER_FOLLOWS_APPLICATION_STATUS',
-          Oe = function Oe(e) {
-            return { payload: e, type: Ne }
+          xe = 'rweb/session/SET_COMMUNITIES_ACTIONS',
+          Ne = 'rweb/session/SET_EMAIL_USER_ID',
+          Oe = 'rweb/session/SET_SUPER_FOLLOWERS_COUNT',
+          Le = function Le(e) {
+            return { payload: e, type: Oe }
           },
-          Le = function Le() {
+          Fe = 'rweb/session/SET_SUPER_FOLLOWS_APPLICATION_STATUS',
+          Ue = function Ue(e) {
+            return { payload: e, type: Fe }
+          },
+          He = function He() {
             return function (e, n, d) {
               var r = d.api,
                 o = d.featureSwitches,
                 c = d.userPersistence,
                 b = (0, m._O)(e, {
                   apiErrorHandler: function apiErrorHandler(e, n, d) {
-                    return Fe(n)
+                    return je(n)
                   },
                   params: {},
                   request: r.UsersGraphQL.fetchViewer,
@@ -52146,21 +52668,21 @@ window.__SCRIPTS_LOADED__.vendor &&
                     D = d.superFollowsApplicationStatus,
                     v = d.userFeatures,
                     f = p.entities.users[p.result],
-                    g = X(n())
+                    g = J(n())
                   return g && f.id_str !== g
                     ? ((0, u.ZP)('Unexpected attempt to change user id.'), [])
                     : (s.m.initialize(l.Yh, f.id_str),
                       c.setUserId(f.id_str),
                       o && e((0, h.F2)(o)),
                       [
-                        ((w = r), { payload: w, type: Ze }),
-                        Re(!!i),
-                        we(f.id_str),
-                        _e(!!b),
-                        Pe(!!m),
-                        xe(S),
-                        Oe(D),
-                        v && ye(v),
+                        ((w = r), { payload: w, type: xe }),
+                        Be(!!i),
+                        Ce(f.id_str),
+                        Ee(!!b),
+                        Ze(!!m),
+                        Le(S),
+                        Ue(D),
+                        v && _e(v),
                         (0, A.dP)({
                           users: (0, t.Z)(
                             {},
@@ -52174,12 +52696,12 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
                 .then(function (d) {
                   d &&
-                    d.normalizedResult.result === X(n()) &&
+                    d.normalizedResult.result === J(n()) &&
                     (e((0, S.vR)())['catch'](p), e((0, f.rS)({})), e((0, D.wv)()), e((0, v.MJ)()))
                 })
                 ['catch'](function (d) {
                   throw (
-                    (q(n()) ||
+                    (K(n()) ||
                       (!(function (e, n) {
                         var d = (0, M.s)().hasMultiAccountCookie,
                           t = !!(0, g.getUserIdFromTWID)(e)
@@ -52194,14 +52716,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                 })
             }
           },
-          Fe = function Fe(e) {
+          je = function je(e) {
             var n = e instanceof r.Z && Array.isArray(e && e.errors) && e.errors.find(i.isBounceError)
             return n ? ((0, i.bouncerError)(n), Promise.resolve()) : Promise.reject(e)
           },
-          Ue = function Ue() {
+          ze = function ze() {
             return function (e, n, d) {
               var t = d.api
-              return q(n())
+              return K(n())
                 ? Promise.resolve()
                 : (0, m._O)(e, { params: {}, request: t.Guest.fetchGuestSegment })({
                     actionTypes: E,
@@ -52209,7 +52731,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   })
             }
           },
-          He = function He() {
+          Ve = function Ve() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return function (n, d, t) {
               var a = t.api
@@ -52219,7 +52741,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
             }
           },
-          je = function je(e) {
+          We = function We(e) {
             return function (n, d, t) {
               var a = t.api
               return (0, m._O)(n, { request: a.Auth.requestSsoInitToken, params: { provider: e } })({
@@ -58194,7 +58716,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                     'verified_organizations_2' !== o &&
                     'verified_organizations_affiliate' !== o &&
                     'verified_organizations_gov' !== o &&
-                    'verified_organizations_gov_2' !== o) ||
+                    'verified_organizations_gov_2' !== o &&
+                    'verified_organizations_gov_affiliate' !== o) ||
                     (e.subscriptions[o] = { value: 'true' }),
                   'client_feature_switch' === r && (e.features[o] = { value: i }),
                   e
@@ -60180,7 +60703,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           Z: function Z() {
-            return p
+            return h
           },
         })
         var t = d(2784),
@@ -60190,10 +60713,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           i = d(75297),
           l = d(11722),
           u = d(19313),
-          s = d(96889),
-          c = d(48580),
-          b = (d(38695), d(58188), d(1939), d(54713)),
-          m = function m(e, n) {
+          s = d(4206),
+          c = d(96889),
+          b = d(48580),
+          m = (d(38695), d(58188), d(1939), d(54713)),
+          p = function p(e, n) {
             var d = n.props,
               t = d.exact,
               r = d.from,
@@ -60203,84 +60727,88 @@ window.__SCRIPTS_LOADED__.vendor &&
               u = o || r
             return u ? (0, a.LX)(e, { path: u, exact: t, strict: l, sensitive: i }) : void 0
           }
-        var p = function p(e) {
+        var h = function h(e) {
           var n = e.children,
             d = (0, a.TH)(),
-            p = (0, a.k6)(),
-            h = (function () {
+            h = (0, a.k6)(),
+            A = (function () {
               var e = (0, a.TH)()
-              return null !== e && (0, c.q)({}, { location: e })
+              return null !== e && (0, b.q)({}, { location: e })
             })(),
-            A = t.useContext(u.rC),
-            S = A.featureSwitches,
-            D = A.loggedInUserId,
-            v = A.scrollManager,
-            f = (0, o.F)().windowWidth,
-            g = (function (e, n, d) {
+            S = t.useContext(u.rC),
+            D = S.featureSwitches,
+            v = S.loggedInUserId,
+            f = S.scrollManager,
+            g = (0, o.F)().windowWidth,
+            w = (function (e, n, d) {
               var a, r
               return (
                 t.Children.forEach(n, function (n) {
                   !a &&
                     t.isValidElement(n) &&
-                    m(d.pathname, n) &&
-                    ((a = !0), n.type === b.Z && n.props.shouldRenderAsModal(e, d) && (r = n))
+                    p(d.pathname, n) &&
+                    ((a = !0), n.type === m.Z && n.props.shouldRenderAsModal(e, d) && (r = n))
                 }),
                 r
               )
-            })(S, n, d),
-            w = null == g ? void 0 : g.props,
-            M = t.useRef()
-          p.setModalRoute(d, Boolean(g))
-          var y,
-            C,
-            T = (0, a.$B)(null == w ? void 0 : w.defaultBackgroundPath)
-          M.current =
-            ((C = p.getLastNonModalLocationPathname()),
-            g
-              ? h && M.current
-                ? M.current
-                : null != w && w.restoreBackgroundFromPreviousPath && C
-                ? r.Z.createLocation(C)
-                : null != w && w.defaultBackgroundPath
+            })(D, n, d),
+            M = null == w ? void 0 : w.props,
+            y = t.useRef()
+          h.setModalRoute(d, Boolean(w))
+          var C,
+            T,
+            _ = (0, a.$B)(null == M ? void 0 : M.defaultBackgroundPath)
+          y.current =
+            ((T = h.getLastNonModalLocationPathname()),
+            w
+              ? A && y.current
+                ? y.current
+                : null != M && M.restoreBackgroundFromPreviousPath && T
+                ? r.Z.createLocation(T)
+                : null != M && M.defaultBackgroundPath
                 ? r.Z.createLocation(
-                    null !== (y = null == T ? void 0 : T.url) && void 0 !== y ? y : w.defaultBackgroundPath,
+                    null !== (C = null == _ ? void 0 : _.url) && void 0 !== C ? C : M.defaultBackgroundPath,
                   )
-                : D
+                : v
                 ? r.Z.createLocation('/home')
                 : null
               : d)
-          var _ = t.useMemo(
+          var k = t.useMemo(
               function () {
                 return {
                   esc: function esc(e) {
-                    !e.defaultPrevented && null != w && w.clickMaskToClose && p.goBack()
+                    !e.defaultPrevented && null != M && M.clickMaskToClose && h.goBack()
                   },
                 }
               },
-              [p, w],
+              [h, M],
             ),
-            k = (!!g && s.Z.shouldRenderAsModal(f)) || !(null == w || !w.shouldAlwaysDisplayModal(S, d))
+            P = (!!w && c.Z.shouldRenderAsModal(g)) || !(null == M || !M.shouldAlwaysDisplayModal(D, d))
           return (
-            v.setIsModalOpen(k),
+            f.setIsModalOpen(P),
             t.createElement(
-              t.Fragment,
-              null,
-              k
+              s.p,
+              { location: d },
+              P
                 ? t.createElement(
-                    l.ZP,
-                    {
-                      clickMaskToClose: null == w ? void 0 : w.clickMaskToClose,
-                      history: p,
-                      modalSize: null == w ? void 0 : w.modalSize,
-                      restoreFocusInFocusTrapView: null == w ? void 0 : w.restoreFocusInFocusTrapView,
-                      topOfScreen: null == w ? void 0 : w.topOfScreen,
-                      withBackground: null == w ? void 0 : w.withBackground,
-                    },
-                    t.createElement(a.rs, { location: d }, n),
+                    s.p,
+                    { location: d },
+                    t.createElement(
+                      l.ZP,
+                      {
+                        clickMaskToClose: null == M ? void 0 : M.clickMaskToClose,
+                        history: h,
+                        modalSize: null == M ? void 0 : M.modalSize,
+                        restoreFocusInFocusTrapView: null == M ? void 0 : M.restoreFocusInFocusTrapView,
+                        topOfScreen: null == M ? void 0 : M.topOfScreen,
+                        withBackground: null == M ? void 0 : M.withBackground,
+                      },
+                      t.createElement(a.rs, { location: d }, n),
+                    ),
                   )
                 : null,
-              k ? null : t.createElement(i.Z, { handlers: _ }),
-              !k || M.current ? t.createElement(a.rs, { location: k && M.current ? M.current : d }, n) : null,
+              P ? null : t.createElement(i.Z, { handlers: k }),
+              !P || y.current ? t.createElement(a.rs, { location: P && y.current ? y.current : d }, n) : null,
             )
           )
         }
@@ -75918,63 +76446,67 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           Z: function Z() {
-            return R
+            return H
           },
         })
         var t = d(33028),
           a = d(86522),
           r = d(68079),
-          o = d(9249),
-          i = d(87371),
-          l = d(80753),
-          u = d(45754),
-          s = d(86906),
-          c = d(56666),
-          b = (d(58188), d(73439), d(18178), d(36728), d(2784)),
-          m = d(76984),
-          p = d.n(m),
-          h = d(25686),
-          A = d(73228),
+          o = d(80753),
+          i = d(56666),
+          l = d(7896),
+          u = d(9249),
+          s = d(87371),
+          c = d(45754),
+          b = d(86906),
+          m = (d(58188), d(73439), d(18178), d(36728), d(2784)),
+          p = d(76984),
+          h = d.n(p),
+          A = d(73463),
           S = d.n(A),
-          D = d(32307),
-          v = d(1206),
-          f = d(44329),
-          g = d(12934),
-          w = d(73487),
-          M = d(8080),
-          y = d(5252),
-          C = d(73186),
-          T = d(15070),
-          _ = function _(e, n) {
+          D = d(25686),
+          v = d(73228),
+          f = d.n(v),
+          g = d(32307),
+          w = d(1206),
+          M = d(44329),
+          y = d(12934),
+          C = d(77089),
+          T = d(73487),
+          _ = d(8080),
+          k = d(5252),
+          P = d(73186),
+          E = d(15070),
+          R = function R(e, n) {
             return Math.min(n, Math.max(-n, e))
           }
-        var k = function k(e) {
+        var Z = function Z(e) {
           var n = e.cropCandidates,
             d = e.image,
             t = e.layout,
             a = t.width / t.height,
-            r = M.Z.selectBestCropCandidate(a, n)
+            r = _.Z.selectBestCropCandidate(a, n)
           return r
             ? (function (e, n, d) {
                 if (e.width / e.height < n) {
                   var t = d.y + d.h / 2,
                     a = e.width / n,
                     r = (e.height - a) / 2
-                  return { displacementX: 0, displacementY: (2 * _(e.height / 2 - t, r)) / e.width }
+                  return { displacementX: 0, displacementY: (2 * R(e.height / 2 - t, r)) / e.width }
                 }
                 var o = d.x + d.w / 2,
                   i = n * e.height,
                   l = (e.width - i) / 2
-                return { displacementX: (2 * _(e.width / 2 - o, l)) / i, displacementY: 0 }
+                return { displacementX: (2 * R(e.width / 2 - o, l)) / i, displacementY: 0 }
               })(d, a, r)
             : { displacementX: 0, displacementY: 0 }
         }
-        var P = (function () {
+        var I = (function () {
             function e() {
-              ;(0, o.Z)(this, e)
+              ;(0, u.Z)(this, e)
             }
             return (
-              (0, i.Z)(e, [
+              (0, s.Z)(e, [
                 {
                   key: 'get',
                   value: function value(e) {
@@ -76003,18 +76535,40 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          E = S().a620fcf0,
-          R = (function (e) {
-            ;(0, u.Z)(d, e)
-            var n = (0, s.Z)(d)
+          B = f().a620fcf0,
+          x = (function (e) {
+            ;(0, c.Z)(d, e)
+            var n = (0, b.Z)(d)
+            function d() {
+              return (0, u.Z)(this, d), n.apply(this, arguments)
+            }
+            return (
+              (0, s.Z)(d, [
+                {
+                  key: 'render',
+                  value: function value() {
+                    var e = this
+                    return m.createElement(C.ZP.UseProps, null, function (n) {
+                      var d = n.webImageLargeWebpVariants
+                      return m.createElement(N, (0, l.Z)({}, e.props, { featureUseLargeWebp: d() }))
+                    })
+                  },
+                },
+              ]),
+              d
+            )
+          })(m.Component),
+          N = (function (e) {
+            ;(0, c.Z)(d, e)
+            var n = (0, b.Z)(d)
             function d(e) {
               var t
-              ;(0, o.Z)(this, d),
+              ;(0, u.Z)(this, d),
                 (t = n.call(this, e)),
-                (0, c.Z)((0, l.Z)(t), '_unmounted', !1),
-                (0, c.Z)((0, l.Z)(t), '_skipLayout', !1),
-                (0, c.Z)((0, l.Z)(t), 'state', { url: void 0, crop: void 0, previewUrl: void 0, showBackground: !0 }),
-                (0, c.Z)((0, l.Z)(t), '_handleLayout', function (e) {
+                (0, i.Z)((0, o.Z)(t), '_unmounted', !1),
+                (0, i.Z)((0, o.Z)(t), '_skipLayout', !1),
+                (0, i.Z)((0, o.Z)(t), 'state', { url: void 0, crop: void 0, previewUrl: void 0, showBackground: !0 }),
+                (0, i.Z)((0, o.Z)(t), '_handleLayout', function (e) {
                   var n = e.nativeEvent.layout,
                     d = t.props,
                     a = d.aspectMode,
@@ -76027,25 +76581,25 @@ window.__SCRIPTS_LOADED__.vendor &&
                   } else;
                   t._updateVersion(t.props, n, !1)
                 }),
-                (0, c.Z)((0, l.Z)(t), '_handleLoad', function () {
+                (0, i.Z)((0, o.Z)(t), '_handleLoad', function () {
                   var e = t.props.onLoad
                   t._unmounted || (t.setState({ showBackground: !1, previewUrl: void 0 }), e && e())
                 })
               var a = e.aspectMode,
                 r = e.layoutCache,
-                i =
+                l =
                   r &&
                   (('ratioRange' === a.type && r.get(t._deriveAspectRatio(a))) ||
                     ('cover' === a.type && r.getCoverSize()))
-              if (i) {
+              if (l) {
                 t._skipLayout = !0
-                var u = d.getComputedVersion(i, e, t.state, !1)
-                u && (t.state = u)
+                var s = d.getComputedVersion(l, e, t.state, !1)
+                s && (t.state = s)
               }
               return t
             }
             return (
-              (0, i.Z)(
+              (0, s.Z)(
                 d,
                 [
                   {
@@ -76053,9 +76607,9 @@ window.__SCRIPTS_LOADED__.vendor &&
                     value: function value(e, n) {
                       var d = this.props
                       return (
-                        !p()(this.state, n) ||
+                        !h()(this.state, n) ||
                         d.accessibilityLabel !== e.accessibilityLabel ||
-                        !p()(d.aspectMode, e.aspectMode) ||
+                        !h()(d.aspectMode, e.aspectMode) ||
                         d.rounded !== e.rounded ||
                         d.backgroundColor !== e.backgroundColor
                       )
@@ -76083,22 +76637,22 @@ window.__SCRIPTS_LOADED__.vendor &&
                         t = this.state,
                         a = t.crop,
                         r = t.previewUrl,
-                        o = a && I(a),
+                        o = a && L(a),
                         i = !!r && this._renderPreview(r, o),
                         l = this.url && this._renderImage(this.url, this._handleLoad, o),
-                        u = d && i && l ? x : null,
-                        s = b.Children.toArray([l, i, u])
+                        u = d && i && l ? U : null,
+                        s = m.Children.toArray([l, i, u])
                       return 'ratioRange' === n.type ? this._renderInRatioRangeMode(n, s) : this._renderInCoverMode(s)
                     },
                   },
                   {
                     key: '_renderInCoverMode',
                     value: function value(e) {
-                      return b.createElement(
-                        h.Z,
+                      return m.createElement(
+                        D.Z,
                         {
                           onLayout: this._skipLayout ? void 0 : this._handleLayout,
-                          style: [B.root].concat((0, r.Z)(this._getBackgroundStyle())),
+                          style: [F.root].concat((0, r.Z)(this._getBackgroundStyle())),
                         },
                         e,
                       )
@@ -76109,8 +76663,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                     value: function value(e, n) {
                       var d = this.props.mediaMaxHeight,
                         t = this._deriveAspectRatio(e)
-                      return b.createElement(
-                        g.Z,
+                      return m.createElement(
+                        y.Z,
                         {
                           onLayout:
                             this._skipLayout && (t > e.minAspectRatio || e.minAspectRatio === e.maxAspectRatio)
@@ -76134,13 +76688,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                         o = t.onError,
                         i = t.rounded,
                         l = t.testID
-                      return b.createElement(w.Z, {
+                      return m.createElement(T.Z, {
                         accessibilityLabel: a,
                         draggable: r,
                         onError: o,
                         onLoad: n,
                         source: e,
-                        style: [C.Z.absoluteFill, i && B.rounded, d],
+                        style: [P.Z.absoluteFill, i && F.rounded, d],
                         testID: l,
                       })
                     },
@@ -76148,7 +76702,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   {
                     key: '_renderPreview',
                     value: function value(e, n) {
-                      return b.createElement(h.Z, { style: [B.blur, B.root] }, this._renderImage(e, v.Z, n))
+                      return m.createElement(D.Z, { style: [F.blur, F.root] }, this._renderImage(e, w.Z, n))
                     },
                   },
                   {
@@ -76165,10 +76719,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                         t = this.props,
                         a = t.customVariants,
                         r = t.image,
-                        o = ('string' == typeof r ? T.Z.selectLargestVariant(r, a) : r) || {},
+                        o = ('string' == typeof r ? E.Z.selectLargestVariant(r, a) : r) || {},
                         i = o.height,
                         l = o.width
-                      return (0, M.q)(d, n, { width: l, height: i })
+                      return (0, _.q)(d, n, { width: l, height: i })
                     },
                   },
                   {
@@ -76177,8 +76731,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                       var e = this.props,
                         n = e.backgroundColor,
                         d = e.rounded,
-                        t = this.state.showBackground && n ? [{ backgroundColor: Z(n) }] : []
-                      return d && t.push(B.rounded), t
+                        t = this.state.showBackground && n ? [{ backgroundColor: O(n) }] : []
+                      return d && t.push(F.rounded), t
                     },
                   },
                 ],
@@ -76186,7 +76740,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   {
                     key: 'createLayoutCache',
                     value: function value() {
-                      return new P()
+                      return new I()
                     },
                   },
                   {
@@ -76195,8 +76749,8 @@ window.__SCRIPTS_LOADED__.vendor &&
                       var t, a, r
                       if (!n.layout) return null
                       var o =
-                        !(0, D.Z)(null === (t = n.prevProps) || void 0 === t ? void 0 : t.image, e.image) ||
-                        !(0, D.Z)(
+                        !(0, g.Z)(null === (t = n.prevProps) || void 0 === t ? void 0 : t.image, e.image) ||
+                        !(0, g.Z)(
                           null === (a = n.prevProps) || void 0 === a ? void 0 : a.cropCandidates,
                           e.cropCandidates,
                         )
@@ -76217,26 +76771,27 @@ window.__SCRIPTS_LOADED__.vendor &&
                         var o,
                           i = n.cropCandidates,
                           l = n.customVariants,
-                          u = n.image,
-                          s = n.previewMode,
-                          c = n.withCenterCrop,
-                          b = t.previewUrl,
-                          m = t.showBackground,
-                          p = t.url,
-                          h = T.Z.selectBestUrl(e, u, l),
-                          A = s ? void 0 : h
-                        s ? (o = r || !b ? T.Z.selectPreviewUrl(u, l) : b) : !A || p || r || (o = b)
-                        var S =
-                          'object' === (0, a.Z)(u)
-                            ? k(
-                                c
-                                  ? { image: u, layout: e, cropCandidates: [] }
-                                  : { image: u, layout: e, cropCandidates: i },
+                          u = n.featureUseLargeWebp,
+                          s = n.image,
+                          c = n.previewMode,
+                          b = n.withCenterCrop,
+                          m = t.previewUrl,
+                          p = t.showBackground,
+                          h = t.url,
+                          A = E.Z.selectBestUrl(e, s, l, u),
+                          S = c ? void 0 : A
+                        c ? (o = r || !m ? E.Z.selectPreviewUrl(s, l, u) : m) : !S || h || r || (o = m)
+                        var D =
+                          'object' === (0, a.Z)(s)
+                            ? Z(
+                                b
+                                  ? { image: s, layout: e, cropCandidates: [] }
+                                  : { image: s, layout: e, cropCandidates: i },
                               )
                             : void 0
                         return (
-                          d.notifySelection(n, h, p, h !== A),
-                          { url: A, crop: S, previewUrl: o, layout: e, prevProps: n, showBackground: m }
+                          d.notifySelection(n, A, h, A !== S),
+                          { url: S, crop: D, previewUrl: o, layout: e, prevProps: n, showBackground: p }
                         )
                       }
                     },
@@ -76252,9 +76807,9 @@ window.__SCRIPTS_LOADED__.vendor &&
               ),
               d
             )
-          })(b.Component)
-        ;(0, c.Z)(R, 'defaultProps', {
-          aspectMode: f.Z.SQUARE,
+          })(m.Component)
+        ;(0, i.Z)(N, 'defaultProps', {
+          aspectMode: M.Z.SQUARE,
           cropCandidates: [],
           draggable: !0,
           previewMode: !1,
@@ -76262,11 +76817,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           withCenterCrop: !1,
           withLoadingIndicator: !1,
         }),
-          (R.propTypes = {})
-        var Z = function Z(e) {
+          (N.propTypes = {})
+        var O = function O(e) {
             return 'object' === (0, a.Z)(e) ? 'rgb('.concat(e.red, ', ').concat(e.green, ', ').concat(e.blue, ')') : e
           },
-          I = function I(e) {
+          L = function L(e) {
             var n = e.displacementX,
               d = e.displacementY
             return {
@@ -76276,15 +76831,16 @@ window.__SCRIPTS_LOADED__.vendor &&
               marginBottom: d > 0 ? ''.concat(Math.ceil(100 * -d), '%') : 0,
             }
           },
-          B = C.Z.create(function (e) {
+          F = P.Z.create(function (e) {
             return {
-              root: (0, t.Z)((0, t.Z)({}, C.Z.absoluteFillObject), {}, { overflow: 'hidden' }),
+              root: (0, t.Z)((0, t.Z)({}, P.Z.absoluteFillObject), {}, { overflow: 'hidden' }),
               rounded: { borderRadius: e.borderRadii.infinite },
               blur: { filter: 'blur(4px)', transform: [{ scale: 1.1 }] },
               progressBar: { position: 'absolute', top: 0 },
             }
           }),
-          x = b.createElement(y.Z, { ariaValueText: E, indeterminate: !0, style: B.progressBar })
+          U = m.createElement(k.Z, { ariaValueText: B, indeterminate: !0, style: F.progressBar })
+        var H = S()(x, N)
       },
       27968: function _(e, n, d) {
         'use strict'
@@ -79362,6 +79918,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   newBadgeColorEnabled: !1,
                   tweetViewCountsEnabled: !1,
                   businessGovernmentVerifiedNewIconsEnabled: !1,
+                  webImageLargeWebpVariants: !1,
                 },
                 o,
               ),
@@ -85691,7 +86248,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           Z: function Z() {
-            return de
+            return te
           },
         })
         d(9949), d(32501), d(95342), d(58188), d(26936), d(49228), d(43450), d(34769)
@@ -85968,33 +86525,52 @@ window.__SCRIPTS_LOADED__.vendor &&
             '4096x4096': { dimension: 4096 },
           },
           H = new g(U),
-          j = new g((0, l.Z)((0, l.Z)({}, U), {}, { tiny: { dimension: 64, format: 'webp' } }))
-        var z = function z(e) {
-          return (F() ? j : H).enumerateVersions(V(e))
-        }
+          j = new g((0, l.Z)((0, l.Z)({}, U), {}, { tiny: { dimension: 64, format: 'webp' } })),
+          z = new g(
+            (0, l.Z)(
+              (0, l.Z)({}, U),
+              {},
+              {
+                tiny: { dimension: 64, format: 'webp' },
+                '120x120': { dimension: 120, format: 'webp' },
+                '240x240': { dimension: 240, format: 'webp' },
+                '360x360': { dimension: 360, format: 'webp' },
+                small: { dimension: 680, format: 'webp' },
+                '900x900': { dimension: 900, format: 'webp' },
+                medium: { dimension: 1200, format: 'webp' },
+                large: { dimension: 2048, format: 'webp' },
+                '4096x4096': { dimension: 4096, format: 'webp' },
+              },
+            ),
+          )
         var V = function V(e) {
+          var n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+            d = H
+          return F() && (d = n ? z : j), d.enumerateVersions(W(e))
+        }
+        var W = function W(e) {
             if (!e.width || !e.height)
               return (
                 S.Z.report(new Error('UIV original image does not specify width or height'), {
                   extra: { imageUrl: e.url },
                 }),
-                (0, l.Z)((0, l.Z)({}, e), W(1))
+                (0, l.Z)((0, l.Z)({}, e), G(1))
               )
             var n = e.height,
               d = e.width
-            return Math.min(d, n) < 24 ? (0, l.Z)((0, l.Z)({}, e), W(d / n)) : e
+            return Math.min(d, n) < 24 ? (0, l.Z)((0, l.Z)({}, e), G(d / n)) : e
           },
-          W = function W(e) {
+          G = function G(e) {
             var n = H.getLargestDimension()
             return e >= 1 ? { width: n, height: n / e } : { width: n * e, height: n }
           }
-        var G =
-          ((K = (q = {
+        var q =
+          ((Q = (K = {
             variantMapping: {
-              ad_img: z,
-              amplify_video_thumb: z,
+              ad_img: V,
+              amplify_video_thumb: V,
               blob: _,
-              card_img: z,
+              card_img: V,
               cards: _,
               commerce_product_img: _,
               'developer-card-service': _,
@@ -86005,17 +86581,17 @@ window.__SCRIPTS_LOADED__.vendor &&
                   })(e),
                 )
               },
-              dm_gif_preview: z,
-              dm_group_img: z,
-              dm_video_preview: z,
-              ext_tw_video_thumb: z,
+              dm_gif_preview: V,
+              dm_group_img: V,
+              dm_video_preview: V,
+              ext_tw_video_thumb: V,
               focused_timeline_actions: _,
               'gryphon-client': _,
               lex: _,
-              live_event_img: z,
-              list_banner_img: z,
-              community_banner_img: z,
-              media: z,
+              live_event_img: V,
+              list_banner_img: V,
+              community_banner_img: V,
+              media: V,
               news_img: _,
               onboarding: _,
               profile_banners: function profile_banners(e) {
@@ -86029,13 +86605,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                 })
               },
               profile_images: x,
-              semantic_core_img: z,
+              semantic_core_img: V,
               sticky: function sticky(e) {
                 var n = e.url
                 return O[n] || [{ uri: n, width: 48, height: 48 }]
               },
               topics: _,
-              tweet_video_thumb: z,
+              tweet_video_thumb: V,
               'responsive-web': _,
               periscope: _,
             },
@@ -86049,83 +86625,83 @@ window.__SCRIPTS_LOADED__.vendor &&
               'ton.twimg.com',
             ],
           }).cdnDomains),
-          (Q = q.variantMapping),
-          function (e) {
-            var n,
-              d = P(K, e.url)
+          (Y = K.variantMapping),
+          function (e, n) {
+            var d,
+              t = P(Q, e.url)
             return (
-              d &&
-                'function' != typeof (n = Q[d]) &&
-                S.Z.report(new Error('No variant generator is specified for category ['.concat(d || '<unknown>', ']'))),
-              (n || _)(e)
+              t &&
+                'function' != typeof (d = Y[t]) &&
+                S.Z.report(new Error('No variant generator is specified for category ['.concat(t || '<unknown>', ']'))),
+              (d || _)(e, n)
             )
           })
-        var q,
-          K,
+        var K,
           Q,
-          Y = function Y(e, n) {
+          Y,
+          X = function X(e, n) {
             return (
               e.find(function (e) {
-                return X(e, n)
+                return J(e, n)
               }) || (0, r.Z)(e)
             )
           },
-          X = function X(e, n) {
+          J = function J(e, n) {
             return e.width >= n.width && e.height >= n.height
           }
-        var J = function J(e) {
+        var $ = function $(e) {
           var n = e.containerSize,
             d = e.pixelRatio,
             t = e.versions
           if (0 !== t.length) {
             var a = m.Z.isEnabled ? Math.min(d, 1.5) : d,
               r = { width: n.width * a, height: n.height * a }
-            return Y(t, r)
+            return X(t, r)
           }
         }
-        var $ = (0, o.Z)(function (e, n, d) {
-            var t = n || G('string' == typeof e ? { url: e } : e),
-              a = !n && d ? ee(t) : t,
-              r = -1
+        var ee = (0, o.Z)(function (e, n, d, t) {
+            var a = n || q('string' == typeof e ? { url: e } : e, t),
+              r = !n && d ? ne(a) : a,
+              o = -1
             'string' != typeof e &&
-              (r = a.findIndex(function (n) {
+              (o = r.findIndex(function (n) {
                 return n.width >= e.width && n.height >= e.height
               }))
-            var o = -1 === r ? a.length : r + 1
-            return a.slice(0, o)
+            var i = -1 === o ? r.length : o + 1
+            return r.slice(0, i)
           }),
-          ee = function ee(e) {
+          ne = function ne(e) {
             return e.filter(function (e) {
               return !(e && e.variant && 'tiny' === e.variant.name)
             })
           },
-          ne = function ne(e, n) {
-            var d = $(e, n)
+          de = function de(e, n, d) {
+            var t = ee(e, n, void 0, d)
             return i.ZP.isDesktopOS()
-              ? (0, r.Z)(d)
-              : d.find(function (e) {
+              ? (0, r.Z)(t)
+              : t.find(function (e) {
                   return Math.max(e.width, e.height) >= 2048
-                }) || (0, r.Z)(d)
+                }) || (0, r.Z)(t)
           }
-        var de = {
-          selectBestUrl: function selectBestUrl(e, n, d) {
-            var t = $(n, d, !0),
-              r = J({ versions: t, containerSize: e, pixelRatio: Math.min(a.Z.get(), 2) })
-            return r ? r.uri : void 0
+        var te = {
+          selectBestUrl: function selectBestUrl(e, n, d, t) {
+            var r = ee(n, d, !0, t),
+              o = $({ versions: r, containerSize: e, pixelRatio: Math.min(a.Z.get(), 2) })
+            return o ? o.uri : void 0
           },
-          selectPreviewUrl: function selectPreviewUrl(e, n) {
-            var d = $(e, n)[0]
-            return d && d.width <= 160 && d.height <= 160 ? d.uri : void 0
+          selectPreviewUrl: function selectPreviewUrl(e, n, d) {
+            var t = ee(e, n, void 0, d)[0]
+            return t && t.width <= 160 && t.height <= 160 ? t.uri : void 0
           },
-          selectLargestVariant: ne,
-          selectLargestUrl: function selectLargestUrl(e) {
-            var n = ne(e)
-            return n && n.uri
+          selectLargestVariant: de,
+          selectLargestUrl: function selectLargestUrl(e, n) {
+            var d = de(e, void 0, n)
+            return d && d.uri
           },
-          selectLargestCachedVariant: function selectLargestCachedVariant(e) {
-            var n = $(e)
+          selectLargestCachedVariant: function selectLargestCachedVariant(e, n) {
+            var d = ee(e, void 0, void 0, n)
             return t.Z.queryCache(
-              n.map(function (e) {
+              d.map(function (e) {
                 return e.uri
               }),
             )
@@ -86133,7 +86709,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 return (0, r.Z)(Object.keys(e))
               })
               .then(function (e) {
-                return n.find(function (n) {
+                return d.find(function (n) {
                   return n.uri === e
                 })
               })

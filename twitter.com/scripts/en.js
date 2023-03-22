@@ -924,6 +924,9 @@
         a('ba929da8', 'Page not found'),
         a('d203e242', 'Not found'),
         a('e49537c2', 'Hmm...this page doesn’t exist. Try searching for something else.'),
+        a('d5568440', 'Please enter a stronger password.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cd24fe60', 'Please enter a valid phone number.'),
         a('i9028824', 'Loading'),
         a('f5090e28', 'Seems like you lost connectivity. We’ll keep retrying.'),
         a('fb4ee11c', 'Why this ad?'),
@@ -1145,15 +1148,15 @@
         a('i77347d1', function (e) {
           return 'Dismiss ' + e.topicName + ' Topic'
         }),
-        a('d69b2d90', 'You’re not interested in this Topic.'),
-        a('je808a17', function (e) {
-          return e.topicName + ' Topic'
-        }),
-        a('e3a24e4c', 'Add another Tweet'),
-        a('i569ff3e', 'Show this thread')
-      a('je5502eb', function (e) {
-        return 'Including results for "' + e.suggestion + '"'
+        a('d69b2d90', 'You’re not interested in this Topic.')
+      a('je808a17', function (e) {
+        return e.topicName + ' Topic'
       }),
+        a('e3a24e4c', 'Add another Tweet'),
+        a('i569ff3e', 'Show this thread'),
+        a('je5502eb', function (e) {
+          return 'Including results for "' + e.suggestion + '"'
+        }),
         a('bc4628a1', function (e) {
           return 'Showing results for "' + e.suggestion + '"'
         }),
@@ -1252,7 +1255,6 @@
         a('ba370e34', 'Tweet liked'),
         a('d9034c72', 'Tweet unliked'),
         a('e518bc7a', 'Reaction added'),
-        a('f46ba416', 'Reaction added. Open the reaction picker for more options to express how you feel.'),
         a('c604dda2', 'Reaction removed'),
         a('f6c7249c', 'Tweet Retweeted'),
         a('f67de45a', 'Tweet Unretweeted'),
@@ -1756,9 +1758,6 @@
         a('b6c63977', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
         a('f70a36d0', 'Tweet all'),
         a('cf433586', 'Introducing'),
         a('a603e958', 'Reply downvotes'),
@@ -2342,9 +2341,9 @@
         a(
           'ife4baaa',
           'Community Notes doesn’t work by majority rule. To identify notes that are helpful to a wide range of people, statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
-        )
-      a('a0c552ee', 'Your impact will be shown here'),
-        a('a4e5ea3c', 'You haven’t rated any notes yet'),
+        ),
+        a('a0c552ee', 'Your impact will be shown here')
+      a('a4e5ea3c', 'You haven’t rated any notes yet'),
         a('g9a28bde', 'Browse notes that need help'),
         a('dc0046e2', 'Browse the Community Notes home'),
         a('fecae168', 'There, you’ll find notes that need more ratings, and where your rating specifically can help.'),
@@ -3605,9 +3604,9 @@
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
-        a('cdcef7b6', 'Learn more about privacy on Twitter')
-      a('a607862a', 'Privacy policy'),
-        a('g5925628', 'Contact us'),
+        a('cdcef7b6', 'Learn more about privacy on Twitter'),
+        a('a607862a', 'Privacy policy')
+      a('g5925628', 'Contact us'),
         a('dd6012f8', 'Privacy center'),
         a('jdceda60', 'Replies'),
         a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
@@ -4825,9 +4824,9 @@
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
-        a('ede0ac3e', 'Planned usage')
-      a('ffb6cb88', 'How do you plan to use Super Follows?'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('ede0ac3e', 'Planned usage'),
+        a('ffb6cb88', 'How do you plan to use Super Follows?')
+      a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('gfc80842', 'Submit application'),
@@ -6034,6 +6033,9 @@
         }),
         a('d0681155', function (e) {
           return e.fullName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('be59fddf', function (e) {
+          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6054,12 +6056,9 @@
           c(e, t)
         )
       }
-      a('be59fddf', function (e) {
-        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+      a('b357b2ad', function (e) {
+        return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
       }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
         a('aba12f5d', function (e) {
           return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
         }),
@@ -7347,9 +7346,9 @@
         a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
         a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
-        a('i8912d28', 'Lets add some columns...')
-      a('ce0c0f34', 'Now let’s have a look around'),
-        a('h36d2aa2', 'Learn some handy tips to get you started.'),
+        a('i8912d28', 'Lets add some columns...'),
+        a('ce0c0f34', 'Now let’s have a look around')
+      a('h36d2aa2', 'Learn some handy tips to get you started.'),
         a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),

@@ -7722,6 +7722,11 @@ window.__SCRIPTS_LOADED__.polyfills &&
             },
           })
       },
+      4173: function _(e, t, r) {
+        var n = r(23103),
+          i = r(9859)
+        n({ global: !0, forced: i.globalThis !== i }, { globalThis: i })
+      },
       6710: function _(e, t, r) {
         var n = r(23103),
           i = r(31333),
