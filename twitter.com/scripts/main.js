@@ -3428,10 +3428,12 @@ window.__SCRIPTS_LOADED__.vendor &&
           var n,
             d,
             t = e.note_tweet,
-            a = null == t || null === (n = t.note_tweet_results) || void 0 === n ? void 0 : n.result
+            a = null == t || null === (n = t.note_tweet_results) || void 0 === n ? void 0 : n.result,
+            r = Boolean(null == t ? void 0 : t.is_expandable)
           if (null != a && a.id && null != a && a.text)
             return {
               id: a.id,
+              is_expandable: r,
               text: a.text,
               entity_set: a.entity_set || {},
               richtext_tags: (null === (d = a.richtext) || void 0 === d ? void 0 : d.richtext_tags) || [],
