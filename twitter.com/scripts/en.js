@@ -2,10 +2,10 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   ['i18n/en'],
   {
-    417346: function _(e, t, o) {
-      var a = o(379404)._register('en', {
+    17346: function _(e, t, o) {
+      var a = o(79404)._register('en', {
         get emoji() {
-          return o.e('i18n/emoji-en').then(o.t.bind(o, 920747, 23))
+          return o.e('i18n/emoji-en').then(o.t.bind(o, 20747, 23))
         },
       })
       function n(e, t, o) {
@@ -1652,6 +1652,9 @@
         a('i7dc66dd', function (e) {
           return 'Italic' + e.ttc_rich_text_composer
         }),
+        a('ad89b831', function (e) {
+          return 'active' + e.ttc_rich_text_composer
+        }),
         a('f3a7a80c', 'Want to review this before Tweeting?'),
         a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
         a('d1a92642', 'Most Tweeters don’t post replies like this'),
@@ -2339,12 +2342,12 @@
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes'),
-        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note')
-      a(
-        'b6203a2e',
-        'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
-      ),
+        a('a3ca686a', 'See tips for writing helpful notes')
+      a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a(
+          'b6203a2e',
+          'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
+        ),
         a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
         a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
@@ -3608,9 +3611,9 @@
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        ),
-        a('h14ba864', 'Data sharing with business partners')
-      a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
+        )
+      a('h14ba864', 'Data sharing with business partners'),
+        a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
         a('cdcef7b6', 'Learn more about privacy on Twitter'),
@@ -4828,9 +4831,9 @@
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-        ),
-        a('c144fa52', 'What kind of content do you create? Select all that apply.')
-      a('f1bf337e', 'Select categories'),
+        )
+      a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
@@ -6048,24 +6051,6 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        }),
-        a('cd869707', function (e) {
-          return (
-            e.date +
-            ': ' +
-            e.likeCount +
-            ' like' +
-            n(e.likeCount, '', 's') +
-            '. ' +
-            e.retweetCount +
-            ' retweet' +
-            n(e.retweetCount, '', 's') +
-            '. ' +
-            e.replyCount +
-            ' repl' +
-            n(e.replyCount, 'y', 'ies') +
-            '.'
-          )
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6086,9 +6071,27 @@
           c(e, t)
         )
       }
-      a('ad666301', function (e) {
-        return e.fullName + ' on Twitter'
+      a('cd869707', function (e) {
+        return (
+          e.date +
+          ': ' +
+          e.likeCount +
+          ' like' +
+          n(e.likeCount, '', 's') +
+          '. ' +
+          e.retweetCount +
+          ' retweet' +
+          n(e.retweetCount, '', 's') +
+          '. ' +
+          e.replyCount +
+          ' repl' +
+          n(e.replyCount, 'y', 'ies') +
+          '.'
+        )
       }),
+        a('ad666301', function (e) {
+          return e.fullName + ' on Twitter'
+        }),
         a('g132f681', function (e) {
           return '@' + e.screenName + ' Tweeted...'
         }),
@@ -6393,6 +6396,11 @@
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Twitter Blue subscription.',
         ),
         a('dad69faa', 'Update your payment method'),
+        a('a3a4e8f8', 'Monthly'),
+        a('jd2c99be', 'Annually'),
+        a('b47d123d', function (e) {
+          return 'SAVE ' + e.percentage + '%'
+        }),
         a('ab0decc0', 'Subscribe'),
         a('i8386756', 'Monthly Plan'),
         a('ac163d10', 'Annual Plan'),
@@ -6401,9 +6409,6 @@
         }),
         a('c41e1023', function (e) {
           return e.price + ' / year'
-        }),
-        a('b47d123d', function (e) {
-          return 'SAVE ' + e.percentage + '%'
         }),
         a('j617750f', function (e) {
           return e.price + ' per year billed annually'
@@ -7322,11 +7327,11 @@
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
         a('habced9e', 'to restore column.'),
-        a('g4fcb4f8', 'Column restored.'),
-        a('g2c6e34a', 'Manage content size, color and background.'),
+        a('g4fcb4f8', 'Column restored.')
+      a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
-        a('h098a550', 'Default column width')
-      a('ab248726', 'Default media preview'),
+        a('h098a550', 'Default column width'),
+        a('ab248726', 'Default media preview'),
         a('e1cab6e8', 'Apply changes to existing columns?'),
         a(
           'ce2e487c',
@@ -8206,7 +8211,7 @@
         a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
         a('gfaaead8', 'Untitled'),
         a('cfd13f46', 'Voice Dock')
-      var s = o(202784),
+      var s = o(2784),
         u = [],
         d = {}
       function l(e) {
@@ -11075,13 +11080,13 @@
           Object.defineProperty(a, 'prototype', { writable: !1 }),
           b
         )
-      })(o(473228)._ActualI18NFormatMessage || s.Component)
+      })(o(73228)._ActualI18NFormatMessage || s.Component)
       a('_ActualI18NFormatMessage', f),
         a('I18NFormatMessage', function (e) {
           return s.createElement(f, e)
         })
-      var b = o(495075)
-      o(800694), o(556829), o(530152), o(658610), o(492344), o(663823)
+      var b = o(95075)
+      o(694), o(56829), o(30152), o(58610), o(92344), o(63823)
       b._validateParameterTypeNumber, b._validateParameterPresence
       var h = b._numberRound,
         m = (b._numberFormat, b._numberFormatterFn),
