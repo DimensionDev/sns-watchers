@@ -30293,11 +30293,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               })
         })
       },
-      7694: function _(e, n, d) {
+      76024: function _(e, n, d) {
         'use strict'
         d.d(n, {
-          ZP: function ZP() {
-            return h
+          Z: function Z() {
+            return m
           },
         })
         var t = d(96234),
@@ -30310,41 +30310,28 @@ window.__SCRIPTS_LOADED__.vendor &&
           s = d(21783),
           c = d(19313),
           b = d(68547)
-        var m = i.Z.create(function (e) {
-          return {
-            root: {
-              alignItems: 'center',
-              alignSelf: 'stretch',
-              cursor: 'pointer',
-              display: 'flex',
-              flexGrow: 1,
-              justifyContent: 'center',
-              minWidth: e.spaces.space32,
-            },
-            icon: { color: e.colors.primary, flexGrow: 1, height: '1.75rem' },
-            iconTwitter: { color: e.colors.brandColor, flexGrow: 1, height: '1.75rem' },
-          }
-        })
-        var p = u().d2fb334c
-        function h(e) {
+        function m(e) {
           var n = e.Icon,
             d = void 0 === n ? s['default'] : n,
             i = e.link,
             l = e.onClick,
             u = e.pullLeft,
-            h = void 0 === u || u,
-            D = e.size,
-            v = void 0 === D ? 'medium' : D,
-            f = a.useState(!1),
-            g = (0, t.Z)(f, 2),
-            w = g[0],
-            M = g[1]
+            m = void 0 === u || u,
+            A = e.size,
+            S = void 0 === A ? 'medium' : A,
+            D = a.useState(!1),
+            v = (0, t.Z)(D, 2),
+            f = v[0],
+            g = v[1],
+            w = a.useContext(c.rC).loggedInUserId,
+            M = 'large' === S ? 'xLarge' : 'medium',
+            y = i || (w ? '/home' : '/')
           a.useEffect(function () {
             var e = (0, b.Z)({
               'up up down down left right left right b a': function upUpDownDownLeftRightLeftRightBA() {
-                M(!0),
+                g(!0),
                   setTimeout(function () {
-                    return M(!1)
+                    return g(!1)
                   }, 1050)
               },
             })
@@ -30352,39 +30339,40 @@ window.__SCRIPTS_LOADED__.vendor &&
               return e()
             }
           }, [])
-          var y = a.useContext(c.rC).loggedInUserId,
-            C = 'large' === v ? 'xLarge' : 'medium',
-            T = i || (y ? '/home' : '/'),
-            _ = a.useMemo(
-              function () {
-                return [m.iconTwitter, S[v], w && A.animate]
-              },
-              [w, v],
-            ),
-            k = a.useMemo(
-              function () {
-                return a.createElement(d, { style: _ })
-              },
-              [_],
-            )
+          var C = [h.iconTwitter, h[S], f && h.animate],
+            T = a.createElement(d, { style: C })
           return a.createElement(
             r.Z,
-            { accessibilityRole: 'heading', style: m.root },
+            { accessibilityRole: 'heading', style: h.root },
             a.createElement(o.ZP, {
-              accessibilityLabel: p,
+              accessibilityLabel: p.twitter,
               borderColor: 'transparent',
-              color: 'blue500',
-              icon: k,
-              link: T,
+              icon: T,
+              link: y,
               onClick: l,
-              pullLeft: h,
-              size: C,
+              pullLeft: m,
+              size: M,
             }),
           )
         }
-        var A = i.Z.create({ animate: { transition: 'all 1s ease', transform: 'rotate(360deg)' } }),
-          S = i.Z.create(function (e) {
-            return { medium: { height: '1.75rem' }, large: { height: '2rem' } }
+        var p = { twitter: u().d2fb334c },
+          h = i.Z.create(function (e) {
+            var n = '1.75rem'
+            return {
+              root: {
+                alignItems: 'center',
+                alignSelf: 'stretch',
+                cursor: 'pointer',
+                display: 'flex',
+                flexGrow: 1,
+                justifyContent: 'center',
+                minWidth: e.spaces.space32,
+              },
+              iconTwitter: { color: e.colors.brandColor, flexGrow: 1, height: n },
+              animate: { transition: 'transform 1s ease', transform: 'rotate(360deg)' },
+              medium: { height: n },
+              large: { height: '2rem' },
+            }
           })
       },
       16322: function _(e, n, d) {
@@ -32418,7 +32406,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           }),
           jn = d(44487),
           zn = d(48580),
-          Vn = d(7694),
+          Vn = d(76024),
           Wn = d(16322),
           Gn = d(38674),
           qn = f().fd5208c6,
@@ -32457,7 +32445,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               h.Z,
               { style: Xn.buttonContainer },
               (!(l = (0, zn.q)({}, { location: r })) && '/' === d) || (!l && !d)
-                ? s.createElement(Vn.ZP, null)
+                ? s.createElement(Vn.Z, null)
                 : s.createElement(Tn.Z, {
                     backButtonType: n,
                     onClick: function onClick() {
