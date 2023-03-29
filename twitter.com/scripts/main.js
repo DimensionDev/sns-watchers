@@ -7226,11 +7226,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             return Promise.resolve().then(d.bind(d, 63412))
           })
       },
-      33541: function _(e, n, d) {
+      24230: function _(e, n, d) {
         'use strict'
         d.d(n, {
           T: function T() {
-            return Ld
+            return Ud
           },
         })
         var t = d(41361),
@@ -9414,36 +9414,56 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }
         }
-        var rd = d(66136),
-          od = d(67935),
-          id = d(22907)
-        function ld(e) {
+        var rd = d(22381)
+        function od(e, n) {
+          var t = (0, rd.Z)(function () {
+            return d
+              .e('ondemand.DirectMessagesCrypto')
+              .then(d.bind(d, 65598))
+              .then(function (n) {
+                return (0, n['default'])(e())
+              })
+          })
+          return function (e, d) {
+            return n.isTrue('responsive_web_secret_dms') &&
+              n.isTrue('dm_secret_conversations_enabled') &&
+              e.path.startsWith('/1.1/dm')
+              ? t().then(function (n) {
+                  return n(d)(e)
+                })
+              : d(e)
+          }
+        }
+        var id = d(66136),
+          ld = d(67935),
+          ud = d(22907)
+        function sd(e) {
           return function (n, d) {
-            if (n.host === Kn.F$ || n.host === id.cardsHost) {
+            if (n.host === Kn.F$ || n.host === ud.cardsHost) {
               var t = e(),
-                a = (0, od.F5)(t.getState())
-              a && (n.headers['x-twitter-client-language'] = (0, rd.o)(a))
+                a = (0, ld.F5)(t.getState())
+              a && (n.headers['x-twitter-client-language'] = (0, id.o)(a))
             }
             return d(n)
           }
         }
-        var ud = d(11273)
-        var sd = function sd(e, n) {
-          return (0, ud.fH)('prod') || !window.__INJECTED_FILTER__ ? n(e) : window.__INJECTED_FILTER__(e, n)
+        var cd = d(11273)
+        var bd = function bd(e, n) {
+          return (0, cd.fH)('prod') || !window.__INJECTED_FILTER__ ? n(e) : window.__INJECTED_FILTER__(e, n)
         }
-        var cd = d(13421),
-          bd = ['cookie', 'user-agent', 'referer', 'x-b3-spanid', 'x-b3-traceid']
-        function md(e, n, d) {
+        var md = d(13421),
+          pd = ['cookie', 'user-agent', 'referer', 'x-b3-spanid', 'x-b3-traceid']
+        function hd(e, n, d) {
           return function (a, r) {
             var o = (0, h.Z)((0, h.Z)({}, a.headers), {}, { authorization: 'Bearer '.concat((0, Xn.Oj)()) }),
               i = e().getState(),
-              l = od.Qb(i)
+              l = ld.Qb(i)
             l && (o['x-twitter-auth-type'] = 'OAuth2Session')
-            var u = d ? d.cookies[Xn.qj] : cd.parse(window.document.cookie)[Xn.qj]
+            var u = d ? d.cookies[Xn.qj] : md.parse(window.document.cookie)[Xn.qj]
             if ((u && (o[Xn.d4] = u), d)) {
               var s,
                 c = d.headers,
-                b = (0, t.Z)(bd)
+                b = (0, t.Z)(pd)
               try {
                 for (b.s(); !(s = b.n()).done; ) {
                   var m = s.value
@@ -9460,8 +9480,8 @@ window.__SCRIPTS_LOADED__.vendor &&
             })
           }
         }
-        var pd = d(20647)
-        function hd(e, n) {
+        var Ad = d(20647)
+        function Sd(e, n) {
           var d = e.headers,
             t = e.method
           if ('POST' === t || 'PUT' === t)
@@ -9470,7 +9490,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               d['content-type'])
             ) {
               case 'application/x-www-form-urlencoded':
-                e.data = (0, pd.X)(e.data)
+                e.data = (0, Ad.X)(e.data)
                 break
               case 'application/json':
                 e.data = JSON.stringify(e.data)
@@ -9480,12 +9500,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             }
           return n(e)
         }
-        var Ad = d(20719),
-          Sd = (d(14121), d(60523), d(68995), 6e5)
-        function Dd(e) {
+        var Dd = d(20719),
+          vd = (d(14121), d(60523), d(68995), 6e5)
+        function fd(e) {
           return !isNaN(e) && e >= 0
         }
-        function vd(e) {
+        function gd(e) {
           return (function (e) {
             if (!e) return
             var n = 0,
@@ -9502,13 +9522,13 @@ window.__SCRIPTS_LOADED__.vendor &&
                     u = parseInt(l, 10)
                   switch (i.toLowerCase()) {
                     case 'backoff':
-                      Dd(u) && (n = Math.min(u, 1e4))
+                      fd(u) && (n = Math.min(u, 1e4))
                       break
                     case 'serial-duration':
-                      Dd(u) && (d = Math.min(u, Sd))
+                      fd(u) && (d = Math.min(u, vd))
                       break
                     case 'serial-delay':
-                      Dd(u) && (t = Math.min(u, 3e3))
+                      fd(u) && (t = Math.min(u, 3e3))
                       break
                     case 'no-retry':
                       'true' === l && (a = !0)
@@ -9519,7 +9539,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           })(e['backoff-policy'])
         }
-        var fd = (function () {
+        var wd = (function () {
             function e() {
               ;(0, a.Z)(this, e),
                 (0, A.Z)(this, 'queue', []),
@@ -9618,41 +9638,41 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          gd = {},
-          wd = new URL(Kn.F$).host
-        function Md(e, n) {
-          var d = vd(e)
-          d && (gd[n] || (gd[n] = new fd()), gd[n].applyBackoffPolicy(d))
+          Md = {},
+          yd = new URL(Kn.F$).host
+        function Cd(e, n) {
+          var d = gd(e)
+          d && (Md[n] || (Md[n] = new wd()), Md[n].applyBackoffPolicy(d))
         }
-        function yd(e) {
+        function Td(e) {
           return function (n, d) {
             if (!e()) return d(n)
             if ('text/event-stream' === n.headers.accept) return d(n)
             var t = new URL(n.uri)
-            if (t.host === wd && '/1.1/help/settings.json' === t.pathname) return d(n)
+            if (t.host === yd && '/1.1/help/settings.json' === t.pathname) return d(n)
             var a = (function (e) {
                 var n = e.host,
                   d = e.pathname
-                return n === wd && d.startsWith('/1.1/jot/') ? 'scribe.twitter.com' : n
+                return n === yd && d.startsWith('/1.1/jot/') ? 'scribe.twitter.com' : n
               })(t),
-              r = gd[a]
+              r = Md[a]
             return (r ? r.enqueueRequest(n, d) : d(n)).then(
               function (e) {
-                return Md(e.headers, a), e
+                return Cd(e.headers, a), e
               },
               function (e) {
-                throw (e instanceof nd.Z && Md(e.headers, a), e)
+                throw (e instanceof nd.Z && Cd(e.headers, a), e)
               },
             )
           }
         }
-        var Cd = d(63140)
-        function Td(e) {
+        var _d = d(63140)
+        function kd(e) {
           return function (n, d) {
             var t = (0, h.Z)({}, n)
             return d(n)['catch'](function (n) {
-              if ((0, Cd.VZ)(n, Cd.ZP.DeniedByApiCsrfProtection)) return d(t)
-              if ((0, Cd.VZ)(n, Cd.ZP.BadGuestToken) && e())
+              if ((0, _d.VZ)(n, _d.ZP.DeniedByApiCsrfProtection)) return d(t)
+              if ((0, _d.VZ)(n, _d.ZP.BadGuestToken) && e())
                 return e()
                   .refresh()
                   .then(function () {
@@ -9662,7 +9682,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             })
           }
         }
-        function _d(e) {
+        function Pd(e) {
           return function (n, d) {
             var t = e.getReplacementHost(new URL(n.uri))
             if (void 0 === t) return d(n)
@@ -9671,12 +9691,12 @@ window.__SCRIPTS_LOADED__.vendor &&
             return d((0, h.Z)((0, h.Z)({}, n), {}, { host: a, uri: r }))
           }
         }
-        var kd = d(26499),
-          Pd = function Pd() {
-            return kd.Z.currentState
+        var Ed = d(26499),
+          Rd = function Rd() {
+            return Ed.Z.currentState
           }
-        var Ed = function Ed(e) {
-          var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Pd
+        var Zd = function Zd(e) {
+          var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Rd
           return function (d, t) {
             var a = 'background' !== n(),
               r =
@@ -9687,13 +9707,13 @@ window.__SCRIPTS_LOADED__.vendor &&
           }
         }
         d(21515)
-        var Rd = d(4507),
-          Zd = (function () {
+        var Id = d(4507),
+          Bd = (function () {
             function e(n, d) {
               ;(0, a.Z)(this, e),
                 (this.provider = n),
                 (this._contextReq = d),
-                (this._value = cd.parse(window.document.cookie)[Xn.Ip]),
+                (this._value = md.parse(window.document.cookie)[Xn.Ip]),
                 this._value || (0, be.ZP)('Guest token value missing in guestTokenManager on app load')
             }
             return (
@@ -9707,7 +9727,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 {
                   key: 'addGuestTokenHeaderIfNeeded',
                   value: function value(e, n) {
-                    return -1 === e.path.indexOf(Rd.REQUEST_GUEST_TOKEN_PATH)
+                    return -1 === e.path.indexOf(Id.REQUEST_GUEST_TOKEN_PATH)
                       ? this.getValue().then(function (e) {
                           e && (n['x-guest-token'] = e)
                         })
@@ -9757,9 +9777,9 @@ window.__SCRIPTS_LOADED__.vendor &&
               e
             )
           })(),
-          Id = d(3026),
-          Bd = ['actAsUserId', 'customDispatcher', 'featureSwitches', 'getApi', 'getStore', 'loggedInUserId']
-        function xd(e) {
+          xd = d(3026),
+          Nd = ['actAsUserId', 'customDispatcher', 'featureSwitches', 'getApi', 'getStore', 'loggedInUserId']
+        function Od(e) {
           var n,
             d,
             t,
@@ -9769,37 +9789,38 @@ window.__SCRIPTS_LOADED__.vendor &&
             i = e.getApi,
             l = e.getStore,
             u = e.loggedInUserId,
-            s = (0, W.Z)(e, Bd),
-            c = null !== (n = s.requestLoggingFilter) && void 0 !== n ? n : new Ad.Z(),
+            s = (0, W.Z)(e, Nd),
+            c = null !== (n = s.requestLoggingFilter) && void 0 !== n ? n : new Dd.Z(),
             b = (function (e) {
               return function () {
                 var n = e()
                 return (
-                  Nd ||
-                    (Nd = new Zd(function () {
+                  Ld ||
+                    (Ld = new Bd(function () {
                       return n.Auth.requestGuestToken().then(function (e) {
                         return e.guest_token
                       })
                     })),
-                  Nd
+                  Ld
                 )
               }
             })(i),
             m =
               null !== (d = s.trafficRewriter) && void 0 !== d
                 ? d
-                : (0, Id.q)(function () {
+                : (0, xd.q)(function () {
                     return o.getArrayValue('traffic_rewrite_map')
                   })
           return new Kn.ZP(o, {
             dispatcher: null != r ? r : qn.e2,
-            retryFilter: Td(b),
+            retryFilter: kd(b),
             filters: [
+              od(l, o),
               td(),
-              md(l, b),
-              ld(l),
+              hd(l, b),
+              sd(l),
               ad(a),
-              Ed(u),
+              Zd(u),
               ((t = function t() {
                 return o.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
               }),
@@ -9810,31 +9831,31 @@ window.__SCRIPTS_LOADED__.vendor &&
                 }
                 return n(e)
               }),
-              hd,
+              Sd,
               c.filter,
-              yd(function () {
+              Td(function () {
                 return 'host' === o.getStringValue('network_layer_503_backoff_mode')
               }),
-              _d(m),
+              Pd(m),
               Yn({
                 isApiTransitionEnabled: function isApiTransitionEnabled() {
                   return o.isTrue('responsive_web_api_transition_enabled')
                 },
                 getWindowLocationHost: function getWindowLocationHost() {
-                  return Od
+                  return Fd
                 },
                 isLocalDevelopment: function isLocalDevelopment() {
-                  return Od.indexOf('localhost') > -1
+                  return Fd.indexOf('localhost') > -1
                 },
               }),
-              sd,
+              bd,
               $n(o),
             ],
           })
         }
-        var Nd,
-          Od = window.location.host
-        function Ld(e) {
+        var Ld,
+          Fd = window.location.host
+        function Ud(e) {
           var n,
             d,
             t,
@@ -9889,7 +9910,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             }),
             D = (0, x.BH)(S),
             v = V(S, D),
-            f = xd({
+            f = Od({
               loggedInUserId: s,
               actAsUserId: r,
               featureSwitches: D,
@@ -10481,7 +10502,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             ]).then(d.bind(d, 52413))
           },
         })
-        var $e = d(19313),
+        var $e = d(31261),
           en = d(92307),
           nn = d(76687),
           dn = d(92160)
@@ -27660,6 +27681,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e(
                     'shared~ondemand.SettingsMonetization~bundle.TweetCoinDetails~bundle.UserProfile~ondemand.Verified',
                   ),
+                  d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                   d.e('ondemand.Verified'),
                 ]).then(d.bind(d, 22819))
@@ -27757,6 +27779,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e(
                     'shared~ondemand.SettingsMonetization~bundle.TweetCoinDetails~bundle.UserProfile~ondemand.Verified',
                   ),
+                  d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                   d.e('ondemand.Verified'),
                 ]).then(d.bind(d, 82285))
@@ -27854,6 +27877,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e(
                     'shared~ondemand.SettingsMonetization~bundle.TweetCoinDetails~bundle.UserProfile~ondemand.Verified',
                   ),
+                  d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                   d.e('ondemand.Verified'),
                 ]).then(d.bind(d, 96680))
@@ -27951,6 +27975,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e(
                     'shared~ondemand.SettingsMonetization~bundle.TweetCoinDetails~bundle.UserProfile~ondemand.Verified',
                   ),
+                  d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                   d.e('ondemand.Verified'),
                 ]).then(d.bind(d, 89513))
@@ -28048,6 +28073,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                   d.e(
                     'shared~ondemand.SettingsMonetization~bundle.TweetCoinDetails~bundle.UserProfile~ondemand.Verified',
                   ),
+                  d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                   d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                   d.e('ondemand.Verified'),
                 ]).then(d.bind(d, 3354))
@@ -28235,7 +28261,7 @@ window.__SCRIPTS_LOADED__.vendor &&
               ;(0, D.ZP)('[initAppModules] Unexpected app module ['.concat(e, ']'))
           }
         }
-        var Su = d(33541),
+        var Su = d(24230),
           Du = d(51742)
         var vu = function vu() {
           return d.e('loader.LoggedOutNotifications').then(d.bind(d, 5780))
@@ -30308,7 +30334,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           l = d(73228),
           u = d.n(l),
           s = d(21783),
-          c = d(19313),
+          c = d(31261),
           b = d(68547)
         function m(e) {
           var n = e.Icon,
@@ -30424,7 +30450,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         d(62775)
         var t = d(2784),
           a = d(1206),
-          r = d(19313)
+          r = d(31261)
         var o = t.createContext(
           Object.create(
             r.wp,
@@ -30522,7 +30548,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           A = d(73228),
           S = d.n(A),
           D = d(91964),
-          v = d(19313),
+          v = d(31261),
           f = d(97673),
           g = S().d86bbf0f,
           w = S().h6beb5fb,
@@ -31062,7 +31088,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           h = d(86242),
           A = d(73186),
           S = d(73036),
-          D = d(19313),
+          D = d(31261),
           v = d(53363),
           f = Object.freeze({
             verticallyMaximized: 'verticallyMaximized',
@@ -31183,59 +31209,65 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           W_: function W_() {
-            return ae
+            return ie
           },
           fC: function fC() {
-            return ee
+            return te
           },
           ZM: function ZM() {
             return t
           },
           HR: function HR() {
-            return oe
+            return ue
           },
           Wq: function Wq() {
-            return J
+            return ne
           },
         })
         var t = {}
         d.r(t),
           d.d(t, {
             ElementId: function ElementId() {
-              return Z
+              return I
             },
             getAppBarHeight: function getAppBarHeight() {
-              return W
+              return K
             },
             reportHeight: function reportHeight() {
-              return N
-            },
-            setVisible: function setVisible() {
-              return x
-            },
-            store: function store() {
-              return B
-            },
-            useElementDisjointOffset: function useElementDisjointOffset() {
-              return j
-            },
-            useReportHeight: function useReportHeight() {
               return O
             },
+            setVisible: function setVisible() {
+              return N
+            },
+            store: function store() {
+              return x
+            },
+            useElementDisjointOffset: function useElementDisjointOffset() {
+              return W
+            },
+            useReportHeight: function useReportHeight() {
+              return L
+            },
+            useShouldCollapseSecondaryNav: function useShouldCollapseSecondaryNav() {
+              return z
+            },
             useShouldHideAppBar: function useShouldHideAppBar() {
-              return U
-            },
-            useSyncState: function useSyncState() {
-              return V
-            },
-            useTopNavCollapsed: function useTopNavCollapsed() {
-              return F
-            },
-            useTotalHeight: function useTotalHeight() {
               return H
             },
+            useSyncState: function useSyncState() {
+              return q
+            },
+            useTopNavCollapsed: function useTopNavCollapsed() {
+              return U
+            },
+            useTopNavHeight: function useTopNavHeight() {
+              return V
+            },
+            useTotalHeight: function useTotalHeight() {
+              return j
+            },
             useVisible: function useVisible() {
-              return L
+              return F
             },
           })
         var a = d(56666),
@@ -31244,49 +31276,50 @@ window.__SCRIPTS_LOADED__.vendor &&
           i = d(7267),
           l = d(73186),
           u = d(20514)
-        var s = d(96889),
-          c = d(77559),
-          b = d(72599),
-          m = (d(38695), d(58188), d(1939), d(24797)),
-          p = d(90867),
-          h = (d(88233), d(39466)),
-          A = d(40159),
-          S = d(881),
-          D = d(64044),
-          v = function v() {
+        var s = d(99241),
+          c = d(96889),
+          b = d(77559),
+          m = d(72599),
+          p = (d(38695), d(58188), d(1939), d(24797)),
+          h = d(90867),
+          A = (d(88233), d(39466)),
+          S = d(40159),
+          D = d(881),
+          v = d(64044),
+          f = function f() {
             return document.location.toString()
           },
-          f = function f(e) {
+          g = function g(e) {
             return window.requestAnimationFrame(e)
           },
-          g = function g(e, n, d) {
-            e.addEventListener(n, d, !!S.Z && { passive: !0 })
+          w = function w(e, n, d) {
+            e.addEventListener(n, d, !!D.Z && { passive: !0 })
           },
-          w = function w() {
-            return (0, A.cx)(window) <= 10
+          M = function M() {
+            return (0, S.cx)(window) <= 10
           },
-          M = !1
-        var y = function y(e) {
+          y = !1
+        var C = function C(e) {
           var n = e.onDown,
             d = e.onUp,
-            t = v(),
+            t = f(),
             a = window && window.document && window.document.body,
             r = function r(e) {
               var t = e < -10
-              return e > 10 && !w() ? (n(), !0) : t ? (d(), !0) : void 0
+              return e > 10 && !M() ? (n(), !0) : t ? (d(), !0) : void 0
             },
             o = function o(e) {
               var n = e.deltaY
               r(n)
             },
-            i = (0, A.cx)(window),
-            l = (0, h.Z)(function () {
-              f(function () {
-                if (M) M = !1
+            i = (0, S.cx)(window),
+            l = (0, A.Z)(function () {
+              g(function () {
+                if (y) y = !1
                 else {
-                  var e = v(),
-                    n = (0, A.cx)(window)
-                  e !== t || w() ? d() : i && r(n - i), (i = n), (t = e)
+                  var e = f(),
+                    n = (0, S.cx)(window)
+                  e !== t || M() ? d() : i && r(n - i), (i = n), (t = e)
                 }
               })
             }, 10),
@@ -31299,14 +31332,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                   var t = n(e)
                   'number' == typeof t && r(d - t) && (d = t)
                 }
-              g(a, 'touchmove', t),
-                g(a, 'touchend', function e() {
+              w(a, 'touchmove', t),
+                w(a, 'touchend', function e() {
                   a.removeEventListener('touchmove', t), a.removeEventListener('touchend', e)
                 })
             }
-          g(window, 'wheel', o), g(window, 'scroll', l), g(a, 'touchstart', u)
-          var s = D.Z.root().addProgrammaticScrollListener(function () {
-            M = !0
+          w(window, 'wheel', o), w(window, 'scroll', l), w(a, 'touchstart', u)
+          var s = v.Z.root().addProgrammaticScrollListener(function () {
+            y = !0
           })
           return function () {
             window.removeEventListener('wheel', o),
@@ -31315,97 +31348,98 @@ window.__SCRIPTS_LOADED__.vendor &&
               s()
           }
         }
-        var C,
-          T = {},
-          _ = 1,
-          k = function k() {
-            ;(0, p.Z)(T).forEach(function (e) {
+        var T,
+          _ = {},
+          k = 1,
+          P = function P() {
+            ;(0, h.Z)(_).forEach(function (e) {
               return (0, e.onUp)()
             })
           },
-          P = function P() {
-            ;(0, p.Z)(T).forEach(function (e) {
+          E = function E() {
+            ;(0, h.Z)(_).forEach(function (e) {
               return (0, e.onDown)()
             })
           }
-        function E(e) {
+        function R(e) {
           var n = (function (e) {
-            var n = _
-            return (_ += 1), (T[n] = e), C || (C = y({ onUp: k, onDown: P })), n
+            var n = k
+            return (k += 1), (_[n] = e), T || (T = C({ onUp: P, onDown: E })), n
           })(e)
           return function () {
             !(function (e) {
-              delete T[e], (0, m.Z)(T) && C && (C(), (C = null))
+              delete _[e], (0, p.Z)(_) && T && (T(), (T = null))
             })(n)
           }
         }
-        var R,
-          Z = Object.freeze({
+        var Z,
+          I = Object.freeze({
             TopNavBar: 'TopNavBar',
             LoggedOutSignUp: 'LoggedOutSignUp',
             AudioSpacebar: 'AudioSpacebar',
             NewTweetsPill: 'NewTweetsPill',
           }),
-          I = {
+          B = {
             visible: !0,
             hasSecondaryBar: !1,
             heights:
-              ((R = {}),
-              (0, a.Z)(R, Z.TopNavBar, W()),
-              (0, a.Z)(R, Z.LoggedOutSignUp, 0),
-              (0, a.Z)(R, Z.AudioSpacebar, 0),
-              (0, a.Z)(R, Z.NewTweetsPill, 0),
-              R),
+              ((Z = {}),
+              (0, a.Z)(Z, I.TopNavBar, K()),
+              (0, a.Z)(Z, I.LoggedOutSignUp, 0),
+              (0, a.Z)(Z, I.AudioSpacebar, 0),
+              (0, a.Z)(Z, I.NewTweetsPill, 0),
+              Z),
           },
-          B = new u.E(I)
-        function x(e) {
-          B.setState(function (n) {
+          x = new u.E(B)
+        function N(e) {
+          x.setState(function (n) {
             n.visible = e
           })
         }
-        function N(e, n) {
-          B.setState(function (d) {
+        function O(e, n) {
+          x.setState(function (d) {
             d.heights[e] = n
           })
         }
-        function O(e, n) {
-          var d = I.heights[e]
+        function L(e, n) {
+          var d = B.heights[e]
           r.useEffect(
             function () {
               return (
-                N(e, n),
+                O(e, n),
                 function () {
-                  N(e, d)
+                  O(e, d)
                 }
               )
             },
             [e, d, n],
           )
         }
-        function L() {
-          return B.useSlice(function (e) {
+        function F() {
+          return x.useSlice(function (e) {
             return e.visible
           })
         }
-        function F() {
-          var e = L(),
-            n = U(),
-            d = B.useSlice(function (e) {
-              return e.hasSecondaryBar
-            })
-          return !!n && !!d && !e
-        }
         function U() {
-          var e = (0, c.ZP)(),
+          var e = F(),
+            n = H(),
+            d = x.useSlice(function (e) {
+              return e.hasSecondaryBar
+            }),
+            t = z()
+          return !!n && (t || !!d) && !e
+        }
+        function H() {
+          var e = (0, b.ZP)(),
             n = o.Z.get('window').width,
-            d = s.Z.isTwoColumnLayout(n),
+            d = c.Z.isTwoColumnLayout(n),
             t = ((0, i.TH)().state || {}).searchFocused
           return !e && !d && !t
         }
-        function H() {
+        function j() {
           for (
-            var e = U(),
-              n = B.useSlice(function (e) {
+            var e = H(),
+              n = x.useSlice(function (e) {
                 return e.heights
               }),
               d = 0,
@@ -31415,52 +31449,63 @@ window.__SCRIPTS_LOADED__.vendor &&
             t++
           ) {
             var r = a[t]
-            if (e || r !== Z.TopNavBar) {
+            if (e || r !== I.TopNavBar) {
               var o = n[r]
               isNaN(o) || (d += o)
             }
           }
           return d
         }
-        function j(e) {
-          var n = F(),
-            d = L(),
-            t = B.useSlice(function (e) {
+        function z() {
+          return (0, s.h)('rweb_home_nav_top_collapse_secondary_bar')
+        }
+        function V() {
+          var e = x.useSlice(function (e) {
+              return e.hasSecondaryBar
+            }),
+            n = z()
+          return e && n ? 2 * K() : K()
+        }
+        function W(e) {
+          var n = U(),
+            d = F(),
+            t = x.useSlice(function (e) {
               return e.heights
-            })
+            }),
+            a = z()
           switch (e) {
-            case Z.NewTweetsPill:
-              return a(Z.TopNavBar) + a(Z.AudioSpacebar)
-            case Z.AudioSpacebar:
-              return a(Z.TopNavBar)
+            case I.NewTweetsPill:
+              return r(I.TopNavBar) + r(I.AudioSpacebar)
+            case I.AudioSpacebar:
+              return r(I.TopNavBar)
             default:
-              throw z('unhandled element id ['.concat(e, ']'))
+              throw G('unhandled element id ['.concat(e, ']'))
           }
-          function a(a) {
-            switch (a) {
-              case Z.TopNavBar:
-                var r = 0
-                return (r += n ? W() : t[Z.TopNavBar]), (r += t[Z.LoggedOutSignUp])
-              case Z.LoggedOutSignUp:
-                return W()
-              case Z.AudioSpacebar:
-                return d ? t[Z.AudioSpacebar] : 0
-              case Z.NewTweetsPill:
-                return t[Z.NewTweetsPill]
+          function r(r) {
+            switch (r) {
+              case I.TopNavBar:
+                var o = 0
+                return n ? a || (o += K()) : (o += t[I.TopNavBar]), (o += t[I.LoggedOutSignUp])
+              case I.LoggedOutSignUp:
+                return K()
+              case I.AudioSpacebar:
+                return d ? t[I.AudioSpacebar] : 0
+              case I.NewTweetsPill:
+                return t[I.NewTweetsPill]
               default:
-                throw z('unhandled element id ['.concat(e, ']'))
+                throw G('unhandled element id ['.concat(e, ']'))
             }
           }
         }
-        function z(e) {
+        function G(e) {
           var n = new Error(e)
-          return (0, b.ZP)(n), n
+          return (0, m.ZP)(n), n
         }
-        function V(e) {
+        function q(e) {
           !(function () {
             var e = r.useRef({})
             ;(n = function n() {
-              return x(!0)
+              return N(!0)
             }),
               (d = r.useRef(n)),
               r.useEffect(function () {
@@ -31476,14 +31521,14 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ;(n.current.onUp = e.onUp),
                   (n.current.onDown = e.onDown),
                   r.useEffect(function () {
-                    return E(n.current)
+                    return R(n.current)
                   }, [])
               })({
                 onUp: function onUp() {
-                  x(!0)
+                  N(!0)
                 },
                 onDown: function onDown() {
-                  x(!1)
+                  N(!1)
                 },
               })
             var n, d
@@ -31491,101 +31536,101 @@ window.__SCRIPTS_LOADED__.vendor &&
             function a() {
               var n = t.pathname
               return function () {
-                e.current.pathname !== n && x(!0)
+                e.current.pathname !== n && N(!0)
               }
             }
             ;(e.current.pathname = t.pathname), r.useEffect(a, [t.pathname])
             var l = o.Z.get('window').width,
-              u = s.Z.isTwoColumnLayout(l)
+              u = c.Z.isTwoColumnLayout(l)
             ;(e.current.isTwoColumn = u),
               r.useEffect(function () {
                 var n = u
                 return function () {
-                  !n && e.current.isTwoColumn && x(!0)
+                  !n && e.current.isTwoColumn && N(!0)
                 }
               })
           })(),
             (function (e) {
               function n() {
-                var n = (e.hasSecondaryBar ? 2 : 1) * W()
-                B.setState(function (d) {
-                  ;(d.heights[Z.TopNavBar] = n), (d.hasSecondaryBar = e.hasSecondaryBar)
+                var n = (e.hasSecondaryBar ? 2 : 1) * K()
+                x.setState(function (d) {
+                  ;(d.heights[I.TopNavBar] = n), (d.hasSecondaryBar = e.hasSecondaryBar)
                 })
               }
               r.useEffect(n, [e.hasSecondaryBar])
             })(e)
         }
-        function W() {
+        function K() {
           return l.Z.theme.componentDimensions.appBarHeightPx
         }
-        var G = d(7896),
-          q = (d(36728), d(25686)),
-          K = d(27968),
-          Q = d(97927),
-          Y = d(74054),
-          X = d(41425)
-        function J() {
-          var e = H()
-          return r.createElement(q.Z, { style: [{ height: e }, $.container] })
-        }
-        var $ = l.Z.create(function (e) {
-          return { container: { pointerEvents: 'none', opacity: 0 } }
-        })
-        function ee(e) {
-          var n = F(),
-            d = [de.animatedView]
-          return (
-            n ? d.push(de.animatedView_collapsed) : d.push(de.animatedView_expanded),
-            r.createElement(
-              r.Fragment,
-              null,
-              r.createElement(J, null),
-              r.createElement(
-                ne,
-                null,
-                r.createElement(
-                  q.Z,
-                  { style: de.container },
-                  r.createElement(Y.Z, { id: 'TopNavBar' }, function (n, t) {
-                    var a = t({ style: [d, K.Z.getBackgroundStyles()] })
-                    return r.createElement(q.Z, (0, G.Z)({ ref: n() }, a), e.children)
-                  }),
-                  e.outsideChildren,
-                ),
-              ),
-            )
-          )
-        }
-        function ne(e) {
-          return r.createElement(X.Z.AppBar, null, e.children)
+        var Q = d(7896),
+          Y = (d(36728), d(25686)),
+          X = d(27968),
+          J = d(97927),
+          $ = d(74054),
+          ee = d(41425)
+        function ne() {
+          var e = j()
+          return r.createElement(Y.Z, { style: [{ height: e }, de.container] })
         }
         var de = l.Z.create(function (e) {
-            var n = -1 * W()
-            return {
-              container: { position: 'fixed', start: 0, end: 0, top: -0.5 },
-              animatedView: Q.Z.transition.functional('transform'),
-              animatedView_expanded: Q.Z.transform.translateY(0).style,
-              animatedView_collapsed: Q.Z.transform.translateY(n).style,
-            }
-          }),
-          te = d(33028)
+          return { container: { pointerEvents: 'none', opacity: 0 } }
+        })
+        function te(e) {
+          var n = U(),
+            d = V(),
+            t = [re.animatedView]
+          if (n) {
+            var a = J.Z.transform.translateY(-1 * d).style
+            t.push(a)
+          } else t.push(re.animatedView_expanded)
+          return r.createElement(
+            r.Fragment,
+            null,
+            r.createElement(ne, null),
+            r.createElement(
+              ae,
+              null,
+              r.createElement(
+                Y.Z,
+                { style: re.container },
+                r.createElement($.Z, { id: 'TopNavBar' }, function (n, d) {
+                  var a = d({ style: [t, X.Z.getBackgroundStyles()] })
+                  return r.createElement(Y.Z, (0, Q.Z)({ ref: n() }, a), e.children)
+                }),
+                e.outsideChildren,
+              ),
+            ),
+          )
+        }
         function ae(e) {
-          var n = j(e.id),
-            d = Q.Z.transform.translateY(n).style,
-            t = [re.container, d],
-            a = e.zIndex
-          return 'number' == typeof a && t.push({ zIndex: a }), r.createElement(q.Z, { style: t }, e.children)
+          return r.createElement(ee.Z.AppBar, null, e.children)
         }
         var re = l.Z.create(function (e) {
+            return {
+              container: { position: 'fixed', start: 0, end: 0, top: -0.5 },
+              animatedView: J.Z.transition.functional('transform'),
+              animatedView_expanded: J.Z.transform.translateY(0).style,
+            }
+          }),
+          oe = d(33028)
+        function ie(e) {
+          var n = W(e.id),
+            d = J.Z.transform.translateY(n).style,
+            t = [le.container, d],
+            a = e.zIndex
+          return 'number' == typeof a && t.push({ zIndex: a }), r.createElement(Y.Z, { style: t }, e.children)
+        }
+        var le = l.Z.create(function (e) {
           return {
-            container: (0, te.Z)(
+            container: (0, oe.Z)(
               { pointerEvents: 'none', position: 'absolute', width: '100%' },
-              Q.Z.transition.functional('transform'),
+              J.Z.transition.functional('transform'),
             ),
           }
         })
-        function oe(e) {
-          return V(e), null
+        function ue(e) {
+          return q(e), null
         }
       },
       92307: function _(e, n, d) {
@@ -31719,7 +31764,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }
         var ge = s.memo(fe)
-        var we = d(19313),
+        var we = d(31261),
           Me = d(92160),
           ye = d(60420),
           Ce = d(44529),
@@ -33197,7 +33242,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           r = d(77953),
           o = d(75845),
           i = d(24142),
-          l = d(19313),
+          l = d(31261),
           u = d(92160),
           s = d(62854)
         function c() {
@@ -33253,20 +33298,20 @@ window.__SCRIPTS_LOADED__.vendor &&
           throw new Error('AudioContext is not initialized')
         }
       },
-      19313: function _(e, n, d) {
+      31261: function _(e, n, d) {
         'use strict'
         d.d(n, {
           rC: function rC() {
-            return De
+            return ge
           },
           ZP: function ZP() {
-            return fe
+            return Me
           },
           wp: function wp() {
-            return Se
+            return fe
           },
           QZ: function QZ() {
-            return ve
+            return we
           },
         })
         var t = d(9249),
@@ -33339,180 +33384,198 @@ window.__SCRIPTS_LOADED__.vendor &&
             return s.createElement(R.H.Provider, { value: a }, d)
           })
         var I = Z
-        var B = d(96234),
-          x = d(33028),
-          N = d(41361),
-          O = (d(79321), d(34769), d(77950), d(74069), d(27218)),
-          L = d(87191),
+        var B = d(87191),
+          x = d(96234),
+          N = d(33028),
+          O = d(41361),
+          L = (d(79321), d(34769), d(36728), d(77950), d(74069), d(27218)),
           F = d(4984),
           U = d(73228),
           H = d.n(U),
-          j = d(37796),
-          z = d(26401),
-          V = d(57851),
-          W = d(57659)
-        function G(e) {
-          var n = s.useContext(De).featureSwitches,
-            d = n.isTrue('responsive_web_nft_avatar'),
-            t = n.isTrue('responsive_web_twitter_blue_verified_badge_is_enabled'),
-            a = n.isTrue('blue_business_consumption_api_enabled'),
-            r = (0, j.v)(W.ZP.selectAll),
-            o = (0, j.v)(z.YN),
-            i = (0, j.v)(V.yw),
-            l = s.useRef({ byMediaId: new Map(), byScreenName: new Map() })
-          function u(e, n) {
-            var d = K(n)
-            d && l.current.byMediaId.set(d, e)
-          }
-          function c(e, n) {
-            n && l.current.byScreenName.set(n, e)
-          }
-          var b = s.useMemo(
-              function () {
-                if (!d && !a) return l.current
-                for (var e = 0, n = Object.keys(r); e < n.length; e++) {
-                  var t = n[e],
-                    s = r[t]
-                  s && (u(s, null == s ? void 0 : s.profile_image_url_https), c(s, null == s ? void 0 : s.screen_name))
-                }
-                var b,
-                  m = (0, N.Z)(o)
-                try {
-                  for (m.s(); !(b = m.n()).done; ) {
-                    var p = b.value
-                    u(p, p.avatar_image_url), c(p, p.screen_name)
-                  }
-                } catch (v) {
-                  m.e(v)
-                } finally {
-                  m.f()
-                }
-                for (var h = 0, A = Object.keys(i); h < A.length; h++) {
-                  var S = A[h],
-                    D = i[S]
-                  D && (u(D, null == D ? void 0 : D.profile_image_url_https), c(D, null == D ? void 0 : D.screen_name))
-                }
-                return l.current
-              },
-              [d, a, r, o, i],
-            ),
-            m = s.useMemo(
-              function () {
-                return {
-                  ShapeDecider: function ShapeDecider(e) {
-                    if (!d && !a) return e
-                    var n = (function (e) {
-                      if (e.screenName) return b.byScreenName.get(e.screenName)
-                      if (e.uri) {
-                        var n = K(e.uri)
-                        if (n) return b.byMediaId.get(n)
-                      }
-                    })(e)
-                    return n
-                      ? d && 'none' !== e.shape && n.has_nft_avatar
-                        ? q('nft', e)
-                        : F.Z.getVerifiedDisplayType(
-                            {
-                              isVerified: n.verified || n.is_verified,
-                              isBlueVerified: n.is_blue_verified,
-                              verifiedType: n.verified_type,
-                            },
-                            { isBlueVerifiedEnabled: t, isBusinessEnabled: a },
-                          ) === F.K.business
-                        ? q('business', e)
-                        : e
-                      : e
-                  },
-                  registerProfileMediaId: u,
-                }
-              },
-              [t, a, d, b.byScreenName, b.byMediaId],
-            )
-          return s.createElement(L['default'].ShapeDeciderContext.Provider, { value: m }, e.children)
-        }
-        function q(e, n) {
-          var d = n.accessibilityLabel,
-            t = n.shape,
-            a = function a(e) {
-              return n.accessibilityLabel ? (0, O.Z)([e, n.accessibilityLabel]) : e
+          j = d(28412),
+          z = d(99241),
+          V = d(37796),
+          W = d(26401),
+          G = d(57851),
+          q = d(57659)
+        B['default'].ShapeDeciderContext.Provider
+        function K() {
+          var e = (0, z.h)('responsive_web_nft_avatar'),
+            n = (0, z.h)('responsive_web_twitter_blue_verified_badge_is_enabled'),
+            d = (0, z.h)('blue_business_consumption_api_enabled'),
+            t = (0, V.v)(q.ZP.selectAll),
+            a = (0, V.v)(W.YN),
+            r = (0, V.v)(G.yw),
+            o = s.useRef({ byMediaId: new Map(), byScreenName: new Map() })
+          function i(e, n) {
+            var d = Y(n)
+            if (d) {
+              var t = o.current.byMediaId.get(d),
+                a = (0, j.Z)({}, e, t)
+              o.current.byMediaId.set(d, a)
             }
+          }
+          function l(e, n) {
+            if (n) {
+              var d = o.current.byScreenName.get(n),
+                t = (0, j.Z)({}, e, d)
+              o.current.byScreenName.set(n, t)
+            }
+          }
+          return (
+            s.useMemo(
+              function () {
+                if (e || d) {
+                  for (var n = 0, o = Object.keys(t); n < o.length; n++) {
+                    var u = o[n],
+                      s = t[u]
+                    s &&
+                      (i(s, null == s ? void 0 : s.profile_image_url_https), l(s, null == s ? void 0 : s.screen_name))
+                  }
+                  var c,
+                    b = (0, O.Z)(a)
+                  try {
+                    for (b.s(); !(c = b.n()).done; ) {
+                      var m = c.value
+                      i(m, m.avatar_image_url), l(m, m.screen_name)
+                    }
+                  } catch (D) {
+                    b.e(D)
+                  } finally {
+                    b.f()
+                  }
+                  for (var p = 0, h = Object.keys(r); p < h.length; p++) {
+                    var A = h[p],
+                      S = r[A]
+                    S &&
+                      (i(S, null == S ? void 0 : S.profile_image_url_https), l(S, null == S ? void 0 : S.screen_name))
+                  }
+                }
+              },
+              [e, d, t, a, r],
+            ),
+            {
+              ShapeDecider: function ShapeDecider(t) {
+                if (!e && !d) return t
+                var a = (function (e) {
+                  if (e.screenName) return o.current.byScreenName.get(e.screenName)
+                  if (e.uri) {
+                    var n = Y(e.uri)
+                    if (n) return o.current.byMediaId.get(n)
+                  }
+                })(t)
+                return a
+                  ? e && 'none' !== t.shape && a.has_nft_avatar
+                    ? Q('nft', t)
+                    : F.Z.getVerifiedDisplayType(
+                        {
+                          isVerified: a.verified || a.is_verified,
+                          isBlueVerified: a.is_blue_verified,
+                          verifiedType: a.verified_type,
+                        },
+                        { isBlueVerifiedEnabled: n, isBusinessEnabled: d },
+                      ) === F.K.business
+                    ? Q('business', t)
+                    : t
+                  : t
+              },
+              registerProfileMediaId: i,
+            }
+          )
+        }
+        function Q(e, n) {
+          var d = [],
+            t = n.shape
           switch (e) {
             case 'nft':
-              ;(d = a(X.profilePictureNFT)), (t = 'hex')
+              d.push(J.profilePictureNFT), (t = 'hex')
               break
             case 'business':
-              ;(d = a(X.profilePictureBusiness)), (t = 'square')
+              d.push(J.profilePictureBusiness), (t = 'square')
           }
-          return (0, x.Z)((0, x.Z)({}, n), {}, { accessibilityLabel: d, shape: t })
+          n.accessibilityLabel && d.push(n.accessibilityLabel)
+          var a = (0, L.Z)(d)
+          return (0, N.Z)((0, N.Z)({}, n), {}, { accessibilityLabel: a, shape: t })
         }
-        function K(e) {
+        function Y(e) {
           if (!e) return null
-          var n = e.match(Y.profileImageUrlMediaId)
-          return n ? (0, B.Z)(n, 2)[1] : null
+          var n = e.match(X.profileImageUrlMediaId)
+          return n ? (0, x.Z)(n, 2)[1] : null
         }
-        var Q,
-          Y = { profileImageUrlMediaId: /profile_images\/(\d+)\// },
-          X = { profilePictureNFT: H().h7a9e4e2, profilePictureBusiness: H().i6fcb1d8 },
-          J = d(28377),
-          $ = d(23335)
-        var ee = function ee(e, n) {
-          return Q ? Q(e, n) : ne(e, n)
+        var X = { profileImageUrlMediaId: /profile_images\/(\d+)\// },
+          J = { profilePictureNFT: H().h7a9e4e2, profilePictureBusiness: H().i6fcb1d8 }
+        function $(e) {
+          var n = K(),
+            d = n.ShapeDecider,
+            t = n.registerProfileMediaId,
+            a = s.useRef({ ShapeDecider: d, registerProfileMediaId: t })
+          return (
+            (a.current.registerProfileMediaId = t),
+            (a.current.ShapeDecider = d),
+            s.createElement(B['default'].ShapeDeciderContext.Provider, { value: a.current }, e.children)
+          )
         }
-        var ne = function ne(e, n) {
+        var ee,
+          ne = d(28377),
+          de = d(23335)
+        var te = function te(e, n) {
+          return ee ? ee(e, n) : ae(e, n)
+        }
+        var ae = function ae(e, n) {
             return function (t) {
               d.e('loader.richScribeAction')
                 .then(d.bind(d, 21906))
                 .then(function (d) {
                   var a = d.richScribeAction
-                  ;(Q = a), t(a(e, n))
+                  ;(ee = a), t(a(e, n))
                 })
             }
           },
-          de = d(80319),
-          te = d(51064),
-          ae = d(67935),
-          re = d(87366)
-        var oe = (0, k.Z)()
+          re = d(80319),
+          oe = d(51064),
+          ie = d(67935),
+          le = d(87366)
+        var ue = (0, k.Z)()
           .propsFromState(function () {
-            return { hashflags: te.MF, isRestrictedSession: ae._S, loggedInUserId: ae.o1, viewerUserId: ae._h }
+            return { hashflags: oe.MF, isRestrictedSession: ie._S, loggedInUserId: ie.o1, viewerUserId: ie._h }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: (0, $.createLocalApiErrorHandlerWithContextFactory)('CONTEXT_PROVIDER'),
-              fetchUserClaims: re.rS,
-              fetchFeatureSwitches: de.vR,
-              fetchHashflags: te.ZQ,
-              getFeatureSwitch: de.QJ,
-              scribeAction: ee,
+              createLocalApiErrorHandler: (0, de.createLocalApiErrorHandlerWithContextFactory)('CONTEXT_PROVIDER'),
+              fetchUserClaims: le.rS,
+              fetchFeatureSwitches: re.vR,
+              fetchHashflags: oe.ZQ,
+              getFeatureSwitch: re.QJ,
+              scribeAction: te,
             }
           })
         d(16781), d(43450), d(85940), d(17368), d(24471), d(51172), d(88233), d(18178), d(31235), d(21850)
-        var ie = d(34615),
-          le = d(91584),
-          ue = d(20546),
-          se = ie.R$.map(function (e) {
+        var se = d(34615),
+          ce = d(91584),
+          be = d(20546),
+          me = se.R$.map(function (e) {
             return e.replace(/\./g, '\\.')
           }).join('|'),
-          ce = ue.S.map(function (e) {
+          pe = be.S.map(function (e) {
             return e.replace(/\//g, '\\/')
           }).join('|'),
-          be = new RegExp('^(?:https?:\\/\\/)?(?:'.concat(se, ')?(?:').concat(ce, ')$'))
-        var me = {
+          he = new RegExp('^(?:https?:\\/\\/)?(?:'.concat(me, ')?(?:').concat(pe, ')$'))
+        var Ae = {
           isExternal: function isExternal(e) {
             var n = e.href,
               d = e.hrefHostname
-            return !('/' === n.charAt(0) && !ue.S.includes(n)) && (!ie.R$.includes(d) || be.test(n))
+            return !('/' === n.charAt(0) && !be.S.includes(n)) && (!se.R$.includes(d) || he.test(n))
           },
-          linkFromUrtUrl: le.s9,
+          linkFromUrtUrl: ce.s9,
         }
-        var pe = ['googlebot', 'twitterbot'],
-          he = function he(e) {
+        var Se = ['googlebot', 'twitterbot'],
+          De = function De(e) {
             return e && ((0, D.Z)(e.status) || 'SecurityError: The operation is insecure.' === e.message)
               ? Promise.resolve()
               : Promise.reject(e)
           },
-          Ae = { page: 'app' },
-          Se = {
+          ve = { page: 'app' },
+          fe = {
             isRestrictedSession: !1,
             loggedInUserId: void 0,
             viewerUserId: void 0,
@@ -33531,12 +33594,12 @@ window.__SCRIPTS_LOADED__.vendor &&
               throw new Error('scrollManager must be provided')
             },
           },
-          De = s.createContext(Se)
-        function ve() {
-          return s.useContext(De)
+          ge = s.createContext(fe)
+        function we() {
+          return s.useContext(ge)
         }
         new WeakMap()
-        var fe = oe(
+        var Me = ue(
           (function (e) {
             ;(0, i.Z)(d, e)
             var n = (0, l.Z)(d)
@@ -33568,7 +33631,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                         return a.props.featureSwitches.isTrue('blue_business_affiliate_badge_consumption_ui_enabled')
                       },
                       canVerifiedCrawlerConsumeSensitiveMedia: function canVerifiedCrawlerConsumeSensitiveMedia() {
-                        return pe.includes(a.props.verifiedCrawlerName)
+                        return Se.includes(a.props.verifiedCrawlerName)
                       },
                       isSuperFollowsRenamed: function isSuperFollowsRenamed() {
                         return a.props.featureSwitches.isTrue('super_follow_web_rename_enabled')
@@ -33636,10 +33699,10 @@ window.__SCRIPTS_LOADED__.vendor &&
                     })),
                       this._featureSwitchTimer.start()
                     ;(this._hashflagTimer = new C.Z(18e5).interval(function () {
-                      e._fetchHashflagsAndRetryOnFailure()['catch'](he)
+                      e._fetchHashflagsAndRetryOnFailure()['catch'](De)
                     })),
                       this._enableHashflags &&
-                        (this._fetchHashflagsAndRetryOnFailure()['catch'](he), this._hashflagTimer.start()),
+                        (this._fetchHashflagsAndRetryOnFailure()['catch'](De), this._hashflagTimer.start()),
                       this._userClaimsEnabled() &&
                         this.props.loggedInUserId &&
                         (this._fetchUserClaims(a), this._startClaimTimer(a))
@@ -33675,7 +33738,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                       m.B6,
                       { context: o },
                       s.createElement(
-                        De.Provider,
+                        ge.Provider,
                         {
                           value: {
                             userClaims: D,
@@ -33707,22 +33770,22 @@ window.__SCRIPTS_LOADED__.vendor &&
                           h.ZP.Provider,
                           { value: this._memoizedValueFeatureSwitches() },
                           s.createElement(
-                            J.ZP,
+                            ne.ZP,
                             { viewport: this._viewport },
                             s.createElement(
                               g.ZP,
                               null,
                               s.createElement(
                                 S.zt,
-                                me,
+                                Ae,
                                 s.createElement(
                                   w.nO,
-                                  { namespace: Ae, scribeMethod: c },
+                                  { namespace: ve, scribeMethod: c },
                                   s.createElement(
                                     A.Z.Provider,
                                     { value: i },
                                     s.createElement(
-                                      G,
+                                      $,
                                       null,
                                       s.createElement(
                                         _.E,
@@ -33766,11 +33829,11 @@ window.__SCRIPTS_LOADED__.vendor &&
           u = d(7267),
           s = d(72218),
           c = d(62622),
-          b = d(33541),
+          b = d(24230),
           m = d(99241),
           p = d(67935),
           h = d(57659),
-          A = d(19313),
+          A = d(31261),
           S = r.createContext({})
         d(44112), d(31235)
         function D(e, n) {
@@ -34084,7 +34147,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         var f,
           g,
           w = d(54882),
-          M = d(19313),
+          M = d(31261),
           y = d(92160),
           C = d(60420)
         var T = (0, y.Z)().propsFromState(function () {
@@ -34243,7 +34306,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           S = d(1179),
           D = d(55258),
           v = d(60673),
-          f = d(19313),
+          f = d(31261),
           g = d(92940)
         var w = 'login',
           M = 'signup',
@@ -35128,7 +35191,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           h = d(52268),
           A = d(73036),
           S = d(63752),
-          D = d(19313),
+          D = d(31261),
           v = d(57604),
           f = d(55258),
           g = d(87053),
@@ -35651,7 +35714,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           },
         })
         var t = d(2784),
-          a = d(19313),
+          a = d(31261),
           r = function r(e) {
             var n = (0, a.QZ)().featureSwitches
             return t.useMemo(
@@ -42677,7 +42740,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           b = d(13980),
           m = d(32307),
           p = d(19162),
-          h = d(19313),
+          h = d(31261),
           A = d(8329),
           S = d(76687),
           D = d(8323),
@@ -55303,30 +55366,31 @@ window.__SCRIPTS_LOADED__.vendor &&
         'use strict'
         d.d(n, {
           Ol: function Ol() {
-            return v
+            return g
           },
           T5: function T5() {
-            return C
-          },
-          YN: function YN() {
-            return y
-          },
-          dV: function dV() {
-            return T
-          },
-          o4: function o4() {
-            return P
-          },
-          uD: function uD() {
             return _
           },
-          yw: function yw() {
+          YN: function YN() {
+            return T
+          },
+          dV: function dV() {
             return k
+          },
+          o4: function o4() {
+            return R
+          },
+          uD: function uD() {
+            return P
+          },
+          yw: function yw() {
+            return E
           },
         })
         var t = d(56666),
-          a = d(59740),
-          r =
+          a = d(41361),
+          r = d(59740),
+          o =
             (d(22144),
             d(18178),
             d(43450),
@@ -55338,32 +55402,30 @@ window.__SCRIPTS_LOADED__.vendor &&
             d(85940),
             d(74069),
             d(34769),
-            d(43108),
-            d(38695),
-            d(1939),
             d(73439),
             d(45794),
             d(39529),
             d(31235),
             d(15729)),
-          o = d(71768),
-          i = d(88027),
-          l = d(69418),
-          u = d(26853),
-          s = d(53392),
-          c = d(23803),
-          b = d(51670),
-          m = d(33997),
-          p = ['rounded_score', 'tokens'],
-          h = ['rounded_score', 'tokens'],
-          A = 'typeaheadV2',
-          S = [],
-          D = Object.freeze({
+          i = d(24949),
+          l = d(71768),
+          u = d(88027),
+          s = d(69418),
+          c = d(26853),
+          b = d(53392),
+          m = d(23803),
+          p = d(51670),
+          h = d(33997),
+          A = ['rounded_score', 'tokens'],
+          S = ['rounded_score', 'tokens'],
+          D = 'typeaheadV2',
+          v = [],
+          f = Object.freeze({
             REQUEST: 'rweb/typeaheadV2/FETCH_REQUEST',
             SUCCESS: 'rweb/typeaheadV2/FETCH_SUCCESS',
             FAILURE: 'rweb/typeaheadV2/FETCH_FAILURE',
           }),
-          v = function v(e, n) {
+          g = function g(e, n) {
             var d = e.q,
               t = e.result_type,
               a = e.src,
@@ -55375,16 +55437,16 @@ window.__SCRIPTS_LOADED__.vendor &&
               ''.concat(d, '_').concat(r, '_').concat(a)
             )
           },
-          f = { remoteResults: {}, cachedIds: [] }
-        var g = function g(e) {
+          w = { remoteResults: {}, cachedIds: [] }
+        var M = function M(e) {
             return e.map(function (e) {
               var n = e.rounded_score,
                 d = e.tokens,
-                t = (0, a.Z)(e, p),
-                r = t.topic,
-                o = i.El.Topic
+                t = (0, r.Z)(e, A),
+                a = t.topic,
+                o = u.El.Topic
               return {
-                id: ''.concat(o, '_').concat(r.replace(' ', '_')),
+                id: ''.concat(o, '_').concat(a.replace(' ', '_')),
                 type: o,
                 tokens: d,
                 rounded_score: n,
@@ -55392,129 +55454,144 @@ window.__SCRIPTS_LOADED__.vendor &&
               }
             })
           },
-          w = function w(e) {
+          y = function y(e) {
             return e.map(function (e) {
               var n,
                 d = e.rounded_score,
                 t = e.tokens,
-                r = (0, a.Z)(e, h),
-                o = i.El.Event,
-                u = null == r || null === (n = r.url) || void 0 === n ? void 0 : n.match(l.Wq.id)
-              return { id: (null == u ? void 0 : u[0]) || '', type: o, tokens: t, rounded_score: d, data: r }
+                a = (0, r.Z)(e, S),
+                o = u.El.Event,
+                i = null == a || null === (n = a.url) || void 0 === n ? void 0 : n.match(s.Wq.id)
+              return { id: (null == i ? void 0 : i[0]) || '', type: o, tokens: t, rounded_score: d, data: a }
             })
           },
-          M = function M(e, n) {
+          C = function C(e, n) {
             return e.typeaheadV2.remoteResults[n]
           },
-          y = function y(e, n) {
-            var d = M(e, n)
-            return (d && d.users) || S
-          },
-          C = function C(e, n) {
-            var d = M(e, n)
-            return (d && d.topics) || S
-          },
           T = function T(e, n) {
-            var d = M(e, n)
-            return (d && d.events) || S
+            var d = C(e, n)
+            return (d && d.users) || v
           },
           _ = function _(e, n) {
-            var d = M(e, n)
-            return d && d.fetchStatus
+            var d = C(e, n)
+            return (d && d.topics) || v
           },
-          k = function k(e) {
-            return Object.keys(e.typeaheadV2.remoteResults).reduce(function (n, d) {
-              return (
-                y(e, d).forEach(function (e) {
-                  n[e.id] = e.data
-                }),
-                n
-              )
-            }, {})
+          k = function k(e, n) {
+            var d = C(e, n)
+            return (d && d.events) || v
           },
           P = function P(e, n) {
+            var d = C(e, n)
+            return d && d.fetchStatus
+          },
+          E = (0, i.P1)(
+            [
+              function (e) {
+                return e.typeaheadV2.remoteResults
+              },
+            ],
+            function (e) {
+              for (var n = {}, d = 0, t = Object.keys(e); d < t.length; d++) {
+                var r,
+                  o = e[t[d]].users || [],
+                  i = (0, a.Z)(o)
+                try {
+                  for (i.s(); !(r = i.n()).done; ) {
+                    var l = r.value
+                    n[l.id] = l.data
+                  }
+                } catch (u) {
+                  i.e(u)
+                } finally {
+                  i.f()
+                }
+              }
+              return n
+            },
+          ),
+          R = function R(e, n) {
             return function (d, t) {
-              var a = M(t(), v(e, n)),
+              var a = C(t(), g(e, n)),
                 r = a && a.timestamp
-              return r && Date.now() - r <= 3e5 ? Promise.resolve() : d(E(e, n))
+              return r && Date.now() - r <= 3e5 ? Promise.resolve() : d(Z(e, n))
             }
           },
-          E = function E(e, n) {
+          Z = function Z(e, n) {
             return function (d, t, a) {
               var r = a.api
               if (!e || !e.q || '' === e.q.trim()) return Promise.resolve()
-              var o = { queryId: v(e, n) },
-                l = n || {},
-                u = l.communityId,
-                c = l.trustedFriendsId,
-                m = e.result_type.split(','),
-                p = { actionTypes: D, context: 'FETCH_TYPEAHEAD', meta: o }
-              if (m.includes(i.my.CommunityUsers) && u) {
-                return (0, s._O)(d, {
-                  params: { communityId: u, prefix: e.q },
+              var o = { queryId: g(e, n) },
+                i = n || {},
+                l = i.communityId,
+                s = i.trustedFriendsId,
+                c = e.result_type.split(','),
+                m = { actionTypes: f, context: 'FETCH_TYPEAHEAD', meta: o }
+              if (c.includes(u.my.CommunityUsers) && l) {
+                return (0, b._O)(d, {
+                  params: { communityId: l, prefix: e.q },
                   request: r.Typeahead.fetchCommunityInviteUsers,
-                })(p, function (e) {
+                })(m, function (e) {
                   var n = ((null == e ? void 0 : e.invite_action_results) || {}).entities
-                  return n ? [(0, b.dP)(n)] : void 0
+                  return n ? [(0, p.dP)(n)] : void 0
                 })
               }
-              if (m.includes(i.my.CommunityMembers) && u) {
-                return (0, s._O)(d, {
-                  params: { communityId: u, prefix: e.q },
+              if (c.includes(u.my.CommunityMembers) && l) {
+                return (0, b._O)(d, {
+                  params: { communityId: l, prefix: e.q },
                   request: r.Typeahead.fetchCommunityMembers,
-                })(p, function (e) {
+                })(m, function (e) {
                   var n = ((null == e ? void 0 : e.user_community_relationships) || {}).entities
-                  return n ? [(0, b.dP)(n)] : void 0
+                  return n ? [(0, p.dP)(n)] : void 0
                 })
               }
-              return m.includes(i.my.TrustedFriendsSuggested) && c
-                ? (0, s._O)(d, {
-                    params: { trustedFriendsId: c, prefix: e.q },
+              return c.includes(u.my.TrustedFriendsSuggested) && s
+                ? (0, b._O)(d, {
+                    params: { trustedFriendsId: s, prefix: e.q },
                     request: r.Typeahead.fetchTrustedFriendsSuggestions,
-                  })(p)
-                : (0, s._O)(d, { params: e, request: r.Typeahead.fetch })(p)
+                  })(m)
+                : (0, b._O)(d, { params: e, request: r.Typeahead.fetch })(m)
             }
           }
-        u.Z.register(
-          (0, t.Z)({}, A, function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
+        c.Z.register(
+          (0, t.Z)({}, D, function () {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : w,
               n = arguments.length > 1 ? arguments[1] : void 0
             if (!n) return e
             switch (n.type) {
-              case D.REQUEST:
+              case f.REQUEST:
                 var d = n.meta.queryId
-                return (0, r.ZP)(e, function (e) {
-                  e.remoteResults[d] || (e.remoteResults[d] = { fetchStatus: c.ZP.NONE }),
-                    (e.remoteResults[d].fetchStatus = c.ZP.LOADING)
+                return (0, o.ZP)(e, function (e) {
+                  e.remoteResults[d] || (e.remoteResults[d] = { fetchStatus: m.ZP.NONE }),
+                    (e.remoteResults[d].fetchStatus = m.ZP.LOADING)
                 })
-              case D.SUCCESS:
+              case f.SUCCESS:
                 var t = n.meta.queryId,
                   a = n.payload
                 if (!a) return e
-                var l = a.users.map(function (e) {
-                    return (0, m.gJ)(e, i.vA.Remote)
+                var r = a.users.map(function (e) {
+                    return (0, h.gJ)(e, u.vA.Remote)
                   }),
-                  u = {
-                    fetchStatus: c.ZP.LOADED,
+                  i = {
+                    fetchStatus: m.ZP.LOADED,
                     id: t,
                     orderedSections: a.ordered_sections,
-                    events: w(a.events),
-                    topics: g(a.topics),
-                    users: (0, i.It)(l),
+                    events: y(a.events),
+                    topics: M(a.topics),
+                    users: (0, u.It)(r),
                     timestamp: Date.now(),
                   }
-                return (0, r.ZP)(e, function (e) {
+                return (0, o.ZP)(e, function (e) {
                   ;(e.cachedIds = e.cachedIds.filter(function (e) {
                     return e !== t
                   })),
                     e.cachedIds.push(t),
-                    e.cachedIds.length >= 25 && (e.remoteResults = (0, o.Z)(e.remoteResults, e.cachedIds.splice(0, 1))),
-                    (e.remoteResults[t] = u)
+                    e.cachedIds.length >= 25 && (e.remoteResults = (0, l.Z)(e.remoteResults, e.cachedIds.splice(0, 1))),
+                    (e.remoteResults[t] = i)
                 })
-              case D.FAILURE:
+              case f.FAILURE:
                 var s = n.meta.queryId
-                return (0, r.ZP)(e, function (e) {
-                  e.remoteResults[s].fetchStatus = c.ZP.FAILED
+                return (0, o.ZP)(e, function (e) {
+                  e.remoteResults[s].fetchStatus = m.ZP.FAILED
                 })
               default:
                 return e
@@ -60389,7 +60466,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         })
         d(77950), d(74069), d(28986), d(58188), d(67321)
         var t = d(2784),
-          a = d(19313),
+          a = d(31261),
           r = d(78204),
           o = function o(e) {
             var n = t.useContext(a.rC),
@@ -60540,7 +60617,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           u = d(56666),
           s = (d(18178), d(77950), d(94908), d(72147), d(58188), d(88233), d(85940), d(21850), d(74069), d(2784)),
           c = d(45907),
-          b = d(19313),
+          b = d(31261),
           m = d(34615),
           p = d(69906),
           h = (function (e) {
@@ -60697,7 +60774,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           o = d(54044),
           i = d(75297),
           l = d(11722),
-          u = d(19313),
+          u = d(31261),
           s = d(4206),
           c = d(96889),
           b = d(48580),
@@ -61027,7 +61104,7 @@ window.__SCRIPTS_LOADED__.vendor &&
         })
         var t = d(59740),
           a = (d(49228), d(58188), d(2784)),
-          r = d(19313),
+          r = d(31261),
           o = d(23803),
           i = d(78204),
           l = d(92160),
@@ -62518,6 +62595,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -62660,6 +62738,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -62802,6 +62881,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -62944,6 +63024,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63086,6 +63167,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63228,6 +63310,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63370,6 +63453,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63512,6 +63596,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63654,6 +63739,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63796,6 +63882,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -63938,6 +64025,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64080,6 +64168,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64222,6 +64311,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64364,6 +64454,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64506,6 +64597,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64648,6 +64740,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -64790,6 +64883,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -70635,6 +70729,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -70777,6 +70872,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -70981,6 +71077,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71123,6 +71220,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71265,6 +71363,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71407,6 +71506,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71668,6 +71768,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71810,6 +71911,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -71952,6 +72054,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72094,6 +72197,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72236,6 +72340,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72507,6 +72612,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72649,6 +72755,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72791,6 +72898,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -72933,6 +73041,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -73075,6 +73184,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~bundle.ConversationWithRelay'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
+                d.e('shared~ondemand.SettingsRevamp~ondemand.Verified'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsInternals'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
@@ -73174,7 +73284,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           u = d(73228),
           s = d.n(u),
           c = d(92307),
-          b = d(19313),
+          b = d(31261),
           m = d(85300),
           p = d(21744),
           h = d(54713),
@@ -74580,7 +74690,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           s = d(73228),
           c = d.n(s),
           b = d(92307),
-          m = d(19313),
+          m = d(31261),
           p = d(96958),
           h = d(5621),
           A = d(63705),

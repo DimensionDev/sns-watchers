@@ -1535,10 +1535,6 @@
         a('c3d89aca', 'Continue'),
         a('b983f9e0', 'Heads up'),
         a('ed5c4342', 'A couple things to keep in mind ...'),
-        a(
-          'eb636998',
-          'Also, because Edit Tweet is only currently available to Twitter Blue subscribers in select markets, using this feature could reveal which country you’re in and that you subscribe to Twitter Blue.',
-        ),
         a('abc4afcc', 'Your edit time expired'),
         a('aa15f5aa', 'Tweets can only be edited within the first 30 minutes after they’re published.'),
         a('g4bcc5f4', 'This is your last edit'),
@@ -2093,6 +2089,9 @@
         a('j2d66822', 'Given current evidence, I believe this Tweet is likely... '),
         a('b1b2d004', 'Potentially misleading and would benefit from added context'),
         a('ha9655c2', 'Not misleading'),
+        a('h63cbcee', 'Is your note about the Tweet or the image?'),
+        a('cd4f2382', 'About this specific Tweet'),
+        a('g1cc9e5c', 'About the image in this Tweet, and should appear on all Tweets that include this image'),
         a('a0cf39fc', 'Why do you believe this Tweet may be misleading?'),
         a('c33bc7d4', 'It contains a factual error'),
         a('j6e12b24', 'It contains a digitally altered photo or video'),
@@ -2340,10 +2339,10 @@
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
-        a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes')
-      a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a('b9793c9a', 'You haven’t written any notes yet')
+      a('bed66f92', 'Here’s how to start:'),
+        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
@@ -3606,13 +3605,13 @@
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
-        ),
-        a('h3909cd0', 'Inferred identity'),
+        )
+      a('h3909cd0', 'Inferred identity'),
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        )
-      a('h14ba864', 'Data sharing with business partners'),
+        ),
+        a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
@@ -4826,13 +4825,13 @@
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
-        a('e873f0ae', 'Apply for Super Follows'),
-        a('gd115e64', 'Apply for Subscriptions'),
+        a('e873f0ae', 'Apply for Super Follows')
+      a('gd115e64', 'Apply for Subscriptions'),
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-        )
-      a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        ),
+        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
@@ -5021,6 +5020,8 @@
         ),
         a('jbd2a6de', 'Blue looks good on you. Enjoy your verified account and blue checkmark.'),
         a('fa08daa8', 'See what’s included in Blue and manage your settings'),
+        a('d7eebb60', 'Setting up your subscription'),
+        a('a452ab68', 'This may take a few seconds.'),
         a('eca82e08', 'A better news reading experience'),
         a('gfe8ccf8', 'Discover relevant long form Tweets and enjoy articles being shared in your network.'),
         a('ia0beb56', 'Early access to select new features'),
@@ -6022,10 +6023,29 @@
         }),
         a('b357b2ad', function (e) {
           return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('aba12f5d', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-        }),
+        })
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('aba12f5d', function (e) {
+        return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+      }),
         a('b9184ae3', function (e) {
           return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6051,44 +6071,25 @@
             r(e.replyCount, 'y', 'ies') +
             '.'
           )
-        })
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('cd869707', function (e) {
-        return (
-          e.date +
-          ': ' +
-          e.likeCount +
-          ' like' +
-          n(e.likeCount, '', 's') +
-          '. ' +
-          e.retweetCount +
-          ' retweet' +
-          n(e.retweetCount, '', 's') +
-          '. ' +
-          e.replyCount +
-          ' repl' +
-          n(e.replyCount, 'y', 'ies') +
-          '.'
-        )
-      }),
+        }),
+        a('cd869707', function (e) {
+          return (
+            e.date +
+            ': ' +
+            e.likeCount +
+            ' like' +
+            n(e.likeCount, '', 's') +
+            '. ' +
+            e.retweetCount +
+            ' retweet' +
+            n(e.retweetCount, '', 's') +
+            '. ' +
+            e.replyCount +
+            ' repl' +
+            n(e.replyCount, 'y', 'ies') +
+            '.'
+          )
+        }),
         a('ad666301', function (e) {
           return e.fullName + ' on Twitter'
         }),
@@ -6946,7 +6947,6 @@
         }),
         a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
-        a('j6c9ee2c', 'You need to upload a list of users to affiliate with your business.'),
         a('d30ea6f3', function (e) {
           return 'Are you sure you want to remove @' + e.name + '?'
         }),
@@ -6956,6 +6956,10 @@
           'Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month.',
         ),
         a('j26dee0e', 'Remove affiliate'),
+        a(
+          'e30cbdf0',
+          'This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual.',
+        ),
         a('j3115ce8', 'Individual'),
         a('d8bb1d84', 'Organization'),
         a('f323d314', 'Resend'),
@@ -6988,7 +6992,6 @@
         a('dd3a293c', 'Your Verified Organization subscription has ended.'),
         a('faa0f956', 'Something went wrong while cancelling your subscription.'),
         a('b28289ea', 'Thanks'),
-        a('a452ab68', 'This may take a few seconds.'),
         a('b36f74ae', 'You will no longer have access to the portal unless you sign up and activate again.'),
         a('f23a997e', 'twitter.com'),
         a('cd30afed', 'click here'),
@@ -7012,7 +7015,6 @@
         a('c6614cc0', 'plus any applicable tax'),
         a('f8d3b50a', 'tax inclusive'),
         a('bc572899', 'Learn more'),
-        a('d7eebb60', 'Setting up your subscription'),
         a(
           'f45d02e8',
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
@@ -7325,10 +7327,10 @@
         a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
-        a('ea07517c', 'Column deleted.'),
-        a('habced9e', 'to restore column.'),
-        a('g4fcb4f8', 'Column restored.')
-      a('g2c6e34a', 'Manage content size, color and background.'),
+        a('ea07517c', 'Column deleted.')
+      a('habced9e', 'to restore column.'),
+        a('g4fcb4f8', 'Column restored.'),
+        a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
         a('h098a550', 'Default column width'),
         a('ab248726', 'Default media preview'),
