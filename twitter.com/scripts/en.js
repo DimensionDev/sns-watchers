@@ -80,8 +80,8 @@
         a('a5077d3e', 'Refresh'),
         a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
         a('jded6c98', 'Tweet reply hidden'),
-        a('h7a9e4e2', 'NFT profile picture'),
-        a('i6fcb1d8', 'Business profile picture'),
+        a('f5de898e', 'Hexagon profile picture'),
+        a('fcc8734a', 'Square profile picture'),
         a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
         a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
         a('f5718548', 'You reported this Tweet.'),
@@ -1945,8 +1945,16 @@
           'Write a note with context that you believe should be shown with the Tweet to keep others informed.',
         ),
         a(
-          'f1780682',
-          'Write a note to help other Community Notes contributors understand why this tweet is not misleading or doesn’t need added context.',
+          'a9803d44',
+          'Write a note with context that you believe should be shown with the image to keep others informed.',
+        ),
+        a(
+          'c6101862',
+          'Write a note to help other Community Notes contributors understand why this Tweet is not misleading or doesn’t need added context.',
+        ),
+        a(
+          'f99ebcfc',
+          'Write a note to help other Community Notes contributors understand why this image is not misleading or doesn’t need added context.',
         ),
         a('j679dcda', 'See examples'),
         a('b7476596', 'Be precise — providing links to outside sources is encouraged.'),
@@ -2086,22 +2094,27 @@
           'ec853dfa',
           'To reduce the use of artificially created or virtual phone numbers, phone numbers must be from a trusted carrier.',
         ),
+        a('j6e12b24', 'It contains a digitally altered photo or video'),
+        a('eda68484', 'It is digitally altered'),
+        a('dd55f822', 'This Tweet was correct when written, but is out of date now'),
+        a('j886c5c0', 'This image was correct when shared, but is out of date now'),
         a('j2d66822', 'Given current evidence, I believe this Tweet is likely... '),
+        a('e0ef7a2c', 'Given current evidence, I believe this image is likely... '),
         a('b1b2d004', 'Potentially misleading and would benefit from added context'),
         a('ha9655c2', 'Not misleading'),
         a('h63cbcee', 'Is your note about the Tweet or the image?'),
         a('cd4f2382', 'About this specific Tweet'),
         a('g1cc9e5c', 'About the image in this Tweet, and should appear on all Tweets that include this image'),
         a('a0cf39fc', 'Why do you believe this Tweet may be misleading?'),
+        a('i865abe8', 'Why do you believe this image may be misleading?'),
         a('c33bc7d4', 'It contains a factual error'),
-        a('j6e12b24', 'It contains a digitally altered photo or video'),
         a('aadb676c', 'It contains outdated information that may be misleading'),
         a('g21a0ef4', 'It is a misrepresentation or missing important context'),
         a('daf354de', 'It presents an unverified claim as a fact'),
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('j206b73e', 'Why do you believe this Tweet is not misleading?'),
+        a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
         a('g228df26', 'It expresses a factually correct claim'),
-        a('dd55f822', 'This Tweet was correct when written, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
         a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
@@ -2326,11 +2339,11 @@
         ),
         a('b03274d2', 'These notes get shown on Twitter, adding context to Tweets and helping keep people informed.'),
         a('iab44364', 'Your notes that reached the status of Not Helpful'),
-        a('d8c90438', 'Notes that reached the status of Not Helpful'),
-        a(
-          'accaa48e',
-          'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
-        ),
+        a('d8c90438', 'Notes that reached the status of Not Helpful')
+      a(
+        'accaa48e',
+        'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
+      ),
         a(
           'fa2156f6',
           'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings.\nNote statuses can change as more people rate them.',
@@ -2339,8 +2352,8 @@
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
-        a('b9793c9a', 'You haven’t written any notes yet')
-      a('bed66f92', 'Here’s how to start:'),
+        a('b9793c9a', 'You haven’t written any notes yet'),
+        a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
@@ -3595,8 +3608,8 @@
         a('fe37f854', 'Manage who can see your Spaces listening activity'),
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
-        a('d3d319d6', 'Data sharing and off-Twitter activity'),
-        a('i83cab8a', 'Data sharing and personalization'),
+        a('d3d319d6', 'Data sharing and off-Twitter activity')
+      a('i83cab8a', 'Data sharing and personalization'),
         a('d035a8d0', 'Ads preferences'),
         a('f9ff2202', 'Manage your ads experience on Twitter.'),
         a('d0b74a5a', 'Cookie preferences'),
@@ -3605,8 +3618,8 @@
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
-        )
-      a('h3909cd0', 'Inferred identity'),
+        ),
+        a('h3909cd0', 'Inferred identity'),
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
@@ -4818,15 +4831,15 @@
         a('d7081f92', 'What platforms do you use?'),
         a('j3495480', 'Tell us about the platforms you use to share your content.'),
         a('a3021318', 'Facebook'),
-        a('f6965e34', 'Instagram'),
-        a('b98d0edc', 'Etsy'),
+        a('f6965e34', 'Instagram')
+      a('b98d0edc', 'Etsy'),
         a('d4d74bb4', 'Patreon'),
         a('ca07aa46', 'YouTube'),
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
-        a('e873f0ae', 'Apply for Super Follows')
-      a('gd115e64', 'Apply for Subscriptions'),
+        a('e873f0ae', 'Apply for Super Follows'),
+        a('gd115e64', 'Apply for Subscriptions'),
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
@@ -6004,26 +6017,7 @@
         a(
           'a078ff70',
           'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
-        ),
-        a('j88f27d8', 'Relevant people'),
-        a('f0c37ddb', function (e) {
-          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
-        }),
-        a('a98f3d0f', function (e) {
-          return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
-        }),
-        a('j3da85c1', function (e) {
-          return 'View @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
-        }),
-        a('d0681155', function (e) {
-          return e.fullName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('be59fddf', function (e) {
-          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('b357b2ad', function (e) {
-          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        })
+        )
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6043,9 +6037,28 @@
           c(e, t)
         )
       }
-      a('aba12f5d', function (e) {
-        return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
-      }),
+      a('j88f27d8', 'Relevant people'),
+        a('f0c37ddb', function (e) {
+          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
+        }),
+        a('a98f3d0f', function (e) {
+          return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+        }),
+        a('j3da85c1', function (e) {
+          return 'View @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+        }),
+        a('d0681155', function (e) {
+          return e.fullName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('be59fddf', function (e) {
+          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('b357b2ad', function (e) {
+          return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('aba12f5d', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on Twitter: "' + e.tweetText + '"'
+        }),
         a('b9184ae3', function (e) {
           return 'See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
         }),
@@ -6402,7 +6415,7 @@
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
-        a('ab0decc0', 'Subscribe'),
+        a('i61a221c', 'Subscribe & Pay'),
         a('i8386756', 'Monthly Plan'),
         a('ac163d10', 'Annual Plan'),
         a('i2c32253', function (e) {
@@ -6945,7 +6958,6 @@
         a('gd67d29b', function (e) {
           return 'Invitations (' + e.count + ')'
         }),
-        a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
         a('d30ea6f3', function (e) {
           return 'Are you sure you want to remove @' + e.name + '?'
@@ -6962,6 +6974,8 @@
         ),
         a('j3115ce8', 'Individual'),
         a('d8bb1d84', 'Organization'),
+        a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
+        a('ddf35536', 'There was a problem with deleting the invitation. Please try again later.'),
         a('f323d314', 'Resend'),
         a('ac645cde', 'You can always add them again.'),
         a('d12af2dd', function (e) {
@@ -7319,16 +7333,16 @@
         a('j85b4522', 'Or start from scratch'),
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
         a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
-        a('dc6c806e', 'Your columns couldn’t be imported'),
-        a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
+        a('dc6c806e', 'Your columns couldn’t be imported')
+      a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
         a('fbaf9442', 'Add a starter Deck'),
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
-        a('ea07517c', 'Column deleted.')
-      a('habced9e', 'to restore column.'),
+        a('ea07517c', 'Column deleted.'),
+        a('habced9e', 'to restore column.'),
         a('g4fcb4f8', 'Column restored.'),
         a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
@@ -10636,6 +10650,12 @@
               key: 'a9ce2dd5',
               get: function get() {
                 return ['', ' for help and how-to’s.']
+              },
+            },
+            {
+              key: 'cecc10bf',
+              get: function get() {
+                return ['']
               },
             },
             {

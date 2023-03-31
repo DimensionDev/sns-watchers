@@ -855,12 +855,11 @@ window.__SCRIPTS_LOADED__.vendor &&
       },
       13736: function _(e) {
         e.exports = {
-          queryId: 'Bjbv9tA3kxsmhHDy_4yImw',
+          queryId: 'pNpPbYKtMTdqXgET8fNQIA',
           operationName: 'UsersVerifiedAvatars',
           operationType: 'query',
           metadata: {
             featureSwitches: [
-              'responsive_web_twitter_blue_verified_badge_is_enabled',
               'blue_business_consumption_api_enabled',
               'responsive_web_graphql_timeline_navigation_enabled',
             ],
@@ -3490,74 +3489,76 @@ window.__SCRIPTS_LOADED__.vendor &&
                 p = e.legacy,
                 h = e.legacy_extended_profile,
                 A = e.professional,
-                S = e.rest_id,
-                D = e.smart_blocked_by,
-                v = e.smart_blocking,
-                f = e.smart_blocking_expiration,
-                g = e.super_follow_eligible,
-                w = e.super_followed_by,
-                M = e.super_following,
-                y = e.verification_info,
-                C = e.verified_phone_status,
-                T = a
+                S = e.profile_image_shape,
+                D = e.rest_id,
+                v = e.smart_blocked_by,
+                f = e.smart_blocking,
+                g = e.smart_blocking_expiration,
+                w = e.super_follow_eligible,
+                M = e.super_followed_by,
+                y = e.super_following,
+                C = e.verification_info,
+                T = e.verified_phone_status,
+                _ = a
               if (a) {
-                var _,
-                  k = (0, i.$)(),
-                  P = null == a || null === (_ = a.label) || void 0 === _ ? void 0 : _.longDescription
-                null != P &&
-                  P.entities &&
-                  (T = (0, t.Z)(
+                var k,
+                  P = (0, i.$)(),
+                  E = null == a || null === (k = a.label) || void 0 === k ? void 0 : k.longDescription
+                null != E &&
+                  E.entities &&
+                  (_ = (0, t.Z)(
                     (0, t.Z)({}, a),
                     {},
                     {
                       label: (0, t.Z)(
                         (0, t.Z)({}, null == a ? void 0 : a.label),
                         {},
-                        { longDescription: (0, o.Z)(k, P) },
+                        { longDescription: (0, o.Z)(P, E) },
                       ),
                     },
                   ))
               }
-              var E = (0, t.Z)(
+              var R = (0, t.Z)(
                 (0, t.Z)({}, p),
                 {},
                 {
                   dm_muting: u,
-                  affiliates_highlighted_label: T,
-                  id_str: S,
+                  affiliates_highlighted_label: _,
+                  id_str: D,
                   is_profile_translatable: m,
-                  super_follow_eligible: g,
+                  super_follow_eligible: w,
                   professional: A,
-                  smart_blocked_by: D,
-                  smart_blocking: v,
-                  smart_blocking_expiration: f,
-                  super_following: M,
-                  super_followed_by: w,
-                  verified_phone_status: C,
+                  smart_blocked_by: v,
+                  smart_blocking: f,
+                  smart_blocking_expiration: g,
+                  super_following: y,
+                  super_followed_by: M,
+                  verified_phone_status: T,
                   business_account: l,
+                  profile_image_shape: S,
                 },
               )
               if (
-                (void 0 !== y && (E.verification_info = y),
-                void 0 !== b && (E.is_blue_verified = b),
-                void 0 !== s && (E.has_graduated_access = s),
-                void 0 !== c && (E.has_nft_avatar = c),
+                (void 0 !== C && (R.verification_info = C),
+                void 0 !== b && (R.is_blue_verified = b),
+                void 0 !== s && (R.has_graduated_access = s),
+                void 0 !== c && (R.has_nft_avatar = c),
                 h)
               ) {
-                var R = h.birthdate
-                if (R) {
-                  var Z = (0, t.Z)(
-                    (0, t.Z)({}, R),
+                var Z = h.birthdate
+                if (Z) {
+                  var I = (0, t.Z)(
+                    (0, t.Z)({}, Z),
                     {},
                     {
-                      visibility: R.visibility && R.visibility.toLowerCase(),
-                      year_visibility: R.year_visibility && R.year_visibility.toLowerCase(),
+                      visibility: Z.visibility && Z.visibility.toLowerCase(),
+                      year_visibility: Z.year_visibility && Z.year_visibility.toLowerCase(),
                     },
                   )
-                  E.birthdate = Z
+                  R.birthdate = I
                 }
               }
-              return (0, r.Z)(E, n, d)
+              return (0, r.Z)(R, n, d)
             },
           },
         )
@@ -9419,7 +9420,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           var t = (0, rd.Z)(function () {
             return d
               .e('ondemand.DirectMessagesCrypto')
-              .then(d.bind(d, 65598))
+              .then(d.bind(d, 12108))
               .then(function (n) {
                 return (0, n['default'])(e())
               })
@@ -17189,12 +17190,11 @@ window.__SCRIPTS_LOADED__.vendor &&
             )
           }
         var ia = ['desktopComponent', 'mobileComponent']
-        var la = function la(e) {
-          var n = e.desktopComponent,
-            d = e.mobileComponent,
-            t = (0, Mn.Z)(e, ia),
-            a = l.ZP.isMobileOS() ? d : n
-          return Ze.createElement(a, t)
+        function la(e) {
+          e.desktopComponent, e.mobileComponent
+          var n = (0, Mn.Z)(e, ia),
+            d = l.ZP.isMobileOS() ? e.mobileComponent : e.desktopComponent
+          return Ze.createElement(d, n)
         }
         var ua = (0, Yn.p)(function () {
             return Promise.all([
@@ -17494,11 +17494,11 @@ window.__SCRIPTS_LOADED__.vendor &&
               d.e('shared~bundle.Compose~bundle.RichTextCompose'),
               d.e('bundle.RichTextCompose'),
             ]).then(d.bind(d, 59689))
-          }),
-          ca = function ca(e) {
-            return Ze.createElement(la, (0, We.Z)({}, e, { desktopComponent: sa, mobileComponent: ua }))
-          },
-          ba = (0, ed.cI)(ca, { allowRestrictedSession: !1 }),
+          })
+        function ca(e) {
+          return Ze.createElement(la, (0, We.Z)({}, e, { desktopComponent: sa, mobileComponent: ua }))
+        }
+        var ba = (0, ed.cI)(ca, { allowRestrictedSession: !1 }),
           ma = (0, ed.cI)(
             (0, Yn.p)(function () {
               return Promise.all([
@@ -21240,11 +21240,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -21375,11 +21375,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -21510,11 +21510,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -21645,11 +21645,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -21780,11 +21780,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -21915,11 +21915,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -22050,11 +22050,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -22185,11 +22185,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -22320,11 +22320,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -22455,11 +22455,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                 d.e(
                   'shared~bundle.Birdwatch~bundle.Ocf~bundle.SettingsProfessionalProfileCommunitiesSpotlight~bundle.Conversation',
                 ),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~bundle.Settings~bundle.Display~bundle.Ocf'),
                 d.e('shared~bundle.SettingsProfile~bundle.Ocf'),
                 d.e('shared~bundle.Login~bundle.Ocf'),
                 d.e('shared~loader.AppModules~bundle.Ocf'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsInternals~bundle.Ocf'),
                 d.e('shared~bundle.Ocf~ondemand.EditBirthdate'),
                 d.e('bundle.Ocf'),
@@ -25232,6 +25232,7 @@ window.__SCRIPTS_LOADED__.vendor &&
                 ),
                 d.e('shared~loader.DashMenu~bundle.Account~bundle.LoggedOutHome~bundle.Search~bundle.TwitterBlue'),
                 d.e('shared~bundle.Conversation~bundle.TwitterBlue~bundle.TwitterCoinsManagement'),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue~icons/IconTwitterBlueExtended-js'),
                 d.e('shared~ondemand.SettingsRevamp~bundle.TwitterBlue'),
                 d.e('bundle.TwitterBlue'),
@@ -33403,83 +33404,88 @@ window.__SCRIPTS_LOADED__.vendor &&
           var e = (0, z.h)('responsive_web_nft_avatar'),
             n = (0, z.h)('responsive_web_twitter_blue_verified_badge_is_enabled'),
             d = (0, z.h)('blue_business_consumption_api_enabled'),
-            t = (0, V.v)(q.ZP.selectAll),
-            a = (0, V.v)(W.YN),
-            r = (0, V.v)(G.yw),
-            o = s.useRef({ byMediaId: new Map(), byScreenName: new Map() })
-          function i(e, n) {
+            t = (0, z.h)('blue_business_profile_image_shape_enabled'),
+            a = (0, V.v)(q.ZP.selectAll),
+            r = (0, V.v)(W.YN),
+            o = (0, V.v)(G.yw),
+            i = s.useRef({ byMediaId: new Map(), byScreenName: new Map() })
+          function l(e, n) {
             var d = Y(n)
             if (d) {
-              var t = o.current.byMediaId.get(d),
+              var t = i.current.byMediaId.get(d),
                 a = (0, j.Z)({}, e, t)
-              o.current.byMediaId.set(d, a)
+              i.current.byMediaId.set(d, a)
             }
           }
-          function l(e, n) {
+          function u(e, n) {
             if (n) {
-              var d = o.current.byScreenName.get(n),
+              var d = i.current.byScreenName.get(n),
                 t = (0, j.Z)({}, e, d)
-              o.current.byScreenName.set(n, t)
+              i.current.byScreenName.set(n, t)
             }
           }
           return (
             s.useMemo(
               function () {
                 if (e || d) {
-                  for (var n = 0, o = Object.keys(t); n < o.length; n++) {
-                    var u = o[n],
-                      s = t[u]
+                  for (var n = 0, t = Object.keys(a); n < t.length; n++) {
+                    var i = t[n],
+                      s = a[i]
                     s &&
-                      (i(s, null == s ? void 0 : s.profile_image_url_https), l(s, null == s ? void 0 : s.screen_name))
+                      (l(s, null == s ? void 0 : s.profile_image_url_https), u(s, null == s ? void 0 : s.screen_name))
                   }
                   var c,
-                    b = (0, O.Z)(a)
+                    b = (0, O.Z)(r)
                   try {
                     for (b.s(); !(c = b.n()).done; ) {
                       var m = c.value
-                      i(m, m.avatar_image_url), l(m, m.screen_name)
+                      l(m, m.avatar_image_url), u(m, m.screen_name)
                     }
                   } catch (D) {
                     b.e(D)
                   } finally {
                     b.f()
                   }
-                  for (var p = 0, h = Object.keys(r); p < h.length; p++) {
+                  for (var p = 0, h = Object.keys(o); p < h.length; p++) {
                     var A = h[p],
-                      S = r[A]
+                      S = o[A]
                     S &&
-                      (i(S, null == S ? void 0 : S.profile_image_url_https), l(S, null == S ? void 0 : S.screen_name))
+                      (l(S, null == S ? void 0 : S.profile_image_url_https), u(S, null == S ? void 0 : S.screen_name))
                   }
                 }
               },
-              [e, d, t, a, r],
+              [e, d, a, r, o],
             ),
             {
-              ShapeDecider: function ShapeDecider(t) {
-                if (!e && !d) return t
-                var a = (function (e) {
-                  if (e.screenName) return o.current.byScreenName.get(e.screenName)
+              ShapeDecider: function ShapeDecider(a) {
+                if (!e && !d && !t) return a
+                var r = (function (e) {
+                  if (e.screenName) return i.current.byScreenName.get(e.screenName)
                   if (e.uri) {
                     var n = Y(e.uri)
-                    if (n) return o.current.byMediaId.get(n)
+                    if (n) return i.current.byMediaId.get(n)
                   }
-                })(t)
-                return a
-                  ? e && 'none' !== t.shape && a.has_nft_avatar
-                    ? Q('nft', t)
-                    : F.Z.getVerifiedDisplayType(
-                        {
-                          isVerified: a.verified || a.is_verified,
-                          isBlueVerified: a.is_blue_verified,
-                          verifiedType: a.verified_type,
-                        },
-                        { isBlueVerifiedEnabled: n, isBusinessEnabled: d },
-                      ) === F.K.business
-                    ? Q('business', t)
-                    : t
-                  : t
+                })(a)
+                if (!r) return a
+                if (t && 'none' !== a.shape) {
+                  if ('Hexagon' === r.profile_image_shape) return Q('nft', a)
+                  if ('Square' === r.profile_image_shape) return Q('business', a)
+                  if ('Circle' === r.profile_image_shape) return a
+                }
+                return e && 'none' !== a.shape && r.has_nft_avatar
+                  ? Q('nft', a)
+                  : F.Z.getVerifiedDisplayType(
+                      {
+                        isVerified: r.verified || r.is_verified,
+                        isBlueVerified: r.is_blue_verified,
+                        verifiedType: r.verified_type,
+                      },
+                      { isBlueVerifiedEnabled: n, isBusinessEnabled: d },
+                    ) === F.K.business
+                  ? Q('business', a)
+                  : a
               },
-              registerProfileMediaId: i,
+              registerProfileMediaId: l,
             }
           )
         }
@@ -33488,10 +33494,10 @@ window.__SCRIPTS_LOADED__.vendor &&
             t = n.shape
           switch (e) {
             case 'nft':
-              d.push(J.profilePictureNFT), (t = 'hex')
+              ;(t = 'hex'), d.push(J.profilePictureHexagon)
               break
             case 'business':
-              d.push(J.profilePictureBusiness), (t = 'square')
+              ;(t = 'square'), d.push(J.profilePictureSquare)
           }
           n.accessibilityLabel && d.push(n.accessibilityLabel)
           var a = (0, L.Z)(d)
@@ -33503,7 +33509,7 @@ window.__SCRIPTS_LOADED__.vendor &&
           return n ? (0, x.Z)(n, 2)[1] : null
         }
         var X = { profileImageUrlMediaId: /profile_images\/(\d+)\// },
-          J = { profilePictureNFT: H().h7a9e4e2, profilePictureBusiness: H().i6fcb1d8 }
+          J = { profilePictureHexagon: H().f5de898e, profilePictureSquare: H().fcc8734a }
         function $(e) {
           var n = K(),
             d = n.ShapeDecider,
@@ -72440,11 +72446,11 @@ window.__SCRIPTS_LOADED__.vendor &&
                   'shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~bundle.SuperFollowsManage~bundle.SuperFoll',
                 ),
                 d.e('shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~bundle.SuperFollowsSubscribe'),
+                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf~bundle.TwitterBlue'),
                 d.e('shared~ondemand.SettingsSuperFollows~bundle.SuperFollowsSubscribe~loader.TweetCurationActionMenu'),
                 d.e('shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
                 d.e('shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows'),
                 d.e('shared~ondemand.SettingsInternals~ondemand.SettingsSuperFollows'),
-                d.e('shared~ondemand.SettingsSuperFollows~bundle.Ocf'),
                 d.e('shared~ondemand.SettingsSuperFollows~ondemand.Verified'),
                 d.e('ondemand.SettingsSuperFollows'),
               ]).then(d.bind(d, 14175))
@@ -74443,7 +74449,7 @@ window.__SCRIPTS_LOADED__.vendor &&
             broadcastId: '[a-zA-Z0-9]+',
             bookmarkFolderId: '[0-9]+',
             digit: '[0-9]',
-            dmConversationId: '[0-9-]+',
+            dmConversationId: 'e?[0-9-]+',
             emailLinkSecret: '[0-9A-H]+-[0-9A-H]+-[0-9]+',
             followersSubroute: 'superfollowers|followers_you_follow|followers|following',
             gifCategoryId: '[a-z0-9_]+',
