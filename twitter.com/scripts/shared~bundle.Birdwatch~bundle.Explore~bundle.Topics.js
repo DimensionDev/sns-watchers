@@ -2,51 +2,51 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   ['shared~bundle.Birdwatch~bundle.Explore~bundle.Topics'],
   {
-    12969: function _(e, t, n) {
+    612969: function _(e, t, n) {
       n.d(t, {
         Z: function Z() {
           return i
         },
       })
-      n(2784)
-      var r = n(25686)
-      var i = (0, n(20941).Z)(r.Z)
+      n(202784)
+      var r = n(325686)
+      var i = (0, n(820941).Z)(r.Z)
     },
-    17847: function _(e, t, n) {
+    517847: function _(e, t, n) {
       n.d(t, {
         Z: function Z() {
           return Le
         },
       })
-      var r = n(96234),
-        i = n(33028),
-        a = n(59740),
-        o = (n(49228), n(58188), n(2784)),
-        l = n(41441),
-        c = n(8352),
-        u = n(54044),
-        s = n(73186),
-        d = n(73228),
+      var r = n(196234),
+        i = n(133028),
+        a = n(459740),
+        o = (n(449228), n(358188), n(202784)),
+        l = n(241441),
+        c = n(108352),
+        u = n(854044),
+        s = n(973186),
+        d = n(473228),
         p = n.n(d),
         f = n(16587),
         m = n(28412),
-        h = n(90876),
-        v = n(12969),
-        b = n(9082),
-        g = n(43467),
-        Z = n(63705),
-        y = n(9249),
-        C = n(87371),
-        E = n(80753),
-        T = n(45754),
-        w = n(86906),
-        k = n(56666),
-        I = (n(18178), n(43450), n(96797)),
-        S = n(72985),
+        h = n(790876),
+        v = n(612969),
+        b = n(509082),
+        g = n(543467),
+        Z = n(963705),
+        y = n(709249),
+        C = n(887371),
+        E = n(580753),
+        T = n(545754),
+        w = n(486906),
+        k = n(256666),
+        I = (n(818178), n(543450), n(296797)),
+        S = n(272985),
         _ = n(33988),
-        L = n(78149),
-        B = n(23335),
-        M = n(92160),
+        L = n(878149),
+        B = n(923335),
+        M = n(392160),
         F = function F(e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
@@ -184,10 +184,10 @@
           )
         })(o.Component)
       var O = D((0, _.Z)(P))
-      var H = n(40082),
-        R = n(45855),
+      var H = n(440082),
+        R = n(845855),
         G = n(98701),
-        U = n(15372),
+        U = n(615372),
         W = function W(e, t) {
           return t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e)
         },
@@ -318,13 +318,13 @@
           )
         })(o.Component),
       )
-      var j = n(56746),
+      var j = n(756746),
         J = n(44895),
-        K = (n(8532), n(25686)),
-        X = n(96204),
-        Y = n(65526),
-        $ = n(60673),
-        ee = n(76275)
+        K = (n(108532), n(325686)),
+        X = n(496204),
+        Y = n(765526),
+        $ = n(460673),
+        ee = n(676275)
       var te = function te(e, t) {
         var n = (0, $.z)(),
           r = t || {},
@@ -398,15 +398,15 @@
           return { hasTabNavigation: le, pageConfiguration: ae, initialFetchStatus: oe }
         })
         .withAnalytics()
-      n(34115), n(634), n(26936)
-      var ue = n(11731),
-        se = n(67006),
+      n(334115), n(200634), n(326936)
+      var ue = n(611731),
+        se = n(967006),
         de = n(1778),
-        pe = n(31261),
+        pe = n(331261),
         fe = n(86098),
-        me = n(31211),
-        he = n(59226),
-        ve = n(73738),
+        me = n(882426),
+        he = n(759226),
+        ve = n(173738),
         be = function be(e, t) {
           var n = t.navBar.topicId ? t.navBar.topicId : ''
           return ve.Z.select(e, n)
@@ -613,20 +613,20 @@
       }
       var Le = ce(_e)
     },
-    20941: function _(e, t, n) {
+    820941: function _(e, t, n) {
       n.d(t, {
         Z: function Z() {
           return p
         },
       })
-      var r = n(9249),
-        i = n(87371),
-        a = n(45754),
-        o = n(86906),
-        l = n(2784),
-        c = n(11916),
+      var r = n(709249),
+        i = n(887371),
+        a = n(545754),
+        o = n(486906),
+        l = n(202784),
+        c = n(411916),
         u = n.n(c),
-        s = n(73463),
+        s = n(373463),
         d = n.n(s)
       function p(e) {
         var t = (function (t) {
