@@ -1756,14 +1756,6 @@
           return e.trustedFriendsTweetOwner + '’s'
         }),
         a('f70a36d0', 'Tweet all'),
-        a('cf433586', 'Introducing'),
-        a('a603e958', 'Reply downvotes'),
-        a('e6d9027e', 'Select to downvote'),
-        a('d8f886b8', 'See a reply that isn’t contributing to the conversation? Let us know by downvoting.'),
-        a('df15f9c2', 'Help make Twitter better'),
-        a('a521859e', 'Your feedback helps us prioritize higher quality content for you — and everyone on Twitter.'),
-        a('c9370e46', 'See a reply that isn’t contributing to the conversation?'),
-        a('b4e042ba', 'Downvote button'),
         a(
           'haebcf52',
           'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -2345,11 +2337,11 @@
         a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
-        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note')
-      a(
-        'b6203a2e',
-        'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
-      ),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a(
+          'b6203a2e',
+          'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
+        ),
         a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
         a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
@@ -2359,8 +2351,8 @@
         a('a0c552ee', 'Your impact will be shown here'),
         a('a4e5ea3c', 'You haven’t rated any notes yet'),
         a('g9a28bde', 'Browse notes that need help'),
-        a('dc0046e2', 'Browse the Community Notes home'),
-        a('fecae168', 'There, you’ll find notes that need more ratings, and where your rating specifically can help.'),
+        a('dc0046e2', 'Browse the Community Notes home')
+      a('fecae168', 'There, you’ll find notes that need more ratings, and where your rating specifically can help.'),
         a('h525e29e', 'Help find notes that could be helpful to many people'),
         a(
           'j148d18e',
@@ -3614,16 +3606,16 @@
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
         ),
-        a('h14ba864', 'Data sharing with business partners')
-      a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
+        a('h14ba864', 'Data sharing with business partners'),
+        a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
         a('cdcef7b6', 'Learn more about privacy on Twitter'),
         a('a607862a', 'Privacy policy'),
         a('g5925628', 'Contact us'),
         a('dd6012f8', 'Privacy center'),
-        a('jdceda60', 'Replies'),
-        a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
+        a('jdceda60', 'Replies')
+      a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
         a('g709f354', 'Control who mentions you in Tweets and replies.'),
         a('a18480f4', 'Allow others to mention you'),
         a('d713ba94', 'People you block are never able to mention you.'),
@@ -4834,16 +4826,16 @@
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
         ),
-        a('c144fa52', 'What kind of content do you create? Select all that apply.')
-      a('f1bf337e', 'Select categories'),
+        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
-        a('gfc80842', 'Submit application'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.')
+      a('gfc80842', 'Submit application'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
@@ -6035,46 +6027,27 @@
         }),
         a('e44c7ea1', function (e) {
           return e.date + ' - See ' + e.fullName + '’s (@' + e.screenName + ') Tweet'
-        })
-      function r(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('d0e26387', function (e) {
-        return (
-          e.date +
-          ': "' +
-          e.tweetText +
-          '". ' +
-          e.likeCount +
-          ' like' +
-          i(e.likeCount, '', 's') +
-          '. ' +
-          e.retweetCount +
-          ' retweet' +
-          i(e.retweetCount, '', 's') +
-          '. ' +
-          e.replyCount +
-          ' repl' +
-          i(e.replyCount, 'y', 'ies') +
-          '.'
-        )
-      }),
+        }),
+        a('d0e26387', function (e) {
+          return (
+            e.date +
+            ': "' +
+            e.tweetText +
+            '". ' +
+            e.likeCount +
+            ' like' +
+            i(e.likeCount, '', 's') +
+            '. ' +
+            e.retweetCount +
+            ' retweet' +
+            i(e.retweetCount, '', 's') +
+            '. ' +
+            e.replyCount +
+            ' repl' +
+            i(e.replyCount, 'y', 'ies') +
+            '.'
+          )
+        }),
         a('cd869707', function (e) {
           return (
             e.date +
@@ -6108,8 +6081,27 @@
         a('f522ae65', function (e) {
           return 'Check out @' + e.screenName + ' on Twitter'
         }),
-        a('d58c1576', 'Watch this video on Twitter'),
-        a('bdc49424', 'See what people are saying about this on Twitter.'),
+        a('d58c1576', 'Watch this video on Twitter')
+      function r(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('bdc49424', 'See what people are saying about this on Twitter.'),
         a('e38c0975', function (e) {
           return 'Join the conversation for more from @' + e.screenName + '.'
         }),
@@ -7330,8 +7322,8 @@
         a('b354ea52', 'Adding starter Deck...'),
         a('if195eb8', 'Adding columns...'),
         a('ea07517c', 'Column deleted.'),
-        a('habced9e', 'to restore column.')
-      a('g4fcb4f8', 'Column restored.'),
+        a('habced9e', 'to restore column.'),
+        a('g4fcb4f8', 'Column restored.'),
         a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
         a('h098a550', 'Default column width'),
@@ -7341,8 +7333,8 @@
           'ce2e487c',
           'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
         ),
-        a('fdbd90a6', 'Yes, change all columns'),
-        a('h8affe68', 'No, only new columns'),
+        a('fdbd90a6', 'Yes, change all columns')
+      a('h8affe68', 'No, only new columns'),
         a('f06885b6', 'Column media size options'),
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
@@ -9067,12 +9059,6 @@
               key: 'd1b80c9d',
               get: function get() {
                 return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
-              },
-            },
-            {
-              key: 'id9ba4fb',
-              get: function get() {
-                return ['Select ', ' to help us improve your experience.']
               },
             },
             {
