@@ -7962,7 +7962,6 @@
         }),
         a('e9f1af3a', 'Find out more'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
-        a('ec3ddf0a', 'This Tweet can’t be replied to, reacted to, or shared.'),
         a('da5e3194', 'Twitter is legally required to provide this notice.'),
         a('e461d0ee', 'Get the latest'),
         a('d1386940', 'Stay informed'),
@@ -8008,11 +8007,9 @@
         }),
         a('jcf3e7a2', 'Frame progress for Lottie Animation'),
         a('a0af935c', 'Liked'),
-        a('fbaa28e0', 'Reacted'),
         a('f9be84f0', 'Downvoted'),
         a('g23ce6f0', 'Retweeted'),
         a('c7a989ce', 'Bookmarked'),
-        a('b75196a4', 'Slide finger to pick a reaction'),
         a('b03835c7', function (e) {
           return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
         }),
@@ -8021,9 +8018,6 @@
         }),
         a('e089b42d', function (e) {
           return e.likeCount + ' like' + n(e.likeCount, '', 's')
-        }),
-        a('d8320937', function (e) {
-          return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
         }),
         a('f2849136', 'Analytics'),
         a('ee9a81b6', 'View Tweet analytics'),
@@ -8043,19 +8037,6 @@
         a('aa650427', function (e) {
           return e.count + ' Like' + n(e.count, '', 's') + '. Liked'
         }),
-        a('e3469988', 'React'),
-        a('c46f0fce', 'Unreact'),
-        a('ga9c2b52', 'Select more reactions'),
-        a('hb755a53', function (e) {
-          return e.count + ' Reaction' + n(e.count, '', 's') + '. Like'
-        }),
-        a('cff26b89', function (e) {
-          return e.count + ' Reaction' + n(e.count, '', 's') + '. Unreact'
-        }),
-        a('bd83592a', 'Haha'),
-        a('f84f0fa8', 'Hmm'),
-        a('g47ce0e4', 'Sad'),
-        a('fc8a13c6', 'Cheer'),
         a('hdf7226a', 'Reply'),
         a('c9940955', function (e) {
           return e.count + ' Repl' + n(e.count, 'y', 'ies') + '. Reply'
