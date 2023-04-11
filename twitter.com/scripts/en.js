@@ -1248,13 +1248,6 @@
         a('d9034c72', 'Tweet unliked'),
         a('f6c7249c', 'Tweet Retweeted'),
         a('f67de45a', 'Tweet Unretweeted'),
-        a('e0be2c22', 'Tweet downvoted'),
-        a('e32e0d92', 'Downvote removed'),
-        a('bd7d377e', 'Thanks, your feedback helps us make Twitter better for everyone.'),
-        a('ae768646', 'Thanks for your feedback. Want to tell us why you downvoted this reply?'),
-        a('c1a50438', 'Let us know'),
-        a('fd961b0c', 'Downvotes are private'),
-        a('d964e8ec', 'Your votes aren’t public and won’t be shared with the Tweet author or anyone else.'),
         a('jc4cb6c4', 'Only Super Followers can see this Retweet'),
         a('f225e16e', 'Only Subscribers can see this Retweet'),
         a('b5b36724', 'Reply instead?'),
@@ -1288,7 +1281,6 @@
         a('cb18be32', 'You can’t do that … yet'),
         a('e90b4e6e', 'Twitter Circle Tweets can’t be Retweeted'),
         a('ae2c8a1e', 'Why can’t you reply to this?'),
-        a('adf4892e', 'Why can’t you downvote this?'),
         a('afe7ba26', 'Why can’t you Like this?'),
         a('df9e2356', 'Why can’t you add this to Bookmarks?'),
         a('jead3bc2', 'Why can’t you share this?'),
@@ -2227,6 +2219,7 @@
         a('i26425d8', 'Somewhat'),
         a('c6e683d0', 'Submit & Agree'),
         a('e2988ed0', 'How can we improve the note rating experience?'),
+        a('c1a50438', 'Let us know'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -2351,8 +2344,8 @@
         a('a0c552ee', 'Your impact will be shown here'),
         a('a4e5ea3c', 'You haven’t rated any notes yet'),
         a('g9a28bde', 'Browse notes that need help'),
-        a('dc0046e2', 'Browse the Community Notes home')
-      a('fecae168', 'There, you’ll find notes that need more ratings, and where your rating specifically can help.'),
+        a('dc0046e2', 'Browse the Community Notes home'),
+        a('fecae168', 'There, you’ll find notes that need more ratings, and where your rating specifically can help.'),
         a('h525e29e', 'Help find notes that could be helpful to many people'),
         a(
           'j148d18e',
@@ -2364,11 +2357,11 @@
           'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
         ),
         a('g97a2d6c', 'Learn More'),
-        a('cf30af22', 'Did you know?'),
-        a(
-          'd145b0fa',
-          'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
-        ),
+        a('cf30af22', 'Did you know?')
+      a(
+        'd145b0fa',
+        'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
+      ),
         a('efb9a9e0', 'Nothing to see here'),
         a('a1529ce7', 'Learn more'),
         a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
@@ -3614,15 +3607,15 @@
         a('a607862a', 'Privacy policy'),
         a('g5925628', 'Contact us'),
         a('dd6012f8', 'Privacy center'),
-        a('jdceda60', 'Replies')
-      a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
+        a('jdceda60', 'Replies'),
+        a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
         a('g709f354', 'Control who mentions you in Tweets and replies.'),
         a('a18480f4', 'Allow others to mention you'),
         a('d713ba94', 'People you block are never able to mention you.'),
         a('a0c5ddb2', 'Anyone can mention you'),
         a('e83386de', 'Only people you follow can mention you'),
-        a('ea2a8236', 'Don’t allow others to mention you?'),
-        a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
+        a('ea2a8236', 'Don’t allow others to mention you?')
+      a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
         a('f5e59e90', 'Protect your Tweets'),
         a(
           'e860ff84',
@@ -4834,8 +4827,8 @@
         a('ffb6cb88', 'How do you plan to use Super Follows?'),
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.')
-      a('gfc80842', 'Submit application'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
+        a('gfc80842', 'Submit application'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
@@ -4844,11 +4837,11 @@
         a(
           'd7f65128',
           'Our Super Follows test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
-        ),
-        a(
-          'j006be54',
-          'Our Subscriptions test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
-        ),
+        )
+      a(
+        'j006be54',
+        'Our Subscriptions test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
+      ),
         a('b422cb62', 'Get started with Super Follows'),
         a('d5cb1114', 'Get started with Subscriptions'),
         a(
@@ -6081,7 +6074,18 @@
         a('f522ae65', function (e) {
           return 'Check out @' + e.screenName + ' on Twitter'
         }),
-        a('d58c1576', 'Watch this video on Twitter')
+        a('d58c1576', 'Watch this video on Twitter'),
+        a('bdc49424', 'See what people are saying about this on Twitter.'),
+        a('e38c0975', function (e) {
+          return 'Join the conversation for more from @' + e.screenName + '.'
+        }),
+        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
+        a('e3521fcd', function (e) {
+          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+        }),
+        a('g9079b94', 'You may only view analytics about your own Tweets.'),
+        a('a57daeb2', 'Tweet Analytics'),
+        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6101,18 +6105,7 @@
           c(e, t)
         )
       }
-      a('bdc49424', 'See what people are saying about this on Twitter.'),
-        a('e38c0975', function (e) {
-          return 'Join the conversation for more from @' + e.screenName + '.'
-        }),
-        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
-        a('e3521fcd', function (e) {
-          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-        }),
-        a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics'),
-        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
-        a('ccccbc74', 'Help Center'),
+      a('ccccbc74', 'Help Center'),
         a('dabb313e', 'Help Center'),
         a('e00644ca', 'Help Center'),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
@@ -7333,8 +7326,8 @@
           'ce2e487c',
           'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
         ),
-        a('fdbd90a6', 'Yes, change all columns')
-      a('h8affe68', 'No, only new columns'),
+        a('fdbd90a6', 'Yes, change all columns'),
+        a('h8affe68', 'No, only new columns'),
         a('f06885b6', 'Column media size options'),
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
@@ -7342,11 +7335,11 @@
         a('ee7765ba', 'Pick Emoji'),
         a('e0127c83', function (e) {
           return 'Change Emoji ' + e.emoji
-        }),
-        a(
-          'hb8b6254',
-          'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
-        ),
+        })
+      a(
+        'hb8b6254',
+        'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
+      ),
         a('gfbaf4e8', 'This Deck can’t be made public now'),
         a(
           'cb848a36',
