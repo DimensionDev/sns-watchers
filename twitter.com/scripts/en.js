@@ -162,6 +162,9 @@
         a('eb55363c', 'This Space has been reported'),
         a('f91f00ba', 'Create clip'),
         a('h63a5c3c', 'More'),
+        a('e674c120', 'Show captions'),
+        a('f45bace4', 'Hide captions'),
+        a('ce96f1dc', 'Captions unavailable'),
         a('c0098d4a', 'Reactions'),
         a('fc0e94b7', function (e) {
           return 'React with ' + e.emoji
@@ -169,9 +172,6 @@
         a('jf9f3e54', 'Skip forward 15 seconds'),
         a('ic1e826e', 'Play'),
         a('b89c5a50', 'Pause'),
-        a('e674c120', 'Show captions'),
-        a('f45bace4', 'Hide captions'),
-        a('ce96f1dc', 'Captions unavailable'),
         a('e07f6e7d', function (e) {
           return 'Speed ' + e.rate + 'x'
         }),
@@ -5701,6 +5701,7 @@
         ),
         a('bdc6f5b8', 'Your account'),
         a('bdfa2b8c', 'Additional resources'),
+        a('f24266fe', 'Earlybird Settings'),
         a('df483b48', 'Feature switches'),
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
@@ -6084,8 +6085,7 @@
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
         }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics'),
-        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.')
+        a('a57daeb2', 'Tweet Analytics')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6105,7 +6105,8 @@
           c(e, t)
         )
       }
-      a('ccccbc74', 'Help Center'),
+      a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+        a('ccccbc74', 'Help Center'),
         a('dabb313e', 'Help Center'),
         a('e00644ca', 'Help Center'),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
@@ -7332,14 +7333,14 @@
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
-        a('ee7765ba', 'Pick Emoji'),
-        a('e0127c83', function (e) {
-          return 'Change Emoji ' + e.emoji
-        })
-      a(
-        'hb8b6254',
-        'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
-      ),
+        a('ee7765ba', 'Pick Emoji')
+      a('e0127c83', function (e) {
+        return 'Change Emoji ' + e.emoji
+      }),
+        a(
+          'hb8b6254',
+          'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
+        ),
         a('gfbaf4e8', 'This Deck can’t be made public now'),
         a(
           'cb848a36',
