@@ -4727,9 +4727,7 @@
         a('fdd95737', function (e) {
           return e.minFollowersCount + ' followers'
         }),
-        a('a0dcad87', function (e) {
-          return e.minTweetsCount + ' Tweets in the past 30 days'
-        }),
+        a('b747ce3a', 'Active in the past 30 days'),
         a('c27f57ac', 'Be at least 18 years old'),
         a('fde27650', 'Subscriptions Terms'),
         a('acad7c8f', 'Super Follows Terms'),
@@ -4908,8 +4906,6 @@
         a('e1453e45', 'Learn more'),
         a('f1cb36b8', 'Payout setup'),
         a('e20f6662', 'You’re all set!'),
-        a('i9b8ec68', '1–3 weeks'),
-        a('d7d4da8a', '1–3 weeks'),
         a('g88e146c', 'Your account is pending'),
         a(
           'dfe973a6',
@@ -6085,7 +6081,9 @@
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
         }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics')
+        a('a57daeb2', 'Tweet Analytics'),
+        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+        a('ccccbc74', 'Help Center')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6105,9 +6103,7 @@
           c(e, t)
         )
       }
-      a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
-        a('ccccbc74', 'Help Center'),
-        a('dabb313e', 'Help Center'),
+      a('dabb313e', 'Help Center'),
         a('e00644ca', 'Help Center'),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('b069d89c', 'Audience'),
@@ -7333,15 +7329,15 @@
         a('e4bab2d0', 'Column width options'),
         a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
-        a('ee7765ba', 'Pick Emoji')
-      a('e0127c83', function (e) {
-        return 'Change Emoji ' + e.emoji
-      }),
+        a('ee7765ba', 'Pick Emoji'),
+        a('e0127c83', function (e) {
+          return 'Change Emoji ' + e.emoji
+        }),
         a(
           'hb8b6254',
           'Anyone can access your public Deck from your profile. You can also share links to it. If you change your mind, you can always make it private again. Learn more',
-        ),
-        a('gfbaf4e8', 'This Deck can’t be made public now'),
+        )
+      a('gfbaf4e8', 'This Deck can’t be made public now'),
         a(
           'cb848a36',
           'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
@@ -10204,20 +10200,10 @@
               },
             },
             {
-              key: 'iab65111',
+              key: 'h406634b',
               get: function get() {
                 return [
-                  'We’ve confirmed your Stripe account. It can take ',
-                  ' for your Subscription to be activated. We’ll send you a notification as soon as it’s live.',
-                ]
-              },
-            },
-            {
-              key: 'cf780193',
-              get: function get() {
-                return [
-                  'We’ve confirmed your Stripe account. It can take ',
-                  ' for your Super Follows subscription to be activated. We’ll send you a notification as soon as it’s live.',
+                  'We’ve confirmed your Stripe account. Subscriptions on your account will go live shortly. We’ll send you a notification as soon as it’s live. You can also visit your profile to see if subscriptions are enabled.',
                 ]
               },
             },
