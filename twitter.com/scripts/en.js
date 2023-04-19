@@ -787,6 +787,8 @@
         a('cf249089', function (e) {
           return 'Joined ' + e.joinDate
         }),
+        a('b3f20f26', 'Messages are secured with encryption. '),
+        a('j5da06bd', 'Learn more'),
         a('h52ca4c4', 'New messages'),
         a('ffde2fdc', 'Loading conversation'),
         a('da878dc0', 'Accept'),
@@ -1150,12 +1152,12 @@
         a('i569ff3e', 'Show this thread'),
         a('je5502eb', function (e) {
           return 'Including results for "' + e.suggestion + '"'
-        }),
-        a('bc4628a1', function (e) {
-          return 'Showing results for "' + e.suggestion + '"'
-        }),
-        a('ee8c6c62', 'Show more Tweets')
-      a('i8005e74', 'Loading more Tweets'),
+        })
+      a('bc4628a1', function (e) {
+        return 'Showing results for "' + e.suggestion + '"'
+      }),
+        a('ee8c6c62', 'Show more Tweets'),
+        a('i8005e74', 'Loading more Tweets'),
         a('j681933e', 'Private List'),
         a('ca5d0a82', 'Edit List'),
         a('ec08efe4', function (e) {
@@ -2355,13 +2357,13 @@
           'f58f4f62',
           'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
         ),
-        a('g97a2d6c', 'Learn More'),
-        a('cf30af22', 'Did you know?'),
+        a('g97a2d6c', 'Learn More')
+      a('cf30af22', 'Did you know?'),
         a(
           'd145b0fa',
           'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
-        )
-      a('efb9a9e0', 'Nothing to see here'),
+        ),
+        a('efb9a9e0', 'Nothing to see here'),
         a('a1529ce7', 'Learn more'),
         a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
         a('e86c87a0', 'Rate more notes'),
@@ -3614,10 +3616,10 @@
         a('a18480f4', 'Allow others to mention you'),
         a('d713ba94', 'People you block are never able to mention you.'),
         a('a0c5ddb2', 'Anyone can mention you'),
-        a('e83386de', 'Only people you follow can mention you'),
-        a('ea2a8236', 'Don’t allow others to mention you?'),
-        a('e0870a5e', 'You won’t be mentioned in Tweets and replies.')
-      a('f5e59e90', 'Protect your Tweets'),
+        a('e83386de', 'Only people you follow can mention you')
+      a('ea2a8236', 'Don’t allow others to mention you?'),
+        a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
+        a('f5e59e90', 'Protect your Tweets'),
         a(
           'e860ff84',
           'When selected, your Tweets and other account information are only visible to people who follow you.',
@@ -3820,7 +3822,10 @@
           )
         }),
         a('je506a60', 'Change username'),
-        a('d53382f2', 'Changing your username will result in your checkmark and/or affiliation badge being removed.'),
+        a(
+          'c0fcb08a',
+          'Changing your username will result in your checkmark and affiliations being temporarily removed until they are reviewed.',
+        ),
         a('d1f6d336', 'Username'),
         a('de65c756', 'Suggestions'),
         a('ebeeac1a', 'Change email'),
@@ -4832,10 +4837,10 @@
         a(
           'dfe973a6',
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
-        ),
-        a('ja884230', 'Set up your payout details'),
-        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.')
-      a('fe339750', 'Create Stripe account'),
+        )
+      a('ja884230', 'Set up your payout details'),
+        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
+        a('fe339750', 'Create Stripe account'),
         a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
@@ -4973,6 +4978,7 @@
         a('d87bff5a', 'Your conversation info is loading.'),
         a('cabb453e', 'Group name'),
         a('eb1bb5a2', 'View all people'),
+        a('a70436ac', 'Start an encrypted message'),
         a('a7f20223', function (e) {
           return 'Snooze notifications from ' + e.name
         }),
@@ -6079,10 +6085,7 @@
             n(e.impressions, '', 's') +
             ' so far. Switch to a professional account to broaden your reach.'
           )
-        }),
-        a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
-        a('e9891f7c', 'Promote this Tweet'),
-        a('df2ed8c2', 'Boost this Tweet')
+        })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6102,7 +6105,10 @@
           c(e, t)
         )
       }
-      a('jede3014', 'Your promotion is under review'),
+      a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
+        a('e9891f7c', 'Promote this Tweet'),
+        a('df2ed8c2', 'Boost this Tweet'),
+        a('jede3014', 'Your promotion is under review'),
         a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
         a('f638d3e0', 'Review Twitter’s Ads Policy'),
         a('ge538876', 'Metrics for the video you shared'),
@@ -6211,6 +6217,8 @@
         a('c9a73b7c', 'Get more likes, Retweets, etc.'),
         a('b0583654', 'Reach a new audience'),
         a('a2d37164', 'Get more visitors to your site'),
+        a('h277a2e8', 'Add a link to your Tweet'),
+        a('gd429fea', 'Make sure your Tweet includes a link.'),
         a('de43b660', 'Payment Methods'),
         a('hb4773a0', 'Add new payment method'),
         a('aa2a3dd4', 'Delete Card'),
@@ -6863,30 +6871,29 @@
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a('c8f2079a', 'Verified Organizations, available globally'),
-        a('i0fe5dce', 'Verification Management'),
+        a('g635df7c', 'Verified Organizations, now available globally'),
+        a('da4ad6b2', 'Verification management'),
         a('bd39192c', 'Verify accounts affiliated with your organization through our new Verified portal.'),
-        a('b58d2a40', 'Custom Organization Profile'),
+        a('edb8f0dc', 'Custom organization profile'),
         a(
-          'f54dd434',
-          'Elevate and distinguish your organization with a square avatar, and new tab that lists all affiliated accounts',
+          'bef593c6',
+          'Elevate and distinguish your organization with a square avatar, and a new tab that lists all affiliated accounts.',
         ),
-        a('h31ba522', 'Impersonation Defense'),
+        a('b2cee330', 'Impersonation defense'),
         a(
           'da157944',
           'Accounts impersonating Verified Organizations are flagged for further review if impersonation is detected.',
         ),
-        a('bad7f00e', 'Premium Support'),
+        a('f0f48668', 'Premium support'),
         a(
-          'cf3b4086',
-          'Organizations get exclusive access to contact Premium Support, ensuring timely help and escalations.',
+          'aa15785a',
+          'Organizations get exclusive access to contact premium support, ensuring timely help and escalations.',
         ),
         a(
           'e39d052c',
           'All accounts (organizations and their affiliates) will receive all the benefits of Twitter Blue.',
         ),
-        a('ab0decc0', 'Subscribe'),
-        a('g62e955f', 'Purchaser Terms of Service'),
+        a('ga412491', 'here'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7068,6 +7075,7 @@
         a('g9e6a4e5', function (e) {
           return e.kilometers + 'km'
         }),
+        a('ic61c5fc', 'Scroll to top'),
         a('gb19f215', function (e) {
           return 'Column - ' + e.title
         }),
@@ -7112,17 +7120,6 @@
         a('e57560b4', 'Hide overview'),
         a('fb087db0', 'Create separate column'),
         a('aa128cd8', 'Add as new column'),
-        a('ic61c5fc', 'Scroll to top'),
-        a('dd7840ee', 'See new notifications'),
-        a(
-          'cae1b8a2',
-          'New notifications are available. Push period to go to the beginning of your timeline and view them',
-        ),
-        a('fa2dc98e', 'Jumping to new notifications soon'),
-        a('i99e98ce', 'New notifications are available. Automatically jumping to new notifications soon'),
-        a('ac0f6492', 'New Tweets are available. Push period to go to the beginning of your timeline and view them'),
-        a('hd494156', 'Jumping to new Tweets soon'),
-        a('hd0b4a3a', 'New Tweets are available. Automatically jumping to new Tweets soon'),
         a('a6bbdc1c', 'View only'),
         a('ba7bd92e', 'Column settings'),
         a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
@@ -7316,20 +7313,20 @@
             '. Explore the chart using navigation controls.'
           )
         }),
-        a('d969327c', 'Play audio version')
-      a(
-        'd8cbbcd4',
-        'Play audio chart. Press to play audio version of the chart or press key "A" on each data point for their audio version',
-      ),
+        a('d969327c', 'Play audio version'),
+        a(
+          'd8cbbcd4',
+          'Play audio chart. Press to play audio version of the chart or press key "A" on each data point for their audio version',
+        ),
         a('dec1d7ef', function (e) {
           return e.label + ', ' + e.group + ', ' + e.value
         }),
         a('f765bead', function (e) {
           return 'unlabelled data, ' + e.group + ', ' + e.value
-        }),
-        a('idea1817', function (e) {
-          return e.label + ', ' + e.value
-        }),
+        })
+      a('idea1817', function (e) {
+        return e.label + ', ' + e.value
+      }),
         a('fe94be6b', function (e) {
           return 'unlabelled data, ' + e.value
         }),
@@ -7880,7 +7877,6 @@
         }),
         a('jcf3e7a2', 'Frame progress for Lottie Animation'),
         a('a0af935c', 'Liked'),
-        a('f9be84f0', 'Downvoted'),
         a('g23ce6f0', 'Retweeted'),
         a('c7a989ce', 'Bookmarked'),
         a('b03835c7', function (e) {
@@ -7898,9 +7894,6 @@
           return e.count + ' View' + n(e.count, '', 's') + '. View Tweet analytics'
         }),
         a('j377cdca', 'Remove Tweet from Bookmarks'),
-        a('d2b2b8e6', 'Downvote'),
-        a('hcb32860', 'Undo downvote'),
-        a('cb5dafd4', 'Downvote, selected'),
         a('d636ebc6', 'Like'),
         a('eb3a8b0c', 'Unlike'),
         a('a4ae22fa', 'Like this Tweet'),
@@ -8294,6 +8287,12 @@
               key: 'c8b914d5',
               get: function get() {
                 return ['', ' ·']
+              },
+            },
+            {
+              key: 'c430f75d',
+              get: function get() {
+                return ['', ' ']
               },
             },
             {
@@ -10450,12 +10449,6 @@
               },
             },
             {
-              key: 'ce1aaf8f',
-              get: function get() {
-                return [this.props.formattedCount + ' Reaction' + n(this.props.count, '', 's')]
-              },
-            },
-            {
               key: 'eea0a14f',
               get: function get() {
                 return [this.props.formattedCount + ' Like' + n(this.props.count, '', 's')]
@@ -10657,11 +10650,11 @@
               },
             },
             {
-              key: 'eac8cc19',
+              key: 'c4e7be7f',
               get: function get() {
                 return [
-                  'By clicking Subscribe, you agree to our ',
-                  '. Subscriptions auto-renew until canceled, as described in the Terms. Accounts that sign up are reviewed for authenticity. If an account signs up and is not an organization, you will be rejected and not refunded.',
+                  'By clicking Subscribe, you agree to our Purchaser Terms of Service. Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime. Accounts that sign up are reviewed. If we determine at any time that your main account is not an organization or you violate our terms and policies, your subscription will be canceled and you will not be refunded during your existing billing period unless required by law. See more ',
+                  '.',
                 ]
               },
             },
