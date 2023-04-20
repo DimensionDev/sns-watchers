@@ -16,7 +16,10 @@
         return 'one' == ((a = e), (n = !String(a).split('.')[1]), 1 == a && n ? 'one' : 'other') ? t : o
         var a, n
       }
-      a('ac0d27be', 'Sorry, this account has been suspended.'),
+      a('d2fb334c', 'Twitter'),
+        a('hd8c22d2', 'Mod'),
+        a('c3153100', 'Admin'),
+        a('ac0d27be', 'Sorry, this account has been suspended.'),
         a('bcee7444', 'Account update failed.'),
         a('e0cbf77a', 'Add phone'),
         a('dec5a5ce', 'Twitter is over capacity. Please wait a few moments then try again.'),
@@ -71,21 +74,18 @@
           'e784846c',
           'Your profile is under review. No new changes are allowed to name and profile photo during the review period.',
         ),
-        a('hd8c22d2', 'Mod'),
-        a('c3153100', 'Admin'),
-        a('fa9adac1', function (e) {
-          return 'Search for "' + e.query + '"'
-        }),
         a('h1cbdd30', 'Please refresh the page and try again.'),
         a('a5077d3e', 'Refresh'),
         a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
+        a('fa9adac1', function (e) {
+          return 'Search for "' + e.query + '"'
+        }),
         a('jded6c98', 'Tweet reply hidden'),
         a('f5de898e', 'Hexagon profile picture'),
         a('fcc8734a', 'Square profile picture'),
         a('fbcbbee2', 'This member was removed from the Community, so their Tweets are hidden.'),
         a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
         a('f5718548', 'You reported this Tweet.'),
-        a('d2fb334c', 'Twitter'),
         a('cfbea177', function (e) {
           return e.name + '’s Space'
         }),
@@ -343,8 +343,8 @@
         a('f2f787a0', 'Terms of Service'),
         a('e1099fd6', 'Privacy Policy'),
         a('c1df1ae0', 'Cookie Use.'),
-        a('gdb8bdcc', 'See new Tweets'),
         a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
+        a('gdb8bdcc', 'See new Tweets'),
         a('j0a8da6e', 'Add an existing account'),
         a('c6f2bf00', 'Manage accounts'),
         a('j62f43a6', 'View delegate accounts'),
@@ -1789,8 +1789,8 @@
         a('g4cc1de2', 'Live Twitter Spaces'),
         a('fec3c1e0', 'Where live audio conversations happen'),
         a('b7388a56', 'Footer'),
-        a('jc292da5', function (e) {
-          return '© ' + e.year + ' Twitter, Inc.'
+        a('d89ec7fd', function (e) {
+          return '© ' + e.year + ' X Corp.'
         }),
         a('b721eb38', 'About'),
         a('hdabc3fc', 'Terms of Service'),
@@ -5138,6 +5138,9 @@
         a('dafd69e9', function (e) {
           return 'Following' + e.noun
         }),
+        a('d80a1c37', function (e) {
+          return 'Subscribed' + e.noun
+        }),
         a('f089620c', 'Your Home Timeline'),
         a('d2c66f10', 'Welcome to Twitter!'),
         a(
@@ -5213,7 +5216,6 @@
           'bfdb3c12',
           'Likes, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
         ),
-        a('ib4510fe', 'See new Notifications'),
         a('b0648adb', 'Learn more'),
         a('eba8b1c8', 'Control which conversations you’re mentioned in'),
         a(
@@ -6917,7 +6919,6 @@
         a('a74e9464', 'Change display settings'),
         a('h254eb92', 'Discover keyboard shortcuts'),
         a('j6e669a0', 'Take the tour again'),
-        a('dce65822', 'TweetDeck is not currently optimized for mobile devices or small browser windows'),
         a('i0115624', 'Sending Tweets...'),
         a('e5506950', 'Decks'),
         a('b1bd9a8a', 'New Deck'),
@@ -7323,13 +7324,13 @@
         }),
         a('f765bead', function (e) {
           return 'unlabelled data, ' + e.group + ', ' + e.value
-        })
-      a('idea1817', function (e) {
-        return e.label + ', ' + e.value
-      }),
-        a('fe94be6b', function (e) {
-          return 'unlabelled data, ' + e.value
         }),
+        a('idea1817', function (e) {
+          return e.label + ', ' + e.value
+        })
+      a('fe94be6b', function (e) {
+        return 'unlabelled data, ' + e.value
+      }),
         a('a7cd5cf4', 'Video'),
         a('b6eb8f6a', 'Broadcast'),
         a('dcc2b9b3', function (e) {
