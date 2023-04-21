@@ -1789,9 +1789,6 @@
         a('g4cc1de2', 'Live Twitter Spaces'),
         a('fec3c1e0', 'Where live audio conversations happen'),
         a('b7388a56', 'Footer'),
-        a('d89ec7fd', function (e) {
-          return '© ' + e.year + ' X Corp.'
-        }),
         a('b721eb38', 'About'),
         a('hdabc3fc', 'Terms of Service'),
         a('bc6efc72', 'Privacy Policy'),
@@ -2357,12 +2354,12 @@
           'f58f4f62',
           'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
         ),
-        a('g97a2d6c', 'Learn More')
-      a('cf30af22', 'Did you know?'),
-        a(
-          'd145b0fa',
-          'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
-        ),
+        a('g97a2d6c', 'Learn More'),
+        a('cf30af22', 'Did you know?')
+      a(
+        'd145b0fa',
+        'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
+      ),
         a('efb9a9e0', 'Nothing to see here'),
         a('a1529ce7', 'Learn more'),
         a('h2b5268a', 'Well done! Rate more notes to continue growing your impact.'),
@@ -3616,9 +3613,9 @@
         a('a18480f4', 'Allow others to mention you'),
         a('d713ba94', 'People you block are never able to mention you.'),
         a('a0c5ddb2', 'Anyone can mention you'),
-        a('e83386de', 'Only people you follow can mention you')
-      a('ea2a8236', 'Don’t allow others to mention you?'),
-        a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
+        a('e83386de', 'Only people you follow can mention you'),
+        a('ea2a8236', 'Don’t allow others to mention you?')
+      a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
         a('f5e59e90', 'Protect your Tweets'),
         a(
           'e860ff84',
@@ -3674,10 +3671,6 @@
         a(
           'c4ca418c',
           'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-        ),
-        a(
-          'b0b3ed8e',
-          'This feature is not available because you’ve opted out of interest-based ads on your Android device.',
         ),
         a('da202f9a', 'Your advertiser list'),
         a('b5fe50fc', 'Ads Categories'),
@@ -4166,10 +4159,6 @@
         a('a1245d3a', 'It looks like your browser doesn’t support push notifications.'),
         a('f580c738', 'Turn on notifications?'),
         a('i4ac996a', 'To get notifications from Twitter, you’ll need to allow them in your browser settings first.'),
-        a(
-          'd8f69f0a',
-          'It looks like you’ve disabled push notifications on your device. Before we can update your settings, you’ll need to enable them on your device settings.',
-        ),
         a(
           'b40d0146',
           'When you turn on Tweet notifications from people you follow, you’ll get push notifications about their Tweets or live videos.',
@@ -4837,11 +4826,11 @@
         a(
           'dfe973a6',
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
-        )
-      a('ja884230', 'Set up your payout details'),
+        ),
+        a('ja884230', 'Set up your payout details'),
         a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
-        a('fe339750', 'Create Stripe account'),
-        a('j912510a', 'Link Stripe account'),
+        a('fe339750', 'Create Stripe account')
+      a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
@@ -5215,6 +5204,10 @@
         a(
           'bfdb3c12',
           'Likes, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
+        ),
+        a(
+          'f474983a',
+          'Likes, mentions, Retweets, and a whole lot more — when it comes from your subscribers, you’ll find it here.',
         ),
         a('b0648adb', 'Learn more'),
         a('eba8b1c8', 'Control which conversations you’re mentioned in'),
@@ -6087,7 +6080,9 @@
             n(e.impressions, '', 's') +
             ' so far. Switch to a professional account to broaden your reach.'
           )
-        })
+        }),
+        a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
+        a('e9891f7c', 'Promote this Tweet')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6107,9 +6102,7 @@
           c(e, t)
         )
       }
-      a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
-        a('e9891f7c', 'Promote this Tweet'),
-        a('df2ed8c2', 'Boost this Tweet'),
+      a('df2ed8c2', 'Boost this Tweet'),
         a('jede3014', 'Your promotion is under review'),
         a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
         a('f638d3e0', 'Review Twitter’s Ads Policy'),
@@ -7327,12 +7320,12 @@
         }),
         a('idea1817', function (e) {
           return e.label + ', ' + e.value
-        })
-      a('fe94be6b', function (e) {
-        return 'unlabelled data, ' + e.value
-      }),
-        a('a7cd5cf4', 'Video'),
-        a('b6eb8f6a', 'Broadcast'),
+        }),
+        a('fe94be6b', function (e) {
+          return 'unlabelled data, ' + e.value
+        }),
+        a('a7cd5cf4', 'Video')
+      a('b6eb8f6a', 'Broadcast'),
         a('dcc2b9b3', function (e) {
           return 'Play ' + e.locVideoType
         }),
