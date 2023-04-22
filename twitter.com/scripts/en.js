@@ -6867,9 +6867,15 @@
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a('g635df7c', 'Verified Organizations, now available globally'),
+        a(
+          'g8fbe270',
+          'Verified Organizations is for organizations of all types–businesses, non-profits, and government institutions–to manage their verification,affiliate and verify any related account, and unlock new features.',
+        ),
         a('da4ad6b2', 'Verification management'),
-        a('bd39192c', 'Verify accounts affiliated with your organization through our new Verified portal.'),
+        a(
+          'd86e1d60',
+          'Receive a gold or grey checkmark and verify accounts affiliated with your organization through our new Verified portal.',
+        ),
         a('edb8f0dc', 'Custom organization profile'),
         a(
           'bef593c6',
@@ -6884,6 +6890,11 @@
         a(
           'aa15785a',
           'Organizations get exclusive access to contact premium support, ensuring timely help and escalations.',
+        ),
+        a('f188734a', 'Elevated Tweet, DM, and media upload limits'),
+        a(
+          'c132c33a',
+          'Verified Organizations and their affiliates have significantly elevated Tweet, DM, and media upload rate limits.',
         ),
         a(
           'e39d052c',
@@ -7318,14 +7329,14 @@
         }),
         a('f765bead', function (e) {
           return 'unlabelled data, ' + e.group + ', ' + e.value
-        }),
-        a('idea1817', function (e) {
-          return e.label + ', ' + e.value
-        }),
+        })
+      a('idea1817', function (e) {
+        return e.label + ', ' + e.value
+      }),
         a('fe94be6b', function (e) {
           return 'unlabelled data, ' + e.value
-        })
-      a('a7cd5cf4', 'Video'),
+        }),
+        a('a7cd5cf4', 'Video'),
         a('b6eb8f6a', 'Broadcast'),
         a('dcc2b9b3', function (e) {
           return 'Play ' + e.locVideoType
