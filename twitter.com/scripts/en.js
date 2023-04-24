@@ -592,7 +592,6 @@
         a('a613e720', 'Copy link to GIF'),
         a('e3275464', 'Send'),
         a('ca0ce0e4', 'Start a new message'),
-        a('e08ec8ad', 'Learn more'),
         a('c3752568', 'Something went wrong. Try sending your message again in a minute.'),
         a('f78aa3ea', 'Some of your messages couldn’t be sent at this time. Please try again later.'),
         a('f9690dc0', 'Sorry! You cannot message this account.'),
@@ -604,7 +603,6 @@
         a('hf383be4', 'The account you are trying to messsage has been deleted.'),
         a('c4fdbd16', 'You cannot send messages to users that you have blocked.'),
         a('hf3e7e38', 'Your message could not be sent.'),
-        a('i8ecae5c', 'You can no longer send messages to this person.'),
         a('dd8272fd', function (e) {
           return e.count + ' new message' + n(e.count, '', 's')
         }),
@@ -788,8 +786,12 @@
         a('cf249089', function (e) {
           return 'Joined ' + e.joinDate
         }),
-        a('b3f20f26', 'Messages are secured with encryption. '),
-        a('j5da06bd', 'Learn more'),
+        a('f645f86f', 'Messages are secured with encryption.'),
+        a('f987d7bf', 'Learn more'),
+        a('aecbba54', 'You cannot send encrypted Direct Messages to this person.'),
+        a('hf992fa7', 'Learn more'),
+        a('h128df8b', 'You can no longer send messages to this person.'),
+        a('ed79b529', 'Learn more'),
         a('h52ca4c4', 'New messages'),
         a('ffde2fdc', 'Loading conversation'),
         a('da878dc0', 'Accept'),
@@ -1148,12 +1150,12 @@
         a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
+        })
+      a('e3a24e4c', 'Add another Tweet'),
+        a('i569ff3e', 'Show this thread'),
+        a('je5502eb', function (e) {
+          return 'Including results for "' + e.suggestion + '"'
         }),
-        a('e3a24e4c', 'Add another Tweet'),
-        a('i569ff3e', 'Show this thread')
-      a('je5502eb', function (e) {
-        return 'Including results for "' + e.suggestion + '"'
-      }),
         a('bc4628a1', function (e) {
           return 'Showing results for "' + e.suggestion + '"'
         }),
@@ -2350,13 +2352,13 @@
           'j148d18e',
           'The best Community Notes directly address the Tweet’s claim, are written in helpful and clear language, and add sources that a wide range of people would find reliable.',
         ),
-        a('f636b582', 'Help find notes that aren’t helpful'),
-        a(
-          'f58f4f62',
-          'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
-        ),
-        a('g97a2d6c', 'Learn More')
-      a('cf30af22', 'Did you know?'),
+        a('f636b582', 'Help find notes that aren’t helpful')
+      a(
+        'f58f4f62',
+        'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+      ),
+        a('g97a2d6c', 'Learn More'),
+        a('cf30af22', 'Did you know?'),
         a(
           'd145b0fa',
           'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -3612,10 +3614,10 @@
         a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
         a('g709f354', 'Control who mentions you in Tweets and replies.'),
         a('a18480f4', 'Allow others to mention you'),
-        a('d713ba94', 'People you block are never able to mention you.'),
-        a('a0c5ddb2', 'Anyone can mention you'),
-        a('e83386de', 'Only people you follow can mention you')
-      a('ea2a8236', 'Don’t allow others to mention you?'),
+        a('d713ba94', 'People you block are never able to mention you.')
+      a('a0c5ddb2', 'Anyone can mention you'),
+        a('e83386de', 'Only people you follow can mention you'),
+        a('ea2a8236', 'Don’t allow others to mention you?'),
         a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
         a('f5e59e90', 'Protect your Tweets'),
         a(
@@ -4827,10 +4829,10 @@
         a(
           'dfe973a6',
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
-        ),
-        a('ja884230', 'Set up your payout details'),
-        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.')
-      a('fe339750', 'Create Stripe account'),
+        )
+      a('ja884230', 'Set up your payout details'),
+        a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
+        a('fe339750', 'Create Stripe account'),
         a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
@@ -5013,6 +5015,7 @@
         a('i78153dd', function (e) {
           return 'You’ve put ' + e.name + ' on snooze forever'
         }),
+        a('je9455da', 'Messages are encrypted'),
         a('ac85c6b2', 'An error occurred loading this image'),
         a('b5b0afa4', 'Customize your view'),
         a('a8620342', 'These settings affect all the Twitter accounts on this browser.'),
@@ -6074,10 +6077,7 @@
             ' new engagement' +
             n(e.engagements, '', 's')
           )
-        }),
-        a('fbb5c37e', 'Boost again'),
-        a('dcfb0332', 'Promote your Tweet'),
-        a('c5c0b3bc', 'Boost your Tweet')
+        })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6097,15 +6097,18 @@
           c(e, t)
         )
       }
-      a('g6bf2fdb', function (e) {
-        return (
-          'Your Tweet has earned ' +
-          e.impressions +
-          ' impression' +
-          n(e.impressions, '', 's') +
-          ' so far. Switch to a professional account to broaden your reach.'
-        )
-      }),
+      a('fbb5c37e', 'Boost again'),
+        a('dcfb0332', 'Promote your Tweet'),
+        a('c5c0b3bc', 'Boost your Tweet'),
+        a('g6bf2fdb', function (e) {
+          return (
+            'Your Tweet has earned ' +
+            e.impressions +
+            ' impression' +
+            n(e.impressions, '', 's') +
+            ' so far. Switch to a professional account to broaden your reach.'
+          )
+        }),
         a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
         a('e9891f7c', 'Promote this Tweet'),
         a('df2ed8c2', 'Boost this Tweet'),
@@ -7308,30 +7311,30 @@
         a('affbaf62', 'More information'),
         a('c388d026', 'OK'),
         a('ha20397c', 'Accessibility features'),
-        a('baf7a43c', 'Accessibility'),
-        a('e8f674ab', function (e) {
-          return (
-            'This is a ' +
-            e.chartType +
-            ' bar chart. The title of the chart is ' +
-            e.chartTitle +
-            '. There are in total ' +
-            e.noOfCategories +
-            ' categories. The minimum value is ' +
-            e.minValue +
-            ' and the maximum value is ' +
-            e.maxValue +
-            '. Explore the chart using navigation controls.'
-          )
-        }),
+        a('baf7a43c', 'Accessibility')
+      a('e8f674ab', function (e) {
+        return (
+          'This is a ' +
+          e.chartType +
+          ' bar chart. The title of the chart is ' +
+          e.chartTitle +
+          '. There are in total ' +
+          e.noOfCategories +
+          ' categories. The minimum value is ' +
+          e.minValue +
+          ' and the maximum value is ' +
+          e.maxValue +
+          '. Explore the chart using navigation controls.'
+        )
+      }),
         a('d969327c', 'Play audio version'),
         a(
           'd8cbbcd4',
           'Play audio chart. Press to play audio version of the chart or press key "A" on each data point for their audio version',
-        )
-      a('dec1d7ef', function (e) {
-        return e.label + ', ' + e.group + ', ' + e.value
-      }),
+        ),
+        a('dec1d7ef', function (e) {
+          return e.label + ', ' + e.group + ', ' + e.value
+        }),
         a('f765bead', function (e) {
           return 'unlabelled data, ' + e.group + ', ' + e.value
         }),
@@ -8215,12 +8218,6 @@
               },
             },
             {
-              key: 'ea47241f',
-              get: function get() {
-                return ['You cannot send encrypted Direct Messages to this person. ']
-              },
-            },
-            {
               key: 'bff29c95',
               get: function get() {
                 return ['', ' changed the group photo']
@@ -8307,7 +8304,19 @@
               },
             },
             {
-              key: 'c430f75d',
+              key: 'a4b3acc5',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
+              key: 'j63ffbb9',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
+              key: 'f2a59691',
               get: function get() {
                 return ['', ' ']
               },
@@ -10079,6 +10088,12 @@
               key: 'd4b0b963',
               get: function get() {
                 return ['By tapping below, you agree to the ', '.']
+              },
+            },
+            {
+              key: 'c6dca173',
+              get: function get() {
+                return ['', ' ']
               },
             },
             {
