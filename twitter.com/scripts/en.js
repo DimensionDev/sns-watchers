@@ -6022,6 +6022,11 @@
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
         a('ee547382', 'Times people viewed the details about this Tweet'),
+        a('c5d4d3a8', 'Cost per follow'),
+        a(
+          'f56e24f2',
+          'Total spend divided by the number of followers, including earned. You only pay when someone follows you',
+        ),
         a('g33fd6b1', function (e) {
           return e.percentage + ' from promotion'
         }),
@@ -6072,17 +6077,7 @@
         }),
         a('fbb5c37e', 'Boost again'),
         a('dcfb0332', 'Promote your Tweet'),
-        a('c5c0b3bc', 'Boost your Tweet'),
-        a('g6bf2fdb', function (e) {
-          return (
-            'Your Tweet has earned ' +
-            e.impressions +
-            ' impression' +
-            n(e.impressions, '', 's') +
-            ' so far. Switch to a professional account to broaden your reach.'
-          )
-        }),
-        a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.')
+        a('c5c0b3bc', 'Boost your Tweet')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6102,7 +6097,17 @@
           c(e, t)
         )
       }
-      a('e9891f7c', 'Promote this Tweet'),
+      a('g6bf2fdb', function (e) {
+        return (
+          'Your Tweet has earned ' +
+          e.impressions +
+          ' impression' +
+          n(e.impressions, '', 's') +
+          ' so far. Switch to a professional account to broaden your reach.'
+        )
+      }),
+        a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
+        a('e9891f7c', 'Promote this Tweet'),
         a('df2ed8c2', 'Boost this Tweet'),
         a('jede3014', 'Your promotion is under review'),
         a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
@@ -7323,16 +7328,16 @@
         a(
           'd8cbbcd4',
           'Play audio chart. Press to play audio version of the chart or press key "A" on each data point for their audio version',
-        ),
-        a('dec1d7ef', function (e) {
-          return e.label + ', ' + e.group + ', ' + e.value
-        }),
+        )
+      a('dec1d7ef', function (e) {
+        return e.label + ', ' + e.group + ', ' + e.value
+      }),
         a('f765bead', function (e) {
           return 'unlabelled data, ' + e.group + ', ' + e.value
-        })
-      a('idea1817', function (e) {
-        return e.label + ', ' + e.value
-      }),
+        }),
+        a('idea1817', function (e) {
+          return e.label + ', ' + e.value
+        }),
         a('fe94be6b', function (e) {
           return 'unlabelled data, ' + e.value
         }),
