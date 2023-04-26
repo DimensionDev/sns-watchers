@@ -213,7 +213,7 @@
         a('ded416b0', 'Spaces'),
         a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
-        a('g2c0144a', 'Verified Organizations'),
+        a('e2eef3c2', 'Verified Orgs'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
         }),
@@ -786,12 +786,10 @@
         a('cf249089', function (e) {
           return 'Joined ' + e.joinDate
         }),
-        a('f645f86f', 'Messages are secured with encryption.'),
-        a('f987d7bf', 'Learn more'),
-        a('aecbba54', 'You cannot send encrypted Direct Messages to this person.'),
-        a('hf992fa7', 'Learn more'),
-        a('h128df8b', 'You can no longer send messages to this person.'),
-        a('ed79b529', 'Learn more'),
+        a('d7be7e4b', 'Learn more'),
+        a('bb0e37c3', 'Learn more'),
+        a('a89e8ab3', 'Learn more'),
+        a('d98540eb', 'Learn more'),
         a('h52ca4c4', 'New messages'),
         a('ffde2fdc', 'Loading conversation'),
         a('da878dc0', 'Accept'),
@@ -1150,12 +1148,12 @@
         a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
-        })
-      a('e3a24e4c', 'Add another Tweet'),
-        a('i569ff3e', 'Show this thread'),
-        a('je5502eb', function (e) {
-          return 'Including results for "' + e.suggestion + '"'
         }),
+        a('e3a24e4c', 'Add another Tweet'),
+        a('i569ff3e', 'Show this thread')
+      a('je5502eb', function (e) {
+        return 'Including results for "' + e.suggestion + '"'
+      }),
         a('bc4628a1', function (e) {
           return 'Showing results for "' + e.suggestion + '"'
         }),
@@ -2352,13 +2350,13 @@
           'j148d18e',
           'The best Community Notes directly address the Tweet’s claim, are written in helpful and clear language, and add sources that a wide range of people would find reliable.',
         ),
-        a('f636b582', 'Help find notes that aren’t helpful')
-      a(
-        'f58f4f62',
-        'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
-      ),
-        a('g97a2d6c', 'Learn More'),
-        a('cf30af22', 'Did you know?'),
+        a('f636b582', 'Help find notes that aren’t helpful'),
+        a(
+          'f58f4f62',
+          'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+        ),
+        a('g97a2d6c', 'Learn More')
+      a('cf30af22', 'Did you know?'),
         a(
           'd145b0fa',
           'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -3614,10 +3612,10 @@
         a('d0503770', 'Manage who can reply to your Tweets and your filtered replies.'),
         a('g709f354', 'Control who mentions you in Tweets and replies.'),
         a('a18480f4', 'Allow others to mention you'),
-        a('d713ba94', 'People you block are never able to mention you.')
-      a('a0c5ddb2', 'Anyone can mention you'),
-        a('e83386de', 'Only people you follow can mention you'),
-        a('ea2a8236', 'Don’t allow others to mention you?'),
+        a('d713ba94', 'People you block are never able to mention you.'),
+        a('a0c5ddb2', 'Anyone can mention you'),
+        a('e83386de', 'Only people you follow can mention you')
+      a('ea2a8236', 'Don’t allow others to mention you?'),
         a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
         a('f5e59e90', 'Protect your Tweets'),
         a(
@@ -4433,6 +4431,8 @@
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
+        a('f4bd606a', 'To cancel your complimentary subscription to Twitter Blue, contact support'),
+        a('fecebd4c', 'here'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
         a('fdc10b7e', 'Verified Organizations Subscriber'),
@@ -4441,7 +4441,6 @@
           'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
         a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
-        a('g5567e86', 'Existing Twitter Blue subscription'),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
@@ -4687,7 +4686,9 @@
         }),
         a('b747ce3a', 'Active in the past 30 days'),
         a('c27f57ac', 'Be at least 18 years old'),
+        a('gc13184a', 'Subscribe to Twitter Blue or Verified Organizations'),
         a('fde27650', 'Subscriptions Terms'),
+        a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a(
           'cedb182a',
           'Offer your favorite followers a little something extra and earn money each month. They’ll get access to a more personal experience with bonus content, and you can get paid for what you create. It’s a win-win.',
@@ -4715,6 +4716,8 @@
         a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
         a('acfa84f2', 'More features coming soon'),
         a('e28f2116', 'Stay tuned for more ways to create and share content with your Subscribers.'),
+        a('f489e650', 'Make a living on Twitter'),
+        a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
         a('aa7e35ee', 'Your account was not selected'),
         a('c984cc62', 'Your account wasn’t selected this time. Stay tuned for future opportunities to participate.'),
         a('f7997b16', 'Content categories'),
@@ -4823,14 +4826,14 @@
           return 'Most creators charge ' + e.price + ' but you can choose any price you want'
         }),
         a('e1453e45', 'Learn more'),
-        a('f1cb36b8', 'Payout setup'),
-        a('e20f6662', 'You’re all set!'),
+        a('f1cb36b8', 'Payout setup')
+      a('e20f6662', 'You’re all set!'),
         a('g88e146c', 'Your account is pending'),
         a(
           'dfe973a6',
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
-        )
-      a('ja884230', 'Set up your payout details'),
+        ),
+        a('ja884230', 'Set up your payout details'),
         a('b913b420', 'Add a verified Stripe account before getting started with Subscriptions.'),
         a('fe339750', 'Create Stripe account'),
         a('j912510a', 'Link Stripe account'),
@@ -6063,20 +6066,6 @@
         }),
         a('f42a198d', function (e) {
           return e.spentBudget + ' of ' + e.totalBudget + ' spent'
-        }),
-        a('a63a89fe', 'Your promotion is complete'),
-        a('b6da2126', 'Your boosted Tweet package has ended.'),
-        a('j401e4bd', function (e) {
-          return (
-            'This Tweet has earned ' +
-            e.impressions +
-            ' new impression' +
-            n(e.impressions, '', 's') +
-            ' and got ' +
-            e.engagements +
-            ' new engagement' +
-            n(e.engagements, '', 's')
-          )
         })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6097,7 +6086,21 @@
           c(e, t)
         )
       }
-      a('fbb5c37e', 'Boost again'),
+      a('a63a89fe', 'Your promotion is complete'),
+        a('b6da2126', 'Your boosted Tweet package has ended.'),
+        a('j401e4bd', function (e) {
+          return (
+            'This Tweet has earned ' +
+            e.impressions +
+            ' new impression' +
+            n(e.impressions, '', 's') +
+            ' and got ' +
+            e.engagements +
+            ' new engagement' +
+            n(e.engagements, '', 's')
+          )
+        }),
+        a('fbb5c37e', 'Boost again'),
         a('dcfb0332', 'Promote your Tweet'),
         a('c5c0b3bc', 'Boost your Tweet'),
         a('g6bf2fdb', function (e) {
@@ -6408,6 +6411,11 @@
         a('d1e5e328', 'When you do, it’ll show up here.'),
         a('h243711c', 'You haven’t created any Lists yet'),
         a('j177067a', 'Search Lists'),
+        a('g13ea02c', 'Try searching for lists'),
+        a('hc76e8cd', function (e) {
+          return 'No Lists matched "' + e.query + '"'
+        }),
+        a('d872881a', 'Why not create one?'),
         a('b69e2f71', function (e) {
           return '@' + e.screenName + ' hasn’t been added to any Lists'
         }),
@@ -6781,6 +6789,7 @@
         ),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
+        a('g2c0144a', 'Verified Organizations'),
         a('d1a35ec6', 'Add accounts'),
         a('f1f6c88b', function (e) {
           return 'Accounts (' + e.count + ')'
@@ -6876,8 +6885,8 @@
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
         a(
-          'g8fbe270',
-          'Verified Organizations is for organizations of all types–businesses, non-profits, and government institutions–to manage their verification,affiliate and verify any related account, and unlock new features.',
+          'f565c0f4',
+          'Verified Organizations is for organizations of all types–businesses, non-profits, and government institutions–to manage their verification, affiliate and verify any related account, and unlock new features.',
         ),
         a('da4ad6b2', 'Verification management'),
         a(
@@ -7304,29 +7313,29 @@
         a('da539d38', 'Search results'),
         a('d95eb228', 'Back'),
         a('af8fa2ae', 'Close'),
-        a('ef8b2f54', 'Read the chart'),
-        a('d567ceda', 'vertical'),
+        a('ef8b2f54', 'Read the chart')
+      a('d567ceda', 'vertical'),
         a('f7b30768', 'stacked'),
         a('hcd54328', 'grouped'),
         a('affbaf62', 'More information'),
         a('c388d026', 'OK'),
         a('ha20397c', 'Accessibility features'),
-        a('baf7a43c', 'Accessibility')
-      a('e8f674ab', function (e) {
-        return (
-          'This is a ' +
-          e.chartType +
-          ' bar chart. The title of the chart is ' +
-          e.chartTitle +
-          '. There are in total ' +
-          e.noOfCategories +
-          ' categories. The minimum value is ' +
-          e.minValue +
-          ' and the maximum value is ' +
-          e.maxValue +
-          '. Explore the chart using navigation controls.'
-        )
-      }),
+        a('baf7a43c', 'Accessibility'),
+        a('e8f674ab', function (e) {
+          return (
+            'This is a ' +
+            e.chartType +
+            ' bar chart. The title of the chart is ' +
+            e.chartTitle +
+            '. There are in total ' +
+            e.noOfCategories +
+            ' categories. The minimum value is ' +
+            e.minValue +
+            ' and the maximum value is ' +
+            e.maxValue +
+            '. Explore the chart using navigation controls.'
+          )
+        }),
         a('d969327c', 'Play audio version'),
         a(
           'd8cbbcd4',
@@ -8304,21 +8313,29 @@
               },
             },
             {
-              key: 'a4b3acc5',
+              key: 'fc6d711d',
               get: function get() {
-                return ['', ' ']
+                return ['Messages are secured with encryption. ']
               },
             },
             {
-              key: 'j63ffbb9',
+              key: 'af0bb3eb',
               get: function get() {
-                return ['', ' ']
+                return ['You cannot send encrypted Direct Messages to this person. ']
               },
             },
             {
-              key: 'f2a59691',
+              key: 'b9f61623',
               get: function get() {
-                return ['', ' ']
+                return ['You can no longer send messages to this person. ']
+              },
+            },
+            {
+              key: 'h27b1291',
+              get: function get() {
+                return [
+                  'This encrypted conversation is not accessible from your current device. To access it, please log in from your previous device. ',
+                ]
               },
             },
             {
