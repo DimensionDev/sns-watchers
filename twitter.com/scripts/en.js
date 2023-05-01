@@ -835,7 +835,6 @@
           return 'Timeline: ' + e.title
         }),
         a('h845f282', 'Direct Message'),
-        a('d7ad7414', 'Message not available'),
         a('ga086a54', 'Image attachment'),
         a('a9cc8cfe', 'Sent a GIF'),
         a('eb3d722e', 'You sent a GIF'),
@@ -1150,11 +1149,11 @@
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
         }),
-        a('e3a24e4c', 'Add another Tweet')
-      a('i569ff3e', 'Show this thread'),
-        a('je5502eb', function (e) {
-          return 'Including results for "' + e.suggestion + '"'
-        }),
+        a('e3a24e4c', 'Add another Tweet'),
+        a('i569ff3e', 'Show this thread')
+      a('je5502eb', function (e) {
+        return 'Including results for "' + e.suggestion + '"'
+      }),
         a('bc4628a1', function (e) {
           return 'Showing results for "' + e.suggestion + '"'
         }),
@@ -2355,9 +2354,9 @@
         a(
           'f58f4f62',
           'Rating low quality notes improves Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
-        )
-      a('g97a2d6c', 'Learn More'),
-        a('cf30af22', 'Did you know?'),
+        ),
+        a('g97a2d6c', 'Learn More')
+      a('cf30af22', 'Did you know?'),
         a(
           'd145b0fa',
           'Note statuses aren’t reached by majority rule. To identify notes that are helpful to a wide range of people, note statuses require agreement between contributors who have sometimes disagreed in their past ratings. This helps prevent one-sided ratings.',
@@ -3614,9 +3613,9 @@
         a('g709f354', 'Control who mentions you in Tweets and replies.'),
         a('a18480f4', 'Allow others to mention you'),
         a('d713ba94', 'People you block are never able to mention you.'),
-        a('a0c5ddb2', 'Anyone can mention you')
-      a('e83386de', 'Only people you follow can mention you'),
-        a('ea2a8236', 'Don’t allow others to mention you?'),
+        a('a0c5ddb2', 'Anyone can mention you'),
+        a('e83386de', 'Only people you follow can mention you')
+      a('ea2a8236', 'Don’t allow others to mention you?'),
         a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
         a('f5e59e90', 'Protect your Tweets'),
         a(
@@ -4719,13 +4718,6 @@
         a('e28f2116', 'Stay tuned for more ways to create and share content with your Subscribers.'),
         a('f489e650', 'Make a living on Twitter'),
         a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
-        a('ea8a3d2e', 'Pricing setup'),
-        a('df057690', 'Choose what your Subscribers pay'),
-        a('f2d2153d', function (e) {
-          return 'Most creators charge ' + e.price + ' but you can choose any price you want'
-        }),
-        a('d5737f0e', 'Monthly Subscription'),
-        a('e1453e45', 'Learn more'),
         a('aa7e35ee', 'Your account was not selected'),
         a('c984cc62', 'Your account wasn’t selected this time. Stay tuned for future opportunities to participate.'),
         a('f7997b16', 'Content categories'),
@@ -4810,6 +4802,7 @@
         a('e18b7a72', 'Review'),
         a('be76dc34', 'Add description'),
         a('ef5406e4', 'Add introduction'),
+        a('ea8a3d2e', 'Pricing setup'),
         a('f77bb179', function (e) {
           return 'Confirm your ' + e.price + ' selection'
         }),
@@ -4818,6 +4811,8 @@
           'Double-check and confirm your Subscription price. You won’t be able to come back and change the price after you set it.',
         ),
         a('g767d1c9', 'Note: you won’t be able to change it'),
+        a('df057690', 'Choose what your Subscribers pay'),
+        a('d5737f0e', 'Monthly Subscription'),
         a('g5923869', function (e) {
           return e.price + ' per month'
         }),
@@ -4826,9 +4821,13 @@
         a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
         a('c246656e', 'Build an intimate base'),
-        a('h0c5405c', 'Regular posting and interacting with Subscribers')
-      a('f1cb36b8', 'Payout setup'),
-        a('e20f6662', 'You’re all set!'),
+        a('h0c5405c', 'Regular posting and interacting with Subscribers'),
+        a('f2d2153d', function (e) {
+          return 'Most creators charge ' + e.price + ' but you can choose any price you want'
+        }),
+        a('e1453e45', 'Learn more'),
+        a('f1cb36b8', 'Payout setup')
+      a('e20f6662', 'You’re all set!'),
         a('g88e146c', 'Your account is pending'),
         a(
           'dfe973a6',
@@ -6064,6 +6063,9 @@
         a('j6daea86', 'Your promotion is paused'),
         a('hf9ed10f', function (e) {
           return e.endTimeString + ' · ' + e.endDateString
+        }),
+        a('f42a198d', function (e) {
+          return e.spentBudget + ' of ' + e.totalBudget + ' spent'
         })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -6084,10 +6086,7 @@
           c(e, t)
         )
       }
-      a('f42a198d', function (e) {
-        return e.spentBudget + ' of ' + e.totalBudget + ' spent'
-      }),
-        a('a63a89fe', 'Your promotion is complete'),
+      a('a63a89fe', 'Your promotion is complete'),
         a('b6da2126', 'Your boosted Tweet package has ended.'),
         a('j401e4bd', function (e) {
           return (
@@ -7313,9 +7312,9 @@
         a('j7c67eca', 'Recent'),
         a('da539d38', 'Search results'),
         a('d95eb228', 'Back'),
-        a('af8fa2ae', 'Close')
-      a('ef8b2f54', 'Read the chart'),
-        a('d567ceda', 'vertical'),
+        a('af8fa2ae', 'Close'),
+        a('ef8b2f54', 'Read the chart')
+      a('d567ceda', 'vertical'),
         a('f7b30768', 'stacked'),
         a('hcd54328', 'grouped'),
         a('affbaf62', 'More information'),
@@ -10072,14 +10071,6 @@
               },
             },
             {
-              key: 'geee69df',
-              get: function get() {
-                return [
-                  'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
-                ]
-              },
-            },
-            {
               key: 'fdf28443',
               get: function get() {
                 return ['By selecting to accept and continue, you agree to be bound by the ']
@@ -10091,6 +10082,14 @@
                 return [
                   'Double-check and confirm your Subscription price. ',
                   ' while Subscriptions is in testing period.',
+                ]
+              },
+            },
+            {
+              key: 'geee69df',
+              get: function get() {
+                return [
+                  'Pick a monthly price that makes sense for you and your audience. Wondering what you can earn? ',
                 ]
               },
             },
