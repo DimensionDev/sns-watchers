@@ -6487,8 +6487,11 @@
           return 'Notes' + e.longform_notes
         }),
         a('c0d13570', 'Affiliates'),
+        a('af0b60f6', 'Want to feature your Tweets?'),
+        a('d2cb8238', 'Highlights let you feature your Tweets on your profile.'),
         a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
         a('ieef7656', 'Take a look'),
+        a('ede6a7ea', 'Subscribe to Twitter Blue'),
         a('abb13fc9', function (e) {
           return 'About @' + e.screenName
         }),
@@ -7315,8 +7318,8 @@
         a(
           'g9c2dec8',
           'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
-        ),
-        a('a138aeb2', 'JavaScript is not available.'),
+        )
+      a('a138aeb2', 'JavaScript is not available.'),
         a(
           'ddf1d67c',
           'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
@@ -7324,8 +7327,8 @@
         a(
           'f1a9e3a2',
           'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
-        )
-      a('ed617674', '360'),
+        ),
+        a('ed617674', '360'),
         a('bff6789c', 'Tweet'),
         a('e23b20a0', 'Cancel'),
         a('a620fcf0', 'Loading image'),
