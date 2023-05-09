@@ -208,6 +208,7 @@
         a('i5aa4ce0', 'More menu items'),
         a('b0041756', 'Lists'),
         a('ded416b0', 'Spaces'),
+        a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
         a('e2eef3c2', 'Verified Orgs'),
         a('d86bbf0f', function (e) {
@@ -271,7 +272,6 @@
         a('ca058b68', 'Some of your media failed to load.'),
         a('id24379c', 'Some of your media failed to upload.'),
         a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
-        a('b7fa0cfe', 'Top Articles'),
         a('de43eaf2', 'Undo Tweet'),
         a('f6e88162', 'Labs'),
         a(
