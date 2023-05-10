@@ -2116,6 +2116,11 @@
         a('f0addddc', 'Be helpful, even to those who disagree'),
         a('h7c7b204', 'Help rate existing notes before writing a new one'),
         a('i8cae552', 'By rating you’ll help keep quality in Community Notes high.'),
+        a('hd43a218', 'You’ve reached your daily limit for writing notes'),
+        a(
+          'aaba8ed2',
+          'To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later.',
+        ),
         a('a9f4ca9c', 'Community Notes contributors can now see your note'),
         a('eb8f7c0c', 'Other contributors can now rate your note'),
         a('h87c6bd6', 'Other contributors can now see your note'),
@@ -2343,10 +2348,10 @@
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
         a('d68a370c', 'Last update: '),
-        a('b9793c9a', 'You haven’t written any notes yet'),
-        a('bed66f92', 'Here’s how to start:'),
-        a('a3ca686a', 'See tips for writing helpful notes')
-      a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
+        a('b9793c9a', 'You haven’t written any notes yet')
+      a('bed66f92', 'Here’s how to start:'),
+        a('a3ca686a', 'See tips for writing helpful notes'),
+        a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
@@ -3611,13 +3616,13 @@
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
         ),
-        a('h3909cd0', 'Inferred identity'),
-        a(
-          'e9f48aee',
-          'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-        ),
-        a('h14ba864', 'Data sharing with business partners')
-      a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
+        a('h3909cd0', 'Inferred identity')
+      a(
+        'e9f48aee',
+        'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
+      ),
+        a('h14ba864', 'Data sharing with business partners'),
+        a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
         a('cdcef7b6', 'Learn more about privacy on Twitter'),
@@ -4817,10 +4822,10 @@
         a('f4619a62', 'Accept and continue'),
         a('c5625f84', 'Describe your Subscription perks'),
         a('c7289544', 'Set a Subscription price'),
-        a('aaf68c58', 'Confirm your payout details'),
-        a('b8a69fa0', 'Subscriptions Terms'),
-        a('ad4a92a2', 'Badge')
-      a('d5aa8de0', 'Give your Subscribers badges'),
+        a('aaf68c58', 'Confirm your payout details')
+      a('b8a69fa0', 'Subscriptions Terms'),
+        a('ad4a92a2', 'Badge'),
+        a('d5aa8de0', 'Give your Subscribers badges'),
         a(
           'j0bbda92',
           'Nothing to change or edit here. All of your Subscribers will automatically get a public badge when they Subscribe.',
@@ -6046,9 +6051,7 @@
           'e044b630',
           'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
         ),
-        a('d8abdaa4', 'New followers'),
-        a('de0de3a8', 'Follows gained directly from this Tweet'),
-        a('ccab7c76', 'Number of profile views from this Tweet')
+        a('d8abdaa4', 'New followers')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6068,7 +6071,9 @@
           c(e, t)
         )
       }
-      a('d24b7812', 'Number of clicks on any URL in this Tweet'),
+      a('de0de3a8', 'Follows gained directly from this Tweet'),
+        a('ccab7c76', 'Number of profile views from this Tweet'),
+        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
         a('ee547382', 'Times people viewed the details about this Tweet'),
         a('c5d4d3a8', 'Cost per follow'),
@@ -7313,13 +7318,13 @@
         a('d62779e6', 'Your data associated with the new TweetDeck will be deleted.'),
         a('f9d3586e', 'This won’t impact your Twitter profile and previous TweetDeck data.'),
         a('i6fae1b4', 'Exit and delete'),
-        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
-        a('h85446ce', 'This browser is no longer supported.'),
+        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter')
+      a('h85446ce', 'This browser is no longer supported.'),
         a(
           'g9c2dec8',
           'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
-        )
-      a('a138aeb2', 'JavaScript is not available.'),
+        ),
+        a('a138aeb2', 'JavaScript is not available.'),
         a(
           'ddf1d67c',
           'We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
