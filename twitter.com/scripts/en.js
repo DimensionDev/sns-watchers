@@ -1572,6 +1572,12 @@
         a('de4669e2', 'Add a comment'),
         a('d2c7a41c', 'Tweet your reply'),
         a('f7364fa2', 'Ask a question...'),
+        a('f8e5bf52', 'What is happening?!'),
+        a('b1695ed6', 'Add another Tweet!'),
+        a('ad7cb5ba', 'Add another Reply!'),
+        a('f1352c90', 'Add a comment!'),
+        a('ad993b0e', 'Tweet your reply!'),
+        a('g1fb138a', 'Ask a question!'),
         a('e815fc34', 'Choose audience'),
         a('d52a1caa', 'Subscribers'),
         a('d0748dae', 'Twitter Circle'),
@@ -2336,11 +2342,11 @@
         ),
         a('b03274d2', 'These notes get shown on Twitter, adding context to Tweets and helping keep people informed.'),
         a('iab44364', 'Your notes that reached the status of Not Helpful'),
-        a('d8c90438', 'Notes that reached the status of Not Helpful'),
-        a(
-          'accaa48e',
-          'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
-        ),
+        a('d8c90438', 'Notes that reached the status of Not Helpful')
+      a(
+        'accaa48e',
+        'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
+      ),
         a(
           'fa2156f6',
           'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings.\nNote statuses can change as more people rate them.',
@@ -2348,8 +2354,8 @@
         a('d004c768', 'Notes that need more ratings'),
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
-        a('d68a370c', 'Last update: ')
-      a('b9793c9a', 'You haven’t written any notes yet'),
+        a('d68a370c', 'Last update: '),
+        a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
@@ -3607,8 +3613,8 @@
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
         a('d3d319d6', 'Data sharing and off-Twitter activity'),
-        a('i83cab8a', 'Data sharing and personalization'),
-        a('d035a8d0', 'Ads preferences'),
+        a('i83cab8a', 'Data sharing and personalization')
+      a('d035a8d0', 'Ads preferences'),
         a('f9ff2202', 'Manage your ads experience on Twitter.'),
         a('d0b74a5a', 'Cookie preferences'),
         a('gd4302ec', 'Manage your cookie experience on Twitter.'),
@@ -3616,8 +3622,8 @@
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
-        )
-      a('h3909cd0', 'Inferred identity'),
+        ),
+        a('h3909cd0', 'Inferred identity'),
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
@@ -4799,7 +4805,7 @@
         a('ede0ac3e', 'Planned usage'),
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
-        a('bd5d8c71', 'You won’t be able to change it'),
+        a('eb4bf9a1', 'you won’t be able to change it later.'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
@@ -4813,17 +4819,17 @@
           'j006be54',
           'Our Subscriptions test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
         ),
-        a('d5cb1114', 'Get started with Subscriptions'),
-        a(
-          'j2f622ec',
-          'You’ve been selected for our test group! Set up your Subscription details now and we’ll let you know when it’s live.',
-        ),
+        a('d5cb1114', 'Get started with Subscriptions')
+      a(
+        'j2f622ec',
+        'You’ve been selected for our test group! Set up your Subscription details now and we’ll let you know when it’s live.',
+      ),
         a('e2cd7000', 'Almost there...'),
         a('b3629b92', 'Just a few more steps to finish setting up your Subscription.'),
         a('f4619a62', 'Accept and continue'),
         a('c5625f84', 'Describe your Subscription perks'),
-        a('c7289544', 'Set a Subscription price')
-      a('aaf68c58', 'Confirm your payout details'),
+        a('c7289544', 'Set a Subscription price'),
+        a('aaf68c58', 'Confirm your payout details'),
         a('b8a69fa0', 'Subscriptions Terms'),
         a('ad4a92a2', 'Badge'),
         a('d5aa8de0', 'Give your Subscribers badges'),
@@ -6042,16 +6048,7 @@
         a('gf672f7c', '35-44'),
         a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
-        a('bcd9cf68', 'Above 65'),
-        a('a3c544e8', 'Top countries'),
-        a('f05f1838', 'Other / Not specified'),
-        a('fa5be588', 'Organic'),
-        a('f6162a32', 'Times this Tweet was seen on Twitter'),
-        a('dbe9353e', 'Engagements'),
-        a(
-          'e044b630',
-          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        )
+        a('bcd9cf68', 'Above 65')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6071,7 +6068,16 @@
           c(e, t)
         )
       }
-      a('d8abdaa4', 'New followers'),
+      a('a3c544e8', 'Top countries'),
+        a('f05f1838', 'Other / Not specified'),
+        a('fa5be588', 'Organic'),
+        a('f6162a32', 'Times this Tweet was seen on Twitter'),
+        a('dbe9353e', 'Engagements'),
+        a(
+          'e044b630',
+          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
+        ),
+        a('d8abdaa4', 'New followers'),
         a('de0de3a8', 'Follows gained directly from this Tweet'),
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
@@ -6638,6 +6644,9 @@
         }),
         a('fd0772eb', function (e) {
           return 'Loading Affiliates of @' + e.screenName
+        }),
+        a('ccf03833', function (e) {
+          return 'Affiliates of ' + e.fullName
         }),
         a('f30795d0', 'Opens profile photo'),
         a('a270100c', 'Opens NFT details'),
@@ -7311,15 +7320,15 @@
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
-        a('a79ba0aa', 'Leave the new TweetDeck?'),
-        a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
+        a('a79ba0aa', 'Leave the new TweetDeck?')
+      a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
         a('c09eafdc', 'Yes, exit'),
         a('dcd40a08', 'Cancel and stay'),
         a('e5988702', 'Exit and opt-out of the new TweetDeck'),
         a('d62779e6', 'Your data associated with the new TweetDeck will be deleted.'),
         a('f9d3586e', 'This won’t impact your Twitter profile and previous TweetDeck data.'),
-        a('i6fae1b4', 'Exit and delete')
-      a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
+        a('i6fae1b4', 'Exit and delete'),
+        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
           'g9c2dec8',
@@ -7826,7 +7835,7 @@
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('a77a27c0', 'Subscribed'),
-        a('i00ab5ba', 'Manage Subscription'),
+        a('b4397192', 'Manage'),
         a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
@@ -10128,12 +10137,9 @@
               },
             },
             {
-              key: 'e552fe97',
+              key: 'g313be81',
               get: function get() {
-                return [
-                  'Double-check and confirm your Subscription price is ' + this.props.price + '. ',
-                  ' while Subscriptions is in testing period.',
-                ]
+                return ['Double-check and confirm your Subscription price is ' + this.props.price + ', ']
               },
             },
             {
