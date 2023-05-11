@@ -535,6 +535,7 @@
         a('ee230734', 'Show more options'),
         a('ic8c615e', 'Choose and send a quick reply option'),
         a('a04077c4', 'Please choose 1 photo, video or GIF.'),
+        a('c07367d8', 'Media is currently not supported for Encrypted Messages'),
         a('d4a4842e', 'Add emoji'),
         a('fec16c1c', 'Emoji'),
         a('a4993fa2', 'Add a GIF'),
@@ -1149,9 +1150,9 @@
         a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
-        }),
-        a('e3a24e4c', 'Add another Tweet')
-      a('i569ff3e', 'Show this thread'),
+        })
+      a('e3a24e4c', 'Add another Tweet'),
+        a('i569ff3e', 'Show this thread'),
         a('je5502eb', function (e) {
           return 'Including results for "' + e.suggestion + '"'
         }),
@@ -1681,8 +1682,8 @@
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
-        a('fe064a3f', function (e) {
-          return e.audienceLow + ' - ' + e.audienceHigh + ' people per day'
+        a('hd435bf1', function (e) {
+          return e.audienceLow + ' - ' + e.audienceHigh + ' people'
         }),
         a('b2e94283', function (e) {
           return 'via @' + e.viaScreenName
@@ -2347,9 +2348,9 @@
         a('d004c768', 'Notes that need more ratings'),
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('b2ec74fe', 'close'),
-        a('d68a370c', 'Last update: '),
-        a('b9793c9a', 'You haven’t written any notes yet')
-      a('bed66f92', 'Here’s how to start:'),
+        a('d68a370c', 'Last update: ')
+      a('b9793c9a', 'You haven’t written any notes yet'),
+        a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
         a('a995c2fe', 'Tap the ••• menu on any Tweet to write a note'),
         a(
@@ -3615,12 +3616,12 @@
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
+        )
+      a('h3909cd0', 'Inferred identity'),
+        a(
+          'e9f48aee',
+          'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
         ),
-        a('h3909cd0', 'Inferred identity')
-      a(
-        'e9f48aee',
-        'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
-      ),
         a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
         a('jabb9c9a', 'Location information'),
@@ -4821,9 +4822,9 @@
         a('b3629b92', 'Just a few more steps to finish setting up your Subscription.'),
         a('f4619a62', 'Accept and continue'),
         a('c5625f84', 'Describe your Subscription perks'),
-        a('c7289544', 'Set a Subscription price'),
-        a('aaf68c58', 'Confirm your payout details')
-      a('b8a69fa0', 'Subscriptions Terms'),
+        a('c7289544', 'Set a Subscription price')
+      a('aaf68c58', 'Confirm your payout details'),
+        a('b8a69fa0', 'Subscriptions Terms'),
         a('ad4a92a2', 'Badge'),
         a('d5aa8de0', 'Give your Subscribers badges'),
         a(
@@ -6050,8 +6051,7 @@
         a(
           'e044b630',
           'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        ),
-        a('d8abdaa4', 'New followers')
+        )
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6071,7 +6071,8 @@
           c(e, t)
         )
       }
-      a('de0de3a8', 'Follows gained directly from this Tweet'),
+      a('d8abdaa4', 'New followers'),
+        a('de0de3a8', 'Follows gained directly from this Tweet'),
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
@@ -7317,9 +7318,9 @@
         a('e5988702', 'Exit and opt-out of the new TweetDeck'),
         a('d62779e6', 'Your data associated with the new TweetDeck will be deleted.'),
         a('f9d3586e', 'This won’t impact your Twitter profile and previous TweetDeck data.'),
-        a('i6fae1b4', 'Exit and delete'),
-        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter')
-      a('h85446ce', 'This browser is no longer supported.'),
+        a('i6fae1b4', 'Exit and delete')
+      a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
+        a('h85446ce', 'This browser is no longer supported.'),
         a(
           'g9c2dec8',
           'Please switch to a supported browser to continue using twitter.com. You can see a list of supported browsers in our Help Center.',
