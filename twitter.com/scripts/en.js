@@ -7422,9 +7422,6 @@
         a('h1888a33', function (e) {
           return e.viewerCount + ' viewer' + n(e.viewerCount, '', 's')
         }),
-        a('c58b2ab7', function (e) {
-          return e.viewCount + ' view' + n(e.viewCount, '', 's')
-        }),
         a('b4f19b97', function (e) {
           return e.listItem1 + ' and ' + e.listItem2
         }),
