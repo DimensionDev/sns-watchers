@@ -1645,6 +1645,14 @@
           'ee016dd6',
           'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
         ),
+        a('daad8822', 'Upload Failed'),
+        a('i8ff6261', function (e) {
+          return (
+            'Looks like this video exceeds the maximum file size that can be uploaded (' +
+            e.human_readable_max_size +
+            'GB).'
+          )
+        }),
         a('b2c961a6', 'Deliver in 1080p to viewers on Twitter'),
         a('ef8f5d90', 'Recommended'),
         a('a7046fb0', 'Rarely needed'),
@@ -1685,6 +1693,7 @@
         a('f11264ac', 'Add payment method'),
         a('e7719126', 'Tweet with Boost'),
         a('c5c0b3bc', 'Boost your Tweet'),
+        a('fb35ac8f', 'Twitter Ads Terms and Conditions.'),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
@@ -1909,14 +1918,9 @@
         a('c1d15dc0', 'It looks like this Space has been closed.'),
         a('e7c45f34', 'Join this Space'),
         a('e51df2e6', 'Your mic will be off to start'),
-        a('d2790650', 'Super Following has its perks'),
-        a('e483a6cb', function (e) {
-          return (
-            'One of the perks of being a Subscriber is exclusive access to Spaces like this one. Only @' +
-            e.screenName +
-            '’s Subscribers can join this Space.'
-          )
-        }),
+        a('d782b808', 'Subscribing has its perks'),
+        a('ab0decc0', 'Subscribe'),
+        a('i7f83b8d', 'Learn more'),
         a('f5774e3a', 'Spaces Discovery'),
         a('fc962610', 'Search for the name of a Space or Host'),
         a('e5b5f091', function (e) {
@@ -2335,18 +2339,18 @@
         a(
           'ad7019ea',
           'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
-        ),
-        a(
-          'edacdd3a',
-          'These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
-        ),
+        )
+      a(
+        'edacdd3a',
+        'These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
+      ),
         a('b03274d2', 'These notes get shown on Twitter, adding context to Tweets and helping keep people informed.'),
         a('iab44364', 'Your notes that reached the status of Not Helpful'),
-        a('d8c90438', 'Notes that reached the status of Not Helpful')
-      a(
-        'accaa48e',
-        'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
-      ),
+        a('d8c90438', 'Notes that reached the status of Not Helpful'),
+        a(
+          'accaa48e',
+          'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
+        ),
         a(
           'fa2156f6',
           'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings.\nNote statuses can change as more people rate them.',
@@ -3609,12 +3613,12 @@
         a('cbd449a0', 'Mute and block'),
         a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
         a('cc950d94', 'Manage who can message you directly.'),
-        a('fe37f854', 'Manage who can see your Spaces listening activity'),
-        a('fd4d9068', 'Discoverability and contacts'),
+        a('fe37f854', 'Manage who can see your Spaces listening activity')
+      a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
         a('d3d319d6', 'Data sharing and off-Twitter activity'),
-        a('i83cab8a', 'Data sharing and personalization')
-      a('d035a8d0', 'Ads preferences'),
+        a('i83cab8a', 'Data sharing and personalization'),
+        a('d035a8d0', 'Ads preferences'),
         a('f9ff2202', 'Manage your ads experience on Twitter.'),
         a('d0b74a5a', 'Cookie preferences'),
         a('gd4302ec', 'Manage your cookie experience on Twitter.'),
@@ -4809,21 +4813,21 @@
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
-        a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
-        a(
-          'cb27c0ba',
-          'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
-        ),
+        a('c53e912a', 'Keep an eye out for an email with an update on your application status.')
+      a(
+        'cb27c0ba',
+        'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
+      ),
         a('j274e6aa', 'You’re on the waitlist'),
         a(
           'j006be54',
           'Our Subscriptions test group filled up fast, but we’ve added you to the waitlist and will let you know when more spots open.',
         ),
-        a('d5cb1114', 'Get started with Subscriptions')
-      a(
-        'j2f622ec',
-        'You’ve been selected for our test group! Set up your Subscription details now and we’ll let you know when it’s live.',
-      ),
+        a('d5cb1114', 'Get started with Subscriptions'),
+        a(
+          'j2f622ec',
+          'You’ve been selected for our test group! Set up your Subscription details now and we’ll let you know when it’s live.',
+        ),
         a('e2cd7000', 'Almost there...'),
         a('b3629b92', 'Just a few more steps to finish setting up your Subscription.'),
         a('f4619a62', 'Accept and continue'),
@@ -6044,11 +6048,7 @@
         a('ada329e6', '40-49'),
         a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54'),
-        a('ja78da94', '55-64'),
-        a('bcd9cf68', 'Above 65')
+        a('cf30cdfa', '25-34')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6068,7 +6068,11 @@
           c(e, t)
         )
       }
-      a('a3c544e8', 'Top countries'),
+      a('gf672f7c', '35-44'),
+        a('jf28b41c', '45-54'),
+        a('ja78da94', '55-64'),
+        a('bcd9cf68', 'Above 65'),
+        a('a3c544e8', 'Top countries'),
         a('f05f1838', 'Other / Not specified'),
         a('fa5be588', 'Organic'),
         a('f6162a32', 'Times this Tweet was seen on Twitter'),
@@ -6434,6 +6438,12 @@
         a('d8315ca0', 'Lists you’re on'),
         a('e74be9ac', 'Lists they’re on'),
         a('c80cb4e4', 'New List'),
+        a('j177067a', 'Search Lists'),
+        a('g13ea02c', 'Try searching for lists'),
+        a('hc76e8cd', function (e) {
+          return 'No Lists matched "' + e.query + '"'
+        }),
+        a('d872881a', 'Why not create one?'),
         a('bbcaa24b', function (e) {
           return 'Lists created by @' + e.screenName
         }),
@@ -6444,12 +6454,6 @@
         a('f5978664', 'When they do, they’ll show up here.'),
         a('d1e5e328', 'When you do, it’ll show up here.'),
         a('h243711c', 'You haven’t created any Lists yet'),
-        a('j177067a', 'Search Lists'),
-        a('g13ea02c', 'Try searching for lists'),
-        a('hc76e8cd', function (e) {
-          return 'No Lists matched "' + e.query + '"'
-        }),
-        a('d872881a', 'Why not create one?'),
         a('b69e2f71', function (e) {
           return '@' + e.screenName + ' hasn’t been added to any Lists'
         }),
@@ -7316,12 +7320,12 @@
         a('je4a847f', function (e) {
           return 'Pin Deck "' + e.title + '"'
         }),
-        a('fe5df266', 'Make Column private?'),
-        a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
+        a('fe5df266', 'Make Column private?')
+      a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
-        a('a79ba0aa', 'Leave the new TweetDeck?')
-      a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
+        a('a79ba0aa', 'Leave the new TweetDeck?'),
+        a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
         a('c09eafdc', 'Yes, exit'),
         a('dcd40a08', 'Cancel and stay'),
         a('e5988702', 'Exit and opt-out of the new TweetDeck'),
@@ -7764,7 +7768,7 @@
         a('f956070a', 'It was hidden by the mods for breaking Community rules.'),
         a('jd773100', 'When members are removed, their Tweets are hidden from the rest of the Community.'),
         a('dbf97380', 'Who can see this Tweet?'),
-        a('j9db991a', 'You and your Subscribers can see this Tweet'),
+        a('bd414b44', 'Exclusive to your Subscribers'),
         a('aabc5339', function (e) {
           return '@' + e.screenName + ' and their Subscribers can see your Tweet'
         }),
@@ -8878,6 +8882,12 @@
               },
             },
             {
+              key: 'd7ffd6d9',
+              get: function get() {
+                return ['By clicking Tweet with Boost you’re agreeing to the ']
+              },
+            },
+            {
               key: 'e34022a7',
               get: function get() {
                 return ['Replying to ']
@@ -9039,6 +9049,17 @@
               key: 'ad960f39',
               get: function get() {
                 return ['', ' is listening']
+              },
+            },
+            {
+              key: 'fafd5f6f',
+              get: function get() {
+                return [
+                  'One of the perks of being a Subscriber is exclusive access to Spaces like this one. Only @' +
+                    this.props.screenName +
+                    '’s Subscribers can join this Space. ',
+                  '.',
+                ]
               },
             },
             {
