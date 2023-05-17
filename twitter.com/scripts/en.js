@@ -635,6 +635,9 @@
         a('fe09fde2', 'Change settings'),
         a('b327c12a', 'Image'),
         a('c55eed72', 'Replying to'),
+        a('d99de549', function (e) {
+          return 'Replying to ' + e.name
+        }),
         a('f5a07f7c', 'Attachment'),
         a('fd079470', 'This is spam'),
         a('c7a92dca', 'Message OK'),
@@ -1145,11 +1148,11 @@
         }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
-        }),
-        a('i77347d1', function (e) {
-          return 'Dismiss ' + e.topicName + ' Topic'
         })
-      a('d69b2d90', 'You’re not interested in this Topic.'),
+      a('i77347d1', function (e) {
+        return 'Dismiss ' + e.topicName + ' Topic'
+      }),
+        a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
         }),
@@ -2335,12 +2338,12 @@
         a('fc664dee', 'Ratings made after a status was reached'),
         a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
         a('e1ee08e6', 'Writing impact'),
-        a('je3fc324', 'Your notes that earned the status of Helpful'),
-        a('f7358242', 'Notes that earned the status of Helpful')
-      a(
-        'ad7019ea',
-        'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
-      ),
+        a('je3fc324', 'Your notes that earned the status of Helpful')
+      a('f7358242', 'Notes that earned the status of Helpful'),
+        a(
+          'ad7019ea',
+          'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
+        ),
         a(
           'edacdd3a',
           'These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
@@ -3612,9 +3615,9 @@
         a('f01fd982', 'Safety Mode (Beta)'),
         a('dcc5aa06', 'Manage autoblocks and preferences.'),
         a('cbd449a0', 'Mute and block'),
-        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
-        a('cc950d94', 'Manage who can message you directly.')
-      a('fe37f854', 'Manage who can see your Spaces listening activity'),
+        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.')
+      a('cc950d94', 'Manage who can message you directly.'),
+        a('fe37f854', 'Manage who can see your Spaces listening activity'),
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
         a('d3d319d6', 'Data sharing and off-Twitter activity'),
@@ -4812,9 +4815,9 @@
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('eb4bf9a1', 'you won’t be able to change it later.'),
         a('f4f4dd60', 'Required'),
-        a('f448cbcc', 'Optional'),
-        a('d3d6c52c', 'Your application has been submitted')
-      a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
+        a('f448cbcc', 'Optional')
+      a('d3d6c52c', 'Your application has been submitted'),
+        a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
         a(
           'cb27c0ba',
           'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
@@ -6047,8 +6050,7 @@
         a('f173716e', '30-39'),
         a('ada329e6', '40-49'),
         a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34')
+        a('a5c91a8e', '18-24')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6068,7 +6070,8 @@
           c(e, t)
         )
       }
-      a('gf672f7c', '35-44'),
+      a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44'),
         a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
@@ -7313,11 +7316,11 @@
         a(
           'f50c9834',
           'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
-        ),
-        a('cb861826', 'Reorder Deck')
-      a('i5896b2b', function (e) {
-        return 'Edit Deck "' + e.title + '"'
-      }),
+        )
+      a('cb861826', 'Reorder Deck'),
+        a('i5896b2b', function (e) {
+          return 'Edit Deck "' + e.title + '"'
+        }),
         a('ef602cab', function (e) {
           return 'Delete Deck "' + e.title + '"'
         }),
