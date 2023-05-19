@@ -785,7 +785,6 @@
           return 'Remove @' + e.screenName + ' from Flagged accounts list?'
         }),
         a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
-        a('ab0decc0', 'Subscribe'),
         a('d84b485e', 'You followed this account'),
         a('be0c83d8', 'You accepted the request'),
         a('bcc13060', 'Early access'),
@@ -1148,11 +1147,11 @@
         }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
+        }),
+        a('i77347d1', function (e) {
+          return 'Dismiss ' + e.topicName + ' Topic'
         })
-      a('i77347d1', function (e) {
-        return 'Dismiss ' + e.topicName + ' Topic'
-      }),
-        a('d69b2d90', 'You’re not interested in this Topic.'),
+      a('d69b2d90', 'You’re not interested in this Topic.'),
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
         }),
@@ -1435,6 +1434,7 @@
         a('jea6b076', 'Successfully added to Highlights.'),
         a('ce6fd0ec', 'Successfully removed from Highlights.'),
         a('af40a8e0', 'Add'),
+        a('c2171c3e', 'Highlight with Twitter Blue'),
         a('bb16cc76', 'Leave this conversation'),
         a('de21174c', 'You’ve left this conversation'),
         a('j33c9fc6', 'Never mind, I’ll stay'),
@@ -1924,6 +1924,7 @@
         a('e7c45f34', 'Join this Space'),
         a('e51df2e6', 'Your mic will be off to start'),
         a('d782b808', 'Subscribing has its perks'),
+        a('ab0decc0', 'Subscribe'),
         a('i7f83b8d', 'Learn more'),
         a('f5774e3a', 'Spaces Discovery'),
         a('fc962610', 'Search for the name of a Space or Host'),
@@ -2337,9 +2338,9 @@
         a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
         a('fc664dee', 'Ratings made after a status was reached'),
         a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
-        a('e1ee08e6', 'Writing impact'),
-        a('je3fc324', 'Your notes that earned the status of Helpful')
-      a('f7358242', 'Notes that earned the status of Helpful'),
+        a('e1ee08e6', 'Writing impact')
+      a('je3fc324', 'Your notes that earned the status of Helpful'),
+        a('f7358242', 'Notes that earned the status of Helpful'),
         a(
           'ad7019ea',
           'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
@@ -3614,9 +3615,9 @@
         a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
         a('f01fd982', 'Safety Mode (Beta)'),
         a('dcc5aa06', 'Manage autoblocks and preferences.'),
-        a('cbd449a0', 'Mute and block'),
-        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.')
-      a('cc950d94', 'Manage who can message you directly.'),
+        a('cbd449a0', 'Mute and block')
+      a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
+        a('cc950d94', 'Manage who can message you directly.'),
         a('fe37f854', 'Manage who can see your Spaces listening activity'),
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
@@ -4814,9 +4815,9 @@
         a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('eb4bf9a1', 'you won’t be able to change it later.'),
-        a('f4f4dd60', 'Required'),
-        a('f448cbcc', 'Optional')
-      a('d3d6c52c', 'Your application has been submitted'),
+        a('f4f4dd60', 'Required')
+      a('f448cbcc', 'Optional'),
+        a('d3d6c52c', 'Your application has been submitted'),
         a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
         a(
           'cb27c0ba',
@@ -6049,8 +6050,7 @@
         a('db81cab0', '20-29'),
         a('f173716e', '30-39'),
         a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24')
+        a('j2950694', 'Above 50')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6070,7 +6070,8 @@
           c(e, t)
         )
       }
-      a('cf30cdfa', '25-34'),
+      a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
         a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
@@ -7312,12 +7313,12 @@
           'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
         ),
         a('d606207a', 'Delete Deck'),
-        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
-        a(
-          'f50c9834',
-          'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
-        )
-      a('cb861826', 'Reorder Deck'),
+        a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.')
+      a(
+        'f50c9834',
+        'This Deck will be permanently deleted. If you delete it you will not be able to retrieve it later.',
+      ),
+        a('cb861826', 'Reorder Deck'),
         a('i5896b2b', function (e) {
           return 'Edit Deck "' + e.title + '"'
         }),
