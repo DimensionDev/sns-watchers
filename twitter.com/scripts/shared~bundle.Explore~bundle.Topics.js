@@ -1,6 +1,6 @@
 'use strict'
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-  ['shared~bundle.Birdwatch~bundle.Explore~bundle.Topics'],
+  ['shared~bundle.Explore~bundle.Topics'],
   {
     612969: function _(e, t, n) {
       n.d(t, {

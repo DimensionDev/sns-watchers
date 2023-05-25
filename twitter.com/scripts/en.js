@@ -211,6 +211,7 @@
         a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
         a('e2eef3c2', 'Verified Orgs'),
+        a('h3290872', 'Verified'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
         }),
@@ -657,6 +658,7 @@
         a('i202bd22', 'Report message'),
         a('f2e5491a', 'Copy message'),
         a('cac1482a', 'React'),
+        a('bf2d08ca', 'More reactions'),
         a('ca7a2215', function (e) {
           return 'Your current reaction: ' + e.emoji
         }),
@@ -1142,12 +1144,12 @@
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
         }),
-        a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending'),
-        a('e839db3a', 'Dismiss')
-      a('ge8f3043', function (e) {
-        return 'Follow ' + e.topicName + ' Topic'
-      }),
+        a('d9b417c4', 'Set as not interested')
+      a('c29d6806', 'Stop recommending'),
+        a('e839db3a', 'Dismiss'),
+        a('ge8f3043', function (e) {
+          return 'Follow ' + e.topicName + ' Topic'
+        }),
         a('aa576cbf', function (e) {
           return 'Unfollow ' + e.topicName + ' Topic'
         }),
@@ -1221,11 +1223,6 @@
         }),
         a('aa037e65', function (e) {
           return 'View' + n(e.count, '', 's')
-        }),
-        a('f1c59d2e', 'Notify me'),
-        a('d54612a4', 'Notifying me'),
-        a('eaa65473', function (e) {
-          return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
         }),
         a('b8f3500a', 'View thread in Reader'),
         a('b4947556', 'Translate Tweet'),
@@ -1701,6 +1698,7 @@
         a('e7719126', 'Tweet with Boost'),
         a('c5c0b3bc', 'Boost your Tweet'),
         a('fb35ac8f', 'Twitter Ads Terms and Conditions.'),
+        a('fe26420a', 'Add keywords'),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
@@ -2160,6 +2158,8 @@
         a('g1428d70', 'Your note is submitted!'),
         a('a4ec7004', 'Here’s what happens now:'),
         a('c4093274', 'About Community Notes after submission'),
+        a('bc8746a6', 'Please rate at least one note before writing a new note.'),
+        a('d6078a7e', 'Community Notes depends on you ratings to keep quality high.'),
         a('fcca2338', 'Notes suggesting context to be shown with the Tweet'),
         a('acb7ecae', 'Notes explaining why added context isn’t needed'),
         a('c59107c4', 'Tweet with notes'),
@@ -2336,10 +2336,10 @@
           'de670c9c',
           'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
         ),
-        a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
-        a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
-        a('fc664dee', 'Ratings made after a status was reached')
-      a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
+        a('cd4333d0', '\nDon’t worry, everyone gets some of these!')
+      a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
+        a('fc664dee', 'Ratings made after a status was reached'),
+        a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
         a('e1ee08e6', 'Writing impact'),
         a('je3fc324', 'Your notes that earned the status of Helpful'),
         a('f7358242', 'Notes that earned the status of Helpful'),
@@ -3613,10 +3613,10 @@
         a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
         a('b38d81ae', 'Your Tweets'),
         a('f8d4746c', 'Manage the information associated with your Tweets.'),
-        a('f2bd9c48', 'Content you see'),
-        a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
-        a('f01fd982', 'Safety Mode (Beta)')
-      a('dcc5aa06', 'Manage autoblocks and preferences.'),
+        a('f2bd9c48', 'Content you see')
+      a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
+        a('f01fd982', 'Safety Mode (Beta)'),
+        a('dcc5aa06', 'Manage autoblocks and preferences.'),
         a('cbd449a0', 'Mute and block'),
         a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
         a('cc950d94', 'Manage who can message you directly.'),
@@ -4813,10 +4813,10 @@
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
-        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
-        a('eb4bf9a1', 'you won’t be able to change it later.')
-      a('f4f4dd60', 'Required'),
+        a('ab21629a', 'How do you plan to use Subscriptions?')
+      a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
+        a('eb4bf9a1', 'you won’t be able to change it later.'),
+        a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
         a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
@@ -5251,7 +5251,6 @@
         a('fca32b20', 'Update your phone number'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('i31dcd22', 'Article'),
-        a('h3290872', 'Verified'),
         a('a98ba778', 'Notifications timelines'),
         a('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
         a('c06d4306', 'When someone mentions you, you’ll find it here.'),
@@ -5682,8 +5681,6 @@
         ),
         a('h9d1cfae', 'Receive image description reminder'),
         a('i8dd9d42', 'Enables a reminder to add image descriptions before a Tweet can be sent.'),
-        a('debd2e9a', 'Captions and subtitles'),
-        a('i97578c2', 'Show captions and subtitles for audio and video content when they are available.'),
         a('bd15d030', 'Learn more about accessibility at Twitter'),
         a('a2dfde68', 'Accessibility at Twitter'),
         a(
@@ -6050,7 +6047,8 @@
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
         a('f173716e', '30-39'),
-        a('ada329e6', '40-49')
+        a('ada329e6', '40-49'),
+        a('j2950694', 'Above 50')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6070,8 +6068,7 @@
           c(e, t)
         )
       }
-      a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
+      a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
         a('jf28b41c', '45-54'),
@@ -6694,6 +6691,9 @@
         a('d01612d3', function (e) {
           return 'Verified since ' + e.date + '.'
         }),
+        a('e14d8719', function (e) {
+          return e.year + ' BCE'
+        }),
         a('b7caffb7', function (e) {
           return '' + e.name
         }),
@@ -6761,6 +6761,9 @@
         }),
         a('e46409b7', function (e) {
           return 'You’re following ' + e.fullName + ' and will be notified when they Tweet.'
+        }),
+        a('eaa65473', function (e) {
+          return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
         }),
         a('g6b54ff6', 'You’re up to date'),
         a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
@@ -6997,6 +7000,12 @@
           'All accounts (organizations and their affiliates) will receive all the benefits of Twitter Blue.',
         ),
         a('ga412491', 'here'),
+        a('ic6012ea', 'I am an individual'),
+        a('h3f1dafa', 'Artists, musicians, political candidates, salespeople, entrepreneurs.'),
+        a('ceb92a7a', 'Sign up for Twitter Blue'),
+        a('dcbccede', 'I am an organization'),
+        a('d63ba7be', 'Businesses, advertisers, government agencies, non-profits.'),
+        a('acc15658', 'Sign up for Verified Organizations'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7301,18 +7310,18 @@
         a('h098a550', 'Default column width'),
         a('ab248726', 'Default media preview'),
         a('jdaf161c', 'Messages Tab'),
-        a('e1cab6e8', 'Apply changes to existing columns?'),
-        a(
-          'ce2e487c',
-          'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
-        ),
+        a('e1cab6e8', 'Apply changes to existing columns?')
+      a(
+        'ce2e487c',
+        'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
+      ),
         a('fdbd90a6', 'Yes, change all columns'),
         a('h8affe68', 'No, only new columns'),
         a('f06885b6', 'Column media size options'),
         a('e4bab2d0', 'Column width options'),
         a('f0e71094', 'Show Messages Tab'),
-        a('aa25a5a6', 'Collapsible Messages Tab available at the bottom of your screen')
-      a('g9df1984', 'Add a Deck'),
+        a('aa25a5a6', 'Collapsible Messages Tab available at the bottom of your screen'),
+        a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
         a('ee7765ba', 'Pick Emoji'),
         a('e0127c83', function (e) {
