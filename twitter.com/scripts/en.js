@@ -284,6 +284,16 @@
           'ccfdbb86',
           'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
         ),
+        a('b2e94283', function (e) {
+          return 'via @' + e.viaScreenName
+        }),
+        a('g34f2c63', function (e) {
+          return 'Tweet' + e.verb
+        }),
+        a('f70a36d0', 'Tweet all'),
+        a('d17df548', 'Reply'),
+        a('h735a98e', 'Schedule'),
+        a('h3701ffe', 'Update'),
         a('c818c60c', 'Analytics'),
         a('cdf89b84', 'Branded Likes Preview'),
         a('h02a6fe6', 'Communities'),
@@ -420,9 +430,6 @@
         a('b7dc3885', function (e) {
           return 'Switch to @' + e.screenName
         }),
-        a('g34f2c63', function (e) {
-          return 'Tweet' + e.verb
-        }),
         a('j49fd4e8', 'Switch to the app'),
         a('hd50e064', 'Not now'),
         a('d8817e36', 'Accept all cookies'),
@@ -460,7 +467,6 @@
         a('j9e025aa', 'Send Tweet'),
         a('e736990a', 'New Direct Message'),
         a('fe731016', 'Like'),
-        a('d17df548', 'Reply'),
         a('bac8f4c2', 'Retweet'),
         a('h7755862', 'Share Tweet'),
         a('gb303814', 'Bookmark'),
@@ -1136,16 +1142,16 @@
         a('f81a95d7', function (e) {
           return '' + e.date
         }),
-        a('ed4bea2e', 'Today'),
-        a('j3e0ae78', function (e) {
-          return '・' + e.formattedTime
-        }),
+        a('ed4bea2e', 'Today')
+      a('j3e0ae78', function (e) {
+        return '・' + e.formattedTime
+      }),
         a('cabfdd06', 'Tomorrow'),
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
         }),
-        a('d9b417c4', 'Set as not interested')
-      a('c29d6806', 'Stop recommending'),
+        a('d9b417c4', 'Set as not interested'),
+        a('c29d6806', 'Stop recommending'),
         a('e839db3a', 'Dismiss'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
@@ -1537,7 +1543,6 @@
         a('aa15f5aa', 'Tweets can only be edited within the first 30 minutes after they’re published.'),
         a('g4bcc5f4', 'This is your last edit'),
         a('c5b474de', 'Your Tweet can’t be updated again.'),
-        a('h3701ffe', 'Update'),
         a('b551cd23', function (e) {
           return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
         }),
@@ -1564,7 +1569,6 @@
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
         a('ec10ee02', 'Poll'),
-        a('h735a98e', 'Schedule'),
         a('c4ccfbe2', 'Tag Location'),
         a('b7d8e3f1', function (e) {
           return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
@@ -1572,11 +1576,6 @@
         a('d1175c78', 'Tag people'),
         a('bf4e9d7a', 'Upload caption file (.srt)'),
         a('e0342f98', 'Captions'),
-        a('e349147c', 'What’s happening?'),
-        a('fbd24526', 'Add another Reply'),
-        a('de4669e2', 'Add a comment'),
-        a('d2c7a41c', 'Tweet your reply'),
-        a('f7364fa2', 'Ask a question...'),
         a('f8e5bf52', 'What is happening?!'),
         a('b1695ed6', 'Add another Tweet!'),
         a('ad7cb5ba', 'Add another Reply!'),
@@ -1705,9 +1704,6 @@
         a('hd435bf1', function (e) {
           return e.audienceLow + ' - ' + e.audienceHigh + ' people'
         }),
-        a('b2e94283', function (e) {
-          return 'via @' + e.viaScreenName
-        }),
         a('b50e199a', function (e) {
           return '' + e.userName
         }),
@@ -1790,7 +1786,6 @@
         a('b6c63977', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('f70a36d0', 'Tweet all'),
         a(
           'haebcf52',
           'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -2336,13 +2331,13 @@
           'de670c9c',
           'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
         ),
-        a('cd4333d0', '\nDon’t worry, everyone gets some of these!')
-      a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
+        a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
+        a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
         a('fc664dee', 'Ratings made after a status was reached'),
         a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
         a('e1ee08e6', 'Writing impact'),
-        a('je3fc324', 'Your notes that earned the status of Helpful'),
-        a('f7358242', 'Notes that earned the status of Helpful'),
+        a('je3fc324', 'Your notes that earned the status of Helpful')
+      a('f7358242', 'Notes that earned the status of Helpful'),
         a(
           'ad7019ea',
           'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
@@ -3613,13 +3608,13 @@
         a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
         a('b38d81ae', 'Your Tweets'),
         a('f8d4746c', 'Manage the information associated with your Tweets.'),
-        a('f2bd9c48', 'Content you see')
-      a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
+        a('f2bd9c48', 'Content you see'),
+        a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
         a('f01fd982', 'Safety Mode (Beta)'),
         a('dcc5aa06', 'Manage autoblocks and preferences.'),
         a('cbd449a0', 'Mute and block'),
-        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
-        a('cc950d94', 'Manage who can message you directly.'),
+        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.')
+      a('cc950d94', 'Manage who can message you directly.'),
         a('fe37f854', 'Manage who can see your Spaces listening activity'),
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
@@ -4813,13 +4808,13 @@
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
         a('ede0ac3e', 'Planned usage'),
-        a('ab21629a', 'How do you plan to use Subscriptions?')
-      a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
+        a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('eb4bf9a1', 'you won’t be able to change it later.'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
-        a('d3d6c52c', 'Your application has been submitted'),
-        a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
+        a('d3d6c52c', 'Your application has been submitted')
+      a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
         a(
           'cb27c0ba',
           'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
@@ -4999,6 +4994,7 @@
           'ee8c0c8a',
           'Incoming messages or group messages from people you don’t follow will show up here, and you’ll be able to accept or delete them.',
         ),
+        a('de4669e2', 'Add a comment'),
         a('ff599112', 'Create a group'),
         a('c602600a', 'Add people'),
         a('fa2033f6', 'Encrypted'),
@@ -5152,6 +5148,7 @@
         a('e8166cee', function (e) {
           return '' + e.formattedPrice
         }),
+        a('e349147c', 'What’s happening?'),
         a('i8d6a27f', function (e) {
           return e.title + ' ' + e.timelineHashtag + ' by @' + e.author
         }),
@@ -6048,7 +6045,10 @@
         a('db81cab0', '20-29'),
         a('f173716e', '30-39'),
         a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50')
+        a('j2950694', 'Above 50'),
+        a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6068,10 +6068,7 @@
           c(e, t)
         )
       }
-      a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54'),
+      a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
@@ -6487,7 +6484,6 @@
         a('ccc9153f', function (e) {
           return 'Loading Tweets by @' + e.screenName
         }),
-        a('gbf342a4', 'Account Withheld'),
         a('c9a1cb5e', 'This account doesn’t exist'),
         a('e7b201de', 'Try searching for another.'),
         a('c4af3562', 'Autoblocked by Twitter'),
@@ -6751,6 +6747,7 @@
         }),
         a('g8475f82', 'Account suspended'),
         a('f3b1bdc3', 'Twitter Rules'),
+        a('gbf342a4', 'Account Withheld'),
         a('d11934ec', 'Get notified'),
         a('a2cd2b0a', 'Follow and get notified'),
         a('de4b354d', function (e) {
@@ -6958,6 +6955,20 @@
           'd5dfaf92',
           'Something went wrong while retrieving your Stripe checkout details. Please contact verified-premium-support@twitter.com if this problem continues.',
         ),
+        a('g32a4dc6', 'For immediate access to Verified Organizations, proceed below to enter your payment details.'),
+        a('c62a602f', function (e) {
+          return (
+            'For purchase orders above ' +
+            e.affiliatesCount +
+            ' affiliates you can opt to pay via invoice. Continue to add your invoice details.'
+          )
+        }),
+        a('jd8b2e66', 'Subscribe & pay'),
+        a('b7ac8e34', 'Setup invoicing'),
+        a('g8881c78', 'Proceed to payment'),
+        a('fdfbfcb0', 'Invoicing'),
+        a('c9941cd2', 'Note:'),
+        a('b74d3fea', 'Note:'),
         a('c6614cc0', 'plus any applicable tax'),
         a('f8d3b50a', 'tax inclusive'),
         a('bc572899', 'Learn more'),
@@ -7006,6 +7017,27 @@
         a('dcbccede', 'I am an organization'),
         a('d63ba7be', 'Businesses, advertisers, government agencies, non-profits.'),
         a('acc15658', 'Sign up for Verified Organizations'),
+        a('dca6b3ac', 'Setup an invoice'),
+        a('h5e2fdd8', 'Organization Twitter handle'),
+        a('c42d5f4a', 'Number of affiliates'),
+        a('f6513c94', 'Select how many affiliates you’d like to add for your organization.'),
+        a('beb7bba5', function (e) {
+          return 'You can add as many as ' + e.affiliatesCount + ' affiliates and will be charged accordingly.'
+        }),
+        a('b4871f4f', 'here'),
+        a('b633d19e', 'Thank you'),
+        a('f713d3e2', 'Your application has been received and is now under review.'),
+        a(
+          'gf2d1998',
+          'You will be able to leverage all the benefits of Twitter Blue, but your organization will not receive a gold or grey checkmark and you will not be able to add affiliated accounts until your account is approved.',
+        ),
+        a('d83617cc', 'Your account will be reviewed.'),
+        a('afb30564', 'We may request additional information to approve you account'),
+        a(
+          'gdd3fa68',
+          'Once reviewed and approved, your account will immediately be verified and you will be able to onboard and add affiliations.',
+        ),
+        a('e6389996', 'Any account that is not approved will not be refunded.'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7292,8 +7324,8 @@
           'Save time by importing your existing Search, List and Profile columns. You won’t be able to copy these over later.',
         ),
         a('j85b4522', 'Or start from scratch'),
-        a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
-        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('hfd5ca12', 'Hmm... we couldn’t import your columns')
+      a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
         a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
@@ -7310,11 +7342,11 @@
         a('h098a550', 'Default column width'),
         a('ab248726', 'Default media preview'),
         a('jdaf161c', 'Messages Tab'),
-        a('e1cab6e8', 'Apply changes to existing columns?')
-      a(
-        'ce2e487c',
-        'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
-      ),
+        a('e1cab6e8', 'Apply changes to existing columns?'),
+        a(
+          'ce2e487c',
+          'If you change all columns, every column across all your decks will be updated. If you choose No, only columns you create from now will get the new settings.',
+        ),
         a('fdbd90a6', 'Yes, change all columns'),
         a('h8affe68', 'No, only new columns'),
         a('f06885b6', 'Column media size options'),
@@ -10804,6 +10836,18 @@
               },
             },
             {
+              key: 'fb70b243',
+              get: function get() {
+                return ['', ' Any account that breaches our terms will not be refunded.']
+              },
+            },
+            {
+              key: 'e6c580ef',
+              get: function get() {
+                return ['', ' Any account that is not approved will not be refunded.']
+              },
+            },
+            {
               key: 'fc713df3',
               get: function get() {
                 return [
@@ -10822,6 +10866,12 @@
                   'By clicking Subscribe, you agree to our Purchaser Terms of Service. Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime. Accounts that sign up are reviewed. If we determine at any time that your main account is not an organization or you violate our terms and policies, your subscription will be canceled and you will not be refunded during your existing billing period unless required by law. See more ',
                   '.',
                 ]
+              },
+            },
+            {
+              key: 'af51185b',
+              get: function get() {
+                return ['If you require more affiliates contact Verified Sales ', '.']
               },
             },
             {
