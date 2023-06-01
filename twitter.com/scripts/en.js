@@ -1291,6 +1291,7 @@
         a('e86cb370', 'We put a warning on this Tweet because it might have sensitive content.'),
         a('f1824804', 'Appeal this warning'),
         a('f755f710', 'Got It'),
+        a('ced4abbe', 'See conversation'),
         a('d0270ae2', 'This Tweet is hidden'),
         a('ba352986', 'You can’t reply … yet'),
         a('cb18be32', 'You can’t do that … yet'),
@@ -1697,13 +1698,14 @@
         a('e7719126', 'Tweet with Boost'),
         a('c5c0b3bc', 'Boost your Tweet'),
         a('fb35ac8f', 'Twitter Ads Terms and Conditions.'),
-        a('fe26420a', 'Add keywords'),
-        a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
         a('hd435bf1', function (e) {
           return e.audienceLow + ' - ' + e.audienceHigh + ' people'
         }),
+        a('i976aff4', 'Update daily budget info to match your billing currency.'),
+        a('fa8f6ec6', 'Your Tweet was posted, but we were unable to run the Boost on it. You will not be charged.'),
+        a('fe26420a', 'Add keywords'),
         a('b50e199a', function (e) {
           return '' + e.userName
         }),
@@ -2334,10 +2336,10 @@
         a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
         a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
         a('fc664dee', 'Ratings made after a status was reached'),
-        a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
-        a('e1ee08e6', 'Writing impact'),
-        a('je3fc324', 'Your notes that earned the status of Helpful')
-      a('f7358242', 'Notes that earned the status of Helpful'),
+        a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.')
+      a('e1ee08e6', 'Writing impact'),
+        a('je3fc324', 'Your notes that earned the status of Helpful'),
+        a('f7358242', 'Notes that earned the status of Helpful'),
         a(
           'ad7019ea',
           'Well done! These notes are now showing on Twitter, adding context to Tweets and helping keep people informed.',
@@ -3611,10 +3613,10 @@
         a('f2bd9c48', 'Content you see'),
         a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
         a('f01fd982', 'Safety Mode (Beta)'),
-        a('dcc5aa06', 'Manage autoblocks and preferences.'),
-        a('cbd449a0', 'Mute and block'),
-        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.')
-      a('cc950d94', 'Manage who can message you directly.'),
+        a('dcc5aa06', 'Manage autoblocks and preferences.')
+      a('cbd449a0', 'Mute and block'),
+        a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
+        a('cc950d94', 'Manage who can message you directly.'),
         a('fe37f854', 'Manage who can see your Spaces listening activity'),
         a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
@@ -4517,6 +4519,8 @@
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
+        a('i582b798', 'Profile Customization'),
+        a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
@@ -4646,6 +4650,8 @@
         a('bf364d62', 'All transactions'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
+        a('d8eed490', 'Manage your public-facing profile appearance.'),
+        a('e38b7b9a', 'Hide Likes Tab'),
         a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
@@ -4807,14 +4813,14 @@
         a('f1bf337e', 'Select categories'),
         a('d4062c9a', 'Where do you share content? Select all that apply.'),
         a('e963d588', 'Select platforms'),
-        a('ede0ac3e', 'Planned usage'),
-        a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('ede0ac3e', 'Planned usage')
+      a('ab21629a', 'How do you plan to use Subscriptions?'),
         a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('eb4bf9a1', 'you won’t be able to change it later.'),
         a('f4f4dd60', 'Required'),
         a('f448cbcc', 'Optional'),
-        a('d3d6c52c', 'Your application has been submitted')
-      a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
+        a('d3d6c52c', 'Your application has been submitted'),
+        a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
         a(
           'cb27c0ba',
           'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
@@ -6042,13 +6048,7 @@
         a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
-        a('db81cab0', '20-29'),
-        a('f173716e', '30-39'),
-        a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44')
+        a('db81cab0', '20-29')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6068,7 +6068,13 @@
           c(e, t)
         )
       }
-      a('jf28b41c', '45-54'),
+      a('f173716e', '30-39'),
+        a('ada329e6', '40-49'),
+        a('j2950694', 'Above 50'),
+        a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44'),
+        a('jf28b41c', '45-54'),
         a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
@@ -6351,6 +6357,8 @@
           return e.price + ' / year'
         }),
         a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
+        a('c6614cc0', 'plus any applicable tax'),
+        a('f8d3b50a', 'tax inclusive'),
         a('fce91ab4', 'Hmmm - that didn’t work.'),
         a(
           'gc7637d4',
@@ -6969,8 +6977,6 @@
         a('fdfbfcb0', 'Invoicing'),
         a('c9941cd2', 'Note:'),
         a('b74d3fea', 'Note:'),
-        a('c6614cc0', 'plus any applicable tax'),
-        a('f8d3b50a', 'tax inclusive'),
         a('bc572899', 'Learn more'),
         a(
           'f45d02e8',
@@ -7011,12 +7017,14 @@
           'All accounts (organizations and their affiliates) will receive all the benefits of Twitter Blue.',
         ),
         a('ga412491', 'here'),
+        a('d47c0c7c', 'Who are you?'),
+        a('e065b6cc', 'Choose the right Verified subscription for you:'),
+        a('c75a9386', 'Learn more about'),
+        a('b916b258', 'and'),
         a('ic6012ea', 'I am an individual'),
-        a('h3f1dafa', 'Artists, musicians, political candidates, salespeople, entrepreneurs.'),
-        a('ceb92a7a', 'Sign up for Twitter Blue'),
+        a('d8e618ce', 'For individuals and creators'),
         a('dcbccede', 'I am an organization'),
-        a('d63ba7be', 'Businesses, advertisers, government agencies, non-profits.'),
-        a('acc15658', 'Sign up for Verified Organizations'),
+        a('f44ce884', 'For businesses, government agencies, and non-profits'),
         a('dca6b3ac', 'Setup an invoice'),
         a('h5e2fdd8', 'Organization Twitter handle'),
         a('c42d5f4a', 'Number of affiliates'),
@@ -7038,6 +7046,17 @@
           'Once reviewed and approved, your account will immediately be verified and you will be able to onboard and add affiliations.',
         ),
         a('e6389996', 'Any account that is not approved will not be refunded.'),
+        a('e6b0965a', 'Your order'),
+        a('a1b58798', 'Review your order below'),
+        a('b651c7d7', function (e) {
+          return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
+        }),
+        a('d3469342', 'Organizations and affiliates'),
+        a('gf77fdde', 'Tax'),
+        a('ec5e9c54', 'Base subscription'),
+        a('e16093fc', 'Total per month'),
+        a('fc1f43d0', 'Generate invoice'),
+        a('eada03ea', 'Twitter Purchaser Terms'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7301,8 +7320,8 @@
         a('b9ea5f7c', 'Move column to another Deck.'),
         a('ec66fc4e', 'Tweet order'),
         a('cc1866ae', 'Tweet feed'),
-        a('cf79c1fe', 'Show latest Tweets'),
-        a('e2ba3828', 'Show top Tweets'),
+        a('cf79c1fe', 'Show latest Tweets')
+      a('e2ba3828', 'Show top Tweets'),
         a('j52bb410', 'Column added. Showing top Tweets first'),
         a('ca329454', 'Column added. Showing latest Tweets first'),
         a('aa4f00c6', 'Share Deck'),
@@ -7324,8 +7343,8 @@
           'Save time by importing your existing Search, List and Profile columns. You won’t be able to copy these over later.',
         ),
         a('j85b4522', 'Or start from scratch'),
-        a('hfd5ca12', 'Hmm... we couldn’t import your columns')
-      a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
+        a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
+        a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
         a('dc6c806e', 'Your columns couldn’t be imported'),
         a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
@@ -10872,6 +10891,15 @@
               key: 'af51185b',
               get: function get() {
                 return ['If you require more affiliates contact Verified Sales ', '.']
+              },
+            },
+            {
+              key: 'ebad1713',
+              get: function get() {
+                return [
+                  'By clicking ‘Generate invoice’, you agree to be bound by the ',
+                  '. Your subscription will not become active until the invoice is paid.',
+                ]
               },
             },
             {
