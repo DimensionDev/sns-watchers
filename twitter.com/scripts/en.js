@@ -1881,6 +1881,8 @@
           return e.name + ' is co-hosting'
         }),
         a('f3839580', 'Listen live in Spaces'),
+        a('b68c3784', 'Get Verified'),
+        a('a9c049e2', 'Subscribe to unlock new features.'),
         a('b8e930fe', 'Trending now'),
         a('ae05f268', 'Trends are unavailable.'),
         a('b50ea616', 'New to Twitter?'),
@@ -2333,16 +2335,16 @@
           'accd6896',
           'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
         ),
-        a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful'),
-        a(
-          'd46b6bc8',
-          'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
-        ),
-        a('b976d0ae', 'Contrasting ratings')
+        a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful')
       a(
-        'de670c9c',
-        'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
+        'd46b6bc8',
+        'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
       ),
+        a('b976d0ae', 'Contrasting ratings'),
+        a(
+          'de670c9c',
+          'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
+        ),
         a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
         a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
         a('fc664dee', 'Ratings made after a status was reached'),
@@ -3616,10 +3618,10 @@
         a('cad53944', 'Privacy and safety'),
         a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
         a('a244ed50', 'Your Twitter activity'),
-        a('e908903a', 'Audience and tagging'),
-        a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
-        a('b38d81ae', 'Your Tweets')
-      a('f8d4746c', 'Manage the information associated with your Tweets.'),
+        a('e908903a', 'Audience and tagging')
+      a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
+        a('b38d81ae', 'Your Tweets'),
+        a('f8d4746c', 'Manage the information associated with your Tweets.'),
         a('f2bd9c48', 'Content you see'),
         a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
         a('f01fd982', 'Safety Mode (Beta)'),
@@ -4819,10 +4821,10 @@
         a('b98d0edc', 'Etsy'),
         a('d4d74bb4', 'Patreon'),
         a('ca07aa46', 'YouTube'),
-        a('c6d71a04', 'TikTok'),
-        a('c2680406', 'Snapchat'),
-        a('d8552c1a', 'Twitch')
-      a('gd115e64', 'Apply for Subscriptions'),
+        a('c6d71a04', 'TikTok')
+      a('c2680406', 'Snapchat'),
+        a('d8552c1a', 'Twitch'),
+        a('gd115e64', 'Apply for Subscriptions'),
         a(
           'f095a24a',
           'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
@@ -6057,9 +6059,7 @@
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
         }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics'),
-        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
-        a('ccccbc74', 'Help Center')
+        a('a57daeb2', 'Tweet Analytics')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6079,7 +6079,9 @@
           c(e, t)
         )
       }
-      a('dabb313e', 'Help Center'),
+      a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+        a('ccccbc74', 'Help Center'),
+        a('dabb313e', 'Help Center'),
         a('e00644ca', 'Help Center'),
         a('b069d89c', 'Audience'),
         a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
@@ -7081,7 +7083,10 @@
         a('c4c1b600', 'Organization email address'),
         a('i60d7542', 'Organization website'),
         a('b92f9dee', 'Organization type'),
+        a('f09630ff', 'here'),
         a('j3961a09', 'here'),
+        a('eb043b72', 'Application pending'),
+        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7323,15 +7328,15 @@
         a('he517d52', 'Rename column'),
         a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
-        a('e5c06aee', 'Column width'),
-        a('af6a4368', 'Rename this conversation and see who’s in it.'),
+        a('e5c06aee', 'Column width')
+      a('af6a4368', 'Rename this conversation and see who’s in it.'),
         a('cdeac5ee', 'Direct Message settings'),
         a('fda7ee26', 'Manage who can message you.'),
         a('ec688a09', function (e) {
           return 'This prevents @' + e.screenName + ' from including you in any of their Lists, including this one.'
         }),
-        a('iad54d54', 'Clear Bookmarks')
-      a('g4d581a2', 'Empty this, and all Bookmark Folders'),
+        a('iad54d54', 'Clear Bookmarks'),
+        a('g4d581a2', 'Empty this, and all Bookmark Folders'),
         a('fb14aebe', 'Empty Bookmarks'),
         a('d0be24d0', 'Clear Tweets'),
         a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
@@ -7386,6 +7391,7 @@
         a('h098a550', 'Default column width'),
         a('ab248726', 'Default media preview'),
         a('jdaf161c', 'Messages Tab'),
+        a('ge0fcfd0', 'Hover Cards'),
         a('e1cab6e8', 'Apply changes to existing columns?'),
         a(
           'ce2e487c',
@@ -7397,6 +7403,8 @@
         a('e4bab2d0', 'Column width options'),
         a('f0e71094', 'Show Messages Tab'),
         a('aa25a5a6', 'Collapsible Messages Tab available at the bottom of your screen'),
+        a('g3da3c90', 'Show Hover Cards'),
+        a('b08a8656', 'Show Hover Cards when hovering over interactive items'),
         a('g9df1984', 'Add a Deck'),
         a('df77af70', 'Choose an emoji for your Deck'),
         a('ee7765ba', 'Pick Emoji'),
@@ -10912,6 +10920,15 @@
                 return [
                   'By clicking ‘Generate invoice’, you agree to be bound by the ',
                   '. Your subscription will not become active until the invoice is paid.',
+                ]
+              },
+            },
+            {
+              key: 'aacfbecd',
+              get: function get() {
+                return [
+                  'By checking this box you indicate you have read and agree to the terms and conditions available ',
+                  '.',
                 ]
               },
             },
