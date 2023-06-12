@@ -1445,7 +1445,7 @@
         a('jea6b076', 'Successfully added to Highlights.'),
         a('ce6fd0ec', 'Successfully removed from Highlights.'),
         a('af40a8e0', 'Add'),
-        a('h8a3525e', 'Highlight on your profile'),
+        a('c2171c3e', 'Highlight with Twitter Blue'),
         a('bb16cc76', 'Leave this conversation'),
         a('de21174c', 'You’ve left this conversation'),
         a('j33c9fc6', 'Never mind, I’ll stay'),
@@ -6906,8 +6906,6 @@
           return 'Invitations (' + e.count + ')'
         }),
         a('daf646e6', 'Please note: you must label accounts appropriately.'),
-        a('cd99aa72', 'Your account is under review because you changed your Twitter @handle'),
-        a('i5f8b628', 'You cannot modify your affiliates until your account is reviewed.'),
         a('c3ddd22c', 'terms'),
         a('c9729d8a', 'terms'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
@@ -6939,39 +6937,7 @@
         a('ib60b2d5', function (e) {
           return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
         }),
-        a('i85d5e70', 'Recruiting'),
         a('i4dccc18', 'Billing'),
-        a('b007440a', 'Jobs'),
-        a('abebf0fa', 'Featured Jobs'),
-        a('f58cf1ac', 'Add job'),
-        a('fc6eae0f', function (e) {
-          return 'Jobs (' + e.count + ')'
-        }),
-        a('bb39aec3', function (e) {
-          return 'Featured Jobs (' + e.count + ')'
-        }),
-        a('b026896a', 'Are you sure you want to delete this job?'),
-        a('ea93671c', 'Deleting a job immediately removes the job from your profile spotlight and jobs list.'),
-        a('g5836244', 'Let’s feature your top job openings'),
-        a(
-          'ic4a78cc',
-          'Twitter Recruiting is a convenient way to feature your latest job openings. Connect your ATS and easily sync your open jobs to make them discoverable by all Twitter users.',
-        ),
-        a('d28828e4', 'Start adding jobs'),
-        a('e9b91cde', 'Add a job'),
-        a(
-          'h54f8798',
-          'Create a job to be featured on your organization profile. This must reflect an existing open job from your company that has a corresponding apply page.',
-        ),
-        a('ebee0710', 'Public URL'),
-        a('bec7799c', 'Enter the public link to the job for candidates to apply to'),
-        a('eba5a8ec', 'Job Title'),
-        a('dd88c920', 'What job title best describes the role?'),
-        a('e2b68006', 'Where should candidates be located?'),
-        a('fcf0ec1c', 'Minimum'),
-        a('a36bebf2', 'Maximum'),
-        a('ede7d0a2', 'Currency'),
-        a('b075c68a', 'Edit job'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
         a('cd30afed', 'click here'),
@@ -7008,8 +6974,6 @@
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
         ),
-        a('cec08784', 'You have hit the limit for affiliates on this invoice.'),
-        a('d49b389f', 'here'),
         a('ia5a6a40', 'In order to get started, you’ll need to add your payment details.'),
         a('d40d1cc0', 'To continue you need to pay via Stripe.'),
         a('c4a5f614', 'Add Payment Details'),
@@ -7334,8 +7298,8 @@
         a('e7a12d72', 'Converted to search column'),
         a('f29424f0', 'Change back'),
         a('e1cdd9c4', 'Before you switch to top Tweets...'),
-        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.')
-      a('h232a104', 'Switch and show all Tweets'),
+        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
+        a('h232a104', 'Switch and show all Tweets'),
         a('d21c79f7', function (e) {
           return 'Set Column Tweet Order - ' + e.title
         }),
@@ -7364,8 +7328,8 @@
         a('he517d52', 'Rename column'),
         a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
-        a('e5c06aee', 'Column width'),
-        a('af6a4368', 'Rename this conversation and see who’s in it.'),
+        a('e5c06aee', 'Column width')
+      a('af6a4368', 'Rename this conversation and see who’s in it.'),
         a('cdeac5ee', 'Direct Message settings'),
         a('fda7ee26', 'Manage who can message you.'),
         a('ec688a09', function (e) {
@@ -10921,12 +10885,6 @@
                 return [
                   'If you have questions, bug reports, feedback or wish to cancel your subscription please contact us here: ',
                 ]
-              },
-            },
-            {
-              key: 'if6e211f',
-              get: function get() {
-                return ['To increase your limit please reach out to Verified Premium Support ', '.']
               },
             },
             {
