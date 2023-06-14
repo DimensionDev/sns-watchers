@@ -7508,7 +7508,6 @@
           'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
         ),
         a('ed617674', '360'),
-        a('bff6789c', 'Tweet'),
         a('e23b20a0', 'Cancel'),
         a('a620fcf0', 'Loading image'),
         a('e9e2064c', 'Something went wrong, but don’t fret — it’s not your fault.'),
