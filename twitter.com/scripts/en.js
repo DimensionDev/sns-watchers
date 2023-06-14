@@ -4627,6 +4627,8 @@
         a('f0c99eff', function (e) {
           return '- @' + e.screenName
         }),
+        a('bbae0794', 'Enable Tweet previews'),
+        a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.'),
         a('jd0f1ac0', 'Deactivate Subscriptions?'),
         a(
           'c6c27fc8',
@@ -4819,10 +4821,10 @@
         a('a3021318', 'Facebook'),
         a('f6965e34', 'Instagram'),
         a('b98d0edc', 'Etsy'),
-        a('d4d74bb4', 'Patreon'),
-        a('ca07aa46', 'YouTube'),
-        a('c6d71a04', 'TikTok')
-      a('c2680406', 'Snapchat'),
+        a('d4d74bb4', 'Patreon')
+      a('ca07aa46', 'YouTube'),
+        a('c6d71a04', 'TikTok'),
+        a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
         a('gd115e64', 'Apply for Subscriptions'),
         a(
@@ -6057,9 +6059,7 @@
         a('ie816cb4', 'Watch this video and so much more on Twitter.'),
         a('e3521fcd', function (e) {
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-        }),
-        a('g9079b94', 'You may only view analytics about your own Tweets.'),
-        a('a57daeb2', 'Tweet Analytics')
+        })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6079,7 +6079,9 @@
           c(e, t)
         )
       }
-      a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
+      a('g9079b94', 'You may only view analytics about your own Tweets.'),
+        a('a57daeb2', 'Tweet Analytics'),
+        a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
         a('ccccbc74', 'Help Center'),
         a('dabb313e', 'Help Center'),
         a('e00644ca', 'Help Center'),
@@ -6931,6 +6933,9 @@
         a('db7144b6', 'There was a problem changing affiliation type. Please try again later.'),
         a('be78e5fa', 'There was a problem removing the affiliate. Please try again later.'),
         a('fa9709ba', 'There was a problem with creating the application. Please try again later.'),
+        a('e970bdbd', function (e) {
+          return e.count + ' invites remaining'
+        }),
         a('f323d314', 'Resend'),
         a('ac645cde', 'You can always add them again.'),
         a('d12af2dd', function (e) {
@@ -7331,11 +7336,11 @@
         }),
         a('ce091d36', 'Search Tweets'),
         a('a443bbc0', 'Close Search'),
-        a('e7a12d72', 'Converted to search column'),
-        a('f29424f0', 'Change back'),
+        a('e7a12d72', 'Converted to search column')
+      a('f29424f0', 'Change back'),
         a('e1cdd9c4', 'Before you switch to top Tweets...'),
-        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.')
-      a('h232a104', 'Switch and show all Tweets'),
+        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
+        a('h232a104', 'Switch and show all Tweets'),
         a('d21c79f7', function (e) {
           return 'Set Column Tweet Order - ' + e.title
         }),
@@ -7612,7 +7617,7 @@
         a('c2637ef6', 'Got it'),
         a('efb17190', 'Follows you'),
         a('g57b5f6c', 'Your Subscriber'),
-        a('e589ffa8', 'Subscriber'),
+        a('a77a27c0', 'Subscribed'),
         a('bd08d1b2', 'Details not available'),
         a('c6000450', 'Reminder set'),
         a('db44ff5c', 'Set reminder'),
@@ -7990,7 +7995,6 @@
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
-        a('a77a27c0', 'Subscribed'),
         a('b4397192', 'Manage'),
         a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
