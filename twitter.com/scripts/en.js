@@ -207,6 +207,7 @@
         a('fa98627a', 'Profile'),
         a('i5aa4ce0', 'More menu items'),
         a('b0041756', 'Lists'),
+        a('h02a6fe6', 'Communities'),
         a('ded416b0', 'Spaces'),
         a('b7fa0cfe', 'Top Articles'),
         a('ed21f886', 'Twitter Blue'),
@@ -296,7 +297,6 @@
         a('h3701ffe', 'Update'),
         a('c818c60c', 'Analytics'),
         a('cdf89b84', 'Branded Likes Preview'),
-        a('h02a6fe6', 'Communities'),
         a('b5298d92', 'Connect'),
         a('bb07870e', 'Creator Studio'),
         a('a57a341c', 'Data saver'),
@@ -327,6 +327,7 @@
         a('c9d41314', 'Twitter for Professionals'),
         a('ff1c5e1a', 'Professional Home'),
         a('d9ef2842', 'Unread items'),
+        a('dc931afc', 'Communities (New items)'),
         a('c8f593e0', 'Twitter is better on the app'),
         a('c5de6fd4', 'Never miss a Tweet. Open this in the Twitter app to get the full experience.'),
         a('b6a43e78', 'Be the first to know'),
@@ -1137,13 +1138,13 @@
         a('jceadc3e', 'Untitled'),
         a('a1d5303c', 'Private'),
         a('cc8f8a80', 'Unlisted'),
-        a('c33a97d6', 'Public'),
-        a('ccc45ee7', function (e) {
-          return e.team + ' won'
-        })
-      a('f81a95d7', function (e) {
-        return '' + e.date
+        a('c33a97d6', 'Public')
+      a('ccc45ee7', function (e) {
+        return e.team + ' won'
       }),
+        a('f81a95d7', function (e) {
+          return '' + e.date
+        }),
         a('ed4bea2e', 'Today'),
         a('j3e0ae78', function (e) {
           return '・' + e.formattedTime
@@ -2328,15 +2329,15 @@
         a(
           'e8c599f0',
           'Nice work! These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
-        ),
-        a(
-          'cfce11c2',
-          'These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
         )
       a(
-        'accd6896',
-        'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
+        'cfce11c2',
+        'These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
       ),
+        a(
+          'accd6896',
+          'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
+        ),
         a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful'),
         a(
           'd46b6bc8',
@@ -3617,9 +3618,9 @@
         }),
         a('ed5ab16a', 'Active now'),
         a('cad53944', 'Privacy and safety'),
-        a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
-        a('a244ed50', 'Your Twitter activity')
-      a('e908903a', 'Audience and tagging'),
+        a('df5fa1d0', 'Manage what information you see and share on Twitter.')
+      a('a244ed50', 'Your Twitter activity'),
+        a('e908903a', 'Audience and tagging'),
         a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
         a('b38d81ae', 'Your Tweets'),
         a('f8d4746c', 'Manage the information associated with your Tweets.'),
@@ -4820,9 +4821,9 @@
         a('j3495480', 'Tell us about the platforms you use to share your content.'),
         a('a3021318', 'Facebook'),
         a('f6965e34', 'Instagram'),
-        a('b98d0edc', 'Etsy'),
-        a('d4d74bb4', 'Patreon')
-      a('ca07aa46', 'YouTube'),
+        a('b98d0edc', 'Etsy')
+      a('d4d74bb4', 'Patreon'),
+        a('ca07aa46', 'YouTube'),
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
         a('d8552c1a', 'Twitch'),
@@ -6056,10 +6057,7 @@
         a('e38c0975', function (e) {
           return 'Join the conversation for more from @' + e.screenName + '.'
         }),
-        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
-        a('e3521fcd', function (e) {
-          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
-        })
+        a('ie816cb4', 'Watch this video and so much more on Twitter.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6079,7 +6077,10 @@
           c(e, t)
         )
       }
-      a('g9079b94', 'You may only view analytics about your own Tweets.'),
+      a('e3521fcd', function (e) {
+        return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+      }),
+        a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
         a('ccccbc74', 'Help Center'),
@@ -7335,9 +7336,9 @@
           return 'Refresh column - ' + e.title
         }),
         a('ce091d36', 'Search Tweets'),
-        a('a443bbc0', 'Close Search'),
-        a('e7a12d72', 'Converted to search column')
-      a('f29424f0', 'Change back'),
+        a('a443bbc0', 'Close Search')
+      a('e7a12d72', 'Converted to search column'),
+        a('f29424f0', 'Change back'),
         a('e1cdd9c4', 'Before you switch to top Tweets...'),
         a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
         a('h232a104', 'Switch and show all Tweets'),
