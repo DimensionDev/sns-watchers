@@ -601,6 +601,10 @@
           return 'GIF provided by ' + e.providerName
         }),
         a('a613e720', 'Copy link to GIF'),
+        a('af71ef68', 'Voice'),
+        a('b327c12a', 'Image'),
+        a('fc64990e', 'Video'),
+        a('bf945aac', 'Gif'),
         a('e3275464', 'Send'),
         a('ca0ce0e4', 'Start a new message'),
         a('c3752568', 'Something went wrong. Try sending your message again in a minute.'),
@@ -642,13 +646,11 @@
         a('eeaa9f90', 'Open video'),
         a('g2b43664', 'Open GIF'),
         a('fe09fde2', 'Change settings'),
-        a('b327c12a', 'Image'),
         a('c55eed72', 'Replying to'),
         a('d99de549', function (e) {
           return 'Replying to ' + e.name
         }),
         a('f5a07f7c', 'Attachment'),
-        a('af71ef68', 'Voice'),
         a('fd079470', 'This is spam'),
         a('c7a92dca', 'Message OK'),
         a('fb3ccb56', 'Message hidden due to suspicious content'),
@@ -1138,14 +1140,14 @@
         a('c33a97d6', 'Public'),
         a('ccc45ee7', function (e) {
           return e.team + ' won'
-        }),
-        a('f81a95d7', function (e) {
-          return '' + e.date
-        }),
-        a('ed4bea2e', 'Today')
-      a('j3e0ae78', function (e) {
-        return '・' + e.formattedTime
+        })
+      a('f81a95d7', function (e) {
+        return '' + e.date
       }),
+        a('ed4bea2e', 'Today'),
+        a('j3e0ae78', function (e) {
+          return '・' + e.formattedTime
+        }),
         a('cabfdd06', 'Tomorrow'),
         a('abd0f804', function (e) {
           return '・' + e.formattedTime
@@ -2330,16 +2332,16 @@
         a(
           'cfce11c2',
           'These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
-        ),
-        a(
-          'accd6896',
-          'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
-        ),
-        a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful')
+        )
       a(
-        'd46b6bc8',
-        'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+        'accd6896',
+        'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
       ),
+        a('b4f21858', 'Ratings that helped a note reach the status of Not Helpful'),
+        a(
+          'd46b6bc8',
+          'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
+        ),
         a('b976d0ae', 'Contrasting ratings'),
         a(
           'de670c9c',
@@ -2443,7 +2445,6 @@
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
         ),
         a('g5eb5a16', 'Learn more about Community Notes'),
-        a('bc2da5c6', 'Manage alert options'),
         a('c7b59cde', 'Community Notes settings'),
         a('e1288bdc', 'Alerts when a note needs help'),
         a('ca14eab4', 'Receive notifications when a Community Note needs your rating.'),
@@ -3617,9 +3618,9 @@
         a('ed5ab16a', 'Active now'),
         a('cad53944', 'Privacy and safety'),
         a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
-        a('a244ed50', 'Your Twitter activity'),
-        a('e908903a', 'Audience and tagging')
-      a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
+        a('a244ed50', 'Your Twitter activity')
+      a('e908903a', 'Audience and tagging'),
+        a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
         a('b38d81ae', 'Your Tweets'),
         a('f8d4746c', 'Manage the information associated with your Tweets.'),
         a('f2bd9c48', 'Content you see'),
@@ -4812,7 +4813,6 @@
         a('e084f2a0', 'Skincare'),
         a('a9db15b2', 'Small and medium business'),
         a('a92db4aa', 'Tech'),
-        a('fc64990e', 'Video'),
         a('hb5f1d64', 'Writing'),
         a('bd44a8a8', 'Tell us more'),
         a('da8ea7da', 'Content platforms'),
