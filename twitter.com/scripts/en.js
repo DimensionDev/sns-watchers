@@ -7018,9 +7018,11 @@
         ),
         a('cec08784', 'You have hit the limit for affiliates on this invoice.'),
         a('d49b389f', 'here'),
+        a('jf351704', 'To continue you need to update the affiliate limit on this invoice.'),
         a('ia5a6a40', 'In order to get started, you’ll need to add your payment details.'),
         a('d40d1cc0', 'To continue you need to pay via Stripe.'),
         a('c4a5f614', 'Add Payment Details'),
+        a('fa2a280a', 'Update Invoice'),
         a('i7b2f08e', 'Welcome to Verified Organizations'),
         a('g4e18b84', 'You’ve hit your affiliate limit'),
         a('hd7d278c', 'No thanks'),
@@ -7086,13 +7088,15 @@
         a('d8e618ce', 'For individuals and creators'),
         a('dcbccede', 'I am an organization'),
         a('f44ce884', 'For businesses, government agencies, and non-profits'),
-        a('dca6b3ac', 'Setup an invoice'),
         a('h5e2fdd8', 'Organization Twitter handle'),
         a('c42d5f4a', 'Number of affiliates'),
-        a('f6513c94', 'Select how many affiliates you’d like to add for your organization.'),
         a('beb7bba5', function (e) {
           return 'You can add as many as ' + e.affiliatesCount + ' affiliates and will be charged accordingly.'
         }),
+        a('dca6b3ac', 'Setup an invoice'),
+        a('c97ad52a', 'Update invoice'),
+        a('f6513c94', 'Select how many affiliates you’d like to add for your organization.'),
+        a('b538d7b8', 'Select how many affiliates you’d need for your organization.'),
         a('b4871f4f', 'here'),
         a('b633d19e', 'Thank you'),
         a('f713d3e2', 'Your application has been received and is now under review.'),
@@ -7116,11 +7120,13 @@
         a('gf77fdde', 'Tax'),
         a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
+        a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
+        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
         a(
           'c25841ee',
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
         ),
-        a('eada03ea', 'Twitter Purchaser Terms'),
+        a('c43b2370', 'Twitter Purchaser Terms'),
         a('b7054230', 'Apply for access'),
         a('dece6c60', 'Organization name'),
         a('b9c9ccca', 'Your full name'),
@@ -7326,8 +7332,8 @@
         a('fb071dea', 'Move column'),
         a('c77a6327', function (e) {
           return 'Open column options - ' + e.title
-        }),
-        a('h53c41f0', 'Column options'),
+        })
+      a('h53c41f0', 'Column options'),
         a('f7bbbb6d', function (e) {
           return 'Close column options - ' + e.title
         }),
@@ -7336,8 +7342,8 @@
         a('ad86db50', 'Make a Deck'),
         a('e1307bdf', function (e) {
           return 'Refresh column - ' + e.title
-        })
-      a('ce091d36', 'Search Tweets'),
+        }),
+        a('ce091d36', 'Search Tweets'),
         a('a443bbc0', 'Close Search'),
         a('e7a12d72', 'Converted to search column'),
         a('f29424f0', 'Change back'),
@@ -10963,12 +10969,9 @@
               },
             },
             {
-              key: 'ebad1713',
+              key: 'i7e3355f',
               get: function get() {
-                return [
-                  'By clicking ‘Generate invoice’, you agree to be bound by the ',
-                  '. Your subscription will not become active until the invoice is paid.',
-                ]
+                return ['By clicking ‘' + this.props.action + '’, you agree to be bound by the ', '.']
               },
             },
             {
