@@ -1449,6 +1449,13 @@
         a('ce6fd0ec', 'Successfully removed from Highlights.'),
         a('af40a8e0', 'Add'),
         a('h8a3525e', 'Highlight on your profile'),
+        a('ha35a1d2', 'Pin to your profile'),
+        a('aaef1b48', 'Your Tweet was pinned to your profile.'),
+        a('afac3b9e', 'Pin Tweet to profile?'),
+        a('e2d44cea', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
+        a('fe4d099a', 'Highlight'),
+        a('aae6bc82', 'Highlighting Tweets is a subscription feature. Get verified to unlock this feature and others.'),
+        a('b68c3784', 'Get Verified'),
         a('bb16cc76', 'Leave this conversation'),
         a('de21174c', 'You’ve left this conversation'),
         a('j33c9fc6', 'Never mind, I’ll stay'),
@@ -1470,10 +1477,6 @@
         a('df744bda', 'Mute this'),
         a('j9552760', 'Mute conversation'),
         a('d751694c', 'When you mute a conversation, you won’t get any new notifications about it.'),
-        a('ha35a1d2', 'Pin to your profile'),
-        a('afac3b9e', 'Pin Tweet to profile?'),
-        a('e2d44cea', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
-        a('aaef1b48', 'Your Tweet was pinned to your profile.'),
         a('d1c1e2c2', 'Pin in Community'),
         a('j832cc34', 'This will appear at the top of your Community.'),
         a('g2eb57c4', 'This will appear at the top of your Community and replace any previously pinned Tweet.'),
@@ -1884,7 +1887,6 @@
           return e.name + ' is co-hosting'
         }),
         a('f3839580', 'Listen live in Spaces'),
-        a('b68c3784', 'Get Verified'),
         a('a9c049e2', 'Subscribe to unlock new features.'),
         a('b8e930fe', 'Trending now'),
         a('ae05f268', 'Trends are unavailable.'),
@@ -2324,16 +2326,16 @@
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
-        a('a7b0393c', 'Writing Impact'),
-        a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
+        a('a7b0393c', 'Writing Impact')
+      a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'e8c599f0',
           'Nice work! These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
-        )
-      a(
-        'cfce11c2',
-        'These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
-      ),
+        ),
+        a(
+          'cfce11c2',
+          'These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
+        ),
         a(
           'accd6896',
           'These ratings identify Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
@@ -3551,9 +3553,368 @@
         ),
         a('e75f25a8', 'Email notifications'),
         a('da867c58', 'Select your preferences by notification type.'),
+        a('hc73f030', 'Your Account'),
+        a('f15bfdb4', 'Account information'),
+        a('a3841918', 'Email'),
+        a('c21037d0', 'Country'),
+        a('ab1f7ee0', 'Change your password'),
+        a('e731db5a', 'Password reset'),
+        a('f56af9cc', 'Download an archive of your data'),
+        a('d13e165c', 'TweetDeck Teams'),
+        a('hfb92b14', 'Deactivate your account'),
+        a('bf96fda4', 'Age'),
+        a('j9d10268', 'Account activity'),
+        a('i6b3f59a', 'Account history'),
+        a('da202f9a', 'Your advertiser list'),
+        a('hc36dbba', 'Logged-in devices and apps'),
+        a('a8d0108e', 'Gender'),
+        a('a03dacaa', 'Language'),
+        a('d9138166', 'See places you’ve been'),
+        a('b523ecc6', 'Account access history'),
+        a('abedd45c', 'Request your data'),
+        a('h1f01a24', 'Interests'),
+        a('b7fde2b8', 'Your Twitter data'),
+        a('ff9ed474', 'Total earnings'),
+        a('dd0c889e', 'Profile customization'),
+        a('ib35705e', 'Manage Subscription'),
+        a('cb165528', 'News features and settings'),
+        a('g7eb2d40', 'Early Access'),
+        a('f8645654', 'Security and account access'),
         a('j95edf76', 'Security'),
-        a('a2197726', 'Manage your account’s security.'),
         a('dd703318', 'Two-factor authentication'),
+        a('b1686800', 'Manage security keys'),
+        a('ae72d4c4', 'Apps and sessions'),
+        a('h1abfbce', 'Connected accounts'),
+        a('cad53944', 'Privacy and safety'),
+        a('e908903a', 'Audience and tagging'),
+        a('f5e59e90', 'Protect your Tweets'),
+        a('f56d108e', 'Photo tagging'),
+        a('b38d81ae', 'Your Tweets'),
+        a('f2bd9c48', 'Content you see')
+      a('c6cb90ec', 'Safety Mode'),
+        a('cbd449a0', 'Mute and block'),
+        a('daef29b8', 'Muted accounts'),
+        a('i0dd9b9e', 'Muted words'),
+        a('a5f32aa2', 'Blocked accounts'),
+        a('i58a274c', 'Direct messages'),
+        a('fd4d9068', 'Discoverability and contacts'),
+        a('bbcafbda', 'Manage contacts'),
+        a('aeddb28a', 'Content preferences'),
+        a('d035a8d0', 'Ads preferences'),
+        a('d0b74a5a', 'Cookie preferences'),
+        a('h3909cd0', 'Inferred identity'),
+        a('bcae496c', 'Off-Twitter activity'),
+        a('h14ba864', 'Data sharing with business partners'),
+        a('jabb9c9a', 'Location information'),
+        a('eb029cac', 'Add location information to your Tweets'),
+        a('h9f2da68', 'Sensitive media'),
+        a('id6a8e1a', 'Reply filter'),
+        a('fc35f762', 'Filtered replies'),
+        a('gaac710a', 'Report Center'),
+        a('cf9b166a', 'Accessibility, display, and languages'),
+        a('a776eed8', 'Autoplay'),
+        a('d495680e', 'Languages'),
+        a('f953f53a', 'Change display language'),
+        a('eafe3288', 'Data usage'),
+        a('afcad7f2', 'Download the app'),
+        a('e8f57e08', 'Personalization and data'),
+        a('gbde3534', 'Interests and ads data'),
+        a('a54826c6', 'Inferred interests from partners'),
+        a('cedbb01c', 'Legal'),
+        a('b4f917d0', 'Miscellaneous'),
+        a('bdfa2b8c', 'Additional resources'),
+        a(
+          'j0783ebe',
+          'Check out other places for helpful information to learn more about Twitter products and services.',
+        ),
+        a('c0398892', 'Release notes'),
+        a(
+          'a5208fae',
+          'Manage aspects of your Twitter experience such as limiting color contrast and motion. These settings affect all the Twitter accounts on this browser.',
+        ),
+        a('d5b646be', 'Vision'),
+        a('jfe6a3a0', 'Motion'),
+        a('a6d5b010', 'Timeline'),
+        a('e8c72272', 'Increase color contrast'),
+        a('dba2cdd2', 'Improves legibility by increasing the contrast between text and background colors.'),
+        a('d070244e', 'Reduce motion'),
+        a('icfa5e8c', 'Limits the amount of in-app animations, including live engagement counts.'),
+        a(
+          'ae41b002',
+          'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
+        ),
+        a('h9d1cfae', 'Receive image description reminder'),
+        a('i8dd9d42', 'Enables a reminder to add image descriptions before a Tweet can be sent.'),
+        a('bd15d030', 'Learn more about accessibility at Twitter'),
+        a('a2dfde68', 'Accessibility at Twitter'),
+        a('f724d1aa', 'Only on Wi-Fi'),
+        a('cf6472c2', 'On cellular or Wi-Fi'),
+        a(
+          'd3a2bde8',
+          'See information about your account, download an archive of your data, or learn about your account deactivation options',
+        ),
+        a('idca4742', 'See your account information like your phone number and email address.'),
+        a('b6ded35e', 'Change your password at any time.'),
+        a('cce24bf4', 'Get insights into the type of information stored for your account.'),
+        a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
+        a('e6afdb48', 'TweetDeck version'),
+        a('e8bada1e', 'Switch back to the previous version of TweetDeck.'),
+        a('i203df96', 'Find out how you can deactivate your account.'),
+        a('j0b9ec86', 'TweetDeck Teams moved'),
+        a('eaf134de', 'We moved the Teams feature to Twitter Delegate in your security and account access settings.'),
+        a('iacafa08', 'Go to security settings'),
+        a('d1f6d336', 'Username'),
+        a('f70cd5ee', 'Phone'),
+        a('ib6f1694', 'Account creation'),
+        a('de323650', 'Female'),
+        a('b6ab31be', 'Male'),
+        a('d12d42dc', 'Automation'),
+        a('hbd12156', 'Request Verification'),
+        a('f70d5780', 'Yes.'),
+        a('dc62d3c6', 'No.'),
+        a('ad31b476', 'Manage your automated account.'),
+        a('c119dee8', 'Birth date'),
+        a('f445dc78', 'Protected Tweets'),
+        a(
+          'd6d80990',
+          'This information applies to your browser or device while you’re logged out. It may be different when you’re logged in.',
+        ),
+        a('e159eeee', 'profile'),
+        a('bad6cf6f', 'your personalization and data settings'),
+        a('g2a9bd3e', 'Automated Account Labels'),
+        a('dd9b3aae', 'What’s an automated account?'),
+        a(
+          'hb6fa97c',
+          'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
+        ),
+        a(
+          'ed8c8d2e',
+          'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
+        ),
+        a('b989e1fe', 'Do I need to label my automated accounts?'),
+        a('i2d599aa', 'How do I label my automated account?'),
+        a('gd5bed72', 'Create a managing account'),
+        a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
+        a('e20a69e8', 'Connect your managing and automated account'),
+        a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
+        a('e427f632', 'Your account is labeled!'),
+        a('a4d7cffa', 'Once the accounts are connected, the automated account will have a label.'),
+        a('a18d6a7d', 'new rules'),
+        a('e9965c14', 'automated account label FAQ'),
+        a('fe36fe10', 'Confirm your password'),
+        a('hccd9dbe', 'Please enter your password in order to get this.'),
+        a(
+          'a3f22d8e',
+          'Select the kinds of notifications you get about your activities, interests, and recommendations.',
+        ),
+        a(
+          'i9c8698e',
+          'Twitter and its partners use cookies to provide you with a better, safer, and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly.',
+        ),
+        a(
+          'ad881a6c',
+          'Allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests.',
+        ),
+        a(
+          'd9c51610',
+          'Don’t allow Twitter to use cookies to gather additional data for tailored ads and communications.',
+        ),
+        a('g0ec0bec', 'Deactivated'),
+        a('g89f4614', 'Your account is deactivated'),
+        a('ce8450f2', 'Control how Twitter personalizes content and collects and shares certain data.'),
+        a(
+          'ja94f34e',
+          'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
+        ),
+        a('bd73f7e6', 'This will enable or disable all of the settings on this page.'),
+        a('a55db872', 'Personalization'),
+        a('ddbc3288', 'Data'),
+        a('i7b329e0', 'See your Twitter data'),
+        a('b934e0ea', 'Disable personalization and data?'),
+        a('bf917cea', 'This may make the Tweets and ads you see less relevant.'),
+        a('a148acba', 'Disable'),
+        a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.'),
+        a('f1d46fd6', 'Yes, I’m sure'),
+        a('ib3357a6', 'Personalized ads'),
+        a(
+          'c4ca418c',
+          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
+        ),
+        a('f6c8ccc8', 'Personalize based on your inferred identity'),
+        a(
+          'f748b0fc',
+          'Twitter will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, Twitter may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to Twitter or email addresses and phone numbers similar to those linked to your Twitter account.',
+        ),
+        a('aa023546', 'Personalize based on the places you’ve been'),
+        a(
+          'cb2ed998',
+          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
+        ),
+        a('b85127bc', 'Allow use of where you see Twitter content across the web'),
+        a(
+          'b276596c',
+          'This setting lets Twitter keep track of your visits to other websites that integrate Twitter content, such as embedded timelines. That information makes Twitter better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
+        ),
+        a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
+        a('d3c20d80', 'Allow additional information sharing with business partners'),
+        a(
+          'jdaf84e4',
+          'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
+        ),
+        a('ffeb836a', 'Settings are unavailable'),
+        a(
+          'f2fb9746',
+          'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
+        ),
+        a('dae57a42', 'Allow all'),
+        a('i7cbc154', 'Allow some'),
+        a('e3a761ee', 'Off'),
+        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
+        a('fe1fc83e', 'These are the age ranges associated with you.'),
+        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+        a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
+        a('jc34b42b', 'Learn more'),
+        a('d9cbe351', function (e) {
+          return e.count + ' login event' + n(e.count, '', 's')
+        }),
+        a('de90b04a', 'Places you’ve been'),
+        a('cbd2ef59', function (e) {
+          return e.count + ' location' + n(e.count, '', 's')
+        }),
+        a('fdb5520a', 'Interests from Twitter'),
+        a('e1c6b2d6', 'Tailored audiences'),
+        a('ed19d10d', function (e) {
+          return (
+            e.audienceCount +
+            ' audience' +
+            n(e.audienceCount, '', 's') +
+            ' from ' +
+            e.advertiserCount +
+            ' advertiser' +
+            n(e.advertiserCount, '', 's')
+          )
+        }),
+        a('f00d0d03', function (e) {
+          return e.count + ' interest' + n(e.count, '', 's')
+        }),
+        a('hf9c2caa', 'Request advertiser list?'),
+        a('c29b7971', function (e) {
+          return 'This will be sent to ' + e.primaryEmail + '.'
+        }),
+        a('a8276fac', 'Request advertiser list'),
+        a('g7912a84', 'Got it. Your list will be emailed once it’s ready.'),
+        a(
+          'fdfed926',
+          'You can opt out of interest-based advertising in your personalization and data settings. This will change the ads you see on Twitter, however it won’t remove you from advertisers’ audiences.',
+        ),
+        a('ed8c03f5', 'Learn more'),
+        a('e1a4daac', function (e) {
+          return e.num_audiences + ' audiences'
+        }),
+        a('acb25e32', function (e) {
+          return e.num_advertisers + ' advertisers'
+        }),
+        a('j4fa776e', 'Phones'),
+        a('i7acdb36', 'Tablets'),
+        a('c112dfc8', 'Desktop'),
+        a('jd8607ba', 'Activated on'),
+        a('ea4f6c9e', 'Browsers'),
+        a('d750b93f', function (e) {
+          return e.count + ' browser' + n(e.count, '', 's')
+        }),
+        a('a9783602', 'Mobile Devices'),
+        a('j043aa31', function (e) {
+          return e.count + ' mobile device' + n(e.count, '', 's')
+        }),
+        a('ae415fd2', 'This setting is off.'),
+        a('a90be7b4', 'Email addresses'),
+        a('e440acdb', 'Off-Twitter activity'),
+        a('adaafb3f', 'Inferred identity'),
+        a('f0f72665', 'Inferred identity'),
+        a('a8045fcb', 'Off-Twitter activity'),
+        a('h66398d1', 'Off-Twitter activity'),
+        a('b1d602d7', 'Learn more'),
+        a('d1597ccb', 'Learn more'),
+        a('aa1515eb', 'Learn more'),
+        a('b056d9dc', 'This is your account’s primary language setting.'),
+        a('h68bc23c', 'These additional languages are used to personalize your experience.'),
+        a(
+          'fbf0e61e',
+          'If you haven’t already specified a gender, this is the one associated with your account based on your profile and activity. This information won’t be displayed publicly.',
+        ),
+        a('b4568a3a', 'Add your gender'),
+        a('c0be743e', 'Gender updated'),
+        a('b7cb74e0', 'This is the gender that Twitter has most strongly associated with you.'),
+        a('cdb0d3e6', 'Do not use this gender for personalization.'),
+        a(
+          'd1a276bc',
+          'These are the places Twitter uses to show you more relevant content. You won’t see places listed here if you turned off “Personalize based on places you’ve been”.',
+        ),
+        a('ddefdd1c', 'Remove places you’ve been?'),
+        a('hea740ac', 'This will take some time, and can’t be undone.'),
+        a('a26e0d52', 'Got it. These places will be removed.'),
+        a('he447966', 'No places currently found.'),
+        a('b9d98dec', 'location settings'),
+        a('e27e4fce', 'Unknown location'),
+        a('ib55eb6b', 'Connected apps'),
+        a('e5a4a539', 'Learn more'),
+        a('gc8f2e14', 'You can opt out of interest-based advertising in your personalization and data settings.'),
+        a('e50b5b45', 'Learn more'),
+        a('d3310e49', function (e) {
+          return 'A file with all the information associated with your account will be sent to ' + e.primaryEmail + '.'
+        }),
+        a('ib03e8c8', 'Download a file with all the information associated with your account to this device?'),
+        a('g49741e8', 'Download'),
+        a('dc370a0c', 'Got it. Your data will be emailed once it’s ready.'),
+        a('c07b4316', 'Interested in'),
+        a('e97196fe', 'Known for'),
+        a(
+          'e652513e',
+          'These are some of the interests matched to you based on your profile, activity, and the Topics you follow. These are used to personalize your experience across Twitter, including the ads you see. You can adjust your interests if something doesn’t look right. Any changes you make may take a little while to go into effect.',
+        ),
+        a(
+          'gd1ce494',
+          'We believe you are known for the below interests. These are used to show more of your content to people interested in those areas. You can adjust them if something doesn’t look right. Any changes you make may take a little while to go into effect.',
+        ),
+        a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
+        a('i8385a2c', 'Android'),
+        a('h201c4c2', 'iOS'),
+        a('d6eb9b9a', 'Twitter data'),
+        a(
+          'b708417c',
+          'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
+        ),
+        a('jbf5843e', 'Periscope data'),
+        a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
+        a('cdcc2ad4', 'Download failed'),
+        a('dbeff87a', 'Request archive'),
+        a('ce5d2c46', 'Temporarily unavailable'),
+        a('b2ed92c4', 'Requesting archive'),
+        a('gee8110e', 'Download archive'),
+        a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
+        a(
+          'c2254084',
+          'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
+        ),
+        a(
+          'f62d1d9e',
+          'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
+        ),
+        a('b221ca4c', 'We’ll let you know when your data is ready to download'),
+        a('ccb37011', 'complete this form'),
+        a('g1aced04', 'Apps, devices & information'),
+        a('a2981062', 'Managing account'),
+        a('aff4540e', 'Change managing account'),
+        a('b8b9d100', 'Set up account automation'),
+        a('e0bc51f6', 'Turn off account automation'),
+        a('b92190c2', 'Managing account connected'),
+        a('fb03b39a', 'Managing account disconnected'),
+        a('bd51ddfa', 'We are unable to disconnect your managing account at this time. Please try again later.'),
+        a('e91c15f6', 'Disconnect your managing account?'),
+        a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
+        a('bd12cf34', 'Yes, disconnect'),
+        a('f79acef3', 'Learn more'),
+        a('a2197726', 'Manage your account’s security.'),
         a(
           'eb89b0e0',
           'Help protect your account from unauthorized access by requiring a second authentication method in addition to your Twitter password. You can choose a text message, authentication app, or security key.',
@@ -3566,7 +3927,6 @@
         ),
         a('a999cb72', 'Save account changes'),
         a('acc20812', 'Re-enter your Twitter password to save changes to your account.'),
-        a('f8645654', 'Security and account access'),
         a(
           'b02df748',
           'Manage your account’s security and keep track of your account’s usage including apps that you have connected to your account.',
@@ -3575,15 +3935,11 @@
           'g2841de4',
           'See information about when you logged into your account and the apps you connected to your account.',
         ),
-        a('ae72d4c4', 'Apps and sessions'),
-        a('h1abfbce', 'Connected accounts'),
         a('j748604a', 'Manage Google or Apple accounts connected to Twitter to log in.'),
         a('f280cc88', 'Twitter Delegate'),
         a('a310511c', 'Manage your shared accounts.'),
         a('jc02ae68', 'Connected apps'),
         a('dd82312a', 'Sessions'),
-        a('b523ecc6', 'Account access history'),
-        a('hc36dbba', 'Logged-in devices and apps'),
         a('e5e8a89a', 'Loading apps'),
         a('hfa9a2c8', 'Manage connected apps in a flash'),
         a('dd1b86f9', function (e) {
@@ -3617,42 +3973,30 @@
           return '' + e.learnMoreLabel
         }),
         a('ed5ab16a', 'Active now'),
-        a('cad53944', 'Privacy and safety'),
-        a('df5fa1d0', 'Manage what information you see and share on Twitter.')
-      a('a244ed50', 'Your Twitter activity'),
-        a('e908903a', 'Audience and tagging'),
+        a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
+        a('a244ed50', 'Your Twitter activity'),
         a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
-        a('b38d81ae', 'Your Tweets'),
         a('f8d4746c', 'Manage the information associated with your Tweets.'),
-        a('f2bd9c48', 'Content you see'),
         a('b2810ee8', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
         a('f01fd982', 'Safety Mode (Beta)'),
         a('dcc5aa06', 'Manage autoblocks and preferences.'),
-        a('cbd449a0', 'Mute and block'),
         a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
         a('cc950d94', 'Manage who can message you directly.'),
         a('fe37f854', 'Manage who can see your Spaces listening activity'),
-        a('fd4d9068', 'Discoverability and contacts'),
         a('ab987f3c', 'Control your discoverability settings and manage contacts you’ve imported.'),
         a('d3d319d6', 'Data sharing and off-Twitter activity'),
         a('i83cab8a', 'Data sharing and personalization'),
-        a('d035a8d0', 'Ads preferences'),
         a('f9ff2202', 'Manage your ads experience on Twitter.'),
-        a('d0b74a5a', 'Cookie preferences'),
         a('gd4302ec', 'Manage your cookie experience on Twitter.'),
-        a('bcae496c', 'Off-Twitter activity'),
         a(
           'acc60552',
           'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
         ),
-        a('h3909cd0', 'Inferred identity'),
         a(
           'e9f48aee',
           'Allow Twitter to personalize your experience with your inferred activity, e.g. activity on devices you haven’t used to log in to Twitter.',
         ),
-        a('h14ba864', 'Data sharing with business partners'),
         a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
-        a('jabb9c9a', 'Location information'),
         a('a686c48a', 'Manage the location information Twitter uses to personalize your experience.'),
         a('cdcef7b6', 'Learn more about privacy on Twitter'),
         a('a607862a', 'Privacy policy'),
@@ -3667,7 +4011,6 @@
         a('e83386de', 'Only people you follow can mention you'),
         a('ea2a8236', 'Don’t allow others to mention you?'),
         a('e0870a5e', 'You won’t be mentioned in Tweets and replies.'),
-        a('f5e59e90', 'Protect your Tweets'),
         a(
           'e860ff84',
           'When selected, your Tweets and other account information are only visible to people who follow you.',
@@ -3680,24 +4023,16 @@
           'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
         ),
         a('f527b322', 'Protect my account'),
-        a('f56d108e', 'Photo tagging'),
         a('d165c992', 'Anyone can tag you'),
         a('ea339390', 'Only people you follow can tag you'),
-        a('e3a761ee', 'Off'),
         a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
         a(
           'ea28ca64',
           'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
         ),
-        a('eb029cac', 'Add location information to your Tweets'),
         a('fc1d217c', 'Display media that may contain sensitive content'),
-        a('h1f01a24', 'Interests'),
         a('j018f2a2', 'Explore settings'),
         a('h1ef00dc', 'Search settings'),
-        a('h9f2da68', 'Sensitive media'),
-        a('a5f32aa2', 'Blocked accounts'),
-        a('daef29b8', 'Muted accounts'),
-        a('i0dd9b9e', 'Muted words'),
         a('b4006390', 'Allow message requests from everyone'),
         a(
           'f7da127c',
@@ -3718,12 +4053,6 @@
           'bd557506',
           'Let people you’re messaging with know when you’ve seen their messages. Read receipts are not shown on message requests.',
         ),
-        a('ib3357a6', 'Personalized ads'),
-        a(
-          'c4ca418c',
-          'You will always see ads on Twitter based on your Twitter activity. When this setting is enabled, Twitter may further personalize ads from Twitter advertisers, on and off Twitter, by combining your Twitter activity with other online activity and information from our partners.',
-        ),
-        a('da202f9a', 'Your advertiser list'),
         a('b5fe50fc', 'Ads Categories'),
         a(
           'c31a2ea6',
@@ -3731,29 +4060,7 @@
         ),
         a('if996630', 'Gambling'),
         a('f80a33a0', 'Allow use of where you see Twitter content across the Web'),
-        a(
-          'b276596c',
-          'This setting lets Twitter keep track of your visits to other websites that integrate Twitter content, such as embedded timelines. That information makes Twitter better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
-        ),
-        a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
-        a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.'),
-        a('f1d46fd6', 'Yes, I’m sure'),
-        a('f6c8ccc8', 'Personalize based on your inferred identity'),
-        a(
-          'f748b0fc',
-          'Twitter will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, Twitter may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to Twitter or email addresses and phone numbers similar to those linked to your Twitter account.',
-        ),
-        a('d3c20d80', 'Allow additional information sharing with business partners'),
-        a(
-          'jdaf84e4',
-          'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
-        ),
         a('dc20d918', 'Personalize based on places you’ve been'),
-        a(
-          'cb2ed998',
-          'Twitter always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, Twitter may also personalize your experience based on other places you’ve been.',
-        ),
-        a('d9138166', 'See places you’ve been'),
         a('f2b23062', 'Accessibility, display and languages'),
         a('jf907f5c', 'Manage how Twitter content is displayed to you.'),
         a('f371a362', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
@@ -3761,9 +4068,7 @@
           'a5ce82a4',
           'Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.',
         ),
-        a('d495680e', 'Languages'),
         a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
-        a('eafe3288', 'Data usage'),
         a(
           'd76fe4fc',
           'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
@@ -3788,26 +4093,7 @@
         a('i51130d4', 'Google'),
         a('e28901f2', 'Apple'),
         a('cf8560be', 'Connected'),
-        a('d12d42dc', 'Automation'),
-        a('ad31b476', 'Manage your automated account.'),
-        a('a2981062', 'Managing account'),
-        a('aff4540e', 'Change managing account'),
-        a('b8b9d100', 'Set up account automation'),
-        a('e0bc51f6', 'Turn off account automation'),
-        a('b92190c2', 'Managing account connected'),
-        a('fb03b39a', 'Managing account disconnected'),
-        a('bd51ddfa', 'We are unable to disconnect your managing account at this time. Please try again later.'),
-        a('e91c15f6', 'Disconnect your managing account?'),
-        a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
-        a('bd12cf34', 'Yes, disconnect'),
-        a('f79acef3', 'Learn more'),
         a('d88102c0', 'If selected, Twitter will use less network data.'),
-        a('a776eed8', 'Autoplay'),
-        a('f724d1aa', 'Only on Wi-Fi'),
-        a('cf6472c2', 'On cellular or Wi-Fi'),
-        a('f56af9cc', 'Download an archive of your data'),
-        a('b2ed92c4', 'Requesting archive'),
-        a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
         a('c7227886', 'Go to My Twitter Data'),
         a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
@@ -3823,7 +4109,6 @@
         a('fbc92b61', function (e) {
           return 'Twitter data (' + e.currentIndex + ' of ' + e.count + ')'
         }),
-        a('gee8110e', 'Download archive'),
         a('c326f156', 'Archive downloaded'),
         a('c9fe9b56', 'Your archive is about to download'),
         a('j54b679b', function (e) {
@@ -3870,7 +4155,6 @@
           'c0fcb08a',
           'Changing your username will result in your checkmark and affiliations being temporarily removed until they are reviewed.',
         ),
-        a('d1f6d336', 'Username'),
         a('de65c756', 'Suggestions'),
         a('ebeeac1a', 'Change email'),
         a('dc013356', 'Current'),
@@ -3882,7 +4166,6 @@
         a('h021352f', function (e) {
           return '' + e.resendConfirmationLabel
         }),
-        a('ab1f7ee0', 'Change your password'),
         a('d241169c', 'Current password'),
         a('a9bc3044', 'New password'),
         a('b8c03cfc', 'Confirm password'),
@@ -3960,7 +4243,6 @@
           'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
         ),
         a('cd195528', 'Add new security key'),
-        a('b1686800', 'Manage security keys'),
         a('a1860ee8', 'Temporary password'),
         a('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
         a('d8612d9c', 'Turn on Text message or Authentication app first'),
@@ -4002,10 +4284,8 @@
         a('g247dc1c', 'Loading temporary password'),
         a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
         a('d70fceac', 'This password will expire in one hour.'),
-        a('c21037d0', 'Country'),
         a('j924d222', 'Change country'),
         a('j01f061b', 'Learn more'),
-        a('f953f53a', 'Change display language'),
         a(
           'b67e1fc0',
           'Select your preferred language for headlines, buttons, and other text from Twitter on this account. This does not change the language of the content you see in your timeline.',
@@ -4023,7 +4303,6 @@
         a('ac9314aa', 'Let people who have your phone number find you on Twitter'),
         a('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
         a('ac77c66c', 'Contacts'),
-        a('bbcafbda', 'Manage contacts'),
         a('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
         a('b864be7a', 'Remove all contacts'),
         a('g5fa1090', 'Remove all contacts?'),
@@ -4033,8 +4312,6 @@
         ),
         a('ca24589e', 'No name'),
         a('jb9b8121', 'Learn more'),
-        a('fe36fe10', 'Confirm your password'),
-        a('hccd9dbe', 'Please enter your password in order to get this.'),
         a(
           'j5267914',
           'Location labels you’ve added to your Tweets will no longer be visible on Twitter.com, Twitter for iOS, and Twitter for Android. These updates may take some time to go into effect.',
@@ -4047,9 +4324,7 @@
         a('f4d69920', 'Remove all location information attached to your Tweets?'),
         a('g00413fb', 'Learn more'),
         a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
-        a('d13e165c', 'TweetDeck Teams'),
         a('cf24a082', 'Turn on TweetDeck Teams'),
-        a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
         a('a2ffab26', 'Allow anyone to add you to their team'),
         a('h69bd4ee', 'Only allow people you follow to add you to their team'),
         a(
@@ -4071,7 +4346,6 @@
         a('i4d54b0e', 'Trends for you'),
         a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
         a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
-        a('a55db872', 'Personalization'),
         a('h0b5152e', 'Change location'),
         a('dfeada5e', 'Explore locations'),
         a('ac854308', 'Policy'),
@@ -4163,7 +4437,6 @@
         a('c7905f89', function (e) {
           return 'Born ' + e.year
         }),
-        a('c119dee8', 'Birth date'),
         a('bbf0afc8', 'Add your date of birth'),
         a('f98d367e', 'Edit date of birth?'),
         a(
@@ -4224,7 +4497,6 @@
         ),
         a('e8eb54a0', 'Weekly reports for your account'),
         a('ib80b0f2', 'New notifications'),
-        a('i58a274c', 'Direct messages'),
         a('b109e308', 'Tweets emailed to you'),
         a('ddd34fa2', 'Top Tweets and Stories'),
         a('b7ea9502', 'Updates about the performance of your Tweets'),
@@ -4292,14 +4564,10 @@
           'When you mute accounts, their messages will be filtered and sent to the bottom of your message request list.',
         ),
         a('ec202165', 'Learn more'),
-        a('aeddb28a', 'Content preferences'),
         a('hfb77cf6', 'Safety'),
         a('f350f0c0', 'Recommendations'),
         a('cb9bb630', 'Select which languages you want recommended Tweets, people, and trends to include.'),
-        a('e8f57e08', 'Personalization and data'),
         a('hfc86556', 'Muted'),
-        a('dae57a42', 'Allow all'),
-        a('i7cbc154', 'Allow some'),
         a('d623aecc', 'Share an account with people who have delegated roles.'),
         a('f3029d5c', 'When this setting is on, people can invite you to share their account.'),
         a('cd1305e8', 'Allow others to invite you to their account'),
@@ -4425,7 +4693,6 @@
         a('h667fc02', 'You’ve ended your active Twitter session.'),
         a('ddcd3d26', 'Loading session data'),
         a('d2f0f3fe', 'We can not find this session'),
-        a('gaac710a', 'Report Center'),
         a('ga05517a', 'You haven’t created any reports'),
         a('ea1715c0', 'When you do, they’ll show up here.'),
         a('f154bd64', 'Autoblocked Tweets'),
@@ -4443,11 +4710,6 @@
           'We use technology to help us identify sensitive media, so while we’re always improving, we may not get it right every time.',
         ),
         a('cc682803', 'sensitive media policy'),
-        a('ffeb836a', 'Settings are unavailable'),
-        a(
-          'f2fb9746',
-          'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
-        ),
         a('aa4342be', 'Graphic violence'),
         a('jfec3aa0', 'Adult content'),
         a(
@@ -4477,7 +4739,6 @@
         a('ga952ac9', function (e) {
           return 'NEW' + e.ttc_blue_subscription
         }),
-        a('ib35705e', 'Manage Subscription'),
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
@@ -4491,8 +4752,6 @@
           'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
         a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
-        a('h201c4c2', 'iOS'),
-        a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
         a('ib8ebf3b', function (e) {
           return (
@@ -4506,14 +4765,12 @@
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
-        a('cb165528', 'News features and settings'),
         a('b16486e8', 'A better reading experience on and off Twitter.'),
         a('b62d6e4c', 'Reader'),
         a(
           'g88d2040',
           'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting the book button from within any Tweet in a thread.',
         ),
-        a('g7eb2d40', 'Early Access'),
         a('ce5d8470', 'Twitter Blue Labs gives members early access to some of Twitter’s newest features.'),
         a('daa05768', 'Longer Tweets'),
         a('f1e443e3', function (e) {
@@ -4537,7 +4794,6 @@
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
-        a('dd0c889e', 'Profile customization'),
         a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
@@ -4585,14 +4841,13 @@
         a('g1b8020c', 'Last 30 days'),
         a('jb13b840', 'All-time'),
         a('b4f24360', 'You have no new Coins in the last 30 days.'),
-        a('ff9ed474', 'Total earnings'),
         a('d59dbf8a', 'Overview'),
         a('g652fc4c', 'You have no payout history this month.'),
         a('d55e017a', 'This month'),
         a('f883322d', function (e) {
           return 'Transaction ID ' + e.transactionId
-        }),
-        a('d978f43e', 'New Subscriptions'),
+        })
+      a('d978f43e', 'New Subscriptions'),
         a('d113fc10', 'You have no new Subscriptions at this time.'),
         a('h7a41c02', 'Renewals'),
         a('eedf2eaa', 'You have no renewals at this time.'),
@@ -4699,7 +4954,6 @@
           'bff84f2a',
           'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
         ),
-        a('c6cb90ec', 'Safety Mode'),
         a('fabe1398', 'Autoblocks'),
         a('h58f67dc', 'What’s Safety Mode?'),
         a(
@@ -4821,8 +5075,8 @@
         a('j3495480', 'Tell us about the platforms you use to share your content.'),
         a('a3021318', 'Facebook'),
         a('f6965e34', 'Instagram'),
-        a('b98d0edc', 'Etsy')
-      a('d4d74bb4', 'Patreon'),
+        a('b98d0edc', 'Etsy'),
+        a('d4d74bb4', 'Patreon'),
         a('ca07aa46', 'YouTube'),
         a('c6d71a04', 'TikTok'),
         a('c2680406', 'Snapchat'),
@@ -4996,7 +5250,6 @@
           'Select which types of Tweets you want to undo before they’re public, plus how long your undo period is.',
         ),
         a('bcf3a9e6', 'Manage settings that help limit unwelcome replies.'),
-        a('id6a8e1a', 'Reply filter'),
         a('c048fd3a', 'Filter potentially unwelcome replies'),
         a(
           'eb935b6e',
@@ -5102,13 +5355,10 @@
         ),
         a('ead349a8', 'The latest stories on Twitter - as told by Tweets.'),
         a('a19ce060', 'Explore is unavailable.'),
-        a('g49741e8', 'Download'),
         a('f7d1a8e0', 'Android App'),
         a('aab2fae0', 'iOS App'),
         a('eedfd35c', 'Company'),
-        a('cedbb01c', 'Legal'),
         a('a35d9c9a', 'Resources'),
-        a('a6d5b010', 'Timeline'),
         a('a50ba822', 'Search for GIFs'),
         a('c6f5ac52', 'Categories — GIF Search'),
         a('ab468379', function (e) {
@@ -5308,7 +5558,6 @@
         ),
         a('ef0b8028', 'You rang?'),
         a('c380d684', 'Your report'),
-        a('f15bfdb4', 'Account information'),
         a('c7714936', 'We flagged these Tweets as sensitive content'),
         a('bfaadb2d', function (e) {
           return e.appName + ' wants to access your Twitter account'
@@ -5333,8 +5582,6 @@
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
         a('deaf5b16', 'Retry'),
-        a('a3841918', 'Email'),
-        a('f70cd5ee', 'Phone'),
         a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
         a('d44efc66', 'What’s your name?'),
@@ -5630,7 +5877,6 @@
         a('d3938be8', 'Words'),
         a('e0dded5e', 'Engagement'),
         a('a097f7ba', 'Dates'),
-        a('a03dacaa', 'Language'),
         a('c03f15ca', 'Any language'),
         a('cb334136', 'Links'),
         a('e8f38622', 'Include Tweets with links'),
@@ -5659,257 +5905,13 @@
         a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
         a('i6e5440e', 'Minimum Retweets'),
         a('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
-        a('hc73f030', 'Your Account'),
-        a('e731db5a', 'Password reset'),
-        a('hfb92b14', 'Deactivate your account'),
-        a('bf96fda4', 'Age'),
-        a('j9d10268', 'Account activity'),
-        a('i6b3f59a', 'Account history'),
-        a('a8d0108e', 'Gender'),
-        a('abedd45c', 'Request your data'),
-        a('b7fde2b8', 'Your Twitter data'),
-        a('fc35f762', 'Filtered replies'),
-        a('cf9b166a', 'Accessibility, display, and languages'),
-        a('afcad7f2', 'Download the app'),
-        a('gbde3534', 'Interests and ads data'),
-        a('a54826c6', 'Inferred interests from partners'),
         a('e95b9448', 'General'),
         a('f458a3b2', 'Privacy'),
-        a(
-          'ja94f34e',
-          'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
-        ),
         a('bdc6f5b8', 'Your account'),
-        a('bdfa2b8c', 'Additional resources'),
         a('f24266fe', 'Earlybird Settings'),
         a('df483b48', 'Feature switches'),
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
-        a('b4f917d0', 'Miscellaneous'),
-        a(
-          'j0783ebe',
-          'Check out other places for helpful information to learn more about Twitter products and services.',
-        ),
-        a('c0398892', 'Release notes'),
-        a(
-          'a5208fae',
-          'Manage aspects of your Twitter experience such as limiting color contrast and motion. These settings affect all the Twitter accounts on this browser.',
-        ),
-        a('d5b646be', 'Vision'),
-        a('jfe6a3a0', 'Motion'),
-        a('e8c72272', 'Increase color contrast'),
-        a('dba2cdd2', 'Improves legibility by increasing the contrast between text and background colors.'),
-        a('d070244e', 'Reduce motion'),
-        a('icfa5e8c', 'Limits the amount of in-app animations, including live engagement counts.'),
-        a(
-          'ae41b002',
-          'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
-        ),
-        a('h9d1cfae', 'Receive image description reminder'),
-        a('i8dd9d42', 'Enables a reminder to add image descriptions before a Tweet can be sent.'),
-        a('bd15d030', 'Learn more about accessibility at Twitter'),
-        a('a2dfde68', 'Accessibility at Twitter'),
-        a(
-          'd3a2bde8',
-          'See information about your account, download an archive of your data, or learn about your account deactivation options',
-        ),
-        a('idca4742', 'See your account information like your phone number and email address.'),
-        a('b6ded35e', 'Change your password at any time.'),
-        a('cce24bf4', 'Get insights into the type of information stored for your account.'),
-        a('e6afdb48', 'TweetDeck version'),
-        a('e8bada1e', 'Switch back to the previous version of TweetDeck.'),
-        a('i203df96', 'Find out how you can deactivate your account.'),
-        a('j0b9ec86', 'TweetDeck Teams moved'),
-        a('eaf134de', 'We moved the Teams feature to Twitter Delegate in your security and account access settings.'),
-        a('iacafa08', 'Go to security settings'),
-        a('ib6f1694', 'Account creation'),
-        a('de323650', 'Female'),
-        a('b6ab31be', 'Male'),
-        a('hbd12156', 'Request Verification'),
-        a('f70d5780', 'Yes.'),
-        a('dc62d3c6', 'No.'),
-        a('f445dc78', 'Protected Tweets'),
-        a(
-          'd6d80990',
-          'This information applies to your browser or device while you’re logged out. It may be different when you’re logged in.',
-        ),
-        a('e159eeee', 'profile'),
-        a('bad6cf6f', 'your personalization and data settings'),
-        a('g2a9bd3e', 'Automated Account Labels'),
-        a('dd9b3aae', 'What’s an automated account?'),
-        a(
-          'hb6fa97c',
-          'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
-        ),
-        a(
-          'ed8c8d2e',
-          'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        ),
-        a('b989e1fe', 'Do I need to label my automated accounts?'),
-        a('i2d599aa', 'How do I label my automated account?'),
-        a('gd5bed72', 'Create a managing account'),
-        a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
-        a('e20a69e8', 'Connect your managing and automated account'),
-        a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
-        a('e427f632', 'Your account is labeled!'),
-        a('a4d7cffa', 'Once the accounts are connected, the automated account will have a label.'),
-        a('a18d6a7d', 'new rules'),
-        a('e9965c14', 'automated account label FAQ'),
-        a(
-          'a3f22d8e',
-          'Select the kinds of notifications you get about your activities, interests, and recommendations.',
-        ),
-        a(
-          'i9c8698e',
-          'Twitter and its partners use cookies to provide you with a better, safer, and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly.',
-        ),
-        a(
-          'ad881a6c',
-          'Allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests.',
-        ),
-        a(
-          'd9c51610',
-          'Don’t allow Twitter to use cookies to gather additional data for tailored ads and communications.',
-        ),
-        a('g0ec0bec', 'Deactivated'),
-        a('g89f4614', 'Your account is deactivated'),
-        a('ce8450f2', 'Control how Twitter personalizes content and collects and shares certain data.'),
-        a('bd73f7e6', 'This will enable or disable all of the settings on this page.'),
-        a('ddbc3288', 'Data'),
-        a('i7b329e0', 'See your Twitter data'),
-        a('b934e0ea', 'Disable personalization and data?'),
-        a('bf917cea', 'This may make the Tweets and ads you see less relevant.'),
-        a('a148acba', 'Disable'),
-        a('aa023546', 'Personalize based on the places you’ve been'),
-        a('b85127bc', 'Allow use of where you see Twitter content across the web'),
-        a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-        a('fe1fc83e', 'These are the age ranges associated with you.'),
-        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
-        a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
-        a('jc34b42b', 'Learn more'),
-        a('d9cbe351', function (e) {
-          return e.count + ' login event' + n(e.count, '', 's')
-        }),
-        a('de90b04a', 'Places you’ve been'),
-        a('cbd2ef59', function (e) {
-          return e.count + ' location' + n(e.count, '', 's')
-        }),
-        a('fdb5520a', 'Interests from Twitter'),
-        a('e1c6b2d6', 'Tailored audiences'),
-        a('ed19d10d', function (e) {
-          return (
-            e.audienceCount +
-            ' audience' +
-            n(e.audienceCount, '', 's') +
-            ' from ' +
-            e.advertiserCount +
-            ' advertiser' +
-            n(e.advertiserCount, '', 's')
-          )
-        }),
-        a('f00d0d03', function (e) {
-          return e.count + ' interest' + n(e.count, '', 's')
-        }),
-        a('hf9c2caa', 'Request advertiser list?'),
-        a('c29b7971', function (e) {
-          return 'This will be sent to ' + e.primaryEmail + '.'
-        }),
-        a('a8276fac', 'Request advertiser list'),
-        a('g7912a84', 'Got it. Your list will be emailed once it’s ready.'),
-        a(
-          'fdfed926',
-          'You can opt out of interest-based advertising in your personalization and data settings. This will change the ads you see on Twitter, however it won’t remove you from advertisers’ audiences.',
-        ),
-        a('ed8c03f5', 'Learn more'),
-        a('e1a4daac', function (e) {
-          return e.num_audiences + ' audiences'
-        }),
-        a('acb25e32', function (e) {
-          return e.num_advertisers + ' advertisers'
-        }),
-        a('j4fa776e', 'Phones'),
-        a('i7acdb36', 'Tablets'),
-        a('c112dfc8', 'Desktop'),
-        a('jd8607ba', 'Activated on'),
-        a('ea4f6c9e', 'Browsers'),
-        a('d750b93f', function (e) {
-          return e.count + ' browser' + n(e.count, '', 's')
-        }),
-        a('a9783602', 'Mobile Devices'),
-        a('j043aa31', function (e) {
-          return e.count + ' mobile device' + n(e.count, '', 's')
-        }),
-        a('ae415fd2', 'This setting is off.'),
-        a('a90be7b4', 'Email addresses'),
-        a('e440acdb', 'Off-Twitter activity'),
-        a('adaafb3f', 'Inferred identity'),
-        a('f0f72665', 'Inferred identity'),
-        a('a8045fcb', 'Off-Twitter activity'),
-        a('h66398d1', 'Off-Twitter activity'),
-        a('b1d602d7', 'Learn more'),
-        a('d1597ccb', 'Learn more'),
-        a('aa1515eb', 'Learn more'),
-        a('b056d9dc', 'This is your account’s primary language setting.'),
-        a('h68bc23c', 'These additional languages are used to personalize your experience.'),
-        a(
-          'fbf0e61e',
-          'If you haven’t already specified a gender, this is the one associated with your account based on your profile and activity. This information won’t be displayed publicly.',
-        ),
-        a('b4568a3a', 'Add your gender'),
-        a('c0be743e', 'Gender updated'),
-        a('b7cb74e0', 'This is the gender that Twitter has most strongly associated with you.'),
-        a('cdb0d3e6', 'Do not use this gender for personalization.'),
-        a(
-          'd1a276bc',
-          'These are the places Twitter uses to show you more relevant content. You won’t see places listed here if you turned off “Personalize based on places you’ve been”.',
-        ),
-        a('ddefdd1c', 'Remove places you’ve been?'),
-        a('hea740ac', 'This will take some time, and can’t be undone.'),
-        a('a26e0d52', 'Got it. These places will be removed.'),
-        a('he447966', 'No places currently found.'),
-        a('b9d98dec', 'location settings'),
-        a('e27e4fce', 'Unknown location'),
-        a('ib55eb6b', 'Connected apps'),
-        a('e5a4a539', 'Learn more'),
-        a('gc8f2e14', 'You can opt out of interest-based advertising in your personalization and data settings.'),
-        a('e50b5b45', 'Learn more'),
-        a('d3310e49', function (e) {
-          return 'A file with all the information associated with your account will be sent to ' + e.primaryEmail + '.'
-        }),
-        a('ib03e8c8', 'Download a file with all the information associated with your account to this device?'),
-        a('dc370a0c', 'Got it. Your data will be emailed once it’s ready.'),
-        a('c07b4316', 'Interested in'),
-        a('e97196fe', 'Known for'),
-        a(
-          'e652513e',
-          'These are some of the interests matched to you based on your profile, activity, and the Topics you follow. These are used to personalize your experience across Twitter, including the ads you see. You can adjust your interests if something doesn’t look right. Any changes you make may take a little while to go into effect.',
-        ),
-        a(
-          'gd1ce494',
-          'We believe you are known for the below interests. These are used to show more of your content to people interested in those areas. You can adjust them if something doesn’t look right. Any changes you make may take a little while to go into effect.',
-        ),
-        a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
-        a('d6eb9b9a', 'Twitter data'),
-        a(
-          'b708417c',
-          'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
-        ),
-        a('jbf5843e', 'Periscope data'),
-        a('ea886c6e', 'You can request an archive of your Periscope data on Periscope directly.'),
-        a('cdcc2ad4', 'Download failed'),
-        a('dbeff87a', 'Request archive'),
-        a('hb02ed28', 'The download your data feature is unavailable right now. Try again at a later date.'),
-        a(
-          'c2254084',
-          'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
-        ),
-        a(
-          'f62d1d9e',
-          'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
-        ),
-        a('b221ca4c', 'We’ll let you know when your data is ready to download'),
-        a('ccb37011', 'complete this form'),
-        a('g1aced04', 'Apps, devices & information'),
         a('g931a6e5', function (e) {
           return 'You’re following ' + e.topic
         }),
@@ -6053,11 +6055,7 @@
           return 'Check out @' + e.screenName + ' on Twitter'
         }),
         a('d58c1576', 'Watch this video on Twitter'),
-        a('bdc49424', 'See what people are saying about this on Twitter.'),
-        a('e38c0975', function (e) {
-          return 'Join the conversation for more from @' + e.screenName + '.'
-        }),
-        a('ie816cb4', 'Watch this video and so much more on Twitter.')
+        a('bdc49424', 'See what people are saying about this on Twitter.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6077,9 +6075,13 @@
           c(e, t)
         )
       }
-      a('e3521fcd', function (e) {
-        return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+      a('e38c0975', function (e) {
+        return 'Join the conversation for more from @' + e.screenName + '.'
       }),
+        a('ie816cb4', 'Watch this video and so much more on Twitter.'),
+        a('e3521fcd', function (e) {
+          return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
+        }),
         a('g9079b94', 'You may only view analytics about your own Tweets.'),
         a('a57daeb2', 'Tweet Analytics'),
         a('b858a7cc', 'This is a promoted Tweet. The number of times this Tweet was seen is private.'),
@@ -7334,10 +7336,10 @@
         a('ad86db50', 'Make a Deck'),
         a('e1307bdf', function (e) {
           return 'Refresh column - ' + e.title
-        }),
-        a('ce091d36', 'Search Tweets'),
-        a('a443bbc0', 'Close Search')
-      a('e7a12d72', 'Converted to search column'),
+        })
+      a('ce091d36', 'Search Tweets'),
+        a('a443bbc0', 'Close Search'),
+        a('e7a12d72', 'Converted to search column'),
         a('f29424f0', 'Change back'),
         a('e1cdd9c4', 'Before you switch to top Tweets...'),
         a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
@@ -10079,6 +10081,163 @@
               },
             },
             {
+              key: 'f1a3d63d',
+              get: function get() {
+                return ['Add your date of birth to your ', '.']
+              },
+            },
+            {
+              key: 'f2df3f23',
+              get: function get() {
+                return ['Control how Twitter customizes your experience in ']
+              },
+            },
+            {
+              key: 'j31f2f97',
+              get: function get() {
+                return ['Yes, all automated accounts need to be labeled. This is required under our ', '.']
+              },
+            },
+            {
+              key: 'ed8f77d3',
+              get: function get() {
+                return ['Learn more on the ', ' page.']
+              },
+            },
+            {
+              key: 'if2bb997',
+              get: function get() {
+                return ['Sorry to see you go. #GoodBye']
+              },
+            },
+            {
+              key: 'bf82b0a7',
+              get: function get() {
+                return [
+                  'If you haven’t provided a date of birth, we’ve provided an age range based on your Twitter profile and activity. Age information is used to personalize your experience. ',
+                ]
+              },
+            },
+            {
+              key: 'a97ef88f',
+              get: function get() {
+                return [
+                  'Tailored audiences are often built from email lists or browsing behaviors. They help advertisers reach prospective customers or people who have already expressed interest in their business. ',
+                ]
+              },
+            },
+            {
+              key: 'f451c521',
+              get: function get() {
+                return ['You are currently a part of ', ' from ']
+              },
+            },
+            {
+              key: 'e1d684b1',
+              get: function get() {
+                return [
+                  'To enable this, go to your ',
+                  ' settings and turn on “Personalize based on your inferred identity”.',
+                ]
+              },
+            },
+            {
+              key: 'h0085c59',
+              get: function get() {
+                return [
+                  'To enable this, go to your ',
+                  ' settings and turn on “Personalize based on your inferred identity”.',
+                ]
+              },
+            },
+            {
+              key: 'b78e30fd',
+              get: function get() {
+                return [
+                  'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
+                  ' settings.',
+                ]
+              },
+            },
+            {
+              key: 'h7173353',
+              get: function get() {
+                return [
+                  'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
+                  ' settings.',
+                ]
+              },
+            },
+            {
+              key: 'ad5f7017',
+              get: function get() {
+                return [
+                  'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling “Personalize based on your inferred identity” in your ',
+                  ' settings.',
+                ]
+              },
+            },
+            {
+              key: 'f870a95b',
+              get: function get() {
+                return ['These are devices Twitter uses to improve and measure your experience on this browser. ']
+              },
+            },
+            {
+              key: 'e21b623d',
+              get: function get() {
+                return ['These are browsers and devices associated with you. ']
+              },
+            },
+            {
+              key: 'b6baf555',
+              get: function get() {
+                return [
+                  'These are browsers, devices, and information Twitter uses to personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers like those linked to your Twitter account. ',
+                ]
+              },
+            },
+            {
+              key: 'a1fdeb45',
+              get: function get() {
+                return ['Go to your ', ' to turn it on.']
+              },
+            },
+            {
+              key: 'hcb3ad67',
+              get: function get() {
+                return [
+                  'If you see any suspicious activity from an app, go to ',
+                  ' to revoke its access. In some cases the IP location may differ from your physical location. ',
+                ]
+              },
+            },
+            {
+              key: 'c2a54dcb',
+              get: function get() {
+                return [
+                  'Twitter’s partners build audiences around shopping decisions, lifestyle, and other online and offline behaviors. ',
+                ]
+              },
+            },
+            {
+              key: 'ba13ef23',
+              get: function get() {
+                return [
+                  'Something went wrong and your Twitter data couldn’t be sent. To request your data, please ',
+                  '.',
+                ]
+              },
+            },
+            {
+              key: 'd79b6b7b',
+              get: function get() {
+                return [
+                  'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account. ',
+                ]
+              },
+            },
+            {
               key: 'hcecd237',
               get: function get() {
                 return [
@@ -10090,14 +10249,6 @@
               key: 'i34eeb37',
               get: function get() {
                 return [this.props.infoText + ' ']
-              },
-            },
-            {
-              key: 'd79b6b7b',
-              get: function get() {
-                return [
-                  'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account. ',
-                ]
               },
             },
             {
@@ -10471,155 +10622,6 @@
               key: 'j449c95b',
               get: function get() {
                 return ['']
-              },
-            },
-            {
-              key: 'f1a3d63d',
-              get: function get() {
-                return ['Add your date of birth to your ', '.']
-              },
-            },
-            {
-              key: 'f2df3f23',
-              get: function get() {
-                return ['Control how Twitter customizes your experience in ']
-              },
-            },
-            {
-              key: 'j31f2f97',
-              get: function get() {
-                return ['Yes, all automated accounts need to be labeled. This is required under our ', '.']
-              },
-            },
-            {
-              key: 'ed8f77d3',
-              get: function get() {
-                return ['Learn more on the ', ' page.']
-              },
-            },
-            {
-              key: 'if2bb997',
-              get: function get() {
-                return ['Sorry to see you go. #GoodBye']
-              },
-            },
-            {
-              key: 'bf82b0a7',
-              get: function get() {
-                return [
-                  'If you haven’t provided a date of birth, we’ve provided an age range based on your Twitter profile and activity. Age information is used to personalize your experience. ',
-                ]
-              },
-            },
-            {
-              key: 'a97ef88f',
-              get: function get() {
-                return [
-                  'Tailored audiences are often built from email lists or browsing behaviors. They help advertisers reach prospective customers or people who have already expressed interest in their business. ',
-                ]
-              },
-            },
-            {
-              key: 'f451c521',
-              get: function get() {
-                return ['You are currently a part of ', ' from ']
-              },
-            },
-            {
-              key: 'e1d684b1',
-              get: function get() {
-                return [
-                  'To enable this, go to your ',
-                  ' settings and turn on “Personalize based on your inferred identity”.',
-                ]
-              },
-            },
-            {
-              key: 'h0085c59',
-              get: function get() {
-                return [
-                  'To enable this, go to your ',
-                  ' settings and turn on “Personalize based on your inferred identity”.',
-                ]
-              },
-            },
-            {
-              key: 'b78e30fd',
-              get: function get() {
-                return [
-                  'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
-                  ' settings.',
-                ]
-              },
-            },
-            {
-              key: 'h7173353',
-              get: function get() {
-                return [
-                  'You can remove this information by disabling “Personalize based on your inferred identity” in your ',
-                  ' settings.',
-                ]
-              },
-            },
-            {
-              key: 'ad5f7017',
-              get: function get() {
-                return [
-                  'There are inferred hashes of email addresses that share common components with the email address you have provided to Twitter. You can remove this information by disabling “Personalize based on your inferred identity” in your ',
-                  ' settings.',
-                ]
-              },
-            },
-            {
-              key: 'f870a95b',
-              get: function get() {
-                return ['These are devices Twitter uses to improve and measure your experience on this browser. ']
-              },
-            },
-            {
-              key: 'e21b623d',
-              get: function get() {
-                return ['These are browsers and devices associated with you. ']
-              },
-            },
-            {
-              key: 'b6baf555',
-              get: function get() {
-                return [
-                  'These are browsers, devices, and information Twitter uses to personalize your experience. This includes devices and browsers you haven’t used to log in to Twitter, as well as email addresses and phone numbers like those linked to your Twitter account. ',
-                ]
-              },
-            },
-            {
-              key: 'a1fdeb45',
-              get: function get() {
-                return ['Go to your ', ' to turn it on.']
-              },
-            },
-            {
-              key: 'hcb3ad67',
-              get: function get() {
-                return [
-                  'If you see any suspicious activity from an app, go to ',
-                  ' to revoke its access. In some cases the IP location may differ from your physical location. ',
-                ]
-              },
-            },
-            {
-              key: 'c2a54dcb',
-              get: function get() {
-                return [
-                  'Twitter’s partners build audiences around shopping decisions, lifestyle, and other online and offline behaviors. ',
-                ]
-              },
-            },
-            {
-              key: 'ba13ef23',
-              get: function get() {
-                return [
-                  'Something went wrong and your Twitter data couldn’t be sent. To request your data, please ',
-                  '.',
-                ]
               },
             },
             {
@@ -13458,6 +13460,32 @@
             },
           },
         )),
+        (b.a481468996 = w(
+          { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
+          {
+            pattern: 'MMM d, y, h:mm:ss a',
+            timeSeparator: ':',
+            months: {
+              M: {
+                3: {
+                  1: 'Jan',
+                  2: 'Feb',
+                  3: 'Mar',
+                  4: 'Apr',
+                  5: 'May',
+                  6: 'Jun',
+                  7: 'Jul',
+                  8: 'Aug',
+                  9: 'Sep',
+                  10: 'Oct',
+                  11: 'Nov',
+                  12: 'Dec',
+                },
+              },
+            },
+            dayPeriods: { am: 'AM', pm: 'PM' },
+          },
+        )),
         (b.b683761904 = w(
           { 1: b('en').numberFormatter({ raw: '0' }) },
           {
@@ -13555,32 +13583,6 @@
             },
           },
         )),
-        (b.a481468996 = w(
-          { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
-          {
-            pattern: 'MMM d, y, h:mm:ss a',
-            timeSeparator: ':',
-            months: {
-              M: {
-                3: {
-                  1: 'Jan',
-                  2: 'Feb',
-                  3: 'Mar',
-                  4: 'Apr',
-                  5: 'May',
-                  6: 'Jun',
-                  7: 'Jul',
-                  8: 'Aug',
-                  9: 'Sep',
-                  10: 'Oct',
-                  11: 'Nov',
-                  12: 'Dec',
-                },
-              },
-            },
-            dayPeriods: { am: 'AM', pm: 'PM' },
-          },
-        )),
         (b.a1989241728 = w(
           { 1: b('en').numberFormatter({ raw: '0' }) },
           {
@@ -13617,12 +13619,12 @@
         (b.b1665844787 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
         (b.a815390825 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
         (b.a1441832606 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
+        (b.b1998581093 = g(b('en').dateToPartsFormatter({ datetime: 'medium' }))),
         (b.a218160295 = g(b('en').dateToPartsFormatter({ date: 'long' }))),
         (b.b93641787 = g(b('en').dateToPartsFormatter({ date: 'short' }))),
         (b.a1493315369 = g(b('en').dateToPartsFormatter({ skeleton: 'y' }))),
         (b.a1830739137 = g(b('en').dateToPartsFormatter({ datetime: 'full' }))),
         (b.a1286203598 = g(b('en').dateToPartsFormatter({ date: 'medium' }))),
-        (b.b1998581093 = g(b('en').dateToPartsFormatter({ datetime: 'medium' }))),
         (b.b490808361 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
         (b.b687161418 = T(b('en').numberFormatter({}), b('en').pluralGenerator({}), {
           'relativeTime-type-future': {
@@ -13759,6 +13761,7 @@
         a('g727ddcf', b.a815390825),
         a('cf8abf59', b.b1158699306),
         a('da44942d', b.a1441832606),
+        a('d0a77c9b', b.b1998581093),
         a('ba2e82a1', b.a218160295),
         a('a9f397f3', b.b93641787),
         a('d7d71245', b.a1493315369),
@@ -13833,7 +13836,6 @@
         a('h3629783', b.a1286203598),
         a('ja781451', b.a71710728),
         a('cfa1a7b9', b.a605057387),
-        a('d0a77c9b', b.b1998581093),
         a('f9e9679f', b.a50324716),
         a('eefcd267', b.a50325677),
         a('fa8afc43', b.b1911307442),
