@@ -605,6 +605,7 @@
         a('af71ef68', 'Voice'),
         a('b327c12a', 'Image'),
         a('fc64990e', 'Video'),
+        a('bf945aac', 'Gif'),
         a('e3275464', 'Send'),
         a('ca0ce0e4', 'Start a new message'),
         a('c3752568', 'Something went wrong. Try sending your message again in a minute.'),
@@ -813,13 +814,6 @@
         a('d98540eb', 'Learn more'),
         a('h52ca4c4', 'New messages'),
         a('ffde2fdc', 'Loading conversation'),
-        a('c0cf5eae', 'Get verified to send more messages'),
-        a(
-          'f5869a94',
-          'You’ve hit the maximum limit for Direct Messages in a single day. Sign up for Twitter Blue to continue messaging.',
-        ),
-        a('f09be7f8', 'Get verified'),
-        a('hd7d278c', 'No thanks'),
         a('da878dc0', 'Accept'),
         a('gde6b425', function (e) {
           return e.name + ' has been muted'
@@ -1141,13 +1135,13 @@
           'i36c403c',
           'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
         ),
-        a('jceadc3e', 'Untitled')
-      a('a1d5303c', 'Private'),
+        a('jceadc3e', 'Untitled'),
+        a('a1d5303c', 'Private'),
         a('cc8f8a80', 'Unlisted'),
-        a('c33a97d6', 'Public'),
-        a('ccc45ee7', function (e) {
-          return e.team + ' won'
-        }),
+        a('c33a97d6', 'Public')
+      a('ccc45ee7', function (e) {
+        return e.team + ' won'
+      }),
         a('f81a95d7', function (e) {
           return '' + e.date
         }),
@@ -2329,11 +2323,11 @@
         a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
-        a('c94ad3e8', 'send us feedback')
-      a('ee160790', 'Deleted notes'),
+        a('c94ad3e8', 'send us feedback'),
+        a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
-        a('a7b0393c', 'Writing Impact'),
-        a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
+        a('a7b0393c', 'Writing Impact')
+      a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'e8c599f0',
           'Nice work! These ratings identified Helpful notes that get shown on Twitter. Helpful notes add context to Tweets and help keep people informed.',
@@ -3583,7 +3577,6 @@
         a('ff9ed474', 'Total earnings'),
         a('dd0c889e', 'Profile customization'),
         a('ib35705e', 'Manage Subscription'),
-        a('cf131522', 'Manage Affiliate Badges'),
         a('cb165528', 'News features and settings'),
         a('g7eb2d40', 'Early Access'),
         a('f8645654', 'Security and account access'),
@@ -3593,12 +3586,12 @@
         a('ae72d4c4', 'Apps and sessions'),
         a('h1abfbce', 'Connected accounts'),
         a('cad53944', 'Privacy and safety'),
-        a('e908903a', 'Audience and tagging')
-      a('f5e59e90', 'Protect your Tweets'),
+        a('e908903a', 'Audience and tagging'),
+        a('f5e59e90', 'Protect your Tweets'),
         a('f56d108e', 'Photo tagging'),
         a('b38d81ae', 'Your Tweets'),
-        a('f2bd9c48', 'Content you see'),
-        a('c6cb90ec', 'Safety Mode'),
+        a('f2bd9c48', 'Content you see')
+      a('c6cb90ec', 'Safety Mode'),
         a('cbd449a0', 'Mute and block'),
         a('daef29b8', 'Muted accounts'),
         a('i0dd9b9e', 'Muted words'),
@@ -4772,9 +4765,6 @@
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
-        a('ce70c590', 'Manage affiliation badges'),
-        a('a49e1b2a', 'Sort your affiliations'),
-        a('cde12a14', 'The first badge will be shown on all Tweets.'),
         a('b16486e8', 'A better reading experience on and off Twitter.'),
         a('b62d6e4c', 'Reader'),
         a(
@@ -4819,12 +4809,6 @@
         a('b255df58', 'Application submitted · Waiting for review'),
         a('b3f834c8', 'Application waitlisted'),
         a('i14be2c6', 'Estimated earned revenue'),
-        a('c429e3ba', 'Creator Subscriptions'),
-        a('e9ece9f8', 'Ad revenue share'),
-        a('a63ee81e', 'Select programs to sign up for'),
-        a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
-        a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
-        a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -4844,11 +4828,11 @@
         a('c219a552', 'All time'),
         a('f3ce76c0', 'Need more help?'),
         a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
-        a('fbbfe8aa', 'Deactivate Coins')
-      a(
-        'e4f29140',
-        'By deactivating, you’ll be removed from the Coins program and no longer be eligible to receive Coins.',
-      ),
+        a('fbbfe8aa', 'Deactivate Coins'),
+        a(
+          'e4f29140',
+          'By deactivating, you’ll be removed from the Coins program and no longer be eligible to receive Coins.',
+        ),
         a('e58e85d2', 'Continue to deactivation'),
         a('be8e87b4', 'Deactivate Coins?'),
         a('bee26fa8', 'Yes, deactivate'),
@@ -4862,8 +4846,8 @@
         a('d55e017a', 'This month'),
         a('f883322d', function (e) {
           return 'Transaction ID ' + e.transactionId
-        }),
-        a('d978f43e', 'New Subscriptions'),
+        })
+      a('d978f43e', 'New Subscriptions'),
         a('d113fc10', 'You have no new Subscriptions at this time.'),
         a('h7a41c02', 'Renewals'),
         a('eedf2eaa', 'You have no renewals at this time.'),
@@ -4988,6 +4972,27 @@
           'd9588ae6',
           'Keep in mind that even with this setting turned off you will be visible to everyone when you’re in a Space. Your followers can always see what Spaces you’re hosting, co-hosting or speaking in.',
         ),
+        a('jbbe5dde', 'First things first'),
+        a(
+          'hdcafbba',
+          'To begin the application process, you’ll need to provide some basic information and complete your profile.',
+        ),
+        a('jd067188', 'Add an email address'),
+        a('f89eb478', 'We’ll use it to contact you about your application status and other important information.'),
+        a('h9ab7046', 'Make sure you have a bio and location listed'),
+        a('c8e8b4b4', 'Having a complete bio and location helps build trust in your profile and get more Subscribers.'),
+        a('i79ba1e8', 'Update profile'),
+        a('i623bc7a', 'Secure your account with two-factor authentication'),
+        a(
+          'd1c14674',
+          'Adding two-factor authentication will make it harder for other people to gain access to your account.',
+        ),
+        a('hd3a6588', 'Set up two-factor authentication'),
+        a('a0c67dd4', 'Confirm your age to apply'),
+        a(
+          'd8e12a44',
+          'You must be at least 18 years old to apply for Subscriptions. Confirm you’re 18 or older to continue.',
+        ),
         a('i84c5de8', 'Creator applications coming soon'),
         a('b8922f7e', 'Check back soon to be able to apply to join the Subscriptions program.'),
         a('feb54b40', 'Be one of the first to apply'),
@@ -5003,20 +5008,96 @@
         a('gc13184a', 'Subscribe to Twitter Blue or Verified Organizations'),
         a('fde27650', 'Subscriptions Terms'),
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
+        a(
+          'cedb182a',
+          'Offer your favorite followers a little something extra and earn money each month. They’ll get access to a more personal experience with bonus content, and you can get paid for what you create. It’s a win-win.',
+        ),
+        a('c767c93c', 'Your Tweet game is strong. We think that’s worth something.'),
+        a('a72aba02', 'How much money can you make with Subscriptions?'),
+        a('g8cdf708', 'Are you in?'),
+        a(
+          'c8acf760',
+          'We’re looking for a small group of people to try Subscriptions. Check your eligibility to get started.',
+        ),
         a('e533715e', 'Check eligibility'),
-        a('f489e650', 'Make a living on Twitter'),
-        a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
+        a('ad6579be', 'Conversion rate'),
+        a('bbb89925', function (e) {
+          return e.percent + '% of followers'
+        }),
+        a('e86cf68b', function (e) {
+          return '' + e.earnings
+        }),
+        a('d64c12b7', '*'),
+        a('i8acf161', '*'),
+        a('d31c5998', 'Badges'),
+        a('f2917e9a', 'Give your Subscribers special recognition with labels that make it easier to chat and connect.'),
         a('d08d0bb2', 'Bonus content'),
         a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
+        a('acfa84f2', 'More features coming soon'),
+        a('e28f2116', 'Stay tuned for more ways to create and share content with your Subscribers.'),
+        a('f489e650', 'Make a living on Twitter'),
+        a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
         a('if12af7c', 'Subscriptions set up'),
         a('cc4c1a14', 'Price set up'),
         a('d5737f0e', 'Monthly Subscription'),
         a('e1453e45', 'Learn more'),
         a('aa7e35ee', 'Your account was not selected'),
         a('c984cc62', 'Your account wasn’t selected this time. Stay tuned for future opportunities to participate.'),
+        a('f7997b16', 'Content categories'),
+        a('fc00ab5c', 'What kind of content do you create?'),
+        a('c2491670', 'Tell us about your content.'),
+        a('b1f2e8ce', 'Activist'),
+        a('e08a6e60', 'Animals'),
+        a('b743702c', 'Art'),
+        a('h2401e36', 'Astrology'),
+        a('ed7e6676', 'B2B'),
+        a('fecc3792', 'Beauty'),
+        a('d80b0f12', 'Comedy'),
+        a('b29a93b2', 'Events'),
+        a('c5d190c0', 'Fashion'),
+        a('i6dfc494', 'Film and television'),
+        a('ff2b68ca', 'Finance'),
+        a('ab389322', 'Health and fitness'),
+        a('a46fdec4', 'Lifestyle'),
+        a('f28d8b06', 'Music'),
+        a('e0234d02', 'Non-profit'),
+        a('h9d38a08', 'Opinion'),
+        a('fe6841be', 'Photography'),
+        a('e031e06a', 'Podcast'),
+        a('i5cade16', 'Reality TV'),
+        a('e084f2a0', 'Skincare'),
+        a('a9db15b2', 'Small and medium business'),
+        a('a92db4aa', 'Tech'),
+        a('hb5f1d64', 'Writing'),
+        a('bd44a8a8', 'Tell us more'),
+        a('da8ea7da', 'Content platforms'),
+        a('d7081f92', 'What platforms do you use?'),
+        a('j3495480', 'Tell us about the platforms you use to share your content.'),
+        a('a3021318', 'Facebook'),
+        a('f6965e34', 'Instagram'),
+        a('b98d0edc', 'Etsy'),
+        a('d4d74bb4', 'Patreon'),
+        a('ca07aa46', 'YouTube'),
+        a('c6d71a04', 'TikTok'),
+        a('c2680406', 'Snapchat'),
+        a('d8552c1a', 'Twitch'),
         a('gd115e64', 'Apply for Subscriptions'),
+        a(
+          'f095a24a',
+          'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
+        ),
+        a('c144fa52', 'What kind of content do you create? Select all that apply.'),
+        a('f1bf337e', 'Select categories'),
+        a('d4062c9a', 'Where do you share content? Select all that apply.'),
+        a('e963d588', 'Select platforms'),
+        a('ede0ac3e', 'Planned usage'),
+        a('ab21629a', 'How do you plan to use Subscriptions?'),
+        a('f718d56c', 'Tell us how you plan to use Subscriptions and what kind of content you’d like to share.'),
         a('eb4bf9a1', 'you won’t be able to change it later.'),
+        a('f4f4dd60', 'Required'),
+        a('f448cbcc', 'Optional'),
         a('d3d6c52c', 'Your application has been submitted'),
+        a('c53e912a', 'Keep an eye out for an email with an update on your application status.'),
         a(
           'cb27c0ba',
           'We’ve confirmed your pricing. Your application will be reviewed and if you’re approved, we’ll send you a notification as soon as it’s live.',
@@ -5140,7 +5221,6 @@
         a('je4ccd3a', 'Ad-free Articles Help Center'),
         a('ad45e9b2', 'View your subscription details or cancel.'),
         a('bdd3e652', 'View your subscription details.'),
-        a('i6cb493e', 'Manage how your affiliations are displayed'),
         a('db529452', 'Subscription'),
         a('d248d75e', 'Get Support'),
         a('f352de53', function (e) {
@@ -5593,9 +5673,7 @@
           'j224a074',
           'All location information provided will be publicly accessible when Location Spotlight is on. Phone and email can be accessed via the Contact button.',
         ),
-        a('f448cbcc', 'Optional'),
         a('c16c9568', 'Address'),
-        a('f4f4dd60', 'Required'),
         a('i3a38711', 'Google Maps Terms of Service'),
         a('beb66f50', 'Google Privacy Policy'),
         a(
@@ -5977,10 +6055,29 @@
           return 'Check out @' + e.screenName + ' on Twitter'
         }),
         a('d58c1576', 'Watch this video on Twitter'),
-        a('bdc49424', 'See what people are saying about this on Twitter.'),
-        a('e38c0975', function (e) {
-          return 'Join the conversation for more from @' + e.screenName + '.'
-        }),
+        a('bdc49424', 'See what people are saying about this on Twitter.')
+      function r(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('e38c0975', function (e) {
+        return 'Join the conversation for more from @' + e.screenName + '.'
+      }),
         a('ie816cb4', 'Watch this video and so much more on Twitter.'),
         a('e3521fcd', function (e) {
           return 'Watch this video from @' + e.screenName + ' and talk about it on Twitter.'
@@ -6085,27 +6182,8 @@
           )
         }),
         a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
-        a('e9891f7c', 'Promote this Tweet')
-      function r(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('df2ed8c2', 'Boost this Tweet'),
+        a('e9891f7c', 'Promote this Tweet'),
+        a('df2ed8c2', 'Boost this Tweet'),
         a('jede3014', 'Your promotion is under review'),
         a('i094e43c', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
         a('f638d3e0', 'Review Twitter’s Ads Policy'),
@@ -6457,7 +6535,7 @@
         a('ica87fde', 'You’re blocked'),
         a('db763e75', 'Learn more'),
         a('a2811f96', 'Profile timelines'),
-        a('d25805fa', 'Subs'),
+        a('de578b82', 'Subscription Tweets'),
         a('b05be0c8', 'Highlights'),
         a('b3221ef5', function (e) {
           return 'Notes' + e.longform_notes
@@ -6631,6 +6709,7 @@
         }),
         a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
         a('df422dfe', 'You have muted Tweets from this account.'),
+        a('f09be7f8', 'Get verified'),
         a(
           'b74bd6c6',
           'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
@@ -6946,6 +7025,7 @@
         a('fa2a280a', 'Update Invoice'),
         a('i7b2f08e', 'Welcome to Verified Organizations'),
         a('g4e18b84', 'You’ve hit your affiliate limit'),
+        a('hd7d278c', 'No thanks'),
         a(
           'd5dfaf92',
           'Something went wrong while retrieving your Stripe checkout details. Please contact verified-premium-support@twitter.com if this problem continues.',
@@ -7010,12 +7090,13 @@
         a('f44ce884', 'For businesses, government agencies, and non-profits'),
         a('h5e2fdd8', 'Organization Twitter handle'),
         a('c42d5f4a', 'Number of affiliates'),
-        a('fca5f04b', function (e) {
-          return 'You can purchase up to ' + e.affiliatesCount + ' affiliates and will be charged accordingly.'
+        a('beb7bba5', function (e) {
+          return 'You can add as many as ' + e.affiliatesCount + ' affiliates and will be charged accordingly.'
         }),
         a('dca6b3ac', 'Setup an invoice'),
         a('c97ad52a', 'Update invoice'),
-        a('b36f0fd4', 'Select how many affiliates you need for your organization.'),
+        a('f6513c94', 'Select how many affiliates you’d like to add for your organization.'),
+        a('b538d7b8', 'Select how many affiliates you’d need for your organization.'),
         a('b4871f4f', 'here'),
         a('b633d19e', 'Thank you'),
         a('f713d3e2', 'Your application has been received and is now under review.'),
@@ -7251,8 +7332,8 @@
         a('fb071dea', 'Move column'),
         a('c77a6327', function (e) {
           return 'Open column options - ' + e.title
-        }),
-        a('h53c41f0', 'Column options'),
+        })
+      a('h53c41f0', 'Column options'),
         a('f7bbbb6d', function (e) {
           return 'Close column options - ' + e.title
         }),
@@ -7323,8 +7404,8 @@
         a('e2ba3828', 'Show top Tweets'),
         a('j52bb410', 'Column added. Showing top Tweets first'),
         a('ca329454', 'Column added. Showing latest Tweets first'),
-        a('aa4f00c6', 'Share Deck')
-      a('fdf97052', 'Go to Deck options'),
+        a('aa4f00c6', 'Share Deck'),
+        a('fdf97052', 'Go to Deck options'),
         a('ed427868', 'Make Deck public?'),
         a('gecc71a2', 'To share a Deck, first make it public.'),
         a('f0653866', 'Sharing deck'),
@@ -10361,6 +10442,24 @@
               key: 'a9c053c7',
               get: function get() {
                 return ['By applying, you agree to be bound by the ']
+              },
+            },
+            {
+              key: 'fb01c6d9',
+              get: function get() {
+                return ['Do what you love', 'and earn money doing it']
+              },
+            },
+            {
+              key: 'j8018f0f',
+              get: function get() {
+                return ['', ' per month']
+              },
+            },
+            {
+              key: 'f5c51127',
+              get: function get() {
+                return ['', 'Assuming a ' + this.props.price + '/month Subscriptions offering']
               },
             },
             {
