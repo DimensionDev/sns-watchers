@@ -34,28 +34,29 @@
         v = n(612969),
         b = n(509082),
         g = n(543467),
-        Z = n(963705),
-        y = n(709249),
-        C = n(887371),
-        E = n(580753),
-        T = n(545754),
-        w = n(486906),
-        k = n(256666),
-        I = (n(818178), n(543450), n(296797)),
-        S = n(272985),
-        _ = n(33988),
-        L = n(878149),
-        B = n(923335),
-        M = n(392160),
-        F = function F(e, t) {
+        Z = n(845855),
+        y = n(878149),
+        C = n(963705),
+        E = n(709249),
+        T = n(887371),
+        w = n(580753),
+        k = n(545754),
+        I = n(486906),
+        S = n(256666),
+        _ = (n(818178), n(543450), n(296797)),
+        L = n(272985),
+        B = n(33988),
+        M = n(923335),
+        F = n(392160),
+        x = function x(e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
-        x = function x(e, t) {
+        A = function A(e, t) {
           return t.module.selectPageConfiguration && t.module.selectPageConfiguration(e)
         },
-        A = function A(e, t) {
+        D = function D(e, t) {
           var n = t.selectedTabId,
-            r = x(e, t)
+            r = A(e, t)
           return (
             r &&
             r.tabs &&
@@ -64,31 +65,31 @@
             })
           )
         }
-      var D = (0, M.Z)()
+      var N = (0, F.Z)()
         .propsFromState(function () {
-          return { initialFetchStatus: F, pageConfiguration: x, selectedTab: A }
+          return { initialFetchStatus: x, pageConfiguration: A, selectedTab: D }
         })
         .propsFromActions(function (e) {
           var t = e.module
           return {
-            createLocalApiErrorHandler: (0, B.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
+            createLocalApiErrorHandler: (0, M.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
             fetchInitial: t.fetchInitial,
           }
         })
         .withAnalytics()
-      var N = ['entityToken'],
-        P = (function (e) {
-          ;(0, T.Z)(n, e)
-          var t = (0, w.Z)(n)
+      var P = ['entityToken'],
+        O = (function (e) {
+          ;(0, k.Z)(n, e)
+          var t = (0, I.Z)(n)
           function n() {
             var e
-            ;(0, y.Z)(this, n)
+            ;(0, E.Z)(this, n)
             for (var r = arguments.length, a = new Array(r), l = 0; l < r; l++) {
               a[l] = arguments[l]
             }
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              (0, k.Z)((0, E.Z)(e), '_fetchPageModule', function () {
+              (0, S.Z)((0, w.Z)(e), '_fetchPageModule', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.createLocalApiErrorHandler,
@@ -98,9 +99,9 @@
                 return a().then(function (t) {
                   t.performed &&
                     n.scribe((0, i.Z)((0, i.Z)({}, e._getScribeNamespace(l)), {}, { action: 'get_initial' }))
-                }, r(S.M))
+                }, r(L.M))
               }),
-              (0, k.Z)((0, E.Z)(e), '_render', function () {
+              (0, S.Z)((0, w.Z)(e), '_render', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.getTabLink,
@@ -132,7 +133,7 @@
                         }
                       )
                     })
-                  return o.createElement(o.Fragment, null, o.createElement(I.Z, { links: d, visibleItemIndex: c }))
+                  return o.createElement(o.Fragment, null, o.createElement(_.Z, { links: d, visibleItemIndex: c }))
                 }
                 return null
               }),
@@ -140,7 +141,7 @@
             )
           }
           return (
-            (0, C.Z)(n, [
+            (0, T.Z)(n, [
               {
                 key: 'componentDidMount',
                 value: function value() {
@@ -156,7 +157,7 @@
               {
                 key: 'render',
                 value: function value() {
-                  return this.props.initialFetchStatus === L.Z.LOADED ? this._render() : null
+                  return this.props.initialFetchStatus === y.Z.LOADED ? this._render() : null
                 },
               },
               {
@@ -175,7 +176,7 @@
                 value: function value(e) {
                   if (e) {
                     e.entityToken
-                    return (0, a.Z)(e, N)
+                    return (0, a.Z)(e, P)
                   }
                 },
               },
@@ -183,11 +184,10 @@
             n
           )
         })(o.Component)
-      var O = D((0, _.Z)(P))
-      var H = n(440082),
-        R = n(845855),
-        G = n(98701),
-        U = n(615372),
+      var H = N((0, B.Z)(O))
+      var R = n(98701),
+        G = n(615372),
+        U = n(440082),
         W = function W(e, t) {
           return t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e)
         },
@@ -202,30 +202,30 @@
             })
           )
         }
-      var q = (0, M.Z)()
+      var q = (0, F.Z)()
         .propsFromState(function () {
           return { pageConfiguration: W, selectedTab: V }
         })
         .propsFromActions(function () {
           return {
-            createLocalApiErrorHandler: (0, B.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
+            createLocalApiErrorHandler: (0, M.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
           }
         })
         .withAnalytics()
       var z = ['entityToken']
       var Q = q(
         (function (e) {
-          ;(0, T.Z)(n, e)
-          var t = (0, w.Z)(n)
+          ;(0, k.Z)(n, e)
+          var t = (0, I.Z)(n)
           function n() {
             var e
-            ;(0, y.Z)(this, n)
+            ;(0, E.Z)(this, n)
             for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) {
               i[o] = arguments[o]
             }
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              (0, k.Z)((0, E.Z)(e), '_getTimelineNamespace', function () {
+              (0, S.Z)((0, w.Z)(e), '_getTimelineNamespace', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.pageConfiguration,
@@ -237,19 +237,19 @@
                 }
                 return n.contextualScribeNamespace
               }),
-              (0, k.Z)(
-                (0, E.Z)(e),
+              (0, S.Z)(
+                (0, w.Z)(e),
                 '_getModule',
                 (0, f.Z)(function (e, t, n, r) {
                   if ((null == e ? void 0 : e.id) !== t) {
                     if (null != e && e.urtEndpoint)
-                      return (0, U.Z)({ urtUrl: null == e ? void 0 : e.urtEndpoint, timelinePrefix: r })
-                    if (null != e && e.graphQLTimelineId) return (0, G.R)(e.graphQLTimelineId)
+                      return (0, G.Z)({ urtUrl: null == e ? void 0 : e.urtEndpoint, timelinePrefix: r })
+                    if (null != e && e.graphQLTimelineId) return (0, R.R)(e.graphQLTimelineId)
                   }
                   return n
                 }),
               ),
-              (0, k.Z)((0, E.Z)(e), '_getRefreshIntervalSecForCurrentTab', function () {
+              (0, S.Z)((0, w.Z)(e), '_getRefreshIntervalSecForCurrentTab', function () {
                 var t,
                   n = e.props,
                   r = n.pageConfiguration,
@@ -271,7 +271,7 @@
             )
           }
           return (
-            (0, C.Z)(n, [
+            (0, T.Z)(n, [
               {
                 key: 'render',
                 value: function value() {
@@ -297,9 +297,9 @@
                     h = this._getRefreshIntervalSecForCurrentTab(),
                     v = h ? 1e3 * h : void 0
                   return o.createElement(
-                    R.nO,
+                    Z.nO,
                     { namespace: this._getTimelineNamespace() },
-                    o.createElement(H.Z, {
+                    o.createElement(U.Z, {
                       entryConfiguration: n,
                       module: m,
                       pollingIntervalMsOverride: v,
@@ -358,7 +358,7 @@
           K.Z,
           { style: re.root },
           o.createElement(
-            R.nO,
+            Z.nO,
             { data: s, namespace: d },
             o.createElement(X.Z, {
               displayType: r,
@@ -391,9 +391,9 @@
           return t.module.selectInitialFetchStatus(e)
         },
         le = (0, ie.P1)(ae, oe, function (e, t) {
-          return t !== L.Z.LOADED || (!!e && !!e.tabs)
+          return t !== y.Z.LOADED || (!!e && !!e.tabs)
         })
-      var ce = (0, M.Z)()
+      var ce = (0, F.Z)()
         .propsFromState(function () {
           return { hasTabNavigation: le, pageConfiguration: ae, initialFetchStatus: oe }
         })
@@ -411,7 +411,7 @@
           var n = t.navBar.topicId ? t.navBar.topicId : ''
           return ve.Z.select(e, n)
         }
-      var ge = (0, M.Z)().propsFromState(function () {
+      var ge = (0, F.Z)().propsFromState(function () {
         return { topic: be }
       })
       var Ze = function Ze(e) {
@@ -442,7 +442,7 @@
           f = (0, m.Z)({}, i, p)
         return a
           ? o.createElement(
-              R.nO,
+              Z.nO,
               { data: d, namespace: f },
               o.createElement(
                 o.Fragment,
@@ -485,24 +485,24 @@
             d = e.entryConfiguration,
             p = e.fab,
             h = e.getTabLink,
-            y = e.hasTabNavigation,
-            C = e.history,
-            E = e.initialFetchStatus,
-            T = e.initialPageNamespace,
-            w = e.logoButton,
-            k = e.module,
-            I = e.onBackClick,
-            S = e.pageConfiguration,
-            _ = e.prerollDisplayLocation,
-            B = e.renderEmptyState,
-            M = e.renderUnavailable,
-            F = e.rightControl,
-            x = e.searchBoxRef,
-            A = e.selectedTabId,
-            D = e.sidebarContent,
-            N = e.timelinePrefix,
-            P = e.title,
-            H = e.withAppLinks,
+            E = e.hasTabNavigation,
+            T = e.history,
+            w = e.initialFetchStatus,
+            k = e.initialPageNamespace,
+            I = e.logoButton,
+            S = e.module,
+            _ = e.onBackClick,
+            L = e.pageConfiguration,
+            B = e.prerollDisplayLocation,
+            M = e.renderEmptyState,
+            F = e.renderUnavailable,
+            x = e.rightControl,
+            A = e.searchBoxRef,
+            D = e.selectedTabId,
+            N = e.sidebarContent,
+            P = e.timelinePrefix,
+            O = e.title,
+            R = e.withAppLinks,
             G = e.withBottomLoginSignupBar,
             U = e.withDeferredView,
             W = e.withOpenGraphMeta,
@@ -517,12 +517,12 @@
             K = (0, r.Z)(J, 2),
             X = K[0],
             Y = K[1],
-            $ = S || {},
+            $ = L || {},
             ee = $.header,
             te = $.navBar,
             re = $.subtitle,
             ie = $.title,
-            ae = E === L.Z.LOADED ? ie || P : '',
+            ae = w === y.Z.LOADED ? ie || O : '',
             oe = (function (e, t, n) {
               var r = (null == t ? void 0 : t.scribeConfig) || {},
                 i = (r.entityToken, (0, a.Z)(r, we)),
@@ -537,14 +537,14 @@
                 u = (null == c ? void 0 : c.scribeConfig) || {},
                 s = (u.entityToken, (0, a.Z)(u, ke))
               return (0, m.Z)({}, n, i, s)
-            })(A, S, T),
+            })(D, L, k),
             le = ee ? o.createElement(ne, { header: ee, onHeaderVisible: Y }) : null,
             ce = te
               ? o.createElement(Te, {
                   isHeaderOffscreen: !X,
                   navBar: te,
                   pageNamespace: oe,
-                  withAppLinks: H,
+                  withAppLinks: R,
                   withOpenGraphMeta: W,
                 })
               : null,
@@ -560,40 +560,40 @@
                   null,
                   o.createElement(Q, {
                     entryConfiguration: z(t, d),
-                    initialModule: k,
-                    prerollDisplayLocation: _,
-                    renderEmptyState: B,
-                    renderUnavailable: M,
-                    selectedTabId: A,
-                    timelinePrefix: N,
-                    title: P,
+                    initialModule: S,
+                    prerollDisplayLocation: B,
+                    renderEmptyState: M,
+                    renderUnavailable: F,
+                    selectedTabId: D,
+                    timelinePrefix: P,
+                    title: O,
                     withoutHeadroom: !0,
                   }),
                 ),
               )
             }),
             de = p ? o.createElement(b.Z, { component: l.Z, fab: p }, se) : se,
-            pe = h && y ? o.createElement(O, { getTabLink: h, module: k, selectedTabId: A }) : void 0
+            pe = h && E ? o.createElement(H, { getTabLink: h, module: S, selectedTabId: D }) : void 0
           return o.createElement(
-            R.nO,
+            Z.nO,
             { namespace: oe },
             o.createElement(
-              Z.Z,
+              C.Z,
               null,
               o.createElement(g.Z, {
                 TabBar: t,
                 backLocation: n,
                 documentTitle: c,
-                history: C,
-                logoButton: w,
-                onBackClick: I,
+                history: T,
+                logoButton: I,
+                onBackClick: _,
                 primaryContent: de,
-                rightControl: ce || F,
-                searchBoxRef: x,
+                rightControl: ce || x,
+                searchBoxRef: A,
                 secondaryBar: pe,
-                sidebarContent: D,
+                sidebarContent: N,
                 subtitle: re,
-                title: le && X ? P : ae,
+                title: le && X ? O : ae,
                 withBottomLoginSignupBar: G,
                 withSearchBox: V,
                 withTweetButton: q,
