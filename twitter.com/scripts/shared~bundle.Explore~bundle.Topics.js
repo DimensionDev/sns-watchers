@@ -2,6 +2,16 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   ['shared~bundle.Explore~bundle.Topics'],
   {
+    612969: function _(e, t, n) {
+      n.d(t, {
+        Z: function Z() {
+          return i
+        },
+      })
+      n(202784)
+      var r = n(325686)
+      var i = (0, n(820941).Z)(r.Z)
+    },
     517847: function _(e, t, n) {
       n.d(t, {
         Z: function Z() {
@@ -20,13 +30,13 @@
         p = n.n(d),
         f = n(16587),
         m = n(28412),
-        b = n(133252),
-        h = n(612969),
-        v = n(509082),
+        h = n(133252),
+        v = n(612969),
+        b = n(509082),
         g = n(543467),
         Z = n(845855),
-        C = n(878149),
-        y = n(963705),
+        y = n(878149),
+        C = n(963705),
         E = n(709249),
         T = n(887371),
         w = n(580753),
@@ -36,15 +46,15 @@
         _ = (n(818178), n(543450), n(296797)),
         L = n(272985),
         B = n(33988),
-        F = n(923335),
-        M = n(392160),
+        M = n(923335),
+        F = n(392160),
         x = function x(e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
         A = function A(e, t) {
           return t.module.selectPageConfiguration && t.module.selectPageConfiguration(e)
         },
-        N = function N(e, t) {
+        D = function D(e, t) {
           var n = t.selectedTabId,
             r = A(e, t)
           return (
@@ -55,14 +65,14 @@
             })
           )
         }
-      var D = (0, M.Z)()
+      var N = (0, F.Z)()
         .propsFromState(function () {
-          return { initialFetchStatus: x, pageConfiguration: A, selectedTab: N }
+          return { initialFetchStatus: x, pageConfiguration: A, selectedTab: D }
         })
         .propsFromActions(function (e) {
           var t = e.module
           return {
-            createLocalApiErrorHandler: (0, F.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
+            createLocalApiErrorHandler: (0, M.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
             fetchInitial: t.fetchInitial,
           }
         })
@@ -147,7 +157,7 @@
               {
                 key: 'render',
                 value: function value() {
-                  return this.props.initialFetchStatus === C.Z.LOADED ? this._render() : null
+                  return this.props.initialFetchStatus === y.Z.LOADED ? this._render() : null
                 },
               },
               {
@@ -174,7 +184,7 @@
             n
           )
         })(o.Component)
-      var H = D((0, B.Z)(O))
+      var H = N((0, B.Z)(O))
       var R = n(98701),
         G = n(615372),
         U = n(440082),
@@ -192,13 +202,13 @@
             })
           )
         }
-      var q = (0, M.Z)()
+      var q = (0, F.Z)()
         .propsFromState(function () {
           return { pageConfiguration: W, selectedTab: V }
         })
         .propsFromActions(function () {
           return {
-            createLocalApiErrorHandler: (0, F.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
+            createLocalApiErrorHandler: (0, M.createLocalApiErrorHandlerWithContextFactory)('RICH_SEGMENTED_TIMELINE'),
           }
         })
         .withAnalytics()
@@ -284,15 +294,15 @@
                       r,
                       d,
                     ),
-                    b = this._getRefreshIntervalSecForCurrentTab(),
-                    h = b ? 1e3 * b : void 0
+                    h = this._getRefreshIntervalSecForCurrentTab(),
+                    v = h ? 1e3 * h : void 0
                   return o.createElement(
                     Z.nO,
                     { namespace: this._getTimelineNamespace() },
                     o.createElement(U.Z, {
                       entryConfiguration: n,
                       module: m,
-                      pollingIntervalMsOverride: h,
+                      pollingIntervalMsOverride: v,
                       prerollDisplayLocation: a,
                       refreshControl: l,
                       renderEmptyState: c,
@@ -381,9 +391,9 @@
           return t.module.selectInitialFetchStatus(e)
         },
         le = (0, ie.P1)(ae, oe, function (e, t) {
-          return t !== C.Z.LOADED || (!!e && !!e.tabs)
+          return t !== y.Z.LOADED || (!!e && !!e.tabs)
         })
-      var ce = (0, M.Z)()
+      var ce = (0, F.Z)()
         .propsFromState(function () {
           return { hasTabNavigation: le, pageConfiguration: ae, initialFetchStatus: oe }
         })
@@ -395,22 +405,22 @@
         pe = n(331261),
         fe = n(86098),
         me = n(882426),
-        be = n(759226),
-        he = n(173738),
-        ve = function ve(e, t) {
+        he = n(759226),
+        ve = n(173738),
+        be = function be(e, t) {
           var n = t.navBar.topicId ? t.navBar.topicId : ''
-          return he.Z.select(e, n)
+          return ve.Z.select(e, n)
         }
-      var ge = (0, M.Z)().propsFromState(function () {
-        return { topic: ve }
+      var ge = (0, F.Z)().propsFromState(function () {
+        return { topic: be }
       })
       var Ze = function Ze(e) {
           return 'https://twitter.com/i/topics/'.concat(e)
         },
-        Ce = function Ce(e) {
+        ye = function ye(e) {
           return 'twitter://topics_timeline?id='.concat(e)
         },
-        ye = p().ed88e742
+        Ce = p().ed88e742
       var Ee = s.Z.create(function (e) {
         return {
           rightControl: { flexDirection: 'row' },
@@ -445,7 +455,7 @@
                       type: 'article',
                     })
                   : null,
-                l ? o.createElement(se.Z, { deepLink: Ce(t) }) : null,
+                l ? o.createElement(se.Z, { deepLink: ye(t) }) : null,
                 o.createElement(
                   K.Z,
                   { style: Ee.rightControl },
@@ -458,7 +468,7 @@
                       o.createElement(fe.ZP, { size: 'medium', textMode: me.q.FollowTopic, topic: a }),
                     ),
                   ),
-                  u ? o.createElement(be.ZP, { copyLinkShareLabel: ye, scribeNamespace: f, url: Ze(t) }) : null,
+                  u ? o.createElement(he.ZP, { copyLinkShareLabel: Ce, scribeNamespace: f, url: Ze(t) }) : null,
                 ),
               ),
             )
@@ -467,14 +477,14 @@
       var we = ['entityToken'],
         ke = ['entityToken'],
         Ie = p().e9f1fbcc,
-        Se = o.createElement(b.Z, null),
+        Se = o.createElement(h.Z, null),
         _e = function _e(e) {
           var t = e.TabBar,
             n = e.backLocation,
             c = e.documentTitle,
             d = e.entryConfiguration,
             p = e.fab,
-            b = e.getTabLink,
+            h = e.getTabLink,
             E = e.hasTabNavigation,
             T = e.history,
             w = e.initialFetchStatus,
@@ -484,12 +494,12 @@
             _ = e.onBackClick,
             L = e.pageConfiguration,
             B = e.prerollDisplayLocation,
-            F = e.renderEmptyState,
-            M = e.renderUnavailable,
+            M = e.renderEmptyState,
+            F = e.renderUnavailable,
             x = e.rightControl,
             A = e.searchBoxRef,
-            N = e.selectedTabId,
-            D = e.sidebarContent,
+            D = e.selectedTabId,
+            N = e.sidebarContent,
             P = e.timelinePrefix,
             O = e.title,
             R = e.withAppLinks,
@@ -512,7 +522,7 @@
             te = $.navBar,
             re = $.subtitle,
             ie = $.title,
-            ae = w === C.Z.LOADED ? ie || O : '',
+            ae = w === y.Z.LOADED ? ie || O : '',
             oe = (function (e, t, n) {
               var r = (null == t ? void 0 : t.scribeConfig) || {},
                 i = (r.entityToken, (0, a.Z)(r, we)),
@@ -527,7 +537,7 @@
                 u = (null == c ? void 0 : c.scribeConfig) || {},
                 s = (u.entityToken, (0, a.Z)(u, ke))
               return (0, m.Z)({}, n, i, s)
-            })(N, L, k),
+            })(D, L, k),
             le = ee ? o.createElement(ne, { header: ee, onHeaderVisible: Y }) : null,
             ce = te
               ? o.createElement(Te, {
@@ -538,7 +548,7 @@
                   withOpenGraphMeta: W,
                 })
               : null,
-            ue = U ? h.Z : o.Fragment,
+            ue = U ? v.Z : o.Fragment,
             se = o.createElement(u.Z, null, function (e) {
               var t = e.containerWidth >= s.Z.theme.breakpoints.medium
               return o.createElement(
@@ -552,9 +562,9 @@
                     entryConfiguration: z(t, d),
                     initialModule: S,
                     prerollDisplayLocation: B,
-                    renderEmptyState: F,
-                    renderUnavailable: M,
-                    selectedTabId: N,
+                    renderEmptyState: M,
+                    renderUnavailable: F,
+                    selectedTabId: D,
                     timelinePrefix: P,
                     title: O,
                     withoutHeadroom: !0,
@@ -562,13 +572,13 @@
                 ),
               )
             }),
-            de = p ? o.createElement(v.Z, { component: l.Z, fab: p }, se) : se,
-            pe = b && E ? o.createElement(H, { getTabLink: b, module: S, selectedTabId: N }) : void 0
+            de = p ? o.createElement(b.Z, { component: l.Z, fab: p }, se) : se,
+            pe = h && E ? o.createElement(H, { getTabLink: h, module: S, selectedTabId: D }) : void 0
           return o.createElement(
             Z.nO,
             { namespace: oe },
             o.createElement(
-              y.Z,
+              C.Z,
               null,
               o.createElement(g.Z, {
                 TabBar: t,
@@ -581,7 +591,7 @@
                 rightControl: ce || x,
                 searchBoxRef: A,
                 secondaryBar: pe,
-                sidebarContent: D,
+                sidebarContent: N,
                 subtitle: re,
                 title: le && X ? O : ae,
                 withBottomLoginSignupBar: G,
@@ -602,6 +612,59 @@
         withOpenGraphMeta: !1,
       }
       var Le = ce(_e)
+    },
+    820941: function _(e, t, n) {
+      n.d(t, {
+        Z: function Z() {
+          return p
+        },
+      })
+      var r = n(709249),
+        i = n(887371),
+        a = n(545754),
+        o = n(486906),
+        l = n(202784),
+        c = n(411916),
+        u = n.n(c),
+        s = n(373463),
+        d = n.n(s)
+      function p(e) {
+        var t = (function (t) {
+          ;(0, a.Z)(c, t)
+          var n = (0, o.Z)(c)
+          function c(e, t) {
+            var i
+            return (0, r.Z)(this, c), ((i = n.call(this, e, t)).state = { shouldRender: !1 }), (i._mounted = !0), i
+          }
+          return (
+            (0, i.Z)(c, [
+              {
+                key: 'componentWillUnmount',
+                value: function value() {
+                  this._mounted = !1
+                },
+              },
+              {
+                key: 'componentDidMount',
+                value: function value() {
+                  var e = this
+                  u()(function () {
+                    e._mounted && e.setState({ shouldRender: !0 })
+                  })
+                },
+              },
+              {
+                key: 'render',
+                value: function value() {
+                  return this.state.shouldRender ? l.createElement(e, this.props) : null
+                },
+              },
+            ]),
+            c
+          )
+        })(l.Component)
+        return d()(t, e)
+      }
     },
   },
 ])
