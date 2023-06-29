@@ -1383,6 +1383,9 @@
         a('bc2ceaf2', 'Sending Tweet...'),
         a('j4c40da4', 'Send now'),
         a('b23688c8', 'Undo timer'),
+        a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
+        a('ced3c85a', 'Edited'),
+        a('edf9101f', 'Keep reading'),
         a('aaad27c8', 'Author'),
         a('e6901eec', 'View Tweet analytics'),
         a('b7cff250', function (e) {
@@ -2328,11 +2331,11 @@
         a(
           'j21902fc',
           'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the Tweet.',
-        ),
-        a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
+        )
+      a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
-        a('fc6e4594', 'Top tags selected by raters')
-      a('c2a6ec00', 'Want to join Community Notes?'),
+        a('fc6e4594', 'Top tags selected by raters'),
+        a('c2a6ec00', 'Want to join Community Notes?'),
         a('cbfa448c', 'Help people stay better informed on Twitter.'),
         a('ab23a972', 'Follow the conversation'),
         a('c68f3bc0', 'Learn more about our values'),
@@ -3601,11 +3604,11 @@
         a('d13e165c', 'TweetDeck Teams'),
         a('hfb92b14', 'Deactivate your account'),
         a('bf96fda4', 'Age'),
-        a('j9d10268', 'Account activity'),
-        a('i6b3f59a', 'Account history'),
+        a('j9d10268', 'Account activity')
+      a('i6b3f59a', 'Account history'),
         a('da202f9a', 'Your advertiser list'),
-        a('hc36dbba', 'Logged-in devices and apps')
-      a('a8d0108e', 'Gender'),
+        a('hc36dbba', 'Logged-in devices and apps'),
+        a('a8d0108e', 'Gender'),
         a('a03dacaa', 'Language'),
         a('d9138166', 'See places you’ve been'),
         a('b523ecc6', 'Account access history'),
@@ -3966,6 +3969,11 @@
         ),
         a('a999cb72', 'Save account changes'),
         a('acc20812', 'Re-enter your Twitter password to save changes to your account.'),
+        a('d97c07be', 'Manage Creator Subscriptions'),
+        a(
+          'efa291da',
+          'View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app.',
+        ),
         a(
           'b02df748',
           'Manage your account’s security and keep track of your account’s usage including apps that you have connected to your account.',
@@ -4077,6 +4085,8 @@
           'f7da127c',
           'Let people who you don’t follow send you message requests and add you to group conversations. To reply to their messages, you need to accept the request.',
         ),
+        a('d411bfb2', 'Allow message requests from people you follow only'),
+        a('f7b55eee', 'Allow message requests from Verified users and people you follow only'),
         a('b3d8566e', 'Filter low-quality messages'),
         a(
           'cfda8c44',
@@ -4092,6 +4102,9 @@
           'bd557506',
           'Let people you’re messaging with know when you’ve seen their messages. Read receipts are not shown on message requests.',
         ),
+        a('a5a058d2', 'Control who can message you'),
+        a('e7e8df00', 'Other controls'),
+        a('jec0d807', 'Learn more'),
         a('b5fe50fc', 'Ads Categories'),
         a(
           'c31a2ea6',
@@ -4840,8 +4853,8 @@
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
-        a('df29646e', 'Payout threshold'),
-        a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
+        a('df29646e', 'Payout threshold')
+      a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
         a('c747df1c', 'Set up payout details'),
         a('ac814a76', 'You haven’t set up payout details yet.'),
         a('f139168e', 'Earnings dashboard'),
@@ -4850,8 +4863,8 @@
         a('ibb5e1c8', 'Application declined'),
         a('b255df58', 'Application submitted · Waiting for review'),
         a('b3f834c8', 'Application waitlisted'),
-        a('i14be2c6', 'Estimated earned revenue')
-      a('c429e3ba', 'Creator Subscriptions'),
+        a('i14be2c6', 'Estimated earned revenue'),
+        a('c429e3ba', 'Creator Subscriptions'),
         a('e9ece9f8', 'Ad revenue share'),
         a('a63ee81e', 'Select programs to sign up for'),
         a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
@@ -6049,10 +6062,29 @@
         ),
         a('g33fd6b1', function (e) {
           return e.percentage + ' from promotion'
-        }),
-        a('b71059c3', function (e) {
-          return e.percentage + ' from non followers'
-        }),
+        })
+      function r(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(e, a.key, a)
+        }
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('b71059c3', function (e) {
+        return e.percentage + ' from non followers'
+      }),
         a('b32334a0', 'Accounts Reached'),
         a('cef4880c', 'Number of unique views for this Tweet'),
         a('de4def4e', '% from all promotions to date'),
@@ -6073,27 +6105,8 @@
         a('d0eeb127', function (e) {
           return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
         }),
-        a('db6efeb8', 'Your promotion is running')
-      function r(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(e, a.key, a)
-        }
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('j6daea86', 'Your promotion is paused'),
+        a('db6efeb8', 'Your promotion is running'),
+        a('j6daea86', 'Your promotion is paused'),
         a('hf9ed10f', function (e) {
           return e.endTimeString + ' · ' + e.endDateString
         }),
@@ -6288,9 +6301,6 @@
         a('h2fcc532', 'Loading history'),
         a('ce374ee0', '@TwitterWrite'),
         a('fe430958', 'Help Center'),
-        a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
-        a('ced3c85a', 'Edited'),
-        a('edf9101f', 'Keep reading'),
         a('jd2f69a8', 'Paste Tweet URL'),
         a('d2ae33ce', 'Invalid Tweet URL'),
         a('ac308436', 'Tweet not found'),
@@ -7320,10 +7330,10 @@
         a('a6587d95', function (e) {
           return 'Reorder column - ' + e.title
         }),
-        a('fb071dea', 'Move column'),
-        a('c77a6327', function (e) {
-          return 'Open column options - ' + e.title
-        }),
+        a('fb071dea', 'Move column')
+      a('c77a6327', function (e) {
+        return 'Open column options - ' + e.title
+      }),
         a('h53c41f0', 'Column options'),
         a('f7bbbb6d', function (e) {
           return 'Close column options - ' + e.title
@@ -7335,8 +7345,8 @@
         a('a443bbc0', 'Close Search'),
         a('d21c79f7', function (e) {
           return 'Set Column Tweet Order - ' + e.title
-        })
-      a('e1ace846', 'Tweet Order'),
+        }),
+        a('e1ace846', 'Tweet Order'),
         a('d126cb7c', 'Latest Tweets'),
         a('c8b12c8f', function (e) {
           return 'Set Column Content - ' + e.title
@@ -8985,6 +8995,18 @@
               },
             },
             {
+              key: 'a20c0721',
+              get: function get() {
+                return ['Last edited: ']
+              },
+            },
+            {
+              key: 'a9ce2dd5',
+              get: function get() {
+                return ['', ' for help and how-to’s.']
+              },
+            },
+            {
               key: 'c5064c6f',
               get: function get() {
                 return ['', ' ']
@@ -10215,6 +10237,12 @@
               },
             },
             {
+              key: 'f0e33253',
+              get: function get() {
+                return ['Depending on the setting you select, different people can send you a direct message. ']
+              },
+            },
+            {
               key: 'f3c4e2c5',
               get: function get() {
                 return ['Your new email ' + this.props.unverifiedEmail + ' has not been confirmed. ']
@@ -10643,18 +10671,6 @@
                   ' for announcements and updates about Notes, or read more in our ',
                   '.',
                 ]
-              },
-            },
-            {
-              key: 'a20c0721',
-              get: function get() {
-                return ['Last edited: ']
-              },
-            },
-            {
-              key: 'a9ce2dd5',
-              get: function get() {
-                return ['', ' for help and how-to’s.']
               },
             },
             {
