@@ -560,6 +560,7 @@
         a('df1b0708', 'Play this GIF'),
         a('cd959e5c', 'Remove media'),
         a('add55c98', 'Media'),
+        a('f350cf46', 'Drag and drop media'),
         a('gff1f69e', 'Loading image'),
         a('f6fec9f6', 'Remove card preview'),
         a('ac4c73d8', 'Embedded video'),
@@ -1137,11 +1138,11 @@
           return '' + e.offendingRule
         }),
         a('ee8c6c62', 'Show more Tweets'),
-        a('i8005e74', 'Loading more Tweets'),
-        a('a3484d22', 'tie')
-      a('aab2efa9', function (e) {
-        return 'winner ' + e.winner
-      }),
+        a('i8005e74', 'Loading more Tweets')
+      a('a3484d22', 'tie'),
+        a('aab2efa9', function (e) {
+          return 'winner ' + e.winner
+        }),
         a('ba21c289', function (e) {
           return (
             'Score card, ' +
@@ -1977,8 +1978,12 @@
         a('h5245afa', 'Community'),
         a('f7dc3b1c', 'This Space has ended'),
         a('c1d15dc0', 'It looks like this Space has been closed.'),
-        a('e7c45f34', 'Join this Space'),
+        a('jcdc32f0', 'Start listening'),
         a('e51df2e6', 'Your mic will be off to start'),
+        a(
+          'e61bdea4',
+          'The host is recording this Space. Everyone that speaks will be included in the public recording.',
+        ),
         a('d782b808', 'Subscribing has its perks'),
         a('i7f83b8d', 'Learn more'),
         a('f5774e3a', 'Spaces Discovery'),
@@ -2326,13 +2331,13 @@
         a('h74b96b0', 'Note submitted '),
         a('ge25848a', 'Current Status'),
         a('fe4fd310', 'Helpful'),
-        a('ce8b505e', 'Not helpful'),
-        a('e5be8156', 'Note status computed by open-source algorithm'),
+        a('ce8b505e', 'Not helpful')
+      a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
           'j21902fc',
           'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the Tweet.',
-        )
-      a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
+        ),
+        a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
         a('fc6e4594', 'Top tags selected by raters'),
         a('c2a6ec00', 'Want to join Community Notes?'),
@@ -3012,6 +3017,8 @@
         ),
         a('faf745fa', 'Nudity'),
         a('h2437f26', 'Sensitive'),
+        a('g5e1668a', 'Able to be downloaded'),
+        a('fdc6a52a', 'When enabled, your video will be available to be downloaded.'),
         a('cd5cba97', function (e) {
           return 'Content warning: ' + e.formattedWarningList
         }),
@@ -3600,12 +3607,12 @@
         a('c21037d0', 'Country'),
         a('ab1f7ee0', 'Change your password'),
         a('e731db5a', 'Password reset'),
-        a('f56af9cc', 'Download an archive of your data'),
-        a('d13e165c', 'TweetDeck Teams'),
+        a('f56af9cc', 'Download an archive of your data')
+      a('d13e165c', 'TweetDeck Teams'),
         a('hfb92b14', 'Deactivate your account'),
         a('bf96fda4', 'Age'),
-        a('j9d10268', 'Account activity')
-      a('i6b3f59a', 'Account history'),
+        a('j9d10268', 'Account activity'),
+        a('i6b3f59a', 'Account history'),
         a('da202f9a', 'Your advertiser list'),
         a('hc36dbba', 'Logged-in devices and apps'),
         a('a8d0108e', 'Gender'),
@@ -4849,12 +4856,12 @@
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
-        a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
-        a('i8132774', 'Bonus content for your most engaged followers'),
+        a('fe163f20', 'Control the publicly displayed tabs on your profile.')
+      a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
-        a('df29646e', 'Payout threshold')
-      a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
+        a('df29646e', 'Payout threshold'),
+        a('b0ac642a', 'Payouts can take up to 90 days to be deposited in your account.'),
         a('c747df1c', 'Set up payout details'),
         a('ac814a76', 'You haven’t set up payout details yet.'),
         a('f139168e', 'Earnings dashboard'),
@@ -5405,7 +5412,6 @@
         a('d18909d4', 'Set reminder'),
         a('b0b38774', 'Header media'),
         a('a7a119ec', 'Undock'),
-        a('jcdc32f0', 'Start listening'),
         a('if420852', 'Play recording'),
         a('cfadb00e', 'Listening'),
         a('db4620aa', 'LIVE SPACE'),
@@ -6054,15 +6060,7 @@
         a('ccab7c76', 'Number of profile views from this Tweet'),
         a('d24b7812', 'Number of clicks on any URL in this Tweet'),
         a('b40d33e4', 'Detail expands'),
-        a('ee547382', 'Times people viewed the details about this Tweet'),
-        a('c5d4d3a8', 'Cost per follow'),
-        a(
-          'f56e24f2',
-          'Total spend divided by the number of followers, including earned. You only pay when someone follows you',
-        ),
-        a('g33fd6b1', function (e) {
-          return e.percentage + ' from promotion'
-        })
+        a('ee547382', 'Times people viewed the details about this Tweet')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6082,9 +6080,17 @@
           c(e, t)
         )
       }
-      a('b71059c3', function (e) {
-        return e.percentage + ' from non followers'
-      }),
+      a('c5d4d3a8', 'Cost per follow'),
+        a(
+          'f56e24f2',
+          'Total spend divided by the number of followers, including earned. You only pay when someone follows you',
+        ),
+        a('g33fd6b1', function (e) {
+          return e.percentage + ' from promotion'
+        }),
+        a('b71059c3', function (e) {
+          return e.percentage + ' from non followers'
+        }),
         a('b32334a0', 'Accounts Reached'),
         a('cef4880c', 'Number of unique views for this Tweet'),
         a('de4def4e', '% from all promotions to date'),
@@ -6893,6 +6899,8 @@
         a('db7144b6', 'There was a problem changing affiliation type. Please try again later.'),
         a('be78e5fa', 'There was a problem removing the affiliate. Please try again later.'),
         a('fa9709ba', 'There was a problem with creating the application. Please try again later.'),
+        a('j62f13fc', 'There was a problem updating this job. Please try again later.'),
+        a('ff5716fc', 'There was a problem creating this job. Please try again later.'),
         a('e970bdbd', function (e) {
           return e.count + ' invites remaining'
         }),
@@ -6904,8 +6912,13 @@
         a('ib60b2d5', function (e) {
           return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
         }),
-        a('i85d5e70', 'Recruiting'),
+        a('ba96929e', 'Hiring'),
         a('i4dccc18', 'Billing'),
+        a('a85cda86', 'Add your jobs to get started'),
+        a(
+          'c04b6472',
+          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
+        ),
         a('b007440a', 'Jobs'),
         a('abebf0fa', 'Featured Jobs'),
         a('f58cf1ac', 'Add job'),
@@ -6916,26 +6929,43 @@
           return 'Featured Jobs (' + e.count + ')'
         }),
         a('b026896a', 'Are you sure you want to delete this job?'),
-        a('ea93671c', 'Deleting a job immediately removes the job from your profile spotlight and jobs list.'),
-        a('g5836244', 'Let’s feature your top job openings'),
+        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
+        a('c131d364', 'Start hiring on Twitter'),
         a(
-          'ic4a78cc',
-          'Twitter Recruiting is a convenient way to feature your latest job openings. Connect your ATS and easily sync your open jobs to make them discoverable by all Twitter users.',
+          'e3494c24',
+          'Twitter Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
         ),
-        a('d28828e4', 'Start adding jobs'),
-        a('e9b91cde', 'Add a job'),
+        a('c3f28126', 'Reach a massive audience'),
         a(
-          'h54f8798',
-          'Create a job to be featured on your organization profile. This must reflect an existing open job from your company that has a corresponding apply page.',
+          'c1858dc4',
+          'Twitter has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
+        ),
+        a('be8393da', 'Feature your most important roles'),
+        a(
+          'd8bc6eea',
+          'Add up to 5 jobs to be Featured Jobs on your company profile. All users will see these featured roles when they view your company’s profile.',
+        ),
+        a('a049efd4', 'Import your jobs quickly'),
+        a(
+          'a21bb95a',
+          'Connect a supported Applicant Tracking System or XML feed to add your jobs to Twitter in minutes.',
+        ),
+        a('f729ab56', 'Add a new job'),
+        a(
+          'ef5078d8',
+          'Add a job to start hiring on Twitter. Each job must have a public Application URL where the candidate can apply: this can be a link to a job posted on your Applicant Tracking System, your Careers page, or another site.',
         ),
         a('ede7d0a2', 'Currency'),
+        a('i48c597e', 'Application URL'),
+        a('b419f77c', 'Enter the unique URL where candidates will apply for this job.'),
         a('eba5a8ec', 'Job Title'),
-        a('dd88c920', 'What job title best describes the role?'),
-        a('e2b68006', 'Where should candidates be located?'),
-        a('a36bebf2', 'Maximum'),
+        a('d20c0aa4', 'How would you describe this role?'),
+        a('i49d322c', 'Where is this role located? Add “Remote” for remote roles.'),
+        a('de1c4376', 'Salary Range'),
+        a('a2d70d2a', 'Add an optional salary range that candidates will see.'),
         a('fcf0ec1c', 'Minimum'),
-        a('ebee0710', 'Public URL'),
-        a('bec7799c', 'Enter the public link to the job for candidates to apply to'),
+        a('a36bebf2', 'Maximum'),
+        a('j3d242ce', 'Invalid range'),
         a('b075c68a', 'Edit job'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('f23a997e', 'twitter.com'),
@@ -7311,8 +7341,8 @@
         a('a2d1df82', 'Find what you’re looking for.'),
         a('d5387d8a', 'Stay up to date with your messages.'),
         a('fb3c79ac', 'Check what’s trending on Twitter.'),
-        a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
-        a('aa0525d0', 'Profiles'),
+        a('ifb8c91e', 'Find a profile and see what they’ve been up to.')
+      a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
         a('fe54751e', 'View your scheduled Tweets.'),
         a('h82c3ee8', 'View your draft Tweets.'),
@@ -7330,10 +7360,10 @@
         a('a6587d95', function (e) {
           return 'Reorder column - ' + e.title
         }),
-        a('fb071dea', 'Move column')
-      a('c77a6327', function (e) {
-        return 'Open column options - ' + e.title
-      }),
+        a('fb071dea', 'Move column'),
+        a('c77a6327', function (e) {
+          return 'Open column options - ' + e.title
+        }),
         a('h53c41f0', 'Column options'),
         a('f7bbbb6d', function (e) {
           return 'Close column options - ' + e.title
@@ -7636,14 +7666,14 @@
           return e.count + ' tuned in'
         }),
         a('jbc5f47a', 'Spaces dock'),
-        a('d2543d97', function (e) {
-          return '+' + e.count
-        }),
         a('gfe2830f', function (e) {
           return e.count + ' other' + n(e.count, '', 's')
         }),
-        a('f70a6835', function (e) {
-          return '+' + e.count + ' other listener' + n(e.count, '', 's')
+        a('dbeae6cf', function (e) {
+          return e.count + ' other listener' + n(e.count, '', 's')
+        }),
+        a('d2543d97', function (e) {
+          return '+' + e.count
         }),
         a('dc718e53', function (e) {
           return '+' + e.count + ' other' + n(e.count, '', 's')
@@ -7819,6 +7849,7 @@
         }),
         a('h9b3104e', 'Video Settings'),
         a('ccc97152', 'Playback speed'),
+        a('a7bf9962', 'Download video'),
         a('e8b5757c', '0.25x'),
         a('e7e954de', '0.5x'),
         a('g07ffe66', '0.75x'),
@@ -11017,6 +11048,12 @@
               key: 'e8404c1f',
               get: function get() {
                 return ['Followed by ', ', ', ', and ', ' others you follow']
+              },
+            },
+            {
+              key: 'i6125da7',
+              get: function get() {
+                return ['', ' · ']
               },
             },
             {
