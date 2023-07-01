@@ -829,6 +829,7 @@
         a('g695898f', function (e) {
           return 'Get verified to message @' + e.username
         }),
+        a('d7bc1116', 'Get verified to message this user'),
         a(
           'b12f5fe2',
           'Only verified users can send Direct Message requests to people that don’t follow them. Sign up for Twitter Blue to continue.',
@@ -1137,9 +1138,9 @@
         a('a0e0a52c', function (e) {
           return '' + e.offendingRule
         }),
-        a('ee8c6c62', 'Show more Tweets'),
-        a('i8005e74', 'Loading more Tweets')
-      a('a3484d22', 'tie'),
+        a('ee8c6c62', 'Show more Tweets')
+      a('i8005e74', 'Loading more Tweets'),
+        a('a3484d22', 'tie'),
         a('aab2efa9', function (e) {
           return 'winner ' + e.winner
         }),
@@ -2330,9 +2331,9 @@
         a('h201bdc8', 'Note Author'),
         a('h74b96b0', 'Note submitted '),
         a('ge25848a', 'Current Status'),
-        a('fe4fd310', 'Helpful'),
-        a('ce8b505e', 'Not helpful')
-      a('e5be8156', 'Note status computed by open-source algorithm'),
+        a('fe4fd310', 'Helpful')
+      a('ce8b505e', 'Not helpful'),
+        a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
           'j21902fc',
           'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the Tweet.',
@@ -2964,37 +2965,33 @@
         a('c1cb2965', function (e) {
           return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
         }),
-        a('caca3102', 'Others in this conversation'),
-        a('c6a6dc2f', function (e) {
-          return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
+        a('jd2f69a8', 'Paste Tweet URL'),
+        a('d2ae33ce', 'Invalid Tweet URL'),
+        a('ac308436', 'Tweet not found'),
+        a('ac78ac54', 'Tweet already added to this Moment'),
+        a('a50ba822', 'Search for GIFs'),
+        a('c6f5ac52', 'Categories — GIF Search'),
+        a('ab468379', function (e) {
+          return e.query + ' — GIF Search'
         }),
-        a('c20dc654', 'Only 10 people can be tagged.'),
-        a('ae0831ab', function (e) {
-          return '@' + e.screenName + ' can’t be tagged in photos'
+        a('j7fc4f9c', 'Auto-play GIFs'),
+        a('a66b7760', 'Unlabeled GIF'),
+        a('a723aefa', 'No GIFs found'),
+        a('a6ecfa0a', 'Try searching for something else instead.'),
+        a('f5ff0d6f', function (e) {
+          return e.category + ' — GIF Search'
         }),
-        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
-        a('c5dd0190', 'Time'),
-        a('edeff232', 'Date'),
-        a('fddf24b4', 'Time zone'),
-        a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
-        a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
-        a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
-        a('i26eed06', 'Your selected unsent Tweets were deleted.'),
-        a('db99d356', 'Loading unsent Tweets'),
-        a('g32f19e4', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
-        a('g700c084', 'Deleting unsent Tweets'),
-        a('a133d13e', 'Unsent Tweets'),
-        a('e8bd47f2', 'Select all'),
-        a('j2b145d4', 'Deselect all'),
-        a('df9f719a', 'Discard unsent Tweets'),
-        a('hb0c8242', 'This can’t be undone and you’ll lose your unsent Tweets.'),
-        a('f9f69d32', 'Failed to send'),
-        a('g0ff8c0c', 'The Tweet you’re trying to reply to has been deleted'),
-        a('c5ceafc8', 'Replying'),
-        a('b321d0cc', 'Load images'),
-        a('f842d5d4', 'Discard unsent Tweet'),
-        a('b3a7362e', 'This can’t be undone and you’ll lose your draft Tweet.'),
-        a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
+        a('a3dcd5b2', 'Copy link to Note'),
+        a('ce374ee0', '@TwitterWrite'),
+        a('fe430958', 'Help Center'),
+        a('a7da0adb', function (e) {
+          return e.count + ' word' + n(e.count, '', 's')
+        }),
+        a('aea1d455', function (e) {
+          return e.count + ' minute' + n(e.count, '', 's')
+        }),
+        a('ce1d02b4', 'Share via Tweet…'),
+        a('a4079efa', 'Learn more about Notes'),
         a('e070024a', 'Edit photo'),
         a('i7d24b36', 'Next image'),
         a('f96a38a2', 'Previous image'),
@@ -3032,6 +3029,41 @@
           'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
         ),
         a('a6b267fa', 'Remove captions'),
+        a(
+          'h880e4b8',
+          'Wait! This Note can’t be read right now. The writer may have unpublished it, or Notes might not be available in your location. You can try reloading the page, visiting the writer’s profile page and clicking to the Notes tab, or try again when Notes are available in your location.',
+        ),
+        a('caca3102', 'Others in this conversation'),
+        a('c6a6dc2f', function (e) {
+          return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
+        }),
+        a('c20dc654', 'Only 10 people can be tagged.'),
+        a('ae0831ab', function (e) {
+          return '@' + e.screenName + ' can’t be tagged in photos'
+        }),
+        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
+        a('c5dd0190', 'Time'),
+        a('edeff232', 'Date'),
+        a('fddf24b4', 'Time zone'),
+        a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
+        a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
+        a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
+        a('i26eed06', 'Your selected unsent Tweets were deleted.'),
+        a('db99d356', 'Loading unsent Tweets'),
+        a('g32f19e4', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
+        a('g700c084', 'Deleting unsent Tweets'),
+        a('a133d13e', 'Unsent Tweets'),
+        a('e8bd47f2', 'Select all'),
+        a('j2b145d4', 'Deselect all'),
+        a('df9f719a', 'Discard unsent Tweets'),
+        a('hb0c8242', 'This can’t be undone and you’ll lose your unsent Tweets.'),
+        a('f9f69d32', 'Failed to send'),
+        a('g0ff8c0c', 'The Tweet you’re trying to reply to has been deleted'),
+        a('c5ceafc8', 'Replying'),
+        a('b321d0cc', 'Load images'),
+        a('f842d5d4', 'Discard unsent Tweet'),
+        a('b3a7362e', 'This can’t be undone and you’ll lose your draft Tweet.'),
+        a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
         a('e7c766ee', 'Location services are disabled'),
         a('ab68727a', 'You can turn them on in your device’s settings.'),
         a('ae4057a2', 'Unable to determine location'),
@@ -3574,11 +3606,11 @@
         a('b51afbb2', 'Authenticity Method'),
         a('cc87b01c', 'Review and submit'),
         a('ec6801cc', 'Your request has been sent!'),
-        a('i6ef95ec', 'survey'),
-        a(
-          'j94e995e',
-          'Your last request was denied. You’ll need to wait 30 days from that date to submit a new request.',
-        ),
+        a('i6ef95ec', 'survey')
+      a(
+        'j94e995e',
+        'Your last request was denied. You’ll need to wait 30 days from that date to submit a new request.',
+      ),
         a(
           'da458d6c',
           'You have submitted a verification request and been rejected within the past 30 days. Please try again.',
@@ -3607,8 +3639,8 @@
         a('c21037d0', 'Country'),
         a('ab1f7ee0', 'Change your password'),
         a('e731db5a', 'Password reset'),
-        a('f56af9cc', 'Download an archive of your data')
-      a('d13e165c', 'TweetDeck Teams'),
+        a('f56af9cc', 'Download an archive of your data'),
+        a('d13e165c', 'TweetDeck Teams'),
         a('hfb92b14', 'Deactivate your account'),
         a('bf96fda4', 'Age'),
         a('j9d10268', 'Account activity'),
@@ -4821,8 +4853,8 @@
         }),
         a('f6d0d8c2', 'Upgrade Twitter Blue'),
         a('a5760c62', 'Upgrade available'),
-        a('a7d868c2', 'Get a verified account and blue checkmark.'),
-        a('be103b84', 'Active'),
+        a('a7d868c2', 'Get a verified account and blue checkmark.')
+      a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
         a('ce70c590', 'Manage affiliation badges'),
         a('a49e1b2a', 'Sort your affiliations'),
@@ -4856,8 +4888,8 @@
         a('a559d59e', 'Set a timer to undo sent Tweets, and choose which kinds of Tweets you want to undo.'),
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
-        a('fe163f20', 'Control the publicly displayed tabs on your profile.')
-      a('i8132774', 'Bonus content for your most engaged followers'),
+        a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
+        a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
         a('df29646e', 'Payout threshold'),
@@ -5331,18 +5363,6 @@
         a('aab2fae0', 'iOS App'),
         a('eedfd35c', 'Company'),
         a('a35d9c9a', 'Resources'),
-        a('a50ba822', 'Search for GIFs'),
-        a('c6f5ac52', 'Categories — GIF Search'),
-        a('ab468379', function (e) {
-          return e.query + ' — GIF Search'
-        }),
-        a('j7fc4f9c', 'Auto-play GIFs'),
-        a('a66b7760', 'Unlabeled GIF'),
-        a('a723aefa', 'No GIFs found'),
-        a('a6ecfa0a', 'Try searching for something else instead.'),
-        a('f5ff0d6f', function (e) {
-          return e.category + ' — GIF Search'
-        }),
         a('abb9f876', 'You’ve unlocked more on Twitter'),
         a(
           'd5e4d0a6',
@@ -6044,23 +6064,7 @@
         a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
         a('jf28b41c', '45-54'),
-        a('ja78da94', '55-64'),
-        a('bcd9cf68', 'Above 65'),
-        a('a3c544e8', 'Top countries'),
-        a('f05f1838', 'Other / Not specified'),
-        a('fa5be588', 'Organic'),
-        a('f6162a32', 'Times this Tweet was seen on Twitter'),
-        a('dbe9353e', 'Engagements'),
-        a(
-          'e044b630',
-          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
-        ),
-        a('d8abdaa4', 'New followers'),
-        a('de0de3a8', 'Follows gained directly from this Tweet'),
-        a('ccab7c76', 'Number of profile views from this Tweet'),
-        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
-        a('b40d33e4', 'Detail expands'),
-        a('ee547382', 'Times people viewed the details about this Tweet')
+        a('ja78da94', '55-64')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6080,7 +6084,23 @@
           c(e, t)
         )
       }
-      a('c5d4d3a8', 'Cost per follow'),
+      a('bcd9cf68', 'Above 65'),
+        a('a3c544e8', 'Top countries'),
+        a('f05f1838', 'Other / Not specified'),
+        a('fa5be588', 'Organic'),
+        a('f6162a32', 'Times this Tweet was seen on Twitter'),
+        a('dbe9353e', 'Engagements'),
+        a(
+          'e044b630',
+          'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
+        ),
+        a('d8abdaa4', 'New followers'),
+        a('de0de3a8', 'Follows gained directly from this Tweet'),
+        a('ccab7c76', 'Number of profile views from this Tweet'),
+        a('d24b7812', 'Number of clicks on any URL in this Tweet'),
+        a('b40d33e4', 'Detail expands'),
+        a('ee547382', 'Times people viewed the details about this Tweet'),
+        a('c5d4d3a8', 'Cost per follow'),
         a(
           'f56e24f2',
           'Total spend divided by the number of followers, including earned. You only pay when someone follows you',
@@ -6305,25 +6325,6 @@
         a('f26a4cb2', 'Swipe up for more'),
         a('f345dcda', 'Edit History'),
         a('h2fcc532', 'Loading history'),
-        a('ce374ee0', '@TwitterWrite'),
-        a('fe430958', 'Help Center'),
-        a('jd2f69a8', 'Paste Tweet URL'),
-        a('d2ae33ce', 'Invalid Tweet URL'),
-        a('ac308436', 'Tweet not found'),
-        a('ac78ac54', 'Tweet already added to this Moment'),
-        a('a3dcd5b2', 'Copy link to Note'),
-        a('a7da0adb', function (e) {
-          return e.count + ' word' + n(e.count, '', 's')
-        }),
-        a('aea1d455', function (e) {
-          return e.count + ' minute' + n(e.count, '', 's')
-        }),
-        a('ce1d02b4', 'Share via Tweet…'),
-        a('a4079efa', 'Learn more about Notes'),
-        a(
-          'h880e4b8',
-          'Wait! This Note can’t be read right now. The writer may have unpublished it, or Notes might not be available in your location. You can try reloading the page, visiting the writer’s profile page and clicking to the Notes tab, or try again when Notes are available in your location.',
-        ),
         a(
           'c9e3df02',
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Twitter Blue subscription.',
@@ -7026,46 +7027,20 @@
         a('a310e476', 'Direct'),
         a('fde6cf98', 'For immediate access to Verified Organizations.'),
         a('fdfbfcb0', 'Invoicing'),
-        a('bc572899', 'Learn more'),
+        a('fb4288c9', 'Learn more'),
         a(
           'f45d02e8',
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a(
-          'f565c0f4',
-          'Verified Organizations is for organizations of all types–businesses, non-profits, and government institutions–to manage their verification, affiliate and verify any related account, and unlock new features.',
-        ),
         a('da4ad6b2', 'Verification management'),
-        a(
-          'd86e1d60',
-          'Receive a gold or grey checkmark and verify accounts affiliated with your organization through our new Verified portal.',
-        ),
-        a('edb8f0dc', 'Custom organization profile'),
-        a(
-          'bef593c6',
-          'Elevate and distinguish your organization with a square avatar, and a new tab that lists all affiliated accounts.',
-        ),
+        a('cba7528e', 'Custom Profiles'),
         a('b2cee330', 'Impersonation defense'),
-        a(
-          'da157944',
-          'Accounts impersonating Verified Organizations are flagged for further review if impersonation is detected.',
-        ),
         a('f0f48668', 'Premium support'),
-        a(
-          'aa15785a',
-          'Organizations get exclusive access to contact premium support, ensuring timely help and escalations.',
-        ),
-        a('f188734a', 'Elevated Tweet, DM, and media upload limits'),
-        a(
-          'c132c33a',
-          'Verified Organizations and their affiliates have significantly elevated Tweet, DM, and media upload rate limits.',
-        ),
-        a(
-          'e39d052c',
-          'All accounts (organizations and their affiliates) will receive all the benefits of Twitter Blue.',
-        ),
-        a('ga412491', 'here'),
+        a('cd7193ae', 'More Tweet, DM, and media uploads'),
+        a('db8c4158', 'Apply now'),
+        a('f2fb24cd', 'here'),
+        a('e2e8d8e5', 'Purchaser Terms of Service'),
         a('d47c0c7c', 'Who are you?'),
         a('e065b6cc', 'Choose the right Verified subscription for you:'),
         a('c75a9386', 'Learn more about'),
@@ -7341,12 +7316,12 @@
         a('a2d1df82', 'Find what you’re looking for.'),
         a('d5387d8a', 'Stay up to date with your messages.'),
         a('fb3c79ac', 'Check what’s trending on Twitter.'),
-        a('ifb8c91e', 'Find a profile and see what they’ve been up to.')
-      a('aa0525d0', 'Profiles'),
+        a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
+        a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
         a('fe54751e', 'View your scheduled Tweets.'),
-        a('h82c3ee8', 'View your draft Tweets.'),
-        a('ce3074c2', 'Draft Tweets'),
+        a('h82c3ee8', 'View your draft Tweets.')
+      a('ce3074c2', 'Draft Tweets'),
         a('bcf970ea', 'See bookmarked Tweets.'),
         a('d44bf1ca', 'Bookmarked Tweets'),
         a('ic61c5fc', 'Scroll to top'),
@@ -9486,6 +9461,16 @@
               },
             },
             {
+              key: 'h9fba3eb',
+              get: function get() {
+                return [
+                  'Notes aren’t available to read in your region yet. Follow ',
+                  ' for announcements and updates about Notes, or read more in our ',
+                  '.',
+                ]
+              },
+            },
+            {
               key: 'a9ec3729',
               get: function get() {
                 return ['', ' ']
@@ -10695,16 +10680,6 @@
               },
             },
             {
-              key: 'h9fba3eb',
-              get: function get() {
-                return [
-                  'Notes aren’t available to read in your region yet. Follow ',
-                  ' for announcements and updates about Notes, or read more in our ',
-                  '.',
-                ]
-              },
-            },
-            {
               key: 'cecc10bf',
               get: function get() {
                 return ['']
@@ -10928,23 +10903,26 @@
               },
             },
             {
-              key: 'fc713df3',
+              key: 'e63e8683',
+              get: function get() {
+                return ['', '/month (', ') + ', ' per handle per month (', '). ']
+              },
+            },
+            {
+              key: 'f06cbce7',
               get: function get() {
                 return [
-                  'Verified Organizations is ',
-                  ' per month (',
-                  '). Each additional affiliated account is ',
-                  ' per handle per month (',
-                  '). ',
+                  'Manage your organization on Twitter and unlock new features for businesses and government institutions. Learn more ',
+                  '.',
                 ]
               },
             },
             {
-              key: 'c4e7be7f',
+              key: 'db0a35bd',
               get: function get() {
                 return [
-                  'By clicking Subscribe, you agree to our Purchaser Terms of Service. Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime. Accounts that sign up are reviewed. If we determine at any time that your main account is not an organization or you violate our terms and policies, your subscription will be canceled and you will not be refunded during your existing billing period unless required by law. See more ',
-                  '.',
+                  'By clicking Apply now, you agree to our ',
+                  '. Subscriptions auto-renew until canceled, as described in the Terms. Accounts that sign up are reviewed for authenticity. If an account signs up and is not an organization, you will be rejected and not refunded.',
                 ]
               },
             },
