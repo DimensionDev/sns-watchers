@@ -4909,6 +4909,7 @@
         a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
+        a('bacb1f72', 'Not eligible'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -6063,8 +6064,7 @@
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54'),
-        a('ja78da94', '55-64')
+        a('jf28b41c', '45-54')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6084,7 +6084,8 @@
           c(e, t)
         )
       }
-      a('bcd9cf68', 'Above 65'),
+      a('ja78da94', '55-64'),
+        a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
         a('f05f1838', 'Other / Not specified'),
         a('fa5be588', 'Organic'),
@@ -7319,9 +7320,9 @@
         a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
         a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
-        a('fe54751e', 'View your scheduled Tweets.'),
-        a('h82c3ee8', 'View your draft Tweets.')
-      a('ce3074c2', 'Draft Tweets'),
+        a('fe54751e', 'View your scheduled Tweets.')
+      a('h82c3ee8', 'View your draft Tweets.'),
+        a('ce3074c2', 'Draft Tweets'),
         a('bcf970ea', 'See bookmarked Tweets.'),
         a('d44bf1ca', 'Bookmarked Tweets'),
         a('ic61c5fc', 'Scroll to top'),
