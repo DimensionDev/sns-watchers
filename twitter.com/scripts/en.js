@@ -322,6 +322,7 @@
         a('ab38b896', 'Twitter Ads'),
         a('da137d9a', 'MStV Transparenzangaben'),
         a('j087774e', 'Coins'),
+        a('a5a30af0', 'Articles'),
         a('bcd81cac', 'Preferences'),
         a('i1d35d74', 'TweetDeck'),
         a('c9d41314', 'Twitter for Professionals'),
@@ -1137,9 +1138,9 @@
         a('fad95334', 'Your Tweets in the Community will be hidden, and you won’t be able to join again.'),
         a('a0e0a52c', function (e) {
           return '' + e.offendingRule
-        }),
-        a('ee8c6c62', 'Show more Tweets')
-      a('i8005e74', 'Loading more Tweets'),
+        })
+      a('ee8c6c62', 'Show more Tweets'),
+        a('i8005e74', 'Loading more Tweets'),
         a('a3484d22', 'tie'),
         a('aab2efa9', function (e) {
           return 'winner ' + e.winner
@@ -2330,9 +2331,9 @@
         a('df587b98', 'Note ID'),
         a('h201bdc8', 'Note Author'),
         a('h74b96b0', 'Note submitted '),
-        a('ge25848a', 'Current Status'),
-        a('fe4fd310', 'Helpful')
-      a('ce8b505e', 'Not helpful'),
+        a('ge25848a', 'Current Status')
+      a('fe4fd310', 'Helpful'),
+        a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
           'j21902fc',
@@ -2944,27 +2945,6 @@
         a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
         a('hd436778', 'Loading Community Hashtag Tweets'),
         a('feeaae18', 'Community Hashtag Tweets'),
-        a('b8f0483e', 'Compose new Tweet'),
-        a('a1183238', 'Tweeting within a Community'),
-        a(
-          'da2663f6',
-          'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
-        ),
-        a('c03c4a09', function (e) {
-          return (
-            e.minutes +
-            ' minute' +
-            n(e.minutes, '', 's') +
-            ' and ' +
-            e.seconds +
-            ' second' +
-            n(e.seconds, '', 's') +
-            ' remaining to edit Tweet'
-          )
-        }),
-        a('c1cb2965', function (e) {
-          return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
-        }),
         a('jd2f69a8', 'Paste Tweet URL'),
         a('d2ae33ce', 'Invalid Tweet URL'),
         a('ac308436', 'Tweet not found'),
@@ -3033,6 +3013,27 @@
           'h880e4b8',
           'Wait! This Note can’t be read right now. The writer may have unpublished it, or Notes might not be available in your location. You can try reloading the page, visiting the writer’s profile page and clicking to the Notes tab, or try again when Notes are available in your location.',
         ),
+        a('b8f0483e', 'Compose new Tweet'),
+        a('a1183238', 'Tweeting within a Community'),
+        a(
+          'da2663f6',
+          'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
+        ),
+        a('c03c4a09', function (e) {
+          return (
+            e.minutes +
+            ' minute' +
+            n(e.minutes, '', 's') +
+            ' and ' +
+            e.seconds +
+            ' second' +
+            n(e.seconds, '', 's') +
+            ' remaining to edit Tweet'
+          )
+        }),
+        a('c1cb2965', function (e) {
+          return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
+        }),
         a('caca3102', 'Others in this conversation'),
         a('c6a6dc2f', function (e) {
           return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
@@ -3129,6 +3130,10 @@
         a('g5261e91', function (e) {
           return 'You are now acting as @' + e.screenName + '.'
         }),
+        a('e6718a62', 'Only the account owner can use this feature'),
+        a('ba77b438', 'Switch accounts'),
+        a('c25e5c43', 'send us feedback.'),
+        a('f6293d05', 'send us feedback.'),
         a('dbc85148', 'Select a message'),
         a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
         a('d4f88600', 'Verify contact'),
@@ -3601,16 +3606,16 @@
         ),
         a('i0864918', 'Category'),
         a('c7942074', 'Account Type'),
-        a('b8121daa', 'Notability Reference(s)'),
-        a('d247ca70', 'Review the details of your verification request below. Once confirmed, hit submit.'),
+        a('b8121daa', 'Notability Reference(s)')
+      a('d247ca70', 'Review the details of your verification request below. Once confirmed, hit submit.'),
         a('b51afbb2', 'Authenticity Method'),
         a('cc87b01c', 'Review and submit'),
         a('ec6801cc', 'Your request has been sent!'),
-        a('i6ef95ec', 'survey')
-      a(
-        'j94e995e',
-        'Your last request was denied. You’ll need to wait 30 days from that date to submit a new request.',
-      ),
+        a('i6ef95ec', 'survey'),
+        a(
+          'j94e995e',
+          'Your last request was denied. You’ll need to wait 30 days from that date to submit a new request.',
+        ),
         a(
           'da458d6c',
           'You have submitted a verification request and been rejected within the past 30 days. Please try again.',
@@ -4119,13 +4124,15 @@
         a('fc1d217c', 'Display media that may contain sensitive content'),
         a('j018f2a2', 'Explore settings'),
         a('h1ef00dc', 'Search settings'),
+        a('c75c45d6', 'Allow messages only from people you follow'),
+        a('c6f33c94', 'You won’t receive any message requests'),
+        a('gba4db78', 'Allow message requests only from Verified users'),
+        a('e3a8b282', 'People you follow will still be able to message you'),
         a('b4006390', 'Allow message requests from everyone'),
         a(
           'f7da127c',
           'Let people who you don’t follow send you message requests and add you to group conversations. To reply to their messages, you need to accept the request.',
         ),
-        a('d411bfb2', 'Allow message requests from people you follow only'),
-        a('f7b55eee', 'Allow message requests from Verified users and people you follow only'),
         a('b3d8566e', 'Filter low-quality messages'),
         a(
           'cfda8c44',
@@ -4837,11 +4844,11 @@
         a('fecebd4c', 'here'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
-        a('fdc10b7e', 'Verified Organizations Subscriber'),
-        a(
-          'cad64506',
-          'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
-        ),
+        a('fdc10b7e', 'Verified Organizations Subscriber')
+      a(
+        'cad64506',
+        'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
+      ),
         a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
         a('h80834de', 'other'),
         a('ib8ebf3b', function (e) {
@@ -4853,8 +4860,8 @@
         }),
         a('f6d0d8c2', 'Upgrade Twitter Blue'),
         a('a5760c62', 'Upgrade available'),
-        a('a7d868c2', 'Get a verified account and blue checkmark.')
-      a('be103b84', 'Active'),
+        a('a7d868c2', 'Get a verified account and blue checkmark.'),
+        a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
         a('ce70c590', 'Manage affiliation badges'),
         a('a49e1b2a', 'Sort your affiliations'),
@@ -4909,7 +4916,6 @@
         a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
-        a('bacb1f72', 'Not eligible'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -5266,9 +5272,6 @@
         ),
         a('dca3d2ee', 'Turn off reply filter?'),
         a('d75ce93e', 'Filtered replies will not be restored to your Tweets.'),
-        a('a74e7c77', function (e) {
-          return e.count + ' unread request' + n(e.count, '', 's')
-        }),
         a('f325afc4', 'Compose a DM'),
         a('f5dc353c', 'Now filtering graphic media'),
         a('daeda054', 'Go to Settings'),
@@ -6059,12 +6062,7 @@
         a('d267afa2', 'Under 20'),
         a('db81cab0', '20-29'),
         a('f173716e', '30-39'),
-        a('ada329e6', '40-49'),
-        a('j2950694', 'Above 50'),
-        a('a5c91a8e', '18-24'),
-        a('cf30cdfa', '25-34'),
-        a('gf672f7c', '35-44'),
-        a('jf28b41c', '45-54')
+        a('ada329e6', '40-49')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6084,7 +6082,12 @@
           c(e, t)
         )
       }
-      a('ja78da94', '55-64'),
+      a('j2950694', 'Above 50'),
+        a('a5c91a8e', '18-24'),
+        a('cf30cdfa', '25-34'),
+        a('gf672f7c', '35-44'),
+        a('jf28b41c', '45-54'),
+        a('ja78da94', '55-64'),
         a('bcd9cf68', 'Above 65'),
         a('a3c544e8', 'Top countries'),
         a('f05f1838', 'Other / Not specified'),
@@ -7315,13 +7318,13 @@
         a('c0d2d4aa', 'Home Timeline'),
         a('ecbbbb90', 'View your own or other people’s lists.'),
         a('a2d1df82', 'Find what you’re looking for.'),
-        a('d5387d8a', 'Stay up to date with your messages.'),
-        a('fb3c79ac', 'Check what’s trending on Twitter.'),
+        a('d5387d8a', 'Stay up to date with your messages.')
+      a('fb3c79ac', 'Check what’s trending on Twitter.'),
         a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
         a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
-        a('fe54751e', 'View your scheduled Tweets.')
-      a('h82c3ee8', 'View your draft Tweets.'),
+        a('fe54751e', 'View your scheduled Tweets.'),
+        a('h82c3ee8', 'View your draft Tweets.'),
         a('ce3074c2', 'Draft Tweets'),
         a('bcf970ea', 'See bookmarked Tweets.'),
         a('d44bf1ca', 'Bookmarked Tweets'),
@@ -9475,6 +9478,22 @@
               key: 'a9ec3729',
               get: function get() {
                 return ['', ' ']
+              },
+            },
+            {
+              key: 'd8abe5eb',
+              get: function get() {
+                return [
+                  'To use this feature, switch to an account that you own.\n\nAs a contributor, you can send Direct Messages, publish Tweets, and create Lists — as well as view them.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
+                ]
+              },
+            },
+            {
+              key: 'j3c15cf3',
+              get: function get() {
+                return [
+                  'To use this feature, switch to an account that you own.\n\nAs an admin, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. You can also invite or remove contributors to the account and view account analytics.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
+                ]
               },
             },
             {
