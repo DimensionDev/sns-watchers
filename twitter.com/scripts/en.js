@@ -161,7 +161,16 @@
         a('d5519f4a', 'Abusive Behavior'),
         a('eb55363c', 'This Space has been reported'),
         a('f91f00ba', 'Create clip'),
+        a('jcc8306e', 'Request to speak'),
+        a('j41fd45a', 'Request sent'),
+        a('hd50e064', 'Not now'),
+        a('i76d640e', 'We need your permission'),
+        a(
+          'h75c7eda',
+          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
+        ),
         a('h63a5c3c', 'More'),
+        a('a2bf8b8a', 'Switch to listening'),
         a('d1e21610', 'Report NetzDG Violation'),
         a('e674c120', 'Show captions'),
         a('f45bace4', 'Hide captions'),
@@ -433,7 +442,6 @@
           return 'Switch to @' + e.screenName
         }),
         a('j49fd4e8', 'Switch to the app'),
-        a('hd50e064', 'Not now'),
         a('d8817e36', 'Accept all cookies'),
         a('b9288ee6', 'Refuse non-essential cookies'),
         a('i1390ec2', 'Did someone say … cookies?'),
@@ -879,7 +887,6 @@
         a('j7d0e836', 'Expand'),
         a('cdcebd22', 'New message'),
         a('a66ac766', 'Loading Direct Messages'),
-        a('fe61929e', 'Search for people and groups'),
         a('a846382a', 'Search Direct Messages'),
         a('e5b0063d', function (e) {
           return 'Timeline: ' + e.title
@@ -937,10 +944,8 @@
         a('ae111c99', function (e) {
           return 'No results for "' + e.query + '"'
         }),
-        a('efb6c154', 'Only people and groups are searchable.'),
         a('e8581cce', 'The term you entered did not bring up any results'),
         a('f08940ac', 'Start new message'),
-        a('gaae1fd6', 'Try searching for people or groups'),
         a('i5d7593a', 'Try searching for people, groups, or messages'),
         a('f8321d82', 'All'),
         a('c94ac69e', 'Groups'),
@@ -1134,12 +1139,12 @@
         a('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
         a('h27d6950', 'You can’t leave just yet'),
         a('b02360f6', 'The last admin or moderator can’t leave unless the Community is empty.'),
-        a('d90022d6', 'make your Tweets public'),
-        a('fad95334', 'Your Tweets in the Community will be hidden, and you won’t be able to join again.'),
+        a('d90022d6', 'make your Tweets public')
+      a('fad95334', 'Your Tweets in the Community will be hidden, and you won’t be able to join again.'),
         a('a0e0a52c', function (e) {
           return '' + e.offendingRule
-        })
-      a('ee8c6c62', 'Show more Tweets'),
+        }),
+        a('ee8c6c62', 'Show more Tweets'),
         a('i8005e74', 'Loading more Tweets'),
         a('a3484d22', 'tie'),
         a('aab2efa9', function (e) {
@@ -1839,9 +1844,9 @@
           return e.trustedFriendsTweetOwner + '’s'
         }),
         a('f11264ac', 'Add payment method'),
-        a('e7719126', 'Tweet with Boost'),
-        a('c5c0b3bc', 'Boost your Tweet'),
-        a('fb35ac8f', 'Twitter Ads Terms and Conditions.'),
+        a('b09fa218', 'Promote Tweet'),
+        a('dcfb0332', 'Promote your Tweet'),
+        a('d32d9afd', 'Twitter Ads Terms and Conditions.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
         a('hd435bf1', function (e) {
@@ -1850,7 +1855,6 @@
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('fa8f6ec6', 'Your Tweet was posted, but we were unable to run the Boost on it. You will not be charged.'),
         a('fe26420a', 'Add keywords'),
-        a('cfa1ef16', 'Boost'),
         a(
           'haebcf52',
           'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -2330,9 +2334,9 @@
         a('c75b7fb4', 'Not Helpful'),
         a('df587b98', 'Note ID'),
         a('h201bdc8', 'Note Author'),
-        a('h74b96b0', 'Note submitted '),
-        a('ge25848a', 'Current Status')
-      a('fe4fd310', 'Helpful'),
+        a('h74b96b0', 'Note submitted ')
+      a('ge25848a', 'Current Status'),
+        a('fe4fd310', 'Helpful'),
         a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
@@ -3605,9 +3609,9 @@
           'We and our trusted third parties will use the information related to your account and any additional information that you provide to us in order to determine your authenticity and eligibility for verification.',
         ),
         a('i0864918', 'Category'),
-        a('c7942074', 'Account Type'),
-        a('b8121daa', 'Notability Reference(s)')
-      a('d247ca70', 'Review the details of your verification request below. Once confirmed, hit submit.'),
+        a('c7942074', 'Account Type')
+      a('b8121daa', 'Notability Reference(s)'),
+        a('d247ca70', 'Review the details of your verification request below. Once confirmed, hit submit.'),
         a('b51afbb2', 'Authenticity Method'),
         a('cc87b01c', 'Review and submit'),
         a('ec6801cc', 'Your request has been sent!'),
@@ -4018,6 +4022,7 @@
           'efa291da',
           'View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app.',
         ),
+        a('j7f5c6aa', 'You don’t have any Subscriptions yet'),
         a(
           'b02df748',
           'Manage your account’s security and keep track of your account’s usage including apps that you have connected to your account.',
@@ -4842,13 +4847,13 @@
         a('j3404888', 'We are reviewing your account.'),
         a('f4bd606a', 'To cancel your complimentary subscription to Twitter Blue, contact support'),
         a('fecebd4c', 'here'),
-        a('de9f111a', 'Manage your current subscription'),
-        a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
-        a('fdc10b7e', 'Verified Organizations Subscriber')
-      a(
-        'cad64506',
-        'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
-      ),
+        a('de9f111a', 'Manage your current subscription')
+      a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
+        a('fdc10b7e', 'Verified Organizations Subscriber'),
+        a(
+          'cad64506',
+          'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
+        ),
         a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
         a('h80834de', 'other'),
         a('ib8ebf3b', function (e) {
@@ -4916,6 +4921,7 @@
         a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
+        a('bacb1f72', 'Not eligible'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -5219,10 +5225,6 @@
         a(
           'd1433e24',
           'Coins are a fun way for fans to reward you for making the content they enjoy the most. It’s an opportunity for you to get better connected to your followers and fans.',
-        ),
-        a(
-          'db8346ee',
-          'Swipe to pin your favorite conversations to the top of your Direct Message inbox on your iOS device.',
         ),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
@@ -6060,9 +6062,7 @@
         a('i1a5c3f8', 'The estimated breakdown of the people that have seen your Tweet'),
         a('c61c6624', 'Promoted'),
         a('d267afa2', 'Under 20'),
-        a('db81cab0', '20-29'),
-        a('f173716e', '30-39'),
-        a('ada329e6', '40-49')
+        a('db81cab0', '20-29')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6082,7 +6082,9 @@
           c(e, t)
         )
       }
-      a('j2950694', 'Above 50'),
+      a('f173716e', '30-39'),
+        a('ada329e6', '40-49'),
+        a('j2950694', 'Above 50'),
         a('a5c91a8e', '18-24'),
         a('cf30cdfa', '25-34'),
         a('gf672f7c', '35-44'),
@@ -6158,7 +6160,7 @@
           )
         }),
         a('fbb5c37e', 'Boost again'),
-        a('dcfb0332', 'Promote your Tweet'),
+        a('c5c0b3bc', 'Boost your Tweet'),
         a('g6bf2fdb', function (e) {
           return (
             'Your Tweet has earned ' +
@@ -6802,7 +6804,6 @@
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
-        a('j7f5c6aa', 'You don’t have any Subscriptions yet'),
         a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
         a('j029a4dc', 'When someone follows you, you’ll see them here.'),
         a(
@@ -6924,6 +6925,7 @@
           'c04b6472',
           'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
         ),
+        a('accbcc78', 'Updated successfully'),
         a('b007440a', 'Jobs'),
         a('abebf0fa', 'Featured Jobs'),
         a('f58cf1ac', 'Add job'),
@@ -6940,6 +6942,7 @@
           'e3494c24',
           'Twitter Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
         ),
+        a('f7d29566', 'Agree & continue'),
         a('c3f28126', 'Reach a massive audience'),
         a(
           'c1858dc4',
@@ -6955,6 +6958,8 @@
           'a21bb95a',
           'Connect a supported Applicant Tracking System or XML feed to add your jobs to Twitter in minutes.',
         ),
+        a('f75fb6cf', 'Professional Account policy'),
+        a('e9b71ccd', 'Twitter For Professionals account'),
         a('f729ab56', 'Add a new job'),
         a(
           'ef5078d8',
@@ -7313,13 +7318,13 @@
         a('ieea255a', 'Deleting scheduled Tweets'),
         a('bac23c92', 'Discard scheduled Tweets'),
         a('f450083c', 'This can’t be undone and you’ll lose your scheduled Tweets.'),
-        a('d9a75e16', 'Choose one'),
-        a('e43d95f2', 'See recommended Tweets first.'),
+        a('d9a75e16', 'Choose one')
+      a('e43d95f2', 'See recommended Tweets first.'),
         a('c0d2d4aa', 'Home Timeline'),
         a('ecbbbb90', 'View your own or other people’s lists.'),
         a('a2d1df82', 'Find what you’re looking for.'),
-        a('d5387d8a', 'Stay up to date with your messages.')
-      a('fb3c79ac', 'Check what’s trending on Twitter.'),
+        a('d5387d8a', 'Stay up to date with your messages.'),
+        a('fb3c79ac', 'Check what’s trending on Twitter.'),
         a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
         a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
@@ -9190,9 +9195,9 @@
               },
             },
             {
-              key: 'd7ffd6d9',
+              key: 'ba96d5ed',
               get: function get() {
-                return ['By clicking Tweet with Boost you’re agreeing to the ']
+                return ['By clicking Promote Tweet you’re agreeing to the ']
               },
             },
             {
@@ -10892,6 +10897,16 @@
               get: function get() {
                 return [
                   'Organizations have square avatars, individuals have circular avatars. Inappropriate use will result in the cancellation of your subscription without a refund, per our ',
+                  '.',
+                ]
+              },
+            },
+            {
+              key: 'j9fb967b',
+              get: function get() {
+                return [
+                  'By tapping "Agree & continue", you are agreeing to our ',
+                  ', and to upgrade your personal account to a ',
                   '.',
                 ]
               },
