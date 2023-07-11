@@ -11637,33 +11637,35 @@ function _typeof(obj) {
                 var t = l.props,
                   n = t.clearFlow,
                   a = t.currentSubtask,
-                  r = t.history,
-                  o = t.location,
-                  i = t.loginReturnPath,
-                  s = t.onAbort,
-                  c = t.returnPath
+                  r = t.flowName,
+                  o = t.history,
+                  i = t.location,
+                  s = t.loginReturnPath,
+                  c = t.onAbort,
+                  u = t.returnPath
                 n({ clearPersistence: !0 })
-                var u = a && (0, W.uL)(a),
-                  d = (a || {}).subtask_back_navigation_link
-                if (s) s()
+                var d = a && (0, W.uL)(a),
+                  p = (a || {}).subtask_back_navigation_link
+                if (c) c()
                 else {
-                  if (c) r.replace({ pathname: c, query: { flow_status: e } })
-                  else if (u === L.Ti.OpenHomeTimeline) B.ZP.navigateTo('/home')
-                  else if (d) l._handleNavigate(d)
+                  if (u) o.replace({ pathname: u, query: { flow_status: e } })
+                  else if (d === L.Ti.OpenHomeTimeline)
+                    'login' === r && s ? B.ZP.navigateTo(s) : B.ZP.navigateTo('/home')
+                  else if (p) l._handleNavigate(p)
                   else {
-                    var p = !!l.context.loggedInUserId
+                    var h = !!l.context.loggedInUserId
                     l._unblockHistory && l._unblockHistory(),
-                      (0, P.q)({}, { location: o })
-                        ? r.goBack()
-                        : p
-                        ? i
-                          ? r.replace(i)
-                          : r.replace('/home')
-                        : r.replace('/')
+                      (0, P.q)({}, { location: i })
+                        ? o.goBack()
+                        : h
+                        ? s
+                          ? o.replace(s)
+                          : o.replace('/home')
+                        : o.replace('/')
                   }
                   l.props.language !== b().language &&
-                    (r.location.pathname.startsWith('/i/flow/')
-                      ? r.listen(function () {
+                    (o.location.pathname.startsWith('/i/flow/')
+                      ? o.listen(function () {
                           return window.location.reload()
                         })
                       : window.location.reload())
@@ -12941,6 +12943,49 @@ function _typeof(obj) {
           ),
         )
       }
+    },
+    2520: function _(e, t, n) {
+      'use strict'
+      n.d(t, {
+        Z: function Z() {
+          return p
+        },
+      })
+      var a = n(196234),
+        r = n(202784),
+        o = n(473228),
+        i = n.n(o),
+        s = n(583786),
+        l = i().b05a39b2,
+        c = i().c566d3a6,
+        u = function u(e) {
+          return r.createElement(s.Z, e)
+        },
+        d = function d(e) {
+          var t = e.children,
+            n = e.hideLabel,
+            o = void 0 === n ? c : n,
+            i = e.label,
+            s = e.lang,
+            d = e.render,
+            p = void 0 === d ? u : d,
+            h = e.revealLabel,
+            m = void 0 === h ? l : h,
+            f = r.useState(!1),
+            _ = (0, a.Z)(f, 2),
+            v = _[0],
+            g = _[1]
+          return p({
+            actionText: v ? o : m,
+            children: v ? t : i,
+            lang: s,
+            onActionClick: function onActionClick() {
+              return g(!v)
+            },
+          })
+        }
+      d.displayName = 'TweetDisclosure'
+      var p = d
     },
     551908: function _(e, t, n) {
       'use strict'
