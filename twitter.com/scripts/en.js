@@ -106,6 +106,8 @@ function _typeof(obj) {
           return e.name + '’s Space'
         }),
         a('ab4fc8bc', 'Space'),
+        a('ece2b2d4', 'You’ve been invited to speak!'),
+        a('b2cc6a54', 'Join as speaker'),
         a('jd859c9c', 'You have been removed from this Space.'),
         a('f7c8617a', 'What are clips?'),
         a(
@@ -141,6 +143,12 @@ function _typeof(obj) {
         a('gba36459', 'Learn more'),
         a('d4ccb940', 'Adjust settings'),
         a('cdffdeb3', 'Learn more'),
+        a('hd50e064', 'Not now'),
+        a('i76d640e', 'We need your permission'),
+        a(
+          'h75c7eda',
+          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
+        ),
         a('d227d19e', 'Collapse'),
         a('ia5e7488', 'Close'),
         a('ifea3114', 'Share'),
@@ -179,12 +187,6 @@ function _typeof(obj) {
         a('f91f00ba', 'Create clip'),
         a('jcc8306e', 'Request to speak'),
         a('j41fd45a', 'Request sent'),
-        a('hd50e064', 'Not now'),
-        a('i76d640e', 'We need your permission'),
-        a(
-          'h75c7eda',
-          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
-        ),
         a('h63a5c3c', 'More'),
         a('a2bf8b8a', 'Switch to listening'),
         a('d1e21610', 'Report NetzDG Violation'),
@@ -376,6 +378,7 @@ function _typeof(obj) {
         a('b7fde2b8', 'Your Twitter data'),
         a('d7b51c68', 'Subscriptions'),
         a('ff9ed474', 'Total earnings'),
+        a('b431a5c6', 'Ad Rev Share'),
         a('dd0c889e', 'Profile customization'),
         a('ib35705e', 'Manage Subscription'),
         a('cf131522', 'Manage Affiliate Badges'),
@@ -1199,19 +1202,19 @@ function _typeof(obj) {
         a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
         a('c7227886', 'Go to My Twitter Data'),
-        a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
-        a('eea30bb5', function (e) {
-          return 'Generated on: ' + e.date
-        }),
+        a('a0c3f812', 'To get an updated one, you’ll need to make a new request.')
+      a('eea30bb5', function (e) {
+        return 'Generated on: ' + e.date
+      }),
         a('f2cde471', function (e) {
           return 'Expires on: ' + e.date
         }),
         a('b7ce9dbf', function (e) {
           return 'Estimated size: ' + e.size
-        })
-      a('fbc92b61', function (e) {
-        return 'Twitter data (' + e.currentIndex + ' of ' + e.count + ')'
-      }),
+        }),
+        a('fbc92b61', function (e) {
+          return 'Twitter data (' + e.currentIndex + ' of ' + e.count + ')'
+        }),
         a('fc5bfd96', 'Get started'),
         a('gee8110e', 'Download archive'),
         a('c326f156', 'Archive downloaded'),
@@ -2356,13 +2359,13 @@ function _typeof(obj) {
         a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
-        a('ec10ee02', 'Poll'),
-        a('c4ccfbe2', 'Tag Location'),
+        a('ec10ee02', 'Poll')
+      a('c4ccfbe2', 'Tag Location'),
         a('b7d8e3f1', function (e) {
           return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
         }),
-        a('d1175c78', 'Tag people')
-      a('bf4e9d7a', 'Upload caption file (.srt)'),
+        a('d1175c78', 'Tag people'),
+        a('bf4e9d7a', 'Upload caption file (.srt)'),
         a('e0342f98', 'Captions'),
         a('f8e5bf52', 'What is happening?!'),
         a('b1695ed6', 'Add another Tweet!'),
@@ -3469,6 +3472,13 @@ function _typeof(obj) {
           'd1433e24',
           'Coins are a fun way for fans to reward you for making the content they enjoy the most. It’s an opportunity for you to get better connected to your followers and fans.',
         ),
+        a('e6ba42de', 'Ad Revenue Share'),
+        a(
+          'da4cd6fa',
+          'Unfortunately, you’re not yet eligible for Ads Revenue Sharing. You’ll need to meet the below requirements to participate:',
+        ),
+        a('d3789528', 'About Ad Rev Share'),
+        a('iaee3944', '5M+ Tweet impressions in each month for the last 3 months'),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
@@ -3629,15 +3639,15 @@ function _typeof(obj) {
         ),
         a('bd73f7e6', 'This will enable or disable all of the settings on this page.'),
         a('ddbc3288', 'Data'),
-        a('i7b329e0', 'See your Twitter data'),
-        a('b934e0ea', 'Disable personalization and data?'),
+        a('i7b329e0', 'See your Twitter data')
+      a('b934e0ea', 'Disable personalization and data?'),
         a('bf917cea', 'This may make the Tweets and ads you see less relevant.'),
         a('a148acba', 'Disable'),
         a('aa023546', 'Personalize based on the places you’ve been'),
         a('b85127bc', 'Allow use of where you see Twitter content across the web'),
         a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
-        a('fe1fc83e', 'These are the age ranges associated with you.')
-      a('bf9c74d0', 'Do not use these age ranges for personalization.'),
+        a('fe1fc83e', 'These are the age ranges associated with you.'),
+        a('bf9c74d0', 'Do not use these age ranges for personalization.'),
         a('cf0daa24', 'It may take a while to gather this information. Try again later.'),
         a('jc34b42b', 'Learn more'),
         a('d9cbe351', function (e) {
@@ -4829,8 +4839,8 @@ function _typeof(obj) {
         a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
         a('fc5c6914', 'Meet others with your interests'),
         a('ad211086', 'Talk to people who care about the same things you do.'),
-        a('gf803ba2', 'Tweet directly to a Community'),
-        a('e92fe01c', 'Your Tweets are shared with other Community members — not your followers.'),
+        a('gf803ba2', 'Tweet directly to a Community')
+      a('e92fe01c', 'Your Tweets are shared with other Community members — not your followers.'),
         a('h3bb8068', 'Get backup when you need it'),
         a('a709f8f8', 'Admins and moderators help manage Communities and keep conversations on track.'),
         a('c8d33380', 'New items'),
@@ -4838,10 +4848,10 @@ function _typeof(obj) {
         a('df362964', 'Find Communities'),
         a('fd499133', function (e) {
           return e.newTweets + ' new Tweet' + n(e.newTweets, '', 's')
-        })
-      a('ha4bb8a9', function (e) {
-        return e.reportedTweets + ' report' + n(e.reportedTweets, '', 's')
-      }),
+        }),
+        a('ha4bb8a9', function (e) {
+          return e.reportedTweets + ' report' + n(e.reportedTweets, '', 's')
+        }),
         a('caf003b3', function (e) {
           return e.memberRequests + ' request' + n(e.memberRequests, '', 's')
         }),
@@ -6020,10 +6030,50 @@ function _typeof(obj) {
         }),
         a('d0681155', function (e) {
           return e.fullName + ' Tweeted: "' + e.tweetText + '"'
-        }),
-        a('be59fddf', function (e) {
-          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-        }),
+        })
+      function r(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function c(e, t) {
+        return (
+          (c = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          c(e, t)
+        )
+      }
+      a('be59fddf', function (e) {
+        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+      }),
         a('b357b2ad', function (e) {
           return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
         }),
@@ -6073,50 +6123,10 @@ function _typeof(obj) {
             n(e.replyCount, 'y', 'ies') +
             '.'
           )
-        })
-      function r(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function c(e, t) {
-        return (
-          (c = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          c(e, t)
-        )
-      }
-      a('ad666301', function (e) {
-        return e.fullName + ' on Twitter'
-      }),
+        }),
+        a('ad666301', function (e) {
+          return e.fullName + ' on Twitter'
+        }),
         a('g132f681', function (e) {
           return '@' + e.screenName + ' Tweeted...'
         }),
@@ -6992,9 +7002,11 @@ function _typeof(obj) {
           'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
         ),
         a('accbcc78', 'Updated successfully'),
+        a('f58cf1ac', 'Add job'),
+        a('ae71ff52', 'You are on the waitlist'),
+        a('f0a1bff6', 'We will contact you soon to start hiring on Twitter.'),
         a('b007440a', 'Jobs'),
         a('abebf0fa', 'Featured Jobs'),
-        a('f58cf1ac', 'Add job'),
         a('fc6eae0f', function (e) {
           return 'Jobs (' + e.count + ')'
         }),
@@ -7008,7 +7020,7 @@ function _typeof(obj) {
           'e3494c24',
           'Twitter Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
         ),
-        a('f7d29566', 'Agree & continue'),
+        a('fc87bca6', 'Join the waitlist'),
         a('c3f28126', 'Reach a massive audience'),
         a(
           'c1858dc4',
@@ -7024,8 +7036,6 @@ function _typeof(obj) {
           'a21bb95a',
           'Connect a supported Applicant Tracking System or XML feed to add your jobs to Twitter in minutes.',
         ),
-        a('f75fb6cf', 'Professional Account policy'),
-        a('e9b71ccd', 'Twitter For Professionals account'),
         a('f729ab56', 'Add a new job'),
         a(
           'ef5078d8',
@@ -7355,8 +7365,8 @@ function _typeof(obj) {
         a('d00586a6', 'This column can’t be loaded. Try make a new column.'),
         a('d0d8277e', 'The Column owner has deleted or made the Column private.'),
         a('i176bfd2', 'Discover lists'),
-        a('a57c3292', 'Discover new lists'),
-        a('f59f87dc', 'Find other people’s lists'),
+        a('a57c3292', 'Discover new lists')
+      a('f59f87dc', 'Find other people’s lists'),
         a('a5d70676', 'Lists that you’re on'),
         a('e377790a', 'Return to Lists'),
         a('e952b8c3', function (e) {
@@ -7364,8 +7374,8 @@ function _typeof(obj) {
         }),
         a('bc24f834', 'Return to Find other people’s lists'),
         a('ee11d084', 'Search Profiles'),
-        a('c300f3bc', 'Add some columns')
-      a('bd744e9a', 'Populate with a search'),
+        a('c300f3bc', 'Add some columns'),
+        a('bd744e9a', 'Populate with a search'),
         a('i10d4124', 'Start from scratch'),
         a('jbff8606', 'Submit query'),
         a('jb743d10', 'Some draft Tweets could not be deleted.'),
@@ -10965,16 +10975,6 @@ function _typeof(obj) {
               get: function get() {
                 return [
                   'Organizations have square avatars, individuals have circular avatars. Inappropriate use will result in the cancellation of your subscription without a refund, per our ',
-                  '.',
-                ]
-              },
-            },
-            {
-              key: 'j9fb967b',
-              get: function get() {
-                return [
-                  'By tapping "Agree & continue", you are agreeing to our ',
-                  ', and to upgrade your personal account to a ',
                   '.',
                 ]
               },
