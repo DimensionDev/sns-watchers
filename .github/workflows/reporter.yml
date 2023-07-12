@@ -64,6 +64,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           title: ${{ env.TITLE }}
           body: ${{ env.CONTENT }}
-          assignees: |
-            guanbinrui
-            unclebill
