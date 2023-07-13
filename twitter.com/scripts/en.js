@@ -379,6 +379,7 @@ function _typeof(obj) {
         a('d7b51c68', 'Subscriptions'),
         a('ff9ed474', 'Total earnings'),
         a('b431a5c6', 'Ad Rev Share'),
+        a('d73814e0', 'Ad Rev Share Application'),
         a('dd0c889e', 'Profile customization'),
         a('ib35705e', 'Manage Subscription'),
         a('cf131522', 'Manage Affiliate Badges'),
@@ -1201,11 +1202,11 @@ function _typeof(obj) {
         a('b2ed92c4', 'Requesting archive'),
         a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
-        a('c7227886', 'Go to My Twitter Data'),
-        a('a0c3f812', 'To get an updated one, you’ll need to make a new request.')
-      a('eea30bb5', function (e) {
-        return 'Generated on: ' + e.date
-      }),
+        a('c7227886', 'Go to My Twitter Data')
+      a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
+        a('eea30bb5', function (e) {
+          return 'Generated on: ' + e.date
+        }),
         a('f2cde471', function (e) {
           return 'Expires on: ' + e.date
         }),
@@ -2358,9 +2359,9 @@ function _typeof(obj) {
         a('cc2b28fc', 'You can only have 1 type of attachment'),
         a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
-        a('ee9c4014', 'Remove Tweet'),
-        a('ec10ee02', 'Poll')
-      a('c4ccfbe2', 'Tag Location'),
+        a('ee9c4014', 'Remove Tweet')
+      a('ec10ee02', 'Poll'),
+        a('c4ccfbe2', 'Tag Location'),
         a('b7d8e3f1', function (e) {
           return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
         }),
@@ -3479,6 +3480,20 @@ function _typeof(obj) {
         ),
         a('d3789528', 'About Ad Rev Share'),
         a('iaee3944', '5M+ Tweet impressions in each month for the last 3 months'),
+        a('e7b9e978', 'Ad Revenue Share Application'),
+        a('b13a8b8e', 'Ads Revenue Share'),
+        a('ea0cfd92', 'Earn more for your content on Twitter by applying to the Ads revenue share program.'),
+        a('eb6d9270', 'Get paid for your content'),
+        a('a778472e', 'Details:'),
+        a('bfd39026', 'Payouts are monthly, deposited via your Stripe account'),
+        a('g67ed846', 'Payout amounts vary per month depending on the ad revenue generated on your posts'),
+        a('cf14c14a', 'Minimum payout is $50 per month'),
+        a('dbe1d026', 'Your content must be original and not mostly re-posts of other content'),
+        a('i6c6debc', 'Your account must be Verified'),
+        a('db384076', 'Select "I agree" to apply for the ads revenue share program.'),
+        a('ffc701a6', 'I agree'),
+        a('jbdd370b', 'Twitter Rules'),
+        a('c54f0e01', 'Creator Monetization Standards.'),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
@@ -3609,8 +3624,8 @@ function _typeof(obj) {
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
         a('e20a69e8', 'Connect your managing and automated account'),
-        a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
-        a('e427f632', 'Your account is labeled!'),
+        a('d2f88358', 'Connect your accounts from the Automation page in your settings.')
+      a('e427f632', 'Your account is labeled!'),
         a('a4d7cffa', 'Once the accounts are connected, the automated account will have a label.'),
         a('a18d6a7d', 'new rules'),
         a('e9965c14', 'automated account label FAQ'),
@@ -3639,8 +3654,8 @@ function _typeof(obj) {
         ),
         a('bd73f7e6', 'This will enable or disable all of the settings on this page.'),
         a('ddbc3288', 'Data'),
-        a('i7b329e0', 'See your Twitter data')
-      a('b934e0ea', 'Disable personalization and data?'),
+        a('i7b329e0', 'See your Twitter data'),
+        a('b934e0ea', 'Disable personalization and data?'),
         a('bf917cea', 'This may make the Tweets and ads you see less relevant.'),
         a('a148acba', 'Disable'),
         a('aa023546', 'Personalize based on the places you’ve been'),
@@ -3839,6 +3854,8 @@ function _typeof(obj) {
           'g2e888ee',
           'Only verified users can add people that don’t follow them to a group. Sign up for Twitter Blue to continue.',
         ),
+        a('df3d6e2c', 'Get verified to create a community'),
+        a('ba2adbf0', 'Only verified users can create a community. Sign up for Twitter Blue to continue.'),
         a('f09be7f8', 'Get verified'),
         a('hd7d278c', 'No thanks'),
         a('dd8272fd', function (e) {
@@ -4729,8 +4746,8 @@ function _typeof(obj) {
           'c21d1b2a',
           'Notes reach a status of Helpful or Not Helpful once there is agreement from enough contributors, including people who have sometimes disagreed in their past ratings. This helps ensure notes are helpful to a wide range of people, and prevents one-sided ratings.',
         ),
-        a('g5eb5a16', 'Learn more about Community Notes'),
         a('c7b59cde', 'Community Notes settings'),
+        a('d63f2781', 'Find out more.'),
         a('e1288bdc', 'Alerts when a note needs help'),
         a('ca14eab4', 'Receive notifications when a Community Note needs your rating.'),
         a('gb2bc3d0', 'I’m all in 🔥'),
@@ -4818,8 +4835,8 @@ function _typeof(obj) {
           'fce0c59e',
           'Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again.',
         ),
-        a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
-        a('ae58026a', 'Open a Branded Like .json file to preview'),
+        a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.')
+      a('ae58026a', 'Open a Branded Like .json file to preview'),
         a('f2382014', 'LIVE'),
         a('e3aac82a', 'Loading Broadcast'),
         a('hd0bc1eb', function (e) {
@@ -4839,8 +4856,8 @@ function _typeof(obj) {
         a('c8e93b52', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
         a('fc5c6914', 'Meet others with your interests'),
         a('ad211086', 'Talk to people who care about the same things you do.'),
-        a('gf803ba2', 'Tweet directly to a Community')
-      a('e92fe01c', 'Your Tweets are shared with other Community members — not your followers.'),
+        a('gf803ba2', 'Tweet directly to a Community'),
+        a('e92fe01c', 'Your Tweets are shared with other Community members — not your followers.'),
         a('h3bb8068', 'Get backup when you need it'),
         a('a709f8f8', 'Admins and moderators help manage Communities and keep conversations on track.'),
         a('c8d33380', 'New items'),
@@ -5998,39 +6015,7 @@ function _typeof(obj) {
         a('bea0e410', 'Amplify Tweets you like'),
         a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
         a('i29ecb48', 'No Tweet Likes yet'),
-        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
-        a('b13974f0', 'Loading users who liked this Tweet'),
-        a('hfb8fd58', 'Loading users who retweeted this Tweet'),
-        a('f12858d4', 'Liked by'),
-        a('d25289b4', 'Retweeted by'),
-        a('h1c5d6aa', 'Sent by you'),
-        a('h6d45054', 'Sent by all'),
-        a('da68fff1', function (e) {
-          return e.count + ' Coin' + n(e.count, '', 's') + ' (only visible to you)'
-        }),
-        a('ea831526', 'Tweet with replies'),
-        a('a90e1e67', function (e) {
-          return 'Tweet' + e.noun
-        }),
-        a('c2ed3314', 'Community Tweet'),
-        a('e06b864c', 'It looks like you’re enjoying this conversation'),
-        a(
-          'a078ff70',
-          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
-        ),
-        a('j88f27d8', 'Relevant people'),
-        a('f0c37ddb', function (e) {
-          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
-        }),
-        a('a98f3d0f', function (e) {
-          return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
-        }),
-        a('j3da85c1', function (e) {
-          return 'View @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
-        }),
-        a('d0681155', function (e) {
-          return e.fullName + ' Tweeted: "' + e.tweetText + '"'
-        })
+        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6071,9 +6056,41 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('be59fddf', function (e) {
-        return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
-      }),
+      a('b13974f0', 'Loading users who liked this Tweet'),
+        a('hfb8fd58', 'Loading users who retweeted this Tweet'),
+        a('f12858d4', 'Liked by'),
+        a('d25289b4', 'Retweeted by'),
+        a('h1c5d6aa', 'Sent by you'),
+        a('h6d45054', 'Sent by all'),
+        a('da68fff1', function (e) {
+          return e.count + ' Coin' + n(e.count, '', 's') + ' (only visible to you)'
+        }),
+        a('ea831526', 'Tweet with replies'),
+        a('a90e1e67', function (e) {
+          return 'Tweet' + e.noun
+        }),
+        a('c2ed3314', 'Community Tweet'),
+        a('e06b864c', 'It looks like you’re enjoying this conversation'),
+        a(
+          'a078ff70',
+          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
+        ),
+        a('j88f27d8', 'Relevant people'),
+        a('f0c37ddb', function (e) {
+          return e.fullName + ' on Twitter: "' + e.tweetText + '"'
+        }),
+        a('a98f3d0f', function (e) {
+          return 'See @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+        }),
+        a('j3da85c1', function (e) {
+          return 'View @' + e.screenName + '’s Tweet: "' + e.tweetText + '"'
+        }),
+        a('d0681155', function (e) {
+          return e.fullName + ' Tweeted: "' + e.tweetText + '"'
+        }),
+        a('be59fddf', function (e) {
+          return '@' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
+        }),
         a('b357b2ad', function (e) {
           return e.date + ' - @' + e.screenName + ' Tweeted: "' + e.tweetText + '"'
         }),
@@ -6763,6 +6780,7 @@ function _typeof(obj) {
         a('d8ed0aae', 'This account is verified because it’s subscribed to Twitter Blue.'),
         a('h3f32740', 'This account has its Tweets protected. Only their followers can read them.'),
         a('g776ca50', 'Verified account'),
+        a('ad465ee8', 'Set primary affiliation'),
         a('d01612d3', function (e) {
           return 'Verified since ' + e.date + '.'
         }),
@@ -7347,8 +7365,8 @@ function _typeof(obj) {
         a('hb388fe8', 'Delete Column'),
         a('ce091d36', 'Search Tweets'),
         a('c1343ad6', 'Convert this to a search column.'),
-        a('e7a12d72', 'Converted to search column'),
-        a('f29424f0', 'Change back'),
+        a('e7a12d72', 'Converted to search column')
+      a('f29424f0', 'Change back'),
         a('h5ff85a2', 'Share column'),
         a('d32058ba', 'Make column public to enable share.'),
         a('c926a6ca', 'Changes you make will appear to anyone following the Column.'),
@@ -7365,8 +7383,8 @@ function _typeof(obj) {
         a('d00586a6', 'This column can’t be loaded. Try make a new column.'),
         a('d0d8277e', 'The Column owner has deleted or made the Column private.'),
         a('i176bfd2', 'Discover lists'),
-        a('a57c3292', 'Discover new lists')
-      a('f59f87dc', 'Find other people’s lists'),
+        a('a57c3292', 'Discover new lists'),
+        a('f59f87dc', 'Find other people’s lists'),
         a('a5d70676', 'Lists that you’re on'),
         a('e377790a', 'Return to Lists'),
         a('e952b8c3', function (e) {
@@ -9694,6 +9712,15 @@ function _typeof(obj) {
               },
             },
             {
+              key: 'i5c0e18b',
+              get: function get() {
+                return [
+                  'Earn income from the ads served in the replies to your posts. To be eligible for the ads revenue program, you account must follow the ',
+                  ' and the ',
+                ]
+              },
+            },
+            {
               key: 'f1a3d63d',
               get: function get() {
                 return ['Add your date of birth to your ', '.']
@@ -10485,6 +10512,12 @@ function _typeof(obj) {
               },
             },
             {
+              key: 'e80a0aff',
+              get: function get() {
+                return ['Context is written by people who use Twitter, and appears when rated helpful by others. ']
+              },
+            },
+            {
               key: 'ec38eaf7',
               get: function get() {
                 return [
@@ -11081,6 +11114,12 @@ function _typeof(obj) {
               key: 'eeec491f',
               get: function get() {
                 return ['This column can only be cleared if you switch to ', '.']
+              },
+            },
+            {
+              key: 'i0643a5b',
+              get: function get() {
+                return ['', ' Article']
               },
             },
             {
