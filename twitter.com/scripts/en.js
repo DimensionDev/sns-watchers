@@ -187,6 +187,8 @@ function _typeof(obj) {
         a('f91f00ba', 'Create clip'),
         a('jcc8306e', 'Request to speak'),
         a('j41fd45a', 'Request sent'),
+        a('d5b2aae8', 'Too many requests to speak have been sent. Please try again later.'),
+        a('b9945b98', 'The request to speak failed. Please rejoin the space and try again in a few seconds.'),
         a('h63a5c3c', 'More'),
         a('a2bf8b8a', 'Switch to listening'),
         a('d1e21610', 'Report NetzDG Violation'),
@@ -380,6 +382,7 @@ function _typeof(obj) {
         a('ff9ed474', 'Total earnings'),
         a('b431a5c6', 'Ad Rev Share'),
         a('d73814e0', 'Ad Rev Share Application'),
+        a('ab1b837a', 'Ad Rev Share Dashboard'),
         a('dd0c889e', 'Profile customization'),
         a('ib35705e', 'Manage Subscription'),
         a('cf131522', 'Manage Affiliate Badges'),
@@ -1199,11 +1202,11 @@ function _typeof(obj) {
         a('g1888dc2', 'Never'),
         a('f724d1aa', 'Only on Wi-Fi'),
         a('cf6472c2', 'On cellular or Wi-Fi'),
-        a('b2ed92c4', 'Requesting archive'),
-        a('ce5d2c46', 'Temporarily unavailable'),
+        a('b2ed92c4', 'Requesting archive')
+      a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
-        a('c7227886', 'Go to My Twitter Data')
-      a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
+        a('c7227886', 'Go to My Twitter Data'),
+        a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
         a('eea30bb5', function (e) {
           return 'Generated on: ' + e.date
         }),
@@ -2356,11 +2359,11 @@ function _typeof(obj) {
         a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
         a('a3de3b68', 'Tweet text'),
-        a('cc2b28fc', 'You can only have 1 type of attachment'),
-        a('g45af04e', 'Add Tweet'),
+        a('cc2b28fc', 'You can only have 1 type of attachment')
+      a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
-        a('ee9c4014', 'Remove Tweet')
-      a('ec10ee02', 'Poll'),
+        a('ee9c4014', 'Remove Tweet'),
+        a('ec10ee02', 'Poll'),
         a('c4ccfbe2', 'Tag Location'),
         a('b7d8e3f1', function (e) {
           return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
@@ -2491,18 +2494,6 @@ function _typeof(obj) {
         a('acf3ecf4', 'Add media'),
         a('bdbcdd94', 'Add photos'),
         a('i3a8d60a', 'make your Tweets public'),
-        a('ed9f214f', function (e) {
-          return 'You’re Tweeting for @' + e.screenName + '.'
-        }),
-        a('ga8627cd', function (e) {
-          return 'You’re replying for @' + e.screenName + '.'
-        }),
-        a('e6d2573f', function (e) {
-          return 'You’re messaging for @' + e.screenName + '.'
-        }),
-        a('d37a3e15', function (e) {
-          return 'You’re creating this List for @' + e.screenName + '.'
-        }),
         a('f3a7a80c', 'Want to review this before Tweeting?'),
         a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
         a('d1a92642', 'Most Tweeters don’t post replies like this'),
@@ -2629,6 +2620,18 @@ function _typeof(obj) {
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('fe26420a', 'Add keywords'),
+        a('ed9f214f', function (e) {
+          return 'You’re Tweeting for @' + e.screenName + '.'
+        }),
+        a('ga8627cd', function (e) {
+          return 'You’re replying for @' + e.screenName + '.'
+        }),
+        a('e6d2573f', function (e) {
+          return 'You’re messaging for @' + e.screenName + '.'
+        }),
+        a('d37a3e15', function (e) {
+          return 'You’re creating this List for @' + e.screenName + '.'
+        }),
         a(
           'haebcf52',
           'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -2902,12 +2905,12 @@ function _typeof(obj) {
           'Contributors can send Direct Messages, publish Tweets, and create Lists. Contributors can also view the account’s Direct Messages, Tweets, and Lists.',
         ),
         a(
-          'b9f6e804',
-          'Admins have the same permissions as contributors. They can also invite or remove contributors and view account analytics.',
+          'cd6d08a8',
+          'Admins have the same permissions as contributors. They can also invite or remove contributors and view Tweet analytics.',
         ),
         a(
-          'c045430e',
-          'Admins can invite other contributors to this account. Double-check that you’re assigning the role for the right person.',
+          'iab4c902',
+          'Admins can invite other contributors to this account and view Tweet analytics. Double-check that you’re assigning the role for the right person.',
         ),
         a('d8eda249', function (e) {
           return (
@@ -2921,7 +2924,7 @@ function _typeof(obj) {
         a('hcc3b4ce', 'This member is blocked by your account.'),
         a('ace0f0a4', 'This member limits who can invite them to Delegate.'),
         a('c2e8f726', 'Admins'),
-        a('h383c79c', 'Admins can also invite or remove contributors to the account and view account analytics.'),
+        a('fded7e5a', 'Admins can also invite or remove contributors to the account and view Tweet analytics.'),
         a('b7d6e5d6', 'Contributors'),
         a('cd76a282', 'No members have been added yet'),
         a('db25d796', 'Change this members role'),
@@ -2935,12 +2938,8 @@ function _typeof(obj) {
         a('a171ca7c', 'Uninvite member'),
         a('f68f079c', 'Change role'),
         a('b2794e9e', 'Remove from group'),
-        a('i5c61395', function (e) {
-          return 'They’ll no longer be an ' + e.role + ' on this account.'
-        }),
-        a('f8645589', function (e) {
-          return 'They’ll no longer be a ' + e.role + ' on this account.'
-        }),
+        a('gca83d6a', 'They’ll no longer be an admin on this account.'),
+        a('b8cac21c', 'They’ll no longer be a contributor on this account.'),
         a('hd67c2e8', 'Uninvite'),
         a('f0bd8ca9', function (e) {
           return 'Remove @' + e.screenName + '?'
@@ -2956,20 +2955,19 @@ function _typeof(obj) {
         }),
         a('a44c6034', 'Pending invites'),
         a(
-          'd70a0f26',
-          'As a member, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. Admins can also invite or remove contributors to the account and view account analytics.',
+          'b2b88b8c',
+          'As a member, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. Admins can also invite or remove contributors to the account and view Tweet analytics.',
         ),
         a('h0d3bddc', 'Admin access'),
         a('c54aafb0', 'Contributor access'),
         a('idc35f32', 'You haven’t been delegated to any accounts'),
+        a('cd5c5e73', function (e) {
+          return 'You may only have ' + e.numDelegatesLabel + ' delegat' + n(e.numDelegates, 'e', 'ions')
+        }),
         a('fab787b4', 'Leave account'),
         a('bfbe9620', 'View members'),
-        a('ee3c78fd', function (e) {
-          return 'You’ll no longer be an ' + e.role + ' on this account.'
-        }),
-        a('f02b1347', function (e) {
-          return 'You’ll no longer be a ' + e.role + ' on this account.'
-        }),
+        a('d52a2b36', 'You’ll no longer be an admin on this account.'),
+        a('df515932', 'You’ll no longer be a contributor on this account.'),
         a('cd00ea21', function (e) {
           return 'Leave @' + e.screenName + '?'
         }),
@@ -3158,10 +3156,9 @@ function _typeof(obj) {
         a('b255df58', 'Application submitted · Waiting for review'),
         a('b3f834c8', 'Application waitlisted'),
         a('i14be2c6', 'Estimated earned revenue'),
-        a('c429e3ba', 'Creator Subscriptions'),
-        a('e9ece9f8', 'Ad revenue share'),
-        a('a63ee81e', 'Select programs to sign up for'),
-        a('a8a161a2', 'Sign up for creator subscriptions, ad revenue sharing, or both'),
+        a('b03a3d62', 'Ads revenue sharing'),
+        a('def0c064', 'Select a program to apply for'),
+        a('fbade01e', 'Apply for subscriptions, ads revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
         a('bacb1f72', 'Not eligible'),
@@ -3492,8 +3489,11 @@ function _typeof(obj) {
         a('i6c6debc', 'Your account must be Verified'),
         a('db384076', 'Select "I agree" to apply for the ads revenue share program.'),
         a('ffc701a6', 'I agree'),
+        a('c8169274', 'There was a problem with saving your application. Please try again later.'),
         a('jbdd370b', 'Twitter Rules'),
         a('c54f0e01', 'Creator Monetization Standards.'),
+        a('d085a144', 'Creator earnings dashboard'),
+        a('h46f6e0e', 'Total estimated payout this month'),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
@@ -3618,14 +3618,14 @@ function _typeof(obj) {
         a(
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        ),
-        a('b989e1fe', 'Do I need to label my automated accounts?'),
+        )
+      a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
         a('e20a69e8', 'Connect your managing and automated account'),
-        a('d2f88358', 'Connect your accounts from the Automation page in your settings.')
-      a('e427f632', 'Your account is labeled!'),
+        a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
+        a('e427f632', 'Your account is labeled!'),
         a('a4d7cffa', 'Once the accounts are connected, the automated account will have a label.'),
         a('a18d6a7d', 'new rules'),
         a('e9965c14', 'automated account label FAQ'),
@@ -4826,8 +4826,8 @@ function _typeof(obj) {
         a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
         a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
         a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
-        a('h9a5daa2', 'Delete Folder?'),
-        a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
+        a('h9a5daa2', 'Delete Folder?')
+      a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
         a('i6e7e298', 'Create'),
         a('a0ea2fa6', 'Name field cannot be empty'),
         a('eec37eac', 'Bookmark Folder with that name already exists'),
@@ -4835,8 +4835,8 @@ function _typeof(obj) {
           'fce0c59e',
           'Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again.',
         ),
-        a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.')
-      a('ae58026a', 'Open a Branded Like .json file to preview'),
+        a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
+        a('ae58026a', 'Open a Branded Like .json file to preview'),
         a('f2382014', 'LIVE'),
         a('e3aac82a', 'Loading Broadcast'),
         a('hd0bc1eb', function (e) {
@@ -5136,10 +5136,6 @@ function _typeof(obj) {
         }),
         a('e48fbb02', 'Report Community'),
         a('c8c6c4ea', 'Learn more about Communities'),
-        a('ae7a45a2', 'For You'),
-        a('cc1c2602', 'Recommended Tweets first'),
-        a('d601fc20', 'Latest'),
-        a('b2aef4d8', 'Newest Tweets first'),
         a('he8db880', 'Doesn’t look like this Community exists'),
         a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
         a('cc683fba', 'About Community'),
@@ -5167,6 +5163,8 @@ function _typeof(obj) {
         a('acae4034', 'Settings can be changed in Admin Tools'),
         a('e2186ee2', 'Not feeling your settings? No problem. It’s easy enough to change.'),
         a('a0e3ece4', 'Community Detail'),
+        a('d601fc20', 'Latest'),
+        a('i66136aa', 'Top'),
         a('hb9400dc', 'See More'),
         a('b71a08a0', 'Subscriber Community'),
         a('d0574662', 'Set notifications'),
@@ -5338,13 +5336,22 @@ function _typeof(obj) {
         a('j7f4bf18', 'Go to Twitter Delegate Settings'),
         a('b9226ec1', 'Signed in as '),
         a('f47b48f6', 'user'),
+        a('b2ca74aa', 'You’re about to switch to a delegate account'),
+        a('ba77b438', 'Switch accounts'),
         a('g5261e91', function (e) {
           return 'You are now acting as @' + e.screenName + '.'
         }),
+        a(
+          'ee55dcca',
+          'Remember that this account does not belong to you. As an admin, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. You can also invite or remove contributors to the account and view Tweet analytics.',
+        ),
+        a(
+          'fc949f9a',
+          'Remember that this account does not belong to you. As a contributor, you can send Direct Messages, publish Tweets, and create Lists — as well as view them.',
+        ),
         a('e6718a62', 'Only the account owner can use this feature'),
-        a('ba77b438', 'Switch accounts'),
         a('c25e5c43', 'send us feedback.'),
-        a('f6293d05', 'send us feedback.'),
+        a('bd762cfb', 'send us feedback.'),
         a('dbc85148', 'Select a message'),
         a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
         a('f325afc4', 'Compose a DM'),
@@ -5915,7 +5922,6 @@ function _typeof(obj) {
         a('cceeb26b', function (e) {
           return e.query + ' - Twitter Search'
         }),
-        a('i66136aa', 'Top'),
         a('ac4fb0f4', 'Photos'),
         a('bb967f9e', 'Videos'),
         a('aea62568', 'Search filters'),
@@ -6009,13 +6015,7 @@ function _typeof(obj) {
         a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
         a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
         a('ac3fd6e2', 'You don’t have any recommendations — yet'),
-        a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
-        a('ebcf1374', 'No Quote Tweets yet'),
-        a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
-        a('bea0e410', 'Amplify Tweets you like'),
-        a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
-        a('i29ecb48', 'No Tweet Likes yet'),
-        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.')
+        a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6056,7 +6056,13 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('b13974f0', 'Loading users who liked this Tweet'),
+      a('ebcf1374', 'No Quote Tweets yet'),
+        a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
+        a('bea0e410', 'Amplify Tweets you like'),
+        a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
+        a('i29ecb48', 'No Tweet Likes yet'),
+        a('c079a322', 'When someone (even you) taps the heart to Like this Tweet, it’ll show up here.'),
+        a('b13974f0', 'Loading users who liked this Tweet'),
         a('hfb8fd58', 'Loading users who retweeted this Tweet'),
         a('f12858d4', 'Liked by'),
         a('d25289b4', 'Retweeted by'),
@@ -7022,7 +7028,7 @@ function _typeof(obj) {
         a('accbcc78', 'Updated successfully'),
         a('f58cf1ac', 'Add job'),
         a('ae71ff52', 'You are on the waitlist'),
-        a('f0a1bff6', 'We will contact you soon to start hiring on Twitter.'),
+        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
         a('b007440a', 'Jobs'),
         a('abebf0fa', 'Featured Jobs'),
         a('fc6eae0f', function (e) {
@@ -7039,6 +7045,10 @@ function _typeof(obj) {
           'Twitter Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
         ),
         a('fc87bca6', 'Join the waitlist'),
+        a(
+          'a389380c',
+          'By clicking ‘Join the waitlist’ you consent to be contacted over email using the business email address associated with this account.',
+        ),
         a('c3f28126', 'Reach a massive audience'),
         a(
           'c1858dc4',
@@ -7106,6 +7116,10 @@ function _typeof(obj) {
         a(
           'eed17f3e',
           'Invite Twitter accounts to join your organization. If they accept, they will get a checkmark, and your affiliation will be displayed on their profiles.',
+        ),
+        a(
+          'ec0f203e',
+          'Once the affiliate has accepted the invite, make sure to update their checkmark to the correct checkmark color.',
         ),
         a('cec08784', 'You have hit the limit for affiliates on this invoice.'),
         a('d49b389f', 'here'),
@@ -7355,8 +7369,8 @@ function _typeof(obj) {
         a('c8da0c42', 'Photos and videos'),
         a('b627a9e4', 'Twitter Blue partners'),
         a('c9b39e70', 'Move'),
-        a('b9ea5f7c', 'Move column to another Deck.'),
-        a('g8b6d450', 'Notification options'),
+        a('b9ea5f7c', 'Move column to another Deck.')
+      a('g8b6d450', 'Notification options'),
         a('dd703fbd', function (e) {
           return 'Delete column - ' + e.title
         }),
@@ -7365,8 +7379,8 @@ function _typeof(obj) {
         a('hb388fe8', 'Delete Column'),
         a('ce091d36', 'Search Tweets'),
         a('c1343ad6', 'Convert this to a search column.'),
-        a('e7a12d72', 'Converted to search column')
-      a('f29424f0', 'Change back'),
+        a('e7a12d72', 'Converted to search column'),
+        a('f29424f0', 'Change back'),
         a('h5ff85a2', 'Share column'),
         a('d32058ba', 'Make column public to enable share.'),
         a('c926a6ca', 'Changes you make will appear to anyone following the Column.'),
@@ -10617,10 +10631,10 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'j3c15cf3',
+              key: 'd45b673f',
               get: function get() {
                 return [
-                  'To use this feature, switch to an account that you own.\n\nAs an admin, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. You can also invite or remove contributors to the account and view account analytics.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
+                  'To use this feature, switch to an account that you own.\n\nAs an admin, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. You can also invite or remove contributors to the account and view Tweet analytics.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
                 ]
               },
             },
