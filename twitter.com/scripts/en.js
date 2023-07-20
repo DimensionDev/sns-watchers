@@ -3158,8 +3158,6 @@ function _typeof(obj) {
         a('b3f834c8', 'Application waitlisted'),
         a('i14be2c6', 'Estimated earned revenue'),
         a('b03a3d62', 'Ads revenue sharing'),
-        a('def0c064', 'Select a program to apply for'),
-        a('fbade01e', 'Apply for subscriptions, ads revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
         a('h72d71a2', 'Eligible'),
@@ -3289,8 +3287,11 @@ function _typeof(obj) {
         ),
         a('b7540162', 'Hide Subscriptions'),
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
-        a('b5832b58', 'Hide your checkmark'),
-        a('f452304c', 'Your blue checkmark will not be visible.'),
+        a('h20c0504', 'Hide your blue checkmark'),
+        a(
+          'e901005a',
+          'Using some Twitter Blue features could still reveal you have an active subscription.\nSome features may not be available while your check mark is hidden.',
+        ),
         a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
@@ -3615,16 +3616,16 @@ function _typeof(obj) {
         a('e159eeee', 'profile'),
         a('bad6cf6f', 'your personalization and data settings'),
         a('g2a9bd3e', 'Automated Account Labels'),
-        a('dd9b3aae', 'What’s an automated account?')
-      a(
-        'hb6fa97c',
-        'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
-      ),
+        a('dd9b3aae', 'What’s an automated account?'),
+        a(
+          'hb6fa97c',
+          'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
+        ),
         a(
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        ),
-        a('b989e1fe', 'Do I need to label my automated accounts?'),
+        )
+      a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
@@ -4829,10 +4830,10 @@ function _typeof(obj) {
         a('b670aa62', 'Folder Name'),
         a('aece5462', 'Folder name has been updated successfully'),
         a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
-        a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.')
-      a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
-        a('h9a5daa2', 'Delete Folder?'),
-        a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
+        a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
+        a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
+        a('h9a5daa2', 'Delete Folder?')
+      a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
         a('i6e7e298', 'Create'),
         a('a0ea2fa6', 'Name field cannot be empty'),
         a('eec37eac', 'Bookmark Folder with that name already exists'),
@@ -6022,7 +6023,9 @@ function _typeof(obj) {
         a('ad964e30', 'Edit your Twitter Circle'),
         a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
-        a('c308119e', 'How it works')
+        a('c308119e', 'How it works'),
+        a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
+        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6063,9 +6066,7 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
-        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
-        a('ac3fd6e2', 'You don’t have any recommendations — yet'),
+      a('ac3fd6e2', 'You don’t have any recommendations — yet'),
         a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
         a('ebcf1374', 'No Quote Tweets yet'),
         a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
@@ -7376,10 +7377,10 @@ function _typeof(obj) {
         a('d0be24d0', 'Clear Tweets'),
         a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
         a('a2c59056', 'Before you clear column...'),
-        a('a7dcfed2', 'Switch to latest Tweets')
-      a('e98b5ae5', 'latest Tweets'),
-        a('g33b8c04', 'Make a copy'),
-        a('de2c3008', 'Make a duplicate of the column.'),
+        a('a7dcfed2', 'Switch to latest Tweets'),
+        a('e98b5ae5', 'latest Tweets'),
+        a('g33b8c04', 'Make a copy')
+      a('de2c3008', 'Make a duplicate of the column.'),
         a('a7c01ce0', 'Change name or delete Folder'),
         a('e52e4c82', 'Change location and personalisation options.'),
         a('ad86db50', 'Make a Deck'),
