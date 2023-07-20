@@ -382,6 +382,7 @@ function _typeof(obj) {
         a('ff9ed474', 'Total earnings'),
         a('b431a5c6', 'Ad Rev Share'),
         a('d73814e0', 'Ad Rev Share Application'),
+        a('ea0b5a2e', 'Ad Rev Share Application Confirmation'),
         a('ab1b837a', 'Ad Rev Share Dashboard'),
         a('dd0c889e', 'Profile customization'),
         a('ib35705e', 'Manage Subscription'),
@@ -1201,9 +1202,9 @@ function _typeof(obj) {
         a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
         a('g1888dc2', 'Never'),
         a('f724d1aa', 'Only on Wi-Fi'),
-        a('cf6472c2', 'On cellular or Wi-Fi'),
-        a('b2ed92c4', 'Requesting archive')
-      a('ce5d2c46', 'Temporarily unavailable'),
+        a('cf6472c2', 'On cellular or Wi-Fi')
+      a('b2ed92c4', 'Requesting archive'),
+        a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
         a('c7227886', 'Go to My Twitter Data'),
         a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
@@ -2358,9 +2359,9 @@ function _typeof(obj) {
         a('a2f0728e', 'Minutes'),
         a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
-        a('a3de3b68', 'Tweet text'),
-        a('cc2b28fc', 'You can only have 1 type of attachment')
-      a('g45af04e', 'Add Tweet'),
+        a('a3de3b68', 'Tweet text')
+      a('cc2b28fc', 'You can only have 1 type of attachment'),
+        a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
         a('ec10ee02', 'Poll'),
@@ -3161,6 +3162,7 @@ function _typeof(obj) {
         a('fbade01e', 'Apply for subscriptions, ads revenue sharing, or both'),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
+        a('h72d71a2', 'Eligible'),
         a('bacb1f72', 'Not eligible'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
@@ -3276,7 +3278,6 @@ function _typeof(obj) {
         a('cc2aa67a', 'Purchase platform'),
         a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
-        a('g263221c', 'Stripe'),
         a('bf364d62', 'All transactions'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
@@ -3288,6 +3289,8 @@ function _typeof(obj) {
         ),
         a('b7540162', 'Hide Subscriptions'),
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
+        a('b5832b58', 'Hide your checkmark'),
+        a('f452304c', 'Your blue checkmark will not be visible.'),
         a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
@@ -3482,16 +3485,18 @@ function _typeof(obj) {
         a('ea0cfd92', 'Earn more for your content on Twitter by applying to the Ads revenue share program.'),
         a('eb6d9270', 'Get paid for your content'),
         a('a778472e', 'Details:'),
-        a('bfd39026', 'Payouts are monthly, deposited via your Stripe account'),
         a('g67ed846', 'Payout amounts vary per month depending on the ad revenue generated on your posts'),
         a('cf14c14a', 'Minimum payout is $50 per month'),
-        a('dbe1d026', 'Your content must be original and not mostly re-posts of other content'),
-        a('i6c6debc', 'Your account must be Verified'),
-        a('db384076', 'Select "I agree" to apply for the ads revenue share program.'),
-        a('ffc701a6', 'I agree'),
+        a('i7455e70', 'You must be subscribed to Twitter Blue or Verified Organizations'),
+        a('a415fd3a', 'Agree & submit'),
         a('c8169274', 'There was a problem with saving your application. Please try again later.'),
         a('jbdd370b', 'Twitter Rules'),
         a('c54f0e01', 'Creator Monetization Standards.'),
+        a('f5914812', 'Ad Revenue Share Application Confirmation'),
+        a(
+          'e09937a2',
+          'We’ve confirmed your pricing. Your application will be reviewed and if you`re approved, we’ll send you a notification as soon as it’s live.',
+        ),
         a('d085a144', 'Creator earnings dashboard'),
         a('h46f6e0e', 'Total estimated payout this month'),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
@@ -3610,16 +3615,16 @@ function _typeof(obj) {
         a('e159eeee', 'profile'),
         a('bad6cf6f', 'your personalization and data settings'),
         a('g2a9bd3e', 'Automated Account Labels'),
-        a('dd9b3aae', 'What’s an automated account?'),
-        a(
-          'hb6fa97c',
-          'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
-        ),
+        a('dd9b3aae', 'What’s an automated account?')
+      a(
+        'hb6fa97c',
+        'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
+      ),
         a(
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        )
-      a('b989e1fe', 'Do I need to label my automated accounts?'),
+        ),
+        a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
@@ -4824,10 +4829,10 @@ function _typeof(obj) {
         a('b670aa62', 'Folder Name'),
         a('aece5462', 'Folder name has been updated successfully'),
         a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
-        a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
-        a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
-        a('h9a5daa2', 'Delete Folder?')
-      a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
+        a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.')
+      a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
+        a('h9a5daa2', 'Delete Folder?'),
+        a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
         a('i6e7e298', 'Create'),
         a('a0ea2fa6', 'Name field cannot be empty'),
         a('eec37eac', 'Bookmark Folder with that name already exists'),
@@ -5844,6 +5849,12 @@ function _typeof(obj) {
         a('f1252ac8', 'Medium Text'),
         a('daa0da04', 'Small Text'),
         a('ba5256b2', 'Text Size'),
+        a('e3de2f6f', function (e) {
+          return e.entity + ' was added to your Bookmarks'
+        }),
+        a('e64de8a9', function (e) {
+          return e.entity + ' was removed from your Bookmarks'
+        }),
         a('h030c24c', 'Report an issue'),
         a('c3e6226a', 'Remove member'),
         a('e37836f8', 'Report Detail'),
@@ -6011,11 +6022,7 @@ function _typeof(obj) {
         a('ad964e30', 'Edit your Twitter Circle'),
         a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
-        a('c308119e', 'How it works'),
-        a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
-        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
-        a('ac3fd6e2', 'You don’t have any recommendations — yet'),
-        a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.')
+        a('c308119e', 'How it works')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6056,7 +6063,11 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('ebcf1374', 'No Quote Tweets yet'),
+      a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
+        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
+        a('ac3fd6e2', 'You don’t have any recommendations — yet'),
+        a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
+        a('ebcf1374', 'No Quote Tweets yet'),
         a('g9ac4b66', 'Add your take when sharing someone else’s Tweet and it’ll show up here.'),
         a('bea0e410', 'Amplify Tweets you like'),
         a('ee5cb3e0', 'Share someone else’s Tweet on your timeline by Retweeting it. When you do, it’ll show up here.'),
@@ -7007,6 +7018,8 @@ function _typeof(obj) {
         a('fa9709ba', 'There was a problem with creating the application. Please try again later.'),
         a('j62f13fc', 'There was a problem updating this job. Please try again later.'),
         a('ff5716fc', 'There was a problem creating this job. Please try again later.'),
+        a('jffc425e', 'There was a problem accessing ATS integrations. Please try again later.'),
+        a('fd059188', 'There was a problem syncing your jobs. Please try again later.'),
         a('e970bdbd', function (e) {
           return e.count + ' invites remaining'
         }),
@@ -7020,13 +7033,7 @@ function _typeof(obj) {
         }),
         a('ba96929e', 'Hiring'),
         a('i4dccc18', 'Billing'),
-        a('a85cda86', 'Add your jobs to get started'),
-        a(
-          'c04b6472',
-          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
-        ),
         a('accbcc78', 'Updated successfully'),
-        a('f58cf1ac', 'Add job'),
         a('ae71ff52', 'You are on the waitlist'),
         a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
         a('b007440a', 'Jobs'),
@@ -7064,6 +7071,19 @@ function _typeof(obj) {
           'a21bb95a',
           'Connect a supported Applicant Tracking System or XML feed to add your jobs to Twitter in minutes.',
         ),
+        a('f58cf1ac', 'Add job'),
+        a('jf1576ba', 'Failed'),
+        a('ff985a36', 'Syncing'),
+        a('e5b8058c', 'Not synced'),
+        a('a86e335a', 'Last synced '),
+        a('b450472c', 'Import jobs'),
+        a('aeac3eb4', 'Refresh Jobs'),
+        a('a85cda86', 'Add your jobs to get started'),
+        a(
+          'c04b6472',
+          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
+        ),
+        a('d14c02d0', 'Add jobs manually'),
         a('f729ab56', 'Add a new job'),
         a(
           'ef5078d8',
@@ -7356,8 +7376,8 @@ function _typeof(obj) {
         a('d0be24d0', 'Clear Tweets'),
         a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
         a('a2c59056', 'Before you clear column...'),
-        a('a7dcfed2', 'Switch to latest Tweets'),
-        a('e98b5ae5', 'latest Tweets'),
+        a('a7dcfed2', 'Switch to latest Tweets')
+      a('e98b5ae5', 'latest Tweets'),
         a('g33b8c04', 'Make a copy'),
         a('de2c3008', 'Make a duplicate of the column.'),
         a('a7c01ce0', 'Change name or delete Folder'),
@@ -7369,8 +7389,8 @@ function _typeof(obj) {
         a('c8da0c42', 'Photos and videos'),
         a('b627a9e4', 'Twitter Blue partners'),
         a('c9b39e70', 'Move'),
-        a('b9ea5f7c', 'Move column to another Deck.')
-      a('g8b6d450', 'Notification options'),
+        a('b9ea5f7c', 'Move column to another Deck.'),
+        a('g8b6d450', 'Notification options'),
         a('dd703fbd', function (e) {
           return 'Delete column - ' + e.title
         }),
@@ -7690,6 +7710,7 @@ function _typeof(obj) {
         a('f936caa6', 'Translator account'),
         a('ac72ee4e', 'Verified account'),
         a('f49e0aac', 'Provides details about verified accounts.'),
+        a('f59bdb94', 'Provides details about protected accounts.'),
         a('d7e50a66', 'Learn more'),
         a('fc065ee4', 'Learn more about Subscriptions'),
         a('e453f536', 'What’s Subscriptions'),
