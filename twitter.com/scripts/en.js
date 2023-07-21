@@ -1553,7 +1553,6 @@ function _typeof(obj) {
         a('b23688c8', 'Undo timer'),
         a('e3a24e4c', 'Add another Tweet'),
         a('i569ff3e', 'Show this thread'),
-        a('a1f52146', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
         a('de128a20', 'Turn on Tweet notifications'),
         a('aa6f3ca4', 'Turn off Tweet notifications'),
         a('j87c21f4', 'Notify'),
@@ -2359,9 +2358,9 @@ function _typeof(obj) {
         a('a2f0728e', 'Minutes'),
         a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
-        a('a3de3b68', 'Tweet text')
-      a('cc2b28fc', 'You can only have 1 type of attachment'),
-        a('g45af04e', 'Add Tweet'),
+        a('a3de3b68', 'Tweet text'),
+        a('cc2b28fc', 'You can only have 1 type of attachment')
+      a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
         a('ec10ee02', 'Poll'),
@@ -3158,10 +3157,17 @@ function _typeof(obj) {
         a('b3f834c8', 'Application waitlisted'),
         a('i14be2c6', 'Estimated earned revenue'),
         a('b03a3d62', 'Ads revenue sharing'),
+        a('c12c5eb6', 'Available programs'),
+        a(
+          'c9d99692',
+          'Eligible creators can sign up for monthly subscriptions or receive their payout for ads revenue sharing',
+        ),
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
+        a('iec0f526', 'To get paid out for ads revenue sharing, make sure you connect a Stripe account.'),
         a('h72d71a2', 'Eligible'),
-        a('bacb1f72', 'Not eligible'),
+        a('e12b0b16', 'Not yet eligible'),
+        a('db8c4158', 'Apply now'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -3615,8 +3621,8 @@ function _typeof(obj) {
         ),
         a('e159eeee', 'profile'),
         a('bad6cf6f', 'your personalization and data settings'),
-        a('g2a9bd3e', 'Automated Account Labels'),
-        a('dd9b3aae', 'What’s an automated account?'),
+        a('g2a9bd3e', 'Automated Account Labels')
+      a('dd9b3aae', 'What’s an automated account?'),
         a(
           'hb6fa97c',
           'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
@@ -3624,8 +3630,8 @@ function _typeof(obj) {
         a(
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        )
-      a('b989e1fe', 'Do I need to label my automated accounts?'),
+        ),
+        a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
@@ -4829,11 +4835,11 @@ function _typeof(obj) {
         a('f4ea967a', 'Folder has been deleted'),
         a('b670aa62', 'Folder Name'),
         a('aece5462', 'Folder name has been updated successfully'),
-        a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
-        a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
+        a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.')
+      a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
         a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
-        a('h9a5daa2', 'Delete Folder?')
-      a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
+        a('h9a5daa2', 'Delete Folder?'),
+        a('ga2edf68', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
         a('i6e7e298', 'Create'),
         a('a0ea2fa6', 'Name field cannot be empty'),
         a('eec37eac', 'Bookmark Folder with that name already exists'),
@@ -5214,7 +5220,6 @@ function _typeof(obj) {
         a('f5ff0d6f', function (e) {
           return e.category + ' — GIF Search'
         }),
-        a('a3dcd5b2', 'Copy link to Note'),
         a('ce374ee0', '@TwitterWrite'),
         a('fe430958', 'Help Center'),
         a('a7da0adb', function (e) {
@@ -5224,7 +5229,6 @@ function _typeof(obj) {
           return e.count + ' minute' + n(e.count, '', 's')
         }),
         a('ce1d02b4', 'Share via Tweet…'),
-        a('a4079efa', 'Learn more about Notes'),
         a('e070024a', 'Edit photo'),
         a('i7d24b36', 'Next image'),
         a('f96a38a2', 'Previous image'),
@@ -5261,10 +5265,6 @@ function _typeof(obj) {
           'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
         ),
         a('a6b267fa', 'Remove captions'),
-        a(
-          'h880e4b8',
-          'Wait! This Note can’t be read right now. The writer may have unpublished it, or Notes might not be available in your location. You can try reloading the page, visiting the writer’s profile page and clicking to the Notes tab, or try again when Notes are available in your location.',
-        ),
         a('b8f0483e', 'Compose new Tweet'),
         a('a1183238', 'Tweeting within a Community'),
         a(
@@ -6615,9 +6615,6 @@ function _typeof(obj) {
         a('a2811f96', 'Profile timelines'),
         a('d25805fa', 'Subs'),
         a('b05be0c8', 'Highlights'),
-        a('b3221ef5', function (e) {
-          return 'Notes' + e.longform_notes
-        }),
         a('c0d13570', 'Affiliates'),
         a('aaf8137e', 'Verified only'),
         a('d51e3a98', 'You must be Verified to highlight posts on your profile.'),
@@ -7176,7 +7173,6 @@ function _typeof(obj) {
         a('b2cee330', 'Impersonation defense'),
         a('f0f48668', 'Premium support'),
         a('cd7193ae', 'More Tweet, DM, and media uploads'),
-        a('db8c4158', 'Apply now'),
         a('f2fb24cd', 'here'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
         a('d47c0c7c', 'Who are you?'),
@@ -7379,10 +7375,10 @@ function _typeof(obj) {
         a('a2c59056', 'Before you clear column...'),
         a('a7dcfed2', 'Switch to latest Tweets'),
         a('e98b5ae5', 'latest Tweets'),
-        a('g33b8c04', 'Make a copy')
-      a('de2c3008', 'Make a duplicate of the column.'),
-        a('a7c01ce0', 'Change name or delete Folder'),
-        a('e52e4c82', 'Change location and personalisation options.'),
+        a('g33b8c04', 'Make a copy'),
+        a('de2c3008', 'Make a duplicate of the column.'),
+        a('a7c01ce0', 'Change name or delete Folder')
+      a('e52e4c82', 'Change location and personalisation options.'),
         a('ad86db50', 'Make a Deck'),
         a('hb70ef30', 'Create a Deck from this search'),
         a('g2657de4', 'Top Tweets'),
@@ -8050,14 +8046,13 @@ function _typeof(obj) {
         a('icbb05dc', 'Don’t forget the human behind the screen.'),
         a('g4d12384', 'Heads up'),
         a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
-        a('f22b8318', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
         a('e5e32275', function (e) {
           return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
         }),
         a('a0953370', 'Subscription'),
         a('ffb3fe6f', 'Keep reading'),
-        a('f87c8643', 'This is a published Note, a new way to write beyond 280 characters on Twitter.'),
-        a('b5231e3f', 'Keep reading'),
+        a('h18b719a', 'This is a published Article, a new way to write on Twitter.'),
+        a('a44aa6d3', 'Keep reading'),
         a('d9687d23', function (e) {
           return 'Down by ' + e.trendValueNegativePercent
         }),
@@ -11230,7 +11225,7 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'f7225b41',
+              key: 'a4d03f53',
               get: function get() {
                 return ['', ' ', ' to learn more.']
               },
