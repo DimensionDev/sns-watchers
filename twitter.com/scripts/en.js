@@ -3168,6 +3168,7 @@ function _typeof(obj) {
         a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
         a('iec0f526', 'To get paid out for ads revenue sharing, make sure you connect a Stripe account.'),
+        a('cbbe29c2', 'You are on track for payouts'),
         a('h72d71a2', 'Eligible'),
         a('e12b0b16', 'Not yet eligible'),
         a('db8c4158', 'Apply now'),
@@ -3488,7 +3489,8 @@ function _typeof(obj) {
           'Unfortunately, you’re not yet eligible for Ads Revenue Sharing. You’ll need to meet the below requirements to participate:',
         ),
         a('d3789528', 'About Ad Rev Share'),
-        a('iaee3944', '5M+ Tweet impressions in each month for the last 3 months'),
+        a('ge7ca602', 'Have at least 15M impressions on your posts within the last 3 months'),
+        a('dd7164e0', '500 followers'),
         a('f91685ba', 'You are automatically eligible to get paid for your posts!'),
         a('acd1a1be', 'Set up your payout details now to receive future payouts.'),
         a('cf3fe75a', 'Set up payouts'),
@@ -3625,10 +3627,10 @@ function _typeof(obj) {
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
         ),
-        a('b989e1fe', 'Do I need to label my automated accounts?'),
-        a('i2d599aa', 'How do I label my automated account?'),
-        a('gd5bed72', 'Create a managing account')
-      a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
+        a('b989e1fe', 'Do I need to label my automated accounts?')
+      a('i2d599aa', 'How do I label my automated account?'),
+        a('gd5bed72', 'Create a managing account'),
+        a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
         a('e20a69e8', 'Connect your managing and automated account'),
         a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
         a('e427f632', 'Your account is labeled!'),
@@ -3857,9 +3859,9 @@ function _typeof(obj) {
           'g2e888ee',
           'Only verified users can add people that don’t follow them to a group. Sign up for Twitter Blue to continue.',
         ),
-        a('df3d6e2c', 'Get verified to create a community'),
-        a('ba2adbf0', 'Only verified users can create a community. Sign up for Twitter Blue to continue.'),
-        a('f09be7f8', 'Get verified'),
+        a('b540ccc2', 'Get verified to create a Community'),
+        a('h3f4cbaa', 'Only verified users can create a Community. Sign up for Twitter Blue to continue.'),
+        a('af7368f4', 'Subscribe today'),
         a('hd7d278c', 'No thanks'),
         a('dd8272fd', function (e) {
           return e.count + ' new message' + n(e.count, '', 's')
@@ -4839,10 +4841,10 @@ function _typeof(obj) {
           return 'Saved to ' + e.bookmarkFolderName
         }),
         a('h18f86a4', 'Delete Folder'),
-        a('f4ea967a', 'Folder has been deleted'),
-        a('b670aa62', 'Folder Name'),
-        a('aece5462', 'Folder name has been updated successfully')
-      a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
+        a('f4ea967a', 'Folder has been deleted')
+      a('b670aa62', 'Folder Name'),
+        a('aece5462', 'Folder name has been updated successfully'),
+        a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
         a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
         a('gee78816', 'Bookmark folder names cannot exceed 25 characters'),
         a('h9a5daa2', 'Delete Folder?'),
@@ -6029,9 +6031,7 @@ function _typeof(obj) {
         }),
         a('ad964e30', 'Edit your Twitter Circle'),
         a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
-        a('dab58e32', 'When you add people, they’ll show up here.'),
-        a('c308119e', 'How it works'),
-        a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.')
+        a('dab58e32', 'When you add people, they’ll show up here.')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6072,7 +6072,9 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
+      a('c308119e', 'How it works'),
+        a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
+        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
         a('ac3fd6e2', 'You don’t have any recommendations — yet'),
         a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
         a('ebcf1374', 'No Quote Tweets yet'),
@@ -6795,6 +6797,7 @@ function _typeof(obj) {
         }),
         a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
         a('df422dfe', 'You have muted Tweets from this account.'),
+        a('f09be7f8', 'Get verified'),
         a(
           'b74bd6c6',
           'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
@@ -7380,11 +7383,11 @@ function _typeof(obj) {
         a('cf79c1fe', 'Show latest Tweets'),
         a('d0be24d0', 'Clear Tweets'),
         a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
-        a('a2c59056', 'Before you clear column...'),
-        a('a7dcfed2', 'Switch to latest Tweets'),
+        a('a2c59056', 'Before you clear column...')
+      a('a7dcfed2', 'Switch to latest Tweets'),
         a('e98b5ae5', 'latest Tweets'),
-        a('g33b8c04', 'Make a copy')
-      a('de2c3008', 'Make a duplicate of the column.'),
+        a('g33b8c04', 'Make a copy'),
+        a('de2c3008', 'Make a duplicate of the column.'),
         a('a7c01ce0', 'Change name or delete Folder'),
         a('e52e4c82', 'Change location and personalisation options.'),
         a('ad86db50', 'Make a Deck'),
