@@ -14284,7 +14284,7 @@ function _typeof(obj) {
       var f = u.Z.create(function (e) {
           return {
             container: { columnGap: e.spacesPx.space4, flexDirection: 'row' },
-            inlineContainer: { justifyContent: 'space-between', maxWidth: 425 },
+            inlineContainer: { justifyContent: 'space-between', maxWidth: 510 },
             noMaxWidth: { maxWidth: 'none' },
             blockContainer: {
               alignItems: 'stretch',
