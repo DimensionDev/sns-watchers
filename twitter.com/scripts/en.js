@@ -2146,6 +2146,7 @@ function _typeof(obj) {
         a('baffe39a', 'Everyone'),
         a('af293dc2', 'People you follow'),
         a('h1053f7e', 'Only people you mention'),
+        a('ad85cd2e', 'Your Subscribers'),
         a('bf994ab2', 'Only you'),
         a('cf7f7e3a', 'Only people you mentioned'),
         a('h3032750', 'Get more info'),
@@ -2358,9 +2359,9 @@ function _typeof(obj) {
         a('caf8edc4', 'Poll length'),
         a('g93586be', 'Days'),
         a('d073b644', 'Hours'),
-        a('a2f0728e', 'Minutes'),
-        a('f0afcc0e', 'Add poll')
-      a('ha5e2e7a', 'Schedule Tweet'),
+        a('a2f0728e', 'Minutes')
+      a('f0afcc0e', 'Add poll'),
+        a('ha5e2e7a', 'Schedule Tweet'),
         a('a3de3b68', 'Tweet text'),
         a('cc2b28fc', 'You can only have 1 type of attachment'),
         a('g45af04e', 'Add Tweet'),
@@ -2421,6 +2422,7 @@ function _typeof(obj) {
         a('ec5a4a26', 'People you follow can reply'),
         a('b454300a', 'Only people you mention can reply'),
         a('i13be5a0', 'Community members can reply'),
+        a('ebe1d850', 'Only your Subscribers can reply'),
         a('aa65a44a', 'We’ll remember your choice on this device'),
         a('d4a4842e', 'Add emoji'),
         a('fec16c1c', 'Emoji'),
@@ -3165,7 +3167,7 @@ function _typeof(obj) {
           'c9d99692',
           'Eligible creators can sign up for monthly subscriptions or receive their payout for ads revenue sharing',
         ),
-        a('i2c5e2aa', 'Earn a living on Twitter by letting anyone subscribe to you for monthly content.'),
+        a('aea0b11a', 'Earn a living on X by letting anyone subscribe to you for monthly content.'),
         a('h7a68080', 'Earn income from the ads served in the replies to your posts.'),
         a('iec0f526', 'To get paid out for ads revenue sharing, make sure you connect a Stripe account.'),
         a('cbbe29c2', 'You are on track for payouts'),
@@ -3622,13 +3624,13 @@ function _typeof(obj) {
         a(
           'hb6fa97c',
           'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
-        ),
-        a(
-          'ed8c8d2e',
-          'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        ),
-        a('b989e1fe', 'Do I need to label my automated accounts?')
-      a('i2d599aa', 'How do I label my automated account?'),
+        )
+      a(
+        'ed8c8d2e',
+        'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
+      ),
+        a('b989e1fe', 'Do I need to label my automated accounts?'),
+        a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
         a('e20a69e8', 'Connect your managing and automated account'),
@@ -4839,10 +4841,10 @@ function _typeof(obj) {
         a('beba2a0e', 'Create a new Bookmark Folder'),
         a('e41c9b4f', function (e) {
           return 'Saved to ' + e.bookmarkFolderName
-        }),
-        a('h18f86a4', 'Delete Folder'),
-        a('f4ea967a', 'Folder has been deleted')
-      a('b670aa62', 'Folder Name'),
+        })
+      a('h18f86a4', 'Delete Folder'),
+        a('f4ea967a', 'Folder has been deleted'),
+        a('b670aa62', 'Folder Name'),
         a('aece5462', 'Folder name has been updated successfully'),
         a('e3299b94', 'Something went wrong. Try updating that folder again in a minute.'),
         a('c09ea714', 'Something went wrong. Try deleting that folder again in a minute.'),
@@ -6029,9 +6031,7 @@ function _typeof(obj) {
             ' on Twitter.'
           )
         }),
-        a('ad964e30', 'Edit your Twitter Circle'),
-        a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
-        a('dab58e32', 'When you add people, they’ll show up here.')
+        a('ad964e30', 'Edit your Twitter Circle')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6072,7 +6072,9 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('c308119e', 'How it works'),
+      a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
+        a('dab58e32', 'When you add people, they’ll show up here.'),
+        a('c308119e', 'How it works'),
         a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
         a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
         a('ac3fd6e2', 'You don’t have any recommendations — yet'),
@@ -7381,10 +7383,10 @@ function _typeof(obj) {
         a('g4d581a2', 'Empty this, and all Bookmark Folders'),
         a('fb14aebe', 'Empty Bookmarks'),
         a('cf79c1fe', 'Show latest Tweets'),
-        a('d0be24d0', 'Clear Tweets'),
-        a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
-        a('a2c59056', 'Before you clear column...')
-      a('a7dcfed2', 'Switch to latest Tweets'),
+        a('d0be24d0', 'Clear Tweets')
+      a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
+        a('a2c59056', 'Before you clear column...'),
+        a('a7dcfed2', 'Switch to latest Tweets'),
         a('e98b5ae5', 'latest Tweets'),
         a('g33b8c04', 'Make a copy'),
         a('de2c3008', 'Make a duplicate of the column.'),
@@ -8036,6 +8038,9 @@ function _typeof(obj) {
         }),
         a('cededc6f', function (e) {
           return 'People @' + e.screenName + ' mentioned can reply'
+        }),
+        a('e0f1a6df', function (e) {
+          return 'People subscribed to or mentioned by @' + e.screenName + ' can reply'
         }),
         a('g7ea1122', 'Only the author and moderators can see this Tweet'),
         a('f956070a', 'It was hidden by the mods for breaking Community rules.'),
