@@ -251,7 +251,6 @@ function _typeof(obj) {
           return e.count + '+'
         }),
         a('i5f7b6b8', 'Account'),
-        a('c5960556', 'Account info'),
         a('da4691aa', 'View all accounts'),
         a('c7e55ccf', function (e) {
           return 'Switch to @' + e.screenname
@@ -1196,9 +1195,9 @@ function _typeof(obj) {
         a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
         a('g1888dc2', 'Never'),
         a('f724d1aa', 'Only on Wi-Fi'),
-        a('cf6472c2', 'On cellular or Wi-Fi')
-      a('b2ed92c4', 'Requesting archive'),
-        a('ce5d2c46', 'Temporarily unavailable'),
+        a('cf6472c2', 'On cellular or Wi-Fi'),
+        a('b2ed92c4', 'Requesting archive')
+      a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
         a('c7227886', 'Go to My Twitter Data'),
         a('a0c3f812', 'To get an updated one, you’ll need to make a new request.'),
@@ -2353,9 +2352,9 @@ function _typeof(obj) {
         a('a2f0728e', 'Minutes'),
         a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
-        a('a3de3b68', 'Tweet text')
-      a('cc2b28fc', 'You can only have 1 type of attachment'),
-        a('g45af04e', 'Add Tweet'),
+        a('a3de3b68', 'Tweet text'),
+        a('cc2b28fc', 'You can only have 1 type of attachment')
+      a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
         a('ec10ee02', 'Poll'),
@@ -3621,12 +3620,12 @@ function _typeof(obj) {
         a(
           'hb6fa97c',
           'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
+        ),
+        a(
+          'ed8c8d2e',
+          'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
         )
-      a(
-        'ed8c8d2e',
-        'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-      ),
-        a('b989e1fe', 'Do I need to label my automated accounts?'),
+      a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
@@ -4836,11 +4835,11 @@ function _typeof(obj) {
         a('cd343e16', 'Save Tweets for later'),
         a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
         a('ee8589ae', 'Compose a Tweet'),
-        a('f075b0e8', 'Edit Folder')
-      a('beba2a0e', 'Create a new Bookmark Folder'),
-        a('e41c9b4f', function (e) {
-          return 'Saved to ' + e.bookmarkFolderName
-        }),
+        a('f075b0e8', 'Edit Folder'),
+        a('beba2a0e', 'Create a new Bookmark Folder')
+      a('e41c9b4f', function (e) {
+        return 'Saved to ' + e.bookmarkFolderName
+      }),
         a('h18f86a4', 'Delete Folder'),
         a('f4ea967a', 'Folder has been deleted'),
         a('b670aa62', 'Folder Name'),
@@ -6020,7 +6019,16 @@ function _typeof(obj) {
         a(
           'd848d612',
           'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
-        )
+        ),
+        a('j70f0f35', function (e) {
+          return (
+            'Follow the ' +
+            e.topicName +
+            ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+            e.topicName +
+            ' on Twitter.'
+          )
+        })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6061,16 +6069,7 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('j70f0f35', function (e) {
-        return (
-          'Follow the ' +
-          e.topicName +
-          ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
-          e.topicName +
-          ' on Twitter.'
-        )
-      }),
-        a('ad964e30', 'Edit your Twitter Circle'),
+      a('ad964e30', 'Edit your Twitter Circle'),
         a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
         a('c308119e', 'How it works'),
@@ -7380,9 +7379,9 @@ function _typeof(obj) {
           return 'This prevents @' + e.screenName + ' from including you in any of their Lists, including this one.'
         }),
         a('iad54d54', 'Clear Bookmarks'),
-        a('g4d581a2', 'Empty this, and all Bookmark Folders')
-      a('fb14aebe', 'Empty Bookmarks'),
-        a('cf79c1fe', 'Show latest Tweets'),
+        a('g4d581a2', 'Empty this, and all Bookmark Folders'),
+        a('fb14aebe', 'Empty Bookmarks')
+      a('cf79c1fe', 'Show latest Tweets'),
         a('d0be24d0', 'Clear Tweets'),
         a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
         a('a2c59056', 'Before you clear column...'),
