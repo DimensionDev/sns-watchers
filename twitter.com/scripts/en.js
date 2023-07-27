@@ -171,6 +171,7 @@ function _typeof(obj) {
         a('bdfa93eb', function (e) {
           return 'Shared by ' + e.name
         }),
+        a('e839db3a', 'Dismiss'),
         a('cc724cb0', 'Create Clip'),
         a('cfd2f35e', 'Cancel'),
         a('c1df579e', 'Next'),
@@ -240,7 +241,7 @@ function _typeof(obj) {
         a('h02a6fe6', 'Communities'),
         a('ded416b0', 'Spaces'),
         a('b7fa0cfe', 'Top Articles'),
-        a('ed21f886', 'Twitter Blue'),
+        a('a52d0fde', 'Blue'),
         a('e2eef3c2', 'Verified Orgs'),
         a('h3290872', 'Verified'),
         a('d86bbf0f', function (e) {
@@ -307,17 +308,6 @@ function _typeof(obj) {
         a('ca058b68', 'Some of your media failed to load.'),
         a('id24379c', 'Some of your media failed to upload.'),
         a('h4d7cbcc', 'Your media failed to upload. Please try again.'),
-        a('de43eaf2', 'Undo Tweet'),
-        a('f6e88162', 'Labs'),
-        a(
-          'e4972a1a',
-          'Check out some of the new features we’re testing before they’re available to everyone else and tell us what you think.',
-        ),
-        a('adcaa214', 'See the most-shared articles from people you follow.'),
-        a(
-          'ccfdbb86',
-          'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
-        ),
         a('b2e94283', function (e) {
           return 'via @' + e.viaScreenName
         }),
@@ -384,10 +374,11 @@ function _typeof(obj) {
         a('d7b51c68', 'Subscriptions'),
         a('ff9ed474', 'Total earnings'),
         a('b431a5c6', 'Ad Rev Share'),
-        a('d73814e0', 'Ad Rev Share Application'),
-        a('ea0b5a2e', 'Ad Rev Share Application Confirmation'),
+        a('aca4d76a', 'Ad Rev Share Setup'),
         a('ab1b837a', 'Ad Rev Share Dashboard'),
+        a('de43eaf2', 'Undo Tweet'),
         a('dd0c889e', 'Profile customization'),
+        a('f6e88162', 'Labs'),
         a('ib35705e', 'Manage Subscription'),
         a('cf131522', 'Manage Affiliate Badges'),
         a('cb165528', 'News features and settings'),
@@ -1202,11 +1193,11 @@ function _typeof(obj) {
         a('bd12cf34', 'Yes, disconnect'),
         a('f79acef3', 'Learn more'),
         a('d88102c0', 'If selected, Twitter will use less network data.'),
-        a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.')
-      a('g1888dc2', 'Never'),
+        a('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
+        a('g1888dc2', 'Never'),
         a('f724d1aa', 'Only on Wi-Fi'),
-        a('cf6472c2', 'On cellular or Wi-Fi'),
-        a('b2ed92c4', 'Requesting archive'),
+        a('cf6472c2', 'On cellular or Wi-Fi')
+      a('b2ed92c4', 'Requesting archive'),
         a('ce5d2c46', 'Temporarily unavailable'),
         a('dd9ec810', 'Your Twitter data link is expired'),
         a('c7227886', 'Go to My Twitter Data'),
@@ -1254,7 +1245,6 @@ function _typeof(obj) {
         a('i76f67ee', 'Dim'),
         a('c8f85960', 'Lights out'),
         a('aefc5b20', 'Color options'),
-        a('a52d0fde', 'Blue'),
         a('d818cdd6', 'Yellow'),
         a('fee1cd64', 'Pink'),
         a('cbed7fb2', 'Purple'),
@@ -1525,6 +1515,8 @@ function _typeof(obj) {
         a('ebad846c', 'Share Tweet via …'),
         a('d9837138', 'Remove Tweet from Bookmarks'),
         a('f1fcb2ec', 'Remove Tweet from Folder'),
+        a('fbfab656', 'Share to Space'),
+        a('ec66f050', 'Tweet shared with Space'),
         a('fd80ffb0', 'View Quote Tweets'),
         a('bb192c6b', function (e) {
           return '' + e.displayCount
@@ -1708,7 +1700,6 @@ function _typeof(obj) {
         ),
         a('d9b417c4', 'Set as not interested'),
         a('c29d6806', 'Stop recommending'),
-        a('e839db3a', 'Dismiss'),
         a('je506a60', 'Change username'),
         a('b983f9e0', 'Heads up'),
         a(
@@ -2359,11 +2350,11 @@ function _typeof(obj) {
         a('caf8edc4', 'Poll length'),
         a('g93586be', 'Days'),
         a('d073b644', 'Hours'),
-        a('a2f0728e', 'Minutes')
-      a('f0afcc0e', 'Add poll'),
+        a('a2f0728e', 'Minutes'),
+        a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
-        a('a3de3b68', 'Tweet text'),
-        a('cc2b28fc', 'You can only have 1 type of attachment'),
+        a('a3de3b68', 'Tweet text')
+      a('cc2b28fc', 'You can only have 1 type of attachment'),
         a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
@@ -2461,6 +2452,7 @@ function _typeof(obj) {
           return 'Go to @' + e.screenName
         }),
         a('ee295fbe', 'Try searching for people, topics, or keywords'),
+        a('a2c1b222', 'Try searching for people, lists, or keywords'),
         a('f45c4250', 'Clear all recent searches?'),
         a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
         a('dbd5d400', 'Clear'),
@@ -3088,7 +3080,7 @@ function _typeof(obj) {
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
-        a('f4bd606a', 'To cancel your complimentary subscription to Twitter Blue, contact support'),
+        a('bdf46ebc', 'To cancel your complimentary subscription to Blue, contact support'),
         a('fecebd4c', 'here'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
@@ -3097,7 +3089,7 @@ function _typeof(obj) {
           'cad64506',
           'You are receiving Twitter Blue because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
-        a('b5d666d8', 'Manage Existing Twitter Blue subscription'),
+        a('g23b6b78', 'Manage Existing Blue subscription'),
         a('h201c4c2', 'iOS'),
         a('i8385a2c', 'Android'),
         a('h80834de', 'other'),
@@ -3108,7 +3100,7 @@ function _typeof(obj) {
             ' device. You’ll need to manage or cancel your subscription from that platform.'
           )
         }),
-        a('f6d0d8c2', 'Upgrade Twitter Blue'),
+        a('dc23b5f6', 'Upgrade Blue'),
         a('a5760c62', 'Upgrade available'),
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('be103b84', 'Active'),
@@ -3118,6 +3110,7 @@ function _typeof(obj) {
         a('cde12a14', 'The first badge will be shown on all Tweets.'),
         a('ab8089ea', 'Reorder'),
         a('b16486e8', 'A better reading experience on and off Twitter.'),
+        a('adcaa214', 'See the most-shared articles from people you follow.'),
         a('b62d6e4c', 'Reader'),
         a(
           'g88d2040',
@@ -3174,6 +3167,7 @@ function _typeof(obj) {
         a('h72d71a2', 'Eligible'),
         a('e12b0b16', 'Not yet eligible'),
         a('db8c4158', 'Apply now'),
+        a('e89cdac0', 'Manage payout account'),
         a('ja73ebac', 'Revenue'),
         a('h16eeb42', 'Manage'),
         a('bc43a32e', 'Recent activity'),
@@ -3494,16 +3488,19 @@ function _typeof(obj) {
         a('ge7ca602', 'Have at least 15M impressions on your posts within the last 3 months'),
         a('dd7164e0', '500 followers'),
         a('f91685ba', 'You are automatically eligible to get paid for your posts!'),
-        a('acd1a1be', 'Set up your payout details now to receive future payouts.'),
-        a('cf3fe75a', 'Set up payouts'),
-        a('c8169274', 'There was a problem with saving your application. Please try again later.'),
-        a('hf5a0876', 'Ads Revenue Sharing Terms'),
-        a('f5914812', 'Ad Revenue Share Application Confirmation'),
         a(
-          'e09937a2',
-          'We’ve confirmed your pricing. Your application will be reviewed and if you`re approved, we’ll send you a notification as soon as it’s live.',
+          'fa0f13b0',
+          'As a Blue or Verified Organizations subscriber, you are automatically eligible for ads revenue sharing. Your payout is based on the number of verified impressions on ads shown in the replies to your posts.',
         ),
+        a('acd1a1be', 'Set up your payout details now to receive future payouts.'),
+        a('ef135200', 'Join & set up payouts'),
+        a('c8169274', 'There was a problem with saving your application. Please try again later.'),
+        a('f242a8ac', 'Ads Revenue Sharing Terms'),
         a('d085a144', 'Creator earnings dashboard'),
+        a(
+          'e4972a1a',
+          'Check out some of the new features we’re testing before they’re available to everyone else and tell us what you think.',
+        ),
         a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
         a('h7693c0e', 'You can upload and Tweet videos that are up to 10-minutes long.'),
         a('cac1046e', '1080p video uploads'),
@@ -3526,9 +3523,9 @@ function _typeof(obj) {
         a('d7eebb60', 'Setting up your subscription'),
         a('a452ab68', 'This may take a few seconds.'),
         a('eca82e08', 'A better news reading experience'),
-        a('gfe8ccf8', 'Discover relevant long form Tweets and enjoy articles being shared in your network.'),
+        a('h02b976e', 'Discover relevant long form posts and enjoy articles being shared in your network.'),
         a('ia0beb56', 'Early access to select new features'),
-        a('h44313c4', 'Explore select new Twitter features included in Twitter Blue Labs.'),
+        a('af740df0', 'Explore select new features.'),
         a('f5338950', 'Extras'),
         a('i5cb232e', 'Choose custom app icons and add quick access to your favorite destinations.'),
         a('b6ab9962', 'Original Tweets'),
@@ -4600,6 +4597,8 @@ function _typeof(obj) {
         a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
         a('fc6e4594', 'Top tags selected by raters'),
+        a('idc0e9fc', 'Sign up to be a Community Notes contributor'),
+        a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
         a('c2a6ec00', 'Want to join Community Notes?'),
         a('cbfa448c', 'Help people stay better informed on Twitter.'),
         a('ab23a972', 'Follow the conversation'),
@@ -4837,12 +4836,12 @@ function _typeof(obj) {
         a('cd343e16', 'Save Tweets for later'),
         a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
         a('ee8589ae', 'Compose a Tweet'),
-        a('f075b0e8', 'Edit Folder'),
-        a('beba2a0e', 'Create a new Bookmark Folder'),
+        a('f075b0e8', 'Edit Folder')
+      a('beba2a0e', 'Create a new Bookmark Folder'),
         a('e41c9b4f', function (e) {
           return 'Saved to ' + e.bookmarkFolderName
-        })
-      a('h18f86a4', 'Delete Folder'),
+        }),
+        a('h18f86a4', 'Delete Folder'),
         a('f4ea967a', 'Folder has been deleted'),
         a('b670aa62', 'Folder Name'),
         a('aece5462', 'Folder name has been updated successfully'),
@@ -6021,17 +6020,7 @@ function _typeof(obj) {
         a(
           'd848d612',
           'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
-        ),
-        a('j70f0f35', function (e) {
-          return (
-            'Follow the ' +
-            e.topicName +
-            ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
-            e.topicName +
-            ' on Twitter.'
-          )
-        }),
-        a('ad964e30', 'Edit your Twitter Circle')
+        )
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6072,7 +6061,17 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
+      a('j70f0f35', function (e) {
+        return (
+          'Follow the ' +
+          e.topicName +
+          ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+          e.topicName +
+          ' on Twitter.'
+        )
+      }),
+        a('ad964e30', 'Edit your Twitter Circle'),
+        a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
         a('c308119e', 'How it works'),
         a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
@@ -7184,6 +7183,7 @@ function _typeof(obj) {
         a('cba7528e', 'Custom Profiles'),
         a('b2cee330', 'Impersonation defense'),
         a('f0f48668', 'Premium support'),
+        a('ed21f886', 'Twitter Blue'),
         a('cd7193ae', 'More Tweet, DM, and media uploads'),
         a('f2fb24cd', 'here'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
@@ -7380,11 +7380,11 @@ function _typeof(obj) {
           return 'This prevents @' + e.screenName + ' from including you in any of their Lists, including this one.'
         }),
         a('iad54d54', 'Clear Bookmarks'),
-        a('g4d581a2', 'Empty this, and all Bookmark Folders'),
-        a('fb14aebe', 'Empty Bookmarks'),
+        a('g4d581a2', 'Empty this, and all Bookmark Folders')
+      a('fb14aebe', 'Empty Bookmarks'),
         a('cf79c1fe', 'Show latest Tweets'),
-        a('d0be24d0', 'Clear Tweets')
-      a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
+        a('d0be24d0', 'Clear Tweets'),
+        a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
         a('a2c59056', 'Before you clear column...'),
         a('a7dcfed2', 'Switch to latest Tweets'),
         a('e98b5ae5', 'latest Tweets'),
@@ -9758,9 +9758,9 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'fa559857',
+              key: 'i3967b2f',
               get: function get() {
-                return ['By selecting "Set up payouts" you agree to the ']
+                return ['By selecting "Join & set up payouts" you agree to the ']
               },
             },
             {
