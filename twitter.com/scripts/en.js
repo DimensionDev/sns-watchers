@@ -310,10 +310,10 @@ function _typeof(obj) {
         a('b2e94283', function (e) {
           return 'via @' + e.viaScreenName
         }),
-        a('g34f2c63', function (e) {
-          return 'Tweet' + e.verb
+        a('ee69d769', function (e) {
+          return 'Post' + e.verb
         }),
-        a('f70a36d0', 'Tweet all'),
+        a('ge8e4a38', 'Post all'),
         a('d17df548', 'Reply'),
         a('h735a98e', 'Schedule'),
         a('h3701ffe', 'Update'),
@@ -346,7 +346,7 @@ function _typeof(obj) {
         a('j087774e', 'Coins'),
         a('a5a30af0', 'Articles'),
         a('bcd81cac', 'Preferences'),
-        a('i1d35d74', 'TweetDeck'),
+        a('j2c6143a', 'XPro'),
         a('hc73f030', 'Your Account'),
         a('f15bfdb4', 'Account information'),
         a('a3841918', 'Email'),
@@ -354,7 +354,7 @@ function _typeof(obj) {
         a('ab1f7ee0', 'Change your password'),
         a('e731db5a', 'Password reset'),
         a('f56af9cc', 'Download an archive of your data'),
-        a('d13e165c', 'TweetDeck Teams'),
+        a('f00808b0', 'Teams'),
         a('hfb92b14', 'Deactivate your account'),
         a('bf96fda4', 'Age'),
         a('j9d10268', 'Account activity'),
@@ -983,7 +983,7 @@ function _typeof(obj) {
           'See information about when you logged into your account and the apps you connected to your account.',
         ),
         a('j748604a', 'Manage Google or Apple accounts connected to Twitter to log in.'),
-        a('f280cc88', 'Twitter Delegate'),
+        a('g9230d00', 'Delegate'),
         a('a310511c', 'Manage your shared accounts.'),
         a('jc02ae68', 'Connected apps'),
         a('dd82312a', 'Sessions'),
@@ -1646,293 +1646,28 @@ function _typeof(obj) {
           return 'Remove @' + e.screenName + ' from Flagged accounts list?'
         }),
         a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
-        a('ced3c85a', 'Edited'),
-        a('edf9101f', 'Keep reading'),
-        a('aaad27c8', 'Author'),
-        a('e6901eec', 'View Tweet analytics'),
-        a('b7cff250', function (e) {
-          return '' + e.displayCoins
+        a('b360ac7c', 'Section navigation'),
+        a('adc81042', 'Section details'),
+        a('d5568440', 'Please enter a stronger password.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cd24fe60', 'Please enter a valid phone number.'),
+        a('jd2f69a8', 'Paste Tweet URL'),
+        a('d2ae33ce', 'Invalid Tweet URL'),
+        a('ac308436', 'Tweet not found'),
+        a('ac78ac54', 'Tweet already added to this Moment'),
+        a('cd343e16', 'Save Tweets for later'),
+        a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
+        a('ee8589ae', 'Compose a Tweet'),
+        a('g34f2c63', function (e) {
+          return 'Tweet' + e.verb
         }),
-        a('g62dcfbc', function (e) {
-          return 'Coin' + n(e.count, '', 's')
-        }),
-        a('ff429ac4', 'Your Tweet is being boosted'),
-        a('g6237a1e', 'Promotion running'),
-        a('d6b5949e', 'Promotion paused'),
-        a('e2f2b658', 'We won’t suggest this Topic anymore.'),
-        a('ffd9cfe6', 'See more'),
-        a('d172116a', 'Discover more'),
-        a('iac074c4', 'More Tweets'),
-        a('g11ebd34', 'More suggestions'),
-        a('g4a6901a', 'Browse'),
-        a('b1abb17e', 'Browse Tweets'),
-        a('i79ab12a', 'Follow Topic'),
-        a('c0f56044', 'Unfollow'),
-        a('fcf51fe6', 'Star'),
-        a('e9a90d72', 'Starred'),
-        a('bf403716', 'Unstar'),
-        a('c9f08e29', function (e) {
-          return 'Unstar ' + e.title + '?'
-        }),
-        a(
-          'abc600f4',
-          'Even if you unstar this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-        ),
-        a('cd876e02', 'Favorite'),
-        a('f2816e02', 'Favorited'),
-        a('f5b04fbc', 'Unfavorite'),
-        a('c481ae3f', function (e) {
-          return 'Unfavorite ' + e.title + '?'
-        }),
-        a(
-          'aa3ba124',
-          'Even if you unfavorite this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-        ),
-        a('e0e730b0', 'Interested'),
-        a('b1850062', 'Not interested'),
-        a('gd3f996f', function (e) {
-          return 'Not interested in ' + e.title + '?'
-        }),
-        a(
-          'i36c403c',
-          'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
-        ),
-        a('d9b417c4', 'Set as not interested'),
-        a('c29d6806', 'Stop recommending'),
-        a('je506a60', 'Change username'),
-        a('b983f9e0', 'Heads up'),
-        a(
-          'c0fcb08a',
-          'Changing your username will result in your checkmark and affiliations being temporarily removed until they are reviewed.',
-        ),
-        a('d1f6d336', 'Username'),
-        a('de65c756', 'Suggestions'),
-        a('ebeeac1a', 'Change email'),
-        a('dc013356', 'Current'),
-        a('ea28c7ce', 'Loading email settings'),
-        a('f3f66252', 'Add email address'),
-        a('i5107de4', 'Update email address'),
-        a('d19fd42a', 'Resend confirmation email'),
-        a('g4da3246', 'Email sent. Please check your inbox shortly for a confirmation link.'),
-        a('h021352f', function (e) {
-          return '' + e.resendConfirmationLabel
-        }),
-        a('d241169c', 'Current password'),
-        a('a9bc3044', 'New password'),
-        a('b8c03cfc', 'Confirm password'),
-        a('b731d32c', 'Your password has been successfully updated.'),
-        a('d555d7e0', 'New password cannot be the same as your existing password.'),
-        a('fa8af9ae', 'Passwords do not match.'),
-        a('a03f5c73', function (e) {
-          return e.applicationCount + ' application' + n(e.applicationCount, '', 's')
-        }),
-        a('c342a0ad', 'Learn more'),
-        a('cb841d56', 'Change phone'),
-        a('ce37ea44', 'Add phone number'),
-        a('ibaf239e', 'Update phone number'),
-        a('j2636558', 'Delete phone number'),
-        a('e49b16d4', 'Delete phone number?'),
-        a(
-          'i931719e',
-          'This will remove this number from your account, and you will no longer be able to receive notifications or login codes to it.',
-        ),
-        a('d96cf7ce', 'Delete'),
-        a('j841d1f4', 'Phone removed.'),
-        a('f0977f52', 'Yes, delete'),
-        a(
-          'da23c5b6',
-          'This deletes the phone number from this account, and you’ll no longer receive notifications as text messages from Twitter. Additionally, this turns off two-factor authentication on this account.',
-        ),
-        a(
-          'hf186732',
-          'This deletes the phone number from this account, and you’ll no longer receive notifications as text messages from Twitter. Additionally, this turns off text message as a two-factor authentication method on this account.',
-        ),
-        a('bc262c2e', 'Additional methods'),
-        a('hc1a91da', 'Backup codes'),
-        a(
-          'gee4dc74',
-          'Get single-use backup codes so you can log in to Twitter if you don’t have access to your two-factor authentication options.',
-        ),
-        a('b39c7b14', 'Disable login verification?'),
-        a(
-          'a923fce6',
-          'Turning off two-factor authentication means your account may be more vulnerable to compromise. Are you sure you want to turn it off?',
-        ),
-        a('ff781e0a', 'Turn this off?'),
-        a('c557ac30', 'Are you sure you want to turn off this method?'),
-        a(
-          'd133464a',
-          'Turning this off removes this two-factor authentication method from your account. Are you sure you want to turn it off?',
-        ),
-        a('ee3a7bfa', 'Turn off'),
-        a('aa9139cc', 'Verify login requests'),
-        a(
-          'i0d4f09e',
-          'After you log in, Twitter will send a push notification to the Twitter app that you’ll need to approve to access your account.',
-        ),
-        a('a219e218', 'OK'),
-        a(
-          'e0d79de8',
-          'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
-        ),
-        a('ja6bbfa0', 'Loading login verification data'),
-        a('c2570922', 'Text message'),
-        a(
-          'f3820212',
-          'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
-        ),
-        a('ab61b41a', 'Authentication app'),
-        a(
-          'h4787492',
-          'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
-        ),
-        a('h6d0d89c', 'Security key'),
-        a(
-          'f57be1cc',
-          'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
-        ),
-        a(
-          'e2b81a10',
-          'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
-        ),
-        a('cd195528', 'Add new security key'),
-        a('a1860ee8', 'Temporary password'),
-        a('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
-        a('d8612d9c', 'Turn on Text message or Authentication app first'),
-        a(
-          'e13d4468',
-          'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
-        ),
-        a('c1d96d6a', 'You’ve added the maximum number of keys'),
-        a('gf91694e', 'You’ll need to delete a key before adding another.'),
-        a('j265ddb6', 'Confirm your email'),
-        a(
-          'a136ecac',
-          'To turn on two-factor authentication, you need to associate an email address with this Twitter account and then confirm it, so we know it’s really yours.',
-        ),
-        a(
-          'd7bfde1a',
-          'It looks like your account is currently suspended. You can’t turn on two-factor authentication while your account is suspended.',
-        ),
-        a('f7954a0c', 'Loading security keys data'),
-        a('h69986c2', 'You can rename or delete your security keys.'),
-        a('i5896ba2', 'Add another key'),
-        a('a8ef2b64', 'Unnamed Security Key'),
-        a('d4e220b4', 'Name'),
-        a('g6d0f0b6', 'Manage security key'),
-        a('b894f68a', 'Loading security key data'),
-        a('g2601bb6', 'Rename key'),
-        a('b464b726', 'Delete key'),
-        a('a4101e1b', function (e) {
-          return 'Date added: ' + e.securityKeyAddedDate
-        }),
-        a('i3bb3f78', 'Backup Code'),
-        a('ec6a76e0', 'Generate a new code'),
-        a('f2c3c31c', 'Copy code'),
-        a('e8016b64', 'Loading backup code'),
-        a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-        a('f20ff69f', 'Learn more'),
-        a('j2327f80', 'Temporary Password'),
-        a('fbfeaf8e', 'Generate a new password'),
-        a('h4a8bd12', 'Copy password'),
-        a('g247dc1c', 'Loading temporary password'),
-        a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
-        a('d70fceac', 'This password will expire in one hour.'),
-        a('j924d222', 'Change country'),
-        a('j01f061b', 'Learn more'),
-        a(
-          'b67e1fc0',
-          'Select your preferred language for headlines, buttons, and other text from Twitter on this account. This does not change the language of the content you see in your timeline.',
-        ),
-        a('cef33711', function (e) {
-          return e.languageName + ' (beta)'
-        }),
-        a('b033248c', 'Discoverability'),
-        a(
-          'a904e0ee',
-          'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
-        ),
-        a('ebc41952', 'Let people who have your email address find you on Twitter'),
-        a('f40a6338', 'Let people who have your email address find and connect with you on Twitter.'),
-        a('ac9314aa', 'Let people who have your phone number find you on Twitter'),
-        a('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
-        a('ac77c66c', 'Contacts'),
-        a('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
-        a('b864be7a', 'Remove all contacts'),
-        a('g5fa1090', 'Remove all contacts?'),
-        a(
-          'h0d21912',
-          'This removes any contacts you’ve previously uploaded and turns off syncing with Twitter on all devices. Please be aware that this takes a little time, cannot be undone, and you may still notice some suggestions on Twitter (based on your contacts) in the meantime.',
-        ),
-        a('ca24589e', 'No name'),
-        a('jb9b8121', 'Learn more'),
-        a('e5b0063d', function (e) {
-          return 'Timeline: ' + e.title
-        }),
-        a('fe36fe10', 'Confirm your password'),
-        a('hccd9dbe', 'Please enter your password in order to get this.'),
-        a('g9677c6e', 'Confirm'),
-        a(
-          'j5267914',
-          'Location labels you’ve added to your Tweets will no longer be visible on Twitter.com, Twitter for iOS, and Twitter for Android. These updates may take some time to go into effect.',
-        ),
-        a(
-          'ed7fa034',
-          'Your location services are not currently enabled on this device. You can turn them on in your device settings.',
-        ),
-        a('h83e5c06', 'Remove all location information attached to your Tweets'),
-        a('f4d69920', 'Remove all location information attached to your Tweets?'),
-        a('g00413fb', 'Learn more'),
-        a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
-        a('cf24a082', 'Turn on TweetDeck Teams'),
-        a('d1e97fd0', 'Invite anyone to Tweet from this account using the Teams feature in TweetDeck.'),
-        a('a2ffab26', 'Allow anyone to add you to their team'),
-        a('h69bd4ee', 'Only allow people you follow to add you to their team'),
-        a(
-          'd0a1d1da',
-          'When this setting is on, you can invite anyone to Tweet from this account using TweetDeck Teams.',
-        ),
-        a('a90af44e', 'Hide sensitive content'),
-        a('a25e2ec6', 'Remove blocked and muted accounts'),
-        a('b827a058', 'Safe search settings updated.'),
-        a('b27c9852', 'Something went wrong updating your safe search settings.'),
-        a(
-          'c81b9708',
-          'This prevents Tweets with potentially sensitive content from displaying in your search results.',
-        ),
-        a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.'),
-        a('bc7fd990', 'Loading trends settings'),
-        a('e2f16650', 'Show content in this location'),
-        a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
-        a('i4d54b0e', 'Trends for you'),
-        a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
-        a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
-        a('a55db872', 'Personalization'),
-        a('h0b5152e', 'Change location'),
-        a('dfeada5e', 'Explore locations'),
-        a('ac854308', 'Policy'),
-        a('d429c942', 'Trends U.S. Election Policy'),
-        a('ede134f2', 'Select whether videos and GIFs should play automatically on this device.'),
-        a('b3aab6d4', 'Locations'),
-        a('e53e05e4', 'Loading locations'),
-        a('be6cc44e', 'Search locations'),
-        a('d5c9174f', function (e) {
-          return e.location + ', ' + e.country
-        }),
-        a('f8321d82', 'All'),
-        a('cf67f6d6', 'Autoblocked'),
-        a('eb233866', 'Imported'),
-        a(
-          'd23b0404',
-          'When you block someone, they won’t be able to follow or message you, and you won’t see notifications from them.',
-        ),
-        a('e0a7e9bc', 'Block unwanted accounts'),
-        a('ef731b14', 'Loading blocked accounts'),
-        a('e554ba83', 'Learn more'),
         a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
         a('gdb8bdcc', 'See new Tweets'),
         a('d6e2f9be', 'Loading timeline'),
         a('afb4c24a', 'No items'),
+        a('e5b0063d', function (e) {
+          return 'Timeline: ' + e.title
+        }),
         a('eb022176', 'Create account'),
         a('gcfef7b6', 'Create account with phone or email'),
         a('e5b0e544', 'Sign in'),
@@ -1954,6 +1689,7 @@ function _typeof(obj) {
         a('a649d337', function (e) {
           return 'Not interested in ' + e.name
         }),
+        a('e2f2b658', 'We won’t suggest this Topic anymore.'),
         a('b51f7edf', function (e) {
           return 'You unfollowed ' + e.name
         }),
@@ -2041,6 +1777,37 @@ function _typeof(obj) {
         a('i9f615c8', 'Final'),
         a('f897267a', 'Postponed'),
         a('f93c4b6a', 'Cancelled'),
+        a('i79ab12a', 'Follow Topic'),
+        a('c0f56044', 'Unfollow'),
+        a('fcf51fe6', 'Star'),
+        a('e9a90d72', 'Starred'),
+        a('bf403716', 'Unstar'),
+        a('c9f08e29', function (e) {
+          return 'Unstar ' + e.title + '?'
+        }),
+        a(
+          'abc600f4',
+          'Even if you unstar this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+        ),
+        a('cd876e02', 'Favorite'),
+        a('f2816e02', 'Favorited'),
+        a('f5b04fbc', 'Unfavorite'),
+        a('c481ae3f', function (e) {
+          return 'Unfavorite ' + e.title + '?'
+        }),
+        a(
+          'aa3ba124',
+          'Even if you unfavorite this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+        ),
+        a('e0e730b0', 'Interested'),
+        a('b1850062', 'Not interested'),
+        a('gd3f996f', function (e) {
+          return 'Not interested in ' + e.title + '?'
+        }),
+        a(
+          'i36c403c',
+          'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+        ),
         a('f93bb3ee', 'Load image'),
         a('cc37768d', function (e) {
           return e.mediaFileSize + ' KB'
@@ -2132,7 +1899,7 @@ function _typeof(obj) {
         a('d41305a8', 'Message bubble with pushpin'),
         a('fa9ce7f4', 'Undo Retweet'),
         a('g6185a9e', 'Who can reply?'),
-        a('g2d04222', 'Choose who can reply to this Tweet. Anyone mentioned can always reply.'),
+        a('i00051cc', 'Choose who can reply to this post. Anyone mentioned can always reply.'),
         a('baffe39a', 'Everyone'),
         a('af293dc2', 'People you follow'),
         a('h1053f7e', 'Only people you mention'),
@@ -2154,8 +1921,10 @@ function _typeof(obj) {
         a('ae0c5fbe', 'Error changing who can reply'),
         a('bae0cbc0', 'Change who can reply'),
         a('fb4ee11c', 'Why this ad?'),
+        a('e6901eec', 'View Tweet analytics'),
         a('ef1042f8', 'Write a Community Note'),
         a('bf8d98f4', 'Only Subscribed can reply'),
+        a('d96cf7ce', 'Delete'),
         a('dd211108', 'Delete Tweet?'),
         a(
           'c55d72d0',
@@ -2327,6 +2096,7 @@ function _typeof(obj) {
           'We are still uploading your video. Are you sure you want to discard your Tweet? Your draft and attachments will be lost.',
         ),
         a('c3d89aca', 'Continue'),
+        a('b983f9e0', 'Heads up'),
         a('ed5c4342', 'A couple things to keep in mind ...'),
         a('abc4afcc', 'Your edit time expired'),
         a('aa15f5aa', 'Tweets can only be edited within the first 30 minutes after they’re published.'),
@@ -2353,8 +2123,8 @@ function _typeof(obj) {
         a('f0afcc0e', 'Add poll'),
         a('ha5e2e7a', 'Schedule Tweet'),
         a('a3de3b68', 'Tweet text'),
-        a('cc2b28fc', 'You can only have 1 type of attachment')
-      a('g45af04e', 'Add Tweet'),
+        a('cc2b28fc', 'You can only have 1 type of attachment'),
+        a('g45af04e', 'Add Tweet'),
         a('j1d5791c', 'Add Reply'),
         a('ee9c4014', 'Remove Tweet'),
         a('ec10ee02', 'Poll'),
@@ -2369,10 +2139,10 @@ function _typeof(obj) {
         a('b1695ed6', 'Add another Tweet!'),
         a('ad7cb5ba', 'Add another Reply!'),
         a('f1352c90', 'Add a comment!'),
-        a('ad993b0e', 'Tweet your reply!'),
+        a('cf5af90c', 'Post your reply!'),
         a('g1fb138a', 'Ask a question!'),
         a('e815fc34', 'Choose audience'),
-        a('d0748dae', 'Twitter Circle'),
+        a('cf44066a', 'Circle'),
         a('a68885de', 'All Followers'),
         a('c63602d4', 'My Communities'),
         a('a5f7b700', function (e) {
@@ -2612,13 +2382,10 @@ function _typeof(obj) {
         }),
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('fa8f6ec6', 'Your Tweet was posted, but we were unable to run the Boost on it. You will not be charged.'),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
-        a('fe26420a', 'Add keywords'),
-        a('ed9f214f', function (e) {
-          return 'You’re Tweeting for @' + e.screenName + '.'
-        }),
+        a('fe26420a', 'Add keywords')
+      a('ed9f214f', function (e) {
+        return 'You’re Tweeting for @' + e.screenName + '.'
+      }),
         a('ga8627cd', function (e) {
           return 'You’re replying for @' + e.screenName + '.'
         }),
@@ -2633,6 +2400,8 @@ function _typeof(obj) {
           'People can’t mention you again in this conversation and you won’t receive further notifications.',
         ),
         a('g0b48670', 'This conversation has too many replies to show them all.'),
+        a('d9b417c4', 'Set as not interested'),
+        a('c29d6806', 'Stop recommending'),
         a('ge8f3043', function (e) {
           return 'Follow ' + e.topicName + ' Topic'
         }),
@@ -2650,6 +2419,443 @@ function _typeof(obj) {
         a('je808a17', function (e) {
           return e.topicName + ' Topic'
         }),
+        a('adad5408', 'New folder'),
+        a('be329aac', 'Bookmark Tweets to save them for later'),
+        a('j0a47c9c', 'Need more time to write a clever response or just want to save a Tweet for later? Bookmark it!'),
+        a('j45c642e', 'Folders aren’t loading right now'),
+        a('b87ca51a', 'Remove photo'),
+        a('eebff22c', 'Crop photo'),
+        a('a50ba822', 'Search for GIFs'),
+        a('c6f5ac52', 'Categories — GIF Search'),
+        a('ab468379', function (e) {
+          return e.query + ' — GIF Search'
+        }),
+        a('j7fc4f9c', 'Auto-play GIFs'),
+        a('a66b7760', 'Unlabeled GIF'),
+        a('a723aefa', 'No GIFs found'),
+        a('a6ecfa0a', 'Try searching for something else instead.'),
+        a('f5ff0d6f', function (e) {
+          return e.category + ' — GIF Search'
+        }),
+        a('a753a870', 'Apply'),
+        a('ce374ee0', '@TwitterWrite'),
+        a('fe430958', 'Help Center'),
+        a('a7da0adb', function (e) {
+          return e.count + ' word' + n(e.count, '', 's')
+        }),
+        a('aea1d455', function (e) {
+          return e.count + ' minute' + n(e.count, '', 's')
+        }),
+        a('ce1d02b4', 'Share via Tweet…'),
+        a('e070024a', 'Edit photo'),
+        a('i7d24b36', 'Next image'),
+        a('f96a38a2', 'Previous image'),
+        a('hac7c548', 'Crop media'),
+        a('e3dbfba4', 'Edit image description'),
+        a('dd4a83a6', 'Content warning'),
+        a('ffe9ec3a', 'Add descriptions'),
+        a(
+          'j063b262',
+          'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
+        ),
+        a('e57144f0', 'Sure'),
+        a('feabf2a0', 'Alt text'),
+        a('e36287c6', 'Description'),
+        a('cf565d08', 'What is alt text?'),
+        a('j9cf5950', 'Put a content warning on this Tweet'),
+        a(
+          'd69a782e',
+          'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
+        ),
+        a('faf745fa', 'Nudity'),
+        a('h2437f26', 'Sensitive'),
+        a('g5e1668a', 'Able to be downloaded'),
+        a('fdc6a52a', 'When enabled, your video will be available to be downloaded.'),
+        a('fe09fde2', 'Change settings'),
+        a('cd5cba97', function (e) {
+          return 'Content warning: ' + e.formattedWarningList
+        }),
+        a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
+        a('a0e81a2e', 'Show'),
+        a('f1d9930c', 'Hide'),
+        a('c91f83ae', 'Edit video'),
+        a('icbec4ae', 'Upload captions'),
+        a('e7048e74', 'Trim media'),
+        a(
+          'j435467e',
+          'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
+        ),
+        a('a6b267fa', 'Remove captions'),
+        a('aaad27c8', 'Author'),
+        a('a78ad3f6', 'Tweeps only Space'),
+        a('d08666ba', 'Private Space'),
+        a('eadb5a46', 'Be the first to join'),
+        a('ia3c0ab7', function (e) {
+          return e.hostName + '’s Space'
+        }),
+        a('hd552761', function (e) {
+          return 'Hosted by ' + e.hostName
+        }),
+        a('c3ea19a5', function (e) {
+          return e.index + ' of ' + e.total
+        }),
+        a('a5235305', function (e) {
+          return e.listOfPeople + ' joined'
+        }),
+        a('df9f8243', function (e) {
+          return e.name + ' is listening'
+        }),
+        a('g2445c2f', function (e) {
+          return e.name + ' is speaking'
+        }),
+        a('fcfd5a67', function (e) {
+          return e.name + ' is hosting'
+        }),
+        a('f7882829', function (e) {
+          return e.name + ' is co-hosting'
+        }),
+        a('f3839580', 'Listen live in Spaces'),
+        a('a9c049e2', 'Subscribe to unlock new features.'),
+        a('b8e930fe', 'Trending now'),
+        a('ae05f268', 'Trends are unavailable.'),
+        a('b50ea616', 'New to Twitter?'),
+        a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
+        a('fd6473fa', 'Loading recommendations for users to follow'),
+        a('a526aa66', 'Who to follow'),
+        a('ef625010', 'You might like'),
+        a('f5b426c2', 'Loading Users'),
+        a('b7388a56', 'Footer'),
+        a('hdabc3fc', 'Terms of Service'),
+        a('bc6efc72', 'Privacy Policy'),
+        a('h3161192', 'Cookie Policy'),
+        a('a7de64de', 'Ads info'),
+        a('jb0a4c36', 'Blog'),
+        a('cf3709da', 'Status'),
+        a('ce6d095a', 'Careers'),
+        a('e0adec82', 'Brand Resources'),
+        a('a4cf866e', 'Advertising'),
+        a('df1b7550', 'Marketing'),
+        a('b97cd51c', 'Twitter for Business'),
+        a('c6f58084', 'Developers'),
+        a('d83f18d2', 'Directory'),
+        a('cb80300e', 'Skip to home timeline'),
+        a('ea5cd098', 'Skip to trending'),
+        a('c67e3fc2', 'Home timeline'),
+        a('edf7bc2e', 'Trending'),
+        a('i31dcd22', 'Article'),
+        a('b8f0483e', 'Compose new Tweet'),
+        a('a1183238', 'Tweeting within a Community'),
+        a(
+          'da2663f6',
+          'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
+        ),
+        a('c03c4a09', function (e) {
+          return (
+            e.minutes +
+            ' minute' +
+            n(e.minutes, '', 's') +
+            ' and ' +
+            e.seconds +
+            ' second' +
+            n(e.seconds, '', 's') +
+            ' remaining to edit Tweet'
+          )
+        }),
+        a('c1cb2965', function (e) {
+          return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
+        }),
+        a('c55eed72', 'Replying to'),
+        a('caca3102', 'Others in this conversation'),
+        a('c6a6dc2f', function (e) {
+          return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
+        }),
+        a('c20dc654', 'Only 10 people can be tagged.'),
+        a('ae0831ab', function (e) {
+          return '@' + e.screenName + ' can’t be tagged in photos'
+        }),
+        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
+        a('g9677c6e', 'Confirm'),
+        a('c5dd0190', 'Time'),
+        a('edeff232', 'Date'),
+        a('fddf24b4', 'Time zone'),
+        a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
+        a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
+        a('d15af6da', 'Some unsent posts could not be deleted.'),
+        a('a1e1b748', 'Your selected unsent posts were deleted.'),
+        a('ce80fba0', 'Loading unsent posts'),
+        a('i5d56b62', 'Not ready to post just yet? Save it to your drafts or schedule it for later.'),
+        a('aef6257e', 'Deleting unsent posts'),
+        a('dce0bc34', 'Unsent posts'),
+        a('f8464692', 'Scheduled'),
+        a('e8bd47f2', 'Select all'),
+        a('j2b145d4', 'Deselect all'),
+        a('h6c79ac2', 'Discard unsent posts'),
+        a('d0a4a03c', 'This can’t be undone and you’ll lose your unsent posts.'),
+        a('f9f69d32', 'Failed to send'),
+        a('g0ff8c0c', 'The Tweet you’re trying to reply to has been deleted'),
+        a('c5ceafc8', 'Replying'),
+        a('b321d0cc', 'Load images'),
+        a('f842d5d4', 'Discard unsent Tweet'),
+        a('b3a7362e', 'This can’t be undone and you’ll lose your draft Tweet.'),
+        a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
+        a('e7c766ee', 'Location services are disabled'),
+        a('ab68727a', 'You can turn them on in your device’s settings.'),
+        a('ae4057a2', 'Unable to determine location'),
+        a('bf2923a6', 'Check your device’s settings.'),
+        a('d963d1b6', 'No places were found'),
+        a('a893d602', 'Ok'),
+        a('be6cc44e', 'Search locations'),
+        a('d8ef3232', 'Failed to fetch locations'),
+        a('cce30dcc', 'Tag location'),
+        a('b01ed2db', function (e) {
+          return e.distance + ' mi'
+        }),
+        a('i83e29e1', function (e) {
+          return e.distance + ' ft'
+        }),
+        a('d4b7cff7', function (e) {
+          return e.distance + ' km'
+        }),
+        a('b211849f', function (e) {
+          return e.distance + ' m'
+        }),
+        a('ced3c85a', 'Edited'),
+        a('edf9101f', 'Keep reading'),
+        a('b7cff250', function (e) {
+          return '' + e.displayCoins
+        }),
+        a('g62dcfbc', function (e) {
+          return 'Coin' + n(e.count, '', 's')
+        }),
+        a('ff429ac4', 'Your Tweet is being boosted'),
+        a('g6237a1e', 'Promotion running'),
+        a('d6b5949e', 'Promotion paused'),
+        a('ffd9cfe6', 'See more'),
+        a('d172116a', 'Discover more'),
+        a('iac074c4', 'More Tweets'),
+        a('g11ebd34', 'More suggestions'),
+        a('g4a6901a', 'Browse'),
+        a('b1abb17e', 'Browse Tweets'),
+        a('je506a60', 'Change username'),
+        a(
+          'c0fcb08a',
+          'Changing your username will result in your checkmark and affiliations being temporarily removed until they are reviewed.',
+        ),
+        a('d1f6d336', 'Username'),
+        a('de65c756', 'Suggestions'),
+        a('ebeeac1a', 'Change email'),
+        a('dc013356', 'Current'),
+        a('ea28c7ce', 'Loading email settings'),
+        a('f3f66252', 'Add email address'),
+        a('i5107de4', 'Update email address'),
+        a('d19fd42a', 'Resend confirmation email'),
+        a('g4da3246', 'Email sent. Please check your inbox shortly for a confirmation link.'),
+        a('h021352f', function (e) {
+          return '' + e.resendConfirmationLabel
+        }),
+        a('d241169c', 'Current password'),
+        a('a9bc3044', 'New password'),
+        a('b8c03cfc', 'Confirm password'),
+        a('b731d32c', 'Your password has been successfully updated.'),
+        a('d555d7e0', 'New password cannot be the same as your existing password.'),
+        a('fa8af9ae', 'Passwords do not match.'),
+        a('a03f5c73', function (e) {
+          return e.applicationCount + ' application' + n(e.applicationCount, '', 's')
+        }),
+        a('c342a0ad', 'Learn more'),
+        a('cb841d56', 'Change phone'),
+        a('ce37ea44', 'Add phone number'),
+        a('ibaf239e', 'Update phone number'),
+        a('j2636558', 'Delete phone number'),
+        a('e49b16d4', 'Delete phone number?'),
+        a(
+          'i931719e',
+          'This will remove this number from your account, and you will no longer be able to receive notifications or login codes to it.',
+        ),
+        a('j841d1f4', 'Phone removed.'),
+        a('f0977f52', 'Yes, delete'),
+        a(
+          'da23c5b6',
+          'This deletes the phone number from this account, and you’ll no longer receive notifications as text messages from Twitter. Additionally, this turns off two-factor authentication on this account.',
+        ),
+        a(
+          'hf186732',
+          'This deletes the phone number from this account, and you’ll no longer receive notifications as text messages from Twitter. Additionally, this turns off text message as a two-factor authentication method on this account.',
+        ),
+        a('bc262c2e', 'Additional methods'),
+        a('hc1a91da', 'Backup codes'),
+        a(
+          'gee4dc74',
+          'Get single-use backup codes so you can log in to Twitter if you don’t have access to your two-factor authentication options.',
+        ),
+        a('b39c7b14', 'Disable login verification?'),
+        a(
+          'a923fce6',
+          'Turning off two-factor authentication means your account may be more vulnerable to compromise. Are you sure you want to turn it off?',
+        ),
+        a('ff781e0a', 'Turn this off?'),
+        a('c557ac30', 'Are you sure you want to turn off this method?'),
+        a(
+          'd133464a',
+          'Turning this off removes this two-factor authentication method from your account. Are you sure you want to turn it off?',
+        ),
+        a('ee3a7bfa', 'Turn off'),
+        a('aa9139cc', 'Verify login requests'),
+        a(
+          'i0d4f09e',
+          'After you log in, Twitter will send a push notification to the Twitter app that you’ll need to approve to access your account.',
+        ),
+        a('a219e218', 'OK'),
+        a(
+          'e0d79de8',
+          'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
+        ),
+        a('ja6bbfa0', 'Loading login verification data'),
+        a('c2570922', 'Text message'),
+        a(
+          'f3820212',
+          'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
+        ),
+        a('ab61b41a', 'Authentication app'),
+        a(
+          'h4787492',
+          'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
+        ),
+        a('h6d0d89c', 'Security key'),
+        a(
+          'f57be1cc',
+          'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
+        ),
+        a(
+          'e2b81a10',
+          'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
+        ),
+        a('cd195528', 'Add new security key'),
+        a('a1860ee8', 'Temporary password'),
+        a('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
+        a('d8612d9c', 'Turn on Text message or Authentication app first'),
+        a(
+          'e13d4468',
+          'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
+        ),
+        a('c1d96d6a', 'You’ve added the maximum number of keys'),
+        a('gf91694e', 'You’ll need to delete a key before adding another.'),
+        a('j265ddb6', 'Confirm your email'),
+        a(
+          'a136ecac',
+          'To turn on two-factor authentication, you need to associate an email address with this Twitter account and then confirm it, so we know it’s really yours.',
+        ),
+        a(
+          'd7bfde1a',
+          'It looks like your account is currently suspended. You can’t turn on two-factor authentication while your account is suspended.',
+        ),
+        a('f7954a0c', 'Loading security keys data'),
+        a('h69986c2', 'You can rename or delete your security keys.'),
+        a('i5896ba2', 'Add another key'),
+        a('a8ef2b64', 'Unnamed Security Key'),
+        a('d4e220b4', 'Name'),
+        a('g6d0f0b6', 'Manage security key'),
+        a('b894f68a', 'Loading security key data'),
+        a('g2601bb6', 'Rename key'),
+        a('b464b726', 'Delete key'),
+        a('a4101e1b', function (e) {
+          return 'Date added: ' + e.securityKeyAddedDate
+        }),
+        a('i3bb3f78', 'Backup Code'),
+        a('ec6a76e0', 'Generate a new code'),
+        a('f2c3c31c', 'Copy code'),
+        a('e8016b64', 'Loading backup code'),
+        a('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
+        a('f20ff69f', 'Learn more'),
+        a('j2327f80', 'Temporary Password'),
+        a('fbfeaf8e', 'Generate a new password'),
+        a('h4a8bd12', 'Copy password'),
+        a('g247dc1c', 'Loading temporary password'),
+        a('f2d47b4e', 'Use this temporary password (spaces optional) to log into Twitter on apps and devices.'),
+        a('d70fceac', 'This password will expire in one hour.'),
+        a('j924d222', 'Change country'),
+        a('j01f061b', 'Learn more'),
+        a(
+          'b67e1fc0',
+          'Select your preferred language for headlines, buttons, and other text from Twitter on this account. This does not change the language of the content you see in your timeline.',
+        ),
+        a('cef33711', function (e) {
+          return e.languageName + ' (beta)'
+        }),
+        a('b033248c', 'Discoverability'),
+        a(
+          'a904e0ee',
+          'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
+        ),
+        a('ebc41952', 'Let people who have your email address find you on Twitter'),
+        a('f40a6338', 'Let people who have your email address find and connect with you on Twitter.'),
+        a('ac9314aa', 'Let people who have your phone number find you on Twitter'),
+        a('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
+        a('ac77c66c', 'Contacts'),
+        a('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
+        a('b864be7a', 'Remove all contacts'),
+        a('g5fa1090', 'Remove all contacts?'),
+        a(
+          'h0d21912',
+          'This removes any contacts you’ve previously uploaded and turns off syncing with Twitter on all devices. Please be aware that this takes a little time, cannot be undone, and you may still notice some suggestions on Twitter (based on your contacts) in the meantime.',
+        ),
+        a('ca24589e', 'No name'),
+        a('jb9b8121', 'Learn more'),
+        a('fe36fe10', 'Confirm your password'),
+        a('hccd9dbe', 'Please enter your password in order to get this.'),
+        a(
+          'j5267914',
+          'Location labels you’ve added to your Tweets will no longer be visible on Twitter.com, Twitter for iOS, and Twitter for Android. These updates may take some time to go into effect.',
+        ),
+        a(
+          'ed7fa034',
+          'Your location services are not currently enabled on this device. You can turn them on in your device settings.',
+        ),
+        a('h83e5c06', 'Remove all location information attached to your Tweets'),
+        a('f4d69920', 'Remove all location information attached to your Tweets?'),
+        a('g00413fb', 'Learn more'),
+        a('gd758534', 'Allow people to tag you in their photos and receive notifications when they do so.'),
+        a('efa53424', 'Turn on Teams'),
+        a('e698a274', 'Invite anyone to post from this account using the Teams feature.'),
+        a('a2ffab26', 'Allow anyone to add you to their team'),
+        a('h69bd4ee', 'Only allow people you follow to add you to their team'),
+        a('ha8d0662', 'When this setting is on, you can invite anyone to post from this account using Teams.'),
+        a('a90af44e', 'Hide sensitive content'),
+        a('a25e2ec6', 'Remove blocked and muted accounts'),
+        a('b827a058', 'Safe search settings updated.'),
+        a('b27c9852', 'Something went wrong updating your safe search settings.'),
+        a(
+          'c81b9708',
+          'This prevents Tweets with potentially sensitive content from displaying in your search results.',
+        ),
+        a('if05bca6', 'Use this to eliminate search results from accounts you’ve blocked or muted.'),
+        a('bc7fd990', 'Loading trends settings'),
+        a('e2f16650', 'Show content in this location'),
+        a('e5e88f40', 'When this is on, you’ll see what’s happening around you right now.'),
+        a('i4d54b0e', 'Trends for you'),
+        a('df9f03c8', 'Personalize trends based on your location and who you follow.'),
+        a('c6cf5c7e', 'You can personalize trends based on your location and who you follow.'),
+        a('a55db872', 'Personalization'),
+        a('h0b5152e', 'Change location'),
+        a('dfeada5e', 'Explore locations'),
+        a('ac854308', 'Policy'),
+        a('d429c942', 'Trends U.S. Election Policy'),
+        a('ede134f2', 'Select whether videos and GIFs should play automatically on this device.'),
+        a('b3aab6d4', 'Locations'),
+        a('e53e05e4', 'Loading locations'),
+        a('d5c9174f', function (e) {
+          return e.location + ', ' + e.country
+        }),
+        a('f8321d82', 'All'),
+        a('cf67f6d6', 'Autoblocked'),
+        a('eb233866', 'Imported'),
+        a(
+          'd23b0404',
+          'When you block someone, they won’t be able to follow or message you, and you won’t see notifications from them.',
+        ),
+        a('e0a7e9bc', 'Block unwanted accounts'),
+        a('ef731b14', 'Loading blocked accounts'),
+        a('e554ba83', 'Learn more'),
         a('i2b9632e', 'Successfully unblocked.'),
         a('if594962', 'Blocked'),
         a('da814a90', 'When you activate Safety Mode, accounts that Twitter automatically blocks will show up here.'),
@@ -2722,9 +2928,6 @@ function _typeof(obj) {
         a('c7905f89', function (e) {
           return 'Born ' + e.year
         }),
-        a('a753a870', 'Apply'),
-        a('b87ca51a', 'Remove photo'),
-        a('eebff22c', 'Crop photo'),
         a('c119dee8', 'Birth date'),
         a('bbf0afc8', 'Add your date of birth'),
         a('f98d367e', 'Edit date of birth?'),
@@ -2812,7 +3015,6 @@ function _typeof(obj) {
         a('da8c0440', 'Mute from'),
         a('defb4aaa', 'From anyone'),
         a('e7d47b00', 'From people you don’t follow'),
-        a('c67e3fc2', 'Home timeline'),
         a('d9d6e10e', 'Duration'),
         a('gfa5008e', 'Extend mute time'),
         a('c5595dfe', 'Change mute time'),
@@ -3266,7 +3468,6 @@ function _typeof(obj) {
         a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
         a('a4ed9072', 'Add an introduction...'),
         a('af5b098e', 'Subscriptions perks'),
-        a('e36287c6', 'Description'),
         a('gf32cca2', 'Describe the perks you’ll offer'),
         a(
           'j8ba99b4',
@@ -3409,8 +3610,8 @@ function _typeof(obj) {
         a('df057690', 'Choose what your Subscribers pay'),
         a('g5923869', function (e) {
           return e.price + ' per month'
-        }),
-        a('f025ab3a', 'Build a bigger, broader base'),
+        })
+      a('f025ab3a', 'Build a bigger, broader base'),
         a('c962df0e', 'Infrequent posting and interacting with Subscribers'),
         a('ib075804', 'Expand your base and maximize revenue'),
         a('fc04f3a6', 'Moderate posting and interacting with Subscribers'),
@@ -3556,19 +3757,6 @@ function _typeof(obj) {
           'Check out other places for helpful information to learn more about Twitter products and services.',
         ),
         a('c0398892', 'Release notes'),
-        a('hdabc3fc', 'Terms of Service'),
-        a('bc6efc72', 'Privacy Policy'),
-        a('h3161192', 'Cookie Policy'),
-        a('a7de64de', 'Ads info'),
-        a('jb0a4c36', 'Blog'),
-        a('cf3709da', 'Status'),
-        a('ce6d095a', 'Careers'),
-        a('e0adec82', 'Brand Resources'),
-        a('a4cf866e', 'Advertising'),
-        a('df1b7550', 'Marketing'),
-        a('b97cd51c', 'Twitter for Business'),
-        a('c6f58084', 'Developers'),
-        a('d83f18d2', 'Directory'),
         a(
           'a5208fae',
           'Manage aspects of your Twitter experience such as limiting color contrast and motion. These settings affect all the Twitter accounts on this browser.',
@@ -3595,11 +3783,11 @@ function _typeof(obj) {
         a('idca4742', 'See your account information like your phone number and email address.'),
         a('b6ded35e', 'Change your password at any time.'),
         a('cce24bf4', 'Get insights into the type of information stored for your account.'),
-        a('e6afdb48', 'TweetDeck version'),
-        a('e8bada1e', 'Switch back to the previous version of TweetDeck.'),
+        a('c5105d48', 'XPro version'),
+        a('dd40f24c', 'Switch back to the previous version of XPro.'),
         a('i203df96', 'Find out how you can deactivate your account.'),
-        a('j0b9ec86', 'TweetDeck Teams moved'),
-        a('eaf134de', 'We moved the Teams feature to Twitter Delegate in your security and account access settings.'),
+        a('eb073638', 'Teams has moved'),
+        a('ec95b588', 'We moved the Teams feature to Delegate in your security and account access settings.'),
         a('iacafa08', 'Go to security settings'),
         a('f70cd5ee', 'Phone'),
         a('ib6f1694', 'Account creation'),
@@ -3624,8 +3812,8 @@ function _typeof(obj) {
         a(
           'ed8c8d2e',
           'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
-        )
-      a('b989e1fe', 'Do I need to label my automated accounts?'),
+        ),
+        a('b989e1fe', 'Do I need to label my automated accounts?'),
         a('i2d599aa', 'How do I label my automated account?'),
         a('gd5bed72', 'Create a managing account'),
         a('g6d44432', 'A managing account is the human-run account responsible for the automated account.'),
@@ -3876,8 +4064,6 @@ function _typeof(obj) {
         a('b518221e', 'Open image'),
         a('eeaa9f90', 'Open video'),
         a('g2b43664', 'Open GIF'),
-        a('fe09fde2', 'Change settings'),
-        a('c55eed72', 'Replying to'),
         a('d99de549', function (e) {
           return 'Replying to ' + e.name
         }),
@@ -3926,7 +4112,6 @@ function _typeof(obj) {
         a('a763d33f', function (e) {
           return 'Seen by ' + e.count + ' pe' + n(e.count, 'rson', 'ople')
         }),
-        a('f5b426c2', 'Loading Users'),
         a('d84b485e', 'You followed this account'),
         a('be0c83d8', 'You accepted the request'),
         a('bcc13060', 'Early access'),
@@ -4100,9 +4285,6 @@ function _typeof(obj) {
         a('ee54f477', 'Learn more'),
         a('a0b4541c', 'Something went wrong - but don’t fret, it’s not your fault'),
         a('d35c9eec', 'Account Analytics'),
-        a('cb80300e', 'Skip to home timeline'),
-        a('ea5cd098', 'Skip to trending'),
-        a('edf7bc2e', 'Trending'),
         a('ca5f7162', 'Times your Tweets were seen on Twitter'),
         a('e5fe61e0', 'Impressions'),
         a('e623137c', 'Engagement rate'),
@@ -4124,8 +4306,6 @@ function _typeof(obj) {
         a('g01559c6', 'Metrics shown for the last 7 days'),
         a('j8ee9ee4', 'Detailed analytics on analytics.twitter.com'),
         a('gd6bc7c6', 'Access your Tweet Analytics'),
-        a('b360ac7c', 'Section navigation'),
-        a('adc81042', 'Section details'),
         a('f88e624e', 'Conversation updated'),
         a('e15e5637', function (e) {
           return 'Last ' + n(e.count, 'hour', e.count + ' hours')
@@ -4155,50 +4335,12 @@ function _typeof(obj) {
         a('gaa01f2c', 'Twitter Spaces'),
         a('g4cc1de2', 'Live Twitter Spaces'),
         a('fec3c1e0', 'Where live audio conversations happen'),
-        a('a78ad3f6', 'Tweeps only Space'),
-        a('d08666ba', 'Private Space'),
-        a('eadb5a46', 'Be the first to join'),
-        a('ia3c0ab7', function (e) {
-          return e.hostName + '’s Space'
-        }),
-        a('hd552761', function (e) {
-          return 'Hosted by ' + e.hostName
-        }),
-        a('c3ea19a5', function (e) {
-          return e.index + ' of ' + e.total
-        }),
-        a('a5235305', function (e) {
-          return e.listOfPeople + ' joined'
-        }),
-        a('df9f8243', function (e) {
-          return e.name + ' is listening'
-        }),
-        a('g2445c2f', function (e) {
-          return e.name + ' is speaking'
-        }),
-        a('fcfd5a67', function (e) {
-          return e.name + ' is hosting'
-        }),
-        a('f7882829', function (e) {
-          return e.name + ' is co-hosting'
-        }),
-        a('f3839580', 'Listen live in Spaces'),
-        a('a9c049e2', 'Subscribe to unlock new features.'),
-        a('b8e930fe', 'Trending now'),
-        a('ae05f268', 'Trends are unavailable.'),
-        a('b50ea616', 'New to Twitter?'),
-        a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
-        a('fd6473fa', 'Loading recommendations for users to follow'),
-        a('a526aa66', 'Who to follow'),
-        a('ef625010', 'You might like'),
-        a('b7388a56', 'Footer'),
         a('ce447fcb', function (e) {
           return e.count + ' listener' + n(e.count, '', 's')
         }),
         a('ef7da97f', function (e) {
           return e.count + ' listening'
         }),
-        a('f8464692', 'Scheduled'),
         a('a065e7e7', function (e) {
           return 'Happening now: ' + e.spaceTitle
         }),
@@ -4692,8 +4834,8 @@ function _typeof(obj) {
         a(
           'b6203a2e',
           'If you think a Tweet is potentially misleading, write a note that adds helpful context to people who may encounter it.',
-        ),
-        a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
+        )
+      a('ec30e9ac', 'Other contributors will rate the helpfulness of your note'),
         a('c8bd0338', 'If it reaches a status of Helpful, it will be shown on Twitter'),
         a(
           'ife4baaa',
@@ -4777,8 +4919,8 @@ function _typeof(obj) {
         a('g72e2a58', 'A few alerts per week'),
         a('idd249e0', 'Sometimes'),
         a('if2e01ee', 'A few alerts per month'),
-        a('ac52a8de', 'There was an error saving your notification settings, please try again.'),
-        a('fa54a75e', 'Your notification settings have been saved.'),
+        a('fdaeaab8', 'There was an error saving your settings, please try again.'),
+        a('db4e443a', 'Your settings have been saved.'),
         a('dc11636c', 'Languages you speak'),
         a('f40c7b32', 'Show Community Notes in mobile app navigation'),
         a(
@@ -4825,21 +4967,14 @@ function _typeof(obj) {
         a('h92fe1be', 'Unfortunately, Community Notes is not available to you at this time.'),
         a('f0dc1434', 'Community Notes is currently only available in the U.S.'),
         a('f8fc0b48', 'Create a Folder'),
-        a('adad5408', 'New folder'),
-        a('be329aac', 'Bookmark Tweets to save them for later'),
-        a('j0a47c9c', 'Need more time to write a clever response or just want to save a Tweet for later? Bookmark it!'),
-        a('j45c642e', 'Folders aren’t loading right now'),
         a('c8c1fa6e', 'Clear all Bookmarks'),
         a('jf748f40', 'Clear all Bookmarks?'),
         a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
-        a('cd343e16', 'Save Tweets for later'),
-        a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
-        a('ee8589ae', 'Compose a Tweet'),
         a('f075b0e8', 'Edit Folder'),
-        a('beba2a0e', 'Create a new Bookmark Folder')
-      a('e41c9b4f', function (e) {
-        return 'Saved to ' + e.bookmarkFolderName
-      }),
+        a('beba2a0e', 'Create a new Bookmark Folder'),
+        a('e41c9b4f', function (e) {
+          return 'Saved to ' + e.bookmarkFolderName
+        }),
         a('h18f86a4', 'Delete Folder'),
         a('f4ea967a', 'Folder has been deleted'),
         a('b670aa62', 'Folder Name'),
@@ -5128,7 +5263,6 @@ function _typeof(obj) {
         a('cb59a0fe', 'Deny'),
         a('dffb0774', 'Nothing to review right now'),
         a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-        a('f1d9930c', 'Hide'),
         a('fa524058', 'Keep'),
         a('f0306108', 'Report Tweet to Twitter'),
         a('ff0f742a', function (e) {
@@ -5213,143 +5347,9 @@ function _typeof(obj) {
         a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
         a('hd436778', 'Loading Community Hashtag Tweets'),
         a('feeaae18', 'Community Hashtag Tweets'),
-        a('jd2f69a8', 'Paste Tweet URL'),
-        a('d2ae33ce', 'Invalid Tweet URL'),
-        a('ac308436', 'Tweet not found'),
-        a('ac78ac54', 'Tweet already added to this Moment'),
-        a('a50ba822', 'Search for GIFs'),
-        a('c6f5ac52', 'Categories — GIF Search'),
-        a('ab468379', function (e) {
-          return e.query + ' — GIF Search'
-        }),
-        a('j7fc4f9c', 'Auto-play GIFs'),
-        a('a66b7760', 'Unlabeled GIF'),
-        a('a723aefa', 'No GIFs found'),
-        a('a6ecfa0a', 'Try searching for something else instead.'),
-        a('f5ff0d6f', function (e) {
-          return e.category + ' — GIF Search'
-        }),
-        a('ce374ee0', '@TwitterWrite'),
-        a('fe430958', 'Help Center'),
-        a('a7da0adb', function (e) {
-          return e.count + ' word' + n(e.count, '', 's')
-        }),
-        a('aea1d455', function (e) {
-          return e.count + ' minute' + n(e.count, '', 's')
-        }),
-        a('ce1d02b4', 'Share via Tweet…'),
-        a('e070024a', 'Edit photo'),
-        a('i7d24b36', 'Next image'),
-        a('f96a38a2', 'Previous image'),
-        a('hac7c548', 'Crop media'),
-        a('e3dbfba4', 'Edit image description'),
-        a('dd4a83a6', 'Content warning'),
-        a('ffe9ec3a', 'Add descriptions'),
-        a(
-          'j063b262',
-          'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
-        ),
-        a('e57144f0', 'Sure'),
-        a('feabf2a0', 'Alt text'),
-        a('cf565d08', 'What is alt text?'),
-        a('j9cf5950', 'Put a content warning on this Tweet'),
-        a(
-          'd69a782e',
-          'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
-        ),
-        a('faf745fa', 'Nudity'),
-        a('h2437f26', 'Sensitive'),
-        a('g5e1668a', 'Able to be downloaded'),
-        a('fdc6a52a', 'When enabled, your video will be available to be downloaded.'),
-        a('cd5cba97', function (e) {
-          return 'Content warning: ' + e.formattedWarningList
-        }),
-        a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
-        a('a0e81a2e', 'Show'),
-        a('c91f83ae', 'Edit video'),
-        a('icbec4ae', 'Upload captions'),
-        a('e7048e74', 'Trim media'),
-        a(
-          'j435467e',
-          'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
-        ),
-        a('a6b267fa', 'Remove captions'),
-        a('i31dcd22', 'Article'),
-        a('b8f0483e', 'Compose new Tweet'),
-        a('a1183238', 'Tweeting within a Community'),
-        a(
-          'da2663f6',
-          'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
-        ),
-        a('c03c4a09', function (e) {
-          return (
-            e.minutes +
-            ' minute' +
-            n(e.minutes, '', 's') +
-            ' and ' +
-            e.seconds +
-            ' second' +
-            n(e.seconds, '', 's') +
-            ' remaining to edit Tweet'
-          )
-        }),
-        a('c1cb2965', function (e) {
-          return e.minutes + ' minute' + n(e.minutes, '', 's') + ' remaining to edit Tweet'
-        }),
-        a('caca3102', 'Others in this conversation'),
-        a('c6a6dc2f', function (e) {
-          return 'You’ve blocked @' + e.screenName + ', so they won’t get notified when you reply.'
-        }),
-        a('c20dc654', 'Only 10 people can be tagged.'),
-        a('ae0831ab', function (e) {
-          return '@' + e.screenName + ' can’t be tagged in photos'
-        }),
-        a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
-        a('c5dd0190', 'Time'),
-        a('edeff232', 'Date'),
-        a('fddf24b4', 'Time zone'),
-        a('a0368088', 'You can’t schedule a Tweet to send in the past.'),
-        a('h9833726', 'You can’t schedule a Tweet more than 18 months in the future.'),
-        a('c5b77cf0', 'Some unsent Tweets could not be deleted.'),
-        a('i26eed06', 'Your selected unsent Tweets were deleted.'),
-        a('db99d356', 'Loading unsent Tweets'),
-        a('g32f19e4', 'Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.'),
-        a('g700c084', 'Deleting unsent Tweets'),
-        a('a133d13e', 'Unsent Tweets'),
-        a('e8bd47f2', 'Select all'),
-        a('j2b145d4', 'Deselect all'),
-        a('df9f719a', 'Discard unsent Tweets'),
-        a('hb0c8242', 'This can’t be undone and you’ll lose your unsent Tweets.'),
-        a('f9f69d32', 'Failed to send'),
-        a('g0ff8c0c', 'The Tweet you’re trying to reply to has been deleted'),
-        a('c5ceafc8', 'Replying'),
-        a('b321d0cc', 'Load images'),
-        a('f842d5d4', 'Discard unsent Tweet'),
-        a('b3a7362e', 'This can’t be undone and you’ll lose your draft Tweet.'),
-        a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
-        a('e7c766ee', 'Location services are disabled'),
-        a('ab68727a', 'You can turn them on in your device’s settings.'),
-        a('ae4057a2', 'Unable to determine location'),
-        a('bf2923a6', 'Check your device’s settings.'),
-        a('d963d1b6', 'No places were found'),
-        a('a893d602', 'Ok'),
-        a('d8ef3232', 'Failed to fetch locations'),
-        a('cce30dcc', 'Tag location'),
-        a('b01ed2db', function (e) {
-          return e.distance + ' mi'
-        }),
-        a('i83e29e1', function (e) {
-          return e.distance + ' ft'
-        }),
-        a('d4b7cff7', function (e) {
-          return e.distance + ' km'
-        }),
-        a('b211849f', function (e) {
-          return e.distance + ' m'
-        }),
         a('cfe877ca', 'Choose who to follow'),
         a('j231d352', 'Follow all'),
-        a('j7f4bf18', 'Go to Twitter Delegate Settings'),
+        a('f5c41e22', 'Go to Delegate Settings'),
         a('b9226ec1', 'Signed in as '),
         a('f47b48f6', 'user'),
         a('b2ca74aa', 'You’re about to switch to a delegate account'),
@@ -5366,8 +5366,8 @@ function _typeof(obj) {
           'Remember that this account does not belong to you. As a contributor, you can send Direct Messages, publish Tweets, and create Lists — as well as view them.',
         ),
         a('e6718a62', 'Only the account owner can use this feature'),
-        a('c25e5c43', 'send us feedback.'),
-        a('bd762cfb', 'send us feedback.'),
+        a('ba411b6f', 'send us feedback.'),
+        a('f01ee14b', 'send us feedback.'),
         a('dbc85148', 'Select a message'),
         a('a073658c', 'Choose from your existing conversations, start a new one, or just keep swimming.'),
         a('f325afc4', 'Compose a DM'),
@@ -6016,11 +6016,7 @@ function _typeof(obj) {
         a('f68f0fc8', 'Twitter Topics'),
         a('ieb6f5c1', function (e) {
           return e.topicName + ' | Twitter Topics'
-        }),
-        a(
-          'd848d612',
-          'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
-        )
+        })
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6061,15 +6057,19 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('j70f0f35', function (e) {
-        return (
-          'Follow the ' +
-          e.topicName +
-          ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
-          e.topicName +
-          ' on Twitter.'
-        )
-      }),
+      a(
+        'd848d612',
+        'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
+      ),
+        a('j70f0f35', function (e) {
+          return (
+            'Follow the ' +
+            e.topicName +
+            ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+            e.topicName +
+            ' on Twitter.'
+          )
+        }),
         a('ad964e30', 'Edit your Twitter Circle'),
         a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
@@ -7278,14 +7278,14 @@ function _typeof(obj) {
         a('c87babee', 'And more...'),
         a('f1990aa4', 'Organize your columns with Decks'),
         a(
-          'jf333640',
-          'Imagine having multiple desktops on TweetDeck. Tune out the noise and only focus on the topics and tools you need when you need them.',
+          'e3571a76',
+          'Imagine having multiple desktops on XPro. Tune out the noise and only focus on the topics and tools you need when you need them.',
         ),
         a('fb5ac13e', 'Move a column'),
         a('bd545b7e', 'Click on these dots to drag and drop a column anywhere on your Deck.'),
         a('a98513b6', 'Customize columns'),
         a('c8759e44', 'Rollover the top of a column for options like:'),
-        a('if0ce720', 'Order Tweets by top or latest'),
+        a('a93e96c8', 'Order posts by top or latest'),
         a('df300378', 'Change column size'),
         a('aa263910', 'Use advanced search tools'),
         a('ab3915aa', 'Tips and settings'),
@@ -7315,9 +7315,9 @@ function _typeof(obj) {
         a('aac99f18', 'Compose Tweet'),
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
-        a('b8ed89e4', 'Leave TweetDeck Preview'),
+        a('ia483e16', 'Leave XPro'),
         a('b452e6c2', 'How have you been getting on?'),
-        a('ac1551ae', 'Thank you for using TweetDeck Preview, we’d love to hear how you have been finding it so far.'),
+        a('cfe7bbec', 'Thank you for using XPro, we’d love to hear how you have been finding it so far.'),
         a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
         a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
@@ -7327,8 +7327,8 @@ function _typeof(obj) {
           'je0526a0',
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
-        a('f4e03c55', 'Go to legacy TweetDeck'),
-        a('bf50d0cc', 'TweetDeck Preview Terms'),
+        a('hb962144', 'Go to legacy XPro'),
+        a('g1bf5a4e', 'XPro Terms'),
         a('cb82860a', 'Column not found'),
         a('icbecd02', 'Add Column'),
         a('fdf1a2c6', 'Add Deck'),
@@ -7371,9 +7371,9 @@ function _typeof(obj) {
         a('c6be8432', 'Level of engagement'),
         a('c8e6a1c8', 'Show original Tweets'),
         a('icc8568a', 'Show Retweets'),
-        a('e95e42b2', 'Show Quote Tweets'),
-        a('g9580526', 'Show Replies')
-      a('i73cbb5c', 'You can only add one List to a search. Only the first List will apply to this search.'),
+        a('e95e42b2', 'Show Quote Tweets')
+      a('g9580526', 'Show Replies'),
+        a('i73cbb5c', 'You can only add one List to a search. Only the first List will apply to this search.'),
         a('c765315d', function (e) {
           return 'Enter ' + e.listHandleListNameFormat + ' or List ID'
         }),
@@ -7545,8 +7545,8 @@ function _typeof(obj) {
         a('b158400a', 'Skip this step'),
         a('h15afbce', 'Let’s get you setup'),
         a(
-          'f7b714bc',
-          'Customize your TweetDeck experience: choose the column width, color, text and media size that is right for you.',
+          'a63b93cc',
+          'Customize your XPro experience: choose the column width, color, text and media size that is right for you.',
         ),
         a('e28eb008', 'Open display settings'),
         a('dc8b86e0', 'Now let’s add your columns'),
@@ -7559,7 +7559,7 @@ function _typeof(obj) {
         a('hfd5ca12', 'Hmm... we couldn’t import your columns'),
         a('b855852a', 'Only Search, List and Profile columns can be imported. Add a home column instead.'),
         a('dc6c806e', 'Your columns couldn’t be imported'),
-        a('j7950fb8', 'TweetDeck is a convenient way to view multiple timeline columns in one easy interface.'),
+        a('i5431306', 'XPro is a convenient way to view multiple timeline columns in one easy interface.'),
         a('i8912d28', 'Lets add some columns...'),
         a('ce0c0f34', 'Now let’s have a look around'),
         a('h36d2aa2', 'Learn some handy tips to get you started.'),
@@ -7626,13 +7626,13 @@ function _typeof(obj) {
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
-        a('a79ba0aa', 'Leave the new TweetDeck?'),
-        a('c259ac7e', 'Exit to switch back to the previous version of TweetDeck. You can come back later.'),
+        a('e1e517c2', 'Leave XPro?'),
+        a('a810a9b2', 'Exit to switch back to the previous version of XPro. You can come back later.'),
         a('c09eafdc', 'Yes, exit'),
         a('dcd40a08', 'Cancel and stay'),
-        a('e5988702', 'Exit and opt-out of the new TweetDeck'),
-        a('d62779e6', 'Your data associated with the new TweetDeck will be deleted.'),
-        a('f9d3586e', 'This won’t impact your Twitter profile and previous TweetDeck data.'),
+        a('ed1b081c', 'Exit and opt-out of the new XPro'),
+        a('c4ad0376', 'Your data associated with the new XPro will be deleted.'),
+        a('ecc132a6', 'This won’t impact your X profile and previous XPro data.'),
         a('i6fae1b4', 'Exit and delete'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
@@ -7649,6 +7649,7 @@ function _typeof(obj) {
           'f1a9e3a2',
           'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
         ),
+        a('e6bbb34e', 'XPro is a customizable dashboard for staying up to date with what’s happening now.'),
         a('ed617674', '360'),
         a('e23b20a0', 'Cancel'),
         a('a620fcf0', 'Loading image'),
@@ -9272,77 +9273,6 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'a20c0721',
-              get: function get() {
-                return ['Last edited: ']
-              },
-            },
-            {
-              key: 'a9ce2dd5',
-              get: function get() {
-                return ['', ' for help and how-to’s.']
-              },
-            },
-            {
-              key: 'c5064c6f',
-              get: function get() {
-                return ['', ' ']
-              },
-            },
-            {
-              key: 'f3c4e2c5',
-              get: function get() {
-                return ['Your new email ' + this.props.unverifiedEmail + ' has not been confirmed. ']
-              },
-            },
-            {
-              key: 'hc585ff1',
-              get: function get() {
-                return [
-                  'Changing your password will log you out of all your active Twitter sessions except the one you’re using at this time. The ',
-                  ' with access to your account won’t be affected. ',
-                ]
-              },
-            },
-            {
-              key: 'a4455c05',
-              get: function get() {
-                return [
-                  'Write it down, or take a screenshot, and keep it some place safe. This code can only be used once. ',
-                ]
-              },
-            },
-            {
-              key: 'e12a6841',
-              get: function get() {
-                return [
-                  'This is the primary country associated with your account. Your country helps us to customize your Twitter experience. ',
-                ]
-              },
-            },
-            {
-              key: 'ec152667',
-              get: function get() {
-                return [
-                  'These are the contacts that you have imported from your mobile devices. This information is used to personalize your experience on Twitter, such as suggesting accounts to follow. You can remove any contacts you’ve previously uploaded and turn off syncing with Twitter on all devices. Please be aware that this takes a little time. ',
-                ]
-              },
-            },
-            {
-              key: 'ia4557bf',
-              get: function get() {
-                return ['If enabled, you will be able to attach location information to your Tweets. ']
-              },
-            },
-            {
-              key: 'ab3bf5a7',
-              get: function get() {
-                return [
-                  'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them. ',
-                ]
-              },
-            },
-            {
               key: 'c4d3d079',
               get: function get() {
                 return ['By signing up, you agree to the ', ' and ', ', including ']
@@ -9606,6 +9536,117 @@ function _typeof(obj) {
               key: 'ba96d5ed',
               get: function get() {
                 return ['By clicking Promote Tweet you’re agreeing to the ']
+              },
+            },
+            {
+              key: 'h9fba3eb',
+              get: function get() {
+                return [
+                  'Notes aren’t available to read in your region yet. Follow ',
+                  ' for announcements and updates about Notes, or read more in our ',
+                  '.',
+                ]
+              },
+            },
+            {
+              key: 'dd5806bb',
+              get: function get() {
+                return ['The following media includes potentially sensitive content. ']
+              },
+            },
+            {
+              key: 'd80a7547',
+              get: function get() {
+                return ['', ' is hosting']
+              },
+            },
+            {
+              key: 'j7293d6b',
+              get: function get() {
+                return ['', ' is co-hosting']
+              },
+            },
+            {
+              key: 'df79977f',
+              get: function get() {
+                return ['', ' is speaking']
+              },
+            },
+            {
+              key: 'ad960f39',
+              get: function get() {
+                return ['', ' is listening']
+              },
+            },
+            {
+              key: 'a20c0721',
+              get: function get() {
+                return ['Last edited: ']
+              },
+            },
+            {
+              key: 'a9ce2dd5',
+              get: function get() {
+                return ['', ' for help and how-to’s.']
+              },
+            },
+            {
+              key: 'c5064c6f',
+              get: function get() {
+                return ['', ' ']
+              },
+            },
+            {
+              key: 'f3c4e2c5',
+              get: function get() {
+                return ['Your new email ' + this.props.unverifiedEmail + ' has not been confirmed. ']
+              },
+            },
+            {
+              key: 'hc585ff1',
+              get: function get() {
+                return [
+                  'Changing your password will log you out of all your active Twitter sessions except the one you’re using at this time. The ',
+                  ' with access to your account won’t be affected. ',
+                ]
+              },
+            },
+            {
+              key: 'a4455c05',
+              get: function get() {
+                return [
+                  'Write it down, or take a screenshot, and keep it some place safe. This code can only be used once. ',
+                ]
+              },
+            },
+            {
+              key: 'e12a6841',
+              get: function get() {
+                return [
+                  'This is the primary country associated with your account. Your country helps us to customize your Twitter experience. ',
+                ]
+              },
+            },
+            {
+              key: 'ec152667',
+              get: function get() {
+                return [
+                  'These are the contacts that you have imported from your mobile devices. This information is used to personalize your experience on Twitter, such as suggesting accounts to follow. You can remove any contacts you’ve previously uploaded and turn off syncing with Twitter on all devices. Please be aware that this takes a little time. ',
+                ]
+              },
+            },
+            {
+              key: 'ia4557bf',
+              get: function get() {
+                return ['If enabled, you will be able to attach location information to your Tweets. ']
+              },
+            },
+            {
+              key: 'ab3bf5a7',
+              get: function get() {
+                return [
+                  'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them. ',
+                ]
               },
             },
             {
@@ -10009,12 +10050,6 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'dd5806bb',
-              get: function get() {
-                return ['The following media includes potentially sensitive content. ']
-              },
-            },
-            {
               key: 'j3c7dd33',
               get: function get() {
                 return ['This Tweet might include sensitive content. ']
@@ -10377,30 +10412,6 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'd80a7547',
-              get: function get() {
-                return ['', ' is hosting']
-              },
-            },
-            {
-              key: 'j7293d6b',
-              get: function get() {
-                return ['', ' is co-hosting']
-              },
-            },
-            {
-              key: 'df79977f',
-              get: function get() {
-                return ['', ' is speaking']
-              },
-            },
-            {
-              key: 'ad960f39',
-              get: function get() {
-                return ['', ' is listening']
-              },
-            },
-            {
               key: 'fafd5f6f',
               get: function get() {
                 return [
@@ -10664,34 +10675,24 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'h9fba3eb',
-              get: function get() {
-                return [
-                  'Notes aren’t available to read in your region yet. Follow ',
-                  ' for announcements and updates about Notes, or read more in our ',
-                  '.',
-                ]
-              },
-            },
-            {
               key: 'a9ec3729',
               get: function get() {
                 return ['', ' ']
               },
             },
             {
-              key: 'd8abe5eb',
+              key: 'g0aa3be7',
               get: function get() {
                 return [
-                  'To use this feature, switch to an account that you own.\n\nAs a contributor, you can send Direct Messages, publish Tweets, and create Lists — as well as view them.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
+                  'To use this feature, switch to an account that you own.\n\nAs a contributor, you can send Direct Messages, publish posts, and create Lists — as well as view them.\n\nWe’re always looking for ways to improve Delegate. Feel free to ',
                 ]
               },
             },
             {
-              key: 'd45b673f',
+              key: 'g29b68f9',
               get: function get() {
                 return [
-                  'To use this feature, switch to an account that you own.\n\nAs an admin, you can send Direct Messages, publish Tweets, and create Lists — as well as view them. You can also invite or remove contributors to the account and view Tweet analytics.\n\nWe’re always looking for ways to improve Twitter Delegate. Feel free to ',
+                  'To use this feature, switch to an account that you own.\n\nAs an admin, you can send Direct Messages, publish posts, and create Lists — as well as view them. You can also invite or remove contributors to the account and view post analytics.\n\nWe’re always looking for ways to improve Delegate. Feel free to ',
                 ]
               },
             },
@@ -11170,15 +11171,9 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'bd77a54d',
+              key: 'e3a3baef',
               get: function get() {
-                return ['', ' Preview']
-              },
-            },
-            {
-              key: 'f365eebb',
-              get: function get() {
-                return ['Looking for the legacy version of TweetDeck? ']
+                return ['Looking for the legacy version of XPro? ']
               },
             },
             {
@@ -13591,10 +13586,6 @@ function _typeof(obj) {
             },
           },
         )),
-        (b.a2011541116 = w(
-          { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
-          { pattern: 'M/d/yy', timeSeparator: ':' },
-        )),
         (b.a596533135 = w(
           { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
           {
@@ -13620,6 +13611,10 @@ function _typeof(obj) {
             },
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
+        )),
+        (b.a2011541116 = w(
+          { 1: b('en').numberFormatter({ raw: '0' }), 2: b('en').numberFormatter({ raw: '00' }) },
+          { pattern: 'M/d/yy', timeSeparator: ':' },
         )),
         (b.b696469024 = w({ 1: b('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
         (b.b2072821078 = w(
@@ -13808,8 +13803,8 @@ function _typeof(obj) {
         (b.b498196529 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
         (b.a1441832606 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
         (b.a218160295 = g(b('en').dateToPartsFormatter({ date: 'long' }))),
-        (b.b93641787 = g(b('en').dateToPartsFormatter({ date: 'short' }))),
         (b.b1883516954 = g(b('en').dateToPartsFormatter({ skeleton: 'MMMdhm' }))),
+        (b.b93641787 = g(b('en').dateToPartsFormatter({ date: 'short' }))),
         (b.a1493315369 = g(b('en').dateToPartsFormatter({ skeleton: 'y' }))),
         (b.a1830739137 = g(b('en').dateToPartsFormatter({ datetime: 'full' }))),
         (b.b1665844787 = g(b('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
@@ -13949,9 +13944,9 @@ function _typeof(obj) {
         a('aa2aa1a1', b.b498196529),
         a('da44942d', b.a1441832606),
         a('ba2e82a1', b.a218160295),
-        a('a9f397f3', b.b93641787),
         a('fc209bb7', b.b1883516954),
         a('cf8abf59', b.b1158699306),
+        a('a9f397f3', b.b93641787),
         a('d7d71245', b.a1493315369),
         a('g8d1b99b', b.a1830739137),
         a('bfbc051d', b.b1665844787),
