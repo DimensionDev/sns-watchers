@@ -2525,6 +2525,8 @@ function _typeof(obj) {
         }),
         a('f3839580', 'Listen live in Spaces'),
         a('a9c049e2', 'Subscribe to unlock new features.'),
+        a('e81364b6', 'Boost your business'),
+        a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
         a('b8e930fe', 'Trending now'),
         a('ae05f268', 'Trends are unavailable.'),
         a('b50ea616', 'New to Twitter?'),
@@ -3606,13 +3608,13 @@ function _typeof(obj) {
         a('c5625f84', 'Describe your Subscription perks'),
         a('c7289544', 'Set a Subscription price'),
         a('aaf68c58', 'Confirm your payout details'),
-        a('b8a69fa0', 'Subscriptions Terms'),
-        a('ad4a92a2', 'Badge'),
-        a('d5aa8de0', 'Give your Subscribers badges')
-      a(
-        'j0bbda92',
-        'Nothing to change or edit here. All of your Subscribers will automatically get a public badge when they Subscribe.',
-      ),
+        a('b8a69fa0', 'Subscriptions Terms')
+      a('ad4a92a2', 'Badge'),
+        a('d5aa8de0', 'Give your Subscribers badges'),
+        a(
+          'j0bbda92',
+          'Nothing to change or edit here. All of your Subscribers will automatically get a public badge when they Subscribe.',
+        ),
         a('e18b7a72', 'Review'),
         a('be76dc34', 'Add description'),
         a('ef5406e4', 'Add introduction'),
@@ -4831,16 +4833,16 @@ function _typeof(obj) {
         ),
         a('b03274d2', 'These notes get shown on Twitter, adding context to Tweets and helping keep people informed.'),
         a('iab44364', 'Your notes that reached the status of Not Helpful'),
-        a('d8c90438', 'Notes that reached the status of Not Helpful'),
-        a(
-          'accaa48e',
-          'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
-        ),
+        a('d8c90438', 'Notes that reached the status of Not Helpful')
+      a(
+        'accaa48e',
+        'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings. You can see these notes and the feedback they’ve received on your profile.\nNote statuses can change as more people rate them.',
+      ),
         a(
           'fa2156f6',
           'These notes have been rated Not Helpful by enough contributors, including those who sometimes disagree in their past ratings.\nNote statuses can change as more people rate them.',
-        )
-      a('d004c768', 'Notes that need more ratings'),
+        ),
+        a('d004c768', 'Notes that need more ratings'),
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('d68a370c', 'Last update: '),
         a('b9793c9a', 'You haven’t written any notes yet'),
@@ -6015,9 +6017,7 @@ function _typeof(obj) {
         a('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
         a('e95b9448', 'General'),
         a('f458a3b2', 'Privacy'),
-        a('bdc6f5b8', 'Your account'),
-        a('f24266fe', 'Earlybird Settings'),
-        a('df483b48', 'Feature switches')
+        a('bdc6f5b8', 'Your account')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6058,7 +6058,9 @@ function _typeof(obj) {
           c(e, t)
         )
       }
-      a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
+      a('f24266fe', 'Earlybird Settings'),
+        a('df483b48', 'Feature switches'),
+        a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
         a('g931a6e5', function (e) {
           return 'You’re following ' + e.topic
@@ -7224,7 +7226,6 @@ function _typeof(obj) {
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a('e81364b6', 'Boost your business'),
         a('h4bc6e5c', 'Get 2x organic reach with Verified Organizations. Sign up to make your posts go further.'),
         a('d470c67b', 'Learn more'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
@@ -7384,9 +7385,9 @@ function _typeof(obj) {
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
         a('af6a4368', 'Rename this conversation and see who’s in it.'),
-        a('cdeac5ee', 'Direct Message settings'),
-        a('fda7ee26', 'Manage who can message you.')
-      a('c4ec8620', 'Include'),
+        a('cdeac5ee', 'Direct Message settings')
+      a('fda7ee26', 'Manage who can message you.'),
+        a('c4ec8620', 'Include'),
         a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
         a('df7c4428', 'Likes, Replies & Retweets'),
