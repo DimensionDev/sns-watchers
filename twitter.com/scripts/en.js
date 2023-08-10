@@ -109,6 +109,22 @@ function _typeof(obj) {
         a('ece2b2d4', 'You’ve been invited to speak!'),
         a('b2cc6a54', 'Join as speaker'),
         a('jd859c9c', 'You have been removed from this Space.'),
+        a('i7a42e1c', 'Help manage this Space'),
+        a('e0b8f112', 'You’ve been invited to co-host!'),
+        a('ee12263c', 'Co-hosts can speak in the Space'),
+        a('jee7002c', 'Co-hosts can invite, remove and mute speakers'),
+        a('i95225d2', 'Co-hosts can share & remove posts'),
+        a('f07137fa', 'Co-hosts can remove listeners from the Space'),
+        a('j6cdf012', 'Co-hosts can’t invite or remove other co-hosts'),
+        a('c727d116', 'Co-hosts can’t end the Space'),
+        a('g69084b8', 'Accept co-host invite'),
+        a('ec2d8342', 'Decline'),
+        a('hd50e064', 'Not now'),
+        a('i76d640e', 'We need your permission'),
+        a(
+          'h75c7eda',
+          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
+        ),
         a('f7c8617a', 'What are clips?'),
         a(
           'ecc7d2ec',
@@ -143,12 +159,6 @@ function _typeof(obj) {
         a('gba36459', 'Learn more'),
         a('d4ccb940', 'Adjust settings'),
         a('cdffdeb3', 'Learn more'),
-        a('hd50e064', 'Not now'),
-        a('i76d640e', 'We need your permission'),
-        a(
-          'h75c7eda',
-          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
-        ),
         a('d227d19e', 'Collapse'),
         a('e51c2372', 'Guests'),
         a('b08821f4', 'Back'),
@@ -1189,8 +1199,8 @@ function _typeof(obj) {
           'f69d80a4',
           'Limit how X uses some of your network data. These settings affect all the X accounts on this browser.',
         ),
-        a('a4b69cbc', 'Display language'),
-        a('c856bd00', 'Select your preferred language for headlines, buttons, and other text from X.'),
+        a('a4b69cbc', 'Display language')
+      a('c856bd00', 'Select your preferred language for headlines, buttons, and other text from X.'),
         a('cab61d58', 'Select additional languages'),
         a('dd93fafa', 'Select additional languages for the content you want to see on X.'),
         a('bca1de4a', 'Additional languages you speak'),
@@ -1205,8 +1215,8 @@ function _typeof(obj) {
           'f8e46b90',
           'These are the social accounts you connected to your X account to log in. You can disable access here.',
         ),
-        a('d84ed6b2', 'Disconnect')
-      a('i51130d4', 'Google'),
+        a('d84ed6b2', 'Disconnect'),
+        a('i51130d4', 'Google'),
         a('e28901f2', 'Apple'),
         a('cf8560be', 'Connected'),
         a('d12d42dc', 'Automation'),
@@ -1946,14 +1956,14 @@ function _typeof(obj) {
         a('h3032750', 'Get more info'),
         a('f5b3dc1e', 'Maybe later'),
         a('j94840a6', 'Blue Twitter bird logo inside of letter B silhouette on a variegated blue background'),
-        a('ad4d29c6', 'Get early access to Edit Tweet with Twitter Blue'),
+        a('i5524f74', 'Get access to edit posts with Premium'),
         a(
-          'e96fe588',
-          'Twitter Blue subscribers get early access to features like Edit Tweet, which lets you update a Tweet up to 5 times within the first 30 minutes after it’s published.',
+          'c03d528c',
+          'Premium subscribers get early access to features like edit post, which lets you update a post up to 5 times within the first 30 minutes after it’s published.',
         ),
         a(
-          'e2d72d22',
-          'Twitter Blue subscribers get early access to features like Edit Tweet, which lets you update a Tweet up to 5 times within the first 1 hour after it’s published.',
+          'ffd2757e',
+          'Premium subscribers get early access to features like edit post, which lets you update a post up to 5 times within the first 1 hour after it’s published.',
         ),
         a('ae0c5fbe', 'Error changing who can reply'),
         a('bae0cbc0', 'Change who can reply'),
@@ -1974,7 +1984,7 @@ function _typeof(obj) {
         a('a1aa840e', 'Your Tweet was deleted'),
         a('c189f2de', 'Something went wrong. Try deleting your Tweet again in a minute.'),
         a('ea41975c', 'Edit Tweet'),
-        a('aa38e198', 'Edit with Twitter Blue'),
+        a('j11cb650', 'Edit with Premium'),
         a('fa631ae0', 'Embed post'),
         a('c66afdc3', function (e) {
           return 'Follow @' + e.screenName
@@ -2343,10 +2353,10 @@ function _typeof(obj) {
         }),
         a('h758cd23', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-        }),
-        a('fba61ad6', function (e) {
-          return '' + e.userName
-        }),
+        })
+      a('fba61ad6', function (e) {
+        return '' + e.userName
+      }),
         a('ce87c872', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
         }),
@@ -2367,10 +2377,10 @@ function _typeof(obj) {
         a('hdf48104', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
-        a('dcbb6a0b', 'Subscribers')
-      a('ba74e38b', function (e) {
-        return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-      }),
+        a('dcbb6a0b', 'Subscribers'),
+        a('ba74e38b', function (e) {
+          return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+        }),
         a('c65916af', 'Subscribers'),
         a('a828b60a', function (e) {
           return '' + e.userName
@@ -2455,7 +2465,7 @@ function _typeof(obj) {
           return 'Dismiss ' + e.topicName + ' Topic'
         }),
         a('d69b2d90', 'You’re not interested in this Topic.'),
-        a('e25a0c3a', 'Promoted Tweet'),
+        a('i2e0d584', 'Promoted Post'),
         a('d876b2bd', function (e) {
           return 'You can only attach up to ' + e.count + ' Tweets to this report.'
         }),
@@ -2966,8 +2976,8 @@ function _typeof(obj) {
         a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
         a('d57c69c6', 'Save changes?'),
         a(
-          'f28690ae',
-          'As a Blue subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
+          'f30d653a',
+          'As a Premium subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
         ),
         a(
           'addbe8e8',
@@ -3550,8 +3560,8 @@ function _typeof(obj) {
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
         a('h20c0504', 'Hide your blue checkmark'),
         a(
-          'e901005a',
-          'Using some Twitter Blue features could still reveal you have an active subscription.\nSome features may not be available while your check mark is hidden.',
+          'ed05a098',
+          'Using some Premium features could still reveal you have an active subscription.\nSome features may not be available while your check mark is hidden.',
         ),
         a('f2351b98', 'Flagged accounts'),
         a(
@@ -3596,8 +3606,8 @@ function _typeof(obj) {
         ),
         a('i84c5de8', 'Creator applications coming soon'),
         a('b8922f7e', 'Check back soon to be able to apply to join the Subscriptions program.'),
-        a('feb54b40', 'Be one of the first to apply'),
-        a('f6443bd2', 'Good news — you meet our eligibility requirements for Subscriptions. Ready to apply?'),
+        a('feb54b40', 'Be one of the first to apply')
+      a('f6443bd2', 'Good news — you meet our eligibility requirements for Subscriptions. Ready to apply?'),
         a('a3a20a10', 'Check back later'),
         a('b8d29e4a', 'Unfortunately, you don’t meet our eligibility requirements for Subscriptions at this time.'),
         a('d92c1d0a', 'Continue to application'),
@@ -3606,10 +3616,10 @@ function _typeof(obj) {
         }),
         a('b747ce3a', 'Active in the past 30 days'),
         a('c27f57ac', 'Be at least 18 years old'),
-        a('gc13184a', 'Subscribe to Twitter Blue or Verified Organizations'),
+        a('b2b4d592', 'Subscribe to Premium or Verified Organizations'),
         a('fde27650', 'Subscriptions Terms'),
-        a('ef606fca', 'Paid subscriptions for your most engaged followers')
-      a('e533715e', 'Check eligibility'),
+        a('ef606fca', 'Paid subscriptions for your most engaged followers'),
+        a('e533715e', 'Check eligibility'),
         a('f489e650', 'Make a living on Twitter'),
         a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
         a('d08d0bb2', 'Bonus content'),
@@ -3744,8 +3754,8 @@ function _typeof(obj) {
         a('dd7164e0', '500 followers'),
         a('f91685ba', 'You are automatically eligible to get paid for your posts!'),
         a(
-          'fa0f13b0',
-          'As a Blue or Verified Organizations subscriber, you are automatically eligible for ads revenue sharing. Your payout is based on the number of verified impressions on ads shown in the replies to your posts.',
+          'a9f0e0fa',
+          'As a Premium or Verified Organizations subscriber, you are automatically eligible for ads revenue sharing. Your payout is based on the number of verified impressions on ads shown in the replies to your posts.',
         ),
         a('acd1a1be', 'Set up your payout details now to receive future payouts.'),
         a('ef135200', 'Join & set up payouts'),
@@ -4805,11 +4815,11 @@ function _typeof(obj) {
           'i4014342',
           'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
         ),
-        a('j9897a7c', 'Get note writing tips'),
-        a(
-          'd07b1650',
-          'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
-        ),
+        a('j9897a7c', 'Get note writing tips')
+      a(
+        'd07b1650',
+        'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
+      ),
         a('ac71a5a0', 'Rate notes that need help'),
         a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
@@ -4818,8 +4828,8 @@ function _typeof(obj) {
         a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
         a('a7b0393c', 'Writing Impact'),
-        a('id568acc', 'Top Writer')
-      a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
+        a('id568acc', 'Top Writer'),
+        a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'a0697fbc',
           'Nice work! These ratings identified Helpful notes that get shown as context on posts and help keep people informed.',
@@ -4972,8 +4982,8 @@ function _typeof(obj) {
         a('dc11636c', 'Languages you speak'),
         a('f40c7b32', 'Show Community Notes in mobile app navigation'),
         a(
-          'j75c631c',
-          'As a Premium subscriber, you can customize your navigation in your mobile app’s Settings › Blue › Extras.',
+          'j39329ee',
+          'As a Premium subscriber, you can customize your navigation in your mobile app’s Settings › Premium › Extras.',
         ),
         a(
           'hf68e810',
@@ -6016,17 +6026,7 @@ function _typeof(obj) {
         a('b9bc69ca', 'Delete saved search'),
         a('d8496336', 'Twitter - Advanced search'),
         a('d3938be8', 'Words'),
-        a('e0dded5e', 'Engagement'),
-        a('a097f7ba', 'Dates'),
-        a('c03f15ca', 'Any language'),
-        a('cb334136', 'Links'),
-        a('e8f38622', 'Include Tweets with links'),
-        a('ie23eefa', 'Only show Tweets with links'),
-        a('ge10bfa2', 'Include replies and original Tweets'),
-        a('ab870904', 'Only show replies'),
-        a('b6215680', 'All of these words'),
-        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
-        a('f1c5faee', 'This exact phrase')
+        a('e0dded5e', 'Engagement')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6067,7 +6067,17 @@ function _typeof(obj) {
           s(e, t)
         )
       }
-      a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
+      a('a097f7ba', 'Dates'),
+        a('c03f15ca', 'Any language'),
+        a('cb334136', 'Links'),
+        a('e8f38622', 'Include Tweets with links'),
+        a('ie23eefa', 'Only show Tweets with links'),
+        a('ge10bfa2', 'Include replies and original Tweets'),
+        a('ab870904', 'Only show replies'),
+        a('b6215680', 'All of these words'),
+        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
+        a('f1c5faee', 'This exact phrase'),
+        a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
         a('a555a3f4', 'Any of these words'),
         a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
         a('f51fe348', 'None of these words'),
@@ -6144,9 +6154,9 @@ function _typeof(obj) {
         a('da68fff1', function (e) {
           return e.count + ' Coin' + n(e.count, '', 's') + ' (only visible to you)'
         }),
-        a('i7d03640', 'Loading post Engagements'),
+        a('e35f2534', 'Loading post engagements'),
         a('dc604dda', 'Users who liked this post'),
-        a('h4e3aa5e', 'Users who Reposted this post'),
+        a('cdd4ef4a', 'Users who reposted this post'),
         a('icc72234', 'Quotes of this post'),
         a('hc35b530', 'No likes yet'),
         a('e0d6a246', 'No Reposts yet'),
@@ -6508,12 +6518,11 @@ function _typeof(obj) {
         a('d132269c', 'Loading Tweet'),
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
-        a('f26a4cb2', 'Swipe up for more'),
         a('f345dcda', 'Edit History'),
         a('h2fcc532', 'Loading history'),
         a(
-          'c9e3df02',
-          'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Twitter Blue subscription.',
+          'a74821a0',
+          'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Premium subscription.',
         ),
         a('dad69faa', 'Update your payment method'),
         a('a3a4e8f8', 'Monthly'),
@@ -6533,8 +6542,8 @@ function _typeof(obj) {
         a('f8d3b50a', 'tax inclusive'),
         a('fce91ab4', 'Hmmm - that didn’t work.'),
         a(
-          'gc7637d4',
-          'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
+          'j1f5a580',
+          'There was a problem with processing your Premium subscription. Please check your payment information and try again.',
         ),
         a(
           'ada69f98',
@@ -6979,7 +6988,6 @@ function _typeof(obj) {
         }),
         a('g6b54ff6', 'You’re up to date'),
         a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
-        a('ec2d8342', 'Decline'),
         a('j85d8d90', 'No follow request pending for that user.'),
         a(
           'c3d23f10',
@@ -7294,7 +7302,6 @@ function _typeof(obj) {
         a('d47c0c7c', 'Who are you?'),
         a('e065b6cc', 'Choose the right Verified subscription for you:'),
         a('c75a9386', 'Learn more about'),
-        a('ed21f886', 'Twitter Blue'),
         a('b916b258', 'and'),
         a('ic6012ea', 'I am an individual'),
         a('d8e618ce', 'For individuals and creators'),
@@ -7314,8 +7321,8 @@ function _typeof(obj) {
         a('b633d19e', 'Thank you'),
         a('f713d3e2', 'Your application has been received and is now under review.'),
         a(
-          'gf2d1998',
-          'You will be able to leverage all the benefits of Twitter Blue, but your organization will not receive a gold or grey checkmark and you will not be able to add affiliated accounts until your account is approved.',
+          'e11d5e1a',
+          'You will be able to leverage all the benefits of Premium, but your organization will not receive a gold or grey checkmark and you will not be able to add affiliated accounts until your account is approved.',
         ),
         a('d83617cc', 'Your account will be reviewed.'),
         a('afb30564', 'We may request additional information to approve you account'),
@@ -7345,8 +7352,8 @@ function _typeof(obj) {
         a('b9c9ccca', 'Your full name'),
         a('i60d7542', 'Organization website'),
         a('b92f9dee', 'Organization type'),
-        a('f09630ff', 'here'),
         a('j3961a09', 'here'),
+        a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
         a('eb0d4fe2', 'Make a column'),
@@ -7378,8 +7385,8 @@ function _typeof(obj) {
         a('cf1a138f', function (e) {
           return 'Changed to deck - ' + e.title
         }),
-        a('g9c2da24', 'Opens dialog to create a new deck'),
-        a('hcef6b72', 'Opens dialog to manage your decks'),
+        a('g9c2da24', 'Opens dialog to create a new deck')
+      a('hcef6b72', 'Opens dialog to manage your decks'),
         a('a77dbc7a', 'Edit Deck'),
         a('a154a293', function (e) {
           return 'Selected Deck ' + e.deckName
@@ -7389,8 +7396,8 @@ function _typeof(obj) {
         }),
         a('ha2aae72', 'Opens dialog to manage the selected deck'),
         a('hf59ffc8', 'Nav bar'),
-        a('d69fc67a', 'Add a new column')
-      a('ib2e46ee', 'Search Twitter'),
+        a('d69fc67a', 'Add a new column'),
+        a('ib2e46ee', 'Search Twitter'),
         a('aac99f18', 'Compose Tweet'),
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
@@ -7507,7 +7514,7 @@ function _typeof(obj) {
         a('g2657de4', 'Top Tweets'),
         a('bec686d8', 'Verified Tweets'),
         a('c8da0c42', 'Photos and videos'),
-        a('b627a9e4', 'Twitter Blue partners'),
+        a('d2cf6f74', 'Premium partners'),
         a('c9b39e70', 'Move'),
         a('b9ea5f7c', 'Move column to another Deck.'),
         a('g8b6d450', 'Notification options'),
@@ -7994,6 +8001,10 @@ function _typeof(obj) {
         a('acddd4d4', 'Red'),
         a('cef9b062', 'Teal'),
         a('d9daefca', 'Dark Gray'),
+        a('c69eb656', 'Full-Time'),
+        a('g46ae43c', 'Full-Time Contract'),
+        a('jf7d4cc6', 'Part-Time'),
+        a('b2214572', 'Contract-to-Hire'),
         a('c5954d30', 'List'),
         a('fe64170c', 'When you make a selection it cannot be changed'),
         a('g10ace38', 'Poll options'),
@@ -11271,19 +11282,19 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'aacfbecd',
+              key: 'bd334979',
               get: function get() {
                 return [
-                  'By checking this box you indicate you have read and agree to the terms and conditions available ',
+                  'We’ll use this information to assess your application. Upon receipt of payment and if eligible, you’ll be invited to activate your account. For information learn more ',
                   '.',
                 ]
               },
             },
             {
-              key: 'bd334979',
+              key: 'aacfbecd',
               get: function get() {
                 return [
-                  'We’ll use this information to assess your application. Upon receipt of payment and if eligible, you’ll be invited to activate your account. For information learn more ',
+                  'By checking this box you indicate you have read and agree to the terms and conditions available ',
                   '.',
                 ]
               },
