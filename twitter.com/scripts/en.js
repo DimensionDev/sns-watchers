@@ -3435,6 +3435,7 @@ function _typeof(obj) {
         a('e12b0b16', 'Not yet eligible'),
         a('db8c4158', 'Apply now'),
         a('e89cdac0', 'Manage payout account'),
+        a('bbe09d38', 'Application accepted · Pending configuration on app stores'),
         a('ja73ebac', 'Revenue'),
         a('bc43a32e', 'Recent activity'),
         a('i4c3b046', 'You have no new Coins at this time.'),
@@ -3605,9 +3606,9 @@ function _typeof(obj) {
           'Keep in mind that even with this setting turned off you will be visible to everyone when you’re in a Space. Your followers can always see what Spaces you’re hosting, co-hosting or speaking in.',
         ),
         a('i84c5de8', 'Creator applications coming soon'),
-        a('b8922f7e', 'Check back soon to be able to apply to join the Subscriptions program.'),
-        a('feb54b40', 'Be one of the first to apply')
-      a('f6443bd2', 'Good news — you meet our eligibility requirements for Subscriptions. Ready to apply?'),
+        a('b8922f7e', 'Check back soon to be able to apply to join the Subscriptions program.')
+      a('feb54b40', 'Be one of the first to apply'),
+        a('f6443bd2', 'Good news — you meet our eligibility requirements for Subscriptions. Ready to apply?'),
         a('a3a20a10', 'Check back later'),
         a('b8d29e4a', 'Unfortunately, you don’t meet our eligibility requirements for Subscriptions at this time.'),
         a('d92c1d0a', 'Continue to application'),
@@ -3750,7 +3751,9 @@ function _typeof(obj) {
           'Unfortunately, you’re not yet eligible for Ads Revenue Sharing. You’ll need to meet the below requirements to participate:',
         ),
         a('d3789528', 'About Ad Rev Share'),
-        a('ge7ca602', 'Have at least 15M impressions on your posts within the last 3 months'),
+        a('hb4c5169', function (e) {
+          return 'Have at least ' + e.impression_number + 'M impressions on your posts within the last 3 months'
+        }),
         a('dd7164e0', '500 followers'),
         a('f91685ba', 'You are automatically eligible to get paid for your posts!'),
         a(
@@ -3776,14 +3779,6 @@ function _typeof(obj) {
         a('i6cb493e', 'Manage how your affiliations are displayed'),
         a('db529452', 'Subscription'),
         a('d248d75e', 'Get Support'),
-        a('f352de53', function (e) {
-          return 'New' + e.ttc_blue_headline
-        }),
-        a(
-          'je7da17c',
-          'Premium looks good on you. Enjoy your verified account and blue checkmark once you’ve been approved.',
-        ),
-        a('hc975c16', 'Premium looks good on you. Enjoy your verified account and blue checkmark.'),
         a('d19d1876', 'See what’s included in Premium and manage your settings'),
         a('d7eebb60', 'Setting up your subscription'),
         a('a452ab68', 'This may take a few seconds.'),
@@ -4815,13 +4810,13 @@ function _typeof(obj) {
           'i4014342',
           'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
         ),
-        a('j9897a7c', 'Get note writing tips')
-      a(
-        'd07b1650',
-        'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
-      ),
-        a('ac71a5a0', 'Rate notes that need help'),
-        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
+        a('j9897a7c', 'Get note writing tips'),
+        a(
+          'd07b1650',
+          'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
+        ),
+        a('ac71a5a0', 'Rate notes that need help')
+      a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
@@ -6026,7 +6021,9 @@ function _typeof(obj) {
         a('b9bc69ca', 'Delete saved search'),
         a('d8496336', 'Twitter - Advanced search'),
         a('d3938be8', 'Words'),
-        a('e0dded5e', 'Engagement')
+        a('e0dded5e', 'Engagement'),
+        a('a097f7ba', 'Dates'),
+        a('c03f15ca', 'Any language')
       function r(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6067,9 +6064,7 @@ function _typeof(obj) {
           s(e, t)
         )
       }
-      a('a097f7ba', 'Dates'),
-        a('c03f15ca', 'Any language'),
-        a('cb334136', 'Links'),
+      a('cb334136', 'Links'),
         a('e8f38622', 'Include Tweets with links'),
         a('ie23eefa', 'Only show Tweets with links'),
         a('ge10bfa2', 'Include replies and original Tweets'),
@@ -7385,12 +7380,12 @@ function _typeof(obj) {
         a('cf1a138f', function (e) {
           return 'Changed to deck - ' + e.title
         }),
-        a('g9c2da24', 'Opens dialog to create a new deck')
-      a('hcef6b72', 'Opens dialog to manage your decks'),
-        a('a77dbc7a', 'Edit Deck'),
-        a('a154a293', function (e) {
-          return 'Selected Deck ' + e.deckName
-        }),
+        a('g9c2da24', 'Opens dialog to create a new deck'),
+        a('hcef6b72', 'Opens dialog to manage your decks'),
+        a('a77dbc7a', 'Edit Deck')
+      a('a154a293', function (e) {
+        return 'Selected Deck ' + e.deckName
+      }),
         a('a77bbe9d', function (e) {
           return 'Unselected Deck ' + e.deckName
         }),
