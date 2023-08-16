@@ -6529,6 +6529,8 @@ function _typeof(obj) {
         a('b4aff05e', 'Hybrid'),
         a('c08b9138', 'Remote'),
         a('d9c8057a', 'Click here'),
+        a('b007440a', 'Jobs'),
+        a('c5fb5a1a', 'No jobs'),
         a('a25a2e76', 'Edit order'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
@@ -7030,7 +7032,6 @@ function _typeof(obj) {
         a('accbcc78', 'Updated successfully'),
         a('ae71ff52', 'You are on the waitlist'),
         a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
-        a('b007440a', 'Jobs'),
         a('abebf0fa', 'Featured Jobs'),
         a('fc6eae0f', function (e) {
           return 'Jobs (' + e.count + ')'
@@ -7282,9 +7283,9 @@ function _typeof(obj) {
         a('aac99f18', 'Compose Tweet'),
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
-        a('e58f6e8c', 'Leave X Pro'),
-        a('b452e6c2', 'How have you been getting on?')
-      a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
+        a('e58f6e8c', 'Leave X Pro')
+      a('b452e6c2', 'How have you been getting on?'),
+        a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
         a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
         a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
