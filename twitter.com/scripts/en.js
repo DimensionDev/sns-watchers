@@ -1308,7 +1308,6 @@ function _typeof(obj) {
         }),
         a('a2a3824a', 'Topic'),
         a('ec6907ba', 'Ad'),
-        a('c14cdb18', 'Promote'),
         a('d9587114', 'See the latest post'),
         a('b7b86c3c', 'Opens the new version of this post'),
         a('a407814e', 'Last edited'),
@@ -2335,15 +2334,15 @@ function _typeof(obj) {
         ),
         a('i57af3da', 'Help make X better for everyone'),
         a('dec6f27c', 'Post others the way you want to be posted.'),
-        a('b8d85dfa', 'Remember the human behind the screen.')
-      a(
-        'c007159c',
-        'We’re asking people to review posts with potentially harmful or offensive language. Want to take another look before posting?',
-      ),
+        a('b8d85dfa', 'Remember the human behind the screen.'),
         a(
-          'e794a9dc',
-          'We want to keep X a place for meaningful conversations. So when we detect potentially harmful or offensive language in a reply — like insults, strong language, or hateful remarks — we might ask people if they want to review it before sending.',
-        ),
+          'c007159c',
+          'We’re asking people to review posts with potentially harmful or offensive language. Want to take another look before posting?',
+        )
+      a(
+        'e794a9dc',
+        'We want to keep X a place for meaningful conversations. So when we detect potentially harmful or offensive language in a reply — like insults, strong language, or hateful remarks — we might ask people if they want to review it before sending.',
+      ),
         a(
           'e710ce76',
           'We’re working to better understand and predict when people might want to review their replies. Your feedback helps with this.',
@@ -2445,6 +2444,7 @@ function _typeof(obj) {
         a('i976aff4', 'Update daily budget info to match your billing currency.'),
         a('fa8f6ec6', 'Your Tweet was posted, but we were unable to run the Boost on it. You will not be charged.'),
         a('fe26420a', 'Add keywords'),
+        a('c14cdb18', 'Promote'),
         a('aacfbe55', function (e) {
           return 'You’re posting for @' + e.screenName + '.'
         }),
