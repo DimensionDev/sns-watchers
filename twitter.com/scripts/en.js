@@ -140,6 +140,7 @@ function _typeof(obj) {
         a('d227d19e', 'Collapse'),
         a('e51c2372', 'Guests'),
         a('b08821f4', 'Back'),
+        a('abd845fe', 'Edit'),
         a('ia5e7488', 'Close'),
         a('ifea3114', 'Share'),
         a('i7f853ea', 'Share with people outside of Twitter'),
@@ -939,7 +940,6 @@ function _typeof(obj) {
         a('b9960f32', 'Add photos or video'),
         a('gd80afba', 'Edit media'),
         a('j322caee', 'Flag sensitive media'),
-        a('abd845fe', 'Edit'),
         a('df1b0708', 'Play this GIF'),
         a('cd959e5c', 'Remove media'),
         a('add55c98', 'Media'),
@@ -1413,8 +1413,8 @@ function _typeof(obj) {
         a('e29c651e', 'Thanks for learning more'),
         a('i0e56bcc', 'Auto refresh'),
         a('fa7b7eec', 'Manual refresh'),
-        a('b1afa50a', 'Top Tweets First'),
-        a('ade3c688', 'Latest Tweets First'),
+        a('b3bd3e38', 'Top posts first'),
+        a('d88cf16c', 'Latest posts first'),
         a('bd4ad3ea', 'Wide'),
         a('ca1180a0', 'Medium'),
         a('c86ff1b0', 'Narrow'),
@@ -1445,12 +1445,12 @@ function _typeof(obj) {
         a('cf2d1048', 'Message requests'),
         a('e7172d70', 'Additional messages'),
         a('e1066d88', 'My Profile'),
-        a('bd7c0390', 'Quote Tweets'),
-        a('e4e4e50a', 'Scheduled Tweets'),
+        a('j45978a8', 'Quotes'),
+        a('fd6a3f30', 'Scheduled posts'),
         a('aa4209e8', 'Super Followers'),
         a('bc8baa08', 'Subscribed'),
         a('c5f4befa', 'Trends'),
-        a('bea869b4', 'Tweet'),
+        a('df34a454', 'Post'),
         a('c63602d4', 'My Communities'),
         a('ddf0ba7e', 'Collection'),
         a('c64974fc', 'Followers'),
@@ -1495,7 +1495,6 @@ function _typeof(obj) {
         a('g0048656', 'Previous post'),
         a('a690c4d0', 'Page down'),
         a('e893811a', 'Load new posts'),
-        a('fd6a3f30', 'Scheduled posts'),
         a('d7b8ebaa', 'Likes'),
         a('eee2ed92', 'Go to user…'),
         a('ee5ccf3e', 'Display settings'),
@@ -1977,20 +1976,32 @@ function _typeof(obj) {
         a('ef1042f8', 'Write a Community Note'),
         a('bf8d98f4', 'Only Subscribed can reply'),
         a('d96cf7ce', 'Delete'),
-        a('dd211108', 'Delete Tweet?'),
+        a('ae04c4dd', function (e) {
+          return 'Delete ' + e.entity + '?'
+        }),
         a(
-          'c55d72d0',
-          'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from Twitter search results.',
+          'ac03a1c2',
+          'This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from X search results.',
         ),
-        a(
-          'if66bdd2',
-          'This will delete all versions of this Tweet from your profile, the timeline of any accounts that follow you, and from Twitter search results. This cannot be undone.',
-        ),
-        a('a1aa840e', 'Your Tweet was deleted'),
-        a('c189f2de', 'Something went wrong. Try deleting your Tweet again in a minute.'),
+        a('ib8b3713', function (e) {
+          return (
+            'This will delete all versions of this ' +
+            e.entity +
+            ' from your profile, the timeline of any accounts that follow you, and from X search results. This cannot be undone.'
+          )
+        }),
+        a('jda253ab', function (e) {
+          return 'Your ' + e.entity + ' was deleted'
+        }),
+        a('j49c2f85', function (e) {
+          return 'Something went wrong. Try deleting your ' + e.entity + ' again in a minute.'
+        }),
+        a('d9a2bd78', 'Download video'),
         a('cb817dae', 'Edit post'),
         a('j11cb650', 'Edit with Premium'),
-        a('fa631ae0', 'Embed post'),
+        a('fd391b9f', function (e) {
+          return 'Embed ' + e.entity
+        }),
         a('c66afdc3', function (e) {
           return 'Follow @' + e.screenName
         }),
@@ -2069,6 +2080,7 @@ function _typeof(obj) {
         a('jfc76958', 'Remove tag from photo'),
         a('ebb7662a', 'Report post'),
         a('e3fd237e', 'Report ad'),
+        a('e9eef4c6', 'Report EU illegal content'),
         a('ab0decc0', 'Subscribe'),
         a('d7dbb71b', function (e) {
           return e.followType + ' to ' + e.screenName
@@ -2320,7 +2332,6 @@ function _typeof(obj) {
         a('acf3ecf4', 'Add media'),
         a('bdbcdd94', 'Add photos'),
         a('i3a8d60a', 'make your Tweets public'),
-        a('df34a454', 'Post'),
         a('c92375a4', 'Want to review this before posting?'),
         a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
         a('c15eab14', 'Most posters don’t post replies like this'),
@@ -2433,9 +2444,9 @@ function _typeof(obj) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
         a('f11264ac', 'Add payment method'),
-        a('b09fa218', 'Promote Tweet'),
-        a('dcfb0332', 'Promote your Tweet'),
-        a('d32d9afd', 'Twitter Ads Terms and Conditions.'),
+        a('j619ec94', 'Promote post'),
+        a('h1fcb36c', 'Promote your post'),
+        a('f1f9f7a7', 'X Ads Terms and Conditions.'),
         a('i3656b52', 'How much do you want to spend?'),
         a('h7c29de6', 'Estimated reach'),
         a('hd435bf1', function (e) {
@@ -2639,6 +2650,7 @@ function _typeof(obj) {
           return '@' + e.screenName + ' can’t be tagged in photos'
         }),
         a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
+        a('e4e4e50a', 'Scheduled Tweets'),
         a('g9677c6e', 'Confirm'),
         a('c5dd0190', 'Time'),
         a('edeff232', 'Date'),
@@ -2820,19 +2832,26 @@ function _typeof(obj) {
           'c6e731ee',
           'Hide your ID verified label so people won’t see it when tapping the blue checkmark on your profile page.',
         ),
+        a(
+          'be582166',
+          'ID verification can help protect your account against impersonation and grants your profile an ID verified label.',
+        ),
         a('f1c0248c', 'We are reviewing your government-issued ID. We will keep you posted through notifications!'),
         a('d8f5cce4', 'You have exceeded your verification request limit. Please wait 24 hours before trying again.'),
-        a('h5bd7160', 'This account is not eligible for ID verification.'),
         a(
-          'ebea83d8',
-          'Verify your government-issued ID to confirm your identity and have an ID verified label in your profile.',
+          'i8427a1e',
+          'This account is not eligible for ID verification. Only individual Premium subscribers are currently eligible for ID verification.',
         ),
         a('h05c1f28', 'Verify your account by providing a government-issued ID. This usually takes about 5 minutes.'),
         a('c4930cb6', 'What you will need:'),
         a('ac7bb0fe', 'Prepare a government-issued ID'),
         a('c12ce69c', 'Check if your device’s camera is uncovered and working'),
-        a('ecaeb9c0', 'Be prepared to take a sefie and photos of your ID'),
+        a('c5bfe94a', 'Be prepared to take a selfie and photos of your ID'),
         a('e5b7dd84', 'Start'),
+        a('abfaa528', 'Skip'),
+        a('deaf5b16', 'Retry'),
+        a('g1a4a1b6', 'ID verification error'),
+        a('e24305e4', 'Your identity verification session was stale or invalid, please try again.'),
         a('f7954a0c', 'Loading security keys data'),
         a('h69986c2', 'You can rename or delete your security keys.'),
         a('i5896ba2', 'Add another key'),
@@ -3437,6 +3456,7 @@ function _typeof(obj) {
         a('i14be2c6', 'Estimated earned revenue'),
         a('b03a3d62', 'Ads revenue sharing'),
         a('c12c5eb6', 'Available programs'),
+        a('e8dc82e2', 'Active programs'),
         a('jd176c82', 'Payouts are not supported in your area'),
         a(
           'c9d99692',
@@ -3576,11 +3596,11 @@ function _typeof(obj) {
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
         a('d8eed490', 'Manage your public-facing profile appearance.'),
-        a('j5183a32', 'Hide Likes tab'),
-        a(
-          'c8ae8594',
-          'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the Twitter APIs. Your individual Likes will still be visible on Tweets.',
-        ),
+        a('j5183a32', 'Hide Likes tab')
+      a(
+        'c8ae8594',
+        'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the Twitter APIs. Your individual Likes will still be visible on Tweets.',
+      ),
         a('b7540162', 'Hide Subscriptions'),
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
         a('h20c0504', 'Hide your blue checkmark'),
@@ -3588,11 +3608,11 @@ function _typeof(obj) {
           'ed05a098',
           'Using some Premium features could still reveal you have an active subscription.\nSome features may not be available while your check mark is hidden.',
         ),
-        a('f2351b98', 'Flagged accounts')
-      a(
-        'da2c4a73',
-        'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
-      ),
+        a('f2351b98', 'Flagged accounts'),
+        a(
+          'da2c4a73',
+          'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
+        ),
         a('bd0a88c2', 'View blocked accounts'),
         a('hae5825e', 'Flagged Tweets'),
         a('g0cba830', 'Here’s what happens when Safety Mode is on'),
@@ -3813,7 +3833,6 @@ function _typeof(obj) {
         a('f5338950', 'Extras'),
         a('i5cb232e', 'Choose custom app icons and add quick access to your favorite destinations.'),
         a('dcfc6540', 'Original posts'),
-        a('j45978a8', 'Quotes'),
         a('be077e8c', 'Threads'),
         a('f3429f2c', 'Polls'),
         a('i647ba8a', 'Post Undo period'),
@@ -4108,24 +4127,24 @@ function _typeof(obj) {
         ),
         a('d938106e', 'Unable to create group'),
         a(
-          'e17c720a',
-          'Only verified users can create a group with users that don’t follow them. Sign up for Twitter Blue to continue.',
+          'b0ef8d5a',
+          'Only verified users can create a group with users that don’t follow them. Sign up for Premium to continue.',
         ),
         a('g695898f', function (e) {
           return 'Get verified to message @' + e.username
         }),
         a('d7bc1116', 'Get verified to message this user'),
         a(
-          'b12f5fe2',
-          'Only verified users can send Direct Message requests to people that don’t follow them. Sign up for Twitter Blue to continue.',
+          'j2e4ccaa',
+          'Only verified users can send Direct Message requests to people that don’t follow them. Sign up for Premium to continue.',
         ),
         a('gdf28f56', 'Some participants could not be added to the conversation'),
         a(
-          'g2e888ee',
-          'Only verified users can add people that don’t follow them to a group. Sign up for Twitter Blue to continue.',
+          'e231d760',
+          'Only verified users can add people that don’t follow them to a group. Sign up for Premium to continue.',
         ),
         a('af7368f4', 'Subscribe today'),
-        a('h3f4cbaa', 'Only verified users can create a Community. Sign up for Twitter Blue to continue.'),
+        a('df0daac2', 'Only verified users can create a Community. Sign up for Premium to continue.'),
         a('hd7d278c', 'No thanks'),
         a('dd8272fd', function (e) {
           return e.count + ' new message' + n(e.count, '', 's')
@@ -4797,13 +4816,13 @@ function _typeof(obj) {
         a('d39720d3', 'Helpful'),
         a('i7d91dc9', 'Somewhat Helpful'),
         a('c75b7fb4', 'Not Helpful'),
-        a('df587b98', 'Note ID'),
-        a('h201bdc8', 'Note Author'),
+        a('df587b98', 'Note ID')
+      a('h201bdc8', 'Note Author'),
         a('h74b96b0', 'Note submitted '),
         a('ge25848a', 'Current Status'),
         a('fe4fd310', 'Helpful'),
-        a('ce8b505e', 'Not helpful')
-      a('e5be8156', 'Note status computed by open-source algorithm'),
+        a('ce8b505e', 'Not helpful'),
+        a('e5be8156', 'Note status computed by open-source algorithm'),
         a(
           'fca23c42',
           'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post.',
@@ -5697,35 +5716,22 @@ function _typeof(obj) {
         a('fca32b20', 'Update your phone number'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('a98ba778', 'Notifications timelines'),
-        a('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
+        a('j887d006', 'From likes to reposts and a whole lot more, this is where all the action happens.'),
         a('c06d4306', 'When someone mentions you, you’ll find it here.'),
         a(
-          'bfdb3c12',
-          'Likes, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
+          'ge7c661a',
+          'Likes, mentions, reposts, and a whole lot more — when it comes from other verified people, you’ll find it here.',
         ),
         a(
-          'f474983a',
-          'Likes, mentions, Retweets, and a whole lot more — when it comes from your subscribers, you’ll find it here.',
+          'd3de3b5c',
+          'Likes, mentions, reposts, and a whole lot more — when it comes from your subscribers, you’ll find it here.',
         ),
-        a('b0648adb', 'Learn more'),
+        a('e3f9838d', 'Learn more'),
         a('eba8b1c8', 'Control which conversations you’re mentioned in'),
         a(
           'ac1daf50',
           'Use the action menu — those three little dots on a Tweet — to untag yourself and leave a conversation.',
         ),
-        a(
-          'f269c47e',
-          'Notifications about new Tweets, Retweets, recommendations, and more will show up here as you follow more people.',
-        ),
-        a('g6871092', 'Find people'),
-        a('e577e1a2', 'Join the conversation'),
-        a('b91e5a3a', 'When someone on Twitter mentions you in a Tweet or reply, you’ll find it here.'),
-        a('g264f126', 'Don’t miss a thing'),
-        a(
-          'a3420a9c',
-          'Notifications help you stay up-to-date on what’s happening on Twitter for you. Retweets, recommendations, and more will show up here as you follow more people.',
-        ),
-        a('ef0b8028', 'You rang?'),
         a('c380d684', 'Your report'),
         a('c7714936', 'We flagged these Tweets as sensitive content'),
         a('bfaadb2d', function (e) {
@@ -5750,7 +5756,6 @@ function _typeof(obj) {
         ),
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
-        a('deaf5b16', 'Retry'),
         a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
         a('d44efc66', 'What’s your name?'),
@@ -6016,7 +6021,10 @@ function _typeof(obj) {
             'We flagged more than ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
           )
         }),
-        a('ga7fce66', 'Turn on Safety Mode')
+        a('ga7fce66', 'Turn on Safety Mode'),
+        a('g42fd3ae', 'If you think you’re in danger, contact local emergency services.'),
+        a('b55f9e0b', 'Preview flagged accounts'),
+        a('ed5457da', 'What’s Safety Mode?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6057,10 +6065,7 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('g42fd3ae', 'If you think you’re in danger, contact local emergency services.'),
-        a('b55f9e0b', 'Preview flagged accounts'),
-        a('ed5457da', 'What’s Safety Mode?'),
-        a('eb0ecd1e', 'Twitter Search'),
+      a('eb0ecd1e', 'Twitter Search'),
         a('cceeb26b', function (e) {
           return e.query + ' - Twitter Search'
         }),
@@ -6182,9 +6187,6 @@ function _typeof(obj) {
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
         a('b3d183ce', 'Post with replies'),
-        a('ca5e57bd', function (e) {
-          return 'Post' + e.noun
-        }),
         a('h3d5d79e', 'Community post'),
         a('e06b864c', 'It looks like you’re enjoying this conversation'),
         a(
@@ -6287,6 +6289,7 @@ function _typeof(obj) {
         }),
         a('e8adeec8', 'Promote again'),
         a('fbb5c37e', 'Boost again'),
+        a('dcfb0332', 'Promote your Tweet'),
         a('c5c0b3bc', 'Boost your Tweet'),
         a('g6bf2fdb', function (e) {
           return (
@@ -6483,6 +6486,7 @@ function _typeof(obj) {
           'j1f5a580',
           'There was a problem with processing your Premium subscription. Please check your payment information and try again.',
         ),
+        a('a8eea654', 'Your purchase was successful.'),
         a(
           'ada69f98',
           'Coins allow you to support creators who Tweet great content. Unused Coins are kept in your balance.',
@@ -7028,6 +7032,7 @@ function _typeof(obj) {
           return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
         }),
         a('ba96929e', 'Hiring'),
+        a('h7d5d9fa', 'Beta'),
         a('i4dccc18', 'Billing'),
         a('accbcc78', 'Updated successfully'),
         a('ae71ff52', 'You are on the waitlist'),
@@ -7050,10 +7055,10 @@ function _typeof(obj) {
           'bfef82f0',
           'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
         ),
-        a('fc87bca6', 'Join the waitlist'),
+        a('e68d2d16', 'Apply for the Beta'),
         a(
-          'a389380c',
-          'By clicking ‘Join the waitlist’ you consent to be contacted over email using the business email address associated with this account.',
+          'f7a37e30',
+          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
         ),
         a('c3f28126', 'Reach a massive audience'),
         a(
@@ -7172,7 +7177,6 @@ function _typeof(obj) {
           'da8d2512',
           'Give your people a special badge letting the world know they‘re a verified member of your team.',
         ),
-        a('h7d5d9fa', 'Beta'),
         a(
           'b0c2915c',
           'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
@@ -7279,15 +7283,14 @@ function _typeof(obj) {
         a('ha2aae72', 'Opens dialog to manage the selected deck'),
         a('hf59ffc8', 'Nav bar'),
         a('d69fc67a', 'Add a new column'),
-        a('ib2e46ee', 'Search Twitter'),
-        a('aac99f18', 'Compose Tweet'),
+        a('ad61a830', 'Compose post'),
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
-        a('e58f6e8c', 'Leave X Pro')
-      a('b452e6c2', 'How have you been getting on?'),
+        a('e58f6e8c', 'Leave X Pro'),
+        a('b452e6c2', 'How have you been getting on?'),
         a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
-        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
-        a('fce3c5ce', 'Give feedback'),
+        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.')
+      a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
         a('b2b3db04', 'A powerful, real-time tool for people who live on Twitter.'),
@@ -7322,10 +7325,10 @@ function _typeof(obj) {
         a('c4ec8620', 'Include'),
         a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
-        a('df7c4428', 'Likes, Replies & Retweets'),
-        a('ede73826', 'Tweet content'),
+        a('d614afc8', 'Likes, Replies & Reposts'),
+        a('fb2bbc7a', 'Post content'),
         a('a589add2', 'Any of these words (OR)'),
-        a('h28b59ee', 'Tweets from someone'),
+        a('d2f8dc8a', 'Posts from someone'),
         a('e37201ec', 'Replying to someone'),
         a('e035e056', 'Mentioning someone'),
         a('ef2d4092', 'Exclude words'),
@@ -7334,13 +7337,12 @@ function _typeof(obj) {
         a('c85f9b9c', 'Change languages'),
         a('b5148188', 'More than'),
         a('hf369320', 'Less than'),
-        a('d497b854', 'Retweets'),
         a('f4dce7b6', 'How many'),
         a('ddafa9a2', 'View Options'),
         a('c6be8432', 'Level of engagement'),
-        a('c8e6a1c8', 'Show original Tweets'),
-        a('icc8568a', 'Show Retweets'),
-        a('e95e42b2', 'Show Quote Tweets'),
+        a('e60b9fac', 'Show original posts'),
+        a('eb441fee', 'Show Reposts'),
+        a('e920e6dc', 'Show Quotes'),
         a('g9580526', 'Show Replies'),
         a('i73cbb5c', 'You can only add one List to a search. Only the first List will apply to this search.'),
         a('c765315d', function (e) {
@@ -7355,7 +7357,7 @@ function _typeof(obj) {
         a('a911623c', 'Images'),
         a('f1fa97a8', 'Broadcasts'),
         a('e187f906', 'GIFs'),
-        a('e305a3bc', 'Only show Tweets with media'),
+        a('c0bab0ba', 'Only show posts with media'),
         a('g9512656', 'Only show verified people'),
         a('b967e296', 'Only show people you follow'),
         a('gc51a2ac', 'At any time'),
@@ -7364,7 +7366,7 @@ function _typeof(obj) {
         a('c1fe6156', 'Start time'),
         a('cbc02622', 'End time'),
         a('b666573c', 'Search location'),
-        a('c7d1adf0', 'Tweets in'),
+        a('cf260344', 'Posts in'),
         a('j5805302', 'Radius'),
         a('e592ab3c', 'For better results include location and state or country in your search.'),
         a('e8843b5d', function (e) {
@@ -7381,11 +7383,11 @@ function _typeof(obj) {
         a('g4d581a2', 'Empty this, and all Bookmark Folders'),
         a('fb14aebe', 'Empty Bookmarks'),
         a('cc0f2f40', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
-        a('cf79c1fe', 'Show latest Tweets'),
-        a('d0be24d0', 'Clear Tweets'),
-        a('h9308f20', 'Clear Tweets and view latest Tweets as they appear.'),
+        a('ab352ee0', 'Show latest posts'),
+        a('c004c4d6', 'Clear posts'),
+        a('fc702822', 'Clear posts and view latest posts as they appear.'),
         a('a2c59056', 'Before you clear column...'),
-        a('a7dcfed2', 'Switch to latest Tweets'),
+        a('d31bdbbe', 'Switch to latest posts'),
         a('e98b5ae5', 'latest Tweets'),
         a('g33b8c04', 'Make a copy'),
         a('de2c3008', 'Make a duplicate of the column.'),
@@ -7393,8 +7395,8 @@ function _typeof(obj) {
         a('e52e4c82', 'Change location and personalisation options.'),
         a('ad86db50', 'Make a Deck'),
         a('hb70ef30', 'Create a Deck from this search'),
-        a('g2657de4', 'Top Tweets'),
-        a('bec686d8', 'Verified Tweets'),
+        a('j8a945cc', 'Top posts'),
+        a('f3a4a654', 'Verified posts'),
         a('c8da0c42', 'Photos and videos'),
         a('d2cf6f74', 'Premium partners'),
         a('c9b39e70', 'Move'),
@@ -7406,18 +7408,18 @@ function _typeof(obj) {
         a('d9d11fc6', 'Delete public Column?'),
         a('h17ada6c', 'Deleting a public Column will cause any followers to irreversibly lose access to the Column.'),
         a('hb388fe8', 'Delete Column'),
-        a('ce091d36', 'Search Tweets'),
+        a('j9541e18', 'Search posts'),
         a('c1343ad6', 'Convert this to a search column.'),
         a('e7a12d72', 'Converted to search column'),
         a('f29424f0', 'Change back'),
         a('h5ff85a2', 'Share column'),
         a('d32058ba', 'Make column public to enable share.'),
         a('c926a6ca', 'Changes you make will appear to anyone following the Column.'),
-        a('e1cdd9c4', 'Before you switch to top Tweets...'),
-        a('i9ce40ac', 'If you switch to top Tweets any Tweets you have cleared will be revealed into the column.'),
-        a('h232a104', 'Switch and show all Tweets'),
-        a('ec66fc4e', 'Tweet order'),
-        a('cc1866ae', 'Tweet feed'),
+        a('dec2a8fe', 'Before you switch to top posts...'),
+        a('gbe58034', 'If you switch to top posts any posts you have cleared will be revealed into the column.'),
+        a('c72c9982', 'Switch and show all posts'),
+        a('be99039a', 'Post order'),
+        a('j8a2209e', 'Post feed'),
         a('g0175ca2', 'Column Picker'),
         a('a800727c', 'Return to Column Picker'),
         a('f318bc40', 'Create new Folder'),
@@ -7439,37 +7441,37 @@ function _typeof(obj) {
         a('bd744e9a', 'Populate with a search'),
         a('i10d4124', 'Start from scratch'),
         a('jbff8606', 'Submit query'),
-        a('jb743d10', 'Some draft Tweets could not be deleted.'),
-        a('d7be0508', 'Your selected draft Tweets were deleted.'),
-        a('f7596afa', 'Loading draft Tweets'),
-        a('a04b7268', 'You don’t have any draft Tweets'),
+        a('dbd8a566', 'Some draft posts could not be deleted.'),
+        a('c82be5a8', 'Your selected draft posts were deleted.'),
+        a('ad84af68', 'Loading draft posts'),
+        a('ef97fb3a', 'You don’t have any draft posts'),
         a('f26ece12', 'When you do, you’ll find them here.'),
-        a('c66ba334', 'Deleting draft Tweets'),
-        a('ca5f4db4', 'Discard Draft Tweets'),
-        a('i4d4f782', 'This can’t be undone and you’ll lose your draft Tweets.'),
-        a('fbaa8dc2', 'Some scheduled Tweets could not be deleted.'),
-        a('jb4a1300', 'Your selected scheduled Tweets were deleted.'),
-        a('gb4a3fdc', 'Loading scheduled Tweets'),
-        a('g29f1100', 'You don’t have any scheduled Tweets'),
-        a('ieea255a', 'Deleting scheduled Tweets'),
-        a('bac23c92', 'Discard scheduled Tweets'),
-        a('f450083c', 'This can’t be undone and you’ll lose your scheduled Tweets.'),
+        a('a4911812', 'Deleting draft posts'),
+        a('b49be1ca', 'Discard Draft Posts'),
+        a('ca91dc76', 'This can’t be undone and you’ll lose your draft posts.'),
+        a('b38b254a', 'Some scheduled posts could not be deleted.'),
+        a('he2e3cc4', 'Your selected scheduled posts were deleted.'),
+        a('jf9faee4', 'Loading scheduled posts'),
+        a('aa1cfd48', 'You don’t have any scheduled posts'),
+        a('b2a70dbe', 'Deleting scheduled posts'),
+        a('a07bb1b0', 'Discard scheduled posts'),
+        a('id78e802', 'This can’t be undone and you’ll lose your scheduled posts.'),
         a('d9a75e16', 'Choose one'),
-        a('e43d95f2', 'See recommended Tweets first.'),
+        a('aa030cd4', 'See recommended posts first.'),
         a('c0d2d4aa', 'Home Timeline'),
         a('ecbbbb90', 'View your own or other people’s lists.'),
         a('c351229c', 'View the Communities that you’re a part of.'),
         a('a2d1df82', 'Find what you’re looking for.'),
         a('d5387d8a', 'Stay up to date with your messages.'),
-        a('fb3c79ac', 'Check what’s trending on Twitter.'),
+        a('e738198c', 'Check what’s trending on X.'),
         a('ifb8c91e', 'Find a profile and see what they’ve been up to.'),
         a('aa0525d0', 'Profiles'),
         a('cb7844a6', 'Keep up with your notifications and mentions.'),
-        a('fe54751e', 'View your scheduled Tweets.'),
-        a('h82c3ee8', 'View your draft Tweets.'),
-        a('ce3074c2', 'Draft Tweets'),
-        a('bcf970ea', 'See bookmarked Tweets.'),
-        a('d44bf1ca', 'Bookmarked Tweets'),
+        a('e64da55e', 'View your scheduled posts.'),
+        a('h9659832', 'View your draft posts.'),
+        a('f1b6535e', 'Draft posts'),
+        a('a24add8a', 'See bookmarked posts.'),
+        a('iad3e15c', 'Bookmarked posts'),
         a('ic61c5fc', 'Scroll to top'),
         a('gb19f215', function (e) {
           return 'Column - ' + e.title
@@ -7494,11 +7496,12 @@ function _typeof(obj) {
           return 'Refresh column - ' + e.title
         }),
         a('a443bbc0', 'Close Search'),
-        a('d21c79f7', function (e) {
-          return 'Set Column Tweet Order - ' + e.title
+        a('d8dc3583', function (e) {
+          return 'Set Column Post Order - ' + e.title
         }),
-        a('e1ace846', 'Tweet Order'),
-        a('d126cb7c', 'Latest Tweets'),
+        a('d0b01a9e', 'Post Order'),
+        a('h1aa47e2', 'Top Posts'),
+        a('ceda719e', 'Latest Posts'),
         a('c8b12c8f', function (e) {
           return 'Set Column Content - ' + e.title
         }),
@@ -7506,9 +7509,9 @@ function _typeof(obj) {
         a('e57560b4', 'Hide overview'),
         a('fb087db0', 'Create separate column'),
         a('aa128cd8', 'Add as new column'),
-        a('e2ba3828', 'Show top Tweets'),
-        a('j52bb410', 'Column added. Showing top Tweets first'),
-        a('ca329454', 'Column added. Showing latest Tweets first'),
+        a('b163ccb8', 'Show top posts'),
+        a('aac37348', 'Column added. Showing top posts first'),
+        a('f751a228', 'Column added. Showing latest posts first'),
         a('aa4f00c6', 'Share Deck'),
         a('fdf97052', 'Go to Deck options'),
         a('ed427868', 'Make Deck public?'),
@@ -8233,6 +8236,15 @@ function _typeof(obj) {
         }),
         a('dc716ec9', function (e) {
           return 'Recommended Topic: ' + e.topicName
+        }),
+        a('a3dfd0cb', function (e) {
+          return 'post' + e.noun
+        }),
+        a('d7580651', function (e) {
+          return 'Post' + e.noun
+        }),
+        a('c68b6367', function (e) {
+          return 'Article' + e.noun
         }),
         a('jcf3e7a2', 'Frame progress for Lottie Animation'),
         a('a0af935c', 'Liked'),
@@ -9527,9 +9539,9 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'ba96d5ed',
+              key: 'd26626ed',
               get: function get() {
-                return ['By clicking Promote Tweet you’re agreeing to the ']
+                return ['By clicking Promote post you’re agreeing to the ']
               },
             },
             {
@@ -10721,10 +10733,10 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'a1300021',
+              key: 'd39ad44d',
               get: function get() {
                 return [
-                  'Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here. ',
+                  'Likes, mentions, reposts, and a whole lot more — when it comes from a verified account, you’ll find it here. ',
                 ]
               },
             },
@@ -11456,8 +11468,8 @@ function _typeof(obj) {
       var b = f._numberRound,
         h = (f._numberFormat, f._numberFormatterFn),
         m = f._pluralGeneratorFn,
-        y = (f._currencyNameFormat, f._currencyFormatterFn),
-        p = (f._validateParameterTypeDate, f._dateToPartsFormat, f._dateToPartsFormatterFn),
+        p = (f._currencyNameFormat, f._currencyFormatterFn),
+        y = (f._validateParameterTypeDate, f._dateToPartsFormat, f._dateToPartsFormatterFn),
         g = (f._dateFormat, f._dateFormatterFn),
         w = f._relativeTimeFormatterFn,
         v = f._unitFormatterFn
@@ -13343,78 +13355,78 @@ function _typeof(obj) {
           var t = !String(e).split('.')[1]
           return 1 == e && t ? 'one' : 'other'
         })),
-        (f.b1259832358 = y(f('en').numberFormatter({ raw: "'AED' #,##0.00" }))),
-        (f.a886759321 = y(f('en').numberFormatter({ raw: "'ALL' #,##0" }))),
-        (f.a2117218168 = y(f('en').numberFormatter({ raw: "'ARS' #,##0.00" }))),
-        (f.a55324650 = y(f('en').numberFormatter({ raw: "'A$'#,##0.00" }))),
-        (f.a1485592908 = y(f('en').numberFormatter({ raw: "'BAM' #,##0.00" }))),
-        (f.a53540712 = y(f('en').numberFormatter({ raw: "'BDT' #,##0.00" }))),
-        (f.b1750690447 = y(f('en').numberFormatter({ raw: "'BGN' #,##0.00" }))),
-        (f.b1149478276 = y(f('en').numberFormatter({ raw: "'BHD' #,##0.000" }))),
-        (f.b635342850 = y(f('en').numberFormatter({ raw: "'R$'#,##0.00" }))),
-        (f.a1453990527 = y(f('en').numberFormatter({ raw: "'BYR' #,##0" }))),
-        (f.b1324226412 = y(f('en').numberFormatter({ raw: "'CA$'#,##0.00" }))),
-        (f.a650590361 = y(f('en').numberFormatter({ raw: "'CHF' #,##0.00" }))),
-        (f.a191929299 = y(f('en').numberFormatter({ raw: "'CLP' #,##0" }))),
-        (f.b2070368276 = y(f('en').numberFormatter({ raw: "'CN¥'#,##0.00" }))),
-        (f.b1440526954 = y(f('en').numberFormatter({ raw: "'COP' #,##0" }))),
-        (f.b411066810 = y(f('en').numberFormatter({ raw: "'CZK' #,##0.00" }))),
-        (f.a904090198 = y(f('en').numberFormatter({ raw: "'DKK' #,##0.00" }))),
-        (f.a1131339468 = y(f('en').numberFormatter({ raw: "'DZD' #,##0.00" }))),
-        (f.b759968436 = y(f('en').numberFormatter({ raw: "'EGP' #,##0.00" }))),
-        (f.b1162560488 = y(f('en').numberFormatter({ raw: "'€'#,##0.00" }))),
-        (f.b1711866171 = y(f('en').numberFormatter({ raw: "'£'#,##0.00" }))),
-        (f.b595923928 = y(f('en').numberFormatter({ raw: "'GHS' #,##0.00" }))),
-        (f.a1406927350 = y(f('en').numberFormatter({ raw: "'GTQ' #,##0.00" }))),
-        (f.b915007111 = y(f('en').numberFormatter({ raw: "'HK$'#,##0.00" }))),
-        (f.a1202955417 = y(f('en').numberFormatter({ raw: "'HRK' #,##0.00" }))),
-        (f.b572646591 = y(f('en').numberFormatter({ raw: "'HUF' #,##0.00" }))),
-        (f.b688947133 = y(f('en').numberFormatter({ raw: "'IDR' #,##0" }))),
-        (f.a2144744170 = y(f('en').numberFormatter({ raw: "'₪'#,##0.00" }))),
-        (f.b403844915 = y(f('en').numberFormatter({ raw: "'₹'#,##0.00" }))),
-        (f.a1857858014 = y(f('en').numberFormatter({ raw: "'IQD' #,##0" }))),
-        (f.b461697863 = y(f('en').numberFormatter({ raw: "'ISK' #,##0" }))),
-        (f.b980590457 = y(f('en').numberFormatter({ raw: "'¥'#,##0" }))),
-        (f.b582160927 = y(f('en').numberFormatter({ raw: "'KES' #,##0.00" }))),
-        (f.b1814998358 = y(f('en').numberFormatter({ raw: "'₩'#,##0" }))),
-        (f.a2078566178 = y(f('en').numberFormatter({ raw: "'KWD' #,##0.000" }))),
-        (f.a904176341 = y(f('en').numberFormatter({ raw: "'KZT' #,##0.00" }))),
-        (f.b1587749088 = y(f('en').numberFormatter({ raw: "'LBP' #,##0" }))),
-        (f.b1075992246 = y(f('en').numberFormatter({ raw: "'MAD' #,##0.00" }))),
-        (f.b790890028 = y(f('en').numberFormatter({ raw: "'MKD' #,##0.00" }))),
-        (f.b1851952553 = y(f('en').numberFormatter({ raw: "'MX$'#,##0.00" }))),
-        (f.b849932268 = y(f('en').numberFormatter({ raw: "'MYR' #,##0.00" }))),
-        (f.a1983164389 = y(f('en').numberFormatter({ raw: "'NGN' #,##0.00" }))),
-        (f.a407371792 = y(f('en').numberFormatter({ raw: "'NOK' #,##0.00" }))),
-        (f.a1379573634 = y(f('en').numberFormatter({ raw: "'NZ$'#,##0.00" }))),
-        (f.b601189599 = y(f('en').numberFormatter({ raw: "'PEN' #,##0.00" }))),
-        (f.a2118579746 = y(f('en').numberFormatter({ raw: "'PHP' #,##0.00" }))),
-        (f.a543381795 = y(f('en').numberFormatter({ raw: "'PKR' #,##0" }))),
-        (f.a1316368872 = y(f('en').numberFormatter({ raw: "'PLN' #,##0.00" }))),
-        (f.a2001089912 = y(f('en').numberFormatter({ raw: "'QAR' #,##0.00" }))),
-        (f.b1125434007 = y(f('en').numberFormatter({ raw: "'RON' #,##0.00" }))),
-        (f.a2138289207 = y(f('en').numberFormatter({ raw: "'RSD' #,##0" }))),
-        (f.b438929029 = y(f('en').numberFormatter({ raw: "'RUB' #,##0.00" }))),
-        (f.a1191743286 = y(f('en').numberFormatter({ raw: "'SAR' #,##0.00" }))),
-        (f.a246386657 = y(f('en').numberFormatter({ raw: "'SEK' #,##0.00" }))),
-        (f.a1820989962 = y(f('en').numberFormatter({ raw: "'SGD' #,##0.00" }))),
-        (f.a99078380 = y(f('en').numberFormatter({ raw: "'THB' #,##0.00" }))),
-        (f.a1186391472 = y(f('en').numberFormatter({ raw: "'TND' #,##0.000" }))),
-        (f.a1042651071 = y(f('en').numberFormatter({ raw: "'TRY' #,##0.00" }))),
-        (f.a583990009 = y(f('en').numberFormatter({ raw: "'NT$'#,##0.00" }))),
-        (f.b619028979 = y(f('en').numberFormatter({ raw: "'TZS' #,##0" }))),
-        (f.a96105150 = y(f('en').numberFormatter({ raw: "'UAH' #,##0.00" }))),
-        (f.a1584226356 = y(f('en').numberFormatter({ raw: "'UGX' #,##0" }))),
-        (f.b1223214380 = y(f('en').numberFormatter({ raw: "'$'#,##0.00" }))),
-        (f.a1036704611 = y(f('en').numberFormatter({ raw: "'VEF' #,##0.00" }))),
-        (f.a377044846 = y(f('en').numberFormatter({ raw: "'₫'#,##0" }))),
-        (f.a506513743 = y(f('en').numberFormatter({ raw: "'ZAR' #,##0.00" }))),
-        (f.b1585198218 = y(f('en').numberFormatter({ raw: "'ZMW' #,##0.00" }))),
-        (f.b129255162 = p(
+        (f.b1259832358 = p(f('en').numberFormatter({ raw: "'AED' #,##0.00" }))),
+        (f.a886759321 = p(f('en').numberFormatter({ raw: "'ALL' #,##0" }))),
+        (f.a2117218168 = p(f('en').numberFormatter({ raw: "'ARS' #,##0.00" }))),
+        (f.a55324650 = p(f('en').numberFormatter({ raw: "'A$'#,##0.00" }))),
+        (f.a1485592908 = p(f('en').numberFormatter({ raw: "'BAM' #,##0.00" }))),
+        (f.a53540712 = p(f('en').numberFormatter({ raw: "'BDT' #,##0.00" }))),
+        (f.b1750690447 = p(f('en').numberFormatter({ raw: "'BGN' #,##0.00" }))),
+        (f.b1149478276 = p(f('en').numberFormatter({ raw: "'BHD' #,##0.000" }))),
+        (f.b635342850 = p(f('en').numberFormatter({ raw: "'R$'#,##0.00" }))),
+        (f.a1453990527 = p(f('en').numberFormatter({ raw: "'BYR' #,##0" }))),
+        (f.b1324226412 = p(f('en').numberFormatter({ raw: "'CA$'#,##0.00" }))),
+        (f.a650590361 = p(f('en').numberFormatter({ raw: "'CHF' #,##0.00" }))),
+        (f.a191929299 = p(f('en').numberFormatter({ raw: "'CLP' #,##0" }))),
+        (f.b2070368276 = p(f('en').numberFormatter({ raw: "'CN¥'#,##0.00" }))),
+        (f.b1440526954 = p(f('en').numberFormatter({ raw: "'COP' #,##0" }))),
+        (f.b411066810 = p(f('en').numberFormatter({ raw: "'CZK' #,##0.00" }))),
+        (f.a904090198 = p(f('en').numberFormatter({ raw: "'DKK' #,##0.00" }))),
+        (f.a1131339468 = p(f('en').numberFormatter({ raw: "'DZD' #,##0.00" }))),
+        (f.b759968436 = p(f('en').numberFormatter({ raw: "'EGP' #,##0.00" }))),
+        (f.b1162560488 = p(f('en').numberFormatter({ raw: "'€'#,##0.00" }))),
+        (f.b1711866171 = p(f('en').numberFormatter({ raw: "'£'#,##0.00" }))),
+        (f.b595923928 = p(f('en').numberFormatter({ raw: "'GHS' #,##0.00" }))),
+        (f.a1406927350 = p(f('en').numberFormatter({ raw: "'GTQ' #,##0.00" }))),
+        (f.b915007111 = p(f('en').numberFormatter({ raw: "'HK$'#,##0.00" }))),
+        (f.a1202955417 = p(f('en').numberFormatter({ raw: "'HRK' #,##0.00" }))),
+        (f.b572646591 = p(f('en').numberFormatter({ raw: "'HUF' #,##0.00" }))),
+        (f.b688947133 = p(f('en').numberFormatter({ raw: "'IDR' #,##0" }))),
+        (f.a2144744170 = p(f('en').numberFormatter({ raw: "'₪'#,##0.00" }))),
+        (f.b403844915 = p(f('en').numberFormatter({ raw: "'₹'#,##0.00" }))),
+        (f.a1857858014 = p(f('en').numberFormatter({ raw: "'IQD' #,##0" }))),
+        (f.b461697863 = p(f('en').numberFormatter({ raw: "'ISK' #,##0" }))),
+        (f.b980590457 = p(f('en').numberFormatter({ raw: "'¥'#,##0" }))),
+        (f.b582160927 = p(f('en').numberFormatter({ raw: "'KES' #,##0.00" }))),
+        (f.b1814998358 = p(f('en').numberFormatter({ raw: "'₩'#,##0" }))),
+        (f.a2078566178 = p(f('en').numberFormatter({ raw: "'KWD' #,##0.000" }))),
+        (f.a904176341 = p(f('en').numberFormatter({ raw: "'KZT' #,##0.00" }))),
+        (f.b1587749088 = p(f('en').numberFormatter({ raw: "'LBP' #,##0" }))),
+        (f.b1075992246 = p(f('en').numberFormatter({ raw: "'MAD' #,##0.00" }))),
+        (f.b790890028 = p(f('en').numberFormatter({ raw: "'MKD' #,##0.00" }))),
+        (f.b1851952553 = p(f('en').numberFormatter({ raw: "'MX$'#,##0.00" }))),
+        (f.b849932268 = p(f('en').numberFormatter({ raw: "'MYR' #,##0.00" }))),
+        (f.a1983164389 = p(f('en').numberFormatter({ raw: "'NGN' #,##0.00" }))),
+        (f.a407371792 = p(f('en').numberFormatter({ raw: "'NOK' #,##0.00" }))),
+        (f.a1379573634 = p(f('en').numberFormatter({ raw: "'NZ$'#,##0.00" }))),
+        (f.b601189599 = p(f('en').numberFormatter({ raw: "'PEN' #,##0.00" }))),
+        (f.a2118579746 = p(f('en').numberFormatter({ raw: "'PHP' #,##0.00" }))),
+        (f.a543381795 = p(f('en').numberFormatter({ raw: "'PKR' #,##0" }))),
+        (f.a1316368872 = p(f('en').numberFormatter({ raw: "'PLN' #,##0.00" }))),
+        (f.a2001089912 = p(f('en').numberFormatter({ raw: "'QAR' #,##0.00" }))),
+        (f.b1125434007 = p(f('en').numberFormatter({ raw: "'RON' #,##0.00" }))),
+        (f.a2138289207 = p(f('en').numberFormatter({ raw: "'RSD' #,##0" }))),
+        (f.b438929029 = p(f('en').numberFormatter({ raw: "'RUB' #,##0.00" }))),
+        (f.a1191743286 = p(f('en').numberFormatter({ raw: "'SAR' #,##0.00" }))),
+        (f.a246386657 = p(f('en').numberFormatter({ raw: "'SEK' #,##0.00" }))),
+        (f.a1820989962 = p(f('en').numberFormatter({ raw: "'SGD' #,##0.00" }))),
+        (f.a99078380 = p(f('en').numberFormatter({ raw: "'THB' #,##0.00" }))),
+        (f.a1186391472 = p(f('en').numberFormatter({ raw: "'TND' #,##0.000" }))),
+        (f.a1042651071 = p(f('en').numberFormatter({ raw: "'TRY' #,##0.00" }))),
+        (f.a583990009 = p(f('en').numberFormatter({ raw: "'NT$'#,##0.00" }))),
+        (f.b619028979 = p(f('en').numberFormatter({ raw: "'TZS' #,##0" }))),
+        (f.a96105150 = p(f('en').numberFormatter({ raw: "'UAH' #,##0.00" }))),
+        (f.a1584226356 = p(f('en').numberFormatter({ raw: "'UGX' #,##0" }))),
+        (f.b1223214380 = p(f('en').numberFormatter({ raw: "'$'#,##0.00" }))),
+        (f.a1036704611 = p(f('en').numberFormatter({ raw: "'VEF' #,##0.00" }))),
+        (f.a377044846 = p(f('en').numberFormatter({ raw: "'₫'#,##0" }))),
+        (f.a506513743 = p(f('en').numberFormatter({ raw: "'ZAR' #,##0.00" }))),
+        (f.b1585198218 = p(f('en').numberFormatter({ raw: "'ZMW' #,##0.00" }))),
+        (f.b129255162 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
         )),
-        (f.a683162061 = p(
+        (f.a683162061 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'E, MMM d',
@@ -13440,7 +13452,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a1269826356 = p(
+        (f.a1269826356 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMM d',
@@ -13465,7 +13477,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a64793641 = p(
+        (f.a64793641 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMM d, y',
@@ -13490,11 +13502,11 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a86034624 = p(
+        (f.a86034624 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           { pattern: 'MM/dd/y', timeSeparator: ':' },
         )),
-        (f.a1981853560 = p(
+        (f.a1981853560 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'E, MMM d, y',
@@ -13520,7 +13532,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a690550229 = p(
+        (f.a690550229 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMMM d',
@@ -13545,7 +13557,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.b683761904 = p(
+        (f.b683761904 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMMM d, y',
@@ -13570,7 +13582,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a596533135 = p(
+        (f.a596533135 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
             pattern: 'MMM d, h:mm a',
@@ -13596,12 +13608,12 @@ function _typeof(obj) {
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
         )),
-        (f.a2011541116 = p(
+        (f.a2011541116 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           { pattern: 'M/d/yy', timeSeparator: ':' },
         )),
-        (f.b696469024 = p({ 1: f('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
-        (f.b2072821078 = p(
+        (f.b696469024 = y({ 1: f('en').numberFormatter({ raw: '0' }) }, { pattern: 'y', timeSeparator: ':' })),
+        (f.b2072821078 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
             pattern: "EEEE, MMMM d, y 'at' h:mm:ss a zzzz",
@@ -13643,7 +13655,7 @@ function _typeof(obj) {
             hourFormat: '+HH:mm;-HH:mm',
           },
         )),
-        (f.b2093703356 = p(
+        (f.b2093703356 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
             pattern: 'MMM d, y, h:mm a',
@@ -13669,7 +13681,7 @@ function _typeof(obj) {
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
         )),
-        (f.a481468996 = p(
+        (f.a481468996 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
             pattern: 'MMM d, y, h:mm:ss a',
@@ -13695,7 +13707,7 @@ function _typeof(obj) {
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
         )),
-        (f.b716432657 = p(
+        (f.b716432657 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
             pattern: 'E h:mm a',
@@ -13704,7 +13716,7 @@ function _typeof(obj) {
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
         )),
-        (f.a64108448 = p(
+        (f.a64108448 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMMM y',
@@ -13729,7 +13741,7 @@ function _typeof(obj) {
             },
           },
         )),
-        (f.a2122364151 = p(
+        (f.a2122364151 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
             pattern: 'MMM d, y',
