@@ -88,8 +88,8 @@
         y = r(397871),
         v = r(134615),
         g = r(676275),
-        b = r(760397),
-        S = r(588027),
+        S = r(760397),
+        b = r(588027),
         Z = r(63899),
         C = r(76687),
         _ = r(331261),
@@ -206,10 +206,10 @@
                 get: function get() {
                   return this.props.user
                     ? {
-                        category: b.Hk.RecentSearch,
+                        category: S.Hk.RecentSearch,
                         link: this.props.user.screen_name,
                         query: this.props.id,
-                        recentSearchType: b.g2.User,
+                        recentSearchType: S.g2.User,
                       }
                     : null
                 },
@@ -265,9 +265,9 @@
                     n = e.supportText,
                     a = e.title
                   return {
-                    category: b.Hk.RecentSearch,
+                    category: S.Hk.RecentSearch,
                     query: t,
-                    recentSearchType: b.g2.Event,
+                    recentSearchType: S.g2.Event,
                     queryMetadata: { id: t, image: r, title: a, supportText: n },
                   }
                 },
@@ -332,9 +332,9 @@
                   n = e.name
                 return r
                   ? {
-                      category: b.Hk.RecentSearch,
+                      category: S.Hk.RecentSearch,
                       query: r,
-                      recentSearchType: b.g2.Topic,
+                      recentSearchType: S.g2.Topic,
                       queryMetadata: { id: r, name: n, description: t },
                     }
                   : null
@@ -370,14 +370,14 @@
                 (0, s.Z)(e),
                 '_getMemoizedButtonType',
                 (0, de.Z)(function (e) {
-                  return e === b.Hk.SavedSearch ? 'destructiveText' : 'brandText'
+                  return e === S.Hk.SavedSearch ? 'destructiveText' : 'brandText'
                 }),
               ),
               (0, d.Z)(
                 (0, s.Z)(e),
                 '_getMemoizedRemoveIcon',
                 (0, de.Z)(function (e) {
-                  return e === b.Hk.SavedSearch ? he : ue
+                  return e === S.Hk.SavedSearch ? he : ue
                 }),
               ),
               (0, d.Z)((0, s.Z)(e), '_getButtonType', function () {
@@ -423,7 +423,7 @@
                   return {
                     category: t,
                     query: e.query,
-                    recentSearchType: t === b.Hk.RecentSearch ? b.g2.Keyword : void 0,
+                    recentSearchType: t === S.Hk.RecentSearch ? S.g2.Keyword : void 0,
                   }
                 },
               },
@@ -553,8 +553,8 @@
           }
         })
       var ge = ye
-      var be = r(24949),
-        Se = r(424208),
+      var Se = r(24949),
+        be = r(424208),
         Ze = r(663140),
         Ce = r(923335),
         _e = r(671896),
@@ -567,23 +567,23 @@
           (0, Ze.VZ)(e, Ze.ZP.AddressBookLookupNotFound)
         )
       }
-      var we = (0, be.P1)(_e.Ww, U.ZP.selectFetchStatuses, function (e, t) {
+      var we = (0, Se.P1)(_e.Ww, U.ZP.selectFetchStatuses, function (e, t) {
           var r = (0, F.Z)(e, function (e) {
             var r,
               n = null === (r = e.user) || void 0 === r ? void 0 : r.id
             return n && t[n] ? { id: n, fetchStatus: t[n] } : void 0
           })
-          return (0, Se.Z)(r, function (e) {
+          return (0, be.Z)(r, function (e) {
             return e.fetchStatus
           })
         }),
-        Re = (0, be.P1)(we, function (e) {
+        Re = (0, Se.P1)(we, function (e) {
           var t
           return (null !== (t = e[Ie.ZP.FAILED]) && void 0 !== t ? t : []).map(function (e) {
             return e.id
           })
         }),
-        ke = (0, be.P1)(we, U.ZP.selectErrors, function (e, t) {
+        ke = (0, Se.P1)(we, U.ZP.selectErrors, function (e, t) {
           var r,
             n,
             a,
@@ -597,7 +597,7 @@
             })
           return s.length > 0 ? Ie.ZP.LOADING : i.length > 0 ? Ie.ZP.LOADED : l.length > 0 ? Ie.ZP.FAILED : Ie.ZP.NONE
         }),
-        Te = (0, be.P1)(we, U.ZP.selectErrors, function (e, t) {
+        Te = (0, Se.P1)(we, U.ZP.selectErrors, function (e, t) {
           var r,
             n = null !== (r = e[Ie.ZP.FAILED]) && void 0 !== r ? r : []
           return (0, F.Z)(n, function (e) {
@@ -605,14 +605,14 @@
             if (Ee(null !== (r = t[e.id]) && void 0 !== r ? r : {})) return e.id
           })
         }),
-        Fe = (0, be.P1)(xe.as, function (e) {
+        Fe = (0, Se.P1)(xe.as, function (e) {
           return e.map(function (e) {
-            return { keyword: { query: e.query }, savedSearchId: e.id_str, category: b.Hk.SavedSearch }
+            return { keyword: { query: e.query }, savedSearchId: e.id_str, category: S.Hk.SavedSearch }
           })
         }),
-        Le = (0, be.P1)(_e.Ww, function (e) {
+        Le = (0, Se.P1)(_e.Ww, function (e) {
           return e.map(function (e) {
-            return (0, n.Z)((0, n.Z)({}, e), {}, { category: b.Hk.RecentSearch })
+            return (0, n.Z)((0, n.Z)({}, e), {}, { category: S.Hk.RecentSearch })
           })
         })
       var De = (0, B.Z)()
@@ -837,14 +837,14 @@
                   n = r.analytics,
                   a = r.removeQuery
                 switch (e.category) {
-                  case b.Hk.RecentSearch:
+                  case S.Hk.RecentSearch:
                     var o = { keyword: e.keyword, user: e.user, topic: e.topic, event: e.event }
                     a(o), i._resetFocus()
                     var s = g.Z.forRecentSearchResult(o, t),
                       l = i._handleRemoveAction(e)
                     s && n.scribe({ action: l, data: { items: [s] } })
                     break
-                  case b.Hk.SavedSearch:
+                  case S.Hk.SavedSearch:
                     i.setState({ shouldShowDeleteSavedSearchConfirmation: !0, savedSearchIdToDelete: e.savedSearchId })
                     break
                   default:
@@ -927,21 +927,21 @@
               (0, d.Z)((0, s.Z)(i), '_scribeClick', function (e, t) {
                 var r = i.props.analytics
                 switch (e.category) {
-                  case b.Hk.SavedSearch:
+                  case S.Hk.SavedSearch:
                     var a = g.Z.forSavedSearchResult(e.query, t)
                     r.scribe({ element: 'typeahead', action: 'click', data: { targets: [a] } })
                     break
-                  case b.Hk.RecentSearch:
+                  case S.Hk.RecentSearch:
                     var o
                     e.recentSearchType &&
                       (o =
-                        e.recentSearchType === b.g2.User
-                          ? { user: { type: b.g2.User, id: e.query } }
-                          : e.recentSearchType === b.g2.Event && e.queryMetadata && e.queryMetadata.title
-                          ? { event: (0, n.Z)((0, n.Z)({}, e.queryMetadata), {}, { type: b.g2.Event, id: e.query }) }
-                          : e.recentSearchType === b.g2.Topic && e.queryMetadata && e.queryMetadata.name
-                          ? { topic: (0, n.Z)((0, n.Z)({}, e.queryMetadata), {}, { type: b.g2.Topic, id: e.query }) }
-                          : { keyword: { type: b.g2.Keyword, query: e.query } })
+                        e.recentSearchType === S.g2.User
+                          ? { user: { type: S.g2.User, id: e.query } }
+                          : e.recentSearchType === S.g2.Event && e.queryMetadata && e.queryMetadata.title
+                          ? { event: (0, n.Z)((0, n.Z)({}, e.queryMetadata), {}, { type: S.g2.Event, id: e.query }) }
+                          : e.recentSearchType === S.g2.Topic && e.queryMetadata && e.queryMetadata.name
+                          ? { topic: (0, n.Z)((0, n.Z)({}, e.queryMetadata), {}, { type: S.g2.Topic, id: e.query }) }
+                          : { keyword: { type: S.g2.Keyword, query: e.query } })
                     var s = o && g.Z.forRecentSearchResult(o, t)
                     s && r.scribe({ action: 'click', data: { targets: [s] } })
                 }
@@ -1150,8 +1150,8 @@
       var Xe = f().a9ae1e78,
         et = f().hbc99b03,
         tt = /^(\w+)$/,
-        rt = [S.my.Events, S.my.Users, S.my.Topics],
-        nt = [S.my.Events, S.my.Users, S.my.Topics, S.my.Lists],
+        rt = [b.my.Events, b.my.Users, b.my.Topics],
+        nt = [b.my.Events, b.my.Users, b.my.Topics, b.my.Lists],
         at = function at(e) {
           return '@' === e[0] ? e.substring(1) : e
         },
@@ -1179,19 +1179,19 @@
                   o = e.queryMetadata,
                   i = e.recentSearchType,
                   s = c.props.addQuery
-                t === b.Hk.SavedSearch
+                t === S.Hk.SavedSearch
                   ? c._submitQuery({ query: a, shouldAddToRecentSearch: !1, src: Z.Z.SavedSearchClick })
-                  : i === b.g2.Keyword
+                  : i === S.g2.Keyword
                   ? c._submitQuery({ query: a, shouldAddToRecentSearch: !0, src: Z.Z.RecentSearchClick })
-                  : i === b.g2.Event
+                  : i === S.g2.Event
                   ? (c._routeTransition({ pathname: '/i/events/'.concat(a) }),
-                    o && o.title && s({ event: (0, n.Z)((0, n.Z)({}, o), {}, { id: a, type: b.g2.Event }) }))
-                  : i === b.g2.Topic
+                    o && o.title && s({ event: (0, n.Z)((0, n.Z)({}, o), {}, { id: a, type: S.g2.Event }) }))
+                  : i === S.g2.Topic
                   ? (c._routeTransition({ pathname: '/i/topics/'.concat(a) }),
-                    o && o.name && s({ topic: (0, n.Z)((0, n.Z)({}, o), {}, { id: a, type: b.g2.Topic }) }))
+                    o && o.name && s({ topic: (0, n.Z)((0, n.Z)({}, o), {}, { id: a, type: S.g2.Topic }) }))
                   : r &&
                     (c._routeTransition({ pathname: '/'.concat(r), userId: a }),
-                    s({ user: { id: a, type: b.g2.User } }))
+                    s({ user: { id: a, type: S.g2.User } }))
               }),
               (0, d.Z)((0, s.Z)(c), '_handleSearchShortcut', function (e) {
                 var t = c._inputRef
@@ -1205,7 +1205,7 @@
                 if (t && n.match(tt))
                   return {
                     id: ''.concat(r, '_no_result_user'),
-                    type: S.El.NoResult,
+                    type: b.El.NoResult,
                     data: { text: et({ screenName: n }), type: 'user' },
                   }
               }),
@@ -1256,27 +1256,27 @@
                 var r = c.props.addQuery,
                   n = c.state.query
                 switch (e.type) {
-                  case S.El.Event:
+                  case b.El.Event:
                     e.data && e.data.url
                       ? c._routeTransition({ pathname: v.ZP.parseInternalUrl(e.data.url) })
                       : c._submitQuery({ query: e.data.topic, src: Z.Z.TypeaheadClick })
                     break
-                  case S.El.Hashtag:
-                  case S.El.Topic:
+                  case b.El.Hashtag:
+                  case b.El.Topic:
                     c._submitQuery({ query: e.data.topic, shouldAddToRecentSearch: !0, src: Z.Z.TypeaheadClick })
                     break
-                  case S.El.List:
+                  case b.El.List:
                     c._routeTransition({ pathname: '/i/lists/'.concat(e.id) })
                     break
-                  case S.El.NoResult:
+                  case b.El.NoResult:
                     var a = e.data.type
                     'user' === a
                       ? c._routeTransition({ pathname: '/'.concat(at(n)) })
                       : 'topic' === a &&
                         c._submitQuery({ query: n, shouldAddToRecentSearch: !0, src: Z.Z.TypeaheadClick })
                     break
-                  case S.El.User:
-                    if (e.data.id_str) r({ user: { id: e.data.id_str, type: b.g2.User } })
+                  case b.El.User:
+                    if (e.data.id_str) r({ user: { id: e.data.id_str, type: S.g2.User } })
                     c._routeTransition({ pathname: '/'.concat(e.data.screen_name), userId: e.data.id_str })
                 }
               }),
@@ -1321,8 +1321,8 @@
                   d = i.onSubmit,
                   u = i.searchFilters,
                   h = i.searchRoute
-                ;(d && d(t, o, c.state.lastSubmittedQuery === t), n) && s({ keyword: { query: t, type: b.g2.Keyword } })
-                var p = (0, b.F_)({ query: t, querySrc: o, mode: l, searchFilters: u })
+                ;(d && d(t, o, c.state.lastSubmittedQuery === t), n) && s({ keyword: { query: t, type: S.g2.Keyword } })
+                var p = (0, S.F_)({ query: t, querySrc: o, mode: l, searchFilters: u })
                 c._routeTransition({ pathname: h, params: p, src: o }), c.setState({ lastSubmittedQuery: t })
               }),
               (0, d.Z)((0, s.Z)(c), '_setInputRef', function (e) {
@@ -1370,7 +1370,7 @@
                     u.createElement(I['default'], {
                       filter: this.context.featureSwitches.isTrue('rweb_lists_global_search_enabled') ? nt : rt,
                       forceVdlDisable: t,
-                      getTopicExactMatch: i ? S.P0 : void 0,
+                      getTopicExactMatch: i ? b.P0 : void 0,
                       getUserExactMatch: i ? this._getUserExactMatch : void 0,
                       initialValue: l,
                       inputStyle: it.input,
@@ -1390,7 +1390,7 @@
                       shouldAutoFocus: c,
                       shouldClearOnSelect: !0,
                       shouldDeferPrefetch: !0,
-                      source: S._4.SearchBox,
+                      source: b._4.SearchBox,
                       testID: Je,
                       withFixedPositioning: !0,
                       withFocusStyling: !0,
@@ -1415,13 +1415,13 @@
     233500: function _(e, t, r) {
       r.d(t, {
         GL: function GL() {
-          return b
+          return S
         },
         as: function as() {
           return g
         },
         k9: function k9() {
-          return S
+          return b
         },
         l9: function l9() {
           return Z
@@ -1496,7 +1496,7 @@
       var g = function g(e) {
           return e.savedSearches.savedSearches
         },
-        b = function b(e) {
+        S = function S(e) {
           return function (t, r, n) {
             var a = n.api
             return (0, c._O)(t, { request: a.SavedSearches.create, params: { query: e } })({
@@ -1505,7 +1505,7 @@
             })
           }
         },
-        S = function S(e) {
+        b = function b(e) {
           return function (t, r, n) {
             var a = n.api
             return (0, c._O)(t, { request: a.SavedSearches.destroy, params: { id: e } })({
@@ -1627,8 +1627,8 @@
         y = r.n(f),
         v = r(928045),
         g = r(445877),
-        b = r(16587),
-        S = r(773036),
+        S = r(16587),
+        b = r(773036),
         Z = r(436934),
         C = r(229496),
         _ = r(973186),
@@ -1739,7 +1739,7 @@
               (0, d.Z)(
                 (0, s.Z)(e),
                 '_getTextInputStyle',
-                (0, b.Z)(function (t) {
+                (0, S.Z)(function (t) {
                   return [e._getInputRootStyle(), t]
                 }),
               ),
@@ -1950,7 +1950,7 @@
                   return u.createElement(
                     u.Fragment,
                     null,
-                    S.ZP.isEdgeLegacy()
+                    b.ZP.isEdgeLegacy()
                       ? u.createElement('style', null, 'input[type=text]::-ms-clear { display: none; }')
                       : null,
                     u.createElement(
@@ -1980,6 +1980,7 @@
                     m.Z,
                     { style: [D.richContainer, this.props.isCompact && D.compact, this.props.inputStyle] },
                     u.createElement(e.element, {
+                      allowExtendedPasteStyles: e.allowExtendedPasteStyles,
                       appTextSize: this.props.appTextSize,
                       ariaActiveDescendant: this.props.ariaActiveDescendant,
                       ariaAutocomplete: this.props.ariaAutocomplete,
@@ -2041,11 +2042,11 @@
                     y = l || {},
                     v = y.element,
                     g = y.withDebug,
-                    b = v
+                    S = v
                   return u.createElement(
                     m.Z,
                     { style: [D.richContainer, s && D.compact, i] },
-                    u.createElement(b, {
+                    u.createElement(S, {
                       ariaActiveDescendant: t,
                       ariaAutocomplete: r,
                       ariaControls: n,
@@ -2315,8 +2316,8 @@
         y = u().if2bf8b4,
         v = u().f3624b5c,
         g = u().b4b3b113,
-        b = u().be222050,
-        S = u().hcbbe447,
+        S = u().be222050,
+        b = u().hcbbe447,
         _Z = (function (e) {
           ;(0, o.Z)(r, e)
           var t = (0, i.Z)(r)
@@ -2363,12 +2364,12 @@
                       ? u
                         ? v
                         : h
-                        ? b
+                        ? S
                         : y
                       : u
                       ? g({ fullName: i })
                       : h
-                      ? S({ fullName: i })
+                      ? b({ fullName: i })
                       : f({ fullName: i }))
                   )
                 },
@@ -2410,8 +2411,8 @@
         y = r(440271),
         v = r(511258),
         g = r(45680),
-        b = r(833131),
-        S = r(575629),
+        S = r(833131),
+        b = r(575629),
         Z = r(27895),
         C = r(156538),
         _ = r(307742),
@@ -2486,8 +2487,8 @@
               O = n.createElement(y['default'], { style: i }),
               M = n.createElement(v['default'], { style: i }),
               N = n.createElement(g['default'], { style: i }),
-              Q = n.createElement(b['default'], { style: i }),
-              V = n.createElement(S['default'], { style: i }),
+              Q = n.createElement(S['default'], { style: i }),
+              V = n.createElement(b['default'], { style: i }),
               q = n.createElement(Z['default'], { style: i }),
               j = n.createElement(C['default'], { style: i }),
               W = n.createElement(_['default'], { style: i }),
@@ -2588,7 +2589,7 @@
         y = r(868011),
         v = r(894963),
         g = r(849376),
-        b = [
+        S = [
           'avatarSize',
           'bottomControl',
           'iconStyle',
@@ -2605,7 +2606,7 @@
           'withLeftPadding',
           'withTextCentered',
         ],
-        S = (function (e) {
+        b = (function (e) {
           ;(0, i.Z)(r, e)
           var t = (0, s.Z)(r)
           function r() {
@@ -2628,10 +2629,10 @@
                     f = t.testID,
                     y = t.textColor,
                     g = t.textSize,
-                    S = t.topControl,
+                    b = t.topControl,
                     C = t.weight,
                     _ = (t.withBottomBorder, t.withLeftPadding),
-                    x = (t.withTextCentered, (0, n.Z)(t, b)),
+                    x = (t.withTextCentered, (0, n.Z)(t, S)),
                     I = (0, v.Z)(x),
                     E = I.Icon,
                     w = I.accessibilityLabel,
@@ -2650,7 +2651,7 @@
                         return c.createElement(
                           c.Fragment,
                           null,
-                          S || null,
+                          b || null,
                           c.createElement(
                             d.Z,
                             {
@@ -2734,7 +2735,7 @@
             r
           )
         })(c.PureComponent)
-      ;(0, l.Z)(S, 'defaultProps', {
+      ;(0, l.Z)(b, 'defaultProps', {
         iconSize: 'small',
         textColor: 'gray700',
         textSize: 'subtext2',
@@ -2762,7 +2763,7 @@
           socialContextTextCentered: { justifyContent: 'center' },
         }
       })
-      var C = S
+      var C = b
     },
     849376: function _(e, t, r) {
       r.d(t, {
@@ -2837,8 +2838,8 @@
         y = r(890601),
         v = r(231461),
         g = r(981665),
-        b = !!document.documentElement.currentStyle,
-        S = {
+        S = !!document.documentElement.currentStyle,
+        b = {
           'min-height': '0',
           'max-height': 'none',
           height: '0',
@@ -2874,8 +2875,8 @@
         C = {},
         _ = document.createElement('textarea'),
         x = function x(e) {
-          Object.keys(S).forEach(function (t) {
-            e.style.setProperty(t, S[t], 'important')
+          Object.keys(b).forEach(function (t) {
+            e.style.setProperty(t, b[t], 'important')
           })
         }
       function I(e, t, r, n, a) {
@@ -2893,7 +2894,7 @@
             }, {}),
             o = a['box-sizing']
           if ('' === o) return null
-          b &&
+          S &&
             'border-box' === o &&
             (a.width =
               parseFloat(a.width) +
@@ -3117,8 +3118,8 @@
                   f = e.editable,
                   v = e.inputMode,
                   g = e.max,
-                  b = e.maxLength,
-                  S = e.maxNumberOfLines,
+                  S = e.maxLength,
+                  b = e.maxNumberOfLines,
                   Z = e.min,
                   C = e.multiline,
                   _ = e.name,
@@ -3154,7 +3155,7 @@
                     disabled: !f,
                     inputMode: v,
                     max: g,
-                    maxLength: b,
+                    maxLength: S,
                     min: Z,
                     name: _,
                     onBlur: I,
@@ -3172,7 +3173,7 @@
                     testID: O,
                     value: e.value,
                   },
-                  V = { maxRows: S || x, minRows: x, useCacheForDOMMeasurements: N },
+                  V = { maxRows: b || x, minRows: x, useCacheForDOMMeasurements: N },
                   q = [P.alignLeft],
                   j = { enterKeyHint: B, type: M },
                   W = [P.alignLeft],
@@ -3291,10 +3292,10 @@
           p = e.accessibilityLabel,
           y = e.presenceRingType,
           g = (e.spaceId, (0, a.Z)(e, f)),
-          b =
+          S =
             p ||
             (function (e, t) {
-              if ('space' === e) return S.activeSpace({ screenName: t })
+              if ('space' === e) return b.activeSpace({ screenName: t })
               return
             })(y, e.screenName)
         return (
@@ -3308,7 +3309,7 @@
             m['default'],
             (0, n.Z)({}, g, {
               BorderComponent: h.Z.Default,
-              accessibilityLabel: b,
+              accessibilityLabel: S,
               avatarRef: function avatarRef(e) {
                 if (e) {
                   var t = e.getBoundingClientRect()
@@ -3332,15 +3333,15 @@
       function g(e) {
         return i.createElement(
           s.Z,
-          { style: [b.root, e.isWide ? b.rootWide : b.rootNarrow] },
+          { style: [S.root, e.isWide ? S.rootWide : S.rootNarrow] },
           i.createElement(
             h.Z.Default,
-            { style: [b.spaceGradient, e.isWide ? b.borderWide : b.borderNarrow] },
-            i.createElement(d['default'], { style: b.spaceIcon }),
+            { style: [S.spaceGradient, e.isWide ? S.borderWide : S.borderNarrow] },
+            i.createElement(d['default'], { style: S.spaceIcon }),
           ),
         )
       }
-      var b = p.Z.create(function (e) {
+      var S = p.Z.create(function (e) {
           var t = e.spacesPx.space16 + e.spacesPx.space2,
             r = '100%',
             n = e.spacesPx.space4,
@@ -3371,7 +3372,7 @@
             spaceIcon: { padding: e.spaces.space2, color: e.colors.white },
           }
         }),
-        S = { withoutUsernameFallback: c().b4cb0be2, activeSpace: c().g6520ddf }
+        b = { withoutUsernameFallback: c().b4cb0be2, activeSpace: c().g6520ddf }
     },
     819153: function _(e, t, r) {
       r.d(t, {
@@ -3395,8 +3396,8 @@
         y = r(525663),
         v = r(377089),
         g = r(77227),
-        b = r(174062),
-        S = r(641310),
+        S = r(174062),
+        b = r(641310),
         Z = r(309524),
         C = r(894963),
         _ = r(973186),
@@ -3439,8 +3440,8 @@
                   y = t.onScreenNameClick,
                   v = t.promotedContent,
                   g = t.promotedItemType,
-                  b = t.screenName,
-                  S = t.screenNameSuffix,
+                  S = t.screenName,
+                  b = t.screenNameSuffix,
                   Z = t.translatorType,
                   C = t.verifiedType,
                   _ = t.withFollowsYou,
@@ -3455,8 +3456,8 @@
                     name: f,
                     onLinkClick: y,
                     promotedContent: g === R.TWEET ? v : void 0,
-                    screenName: b,
-                    screenNameSuffix: S,
+                    screenName: S,
+                    screenNameSuffix: b,
                     translatorType: Z,
                     verifiedType: C,
                     withFollowsYou: _ && c,
@@ -3571,7 +3572,7 @@
                     M = h === k.UserCompact || U,
                     N =
                       _ && E === R.USER && 'earned' !== (_.disclosure_type && _.disclosure_type.toLowerCase())
-                        ? d.createElement(S.Z, { contentAuthorId: P, promotedContent: _, style: L.promotedIndicator })
+                        ? d.createElement(b.Z, { contentAuthorId: P, promotedContent: _, style: L.promotedIndicator })
                         : null,
                     Q = {
                       accessibilityHidden: !0,
@@ -3610,7 +3611,7 @@
                       l ? d.createElement(u.Z, { style: L.bottomControl }, l) : null,
                     )
                   return d.createElement(
-                    b.Z,
+                    S.Z,
                     {
                       accessibilityChecked: t,
                       accessibilityLabel: r,
