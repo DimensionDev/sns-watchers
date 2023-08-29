@@ -4744,20 +4744,9 @@ function _typeof(obj) {
           'g5a72e98',
           'These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful.',
         ),
-        a('e272836c', 'Delete note?'),
-        a('e457970a', 'Note Details'),
-        a('da5a5d8c', 'Once you delete this note, it will be permanently removed from Community Notes.'),
         a('bd7eb888', 'See all notes on this post'),
-        a('h8335712', 'Your note'),
-        a('b9f18eec', 'Currently rated helpful'),
-        a('ccc66cb8', 'Shown on X'),
-        a('d5061d00', 'Not shown on X'),
-        a('d6db34cc', 'Needs more ratings'),
-        a('j33f6520', 'Currently rated not helpful'),
         a('d50eb806', 'This note claims the post isn’t misleading, so it isn’t shown as context on the post.'),
-        a('a804a8f4', 'More notes need your help'),
-        a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
-        a('bf08be2e', 'Rate more notes now'),
+        a('i97b83f6', 'There was an error submitting your appeal, please try again.'),
         a('i606fc4c', 'About Community Notes appeals'),
         a('b664c554', 'Request additional contributor review'),
         a('ab66e1f2', 'Here’s how it works:'),
@@ -4768,8 +4757,32 @@ function _typeof(obj) {
         ),
         a('f9e1090c', 'Reviews are made by contributors, not X.'),
         a('i80c8a84', 'Additional review requested.'),
-        a('i97b83f6', 'There was an error submitting your appeal, please try again.'),
         a('f93d4391', 'request additional contributor review of this note'),
+        a('e457970a', 'Note Details'),
+        a('df587b98', 'Note ID'),
+        a('h201bdc8', 'Note Author'),
+        a('h74b96b0', 'Note submitted '),
+        a('ge25848a', 'Current Status'),
+        a('fe4fd310', 'Helpful'),
+        a('ccc66cb8', 'Shown on X'),
+        a('d6db34cc', 'Needs more ratings'),
+        a('ce8b505e', 'Not helpful'),
+        a('e5be8156', 'Note status computed by open-source algorithm'),
+        a(
+          'fca23c42',
+          'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post.',
+        ),
+        a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
+        a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
+        a('fc6e4594', 'Top tags selected by raters'),
+        a('h1b94770', 'This note is about the image and could be shown on other posts that include this image'),
+        a('a6c54fb0', 'This note is about the video and could be shown on other posts that include this video'),
+        a('e0648da4', 'This note is about the media and could be shown on other posts that include this media'),
+        a('e272836c', 'Delete note?'),
+        a('da5a5d8c', 'Once you delete this note, it will be permanently removed from Community Notes.'),
+        a('a804a8f4', 'More notes need your help'),
+        a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
+        a('bf08be2e', 'Rate more notes now'),
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
         a('a7338bc2', 'Is this note helpful?'),
         a('d93489e6', 'Do you agree with its conclusion?'),
@@ -4800,25 +4813,12 @@ function _typeof(obj) {
         a('c7751804', 'What was unhelpful about it?'),
         a('af198630', 'available to the public'),
         a('d39720d3', 'Helpful'),
-        a('i7d91dc9', 'Somewhat Helpful'),
-        a('c75b7fb4', 'Not Helpful'),
-        a('h1b94770', 'This note is about the image and could be shown on other posts that include this image'),
-        a('a6c54fb0', 'This note is about the video and could be shown on other posts that include this video'),
-        a('e0648da4', 'This note is about the media and could be shown on other posts that include this media'),
-        a('df587b98', 'Note ID'),
-        a('h201bdc8', 'Note Author'),
-        a('h74b96b0', 'Note submitted '),
-        a('ge25848a', 'Current Status'),
-        a('fe4fd310', 'Helpful'),
-        a('ce8b505e', 'Not helpful')
-      a('e5be8156', 'Note status computed by open-source algorithm'),
-        a(
-          'fca23c42',
-          'Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post.',
-        ),
-        a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
-        a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
-        a('fc6e4594', 'Top tags selected by raters'),
+        a('i7d91dc9', 'Somewhat Helpful')
+      a('c75b7fb4', 'Not Helpful'),
+        a('h8335712', 'Your note'),
+        a('b9f18eec', 'Currently rated helpful'),
+        a('d5061d00', 'Not shown on X'),
+        a('j33f6520', 'Currently rated not helpful'),
         a('idc0e9fc', 'Sign up to be a Community Notes contributor'),
         a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
         a('c2a6ec00', 'Want to join Community Notes?'),
@@ -10478,6 +10478,58 @@ function _typeof(obj) {
               },
             },
             {
+              key: 'e837f62f',
+              get: function get() {
+                return [this.props.impactDisplayNumber + ' Rating Impact']
+              },
+            },
+            {
+              key: 'f2bad803',
+              get: function get() {
+                return [this.props.impactDisplayNumber + ' Writing Impact']
+              },
+            },
+            {
+              key: 'd72006a9',
+              get: function get() {
+                return [
+                  'This note is about the video and showing on ' +
+                    this.props.matches +
+                    ' posts that include this video',
+                ]
+              },
+            },
+            {
+              key: 'ee90ebd5',
+              get: function get() {
+                return [
+                  'This note is about the video and could be shown on ' +
+                    this.props.matches +
+                    ' posts that include this video',
+                ]
+              },
+            },
+            {
+              key: 'ab94511b',
+              get: function get() {
+                return [
+                  'This note is about the image and showing on ' +
+                    this.props.matches +
+                    ' posts that include this image',
+                ]
+              },
+            },
+            {
+              key: 'aecaf9d7',
+              get: function get() {
+                return [
+                  'This note is about the image and could be shown on ' +
+                    this.props.matches +
+                    ' posts that include this image',
+                ]
+              },
+            },
+            {
               key: 'if77e237',
               get: function get() {
                 return ['You rated this note as ', '.']
@@ -10550,58 +10602,6 @@ function _typeof(obj) {
               key: 'c3d1a1b1',
               get: function get() {
                 return ['You rated this note as ', '.']
-              },
-            },
-            {
-              key: 'd72006a9',
-              get: function get() {
-                return [
-                  'This note is about the video and showing on ' +
-                    this.props.matches +
-                    ' posts that include this video',
-                ]
-              },
-            },
-            {
-              key: 'ee90ebd5',
-              get: function get() {
-                return [
-                  'This note is about the video and could be shown on ' +
-                    this.props.matches +
-                    ' posts that include this video',
-                ]
-              },
-            },
-            {
-              key: 'ab94511b',
-              get: function get() {
-                return [
-                  'This note is about the image and showing on ' +
-                    this.props.matches +
-                    ' posts that include this image',
-                ]
-              },
-            },
-            {
-              key: 'aecaf9d7',
-              get: function get() {
-                return [
-                  'This note is about the image and could be shown on ' +
-                    this.props.matches +
-                    ' posts that include this image',
-                ]
-              },
-            },
-            {
-              key: 'e837f62f',
-              get: function get() {
-                return [this.props.impactDisplayNumber + ' Rating Impact']
-              },
-            },
-            {
-              key: 'f2bad803',
-              get: function get() {
-                return [this.props.impactDisplayNumber + ' Writing Impact']
               },
             },
             {
