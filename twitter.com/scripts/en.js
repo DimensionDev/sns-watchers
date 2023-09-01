@@ -6844,6 +6844,7 @@ function _typeof(obj) {
         }),
         a('c4640fc0', 'Share Subscriptions profile'),
         a('a72064a8', 'Copy link to Subscriptions profile'),
+        a('e6c72234', 'Email Sharing Terms'),
         a('b17f0c4b', function (e) {
           return 'You are now Subscribed to @' + e.screenName
         }),
@@ -7299,9 +7300,9 @@ function _typeof(obj) {
         ),
         a('h6dc3200', 'Go to legacy X Pro'),
         a('g26f0ea2', 'X Pro Terms'),
-        a('cb82860a', 'Column not found'),
-        a('icbecd02', 'Add Column')
-      a('fdf1a2c6', 'Add Deck'),
+        a('cb82860a', 'Column not found')
+      a('icbecd02', 'Add Column'),
+        a('fdf1a2c6', 'Add Deck'),
         a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
           return 'Changed to column - ' + e.title
@@ -11113,6 +11114,17 @@ function _typeof(obj) {
               key: 'f6fa2033',
               get: function get() {
                 return ['Twitter suspends accounts which violate the ']
+              },
+            },
+            {
+              key: 'fca299bb',
+              get: function get() {
+                return [
+                  'Share your email with ' +
+                    this.props.creatorName +
+                    '. By accepting, you agree to let X share the email address with the creator for the purpose of off-platform communication and accept the ',
+                  '.',
+                ]
               },
             },
             {
