@@ -1790,6 +1790,8 @@ function _typeof(obj) {
           return 'Review and agree to ' + e.communityName + ' Rules'
         }),
         a('c966ac64', 'Unable to request to join Community. Please try again later.'),
+        a('g690e07e', 'Your Answer (optional)'),
+        a('a5d21bf4', 'Answer is optional. But remember it helps moderators accept your request.'),
         a('g3631342', 'Twitter’s rules'),
         a('c00c234f', function (e) {
           return e.communityName + ' Rules'
@@ -1937,7 +1939,7 @@ function _typeof(obj) {
         }),
         a('c837fcaa', 'Show more replies'),
         a('d228a9a0', 'Show more'),
-        a('e4c6c30a', 'This Tweet is unavailable.'),
+        a('b52a940c', 'This post is unavailable.'),
         a('da59404c', 'You’re currently viewing the latest version.'),
         a('e267df68', 'Reply hidden'),
         a('d5f162b6', 'Unhide this reply anytime. Anything else?'),
@@ -2296,7 +2298,6 @@ function _typeof(obj) {
         a('hbc99b03', function (e) {
           return 'Go to @' + e.screenName
         }),
-        a('ee295fbe', 'Try searching for people, topics, or keywords'),
         a('a2c1b222', 'Try searching for people, lists, or keywords'),
         a('f45c4250', 'Clear all recent searches?'),
         a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
@@ -2366,11 +2367,11 @@ function _typeof(obj) {
         a('g571ef41', 'Subscribers'),
         a('d48d6476', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
+        })
+      a('i9451241', 'Subscribers'),
+        a('hdf48104', function (e) {
+          return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
-        a('i9451241', 'Subscribers')
-      a('hdf48104', function (e) {
-        return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-      }),
         a('dcbb6a0b', 'Subscribers'),
         a('ba74e38b', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
@@ -3465,6 +3466,7 @@ function _typeof(obj) {
         a('f53750e6', 'Finish setting up payout details'),
         a('hc7631da', 'You have not completed setting up your Stripe account'),
         a('ae57c15d', 'Finish setting up your payout account'),
+        a('d809ac49', 'here'),
         a('bbe09d38', 'Application accepted · Pending configuration on app stores'),
         a('ja73ebac', 'Revenue'),
         a('bc43a32e', 'Recent activity'),
@@ -3601,13 +3603,13 @@ function _typeof(obj) {
         a(
           'b5bf619a',
           'When we detect potentially abusive or spammy replies, mentions, or Quotes, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
-        ),
-        a('e83ecbf6', 'You get a break'),
+        )
+      a('e83ecbf6', 'You get a break'),
         a(
           'g6fdfffc',
           'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
-        )
-      a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
+        ),
+        a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
         a(
           'bff84f2a',
           'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
@@ -4781,30 +4783,14 @@ function _typeof(obj) {
         a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
         a('bf08be2e', 'Rate more notes now'),
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
-        a('a7338bc2', 'Is this note helpful?'),
-        a('d93489e6', 'Do you agree with its conclusion?'),
-        a('j63844f6', 'What about this note was helpful to you?'),
-        a('e0806a48', 'Help us understand why this note was unhelpful'),
-        a('j6aa6172', 'Delete rating?'),
-        a('i4112750', 'This can’t be undone.'),
-        a('d1a479a8', 'Unavailable for legacy ratings'),
-        a('a43beaf3', 'helpful'),
-        a('cb1d0ef4', 'unhelpful'),
-        a('he5f1493', 'agreed'),
-        a('a67e7d92', 'disagreed'),
-        a('c9c4850b', 'helpful'),
-        a('ffa975ff', 'agreed'),
-        a('c9701443', 'helpful'),
-        a('d2be9800', 'disagreed'),
-        a('cf87d556', 'unhelpful'),
-        a('hec80c97', 'agreed'),
-        a('bfa5f566', 'unhelpful'),
-        a('eb1cc800', 'disagreed'),
         a('i26425d8', 'Somewhat'),
         a('c6e683d0', 'Submit & Agree'),
+        a('j6aa6172', 'Delete rating?'),
+        a('i4112750', 'This can’t be undone.'),
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
+        a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -4816,8 +4802,8 @@ function _typeof(obj) {
         a('b9f18eec', 'Currently rated helpful'),
         a('d5061d00', 'Not shown on X'),
         a('j33f6520', 'Currently rated not helpful'),
-        a('idc0e9fc', 'Sign up to be a Community Notes contributor')
-      a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
+        a('idc0e9fc', 'Sign up to be a Community Notes contributor'),
+        a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
         a('c2a6ec00', 'Want to join Community Notes?'),
         a('d2470b62', 'Help people stay better informed.'),
         a('ab23a972', 'Follow the conversation'),
@@ -4833,11 +4819,11 @@ function _typeof(obj) {
         a(
           'fa9a644a',
           'If 3 of your 5 most recent notes with a status of Helpful or Not Helpful are deemed Not Helpful, your ability to write notes will be temporarily locked.',
-        ),
-        a(
-          'i4014342',
-          'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
-        ),
+        )
+      a(
+        'i4014342',
+        'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
+      ),
         a('j9897a7c', 'Get note writing tips'),
         a(
           'd07b1650',
@@ -5171,6 +5157,14 @@ function _typeof(obj) {
         a('e988475f', function (e) {
           return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
         }),
+        a('e5fc9e28', 'Community question'),
+        a(
+          'fe9a5c92',
+          'When users request to join, they can answer this question. Their response will be shown with their request.',
+        ),
+        a('j74fd43b', function (e) {
+          return 'Question must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
+        }),
         a('dce5e1b4', 'Admin tools'),
         a('c5d8c93e', 'Moderator tools'),
         a('c8c7f9fc', 'Review needed'),
@@ -5210,6 +5204,7 @@ function _typeof(obj) {
         }),
         a('j8af8eaa', 'Membership type'),
         a('d5f01116', 'Purpose'),
+        a('i76489fe', 'Question'),
         a('c3c04b70', 'Color theme'),
         a('f4a98e9e', 'Community information'),
         a('ab1069de', 'Delete Community'),
@@ -5237,6 +5232,8 @@ function _typeof(obj) {
         a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
         a('a8955490', 'Edit purpose'),
         a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
+        a('ba74c098', 'Edit question'),
+        a('h28ba1b2', 'Looks like we’re having trouble saving your question description. Please try again later.'),
         a('dbda7bec', 'Change theme'),
         a('hcf35d0d', function (e) {
           return 'Save theme as ' + e.themeName
@@ -6023,7 +6020,15 @@ function _typeof(obj) {
         a('a097f7ba', 'Dates'),
         a('c03f15ca', 'Any language'),
         a('cb334136', 'Links'),
-        a('e8f38622', 'Include Tweets with links')
+        a('e8f38622', 'Include Tweets with links'),
+        a('ie23eefa', 'Only show Tweets with links'),
+        a('ge10bfa2', 'Include replies and original Tweets'),
+        a('ab870904', 'Only show replies'),
+        a('b6215680', 'All of these words'),
+        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
+        a('f1c5faee', 'This exact phrase'),
+        a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
+        a('a555a3f4', 'Any of these words')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6064,15 +6069,7 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('ie23eefa', 'Only show Tweets with links'),
-        a('ge10bfa2', 'Include replies and original Tweets'),
-        a('ab870904', 'Only show replies'),
-        a('b6215680', 'All of these words'),
-        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
-        a('f1c5faee', 'This exact phrase'),
-        a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
-        a('a555a3f4', 'Any of these words'),
-        a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
+      a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
         a('f51fe348', 'None of these words'),
         a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
         a('d10da5da', 'These hashtags'),
@@ -7005,6 +7002,7 @@ function _typeof(obj) {
         a('bb39aec3', function (e) {
           return 'Featured Jobs (' + e.count + ')'
         }),
+        a('f508c49c', 'Copy link to job'),
         a('b026896a', 'Are you sure you want to delete this job?'),
         a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
         a('jf1576ba', 'Failed'),
@@ -7300,8 +7298,8 @@ function _typeof(obj) {
         ),
         a('h6dc3200', 'Go to legacy X Pro'),
         a('g26f0ea2', 'X Pro Terms'),
-        a('cb82860a', 'Column not found')
-      a('icbecd02', 'Add Column'),
+        a('cb82860a', 'Column not found'),
+        a('icbecd02', 'Add Column'),
         a('fdf1a2c6', 'Add Deck'),
         a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
@@ -7309,8 +7307,8 @@ function _typeof(obj) {
         }),
         a('ba7bd92e', 'Column settings'),
         a('cc4ff736', 'Sharing column'),
-        a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
-        a('a6bbdc1c', 'View only'),
+        a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.')
+      a('a6bbdc1c', 'View only'),
         a('e6df688c', 'Options'),
         a('e3f2b93a', 'Show or hide info about this column.'),
         a('db257758', 'Media preview size'),
@@ -8267,8 +8265,8 @@ function _typeof(obj) {
         }),
         a('f2849136', 'Analytics'),
         a('f206e970', 'View post analytics'),
-        a('b3be4bff', function (e) {
-          return e.count + ' View' + n(e.count, '', 's') + '. View post analytics'
+        a('c7073f5b', function (e) {
+          return e.count + ' view' + n(e.count, '', 's') + '. View post analytics'
         }),
         a('hf417cf0', 'Remove from Bookmarks'),
         a('febd30ed', function (e) {
@@ -9755,6 +9753,15 @@ function _typeof(obj) {
               },
             },
             {
+              key: 'a8e78be7',
+              get: function get() {
+                return [
+                  'Your account has been flagged and cannot participate in the Ad Revenue Sharing program. You may appeal by following the instructions ',
+                  '. Your share of revenue will continue to accrue while your appeal is processed.',
+                ]
+              },
+            },
+            {
               key: 'ge990f4f',
               get: function get() {
                 return ['']
@@ -10506,54 +10513,6 @@ function _typeof(obj) {
                     this.props.matches +
                     ' posts that include this image',
                 ]
-              },
-            },
-            {
-              key: 'if77e237',
-              get: function get() {
-                return ['You rated this note as ', '.']
-              },
-            },
-            {
-              key: 'c312ca7d',
-              get: function get() {
-                return ['You rated this note as ', '.']
-              },
-            },
-            {
-              key: 'j575fa79',
-              get: function get() {
-                return ['You ', ' with its conclusion.']
-              },
-            },
-            {
-              key: 'h61f9ad3',
-              get: function get() {
-                return ['You ', ' with its conclusion.']
-              },
-            },
-            {
-              key: 'd570f1d9',
-              get: function get() {
-                return ['You rated this note as ', ' and ', ' with its conclusion.']
-              },
-            },
-            {
-              key: 'c6cb9513',
-              get: function get() {
-                return ['You rated this note as ', ' and ', ' with its conclusion.']
-              },
-            },
-            {
-              key: 'fe957a43',
-              get: function get() {
-                return ['You rated this note as ', ' and ', ' with its conclusion.']
-              },
-            },
-            {
-              key: 'gbfec7fd',
-              get: function get() {
-                return ['You rated this note as ', ' and ', ' with its conclusion.']
               },
             },
             {

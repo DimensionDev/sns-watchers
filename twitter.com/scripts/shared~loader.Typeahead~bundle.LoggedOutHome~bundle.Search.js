@@ -66,10 +66,10 @@
       r.r(t),
         r.d(t, {
           SearchBoxContainer: function SearchBoxContainer() {
-            return ot
+            return nt
           },
           default: function _default() {
-            return st
+            return ot
           },
         })
       var n = r(133028),
@@ -661,14 +661,13 @@
         .withAnalytics({ element: 'typeahead' })
       var Pe = r(950617),
         Ae = r(785693),
-        He = f().ee295fbe,
-        Be = f().a2c1b222,
-        ze = { headline: f().f45c4250, text: f().caae4dda, confirmButtonLabel: f().dbd5d400 },
-        Ue = f().a8d68f62,
-        Oe = f().c6530778,
-        Me = f().e047b8fa,
-        Ne = ['event', 'keyword', 'topic', 'user'],
-        Qe = (function (e) {
+        He = f().a2c1b222,
+        Be = { headline: f().f45c4250, text: f().caae4dda, confirmButtonLabel: f().dbd5d400 },
+        ze = f().a8d68f62,
+        Ue = f().c6530778,
+        Oe = f().e047b8fa,
+        Me = ['event', 'keyword', 'topic', 'user'],
+        Ne = (function (e) {
           ;(0, l.Z)(r, e)
           var t = (0, c.Z)(r)
           function r(e, a) {
@@ -680,10 +679,10 @@
                 var e = i.props,
                   t = e.failedRecentSearchUserIds,
                   r = e.recentSearches.filter(function (e) {
-                    return e.user && Ne.includes('user')
+                    return e.user && Me.includes('user')
                       ? t.indexOf(e.user.id) < 0
                       : Object.keys(e).some(function (e) {
-                          return Ne.includes(e)
+                          return Me.includes(e)
                         })
                   })
                 return r.length > 15 ? r.slice(0, 15) : r
@@ -697,12 +696,8 @@
                 return n
                   ? u.createElement(
                       h.Z,
-                      { style: Ve.emptyState, testID: Ae.Z.typeaheadEmptySearch },
-                      u.createElement(
-                        R.ZP,
-                        { align: 'center', color: 'gray700' },
-                        i.context.featureSwitches.isTrue('rweb_lists_global_search_enabled') ? Be : He,
-                      ),
+                      { style: Qe.emptyState, testID: Ae.Z.typeaheadEmptySearch },
+                      u.createElement(R.ZP, { align: 'center', color: 'gray700' }, He),
                     )
                   : u.createElement(
                       h.Z,
@@ -713,8 +708,8 @@
                             null,
                             u.createElement(
                               h.Z,
-                              { style: Ve.header, testID: Ae.Z.typeaheadRecentSearchesHeader },
-                              u.createElement(R.ZP, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Ue),
+                              { style: Qe.header, testID: Ae.Z.typeaheadRecentSearchesHeader },
+                              u.createElement(R.ZP, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, ze),
                               u.createElement(
                                 k.ZP,
                                 {
@@ -725,7 +720,7 @@
                                   size: 'xSmall',
                                   type: 'brandText',
                                 },
-                                Me,
+                                Oe,
                               ),
                             ),
                             a.map(function (e, t) {
@@ -741,10 +736,10 @@
                               h.Z,
                               {
                                 accessibilityHidden: !0,
-                                style: [Ve.header, Ve.borderTop],
+                                style: [Qe.header, Qe.borderTop],
                                 testID: Ae.Z.typeaheadSavedSearchesHeader,
                               },
-                              u.createElement(R.ZP, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Oe),
+                              u.createElement(R.ZP, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Ue),
                             ),
                             i._renderSavedSearches(),
                           )
@@ -1061,13 +1056,13 @@
                     }),
                     a
                       ? u.createElement(T.Z, {
-                          confirmButtonLabel: ze.confirmButtonLabel,
+                          confirmButtonLabel: Be.confirmButtonLabel,
                           confirmButtonType: 'destructiveFilled',
-                          headline: ze.headline,
+                          headline: Be.headline,
                           onCancel: this._handleOnClearAllCancel,
                           onConfirm: this._handleOnClearAllConfirm,
                           testID: Ae.Z.deleteRecentSearchesDialog,
-                          text: ze.text,
+                          text: Be.text,
                         })
                       : null,
                     o
@@ -1100,8 +1095,8 @@
             r
           )
         })(u.Component)
-      ;(0, d.Z)(Qe, 'contextType', _.rC)
-      var Ve = p.Z.create(function (e) {
+      ;(0, d.Z)(Ne, 'contextType', _.rC)
+      var Qe = p.Z.create(function (e) {
         return {
           emptyState: { padding: e.spaces.space12, paddingTop: e.spaces.space20 },
           borderTop: { borderTopColor: e.colors.borderColor, borderTopStyle: 'solid', borderTopWidth: 1 },
@@ -1114,22 +1109,22 @@
           },
         }
       })
-      var qe = De.forwardRef(Qe)
-      var je = (0, B.Z)()
+      var Ve = De.forwardRef(Ne)
+      var qe = (0, B.Z)()
         .propsFromActions(function () {
           return { addQuery: _e.DI }
         })
         .withAnalytics({ component: 'search_box' })
-      var We = r(196234),
-        Ke = r(702847),
-        Ge = function Ge(e, t) {
+      var je = r(196234),
+        We = r(702847),
+        Ke = function Ke(e, t) {
           return U.ZP.select(e, t.userId)
         }
-      var Ye = function Ye(e) {
+      var Ge = function Ge(e) {
         var t = e.user,
           r = e.userId,
           n = u.useState(!1),
-          a = (0, We.Z)(n, 2),
+          a = (0, je.Z)(n, 2),
           o = a[0],
           i = a[1],
           s = u.useContext(_.rC).featureSwitches.isTrue('follow_nudge_search_enabled')
@@ -1140,22 +1135,21 @@
             },
             [t, s],
           ),
-          o ? u.createElement(Ke.C, { isFollowNudge: !0, showRelationshipChangeConfirmation: !0, userId: r }) : null
+          o ? u.createElement(We.C, { isFollowNudge: !0, showRelationshipChangeConfirmation: !0, userId: r }) : null
         )
       }
-      var $e = (0, B.Z)().propsFromState(function () {
-          return { user: Ge }
-        })(u.memo(Ye)),
-        Je = 'SearchBox_Search_Input'
-      var Xe = f().a9ae1e78,
-        et = f().hbc99b03,
-        tt = /^(\w+)$/,
-        rt = [b.my.Events, b.my.Users, b.my.Topics],
-        nt = [b.my.Events, b.my.Users, b.my.Topics, b.my.Lists],
-        at = function at(e) {
+      var Ye = (0, B.Z)().propsFromState(function () {
+          return { user: Ke }
+        })(u.memo(Ge)),
+        $e = 'SearchBox_Search_Input'
+      var Je = f().a9ae1e78,
+        Xe = f().hbc99b03,
+        et = /^(\w+)$/,
+        tt = [b.my.Events, b.my.Users, b.my.Topics, b.my.Lists],
+        rt = function rt(e) {
           return '@' === e[0] ? e.substring(1) : e
         },
-        ot = (function (e) {
+        nt = (function (e) {
           ;(0, l.Z)(r, e)
           var t = (0, c.Z)(r)
           function r(e, i) {
@@ -1164,13 +1158,13 @@
               (0, o.Z)(this, r),
               (c = t.call(this, e, i)),
               (0, d.Z)((0, s.Z)(c), '_renderSearchBoxEmptyState', function (e) {
-                return u.createElement(qe, (0, a.Z)({}, e, { onItemClick: c._handleSearchItemClick }))
+                return u.createElement(Ve, (0, a.Z)({}, e, { onItemClick: c._handleSearchItemClick }))
               }),
               (0, d.Z)((0, s.Z)(c), '_renderSearchUserDecoration', function (e) {
                 e.user
                 var t = e.userId,
                   r = c.context.viewerUserId
-                return r && t !== r ? u.createElement($e, { userId: t }) : null
+                return r && t !== r ? u.createElement(Ye, { userId: t }) : null
               }),
               (0, d.Z)((0, s.Z)(c), '_handleSearchItemClick', function (e) {
                 var t = e.category,
@@ -1201,12 +1195,12 @@
                 e.hasResults
                 var t = e.isLoaded,
                   r = e.query,
-                  n = at(r)
-                if (t && n.match(tt))
+                  n = rt(r)
+                if (t && n.match(et))
                   return {
                     id: ''.concat(r, '_no_result_user'),
                     type: b.El.NoResult,
-                    data: { text: et({ screenName: n }), type: 'user' },
+                    data: { text: Xe({ screenName: n }), type: 'user' },
                   }
               }),
               (0, d.Z)((0, s.Z)(c), '_handleOnDismiss', function () {
@@ -1271,7 +1265,7 @@
                   case b.El.NoResult:
                     var a = e.data.type
                     'user' === a
-                      ? c._routeTransition({ pathname: '/'.concat(at(n)) })
+                      ? c._routeTransition({ pathname: '/'.concat(rt(n)) })
                       : 'topic' === a &&
                         c._submitQuery({ query: n, shouldAddToRecentSearch: !0, src: Z.Z.TypeaheadClick })
                     break
@@ -1366,14 +1360,14 @@
                     c = !!a.state && !!a.state.searchFocused
                   return u.createElement(
                     h.Z,
-                    { style: it.root },
+                    { style: at.root },
                     u.createElement(I['default'], {
-                      filter: this.context.featureSwitches.isTrue('rweb_lists_global_search_enabled') ? nt : rt,
+                      filter: tt,
                       forceVdlDisable: t,
                       getTopicExactMatch: i ? b.P0 : void 0,
                       getUserExactMatch: i ? this._getUserExactMatch : void 0,
                       initialValue: l,
-                      inputStyle: it.input,
+                      inputStyle: at.input,
                       isCompact: r,
                       isOnHomepage: n,
                       onDismiss: this._handleOnDismiss,
@@ -1391,7 +1385,7 @@
                       shouldClearOnSelect: !0,
                       shouldDeferPrefetch: !0,
                       source: b._4.SearchBox,
-                      testID: Je,
+                      testID: $e,
                       withFixedPositioning: !0,
                       withFocusStyling: !0,
                     }),
@@ -1402,15 +1396,15 @@
             r
           )
         })(u.Component)
-      ;(0, d.Z)(ot, 'defaultProps', { initialValue: '', placeholder: Xe, searchRoute: '/search', forceVdlDisable: !0 }),
-        (0, d.Z)(ot, 'contextType', _.rC)
-      var it = p.Z.create(function (e) {
+      ;(0, d.Z)(nt, 'defaultProps', { initialValue: '', placeholder: Je, searchRoute: '/search', forceVdlDisable: !0 }),
+        (0, d.Z)(nt, 'contextType', _.rC)
+      var at = p.Z.create(function (e) {
         return {
           root: { alignItems: 'stretch', flexBasis: 0, flexDirection: 'row', flexGrow: 1 },
           input: { flexShrink: 1 },
         }
       })
-      var st = (0, C.ZP)(je(ot))
+      var ot = (0, C.ZP)(qe(nt))
     },
     233500: function _(e, t, r) {
       r.d(t, {
