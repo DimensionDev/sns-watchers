@@ -403,7 +403,7 @@ function _typeof(obj) {
         a('a5a30af0', 'Articles'),
         a('f75d1806', 'Premium'),
         a('bcd81cac', 'Preferences'),
-        a('c244210c', 'X Pro'),
+        a('c8061958', 'Pro'),
         a('hc73f030', 'Your Account'),
         a('f15bfdb4', 'Account information'),
         a('a3841918', 'Email'),
@@ -1135,12 +1135,7 @@ function _typeof(obj) {
         a('j018f2a2', 'Explore settings'),
         a('h1ef00dc', 'Search settings'),
         a('ee4592ca', 'No one'),
-        a('c75c45d6', 'Allow messages only from people you follow'),
-        a('c6f33c94', 'You won’t receive any message requests'),
         a('da813d22', 'Verified users'),
-        a('gba4db78', 'Allow message requests only from Verified users'),
-        a('e3a8b282', 'People you follow will still be able to message you'),
-        a('b4006390', 'Allow message requests from everyone'),
         a('b3d8566e', 'Filter low-quality messages'),
         a(
           'cfda8c44',
@@ -1162,10 +1157,7 @@ function _typeof(obj) {
           'Let people you’re messaging with know when you’ve seen their messages. Read receipts are not shown on message requests.',
         ),
         a('f29080d0', 'Allow message requests from:'),
-        a('a5a058d2', 'Control who can message you'),
-        a('e7e8df00', 'Other controls'),
         a('j0adcc2d', 'Learn more'),
-        a('jec0d807', 'Learn more'),
         a('ib3357a6', 'Personalized ads'),
         a(
           'f2f9628e',
@@ -1181,8 +1173,8 @@ function _typeof(obj) {
         a(
           'e2d61838',
           'This setting lets X keep track of your visits to other websites that integrate X content, such as embedded timelines. That information makes X better for you, such as by personalizing your experience. This web browsing history will never be stored with your name, email, or phone number.',
-        )
-      a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
+        ),
+        a('c966aaf4', 'These web page visits are not stored or used when you’re in certain countries.'),
         a('e8313b32', 'Are you sure? Once you turn this off, you can’t turn it back on while you’re in this country.'),
         a('f1d46fd6', 'Yes, I’m sure'),
         a('f6c8ccc8', 'Personalize based on your inferred identity'),
@@ -1195,11 +1187,11 @@ function _typeof(obj) {
           'f1c0d09c',
           'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
         ),
-        a('dc20d918', 'Personalize based on places you’ve been'),
-        a(
-          'af7d89e6',
-          'X always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, X may also personalize your experience based on other places you’ve been.',
-        ),
+        a('dc20d918', 'Personalize based on places you’ve been')
+      a(
+        'af7d89e6',
+        'X always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, X may also personalize your experience based on other places you’ve been.',
+      ),
         a('f2b23062', 'Accessibility, display and languages'),
         a('fa76d7dc', 'Manage how X content is displayed to you.'),
         a('j7a15010', 'Manage aspects of your X experience such as limiting color contrast and motion.'),
@@ -1465,9 +1457,11 @@ function _typeof(obj) {
         a('c64974fc', 'Followers'),
         a('i099d32e', 'Followers you know'),
         a('d960b55c', 'Following'),
+        a('b007440a', 'Jobs'),
         a('aa68dafc', 'Notification details'),
         a('jf00ebf6', 'Column unavailable'),
         a('jaaa8984', 'Location'),
+        a('f345dcda', 'Edit History'),
         a('b5b7fb94', 'Group'),
         a('g755fcde', 'You'),
         a('f6b1ff81', function (e) {
@@ -2367,8 +2361,8 @@ function _typeof(obj) {
         a('g571ef41', 'Subscribers'),
         a('d48d6476', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
-        })
-      a('i9451241', 'Subscribers'),
+        }),
+        a('i9451241', 'Subscribers'),
         a('hdf48104', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
@@ -2379,10 +2373,10 @@ function _typeof(obj) {
         a('c65916af', 'Subscribers'),
         a('a828b60a', function (e) {
           return '' + e.userName
-        }),
-        a('e39e1360', function (e) {
-          return '' + e.userName
-        }),
+        })
+      a('e39e1360', function (e) {
+        return '' + e.userName
+      }),
         a('fb912eb3', function (e) {
           return e.userOneName + ' and ' + e.userTwoName
         }),
@@ -2825,6 +2819,10 @@ function _typeof(obj) {
           'This account is not eligible for ID verification. Only individual Premium subscribers are currently eligible for ID verification.',
         ),
         a('h05c1f28', 'Verify your account by providing a government-issued ID. This usually takes about 5 minutes.'),
+        a(
+          'j8cfcc62',
+          'I consent to X and Au10tix using images of my ID and my selfie, including extracted biometric data, to confirm my identity and for X’s related safety and security purposes, including preventing impersonation. Au10tix may store such data for up to 30 days.',
+        ),
         a('c4930cb6', 'What you will need:'),
         a('ac7bb0fe', 'Prepare a government-issued ID'),
         a('c12ce69c', 'Check if your device’s camera is uncovered and working'),
@@ -3603,8 +3601,8 @@ function _typeof(obj) {
         a(
           'b5bf619a',
           'When we detect potentially abusive or spammy replies, mentions, or Quotes, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
-        )
-      a('e83ecbf6', 'You get a break'),
+        ),
+        a('e83ecbf6', 'You get a break'),
         a(
           'g6fdfffc',
           'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
@@ -3614,8 +3612,8 @@ function _typeof(obj) {
           'bff84f2a',
           'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
         ),
-        a('fabe1398', 'Autoblocks'),
-        a('h58f67dc', 'What’s Safety Mode?'),
+        a('fabe1398', 'Autoblocks')
+      a('h58f67dc', 'What’s Safety Mode?'),
         a(
           'a37e9b0a',
           'Autoblock accounts for a week that might be acting abusive or spammy. Accounts you follow or message with aren’t autoblocked.',
@@ -3792,6 +3790,7 @@ function _typeof(obj) {
         a('c8169274', 'There was a problem with saving your application. Please try again later.'),
         a('f242a8ac', 'Ads Revenue Sharing Terms'),
         a('d085a144', 'Creator earnings dashboard'),
+        a('a5204850', 'Total revenue'),
         a('ada650cf', function (e) {
           return 'Pay period: ' + e.fromDate + ' - ' + e.toDate
         }),
@@ -3869,8 +3868,6 @@ function _typeof(obj) {
         a('idca4742', 'See your account information like your phone number and email address.'),
         a('b6ded35e', 'Change your password at any time.'),
         a('cce24bf4', 'Get insights into the type of information stored for your account.'),
-        a('afa7487a', 'X Pro version'),
-        a('hdcb2bcc', 'Switch back to the previous version of X Pro.'),
         a('i203df96', 'Find out how you can deactivate your account.'),
         a('eb073638', 'Teams has moved'),
         a('ec95b588', 'We moved the Teams feature to Delegate in your security and account access settings.'),
@@ -4819,11 +4816,11 @@ function _typeof(obj) {
         a(
           'fa9a644a',
           'If 3 of your 5 most recent notes with a status of Helpful or Not Helpful are deemed Not Helpful, your ability to write notes will be temporarily locked.',
-        )
-      a(
-        'i4014342',
-        'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
-      ),
+        ),
+        a(
+          'i4014342',
+          'Avoid having your writing ability locked. Here’s feedback from contributors about your two notes:',
+        ),
         a('j9897a7c', 'Get note writing tips'),
         a(
           'd07b1650',
@@ -4831,8 +4828,8 @@ function _typeof(obj) {
         ),
         a('ac71a5a0', 'Rate notes that need help'),
         a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
-        a('d88c63f6', 'New: Unlock the ability to write notes'),
-        a('a490bc51', 'Learn more'),
+        a('d88c63f6', 'New: Unlock the ability to write notes')
+      a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
@@ -5157,7 +5154,7 @@ function _typeof(obj) {
         a('e988475f', function (e) {
           return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
         }),
-        a('e5fc9e28', 'Community question'),
+        a('a00cb358', 'Join Approval Question'),
         a(
           'fe9a5c92',
           'When users request to join, they can answer this question. Their response will be shown with their request.',
@@ -5204,7 +5201,6 @@ function _typeof(obj) {
         }),
         a('j8af8eaa', 'Membership type'),
         a('d5f01116', 'Purpose'),
-        a('i76489fe', 'Question'),
         a('c3c04b70', 'Color theme'),
         a('f4a98e9e', 'Community information'),
         a('ab1069de', 'Delete Community'),
@@ -5233,7 +5229,7 @@ function _typeof(obj) {
         a('a8955490', 'Edit purpose'),
         a('ced2292a', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
         a('ba74c098', 'Edit question'),
-        a('h28ba1b2', 'Looks like we’re having trouble saving your question description. Please try again later.'),
+        a('bd3e0420', 'Looks like we’re having trouble saving your question. Please try again later.'),
         a('dbda7bec', 'Change theme'),
         a('hcf35d0d', function (e) {
           return 'Save theme as ' + e.themeName
@@ -6028,7 +6024,14 @@ function _typeof(obj) {
         a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
         a('f1c5faee', 'This exact phrase'),
         a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
-        a('a555a3f4', 'Any of these words')
+        a('a555a3f4', 'Any of these words'),
+        a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
+        a('f51fe348', 'None of these words'),
+        a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
+        a('d10da5da', 'These hashtags'),
+        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
+        a('e292598a', 'From these accounts'),
+        a('d84ed90c', 'Example: @Twitter · sent from @Twitter')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6069,14 +6072,7 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
-        a('f51fe348', 'None of these words'),
-        a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
-        a('d10da5da', 'These hashtags'),
-        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
-        a('e292598a', 'From these accounts'),
-        a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
-        a('g2c27394', 'To these accounts'),
+      a('g2c27394', 'To these accounts'),
         a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
         a('a10e3230', 'Mentioning these accounts'),
         a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
@@ -6421,7 +6417,6 @@ function _typeof(obj) {
         a('a7f66562', 'Loading post'),
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
-        a('f345dcda', 'Edit History'),
         a('h2fcc532', 'Loading history'),
         a(
           'a74821a0',
@@ -6498,7 +6493,6 @@ function _typeof(obj) {
         a('h97c7f42', 'Partial requirement to be onsite'),
         a('ibed2d04', 'No requirement to be onsite'),
         a('d9c8057a', 'Click here'),
-        a('b007440a', 'Jobs'),
         a('c5fb5a1a', 'No jobs'),
         a('a25a2e76', 'Edit order'),
         a('c7e11484', 'Your Lists are empty'),
@@ -7240,6 +7234,7 @@ function _typeof(obj) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
+        a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7284,7 +7279,6 @@ function _typeof(obj) {
         a('ad61a830', 'Compose post'),
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
-        a('e58f6e8c', 'Leave X Pro'),
         a('b452e6c2', 'How have you been getting on?'),
         a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
         a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
@@ -7296,8 +7290,6 @@ function _typeof(obj) {
           'je0526a0',
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
-        a('h6dc3200', 'Go to legacy X Pro'),
-        a('g26f0ea2', 'X Pro Terms'),
         a('cb82860a', 'Column not found'),
         a('icbecd02', 'Add Column'),
         a('fdf1a2c6', 'Add Deck'),
@@ -7307,8 +7299,8 @@ function _typeof(obj) {
         }),
         a('ba7bd92e', 'Column settings'),
         a('cc4ff736', 'Sharing column'),
-        a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.')
-      a('a6bbdc1c', 'View only'),
+        a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
+        a('a6bbdc1c', 'View only'),
         a('e6df688c', 'Options'),
         a('e3f2b93a', 'Show or hide info about this column.'),
         a('db257758', 'Media preview size'),
@@ -7318,8 +7310,8 @@ function _typeof(obj) {
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
         a('af6a4368', 'Rename this conversation and see who’s in it.'),
-        a('cdeac5ee', 'Direct Message settings'),
-        a('fda7ee26', 'Manage who can message you.'),
+        a('cdeac5ee', 'Direct Message settings')
+      a('fda7ee26', 'Manage who can message you.'),
         a('c4ec8620', 'Include'),
         a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
@@ -7599,14 +7591,6 @@ function _typeof(obj) {
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
-        a('b631f1e4', 'Leave X Pro?'),
-        a('id43f42e', 'Exit to switch back to the previous version of X Pro. You can come back later.'),
-        a('c09eafdc', 'Yes, exit'),
-        a('dcd40a08', 'Cancel and stay'),
-        a('jdc689fa', 'Exit and opt-out of the new X Pro'),
-        a('d4cc35a4', 'Your data associated with the new X Pro will be deleted.'),
-        a('df7ea8f2', 'This won’t impact your X profile and previous X Pro data.'),
-        a('i6fae1b4', 'Exit and delete'),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -9132,12 +9116,6 @@ function _typeof(obj) {
               key: 'aa1b5fdd',
               get: function get() {
                 return ['People you follow will always be able to message you. ']
-              },
-            },
-            {
-              key: 'f0e33253',
-              get: function get() {
-                return ['Depending on the setting you select, different people can send you a direct message. ']
               },
             },
             {
@@ -11211,12 +11189,6 @@ function _typeof(obj) {
                   'By checking this box you indicate you have read and agree to the terms and conditions available ',
                   '.',
                 ]
-              },
-            },
-            {
-              key: 'c9ec9fc9',
-              get: function get() {
-                return ['Looking for the legacy version of X Pro? ']
               },
             },
             {
