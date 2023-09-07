@@ -1314,6 +1314,9 @@ function _typeof(obj) {
         a('a407814e', 'Last edited'),
         a('i46ee3f0', 'This is the latest version of this post.'),
         a('ffe16626', 'Reply filter is on.'),
+        a('jc81f6a7', function (e) {
+          return e.count + ' view' + n(e.count, '', 's')
+        }),
         a('f396c105', function (e) {
           return '' + e.displayCount
         }),
@@ -2370,13 +2373,13 @@ function _typeof(obj) {
         a('ba74e38b', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
-        a('c65916af', 'Subscribers'),
-        a('a828b60a', function (e) {
-          return '' + e.userName
-        })
-      a('e39e1360', function (e) {
+        a('c65916af', 'Subscribers')
+      a('a828b60a', function (e) {
         return '' + e.userName
       }),
+        a('e39e1360', function (e) {
+          return '' + e.userName
+        }),
         a('fb912eb3', function (e) {
           return e.userOneName + ' and ' + e.userTwoName
         }),
@@ -3611,9 +3614,9 @@ function _typeof(obj) {
         a(
           'bff84f2a',
           'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-        ),
-        a('fabe1398', 'Autoblocks')
-      a('h58f67dc', 'What’s Safety Mode?'),
+        )
+      a('fabe1398', 'Autoblocks'),
+        a('h58f67dc', 'What’s Safety Mode?'),
         a(
           'a37e9b0a',
           'Autoblock accounts for a week that might be acting abusive or spammy. Accounts you follow or message with aren’t autoblocked.',
@@ -4827,9 +4830,9 @@ function _typeof(obj) {
           'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
         ),
         a('ac71a5a0', 'Rate notes that need help'),
-        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
-        a('d88c63f6', 'New: Unlock the ability to write notes')
-      a('a490bc51', 'Learn more'),
+        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.')
+      a('d88c63f6', 'New: Unlock the ability to write notes'),
+        a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
@@ -6030,8 +6033,7 @@ function _typeof(obj) {
         a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
         a('d10da5da', 'These hashtags'),
         a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
-        a('e292598a', 'From these accounts'),
-        a('d84ed90c', 'Example: @Twitter · sent from @Twitter')
+        a('e292598a', 'From these accounts')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6072,7 +6074,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('g2c27394', 'To these accounts'),
+      a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
+        a('g2c27394', 'To these accounts'),
         a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
         a('a10e3230', 'Mentioning these accounts'),
         a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
@@ -7309,9 +7312,9 @@ function _typeof(obj) {
         a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
-        a('af6a4368', 'Rename this conversation and see who’s in it.'),
-        a('cdeac5ee', 'Direct Message settings')
-      a('fda7ee26', 'Manage who can message you.'),
+        a('af6a4368', 'Rename this conversation and see who’s in it.')
+      a('cdeac5ee', 'Direct Message settings'),
+        a('fda7ee26', 'Manage who can message you.'),
         a('c4ec8620', 'Include'),
         a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
