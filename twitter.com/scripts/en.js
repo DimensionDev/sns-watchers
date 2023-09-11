@@ -1702,6 +1702,7 @@ function _typeof(obj) {
         a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
+        a('e1a292ec', 'Add Media'),
         a('jd2f69a8', 'Paste Tweet URL'),
         a('d2ae33ce', 'Invalid Tweet URL'),
         a('ac308436', 'Tweet not found'),
@@ -2197,6 +2198,8 @@ function _typeof(obj) {
         a('g93586be', 'Days'),
         a('d073b644', 'Hours'),
         a('a2f0728e', 'Minutes'),
+        a('ce9a9736', 'Saving...'),
+        a('d4d68e44', 'Saved'),
         a('f0afcc0e', 'Add poll'),
         a('d39e3e78', 'Schedule post'),
         a('a3de3b68', 'Tweet text'),
@@ -2368,15 +2371,15 @@ function _typeof(obj) {
         a('i9451241', 'Subscribers'),
         a('hdf48104', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        }),
-        a('dcbb6a0b', 'Subscribers'),
+        })
+      a('dcbb6a0b', 'Subscribers'),
         a('ba74e38b', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
-        a('c65916af', 'Subscribers')
-      a('a828b60a', function (e) {
-        return '' + e.userName
-      }),
+        a('c65916af', 'Subscribers'),
+        a('a828b60a', function (e) {
+          return '' + e.userName
+        }),
         a('e39e1360', function (e) {
           return '' + e.userName
         }),
@@ -2815,7 +2818,10 @@ function _typeof(obj) {
           'be582166',
           'ID verification can help protect your account against impersonation and grants your profile an ID verified label.',
         ),
-        a('f1c0248c', 'We are reviewing your government-issued ID. We will keep you posted through notifications!'),
+        a(
+          'b496bc94',
+          'We are reviewing your government-issued ID. We will keep you posted through notifications!\n\nOnce approved, you will receive an ID verified label on your profile so people know your account is ID verified.',
+        ),
         a('d8f5cce4', 'You have exceeded your verification request limit. Please wait 24 hours before trying again.'),
         a(
           'i8427a1e',
@@ -3605,17 +3611,17 @@ function _typeof(obj) {
           'b5bf619a',
           'When we detect potentially abusive or spammy replies, mentions, or Quotes, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
         ),
-        a('e83ecbf6', 'You get a break'),
-        a(
-          'g6fdfffc',
-          'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
-        ),
+        a('e83ecbf6', 'You get a break')
+      a(
+        'g6fdfffc',
+        'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
+      ),
         a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
         a(
           'bff84f2a',
           'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-        )
-      a('fabe1398', 'Autoblocks'),
+        ),
+        a('fabe1398', 'Autoblocks'),
         a('h58f67dc', 'What’s Safety Mode?'),
         a(
           'a37e9b0a',
@@ -3723,7 +3729,6 @@ function _typeof(obj) {
         ),
         a('ja884230', 'Set up your payout details'),
         a('fe339750', 'Create Stripe account'),
-        a('j912510a', 'Link Stripe account'),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
@@ -4532,33 +4537,26 @@ function _typeof(obj) {
           'e473f876',
           'Contributors whose 5 most recent notes with a status of Helpful or Not Helpful include 3 Not Helpful notes have their ability to write temporarily locked.',
         ),
+        a('ef490ae8', 'Sources not included or unreliable'),
+        a('bf3dc462', 'Sources do not support note'),
+        a('heb35e12', 'Incorrect information'),
+        a('ib117532', 'Harassment or abuse'),
         a('a7bc3192', 'Cites high-quality sources'),
         a('a26f8dc2', 'Easy to understand'),
         a('cbdef06c', 'Directly addresses the post’s claim'),
         a('faa5f9e8', 'Provides important context'),
         a('gf3b38f4', 'Neutral or unbiased language'),
-        a('ef490ae8', 'Sources not included or unreliable'),
-        a('bf3dc462', 'Sources do not support note'),
-        a('heb35e12', 'Incorrect information'),
-        a('ib117532', 'Harassment or abuse'),
+        a('a50327ea', 'Note not needed on this post'),
         a('h7c59ea2', 'Opinion or speculation'),
         a('d60c0064', 'Typos or unclear language'),
         a('e06416ca', 'Misses key points or irrelevant'),
         a('cff1aa8c', 'Argumentative or biased language'),
-        a('a50327ea', 'Note not needed on this post'),
-        a('c34e0b2c', 'Misses key points'),
-        a('d24b99ee', 'Inflammatory language'),
-        a('dfa44dde', 'Clear and/or well-written'),
-        a('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
-        a('f3e6f0aa', 'Informative'),
         a('c5d55592', 'Offers unique information or context'),
+        a('f3e6f0aa', 'Informative'),
+        a('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
         a('bbe8b4ac', 'Opinion, speculation, or bias'),
-        a('a8027090', 'Sources missing or unreliable'),
         a('dd1f17ea', 'Off topic'),
         a('if966b54', 'Outdated information'),
-        a('d0ba7db4', 'Argumentative or inflammatory'),
-        a('aa520d32', 'Spam, harassment, or abuse'),
-        a('e25e5ed2', 'Hard to understand'),
         a('fdc2060a', 'You need a higher Impact Score score in order to write notes.'),
         a('edd80858', 'See your profile and score'),
         a('eec24ff6', 'Start rating'),
@@ -4830,13 +4828,13 @@ function _typeof(obj) {
           'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
         ),
         a('ac71a5a0', 'Rate notes that need help'),
-        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.')
-      a('d88c63f6', 'New: Unlock the ability to write notes'),
+        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
+        a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
-        a('b3de4a42', 'Rating Impact'),
-        a('a7b0393c', 'Writing Impact'),
+        a('b3de4a42', 'Rating Impact')
+      a('a7b0393c', 'Writing Impact'),
         a('id568acc', 'Top Writer'),
         a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
@@ -6033,7 +6031,12 @@ function _typeof(obj) {
         a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
         a('d10da5da', 'These hashtags'),
         a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
-        a('e292598a', 'From these accounts')
+        a('e292598a', 'From these accounts'),
+        a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
+        a('g2c27394', 'To these accounts'),
+        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
+        a('a10e3230', 'Mentioning these accounts'),
+        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6074,12 +6077,7 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
-        a('g2c27394', 'To these accounts'),
-        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
-        a('a10e3230', 'Mentioning these accounts'),
-        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
-        a('b18366ba', 'Minimum replies'),
+      a('b18366ba', 'Minimum replies'),
         a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
         a('ib3ddbd4', 'Minimum Likes'),
         a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
@@ -6438,7 +6436,12 @@ function _typeof(obj) {
         a('c41e1023', function (e) {
           return e.price + ' / year'
         }),
+        a('f1756574', '/ month'),
+        a('i650ff14', '/ year'),
         a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
+        a('cc9388fa', function (e) {
+          return '' + e.formattedSelectedPrice
+        }),
         a('c6614cc0', 'plus any applicable tax'),
         a('f8d3b50a', 'tax inclusive'),
         a('fce91ab4', 'Hmmm - that didn’t work.'),
@@ -7312,10 +7315,10 @@ function _typeof(obj) {
         a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
-        a('af6a4368', 'Rename this conversation and see who’s in it.')
-      a('cdeac5ee', 'Direct Message settings'),
-        a('fda7ee26', 'Manage who can message you.'),
-        a('c4ec8620', 'Include'),
+        a('af6a4368', 'Rename this conversation and see who’s in it.'),
+        a('cdeac5ee', 'Direct Message settings'),
+        a('fda7ee26', 'Manage who can message you.')
+      a('c4ec8620', 'Include'),
         a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
         a('d614afc8', 'Likes, Replies & Reposts'),
@@ -8179,7 +8182,7 @@ function _typeof(obj) {
         }),
         a('e9f1af3a', 'Find out more'),
         a('a7e943e0', 'This Tweet can’t be replied to, shared or liked.'),
-        a('da5e3194', 'Twitter is legally required to provide this notice.'),
+        a('j3d37222', 'X is legally required to provide this notice.'),
         a('e461d0ee', 'Get the latest'),
         a('d1386940', 'Stay informed'),
         a('ecda5f9e', 'Misleading'),
@@ -8284,7 +8287,6 @@ function _typeof(obj) {
           return e.count + ' repost' + n(e.count, '', 's') + '. Reposted'
         }),
         a('bb5c5864', 'Quote'),
-        a('e9803c24', 'View Engagements'),
         a('dc63da16', 'Share'),
         a('cee0585c', 'Share post'),
         a('e1b95ab0', 'Last edited'),
@@ -10884,6 +10886,12 @@ function _typeof(obj) {
               },
             },
             {
+              key: 'g196371b',
+              get: function get() {
+                return ['', ' ' + this.props.intervalLabel]
+              },
+            },
+            {
               key: 'cd5e4a77',
               get: function get() {
                 return ['By clicking below to make this purchase, you agree to be bound by the ', '.']
@@ -11439,7 +11447,7 @@ function _typeof(obj) {
           Object.defineProperty(a, 'prototype', { writable: !1 }),
           b
         )
-      })(o(473228)._ActualI18NFormatMessage || s.Component)
+      })(o(645184)._ActualI18NFormatMessage || s.Component)
       a('_ActualI18NFormatMessage', l),
         a('I18NFormatMessage', function (e) {
           return s.createElement(l, e)
