@@ -2221,6 +2221,10 @@ function _typeof(obj) {
         a('f1352c90', 'Add a comment!'),
         a('cf5af90c', 'Post your reply!'),
         a('g1fb138a', 'Ask a question!'),
+        a('fbd24526', 'Add another Reply'),
+        a('de4669e2', 'Add a comment'),
+        a('ed1f39ec', 'Post your reply'),
+        a('a402b908', 'Ask a question'),
         a('e815fc34', 'Choose audience'),
         a('cf44066a', 'Circle'),
         a('a68885de', 'All Followers'),
@@ -2363,16 +2367,16 @@ function _typeof(obj) {
         }),
         a('ab67a7ac', function (e) {
           return '' + e.userName
-        }),
-        a('g571ef41', 'Subscribers'),
+        })
+      a('g571ef41', 'Subscribers'),
         a('d48d6476', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
         }),
         a('i9451241', 'Subscribers'),
         a('hdf48104', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        })
-      a('dcbb6a0b', 'Subscribers'),
+        }),
+        a('dcbb6a0b', 'Subscribers'),
         a('ba74e38b', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
@@ -3604,18 +3608,18 @@ function _typeof(obj) {
           'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
         ),
         a('bd0a88c2', 'View blocked accounts'),
-        a('hae5825e', 'Flagged Tweets'),
-        a('g0cba830', 'Here’s what happens when Safety Mode is on'),
+        a('hae5825e', 'Flagged Tweets')
+      a('g0cba830', 'Here’s what happens when Safety Mode is on'),
         a('abd25474', 'X does the work, so you don’t have to'),
         a(
           'b5bf619a',
           'When we detect potentially abusive or spammy replies, mentions, or Quotes, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
         ),
-        a('e83ecbf6', 'You get a break')
-      a(
-        'g6fdfffc',
-        'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
-      ),
+        a('e83ecbf6', 'You get a break'),
+        a(
+          'g6fdfffc',
+          'Autoblocked accounts, just like manually blocked accounts, can’t see your posts, follow you, or message you. If they view your profile, we let them know X autoblocked them, and not you.',
+        ),
         a('bcb2afc4', 'Fewer people see replies from autoblocked accounts'),
         a(
           'bff84f2a',
@@ -4697,17 +4701,6 @@ function _typeof(obj) {
         a('af15cef8', 'Post with notes'),
         a('ad8883f2', 'No notes on this post'),
         a('efd14e7a', 'Loading notes'),
-        a('dd44ed18', 'Help rate notes on this post'),
-        a(
-          'j6614288',
-          'By rating, you’re helping ensure that notes shown on posts are helpful to people with varying points of view.',
-        ),
-        a('f10aaf3c', 'Note rating tips'),
-        a('b87fa894', 'We’re just starting to test Community Notes out'),
-        a(
-          'c409518c',
-          'Community Notes is a program that lets people collaboratively add context to posts to help keep others better informed. Notes can be rated by contributors and need to earn a status of ”helpful” in order to be shown as context on the post.',
-        ),
         a('e65b7186', 'People have proposed Community Notes about this post'),
         a(
           'bcc14a68',
@@ -4833,9 +4826,9 @@ function _typeof(obj) {
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
-        a('b3de4a42', 'Rating Impact')
-      a('a7b0393c', 'Writing Impact'),
-        a('id568acc', 'Top Writer'),
+        a('b3de4a42', 'Rating Impact'),
+        a('a7b0393c', 'Writing Impact')
+      a('id568acc', 'Top Writer'),
         a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'a0697fbc',
@@ -4888,6 +4881,7 @@ function _typeof(obj) {
         a('d004c768', 'Notes that need more ratings'),
         a('f3d6d6c0', 'Notes that don’t yet have a status of Helpful or Not Helpful.'),
         a('d68a370c', 'Last update: '),
+        a('f10aaf3c', 'Note rating tips'),
         a('b9793c9a', 'You haven’t written any notes yet'),
         a('bed66f92', 'Here’s how to start:'),
         a('a3ca686a', 'See tips for writing helpful notes'),
@@ -5454,7 +5448,6 @@ function _typeof(obj) {
           'ee8c0c8a',
           'Incoming messages or group messages from people you don’t follow will show up here, and you’ll be able to accept or delete them.',
         ),
-        a('de4669e2', 'Add a comment'),
         a('ff599112', 'Create a group'),
         a('c602600a', 'Add people'),
         a('fa2033f6', 'Encrypted'),
@@ -6036,7 +6029,8 @@ function _typeof(obj) {
         a('g2c27394', 'To these accounts'),
         a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
         a('a10e3230', 'Mentioning these accounts'),
-        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain')
+        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
+        a('b18366ba', 'Minimum replies')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6077,8 +6071,7 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b18366ba', 'Minimum replies'),
-        a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
+      a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
         a('ib3ddbd4', 'Minimum Likes'),
         a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
         a('i6e5440e', 'Minimum Retweets'),
@@ -7317,9 +7310,9 @@ function _typeof(obj) {
         a('e5c06aee', 'Column width'),
         a('af6a4368', 'Rename this conversation and see who’s in it.'),
         a('cdeac5ee', 'Direct Message settings'),
-        a('fda7ee26', 'Manage who can message you.')
-      a('c4ec8620', 'Include'),
-        a('d5f29cd4', 'Exclude'),
+        a('fda7ee26', 'Manage who can message you.'),
+        a('c4ec8620', 'Include')
+      a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
         a('d614afc8', 'Likes, Replies & Reposts'),
         a('fb2bbc7a', 'Post content'),
