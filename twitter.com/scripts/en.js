@@ -1070,6 +1070,7 @@ function _typeof(obj) {
         a('ed5ab16a', 'Active now'),
         a('c477d710', 'Manage what information you see and share on X.'),
         a('b06f5d36', 'Your X activity'),
+        a('fd807e78', 'Audience, media and tagging'),
         a('a9ff473c', 'Manage what information you allow other people on X to see.'),
         a('d0484606', 'Manage the information associated with your posts.'),
         a('c4afe0e6', 'Decide what you see on X based on your preferences like Topics and interests'),
@@ -1111,6 +1112,11 @@ function _typeof(obj) {
         a(
           'd8492604',
           'When selected, your posts and other account information are only visible to people who follow you.',
+        ),
+        a('if050fae', 'Protect your videos'),
+        a(
+          'c0038b1e',
+          'If selected, video in your posts will not be downloadable by default. This setting applies to posts going forward and is not retroactive',
         ),
         a('dbb51952', 'Protect your posts?'),
         a('de735de6', 'This will make them visible only to your X followers.'),
@@ -1181,17 +1187,17 @@ function _typeof(obj) {
           'ed012c88',
           'X will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, X may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to X or email addresses and phone numbers similar to those linked to your X account.',
         ),
-        a('d3c20d80', 'Allow additional information sharing with business partners'),
-        a(
-          'f1c0d09c',
-          'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
-        ),
+        a('d3c20d80', 'Allow additional information sharing with business partners')
+      a(
+        'f1c0d09c',
+        'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
+      ),
         a('dc20d918', 'Personalize based on places you’ve been'),
         a(
           'af7d89e6',
           'X always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, X may also personalize your experience based on other places you’ve been.',
-        )
-      a('f2b23062', 'Accessibility, display and languages'),
+        ),
+        a('f2b23062', 'Accessibility, display and languages'),
         a('fa76d7dc', 'Manage how X content is displayed to you.'),
         a('j7a15010', 'Manage aspects of your X experience such as limiting color contrast and motion.'),
         a(
@@ -2358,17 +2364,17 @@ function _typeof(obj) {
         }),
         a('ce87c872', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
-        }),
-        a('b45fa506', function (e) {
-          return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        }),
+        })
+      a('b45fa506', function (e) {
+        return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+      }),
         a('b8168f25', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
         a('ab67a7ac', function (e) {
           return '' + e.userName
-        })
-      a('g571ef41', 'Subscribers'),
+        }),
+        a('g571ef41', 'Subscribers'),
         a('d48d6476', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
         }),
@@ -3602,14 +3608,14 @@ function _typeof(obj) {
         ),
         a('b7540162', 'Hide Subscriptions'),
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
-        a('f2351b98', 'Flagged accounts'),
-        a(
-          'da2c4a73',
-          'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
-        ),
+        a('f2351b98', 'Flagged accounts')
+      a(
+        'da2c4a73',
+        'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
+      ),
         a('bd0a88c2', 'View blocked accounts'),
-        a('hae5825e', 'Flagged Tweets')
-      a('g0cba830', 'Here’s what happens when Safety Mode is on'),
+        a('hae5825e', 'Flagged Tweets'),
+        a('g0cba830', 'Here’s what happens when Safety Mode is on'),
         a('abd25474', 'X does the work, so you don’t have to'),
         a(
           'b5bf619a',
@@ -4824,11 +4830,11 @@ function _typeof(obj) {
         a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
-        a('c94ad3e8', 'send us feedback'),
-        a('ee160790', 'Deleted notes'),
+        a('c94ad3e8', 'send us feedback')
+      a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
-        a('a7b0393c', 'Writing Impact')
-      a('id568acc', 'Top Writer'),
+        a('a7b0393c', 'Writing Impact'),
+        a('id568acc', 'Top Writer'),
         a('e25f9ad6', 'Ratings that helped a note earn the status of Helpful'),
         a(
           'a0697fbc',
@@ -5353,10 +5359,6 @@ function _typeof(obj) {
         a('a94092a2', 'You now have access to moderation tools'),
         a('i1fda798', 'As a Community mod, you can add and remove members. Use your power wisely.'),
         a('b4f877be', 'Community not found'),
-        a('df455bba', 'Posts to review'),
-        a('h2926379', function (e) {
-          return e.count + ' new post' + n(e.count, '', 's')
-        }),
         a('e48fbb02', 'Report Community'),
         a('c8c6c4ea', 'Learn more about Communities'),
         a('he8db880', 'Doesn’t look like this Community exists'),
@@ -5395,6 +5397,7 @@ function _typeof(obj) {
         a('fbe88a32', 'Community live text chats'),
         a('b551cd1e', 'Pinned posts'),
         a('bec3b8fa', 'Share Community'),
+        a('cc7d5b88', 'Invite via DM'),
         a('c66b37fa', 'Community checklist'),
         a('g2768d0e', 'Just a few things to get your Community in good shape for its debut ...'),
         a('b192b58c', 'Dismiss Checklist'),
@@ -6028,9 +6031,7 @@ function _typeof(obj) {
         a('e292598a', 'From these accounts'),
         a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
         a('g2c27394', 'To these accounts'),
-        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
-        a('a10e3230', 'Mentioning these accounts'),
-        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain')
+        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6071,7 +6072,9 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b18366ba', 'Minimum replies'),
+      a('a10e3230', 'Mentioning these accounts'),
+        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
+        a('b18366ba', 'Minimum replies'),
         a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
         a('ib3ddbd4', 'Minimum Likes'),
         a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
@@ -7313,10 +7316,10 @@ function _typeof(obj) {
         a('a6bbdc1c', 'View only'),
         a('e6df688c', 'Options'),
         a('e3f2b93a', 'Show or hide info about this column.'),
-        a('db257758', 'Media preview size'),
-        a('if2fbab8', 'Replies media preview size'),
-        a('he517d52', 'Rename column')
-      a('f6eb2cfe', 'Column name'),
+        a('db257758', 'Media preview size')
+      a('if2fbab8', 'Replies media preview size'),
+        a('he517d52', 'Rename column'),
+        a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
         a('af6a4368', 'Rename this conversation and see who’s in it.'),
