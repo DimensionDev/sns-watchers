@@ -379,7 +379,6 @@ function _typeof(obj) {
         a('bb07870e', 'Creator Studio'),
         a('a57a341c', 'Data saver'),
         a('c4881c66', 'Display'),
-        a('d4ebc798', 'Drafts'),
         a('i83d4f14', 'Follower requests'),
         a('f66d24be', 'Help Center'),
         a('aeede01a', 'Imprint'),
@@ -1187,12 +1186,12 @@ function _typeof(obj) {
           'f1c0d09c',
           'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
         ),
-        a('dc20d918', 'Personalize based on places you’ve been')
-      a(
-        'af7d89e6',
-        'X always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, X may also personalize your experience based on other places you’ve been.',
-      ),
-        a('f2b23062', 'Accessibility, display and languages'),
+        a('dc20d918', 'Personalize based on places you’ve been'),
+        a(
+          'af7d89e6',
+          'X always uses some information, like where you signed up and your current location, to help show you more relevant content. When this setting is enabled, X may also personalize your experience based on other places you’ve been.',
+        )
+      a('f2b23062', 'Accessibility, display and languages'),
         a('fa76d7dc', 'Manage how X content is displayed to you.'),
         a('j7a15010', 'Manage aspects of your X experience such as limiting color contrast and motion.'),
         a(
@@ -1445,6 +1444,7 @@ function _typeof(obj) {
         a('hbea78a8', 'New column'),
         a('d35d74e4', 'Conversation'),
         a('h5245afa', 'Community'),
+        a('d4ebc798', 'Drafts'),
         a('d806aa1a', 'Hidden replies'),
         a('cf2d1048', 'Message requests'),
         a('e7172d70', 'Additional messages'),
@@ -5118,6 +5118,7 @@ function _typeof(obj) {
         a('c9d56b72', 'Tell us a little about your Community. You can always change these details later.'),
         a('c1ad5a12', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
         a('f713fbd2', 'Membership'),
+        a('d1fa71fc', 'Approval question (optional)'),
         a('a0a16d38', 'Anyone can join and/or be invited to the Community.'),
         a('ce0523a8', 'Restricted'),
         a(
@@ -5149,7 +5150,7 @@ function _typeof(obj) {
         a('e988475f', function (e) {
           return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
         }),
-        a('a00cb358', 'Join Approval Question'),
+        a('gcddfba8', 'Approval question'),
         a(
           'fe9a5c92',
           'When users request to join, they can answer this question. Their response will be shown with their request.',
@@ -6029,8 +6030,7 @@ function _typeof(obj) {
         a('g2c27394', 'To these accounts'),
         a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
         a('a10e3230', 'Mentioning these accounts'),
-        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
-        a('b18366ba', 'Minimum replies')
+        a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6071,7 +6071,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
+      a('b18366ba', 'Minimum replies'),
+        a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
         a('ib3ddbd4', 'Minimum Likes'),
         a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
         a('i6e5440e', 'Minimum Retweets'),
@@ -6858,9 +6859,14 @@ function _typeof(obj) {
         a('g9da3853', function (e) {
           return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
+        a('cfd952a1', function (e) {
+          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('fecc696e', 'Verified Followers'),
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
+        a('fd275c1a', 'You don’t have any verified followers yet'),
         a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
         a('j029a4dc', 'When someone follows you, you’ll see them here.'),
         a(
@@ -6872,14 +6878,19 @@ function _typeof(obj) {
           'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
         ),
         a('i967b954', 'You will find a list of all your Subscriptions here.'),
+        a('a44e403e', 'When a verified account follows you, you’ll see them here.'),
         a('d74ee2e3', function (e) {
           return '@' + e.screenName + ' doesn’t have any followers you know yet'
         }),
         a('ae5749c7', function (e) {
           return '@' + e.screenName + ' isn’t following anyone'
         }),
+        a('b5099e33', function (e) {
+          return '@' + e.screenName + ' doesn’t have any verified followers.'
+        }),
         a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
         a('f8af4f48', 'Once they follow accounts, they’ll show up here.'),
+        a('fd0aad94', 'When someone verified follows this account, they’ll show up here.'),
         a('c1a40fd4', 'View NFT details'),
         a('ef1c2c78', 'Show NFT details'),
         a('gd912af2', 'Hide NFT details'),
@@ -7304,15 +7315,15 @@ function _typeof(obj) {
         a('e3f2b93a', 'Show or hide info about this column.'),
         a('db257758', 'Media preview size'),
         a('if2fbab8', 'Replies media preview size'),
-        a('he517d52', 'Rename column'),
-        a('f6eb2cfe', 'Column name'),
+        a('he517d52', 'Rename column')
+      a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
         a('e5c06aee', 'Column width'),
         a('af6a4368', 'Rename this conversation and see who’s in it.'),
         a('cdeac5ee', 'Direct Message settings'),
         a('fda7ee26', 'Manage who can message you.'),
-        a('c4ec8620', 'Include')
-      a('d5f29cd4', 'Exclude'),
+        a('c4ec8620', 'Include'),
+        a('d5f29cd4', 'Exclude'),
         a('d01a62f8', 'Time and location'),
         a('d614afc8', 'Likes, Replies & Reposts'),
         a('fb2bbc7a', 'Post content'),
