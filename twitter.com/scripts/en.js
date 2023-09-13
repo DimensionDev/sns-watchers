@@ -1695,6 +1695,10 @@ function _typeof(obj) {
         a('ge54bb8c', 'Turn off reposts'),
         a('h5ef9bc8', 'View Lists'),
         a('jcba15d2', 'Remove autoblock'),
+        a('e9eef4c6', 'Report EU illegal content'),
+        a('e28ba0bb', function (e) {
+          return 'Report @' + e.screenName + ' for EU illegal content'
+        }),
         a('d78131b9', function (e) {
           return 'Add/remove @' + e.screenName + ' from Lists'
         }),
@@ -2089,7 +2093,6 @@ function _typeof(obj) {
           return 'Report ' + e.entity
         }),
         a('e3fd237e', 'Report ad'),
-        a('e9eef4c6', 'Report EU illegal content'),
         a('ab0decc0', 'Subscribe'),
         a('d7dbb71b', function (e) {
           return e.followType + ' to ' + e.screenName
@@ -2361,13 +2364,13 @@ function _typeof(obj) {
         }),
         a('fba61ad6', function (e) {
           return '' + e.userName
-        }),
-        a('ce87c872', function (e) {
-          return e.replyUserName + ' and ' + e.otherUserName
         })
-      a('b45fa506', function (e) {
-        return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+      a('ce87c872', function (e) {
+        return e.replyUserName + ' and ' + e.otherUserName
       }),
+        a('b45fa506', function (e) {
+          return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+        }),
         a('b8168f25', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
@@ -3607,12 +3610,12 @@ function _typeof(obj) {
           'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
         ),
         a('b7540162', 'Hide Subscriptions'),
-        a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
-        a('f2351b98', 'Flagged accounts')
-      a(
-        'da2c4a73',
-        'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
-      ),
+        a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.')
+      a('f2351b98', 'Flagged accounts'),
+        a(
+          'da2c4a73',
+          'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
+        ),
         a('bd0a88c2', 'View blocked accounts'),
         a('hae5825e', 'Flagged Tweets'),
         a('g0cba830', 'Here’s what happens when Safety Mode is on'),
@@ -4829,9 +4832,9 @@ function _typeof(obj) {
         a('ac71a5a0', 'Rate notes that need help'),
         a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
-        a('a490bc51', 'Learn more'),
-        a('c94ad3e8', 'send us feedback')
-      a('ee160790', 'Deleted notes'),
+        a('a490bc51', 'Learn more')
+      a('c94ad3e8', 'send us feedback'),
+        a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
         a('a7b0393c', 'Writing Impact'),
         a('id568acc', 'Top Writer'),
@@ -6030,8 +6033,7 @@ function _typeof(obj) {
         a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
         a('e292598a', 'From these accounts'),
         a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
-        a('g2c27394', 'To these accounts'),
-        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter')
+        a('g2c27394', 'To these accounts')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6072,7 +6074,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('a10e3230', 'Mentioning these accounts'),
+      a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
+        a('a10e3230', 'Mentioning these accounts'),
         a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
         a('b18366ba', 'Minimum replies'),
         a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
@@ -6425,6 +6428,9 @@ function _typeof(obj) {
         a('jd2c99be', 'Annually'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
+        }),
+        a('ae2381c7', function (e) {
+          return 'Save ' + e.percentage + '% annually'
         }),
         a('i61a221c', 'Subscribe & Pay'),
         a('i2c32253', function (e) {
@@ -7130,9 +7136,13 @@ function _typeof(obj) {
         ),
         a('dbf9667e', 'I’m sure'),
         a('h2ac0348', 'No, take me back'),
+        a('b5447710', 'User not found'),
+        a('h94755b8', 'User already selected for invitation'),
+        a('bfb5effe', 'User already affiliated'),
         a('c4b9664e', 'Affiliated'),
         a('g0eadcf6', 'Affiliated with another organization'),
         a('a8c81f88', 'Organization Account'),
+        a('e5abe772', 'User already has a pending invite'),
         a('e49b97e2', 'Search accounts'),
         a('f002f1d6', 'Send Invite'),
         a('g2a8bae4', 'Add X accounts'),
@@ -7145,6 +7155,9 @@ function _typeof(obj) {
           'Once the affiliate has accepted the invite, make sure to update their checkmark to the correct checkmark color.',
         ),
         a('cec08784', 'You have hit the limit for affiliates on this invoice.'),
+        a('ab70828f', function (e) {
+          return 'Add @' + e.screenName
+        }),
         a('d49b389f', 'here'),
         a('jf351704', 'To continue you need to update the affiliate limit on this invoice.'),
         a('ia5a6a40', 'In order to get started, you’ll need to add your payment details.'),
@@ -7309,15 +7322,15 @@ function _typeof(obj) {
         a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
           return 'Changed to column - ' + e.title
-        }),
-        a('ba7bd92e', 'Column settings'),
+        })
+      a('ba7bd92e', 'Column settings'),
         a('cc4ff736', 'Sharing column'),
         a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
         a('a6bbdc1c', 'View only'),
         a('e6df688c', 'Options'),
         a('e3f2b93a', 'Show or hide info about this column.'),
-        a('db257758', 'Media preview size')
-      a('if2fbab8', 'Replies media preview size'),
+        a('db257758', 'Media preview size'),
+        a('if2fbab8', 'Replies media preview size'),
         a('he517d52', 'Rename column'),
         a('f6eb2cfe', 'Column name'),
         a('d6d39c84', 'Columns must have a name.'),
