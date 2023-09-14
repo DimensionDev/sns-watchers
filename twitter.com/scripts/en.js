@@ -3013,6 +3013,7 @@ function _typeof(obj) {
         a('c01a0e1a', 'Confirm date of birth?'),
         a('df2c469a', 'Switch to professional'),
         a('e1f76978', 'Edit professional profile'),
+        a('bfe8d1a2', 'Edit expanded bio'),
         a('e554f642', 'Discard changes?'),
         a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
         a('d57c69c6', 'Save changes?'),
@@ -3053,6 +3054,8 @@ function _typeof(obj) {
         a('d32983bf', 'Learn more'),
         a('e9603d88', 'Display confirmed phone number mark'),
         a('ada99498', 'This mark will only be shown to others in your region.'),
+        a('h367e724', 'Expanded Bio'),
+        a('ad7a451e', 'Translate bio'),
         a('j29ab120', 'Mute notifications from people:'),
         a('jdfc82f6', 'You don’t follow'),
         a('cfcda0e6', 'Who don’t follow you'),
@@ -3604,14 +3607,14 @@ function _typeof(obj) {
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
         a('d8eed490', 'Manage your public-facing profile appearance.'),
-        a('j5183a32', 'Hide Likes tab'),
-        a(
-          'gb2318d6',
-          'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
-        ),
+        a('j5183a32', 'Hide Likes tab')
+      a(
+        'gb2318d6',
+        'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
+      ),
         a('b7540162', 'Hide Subscriptions'),
-        a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.')
-      a('f2351b98', 'Flagged accounts'),
+        a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
+        a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
           'It looks like we haven’t flagged any accounts. Or you’ve already blocked them all. If we flag more accounts, they’ll show up here.',
@@ -4829,11 +4832,11 @@ function _typeof(obj) {
           'd07b1650',
           'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
         ),
-        a('ac71a5a0', 'Rate notes that need help'),
-        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
+        a('ac71a5a0', 'Rate notes that need help')
+      a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
-        a('a490bc51', 'Learn more')
-      a('c94ad3e8', 'send us feedback'),
+        a('a490bc51', 'Learn more'),
+        a('c94ad3e8', 'send us feedback'),
         a('ee160790', 'Deleted notes'),
         a('b3de4a42', 'Rating Impact'),
         a('a7b0393c', 'Writing Impact'),
@@ -6030,10 +6033,7 @@ function _typeof(obj) {
         a('f51fe348', 'None of these words'),
         a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
         a('d10da5da', 'These hashtags'),
-        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
-        a('e292598a', 'From these accounts'),
-        a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
-        a('g2c27394', 'To these accounts')
+        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6074,7 +6074,10 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
+      a('e292598a', 'From these accounts'),
+        a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
+        a('g2c27394', 'To these accounts'),
+        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
         a('a10e3230', 'Mentioning these accounts'),
         a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
         a('b18366ba', 'Minimum replies'),
@@ -6731,12 +6734,12 @@ function _typeof(obj) {
         a('b63c46ed', function (e) {
           return 'Subscribe to @' + e.screenName
         }),
+        a('j4e0fd88', 'View more'),
         a('df7cb6d4', 'Professional Categories'),
         a('ec429e79', 'Learn more.'),
         a('a1ea2f12', 'Happy Birthday!'),
         a('g8191e78', 'Today is their birthday!'),
         a('c1b819ba', 'Birthday balloons are shown here today'),
-        a('ad7a451e', 'Translate bio'),
         a('f543dbf6', 'Verified phone number'),
         a('cef4e8cf', function (e) {
           return 'Unmute @' + e.screenName + '?'
@@ -7317,13 +7320,13 @@ function _typeof(obj) {
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
         a('cb82860a', 'Column not found'),
-        a('icbecd02', 'Add Column'),
-        a('fdf1a2c6', 'Add Deck'),
+        a('icbecd02', 'Add Column')
+      a('fdf1a2c6', 'Add Deck'),
         a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
           return 'Changed to column - ' + e.title
-        })
-      a('ba7bd92e', 'Column settings'),
+        }),
+        a('ba7bd92e', 'Column settings'),
         a('cc4ff736', 'Sharing column'),
         a('g684a93a', 'Any changes you make to this column will be seen by anyone viewing it.'),
         a('a6bbdc1c', 'View only'),
