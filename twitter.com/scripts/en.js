@@ -2821,6 +2821,7 @@ function _typeof(obj) {
           'd7bfde1a',
           'It looks like your account is currently suspended. You can’t turn on two-factor authentication while your account is suspended.',
         ),
+        a('g268fbb8', 'This account is ID verified.'),
         a('dc5575ac', 'Want to have an ID verified label in your profile?'),
         a('c8255462', 'Hide your ID verified label'),
         a(
@@ -3055,7 +3056,15 @@ function _typeof(obj) {
         a('e9603d88', 'Display confirmed phone number mark'),
         a('ada99498', 'This mark will only be shown to others in your region.'),
         a('h367e724', 'Expanded Bio'),
+        a('a765e936', 'Delete your expanded bio'),
         a('ad7a451e', 'Translate bio'),
+        a('c2333081', function (e) {
+          return e.count + ' character' + n(e.count, '', 's')
+        }),
+        a('a9cc8f96', 'Max characters exceeded'),
+        a('b956c04a', 'Are you sure you want to delete your expanded bio?'),
+        a('ifb23caa', 'Deleting your expanded bio will remove it from your profile.'),
+        a('a2b8c54c', 'Deleted'),
         a('j29ab120', 'Mute notifications from people:'),
         a('jdfc82f6', 'You don’t follow'),
         a('cfcda0e6', 'Who don’t follow you'),
@@ -3600,18 +3609,18 @@ function _typeof(obj) {
         a('h810143c', 'Details'),
         a('ga57b610', 'Purchase date'),
         a('h3b68828', 'Purchase type'),
-        a('cc2aa67a', 'Purchase platform'),
-        a('b313bb24', 'Payment'),
+        a('cc2aa67a', 'Purchase platform')
+      a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
         a('bf364d62', 'All transactions'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
         a('b5f9ec14', 'You have no renewals in the last 30 days.'),
         a('d8eed490', 'Manage your public-facing profile appearance.'),
-        a('j5183a32', 'Hide Likes tab')
-      a(
-        'gb2318d6',
-        'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
-      ),
+        a('j5183a32', 'Hide Likes tab'),
+        a(
+          'gb2318d6',
+          'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
+        ),
         a('b7540162', 'Hide Subscriptions'),
         a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
         a('f2351b98', 'Flagged accounts'),
@@ -4816,8 +4825,8 @@ function _typeof(obj) {
         a('ca6ae344', 'Community Notes Tab Bar'),
         a('fe27c1e2', 'Notes'),
         a('ff692d64', 'Your profile'),
-        a('cb1adfa0', 'Download data'),
-        a('ab28945c', 'Contributor profile'),
+        a('cb1adfa0', 'Download data')
+      a('ab28945c', 'Contributor profile'),
         a('jaf0d42c', 'Your notes'),
         a(
           'fa9a644a',
@@ -4832,8 +4841,8 @@ function _typeof(obj) {
           'd07b1650',
           'Because 3 of your 5 most recent notes with a status of Helpful or Not Helpful were deemed Not Helpful, your ability to write notes is temporarily locked.',
         ),
-        a('ac71a5a0', 'Rate notes that need help')
-      a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
+        a('ac71a5a0', 'Rate notes that need help'),
+        a('h544e3c8', 'Contributors now need to unlock the ability to write notes by earning a Rating Impact of 5.'),
         a('d88c63f6', 'New: Unlock the ability to write notes'),
         a('a490bc51', 'Learn more'),
         a('c94ad3e8', 'send us feedback'),
@@ -5367,6 +5376,8 @@ function _typeof(obj) {
         a('b4f877be', 'Community not found'),
         a('e48fbb02', 'Report Community'),
         a('c8c6c4ea', 'Learn more about Communities'),
+        a('i9f39962', 'Pin Community'),
+        a('a92480c2', 'Unpin Community'),
         a('he8db880', 'Doesn’t look like this Community exists'),
         a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
         a('cc683fba', 'About Community'),
@@ -6024,16 +6035,7 @@ function _typeof(obj) {
         a('ie23eefa', 'Only show Tweets with links'),
         a('ge10bfa2', 'Include replies and original Tweets'),
         a('ab870904', 'Only show replies'),
-        a('b6215680', 'All of these words'),
-        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
-        a('f1c5faee', 'This exact phrase'),
-        a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
-        a('a555a3f4', 'Any of these words'),
-        a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
-        a('f51fe348', 'None of these words'),
-        a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
-        a('d10da5da', 'These hashtags'),
-        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday')
+        a('b6215680', 'All of these words')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6074,7 +6076,16 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('e292598a', 'From these accounts'),
+      a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
+        a('f1c5faee', 'This exact phrase'),
+        a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
+        a('a555a3f4', 'Any of these words'),
+        a('ee8a2b60', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
+        a('f51fe348', 'None of these words'),
+        a('hb657ad4', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
+        a('d10da5da', 'These hashtags'),
+        a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
+        a('e292598a', 'From these accounts'),
         a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
         a('g2c27394', 'To these accounts'),
         a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
@@ -6761,7 +6772,6 @@ function _typeof(obj) {
         a('e14d8719', function (e) {
           return e.year + ' BCE'
         }),
-        a('g268fbb8', 'This account is ID verified.'),
         a('b7caffb7', function (e) {
           return '' + e.name
         }),
@@ -7108,9 +7118,6 @@ function _typeof(obj) {
           'bda6881e',
           'This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.',
         ),
-        a('c2333081', function (e) {
-          return e.count + ' character' + n(e.count, '', 's')
-        }),
         a('b075c68a', 'Edit job'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('e979e7d5', 'here'),
@@ -7310,8 +7317,8 @@ function _typeof(obj) {
         a('c71066fe', 'Take the tour'),
         a('b452e6c2', 'How have you been getting on?'),
         a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
-        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
-        a('fce3c5ce', 'Give feedback'),
+        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.')
+      a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
         a('j4d54f1e', 'A powerful, real-time tool for people who live on X.'),
@@ -7320,8 +7327,8 @@ function _typeof(obj) {
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
         a('cb82860a', 'Column not found'),
-        a('icbecd02', 'Add Column')
-      a('fdf1a2c6', 'Add Deck'),
+        a('icbecd02', 'Add Column'),
+        a('fdf1a2c6', 'Add Deck'),
         a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
           return 'Changed to column - ' + e.title
@@ -8310,6 +8317,7 @@ function _typeof(obj) {
           return e.count + ' repost' + n(e.count, '', 's') + '. Reposted'
         }),
         a('bb5c5864', 'Quote'),
+        a('f65198c2', 'View Quotes'),
         a('dc63da16', 'Share'),
         a('cee0585c', 'Share post'),
         a('e1b95ab0', 'Last edited'),
